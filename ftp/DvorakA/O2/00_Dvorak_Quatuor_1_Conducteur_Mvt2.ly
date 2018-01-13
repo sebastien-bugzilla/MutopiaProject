@@ -42,7 +42,7 @@ global = {
 	\version "2.18.2"
 	\time 3/4
 	\key fis \minor
-	\set Score.markFormatter = #format-mark-box-numbers
+	%\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
 	\tempo "Andante affettuoso ed appassionato"
 	#(set-global-staff-size 19)
