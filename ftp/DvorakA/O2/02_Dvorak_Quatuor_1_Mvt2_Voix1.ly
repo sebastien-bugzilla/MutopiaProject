@@ -30,7 +30,7 @@ MvtDeuxVoixUne = \relative c {
 % mesures 16 à 20
 	gis4 fis'(\< d) \mark \default
 	cis\pp\<(-> cis-> cis->)
-	d4.(\> cis8)\! \times 2/3 {cis( b a)}
+	d4.(\> cis8)\! \times 2/3 {cis8( b a)}
 	b4->( b->\< b->)
 	cis4.(\> b8\!) \times 2/3 {b( a gis)}
 % mesures 21 à 25
