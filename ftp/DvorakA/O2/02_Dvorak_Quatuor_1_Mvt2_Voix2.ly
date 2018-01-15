@@ -51,7 +51,7 @@ MvtDeuxVoixDeux = \relative c {
 % mesures 31 à 35
 	gis2._\crescmarkup
 	d'\< \mark \default 
-	\times 4/6 {e16\(\mf\prall( dis) dis( cis)\) cis,8\noBeam} \times 4/6 {e'16\(\prall( dis) dis( cis)\) cis,8\noBeam} \times 4/6 {gis''16(\prall fis) fis(\prall cis) b(\prall a)}
+	\times 4/6 {eis16\(\mf\prall( dis) dis( cis)\) cis,8\noBeam} \times 4/6 {eis'16\(\prall( dis) dis( cis)\) cis,8\noBeam} \times 4/6 {gis''16(\prall fis) fis(\prall cis) b(\prall a)}
 	\times 4/6 {gis16\prall\(( fis) fis(\prall eis)\) cis'8->\<\noBeam} \times 4/6 {gis16\prall\(( fis) fis(\prall eis)\) cis'8->\noBeam} \times 4/6 {gis16\prall\(( fis) fis(\prall eis)\) cis'8->\noBeam} 
 	e,!8.\f d'16( e,8.) d'16( e,8.) d'16
 % mesures 36 à 40

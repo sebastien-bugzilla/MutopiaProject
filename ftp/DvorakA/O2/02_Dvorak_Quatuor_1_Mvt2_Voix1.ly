@@ -47,8 +47,8 @@ MvtDeuxVoixUne = \relative c {
 	d'\>
 % mesures 31 à 35
 	cis\!
-	fis,\< \mark \default
-	\acciaccatura {eis,16[ cis']} gis'2\mf\trill \times 4/6 {gis16(\prall a) a(\prall eis) eis(\prall fis)}
+	fis,\< 
+	\acciaccatura {eis,16[ cis']} \mark \default gis'2\mf\trill \times 4/6 {gis16(\prall a) a(\prall eis) eis(\prall fis)}
 	\acciaccatura {eis,16[ cis']} gis'4\< \acciaccatura {eis,16[ cis']} gis'4 \acciaccatura {eis,16[ cis']} gis'4 
 	\acciaccatura {e,!16[ d']} gis2\f gis32( b) b( fis) fis( gis) gis( e)
 % mesures 36 à 40
@@ -92,7 +92,7 @@ MvtDeuxVoixUne = \relative c {
 	cis!16(\pp d32) r e16( f32) r b,2
 	b16( c32) r d16( ees32) r a,4( a')
 	gis8( a\< b cis!) d( e)\!
-	b16(_\pocoapococresc a gis e') e,8( fis gis a)
+	b16(_\pocoapococresc a\! gis e') e,8( fis gis a)
 % mesures 71 à 75
 	gis16(\prall e) a(\prall e) b'(\prall e,) cis'(\prall e,) b'(\prall e,) a(\prall e)
 	e-. e'-. fis,-. e'-. gis,-. e'-. a,-. e'-. b-. e-. cis-. e-.
@@ -142,8 +142,8 @@ MvtDeuxVoixUne = \relative c {
 	e4(\mf d) cis
 	b\p~ b8 r r4
 % mesures 111 à 115
-	cis4\pp~ cis8 r r4 \mark \default
-	\acciaccatura a8 a'2.~\startTrillSpan
+	cis4\pp~ cis8 r r4 
+	\acciaccatura a8 \mark \default a'2.~\startTrillSpan
 	\afterGrace a { gis16[ a]\stopTrillSpan}
 	\times 4/6 {b16(\pp b, b' b, b' b,)} \times 4/6 {b'( b, b' b, b' b,)} \times 4/6 {b'( b, b' b, b' b,)} 
 	\times 4/6 {b'(\< b, b' b, b' b,)} \times 4/6 {b'( b, b' b, b' b,)} \times 4/6 {b'( b, b' b, b' b,)} 
