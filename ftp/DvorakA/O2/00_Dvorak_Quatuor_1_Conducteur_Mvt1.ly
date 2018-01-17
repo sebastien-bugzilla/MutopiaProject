@@ -46,7 +46,7 @@ global = {
 	\compressFullBarRests
 	\tempo "Andante"
 	#(set-global-staff-size 15)
-	\set Score.doubleRepeatType = #":|.|:"
+	%\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"

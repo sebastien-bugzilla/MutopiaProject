@@ -50,9 +50,9 @@ MvtDeuxVoixUne = \relative c {
 	fis,\< 
 	\acciaccatura {eis,16[ cis']} \mark \default gis'2\mf\trill \times 4/6 {gis16(\prall a) a(\prall eis) eis(\prall fis)}
 	\acciaccatura {eis,16[ cis']} gis'4\< \acciaccatura {eis,16[ cis']} gis'4 \acciaccatura {eis,16[ cis']} gis'4 
-	\acciaccatura {e,!16[ d']} gis2\f gis32( b) b( fis) fis( gis) gis( e)
+	\acciaccatura {e,!16[ d']} gis2\f gis32([ b) b( fis)] fis([ gis) gis( e)]
 % mesures 36 à 40
-	fis( gis) gis( e) e( fis) fis( cis) cis(_\dimmarkup d) d( b) b( a) a( gis) gis(^\rit b) b( gis) gis( fis) fis( e)
+	fis([ gis) gis( e)] e([ fis) fis( cis)] cis([_\dimmarkup d) d( b)] b([ a) a( gis)] gis(^\rit[ b) b( gis)] gis([ fis) fis( e)]
 	\acciaccatura e8 e'2.\pp\startTrillSpan^\intempo~\afterGrace
 	 e2.\> {dis16[ e]\stopTrillSpan}
 	e8\p(-- fis-- gis--\< a-- b-- cis--)

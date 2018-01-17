@@ -45,7 +45,7 @@ global = {
 	%\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
 	\tempo "Andante affettuoso ed appassionato"
-	#(set-global-staff-size 15)
+	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -92,14 +92,14 @@ global = {
 			breakbefore = ##t
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #37
 		}
 	}
 	\score {
 		\new StaffGroup <<
-			\new Staff << \global \MvtDeuxVoixUne >>
-			\new Staff << \global \MvtDeuxVoixDeux >>
-			\new Staff << \global \MvtDeuxVoixTrois >>
+			%\new Staff << \global \MvtDeuxVoixUne >>
+			%\new Staff << \global \MvtDeuxVoixDeux >>
+			%\new Staff << \global \MvtDeuxVoixTrois >>
 			\new Staff << \global \MvtDeuxVoixQuatre >>
 		>>
 		\midi {
