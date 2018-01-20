@@ -196,5 +196,5 @@ MvtTroisVoixTrois = \relative c {
 % mesures 146 à 148
 	cis(\p d e d cis d)
 	cis( b a4) b8( a
-	g a) b4(->\f_"DS al Fine" c) \bar "||"
+	g a) b4(->\f_"DS al Fine" cis) \bar "||"
 }

@@ -97,13 +97,13 @@ global = {
 	}
 	\score {
 		\new StaffGroup <<
-			%\new Staff << \global \MvtDeuxVoixUne >>
-			%\new Staff << \global \MvtDeuxVoixDeux >>
-			%\new Staff << \global \MvtDeuxVoixTrois >>
+			\new Staff << \global \MvtDeuxVoixUne >>
+			\new Staff << \global \MvtDeuxVoixDeux >>
+			\new Staff << \global \MvtDeuxVoixTrois >>
 			\new Staff << \global \MvtDeuxVoixQuatre >>
 		>>
 		\midi {
-		    \tempo 4 = 50
+		    \tempo 4 = 57
 			\context {
 			    \Score
 			    midiMinimumVolume = #0.8
