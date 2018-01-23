@@ -45,7 +45,7 @@ global = {
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
 	\tempo "Allegro Scherzando" 
-	#(set-global-staff-size 19)
+	#(set-global-staff-size 15)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -86,7 +86,7 @@ global = {
 			\new Staff << \global \MvtTroisVoixUne >>
 			\new Staff << \global \MvtTroisVoixDeux >>
 			\new Staff << \global \MvtTroisVoixTrois >>
-			%\new Staff << \global \MvtTroisVoixQuatre >>
+			\new Staff << \global \MvtTroisVoixQuatre >>
 		>>
 		\header {
 			breakbefore = ##t
@@ -100,7 +100,7 @@ global = {
 			\new Staff << \global \MvtTroisVoixUne >>
 			\new Staff << \global \MvtTroisVoixDeux >>
 			\new Staff << \global \MvtTroisVoixTrois >>
-			%\new Staff << \global \MvtTroisVoixQuatre >>
+			\new Staff << \global \MvtTroisVoixQuatre >>
 		>>
 		\midi {
 		    \tempo 4 = 160

@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -40,33 +40,33 @@
 %-----------------------------------------------------------------------
 globalMvtUn = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
+	\time 9/8
+	\key a \major
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Andante" 
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtDeux = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
+	\time 3/4
+	\key fis \minor
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Andante affettuoso ed appassionato" 
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtTrois = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
+	\time 3/4
+	\key fis \minor
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Allegro Scherzando"
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
@@ -74,10 +74,10 @@ globalMvtTrois = {
 globalMvtQuatre = {
 	\version "2.18.2"
 	\time 4/4
-	\key c \major
+	\key a \major
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Allegro animato"
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
@@ -95,22 +95,22 @@ globalMvtQuatre = {
 		title = \markup { \fontsize #5 \sans 
 			\center-column {
 				\vspace #10
-				"Compositeur"
-				"Année Naissance - décés"
+				"Anton Dvorak"
+				"1841 - 1904"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Quatuor pour corde n°1 en La Majeur"
+				"Op. 2 - B.8"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Alto"
 			}
 		}
 	}

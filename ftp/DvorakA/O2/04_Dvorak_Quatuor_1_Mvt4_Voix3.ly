@@ -7,142 +7,438 @@
 %#               M O U V E M E N T   4   -   V O I X   3               #
 %#######################################################################
 MvtQuatreVoixTrois = \relative c {
-	\clef treble
+	\clef alto
 	\override TupletBracket #'bracket-visibility = ##f
 % mesures 1 à 5
-	
+	\times 2/3 {<e a>8\f <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} 
+	\times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} 
+	\times 2/3 {<a fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } 
+	\times 2/3 {dis dis dis} \times 2/3 {dis dis dis} \times 2/3 {gis, gis gis} \times 2/3 {gis gis gis} 
+	\times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} 
 % mesures 6 à 10
-	
+	\times 2/3 {fis' fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} 
+	\times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} 
+	\times 2/3 {<a, fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } 
+	\times 2/3 {e'\ff e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
+	\times 2/3 {e'\fz e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
 % mesures 11 à 15
-	
+	\times 2/3 {e'\fz e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
+	\times 2/3 {e'\fz e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
+	gis1\fz~
+	gis4 fis8-! gis-! a4-! b-!
+	e,1->~
 % mesures 16 à 20
-	
+	e4 a(\< cis e)
+	<fis a>2\fp->( <e a>->)
+	<dis a'>->( <e a>) \mark \default
+	<dis a'>8\f r c-. b-. \acciaccatura d c-. b-. a16-. b-. c-. d-. 
+	c8 r c-. b-. \acciaccatura d c-. b-. a16-. b-. c-. d-. 
 % mesures 21 à 25
-	
+	e4\fp cis!8( a e4 cis)
+	e( a cis a)
+	e'( a) cis,( d)
+	a2(\p fis)
+	a(\pp gis)
 % mesures 26 à 30
-	
+	a4( cis) e,16( a b a fis a b a) 
+	e( a b a b_\crescmarkup a b a) fis( a b a b a b a)
+	e(_\dimmarkup a b a cis a b a) d,( a' b a d a b a)
+	cis2.\pp( e4)
+	a(\< cis) fis( e)\!
 % mesures 31 à 35
-	
+	dis2.(\> e4)
+	cis2 b4.(\p e,8)
+	a16( e fis e fis e fis e) cis( e fis e fis e fis e)
+	a,( e' fis e fis e fis e) a( e fis e fis e fis e)
+	a,(\< b a b a b a b) a(\> b cis b cis b a b)\!
 % mesures 36 à 40
-	
+	\times 2/3 {e,8_\dimmarkup fis e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e' e e} \mark \default
+	<fis a>2\p-> <e a>->
+	<dis a'>-> <e a>->
+	a->\f gis->
+	<fis cis'>4 a,-> b-> cis->
 % mesures 41 à 45
-	
+	cis,\>( d e2)
+	fis16\p( b cis b cis\fp b cis b) cis( b cis b cis b cis b)
+	dis,( b' cis b cis\fz b cis b cis b cis b) a( b cis b)
+	fis( b cis b cis\fz b cis b cis b cis b) a(-> b cis b)
+	e,( b' cis b cis\fp b cis b cis b cis b) e,(-> b' cis b)
 % mesures 46 à 50
-	
+	gis( b cis b cis\fp b cis b cis b cis b) gis(-> b cis b)
+	fis2( gis)
+	dis( e)
+	b'4\p a2 gis4~\<
+	gis\! fis2_\crescmarkup e4~
 % mesures 51 à 55
-	
+	e\f a8 a gis gis dis dis
+	e e a a gis( fis e dis)
+	e4-> b'-> r b'->
+	r fis r dis-> \mark \default
+	r a'-^ fis-^ dis-^
 % mesures 56 à 60
-	
+	b r r2
+	b2(\pp cis
+	fis dis)
+	b4-.( b-. b-.) e~
+	e fis-.( dis-.) r
 % mesures 61 à 65
-	
+	fis2(\p gis)
+	a\< gis4( cis)
+	dis\mf <fis, dis'>-> <fis dis'>-> <fis dis'>->\>
+	cis'2( b4)\! r
+	dis,,8\p( b' a b gis b e, b')
 % mesures 66 à 70
-	
+	fis( b a b dis, b' a b)
+	gis1~
+	gis4 b'-.\<( b-. b-.)\!
+	b8( cis b a) gis( fis gis e)
+	b4 a8( b dis, b' a b)
 % mesures 71 à 75
-	
+	\acciaccatura gis b2( e\<)
+	dis\>( fis)
+	r4\! <<{gis,4} \\ {gis8( e')}>> r4 <<{b4} \\ {b8( gis')}>>
+	r4 <<{b,4} \\ {b8( fis')}>> r4 <<{b,4} \\ {b8( a')}>>
+	r4 b,\< r gis\!
 % mesures 76 à 80
-	
+	r e\> r fis\!
+	gis8-. b-. gis-. e~ e gis-. e-. cis~
+	cis fis-. dis-. b'~ b fis'-. fis,-._\pococresc b~
+	b dis,-. e-. b'~ b d!-. b-. gis~
+	gis cis,-. a'-. fis~ fis dis-. e-. a
 % mesures 81 à 85
-	
+	b1->\f
+	b16( cis b cis) dis( e dis e) fis( gis fis gis) a( b a b)
+	b,1->
+	b16( cis b cis) dis( e dis e) fis( gis fis gis) a( b a b)
+	gis,2\p( b)
 % mesures 86 à 90
-	
+	e,( fis_\crescmarkup)
+	gis( a)
+	cis( b) \mark \default
+	<e, cis'>2->\ff r
+	<e cis'>\fz r
 % mesures 91 à 95
-	
+	<e d'>\fz r
+	<e d'>\fz r
+	<<{
+	    s1
+	    s
+	    s
 % mesures 96 à 100
-	
+	    r2 d'
+	} \\ {
+	    e,1\pp~
+	    e~
+	    e~
+% mesures 96 à 100
+	    e
+	}>>
+	r2 <cis' e>\ff->
+	r <cis e>\fz
+	r <b e>\fz
+	r <ais e'>\fz
 % mesures 101 à 105
-	
+	<fis ais>1\p\((
+	ais2)_\dimmarkup cis\)
+	b1(
+	fisis)
+	\times 2/3 {gis8\p( b gis} \times 2/3 {b gis b} \times 2/3 {gis b gis} \times 2/3 {b gis b)} 
 % mesures 106 à 110
-	
+	\times 2/3 {a( b a} \times 2/3 {b a b} \times 2/3 {a b a} \times 2/3 {b a b)}
+	\times 2/3 {gis( b gis} \times 2/3 {b gis b} \times 2/3 {gis b gis} \times 2/3 {b gis b)} 
+	\times 2/3 {a( b a} \times 2/3 {b a b} \times 2/3 {a b a} \times 2/3 {b a b)}
+	gis4 r r2
+	r1
 % mesures 111 à 115
-	
+	b2\p\<( \afterGrace e)\startTrillSpan {dis16[\stopTrillSpan e]}
+	dis2\<( \afterGrace fis)\startTrillSpan {e16[\stopTrillSpan fis]} \mark \default
+	<b, gis'>2\ff-> <b eis>->
+	<b fis'>-> <dis a'>->
+	<gis b>->_\dimmarkup <b, gis'>->
 % mesures 116 à 120
-	
+	<e! a>->\p <a, fis'>->
+	e^\((\pp fis)\<
+	cis( cisis)\)
+	dis1\p\<~
+	dis\f
 % mesures 121 à 125
-	
+	a'2\pp( b)
+	a(\< gis)
+	fis8\f r dis16( e dis e fis gis fis gis a b a b)
+	cis( dis cis dis e fis e fis) gis( a gis a b cis b cis)
+	fis,1_\fzdim
 % mesures 126 à 130
-	
+	dis,\>
+	cis'2\p \times 2/3 {cis8( d cis} \times 2/3 {b a b)}
+	cis2 \times 2/3 {cis8( d cis} \times 2/3 {b a gis)}
+	fis4(_\ppsempre e a g)
+	b-^( a8 g) <fis a>2
 % mesures 131 à 135
-	
+	a4( b) fis4.( g8)
+	a8-. b-. fis-. g-. a4.( b8)
+	c4( e) a,4.( b8)
+	c( e) a,-. b-. c r r4
+	c8( e) a,-. b-. c r r4
 % mesures 136 à 140
-	
+	a8( c) fis,-. gis-. a r r4 \mark \default
+	fis8\pp( a) d,-. e-. fis r r4
+	fis8( a) d,-. e-. fis r r4
+	e8( g) c,-. d-. e r r4
+	e8( g) c,-. d-. e r r4
 % mesures 141 à 145
-	
+	d8( f) bes-. c-. bes\< r r4
+	d,8( f) bes-. c-. bes\! r r4
+	f'4\f-> f-> \times 2/3 {f8 f f} \times 2/3 {f8 f f} 
+	\times 2/3 {f8 f f} \times 2/3 {f8 f f} \times 2/3 {f8 f f} \times 2/3 {f8 f f} 
+	\times 2/3 {g g g} \times 2/3 {g g g} \times 2/3 {a a a } \times 2/3 {a\< a a } 
 % mesures 146 à 150
-	
+	\times 2/3 {bes-> bes bes} \times 2/3 {b-> b b} \times 2/3 {c-> c c} \times 2/3 {cis-> cis cis\!}
+	\times 2/3 {d->_\ffsempre d d} \times 2/3 {cis!-> cis cis} \times 2/3 {b-> b b } \times 2/3 {bes-> bes bes}
+	\times 2/3 {a a a} \times 2/3 {g g g} \times 2/3 {fis fis fis} \times 2/3 {e e e}
+	d8->\f d'4-> cis-> b-> bes8->~
+	bes a4-> g-> fis-> e8-.
 % mesures 151 à 155
-	
+	<a, fis'>1\ff->
+	<d, a'>\fz 
+	a'\trill
+	a\trill \mark \default
+	a2(\p ais)
 % mesures 156 à 160
-	
+	b( <b d>)
+	fis1~
+	fis2\> e\!
+	a4 r r2
+	R1
 % mesures 161 à 165
-	
+	d4\p d2-> cis4-.
+	b2-> e->
+	d4\p fis2->\< e4
+	d2-> g->
+	fis4\!-> g-> gis->_\crescmarkup a->
 % mesures 166 à 170
-	
+	b2->\f cis->
+	d4-> d\<-> d-> d->
+	d-> cis8-. d-. e4-. a,-.
+	<d, a'>1\ff
+	<g, d'>\fz
 % mesures 171 à 175
-	
+	<d' a'>\fz
+	<g, d'>\fz
+	<d' a'>2-> <d a'>->
+	<a d>-> <a d>-> \mark \default
+	b'4-> a8-.( b-.) \afterGrace cis2\startTrillSpan {b16[\stopTrillSpan cis]}
 % mesures 176 à 180
-	
+	b4-> a8-.( b-.) \afterGrace cis2\startTrillSpan {b16[\stopTrillSpan cis]}
+	dis,,16( a' b a b a b a c a b a) e( a b a)
+	dis,( a' b a b a b a c a b a) e( a b a)
+	a4\p r a r
+	dis,8-. a'-. b-. a-. fis-. a-. b-. a-. 
 % mesures 181 à 185
-	
+	a4 r a r
+	a8-. b-. dis-. b-. a-. b-. dis-. b-. 
+	b8\pp a4 b a b8~
+	b a4 b a b8~
+	b a a b~ b a a\< b~
 % mesures 186 à 190
-	
+	b a a b~ b fis e dis
+	e(\p d!) d-. c-. c'( b) b-. a-.
+	c( b) b-. a-._\crescmarkup e'( d) d-. c-.
+	c( b) b-. a-. c'( b) b-. a-.
+	e'( d) d-. c-. c(\< b) b-. a-.
 % mesures 191 à 195
-	
+	<gis b>2\f <fis dis'>\ff~
+	<fis dis'> <e b'> \mark \default
+	e4-> gis-> e-> b~
+	b fis'-> dis-> b
+	e( fis fisis gis)
 % mesures 196 à 200
-	
+	gis2~ gis8 e-. gis!-. dis-. 
+	r4 <d! e>\p r <d e>
+	r4 <d! e>\p r <d e>
+	d\pp r8. d,16 d4 r8. d16
+	d4 r8. d16 d4 r
 % mesures 201 à 205
-	
+	e''8( cis) d-. b-. r2
+	e,8( cis) d-. b-. e, r r4
+	e'16( cis d b e,8) r e'16( cis d b e,8) r 
+	e'16( cis d\< b e,8) r e'16( cis d b e,8) r\!
+	e'8(\ff cis) dis-. b-. e( cis) dis-. b-.
 % mesures 206 à 210
-	
+	cis'16 cis e e b b d! d a a cis cis gis gis b b
+	fis fis a a e e gis gis d d fis fis cis cis e e
+	c c ees ees b b d d a a d d gis, gis d' d \mark \default
+	\times 2/3 {<e, a>8\f <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } 
+	\times 2/3 {<e a> <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } 
 % mesures 211 à 215
-	
+	\times 2/3 {<a fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} 
+	\times 2/3 {dis dis dis} \times 2/3 {dis dis dis} \times 2/3 {gis, gis gis} \times 2/3 {gis gis gis} 
+	\times 2/3 {<fis d'> <fis d'> <fis d'> } \times 2/3 {<fis d'> <fis d'> <fis d'> } \times 2/3 {<fis d'> <fis d'> <fis d'> } \times 2/3 {<fis d'> <fis d'> <fis d'> } 
+	\times 2/3 {fis' fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} 
+	\times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} 
 % mesures 216 à 220
-	
+	\times 2/3 {<a, fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} 
+	\times 2/3 {e'\ff e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
+	\times 2/3 {e'\ff e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
+	\times 2/3 {e'-> e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
+	\times 2/3 {e'-> e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
 % mesures 221 à 225
-	
+	gis1->~
+	gis4 fis8-. gis-. a4-. b-.
+	e,1->~
+	e4 a(\< cis e) \mark \default
+	\set doubleSlurs = ##t <fis a>2\p( <e a>)
 % mesures 226 à 230
-	
+	<ees a>( <d a'>)(
+	<d a'>8) \set doubleSlurs = ##f r c\pp b-. c-. b-. a16( b c d)
+	c8-. d,-. c'-. b-. c-. b-. a16( b c d)
+	<e, b'>1\pp\<~
+	<e b'>
 % mesures 231 à 235
-	
+	c8\pp r c r c r c r
+	c r c r c r c r 
+	c8[ r16 c] c8[_\crescmarkup r16 c] c8[ r16 c] c8[ r16 c] 
+	c8[ r16 c] c8[\< r16 c] c8[ r16 c] c8[ r16 c] 
+	e8\f( g) r4 e'8( g) r4
 % mesures 236 à 240
-	
+	g,8( bes) r4 g'8( bes) r4 \mark \default
+	cis4~ cis8 r cis4( d8) r
+	r2 a4(\p g8) r
+	g4( aes8) r r2
+	c,1~
 % mesures 241 à 245
-	
+	c4 b( c) c_\dimmarkup~
+	c1~
+	c4 b( c) des\((
+	cis!1\pp)
+	e2( gis)\)
 % mesures 246 à 250
-	
+	a4 cis,-.( d-. e-.)
+	a,4 b2-> r4
+	d2( cis)
+	e2.(_\crescmarkup fis4)
+	gis-.( <gis b>-.\< <gis b>-. <gis b>-.)
 % mesures 251 à 255
-	
+	fis2(\> e4) r\!
+	gis,8\p( e' d e cis e a, e')
+	b( e d e gis, e' d e)
+	cis1~
+	cis4 e(-- e-- e--) \mark \default
 % mesures 256 à 260
-	
+	e8( fis e d cis\< b cis a)
+	b(\> e d e\! gis, e' d e)
+	r4 e--( e--\< e--)
+	e\>( fis2 e4)
+	e2\p( a)
 % mesures 261 à 265
-	
+	gis( b)_\crescmarkup
+	a(\< e')
+	dis\!_\dimmarkup( \times 2/3 {d8-.) b-. gis-.} \times 2/3 {e d b}
+	a16\p( b cis b a b a b) a( b cis b a b a b)
+	gis( a b a gis a gis a) gis( b e b gis b gis b)
 % mesures 266 à 270
-	
+	a(_\pococresc e' fis e a e fis e) g( e fis g fis e fis g)
+	fis( dis e fis e\< dis e fis) d( a' b a d a b a)
+	e1\f->
+	e16( fis e\< fis) gis( a gis a) b( cis b cis) d( e d e)
+	e,1\fz
 % mesures 271 à 275
-	
+	e16( fis e\< fis) gis( a gis a) b( cis b cis) d( e d e) \mark \default
+	cis,2\p( e)
+	a,( b)_\crescmarkup
+	cis( d)\<
+	fis( e) \mark \default
 % mesures 276 à 280
-	
+	<d, b'>\ff-> r
+	<d b'>4-> <d b'>-> r2
+	<e cis'>-> r
+	<e cis'>4-> <e cis'>-> r2
+	a1\p~
 % mesures 281 à 285
-	
+	a
+	<<{
+	    r2 fis'
+	    r g
+	} \\ {
+	    a,1~
+	    a
+	}>>
+	r2 <b fis'>4\ff-> <b fis'>->
+	<b fis'>2-> <b fis'>->
 % mesures 286 à 290
-	
+	r2 <b e>4-> <b e>->
+	<b dis>2-> <b dis>->
+	b1~\p
+	b
+	a(_\dimmarkup
 % mesures 291 à 295
-	
+	bis)
+	cis8(\p e, a e' cis e, a e')
+	d( e b e gis, e' d e)
+	cis-. cis(\< b a d cis fis e)\!
+	d( fis) e-. a-. gis\<-. b-. e-. d-.
 % mesures 296 à 300
-	
+	cis16(\f b a b a b cis b) fis2->
+	b16( cis d cis b cis b a) e2->
+	cis16( b d cis) cis( b d cis) g'2->
+	fis16( eis g fis) fis( eis g fis) e2-> \mark \default
+	<d d>1->\ff
 % mesures 301 à 305
-	
+	<d d>->
+	<d b'>\f~->
+	<d b'>4\< a'-> fis-> d->
+	cis(\ff b a gis)
+	a16( b a b) cis( d cis d) e( fis e fis) gis( a_\dimmarkup gis a)
 % mesures 306 à 310
-	
+	e4( d cis b)
+	a1
+	\times 2/3 {d8(\pp b d} \times 2/3 {b d b} \times 2/3 {d8 b d} \times 2/3 {b d b)} 
+	\times 2/3 {d8( b d} \times 2/3 {b d b} \times 2/3 {d8 b d} \times 2/3 {b d b)} 
+	\times 2/3 {d'8( b d} \times 2/3 {b d_\crescmarkup b} \times 2/3 {d8 b d} \times 2/3 {b d b)} 
 % mesures 311 à 315
-	
+	\times 2/3 {d8( b d\<} \times 2/3 {b d b} \times 2/3 {d8 b d} \times 2/3 {b d b)} \mark \default
+	gis2\ff-> <fis a>->
+	<b, fis'>-> <e d'>->
+	<<{
+	    cis2(\f\< e)
+	    d(\> b)
+	} \\ {
+	    e,1
+	    e
+	}>>
 % mesures 316 à 320
-	
+	<<{
+	    cis'2(\< e)
+	    e(\> b)\!
+	} \\ {
+	    e,1
+	    e
+	}>>
+	d'1\pp~
+	d~
+	d~
 % mesures 321 à 325
-	
+	d2~\< d4\fermata^\lunga\> r4\! \bar "||" \time 9/8
+	\tempo "Adagio" a2.\ppp e4.(~
+	e a gis)
+	a(\< cis) e4(\f d8)
+	a4.(\> e a)~
 % mesures 326 à 330
-	
+	a2.\ppp~( a8 gis a)
+	a2.~( a8 gis a)
+	a2.\ppp~ a4._\dimmarkup~
+	a2.~ a4.\fermata \bar "||" \time 4/4
+	\tempo "Tempo I, Allegro animato" R1*2
 % mesures 331 à 335
 	
+	e'4->\f fis-> cis4.( d8-.)
+	e8( fis16 gis) a4->~ a8 gis-. a-. b-.
+	e,8-. fis16-. gis-. a4->~ a8 gis-. a-. b-.
+	e,16( fis gis a) a( gis a b) e,( fis gis a) a( gis a b)
 % mesures 336 à 341
-	
+	e,16( fis gis a) a( gis a b) e,( fis gis a) a( gis a b)
+	a4-> r e->_\dimmarkup r
+	cis-> r e-> r
+	a,\p r a r
+	a r a2~
+	a1\pp\fermata \bar "|."
 }

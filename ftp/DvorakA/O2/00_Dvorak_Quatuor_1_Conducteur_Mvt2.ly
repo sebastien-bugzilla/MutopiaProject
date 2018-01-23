@@ -45,7 +45,7 @@ global = {
 	%\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
 	\tempo "Andante affettuoso ed appassionato"
-	#(set-global-staff-size 19)
+	#(set-global-staff-size 15)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
