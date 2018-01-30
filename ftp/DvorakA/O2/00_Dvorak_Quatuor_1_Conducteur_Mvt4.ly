@@ -83,8 +83,8 @@ global = {
 	}
 	\score {
 		\new StaffGroup <<
-			\new Staff << \global \MvtQuatreVoixUne >>
-			%\new Staff << \global \MvtQuatreVoixDeux >>
+			%\new Staff << \global \MvtQuatreVoixUne >>
+			\new Staff << \global \MvtQuatreVoixDeux >>
 			%\new Staff << \global \MvtQuatreVoixTrois >>
 			%\new Staff << \global \MvtQuatreVoixQuatre >>
 		>>
@@ -97,8 +97,8 @@ global = {
 	}
 	\score {
 		\new StaffGroup <<
-			\new Staff << \global \MvtQuatreVoixUne >>
-			%\new Staff << \global \MvtQuatreVoixDeux >>
+			%\new Staff << \global \MvtQuatreVoixUne >>
+			\new Staff << \global \MvtQuatreVoixDeux >>
 			%\new Staff << \global \MvtQuatreVoixTrois >>
 			%\new Staff << \global \MvtQuatreVoixQuatre >>
 		>>
