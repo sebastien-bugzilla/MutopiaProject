@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -45,7 +45,7 @@ global = {
 	%\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
 	\tempo "Allegro animato"
-	#(set-global-staff-size 19)
+	#(set-global-staff-size 15)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -83,10 +83,10 @@ global = {
 	}
 	\score {
 		\new StaffGroup <<
-			%\new Staff << \global \MvtQuatreVoixUne >>
+			\new Staff << \global \MvtQuatreVoixUne >>
 			\new Staff << \global \MvtQuatreVoixDeux >>
-			%\new Staff << \global \MvtQuatreVoixTrois >>
-			%\new Staff << \global \MvtQuatreVoixQuatre >>
+			\new Staff << \global \MvtQuatreVoixTrois >>
+			\new Staff << \global \MvtQuatreVoixQuatre >>
 		>>
 		\header {
 			breakbefore = ##t
@@ -97,10 +97,10 @@ global = {
 	}
 	\score {
 		\new StaffGroup <<
-			%\new Staff << \global \MvtQuatreVoixUne >>
+			\new Staff << \global \MvtQuatreVoixUne >>
 			\new Staff << \global \MvtQuatreVoixDeux >>
-			%\new Staff << \global \MvtQuatreVoixTrois >>
-			%\new Staff << \global \MvtQuatreVoixQuatre >>
+			\new Staff << \global \MvtQuatreVoixTrois >>
+			\new Staff << \global \MvtQuatreVoixQuatre >>
 		>>
 		\midi {
 		    \tempo 4 = 130
