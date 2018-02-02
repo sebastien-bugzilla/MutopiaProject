@@ -110,7 +110,7 @@ globalMvtQuatre = {
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Alto"
+				"Viola"
 			}
 		}
 	}
