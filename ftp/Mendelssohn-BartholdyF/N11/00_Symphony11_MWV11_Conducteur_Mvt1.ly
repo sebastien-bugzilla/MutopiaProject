@@ -92,7 +92,14 @@ global = {
 			\new Staff << \global \MvtUnVoixDeux >>
 			\new Staff << \global \MvtUnVoixTrois >>
 			\new Staff << \global \MvtUnVoixQuatre >>
-%			\new Staff << \global \partcombine \MvtUnVoixCinq \MvtUnVoixSix >>
+			\new Staff << 
+			    \set Staff.soloText=#"Vc"
+			    \set Staff.soloIIText=#"Cb"
+			    \set Staff.aDueText=#"Bassi"
+			    \global \partcombine 
+			        \relative \MvtUnVoixCinq 
+			        \relative \MvtUnVoixSix 
+			>>
 %			\new Staff << \global <<{\MvtUnVoixCinq}\\{\MvtUnVoixSix}>> >>
 %			\new Staff << \global \MvtUnVoixCinq >>
 %			\new Staff << \global \MvtUnVoixSix >>
@@ -105,27 +112,30 @@ global = {
 		}
 		\layout {
 			%system-count = #20
+			\context { 
+		        \Staff \RemoveEmptyStaves 
+	        }
 		}
 	}
-	\score {
-		\new StaffGroup <<
-			\new Staff << \global \MvtUnVoixUne >>
-			\new Staff << \global \MvtUnVoixDeux >>
-			\new Staff << \global \MvtUnVoixTrois >>
-			\new Staff << \global \MvtUnVoixQuatre >>
+%	\score {
+%		\new StaffGroup <<
+%			\new Staff << \global \MvtUnVoixUne >>
+%			\new Staff << \global \MvtUnVoixDeux >>
+%			\new Staff << \global \MvtUnVoixTrois >>
+%			\new Staff << \global \MvtUnVoixQuatre >>
 %			\new Staff << \global \MvtUnVoixCinq >>
 %			\new Staff << \global \MvtUnVoixSix >>
 %			\new Staff << \global \MvtUnVoixSept >>
 %			\new Staff << \global \MvtUnVoixHuit >>
 %			\new Staff << \global \MvtUnVoixNeuf >>
-		>>
-		\midi {
-		    %\tempo 2 = 90
-			\context {
-			    \Score
-			    midiMinimumVolume = #0.8
-				midiMaximumVolume = #0.9
-			}
-		}
-	}
+%		>>
+%		\midi {
+%		    %\tempo 2 = 90
+%			\context {
+%			    \Score
+%			    midiMinimumVolume = #0.8
+%				midiMaximumVolume = #0.9
+%			}
+%		}
+%	}
 }
