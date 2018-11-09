@@ -87,22 +87,28 @@ global = {
 		}
 	}
 	\score {
-		\new StaffGroup <<
-			\new Staff << \global \MvtUnVoixUne >>
-			\new Staff << \global \MvtUnVoixDeux >>
-			\new Staff << \global \MvtUnVoixTrois >>
-			\new Staff << \global \MvtUnVoixQuatre >>
-			\new Staff << 
-			    \set Staff.soloText=#"Vc"
-			    \set Staff.soloIIText=#"Cb"
-			    \set Staff.aDueText=#"Bassi"
-			    \global \partcombine 
-			        \relative \MvtUnVoixCinq 
-			        \relative \MvtUnVoixSix 
+	    \new StaffGroup <<
+		    \new GrandStaff <<
+			    \new Staff << \global \MvtUnVoixUne >>
+			    \new Staff << \global \MvtUnVoixDeux >>
 			>>
+			\new GrandStaff <<
+			    \new Staff << \global \MvtUnVoixTrois >>
+			    \new Staff << \global \MvtUnVoixQuatre >>
+			>>
+%			\new Staff << 
+%			    \set Staff.soloText=#"Vc"
+%			    \set Staff.soloIIText=#"Cb"
+%			    \set Staff.aDueText=#"Bassi"
+%			    \global \partcombine 
+%			        \relative \MvtUnVoixCinq 
+%			        \relative \MvtUnVoixSix 
+%			>>
 %			\new Staff << \global <<{\MvtUnVoixCinq}\\{\MvtUnVoixSix}>> >>
-%			\new Staff << \global \MvtUnVoixCinq >>
-%			\new Staff << \global \MvtUnVoixSix >>
+			\new GrandStaff <<
+			    \new Staff << \global \MvtUnVoixCinq >>
+			    \new Staff << \global \MvtUnVoixSix >>
+			>>
 %			\new Staff << \global \MvtUnVoixSept >>
 %			\new Staff << \global \MvtUnVoixHuit >>
 %			\new Staff << \global \MvtUnVoixNeuf >>
