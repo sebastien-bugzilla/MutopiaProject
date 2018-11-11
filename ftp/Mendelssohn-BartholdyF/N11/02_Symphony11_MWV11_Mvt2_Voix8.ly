@@ -6,11 +6,13 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   8               #
 %#######################################################################
-MvtDeuxVoixHuit = \relative c {
-	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
+MvtDeuxVoixHuit = \drummode {
+    \override Staff.StaffSymbol.line-positions = #'( 0 )
+    \override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
+    \set Staff.instrumentName = #"Triangel"
+	\partial 8 r8
 % mesures 1 à 5
-	
+	R2*122
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -59,24 +61,69 @@ MvtDeuxVoixHuit = \relative c {
 	
 % mesures 121 à 125
 	
+	
+	tamb8\f r tamb r
+	tamb tamb tamb r
+	tamb tamb tamb r
 % mesures 126 à 130
-	
+	tamb tamb tamb r
+	tamb r tamb r
+	tamb tamb tamb r
+	tamb\ff tamb16 tamb16 tamb8 tamb
+	tamb tamb r tamb
 % mesures 131 à 135
-	
+	tamb4 tamb
+	tamb tamb
+	tamb8 tamb tamb r
+	tamb tamb tamb r
+	tamb tamb tamb r
 % mesures 136 à 140
-	
+	tamb tamb16 tamb tamb8 r
+	tamb4 r
+	tamb r8 tamb
+	tamb r tamb r
+	tamb tamb tamb r
 % mesures 141 à 145
+	R2*2
 	
+	tamb8\p r tamb r
+	tamb r tamb r
+	tamb4 r
 % mesures 146 à 150
-	
+	tamb r
+	tamb r
+	tamb r
+	tamb r
+	R2*3
 % mesures 151 à 155
 	
+	
+	tamb8\f tamb16 tamb tamb8 tamb
+	tamb tamb r tamb
+	tamb4 tamb
 % mesures 156 à 160
-	
+	tamb tamb
+	tamb8 tamb tamb r
+	tamb tamb tamb r
+	tamb tamb tamb r
+	tamb4 r8 tamb
 % mesures 161 à 165
-	
+	tamb4\ff r8 tamb
+	tamb4 r
+	tamb r8 tamb
+	tamb4 r
+	tamb8 tamb tamb tamb
 % mesures 166 à 170
-	
+	tamb r r tamb
+	tamb4 tamb8 tamb
+	tamb r tamb4
+	tamb8 tamb r tamb
+	tamb r tamb4
 % mesures 171 à 176
-	
+	tamb8 tamb16 tamb tamb8 tamb
+	tamb tamb tamb r
+	tamb tamb tamb r
+	tamb tamb16 tamb tamb8 tamb
+	tamb4 tamb
+	tamb r\fermata \bar "|."
 }

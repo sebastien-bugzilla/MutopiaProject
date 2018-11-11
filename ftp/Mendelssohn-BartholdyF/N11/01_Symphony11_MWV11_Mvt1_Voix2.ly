@@ -9,6 +9,8 @@
 MvtUnVoixDeux = \relative c' {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
+	\set Staff.midiInstrument = #"violin"
+	\set Staff.instrumentName = #"Violin II"
 % mesures 1 à 5
 	f2(\p\< g4.\> f8\!)
 	f4 r r2

@@ -9,6 +9,8 @@
 MvtUnVoixSix = \relative c, {
 	\clef bass
 	\override TupletBracket #'bracket-visibility = ##f
+	\set Staff.midiInstrument = #"contrabass"
+	\set Staff.instrumentName = #"DoubleBass"
 % mesures 1 à 5
 	R1*21 
 	

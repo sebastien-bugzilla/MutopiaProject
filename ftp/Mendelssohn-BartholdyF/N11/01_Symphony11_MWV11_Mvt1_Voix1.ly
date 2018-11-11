@@ -7,6 +7,8 @@
 %#               M O U V E M E N T   1   -   V O I X   1               #
 %#######################################################################
 MvtUnVoixUne = \relative c'' {
+    \set Staff.midiInstrument = #"violin"
+    \set Staff.instrumentName = #"Violin I"
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 % mesures 1 à 5

@@ -123,25 +123,25 @@ global = {
 	        }
 		}
 	}
-%	\score {
-%		\new StaffGroup <<
-%			\new Staff << \global \MvtUnVoixUne >>
-%			\new Staff << \global \MvtUnVoixDeux >>
-%			\new Staff << \global \MvtUnVoixTrois >>
-%			\new Staff << \global \MvtUnVoixQuatre >>
-%			\new Staff << \global \MvtUnVoixCinq >>
-%			\new Staff << \global \MvtUnVoixSix >>
-%			\new Staff << \global \MvtUnVoixSept >>
-%			\new Staff << \global \MvtUnVoixHuit >>
-%			\new Staff << \global \MvtUnVoixNeuf >>
-%		>>
-%		\midi {
-%		    %\tempo 2 = 90
-%			\context {
-%			    \Score
-%			    midiMinimumVolume = #0.8
-%				midiMaximumVolume = #0.9
-%			}
-%		}
-%	}
+	\score {
+		\new StaffGroup <<
+			\new Staff << \global \MvtUnVoixUne >>
+			\new Staff << \global \MvtUnVoixDeux >>
+			\new Staff << \global \MvtUnVoixTrois >>
+			\new Staff << \global \MvtUnVoixQuatre >>
+			\new Staff << \global \MvtUnVoixCinq >>
+			\new Staff << \global \MvtUnVoixSix >>
+			\new Staff << \global \MvtUnVoixSept >>
+			\new Staff << \global \MvtUnVoixHuit >>
+			\new Staff << \global \MvtUnVoixNeuf >>
+		>>
+		\midi {
+		    %\tempo 2 = 90
+			\context {
+			    \Score
+			    midiMinimumVolume = #0.8
+				midiMaximumVolume = #0.9
+			}
+		}
+	}
 }

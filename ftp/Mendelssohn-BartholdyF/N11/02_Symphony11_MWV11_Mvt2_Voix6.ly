@@ -7,7 +7,7 @@
 %#               M O U V E M E N T   2   -   V O I X   6               #
 %#######################################################################
 MvtDeuxVoixSix = \relative c {
-	\clef treble
+	\clef bass
 	\override TupletBracket #'bracket-visibility = ##f
 % mesures 1 à 5
 	

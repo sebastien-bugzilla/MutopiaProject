@@ -9,6 +9,8 @@
 MvtUnVoixQuatre = \relative c {
 	\clef alto
 	\override TupletBracket #'bracket-visibility = ##f
+	\set Staff.midiInstrument = #"viola"
+	\set Staff.instrumentName = #"Viola II"
 % mesures 1 à 5
 	c1\p~
 	c4\< c-.( c-.\> c-.)\!

@@ -40,11 +40,11 @@
 %-----------------------------------------------------------------------
 global = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
+	\time 2/4
+	\key d \minor
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Commodo Schweizerlied" 4 = 75
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
@@ -67,23 +67,60 @@ global = {
 		title = \markup { \fontsize #5 \sans 
 			\center-column {
 				\vspace #10
-				"Compositeur"
-				"Année Naissance - décés"
+				"Felix Mendelssohn"
+				"1809 - 1847"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Symphonie n°11 pour Cordes en Fa Majeur"
+				"MWV N 11"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Mouvement n°2 - Scherzo"
 			}
+		}
+	}
+	\score {
+	    <<
+		    \new StaffGroup = "Strings" <<
+		        \new GrandStaff <<
+			        \new Staff { \global \MvtDeuxVoixUne }
+			        \new Staff { \global \MvtDeuxVoixDeux }
+			    >>
+			    \new GrandStaff <<
+			        \new Staff { \global \MvtDeuxVoixTrois }
+			        \new Staff { \global \MvtDeuxVoixQuatre }
+			    >>
+			    \new GrandStaff <<
+			        \new Staff { \global \MvtDeuxVoixCinq }
+    %			    \new Staff << \global \MvtDeuxVoixSix >>
+			    >>
+		    >>
+			\new Staff { \global \MvtDeuxVoixSept }
+			\new RhythmicStaff = "Triangle" <<
+			    \global \MvtDeuxVoixHuit
+			>>
+			\new RhythmicStaff = "Cymbale" <<
+			    \global \MvtDeuxVoixNeuf
+			>>
+		>>
+		\header {
+			breakbefore = ##t
+		}
+		\layout {
+			%system-count = #20
+			\context { 
+		        \Staff \RemoveEmptyStaves
+	        }
+	        \context {
+	            \RhythmicStaff \RemoveEmptyStaves
+	        }
 		}
 	}
 	\score {
@@ -91,18 +128,20 @@ global = {
 			\new Staff << \global \MvtDeuxVoixUne >>
 			\new Staff << \global \MvtDeuxVoixDeux >>
 			\new Staff << \global \MvtDeuxVoixTrois >>
-			\new Staff << \global \MvtDeuxVoixQuatre >>
-			\new Staff << \global \MvtDeuxVoixCinq >>
-			\new Staff << \global \MvtDeuxVoixSix >>
-			\new Staff << \global \MvtDeuxVoixSept >>
-			\new Staff << \global \MvtDeuxVoixHuit >>
-			\new Staff << \global \MvtDeuxVoixNeuf >>
+%			\new Staff << \global \MvtDeuxVoixQuatre >>
+%			\new Staff << \global \MvtDeuxVoixCinq >>
+%			\new Staff << \global \MvtDeuxVoixSix >>
+%			\new Staff << \global \MvtDeuxVoixSept >>
+%			\new Staff << \global \MvtDeuxVoixHuit >>
+%			\new Staff << \global \MvtDeuxVoixNeuf >>
 		>>
-		\header {
-			breakbefore = ##t
-		}
-		\layout {
-			%system-count = #20
+		\midi {
+		    %\tempo 2 = 90
+			\context {
+			    \Score
+			    midiMinimumVolume = #0.8
+				midiMaximumVolume = #0.9
+			}
 		}
 	}
 }

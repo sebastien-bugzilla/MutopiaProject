@@ -6,11 +6,13 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   9               #
 %#######################################################################
-MvtDeuxVoixNeuf = \relative c {
-	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
+MvtDeuxVoixNeuf = \drummode {
+    \override Staff.StaffSymbol.line-positions = #'( 0 )
+    \override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
+    \set Staff.instrumentName = #"Becken"
+	\partial 8 r8
 % mesures 1 à 5
-	
+	R2*122
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -59,24 +61,69 @@ MvtDeuxVoixNeuf = \relative c {
 	
 % mesures 121 à 125
 	
+	
+	tamb2\trill\f
+	tamb\trill
+	tamb\trill
 % mesures 126 à 130
-	
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill\ff
+	tamb\trill
 % mesures 131 à 135
-	
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill
 % mesures 136 à 140
-	
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill
 % mesures 141 à 145
-	
+	tamb4 r
+	R2
+	tamb8\p r tamb r
+	tamb r tamb r
+	tamb tamb tamb r
 % mesures 146 à 150
-	
+	tamb tamb tamb r
+	tamb tamb tamb r
+	tamb r tamb r
+	tamb4 r
+	tamb r8 tamb
 % mesures 151 à 155
-	
+	tamb r tamb r
+	tamb tamb tamb r
+	tamb2\f\trill
+	tamb\trill
+	tamb\trill
 % mesures 156 à 160
-	
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill
 % mesures 161 à 165
-	
+	tamb\trill\ff
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill
 % mesures 166 à 170
-	
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill
 % mesures 171 à 176
-	
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb\trill
+	tamb4 r\fermata \bar "|."
 }

@@ -9,6 +9,8 @@
 MvtUnVoixCinq = \relative c, {
 	\clef bass
 	\override TupletBracket #'bracket-visibility = ##f
+	\set Staff.midiInstrument = #"cello"
+	\set Staff.instrumentName = #"Cello"
 % mesures 1 à 5
 	f2(\p\<^\vc e4.\> f8\!) 
 	f4 r r2 
