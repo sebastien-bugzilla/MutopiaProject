@@ -89,16 +89,16 @@ global = {
 	\score {
 		\new StaffGroup <<
 		    \new GrandStaff <<
-			    \new Staff << \global \MvtTroisVoixUne >>
-%			    \new Staff << \global \MvtTroisVoixDeux >>
+			    \new Staff << \global \MvtQuatreVoixUne >>
+			    \new Staff << \global \MvtQuatreVoixDeux >>
 			>>
 			\new GrandStaff <<
-%			    \new Staff << \global \MvtTroisVoixTrois >>
-%			    \new Staff << \global \MvtTroisVoixQuatre >>
+			    \new Staff << \global \MvtQuatreVoixTrois >>
+			    \new Staff << \global \MvtQuatreVoixQuatre >>
 			>>
 			\new GrandStaff <<
-%			    \new Staff << \global \MvtTroisVoixCinq >>
-%			    \new Staff << \global \MvtTroisVoixSix >>
+			    \new Staff << \global \MvtQuatreVoixCinq >>
+%			    \new Staff << \global \MvtQuatreVoixSix >>
 			>>
 		>>
 		\header {
@@ -113,15 +113,15 @@ global = {
 	}
 %	\score {
 %		\new StaffGroup <<
-%			\new Staff << \global \MvtTroisVoixUne >>
-%			\new Staff << \global \MvtTroisVoixDeux >>
-%			\new Staff << \global \MvtTroisVoixTrois >>
-%			\new Staff << \global \MvtTroisVoixQuatre >>
-%			\new Staff << \global \MvtTroisVoixCinq >>
-%			\new Staff << \global \MvtTroisVoixSix >>
-%			\new Staff << \global \MvtTroisVoixSept >>
-%			\new Staff << \global \MvtTroisVoixHuit >>
-%			\new Staff << \global \MvtTroisVoixNeuf >>
+%			\new Staff << \global \MvtQuatreVoixUne >>
+%			\new Staff << \global \MvtQuatreVoixDeux >>
+%			\new Staff << \global \MvtQuatreVoixTrois >>
+%			\new Staff << \global \MvtQuatreVoixQuatre >>
+%			\new Staff << \global \MvtQuatreVoixCinq >>
+%			\new Staff << \global \MvtQuatreVoixSix >>
+%			\new Staff << \global \MvtQuatreVoixSept >>
+%			\new Staff << \global \MvtQuatreVoixHuit >>
+%			\new Staff << \global \MvtQuatreVoixNeuf >>
 %		>>
 %		\midi {
 %		    %\tempo 2 = 90
