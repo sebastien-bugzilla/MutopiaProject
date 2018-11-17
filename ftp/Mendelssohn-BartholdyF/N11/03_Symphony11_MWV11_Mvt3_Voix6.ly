@@ -7,10 +7,11 @@
 %#               M O U V E M E N T   3   -   V O I X   6               #
 %#######################################################################
 MvtTroisVoixSix = \relative c {
-	\clef treble
+	\clef bass
 	\override TupletBracket #'bracket-visibility = ##f
+	%\set Staff.instrumentName = #""
 % mesures 1 à 5
-	
+	R2.*125
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -60,7 +61,15 @@ MvtTroisVoixSix = \relative c {
 % mesures 121 à 125
 	
 % mesures 126 à 130
-	
+	ees8 r ees r ees r
+	ees r ees r ees r
+	ees4 r r 
+	R2.
+	ees4 r r
 % mesures 131 à 135
-	
+	R2.
+	ees2.\p~
+	ees
+	ees4 r ees8 r
+	ees4 r r \bar "|."
 }

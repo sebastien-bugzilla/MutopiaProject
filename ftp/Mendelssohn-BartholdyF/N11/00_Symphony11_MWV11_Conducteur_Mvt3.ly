@@ -40,11 +40,11 @@
 %-----------------------------------------------------------------------
 global = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
+	\time 3/4
+	\key ees \major
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Adagio" 4 = 60
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
@@ -67,23 +67,48 @@ global = {
 		title = \markup { \fontsize #5 \sans 
 			\center-column {
 				\vspace #10
-				"Compositeur"
-				"Année Naissance - décés"
+				"Felix Mendelssohn"
+				"1809 - 1847"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Symphonie n°11 pour Cordes en Fa Majeur"
+				"MWV N 11"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Mouvement n°3 - Adagio"
 			}
+		}
+	}
+	\score {
+		\new StaffGroup <<
+		    \new GrandStaff <<
+			    \new Staff << \global \MvtTroisVoixUne >>
+			    \new Staff << \global \MvtTroisVoixDeux >>
+			>>
+			\new GrandStaff <<
+			    \new Staff << \global \MvtTroisVoixTrois >>
+			    \new Staff << \global \MvtTroisVoixQuatre >>
+			>>
+			\new GrandStaff <<
+			    \new Staff << \global \MvtTroisVoixCinq >>
+			    \new Staff << \global \MvtTroisVoixSix >>
+			>>
+		>>
+		\header {
+			breakbefore = ##t
+		}
+		\layout {
+			%system-count = #20
+			\context { 
+		        \Staff \RemoveEmptyStaves 
+	        }
 		}
 	}
 	\score {
@@ -94,15 +119,17 @@ global = {
 			\new Staff << \global \MvtTroisVoixQuatre >>
 			\new Staff << \global \MvtTroisVoixCinq >>
 			\new Staff << \global \MvtTroisVoixSix >>
-			\new Staff << \global \MvtTroisVoixSept >>
-			\new Staff << \global \MvtTroisVoixHuit >>
-			\new Staff << \global \MvtTroisVoixNeuf >>
+%			\new Staff << \global \MvtTroisVoixSept >>
+%			\new Staff << \global \MvtTroisVoixHuit >>
+%			\new Staff << \global \MvtTroisVoixNeuf >>
 		>>
-		\header {
-			breakbefore = ##t
-		}
-		\layout {
-			%system-count = #20
+		\midi {
+		    %\tempo 2 = 90
+			\context {
+			    \Score
+			    midiMinimumVolume = #0.8
+				midiMaximumVolume = #0.9
+			}
 		}
 	}
 }
