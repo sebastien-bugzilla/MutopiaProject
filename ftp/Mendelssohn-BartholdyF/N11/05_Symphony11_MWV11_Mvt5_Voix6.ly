@@ -7,11 +7,11 @@
 %#               M O U V E M E N T   5   -   V O I X   6               #
 %#######################################################################
 MvtCinqVoixSix = \relative c {
-	\clef treble
+	\clef bass
 	\override TupletBracket #'bracket-visibility = ##f
-	\set Staff.instrumentName = #""
+	%\set Staff.instrumentName = #""
 % mesures 1 à 5
-	
+	s1*475
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -200,8 +200,14 @@ MvtCinqVoixSix = \relative c {
 	
 % mesures 471 à 475
 	
-% mesures 476 à 480
 	
+	
+	r2 c4 r
+	r2 c4 r
+% mesures 476 à 480
+	r2 c4 r
+	r2 c4 r
+	des2\f des'4 des
 % mesures 481 à 485
 	
 % mesures 486 à 490

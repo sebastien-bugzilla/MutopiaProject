@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -45,7 +45,7 @@ global = {
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
 	\tempo "Allegro moderato" 4. = 90
-	#(set-global-staff-size 19)
+	#(set-global-staff-size 15)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -55,10 +55,6 @@ global = {
 \include "04_Symphony11_MWV11_Mvt4_Voix3.ly"
 \include "04_Symphony11_MWV11_Mvt4_Voix4.ly"
 \include "04_Symphony11_MWV11_Mvt4_Voix5.ly"
-\include "04_Symphony11_MWV11_Mvt4_Voix6.ly"
-\include "04_Symphony11_MWV11_Mvt4_Voix7.ly"
-\include "04_Symphony11_MWV11_Mvt4_Voix8.ly"
-\include "04_Symphony11_MWV11_Mvt4_Voix9.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -98,7 +94,6 @@ global = {
 			>>
 			\new GrandStaff <<
 			    \new Staff << \global \MvtQuatreVoixCinq >>
-%			    \new Staff << \global \MvtQuatreVoixSix >>
 			>>
 		>>
 		\header {
@@ -111,25 +106,21 @@ global = {
 	        }
 		}
 	}
-%	\score {
-%		\new StaffGroup <<
-%			\new Staff << \global \MvtQuatreVoixUne >>
-%			\new Staff << \global \MvtQuatreVoixDeux >>
-%			\new Staff << \global \MvtQuatreVoixTrois >>
-%			\new Staff << \global \MvtQuatreVoixQuatre >>
-%			\new Staff << \global \MvtQuatreVoixCinq >>
-%			\new Staff << \global \MvtQuatreVoixSix >>
-%			\new Staff << \global \MvtQuatreVoixSept >>
-%			\new Staff << \global \MvtQuatreVoixHuit >>
-%			\new Staff << \global \MvtQuatreVoixNeuf >>
-%		>>
-%		\midi {
-%		    %\tempo 2 = 90
-%			\context {
-%			    \Score
-%			    midiMinimumVolume = #0.8
-%				midiMaximumVolume = #0.9
-%			}
-%		}
-%	}
+	\score {
+		\new StaffGroup <<
+			\new Staff << \global \MvtQuatreVoixUne >>
+			\new Staff << \global \MvtQuatreVoixDeux >>
+			\new Staff << \global \MvtQuatreVoixTrois >>
+			\new Staff << \global \MvtQuatreVoixQuatre >>
+			\new Staff << \global \MvtQuatreVoixCinq >>
+		>>
+		\midi {
+		    \tempo 4. = 95
+			\context {
+			    \Score
+			    midiMinimumVolume = #0.8
+				midiMaximumVolume = #0.9
+			}
+		}
+	}
 }

@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -45,7 +45,7 @@ global = {
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
 	\tempo "Commodo Schweizerlied" 4 = 75
-	#(set-global-staff-size 19)
+	#(set-global-staff-size 15)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -55,7 +55,6 @@ global = {
 \include "02_Symphony11_MWV11_Mvt2_Voix3.ly"
 \include "02_Symphony11_MWV11_Mvt2_Voix4.ly"
 \include "02_Symphony11_MWV11_Mvt2_Voix5.ly"
-\include "02_Symphony11_MWV11_Mvt2_Voix6.ly"
 \include "02_Symphony11_MWV11_Mvt2_Voix7.ly"
 \include "02_Symphony11_MWV11_Mvt2_Voix8.ly"
 \include "02_Symphony11_MWV11_Mvt2_Voix9.ly"
@@ -99,7 +98,6 @@ global = {
 			    >>
 			    \new GrandStaff <<
 			        \new Staff { \global \MvtDeuxVoixCinq }
-    %			    \new Staff << \global \MvtDeuxVoixSix >>
 			    >>
 		    >>
 			\new Staff { \global \MvtDeuxVoixSept }
@@ -128,12 +126,11 @@ global = {
 			\new Staff << \global \MvtDeuxVoixUne >>
 			\new Staff << \global \MvtDeuxVoixDeux >>
 			\new Staff << \global \MvtDeuxVoixTrois >>
-%			\new Staff << \global \MvtDeuxVoixQuatre >>
-%			\new Staff << \global \MvtDeuxVoixCinq >>
-%			\new Staff << \global \MvtDeuxVoixSix >>
-%			\new Staff << \global \MvtDeuxVoixSept >>
-%			\new Staff << \global \MvtDeuxVoixHuit >>
-%			\new Staff << \global \MvtDeuxVoixNeuf >>
+			\new Staff << \global \MvtDeuxVoixQuatre >>
+			\new Staff << \global \MvtDeuxVoixCinq >>
+			\new Staff << \global \MvtDeuxVoixSept >>
+			\new Staff << \global \MvtDeuxVoixHuit >>
+			\new Staff << \global \MvtDeuxVoixNeuf >>
 		>>
 		\midi {
 		    %\tempo 2 = 90

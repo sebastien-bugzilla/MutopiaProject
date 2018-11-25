@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -41,12 +41,13 @@
 global = {
 	\version "2.18.2"
 	\time 4/4
-	\key c \major
+	\key f \minor
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
-	#(set-global-staff-size 19)
+	\tempo "Allegro molto" 2 = 150
+	#(set-global-staff-size 15)
 	\set Score.doubleRepeatType = #":|.|:"
+	\set Score.alternativeNumberingStyle = #'numbers
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
@@ -56,9 +57,6 @@ global = {
 \include "05_Symphony11_MWV11_Mvt5_Voix4.ly"
 \include "05_Symphony11_MWV11_Mvt5_Voix5.ly"
 \include "05_Symphony11_MWV11_Mvt5_Voix6.ly"
-\include "05_Symphony11_MWV11_Mvt5_Voix7.ly"
-\include "05_Symphony11_MWV11_Mvt5_Voix8.ly"
-\include "05_Symphony11_MWV11_Mvt5_Voix9.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -67,23 +65,48 @@ global = {
 		title = \markup { \fontsize #5 \sans 
 			\center-column {
 				\vspace #10
-				"Compositeur"
-				"Année Naissance - décés"
+				"Felix Mendelssohn"
+				"1809 - 1847"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Symphonie n°11 pour Cordes en Fa Majeur"
+				"MWV N 11"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Mouvement n°5"
 			}
+		}
+	}
+	\score {
+		\new StaffGroup <<
+		    \new GrandStaff <<
+			    \new Staff << \global \MvtCinqVoixUne >>
+			    \new Staff << \global \MvtCinqVoixDeux >>
+			>>
+			\new GrandStaff <<
+			    \new Staff << \global \MvtCinqVoixTrois >>
+			    \new Staff << \global \MvtCinqVoixQuatre >>
+			>>
+			\new GrandStaff <<
+			    \new Staff << \global \MvtCinqVoixCinq >>
+			    \new Staff << \global \MvtCinqVoixSix >>
+			>>
+		>>
+		\header {
+			breakbefore = ##t
+		}
+		\layout {
+			%system-count = #20
+			\context { 
+		        \Staff \RemoveEmptyStaves 
+	        }
 		}
 	}
 	\score {
@@ -94,15 +117,14 @@ global = {
 			\new Staff << \global \MvtCinqVoixQuatre >>
 			\new Staff << \global \MvtCinqVoixCinq >>
 			\new Staff << \global \MvtCinqVoixSix >>
-			\new Staff << \global \MvtCinqVoixSept >>
-			\new Staff << \global \MvtCinqVoixHuit >>
-			\new Staff << \global \MvtCinqVoixNeuf >>
 		>>
-		\header {
-			breakbefore = ##t
-		}
-		\layout {
-			%system-count = #20
+		\midi {
+		    \tempo 2 = 150
+			\context {
+			    \Score
+			    midiMinimumVolume = #0.8
+				midiMaximumVolume = #0.9
+			}
 		}
 	}
 }

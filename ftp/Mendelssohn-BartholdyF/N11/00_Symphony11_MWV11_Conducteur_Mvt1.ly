@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -45,7 +45,7 @@ global = {
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
 	\tempo "Adagio" 4=60
-	#(set-global-staff-size 19)
+	#(set-global-staff-size 15)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -56,9 +56,6 @@ global = {
 \include "01_Symphony11_MWV11_Mvt1_Voix4.ly"
 \include "01_Symphony11_MWV11_Mvt1_Voix5.ly"
 \include "01_Symphony11_MWV11_Mvt1_Voix6.ly"
-\include "01_Symphony11_MWV11_Mvt1_Voix7.ly"
-\include "01_Symphony11_MWV11_Mvt1_Voix8.ly"
-\include "01_Symphony11_MWV11_Mvt1_Voix9.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -96,22 +93,10 @@ global = {
 			    \new Staff << \global \MvtUnVoixTrois >>
 			    \new Staff << \global \MvtUnVoixQuatre >>
 			>>
-%			\new Staff << 
-%			    \set Staff.soloText=#"Vc"
-%			    \set Staff.soloIIText=#"Cb"
-%			    \set Staff.aDueText=#"Bassi"
-%			    \global \partcombine 
-%			        \relative \MvtUnVoixCinq 
-%			        \relative \MvtUnVoixSix 
-%			>>
-%			\new Staff << \global <<{\MvtUnVoixCinq}\\{\MvtUnVoixSix}>> >>
 			\new GrandStaff <<
 			    \new Staff << \global \MvtUnVoixCinq >>
 			    \new Staff << \global \MvtUnVoixSix >>
 			>>
-%			\new Staff << \global \MvtUnVoixSept >>
-%			\new Staff << \global \MvtUnVoixHuit >>
-%			\new Staff << \global \MvtUnVoixNeuf >>
 		>>
 		\header {
 			breakbefore = ##t
@@ -131,9 +116,6 @@ global = {
 			\new Staff << \global \MvtUnVoixQuatre >>
 			\new Staff << \global \MvtUnVoixCinq >>
 			\new Staff << \global \MvtUnVoixSix >>
-			\new Staff << \global \MvtUnVoixSept >>
-			\new Staff << \global \MvtUnVoixHuit >>
-			\new Staff << \global \MvtUnVoixNeuf >>
 		>>
 		\midi {
 		    %\tempo 2 = 90

@@ -9,9 +9,9 @@
 MvtCinqVoixSept = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
-	\set Staff.instrumentName = #""
+	%\set Staff.instrumentName = #"Timpani in d/A"
 % mesures 1 à 5
-	
+	R1*508
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -213,5 +213,5 @@ MvtCinqVoixSept = \relative c {
 % mesures 501 à 505
 	
 % mesures 506 à 508
-	
+	\bar "|."
 }

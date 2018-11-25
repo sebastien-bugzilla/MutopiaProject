@@ -41,56 +41,53 @@
 globalMvtUn = {
 	\version "2.18.2"
 	\time 4/4
-	\key c \major
+	\key f \major
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
-	#(set-global-staff-size 19)
+	\tempo "Adagio" 4=60
+	#(set-global-staff-size 15)
 	\set Score.doubleRepeatType = #":|.|:"
 }
-%-----------------------------------------------------------------------
 globalMvtDeux = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
+	\time 2/4
+	\key d \minor
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Commodo Schweizerlied" 4 = 75
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
-%-----------------------------------------------------------------------
 globalMvtTrois = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
+	\time 3/4
+	\key ees \major
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Adagio" 4 = 60
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
-%-----------------------------------------------------------------------
 globalMvtQuatre = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
+	\time 6/8
+	\key f \minor
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Allegro moderato" 4. = 90
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
-%-----------------------------------------------------------------------
 globalMvtCinq = {
 	\version "2.18.2"
 	\time 4/4
-	\key c \major
+	\key f \minor
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Allegro molto" 2 = 150
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
+	\set Score.alternativeNumberingStyle = #'numbers
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
@@ -107,28 +104,28 @@ globalMvtCinq = {
 		title = \markup { \fontsize #5 \sans 
 			\center-column {
 				\vspace #10
-				"Compositeur"
-				"Année Naissance - décés"
+				"Felix Mendelssohn"
+				"1809 - 1847"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Symphonie n°11 pour Cordes en Fa Majeur"
+				"MWV N 11"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Cymbale"
 			}
 		}
 	}
 	\score {
 		{
-			\new Staff << \globalMvtUn \MvtUnVoixNeuf >>
+			\new RhythmicStaff << \globalMvtUn \MvtUnVoixNeuf >>
 		}
 		\header {
 			breakbefore = ##t
@@ -145,10 +142,10 @@ globalMvtCinq = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtDeux \MvtDeuxVoixNeuf >>
+			\new RhythmicStaff = "Cymbale" << \globalMvtDeux \MvtDeuxVoixNeuf >>
 		}
 		\header {
-			breakbefore = ##t
+%			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -162,10 +159,10 @@ globalMvtCinq = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtTrois \MvtTroisVoixNeuf >>
+			\new RhythmicStaff << \globalMvtTrois \MvtTroisVoixNeuf >>
 		}
 		\header {
-			breakbefore = ##t
+%			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -179,10 +176,10 @@ globalMvtCinq = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtQuatre \MvtQuatreVoixNeuf >>
+			\new RhythmicStaff << \globalMvtQuatre \MvtQuatreVoixNeuf >>
 		}
 		\header {
-			breakbefore = ##t
+%			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -196,10 +193,10 @@ globalMvtCinq = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtCinq \MvtCinqVoixNeuf >>
+			\new RhythmicStaff << \globalMvtCinq \MvtCinqVoixNeuf >>
 		}
 		\header {
-			breakbefore = ##t
+%			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5

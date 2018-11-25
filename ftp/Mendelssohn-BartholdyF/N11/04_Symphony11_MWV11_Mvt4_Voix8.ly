@@ -9,9 +9,9 @@
 MvtQuatreVoixHuit = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
-	\set Staff.instrumentName = #""
+	\set Staff.instrumentName = #"Triangel"
 % mesures 1 à 5
-	
+	R2.*88
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -45,5 +45,5 @@ MvtQuatreVoixHuit = \relative c {
 % mesures 81 à 85
 	
 % mesures 86 à 88
-	
+	\bar "|."
 }

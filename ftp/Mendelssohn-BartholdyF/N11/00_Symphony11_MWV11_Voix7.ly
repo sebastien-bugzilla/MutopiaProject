@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -41,43 +41,43 @@
 globalMvtUn = {
 	\version "2.18.2"
 	\time 4/4
-	\key c \major
+	\key f \major
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Adagio" 4=60
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtDeux = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
+	\time 2/4
+	\key d \minor
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Commodo Schweizerlied" 4 = 75
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtTrois = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
+	\time 3/4
+	\key ees \major
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Adagio" 4 = 60
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtQuatre = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
+	\time 6/8
+	\key f \minor
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Allegro moderato" 4. = 90
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
@@ -85,12 +85,13 @@ globalMvtQuatre = {
 globalMvtCinq = {
 	\version "2.18.2"
 	\time 4/4
-	\key c \major
+	\key f \minor
 	\set Score.markFormatter = #format-mark-box-numbers
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Allegro molto" 2 = 150
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
+	\set Score.alternativeNumberingStyle = #'numbers
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
@@ -107,28 +108,38 @@ globalMvtCinq = {
 		title = \markup { \fontsize #5 \sans 
 			\center-column {
 				\vspace #10
-				"Compositeur"
-				"Année Naissance - décés"
+				"Felix Mendelssohn"
+				"1809 - 1847"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Symphonie n°11 pour Cordes en Fa Majeur"
+				"MWV N 11"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Timpani in d/A"
 			}
 		}
 	}
 	\score {
 		{
-			\new Staff << \globalMvtUn \MvtUnVoixSept >>
+			\new Staff \with { 
+			    instrumentName = \markup {
+	                \column {
+	                    "Timpani"
+	                    \line {
+	                        "in d/A"
+	                   }
+	                }
+	            }
+	        }
+			<< \globalMvtUn \MvtUnVoixSept >>
 		}
 		\header {
 			breakbefore = ##t
@@ -145,10 +156,20 @@ globalMvtCinq = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtDeux \MvtDeuxVoixSept >>
+			\new Staff \with { 
+			    instrumentName = \markup {
+	                \column {
+	                    "Timpani"
+	                    \line {
+	                        "in d/A"
+	                   }
+	                }
+	            }
+	        }
+			<< \globalMvtDeux \MvtDeuxVoixSept >>
 		}
 		\header {
-			breakbefore = ##t
+			%breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -162,10 +183,20 @@ globalMvtCinq = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtTrois \MvtTroisVoixSept >>
+			\new Staff \with { 
+			    instrumentName = \markup {
+	                \column {
+	                    "Timpani"
+	                    \line {
+	                        "in d/A"
+	                   }
+	                }
+	            }
+	        }
+			<< \globalMvtTrois \MvtTroisVoixSept >>
 		}
 		\header {
-			breakbefore = ##t
+			%breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -179,10 +210,20 @@ globalMvtCinq = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtQuatre \MvtQuatreVoixSept >>
+			\new Staff \with { 
+			    instrumentName = \markup {
+	                \column {
+	                    "Timpani"
+	                    \line {
+	                        "in d/A"
+	                   }
+	                }
+	            }
+	        }
+			<< \globalMvtQuatre \MvtQuatreVoixSept >>
 		}
 		\header {
-			breakbefore = ##t
+			%breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -196,10 +237,20 @@ globalMvtCinq = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtCinq \MvtCinqVoixSept >>
+			\new Staff \with { 
+			    instrumentName = \markup {
+	                \column {
+	                    "Timpani"
+	                    \line {
+	                        "in d/A"
+	                   }
+	                }
+	            }
+	        }
+			<< \globalMvtCinq \MvtCinqVoixSept >>
 		}
 		\header {
-			breakbefore = ##t
+			%breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
