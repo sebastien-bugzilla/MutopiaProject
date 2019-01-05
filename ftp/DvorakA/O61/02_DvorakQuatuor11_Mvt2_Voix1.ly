@@ -122,7 +122,7 @@ MvtDeuxVoixUne = \relative c'' {
 	f,4 r r2
 	a4\p\<( bes8. a16) g4( a8.\! g16)
 	f4( bes)_\crescmarkup a( des)
-	c8(\f\< fes) ees( aes~ aes) g4( f8~
+	c8(\f\< fes) ees( aes~ aes)\> g4( f8~
 % mesures 96 à 99
 	f) c(\p bes8. a!16~ a4)\> f4(~
 	f2\pp~ f8 c bes8. a16)

@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -85,8 +85,8 @@ global = {
 		\new StaffGroup <<
 			\new Staff << \global \MvtDeuxVoixUne >>
 			\new Staff << \global \MvtDeuxVoixDeux >>
-%			\new Staff << \global \MvtDeuxVoixTrois >>
-%			\new Staff << \global \MvtDeuxVoixQuatre >>
+			\new Staff << \global \MvtDeuxVoixTrois >>
+			\new Staff << \global \MvtDeuxVoixQuatre >>
 		>>
 		\header {
 			breakbefore = ##t
@@ -95,15 +95,15 @@ global = {
 			%system-count = #20
 		}
 	}
-		\score {
+	\score {
 		\new StaffGroup <<
 			\new Staff << \global \MvtDeuxVoixUne >>
 			\new Staff << \global \MvtDeuxVoixDeux >>
-%			\new Staff << \global \MvtDeuxVoixTrois >>
-%			\new Staff << \global \MvtDeuxVoixQuatre >>
+			\new Staff << \global \MvtDeuxVoixTrois >>
+			\new Staff << \global \MvtDeuxVoixQuatre >>
 		>>
 		\midi {
-		    \tempo 4 = 50
+		    \tempo 4 = 60
 			\context {
 			    \Score
 			    midiMinimumVolume = #0.8
@@ -111,5 +111,4 @@ global = {
 			}
 		}
 	}
-
 }
