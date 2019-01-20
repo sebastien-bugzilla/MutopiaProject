@@ -42,7 +42,7 @@ globalMvtUn = {
 	\version "2.18.2"
 	\time 4/4
 	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Allegro" 4 = 60
 	#(set-global-staff-size 19)
@@ -53,7 +53,7 @@ globalMvtDeux = {
 	\version "2.18.2"
 	\time 4/4
 	\key f \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Poco adagio e molto cantabile" 4 = 50
 	#(set-global-staff-size 19)
@@ -64,7 +64,7 @@ globalMvtTrois = {
 	\version "2.18.2"
 	\time 3/4
 	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Allegro vivo" 4 = 
 	#(set-global-staff-size 19)
@@ -75,7 +75,7 @@ globalMvtQuatre = {
 	\version "2.18.2"
 	\time 2/4
 	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Vivace" 4 = 
 	#(set-global-staff-size 19)

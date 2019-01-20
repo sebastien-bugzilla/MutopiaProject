@@ -42,9 +42,9 @@ globalMvtUn = {
 	\version "2.18.2"
 	\time 4/4
 	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Allegro" 4 = 60
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
@@ -52,32 +52,32 @@ globalMvtUn = {
 globalMvtDeux = {
 	\version "2.18.2"
 	\time 4/4
-	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	\key f \major
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Poco adagio e molto cantabile" 4 = 50
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtTrois = {
 	\version "2.18.2"
-	\time 4/4
+	\time 3/4
 	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Allegro vivo" 4 = 
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtQuatre = {
 	\version "2.18.2"
-	\time 4/4
+	\time 2/4
 	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
+	\tempo "Vivace" 4 = 
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
@@ -95,22 +95,22 @@ globalMvtQuatre = {
 		title = \markup { \fontsize #5 \sans 
 			\center-column {
 				\vspace #10
-				"Compositeur"
-				"Année Naissance - décés"
+				"Anton Dvorak"
+				"1841 - 1904"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Quatuor à corde n°11 en Do Majeur"
+				"Op61"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Alto"
 			}
 		}
 	}
