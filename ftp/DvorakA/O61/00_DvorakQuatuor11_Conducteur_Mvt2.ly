@@ -45,7 +45,7 @@ global = {
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Poco adagio e molto cantabile" 4 = 50
-	#(set-global-staff-size 19)
+	#(set-global-staff-size 15)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------

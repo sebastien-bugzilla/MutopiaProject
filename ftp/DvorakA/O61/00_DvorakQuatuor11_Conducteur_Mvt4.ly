@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -40,12 +40,12 @@
 %-----------------------------------------------------------------------
 global = {
 	\version "2.18.2"
-	\time 4/4
+	\time 2/4
 	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 
-	#(set-global-staff-size 19)
+	\tempo "Vivace" 4 = 130
+	#(set-global-staff-size 15)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -62,22 +62,22 @@ global = {
 		title = \markup { \fontsize #5 \sans 
 			\center-column {
 				\vspace #10
-				"Compositeur"
-				"Année Naissance - décés"
+				"Anton Dvorak"
+				"1841 - 1904"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Quatuor à corde n°11 en Do Majeur"
+				"Op61"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Mouvement n°4"
 			}
 		}
 	}
@@ -93,6 +93,22 @@ global = {
 		}
 		\layout {
 			%system-count = #20
+		}
+	}
+	\score {
+		\new StaffGroup <<
+			\new Staff << \global \MvtQuatreVoixUne >>
+			\new Staff << \global \MvtQuatreVoixDeux >>
+			\new Staff << \global \MvtQuatreVoixTrois >>
+			\new Staff << \global \MvtQuatreVoixQuatre >>
+		>>
+		\midi {
+		    \tempo 4 = 130
+			\context {
+			    \Score
+			    midiMinimumVolume = #0.8
+				midiMaximumVolume = #0.9
+			}
 		}
 	}
 }
