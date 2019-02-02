@@ -9,6 +9,7 @@
 MvtUnVoixUne = \relative c''' {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
+    \set Staff.instrumentName = #"Violin I"
     \repeat volta 2 {
 % mesures 1 à 5
 	    g2_\pespressivo e4.( f8)
@@ -92,7 +93,7 @@ MvtUnVoixUne = \relative c''' {
 	    g\pp^\rit aes)
 	    ces1\<~
 	    ces4\> bes2( aes4)\ppp \mark \default
-	    g4\<_\dolce^\intempo( aes2\> f4)
+	    g4\<-\offset X-offset 1^\intempo_\dolce( aes2\> f4)
 	    g(\< aes2\> f4)
 % mesures 71 à 75
 	    g4(\! bes2\< des4)
@@ -121,7 +122,7 @@ MvtUnVoixUne = \relative c''' {
 % mesures 91 à 95
 	    b\pp r r8. a16( c8[) r16 a]( c8) r
 	    r4 r8. c16( g'8)[ r16 c,]( g'8) r \mark \default
-	    g8^\tranquillo\pp\<( a4 g b g8)~
+	    g8-\offset X-offset 1^\tranquillo\pp\<( a4 g b g8)~
 	    g( d'4 g,) e'8(--\! d-- c)-- 
 	    b8(\> d4 b g e8)~\!
 % mesures 96 à 100
@@ -302,7 +303,7 @@ MvtUnVoixUne = \relative c''' {
 % mesures 236 à 240
 	aes1\pp~
 	aes4 g2( f4) \mark \default
-	e4^\intempo( f2 d4)
+	e4-\offset X-offset 1^\intempo( f2 d4)
 	e( f2 d4
 	e) r r2
 % mesures 241 à 245
@@ -378,7 +379,7 @@ MvtUnVoixUne = \relative c''' {
 	aes4( g) \times 2/3 {aes,8(\p b! d} e8. f16-.)
 	e2.\>\fermata(^\rit d4\pp \mark \default
 % mesures 301 à 305
-	c8)^\intempo r r4 r2
+	c8)-\offset X-offset 1^\intempo r r4 r2
 	R1
     \times 2/3 {g'8-._\pcresc^\pocoapocostring c-. e-. } g8.-> a16 \times 2/3 {g8-. e-. c-. } a8.-> g16
     \times 2/3 {g8-. c-. e-. } g8.-> a16 \times 2/3 {g8-. e-. c-. } a8.-> g16

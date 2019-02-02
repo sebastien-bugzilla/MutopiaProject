@@ -7,6 +7,7 @@
 %#               M O U V E M E N T   2   -   V O I X   4               #
 %#######################################################################
 MvtDeuxVoixQuatre = \relative c, {
+	\set Staff.instrumentName = #"Cello"
 	\clef bass
 	\override TupletBracket #'bracket-visibility = ##f
 % mesures 1 à 5

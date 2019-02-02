@@ -92,23 +92,23 @@ global = {
 			breakbefore = ##t
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #61
 		}
 	}
-	\score {
-		\new StaffGroup <<
-			\new Staff << \global \MvtUnVoixUne >>
-			\new Staff << \global \MvtUnVoixDeux >>
-			\new Staff << \global \MvtUnVoixTrois >>
-			\new Staff << \global \MvtUnVoixQuatre >>
-		>>
-		\midi {
-		    \tempo 2 = 60
-			\context {
-			    \Score
-			    midiMinimumVolume = #0.8
-				midiMaximumVolume = #0.9
-			}
-		}
-	}
+%	\score {
+%		\new StaffGroup <<
+%			\new Staff << \global \MvtUnVoixUne >>
+%			\new Staff << \global \MvtUnVoixDeux >>
+%			\new Staff << \global \MvtUnVoixTrois >>
+%			\new Staff << \global \MvtUnVoixQuatre >>
+%		>>
+%		\midi {
+%		    \tempo 2 = 60
+%			\context {
+%			    \Score
+%			    midiMinimumVolume = #0.8
+%				midiMaximumVolume = #0.9
+%			}
+%		}
+%	}
 }

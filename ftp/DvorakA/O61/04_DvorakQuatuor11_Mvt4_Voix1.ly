@@ -7,6 +7,7 @@
 %#               M O U V E M E N T   4   -   V O I X   1               #
 %#######################################################################
 MvtQuatreVoixUne = \relative c'' {
+	\set Staff.instrumentName = #"Violin I"
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 % mesures 1 à 5
@@ -439,12 +440,12 @@ MvtQuatreVoixUne = \relative c'' {
 	d g)
 	c,8 r e'4\fz~(
 	e8_\pocoapococresc d16 c) b8-. a-.
-	g r e'4\fz(~
+	g r e'4_\fzmarkup(~
 	e8 d16 c) b8-. a-.
 % mesures 361 à 365
-	g r g'4(~\fz
+	g r g'4(~_\fzmarkup
 	g8 f16 e) d8-. c-.
-	b r g'4(~\fz
+	b r g'4(~_\fzmarkup
 	g8 f16 e) d8-. c-.
 	b r aes'4->\ff~
 % mesures 366 à 370
@@ -497,7 +498,7 @@ MvtQuatreVoixUne = \relative c'' {
 	a' g b, a' g b, a' g
 % mesures 406 à 410
 	g2\startTrillSpan \mark \default
-	e4\ff->\stopTrillSpan^\grandioso fis->
+	e4\ff->\stopTrillSpan-\offset X-offset 1^\grandioso fis->
 	g-> g16( f! e d)
 	c8-. d-. c16( e) d8-.
 	c->[ g-. c-.] r
@@ -536,7 +537,7 @@ MvtQuatreVoixUne = \relative c'' {
 	c bes~
 	bes aes
 	g2) \mark \default
-	c8(\pp^\unpocomenomosso a'! g c,)
+	c8(\pp-\offset X-offset 1^\unpocomenomosso a'! g c,)
 % mesures 441 à 445
 	R2
 	g8( e' d f,)

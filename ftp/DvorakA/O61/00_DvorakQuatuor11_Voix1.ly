@@ -6,6 +6,7 @@
 \paper {
 	ragged-last-bottom = ##f
 	ragged-bottom = ##f
+	%page-breaking = #ly:page-turn-breaking
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -45,7 +46,6 @@ globalMvtUn = {
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Allegro" 4 = 60
-	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -56,7 +56,6 @@ globalMvtDeux = {
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Poco adagio e molto cantabile" 4 = 50
-	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -66,8 +65,7 @@ globalMvtTrois = {
 	\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Allegro vivo" 4 = 
-	#(set-global-staff-size 19)
+	\tempo "Allegro vivo" 4 = 150
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -78,7 +76,6 @@ globalMvtQuatre = {
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Vivace" 4 = 130
-	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -128,7 +125,7 @@ globalMvtQuatre = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			#(layout-set-staff-size 19)
 		}
 	}
 	\score {
@@ -145,7 +142,7 @@ globalMvtQuatre = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			#(layout-set-staff-size 19)
 		}
 	}
 	\score {
@@ -162,7 +159,7 @@ globalMvtQuatre = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			#(layout-set-staff-size 19)
 		}
 	}
 	\score {
@@ -179,7 +176,7 @@ globalMvtQuatre = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			#(layout-set-staff-size 19)
 		}
 	}
 }

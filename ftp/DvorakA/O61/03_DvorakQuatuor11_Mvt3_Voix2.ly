@@ -7,6 +7,7 @@
 %#               M O U V E M E N T   3   -   V O I X   2               #
 %#######################################################################
 MvtTroisVoixDeux = \relative c' {
+	\set Staff.instrumentName = #"Violin II"
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 	\repeat volta 2 {

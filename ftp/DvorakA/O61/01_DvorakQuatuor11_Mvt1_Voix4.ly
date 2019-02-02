@@ -7,6 +7,7 @@
 %#               M O U V E M E N T   1   -   V O I X   4               #
 %#######################################################################
 MvtUnVoixQuatre = \relative c {
+	\set Staff.instrumentName = #"Cello"
 	\clef bass
 	\override TupletBracket #'bracket-visibility = ##f
 	\repeat volta 2 {

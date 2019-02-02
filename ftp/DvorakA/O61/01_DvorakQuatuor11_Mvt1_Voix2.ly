@@ -7,6 +7,7 @@
 %#               M O U V E M E N T   1   -   V O I X   2               #
 %#######################################################################
 MvtUnVoixDeux = \relative c'' {
+	\set Staff.instrumentName = #"Violin II"
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 	\repeat volta 2 {
@@ -69,13 +70,13 @@ MvtUnVoixDeux = \relative c'' {
 	    <c e>2\fp\>( c) \mark \default
 	    c16(\pp e c e c e c e c e c e c e c d)
 	    c( e c e c e c e c e c d e c e f)
-	    \repeat tremolo 4 {c16( ees} \repeat tremolo 4 {c ees} 
+	    c( ees c ees c ees c ees c ees c ees c ees c ees)
 % mesures 51 à 55
-	    \repeat tremolo 4 {c ees} \repeat tremolo 4 {c ees)}
-	    \repeat tremolo 4 {aes,( c} \repeat tremolo 4 {aes c)} 
-	    \repeat tremolo 4 {aes( c} \repeat tremolo 4 {f,_\crescmarkup c')} 
-	    \repeat tremolo 4 {aes( c} \repeat tremolo 4 {aes c)}
-	    \repeat tremolo 4 {aes( c} \repeat tremolo 4 {aes c)}
+	    c( ees c ees c ees c ees c ees c ees c ees c ees)
+	    aes,( c aes c aes c aes c aes c aes c aes c aes c)
+	    aes( c aes c aes c aes c f,_\crescmarkup c' f, c' f, c' f, c')
+	    aes( c aes c aes c aes c aes c aes c aes c aes c)
+	    aes( c aes c aes c aes c aes c aes c aes c aes c)
 % mesures 56 à 60
 	    bes2(\p\> ces\!)
 	    bes\pp( a!)
@@ -120,7 +121,7 @@ MvtUnVoixDeux = \relative c'' {
 	    r4 r8. b16(_\dimmarkup a8)[ r16 b( a8)] r8
 % mesures 91 à 95
 	    d,4\<( ees2\> c4)
-	    b4(\< c2 a4) \mark \default
+	    b4(\< c2\> a4) \mark \default
 	    b2(\pp^\tranquillo b'\<)
 	    g2( g'4\! fis8-- e--)
 	    d4( b'8\> d, g b, d g,)\!
@@ -165,8 +166,8 @@ MvtUnVoixDeux = \relative c'' {
 	c2 a)
 	e16( g e g e g e g e g e g e g e fis)
 	e( g e g e g e g e g e fis e g e a)
-	\repeat tremolo 4 {e16( g} \repeat tremolo 4 {e16 g)}
-	\repeat tremolo 4 {e16( g} \repeat tremolo 4 {e16 g)}
+	e( g e g e g e g e g e g e g e g)
+	e( g e g e g e g e g e g e g e g)
 % mesures 126 à 130
 	c,8 r r4 c'2
 	\times 2/3 {d,8( a' b} c8. d16-.) d2_\crescmarkup
@@ -279,13 +280,13 @@ MvtUnVoixDeux = \relative c'' {
 	cis'2(\pp^\intempo a4. b8)
 	a16( cis a cis a cis a cis a cis a cis a cis a b)
 	a( cis a cis a cis a cis a cis a b a cis a d)
-	\repeat tremolo 4 {a16( c!} \repeat tremolo 4 {a16 c)} 
-	\repeat tremolo 4 {a16( c} \repeat tremolo 4 {a16 c)} 
+	a( c! a c a c a c a c a c a c a c)
+	a( c a c a c a c a c a c a c a c)
 % mesures 221 à 225
-	\repeat tremolo 4 {f,!( a} \repeat tremolo 4 {f a)} 
-	\repeat tremolo 4 {f( a} \repeat tremolo 4 {d, a')}
-	\repeat tremolo 4 {f(_\crescmarkup a} \repeat tremolo 4 {f a)} 
-	\repeat tremolo 4 {f( a} \repeat tremolo 4 {f a)} 
+	f,( a f a f a f a f a f a f a f a)
+	f( a f a f a f a d, a' d, a' d, a' d, a')
+	f( a f_\crescmarkup a f a f a f a f a f a f a)
+	f( a f a f a f a f a f a f a f a)
 	g8(\p b d g) aes,( b\> d aes') 
 % mesures 226 à 230
 	g,( b d g) fis,( b d fis)

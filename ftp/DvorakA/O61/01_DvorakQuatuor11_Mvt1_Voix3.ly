@@ -7,6 +7,7 @@
 %#               M O U V E M E N T   1   -   V O I X   3               #
 %#######################################################################
 MvtUnVoixTrois = \relative c' {
+	\set Staff.instrumentName = #"Alto"
 	\clef alto
 	\override TupletBracket #'bracket-visibility = ##f
 	\repeat volta 2 {
@@ -82,13 +83,13 @@ MvtUnVoixTrois = \relative c' {
 	        c2( aes)\!
 	    }>>
 % mesures 56 à 60
-	    \repeat tremolo 4 {d,16(\p\> f} \repeat tremolo 4 {d16\! f)} 
-	    \repeat tremolo 4 {d16(\pp f} \repeat tremolo 4 {d16 f)} 
-	    \repeat tremolo 4 {d16(\< f} \repeat tremolo 4 {d16 f)}
-	    \repeat tremolo 4 {f(\> aes} \repeat tremolo 4 {f aes)} 
-	    \repeat tremolo 4 {f(\pp aes} \repeat tremolo 4 {f\< aes)} 
+	    d,16(\p\> f d f d f d f d\! f d f d f d f)
+	    d(\pp f d f d f d f d f d f d f d f)
+	    d( f d f d\< f d f d f d f d f d f)
+	    f( aes f\! aes f aes f\> aes f aes f aes f aes f aes)
+	    f(\pp aes f aes f aes f aes f\< aes f aes f aes f aes)
 % mesures 61 à 65
-	    \repeat tremolo 4 {f( aes} f16 aes f aes f aes f' aes)
+	    f( aes f aes f aes f aes f aes f aes f aes f' aes)
 	    <bes, aes'>8\f r q4-> r bes8(\< d
 	    f-.) r\! r4 r2
 	    r8. bes,16\p\<( ces2.)~\>
@@ -126,15 +127,15 @@ MvtUnVoixTrois = \relative c' {
 % mesures 91 à 95
 	    g,8\pp r r8. f!16( ees8)[ r16 f( ees8)] r
 	    r4 r8. a16( g8)[ r16 a(] g8) r \mark \default
-	    g2\pp^\tranquillo( g')\<
+	    g2\pp-\tweak X-offset #1 ^\tranquillo( g')\<
 	    d4( g, e' g,)
 	    g'(\> fis8 g dis e b cis)\!
 % mesures 96 à 100
 	    d!4( b8 g c!2)\pp
-	    \repeat tremolo 4 {b16(\p\< g} \repeat tremolo 4 {b g)} 
-	    \repeat tremolo 4 {b(\f g} cis16 g cis g d' g, e' g,)
-	    d'( g, b g d' g, b g_\dimmarkup \repeat tremolo 4 {a16 g)} 
-	    b16(\p g b g d' g, b g \repeat tremolo 4 {b16 g)} 
+	    b16(\p\< g b g b g b g b g b g b g b g)
+	    b(\f g b g b g b g cis g cis g d' g, e' g,)
+	    d'( g, b g d' g, b g_\dimmarkup a g a g a g a g)
+	    b(\p g b g d' g, b g b g b g b g b g)
 % mesures 101 à 105
 	    b4 \times 2/3 {g'8\>( fis g} \times 2/3 {e dis e} b8 cis)
 	    d!4(\pp b g4. a8)
@@ -173,11 +174,11 @@ MvtUnVoixTrois = \relative c' {
 	b1
 	bes2 \times 2/3 {e,8( g a} bes8. c16-.)
 % mesures 126 à 130
-	\repeat tremolo 4 {a16( c} \repeat tremolo 4 {a16 c)} 
-	\repeat tremolo 4 {a16( c} \repeat tremolo 4 {a16_\crescmarkup c)} 
-	\repeat tremolo 4 {b!16( d} \repeat tremolo 4 {b16 d)}
-	\repeat tremolo 4 {b16(\< d} \repeat tremolo 4 {b16 d)}
-	\repeat tremolo 4 {cis16(\< e} \repeat tremolo 4 {cis16 e)} \mark \default
+	a16( c a c a c a c a c a c a c a c)
+	a( c a c a c a c a_\crescmarkup c a c a c a c)
+	b!( d b d b d b d b d b d b d b d)
+	b(\< d b d b d b d b d b d\! b d b d)
+	cis(\< e cis e cis e cis e cis e cis e\! cis e cis e)
 % mesures 131 à 135
 	<cis e>8\f r r4 \times 2/3 {ais8-.\f cis-. e-.} fis8.-> g16-.
 	fis8 r r4 r2
@@ -235,8 +236,8 @@ MvtUnVoixTrois = \relative c' {
 % mesures 176 à 180
 	r4 c'8\fz g,-. r4 cis'8\fz g,-.
 	d''8\fz g,,16 g g'-> g g, g g'-> g g, g g'-> g g, g
-	c'8\ff r r4 \repeat tremolo 4 {c,,16(\ff-> d)}
-	\repeat tremolo 4 {c( d)} c16( d c d c d) r e
+	c'8\ff r r4 c,,16(\ff-> d c d c d c d)
+	c( d c d c d c d) c16( d c d c d) r e
 	e1\fz 
 % mesures 181 à 185
 	<e g>->
@@ -291,13 +292,13 @@ MvtUnVoixTrois = \relative c' {
 	b2 \times 2/3 {d,8( f a} b8. c16-.)
 	b1(_\crescmarkup
 	a2 f)
-	\repeat tremolo 4 {d16(\p b'} \repeat tremolo 4 {d,16_\dimmarkup b')}
+	d16(\p b' d, b' d, b' d, b' d,_\dimmarkup b' d, b' d, b' d, b')
 % mesures 226 à 230
-	\repeat tremolo 4 {d,16( b'} \repeat tremolo 4 {d,16 b')}
-	\repeat tremolo 4 {d,16(\pp b'} \repeat tremolo 4 {d,16 b')}
-	\repeat tremolo 4 {f16( d'} \repeat tremolo 4 {f, d')}
-	\repeat tremolo 4 {f,16( d'} \repeat tremolo 4 {f,_\crescmarkup d')}
-	\repeat tremolo 4 {f,16(\< d'} \repeat tremolo 4 {f, d')}
+	d,( b' d, b' d, b' d, b' d, b' d, b' d, b' d, b')
+	d,(\pp b' d, b' d, b' d, b' d, b' d, b' d, b' d, b')
+	f( d' f, d' f, d' f, d' f, d' f, d' f, d' f, d')
+	f,( d' f, d' f, d' f, d' f,_\crescmarkup d' f, d' f, d' f, d')
+	f,(\< d' f, d' f, d' f, d' f, d' f, d' f, d' f, d')
 % mesures 231 à 235
 	<f, d'>8\f r <g f'>\fz r r4 g8(\< b
 	d-.)\! r r4 r2
@@ -307,7 +308,7 @@ MvtUnVoixTrois = \relative c' {
 % mesures 236 à 240
 	f\pp~
 	f2( g4 aes \mark \default
-	c)^\intempo r r2
+	c)-\tweak X-offset #1 ^\intempo r r2
 	R1
 	c4(\pp\< ais8 b c4 cis)
 % mesures 241 à 245
@@ -341,10 +342,10 @@ MvtUnVoixTrois = \relative c' {
 	e4(\p dis8 e bis cis gis ais)
 	b!4(\pp gis8 e a!2)
 % mesures 266 à 270
-	\repeat tremolo 4 {gis16(\p\< e} \repeat tremolo 4 {gis e)}
-	\repeat tremolo 4 {gis(\f e} ais16\> e ais e b' e, cis' e,)\!
-	b'( e, gis e b' e, gis e \repeat tremolo 4 {fis e)}
-	gis16(^\dimmarkup e gis e b' e, gis e \repeat tremolo 4 {gis16 e)}
+	gis16(\p e gis e gis\< e gis e gis e gis e gis e gis e)
+	gis(\f e gis e gis e gis e ais\> e ais e b' e, cis' e,)\!
+	b'( e, gis e b' e, gis e fis e fis e fis e fis e)
+	gis(_\dimmarkup e gis e b' e, gis e gis e gis e gis e gis e)
 	gis4 \times 2/3 {e'8( dis e} \times 2/3 {cis bis cis} gis!8 ais)
 % mesures 271 à 275
 	b!4( gis e4. fis8)
@@ -354,18 +355,18 @@ MvtUnVoixTrois = \relative c' {
 	gis(\pp fis
 % mesures 276 à 280
 	gis fis) \mark \default
-	\repeat tremolo 4 {d16_\pppnonlegato a'} \repeat tremolo 4 {d, a'} 
-	\repeat tremolo 4 {d, a'} \repeat tremolo 4 {d, a'} 
-	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
-	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
+	d16_\pppnonlegato a' d, a' d, a' d, a' d, a' d, a' d, a' d, a' 
+	d, a' d, a' d, a' d, a' d, a' d, a' d, a' d, a' 
+	a d a d a d a d a d a d a d a d 
+	a d a d a d a d a d a d a d a d 
 % mesures 281 à 285
-	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
-	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
-	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
-	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
-	\repeat tremolo 4 {a\< d} \repeat tremolo 4 {a d} 
+	a d a d a d a d a d a d a d a d 
+	a d a d a d a d a d a d a d a d 
+	a_\crescmarkup d a d a d a d a d a d a d a d 
+	a d a d a d a d a d a d a d a d 
+	a d a d a\< d a d a d a d a d a d 
 % mesures 286 à 290
-	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
+	a d a d a d a d a\! d a d a d a d 
 	\times 2/3 {d8\f-.( f-. aes-.)} c4-> \times 2/3 {d,8-.( f-. aes-.)} c4-> 
 	\times 2/3 {d,8->\< f aes} \times 2/3 {c-> f, aes} \times 2/3 {c-> f, aes} \times 2/3 {c-> f, aes} \mark \default
 	f'8\ff r r4 r2
@@ -383,7 +384,7 @@ MvtUnVoixTrois = \relative c' {
 	b aes\p~
 	aes^\riten\> <f g>\pp\fermata \mark \default
 % mesures 301 à 305
-	c4^\intempo g'8 g g4 g
+	c4-\tweak X-offset #1 ^\intempo g'8 g g4 g
 	c, g'8 g g4 g
 	c,^\pocoapocostring g'8 g_\crescmarkup g4 g
 	c, g'8 g g4 g 
