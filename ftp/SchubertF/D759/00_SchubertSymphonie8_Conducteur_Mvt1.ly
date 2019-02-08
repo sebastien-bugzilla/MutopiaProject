@@ -73,21 +73,21 @@ global = {
 			\center-column {
 				\vspace #10
 				"Franz Schubert"
-				"Année Naissance - décés"
+				"1797 - 1828"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Sinfonie Nr. 8 in h-moll"
+				"Die Unvollendete"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Mouvement 1"
 			}
 		}
 	}

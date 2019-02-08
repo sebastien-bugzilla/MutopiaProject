@@ -9,6 +9,7 @@
 MvtUnFlautiI = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
+	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Flauti"
 % mesures 1 à 5
 	R2.
@@ -23,9 +24,9 @@ MvtUnFlautiI = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	    d2.\p~
+	    d''2.\p~
 	    d2~ d8( e)
-	    d2 fis'4\fz
+	    e2 fis'4\fz
 	    g\fz r r
 	    R2.
 % mesures 31 à 35
@@ -37,7 +38,7 @@ MvtUnFlautiI = \relative c {
 % mesures 36 à 40
 	    fis2.~
 	    fis \mark \default
-	    d4\fz r r
+	    b,4\fz r r
 	    R2.*24
 % mesures 41 à 45
 	
@@ -50,7 +51,7 @@ MvtUnFlautiI = \relative c {
 % mesures 61 à 65
 	
 	    \mark \default
-	    g,,2.\ffz\>(
+	    g,2.\ffz\>(
 	    c,4)\! r r
 	    g'2.(\fz\>
 % mesures 66 à 70
@@ -62,8 +63,8 @@ MvtUnFlautiI = \relative c {
 % mesures 71 à 75
 	    g8\fz bes,4\> bes bes8~
 	    bes bes4 bes\! bes8(
-	    a2.\p~
-	    a( aes4)
+	    a2.)\p~
+	    a2( aes4)
 	    g2.~
 % mesures 76 à 80
 	    g
@@ -97,7 +98,7 @@ MvtUnFlautiI = \relative c {
 	    fis8.( g16 a4. c8)
 % mesures 101 à 105
 	    b8.( c16\< d4. f8)
-	    e4.(\> d8[ c b])
+	    e4.(\> d8[\! c b])
 	    a2( d4)
 	    g,8 r b4\fz r
 	    R2.*4
@@ -116,7 +117,7 @@ MvtUnFlautiI = \relative c {
 	    }
 	}
 % mesures 111 à 115
-	b2.~
+	b2.~\!
 	b~
 	b~
 	b4 r r
@@ -162,11 +163,11 @@ MvtUnFlautiI = \relative c {
 % mesures 161 à 165
 	r8 e4 e e8
 	bes'2.\ff\>(
-	g2.\! e4)
+	g2\! e4)
 	bes2.(\>
 	g2\! e4)
 % mesures 166 à 170
-	b'8\p g'4 g g8
+	b'!8\p g'4 g g8
 	r g4 g g8
 	r fis4 fis fis8
 	r fis4 fis fis8
@@ -229,7 +230,7 @@ MvtUnFlautiI = \relative c {
 	g2.(
 	ais \mark \default
 	b4) r r
-	R2.10
+	R2.*10
 	
 % mesures 221 à 225
 	
@@ -302,7 +303,7 @@ MvtUnFlautiI = \relative c {
 	
 	
 	
-	
+	\mark \default
 % mesures 281 à 285
 	b,2.\ff\>(
 	e,4)\! r r
@@ -337,7 +338,7 @@ MvtUnFlautiI = \relative c {
 	gis4) fis-. fis-.
 	fis8 r fis2(\fz
 	gis8) r gis2(\fz
-	b8) r b2(\fz
+	b,8) r b2(\fz
 	cis4) fis cis \mark \default
 % mesures 311 à 315
 	b r r
@@ -348,7 +349,7 @@ MvtUnFlautiI = \relative c {
 % mesures 316 à 320
 	cis2( fis4)
 	b(\p fis4. b8)
-	a8.( b16 cis8. e8)
+	a8.( b16 cis4. e8)
 	dis8.(\< e16 fis4.\! a!8)
 	gis4.(\> fis8[\! e dis])
 % mesures 321 à 325
@@ -389,15 +390,15 @@ MvtUnFlautiI = \relative c {
 	fis2.\ff
 % mesures 351 à 355
 	fis
-	b4 r r
+	b,4 r r
 	R2.*3
 	
 	
 % mesures 356 à 360
 	b2.(\mf\< 
 	cis2 d4)
-	b2.\>
-	cis2 d4)
+	b2.\>(
+	cis2 d4)\!
 	b4 r r
 % mesures 361 à 365
 	R2.*3
@@ -407,7 +408,7 @@ MvtUnFlautiI = \relative c {
 	cis r r
 % mesures 366 à 368
 	b r r
-	b2.\>~
+	b,2.\>~
 	b4\! r r \bar "|."
 }
 MvtUnFlautiII = \relative c {
