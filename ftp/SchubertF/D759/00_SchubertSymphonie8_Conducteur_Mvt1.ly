@@ -94,7 +94,7 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-			    \new Staff { \global \MvtUnFlautiI }
+			    \new Staff { \global \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnOboi }
 %			    \new Staff { \global \MvtUnClarinettiA }
 %			    \new Staff { \global \MvtUnFagotti }
