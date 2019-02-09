@@ -95,6 +95,7 @@ global = {
 	    <<
 	        \new StaffGroup <<
 			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
+			    %\new Staff { \global \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnOboi }
 %			    \new Staff { \global \MvtUnClarinettiA }
 %			    \new Staff { \global \MvtUnFagotti }

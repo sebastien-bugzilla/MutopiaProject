@@ -6,88 +6,16 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   1               #
 %#######################################################################
-oboiNotesA = \relative c'' {
-    s2.*21
-    fis2.(
-    b,4. ais8[ b cis])
-    fis2.(
-    b,4. ais8[ b cis])
-}
-oboiNotesB = \relative c''' {
-    s2.*134
-    g2.(
-    fis2 e4)
-    g2.(
-    fis2 e4)
-}
-oboiNotesC = \relative c'' {
-    s2.*226
-    d2.(
-    e4 f4. e8)
-    d4( cis2)
-}
-oboiNotesD = \relative c'' {
-    s2.*344
-    fis2(-> eis4)
-    fis2(-> eis4)
-    fis( eis fis
-    eis fis eis
-    fis) s s
-}
-violinNotesA = \relative c''' {
-    s2.*59
-    a4( e4. gis8)
-    a4( d, e8 fis)
-    R2.
-}
-violinNotesB = \relative c'' {
-    s2.*278
-    c4( g4. b8
-    ais4 fis gis8 ais)
-    R2.
-}
-flautiNotesA = \relative c'' {
-    s2.*25
-    d2.~
-    d2~ d8( e)
-    e2
-}
-flautiNotesB = \relative c''' {
-    s2.*100
-    b8.( c16 d4. f8)
-    e4.( d8[ c b])
-    a2( d4)
-    g,8 r
-}
-flautiNotesC = \relative c'''' {
-    s2.*139
-    g2( fis4)
-    e2( g4)
-    fis2( e4)
-    g2( fis4)
-}
-\addQuote "oboiA" {\oboiNotesA}
-\addQuote "oboiB" {\oboiNotesB}
-\addQuote "oboiC" {\oboiNotesC}
-\addQuote "oboiD" {\oboiNotesD}
-\addQuote "violinA" {\violinNotesA}
-\addQuote "violinB" {\violinNotesB}
-\addQuote "flautiA" {\flautiNotesA}
-\addQuote "flautiB" {\flautiNotesB}
-\addQuote "flautiC" {\flautiNotesC}
-
 MvtUnFlautiI = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Flauti"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
+	\set Staff.soloText = #""
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*20
+	    R2.*24
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -95,25 +23,24 @@ MvtUnFlautiI = \relative c {
 % mesures 16 à 20
 	
 % mesures 21 à 25
-	    \new CueVoice { \set instrumentCueName = "oboi I"}
-	    \cueDuring #"oboiA" #UP {R2.*4}
+	
 % mesures 26 à 30
-	    d''2.\p~
+	    \partcombineApart d''2.\p~
 	    d2~ d8( e)
-	    e2 fis'4\fz
-	    g\fz r r
+	    e2 fis'4
+	    \partcombineChordsOnce g \partcombineAutomatic r r
 	    R2.
 % mesures 31 à 35
 	    d,2.\p~
-	    d2~ d8(_\crescmarkup e)
+	    d2~ d8( e)
 	    e2~ e8( fis)
-	    fis2\f~ fis8( fis')
-	    fis2~ fis8 fis\ff
+	    fis2~ fis8( fis')
+	    fis2~ fis8[ fis]
 % mesures 36 à 40
 	    fis2.~
 	    fis \mark \default
-	    b,4\fz r r
-	    R2.*21
+	    b,4 r r
+	    R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -121,8 +48,7 @@ MvtUnFlautiI = \relative c {
 % mesures 51 à 55
 	
 % mesures 56 à 60
-	    \new CueVoice { \set instrumentCueName = "Violino I"}
-	    \cueDuring #"violinA" #UP {R2.*3}
+	
 % mesures 61 à 65
 	
 	    \mark \default
@@ -133,17 +59,17 @@ MvtUnFlautiI = \relative c {
 	    d4)\! r r
 	    g2.(\fz\>
 	    ees4) g''4\fz g\fz
-	    g_\crescmarkup\fz g\fz g\fz
+	    g\fz g\fz g\fz
 	    g\fz g\fz g\fz
 % mesures 71 à 75
 	    g8\fz bes,4\> bes bes8~
 	    bes bes4 bes\! bes8(
 	    a2.)\p~
 	    a2( aes4)
-	    g2.~
+	    \partcombineChordsOnce g2.(
 % mesures 76 à 80
-	    g
-	    e'\f~
+	    g)
+	    e'~
 	    e2( ees4)
 	    d2.~
 	    d
@@ -169,34 +95,34 @@ MvtUnFlautiI = \relative c {
 	    
 	    
 	    
-	    g,4(\p d4. g8)
+	    \partcombineApart g,4(\p d4. g8)
 	    fis8.( g16 a4. c8)
 % mesures 101 à 105
 	    b8.( c16\< d4. f8)
 	    e4.(\> d8[\! c b])
 	    a2( d4)
-	    g,8 r b4\fz r
+	    g,8 r b4 \partcombineAutomatic r
 	    R2.*4
 % mesures 106 à 110
 	    
 	    
 	    
-	    ais,2.(\pp\>
+	    ais,2.(
 	}
 	\alternative {
 	    {
 	        b4)\! r r
 	    }
 	    {
-	        b2.\>~
+	        \partcombineChords b2.\>~
 	    }
 	}
 % mesures 111 à 115
 	b2.~\!
 	b~
 	b~
-	b4 r r
-	R2.*19
+	b4 r r \partcombineApart
+	R2.*23
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -206,20 +132,20 @@ MvtUnFlautiI = \relative c {
 % mesures 131 à 135
 	
 % mesures 136 à 140
-	\new CueVoice { \set instrumentCueName = "Oboe I"}
-	\cueDuring #"oboiB" #UP {R2.*4}
+	
+	
 	g''2\f( fis4)
-	e2(_\crescmarkup g4)
+	e2(^\crescmarkup g4)
 	fis2( e4)
 % mesures 141 à 145
 	g2( fis4)
+	\partcombineChords e( g fis)
 	e( g fis)
 	e( g fis)
-	e( g fis)
-	e( g) g-.
+	e( g) g-. \partcombineAutomatic
 % mesures 146 à 150
-	g2.(\ff\>
-	e2)(\! cis4)
+	g2.(
+	e2)( cis4)
 	gis2.(\>
 	e2\! cis4)
 	gis8\p e'4 e e8
@@ -227,18 +153,18 @@ MvtUnFlautiI = \relative c {
 	r8 e4 e e8
 	r8 dis4 dis dis8
 	r dis4 dis dis8
-	gis'2.(\ff\>
+	gis'2.(
 	f2)( d4)
 % mesures 156 à 160
-	gis,2.(\>
-	f2\! d4)
-	a8\p f'4 f f8
+	gis,2.(
+	f2 d4)
+	a8 f'4 f f8
 	r8 f4 f f8
 	r8 e4 e e8
 % mesures 161 à 165
 	r8 e4 e e8
-	bes'2.\ff\>(
-	g2\! e4)
+	bes'2.(
+	g2 e4)
 	bes2.(\>
 	g2\! e4)
 % mesures 166 à 170
@@ -275,14 +201,14 @@ MvtUnFlautiI = \relative c {
 	ais4-. e-. fis-.
 	g-. e2\fz
 	g\fz~ g8 a32( b c d)
-	e2.\ffz\>~
-	e\!
-% mesures 196 à 200
-	e~\fz\>
-	e\!
-	e~\pp
+	e2.~
 	e
-	e~_\crescmarkup
+% mesures 196 à 200
+	e~
+	e
+	e~
+	e
+	e~
 % mesures 201 à 205
 	e
 	a\ff
@@ -298,14 +224,14 @@ MvtUnFlautiI = \relative c {
 % mesures 211 à 215
 	
 	
-	r4\pp e,( fis)
+	\partcombineApart r4\pp e,( fis)
 	g4.( fis8[ g fis]
 	g4. fis8[ g fis])
 % mesures 216 à 220
 	g2.(
 	ais \mark \default
-	b4) r r
-	R2.*7
+	b4) r r \partcombineAutomatic
+	R2.*10
 	
 % mesures 221 à 225
 	
@@ -316,10 +242,9 @@ MvtUnFlautiI = \relative c {
 % mesures 226 à 230
 	
 	
-	\new CueVoice { \set instrumentCueName = "Oboe I"}
-	\cueDuring #"oboiC" #UP {R2.*3}
-	fis4(\p g4.\< fis8
-	g4\> fis2)\!
+	
+	fis4( g4. fis8
+	g4 fis2)
 % mesures 231 à 235
 	b2.(
 	e,4. dis8[ e fis])
@@ -327,20 +252,20 @@ MvtUnFlautiI = \relative c {
 	e,4. dis8[ e fis])
 	g2.(
 % mesures 236 à 240
-	a4\< bes4.\> a8)\!
-	g4( fis2)
-	a8(\< b! c4. b8
-	c4)(\> b2)\!
+	a4_\< bes4._\> a8)\! \partcombineApart
+	g4( fis2) \partcombineAutomatic
+	a8( b! c4. b8
+	c4)( b2)
 	a2.~
 % mesures 241 à 245
-	a2~ a8(_\crescmarkup b)
+	a2~ a8( b)
 	b2 cis4-.\f
 	d-.\fz r r
 	R2.
 	a2.\p~
 % mesures 246 à 250
 	a2~ a8\p( b)
-	b2~ b8_\crescmarkup( cis)
+	b2~ b8( cis)
 	cis2~ cis8 cis
 	cis2~ cis8 eis\ff
 	eis2.~
@@ -365,7 +290,7 @@ MvtUnFlautiI = \relative c {
 % mesures 266 à 270
 	r bes([ a)] a4 a8~
 	a4 r r
-	R2.*10
+	R2.*13
 	
 	
 % mesures 271 à 275
@@ -378,8 +303,7 @@ MvtUnFlautiI = \relative c {
 	
 	
 	
-	\new CueVoice { \set instrumentCueName = "Violino I"}
-	\cueDuring #"violinB" #UP {R2.*3}
+	
 	\mark \default
 % mesures 281 à 285
 	b,2.\ff\>(
@@ -394,11 +318,11 @@ MvtUnFlautiI = \relative c {
 	d8\fz\> d4 d d8~\!
 	d d4 d d8(
 % mesures 291 à 295
-	cis2.\p)~
+	cis2.)~
 	cis2( c4)
 	b2.~
 	b
-	gis'2.\f~
+	gis'2.~
 % mesures 296 à 300
 	gis2( g4)
 	fis2.~
@@ -419,7 +343,7 @@ MvtUnFlautiI = \relative c {
 	cis4) fis ais, \mark \default
 % mesures 311 à 315
 	b r r
-	R2.
+	R2. \partcombineApart
 	r4 r r8 e,\p
 	dis8.(\< e16 fis4. a!8)
 	gis4.(\> fis8\![ e dis])
@@ -427,29 +351,29 @@ MvtUnFlautiI = \relative c {
 	cis2( fis4)
 	b(\p fis4. b8)
 	a8.( b16 cis4. e8)
-	dis8.(\< e16 fis4.\! a!8)
-	gis4.(\> fis8[\! e dis])
+	dis8.( e16 fis4. a!8)
+	gis4.( fis8[ e dis])
 % mesures 321 à 325
 	cis2( fis4
-	b,8) r b4\ffz r
+	b,8) r b4 \partcombineAutomatic r
 	R2.*4
 	
 	
 % mesures 326 à 330
 	
-	ais,2.(\pp\>
-	b4)\! r r
+	ais,2.(
+	b4) r r
 	R2.*5
 	
 % mesures 331 à 335
 	
 	
 	
-	fis2.(\pp
+	fis2.(
 	ais)(
 % mesures 336 à 340
 	b4) r r
-	R2.*7
+	R2.*11
 	
 	
 	
@@ -460,14 +384,14 @@ MvtUnFlautiI = \relative c {
 	
 	
 % mesures 346 à 350
-	\new CueVoice { \set instrumentCueName = "Oboe I"}
-	\cueDuring #"oboiD" #UP {R2.*4 r4}
-	 b(\f d
+	
+	
+	r4 b(\f d
 	fis\< b d)
 	fis2.\ff
 % mesures 351 à 355
 	fis
-	b,4 r r
+	\partcombineApart b,4 \partcombineAutomatic r r
 	R2.*3
 	
 	
@@ -484,18 +408,16 @@ MvtUnFlautiI = \relative c {
 	d4\ff r r
 	cis r r
 % mesures 366 à 368
-	b r r
-	b,2.\>~
-	b4\! r r \bar "|."
+	\partcombineApart b \partcombineAutomatic r r
+	\partcombineApart b,2.~
+	b4 \partcombineAutomatic r r \bar "|."
 }
 MvtUnFlautiII = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Flauti"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
+	\set Staff.soloIIText = #""
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
@@ -509,10 +431,9 @@ MvtUnFlautiII = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	    
-	    \new CueVoice { \set instrumentCueName = "Flauti I"}
-	    \cueDuring #"flautiA" #UP {R2.*2 r2}
-	    e'''4\fz
+	    R2.
+	    R2.
+	    r4 r e'''\fz
 	    e\fz r r
 	    R2.*2
 % mesures 31 à 35
@@ -525,7 +446,7 @@ MvtUnFlautiII = \relative c {
 	    e2.~
 	    e \mark \default
 	    d4\fz r r
-	    R2.*21
+	    R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -535,8 +456,7 @@ MvtUnFlautiII = \relative c {
 % mesures 56 à 60
 	
 % mesures 61 à 65
-	    \new CueVoice { \set instrumentCueName = "Violino I"}
-	    \cueDuring #"violinA" #UP {R2.*3}
+	
 	    \mark \default
 	    g,,2.\ffz\>(
 	    c,4)\! r r
@@ -575,20 +495,19 @@ MvtUnFlautiII = \relative c {
 	    d8) r d2(\fz->
 	    c4) b-. c-. \mark \default
 	    b r r
-	    R2.*7
+	    R2.*5
 	    
 % mesures 96 à 100
 	    
 	    
 	    
-	    
-	    
+	    R2.
+	    R2.
 % mesures 101 à 105
-	    
-	    
-	    \new CueVoice { \set instrumentCueName = "Flauti I"}
-	    \cueDuring #"flautiB" #UP {R2.*3 r4}
-	    b4\fz r
+	    R2.
+	    R2.
+	    R2.
+	    r4 b4\fz r
 	    R2.*4
 % mesures 106 à 110
 	    
@@ -609,7 +528,7 @@ MvtUnFlautiII = \relative c {
 	a~
 	a(
 	g4) r r
-	R2.*24
+	R2.*23
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -621,12 +540,11 @@ MvtUnFlautiII = \relative c {
 % mesures 136 à 140
 	
 	
-	
-	
-	
+	R2.
+	R2.
+	R2.
 % mesures 141 à 145
-	\new CueVoice { \set instrumentCueName = "Flauti I"}
-	\cueDuring #"flautiC" #UP {R2.*4}
+	R2.
 	e'4( g fis)
 	e( g fis)
 	e( g fis)
@@ -707,18 +625,18 @@ MvtUnFlautiII = \relative c {
 	fis2.\ff
 	cis\fz
 	d4 r r
-	R2.*9
+	R2.*4
 	
 % mesures 211 à 215
 	
 	
-	
-	
-	
+	R2.
+	R2.
+	R2.
 % mesures 216 à 220
-	
-	\mark \default
-	R2.*7
+	R2.
+	R2.\mark \default
+	R2.*11
 	
 	
 % mesures 221 à 225
@@ -730,8 +648,7 @@ MvtUnFlautiII = \relative c {
 % mesures 226 à 230
 	
 	
-	\new CueVoice { \set instrumentCueName = "Oboe I"}
-	\cueDuring #"oboiC" #UP {R2.*3}
+	
 	e,2.\p\<~ 
 	e2\>( dis4\!
 % mesures 231 à 235
@@ -741,8 +658,8 @@ MvtUnFlautiII = \relative c {
 	b2~( b8 c 
 	b4) r r
 % mesures 236 à 240
-	R2.*2
-	
+	R2.
+	R2.
 	a'2.\<(~
 	a2\> gis4)\!
 	R2.
@@ -779,7 +696,7 @@ MvtUnFlautiII = \relative c {
 % mesures 266 à 270
 	r g4 g g8(
 	fis4) r r
-	R2.*10
+	R2.*13
 	
 	
 % mesures 271 à 275
@@ -792,8 +709,7 @@ MvtUnFlautiII = \relative c {
 	
 	
 	
-	\new CueVoice { \set instrumentCueName = "Violino I"}
-	\cueDuring #"violinB" #UP {R2.*3}
+	
 	\mark \default
 % mesures 281 à 285
 	b,2.\ff\>(
@@ -833,15 +749,15 @@ MvtUnFlautiII = \relative c {
 	cis4) dis cis \mark \default
 % mesures 311 à 315
 	b r r
-	R2.*6
-	
-	
-	
+	R2.
+	R2.
+	R2.
+	R2.
 % mesures 316 à 320
-	
-	
+	R2.
+	R2.
 	cis4(\p fis,4. cis'8)
-	b8.(\< cis16 dis4.\! fis8)
+	b8.(\< cis16 dis!4.\! fis8)
 	fis4(\> e8[\! dis cis b])
 % mesures 321 à 325
 	b4( ais8 gis ais4
