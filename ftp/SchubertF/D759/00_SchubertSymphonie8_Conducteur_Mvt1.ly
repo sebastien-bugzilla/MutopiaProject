@@ -50,7 +50,7 @@ global = {
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_SchubertSymphonie8_Mvt1_Flauti.ly"
+\include "01_SchubertSymphonie8_Mvt1_Flauti_Comb.ly"
 \include "01_SchubertSymphonie8_Mvt1_Oboi.ly"
 \include "01_SchubertSymphonie8_Mvt1_Clarinetti_A.ly"
 \include "01_SchubertSymphonie8_Mvt1_Fagotti.ly"
@@ -94,7 +94,7 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-			    \new Staff { \global \MvtUnFlautiII }
+			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnOboi }
 %			    \new Staff { \global \MvtUnClarinettiA }
 %			    \new Staff { \global \MvtUnFagotti }

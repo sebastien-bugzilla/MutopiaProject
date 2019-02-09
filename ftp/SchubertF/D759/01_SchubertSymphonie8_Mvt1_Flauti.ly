@@ -439,7 +439,7 @@ MvtUnFlautiII = \relative c {
 	    r4 r_\crescmarkup r8 d,
 	    d4( cis4. e8)
 	    e4(\f d4. e'8)
-	    e( d4.) e8\ff
+	    e4( d4.) e8\ff
 % mesures 36 à 40
 	    e2.~
 	    e \mark \default
@@ -456,7 +456,7 @@ MvtUnFlautiII = \relative c {
 % mesures 61 à 65
 	
 	    \mark \default
-	    g,2.\ffz\>(
+	    g,,2.\ffz\>(
 	    c,4)\! r r
 	    g'2.(\fz\>
 % mesures 66 à 70
@@ -466,15 +466,15 @@ MvtUnFlautiII = \relative c {
 	    cis_\crescmarkup\fz cis\fz cis\fz
 	    cis\fz cis\fz cis\fz
 % mesures 71 à 75
-	    cis8\fz g,4\> g g8~
+	    cis8\fz g4\> g g8~
 	    g g4 g\! g8~
 	    g2.\p(
 	    f)
 	    f(
 % mesures 76 à 80
 	    e)
-	    d'\f~
-	    c
+	    d'\f(
+	    c)
 	    c(
 	    b)
 % mesures 81 à 85
@@ -518,14 +518,14 @@ MvtUnFlautiII = \relative c {
 	        fis4\! r r
 	    }
 	    {
-	        a2.\>~
+	        a!2.\>~
 	    }
 	}
 % mesures 111 à 115
 	a2.~\!
 	a~
-	a~
-	g4 r r
+	a(
+	g4) r r
 	R2.*27
 % mesures 116 à 120
 	
@@ -567,8 +567,8 @@ MvtUnFlautiII = \relative c {
 	r8 d4 d d8
 % mesures 161 à 165
 	r8 cis4 cis cis8
-	g'2.\ff\>~
-	g2\! e4
+	g'2.\ff\>~(
+	g2\! e4)
 	bes2.(\>
 	g2\! e4)
 % mesures 166 à 170
@@ -591,9 +591,9 @@ MvtUnFlautiII = \relative c {
 	b) r r
 % mesures 181 à 185
 	R2.
-	e,2.\>(
+	eis,2.\>(
 	fis2\! gis4
-	e4) fis2\fz
+	fis4) fis2\fz
 	a2\fz~ a8 b32( cis d e)
 % mesures 186 à 190
 	fis2.\fz
@@ -656,8 +656,8 @@ MvtUnFlautiII = \relative c {
 	b2~( b8 c 
 	b4) r r
 % mesures 236 à 240
-	R2.
-	R2.
+	R2.*2
+	
 	a'2.\<(~
 	a2\> gis4)\!
 	R2.
@@ -668,8 +668,8 @@ MvtUnFlautiII = \relative c {
 	R2.
 	R2.
 % mesures 246 à 250
-	r4 r fis8\p( b)
-	a4 g4._\crescmarkup( b8)
+	r4 r fis8\p( a)
+	a4( g4._\crescmarkup b8)
 	b4( a4. b8)
 	b4( a4.) cis8-.\ff
 	cis2.~
@@ -693,7 +693,7 @@ MvtUnFlautiII = \relative c {
 	r g4(-. g-. g8-.)
 % mesures 266 à 270
 	r g4 g g8(
-	fis4 r r
+	fis4) r r
 	R2.*13
 	
 	
@@ -716,7 +716,7 @@ MvtUnFlautiII = \relative c {
 	fis4)\! r r
 	b2.(\fz\>
 % mesures 286 à 290
-	g4) b''\fz b\fz 
+	g4) b'\fz b\fz 
 	b\fz b\fz b\fz 
 	b\fz b\fz b\fz 
 	b8\fz\> b4 b b8~\!
