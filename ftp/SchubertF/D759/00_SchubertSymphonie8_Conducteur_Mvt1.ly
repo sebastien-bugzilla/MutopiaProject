@@ -82,7 +82,7 @@ global = {
 				\vspace #10
 				"Sinfonie Nr. 8 in h-moll"
 				"Die Unvollendete"
-			}
+			}*
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
@@ -94,9 +94,9 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
-			    %\new Staff { \global \MvtUnFlautiII }
-%			    \new Staff { \global \MvtUnOboi }
+%			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
+%			    \new Staff { \global \MvtUnFlautiII }
+			    \new Staff { \global \MvtUnOboiI }
 %			    \new Staff { \global \MvtUnClarinettiA }
 %			    \new Staff { \global \MvtUnFagotti }
 %			    \new Staff { \global \MvtUnCorniD }
