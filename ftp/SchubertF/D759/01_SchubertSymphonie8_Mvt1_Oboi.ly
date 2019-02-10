@@ -28,17 +28,17 @@ MvtUnOboiI = \relative c'' {
 	    b,4. ais8[ b cis])
 	    d2.(
 	    e4\< f4.\> e8)
-	    d4(\! c2
+	    d4(\! cis2
 	    d4) r r
 % mesures 21 à 25
 	    R2.
-	    f2.(
+	    fis2.(
 	    b,4. ais8[ b cis])
-	    f2.(
+	    fis2.(
 	    b,4. ais8[ b cis])
 % mesures 26 à 30
 	    d2.~
-	    d2~ d8( e)
+	    d2~ d8(_\crescmarkup e)
 	    e2 fis4\fz
 	    g\fz r r
 	    R2.
@@ -93,7 +93,7 @@ MvtUnOboiI = \relative c'' {
 	    g8 r g2\fz->~
 % mesures 86 à 90
 	    g8 r g2\fz->(
-	    b8) r b2.->(\fz
+	    b8) r b2->(\fz
 	    c4) g-. fis!-.
 	    g8 r g2->\fz~
 	    g8 r g2->\fz(
@@ -104,14 +104,14 @@ MvtUnOboiI = \relative c'' {
 	    R2.
 	    r4 r r8 c,\p
 % mesures 96 à 100
-	    b8.(\< c16 d4. f8)\!
-	    e4.( d8[ c b])
+	    b8.(\< c16 d4. f8)
+	    e4.(\> d8[ c b])\!
 	    a2( d4)
 	    g, r r
 	    a'(\p d,4. a'8)
 % mesures 101 à 105
 	    g8.(\< a16 b4. d8)
-	    d4(\> c8[ b a g)]
+	    d4(\> c8[ b a g)]\!
 	    g4( fis8 e fis4)
 	    g8 r b,2\ff\>~
 	    b2.~
@@ -130,7 +130,7 @@ MvtUnOboiI = \relative c'' {
 	    }
 	}
 % mesures 111 à 115
-	b~
+	b~\!
 	b~
 	b~
 	b4 r r
@@ -145,7 +145,7 @@ MvtUnOboiI = \relative c'' {
 	
 	
 	
-	g'2.\g(
+	g'2.\f(
 	fis2 e4)
 % mesures 136 à 140
 	g2.( 
@@ -222,7 +222,7 @@ MvtUnOboiI = \relative c'' {
 % mesures 196 à 200
 	c2.\fz\>(
 	b2\! ais4)
-	cis!2\pp(
+	cis!2.\pp(
 	b2 ais4)
 	cis'2._\crescmarkup(
 % mesures 201 à 205
@@ -258,7 +258,7 @@ MvtUnOboiI = \relative c'' {
 % mesures 226 à 230
 	d2.(
 	e4\< f4.\> e8)
-	d4( cis2)
+	d4(\! cis2)
 	c2.~\<
 	c4\>( b2)~\!
 % mesures 231 à 235
@@ -272,7 +272,7 @@ MvtUnOboiI = \relative c'' {
 	
 	f'2.\<~
 	f4(\> e2)\!
-	e4( fis4. g8)
+	e4( fis!4. g8)
 % mesures 241 à 245
 	g4( fis4. fis8_\crescmarkup)
 	fis4( g) gis-.\f
@@ -283,7 +283,7 @@ MvtUnOboiI = \relative c'' {
 	g4( fis4. fis8)
 	fis4( g4. gis8_\crescmarkup)
 	gis4( a4. gis8)
-	gis( a4.) b8-.\ff
+	gis4( a4.) b8-.\ff
 	b2.~
 % mesures 251 à 255
 	b \mark \default
@@ -340,7 +340,7 @@ MvtUnOboiI = \relative c'' {
 	R2.*2
 	
 	r4 r r8 fis\p\<~
-	fis4(\> e8[ dis\! cis b)]
+	fis4( e8[\> dis\! cis b)]
 % mesures 316 à 320
 	b4( ais8 gis ais4)
 	b r r
@@ -355,7 +355,7 @@ MvtUnOboiI = \relative c'' {
 	b(
 % mesures 326 à 330
 	ais)\>(
-	b4) r r
+	b4)\! r r
 	R2.*15
 % mesures 331 à 335
 	
@@ -376,9 +376,9 @@ MvtUnOboiI = \relative c'' {
 % mesures 351 à 355
 	ais
 	b,\pp(
-	cis2 d4)
-	b2.(
-	cis2 d4)
+	cis2\< d4)
+	b2.(\>
+	cis2\! d4)
 % mesures 356 à 360
 	b2.\mf\<~
 	b~
