@@ -44,14 +44,14 @@ global = {
 	\key b \minor
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Allegro moderato" %4 = 80 
+	\tempo "Allegro moderato" 4 = 140 
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_Flauti_Comb.ly"
-\include "01_SchubertSymphonie8_Mvt1_Oboi.ly"
+\include "01_SchubertSymphonie8_Mvt1_Oboi_Comb.ly"
 \include "01_SchubertSymphonie8_Mvt1_Clarinetti_A.ly"
 \include "01_SchubertSymphonie8_Mvt1_Fagotti.ly"
 \include "01_SchubertSymphonie8_Mvt1_Corni_D.ly"
@@ -94,9 +94,10 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-%			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
+			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnFlautiII }
-			    \new Staff { \global \MvtUnOboiII }
+%			    \new Staff { \global \MvtUnOboiII }
+			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
 %			    \new Staff { \global \MvtUnClarinettiA }
 %			    \new Staff { \global \MvtUnFagotti }
 %			    \new Staff { \global \MvtUnCorniD }
@@ -122,6 +123,42 @@ global = {
 		}
 		\layout {
 			%system-count = #20
+		}
+	}
+	\score {
+	    <<
+	        \new StaffGroup <<
+			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
+%			    \new Staff { \global \MvtUnFlautiII }
+%			    \new Staff { \global \MvtUnOboiII }
+			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
+%			    \new Staff { \global \MvtUnClarinettiA }
+%			    \new Staff { \global \MvtUnFagotti }
+%			    \new Staff { \global \MvtUnCorniD }
+%			    \new Staff { \global \MvtUnTrombeE }
+%			    \new GrandStaff <<
+%			        \new Staff { \global \MvtUnVoixSept }
+%			        \new Staff { \global \MvtUnTromboniBasso }
+%		        >>
+%		        \new Staff { \global \MvtUnTimpaniEH }
+%		        \new GrandStaff <<
+%			        \new Staff { \global \MvtUnViolinoI }
+%			        \new Staff { \global \MvtUnViolinoII }
+%		        >>
+%		        \new Staff << \global \MvtUnViola >>
+%		        \new GrandStaff <<
+%			        \new Staff << \global \MvtUnVioloncello >>
+%			        \new Staff << \global \MvtUnBasso >>
+%		        >>
+			>>
+		>>
+		\midi {
+		    \tempo 2 = 90
+			\context {
+			    \Score
+			    midiMinimumVolume = #0.8
+				midiMaximumVolume = #0.9
+			}
 		}
 	}
 }

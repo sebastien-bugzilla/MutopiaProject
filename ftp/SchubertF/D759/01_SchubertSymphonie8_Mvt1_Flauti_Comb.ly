@@ -339,7 +339,7 @@ MvtUnFlautiI = \relative c {
 	gis4) fis-. fis-.
 	fis8 r fis2(\fz
 	gis8) r gis2(\fz
-	b,8) r b2(\fz
+	bis,8) r bis2(\fz
 	cis4) fis ais, \mark \default
 % mesures 311 à 315
 	b r r
@@ -350,7 +350,7 @@ MvtUnFlautiI = \relative c {
 % mesures 316 à 320
 	cis2( fis4)
 	b(\p fis4. b8)
-	a8.( b16 cis4. e8)
+	ais8.( b16 cis4. e8)
 	dis8.( e16 fis4. a!8)
 	gis4.( fis8[ e dis])
 % mesures 321 à 325
