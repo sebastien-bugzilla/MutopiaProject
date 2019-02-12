@@ -46,19 +46,19 @@ MvtUnViolinoI = \relative c {
 	    b b eis, eis fis fis d d e e fis fis
 	    fis fis fis fis fis fis cis' cis b b bes bes
 % mesures 26 à 30
-	    a a d d b b d d b b d d b b c c
+	    a a d d b! b d d b b c c
 	    c c d d b_\crescmarkup b d d b b d d
-	    d d e e cis cis e e <e fis>\fz q q q 
+	    d d e e cis! cis e e <e fis>\fz q q q 
 	    <e g>8\noBeam\fz g,16 g e\fp\> e g g g g fis fis
 	    e e g g\! fis fis e e e e fis fis
 % mesures 31 à 35
 	    a! a d d b b  d d b b c c
 	    c c d d b b d_\crescmarkup d b b d d
-	    d d e e cis cis e e cis cis <cis e> q
-	    q\f q fis fis d d fis fis d <cis e> q
+	    d d e e cis! cis e e cis cis <cis e> q
+	    q\f q fis fis d d fis fis d d <cis e> q
 	    q q fis fis d d fis fis fis fis <cis ais'>8\ff\noBeam
 % mesures 36 à 40
-	    q4 r q8 q4
+	    q4 r8 q8 q4
 	    r8 q q4 q8 q \mark \default
 	    <d b'>4\fz r r
 	    R2.*14
@@ -76,7 +76,7 @@ MvtUnViolinoI = \relative c {
 % mesures 56 à 60
 	    g4( d2)
 	    g4( d4. g8)
-	    gis8.( a16 b8. a8)
+	    gis8.( a16 b4. a8)
 	    gis8.( a16 b8[ e, fis gis])
 	    a4(_\decresc e4. gis8)
 % mesures 61 à 65
@@ -89,10 +89,10 @@ MvtUnViolinoI = \relative c {
 	    d4\! r r
 	    ees4:32\fz\> g: bes:\!
 	    ees: g: bes:
-	    cis:_\crescmarkup d: ees:
+	    cis!:_\crescmarkup d: ees:
 	    fis!: g: a:
 % mesures 71 à 75
-	    bes4\gz r r 
+	    bes4\fz r r 
 	    R2.*2
 	    
 	    f,8.(\p g16 a8[ d, e f])
@@ -137,7 +137,7 @@ MvtUnViolinoI = \relative c {
 	    g4\pp^\pizz r r
 	    fis r r
 	    d r r
-	    cis r r
+	    cis! r r
 	}
 	\alternative {
 	    {
@@ -226,10 +226,10 @@ MvtUnViolinoI = \relative c {
 	<g, g'>2.\fz
 	fis'\fz \mark \default
 % mesures 176 à 180
-	e16 dis e fis g d e fis g e fis g
+	e16 dis e fis g dis e fis g e fis g
 	a eis fis g a fis g a b g a b
 	cis!\< d e fis g fis g fis g fis g fis
-	g\> fis g fis g fis g fis ais fis ais fis
+	g\> fis g fis g fis g fis ais\! fis ais fis
 	b ais, b cis d ais b cis d b cis d
 % mesures 181 à 185
 	e bis cis d e cis d e fis d e fis
@@ -257,7 +257,7 @@ MvtUnViolinoI = \relative c {
 	e:_\crescmarkup
 % mesures 201 à 205
 	e:
-	a4\ff \grace {d,,32( e fis g)} a4 \grace {a32( b c)} d4-.
+	a4\ff \grace {d,,32( e fis g)} a4 \grace {a32( b cis)} d4-.
 	a,,4\fz \grace {a'32( b cis d)} e4-. \grace {e32( fis gis)} a4-.
 	<d,, d'>4 r r8. d32(\p e
 	fis4) r r
@@ -279,15 +279,15 @@ MvtUnViolinoI = \relative c {
 	fis16\pp^\arco fis eis eis fis fis d d e e fis fis
 	g g fis fis g g ais ais b b cis cis
 	fis, fis eis eis fis fis d d e e fis fis
-% mesures 226 à 230
+% mesures 221 à 225
 	g g fis fis g g ais ais b b cis cis
-	fis fis eis eis fis fis d d e e fis fis
+	fis, fis eis eis fis fis d d e e fis fis
 	g g fis fis g g cis cis b b ais ais
 	b b eis, eis fis fis d d e e fis fis
 	g g fis fis g g cis cis b b bes bes
-% mesures 221 à 225
+% mesures 226 à 230
 	a a gis gis a a fis fis g g a a 
-	b\< b cis cis d d\> cis cis d d b b\!
+	b\< b cis! cis d d\> cis cis d d b b\!
 	a a a a a a a a bes bes a a 
 	a\p a c c c c a a a a c c 
 	a a c c b b fis fis fis fis b b
@@ -302,7 +302,7 @@ MvtUnViolinoI = \relative c {
 	a a b b c c b b c c d d 
 	a a d d d d a a a a d d
 	a a a a a a a a gis gis gis gis
-	a a a' a fis fis a a fis fis g! g 
+	a a a' a fis! fis a a fis fis g! g 
 % mesures 241 à 245
 	g g a a fis fis a a fis_\crescmarkup fis a a
 	a a b b g g b b <eis, cis'>\f q q q
@@ -356,7 +356,7 @@ MvtUnViolinoI = \relative c {
 	R2.*2
 % mesures 291 à 295
 	
-	a8.(\p b16 c[ fis, gis a]
+	a8.(\p b16 cis8[ fis, gis a]
 	b4) r r
 	gis8.( a16 b8[ e, fis gis])
 	gis4\f r r
@@ -365,10 +365,10 @@ MvtUnViolinoI = \relative c {
 	fis4 r r
 	dis8.-. e16-. fis8-.[ b,-. dis-. fis-.]
 	gis4\ff r r
-	eis8.-. fis16-. gis8-.[ cis,-. e-. fis-.]
+	eis8.-. fis16-. gis8-.[ cis,-. eis-. fis-.]
 % mesures 301 à 305
 	gis4\fz r r
-	eis8.-. fis16-. gis8-.[ cis,-. dis-. e-.]
+	eis8.-. fis16-. gis8-.[ cis,-. dis-. eis-.]
 	fis8 r <b, fis'>2:16\fz
 	<b gis'>8 r <b gis'>2:16\fz
 	<dis b'>8 r <dis b'>2:16\fz
@@ -376,7 +376,7 @@ MvtUnViolinoI = \relative c {
 	<e gis>4-. <b fis'>-. <ais fis'>-.
 	<b fis'>8 r <dis fis>2:16\fz
 	<e gis>8 r <e gis>2:16\fz
-	<dis bis>8 r <dis bis'>2:16\fz
+	<dis bis'>8 r <dis bis'>2:16\fz
 	<e cis'>4-. <dis fis>-. <cis ais'>-.
 % mesures 311 à 315
 	<b b'> r r
