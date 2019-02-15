@@ -11,6 +11,7 @@ MvtUnViolinoII = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #"Violino II."
 	\set Score.alternativeNumberingStyle = #'numbers
+	\set Staff.midiInstrument = #"violin"
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event
                                       dynamic-event slur-event)
@@ -31,9 +32,9 @@ MvtUnViolinoII = \relative c {
 	    e e dis dis e e e e d d e e
 	    d d cis cis d d b b cis cis d d
 % mesures 16 à 20
-	    e e dis dis e e d d e e 
+	    e e dis dis e e e e d d e e 
 	    fis fis eis eis fis fis d d e e fis fis
-	    g\< g ais ais b b\> ais ais b b e, e
+	    g\< g ais ais b b\> ais ais b b e, e\!
 	    g g fis fis g g e e fis fis g g
 	    fis fis d d cis\fz cis e e e\> e cis cis
 % mesures 21 à 25
@@ -46,19 +47,19 @@ MvtUnViolinoII = \relative c {
 	    fis fis d d g g d d g g a a 
 	    a a d, d g_\crescmarkup g d d g g <gis b> q
 	    q q e e a a e e <ais cis>\fz q q q
-	    q8\fz e16 e cis\fp\> cis e e e e cis cis
+	    q8\fz\noBeam e16 e cis\fp\> cis e e e e cis cis
 	    cis cis e e\! e e cis cis cis cis e e
 % mesures 31 à 35
 	    fis fis d d g g d d g g a a
 	    a a d, d g g d_\crescmarkup d g g <gis b> q
 	    q q e e a a e e a a ais ais
-	    ais\f ais fis fis b b fis fis b b a a
-	    ais ais fis fis b b fis fis b b <e fis>8\ff
+	    ais\f ais fis fis b b fis fis b b ais ais
+	    ais ais fis fis b b fis fis b b <e fis>8\ff\noBeam
 % mesures 36 à 40
 	    q4 r8 q q4
 	    r8 q q4 q8 q \mark \default
 	    <d fis>4\fz r r
-	    R2.*14
+	    R2.*14 
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -74,7 +75,7 @@ MvtUnViolinoII = \relative c {
 	    g4( d4. g8)
 	    gis8.( a16 b4. a8)
 	    gis8.( a16 b8[ e, fis fis])
-	    a4(_\decresc e4. gis8)
+	    a4(_\decresc e4. gis8)\!
 % mesures 61 à 65
 	    a4( d, e8 fis)
 	    R2. \mark \default
@@ -82,13 +83,13 @@ MvtUnViolinoII = \relative c {
 	    g4\! r r
 	    bes2.:32\fz\>
 % mesures 66 à 70
-	    bes4 r r
+	    bes4\! r r
 	    bes4:32\fz\> ees: g:\!
 	    bes: ees: g:
-	    cis,:_\crescmarkup d: ees:
-	    fis: g: a:
+	    cis,!:_\crescmarkup d: ees:
+	    fis!: g: a:
 % mesures 71 à 75
-	    <cis, bes'>\fz r r
+	    <cis,! bes'>\fz r r
 	    R2.*2
 	    
 	    f,8.( g16 a8[ d, e f)]
@@ -113,7 +114,7 @@ MvtUnViolinoII = \relative c {
 	    <e c'>8 r <e c'>2:16\fz
 % mesures 91 à 95
 	    <e d'>8 r <e d'>2:16\fz
-	    <e c'>4-. <g b>-. <d c'>-.
+	    <e c'>4-. <g b>-. <d c'>-. \mark \default
 	    <g, d' b'> r r
 	    R2.
 	    a'4(\p d,4. a'8)
@@ -133,7 +134,7 @@ MvtUnViolinoII = \relative c {
 	    g4\pp^\pizz r r
 	    fis r r
 	    d r r
-	    cis r r
+	    cis! r r
 	}
 	\alternative {
 	    {
@@ -148,7 +149,7 @@ MvtUnViolinoII = \relative c {
 	a r r
 	fis r r
 	e r r
-	R2.7
+	R2.*7
 % mesures 116 à 120
 	
 	
@@ -198,10 +199,10 @@ MvtUnViolinoII = \relative c {
 	gis'2.:16\ff\>
 	f2:\! d4:
 % mesures 156 à 160
-	gis,2:\>
-	f2: d4:
+	gis,2.:\>
+	f2:\! d4:
 	a4-.\p r r
-	bes-. r r
+	bes'-. r r
 	g!-. r r
 % mesures 161 à 165
 	a-. r r
@@ -220,7 +221,7 @@ MvtUnViolinoII = \relative c {
 	e2. 
 	d4-. b-. c-.
 	<g g'>2.\fz
-	fis\fz \mark \default
+	fis'\fz \mark \default
 % mesures 176 à 180
 	e16 dis e fis g dis e fis g e fis g
 	a eis fis g a fis g a b g a b
@@ -253,18 +254,18 @@ MvtUnViolinoII = \relative c {
 	e:_\crescmarkup
 % mesures 201 à 205
 	e:
-	<a, a'>4\ff \grace {d,32( e fis g a)} a4-. \grace {a32( b cis)} d4-.
+	<a, a'>4\ff \grace {d,32( e fis g)} a4-. \grace {a32( b cis)} d4-.
 	a,\fz \grace {a32( b cis d)} e4-. \grace {e32( fis gis)} a4-.
 	d,4 r r8. d32(\p e
 	fis4) r r
 % mesures 206 à 210
 	<a a'>4\ff \grace {d,32( e fis g a)} a4-. \grace {a32( b cis)} d4-.
 	a,\fz \grace {a'32( b cis d)} e4-. \grace {e32( fis gis)} a4-.
-	<d,, d'>4 r r8. e32(\p e
+	<d,, d'>4 r r8. d32(\p e
 	fis4) r r8. \times 2/3 {cis32( dis eis}
-	fis4) r r8. \times 2/3 {cis32( des eis}
+	fis4) r r8. \times 2/3 {cis32( dis eis}
 % mesures 211 à 215
-	fis4)_\decresc r r8. \times 2/3 {cis32( des eis}
+	fis4)_\decresc r r8. \times 2/3 {cis32( dis eis}
 	fis4) r r
 	R2.
 	fis4\pp^\pizz r r
@@ -294,11 +295,11 @@ MvtUnViolinoII = \relative c {
 	b b b b b b fis' fis e e ees ees
 	d d cis! cis d d b b c c d d 
 % mesures 236 à 240
-	e\< e fis fis g  g\> fis fis g g e e
+	e\< e fis fis g  g\> fis fis g g e e\!
 	d d d d d d d d ees ees d d
 	f f a a a a f f f f a a 
 	d, d f f e e b b b b e e
-	cis' cis a a d d a a d d e e
+	cis'! cis a a d d a a d d e e
 % mesures 241 à 245
 	e e a, a d d a a d_\crescmarkup d <dis fis> q
 	q q b b e e b b <b gis'>\f q q q
@@ -306,7 +307,7 @@ MvtUnViolinoII = \relative c {
 	gis gis b b b b gis gis gis gis b b
 	cis cis a a d d a a d d e e 
 % mesures 246 à 250
-	e e a, a d d a a d d <d fis> q
+	e e a, a d d a a d d <dis fis> q
 	q q b b e e b b e_\crescmarkup e <gis, eis'> q
 	q q cis cis <a fis'> q cis cis fis fis <gis, eis'> q
 	q q cis cis <a fis'> q cis cis <a fis'>8-. <gis eis'>\ff
@@ -342,7 +343,7 @@ MvtUnViolinoII = \relative c {
 	b4\! r r
 	d2.:32\ff\>
 	d4\! r r
-	b4:32\fz\> g: g:
+	b4:32\fz\> g: b:\!
 % mesures 286 à 290
 	d: g: b:
 	eis,:_\crescmarkup fis: g:
@@ -360,11 +361,11 @@ MvtUnViolinoII = \relative c {
 	fis4 r r
 	dis8.-. e16-. fis8-.[ b,-. dis-. fis-.]
 	gis4\ff r r
-	eis8.-. fis16 gis8[-. cis,-. e-. fis-.]
+	eis8.-. fis16 gis8[-. cis,-. eis-. fis-.]
 % mesures 301 à 305
 	gis4\fz r r
 	eis8.-. fis16-. gis8-.[ cis,-. dis-. eis-.]
-	fis8 r <fis dis>2:16\fz
+	fis8 r <fis dis'>2:16\fz
 	<gis e'>8 r <gis e'>2:16\fz
 	<a fis'>8 r <a fis'>2:16\fz
 % mesures 306 à 310
@@ -383,13 +384,13 @@ MvtUnViolinoII = \relative c {
 	b4( ais8 gis ais4)
 	b8 dis,4(-. dis-. dis8-.)
 	r e4-.( e-. e8-.)
-	r dis4\< dis( b8)
+	r dis4\< dis( bis8)
 	cis8.(\> dis16 e8)\! e4( eis8)
 % mesures 321 à 325
 	fis2( e!4
 	dis8) r <b' b'>4\ffz r
 	R2.
-	g4\pp^\pizz r r
+	g!4\pp^\pizz r r
 	fis r r
 % mesures 326 à 330
 	d r r
@@ -425,7 +426,7 @@ MvtUnViolinoII = \relative c {
 % mesures 356 à 360
 	cis2 d4)
 	b2.(\>
-	cis2. d4)
+	cis2 d4)\!
 	b4 r r
 	R2.*3
 % mesures 361 à 365
@@ -433,7 +434,7 @@ MvtUnViolinoII = \relative c {
 	
 	
 	<d, b' fis'>4\ff r r
-	<fus e'> r r
+	<fis e'> r r
 % mesures 366 à 368
 	<b, fis' d'> r r
 	b2.:32\>
