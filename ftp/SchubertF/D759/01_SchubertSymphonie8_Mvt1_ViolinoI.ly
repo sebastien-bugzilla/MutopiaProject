@@ -10,6 +10,7 @@ MvtUnViolinoI = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #"Violino I."
+	\set Staff.midiInstrument = #"violin"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event
@@ -350,7 +351,7 @@ MvtUnViolinoI = \relative c {
 	g,4:32\fz\> b: d:\!
 % mesures 286 à 290
 	g: b: d:
-	eis: fis: gis:
+	eis: fis: g:
 	ais: b: cis:
 	d4\fz r r
 	R2.*2

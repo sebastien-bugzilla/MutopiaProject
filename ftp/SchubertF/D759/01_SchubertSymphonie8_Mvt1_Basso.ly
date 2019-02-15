@@ -10,6 +10,7 @@ MvtUnBasso = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #""
+	\set Staff.midiInstrument = #"contrabass"
 % mesures 1 à 5
 	
 % mesures 6 à 10

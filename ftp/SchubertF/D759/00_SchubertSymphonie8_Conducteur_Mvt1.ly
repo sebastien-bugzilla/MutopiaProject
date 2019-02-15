@@ -44,7 +44,7 @@ global = {
 	\key b \minor
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Allegro moderato" 4 = 140 
+	\tempo "Allegro moderato" 4 = 120 
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
@@ -109,9 +109,9 @@ global = {
 %		        \new Staff { \global \MvtUnTimpaniEH }
 %		        \new GrandStaff <<
 %			        \new Staff { \global \MvtUnViolinoI }
-			        \new Staff { \global \MvtUnViolinoII }
+%			        \new Staff { \global \MvtUnViolinoII }
 %		        >>
-%		        \new Staff << \global \MvtUnViola >>
+		        \new Staff << \global \MvtUnViola >>
 %		        \new GrandStaff <<
 %			        \new Staff << \global \MvtUnVioloncello >>
 %			        \new Staff << \global \MvtUnBasso >>
@@ -141,11 +141,11 @@ global = {
 %			        \new Staff { \global \MvtUnTromboniBasso }
 %		        >>
 %		        \new Staff { \global \MvtUnTimpaniEH }
-%		        \new GrandStaff <<
+		        \new GrandStaff <<
 			        \new Staff { \global \MvtUnViolinoI }
-%			        \new Staff { \global \MvtUnViolinoII }
-%		        >>
-%		        \new Staff << \global \MvtUnViola >>
+			        \new Staff { \global \MvtUnViolinoII }
+		        >>
+		        \new Staff << \global \MvtUnViola >>
 %		        \new GrandStaff <<
 %			        \new Staff << \global \MvtUnVioloncello >>
 %			        \new Staff << \global \MvtUnBasso >>
@@ -153,7 +153,7 @@ global = {
 			>>
 		>>
 		\midi {
-		    \tempo 2 = 90
+		    %\tempo 2 = 85
 			\context {
 			    \Score
 			    midiMinimumVolume = #0.8

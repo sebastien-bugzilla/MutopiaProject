@@ -10,6 +10,7 @@ MvtUnOboiI = \relative c'' {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #"Oboe I"
+	\set Staff.midiInstrument = #"oboe"
 	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	R2.
