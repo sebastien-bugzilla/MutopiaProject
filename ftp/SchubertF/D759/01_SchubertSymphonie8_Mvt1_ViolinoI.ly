@@ -447,5 +447,5 @@ MvtUnViolinoI = \relative c {
 % mesures 366 à 368
 	<b, fis' d' b'> r r
 	b2.:32\>
-	b4 r r \bar "|."
+	b4\! r r \bar "|."
 }

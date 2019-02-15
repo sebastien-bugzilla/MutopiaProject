@@ -108,8 +108,8 @@ global = {
 %		        >>
 %		        \new Staff { \global \MvtUnTimpaniEH }
 %		        \new GrandStaff <<
-			        \new Staff { \global \MvtUnViolinoI }
-%			        \new Staff { \global \MvtUnViolinoII }
+%			        \new Staff { \global \MvtUnViolinoI }
+			        \new Staff { \global \MvtUnViolinoII }
 %		        >>
 %		        \new Staff << \global \MvtUnViola >>
 %		        \new GrandStaff <<
@@ -128,10 +128,10 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
+%			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnOboiII }
-			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
+%			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
 %			    \new Staff { \global \MvtUnClarinettiA }
 %			    \new Staff { \global \MvtUnFagotti }
 %			    \new Staff { \global \MvtUnCorniD }
@@ -142,7 +142,7 @@ global = {
 %		        >>
 %		        \new Staff { \global \MvtUnTimpaniEH }
 %		        \new GrandStaff <<
-%			        \new Staff { \global \MvtUnViolinoI }
+			        \new Staff { \global \MvtUnViolinoI }
 %			        \new Staff { \global \MvtUnViolinoII }
 %		        >>
 %		        \new Staff << \global \MvtUnViola >>
