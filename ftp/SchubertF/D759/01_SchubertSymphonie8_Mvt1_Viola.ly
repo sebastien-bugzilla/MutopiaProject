@@ -11,6 +11,7 @@ MvtUnViola = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #"Viola"
 	\set Staff.midiInstrument = #"viola"
+	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
@@ -68,7 +69,7 @@ MvtUnViola = \relative c {
 	    r <b d>4(-. q-. q8-.)
 	    r q4-.( q-. q8-.)
 	    r <d e>4-.( q-. q8-.)
-	    r q-.( q-. q8)-.
+	    r q4-.( q-. q8)-.
 % mesures 51 à 55
 	    r <c e>4-.( q-. q8-.)
 	    r <<{ees8[( d)] d4-.( d8-.)} \\ {c4-.( c-. c8-.)}>>
@@ -78,7 +79,7 @@ MvtUnViola = \relative c {
 	
 % mesures 61 à 65
 	    
-	    
+	    \mark \default
 	    ees,2.:32\ffz\>
 	    ees4\! r r
 	    g2.:32\fz\>
@@ -120,7 +121,7 @@ MvtUnViola = \relative c {
 	    r <c d>4-.( q-. q8-.)
 % mesures 96 à 100
 	    r <b d>4\< q( <gis b>8)
-	    <a c>8.(\> <b d>16 <c e>8) q4-.( <cis e>8-.)
+	    <a c>8.(\> <b d>16 <c! e>8) q4-.( <cis e>8-.)\!
 	    <<{
 	        d2.~
 	        d4
@@ -230,7 +231,7 @@ MvtUnViola = \relative c {
 % mesures 176 à 180
 	e'16 dis e fis g dis e fis g e fis g
 	a eis fis g a fis g a b g a b
-	cis,\< d e fis g fis g fis g fis g fis
+	cis,!\< d e fis g fis g fis g fis g fis
 	g\> fis g fis g fis g fis ais\! fis ais fis 
 	b ais, b cis d ais b cis d b cis d
 % mesures 181 à 185
@@ -243,7 +244,7 @@ MvtUnViola = \relative c {
 	fis2.\fz
 	eis4-. b-. cis-.
 	d-. b,2\fz
-	d2.\fz~ d8 e32( fis g a)
+	d2\fz~ d8 e32( fis g a)
 	b2.\fz
 % mesures 191 à 195
 	ais4-. e-. fis-.
@@ -270,7 +271,7 @@ MvtUnViola = \relative c {
 	fis4) r r8. \times 2/3 {cis32( dis eis}
 	fis4) r r8. \times 2/3 {cis32( dis eis}
 % mesures 211 à 215
-	fis4)_\decresc r r8. \times 2/3 {cis32( dis eis}
+	fis4)_\decresc r r8. \times 2/3 {cis32( dis\! eis}
 	fis4) r r
 	R2.
 	fis,4\pp^\pizz r r
@@ -330,7 +331,7 @@ MvtUnViola = \relative c {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	d'4(_\decresc a4. cis8
+	d'4(_\decresc a4. cis8\!
 	d4 g, a8 b)
 	c4( g4. b8
 	ais4 fis gis8 ais)
@@ -348,9 +349,9 @@ MvtUnViola = \relative c {
 	<d f>\fz r r
 	R2.
 % mesures 291 à 295
-	eis8.(\p fis16 gis8[ cis dis eis]
+	eis8.(\p fis16 gis8[ cis, dis eis]
 	fis4) r r
-	dis8.( e16 fis8[ b cis dis]
+	dis8.( e16 fis8[ b, cis dis]
 	e4) r r
 	bis8.\f-. cis16-. dis8-.[ gis,-. ais-. bis-.]
 % mesures 296 à 300
@@ -375,18 +376,18 @@ MvtUnViola = \relative c {
 	b8 <dis fis>4(\p-. q-. q8-.)
 	r q4-.( q-. q8-.)
 	r <e fis>4(-. q-. q8-.)
-	r <dis fis>4\< q( <bis dis>8)
-	<cis e>8.(\> <dis fis>16 <e gis>8) <e gis>4( <eis gis>8)
+	r <dis fis>4\< q( <bis dis!>8)
+	<cis e>8.(\> <dis fis>16 <e gis>8)\! <e gis>4( <eis gis>8)
 % mesures 316 à 320
 	<<{
 	    fis2.~
 	    fis4
 	} \\ {
-	    fis2( e4
+	    fis2( e!4
 	    dis)
 	}>> r r
 	R2.
-	b4(\< fis4. ais8)
+	b4(\< fis4. bis8)
 	cis8.(\> dis16 e4.\! eis8)
 % mesures 321 à 325
 	fis2.(
@@ -436,5 +437,5 @@ MvtUnViola = \relative c {
 % mesures 366 à 368
 	<b fis' b> r r
 	b2.:32\>
-	b4 r r \bar "|."
+	b4\! r r \bar "|."
 }
