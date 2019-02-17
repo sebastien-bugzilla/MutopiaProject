@@ -82,7 +82,7 @@ global = {
 				\vspace #10
 				"Sinfonie Nr. 8 in h-moll"
 				"Die Unvollendete"
-			}*
+			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
@@ -94,44 +94,10 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-%			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
+			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnOboiII }
-%			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
-%			    \new Staff { \global \MvtUnClarinettiA }
-%			    \new Staff { \global \MvtUnFagotti }
-%			    \new Staff { \global \MvtUnCorniD }
-%			    \new Staff { \global \MvtUnTrombeE }
-%			    \new GrandStaff <<
-%			        \new Staff { \global \MvtUnVoixSept }
-%			        \new Staff { \global \MvtUnTromboniBasso }
-%		        >>
-%		        \new Staff { \global \MvtUnTimpaniEH }
-%		        \new GrandStaff <<
-%			        \new Staff { \global \MvtUnViolinoI }
-%			        \new Staff { \global \MvtUnViolinoII }
-%		        >>
-		        \new Staff << \global \MvtUnViola >>
-%		        \new GrandStaff <<
-%			        \new Staff << \global \MvtUnVioloncello >>
-%			        \new Staff << \global \MvtUnBasso >>
-%		        >>
-			>>
-		>>
-		\header {
-			breakbefore = ##t
-		}
-		\layout {
-			%system-count = #20
-		}
-	}
-	\score {
-	    <<
-	        \new StaffGroup <<
-%			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
-%			    \new Staff { \global \MvtUnFlautiII }
-%			    \new Staff { \global \MvtUnOboiII }
-%			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
+			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
 %			    \new Staff { \global \MvtUnClarinettiA }
 %			    \new Staff { \global \MvtUnFagotti }
 %			    \new Staff { \global \MvtUnCorniD }
@@ -146,10 +112,44 @@ global = {
 			        \new Staff { \global \MvtUnViolinoII }
 		        >>
 		        \new Staff << \global \MvtUnViola >>
-%		        \new GrandStaff <<
-%			        \new Staff << \global \MvtUnVioloncello >>
-%			        \new Staff << \global \MvtUnBasso >>
+		        \new GrandStaff <<
+			        \new Staff << \global \MvtUnVioloncello >>
+			        \new Staff << \global \MvtUnBasso >>
+		        >>
+			>>
+		>>
+		\header {
+			breakbefore = ##t
+		}
+		\layout {
+			%system-count = #20
+		}
+	}
+	\score {
+	    <<
+	        \new StaffGroup <<
+			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
+%			    \new Staff { \global \MvtUnFlautiII }
+%			    \new Staff { \global \MvtUnOboiII }
+			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
+%			    \new Staff { \global \MvtUnClarinettiA }
+%			    \new Staff { \global \MvtUnFagotti }
+%			    \new Staff { \global \MvtUnCorniD }
+%			    \new Staff { \global \MvtUnTrombeE }
+%			    \new GrandStaff <<
+%			        \new Staff { \global \MvtUnVoixSept }
+%			        \new Staff { \global \MvtUnTromboniBasso }
 %		        >>
+%		        \new Staff { \global \MvtUnTimpaniEH }
+		        \new GrandStaff <<
+			        \new Staff { \global \MvtUnViolinoI }
+			        \new Staff { \global \MvtUnViolinoII }
+		        >>
+		        \new Staff << \global \MvtUnViola >>
+		        \new GrandStaff <<
+			        \new Staff << \global \MvtUnVioloncello >>
+			        \new Staff << \global \MvtUnBasso >>
+		        >>
 			>>
 		>>
 		\midi {

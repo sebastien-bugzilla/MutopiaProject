@@ -259,7 +259,7 @@ MvtUnViolinoII = \relative c {
 	d,4 r r8. d32(\p e
 	fis4) r r
 % mesures 206 à 210
-	<a a'>4\ff \grace {d,32( e fis g a)} a4-. \grace {a32( b cis)} d4-.
+	<a a'>4\ff \grace {d,32( e fis g)} a4-. \grace {a32( b cis)} d4-.
 	a,\fz \grace {a'32( b cis d)} e4-. \grace {e32( fis gis)} a4-.
 	<d,, d'>4 r r8. d32(\p e
 	fis4) r r8. \times 2/3 {cis32( dis eis}
