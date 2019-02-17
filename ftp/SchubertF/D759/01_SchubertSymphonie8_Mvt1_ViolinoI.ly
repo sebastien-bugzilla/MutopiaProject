@@ -8,6 +8,7 @@
 %#######################################################################
 MvtUnViolinoI = \relative c {
 	\clef treble
+	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #"Violino I."
 	\set Staff.midiInstrument = #"violin"

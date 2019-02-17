@@ -8,6 +8,7 @@
 %#######################################################################
 MvtUnBasso = \relative c {
 	\clef bass
+	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #"Basso."
 	\set Staff.midiInstrument = #"contrabass"

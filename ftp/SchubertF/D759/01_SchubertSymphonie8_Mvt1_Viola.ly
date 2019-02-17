@@ -8,6 +8,7 @@
 %#######################################################################
 MvtUnViola = \relative c {
 	\clef alto
+	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #"Viola"
 	\set Staff.midiInstrument = #"viola"

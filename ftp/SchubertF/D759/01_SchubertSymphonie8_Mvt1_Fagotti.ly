@@ -8,6 +8,7 @@
 %#######################################################################
 MvtUnFagottiI = \relative c {
 	\clef treble
+	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #""
 	\set Staff.midiInstrument = #"bassoon"

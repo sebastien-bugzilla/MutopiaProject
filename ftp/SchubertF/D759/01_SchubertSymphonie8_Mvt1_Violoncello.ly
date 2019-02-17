@@ -8,6 +8,7 @@
 %#######################################################################
 MvtUnVioloncello = \relative c {
 	\clef bass
+	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #"Violoncello."
 	\set Staff.midiInstrument = #"cello"

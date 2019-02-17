@@ -8,6 +8,7 @@
 %#######################################################################
 MvtUnFlautiI = \relative c {
 	\clef treble
+	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Flauti"
@@ -415,6 +416,7 @@ MvtUnFlautiI = \relative c {
 }
 MvtUnFlautiII = \relative c {
 	\clef treble
+	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Flauti"
