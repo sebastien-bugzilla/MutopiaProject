@@ -484,7 +484,7 @@ MvtUnClarinettiAII = \relative c {
 	    c4( bes4._\crescmarkup b8)
 	    b4( c) cis\fz
 	    cis\fz g'2\fp\>~
-	    g2.\!
+	    g2.
 % mesures 31 à 35
 	    a,4\p( bes4. c8)
 	    c4( bes4._\crescmarkup b8)
@@ -583,14 +583,14 @@ MvtUnClarinettiAII = \relative c {
 	}
 	\alternative {
 	    {
-	        f4\! r r
+	        f4)\! r r
 	    }
 	    {
-	        fis2.~
+	        fis2.~\>
 	    }
 	}
 % mesures 111 à 115
-	fis~
+	fis~\!
 	fis~
 	fis(
 	g4) r r
@@ -719,8 +719,8 @@ MvtUnClarinettiAII = \relative c {
 	
 	
 	c2.\<(~
-	c2 b4)
-	g4( a4. bes8)
+	c2\> b4)\!
+	g4( a4. bes!8)
 % mesures 241 à 245
 	bes4( a4._\crescmarkup c8)
 	c4( bes) d-.\f
@@ -728,7 +728,7 @@ MvtUnClarinettiAII = \relative c {
 	d2.\!
 	g,4( a4. bes8)
 % mesures 246 à 250
-	bes4( aes4. c8)
+	bes4( a4. c8)
 	c4( bes4._\crescmarkup d8)
 	d4( c4. d8)
 	d4( c4.) d8\ff
@@ -795,7 +795,7 @@ MvtUnClarinettiAII = \relative c {
 	r8 e4 e e8
 % mesures 301 à 305
 	f2.\fz
-	r8 e4 e e8(
+	r8 e4 e e8( 
 	fis) r a,2\fz(
 	b8) r b2\fz(
 	c8) r c2\fz(
