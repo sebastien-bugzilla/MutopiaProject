@@ -420,6 +420,7 @@ MvtUnFlautiII = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Flauti"
+	\set Staff.midiInstrument = #"flute"
 	\set Staff.soloIIText = #""
 % mesures 1 à 5
 	R2.

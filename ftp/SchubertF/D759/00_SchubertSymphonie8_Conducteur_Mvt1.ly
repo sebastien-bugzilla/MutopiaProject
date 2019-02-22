@@ -52,7 +52,7 @@ global = {
 \include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_Flauti_Comb.ly"
 \include "01_SchubertSymphonie8_Mvt1_Oboi_Comb.ly"
-\include "01_SchubertSymphonie8_Mvt1_Clarinetti_A.ly"
+\include "01_SchubertSymphonie8_Mvt1_Clarinetti_A_Comb.ly"
 \include "01_SchubertSymphonie8_Mvt1_Fagotti.ly"
 \include "01_SchubertSymphonie8_Mvt1_Corni_D.ly"
 \include "01_SchubertSymphonie8_Mvt1_Trombe_E.ly"
@@ -98,8 +98,10 @@ global = {
 %			    \new Staff { \global \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnOboiII }
 %			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
-			    \new Staff { \global \MvtUnClarinettiAII }
-%			    \new Staff { \global \MvtUnFagotti }
+%			    \new Staff { \global \MvtUnClarinettiAII }
+%			    \new Staff { \global \MvtUnClarinettiAI }
+%			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
+			    \new Staff { \global \MvtUnFagottiI }
 %			    \new Staff { \global \MvtUnCorniD }
 %			    \new Staff { \global \MvtUnTrombeE }
 %			    \new GrandStaff <<
@@ -125,14 +127,18 @@ global = {
 			%system-count = #20
 		}
 	}
-	\score {
-	    <<
-	        \new StaffGroup <<
+%	\score {
+%	    <<
+%	        \new StaffGroup <<
 %			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
+%			    \new Staff { \global \MvtUnFlautiI }
+%			    \new Staff { \global \MvtUnOboiI }
 %			    \new Staff { \global \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnOboiII }
 %			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
-%			    \new Staff { \global \MvtUnClarinettiA }
+%			    \new Staff { \global \MvtUnClarinettiAI }
+%			    \new Staff { \global \MvtUnClarinettiAII }
+%			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
 %			    \new Staff { \global \MvtUnFagotti }
 %			    \new Staff { \global \MvtUnCorniD }
 %			    \new Staff { \global \MvtUnTrombeE }
@@ -142,7 +148,7 @@ global = {
 %		        >>
 %		        \new Staff { \global \MvtUnTimpaniEH }
 %		        \new GrandStaff <<
-			        \new Staff { \global \MvtUnViolinoI }
+%			        \new Staff { \global \MvtUnViolinoI }
 %			        \new Staff { \global \MvtUnViolinoII }
 %		        >>
 %		        \new Staff << \global \MvtUnViola >>
@@ -150,15 +156,15 @@ global = {
 %			        \new Staff << \global \MvtUnVioloncello >>
 %			        \new Staff << \global \MvtUnBasso >>
 %		        >>
-			>>
-		>>
-		\midi {
-		    %\tempo 2 = 85
-			\context {
-			    \Score
-			    midiMinimumVolume = #0.8
-				midiMaximumVolume = #0.9
-			}
-		}
-	}
+%			>>
+%		>>
+%		\midi {
+%		    %\tempo 2 = 85
+%			\context {
+%			    \Score
+%			    midiMinimumVolume = #0.8
+%				midiMaximumVolume = #0.9
+%			}
+%		}
+%	}
 }
