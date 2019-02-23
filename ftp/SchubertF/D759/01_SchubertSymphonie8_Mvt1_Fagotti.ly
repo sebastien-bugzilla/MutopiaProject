@@ -606,10 +606,10 @@ MvtUnFagottiII = \relative c {
 	cis~
 	cis(
 	bis)
-	b'\ff\>~
+	b'!\ff\>~
 	b\!
 % mesures 156 à 160
-	f'\>
+	f'\>~
 	f\!
 	d,\p~
 	d~
@@ -640,16 +640,16 @@ MvtUnFagottiII = \relative c {
 	b) r r
 % mesures 181 à 185
 	R2.
-	e,2.(\>
+	eis,2.(\>
 	fis2\! gis4
 	fis2.)\fz
-	e4-. cis-. d-.
+	e!4-. cis-. d-.
 % mesures 186 à 190
 	cis8.[ cis16 cis8. cis16] cis8. cis16 
 	cis8.[ cis16 cis8. cis16] cis8. cis16 
 	b2.\fz
 	a4-. fis-. g-.
-	d2.
+	d'2.
 % mesures 191 à 195
 	cis
 	e\fz
@@ -729,7 +729,7 @@ MvtUnFagottiII = \relative c {
 	
 	\clef bass r8 fis4-.(\pp fis-. fis8-.)
 	r g4-.( g-. g8-.)
-	r g g g8
+	r g4 g g8
 	r fis4 fis fis8
 % mesures 271 à 275
 	r fis4 fis fis8
@@ -790,7 +790,7 @@ MvtUnFagottiII = \relative c {
 	dis) r r
 	R2.
 	b4(\< fis4. bis8)
-	cis8.\> dis16 e4. eis8)\!
+	cis8.\>( dis16 e4. eis8)\!
 % mesures 321 à 325
 	fis2( e!4
 	dis8) r \clef bass b,2\ffz~
@@ -840,9 +840,9 @@ MvtUnFagottiII = \relative c {
 	e(\!
 	b4)\pp r4 r
 % mesures 361 à 365
-	R2.
-	R
-	R
+	R2.*3
+	
+	
 	d4\ff r r
 	fis, r r
 % mesures 366 à 368

@@ -45,7 +45,7 @@ global = {
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Allegro moderato" 4 = 120 
-	#(set-global-staff-size 12)
+	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
