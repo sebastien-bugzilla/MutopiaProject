@@ -10,6 +10,7 @@ MvtUnCorniDI = \relative c {
 	\clef treble
 	\key a \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Corni in D."
 	\set Staff.midiInstrument = #"french horn"
 	\transposition d
@@ -66,12 +67,12 @@ MvtUnCorniDI = \relative c {
 % mesures 56 à 60
 	    c c4 r8 r c~
 	    c c4 r8 r c~
-	    c c4 r8 r c~
-	    c c4 r8 r4
+	    c d4 r8 r d~
+	    d d4 r8 r4
 	    R2.*3
 % mesures 61 à 65
 	    
-	    
+	    \mark \default
 	    f2.\ffz\>~
 	    f4\! r r
 	    c2.\fz\>~
@@ -118,7 +119,7 @@ MvtUnCorniDI = \relative c {
 	    R2.*3
 	    
 % mesures 101 à 105
-	    
+	    \clef treble
 	    c''2.~\<
 	    c\>
 	    r4\! a2\ff\>~
@@ -131,14 +132,14 @@ MvtUnCorniDI = \relative c {
 	}
 	\alternative {
 	    {
-	        e4 r r
+	        e4\! r r
 	    }
 	    {
 	        a2.~\>
 	    }
 	}
 % mesures 111 à 115
-	a~
+	a~\!
 	a~
 	a~
 	a4 r r
@@ -170,7 +171,7 @@ MvtUnCorniDI = \relative c {
 % mesures 146 à 150
 	d2.\ff\>~
 	d\!
-	d\>
+	d\>~
 	d\!
 	R2.*4
 % mesures 151 à 155
@@ -189,7 +190,7 @@ MvtUnCorniDI = \relative c {
 	
 	f2.\ff\>~
 	f\!
-	f2.\>
+	f2.\>~
 	f\!
 % mesures 166 à 170
 	R2.*4
@@ -266,7 +267,7 @@ MvtUnCorniDI = \relative c {
 	e4(\p\< f4. e8
 	f4\> e2)(
 % mesures 231 à 235
-	f4) r r
+	f4)\! r r
 	R2.*9
 % mesures 236 à 240
 	
@@ -275,7 +276,7 @@ MvtUnCorniDI = \relative c {
 	e4( d) a-.\f
 	c\fz-. r r
 	R2.
-	g2.\p~
+	g'2.\p~
 % mesures 246 à 250
 	g2~ g8 g\<
 	g4(\> f\!) r
@@ -301,7 +302,7 @@ MvtUnCorniDI = \relative c {
 	g g4 r8 r g~
 % mesures 271 à 275
 	g g4 r8 r g(
-	a) a4 r r a~
+	a) a4 r8 r a~
 	a a4 r8 r4
 	R2.*6
 % mesures 276 à 280
@@ -353,10 +354,10 @@ MvtUnCorniDI = \relative c {
 	e4 r r
 	R2.*2
 	
-	\clef bass c,,2.\>~
+	\clef bass e,,2.\>~
 % mesures 321 à 325
-	c~
-	c8 r \clef treble a''2\ffz\>~
+	e~
+	e8 r \clef treble a'2\ffz\>~
 	a2.\p~
 	a\pp~
 	a~
@@ -408,7 +409,7 @@ MvtUnCorniDI = \relative c {
 % mesures 366 à 368
 	e r r
 	e2.\>~
-	e4\! r r
+	e4\! r r \bar "|."
 }
 MvtUnCorniDII = \relative c {
 	\clef treble
