@@ -103,7 +103,7 @@ global = {
 %			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
 %			    \new Staff { \global \MvtUnFagottiII }
 %			    \new Staff { \global \partcombine \MvtUnFagottiI \MvtUnFagottiII }
-			    \new Staff { \global \MvtUnCorniDI }
+			    \new Staff { \global \MvtUnCorniDII }
 %			    \new Staff { \global \MvtUnTrombeE }
 %			    \new GrandStaff <<
 %			        \new Staff { \global \MvtUnVoixSept }
