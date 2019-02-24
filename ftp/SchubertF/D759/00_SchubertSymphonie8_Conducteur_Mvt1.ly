@@ -94,15 +94,15 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-%			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
+			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnOboiII }
-%			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
+			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
 %			    \new Staff { \global \MvtUnClarinettiAII }
 %			    \new Staff { \global \MvtUnClarinettiAI }
-%			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
+			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
 %			    \new Staff { \global \MvtUnFagottiII }
-%			    \new Staff { \global \partcombine \MvtUnFagottiI \MvtUnFagottiII }
+			    \new Staff { \global \partcombine \MvtUnFagottiI \MvtUnFagottiII }
 %			    \new Staff { \global \MvtUnCorniDII }
 			    \new Staff { \global \partcombine \MvtUnCorniDI \MvtUnCorniDII }
 %			    \new Staff { \global \MvtUnTrombeE }
@@ -111,15 +111,15 @@ global = {
 %			        \new Staff { \global \MvtUnTromboniBasso }
 %		        >>
 %		        \new Staff { \global \MvtUnTimpaniEH }
-%		        \new GrandStaff <<
-%			        \new Staff { \global \MvtUnViolinoI }
-%			        \new Staff { \global \MvtUnViolinoII }
-%		        >>
-%		        \new Staff << \global \MvtUnViola >>
-%		        \new GrandStaff <<
-%			        \new Staff << \global \MvtUnVioloncello >>
-%			        \new Staff << \global \MvtUnBasso >>
-%		        >>
+		        \new GrandStaff <<
+			        \new Staff { \global \MvtUnViolinoI }
+			        \new Staff { \global \MvtUnViolinoII }
+		        >>
+		        \new Staff << \global \MvtUnViola >>
+		        \new GrandStaff <<
+			        \new Staff << \global \MvtUnVioloncello >>
+			        \new Staff << \global \MvtUnBasso >>
+		        >>
 			>>
 		>>
 		\header {
