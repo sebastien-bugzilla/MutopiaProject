@@ -41,7 +41,7 @@ MvtUnTrombeEI = \relative c {
 % mesures 36 à 40
 	    d4 r8 d d4
 	    r8 d d4 d8 d \mark \default
-	    d\fz r r
+	    d4\fz r r
 	    R2.*24
 % mesures 41 à 45
 	
@@ -100,7 +100,7 @@ MvtUnTrombeEI = \relative c {
 	    }
 	}
 % mesures 111 à 115
-	g~
+	g~\!
 	g~
 	g~
 	g4 r r
@@ -130,7 +130,7 @@ MvtUnTrombeEI = \relative c {
 	c2.\ff\>~
 	c\!
 % mesures 156 à 160
-	c\>
+	c\>~
 	c\!
 	R2.*4
 	
@@ -167,7 +167,7 @@ MvtUnTrombeEI = \relative c {
 % mesures 186 à 190
 	d4 r r
 	R2.
-	g8.[ g16 g8. g16] g8. g16
+	g,8.[ g16 g8. g16] g8. g16
 	g8.[ g16 g8. g16] g8. g16
 	g4 r r
 % mesures 191 à 195
@@ -223,11 +223,11 @@ MvtUnTrombeEI = \relative c {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	
+	\mark \default
 % mesures 281 à 285
 	g2.\ff\>~
 	g4\! r r
-	g2.\ff\>
+	g2.\ff\>~
 	g4\! r r
 	g2.\fz\>~
 % mesures 286 à 290
@@ -264,7 +264,7 @@ MvtUnTrombeEI = \relative c {
 % mesures 321 à 325
 	
 	r4 g,2\ffz\>~
-	g\p~
+	g2.\p~
 	g4\pp r r
 	R2.*21
 % mesures 326 à 330
