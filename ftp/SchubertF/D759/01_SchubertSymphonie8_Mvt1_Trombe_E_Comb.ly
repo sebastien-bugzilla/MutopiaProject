@@ -10,8 +10,8 @@ MvtUnTrombeEI = \relative c {
 	\clef treble
 	\key a \minor
 	\override TupletBracket #'bracket-visibility = ##f
-	\set Staff.instrumentName = #"Trombe in E. I"
-	\set Staff.midiInstrument = #"trombone"
+	\set Staff.instrumentName = #"Trombe in E."
+	\set Staff.midiInstrument = #"trumpet"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\transposition d
 % mesures 1 à 5
@@ -308,8 +308,8 @@ MvtUnTrombeEII = \relative c {
 	\clef treble
 	\key a \minor
 	\override TupletBracket #'bracket-visibility = ##f
-	\set Staff.instrumentName = #"Trombe in E. II"
-	\set Staff.midiInstrument = #"trombone"
+	\set Staff.instrumentName = #"Trombe in E."
+	\set Staff.midiInstrument = #"trumpet"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\transposition d
 % mesures 1 à 5
