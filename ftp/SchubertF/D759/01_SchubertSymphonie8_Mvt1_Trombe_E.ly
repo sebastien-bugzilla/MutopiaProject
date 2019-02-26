@@ -338,7 +338,7 @@ MvtUnTrombeEII = \relative c {
 	    r4 r r8 c'\ff
 % mesures 36 à 40
 	    c4 r8 c c4
-	    r8 c c4 c8 d \mark \default
+	    r8 c c4 c8 c \mark \default
 	    g4\fz r r
 	    R2.*24
 % mesures 41 à 45
