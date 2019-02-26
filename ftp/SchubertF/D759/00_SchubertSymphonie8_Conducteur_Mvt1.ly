@@ -55,7 +55,7 @@ global = {
 \include "01_SchubertSymphonie8_Mvt1_Clarinetti_A_Comb.ly"
 \include "01_SchubertSymphonie8_Mvt1_Fagotti_Comb.ly"
 \include "01_SchubertSymphonie8_Mvt1_Corni_D_Comb.ly"
-\include "01_SchubertSymphonie8_Mvt1_Trombe_E.ly"
+\include "01_SchubertSymphonie8_Mvt1_Trombe_E_Comb.ly"
 \include "01_SchubertSymphonie8_Mvt1_Tromboni_alto_tenore.ly"
 \include "01_SchubertSymphonie8_Mvt1_Tromboni_basso.ly"
 \include "01_SchubertSymphonie8_Mvt1_Timpani.ly"
@@ -105,7 +105,8 @@ global = {
 %			    \new Staff { \global \partcombine \MvtUnFagottiI \MvtUnFagottiII }
 %			    \new Staff { \global \MvtUnCorniDII }
 %			    \new Staff { \global \partcombine \MvtUnCorniDI \MvtUnCorniDII }
-			    \new Staff { \global \MvtUnTrombeEII }
+%			    \new Staff { \global \MvtUnTrombeEII }
+			    \new Staff { \global \partcombine \MvtUnTrombeEI \MvtUnTrombeEII }
 %			    \new GrandStaff <<
 %			        \new Staff { \global \MvtUnVoixSept }
 %			        \new Staff { \global \MvtUnTromboniBasso }
