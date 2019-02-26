@@ -54,7 +54,7 @@ MvtUnTromboni_alto = \relative c {
 	    d2.\fz\>~
 % mesures 66 à 70
 	    d4\! r r
-	    ees2.\fz\>
+	    ees2.\fz\>~
 	    ees4\! ees\fz ees\fz 
 	    ees\fz_\crescmarkup ees\fz ees\fz 
 	    ees\fz ees\fz ees\fz 
@@ -100,7 +100,7 @@ MvtUnTromboni_alto = \relative c {
 	    }
 	}
 % mesures 111 à 115
-	dis~
+	dis~\!
 	dis~
 	dis(
 	e4) r r
@@ -118,8 +118,8 @@ MvtUnTromboni_alto = \relative c {
 	cis2\fz-> r4
 	r cis2->\fz
 % mesures 136 à 140
-	r4 r cis~\fz\>~
-	cis r r
+	r4 r cis~\fz\>->
+	cis r\! r
 	cis2->\fz r4
 	r cis->\fz r
 	cis\fz r cis\fz
@@ -167,7 +167,7 @@ MvtUnTromboni_alto = \relative c {
 	b\fz \mark \default
 % mesures 176 à 180
 	e2.
-	fis2. g4
+	fis2 g4
 	fis2.~\>
 	fis\!
 	b,
@@ -248,7 +248,7 @@ MvtUnTromboni_alto = \relative c {
 % mesures 281 à 285
 	b,2.\ff\>~
 	b4\! r r
-	d2.\ff\>
+	d2.\ff\>~
 	d4\! r r
 	d2.\fz\>~
 % mesures 286 à 290
