@@ -473,10 +473,10 @@ MvtUnTromboni_tenore = \relative c {
 	
 % mesures 161 à 165
 	
-	gis2.\ff\>~
-	gis\!
-	gis\>~
-	gis\!
+	g2.\ff\>~
+	g\!
+	g\>~
+	g\!
 % mesures 166 à 170
 	R2.*4
 	
@@ -527,7 +527,7 @@ MvtUnTromboni_tenore = \relative c {
 	
 % mesures 206 à 210
 	
-	d.\ff
+	d2.\ff
 	cis\fz
 	R2.*10
 % mesures 211 à 215
