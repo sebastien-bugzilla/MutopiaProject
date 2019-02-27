@@ -40,7 +40,7 @@ MvtUnTimpaniEH = \relative c {
 % mesures 36 à 40
 	    f4 r8 f f4
 	    r8 f f4 f8 f \mark \default
-	    b,\fz r r
+	    b,4\fz r r
 	    R2.*24
 % mesures 41 à 45
 	
@@ -121,7 +121,7 @@ MvtUnTimpaniEH = \relative c {
 	
 	
 	b,2.:16\ff\>
-	b:\:
+	b:\!
 % mesures 156 à 160
 	b4 r r 
 	R2.*13
@@ -232,7 +232,7 @@ MvtUnTimpaniEH = \relative c {
 	b\fz r r
 	b r r
 	b8 r b2:16\fz
-	b8 r b2;16\fz
+	b8 r b2:16\fz
 	b8 r b2:16\fz
 % mesures 306 à 310
 	b4-. f'-. f-.
@@ -288,7 +288,7 @@ MvtUnTimpaniEH = \relative c {
 	
 	
 	b4\ff r r
-	f' rr
+	f' r r
 % mesures 366 à 368
 	b, r r
 	b2.:32\> 
