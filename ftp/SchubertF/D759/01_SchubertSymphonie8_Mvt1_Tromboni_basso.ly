@@ -32,7 +32,7 @@ MvtUnTromboni_basso = \relative c {
 % mesures 26 à 30
 	    
 	    
-	    r4 r fis\fz
+	    r4 r fis'\fz
 	    fis\fz r r
 	    R2.*6
 % mesures 31 à 35
@@ -209,7 +209,7 @@ MvtUnTromboni_basso = \relative c {
 	
 % mesures 201 à 205
 	
-	fis'\ff
+	fis'2.\ff
 	a\fz
 	R2.*2
 	
@@ -268,7 +268,7 @@ MvtUnTromboni_basso = \relative c {
 	fis4\! r r
 	g2.\fz\>~
 % mesures 286 à 290
-	g\! g,\fz g\fz 
+	g4\! g,\fz g\fz 
 	g\fz g\fz g\fz 
 	g\fz g\fz g\fz 
 	gis\fz r r
