@@ -80,7 +80,7 @@ MvtUnViolinoI = \relative c {
 	    g4( d4. g8)
 	    gis8.( a16 b4. a8)
 	    gis8.( a16 b8[ e, fis gis])
-	    a4(_\decresc e4. gis8)
+	    a4(_\decresc e4.\! gis8)
 % mesures 61 à 65
 	    a4( d, e8 fis)
 	    R2. \mark \default

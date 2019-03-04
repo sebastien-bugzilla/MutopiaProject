@@ -98,7 +98,7 @@ MvtUnViola = \relative c {
 	    b8.( c16 d8[ g, a b])
 % mesures 76 à 80
 	    c4 r r
-	    gis8.-. a16-. b8-.[ e,-. fis-. gis-.]
+	    gis8.-.\f a16-. b8-.[ e,-. fis-. gis-.]
 	    a4-. r r
 	    fis8.-. g!16-. a8-.[ d,-. e-. fis-.]
 	    g4-. r r
@@ -122,7 +122,7 @@ MvtUnViola = \relative c {
 	    r <c d>4-.( q-. q8-.)
 % mesures 96 à 100
 	    r <b d>4\< q( <gis b>8)
-	    <a c>8.(\> <b d>16 <c! e>8) q4-.( <cis e>8-.)\!
+	    <a c>8.(\> <b d>16 <c! e>8) q4-.(\! <cis e>8-.)
 	    <<{
 	        d2.~
 	        d4

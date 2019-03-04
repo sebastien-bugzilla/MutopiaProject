@@ -39,7 +39,7 @@ MvtUnCorniDI = \relative c {
 	    c~_\crescmarkup c8( d)
 	    d2 e4\fz
 	    f\fz f4.\fp\>( e8
-	    f4\! e2)
+	    f4 e2)\!
 % mesures 31 à 35
 	    r4 c2\p~
 	    c~ c8_\crescmarkup( d)

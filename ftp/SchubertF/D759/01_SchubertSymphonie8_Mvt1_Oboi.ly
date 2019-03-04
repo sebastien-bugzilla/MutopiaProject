@@ -72,7 +72,7 @@ MvtUnOboiI = \relative c'' {
 % mesures 66 à 70
 	    d4) r\! r
 	    g2.(\fz\>
-	    ees4) bes''\!\fz bes\fz
+	    ees4)\! bes''\!\fz bes\fz
 	    bes\fz_\crescmarkup bes\fz bes\fz
 	    bes\fz bes\fz bes\fz 
 % mesures 71 à 75
@@ -107,7 +107,7 @@ MvtUnOboiI = \relative c'' {
 	    r4 r r8 c,\p
 % mesures 96 à 100
 	    b8.(\< c16 d4. f8)
-	    e4.(\> d8[ c b])\!
+	    e4.(\> d8[\! c b])
 	    a2( d4)
 	    g, r r
 	    a'(\p d,4. a'8)
@@ -464,7 +464,7 @@ MvtUnOboiII = \relative c'' {
 % mesures 66 à 70
 	    d4) r\! r
 	    g2.(\fz\>
-	    ees4) g'\!\fz g\fz
+	    ees4)\! g'\!\fz g\fz
 	    g\fz_\crescmarkup g\fz g\fz
 	    g\fz g\fz g\fz 
 % mesures 71 à 75
@@ -499,7 +499,7 @@ MvtUnOboiII = \relative c'' {
 	    
 % mesures 96 à 100
 	    r4 r r8 d\p\>~
-	    d4( c8[ b\! a g])
+	    d4( c8[\! b a g])
 	    g4( fis8 e fis4)
 	    g r r
 	    R2.*4

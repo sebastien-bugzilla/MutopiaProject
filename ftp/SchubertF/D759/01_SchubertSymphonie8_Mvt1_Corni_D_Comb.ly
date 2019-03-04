@@ -38,8 +38,8 @@ MvtUnCorniDI = \relative c {
 	    e4) c2~
 	    c~ c8( d)
 	    d2 e4
-	    f f4.( e8
-	    f4 e2)
+	    f f4.(_\fp_\> e8
+	    f4 e2)\!
 % mesures 31 à 35
 	    \partcombineAutomatic r4 c2\p~
 	    c~ c8_\crescmarkup( d)
@@ -443,8 +443,8 @@ MvtUnCorniDII = \relative c {
 	    r4 c2\p~
 	    c~_\crescmarkup c8( d)
 	    d2 d4\fz
-	    d\fz d2\fp\>~
-	    d2.\!
+	    d\fz d2~
+	    d2.
 % mesures 31 à 35
 	    r4 c2\p~
 	    c~ c8_\crescmarkup( d)

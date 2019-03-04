@@ -60,7 +60,7 @@ MvtUnFlautiI = \relative c {
 % mesures 66 à 70
 	    d4)\! r r
 	    g2.(\fz\>
-	    ees4) g''4\fz g\fz
+	    ees4)\! g''4\fz g\fz
 	    g\fz g\fz g\fz
 	    g\fz g\fz g\fz
 % mesures 71 à 75
@@ -468,7 +468,7 @@ MvtUnFlautiII = \relative c {
 % mesures 66 à 70
 	    d4)\! r r
 	    g2.(\fz\>
-	    ees4) cis''!4\fz cis\fz
+	    ees4)\! cis''!4\fz cis\fz
 	    cis_\crescmarkup\fz cis\fz cis\fz
 	    cis\fz cis\fz cis\fz
 % mesures 71 à 75

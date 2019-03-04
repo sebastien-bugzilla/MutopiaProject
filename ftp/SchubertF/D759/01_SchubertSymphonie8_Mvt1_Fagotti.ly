@@ -77,7 +77,7 @@ MvtUnFagottiI = \relative c {
 % mesures 66 à 70
 	    bes4\! r r
 	    bes2.\fz\>~
-	    bes4 ees,\fz ees\fz 
+	    bes4\! ees,\fz ees\fz 
 	    ees\fz_\crescmarkup ees\fz ees\fz 
 	    ees\fz ees\fz ees\fz 
 % mesures 71 à 75
@@ -499,7 +499,7 @@ MvtUnFagottiII = \relative c {
 % mesures 66 à 70
 	    g4\! r r
 	    g2.\fz\>~
-	    g4 ees\fz ees\fz 
+	    g4\! ees\fz ees\fz 
 	    ees\fz_\crescmarkup ees\fz ees\fz 
 	    ees\fz ees\fz ees\fz 
 % mesures 71 à 75

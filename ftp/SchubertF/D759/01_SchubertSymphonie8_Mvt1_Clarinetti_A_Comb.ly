@@ -89,7 +89,7 @@ MvtUnClarinettiAI = \relative c {
 % mesures 66 à 70
 	    f4)\! r r
 	    bes2.(\fz\>
-	    ges4) e'!\fz e\fz
+	    ges4)\! e'!\fz e\fz
 	    e!\fz e\fz e\fz
 	    e!\fz e\fz e\fz
 % mesures 71 à 75
@@ -520,7 +520,7 @@ MvtUnClarinettiAII = \relative c {
 	    r d4-.( d-. d8-.)
 	    r f4-.( f-. f8-.)
 	    r f4-.( f-. f8-.)
-	    r ees4-.(_\decresc ees-. ees8-.)
+	    r ees4-.(_\decresc ees-. ees8-.)\!
 % mesures 61 à 65
 	    r ees4-.( ees4-. ees8-.)
 	    R2. \mark \default
@@ -530,7 +530,7 @@ MvtUnClarinettiAII = \relative c {
 % mesures 66 à 70
 	    f4)\! r r
 	    bes2.(\fz\>
-	    ges4) des'\fz des\fz
+	    ges4)\! des'\fz des\fz
 	    des\fz_\crescmarkup des\fz des\fz
 	    des\fz des\fz des\fz
 % mesures 71 à 75

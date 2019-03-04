@@ -410,7 +410,7 @@ MvtUnTromboni_tenore = \relative c {
 	    
 	    
 	    r4 b2\ff\>~
-	    b2.\!~
+	    b2.~
 	    b4\pp r r
 % mesures 106 à 110
 	    R2.*3

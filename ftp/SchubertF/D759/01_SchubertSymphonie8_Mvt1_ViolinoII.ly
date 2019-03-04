@@ -39,7 +39,7 @@ MvtUnViolinoII = \relative c {
 	    g g fis fis g g e e fis fis g g
 	    fis fis d d cis\fz cis e e e\> e cis cis
 % mesures 21 à 25
-	    cis cis e e e\! e cis cis cis cis e e
+	    cis cis e e\! e e cis cis cis cis e e
 	    d\pp d cis cis d d b b cis cis d d 
 	    e e dis dis e e e e d d e e
 	    d d cis cis d d b b cis cis d d
@@ -76,7 +76,7 @@ MvtUnViolinoII = \relative c {
 	    g4( d4. g8)
 	    gis8.( a16 b4. a8)
 	    gis8.( a16 b8[ e, fis fis])
-	    a4(_\decresc e4. gis8)\!
+	    a4(_\decresc e4.\! gis8)
 % mesures 61 à 65
 	    a4( d, e8 fis)
 	    R2. \mark \default
