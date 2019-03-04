@@ -129,6 +129,9 @@ global = {
 		}
 		\layout {
 			%system-count = #20
+			\context {
+			    \StaffGroup \override StaffGrouper.staff-staff-spacing.basic-distance = #5
+			}
 		}
 	}
 %	\score {

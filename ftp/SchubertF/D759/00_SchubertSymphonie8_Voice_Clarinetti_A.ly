@@ -41,8 +41,8 @@
 globalMvtUn = {
 	\version "2.18.2"
 	\time 4/4
-	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	%\key c \major
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Indication Tempo" 4 = 80 
 	\set Score.doubleRepeatType = #":|.|:"
@@ -51,8 +51,8 @@ globalMvtUn = {
 globalMvtDeux = {
 	\version "2.18.2"
 	\time 4/4
-	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	%\key c \major
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Indication Tempo" 4 = 80 
 	\set Score.doubleRepeatType = #":|.|:"
@@ -69,22 +69,22 @@ globalMvtDeux = {
 		title = \markup { \fontsize #5 \sans 
 			\center-column {
 				\vspace #10
-				"Compositeur"
-				"Année Naissance - décés"
+				"Franz Schubert"
+				"1797 - 1828"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Sinfonie Nr. 8 in h-moll"
+				"Die Unvollendete"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Clarinetti"
 			}
 		}
 	}

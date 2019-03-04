@@ -40,9 +40,9 @@
 %-----------------------------------------------------------------------
 globalMvtUn = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	\time 3/4
+	%\key c \major
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Indication Tempo" 4 = 80 
 	\set Score.doubleRepeatType = #":|.|:"
@@ -51,16 +51,16 @@ globalMvtUn = {
 globalMvtDeux = {
 	\version "2.18.2"
 	\time 4/4
-	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	%\key c \major
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Indication Tempo" 4 = 80 
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_SchubertSymphonie8_Mvt1_Flauti4.ly"
-\include "02_SchubertSymphonie8_Mvt2_Flauti4.ly"
+\include "01_SchubertSymphonie8_Mvt1_Basso.ly"
+\include "02_SchubertSymphonie8_Mvt2_Basso.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -69,22 +69,22 @@ globalMvtDeux = {
 		title = \markup { \fontsize #5 \sans 
 			\center-column {
 				\vspace #10
-				"Compositeur"
-				"Année Naissance - décés"
+				"Franz Schubert"
+				"1797 - 1828"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Sinfonie Nr. 8 in h-moll"
+				"Die Unvollendete"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Basso"
 			}
 		}
 	}
