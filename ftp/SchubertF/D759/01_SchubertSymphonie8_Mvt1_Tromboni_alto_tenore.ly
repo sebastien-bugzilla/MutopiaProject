@@ -442,8 +442,8 @@ MvtUnTromboni_tenore = \relative c {
 	ais2\fz-> r4
 	r ais2->\fz
 % mesures 136 à 140
-	r4 r ais~\fz\>->
-	ais r\! r
+	r4 r ais~\fz->
+	ais r r
 	ais2->\fz r4
 	r ais->\fz r
 	ais\fz r ais\fz

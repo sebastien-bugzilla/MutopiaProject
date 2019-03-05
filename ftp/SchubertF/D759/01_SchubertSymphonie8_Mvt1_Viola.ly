@@ -238,7 +238,7 @@ MvtUnViola = \relative c {
 % mesures 181 à 185
 	e bis cis d e cis d e fis d e fis
 	gis\< a b cis d cis d cis d cis d cis
-	d\> cis d cis d cis d cis eis cis eis cis
+	d\> cis d cis d cis d cis\! eis cis eis cis
 	fis4 fis,2\fz
 	a\fz~ a8 b32( cis d e)
 % mesures 186 à 190
@@ -272,7 +272,7 @@ MvtUnViola = \relative c {
 	fis4) r r8. \times 2/3 {cis32( dis eis}
 	fis4) r r8. \times 2/3 {cis32( dis eis}
 % mesures 211 à 215
-	fis4)_\decresc r r8. \times 2/3 {cis32( dis\! eis}
+	fis4)_\decresc r\! r8. \times 2/3 {cis32( dis\! eis}
 	fis4) r r
 	R2.
 	fis,4\pp^\pizz r r
@@ -332,7 +332,7 @@ MvtUnViola = \relative c {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	d'4(_\decresc a4. cis8\!
+	d'4(_\decresc a4.\! cis8
 	d4 g, a8 b)
 	c4( g4. b8
 	ais4 fis gis8 ais)

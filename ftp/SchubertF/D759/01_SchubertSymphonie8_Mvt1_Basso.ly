@@ -275,7 +275,7 @@ MvtUnBasso = \relative c {
 	fis4) r r8. \times 2/3 {cis32( dis eis}
 	fis4) r r8. \times 2/3 {cis32( dis eis}
 % mesures 211 à 215
-	fis4)_\decresc r r8. \times 2/3 {cis32( dis\! eis}
+	fis4)_\decresc r\! r8. \times 2/3 {cis32( dis\! eis}
 	fis4) r r
 	R2.
 	fis4\pp^\pizz r r
@@ -353,7 +353,7 @@ MvtUnBasso = \relative c {
 	e r r
 	a, r r
 % mesures 276 à 280
-	a_\decresc r d\!
+	a_\decresc r\! d
 	g, r r
 	g r e'
 	fis r r
@@ -365,7 +365,7 @@ MvtUnBasso = \relative c {
 	fis4\! r r
 	g2.:32\fz\> 
 % mesures 286 à 290
-	g4 g,\fz g\fz
+	g4\! g,\fz g\fz
 	g\fz_\crescmarkup g\fz g\fz
 	g'\fz g\fz g\fz 
 	gis\fz r r
@@ -452,7 +452,7 @@ MvtUnBasso = \relative c {
 	b'2.\mf\<~
 	b~
 	b2.\>~ 
-	b\!
+	b
 	b,2.\pp\<(
 % mesures 361 à 365
 	cis2 d4)

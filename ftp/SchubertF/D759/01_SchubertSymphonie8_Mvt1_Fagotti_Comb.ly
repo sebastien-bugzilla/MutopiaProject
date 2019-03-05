@@ -245,7 +245,7 @@ MvtUnFagottiI = \relative c {
 	fis'2.\ff
 	a\fz
 	fis'\fp(\>
-	cis)
+	cis)\!
 % mesures 206 à 210
 	fis,\ff
 	a\fz
@@ -667,7 +667,7 @@ MvtUnFagottiII = \relative c {
 	fis2.\ff
 	a\fz
 	d'\fp(\>
-	ais)
+	ais)\!
 % mesures 206 à 210
 	fis,\ff
 	a\fz
@@ -837,7 +837,7 @@ MvtUnFagottiII = \relative c {
 	d\mf\<~
 	d(
 	e)\>~
-	e(\!
+	e(
 	b4) r4 r
 % mesures 361 à 365
 	R2.*3

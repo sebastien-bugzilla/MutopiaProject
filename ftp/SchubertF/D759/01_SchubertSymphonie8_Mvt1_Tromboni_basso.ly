@@ -199,7 +199,7 @@ MvtUnTromboni_basso = \relative c {
 	cis
 	e\fz
 	d4-. b-. c-.
-	g2.\fz\>~
+	g2.\ffz\>~
 	g\!
 % mesures 196 à 200
 	g\fz\>~

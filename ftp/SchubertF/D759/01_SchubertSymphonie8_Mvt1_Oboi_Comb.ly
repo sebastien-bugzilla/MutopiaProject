@@ -308,7 +308,7 @@ MvtUnOboiI = \relative c'' {
 	fis4)\! r r
 	b2.(\fz\>
 % mesures 286 à 290
-	g4) f'\fz f\fz 
+	g4)\! f'\fz f\fz 
 	f\fz f\fz f\fz 
 	f\fz f\fz f\fz 
 	f8\fz\> b4 b b8~\!
@@ -699,7 +699,7 @@ MvtUnOboiII = \relative c'' {
 	fis4)\! r r
 	b2.(\fz\>
 % mesures 286 à 290
-	g4) d'\fz d\fz 
+	g4)\! d'\fz d\fz 
 	d\fz d\fz d\fz 
 	d\fz d\fz d\fz 
 	d8\fz\> d4 d d8~\!

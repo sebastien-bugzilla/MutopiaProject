@@ -155,8 +155,8 @@ MvtUnTrombeEI = \relative c {
 % mesures 176 à 180
 	c4 r r
 	R2.
-	\partcombineApart d2.\>
-	d2\! d4
+	\partcombineApart d2.
+	d2 d4
 	\partcombineAutomatic d r r
 % mesures 181 à 185
 	R2.*3
@@ -231,7 +231,7 @@ MvtUnTrombeEI = \relative c {
 	g4\! r r
 	g2.\fz\>~
 % mesures 286 à 290
-	g4 g\fz g\fz 
+	g4\! g\fz g\fz 
 	g\fz g\fz g\fz 
 	g\fz g\fz g\fz 
 	g\fz  r r
@@ -529,7 +529,7 @@ MvtUnTrombeEII = \relative c {
 	g4\! r r
 	g2.\fz\>~
 % mesures 286 à 290
-	g4 g\fz g\fz 
+	g4\! g\fz g\fz 
 	g\fz g\fz g\fz 
 	g\fz g\fz g\fz 
 	g\fz  r r

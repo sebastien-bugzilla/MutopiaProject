@@ -231,7 +231,7 @@ MvtUnTrombeEI = \relative c {
 	g4\! r r
 	g2.\fz\>~
 % mesures 286 à 290
-	g4 g\fz g\fz 
+	g4\! g\fz g\fz 
 	g\fz g\fz g\fz 
 	g\fz g\fz g\fz 
 	g\fz  r r
@@ -529,7 +529,7 @@ MvtUnTrombeEII = \relative c {
 	g4\! r r
 	g2.\fz\>~
 % mesures 286 à 290
-	g4 g\fz g\fz 
+	g4\! g\fz g\fz 
 	g\fz g\fz g\fz 
 	g\fz g\fz g\fz 
 	g\fz  r r

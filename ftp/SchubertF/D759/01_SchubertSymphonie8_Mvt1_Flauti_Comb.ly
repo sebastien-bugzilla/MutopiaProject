@@ -266,10 +266,10 @@ MvtUnFlautiI = \relative c {
 	R2.
 	a2.\p~
 % mesures 246 à 250
-	a2~ a8\p( b)
-	b2~ b8( cis)
+	a2~ a8( b)
+	b2~ b8(_\crescmarkup cis)
 	cis2~ cis8 cis
-	cis2~ cis8 eis\ff
+	cis2~ cis8[ eis\ff]
 	eis2.~
 % mesures 251 à 255
 	eis \mark \default
@@ -314,7 +314,7 @@ MvtUnFlautiI = \relative c {
 	fis4)\! r r
 	b2.(\fz\>
 % mesures 286 à 290
-	g4) d''\fz d\fz 
+	g4)\! d''\fz d\fz 
 	d\fz d\fz d\fz 
 	d\fz d\fz d\fz 
 	d8\fz\> d4 d d8~\!
@@ -340,8 +340,8 @@ MvtUnFlautiI = \relative c {
 % mesures 306 à 310
 	gis4) fis-. fis-.
 	fis8 r fis2(\fz
-	gis8) r gis2(\fz
-	bis,8) r bis2(\fz
+	gis8) r gis2(
+	bis,8) r bis2(
 	cis4) fis ais, \mark \default
 % mesures 311 à 315
 	b r r
@@ -564,7 +564,7 @@ MvtUnFlautiII = \relative c {
 	r8 cis4 cis cis8
 	r bis4 bis bis8
 	f''2.\ff\>~
-	f2( d4)
+	f2(\! d4)
 % mesures 156 à 160
 	gis,2.(\>
 	f2\! d4)
@@ -675,7 +675,7 @@ MvtUnFlautiII = \relative c {
 	R2.
 % mesures 246 à 250
 	r4 r fis8\p( a)
-	a4( g4._\crescmarkup b8)
+	a4( g4. b8)
 	b4( a4. b8)
 	b4( a4.) cis8-.\ff
 	cis2.~
@@ -722,7 +722,7 @@ MvtUnFlautiII = \relative c {
 	fis4)\! r r
 	b2.(\fz\>
 % mesures 286 à 290
-	g4) b'\fz b\fz 
+	g4)\! b'\fz b\fz 
 	b\fz b\fz b\fz 
 	b\fz b\fz b\fz 
 	b8\fz\> b4 b b8~\!

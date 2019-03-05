@@ -230,7 +230,7 @@ MvtUnFlautiI = \relative c {
 	r8 dis4 dis dis8
 	r dis4 dis dis8
 	gis'2.(\ff\>
-	f2)( d4)
+	f2)(\! d4)
 % mesures 156 à 160
 	gis,2.(\>
 	f2\! d4)
@@ -390,7 +390,7 @@ MvtUnFlautiI = \relative c {
 	fis4)\! r r
 	b2.(\fz\>
 % mesures 286 à 290
-	g4) d''\fz d\fz 
+	g4)\! d''\fz d\fz 
 	d\fz d\fz d\fz 
 	d\fz d\fz d\fz 
 	d8\fz\> d4 d d8~\!
@@ -805,7 +805,7 @@ MvtUnFlautiII = \relative c {
 	fis4)\! r r
 	b2.(\fz\>
 % mesures 286 à 290
-	g4) b'\fz b\fz 
+	g4)\! b'\fz b\fz 
 	b\fz b\fz b\fz 
 	b\fz b\fz b\fz 
 	b8\fz\> b4 b b8~\!

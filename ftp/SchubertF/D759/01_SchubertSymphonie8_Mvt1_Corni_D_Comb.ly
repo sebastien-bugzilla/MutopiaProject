@@ -239,7 +239,7 @@ MvtUnCorniDI = \relative c {
 	e2.\ff
 	d\fz
 	e\fp\>~
-	e
+	e\!
 % mesures 206 à 210
 	e\ff
 	d\fz
@@ -356,7 +356,7 @@ MvtUnCorniDI = \relative c {
 	
 	\clef bass e,,2.\>~
 % mesures 321 à 325
-	e~
+	e~\!
 	e8 r \clef treble a'2\ffz\>~
 	a2.\p~
 	a\pp~
@@ -644,7 +644,7 @@ MvtUnCorniDII = \relative c {
 	c2.\ff
 	g\fz
 	e\fp\>~
-	e
+	e\!
 % mesures 206 à 210
 	c'\ff
 	g\fz
@@ -761,7 +761,7 @@ MvtUnCorniDII = \relative c {
 	
 	\clef bass e,,2.\>~
 % mesures 321 à 325
-	e~
+	e~\!
 	e8 r \clef treble a''2\ffz\>~
 	a2.\p~
 	a\pp~
