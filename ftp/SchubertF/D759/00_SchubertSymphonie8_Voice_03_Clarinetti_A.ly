@@ -1,4 +1,4 @@
-%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/00_SchubertSymphonie8_Clarinetti_A.ly
+%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/00_SchubertSymphonie8_03_Clarinetti_A.ly
 %Fichier généré le :  samedi 2 février 2019, 13:30:06 (UTC+0100)
 %#######################################################################
 %#             G E N E R A L I T E S   E T   E N T E T E               #
@@ -59,8 +59,8 @@ globalMvtDeux = {
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_SchubertSymphonie8_Mvt1_Clarinetti_A.ly"
-\include "02_SchubertSymphonie8_Mvt2_Clarinetti_A.ly"
+\include "01_SchubertSymphonie8_Mvt1_03_Clarinetti_A.ly"
+\include "02_SchubertSymphonie8_Mvt2_03_Clarinetti_A.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################

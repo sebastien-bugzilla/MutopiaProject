@@ -1,4 +1,4 @@
-%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/01_SchubertSymphonie8_Mvt1_Flauti.ly
+%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/01_SchubertSymphonie8_Mvt1_Flauto.ly
 %Fichier généré le :  samedi 2 février 2019, 13:30:06 (UTC+0100)
 %-----------------------------------------------------------------------
 %         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
@@ -6,27 +6,27 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   1               #
 %#######################################################################
-oboiNotesA = \relative c'' {
+oboeNotesA = \relative c'' {
     s2.*21
     fis2.(
     b,4. ais8[ b cis])
     fis2.(
     b,4. ais8[ b cis])
 }
-oboiNotesB = \relative c''' {
+oboeNotesB = \relative c''' {
     s2.*134
     g2.(
     fis2 e4)
     g2.(
     fis2 e4)
 }
-oboiNotesC = \relative c'' {
+oboeNotesC = \relative c'' {
     s2.*226
     d2.(
     e4 f4. e8)
     d4( cis2)
 }
-oboiNotesD = \relative c'' {
+oboeNotesD = \relative c'' {
     s2.*344
     fis2(-> eis4)
     fis2(-> eis4)
@@ -46,42 +46,42 @@ violinNotesB = \relative c'' {
     ais4 fis gis8 ais)
     R2.
 }
-flautiNotesA = \relative c'' {
+FlautoNotesA = \relative c'' {
     s2.*25
     d2.~
     d2~ d8( e)
     e2
 }
-flautiNotesB = \relative c''' {
+FlautoNotesB = \relative c''' {
     s2.*100
     b8.( c16 d4. f8)
     e4.( d8[ c b])
     a2( d4)
     g,8 r
 }
-flautiNotesC = \relative c'''' {
+FlautoNotesC = \relative c'''' {
     s2.*139
     g2( fis4)
     e2( g4)
     fis2( e4)
     g2( fis4)
 }
-\addQuote "oboiA" {\oboiNotesA}
-\addQuote "oboiB" {\oboiNotesB}
-\addQuote "oboiC" {\oboiNotesC}
-\addQuote "oboiD" {\oboiNotesD}
+\addQuote "oboeA" {\oboeNotesA}
+\addQuote "oboeB" {\oboeNotesB}
+\addQuote "oboeC" {\oboeNotesC}
+\addQuote "oboeD" {\oboeNotesD}
 \addQuote "violinA" {\violinNotesA}
 \addQuote "violinB" {\violinNotesB}
-\addQuote "flautiA" {\flautiNotesA}
-\addQuote "flautiB" {\flautiNotesB}
-\addQuote "flautiC" {\flautiNotesC}
+\addQuote "FlautoA" {\FlautoNotesA}
+\addQuote "FlautoB" {\FlautoNotesB}
+\addQuote "FlautoC" {\FlautoNotesC}
 
-MvtUnFlautiI = \relative c {
+MvtUnFlautoI = \relative c {
 	\clef treble
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Staff.instrumentName = #"Flauti"
+	\set Staff.instrumentName = #"Flauto I"
 	\set Staff.midiInstrument = #"flute"
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event
@@ -97,8 +97,8 @@ MvtUnFlautiI = \relative c {
 % mesures 16 à 20
 	
 % mesures 21 à 25
-	    \new CueVoice { \set instrumentCueName = "oboi I"}
-	    \cueDuring #"oboiA" #UP {R2.*4}
+	    \new CueVoice { \set instrumentCueName = "oboe I"}
+	    \cueDuring #"oboeA" #UP {R2.*4}
 % mesures 26 à 30
 	    d''2.\p~
 	    d2~ d8( e)
@@ -209,7 +209,7 @@ MvtUnFlautiI = \relative c {
 	
 % mesures 136 à 140
 	\new CueVoice { \set instrumentCueName = "Oboe I"}
-	\cueDuring #"oboiB" #UP {R2.*4}
+	\cueDuring #"oboeB" #UP {R2.*4}
 	g''2\f( fis4)
 	e2(_\crescmarkup g4)
 	fis2( e4)
@@ -319,7 +319,7 @@ MvtUnFlautiI = \relative c {
 	
 	
 	\new CueVoice { \set instrumentCueName = "Oboe I"}
-	\cueDuring #"oboiC" #UP {R2.*3}
+	\cueDuring #"oboeC" #UP {R2.*3}
 	fis4(\p g4.\< fis8
 	g4\> fis2)\!
 % mesures 231 à 235
@@ -463,7 +463,7 @@ MvtUnFlautiI = \relative c {
 	
 % mesures 346 à 350
 	\new CueVoice { \set instrumentCueName = "Oboe I"}
-	\cueDuring #"oboiD" #UP {R2.*4 r4}
+	\cueDuring #"oboeD" #UP {R2.*4 r4}
 	 b(\f d
 	fis\< b d)
 	fis2.\ff
@@ -490,12 +490,12 @@ MvtUnFlautiI = \relative c {
 	b,2.\>~
 	b4\! r r \bar "|."
 }
-MvtUnFlautiII = \relative c {
+MvtUnFlautoII = \relative c {
 	\clef treble
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Staff.instrumentName = #"Flauti"
+	\set Staff.instrumentName = #"Flauto II"
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event
                                       dynamic-event slur-event)
@@ -513,8 +513,8 @@ MvtUnFlautiII = \relative c {
 	
 % mesures 26 à 30
 	    
-	    \new CueVoice { \set instrumentCueName = "Flauti I"}
-	    \cueDuring #"flautiA" #UP {R2.*2 r2}
+	    \new CueVoice { \set instrumentCueName = "Flauto I"}
+	    \cueDuring #"FlautoA" #UP {R2.*2 r2}
 	    e'''4\fz
 	    e\fz r r
 	    R2.*2
@@ -589,8 +589,8 @@ MvtUnFlautiII = \relative c {
 % mesures 101 à 105
 	    
 	    
-	    \new CueVoice { \set instrumentCueName = "Flauti I"}
-	    \cueDuring #"flautiB" #UP {R2.*3 r4}
+	    \new CueVoice { \set instrumentCueName = "Flauto I"}
+	    \cueDuring #"FlautoB" #UP {R2.*3 r4}
 	    b4\fz r
 	    R2.*4
 % mesures 106 à 110
@@ -628,8 +628,8 @@ MvtUnFlautiII = \relative c {
 	
 	
 % mesures 141 à 145
-	\new CueVoice { \set instrumentCueName = "Flauti I"}
-	\cueDuring #"flautiC" #UP {R2.*4}
+	\new CueVoice { \set instrumentCueName = "Flauto I"}
+	\cueDuring #"FlautoC" #UP {R2.*4}
 	e'4( g fis)
 	e( g fis)
 	e( g fis)
@@ -734,7 +734,7 @@ MvtUnFlautiII = \relative c {
 	
 	
 	\new CueVoice { \set instrumentCueName = "Oboe I"}
-	\cueDuring #"oboiC" #UP {R2.*3}
+	\cueDuring #"oboeC" #UP {R2.*3}
 	e,2.\p\<~ 
 	e2\>( dis4\!
 % mesures 231 à 235

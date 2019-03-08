@@ -1,4 +1,4 @@
-%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/00_SchubertSymphonie8_Flauti1.ly
+%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/00_SchubertSymphonie8_01_Flauti1.ly
 %Fichier généré le :  samedi 2 février 2019, 13:30:07 (UTC+0100)
 %#######################################################################
 %#             G E N E R A L I T E S   E T   E N T E T E               #
@@ -59,8 +59,8 @@ globalMvtDeux = {
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_SchubertSymphonie8_Mvt1_Flauti1.ly"
-\include "02_SchubertSymphonie8_Mvt2_Flauti1.ly"
+\include "01_SchubertSymphonie8_Mvt1_11_ViolinoII.ly"
+\include "02_SchubertSymphonie8_Mvt2_11_ViolinoII.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################

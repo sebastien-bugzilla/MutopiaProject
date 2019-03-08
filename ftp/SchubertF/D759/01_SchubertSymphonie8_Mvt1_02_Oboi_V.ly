@@ -6,7 +6,7 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   2               #
 %#######################################################################
-MvtUnOboiI = \relative c'' {
+MvtUnOboeI = \relative c'' {
 	\clef treble
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
@@ -399,7 +399,7 @@ MvtUnOboiI = \relative c'' {
 	b2.~\>
 	b4\! r r \bar "|."
 }
-MvtUnOboiII = \relative c'' {
+MvtUnOboeII = \relative c'' {
 	\clef treble
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f

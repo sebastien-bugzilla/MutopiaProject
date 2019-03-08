@@ -1,4 +1,4 @@
-%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/00_SchubertSymphonie8_Flauti.ly
+%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/00_SchubertSymphonie8_01_Flauti.ly
 %Fichier généré le :  samedi 2 février 2019, 13:30:06 (UTC+0100)
 %#######################################################################
 %#             G E N E R A L I T E S   E T   E N T E T E               #
@@ -40,11 +40,11 @@
 %-----------------------------------------------------------------------
 globalMvtUn = {
 	\version "2.18.2"
-	\time 4/4
+	\time 3/4
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 80 
+	\tempo "Allegro moderato" 4 = 110
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -59,8 +59,8 @@ globalMvtDeux = {
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_SchubertSymphonie8_Mvt1_Flauti.ly"
-\include "02_SchubertSymphonie8_Mvt2_Flauti.ly"
+\include "01_SchubertSymphonie8_Mvt1_01_Flauti_V.ly"
+\include "02_SchubertSymphonie8_Mvt2_01_Flauti.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -84,13 +84,48 @@ globalMvtDeux = {
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Flauti I & II"
 			}
 		}
 	}
 	\score {
 		{
-			\new Staff << \globalMvtUn \MvtUnFlauti >>
+			\new Staff << \globalMvtUn \MvtUnFlautoI >>
+		}
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #5
+					I
+				}
+			}
+		}
+		\layout {
+			system-count = #22
+			#(layout-set-staff-size 19)}
+	}
+	\score {
+		{
+			\new Staff << \globalMvtDeux \MvtDeuxFlautiI >>
+		}
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #5
+					II
+				}
+			}
+		}
+		\layout {
+			%system-count = #20
+			#(layout-set-staff-size 19)
+		}
+	}
+	\score {
+		{
+			\new Staff << \globalMvtUn \MvtUnFlautoII >>
 		}
 		\header {
 			breakbefore = ##t
@@ -107,7 +142,7 @@ globalMvtDeux = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtDeux \MvtDeuxFlauti >>
+			\new Staff << \globalMvtDeux \MvtDeuxFlautiII >>
 		}
 		\header {
 			breakbefore = ##t

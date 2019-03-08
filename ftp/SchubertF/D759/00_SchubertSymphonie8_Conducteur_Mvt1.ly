@@ -50,20 +50,20 @@ global = {
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_SchubertSymphonie8_Mvt1_Flauti_Comb.ly"
-\include "01_SchubertSymphonie8_Mvt1_Oboi_Comb.ly"
-\include "01_SchubertSymphonie8_Mvt1_Clarinetti_A_Comb.ly"
-\include "01_SchubertSymphonie8_Mvt1_Fagotti_Comb.ly"
-\include "01_SchubertSymphonie8_Mvt1_Corni_D_Comb.ly"
-\include "01_SchubertSymphonie8_Mvt1_Trombe_E_Comb.ly"
-\include "01_SchubertSymphonie8_Mvt1_Tromboni_alto_tenore_Comb.ly"
-\include "01_SchubertSymphonie8_Mvt1_Tromboni_basso.ly"
-\include "01_SchubertSymphonie8_Mvt1_Timpani.ly"
-\include "01_SchubertSymphonie8_Mvt1_ViolinoI.ly"
-\include "01_SchubertSymphonie8_Mvt1_ViolinoII.ly"
-\include "01_SchubertSymphonie8_Mvt1_Viola.ly"
-\include "01_SchubertSymphonie8_Mvt1_Violoncello.ly"
-\include "01_SchubertSymphonie8_Mvt1_Basso.ly"
+\include "01_SchubertSymphonie8_Mvt1_01_Flauti_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_02_Oboi_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_03_ClarinettiA_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_04_Fagotti_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_05_CorniD_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_06_TrombeE_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_07_Tromboni_alto_tenore_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_08_Tromboni_basso_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_09_Timpani_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_10_ViolinoI_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_11_ViolinoII_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_12_Viola_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_13_Violoncello_C.ly"
+\include "01_SchubertSymphonie8_Mvt1_14_Basso_C.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -101,7 +101,7 @@ global = {
 %			    \new Staff { \global \MvtUnClarinettiAII }
 %			    \new Staff { \global \MvtUnClarinettiAI }
 			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
-%			    \new Staff { \global \MvtUnFagottiII }
+%			    \new Staff { \global \MvtUn04_FagottiII }
 			    \new Staff { \global \partcombine \MvtUnFagottiI \MvtUnFagottiII }
 %			    \new Staff { \global \MvtUnCorniDII }
 			    \new Staff { \global \partcombine \MvtUnCorniDI \MvtUnCorniDII }
