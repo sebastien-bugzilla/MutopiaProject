@@ -10,10 +10,20 @@ MvtUnClarinettiAI = \relative c {
 	\clef treble
 	\key d \minor
 	\override TupletBracket #'bracket-visibility = ##f
-	\set Staff.instrumentName = #"Clarinetti I"
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Clarinet I"
+	        \line {
+	            "in A"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"clarinet"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\transposition a
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
@@ -82,7 +92,7 @@ MvtUnClarinettiAI = \relative c {
 	    r g4-.(_\decresc g-. g8-.)\!
 % mesures 61 à 65
 	    r ges[( f]) f4-.( f8-.)
-	    R2. \mark \default
+	    R2._\gp \mark \default
 	    bes,2.\ffz\>(
 	    ees,4)\! r r
 	    bes'2.(\fz\> 
@@ -451,10 +461,19 @@ MvtUnClarinettiAII = \relative c {
 	\clef treble
 	\key d \minor
 	\override TupletBracket #'bracket-visibility = ##f
-	\set Staff.instrumentName = #"Clarinetti II"
-	\set Staff.midiInstrument = #"clarinet"
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Clarinet II"
+	        \line {
+	            "in A"
+	        }
+	    }
+	}	\set Staff.midiInstrument = #"clarinet"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\transposition a
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

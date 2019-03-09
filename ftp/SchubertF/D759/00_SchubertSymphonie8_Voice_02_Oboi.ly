@@ -60,7 +60,7 @@ globalMvtDeux = {
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_02_Oboi_V.ly"
-\include "02_SchubertSymphonie8_Mvt2_02_Oboi_V.ly"
+\include "02_SchubertSymphonie8_Mvt2_02_Oboi.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################

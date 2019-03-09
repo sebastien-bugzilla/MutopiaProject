@@ -40,11 +40,11 @@
 %-----------------------------------------------------------------------
 globalMvtUn = {
 	\version "2.18.2"
-	\time 4/4
+	\time 3/4
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 80 
+	\tempo "Allegro moderato" 4 = 120 
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -59,8 +59,8 @@ globalMvtDeux = {
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_SchubertSymphonie8_Mvt1_03_Clarinetti_A.ly"
-\include "02_SchubertSymphonie8_Mvt2_03_Clarinetti_A.ly"
+\include "01_SchubertSymphonie8_Mvt1_03_ClarinettiA_V.ly"
+\include "02_SchubertSymphonie8_Mvt2_03_ClarinettiA.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -84,13 +84,13 @@ globalMvtDeux = {
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Clarinetti"
+				"Clarinetti in A I & II"
 			}
 		}
 	}
 	\score {
 		{
-			\new Staff << \globalMvtUn \MvtUnClarinettiA >>
+			\new Staff << \globalMvtUn \MvtUnClarinettiAI >>
 		}
 		\header {
 			breakbefore = ##t
@@ -107,7 +107,42 @@ globalMvtDeux = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtDeux \MvtDeuxClarinettiA >>
+			\new Staff << \globalMvtDeux \MvtDeuxClarinettiAI >>
+		}
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #5
+					II
+				}
+			}
+		}
+		\layout {
+			%system-count = #20
+			#(layout-set-staff-size 19)
+		}
+	}
+	\score {
+		{
+			\new Staff << \globalMvtUn \MvtUnClarinettiAII >>
+		}
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #5
+					I
+				}
+			}
+		}
+		\layout {
+			%system-count = #20
+			#(layout-set-staff-size 19)}
+	}
+	\score {
+		{
+			\new Staff << \globalMvtDeux \MvtDeuxClarinettiAII >>
 		}
 		\header {
 			breakbefore = ##t

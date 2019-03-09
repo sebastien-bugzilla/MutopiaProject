@@ -6,7 +6,7 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   2               #
 %#######################################################################
-MvtDeuxOboiI = \relative c {
+MvtDeuxOboeI = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #""
@@ -137,7 +137,7 @@ MvtDeuxOboiI = \relative c {
 % mesures 311 à 312
 	
 }
-MvtDeuxOboiII = \relative c {
+MvtDeuxOboeII = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = #""

@@ -66,7 +66,7 @@ MvtUnOboiI = \relative c'' {
 % mesures 61 à 65
 	    
 	    \mark \default
-	    g,2.\ffz\<(
+	    g,2.\ffz\>(
 	    c,4) r\! r
 	    g'2.\fz(\>
 % mesures 66 à 70
@@ -457,7 +457,7 @@ MvtUnOboiII = \relative c'' {
 % mesures 61 à 65
 	    
 	    \mark \default
-	    g,2.\ffz\<(
+	    g,2.\ffz\>(
 	    c,4) r\! r
 	    g'2.\fz(\>
 % mesures 66 à 70
