@@ -90,7 +90,7 @@ globalMvtDeux = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtUn \MvtUnClarinettiAI >>
+			\new Staff << \globalMvtUn \key d \minor \transposition a \MvtUnClarinettiAI >>
 		}
 		\header {
 			breakbefore = ##t
@@ -123,9 +123,30 @@ globalMvtDeux = {
 			#(layout-set-staff-size 19)
 		}
 	}
+%	\score {
+%		{
+%			\new Staff << \globalMvtUn \key cis \minor \transposition bes \MvtUnClarinettiAI >>
+%		}
+%		\header {
+%			breakbefore = ##t
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #5
+%					I
+%				}
+%			}
+%		}
+%		\layout {
+%			%system-count = #20
+%			#(layout-set-staff-size 19)
+%		}
+%	}
 	\score {
 		{
-			\new Staff << \globalMvtUn \MvtUnClarinettiAII >>
+			\new Staff << 
+			    \globalMvtUn 
+			    \key d \minor \transposition a
+			    \MvtUnClarinettiAII >>
 		}
 		\header {
 			breakbefore = ##t

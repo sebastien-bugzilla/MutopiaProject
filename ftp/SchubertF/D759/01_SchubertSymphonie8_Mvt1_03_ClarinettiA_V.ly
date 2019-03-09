@@ -6,9 +6,51 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   3               #
 %#######################################################################
+fagotNotesA = \relative c' {
+    \transposition a
+    s2.*130
+    a2.~
+    a4( bes c)
+    b2.~
+    b4( c d)
+}
+clarinetNotesA = \relative c''' {
+    \transposition a
+    s2.*21
+    a2.(
+    d,4. cis8[ d e])
+    a2.(
+    d,4. cis8[ d e])
+}
+clarinetNotesB = \relative c'' {
+    \transposition a
+    s2.*235
+    bes2.(
+    c4 des4. c8)
+    bes4( a2)
+}
+clarinetNotesC = \relative c'' {
+    \transposition a
+    s2.*319
+    fis8.( g16 a4. c!8)
+    b4.( a8[ g fis])
+    e2( a4
+    d,8) r
+}
+fluteNotesA = \relative c''' {
+    \transposition a
+    s2.*98
+    bes4( f4. bes8)
+    a8.( bes16 c4. e8)
+}
+\addQuote "fagotA" {\fagotNotesA}
+\addQuote "clarinetA" {\clarinetNotesA}
+\addQuote "fluteA" {\fluteNotesA}
+\addQuote "clarinetB" {\clarinetNotesB}
+\addQuote "clarinetC" {\clarinetNotesC}
 MvtUnClarinettiAI = \relative c {
 	\clef treble
-	\key d \minor
+	%\key d \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = \markup {
 	    \center-column {
@@ -20,7 +62,7 @@ MvtUnClarinettiAI = \relative c {
 	}
 	\set Staff.midiInstrument = #"clarinet"
 	\set Score.alternativeNumberingStyle = #'numbers
-	\transposition a
+	%\transposition a
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event
                                       dynamic-event slur-event)
@@ -163,7 +205,7 @@ MvtUnClarinettiAI = \relative c {
 	a(
 	c)(
 	bes4) r r
-	R2.*19
+	R2.*15
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -171,7 +213,10 @@ MvtUnClarinettiAI = \relative c {
 % mesures 126 à 130
 	
 % mesures 131 à 135
-	
+	\clef bass
+	\new CueVoice { \set instrumentCueName = "Fagot"}
+	\cueDuring #"fagotA" #UP {R2.*4}
+	\clef treble
 	
 	
 	r4 r e->\fz~
@@ -349,7 +394,7 @@ MvtUnClarinettiAI = \relative c {
 	r ces([-> bes]) bes4 bes8
 	r bes4 bes bes8
 	r a!4 a a8
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	d2.(\ff\>
 	g,4)\! r r
@@ -459,7 +504,7 @@ MvtUnClarinettiAI = \relative c {
 }
 MvtUnClarinettiAII = \relative c {
 	\clef treble
-	\key d \minor
+	%\key d \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\set Staff.instrumentName = \markup {
 	    \center-column {
@@ -470,14 +515,14 @@ MvtUnClarinettiAII = \relative c {
 	    }
 	}	\set Staff.midiInstrument = #"clarinet"
 	\set Score.alternativeNumberingStyle = #'numbers
-	\transposition a
+	%\transposition a
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event
                                       dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*24
+	    R2.*20
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -496,8 +541,8 @@ MvtUnClarinettiAII = \relative c {
 	    
 	    
 	    
-	    
-	    
+	    \new CueVoice { \set instrumentCueName = "Clarinet I"}
+	    \cueDuring #"clarinetA" #UP {R2.*4}
 % mesures 26 à 30
 	    a''4\p( bes4. c!8)
 	    c4( bes4._\crescmarkup b8)
@@ -539,10 +584,10 @@ MvtUnClarinettiAII = \relative c {
 	    r d4-.( d-. d8-.)
 	    r f4-.( f-. f8-.)
 	    r f4-.( f-. f8-.)
-	    r ees4-.(_\decresc ees-. ees8-.)
+	    r ees4-.(_\decresc ees-.\! ees8-.)
 % mesures 61 à 65
 	    r ees4-.( ees4-. ees8-.)
-	    R2. \mark \default
+	    R2._\gp \mark \default
 	    bes2.\ffz\>(
 	    ees,4)\! r r
 	    bes'2.(\fz\> 
@@ -580,14 +625,14 @@ MvtUnClarinettiAII = \relative c {
 	    b8) r d2->(\fz
 	    c4) bes!-. a-. \mark \default
 	    bes r r
-	    R2.*7
+	    R2.*5
 	    
 % mesures 96 à 100
 	    
 	    
 	    
-	    
-	    
+	    \new CueVoice { \set instrumentCueName = "Fluto I"}
+	    \cueDuring #"fluteA" #UP {R2.*2}
 % mesures 101 à 105
 	    bes4\p\<( f4. b8)(
 	    c8. d16) ees4.\>( e8)\!
@@ -613,13 +658,16 @@ MvtUnClarinettiAII = \relative c {
 	fis~
 	fis(
 	g4) r r
-	R2.*19
+	R2.*15
 % mesures 116 à 120
 	
 % mesures 121 à 125
 	
 % mesures 126 à 130
-	
+	\clef bass
+	\new CueVoice { \set instrumentCueName = "Fagot"}
+	\cueDuring #"fagotA" #UP {R2.*4}
+	\clef treble
 % mesures 131 à 135
 	
 	
@@ -726,7 +774,7 @@ MvtUnClarinettiAII = \relative c {
 	cis~
 	cis( \mark \default
 	d4) r r
-	R2.*19
+	R2.*16
 	
 % mesures 221 à 225
 	
@@ -735,8 +783,8 @@ MvtUnClarinettiAII = \relative c {
 % mesures 231 à 235
 	
 % mesures 236 à 240
-	
-	
+	\new CueVoice { \set instrumentCueName = "Clarinet I"}
+	\cueDuring #"clarinetB" #UP {R2.*3}
 	c2.\<(~
 	c2\> b4)\!
 	g4( a4. bes!8)
@@ -787,7 +835,7 @@ MvtUnClarinettiAII = \relative c {
 	r a4 a a8
 	r g4 g g8
 	r g4 g g8
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	d'2.(\ff\>
 	g,4)\! r r
@@ -826,7 +874,7 @@ MvtUnClarinettiAII = \relative c {
 	g4) d'-. cis-. \mark \default
 % mesures 311 à 315
 	d r r
-	R2.*10
+	R2.*7
 	
 	
 	
@@ -834,11 +882,11 @@ MvtUnClarinettiAII = \relative c {
 	
 	
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Clarinet I"}
+	\cueDuring #"clarinetC" #UP {R2.*3 r4}
 % mesures 321 à 325
 	
-	r4 d2\ffz\>~
+	 d2\ffz\>~
 	d2.~\p
 	d\pp~
 	d~
