@@ -40,11 +40,11 @@
 %-----------------------------------------------------------------------
 globalMvtUn = {
 	\version "2.18.2"
-	\time 4/4
+	\time 3/4
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 80 
+	\tempo "Allegro moderato" 4 = 120 
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -59,8 +59,8 @@ globalMvtDeux = {
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_SchubertSymphonie8_Mvt1_05_Corni_D.ly"
-\include "02_SchubertSymphonie8_Mvt2_05_Corni_D.ly"
+\include "01_SchubertSymphonie8_Mvt1_05_CorniD_V.ly"
+\include "02_SchubertSymphonie8_Mvt2_05_CorniD.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -84,13 +84,13 @@ globalMvtDeux = {
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Corni I & II"
 			}
 		}
 	}
 	\score {
 		{
-			\new Staff << \globalMvtUn \MvtUnCorniD >>
+			\new Staff << \globalMvtUn \MvtUnCorniDI >>
 		}
 		\header {
 			breakbefore = ##t
@@ -107,7 +107,42 @@ globalMvtDeux = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtDeux \MvtDeuxCorniD >>
+			\new Staff << \globalMvtDeux \MvtDeuxCorniDI >>
+		}
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #5
+					II
+				}
+			}
+		}
+		\layout {
+			%system-count = #20
+			#(layout-set-staff-size 19)
+		}
+	}
+	\score {
+		{
+			\new Staff << \globalMvtUn \MvtUnCorniDII >>
+		}
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #5
+					I
+				}
+			}
+		}
+		\layout {
+			%system-count = #20
+			#(layout-set-staff-size 19)}
+	}
+	\score {
+		{
+			\new Staff << \globalMvtDeux \MvtDeuxCorniDII >>
 		}
 		\header {
 			breakbefore = ##t

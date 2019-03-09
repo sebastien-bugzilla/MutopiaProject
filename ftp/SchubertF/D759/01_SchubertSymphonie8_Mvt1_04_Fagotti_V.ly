@@ -6,6 +6,20 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   4               #
 %#######################################################################
+oboeNotesA = \relative c'' {
+    s2.*16
+    d2.(
+    e4 f4. e8)
+    d4( c2
+    d4) r
+}
+clarinetNotesA = \relative c'' {
+    s2.*50
+    r8 e4(-. e-. e8-.)
+    r ees([ d]) d4-.( d8-.)
+}
+\addQuote "oboeA" {\oboeNotesA}
+\addQuote "clarinetA" {\clarinetNotesA}
 MvtUnFagottiI = \relative c {
 	\clef bass
 	\key b \minor
@@ -13,19 +27,24 @@ MvtUnFagottiI = \relative c {
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Fagot I"
 	\set Staff.midiInstrument = #"bassoon"
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
 % mesures 6 à 10
-	    R2.*18
+	    R2.*15
 % mesures 11 à 15
 	
 % mesures 16 à 20
 	
 	
-	    
-	    
-	    r4 cis'2\fz\>~
+	    \clef treble
+	    \new CueVoice { \set instrumentCueName = "Oboe I"}
+	    \cueDuring #"oboeA" #UP {R2.*3 r4}
+	    \clef bass
+	     cis'2\fz\>~
 % mesures 21 à 25
 	    cis2.\p
 	    R2.*4
@@ -53,12 +72,13 @@ MvtUnFagottiI = \relative c {
 % mesures 41 à 45
 	    d4( e a)
 	    g\pp r r
-	    R2.*10
+	    R2.*8
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	    
-	    
+	    \clef treble
+	    \new CueVoice { \set instrumentCueName = "Clarinet I"}
+	    \cueDuring #"clarinetA" #UP {R2.*2}
 	    \clef bass r8 d4(-.\pp d-. d8-.)
 	    r d4(-. d-. d8-.)
 	    r d4-.( d-. d8-.)
@@ -70,7 +90,7 @@ MvtUnFagottiI = \relative c {
 	    r e4-.(_\decresc e-. e8-.)\!
 % mesures 61 à 65
 	    r ees[( d)] d4-.( d8-.)
-	    R2. \mark \default
+	    R2._\gp \mark \default
 	    g,2.\ffz\>~
 	    g4\! r r
 	    bes2.~\fz\>
@@ -320,7 +340,7 @@ MvtUnFagottiI = \relative c {
 	r aes[(-> g]) g4 g8
 	r g4 g g8
 	r fis!4 fis fis8
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	b2.\ff\>~
 	b4\! r r
@@ -435,19 +455,24 @@ MvtUnFagottiII = \relative c {
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Fagot II"
 	\set Staff.midiInstrument = #"bassoon"
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
 % mesures 6 à 10
-	    R2.*18
+	    R2.*15
 % mesures 11 à 15
 	
 % mesures 16 à 20
 	
 	
-	    
-	    
-	    r4 ais'2\fz\>~
+	    \clef treble
+	    \new CueVoice { \set instrumentCueName = "Oboe I"}
+	    \cueDuring #"oboeA" #UP {R2.*3 r4}
+	    \clef bass
+	    ais'2\fz\>~
 % mesures 21 à 25
 	    ais2.\p
 	    R2.*4
@@ -492,7 +517,7 @@ MvtUnFagottiII = \relative c {
 	    r c4-.(_\decresc c-. c8-.)\!
 % mesures 61 à 65
 	    r c4(-. c-. c8-.)
-	    R2. \mark \default
+	    R2._\gp \mark \default
 	    ees,2.\ffz\>~
 	    ees4\! r r
 	    g2.~\fz\>
@@ -742,7 +767,7 @@ MvtUnFagottiII = \relative c {
 	r f!4 f f8
 	r e4 e e8
 	r e4 e e8
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	g2.\ff\>~
 	g4\! r r

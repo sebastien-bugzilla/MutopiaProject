@@ -40,11 +40,11 @@
 %-----------------------------------------------------------------------
 globalMvtUn = {
 	\version "2.18.2"
-	\time 4/4
+	\time 3/4
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 80 
+	\tempo "Allegro moderato" 4 = 120 
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -59,7 +59,7 @@ globalMvtDeux = {
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_SchubertSymphonie8_Mvt1_04_Fagotti.ly"
+\include "01_SchubertSymphonie8_Mvt1_04_Fagotti_V.ly"
 \include "02_SchubertSymphonie8_Mvt2_04_Fagotti.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
@@ -84,13 +84,48 @@ globalMvtDeux = {
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Fagot I & II"
 			}
 		}
 	}
 	\score {
 		{
-			\new Staff << \globalMvtUn \MvtUnFagotti >>
+			\new Staff << \globalMvtUn \MvtUnFagottiI >>
+		}
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #5
+					I
+				}
+			}
+		}
+		\layout {
+			system-count = #26
+			#(layout-set-staff-size 19)}
+	}
+	\score {
+		{
+			\new Staff << \globalMvtDeux \MvtDeuxFagottiI >>
+		}
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #5
+					II
+				}
+			}
+		}
+		\layout {
+			%system-count = #20
+			#(layout-set-staff-size 19)
+		}
+	}
+	\score {
+		{
+			\new Staff << \globalMvtUn \MvtUnFagottiII >>
 		}
 		\header {
 			breakbefore = ##t
@@ -107,10 +142,10 @@ globalMvtDeux = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtDeux \MvtDeuxFagotti >>
+			\new Staff << \globalMvtDeux \MvtDeuxFagottiII >>
 		}
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5

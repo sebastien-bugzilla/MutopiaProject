@@ -6,6 +6,22 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   5               #
 %#######################################################################
+oboeNotesA = \relative c'' {
+    \transposition d
+    s2.*16
+    c2.(
+    d4 ees4. d8)
+    c4( b2
+    c4) r
+}
+violinNotesA = \relative c''' {
+    \transposition d
+    s2.*132
+    c2.(
+    b)
+}
+\addQuote "oboeA" {\oboeNotesA}
+\addQuote "violinA" {\violinNotesA}
 MvtUnCorniDI = \relative c {
 	\clef treble
 	\key a \minor
@@ -14,10 +30,13 @@ MvtUnCorniDI = \relative c {
 	\set Staff.instrumentName = #"Corni in D. I"
 	\set Staff.midiInstrument = #"french horn"
 	\transposition d
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*18
+	    R2.*15
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -25,9 +44,9 @@ MvtUnCorniDI = \relative c {
 % mesures 16 à 20
 	    
 	    
-	    
-	    
-	    r4 f''4.(\fz\> e8
+	    \new CueVoice { \set instrumentCueName = "Oboe I"}
+	    \cueDuring #"oboeA" #UP {R2.*3 r4}
+	     f''4.(\fz\> e8
 % mesures 21 à 25
 	    f4 e2)\p
 	    R2.
@@ -69,10 +88,10 @@ MvtUnCorniDI = \relative c {
 	    c c4 r8 r c~
 	    c d4 r8 r d~
 	    d d4 r8 r4
-	    R2.*3
+	    R2.*2
 % mesures 61 à 65
 	    
-	    \mark \default
+	    R2._\gp \mark \default
 	    f2.\ffz\>~
 	    f4\! r r
 	    c2.\fz\>~
@@ -143,7 +162,7 @@ MvtUnCorniDI = \relative c {
 	a~
 	a~
 	a4 r r
-	R2.*19
+	R2.*17
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -152,8 +171,8 @@ MvtUnCorniDI = \relative c {
 	
 % mesures 131 à 135
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Violino I"}
+	\cueDuring #"violinA" #UP {R2.*2}
 	d2.\f
 	e2( f4)
 % mesures 136 à 140
@@ -304,9 +323,9 @@ MvtUnCorniDI = \relative c {
 	g g4 r8 r g(
 	a) a4 r8 r a~
 	a a4 r8 r4
-	R2.*7
+	R2.*6
 % mesures 276 à 280
-	\mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	d2.\ff\>~
 	d4\! r r
@@ -419,10 +438,13 @@ MvtUnCorniDII = \relative c {
 	\set Staff.instrumentName = #"Corni in D. II"
 	\set Staff.midiInstrument = #"french horn"
 	\transposition d
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*18
+	    R2.*15
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -430,9 +452,9 @@ MvtUnCorniDII = \relative c {
 % mesures 16 à 20
 	    
 	    
-	    
-	    
-	    r4 d''2\fz\>~
+	    \new CueVoice { \set instrumentCueName = "Oboe I"}
+	    \cueDuring #"oboeA" #UP {R2.*3 r4}
+	     d''2\fz\>~
 % mesures 21 à 25
 	    d2.\p
 	    R2.*4
@@ -474,10 +496,10 @@ MvtUnCorniDII = \relative c {
 	    c c4 r8 r c'~
 	    c c4 r8 r c~
 	    c c4 r8 r4
-	    R2.*3
+	    R2.*2
 % mesures 61 à 65
 	    
-	    \mark \default
+	    R2._\gp \mark \default
 	    f2.\ffz\>~
 	    f4\! r r
 	    c2.\fz\>~
@@ -548,7 +570,7 @@ MvtUnCorniDII = \relative c {
 	a~
 	a~
 	a4 r r
-	R2.*19
+	R2.*17
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -557,8 +579,8 @@ MvtUnCorniDII = \relative c {
 	
 % mesures 131 à 135
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Violino I"}
+	\cueDuring #"violinA" #UP {R2.*2}
 	d2.\f
 	e2( f4)
 % mesures 136 à 140
@@ -709,9 +731,9 @@ MvtUnCorniDII = \relative c {
 	g g4 r8 r g'~
 	g g4 r8 r a~
 	a a4 r8 r4
-	R2.*7
+	R2.*6
 % mesures 276 à 280
-	\mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	d2.\ff\>~
 	d4\! r r
