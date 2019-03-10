@@ -10,6 +10,7 @@ MvtUnTromboni_basso = \relative c {
 	\clef bass
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Tromboni"
 	\set Staff.midiInstrument = #"trombone"
 	\set Score.alternativeNumberingStyle = #'numbers

@@ -10,6 +10,7 @@ MvtUnClarinettiAI = \relative c {
 	\clef treble
 	\key d \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Clarinetti I"
 	\set Staff.midiInstrument = #"clarinet"
 	\set Score.alternativeNumberingStyle = #'numbers
@@ -451,6 +452,7 @@ MvtUnClarinettiAII = \relative c {
 	\clef treble
 	\key d \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Clarinetti II"
 	\set Staff.midiInstrument = #"clarinet"
 	\set Score.alternativeNumberingStyle = #'numbers

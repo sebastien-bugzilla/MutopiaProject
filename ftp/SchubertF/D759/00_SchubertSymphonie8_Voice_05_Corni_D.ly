@@ -121,6 +121,7 @@ globalMvtDeux = {
 		\layout {
 			%system-count = #20
 			#(layout-set-staff-size 19)
+			
 		}
 	}
 	\score {

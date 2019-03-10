@@ -62,6 +62,7 @@ MvtUnOboeI = \relative c'' {
 	\clef treble
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Oboe I"
 	\set Staff.midiInstrument = #"oboe"
 	\set Score.alternativeNumberingStyle = #'numbers
@@ -464,6 +465,7 @@ MvtUnOboeII = \relative c'' {
 	\clef treble
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Oboe II"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event

@@ -10,6 +10,7 @@ MvtUnCorniDI = \relative c {
 	\clef treble
 	\key a \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Corni in D."
 	\set Staff.midiInstrument = #"french horn"
@@ -415,6 +416,7 @@ MvtUnCorniDII = \relative c {
 	\clef treble
 	\key a \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Corni in D."
 	\set Staff.midiInstrument = #"french horn"

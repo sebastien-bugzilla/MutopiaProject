@@ -10,6 +10,7 @@ MvtUnTimpaniEH = \relative c {
 	\clef bass
 	\key a \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Timpani in H.Fis"
 	%\set Staff.midiInstrument = #"timpani"
 	\set Score.alternativeNumberingStyle = #'numbers

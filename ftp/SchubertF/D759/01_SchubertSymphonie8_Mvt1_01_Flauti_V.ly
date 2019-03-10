@@ -80,6 +80,7 @@ MvtUnFlautoI = \relative c {
 	\clef treble
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Flauto I"
 	\set Staff.midiInstrument = #"flute"
@@ -494,6 +495,7 @@ MvtUnFlautoII = \relative c {
 	\clef treble
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.instrumentName = #"Flauto II"
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event

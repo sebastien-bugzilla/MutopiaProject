@@ -9,6 +9,7 @@
 MvtDeuxOboeI = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #""
 % mesures 1 à 5
 	
@@ -140,6 +141,7 @@ MvtDeuxOboeI = \relative c {
 MvtDeuxOboeII = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #""
 % mesures 1 à 5
 	

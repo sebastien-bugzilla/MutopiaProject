@@ -52,6 +52,7 @@ MvtUnClarinettiAI = \relative c {
 	\clef treble
 	%\key d \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = \markup {
 	    \center-column {
 	        "Clarinet I"
@@ -506,6 +507,7 @@ MvtUnClarinettiAII = \relative c {
 	\clef treble
 	%\key d \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = \markup {
 	    \center-column {
 	        "Clarinet II"

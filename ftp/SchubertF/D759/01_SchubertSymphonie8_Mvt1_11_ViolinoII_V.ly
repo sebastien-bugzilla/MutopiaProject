@@ -10,6 +10,7 @@ MvtUnViolinoII = \relative c {
 	\clef treble
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Violino II."
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Staff.midiInstrument = #"violin"

@@ -9,6 +9,7 @@
 MvtDeuxFagottiI = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #""
 % mesures 1 à 5
 	
@@ -140,6 +141,7 @@ MvtDeuxFagottiI = \relative c {
 MvtDeuxFagottiII = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
+	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #""
 % mesures 1 à 5
 	
