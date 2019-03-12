@@ -94,34 +94,34 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
-%			    \new Staff { \global \MvtUnFlautiII }
-%			    \new Staff { \global \MvtUnOboiII }
-			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
-%			    \new Staff { \global \MvtUnClarinettiAII }
-%			    \new Staff { \global \MvtUnClarinettiAI }
-			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
-%			    \new Staff { \global \MvtUn04_FagottiII }
-			    \new Staff { \global \partcombine \MvtUnFagottiI \MvtUnFagottiII }
-%			    \new Staff { \global \MvtUnCorniDII }
-			    \new Staff { \global \partcombine \MvtUnCorniDI \MvtUnCorniDII }
-%			    \new Staff { \global \MvtUnTrombeEII }
+%			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
+%%			    \new Staff { \global \MvtUnFlautiII }
+%%			    \new Staff { \global \MvtUnOboiII }
+%			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
+%%			    \new Staff { \global \MvtUnClarinettiAII }
+%%			    \new Staff { \global \MvtUnClarinettiAI }
+%			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
+%%			    \new Staff { \global \MvtUn04_FagottiII }
+%			    \new Staff { \global \partcombine \MvtUnFagottiI \MvtUnFagottiII }
+%%			    \new Staff { \global \MvtUnCorniDII }
+%			    \new Staff { \global \partcombine \MvtUnCorniDI \MvtUnCorniDII }
+%%			    \new Staff { \global \MvtUnTrombeEII }
 			    \new Staff { \global \partcombine \MvtUnTrombeEI \MvtUnTrombeEII }
-			    \new GrandStaff <<
-%			        \new Staff { \global \MvtUnTromboni_tenore }
-			        \new Staff { \global \partcombine \MvtUnTromboni_alto \MvtUnTromboni_tenore }
-			        \new Staff { \global \MvtUnTromboni_basso }
-		        >>
-		        \new Staff { \global \MvtUnTimpaniEH }
-		        \new GrandStaff <<
-			        \new Staff { \global \MvtUnViolinoI }
-			        \new Staff { \global \MvtUnViolinoII }
-		        >>
-		        \new Staff << \global \MvtUnViola >>
-		        \new GrandStaff <<
+%			    \new GrandStaff <<
+%%			        \new Staff { \global \MvtUnTromboni_tenore }
+%			        \new Staff { \global \partcombine \MvtUnTromboni_alto \MvtUnTromboni_tenore }
+%			        \new Staff { \global \MvtUnTromboni_basso }
+%		        >>
+%		        \new Staff { \global \MvtUnTimpaniEH }
+%		        \new GrandStaff <<
+%			        \new Staff { \global \MvtUnViolinoI }
+%			        \new Staff { \global \MvtUnViolinoII }
+%		        >>
+%		        \new Staff << \global \MvtUnViola >>
+%		        \new GrandStaff <<
 			        \new Staff << \global \MvtUnVioloncello >>
-			        \new Staff << \global \MvtUnBasso >>
-		        >>
+%			        \new Staff << \global \MvtUnBasso >>
+%		        >>
 			>>
 		>>
 		\header {
@@ -134,9 +134,9 @@ global = {
 			}
 		}
 	}
-%	\score {
-%	    <<
-%	        \new StaffGroup <<
+	\score {
+	    <<
+	        \new StaffGroup <<
 %			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
 %			    \new Staff { \global \MvtUnFlautiI }
 %			    \new Staff { \global \MvtUnOboiI }
@@ -148,7 +148,8 @@ global = {
 %			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
 %			    \new Staff { \global \MvtUnFagottiI }
 %			    \new Staff { \global \MvtUnCorniD }
-%			    \new Staff { \global \MvtUnTrombeE }
+			    \new Staff { \global \MvtUnTrombeEI }
+			    \new Staff { \global \MvtUnTrombeEII }
 %			    \new GrandStaff <<
 %			        \new Staff { \global \MvtUnVoixSept }
 %			        \new Staff { \global \MvtUnTromboniBasso }
@@ -160,18 +161,18 @@ global = {
 %		        >>
 %		        \new Staff << \global \MvtUnViola >>
 %		        \new GrandStaff <<
-%			        \new Staff << \global \MvtUnVioloncello >>
+			        \new Staff << \global \MvtUnVioloncello >>
 %			        \new Staff << \global \MvtUnBasso >>
 %		        >>
-%			>>
-%		>>
-%		\midi {
-%		    \tempo 2 = 85
-%			\context {
-%			    \Score
-%			    midiMinimumVolume = #0.8
-%				midiMaximumVolume = #0.9
-%			}
-%		}
-%	}
+			>>
+		>>
+		\midi {
+		    \tempo 2 = 85
+			\context {
+			    \Score
+			    midiMinimumVolume = #0.8
+				midiMaximumVolume = #0.9
+			}
+		}
+	}
 }

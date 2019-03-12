@@ -14,7 +14,7 @@ MvtUnTrombeEI = \relative c {
 	\set Staff.instrumentName = #"Trombe in E."
 	\set Staff.midiInstrument = #"trumpet"
 	\set Score.alternativeNumberingStyle = #'numbers
-	\transposition d
+	\transposition e
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
@@ -313,7 +313,7 @@ MvtUnTrombeEII = \relative c {
 	\set Staff.instrumentName = #"Trombe in E."
 	\set Staff.midiInstrument = #"trumpet"
 	\set Score.alternativeNumberingStyle = #'numbers
-	\transposition d
+	\transposition e
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

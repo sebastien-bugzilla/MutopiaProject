@@ -6,6 +6,56 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   10               #
 %#######################################################################
+celloNotesA = \relative c {
+    s2.
+    cis2( d4)
+    b2.( 
+    a4 fis g)
+    d2( cis4
+    fis2.)~
+    fis~
+    fis
+}
+celloNotesB = \relative c' {
+    s2.*50
+    a4( e4. gis8)
+    a4( d, e8 fis)
+}
+celloNotesC = \relative c {
+    s2.*118
+    g2.(
+    fis
+    e
+    d)
+}
+celloNotesD = \relative c' {
+    s2.*265
+    e4( b4. dis8)
+    e4( a, b8 cis)
+}
+celloNotesE = \relative c' {
+    s2.*291
+    eis8.( fis16 gis8[ cis, dis eis])
+}
+celloNotesF = \relative c' {
+    s2.*336
+    b2.(
+    cis2 d4)
+}
+celloNotesG = \relative c' {
+    s2.*360
+    b2.(
+    cis2 d4)
+    b2.(
+    cis2 d4)
+}
+\addQuote "celloA" {\celloNotesA}
+\addQuote "celloB" {\celloNotesB}
+\addQuote "celloC" {\celloNotesC}
+\addQuote "celloD" {\celloNotesD}
+\addQuote "celloE" {\celloNotesE}
+\addQuote "celloF" {\celloNotesF}
+\addQuote "celloG" {\celloNotesG}
 MvtUnViolinoI = \relative c {
 	\clef treble
 	\key b \minor
@@ -18,16 +68,18 @@ MvtUnViolinoI = \relative c {
                                       beam-event tuplet-span-event
                                       dynamic-event slur-event)
 % mesures 1 à 5
-	R2.
+	R2.*1
 	\repeat volta 2 {
-	    R2.*7
+	    \clef bass
+	    \new CueVoice { \set instrumentCueName = "Basse"}
+	    \cueDuring #"celloA" #DOWN {R2.*7}
 	    
 	    
 	    
 % mesures 6 à 10
 	    
 	    
-	    
+	    \clef treble
 	    fis'16\pp fis eis eis fis fis d d e e fis fis
 	    g g fis fis g g ais ais b b cis cis
 % mesures 11 à 15
@@ -64,15 +116,17 @@ MvtUnViolinoI = \relative c {
 	    q4 r8 q8 q4
 	    r8 q q4 q8 q \mark \default
 	    <d b'>4\fz r r
-	    R2.*14
+	    R2.*12
 	    
 % mesures 41 à 45
 	
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	    
-	    
+	    \clef bass
+	    \new CueVoice { \set instrumentCueName = "Vc."}
+	    \cueDuring #"celloB" #UP {R2.*2}
+	    \clef treble
 	    g4(\pp d4. g8
 	    fis8. g16 a4. g8)
 	    fis8.( g16 a8[ d, e fis])
@@ -84,7 +138,7 @@ MvtUnViolinoI = \relative c {
 	    a4(_\decresc e4.\! gis8)
 % mesures 61 à 65
 	    a4( d, e8 fis)
-	    R2. \mark \default
+	    R2._\gp \mark \default
 	    c,2.:32\ffz\>
 	    c4\! r r
 	    d2.:32\fz\>
@@ -155,15 +209,14 @@ MvtUnViolinoI = \relative c {
 	a r r
 	fis r r
 	e r r
-	R2.*7
+	R2.*3
 % mesures 116 à 120
 	
-	
-	
-	
-	
+	\clef bass
+	\new CueVoice { \set instrumentCueName = "Basse"}
+	\cueDuring #"celloC" #DOWN {R2.*4}
 % mesures 121 à 125
-	
+	\clef treble
 	e'2.(\pp^\arco\<
 	fis2 g4)
 	b2.(\>
@@ -321,12 +374,15 @@ MvtUnViolinoI = \relative c {
 % mesures 251 à 255
 	r8 q-. q4-. q8-. q-. \mark \default
 	<cis a'>4\fz r r
-	R2.*14
+	R2.*12
 	
 % mesures 256 à 260
 	
 % mesures 261 à 265
-	
+	\clef bass
+	\new CueVoice { \set instrumentCueName = "Vc."}
+	\cueDuring #"celloD" #UP {R2.*2}
+	\clef treble
 % mesures 266 à 270
 	
 	d4(\pp a4. d8)
@@ -344,7 +400,7 @@ MvtUnViolinoI = \relative c {
 	d4 g, a8 b)
 	c4( g4. b8
 	ais4 fis gis8 ais)
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	e2.:32\ff\>
 	e4\! r r
@@ -356,9 +412,10 @@ MvtUnViolinoI = \relative c {
 	eis: fis: g:
 	ais: b: cis:
 	d4\fz r r
-	R2.*2
+	R2.*1
 % mesures 291 à 295
-	
+	\new CueVoice { \set instrumentCueName = "Vc."}
+	\cueDuring #"celloE" #DOWN {R2.*1}
 	a8.(\p b16 cis8[ fis, gis a]
 	b4) r r
 	gis8.( a16 b8[ e, fis gis])
@@ -403,7 +460,7 @@ MvtUnViolinoI = \relative c {
 	d r r 
 	cis r r
 	b r r
-	R2.*9
+	R2.*7
 	
 % mesures 331 à 335
 	
@@ -412,8 +469,8 @@ MvtUnViolinoI = \relative c {
 	
 	
 % mesures 336 à 340
-	
-	
+	\new CueVoice { \set instrumentCueName = "Vc."}
+	\cueDuring #"celloF" #DOWN {R2.*2}
 	b'2.(\p^\arco
 	cis2 d4)
 	fis2.(\>
@@ -440,9 +497,10 @@ MvtUnViolinoI = \relative c {
 	cis2 d4)
 	b2.(\>
 	cis2 d4)\!
-	b4 r r
+	\new CueVoice { \set instrumentCueName = "Vc."}
+	\cueDuring #"celloG" #DOWN {b4 r r R2.*3}
 % mesures 361 à 365
-	R2.*3
+	
 	
 	
 	<d,, b' fis'>4\ff r r

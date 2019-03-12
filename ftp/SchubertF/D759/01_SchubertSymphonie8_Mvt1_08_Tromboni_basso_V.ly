@@ -6,6 +6,26 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   8               #
 %#######################################################################
+oboeNotesA = \relative c'' {
+    s2.*17
+    e4( f4. e8)
+    d4( cis2
+    d4)
+}
+fagotNotesA = \relative c' {
+    s2.*132
+    gis2.~
+    gis4( a b)
+}
+flautoNotesA = \relative c''' {
+    s2.*240
+    a2.~
+    a2~ a8( b)
+    b2
+}
+\addQuote "oboeA" {\oboeNotesA}
+\addQuote "fagotA" {\fagotNotesA}
+\addQuote "flautoA" {\flautoNotesA}
 MvtUnTromboni_basso = \relative c {
 	\clef bass
 	\key b \minor
@@ -14,10 +34,13 @@ MvtUnTromboni_basso = \relative c {
 	\set Staff.instrumentName = #"Tromboni"
 	\set Staff.midiInstrument = #"trombone"
 	\set Score.alternativeNumberingStyle = #'numbers
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*18
+	    R2.*16
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -25,9 +48,11 @@ MvtUnTromboni_basso = \relative c {
 % mesures 16 à 20
 	    
 	    
-	    
-	    
-	    r4 fis,\fz r
+	    \clef treble
+	    \new CueVoice { \set instrumentCueName = "Ob. I"}
+	    \cueDuring #"oboeA" #UP {R2.*2 r4}
+	    \clef bass
+	     fis,\fz r
 % mesures 21 à 25
 	    R2.*7
 % mesures 26 à 30
@@ -42,7 +67,7 @@ MvtUnTromboni_basso = \relative c {
 	    fis4 r fis
 	    r fis4. fis8 \mark \default
 	    b,4\fz r r
-	    R2.*24
+	    R2.*23
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -53,7 +78,7 @@ MvtUnTromboni_basso = \relative c {
 	
 % mesures 61 à 65
 	    
-	    \mark \default
+	    R2._\gp \mark \default
 	    c2.\ffz\>~
 	    c4\! r r
 	    d2.\fz\>~
@@ -117,7 +142,7 @@ MvtUnTromboni_basso = \relative c {
 	b~
 	b(
 	e4) r r
-	R2.*19
+	R2.*17
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -125,8 +150,8 @@ MvtUnTromboni_basso = \relative c {
 % mesures 126 à 130
 	
 % mesures 131 à 135
-	
-	
+	\new CueVoice { \set instrumentCueName = "Fagot"}
+	\cueDuring #"fagotA" #UP {R2.*2}
 	
 	fis2\fz-> r4
 	r fis2\fz->
@@ -223,7 +248,7 @@ MvtUnTromboni_basso = \relative c {
 % mesures 216 à 220
 	
 	\mark \default
-	R2.*24
+	R2.*22
 % mesures 221 à 225
 	
 % mesures 226 à 230
@@ -233,8 +258,11 @@ MvtUnTromboni_basso = \relative c {
 % mesures 236 à 240
 	
 % mesures 241 à 245
-	
-	r4 r cis,\f-.
+	\clef treble
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"flautoA" #UP {R2.*2 r4 r}
+	\clef bass
+	cis,\f-.
 	cis\fz-. r r
 	R2.*6
 	
@@ -247,7 +275,7 @@ MvtUnTromboni_basso = \relative c {
 % mesures 251 à 255
 	r cis4. cis8 \mark \default
 	fis,4\fz r r
-	R2.*28
+	R2.*27
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -261,7 +289,7 @@ MvtUnTromboni_basso = \relative c {
 	
 	
 	
-	\mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	e'2.\ff\>~
 	e4\! r r

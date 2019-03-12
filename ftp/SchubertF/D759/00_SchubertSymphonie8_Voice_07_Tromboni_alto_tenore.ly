@@ -40,11 +40,11 @@
 %-----------------------------------------------------------------------
 globalMvtUn = {
 	\version "2.18.2"
-	\time 4/4
+	\time 3/4
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 80 
+	\tempo "Allegro moderato" 4 = 120 
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -59,7 +59,7 @@ globalMvtDeux = {
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_SchubertSymphonie8_Mvt1_07_Tromboni_alto_tenore.ly"
+\include "01_SchubertSymphonie8_Mvt1_07_Tromboni_alto_tenore_V.ly"
 \include "02_SchubertSymphonie8_Mvt2_07_Tromboni_alto_tenore.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
@@ -84,13 +84,13 @@ globalMvtDeux = {
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Tromboni I & II"
 			}
 		}
 	}
 	\score {
 		{
-			\new Staff << \globalMvtUn \MvtUnVoixSept >>
+			\new Staff << \globalMvtUn \MvtUnTromboni_alto >>
 		}
 		\header {
 			breakbefore = ##t
@@ -107,7 +107,42 @@ globalMvtDeux = {
 	}
 	\score {
 		{
-			\new Staff << \globalMvtDeux \MvtDeuxVoixSept >>
+			\new Staff << \globalMvtDeux \MvtDeuxTromboni_alto >>
+		}
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #5
+					II
+				}
+			}
+		}
+		\layout {
+			%system-count = #20
+			#(layout-set-staff-size 19)
+		}
+	}
+	\score {
+		{
+			\new Staff << \globalMvtUn \MvtUnTromboni_tenore >>
+		}
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #5
+					I
+				}
+			}
+		}
+		\layout {
+			%system-count = #20
+			#(layout-set-staff-size 19)}
+	}
+	\score {
+		{
+			\new Staff << \globalMvtDeux \MvtDeuxTromboni_altoI >>
 		}
 		\header {
 			breakbefore = ##t

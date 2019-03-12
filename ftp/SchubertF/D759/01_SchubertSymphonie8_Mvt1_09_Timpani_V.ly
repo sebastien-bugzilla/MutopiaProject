@@ -6,6 +6,27 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   9               #
 %#######################################################################
+flautoNotesA = \relative c'' {
+    s2.*25
+    d2.~
+    d2~ d8( e)
+    e2
+}
+flautoNotesB = \relative c'''' {
+    s2.*138
+    g2( fis4)
+    e2( g4)
+}
+hornNotesA = \relative c'' {
+    s2.*229
+    fis4( g4. fis8
+    g4 fis2)(
+    e4) r r
+}
+
+\addQuote "flautoA" {\flautoNotesA}
+\addQuote "flautoB" {\flautoNotesB}
+\addQuote "hornA" {\hornNotesA}
 MvtUnTimpaniEH = \relative c {
 	\clef bass
 	\key a \minor
@@ -14,10 +35,13 @@ MvtUnTimpaniEH = \relative c {
 	\set Staff.instrumentName = #"Timpani in H.Fis"
 	%\set Staff.midiInstrument = #"timpani"
 	\set Score.alternativeNumberingStyle = #'numbers
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*26
+	    R2.*24
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -27,9 +51,11 @@ MvtUnTimpaniEH = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	    
-	    
-	    r4 r f\fz
+	    \clef treble
+	    \new CueVoice { \set instrumentCueName = "Fl. I"}
+	    \cueDuring #"flautoA" #UP {R2.*2 r4 r}
+	    \clef bass
+	     f\fz
 	    f\fz r r
 	    R2.*5
 % mesures 31 à 35
@@ -42,7 +68,7 @@ MvtUnTimpaniEH = \relative c {
 	    f4 r8 f f4
 	    r8 f f4 f8 f \mark \default
 	    b,4\fz r r
-	    R2.*24
+	    R2.*23
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -53,7 +79,7 @@ MvtUnTimpaniEH = \relative c {
 	
 % mesures 61 à 65
 	    
-	    \mark \default
+	    R2._\gp \mark \default
 	    R2.*22
 % mesures 66 à 70
 	
@@ -66,15 +92,15 @@ MvtUnTimpaniEH = \relative c {
 	    
 	    
 	    
-	    r4 b4:16\fz b8 r
+	    r4 b16\fz b b b b8 r
 % mesures 86 à 90
 	    R2.
-	    r4 b4:16\fz b8 r
+	    r4 b16\fz b b b b8 r
 	    R2.
-	    r4 b4:16\fz b8 r
+	    r4 b16\fz b b b b8 r
 	    R2.
 % mesures 91 à 95
-	    r4 b4:16\fz b8 r
+	    r4 b16\fz b b b b8 r
 	    r4 b f' \mark \default
 	    b, r r
 	    R2.*10
@@ -98,7 +124,7 @@ MvtUnTimpaniEH = \relative c {
 	}
 % mesures 111 à 115
 	b4\! r r
-	R2.*30
+	R2.*26
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -108,7 +134,11 @@ MvtUnTimpaniEH = \relative c {
 % mesures 131 à 135
 	
 % mesures 136 à 140
-	
+	\clef treble
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"flautoB" #UP {R2.*2}
+	\clef bass
+	R2.*2
 % mesures 141 à 145
 	
 	f'4 r r
@@ -171,11 +201,15 @@ MvtUnTimpaniEH = \relative c {
 % mesures 216 à 220
 	
 	\mark \default
-	R2.*24
+	R2.*11
 % mesures 221 à 225
 	
 % mesures 226 à 230
-	
+	\clef treble
+	\new CueVoice { \set instrumentCueName = "Hr. I"}
+	\cueDuring #"hornA" #UP {R2.*3}
+	\clef bass
+	R2.*10
 % mesures 231 à 235
 	
 % mesures 236 à 240
@@ -194,7 +228,7 @@ MvtUnTimpaniEH = \relative c {
 % mesures 251 à 255
 	r8 b b4 b8 b \mark \default
 	f'4\fz r r
-	R2.*28
+	R2.*27
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -208,7 +242,7 @@ MvtUnTimpaniEH = \relative c {
 	
 	
 	
-	\mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	b,2.:32\ff\>
 	b4\! r r
@@ -230,7 +264,7 @@ MvtUnTimpaniEH = \relative c {
 	b4\fz r r
 	b r r
 % mesures 301 à 305
-	b\fz r r
+	b\fz r7 r
 	b r r
 	b8 r b2:16\fz
 	b8 r b2:16\fz
