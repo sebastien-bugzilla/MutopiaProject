@@ -44,7 +44,7 @@ global = {
 %	\key b \minor
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Allegro moderato" 4 = 120 
+	\tempo "Allegro moderato"
 	#(set-global-staff-size 12)
 	\set Score.doubleRepeatType = #":|.|:"
 }
@@ -94,34 +94,34 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-%			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
-%%			    \new Staff { \global \MvtUnFlautiII }
-%%			    \new Staff { \global \MvtUnOboiII }
-%			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
-%%			    \new Staff { \global \MvtUnClarinettiAII }
-%%			    \new Staff { \global \MvtUnClarinettiAI }
-%			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
-%%			    \new Staff { \global \MvtUn04_FagottiII }
-%			    \new Staff { \global \partcombine \MvtUnFagottiI \MvtUnFagottiII }
-%%			    \new Staff { \global \MvtUnCorniDII }
-%			    \new Staff { \global \partcombine \MvtUnCorniDI \MvtUnCorniDII }
-%%			    \new Staff { \global \MvtUnTrombeEII }
+			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
+%			    \new Staff { \global \MvtUnFlautiII }
+%			    \new Staff { \global \MvtUnOboiII }
+			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
+%			    \new Staff { \global \MvtUnClarinettiAII }
+%			    \new Staff { \global \MvtUnClarinettiAI }
+			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
+%			    \new Staff { \global \MvtUn04_FagottiII }
+			    \new Staff { \global \partcombine \MvtUnFagottiI \MvtUnFagottiII }
+%			    \new Staff { \global \MvtUnCorniDII }
+			    \new Staff { \global \partcombine \MvtUnCorniDI \MvtUnCorniDII }
+%			    \new Staff { \global \MvtUnTrombeEII }
 			    \new Staff { \global \partcombine \MvtUnTrombeEI \MvtUnTrombeEII }
-%			    \new GrandStaff <<
-%%			        \new Staff { \global \MvtUnTromboni_tenore }
-%			        \new Staff { \global \partcombine \MvtUnTromboni_alto \MvtUnTromboni_tenore }
-%			        \new Staff { \global \MvtUnTromboni_basso }
-%		        >>
-%		        \new Staff { \global \MvtUnTimpaniEH }
-%		        \new GrandStaff <<
-%			        \new Staff { \global \MvtUnViolinoI }
-%			        \new Staff { \global \MvtUnViolinoII }
-%		        >>
-%		        \new Staff << \global \MvtUnViola >>
-%		        \new GrandStaff <<
+			    \new GrandStaff <<
+%			        \new Staff { \global \MvtUnTromboni_tenore }
+			        \new Staff { \global \partcombine \MvtUnTromboni_alto \MvtUnTromboni_tenore }
+			        \new Staff { \global \MvtUnTromboni_basso }
+		        >>
+		        \new Staff { \global \MvtUnTimpaniEH }
+		        \new GrandStaff <<
+			        \new Staff { \global \MvtUnViolinoI }
+			        \new Staff { \global \MvtUnViolinoII }
+		        >>
+		        \new Staff << \global \MvtUnViola >>
+		        \new GrandStaff <<
 			        \new Staff << \global \MvtUnVioloncello >>
-%			        \new Staff << \global \MvtUnBasso >>
-%		        >>
+			        \new Staff << \global \MvtUnBasso >>
+		        >>
 			>>
 		>>
 		\header {
@@ -137,33 +137,27 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-%			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
-%			    \new Staff { \global \MvtUnFlautiI }
-%			    \new Staff { \global \MvtUnOboiI }
-%			    \new Staff { \global \MvtUnFlautiII }
-%			    \new Staff { \global \MvtUnOboiII }
-%			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
-%			    \new Staff { \global \MvtUnClarinettiAI }
-%			    \new Staff { \global \MvtUnClarinettiAII }
-%			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
-%			    \new Staff { \global \MvtUnFagottiI }
-%			    \new Staff { \global \MvtUnCorniD }
+			    \new Staff { \global \MvtUnFlautiI }
+			    \new Staff { \global \MvtUnFlautiII }
+			    \new Staff { \global \MvtUnOboiI }
+			    \new Staff { \global \MvtUnOboiII }
+			    \new Staff { \global \MvtUnClarinettiAI }
+			    \new Staff { \global \MvtUnClarinettiAII }
+			    \new Staff { \global \MvtUnFagottiI }
+			    \new Staff { \global \MvtUnFagottiII }
+			    \new Staff { \global \MvtUnCorniDI }
+			    \new Staff { \global \MvtUnCorniDII }
 			    \new Staff { \global \MvtUnTrombeEI }
 			    \new Staff { \global \MvtUnTrombeEII }
-%			    \new GrandStaff <<
-%			        \new Staff { \global \MvtUnVoixSept }
-%			        \new Staff { \global \MvtUnTromboniBasso }
-%		        >>
-%		        \new Staff { \global \MvtUnTimpaniEH }
-%		        \new GrandStaff <<
-%			        \new Staff { \global \MvtUnViolinoI }
-%			        \new Staff { \global \MvtUnViolinoII }
-%		        >>
-%		        \new Staff << \global \MvtUnViola >>
-%		        \new GrandStaff <<
-			        \new Staff << \global \MvtUnVioloncello >>
-%			        \new Staff << \global \MvtUnBasso >>
-%		        >>
+		        \new Staff { \global \MvtUnTromboni_alto }
+		        \new Staff { \global \MvtUnTromboni_tenore }
+			    \new Staff { \global \MvtUnTromboni_basso }
+		        \new Staff { \global \MvtUnTimpaniEH }
+			    \new Staff { \global \MvtUnViolinoI }
+			    \new Staff { \global \MvtUnViolinoII }
+		        \new Staff { \global \MvtUnViola }
+			    \new Staff { \global \MvtUnVioloncello }
+			    \new Staff { \global \MvtUnBasso }
 			>>
 		>>
 		\midi {

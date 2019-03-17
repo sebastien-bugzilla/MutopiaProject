@@ -35,9 +35,9 @@ MvtUnVioloncello = \relative c {
 	    b4 r8 b[ b b]
 % mesures 16 à 20
 	    b4 r8 b[ b g]
-	    d4 r8 d[ d d]
+	    d4 r8 d'[ d d]
 	    g4\< r8 g[\> g gis]\!
-	    a4 r8 a[ a a]
+	    a4 r8 a,[ a a]
 	    d r fis,4\fz^\arco r
 % mesures 21 à 25
 	    r r8 fis^\pizz\p[ fis fis]
@@ -89,7 +89,7 @@ MvtUnVioloncello = \relative c {
 	    r a(_\decresc e)\!
 % mesures 61 à 65
 	    r a( d,)
-	    R2. \mark \default
+	    R2._\gp \mark \default
 	    c2.:32\ffz\>
 	    c4\! r r
 	    d2.:32\fz\>
@@ -358,7 +358,7 @@ MvtUnVioloncello = \relative c {
 	r d( g,)
 	r c( g)
 	r cis!( fis,)
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	e'2.:16\ff\>
 	e4\! r r

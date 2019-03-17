@@ -35,9 +35,9 @@ MvtUnVioloncello = \relative c {
 	    b4 r8 b[ b b]
 % mesures 16 à 20
 	    b4 r8 b[ b g]
-	    d4 r8 d[ d d]
+	    d4 r8 d'[ d d]
 	    g4\< r8 g[\> g gis]\!
-	    a4 r8 a[ a a]
+	    a4 r8 a,[ a a]
 	    d r fis,4\fz^\arco r
 % mesures 21 à 25
 	    r r8 fis^\pizz\p[ fis fis]

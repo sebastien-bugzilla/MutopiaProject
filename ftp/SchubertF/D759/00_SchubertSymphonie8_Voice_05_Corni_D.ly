@@ -44,7 +44,7 @@ globalMvtUn = {
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Allegro moderato" 4 = 120 
+	\tempo "Allegro moderato" 
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
