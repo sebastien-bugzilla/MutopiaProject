@@ -6,6 +6,51 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   11               #
 %#######################################################################
+celloNotesA = \relative c {
+    s2.
+    cis2( d4)
+    b2.( 
+    a4 fis g)
+    d2( cis4
+    fis2.)~
+    fis~
+    fis
+}
+celloNotesB = \relative c' {
+    s2.*50
+    a4( e4. gis8)
+    a4( d, e8 fis)
+}
+celloNotesC = \relative c {
+    s2.*118
+    g2.(
+    fis
+    e
+    d)
+}
+celloNotesD = \relative c' {
+    s2.*265
+    e4( b4. dis8)
+    e4( a, b8 cis)
+}
+celloNotesE = \relative c' {
+    s2.*336
+    b2.(
+    cis2 d4)
+}
+celloNotesF = \relative c' {
+    s2.*360
+    b2.(
+    cis2 d4)
+    b2.(
+    cis2 d4)
+}
+\addQuote "celloA" {\celloNotesA}
+\addQuote "celloB" {\celloNotesB}
+\addQuote "celloC" {\celloNotesC}
+\addQuote "celloD" {\celloNotesD}
+\addQuote "celloE" {\celloNotesE}
+\addQuote "celloF" {\celloNotesF}
 MvtUnViolinoII = \relative c {
 	\clef treble
 	\key b \minor
@@ -20,11 +65,13 @@ MvtUnViolinoII = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*7
+	    \clef bass
+	    \new CueVoice { \set instrumentCueName = "Basse"}
+	    \cueDuring #"celloA" #DOWN {R2.*7}
 % mesures 6 à 10
 	    
 	    
-	    
+	    \clef treble
 	    d'16\pp d cis cis d d b b cis cis d d
 	    e e dis dis e e cis cis d d e e 
 % mesures 11 à 15
@@ -61,11 +108,14 @@ MvtUnViolinoII = \relative c {
 	    q4 r8 q q4
 	    r8 q q4 q8 q \mark \default
 	    <d fis>4\fz r r
-	    R2.*14 
+	    R2.*12 
 % mesures 41 à 45
 	
 % mesures 46 à 50
-	
+	    \clef bass
+	    \new CueVoice { \set instrumentCueName = "Vc."}
+	    \cueDuring #"celloB" #UP {R2.*2}
+	    \clef treble
 % mesures 51 à 55
 	    
 	    
@@ -80,7 +130,7 @@ MvtUnViolinoII = \relative c {
 	    a4(_\decresc e4.\! gis8)
 % mesures 61 à 65
 	    a4( d, e8 fis)
-	    R2. \mark \default
+	    R2._\gp \mark \default
 	    g,2.:32\ffz\>
 	    g4\! r r
 	    bes2.:32\fz\>
@@ -151,15 +201,17 @@ MvtUnViolinoII = \relative c {
 	a r r
 	fis r r
 	e r r
-	R2.*7
+	R2.*3
 % mesures 116 à 120
 	
 	
 	
-	
+	\clef bass
+	\new CueVoice { \set instrumentCueName = "Basse"}
+	\cueDuring #"celloC" #DOWN {R2.*4}
 	
 % mesures 121 à 125
-	
+	\clef treble
 	e2.(\pp^\arco
 	fis2\< g4)
 	b2.(\>
@@ -193,7 +245,7 @@ MvtUnViolinoII = \relative c {
 	e2:\! cis4:
 	gis2.:\>
 	e2:\! cis4:
-	gis'4\p r r
+	gis'4\p-. r r
 % mesures 151 à 155
 	a-. r r
 	fis-. r r
@@ -317,11 +369,14 @@ MvtUnViolinoII = \relative c {
 % mesures 251 à 255
 	r8 q-. q4-. q8-. q-. \mark \default
 	<a fis'>4\fz r r
-	R2.*14
+	R2.*12
 % mesures 256 à 260
 	
 % mesures 261 à 265
-	
+	\clef bass
+	\new CueVoice { \set instrumentCueName = "Basse"}
+	\cueDuring #"celloD" #UP {R2.*2}
+	\clef treble
 % mesures 266 à 270
 	
 	d,4(\pp a4. d8)
@@ -336,10 +391,10 @@ MvtUnViolinoII = \relative c {
 	e4( a, b8 cis)
 % mesures 276 à 280
 	d!4 r r
-	R2.*4
+	R2.*3
 	
 	
-	\mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	b2.:32\ff\>
 	b4\! r r
@@ -398,9 +453,12 @@ MvtUnViolinoII = \relative c {
 	d r r
 	cis r r
 	b r r
-	R2.*9
+	R2.*7
 % mesures 331 à 335
-	
+	\clef bass
+	\new CueVoice { \set instrumentCueName = "Basse"}
+	\cueDuring #"celloE" #UP {R2.*2}
+	\clef treble
 % mesures 336 à 340
 	
 	b2.(\p^\arco

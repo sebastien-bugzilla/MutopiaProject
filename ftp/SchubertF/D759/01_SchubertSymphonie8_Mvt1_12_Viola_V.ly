@@ -6,6 +6,43 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   12               #
 %#######################################################################
+celloNotesA = \relative c {
+    s2.
+    cis2( d4)
+    b2.( 
+    a4 fis g)
+    d2( cis4
+    fis2.)~
+    fis~
+    fis
+}
+violinNotesA = \relative c''' {
+    s2.*59
+    a4( e4. gis8)
+    a4( d, e8 fis)
+}
+violinNotesB = \relative c'' {
+    s2.*122
+    e2.(
+    fis2 g4)
+}
+violinNotesC = \relative c'' {
+    s2.*273
+    dis8.( e16 fis8[ b, cis dis])
+    e4( b4. dis8)
+    e4( a, b8 cis)
+}
+violinNotesD = \relative c'' {
+    s2.*338
+    b2.(
+    cis2 d4)
+    fis2.
+}
+\addQuote "celloA" {\celloNotesA}
+\addQuote "violinA" {\violinNotesA}
+\addQuote "violinB" {\violinNotesB}
+\addQuote "violinC" {\violinNotesC}
+\addQuote "violinD" {\violinNotesD}
 MvtUnViola = \relative c {
 	\clef alto
 	\key b \minor
@@ -14,14 +51,19 @@ MvtUnViola = \relative c {
 	\set Staff.instrumentName = #"Viola"
 	\set Staff.midiInstrument = #"viola"
 	\set Score.alternativeNumberingStyle = #'numbers
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*7
+	    \clef bass
+	    \new CueVoice { \set instrumentCueName = "Basse"}
+	    \cueDuring #"celloA" #DOWN {R2.*7}
 % mesures 6 à 10
 	    
 	    
-	    
+	    \clef alto
 	    b'4^\pizz\pp r8 b[ b b]
 	    b4 r8 b[ b g]
 % mesures 11 à 15
@@ -76,12 +118,14 @@ MvtUnViola = \relative c {
 	    r <c e>4-.( q-. q8-.)
 	    r <<{ees8[( d)] d4-.( d8-.)} \\ {c4-.( c-. c8-.)}>>
 	    <b d>4 r r
-	    R2.*9
+	    R2.*6
 % mesures 56 à 60
-	
+	    \clef treble
+	    \new CueVoice { \set instrumentCueName = "Viol. I"}
+	    \cueDuring #"violinA" #UP {R2.*2}
 % mesures 61 à 65
-	    
-	    \mark \default
+	    \clef alto
+	    R2._\gp \mark \default
 	    ees,2.:32\ffz\>
 	    ees4\! r r
 	    g2.:32\fz\>
@@ -157,17 +201,17 @@ MvtUnViola = \relative c {
 	a r r
 	fis r r
 	e r r
-	R2.*9
+	R2.*7
 % mesures 116 à 120
 	
 	
-	
-	
-	
+	\clef treble
+	\new CueVoice { \set instrumentCueName = "Viol. I"}
+	\cueDuring #"violinB" #UP {R2.*2}
 % mesures 121 à 125
 	
 	
-	
+	\clef alto
 	e2.\pp(^\arco 
 	fis2\< g4)
 % mesures 126 à 130
@@ -323,7 +367,7 @@ MvtUnViola = \relative c {
 % mesures 251 à 255
 	r8 cis-. cis4-. cis8-. cis-. \mark \default
 	fis,4\fz r r
-	R2.*23
+	R2.*20
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -331,13 +375,16 @@ MvtUnViola = \relative c {
 % mesures 266 à 270
 	
 % mesures 271 à 275
-	
+	\clef treble
+	\new CueVoice { \set instrumentCueName = "Viol. I"}
+	\cueDuring #"violinC" #UP {R2.*3}
+	\clef alto
 % mesures 276 à 280
 	d'4(_\decresc a4.\! cis8
 	d4 g, a8 b)
 	c4( g4. b8
 	ais4 fis gis8 ais)
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	g!2.:16\ff\>
 	g4\! r r
@@ -401,11 +448,14 @@ MvtUnViola = \relative c {
 	d r r
 	cis r r
 	b r r
-	R2.*12
+	R2.*9
 % mesures 331 à 335
 	
 % mesures 336 à 340
-	
+	\clef treble
+	\new CueVoice { \set instrumentCueName = "Viol. I"}
+	\cueDuring #"violinD" #UP {R2.*3}
+	\clef alto
 % mesures 341 à 345
 	cis2.->^\arco(
 	b4) r r

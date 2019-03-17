@@ -193,7 +193,7 @@ MvtUnViolinoII = \relative c {
 	e2:\! cis4:
 	gis2.:\>
 	e2:\! cis4:
-	gis'4\p r r
+	gis'4\p-. r r
 % mesures 151 à 155
 	a-. r r
 	fis-. r r
