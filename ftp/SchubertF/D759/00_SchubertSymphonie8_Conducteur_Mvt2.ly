@@ -59,7 +59,7 @@ global = {
 \include "02_SchubertSymphonie8_Mvt2_07_Tromboni_alto_tenore.ly"
 \include "02_SchubertSymphonie8_Mvt2_08_Tromboni_basso.ly"
 \include "02_SchubertSymphonie8_Mvt2_09_Timpani.ly"
-\include "02_SchubertSymphonie8_Mvt2_10_ViolinoI.ly"
+\include "02_SchubertSymphonie8_Mvt2_10_ViolinoI_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_11_ViolinoII.ly"
 \include "02_SchubertSymphonie8_Mvt2_12_Viola.ly"
 \include "02_SchubertSymphonie8_Mvt2_13_Violoncello.ly"
