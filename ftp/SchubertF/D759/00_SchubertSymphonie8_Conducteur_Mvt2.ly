@@ -40,11 +40,11 @@
 %-----------------------------------------------------------------------
 global = {
 	\version "2.18.2"
-	\time 4/4
-	\key c \major
-	\set Score.markFormatter = #format-mark-box-numbers
+	\time 3/8
+	\key e \major
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 80 
+	\tempo "Andante con moto"
 	#(set-global-staff-size 19)
 	\set Score.doubleRepeatType = #":|.|:"
 }
@@ -52,10 +52,10 @@ global = {
 \include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "02_SchubertSymphonie8_Mvt2_01_Flauti.ly"
 \include "02_SchubertSymphonie8_Mvt2_02_Oboi.ly"
-\include "02_SchubertSymphonie8_Mvt2_03_Clarinetti_A.ly"
+\include "02_SchubertSymphonie8_Mvt2_03_ClarinettiA.ly"
 \include "02_SchubertSymphonie8_Mvt2_04_Fagotti.ly"
-\include "02_SchubertSymphonie8_Mvt2_05_Corni_D.ly"
-\include "02_SchubertSymphonie8_Mvt2_06_Trombe_E.ly"
+\include "02_SchubertSymphonie8_Mvt2_05_CorniD.ly"
+\include "02_SchubertSymphonie8_Mvt2_06_TrombeE.ly"
 \include "02_SchubertSymphonie8_Mvt2_07_Tromboni_alto_tenore.ly"
 \include "02_SchubertSymphonie8_Mvt2_08_Tromboni_basso.ly"
 \include "02_SchubertSymphonie8_Mvt2_09_Timpani.ly"
@@ -72,41 +72,41 @@ global = {
 		title = \markup { \fontsize #5 \sans 
 			\center-column {
 				\vspace #10
-				"Compositeur"
-				"Année Naissance - décés"
+				"Franz Schubert"
+				"1797 - 1828"
 			}
 		}
 		subtitle = \markup { 
 			\fontsize #5 \sans
 			\center-column {
 				\vspace #10
-				"Oeuvre"
-				"Opus - référence"
+				"Sinfonie Nr. 8 in h-moll"
+				"Die Unvollendete"
 			}
 		}
 		subsubtitle = \markup { \fontsize #3 \sans
 			\center-column {
 				\vspace #10
-				"Titre - Partie"
+				"Mouvement 2"
 			}
 		}
 	}
 	\score {
 		\new StaffGroup <<
-			\new Staff << \global \MvtDeuxFlauti >>
-			\new Staff << \global \MvtDeuxOboi >>
-			\new Staff << \global \MvtDeuxClarinettiA >>
-			\new Staff << \global \MvtDeuxFagotti >>
-			\new Staff << \global \MvtDeuxCorniD >>
-			\new Staff << \global \MvtDeuxTrombeE >>
-			\new Staff << \global \MvtDeuxVoixSept >>
-			\new Staff << \global \MvtDeuxTromboni_basso >>
-			\new Staff << \global \MvtDeuxTimpaniEH >>
+%			\new Staff << \global \MvtDeuxFlauti >>
+%			\new Staff << \global \MvtDeuxOboi >>
+%			\new Staff << \global \MvtDeuxClarinettiA >>
+%			\new Staff << \global \MvtDeuxFagotti >>
+%			\new Staff << \global \MvtDeuxCorniD >>
+%			\new Staff << \global \MvtDeuxTrombeE >>
+%			\new Staff << \global \MvtDeuxVoixSept >>
+%			\new Staff << \global \MvtDeuxTromboni_basso >>
+%			\new Staff << \global \MvtDeuxTimpaniEH >>
 			\new Staff << \global \MvtDeuxViolinoI >>
-			\new Staff << \global \MvtDeuxViolinoII >>
-			\new Staff << \global \MvtDeuxViola >>
-			\new Staff << \global \MvtDeuxVioloncello >>
-			\new Staff << \global \MvtDeuxBasso >>
+%			\new Staff << \global \MvtDeuxViolinoII >>
+%			\new Staff << \global \MvtDeuxViola >>
+%			\new Staff << \global \MvtDeuxVioloncello >>
+%			\new Staff << \global \MvtDeuxBasso >>
 		>>
 		\header {
 			breakbefore = ##t
@@ -115,4 +115,30 @@ global = {
 			%system-count = #20
 		}
 	}
+%	\score {
+%		\new StaffGroup <<
+%			\new Staff << \global \MvtDeuxFlauti >>
+%			\new Staff << \global \MvtDeuxOboi >>
+%			\new Staff << \global \MvtDeuxClarinettiA >>
+%			\new Staff << \global \MvtDeuxFagotti >>
+%			\new Staff << \global \MvtDeuxCorniD >>
+%			\new Staff << \global \MvtDeuxTrombeE >>
+%			\new Staff << \global \MvtDeuxVoixSept >>
+%			\new Staff << \global \MvtDeuxTromboni_basso >>
+%			\new Staff << \global \MvtDeuxTimpaniEH >>
+%			\new Staff << \global \MvtDeuxViolinoI >>
+%			\new Staff << \global \MvtDeuxViolinoII >>
+%			\new Staff << \global \MvtDeuxViola >>
+%			\new Staff << \global \MvtDeuxVioloncello >>
+%			\new Staff << \global \MvtDeuxBasso >>
+%		>>
+%		\midi {
+%		    \tempo 2 = 85
+%			\context {
+%			    \Score
+%			    midiMinimumVolume = #0.8
+%				midiMaximumVolume = #0.9
+%			}
+%		}
+%	}
 }
