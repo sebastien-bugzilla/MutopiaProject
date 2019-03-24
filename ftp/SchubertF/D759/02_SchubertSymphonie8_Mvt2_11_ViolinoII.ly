@@ -33,7 +33,7 @@ MvtDeuxViolinoII = \relative c'' {
 	dis(\< e fis\!
 	e4.)(
 	ais)(\fp\>
-	a)(
+	a)(\!
 % mesures 16 à 20
 	gis8) r r
 	R4.
@@ -48,8 +48,8 @@ MvtDeuxViolinoII = \relative c'' {
 	c
 % mesures 26 à 30
 	d8 b e)
-	dis4.\>
-	b'8( gis e
+	dis!4.\>
+	b'8(\! gis! e
 	b) r r
 	b'(\< cis16 b gis\> e
 % mesures 31 à 35
@@ -77,7 +77,7 @@ MvtDeuxViolinoII = \relative c'' {
 	
 	ais4.(\fp\>
 % mesures 51 à 55
-	<a b>)\!(
+	<a! b>)\!(
 	<gis b>8) r r
 	b,16( dis fis_\crescmarkup a gis fis
 	e8) r r
@@ -103,14 +103,14 @@ MvtDeuxViolinoII = \relative c'' {
 % mesures 71 à 75
 	fis) fis8 fis fis16(
 	a)\f\> a8 a a16~
-	a\p) a8 fis16( f) f~
+	a\p a8 fis16( f) f~
 	f\pp f8 f f16(
 	e) e8 e e16(
 % mesures 76 à 80
 	f) f8 f f16(
-	cis) cis8 cis cis16~
+	cis!) cis8 cis cis16~
 	cis_\dimmarkup cis8 cis cis16~
-	cis cis8 cis cis(
+	cis cis8 cis cis16(
 	e)\> e8 e e16\!(
 % mesures 81 à 85
 	fis) fis8 fis fis16(
@@ -139,27 +139,38 @@ MvtDeuxViolinoII = \relative c'' {
 % mesures 101 à 105
 	eis16 gis-. fis8-. fisis-.
 	gis-. <e, cis'>-. <fis bis>-.
-	<e cis'>32 gis cis b! a gis fis e gis fis e dis
-	cis gis' e' dis cis b a gis a gis fis e
-	fis gis a gis fis a dis cis bis a! gis fis
+	<e cis'>32[ gis cis b!] a[ gis fis e] gis[ fis e dis]
+	cis[ gis' e' dis] cis[ b a gis] a[ gis fis e]
+	fis[ gis a gis] fis[ a dis cis] bis[ a! gis fis]
 % mesures 106 à 110
-	e dis cis dis bis dis gis a gis fis e dis
-	cis dis e cis b! e gis a b d cis b
-	a gis fis eis cis' b a gis a g e! cis
+	e[ dis cis dis] bis[ dis gis a] gis[ fis e dis]
+	cis[ dis e cis] b![ e gis a] b[ d cis b]
+	a[ gis fis eis] cis'[ b a gis] a[ g e! cis]
 	a16\noBeam\fz <cis' e>8 q q16
 	<a g'>16 q8 q q16 \mark \default
-% mesures 111 à 115
-	<a fis'>16\noBeam <fis a>8\p q q16~
-	q q8 q q16~
-	q q8 q q16~
-	q q8 q q16(
-	<g a>) q8 q q16(
-% mesures 116 à 120
-	<<{a16) a8 a a16} \\ {e e8 e16 fis g}>>
-	<fis a>16 q8 q q16(
-	fis) fis8 fis16( g fis)
-	g\< g8 g( a16)
-	b\>( g fis)\!
+% mesures 111 à 118
+	<a fis'>16\noBeam <<{
+	    <fis a>8\p q q16~
+	    q q8 q q16~
+	    q q8 q q16~
+	    q q8 q q16(
+	    <g a>) q8 q q16(
+	    a16) a8 a a16(
+	    <fis a>16) q8 q q16(
+	    fis) fis8 fis16( g fis)
+	} \\ {
+	    s8 s s16
+	    s4.
+	    s
+	    s
+	    s
+	    e16 e8 e16 fis g
+	    s4.
+	    s
+	}>> 
+% mesures 119 à 120
+	g16\< g8 g( a16)
+	b8\>( g fis)\!
 % mesures 121 à 125
 	g16 d'8 d d16~
 	d d8 d d16~
@@ -203,7 +214,7 @@ MvtDeuxViolinoII = \relative c'' {
 	e4.)
 	ais(\fp\>
 % mesures 156 à 160
-	a)(\!
+	a!)(\!
 	gis8) r r
 	R4.
 	b,4.\pp(
@@ -217,8 +228,8 @@ MvtDeuxViolinoII = \relative c'' {
 % mesures 166 à 170
 	c
 	d8 b e)
-	dis4.\>
-	b'8(\! gis e
+	dis!4.\>
+	b'8(\! gis! e
 	b) r r
 % mesures 171 à 175
 	b'8(\< cis16 b gis\> e
@@ -246,7 +257,7 @@ MvtDeuxViolinoII = \relative c'' {
 	
 % mesures 191 à 195
 	dis4.\fp\>(
-	<d e>)(
+	<d e>)(\!
 	<cis e>8) r r
 	e16(_\crescmarkup\< gis b d\> cis b
 	a8)\! r r
@@ -272,11 +283,11 @@ MvtDeuxViolinoII = \relative c'' {
 	c) c8 c\< cis16(
 	d) d8 d d16(
 	f)\f\> f8 f f16~\!
-	f f8 d16( des) des~
+	f f8\p d16( des) des~
 	des des8\pp des des16(
 % mesures 216 à 220
 	c) c8 c c16(
-	des) des8 des des(
+	des) des8 des des16(
 	a!) a8 a_\dimmarkup a16~
 	a a8 a a16~
 	a a8 a a16(
@@ -308,13 +319,13 @@ MvtDeuxViolinoII = \relative c'' {
 	c8 e4
 	d8 f4
 	e8-. <g, e'>-. <fis! dis'!>-.
-	<g e'>32 b e d c b a g b a g fis
-	e b' g' fis e d c b c b a g
+	<g e'>32[ b e d] c[ b a g] b[ a g fis]
+	e[ b' g' fis] e[ d c b] c[ b a g]
 % mesures 246 à 250
-	a b c b a c fis e dis c b a
-	g fis e fis dis! fis b c b a g fis
-	e fis g e d g b c d f e d
-	c b a gis! e' d c b c bes g e
+	a[ b c b] a[ c fis e] dis![ c b a]
+	g[ fis e fis] dis![ fis b c] b[ a g fis]
+	e[ fis g e] d[ g b c] d[ f e d]
+	c[ b a gis!] e'[ d c b] c[ bes g e]
 	c16\noBeam\ff <g' e'>8 q q16~
 % mesures 251 à 255
 	q q8 q q16
@@ -324,10 +335,10 @@ MvtDeuxViolinoII = \relative c'' {
 	q q8 q <a fis'>16 \mark \default
 % mesures 256 à 260
 	<gis e'>8 r r
-	ais4.\fp->(
+	ais4.\fp\>(
 	a!)\!
-	ais(\fp->
-	<a! b>)(
+	ais(\fp\>
+	<a! b>\!)(
 % mesures 261 à 265
 	<gis b>8) r r
 	b,16(_\crescmarkup dis fis a gis fis
