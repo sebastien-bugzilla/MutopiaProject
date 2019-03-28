@@ -103,9 +103,9 @@ global = {
 %			\new Staff << \global \MvtDeuxTromboni_basso >>
 %			\new Staff << \global \MvtDeuxTimpaniEH >>
 %			\new Staff << \global \MvtDeuxViolinoI >>
-			\new Staff << \global \MvtDeuxViolinoII >>
+%			\new Staff << \global \MvtDeuxViolinoII >>
 %			\new Staff << \global \MvtDeuxViola >>
-%			\new Staff << \global \MvtDeuxVioloncello >>
+			\new Staff << \global \MvtDeuxVioloncello >>
 %			\new Staff << \global \MvtDeuxBasso >>
 		>>
 		\header {
