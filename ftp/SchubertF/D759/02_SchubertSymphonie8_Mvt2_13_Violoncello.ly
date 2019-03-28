@@ -22,7 +22,7 @@ MvtDeuxVioloncello = \relative c {
 	
 	e8(\pp e' dis
 	cis a cis16 dis)
-	e( e, cis')
+	e8( e, cis')
 % mesures 6 à 10
 	b4.(\>
 	e,8)\! r r
@@ -32,13 +32,13 @@ MvtDeuxVioloncello = \relative c {
 % mesures 11 à 15
 	e8( e, fis)
 	gis4.(\>
-	cis)\!
+	cis,)\!
 	R4.*2
 	
 % mesures 16 à 20
 	e'8-.^\pizz dis-. cis-. 
 	b-. a-. fis-. 
-	e-. g_\arco( fis
+	e-. g^\arco( fis
 	e d c)
 	b( g e'
 % mesures 21 à 25
@@ -55,7 +55,7 @@ MvtDeuxVioloncello = \relative c {
 	e8) r r
 % mesures 31 à 35
 	b16(\> dis fis a\! gis fis
-	e8)\noBeam-. \clef bass gis,-. a-. 
+	e8)\noBeam-. \clef bass gis,-. a-. \mark \default
 	b-. cis-. a-. 
 	gis-. fis-. e-. 
 	dis-. b-. dis-. 
@@ -64,7 +64,7 @@ MvtDeuxVioloncello = \relative c {
 	fis-. gis-. e-. 
 	dis-. cis-. b-. 
 	ais-. fis-. ais-. 
-	b b' a
+	b b' a!
 % mesures 41 à 45
 	gis a fis
 	e cis gis'
@@ -112,10 +112,10 @@ MvtDeuxVioloncello = \relative c {
 	
 	
 	
-	g16\pp\> g8 g g16~\!
+	gis16\pp\> gis8 gis gis16~\!
 % mesures 81 à 85
-	g g8 g g16(
-	c8)\ppp r r
+	gis gis8 gis gis16(
+	cis8)\ppp r r
 	R4.*2
 	
 	des,4\pp(-> c16 des
@@ -148,7 +148,7 @@ MvtDeuxVioloncello = \relative c {
 	e8 gis4
 	fis8 a4
 	a,32[ cis e g] a[ g e cis] a[ cis e g]
-	a[ g e cis] a[ cis e g] a[ g e a,]
+	a[ g e cis] a[ cis e g] a[ g e a,] \mark \default
 % mesures 111 à 115
 	d8 r r
 	R4.
@@ -168,10 +168,10 @@ MvtDeuxVioloncello = \relative c {
 	c4 b16 a)
 	b4.(
 % mesures 126 à 130
-	f'4 e16 dis)
+	f'4 e16 dis!)
 	e8(\< c a)
 	g4.(\>
-	c16)\! c8\p c c16~
+	c,16)\! c8\p c c16~
 	c c8 c c16~
 % mesures 131 à 135
 	c c8 c c16~
@@ -184,7 +184,7 @@ MvtDeuxVioloncello = \relative c {
 	c c8 c c16~
 	c4.~
 	c(
-	cis)~
+	cis!)~
 % mesures 141 à 145
 	cis
 	R4.*2
@@ -224,7 +224,7 @@ MvtDeuxVioloncello = \relative c {
 % mesures 171 à 175
 	e8)\! r r
 	b16(\< dis fis a\> gis fis
-	e8)\noBeam \clef bass gis,-.\ff a-. \mark \default
+	e8)\!\noBeam \clef bass gis,-.\ff a-. \mark \default
 	b-. cis-. a-.
 	gis_\stacc fis e
 % mesures 176 à 180
@@ -263,8 +263,8 @@ MvtDeuxVioloncello = \relative c {
 	
 % mesures 211 à 215
 	
-	
-	a'16^\arco\f\> a8 a a16(\!
+	\clef bass
+	a16^\arco\f\> a8 a a16(\!
 	bes) bes8\p bes( a16)
 	aes8\pp r r
 % mesures 216 à 220
@@ -280,7 +280,7 @@ MvtDeuxVioloncello = \relative c {
 	e8) r r
 	b'4(-> ais16 b
 	e,8) r a!->~
-	d4_\crescmarkup a8~
+	a4_\crescmarkup a8~
 % mesures 231 à 235
 	a16\f\> a8 a a16~\!
 	a\p a8 a a16~
@@ -309,16 +309,16 @@ MvtDeuxVioloncello = \relative c {
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
 	R4.
-	b,32[ dis! fis! a] b![ a fis dis] b[ dis fis a]
+	b,32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
-	cis8 r r \clef tenor
+	cis!8 r r \clef tenor
 	c'4.(\fp\>
 	b16)\!( dis fis a gis fis)
 	g4.(\fp\>
 	fis8)\! r r \clef bass
 % mesures 261 à 265
-	cis,8(\p e cis'
+	gis,8(\p e cis'
 	b8) r r
 	gis(_\crescmarkup e cis'
 	b8) r r
@@ -338,7 +338,7 @@ MvtDeuxVioloncello = \relative c {
 % mesures 276 à 280
 	e-. r r
 	R4.
-	gis, r a!
+	gis,8 r a
 	b r b
 	e, r r
 % mesures 281 à 285
