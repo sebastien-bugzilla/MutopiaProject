@@ -60,10 +60,10 @@ global = {
 \include "02_SchubertSymphonie8_Mvt2_08_Tromboni_basso.ly"
 \include "02_SchubertSymphonie8_Mvt2_09_Timpani.ly"
 \include "02_SchubertSymphonie8_Mvt2_10_ViolinoI_C.ly"
-\include "02_SchubertSymphonie8_Mvt2_11_ViolinoII.ly"
-\include "02_SchubertSymphonie8_Mvt2_12_Viola.ly"
-\include "02_SchubertSymphonie8_Mvt2_13_Violoncello.ly"
-\include "02_SchubertSymphonie8_Mvt2_14_Basso.ly"
+\include "02_SchubertSymphonie8_Mvt2_11_ViolinoII_C.ly"
+\include "02_SchubertSymphonie8_Mvt2_12_Viola_C.ly"
+\include "02_SchubertSymphonie8_Mvt2_13_Violoncello_C.ly"
+\include "02_SchubertSymphonie8_Mvt2_14_Basso_C.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -102,10 +102,10 @@ global = {
 %			\new Staff << \global \MvtDeuxVoixSept >>
 %			\new Staff << \global \MvtDeuxTromboni_basso >>
 %			\new Staff << \global \MvtDeuxTimpaniEH >>
-%			\new Staff << \global \MvtDeuxViolinoI >>
-%			\new Staff << \global \MvtDeuxViolinoII >>
-%			\new Staff << \global \MvtDeuxViola >>
-%			\new Staff << \global \MvtDeuxVioloncello >>
+			\new Staff << \global \MvtDeuxViolinoI >>
+			\new Staff << \global \MvtDeuxViolinoII >>
+			\new Staff << \global \MvtDeuxViola >>
+			\new Staff << \global \MvtDeuxVioloncello >>
 			\new Staff << \global \MvtDeuxBasso >>
 		>>
 		\header {
@@ -130,7 +130,7 @@ global = {
 			\new Staff << \global \MvtDeuxViolinoII >>
 			\new Staff << \global \MvtDeuxViola >>
 			\new Staff << \global \MvtDeuxVioloncello >>
-%			\new Staff << \global \MvtDeuxBasso >>
+			\new Staff << \global \MvtDeuxBasso >>
 		>>
 		\midi {
 		    \tempo 8 = 150
