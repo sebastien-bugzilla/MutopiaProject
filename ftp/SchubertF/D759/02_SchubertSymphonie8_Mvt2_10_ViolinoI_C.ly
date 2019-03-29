@@ -385,5 +385,5 @@ MvtDeuxViolinoI = \relative c''' {
 	e r r
 % mesures 311 à 312
 	e r r
-	<gis, e'>^\arco\fermata\espressivo \bar "|."
+	<gis, e'>4.^\arco\fermata\espressivo \bar "|."
 }

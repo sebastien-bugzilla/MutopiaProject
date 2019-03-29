@@ -10,7 +10,6 @@ MvtDeuxVioloncello = \relative c {
 	\clef bass
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #""
 	\set Staff.instrumentName = #"Violoncello."
 	\set Staff.midiInstrument = #"cello"
 	\set Score.alternativeNumberingStyle = #'numbers

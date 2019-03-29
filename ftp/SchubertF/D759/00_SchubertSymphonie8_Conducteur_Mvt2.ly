@@ -105,8 +105,8 @@ global = {
 %			\new Staff << \global \MvtDeuxViolinoI >>
 %			\new Staff << \global \MvtDeuxViolinoII >>
 %			\new Staff << \global \MvtDeuxViola >>
-			\new Staff << \global \MvtDeuxVioloncello >>
-%			\new Staff << \global \MvtDeuxBasso >>
+%			\new Staff << \global \MvtDeuxVioloncello >>
+			\new Staff << \global \MvtDeuxBasso >>
 		>>
 		\header {
 			breakbefore = ##t
@@ -115,8 +115,8 @@ global = {
 			%system-count = #20
 		}
 	}
-%	\score {
-%		\new StaffGroup <<
+	\score {
+		\new StaffGroup <<
 %			\new Staff << \global \MvtDeuxFlauti >>
 %			\new Staff << \global \MvtDeuxOboi >>
 %			\new Staff << \global \MvtDeuxClarinettiA >>
@@ -126,19 +126,19 @@ global = {
 %			\new Staff << \global \MvtDeuxVoixSept >>
 %			\new Staff << \global \MvtDeuxTromboni_basso >>
 %			\new Staff << \global \MvtDeuxTimpaniEH >>
-%			\new Staff << \global \MvtDeuxViolinoI >>
-%			\new Staff << \global \MvtDeuxViolinoII >>
-%			\new Staff << \global \MvtDeuxViola >>
-%			\new Staff << \global \MvtDeuxVioloncello >>
+			\new Staff << \global \MvtDeuxViolinoI >>
+			\new Staff << \global \MvtDeuxViolinoII >>
+			\new Staff << \global \MvtDeuxViola >>
+			\new Staff << \global \MvtDeuxVioloncello >>
 %			\new Staff << \global \MvtDeuxBasso >>
-%		>>
-%		\midi {
-%		    \tempo 2 = 85
-%			\context {
-%			    \Score
-%			    midiMinimumVolume = #0.8
-%				midiMaximumVolume = #0.9
-%			}
-%		}
-%	}
+		>>
+		\midi {
+		    \tempo 8 = 150
+			\context {
+			    \Score
+			    midiMinimumVolume = #0.8
+				midiMaximumVolume = #0.9
+			}
+		}
+	}
 }
