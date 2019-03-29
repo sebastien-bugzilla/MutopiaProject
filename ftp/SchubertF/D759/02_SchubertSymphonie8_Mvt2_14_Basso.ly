@@ -33,24 +33,24 @@ MvtDeuxBasso = \relative c {
 	
 	cis'8-. dis-. e-. 
 	r e\fp g
-	b4
+	b4 r8
 % mesures 16 à 20
 	R4.*2
 	
-	e^\arco(\pp g fis
+	e,8^\arco(\pp g fis
 	e d c)
 	b( g e'
 % mesures 21 à 25
 	d4.\>)(
 	g,8\!) r r 
 	R4. 
-	g g'( fis
+	g8 g'( fis
 	e d c)
 % mesures 26 à 30
 	b( g a 
 	b4.\>)
 	gis!8(\! e cis'!
-	b16) r r
+	b8) r r
 	gis( e cis'
 % mesures 31 à 35
 	b) r r
@@ -75,10 +75,10 @@ MvtDeuxBasso = \relative c {
 	
 	
 	cis8\pp^\pizz-. dis-. e-.
-	r e,\fp-. g-.
+	r e\fp-. g-.
 % mesures 51 à 55
 	b r r
-	gis!(^\arco e cis'
+	gis,!(^\arco e cis'
 	b) r r
 	gis(_\crescmarkup e cis'
 	b8) r r
@@ -206,23 +206,23 @@ MvtDeuxBasso = \relative c {
 	b4 r8
 	e, r r 
 	R4.
-	e(^\arco g fis
+	e8(^\arco g fis
 	e d c)
 % mesures 161 à 165
 	b( g e')
 	d4.\>(
 	g,8-.\!) r r 
 	R4.
-	g( g' fis
+	g8( g' fis
 % mesures 166 à 170
 	e d c)
 	b( g a)
 	b4.\>
-	gis8(\! e cis'
+	gis!8(\! e cis'!
 	b) r r
 % mesures 171 à 175
 	gis( e cis'
-	b16) r r
+	b8) r r
 	e8\noBeam-. gis-.\ff a-. \mark \default
 	b-. cis-. a-.
 	gis_\stacc fis e
@@ -247,14 +247,14 @@ MvtDeuxBasso = \relative c {
 % mesures 191 à 195
 	r a,-.\fp c-.
 	e r r
-	cis(^\arco a fis'
+	cis!(^\arco a fis'
 	e) r r
 	cis(_\crescmarkup a fis'
 % mesures 196 à 200
 	e) r r
 	a,\pp-. r r
 	R4.
-	a'-.\ppp^\pizz gis-. fis-.
+	a'8-.\ppp^\pizz gis-. fis-.
 	e-. d-. b-.
 % mesures 201 à 205
 	a-. r r
@@ -313,7 +313,7 @@ MvtDeuxBasso = \relative c {
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
 	R4.
-	b,32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
+	b,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r
@@ -342,7 +342,7 @@ MvtDeuxBasso = \relative c {
 % mesures 276 à 280
 	gis8-. fis-. e-.
 	dis-. cis-. ais-.
-	gis-. r a
+	gis-. r a!
 	b r b
 	e r r
 % mesures 281 à 285
@@ -355,7 +355,7 @@ MvtDeuxBasso = \relative c {
 	
 	
 	
-	b'8\pizz\pp r r
+	b8\pizz\pp r r
 	e r r
 % mesures 301 à 305
 	b r r
@@ -370,6 +370,6 @@ MvtDeuxBasso = \relative c {
 	e^\pizz r r
 	e-. gis,-. b-. 
 % mesures 311 à 312
-	e-. gis-. b-.
+	e-. gis,-. b-.
 	e r r\fermata \bar "|."
 }
