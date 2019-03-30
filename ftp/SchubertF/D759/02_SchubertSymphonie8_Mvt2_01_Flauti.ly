@@ -201,8 +201,8 @@ MvtDeuxFlautiI = \relative c'' {
 	gis4.->(
 	fis)
 % mesures 191 à 195
-	f(
-	e)
+	f(\fp\>
+	e)\!
 	e'8(\< cis\> a\!
 	e) r r
 	e'8(\<^\crescmarkup fis16 e\> cis a\!
@@ -326,61 +326,61 @@ MvtDeuxFlautiII = \relative c'' {
 	
 	
 	
-	c4.(\fp\>
-	b4)\! r8
+	ais4.(\fp\>
+	a!4)\! r8
 % mesures 16 à 20
-	e4.(\pp\<
-	fis\>
-	g8)\! r r
+	b4.(\pp\<
+	dis\>
+	e8)\! r r
 	R4.*3
 	
 % mesures 21 à 25
 	
-	g4.(\<
-	a\>
-	b8\!) r r
-	R4.*4
+	d4.(\<
+	fis\>
+	g8\!) r r
+	R4.*8
 % mesures 26 à 30
 	
 	
 	
-	b,16(\> dis fis a gis fis
-	e8)\! r r
+	
+	
 % mesures 31 à 35
-	b16(\> dis fis a\! gis fis
-	e8) r r \mark \default
-	fis4.\f
-	gis
-	a8( b8.-> a16)
+	
+	\mark \default
+	dis4.\f
+	e
+	fis8( gis8.-> fis16)
 % mesures 36 à 40
-	gis4.
-	ais 
-	b
-	cis8( dis8.-> cis16)
-	b4.
+	e4.
+	cis 
+	dis
+	e8( fis8.-> e16)
+	dis4.
 % mesures 41 à 45
-	bis
-	cis4( bis8)
-	cis8( dis8.-> cis16)
-	bis4.
+	dis
+	e4( dis8)
+	e8( fis8.-> e16)
+	dis4.
 	b!\pp(
 % mesures 46 à 50
 	cis
 	b8 gis e)
-	dis4.(->
-	cis)
-	c(\fp\>
+	dis8(-> e fis
+	e4.)
+	ais(\fp\>
 % mesures 51 à 55
-	b4)\! r8
-	b'(\p gis e
-	b) r r
-	b'->( cis16_\crescmarkup b gis e
-	b8) r r
+	a!4)\! r8
+	R4.*4
+	
+	
+	
 % mesures 56 à 60
 	e4.(\pp
-	fis
-	gis8) r r
-	R4.*33
+	dis
+	e8) r r
+	R4.*37
 % mesures 61 à 65
 	
 % mesures 66 à 70
@@ -395,30 +395,30 @@ MvtDeuxFlautiII = \relative c'' {
 	
 % mesures 91 à 95
 	
-	bes16.(->\pp aes32 bes16 aes f des)
-	aes'16.(-> ges32 aes16 ges ees c
-	des8) r r
-	R4. \mark \default
+	
+	
+	
+	\mark \default
 % mesures 96 à 100
-	gis!4.\ff
-	cis
-	cis
-	bis
-	cis~
+	e4.\ff
+	gis
+	a~
+	a8( gis4)
+	gis( b8)~
 % mesures 101 à 105
-	cis4( dis8
-	e) gis-. gis-.
-	cis, cis,-. gis'->~
+	b( a) cis~
+	cis e-. dis-.
+	cis cis,-. gis'->~
 	gis cis,-. cis'->~
 	cis fis,-. a->~
 % mesures 106 à 110
-	a gis-. dis'->~
+	a gis-. dis->~
 	dis16 cis-. e8-. eis~
 	eis16 gis-. fis8-. g-.
-	cis,16\fz cis8 cis cis16
-	e16 e8 e e16 \mark \default
+	g16\fz g8 g g16
+	cis16 cis8 cis cis16 \mark \default
 % mesures 111 à 115
-	fis8 r r
+	d8 r r
 	R4.*7
 	
 	
@@ -427,8 +427,8 @@ MvtDeuxFlautiII = \relative c'' {
 	
 	
 	
-	r8 r g,~\p\<
-	g\trill( b\> a
+	r8 r b,16\p\<( cis!
+	d8( g\> fis
 % mesures 121 à 125
 	g4)\! r8
 	R4.*5
@@ -437,19 +437,19 @@ MvtDeuxFlautiII = \relative c'' {
 	
 % mesures 126 à 130
 	
-	r8 r c\<~
-	c(\trill\> e d\!
+	r8 r e16(\< fis
+	g8(\> c b\!
 	c4) r8
-	e,4(-> d16 b
+	R4.*24
 % mesures 131 à 135
-	c8) r r
-	e4(-> d16 b
-	c8) r r
-	R4.*2
+	
+	
+	
+	
 	
 % mesures 136 à 140
-	g'4(\pp-> e8)
-	R4.*17
+	
+	
 % mesures 141 à 145
 	
 % mesures 146 à 150
@@ -459,61 +459,61 @@ MvtDeuxFlautiII = \relative c'' {
 	
 	
 	
-	c4.(\fp\>
+	ais,4.(\fp\>
 % mesures 156 à 160
-	b)\!
-	e(\pp\<
-	fis\>
-	g8)\! r r
+	a!)\!
+	gis\pp\<
+	b\>~
+	b8\! r r
 	R4.*3
 % mesures 161 à 165
 	
 	
-	g4.(\<
-	a\>
-	b8)\! r r
+	g'4.(\<
+	fis\>
+	g8)\! r r
 % mesures 166 à 170
-	R4.*4
+	R4.*8
 	
 	
 	
-	b,16(\< dis fis a\> gis fis
+	
 % mesures 171 à 175
-	e8)\! r r 
-	b16(\< dis fis a\> gis fis
-	e4)\! r8 \mark \default
-	fis4.\ff
-	gis
+	
+	
+	\mark \default
+	dis4.\ff
+	e
 % mesures 176 à 180
-	a8( b8.-> a16)
-	gis4.
-	b
-	cis
-	d8( e8.-> d16)
-% mesures 181 à 185
-	cis4.
-	eis
-	fis4 eis8
 	fis8( gis8.-> fis16)
-	eis4.(
+	e4.
+	gis
+	a
+	b8( cis8.-> b16)
+% mesures 181 à 185
+	a4.
+	gis
+	a4 gis8
+	a8( b8.-> a16)
+	gis4.(
 % mesures 186 à 190
 	e!
 	fis
 	e8 cis a)
-	gis4.->(
-	fis)
+	gis8->( a b
+	a4.)
 % mesures 191 à 195
-	f(
-	e)
-	e'8(\< cis\> a\!
-	e) r r
-	e'8(\<^\crescmarkup fis16 e\> cis a\!
+	dis(\fp\>
+	d!)\!(
+	cis8) r r
+	R4.
+	e8(\<^\crescmarkup fis16 e\> cis a\!
 % mesures 196 à 200
 	e8) r r
 	a4.(\pp
-	b
-	cis8) r r
-	R4.*35
+	gis
+	a8) r r
+	R4.*37
 % mesures 201 à 205
 	
 % mesures 206 à 210
@@ -531,52 +531,52 @@ MvtDeuxFlautiII = \relative c'' {
 	
 	
 	
-	fis,16.(\ppp-> e32 fis16 e cis a
+	
 % mesures 236 à 240
-	e'16.-> d32 e16 d b gis) \mark \default
-	a'4.\ff
-	c
-	b
-	d
+	\mark \default
+	e4.\ff
+	a
+	a
+	gis
 % mesures 241 à 245
-	c8 e4
-	d8 f4
-	e8-. g-. fis!-.
+	a4( bes8
+	a4) c8~
+	c e-. dis!-.
 	e4.
-	g
+	g,
 % mesures 246 à 250
 	fis
 	a
-	g8 b,4
+	g8 b4
 	a8 c4
-	e16\ff e8 e e16( 
+	c16\ff c8 c c16~
 % mesures 251 à 255
-	g) g8 g g16
-	a8 r r
+	c c8 c c16
+	c8 r r
 	R4. 
-	dis,!16\ff dis8 dis dis16(
-	fis) fis8 fis fis16( \mark \default
+	a16\ff a8 a a16(
+	dis) dis8 dis dis16( \mark \default
 % mesures 256 à 260
 	e8) r r
-	c,4.\fp\>(
-	b16)\!( dis! fis a gis fis)
-	c4.(\fp\>
-	b4)\! r8
+	ais,,4.\fp\>(
+	a!4)\! r8
+	ais4.(\fp\>
+	a!4)\! r8
 % mesures 261 à 265
-	b'8( gis e
-	b4) r8
+	R4.*2
+	
 	b'8(_\crescmarkup cis16 b gis e
 	b4) r8
 	R4.
 % mesures 266 à 270
 	r8 a'16(\< gis fis a
-	cis4\> b8)\!
-	e,4.(
-	fis
-	gis
+	a8.(\> fis16 gis a
+	gis8) r r
+	dis4.(
+	e
 % mesures 271 à 275
-	ais)(\<
-	b4\> a!16 fis!\!
+	fisis)(\<
+	gis4\> a!16 fis!\!
 	gis4 fis16 dis
 	e8) r r
 	R4.*21
@@ -589,24 +589,24 @@ MvtDeuxFlautiII = \relative c'' {
 % mesures 291 à 295
 	
 % mesures 296 à 300
-	b'4.\pp\<(
-	cis\>
-	b8\! gis e
-	fis4.)(->
-	gis4) r8
+	e4.\pp\<~
+	e\>~
+	e(\!
+	dis4.)(->
+	e4) r8
 % mesures 301 à 305
 	R4.*3
 	
 	
-	gis4.(->_\dimmarkup
-	fis8) r r
+	e4.(->_\dimmarkup
+	dis8) r r
 % mesures 306 à 310
-	gis4.(->
-	fis8) r r
-	gis4.(
-	b
-	e)~
+	e4.(->
+	dis8) r r
+	e4.(
+	gis
+	b)~
 % mesures 311 à 312
-	e~
-	e\fermata\espressivo \bar "|."
+	b~
+	b\fermata\espressivo \bar "|."
 }
