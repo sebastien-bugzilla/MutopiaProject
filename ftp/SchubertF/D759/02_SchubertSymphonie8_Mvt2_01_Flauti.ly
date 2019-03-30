@@ -377,7 +377,7 @@ MvtDeuxFlautiII = \relative c'' {
 	
 	
 % mesures 56 à 60
-	e4.(\pp
+	e'4.(\pp
 	dis
 	e8) r r
 	R4.*37
@@ -404,7 +404,7 @@ MvtDeuxFlautiII = \relative c'' {
 	gis
 	a~
 	a8( gis4)
-	gis( b8)~
+	gis( b!8)~
 % mesures 101 à 105
 	b( a) cis~
 	cis e-. dis-.
@@ -428,7 +428,7 @@ MvtDeuxFlautiII = \relative c'' {
 	
 	
 	r8 r b,16\p\<( cis!
-	d8( g\> fis
+	d8 g\> fis
 % mesures 121 à 125
 	g4)\! r8
 	R4.*5
@@ -437,10 +437,10 @@ MvtDeuxFlautiII = \relative c'' {
 	
 % mesures 126 à 130
 	
-	r8 r e16(\< fis
-	g8(\> c b\!
+	r8 r e16(\< fis!
+	g8\> c b\!
 	c4) r8
-	R4.*24
+	R4.*25
 % mesures 131 à 135
 	
 	
@@ -503,14 +503,14 @@ MvtDeuxFlautiII = \relative c'' {
 	gis8->( a b
 	a4.)
 % mesures 191 à 195
-	dis(\fp\>
+	dis!(\fp\>
 	d!)\!(
 	cis8) r r
 	R4.
 	e8(\<^\crescmarkup fis16 e\> cis a\!
 % mesures 196 à 200
 	e8) r r
-	a4.(\pp
+	a'4.(\pp
 	gis
 	a8) r r
 	R4.*37
@@ -569,8 +569,8 @@ MvtDeuxFlautiII = \relative c'' {
 	b4) r8
 	R4.
 % mesures 266 à 270
-	r8 a'16(\< gis fis a
-	a8.(\> fis16 gis a
+	r8 a'16( gis fis a)
+	a8.( fis16 gis a
 	gis8) r r
 	dis4.(
 	e
