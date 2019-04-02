@@ -17,7 +17,7 @@ MvtDeuxOboeI = \relative c'' {
                                       beam-event tuplet-span-event
                                       dynamic-event slur-event)
 % mesures 1 à 5
-	R4.*14
+	R4.*15
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -90,7 +90,7 @@ MvtDeuxOboeI = \relative c'' {
 	f->
 % mesures 86 à 90
 	ees
-	ges)\>
+	ges)->
 	f8(\< aes4->
 	ges8 bes4->)~
 	bes16.(\f\> aes32 bes16  aes f des)
@@ -114,7 +114,7 @@ MvtDeuxOboeI = \relative c'' {
 	fis[ gis a gis] fis[ a dis cis] bis[ a' gis fis]
 % mesures 106 à 110
 	e[ dis cis dis] bis[ dis gis, a] gis[ fis e dis]
-	cis[ dis e cis'] b[ e, gis a] b[ d cis b]
+	cis[ dis e cis'] b![ e, gis a] b[ d cis b]
 	a[ gis fis eis] cis'[ b a gis] a[ g' e! cis]
 	a16\fz e'8 e e16
 	a a8 a a16 \mark \default
@@ -132,7 +132,7 @@ MvtDeuxOboeI = \relative c'' {
 	b8\> d d
 % mesures 121 à 125
 	d4)\! r8
-	R4.5
+	R4.*5
 	
 	
 	
@@ -197,14 +197,14 @@ MvtDeuxOboeI = \relative c'' {
 % mesures 191 à 195
 	c,4.(\fp\>
 	b)\!(
-	e8)( cis a
+	e8)( cis! a
 	e) r r
 	e'8(_\crescmarkup fis16 e cis a
 % mesures 196 à 200
 	e8) r r
 	e'4.\pp~
 	e~
-	e8) r r
+	e8 r r
 	R4.*7
 % mesures 201 à 205
 	
@@ -228,7 +228,7 @@ MvtDeuxOboeI = \relative c'' {
 	a( c a)
 % mesures 221 à 225
 	e'4.\>~
-	e^\morendo~
+	e^\morendo~\!
 	e~
 	e4 r8
 	R4.*8
@@ -262,16 +262,16 @@ MvtDeuxOboeI = \relative c'' {
 	e,) e8 e e16(
 	f4.)(\>
 	a8\p f e)
-	dis16\ff dis8 dis dis16(
+	dis!16\ff dis8 dis dis16(
 	fis) fis8 fis fis16( \mark \default
 % mesures 256 à 260
 	e4.)\>(
 	g,)\fp\>(
-	fis4) r8
-	g4.\fp(
-	fis4) r8
+	fis4)\! r8
+	g4.\fp\>(
+	fis4)\! r8
 % mesures 261 à 265
-	b'8( gis e
+	b'8( gis! e
 	b4) r8
 	b'(_\crescmarkup cis16 b gis e
 	b4) r8
@@ -283,8 +283,8 @@ MvtDeuxOboeI = \relative c'' {
 	b~
 	b(
 % mesures 271 à 275
-	d)~\<
-	d4(\> cis8\!
+	dis)~\<
+	dis4(\> cis8\!
 	b4.~
 	b8) r r
 	R4.*29
@@ -311,7 +311,7 @@ MvtDeuxOboeI = \relative c'' {
 	e
 	gis)~
 % mesures 311 à 312
-	gis
+	gis~
 	gis\fermata\espressivo \bar "|."
 }
 MvtDeuxOboeII = \relative c {
