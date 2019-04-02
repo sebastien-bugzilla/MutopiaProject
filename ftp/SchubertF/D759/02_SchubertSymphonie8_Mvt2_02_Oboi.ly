@@ -54,7 +54,7 @@ MvtDeuxOboeI = \relative c'' {
 % mesures 41 à 45
 	dis
 	e4( dis8)
-	e( fis8. e16)
+	e( fis8.-> e16)
 	dis4.
 	R4.*7
 % mesures 46 à 50
@@ -314,7 +314,7 @@ MvtDeuxOboeI = \relative c'' {
 	gis~
 	gis\fermata\espressivo \bar "|."
 }
-MvtDeuxOboeII = \relative c {
+MvtDeuxOboeII = \relative c'' {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
@@ -362,7 +362,7 @@ MvtDeuxOboeII = \relative c {
 % mesures 41 à 45
 	bis
 	cis4( bis8)
-	cis( dis8. cis16)
+	cis( dis8.-> cis16)
 	bis4.
 	R4.*11
 % mesures 46 à 50
@@ -557,7 +557,7 @@ MvtDeuxOboeII = \relative c {
 % mesures 241 à 245
 	c8 e4(
 	d8) f4
-	e e-. dis!-.
+	e8 e-. dis!-.
 	e4.
 	g
 % mesures 246 à 250
