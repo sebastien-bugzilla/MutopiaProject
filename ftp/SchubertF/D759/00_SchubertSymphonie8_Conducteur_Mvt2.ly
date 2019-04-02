@@ -4,6 +4,7 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
+	%annotate-spacing = ##t
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
 	bookTitleMarkup = \markup {
@@ -50,7 +51,7 @@ global = {
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "02_SchubertSymphonie8_Mvt2_01_Flauti.ly"
+\include "02_SchubertSymphonie8_Mvt2_01_Flauti_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_02_Oboi.ly"
 \include "02_SchubertSymphonie8_Mvt2_03_ClarinettiA.ly"
 \include "02_SchubertSymphonie8_Mvt2_04_Fagotti.ly"
@@ -92,21 +93,23 @@ global = {
 		}
 	}
 	\score {
-		\new StaffGroup <<
-			\new Staff << \global \MvtDeuxFlautiII >>
-%			\new Staff << \global \MvtDeuxOboi >>
-%			\new Staff << \global \MvtDeuxClarinettiA >>
-%			\new Staff << \global \MvtDeuxFagotti >>
-%			\new Staff << \global \MvtDeuxCorniD >>
-%			\new Staff << \global \MvtDeuxTrombeE >>
-%			\new Staff << \global \MvtDeuxVoixSept >>
-%			\new Staff << \global \MvtDeuxTromboni_basso >>
-%			\new Staff << \global \MvtDeuxTimpaniEH >>
-%			\new Staff << \global \MvtDeuxViolinoI >>
-%			\new Staff << \global \MvtDeuxViolinoII >>
-%			\new Staff << \global \MvtDeuxViola >>
-%			\new Staff << \global \MvtDeuxVioloncello >>
-%			\new Staff << \global \MvtDeuxBasso >>
+	    <<
+		    \new StaffGroup <<
+%			    \new Staff << \global \partcombine \MvtDeuxFlautiI \MvtDeuxFlautiII >>
+			    \new Staff << \global \MvtDeuxOboeI >>
+%			    \new Staff << \global \MvtDeuxClarinettiA >>
+%			    \new Staff << \global \MvtDeuxFagotti >>
+%			    \new Staff << \global \MvtDeuxCorniD >>
+%			    \new Staff << \global \MvtDeuxTrombeE >>
+%			    \new Staff << \global \MvtDeuxVoixSept >>
+%			    \new Staff << \global \MvtDeuxTromboni_basso >>
+%			    \new Staff << \global \MvtDeuxTimpaniEH >>
+%			    \new Staff << \global \MvtDeuxViolinoI >>
+%			    \new Staff << \global \MvtDeuxViolinoII >>
+%			    \new Staff << \global \MvtDeuxViola >>
+%			    \new Staff << \global \MvtDeuxVioloncello >>
+%			    \new Staff << \global \MvtDeuxBasso >>
+		    >>
 		>>
 		\header {
 			breakbefore = ##t

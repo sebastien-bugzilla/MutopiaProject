@@ -147,7 +147,10 @@ MvtDeuxFlautiI = \relative c'' {
 	
 % mesures 136 à 140
 	g'4(\pp-> e8)
-	R4.*17
+	R4.*18
+	
+	
+	
 % mesures 141 à 145
 	
 % mesures 146 à 150
