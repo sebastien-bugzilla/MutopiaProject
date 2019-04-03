@@ -25,17 +25,17 @@ MvtDeuxOboeI = \relative c'' {
 	
 	
 	
-	b4.~\pp\<
+	b4.~
 % mesures 16 à 20
-	b~\>
-	b8\! r r 
+	b~
+	b8 r r 
 	R4.*3
 	
 	
 % mesures 21 à 25
-	d4.~\<
-	d\>~
-	d8\! r r
+	d4.~
+	d~
+	d8 r r
 	R4.*8
 % mesures 26 à 30
 	
@@ -65,12 +65,12 @@ MvtDeuxOboeI = \relative c'' {
 	
 % mesures 51 à 55
 	
-	b8(\p gis e
+	\partcombineApart b8(\p gis e
 	fis) r r
 	b8(-> cis16_\crescmarkup b gis e
-	fis8) r r 
+	fis8) r r \partcombineAutomatic
 % mesures 56 à 60
-	b4.\pp~
+	b4.~
 	b~
 	b8 r r
 	R4.*25
@@ -86,20 +86,20 @@ MvtDeuxOboeI = \relative c'' {
 	
 	
 	
-	des4.\pp(
+	\partcombineApart des4.\pp(
 	f->
 % mesures 86 à 90
 	ees
 	ges)->
-	f8(\< aes4->
+	f8(_\< aes4->
 	ges8 bes4->)~
-	bes16.(\f\> aes32 bes16  aes f des)
+	bes16.(_\f_\> aes32 bes16  aes f des)
 % mesures 91 à 95
-	aes'16.(\p-> ges32 aes16 ges ees c
-	des8) r r
-	R4.
-	bes'16.(\ppp-> aes32 bes16 aes f des)
-	aes'16.(-> ges32 aes16 ges ees c) \mark \default
+	aes'16.(_\p-> ges32 aes16 ges ees c
+	des8) r r \partcombineAutomatic
+	R4. \partcombineApart
+	bes'16.(_\ppp-> aes32 bes16 aes f des)
+	aes'16.(-> ges32 aes16 ges ees c) \mark \default \partcombineAutomatic
 % mesures 96 à 100
 	cis!4.\ff
 	gis'
@@ -128,8 +128,8 @@ MvtDeuxOboeI = \relative c'' {
 	
 	
 	
-	r8 r g,16(\< a
-	b8\> d d
+	r8 r g,16(_\< a
+	b8_\> d d
 % mesures 121 à 125
 	d4)\! r8
 	R4.*5
@@ -138,15 +138,15 @@ MvtDeuxOboeI = \relative c'' {
 	
 % mesures 126 à 130
 	
-	r8 r c16\<( d
-	e8) g4~\>
-	g\! r8
+	r8 r c16_\<( d
+	e8) g4~_\>
+	g\! r8 \partcombineApart
 	e4->( d16 b
 % mesures 131 à 135
 	c8) r r
 	e4(-> d16 b
 	c8) r r
-	g'4(-> e8)
+	g'4(-> e8) \partcombineAutomatic
 	R4.*22
 % mesures 136 à 140
 	
@@ -158,16 +158,16 @@ MvtDeuxOboeI = \relative c'' {
 	
 % mesures 156 à 160
 	
-	b4.(\pp\<
+	\partcombineChords b4.(\pp\<
 	d\>
-	e8)\! r r
+	e8)\! r r \partcombineAutomatic
 	R4.*3
 % mesures 161 à 165
 	
 	
-	d4.\<~
-	d~\>
-	d8\! r r
+	d4.~
+	d~
+	d8 r r
 % mesures 166 à 170
 	R4.*8
 % mesures 171 à 175
@@ -195,14 +195,14 @@ MvtDeuxOboeI = \relative c'' {
 	
 	
 % mesures 191 à 195
-	c,4.(\fp\>
+	c,4.(
 	b)\!(
 	e8)( cis! a
-	e) r r
+	e) r r \partcombineApart
 	e'8(_\crescmarkup fis16 e cis a
 % mesures 196 à 200
-	e8) r r
-	e'4.\pp~
+	e8) r r \partcombineAutomatic
+	e'4.~
 	e~
 	e8 r r
 	R4.*7
@@ -210,16 +210,16 @@ MvtDeuxOboeI = \relative c'' {
 	
 % mesures 206 à 210
 	
-	a,4.(\pp
+	\partcombineApart a,4.(
 	c->
 	b
 	d->)
 % mesures 211 à 215
-	c8(\< e4->
+	c8(_\< e4->
 	d8 f4->)~
-	f4.~\f\>
-	f\p~
-	f4\pp( ees16 des
+	f4.~_\f_\>
+	f_\p~
+	f4_\pp( ees16 des
 % mesures 216 à 220
 	c8 ees c)
 	des4->( c16 bes
@@ -227,19 +227,19 @@ MvtDeuxOboeI = \relative c'' {
 	a( c a)~
 	a( c a)
 % mesures 221 à 225
-	e'4.\>~
+	e'4._\>~
 	e^\morendo~\!
 	e~
-	e4 r8
+	e4 r8 \partcombineAutomatic
 	R4.*8
 % mesures 226 à 230
 	
 % mesures 231 à 235
 	
 	
-	fis16.(->\pp e32 fis16 e cis a
+	\partcombineApart fis16.(->-\tweak X-offset #-3.5 \pp e32 fis16 e cis a
 	e'16. d32 e16 d b gis
-	a8) r r
+	a8) r r \partcombineAutomatic
 % mesures 236 à 240
 	R4. \mark \default
 	c4.\ff
@@ -260,31 +260,31 @@ MvtDeuxOboeI = \relative c'' {
 	bes16\ff bes8 bes bes16(
 % mesures 251 à 255
 	e,) e8 e e16(
-	f4.)(\>
-	a8\p f e)
-	dis!16\ff dis8 dis dis16(
+	f4.)(
+	a8 f e)
+	\partcombineChords dis!16\ff dis8 dis dis16(
 	fis) fis8 fis fis16( \mark \default
 % mesures 256 à 260
 	e4.)\>(
 	g,)\fp\>(
-	fis4)\! r8
+	fis4)\! \partcombineAutomatic r8
 	g4.\fp\>(
 	fis4)\! r8
 % mesures 261 à 265
 	b'8( gis! e
 	b4) r8
-	b'(_\crescmarkup cis16 b gis e
+	b'( cis16 b gis e
 	b4) r8
 	R4.
 % mesures 266 à 270
-	d4\< d8
-	d4.\>
-	b4.\!~
+	d4 d8
+	d4.
+	b4.~
 	b~
 	b(
 % mesures 271 à 275
-	dis)~\<
-	dis4(\> cis8\!
+	dis)~
+	dis4( cis8
 	b4.~
 	b8) r r
 	R4.*29
@@ -302,7 +302,7 @@ MvtDeuxOboeI = \relative c'' {
 	
 	
 	
-	b4.->~_\dimmarkup
+	b4.->~
 	b8 r r
 % mesures 306 à 310
 	b4.~->
@@ -364,7 +364,7 @@ MvtDeuxOboeII = \relative c'' {
 	cis4( bis8)
 	cis( dis8.-> cis16)
 	bis4.
-	R4.*11
+	R4.*7
 % mesures 46 à 50
 	
 	
@@ -373,15 +373,15 @@ MvtDeuxOboeII = \relative c'' {
 	
 % mesures 51 à 55
 	
-	
-	
-	
-	
+	R4.
+	R
+	R
+	R
 % mesures 56 à 60
 	gis4.\pp(
 	a)(
 	gis8) r r
-	R4.*37
+	R4.*25
 % mesures 61 à 65
 	
 % mesures 66 à 70
@@ -394,20 +394,20 @@ MvtDeuxOboeII = \relative c'' {
 	
 	
 	
-	
-	
+	R4.
+	R
 % mesures 86 à 90
-	
-	
-	
-	
-	
+	R
+	R
+	R
+	R
+	R
 % mesures 91 à 95
-	
-	
-	
-	
-	\mark \default
+	R
+	R
+	R
+	R
+	R\mark \default
 % mesures 96 à 100
 	gis!4.\ff
 	cis
@@ -437,9 +437,9 @@ MvtDeuxOboeII = \relative c'' {
 	
 	
 	
-	r8 b,8\>( c
+	r8 b,8( c
 % mesures 121 à 125
-	b4)\! r8
+	b4) r8
 	R4.*6
 	
 	
@@ -447,15 +447,15 @@ MvtDeuxOboeII = \relative c'' {
 % mesures 126 à 130
 	
 	
-	r8 e(\> f\>
-	e4\!) r8
-	R4.*27
+	r8 e( f
+	e4) r8
+	R4.
 % mesures 131 à 135
-	
-	
-	
-	
-	
+	R
+	R
+	R
+	R
+	R4.*22
 % mesures 136 à 140
 	
 % mesures 141 à 145
@@ -513,43 +513,43 @@ MvtDeuxOboeII = \relative c'' {
 	cis4.\pp(
 	d)(
 	cis8) r r
-	R4.*37
+	R4.*7
 % mesures 201 à 205
 	
 % mesures 206 à 210
 	
-	
-	
-	
-	
+	R4.
+	R
+	R
+	R
 % mesures 211 à 215
-	
-	
-	
-	
-	
+	R
+	R
+	R
+	R
+	R
 % mesures 216 à 220
-	
-	
-	
-	
-	
+	R
+	R
+	R
+	R
+	R
 % mesures 221 à 225
-	
-	
-	
-	
-	
+	R
+	R
+	R
+	R
+	R4.*8
 % mesures 226 à 230
 	
 % mesures 231 à 235
 	
 	
-	
-	
-	
+	R4.
+	R
+	R
 % mesures 236 à 240
-	\mark \default
+	R \mark \default
 	a4.\ff
 	c
 	b

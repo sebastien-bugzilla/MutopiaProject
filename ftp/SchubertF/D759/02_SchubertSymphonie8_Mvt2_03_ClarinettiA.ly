@@ -8,9 +8,16 @@
 %#######################################################################
 MvtDeuxClarinettiAI = \relative c {
 	\clef treble
+	\key g \major
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #""
+	\set Staff.instrumentName = #"Clarinetti"
+	\set Staff.midiInstrument = #"clarinet"
+	\set Score.alternativeNumberingStyle = #'numbers
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
+    \transposition a
 % mesures 1 à 5
 	
 % mesures 6 à 10
@@ -142,7 +149,12 @@ MvtDeuxClarinettiAII = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #""
+	\set Staff.instrumentName = #"Clarinetti"
+	\set Staff.midiInstrument = #"clarinet"
+	\set Score.alternativeNumberingStyle = #'numbers
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
 	
 % mesures 6 à 10

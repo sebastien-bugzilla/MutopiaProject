@@ -52,7 +52,7 @@ global = {
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "02_SchubertSymphonie8_Mvt2_01_Flauti_C.ly"
-\include "02_SchubertSymphonie8_Mvt2_02_Oboi.ly"
+\include "02_SchubertSymphonie8_Mvt2_02_Oboi_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_03_ClarinettiA.ly"
 \include "02_SchubertSymphonie8_Mvt2_04_Fagotti.ly"
 \include "02_SchubertSymphonie8_Mvt2_05_CorniD.ly"
@@ -96,8 +96,8 @@ global = {
 	    <<
 		    \new StaffGroup <<
 %			    \new Staff << \global \partcombine \MvtDeuxFlautiI \MvtDeuxFlautiII >>
-			    \new Staff << \global \MvtDeuxOboeII >>
-%			    \new Staff << \global \MvtDeuxClarinettiA >>
+%			    \new Staff << \global \partcombine \MvtDeuxOboeI \MvtDeuxOboeII >>
+			    \new Staff << \global \MvtDeuxClarinettiAI >>
 %			    \new Staff << \global \MvtDeuxFagotti >>
 %			    \new Staff << \global \MvtDeuxCorniD >>
 %			    \new Staff << \global \MvtDeuxTrombeE >>

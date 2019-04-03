@@ -447,7 +447,7 @@ MvtDeuxOboeII = \relative c'' {
 % mesures 126 à 130
 	
 	
-	r8 e(\> f\>
+	r8 e(\> f
 	e4\!) r8
 	R4.*27
 % mesures 131 à 135
