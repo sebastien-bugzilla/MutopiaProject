@@ -53,7 +53,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	fis4.
 	b,(\pp
 % mesures 46 à 50
-	cis
+	c
 	b8 g e)
 	dis4.->(
 	e)
@@ -76,7 +76,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	g8(\< b4->
 % mesures 71 à 75
 	a8 c4->)\!~
-	c\f\>~
+	c4.\f\>~
 	c\p~
 	c4\pp( bes16 aes
 	g8 bes g)
@@ -132,7 +132,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	
 	
 	bes!4\ppp(-> g8)
-	R4.16
+	R4.*16
 % mesures 141 à 145
 	
 % mesures 146 à 150
@@ -177,7 +177,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	a)
 % mesures 191 à 195
 	aes\fp\>(
-	g)~
+	g)~\!
 	g8 r r
 	d'4.->(
 	e8) r r
@@ -189,7 +189,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	d
 % mesures 201 à 205
 	e4) r8
-	R4.23
+	R4.*23
 % mesures 206 à 210
 	
 % mesures 211 à 215
@@ -210,7 +210,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	f8 a4)~
 % mesures 231 à 235
 	a16.(\f\> g32 a16 g e c
-	g'16->\p f32 g16 f d b
+	g'16.->\p f32 g16 f d b
 	c8) r r
 	R4.*3
 	
@@ -223,7 +223,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 % mesures 241 à 245
 	c4( des8
 	c4) ees8~
-	ees g-. fis-.
+	ees g-. fis!-.
 	g4.
 	bes,
 % mesures 246 à 250
@@ -237,11 +237,11 @@ MvtDeuxClarinettiAI = \relative c'' {
 	ees4.\>~
 	ees\p
 	d16\ff d8 d d16(
-	fis) fos8 fis fis16( \mark \default
+	fis) fis8 fis fis16( \mark \default
 % mesures 256 à 260
 	g4.\>)(
-	ees\fp)(
-	d16)( fis a c b a)
+	ees\fp\>)(
+	d16)(\! fis a c b a)
 	ees4.(\fp\>
 	d4)\! r8
 % mesures 261 à 265
@@ -254,7 +254,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	d'4\< d8\!
 	e4( d8)~
 	d r r
-	R4.7
+	R4.*7
 	
 % mesures 271 à 275
 	
@@ -281,7 +281,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 % mesures 296 à 300
 	d!4.(\pp\<
 	e!\>
-	d4 e8)
+	d4 e8)\!
 	d4.~
 	d4 r8
 % mesures 301 à 305
@@ -292,8 +292,8 @@ MvtDeuxClarinettiAI = \relative c'' {
 	a4.(->
 % mesures 306 à 310
 	b8) r r
-	a4.(\> b16 c)
-	b4.~
+	a4(\> b16 c)
+	b4.~\!
 	b(
 	d)~
 % mesures 311 à 312
