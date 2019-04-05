@@ -42,7 +42,7 @@
 global = {
 	\version "2.18.2"
 	\time 3/8
-	\key e \major
+%	\key e \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Andante con moto"

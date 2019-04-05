@@ -8,6 +8,7 @@
 %#######################################################################
 MvtDeuxTromboni_alto = \relative c {
 	\clef treble
+	\key e \major
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #""
@@ -140,6 +141,7 @@ MvtDeuxTromboni_alto = \relative c {
 }
 MvtDeuxTromboni_altoI = \relative c {
 	\clef treble
+	\key e \major
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #""

@@ -8,6 +8,7 @@
 %#######################################################################
 MvtDeuxCorniDI = \relative c {
 	\clef treble
+	\key e \major
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #""
@@ -140,6 +141,7 @@ MvtDeuxCorniDI = \relative c {
 }
 MvtDeuxCorniDII = \relative c {
 	\clef treble
+	\key e \major
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #""

@@ -8,6 +8,7 @@
 %#######################################################################
 MvtDeuxVioloncello = \relative c {
 	\clef bass
+	\key e \major
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Violoncello."

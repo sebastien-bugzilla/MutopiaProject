@@ -8,6 +8,7 @@
 %#######################################################################
 MvtDeuxViola = \relative c'' {
 	\clef alto
+	\key e \major
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Viola."
