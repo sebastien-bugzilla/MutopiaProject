@@ -300,7 +300,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	d~
 	d\fermata\espressivo \bar "|."
 }
-MvtDeuxClarinettiAII = \relative c {
+MvtDeuxClarinettiAII = \relative c'' {
 	\clef treble
 	\key g \major
 	\override TupletBracket #'bracket-visibility = ##f
@@ -311,33 +311,62 @@ MvtDeuxClarinettiAII = \relative c {
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event
                                       dynamic-event slur-event)
+    \transposition a
 % mesures 1 à 5
-	
+	R4.*13
 % mesures 6 à 10
 	
 % mesures 11 à 15
 	
-% mesures 16 à 20
 	
+	
+	g4.\fp\>(
+	fis4)\! r8
+% mesures 16 à 20
+	R4.*17
 % mesures 21 à 25
 	
 % mesures 26 à 30
 	
 % mesures 31 à 35
 	
+	\mark \default
+	a4.\f
+	b
+	c8( d8.-> c16)
 % mesures 36 à 40
-	
+	b4.
+	cis
+	d
+	e8( fis8.-> e16)
+	d4.
 % mesures 41 à 45
-	
+	dis
+	e4( dis8)
+	e8( fis8.-> e16)
+	dis4.
+	R4.*5
 % mesures 46 à 50
 	
+	
+	
+	
+	g,\fp\>(
 % mesures 51 à 55
+	fis4)\! r8
+	R4.*44
+	
+	
 	
 % mesures 56 à 60
 	
 % mesures 61 à 65
 	
 % mesures 66 à 70
+	
+	
+	
+	
 	
 % mesures 71 à 75
 	
@@ -349,14 +378,31 @@ MvtDeuxClarinettiAII = \relative c {
 	
 % mesures 91 à 95
 	
+	
+	
+	
+	\mark \default
 % mesures 96 à 100
-	
+	g4.\ff
+	e
+	a
+	fis
+	g4( gis8)
 % mesures 101 à 105
-	
+	a4( ais8
+	b)-. e-. dis-.
+	e\noBeam e,-. b'->~
+	b e,-. e'~->
+	e a,-. c->~
 % mesures 106 à 110
-	
+	c b-. fis'~
+	fis16 e-. g8-. gis~
+	gis16 b-. a8-. bes
+	bes,16\fz bes8 bes bes16
+	e e8 e e16 \mark \default
 % mesures 111 à 115
-	
+	f8 r r
+	R4.*43
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -367,32 +413,61 @@ MvtDeuxClarinettiAII = \relative c {
 	
 % mesures 136 à 140
 	
+	
+	
 % mesures 141 à 145
 	
 % mesures 146 à 150
 	
 % mesures 151 à 155
 	
-% mesures 156 à 160
 	
+	
+	
+	g,4.(\fp\>
+% mesures 156 à 160
+	fis)\!(
+	g8) r r
+	R4.*16
 % mesures 161 à 165
 	
 % mesures 166 à 170
 	
 % mesures 171 à 175
 	
+	
+	\mark \default
+	a4.\ff
+	b
 % mesures 176 à 180
-	
+	c8( d8.-> c16)
+	b4.
+	b
+	c
+	d8( e8.-> d16)
 % mesures 181 à 185
-	
+	c4.
+	b
+	c4 b8
+	c8( d8.-> c16)
+	b4.
 % mesures 186 à 190
-	
+	R4.*5
 % mesures 191 à 195
-	
+	fis!4.\fp\>(
+	f)\!(
+	e8) r r
+	b'4.->(
+	c8) r r
 % mesures 196 à 200
-	
+	b4.->(
+	c8) r r
+	R4.
+	c4.(\pp
+	b
 % mesures 201 à 205
-	
+	c4) r8
+	R4.*36
 % mesures 206 à 210
 	
 % mesures 211 à 215
@@ -401,40 +476,101 @@ MvtDeuxClarinettiAII = \relative c {
 	
 % mesures 221 à 225
 	
+	
+	
+	
+	
 % mesures 226 à 230
+	
+	
+	
+	
 	
 % mesures 231 à 235
 	
+	
+	
+	
+	
 % mesures 236 à 240
-	
+	\mark \default
+	c4.\ff
+	ees
+	d
+	b4 f8
 % mesures 241 à 245
-	
+	ees c' bes~
+	bes aes c~
+	c bes-. a!-.
+	g4.
+	bes
 % mesures 246 à 250
-	
+	a
+	c
+	bes8 d4
+	c8 ees4
+	des16\ff des8 des des16(
 % mesures 251 à 255
-	
+	bes) bes8 bes bes16(
+	aes4.)\>~
+	aes\p
+	a16\ff a8 a a16~
+	a a8 a a16( \mark \default
 % mesures 256 à 260
-	
+	g4.\>)(
+	cis\fp\>)
+	d4\! r8
+	cis4.(\fp\>
+	c4)\! r8
 % mesures 261 à 265
-	
+	d( b g
+	d4) r8
+	d'(_\crescmarkup e16 d b g
+	d4) r8
+	R4.
 % mesures 266 à 270
+	c'4\< c8\!
+	c8. a16 b c
+	b8 r r
+	R4.*17
 	
 % mesures 271 à 275
+	
+	
+	
+	
 	
 % mesures 276 à 280
 	
 % mesures 281 à 285
 	
 % mesures 286 à 290
-	
+	ces4.\ppp~
+	ces~
+	ces(
+	bes4.)\>(
+	ces4)\! r8
 % mesures 291 à 295
-	
+	R4.*5
 % mesures 296 à 300
-	
+	b!4.(\pp\<
+	c!\>
+	b)\!
+	c4.(
+	b4) r8
 % mesures 301 à 305
-	
+	fis4.->(
+	g4) r8
+	fis4.->(
+	g8) r r 
+	fis4.(->
 % mesures 306 à 310
-	
+	g8) r r
+	fis4.\>
+	g4.~\!
+	g(
+	b)~
 % mesures 311 à 312
-	
+	b~
+	b\fermata\espressivo \bar "|."
 }
