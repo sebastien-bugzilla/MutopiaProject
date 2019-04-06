@@ -180,7 +180,7 @@ MvtDeuxFagottiI = \relative c' {
 	dis'4.(->
 % mesures 171 à 175
 	e8) r r
-	dis4.(
+	dis4.(->
 	e4) r8 \clef tenor \mark \default 
 	dis4.\ff
 	e
@@ -255,7 +255,7 @@ MvtDeuxFagottiI = \relative c' {
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis'!4.(\>
-	g')\fp(
+	g')\fp\>(
 	fis4\!) r8 \clef tenor
 	c4.\fp(\>
 	b16)\!( dis fis a gis fis
@@ -373,9 +373,9 @@ MvtDeuxFagottiII = \relative c' {
 	
 	
 	
-	c4.\fp\>
+	c4.\fp\>(
 % mesures 51 à 55
-	b4\! r8
+	b4\!) r8
 	R4. \clef bass
 	a4.(->
 	gis8) r r
@@ -414,7 +414,7 @@ MvtDeuxFagottiII = \relative c' {
 	dis
 % mesures 106 à 110
 	fis
-	e8 gis4
+	gis8 gis4
 	fis8 a4
 	a,32[ cis e g] a[ g e cis] a[ cis e g]
 	a[ g e cis] a[ cis e g] a[ g e a,] \mark \default
@@ -438,7 +438,7 @@ MvtDeuxFagottiII = \relative c' {
 	r8 r \clef tenor c16(\< d
 	e4)(\> f8
 	e4\!) r8
-	R4.12
+	R4.*12
 % mesures 131 à 135
 	
 	
@@ -485,7 +485,7 @@ MvtDeuxFagottiII = \relative c' {
 	a4.(->
 % mesures 171 à 175
 	gis8) r r
-	a4.(
+	a4.(->
 	gis4) r8 \clef tenor \mark \default 
 	fis4.\ff
 	gis
@@ -556,11 +556,11 @@ MvtDeuxFagottiII = \relative c' {
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
 	R4.
-	b,,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
+	b,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r
-	e'4.\fp(
+	e'4.\fp\>(
 	dis4\!) r8 \clef tenor
 	R4.*3
 	
@@ -584,18 +584,18 @@ MvtDeuxFagottiII = \relative c' {
 	a)(
 % mesures 276 à 280
 	gis)(\<
-	cis)~
-	b4(\> a8
+	cis)(
+	b4)(\> a8
 	gis4\! a8
 	gis4) r8
 % mesures 281 à 285
 	R4.*5
 % mesures 286 à 290
-	c4.(\ppp
+	c4.\(\ppp
 	des
 	c4.\<
 	des4.\>(
-	c4)\! r8
+	c4)\)\! r8
 % mesures 291 à 295
 	R4.*10
 % mesures 296 à 300
