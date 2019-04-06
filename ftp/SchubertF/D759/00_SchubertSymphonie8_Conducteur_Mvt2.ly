@@ -98,7 +98,7 @@ global = {
 %			    \new Staff << \global \partcombine \MvtDeuxFlautiI \MvtDeuxFlautiII >>
 %			    \new Staff << \global \partcombine \MvtDeuxOboeI \MvtDeuxOboeII >>
 %			    \new Staff << \global \partcombine \MvtDeuxClarinettiAI \MvtDeuxClarinettiAII >>
-			    \new Staff << \global \MvtDeuxFagottiI >>
+			    \new Staff << \global \MvtDeuxFagottiII >>
 %			    \new Staff << \global \MvtDeuxCorniD >>
 %			    \new Staff << \global \MvtDeuxTrombeE >>
 %			    \new Staff << \global \MvtDeuxVoixSept >>
