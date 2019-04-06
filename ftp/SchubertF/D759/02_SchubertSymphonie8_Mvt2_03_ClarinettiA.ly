@@ -351,7 +351,7 @@ MvtDeuxClarinettiAII = \relative c'' {
 	
 	
 	
-	g,\fp\>(
+	g,4.\fp\>(
 % mesures 51 à 55
 	fis4)\! r8
 	R4.*44
@@ -467,7 +467,7 @@ MvtDeuxClarinettiAII = \relative c'' {
 	b
 % mesures 201 à 205
 	c4) r8
-	R4.*36
+	R4.*35
 % mesures 206 à 210
 	
 % mesures 211 à 215
@@ -514,14 +514,14 @@ MvtDeuxClarinettiAII = \relative c'' {
 	bes) bes8 bes bes16(
 	aes4.)\>~
 	aes\p
-	a16\ff a8 a a16~
+	a!16\ff a8 a a16~
 	a a8 a a16( \mark \default
 % mesures 256 à 260
 	g4.\>)(
 	cis\fp\>)
 	d4\! r8
 	cis4.(\fp\>
-	c4)\! r8
+	c!4)\! r8
 % mesures 261 à 265
 	d( b g
 	d4) r8
