@@ -202,7 +202,7 @@ MvtDeuxBasso = \relative c {
 	
 	
 	cis'8-. dis-. e-.
-	r8 e^\pizz\fp-. g-.
+	r8 e\fp-. g-.
 % mesures 156 à 160
 	b4 r8
 	e, r r 

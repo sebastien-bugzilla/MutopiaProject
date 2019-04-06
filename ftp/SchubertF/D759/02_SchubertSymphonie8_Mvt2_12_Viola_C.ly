@@ -346,7 +346,7 @@ MvtDeuxViola = \relative c'' {
 	g[ fis e fis] dis[ fis b c] b[ a g fis]
 	e[ fis g e] d[ g b c] d[ f e d]
 	c[ b a gis!] e'[ d c b] c[ bes g e]
-	c[ e g bes] c[ bes g e] c[ e g bes]
+	c[\ff e g bes] c[ bes g e] c[ e g bes]
 % mesures 251 à 255
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
