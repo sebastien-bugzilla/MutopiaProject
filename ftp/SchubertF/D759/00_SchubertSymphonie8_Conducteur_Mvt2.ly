@@ -98,8 +98,8 @@ global = {
 %			    \new Staff << \global \partcombine \MvtDeuxFlautiI \MvtDeuxFlautiII >>
 %			    \new Staff << \global \partcombine \MvtDeuxOboeI \MvtDeuxOboeII >>
 %			    \new Staff << \global \partcombine \MvtDeuxClarinettiAI \MvtDeuxClarinettiAII >>
-			    \new Staff << \global \partcombine \MvtDeuxFagottiI \MvtDeuxFagottiII >>
-%			    \new Staff << \global \MvtDeuxCorniD >>
+%			    \new Staff { \global \partcombine \MvtDeuxFagottiI \MvtDeuxFagottiII }
+			    \new Staff << \global \MvtDeuxCorniDI >>
 %			    \new Staff << \global \MvtDeuxTrombeE >>
 %			    \new Staff << \global \MvtDeuxVoixSept >>
 %			    \new Staff << \global \MvtDeuxTromboni_basso >>
@@ -116,6 +116,12 @@ global = {
 		}
 		\layout {
 			%system-count = #20
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
 		}
 	}
 %	\score {

@@ -9,8 +9,6 @@
 MvtDeuxTimpaniEH = \relative c {
 	\clef treble
 	\key e \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #""
 % mesures 1 à 5
 	

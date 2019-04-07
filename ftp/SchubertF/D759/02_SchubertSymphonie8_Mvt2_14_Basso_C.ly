@@ -9,8 +9,6 @@
 MvtDeuxBasso = \relative c {
 	\clef bass
 	\key e \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Basso."
 	\set Staff.midiInstrument = #"contrabass"
 	\set Score.alternativeNumberingStyle = #'numbers

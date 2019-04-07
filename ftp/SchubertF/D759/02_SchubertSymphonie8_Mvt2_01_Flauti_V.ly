@@ -9,8 +9,6 @@
 MvtDeuxFlautiI = \relative c'' {
 	\clef treble
 	\key e \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Flauti"
 	\set Staff.midiInstrument = #"flute"
 	\set Score.alternativeNumberingStyle = #'numbers
@@ -315,8 +313,6 @@ MvtDeuxFlautiI = \relative c'' {
 MvtDeuxFlautiII = \relative c'' {
 	\clef treble
 	\key e \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Flauti"
 	\set Staff.midiInstrument = #"flute"
 	\set Score.alternativeNumberingStyle = #'numbers

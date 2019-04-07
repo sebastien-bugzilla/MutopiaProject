@@ -9,8 +9,6 @@
 MvtDeuxFagottiI = \relative c' {
 	\clef bass
 	\key e \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Fagot I"
 	\set Staff.midiInstrument = #"bassoon"
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
@@ -254,8 +252,8 @@ MvtDeuxFagottiI = \relative c' {
 	b,,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
-	cis'!4.(_\>
-	g')(\!
+	cis'!4.(
+	g')(
 	fis4) r8 \clef tenor
 	\partcombineApart c4._\fp(_\>
 	b16)\!( dis fis a gis fis
@@ -314,8 +312,6 @@ MvtDeuxFagottiI = \relative c' {
 MvtDeuxFagottiII = \relative c' {
 	\clef bass
 	\key e \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Fagot II"
 	\set Staff.midiInstrument = #"bassoon"
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
@@ -559,7 +555,7 @@ MvtDeuxFagottiII = \relative c' {
 	b,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
-	cis!8 r r
+	cis!8\> r r\!
 	e'4.\fp\>(
 	dis4\!) r8 \clef tenor
 	R4.*3

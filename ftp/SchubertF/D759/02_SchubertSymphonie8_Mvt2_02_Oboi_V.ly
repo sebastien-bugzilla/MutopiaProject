@@ -9,8 +9,6 @@
 MvtDeuxOboeI = \relative c'' {
 	\clef treble
 	\key e \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Oboi"
 	\set Staff.midiInstrument = #"oboe"
 	\set Score.alternativeNumberingStyle = #'numbers
@@ -318,8 +316,6 @@ MvtDeuxOboeI = \relative c'' {
 MvtDeuxOboeII = \relative c'' {
 	\clef treble
 	\key e \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Oboi"
 	\set Staff.midiInstrument = #"Oboe"
 	\set Score.alternativeNumberingStyle = #'numbers

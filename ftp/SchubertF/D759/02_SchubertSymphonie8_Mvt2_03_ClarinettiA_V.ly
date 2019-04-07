@@ -9,8 +9,6 @@
 MvtDeuxClarinettiAI = \relative c'' {
 	\clef treble
 	\key g \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Clarinetti"
 	\set Staff.midiInstrument = #"clarinet"
 	\set Score.alternativeNumberingStyle = #'numbers
@@ -303,8 +301,6 @@ MvtDeuxClarinettiAI = \relative c'' {
 MvtDeuxClarinettiAII = \relative c'' {
 	\clef treble
 	\key g \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Clarinetti"
 	\set Staff.midiInstrument = #"clarinet"
 	\set Score.alternativeNumberingStyle = #'numbers

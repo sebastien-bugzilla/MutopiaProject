@@ -9,8 +9,6 @@
 MvtDeuxFagottiI = \relative c' {
 	\clef bass
 	\key e \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Fagot I"
 	\set Staff.midiInstrument = #"bassoon"
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
@@ -314,8 +312,6 @@ MvtDeuxFagottiI = \relative c' {
 MvtDeuxFagottiII = \relative c' {
 	\clef bass
 	\key e \major
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Fagot II"
 	\set Staff.midiInstrument = #"bassoon"
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
