@@ -94,18 +94,19 @@ MvtDeuxCorniDI = \relative c'' {
 	
 % mesures 91 à 95
 	
-% mesures 96 à 100
 	\mark \default
+% mesures 96 à 100
 	e4.\ff
 	e
 	f
 	e
-% mesures 101 à 105
 	e4 g8~
+% mesures 101 à 105
 	g( f) c~
 	c e-. e-.
 	e r e\fz
 	r r e\fz
+	r r f\fz
 % mesures 106 à 110
 	r r e\fz
 	r r e\fz
@@ -235,7 +236,7 @@ MvtDeuxCorniDI = \relative c'' {
 	g4)\! r8
 % mesures 261 à 265
 	R4.
-	d4.(->
+	d'4.(->
 	e8) r r
 	d4-> f8~->
 	f\pp f4->
