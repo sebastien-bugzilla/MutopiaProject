@@ -326,7 +326,7 @@ MvtDeuxCorniDII = \relative c' {
 	g8\! r r
 % mesures 31 à 35
 	g4.\>~
-	e8\! r r \mark \default
+	g8\! r r \mark \default
 	g4.\f
 	g
 	g8 g4->
@@ -355,7 +355,7 @@ MvtDeuxCorniDII = \relative c' {
 	g8 r r
 	g4.->~
 % mesures 56 à 60
-	e8 r r
+	g8 r r
 	R4.
 	e4.\ppp
 	g~
@@ -439,7 +439,7 @@ MvtDeuxCorniDII = \relative c' {
 % mesures 171 à 175
 	g8 r r
 	g4.->~
-	e4 r8 \mark \default
+	g4 r8 \mark \default
 	g4.\ff
 	g
 % mesures 176 à 180
@@ -527,13 +527,13 @@ MvtDeuxCorniDII = \relative c' {
 	
 	
 	e,4.\ppp(
-	g~
+	g)~
 % mesures 276 à 280
 	g(\<
 	a)(\!
 	g4)\> f8
 	g,4\! g8
-	c4) r8
+	c4 r8
 % mesures 281 à 285
 	R4.*15
 % mesures 286 à 290
