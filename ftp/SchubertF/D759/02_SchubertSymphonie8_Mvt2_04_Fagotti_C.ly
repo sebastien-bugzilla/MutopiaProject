@@ -32,10 +32,10 @@ MvtDeuxFagottiI = \relative c' {
 	
 	
 	
-	\clef tenor c4.(
+	\clef tenor \partcombineApart c4.(
 	b16 dis fis a gis fis
 % mesures 16 à 20
-	e8) r r
+	e8) r r \partcombineAutomatic
 	R4.*12
 % mesures 21 à 25
 	
@@ -62,13 +62,13 @@ MvtDeuxFagottiI = \relative c' {
 	e4( dis8)
 	e8( fis8.-> e16)
 	dis4. \clef bass
-	e,8(\pp e' dis
+	\partcombineApart e,8(_\pp e' dis
 % mesures 46 à 50
 	cis a cis16 dis
 	e8 e, fis)
 	gis4.->(
-	cis,) \clef tenor
-	c'4.\fp\>
+	cis,) \clef tenor \partcombineAutomatic
+	c'4.
 % mesures 51 à 55
 	b16\!( dis fis a gis fis
 	e8) r r \clef bass
@@ -100,17 +100,17 @@ MvtDeuxFagottiI = \relative c' {
 	e
 	dis
 	fis
-	e8 gis,4
+	e8 \partcombineApart gis,4
 % mesures 101 à 105
 	fis8 a4
-	gis8-. e'-. dis-.
+	gis8-.[ \partcombineAutomatic e'-. dis-.]
 	cis4.
 	e
 	dis
 % mesures 106 à 110
 	fis
-	e8 gis,4
-	fis8 a4
+	e8 \partcombineApart gis,4
+	\partcombineAutomatic fis8 a4
 	a,32[ cis e g] a[ g e cis] a[ cis e g]
 	a[ g e cis] a[ cis e g] a[ g e a,] \mark \default
 % mesures 111 à 115
@@ -120,25 +120,25 @@ MvtDeuxFagottiI = \relative c' {
 	
 	
 	
-	r8 r b'16(\p\< cis!
-	d4.)~\>
+	r8 r b'16( cis!
+	d4.)~
 % mesures 121 à 125
-	d4\! r8
+	d4 r8
 	R4.*5
 	
 	
 	
 % mesures 126 à 130
 	
-	r8 r \clef tenor e16(\< fis!
-	g4.)~\>
-	g4\! r8
+	r8 r \clef tenor e16( fis!
+	g4.)~
+	g4 r8
 	R4.
 % mesures 131 à 135
-	e4->( a16 e)
+	\partcombineApart e4->( a16 e)
 	e8 r r
 	e4->( a16. g32)
-	g8 r r
+	g8 r r \partcombineAutomatic
 	R4.*7
 % mesures 136 à 140
 	
@@ -159,24 +159,24 @@ MvtDeuxFagottiI = \relative c' {
 	
 	
 	\clef tenor
-	c4.(\fp\>
+	\partcombineApart c4.(_\fp_\>
 % mesures 156 à 160
 	b16\!)( dis fis a gis fis 
-	e8) r r
+	e8) r r \partcombineAutomatic
 	R4.*4
 	
 	
 % mesures 161 à 165
 	
-	\clef bass a,8(\> b c\!
-	b) r r
+	\partcombineApart \clef bass a,8(\> b c\!
+	b) r r \partcombineAutomatic
 	R4.*4
 	
 % mesures 166 à 170
 	
 	
-	fis8(\> gis! a\!
-	gis) r r
+	\partcombineApart fis8(\> gis! a\!
+	gis) r r \partcombineAutomatic
 	dis'4.(->
 % mesures 171 à 175
 	e8) r r
@@ -197,22 +197,22 @@ MvtDeuxFagottiI = \relative c' {
 	fis8( gis8.-> fis16)
 	eis4.
 % mesures 186 à 190
-	a,8(\pp a' gis
+	\partcombineApart a,8(_\pp a' gis
 	fis d fis16 gis
 	a8 a, b)
 	cis4.->(
-	fis,)
+	fis,) \partcombineAutomatic
 % mesures 191 à 195
-	c'4.(\fp\>
-	b)(\!
+	c'4.(
+	b)(
 	e8)( cis! a
 	e') r r
 	e(_\crescmarkup fis16 e cis a)
 % mesures 196 à 200
 	e'8-> r r
-	R4.*2
-	
-	e4.\pp~
+	R4.
+	\partcombineUnisonoOnce R
+	e4.~
 	e~
 % mesures 201 à 205
 	e4 r8
@@ -254,43 +254,43 @@ MvtDeuxFagottiI = \relative c' {
 	b,,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
-	cis'!4.(\>
-	g')\fp\>(
-	fis4\!) r8 \clef tenor
-	c4.\fp(\>
+	cis'!4.(_\>
+	g')(\!
+	fis4) r8 \clef tenor
+	\partcombineApart c4._\fp(_\>
 	b16)\!( dis fis a gis fis
 % mesures 261 à 265
-	e8) r r \clef bass
+	e8) r r \clef bass \partcombineAutomatic
 	dis4.(->
 	e8) r r
 	dis4-> dis8~->
 	dis\pp dis4->
 % mesures 266 à 270
-	dis4\< dis8 \clef tenor
-	a'8.\>( fis16 gis a
-	gis8\!) r r
+	dis4 dis8 \clef tenor
+	a'8.( fis16 gis a
+	gis8) r r
 	R4.*5
 	
 % mesures 271 à 275
 	
 	
 	\clef bass
-	b,4.\ppp(
+	b,4.(
 	dis)(
 % mesures 276 à 280
-	e)(\<
+	e)(
 	dis)~
-	dis4(\> cis8
-	b4.)~\!
+	dis4( cis8
+	b4.)~
 	b4 r8
 % mesures 281 à 285
 	R4.*5
 % mesures 286 à 290
-	ees4.(\ppp
+	ees4.(
 	f
-	ees4\< f8
-	ees4.\>~
-	ees4)\! r8
+	ees4 f8
+	ees4.~
+	ees4) r8
 % mesures 291 à 295
 	R4.*10
 % mesures 296 à 300
@@ -303,13 +303,13 @@ MvtDeuxFagottiI = \relative c' {
 	b4.->~
 % mesures 306 à 310
 	b8 r r
-	b4.\>
-	b~\!
+	b4.
+	b~
 	b~
 	b~
 % mesures 311 à 312
 	b~
-	b\fermata\espressivo \bar "|."
+	b\fermata \bar "|."
 }
 MvtDeuxFagottiII = \relative c' {
 	\clef bass
@@ -332,16 +332,16 @@ MvtDeuxFagottiII = \relative c' {
 	b4.(\<
 	a\>
 	gis8)\! r r
-	R4.*19
+	R4.*4
 % mesures 11 à 15
 	
 	
 	
-	
-	
+	R4.
+	R
 % mesures 16 à 20
-	
-	
+	R
+	R4.*12
 % mesures 21 à 25
 	
 % mesures 26 à 30
@@ -438,13 +438,13 @@ MvtDeuxFagottiII = \relative c' {
 	r8 r \clef tenor c16(\< d
 	e4)(\> f8
 	e4\!) r8
-	R4.*12
+	R4.
 % mesures 131 à 135
-	
-	
-	
-	
-	
+	R
+	R
+	R
+	R
+	R4.*7
 % mesures 136 à 140
 	
 % mesures 141 à 145
@@ -460,28 +460,28 @@ MvtDeuxFagottiII = \relative c' {
 	a\>
 	gis8)\! r r
 % mesures 151 à 155
-	R4.*19
+	R4.*4
 	
 	
 	
-	
+	R4.
 % mesures 156 à 160
-	
-	
-	
+	R
+	R
+	R4.*4
 	
 	
 % mesures 161 à 165
 	
-	
-	
-	
+	R4.
+	R
+	R4.*4
 	
 % mesures 166 à 170
 	
 	
-	
-	
+	R4.
+	R
 	a4.(->
 % mesures 171 à 175
 	gis8) r r
@@ -591,11 +591,11 @@ MvtDeuxFagottiII = \relative c' {
 % mesures 281 à 285
 	R4.*5
 % mesures 286 à 290
-	c4.\(\ppp
+	c4.\ppp
 	des
 	c4.\<
 	des4.\>(
-	c4)\)\! r8
+	c4)\! r8
 % mesures 291 à 295
 	R4.*10
 % mesures 296 à 300
@@ -614,5 +614,5 @@ MvtDeuxFagottiII = \relative c' {
 	gis~
 % mesures 311 à 312
 	gis~
-	gis\fermata\espressivo \bar "|."
+	gis\espressivo \bar "|."
 }
