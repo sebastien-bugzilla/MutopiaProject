@@ -34,7 +34,7 @@ MvtDeuxTrombeEI = \relative c'' {
 	g4.
 	d'
 	d
-	d4 d8
+	d8 d4
 	g,4.
 % mesures 41 à 45
 	e
@@ -149,13 +149,13 @@ MvtDeuxTrombeEI = \relative c'' {
 	\mark \default
 	c4.\ff
 	c
-	f
-	e
+	R4.
+	g
 % mesures 241 à 245
 	c
-	f
-	c8-. c-. g'-.
-	c,8 c4\fz
+	R4.
+	r8 g-. g-.
+	c8 c4\fz
 	r8 c4\fz
 % mesures 246 à 250
 	r8 c4\fz
