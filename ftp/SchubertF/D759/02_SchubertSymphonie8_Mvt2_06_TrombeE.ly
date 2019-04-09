@@ -206,7 +206,7 @@ MvtDeuxTrombeEI = \relative c'' {
 }
 MvtDeuxTrombeEII = \relative c' {
 	\clef treble
-	\key e \major
+	\key c \major
 	\set Staff.instrumentName = #"Trombe in E."
 	\set Staff.midiInstrument = #"trumpet"
 	\transposition e
