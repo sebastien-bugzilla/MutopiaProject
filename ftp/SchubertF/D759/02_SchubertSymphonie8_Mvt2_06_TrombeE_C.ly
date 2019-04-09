@@ -27,14 +27,14 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 31 à 35
 	
 	\mark \default
-	g4.\f
+	g4. -\tweak X-offset #-2.2 \f
 	g
 	g8 g4
 % mesures 36 à 40
-	g4.
-	d'
+	g4. \partcombineApart
+	d' \partcombineAutomatic
 	d
-	d8 d4
+	\partcombineApart d8 d4 \partcombineAutomatic
 	g,4.
 % mesures 41 à 45
 	e
@@ -45,7 +45,7 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	g4.(\p
+	g4.( -\tweak X-offset #-2.2 \p
 	e8) r r
 	R4.*43
 % mesures 56 à 60
@@ -69,14 +69,14 @@ MvtDeuxTrombeEI = \relative c'' {
 	
 	\mark \default
 % mesures 96 à 100
-	e4.\ff
-	e
+	e4. -\tweak X-offset #-3.5 \ff
+	\partcombineApart e \partcombineAutomatic
 	R4.
-	e
+	\partcombineApart e
 	e
 % mesures 101 à 105
-	r8 r c~
-	c e-. e-.
+	\partcombineAutomatic r8 r \partcombineApart c~
+	c e-. e-. \partcombineAutomatic
 	r e4\fz
 	r8 e4\fz
 	r8 d'4\fz
@@ -84,8 +84,8 @@ MvtDeuxTrombeEI = \relative c'' {
 	r8 e,4\fz
 	r8 e4\fz
 	r8 d'-. c-.
-	c,4.
-	c \mark \default
+	\partcombineApart c,4.
+	c \partcombineAutomatic \mark \default
 % mesures 111 à 115
 	R4.*63
 % mesures 116 à 120
@@ -225,7 +225,7 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 31 à 35
 	
 	\mark \default
-	g4.\f
+	g4.
 	g
 	g8 g4
 % mesures 36 à 40
@@ -243,7 +243,7 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	g,4.(\p
+	g,4.(
 	c8) r r
 	R4.*43
 % mesures 56 à 60
@@ -267,7 +267,7 @@ MvtDeuxTrombeEII = \relative c' {
 	
 	\mark \default
 % mesures 96 à 100
-	c4.\ff
+	c4.
 	e
 	R4.
 	e
