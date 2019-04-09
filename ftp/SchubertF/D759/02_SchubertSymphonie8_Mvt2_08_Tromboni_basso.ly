@@ -34,7 +34,7 @@ MvtDeuxTromboni_basso = \relative c' {
 	fis-. gis-. e-. 
 	dis-. cis-. b-. 
 	ais-. fis-. ais-. 
-	b-. b'-. a-. 
+	b-. b'-. a!-. 
 % mesures 41 à 45
 	gis a fis
 	e cis gis'
@@ -120,7 +120,7 @@ MvtDeuxTromboni_basso = \relative c' {
 	b'8\ff-. cis-. a-.
 	gis-. fis-. e-. 
 % mesures 176 à 180
-	dis^\stacc b dis
+	dis_\stacc b dis
 	e gis b
 	e, fis d
 	cis b a
@@ -168,7 +168,7 @@ MvtDeuxTromboni_basso = \relative c' {
 	c b-. fis'~
 	fis16 e g8-. gis~
 	gis16 b a8-. c-.
-	c,\ff
+	c,4.\ff
 % mesures 251 à 255
 	c
 	f,8 r r
