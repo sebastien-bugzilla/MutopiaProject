@@ -66,16 +66,16 @@ MvtDeuxTimpaniEH = \relative c {
 	
 	\mark \default
 % mesures 96 à 100
-	e8:32\ff e r
-	e:32 e r
+	e8:32\ff\noBeam e r
+	e:32\noBeam e r
 	R4.*2
 	
-	e8:32 e r8
+	e8:32\noBeam e r8
 % mesures 101 à 105
 	r r e:32
 	e r r
-	r e32 e e e e8
-	r e32 e e e e8
+	r e32 e e e e8\noBeam
+	r e32 e e e e8\noBeam
 	R4.*3
 % mesures 106 à 110
 	
@@ -121,7 +121,7 @@ MvtDeuxTimpaniEH = \relative c {
 	e e\fz r
 % mesures 181 à 185
 	e4 r8
-	R4.55
+	R4.*55
 % mesures 186 à 190
 	
 % mesures 191 à 195
@@ -144,12 +144,12 @@ MvtDeuxTimpaniEH = \relative c {
 	
 % mesures 236 à 240
 	\mark \default
-	e8:32\ff e8 r
-	e:32 e r
+	e8:32\ff\noBeam e8 r
+	e:32\noBeam e r
 	R4.
-	b8:32 b8 r
+	b8:32\noBeam b8 r
 % mesures 241 à 245
-	e8:32 e8 r
+	e8:32\noBeam e8 r
 	R4.
 	r8 b b
 	e e\fz r
