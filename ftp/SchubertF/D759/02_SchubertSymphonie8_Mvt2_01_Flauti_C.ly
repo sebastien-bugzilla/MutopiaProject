@@ -465,6 +465,7 @@ MvtDeuxFlautiII = \relative c'' {
 	
 	ais,4.(\fp\>
 % mesures 156 à 160
+	a!)\!
 	gis\pp\<
 	b\>~
 	b8\! r r

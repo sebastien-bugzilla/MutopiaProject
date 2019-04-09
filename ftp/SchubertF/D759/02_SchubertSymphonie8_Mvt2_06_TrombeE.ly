@@ -6,12 +6,14 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   6               #
 %#######################################################################
-MvtDeuxTrombeEI = \relative c {
+MvtDeuxTrombeEI = \relative c'' {
 	\clef treble
-	\key e \major
-	\set Staff.instrumentName = #""
+	\key c \major
+	\set Staff.instrumentName = #"Trombe in E."
+	\set Staff.midiInstrument = #"trumpet"
+	\transposition e
 % mesures 1 à 5
-	
+	R4.*32
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -24,14 +26,28 @@ MvtDeuxTrombeEI = \relative c {
 	
 % mesures 31 à 35
 	
+	\mark \default
+	g4.\f
+	g
+	g8 g4
 % mesures 36 à 40
-	
+	g4.
+	d'
+	d
+	d4 d8
+	g,4.
 % mesures 41 à 45
-	
+	e
+	e
+	e8 e4
+	e4.
+	R4.*6
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	
+	g4.(\p
+	e8) r r
+	R4.*43
 % mesures 56 à 60
 	
 % mesures 61 à 65
@@ -48,14 +64,30 @@ MvtDeuxTrombeEI = \relative c {
 	
 % mesures 91 à 95
 	
+	
+	
+	
+	\mark \default
 % mesures 96 à 100
-	
+	e4.\ff
+	e
+	R4.
+	e
+	e
 % mesures 101 à 105
-	
+	r8 r c~
+	c e-. e-.
+	r e4\fz
+	r8 e4\fz
+	r8 d'4\fz
 % mesures 106 à 110
-	
+	r8 e,4\fz
+	r8 e4\fz
+	r8 d'-. c-.
+	c,4.
+	c \mark \default
 % mesures 111 à 115
-	
+	R4.*63
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -80,10 +112,19 @@ MvtDeuxTrombeEI = \relative c {
 	
 % mesures 171 à 175
 	
+	
+	\mark \default
+	g'4.\ff
+	g
 % mesures 176 à 180
-	
+	g8 g4
+	g4.
+	c
+	c
+	c8 c4\fz
 % mesures 181 à 185
-	
+	c4.
+	R4.*55
 % mesures 186 à 190
 	
 % mesures 191 à 195
@@ -105,17 +146,38 @@ MvtDeuxTrombeEI = \relative c {
 % mesures 231 à 235
 	
 % mesures 236 à 240
-	
+	\mark \default
+	c4.\ff
+	c
+	f
+	e
 % mesures 241 à 245
-	
+	c
+	f
+	c8-. c-. g'-.
+	c,8 c4\fz
+	r8 c4\fz
 % mesures 246 à 250
-	
+	r8 c4\fz
+	r8 g4\fz
+	r8 g4\fz
+	r8 c-. c-.
+	c4.\ff
 % mesures 251 à 255
+	c
+	R4.*2
 	
+	g4.\ff
+	g \mark \default
 % mesures 256 à 260
-	
+	e8 r r
+	R4.
+	g4.\pp(
+	c,8) r r
+	g'4.(
 % mesures 261 à 265
-	
+	e8) r r
+	R4.*48
 % mesures 266 à 270
 	
 % mesures 271 à 275
@@ -134,13 +196,20 @@ MvtDeuxTrombeEI = \relative c {
 	
 % mesures 306 à 310
 	
-% mesures 311 à 312
 	
+	
+	
+	e4.\pp~
+% mesures 311 à 312
+	e~
+	e\fermata\espressivo \bar "|."
 }
 MvtDeuxTrombeEII = \relative c {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #""
+	\set Staff.instrumentName = #"Trombe in E."
+	\set Staff.midiInstrument = #"trumpet"
+	\transposition e
 % mesures 1 à 5
 	
 % mesures 6 à 10
