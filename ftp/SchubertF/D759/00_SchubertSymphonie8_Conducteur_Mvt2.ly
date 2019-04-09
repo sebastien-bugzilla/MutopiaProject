@@ -100,7 +100,7 @@ global = {
 %			    \new Staff << \global \partcombine \MvtDeuxClarinettiAI \MvtDeuxClarinettiAII >>
 %			    \new Staff { \global \partcombine \MvtDeuxFagottiI \MvtDeuxFagottiII }
 %			    \new Staff << \global \partcombine \MvtDeuxCorniDI \MvtDeuxCorniDII >>
-			    \new Staff << \global \MvtDeuxTrombeEI >>
+			    \new Staff << \global \MvtDeuxTrombeEII >>
 %			    \new Staff << \global \MvtDeuxVoixSept >>
 %			    \new Staff << \global \MvtDeuxTromboni_basso >>
 %			    \new Staff << \global \MvtDeuxTimpaniEH >>
