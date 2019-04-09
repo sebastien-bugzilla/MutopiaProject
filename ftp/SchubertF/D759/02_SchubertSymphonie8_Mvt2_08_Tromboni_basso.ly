@@ -6,12 +6,13 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   8               #
 %#######################################################################
-MvtDeuxTromboni_basso = \relative c {
-	\clef treble
+MvtDeuxTromboni_basso = \relative c' {
+	\clef bass
 	\key e \major
-	\set Staff.instrumentName = #""
+	\set Staff.instrumentName = #"Tromboni"
+	\set Staff.midiInstrument = #"trombone"
 % mesures 1 à 5
-	
+	R4.*32
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -24,10 +25,22 @@ MvtDeuxTromboni_basso = \relative c {
 	
 % mesures 31 à 35
 	
+	\mark \default
+	b8-.\f cis-. a-.
+	gis-. fis-. e-. 
+	dis-. b-. dis-. 
 % mesures 36 à 40
-	
+	e-. fis-. gis-. 
+	fis-. gis-. e-. 
+	dis-. cis-. b-. 
+	ais-. fis-. ais-. 
+	b-. b'-. a-. 
 % mesures 41 à 45
-	
+	gis a fis
+	e cis gis'
+	e bis cis
+	gis'4.
+	R4.*51
 % mesures 46 à 50
 	
 % mesures 51 à 55
@@ -47,21 +60,43 @@ MvtDeuxTromboni_basso = \relative c {
 % mesures 86 à 90
 	
 % mesures 91 à 95
-	
+	\mark \default
 % mesures 96 à 100
-	
+	cis,4.\ff
+	e
+	dis
+	fis
+	e8 gis4
 % mesures 101 à 105
-	
+	fis8 a4
+	gis8-. gis,-. gis
+	cis4.
+	e
+	dis
 % mesures 106 à 110
-	
+	fis
+	e8 gis4
+	fis8 a4
+	a4.
+	a, \mark \default
 % mesures 111 à 115
-	
+	d8 r r
+	R4.*7
 % mesures 116 à 120
 	
-% mesures 121 à 125
 	
+	
+	r8 r e\p
+	d4.
+% mesures 121 à 125
+	g,4 r8
+	R4.*5
 % mesures 126 à 130
 	
+	r8 r a'\p
+	g4.(
+	c,4) r8
+	R4.*44
 % mesures 131 à 135
 	
 % mesures 136 à 140
@@ -80,12 +115,24 @@ MvtDeuxTromboni_basso = \relative c {
 	
 % mesures 171 à 175
 	
+	
+	\mark \default
+	b'8\ff-. cis-. a-.
+	gis-. fis-. e-. 
 % mesures 176 à 180
-	
+	dis^\stacc b dis
+	e gis b
+	e, fis d
+	cis b a
+	gis e' gis,
 % mesures 181 à 185
-	
+	a b bis
+	cis d b!
+	a fis' cis
+	a' eis fis
+	cis4.
 % mesures 186 à 190
-	
+	R4.*51
 % mesures 191 à 195
 	
 % mesures 196 à 200
@@ -105,15 +152,32 @@ MvtDeuxTromboni_basso = \relative c {
 % mesures 231 à 235
 	
 % mesures 236 à 240
-	
+	\mark \default
+	a'8-.\ff a,-. e'~
+	e a,-. a'~
+	a d,-. f~
+	f e-. b'~
 % mesures 241 à 245
-	
+	b16 a c,8-. cis~
+	cis16 e d8-. dis-.
+	e-. g-. b-.
+	e,-. e-. b'~
+	b e,-. e~
 % mesures 246 à 250
-	
+	e a,-. c~
+	c b-. fis'~
+	fis16 e g8-. gis~
+	gis16 b a8-. c-.
+	c,\ff
 % mesures 251 à 255
-	
+	c
+	f,8 r r
+	R4.
+	b!\ff
+	b \mark \default
 % mesures 256 à 260
-	
+	cis!8 r r
+	R4.*29
 % mesures 261 à 265
 	
 % mesures 266 à 270
@@ -125,15 +189,24 @@ MvtDeuxTromboni_basso = \relative c {
 % mesures 281 à 285
 	
 % mesures 286 à 290
-	
+	aes'4.\ppp~
+	aes~
+	aes4\<( f8
+	ees4.\>
+	aes4)\! r8
 % mesures 291 à 295
-	
+	R4.*17
 % mesures 296 à 300
 	
 % mesures 301 à 305
 	
 % mesures 306 à 310
 	
-% mesures 311 à 312
 	
+	e4.\pp~
+	e~
+	e~
+% mesures 311 à 312
+	e~
+	e\fermata\espressivo \bar "|."
 }
