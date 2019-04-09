@@ -340,7 +340,7 @@ MvtDeuxTromboni_tenore = \relative c {
 	b
 	b
 % mesures 241 à 245
-	c8 e bes~
+	c8 e bes
 	a4.
 	a8-. g-. fis!-.
 	g r g\fz
