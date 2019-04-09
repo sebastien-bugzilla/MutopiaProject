@@ -28,7 +28,7 @@ MvtDeuxTromboni_alto = \relative c' {
 	\mark \default
 	dis4.\f
 	e
-	f8( gis8.-> fis16)
+	fis8( gis8.-> fis16)
 % mesures 36 à 40
 	e4.
 	cis
@@ -78,7 +78,7 @@ MvtDeuxTromboni_alto = \relative c' {
 	r e-. eis-.
 	r fis-. g-.
 	g4.
-	c, \mark \default
+	cis, \mark \default
 % mesures 111 à 115
 	d8 r r
 	R4.*62
@@ -108,7 +108,7 @@ MvtDeuxTromboni_alto = \relative c' {
 	
 	
 	\mark \default
-	d4.\ff
+	dis4.\ff
 	e
 % mesures 176 à 180
 	fis8( gis8.-> fis16)
@@ -156,7 +156,7 @@ MvtDeuxTromboni_alto = \relative c' {
 	r r b\fz
 % mesures 246 à 250
 	r r a\fz
-	r r dis\fz
+	r r dis!\fz
 	e d f\fz
 	r a e-.
 	e4.\ff
