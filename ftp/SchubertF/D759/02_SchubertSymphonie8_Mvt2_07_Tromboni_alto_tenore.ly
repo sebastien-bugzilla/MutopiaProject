@@ -6,12 +6,13 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   7               #
 %#######################################################################
-MvtDeuxTromboni_alto = \relative c {
-	\clef treble
+MvtDeuxTromboni_alto = \relative c' {
+	\clef tenor
 	\key e \major
-	\set Staff.instrumentName = #""
+	\set Staff.instrumentName = #"Tromboni"
+	\set Staff.midiInstrument = #"trombone"
 % mesures 1 à 5
-	
+	R4.*32
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -24,10 +25,22 @@ MvtDeuxTromboni_alto = \relative c {
 	
 % mesures 31 à 35
 	
+	\mark \default
+	dis4.\f
+	e
+	f8( gis8.-> fis16)
 % mesures 36 à 40
-	
+	e4.
+	cis
+	dis
+	e8( fis8.-> e16)
+	dis4.
 % mesures 41 à 45
-	
+	dis
+	e4( dis8)
+	e8( fis8.-> e16)
+	dis4.
+	R4.*51
 % mesures 46 à 50
 	
 % mesures 51 à 55
@@ -47,15 +60,28 @@ MvtDeuxTromboni_alto = \relative c {
 % mesures 86 à 90
 	
 % mesures 91 à 95
-	
+	\mark \default
 % mesures 96 à 100
-	
+	cis4.\ff
+	e
+	dis
+	fis
+	e8 gis,4
 % mesures 101 à 105
-	
+	fis8 a4
+	gis8-. cis-. bis-.
+	cis r e\fz
+	r r e\fz
+	r r cis\fz
 % mesures 106 à 110
-	
+	r r dis\fz
+	r e-. eis-.
+	r fis-. g-.
+	g4.
+	c, \mark \default
 % mesures 111 à 115
-	
+	d8 r r
+	R4.*62
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -80,12 +106,24 @@ MvtDeuxTromboni_alto = \relative c {
 	
 % mesures 171 à 175
 	
+	
+	\mark \default
+	d4.\ff
+	e
 % mesures 176 à 180
-	
+	fis8( gis8.-> fis16)
+	e4.
+	b
+	cis
+	d8( e8.-> d16)
 % mesures 181 à 185
-	
+	cis4.
+	eis
+	fis4 eis8
+	fis8( gis8.-> fis16)
+	eis4.
 % mesures 186 à 190
-	
+	R4.*51
 % mesures 191 à 195
 	
 % mesures 196 à 200
@@ -105,15 +143,32 @@ MvtDeuxTromboni_alto = \relative c {
 % mesures 231 à 235
 	
 % mesures 236 à 240
-	
+	\mark \default
+	e4.\ff
+	a
+	a
+	gis
 % mesures 241 à 245
-	
+	a8 e g~
+	g f4
+	e8-. e-. dis-.
+	e r b\fz
+	r r b\fz
 % mesures 246 à 250
-	
+	r r a\fz
+	r r dis\fz
+	e d f\fz
+	r a e-.
+	e4.\ff
 % mesures 251 à 255
-	
+	e
+	f8 r r
+	R4.
+	dis!4.\ff
+	dis \mark \default
 % mesures 256 à 260
-	
+	e8 r r
+	R4.*51
 % mesures 261 à 265
 	
 % mesures 266 à 270
@@ -134,13 +189,19 @@ MvtDeuxTromboni_alto = \relative c {
 	
 % mesures 306 à 310
 	
-% mesures 311 à 312
 	
+	b4.\pp~
+	b~
+	b~
+% mesures 311 à 312
+	b~
+	b\fermata\espressivo \bar "|."
 }
 MvtDeuxTromboni_altoI = \relative c {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #""
+	\set Staff.instrumentName = #"Tromboni"
+	\set Staff.midiInstrument = #"trombone"
 % mesures 1 à 5
 	
 % mesures 6 à 10
