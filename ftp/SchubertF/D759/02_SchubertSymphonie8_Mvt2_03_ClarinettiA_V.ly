@@ -6,10 +6,69 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   3               #
 %#######################################################################
+fluteNotesM = \relative c''' {
+    \transposition a
+    s4.*135
+    bes4( g8)
+}
+fluteNotesN = \relative c''' {
+    \transposition a
+    s4.*234
+    a16.( g32 a16 g e c
+    g'16. f32 g16 f d b)
+}
+hornNotesM = \relative c''' {
+    \transposition a
+    s4.*136
+    g4( g,8)
+}
+oboeNotesM = \relative c''' {
+    \transposition a
+    s4.*220
+    g4.~
+    g~
+    g~
+    g4 r8
+}
+oboeNotesN = \relative c''' {
+    \transposition a
+    s4.*89
+    des16.( ces32 des16 c aes fes)
+    ces'16.( beses32 ces16 beses ges ees
+    fes8) r r
+}
+celloNotesM = \relative c' {
+    \transposition a
+    s4.*149
+    g8( g' fis
+    e c e16 fis)
+    g8( g, a)
+    b4.(
+    e,)
+}
+clarinetNotesM = \relative c''' {
+    \transposition a
+    s4.*137
+    bes4( g8)
+}
+\addQuote "fluteM" {\fluteNotesM}
+\addQuote "hornM" {\hornNotesM}
+\addQuote "oboeM" {\oboeNotesM}
+\addQuote "oboeN" {\oboeNotesN}
+\addQuote "celloM" {\celloNotesM}
+\addQuote "clarinetM" {\clarinetNotesM}
+\addQuote "fluteN" {\fluteNotesN}
 MvtDeuxClarinettiAI = \relative c'' {
 	\clef treble
-	\key g \major
-	\set Staff.instrumentName = #"Clarinetti"
+	%\key g \major
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Clarinet I"
+	        \line {
+	            "in A"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"clarinet"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
@@ -86,7 +145,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	b'!4.\>~
 % mesures 81 à 85
 	b\!~
-	b~^\morendo
+	b~_\morendo
 	b4 r8
 	R4.*12
 % mesures 86 à 90
@@ -117,7 +176,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	g' g8 g g16 \mark \default
 % mesures 111 à 115
 	a8 r r
-	R4.*26
+	R4.*24
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -125,10 +184,11 @@ MvtDeuxClarinettiAI = \relative c'' {
 % mesures 126 à 130
 	
 % mesures 131 à 135
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteM" #UP {R4.*1}
 % mesures 136 à 140
-	
-	
+	\new CueVoice { \set instrumentCueName = "Hr. I"}
+	\cueDuring #"hornM" #UP {R4.*1}
 	bes!4\ppp(-> g8)
 	R4.*16
 % mesures 141 à 145
@@ -187,7 +247,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	d
 % mesures 201 à 205
 	e4) r8
-	R4.*23
+	R4.*19
 % mesures 206 à 210
 	
 % mesures 211 à 215
@@ -197,8 +257,8 @@ MvtDeuxClarinettiAI = \relative c'' {
 % mesures 221 à 225
 	
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Ob. I"}
+	\cueDuring #"oboeM" #UP {R4.*4}
 	c4.\pp(
 % mesures 226 à 230
 	e->
@@ -300,8 +360,15 @@ MvtDeuxClarinettiAI = \relative c'' {
 }
 MvtDeuxClarinettiAII = \relative c'' {
 	\clef treble
-	\key g \major
-	\set Staff.instrumentName = #"Clarinetti"
+	%\key g \major
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Clarinet II"
+	        \line {
+	            "in A"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"clarinet"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
@@ -350,7 +417,7 @@ MvtDeuxClarinettiAII = \relative c'' {
 	g,4.\fp\>(
 % mesures 51 à 55
 	fis4)\! r8
-	R4.*44
+	R4.*38
 	
 	
 	
@@ -371,11 +438,12 @@ MvtDeuxClarinettiAII = \relative c'' {
 % mesures 81 à 85
 	
 % mesures 86 à 90
-	
+	\new CueVoice { \set instrumentCueName = "Ob. I"}
+	\cueDuring #"oboeN" #UP {R4.*3}
 % mesures 91 à 95
 	
 	
-	
+	R4.*3
 	
 	\mark \default
 % mesures 96 à 100
@@ -398,7 +466,7 @@ MvtDeuxClarinettiAII = \relative c'' {
 	e e8 e e16 \mark \default
 % mesures 111 à 115
 	f8 r r
-	R4.*43
+	R4.*26
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -409,8 +477,9 @@ MvtDeuxClarinettiAII = \relative c'' {
 	
 % mesures 136 à 140
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Kl. I"}
+	\cueDuring #"clarinetM" #UP {R4.*1}
+	R4.*11
 % mesures 141 à 145
 	
 % mesures 146 à 150
@@ -418,8 +487,8 @@ MvtDeuxClarinettiAII = \relative c'' {
 % mesures 151 à 155
 	
 	
-	
-	
+	\clef bass \new CueVoice { \set instrumentCueName = "Vc."}
+	\cueDuring #"celloM" #UP {R4.*5} \clef treble
 	g,4.(\fp\>
 % mesures 156 à 160
 	fis)\!(
@@ -463,7 +532,7 @@ MvtDeuxClarinettiAII = \relative c'' {
 	b
 % mesures 201 à 205
 	c4) r8
-	R4.*35
+	R4.*33
 % mesures 206 à 210
 	
 % mesures 211 à 215
@@ -486,8 +555,8 @@ MvtDeuxClarinettiAII = \relative c'' {
 	
 	
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteN" #UP {R4.*2}
 % mesures 236 à 240
 	\mark \default
 	c4.\ff

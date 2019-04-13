@@ -50,17 +50,17 @@ globalMvtUn = {
 %-----------------------------------------------------------------------
 globalMvtDeux = {
 	\version "2.18.2"
-	\time 4/4
+	\time 3/8
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 80 
+	\tempo "Andante con moto" 4 = 80 
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_03_ClarinettiA_V.ly"
-\include "02_SchubertSymphonie8_Mvt2_03_ClarinettiA.ly"
+\include "02_SchubertSymphonie8_Mvt2_03_ClarinettiA_V.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -103,11 +103,18 @@ globalMvtDeux = {
 		}
 		\layout {
 			%system-count = #20
-			#(layout-set-staff-size 19)}
+			#(layout-set-staff-size 19)
+		    \context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
+		}
 	}
 	\score {
 		{
-			\new Staff << \globalMvtDeux \MvtDeuxClarinettiAI >>
+			\new Staff << \globalMvtDeux \key g \major \transposition a \MvtDeuxClarinettiAI >>
 		}
 		\header {
 			breakbefore = ##t
@@ -121,6 +128,12 @@ globalMvtDeux = {
 		\layout {
 			%system-count = #20
 			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
 		}
 	}
 %	\score {
@@ -159,11 +172,18 @@ globalMvtDeux = {
 		}
 		\layout {
 			%system-count = #20
-			#(layout-set-staff-size 19)}
+			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
+		}
 	}
 	\score {
 		{
-			\new Staff << \globalMvtDeux \MvtDeuxClarinettiAII >>
+			\new Staff << \globalMvtDeux \key g \major \transposition a \MvtDeuxClarinettiAII >>
 		}
 		\header {
 			breakbefore = ##t
@@ -177,6 +197,12 @@ globalMvtDeux = {
 		\layout {
 			%system-count = #20
 			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
 		}
 	}
 }
