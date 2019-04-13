@@ -276,8 +276,8 @@ MvtDeuxOboeI = \relative c'' {
 	b4) r8
 	R4.
 % mesures 266 à 270
-	d4 d8
-	d4.
+	dis4 dis8
+	dis4.
 	b4.~
 	b~
 	b(

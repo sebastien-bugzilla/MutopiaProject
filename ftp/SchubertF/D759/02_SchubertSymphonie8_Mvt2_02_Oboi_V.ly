@@ -6,10 +6,41 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   2               #
 %#######################################################################
+clarinetNotesM = \relative c''' {
+    s4.*79
+    gis4.\>~
+    gis\!~
+    gis~
+    gis4 r8
+}
+fluteNotesM = \relative c'' {
+    s4.*154
+    c4.(\>
+    b)\!
+}
+fluteNotesN = \relative c'' {
+    s4.*234
+    fis16.( e32 fis16 e cis a
+    e'16. d32 e16 d b gis)
+}
+violinNotesM = \relative c' {
+    s4.*302
+    b16( dis fis a gis fis)
+}
+oboeNotesM = \relative c''' {
+    s4.*93
+    bes16.( aes32 bes16 aes f des)
+    aes'16.( ges32 aes16 ges ees c)
+}
+\addQuote "clarinetM" {\clarinetNotesM}
+\addQuote "fluteM" {\fluteNotesM}
+\addQuote "fluteN" {\fluteNotesN}
+\addQuote "violinM" {\violinNotesM}
+\addQuote "oboeM" {\oboeNotesM}
 MvtDeuxOboeI = \relative c'' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Oboi"
+	\set Staff.instrumentName = #"Oboe I"
 	\set Staff.midiInstrument = #"oboe"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
@@ -72,7 +103,7 @@ MvtDeuxOboeI = \relative c'' {
 	b4.\pp~
 	b~
 	b8 r r
-	R4.*25
+	R4.*21
 % mesures 61 à 65
 	
 % mesures 66 à 70
@@ -83,8 +114,8 @@ MvtDeuxOboeI = \relative c'' {
 	
 % mesures 81 à 85
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Klar. I"}
+	\cueDuring #"clarinetM" #UP {R4.*4}
 	des4.\pp(
 	f->
 % mesures 86 à 90
@@ -108,7 +139,7 @@ MvtDeuxOboeI = \relative c'' {
 % mesures 101 à 105
 	fis4)( fisis8
 	gis) cis-. bis-.
-	cis32\noBeam gis, cis b a[ gis fis e] gis[ fis e dis]
+	cis32 gis, cis b a[ gis fis e] gis[ fis e dis]
 	cis[ gis' e' dis] cis[ b a gis] a[ gis fis e]
 	fis[ gis a gis] fis[ a dis cis] bis[ a' gis fis]
 % mesures 106 à 110
@@ -146,7 +177,7 @@ MvtDeuxOboeI = \relative c'' {
 	e4(-> d16 b
 	c8) r r
 	g'4(-> e8)
-	R4.*22
+	R4.*20 \break
 % mesures 136 à 140
 	
 % mesures 141 à 145
@@ -154,7 +185,8 @@ MvtDeuxOboeI = \relative c'' {
 % mesures 146 à 150
 	
 % mesures 151 à 155
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteM" #UP {R4.*2}
 % mesures 156 à 160
 	
 	b4.(\pp\<
@@ -276,8 +308,8 @@ MvtDeuxOboeI = \relative c'' {
 	b4) r8
 	R4.
 % mesures 266 à 270
-	d4\< d8
-	d4.\>
+	dis4\< dis8
+	dis4.\>
 	b4.\!~
 	b~
 	b(
@@ -286,7 +318,7 @@ MvtDeuxOboeI = \relative c'' {
 	dis4(\> cis8\!
 	b4.~
 	b8) r r
-	R4.*29
+	R4.*28
 % mesures 276 à 280
 	
 % mesures 281 à 285
@@ -299,8 +331,8 @@ MvtDeuxOboeI = \relative c'' {
 	
 % mesures 301 à 305
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Viol. I"}
+	\cueDuring #"violinM" #DOWN {R4.*1}
 	b4.->~_\dimmarkup
 	b8 r r
 % mesures 306 à 310
@@ -316,7 +348,7 @@ MvtDeuxOboeI = \relative c'' {
 MvtDeuxOboeII = \relative c'' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Oboi"
+	\set Staff.instrumentName = #"Oboe II"
 	\set Staff.midiInstrument = #"Oboe"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
@@ -379,7 +411,7 @@ MvtDeuxOboeII = \relative c'' {
 	gis4.\pp(
 	a)(
 	gis8) r r
-	R4.*37
+	R4.*35
 % mesures 61 à 65
 	
 % mesures 66 à 70
@@ -403,8 +435,8 @@ MvtDeuxOboeII = \relative c'' {
 % mesures 91 à 95
 	
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Ob. I"}
+	\cueDuring #"oboeM" #UP {R4.*2}
 	\mark \default
 % mesures 96 à 100
 	gis!4.\ff
@@ -415,7 +447,7 @@ MvtDeuxOboeII = \relative c'' {
 % mesures 101 à 105
 	cis4 dis8
 	e e-. dis-.
-	e32\noBeam gis, cis b a[ gis fis e] gis[ fis e dis]
+	e32 gis, cis b a[ gis fis e] gis[ fis e dis]
 	cis[ gis' e' dis] cis[ b a gis] a[ gis fis e]
 	fis[ gis a gis] fis[ a dis cis] bis[ a' gis fis]
 % mesures 106 à 110
@@ -447,7 +479,7 @@ MvtDeuxOboeII = \relative c'' {
 	
 	r8 e(\> f
 	e4\!) r8
-	R4.*27
+	R4.*25
 % mesures 131 à 135
 	
 	
@@ -461,7 +493,8 @@ MvtDeuxOboeII = \relative c'' {
 % mesures 146 à 150
 	
 % mesures 151 à 155
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteM" #UP {R4.*2}
 % mesures 156 à 160
 	
 	b4.(\pp\<
@@ -511,7 +544,7 @@ MvtDeuxOboeII = \relative c'' {
 	cis4.\pp(
 	d)(
 	cis8) r r
-	R4.*37
+	R4.*35
 % mesures 201 à 205
 	
 % mesures 206 à 210
@@ -544,8 +577,8 @@ MvtDeuxOboeII = \relative c'' {
 	
 	
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteN" #UP {R4.*2}
 % mesures 236 à 240
 	\mark \default
 	a4.\ff
@@ -593,7 +626,7 @@ MvtDeuxOboeII = \relative c'' {
 	b4)(\> a8\!
 	gis4 a8
 	gis8) r r
-	R4.*29
+	R4.*28
 % mesures 276 à 280
 	
 % mesures 281 à 285
@@ -606,8 +639,8 @@ MvtDeuxOboeII = \relative c'' {
 	
 % mesures 301 à 305
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Viol. I"}
+	\cueDuring #"violinM" #DOWN {R4.*1}
 	gis4.->_\dimmarkup(
 	a8) r r
 % mesures 306 à 310
