@@ -95,20 +95,20 @@ global = {
 	\score {
 	    <<
 		    \new StaffGroup <<
-%			    \new Staff << \global \partcombine \MvtDeuxFlautiI \MvtDeuxFlautiII >>
-%			    \new Staff << \global \partcombine \MvtDeuxOboeI \MvtDeuxOboeII >>
-%			    \new Staff << \global \partcombine \MvtDeuxClarinettiAI \MvtDeuxClarinettiAII >>
-%			    \new Staff { \global \partcombine \MvtDeuxFagottiI \MvtDeuxFagottiII }
-%			    \new Staff << \global \partcombine \MvtDeuxCorniDI \MvtDeuxCorniDII >>
-%			    \new Staff << \global \partcombine \MvtDeuxTrombeEI \MvtDeuxTrombeEII >>
-%			    \new Staff << \global \partcombine \MvtDeuxTromboni_alto \MvtDeuxTromboni_tenore >>
-%			    \new Staff << \global \MvtDeuxTromboni_basso >>
+			    \new Staff << \global \partcombine \MvtDeuxFlautiI \MvtDeuxFlautiII >>
+			    \new Staff << \global \partcombine \MvtDeuxOboeI \MvtDeuxOboeII >>
+			    \new Staff << \global \partcombine \MvtDeuxClarinettiAI \MvtDeuxClarinettiAII >>
+			    \new Staff { \global \partcombine \MvtDeuxFagottiI \MvtDeuxFagottiII }
+			    \new Staff << \global \partcombine \MvtDeuxCorniDI \MvtDeuxCorniDII >>
+			    \new Staff << \global \partcombine \MvtDeuxTrombeEI \MvtDeuxTrombeEII >>
+			    \new Staff << \global \partcombine \MvtDeuxTromboni_alto \MvtDeuxTromboni_tenore >>
+			    \new Staff << \global \MvtDeuxTromboni_basso >>
 			    \new Staff << \global \MvtDeuxTimpaniEH >>
-%			    \new Staff << \global \MvtDeuxViolinoI >>
-%			    \new Staff << \global \MvtDeuxViolinoII >>
-%			    \new Staff << \global \MvtDeuxViola >>
-%			    \new Staff << \global \MvtDeuxVioloncello >>
-%			    \new Staff << \global \MvtDeuxBasso >>
+			    \new Staff << \global \MvtDeuxViolinoI >>
+			    \new Staff << \global \MvtDeuxViolinoII >>
+			    \new Staff << \global \MvtDeuxViola >>
+			    \new Staff << \global \MvtDeuxVioloncello >>
+			    \new Staff << \global \MvtDeuxBasso >>
 		    >>
 		>>
 		\header {
