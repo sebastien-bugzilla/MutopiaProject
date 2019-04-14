@@ -4,6 +4,7 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
+	systems-per-pages = #10
 	ragged-last-bottom = ##f
 	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
