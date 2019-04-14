@@ -58,8 +58,8 @@ global = {
 \include "02_SchubertSymphonie8_Mvt2_05_CorniD_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_06_TrombeE_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_07_Tromboni_alto_tenore_C.ly"
-\include "02_SchubertSymphonie8_Mvt2_08_Tromboni_basso.ly"
-\include "02_SchubertSymphonie8_Mvt2_09_Timpani.ly"
+\include "02_SchubertSymphonie8_Mvt2_08_Tromboni_basso_C.ly"
+\include "02_SchubertSymphonie8_Mvt2_09_Timpani_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_10_ViolinoI_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_11_ViolinoII_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_12_Viola_C.ly"
@@ -124,30 +124,4 @@ global = {
 			}
 		}
 	}
-%	\score {
-%		\new StaffGroup <<
-%			\new Staff << \global \MvtDeuxFlauti >>
-%			\new Staff << \global \MvtDeuxOboi >>
-%			\new Staff << \global \MvtDeuxClarinettiA >>
-%			\new Staff << \global \MvtDeuxFagotti >>
-%			\new Staff << \global \MvtDeuxCorniD >>
-%			\new Staff << \global \MvtDeuxTrombeE >>
-%			\new Staff << \global \MvtDeuxVoixSept >>
-%			\new Staff << \global \MvtDeuxTromboni_basso >>
-%			\new Staff << \global \MvtDeuxTimpaniEH >>
-%			\new Staff << \global \MvtDeuxViolinoI >>
-%			\new Staff << \global \MvtDeuxViolinoII >>
-%			\new Staff << \global \MvtDeuxViola >>
-%			\new Staff << \global \MvtDeuxVioloncello >>
-%			\new Staff << \global \MvtDeuxBasso >>
-%		>>
-%		\midi {
-%		    \tempo 8 = 150
-%			\context {
-%			    \Score
-%			    midiMinimumVolume = #0.8
-%				midiMaximumVolume = #0.9
-%			}
-%		}
-%	}
 }

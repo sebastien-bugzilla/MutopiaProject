@@ -190,7 +190,7 @@ MvtDeuxOboeI = \relative c'' {
 % mesures 156 à 160
 	
 	b4.(\pp\<
-	d\>
+	dis\>
 	e8)\! r r
 	R4.*3
 % mesures 161 à 165

@@ -6,6 +6,34 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   5               #
 %#######################################################################
+oboeNotesM = \relative c'' {
+    \transposition e
+    s4.*93
+    fis16.( e32 fis16 e cis a)
+    e'16.( d32 e16 d b gis)
+}
+fluteNotesM = \relative c'' {
+    \transposition e
+    s4.*129
+    c4( bes16 a)
+}
+fluteNotesN = \relative c'' {
+    \transposition e
+    s4.*234
+    d16.( c32 d16 c a f
+    c'16. bes32 c16 bes g e)
+}
+hornNotesM = \relative c'' {
+    \transposition e
+    s4.*138
+    c4( c,8)
+    c'4( c,8)
+    c'4( c,8)
+}
+\addQuote "oboeM" {\oboeNotesM}
+\addQuote "fluteM" {\fluteNotesM}
+\addQuote "fluteN" {\fluteNotesN}
+\addQuote "hornM" {\hornNotesM}
 MvtDeuxCorniDI = \relative c'' {
 	\clef treble
 	\key c \major
@@ -81,7 +109,7 @@ MvtDeuxCorniDI = \relative c'' {
 	d
 	e4) r8
 % mesures 61 à 65
-	R4.*35
+	R4.*33
 % mesures 66 à 70
 	
 % mesures 71 à 75
@@ -93,7 +121,8 @@ MvtDeuxCorniDI = \relative c'' {
 % mesures 86 à 90
 	
 % mesures 91 à 95
-	
+	\new CueVoice { \set instrumentCueName = "Ob. I"}
+	\cueDuring #"oboeM" #UP {R4.*2}
 	\mark \default
 % mesures 96 à 100
 	e4.\ff
@@ -115,13 +144,14 @@ MvtDeuxCorniDI = \relative c'' {
 	f \mark \default
 % mesures 111 à 115
 	f8 r r
-	R4.*19
+	R4.*18
 % mesures 116 à 120
 	
 % mesures 121 à 125
 	
 % mesures 126 à 130
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteM" #UP {R4.*1}
 % mesures 131 à 135
 	c4->( f16 c)
 	c8 r r
@@ -189,7 +219,7 @@ MvtDeuxCorniDI = \relative c'' {
 % mesures 196 à 200
 	e4.(->
 	f8) r r 
-	R4.*39
+	R4.*37
 % mesures 201 à 205
 	
 % mesures 206 à 210
@@ -203,7 +233,8 @@ MvtDeuxCorniDI = \relative c'' {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteN" #UP {R4.*2}
 % mesures 236 à 240
 	\mark \default
 	c4.\ff
@@ -296,16 +327,16 @@ MvtDeuxCorniDII = \relative c' {
                                       dynamic-event slur-event)
 	\transposition e
 % mesures 1 à 5
-	e4.\pp\<
+	e4.\pp\<(
 	g\>~
-	g8\! r r
+	g8\!) r r
 	R4.*3
 	
 % mesures 6 à 10
 	
-	e4.\<
+	e4.\<(
 	g\>~
-	g8\! r r
+	g8\!) r r
 	R4.*5
 % mesures 11 à 15
 	
@@ -361,7 +392,7 @@ MvtDeuxCorniDII = \relative c' {
 	g~
 	g4 r8
 % mesures 61 à 65
-	R4.*35
+	R4.*33
 % mesures 66 à 70
 	
 % mesures 71 à 75
@@ -373,7 +404,8 @@ MvtDeuxCorniDII = \relative c' {
 % mesures 86 à 90
 	
 % mesures 91 à 95
-	
+	\new CueVoice { \set instrumentCueName = "Ob. I"}
+	\cueDuring #"oboeM" #UP {R4.*2}
 	\mark \default
 % mesures 96 à 100
 	c4.\ff
@@ -408,20 +440,20 @@ MvtDeuxCorniDII = \relative c' {
 	
 	
 	
-	c4(\ppp c,8)
-	c'4( c,8)
+	\new CueVoice { \set instrumentCueName = "Hr. I"}
+	\cueDuring #"hornM" #UP {R4.*3}
 % mesures 141 à 145
-	c'4( c,8)
-	e4.\pp\<
+	
+	e,4.\pp\<(
 	g\>~
-	g8\! r r
+	g8\!) r r
 	R4.*3
 % mesures 146 à 150
 	
 	
-	e4.\<
+	e4.\<(
 	g\>~
-	g8\! r r
+	g8\!) r r
 % mesures 151 à 155
 	R4.*5
 % mesures 156 à 160
@@ -465,7 +497,7 @@ MvtDeuxCorniDII = \relative c' {
 % mesures 196 à 200
 	c4.->~
 	c8 r r 
-	R4.*39
+	R4.*37
 % mesures 201 à 205
 	
 % mesures 206 à 210
@@ -479,7 +511,8 @@ MvtDeuxCorniDII = \relative c' {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteN" #UP {R4.*2}
 % mesures 236 à 240
 	\mark \default
 	c,4.\ff
