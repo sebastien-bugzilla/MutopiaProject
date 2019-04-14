@@ -38,13 +38,11 @@ violinNotesA = \relative c''' {
     s2.*59
     a4( e4. gis8)
     a4( d, e8 fis)
-    R2.
 }
 violinNotesB = \relative c'' {
     s2.*278
     c4( g4. b8
     ais4 fis gis8 ais)
-    R2.
 }
 FlautoNotesA = \relative c'' {
     s2.*25
@@ -125,9 +123,9 @@ MvtUnFlautoI = \relative c {
 	
 % mesures 56 à 60
 	    \new CueVoice { \set instrumentCueName = "Violino I"}
-	    \cueDuring #"violinA" #UP {R2.*3}
+	    \cueDuring #"violinA" #UP {R2.*2}
 % mesures 61 à 65
-	
+	    R2._\gp
 	    \mark \default
 	    g,2.\ffz\>(
 	    c,4)\! r r
@@ -382,8 +380,8 @@ MvtUnFlautoI = \relative c {
 	
 	
 	\new CueVoice { \set instrumentCueName = "Violino I"}
-	\cueDuring #"violinB" #UP {R2.*3}
-	\mark \default
+	\cueDuring #"violinB" #UP {R2.*2}
+	R2._\gp \mark \default
 % mesures 281 à 285
 	b,2.\ff\>(
 	e,4)\! r r
@@ -541,8 +539,8 @@ MvtUnFlautoII = \relative c {
 	
 % mesures 61 à 65
 	    \new CueVoice { \set instrumentCueName = "Violino I"}
-	    \cueDuring #"violinA" #UP {R2.*3}
-	    \mark \default
+	    \cueDuring #"violinA" #UP {R2.*2}
+	    R2._\gp \mark \default
 	    g,,2.\ffz\>(
 	    c,4)\! r r
 	    g'2.(\fz\>
@@ -798,8 +796,8 @@ MvtUnFlautoII = \relative c {
 	
 	
 	\new CueVoice { \set instrumentCueName = "Violino I"}
-	\cueDuring #"violinB" #UP {R2.*3}
-	\mark \default
+	\cueDuring #"violinB" #UP {R2.*2}
+	R2._\gp \mark \default
 % mesures 281 à 285
 	b,2.\ff\>(
 	e,4)\! r r

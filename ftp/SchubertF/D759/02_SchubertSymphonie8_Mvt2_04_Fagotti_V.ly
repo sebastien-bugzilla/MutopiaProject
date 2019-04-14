@@ -6,6 +6,28 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   4               #
 %#######################################################################
+oboeNotesM = \relative c''' {
+    s4.*93
+    bes16.( aes32 bes16 a f des)
+    aes'16( ges32 aes16 ges ees c)
+}
+fluteNotesM = \relative c'' {
+    s4.*234
+    fis16.( e32 fis16 e cis a
+    e'16. d32 e16 d b g)
+}
+bassNotesM = \relative c {
+    s4.*27
+    gis8( e cis')
+}
+bassNotesN = \relative c {
+    s4.*168
+    gis8( e cis')
+}
+\addQuote "oboeM" {\oboeNotesM}
+\addQuote "fluteM" {\fluteNotesM}
+\addQuote "bassM" {\bassNotesM}
+\addQuote "bassN" {\bassNotesN}
 MvtDeuxFagottiI = \relative c' {
 	\clef bass
 	\key e \major
@@ -30,8 +52,8 @@ MvtDeuxFagottiI = \relative c' {
 	
 	
 	
-	\clef tenor c4.(
-	b16 dis fis a gis fis
+	c4.(
+	b16 dis! fis a gis fis
 % mesures 16 à 20
 	e8) r r
 	R4.*12
@@ -41,12 +63,12 @@ MvtDeuxFagottiI = \relative c' {
 	
 	
 	
-	\clef bass dis4.(\>
+	dis4.(\>
 	e8)\! r r
 % mesures 31 à 35
 	dis4.(\>
 	e8)\! r r \mark \default
-	\clef tenor dis4.\f
+	dis4.\f
 	e
 	fis8( gis8.-> fis16)
 % mesures 36 à 40
@@ -59,17 +81,17 @@ MvtDeuxFagottiI = \relative c' {
 	dis
 	e4( dis8)
 	e8( fis8.-> e16)
-	dis4. \clef bass
+	dis4.
 	e,8(\pp e' dis
 % mesures 46 à 50
 	cis a cis16 dis
 	e8 e, fis)
 	gis4.->(
-	cis,) \clef tenor
+	cis,) 
 	c'4.\fp\>
 % mesures 51 à 55
 	b16\!( dis fis a gis fis
-	e8) r r \clef bass
+	e8) r r
 	dis4.(->
 	e8) r r
 	dis4.->(
@@ -80,7 +102,7 @@ MvtDeuxFagottiI = \relative c' {
 	dis
 	e4) r8
 % mesures 61 à 65
-	R4.*35
+	R4.*33
 % mesures 66 à 70
 	
 % mesures 71 à 75
@@ -92,9 +114,10 @@ MvtDeuxFagottiI = \relative c' {
 % mesures 86 à 90
 	
 % mesures 91 à 95
-	\mark \default
+	\clef treble \new CueVoice { \set instrumentCueName = "Ob. I"}
+	\cueDuring #"oboeM" #UP {R4.*2} \clef bass \mark \default
 % mesures 96 à 100
-	cis4.\ff
+	cis!4.\ff
 	e
 	dis
 	fis
@@ -118,7 +141,7 @@ MvtDeuxFagottiI = \relative c' {
 	
 	
 	
-	r8 r b'16(\p\< cis!
+	r8 r b'16(\p\< cis
 	d4.)~\>
 % mesures 121 à 125
 	d4\! r8
@@ -128,10 +151,10 @@ MvtDeuxFagottiI = \relative c' {
 	
 % mesures 126 à 130
 	
-	r8 r \clef tenor e16(\< fis!
+	r8 r  e16(\< fis!
 	g4.)~\>
 	g4\! r8
-	R4.
+	R4. \clef tenor
 % mesures 131 à 135
 	e4->( a16 e)
 	e8 r r
@@ -156,7 +179,7 @@ MvtDeuxFagottiI = \relative c' {
 	R4.*4
 	
 	
-	\clef tenor
+	
 	c4.(\fp\>
 % mesures 156 à 160
 	b16\!)( dis fis a gis fis 
@@ -166,7 +189,7 @@ MvtDeuxFagottiI = \relative c' {
 	
 % mesures 161 à 165
 	
-	\clef bass a,8(\> b c\!
+	a,8(\> b c\!
 	b) r r
 	R4.*4
 	
@@ -179,7 +202,7 @@ MvtDeuxFagottiI = \relative c' {
 % mesures 171 à 175
 	e8) r r
 	dis4.(->
-	e4) r8 \clef tenor \mark \default 
+	e4) r8 \mark \default 
 	dis4.\ff
 	e
 % mesures 176 à 180
@@ -214,7 +237,7 @@ MvtDeuxFagottiI = \relative c' {
 	e~
 % mesures 201 à 205
 	e4 r8
-	R4.*35
+	R4.*33
 % mesures 206 à 210
 	
 % mesures 211 à 215
@@ -226,7 +249,8 @@ MvtDeuxFagottiI = \relative c' {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteM" #UP {R4.*2}
 % mesures 236 à 240
 	\clef bass \mark \default
 	a,8\ff-. a,-. e'~
@@ -247,24 +271,24 @@ MvtDeuxFagottiI = \relative c' {
 	c,32[\ff e g bes] c[ bes g e] c[ e g bes]
 % mesures 251 à 255
 	c[ bes g e] c[ e g bes] c[ bes g c,]
-	f'4.~
-	f
+	f'4.~\>
+	f\p
 	b,,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis'!4.(\>
 	g')\fp\>(
-	fis4\!) r8 \clef tenor
+	fis4\!) r8
 	c4.\fp(\>
 	b16)\!( dis fis a gis fis
 % mesures 261 à 265
-	e8) r r \clef bass
+	e8) r r
 	dis4.(->
 	e8) r r
 	dis4-> dis8~->
 	dis\pp dis4->
 % mesures 266 à 270
-	dis4\< dis8 \clef tenor
+	dis4\< dis8
 	a'8.\>( fis16 gis a
 	gis8\!) r r
 	R4.*5
@@ -272,7 +296,7 @@ MvtDeuxFagottiI = \relative c' {
 % mesures 271 à 275
 	
 	
-	\clef bass
+	
 	b,4.\ppp(
 	dis)(
 % mesures 276 à 280
@@ -328,7 +352,7 @@ MvtDeuxFagottiII = \relative c' {
 	b4.(\<
 	a\>
 	gis8)\! r r
-	R4.*19
+	R4.*18
 % mesures 11 à 15
 	
 	
@@ -342,8 +366,8 @@ MvtDeuxFagottiII = \relative c' {
 	
 % mesures 26 à 30
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Bass"}
+	\cueDuring #"bassM" #DOWN {R4.*1}
 	a4.(\>
 	gis8)\! r r
 % mesures 31 à 35
@@ -383,7 +407,7 @@ MvtDeuxFagottiII = \relative c' {
 	a
 	gis4) r8
 % mesures 61 à 65
-	R4.*35
+	R4.*33
 % mesures 66 à 70
 	
 % mesures 71 à 75
@@ -395,9 +419,10 @@ MvtDeuxFagottiII = \relative c' {
 % mesures 86 à 90
 	
 % mesures 91 à 95
-	\mark \default
+	\clef treble \new CueVoice { \set instrumentCueName = "Ob. I"}
+	\cueDuring #"oboeM" #UP {R4.*2} \clef bass \mark \default
 % mesures 96 à 100
-	cis,4.\ff
+	cis,!4.\ff
 	e
 	dis
 	fis
@@ -431,7 +456,7 @@ MvtDeuxFagottiII = \relative c' {
 	
 % mesures 126 à 130
 	
-	r8 r \clef tenor c16(\< d
+	r8 r c16(\< d
 	e4)(\> f8
 	e4\!) r8
 	R4.*12
@@ -445,7 +470,7 @@ MvtDeuxFagottiII = \relative c' {
 	
 % mesures 141 à 145
 	
-	\clef bass b4.(\pp\<
+	b4.(\pp\<
 	a\>
 	gis8)\! r r
 	R4.*3
@@ -456,7 +481,7 @@ MvtDeuxFagottiII = \relative c' {
 	a\>
 	gis8)\! r r
 % mesures 151 à 155
-	R4.*19
+	R4.*18
 	
 	
 	
@@ -476,13 +501,13 @@ MvtDeuxFagottiII = \relative c' {
 % mesures 166 à 170
 	
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Bass"}
+	\cueDuring #"bassN" #DOWN {R4.*1}
 	a4.(->
 % mesures 171 à 175
 	gis8) r r
 	a4.(->
-	gis4) r8 \clef tenor \mark \default 
+	gis4) r8 \mark \default 
 	fis4.\ff
 	gis
 % mesures 176 à 180
@@ -517,7 +542,7 @@ MvtDeuxFagottiII = \relative c' {
 	d)(
 % mesures 201 à 205
 	cis4) r8
-	R4.*35
+	R4.*33
 % mesures 206 à 210
 	
 % mesures 211 à 215
@@ -529,7 +554,8 @@ MvtDeuxFagottiII = \relative c' {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteM" #UP {R4.*2}
 % mesures 236 à 240
 	\clef bass \mark \default
 	a8\ff-. a,-. e'~
@@ -557,17 +583,17 @@ MvtDeuxFagottiII = \relative c' {
 % mesures 256 à 260
 	cis!8 r r
 	e'4.\fp\>(
-	dis4\!) r8 \clef tenor
+	dis4\!) r8
 	R4.*3
 	
 % mesures 261 à 265
-	\clef bass
+	
 	a4.(->
 	gis8) r r
 	a4-> b8~->
 	b\pp b4->
 % mesures 266 à 270
-	b4\< b8 \clef tenor
+	b4\< b8
 	dis4.\>( 
 	e8\!) r r
 	R4.*5
@@ -575,7 +601,7 @@ MvtDeuxFagottiII = \relative c' {
 % mesures 271 à 275
 	
 	
-	\clef bass
+	
 	b4.\ppp(
 	a)(
 % mesures 276 à 280

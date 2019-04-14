@@ -33,7 +33,6 @@ fluteNotesM = \relative c''' {
     bes16.( aes32 bes16 aes f des)
     aes'16.( ges32 aes16 ges ees c
     des8) r r
-    R4.
 }
 fluteNotesN = \relative c'' {
     s4.*234
@@ -439,9 +438,9 @@ MvtDeuxFlautiII = \relative c'' {
 % mesures 91 à 95
 	
 	\new CueVoice { \set instrumentCueName = "Fl. I"}
-	\cueDuring #"fluteM" #UP {R4.*4}
+	\cueDuring #"fluteM" #UP {R4.*3}
 	
-	\mark \default
+	R4. \mark \default
 % mesures 96 à 100
 	e4.\ff
 	gis

@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -50,17 +50,17 @@ globalMvtUn = {
 %-----------------------------------------------------------------------
 globalMvtDeux = {
 	\version "2.18.2"
-	\time 4/4
+	\time 3/8
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 80 
+	\tempo "Andante con moto."
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_04_Fagotti_V.ly"
-\include "02_SchubertSymphonie8_Mvt2_04_Fagotti.ly"
+\include "02_SchubertSymphonie8_Mvt2_04_Fagotti_V.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -103,14 +103,21 @@ globalMvtDeux = {
 		}
 		\layout {
 			system-count = #26
-			#(layout-set-staff-size 19)}
+			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
+		}
 	}
 	\score {
 		{
 			\new Staff << \globalMvtDeux \MvtDeuxFagottiI >>
 		}
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -121,6 +128,12 @@ globalMvtDeux = {
 		\layout {
 			%system-count = #20
 			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
 		}
 	}
 	\score {
@@ -138,14 +151,21 @@ globalMvtDeux = {
 		}
 		\layout {
 			%system-count = #20
-			#(layout-set-staff-size 19)}
+			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
+		}
 	}
 	\score {
 		{
 			\new Staff << \globalMvtDeux \MvtDeuxFagottiII >>
 		}
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -156,6 +176,12 @@ globalMvtDeux = {
 		\layout {
 			%system-count = #20
 			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
 		}
 	}
 }

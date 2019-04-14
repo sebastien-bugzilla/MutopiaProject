@@ -876,7 +876,7 @@ MvtUnClarinettiAII = \relative c {
 	g4) d'-. cis-. \mark \default
 % mesures 311 à 315
 	d r r
-	R2.*7
+	R2.*7 \break
 	
 	
 	

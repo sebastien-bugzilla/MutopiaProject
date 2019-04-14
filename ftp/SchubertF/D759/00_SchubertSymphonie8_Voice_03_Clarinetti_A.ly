@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -54,7 +54,7 @@ globalMvtDeux = {
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Andante con moto" 4 = 80 
+	\tempo "Andante con moto"
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
