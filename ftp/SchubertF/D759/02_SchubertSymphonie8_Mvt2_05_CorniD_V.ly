@@ -37,7 +37,14 @@ hornNotesM = \relative c'' {
 MvtDeuxCorniDI = \relative c'' {
 	\clef treble
 	\key c \major
-	\set Staff.instrumentName = #"Corni in E."
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Corni I"
+	        \line {
+	            "in E"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"French horn"
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event
@@ -320,7 +327,14 @@ MvtDeuxCorniDI = \relative c'' {
 MvtDeuxCorniDII = \relative c' {
 	\clef treble
 	\key c \major
-	\set Staff.instrumentName = #"Corni in E."
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Corni II"
+	        \line {
+	            "in E"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"French horn"
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event
@@ -564,8 +578,8 @@ MvtDeuxCorniDII = \relative c' {
 % mesures 276 à 280
 	g(\<
 	a)(\!
-	g4)\> f8
-	g,4\! g8
+	g4)\> f8\!
+	g,4 g8
 	c4 r8
 % mesures 281 à 285
 	R4.*15

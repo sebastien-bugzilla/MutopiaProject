@@ -6,14 +6,61 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   6               #
 %#######################################################################
+clarinetNotesM = \relative c'' {
+    \transposition e
+    s4.*30
+    g16( b d f e d
+    c8) r r
+}
+oboeNotesM = \relative c'' {
+    \transposition e
+    s4.*93
+    fis16.( e32 fis16 e cis a)
+    e'16.( d32 e16 d b gis)
+}
+fluteNotesM = \relative c'' {
+    \transposition e
+    s4.*169
+    g16( b d f e d
+    c8) r r
+    g16( b d f e d
+    c4) r8
+}
+fluteNotesN = \relative c'' {
+    \transposition e
+    s4.*234
+    d16.( c32 d16 c a f
+    c'16. bes32 c16 bes g e)
+}
+hornNotesM = \relative c, {
+    \transposition e
+    s4.*307
+    <c c'>4.~
+    <c c'>
+}
+\addQuote "clarinetM" {\clarinetNotesM}
+\addQuote "oboeM" {\oboeNotesM}
+\addQuote "fluteM" {\fluteNotesM}
+\addQuote "fluteN" {\fluteNotesN}
+\addQuote "hornM" {\hornNotesM}
 MvtDeuxTrombeEI = \relative c'' {
 	\clef treble
 	\key c \major
-	\set Staff.instrumentName = #"Trombe in E."
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trumpet I"
+	        \line {
+	            "in E"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"trumpet"
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 	\transposition e
 % mesures 1 à 5
-	R4.*32
+	R4.*30
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -23,7 +70,8 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	
+	\new CueVoice { \set instrumentCueName = "Kl. I"}
+	\cueDuring #"clarinetM" #UP {R4.*2}
 % mesures 31 à 35
 	
 	\mark \default
@@ -47,7 +95,7 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 51 à 55
 	g4.(\p
 	e8) r r
-	R4.*43
+	R4.*41
 % mesures 56 à 60
 	
 % mesures 61 à 65
@@ -65,8 +113,8 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 91 à 95
 	
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Ob. I"}
+	\cueDuring #"oboeM" #UP {R4.*2}
 	\mark \default
 % mesures 96 à 100
 	e4.\ff
@@ -87,7 +135,7 @@ MvtDeuxTrombeEI = \relative c'' {
 	c,4.
 	c \mark \default
 % mesures 111 à 115
-	R4.*63
+	R4.*59
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -111,20 +159,20 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 166 à 170
 	
 % mesures 171 à 175
-	
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteM" #UP {R4.*4}
 	\mark \default
 	g'4.\ff
 	g
 % mesures 176 à 180
-	g8 g4
+	g8 g4\fz
 	g4.
 	c
 	c
 	c8 c4\fz
 % mesures 181 à 185
 	c4.
-	R4.*55
+	R4.*53
 % mesures 186 à 190
 	
 % mesures 191 à 195
@@ -144,7 +192,8 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteN" #UP {R4.*2}
 % mesures 236 à 240
 	\mark \default
 	c4.\ff
@@ -177,7 +226,7 @@ MvtDeuxTrombeEI = \relative c'' {
 	g'4.(
 % mesures 261 à 265
 	e8) r r
-	R4.*48
+	R4.*46
 % mesures 266 à 270
 	
 % mesures 271 à 275
@@ -197,8 +246,8 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 306 à 310
 	
 	
-	
-	
+	\clef bass \new CueVoice { \set instrumentCueName = "Hr."}
+	\cueDuring #"hornM" #DOWN {R4.*2} \clef treble
 	e4.\pp~
 % mesures 311 à 312
 	e~
@@ -207,11 +256,21 @@ MvtDeuxTrombeEI = \relative c'' {
 MvtDeuxTrombeEII = \relative c' {
 	\clef treble
 	\key c \major
-	\set Staff.instrumentName = #"Trombe in E."
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trumpet II"
+	        \line {
+	            "in E"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"trumpet"
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 	\transposition e
 % mesures 1 à 5
-	R4.*32
+	R4.*30
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -221,7 +280,8 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	
+	\new CueVoice { \set instrumentCueName = "Kl. I"}
+	\cueDuring #"clarinetM" #UP {R4.*2}
 % mesures 31 à 35
 	
 	\mark \default
@@ -245,7 +305,7 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 51 à 55
 	g,4.(\p
 	c8) r r
-	R4.*43
+	R4.*41
 % mesures 56 à 60
 	
 % mesures 61 à 65
@@ -263,8 +323,8 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 91 à 95
 	
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Ob. I"}
+	\cueDuring #"oboeM" #UP {R4.*2}
 	\mark \default
 % mesures 96 à 100
 	c4.\ff
@@ -285,7 +345,7 @@ MvtDeuxTrombeEII = \relative c' {
 	c,4.
 	c \mark \default
 % mesures 111 à 115
-	R4.*63
+	R4.*59
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -309,20 +369,20 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 166 à 170
 	
 % mesures 171 à 175
-	
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteM" #UP {R4.*4}
 	\mark \default
 	g4.\ff
 	g
 % mesures 176 à 180
-	g8 g4
+	g8 g4\fz
 	c4.
 	c
 	c
 	c8 c4\fz
 % mesures 181 à 185
 	c4.
-	R4.*55
+	R4.*53
 % mesures 186 à 190
 	
 % mesures 191 à 195
@@ -342,7 +402,8 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteN" #UP {R4.*2}
 % mesures 236 à 240
 	\mark \default
 	c4.\ff
@@ -375,7 +436,7 @@ MvtDeuxTrombeEII = \relative c' {
 	g4.(
 % mesures 261 à 265
 	c8) r r
-	R4.*48
+	R4.*46
 % mesures 266 à 270
 	
 % mesures 271 à 275
@@ -395,8 +456,8 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 306 à 310
 	
 	
-	
-	
+	\clef bass \new CueVoice { \set instrumentCueName = "Hr."}
+	\cueDuring #"hornM" #DOWN {R4.*2} \clef treble
 	c4.\pp~
 % mesures 311 à 312
 	c~

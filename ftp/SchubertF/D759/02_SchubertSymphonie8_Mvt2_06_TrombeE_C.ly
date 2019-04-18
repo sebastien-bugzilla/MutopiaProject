@@ -117,7 +117,7 @@ MvtDeuxTrombeEI = \relative c'' {
 	g'4.\ff
 	g
 % mesures 176 à 180
-	g8 g4
+	g8 g4\fz
 	g4.
 	c
 	c
@@ -315,7 +315,7 @@ MvtDeuxTrombeEII = \relative c' {
 	g4.\ff
 	g
 % mesures 176 à 180
-	g8 g4
+	g8 g4\fz
 	c4.
 	c
 	c
