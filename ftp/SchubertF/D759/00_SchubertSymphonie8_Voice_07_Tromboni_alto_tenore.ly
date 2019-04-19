@@ -54,13 +54,13 @@ globalMvtDeux = {
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 80 
+	\tempo "Andante con moto"
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_07_Tromboni_alto_tenore_V.ly"
-\include "02_SchubertSymphonie8_Mvt2_07_Tromboni_alto_tenore.ly"
+\include "02_SchubertSymphonie8_Mvt2_07_Tromboni_alto_tenore_V.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################

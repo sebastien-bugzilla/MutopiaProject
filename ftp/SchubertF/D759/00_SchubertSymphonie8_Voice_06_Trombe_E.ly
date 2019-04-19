@@ -103,7 +103,14 @@ globalMvtDeux = {
 		}
 		\layout {
 			%system-count = #20
-			#(layout-set-staff-size 19)}
+			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
+		}
 	}
 	\score {
 		{
@@ -121,6 +128,12 @@ globalMvtDeux = {
 		\layout {
 			%system-count = #20
 			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
 		}
 	}
 	\score {
@@ -138,7 +151,14 @@ globalMvtDeux = {
 		}
 		\layout {
 			%system-count = #12
-			#(layout-set-staff-size 19)}
+			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
+		}
 	}
 	\score {
 		{
@@ -156,6 +176,12 @@ globalMvtDeux = {
 		\layout {
 			%system-count = #20
 			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
 		}
 	}
 }
