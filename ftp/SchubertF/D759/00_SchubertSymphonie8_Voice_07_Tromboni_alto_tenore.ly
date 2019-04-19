@@ -50,11 +50,11 @@ globalMvtUn = {
 %-----------------------------------------------------------------------
 globalMvtDeux = {
 	\version "2.18.2"
-	\time 4/4
+	\time 3/8
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Andante con moto"
+	\tempo "Andante con moto."
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
@@ -103,14 +103,21 @@ globalMvtDeux = {
 		}
 		\layout {
 			%system-count = #20
-			#(layout-set-staff-size 19)}
+			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
+		}
 	}
 	\score {
 		{
 			\new Staff << \globalMvtDeux \MvtDeuxTromboni_alto >>
 		}
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -121,6 +128,12 @@ globalMvtDeux = {
 		\layout {
 			%system-count = #20
 			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
 		}
 	}
 	\score {
@@ -138,14 +151,21 @@ globalMvtDeux = {
 		}
 		\layout {
 			%system-count = #20
-			#(layout-set-staff-size 19)}
+			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
+		}
 	}
 	\score {
 		{
-			\new Staff << \globalMvtDeux \MvtDeuxTromboni_altoI >>
+			\new Staff << \globalMvtDeux \MvtDeuxTromboni_tenore >>
 		}
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -156,6 +176,12 @@ globalMvtDeux = {
 		\layout {
 			%system-count = #20
 			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
 		}
 	}
 }

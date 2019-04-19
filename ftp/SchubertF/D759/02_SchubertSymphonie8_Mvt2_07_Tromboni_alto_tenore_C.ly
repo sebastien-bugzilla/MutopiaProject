@@ -158,7 +158,7 @@ MvtDeuxTromboni_alto = \relative c' {
 	r r a\fz
 	r r dis!\fz
 	e d f\fz
-	r a e-.
+	r a-. e-.
 	e4.\ff
 % mesures 251 à 255
 	e
@@ -349,7 +349,7 @@ MvtDeuxTromboni_tenore = \relative c {
 	r r fis\fz
 	r r b\fz
 	b b d\fz
-	r c bes-.
+	r c-. bes-.
 	bes4.\ff
 % mesures 251 à 255
 	bes

@@ -6,13 +6,58 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   7               #
 %#######################################################################
+fluteNotesM = \relative c'' {
+    s4.*28
+    b16( dis fis a gis fis
+    e8) r r 
+}
+fluteNotesN = \relative c'' {
+    s4.*169
+    b16( dis fis a gis fis
+    e8) r r 
+    b16( dis fis a gis fis
+    e4) r8 
+}
+fluteNotesO = \relative c'' {
+    s4.*234
+    fis16.( e32 fis16 e cis a
+    e'16. d!32 e16 d b gis)
+}
+oboeNotesM = \relative c''' {
+    s4.*93
+    bes16.( aes32 bes16 aes f des)
+    aes'16.( ges32 aes16 ges ees c)
+}
+tymbaleNotesM = \relative c {
+    s4.*302
+    b4.:32
+    e8 r r
+    b4.:32
+    e8 r r
+    b4.:32
+}
+\addQuote "fluteM" {\fluteNotesM}
+\addQuote "fluteN" {\fluteNotesN}
+\addQuote "fluteO" {\fluteNotesO}
+\addQuote "oboeM" {\oboeNotesM}
+\addQuote "tymbaleM" {\tymbaleNotesM}
 MvtDeuxTromboni_alto = \relative c' {
 	\clef tenor
 	\key e \major
-	\set Staff.instrumentName = #"Tromboni"
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trombone"
+	        \line {
+	            "alto"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"trombone"
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
-	R4.*32
+	R4.*28
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -22,7 +67,9 @@ MvtDeuxTromboni_alto = \relative c' {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteM" #UP {R4.*2} \clef tenor
+	R4.*2
 % mesures 31 à 35
 	
 	\mark \default
@@ -40,7 +87,7 @@ MvtDeuxTromboni_alto = \relative c' {
 	e4( dis8)
 	e8( fis8.-> e16)
 	dis4.
-	R4.*51
+	R4.*49
 % mesures 46 à 50
 	
 % mesures 51 à 55
@@ -60,9 +107,11 @@ MvtDeuxTromboni_alto = \relative c' {
 % mesures 86 à 90
 	
 % mesures 91 à 95
+	\clef treble \new CueVoice { \set instrumentCueName = "Ob. I"}
+	\cueDuring #"oboeM" #UP {R4.*2} \clef tenor
 	\mark \default
 % mesures 96 à 100
-	cis4.\ff
+	cis!4.\ff
 	e
 	dis
 	fis
@@ -81,7 +130,7 @@ MvtDeuxTromboni_alto = \relative c' {
 	cis, \mark \default
 % mesures 111 à 115
 	d8 r r
-	R4.*62
+	R4.*58
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -105,8 +154,8 @@ MvtDeuxTromboni_alto = \relative c' {
 % mesures 166 à 170
 	
 % mesures 171 à 175
-	
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteN" #UP {R4.*4} \clef tenor
 	\mark \default
 	dis4.\ff
 	e
@@ -123,7 +172,7 @@ MvtDeuxTromboni_alto = \relative c' {
 	fis8( gis8.-> fis16)
 	eis4.
 % mesures 186 à 190
-	R4.*51
+	R4.*49
 % mesures 191 à 195
 	
 % mesures 196 à 200
@@ -141,7 +190,8 @@ MvtDeuxTromboni_alto = \relative c' {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteO" #UP {R4.*2} \clef tenor
 % mesures 236 à 240
 	\mark \default
 	e4.\ff
@@ -151,14 +201,14 @@ MvtDeuxTromboni_alto = \relative c' {
 % mesures 241 à 245
 	a8 e g~
 	g f4
-	e8-. e-. dis-.
+	e8-. e-. dis!-.
 	e r b\fz
 	r r b\fz
 % mesures 246 à 250
 	r r a\fz
-	r r dis!\fz
+	r r dis\fz
 	e d f\fz
-	r a e-.
+	r a-. e-.
 	e4.\ff
 % mesures 251 à 255
 	e
@@ -168,7 +218,7 @@ MvtDeuxTromboni_alto = \relative c' {
 	dis \mark \default
 % mesures 256 à 260
 	e8 r r
-	R4.*51
+	R4.*46
 % mesures 261 à 265
 	
 % mesures 266 à 270
@@ -188,8 +238,8 @@ MvtDeuxTromboni_alto = \relative c' {
 % mesures 301 à 305
 	
 % mesures 306 à 310
-	
-	
+	\clef bass \new CueVoice { \set instrumentCueName = "Pk."}
+	\cueDuring #"tymbaleM" #UP {R4.*5} \clef tenor
 	b4.\pp~
 	b~
 	b~
@@ -200,10 +250,20 @@ MvtDeuxTromboni_alto = \relative c' {
 MvtDeuxTromboni_tenore = \relative c {
 	\clef tenor
 	\key e \major
-	\set Staff.instrumentName = #"Tromboni"
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trombone"
+	        \line {
+	            "tenore"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"trombone"
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
-	R4.*32
+	R4.*28
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -213,7 +273,9 @@ MvtDeuxTromboni_tenore = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteM" #UP {R4.*2} \clef tenor
+	R4.*2
 % mesures 31 à 35
 	
 	\mark \default
@@ -231,7 +293,7 @@ MvtDeuxTromboni_tenore = \relative c {
 	cis4( bis8)
 	cis8( dis8.-> cis16)
 	bis4.
-	R4.*51
+	R4.*49
 % mesures 46 à 50
 	
 % mesures 51 à 55
@@ -251,9 +313,11 @@ MvtDeuxTromboni_tenore = \relative c {
 % mesures 86 à 90
 	
 % mesures 91 à 95
+	\clef treble \new CueVoice { \set instrumentCueName = "Ob. I"}
+	\cueDuring #"oboeM" #UP {R4.*2} \clef tenor
 	\mark \default
 % mesures 96 à 100
-	cis,4.\ff
+	cis,!4.\ff
 	e
 	dis
 	fis
@@ -272,7 +336,7 @@ MvtDeuxTromboni_tenore = \relative c {
 	g \mark \default
 % mesures 111 à 115
 	fis8 r r
-	R4.*62
+	R4.*58
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -296,8 +360,8 @@ MvtDeuxTromboni_tenore = \relative c {
 % mesures 166 à 170
 	
 % mesures 171 à 175
-	
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteN" #UP {R4.*4} \clef tenor
 	\mark \default
 	fis4.\ff
 	gis
@@ -314,7 +378,7 @@ MvtDeuxTromboni_tenore = \relative c {
 	a8( b8.-> a16)
 	gis4.
 % mesures 186 à 190
-	R4.*51
+	R4.*49
 % mesures 191 à 195
 	
 % mesures 196 à 200
@@ -332,7 +396,8 @@ MvtDeuxTromboni_tenore = \relative c {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Fl. I"}
+	\cueDuring #"fluteO" #UP {R4.*2} \clef tenor
 % mesures 236 à 240
 	\mark \default
 	c4.\ff
@@ -349,7 +414,7 @@ MvtDeuxTromboni_tenore = \relative c {
 	r r fis\fz
 	r r b\fz
 	b b d\fz
-	r c bes-.
+	r c-. bes-.
 	bes4.\ff
 % mesures 251 à 255
 	bes
@@ -359,7 +424,7 @@ MvtDeuxTromboni_tenore = \relative c {
 	a \mark \default
 % mesures 256 à 260
 	gis!8 r r
-	R4.*51
+	R4.*46
 % mesures 261 à 265
 	
 % mesures 266 à 270
@@ -379,8 +444,8 @@ MvtDeuxTromboni_tenore = \relative c {
 % mesures 301 à 305
 	
 % mesures 306 à 310
-	
-	
+	\clef bass \new CueVoice { \set instrumentCueName = "Pk."}
+	\cueDuring #"tymbaleM" #UP {R4.*5} \clef tenor
 	gis4.\pp~
 	gis~
 	gis~
