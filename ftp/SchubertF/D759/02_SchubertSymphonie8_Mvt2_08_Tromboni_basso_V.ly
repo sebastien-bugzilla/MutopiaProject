@@ -6,13 +6,57 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   8               #
 %#######################################################################
+fluteNotesM = \relative c'' {
+    s4.*28
+    b16_( dis fis a gis fis
+    e8) r r
+}
+fluteNotesN = \relative c'' {
+    s4.*171
+    b16( dis fis a gis fis
+    e4) r8 
+}
+fluteNotesO = \relative c'' {
+    s4.*234
+    fis16.( e32 fis16 e cis a
+    e'16. d!32 e16 d b gis)
+}
+oboeNotesM = \relative c''' {
+    s4.*93
+    bes16._( aes32 bes16 aes f des)
+    aes'16.( ges32 aes16 ges ees c)
+}
+violinNotesM = \relative c'' {
+    s4.*279
+    b4.(~
+    b
+    b'
+    gis
+    e
+    c)
+}
+\addQuote "fluteM" {\fluteNotesM}
+\addQuote "fluteN" {\fluteNotesN}
+\addQuote "fluteO" {\fluteNotesO}
+\addQuote "oboeM" {\oboeNotesM}
+\addQuote "violinM" {\violinNotesM}
 MvtDeuxTromboni_basso = \relative c' {
 	\clef bass
 	\key e \major
 	\set Staff.instrumentName = #"Tromboni"
-	\set Staff.midiInstrument = #"trombone"
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trombone"
+	        \line {
+	            "basso"
+	        }
+	    }
+	}
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
-	R4.*32
+	R4.*28
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -22,11 +66,16 @@ MvtDeuxTromboni_basso = \relative c' {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Fl. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"fluteM" #UP {R4.*2} 
+	R4.*2
 % mesures 31 à 35
 	
 	\mark \default
-	b8-.\f cis-. a-.
+	\clef bass b8-.\f cis-. a-.
 	gis-. fis-. e-. 
 	dis-. b-. dis-. 
 % mesures 36 à 40
@@ -40,7 +89,7 @@ MvtDeuxTromboni_basso = \relative c' {
 	e cis gis'
 	e bis cis
 	gis'4.
-	R4.*51
+	R4.*49
 % mesures 46 à 50
 	
 % mesures 51 à 55
@@ -60,9 +109,14 @@ MvtDeuxTromboni_basso = \relative c' {
 % mesures 86 à 90
 	
 % mesures 91 à 95
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Ob. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"oboeM" #UP {R4.*2} \clef bass
 	\mark \default
 % mesures 96 à 100
-	cis,4.\ff
+	cis,!4.\ff
 	e
 	dis
 	fis
@@ -96,7 +150,7 @@ MvtDeuxTromboni_basso = \relative c' {
 	r8 r a'\p
 	g4.(
 	c,4) r8
-	R4.*44
+	R4.*42
 % mesures 131 à 135
 	
 % mesures 136 à 140
@@ -114,8 +168,11 @@ MvtDeuxTromboni_basso = \relative c' {
 % mesures 166 à 170
 	
 % mesures 171 à 175
-	
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Fl. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"fluteN" #UP {R4.*2} \clef bass
 	\mark \default
 	b'8\ff-. cis-. a-.
 	gis-. fis-. e-. 
@@ -132,7 +189,7 @@ MvtDeuxTromboni_basso = \relative c' {
 	a' eis fis
 	cis4.
 % mesures 186 à 190
-	R4.*51
+	R4.*49
 % mesures 191 à 195
 	
 % mesures 196 à 200
@@ -150,7 +207,11 @@ MvtDeuxTromboni_basso = \relative c' {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Fl. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"fluteO" #UP {R4.*2} \clef bass
 % mesures 236 à 240
 	\mark \default
 	a'8-.\ff a,-. e'~
@@ -177,7 +238,7 @@ MvtDeuxTromboni_basso = \relative c' {
 	b \mark \default
 % mesures 256 à 260
 	cis!8 r r
-	R4.*29
+	R4.*23
 % mesures 261 à 265
 	
 % mesures 266 à 270
@@ -187,7 +248,8 @@ MvtDeuxTromboni_basso = \relative c' {
 % mesures 276 à 280
 	
 % mesures 281 à 285
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Viol. I"}
+	\cueDuring #"violinM" #UP {R4.*6} \clef bass
 % mesures 286 à 290
 	aes'4.\ppp~
 	aes~

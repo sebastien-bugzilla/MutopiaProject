@@ -67,7 +67,8 @@ MvtDeuxTromboni_alto = \relative c' {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	\clef treble \new CueVoice { \set instrumentCueName = "Fl. I"}
+	\clef treble 
+	\new CueVoice { \set instrumentCueName = "Fl. I"}
 	\cueDuring #"fluteM" #UP {R4.*2} \clef tenor
 	R4.*2
 % mesures 31 à 35
