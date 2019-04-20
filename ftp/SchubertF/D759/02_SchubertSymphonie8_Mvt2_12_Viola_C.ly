@@ -350,7 +350,7 @@ MvtDeuxViola = \relative c'' {
 	f8 r r
 	R4.
 	b32[\ff dis! fis! a] b[ a fis dis] b[ dis fis a]
-	b[ a fis dis] b[ dis fis a] b[ a fis b,]
+	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r
 	<e g>4.\fp\>(

@@ -6,6 +6,29 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   12               #
 %#######################################################################
+violinNotesM = \relative c'' {
+    s4.*59
+    gis4.(~
+    gis
+    gis'
+    e)
+}
+violinNotesN = \relative c' {
+    s4.*200
+    e4.(~
+    e
+    e'
+    c)
+}
+clarinetNotesM = \relative c'' {
+    s4.*285
+    ees4.(
+    f
+    ees8 c aes)
+}
+\addQuote "violinM" {\violinNotesM}
+\addQuote "violinN" {\violinNotesN}
+\addQuote "clarinetM" {\clarinetNotesM}
 MvtDeuxViola = \relative c'' {
 	\clef alto
 	\key e \major
@@ -70,12 +93,12 @@ MvtDeuxViola = \relative c'' {
 	fis-. gis'-. e-. 
 	dis-. cis-. b-. 
 	ais-. fis-. ais-. 
-	b b' a! 
+	b-. b'-. a!-. 
 % mesures 41 à 45
-	gis a fis
-	e cis gis'
-	e bis cis
-	gis' a fis
+	gis-. a-. fis-. 
+	e-. cis-. gis'-. 
+	e-. bis-. cis-. 
+	gis'-. a-. fis-. 
 	e\p r r
 % mesures 46 à 52
 	R4.*4
@@ -97,14 +120,14 @@ MvtDeuxViola = \relative c'' {
 	b) r r
 % mesures 56 à 60
 	e,\pp r r
-	R4.*7
+	R4.*3
 	
 	
 	
 % mesures 61 à 65
 	
-	
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Viol I" }
+	\cueDuring #"violinM" #UP {R4.*4} \clef alto
 	cis'16\pp cis8 cis cis16~
 	cis cis8 cis cis16~
 % mesures 66 à 70
@@ -115,7 +138,7 @@ MvtDeuxViola = \relative c'' {
 	cis) cis8 cis\< cis16~
 % mesures 71 à 75
 	cis cis8 cis cis16(
-	g')\f\> g8 g g16(\!
+	g')\f\> g8 g g16(
 	fis)\p fis8 d des16(
 	c)\pp c8 c c16~
 	c c8 c16( cis) cis(
@@ -144,7 +167,7 @@ MvtDeuxViola = \relative c'' {
 	f)\ppp f8 f f16(
 	ges) ges8 ges ges16 \mark \default
 % mesures 96 à 100
-	e!8\ff cis!4
+	e!8\ff cis4
 	e4.
 	dis
 	fis
@@ -282,14 +305,14 @@ MvtDeuxViola = \relative c'' {
 % mesures 196 à 200
 	e) r r
 	a,\pp r r 
-	R4.*7
+	R4.*3 \break
 	
 	
 % mesures 201 à 205
 	
 	
-	
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Viol I" }
+	\cueDuring #"violinN" #UP {R4.*4} \clef alto
 	a16\pp a8 a a16~
 % mesures 206 à 210
 	a16 a8 a a16~
@@ -350,7 +373,7 @@ MvtDeuxViola = \relative c'' {
 	f8 r r
 	R4.
 	b32[\ff dis! fis! a] b[ a fis dis] b[ dis fis a]
-	b[ a fis dis] b[ dis fis a] b[ a fis b,]
+	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r
 	<e g>4.\fp\>(
@@ -370,15 +393,15 @@ MvtDeuxViola = \relative c'' {
 	b-. a-. fis-.
 	e-. r r
 % mesures 271 à 275
-	R4.*18
+	R4.*15
 % mesures 276 à 280
 	
 % mesures 281 à 285
 	
 % mesures 286 à 290
 	
-	
-	
+	\clef treble \new CueVoice { \set instrumentCueName = "Klar. I" }
+	\cueDuring #"clarinetM" #UP {R4.*3} \clef alto
 	ees16\pp(^\arco g bes des c bes
 	aes8) r r
 % mesures 291 à 295
