@@ -264,7 +264,7 @@ MvtUnTimpaniEH = \relative c {
 	b4\fz r r
 	b r r
 % mesures 301 à 305
-	b\fz r7 r
+	b\fz r r
 	b r r
 	b8 r b2:16\fz
 	b8 r b2:16\fz

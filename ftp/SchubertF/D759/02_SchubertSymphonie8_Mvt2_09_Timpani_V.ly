@@ -6,12 +6,56 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   9               #
 %#######################################################################
+fluteNotesM = \relative c'' {
+    s4.*30
+    b16_( dis fis a gis fis
+    e8) r r
+}
+fluteNotesN = \relative c'' {
+    s4.*169
+    b16( dis fis a gis fis
+    e8) r r
+    b16( dis fis a gis fis
+    e4) r8 
+}
+fluteNotesO = \relative c'' {
+    s4.*234
+    fis16.( e32 fis16 e cis a
+    e'16. d!32 e16 d b gis)
+}
+oboeNotesM = \relative c''' {
+    s4.*93
+    bes16._( aes32 bes16 aes f des)
+    aes'16.( ges32 aes16 ges ees c)
+}
+violinNotesM = \relative c'' {
+    s4.*298
+    b16( dis fis a gis fis
+    e8) r r
+    b16( dis fis a gis fis
+    e8) r r
+}
+\addQuote "fluteM" {\fluteNotesM}
+\addQuote "fluteN" {\fluteNotesN}
+\addQuote "fluteO" {\fluteNotesO}
+\addQuote "oboeM" {\oboeNotesM}
+\addQuote "violinM" {\violinNotesM}
 MvtDeuxTimpaniEH = \relative c {
 	\clef bass
 	\key c \major
-	\set Staff.instrumentName = #"Timpani in H.Fis"
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Timpani"
+	        \line {
+	            "in E. H"
+	        }
+	    }
+	}
+	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                      beam-event tuplet-span-event
+                                      dynamic-event slur-event)
 % mesures 1 à 5
-	R4.*32
+	R4.*30
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -21,10 +65,14 @@ MvtDeuxTimpaniEH = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Fl. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"fluteM" #UP {R4.*2} 
 % mesures 31 à 35
 	
-	\mark \default
+	\clef bass \mark \default
 	b4\f r8
 	b4 r8
 	b b r
@@ -44,7 +92,7 @@ MvtDeuxTimpaniEH = \relative c {
 	e4.:32\fp->
 % mesures 51 à 55
 	b8 r r
-	R4.*44
+	R4.*42
 % mesures 56 à 60
 	
 % mesures 61 à 65
@@ -62,18 +110,21 @@ MvtDeuxTimpaniEH = \relative c {
 % mesures 91 à 95
 	
 	
-	
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Ob. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"oboeM" #UP {R4.*2} \clef bass
 	\mark \default
 % mesures 96 à 100
-	e8:32\ff\noBeam e r
-	e:32\noBeam e r
+	e32\ff[ e e e] e8 r
+	e32[ e e e] e8 r
 	R4.*2
 	
-	e8:32\noBeam e r8
+	e32[ e e e] e8 r8
 % mesures 101 à 105
-	r r e:32
-	e r r
+	r r e32[ e e e]
+	e8 r r
 	r e32 e e e e8\noBeam
 	r e32 e e e e8\noBeam
 	R4.*3
@@ -84,7 +135,7 @@ MvtDeuxTimpaniEH = \relative c {
 	e4.:32
 	e4: e8 \mark \default
 % mesures 111 à 115
-	R4.*63
+	R4.*59
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -106,7 +157,11 @@ MvtDeuxTimpaniEH = \relative c {
 % mesures 161 à 165
 	
 % mesures 166 à 170
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Fl. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"fluteN" #UP {R4.*4} \clef bass
 % mesures 171 à 175
 	
 	
@@ -121,7 +176,7 @@ MvtDeuxTimpaniEH = \relative c {
 	e e\fz r
 % mesures 181 à 185
 	e4 r8
-	R4.*55
+	R4.*53
 % mesures 186 à 190
 	
 % mesures 191 à 195
@@ -141,15 +196,19 @@ MvtDeuxTimpaniEH = \relative c {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Fl. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"fluteO" #UP {R4.*2} \clef bass
 % mesures 236 à 240
 	\mark \default
-	e8:32\ff\noBeam e8 r
-	e:32\noBeam e r
+	e32\ff[ e e e] e8 r
+	e32[ e e e] e8 r
 	R4.
-	b8:32\noBeam b8 r
+	b32[ b b b] b8 r
 % mesures 241 à 245
-	e8:32\noBeam e8 r
+	e32[ e e e] e8 r
 	R4.
 	r8 b b
 	e e\fz r
@@ -173,7 +232,7 @@ MvtDeuxTimpaniEH = \relative c {
 	e4.:32
 	b8 r r
 % mesures 261 à 265
-	R4.*42
+	R4.*38
 % mesures 266 à 270
 	
 % mesures 271 à 275
@@ -187,7 +246,11 @@ MvtDeuxTimpaniEH = \relative c {
 % mesures 291 à 295
 	
 % mesures 296 à 300
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Viol. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"violinM" #UP {R4.*4} \clef bass
 % mesures 301 à 305
 	
 	

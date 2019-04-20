@@ -6,6 +6,7 @@
 \paper {
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
+	%systems-per-page = #12
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -50,17 +51,17 @@ globalMvtUn = {
 %-----------------------------------------------------------------------
 globalMvtDeux = {
 	\version "2.18.2"
-	\time 4/4
+	\time 3/8
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 80 
+	\tempo "Andante con moto."
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_09_Timpani_V.ly"
-\include "02_SchubertSymphonie8_Mvt2_09_Timpani.ly"
+\include "02_SchubertSymphonie8_Mvt2_09_Timpani_V.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -102,8 +103,15 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
-			#(layout-set-staff-size 19)}
+			system-count = #12
+			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
+		}
 	}
 	\score {
 		{
@@ -119,8 +127,14 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			system-count = #10
 			#(layout-set-staff-size 19)
+			\context {
+			    \Staff
+			    \override Hairpin.to-barline = ##f
+			    \override TupletBracket #'bracket-visibility = ##f
+			    alternativeNumberingStyle = #'numbers
+			}
 		}
 	}
 }
