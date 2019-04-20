@@ -50,17 +50,17 @@ globalMvtUn = {
 %-----------------------------------------------------------------------
 globalMvtDeux = {
 	\version "2.18.2"
-	\time 4/4
+	\time 3/8
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Indication Tempo" 4 = 80 
+	\tempo "Andante con moto."
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 \include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_10_ViolinoI_V.ly"
-\include "02_SchubertSymphonie8_Mvt2_10_ViolinoI.ly"
+\include "02_SchubertSymphonie8_Mvt2_10_ViolinoI_V.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
