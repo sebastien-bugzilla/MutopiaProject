@@ -32,7 +32,7 @@ MvtDeuxViolinoII = \relative c'' {
 	dis(\< e fis\!
 	e4.)(
 	ais)(\fp\>
-	a)(\!
+	a!)(\!
 % mesures 16 à 20
 	gis8) r r
 	R4.

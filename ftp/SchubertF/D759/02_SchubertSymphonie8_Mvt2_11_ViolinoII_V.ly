@@ -6,6 +6,30 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   11               #
 %#######################################################################
+violinNotesM = \relative c'' {
+    s4.*59
+    g4.(~
+    g
+    g'
+    e)
+}
+violinNotesN = \relative c' {
+    s4.*200
+    e4.(~
+    e 
+    e'
+    c)
+}
+clarinetNotesM = \relative c'' {
+    s4.*285
+    ees4.(
+    fis
+    ees8 c aes)
+}
+\addQuote "violinM" {\violinNotesM}
+\addQuote "violinN" {\violinNotesN}
+\addQuote "clarinetM" {\clarinetNotesM}
+
 MvtDeuxViolinoII = \relative c'' {
 	\clef treble
 	\key e \major
@@ -30,9 +54,9 @@ MvtDeuxViolinoII = \relative c'' {
 % mesures 11 à 15
 	b8 gis e)
 	dis(\< e fis\!
-	e4.)(
-	ais)(\fp\>
-	a)(\!
+	e4.)
+	ais(\fp\>
+	a!)(\!
 % mesures 16 à 20
 	gis8) r r
 	R4.
@@ -62,12 +86,12 @@ MvtDeuxViolinoII = \relative c'' {
 	fis-. gis-. e-. 
 	dis-. cis-. b-. 
 	ais-. fis'-. ais,-. 
-	b b' a!
+	b-. b'-. a!-.
 % mesures 41 à 45
-	gis a fis
-	e cis gis'
-	e bis cis
-	gis' a fis
+	gis-. a-. fis-. 
+	e-. cis-. gis'-. 
+	e-. bis-. cis-. 
+	gis'-. a-. fis-. 
 	e\p r r
 % mesures 46 à 50
 	R4.*4
@@ -83,14 +107,14 @@ MvtDeuxViolinoII = \relative c'' {
 	b16( dis fis\> a gis fis
 % mesures 56 à 60
 	e8)\pp r r
-	R4.*7
+	R4.*3
 	
 	
 	
 % mesures 61 à 65
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Viol I" }
+	\cueDuring #"violinM" #UP {R4.*4}
 	e16\pp e8 e e16~
 	e e8 e e16~ 
 % mesures 66 à 70
@@ -255,7 +279,7 @@ MvtDeuxViolinoII = \relative c'' {
 	
 	
 % mesures 191 à 195
-	dis4.\fp\>(
+	dis!4.\fp\>(
 	<d e>)(\!
 	<cis e>8) r r
 	e16(_\crescmarkup\< gis b d\> cis b
@@ -263,14 +287,14 @@ MvtDeuxViolinoII = \relative c'' {
 % mesures 196 à 200
 	e16( gis b d\> cis b\!
 	a8)\pp r r
-	R4.*7
+	R4.*3
 	
 	
 % mesures 201 à 205
 	
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Viol I" }
+	\cueDuring #"violinN" #UP {R4.*4}
 	c,16\pp c8 c c16~
 % mesures 206 à 210
 	c c8 c c16~
@@ -348,7 +372,7 @@ MvtDeuxViolinoII = \relative c'' {
 	cis'\< b a gis fis a
 	cis4\> b8)\!
 	e,8\pp r r
-	R4.*20
+	R4.*17
 % mesures 271 à 275
 	
 % mesures 276 à 280
@@ -357,8 +381,8 @@ MvtDeuxViolinoII = \relative c'' {
 	
 % mesures 286 à 290
 	
-	
-	
+	\new CueVoice { \set instrumentCueName = "Klar. I" }
+	\cueDuring #"clarinetM" #UP {R4.*3}
 	ees16(\pp g bes des c bes
 	aes8) r r
 % mesures 291 à 295
