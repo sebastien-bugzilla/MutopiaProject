@@ -6,6 +6,19 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   10               #
 %#######################################################################
+basseNotesM = \relative c {
+    e8-.^\pizz dis-. cis-.
+    b-. a-. fis-.
+}
+clarinetNotesM = \relative c'' {
+    s4.*275
+    gis4.(\pp
+    ais
+    b4 a!16 fis
+    gis4 fis16 dis)
+}
+\addQuote "basseM" {\basseNotesM}
+\addQuote "clarinetM" {\clarinetNotesM}
 MvtDeuxViolinoI = \relative c''' {
 	\clef treble
 	\key e \major
@@ -16,8 +29,11 @@ MvtDeuxViolinoI = \relative c''' {
                                       beam-event tuplet-span-event
                                       dynamic-event slur-event)
 % mesures 1 à 5
-	R4.*2
-	
+	\clef bass \new CueVoice { 
+	    \set instrumentCueName = "Bässe"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"basseM" #DOWN {R4.*2} \clef treble
 	b4.(\pp
 	cis
 	b8 gis e)
@@ -30,8 +46,8 @@ MvtDeuxViolinoI = \relative c''' {
 % mesures 11 à 15
 	b8 gis e)
 	dis4.(\>
-	cis)\!(
-	c)(\fp
+	cis)\!
+	c(\fp
 	b16)( dis! fis a gis fis
 % mesures 16 à 20
 	e8) r r
@@ -62,12 +78,12 @@ MvtDeuxViolinoI = \relative c''' {
 	fis-. gis-. e-. 
 	dis-. cis-. b-. 
 	ais-. fis'-. ais,-. 
-	b b' a! 
+	b-. b'-. a!-. 
 % mesures 41 à 45
-	gis a fis 
-	e cis gis' 
-	e bis cis 
-	gis' a fis 
+	gis-. a-. fis-. 
+	e-. cis-. gis'-. 
+	e-. bis-. cis-. 
+	gis'-. a-. fis-. 
 	e\p r r
 % mesures 46 à 50
 	R4.*4
@@ -168,7 +184,7 @@ MvtDeuxViolinoI = \relative c''' {
 % mesures 126 à 130
 	g'4.~
 	g8(\< e c)
-	c(\trill\> e d)\!
+	c(\trill -\tweak X-offset -2.0\becarre\> e d)\!
 	c4 r8
 	e,4.\p\>~
 % mesures 131 à 135
@@ -247,7 +263,7 @@ MvtDeuxViolinoI = \relative c''' {
 	f'4.(\fp\>
 	e16\! gis b d cis b
 	a8) r r
-	e'16(_\crescmarkup^\< gis b d^\> cis b
+	e'16(_\crescmarkup\< gis b d\> cis b
 	a8\!) r r
 % mesures 196 à 200
 	e16( gis b d\> cis b
@@ -329,7 +345,7 @@ MvtDeuxViolinoI = \relative c''' {
 	b16\!)( dis fis a gis fis
 % mesures 261 à 265
 	e8) r r
-	b16(^\crescmarkup\< dis fis a\> gis fis
+	b16(_\crescmarkup\< dis fis a\> gis fis
 	e8)\! r r
 	b16(\< dis fis a\> gis fis)
 	a(\pp gis fis a gis fis
@@ -337,14 +353,15 @@ MvtDeuxViolinoI = \relative c''' {
 	cis'\< b a gis fis a
 	cis4\> b8\!)
 	e,8\pp r r
-	R4.*11
+	R4.*7
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	
-	
-	
-	
+	\new CueVoice { 
+	    \set instrumentCueName = "Klar. I"
+	    %\override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"clarinetM" #UP {R4.*4}
 	b4.\ppp(~
 % mesures 281 à 285
 	b
