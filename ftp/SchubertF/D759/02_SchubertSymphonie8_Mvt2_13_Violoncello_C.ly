@@ -53,7 +53,7 @@ MvtDeuxVioloncello = \relative c {
 	e8) r r
 % mesures 31 à 35
 	b16(\> dis fis a\! gis fis
-	e8)\noBeam-. \clef bass gis,-. a-. \mark \default
+	e8)\noBeam-. \clef bass gis,-.\f a-. \mark \default
 	b-. cis-. a-. 
 	gis-. fis-. e-. 
 	dis-. b-. dis-. 

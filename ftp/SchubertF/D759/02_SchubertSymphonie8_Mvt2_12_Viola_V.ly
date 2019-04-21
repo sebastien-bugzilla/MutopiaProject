@@ -126,7 +126,10 @@ MvtDeuxViola = \relative c'' {
 	
 % mesures 61 à 65
 	
-	\clef treble \new CueVoice { \set instrumentCueName = "Viol I" }
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Viol I" 
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
 	\cueDuring #"violinM" #UP {R4.*4} \clef alto
 	cis'16\pp cis8 cis cis16~
 	cis cis8 cis cis16~

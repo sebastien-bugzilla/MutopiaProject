@@ -6,6 +6,25 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   13               #
 %#######################################################################
+clarinetNotesM = \relative c'' {
+    s4.*69
+    e8_( gis4
+    fis8 a4)
+}
+oboeNotesM = \relative c'' {
+    s4.*210
+    c8( e4
+    d8 f4)
+}
+fluteNotesM = \relative c''' {
+    s4.*295
+    b4.(
+    cis
+    b8 gis e)
+}
+\addQuote "clarinetM" {\clarinetNotesM}
+\addQuote "oboeM" {\oboeNotesM}
+\addQuote "fluteM" {\fluteNotesM}
 MvtDeuxVioloncello = \relative c {
 	\clef bass
 	\key e \major
@@ -53,7 +72,7 @@ MvtDeuxVioloncello = \relative c {
 	e8) r r
 % mesures 31 à 35
 	b16(\> dis fis a\! gis fis
-	e8)\noBeam-. \clef bass gis,-. a-. \mark \default
+	e8)\noBeam-. \clef bass gis,-.\f a-. \mark \default
 	b-. cis-. a-. 
 	gis-. fis-. e-. 
 	dis-. b-. dis-. 
@@ -73,8 +92,8 @@ MvtDeuxVioloncello = \relative c {
 	R4.*3
 	
 	
-	cis8\pp^\pizz-. dis-. e-.
-	r e,\fp-. g-.
+	cis8^\pizz-. -\tweak X-offset -3.0\pp dis-. e-.
+	r e,-\tweak X-offset -3.0\fp-. g-.
 % mesures 51 à 55
 	b r r
 	gis!(^\arco e cis'
@@ -85,7 +104,7 @@ MvtDeuxVioloncello = \relative c {
 	e'^\pizz\pp-. dis-. cis-. 
 	b-. a-. fis-. 
 	e-. r r 
-	R4.*13
+	R4.*11
 	
 % mesures 61 à 65
 	
@@ -95,10 +114,11 @@ MvtDeuxVioloncello = \relative c {
 	
 % mesures 66 à 70
 	
-	
-	
-	
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Klar. I" 
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"clarinetM" #UP {R4.*2} \clef bass
 % mesures 71 à 75
 	
 	cis'16^\arco\f\> cis8 cis cis16(\!
@@ -245,7 +265,7 @@ MvtDeuxVioloncello = \relative c {
 	fis'8\pp^\pizz-. gis-. a-.
 % mesures 191 à 195
 	r a,-.\fp c-.
-	e16(^\arco gis b d cis b
+	e16(-\tweak X-offset -1.0^\arco gis b d cis b
 	a8) a,( fis'
 	e) r r
 	cis(_\crescmarkup a fis'
@@ -254,11 +274,15 @@ MvtDeuxVioloncello = \relative c {
 	a'^\pizz\pp-. gis-. fis-.
 	e-. d-. b-.
 	a-. r r
-	R4.*13
+	R4.*11
 % mesures 201 à 205
 	
 % mesures 206 à 210
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Ob. I" 
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"oboeM" #UP {R4.*2}
 % mesures 211 à 215
 	
 	\clef bass
@@ -302,21 +326,21 @@ MvtDeuxVioloncello = \relative c {
 	g[ fis e fis] dis![ fis b c] b[ a g fis]
 	e[ fis g e] d[ g b c] d[ f e d]
 	c[ b a gis!] e'[ d c b] c[ bes g e]
-	c[\ff e g bes] c[ bes g e] c[ e g bes]
+	c[-\tweak X-offset -3.0\ff e g bes] c[ bes g e] c[ e g bes]
 % mesures 251 à 255
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
 	R4.
-	b,32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
+	b,32[-\tweak X-offset -3.0\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r \clef tenor
 	c'4.(\fp\>
-	b16)\!( dis fis a gis fis)
+	b16)\!( dis! fis a gis fis)
 	g4.(\fp\>
 	fis8)\! r r \clef bass
 % mesures 261 à 265
-	gis,8(\p e cis'
+	gis,!8(\p e cis'
 	b8) r r
 	gis(_\crescmarkup e cis'
 	b8) r r
@@ -340,16 +364,20 @@ MvtDeuxVioloncello = \relative c {
 	b r b
 	e, r r
 % mesures 281 à 285
-	R4.*18
+	R4.*15
 % mesures 286 à 290
 	
 % mesures 291 à 295
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Fl. I" 
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"fluteM" #UP {R4.*3}
 % mesures 296 à 300
 	
 	
 	
-	b'8\pizz\pp r r
+	\clef bass b'8\pizz\pp r r
 	e r r
 % mesures 301 à 305
 	b r r
@@ -364,6 +392,6 @@ MvtDeuxVioloncello = \relative c {
 	a-. gis-. fis-.
 	e r r 
 % mesures 311 à 312
-	e r r^\arco
-	<e b'>4.\fermata\espressivo \bar "|."
+	e r r
+	<e b'>4.^\arco\fermata\espressivo \bar "|."
 }
