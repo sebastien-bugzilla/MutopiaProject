@@ -53,7 +53,7 @@ MvtDeuxBasso = \relative c {
 	gis( e cis'
 % mesures 31 à 35
 	b) r r
-	e8\noBeam-. \clef bass gis-. a-. \mark \default
+	e8\noBeam-. \clef bass gis-.\f a-. \mark \default
 	b-. cis-. a-. 
 	gis-. fis-. e-. 
 	dis-. b-. dis-. 
@@ -88,7 +88,7 @@ MvtDeuxBasso = \relative c {
 	b-. a-. fis-.
 	e-. r r
 % mesures 61 à 65
-	R4.*35
+	R4.*33
 	
 	
 	
@@ -130,7 +130,7 @@ MvtDeuxBasso = \relative c {
 	
 	\mark \default
 % mesures 96 à 100
-	cis'!4.\ff
+	cis'!4.\ff^\arco
 	e
 	dis
 	fis
@@ -292,7 +292,7 @@ MvtDeuxBasso = \relative c {
 	
 % mesures 236 à 240
 	\mark \default
-	a'8\ff^\arco a,-. e'~
+	a'8-.\ff^\arco a,-. e'~
 	e a,-. a'~
 	a d,-. f~
 	f e-. b'~
@@ -321,7 +321,7 @@ MvtDeuxBasso = \relative c {
 	r e,-.\fp g-.
 	b-. r r 
 % mesures 261 à 265
-	gis8(\p e cis'
+	gis8(\p^\arco e cis'
 	b8) r r
 	gis(_\crescmarkup e cis'
 	b8) r r
@@ -334,7 +334,7 @@ MvtDeuxBasso = \relative c {
 	
 % mesures 271 à 275
 	
-	gis8-.\pp r a!
+	gis8-.\pp^\pizz r a!
 	b r b,
 	e-. r r
 	R4.

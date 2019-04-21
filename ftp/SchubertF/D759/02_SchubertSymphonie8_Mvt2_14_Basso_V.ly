@@ -6,6 +6,26 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   14               #
 %#######################################################################
+oboeNotesM = \relative c''' {
+    s4.*93
+    bes16.( aes32 bes16 aes f des)
+    aes'16.( ges32 aes16 ges ees c)
+}
+fluteNotesM = \relative c'' {
+    s4.*234
+    fis16.( e32 fis16 e cis a
+    e'16. d32 e16 d b gis)
+}
+fluteNotesN = \relative c''' {
+    s4.*295
+    b4.(
+    cis
+    b8 gis e)
+}
+\addQuote "oboeM" {\oboeNotesM}
+\addQuote "fluteM" {\fluteNotesM}
+\addQuote "fluteN" {\fluteNotesN}
+
 MvtDeuxBasso = \relative c {
 	\clef bass
 	\key e \major
@@ -53,7 +73,7 @@ MvtDeuxBasso = \relative c {
 	gis( e cis'
 % mesures 31 à 35
 	b) r r
-	e8\noBeam-. \clef bass gis-. a-. \mark \default
+	e8\noBeam-. \clef bass gis-.\f a-. \mark \default
 	b-. cis-. a-. 
 	gis-. fis-. e-. 
 	dis-. b-. dis-. 
@@ -88,7 +108,7 @@ MvtDeuxBasso = \relative c {
 	b-. a-. fis-.
 	e-. r r
 % mesures 61 à 65
-	R4.*35
+	R4.*33
 	
 	
 	
@@ -124,13 +144,14 @@ MvtDeuxBasso = \relative c {
 	
 	
 % mesures 91 à 95
-	
-	
-	
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Ob. I" 
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"oboeM" #UP {R4.*2} \clef bass
 	\mark \default
 % mesures 96 à 100
-	cis'!4.\ff
+	cis'!4.\ff^\arco
 	e
 	dis
 	fis
@@ -224,7 +245,7 @@ MvtDeuxBasso = \relative c {
 	b8) r r
 	e8\noBeam-. gis-.\ff a-. \mark \default
 	b-. cis-. a-.
-	gis_\stacc fis e
+	gis^\stacc fis e
 % mesures 176 à 180
 	dis b dis
 	e gis b
@@ -257,7 +278,7 @@ MvtDeuxBasso = \relative c {
 	e-. d-. b-.
 % mesures 201 à 205
 	a-. r r
-	R4.*35
+	R4.*33
 % mesures 206 à 210
 	
 % mesures 211 à 215
@@ -285,14 +306,15 @@ MvtDeuxBasso = \relative c {
 	
 	
 % mesures 231 à 235
-	
-	
-	
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Fl. I" 
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"fluteM" #UP {R4.*2} \clef bass
 	
 % mesures 236 à 240
 	\mark \default
-	a'8\ff^\arco a,-. e'~
+	a'8-.\ff^\arco a,-. e'~
 	e a,-. a'~
 	a d,-. f~
 	f e-. b'~
@@ -321,7 +343,7 @@ MvtDeuxBasso = \relative c {
 	r e,-.\fp g-.
 	b-. r r 
 % mesures 261 à 265
-	gis8(\p e cis'
+	gis8(\p^\arco e cis'
 	b8) r r
 	gis(_\crescmarkup e cis'
 	b8) r r
@@ -334,7 +356,7 @@ MvtDeuxBasso = \relative c {
 	
 % mesures 271 à 275
 	
-	gis8-.\pp r a!
+	gis8-.\pp^\pizz r a!
 	b r b,
 	e-. r r
 	R4.
@@ -345,11 +367,15 @@ MvtDeuxBasso = \relative c {
 	b r b
 	e r r
 % mesures 281 à 285
-	R4.*18
+	R4.*15
 % mesures 286 à 290
 	
 % mesures 291 à 295
-	
+	\clef treble \new CueVoice { 
+	    \set instrumentCueName = "Fl. I" 
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
+	\cueDuring #"fluteN" #UP {R4.*3} \clef bass
 % mesures 296 à 300
 	
 	
