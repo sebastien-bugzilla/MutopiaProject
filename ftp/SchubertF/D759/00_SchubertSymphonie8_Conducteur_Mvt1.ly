@@ -49,7 +49,7 @@ global = {
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
-\include "/media/Documents/Partitions/lilypond/markup.ly"
+\include "markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_01_Flauti_C.ly"
 \include "01_SchubertSymphonie8_Mvt1_02_Oboi_C.ly"
 \include "01_SchubertSymphonie8_Mvt1_03_ClarinettiA_C.ly"
@@ -131,41 +131,6 @@ global = {
 			%system-count = #20
 			\context {
 			    \StaffGroup \override StaffGrouper.staff-staff-spacing.basic-distance = #5
-			}
-		}
-	}
-	\score {
-	    <<
-	        \new StaffGroup <<
-			    \new Staff { \global \MvtUnFlautiI }
-			    \new Staff { \global \MvtUnFlautiII }
-			    \new Staff { \global \MvtUnOboiI }
-			    \new Staff { \global \MvtUnOboiII }
-			    \new Staff { \global \MvtUnClarinettiAI }
-			    \new Staff { \global \MvtUnClarinettiAII }
-			    \new Staff { \global \MvtUnFagottiI }
-			    \new Staff { \global \MvtUnFagottiII }
-			    \new Staff { \global \MvtUnCorniDI }
-			    \new Staff { \global \MvtUnCorniDII }
-			    \new Staff { \global \MvtUnTrombeEI }
-			    \new Staff { \global \MvtUnTrombeEII }
-		        \new Staff { \global \MvtUnTromboni_alto }
-		        \new Staff { \global \MvtUnTromboni_tenore }
-			    \new Staff { \global \MvtUnTromboni_basso }
-		        \new Staff { \global \MvtUnTimpaniEH }
-			    \new Staff { \global \MvtUnViolinoI }
-			    \new Staff { \global \MvtUnViolinoII }
-		        \new Staff { \global \MvtUnViola }
-			    \new Staff { \global \MvtUnVioloncello }
-			    \new Staff { \global \MvtUnBasso }
-			>>
-		>>
-		\midi {
-		    \tempo 2 = 85
-			\context {
-			    \Score
-			    midiMinimumVolume = #0.8
-				midiMaximumVolume = #0.9
 			}
 		}
 	}

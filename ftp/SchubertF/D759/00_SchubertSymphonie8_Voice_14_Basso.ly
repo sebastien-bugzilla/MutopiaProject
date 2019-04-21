@@ -58,7 +58,7 @@ globalMvtDeux = {
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
-\include "/media/Documents/Partitions/lilypond/markup.ly"
+\include "markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_14_Basso_V.ly"
 \include "02_SchubertSymphonie8_Mvt2_14_Basso_V.ly"
 %#######################################################################

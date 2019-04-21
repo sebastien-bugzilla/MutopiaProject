@@ -50,7 +50,7 @@ global = {
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
-\include "/media/Documents/Partitions/lilypond/markup.ly"
+\include "markup.ly"
 \include "02_SchubertSymphonie8_Mvt2_01_Flauti_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_02_Oboi_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_03_ClarinettiA_C.ly"
