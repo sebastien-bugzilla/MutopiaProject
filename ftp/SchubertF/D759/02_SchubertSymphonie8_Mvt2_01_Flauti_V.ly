@@ -128,7 +128,10 @@ MvtDeuxFlautiI = \relative c'' {
 % mesures 81 à 85
 	
 % mesures 86 à 90
-	\new CueVoice { \set instrumentCueName = "Ob. I"}
+	\new CueVoice { 
+	    \set instrumentCueName = "Ob. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
 	\cueDuring #"oboeM" #UP {R4.*2}
 % mesures 91 à 95
 	
@@ -269,7 +272,10 @@ MvtDeuxFlautiI = \relative c'' {
 % mesures 231 à 235
 	
 	
-	\new CueVoice { \set instrumentCueName = "Ob. I"}
+	\new CueVoice { 
+	    \set instrumentCueName = "Ob. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
 	\cueDuring #"oboeN" #UP {R4.*2}
 	fis,16.(\ppp-> e32 fis16 e cis a
 % mesures 236 à 240
@@ -327,7 +333,10 @@ MvtDeuxFlautiI = \relative c'' {
 % mesures 286 à 290
 	
 % mesures 291 à 295
-	\new CueVoice { \set instrumentCueName = "Viol. I"}
+	\new CueVoice { 
+	    \set instrumentCueName = "Viol. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
 	\cueDuring #"violinN" #UP {R4.*4}
 % mesures 296 à 300
 	b'4.\pp\<(

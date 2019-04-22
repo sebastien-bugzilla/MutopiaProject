@@ -5,11 +5,19 @@
 %#######################################################################
 \paper {
 	%annotate-spacing = ##t
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
+	ragged-bottom = ##t
+	ragged-last-bottom = ##t
 	%systems-per-page = #11
 	%system-system-spacing = #'((basic-distance . 9) (padding . 0))
 	%system-count = #12
+	%
+	%score-system-spacing = #'((padding . 0) (basic-distance . 10) (minimum-distance . 0) (stretchability . 0))
+	%system-system-spacing #'basic-distance = #0
+	%system-system-spacing #'minimum-distance = #0
+	%system-system-spacing #'padding = #0.2
+	%system-system-spacing #'stretchability = #0
+	%page-breaking = #ly:page-turn-breaking
+	%auto-first-page-number = ##t
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -64,7 +72,9 @@ globalMvtDeux = {
 %-----------------------------------------------------------------------
 \include "markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_01_Flauti_V.ly"
+\include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_01_Flauti_V.ly"
+\include "02_Voice_part_formatting.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -93,20 +103,25 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnFlautoI >>
-		}
+	    \new Staff <<
+	        \new Voice {
+	            \fluteIFormattingMvtI
+	        }
+	        \new Voice {
+	            \globalMvtUn \MvtUnFlautoI
+	        }
+	    >>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					I
 				}
 			}
 		}
 		\layout {
-			%system-count = #22
+			%system-count = #23
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -117,20 +132,25 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxFlautiI >>
-		}
+		\new Staff <<
+		    \new Voice {
+		        \fluteIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxFlautiI 
+		    }
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					II
 				}
 			}
 		}
 		\layout {
-			system-count = #11
+			%system-count = #11
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -141,9 +161,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnFlautoII >>
-		}
+		\new Staff <<
+		    \new Voice {
+		        \fluteIIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnFlautoII
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -165,11 +190,16 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxFlautiII >>
-		}
+		\new Staff <<
+		    \new Voice {
+		        \fluteIIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxFlautiII
+		    }
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
