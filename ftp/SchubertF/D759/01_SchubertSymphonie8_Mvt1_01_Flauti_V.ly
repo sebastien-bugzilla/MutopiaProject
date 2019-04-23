@@ -125,8 +125,8 @@ MvtUnFlautoI = \relative c {
 	    \new CueVoice { \set instrumentCueName = "Viol. I"}
 	    \cueDuring #"violinA" #UP {R2.*2}
 % mesures 61 à 65
-	    R2._\gp
-	    \mark \default
+	    
+	    R2._\gp \mark \default
 	    g,2.\ffz\>(
 	    c,4)\! r r
 	    g'2.(\fz\>
@@ -295,7 +295,7 @@ MvtUnFlautoI = \relative c {
 	a2.\ff
 	e\fz
 	fis4 r r
-	R2.*4 
+	R2.*4
 	
 % mesures 211 à 215
 	

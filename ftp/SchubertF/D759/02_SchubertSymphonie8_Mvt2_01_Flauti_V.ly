@@ -303,7 +303,7 @@ MvtDeuxFlautiI = \relative c'' {
 	dis,!16\ff dis8 dis dis16(
 	fis) fis8 fis fis16( \mark \default
 % mesures 256 à 260
-	e8) r r \break
+	e8) r r
 	c,4.\fp\>(
 	b16)\!( dis! fis a gis fis)
 	c4.(\fp\>

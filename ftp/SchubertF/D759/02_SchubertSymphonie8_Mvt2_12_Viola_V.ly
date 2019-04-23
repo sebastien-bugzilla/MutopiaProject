@@ -308,7 +308,7 @@ MvtDeuxViola = \relative c'' {
 % mesures 196 à 200
 	e) r r
 	a,\pp r r 
-	R4.*3 \break
+	R4.*3
 	
 	
 % mesures 201 à 205

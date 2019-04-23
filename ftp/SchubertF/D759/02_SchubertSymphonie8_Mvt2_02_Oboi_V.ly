@@ -177,7 +177,7 @@ MvtDeuxOboeI = \relative c'' {
 	e4(-> d16 b
 	c8) r r
 	g'4(-> e8)
-	R4.*20 \break
+	R4.*20
 % mesures 136 à 140
 	
 % mesures 141 à 145
