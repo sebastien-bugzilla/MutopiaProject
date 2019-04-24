@@ -121,4 +121,22 @@ s2.*22 \break s2.*15 \break s2.*14 \break
 s2.*11 \break s2.*14 \break s2.*22 \break
 s2.*11 \break s2.*12 \break 
 }
+trompetteIFormattingMvtI = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s2.*37 \break s2.*49 \break s2.*17 \break
+s2.*41 \break s2.*27 \break s2.*13 \break
+s2.*8 \break s2.*50 \break s2.*40 \break
+s2.*18 \break s2.*9 \pageBreak s2.*37 \break
+s2.*12 \break s2.*11 \break 
+}
+trompetteIIFormattingMvtI = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s2.*37 \break s2.*49 \break s2.*17 \break
+s2.*41 \break s2.*27 \break s2.*13 \break
+s2.*8 \break s2.*50 \break s2.*40 \break
+s2.*18 \break s2.*9 \pageBreak s2.*37 \break
+s2.*12 \break s2.*11 \break 
+}
 

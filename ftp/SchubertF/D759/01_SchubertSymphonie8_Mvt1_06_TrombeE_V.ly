@@ -51,7 +51,14 @@ MvtUnTrombeEI = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Trombe in E. I"
-	\set Staff.midiInstrument = #"trumpet"
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trumpet I"
+	        \line {
+	            "in E"
+	        }
+	    }
+	}
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event
@@ -356,7 +363,14 @@ MvtUnTrombeEII = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Trombe in E. II"
-	\set Staff.midiInstrument = #"trumpet"
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trumpet II"
+	        \line {
+	            "in E"
+	        }
+	    }
+	}
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event

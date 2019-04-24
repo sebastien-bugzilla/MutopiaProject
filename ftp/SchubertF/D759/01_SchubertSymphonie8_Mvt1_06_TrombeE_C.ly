@@ -11,7 +11,14 @@ MvtUnTrombeEI = \relative c {
 	\key a \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Trombe in E."
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trumpet"
+	        \line {
+	            "in E"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"trumpet"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\transposition e
@@ -311,8 +318,14 @@ MvtUnTrombeEII = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Trombe in E."
-	\set Staff.midiInstrument = #"trumpet"
-	\set Score.alternativeNumberingStyle = #'numbers
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trumpet"
+	        \line {
+	            "in E"
+	        }
+	    }
+	}	\set Score.alternativeNumberingStyle = #'numbers
 	\transposition e
 % mesures 1 à 5
 	R2.

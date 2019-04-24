@@ -54,13 +54,15 @@ globalMvtDeux = {
 	%\key c \major
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
-	\tempo "Andante con moto"
+	\tempo "Andante con moto."
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 \include "markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_06_TrombeE_V.ly"
+\include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_06_TrombeE_V.ly"
+\include "02_Voice_part_formatting.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -89,9 +91,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnTrombeEI >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \trompetteIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnTrombeEI 
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -102,7 +109,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #14
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -113,11 +120,16 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxTrombeEI >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \trompetteIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxTrombeEI 
+		    }
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -126,7 +138,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #8
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -137,9 +149,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnTrombeEII >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \trompetteIIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnTrombeEII 
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -150,7 +167,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #12
+			%system-count = #14
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -161,11 +178,16 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxTrombeEII >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \trompetteIIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxTrombeEII 
+		    }
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -174,7 +196,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			system-count = #8
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff

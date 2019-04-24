@@ -85,4 +85,17 @@ s4.*12 \break s4.*39 \break s4.*31 \break
 s4.*18 \break s4.*49 \break s4.*13 \break
 s4.*13 \break s4.*31 \break s4.*13 \break
 }
-
+trompetteIFormattingMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s4.*38 \break s4.*56 \break s4.*10 \break
+s4.*68 \break s4.*63 \break s4.*10 \break
+s4.*12 \break s4.*55 \break 
+}
+trompetteIIFormattingMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s4.*39 \break s4.*55 \break s4.*10 \break
+s4.*68 \break s4.*63 \break s4.*10 \break
+s4.*12 \break s4.*55 \break 
+}
