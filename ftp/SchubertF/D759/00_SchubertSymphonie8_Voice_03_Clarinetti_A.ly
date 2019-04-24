@@ -4,8 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
+	ragged-last-bottom = ##t
+	ragged-bottom = ##t
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -60,7 +60,9 @@ globalMvtDeux = {
 %-----------------------------------------------------------------------
 \include "markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_03_ClarinettiA_V.ly"
+\include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_03_ClarinettiA_V.ly"
+\include "02_Voice_part_formatting.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -89,9 +91,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \key d \minor \transposition a \MvtUnClarinettiAI >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \clarinetIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \key d \minor \transposition a \MvtUnClarinettiAI
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -113,11 +120,16 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \key g \major \transposition a \MvtDeuxClarinettiAI >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \clarinetIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \key g \major \transposition a \MvtDeuxClarinettiAI 
+		    }
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -126,7 +138,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #14
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -136,31 +148,15 @@ globalMvtDeux = {
 			}
 		}
 	}
-%	\score {
-%		{
-%			\new Staff << \globalMvtUn \key cis \minor \transposition bes \MvtUnClarinettiAI >>
-%		}
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #5
-%					I
-%				}
-%			}
-%		}
-%		\layout {
-%			%system-count = #20
-%			#(layout-set-staff-size 19)
-%		}
-%	}
 	\score {
-		{
-			\new Staff << 
-			    \globalMvtUn 
-			    \key d \minor \transposition a
-			    \MvtUnClarinettiAII >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \clarinetIIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \key d \minor \transposition a \MvtUnClarinettiAII
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -173,20 +169,19 @@ globalMvtDeux = {
 		\layout {
 			%system-count = #20
 			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \key g \major \transposition a \MvtDeuxClarinettiAII >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \clarinetIIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \key g \major \transposition a \MvtDeuxClarinettiAII 
+		    }
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -195,7 +190,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			system-count = #10
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff

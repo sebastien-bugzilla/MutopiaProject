@@ -438,7 +438,10 @@ MvtDeuxClarinettiAII = \relative c'' {
 % mesures 81 à 85
 	
 % mesures 86 à 90
-	\new CueVoice { \set instrumentCueName = "Ob. I"}
+	\new CueVoice {
+	    \set instrumentCueName = "Ob. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
 	\cueDuring #"oboeN" #UP {R4.*3}
 % mesures 91 à 95
 	
@@ -487,7 +490,10 @@ MvtDeuxClarinettiAII = \relative c'' {
 % mesures 151 à 155
 	
 	
-	\clef bass \new CueVoice { \set instrumentCueName = "Vc."}
+	\clef bass \new CueVoice { 
+	    \set instrumentCueName = "Vc."
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
 	\cueDuring #"celloM" #UP {R4.*5} \clef treble
 	g,4.(\fp\>
 % mesures 156 à 160
@@ -555,7 +561,10 @@ MvtDeuxClarinettiAII = \relative c'' {
 	
 	
 	
-	\new CueVoice { \set instrumentCueName = "Fl. I"}
+	\new CueVoice { 
+	    \set instrumentCueName = "Fl. I"
+	    \override InstrumentSwitch.self-alignment-X = #RIGHT
+	}
 	\cueDuring #"fluteN" #UP {R4.*2}
 % mesures 236 à 240
 	\mark \default
