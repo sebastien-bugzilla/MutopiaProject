@@ -4,9 +4,9 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
-	systems-per-pages = #10
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
+	%systems-per-pages = #10
+	ragged-last-bottom = ##t
+	ragged-bottom = ##t
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -61,7 +61,9 @@ globalMvtDeux = {
 %-----------------------------------------------------------------------
 \include "markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_04_Fagotti_V.ly"
+\include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_04_Fagotti_V.ly"
+\include "02_Voice_part_formatting.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -90,9 +92,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnFagottiI >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \fagotIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnFagottiI 
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -103,7 +110,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			system-count = #26
+			%system-count = #26
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -114,11 +121,16 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxFagottiI >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \fagotIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxFagottiI 
+		    }
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -127,7 +139,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #17
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -138,9 +150,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnFagottiII >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \fagotIIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnFagottiII 
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -162,11 +179,16 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxFagottiII >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \fagotIIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxFagottiII 
+		    }
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -175,7 +197,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			system-count = #15
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff

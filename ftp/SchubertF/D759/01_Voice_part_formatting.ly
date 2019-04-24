@@ -71,3 +71,30 @@ s2.*11 \break s2.*9 \break s2.*10 \break
 s2.*11 \break s2.*12 \break s2.*16 \break
 s2.*19 \pageBreak s2.*16 \break s2.*12 \break
 }
+fagotIFormattingMvtI = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s2.*27 \break s2.*11 \break s2.*17 \break
+s2.*10 \break s2.*13 \break s2.*10 \break
+s2.*15 \break s2.*21 \break s2.*12 \break
+s2.*10 \break s2.*15 \break s2.*14 \pageBreak
+s2.*12 \break s2.*15 \break s2.*13 \break
+s2.*26 \break s2.*10 \break s2.*20 \break
+s2.*9 \break s2.*11 \break s2.*12 \break
+s2.*11 \break s2.*11 \break s2.*16 \pageBreak
+s2.*13 \break s2.*15 \break 
+
+}
+fagotIIFormattingMvtI = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s2.*27 \break s2.*11 \break s2.*19 \break
+s2.*11 \break s2.*13 \break s2.*9 \break
+s2.*15 \break s2.*21 \break s2.*12 \break
+s2.*9 \break s2.*14 \break s2.*14 \pageBreak
+s2.*12 \break s2.*15 \break s2.*12 \break
+s2.*27 \break s2.*12 \break s2.*19 \break
+s2.*9 \break s2.*10 \break s2.*12 \break
+s2.*11 \break s2.*8 \break s2.*19 \pageBreak
+s2.*14 \break s2.*14 \break 
+}

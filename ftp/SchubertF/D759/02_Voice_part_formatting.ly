@@ -49,3 +49,22 @@ s4.*63 \break s4.*19 \break s4.*45 \break
 s4.*13 \break s4.*13 \break s4.*34 \break
 s4.*15 \break  
 }
+fagotIFormattingMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s4.*16 \break s4.*24 \break s4.*11 \break
+s4.*43 \break s4.*12 \break s4.*14 \break
+s4.*21 \break s4.*20 \break s4.*15 \pageBreak
+s4.*12 \break s4.*13 \break s4.*41 \break
+s4.*8 \break s4.*6 \break s4.*12 \break
+s4.*22 \break s4.*22 \break 
+}
+fagotIIFormattingMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s4.*30 \break s4.*12 \break s4.*15 \break
+s4.*42 \break s4.*10 \break s4.*19 \break
+s4.*42 \break s4.*12 \break s4.*16 \break
+s4.*42 \pageBreak s4.*9 \break s4.*5 \break
+s4.*13 \break s4.*22 \break s4.*23 \break
+}
