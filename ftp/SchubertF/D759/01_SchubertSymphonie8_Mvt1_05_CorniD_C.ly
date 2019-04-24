@@ -12,7 +12,14 @@ MvtUnCorniDI = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Staff.instrumentName = #"Corni in D."
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Corni"
+	        \line {
+	            "in D"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"french horn"
 	\transposition d
 % mesures 1 à 5
@@ -418,7 +425,14 @@ MvtUnCorniDII = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Staff.instrumentName = #"Corni in D."
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Corni"
+	        \line {
+	            "in D"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"french horn"
 	\transposition d
 % mesures 1 à 5

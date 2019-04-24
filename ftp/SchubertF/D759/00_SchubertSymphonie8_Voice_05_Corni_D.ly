@@ -60,7 +60,9 @@ globalMvtDeux = {
 %-----------------------------------------------------------------------
 \include "markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_05_CorniD_V.ly"
+\include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_05_CorniD_V.ly"
+\include "02_Voice_part_formatting.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -89,9 +91,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnCorniDI >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \corIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnCorniDI 
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -102,7 +109,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #23
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -113,11 +120,16 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxCorniDI >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \corIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxCorniDI 
+		    }
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -126,7 +138,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #13
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -137,9 +149,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnCorniDII >>
-		}
+		\new Staff <<
+		    \new Voice {
+		        \corIIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnCorniDII
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -150,7 +167,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #23
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -161,11 +178,16 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxCorniDII >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \corIIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxCorniDII
+		    }
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -174,7 +196,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			system-count = #12
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
