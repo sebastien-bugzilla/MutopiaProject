@@ -46,7 +46,7 @@ global = {
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\compressFullBarRests
 	\tempo "Andante con moto"
-	#(set-global-staff-size 19)
+	#(set-global-staff-size 12)
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------

@@ -150,7 +150,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #11
+			system-count = #17
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -208,7 +208,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			system-count = #14
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
