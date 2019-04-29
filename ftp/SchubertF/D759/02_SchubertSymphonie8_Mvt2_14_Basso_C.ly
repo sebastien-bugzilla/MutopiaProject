@@ -88,7 +88,7 @@ MvtDeuxBasso = \relative c {
 	b-. a-. fis-.
 	e-. r r
 % mesures 61 à 65
-	R4.*33
+	R4.*35
 	
 	
 	
