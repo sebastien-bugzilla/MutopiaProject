@@ -159,4 +159,13 @@ s2.*16 \break s2.*48 \break s2.*37 \break
 s2.*18 \pageBreak s2.*27 \break s2.*23 \break
 s2.*10 \break  
 }
-
+tromboneIIIFormattingMvtI = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s2.*35 \break s2.*33 \break s2.*15 \break
+s2.*10 \break s2.*40 \break s2.*11 \break
+s2.*19 \break s2.*16 \break s2.*13 \break
+s2.*26 \break s2.*64 \break s2.*15 \break
+s2.*11 \pageBreak s2.*29 \break s2.*18 \break
+s2.*14 \break  
+}

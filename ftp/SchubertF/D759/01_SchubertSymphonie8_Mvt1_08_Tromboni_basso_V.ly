@@ -31,7 +31,14 @@ MvtUnTromboni_basso = \relative c {
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Tromboni"
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trombone"
+	        \line {
+	            "basso"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"trombone"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event

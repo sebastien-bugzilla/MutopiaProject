@@ -115,4 +115,10 @@ s4.*36 \break s4.*58 \break s4.*10 \break
 s4.*67 \break s4.*10 \break s4.*57 \break
 s4.*9 \break s4.*55 \break s4.*10 \break
 }
-
+tromboneIIIFormattingMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s4.*37 \break s4.*58 \break s4.*13 \break
+s4.*63 \break s4.*10 \break s4.*58 \break
+s4.*10 \break s4.*35 \break s4.*28 \break
+}
