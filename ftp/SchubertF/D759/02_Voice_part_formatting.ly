@@ -101,3 +101,18 @@ s4.*39 \break s4.*55 \break s4.*10 \break
 s4.*68 \break s4.*63 \break s4.*10 \break
 s4.*12 \break s4.*55 \break 
 }
+tromboneIFormattingMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s4.*37 \break s4.*57 \break s4.*9 \break
+s4.*67 \break s4.*10 \break s4.*57 \break
+s4.*10 \break s4.*55 \break s4.*10 \break
+}
+tromboneIIFormattingMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s4.*36 \break s4.*58 \break s4.*10 \break
+s4.*67 \break s4.*10 \break s4.*57 \break
+s4.*9 \break s4.*55 \break s4.*10 \break
+}
+

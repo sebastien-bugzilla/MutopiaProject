@@ -33,7 +33,14 @@ MvtUnTromboni_alto = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = #"Tromboni"
-	\set Staff.midiInstrument = #"trombone"
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trombone"
+	        \line {
+	            "alto"
+	        }
+	    }
+	}
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
                                       beam-event tuplet-span-event
@@ -365,7 +372,14 @@ MvtUnTromboni_tenore = \relative c {
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Tromboni"
+	\set Staff.instrumentName = \markup {
+	    \center-column {
+	        "Trombone"
+	        \line {
+	            "tenore"
+	        }
+	    }
+	}
 	\set Staff.midiInstrument = #"trombone"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
@@ -571,7 +585,7 @@ MvtUnTromboni_tenore = \relative c {
 % mesures 216 à 220
 	
 	\mark \default
-	R2.*24
+	R2.*22
 % mesures 221 à 225
 	
 % mesures 226 à 230

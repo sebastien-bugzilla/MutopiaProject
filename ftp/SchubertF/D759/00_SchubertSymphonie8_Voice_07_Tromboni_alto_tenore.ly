@@ -60,7 +60,10 @@ globalMvtDeux = {
 %-----------------------------------------------------------------------
 \include "markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_07_Tromboni_alto_tenore_V.ly"
+\include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_07_Tromboni_alto_tenore_V.ly"
+\include "02_Voice_part_formatting.ly"
+
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -89,9 +92,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnTromboni_alto >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \tromboneIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnTromboni_alto 
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -102,7 +110,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #16
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -113,9 +121,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxTromboni_alto >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \tromboneIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxTromboni_alto
+		    }
+		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
@@ -126,7 +139,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #9
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -137,9 +150,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnTromboni_tenore >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \tromboneIIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnTromboni_tenore
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -150,7 +168,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #16
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -161,9 +179,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxTromboni_tenore >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \tromboneIIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxTromboni_tenore 
+		    }
+		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
@@ -174,7 +197,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #9
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff

@@ -139,4 +139,24 @@ s2.*8 \break s2.*50 \break s2.*40 \break
 s2.*18 \break s2.*9 \pageBreak s2.*37 \break
 s2.*12 \break s2.*11 \break 
 }
+tromboneIFormattingMvtI = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s2.*37 \break s2.*33 \break s2.*18 \break
+s2.*21 \break s2.*27 \break s2.*9 \break
+s2.*18 \break s2.*15 \break s2.*12 \break
+s2.*16 \break s2.*45 \break s2.*36 \break
+s2.*18 \pageBreak s2.*19 \break s2.*32 \break
+s2.*13 \break  
+}
+tromboneIIFormattingMvtI = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s2.*37 \break s2.*33 \break s2.*18 \break
+s2.*21 \break s2.*27 \break s2.*9 \break
+s2.*18 \break s2.*15 \break s2.*12 \break
+s2.*16 \break s2.*48 \break s2.*37 \break
+s2.*18 \pageBreak s2.*27 \break s2.*23 \break
+s2.*10 \break  
+}
 
