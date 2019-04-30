@@ -169,3 +169,11 @@ s2.*26 \break s2.*64 \break s2.*15 \break
 s2.*11 \pageBreak s2.*29 \break s2.*18 \break
 s2.*14 \break  
 }
+timpaniFormattingMvtI = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s2.*36 \break s2.*53 \break s2.*49 \break
+s2.*32 \break s2.*14 \break s2.*45 \break
+s2.*23 \break s2.*37 \break s2.*18 \break
+s2.*36 \break s2.*13 \break s2.*13 \break
+}

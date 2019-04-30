@@ -122,3 +122,11 @@ s4.*37 \break s4.*58 \break s4.*13 \break
 s4.*63 \break s4.*10 \break s4.*58 \break
 s4.*10 \break s4.*35 \break s4.*28 \break
 }
+timpaniFormattingMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s4.*37 \break s4.*58 \break s4.*8 \break
+s4.*68 \break s4.*8 \break s4.*59 \break
+s4.*8 \break s4.*11 \break s4.*46 \break
+s4.*9 \break  
+}

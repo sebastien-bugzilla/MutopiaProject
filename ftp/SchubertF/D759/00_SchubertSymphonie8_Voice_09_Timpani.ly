@@ -61,7 +61,9 @@ globalMvtDeux = {
 %-----------------------------------------------------------------------
 \include "markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_09_Timpani_V.ly"
+\include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_09_Timpani_V.ly"
+\include "02_Voice_part_formatting.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -90,9 +92,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnTimpaniEH >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \timpaniFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnTimpaniEH
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -103,7 +110,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			system-count = #12
+			%system-count = #12
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -114,9 +121,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxTimpaniEH >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \timpaniFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxTimpaniEH 
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -127,7 +139,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			system-count = #10
+			%system-count = #10
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
