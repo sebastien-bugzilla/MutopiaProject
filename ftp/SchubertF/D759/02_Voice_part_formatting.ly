@@ -130,3 +130,18 @@ s4.*68 \break s4.*8 \break s4.*59 \break
 s4.*8 \break s4.*11 \break s4.*46 \break
 s4.*9 \break  
 }
+violinIFormattingMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s4.*9 \break s4.*10 \break s4.*10 \break
+s4.*10 \break s4.*10 \break s4.*10 \pageBreak
+s4.*10 \break s4.*8 \break s4.*8 \break
+s4.*7 \break s4.*9 \break s4.*9 \break
+s4.*12 \break s4.*12 \break s4.*13 \break
+s4.*12 \break s4.*11 \break s4.*8 \break
+s4.*12 \pageBreak s4.*11 \break s4.*9 \break
+s4.*7 \break s4.*8 \break s4.*7 \break
+s4.*10 \break s4.*11 \break s4.*9 \break
+s4.*15 \break s4.*16 \break s4.*10 \break
+s4.*9 \break  
+}

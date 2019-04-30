@@ -177,3 +177,22 @@ s2.*32 \break s2.*14 \break s2.*45 \break
 s2.*23 \break s2.*37 \break s2.*18 \break
 s2.*36 \break s2.*13 \break s2.*13 \break
 }
+violinIFormattingMvtI = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s2.*9 \break s2.*4 \break s2.*4 \break
+s2.*4 \break s2.*4 \break s2.*4 \break
+s2.*4 \break s2.*18 \break s2.*9 \break
+s2.*11 \break s2.*10 \break s2.*10 \break
+s2.*10 \pageBreak s2.*11 \break s2.*15 \break
+s2.*13 \break s2.*11 \break s2.*12 \break
+s2.*12 \break s2.*5 \break s2.*4 \break
+s2.*10 \break s2.*11 \break s2.*5 \break
+s2.*8 \pageBreak s2.*4 \break s2.*4 \break
+s2.*4 \break s2.*4 \break s2.*4 \break
+s2.*4 \break s2.*4 \break s2.*4 \break
+s2.*20 \break s2.*9 \break s2.*11 \break
+s2.*8 \break s2.*9 \pageBreak s2.*9 \break
+s2.*10 \break s2.*19 \break s2.*11 \break
+s2.*13 \break  
+}

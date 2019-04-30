@@ -60,7 +60,9 @@ globalMvtDeux = {
 %-----------------------------------------------------------------------
 \include "markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_10_ViolinoI_V.ly"
+\include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_10_ViolinoI_V.ly"
+\include "02_Voice_part_formatting.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -89,9 +91,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnViolinoI >>
-		}
+		\new Staff <<
+		    \new Voice {
+		        \violinIFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnViolinoI
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -113,11 +120,16 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxViolinoI >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \violinIFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxViolinoI 
+		    }
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -126,7 +138,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #31
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
