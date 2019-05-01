@@ -60,7 +60,9 @@ globalMvtDeux = {
 %-----------------------------------------------------------------------
 \include "markup.ly"
 \include "01_SchubertSymphonie8_Mvt1_12_Viola_V.ly"
+\include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_12_Viola_V.ly"
+\include "02_Voice_part_formatting.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -89,9 +91,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnViola >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \violaFormattingMvtI
+		    }
+		    \new Voice {
+		        \globalMvtUn \MvtUnViola
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -102,7 +109,7 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
+			%system-count = #38
 			#(layout-set-staff-size 19)
 			\context {
 			    \Staff
@@ -113,9 +120,14 @@ globalMvtDeux = {
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxViola >>
-		}
+		\new Staff << 
+		    \new Voice {
+		        \violaFormattingMvtII
+		    }
+		    \new Voice {
+		        \globalMvtDeux \MvtDeuxViola 
+		    }
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {

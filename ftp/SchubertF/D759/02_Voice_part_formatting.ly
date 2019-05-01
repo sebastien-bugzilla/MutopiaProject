@@ -160,3 +160,17 @@ s4.*7 \break s4.*7 \break s4.*10 \break
 s4.*5 \break s4.*4 \break s4.*11 \break
 s4.*25 \break s4.*16 \break s4.*10 \break
 }
+violaFormattingMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s4.*13 \break s4.*13 \break s4.*12 \break
+s4.*16 \break s4.*14 \break s4.*9 \break
+s4.*10 \break s4.*11 \break s4.*7 \break
+s4.*4 \break s4.*7 \break s4.*9 \break
+s4.*9 \pageBreak s4.*12 \break s4.*15 \break
+s4.*12 \break s4.*12 \break s4.*19 \break
+s4.*10 \break s4.*9 \break s4.*10 \break
+s4.*10 \break s4.*3 \break s4.*3 \break
+s4.*4 \break s4.*9 \pageBreak s4.*26 \break
+s4.*15 \break s4.*9 \break 
+}
