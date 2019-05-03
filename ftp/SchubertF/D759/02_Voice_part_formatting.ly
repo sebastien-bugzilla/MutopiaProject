@@ -187,3 +187,15 @@ s4.*9 \break s4.*3 \break s4.*3 \break
 s4.*4 \break s4.*5 \break s4.*11 \break
 s4.*26 \break s4.*9 \break s4.*8 \break
 }
+basseFormattingMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+s4.*13 \break s4.*11 \break s4.*9 \break
+s4.*9 \pageBreak s4.*12 \break s4.*41 \break
+s4.*11 \break s4.*7 \break s4.*10 \break
+s4.*9 \break s4.*9 \break s4.*14 \break
+s4.*10 \break s4.*9 \break s4.*8 \break
+s4.*11 \break s4.*41 \pageBreak s4.*8 \break
+s4.*8 \break s4.*5 \break s4.*10 \break
+s4.*13 \break s4.*25 \break s4.*9 \break
+}

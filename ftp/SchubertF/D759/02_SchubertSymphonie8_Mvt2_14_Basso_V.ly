@@ -190,17 +190,17 @@ MvtDeuxBasso = \relative c {
 	f'4 e16 dis!)
 	e8(\< c a)
 	g4.(\>
-	c,16)\! c8\p c c16~
-	c c8 c c16~
+	<<{c,16)\! c8\p c c16~ }{s8. s^\un}>>
+	<<{c16 c8 c c16~}{s8. s^\deux}>>
 % mesures 131 à 135
-	c c8 c c16~
-	c c8 c c16~
-	c c8 c c16~
-	c\pp c8 c c16~
-	c c8 c c16~
+	<<{c16 c8 c c16~}{s8. s^\trois}>>
+	<<{c16 c8 c c16~}{s8. s^\quatre}>>
+	<<{c16 c8 c c16~}{s8. s^\cinq}>>
+	<<{c16\pp c8 c c16~}{s8. s^\six}>>
+	<<{c16 c8 c c16~}{s8. s^\sept}>>
 % mesures 136 à 140
-	c_\decresc c8\! c c16~
-	c c8 c c16~
+	<<{c16_\decresc c8\! c c16~}{s8. s^\huit}>>
+	<<{c16 c8 c c16~}{s8. s^\neuf}>>
 	c4.~
 	c(
 	cis!)~

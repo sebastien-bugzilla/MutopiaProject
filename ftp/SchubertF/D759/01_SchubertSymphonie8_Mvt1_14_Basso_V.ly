@@ -169,30 +169,30 @@ MvtUnBasso = \relative c {
 	e
 % mesures 121 à 125
 	d)
-	c2.:16
-	c:
-	c:
-	c:
+	c2.:16^\un
+	c:^\deux
+	c:^\trois
+	c:^\quatre
 % mesures 126 à 130
-	c:
-	c:
-	c:_\crescmarkup
+	c:^\cinq
+	c:^\six
+	c:_\crescmarkup^\sept
 	cis!:
 	d:
 % mesures 131 à 135
 	dis:
 	e:
 	eis:
-	fis:\f
-	fis:
+	fis:\f^\un
+	fis:^\deux
 % mesures 136 à 140
-	fis:
-	fis:
-	fis:
-	fis:_\crescmarkup
-	fis:
+	fis:^\trois
+	fis:^\quatre
+	fis:^\cinq
+	fis:_\crescmarkup^\six
+	fis:^\sept
 % mesures 141 à 145
-	fis:
+	fis:^\huit
 	fis':
 	fis:
 	fis:

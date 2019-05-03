@@ -4,8 +4,17 @@ pizz=^\markup {\italic pizz.}
 dimmarkup=^\markup {\italic dim.}
 morendo=^\markup {\italic {morendo}}
 stacc=^\markup {\italic stacc.}
-becarre=^\markup { \small \natural }
+becarre=^\markup { \tiny \natural }
 gp=^\markup {G.P.}
 
 ffz = #(make-dynamic-script "ffz")
-
+un=^\markup {\tiny \number 1}
+deux=^\markup {\tiny \number 2}
+trois=^\markup {\tiny \number 3}
+quatre=^\markup {\tiny \number 4}
+cinq=^\markup {\tiny \number 5}
+six=^\markup {\tiny \number 6}
+sept=^\markup {\tiny \number 7}
+huit=^\markup {\tiny \number 8}
+neuf=^\markup {\tiny \number 9}
+dix=^\markup {\tiny \number 10}
