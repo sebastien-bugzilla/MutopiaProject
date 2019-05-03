@@ -303,16 +303,16 @@ MvtUnViolinoI = \relative c {
 	ais4-. e-. fis-.
 	g-. e2\fz
 	g2\f~ g8 a32( b c d)
-	e2.:32\ffz\>
-	e:\!
+	e2.:32\ffz\>^\un
+	e:\!^\deux
 % mesures 196 à 200
-	e:\fz\>
-	e:\!
-	e:\pp
-	e:
-	e:_\crescmarkup
+	e:\fz\>^\trois
+	e:\!^\quatre
+	e:\pp^\cinq
+	e:^\six
+	e:_\crescmarkup^\sept
 % mesures 201 à 205
-	e:
+	e:^\huit
 	a4\ff \grace {d,,32( e fis g)} a4 \grace {a32( b cis)} d4-.
 	a,,4\fz \grace {a'32( b cis d)} e4-. \grace {e32( fis gis)} a4-.
 	<d,, d'>4 r r8. d32(\p e

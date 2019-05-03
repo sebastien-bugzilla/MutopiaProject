@@ -300,16 +300,16 @@ MvtUnTimpaniEH = \relative c {
 	
 	
 	
-	b2.:32\pp
+	b2.:32\pp^\un
 % mesures 341 à 345
-	b:
-	b:
-	b:
-	b:_\crescmarkup
-	b:
+	b:^\deux
+	b:^\trois
+	b:^\quatre
+	b:_\crescmarkup^\cinq
+	b:^\six
 % mesures 346 à 350
-	b:
-	b:
+	b:^\sept
+	b:^\huit
 	b4 b\f b
 	b\< b b
 	f'\ff r r

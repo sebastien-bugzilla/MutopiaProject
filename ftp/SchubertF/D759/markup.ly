@@ -18,3 +18,4 @@ sept=^\markup {\tiny \number 7}
 huit=^\markup {\tiny \number 8}
 neuf=^\markup {\tiny \number 9}
 dix=^\markup {\tiny \number 10}
+onze=^\markup {\tiny \number 11}

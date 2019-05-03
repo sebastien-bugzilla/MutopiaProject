@@ -353,14 +353,14 @@ MvtUnFlautoI = \relative c {
 	
 	
 % mesures 256 à 260
-	r8 a,4(-.\pp a-. a8-.) 
-	r a4(-. a-. a8-.) 
-	r a4(-. a-. a8-.) 
-	r a4(-. a-. a8-.) 
-	r a4(-. a-. a8-.) 
+	r8^\un a,4(-.\pp a-. a8-.) 
+	r^\deux a4(-. a-. a8-.) 
+	r^\trois a4(-. a-. a8-.) 
+	r^\quatre a4(-. a-. a8-.) 
+	r^\cinq a4(-. a-. a8-.) 
 % mesures 261 à 265
-	r a4(-. a-. a8-.) 
-	r a4(-. a-. a8-.) 
+	r^\six a4(-. a-. a8-.) 
+	r^\sept a4(-. a-. a8-.) 
 	r b4(-. b-. b8-.)
 	r b4(-. b-. b8-.)
 	r b4(-. b-. b8-.) 

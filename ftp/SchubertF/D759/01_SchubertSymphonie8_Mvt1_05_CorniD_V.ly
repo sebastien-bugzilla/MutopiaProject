@@ -270,18 +270,18 @@ MvtUnCorniDI = \relative c {
 % mesures 206 à 210
 	e\ff
 	d\fz
-	e\fp~
-	e~
-	e~
+	e\fp~^\un
+	e~^\deux
+	e~^\trois
 % mesures 211 à 215
-	e~_\decresc
-	e~\!
-	e~
-	e~\pp
-	e~
+	e~_\decresc^\quatre
+	e~\!^\cinq
+	e~^\six
+	e~\pp^\sept
+	e~^\huit
 % mesures 216 à 220
-	e~
-	e~ \mark \default
+	e~^\neuf
+	e~^\dix \mark \default
 	e4 r r
 	R2.*10
 	
@@ -686,18 +686,18 @@ MvtUnCorniDII = \relative c {
 % mesures 206 à 210
 	c'\ff
 	g\fz
-	e\fp~
-	e~
-	e~
+	e\fp~^\un
+	e~^\deux
+	e~^\trois
 % mesures 211 à 215
-	e~_\decresc
-	e~\!
-	e~
-	e~\pp
-	e~
+	e~_\decresc^\quatre
+	e~\!^\cinq
+	e~^\six
+	e~\pp^\sept
+	e~^\huit
 % mesures 216 à 220
-	e~
-	e~ \mark \default
+	e~^\neuf
+	e~^\dix \mark \default
 	e4 r r
 	R2.*10
 	

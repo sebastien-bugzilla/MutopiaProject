@@ -311,12 +311,12 @@ MvtDeuxCorniDI = \relative c'' {
 % mesures 301 à 305
 	g4.
 	g'8( e c)
-	g4.->~
-	g~
-	g~
+	g4.->~^\un
+	g~^\deux
+	g~^\trois
 % mesures 306 à 310
-	g~
-	g \clef bass
+	g~^\quatre
+	g^\cinq \clef bass
 	c,,~
 	c~
 	c~
@@ -596,12 +596,12 @@ MvtDeuxCorniDII = \relative c' {
 % mesures 301 à 305
 	R4.
 	g8( e c)
-	g4.->~
-	g~
-	g~
+	g4.->~^\un
+	g~^\deux
+	g~^\trois
 % mesures 306 à 310
-	g~
-	g \clef bass
+	g~^\quatre
+	g^\cinq \clef bass
 	c,,~
 	c~
 	c~

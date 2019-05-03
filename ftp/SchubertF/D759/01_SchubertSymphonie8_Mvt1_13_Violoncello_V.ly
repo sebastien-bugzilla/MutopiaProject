@@ -169,14 +169,14 @@ MvtUnVioloncello = \relative c {
 	e
 % mesures 121 à 125
 	d)
-	c2.:16
-	c:
-	c:
-	c:
+	c2.:16^\un
+	c:^\deux
+	c:^\trois
+	c:^\quatre
 % mesures 126 à 130
-	c:
-	c:
-	c:_\crescmarkup
+	c:^\cinq
+	c:^\six
+	c:_\crescmarkup^\sept
 	cis!:
 	d:
 % mesures 131 à 135

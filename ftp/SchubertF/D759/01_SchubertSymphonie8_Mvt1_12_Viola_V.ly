@@ -224,19 +224,19 @@ MvtUnViola = \relative c {
 	fis4( g a)
 	gis2.~
 	gis4( a b)
-	<ais cis>2.:32\f
-	q:
+	<ais cis>2.:32\f^\un
+	q:^\deux
 % mesures 136 à 140
-	q:
-	q:
-	q:
-	q:_\crescmarkup
-	q:
+	q:^\trois
+	q:^\quatre
+	q:^\cinq
+	q:_\crescmarkup^\six
+	q:^\sept
 % mesures 141 à 145
-	q:
-	q:
-	q:
-	q:
+	q:^\huit
+	q:^\neuf
+	q:^\dix
+	q:^\onze
 	q2: <cis e>4:
 % mesures 146 à 150
 	q2.:16\ff\>

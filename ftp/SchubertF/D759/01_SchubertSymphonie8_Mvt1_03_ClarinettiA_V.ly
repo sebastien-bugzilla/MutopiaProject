@@ -111,15 +111,15 @@ MvtUnClarinettiAI = \relative c {
 	    
 % mesures 41 à 45
 	    
-	    r8 f4(-.\pp f-. f8-.)
-	    r f4-.( f-. f8-.)
-	    r f4-.( f-. f8-.)
-	    r f4-.( f-. f8-.)
+	    <<{r8 f4(-.\pp f-. f8-.)}{s4. s^\un}>>
+	    <<{r8 f4-.( f-. f8-.)}{s4. s^\deux}>>
+	    <<{r8 f4-.( f-. f8-.)}{s4. s^\trois}>>
+	    <<{r8 f4-.( f-. f8-.)}{s4. s^\quatre}>>
 % mesures 46 à 50
-	    r f4-.( f-. f8-.)
-	    r f4-.( f-. f8-.)
-	    r f4-.( f-. f8-.)
-	    r g4-.( g-. g8-.)
+	    <<{r8 f4-.( f-. f8-.)}{s4. s^\cinq}>>
+	    <<{r8 f4-.( f-. f8-.)}{s4. s^\six}>>
+	    <<{r8 f4-.( f-. f8-.)}{s4. s^\sept}>>
+	    r8 g4-.( g-. g8-.)
 	    r g4-.( g-. g8-.)
 % mesures 51 à 55
 	    r g4-.( g-. g8-.)
@@ -367,15 +367,15 @@ MvtUnClarinettiAI = \relative c {
 	
 	
 % mesures 256 à 260
-	r8 c,4(\pp-. c-. c8-.)
-	r c4(-. c-. c8-.)
-	r c4(-. c-. c8-.)
-	r c4(-. c-. c8-.)
-	r c4(-. c-. c8-.)
+	<<{r8 c,4(\pp-. c-. c8-.)}{s4. s^\un}>>
+	<<{r8 c4(-. c-. c8-.)}{s4. s^\deux}>>
+	<<{r8 c4(-. c-. c8-.)}{s4. s^\trois}>>
+	<<{r8 c4(-. c-. c8-.)}{s4. s^\quatre}>>
+	<<{r8 c4(-. c-. c8-.)}{s4. s^\cinq}>>
 % mesures 261 à 265
-	r c4(-. c-. c8-.)
-	r c4(-. c-. c8-.)
-	r d4(-. d-. d8-.)
+	<<{r8 c4(-. c-. c8-.)}{s4. s^\six}>>
+	<<{r8 c4(-. c-. c8-.)}{s4. s^\sept}>>
+	r8 d4(-. d-. d8-.)
 	r d4(-. d-. d8-.)
 	r d4(-. d-. d8-.)
 % mesures 266 à 270

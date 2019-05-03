@@ -225,14 +225,14 @@ MvtDeuxViola = \relative c'' {
 	e e8 e e16~
 	e e8 e e16~
 	e e8 e e16~
-	e4.\pp~
-	e~
+	e4.\pp~^\un
+	e~^\deux
 % mesures 136 à 140
-	e~_\decresc
-	e\!~
-	e~
-	e~
-	e(
+	e~_\decresc^\trois
+	e\!~^\quatre
+	e~^\cinq
+	e~^\six
+	e(^\sept
 % mesures 141 à 145
 	fis)(
 	gis!8) r r

@@ -326,13 +326,13 @@ MvtUnFagottiI = \relative c {
 	
 % mesures 266 à 270
 	
-	\clef bass r8 a4-.(\pp a-. a8-.)
-	r a4-.( a-. a8-.)
-	r a4 a a8
-	r a4 a a8
+	\clef bass <<{r8 a4-.(\pp a-. a8-.)}{s4. s^\un}>>
+	<<{r8 a4-.( a-. a8-.)}{s4. s^\deux}>>
+	<<{r8 a4 a a8}{s4. s^\trois}>>
+	<<{r8 a4 a a8}{s4. s^\quatre}>>
 % mesures 271 à 275
-	r a4 a a8
-	r b4(-. b-. b8-.)
+	<<{r8 a4 a a8}{s4. s^\cinq}>>
+	r8 b4(-. b-. b8-.)
 	r b4 b b8
 	r b4 b b8
 	r bes[( a)] a4 a8
