@@ -4,6 +4,8 @@
 %#             G E N E R A L I T E S   E T   E N T E T E               #
 %#######################################################################
 \paper {
+	%annotate-spacing = ##t
+	%system-separator-markup = \slashSeparator
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
 	bookTitleMarkup = \markup {
@@ -50,6 +52,7 @@ global = {
 }
 %-----------------------------------------------------------------------
 \include "markup.ly"
+%\include "part_formatting.ly"
 \include "01_SchubertSymphonie8_Mvt1_01_Flauti_C.ly"
 \include "01_SchubertSymphonie8_Mvt1_02_Oboi_C.ly"
 \include "01_SchubertSymphonie8_Mvt1_03_ClarinettiA_C.ly"
@@ -64,6 +67,7 @@ global = {
 \include "01_SchubertSymphonie8_Mvt1_12_Viola_C.ly"
 \include "01_SchubertSymphonie8_Mvt1_13_Violoncello_C.ly"
 \include "01_SchubertSymphonie8_Mvt1_14_Basso_C.ly"
+\include "01_Voice_part_formatting.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -94,33 +98,50 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-			    \new Staff { \global \partcombine \MvtUnFlautiI \MvtUnFlautiII }
-%			    \new Staff { \global \MvtUnFlautiII }
-%			    \new Staff { \global \MvtUnOboiII }
-			    \new Staff { \global \partcombine \MvtUnOboiI \MvtUnOboiII }
-%			    \new Staff { \global \MvtUnClarinettiAII }
-%			    \new Staff { \global \MvtUnClarinettiAI }
-			    \new Staff { \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII }
-%			    \new Staff { \global \MvtUn04_FagottiII }
-			    \new Staff { \global \partcombine \MvtUnFagottiI \MvtUnFagottiII }
-%			    \new Staff { \global \MvtUnCorniDII }
-			    \new Staff { \global \partcombine \MvtUnCorniDI \MvtUnCorniDII }
-%			    \new Staff { \global \MvtUnTrombeEII }
-			    \new Staff { \global \partcombine \MvtUnTrombeEI \MvtUnTrombeEII }
-			    \new GrandStaff <<
-%			        \new Staff { \global \MvtUnTromboni_tenore }
+	            \override Score.BarNumber #'font-size = #2
+			    \new Staff \with { shortInstrumentName = #"Fl." } <<
+			        \new Voice {
+			            \conductorFormattingMvtI
+			        }
+			        \new Voice {
+			            \global \partcombine \MvtUnFlautiI \MvtUnFlautiII
+			        }
+%			        \new Voice {
+%			            \displayMvtI
+%			        }
+			    >>
+			    \new Staff \with { shortInstrumentName = #"Ob." } { 
+			        \global \partcombine \MvtUnOboiI \MvtUnOboiII 
+			    }
+			    \new Staff \with { shortInstrumentName = #"Cl."} {
+			        \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII
+			    }
+			    \new Staff  \with { shortInstrumentName = #"Fag."} {
+			        \global \partcombine \MvtUnFagottiI \MvtUnFagottiII
+			    }
+			    \new Staff \with { shortInstrumentName = #"Cor."} { 
+			        \global \partcombine \MvtUnCorniDI \MvtUnCorniDII
+			    }
+			    \new Staff  \with { shortInstrumentName = #"Trp."} { 
+			        \global \partcombine \MvtUnTrombeEI \MvtUnTrombeEII
+			    }
+			    \new GrandStaff \with { shortInstrumentName = #"Trb."} <<
 			        \new Staff { \global \partcombine \MvtUnTromboni_alto \MvtUnTromboni_tenore }
 			        \new Staff { \global \MvtUnTromboni_basso }
 		        >>
-		        \new Staff { \global \MvtUnTimpaniEH }
-		        \new GrandStaff <<
+		        \new Staff \with { shortInstrumentName = #"Tmp."} { 
+		            \global \MvtUnTimpaniEH 
+		        }
+		        \new GrandStaff \with { shortInstrumentName = #"Vl."} <<
 			        \new Staff { \global \MvtUnViolinoI }
 			        \new Staff { \global \MvtUnViolinoII }
 		        >>
-		        \new Staff << \global \MvtUnViola >>
-		        \new GrandStaff <<
-			        \new Staff << \global \MvtUnVioloncello >>
-			        \new Staff << \global \MvtUnBasso >>
+		        \new Staff  \with { shortInstrumentName = #"Vla."} { 
+		            \global \MvtUnViola
+		        }
+		        \new GrandStaff \with { shortInstrumentName = #"Bas."} <<
+			        \new Staff { \global \MvtUnVioloncello }
+			        \new Staff { \global \MvtUnBasso }
 		        >>
 			>>
 		>>
@@ -129,9 +150,6 @@ global = {
 		}
 		\layout {
 			%system-count = #20
-			\context {
-			    \StaffGroup \override StaffGrouper.staff-staff-spacing.basic-distance = #5
-			}
 		}
 	}
 }

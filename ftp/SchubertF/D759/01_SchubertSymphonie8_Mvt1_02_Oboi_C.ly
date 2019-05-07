@@ -225,7 +225,7 @@ MvtUnOboiI = \relative c'' {
 % mesures 196 à 200
 	c2.\fz\>(
 	b2\! ais4)
-	\partcombineApart cis!2.\pp(
+	\partcombineApart cis!2. -\tweak X-offset #-2.0 \pp(
 	b2 ais4)
 	cis'2._\crescmarkup(
 % mesures 201 à 205
@@ -244,7 +244,7 @@ MvtUnOboiI = \relative c'' {
 	
 	
 	\partcombineApart
-	e4.\pp( fis8[ e fis]
+	e4. -\tweak X-offset #-2. \pp( fis8[ e fis]
 	e4. fis8[ e fis])
 % mesures 216 à 220
 	e2.~
@@ -286,7 +286,7 @@ MvtUnOboiI = \relative c'' {
 	g4( fis4. fis8)
 	fis4( g4. gis8)
 	gis4( a4. gis8)
-	gis4( a4.) b8-.\ff
+	gis4( a4.) b8-.
 	b2.~
 % mesures 251 à 255
 	b \mark \default
@@ -348,8 +348,8 @@ MvtUnOboiI = \relative c'' {
 	b4( ais8 gis ais4)
 	b r r
 	cis4( fis,4. cis'8)
-	b8.(\< cis16 dis4.\! fis8)
-	fis4(\> e8[\! dis cis b])
+	b8.(_\< cis16 dis4.\! fis8)
+	fis4(_\> e8[\! dis cis b])
 % mesures 321 à 325
 	b4( ais8 gis ais4
 	b8) r \partcombineAutomatic b2~
@@ -358,7 +358,7 @@ MvtUnOboiI = \relative c'' {
 	b~
 % mesures 326 à 330
 	b(
-	ais)\>(
+	ais)(
 	b4)\! r r
 	R2.*15
 % mesures 331 à 335
@@ -432,16 +432,16 @@ MvtUnOboiII = \relative c'' {
 	    R
 	    R 
 % mesures 26 à 30
-	    a!4(\p b4. c8)
+	    a!4( -\tweak X-offset #-2. \p b4. c8)
 	    c4( b4._\crescmarkup d8)
 	    d4( cis!) e4\fz
 	    e\fz r r
 	    R2.
 % mesures 31 à 35
-	    a,4(\p b4. c8)
+	    a,4( -\tweak X-offset #-2. \p b4. c8)
 	    c4( b4._\crescmarkup) b8
 	    b4( cis!4. cis8)
-	    cis4(\f d4. e8)
+	    cis4(-\tweak X-offset #-2. \f d4. e8)
 	    e4( d4.) e8\ff
 % mesures 36 à 40
 	    e2.~
@@ -485,7 +485,7 @@ MvtUnOboiII = \relative c'' {
 	    e2.\fz
 	    r8 e4 e e8
 	    e2~\fz e8 cis(
-	    d) r d2\fz(
+	    d) r d2-\tweak X-offset #-2. \fz(
 % mesures 86 à 90
 	    e8) r e2\fz->(
 	    f8) r f2->(\fz
@@ -744,7 +744,7 @@ MvtUnOboiII = \relative c'' {
 	R
 % mesures 321 à 325
 	R
-	r4 b2\ffz\>~
+	r4 b2 -\tweak X-offset #-3.2 \ffz\>~
 	b2.\p~
 	b\pp~
 	b~

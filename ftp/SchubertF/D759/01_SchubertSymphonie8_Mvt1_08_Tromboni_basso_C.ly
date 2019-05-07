@@ -83,7 +83,7 @@ MvtUnTromboni_basso = \relative c {
 	    d) r d2->\fz(
 % mesures 86 à 90
 	    c8) r c2\fz->(
-	    g8) r g2->(\fz 
+	    g8) r g2->( -\tweak X-offset #-3. \fz 
 	    c4) d-. d-.
 	    g,8 r g'2->\fz(
 	    c,8) r c2->(\fz

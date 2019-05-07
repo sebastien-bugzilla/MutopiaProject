@@ -28,7 +28,7 @@ MvtUnViolinoI = \relative c {
 	    
 	    
 	    
-	    fis'16\pp fis eis eis fis fis d d e e fis fis
+	    fis'16 -\tweak X-offset #-3 \pp fis eis eis fis fis d d e e fis fis
 	    g g fis fis g g ais ais b b cis cis
 % mesures 11 à 15
 	    fis, fis eis eis fis fis d d e e fis fis
@@ -47,7 +47,7 @@ MvtUnViolinoI = \relative c {
 	    fis\pp fis eis eis fis fis d d e e fis fis
 	    fis fis fis fis fis fis cis' cis b b ais ais
 	    b b eis, eis fis fis d d e e fis fis
-	    fis fis fis fis fis fis cis' cis b b bes bes
+	    fis fis fis fis fis fis cis' cis b b bes bes 
 % mesures 26 à 30
 	    a a d d b! b d d b b c c
 	    c c d d b_\crescmarkup b d d b b d d
@@ -113,13 +113,13 @@ MvtUnViolinoI = \relative c {
 	    cis8.-. d16-. e8-.[ a,-. b-. cis-.]
 	    d r <g,, d'>2:16\fz
 % mesures 86 à 90
-	    <g e'>8 r <g e'>2:16\fz
-	    <b g'>8 r <b g'>2:16\fz
+	    <g e'>8 r <g e'>2:16 -\tweak X-offset #-2. \fz
+	    <b g'>8 r <b g'>2:16 -\tweak X-offset #-2. \fz
 	    <c e>4-. <g d'>-. <fis! d'>-.
-	    <g d'>8 r <g d'>2:16\fz
-	    <g e'>8 r <g e'>2:16\fz
+	    <g d'>8 r <g d'>2:16 -\tweak X-offset #-2. \fz
+	    <g e'>8 r <g e'>2:16 -\tweak X-offset #-2. \fz
 % mesures 91 à 95
-	    <b gis'>8 r <b gis'>2:16\fz
+	    <b gis'>8 r <b gis'>2:16 -\tweak X-offset #-2. \fz
 	    <c a'>4-. <d, d'>-. <d a' fis'>-. \mark \default
 	    <g, d' b' g'>4 r r
 	    g'4(\p d4. g8)
@@ -134,7 +134,7 @@ MvtUnViolinoI = \relative c {
 	    r d4\< d( b8)
 	    c8.(\> d16 e8) e4-.\!( e8-.)
 	    d2( c4)
-	    b8 r <b b'>4\ffz-. r
+	    b8 r <b b'>4 -\tweak X-offset #-2. \ffz-. r
 	    R2.
 % mesures 106 à 110
 	    g4\pp^\pizz r r
@@ -372,7 +372,7 @@ MvtUnViolinoI = \relative c {
 % mesures 301 à 305
 	gis4\fz r r
 	eis8.-. fis16-. gis8-.[ cis,-. dis-. eis-.]
-	fis8 r <b, fis'>2:16\fz
+	fis8 r <b, fis'>2:16 -\tweak X-offset #-2.7 \fz
 	<b gis'>8 r <b gis'>2:16\fz
 	<dis b'>8 r <dis b'>2:16\fz
 % mesures 306 à 310
@@ -414,7 +414,7 @@ MvtUnViolinoI = \relative c {
 % mesures 336 à 340
 	
 	
-	b'2.(\p^\arco
+	b'2.( -\tweak X-offset #-2. \p^\arco
 	cis2 d4)
 	fis2.(\>
 % mesures 341 à 345
@@ -445,7 +445,7 @@ MvtUnViolinoI = \relative c {
 	R2.*3
 	
 	
-	<d,, b' fis'>4\ff r r
+	<d,, b' fis'>4 -\tweak X-offset #-3.3 \ff r r
 	<fis cis' ais'> r r
 % mesures 366 à 368
 	<b, fis' d' b'> r r

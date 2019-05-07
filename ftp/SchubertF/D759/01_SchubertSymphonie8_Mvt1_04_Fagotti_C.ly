@@ -12,7 +12,7 @@ MvtUnFagottiI = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Staff.instrumentName = #"Fagot I"
+	\set Staff.instrumentName = #"Fagotti."
 	\set Staff.midiInstrument = #"bassoon"
 % mesures 1 à 5
 	R2.
@@ -34,16 +34,16 @@ MvtUnFagottiI = \relative c {
 	    
 	    
 % mesures 26 à 30
-	    a4(\p b4. c8)
+	    a4( -\tweak X-offset #-2. \p b4. c8)
 	    c4( b4. d8)
 	    d4( cis!) cis\fz
 	    cis\fz cis2\fp\>~
 	    cis2.
 % mesures 31 à 35
-	    a4(\p b4. c8)
+	    a4( -\tweak X-offset #-2. \p b4. c8)
 	    c4( b4. d8)
 	    d4( cis!4. e8)
-	    e4(\f d4. e8)
+	    e4(-\tweak X-offset #-2. \f d4. e8)
 	    e4( d4.) cis8\ff
 % mesures 36 à 40
 	    cis2.~
@@ -98,7 +98,7 @@ MvtUnFagottiI = \relative c {
 	    a4-. r r
 	    g8.-. a16-. bes8-.[ e,-. fis-. g-.]
 	    a4-. r8 a[-. g-. e-.]
-	    d8 r d2->\fz(
+	    d8 r d2->-\tweak X-offset #-2. \fz(
 % mesures 86 à 90
 	    c8) r \partcombineChords e'2(->
 	    f8) r f2(->
@@ -291,7 +291,7 @@ MvtUnFagottiI = \relative c {
 	e4( d4. d8)
 	dis4( e4. gis8)
 	gis4( fis4. gis8)
-	gis4( fis4.) \partcombineApartOnce gis8\ff-.
+	gis4( fis4.) \partcombineApartOnce gis8-.
 	gis2.~
 % mesures 251 à 255
 	gis \mark \default
@@ -372,7 +372,7 @@ MvtUnFagottiI = \relative c {
 	e8. fis16 gis2)
 % mesures 321 à 325
 	fis2.~
-	fis8 r \clef bass b,2\ffz~
+	fis8 r \clef bass b,2 -\tweak X-offset #-3.2 \ffz~
 	b2.\p~
 	b\pp~
 	b~
@@ -409,20 +409,20 @@ MvtUnFagottiI = \relative c {
 % mesures 351 à 355
 	e'
 	fis,~
-	fis
-	g~
+	fis_\<
+	g~_\>
 	g
 % mesures 356 à 360
-	fis~
+	fis~_\mf\<
 	fis(
-	g)~
+	g)~_\>
 	g(
 	b)~_\pp_\<
 % mesures 361 à 365
 	b~
 	b~_\>
 	b
-	d,4\! r r
+	d,4_\ff r r
 	fis r r
 % mesures 366 à 368
 	b r r
@@ -435,7 +435,7 @@ MvtUnFagottiII = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Staff.instrumentName = #"Fagot II"
+	\set Staff.instrumentName = #"Fagotti."
 	\set Staff.midiInstrument = #"bassoon"
 % mesures 1 à 5
 	R2.
@@ -457,16 +457,16 @@ MvtUnFagottiII = \relative c {
 	    
 	    
 % mesures 26 à 30
-	    fis4(\p g4. a8)
+	    fis4(-\tweak X-offset #-2. \p g4. a8)
 	    a4( g4._\crescmarkup b8)
 	    b4( a) fis\fz
 	    fis\fz ais2\fp\>~
 	    ais2.
 % mesures 31 à 35
-	    fis4(\p g4. a8)
+	    fis4(-\tweak X-offset #-2. \p g4. a8)
 	    a4( g4._\crescmarkup b8)
 	    b4( a4. cis8)
-	    cis4(\f b4. cis8)
+	    cis4( b4. cis8)
 	    cis4( b4.) ais8\ff
 % mesures 36 à 40
 	    ais2.~
@@ -521,7 +521,7 @@ MvtUnFagottiII = \relative c {
 	    a4-. r r
 	    g8.-. a16-. bes8-.[ e,-. fis-. g-.]
 	    a4-. r8 a[-. g-. e-.]
-	    d8 r d2->\fz(
+	    d8 r d2->-\tweak X-offset #-2. \fz(
 % mesures 86 à 90
 	    c8) r c2(\fz->
 	    g8) r g2(\fz->
@@ -644,7 +644,7 @@ MvtUnFagottiII = \relative c {
 	R2.
 	eis,2.(\>
 	fis2\! gis4
-	fis2.)\fz
+	fis2.) -\tweak X-offset #-2. \fz
 	e!4-. cis-. d-.
 % mesures 186 à 190
 	cis8.[ cis16 cis8. cis16] cis8. cis16 
@@ -795,7 +795,7 @@ MvtUnFagottiII = \relative c {
 	cis8.\>( dis16 e4. eis8)\!
 % mesures 321 à 325
 	fis2( e!4
-	dis8) r \clef bass b,2\ffz~
+	dis8) r \clef bass b,2 -\tweak X-offset #-3.2 \ffz~
 	b2.\p~
 	b\pp~
 	b~
@@ -828,24 +828,24 @@ MvtUnFagottiII = \relative c {
 	cis b cis\!
 	b) d'\f b
 	fis\< d b
-	fis2.\ff
+	fis2. -\tweak X-offset #1.5 \ff
 % mesures 351 à 355
 	fis'
-	d\pp~
-	d\<
-	e\>~
+	d -\tweak X-offset #-3. \pp~
+	d
+	e~
 	e
 % mesures 356 à 360
-	d\mf\<~
+	d~
 	d(
-	e)\>~
+	e)~
 	e(
 	b4) r4 r
 % mesures 361 à 365
 	R2.*3
 	
 	
-	d4\ff r r
+	d4 r r
 	fis, r r
 % mesures 366 à 368
 	b r r

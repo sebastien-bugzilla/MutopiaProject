@@ -11,7 +11,7 @@ MvtUnClarinettiAI = \relative c {
 	\key d \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Clarinetti I"
+	\set Staff.instrumentName = #"Clarinetti."
 	\set Staff.midiInstrument = #"clarinet"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\transposition a
@@ -49,7 +49,7 @@ MvtUnClarinettiAI = \relative c {
 	    c,4( d4. ees8)
 	    ees4( d4. d8)
 	    d4( e!4. e8)
-	    e4(\f f4. e8)
+	    e4(-\tweak X-offset #-2. \f f4. e8)
 	    e4( f4.) e8\ff
 % mesures 36 à 40
 	    e2.~
@@ -165,13 +165,13 @@ MvtUnClarinettiAI = \relative c {
 	
 	
 	
-	r4 r e->\fz~
+	r4 r e-> -\tweak X-offset #-2.5 \fz~
 	e r r
 % mesures 136 à 140
-	e2->\fz r4
-	r e2->\fz
-	r4 r e4->\fz~
-	e r e\fz
+	e2-> -\tweak X-offset #-2.5 \fz r4
+	r e2-> -\tweak X-offset #-2.5 \fz
+	r4 r e4-> -\tweak X-offset #-2.5 \fz~
+	e r e -\tweak X-offset #-2.5 \fz
 	r e\fz r
 % mesures 141 à 145
 	e\fz r e\fz
@@ -190,7 +190,7 @@ MvtUnClarinettiAI = \relative c {
 	r8 fis4 fis fis8
 	r8 fis4 fis fis8
 	aes2.\ff\>~
-	aes
+	aes\!
 % mesures 156 à 160
 	b,\>~
 	b(\!
@@ -228,7 +228,7 @@ MvtUnClarinettiAI = \relative c {
 	c) a2\fz
 	c\fz~ c8 d32( e f g)
 % mesures 186 à 190
-	a2.\fz
+	a2. -\tweak X-offset #-1.5 \fz
 	gis4-. d-. e-.
 	f-. d2\fz
 	f\fz~ f8 g32( a bes c)
@@ -303,7 +303,7 @@ MvtUnClarinettiAI = \relative c {
 	c2~ c8( d)
 	d2~ d8(_\crescmarkup e)
 	e2~ e8 e
-	e2~ e8[ gis\ff]
+	e2~ e8[ gis]
 	gis2.~
 % mesures 251 à 255
 	gis \mark \default
@@ -422,14 +422,14 @@ MvtUnClarinettiAI = \relative c {
 % mesures 346 à 350
 	d)( e\< d
 	e d e
-	d)\! a\f( d
+	d)\! a -\tweak X-offset #-2. \f( d
 	f\< a d)\!
 	f,2.\ff
 % mesures 351 à 355
 	e
-	d(\pp
-	e2\< f4)
-	d2.(\>
+	d(_\pp
+	e2_\< f4)
+	d2.(_\>
 	e2\! f4)
 % mesures 356 à 360
 	f,2.~
@@ -482,16 +482,16 @@ MvtUnClarinettiAII = \relative c {
 	    R2.
 	    R2.
 % mesures 26 à 30
-	    a''4\p( bes4. c!8)
+	    a''4 -\tweak X-offset #-2. \p( bes4. c!8)
 	    c4( bes4._\crescmarkup b8)
 	    b4( c) cis\fz
 	    cis\fz g'2\fp\>~
 	    g2.
 % mesures 31 à 35
-	    a,4\p( bes4. c8)
+	    a,4 -\tweak X-offset #-2. \p( bes4. c8)
 	    c4( bes4._\crescmarkup b8)
 	    b4( c4. cis8)
-	    cis4(\f d4. cis8)
+	    cis4( d4. cis8)
 	    cis4( d4.) cis8\ff
 % mesures 36 à 40
 	    cis2.~
@@ -552,7 +552,7 @@ MvtUnClarinettiAII = \relative c {
 	    r8 c4 c c8
 	    des2.\fz
 	    r8 c4 c c8(
-	    d!) r bes2\fz->~
+	    d!) r bes2-\tweak X-offset #-2. \fz->~
 % mesures 86 à 90
 	    bes8 r bes2(\fz->
 	    d8) r d2\fz(->
@@ -607,13 +607,13 @@ MvtUnClarinettiAII = \relative c {
 	
 	
 	
-	r4 r cis->\fz~
+	r4 r cis-> -\tweak X-offset #-2.5 \fz~
 	cis r r
 % mesures 136 à 140
-	cis2->\fz r4
-	r cis2->\fz
-	r4 r cis4->\fz~
-	cis r cis\fz
+	cis2-> -\tweak X-offset #-2.5 \fz r4
+	r cis2-> -\tweak X-offset #-2.5 \fz
+	r4 r cis4-> -\tweak X-offset #-2.5 \fz~
+	cis r cis -\tweak X-offset #-2.5 \fz
 	r cis\fz r
 % mesures 141 à 145
 	cis\fz r cis\fz
@@ -632,7 +632,7 @@ MvtUnClarinettiAII = \relative c {
 	r8 e4 e e8
 	r8 dis4 dis dis8
 	f!2.\ff\>~
-	f
+	f\!
 % mesures 156 à 160
 	b,\>~
 	b(\!
@@ -667,10 +667,10 @@ MvtUnClarinettiAII = \relative c {
 	R2.
 	gis,2.(\>
 	a2\! b4
-	a) a2\fz
+	a) a2
 	c\fz~ c8 d32( e f g)
 % mesures 186 à 190
-	a2.\fz
+	a2. -\tweak X-offset #-1.5 \fz
 	gis4-. d-. e-.
 	f-. d2\fz
 	f\fz~ f8 g32( a bes c)
@@ -833,7 +833,7 @@ MvtUnClarinettiAII = \relative c {
 	R2.
 % mesures 321 à 325
 	R2.
-	r4 d2\ffz\>~
+	r4 d2 -\tweak X-offset #-3.2 \ffz\>~
 	d2.~\p
 	d\pp~
 	d~
@@ -847,7 +847,7 @@ MvtUnClarinettiAII = \relative c {
 	
 	
 	
-	f2.\pp(
+	f2. -\tweak X-offset #-3.2 \pp(
 	g)(
 % mesures 336 à 340
 	f4) r r
@@ -864,12 +864,12 @@ MvtUnClarinettiAII = \relative c {
 % mesures 346 à 350
 	d)( e\< d
 	e d e
-	d)\! d,\f( f
+	d)\! d, -\tweak X-offset #-2. \f( f
 	a\< d f)\!
 	d2.\ff
 % mesures 351 à 355
 	cis
-	d4\pp r r 
+	d4 r r 
 	R2.*3
 	
 	

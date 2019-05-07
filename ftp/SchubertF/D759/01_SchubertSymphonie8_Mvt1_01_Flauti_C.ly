@@ -12,7 +12,7 @@ MvtUnFlautiI = \relative c {
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Staff.instrumentName = #"Flauti"
+	\set Staff.instrumentName = #"Flauti."
 	\set Staff.midiInstrument = #"flute"
 	\set Staff.soloText = #""
 % mesures 1 à 5
@@ -81,9 +81,9 @@ MvtUnFlautiI = \relative c {
 	    cis2.\fz
 	    r8 cis4 cis cis8
 	    cis2.\fz(
-	    d8) r d2(->\fz
+	    d8) r d2(-> -\tweak X-offset #-2. \fz
 % mesures 86 à 90
-	    e8) r e2(\fz->
+	    e8) r e2(-\tweak X-offset #-2. \fz->
 	    g8) r g2(\fz->
 	    e4) d-. d-.
 	    d8 r d2(\fz->
@@ -227,7 +227,7 @@ MvtUnFlautiI = \relative c {
 % mesures 211 à 215
 	
 	
-	\partcombineApart r4\pp e,( fis)
+	\partcombineApart r4 e,(-\tweak X-offset #-2. \pp fis)
 	g4.( fis8[ g fis]
 	g4. fis8[ g fis])
 % mesures 216 à 220
@@ -270,7 +270,7 @@ MvtUnFlautiI = \relative c {
 	a2~ a8( b)
 	b2~ b8(_\crescmarkup cis)
 	cis2~ cis8 cis
-	cis2~ cis8[ eis\ff]
+	cis2~ cis8[ eis]
 	eis2.~
 % mesures 251 à 255
 	eis \mark \default
@@ -446,7 +446,7 @@ MvtUnFlautiII = \relative c {
 	    
 	    r4 r_\crescmarkup r8 d,
 	    d4( cis4. e8)
-	    e4(\f d4. e'8)
+	    e4( -\tweak X-offset #-2. \f d4. e'8)
 	    e4( d4.) e8\ff
 % mesures 36 à 40
 	    e2.~
@@ -490,9 +490,9 @@ MvtUnFlautiII = \relative c {
 	    a2.\fz
 	    r8 bes4 bes bes8
 	    a2.\fz(
-	    b!8) r b2(->\fz
+	    b!8) r b2(-> -\tweak X-offset #-2. \fz
 % mesures 86 à 90
-	    c8) r c2(\fz->
+	    c8) r c2(-\tweak X-offset #-2. \fz->
 	    d8) r d2(\fz->
 	    c4) b-. c-.
 	    b8 r b2(\fz->
@@ -773,7 +773,7 @@ MvtUnFlautiII = \relative c {
 	
 % mesures 326 à 330
 	
-	fis,2.~\pp\>
+	fis,2.~ -\tweak X-offset #-3. \pp\>
 	fis4\! r r
 	R2.*5
 	
@@ -781,7 +781,7 @@ MvtUnFlautiII = \relative c {
 	
 	
 	
-	fis2.\pp~
+	fis2. -\tweak X-offset #-3. \pp~
 	fis~
 % mesures 336 à 340
 	fis4 r r

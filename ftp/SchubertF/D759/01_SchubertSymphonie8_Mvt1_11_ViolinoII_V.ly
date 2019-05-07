@@ -461,36 +461,36 @@ MvtUnViolinoII = \relative c {
 	\clef treble
 % mesures 336 à 340
 	
+	
 	b2.(\p^\arco
 	cis2 d4)
 	fis2.(\>
-	eis4)\! r r
 % mesures 341 à 345
+	eis4)\! r r
 	fis2.(\>
 	eis4)\! r r
 	fis2(_\crescmarkup eis4)
 	fis2( eis4)
-	fis4(\< eis fis
 % mesures 346 à 350
+	fis4(\< eis fis
 	eis fis eis)
 	fis16\f fis fis fis fis fis fis fis b b b b
 	d_\crescmarkup d d d fis fis fis fis b b b b
 	d2.:16\ff
-	cis:
 % mesures 351 à 355
+	cis:
 	b4 r r
 	R2.*3
 	
 	
-	b,2.(\mf\<
 % mesures 356 à 360
+	b,2.(\mf\<
 	cis2 d4)
 	b2.(\>
 	cis2 d4)\!
 	b4 r r
-	R2.*3
 % mesures 361 à 365
-	
+	R2.*3
 	
 	
 	<d, b' fis'>4\ff r r

@@ -394,7 +394,7 @@ MvtUnTromboni_tenore = \relative c {
 	    r8 a4 a a8
 	    bes2.\fz
 	    r8 a4 a a8(
-	    b!) r g2\fz->~
+	    b!) r g2-\tweak X-offset #-2. \fz->~
 % mesures 86 à 90
 	    g8 r g2->\fz~
 	    g8 r g2->\fz~

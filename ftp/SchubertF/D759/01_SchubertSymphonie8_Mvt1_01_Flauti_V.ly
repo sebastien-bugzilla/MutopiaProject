@@ -300,7 +300,7 @@ MvtUnFlautoI = \relative c {
 % mesures 211 à 215
 	
 	
-	r4\pp e,( fis)
+	r4 e,(\pp fis)
 	g4.( fis8[ g fis]
 	g4. fis8[ g fis])
 % mesures 216 à 220

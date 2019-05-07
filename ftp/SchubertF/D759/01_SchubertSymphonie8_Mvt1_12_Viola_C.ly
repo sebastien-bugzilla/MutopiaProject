@@ -11,7 +11,7 @@ MvtUnViola = \relative c {
 	\key b \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Viola"
+	\set Staff.instrumentName = #"Viola."
 	\set Staff.midiInstrument = #"viola"
 	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
@@ -22,7 +22,7 @@ MvtUnViola = \relative c {
 	    
 	    
 	    
-	    b'4^\pizz\pp r8 b[ b b]
+	    b'4^\pizz -\tweak X-offset #-3 \pp r8 b[ b b]
 	    b4 r8 b[ b g]
 % mesures 11 à 15
 	    b4 r8 b[ b b]
@@ -136,7 +136,7 @@ MvtUnViola = \relative c {
 	    g'4(\p d4.\< gis8)
 	    a8.(\> b16 c4.\! cis8)
 	    d2.
-	    g,8 r b,4-.\ffz r
+	    g,8 r b,4-. -\tweak X-offset #-2. \ffz r
 	    R2.
 % mesures 106 à 110
 	    g'4^\pizz\pp r r
@@ -434,7 +434,7 @@ MvtUnViola = \relative c {
 	R2.*3
 	
 	
-	<fis, d' b'>4\ff r r
+	<fis, d' b'>4 -\tweak X-offset #-3.3 \ff r r
 	<fis cis' ais'> r r
 % mesures 366 à 368
 	<b fis' b> r r

@@ -293,7 +293,7 @@ MvtUnCorniDI = \relative c {
 	
 % mesures 251 à 255
 	\mark \default
-	e4\fz g,2\fp\>~
+	e4 g,2\fp\>~
 	g2.\!~
 	g~
 	g4(\pp\< a d\>
@@ -398,21 +398,21 @@ MvtUnCorniDI = \relative c {
 	e2.\ff
 % mesures 351 à 355
 	e
-	a,\pp~
-	a~\<
-	a\>~
+	a,~
+	a~
+	a~
 	a
 % mesures 356 à 360
-	e'\mf\<~
+	e'~
 	e(
-	f)~\>
+	f)~
 	f
-	e\pp\<~
+	e~
 % mesures 361 à 365
 	e(
-	f)\>~
+	f)~
 	f
-	e4\ff r r
+	e4 r r
 	e r r
 % mesures 366 à 368
 	e r r
@@ -520,10 +520,10 @@ MvtUnCorniDII = \relative c {
 	    r8 d4 d d8
 	    d2.\fz
 	    r8 d4 d d8(
-	    c) r c2->\fz(
+	    c) r c2->-\tweak X-offset #-2. \fz(
 % mesures 86 à 90
-	    d8) r d2\fz->(
-	    c8) r c2->\fz(
+	    d8) r d2 -\tweak X-offset #-2. \fz->(
+	    c8) r c2-> -\tweak X-offset #-3. \fz(
 	    d4) c-. c-.
 	    c8 r c2->\fz(
 	    d8) r d2\fz->~

@@ -25,7 +25,7 @@ MvtUnVioloncello = \relative c {
 	    fis2.)~
 	    fis~
 	    fis
-	    b4^\pizz\pp r8 b[ b b]
+	    b4^\pizz -\tweak X-offset #-3 \pp r8 b[ b b]
 	    b4 r8 b[ b g]
 % mesures 11 à 15
 	    b4 r8 b[ b b]
@@ -139,7 +139,7 @@ MvtUnVioloncello = \relative c {
 	    d r r
 	    d r r
 	    d r r
-	    g8 r b,4-.\ffz r
+	    g8 r b,4-.-\tweak X-offset #-2. \ffz r
 	    R2.
 % mesures 106 à 110
 	    g'4^\pizz\pp r r
@@ -459,7 +459,7 @@ MvtUnVioloncello = \relative c {
 	cis2 d4)
 	b2.(\>
 	cis2 d4)
-	d\ff r r
+	d -\tweak X-offset #-3.3 \ff r r
 	fis r r
 % mesures 366 à 368
 	b r r

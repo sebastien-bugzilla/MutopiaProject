@@ -13,7 +13,7 @@ MvtUnTrombeEI = \relative c {
 	\override Hairpin.to-barline = ##f
 	\set Staff.instrumentName = \markup {
 	    \center-column {
-	        "Trumpet"
+	        "Trombe"
 	        \line {
 	            "in E"
 	        }
@@ -75,12 +75,12 @@ MvtUnTrombeEI = \relative c {
 	    c
 	    c\fz
 	    c
-	    r4 g'2\fz
+	    r4 g'2-\tweak X-offset #-2. \fz
 % mesures 86 à 90
 	    r4 \partcombineApartOnce c,2
-	    r4 g'2\fz
+	    r4 g'2 -\tweak X-offset #-3.1 \fz
 	    R2.
-	    r4 g2\fz
+	    r4 g2 -\tweak X-offset #-3.1 \fz
 	    r4 \partcombineApartOnce c,2
 % mesures 91 à 95
 	    r4 c'2->\fz
@@ -317,15 +317,15 @@ MvtUnTrombeEII = \relative c {
 	\key a \minor
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Trombe in E."
 	\set Staff.instrumentName = \markup {
 	    \center-column {
-	        "Trumpet"
+	        "Trombe"
 	        \line {
 	            "in E"
 	        }
 	    }
-	}	\set Score.alternativeNumberingStyle = #'numbers
+	}
+	\set Score.alternativeNumberingStyle = #'numbers
 	\transposition e
 % mesures 1 à 5
 	R2.
@@ -380,13 +380,13 @@ MvtUnTrombeEII = \relative c {
 	    c
 	    c\fz
 	    c
-	    r4 g2\fz
+	    r4 g2-\tweak X-offset #-2. \fz
 % mesures 86 à 90
-	    r4 c2\fz
-	    r4 g2\fz
+	    r4 c2-\tweak X-offset #-3.1 \fz
+	    r4 g2-\tweak X-offset #-3.1 \fz
 	    R2.
-	    r4 g2\fz
-	    r4 c2->\fz
+	    r4 g2 -\tweak X-offset #-3.1 \fz
+	    r4 c2-> -\tweak X-offset #-3.1 \fz
 % mesures 91 à 95
 	    r4 c2->\fz
 	    R2. \mark \default
@@ -560,13 +560,13 @@ MvtUnTrombeEII = \relative c {
 % mesures 301 à 305
 	e2.\fz
 	r8 e4 e e8
-	g r g,2(\fz
-	c8) r c2(\fz
+	g r g,2( -\tweak X-offset #-2.7 \fz
+	c8) r c2( -\tweak X-offset #-2.7 \fz
 	g8) r g'2(\fz
 % mesures 306 à 310
 	c4) d-. d-.
-	g,8 r g,2\fz(
-	c8) r c2\fz(
+	g,8 r g,2 -\tweak X-offset #-2.7 \fz(
+	c8) r c2 -\tweak X-offset #-2.5 \fz(
 	e8) r e2(\fz
 	c'4) d-. d-. \mark \default
 % mesures 311 à 315
