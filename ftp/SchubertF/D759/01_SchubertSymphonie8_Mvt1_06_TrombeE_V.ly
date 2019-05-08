@@ -48,21 +48,6 @@ violinNotesA = \relative c'' {
 MvtUnTrombeEI = \relative c {
 	\clef treble
 	\key a \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Trombe in E. I"
-	\set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Trumpet I"
-	        \line {
-	            "in E"
-	        }
-	    }
-	}
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 	\transposition e
 % mesures 1 à 5
 	R2.
@@ -360,21 +345,6 @@ MvtUnTrombeEI = \relative c {
 MvtUnTrombeEII = \relative c {
 	\clef treble
 	\key a \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Trombe in E. II"
-	\set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Trumpet II"
-	        \line {
-	            "in E"
-	        }
-	    }
-	}
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 	\transposition e
 % mesures 1 à 5
 	R2.

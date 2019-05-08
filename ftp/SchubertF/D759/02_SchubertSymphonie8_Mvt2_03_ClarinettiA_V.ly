@@ -60,20 +60,7 @@ clarinetNotesM = \relative c''' {
 \addQuote "fluteN" {\fluteNotesN}
 MvtDeuxClarinettiAI = \relative c'' {
 	\clef treble
-	%\key g \major
-	\set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Clarinet I"
-	        \line {
-	            "in A"
-	        }
-	    }
-	}
-	\set Staff.midiInstrument = #"clarinet"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
+	\key g \major
     \transposition a
 % mesures 1 à 5
 	R4.*13
@@ -360,20 +347,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 }
 MvtDeuxClarinettiAII = \relative c'' {
 	\clef treble
-	%\key g \major
-	\set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Clarinet II"
-	        \line {
-	            "in A"
-	        }
-	    }
-	}
-	\set Staff.midiInstrument = #"clarinet"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
+	\key g \major
     \transposition a
 % mesures 1 à 5
 	R4.*13

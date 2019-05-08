@@ -39,26 +39,17 @@
 }
 %-----------------------------------------------------------------------
 globalMvtUn = {
-	\version "2.18.2"
 	\time 3/4
-	%\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Allegro moderato" 
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtDeux = {
-	\version "2.18.2"
 	\time 3/8
-	%\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Andante con moto."
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
-\include "markup.ly"
+\include "00_SchubertSymphonie8_markup.ly"
+\include "00_SchubertSymphonie8_StaffOptionsV.ly"
 \include "01_SchubertSymphonie8_Mvt1_05_CorniD_V.ly"
 \include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_05_CorniD_V.ly"
@@ -96,7 +87,8 @@ globalMvtDeux = {
 		        \corIFormattingMvtI
 		    }
 		    \new Voice {
-		        \globalMvtUn \MvtUnCorniDI 
+		        \globalMvtUn \commonOptions \commonPartOptions
+		        \nameCorniIMvtI \MvtUnCorniDI 
 		    }
 		>>
 		\header {
@@ -109,14 +101,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #23
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -125,7 +109,8 @@ globalMvtDeux = {
 		        \corIFormattingMvtII
 		    }
 		    \new Voice {
-		        \globalMvtDeux \MvtDeuxCorniDI 
+		        \globalMvtDeux \commonOptions \commonPartOptions
+		        \nameCorniIMvtII \MvtDeuxCorniDI 
 		    }
 		>>
 		\header {
@@ -138,14 +123,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #13
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -154,7 +131,8 @@ globalMvtDeux = {
 		        \corIIFormattingMvtI
 		    }
 		    \new Voice {
-		        \globalMvtUn \MvtUnCorniDII
+		        \globalMvtUn \commonOptions \commonPartOptions
+		        \nameCorniIIMvtI \MvtUnCorniDII
 		    }
 		>>
 		\header {
@@ -167,14 +145,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #23
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -183,7 +153,8 @@ globalMvtDeux = {
 		        \corIIFormattingMvtII
 		    }
 		    \new Voice {
-		        \globalMvtDeux \MvtDeuxCorniDII
+		        \globalMvtDeux \commonOptions \commonPartOptions
+		        \nameCorniIIMvtII \MvtDeuxCorniDII
 		    }
 		>>
 		\header {
@@ -196,14 +167,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			system-count = #12
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 }

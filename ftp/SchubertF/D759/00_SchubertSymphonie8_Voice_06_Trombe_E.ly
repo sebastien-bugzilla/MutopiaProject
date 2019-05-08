@@ -39,26 +39,17 @@
 }
 %-----------------------------------------------------------------------
 globalMvtUn = {
-	\version "2.18.2"
 	\time 3/4
-	%\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Allegro moderato" 
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtDeux = {
-	\version "2.18.2"
 	\time 3/8
-	%\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Andante con moto."
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
-\include "markup.ly"
+\include "00_SchubertSymphonie8_markup.ly"
+\include "00_SchubertSymphonie8_StaffOptionsV.ly"
 \include "01_SchubertSymphonie8_Mvt1_06_TrombeE_V.ly"
 \include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_06_TrombeE_V.ly"
@@ -96,7 +87,8 @@ globalMvtDeux = {
 		        \trompetteIFormattingMvtI
 		    }
 		    \new Voice {
-		        \globalMvtUn \MvtUnTrombeEI 
+		        \globalMvtUn \commonOptions \commonPartOptions
+		        \nameTrombeI \MvtUnTrombeEI 
 		    }
 		>>
 		\header {
@@ -109,14 +101,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #14
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -125,7 +109,8 @@ globalMvtDeux = {
 		        \trompetteIFormattingMvtII
 		    }
 		    \new Voice {
-		        \globalMvtDeux \MvtDeuxTrombeEI 
+		        \globalMvtDeux \commonOptions \commonPartOptions
+		        \nameTrombeI \MvtDeuxTrombeEI 
 		    }
 		>>
 		\header {
@@ -138,14 +123,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #8
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -154,7 +131,8 @@ globalMvtDeux = {
 		        \trompetteIIFormattingMvtI
 		    }
 		    \new Voice {
-		        \globalMvtUn \MvtUnTrombeEII 
+		        \globalMvtUn \commonOptions \commonPartOptions
+		        \nameTrombeII \MvtUnTrombeEII 
 		    }
 		>>
 		\header {
@@ -167,14 +145,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #14
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -183,7 +153,8 @@ globalMvtDeux = {
 		        \trompetteIIFormattingMvtII
 		    }
 		    \new Voice {
-		        \globalMvtDeux \MvtDeuxTrombeEII 
+		        \globalMvtDeux \commonOptions \commonPartOptions
+		        \nameTrombeII \MvtDeuxTrombeEII 
 		    }
 		>>
 		\header {
@@ -196,14 +167,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			system-count = #8
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 }

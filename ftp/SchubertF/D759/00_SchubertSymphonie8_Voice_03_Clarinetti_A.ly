@@ -39,26 +39,17 @@
 }
 %-----------------------------------------------------------------------
 globalMvtUn = {
-	\version "2.18.2"
 	\time 3/4
-	%\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Allegro moderato" 
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtDeux = {
-	\version "2.18.2"
 	\time 3/8
-	%\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Andante con moto"
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
-\include "markup.ly"
+\include "00_SchubertSymphonie8_markup.ly"
+\include "00_SchubertSymphonie8_StaffOptionsV.ly"
 \include "01_SchubertSymphonie8_Mvt1_03_ClarinettiA_V.ly"
 \include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_03_ClarinettiA_V.ly"
@@ -96,7 +87,8 @@ globalMvtDeux = {
 		        \clarinetIFormattingMvtI
 		    }
 		    \new Voice {
-		        \globalMvtUn \key d \minor \transposition a \MvtUnClarinettiAI
+		        \globalMvtUn \commonOptions \commonPartOptions
+		        \nameClarinettiI \MvtUnClarinettiAI
 		    }
 		>>
 		\header {
@@ -109,14 +101,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
-			#(layout-set-staff-size 19)
-		    \context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -125,7 +109,8 @@ globalMvtDeux = {
 		        \clarinetIFormattingMvtII
 		    }
 		    \new Voice {
-		        \globalMvtDeux \key g \major \transposition a \MvtDeuxClarinettiAI 
+		        \globalMvtDeux \commonOptions \commonPartOptions 
+		        \nameClarinettiI \MvtDeuxClarinettiAI 
 		    }
 		>>
 		\header {
@@ -138,14 +123,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #14
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -154,7 +131,8 @@ globalMvtDeux = {
 		        \clarinetIIFormattingMvtI
 		    }
 		    \new Voice {
-		        \globalMvtUn \key d \minor \transposition a \MvtUnClarinettiAII
+		        \globalMvtUn \commonOptions \commonPartOptions 
+		        \nameClarinettiII \MvtUnClarinettiAII
 		    }
 		>>
 		\header {
@@ -167,8 +145,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
-			#(layout-set-staff-size 19)
 		}
 	}
 	\score {
@@ -177,7 +153,8 @@ globalMvtDeux = {
 		        \clarinetIIFormattingMvtII
 		    }
 		    \new Voice {
-		        \globalMvtDeux \key g \major \transposition a \MvtDeuxClarinettiAII 
+		        \globalMvtDeux \commonOptions \commonPartOptions 
+		        \nameClarinettiII \MvtDeuxClarinettiAII 
 		    }
 		>>
 		\header {
@@ -190,14 +167,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			system-count = #10
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 }

@@ -30,21 +30,6 @@ hornNotesA = \relative c'' {
 MvtUnTimpaniEH = \relative c {
 	\clef bass
 	\key a \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Timpani"
-	        \line {
-	            "in H F" \small \sharp
-	        }
-	    }
-	}
-	%\set Staff.midiInstrument = #"timpani"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

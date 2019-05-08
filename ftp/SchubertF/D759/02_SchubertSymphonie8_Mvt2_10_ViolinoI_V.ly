@@ -22,12 +22,6 @@ clarinetNotesM = \relative c'' {
 MvtDeuxViolinoI = \relative c''' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Violino I."
-	\set Staff.midiInstrument = #"violin"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	\clef bass \new CueVoice { 
 	    \set instrumentCueName = "Bässe"

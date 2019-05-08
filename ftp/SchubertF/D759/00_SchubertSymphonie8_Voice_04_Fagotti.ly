@@ -40,26 +40,17 @@
 }
 %-----------------------------------------------------------------------
 globalMvtUn = {
-	\version "2.18.2"
 	\time 3/4
-	%\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Allegro moderato" 
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtDeux = {
-	\version "2.18.2"
 	\time 3/8
-	%\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Andante con moto."
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
-\include "markup.ly"
+\include "00_SchubertSymphonie8_markup.ly"
+\include "00_SchubertSymphonie8_StaffOptionsV.ly"
 \include "01_SchubertSymphonie8_Mvt1_04_Fagotti_V.ly"
 \include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_04_Fagotti_V.ly"
@@ -97,7 +88,8 @@ globalMvtDeux = {
 		        \fagotIFormattingMvtI
 		    }
 		    \new Voice {
-		        \globalMvtUn \MvtUnFagottiI 
+		        \globalMvtUn \commonOptions \commonPartOptions
+		        \nameFagottiI \MvtUnFagottiI 
 		    }
 		>>
 		\header {
@@ -110,14 +102,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #26
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -126,7 +110,8 @@ globalMvtDeux = {
 		        \fagotIFormattingMvtII
 		    }
 		    \new Voice {
-		        \globalMvtDeux \MvtDeuxFagottiI 
+		        \globalMvtDeux \commonOptions \commonPartOptions
+		        \nameFagottiI \MvtDeuxFagottiI 
 		    }
 		>>
 		\header {
@@ -139,14 +124,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #17
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -155,7 +132,8 @@ globalMvtDeux = {
 		        \fagotIIFormattingMvtI
 		    }
 		    \new Voice {
-		        \globalMvtUn \MvtUnFagottiII 
+		        \globalMvtUn \commonOptions \commonPartOptions
+		        \nameFagottiII \MvtUnFagottiII 
 		    }
 		>>
 		\header {
@@ -168,14 +146,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #20
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -184,7 +154,8 @@ globalMvtDeux = {
 		        \fagotIIFormattingMvtII
 		    }
 		    \new Voice {
-		        \globalMvtDeux \MvtDeuxFagottiII 
+		        \globalMvtDeux \commonOptions \commonPartOptions
+		        \nameFagottiII \MvtDeuxFagottiII 
 		    }
 		>>
 		\header {
@@ -197,14 +168,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			system-count = #15
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 }

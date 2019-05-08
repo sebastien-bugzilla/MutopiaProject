@@ -23,14 +23,6 @@ clarinetNotesA = \relative c'' {
 MvtUnFagottiI = \relative c {
 	\clef bass
 	\key b \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Staff.instrumentName = #"Fagot I"
-	\set Staff.midiInstrument = #"bassoon"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
@@ -452,14 +444,6 @@ MvtUnFagottiI = \relative c {
 MvtUnFagottiII = \relative c {
 	\clef bass
 	\key b \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Staff.instrumentName = #"Fagot II"
-	\set Staff.midiInstrument = #"bassoon"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

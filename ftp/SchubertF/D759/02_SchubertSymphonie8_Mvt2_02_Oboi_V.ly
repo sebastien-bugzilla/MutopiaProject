@@ -40,12 +40,6 @@ oboeNotesM = \relative c''' {
 MvtDeuxOboeI = \relative c'' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Oboe I"
-	\set Staff.midiInstrument = #"oboe"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*15
 % mesures 6 à 10
@@ -348,12 +342,6 @@ MvtDeuxOboeI = \relative c'' {
 MvtDeuxOboeII = \relative c'' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Oboe II"
-	\set Staff.midiInstrument = #"Oboe"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*15
 % mesures 6 à 10

@@ -48,12 +48,6 @@ fluteNotesN = \relative c'' {
 MvtDeuxFlautiI = \relative c'' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Flauto I"
-	\set Staff.midiInstrument = #"flute"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*13
 % mesures 6 à 10
@@ -363,12 +357,6 @@ MvtDeuxFlautiI = \relative c'' {
 MvtDeuxFlautiII = \relative c'' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Flauto II"
-	\set Staff.midiInstrument = #"flute"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*13
 % mesures 6 à 10

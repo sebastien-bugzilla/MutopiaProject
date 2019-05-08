@@ -31,11 +31,6 @@ bassNotesN = \relative c {
 MvtDeuxFagottiI = \relative c' {
 	\clef bass
 	\key e \major
-	\set Staff.instrumentName = #"Fagot I"
-	\set Staff.midiInstrument = #"bassoon"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	b4.(\pp\<
 	dis\>
@@ -336,11 +331,6 @@ MvtDeuxFagottiI = \relative c' {
 MvtDeuxFagottiII = \relative c' {
 	\clef bass
 	\key e \major
-	\set Staff.instrumentName = #"Fagot II"
-	\set Staff.midiInstrument = #"bassoon"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	b4.(\pp\<
 	a\>

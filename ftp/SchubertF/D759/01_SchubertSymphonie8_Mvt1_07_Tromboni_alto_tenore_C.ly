@@ -9,11 +9,11 @@
 MvtUnTromboni_alto = \relative c {
 	\clef tenor
 	\key b \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Tromboni"
-	\set Staff.midiInstrument = #"trombone"
-	\set Score.alternativeNumberingStyle = #'numbers
+%	\override TupletBracket #'bracket-visibility = ##f
+%	\override Hairpin.to-barline = ##f
+%	\set Staff.instrumentName = #"Tromboni"
+%	\set Staff.midiInstrument = #"trombone"
+%	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
@@ -334,11 +334,11 @@ MvtUnTromboni_alto = \relative c {
 MvtUnTromboni_tenore = \relative c {
 	\clef tenor
 	\key b \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Tromboni"
-	\set Staff.midiInstrument = #"trombone"
-	\set Score.alternativeNumberingStyle = #'numbers
+%	\override TupletBracket #'bracket-visibility = ##f
+%	\override Hairpin.to-barline = ##f
+%	\set Staff.instrumentName = #"Tromboni"
+%	\set Staff.midiInstrument = #"trombone"
+%	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

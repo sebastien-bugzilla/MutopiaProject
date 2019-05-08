@@ -41,18 +41,12 @@
 }
 %-----------------------------------------------------------------------
 global = {
-	\version "2.18.2"
 	\time 3/4
-%	\key b \minor
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Allegro moderato"
-	#(set-global-staff-size 12)
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
-\include "markup.ly"
-%\include "part_formatting.ly"
+\include "00_SchubertSymphonie8_markup.ly"
+\include "00_SchubertSymphonie8_StaffOptionsC.ly"
 \include "01_SchubertSymphonie8_Mvt1_01_Flauti_C.ly"
 \include "01_SchubertSymphonie8_Mvt1_02_Oboi_C.ly"
 \include "01_SchubertSymphonie8_Mvt1_03_ClarinettiA_C.ly"
@@ -98,50 +92,83 @@ global = {
 	\score {
 	    <<
 	        \new StaffGroup <<
-	            \override Score.BarNumber #'font-size = #2
-			    \new Staff \with { shortInstrumentName = #"Fl." } <<
+			    \new Staff <<
 			        \new Voice {
 			            \conductorFormattingMvtI
 			        }
 			        \new Voice {
-			            \global \partcombine \MvtUnFlautiI \MvtUnFlautiII
+			            \global \commonOptions \commonConductorOptions
+			            \nameFlauti
+			            \partcombine \MvtUnFlautiI \MvtUnFlautiII
 			        }
 %			        \new Voice {
 %			            \displayMvtI
 %			        }
 			    >>
-			    \new Staff \with { shortInstrumentName = #"Ob." } { 
-			        \global \partcombine \MvtUnOboiI \MvtUnOboiII 
+			    \new Staff { 
+			        \global \commonOptions \commonConductorOptions
+			        \nameOboi
+			        \partcombine \MvtUnOboiI \MvtUnOboiII 
 			    }
-			    \new Staff \with { shortInstrumentName = #"Cl."} {
-			        \global \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII
+			    \new Staff {
+			        \global \commonOptions \commonConductorOptions
+			        \nameClarinetti
+			        \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII
 			    }
-			    \new Staff  \with { shortInstrumentName = #"Fag."} {
-			        \global \partcombine \MvtUnFagottiI \MvtUnFagottiII
+			    \new Staff {
+			        \global \commonOptions \commonConductorOptions
+			        \nameFagotti
+			        \partcombine \MvtUnFagottiI \MvtUnFagottiII
 			    }
-			    \new Staff \with { shortInstrumentName = #"Cor."} { 
-			        \global \partcombine \MvtUnCorniDI \MvtUnCorniDII
+			    \new Staff { 
+			        \global \commonOptions \commonConductorOptions
+			        \nameCorniMvtI
+			        \partcombine \MvtUnCorniDI \MvtUnCorniDII
 			    }
-			    \new Staff  \with { shortInstrumentName = #"Trp."} { 
-			        \global \partcombine \MvtUnTrombeEI \MvtUnTrombeEII
+			    \new Staff { 
+			        \global \commonOptions \commonConductorOptions
+			        \nameTrombe
+			        \partcombine \MvtUnTrombeEI \MvtUnTrombeEII
 			    }
-			    \new GrandStaff \with { shortInstrumentName = #"Trb."} <<
-			        \new Staff { \global \partcombine \MvtUnTromboni_alto \MvtUnTromboni_tenore }
-			        \new Staff { \global \MvtUnTromboni_basso }
+			    \new GrandStaff \with { \nameTromboni } <<
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \partcombine \MvtUnTromboni_alto \MvtUnTromboni_tenore 
+			        }
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \MvtUnTromboni_basso 
+			        }
 		        >>
-		        \new Staff \with { shortInstrumentName = #"Tmp."} { 
-		            \global \MvtUnTimpaniEH 
+		        \new Staff { 
+		            \global \commonOptions \commonConductorOptions
+		            \nameTimpaniC
+		            \MvtUnTimpaniEH 
 		        }
-		        \new GrandStaff \with { shortInstrumentName = #"Vl."} <<
-			        \new Staff { \global \MvtUnViolinoI }
-			        \new Staff { \global \MvtUnViolinoII }
+		        \new GrandStaff \with { \nameViolin } <<
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \MvtUnViolinoI
+			        }
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \MvtUnViolinoII
+			        }
 		        >>
-		        \new Staff  \with { shortInstrumentName = #"Vla."} { 
-		            \global \MvtUnViola
+		        \new Staff { 
+		            \global \commonOptions \commonConductorOptions
+		            \nameViolaC
+		            \MvtUnViola
 		        }
-		        \new GrandStaff \with { shortInstrumentName = #"Bas."} <<
-			        \new Staff { \global \MvtUnVioloncello }
-			        \new Staff { \global \MvtUnBasso }
+		        \new GrandStaff \with { \nameBassi } <<
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \MvtUnVioloncello
+			        }
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \MvtUnBasso
+			        }
 		        >>
 			>>
 		>>

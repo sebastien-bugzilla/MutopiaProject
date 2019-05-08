@@ -46,18 +46,6 @@ hornNotesM = \relative c, {
 MvtDeuxTrombeEI = \relative c'' {
 	\clef treble
 	\key c \major
-	\set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Trumpet I"
-	        \line {
-	            "in E"
-	        }
-	    }
-	}
-	\set Staff.midiInstrument = #"trumpet"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 	\transposition e
 % mesures 1 à 5
 	R4.*30
@@ -256,18 +244,6 @@ MvtDeuxTrombeEI = \relative c'' {
 MvtDeuxTrombeEII = \relative c' {
 	\clef treble
 	\key c \major
-	\set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Trumpet II"
-	        \line {
-	            "in E"
-	        }
-	    }
-	}
-	\set Staff.midiInstrument = #"trumpet"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 	\transposition e
 % mesures 1 à 5
 	R4.*30

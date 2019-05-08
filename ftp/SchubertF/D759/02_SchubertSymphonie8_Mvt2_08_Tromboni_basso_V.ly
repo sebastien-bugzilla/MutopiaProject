@@ -43,18 +43,6 @@ violinNotesM = \relative c'' {
 MvtDeuxTromboni_basso = \relative c' {
 	\clef bass
 	\key e \major
-	\set Staff.instrumentName = #"Tromboni"
-	\set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Trombone"
-	        \line {
-	            "basso"
-	        }
-	    }
-	}
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*28
 % mesures 6 à 10

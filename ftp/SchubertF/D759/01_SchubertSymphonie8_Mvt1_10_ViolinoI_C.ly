@@ -9,14 +9,14 @@
 MvtUnViolinoI = \relative c {
 	\clef treble
 	\key b \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Violino I."
-	\set Staff.midiInstrument = #"violin"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
+%	\override TupletBracket #'bracket-visibility = ##f
+%	\override Hairpin.to-barline = ##f
+%	\set Staff.instrumentName = #"Violino I."
+%	\set Staff.midiInstrument = #"violin"
+%	\set Score.alternativeNumberingStyle = #'numbers
+%	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+%                                      beam-event tuplet-span-event
+%                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

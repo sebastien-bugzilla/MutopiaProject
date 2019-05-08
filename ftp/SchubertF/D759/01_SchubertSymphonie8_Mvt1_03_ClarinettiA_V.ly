@@ -50,23 +50,8 @@ fluteNotesA = \relative c''' {
 \addQuote "clarinetC" {\clarinetNotesC}
 MvtUnClarinettiAI = \relative c {
 	\clef treble
-	%\key d \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Clarinet I"
-	        \line {
-	            "in A"
-	        }
-	    }
-	}
-	\set Staff.midiInstrument = #"clarinet"
-	\set Score.alternativeNumberingStyle = #'numbers
-	%\transposition a
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
+	\key d \minor
+	\transposition a
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
@@ -505,22 +490,8 @@ MvtUnClarinettiAI = \relative c {
 }
 MvtUnClarinettiAII = \relative c {
 	\clef treble
-	%\key d \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Clarinet II"
-	        \line {
-	            "in A"
-	        }
-	    }
-	}	\set Staff.midiInstrument = #"clarinet"
-	\set Score.alternativeNumberingStyle = #'numbers
-	%\transposition a
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
+	\key d \minor
+	\transposition a
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

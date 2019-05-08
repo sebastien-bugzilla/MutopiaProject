@@ -7,17 +7,6 @@
 	%annotate-spacing = ##t
 	ragged-bottom = ##t
 	ragged-last-bottom = ##t
-	%systems-per-page = #11
-	%system-system-spacing = #'((basic-distance . 9) (padding . 0))
-	%system-count = #12
-	%
-	%score-system-spacing = #'((padding . 0) (basic-distance . 10) (minimum-distance . 0) (stretchability . 0))
-	%system-system-spacing #'basic-distance = #0
-	%system-system-spacing #'minimum-distance = #0
-	%system-system-spacing #'padding = #0.2
-	%system-system-spacing #'stretchability = #0
-	%page-breaking = #ly:page-turn-breaking
-	%auto-first-page-number = ##t
 	bookTitleMarkup = \markup {
 		\override #'(baseline-skip . 3.5)
 		\column {
@@ -51,26 +40,17 @@
 }
 %-----------------------------------------------------------------------
 globalMvtUn = {
-	\version "2.18.2"
 	\time 3/4
-	%\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Allegro moderato"
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 globalMvtDeux = {
-	\version "2.18.2"
 	\time 3/8
-	%\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Andante con moto."
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
-\include "markup.ly"
+\include "00_SchubertSymphonie8_markup.ly"
+\include "00_SchubertSymphonie8_StaffOptionsV.ly"
 \include "01_SchubertSymphonie8_Mvt1_01_Flauti_V.ly"
 \include "01_Voice_part_formatting.ly"
 \include "02_SchubertSymphonie8_Mvt2_01_Flauti_V.ly"
@@ -108,7 +88,8 @@ globalMvtDeux = {
 	            \fluteIFormattingMvtI
 	        }
 	        \new Voice {
-	            \globalMvtUn \MvtUnFlautoI
+	            \globalMvtUn \commonOptions \commonPartOptions
+	            \nameFlautiI \MvtUnFlautoI
 	        }
 	    >>
 		\header {
@@ -121,14 +102,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #23
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -137,7 +110,8 @@ globalMvtDeux = {
 		        \fluteIFormattingMvtII
 		    }
 		    \new Voice {
-		        \globalMvtDeux \MvtDeuxFlautiI 
+		        \globalMvtDeux \commonOptions \commonPartOptions
+		        \nameFlautiI \MvtDeuxFlautiI 
 		    }
 		>>
 		\header {
@@ -150,14 +124,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			system-count = #17
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -166,7 +132,8 @@ globalMvtDeux = {
 		        \fluteIIFormattingMvtI
 		    }
 		    \new Voice {
-		        \globalMvtUn \MvtUnFlautoII
+		        \globalMvtUn \commonOptions \commonPartOptions
+		        \nameFlautiII \MvtUnFlautoII
 		    }
 		>>
 		\header {
@@ -179,14 +146,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			%system-count = #12
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 	\score {
@@ -195,7 +154,8 @@ globalMvtDeux = {
 		        \fluteIIFormattingMvtII
 		    }
 		    \new Voice {
-		        \globalMvtDeux \MvtDeuxFlautiII
+		        \globalMvtDeux \commonOptions \commonPartOptions
+		        \nameFlautiII \MvtDeuxFlautiII
 		    }
 		>>
 		\header {
@@ -208,14 +168,6 @@ globalMvtDeux = {
 			}
 		}
 		\layout {
-			system-count = #14
-			#(layout-set-staff-size 19)
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
 		}
 	}
 }

@@ -46,14 +46,6 @@ violinNotesD = \relative c'' {
 MvtUnViola = \relative c {
 	\clef alto
 	\key b \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Viola"
-	\set Staff.midiInstrument = #"viola"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

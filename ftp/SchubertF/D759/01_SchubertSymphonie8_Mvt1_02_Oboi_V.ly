@@ -61,15 +61,6 @@ oboeNotesC = \relative c'' {
 MvtUnOboeI = \relative c'' {
 	\clef treble
 	\key b \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Oboe I"
-	\set Staff.midiInstrument = #"oboe"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
-
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
@@ -464,14 +455,6 @@ MvtUnOboeI = \relative c'' {
 MvtUnOboeII = \relative c'' {
 	\clef treble
 	\key b \minor
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Staff.instrumentName = #"Oboe II"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
-
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

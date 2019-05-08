@@ -50,7 +50,7 @@ global = {
 	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
-\include "markup.ly"
+\include "00_SchubertSymphonie8_markup.ly"
 \include "02_SchubertSymphonie8_Mvt2_01_Flauti_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_02_Oboi_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_03_ClarinettiA_C.ly"
@@ -65,6 +65,7 @@ global = {
 \include "02_SchubertSymphonie8_Mvt2_12_Viola_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_13_Violoncello_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_14_Basso_C.ly"
+\include "02_Voice_part_formatting.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
