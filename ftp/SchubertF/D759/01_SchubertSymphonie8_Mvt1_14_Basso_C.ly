@@ -9,11 +9,6 @@
 MvtUnBasso = \relative c {
 	\clef bass
 	\key b \minor
-%	\override TupletBracket #'bracket-visibility = ##f
-%	\override Hairpin.to-barline = ##f
-%	\set Staff.instrumentName = #"Basso."
-%	\set Staff.midiInstrument = #"contrabass"
-%	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	b2.(
 	\repeat volta 2 {

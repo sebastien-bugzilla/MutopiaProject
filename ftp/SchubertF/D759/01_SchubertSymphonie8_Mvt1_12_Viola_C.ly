@@ -9,11 +9,6 @@
 MvtUnViola = \relative c {
 	\clef alto
 	\key b \minor
-%	\override TupletBracket #'bracket-visibility = ##f
-%	\override Hairpin.to-barline = ##f
-%	\set Staff.instrumentName = #"Viola."
-%	\set Staff.midiInstrument = #"viola"
-%	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

@@ -9,11 +9,6 @@
 MvtUnOboiI = \relative c'' {
 	\clef treble
 	\key b \minor
-%	\override TupletBracket #'bracket-visibility = ##f
-%	\override Hairpin.to-barline = ##f
-%	\set Staff.instrumentName = #"Oboi."
-%	\set Staff.midiInstrument = #"oboe"
-%	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
@@ -403,9 +398,6 @@ MvtUnOboiI = \relative c'' {
 MvtUnOboiII = \relative c'' {
 	\clef treble
 	\key b \minor
-%	\override TupletBracket #'bracket-visibility = ##f
-%	\override Hairpin.to-barline = ##f
-%	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

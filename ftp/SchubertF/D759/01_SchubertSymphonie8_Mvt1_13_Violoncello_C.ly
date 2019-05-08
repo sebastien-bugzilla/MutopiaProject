@@ -9,11 +9,6 @@
 MvtUnVioloncello = \relative c {
 	\clef bass
 	\key b \minor
-%	\override TupletBracket #'bracket-visibility = ##f
-%	\override Hairpin.to-barline = ##f
-%	\set Staff.instrumentName = #"Violoncello."
-%	\set Staff.midiInstrument = #"cello"
-%	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	b2.(
 	\repeat volta 2 {

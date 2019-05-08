@@ -9,18 +9,6 @@
 MvtUnTimpaniEH = \relative c {
 	\clef bass
 	\key a \minor
-%	\override TupletBracket #'bracket-visibility = ##f
-%	\override Hairpin.to-barline = ##f
-%	\set Staff.instrumentName = \markup {
-%	    \center-column {
-%	        "Timpani"
-%	        \line {
-%	            "in H Fis"
-%	        }
-%	    }
-%	}
-%	\set Staff.midiInstrument = #"timpani"
-%	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {

@@ -9,11 +9,6 @@
 MvtUnFagottiI = \relative c {
 	\clef bass
 	\key b \minor
-%	\override TupletBracket #'bracket-visibility = ##f
-%	\override Hairpin.to-barline = ##f
-%	\set Score.alternativeNumberingStyle = #'numbers
-%	\set Staff.instrumentName = #"Fagotti."
-%	\set Staff.midiInstrument = #"bassoon"
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
@@ -432,11 +427,6 @@ MvtUnFagottiI = \relative c {
 MvtUnFagottiII = \relative c {
 	\clef bass
 	\key b \minor
-%	\override TupletBracket #'bracket-visibility = ##f
-%	\override Hairpin.to-barline = ##f
-%	\set Score.alternativeNumberingStyle = #'numbers
-%	\set Staff.instrumentName = #"Fagotti."
-%	\set Staff.midiInstrument = #"bassoon"
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
