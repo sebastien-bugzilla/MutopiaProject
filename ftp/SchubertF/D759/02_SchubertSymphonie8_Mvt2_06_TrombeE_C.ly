@@ -9,8 +9,6 @@
 MvtDeuxTrombeEI = \relative c'' {
 	\clef treble
 	\key c \major
-	\set Staff.instrumentName = #"Trombe in E."
-	\set Staff.midiInstrument = #"trumpet"
 	\transposition e
 % mesures 1 à 5
 	R4.*32
@@ -27,7 +25,7 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 31 à 35
 	
 	\mark \default
-	g4. -\tweak X-offset #-2.2 \f
+	g4.\f
 	g
 	g8 g4
 % mesures 36 à 40
@@ -69,7 +67,7 @@ MvtDeuxTrombeEI = \relative c'' {
 	
 	\mark \default
 % mesures 96 à 100
-	e4. -\tweak X-offset #-3.5 \ff
+	e4.\ff
 	\partcombineApart e \partcombineAutomatic
 	R4.
 	\partcombineApart e
@@ -155,24 +153,24 @@ MvtDeuxTrombeEI = \relative c'' {
 	c
 	R4.
 	r8 g-. g-.
-	c8 c4\fz
-	r8 c4\fz
+	c8 c4 -\tweak X-offset #-2.7 \fz
+	r8 c4 -\tweak X-offset #-2.7 \fz
 % mesures 246 à 250
-	r8 c4\fz
-	r8 g4\fz
-	r8 g4\fz
+	r8 c4 -\tweak X-offset #-2.7 \fz
+	r8 g4 -\tweak X-offset #-2.7 \fz
+	r8 g4 -\tweak X-offset #-2.7 \fz
 	r8 c-. c-.
-	c4.\ff
+	c4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
 	c
 	R4.*2
 	
-	g4.\ff
+	g4. -\tweak X-offset #-3.8 \ff
 	g \mark \default
 % mesures 256 à 260
 	e8 r r
 	R4.
-	g4.\pp(
+	g4. -\tweak X-offset #-3.5 \pp(
 	c,8) r r
 	g'4.(
 % mesures 261 à 265
@@ -207,8 +205,6 @@ MvtDeuxTrombeEI = \relative c'' {
 MvtDeuxTrombeEII = \relative c' {
 	\clef treble
 	\key c \major
-	\set Staff.instrumentName = #"Trombe in E."
-	\set Staff.midiInstrument = #"trumpet"
 	\transposition e
 % mesures 1 à 5
 	R4.*32
@@ -353,24 +349,24 @@ MvtDeuxTrombeEII = \relative c' {
 	c
 	R4.
 	r8 g-. g-.
-	c8 c4\fz
-	r8 c4\fz
+	c8 c4 -\tweak X-offset #-2.7 \fz
+	r8 c4 -\tweak X-offset #-2.7 \fz
 % mesures 246 à 250
-	r8 c4\fz
-	r8 g4\fz
-	r8 g4\fz
+	r8 c4 -\tweak X-offset #-2.7 \fz
+	r8 g4 -\tweak X-offset #-2.7 \fz
+	r8 g4 -\tweak X-offset #-2.7 \fz
 	r8 c-. c-.
-	c4.\ff
+	c4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
 	c
 	R4.*2
 	
-	g4.\ff
+	g4. -\tweak X-offset #-3.8 \ff
 	g \mark \default
 % mesures 256 à 260
 	c8 r r
 	R4.
-	g4.\pp(
+	g4. -\tweak X-offset #-3.5 \pp(
 	c8) r r
 	g4.(
 % mesures 261 à 265

@@ -9,11 +9,6 @@
 MvtDeuxCorniDI = \relative c'' {
 	\clef treble
 	\key c \major
-	\set Staff.instrumentName = #"Corni in E."
-	\set Staff.midiInstrument = #"French horn"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 	\transposition e
 % mesures 1 à 5
 	c4.(
@@ -214,19 +209,19 @@ MvtDeuxCorniDI = \relative c'' {
 	\partcombineApart c
 	f 
 	c8-. c-. g'-. 
-	c, \partcombineAutomatic r c\fz
-	r r c\fz
+	c, \partcombineAutomatic r c -\tweak X-offset #-2.7 \fz
+	r r c -\tweak X-offset #-2.7 \fz
 % mesures 246 à 250
-	r r d\fz
-	r r g\fz
-	r r g\fz
+	r r d -\tweak X-offset #-2.7 \fz
+	r r g -\tweak X-offset #-2.7 \fz
+	r r g -\tweak X-offset #-2.7 \fz
 	r \partcombineApart c, c \partcombineAutomatic
-	c4.\ff
+	c4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
 	\partcombineApart c \partcombineAutomatic
 	f8 r r
 	R4.
-	f4.\ff
+	f4. -\tweak X-offset #-3.8 \ff
 	d \mark \default
 % mesures 256 à 260
 	c8 r r
@@ -289,11 +284,6 @@ MvtDeuxCorniDI = \relative c'' {
 MvtDeuxCorniDII = \relative c' {
 	\clef treble
 	\key c \major
-	\set Staff.instrumentName = #"Corni in E."
-	\set Staff.midiInstrument = #"French horn"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 	\transposition e
 % mesures 1 à 5
 	e4.\pp\<
@@ -490,19 +480,19 @@ MvtDeuxCorniDII = \relative c' {
 	c
 	f
 	c8-. c-. g-.
-	c r c,\fz
-	r r c\fz
+	c r c, -\tweak X-offset #-2.7 \fz
+	r r c -\tweak X-offset #-2.7 \fz
 % mesures 246 à 250
-	r r c'\fz
-	r r g\fz
-	r r g\fz
+	r r c' -\tweak X-offset #-2.7 \fz
+	r r g -\tweak X-offset #-2.7 \fz
+	r r g -\tweak X-offset #-2.7 \fz
 	r c c
-	c,4.\ff
+	c,4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
 	c'
 	f,8 r r
 	R4.
-	d'4.\ff
+	d'4. -\tweak X-offset #-3.8 \ff
 	g, \mark \default
 % mesures 256 à 260
 	e8 r r

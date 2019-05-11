@@ -9,8 +9,6 @@
 MvtDeuxTromboni_basso = \relative c' {
 	\clef bass
 	\key e \major
-	\set Staff.instrumentName = #"Tromboni"
-	\set Staff.midiInstrument = #"trombone"
 % mesures 1 à 5
 	R4.*32
 % mesures 6 à 10
@@ -168,12 +166,12 @@ MvtDeuxTromboni_basso = \relative c' {
 	c b-. fis'~
 	fis16 e g8-. gis~
 	gis16 b a8-. c-.
-	c,4.\ff
+	c,4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
 	c
 	f,8 r r
 	R4.
-	b!\ff
+	b! -\tweak X-offset #-3.8 \ff
 	b \mark \default
 % mesures 256 à 260
 	cis!8 r r

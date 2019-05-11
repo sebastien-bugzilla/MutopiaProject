@@ -9,12 +9,6 @@
 MvtDeuxViolinoI = \relative c''' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Violino I."
-	\set Staff.midiInstrument = #"violin"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*2
 	
@@ -314,12 +308,12 @@ MvtDeuxViolinoI = \relative c''' {
 	a
 	g8 b4
 	a8 c4
-	<c, bes'>16\ff q8 q q16~
+	<c, bes'>16 -\tweak X-offset #-3.8 \ff q8 q q16~
 % mesures 251 à 255
 	q q8 q q16
 	<c a'>8-. r r
 	R4.
-	<fis! dis'!>16\ff <fis dis'>8 q q16~
+	<fis! dis'!>16 -\tweak X-offset #-3.8 \ff <fis dis'>8 q q16~
 	q q8 q q16 \mark \default
 % mesures 256 à 260
 	<e e'>8-. r r
@@ -373,7 +367,7 @@ MvtDeuxViolinoI = \relative c''' {
 % mesures 301 à 305
 	b16(\> dis fis a gis fis\!
 	e8) r r
-	b,16(_\dimmarkup dis fis a gis fis
+	b,16( -\tweak X-offset #-4. _\dimmarkup dis fis a gis fis
 	e8) r r
 	b16( dis fis a gis fis
 % mesures 306 à 310
@@ -384,5 +378,5 @@ MvtDeuxViolinoI = \relative c''' {
 	e r r
 % mesures 311 à 312
 	e r r
-	<gis, e'>4.^\arco\fermata\espressivo \bar "|."
+	<gis, e'>4. -\tweak X-offset #-5.5 ^\arco\fermata\espressivo \bar "|."
 }

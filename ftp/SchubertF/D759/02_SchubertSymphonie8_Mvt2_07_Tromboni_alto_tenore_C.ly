@@ -9,8 +9,6 @@
 MvtDeuxTromboni_alto = \relative c' {
 	\clef tenor
 	\key e \major
-	\set Staff.instrumentName = #"Tromboni"
-	\set Staff.midiInstrument = #"trombone"
 % mesures 1 à 5
 	R4.*32
 % mesures 6 à 10
@@ -152,19 +150,19 @@ MvtDeuxTromboni_alto = \relative c' {
 	\partcombineApart a8 e g~
 	g f4 \partcombineAutomatic
 	e8-. e-. dis-.
-	e r b\fz
-	r r b\fz
+	e r b -\tweak X-offset #-2.7 \fz
+	r r b -\tweak X-offset #-2.7 \fz
 % mesures 246 à 250
-	r r a\fz
-	r r dis!\fz
-	e d f\fz
+	r r a -\tweak X-offset #-2.7 \fz
+	r r dis! -\tweak X-offset #-2.7 \fz
+	e d f -\tweak X-offset #-2.7 \fz
 	r a-. e-.
-	e4.\ff
+	e4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
 	e
 	f8 r r
 	R4.
-	dis!4.\ff
+	dis!4. -\tweak X-offset #-3.8 \ff
 	dis \mark \default
 % mesures 256 à 260
 	e8 r r
@@ -200,8 +198,6 @@ MvtDeuxTromboni_alto = \relative c' {
 MvtDeuxTromboni_tenore = \relative c {
 	\clef tenor
 	\key e \major
-	\set Staff.instrumentName = #"Tromboni"
-	\set Staff.midiInstrument = #"trombone"
 % mesures 1 à 5
 	R4.*32
 % mesures 6 à 10
@@ -343,19 +339,19 @@ MvtDeuxTromboni_tenore = \relative c {
 	c8 e bes
 	a4.
 	a8-. g-. fis!-.
-	g r g\fz
-	r r g\fz
+	g r g -\tweak X-offset #-2.7 \fz
+	r r g -\tweak X-offset #-2.7 \fz
 % mesures 246 à 250
-	r r fis\fz
-	r r b\fz
-	b b d\fz
+	r r fis -\tweak X-offset #-2.7 \fz
+	r r b -\tweak X-offset #-2.7 \fz
+	b b d -\tweak X-offset #-2.7 \fz
 	r c-. bes-.
-	bes4.\ff
+	bes4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
 	bes
 	a8 r r
 	R4.
-	a4.\ff
+	a4. -\tweak X-offset #-3.8 \ff
 	a \mark \default
 % mesures 256 à 260
 	gis!8 r r

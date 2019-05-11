@@ -9,7 +9,6 @@
 MvtDeuxTimpaniEH = \relative c {
 	\clef bass
 	\key c \major
-	\set Staff.instrumentName = #"Timpani in H.Fis"
 % mesures 1 à 5
 	R4.*32
 % mesures 6 à 10
@@ -159,12 +158,12 @@ MvtDeuxTimpaniEH = \relative c {
 	r b\fz r
 	r b\fz r
 	r e e
-	e4.:32\ff
+	e4.:32 -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
 	e4:32 e8
 	R4.*2
 	
-	b4.:32\ff
+	b4.:32 -\tweak X-offset #-3.8 \ff
 	b: \mark \default
 % mesures 256 à 260
 	e8 r r

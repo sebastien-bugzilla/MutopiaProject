@@ -9,12 +9,6 @@
 MvtDeuxClarinettiAI = \relative c'' {
 	\clef treble
 	\key g \major
-	\set Staff.instrumentName = #"Clarinetti"
-	\set Staff.midiInstrument = #"clarinet"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
     \transposition a
 % mesures 1 à 5
 	R4.*13
@@ -49,7 +43,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	g4( fis8)
 	g8( a8.-> g16)
 	fis4.
-	\partcombineApart b,(\pp
+	\partcombineApart b,( -\tweak X-offset #-2.5 \pp
 % mesures 46 à 50
 	c
 	b8 g e)
@@ -199,7 +193,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	
 	
 	
-	\partcombineApart c4.\pp(
+	\partcombineApart c4. -\tweak X-offset #-2.4 \pp(
 % mesures 226 à 230
 	e->
 	d
@@ -239,7 +233,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 % mesures 256 à 260
 	g4.)(
 	ees)(
-	d16)(\! fis a c b a)
+	d16)_(\! fis a c b a)
 	ees4.(\fp\>
 	d4)\! r8
 % mesures 261 à 265
@@ -301,12 +295,6 @@ MvtDeuxClarinettiAI = \relative c'' {
 MvtDeuxClarinettiAII = \relative c'' {
 	\clef treble
 	\key g \major
-	\set Staff.instrumentName = #"Clarinetti"
-	\set Staff.midiInstrument = #"clarinet"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
     \transposition a
 % mesures 1 à 5
 	R4.*13
@@ -583,5 +571,5 @@ MvtDeuxClarinettiAII = \relative c'' {
 	b)~
 % mesures 311 à 312
 	b~
-	b\fermata\espressivo \bar "|."
+	b \bar "|."
 }

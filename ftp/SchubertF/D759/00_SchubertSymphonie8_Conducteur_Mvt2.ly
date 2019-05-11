@@ -40,17 +40,12 @@
 }
 %-----------------------------------------------------------------------
 global = {
-	\version "2.18.2"
 	\time 3/8
-%	\key e \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
 	\tempo "Andante con moto"
-	#(set-global-staff-size 12)
-	\set Score.doubleRepeatType = #":|.|:"
 }
 %-----------------------------------------------------------------------
 \include "00_SchubertSymphonie8_markup.ly"
+\include "00_SchubertSymphonie8_StaffOptionsC.ly"
 \include "02_SchubertSymphonie8_Mvt2_01_Flauti_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_02_Oboi_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_03_ClarinettiA_C.ly"
@@ -66,6 +61,7 @@ global = {
 \include "02_SchubertSymphonie8_Mvt2_13_Violoncello_C.ly"
 \include "02_SchubertSymphonie8_Mvt2_14_Basso_C.ly"
 \include "02_Voice_part_formatting.ly"
+%\include "02_formatage_mvt2.ly"
 %#######################################################################
 %#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
 %#######################################################################
@@ -95,34 +91,92 @@ global = {
 	}
 	\score {
 	    <<
-		    \new StaffGroup <<
-			    \new Staff << \global \partcombine \MvtDeuxFlautiI \MvtDeuxFlautiII >>
-			    \new Staff << \global \partcombine \MvtDeuxOboeI \MvtDeuxOboeII >>
-			    \new Staff << \global \partcombine \MvtDeuxClarinettiAI \MvtDeuxClarinettiAII >>
-			    \new Staff { \global \partcombine \MvtDeuxFagottiI \MvtDeuxFagottiII }
-			    \new Staff << \global \partcombine \MvtDeuxCorniDI \MvtDeuxCorniDII >>
-			    \new Staff << \global \partcombine \MvtDeuxTrombeEI \MvtDeuxTrombeEII >>
-			    \new Staff << \global \partcombine \MvtDeuxTromboni_alto \MvtDeuxTromboni_tenore >>
-			    \new Staff << \global \MvtDeuxTromboni_basso >>
-			    \new Staff << \global \MvtDeuxTimpaniEH >>
-			    \new Staff << \global \MvtDeuxViolinoI >>
-			    \new Staff << \global \MvtDeuxViolinoII >>
-			    \new Staff << \global \MvtDeuxViola >>
-			    \new Staff << \global \MvtDeuxVioloncello >>
-			    \new Staff << \global \MvtDeuxBasso >>
-		    >>
+	        \new StaffGroup <<
+			    \new Staff <<
+			        \new Voice {
+			            \conductorFormattingMvtII
+			        }
+			        \new Voice {
+			            \global \commonOptions \commonConductorOptions
+			            \nameFlauti
+			            \partcombine \MvtDeuxFlautiI \MvtDeuxFlautiII
+			        }
+%			        \new Voice {
+%			            \displayMvtII
+%			        }
+			    >>
+			    \new Staff { 
+			        \global \commonOptions \commonConductorOptions
+			        \nameOboi
+			        \partcombine \MvtDeuxOboeI \MvtDeuxOboeII 
+			    }
+			    \new Staff {
+			        \global \commonOptions \commonConductorOptions
+			        \nameClarinetti
+			        \partcombine \MvtDeuxClarinettiAI \MvtDeuxClarinettiAII
+			    }
+			    \new Staff {
+			        \global \commonOptions \commonConductorOptions
+			        \nameFagotti
+			        \partcombine \MvtDeuxFagottiI \MvtDeuxFagottiII
+			    }
+			    \new Staff { 
+			        \global \commonOptions \commonConductorOptions
+			        \nameCorniMvtI
+			        \partcombine \MvtDeuxCorniDI \MvtDeuxCorniDII
+			    }
+			    \new Staff { 
+			        \global \commonOptions \commonConductorOptions
+			        \nameTrombe
+			        \partcombine \MvtDeuxTrombeEI \MvtDeuxTrombeEII
+			    }
+			    \new GrandStaff \with { \nameTromboni } <<
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \partcombine \MvtDeuxTromboni_alto \MvtDeuxTromboni_tenore 
+			        }
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \MvtDeuxTromboni_basso 
+			        }
+		        >>
+		        \new Staff { 
+		            \global \commonOptions \commonConductorOptions
+		            \nameTimpaniC
+		            \MvtDeuxTimpaniEH 
+		        }
+		        \new GrandStaff \with { \nameViolin } <<
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \MvtDeuxViolinoI
+			        }
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \MvtDeuxViolinoII
+			        }
+		        >>
+		        \new Staff { 
+		            \global \commonOptions \commonConductorOptions
+		            \nameViolaC
+		            \MvtDeuxViola
+		        }
+		        \new GrandStaff \with { \nameBassi } <<
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \MvtDeuxVioloncello
+			        }
+			        \new Staff { 
+			            \global \commonOptions \commonConductorOptions
+			            \MvtDeuxBasso
+			        }
+		        >>
+			>>
 		>>
 		\header {
 			breakbefore = ##t
 		}
 		\layout {
-			%system-count = #20
-			\context {
-			    \Staff
-			    \override Hairpin.to-barline = ##f
-			    \override TupletBracket #'bracket-visibility = ##f
-			    alternativeNumberingStyle = #'numbers
-			}
+		    %system-count = #26
 		}
 	}
 }

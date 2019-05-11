@@ -9,12 +9,6 @@
 MvtDeuxBasso = \relative c {
 	\clef bass
 	\key e \major
-	\set Staff.instrumentName = #"Basso."
-	\set Staff.midiInstrument = #"contrabass"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	e8-.^\pizz\pp dis-. cis-. 
 	b-. a-. fis-. 
@@ -246,7 +240,7 @@ MvtDeuxBasso = \relative c {
 % mesures 191 à 195
 	r a,-.\fp c-.
 	e r r
-	cis!(^\arco a fis'
+	cis!( -\tweak X-offset #-3.5 ^\arco a fis'
 	e) r r
 	cis(_\crescmarkup a fis'
 % mesures 196 à 200
@@ -292,7 +286,7 @@ MvtDeuxBasso = \relative c {
 	
 % mesures 236 à 240
 	\mark \default
-	a'8-.\ff^\arco a,-. e'~
+	a'8-.\ff -\tweak X-offset #-5.0 ^\arco a,-. e'~
 	e a,-. a'~
 	a d,-. f~
 	f e-. b'~
@@ -307,12 +301,12 @@ MvtDeuxBasso = \relative c {
 	c b-. fis'~
 	fis16 e g,8-. gis~
 	gis16 b a8-. c
-	c,32[\ff e g bes] c[ bes g e] c[ e g bes]
+	c,32[ -\tweak X-offset #-3.8 \ff e g bes] c[ bes g e] c[ e g bes]
 % mesures 251 à 255
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
 	R4.
-	b,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
+	b,!32[ -\tweak X-offset #-3.8 \ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r
@@ -321,7 +315,7 @@ MvtDeuxBasso = \relative c {
 	r e,-.\fp g-.
 	b-. r r 
 % mesures 261 à 265
-	gis8(\p^\arco e cis'
+	gis8(\p -\tweak X-offset #-3. ^\arco e cis'
 	b8) r r
 	gis(_\crescmarkup e cis'
 	b8) r r
@@ -354,7 +348,7 @@ MvtDeuxBasso = \relative c {
 	
 	
 	
-	b8\pizz\pp r r
+	b8 -\tweak X-offset #-4 \pizz\pp r r
 	e r r
 % mesures 301 à 305
 	b r r

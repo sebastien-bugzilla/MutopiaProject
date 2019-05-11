@@ -9,12 +9,6 @@
 MvtDeuxVioloncello = \relative c {
 	\clef bass
 	\key e \major
-	\set Staff.instrumentName = #"Violoncello."
-	\set Staff.midiInstrument = #"cello"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*2
 	
@@ -82,7 +76,7 @@ MvtDeuxVioloncello = \relative c {
 	gis(_\crescmarkup e cis'
 	b8) r r
 % mesures 56 à 60
-	e'^\pizz\pp-. dis-. cis-. 
+	e' -\tweak X-offset #-5.5 ^\pizz\pp-. dis-. cis-. 
 	b-. a-. fis-. 
 	e-. r r 
 	R4.*13
@@ -245,13 +239,13 @@ MvtDeuxVioloncello = \relative c {
 	fis'8\pp^\pizz-. gis-. a-.
 % mesures 191 à 195
 	r a,-.\fp c-.
-	e16(^\arco gis b d cis b
+	e16( -\tweak X-offset #-3.5 ^\arco gis b d cis b
 	a8) a,( fis'
 	e) r r
 	cis(_\crescmarkup a fis'
 % mesures 196 à 200
 	e) r r \clef tenor
-	a'^\pizz\pp-. gis-. fis-.
+	a' -\tweak X-offset #-5.5 ^\pizz\pp-. gis-. fis-.
 	e-. d-. b-.
 	a-. r r
 	R4.*13
@@ -302,12 +296,12 @@ MvtDeuxVioloncello = \relative c {
 	g[ fis e fis] dis![ fis b c] b[ a g fis]
 	e[ fis g e] d[ g b c] d[ f e d]
 	c[ b a gis!] e'[ d c b] c[ bes g e]
-	c[\ff e g bes] c[ bes g e] c[ e g bes]
+	c[ -\tweak X-offset #-3.8 \ff e g bes] c[ bes g e] c[ e g bes]
 % mesures 251 à 255
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
 	R4.
-	b,32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
+	b,32[ -\tweak X-offset #-3.8 \ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r \clef tenor
@@ -349,7 +343,7 @@ MvtDeuxVioloncello = \relative c {
 	
 	
 	
-	b'8\pizz\pp r r
+	b'8 -\tweak X-offset #-4 \pizz\pp r r
 	e r r
 % mesures 301 à 305
 	b r r
@@ -360,10 +354,10 @@ MvtDeuxVioloncello = \relative c {
 % mesures 306 à 310
 	e8) r r
 	R4.
-	e8^\pizz-. cis-. b-.
+	e8 -\tweak X-offset #-4 ^\pizz-. cis-. b-.
 	a-. gis-. fis-.
 	e r r 
 % mesures 311 à 312
-	e r r^\arco
-	<e b'>4.\fermata\espressivo \bar "|."
+	e r r
+	<e b'>4. -\tweak X-offset #-5.5 ^\arco\fermata\espressivo \bar "|."
 }

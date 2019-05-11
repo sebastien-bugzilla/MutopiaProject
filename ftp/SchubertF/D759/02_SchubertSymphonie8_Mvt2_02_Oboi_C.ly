@@ -9,12 +9,6 @@
 MvtDeuxOboeI = \relative c'' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Oboi"
-	\set Staff.midiInstrument = #"oboe"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*15
 % mesures 6 à 10
@@ -64,7 +58,7 @@ MvtDeuxOboeI = \relative c'' {
 	
 % mesures 51 à 55
 	
-	\partcombineApart b8(\p gis e
+	\partcombineApart b8( -\tweak X-offset #-1.5 \p gis e
 	fis) r r
 	b8(-> cis16_\crescmarkup b gis e
 	fis8) r r \partcombineAutomatic
@@ -261,7 +255,7 @@ MvtDeuxOboeI = \relative c'' {
 	e,) e8 e e16(
 	f4.)(
 	a8 f e)
-	\partcombineChords dis!16\ff dis8 dis dis16(
+	\partcombineChords dis!16 -\tweak X-offset #-3.5 \ff dis8 dis dis16(
 	fis) fis8 fis fis16( \mark \default
 % mesures 256 à 260
 	e4.)\>(
@@ -316,12 +310,6 @@ MvtDeuxOboeI = \relative c'' {
 MvtDeuxOboeII = \relative c'' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Oboi"
-	\set Staff.midiInstrument = #"Oboe"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*15
 % mesures 6 à 10
@@ -568,7 +556,7 @@ MvtDeuxOboeII = \relative c'' {
 	bes,) bes8 bes bes16(
 	a4.)\>~
 	a\p
-	a16\ff a8 a a16~
+	a16 -\tweak X-offset #-3.5 \ff a8 a a16~
 	a a8 a a16( \mark \default
 % mesures 256 à 260
 	gis4.)\>(

@@ -9,12 +9,6 @@
 MvtDeuxViola = \relative c'' {
 	\clef alto
 	\key e \major
-	\set Staff.instrumentName = #"Viola."
-	\set Staff.midiInstrument = #"violin"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*2
 	
@@ -44,14 +38,14 @@ MvtDeuxViola = \relative c'' {
 	}>> r r
 % mesures 17 à 20
 	R4.
-	b4.(
+	b4._(
 	c 
 	d8 b g)
 % mesures 21 à 25
 	a(\> b c\!
 	b) r r
 	R4.
-	b4.(
+	b4._(
 	c
 % mesures 26 à 30
 	d8 b g)
@@ -235,14 +229,14 @@ MvtDeuxViola = \relative c'' {
 	}>> r r
 % mesures 158 à 160
 	R4.
-	b4.\pp(
+	b4.\pp_(
 	c
 % mesures 161 à 165
 	d8 b g)
 	a(\> b c\!
 	b) r r
 	R4.
-	b4.(
+	b4._(
 % mesures 166 à 170
 	c
 	d8 b g)
@@ -344,12 +338,12 @@ MvtDeuxViola = \relative c'' {
 	g[ fis e fis] dis[ fis b c] b[ a g fis]
 	e[ fis g e] d[ g b c] d[ f e d]
 	c[ b a gis!] e'[ d c b] c[ bes g e]
-	c[\ff e g bes] c[ bes g e] c[ e g bes]
+	c[ -\tweak X-offset #-4.2 \ff e g bes] c[ bes g e] c[ e g bes]
 % mesures 251 à 255
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
 	R4.
-	b32[\ff dis! fis! a] b[ a fis dis] b[ dis fis a]
+	b32[ -\tweak X-offset #-3.8 \ff dis! fis! a] b[ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r
@@ -379,7 +373,7 @@ MvtDeuxViola = \relative c'' {
 	
 	
 	
-	ees16\pp(^\arco g bes des c bes
+	ees16\pp( -\tweak X-offset #-4 ^\arco g bes des c bes
 	aes8) r r
 % mesures 291 à 295
 	R4.*8
@@ -387,7 +381,7 @@ MvtDeuxViola = \relative c'' {
 	
 	
 	
-	<a dis>8\pp^\pizz r r
+	<a dis>8\pp -\tweak X-offset #-4.2 ^\pizz r r
 	<gis e'> r r
 % mesures 301 à 305
 	<a dis> r r
@@ -403,5 +397,5 @@ MvtDeuxViola = \relative c'' {
 	<e b'> r r
 % mesures 311 à 312
 	<e b'> r r
-	<e b'>4.^\arco\fermata\espressivo \bar "|."
+	<e b'>4. -\tweak X-offset #-5.5 ^\arco\fermata\espressivo \bar "|."
 }

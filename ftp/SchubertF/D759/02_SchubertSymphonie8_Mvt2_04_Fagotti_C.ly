@@ -9,11 +9,6 @@
 MvtDeuxFagottiI = \relative c' {
 	\clef bass
 	\key e \major
-	\set Staff.instrumentName = #"Fagot I"
-	\set Staff.midiInstrument = #"bassoon"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	b4.(\pp\<
 	dis\>
@@ -60,7 +55,7 @@ MvtDeuxFagottiI = \relative c' {
 	e4( dis8)
 	e8( fis8.-> e16)
 	dis4. \clef bass
-	\partcombineApart e,8(_\pp e' dis
+	\partcombineApart e,8_(_\pp e' dis
 % mesures 46 à 50
 	cis a cis16 dis
 	e8 e, fis)
@@ -68,7 +63,7 @@ MvtDeuxFagottiI = \relative c' {
 	cis,) \clef tenor \partcombineAutomatic
 	c'4.
 % mesures 51 à 55
-	b16\!( dis fis a gis fis
+	b16\!_( dis fis a gis fis
 	e8) r r \clef bass
 	dis4.(->
 	e8) r r
@@ -159,7 +154,7 @@ MvtDeuxFagottiI = \relative c' {
 	\clef tenor
 	\partcombineApart c4.(_\fp_\>
 % mesures 156 à 160
-	b16\!)( dis fis a gis fis 
+	b16\!)_( dis fis a gis fis 
 	e8) r r \partcombineAutomatic
 	R4.*4
 	
@@ -244,19 +239,19 @@ MvtDeuxFagottiI = \relative c' {
 	c b-. fis'~
 	fis16 e g,8-. gis~
 	gis16 b a8-. c-.
-	c,32[\ff e g bes] c[ bes g e] c[ e g bes]
+	c,32[ -\tweak X-offset #-3.5 \ff e g bes] c[ bes g e] c[ e g bes]
 % mesures 251 à 255
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f'4.~
 	f
-	b,,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
+	b,,!32[ -\tweak X-offset #-3.5 \ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis'!4.(
 	g')(
 	fis4) r8 \clef tenor
 	\partcombineApart c4._\fp(_\>
-	b16)\!( dis fis a gis fis
+	b16)\!_( dis fis a gis fis
 % mesures 261 à 265
 	e8) r r \clef bass \partcombineAutomatic
 	dis4.(->
@@ -284,11 +279,11 @@ MvtDeuxFagottiI = \relative c' {
 % mesures 281 à 285
 	R4.*5
 % mesures 286 à 290
-	ees4.(
+	\clef tenor ees4.(
 	f
 	ees4 f8
 	ees4.~
-	ees4) r8
+	ees4) r8 \clef bass
 % mesures 291 à 295
 	R4.*10
 % mesures 296 à 300
@@ -312,11 +307,6 @@ MvtDeuxFagottiI = \relative c' {
 MvtDeuxFagottiII = \relative c' {
 	\clef bass
 	\key e \major
-	\set Staff.instrumentName = #"Fagot II"
-	\set Staff.midiInstrument = #"bassoon"
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	b4.(\pp\<
 	a\>
@@ -547,12 +537,12 @@ MvtDeuxFagottiII = \relative c' {
 	c b-. fis'~
 	fis16 e g,8-. gis~
 	gis16 b a8-. c-.
-	c,32[\ff e g bes] c[ bes g e] c[ e g bes]
+	c,32[ -\tweak X-offset #-3.5 \ff e g bes] c[ bes g e] c[ e g bes]
 % mesures 251 à 255
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
 	R4.
-	b,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
+	b,!32[ -\tweak X-offset #-3.5 \ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8\> r r\!
@@ -587,11 +577,11 @@ MvtDeuxFagottiII = \relative c' {
 % mesures 281 à 285
 	R4.*5
 % mesures 286 à 290
-	c4.\ppp
+	\clef tenor c4.\ppp
 	des
 	c4.\<
 	des4.\>(
-	c4)\! r8
+	c4)\! r8 \clef bass
 % mesures 291 à 295
 	R4.*10
 % mesures 296 à 300

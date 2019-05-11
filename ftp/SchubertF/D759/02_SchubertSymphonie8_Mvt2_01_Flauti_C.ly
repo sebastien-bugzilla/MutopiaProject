@@ -9,12 +9,6 @@
 MvtDeuxFlautiI = \relative c'' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Flauti"
-	\set Staff.midiInstrument = #"flute"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*13
 % mesures 6 à 10
@@ -69,7 +63,7 @@ MvtDeuxFlautiI = \relative c'' {
 	c(\fp\>
 % mesures 51 à 55
 	b4)\! r8
-	\partcombineApart b'(-\tweak X-offset #-2.5 \p gis e
+	\partcombineApart b'(-\tweak X-offset #-1.5 \p gis e
 	b) r r
 	b'->( cis16_\crescmarkup b gis e
 	b8) r r
@@ -313,12 +307,6 @@ MvtDeuxFlautiI = \relative c'' {
 MvtDeuxFlautiII = \relative c'' {
 	\clef treble
 	\key e \major
-	\set Staff.instrumentName = #"Flauti"
-	\set Staff.midiInstrument = #"flute"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
 % mesures 1 à 5
 	R4.*13
 % mesures 6 à 10
