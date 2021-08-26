@@ -49,7 +49,6 @@ partOptions = {
 		\Staff
 		\consists #Measure_counter_engraver
 	}
-	
 }
 %layoutCueVoice = \with {
 %}
