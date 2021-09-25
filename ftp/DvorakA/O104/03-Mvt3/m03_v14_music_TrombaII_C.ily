@@ -139,8 +139,8 @@ musicTrombaIIMvtIII = \relative c'' {
 	c8 r c r
 	c r c r
 	c2\ff->
-	g'->
-	fis->
+	g'
+	fis
 % Bars 221 to 225
 	g4 g8 g \mark \default
 	d r r4
@@ -261,9 +261,9 @@ musicTrombaIIMvtIII = \relative c'' {
 % Bars 421 to 425
 	d2->\f
 	g->
-	g->~
+	g~
 	g
-	g2_\fzdim->~
+	g2->~
 % Bars 426 to 430
 	g~\>
 	g~\p
@@ -279,7 +279,7 @@ musicTrombaIIMvtIII = \relative c'' {
 	
 	
 	\mark \default
-	r4 d^\soleconsord\pp
+	r4 d\pp
 	g, d'8-. d-.
 % Bars 451 to 455
 	g,4 d'
@@ -311,7 +311,7 @@ musicTrombaIIMvtIII = \relative c'' {
 	\mark \default
 	R2*4
 % Bars 501 to 505
-	b,2\ff-^^\senzasord
+	b,2\ff-^
 	d-^
 	f!-^
 	f4-^ f8 ees16-.-^ f-.-^

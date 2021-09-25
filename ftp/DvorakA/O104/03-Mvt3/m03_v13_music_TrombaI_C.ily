@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombaIIMvtIII = \relative c'' {
+musicTrombaIMvtIII = \relative c'' {
 	\clef treble
 	\key a \minor
 	\transposition e
@@ -75,7 +75,7 @@ musicTrombaIIMvtIII = \relative c'' {
 	
 	
 	
-	c,4\f r
+	c4\f r
 % Bars 106 to 110
 	c r
 	c r
@@ -124,26 +124,26 @@ musicTrombaIIMvtIII = \relative c'' {
 % Bars 201 to 205
 	
 	
-	r4 r8 f8\ff \mark \default
-	d8. d16 d8 r
-	d8. d16 d8 r
+	r4 r8 \once \partCombineApart f,8 \mark \default
+	f8. f16 f8 r
+	bes8. f16 f8 r
 % Bars 206 to 210
 	R2*8
 % Bars 211 to 215
 	
 	
 	
-	c8.\f c16 c8 r
+	c'8.\f c16 c8 r
 	c8. c16 c8 r
 % Bars 216 to 220
 	c8 r c r
 	c r c r
 	c2\ff->
-	g'->
+	\partCombineApart g->
 	fis->
 % Bars 221 to 225
 	g4 g8 g \mark \default
-	d r r4
+	d' \partCombineAutomatic r r4
 	R2*31
 % Bars 226 to 230
 	
@@ -159,12 +159,12 @@ musicTrombaIIMvtIII = \relative c'' {
 	
 	
 	
-	g8.\f g32 g \tuplet 3/2 4 {g8 g g}
+	g,8.\f g32 g \tuplet 3/2 4 {g8 g g}
 	g8. g32 g \tuplet 3/2 4 {g8 g g}
 % Bars 256 to 260
 	g8. g32 g \tuplet 3/2 4 {g8 g g}
-	d8. d32 d \tuplet 3/2 4 {d8 d d}
-	d4 g8. g32 g
+	d'8. d32 d \tuplet 3/2 4 {d8 d d}
+	d4 g,8. g32 g
 	\tuplet 3/2 4 {g8 g g} g-. g-.
 	d r d d \mark \default
 % Bars 261 to 265
@@ -241,7 +241,7 @@ musicTrombaIIMvtIII = \relative c'' {
 	g4. g16 g
 	g4. g16 g
 	g4. g16 g
-	g8 r r4
+	b8 r r4
 % Bars 386 to 390
 	R2*27
 % Bars 391 to 395
@@ -259,15 +259,15 @@ musicTrombaIIMvtIII = \relative c'' {
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	d2->\f
+	d,2->\f
 	g->
-	g->~
-	g
-	g2_\fzdim->~
+	a->
+	b4-> a->
+	d2_\fzdim->~
 % Bars 426 to 430
-	g~\>
-	g~\p
-	g4. r8
+	d~\>
+	d~\p
+	d4. r8
 	R2*20
 % Bars 431 to 435
 	
@@ -279,19 +279,19 @@ musicTrombaIIMvtIII = \relative c'' {
 	
 	
 	\mark \default
-	r4 d^\soleconsord\pp
-	g, d'8-. d-.
+	r4 \partCombineApart d,^\soleconsord
+	g \tuplet 3/2 4 {a8--( b-- a--)}
 % Bars 451 to 455
-	g,4 d'
-	g, d'8-. d-.
-	g,4 d'8-. d-.
-	b4 d8-. d-.
-	b8(-- d-- g-- b,--)
+	g4 d
+	g \tuplet 3/2 4 {a8(-- b-- a--)}
+	g4 \tuplet 3/2 4 {a8(-- b-- a--)}
+	g4 \tuplet 3/2 4 {a8(-- b-- a--)} \partCombineAutomatic
+	g8(-- a-- b-- g--)
 % Bars 456 to 460
-	d(-- g-- b,-- d--)
-	g2\ppp~
-	g~
-	g8 r r4
+	a(-- b-- g-- a--)
+	b2\ppp~
+	b~
+	b8 r r4
 	R2*37
 % Bars 461 to 465
 	
@@ -311,7 +311,7 @@ musicTrombaIIMvtIII = \relative c'' {
 	\mark \default
 	R2*4
 % Bars 501 to 505
-	b,2\ff-^^\senzasord
+	d,2\ff-^^\senzasord
 	d-^
 	f!-^
 	f4-^ f8 ees16-.-^ f-.-^
@@ -324,8 +324,8 @@ musicTrombaIIMvtIII = \relative c'' {
 	g8[ r16 g g8 r16 g]
 % Bars 511 to 515
 	g8 r a r
-	g r ees r
-	g r r4
+	bes r c r
+	b! r r4
 	g8 r g r
 	g r r4
 % Bar 516
