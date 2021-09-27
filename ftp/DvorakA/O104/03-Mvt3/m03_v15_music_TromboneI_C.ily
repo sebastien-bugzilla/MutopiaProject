@@ -31,7 +31,7 @@ musicTromboneIMvtIII = \relative c' {
 	cis4. r8
 	fis4 fis
 % Bars 46 to 50
-	b, b
+	b, \once \partCombineApart b
 	d8-. e-. d-. cis-.
 	d4. r8 \mark \default
 	R2*31
@@ -50,13 +50,13 @@ musicTromboneIMvtIII = \relative c' {
 	
 	
 	
-	d4\f d \mark \default
+	d4\f d
 % Bars 81 to 85
 	b4.-> b8
 	b4 d8 fis
 	cis4. r8
 	e4 b
-	b b
+	b \once \partCombineApart b
 % Bars 86 to 90
 	d8-. e-. d-. cis-.
 	d\ff r fis r
@@ -129,7 +129,7 @@ musicTromboneIMvtIII = \relative c' {
 % Bars 201 to 205
 	
 	
-	r4 r8 a\ff \mark \default
+	r4 r8 \once \partCombineApart a \mark \default
 	a8. a16 a8 r
 	d8. a16 a8 r
 % Bars 206 to 210
@@ -186,7 +186,7 @@ musicTromboneIMvtIII = \relative c' {
 	d8 r r4
 	d8_\dimmarkup r r4\>
 	d8 r r4\!
-	b8\p r r4
+	\once \partCombineApart b8 r r4
 % Bars 266 to 270
 	R2*15
 % Bars 271 to 275
@@ -307,11 +307,11 @@ musicTromboneIMvtIII = \relative c' {
 % Bars 476 to 480
 	
 % Bars 481 to 485
-	b,2\ppp~
+	\partCombineChords b,2\ppp~
 	b~
 	b~
-	b~
-	b8 r r4
+	b^~
+	b8 \partCombineAutomatic r r4
 % Bars 486 to 490
 	R2*11
 % Bars 491 to 495
