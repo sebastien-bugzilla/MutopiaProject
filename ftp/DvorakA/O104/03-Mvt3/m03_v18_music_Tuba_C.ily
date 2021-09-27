@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTromboneIIIMvtIII = \relative c {
+musicTubaMvtIII = \relative c, {
 	\clef bass
 	\key b \minor
 %	\transposition a
@@ -32,8 +32,8 @@ musicTromboneIIIMvtIII = \relative c {
 	fis4 fis
 % Bars 46 to 50
 	e cis
-	fis fis,8-. fis-. 
-	b4. r8 \mark \default
+	fis fis8-. fis-. 
+	b,4. r8 \mark \default
 	R2*31
 % Bars 51 to 55
 	
@@ -68,22 +68,22 @@ musicTromboneIIIMvtIII = \relative c {
 	e r e r
 	e r r4
 	R2
-	e8\f r r4
+	R
 % Bars 96 to 100
 	R2*3
 	
 	
-	e2->\f~
-	e
+	R2*2
+	
 % Bars 101 to 105
 	R2*2
 	
-	e2\f->~
-	e
-	e4 r
+	R2*5
+	
+	
 % Bars 106 to 110
-	e r 
-	e8 r r4
+	
+	
 	R2*3
 	
 	\mark \default
@@ -129,19 +129,19 @@ musicTromboneIIIMvtIII = \relative c {
 % Bars 201 to 205
 	
 	
-	r4 r8 a,\ff \mark \default
-	d8. d16 d8 r
+	r4 r8 a\ff \mark \default
+	d,8. d16 d8 r
 	fis8. d16 d8 r
 % Bars 206 to 210
 	R2*2
 	
-	fis2\f~
-	fis
+	R2*2
+	
 	R2*2
 % Bars 211 to 215
 	
-	fis2\f~
-	fis
+	R2*2
+	
 	e8.\f e16 e8 r
 	g8. e16 e8 r
 % Bars 216 to 220
@@ -161,13 +161,13 @@ musicTromboneIIIMvtIII = \relative c {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	c2\pp~
+	c'2\pp~
 	c
-	b(
+	e,(
 	cis!
-	cis
+	fis
 % Bars 246 to 250
-	d4) r
+	b,4) r
 	R2*7
 	
 	
@@ -180,14 +180,14 @@ musicTromboneIIIMvtIII = \relative c {
 	e4.-> e8
 % Bars 256 to 260
 	d4 b8 d
-	fis fis ais cis,
-	fis4 a!
+	fis fis ais cis
+	fis,4 a!
 	g e8 cis
 	fis fis fis fis \mark \default
 % Bars 261 to 265
 	b,\f r r4
 	b8 r r4
-	b8_\dimmarkup r r4\>
+	b8 r r4\>
 	b8 r r4\!
 	b8\p r r4
 % Bars 266 to 270
@@ -280,7 +280,7 @@ musicTromboneIIIMvtIII = \relative c {
 	gis'->
 	e->~
 	e
-	b->_\fzdim~
+	b->~
 % Bars 426 to 430
 	b~\>
 	b~\pp
@@ -310,11 +310,11 @@ musicTromboneIIIMvtIII = \relative c {
 % Bars 476 to 480
 	
 % Bars 481 to 485
-	d2\ppp~
-	d~
-	d(
-	e)
-	b8 r r4
+	e2\ppp~
+	e~
+	e~
+	e(
+	b8) r r4
 % Bars 486 to 490
 	R2*11
 % Bars 491 to 495
