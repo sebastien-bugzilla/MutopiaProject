@@ -38,6 +38,14 @@ espr = \markup { "<" ">"}
 pmorendo=^\markup {\dynamic p \italic morendo}
 ppleggiero=^\markup {\dynamic pp \italic leggiero}
 pconsord=^\markup {\dynamic p \italic {con sord.}}
+moltocresc=^\markup {\italic {molto cresc.}}
+mfrisoluto=^\markup {\dynamic mf \italic risoluto}
+mfdolce=^\markup {\dynamic mf \italic dolce}
+mpdolcecantabile=^\markup {\dynamic mp \italic {dolce cantabile}}
+ffmoltoespressivo=^\markup {\dynamic ff \italic {molto espressivo}}
+fpspiccato=^\markup {\dynamic fp \italic spiccato}
+ppmoltocresc=^\markup {\dynamic pp \italic {molto cresc.}}
+ritemoltocresc=^\markup {\italic {rit. e molto cresc.}}
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
@@ -79,6 +87,8 @@ pocomarcato=^\markup {\italic {poco marcato}}
 senzasord=^\markup {\italic {senza sord.}}
 solo=^\markup {Solo}
 soleconsord=^\markup {Sole con sord.}
+senzaottava=^\markup {\italic {senza \concat { 8 \super va}}}
+appassionato=^\markup {\italic appassionato}
 
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
@@ -125,7 +135,11 @@ mmrPos = #(define-music-function
 )
 
 ffcolottava = \once \override TextSpanner.bound-details.left.text = \markup {
-	\dynamic ff \italic {col 8va bassa ad libitum}
+	\dynamic ff \italic {col \concat { 8 \super va} bassa ad libitum}
+}
+
+fzconottavabassaadlibitum = \once \override TextSpanner.bound-details.left.text = \markup {
+	\dynamic fz \italic {con \concat { 8 \super va} bassa ad libitum}
 }
 
 setSextolet = {
@@ -136,3 +150,15 @@ setSextolet = {
 unsetSextolet = {
 	\set subdivideBeams = ##f
 }
+
+separateSextolet = {
+	\set Voice.beamExceptions = #'()
+	\set Voice.baseMoment = #(ly:make-moment 1/8)
+	\set Voice.beatStructure = 1,1,1,1
+}
+unseparateSextolet = {
+	\unset Voice.beamExceptions 
+	\unset Voice.baseMoment 
+	\unset Voice.beatStructure
+}
+
