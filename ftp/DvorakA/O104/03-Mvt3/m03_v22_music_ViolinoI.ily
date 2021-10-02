@@ -373,25 +373,20 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 411 to 415
 	
 	\mark \default
-	c,,2:16\mp
-	cis!:_\crescmarkup
-	b:\<
+	R2*24
+	
+	
 % Bars 416 to 420
-	ais:
-	a!:\!
-	gis4: gis':
-	<dis b'>4\f r
-	<e ais>8-. q-. r4
+	
 % Bars 421 to 425
-	<dis b'>8 r r4
-	R2*15
+	
 % Bars 426 to 430
 	
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
-	fis4(\p b
+	fis,,4(\p b
 	fis\> b
 	fis b
 	fis b\!
