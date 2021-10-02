@@ -295,46 +295,26 @@ musicViolinoIMvtIII = \relative c'' {
 	
 	
 	\mark \default
-	b,4\pp r8 ais
+	R2*16
 % Bars 316 to 320
-	b4 r8 ais-.
-	b-. r c-. r
-	d-. r c-. b-.
-	d4 r8 cis!
-	d4 r8 cis-.
+	
 % Bars 321 to 325
-	d-. r e-. r
-	fis-. r e-.( d-.)
-	cis2\pp~
-	cis~
-	cis~
+	
 % Bars 326 to 330
-	cis
-	dis~
-	dis
-	ees~
-	ees \mark \default
+	
+	
+	
+	
+	\mark \default
 % Bars 331 to 335
-	\tuplet 6/4 4 {e!16\pp( cis! e cis e cis  e cis e cis e cis 
-	e cis e cis e cis  e cis e cis e cis)}
-	\tuplet 12/8 2 {<cis e>2.:16
-	<cis e>2.:16}
-	\tuplet 6/4 4 {cis16( eis cis eis cis eis  cis eis cis eis cis eis
+	R2*16
 % Bars 336 to 340
-	cis eis cis eis cis eis   cis eis cis eis cis eis)}
-	\tuplet 12/8 2 {<cis eis>2.:16
-	q:}
-	\tuplet 6/4 4 {d16( f d f d f  d f d f d f
-	d f d f d f   d f d f d f)}
+	
 % Bars 341 to 345
-	\tuplet 12/8 2 {f2.:16
-	f:}
-	\tuplet 6/4 4 {d16( f d f d f  d f d f d f
-	d f_\crescmarkup d f d f   d f d f d f)
-	d(\< f d f d f   d f d f d f
+	
 % Bars 346 to 350
-	d f d f d f  d f d f d f)\!} \bar "||" \key b \major
-	dis''4_\ptranquilloemoltoespressivo^\solo--( dis~--
+	\bar "||" \key b \major
+	dis'4_\ptranquilloemoltoespressivo^\solo--( dis~--
 	dis8 e dis e)
 	fis4( b
 	fis b)
