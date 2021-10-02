@@ -154,18 +154,18 @@
 %				\nameStaffXIIMvtIII
 %				\musicTriangoloMvtIII
 %			}
-			\new Staff {
-				\timeMvtIII \generalOptions \conductorOptions
-				\nameStaffXIIIMvtIII
-				\musicSoloCelloMvtIII
-			}
+%			\new Staff {
+%				\timeMvtIII \generalOptions \conductorOptions
+%				\nameStaffXIIIMvtIII
+%				\musicSoloCelloMvtIII
+%			}
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIVMvtIII } <<
-%					\new Staff {
-%						\timeMvtIII \generalOptions \conductorOptions
-%						\nameStaffXIVMvtIII
-%						\musicViolinoIMvtIII
-%					}
+					\new Staff {
+						\timeMvtIII \generalOptions \conductorOptions
+						\nameStaffXIVMvtIII
+						\musicViolinoIMvtIII
+					}
 %					\new Staff {
 %						\timeMvtIII \generalOptions \conductorOptions
 %						\nameStaffXVMvtIII

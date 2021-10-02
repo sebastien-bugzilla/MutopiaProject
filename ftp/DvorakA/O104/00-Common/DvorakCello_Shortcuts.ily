@@ -46,6 +46,9 @@ ffmoltoespressivo=^\markup {\dynamic ff \italic {molto espressivo}}
 fpspiccato=^\markup {\dynamic fp \italic spiccato}
 ppmoltocresc=^\markup {\dynamic pp \italic {molto cresc.}}
 ritemoltocresc=^\markup {\italic {rit. e molto cresc.}}
+pmarcato=^\markup {\dynamic p \italic marcato}
+ptranquilloemoltoespressivo=^\markup {\dynamic p \italic {tranquillo e molto espressivo}}
+
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
@@ -57,7 +60,7 @@ ffzD = \tweak DynamicText.self-alignment-X #0 #(make-dynamic-script (markup #:dy
 ppdimD = \tweak DynamicText.self-alignment-X #0 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dim."))
 fzdimD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim."))
 
-% expression
+% expression & indications
 
 IImutainflautopicc=^\markup { \smaller { [II. muta in Flauto picc.] } }
 mutainflautoII=^\markup { \smaller { [muta in Flauto II.] } }
@@ -89,6 +92,9 @@ solo=^\markup {Solo}
 soleconsord=^\markup {Sole con sord.}
 senzaottava=^\markup {\italic {senza \concat { 8 \super va}}}
 appassionato=^\markup {\italic appassionato}
+arcoconsord=^\markup {arco con sord.}
+senzasord=^\markup {senza sord.}
+tutti=^\markup {Tutti}
 
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
