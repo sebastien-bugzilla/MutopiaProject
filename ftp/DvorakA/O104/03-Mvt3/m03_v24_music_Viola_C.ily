@@ -463,7 +463,7 @@ musicViolaMvtIII = \relative c'' {
 	b(->\< ais gis ais b b-> ais gis ais b)
 	b(-> a g a b b-> a g a b)\!}
 	<b d>8\f r r4
-	r r8 q
+	r r8 q-.
 	<b dis!>-. r <ais! cis>-. r
 % Bars 396 to 400
 	R2
