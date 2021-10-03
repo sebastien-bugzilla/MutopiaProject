@@ -96,6 +96,7 @@ arcoconsord=^\markup {arco con sord.}
 senzasord=^\markup {senza sord.}
 tutti=^\markup {Tutti}
 sulgespressivo=^\markup {sul G \italic espressivo}
+trem=^\markup {\italic trem.}
 
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {

@@ -50,4 +50,8 @@ conductorOptions = {
 		\RemoveEmptyStaves
 		\consists #Measure_counter_engraver
 	}
+	\context {
+		\RhythmicStaff
+		\RemoveEmptyStaves
+	}
 }
