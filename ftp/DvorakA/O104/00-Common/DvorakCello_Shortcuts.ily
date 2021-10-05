@@ -48,6 +48,7 @@ ppmoltocresc=^\markup {\dynamic pp \italic {molto cresc.}}
 ritemoltocresc=^\markup {\italic {rit. e molto cresc.}}
 pmarcato=^\markup {\dynamic p \italic marcato}
 ptranquilloemoltoespressivo=^\markup {\dynamic p \italic {tranquillo e molto espressivo}}
+ffconforza=^\markup {\dynamic ff \italic {con forza}}
 
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
