@@ -314,7 +314,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 % Bars 346 to 350
 	\bar "||" \key d \major
-	d2\p~
+	\grace {s8} d2\p~
 	d
 	d4( d 
 	d d)

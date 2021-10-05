@@ -236,7 +236,7 @@ musicTromboneIIIMvtIII = \relative c {
 	
 % Bars 346 to 350
 	\bar "||" \key b \major
-	R2*34
+	\grace {s8} R2*34
 % Bars 351 to 355
 	
 % Bars 356 to 360

@@ -296,7 +296,7 @@ musicFlautoIMvtIII = \relative c''' {
 	f4\< d16( ees d ees
 % Bars 346 to 350
 	f4) d16( ees f d)\! \bar "||" \key b \major
-	fis!4 r
+	\grace {s8} fis!4 r
 	R2*33
 % Bars 351 to 355
 	

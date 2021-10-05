@@ -321,7 +321,7 @@ musicFagottoIIMvtIII = \relative c, {
 	
 % Bars 346 to 350
 	\bar "||" \key b \major
-	fis,,2\p~
+	\grace {s8} fis,,2\p~
 	fis~
 	fis~
 	fis

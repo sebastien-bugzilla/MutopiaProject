@@ -352,7 +352,7 @@ musicSoloCelloMvtIII = \relative c {
 	bes,( d) \tuplet 3/2 4 {d( f bes)} \naturaltrill << bes4\startTrillSpan {s16 s s s\stopTrillSpan} >>
 % Bars 346 to 350
 	bes,( d) \tuplet 3/2 4 {d( f bes)} \naturaltrill << bes4\startTrillSpan\! {s16 s s s\stopTrillSpan} >> \bar "||" \key b \major
-	\sharptrill b!2\startTrillSpan_\ffmoltoespressivo
+	\grace {s8} \sharptrill b!2\startTrillSpan_\ffmoltoespressivo
 	b\startTrillSpan 
 	b\startTrillSpan 
 	b\startTrillSpan 

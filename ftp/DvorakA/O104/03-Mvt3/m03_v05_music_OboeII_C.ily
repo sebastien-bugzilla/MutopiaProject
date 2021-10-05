@@ -339,7 +339,7 @@ musicOboeIIMvtIII = \relative c'' {
 	d4\< bes16( c bes c
 % Bars 346 to 350
 	d4) bes16( c d bes)\! \bar "||" \key b \major
-	dis!4 r
+	\grace {s8} dis!4 r
 	R2*17
 % Bars 351 to 355
 	

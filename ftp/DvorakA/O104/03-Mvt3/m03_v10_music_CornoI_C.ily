@@ -252,7 +252,7 @@ musicCornoIMvtIII = \relative c' {
 	
 % Bars 346 to 350
 	\bar "||" \key c \major
-	\partCombineApart d'2\p
+	\grace {s8} \partCombineApart d'2\p
 	d
 	d4( e)
 	d( e)

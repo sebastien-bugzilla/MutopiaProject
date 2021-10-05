@@ -314,7 +314,7 @@ musicViolinoIMvtIII = \relative c'' {
 	
 % Bars 346 to 350
 	\bar "||" \key b \major
-	dis'4_\ptranquilloemoltoespressivo^\solo--( dis~--
+	\grace {s8} dis'4_\ptranquilloemoltoespressivo^\solo--( dis~--
 	dis8 e dis e)
 	fis4( b
 	fis b)

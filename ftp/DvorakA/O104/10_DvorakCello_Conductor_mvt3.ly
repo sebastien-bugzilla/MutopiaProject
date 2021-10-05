@@ -45,9 +45,9 @@
 \include "./03-Mvt3/m03_v21_music_SoloCello_C.ily"
 \include "./03-Mvt3/m03_v22_music_ViolinoI_C.ily"
 \include "./03-Mvt3/m03_v23_music_ViolinoII_C.ily"
-\include "./03-Mvt3/m03_v24_music_Viola.ily"
-\include "./03-Mvt3/m03_v25_music_Violoncello.ily"
-\include "./03-Mvt3/m03_v26_music_Contrabasso.ily"
+\include "./03-Mvt3/m03_v24_music_Viola_C.ily"
+\include "./03-Mvt3/m03_v25_music_Violoncello_C.ily"
+\include "./03-Mvt3/m03_v26_music_Contrabasso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################

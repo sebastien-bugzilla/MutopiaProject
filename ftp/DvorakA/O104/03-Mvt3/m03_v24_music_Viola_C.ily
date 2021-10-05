@@ -407,7 +407,7 @@ musicViolaMvtIII = \relative c'' {
 	<f bes>(\< <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> 
 % Bars 346 to 350
 	<f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d>)\!} \bar "||" \key b \major
-	fis16\p( b fis b dis b fis b)
+	\grace {s8} fis16\p( b fis b dis b fis b)
 	fis( b fis b dis b fis b)
 	fis( b fis b e b fis b)
 	fis( b fis b e b fis b)

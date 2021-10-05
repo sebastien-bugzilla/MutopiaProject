@@ -256,7 +256,7 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 346 to 350
 	\bar "||" \key c \major
-	R2*22
+	\grace {s8} R2*22
 	
 	
 	

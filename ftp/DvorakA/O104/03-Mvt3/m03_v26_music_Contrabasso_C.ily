@@ -379,7 +379,7 @@ musicContrabassoMvtIII = \relative c, {
 	aes4 r8\< aes
 % Bars 346 to 350
 	aes4 r8 gis\! \bar "||" \key b \major
-	fis4\p fis'
+	\grace {s8} fis4\p fis'
 	fis, r
 	fis fis'
 	fis, fis'
