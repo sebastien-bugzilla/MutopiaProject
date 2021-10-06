@@ -196,7 +196,7 @@ musicSoloCelloMvtIII = \relative c {
 	<< cis {s4\startTrillSpan s8 s\stopTrillSpan}>>
 	cis16(\< d! bis cis d bis cis d)\!
 % Bars 196 to 200
-	bis( cis d bis cis dis bis cis)
+	bis( cis d bis cis d bis cis)
 	e2\startTrillSpan\fz~
 	<< e {s4\startTrillSpan s8 s\stopTrillSpan}>>
 	\setSextolet \tuplet 3/2 4 {e16(\ff g e cis e cis bes cis bes g bes g)
