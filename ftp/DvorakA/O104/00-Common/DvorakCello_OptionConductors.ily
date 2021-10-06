@@ -6,7 +6,7 @@ generalOptions = {
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatType = #":|.|:"
 	\set Score.markFormatter = #format-mark-box-numbers
-	\override Score.RehearsalMark #'font-size = #4
+	\override Score.RehearsalMark #'font-size = #8
 	\compressMMRests
 	\compressEmptyMeasures
 	\override Score.RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
@@ -14,7 +14,7 @@ generalOptions = {
 	\override Staff.MultiMeasureRest.space-increment = 1.5
 }
 conductorOptions = {
-	\override Score.BarNumber #'font-size = #0.1
+	\override Score.BarNumber #'font-size = #2
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
 		beam-event tuplet-span-event dynamic-event articulation-event
 		dynamic-event slur-event text-script-event trill-span-event
@@ -39,7 +39,7 @@ conductorOptions = {
 		\override Stem.length-fraction = #0.85
 		\override TupletBracket #'bracket-visibility = ##f
 		\override StemTremolo.beam-thickness = #0.35 
-		%\override Font.font-size = #+5
+		\override Font.font-size = #+5
 	}
 %	\context {
 %		\Score

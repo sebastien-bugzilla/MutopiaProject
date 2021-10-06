@@ -74,9 +74,9 @@
 %						\new Voice {
 %							\formatConductorMvtIII
 %						}
-%						\new Voice {
-%							\tempiMvtIII
-%						}
+						\new Voice {
+							\tempiMvtIII
+						}
 						\new Voice {
 							\timeMvtIII \generalOptions \conductorOptions
 							\nameStaffIMvtIII
