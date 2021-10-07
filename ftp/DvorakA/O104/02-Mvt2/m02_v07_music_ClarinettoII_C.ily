@@ -53,7 +53,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 36 to 40
 	
 	
-	\bar "||" \grace {s8} \key bes \minor
+	\bar "||" \key bes \minor \grace {s8} 
 	des'2\ff des4
 	des2 bes8. c16
 % Bars 41 to 45

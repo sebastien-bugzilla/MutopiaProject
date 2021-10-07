@@ -36,7 +36,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 36 to 40
 	
 	
-	\bar "||" \grace {s8} \key g \minor
+	\bar "||" \key g \minor \grace {s8} 
 	g'2\ff g16-^ bes-^ a-^ g-^
 	g2 bes,8. c16
 % Bars 41 to 45

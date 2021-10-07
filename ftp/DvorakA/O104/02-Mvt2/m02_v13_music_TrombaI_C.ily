@@ -32,7 +32,7 @@ musicTrombaIMvtII = \relative c'' {
 % Bars 36 to 40
 	
 	
-	\bar "||" \grace {s8} \key a \minor
+	\bar "||" \key a \minor \grace {s8} 
 	g2\ff g4
 	g r d'8. d16
 % Bars 41 to 45

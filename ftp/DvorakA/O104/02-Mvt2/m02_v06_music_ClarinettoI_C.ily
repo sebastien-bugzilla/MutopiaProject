@@ -53,7 +53,7 @@ musicClarinettoIMvtII = \relative c'' {
 % Bars 36 to 40
 	f4 r8 f(\< bes f\!
 	d4\> d \acciaccatura f8 ees4)\!
-	d2(~ d8 c) \bar "||" \key bes \minor \partCombineAutomatic \grace {s8} 
+	d2(~ d8 c) \bar "||" \key bes \minor \grace {s8} \partCombineAutomatic 
 	f2\ff f4
 	f2 des8. ees16
 % Bars 41 to 45

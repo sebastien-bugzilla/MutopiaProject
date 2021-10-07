@@ -32,7 +32,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 36 to 40
 	R2.*3
 	
-	\bar "||" \grace {s8} 
+	\bar "||" \key c \major \grace {s8} 
 	g16\f g g g g8 r g r
 	g r g16 g g g g8 r
 % Bars 41 to 45

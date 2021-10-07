@@ -49,7 +49,7 @@ musicSoloCelloMvtII = \relative c' {
 % Bars 36 to 40
 	R2.*3
 	
-	\bar "||" \grace {s8} \key g \minor
+	\bar "||" \key g \minor \grace {s8} 
 	R2.*3
 	
 % Bars 41 to 45

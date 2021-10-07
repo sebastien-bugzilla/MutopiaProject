@@ -32,7 +32,7 @@ musicCornoIIIMvtII = \relative c' {
 % Bars 36 to 40
 	
 	
-	\bar "||" \grace {s8} \key a \minor
+	\bar "||" \key a \minor \grace {s8} 
 	R2.*11
 % Bars 41 to 45
 	

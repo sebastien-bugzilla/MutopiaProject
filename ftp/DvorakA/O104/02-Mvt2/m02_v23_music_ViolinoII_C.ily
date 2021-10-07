@@ -40,7 +40,7 @@ musicViolinoIIMvtII = \relative c' {
 % Bars 36 to 40
 	
 	
-	\bar "||" \grace {s8} \key g \minor
+	\bar "||" \key g \minor \grace {s8} 
 	<d d'>2\ff q4
 	q2 <bes g'>8. <d a'>16
 % Bars 41 to 45

@@ -38,7 +38,7 @@ musicTromboneIIMvtII = \relative c {
 % Bars 36 to 40
 	
 	
-	\bar "||" \grace {s8} \key g \minor
+	\bar "||" \key g \minor \grace {s8} 
 	bes'2\ff bes4
 	bes16-> bes-> a-> g-> g4 g8. a16
 % Bars 41 to 45

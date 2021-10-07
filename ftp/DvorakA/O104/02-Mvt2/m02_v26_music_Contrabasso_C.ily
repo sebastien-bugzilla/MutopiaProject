@@ -49,7 +49,7 @@ musicContrabassoMvtII = \relative c' {
 % Bars 36 to 40
 	R2.*3
 	
-	\bar "||" \grace {s8} \key g \minor
+	\bar "||" \key g \minor \grace {s8} 
 	g2\ff g4-^
 	g16-> bes-> a-> g-> g4 g8. g16
 % Bars 41 to 45

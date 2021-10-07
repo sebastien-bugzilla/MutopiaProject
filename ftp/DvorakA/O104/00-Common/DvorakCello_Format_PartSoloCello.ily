@@ -5,14 +5,14 @@
 %#                      P A R T   S C O R E   F O R M A T                      #
 %###############################################################################
 formatSoloCelloMvtI = {
-	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
-	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+%	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+%	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
 formatSoloCelloMvtII = {
-	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
-	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+%	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+%	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
 formatSoloCelloMvtIII = {
-	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
-	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+%	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+%	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
