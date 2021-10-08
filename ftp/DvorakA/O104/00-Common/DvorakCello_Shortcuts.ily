@@ -171,3 +171,18 @@ unseparateSextolet = {
 	\unset Voice.beatStructure
 }
 
+souffletps = #"
+0.1 setlinewidth
+2.4 0 moveto
+0 0.6 lineto
+2.4 1.2 lineto
+stroke
+2.9 0 moveto
+5.3 0.6 lineto
+2.9 1.2 lineto
+stroke
+"
+soufflet = \markup {
+	\with-dimensions #'(0 . 4.0) #'(0 . 1.1) % (Xmin . Xmax) (Ymin . Ymax)
+	\postscript #souffletps
+}
