@@ -5,7 +5,7 @@ generalOptions = {
 	\version "2.22.0"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatType = #":|.|:"
-	\set Score.markFormatter = #format-mark-box-alphabet
+	\set Score.markFormatter = #format-mark-box-numbers
 	\override Score.RehearsalMark #'font-size = #4
 	\compressMMRests
 	\compressEmptyMeasures

@@ -24,7 +24,7 @@
 \include "./00-Common/DvorakCello_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_FlautoI_C.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoII_C.ily"
-\include "./01-Mvt1/m01_v03_music_Piccolo.ily"
+\include "./01-Mvt1/m01_v03_music_Piccolo_C.ily"
 \include "./01-Mvt1/m01_v04_music_OboeI_C.ily"
 \include "./01-Mvt1/m01_v05_music_OboeII_C.ily"
 \include "./01-Mvt1/m01_v06_music_ClarinettoI_C.ily"

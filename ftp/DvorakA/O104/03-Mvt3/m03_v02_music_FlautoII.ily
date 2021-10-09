@@ -9,13 +9,17 @@ musicFlautoIIMvtIII = \relative c''' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*20
+	R2*16
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
+	\ni \mmrPos #-2 R2
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no
 % Bars 21 to 25
 	ais2\ff~
 	ais~
@@ -38,7 +42,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	R2*19
+	R2*35
 	
 % Bars 51 to 55
 	
@@ -48,22 +52,18 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 % Bars 66 to 70
 	
-	
-	R2*5
-	
-	
 % Bars 71 to 75
-	
-	
-	R2*8
-	
 	
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	R2*6
+	
+	
+	
+	\ni \mmrPos #-2 R2
+	\mmrPos #-2 R
 % Bars 86 to 90
-	\mark \default
+	\mmrPos #-2 R \no \mark \default
 	d,8\ff[ r16 d] d8 r
 	e8[ r16 d] d8 r
 	d r r4
@@ -136,11 +136,15 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 % Bars 166 to 170
 	\mark \default
-	R2*10
+	R2*5
 % Bars 171 to 175
 	
+	\ni \mmrPos #-2 R2
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R
 % Bars 176 to 180
-	
+	\mmrPos #-2 R \no
 	r8 d'(\pp b'4)
 	r8 d,( b'4)
 	r8 fis( d'4)
@@ -188,15 +192,15 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 221 to 225
 	dis4 e8 eis \mark \default
 	fis r^\IImutainflautopiccolo r4
-	R2*3
+	R2*27
 	
 	
 % Bars 226 to 230
-	R2*4
 	
 	
 	
-	R2*23
+	
+	
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -205,10 +209,14 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 % Bars 246 to 250
 	
+	
+	
+	
+	\ni \cueClef bass \mmrPos #-2 R2
 % Bars 251 to 255
-	
-	
-	R2*8
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no \cueClefUnset
+	s2*8
 	
 	
 % Bars 256 to 260
@@ -218,7 +226,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	\mark \default
 % Bars 261 to 265
-	R2*2
+	s2*2
 	
 	R2*18
 % Bars 266 to 270
@@ -261,11 +269,14 @@ musicFlautoIIMvtIII = \relative c''' {
 	\mark \default
 % Bars 331 to 335
 	R2
-	R2*7
+	R2*3
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 336 to 340
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R
 	d,!4\p d(~
 	d8 f d16 f d f)
 % Bars 341 to 345
@@ -277,7 +288,7 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 346 to 350
 	d4) bes16( c d bes)\! \bar "||" \key b \major
 	dis!4 r
-	R2*33
+	R2*31
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -292,8 +303,8 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-8 R2 
+	\mmrPos #-4 R \no \mark \default
 % Bars 381 to 385
 	fis,4\f b
 	cis8( dis16 cis) b4->
@@ -317,15 +328,19 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*16
+	R2*12
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	
+	
+	
+	
+	\ni \cueClef bass \mmrPos #4 R2
 % Bars 426 to 430
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset
 	fis2\f
 	b\fz
 % Bars 431 to 435
@@ -360,17 +375,17 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 466 to 470
 	
 	
-	R2*6
+	R2*5
 	
 	
 % Bars 471 to 475
 	
 	
-	
-	R2*3
-	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 476 to 480
-	
+	\mmrPos #-4 R \no
 	g2\fp\>~
 	g\!~
 	g\>~

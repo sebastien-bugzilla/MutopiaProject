@@ -35,10 +35,10 @@ musicFlautoIIMvtII = \relative c'' {
 	c(\trill e,!16) r g!8(\trill c,16) r b8.(\fermata a16 \mark \default
 	g4) r r
 % Bars 36 to 40
-	R2.*3
+	R2.*2
 	
-	\bar "||" \key g \minor
-	R2.
+	\ni \mmrPos #4 R2. \bar "||" \key g \minor
+	\mmrPos #-2 R2. \no
 	r4 r g'8.\ff a16
 % Bars 41 to 45
 	bes4-> g-> fis->
@@ -51,12 +51,12 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 	R2. \mark \default
-	R2.*8
+	R2.*7
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
-	
+	\ni \mmrPos #-4 R2. \no
 	c4(\f\> beses ges
 	f)\p r r
 	c'(\f\> beses ges
@@ -95,14 +95,15 @@ musicFlautoIIMvtII = \relative c'' {
 	e(\> ees d \mark \default
 	d8)\! r r4 r
 % Bars 96 to 100
-	R2.*16
+	R2.*10
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	
+	R2.\fermata
+	R2.*12
 % Bars 111 to 115
 	
-	R2.*8
+	
 	
 	
 	
@@ -110,7 +111,7 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 	
-	
+	\ni \mmrPos #-4 R2. \no
 	g8(\mf c16 b fis4)_\dimmarkup g8( c16 b
 % Bars 121 to 125
 	fis4) fis8( b16 a e4)
@@ -156,5 +157,5 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 % Bar 166
-	R2. \bar "|."
+	R2.\fermata \bar "|."
 }

@@ -16,7 +16,7 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	R2.*15
+	R2.*13
 	
 % Bars 16 to 20
 	
@@ -24,8 +24,8 @@ musicFlautoIMvtII = \relative c'' {
 	
 % Bars 26 to 30
 	
-	
-	
+	\ni \mmrPos #-2 R2.
+	\mmrPos #-2 R \no
 	r4 r8 e(\p f8. f16)
 	fis!2(_\dimmarkup b4)
 % Bars 31 to 35
@@ -99,13 +99,17 @@ musicFlautoIMvtII = \relative c'' {
 	ais(\> b4. a8 \mark \default
 	g8)\! r r4 r
 % Bars 96 to 100
-	R2.*16
+	R2.*10
 % Bars 101 to 105
 	
 % Bars 106 to 110
+	R2.\fermata
+	R2.*3
 	
+	
+	\ni \clef bass \mmrPos #8 R2.
 % Bars 111 to 115
-	
+	\mmrPos #4 R \no \clef treble
 	r4 b2(\p~
 	b4 d4. g8)
 	g2.\<\startTrillSpan
@@ -134,10 +138,10 @@ musicFlautoIMvtII = \relative c'' {
 	
 	R2.\fermata^\lunga
 % Bars 136 to 140
-	R2.*7
+	R2.*5
 % Bars 141 to 145
-	
-	
+	\ni \clef bass \mmrPos #-2 R2.
+	\mmrPos #-2 R \no \clef treble
 	d8(\p e b4) d8(\> e
 	b4) d8(\pp e d e
 	b2) r4

@@ -9,7 +9,7 @@ musicPiccoloMvtI = \relative c''' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*121
+	s1*121
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -66,7 +66,7 @@ musicPiccoloMvtI = \relative c''' {
 	fis'8\f r r4 r2
 	r8 fis,16(\f\< g gis a ais b cis d dis e eis fis g! fis)
 	b8\f r^\mutainflautoII r4 r2
-	R1*226
+	s1*226
 % Bars 131 to 135
 	
 % Bars 136 to 140

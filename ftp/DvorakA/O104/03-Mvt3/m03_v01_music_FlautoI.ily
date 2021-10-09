@@ -9,13 +9,17 @@ musicFlautoIMvtIII = \relative c''' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*20
+	R2*16
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 21 to 25
 	cis2\ff~
 	cis~
@@ -27,17 +31,21 @@ musicFlautoIMvtIII = \relative c''' {
 	fis8\ff fis16 fis fis8 fis16 fis
 	fis8 fis16 fis fis8 fis16 fis
 	fis8 r r4
-	R2*19
+	R2*15
 % Bars 31 to 35
 	
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 46 to 50
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	d4(\p-> fis,)
 	a->( d,)
 % Bars 51 to 55
@@ -148,11 +156,15 @@ musicFlautoIMvtIII = \relative c''' {
 	
 % Bars 166 to 170
 	\mark \default
-	R2*10
+	R2*5
 % Bars 171 to 175
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 176 to 180
-	
+	\mmrPos #-4 R \no
 	r8 fis,(\pp d'4)
 	r8 fis,( d'4)
 	r8 a( fis'4)
@@ -244,7 +256,7 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*34
+	R2*30
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -256,10 +268,10 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 306 to 310
 	
 % Bars 311 to 315
-	
-	
-	
-	\mark \default
+	\ni \cueClef bass \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no \cueClefUnset \mark \default
 	g8(\p b16 a g8 d)
 % Bars 316 to 320
 	g8( b16 a g8 d)
@@ -297,7 +309,7 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 346 to 350
 	f4) d16( ees f d)\! \bar "||" \key b \major
 	fis!4 r
-	R2*33
+	R2*30
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -311,9 +323,9 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 376 to 380
 	
 	
-	
-	
-	\mark \default
+	\ni \mmrPos #-8 R2
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 381 to 385
 	fis,4\f b
 	cis8( dis16 cis) b4->
@@ -321,11 +333,15 @@ musicFlautoIMvtIII = \relative c''' {
 	cis8( dis16 cis) b4->
 	dis8 r r4
 % Bars 386 to 390
-	R2*15
+	R2*11
 % Bars 391 to 395
 	
 % Bars 396 to 400
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 401 to 405
 	fis,4\mp b
 	cis8( dis16 cis b4)

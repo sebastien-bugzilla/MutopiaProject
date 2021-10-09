@@ -16,6 +16,7 @@
 \include "./00-Common/DvorakCello_Header.ily"
 \include "./00-Common/DvorakCello_PaperParts.ily"
 \include "./00-Common/DvorakCello_timeMvt.ily"
+\include "./00-Common/DvorakCello_Tempi.ily"
 \include "./00-Common/DvorakCello_OptionParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
@@ -60,6 +61,12 @@
 			\new Voice {
 				\formatFlautoIMvtI
 			}
+%			\new Voice {
+%				\keepWithTag
+%			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameFlautoIMvtI \musicFlautoIMvtI
@@ -81,6 +88,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatFlautoIMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -105,6 +115,9 @@
 				\formatFlautoIMvtIII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameFlautoIMvtIII \musicFlautoIMvtIII
 			}
@@ -127,8 +140,15 @@
 				\formatFlautoIIMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameFlautoIIMvtI \musicFlautoIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \generalOptions \partOptions
+				\musicPiccoloMvtI
 			}
 		>>
 		\header {
@@ -147,6 +167,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatFlautoIIMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -171,52 +194,15 @@
 				\formatFlautoIIMvtIII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameFlautoIIMvtIII \musicFlautoIIMvtIII
 			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatPiccoloMvtI
-			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\namePiccoloMvtI \musicPiccoloMvtI
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatPiccoloMvtIII
-			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
-				\namePiccoloMvtIII \musicPiccoloMvtIII
+				\musicPiccoloMvtIII
 			}
 		>>
 		\header {
@@ -231,4 +217,48 @@
 		\layout {
 		}
 	}
+%	\score {
+%		\new Staff <<
+%			\new Voice {
+%				\formatPiccoloMvtI
+%			}
+%			\new Voice {
+%				\timeMvtI \generalOptions \partOptions
+%				\namePiccoloMvtI \musicPiccoloMvtI
+%			}
+%		>>
+%		\header {
+%			breakbefore = ##f
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					I
+%				}
+%			}
+%		}
+%		\layout {
+%		}
+%	}
+%	\score {
+%		\new Staff <<
+%			\new Voice {
+%				\formatPiccoloMvtIII
+%			}
+%			\new Voice {
+%				\timeMvtIII \generalOptions \partOptions
+%				\namePiccoloMvtIII \musicPiccoloMvtIII
+%			}
+%		>>
+%		\header {
+%			breakbefore = ##f
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					III
+%				}
+%			}
+%		}
+%		\layout {
+%		}
+%	}
 }

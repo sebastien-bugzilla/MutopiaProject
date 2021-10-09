@@ -59,14 +59,18 @@ musicFlautoIMvtI = \relative c'' {
 	a(\f\> b a8 fis4-> e8
 % Bars 51 to 55
 	e4\!) r r2
-	R1*18
+	R1*12
 % Bars 56 to 60
 	
 % Bars 61 to 65
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 66 to 70
-	
-	
+	\mmrPos #-8 R \no
+	R1*3
 	
 	
 	r2 r4 a,(\mf
@@ -84,14 +88,14 @@ musicFlautoIMvtI = \relative c'' {
 	fis r e(_\dimmarkup\prall d) d r b(\prall a)
 % Bars 81 to 85
 	a r r4 r2
-	R1*13
+	R1*10
 % Bars 86 to 90
 	
 % Bars 91 to 95
 	
-	
-	
-	
+	\ni \mmrPos #-2 R1
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no
 	r2 r16 g'\p\<-. g-. g-. g8-. g16-. g-.
 % Bars 96 to 100
 	g8\fz r r4 r16 g-.\p\< g-. g-. g8-. g16-. g-.
@@ -274,9 +278,13 @@ musicFlautoIMvtI = \relative c'' {
 	
 	\mark \default
 % Bars 261 to 265
-	R1*6
+	R1
+	\ni \mmrPos #-6 R1
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 % Bars 266 to 270
-	
+	R1
 	dis2\ff~ dis8 cis( b gis)
 	b2( fis4) b
 	cis cis dis8( fis dis b)
