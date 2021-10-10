@@ -180,11 +180,15 @@ musicOboeIMvtIII = \relative c' {
 	R2*2
 % Bars 166 to 170
 	\mark \default
-	R2*10
+	R2*5
 % Bars 171 to 175
 	
+	\ni \mmrPos #-2 R2
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R
 % Bars 176 to 180
-	
+	\mmrPos #-2 R \no
 	r8 fis(\pp d'4)
 	r8 fis,( d'4)
 	r8 a( fis'4)
@@ -276,13 +280,17 @@ musicOboeIMvtIII = \relative c' {
 	fis8 r r4
 	fis8_\dimD\> r r4\!
 	fis8 r r4
-	R2*12
+	R2*8
 % Bars 266 to 270
 	
 % Bars 271 to 275
 	
-% Bars 276 to 280
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+% Bars 276 to 280
+	\mmrPos #-4 R \no
 	d4\p\<( c~
 	c8 b \tuplet 3/2 4 {c e g)\!}
 	b2(\>
@@ -311,12 +319,16 @@ musicOboeIMvtIII = \relative c' {
 	
 	
 	R2 \mark \default
-	R2*8
+	R2*4
 % Bars 316 to 320
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 321 to 325
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	fis'4.\p fis16( gis
 	fis4.) fis16( gis
 	g!8.) a!16(\< a8. bes16

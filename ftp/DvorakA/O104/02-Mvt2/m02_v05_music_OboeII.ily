@@ -35,7 +35,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 	
 	
-	R2.\fermata \mark \default
+	\ni \mmrPos #-6 R2._\fermata \no \mark \default
 	g2.\pp~
 % Bars 36 to 40
 	g
@@ -108,13 +108,14 @@ musicOboeIIMvtII = \relative c'' {
 	R2.*3
 	
 	\mark \default
-	R2.*33
+	R2.*11
 % Bars 96 to 100
 	
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	
+	R2.\fermata
+	R2.*21
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -125,8 +126,8 @@ musicOboeIIMvtII = \relative c'' {
 	
 	
 	R2.\fermata \mark \default
-	R2.*2
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 % Bars 131 to 135
 	b2(\p d4)
 	d16( c) c8~ c2(

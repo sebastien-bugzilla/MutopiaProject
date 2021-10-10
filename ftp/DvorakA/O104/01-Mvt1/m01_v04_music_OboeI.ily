@@ -66,13 +66,17 @@ musicOboeIMvtI = \relative c'' {
 	cis~\f\>
 % Bars 51 to 55
 	cis4\! r r2
-	R1*15
+	R1*12
 % Bars 56 to 60
 	
 % Bars 61 to 65
 	
-% Bars 66 to 70
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+% Bars 66 to 70
+	\mmrPos #4 R \no
 	r2 r4 e(\mp\<
 	a\! e\> cis b~\!
 	b) r r e(\<
@@ -147,15 +151,19 @@ musicOboeIMvtI = \relative c'' {
 	e( d b a)
 % Bars 136 to 140
 	g\pp r r2
-	R1*17
+	R1*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
+	
+	
+	\ni \mmrPos #-4 R1 \no
+	R1
 % Bars 151 to 155
-	
-	
-	
+	\ni \mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	a1\p
 	d2( e4 fis)
 % Bars 156 to 160
@@ -237,17 +245,17 @@ musicOboeIMvtI = \relative c'' {
 	R1*3
 	
 	\mark \default
-	R1*16
+	R1*12
 % Bars 226 to 230
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
-	
-	
-	
-	
-	gis2\p(~ \tuplet 3/2 4 {gis4 ais b)}
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	gis2\p(~ \tuplet 3/2 2 {gis4 ais b)}
 % Bars 241 to 245
 	b4( ais2 e8 dis)
 	dis4(\< gis) gis-- gis--\!
@@ -285,9 +293,13 @@ musicOboeIMvtI = \relative c'' {
 	cis cis dis8( fis dis b)
 	cis2.\> r4\!
 % Bars 271 to 275
-	R1*10
+	R1*6
 % Bars 276 to 280
 	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 281 to 285
 	fis,1\mf
 	b2(\< cis4 dis)\!

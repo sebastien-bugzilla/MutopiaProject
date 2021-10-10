@@ -19,9 +19,15 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 11 to 15
 	
 	
-	R2*8
+	R2*4
+	
+	
 % Bars 16 to 20
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 21 to 25
 	fis2\ff~
 	fis~
@@ -43,11 +49,15 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	R2*8
+	R2*4
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 46 to 50
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	d4\p-> a8( b16 a)
 	fis4-> fis8( g16 fis)
 % Bars 51 to 55
@@ -79,9 +89,13 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	R2*6
+	R2*3
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 86 to 90
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	d8\ff[ r16 d] d8 r
 	e8[ r16 d] d8 r
 	d r r4
@@ -145,15 +159,19 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 141 to 145
 	
 	\mark \default
-	R2*16
+	R2*12
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	
+	
+	
+	\ni \cueClef bass \mmrPos #-4 R2
 % Bars 156 to 160
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset
 	e,4(\p\> fis\!
 	g8 e fis4)
 % Bars 161 to 165
@@ -234,14 +252,18 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	R2*14
+	R2*11
 % Bars 241 to 245
 	
 % Bars 246 to 250
 	
+	
+	
+	
+	\ni \cueClef bass \mmrPos #-4 R2
 % Bars 251 to 255
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset
 	r4 \tuplet 5/4 4 {fis,16(\ff b cis d fis)}
 	fis4-> b,->
 	cis8( d16 cis) b4
@@ -268,13 +290,17 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*16
+	R2*12
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
-% Bars 296 to 300
 	
+	\ni \cueClef bass \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 296 to 300
+	\mmrPos #-4 R \no \cueClefUnset
 	\tuplet 3/2 4 {d,8\p d d d d d
 	d d d d d d
 	g g g g g g
@@ -313,9 +339,9 @@ musicOboeIIMvtIII = \relative c'' {
 	\mark \default
 % Bars 331 to 335
 	R2
-	R2*3
-	
-	
+	R2
+	\ni \cueClef bass \mmrPos #4 R2
+	\mmrPos #-6 R \no \cueClefUnset
 	cis'4\mp( cis->~
 % Bars 336 to 340
 	cis8 dis cis dis)
@@ -420,10 +446,14 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	R2*7
+	R2*3
 	
 % Bars 456 to 460
 	
+	\ni \cueClef bass \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \cueClefUnset \no
 % Bars 461 to 465
 	dis,2\pp\<~
 	dis

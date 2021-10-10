@@ -73,12 +73,12 @@ musicOboeIIMvtI = \relative c' {
 	
 % Bars 66 to 70
 	
-	R1*5
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 71 to 75
-	
+	\mmrPos #-4 R \no
 	fis1\p\<
 	fis2.\f fis4(
 	g1)\< \mark \default
@@ -108,11 +108,11 @@ musicOboeIIMvtI = \relative c' {
 % Bars 101 to 105
 	
 	
-	R1*4
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 106 to 110
-	
+	\mmrPos #-4 R \no
 	e'2\p\<( d)\!
 	g,1\fz
 	b2\> ais\! \mark \default
@@ -149,15 +149,19 @@ musicOboeIIMvtI = \relative c' {
 	
 % Bars 136 to 140
 	
-	R1*17
+	R1*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
+	
+	
+	\ni \mmrPos #-4 R1 \no
+	R1
 % Bars 151 to 155
-	
-	
-	
+	\ni \mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	cis,,2.\fz( d4)\<
 	d4( fis e fis)\!
 % Bars 156 to 160
@@ -222,11 +226,11 @@ musicOboeIIMvtI = \relative c' {
 	
 	\mark \default
 	R1
-	R1*2
+	\ni \mmrPos #-4 R1
 % Bars 211 to 215
-	
+	\mmrPos #-4 R \no
 	R1
-	R1
+	\ni \mmrPos #-4 R1 \no
 	\tuplet 6/4 2 {g,8\mf[ g g g g g]  g[ g g g g g]
 	g_\crescmarkup[ g g g g g]   g[ g g g g g]}
 % Bars 216 to 220
@@ -256,19 +260,23 @@ musicOboeIIMvtI = \relative c' {
 % Bars 246 to 250
 	
 	\mark \default
-	R1*9
+	R1*6
 	
 	
 % Bars 251 to 255
 	
-% Bars 256 to 260
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+% Bars 256 to 260
+	\mmrPos #-4 R \no
 	R1*4
 	
 	
 	\mark \default
 % Bars 261 to 265
-	R1
+	\ni \mmrPos #4 R1 \no
 	r4 d8(\mf cis\< g'! fis eis\! fis)
 	r ais(\f\< b ais)\! r ais(\< b ais)\!
 	eis8\fz->( fis16) r eis8->( fis16) r eis8(-> fis16) r eis8->( fis16) r
@@ -284,8 +292,8 @@ musicOboeIIMvtI = \relative c' {
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	R1*2
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #-4 R \no
 	<< fis1\mf {s2\mf\> s4 s\!} >>  \mark \default
 	fis2.(\p\> fisis4)\!
 	gis(\pp dis e dis)

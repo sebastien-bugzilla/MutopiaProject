@@ -30,12 +30,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-%\addQuote "cueVoiceOboeIMvtI" { \cueVoiceOboeIMvtI }
-%\addQuote "cueVoiceOboeIMvtII" { \cueVoiceOboeIMvtII }
-%\addQuote "cueVoiceOboeIMvtIII" { \cueVoiceOboeIMvtIII }
-%\addQuote "cueVoiceOboeIIMvtI" { \cueVoiceOboeIIMvtI }
-%\addQuote "cueVoiceOboeIIMvtII" { \cueVoiceOboeIIMvtII }
-%\addQuote "cueVoiceOboeIIMvtIII" { \cueVoiceOboeIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -57,12 +51,15 @@
 				\formatOboeIMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceOboeIMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameOboeIMvtI \musicOboeIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -77,6 +74,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatOboeIMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -101,6 +101,9 @@
 				\formatOboeIMvtIII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceOboeIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameOboeIMvtIII \musicOboeIMvtIII
 			}
@@ -123,12 +126,15 @@
 				\formatOboeIIMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceOboeIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameOboeIIMvtI \musicOboeIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -143,6 +149,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatOboeIIMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -165,6 +174,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatOboeIIMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
