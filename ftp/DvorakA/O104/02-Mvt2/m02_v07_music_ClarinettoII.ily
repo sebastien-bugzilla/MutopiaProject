@@ -131,11 +131,15 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 111 to 115
 	
 	R2.
-	R2.*9
+	R2.*7
 % Bars 116 to 120
 	
-% Bars 121 to 125
 	
+	
+	
+	\ni \cueClef bass \mmrPos #-4 R2.
+% Bars 121 to 125
+	\mmrPos #4 R \no \cueClefUnset
 	r4 r r8 bes'\<
 	bes2.\f
 	bes\>~

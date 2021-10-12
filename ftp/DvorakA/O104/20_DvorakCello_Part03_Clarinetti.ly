@@ -30,12 +30,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceClarinettoIMvtI" { \cueVoiceClarinettoIMvtI }
-\addQuote "cueVoiceClarinettoIMvtII" { \cueVoiceClarinettoIMvtII }
-\addQuote "cueVoiceClarinettoIMvtIII" { \cueVoiceClarinettoIMvtIII }
-\addQuote "cueVoiceClarinettoIIMvtI" { \cueVoiceClarinettoIIMvtI }
-\addQuote "cueVoiceClarinettoIIMvtII" { \cueVoiceClarinettoIIMvtII }
-\addQuote "cueVoiceClarinettoIIMvtIII" { \cueVoiceClarinettoIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -57,12 +51,15 @@
 				\formatClarinettoIMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceClarinettoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameClarinettoIMvtI \musicClarinettoIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -101,6 +98,9 @@
 				\formatClarinettoIMvtIII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceClarinettoIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameClarinettoIMvtIII \musicClarinettoIMvtIII
 			}
@@ -121,6 +121,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatClarinettoIIMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIIMvtI
 			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
@@ -145,6 +148,9 @@
 				\formatClarinettoIIMvtII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceClarinettoIIMvtII
+			}
+			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameClarinettoIIMvtII \musicClarinettoIIMvtII
 			}
@@ -165,6 +171,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatClarinettoIIMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions

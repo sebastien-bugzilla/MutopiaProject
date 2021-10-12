@@ -71,13 +71,13 @@ musicClarinettoIMvtI = \relative c' {
 % Bars 51 to 55
 	e4\! r r2
 	R1
-	R1*11
+	R1*9
 % Bars 56 to 60
 	
 % Bars 61 to 65
 	
-	
-	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-4 R \no
 	r2 r4 c8(\p cis)
 	d2(~ d8 c! bes a
 % Bars 66 to 70
@@ -135,11 +135,15 @@ musicClarinettoIMvtI = \relative c' {
 	a,(_\dimD d,8 f bes, a4.) \mark \default
 	a8 r r4 r2
 % Bars 111 to 115
-	R1*11
+	R1*9
 % Bars 116 to 120
 	
-% Bars 121 to 125
 	
+	
+	
+	\ni \mmrPos #-4 R1
+% Bars 121 to 125
+	\mmrPos #-4 R \no
 	r8 ees''16\mf ees ees8 ees \acciaccatura f ees4. r8
 	r8 d16 d d8 d \acciaccatura e! d4. r8
 	r4 bes'8\f[ r16 a]( g8)[ r16 f]( e8)[ r16 d]
@@ -254,16 +258,20 @@ musicClarinettoIMvtI = \relative c' {
 	
 % Bars 226 to 230
 	
-	R1*21
+	R1*18
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
-% Bars 246 to 250
 	
-	\mark \default
+	
+	
+	\ni \mmrPos #-4 R1
+% Bars 246 to 250
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	d''1\p(
 	e)
 	f!(_\crescmarkup

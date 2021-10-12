@@ -72,9 +72,13 @@ musicClarinettoIIMvtIII = \relative c' {
 	R2*2
 	
 % Bars 81 to 85
-	R2*6
+	R2*3
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 86 to 90
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	f8\ff[ r16 f] f8 r
 	g8[ r16 f] f8 r
 	f r r4
@@ -95,9 +99,9 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 	\mark \default
 % Bars 111 to 115
-	R2*3
-	
-	
+	\ni \cueClef bass \mmrPos #-8 R2
+	\mmrPos #-8 R
+	\mmrPos #-4 R \no \cueClefUnset
 	r4 a,16-.\p\< a-. d-. f-.
 	a8\fz r r4
 % Bars 116 to 120
@@ -116,8 +120,8 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 	
 	
-	R2*2
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-8 R \no
 % Bars 131 to 135
 	d,2\p(
 	cis)~
@@ -146,7 +150,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 % Bars 166 to 170
 	\mark \default
-	R2*11
+	R2*10
 	
 	
 	
@@ -154,13 +158,13 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 % Bars 176 to 180
 	
-	
-	R2*5
-	
-	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 181 to 185
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	aes''2\pp~
 	aes\<
 	c,8\fz r r4
@@ -197,13 +201,17 @@ musicClarinettoIIMvtIII = \relative c' {
 % Bars 221 to 225
 	fis4 d8 d \mark \default
 	cis r r4
-	R2*18
+	R2*15
 % Bars 226 to 230
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
+	
+	\ni \cueClef bass \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset
 % Bars 241 to 245
 	des,2\pp~
 	des

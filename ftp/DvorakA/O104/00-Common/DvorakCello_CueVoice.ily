@@ -355,22 +355,90 @@ cueVoiceOboeIIMvtIII = \relative c {
 %#               C U E   V O I C E   F O R   C L A R I N E T T I               #
 %###############################################################################
 cueVoiceClarinettoIMvtI = \relative c {
-	
+	\transposition a
+	s1*61
+	% bar 62 - 63
+	bes''!2(^\markup {Cor} f4) f'~
+	f a,( d c8 g)
+	s1*56
+	% bar 120 - 121
+	r8^\markup {Ob.} g'16 g g8 r r fis16 fis fis8 r
+	r8 g16 g g8 r r fis16 fis fis8 r
+	s1*123
+	% bar 245 - 247
+	dis4.(^\markup {Ob.I.} fis16 e dis4 fisis,)
+	gis1^~
+	gis4 r r2
 }
 cueVoiceClarinettoIMvtII = \relative c {
-	
+	%\transposition a
+	% no cue Voice for Clarinetto I in mvt II
 }
 cueVoiceClarinettoIMvtIII = \relative c {
-	
+	\transposition a
+	s2*64
+	% bar 65 - 66
+	c''8^\markup {Viol.I.} f, e'! c
+	c f, e' c
+	s2*44
+	% bar 111 - 113
+	\once \override Beam.positions = #'(-2.8 . -1.8) <bes,, d bes'>8.^\markup {Vcello Solo.} f'16 f4
+	<d, bes' g'>8. f'16 d'4~
+	d16 c( e d c8 bes)
+	s2*124
+	% bar 238 - 240
+	\tuplet 3/2 4 {ais8(^\markup {Vcello Solo.} d c ais f' e)
+	c( a'! g ais, f' e)
+	g,!( d' c e, bes' ais)}
 }
 cueVoiceClarinettoIIMvtI = \relative c {
-	
+	\transposition a
+	s1*72
+	% bar 73 - 74
+	\voiceOne c''2.(^\markup {Clar.I.} a'4)
+	c4( bes g4. f8) \oneVoice
+	s1*47
+	% bar 122 - 124
+	r8^\markup {Clar.I.} ees16 ees ees8 ees \acciaccatura f8 ees4. r8
+	r8 d16 d d8 d \acciaccatura e!8 d4. r8
+	r4 bes'8[ r16 a]( g8)[ r16 f]( e8)[ r16 d] 
 }
 cueVoiceClarinettoIIMvtII = \relative c {
-	
+	\transposition a
+	s2.*119
+	% bar 120 - 121
+	d'4~^\markup {Vcello Solo.} d16 d( ees d d,4)~
+	d16 d( ees d d,4)~ d16 d'( ees d)
 }
 cueVoiceClarinettoIIMvtIII = \relative c {
-	
+	\transposition a
+	s2*83
+	% bar 84 - 86
+	c'''4^\markup {Viol.I.} dis
+	e8( f) a16( g f e)
+	\tuplet 5/4 4 {d16( e g f e)} d8 c
+	s2*24
+	% bar 111 - 113
+	<bes,,, d bes'>8.(^\markup {Vcello Solo.} f'16-.) f4
+	<d, bes' g'>8.( f'16-.) d'4~
+	d16 c( e d c8 bes)
+	s2*15
+	% bar 129 - 130
+	g'16^(^\markup {Ob.} a bes a g8 e)
+	c8( f4.)
+	s2*46
+	% bar 177 - 182
+	\stemUp r8^\markup {Ob.Fl.} f( d'4)
+	r8 f,( d'4)
+	r8 a( f'4)
+	r8 a,( f'4)
+	r8 bes,( f'4)
+	r8 bes,( f'4) \stemNeutral
+	s2*55
+	% bar 238 - 240
+	\tuplet 3/2 4 {ais,,8(^\markup {Vcello Solo} d c ais f' e)
+	c( a'! g ais, f' e)
+	g,!( d' c \once \override Beam.positions = #'(-1.5 . -0.5) e, b' ais)}
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #
