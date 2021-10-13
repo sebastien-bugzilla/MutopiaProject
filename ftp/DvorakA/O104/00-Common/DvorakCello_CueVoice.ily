@@ -444,22 +444,204 @@ cueVoiceClarinettoIIMvtIII = \relative c {
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #
 %###############################################################################
 cueVoiceFagottoIMvtI = \relative c {
-	
+	s1*36
+	% bar 37 - 40
+	r2 r8 fis,8^\markup {Bassi} gis ais
+	b ais b cis \stemUp d cis d e \stemNeutral
+	fis( gis) gis4->~ gis8 ais ais4~
+	ais b( eis,2)
+	s1*23
+	% bar 64 - 70
+	\transpose c a' { 
+		\relative {
+			r2 r4 c8(^\markup {Clar.} cis) 
+			d2(~ d8 c bes a
+			g2 d4) d'(
+			g f d bes
+			a g2) d'4(
+			g f d bes
+			a g2) c4
+		}
+	}
+	s1*51
+	% bar 122 - 123
+	\transpose c a' {
+		\relative {
+			\voiceOne r8 ees16^\markup {Clar.I.} ees ees8 ees \acciaccatura f ees4. r8
+			r8 d16 d d8 d \acciaccatura e! d4. r8 \oneVoice
+		}
+	}
+	s1*25
+	% bar 149
+	\transpose c a' {
+		\relative {
+			r8 g,^\markup {Clar.} c f g r r4
+		}
+	}
+	s1
+	% bar 151 - 153
+	\transpose c a' {
+		\relative {
+			r8 c e e g r r4
+			r8 d fis fis g r r4
+			r8 cis, e e g r r4
+		}
+	}
+	s1*90
+	% bar 244 - 247
+	b''4(^\markup {Oboe.} dis2) dis4
+	dis4.( fis16 e dis4 fisis,)
+	gis1~
+	gis4 r r2
 }
 cueVoiceFagottoIMvtII = \relative c {
-	
+	s2.*20
+	% bar 21 - 24
+	a''8(->^\markup {Vcello Solo.} b->) c2(~
+	c4 a) \tuplet 3/2 4 {fis8( g a)}
+	bes4( g) \tuplet 3/2 4 {e8( f g)}
+	aes4( f) \tuplet 3/2 4 {d8( e! f)}
+	s2.*90
+	% bar 115
+	g'16^\markup {Fl.} e fis g fis8( e) fis16( d fis g)
 }
 cueVoiceFagottoIMvtIII = \relative c {
-	
+	s2*16
+	% bar 17 - 20
+	\slashedGrace e''8 e4^\markup {Viol.I.} b8 g
+	\slashedGrace g'8 g4 e8 c
+	\slashedGrace g'8 g4 e8 c
+	\slashedGrace c'8 c4 g8 e
+	s2*63
+	% bar 84 - 86
+	cis'4->^\markup {Viol.} dis->
+	e8( fis) a16( g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
+	s2*70
+	% bar 157 - 158
+	r8^\markup {Vcello Solo.} a,,( cis! fis!)
+	e( d4) r8
+	s2*94
+	% bar 253
+	r4 \tuplet 5/4 4 {fis16(^\markup {Viol.I.} b cis d fis)}
+	s2*23
+	% bar 277 - 280
+	d4(^\markup {Oboe} c~
+	c8 b \tuplet 3/2 4 {c e g)} 
+	b2(
+	a)
+	s2*62
+	% bar 343 - 346
+	d,4^\markup {Ob.Fl.} d~
+	d8( ees d16 ees d ees)
+	f4( d16 ees d ees)
+	f4( d16 ees f d)
+	s2*110
+	% bar 457 - 460
+	b,,4^( \tuplet 3/2 4 {cis8 dis cis}
+	b4 \tuplet 3/2 4 {cis8 dis cis)
+	b( fis' e dis b' gis)}
+	fis2
+	s2*16
+	% bar 477 - 478
+	\transpose c a' {
+		\relative {
+			d4.(^\markup {Clar.} e16 fis)
+			d2
+		}
+	}
 }
 cueVoiceFagottoIIMvtI = \relative c {
-	
+	s1*36
+	% bar 37 - 40
+	r2^\markup {Bassi} r8 fis,8 gis ais
+	b ais b cis \stemUp d cis d e \stemNeutral
+	fis( gis) gis4->~ gis8 ais ais4~
+	ais b( eis,2)
+	s1*26
+	% bar 67 - 70
+	\transpose c a' {
+		\relative {
+			\stemUp g4(^\markup {Clar.} f d bes
+			a g2) d'4
+			g( f d bes
+			a g2) c4 \stemNeutral
+		}
+	}
+	s1*24
+	% bar 95 - 97
+	r2 r16 g'^\markup {Fag.I.} g g e8 g16 g
+	e8 r r4 r16 g g g e8 g16 g
+	e8 r r4 r2
+	s1*24
+	% bar 122 - 123
+	\transpose c a' {
+		\relative {
+			\stemUp r8 ees16 ees ees8 ees \acciaccatura f8 ees4. r8
+			r d16 d d8 d \acciaccatura e! d4. r8 \stemNeutral
+		}
+	}
+	s1*25
+	% bar 149
+	\transpose c a' {
+		\relative {
+			r8^\markup {Clar.} g, c f g r r4
+		}
+	}
+	s1
+	% bar 151 - 153
+	\transpose c a' {
+		\relative {
+			r8 c e e g r r4
+			r8 d f f g r r4
+			r8 c, c e g r r4
+		}
+	}
+	s1*90
+	% bar 244 - 247
+	b'4(^\markup {Ob.} dis2) dis4
+	dis4.( fis16 e dis4 fisis,)
+	gis1~
+	gis4 r r2
 }
 cueVoiceFagottoIIMvtII = \relative c {
-	
+	s2.*111
+	% bar 112 - 115
+	r4^\markup {Flauto.} b''2(~
+	b4 d4. g8)
+	g2.\trill\<
+	g16\! e\< fis g fis8( e) fis16( e fis g)\!
 }
 cueVoiceFagottoIIMvtIII = \relative c {
-	
+	s2*16
+	% bar 17 - 20
+	\slashedGrace e''8 e4^\markup {Viol.I.} b8 g
+	\slashedGrace g'8 g4 e8 c
+	\slashedGrace g'8 g4 e8 c
+	\slashedGrace c'8 c4 g8 e
+	s2*63
+	% bar 84 - 86
+	cis'4^\markup {Viol.I.} dis
+	e8( fis) a16( g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis
+	s2*42
+	% bar 129 - 130
+	g,16(^\markup {Oboe} a b a g8 e)
+	cis( fis4.)
+	s2*122
+	% bar 253
+	s4 \tuplet 5/4 4 {fis16(^\markup {Viol.} b cis d fis)}
+	s2*203
+	% bar 457 - 460
+	b,,,4^(^\markup {Vcello Solo.} \tuplet 3/2 4 {cis8 dis cis}
+	b4 \tuplet 3/2 4 {cis8 dis cis)
+	\stemUp b( fis' e dis b' gis} \stemNeutral
+	fis2)
+	s2*32
+	% bar 493 - 495
+	dis'!4^\markup {Viol.I.} r
+	d8 d r4
+	<b! d>8 r r4
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   C O R N I                    #

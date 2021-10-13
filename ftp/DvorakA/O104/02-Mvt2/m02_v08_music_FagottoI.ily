@@ -24,15 +24,15 @@ musicFagottoIMvtII = \relative c' {
 	
 	
 	\mark \default
-	R2.*11
+	R2.*7
 	
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	
-	
-	
-	
+	\ni \cueClef tenor \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset
 	d,2.\p\<
 % Bars 26 to 30
 	<<bes' {s4\fz\< s s\!}>>
@@ -120,9 +120,13 @@ musicFagottoIMvtII = \relative c' {
 	
 % Bars 106 to 110
 	R2.\fermata
-	R2.*9
+	R2.*8
 % Bars 111 to 115
 	
+	
+	
+	
+	\ni \cueClef treble \mmrPos #-4 R2. \cueClefUnset \no
 % Bars 116 to 120
 	r4 a,2\fz
 	R2.*2

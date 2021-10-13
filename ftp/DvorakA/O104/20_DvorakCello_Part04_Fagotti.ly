@@ -30,12 +30,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceFagottoIMvtI" { \cueVoiceFagottoIMvtI }
-\addQuote "cueVoiceFagottoIMvtII" { \cueVoiceFagottoIMvtII }
-\addQuote "cueVoiceFagottoIMvtIII" { \cueVoiceFagottoIMvtIII }
-\addQuote "cueVoiceFagottoIIMvtI" { \cueVoiceFagottoIIMvtI }
-\addQuote "cueVoiceFagottoIIMvtII" { \cueVoiceFagottoIIMvtII }
-\addQuote "cueVoiceFagottoIIMvtIII" { \cueVoiceFagottoIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -57,12 +51,15 @@
 				\formatFagottoIMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameFagottoIMvtI \musicFagottoIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -77,6 +74,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatFagottoIMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -101,6 +101,9 @@
 				\formatFagottoIMvtIII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameFagottoIMvtIII \musicFagottoIMvtIII
 			}
@@ -121,6 +124,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatFagottoIIMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtI
 			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
@@ -145,6 +151,9 @@
 				\formatFagottoIIMvtII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtII
+			}
+			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameFagottoIIMvtII \musicFagottoIIMvtII
 			}
@@ -165,6 +174,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatFagottoIIMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions

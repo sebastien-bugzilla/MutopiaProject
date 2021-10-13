@@ -116,9 +116,13 @@ musicFagottoIIMvtII = \relative c' {
 	
 % Bars 106 to 110
 	R2.\fermata
-	R2.*9
+	R2.*5
 % Bars 111 to 115
 	
+	\ni \cueClef treble \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset
 % Bars 116 to 120
 	r4 d2\fz
 	fis4(\p g a)

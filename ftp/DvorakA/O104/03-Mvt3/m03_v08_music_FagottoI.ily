@@ -9,13 +9,17 @@ musicFagottoIMvtIII = \relative c {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*20
+	R2*16
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
+	\ni \cueClef treble \grace {s8} \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset
 % Bars 21 to 25
 	fis4->\ff cis8 ais
 	ais'4-> fis8 cis
@@ -52,7 +56,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 56 to 60
 	
 	
-	R2*29
+	R2*26
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -63,8 +67,12 @@ musicFagottoIMvtIII = \relative c {
 	
 % Bars 81 to 85
 	
+	
+	
+	\ni \cueClef treble \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 86 to 90
-	\mark \default
+	\mmrPos #-4 R \no \cueClefUnset \mark \default
 	b8[\ff r16 fis'] fis8 r
 	g8[ r16 fis] fis8 r
 	fis r r4
@@ -127,11 +135,11 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	R2*4
+	R2*2
 % Bars 156 to 160
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	cis!4(\p c)
 	b8( cis! c4)
 % Bars 161 to 165
@@ -205,7 +213,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 221 to 225
 	a4 gis8 g \mark \default
 	fis8 r r4
-	R2*31
+	R2*30
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -219,7 +227,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 251 to 255
 	
 	
-	
+	\ni \cueClef treble \mmrPos #-10 R2 \cueClefUnset \no
 	b,4\ff b
 	e4.-> e8
 % Bars 256 to 260
@@ -235,15 +243,15 @@ musicFagottoIMvtIII = \relative c {
 	b~
 	b8\p r r4
 % Bars 266 to 270
-	R2*15
+	R2*11
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
-	
-	
-	
-	\mark \default \bar "||"
+	\ni \cueClef treble \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset \mark \default \bar "||"
 % Bars 281 to 285
 	d'2\p~
 	d
@@ -295,13 +303,17 @@ musicFagottoIMvtIII = \relative c {
 	cis'8\p r cis4(~
 	cis8 d cis d)
 	e4. r8
-	R2*13
+	R2*9
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
+	
+	\ni \cueClef treble \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 346 to 350
-	\bar "||" \key b \major
+	\mmrPos #-6 R \no \cueClefUnset \bar "||" \key b \major
 	fis,2\p~
 	fis~
 	fis~
@@ -398,11 +410,15 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	\mark \default
-	R2*12
+	R2*8
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 % Bars 461 to 465
 	b2\pp\<~
 	b\!
@@ -410,13 +426,13 @@ musicFagottoIMvtIII = \relative c {
 	b~
 	b4.\pp r8
 % Bars 466 to 470
-	R2*13
+	R2*11
 % Bars 471 to 475
 	
 % Bars 476 to 480
 	
-	
-	
+	\ni \cueClef treble \mmrPos #-6 R2
+	\mmrPos #-6 R \no \cueClefUnset
 	cis2\p\>~
 	cis(\!
 % Bars 481 to 485

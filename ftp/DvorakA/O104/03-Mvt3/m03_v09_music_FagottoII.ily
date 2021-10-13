@@ -9,13 +9,17 @@ musicFagottoIIMvtIII = \relative c, {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*20
+	R2*16
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
+	\ni \cueClef treble \grace {s8} \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset
 % Bars 21 to 25
 	fis4->\ff cis8 ais
 	ais'4-> fis8 cis
@@ -57,7 +61,7 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 56 to 60
 	a-. d-. a-. g-.
 	fis4 r
-	R2*29
+	R2*26
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -68,8 +72,12 @@ musicFagottoIIMvtIII = \relative c, {
 	
 % Bars 81 to 85
 	
+	
+	
+	\ni \cueClef treble \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 86 to 90
-	\mark \default
+	\mmrPos #-4 R \no \cueClefUnset \mark \default
 	b8[\ff r16 d] d8 r
 	e8[ r16 d] d8 r
 	d r r4
@@ -115,8 +123,8 @@ musicFagottoIIMvtIII = \relative c, {
 	
 	
 	
-	R2*2
-	
+	\ni \cueClef treble \mmrPos #-8 R2
+	\mmrPos #4 R \no \cueClefUnset
 % Bars 131 to 135
 	g'2_\pdim(
 	fis)~
@@ -224,7 +232,7 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 221 to 225
 	a4 gis8 g \mark \default
 	fis8 r r4
-	R2*31
+	R2*30
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -238,7 +246,7 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 251 to 255
 	
 	
-	
+	r4 \cueClef treble s4 \cueClefUnset
 	b,4\ff b
 	e4.-> e8
 % Bars 256 to 260
@@ -417,11 +425,15 @@ musicFagottoIIMvtIII = \relative c, {
 	
 	
 	\mark \default
-	R2*12
+	R2*8
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 461 to 465
 	fis2\pp\<~
 	fis\!
@@ -440,13 +452,17 @@ musicFagottoIIMvtIII = \relative c, {
 	
 % Bars 481 to 485
 	
-	R2*15
+	R2*11
 % Bars 486 to 490
 	
 % Bars 491 to 495
 	
+	
+	\ni \cueClef treble \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R \no \cueClefUnset
 % Bars 496 to 500
-	\mark \default
+	R \mark \default
 	b,2\p\<~
 	b~
 	b~

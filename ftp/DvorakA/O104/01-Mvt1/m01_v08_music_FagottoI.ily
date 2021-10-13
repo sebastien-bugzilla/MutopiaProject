@@ -23,7 +23,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 11 to 15
 	R1*2
 	
-	e1\p_\crescmarkup
+	e1_\pcrescD
 	e1\<~
 	e8\! r fis,2.~-^\fz\<
 % Bars 16 to 20
@@ -41,11 +41,15 @@ musicFagottoIMvtI = \relative c {
 % Bars 26 to 30
 	b8.\f\< d16 fis2.\startTrillSpan
 	g8\!\stopTrillSpan r r4 r2
-	R1*13
+	R1*9
 % Bars 31 to 35
 	
 % Bars 36 to 40
 	
+	\ni \mmrPos #-8 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 41 to 45
 	fis,1\p~
 	fis_\crescmarkup(
@@ -60,13 +64,21 @@ musicFagottoIMvtI = \relative c {
 	a~\f\>
 % Bars 51 to 55
 	a4\! r r2
-	R1*19
+	R1*12
 % Bars 56 to 60
 	
 % Bars 61 to 65
 	
-% Bars 66 to 70
 	
+	
+	\ni \cueClef treble \mmrPos #-4 R1
+	\mmrPos #-4 R
+% Bars 66 to 70
+	\mmrPos #-10 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \cueClefUnset
 % Bars 71 to 75
 	a2\p\<( ais4 b\!)
 	b1\<
@@ -115,13 +127,13 @@ musicFagottoIMvtI = \relative c {
 	d-. r d-. fis-. d-. fis-. d-.\noBeam r
 	g-. r g-. b-. g-. b-. g-. b-.
 	g-. r g-. b-. g-. b-. g-.\noBeam r
-	R1*10
+	R1*8
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
-	
-	
+	\ni \cueClef treble \mmrPos #-4 R1
+	\mmrPos #-4 R \no \cueClefUnset
 	fis'8\fz[ r16 eis]( e8)[ r16 d]( cis8)[ r16 b]( a8)[ r16 g](
 	fis8)[ r16 eis_\crescmarkup]( e8)[ r16 d]( cis8)[ r16 b]( a8)[ r16 g](
 % Bars 126 to 130
@@ -133,17 +145,21 @@ musicFagottoIMvtI = \relative c {
 % Bars 131 to 135
 	a8(\f g16) r a8(\p g16) r a8( g16) r a8( g16) r \clef bass
 	e,4\f r r2
-	R1*21
+	R1*16
 % Bars 136 to 140
 	
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
+	
+	
+	\ni \cueClef treble \mmrPos #-4 R1 \no
+	R1
 % Bars 151 to 155
-	
-	
-	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \cueClefUnset
 	a1\fz
 	b2\<( cis4 d)\! \clef tenor
 % Bars 156 to 160
@@ -228,7 +244,7 @@ musicFagottoIMvtI = \relative c {
 	bes( ces)\!
 	bes8\p r r4 r2
 	R1 \mark \default
-	R1*24
+	R1*20
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -237,9 +253,13 @@ musicFagottoIMvtI = \relative c {
 	
 % Bars 241 to 245
 	
-% Bars 246 to 250
 	
-	\mark \default
+	
+	\ni \cueClef treble \mmrPos #-4 R1
+	\mmrPos #-4 R
+% Bars 246 to 250
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset \mark \default
 	b1\p(
 	cis)
 	d!(_\crescmarkup 
@@ -344,7 +364,7 @@ musicFagottoIMvtI = \relative c {
 	b4.\ff cis16 dis b2
 	ais4. gis16 fis ais2
 	gis4. ais16 b gis4-. fis-.
-	e4.-^ dis4 cis b8
+	e4.-^ dis4-^ cis-^ b8-^
 % Bars 346 to 350
 	b4-. b-. r e-.
 	r4 b'-. gis-. e-.
