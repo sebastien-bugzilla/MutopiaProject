@@ -161,8 +161,8 @@ musicOboeIMvtI = \relative c'' {
 	\ni \mmrPos #-4 R1 \no
 	R1
 % Bars 151 to 155
-	\ni \mmrPos #-4 R
-	\mmrPos #-4 R
+	\ni \mmrPos #-6 R
+	\mmrPos #-6 R
 	\mmrPos #-4 R \no
 	a1\p
 	d2( e4 fis)

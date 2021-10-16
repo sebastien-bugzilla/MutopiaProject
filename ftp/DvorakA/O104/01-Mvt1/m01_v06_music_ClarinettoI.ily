@@ -268,9 +268,9 @@ musicClarinettoIMvtI = \relative c' {
 	
 	
 	
-	\ni \mmrPos #-4 R1
+	\ni \mmrPos #-6 R1
 % Bars 246 to 250
-	\mmrPos #-4 R
+	\mmrPos #-6 R
 	\mmrPos #-4 R \no \mark \default
 	d''1\p(
 	e)

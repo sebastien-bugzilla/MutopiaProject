@@ -7,12 +7,16 @@
 cueVoiceFlautoIMvtI = \relative c {
 	s1*63
 	% bar 64 - 66
-	\voiceOne r2 r4 c''8(\p^\markup {Clar.} cis)
-	d2(~ d8 cis b a)
-	g2( d4 d') 
+	\transpose c a' {
+		\relative {
+			\voiceOne r2 r4 c8(\p^\markup {Clar.} cis)
+			d2(~ d8 c! bes a)
+			g2( d4 d')
+		}
+	}
 	s1*25
 	% bar 92 - 95
-	r4 b(\p^\markup {Ob.I.} cis! d~
+	r4 b''(\p^\markup {Ob.I.} cis! d~
 	d) f8.( e16 aes2)~
 	aes2.( g4)(
 	\hideNotes g) s2. \unHideNotes
@@ -70,7 +74,7 @@ cueVoiceFlautoIMvtIII = \relative c {
 	ais-. b-. cis-. dis-. e-. fis-. gis-. ais-. 
 	s2*16
 	% bar 397 - 400
-	\acciaccatura fis,,8 fis'4 \acciaccatura b,8 b'4
+	\acciaccatura fis,,8^\markup {Vcello Solo.} fis'4 \acciaccatura b,8 b'4
 	\acciaccatura cis,8 \override Beam.positions = #'(-1.5 . -1.5) cis'( dis16 cis) \acciaccatura b,8 b'4
 	\acciaccatura cis,8 cis'( dis16 cis) \acciaccatura b,8 b'4
 	\acciaccatura cis,8 cis'( dis16 cis) \revert Beam.positions \acciaccatura b,8 b'4
@@ -187,17 +191,29 @@ cueVoiceFlautoIIMvtIII = \relative c {
 cueVoiceOboeIMvtI = \relative c {
 	s1*63
 	% bar 64 - 66
-	\voiceOne r2 r4 c''8(^\markup {Clar.} cis)
-	d2(~ d8 cis b a
-	g2 d4) d' \oneVoice
+	\transpose c a' {
+		\relative {
+			\voiceOne r2 r4 c8(^\markup {Clar.} cis)
+			d2(~ d8 c! bes a
+			g2 d4) d' \oneVoice
+		}
+	}
 	s1*82
 	% bar 149
-	r8 g,(-.\pp^\markup {Clar.} cis-. fis-. g-.) r r4
+	\transpose c a' {
+		\relative {
+			r8 g,(-.\pp^\markup {Clar.} c-. f-. g-.) r r4
+		}
+	}
 	s1
 	% bar 151 - 153
-	r8 cis,(-. e-. e-. g-.) r r4
-	r8 d(-. fis-. fis-. g-.) r r4
-	r8 cis,(-. cis-. e-. g-.) r r4
+	\transpose c a' {
+		\relative {
+			r8 c(-. e-. e-. g-.) r r4
+			r8 d(-. f-. f-. g-.) r r4
+			r8 c,(-. c-. e-. g-.) r r4
+		}
+	}
 	s1*82
 	% bar 236 - 239
 	b8(^\markup {Fl.I.} ais16 b gis2 fis8 e)
@@ -221,8 +237,8 @@ cueVoiceOboeIMvtII = \relative c {
 	s2.*90
 	% bar 129 - 130
 	<<{
-		\InCueContext d'4(^\markup {Clar.} g fis)
-		fis16( e e8~ e2)
+		\InCueContext d'4(^\markup {Clar.} g f)
+		f16( e e8~ e2)
 	} \\ {
 		\InCueContext b2( d4)
 		d16( c c8~ c2)
@@ -355,44 +371,66 @@ cueVoiceOboeIIMvtIII = \relative c {
 %#               C U E   V O I C E   F O R   C L A R I N E T T I               #
 %###############################################################################
 cueVoiceClarinettoIMvtI = \relative c {
-	\transposition a
 	s1*61
 	% bar 62 - 63
-	bes''!2(^\markup {Cor} f4) f'~
-	f a,( d c8 g)
+	\transpose e c {
+		\transpose c a {
+			\relative {
+				bes'!2(^\markup {Cor} f4) f'~
+				f a,( d c8 g)
+			}
+		}
+	}
 	s1*56
 	% bar 120 - 121
-	r8^\markup {Ob.} g'16 g g8 r r fis16 fis fis8 r
-	r8 g16 g g8 r r fis16 fis fis8 r
+	\transpose a c {
+		\relative {
+			r8^\markup {Ob.} g'''16 g g8 r r fis16 fis fis8 r
+			r8 g16 g g8 r r fis16 fis fis8 r
+		}
+	}
 	s1*123
 	% bar 245 - 247
-	dis4.(^\markup {Ob.I.} fis16 e dis4 fisis,)
-	gis1^~
-	gis4 r r2
+	\transpose a c {
+		\relative {
+			dis'''4.(^\markup {Ob.I.} fis16 e dis4 fisis,)
+			gis1^~
+			gis4 r r2
+		}
+	}
 }
 cueVoiceClarinettoIMvtII = \relative c {
-	%\transposition a
 	% no cue Voice for Clarinetto I in mvt II
 }
 cueVoiceClarinettoIMvtIII = \relative c {
-	\transposition a
 	s2*64
 	% bar 65 - 66
-	c''8^\markup {Viol.I.} f, e'! c
-	c f, e' c
+	\transpose a c {
+		\relative {
+			cis'''8^\markup {Viol.I.} fis, e'! cis
+			cis fis, e' cis
+		}
+	}
 	s2*44
 	% bar 111 - 113
-	\once \override Beam.positions = #'(-2.8 . -1.8) <bes,, d bes'>8.^\markup {Vcello Solo.} f'16 f4
-	<d, bes' g'>8. f'16 d'4~
-	d16 c( e d c8 bes)
+	\transpose a c {
+		\relative {
+			<b d b'>8.^\markup {Vcello Solo.} fis'16 fis4  
+			\once \override Beam.positions = #'(-4 . -3) <d, b' g'>8. fis'16 d'4~
+			d16 cis( e d cis8 b)
+		}
+	}
 	s2*124
 	% bar 238 - 240
-	\tuplet 3/2 4 {ais8(^\markup {Vcello Solo.} d c ais f' e)
-	c( a'! g ais, f' e)
-	g,!( d' c e, bes' ais)}
+	\transpose a c {
+		\relative {
+			\tuplet 3/2 4 {ais'8(^\markup {Vcello Solo.} d cis ais fis' e)
+			cis( a'! g ais, fis' e)
+			g,!( d' cis e, b' ais)}
+		}
+	}
 }
 cueVoiceClarinettoIIMvtI = \relative c {
-	\transposition a
 	s1*72
 	% bar 73 - 74
 	\voiceOne c''2.(^\markup {Clar.I.} a'4)
@@ -404,41 +442,63 @@ cueVoiceClarinettoIIMvtI = \relative c {
 	r4 bes'8[ r16 a]( g8)[ r16 f]( e8)[ r16 d] 
 }
 cueVoiceClarinettoIIMvtII = \relative c {
-	\transposition a
 	s2.*119
 	% bar 120 - 121
-	d'4~^\markup {Vcello Solo.} d16 d( ees d d,4)~
-	d16 d( ees d d,4)~ d16 d'( ees d)
+	\transpose a c {
+		\relative {
+			d''4~^\markup {Vcello Solo.} d16 d( e d d,4)~
+			d16 d( e d d,4)~ d16 d'( e d)
+		}
+	}
 }
 cueVoiceClarinettoIIMvtIII = \relative c {
-	\transposition a
 	s2*83
 	% bar 84 - 86
-	c'''4^\markup {Viol.I.} dis
-	e8( f) a16( g f e)
-	\tuplet 5/4 4 {d16( e g f e)} d8 c
+	\transpose a c {
+		\relative {
+			\ottava #1 cis''''4^\markup {Viol.I.} d
+			e8( fis) a16( g fis e)
+			\tuplet 5/4 4 {d16( e g fis e)} d8 cis \ottava #0
+		}
+	}
 	s2*24
 	% bar 111 - 113
-	<bes,,, d bes'>8.(^\markup {Vcello Solo.} f'16-.) f4
-	<d, bes' g'>8.( f'16-.) d'4~
-	d16 c( e d c8 bes)
+	\transpose a c {
+		\relative {
+			<b d b'>8.(^\markup {Vcello Solo.} fis'16-.) fis4
+			<d, b' g'>8.( fis'16-.) d'4~
+			d16 cis( e d cis8 b)
+		}
+	}
 	s2*15
 	% bar 129 - 130
-	g'16^(^\markup {Ob.} a bes a g8 e)
-	c8( f4.)
+	\transpose a c {
+		\relative {
+			\stemUp g''16^(^\markup {Ob.} a b a \stemNeutral g8 e)
+			cis8( fis4.)
+		}
+	}
 	s2*46
 	% bar 177 - 182
-	\stemUp r8^\markup {Ob.Fl.} f( d'4)
-	r8 f,( d'4)
-	r8 a( f'4)
-	r8 a,( f'4)
-	r8 bes,( f'4)
-	r8 bes,( f'4) \stemNeutral
+	\transpose a c {
+		\relative {
+			\stemUp r8^\markup {Ob.Fl.} fis''( d'4)
+			r8 fis,( d'4)
+			r8 a( fis'4)
+			r8 a,( fis'4)
+			r8 bes,( f'4)
+			r8 bes,( f'4) \stemNeutral
+		}
+	}
 	s2*55
 	% bar 238 - 240
-	\tuplet 3/2 4 {ais,,8(^\markup {Vcello Solo} d c ais f' e)
-	c( a'! g ais, f' e)
-	g,!( d' c \once \override Beam.positions = #'(-1.5 . -0.5) e, b' ais)}
+	\transpose a c {
+		\relative {
+			\tuplet 3/2 4 {ais'8(^\markup {Vcello Solo} d cis ais fis' e)
+			cis( a'! g ais, fis' e)
+			g,!( d' cis e, b' ais)} %\once \override Beam.positions = #'(-1.5 . -0.5)
+		}
+	}
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #

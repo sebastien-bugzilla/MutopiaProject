@@ -99,8 +99,8 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 	\mark \default
 % Bars 111 to 115
-	\ni \cueClef bass \mmrPos #-8 R2
-	\mmrPos #-8 R
+	\ni \cueClef bass \mmrPos #-6 R2
+	\mmrPos #-10 R
 	\mmrPos #-4 R \no \cueClefUnset
 	r4 a,16-.\p\< a-. d-. f-.
 	a8\fz r r4
@@ -121,7 +121,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-8 R \no
+	\mmrPos #-6 R \no
 % Bars 131 to 135
 	d,2\p(
 	cis)~
@@ -158,8 +158,8 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 % Bars 176 to 180
 	
-	\ni \mmrPos #-6 R2
-	\mmrPos #-6 R
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 % Bars 181 to 185
@@ -209,9 +209,9 @@ musicClarinettoIIMvtIII = \relative c' {
 % Bars 236 to 240
 	
 	
-	\ni \cueClef bass \mmrPos #-4 R2
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no \cueClefUnset
+	\ni \mmrPos #6 R2
+	\mmrPos #8 R
+	\mmrPos #6 R \no
 % Bars 241 to 245
 	des,2\pp~
 	des

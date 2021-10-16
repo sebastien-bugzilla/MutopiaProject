@@ -33,14 +33,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-%\addQuote "cueVoiceFlautoIMvtI" { \cueVoiceFlautoIMvtI }
-%\addQuote "cueVoiceFlautoIMvtII" { \cueVoiceFlautoIMvtII }
-%\addQuote "cueVoiceFlautoIMvtIII" { \cueVoiceFlautoIMvtIII }
-%\addQuote "cueVoiceFlautoIIMvtI" { \cueVoiceFlautoIIMvtI }
-%\addQuote "cueVoiceFlautoIIMvtII" { \cueVoiceFlautoIIMvtII }
-%\addQuote "cueVoiceFlautoIIMvtIII" { \cueVoiceFlautoIIMvtIII }
-%\addQuote "cueVoicePiccoloMvtI" { \cueVoicePiccoloMvtI }
-%\addQuote "cueVoicePiccoloMvtIII" { \cueVoicePiccoloMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 

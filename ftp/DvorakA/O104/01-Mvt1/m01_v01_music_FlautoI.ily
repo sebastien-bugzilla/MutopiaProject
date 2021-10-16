@@ -69,7 +69,7 @@ musicFlautoIMvtI = \relative c'' {
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R
 % Bars 66 to 70
-	\mmrPos #-8 R \no
+	\mmrPos #-10 R \no
 	R1*3
 	
 	
