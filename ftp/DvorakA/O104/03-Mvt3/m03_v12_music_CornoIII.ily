@@ -93,7 +93,7 @@ musicCornoIIIMvtIII = \relative c' {
 	
 % Bars 166 to 170
 	\mark \default
-	R2*36
+	R2*32
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -106,9 +106,13 @@ musicCornoIIIMvtIII = \relative c' {
 	
 % Bars 196 to 200
 	
+	
+	
+	\ni \mmrPos #-6 R2
+	\cueClef tenor \mmrPos #-6 R
 % Bars 201 to 205
-	
-	
+	\mmrPos #-8 R \cueClef bass
+	<<\mmrPos #-6 R {s4  s \cueClefUnset} >> \no
 	r4 r8 f\ff \mark \default
 	f8. f16 f8 r 
 	g8. f16 f8 r
@@ -129,7 +133,7 @@ musicCornoIIIMvtIII = \relative c' {
 % Bars 221 to 225
 	g4 g8 g \mark \default
 	fis r r4
-	R2*31
+	R2*27
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -140,10 +144,14 @@ musicCornoIIIMvtIII = \relative c' {
 	
 % Bars 246 to 250
 	
+	
+	
+	
+	\ni \cueClef bass \mmrPos #-4 R2
 % Bars 251 to 255
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset
 	g4\ff g
 	g4. g8
 % Bars 256 to 260
@@ -169,7 +177,7 @@ musicCornoIIIMvtIII = \relative c' {
 	
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*34
+	R2*33
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -184,7 +192,7 @@ musicCornoIIIMvtIII = \relative c' {
 	
 	
 	
-	\mark \default
+	\ni \cueClef bass \mmrPos #-8 R2 \cueClefUnset \no \mark \default
 	bes'2\p~
 % Bars 316 to 320
 	bes~
@@ -211,7 +219,7 @@ musicCornoIIIMvtIII = \relative c' {
 	
 % Bars 346 to 350
 	\bar "||" \key c \major
-	R2*34
+	R2*30
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -224,10 +232,10 @@ musicCornoIIIMvtIII = \relative c' {
 	
 % Bars 376 to 380
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #6 R2
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no \mark \default
 % Bars 381 to 385
 	g,4\f g
 	g2
@@ -247,9 +255,13 @@ musicCornoIIIMvtIII = \relative c' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*8
+	R2*4
 % Bars 416 to 420
 	
+	\ni \cueClef tenor \mmrPos #-4 R2 
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \cueClefUnset
 % Bars 421 to 425
 	g2\f->
 	b->
@@ -271,7 +283,7 @@ musicCornoIIIMvtIII = \relative c' {
 	
 	
 	\mark \default
-	R2*32
+	R2*28
 % Bars 451 to 455
 	
 % Bars 456 to 460
@@ -284,6 +296,10 @@ musicCornoIIIMvtIII = \relative c' {
 	
 % Bars 476 to 480
 	
+	\ni \mmrPos #-2 R2
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no
 % Bars 481 to 485
 	a4._\pconsord^\solo( b16 c)
 	a4.( b16 c)

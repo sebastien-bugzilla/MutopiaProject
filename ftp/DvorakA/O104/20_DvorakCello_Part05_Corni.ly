@@ -33,15 +33,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceCornoIMvtI" { \cueVoiceCornoIMvtI }
-\addQuote "cueVoiceCornoIMvtII" { \cueVoiceCornoIMvtII }
-\addQuote "cueVoiceCornoIMvtIII" { \cueVoiceCornoIMvtIII }
-\addQuote "cueVoiceCornoIIMvtI" { \cueVoiceCornoIIMvtI }
-\addQuote "cueVoiceCornoIIMvtII" { \cueVoiceCornoIIMvtII }
-\addQuote "cueVoiceCornoIIMvtIII" { \cueVoiceCornoIIMvtIII }
-\addQuote "cueVoiceCornoIIIMvtI" { \cueVoiceCornoIIIMvtI }
-\addQuote "cueVoiceCornoIIIMvtII" { \cueVoiceCornoIIIMvtII }
-\addQuote "cueVoiceCornoIIIMvtIII" { \cueVoiceCornoIIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -63,12 +54,15 @@
 				\formatCornoIMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameCornoIMvtI \musicCornoIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -107,6 +101,9 @@
 				\formatCornoIMvtIII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameCornoIMvtIII \musicCornoIMvtIII
 			}
@@ -127,6 +124,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatCornoIIMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtI
 			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
@@ -151,6 +151,9 @@
 				\formatCornoIIMvtII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtII
+			}
+			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameCornoIIMvtII \musicCornoIIMvtII
 			}
@@ -171,6 +174,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatCornoIIMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
@@ -195,6 +201,9 @@
 				\formatCornoIIIMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceCornoIIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameCornoIIIMvtI \musicCornoIIIMvtI
 			}
@@ -217,6 +226,9 @@
 				\formatCornoIIIMvtII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceCornoIIIMvtII
+			}
+			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameCornoIIIMvtII \musicCornoIIIMvtII
 			}
@@ -237,6 +249,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatCornoIIIMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions

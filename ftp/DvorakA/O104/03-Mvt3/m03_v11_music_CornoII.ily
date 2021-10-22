@@ -51,9 +51,9 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	R2*2
+	\ni \mmrPos #-4 R2
 % Bars 66 to 70
-	
+	\mmrPos #-4 R \no
 	r4 d,8\f r
 	R2*19
 % Bars 71 to 75
@@ -99,14 +99,14 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 141 to 145
 	
 	\mark \default
-	R2*12
+	R2*8
 % Bars 146 to 150
 	
 % Bars 151 to 155
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	bes,2\pp~
 % Bars 156 to 160
 	bes
@@ -146,9 +146,9 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 196 to 200
 	
-	R2*3
-	
-	
+	\ni \mmrPos #-2 R2
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no
 	R2*3
 % Bars 201 to 205
 	
@@ -173,7 +173,7 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 221 to 225
 	b!4\fz g8 g \mark \default
 	a r r4
-	R2*31
+	R2*27
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -184,10 +184,14 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 246 to 250
 	
+	
+	
+	
+	\ni \cueClef bass \mmrPos #-2 R2
 % Bars 251 to 255
-	
-	
-	
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no \cueClefUnset
 	bes4\f bes
 	a4. a8
 % Bars 256 to 260
@@ -213,13 +217,17 @@ musicCornoIIMvtIII = \relative c' {
 	
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*20
+	R2*16
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
+	R 
 % Bars 301 to 305
 	r4 \tuplet 3/2 4 {aes8\p\< aes aes 
 	aes aes aes  aes aes aes\!}
@@ -256,7 +264,7 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 346 to 350
 	\bar "||" \key c \major
-	R2*22
+	R2*18
 	
 	
 	
@@ -266,10 +274,14 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 361 to 365
 	
+	
+	
+	
+	\ni \mmrPos #-6 R2
 % Bars 366 to 370
-	
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	\tuplet 3/2 4 {d,8\mf d d  d d d
 	d d d   d d d 
 % Bars 371 to 375
@@ -304,10 +316,10 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	R2*3
-	
+	\ni \mmrPos #-2 R2
+	\mmrPos #-2 R
 % Bars 406 to 410
-	
+	\mmrPos #-2 R \no
 	e'!2\fz
 	ees2\fz~
 	ees8 r r4
@@ -356,22 +368,21 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	R2*5
+	R2*4
 	
 % Bars 471 to 475
 	
 	
-	
-	R2*3
-	
+	\ni \mmrPos #-8 R2
+	\mmrPos #-6 R
+	\mmrPos #-2 R
 % Bars 476 to 480
-	
-	
+	\mmrPos #-2 R \ni
 	c'2\fp\>->~
 	c\!
 	f,2\>~
-% Bars 481 to 485
 	f\!(
+% Bars 481 to 485
 	c8)\pp r r4
 	R2*15
 % Bars 486 to 490

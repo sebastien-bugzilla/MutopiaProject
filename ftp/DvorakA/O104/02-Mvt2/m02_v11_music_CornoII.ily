@@ -98,12 +98,14 @@ musicCornoIIMvtII = \relative c' {
 % Bars 86 to 90
 	
 	
-	R2.*7
+	R2.*4
+	
+	
 % Bars 91 to 95
 	
-	
-	
-	\mark \default
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	fis'2\p g8 d
 % Bars 96 to 100
 	fis4 r8 fis(--\< a-- fis--)\!
@@ -120,7 +122,7 @@ musicCornoIIMvtII = \relative c' {
 % Bars 106 to 110
 	cis2.\pp\fermata
 	d4 r r 
-	R2.*20
+	R2.*19
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -129,8 +131,8 @@ musicCornoIIMvtII = \relative c' {
 	
 % Bars 126 to 130
 	
-	
-	R2.\fermata \mark \default
+	\ni \cueClef bass \mmrPos #-4 R2. 
+	\mmrPos #-4 R2._\fermata \no \cueClefUnset \mark \default
 	d2.~
 	d~
 % Bars 131 to 135

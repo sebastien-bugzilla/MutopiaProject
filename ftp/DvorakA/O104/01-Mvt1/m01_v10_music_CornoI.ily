@@ -80,7 +80,7 @@ musicCornoIMvtI = \relative c'' {
 % Bars 66 to 70
 	
 % Bars 71 to 75
-	R1
+	\ni \mmrPos #-4 R1 \no
 	d'1\p\<
 	d2.\fz\< d4\!
 	ees1_\crescmarkup \mark \default
@@ -91,11 +91,15 @@ musicCornoIMvtI = \relative c'' {
 	f4-> f8 f d c c r
 	d r r4 r2
 % Bars 81 to 85
-	R1*12
+	R1*10
 % Bars 86 to 90
 	
-% Bars 91 to 95
 	
+	
+	
+	\ni \mmrPos #-6 R1
+% Bars 91 to 95
+	\mmrPos #-4 R \no
 	r4 g,(\pp a bes~
 	bes) des8.(\< c16 fes2~
 	fes2.\f\> ees4~
@@ -111,11 +115,15 @@ musicCornoIMvtI = \relative c'' {
 	d2_\dimD\> ees8( d4.)\! \mark \default
 	d8\fz r r4 r2
 % Bars 111 to 115
-	R1*15
+	R1*13
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 % Bars 126 to 130
 	c8\f r r4 r2
 	R1 \mark \default
@@ -142,10 +150,10 @@ musicCornoIMvtI = \relative c'' {
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	R1*3
+	R1*2
 	
-	
-	R1
+	\ni \mmrPos #-4 R1 
+	\mmrPos #-4 R1 \no
 	c16-.\p c-. c-. c-. r8. c16-.\< d-. d-. d-. d-.\! r8. d16-.\<
 % Bars 171 to 175
 	f-. f-. f-. f-.\! r8. f16\< f-. f-. f-. f-.\! r4
@@ -211,7 +219,7 @@ musicCornoIMvtI = \relative c'' {
 	R1*3
 	
 	\mark \default
-	R1*24
+	R1*23
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -222,13 +230,13 @@ musicCornoIMvtI = \relative c'' {
 	
 % Bars 246 to 250
 	
-	\mark \default
-	R1*5
-	
-	
+	\ni \mmrPos #-4 R1 \mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 251 to 255
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ees1_\pcresc
 	d
 	ees\<
@@ -257,8 +265,8 @@ musicCornoIMvtI = \relative c'' {
 % Bars 281 to 285
 	
 	
-	R1 \mark \default
-	R1
+	\ni \mmrPos #4 R1 \mark \default
+	\mmrPos #4 R1
 	R1*12
 % Bars 286 to 290
 	

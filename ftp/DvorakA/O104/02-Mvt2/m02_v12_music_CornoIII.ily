@@ -61,11 +61,15 @@ musicCornoIIIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*9
+	R2.*4
 % Bars 86 to 90
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R
 % Bars 91 to 95
-	
+	\mmrPos #-6 R \no
 	d2.\p~
 	d_\dimmarkup~
 	d\> \mark \default

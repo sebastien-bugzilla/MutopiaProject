@@ -203,6 +203,7 @@ InCueContext = {
 %	\override Stem.length = #7
 %	\override Beam.length = #7
 	\set fontSize = #-3 %-3
+	\override TupletNumber.avoid-slur = #'ignore
 }
 
 OutCueContext = {

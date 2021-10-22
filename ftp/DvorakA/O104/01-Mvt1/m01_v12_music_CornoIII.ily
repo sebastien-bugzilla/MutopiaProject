@@ -9,15 +9,19 @@ musicCornoIIIMvtI = \relative c'' {
 	\key a \minor
 	\transposition d
 % Bars 1 to 5
-	R1*18
+	R1*14
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 16 to 20
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	b1\f~
 	b~
 % Bars 21 to 25
@@ -50,15 +54,19 @@ musicCornoIIIMvtI = \relative c'' {
 	g\>~
 % Bars 51 to 55
 	g4\! r r2
-	R1*21
+	R1*15
 % Bars 56 to 60
 	
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 71 to 75
-	
+	R1*2
 	
 	g2.\fz\< g4\!
 	a2->_\crescmarkup b-> \mark \default
@@ -84,7 +92,7 @@ musicCornoIIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*15
+	R1*14
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -93,8 +101,8 @@ musicCornoIIIMvtI = \relative c'' {
 	
 	
 	
-	
-	r4 f'8\f[ r16 e] d8[ r16 c] b8[ r16 a]
+	\ni \mmrPos #-4 R1 \no
+	b4\rest f'8\f[ r16 e] d8[ r16 c] b8[ r16 a]
 % Bars 126 to 130
 	e8\f r r4 r2
 	R1 \mark \default
@@ -104,7 +112,7 @@ musicCornoIIIMvtI = \relative c'' {
 % Bars 131 to 135
 	f-^\fp
 	c'4\fz r r2
-	R1*23
+	R1*19
 % Bars 136 to 140
 	
 % Bars 141 to 145
@@ -113,14 +121,22 @@ musicCornoIIIMvtI = \relative c'' {
 	
 % Bars 151 to 155
 	
+	\ni \mmrPos #-2 R1
+	\mmrPos #-2 R \no
+	R1*2
+	
 % Bars 156 to 160
 	g1\p\> \mark \default
 	c2.\! r4
-	R1*16
+	R1*10
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	
+	
+	\ni \mmrPos #-2 R1
+	\mmrPos #-2 R \no
+	R1*4
 % Bars 171 to 175
 	
 	
@@ -205,9 +221,13 @@ musicCornoIIIMvtI = \relative c'' {
 	
 	\mark \default
 % Bars 261 to 265
-	R1*6
+	R1
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 266 to 270
-	
+	R1
 	a2\ff a
 	a2. a4
 	gis gis a2
@@ -259,7 +279,7 @@ musicCornoIIIMvtI = \relative c'' {
 	r8 fis, r gis r a r a
 	cis2\fz d8 r b r \mark \default
 	a r r4 r2
-	R1*18
+	R1*17
 % Bars 326 to 330
 	
 % Bars 331 to 335
@@ -267,7 +287,7 @@ musicCornoIIIMvtI = \relative c'' {
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	
+	\ni \mmrPos #-2 R1 \no
 	a4.\ff b16 cis a2
 	gis4. fis16 e gis2
 	fis4. gis16 a fis4-. e-.

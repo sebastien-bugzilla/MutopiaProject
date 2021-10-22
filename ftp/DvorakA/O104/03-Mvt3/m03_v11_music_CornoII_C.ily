@@ -366,12 +366,11 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 476 to 480
 	
-	
 	c'2\fp\>->~
 	c\!
 	f,2\>~
-% Bars 481 to 485
 	f\!(
+% Bars 481 to 485
 	c8)\pp r r4
 	R2*15
 % Bars 486 to 490

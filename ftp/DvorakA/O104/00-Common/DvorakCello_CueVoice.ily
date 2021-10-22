@@ -707,31 +707,386 @@ cueVoiceFagottoIIMvtIII = \relative c {
 %#                    C U E   V O I C E   F O R   C O R N I                    #
 %###############################################################################
 cueVoiceCornoIMvtI = \relative c {
-	
+	s1*70
+	% bar 71
+	bes''1^\markup {II.}
+	s1*18
+	% bar 90 - 91
+	\transpose c e {
+		\transpose a c {
+			\relative {
+				d''2(^\markup {Clar.} \once \stemUp ees4. d8)
+				f2 r2
+			}
+		}
+	}
+	s1*32
+	% bar 124 - 125
+	\transpose c e {
+		\relative {
+			r8.^\markup {Fl.Ob.} b''16( cis8)[ r16 fis,](  a8)[ r16 e]( fis8)[ r16 b,](
+			d8) r16
+		}
+		\transpose a c { 
+			\relative { f''(^\markup {Clar.} \stemUp bes8)[ r16 d,]( g8)[ r16 bes,]( e8)[ r16 g,] \stemNeutral
+			}
+		}
+	}
+	s1*42
+	% bar 168 - 169
+	\transpose c e {
+		\relative {
+			cis'''2^\markup {Fl.}( fis4 cis8. dis16)
+			ais( fis ais cis) cis2.
+		}
+	}
+	s1*77
+	% bar 247 - 252
+	\transpose c e {
+		\relative {
+			r2 r4^\markup {Fl.Ob.} r8 gis''
+			gis2.( ais8 b)
+			b4( ais2) ais4
+			b2.( cis8 d)
+			d4( cis2) cis4
+			d2. e8( fis)
+		}
+	}
+	s1*30
+	% bar 283 - 284
+	d,1^\markup {Cor.II.}
+	g2. r4
 }
 cueVoiceCornoIMvtII = \relative c {
-	
+	% nothing here
 }
 cueVoiceCornoIMvtIII = \relative c {
-	
+	s2*60
+	% bar 61 - 64
+	\transpose e c {
+		\relative e'' {
+			e4->^\markup {Vcello Solo} e16-. e( fis e)
+			dis4-> dis16-. dis( e dis)
+			d!4-> d16-. d( e d)
+			cis4. cis8
+		}
+	}
+	s2*19
+	% bar 84 - 86
+	\transpose e c {
+		\relative c''' {
+			cis4->^\markup {Viol.I.} d->
+			e8 fis a16( g fis e)
+			\tuplet 5/4 4 {d( e g fis e)} d8-. cis-. 
+		}
+	}
+	s2*56
+	% bar 143 - 148
+	\transpose e a, {
+		\relative c''' {
+			\stemUp g4(^\markup {Clar.I.} e)
+			g( e)
+			g8.( e16) \stemNeutral c4~
+			c8( bes4 a8)
+			\once \override Beam.positions = #'(2 . 2.7) g8( f' e4)
+			\once \override Beam.positions = #'(2 . 2.7) g,8( f' e4)
+		}
+	}
+	s2*44
+	% bar 193 - 195
+	\transpose e c {
+		\relative c'' {
+			r8 a( bes4->)
+			r8 a( bes4->)
+			cis8 r r4
+		}
+	}
+	s2*57
+	% bar 253
+	\transpose e c {
+		\relative c' {
+			s4 \tuplet 5/4 4 {fis16(^\markup {Viol.} b cis d fis)}
+		}
+	}
+	s2*89
+	% bar 343 - 346
+	\transpose e c {
+		\relative c'' {
+			d4 d~
+			d8( ees d16 ees d ees)
+			f4 d16( ees d ees)
+			f4 d16( ees f d)
+		}
+	}
 }
 cueVoiceCornoIIMvtI = \relative c {
-	
+	s1*8
+	% bar 9 - 10
+	\stemUp a''4^\markup {Cor.I.} r a r8 bes
+	a4^- g^- a^- r \stemNeutral
+	s1*56
+	% bar 67 - 70
+	\transpose e c {
+		\relative c'' {
+			\voiceOne r2 r4 e(^\markup {Oboe.}
+			a e cis b~
+			b) r r e(
+			a e cis a) \oneVoice
+		}
+	}
+	s1*37
+	% bar 108 - 109
+	\stemUp c1^\markup {Cor.I.}
+	d2 ees8( d4.) \stemNeutral
+	s1*14
+	% bar 124 - 125
+	\transpose e c {
+		\relative c''' {
+			r8. d16^\markup {Fl.}( g8)[ r16 b,]( e8)[ r16 g,]( cis8)[ r16 e,](
+			b'8) r16 d,(^\markup {Clar.} g8)[ r16 b,]( e8)[ r16 g,]( cis8)[ r16 e,]
+		}
+	}
+	s1*36
+	% bar 162 - 165
+	\transpose e c {
+		\relative c''' {
+			b4(^\markup {Fl.} a b a)
+			g( fis g fis)
+			f( e f e)
+			f( e ees d)
+		}
+	}
+	s1*96
+	% bar 262 - 264
+	\voiceOne r2^\markup {Cor.I.} r8 d4 d8~
+	d d4 d d d8
+	ees8( c16) r ees8( c16) r ees8( c16) r ees8( c16) r \oneVoice
+	s1*32
+	% bar 297 - 298
+	\voiceOne c16^\markup {Cor.I.} c c c r8. c16 b b b b r8. b16
+	d d d d r8. d16 d d d d r4 \oneVoice
+	s1*39
+	% bar 338
+	\transpose e c {
+		\relative c' {
+			r8^\markup {Tromb.} ais4 r8 r4 ais
+		}
+	}
 }
 cueVoiceCornoIIMvtII = \relative c {
-	
+	s2.*91
+	% bar 92 - 94
+	\transpose e c {
+		\relative c' {
+			d2.^\markup {Corno III.}~
+			d~
+			d
+		}
+	}
+	s2.*32
+	% bar 127 - 128
+	\transpose f c {
+		\relative c' {
+			d4(^\markup {Vcello Solo.} cis) c
+			b2 a4\fermata
+		}
+	}
 }
 cueVoiceCornoIIMvtIII = \relative c {
-	
+	s2*64
+	% bar 65 - 66
+	d''4(^\markup {Corno I} ees
+	d ees)
+	s2*84
+	% bar 151 - 154
+	\transpose e a, {
+		\relative c''' {
+			\voiceOne g4(^\markup {Clar.} e
+			g e) 
+			\voiceTwo g8.( e16 c4~
+			c8 bes4 a8) \oneVoice 
+		}
+	}
+	s2*42
+	% bar 197 - 199
+	\voiceOne r8^\markup {Corno I} ees4.
+	r8 ees4.
+	ees8 ees r4 \oneVoice
+	s2*50
+	% bar 250 - 253
+	\transpose e c {
+		\relative c' {
+			cis4^\markup {Vcello.Solo.} dis
+			e8 fis a16( g fis e)
+			\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
+			b4 r
+		}
+	}
+	s2*43
+	% bar 297 - 299
+	\transpose e c {
+		\relative c'' {
+			\tuplet 3/2 4 {g8^\markup {Oboe.} g g  g g g
+			g g g   g g g
+			g g g   g g g }
+		}
+	}
+	s2*65
+	% bar 365 - 368
+	\transpose e c {
+		\relative c'' {
+			\tupletUp fis4(^\markup {Oboe.} \tuplet 3/2 4 {gis8 fis e)}
+			fis4( \tuplet 3/2 4 {gis8 fis e)} \tupletNeutral
+			fis4 gis~
+			gis8 b( ais gis)
+		}
+	}
+	s2*35
+	% bar 404 - 406
+	\voiceOne r4^\markup {Corno I} d4(
+	f e)
+	ees( d) \oneVoice 
+	s2*66
+	% bar 473 - 476
+	\transpose e c {
+		\relative c' {
+			\tuplet 3/2 4 {fis8^\markup {Vcello.Solo.} b( gis fis dis' cis)}
+			b( fis' e dis)
+			b'2\trill
+			b\trill
+		}
+	}
 }
 cueVoiceCornoIIIMvtI = \relative c {
-	
+	s1*14
+	% bar 15 - 18
+	\transpose d e {
+		\relative c' {
+			\voiceOne r4^\markup {Cor.I.II.} fis8. g16 c8 r fis,8. g16
+			ees'8 r c8. bes16 ees8. d16 g8. fis16 \oneVoice
+			fis4.( g16 a fis2)
+			fis4.( ees16 d fis2)
+		}
+	}
+	s1*48
+	% bar 67 - 70
+	\transpose d c {
+		\relative c'' {
+			\voiceOne r2^\markup {Oboe.} r4 e(
+			a e cis b~
+			b) r r e( 
+			a e cis a) \oneVoice
+		}
+	}
+	s1*53
+	% bar 124 - 125
+	\transpose d c {
+		\relative c''' {
+			r8.^\markup  {Fl.} d16( g8)[ r16 b,]( e8)[ r16 g,]( cis8)[ r16 e,](
+			\hideNotes a4) s s2 \unHideNotes
+		}
+	}
+	s1*26
+	% bar 152 - 153
+	\transpose d c {
+		\relative c''' {
+			r4 a(^\markup {Viol.I.} cis d)
+			d2( e4 fis)
+		}
+	}
+	s1*14
+	% bar 168 - 169
+	\transpose d c {
+		\relative c''' {
+			cis2(^\markup {Fl.} fis4 cis8. d16)
+			ais( fis ais cis) cis2.
+		}
+	}
+	s1*92
+	% bar 262 - 265
+	\transpose d e {
+		\relative c'' {
+			r2 r8^\markup {Cor.I.} d4 d8~
+			d d4 d d d8
+			ees( c16) r ees8( c16) r ees8( c16) r ees8( c16) r 
+			ees8 r r4 r2
+		}
+	}
+	s1*75
+	% bar 341
+	\transpose d e {
+		\relative c'' {
+			\voiceOne r4 r8^\markup {Cor.I.II.} c cis d ees c \oneVoice
+		}
+	}
 }
 cueVoiceCornoIIIMvtII = \relative c {
-	
+	s2.*86
+	% bar 87 - 91
+	\voiceOne des''8.(^\markup {Vcello.Solo.} c16) des8.( c16) des8.( c16) 
+	c8.( b16) c8.( b16) c8.( b16) 
+	b8.( ais16) b8.( ais16) ais8.( gis16)
+	gis8.( fis16) gis8.( fis16) g8.( fis16)
+	fis8.( e16) e8.( d16) d8.( c16) \oneVoice
 }
 cueVoiceCornoIIIMvtIII = \relative c {
-	
+	s2*198
+	% bar 199 - 202
+	\transpose e c {
+		\relative c'' {
+			\setSextolet \tuplet 6/4 4 {e16( g e cis e cis bes cis bes g bes g)
+			e( g e cis e cis bes cis bes g bes g)
+			g'( bes g e g e cis e cis bes cis bes)
+			g( bes g e g e cis e cis bes cis bes)} \unsetSextolet
+		}
+	}
+	s2*47
+	% bar 250 - 253
+	\transpose e c {
+		\relative c' {
+			cis4^\markup {Vcello Solo.} dis
+			e8-. fis-. a16( g fis) e-.
+			\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
+			b4 r
+		}
+	}
+	s2*60
+	% bar 314
+	\transpose e c {
+		\relative c' {
+			\tuplet 3/2 4 {d8(-^^\markup {Vcello Solo.} c!-^ a)-^ } \stemDown fis16(-^ d-^ c!-^ a)-^ \stemNeutral
+		}
+	}
+	s2*62
+	% bar 377 - 380
+	\transpose e c {
+		\relative c' {
+			fis16(^\markup {Vcello Solo.} b dis, gis) fis4
+			fis16( b dis, gis) fis4
+			fis16( b dis, gis) fis8  fis16( gis)
+			\stemDown ais-. b-. cis-. dis-. \stemNeutral e-. fis-. gis-. ais-. 
+		}
+	}
+	s2*36
+	% bar 417 - 420
+	\transpose e c {
+		\relative c'' {
+			gis4^\markup {Vcello Solo.} a8( gis)
+			fis( e) dis( cis)
+			fis4-> b->
+			cis\trill dis8-> cis->
+		}
+	}
+	s2*56
+	% bar 477 - 480
+	\transpose e a {
+		\relative c'' {
+			d4.(^\markup {Clar.} e16 f!)
+			d2
+			d4.( e16 f)
+			d2
+		}
+	}
 }
 %###############################################################################
 %#                   C U E   V O I C E   F O R   T R O M B E                   #
