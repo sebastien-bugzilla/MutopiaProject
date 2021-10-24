@@ -30,12 +30,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceTrombaIMvtI" { \cueVoiceTrombaIMvtI }
-\addQuote "cueVoiceTrombaIMvtII" { \cueVoiceTrombaIMvtII }
-\addQuote "cueVoiceTrombaIMvtIII" { \cueVoiceTrombaIMvtIII }
-\addQuote "cueVoiceTrombaIIMvtI" { \cueVoiceTrombaIIMvtI }
-\addQuote "cueVoiceTrombaIIMvtII" { \cueVoiceTrombaIIMvtII }
-\addQuote "cueVoiceTrombaIIMvtIII" { \cueVoiceTrombaIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -57,12 +51,15 @@
 				\formatTrombaIMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTrombaIMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameTrombaIMvtI \musicTrombaIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -77,6 +74,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTrombaIMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombaIMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -101,6 +101,9 @@
 				\formatTrombaIMvtIII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTrombaIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameTrombaIMvtIII \musicTrombaIMvtIII
 			}
@@ -121,6 +124,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTrombaIIMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombaIIMvtI
 			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
@@ -145,6 +151,9 @@
 				\formatTrombaIIMvtII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTrombaIIMvtII
+			}
+			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameTrombaIIMvtII \musicTrombaIIMvtII
 			}
@@ -165,6 +174,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTrombaIIMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombaIIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions

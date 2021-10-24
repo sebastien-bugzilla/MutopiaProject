@@ -9,16 +9,20 @@ musicTrombaIMvtI = \relative c'' {
 	\key a \minor
 	\transposition e
 % Bars 1 to 5
-	R1*22
+	R1*18
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
-% Bars 21 to 25
 	
-	\mark \default
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+% Bars 21 to 25
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no \mark \default
 	g2\ff g4. g16 g
 	g2 g4. g16 g
 	g4 r r2
@@ -37,7 +41,7 @@ musicTrombaIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*29
+	R1*26
 % Bars 46 to 50
 	
 % Bars 51 to 55
@@ -49,9 +53,9 @@ musicTrombaIMvtI = \relative c'' {
 % Bars 66 to 70
 	
 % Bars 71 to 75
-	
-	
-	
+	\ni \mmrPos #-2 R1
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no
 	g4.\mf \tuplet 3/2 4 {g16_\crescmarkup g g} g4 g \mark \default
 	c\ff r8 c c-. c-. c-. r
 % Bars 76 to 80
@@ -111,13 +115,17 @@ musicTrombaIMvtI = \relative c'' {
 	
 	\mark \default
 % Bars 176 to 180
-	R1*15
+	R1*13
 % Bars 181 to 185
 	
 % Bars 186 to 190
 	
+	
+	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-6 R
 % Bars 191 to 195
-	R1\fermata \mark \default
+	\mmrPos #-6 R1_\fermata \no \mark \default
 	bes4\f d,8 f d8. bes16 f'4-^~
 	f2~ f8 r r4
 	c4-> e!8 g c,8. c16 c'4-^~
@@ -165,9 +173,13 @@ musicTrombaIMvtI = \relative c'' {
 	
 	\mark \default
 % Bars 261 to 265
-	R1*6
-% Bars 266 to 270
+	R1*4
 	
+	
+	
+	\ni \mmrPos #-10 R1
+% Bars 266 to 270
+	\mmrPos #-12 R \no
 	g2\ff g4. g16 g
 	g8 d \tuplet 3/2 4 {b d g} b4-> g->
 	d'8. d,16 d4. b8-. d-. g-.
@@ -190,22 +202,22 @@ musicTrombaIMvtI = \relative c'' {
 % Bars 301 to 305
 	
 	\mark \default
-	R1*15
+	R1*14
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
-	
-	r2 r4 r8\fermata r
+	\ni \mmrPos #-4 R1
+	\mmrPos #-8 R_\fermata \no
 	g2.\ff g8. g16
 	d2 \tuplet 3/2 2 {e4-^ fis-^ g-^}
 % Bars 321 to 325
 	g8-. b-. d2-^ \tuplet 3/2 4 {e8\< d c\!}
 	f!2\fz \tuplet 3/2 4 {e8-. c-. a-.} d-. d,-. \mark \default
 	g r r4 r2
-	R1*22
+	R1*18
 % Bars 326 to 330
 	
 % Bars 331 to 335
@@ -214,6 +226,10 @@ musicTrombaIMvtI = \relative c'' {
 	
 % Bars 341 to 345
 	
+	\ni \mmrPos #6 R1
+	\mmrPos #4 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
 % Bars 346 to 350
 	g4.\ff a16 b g2
 	g4. a16 b g2

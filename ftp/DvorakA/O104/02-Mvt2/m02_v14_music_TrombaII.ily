@@ -28,11 +28,11 @@ musicTrombaIIMvtII = \relative c'' {
 	
 	
 	R2.\fermata \mark \default
-	R2.*4
+	\ni \mmrPos #-6 R2.
 % Bars 36 to 40
-	
-	
-	\bar "||" \key a \minor
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \bar "||" \key a \minor
 	g2\ff g4
 	g r d8. d16
 % Bars 41 to 45
@@ -44,16 +44,16 @@ musicTrombaIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	R2.*15
+	R2.*11
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
 % Bars 61 to 65
-	
-	
-	
-	\bar "||" \key c \major \mark \default
+	\ni \mmrPos #-7 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no \bar "||" \key c \major \mark \default
 	d2\f d4
 % Bars 66 to 70
 	d2 d8. d16 
