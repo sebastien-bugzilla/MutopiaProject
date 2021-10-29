@@ -122,14 +122,14 @@ musicTromboneIIMvtII = \relative c {
 	
 	
 	R2.\fermata \mark \default
-	R2.*11
+	R2.*9
 % Bars 151 to 155
 	
 % Bars 156 to 160
 	
 	
-	
-	
+	\ni \mmrPos #-7 R2.
+	\mmrPos #-7 R \no 
 	r4 g2(\p\<
 % Bars 161 to 165
 	aes2_\fzdimD a4)

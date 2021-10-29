@@ -9,16 +9,20 @@ musicTromboneIMvtI = \relative c' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*22
+	R1*18
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
-% Bars 21 to 25
 	
-	\mark \default
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+% Bars 21 to 25
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no \mark \default
 	d2.\ff e4-.
 	d-. cis-. d2~
 	d4 r b8. d16 fis8.-> e16
@@ -40,7 +44,7 @@ musicTromboneIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R1*30
+	R1*26
 % Bars 46 to 50
 	
 % Bars 51 to 55
@@ -52,10 +56,10 @@ musicTromboneIMvtI = \relative c' {
 % Bars 66 to 70
 	
 % Bars 71 to 75
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	a4\f r8 a b-. a-. a-. r
 % Bars 76 to 80
 	a4 r8 a bes-. a-. a-. r
@@ -115,13 +119,17 @@ musicTromboneIMvtI = \relative c' {
 	
 	\mark \default
 % Bars 176 to 180
-	R1*15
+	R1*13
 % Bars 181 to 185
 	
 % Bars 186 to 190
 	
+	
+	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-4 R
 % Bars 191 to 195
-	R1\fermata \mark \default
+	\mmrPos #-6 R1_\fermata \no \mark \default
 	d'1-^\f
 	dis-^\fz
 	e-^\fz
@@ -167,9 +175,13 @@ musicTromboneIMvtI = \relative c' {
 	
 	\mark \default
 % Bars 261 to 265
-	R1*6
-% Bars 266 to 270
+	R1*4
 	
+	
+	
+	\ni \mmrPos #-4 R1
+% Bars 266 to 270
+	\mmrPos #6 R \no
 	dis2\ff b
 	dis2. dis4->
 	cis2 dis
@@ -192,29 +204,33 @@ musicTromboneIMvtI = \relative c' {
 % Bars 301 to 305
 	
 	\mark \default
-	R1*15
+	R1*14
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
-	
-	r2 r4 r8\fermata r
+	\ni \mmrPos #-4 R1
+	\mmrPos #-7 R_\fermata \no
 	dis2\ff b4 cis
 	dis2 dis
 % Bars 321 to 325
 	r8 b r cis r b r b
 	bis2\fz cis8 r ais r \mark \default
 	b! r r4 r2
-	R1*14
+	R1*11
 % Bars 326 to 330
 	
 % Bars 331 to 335
 	
+	
+	
+	
+	\ni \mmrPos #4 R1
 % Bars 336 to 340
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 ais4\pp r8 r4 ais
 	R1*3
 	
@@ -234,5 +250,5 @@ musicTromboneIMvtI = \relative c' {
 	r4 \tuplet 3/2 4 {dis8 dis dis} dis4 dis
 	dis2 dis4. dis8
 	dis1\<
-	b4\f r r2-\tweak extra-offset #'(0 . 0) ^\fermataSign \bar "|."
+	b4\f r r2-\tweak extra-offset #'(6 . 0) ^\fermataSign \bar "|."
 }

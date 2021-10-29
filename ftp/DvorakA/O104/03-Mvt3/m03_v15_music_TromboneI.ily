@@ -9,7 +9,7 @@ musicTromboneIMvtIII = \relative c' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*40
+	R2*36
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -24,6 +24,10 @@ musicTromboneIMvtIII = \relative c' {
 	
 % Bars 36 to 40
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #4 R \no
 % Bars 41 to 45
 	d4\f d
 	b4.-> b8
@@ -34,7 +38,7 @@ musicTromboneIMvtIII = \relative c' {
 	b, b
 	d8-. e-. d-. cis-.
 	d4. r8 \mark \default
-	R2*31
+	R2*28
 % Bars 51 to 55
 	
 % Bars 56 to 60
@@ -47,9 +51,9 @@ musicTromboneIMvtIII = \relative c' {
 	
 % Bars 76 to 80
 	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	d4\f d \mark \default
 % Bars 81 to 85
 	b4.-> b8
@@ -113,7 +117,7 @@ musicTromboneIMvtIII = \relative c' {
 	
 % Bars 166 to 170
 	\mark \default
-	R2*36
+	R2*32
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -126,9 +130,13 @@ musicTromboneIMvtIII = \relative c' {
 	
 % Bars 196 to 200
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-6 R
 % Bars 201 to 205
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 	r4 r8 a\ff \mark \default
 	a8. a16 a8 r
 	d8. a16 a8 r
@@ -153,13 +161,17 @@ musicTromboneIMvtIII = \relative c' {
 % Bars 221 to 225
 	fis4 e!8 cis! \mark \default
 	cis r r4
-	R2*18
+	R2*15
 % Bars 226 to 230
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
 % Bars 241 to 245
 	g2\pp~
 	g
@@ -233,7 +245,7 @@ musicTromboneIMvtIII = \relative c' {
 	
 % Bars 346 to 350
 	\bar "||" \key b \major
-	R2*34
+	R2*30
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -246,10 +258,10 @@ musicTromboneIMvtIII = \relative c' {
 	
 % Bars 376 to 380
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #6 R2
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #7 R \no \mark \default
 % Bars 381 to 385
 	dis4\f dis 
 	dis2
@@ -269,9 +281,13 @@ musicTromboneIMvtIII = \relative c' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*8
+	R2*4
 % Bars 416 to 420
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 421 to 425
 	dis2->\f
 	dis->
@@ -293,7 +309,7 @@ musicTromboneIMvtIII = \relative c' {
 	
 	
 	\mark \default
-	R2*32
+	R2*28
 % Bars 451 to 455
 	
 % Bars 456 to 460
@@ -306,6 +322,10 @@ musicTromboneIMvtIII = \relative c' {
 	
 % Bars 476 to 480
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 481 to 485
 	b,2\ppp~
 	b~

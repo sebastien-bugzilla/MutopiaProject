@@ -34,11 +34,11 @@ musicTromboneIIIMvtII = \relative c {
 	
 	
 	R2.\fermata \mark \default
-	R2.*4
+	\ni \mmrPos #-6 R2.
 % Bars 36 to 40
-	
-	
-	\bar "||" \key g \minor
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \bar "||" \key g \minor
 	g2\ff g4~
 	g8 r g4 g
 % Bars 41 to 45
@@ -124,11 +124,15 @@ musicTromboneIIIMvtII = \relative c {
 	
 	
 	R2.\fermata \mark \default
-	R2.*8
+	R2.*5
 % Bars 151 to 155
 	
-% Bars 156 to 160
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+% Bars 156 to 160
+	\mmrPos #-4 R \no
 	g2\ppp g4~
 	g b2~
 	b r4

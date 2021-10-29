@@ -1213,7 +1213,7 @@ cueVoiceTrombaIMvtIII = \relative c {
 	% bar 377 - 380
 	\transpose e c {
 		\relative c' {
-			fis16( b dis, gis) fis4
+			fis16(^\markup {Vcello Solo.} b dis, gis) fis4
 			fis16( b dis, gis) fis4
 			fis16( b) dis, gis fis8 fis16 gis
 			ais-. b-. cis-. dis-. e-. fis-. gis-. ais-. 
@@ -1382,7 +1382,7 @@ cueVoiceTrombaIIMvtIII = \relative c {
 	% bar 377 - 380
 	\transpose e c {
 		\relative c' {
-			fis16( b dis, gis) fis4
+			fis16(^\markup {Vcello Solo.} b dis, gis) fis4
 			fis16( b dis, gis) fis4
 			fis16( b) dis, gis fis8 fis16 gis
 			ais-. b-. cis-. dis-. e-. fis-. gis-. ais-. 
@@ -1423,40 +1423,360 @@ cueVoiceTrombaIIMvtIII = \relative c {
 %#                 C U E   V O I C E   F O R   T R O M B O N I                 #
 %###############################################################################
 cueVoiceTromboneIMvtI = \relative c {
-	
+	s1*18
+	% bar 19 - 22
+	\cueClef treble fis'''8:16^\markup {Viol.I.} g: a: g: fis: e: d: cis:
+	b: ais: e': d: cis: ais: fis: a:
+	g: fis: cis': ais: g: fis: e: d:
+	cis: b: ais: g': fis: e: d: cis: \cueClefUnset
+	s1*48
+	% bar 71 - 74
+	\cueClef treble a'2(^\markup {Viol.I.} ais4 b)
+	b( cis d4. fis8--)
+	fis4( a2.) 
+	a2 cis,4.(\trill d8) \cueClefUnset
+	s1*114
+	% bar 189 - 191
+	\cueClef treble cis,4^\markup {Vcello Solo.} cis8.( d32 e) cis4 cis8.( d32 e)
+	cis8.( d32 e) g,8.( a32 bes) \cueClef bass e,8.( fis32 g) cis,8.( d32 e)
+	\tuplet 3/2 4 {g,8-> a-> bes-> e,-> fis-> g-> cis,-> d-> e-> } bes\fermata a \cueClefUnset
+	s1*73
+	% bar 265 - 266
+	\cueClef treble <g'' g'>16^\markup {Vcello Solo.} <g g'>( <fis fis'>) q( <e e'>) q( <cis cis'>) q( \cueClef tenor <ais ais'>) q( <fis fis'>) q( <e e'>) q( <e cis'>) q
+	<e ais>4 \once \stemDown \tuplet 19/12 1 {<e e'>16^( <eis eis'> <fis fis'> <g g'> <gis gis'!> <a a'!> \cueClef treble <ais ais'> <b b'> <bis bis'> <cis cis'> <d d'> <dis dis'> <e e'!> <eis eis'> <fis fis'> <g g'!> <gis gis'> <a a'!> <ais ais'>)} \cueClefUnset
+	s1*50
+	% bar 317 - 318
+	\cueClef tenor ais8.(^\markup {Vcello Solo.} b32 cis) e,8.( fis32 g) \cueClef bass cis,8.( d32 e) ais,8.( b32 cis)
+	\tuplet 3/2 4 {e,8-> fis-> g-> cis,-> dis-> e-> ais,-> b-> cis->} g8.\fermata fis16 \cueClefUnset
+	s1*16
+	% bar 335 - 337
+	r2 r4 r8 \cueClef treble eis''32( fis gis ais)
+	b8 d16( cis b8) gis'16( fis eis8) b'16( a gis8) \tuplet 3/2 8 {d'16( cis b}
+	ais8) r r4 r2 \cueClefUnset
 }
 cueVoiceTromboneIMvtII = \relative c {
-	
+	s2.*157
+	% bar 158 - 159
+	\cueClef bass b4(~^\markup {Vcell.Solo.} b16 g' fis d b' g fis e')
+	d( b g' fis \cueClef treble d) b'( g fis \tuplet 5/4 4 {e' d b b' a)} \cueClefUnset
 }
 cueVoiceTromboneIMvtIII = \relative c {
-	
+	s2*36
+	% bar 37 - 40
+	\cueClef bass cis'4^\markup {Vcello Solo.} dis
+	e8 fis a16( g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis
+	b4 \cueClef treble \tuplet 5/4 4 {fis'16^(^\markup {Viol.I.} b cis d fis)} \cueClefUnset
+	s2*36
+	% bar 77 - 79
+	\cueClef treble cis'4(^\markup {Fl.Ob.} dis)
+	e8( fis a16 g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis \cueClefUnset
+	s2*119
+	% bar 199 - 202
+	\setSextolet \tuplet 6/4 4 {e,16( g e cis e cis bes cis bes g bes g)
+	\stemDown e( g e \cueClef tenor cis e cis bes cis bes g bes g) \stemNeutral
+	g'( bes g e g e cis e cis bes cis bes)
+	g( bes g e g e \cueClef bass cis e cis bes cis bes)} \unsetSextolet \cueClefUnset
+	s2*35
+	% bar 238 - 240
+	\cueClef bass \tuplet 3/2 4 {ais'8(^\markup {Vcello Solo.} d cis ais fis' e)
+	cis( a'! g ais, fis' e)
+	g,( d' cis e, b' ais)} \cueClefUnset
+	s2*136
+	% bar 377 - 380
+	\cueClef treble fis'16(^\markup {Vcello Solo.} b dis, gis) fis4
+	fis16( b dis, gis) fis4
+	fis16( b) dis, gis fis8 fis16 gis
+	ais-. b-. cis-. dis-. e-. fis-. gis-. ais-. \cueClefUnset
+	s2*36
+	% bar 417 - 420
+	\cueClef tenor gis,4^\markup {Vcello Solo.} a!8( gis)
+	fis( e) dis( cis)
+	fis4-> b->
+	cis\trill dis8-^ cis-^ \cueClefUnset
+	s2*56
+	% bar 477 - 480
+	\cueClef treble \voiceOne b4.(^\markup {Clar.} cis16 d)
+	b2
+	b4.( cis16 d)
+	b2 \cueClefUnset \oneVoice
 }
 cueVoiceTromboneIIMvtI = \relative c {
-	
+	s1*18
+	% bar 19 - 22
+	\cueClef treble fis'''8:16^\markup {Viol.I.} g: a: g: fis: e: d: cis:
+	b: ais: e': d: cis: ais: fis: a:
+	g: fis: cis': ais: g: fis: e: d:
+	cis: b: ais: g': fis: e: d: cis: \cueClefUnset
+	s1*48
+	% bar 71 - 74
+	\cueClef treble a'2(^\markup {Viol.I.} ais4 b)
+	b( cis d4. fis8--)
+	fis4( a2.) 
+	a2 cis,4.(\trill d8) \cueClefUnset
+	s1*114
+	% bar 189 - 191
+	\cueClef treble cis,4^\markup {Vcello Solo.} cis8.( d32 e) cis4 cis8.( d32 e)
+	cis8.( d32 e) g,8.( a32 bes) \cueClef bass e,8.( fis32 g) cis,8.( d32 e)
+	\tuplet 3/2 4 {g,8-> a-> bes-> e,-> fis-> g-> cis,-> d-> e-> } bes\fermata a \cueClefUnset
+	s1*73
+	% bar 265 - 266
+	\cueClef treble <g'' g'>16^\markup {Vcello Solo.} <g g'>( <fis fis'>) q( <e e'>) q( <cis cis'>) q( \cueClef tenor <ais ais'>) q( <fis fis'>) q( <e e'>) q( <e cis'>) q
+	<e ais>4 \once \stemDown \tuplet 19/12 1 {<e e'>16^( <eis eis'> <fis fis'> <g g'> <gis gis'!> <a a'!> \cueClef treble <ais ais'> <b b'> <bis bis'> <cis cis'> <d d'> <dis dis'> <e e'!> <eis eis'> <fis fis'> <g g'!> <gis gis'> <a a'!> <ais ais'>)} \cueClefUnset
+	s1*50
+	% bar 317 - 318
+	\cueClef tenor ais8.(^\markup {Vcello Solo.} b32 cis) e,8.( fis32 g) \cueClef bass cis,8.( d32 e) ais,8.( b32 cis)
+	\tuplet 3/2 4 {e,8-> fis-> g-> cis,-> dis-> e-> ais,-> b-> cis->} g8.\fermata fis16 \cueClefUnset
+	s1*16
+	% bar 335 - 337
+	r2 r4 r8 \cueClef treble eis''32( fis gis ais)
+	b8 d16( cis b8) gis'16( fis eis8) b'16( a gis8) \tuplet 3/2 8 {d'16( cis b}
+	ais8) r r4 r2 \cueClefUnset
 }
 cueVoiceTromboneIIMvtII = \relative c {
-	
+	s2.*157
+	% bar 158 - 159
+	\cueClef bass b4(~^\markup {Vcell.Solo.} b16 g' fis d b' g fis e')
+	d( b g' fis \cueClef treble d) b'( g fis \tuplet 5/4 4 {e' d b b' a)} \cueClefUnset
 }
 cueVoiceTromboneIIMvtIII = \relative c {
-	
+	s2*36
+	% bar 37 - 40
+	\cueClef bass cis'4^\markup {Vcello Solo.} dis
+	e8 fis a16( g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis
+	b4 \cueClef treble \tuplet 5/4 4 {fis'16^(^\markup {Viol.I.} b cis d fis)} \cueClefUnset
+	s2*36
+	% bar 77 - 79
+	\cueClef treble cis'4(^\markup {Fl.Ob.} dis)
+	e8( fis a16 g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis \cueClefUnset
+	s2*119
+	% bar 199 - 202
+	\cueClef treble \setSextolet \tuplet 6/4 4 {e,16( g e cis e cis bes cis bes g bes g)
+	\cueClef tenor e( g e  cis e cis bes cis bes g bes g)
+	g'( bes g e g e cis e cis bes cis bes)
+	g^( bes g e g e \cueClef bass cis e cis bes cis bes)} \unsetSextolet \cueClefUnset
+	s2*35
+	% bar 238 - 240
+	\cueClef bass \tuplet 3/2 4 {ais'8(^\markup {Vcello Solo.} d cis ais fis' e)
+	cis( a'! g ais, fis' e)
+	g,( d' cis e, b' ais)} \cueClefUnset
+	s2*136
+	% bar 377 - 380
+	\cueClef treble fis'16(^\markup {Vcello Solo.} b dis, gis) fis4
+	fis16( b dis, gis) fis4
+	fis16( b) dis, gis fis8 fis16 gis
+	ais-. b-. cis-. dis-. e-. fis-. gis-. ais-. \cueClefUnset
+	s2*36
+	% bar 417 - 420
+	\cueClef tenor gis,4^\markup {Vcello Solo.} a!8( gis)
+	fis( e) dis( cis)
+	fis4-> b->
+	cis\trill dis8-^ cis-^ \cueClefUnset
+	s2*56
+	% bar 477 - 480
+	\cueClef treble \voiceOne b4.(^\markup {Clar.} cis16 d)
+	b2
+	b4.( cis16 d)
+	b2 \cueClefUnset \oneVoice
 }
 cueVoiceTromboneIIIMvtI = \relative c {
-	
+	s1*18
+	% bar 19 - 21
+	\cueClef treble fis'''8:16^\markup {Viol.I.} g: a: g: fis: e: d: cis:
+	b: ais: e': d: cis: ais: fis: a:
+	g: fis: cis': ais: g: fis: e: d:\cueClefUnset
+	s1*49
+	% bar 71 - 74
+	\cueClef treble a'2(^\markup {Viol.I.} ais4 b)
+	b( cis d4. fis8--)
+	fis4( a2.) 
+	a2 cis,4.(\trill d8) \cueClefUnset
+	s1*114
+	% bar 189 - 191
+	\cueClef treble cis,4^\markup {Vcello Solo.} cis8.( d32 e) cis4 cis8.( d32 e)
+	cis8.( d32 e) g,8.( a32 bes) \cueClef bass e,8.( fis32 g) cis,8.( d32 e)
+	\tuplet 3/2 4 {g,8-> a-> bes-> e,-> fis-> g-> cis,-> d-> e-> } bes\fermata a \cueClefUnset
+	s1*73
+	% bar 265 - 266
+	\cueClef treble <g'' g'>16^\markup {Vcello Solo.} <g g'>( <fis fis'>) q( <e e'>) q( <cis cis'>) q( \cueClef tenor <ais ais'>) q( <fis fis'>) q( <e e'>) q( <e cis'>) q
+	<e ais>4 \once \stemDown \tuplet 19/12 1 {<e e'>16^( <eis eis'> <fis fis'> <g g'> <gis gis'!> <a a'!> \cueClef treble <ais ais'> <b b'> <bis bis'> <cis cis'> <d d'> <dis dis'> <e e'!> <eis eis'> <fis fis'> <g g'!> <gis gis'> <a a'!> <ais ais'>)} \cueClefUnset
+	s1*50
+	% bar 317 - 318
+	\cueClef tenor ais8.(^\markup {Vcello Solo.} b32 cis) e,8.( fis32 g) \cueClef bass cis,8.( d32 e) ais,8.( b32 cis)
+	\tuplet 3/2 4 {e,8-> fis-> g-> cis,-> dis-> e-> ais,-> b-> cis->} g8.\fermata fis16 \cueClefUnset
+	s1*16
+	% bar 335 - 337
+	r2 r4 r8 \cueClef treble eis''32( fis gis ais)
+	b8 d16( cis b8) gis'16( fis eis8) b'16( a gis8) \tuplet 3/2 8 {d'16( cis b}
+	ais8) r r4 r2 \cueClefUnset
 }
 cueVoiceTromboneIIIMvtII = \relative c {
-	
+	s2.*34
+	% bar 35 - 38
+	\transpose c a, {
+		\relative c'' {
+			\cueClef treble f2(^\markup {Clar.} g8 ees)
+			f4 r8 f( bes f)
+			d4 d \acciaccatura f8 ees4
+			d2~ \stemDown d8 c \cueClefUnset \stemNeutral
+		}
+	}
+	s2.*115
+	% bar 154 - 156
+	g'8^\markup {Vcello Solo.} a( b c d4~
+	d16) fis( e d d4~ d16 fis e d)
+	\tuplet 3/2 4 {d8( g e d b a} g16 d b a)
 }
 cueVoiceTromboneIIIMvtIII = \relative c {
-	
+	s2*36
+	% bar 37 - 40
+	cis'4^\markup {Vcello Solo.} dis
+	e8 fis a16( g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis
+	b4 \cueClef treble \tuplet 5/4 4 {fis'16^(^\markup {Viol.I.} b cis d fis)} \cueClefUnset
+	s2*36
+	% bar 77 - 79
+	\cueClef treble cis4(^\markup {Oboe Fl.} dis)
+	e8( fis a16 g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis \cueClefUnset
+	s2*119
+	% bar 199 - 202
+	\cueClef treble \setSextolet \tuplet 6/4 4 {e16( g e cis e cis bes cis bes g bes g)
+	\cueClef tenor e( g e  cis e cis bes cis bes g bes g)
+	g'( bes g e g e cis e cis bes cis bes)
+	g^( bes g e g e \cueClef bass cis e cis bes cis bes)} \unsetSextolet \cueClefUnset
+	s2*35
+	% bar 238 - 240
+	\tuplet 3/2 4 {ais'8(^\markup {Vcello Solo.} d cis ais fis' e)
+	cis( a'! g ais, fis' e)
+	g,( d' cis e, b' ais)}
+	s2*136
+	% bar 377 - 380
+	\cueClef treble fis'16(^\markup {Vcello Solo.} b dis, gis) fis4
+	fis16( b dis, gis) fis4
+	fis16( b) dis, gis fis8 fis16 gis
+	ais-. b-. cis-. dis-. e-. fis-. gis-. ais-. \cueClefUnset
+	s2*36
+	% bar 417 - 420
+	\cueClef tenor gis,4^\markup {Vcello Solo.} a!8( gis)
+	fis( e) dis( cis)
+	fis4-> b->
+	cis\trill dis8-^ cis-^ \cueClefUnset
+	s2*56
+	% bar 477 - 480
+	\cueClef treble \voiceOne b4.(^\markup {Clar.} cis16 d)
+	b2
+	b4.( cis16 d)
+	b2 \cueClefUnset \oneVoice
 }
 cueVoiceTubaMvtI = \relative c {
-	
+	s1*18
+	% bar 19 - 21
+	\cueClef treble fis'''8:16^\markup {Viol.I.} g: a: g: fis: e: d: cis:
+	b: ais: e': d: cis: ais: fis: a:
+	g: fis: cis': ais: g: fis: e: d: 
+	cis: b: ais: g': fis: e: d: cis: \cueClefUnset
+	s1*48
+	% bar 71 - 74
+	\cueClef treble a'2(^\markup {Viol.I.} ais4 b)
+	b( cis d4. fis8--)
+	fis4( a2.) 
+	a2 cis,4.(\trill d8) \cueClefUnset
+	s1*114
+	% bar 189 - 191
+	\cueClef treble cis,4^\markup {Vcello Solo.} cis8.( d32 e) cis4 cis8.( d32 e)
+	cis8.( d32 e) g,8.( a32 bes) e,8.( fis32 g) cis,8.( d32 e) \cueClef bass 
+	\tuplet 3/2 4 {g,8-> a-> bes-> e,-> fis-> g-> cis,-> d-> e-> } bes\fermata a \cueClefUnset
+	s1*73
+	% bar 265 - 266
+	\cueClef treble <g'' g'>16^\markup {Vcello Solo.} <g g'>( <fis fis'>) q( <e e'>) q( <cis cis'>) q( \cueClef tenor <ais ais'>) q( <fis fis'>) q( <e e'>) q( <e cis'>) q
+	<e ais>4 \once \stemDown \tuplet 19/12 1 {<e e'>16^( <eis eis'> <fis fis'> <g g'> <gis gis'!> <a a'!> \cueClef treble <ais ais'> <b b'> <bis bis'> <cis cis'> <d d'> <dis dis'> <e e'!> <eis eis'> <fis fis'> <g g'!> <gis gis'> <a a'!> <ais ais'>)} \cueClefUnset
+	s1*50
+	% bar 317 - 318
+	\cueClef tenor ais8.(^\markup {Vcello Solo.} b32 cis) e,8.( fis32 g) \cueClef bass cis,8.( d32 e) ais,8.( b32 cis)
+	\tuplet 3/2 4 {e,8-> fis-> g-> cis,-> dis-> e-> ais,-> b-> cis->} g8.\fermata fis16 \cueClefUnset
+	s1*16
+	% bar 335 - 337
+	r2 r4 r8 \cueClef treble eis''32( fis gis ais)
+	b8 d16( cis b8) gis'16( fis eis8) b'16( a gis8) \tuplet 3/2 8 {d'16( cis b}
+	ais8) r r4 r2 \cueClefUnset
 }
 cueVoiceTubaMvtII = \relative c {
-	
+	s2.*34
+	% bar 35 - 38
+	\transpose c a, {
+		\relative c'' {
+			\cueClef treble f2(^\markup {Clar.} g8 ees)
+			f4 r8 f( bes f)
+			d4 d \acciaccatura f8 ees4
+			d2~ \stemDown d8 c \cueClefUnset \stemNeutral
+		}
+	}
+	s2.*114
+	% bar 153 - 156
+	g'2.\pp~^\markup {Vcello Solo.}
+	g8 a( b c d4~
+	d16) fis( e d d4~ d16 fis e d)
+	\tuplet 3/2 4 {d8( g e d b a} g16 d b a)
 }
 cueVoiceTubaMvtIII = \relative c {
-	
+	s2*36
+	% bar 37 - 40
+	cis'4^\markup {Vcello Solo.} dis
+	e8 fis a16( g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis
+	b4 \cueClef treble \tuplet 5/4 4 {fis'16^(^\markup {Viol.I.} b cis d fis)} \cueClefUnset
+	s2*36
+	% bar 77 - 79
+	\cueClef treble cis4(^\markup {Oboe Fl.} dis)
+	e8( fis a16 g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis \cueClefUnset
+	s2*15
+	% bar 95
+	\voiceOne e,,8^\markup {Pos.III.} r r4
+	s2*3
+	% bar 99 - 100
+	e2~
+	e
+	s2*2
+	% bar 103 - 107
+	e2~
+	e
+	e4 r
+	e r
+	e8 r r4 \oneVoice
+	s2*91
+	% bar 199 - 202
+	\cueClef treble \setSextolet \tuplet 6/4 4 {e''16( g e cis e cis bes cis bes g bes g)
+	\cueClef tenor e( g e  cis e cis bes cis bes g bes g)
+	g'( bes g e g e cis e cis bes cis bes)
+	g^( bes g e g e \cueClef bass cis e cis bes cis bes)} \unsetSextolet \cueClefUnset
+	s2*35
+	% bar 238 - 240
+	\tuplet 3/2 4 {ais'8(^\markup {Vcello Solo.} d cis ais fis' e)
+	cis( a'! g ais, fis' e)
+	g,( d' cis e, b' ais)}
+	s2*136
+	% bar 377 - 380
+	\cueClef treble fis'16(^\markup {Vcello Solo.} b dis, gis) fis4
+	fis16( b dis, gis) fis4
+	fis16( b) dis, gis fis8 fis16 gis
+	ais-. b-. cis-. dis-. e-. fis-. gis-. ais-. \cueClefUnset
+	s2*36
+	% bar 417 - 420
+	\cueClef tenor gis,4^\markup {Vcello Solo.} a!8( gis)
+	fis( e) dis( cis)
+	fis4-> b->
+	cis\trill dis8-^ cis-^ \cueClefUnset
+	s2*56
+	% bar 477 - 480
+	\cueClef treble \voiceOne b4.(^\markup {Clar.} cis16 d)
+	b2
+	b4.( cis16 d)
+	b2 \cueClefUnset \oneVoice
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   T I M P A N I                  #

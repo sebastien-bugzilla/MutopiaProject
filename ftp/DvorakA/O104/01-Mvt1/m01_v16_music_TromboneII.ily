@@ -9,16 +9,20 @@ musicTromboneIIMvtI = \relative c {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*22
+	R1*18
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
-% Bars 21 to 25
 	
-	\mark \default
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+% Bars 21 to 25
+	\mmrPos #-4 R
+	\mmrPos #-7 R \no \mark \default
 	fis2.\ff g4-.
 	fis-. e-. fis2~
 	fis4 r b8. d16 fis8.-> e16
@@ -40,7 +44,7 @@ musicTromboneIIMvtI = \relative c {
 	
 	
 	\mark \default
-	R1*30
+	R1*26
 % Bars 46 to 50
 	
 % Bars 51 to 55
@@ -52,10 +56,10 @@ musicTromboneIIMvtI = \relative c {
 % Bars 66 to 70
 	
 % Bars 71 to 75
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-2 R1
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no \mark \default
 	fis4\f r8 fis g-. fis-. fis-. r
 % Bars 76 to 80
 	fis4 r8 fis g-. fis-. fis-. r
@@ -115,13 +119,17 @@ musicTromboneIIMvtI = \relative c {
 	
 	\mark \default
 % Bars 176 to 180
-	R1*15
+	R1*13
 % Bars 181 to 185
 	
 % Bars 186 to 190
 	
+	
+	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-6 R 
 % Bars 191 to 195
-	R1\fermata \mark \default
+	\mmrPos #-6 R1_\fermata \no \mark \default
 	d'1-^\f
 	dis-^\fz
 	e-^\fz
@@ -167,9 +175,13 @@ musicTromboneIIMvtI = \relative c {
 	
 	\mark \default
 % Bars 261 to 265
-	R1*6
-% Bars 266 to 270
+	R1*4
 	
+	
+	
+	\ni \mmrPos #-7 R1
+% Bars 266 to 270
+	\mmrPos #6 R \no
 	fis,2\ff gis
 	fis2. fis4->
 	ais2 fis
@@ -192,15 +204,15 @@ musicTromboneIIMvtI = \relative c {
 % Bars 301 to 305
 	
 	\mark \default
-	R1*15
+	R1*14
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
-	
-	r2 r4 r8\fermata r
+	\ni \mmrPos #-4 R1
+	\mmrPos #-7 R_\fermata \no
 	fis1\ff
 	ais2 b
 % Bars 321 to 325

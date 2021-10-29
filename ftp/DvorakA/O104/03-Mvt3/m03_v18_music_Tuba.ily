@@ -9,7 +9,7 @@ musicTubaMvtIII = \relative c, {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*40
+	R2*36
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -24,6 +24,10 @@ musicTubaMvtIII = \relative c, {
 	
 % Bars 36 to 40
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #6 R \no
 % Bars 41 to 45
 	b4\f b
 	e4.-> e8
@@ -34,7 +38,7 @@ musicTubaMvtIII = \relative c, {
 	e cis
 	fis fis8-. fis-. 
 	b,4. r8 \mark \default
-	R2*31
+	R2*28
 % Bars 51 to 55
 	
 % Bars 56 to 60
@@ -47,9 +51,9 @@ musicTubaMvtIII = \relative c, {
 	
 % Bars 76 to 80
 	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	b4\f b
 % Bars 81 to 85
 	e4.-> e8
@@ -68,22 +72,22 @@ musicTubaMvtIII = \relative c, {
 	e r e r
 	e r r4
 	R2
-	R
+	\ni \mmrPos #-4 R \no
 % Bars 96 to 100
 	R2*3
 	
 	
-	R2*2
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 101 to 105
 	R2*2
 	
-	R2*5
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 106 to 110
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	R2*3
 	
 	\mark \default
@@ -113,7 +117,7 @@ musicTubaMvtIII = \relative c, {
 	
 % Bars 166 to 170
 	\mark \default
-	R2*36
+	R2*32
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -126,9 +130,13 @@ musicTubaMvtIII = \relative c, {
 	
 % Bars 196 to 200
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-7 R
 % Bars 201 to 205
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 	r4 r8 a\ff \mark \default
 	d,8. d16 d8 r
 	fis8. d16 d8 r
@@ -153,13 +161,17 @@ musicTubaMvtIII = \relative c, {
 % Bars 221 to 225
 	a4 gis8 g \mark \default
 	fis r r4
-	R2*18
+	R2*15
 % Bars 226 to 230
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
 % Bars 241 to 245
 	c'2\pp~
 	c
@@ -236,7 +248,7 @@ musicTubaMvtIII = \relative c, {
 	
 % Bars 346 to 350
 	\bar "||" \key b \major
-	R2*34
+	R2*30
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -249,10 +261,10 @@ musicTubaMvtIII = \relative c, {
 	
 % Bars 376 to 380
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-8 R2
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-6 R \no \mark \default
 % Bars 381 to 385
 	b4\f b
 	a2
@@ -272,9 +284,13 @@ musicTubaMvtIII = \relative c, {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*8
+	R2*4
 % Bars 416 to 420
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 421 to 425
 	b2\f->
 	gis'->
@@ -296,7 +312,7 @@ musicTubaMvtIII = \relative c, {
 	
 	
 	\mark \default
-	R2*32
+	R2*28
 % Bars 451 to 455
 	
 % Bars 456 to 460
@@ -309,6 +325,10 @@ musicTubaMvtIII = \relative c, {
 	
 % Bars 476 to 480
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 481 to 485
 	e2\ppp~
 	e~

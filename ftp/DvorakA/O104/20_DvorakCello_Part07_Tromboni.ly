@@ -36,18 +36,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceTromboneIMvtI" { \cueVoiceTromboneIMvtI }
-\addQuote "cueVoiceTromboneIMvtII" { \cueVoiceTromboneIMvtII }
-\addQuote "cueVoiceTromboneIMvtIII" { \cueVoiceTromboneIMvtIII }
-\addQuote "cueVoiceTromboneIIMvtI" { \cueVoiceTromboneIIMvtI }
-\addQuote "cueVoiceTromboneIIMvtII" { \cueVoiceTromboneIIMvtII }
-\addQuote "cueVoiceTromboneIIMvtIII" { \cueVoiceTromboneIIMvtIII }
-\addQuote "cueVoiceTromboneIIIMvtI" { \cueVoiceTromboneIIIMvtI }
-\addQuote "cueVoiceTromboneIIIMvtII" { \cueVoiceTromboneIIIMvtII }
-\addQuote "cueVoiceTromboneIIIMvtIII" { \cueVoiceTromboneIIIMvtIII }
-\addQuote "cueVoiceTubaMvtI" { \cueVoiceTubaMvtI }
-\addQuote "cueVoiceTubaMvtII" { \cueVoiceTubaMvtII }
-\addQuote "cueVoiceTubaMvtIII" { \cueVoiceTubaMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -69,12 +57,15 @@
 				\formatTromboneIMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTromboneIMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameTromboneIMvtI \musicTromboneIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -89,6 +80,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTromboneIMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTromboneIMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -113,6 +107,9 @@
 				\formatTromboneIMvtIII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTromboneIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameTromboneIMvtIII \musicTromboneIMvtIII
 			}
@@ -133,6 +130,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTromboneIIMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTromboneIIMvtI
 			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
@@ -157,6 +157,9 @@
 				\formatTromboneIIMvtII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTromboneIIMvtII
+			}
+			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameTromboneIIMvtII \musicTromboneIIMvtII
 			}
@@ -177,6 +180,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTromboneIIMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTromboneIIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
@@ -201,6 +207,9 @@
 				\formatTromboneIIIMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTromboneIIIMvtI 
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameTromboneIIIMvtI \musicTromboneIIIMvtI
 			}
@@ -221,6 +230,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTromboneIIIMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTromboneIIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -245,6 +257,9 @@
 				\formatTromboneIIIMvtIII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTromboneIIIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameTromboneIIIMvtIII \musicTromboneIIIMvtIII
 			}
@@ -265,6 +280,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTubaMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTubaMvtI
 			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
@@ -289,6 +307,9 @@
 				\formatTubaMvtII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTubaMvtII
+			}
+			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameTubaMvtII \musicTubaMvtII
 			}
@@ -309,6 +330,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTubaMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTubaMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
