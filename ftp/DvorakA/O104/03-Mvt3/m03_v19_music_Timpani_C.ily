@@ -130,7 +130,7 @@ musicTimpaniMvtIII = \relative c, {
 	
 	
 	\mark \default
-	d8[ r16 d] d8 r
+	d8[\ff r16 d] d8 r
 	d8[ r16 d] d8 r
 % Bars 206 to 210
 	R2*16

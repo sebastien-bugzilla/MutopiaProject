@@ -16,7 +16,7 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	\mark \default
-	R2.*20
+	R2.*18
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -25,8 +25,8 @@ musicTimpaniMvtII = \relative c {
 	
 % Bars 31 to 35
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	d2.\ppp\fermata\startTrillSpan \mark \default
 	g,4\stopTrillSpan r r
 % Bars 36 to 40
@@ -64,19 +64,27 @@ musicTimpaniMvtII = \relative c {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*9
+	R2.*7
 % Bars 86 to 90
 	
-% Bars 91 to 95
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 91 to 95
+	\mmrPos #-4 R \no
 	d'2.:32\pp
 	d:
 	d: \mark \default
 	d8 r r4 r
 % Bars 96 to 100
-	R2.*10
+	R2.*9
 % Bars 101 to 105
 	
+	
+	
+	
+	\ni \mmrPos #-6 R2. \no
 % Bars 106 to 110
 	d2.:32\pp\fermata
 	R2.*13

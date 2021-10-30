@@ -204,6 +204,7 @@ InCueContext = {
 %	\override Beam.length = #7
 	\set fontSize = #-3 %-3
 	\override TupletNumber.avoid-slur = #'ignore
+	\override Script.staff-padding = ##f
 }
 
 OutCueContext = {
@@ -214,4 +215,7 @@ OutCueContext = {
 %	\override Stem.length = #7
 %	\override Beam.length = #7
 	\unset fontSize
+	\revert TupletNumber.avoid-slur
+	\revert Script.staff-padding
+	
 }

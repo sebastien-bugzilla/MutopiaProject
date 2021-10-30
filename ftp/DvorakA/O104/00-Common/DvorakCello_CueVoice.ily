@@ -1782,16 +1782,127 @@ cueVoiceTubaMvtIII = \relative c {
 %#                  C U E   V O I C E   F O R   T I M P A N I                  #
 %###############################################################################
 cueVoiceTimpaniMvtI = \relative c {
-	
+	s1*70
+	% bar 71 - 74
+	\cueClef treble a'''2(^\markup {Viol.I.} ais4 b)
+	b( cis d4. fis8)
+	fis4( a2.)
+	a2 cis,4.(\trill d8) \cueClefUnset
+	s1*114
+	% bar 189 - 191
+	\cueClef treble cis,4^\markup {Vcello Solo.} cis8.( d32 e) cis4 cis8.( d32 e)
+	cis8.( d32 e) g,8.( a32 bes) \cueClef bass e,8.( fis32 g) cis,8.( d32 e) 
+	\tuplet 3/2 4 {g,8-> a-> bes-> e,-> fis-> g-> cis,-> d-> e->} bes->\fermata a-> \cueClefUnset
+	s1*60
+	% bar 252 - 255
+	\cueClef treble d'''2.^\markup {Fl.Ob.} e8( fis)
+	fis4( e bes e)
+	a,( d2 e8 fis)
+	fis4( e bes e) \cueClefUnset
+	s1*82
+	% bar 338 - 342
+	\cueClef treble <ais,,, fis'>16^\markup {Vcello Solo.} q( <b g'>) q( <bis gis'>) q( <cis a'>) q( <cisis ais'>) q( <dis b'>) q( <disis bis'>) q( <eis cis'>) q( 
+	<eisis cisis'>) q( <fisis dis'>) q( <gis e'>) q( <gisis eis'>) q( <ais fis'>) q( <b g'!>) q( <ais fis'>) q( <b g'>) q(
+	<ais fis'>) q( <b g'>) q( <ais fis'>) q( <b g'>) q( <ais fis'>) q( <b g'>) q( <ais fis'>) q( <b g'>) q
+	r4 r8 ais'^\markup {Fl.Ob.} b bis cis ais \cueClefUnset
 }
 cueVoiceTimpaniMvtII = \relative c {
-	
+	s2.*31
+	% bar 32 - 33
+	\cueClef tenor f'8(^\markup {Vcello Solo.} ees16) r ees8( d16) r d8( c16) r
+	\cueClef bass c8( b!16) r c8( b16) r  \tuplet 3/2 4 {d8( c bes)} \cueClefUnset
+	s2.*56
+	% bar 90 - 91
+	\cueClef tenor gis'8.(^\markup {Vcello Solo.} fis16) gis8.( fis16) g8.( fis16)
+	fis8.( e16) e8.( d16) d8.( cis16) \cueClefUnset
+	s2.*13
+	% bar 105
+	r8 d,,(^\markup {Vcello Solo.} \tuplet 3/2 4 {g b d e g b)}
 }
 cueVoiceTimpaniMvtIII = \relative c {
-	
+	s2*8
+	% bar 9 - 14
+	\cueClef treble e'8^\markup {Oboe.} r fis r
+	\tuplet 3/2 4 {g8 a g} fis r
+	b4 g8 e
+	ais4 r
+	e'^\markup {Viol.I.} b8 g
+	b4. r8 \cueClefUnset
+	s2*22
+	% bar 37 - 40
+	cis,4->^\markup {Vcello Solo.} dis->
+	e8 fis a16( g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis
+	b4 \cueClef treble \tuplet 5/4 4 {fis'16(^\markup {Viol.} b cis d fis)} \cueClefUnset
+	s2*32
+	% bar 73 - 79
+	\cueClef treble \stemUp fis,4^\markup {Ob.Fl.} b
+	cis8( d16 cis b4)
+	fis' e16( d cis b)
+	cis4. r8 \stemNeutral
+	cis4( dis)
+	e8( fis a16 g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis \cueClefUnset
+	s2*121
+	% bar 201 - 203
+	\cueClef tenor \setSextolet \tuplet 6/4 4 {g16(^\markup {Vcello Solo.} bes g e g e cis e cis bes cis bes)
+	g( bes g e g e \cueClef bass cis e cis bes cis bes)} \unsetSextolet
+	\once \tupletUp \tuplet 17/16 2 {a32( b cis d e fis g a b \cueClef tenor cis d e fis g a b cis)} \cueClefUnset
+	s2*46
+	% bar 250 - 253
+	cis,4^\markup {Vcello Solo.} dis
+	e8 fis a16( g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis
+	b4 \cueClef treble \tuplet 5/4 4 {fis'16(^\markup {Ob.} b cis d fis)} \cueClefUnset
+	s2*45
+	% bar 299 - 302
+	d,4(^\markup {Vcello Solo.} g)
+	d( g)
+	\cueClef treble \stemUp g c~
+	c8 g( fis e) \cueClefUnset \stemNeutral
+	s2*74
+	% bar 377 - 380
+	\cueClef treble fis16(^\markup {Vcello Solo.} b dis, gis) fis4
+	fis16( b dis, gis) fis4
+	fis16( b) dis, gis fis8 fis16( gis)
+	ais b cis dis e fis gis ais \cueClefUnset
+	s2*40
+	% bar 421 - 424
+	\transpose c e {
+		\relative c' {
+			\cueClef treble \stemUp d2->^\markup {Trbe.I.}
+			g->
+			a->
+			b4-> a-> \cueClefUnset \stemNeutral
+		}
+	}
+	s2*55
+	% bar 480 - 484
+	\cueClef treble b2\trill^\markup {Vcello Solo.}
+	b4( a!)
+	g!( fis)
+	a!( g!~
+	g8. a!32 g! fis8 e) \cueClefUnset
 }
 cueVoiceTriangoloMvtIII = \relative c {
-	
+	s2*16
+	% bar 17 - 23
+	\slashedGrace e''8 e4^\markup {Viol.I.} b8 g
+	\slashedGrace g'8 g4 e8 c!
+	\slashedGrace g'8 g4 e8 c!
+	\slashedGrace c'!8 c4 g8 e
+	fis'2:16
+	fis:
+	fis8\noBeam ais,,16 fis e'8 cis16 ais
+	s2*49
+	% bar 73 - 79
+	\voiceOne fis4^\markup {Ob.Fl.} b
+	cis8( d16 cis b4)
+	fis'( e16 d cis b)
+	cis4. r8
+	cis4( dis)
+	e8( fis a16 g fis e)
+	\tuplet 5/4 4 {d( e g fis e)} d8 cis \oneVoice
 }
 %###############################################################################
 %#                C U E   V O I C E   F O R   S O L O C E L L O                #

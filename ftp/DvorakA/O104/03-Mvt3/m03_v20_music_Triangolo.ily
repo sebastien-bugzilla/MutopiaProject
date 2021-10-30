@@ -5,44 +5,48 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicTriangoloMvtIII = \relative c {
-	\clef bass
+	\clef treble
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*23
+	R2*16
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 21 to 25
-	
-	
-	
-	r4 b4:32\f
-	b2:
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	r4 c''4:32\f
+	c2:
 % Bars 26 to 30
-	b:
-	b:
-	b:
-	b8 r r4
+	c:
+	c:
+	c:
+	c8 r r4
 	R2*11
 % Bars 31 to 35
 	
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	b2:32\f
-	b:
-	b:
-	b:
-	b:
+	c2:32\f
+	c:
+	c:
+	c:
+	c:
 % Bars 46 to 50
-	b:
-	b:
-	b4: b8 r \mark \default
-	R2*31
+	c:
+	c:
+	c4: c8 r \mark \default
+	R2*24
 % Bars 51 to 55
 	
 % Bars 56 to 60
@@ -53,21 +57,25 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 71 to 75
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 76 to 80
-	
-	
-	
-	
-	b2:32\f
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	c2:32\f
 % Bars 81 to 85
-	b:
-	b:
-	b:
-	b:
-	b:
+	c:
+	c:
+	c:
+	c:
+	c:
 % Bars 86 to 90
-	b: \mark \default
-	b4 r
+	c: \mark \default
+	c4 r
 	R2*23
 % Bars 91 to 95
 	

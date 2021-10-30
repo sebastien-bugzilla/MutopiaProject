@@ -28,10 +28,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceTimpaniMvtI" { \cueVoiceTimpaniMvtI }
-\addQuote "cueVoiceTimpaniMvtII" { \cueVoiceTimpaniMvtII }
-\addQuote "cueVoiceTimpaniMvtIII" { \cueVoiceTimpaniMvtIII }
-\addQuote "cueVoiceTriangoloMvtIII" { \cueVoiceTriangoloMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -53,12 +49,15 @@
 				\formatTimpaniMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTimpaniMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameTimpaniMvtI \musicTimpaniMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -73,6 +72,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTimpaniMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTimpaniMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -97,6 +99,9 @@
 				\formatTimpaniMvtIII
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTimpaniMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameTimpaniMvtIII \musicTimpaniMvtIII
 			}
@@ -117,6 +122,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTriangoloMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTriangoloMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions

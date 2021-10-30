@@ -53,7 +53,7 @@ musicTimpaniMvtI = \relative c, {
 	
 	
 	\mark \default
-	R1*30
+	R1*26
 % Bars 46 to 50
 	
 % Bars 51 to 55
@@ -65,10 +65,10 @@ musicTimpaniMvtI = \relative c, {
 % Bars 66 to 70
 	
 % Bars 71 to 75
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	d4\f r8 d d d d r
 % Bars 76 to 80
 	d4 r8 d d d d r
@@ -134,13 +134,17 @@ musicTimpaniMvtI = \relative c, {
 	
 	\mark \default
 % Bars 176 to 180
-	R1*15
+	R1*13
 % Bars 181 to 185
 	
 % Bars 186 to 190
 	
+	
+	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-4 R
 % Bars 191 to 195
-	R1\fermata \mark \default
+	\mmrPos #-6 R1_\fermata \no \mark \default
 	d2\ff\startTrillSpan r8\stopTrillSpan d16-. d-. d8 r
 	d2\startTrillSpan r8\stopTrillSpan d16-. d-. d8 r
 	d2\startTrillSpan r8\stopTrillSpan d16-. d-. d8 r
@@ -182,9 +186,13 @@ musicTimpaniMvtI = \relative c, {
 % Bars 246 to 250
 	
 	\mark \default
-	R1*8
+	R1*4
 % Bars 251 to 255
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 256 to 260
 	fis,1:32\fz\dim
 	fis:\p
@@ -243,15 +251,19 @@ musicTimpaniMvtI = \relative c, {
 	
 	
 	\mark \default
-	R1*19
+	R1*15
 % Bars 326 to 330
 	
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
-% Bars 341 to 345
 	
+	\ni \mmrPos #-10 R1
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+% Bars 341 to 345
+	\mmrPos #-4 R \no
 	b1:32\ff
 	b:
 	b:
