@@ -9,7 +9,7 @@ musicSoloCelloMvtIII = \relative c {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*32
+	R2*22
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -18,11 +18,19 @@ musicSoloCelloMvtIII = \relative c {
 	
 % Bars 21 to 25
 	
+	
+	\ni \clef treble \mmrPos #-8 R2
+	\mmrPos #-6 R
+	\mmrPos #-4 R
 % Bars 26 to 30
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 31 to 35
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \clef bass
 	fis4->_\mfrisoluto b->
 	cis8 d16 cis b4
 	fis'4-> e16( d cis b)
@@ -33,11 +41,15 @@ musicSoloCelloMvtIII = \relative c {
 	\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
 	b4. r8
 % Bars 41 to 45
-	R2*7
+	\ni \clef treble \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 46 to 50
-	
-	
-	\clef treble r4 r8 a'\f \mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	r4 r8 a'\f \mark \default
 	<<{fis'4 } \\ {a,32(\fz d a d a d a d)}>> a16-.[ r32 a-. b16-. r32 a-.]
 	<<{d4 } \\ {fis,32(\fz a fis a fis a fis a) }>> fis16-.[ r32 fis-. g16-. r32 fis-.]
 % Bars 51 to 55
@@ -80,7 +92,7 @@ musicSoloCelloMvtIII = \relative c {
 	R2*6
 % Bars 86 to 90
 	\mark \default
-	R2*24
+	R2*20
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -89,10 +101,10 @@ musicSoloCelloMvtIII = \relative c {
 	
 % Bars 106 to 110
 	
-	
-	
-	
-	\mark \default
+	\ni \clef treble \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #4 R
+	<<\mmrPos #6 R {s4 \clef bass s} >> \no \mark \default
 % Bars 111 to 115
 	<b, d b'>8.(\f fis'16-.) fis4
 	<d, b' g'>8.( fis'16-.) d'4\fz~
@@ -115,8 +127,8 @@ musicSoloCelloMvtIII = \relative c {
 	cis8.( fis,16\> fis8. cis'16)
 	cis( d e d cis8 b)\!
 	ais(\p cis4.)
-	R2*2
-	
+	\ni \mmrPos #7 R2
+	\mmrPos #7 R \no
 % Bars 131 to 135
 	cis16(\p dis eis dis cis8 b)
 	ais8(\< cis4.)\!
@@ -215,10 +227,10 @@ musicSoloCelloMvtIII = \relative c {
 	
 % Bars 221 to 225
 	\mark \default
-	R2*3
-	
-	
-	\clef treble r4 r8 cis\mf
+	\clef treble \ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
+	r4 r8 cis\mf
 % Bars 226 to 230
 	cis8.(_\appassionato eis,16) eis8.( cis'16)
 	cis8.( fis,16) fis8.( cis'16)
@@ -261,17 +273,17 @@ musicSoloCelloMvtIII = \relative c {
 	
 	\mark \default
 % Bars 261 to 265
-	R2*20
+	R2*16
 % Bars 266 to 270
 	
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
-	
-	
-	
-	\mark \default \bar "||"
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default \bar "||"
 % Bars 281 to 285
 	b4_\mpdolcecantabile(-- b~--
 	b8) a( b c)
@@ -334,8 +346,8 @@ musicSoloCelloMvtIII = \relative c {
 	c( ees, c' des) des( ees, des' c) \mark \default
 % Bars 331 to 335
 	cis!8-> r r4
-	R2 \clef bass
-	r4 \tuplet 6/4 4 {a,,16(\mf\< cis) cis( e) e( a)
+	\ni \mmrPos #-6 R2 \no
+	r4 \clef bass \tuplet 6/4 4 {a,,16(\mf\< cis) cis( e) e( a)
 	a( cis) cis( e) e( a)} a4\startTrillSpan\!
 	gis8\p\stopTrillSpan r r4
 % Bars 336 to 340
@@ -394,9 +406,9 @@ musicSoloCelloMvtIII = \relative c {
 	ais-. b-. cis-. dis-. e-. fis-. gis-. ais-.\! \mark \default
 % Bars 381 to 385
 	b4 r
-	R2*3
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	\clef bass fis,,4->\f b->
 % Bars 386 to 390
 	cis8( dis16 cis) b4
@@ -442,9 +454,9 @@ musicSoloCelloMvtIII = \relative c {
 	cis\startTrillSpan dis8-^\stopTrillSpan cis-^
 % Bars 421 to 425
 	b4 r
-	R2*3
-	
-	
+	\clef treble \ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	\clef bass r4 fis,,-^\ff
 % Bars 426 to 430
 	b \tuplet 3/2 4 {cis8( dis cis)}
@@ -535,13 +547,25 @@ musicSoloCelloMvtIII = \relative c {
 	b2\ff~
 	b~
 	b4 r
-	R2*17
+	R2
 % Bars 501 to 505
-	
+	\ni \mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #-4 R
 % Bars 506 to 510
-	
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 511 to 515
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-9 R
+	\mmrPos #4 R
 % Bar 516
-	\bar "|."
+	\mmrPos #4 R \no \bar "|."
 }

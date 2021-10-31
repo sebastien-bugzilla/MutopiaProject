@@ -1908,13 +1908,166 @@ cueVoiceTriangoloMvtIII = \relative c {
 %#                C U E   V O I C E   F O R   S O L O C E L L O                #
 %###############################################################################
 cueVoiceSoloCelloMvtI = \relative c {
-	
+	% bar 1 - 4
+	b'4.\mp(^\markup {Clar.} cis16 d b2)
+	b4.( a16 fis b2)
+	b8.--\< cis16 d8.-- cis16 b4-- a--\!
+	g-- fis-- e--\> d--\!
+	s1*18
+	% bar 23 - 24
+	b'''4.^\markup {Viol.I}\ff cis16 d b2
+	b4. a16 fis b2
+	s1*20
+	% bar 45 - 46
+	fis,4.(^\markup {Clar.} gis16 ais fis2)
+	fis4.( e16 cis fis2)
+	s1*28
+	% bar 75 - 76
+	d'4->^\markup {Viol.} a'16( fis d a) g'8-. fis-. fis-. r
+	d4-> fis16( d a fis) e'8-. d-. d-. r
+	s1*7
+	% bar 84 - 86
+	d,8^\markup {Viol.} r e4(\pp d e
+	d e2.)
+	<b dis>1:16
+	s1*121
+	% bar 208 - 209
+	<aes, f' c' d>1\pp~^\markup {Pos.}
+	q
+	s1*8
+	% bar 218 - 223
+	\voiceOne ees''4\<(^\markup {Cor.} ces'2 bes4)\!
+	aes( ges8.\> fes16 fes4 d!)\!
+	ees(\mf ges8. fes16) fes4(_\dimmarkup d!)
+	ees( ges8. fes16) fes4( d!)
+	ees(\p\> fes ees fes)\!
+	ees2.\pp s4 \oneVoice
+	s1*44
+	% bar 268 - 270
+	b''2(^\markup {Viol.} fis4) b
+	cis cis dis8(-^ fis-^ dis-^ b)-^ 
+	cis2. s4
+	s1*49
+	% bar 320 - 322
+	ais4.^\markup {Viol.I.} gis16 fis b2
+	b8.(-> ais32 b) cis8.(-> bis32 cis) dis8.(-> cisis32 dis) e8.(->\< dis32 e)
+	fis8.(-> eis32 fis)\! a!8(\fz gis) fis( e) dis( cis)
 }
 cueVoiceSoloCelloMvtII = \relative c {
-	
+	% bar 1 - 8
+	\voiceOne d''2\p(^\markup {Orch.} e8. c16)
+	d4 r8 d(\< g d\!
+	b4\> b \acciaccatura d8 c4)\!
+	b4.( a8 g4)
+	d'4 d \tuplet 5/4 4 {e16( fis a g e)}
+	d4. r8 d8.(\< e16)\! \oneVoice
+	<ais, cis fis>2.\fz(
+	<a! c! fis>4) e' s
+	s2.*6
+	% bar 15
+	\cueClef treble <<{\InCueContext d4(^\markup {Clar.} g fis)} \\ {\InCueContext b,2.\pp}>> \cueClefUnset
+	s2.*23
+	% bar 39 - 42
+	g'2\ff^\markup {Tutti} g16-^ bes-^ a-^ g-^ 
+	g2 bes8. c16
+	d4-> bes-> a->
+	\voiceOne g4. r8 s4 \oneVoice
+	s2.*23
+	% bar 66 - 68
+	b2^\markup {Tutti} d,8. e16
+	fis4-> d-> cis->
+	\voiceOne b \oneVoice s s
+	s2.*26
+	% bar 95 - 104
+	\voiceOne d,2^\markup {Orch.Cor.}  e8 c \oneVoice
+	d4 r8 d(--\< g-- d--)\!
+	b4 \once \tupletUp \tuplet 3/2 4 {b8\> b b } d( c)\!
+	b4._\dimmarkup a8 g4
+	a4\< b c
+	d2.\! 
+	e4->\< fis-> g->
+	b2\ff-> a4\>
+	g( fis e)\!
+	e(\p\> d4. c8)\!
 }
 cueVoiceSoloCelloMvtIII = \relative c {
-	
+	s2*22
+	% bar 23 - 32
+	<ais'' cis fis>8\ff^\markup {Viol.} ais16 fis  e'8-> cis16 ais
+	g'8-> e16 cis ais'8-> g16 fis
+	cis'8-> b16 ais g'8-> fis16 eis
+	g8-> fis16 eis g8-> fis16 eis
+	fis8\ff fis16 fis fis8 fis16 fis
+	fis8 fis16 fis fis8 fis16 fis
+	\once \override Beam.auto-knee-gap = #3 fis8 fis,,16 fis fis8 fis16 fis
+	fis8 fis16 fis fis8 fis16 fis
+	fis8\fz fis16 fis r4
+	fis8\fz fis16 fis r4
+	s2*8
+	% bar 41 - 48
+	fis'4->\ff^\markup {Tutti} b->
+	cis8->( d16 cis) b4
+	fis' e16\(( d) cis( b)\)
+	cis4. r8
+	cis4-> dis->
+	e8(-> fis) a16( g fis e)
+	\tuplet 5/4 4 {d(\< e g fis\! e\>)} d8-. cis-.\!
+	\once \stemUp b4. s8
+	s2*58
+	% bar 107 - 110
+	g'16(^\markup {Viol.}\ffz\> fis eis fis eis fis g fis)\!
+	g,(\fz fis eis fis eis\> fis gis fis)\!
+	g,(\fp fis eis fis eis fis g fis
+	g fis g fis) g,(\fp^\markup {Vla.} fis g fis)
+	s2*18
+	% bar 129 - 130
+	g'16(\p^\markup {Ob.} a! b a g8\> e
+	cis fis4.)\!
+	s2*91
+	% bar 222 - 225
+	fis''8.\prall\f^\markup {Viol.I.} fis,16 fis8.\prall cis'16
+	cis8.\prall cis,16 cis8.\prall fis16
+	fis8.\prall fis,16 fis8.\prall cis'16
+	cis8.\prall cis,16 cis8 s
+	s2*51
+	% bar 277 - 280
+	\cueClef treble d'4(\p\<^\markup {Ob.} c~
+	c8 b \tuplet 3/2 4 {c e g\!)}
+	b2\>(
+	a\pp) \cueClefUnset
+	s2*50
+	% bar 331 - 333
+	\stemUp s4 <a, cis>4^\markup {Cl.Fg.}~
+	<a cis>8\p( <b d> <a cis> <b d>)
+	<cis e>4 s \stemNeutral
+	s2*48
+	% bar 382 - 384
+	cis'8(^\markup {Viol.I.} dis16 cis) b4->
+	cis8( dis16 cis) b4->
+	cis8( dis16 cis) b4->
+	s2*37
+	% bar 422 - 424
+	b,2->^\markup {Trbe.} 
+	cis->
+	dis4-> cis->
+	s2*76
+	% bar 501 - 516
+	fis,,2-^^\markup {Trbni.}
+	b-^
+	cis-^
+	\tuplet 3/2 2 {cis4-^ dis-^ cis-^}
+	<dis b'>^\markup {Trbe.} fis'
+	e8 dis cis b
+	b4 fis'
+	e8 dis cis b
+	fis'-.\ff^\markup {Viol.} b-. \tuplet 3/2 8 {cis16( dis cis)} b8 
+	fis-. b-. \tuplet 3/2 8 {cis16( dis cis)} b8 
+	\tuplet 3/2 8 {cis16( dis cis)} b8 \tuplet 3/2 8 {cis16( dis cis)} b8 
+	\tuplet 3/2 8 {e16( fis e)} d8 \tuplet 3/2 4 {g16( a g)} fis8
+	b r r4
+	<fis,, dis' b'>8 r q r
+	q b,4\fz b8
+	b r r4
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   V I O L I N O I                 #

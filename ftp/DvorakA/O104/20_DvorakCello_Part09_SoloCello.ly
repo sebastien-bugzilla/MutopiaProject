@@ -27,9 +27,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceSoloCelloMvtI" { \cueVoiceSoloCelloMvtI }
-\addQuote "cueVoiceSoloCelloMvtII" { \cueVoiceSoloCelloMvtII }
-\addQuote "cueVoiceSoloCelloMvtIII" { \cueVoiceSoloCelloMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -51,12 +48,15 @@
 				\formatSoloCelloMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceSoloCelloMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameSoloCelloMvtI \musicSoloCelloMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -71,6 +71,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatSoloCelloMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceSoloCelloMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -93,6 +96,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatSoloCelloMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceSoloCelloMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions

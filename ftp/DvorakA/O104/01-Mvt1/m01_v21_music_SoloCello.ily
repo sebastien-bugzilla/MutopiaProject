@@ -9,7 +9,11 @@ musicSoloCelloMvtI = \relative c' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*22
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R1*18
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -19,7 +23,9 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 21 to 25
 	
 	\mark \default
-	R1*22
+	\clef treble \ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
+	R1*20
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -33,7 +39,9 @@ musicSoloCelloMvtI = \relative c' {
 	
 	\mark \default
 % Bars 46 to 50
-	R1*30
+	\ni \mmrPos #8 R1
+	\mmrPos #6 R \no
+	R1*28
 % Bars 51 to 55
 	
 % Bars 56 to 60
@@ -47,13 +55,18 @@ musicSoloCelloMvtI = \relative c' {
 	
 	
 	\mark \default
-	R1*12
+	\ni \mmrPos #-7 R1
 % Bars 76 to 80
-	
+	\mmrPos #-6 R \no
+	R1*7 \clef bass
 % Bars 81 to 85
 	
-% Bars 86 to 90
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+% Bars 86 to 90
+	\mmrPos #-4 R \no
 	b4._\frisoluto\downbow cis16 dis b2\upbow
 	b4.\downbow a16 fis b2\upbow
 	b8.\< dis16 fis8.-> e16 dis4-^\! <a, fis' c'>-^\fz
@@ -181,7 +194,7 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 191 to 195
 	\tuplet 3/2 4 {g,8->_\pesante a-> bes-> e,-> fis-> g-> cis,-> d-> e->} bes->\fermata a-> \mark \default
 	d,4 r r2
-	R1*16
+	R1*15
 % Bars 196 to 200
 	
 % Bars 201 to 205
@@ -189,16 +202,21 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 206 to 210
 	
 	
-	\mark \default
-	R1*14
+	\ni \mmrPos #-6 R1 \mark \default
+	\mmrPos #-6 R1 \no
+	R1*8
 % Bars 211 to 215
 	
 % Bars 216 to 220
 	
+	
+	\ni \mmrPos #-4 \clef treble R1
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 221 to 225
-	
-	
-	\clef tenor r2 r4 ees''\mf \mark \default
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
+	\oneVoice f'''2\rest b,4\rest \clef tenor ees,\mf \mark \default
 	aes2.(_\moltoespressivoesostenuto bes8 ces)
 	aes2. aes4
 % Bars 226 to 230
@@ -252,8 +270,8 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 266 to 270
 	<e ais>4\fz \tuplet 19/12 1 {<e e'>16( <eis eis'> <fis fis'> <g g'> <gis gis'> <a! a'!> \clef treble <ais ais'> <b b'> <bis bis'> <cis cis'> <d d'> <dis dis'> <e! e'!> <eis eis'> <fis fis'> <g! g'!> <gis gis'> <a! a'!> <ais ais'>)}
 	<b b'>4-^ r r2
-	R1*2
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	r2 r4 \clef bass fis,\f
 % Bars 271 to 275
 	dis'2_\moltoespressesostenuto~ dis8 cis( b gis)
@@ -313,11 +331,11 @@ musicSoloCelloMvtI = \relative c' {
 	ais4 ais8.\fz( b32 cis) ais4 ais8.(\fz b32 cis)
 	ais8.(\fz b32 cis) e,8.(\fz fis32 g!) \clef bass cis,8.(\fz d32 e) ais,8.(\fz b32 cis)
 	\tuplet 3/2 4 {e,8\ff-> fis-> g!-> cis,-> dis-> e-> ais,-> b-> cis-> } g!\fermata fis
-	b4 r r2
-	R1*3
+	b4 r r2 \clef treble
+	\ni \mmrPos #-4 R1
 % Bars 321 to 325
-	
-	\clef treble \mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	<b' b'>4.-^^\moltoappassionato_\ffcolottavaadlib <cis cis'>16 <dis dis'> <b b'>2
 	<ais ais'>4.-^ <gis gis'>16 <fis fis'> <b b'>2
 	\acciaccatura b8 b'4_\fzmarkup\< \acciaccatura cis,8 cis'4_\fzmarkup \acciaccatura  dis,8 dis'4_\fzmarkup \acciaccatura e,8 e'4_\fzmarkup

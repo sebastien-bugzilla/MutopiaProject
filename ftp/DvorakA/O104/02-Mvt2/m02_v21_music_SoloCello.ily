@@ -5,15 +5,19 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicSoloCelloMvtII = \relative c' {
-	\clef bass
+	\clef treble
 	\key g \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*7
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 6 to 10
-	
-	
-	r4 r d_\pdolce
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\voiceOne r4 r \oneVoice \clef bass d_\pdolce
 	d2 e8.( c16)
 	d4 r8 d( g d)
 % Bars 11 to 15
@@ -21,7 +25,7 @@ musicSoloCelloMvtII = \relative c' {
 	b(_\crescmarkup g) d8.(\< b16)
 	b2\fp\>( a4) \mark \default
 	g\p\> r\! r
-	R2.
+	\ni \mmrPos #-4 R2. \no
 % Bars 16 to 20
 	r16 c\p\<( e fis g c\! e fis\> g a g e)\!
 	g4. r8 r4
@@ -38,10 +42,10 @@ musicSoloCelloMvtII = \relative c' {
 	bes4\fz\<~ bes8. bes,32( cis) \tuplet 6/4 4 {cis16( e) e( g) g( bes)\!} \clef treble
 	d2\f \tuplet 3/2 4 {d8(\< e f)\!}
 	f2\fz\>-> e8.( d16)\!
-	d8(->_\espr c16) r d8->(_\espr c16) r c8(->_\espr b16) r
-	b8(->_\espr bes16) r bes8(->_\espr a16) r a8(->_\espr gis16) r \clef tenor
+	d8(->_\soufflet c16) r d8->(_\soufflet c16) r c8(->_\soufflet b16) r
+	b8(->_\soufflet bes16) r bes8(->_\soufflet a16) r a8(->_\soufflet gis16) r \clef tenor
 % Bars 31 to 35
-	aes8(_\pdim_\espr g16) r g8(_\espr fis!16) r fis8(_\espr f16) r 
+	aes8(_\pdim_\soufflet g16) r g8(_\soufflet fis!16) r fis8(_\soufflet f16) r 
 	f8(\pp ees16) r f8( ees16) r d8( c16) r
 	c8( b!16) r c8( b16) r \clef bass \tuplet 3/2 4 {d8( c b)}
 	e2(\ppp d4\fermata \mark \default
@@ -50,11 +54,11 @@ musicSoloCelloMvtII = \relative c' {
 	R2.*3
 	
 	\bar "||" \key g \minor
-	R2.*3
-	
+	\clef treble \ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 41 to 45
-	
-	r4 r g\mp
+	\mmrPos #-4 R
+	r4 r \no \clef bass g\mp
 	d'4._\moltoespressivo c8(-- bes-- a--)
 	g4 g \tuplet 3/2 4 {g8( a bes)}
 	c4. a8( f ees)
@@ -83,9 +87,9 @@ musicSoloCelloMvtII = \relative c' {
 	e8.(\pp d16) e8.( d16) d8.( cis16) \bar "||" \key g \major \clef bass \mark \default
 	b4 r r
 % Bars 66 to 70
-	R2.*2
-	
-	r4 b,16\f\<-^ d-^ cis-^ b-^ \tuplet 5/4 4 {b( d fis b d)} \clef treble
+	\clef treble \ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	r4 \clef bass b,16\f\<-^ d-^ cis-^ b-^ \tuplet 5/4 4 {b( d fis b d)} \clef treble
 	d32--^\ten\fp([ fis b fis] b[ fis d fis]) d--[^\ten_\dimmarkup( fis b fis] cis[--^\ten e a e]) b[--^\ten( d g d] a--[^\ten cis fis cis]) \clef bass
 	g[--(^\ten b e b] e[ b g b]) g[( b e b] g[ b e b]) \tuplet 6/4 4 {g16( b a cis b d)}
 % Bars 71 to 75
@@ -119,12 +123,16 @@ musicSoloCelloMvtII = \relative c' {
 	fis8.( g16) g8.( fis16) fis4 \mark \default
 	g8 r r4 r
 % Bars 96 to 100
-	R2.*9
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\clef tenor \mmrPos #-4 R
 % Bars 101 to 105
-	
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R 
+	\mmrPos #-4 R \no \clef bass
 	r8 d,\p\<( \tuplet 3/2 4 {g b d e g b\!)}
 % Bars 106 to 110
 	<<{ 
