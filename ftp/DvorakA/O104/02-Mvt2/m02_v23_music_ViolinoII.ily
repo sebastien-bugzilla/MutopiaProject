@@ -16,14 +16,14 @@ musicViolinoIIMvtII = \relative c' {
 	
 	
 	\mark \default
-	R2.*11
+	R2.*8
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
-	
-	
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	d2.\pp\<
 % Bars 26 to 30
 	cis\fz\<
@@ -129,14 +129,14 @@ musicViolinoIIMvtII = \relative c' {
 	
 	
 	R2.\fermata \mark \default
-	R2.*11
+	R2.*9
 % Bars 151 to 155
 	
 % Bars 156 to 160
 	
 	
-	
-	
+	\ni \mmrPos #-7 R2.
+	\mmrPos #-7 R \no
 	r4 g,2\((\p\<
 % Bars 161 to 165
 	aes\fz\>) a4\)\!

@@ -2147,13 +2147,48 @@ cueVoiceViolinoIMvtIII = \relative c {
 %#                C U E   V O I C E   F O R   V I O L I N O I I                #
 %###############################################################################
 cueVoiceViolinoIIMvtI = \relative c {
-	
+	s1*8
+	% bar 9 - 10
+	fis'4.(^\markup {Viol.I.} gis16 a fis2)
+	fis4.( e16 cis fis2)
 }
 cueVoiceViolinoIIMvtII = \relative c {
-	
+	s2.*21
+	% bar 22 - 24
+	\cueClef alto g'2(^\markup {Viola.} a8 fis)
+	f2( g8 e)
+	ees2( f8 d) \cueClefUnset
+	s2.*133
+	% bar 158 - 159
+	\cueClef bass b4~^\markup {Vcello Solo.} b16 g'( fis d) b'( g fis e')
+	d( b g' fis) \cueClef treble d( b' g fis \tuplet 5/4 4 {e' d b b' a)} \cueClefUnset
 }
 cueVoiceViolinoIIMvtIII = \relative c {
-	
+	s2*8
+	% bar 9 - 12
+	e'8^\markup {Ob.} r fis r
+	\tuplet 3/2 4 {g a g} fis r
+	b4 g8 e
+	ais4 r
+	s2*101
+	% bar 114 - 115
+	r4 d,16-.^\markup {Fl.Cl.} d-. fis-. b-.
+	d-. d-. fis-. b-. d8-. b-.
+	s2*3
+	% bar 119 - 120
+	r4 fis,16 fis a cis
+	fis fis a cis fis8 cis
+	s2*44
+	% bar 165 - 168
+	\stemUp r8^\markup {Vcello Solo.} g,( a b)
+	cis( \tuplet 3/2 8 {b16 cis b)} a8( g16 fis)
+	e'4(^\markup {Clar.} cis)
+	e( cis) \stemNeutral
+	s2*30
+	% bar 199 - 201
+	\stemUp \cueClef alto g8^\pizz^\markup {Viola.} a, r4
+	\cueClef bass g8^\markup {Cello} a, r4
+	g'8^\markup {Basso.} a, r4 \cueClefUnset \stemNeutral
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   V I O L A                    #

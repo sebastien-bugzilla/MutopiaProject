@@ -9,12 +9,16 @@ musicViolinoIIMvtIII = \relative c'' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*12
+	R2*8
 % Bars 6 to 10
 	
+	
+	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
 % Bars 11 to 15
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	b4->\p g8-. e-.
 	a4. r8
 	\slashedGrace b8 b4->\fz g8-._\crescmarkup e-.
@@ -122,9 +126,17 @@ musicViolinoIIMvtIII = \relative c'' {
 	eis\p fis) r8 r4
 	R2 \mark \default
 % Bars 111 to 115
-	R2*10
-% Bars 116 to 120
+	R2*3
 	
+	
+	\ni \mmrPos #-8 R2
+	\mmrPos #-8 R \no
+% Bars 116 to 120
+	R2*3
+	
+	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R \no
 % Bars 121 to 125
 	b,,16(\mp cis b cis b cis b cis)
 	ais( cis ais cis  ais cis ais cis)
@@ -144,7 +156,7 @@ musicViolinoIIMvtIII = \relative c'' {
 % Bars 141 to 145
 	
 	\mark \default
-	R2*24
+	R2*22
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -153,10 +165,14 @@ musicViolinoIIMvtIII = \relative c'' {
 	
 % Bars 161 to 165
 	
-% Bars 166 to 170
-	\mark \default
-	R2*2
 	
+	
+	
+	\ni \mmrPos #-6 R2
+% Bars 166 to 170
+	\mmrPos #-6 R  \mark \default
+	\mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r8 e'(\pp\< a4~
 	a\! d)\>
 % Bars 171 to 175
@@ -183,12 +199,16 @@ musicViolinoIIMvtIII = \relative c'' {
 	r8 a(\< gis4\!
 % Bars 191 to 195
 	g!8)\p r r4
-	R2*11
+	R2*7
 % Bars 196 to 200
 	
+	
+	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
 % Bars 201 to 205
-	
-	
+	\mmrPos #-6 R \no
+	R 
 	r4 r8 <e cis'>\ff \mark \default
 	d'8. a16 a8 r
 	b8. a16 a8 r

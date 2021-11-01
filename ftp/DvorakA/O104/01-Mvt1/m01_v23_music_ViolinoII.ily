@@ -9,9 +9,13 @@ musicViolinoIIMvtI = \relative c' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*10
+	R1*8
 % Bars 6 to 10
 	
+	
+	
+	\ni \mmrPos #7 R1
+	\mmrPos #7 R \no
 % Bars 11 to 15
 	r4 cis8.\pp( e16 ais,8. cis16 g8. b16
 	ais8) r cis8.( e16 ais,8. cis16 g8. b16
