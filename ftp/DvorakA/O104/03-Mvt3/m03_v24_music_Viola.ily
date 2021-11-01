@@ -9,12 +9,16 @@ musicViolaMvtIII = \relative c'' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*12
+	R2*8
 % Bars 6 to 10
 	
+	
+	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
 % Bars 11 to 15
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	g4->\p e8-. b-.
 	dis4. r8
 	\slashedGrace g8 g4->\fz e8-._\crescmarkup b-.

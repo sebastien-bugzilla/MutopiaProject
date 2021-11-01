@@ -2194,13 +2194,28 @@ cueVoiceViolinoIIMvtIII = \relative c {
 %#                    C U E   V O I C E   F O R   V I O L A                    #
 %###############################################################################
 cueVoiceViolaMvtI = \relative c {
-	
+	% no cue Voice for Violin II in mvt I
 }
 cueVoiceViolaMvtII = \relative c {
-	
+	s2.*19
+	% bar 20 - 21
+	\cueClef bass r16 c(^\markup {Vcello Solo.} e fis g c e g) gis4
+	\cueClef tenor a8(-> b-> c2->) \cueClefUnset
+	s2.*100
+	% bar 122 - 126
+	\cueClef bass \grace {d,,16( e} d4)^\markup {Vcello Solo.} \grace {d'16( e} d4) \cueClef treble \grace {d'16( e} d4)~
+	d16( e) e( d) d( c) c( g) g( fis) fis( e)
+	e( g fis e) e4 e16( g fis e)
+	e4 e16( g fis e) e4~
+	e8 g( fis4 e) \cueClefUnset
 }
 cueVoiceViolaMvtIII = \relative c {
-	
+	s2*8
+	% bar 9 - 12
+	\cueClef treble e'8^\markup {Oboe.} r fis r
+	\tuplet 3/2 4 {g a g} fis r
+	b4 g8 e 
+	ais4 r \cueClefUnset
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #

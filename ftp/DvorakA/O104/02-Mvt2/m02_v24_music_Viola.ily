@@ -16,11 +16,15 @@ musicViolaMvtII = \relative c' {
 	
 	
 	\mark \default
-	R2.*8
+	R2.*6
 % Bars 16 to 20
 	
-% Bars 21 to 25
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 21 to 25
+	\mmrPos #-4 R \no
 	g2(\pp a8 fis)
 	f2_\dimmarkup( g8 e)
 	ees2\pp( f8 d)
@@ -110,15 +114,19 @@ musicViolaMvtII = \relative c' {
 	
 % Bars 106 to 110
 	R2.\fermata
-	R2.*20
+	R2.*15
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R
 % Bars 126 to 130
-	
+	\mmrPos #6 R \no
 	d,4\pp( e f
 	<< fis!2.\fermata) {s4\> s s\!}>> \mark \default 
 	<d g>16-.\ppp([ r q-.] r q-.[ r q-.] r q-.[ r q-.]) r
