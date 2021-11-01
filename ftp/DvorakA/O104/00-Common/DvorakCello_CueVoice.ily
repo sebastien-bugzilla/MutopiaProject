@@ -2221,13 +2221,30 @@ cueVoiceViolaMvtIII = \relative c {
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #
 %###############################################################################
 cueVoiceVioloncelloMvtI = \relative c {
-	
+	% no cue voice for cello in Mvt I
 }
 cueVoiceVioloncelloMvtII = \relative c {
-	
+	s2.*122
+	% bar 123 - 126 
+	\cueClef treble d''16(^\markup {Vcello Solo.} e) e( d) d( c) c( g) g( fis) fis( e)
+	e(\> g fis e) e4 e16( g fis e)\!
+	e4 e16( g fis e) e4~
+	e8( g fis4 e) \cueClefUnset
+	s2.*20
+	% bar 147 - 148
+	<b, d>8^\markup {Vcello Solo.} <g e'> <a fis'> <b g'> \tuplet 3/2 4 {<cis a'>( <d b'> <e cis'>)}
+	\afterGrace <fis d'>2.\trill\fermata {cis'16[ d]}
 }
 cueVoiceVioloncelloMvtIII = \relative c {
-	
+	s2*198
+	% bar 199
+	\cueClef alto \stemUp g''8^\markup {Viola.} a, r4 \cueClefUnset \stemNeutral
+	s2*273
+	% bar 473 - 476
+	\cueClef treble \tuplet 3/2 4 {fis'8(^\markup {Vcello Solo.} b gis fis dis' cis)}
+	b( fis' e dis)
+	b'2\trill
+	b\trill \cueClefUnset
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   C O N T R A B A S S O              #

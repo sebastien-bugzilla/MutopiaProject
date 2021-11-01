@@ -27,9 +27,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceVioloncelloMvtI" { \cueVoiceVioloncelloMvtI }
-\addQuote "cueVoiceVioloncelloMvtII" { \cueVoiceVioloncelloMvtII }
-\addQuote "cueVoiceVioloncelloMvtIII" { \cueVoiceVioloncelloMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -56,7 +53,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -71,6 +68,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatVioloncelloMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceVioloncelloMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -93,6 +93,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatVioloncelloMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceVioloncelloMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions

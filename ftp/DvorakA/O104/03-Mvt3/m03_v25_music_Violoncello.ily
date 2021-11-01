@@ -230,12 +230,12 @@ musicVioloncelloMvtIII = \relative c, {
 	r8 cis(\< d4\!
 % Bars 191 to 195
 	cis8)\p r r4
-	R2*8
+	R2*7
 % Bars 196 to 200
 	
 	
 	
-	
+	\ni \mmrPos #-6 R2 \no
 	g8\mp^\pizz a, r4
 % Bars 201 to 205
 	R2*2
@@ -517,7 +517,7 @@ musicVioloncelloMvtIII = \relative c, {
 	b~
 	b~
 	b4 r
-	R2*23
+	R2*19
 % Bars 456 to 460
 	
 % Bars 461 to 465
@@ -526,8 +526,12 @@ musicVioloncelloMvtIII = \relative c, {
 	
 % Bars 471 to 475
 	
-% Bars 476 to 480
 	
+	\ni \mmrPos #-7 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 476 to 480
+	\mmrPos #-4 R \no
 	e'4\fz^\pizz r
 	R2
 	a,4\mp r
