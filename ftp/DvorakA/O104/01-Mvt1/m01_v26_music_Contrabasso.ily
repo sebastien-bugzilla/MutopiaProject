@@ -273,11 +273,15 @@ musicContrabassoMvtI = \relative c' {
 % Bars 246 to 250
 	
 	\mark \default
-	R1*8
+	R1*4
 	
 	
 % Bars 251 to 255
 	
+	\ni \mmrPos #-2 R1
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no
 % Bars 256 to 260
 	fis,1\fz\>~
 	fis8\p r r4 r2

@@ -217,13 +217,17 @@ musicContrabassoMvtIII = \relative c, {
 % Bars 186 to 190
 	r8 e-.\p e8-.[ r16 e-.]
 	e8-.\fz r r4
-	R2*13
+	R2*11
 	
 	
 % Bars 191 to 195
 	
 % Bars 196 to 200
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-6 R \no 
 % Bars 201 to 205
 	g8^\pizz\p a, r4
 	R2
@@ -312,13 +316,17 @@ musicContrabassoMvtIII = \relative c, {
 	
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*16
+	R2*12
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
-% Bars 296 to 300
 	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+% Bars 296 to 300
+	\mmrPos #-9 R \no
 	g'4\pp^\pizz r
 	f4\< r
 	f r8 f

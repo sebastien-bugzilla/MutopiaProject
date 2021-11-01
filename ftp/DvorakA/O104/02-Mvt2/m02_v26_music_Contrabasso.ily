@@ -129,7 +129,7 @@ musicContrabassoMvtII = \relative c' {
 % Bars 106 to 110
 	d2.\ppp\fermata
 	g,4 r r
-	R2.*19
+	R2.*15
 	
 % Bars 111 to 115
 	
@@ -137,8 +137,12 @@ musicContrabassoMvtII = \relative c' {
 	
 % Bars 121 to 125
 	
-% Bars 126 to 130
 	
+	\ni \mmrPos #6 R2.
+	\mmrPos #6 R
+	\mmrPos #6 R
+% Bars 126 to 130
+	\mmrPos #6 R \no
 	d''2.(\pp\>
 	d,2.\fermata)\! \mark \default
 	g,2.\ppp(

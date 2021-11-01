@@ -27,9 +27,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceContrabassoMvtI" { \cueVoiceContrabassoMvtI }
-\addQuote "cueVoiceContrabassoMvtII" { \cueVoiceContrabassoMvtII }
-\addQuote "cueVoiceContrabassoMvtIII" { \cueVoiceContrabassoMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -51,12 +48,15 @@
 				\formatContrabassoMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceContrabassoMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameContrabassoMvtI \musicContrabassoMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -71,6 +71,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatContrabassoMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceContrabassoMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -93,6 +96,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatContrabassoMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceContrabassoMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
