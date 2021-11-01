@@ -185,11 +185,15 @@ musicViolinoIMvtI = \relative c' {
 % Bars 156 to 160
 	fis2(_\dimD\> g4 cis,)\! \mark \default
 	d8\p r r4 r2
-	R1*14
+	R1*10
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
+	R1*2
 % Bars 171 to 175
 	
 	a,16\f a r8 r4 r2
@@ -323,14 +327,18 @@ musicViolinoIMvtI = \relative c' {
 	
 	<b,, dis>2:16\> e: \mark \default
 	dis8\p r r4 r2
-	R1*14
+	R1*10
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 296 to 300
-	
-	
+	\mmrPos #-4 R \no
+	R1*2
 	
 	<a! fis'!>16\f q r8 r4 r2
 	<g! g'!>8\f r r4 r2

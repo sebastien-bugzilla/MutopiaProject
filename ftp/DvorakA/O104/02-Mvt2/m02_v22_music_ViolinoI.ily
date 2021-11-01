@@ -16,14 +16,14 @@ musicViolinoIMvtII = \relative c' {
 	
 	
 	\mark \default
-	R2.*11
+	R2.*8
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
-	
-	
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	f2.\pp\<
 % Bars 26 to 30
 	<bes, e>\fz\<
@@ -73,14 +73,14 @@ musicViolinoIMvtII = \relative c' {
 	b2 d,8. e16
 	<d fis>4-^ <fis,  d'>-^ <e cis'>-^
 	<d b'>4.-> r8 r4
-	R2.*14
+	R2.*12
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	
-	\mark \default
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no \mark \default
 	f8(\mf\< g a bes)\! b16(\> c g' f)\!
 	e4\p r r
 	a,!8(\< bes b16 c d c) \tuplet 3/2 4 {bes'8(\f\> a f)\!}
@@ -125,14 +125,14 @@ musicViolinoIMvtII = \relative c' {
 	
 	
 	R2.\fermata \mark \default
-	R2.*11
+	R2.*9
 % Bars 151 to 155
 	
 % Bars 156 to 160
 	
 	
-	
-	
+	\ni \mmrPos #-8 R2.
+	\mmrPos #-8 R \no
 	r4 e,2(\p\<
 % Bars 161 to 165
 	ees2._\fzdimD\>)

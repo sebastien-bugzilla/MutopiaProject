@@ -2073,13 +2073,75 @@ cueVoiceSoloCelloMvtIII = \relative c {
 %#                 C U E   V O I C E   F O R   V I O L I N O I                 #
 %###############################################################################
 cueVoiceViolinoIMvtI = \relative c {
-	
+	s1*167
+	% bar 168 - 169
+	cis'''2(^\markup {Flauto.} fis4 cis8. dis16)
+	ais( fis ais cis) cis2.
+	s1*125
+	% bar 295 - 296
+	bes2(^\markup {Fl.} ees4 bes8. c16)
+	g( ees g bes) bes2.
 }
 cueVoiceViolinoIMvtII = \relative c {
-	
+	s2.*21
+	% bar 22 - 24
+	\cueClef alto g'2(^\markup {Viola.} a8 fis)
+	f2( g8 e)
+	ees2( f8 d) \cueClefUnset
+	s2.*56
+	% bar 81 - 82
+	\cueClef bass a''8^\markup {Vcello Solo.} g( f e) \tuplet 3/2 4 {f( e d)}
+	c( cis d des) c8.( e,16) \cueClefUnset
+	s2.*75
+	% bar 158 - 159
+	\cueClef bass b4~^\markup {Vcello Solo.} b16 g'( fis d) b'( g fis e')
+	d( b g' fis) \cueClef treble d( b' g fis \tuplet 5/4 4 {e' d b b' a)} \cueClefUnset
 }
 cueVoiceViolinoIMvtIII = \relative c {
-	
+	s2*8
+	% bar 9 - 12
+	e'8^\markup {Ob.} r fis r
+	\tuplet 3/2 4 {g a g} fis r
+	b4 g8 e
+	ais4 r
+	s2*101
+	% bar 114 - 115
+	r4 d,16-.^\markup {Fl.Cl.} d-. fis-. b-.
+	d-. d-. fis-. b-. d8-. b-.
+	s2*3
+	% bar 119 - 120
+	r4 fis,16 fis a cis
+	fis fis a cis fis8 cis
+	s2*44
+	% bar 165 - 168
+	\stemUp r8^\markup {Vcello Solo.} g,( a b)
+	cis( \tuplet 3/2 8 {b16 cis b)} a8( g16 fis)
+	e'4(^\markup {Clar.} cis)
+	e( cis) \stemNeutral
+	s2*30
+	% bar 199 - 201
+	\stemUp \cueClef alto g8^\pizz^\markup {Viola.} a, r4
+	\cueClef bass g8^\markup {Vcello.} a, r4
+	g'8^\markup {Bassi.} a, r4 \cueClefUnset \stemNeutral
+	s2*141
+	% bar 343 - 346
+	bes'16(^\markup {Vcello Solo.} d) \tuplet 3/2 4 {d( f bes)} bes4\trill
+	bes,16( d) \tuplet 3/2 4 {d( f bes)} bes4\trill
+	bes,16( d) \tuplet 3/2 4 {d( f bes)} bes4\trill
+	bes,16( d) \tuplet 3/2 4 {d( f bes)} bes4\trill
+	s2*84
+	% bar 431 - 436
+	\stemUp gis4^\markup {Vcello Solo.} ais
+	b cis
+	dis( fis8 dis
+	cis b) \tuplet 3/2 4 {cis( dis cis)}
+	b( fis <dis fis> <cis e>) \cueClef bass
+	\tuplet 3/2 4 {<b dis>( <cis e> <b dis>} <fis cis'> dis') \cueClefUnset \stemNeutral
+	s2*28
+	% bar 465 - 467
+	\stemUp \cueClef bass fis,8\repeatTie^\markup {Vcello Solo} dis'( cis b) \cueClefUnset
+	fis'16( e dis b' gis fis dis' b)
+	fis2 \stemNeutral
 }
 %###############################################################################
 %#                C U E   V O I C E   F O R   V I O L I N O I I                #

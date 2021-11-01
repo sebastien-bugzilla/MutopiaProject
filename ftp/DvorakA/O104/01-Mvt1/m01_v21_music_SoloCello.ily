@@ -181,7 +181,7 @@ musicSoloCelloMvtI = \relative c' {
 	c'(\ff b) a( g) c16(\fz b c b) a8( g)
 % Bars 181 to 185
 	bes(\fz a)  g( fis) bes16(\fz a bes a) g8( fis)
-	c'16(\fz b! c b) a8( g) d'16( cis d cis) b8( a) \clef treble
+	c'16(\fz b! c b) a8( g) d'16(\fz cis d cis) b8( a) \clef treble
 	e'16\fz d( e) d( e)\fz d( e) d( e)\fz d( e) d( e)\fz d( e) d(
 	f4)_\ffz r r2
 	R1 \clef bass

@@ -9,12 +9,16 @@ musicViolinoIMvtIII = \relative c'' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*12
+	R2*8
 % Bars 6 to 10
 	
+	
+	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
 % Bars 11 to 15
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	e4\p-> b8-. g-.
 	b4. r8
 	\slashedGrace e8 e4\fz-> b8-._\crescmarkup g-.
@@ -126,9 +130,17 @@ musicViolinoIMvtIII = \relative c'' {
 	g,,16(\fp\> fis eis fis eis fis g fis
 	g fis g fis g fis)\pp r8 \mark \default
 % Bars 111 to 115
-	R2*10
-% Bars 116 to 120
+	R2*3
 	
+	
+	\ni \mmrPos #-8 R2
+	\mmrPos #-4 R \no
+% Bars 116 to 120
+	R2*3
+	
+	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-4 R \no
 % Bars 121 to 125
 	eis2\mp(
 	fis 
@@ -148,7 +160,7 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 141 to 145
 	
 	\mark \default
-	R2*24
+	R2*22
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -157,10 +169,14 @@ musicViolinoIMvtIII = \relative c'' {
 	
 % Bars 161 to 165
 	
-% Bars 166 to 170
-	\mark \default
-	R2*2
 	
+	
+	
+	\ni \mmrPos #-6 R2
+% Bars 166 to 170
+	\mmrPos #-6 R \mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 e'(\pp\< a4~
 	a\! d)\>
 % Bars 171 to 175
@@ -187,12 +203,16 @@ musicViolinoIMvtIII = \relative c'' {
 	r8 a(\< bes4\!
 % Bars 191 to 195
 	a8\p) r r4
-	R2*11
+	R2*7
 % Bars 196 to 200
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-6 R
 % Bars 201 to 205
-	
-	
+	\mmrPos #-6 R \no
+	R
 	r4 r8 a'\ff \mark \default
 	d8. a16 a8 r
 	b8. a16 a8 r
@@ -307,13 +327,17 @@ musicViolinoIMvtIII = \relative c'' {
 	
 	\mark \default
 % Bars 331 to 335
-	R2*16
+	R2*12
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
+	
+	\ni \mmrPos #-8 R2
+	\mmrPos #-8 R
+	\mmrPos #-8 R
 % Bars 346 to 350
-	\bar "||" \key b \major
+	\mmrPos #-8 R \no \bar "||" \key b \major
 	dis'4_\ptranquilloemoltoespressivo^\solo--( dis~--
 	dis8 e dis e)
 	fis4( b
@@ -373,7 +397,7 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*24
+	R2*18
 	
 	
 % Bars 416 to 420
@@ -383,9 +407,13 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 426 to 430
 	
 % Bars 431 to 435
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-8 R
 % Bars 436 to 440
-	
+	\mmrPos #-4 R \no
 	fis,,4(\p b
 	fis\> b
 	fis b
@@ -406,14 +434,18 @@ musicViolinoIMvtIII = \relative c'' {
 	fis~
 	fis~
 	fis4 r
-	R2*14
+	R2*11
 % Bars 456 to 460
 	
 % Bars 461 to 465
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 466 to 470
-	
-	
+	\mmrPos #-8 R
+	\mmrPos #-6 R \no
 	r4^\solo fis8.(\p\< fis'16)\!
 	fis4.(\fz e8)
 	dis4.(\> cis8)\!

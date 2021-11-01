@@ -27,9 +27,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceViolinoIMvtI" { \cueVoiceViolinoIMvtI }
-\addQuote "cueVoiceViolinoIMvtII" { \cueVoiceViolinoIMvtII }
-\addQuote "cueVoiceViolinoIMvtIII" { \cueVoiceViolinoIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -51,12 +48,15 @@
 				\formatViolinoIMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceViolinoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameViolinoIMvtI \musicViolinoIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -71,6 +71,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatViolinoIMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolinoIMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
@@ -93,6 +96,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatViolinoIMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolinoIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
