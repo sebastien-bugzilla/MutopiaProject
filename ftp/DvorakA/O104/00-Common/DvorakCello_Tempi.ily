@@ -5,7 +5,11 @@
 %#                       T E M P I   C O N D U C T O R S                       #
 %###############################################################################
 tempiMvtI = {
-	\tempo \markup { "Allegro" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } }
+	\tempo \markup { 
+		"Allegro M.M." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =116 } 
+	}
 	s1*22
 	\tempo "Grandioso" % bar 23
 	s1*33
@@ -13,21 +17,33 @@ tempiMvtI = {
 	s1
 	\tempo "Un poco sostenuto" % bar 57
 	s1*18
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } } % bar 75
+	\tempo "Tempo I." % bar 75
 	s1*12
 	\tempo "Quasi improvisando" % bar 87
 	s1*23
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } } % bar 110
+	\tempo \markup { % bar 110
+		"Tempo I." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =116 }
+	} 
 	s1*28
 	\tempo "ritard." % bar 138
 	s1*2
-	\tempo \markup { "in tempo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =100 } } % bar 140
+	\tempo \markup { % bar 140
+		"in tempo"
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =100 }
+	}
 	s1*14
-	\tempo "animato" % bar 154
+	\tempo "[animato]" % bar 154 (not in facsimile)
 	s1*3
 	\tempo "ritard" % bar 157
 	s1
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } } % bar 158
+	\tempo \markup {  % bar 158
+		"Tempo I." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =116 }
+	}
 	s1*33
 	\tempo "molto ritard" % bar 191
 	s1
@@ -35,35 +51,59 @@ tempiMvtI = {
 	s1*30
 	\tempo "poco ritard." % bar 222
 	s1*2
-	\tempo \markup { "Molto sostenuto" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =100 } } % bar 224
+	\tempo \markup { % bar 224 (source facsimile)
+		"In tempo" 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =100 }
+	} 
 	s1*16
-	\tempo "Animato" % bar 240
+	\tempo "dolce e animato" % bar 240
 	s1*31
-	\tempo 4=100 % bar 271
+	\tempo \markup { % bar 271
+		"Molto espressivo e sostenuto"
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =100 }
+	}
 	s1*10
-	\tempo "animato" % bar 281
+	\tempo "[animato]" % bar 281 (not in facsimile)
 	s1*3
 	\tempo "molto rit." % bar 284
 	s1
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } } % bar 285
+	\tempo \markup { % bar 285
+		"Tempo I." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =116 }
+	} 
 	s1*33
 	\tempo "ritard." % bar 318
 	s1
 	\tempo "In tempo, grandioso" % bar 319
 	s1*10
-	\tempo \markup { "Più mosso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =132 } } % bar 329
+	\tempo \markup { % bar 329
+		"Più mosso" 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =132 }
+	}
 	s1*12
 	\tempo "molto ritard." % bar 341
 	s1
-	\tempo \markup { "Tempo I. grandioso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } } % bar 342
+	\tempo \markup {  % bar 342
+		"Tempo I." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =116 }
+	}
 }
 %--------------------------------------
 %       M V T   II
 %--------------------------------------
 tempiMvtII = {
-	\tempo \markup { "Agagio, ma non troppo" \teeny \translate #'(0 . 0.4) { \note-by-number #3 #0 #0.9 } \medium { =116 } }
+	\tempo \markup { 
+		"Agagio, ma non troppo M.M." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #3 #0 #0.9 } 
+		\medium { =108 }
+	}
 	s2.*28
-	\tempo "poco accel." % bar 29
+	\tempo "poco accelerando" % bar 29
 	s2.*3
 	\tempo "Tempo I." % bar 32
 	s2.*6
@@ -75,17 +115,17 @@ tempiMvtII = {
 	s2.*6
 	\tempo "poco a poco ritard." % bar 63
 	s2.*2 
-	\tempo "Meno. Tempo I." \grace {s8} % bar 65 
+	\tempo "Meno Tempo I." \grace {s8} % bar 65 
 	s2.*18
 	\grace {s8} \tempo "Un poco più animato" % bar 83
 	s2.*12
-	\tempo "Meno. Tempo I." % bar 95
+	\tempo "Meno Tempo I." % bar 95
 	s2.*25
-	\tempo "poco a poco string." % bar 120
+	\tempo "[poco a poco string.]" % bar 120 (not in facsimile)
 	s2.*4
-	\tempo "poco a poco rit." % bar 124
+	\tempo "[poco a poco rit.]" % bar 124 (not in facsimile)
 	s2.*5
-	\tempo "Tempo I." % bar 129
+	\tempo "[Tempo I.]" % bar 129 (not in facsimile)
 	s2.*30
 	\tempo "rit." % bar 159
 	s2.
@@ -95,25 +135,36 @@ tempiMvtII = {
 %       M V T   III
 %--------------------------------------
 tempiMvtIII = {
-	\tempo \markup { "Allegro moderato" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } }
+	\tempo \markup { 
+		"Allegro moderato M.M." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =104 } }
 	s2*134
-	s4 \tempo "string." s % bar 135
+	s4 \tempo "accel." s % bar 135
 	s2*4
 	\tempo "molto rit." % bar 140
 	s2*3
-	\tempo \markup { "Poco meno mosso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =92 } } % bar 143
+	\tempo \markup { % bar 143
+		"Poco meno mosso M.M." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =92 }
+	} 
 	s2*14
-	\tempo "rit" % bar 157
+	\tempo "[rit.]" % bar 157 (not in facsimile)
 	s2*2
-	\tempo "in tempo" % bar 159
+	\tempo "[in tempo]" % bar 159 (not in facsimile)
 	s2*7
-	\tempo "rit" % bar 166
+	\tempo "rit." % bar 166
 	s2
 	\tempo "in tempo" % bar 167
 	s2*5
 	\tempo "poco a poco accel." % bar 172
 	s2*5
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } } % bar 177
+	\tempo \markup { % bar 177
+		"Tempo I." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =104 }
+	} 
 	s2*26
 	\tempo "rit" % bar 203
 	s2
@@ -121,7 +172,11 @@ tempiMvtIII = {
 	s2*38
 	s4 \tempo "molto rit." s % bar 242
 	s2*3
-	\tempo \markup { "in tempo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } } % bar 246
+	\tempo \markup { % bar 246
+		"in tempo" 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =104 }
+	}
 	s2*27
 	\tempo "ritard. poco a poco" % bar 273
 	s2*4
@@ -129,23 +184,43 @@ tempiMvtIII = {
 	s2*2
 	\tempo "rit" % bar 279
 	s2*2
-	\tempo \markup { "Moderato" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =84 } } % bar 281
+	\tempo \markup { % bar 281
+		"Moderato cantabile" 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =84 }
+	} 
 	s2*16
 	\tempo "string." % bar 297
 	s2*4
 	\tempo "ritard. molto" % bar 301
 	s2*2
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } } % bar 303
+	\tempo \markup {  % bar 303
+		"Tempo I." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =104 }
+	}
 	s2*11
 	\tempo "rit." % bar 314
 	s2
-	\tempo \markup { "in tempo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } } % bar 315
+	\tempo \markup { % bar 315
+		"in tempo" 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =104 }
+	} 
 	s2*16
-	\tempo \markup { "Meno mosso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =84 } } % bar 331 
+	\tempo \markup { % bar 331 
+		"Meno mosso" 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =84 }
+	}
 	s2*14
-	s4 \tempo "string." s % bar 345
-	s2
-	\tempo \markup { "a tempo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } } % bar 347
+	\tempo "string." % bar 345
+	s2*2
+	\tempo \markup { % bar 347
+		"Tempo I." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =104 }
+	} 
 	s2*16
 	\tempo "string." % bar 363
 	s2*4
@@ -157,407 +232,719 @@ tempiMvtIII = {
 	s2*3
 	\tempo "in tempo" % bar 421
 	s2*16
-	\tempo \markup { "Meno mosso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =84 } } % bar 437
+	\tempo \markup { % bar 437
+		"Meno mosso" 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =84 }
+	} 
 	s2*7
 	\tempo "poco a poco rit." % bar 444
 	s2*5
-	\tempo \markup { "Andante" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =76 } } % bar 449
-	s2*48
+	\tempo \markup { % bar 449
+		"Andante" 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =76 }
+	} 
+	s2*43
+	\tempo "rit." % bar 492
+	s2*5
 	\tempo "Andante maestoso" % bar 497
 	s2*9
-	\tempo "molto accel." % bar 506
+	\tempo "accelerando" % bar 506
 	s2*3
-	\tempo \markup { "Allegro vivo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =132 } } % bar 509
+	\tempo \markup { % bar 509
+		"Allegro vivo" 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\medium { =132 }
+	} 
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #
 %###############################################################################
 tempiPartMvtI = {
-	\tempo \markup { "Allegro" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"Allegro M.M." 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =116. } 
+		}
+	}
 	s1*22
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 23
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Grandioso"
+	\tag #'(flautoI flautoII) {
+		\tempo "Grandioso"
+	}
 	s1*33
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 56
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "ritard"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "rit." }
+	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 57
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Un poco sostenuto"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic {
+			\column { \lower #1 "un poco sostenuto" "in tempo"} }
+		}
+	}
 	s1*18
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 75
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"Tempo I." 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =116. } 
+		}
+	}
 	s1*12
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 87
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Quasi improvisando"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "quasi improvisando" }
+	}
 	s1*23
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 110
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"Tempo I." 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =116. }
+		}
+	}
 	s1*28
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 138
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "ritard."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "ritard." }
+	}
 	s1*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 140
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "in tempo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =100 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			\medium \italic "in tempo" 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =100. }
+		}
+	}
 	s1*14
 	%%%%%%%%%%%%%%%%%%%%%%
-	% bar 154
+	% bar 154 (not in facsimile)
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "animato"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "[animato]" }
+	}
 	s1*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 157
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "ritard"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "ritard." }
+	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 158
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } } % bar 158
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"Tempo I." 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =116. }
+		}
+	}
 	s1*33
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 191
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "molto ritard"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			\italic \medium \column { 
+				\lower #1 "molto" "ritard."
+			}
+		}
+	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 192
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Grandioso"
+	\tag #'(flautoI flautoII) {
+		\tempo "Grandioso"
+	}
 	s1*30
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 222
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "poco ritard."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			\medium \italic \column { 
+				\lower #1 "poco" "ritard." 
+			}
+		}
+	}
 	s1*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 224
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Molto sostenuto" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =100 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			\medium \italic "in tempo" % source : facsimile
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =100. }
+		}
+	}
 	s1*16
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 240
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Animato"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "dolce e animato" }
+	}
 	s1*31
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 271
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo 4=100
+	\tag #'(flautoI flautoII) {
+		\tempo \markup {
+			\column {
+				\medium \italic  { \lower #1 "molto espressivo"
+				"e sostenuto" }
+			}
+		}
+	}
 	s1*10
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 281
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "animato"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "[animato]" }
+	}
 	s1*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 284
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "molto rit."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "molto rit."}
+	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 285
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			\medium \italic "a tempo" 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =116. }
+		}
+	}
 	s1*33
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 318
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "ritard."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "rit." }
+	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 319
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "In tempo, grandioso"
+	\tag #'(flautoI flautoII) {
+		\tempo "Grandioso"
+	}
 	s1*10
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 329
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Più mosso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =132 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"Più mosso." 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =132. }
+		}
+	}
 	s1*12
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 341
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "molto ritard."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "molto rit." }
+	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 342
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Tempo I. grandioso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"a Tempo" % source facsimile
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =116. }
+		}
+	}
 }
 %--------------------------------------
 %       M V T   II
 %--------------------------------------
-tempiMvtII = {
-	\tempo \markup { "Agagio, ma non troppo" \teeny \translate #'(0 . 0.4) { \note-by-number #3 #0 #0.9 } \medium { =116 } }
+tempiPartMvtII = {
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"Agagio, ma non troppo. M.M." 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #3 #0 #0.9 } 
+			\medium { =108. }
+		}
+	}
 	s2.*28
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 29
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "poco accel."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \italic \medium  "poco accel." }
+	}
 	s2.*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 32
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Tempo I."
+	\tag #'(flautoI flautoII) {
+		\tempo "Tempo I."
+	}
 	s2.*6
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 38
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "rit."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \italic \medium  "rit." }
+	}
 	s2.
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 39
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Tempo I."
+	\tag #'(flautoI flautoII) {
+		\tempo "Tempo I."
+	}
 	s2.*18
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 57
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Un poco più animato"
+	\tag #'(flautoI flautoII) {
+		\tempo "Un poco più animato."
+	}
 	s2.*6
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 63
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "poco a poco ritard."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "poco a poco rit." }
+	}
 	s2.*2 
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 65
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Meno. Tempo I." \grace {s8}
+	\tag #'(flautoI flautoII) {
+		\tempo "Meno Tempo I."
+	}
 	s2.*18
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 83
 	%%%%%%%%%%%%%%%%%%%%%%
-	\grace {s8} \tempo "Un poco più animato"
+	\tag #'(flautoI flautoII) {
+		\tempo "Un poco più animato"
+	}
 	s2.*12
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 95
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Meno. Tempo I."
+	\tag #'(flautoI flautoII) {
+		\tempo "Meno Tempo I."
+	}
 	s2.*25
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 120
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "poco a poco string."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup {\medium \italic "[poco string.]" }
+	}
 	s2.*4
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 124
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "poco a poco rit."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "[poco a poco rit.]" }
+	}
 	s2.*5
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 129
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Tempo I."
+	\tag #'(flautoI flautoII) {
+		\tempo "[Tempo I.]"
+	}
 	s2.*30
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 159
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "rit."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "rit." }
+	}
 	s2.
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 160
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "a tempo"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "a tempo" }
+	}
 }
 %--------------------------------------
 %       M V T   III
 %--------------------------------------
 tempiPartMvtIII = {
-	\tempo \markup { "Allegro moderato" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"Allegro moderato. M.M." 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =104. }
+		}
+	}
 	s2*134
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 135
 	%%%%%%%%%%%%%%%%%%%%%%
-	s4 \tempo "string." s
+	\tag #'(flautoI flautoII) {
+		s4 \tempo \markup { \medium \italic "string." } s
+	}
 	s2*4
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 140
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "molto rit."
+	\tag #'(flautoI flautoII) {
+		\tempo  \markup { \medium \italic "molto rit." }
+	}
 	s2*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 143
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Poco meno mosso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =92 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			\column { 
+				\lower #1 "Poco meno mosso." 
+				\line {
+					"M. M." 
+					\teeny \translate #'(0 . 0.4) { 
+						\note-by-number #2 #0 #0.9 
+					}
+					\medium { =92. }
+				}
+			}
+		}
+	}
 	s2*14
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 157
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "rit"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "[rit.]" }
+	}
 	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 159
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "in tempo"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "[in tempo]" }
+	}
 	s2*7
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 166
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "rit"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "rit." }
+	}
 	s2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 167
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "in tempo"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "in tempo" }
+	}
 	s2*5
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 172
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "poco a poco accel."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "poco a poco accel." }
+	}
 	s2*5
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 177
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"Tempo I." 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =104. }
+		}
+	}
 	s2*26
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 203
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "rit"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "rit." }
+	}
 	s2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 204
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "in tempo"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "in tempo" }
+	}
 	s2*38
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 242
 	%%%%%%%%%%%%%%%%%%%%%%
-	s4 \tempo "molto rit." s
-	s2*3%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII) {
+		s4 \tempo \markup { \medium \italic "molto rit." } s
+	}
+	s2*3
+	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 246
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "in tempo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			\medium \italic { "in tempo" }
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =104. }
+		}
+	}
 	s2*27
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 273
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "ritard. poco a poco"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic 
+			\column {
+				\lower #1 "rit. poco" "a poco" 
+			}
+		}
+	}
 	s2*4
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 277
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Andante"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "Andante" }
+	}
 	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 279
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "rit"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "rit." }
+	}
 	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 281
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Moderato" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =84 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			\column {
+				\lower #1 "Moderato cantabile." 
+				\line {
+					\teeny \translate #'(0 . 0.4) { 
+						\note-by-number #2 #0 #0.9 
+					}
+					\medium { =84. }
+				}
+			}
+		}
+	}
 	s2*16
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 297
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "string."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "string." }
+	}
 	s2*4
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 301
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "ritard. molto"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic 
+			\column {
+				\lower #1 "ritard." "molto"
+			}
+		}
+	}
 	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 303
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			\column {
+				\lower #1 "Tempo I." 
+				\line {
+					\teeny \translate #'(0 . 0.4) { 
+						\note-by-number #2 #0 #0.9
+					}
+					\medium { =104. }
+				}
+			}
+		}
+	}
 	s2*11
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 314
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "rit." % bar 314
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "rit." }
+	}
 	s2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 315
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "in tempo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			\medium \italic "in tempo" 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =104. }
+		}
+	}
 	s2*16
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 331
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Meno mosso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =84 } } 
+	\tag #'(flautoI flautoII) {
+		\tempo \markup {
+			"Meno mosso." 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =84. }
+		}
+	}
 	s2*14
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 345
 	%%%%%%%%%%%%%%%%%%%%%%
-	s4 \tempo "string." s
-	s2
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "string." }
+	}
+	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 347
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "a tempo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			\medium \italic "a tempo" 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =104. }
+		}
+	}
 	s2*16
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 363
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "string."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "string." }
+	}
 	s2*4
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 367
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "molto ritard."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "molto rit." }
+	}
 	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 369
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "in tempo"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "in tempo" }
+	}
 	s2*49
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 418
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "poco ritard."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic 
+			\column { 
+				\lower #1 "poco" "rit." 
+			}
+		}
+	}
 	s2*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 421
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "in tempo"
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "in tempo" }
+	}
 	s2*16
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 437
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Meno mosso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =84 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"Meno mosso." 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =84. }
+		}
+	}
 	s2*7
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 444
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "poco a poco rit."
+	\tag #'(flautoI) {
+		\tempo \markup { \medium \italic "poco a poco rit." }
+	}
 	s2*5
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 449
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Andante" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =76 } }
-	s2*48
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"Andante." 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =76. }
+		}
+	}
+	s2*43
+	%%%%%%%%%%%%%%%%%%%%%%
+	% bar 492
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII) {
+		\tempo \markup {\medium \italic "rit."}
+	}
+	s2*5
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 497
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "Andante maestoso"
+	\tag #'(flautoI flautoII) {
+		\tempo "Andante maestoso."
+	}
 	s2*9
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 506
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo "molto accel."
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { \medium \italic "molto accel." }
+	}
 	s2*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 509
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tempo \markup { "Allegro vivo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =132 } }
+	\tag #'(flautoI flautoII) {
+		\tempo \markup { 
+			"Allegro vivo" 
+			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+			\medium { =132. }
+		}
+	}
 }

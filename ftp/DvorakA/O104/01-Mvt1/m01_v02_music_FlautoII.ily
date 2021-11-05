@@ -101,9 +101,9 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1
+	R1*10
 % Bars 111 to 115
-	R1*9
+	
 % Bars 116 to 120
 	
 	
@@ -153,8 +153,8 @@ musicFlautoIIMvtI = \relative c'' {
 	d8\f r r4 r2
 	R1 \mark \default
 % Bars 176 to 180
-	R1
-	R1*7
+	R1*8
+	
 	
 	
 	
@@ -178,9 +178,9 @@ musicFlautoIIMvtI = \relative c'' {
 	e2. cis4-.
 % Bars 196 to 200
 	d-. r r2
-	R1*2
+	R1*7
 	
-	R1*5
+	
 	
 % Bars 201 to 205
 	
@@ -259,11 +259,11 @@ musicFlautoIIMvtI = \relative c'' {
 	cis cis dis8( fis dis b)
 	ais2.\> r4\!
 % Bars 271 to 275
-	R1*5
+	R1*13
 % Bars 276 to 280
-	R1
-	R1
-	R1*6
+	
+	
+	
 	
 	
 % Bars 281 to 285
@@ -288,8 +288,8 @@ musicFlautoIIMvtI = \relative c'' {
 % Bars 301 to 305
 	b8\f r r4 r2
 	R1 \mark \default
-	R1
-	R1*7
+	R1*8
+	
 	
 % Bars 306 to 310
 	
@@ -309,12 +309,12 @@ musicFlautoIIMvtI = \relative c'' {
 	b8 r ais r b r b r
 	dis2 cis4-. ais-. \mark \default
 	b8 r r4 r2
-	R1*2
+	R1*5
 	
 % Bars 326 to 330
-	R1*2
 	
-	R1
+	
+	
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R
 % Bars 331 to 335

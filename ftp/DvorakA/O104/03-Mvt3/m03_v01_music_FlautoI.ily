@@ -133,13 +133,13 @@ musicFlautoIMvtIII = \relative c''' {
 	r4 d8-. cis-. 
 	r4 e!8-. d-.
 	r4 d8-. cis-.
-	R2*6
+	R2*18
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	R2*5
+	
 % Bars 136 to 140
-	R2*7
+	
 % Bars 141 to 145
 	
 	\mark \default

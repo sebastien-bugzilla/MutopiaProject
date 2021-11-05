@@ -116,7 +116,7 @@ musicPiccoloMvtIII = \relative c' {
 	cis8( d16 cis) b4
 % Bars 256 to 260
 	fis' e16( d cis b)
-	cis4.\startTrillSpan cis8\stopTrillSpan
+	ais4.\startTrillSpan cis8\stopTrillSpan
 	cis4-> dis->
 	e8(\< fis) a16(\! g fis e)
 	\tuplet 5/4 4 {d!16( e g fis e)} d8-. cis-.

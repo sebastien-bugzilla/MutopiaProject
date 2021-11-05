@@ -246,7 +246,7 @@ musicFlautoIMvtI = \relative c'' {
 	gis2(\p\< ais4 b
 	dis2~\fz dis8\> fis e8. dis16\!
 % Bars 231 to 235
-	cis4)\p \acciaccatura e dis4.( cis8) \tuplet 3/2 4 {cis8( b ais)}
+	cis4)\p \acciaccatura e8 dis4.( cis8) \tuplet 3/2 4 {cis8( b ais)}
 	cis4( b8. cis32 b gis4.) r8
 	r4 gis4(\pp ais8 b gis4)
 	r gis( ais b 

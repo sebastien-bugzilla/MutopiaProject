@@ -53,9 +53,9 @@
 			\new Voice {
 				\formatFlautoIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag
-%			}
+			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtI
 			}
@@ -80,6 +80,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatFlautoIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtII
@@ -107,6 +110,9 @@
 				\formatFlautoIMvtIII
 			}
 			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtIII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtIII
 			}
 			\new Voice {
@@ -130,6 +136,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatFlautoIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtI
 			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIIMvtI
@@ -161,6 +170,9 @@
 				\formatFlautoIIMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceFlautoIIMvtII
 			}
 			\new Voice {
@@ -186,6 +198,9 @@
 				\formatFlautoIIMvtIII
 			}
 			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtIII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceFlautoIIMvtIII
 			}
 			\new Voice {
@@ -209,48 +224,48 @@
 		\layout {
 		}
 	}
-%	\score {
-%		\new Staff <<
-%			\new Voice {
-%				\formatPiccoloMvtI
-%			}
-%			\new Voice {
-%				\timeMvtI \generalOptions \partOptions
-%				\namePiccoloMvtI \musicPiccoloMvtI
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #4
-%					I
-%				}
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%			\new Voice {
-%				\formatPiccoloMvtIII
-%			}
-%			\new Voice {
-%				\timeMvtIII \generalOptions \partOptions
-%				\namePiccoloMvtIII \musicPiccoloMvtIII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #4
-%					III
-%				}
-%			}
-%		}
-%		\layout {
-%		}
-%	}
+%%	\score {
+%%		\new Staff <<
+%%			\new Voice {
+%%				\formatPiccoloMvtI
+%%			}
+%%			\new Voice {
+%%				\timeMvtI \generalOptions \partOptions
+%%				\namePiccoloMvtI \musicPiccoloMvtI
+%%			}
+%%		>>
+%%		\header {
+%%			breakbefore = ##f
+%%			piece = \markup {
+%%				\fill-line {
+%%					\fontsize #4
+%%					I
+%%				}
+%%			}
+%%		}
+%%		\layout {
+%%		}
+%%	}
+%%	\score {
+%%		\new Staff <<
+%%			\new Voice {
+%%				\formatPiccoloMvtIII
+%%			}
+%%			\new Voice {
+%%				\timeMvtIII \generalOptions \partOptions
+%%				\namePiccoloMvtIII \musicPiccoloMvtIII
+%%			}
+%%		>>
+%%		\header {
+%%			breakbefore = ##f
+%%			piece = \markup {
+%%				\fill-line {
+%%					\fontsize #4
+%%					III
+%%				}
+%%			}
+%%		}
+%%		\layout {
+%%		}
+%%	}
 }

@@ -43,14 +43,14 @@ musicFlautoIIMvtII = \relative c'' {
 % Bars 41 to 45
 	bes4-> g-> fis->
 	g4. r8 r4
-	R2.*6
+	R2.*7
 	
 	
 % Bars 46 to 50
 	
 	
 	
-	R2. \mark \default
+	\mark \default
 	R2.*7
 % Bars 51 to 55
 	
@@ -67,15 +67,11 @@ musicFlautoIIMvtII = \relative c'' {
 	fis(\> fis e)\! \bar "||" \key g \major \mark \default
 	d4\ff r r
 % Bars 66 to 70
-	R2.*8
+	R2.*17
 % Bars 71 to 75
 	
-	
-	
-	R2.*2
-	
 % Bars 76 to 80
-	R2.*7
+	
 % Bars 81 to 85
 	
 	\mark \default
@@ -131,30 +127,20 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	R2.\fermata^\lunga
 % Bars 136 to 140
-	R2.*7
+	R2.*12
 % Bars 141 to 145
 	
-	
-	R2.*3
-	
-	
 % Bars 146 to 150
-	R2.*2
+	
 	
 	R2.\fermata \mark \default
-	R2.*4
+	R2.*17
 	
 % Bars 151 to 155
 	
-	
-	R2.*9
 % Bars 156 to 160
 	
 % Bars 161 to 165
-	
-	R2.
-	R2.*3
-	
 	
 % Bar 166
 	R2.\fermata \bar "|."
