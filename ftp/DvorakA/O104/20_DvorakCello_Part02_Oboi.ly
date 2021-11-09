@@ -16,6 +16,7 @@
 \include "./00-Common/DvorakCello_Header.ily"
 \include "./00-Common/DvorakCello_PaperParts.ily"
 \include "./00-Common/DvorakCello_timeMvt.ily"
+\include "./00-Common/DvorakCello_Tempi.ily"
 \include "./00-Common/DvorakCello_OptionParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
@@ -51,6 +52,9 @@
 				\formatOboeIMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtI 
+			}
+			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtI
 			}
 			\new Voice {
@@ -74,6 +78,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatOboeIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtII 
 			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtII
@@ -101,6 +108,9 @@
 				\formatOboeIMvtIII
 			}
 			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtIII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtIII
 			}
 			\new Voice {
@@ -124,6 +134,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatOboeIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtI
@@ -151,6 +164,9 @@
 				\formatOboeIIMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtII
 			}
 			\new Voice {
@@ -174,6 +190,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatOboeIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtIII

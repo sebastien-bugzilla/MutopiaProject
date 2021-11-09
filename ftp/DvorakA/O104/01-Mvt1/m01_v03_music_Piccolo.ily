@@ -59,7 +59,7 @@ musicPiccoloMvtI = \relative c''' {
 % Bars 121 to 125
 	
 	r8 c16\mf c c8 c \acciaccatura d c4. r8
-	r b16 b b8 b \acciaccatura cis b4. r8
+	r b16 b b8 b \acciaccatura cis! b4. r8
 	r8. d,16(\f g8)[ r16 b,]( e8)[ r16 g,]( cis8)[ r16 e,](
 	b'8) r r4 r2
 % Bars 126 to 130

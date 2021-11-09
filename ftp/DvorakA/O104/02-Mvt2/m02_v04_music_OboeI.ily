@@ -13,8 +13,8 @@ musicOboeIMvtII = \relative c'' {
 % Bars 6 to 10
 	
 	cis2.\fz
-	c!2(\> b8\p a
-	b4)\! r r
+	\once \stemUp c!2(\> b8\p a
+	\once \stemUp b4)\! r r
 	R2.*4
 % Bars 11 to 15
 	
@@ -42,12 +42,12 @@ musicOboeIMvtII = \relative c'' {
 % Bars 41 to 45
 	d4-> bes'-> a->
 	g4. r8 r4
-	R2.*4
+	R2.*6
 	
 	
 % Bars 46 to 50
 	
-	R2.*2
+	
 	
 	r4 r8 f(\p bes c) \mark \default
 	d4.( c8 bes a

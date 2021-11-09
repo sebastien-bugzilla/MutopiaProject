@@ -147,7 +147,7 @@ musicOboeIMvtI = \relative c'' {
 	a8\f( g16) r a8(\p g16) r a8( g16) r a8( g16) r 
 	b!4\f r r2
 	R1
-	g4.(\fp a16 b g4\> fis)
+	g4.(\fp^\solo a16 b g4\> fis)
 	e( d b a)
 % Bars 136 to 140
 	g\pp r r2
@@ -255,7 +255,7 @@ musicOboeIMvtI = \relative c'' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	gis2\p(~ \tuplet 3/2 2 {gis4 ais b)}
+	gis2\p(~^\solo \tuplet 3/2 2 {gis4 ais b)}
 % Bars 241 to 245
 	b4( ais2 e8 dis)
 	dis4(\< gis) gis-- gis--\!
@@ -315,7 +315,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 291 to 295
 	fis( eis\dimmarkup\> fis eis)\!
 	<< fis1 {s4 s\> s s\!} >>
-	bes2\pp( ees4 bes8. c16)
+	bes2\pp(^\solo ees4 bes8. c16)
 	g8.( ees16 bes'2.)
 	R1*2
 % Bars 296 to 300

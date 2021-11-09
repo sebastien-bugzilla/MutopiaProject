@@ -100,12 +100,12 @@ musicOboeIIMvtII = \relative c'' {
 % Bars 86 to 90
 	e'4\p\<( des e,)\!
 	f8 r r4 r
-	R2.*4
+	R2.*7
 	
 	
 % Bars 91 to 95
 	
-	R2.*3
+	
 	
 	\mark \default
 	R2.*11
@@ -155,14 +155,10 @@ musicOboeIIMvtII = \relative c'' {
 % Bars 151 to 155
 	fis4(\! d2~\>
 	d\!) r4
-	R2.*10
+	R2.*13
 % Bars 156 to 160
 	
 % Bars 161 to 165
-	
-	
-	R2.
-	R2.*2
 	
 % Bar 166
 	R2.\fermata \bar "|."

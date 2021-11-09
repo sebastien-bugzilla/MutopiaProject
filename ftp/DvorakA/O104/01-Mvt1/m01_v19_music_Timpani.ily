@@ -13,7 +13,7 @@ musicTimpaniMvtI = \relative c, {
 	
 	
 	
-	fis1:32\p
+	fis1:32\pp
 % Bars 6 to 10
 	fis4 r r2
 	R1*4

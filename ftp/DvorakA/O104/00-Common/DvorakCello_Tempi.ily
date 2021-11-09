@@ -262,9 +262,9 @@ tempiMvtIII = {
 %#                            T E M P I   P A R T S                            #
 %###############################################################################
 tempiPartMvtI = {
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
-			"Allegro M.M." 
+			"Allegro. M.M." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
 			\medium { =116. } 
 		}
@@ -273,21 +273,21 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 23
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
-		\tempo "Grandioso"
+	\tag #'(flautoI flautoII oboeI oboeII) {
+		\tempo "Grandioso."
 	}
 	s1*33
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 56
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "rit." }
 	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 57
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic {
 			\column { \lower #1 "un poco sostenuto" "in tempo"} }
 		}
@@ -296,7 +296,7 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 75
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			"Tempo I." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -307,14 +307,14 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 87
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "quasi improvisando" }
 	}
 	s1*23
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 110
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			"Tempo I." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -328,11 +328,15 @@ tempiPartMvtI = {
 	\tag #'(flautoI flautoII) {
 		\tempo \markup { \medium \italic "ritard." }
 	}
+	\tag #'(oboeI oboeII) {
+		\tempo \markup { \medium \italic "rit." }
+	}
+
 	s1*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 140
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			\medium \italic "in tempo" 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -343,21 +347,21 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 154 (not in facsimile)
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "[animato]" }
 	}
 	s1*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 157
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "ritard." }
 	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 158
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			"Tempo I." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -375,18 +379,25 @@ tempiPartMvtI = {
 			}
 		}
 	}
+	\tag #'(oboeI oboeII) {
+		\tempo \markup { 
+			\italic \medium \center-column { 
+				\lower #1 "molto" "rit."
+			}
+		}
+	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 192
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
-		\tempo "Grandioso"
+	\tag #'(flautoI flautoII oboeI oboeII) {
+		\tempo "Grandioso."
 	}
 	s1*30
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 222
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			\medium \italic \column { 
 				\lower #1 "poco" "ritard." 
@@ -397,7 +408,7 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 224
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			\medium \italic "in tempo" % source : facsimile
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -408,14 +419,14 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 240
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "dolce e animato" }
 	}
 	s1*31
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 271
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup {
 			\column {
 				\medium \italic  { \lower #1 "molto espressivo"
@@ -427,21 +438,21 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 281
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "[animato]" }
 	}
 	s1*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 284
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "molto rit."}
 	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 285
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			\medium \italic "a tempo" 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -452,21 +463,21 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 318
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "rit." }
 	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 319
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
-		\tempo "Grandioso"
+	\tag #'(flautoI flautoII oboeI oboeII) {
+		\tempo "Grandioso."
 	}
 	s1*10
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 329
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			"Più mosso." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -477,14 +488,14 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 341
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "molto rit." }
 	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 342
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			"a Tempo" % source facsimile
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -496,7 +507,7 @@ tempiPartMvtI = {
 %       M V T   II
 %--------------------------------------
 tempiPartMvtII = {
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			"Agagio, ma non troppo. M.M." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #3 #0 #0.9 } 
@@ -507,28 +518,28 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 29
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \italic \medium  "poco accel." }
 	}
 	s2.*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 32
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo "Tempo I."
 	}
 	s2.*6
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 38
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \italic \medium  "rit." }
 	}
 	s2.
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 39
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo "Tempo I."
 	}
 	s2.*18
@@ -538,32 +549,43 @@ tempiPartMvtII = {
 	\tag #'(flautoI flautoII) {
 		\tempo "Un poco più animato."
 	}
+	\tag #'(oboeI) {
+		\tempo \markup { \medium \italic "un poco più animato"}
+	}
 	s2.*6
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 63
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeII) {
 		\tempo \markup { \medium \italic "poco a poco rit." }
+	}
+	\tag #'(oboeI) {
+		\tempo \markup { \medium \italic 
+			\center-column { \lower #1 "poco a" "poco rit." }
+		}
 	}
 	s2.*2 
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 65
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo "Meno Tempo I."
 	}
 	s2.*18
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 83
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
-		\tempo "Un poco più animato"
+	\tag #'(flautoI) {
+		\tempo "Un poco più animato."
+	}
+	\tag #'(oboeI flautoII oboeII) {
+		\tempo \markup { \medium \italic "un poco più animato" }
 	}
 	s2.*12
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 95
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo "Meno Tempo I."
 	}
 	s2.*25
@@ -573,6 +595,11 @@ tempiPartMvtII = {
 	\tag #'(flautoI flautoII) {
 		\tempo \markup {\medium \italic "[poco string.]" }
 	}
+	\tag #'(oboeI oboeII) {
+		\tempo \markup {\medium \italic 
+			\center-column { \lower #1 "[poco" "string.]" }
+		}
+	}
 	s2.*4
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 124
@@ -580,25 +607,30 @@ tempiPartMvtII = {
 	\tag #'(flautoI flautoII) {
 		\tempo \markup { \medium \italic "[poco a poco rit.]" }
 	}
+	\tag #'(oboeI oboeII) {
+		\tempo \markup { \medium \italic 
+			\center-column { \lower #1 "[poco a" "poco rit.]" }
+		}
+	}
 	s2.*5
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 129
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo "[Tempo I.]"
 	}
 	s2.*30
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 159
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "rit." }
 	}
 	s2.
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 160
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "a tempo" }
 	}
 }
@@ -606,7 +638,7 @@ tempiPartMvtII = {
 %       M V T   III
 %--------------------------------------
 tempiPartMvtIII = {
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			"Allegro moderato. M.M." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -617,21 +649,24 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 135
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
-		s4 \tempo \markup { \medium \italic "string." } s
+	\tag #'(flautoI flautoII oboeI oboeII) {
+		\tempo \markup { \medium \italic "string." }
 	}
-	s2*4
+	s2*5
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 140
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeII) {
 		\tempo  \markup { \medium \italic "molto rit." }
+	}
+	\tag #'(oboeI) {
+		\tempo  \markup { \medium \italic "rit." }
 	}
 	s2*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 143
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			\column { 
 				\lower #1 "Poco meno mosso." 
@@ -649,42 +684,42 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 157
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "[rit.]" }
 	}
 	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 159
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "[in tempo]" }
 	}
 	s2*7
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 166
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "rit." }
 	}
 	s2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 167
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "in tempo" }
 	}
 	s2*5
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 172
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "poco a poco accel." }
 	}
 	s2*5
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 177
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			"Tempo I." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -695,28 +730,28 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 203
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "rit." }
 	}
 	s2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 204
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "in tempo" }
 	}
 	s2*38
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 242
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
-		s4 \tempo \markup { \medium \italic "molto rit." } s
+	\tag #'(flautoI flautoII oboeI oboeII) {
+		\tempo \markup { \medium \italic "molto rit." }
 	}
-	s2*3
+	s2*4
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 246
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			\medium \italic { "in tempo" }
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -734,6 +769,11 @@ tempiPartMvtIII = {
 			}
 		}
 	}
+	\tag #'(oboeI oboeII) {
+		\tempo \markup { 
+			\medium \italic \lower #1 "ritard." 
+		}
+	}
 	s2*4
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 277
@@ -741,18 +781,21 @@ tempiPartMvtIII = {
 	\tag #'(flautoI flautoII) {
 		\tempo \markup { \medium \italic "Andante" }
 	}
+	\tag #'(oboeI oboeII) {
+		\tempo "Andante"
+	}
 	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 279
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "rit." }
 	}
 	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 281
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			\column {
 				\lower #1 "Moderato cantabile." 
@@ -769,7 +812,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 297
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "string." }
 	}
 	s2*4
@@ -783,11 +826,14 @@ tempiPartMvtIII = {
 			}
 		}
 	}
+	\tag #'(oboeI oboeII) {
+		\tempo \markup { \medium \italic "ritard. molto"}
+	}
 	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 303
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			\column {
 				\lower #1 "Tempo I." 
@@ -804,14 +850,14 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 314
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "rit." }
 	}
 	s2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 315
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			\medium \italic "in tempo" 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -822,7 +868,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 331
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup {
 			"Meno mosso." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -836,11 +882,14 @@ tempiPartMvtIII = {
 	\tag #'(flautoI flautoII) {
 		\tempo \markup { \medium \italic "string." }
 	}
+	\tag #'(oboeI oboeII) {
+		\tempo \markup { \medium \italic "stringendo" }
+	}
 	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 347
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			\medium \italic "a tempo" 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -851,46 +900,49 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 363
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "string." }
 	}
 	s2*4
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 367
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "molto rit." }
 	}
 	s2*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 369
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "in tempo" }
 	}
 	s2*49
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 418
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
-		\tempo \markup { \medium \italic 
-			\column { 
-				\lower #1 "poco" "rit." 
-			}
-		}
+%	\tag #'(flautoII) {
+%		\tempo \markup { \medium \italic 
+%			\column { 
+%				\lower #1 "poco" "rit." 
+%			}
+%		}
+%	}
+	\tag #'(flautoI flautoII oboeI oboeII) {
+		\tempo \markup { \medium \italic "poco rit." }
 	}
 	s2*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 421
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "in tempo" }
 	}
 	s2*16
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 437
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			"Meno mosso." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -901,14 +953,14 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 444
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "poco a poco rit." }
 	}
 	s2*5
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 449
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
 			"Andante." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
@@ -919,30 +971,30 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 492
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup {\medium \italic "rit."}
 	}
 	s2*5
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 497
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo "Andante maestoso."
 	}
 	s2*9
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 506
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { \medium \italic "molto accel." }
 	}
 	s2*3
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 509
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII oboeI oboeII) {
 		\tempo \markup { 
-			"Allegro vivo" 
+			"Allegro vivo." 
 			\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
 			\medium { =132. }
 		}

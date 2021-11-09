@@ -216,7 +216,7 @@ cueVoiceOboeIMvtI = \relative c {
 	}
 	s1*82
 	% bar 236 - 239
-	b8(^\markup {Fl.I.} ais16 b gis2 fis8 e)
+	b'''8(^\markup {Fl.I.} ais16 b gis2 fis8 e)
 	dis4( \acciaccatura fis8 e4 dis fisis,)
 	gis4.^( ais16 b gis4. fis!16 dis
 	gis2) r
@@ -276,7 +276,7 @@ cueVoiceOboeIIMvtI = \relative c {
 	s1*31
 	% bar 103 - 106
 	dis4(^\markup {Ob.I.} e dis2)
-	f2~ f8( ais g f)
+	f2~ f8( aes g f)
 	f4( ges f2)
 	g!2(~ g8 bes a gis)
 	s1*42

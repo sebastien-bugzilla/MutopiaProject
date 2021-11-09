@@ -9,18 +9,10 @@ musicOboeIIMvtIII = \relative c'' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*8
+	R2*16
 % Bars 6 to 10
 	
-	
-	
-	R2*4
-	
 % Bars 11 to 15
-	
-	
-	R2*4
-	
 	
 % Bars 16 to 20
 	
@@ -39,17 +31,13 @@ musicOboeIIMvtIII = \relative c'' {
 	fis8\ff fis16 fis fis8 fis16 fis
 	fis8 fis16 fis fis8 fis16 fis
 	fis8 r r4
-	R2*3
+	R2*15
 % Bars 31 to 35
-	
-	
-	R2*8
-	
 	
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	R2*4
+	
 	
 	
 	
@@ -77,19 +65,15 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 66 to 70
 	
 	r4 e'8\f r
-	R2*5
+	R2*16
 	
 	
 % Bars 71 to 75
 	
-	
-	R2*8
-	
-	
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	R2*3
+	
 	
 	
 	\ni \mmrPos #-4 R2
@@ -137,24 +121,16 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	a16-.\p\< a-. cis-. fis-. a8-.\fz fis-.
 % Bars 121 to 125
-	R2*4
+	R2*22
 	
 	
 	
-	R2*4
+	
 % Bars 126 to 130
-	
-	
-	
-	R2*9
 	
 % Bars 131 to 135
 	
 % Bars 136 to 140
-	
-	
-	R2*5
-	
 	
 % Bars 141 to 145
 	
@@ -238,21 +214,14 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 221 to 225
 	fis4 e!8 eis \mark \default
 	fis8 r r4
-	R2*7
+	R2*27
 	
 % Bars 226 to 230
 	
-	
-	
-	
-	R2*9
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
-	
-	
-	R2*11
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -278,14 +247,14 @@ musicOboeIIMvtIII = \relative c'' {
 	d8 r r4
 	d8_\dimD\> r r4\!
 	d8 r r4
-	R2*12
+	R2*16
 % Bars 266 to 270
 	
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
-	R2*4
+	
 	
 	
 	\bar "||" \mark \default
@@ -322,14 +291,10 @@ musicOboeIIMvtIII = \relative c'' {
 	g fis
 	g fis8) r
 	R2 \mark \default
-	R2*8
+	R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
-	
-	
-	R2*8
-	
 	
 % Bars 326 to 330
 	
@@ -338,8 +303,8 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	\mark \default
 % Bars 331 to 335
-	R2
-	R2
+	R2*2
+	
 	\ni \cueClef bass \mmrPos #4 R2
 	\mmrPos #-6 R \no \cueClefUnset
 	cis'4\mp( cis->~
@@ -400,13 +365,9 @@ musicOboeIIMvtIII = \relative c'' {
 	g4 fis)
 	g( fis)
 	g( fis)
-	R2*5
+	R2*8
 % Bars 406 to 410
 	
-	
-	
-	
-	R2*3
 % Bars 411 to 415
 	
 	\mark \default
@@ -429,24 +390,16 @@ musicOboeIIMvtIII = \relative c'' {
 	dis~\pp
 % Bars 436 to 440
 	dis4. r8
-	R2*7
+	R2*12
 % Bars 441 to 445
-	
-	
-	
-	R2*5
 	
 % Bars 446 to 450
 	
 	
 	\mark \default
-	R2*5
+	R2*8
 	
 % Bars 451 to 455
-	
-	
-	
-	R2*3
 	
 % Bars 456 to 460
 	

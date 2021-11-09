@@ -144,7 +144,7 @@ musicOboeIMvtIII = \relative c' {
 	
 	
 	
-	g,16-\p( a b a g8\> e
+	g,16-\p(^\solo a b a g8\> e
 	cis fis4.)\!
 % Bars 131 to 135
 	eis2(
@@ -161,23 +161,15 @@ musicOboeIMvtIII = \relative c' {
 % Bars 141 to 145
 	
 	\mark \default
-	R2*16
+	R2*24
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
 % Bars 156 to 160
 	
-	
-	
-	R2*6
-	
 % Bars 161 to 165
 	
-	
-	
-	
-	R2*2
 % Bars 166 to 170
 	\mark \default
 	R2*5
@@ -311,14 +303,14 @@ musicOboeIMvtIII = \relative c' {
 	g g g g\< g g
 	g g g fis fis e}
 	g4\p r
-	R2*10
+	R2*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 	
 	
-	R2 \mark \default
+	\mark \default
 	R2*4
 % Bars 316 to 320
 	

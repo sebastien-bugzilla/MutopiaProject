@@ -170,7 +170,7 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 166 to 170
 	cis!2 r 
 	R1
-	cis'2(\p fis4 cis8. dis16)
+	cis'2(\p^\solo fis4 cis8. dis16)
 	ais( fis ais cis) cis2.
 	g!16-.\p g-. fis-. g-. r8. g16-.\< b-. b-. ais-. b-.\! r8. b16-.\<
 % Bars 171 to 175

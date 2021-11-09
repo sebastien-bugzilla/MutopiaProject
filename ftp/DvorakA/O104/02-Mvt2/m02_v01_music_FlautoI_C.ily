@@ -145,7 +145,7 @@ musicFlautoIMvtII = \relative c'' {
 	R2.*2
 	
 	R2.\fermata \mark \default
-	\partCombineApart g'8(~-- g32 a g fis) g8--(~ g32 a g fis) \tuplet 5/4 4 {g16(\<-- a-- b-- a-- g)-- }
+	\partCombineApart g'8(~--\p g32 a g fis) g8--(~ g32 a g fis) \tuplet 5/4 4 {g16(\<-- a-- b-- a-- g)-- }
 	g4( \acciaccatura {fis16 e} d4)\! b8.\< c16\!
 % Bars 151 to 155
 	d4( b\> a
