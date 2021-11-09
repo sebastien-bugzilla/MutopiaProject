@@ -16,6 +16,7 @@
 \include "./00-Common/DvorakCello_Header.ily"
 \include "./00-Common/DvorakCello_PaperParts.ily"
 \include "./00-Common/DvorakCello_timeMvt.ily"
+\include "./00-Common/DvorakCello_Tempi.ily"
 \include "./00-Common/DvorakCello_OptionParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
@@ -51,6 +52,9 @@
 				\formatClarinettoIMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(clarinettoI) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtI
 			}
 			\new Voice {
@@ -76,6 +80,9 @@
 				\formatClarinettoIMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(clarinettoI) \tempiPartMvtII
+			}
+			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameClarinettoIMvtII \musicClarinettoIMvtII
 			}
@@ -96,6 +103,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatClarinettoIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(clarinettoI) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtIII
@@ -123,6 +133,9 @@
 				\formatClarinettoIIMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(clarinettoII) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtI
 			}
 			\new Voice {
@@ -148,6 +161,9 @@
 				\formatClarinettoIIMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(clarinettoII) \tempiPartMvtII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtII
 			}
 			\new Voice {
@@ -171,6 +187,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatClarinettoIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(clarinettoII) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtIII

@@ -61,7 +61,7 @@ musicClarinettoIMvtI = \relative c' {
 	\acciaccatura e d\< cis-. d-. e-. \acciaccatura g f e-. f-. g-.
 	a( b) b4.->( cis8) cis4~\!
 	cis8( d e f) gis,4.(\> a8) \mark \default
-	a4.(\mf b16 cis a2)
+	a4.(\mf^\solo b16 cis a2)
 % Bars 46 to 50
 	a4.( g!16 e a2)
 	bes!4.(_\dimmarkup c16 d bes2)
@@ -70,8 +70,8 @@ musicClarinettoIMvtI = \relative c' {
 	e\f\>~
 % Bars 51 to 55
 	e4\! r r2
-	R1
-	R1*9
+	R1*10
+	
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -225,12 +225,8 @@ musicClarinettoIMvtI = \relative c' {
 	c-^
 	d2._\dimD\> d4\!
 	des8\fz r r4 r2
-	R1*3
+	R1*8
 % Bars 201 to 205
-	
-	
-	R1*5
-	
 	
 % Bars 206 to 210
 	
@@ -254,11 +250,10 @@ musicClarinettoIMvtI = \relative c' {
 	fis~
 	fis4\p r r2
 	R1 \mark \default
-	R1*3
+	R1*21
 	
 % Bars 226 to 230
 	
-	R1*18
 % Bars 231 to 235
 	
 % Bars 236 to 240

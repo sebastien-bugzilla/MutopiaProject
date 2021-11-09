@@ -67,14 +67,10 @@ musicClarinettoIIMvtI = \relative c' {
 % Bars 51 to 55
 	g2(\p\< gis)\fz
 	a4(\> bes!2.)\!
-	R1*11
+	R1*20
 % Bars 56 to 60
 	
 % Bars 61 to 65
-	
-	
-	
-	R1*9
 	
 % Bars 66 to 70
 	
@@ -93,26 +89,26 @@ musicClarinettoIIMvtI = \relative c' {
 % Bars 81 to 85
 	r4 d,8(\p\prall c) c r d(\prall c)
 	c r r4 r2
-	R1
-	R1*2
+	R1*3
+	
 	
 % Bars 86 to 90
 	a1\pp~
 	a4 r r2
-	R1*2
+	R1*7
 	
-	R1*2
+	
 % Bars 91 to 95
 	
-	R1*3
+	
 	
 	
 	r2 r16 ees''-.\p\< ees-. d-. ees8-. d16-. d-.\!
 % Bars 96 to 100
 	ees8\fz r r4 r16 ees-.\p\< ees-. d-. ees8-. d16-. d-.\!
 	ees8\fz r r4 r2
-	R1
-	R1*11
+	R1*12
+	
 	
 % Bars 101 to 105
 	
@@ -121,9 +117,9 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R1
+	R1*12
 % Bars 111 to 115
-	R1*11
+	
 % Bars 116 to 120
 	
 % Bars 121 to 125

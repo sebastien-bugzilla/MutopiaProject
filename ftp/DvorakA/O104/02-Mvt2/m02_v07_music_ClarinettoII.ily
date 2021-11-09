@@ -124,14 +124,12 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 % Bars 106 to 110
 	R2.\fermata
-	R2.*5
+	R2.*13
 	
 	
 	
 % Bars 111 to 115
 	
-	R2.
-	R2.*7
 % Bars 116 to 120
 	
 	

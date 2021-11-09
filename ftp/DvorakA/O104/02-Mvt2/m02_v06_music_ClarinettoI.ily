@@ -59,7 +59,7 @@ musicClarinettoIMvtII = \relative c'' {
 % Bars 41 to 45
 	f4-> des-> c->
 	des4. r8 r4
-	des4.\mp c16.( aes32 bes16. ges32 aes16. f32)
+	des4.\mp^\solo c16.( aes32 bes16. ges32 aes16. f32)
 	ges2\< ges'8.(\! f16)
 	ges32( ees c8.\>~ c8) aes16( f~ f c ees aes,)\!
 % Bars 46 to 50

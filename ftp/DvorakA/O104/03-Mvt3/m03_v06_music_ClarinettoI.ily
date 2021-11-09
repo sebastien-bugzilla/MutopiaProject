@@ -411,12 +411,8 @@ musicClarinettoIMvtIII = \relative c' {
 	d\!~
 	d~
 	d
-	R2*3
+	R2*8
 % Bars 406 to 410
-	
-	
-	R2*5
-	
 	
 % Bars 411 to 415
 	

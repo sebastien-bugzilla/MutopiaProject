@@ -62,17 +62,13 @@ musicClarinettoIIMvtIII = \relative c' {
 % Bars 66 to 70
 	
 	r4 e'8\f r
-	R2*11
+	R2*16
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
-	
-	
-	R2*2
-	
 % Bars 81 to 85
-	R2*3
+	
 	
 	
 	\ni \mmrPos #-4 R2
@@ -111,11 +107,11 @@ musicClarinettoIIMvtIII = \relative c' {
 	r4 c,16-.\p\< c-. e-. a-. 
 	c8\fz r r4
 % Bars 121 to 125
-	R2*4
+	R2*8
 	
 	
 	
-	R2*4
+	
 % Bars 126 to 130
 	
 	
@@ -294,9 +290,9 @@ musicClarinettoIIMvtIII = \relative c' {
 	d4(~ d16 c f,8)
 % Bars 311 to 315
 	f4 r
-	R2*2
+	R2*3
 	
-	R2 \mark \default
+	\mark \default
 	R2*16
 % Bars 316 to 320
 	
