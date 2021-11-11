@@ -16,6 +16,7 @@
 \include "./00-Common/DvorakCello_Header.ily"
 \include "./00-Common/DvorakCello_PaperParts.ily"
 \include "./00-Common/DvorakCello_timeMvt.ily"
+\include "./00-Common/DvorakCello_Tempi.ily"
 \include "./00-Common/DvorakCello_OptionParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
@@ -54,6 +55,9 @@
 				\formatCornoIMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtI
 			}
 			\new Voice {
@@ -79,6 +83,9 @@
 				\formatCornoIMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtII
+			}
+			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameCornoIMvtII \musicCornoIMvtII
 			}
@@ -99,6 +106,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatCornoIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtIII
@@ -126,6 +136,9 @@
 				\formatCornoIIMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtI
 			}
 			\new Voice {
@@ -149,6 +162,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatCornoIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtII
@@ -176,6 +192,9 @@
 				\formatCornoIIMvtIII
 			}
 			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtIII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtIII
 			}
 			\new Voice {
@@ -199,6 +218,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatCornoIIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(cornoIII) \tempiPartMvtI
 			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtI
@@ -226,6 +248,9 @@
 				\formatCornoIIIMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(cornoIII) \tempiPartMvtII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtII
 			}
 			\new Voice {
@@ -249,6 +274,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatCornoIIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(cornoIII) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtIII

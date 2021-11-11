@@ -21,16 +21,11 @@ musicCornoIIMvtII = \relative c' {
 	r4 r c\pp\<~
 	c2.\fp\> \mark \default
 	c2\pp~ c8 r^\mutainf \transposition f
-	R2.*5
+	R2.*19
 % Bars 16 to 20
 	
-	
-	
-	
-	R2.*2
 % Bars 21 to 25
 	
-	R2.*12
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -48,22 +43,18 @@ musicCornoIIMvtII = \relative c' {
 % Bars 41 to 45
 	d'4-> d-> cis->
 	d4. r8 r4^\mutaine \transposition e
-	R2.*4
+	R2.*7
 	
 	
 % Bars 46 to 50
 	
-	R2.*3
+	
 	
 	\mark \default
-	R2.*8
+	R2.*15
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	
-	
-	R2.*7
-	
 	
 % Bars 61 to 65
 	
@@ -85,21 +76,17 @@ musicCornoIIMvtII = \relative c' {
 	ees4( f,2)~
 % Bars 76 to 80
 	f8\! r^\mutainf \transposition f r4 r
-	R2.*4
+	R2.*6
 	
 	
 	
 % Bars 81 to 85
-	R2.*2
+	
 	\mark \default
-	R2.*5
+	R2.*9
 	
 	
 % Bars 86 to 90
-	
-	
-	R2.*4
-	
 	
 % Bars 91 to 95
 	

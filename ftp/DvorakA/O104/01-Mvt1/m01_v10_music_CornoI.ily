@@ -146,11 +146,11 @@ musicCornoIMvtI = \relative c'' {
 	
 % Bars 156 to 160
 	\mark \default
-	R1*9
+	R1*11
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	R1*2
+	
 	
 	\ni \mmrPos #-4 R1 
 	\mmrPos #-4 R1 \no
@@ -190,12 +190,8 @@ musicCornoIMvtI = \relative c'' {
 	f\fz
 	<< e!\fz {s4\> s s s\!} >>
 	ees8\fz r r4 r2
-	R1*4
+	R1*9
 % Bars 201 to 205
-	
-	
-	
-	R1*5
 	
 % Bars 206 to 210
 	

@@ -16,6 +16,7 @@
 \include "./00-Common/DvorakCello_Header.ily"
 \include "./00-Common/DvorakCello_PaperParts.ily"
 \include "./00-Common/DvorakCello_timeMvt.ily"
+\include "./00-Common/DvorakCello_Tempi.ily"
 \include "./00-Common/DvorakCello_OptionParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
@@ -51,6 +52,9 @@
 				\formatTrombaIMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(trombaI) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceTrombaIMvtI
 			}
 			\new Voice {
@@ -74,6 +78,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTrombaIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(trombaI) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombaIMvtII
@@ -101,6 +108,9 @@
 				\formatTrombaIMvtIII
 			}
 			\new Voice {
+				\keepWithTag #'(trombaI) \tempiPartMvtIII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceTrombaIMvtIII
 			}
 			\new Voice {
@@ -124,6 +134,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTrombaIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(trombaII) \tempiPartMvtI
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombaIIMvtI
@@ -151,6 +164,9 @@
 				\formatTrombaIIMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(trombaII) \tempiPartMvtII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceTrombaIIMvtII
 			}
 			\new Voice {
@@ -174,6 +190,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTrombaIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(trombaII) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombaIIMvtIII

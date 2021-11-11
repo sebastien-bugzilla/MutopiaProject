@@ -112,36 +112,24 @@ musicCornoIIMvtIII = \relative c' {
 	bes
 	f~
 	f8 r r4
-	R2*3
+	R2*8
 	
 % Bars 161 to 165
 	
-	R2
-	R2*4
-	
-	
 % Bars 166 to 170
 	\mark \default
-	R2*2
+	R2*30
 	
-	R2*9
+	
 	
 % Bars 171 to 175
 	
 % Bars 176 to 180
 	
-	
-	R2*5
-	
-	
 % Bars 181 to 185
 	
-	
-	R2*3
-	
-	
 % Bars 186 to 190
-	R2*11
+	
 % Bars 191 to 195
 	
 % Bars 196 to 200
@@ -340,35 +328,26 @@ musicCornoIIMvtIII = \relative c' {
 	d~\>
 	d\p~
 	d4. r8
-	R2*8
+	R2*20
 	
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
-	R2*12
 % Bars 441 to 445
 	
 % Bars 446 to 450
 	
 	
 	\mark \default
-	R2*8
+	R2*24
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
-	R2*3
-	
-	
-	R2*9
 % Bars 461 to 465
 	
 % Bars 466 to 470
-	
-	
-	
-	R2*4
 	
 % Bars 471 to 475
 	
@@ -377,7 +356,7 @@ musicCornoIIMvtIII = \relative c' {
 	\mmrPos #-6 R
 	\mmrPos #-2 R
 % Bars 476 to 480
-	\mmrPos #-2 R \ni
+	\mmrPos #-2 R \no
 	c'2\fp\>->~
 	c\!
 	f,2\>~

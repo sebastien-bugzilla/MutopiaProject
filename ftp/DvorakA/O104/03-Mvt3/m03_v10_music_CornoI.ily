@@ -230,7 +230,7 @@ musicCornoIMvtIII = \relative c' {
 	
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*20
+	R2*34
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -238,14 +238,14 @@ musicCornoIMvtIII = \relative c' {
 % Bars 296 to 300
 	
 % Bars 301 to 305
-	R2*13
+	
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 	
 	
-	R2 \mark \default
+	\mark \default
 	R2*16
 % Bars 316 to 320
 	
