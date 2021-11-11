@@ -114,11 +114,11 @@ musicFagottoIIMvtIII = \relative c, {
 	a~
 	a
 % Bars 121 to 125
-	R2*4
+	R2*8
 	
 	
 	
-	R2*4
+	
 % Bars 126 to 130
 	
 	
@@ -182,17 +182,13 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 176 to 180
 	a!8. fis16 g8. e16
 	d8) r r4
-	R2*5
+	R2*15
 	
 	
 % Bars 181 to 185
 	
-	
-	R2*3
-	
-	
 % Bars 186 to 190
-	R2*7
+	
 % Bars 191 to 195
 	
 	
@@ -441,18 +437,13 @@ musicFagottoIIMvtIII = \relative c, {
 	fis(
 	b,4.)\pp r8
 % Bars 466 to 470
-	R2*13
+	R2*37
 % Bars 471 to 475
 	
 % Bars 476 to 480
 	
-	
-	
-	R2*3
-	
 % Bars 481 to 485
 	
-	R2*11
 % Bars 486 to 490
 	
 % Bars 491 to 495

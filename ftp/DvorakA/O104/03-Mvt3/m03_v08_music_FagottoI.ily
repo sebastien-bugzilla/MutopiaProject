@@ -31,12 +31,8 @@ musicFagottoIMvtIII = \relative c {
 	fis,8\ff fis16 fis fis8 fis16 fis
 	fis8 fis16 fis fis8 fis16 fis
 	fis8 r r4
-	R2*3
+	R2*7
 % Bars 31 to 35
-	
-	
-	R2*4
-	
 	
 % Bars 36 to 40
 	
@@ -50,13 +46,11 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	\mark \default
-	R2*9
+	R2*35
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
-	
-	R2*26
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -118,24 +112,20 @@ musicFagottoIMvtIII = \relative c {
 	r d-. cis-._\dimmarkup r
 	r d-. cis-. r
 	r d-. cis-. r
-	R2*2
+	R2*14
 	
 % Bars 131 to 135
-	R2*10
+	
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	R2*2
+	
 	\mark \default
-	R2*12
+	R2*14
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	
-	
-	
-	R2*2
 % Bars 156 to 160
 	
 	\ni \mmrPos #-4 R2

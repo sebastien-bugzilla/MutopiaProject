@@ -87,8 +87,8 @@ musicFagottoIIMvtII = \relative c' {
 % Bars 71 to 75
 	cis4.)\! a8( fis e)\>
 	d4 d\! r
-	R2.
-	R2.*8
+	R2.*9
+	
 	
 % Bars 76 to 80
 	
@@ -101,12 +101,12 @@ musicFagottoIIMvtII = \relative c' {
 % Bars 86 to 90
 	f2.~\<
 	f8\! r r4 r
-	R2.*4
+	R2.*7
 	
 	
 % Bars 91 to 95
 	
-	R2.*3
+	
 	
 	\mark \default
 	R2.*11
@@ -163,10 +163,10 @@ musicFagottoIIMvtII = \relative c' {
 	R2.
 	r8 g,\p\<-.( a-. b-.) \tuplet 3/2 4 {c-.( d-. e-.)\!}
 	fis\f r r4 r\fermata \mark \default
-	R2.*2
+	R2.*7
 	
 % Bars 151 to 155
-	R2.*5
+	
 % Bars 156 to 160
 	g,2.\pp~
 	g2 g4~

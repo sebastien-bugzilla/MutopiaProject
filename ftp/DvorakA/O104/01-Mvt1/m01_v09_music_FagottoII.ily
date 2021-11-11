@@ -96,12 +96,12 @@ musicFagottoIIMvtI = \relative c {
 % Bars 86 to 90
 	b,,1\pp~
 	b4 r r2
-	R1*2
+	R1*7
 	
-	R1*2
+	
 % Bars 91 to 95
 	
-	R1*3
+	
 	
 	
 	\ni R1
@@ -222,11 +222,11 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	\mark \default
-	R1
-	R1*2
+	R1*5
+	
 % Bars 211 to 215
 	
-	R1*2
+	
 	
 	r8 e,!(\mf\< g bes e g bes)\! r
 	r e,,(\< g bes e g bes)\! r

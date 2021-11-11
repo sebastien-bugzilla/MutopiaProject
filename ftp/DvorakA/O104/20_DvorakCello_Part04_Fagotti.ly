@@ -16,6 +16,7 @@
 \include "./00-Common/DvorakCello_Header.ily"
 \include "./00-Common/DvorakCello_PaperParts.ily"
 \include "./00-Common/DvorakCello_timeMvt.ily"
+\include "./00-Common/DvorakCello_Tempi.ily"
 \include "./00-Common/DvorakCello_OptionParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
@@ -51,6 +52,9 @@
 				\formatFagottoIMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(fagottoI) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtI
 			}
 			\new Voice {
@@ -74,6 +78,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatFagottoIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(fagottoI) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtII
@@ -101,6 +108,9 @@
 				\formatFagottoIMvtIII
 			}
 			\new Voice {
+				\keepWithTag #'(fagottoI) \tempiPartMvtIII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtIII
 			}
 			\new Voice {
@@ -124,6 +134,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatFagottoIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(fagottoII) \tempiPartMvtI
 			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtI
@@ -151,6 +164,9 @@
 				\formatFagottoIIMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(fagottoII) \tempiPartMvtII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtII
 			}
 			\new Voice {
@@ -174,6 +190,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatFagottoIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(fagottoII) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtIII
