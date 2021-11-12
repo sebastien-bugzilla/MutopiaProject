@@ -31,12 +31,9 @@ musicTubaMvtI = \relative c, {
 	b2\f b~
 	b b~
 	b8 r r4 r2
-	R1*3
+	R1*15
 % Bars 31 to 35
 	
-	
-	R1
-	R1*11
 % Bars 36 to 40
 	
 % Bars 41 to 45

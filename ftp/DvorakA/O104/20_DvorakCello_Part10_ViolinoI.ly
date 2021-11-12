@@ -49,6 +49,9 @@
 				\formatViolinoIMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtI
 			}
 			\new Voice {
@@ -74,6 +77,9 @@
 				\formatViolinoIMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtII
 			}
 			\new Voice {
@@ -97,6 +103,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatViolinoIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtIII

@@ -49,6 +49,9 @@
 				\formatViolaMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameViolaMvtI \musicViolaMvtI
 			}
@@ -69,6 +72,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatViolaMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtII
@@ -94,6 +100,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatViolaMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtIII

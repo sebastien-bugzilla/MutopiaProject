@@ -49,6 +49,9 @@
 				\formatSoloCelloMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(solocello) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceSoloCelloMvtI
 			}
 			\new Voice {
@@ -74,6 +77,9 @@
 				\formatSoloCelloMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(solocello) \tempiPartMvtII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceSoloCelloMvtII
 			}
 			\new Voice {
@@ -97,6 +103,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatSoloCelloMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(solocello) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceSoloCelloMvtIII

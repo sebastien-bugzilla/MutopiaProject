@@ -49,6 +49,9 @@
 				\formatVioloncelloMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(violoncello) \tempiPartMvtI
+			}
+			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameVioloncelloMvtI \musicVioloncelloMvtI
 			}
@@ -69,6 +72,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatVioloncelloMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(violoncello) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceVioloncelloMvtII
@@ -94,6 +100,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatVioloncelloMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(violoncello) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceVioloncelloMvtIII

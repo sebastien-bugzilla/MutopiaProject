@@ -50,6 +50,9 @@
 				\formatTimpaniMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtI
 			}
 			\new Voice {
@@ -73,6 +76,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTimpaniMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtII
@@ -100,6 +106,9 @@
 				\formatTimpaniMvtIII
 			}
 			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtIII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtIII
 			}
 			\new Voice {
@@ -123,6 +132,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTriangoloMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(triangolo) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTriangoloMvtIII

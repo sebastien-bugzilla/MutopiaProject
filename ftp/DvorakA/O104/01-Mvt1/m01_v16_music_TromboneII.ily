@@ -31,9 +31,9 @@ musicTromboneIIMvtI = \relative c {
 	g,2. g4
 	g2. g4
 	g8 r r4 r2
-	R1
+	R1*3
 % Bars 31 to 35
-	R1*2
+	
 	
 	ais8\f r r4 r2
 	R1*11
@@ -219,14 +219,18 @@ musicTromboneIIMvtI = \relative c {
 	r8 gis r ais r fis r gis
 	fis2\fz e8 r fis r \mark \default
 	fis r r4 r2
-	R1*14
+	R1*11
 % Bars 326 to 330
 	
 % Bars 331 to 335
 	
+	
+	
+	
+	\ni \mmrPos #-6 R1
 % Bars 336 to 340
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no 
 	r8 e4\pp r8 r4 e
 	R1*3
 	
@@ -246,5 +250,5 @@ musicTromboneIIMvtI = \relative c {
 	r4 \tuplet 3/2 4 {fis8 fis fis} fis4 fis
 	fis2 fis4. fis8
 	fis1\<
-	b4\f r r2-\tweak extra-offset #'(0 . 0) ^\fermataSign \bar "|."
+	b4\f r r2-\tweak extra-offset #'(5 . 0) ^\fermataSign \bar "|."
 }

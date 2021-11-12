@@ -50,18 +50,14 @@ musicTromboneIMvtII = \relative c' {
 	
 	
 	\mark \default
-	R2.*7
+	R2.*15
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
-	R2.*5
-	
-	
-	
 % Bars 61 to 65
 	
-	R2.*3
+	
 	
 	\bar "||" \key g \major \mark \default
 	d'2\f d4

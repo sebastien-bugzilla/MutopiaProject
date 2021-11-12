@@ -141,14 +141,14 @@ musicTubaMvtIII = \relative c, {
 	d,8. d16 d8 r
 	fis8. d16 d8 r
 % Bars 206 to 210
-	R2*2
+	R2*8
 	
-	R2*2
 	
-	R2*2
+	
+	
 % Bars 211 to 215
 	
-	R2*2
+	
 	
 	e8.\f e16 e8 r
 	g8. e16 e8 r

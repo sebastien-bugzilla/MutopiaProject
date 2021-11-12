@@ -49,6 +49,9 @@
 				\formatContrabassoMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(contrabasso) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtI
 			}
 			\new Voice {
@@ -74,6 +77,9 @@
 				\formatContrabassoMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(contrabasso) \tempiPartMvtII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtII
 			}
 			\new Voice {
@@ -97,6 +103,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatContrabassoMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(contrabasso) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtIII

@@ -16,13 +16,12 @@ musicTubaMvtII = \relative c, {
 	
 	
 	\mark \default
-	R2.
-	R2.*7
+	R2.*20
+	
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
-	R2.*12
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -46,18 +45,14 @@ musicTubaMvtII = \relative c, {
 	
 	
 	\mark \default
-	R2.*7
+	R2.*15
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
-	R2.*5
-	
-	
-	
 % Bars 61 to 65
 	
-	R2.*3
+	
 	
 	\bar "||" \key g \major \mark \default
 	b2\f b4
@@ -73,14 +68,10 @@ musicTubaMvtII = \relative c, {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*5
+	R2.*12
 	
 	
 % Bars 86 to 90
-	
-	
-	R2.*7
-	
 	
 % Bars 91 to 95
 	

@@ -77,13 +77,11 @@ musicTromboneIIMvtII = \relative c {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*5
+	R2.*12
 	
 	
 % Bars 86 to 90
 	
-	
-	R2.*7
 % Bars 91 to 95
 	
 	

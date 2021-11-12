@@ -58,6 +58,9 @@
 				\formatTromboneIMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(tromboneI) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceTromboneIMvtI
 			}
 			\new Voice {
@@ -81,6 +84,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTromboneIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(tromboneI) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTromboneIMvtII
@@ -108,6 +114,9 @@
 				\formatTromboneIMvtIII
 			}
 			\new Voice {
+				\keepWithTag #'(tromboneI) \tempiPartMvtIII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceTromboneIMvtIII
 			}
 			\new Voice {
@@ -131,6 +140,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTromboneIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(tromboneII) \tempiPartMvtI
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTromboneIIMvtI
@@ -158,6 +170,9 @@
 				\formatTromboneIIMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(tromboneII) \tempiPartMvtII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceTromboneIIMvtII
 			}
 			\new Voice {
@@ -181,6 +196,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTromboneIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(tromboneII) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTromboneIIMvtIII
@@ -208,6 +226,9 @@
 				\formatTromboneIIIMvtI
 			}
 			\new Voice {
+				\keepWithTag #'(tromboneIII) \tempiPartMvtI
+			}
+			\new Voice {
 				\InCueContext \cueVoiceTromboneIIIMvtI 
 			}
 			\new Voice {
@@ -231,6 +252,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTromboneIIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(tromboneIII) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTromboneIIIMvtII
@@ -258,6 +282,9 @@
 				\formatTromboneIIIMvtIII
 			}
 			\new Voice {
+				\keepWithTag #'(tromboneIII) \tempiPartMvtIII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceTromboneIIIMvtIII
 			}
 			\new Voice {
@@ -281,6 +308,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTubaMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(tuba) \tempiPartMvtI
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTubaMvtI
@@ -308,6 +338,9 @@
 				\formatTubaMvtII
 			}
 			\new Voice {
+				\keepWithTag #'(tuba) \tempiPartMvtII
+			}
+			\new Voice {
 				\InCueContext \cueVoiceTubaMvtII
 			}
 			\new Voice {
@@ -331,6 +364,9 @@
 		\new Staff <<
 			\new Voice {
 				\formatTubaMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(tuba) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTubaMvtIII
