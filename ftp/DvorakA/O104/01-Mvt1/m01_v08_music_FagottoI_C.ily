@@ -127,11 +127,11 @@ musicFagottoIMvtI = \relative c {
 % Bars 126 to 130
 	fis8)\f r r4 r2 
 	R1 \clef tenor \mark \default
-	\partCombineApart g''8->\f( fis16) r g8(\p fis16) r g8( fis16) r g8( fis16) r 
-	a8(\f-> g16) r a8(\p g16) r a8( g16) r a8( g16) r 
-	g8\f( fis16) r g8(\p fis16) r g8( fis16) r g8( fis16) r 
+	\partCombineApart g''8->\f( fis16) r g8(\brack\p fis16) r g8( fis16) r g8( fis16) r 
+	a8(\f-> g16) r a8(\brack\p g16) r a8( g16) r a8( g16) r 
+	g8\f( fis16) r g8(\brack\p fis16) r g8( fis16) r g8( fis16) r 
 % Bars 131 to 135
-	a8(\f g16) r a8(\p g16) r a8( g16) r a8( g16) r \clef bass \partCombineAutomatic
+	a8(\f g16) r a8(\brack\p g16) r a8( g16) r a8( g16) r \clef bass \partCombineAutomatic
 	e,4\f r r2
 	R1*21
 % Bars 136 to 140
@@ -167,7 +167,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 171 to 175
 	dis16-.\< dis-. dis-. dis-.\! r8. dis16\< e-. e-. e-. e-.\! r4
 	fis,8\f r \tuplet 3/2 4 {a8\p a a} a r \tuplet 3/2 4 {a a a}
-	bes\f r \tuplet 3/2 4 {bes\p\< bes bes} bes r \tuplet 3/2 4 {bes bes bes\!}
+	bes\brack\f r \tuplet 3/2 4 {bes\brack\p\< bes bes} bes r \tuplet 3/2 4 {bes bes bes\!}
 	b!\f r r4 r2
 	R1 \mark \default
 % Bars 176 to 180
@@ -186,8 +186,8 @@ musicFagottoIMvtI = \relative c {
 	e!8 r r4 r2
 	r8 e'\fz r4 r2
 	r8 e\fz r4 r2
-	r8 e\fz r4 r8 e\fz r4
-	a,8\fz r r4 r2
+	r8 e\fz r4 r8 e\brack\fz r4
+	a,8\brack\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata a\f \mark \default
 	d,1\ff
@@ -260,7 +260,7 @@ musicFagottoIMvtI = \relative c {
 	r ais(\< gis ais) d!\( cis d cis\)\!
 	r fis(\f\< eis fis)\! r fis(\< eis fis)\!
 	d8->(\fz cis16) r d8->( cis16) r d8->( cis16) r d8->( cis16) r 
-	cis8\f r r4 r2
+	cis8\brack\f r r4 r2
 % Bars 266 to 270
 	R1
 	dis2\ff~ dis8 cis( b gis)
@@ -308,8 +308,8 @@ musicFagottoIMvtI = \relative c {
 	fis( e_\crescmarkup gis fis)
 	g!2.-^\f r4
 % Bars 311 to 315
-	r2 r4 \tuplet 3/2 4 {g8\f\< b d\!}
-	ees2 ees4-. d-.
+	r2 r4 \tuplet 3/2 4 {g8\f\< b d}
+	ees2\! ees4-. d-.
 	cis!8 r r4 r2
 	r8 cis\fz r4 r2
 	r8 cis\fz r4 r2
@@ -329,7 +329,7 @@ musicFagottoIMvtI = \relative c {
 	
 	r4 b2\fp( gis'4)
 	eis2.~ eis8 gis
-	fis8\mf r r4 r2
+	fis8\brack\mf r r4 r2
 	R1*2
 % Bars 331 to 335
 	

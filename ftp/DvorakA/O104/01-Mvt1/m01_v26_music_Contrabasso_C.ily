@@ -27,7 +27,7 @@ musicContrabassoMvtI = \relative c' {
 	fis,2. fis'4->(
 	fis,8)\< r fis'4(-> fis,8) r fis'4->~
 % Bars 16 to 20
-	fis8 r\! fis'2.\fz~
+	fis8 r\! fis'2.\ffz~
 	fis8 r r4 r2
 	R1
 	fis,8\f fis fis fis  fis fis fis fis
@@ -91,7 +91,7 @@ musicContrabassoMvtI = \relative c' {
 % Bars 71 to 75
 	fis4\< d g g
 	gis\fz r gis r
-	a4\mf r a r
+	a4\brack\mf r a r
 	a\<^\arco a, a' a,\! \mark \default
 	d4->\ff d'8-. d-. d,-. d'-. d-. r
 % Bars 76 to 80
@@ -105,7 +105,7 @@ musicContrabassoMvtI = \relative c' {
 	d d d\> r d d d\! r 
 	d\pp-. d-. d-. r d-. d-. d-. r
 	d1
-	c\ppp
+	c\brack\ppp
 % Bars 86 to 90
 	b4 r r2
 	r4 b^\pizz\pp r2
@@ -119,7 +119,7 @@ musicContrabassoMvtI = \relative c' {
 	r4 g2\< g'8-. f-.
 	e4\f r r r8 g^\pizz\p
 % Bars 96 to 100
-	e4\fz r r r8 g\p
+	e4\fz r r r8 g\brack\p
 	e4\fz r r2
 	R1*12
 	
@@ -177,7 +177,7 @@ musicContrabassoMvtI = \relative c' {
 % Bars 146 to 150
 	e1)
 	a2. r4
-	r g'\pp^\pizz r2
+	r g'\brack\pp^\pizz r2
 	r4 g r2
 	r4 g r2
 % Bars 151 to 155

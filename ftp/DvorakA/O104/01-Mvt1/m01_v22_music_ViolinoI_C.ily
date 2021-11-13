@@ -45,7 +45,7 @@ musicViolinoIMvtI = \relative c' {
 	e8. fis16 g8. fis16 e8. fis16 g8. e16
 	eis(\fp fis eis fis eis fis eis fis bis,\fp cis bis cis bis cis bis cis)
 	gisis(\fp ais gisis ais gisis ais gisis ais fis\fp g fis g fis g fis g)
-	fis8 r fis,\f^\pizz fis r4 g8_\dimmarkup g
+	fis8 r fis,\fp^\pizz fis r4 g8_\dimmarkup g
 % Bars 36 to 40
 	r4 fis8\p\> fis r4 cis8 cis\!
 	fis r r4 r2
@@ -117,7 +117,7 @@ musicViolinoIMvtI = \relative c' {
 	d: c: <b d>: g':
 	<g, g'>4\f r r r8 g'\p^\pizz
 % Bars 96 to 100
-	g4\fz r r r8 g\p
+	g4\brack\fz r r r8 g\brack\p
 	g4\fz r r2
 	R1*12
 % Bars 101 to 105
@@ -163,7 +163,7 @@ musicViolinoIMvtI = \relative c' {
 	g4 r r2
 	g4.(\pp a16 b g4 fis)
 	e( cis4. b4 a8)
-	a2\pp( b
+	a2\brack\pp( b
 % Bars 141 to 145
 	a1)~
 	a(~
@@ -217,14 +217,14 @@ musicViolinoIMvtI = \relative c' {
 % Bars 191 to 195
 	r2 r4 r8\fermata cis\ff \mark \default
 	d4.\downbow e16 fis d2\fz\upbow
-	c4.\downbow\fz b16 a c2\upbow
+	c4.\downbow\fz b16 a c2\fz\upbow
 	b1\downbow
 	bes2\upbow g4 a8(-. cis,-.)
 % Bars 196 to 200
 	<fis, d'>1\downbow
 	<fis dis'>\upbow
 	e'4._\dimD\> fis16 gis e2\!
-	bes'16\f g!8 e cis bes16~\> bes g8 e cis bes'16~\!
+	bes'16\fz g!8 e cis bes16~\> bes g8 e cis bes'16~\!
 	bes\p g8 e cis bes'16~ bes\> g8 e cis a'16~
 % Bars 201 to 205
 	a g8 e cis a'16~ a g8 e cis a'16~
@@ -367,7 +367,7 @@ musicViolinoIMvtI = \relative c' {
 % Bars 326 to 330
 	r8 dis\< b b' b, b' b, b'\!
 	gis\fz r r4 r2
-	<d,! d'!>8\fz^\pizz r r4 r r8 eis\f
+	<d,! d'!>8\p^\pizz r r4 r r8 eis\f
 	fis r r4 r2
 	R1*5
 % Bars 331 to 335

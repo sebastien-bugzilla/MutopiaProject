@@ -143,8 +143,8 @@ musicCornoIIIMvtI = \relative c'' {
 	g8 r r4 r2
 	r8 d\fz r4 r2
 	r8 d\fz r4 r2
-	r8 d\fz r4 r8 d\fz r4
-	g8\fz r r4 r2
+	r8 d\fz r4 r8 d\brack\fz r4
+	g8\brack\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata g\f \mark \default
 	c1-^
@@ -236,7 +236,7 @@ musicCornoIIIMvtI = \relative c'' {
 	c\fz r r4 r2 \mark \default
 	r4 \tuplet 3/2 4 {r8 a,\f\< a a cis cis cis e e\!}
 	e2(\> d\!)
-	cis8\p r \tuplet 3/2 4 {r8 a\< a a cis cis cis e e\!}
+	cis8\brack\p r \tuplet 3/2 4 {r8 a\< a a cis cis cis e e\!}
 % Bars 306 to 310
 	e2(\fz\> d)\!
 	R1*3

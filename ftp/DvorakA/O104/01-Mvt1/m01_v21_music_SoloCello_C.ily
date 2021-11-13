@@ -68,7 +68,7 @@ musicSoloCelloMvtI = \relative c' {
 	e'16(\fz f g) f-. e(\fz d c) d-. c8.->\fz g16-. e8.->\fz g16-.
 	e'16\ff( f g) c,-. d-. e-. g,( b c) e,-. f-. g-. c,( d e) c-.
 	d-. e-. c( d e) c-. d-. e-. c( d e) d-^ c-^_\pesante b-^ a-^ g-^
-	fis1\ff~_\dimmarkup
+	fis1_\ffdim~
 	fis8 a(\< c b a c dis g!)\!
 % Bars 101 to 105
 	fis!1\fz\>~
@@ -87,12 +87,12 @@ musicSoloCelloMvtI = \relative c' {
 	e'4->\fz e16-. e-. fis-. g-. e4->\fz e16-. e-. d-. b-. 
 	e-. e-. d-. b-. d-. d-. b-. g-. b-. b-. g-. e-. g-. g-. e-. e'-. 
 	e\<-. e-. f-. g-. e-. e-. f-. g-. e-. e-. f-. g-. e-. e-. f-. g\!-. 
-	e8(\p\< f g c)\! c(\> a g f)\!
+	e8(\brack\p\< f g c)\! c(\> a g f)\!
 % Bars 116 to 120
 	e16\<-. e-. f-. g-. e-. e-. f-. g-. e-. e-. f-. g-. e-. e-. f-. g-.\!
-	e8(\p\< f g c)\! c(\> a f e)\!
+	e8(\brack\p\< f g c)\! c(\> a f e)\!
 	dis16-.\< dis-. e-. fis-. dis-. dis-. e-. fis-. dis-. dis-. e-. fis-. dis-. dis-. e-. fis-.\!
-	dis8(\p\< e fis b~ b) gis( fis e)\!
+	dis8(\brack\p\< e fis b~ b) gis( fis e)\!
 	d'(\f-> cis) b( ais) cis( b) ais( b)
 % Bars 121 to 125
 	d(-> cis) b( ais) cis( b) ais( b)
@@ -102,7 +102,7 @@ musicSoloCelloMvtI = \relative c' {
 	fis->( eis fis eis) e(-> d e d) cis(-> b cis b) a->( gis a g) \clef bass
 % Bars 126 to 130
 	fis8-^\< eis16( fis) g( fis) b( ais) d( cis) g'( fis) \clef tenor b( ais) d( cis)\! \clef treble
-	\acciaccatura g'8 \afterGrace fis1\ff\startTrillSpan {eis16[(\stopTrillSpan fis])} \mark \default
+	\acciaccatura g'8 \afterGrace fis1_\ffz\startTrillSpan {eis16[(\stopTrillSpan fis])} \mark \default
 	\textSpannerDown \ffcolottava b,4.\downbow\startTextSpan cis16 d b2\upbow
 	bes4.\downbow a16 g bes2\upbow
 	b!4.\downbow cis16 d b2\upbow
@@ -155,7 +155,7 @@ musicSoloCelloMvtI = \relative c' {
 	fis8.( ais,16 cis2.) \clef bass
 	<cis, bes' e!>8.-^\arpeggio(_\fzconforza cis'16-.) bes!( a g e') <d,! b' fis'>8.-^\fz\arpeggio( e'16-.) d( cis b fis')
 % Bars 171 to 175
-	<dis, a'! fis'>8.\fz( d'!16-.) c( b a fis') <cis,! a' g'>8.( e'16-.) d( cis! a a') \clef treble
+	<dis, a'! fis'>8.\fz( d'!16-.) c( b a fis') <cis,! a' g'>8.(\fz e'16-.) d( cis! a a') \clef treble
 	a-.\f\< b( c) b( c4) a16-. b( c) b( c4)\!
 	bes16-.\< cis!( d) cis( d4) bes16-. cis( d) cis( d4)\!
 	r16 cis(\ff\< d) cis( d) cis( d) cis( d) cis( d) cis( d) cis( d) cis(\!
@@ -247,7 +247,7 @@ musicSoloCelloMvtI = \relative c' {
 	r8 <ais, fis'>16-.\ff q( <b g'!>\fz) q( <ais fis'>) q( <d! b'>\fz) q( <cis ais'>) q( <eis d'>)\fz q( <fis cis'>) q-.
 	r8 <fis ais>16-. q( <b d>)\fz q( <ais cis>) q( \clef treble <b g'!>)\fz q( <ais fis'>) q( <d! b'>)\fz q( <cis ais'>) q-.
 	r8 <cis ais'>16-. q( <b' d>)\fz q( <ais cis>) q-. r8 <cis, ais'>16 q( <b' d>)\fz q( <ais cis>) q-.
-	<g g'> <g g'>( <fis fis'>) q( <g g'>) <g g'>( <fis fis'>) q( <g g'>) <g g'>( <fis fis'>) q( <g g'>) <g g'>( <fis fis'>) q( 
+	<g g'>\ff <g g'>( <fis fis'>) q( <g g'>) <g g'>( <fis fis'>) q( <g g'>) <g g'>( <fis fis'>) q( <g g'>) <g g'>( <fis fis'>) q( 
 	<g g'>) q( <fis fis'>) q( <e e'>) q( <cis cis'>) q( \clef tenor <ais ais'>) q( <fis fis'>) q( <e e'>) q( <e cis'>) q
 % Bars 266 to 270
 	<e ais>4\fz \tuplet 19/12 1 {<e e'>16( <eis eis'> <fis fis'> <g g'> <gis gis'> <a! a'!> \clef treble <ais ais'> <b b'> <bis bis'> <cis cis'> <d d'> <dis dis'> <e! e'!> <eis eis'> <fis fis'> <g! g'!> <gis gis'> <a! a'!> <ais ais'>)}
@@ -272,12 +272,12 @@ musicSoloCelloMvtI = \relative c' {
 	dis( b) \clef tenor ais( gis)
 	b(\> fis) cis'4.( b8)\! \mark \default
 	b8( b,16_\dimmarkup dis fis dis fis eis) fis( dis fis dis fisis dis fisis dis)
-	\setSextolet \tuplet 3/2 8 {gis16(\mp-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. gis(-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. 
+	\setSextolet \tuplet 3/2 8 {gis16(\brack\mp-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. gis(-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. 
 % Bars 286 to 290
 	gis(\<-. e-. ais,)-. ais(-. e'-. gis)-. dis(-. bis-. fisis)-. fisis(-. bis-. dis)\!-. dis(\>-. bis-. fisis)-. fisis(-. bis-. dis)-. e(-. cis-. fisis,)-. fisis(-. cis'-. e)\!-. \clef treble
 	gis(-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. gis(-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. 
 	gis(\<-. e-. ais,)-. ais(-. e'-. gis)-. dis(-. bis-. fisis)-. fisis(-. bis-. dis)-. dis(-. bis-. fisis)-. fisis(-. bis-. dis)-. e(-. cis-. fisis,)-. fisis(-. cis'-. e)\!-. 
-	b'(\f-. e,-. cis)-. cis(-. e-. b')-. ais(-. fis!-. dis)-. dis(-. fis-. ais)-. b(-. e,-. cis)-. cis(-. e-. b')-. ais(-. fis-. dis)-. dis(-. fis-. ais)-. 
+	b'(\brack\f-. e,-. cis)-. cis(-. e-. b')-. ais(-. fis!-. dis)-. dis(-. fis-. ais)-. b(-. e,-. cis)-. cis(-. e-. b')-. ais(-. fis-. dis)-. dis(-. fis-. ais)-. 
 	gis(\>-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. gis(-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. 
 % Bars 291 to 295
 	fis!(-. d-. gis,)-. gis(-. d'-. fis)-. eis(-. cis-. a!)-. a(-. cis-. eis)-. fis(-. d-. gis,)-. gis(-. d'-. fis)\!-. eis(-. cis-. a)-. a(-. cis-. eis)-. 
@@ -295,7 +295,7 @@ musicSoloCelloMvtI = \relative c' {
 	gis16\ff ais( b) ais( b) ais( b) ais( b) ais( b)\< ais( b) ais( b) ais( 
 	b) ais( b) ais( b) ais( b) ais(\! cis8 b) ais( gis) \mark \default
 	fis2 r \clef bass
-	\tuplet 3/2 4 {r8 fis,\f fis fis(\< fis') fis-.} fis( e)\! dis( cis)
+	\tuplet 3/2 4 {r8 fis,\f\< fis fis( fis') fis-.} fis( e)\! dis( cis)
 	e( dis) dis4 r2
 % Bars 306 to 310
 	\tuplet 3/2 4 {r8 fis,\< fis fis( fis') fis-.} fis( e)\! dis( cis) \clef tenor
@@ -318,9 +318,9 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 321 to 325
 	
 	\clef treble \mark \default
-	<b' b'>4.-^^\moltoappassionato_\ffcolottavaadlib <cis cis'>16 <dis dis'> <b b'>2
-	<ais ais'>4.-^ <gis gis'>16 <fis fis'> <b b'>2
-	\acciaccatura b8 b'4_\fzmarkup\< \acciaccatura cis,8 cis'4_\fzmarkup \acciaccatura  dis,8 dis'4_\fzmarkup \acciaccatura e,8 e'4_\fzmarkup
+	b''4.-^^\moltoappassionato_\ffcolottavaadlib cis16 dis b2
+	ais4.-^ gis16 fis b2
+	\acciaccatura b,8 b'4_\fzmarkup\< \acciaccatura cis,8 cis'4_\fzmarkup \acciaccatura  dis,8 dis'4_\fzmarkup \acciaccatura e,8 e'4_\fzmarkup
 % Bars 326 to 330
 	\acciaccatura fis,8 fis'4_\fzmarkup \acciaccatura  fisis,8 fisis'4_\fzmarkup \acciaccatura  gis,8 gis'4_\fzmarkup \acciaccatura a,!8 a'!4_\fzmarkup\!
 	<ais, ais'>8( <cis cis'>) <<{

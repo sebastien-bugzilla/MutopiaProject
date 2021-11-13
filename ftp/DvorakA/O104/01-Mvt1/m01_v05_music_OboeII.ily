@@ -74,7 +74,7 @@ musicOboeIIMvtI = \relative c' {
 	\mmrPos #-4 R
 % Bars 71 to 75
 	\mmrPos #-4 R \no
-	fis1\p\<
+	fis1\brack\p\<
 	fis2.\f fis4(
 	g1)\< \mark \default
 	fis'4\ff r8 fis g-. fis-. fis-. r
@@ -112,7 +112,7 @@ musicOboeIIMvtI = \relative c' {
 	R1*3
 	
 	
-	r4 r8 c16\f\< c c8 c c4->\fz\>~
+	r4 r8 c16\f c c8 c c4->\fz\>~
 	c8\! r r4 r2
 % Bars 116 to 120
 	r4 r8 c16\f\< c c8 c c4->\>~
@@ -176,7 +176,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 171 to 175
 	c-. c-. c-. c-.\! r8. c16\< cis-. cis-. cis-. cis-.\! r4
 	dis8\f r r4 r2
-	e8\f r r4 r2
+	e8\brack\f r r4 r2
 	f8\f r r4 r2
 	R1 \mark \default
 % Bars 176 to 180
@@ -195,8 +195,8 @@ musicOboeIIMvtI = \relative c' {
 	cis!8 r r4 r2
 	r8 a\fz r4 r2
 	r8 a\fz r4 r2
-	r8 bes\fz r4 r8 bes\fz r4
-	e8\fz r r4 r2
+	r8 bes\fz r4 r8 bes\brack\fz r4
+	e8\brack\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata e8\f \mark \default
 	fis1\ff
@@ -270,7 +270,7 @@ musicOboeIIMvtI = \relative c' {
 	r4 d8(\mf cis\< g'! fis eis\! fis)
 	r ais(\f\< b ais)\! r ais(\< b ais)\!
 	eis8\fz->( fis16) r eis8->( fis16) r eis8(-> fis16) r eis8->( fis16) r
-	ais8\f r r4 r2
+	ais8\brack\f r r4 r2
 % Bars 266 to 270
 	R1
 	dis2\ff~ dis8 cis( b gis)
@@ -308,7 +308,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 301 to 305
 	d!8\f r r4 r2
 	R1 \mark \default
-	b8\f r r4 r2
+	b8\brack\f r r4 r2
 	R1*6
 	
 % Bars 306 to 310

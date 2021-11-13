@@ -198,8 +198,8 @@ musicClarinettoIIMvtI = \relative c' {
 	e!8 r r4 r2
 	r8 c\fz r4 r2
 	r8 c\fz r4 r2
-	r8 cis\fz r4 r8 cis\fz r4
-	e8\fz r r4 r2
+	r8 cis\fz r4 r8 cis\brack\fz r4
+	e8\brack\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata e8\f \mark \default
 	f1\ff
@@ -285,7 +285,7 @@ musicClarinettoIIMvtI = \relative c' {
 	r e\(\< d cis\) gis'\( a gis a\)\!
 	r cis(\f\< d cis)\! r cis(\< d cis)\!
 	d,8(\fz-> cis16) r d8->( cis16) r d8->( cis16) r d8->( cis16) r 
-	g'8\f r r4 r2 
+	g'8\brack\f r r4 r2 
 % Bars 266 to 270
 	R1
 	fis'2~\ff fis8 e\( d b\)
@@ -323,7 +323,7 @@ musicClarinettoIIMvtI = \relative c' {
 % Bars 301 to 305
 	d!8\fz r r4 r2
 	R1 \mark \default
-	a8\f r r4 r2
+	a8\brack\f r r4 r2
 	R1*3
 	
 % Bars 306 to 310
@@ -366,7 +366,7 @@ musicClarinettoIIMvtI = \relative c' {
 	R1*5
 % Bars 341 to 345
 	r4 r8 cis'\ff-^ d-^ dis-^ e-^ cis-^
-	fis1\startTrillSpan
+	fis1\ff\startTrillSpan
 	fis\startTrillSpan
 	fis\startTrillSpan
 	d\startTrillSpan

@@ -150,7 +150,7 @@ musicCornoIMvtI = \relative c'' {
 % Bars 171 to 175
 	f-. f-. f-. f-.\! r8. f16\< f-. f-. f-. f-.\! r4
 	f8\f r \tuplet 3/2 4 {b,\p c b} b r \tuplet 3/2 4 {b c b}
-	c\f r \tuplet 3/2 4 {c\p\< des c} c r \tuplet 3/2 4 {c des c\!}
+	c\f r \tuplet 3/2 4 {c\brack\p\< des c} c r \tuplet 3/2 4 {c des c\!}
 	des\f r \partCombineAutomatic e!\f\<-. dis-. e-. dis-. e-. dis-.\!
 	e->\fz r r4 r2 \mark \default
 % Bars 176 to 180
@@ -169,8 +169,8 @@ musicCornoIMvtI = \relative c'' {
 	c8 r r4 r2
 	r8 ees\fz r4 r2
 	r8 ees\fz r4 r2
-	r8 ees\fz r4 r8 ees\fz r4
-	ees8\fz r r4 r2
+	r8 ees\fz r4 r8 ees\brack\fz r4
+	ees8\brack\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata ees\f \mark \default
 	f1-^
@@ -275,7 +275,7 @@ musicCornoIMvtI = \relative c'' {
 	des\fz r r4 r2 \mark \default
 	\tuplet 3/2 4 {r8 b,\f b b\< d d d g g g b b\!}
 	b2\>( fis)\!
-	\tuplet 3/2 4 {g8\p\noBeam b, b b\< d d d g g g b b\!}
+	\tuplet 3/2 4 {g8\brack\p\noBeam b, b b\< d d d g g g b b\!}
 % Bars 306 to 310
 	b2\fz\>( fis)\!
 	\partCombineApart b4(\fp c) b(\fp c)

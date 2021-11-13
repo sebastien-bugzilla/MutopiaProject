@@ -96,7 +96,7 @@ musicFlautoIIMvtI = \relative c'' {
 	
 % Bars 101 to 105
 	r16 c,,\p\<-. c-. b-. c8-. e-. \tuplet 3/2 4 {e-. e-. a-. } a16-. a-. a-. c-.\!
-	c8 r r4 r2
+	c8\fz r r4 r2
 	R1*7 
 	
 	
@@ -159,7 +159,7 @@ musicFlautoIIMvtI = \relative c'' {
 % Bars 171 to 175
 	c-. c-. b-. c-.\! r8. c16\< cis!-. cis-. bis-. cis-.\! r4
 	c8\f r r4 r2
-	bes8\f r r4 r2
+	bes8\brack\f r r4 r2
 	d8\f r r4 r2
 	R1 \mark \default
 % Bars 176 to 180
@@ -178,8 +178,8 @@ musicFlautoIIMvtI = \relative c'' {
 	g!8 r r4 r2
 	r8 a,\fz r4 r2
 	r8 a\fz r4 r2
-	r8 ais\fz r4 r8 ais\fz r4
-	cis8\fz r r4 r2
+	r8 ais\fz r4 r8 ais\brack\fz r4
+	cis8\brack\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata cis\f \mark \default
 	d1\ff
@@ -287,7 +287,7 @@ musicFlautoIIMvtI = \relative c'' {
 	R1*2
 % Bars 296 to 300
 	
-	e!16\pp-. e-. dis-. e-. r8. e16-. gis-. gis-. fisis-. gis-. r8. gis16-.
+	e!16\p-. e-. dis-. e-. r8. e16-. gis-. gis-. fisis-. gis-. r8. gis16-.
 	a!16-._\crescmarkup a-. gis-. a-. r8. a16-.\< ais-. ais-. gisis-. ais-.\! r4
 	a!8\fz r r4 r2
 	g!8\fz r r4 r2

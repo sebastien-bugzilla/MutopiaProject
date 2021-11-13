@@ -23,7 +23,7 @@ musicTromboneIIMvtI = \relative c {
 % Bars 21 to 25
 	\mmrPos #-4 R
 	\mmrPos #-7 R \no \mark \default
-	fis2.\ff g4-.
+	fis2.\f g4-.
 	fis-. e-. fis2~
 	fis4 r b8. d16 fis8.-> e16
 % Bars 26 to 30

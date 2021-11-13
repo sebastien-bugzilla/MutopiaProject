@@ -40,7 +40,7 @@ musicViolaMvtI = \relative c {
 	<b d>: q:
 % Bars 26 to 30
 	<<{d4: e: e: d:} \\ {b2: b:}>>
-	<g b>2:\ff q:
+	<g b>2:\brack\ff q:
 	q: q:
 	<g e' g>: q:
 	q: q:
@@ -119,7 +119,7 @@ musicViolaMvtI = \relative c {
 	<f aes>2.:\fz\> <f g!>4:\!
 	<e g>4\f r r r8 g\p^\pizz
 % Bars 96 to 100
-	c4\fz r r r8 g\p
+	c4\fz r r r8 g\brack\p
 	c4\fz r r2
 	R1*5
 	
@@ -137,7 +137,7 @@ musicViolaMvtI = \relative c {
 	fis4(\mf\> b,8 d g, fis4.)\! \mark \default
 	fis1\pp(
 % Bars 111 to 115
-	d4)( << fis2.) {s4\fp\> s s\!} >>
+	d4)( << fis2.) {s4\brack\fp\> s s\!} >>
 	g1~
 	g4 b( g4. e8)
 	g1\pp~
@@ -171,7 +171,7 @@ musicViolaMvtI = \relative c {
 	b4 r r2
 	b2.(\pp a4
 	g <e g> <d f> <cis e>)
-	fis!2\pp( d)~
+	fis!2\brack\pp( d)~
 % Bars 141 to 145
 	d1
 	cis2( d)
@@ -181,7 +181,7 @@ musicViolaMvtI = \relative c {
 % Bars 146 to 150
 	e2 d)
 	<cis e>2. r4
-	<g' b>2:16\pp q:
+	<g' b>2:16\brack\pp q:
 	q: q:
 	q: q:
 % Bars 151 to 155
@@ -203,7 +203,7 @@ musicViolaMvtI = \relative c {
 	b,_\dimmarkup d c e b d c e
 	b\p\> d c e c f c fis\!
 % Bars 166 to 170
-	cis!\pp r r4 r2
+	cis!\brack\pp r r4 r2
 	R1
 	\tuplet 3/2 4 {cis,8\pp^\arco cis cis  cis cis cis  cis cis cis  cis cis cis  
 	cis cis cis  cis cis cis  cis cis cis  cis cis cis  }
@@ -224,7 +224,7 @@ musicViolaMvtI = \relative c {
 	
 	
 	<bes d>8\f r r4 r2
-	r4 f2:16 <bes d>4:
+	r4 f2:16\f <bes d>4:
 	<bes ees>2: dis':
 % Bars 186 to 190
 	g8 r r4 r2
@@ -378,7 +378,7 @@ musicViolaMvtI = \relative c {
 	<e g!>8\f r r4 r2
 % Bars 311 to 315
 	r4 g2:16\f\< <g' b>4:\!
-	<ees g>2:\fz <<{fis2:} \\ {ees4: d:}>>
+	<ees g>2:\brack\fz <<{fis2:} \\ {ees4: d:}>>
 	<cis! fis>8-._\ffz q-. r4 r2
 	R1*3
 	

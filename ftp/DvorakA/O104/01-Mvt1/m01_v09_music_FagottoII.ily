@@ -179,7 +179,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 171 to 175
 	dis16-.\< dis-. dis-. dis-.\! r8. dis16\< e-. e-. e-. e-.\! r4
 	fis,8\f r \tuplet 3/2 4 {fis'8\p g fis} fis r \tuplet 3/2 4 {fis g fis}
-	g\f r \tuplet 3/2 4 {g\p\< aes g} g r \tuplet 3/2 4 {g aes g\!}
+	g\brack\f r \tuplet 3/2 4 {g\brack\p\< aes g} g r \tuplet 3/2 4 {g aes g\!}
 	gis\f r r4 r2
 	R1 \mark \default
 % Bars 176 to 180
@@ -198,8 +198,8 @@ musicFagottoIIMvtI = \relative c {
 	e!8 r r4 r2
 	r8 e'\fz r4 r2
 	r8 e\fz r4 r2
-	r8 e\fz r4 r8 e\fz r4
-	a,8\fz r r4 r2
+	r8 e\fz r4 r8 e\brack\fz r4
+	a,8\brack\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata a\f \mark \default
 	d,1\ff
@@ -276,7 +276,7 @@ musicFagottoIIMvtI = \relative c {
 	r fis(\< eis fis) b( ais d cis)\!
 	r fis(\f\< eis fis)\! r fis(\< eis fis)\!
 	b,8->(\fz ais16) r b8->( ais16) r b8->( ais16) r b8->( ais16) r 
-	fis8\f r r4 r2
+	fis8\brack\f r r4 r2
 % Bars 266 to 270
 	R1
 	dis'2\ff~ dis8 cis( b gis)
@@ -314,7 +314,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 301 to 305
 	eis\f r r4 r2
 	R1 \mark \default
-	fis'!8\f r r4 r2
+	fis'!8\brack\f r r4 r2
 	R1*3
 	
 % Bars 306 to 310
@@ -324,8 +324,8 @@ musicFagottoIIMvtI = \relative c {
 	bis( cis_\crescmarkup cisis dis)
 	e!2.-^\f r4
 % Bars 311 to 315
-	r2 r4 \tuplet 3/2 4 {g8\f\< b d\!}
-	ees,2 ees4-. d-.
+	r2 r4 \tuplet 3/2 4 {g8\f\< b d}
+	ees,2\! ees4-. d-.
 	cis8 r r4 r2
 	r8 cis!\fz r4 r2
 	r8 cis\fz r4 r2
@@ -345,7 +345,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	r4 e2\fp( e'4)
 	eis2.~ eis8 gis
-	fis8\mf r r4 r2
+	fis8\brack\mf r r4 r2
 	R1*2
 % Bars 331 to 335
 	

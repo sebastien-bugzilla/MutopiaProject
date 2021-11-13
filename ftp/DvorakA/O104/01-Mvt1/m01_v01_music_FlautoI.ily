@@ -105,7 +105,7 @@ musicFlautoIMvtI = \relative c'' {
 	
 % Bars 101 to 105
 	r16 e,\p\<-. e-. dis-. e8-. a-. \tuplet 3/2 4 {a-. a-. c-. } c16-. c-. c-. e-.\!
-	dis8 r r4 r2
+	dis8\fz r r4 r2
 	a'4.(\p b16 c a2)
 	d4( c8 b d2)
 	b4.( cis!16 d b2)
@@ -114,7 +114,7 @@ musicFlautoIMvtI = \relative c'' {
 	e8)\< fis( g fis e d cis b)\!
 	b( cis d ais b\f d a'! g~
 	g)\> fis( e d) d4(~ \tuplet 3/2 4 {d8 cis fis)\!} \mark \default
-	b,8 r r4 r2
+	b,8\fz r r4 r2
 % Bars 111 to 115
 	R1*9
 % Bars 116 to 120
@@ -188,15 +188,15 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 181 to 185
 	g'8.( fis16 a,4) g'8.( fis16 a,4)
 	a'8.( g16 b,4) b'8.( a16 cis,4)
-	bes'8\f r r4 r2
+	bes'8\brack\f r r4 r2
 	r4 bes,2.\f
 	\tuplet 3/2 4 {ees,8\< ges bes} \naturaltrill \afterGrace ees2.\!\startTrillSpan {d16[( ees)]\stopTrillSpan}
 % Bars 186 to 190
 	g!8 r r4 r2
 	r8 cis,\fz r4 r2
 	r8 cis\fz r4 r2
-	r8 cis\fz r4 r8 cis\fz r4
-	e8\fz r r4 r2
+	r8 cis\fz r4 r8 cis\brack\fz r4
+	e8\brack\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata cis\f \mark \default
 	d1\ff
@@ -317,7 +317,7 @@ musicFlautoIMvtI = \relative c'' {
 	bes'2(\p ees4 bes8. c16)
 % Bars 296 to 300
 	g16( ees g bes) bes2.
-	e,!16\pp-. e-. dis-. e-. r8. e16-. gis-. gis-. fisis-. gis-. r8. gis16-.
+	e,!16\p-. e-. dis-. e-. r8. e16-. gis-. gis-. fisis-. gis-. r8. gis16-.
 	a!16-._\crescmarkup a-. gis-. a-. r8. a16-.\< ais-. ais-. gisis-. ais-.\! r4
 	bis8\fz r r4 r2
 	cis8\fz r r4 r2

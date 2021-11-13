@@ -49,6 +49,7 @@ ritemoltocresc=^\markup {\italic {rit. e molto cresc.}}
 pmarcato=^\markup {\dynamic p \italic marcato}
 ptranquilloemoltoespressivo=^\markup {\dynamic p \italic {tranquillo e molto espressivo}}
 ffconforza=^\markup {\dynamic ff \italic {con forza}}
+ffdim=^\markup {\dynamic ff \italic dim.}
 
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
@@ -219,3 +220,17 @@ OutCueContext = {
 	\revert Script.staff-padding
 	
 }
+
+brack = #(define-event-function 
+	(dyn) (ly:event?)
+	(make-dynamic-script
+	#{ 
+		\markup \concat {
+			\translate #'(0 . -0.4) \normal-text \italic \fontsize #2 [
+			\pad-x #0.0 #(ly:music-property dyn 'text)
+			\translate #'(0 . -0.4) \normal-text \italic \fontsize #2 ]
+		}
+	#}
+	)
+)
+

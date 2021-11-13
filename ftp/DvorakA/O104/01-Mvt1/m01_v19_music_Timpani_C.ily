@@ -199,7 +199,7 @@ musicTimpaniMvtI = \relative c, {
 	R1*2
 % Bars 266 to 270
 	
-	b1\f\startTrillSpan
+	b1\brack\f\startTrillSpan
 	b\startTrillSpan
 	fis\startTrillSpan
 	fis2\>\startTrillSpan fis4\stopTrillSpan\! r

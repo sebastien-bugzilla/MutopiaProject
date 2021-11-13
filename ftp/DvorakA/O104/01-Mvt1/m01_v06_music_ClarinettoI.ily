@@ -133,7 +133,7 @@ musicClarinettoIMvtI = \relative c' {
 	e2(\< f)\!
 	f2.\fz( e4)
 	a,(_\dimD d,8 f bes, a4.) \mark \default
-	a8 r r4 r2
+	a8\fz r r4 r2
 % Bars 111 to 115
 	R1*9
 % Bars 116 to 120
@@ -212,8 +212,8 @@ musicClarinettoIMvtI = \relative c' {
 	bes!8 r r4 r2
 	r8 e,\fz r4 r2
 	r8 e\fz r4 r2
-	r8 e\fz r4 r8 e\fz r4
-	g8\fz r r4 r2
+	r8 e\fz r4 r8 e\brack\fz r4
+	g8\brack\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata g8\f \mark \default
 	a1\ff
@@ -287,7 +287,7 @@ musicClarinettoIMvtI = \relative c' {
 	r e(\< d cis) gis'( a b cis)\!
 	r e(\f\< f! e)\! r e(\< f e)\!
 	f,!8(\fz-> e16) r f8->( e16) r f8->( e16) r f8->( e16) r 
-	cis'8\f r r4 r2 
+	cis'8\brack\f r r4 r2 
 % Bars 266 to 270
 	R1
 	fis2~\ff fis8 e( d b)
@@ -329,7 +329,7 @@ musicClarinettoIMvtI = \relative c' {
 % Bars 301 to 305
 	f8\fz r r4 r2
 	R1 \mark \default
-	d8\f r r4 r2
+	d8\brack\f r r4 r2
 	R1*3
 	
 % Bars 306 to 310
@@ -372,7 +372,7 @@ musicClarinettoIMvtI = \relative c' {
 	R1*5
 % Bars 341 to 345
 	r4 r8 cis\ff-^ d-^ dis-^ e-^ cis-^
-	\naturaltrill a'1\startTrillSpan
+	\naturaltrill a'1\ff\startTrillSpan
 	\naturaltrill a\startTrillSpan
 	\naturaltrill a\startTrillSpan
 	\sharptrill b\startTrillSpan

@@ -49,7 +49,7 @@ musicVioloncelloMvtI = \relative c {
 	c\fz b\fz
 	fis8 r r4 r2
 	R1
-	r4 fis'8\f^\pizz fis r4 g8_\dimmarkup g
+	r4 fis'8\brack\fp^\pizz fis r4 g8_\dimmarkup g
 % Bars 36 to 40
 	r4 fis8\p\> fis r4 cis8 cis\!
 	fis r r4 r8 fis,\f\<^\arco-. gis-. ais-. 
@@ -95,7 +95,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 71 to 75
 	fis4(_\crescmarkup d) g2\<
 	gis2.\fz\< gis4
-	a1\mf
+	a1\brack\mf
 	a,\< \mark \default
 	d4->\ff d'8-. d-. d,-. d'-. d-. r
 % Bars 76 to 80
@@ -171,7 +171,7 @@ musicVioloncelloMvtI = \relative c {
 	e4 r r2
 	e2.\pp( a,4~
 	a1)
-	d2(\pp g,
+	d2(\brack\pp g,
 % Bars 141 to 145
 	fis1)
 	a2( b)
@@ -181,7 +181,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 146 to 150
 	e1)
 	a2. r4
-	r g'\pp^\pizz r2
+	r g'\brack\pp^\pizz r2
 	r4 g r2
 	r4 g r2
 % Bars 151 to 155
@@ -203,7 +203,7 @@ musicVioloncelloMvtI = \relative c {
 	b_\dimmarkup r c r b r c r
 	b\p\> r c r r4 c8 r\!
 % Bars 166 to 170
-	cis!\pp r r4 r cis8 cis
+	cis!\brack\pp r r4 r cis8 cis
 	cis r r4 r cis8 cis
 	cis, r r4 r cis8 cis
 	cis r r4 r cis8 cis
