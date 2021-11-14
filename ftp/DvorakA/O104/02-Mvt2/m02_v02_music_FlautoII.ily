@@ -57,7 +57,7 @@ musicFlautoIIMvtII = \relative c'' {
 % Bars 56 to 60
 	
 	\ni \mmrPos #-4 R2. \no
-	c4(\f\> beses ges
+	c4(\fz\> beses ges
 	f)\p r r
 	c'(\f\> beses ges
 % Bars 61 to 65

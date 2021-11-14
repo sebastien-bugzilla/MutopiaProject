@@ -121,7 +121,7 @@ musicFagottoIIMvtII = \relative c' {
 	
 % Bars 116 to 120
 	r4 d2\fz
-	fis4(\p g a)
+	fis4(\brack\p g a)
 	b16-. g'-. b,-. g'-. c,\<-. g'-. b,-. g'-. c,-. g'-. b,-. g'-.\!
 	c,8 c,16 e~ e\p\<-. g-. c-. e-. g8( c)\!
 	b4(\mf c b)
@@ -148,7 +148,7 @@ musicFagottoIIMvtII = \relative c' {
 	g4( bes2)
 	f4( aes2)\<
 	ees2._\crescD
-	cis2.\mf\<
+	cis2.\brack\mf\<
 % Bars 141 to 145
 	d\f-^~
 	d\>~
@@ -164,7 +164,7 @@ musicFagottoIIMvtII = \relative c' {
 % Bars 151 to 155
 	R2.*5
 % Bars 156 to 160
-	g,2.\pp~
+	g,2.\brack\pp~
 	g2 g4~
 	g b2~
 	b r4 

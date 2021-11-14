@@ -114,7 +114,7 @@ musicVioloncelloMvtII = \relative c {
 	<c g'>2(\< c4)\! \mark \default
 	<<f,2. {s4\mf\< s s16\> s s s\!}>>
 	f2._\pdim
-	<<f2. {s4\mf\< s s16\> s s s\!}>>
+	<<f2. {s4\< s s16\> s s s\!}>>
 % Bars 86 to 90
 	f2.\p 
 	f'16^\pizz\mf f' a, r f f' a, r f f' a, r
@@ -135,7 +135,7 @@ musicVioloncelloMvtII = \relative c {
 	g r16 \tuplet 3/2 4 {g,32^\arco g g} g4 r8 g^\pizz\<
 % Bars 101 to 105
 	c c' \tuplet 3/2 4 {b b, b} e, e'\!
-	fis,-^ r16 \tuplet 3/2 4 {fis32^\arco fis fis} fis8 r r fis^\pizz_\dimmarkup
+	fis,\f-^ r16 \tuplet 3/2 4 {fis32^\arco fis fis} fis8 r r fis^\pizz_\dimmarkup
 	g r a r16 a32\p^\arco a a8 r
 	b4^\pizz r8 b_\dimmarkup\noBeam c r16 c32^\arco c
 	d4\pp r r8 d

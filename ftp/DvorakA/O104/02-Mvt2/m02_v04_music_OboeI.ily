@@ -62,7 +62,7 @@ musicOboeIMvtII = \relative c'' {
 	des4)\! r r 
 	ges(\fz\> ees2
 	f4\p) r r
-	ges4(\f ees2\>)
+	ges4(\fz ees2\>)
 % Bars 61 to 65
 	f4\p r r
 	R2.*3

@@ -54,7 +54,7 @@ musicSoloCelloMvtII = \relative c' {
 	
 % Bars 41 to 45
 	
-	r4 r g\mp
+	r4 r g\brack\mp
 	d'4._\moltoespressivo c8(-- bes-- a--)
 	g4 g \tuplet 3/2 4 {g8( a bes)}
 	c4. a8( f ees)
@@ -172,7 +172,7 @@ musicSoloCelloMvtII = \relative c' {
 	d(_\dimmarkup cis) c
 	b2(\pp a4\fermata \mark \default
 	g) r r 
-	r16\pp\< c,( e fis g c e fis) g( a g e)\!
+	r16\p\< c,( e fis g c e fis) g( a g e)\!
 % Bars 131 to 135
 	g4.\> r8\! r4
 	r16 c,,(\< e fis g c e fis)\! \clef tenor \tuplet 5/4 4 {g( c\> g fis e)}

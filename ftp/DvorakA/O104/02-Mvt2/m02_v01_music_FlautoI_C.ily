@@ -61,7 +61,7 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 56 to 60
 	f4( ges8\> f f ees!
 	des4)\! r r \partCombineAutomatic
-	c(\f\> beses ges
+	c(\fz\> beses ges
 	f)\p r r
 	c'\(\f\> beses ges
 % Bars 61 to 65

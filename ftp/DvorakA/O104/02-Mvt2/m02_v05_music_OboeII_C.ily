@@ -66,7 +66,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 	ees4(\fz\> c2
 	des4\p) r r
-	ees4(\f c4.\> a!8)
+	ees4(\fz c4.\> a!8)
 % Bars 61 to 65
 	a8.\p gis16 r8 a16( gis) r8 a16( gis)
 	r8 aes16( g!) r8 aes16( g) r8 aes16( g)

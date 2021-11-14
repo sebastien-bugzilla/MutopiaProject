@@ -93,7 +93,7 @@ musicViolaMvtII = \relative c' {
 	bes4\p) r r
 	<< a2.( {s4\< s s16\> s s s\!}>>
 % Bars 86 to 90
-	bes4) r r
+	bes4)\p r r
 	R2.*8
 	
 	

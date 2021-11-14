@@ -156,7 +156,7 @@ musicFagottoIMvtII = \relative c' {
 	
 	
 	
-	cis,2.\mf\<
+	cis,2.\brack\mf\<
 % Bars 141 to 145
 	d\f-^~
 	d\>~
@@ -172,11 +172,11 @@ musicFagottoIMvtII = \relative c' {
 % Bars 151 to 155
 	r4 d(\p\> c
 	b2\!) r4 
-	b-- b-- b16-- b-- b-- b--
+	b--\pp b-- b16-- b-- b-- b--
 	b4( g) d
 	fis( d c)
 % Bars 156 to 160
-	d2.\pp~
+	d2.\brack\pp~
 	d2 d4~
 	d d2~
 	d r4 
