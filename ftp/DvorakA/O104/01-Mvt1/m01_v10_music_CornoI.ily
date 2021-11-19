@@ -333,5 +333,5 @@ musicCornoIMvtI = \relative c'' {
 	d1_\ffz-^~
 	d4 r r2
 	R1
-	g,4\f r r2-\tweak extra-offset #'(5 . 0) ^\fermataSign \bar "|."
+	g,4\f r r2 \markupfermata \bar "|."
 }

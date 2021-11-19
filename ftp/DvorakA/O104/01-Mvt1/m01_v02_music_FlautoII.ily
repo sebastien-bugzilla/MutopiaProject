@@ -340,6 +340,6 @@ musicFlautoIIMvtI = \relative c'' {
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {b8\f b b} b4 b
 	b2 r
-	R1*2-\tweak extra-offset #'(4.7 . -2) ^\fermataSign
-	\bar "|."
+	R1*2
+	\markupfermata \bar "|."
 }

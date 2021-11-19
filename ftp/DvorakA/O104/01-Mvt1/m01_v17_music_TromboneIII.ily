@@ -259,5 +259,5 @@ musicTromboneIIIMvtI = \relative c' {
 	r4 \tuplet 3/2 4 {b8 b b} b4 b
 	b2 b4. b8
 	b1\<
-	b4\f r r2-\tweak extra-offset #'(0 . 0) ^\fermataSign \bar "|."
+	b4\f r r2 \markupfermata \bar "|."
 }

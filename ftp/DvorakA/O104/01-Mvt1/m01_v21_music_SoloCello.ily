@@ -369,5 +369,5 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 346 to 350
 	
 % Bars 351 to 354
-	\bar "|."
+	\markupfermata \bar "|."
 }

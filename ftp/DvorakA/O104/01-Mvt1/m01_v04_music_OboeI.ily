@@ -384,5 +384,5 @@ musicOboeIMvtI = \relative c'' {
 	r4 \tuplet 3/2 4 {b8\f b b } b4 b
 	b2 dis,,4. dis8
 	dis1\<
-	b4\ff r r2-\tweak extra-offset #'(5 . 0) ^\fermataSign \bar "|."
+	b4\ff r r2 \markupfermata \bar "|."
 }

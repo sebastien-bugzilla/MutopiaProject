@@ -329,5 +329,5 @@ musicCornoIMvtI = \relative c'' {
 	d1_\ffz-^~
 	d4 r r2
 	R1
-	g,4\f r r2 \bar "|."
+	g,4\f r r2 \markupfermata \bar "|."
 }

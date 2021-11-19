@@ -240,5 +240,5 @@ musicTrombaIIMvtI = \relative c'' {
 	g1-^_\ffz~
 	g4 r r2
 	R1 
-	g4\f r r2-\tweak extra-offset #'(6 . 0) ^\fermataSign \bar "|."
+	g4\f r r2 \markupfermata \bar "|."
 }

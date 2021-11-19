@@ -406,5 +406,5 @@ musicViolinoIMvtI = \relative c' {
 	r4 \tuplet 3/2 4 {<dis, b'>8\f q q} q4 q
 	q2 dis,4. dis8
 	dis1:32\<
-	b4_\ffzD r r2-\tweak extra-offset #'(5.5 . 0) ^\fermataSign \bar "|."
+	b4_\ffzD r r2 \markupfermata \bar "|."
 }

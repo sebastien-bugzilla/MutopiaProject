@@ -136,8 +136,6 @@ naturaltrillmark = \markup {
 }
 
 
-fermataSign = \markup {\musicglyph "scripts.ufermata"}
-
 fermatatrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	\combine 
 		\musicglyph #"scripts.trill"
@@ -152,12 +150,24 @@ mmrPos = #(define-music-function
 	#}
 )
 
-ffcolottava = \once \override TextSpanner.bound-details.left.text = \markup {
-	\dynamic ff \italic {col \concat { 8 \super va} bassa ad libitum}
+ffcolottava = {
+	\once \override TextSpanner.bound-details.left.text = \markup {
+		\dynamic ff 
+		\italic {
+			col \concat { 8 \super va } bassa ad libitum
+		}
+	}
+	\once \override TextSpanner.bound-details.left-broken.text = ""
 }
 
-fzconottavabassaadlibitum = \once \override TextSpanner.bound-details.left.text = \markup {
-	\dynamic fz \italic {con \concat { 8 \super va} bassa ad libitum}
+fzconottavabassaadlibitum = {
+	\once \override TextSpanner.bound-details.left.text = \markup {
+		\dynamic fz 
+		\italic {
+			con \concat { 8 \super va} bassa ad libitum
+		}
+	}
+	\once \override TextSpanner.bound-details.left-broken.text = ""
 }
 
 setSextolet = {
@@ -242,3 +252,6 @@ brack = #(define-event-function
 	)
 )
 
+markupfermata = {
+	\mark \markup { \normalsize \musicglyph "scripts.ufermata" }
+}

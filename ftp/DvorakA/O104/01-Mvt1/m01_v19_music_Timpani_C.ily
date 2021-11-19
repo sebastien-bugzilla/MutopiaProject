@@ -266,5 +266,5 @@ musicTimpaniMvtI = \relative c, {
 	b4 r r2
 	R1
 	b1:32\<
-	b4\f r r2-\tweak extra-offset #'(0 . 0) ^\fermataSign \bar "|."
+	b4\f r r2 \markupfermata \bar "|."
 }

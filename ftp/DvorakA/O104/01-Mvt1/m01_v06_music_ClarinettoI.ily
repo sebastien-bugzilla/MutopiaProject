@@ -386,5 +386,5 @@ musicClarinettoIMvtI = \relative c' {
 	r4 \tuplet 3/2 4 {fis8\f fis fis} fis4 fis
 	fis2 d,4. d8
 	d1\<
-	d4\ff r r2-\tweak extra-offset #'(5 . 0) ^\fermataSign \bar "|."
+	d4\ff r r2 \markupfermata \bar "|."
 }

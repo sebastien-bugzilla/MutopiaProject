@@ -392,5 +392,5 @@ musicContrabassoMvtI = \relative c' {
 	r4 \tuplet 3/2 4 {b'8\f b b} b4 b
 	b2 b,4. b8
 	b1:32\<
-	b4_\ffzD r r2-\tweak extra-offset #'(5.5 . 0) ^\fermataSign \bar "|."
+	b4_\ffzD r r2 \markupfermata \bar "|."
 }
