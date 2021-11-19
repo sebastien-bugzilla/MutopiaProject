@@ -17,13 +17,13 @@ musicViolinoIMvtIII = \relative c'' {
 	
 	e4\p-> b8-. g-.
 	b4. r8
-	\slashedGrace e8 e4\fz-> b8-._\crescmarkup g-.
+	\slashedGrace e8 e4\brack\fz-> b8-._\crescmarkup g-.
 % Bars 16 to 20
 	b4. r8
-	\slashedGrace e8 e4\fz-> b8-.\< g-.
-	\slashedGrace g'8 g4->_\fzmarkup e8-. c-.
-	\slashedGrace g'8 g4->_\fzmarkup e8-. c-.
-	\slashedGrace c'8 c4->_\fzmarkup g8-. e-.\!
+	\slashedGrace e8 e4\brack\fz-> b8-.\< g-.
+	\slashedGrace g'8 g4->_\fzmarkupbrack e8-. c-.
+	\slashedGrace g'8 g4->_\fzmarkupbrack e8-. c-.
+	\slashedGrace c'8 c4->_\fzmarkupbrack g8-. e-.\!
 % Bars 21 to 25
 	fis'2:32\ff
 	fis:
@@ -34,7 +34,7 @@ musicViolinoIMvtIII = \relative c'' {
 	g8-> fis16 eis g8-> fis16 eis
 	fis8 r fis r
 	fis r fis r
-	fis fis,,16\ff fis fis8 fis16 fis
+	fis fis,,16 fis fis8\ff fis16 fis
 	fis8 fis16 fis fis8 fis16 fis
 % Bars 31 to 35
 	fis8\fz-^ fis16 fis r4
@@ -110,7 +110,7 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 96 to 100
 	<c, a'>8.\fz g'16 g8 r
 	c\fz g d'\fz g,
-	e' g, fis'! g,
+	e'\fz g, fis'!\fz g,
 	g'2\fz-^~
 	g
 % Bars 101 to 105
@@ -338,7 +338,7 @@ musicViolinoIMvtIII = \relative c'' {
 	fis4( b)_\crescmarkup
 % Bars 366 to 370
 	fis( b)
-	fis( b~-^\f
+	fis( b~-^\brack\f
 	b8) gis(-^ fis-^ e)-^ 
 	dis4 dis
 	dis8.( cis16 fis8. e16)

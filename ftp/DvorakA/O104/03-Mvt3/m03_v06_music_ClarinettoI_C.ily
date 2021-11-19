@@ -162,7 +162,7 @@ musicClarinettoIMvtIII = \relative c' {
 	d8(\< g a bes
 % Bars 166 to 170
 	c\! bes\f\> a g)\! \mark \default
-	g4(\p e
+	g4(\brack\p e
 	g e)
 	g(\< f8 e)\!
 	f(\> g bes a)\!
@@ -269,7 +269,7 @@ musicClarinettoIMvtIII = \relative c' {
 	
 	\bar "||" \mark \default
 % Bars 281 to 285
-	d2(\p 
+	d2(
 	f)
 	f8( bes a g)
 	f( bes a g)
@@ -379,7 +379,7 @@ musicClarinettoIMvtIII = \relative c' {
 	fis2
 	e
 	e
-	fis8 r c,4\p\<(
+	fis8 r c,4\brack\p\<(
 % Bars 386 to 390
 	bes a)\!
 	bes( a)

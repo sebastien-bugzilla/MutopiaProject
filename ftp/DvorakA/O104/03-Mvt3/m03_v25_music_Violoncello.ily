@@ -23,7 +23,7 @@ musicVioloncelloMvtIII = \relative c, {
 % Bars 11 to 15
 	fis r fis r
 	fis r fis r
-	fis\p r fis r
+	fis\brack\p r fis r
 	fis r fis r
 	fis r fis_\crescmarkup r
 % Bars 16 to 20
@@ -131,7 +131,7 @@ musicVioloncelloMvtIII = \relative c, {
 % Bars 101 to 105
 	e, r r4
 	R2
-	\tuplet 3/2 4 {e8\fz e c g' g e
+	\tuplet 3/2 4 {e8\brack\fz e c g' g e
 	c' c g e' e c}
 	ais4 r
 % Bars 106 to 110
@@ -153,7 +153,7 @@ musicVioloncelloMvtIII = \relative c, {
 	a cis a cis   a cis a cis
 	a cis a cis   a cis  a cis)
 % Bars 121 to 125
-	g!8^\pizz cis b' r
+	g!8^\pizz\mp cis b' r
 	fis, cis' ais' r
 	g, cis b' r
 	fis, cis' ais' r
@@ -347,7 +347,7 @@ musicVioloncelloMvtIII = \relative c, {
 % Bars 301 to 305
 	f4(\! e 
 	a,2)\>
-	d,\p
+	d,\brack\p
 	R2
 	d
 % Bars 306 to 310
@@ -451,7 +451,7 @@ musicVioloncelloMvtIII = \relative c, {
 	fis~
 	fis
 	bis8-.-^ dis-. cis-.-^ e-.
-	ais,-.-^ cis-. b!-.-^ dis-.
+	ais,-.-^_\crescmarkup cis-. b!-.-^ dis-.
 % Bars 391 to 395
 	gis,-.-^\< b-. gis-.-^ b-.
 	g-.-^ b-. g-.-^ b-.\!

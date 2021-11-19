@@ -271,12 +271,18 @@ musicCornoIIIMvtIII = \relative c' {
 % Bars 426 to 430
 	g\>~
 	g\p~
-	g4. r8^\mutaind \transposition d
-	R2*20
+	g4. r8 
+	g2->\mf
+	e'->\fz
 % Bars 431 to 435
-	
+	c\fz->~
+	c
+	g\fz\>~
+	g~\dimD
+	g~\pp
 % Bars 436 to 440
-	
+	g4.^\mutaind \transposition d r8
+	R2*12
 % Bars 441 to 445
 	
 % Bars 446 to 450

@@ -169,7 +169,7 @@ musicFagottoIIMvtIII = \relative c, {
 	g2(
 % Bars 166 to 170
 	e4 a) \mark \default
-	g8-.\p g( a) a(
+	g8-.\brack\p g( a) a(
 	g) g( a) a(
 	g)\< g( fis e)\!
 	fis(\> g b a)\!
@@ -351,7 +351,7 @@ musicFagottoIIMvtIII = \relative c, {
 	a a a  a a a 
 	a a a  gis\f gis gis
 	cis, cis cis  cis cis cis}
-	fis4(\mf b)
+	fis4(\brack\mf b)
 	ais2
 % Bars 371 to 375
 	b(
@@ -375,7 +375,7 @@ musicFagottoIIMvtIII = \relative c, {
 	R2*3
 	
 	
-	\tuplet 3/2 4 {bis8\p\< bis r cis cis r
+	\tuplet 3/2 4 {bis8\brack\p\< bis r cis cis r
 	ais ais r b! b r
 % Bars 391 to 395
 	gis gis r gis gis r

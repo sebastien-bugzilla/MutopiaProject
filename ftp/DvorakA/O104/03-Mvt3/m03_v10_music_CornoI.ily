@@ -188,7 +188,7 @@ musicCornoIMvtIII = \relative c' {
 	ees\fz->
 	d!\fz->
 % Bars 221 to 225
-	d4\fz c8 cis \mark \default
+	d4\brack\fz c8 cis \mark \default
 	d r r4
 	R2*30
 % Bars 226 to 230
@@ -278,7 +278,7 @@ musicCornoIMvtIII = \relative c' {
 	d
 	d4 d
 	d2
-	a4_\pocomarcato-! d-!
+	a4_\ppocomarcato-! d-!
 % Bars 356 to 360
 	a-! c-!
 	a-! c-!

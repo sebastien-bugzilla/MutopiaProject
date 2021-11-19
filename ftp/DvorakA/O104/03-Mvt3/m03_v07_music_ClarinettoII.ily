@@ -327,7 +327,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	d
 	d4( cis)
 	cis2
-	cis2(\p
+	cis2(\brack\p
 % Bars 356 to 360
 	c4 b)
 	cis8( c b4)
@@ -363,7 +363,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	d2
 	d
 	d
-	d8 r a,4\p\<(
+	d8 r a,4\brack\p\<(
 % Bars 386 to 390
 	g fis)\!
 	g( fis)

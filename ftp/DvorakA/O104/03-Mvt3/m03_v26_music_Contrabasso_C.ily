@@ -23,7 +23,7 @@ musicContrabassoMvtIII = \relative c, {
 % Bars 11 to 15
 	fis r fis r
 	fis r fis r
-	fis\p r fis r
+	fis\brack\p r fis r
 	fis r fis r
 	fis r fis_\crescmarkup r
 % Bars 16 to 20
@@ -81,7 +81,7 @@ musicContrabassoMvtIII = \relative c, {
 	gis r
 	b_\crescmarkup r
 	b\<   cis8 b
-	ais4 r8 b\!^\arco
+	ais4 r8 b\!^\arcobrack
 % Bars 66 to 70
 	ais4 r8 b
 	ais8 r fis\fz r
@@ -127,7 +127,7 @@ musicContrabassoMvtIII = \relative c, {
 % Bars 101 to 105
 	e, r r4
 	R2
-	\tuplet 3/2 4 {e8\fz e c g' g e
+	\tuplet 3/2 4 {e8\brack\fz e c g' g e
 	c' c g e' e c}
 	ais4 r
 % Bars 106 to 110
@@ -149,7 +149,7 @@ musicContrabassoMvtIII = \relative c, {
 	
 	
 % Bars 121 to 125
-	g!2(^\arco
+	g!2(\mp^\arco
 	fis)
 	g( 
 	fis)
@@ -326,7 +326,7 @@ musicContrabassoMvtIII = \relative c, {
 % Bars 301 to 305
 	f4\! e 
 	a,\> r
-	d\p r
+	d\brack\p r
 	r d
 	d r
 % Bars 306 to 310
@@ -340,7 +340,7 @@ musicContrabassoMvtIII = \relative c, {
 	d4 r8 d
 	d8\mf r d r
 	R2 \mark \default
-	g,4\pp r8 g
+	g,4\pp^\arco r8 g
 % Bars 316 to 320
 	g4 r8 g
 	g4 r8 g

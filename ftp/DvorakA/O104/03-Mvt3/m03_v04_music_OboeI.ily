@@ -286,7 +286,7 @@ musicOboeIMvtIII = \relative c' {
 	d4\p\<( c~
 	c8 b \tuplet 3/2 4 {c e g)\!}
 	b2(\>
-	a)\pp \bar "||" \mark \default
+	a)\brack\pp \bar "||" \mark \default
 % Bars 281 to 285
 	R2*16
 % Bars 286 to 290

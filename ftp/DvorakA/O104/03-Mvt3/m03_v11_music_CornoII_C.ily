@@ -171,7 +171,7 @@ musicCornoIIMvtIII = \relative c' {
 	des\fz->
 	d!\fz
 % Bars 221 to 225
-	b!4\fz g8 g \mark \default
+	b!4\brack\fz g8 g \mark \default
 	a r r4
 	R2*31
 % Bars 226 to 230

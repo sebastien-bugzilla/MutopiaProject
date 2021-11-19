@@ -79,7 +79,7 @@ musicSoloCelloMvtIII = \relative c {
 % Bars 71 to 75
 	ais-> g'-. fis-> ais,-. g'-> fis-. ais,-> g'-.
 	fis2_\ffz\startTrillSpan
-	fis_\ffz\startTrillSpan
+	fis\brack_\ffz\startTrillSpan
 	g\startTrillSpan
 	fis4.\startTrillSpan gis8\startTrillSpan
 % Bars 76 to 80
@@ -472,7 +472,7 @@ musicSoloCelloMvtIII = \relative c {
 	b( fis\> <dis fis> <cis e>) \clef bass
 % Bars 436 to 440
 	\tuplet 3/2 4 {<b dis>( <cis e> <b dis>} <fis cis'> dis')\!
-	b2\mp~
+	b2\brack\mp~
 	b~
 	b~
 	b~

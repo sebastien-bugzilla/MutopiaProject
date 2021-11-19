@@ -11,6 +11,13 @@ dimmarkup=^\markup {\italic dim.}
 crescmarkup=^\markup {\italic cresc.}
 pdim=^\markup {\dynamic p \italic dim.}
 fzmarkup=^\markup {\dynamic fz}
+fzmarkupbrack=^\markup {
+	\concat {
+		\translate #'(-1.5 . 0) \normal-text \italic \fontsize #2 [
+		\dynamic fz 
+		\normal-text \italic \fontsize #2 ]
+	}
+}
 fcresc=^\markup {\dynamic f \italic cresc.}
 piuf=^\markup {\italic più \dynamic f}
 pcresc=^\markup {\dynamic p \italic cresc.}
@@ -78,6 +85,7 @@ moltoespressesostenuto=^\markup {\italic {molto espress. e sostenuto}}
 moltoappassionato=^\markup {\italic {molto appassionato}}
 pizz=^\markup {pizz.}
 arco=^\markup {arco}
+arcobrack=^\markup {[arco]}
 lunga=^\markup {\italic lunga}
 morendo=^\markup {\italic morendo}
 mutainf=^\markup {\italic {muta in F}}
@@ -88,7 +96,7 @@ tranquillo=^\markup {\italic tranquillo}
 div=^\markup {div.}
 IImutainflautopiccolo=^\markup { \smaller { [II. muta in Flauto piccolo] } }
 espressivoecantabile=^\markup {\italic {espressivo e cantabile}}
-pocomarcato=^\markup {\italic {poco marcato}}
+ppocomarcato=^\markup {\dynamic p \italic {poco marcato}}
 senzasord=^\markup {\italic {senza sord.}}
 solo=^\markup {Solo}
 soleconsord=^\markup {Sole con sord.}
