@@ -20,7 +20,7 @@
 \include "./00-Common/DvorakCello_OptionParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
-\include "./00-Common/DvorakCello_Format_PartFlauti.ily"
+\include "./00-Common/DvorakCello_Format_Part01_Flauti.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
 \include "./01-Mvt1/m01_v01_music_FlautoI.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoII.ily"

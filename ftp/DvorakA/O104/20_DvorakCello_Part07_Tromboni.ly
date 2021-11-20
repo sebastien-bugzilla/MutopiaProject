@@ -20,7 +20,7 @@
 \include "./00-Common/DvorakCello_OptionParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
-\include "./00-Common/DvorakCello_Format_PartTromboni.ily"
+\include "./00-Common/DvorakCello_Format_Part07_Tromboni.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
 \include "./01-Mvt1/m01_v15_music_TromboneI.ily"
 \include "./01-Mvt1/m01_v16_music_TromboneII.ily"

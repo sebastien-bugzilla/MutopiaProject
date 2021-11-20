@@ -20,7 +20,7 @@
 \include "./00-Common/DvorakCello_OptionParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
-\include "./00-Common/DvorakCello_Format_PartFagotti.ily"
+\include "./00-Common/DvorakCello_Format_Part04_Fagotti.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
 \include "./01-Mvt1/m01_v08_music_FagottoI.ily"
 \include "./01-Mvt1/m01_v09_music_FagottoII.ily"
