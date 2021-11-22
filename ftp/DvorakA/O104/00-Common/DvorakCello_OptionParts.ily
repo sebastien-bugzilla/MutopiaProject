@@ -11,7 +11,7 @@ generalOptions = {
 	\compressEmptyMeasures
 	\override Score.RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
 	\override Score.RehearsalMark.outside-staff-priority = ##f
-	\override Staff.MultiMeasureRest.space-increment = 1.5
+	\override Staff.MultiMeasureRest.space-increment = 1
 }
 partOptions = {
 	\override Score.BarNumber #'font-size = #0.1
@@ -26,6 +26,7 @@ partOptions = {
 	\override Arpeggio.padding = #0.25
 }
 #(set-global-staff-size 19)
+%#(ly:set-option 'debug-skylines #t)
 \layout {
 	#(layout-set-staff-size 19)
 	\context {

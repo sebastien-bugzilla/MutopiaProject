@@ -383,14 +383,14 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 191
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII clarinettoII fagottoI fagottoII cornoI cornoII cornoIII trombaI trombaII tromboneI tromboneII tromboneIII tuba timpani triangolo solocello violinoI violinoII viola violoncello contrabasso) {
+	\tag #'(flautoII clarinettoII fagottoI fagottoII cornoI cornoII cornoIII trombaI trombaII tromboneI tromboneII tromboneIII tuba timpani triangolo solocello violinoI violinoII viola violoncello contrabasso) {
 		\tempo \markup { 
 			\italic \medium \column { 
 				\lower #1 "molto" "ritard."
 			}
 		}
 	}
-	\tag #'(oboeI oboeII clarinettoI) {
+	\tag #'(flautoI oboeI oboeII clarinettoI) {
 		\tempo \markup { 
 			\italic \medium \center-column { 
 				\lower #1 "molto" "rit."
@@ -447,9 +447,17 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 271
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI fagottoII cornoI cornoII cornoIII trombaI trombaII tromboneI tromboneII tromboneIII tuba timpani triangolo solocello violinoI violinoII viola violoncello contrabasso) {
+	\tag #'(flautoII oboeI oboeII clarinettoI clarinettoII fagottoI fagottoII cornoI cornoII cornoIII trombaI trombaII tromboneI tromboneII tromboneIII tuba timpani triangolo solocello violinoI violinoII viola violoncello contrabasso) {
 		\tempo \markup {
 			\column {
+				\medium \italic { \lower #1 "molto espressivo"
+				"e sostenuto" }
+			}
+		}
+	}
+	\tag #'(flautoI) {
+		\tempo \markup {
+			\center-column {
 				\medium \italic { \lower #1 "molto espressivo"
 				"e sostenuto" }
 			}

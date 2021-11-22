@@ -9,14 +9,14 @@ cueVoiceFlautoIMvtI = \relative c {
 	% bar 64 - 66
 	\transpose c a' {
 		\relative {
-			\voiceOne r2 r4 c8(\p^\markup {Clar.} cis)
+			\voiceOne r2 r4 c8(-\tweak extra-offset #'(-1.5 . 2.5) \p^\markup {Clar.} cis)
 			d2(~ d8 c! bes a)
 			g2( d4 d')
 		}
 	}
 	s1*25
 	% bar 92 - 95
-	r4 b''(\p^\markup {Ob.I.} cis! d~
+	r4 b''(-\tweak extra-offset #'(-0.5 . 2) \p^\markup {Ob.I.} cis! d~
 	d) f8.( e16 aes2)~
 	aes2.( g4)(
 	\hideNotes g) s2. \unHideNotes

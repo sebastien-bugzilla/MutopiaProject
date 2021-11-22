@@ -125,16 +125,52 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	}
 }
 
-naturaltrillmark = \markup { 
-	\line { 
-		\hspace #0.65
+sharptrillmark = \markup { 
+	\hspace #1.2
+	\concat { 
 		\general-align #Y #CENTER {
 			\musicglyph #"scripts.trill" 
+			\hspace #0.45
+			\teeny \sharp 
+		}
+	}
+}
+
+flattrillmark = \markup { 
+	\hspace #1.1
+	\concat { 
+		\general-align #Y #CENTER {
+			\musicglyph #"scripts.trill" 
+			\hspace #0.45
+			\teeny \flat 
+		}
+	}
+}
+
+naturaltrillmark = \markup {
+	\concat {
+		\hspace #0.8
+		\general-align #Y #CENTER {
+			\musicglyph #"scripts.trill" 
+			\hspace #0.45
 			\teeny \natural 
 		}
 	}
 }
 
+trillAccidental = #(define-music-function 
+	(accidental)
+	(markup?)
+	#{
+		\once \override Script.padding = #0.20
+		\once \override Script.stencil = #ly:text-interface::print
+		\once \override Script.text = #accidental
+	#}
+)
+
+scriptWidth = {
+	\once \override Script.extra-spacing-width = #'(0.7 . 0.7)
+}
 
 fermatatrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	\combine 
@@ -253,5 +289,39 @@ brack = #(define-event-function
 )
 
 markupfermata = {
-	\mark \markup { \normalsize \musicglyph "scripts.ufermata" }
+	\mark \markup { 
+		\normalsize \musicglyph "scripts.ufermata"
+	}
 }
+
+markXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
+
+markYoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.Y-offset = #offset
+	#}
+)
+
+tempoXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.X-offset = #offset
+	#}
+)
+
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.minimum-length = #length
+	#}
+)
