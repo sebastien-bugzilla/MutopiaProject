@@ -231,13 +231,13 @@ musicFlautoIMvtI = \relative c'' {
 	g1\f
 	ees4( ces2.)
 	bes4 r r2
-	R1*5
+	R1*3
 	
 % Bars 221 to 225
 	
-	
+	\mmrLength #1 R1*2
 	\mark \default
-	\mmrLength #21 R1*5
+	\tempoXoffset #1 \mmrLength #3 R1*5
 	
 % Bars 226 to 230
 	

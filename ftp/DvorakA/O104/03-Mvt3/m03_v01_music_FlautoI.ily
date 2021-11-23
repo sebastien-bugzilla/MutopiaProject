@@ -133,13 +133,21 @@ musicFlautoIMvtIII = \relative c''' {
 	r4 d8-. cis-. 
 	r4 e!8-. d-.
 	r4 d8-. cis-.
-	R2*18
+	R2*10
 % Bars 126 to 130
 	
 % Bars 131 to 135
 	
+	
+	
+	
+	R2*5
 % Bars 136 to 140
 	
+	
+	
+	
+	\mmrLength #3 \tempoXoffset #-1 R2*3
 % Bars 141 to 145
 	
 	\mark \default
@@ -220,15 +228,19 @@ musicFlautoIMvtIII = \relative c''' {
 	fis8-. cis'-. cis8.-> fis,16-.
 	eis8 cis'(~ cis16 d e! d
 	cis8 b ais cis)
-	R2*23
+	R2*12
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
-% Bars 246 to 250
+	\tempoXoffset #-2 R2*4
 	
+	
+	
+% Bars 246 to 250
+	R2*7
 % Bars 251 to 255
 	
 	
@@ -237,34 +249,44 @@ musicFlautoIMvtIII = \relative c''' {
 	cis8( d16 cis) b4
 % Bars 256 to 260
 	fis' e16( d cis b)
-	cis4.\startTrillSpan cis8\stopTrillSpan
+	cis4.\trill cis8
 	cis4-> dis->
 	e8(\< fis) a16(\! g fis e)
 	\tuplet 5/4 4 {d!16( e g fis e)} d8-. cis-. \mark \default
 % Bars 261 to 265
 	b8\ff r r4
 	b8 r r4
-	R2*18
+	R2*10
 % Bars 266 to 270
 	
 % Bars 271 to 275
 	
+	
+	\tempoXoffset #-1 R2*4
+	
+	
 % Bars 276 to 280
 	
+	\tempoXoffset #-1 R2*2
 	
-	
-	
+	\tempoXoffset #1 R2*2
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*30
+	R2*16
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
-% Bars 301 to 305
+	R2*4
 	
+	
+	
+% Bars 301 to 305
+	R2*2
+	
+	\tempoXoffset #-1 R2*8
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -383,14 +405,14 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	\tuplet 3/2 4 {dis,8\pp( e dis} cis dis)
+	\tempoXoffset #2 \tuplet 3/2 4 {dis,8\pp( e dis} cis dis)
 	\tuplet 3/2 4 {dis( e dis} cis8. e16)
 % Bars 451 to 455
 	\tuplet 3/2 4 {dis8( e dis} cis dis)
 	\tuplet 3/2 4 {dis( e dis} cis8. e16)
-	fis2\pp\<\startTrillSpan~
-	fis~
-	fis16\stopTrillSpan\! fis8 fis fis fis16~\>
+	fis2\pp\<\trill~
+	fis~\trill
+	fis16\! fis8 fis fis fis16~\>
 % Bars 456 to 460
 	fis fis8 fis fis fis16\!~
 	fis4 r
@@ -423,8 +445,8 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 491 to 495
 	
 % Bars 496 to 500
-	\mark \default
-	dis,2\p\<(
+	\markXoffset #-0.3 \mark \default
+	\tempoXoffset #1 dis,2\p\<(
 	fis4 b
 	dis fis
 	b dis)\!

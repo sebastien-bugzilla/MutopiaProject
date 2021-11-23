@@ -30,7 +30,7 @@ cueVoiceFlautoIMvtI = \relative c {
 cueVoiceFlautoIMvtII = \relative c {
 	s2.*26
 	% bar 27 - 28
-	\voiceOne d''2^\markup {Vcello Solo.} \tuplet 3/2 4 {d8( e f)}
+	\voiceOne d''2-\tweak X-offset #-4 ^\markup {Vcello Solo.} \tuplet 3/2 4 {d8( e f)}
 	f2-> e8.( d16)
 	s2.*81
 	% bar 110 - 111

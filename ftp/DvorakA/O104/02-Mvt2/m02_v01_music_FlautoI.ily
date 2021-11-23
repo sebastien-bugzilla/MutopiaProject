@@ -67,8 +67,8 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 61 to 65
 	f2.\p)
 	e2.(
-	d2 c!4)
-	b(\> fis2)\! \bar "||" \key g \major \mark \default
+	\tempoXoffset #-1 d2 c!4)
+	b(\> fis2)\! \bar "||" \key g \major \markXoffset #0.5 \mark \default
 	b4\ff r r
 % Bars 66 to 70
 	R2.*8
@@ -89,7 +89,7 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 86 to 90
 	des4(\p\< bes16 a g a bes4)\!
 	a2.\fz 
-	aes_\dimD\>
+	aes_\dimD
 	fis!2(\p\> e!4
 	dis2\pp d4)
 % Bars 91 to 95
@@ -97,13 +97,13 @@ musicFlautoIMvtII = \relative c'' {
 	ees4(\> d c)\!
 	b(_\dimmarkup ais b)
 	ais(\> b4. a8 \mark \default
-	g8)\! r r4 r
+	\tempoXoffset #1.3 g8)\! r r4 r
 % Bars 96 to 100
 	R2.*10
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	R2.\fermata
+	\once \ni R2.\fermata
 	R2.*3
 	
 	
@@ -112,11 +112,11 @@ musicFlautoIMvtII = \relative c'' {
 	\mmrPos #4 R \no \clef treble
 	r4 b2(\p~
 	b4 d4. g8)
-	g2.\<\startTrillSpan
-	g16\stopTrillSpan(\! e fis g)\! fis8(\< e) fis16( e fis g)\!
+	g2.\<\trill
+	g16(\! e fis g)\! fis8(\< e) fis16( e fis g)\!
 % Bars 116 to 120
-	c2.\fz\startTrillSpan
-	e32(\stopTrillSpan\f c a e e'8\prall d32 b g d d'8\prall c32 a fis c c'8\prall)
+	c2.\fz\trill
+	e32(\f c a e e'8\prall d32 b g d d'8\prall c32 a fis c c'8\prall)
 	b32(\fz a g a  g\< a g a  g a g a  g a g a  g a g a  g a g a)\!
 	g4(\< e8 c e d16 c)\!
 	b8(\mf e16 d a4)_\dimmarkup b8( e16 d
@@ -129,14 +129,14 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 126 to 130
 	e8)\p r r4 r
 	R2.
-	R\fermata \mark \default
+	\once \ni R\fermata \mark \default
 	R2.*6
 % Bars 131 to 135
 	
 	
 	
 	
-	R2.\fermata^\lunga
+	\once \ni R2.\fermata^\lunga
 % Bars 136 to 140
 	R2.*5
 % Bars 141 to 145
@@ -148,7 +148,7 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 146 to 150
 	R2.*2
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	g'8(~--\p g32 a g fis) g8--(~ g32 a g fis) \tuplet 5/4 4 {g16(\<-- a-- b-- a-- g)-- }
 	g4( \acciaccatura {fis16 e} d4)\! b8.\< c16\!
 % Bars 151 to 155

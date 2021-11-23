@@ -322,6 +322,6 @@ mmrLength = #(define-music-function
 	(length)
 	(number?)
 	#{
-		\once \override MultiMeasureRest.minimum-length = #length
+		\once \override MultiMeasureRest.space-increment = #length
 	#}
 )

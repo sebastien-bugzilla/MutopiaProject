@@ -17,8 +17,8 @@ s1*11 \break
 s1*14 \break 
 s1*7 \break 
 s1*14 \break 
-s1*8 \break 
-s1*22 \pageBreak 
+s1*8 \pageBreak 
+s1*22 \break 
 s1*7 \break 
 s1*8 \break 
 s1*6 \break 
@@ -67,15 +67,15 @@ s2*18 \break
 s2*15 \break 
 s2*14 \break 
 s2*17 \break 
-s2*39 \break 
-s2*22 \break 
-s2*24 \break 
+s2*37 \break 
+s2*23 \break 
+s2*25 \break 
 s2*12 \break 
 s2*13 \break 
 s2*30 \pageBreak 
-s2*43 \break 
-s2*16 \break 
-s2*10 \break 
+s2*41 \break 
+s2*17 \break \grace {s8}
+s2*11 \break 
 s2*15 \break 
 s2*34 \break 
 s2*20 \break \grace {s8}
