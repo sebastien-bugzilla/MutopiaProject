@@ -43,7 +43,7 @@ musicFlautoIIMvtII = \relative c'' {
 % Bars 41 to 45
 	bes4-> g-> fis->
 	g4. r8 r4
-	R2.*7
+	\mmrLength #0.1 R2.*7
 	
 	
 % Bars 46 to 50
@@ -51,7 +51,7 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	R2.*7
+	\mmrLength #0.1 R2.*7
 % Bars 51 to 55
 	
 % Bars 56 to 60
@@ -67,7 +67,7 @@ musicFlautoIIMvtII = \relative c'' {
 	fis(\> fis e)\! \bar "||" \key g \major \mark \default
 	d4\ff r r
 % Bars 66 to 70
-	R2.*17
+	\mmrnDown R2.*17
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -75,13 +75,13 @@ musicFlautoIIMvtII = \relative c'' {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.
+	\tempoXoffset #1.5 \mmrnDown \mmrMinLength #23 R2.
 	des''4(\p\< bes16-- a-- g-- a-- bes4\!
 	a8) r r4 r
 % Bars 86 to 90
 	des4(\p\< bes16 a g a bes4)\!
 	f2.\fz 
-	f_\dimD\>
+	f-\tweak X-offset #-2 _\dimD\>
 	dis!2(\p\> b!4)~
 	b2.\pp
 % Bars 91 to 95
@@ -89,13 +89,13 @@ musicFlautoIIMvtII = \relative c'' {
 	<< fis!2. {s4\> s s\!} >>
 	dis4(_\dimmarkup e dis)
 	e(\> ees d \mark \default
-	d8)\! r r4 r
+	\tempoXoffset #1 d8)\! r r4 r
 % Bars 96 to 100
 	R2.*10
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	R2.\fermata
+	\once \ni R2.\fermata
 	R2.*12
 % Bars 111 to 115
 	
@@ -118,14 +118,14 @@ musicFlautoIIMvtII = \relative c'' {
 % Bars 126 to 130
 	g8\p r r4 r
 	R2.
-	R\fermata \mark \default
-	R2.*6
+	\once \ni R\fermata \mark \default
+	\mmrLength #2.5 \mmrnDown R2.*6
 % Bars 131 to 135
 	
 	
 	
 	
-	R2.\fermata^\lunga
+	\once \ni R2.\fermata^\lunga
 % Bars 136 to 140
 	R2.*12
 % Bars 141 to 145
@@ -133,8 +133,8 @@ musicFlautoIIMvtII = \relative c'' {
 % Bars 146 to 150
 	
 	
-	R2.\fermata \mark \default
-	R2.*17
+	\once \ni R2.\fermata \mark \default
+	\mmrLength #0.1 R2.*17
 	
 % Bars 151 to 155
 	
@@ -143,5 +143,5 @@ musicFlautoIIMvtII = \relative c'' {
 % Bars 161 to 165
 	
 % Bar 166
-	R2.\fermata \bar "|."
+	\once \ni R2.\fermata \bar "|."
 }

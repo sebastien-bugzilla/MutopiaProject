@@ -73,6 +73,7 @@ fzdimD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #
 
 IImutainflautopicc=^\markup { \smaller { [II. muta in Flauto picc.] } }
 mutainflautoII=^\markup { \smaller { [muta in Flauto II.] } }
+mutainflauto=^\markup { \smaller { \column { \lower #1 "[muta in" "Flauto.]" } } }
 moltoespressivo=^\markup {\italic {molto espressivo}}
 mutaind=^\markup {\italic {muta in D}}
 mutaine=^\markup {\italic {muta in E}}
@@ -95,6 +96,7 @@ quasicadenza=^\markup {\italic {quasi Cadenza}}
 tranquillo=^\markup {\italic tranquillo}
 div=^\markup {div.}
 IImutainflautopiccolo=^\markup { \smaller { [II. muta in Flauto piccolo] } }
+mutainflautopiccolo=^\markup { \smaller { \column {\lower #1 "[muta in" "Flauto Piccolo]"} } }
 espressivoecantabile=^\markup {\italic {espressivo e cantabile}}
 ppocomarcato=^\markup {\dynamic p \italic {poco marcato}}
 senzasord=^\markup {\italic {senza sord.}}
@@ -325,3 +327,15 @@ mmrLength = #(define-music-function
 		\once \override MultiMeasureRest.space-increment = #length
 	#}
 )
+
+mmrMinLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.minimum-length = #length 
+	#}
+)
+
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}

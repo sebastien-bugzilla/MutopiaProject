@@ -50,5 +50,6 @@ partOptions = {
 	\context {
 		\Staff
 		\consists #Measure_counter_engraver
+		\override TupletBracket.staff-padding = ##f
 	}
 }

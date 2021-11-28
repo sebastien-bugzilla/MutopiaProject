@@ -350,7 +350,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	\tuplet 3/2 4 {b( cis b} ais8. cis16)
 	fis2\pp\<\startTrillSpan~
 	fis~
-	fis16\stopTrillSpan\! fis8 fis fis fis16~\>
+	fis16\! fis8\stopTrillSpan fis fis fis16~\>
 % Bars 456 to 460
 	fis fis8 fis fis fis16\!~
 	fis4 r

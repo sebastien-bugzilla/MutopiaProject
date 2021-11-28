@@ -65,7 +65,7 @@ musicPiccoloMvtI = \relative c''' {
 % Bars 126 to 130
 	fis'8\f r r4 r2
 	r8 fis,16(\f\< g gis a ais b cis d dis e eis fis g! fis)
-	b8\f r^\mutainflautoII r4 r2
+	b8\f r r4^\mutainflauto r2
 	s1*226
 % Bars 131 to 135
 	

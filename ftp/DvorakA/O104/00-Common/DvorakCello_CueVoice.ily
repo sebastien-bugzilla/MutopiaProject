@@ -118,11 +118,11 @@ cueVoiceFlautoIIMvtI = \relative c {
 	\once \stemUp cis'!8 r r4 r2
 	s1*29
 	% bar 295 - 296
-	bes'2(^\markup {Fl.I.} ees4 bes8. c16)
+	bes'2(-\tweak X-offset #-4.5 ^\markup {Fl.I.} ees4 bes8. c16)
 	g16( ees g bes) bes2.
 	s1*32
 	% bar 329 - 332
-	b16^\markup {Fl.I.} b cis dis b4-> ais16 ais gis fis ais4->
+	b16-\tweak X-offset #-4 ^\markup {Fl.I.} b cis dis b4-> ais16 ais gis fis ais4->
 	b16 b cis dis b4-> ais16 ais gis fis ais4->
 	dis8. b16 dis8. b16 dis8. b16 dis8. b16 
 	dis8 r r4 r2
@@ -148,12 +148,12 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	\slashedGrace c'8 c4 g8 e \oneVoice
 	s2*63
 	% bar 84 - 86
-	cis'4^\markup {Vl.I.} dis 
+	\once \override Staff.OttavaBracket.outside-staff-priority = ##f \ottava #1 cis'4-\tweak X-offset #-4.5 ^\markup {Vl.I.} dis 
 	e8( fis) a16( g fis e)
-	\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
+	\tuplet 5/4 4 {d( e g fis e)} d8-. cis-. \ottava #0
 	s2*85
 	% bar 172 - 176
-	d4^\markup {Vl.I.} d8.( b16)
+	d4-\tweak X-offset #-4 ^\markup {Vl.I.} d8.( b16)
 	cis8.( a16 b8. g16)
 	a8( c b d)
 	cis!4( d8. b16)
@@ -180,7 +180,7 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	\tuplet 3/2 4 {<b dis>( <cis e> <b dis>} <fis cis'> <b dis>) \oneVoice
 	s2*44
 	% bar 473 - 476
-	\tuplet 3/2 4 {fis'8(^\markup {Vcello Solo.} b gis fis dis' cis)}
+	\tuplet 3/2 4 {fis'8(-\tweak X-offset #-1 ^\markup {Vcello Solo.} b gis fis dis' cis)}
 	b( fis' e dis)
 	b'2\trill
 	b\trill

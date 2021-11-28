@@ -122,7 +122,7 @@ musicPiccoloMvtIII = \relative c' {
 	\tuplet 5/4 4 {d!16( e g fis e)} d8-. cis-.
 % Bars 261 to 265
 	b8\ff r r4
-	b8 r^\mutainflautoII r4
+	b8 r^\mutainflauto r4
 % Bars 266 to 270
 	
 % Bars 271 to 275

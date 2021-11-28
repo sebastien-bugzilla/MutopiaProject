@@ -30,8 +30,8 @@ musicFlautoIIMvtI = \relative c'' {
 	b4 r b4. cis16 d
 	b4 r r2
 % Bars 26 to 30
-	b8.\f\< d16 fis2.\startTrillSpan
-	e8\!\stopTrillSpan r r4 e,4.\f-> fis16 g
+	b8.\f\< d16 fis2.\trill
+	e8\! r r4 e,4.\f-> fis16 g
 	e4. r8 e4. fis16 g
 	e8 r r4 r2
 	R1*3
@@ -50,13 +50,14 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*30
+	R1*11
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	
+	\tempoXoffset #1 R1
+	\mmrLength #3 R1*18
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -92,7 +93,7 @@ musicFlautoIIMvtI = \relative c'' {
 	
 % Bars 101 to 105
 	r16 c,,\p\<-. c-. b-. c8-. e-. \tuplet 3/2 4 {e-. e-. a-. } a16-. a-. a-. c-.\!
-	c8\fz r_\IImutainflautopicc r4 r2
+	c8\fz r r4-\tweak X-offset #-3 ^\mutainflautopiccolo r2
 	R1*7 
 	
 	
@@ -101,7 +102,7 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*10
+	\mmrLength #2.3 R1*10
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -120,22 +121,29 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	\mark \default
 	s1
-	R1*28
+	R1*9
 	
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
+	
+	R1*2
+	
+	R1*14
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	
+	
+	\tempoXoffset #-1 \mmrLength #2.5 R1*3
 % Bars 156 to 160
 	\mark \default
-	R1*11 
-	
+	R1*1 
+	\mmrLength #2.2 \tempoXoffset #-2 R1*10
 	
 	
 % Bars 161 to 165
@@ -163,7 +171,7 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 	r4 bes2.\f
-	\tuplet 3/2 4 {ees,8\< ges bes} \naturaltrill \afterGrace ees2.\!\startTrillSpan {d16[( ees)]\stopTrillSpan}
+	\tuplet 3/2 4 {ees,8\< ges bes} \trillAccidental \naturaltrillmark \afterGrace ees2.\!\trill {d16[( ees)]}
 % Bars 186 to 190
 	g!8 r r4 r2
 	r8 a,\fz r4 r2
@@ -201,14 +209,14 @@ musicFlautoIIMvtI = \relative c'' {
 	\mmrPos #-2 R
 	\mmrPos #-2 R \no
 % Bars 216 to 220
-	des''1\f
+	des''1-\tweak X-offset #-1 \f
 	ces4( aes2.)
 	g4 r r2
-	R1*5
+	R1*3
 	
 % Bars 221 to 225
 	
-	
+	\mmrLength #4 \tempoXoffset #-1 R1*2
 	\mark \default
 	R1*12
 	
@@ -225,7 +233,7 @@ musicFlautoIIMvtI = \relative c'' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	gis2(~\p \tuplet 3/2 2 {gis4 ais b)}
+	gis2(~\p-\tweak X-offset #-4.5 ^\solo \tuplet 3/2 2 {gis4 ais b)}
 % Bars 241 to 245
 	b( ais2 e8 dis)
 	dis4(\< gis) gis-- gis--\!
@@ -248,7 +256,7 @@ musicFlautoIIMvtI = \relative c'' {
 	\mark \default
 % Bars 261 to 265
 	R1
-	\ni \mmrPos #6 R1
+	\ni \mmrPos #7 R1
 	\mmrPos #-4 R
 	\mmrPos #4 R
 	\mmrPos #-4 R \no
@@ -259,7 +267,7 @@ musicFlautoIIMvtI = \relative c'' {
 	cis cis dis8( fis dis b)
 	ais2.\> r4\!
 % Bars 271 to 275
-	R1*13
+	\tempoXoffset #-2 \mmrLength #2.5 R1*10
 % Bars 276 to 280
 	
 	
@@ -267,10 +275,11 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 % Bars 281 to 285
-	
+	\tempoXoffset #-1.5 \mmrLength #2.5 R1*3
 	
 	\mark \default
-	R1*11
+	\tempoXoffset #1 R1*1
+	\tempoXoffset #-3 \mmrLength #2 R1*10
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -321,18 +330,18 @@ musicFlautoIIMvtI = \relative c'' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 	a!4(\p\< g! b! bes)\!
-	b!1\<\startTrillSpan
-	b8\!\stopTrillSpan r r4 r2
+	b!1\<\trill
+	b8\! r r4 r2
 % Bars 336 to 340
 	R1*5
 % Bars 341 to 345
 	r4 r8 ais\ff-^ b-^ bis-^ cis-^ ais-^
-	b1\ff\startTrillSpan
-	dis\startTrillSpan
-	dis\startTrillSpan
-	\sharptrill gis\startTrillSpan
+	\tempoXoffset #-1 b1\ff\trill
+	dis\trill
+	dis\trill
+	\trillAccidental \sharptrillmark gis\trill
 % Bars 346 to 350
-	dis4-.\stopTrillSpan dis-. r e-.
+	dis4-. dis-. r e-.
 	r b-. b-. b-.
 	b-. r b-. r
 	b-. r b-. r
