@@ -2,9 +2,9 @@
 %#                                 H E A D E R                                 #
 %###############################################################################
 %
-%  Composer           : Antonín Dvořák(1841 - 1904)
+%  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Cello Concerto n°2 in B minor Op. 104
-%  Source             : Berlin
+%  Source             : Berlin N. Simrock, 1896. Plate 10548.
 %  Type of score      : Score for Trombe
 %  Typesetter         : Sébastien MANEN
 %  date of initiation : Thursday 19 August 2021, 13:55
