@@ -31,12 +31,12 @@ musicOboeIIMvtI = \relative c' {
 % Bars 21 to 25
 	e8 r r4 r2
 	R1 \mark \default
-	r2 b4.\ff cis16 d
+	\tempoXoffset #1 r2 b4.\ff cis16 d
 	b4 r b4. cis16 d
 	b4 r r2
 % Bars 26 to 30
-	b8.\f\< d16 fis2.\startTrillSpan
-	e8\stopTrillSpan\! r r4 e4.\f-> fis16 g
+	b8.\f\< d16 fis2.\trill
+	e8\! r r4 e4.\f-> fis16 g
 	e4. r8 e4. fis16 g
 	e8 r r4 r2
 	R1
@@ -77,7 +77,7 @@ musicOboeIIMvtI = \relative c' {
 	fis1\brack\p\<
 	fis2.\f fis4(
 	g1)\< \mark \default
-	fis'4\ff r8 fis g-. fis-. fis-. r
+	\tempoXoffset #0.8 fis'4\ff r8 fis g-. fis-. fis-. r
 % Bars 76 to 80
 	fis4 r8 fis g-. fis-. fis-. r
 	fis4-> cis8 d d cis cis r
@@ -107,12 +107,12 @@ musicOboeIIMvtI = \relative c' {
 	e'2\p\<( d)\!
 	g,1\fz
 	b2\> ais\! \mark \default
-	b8\fz r r4 r2
+	\tempoXoffset #1 b8\fz r r4 r2
 % Bars 111 to 115
 	R1*3
 	
 	
-	r4 r8 c16\f c c8 c c4->\fz\>~
+	r4 r8 c16\f\< c c8 c c4->\fz\>~
 	c8\! r r4 r2
 % Bars 116 to 120
 	r4 r8 c16\f\< c c8 c c4->\>~
@@ -124,7 +124,7 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	
-	r8. b'16( cis8)[ r16 fis,]( a8)[ r16 e]( fis8)[ r16 b,](
+	r8. b'16(\f cis8)[ r16 fis,]( a8)[ r16 e]( fis8)[ r16 b,](
 	d8) r r4 r2
 % Bars 126 to 130
 	ais8\f r r4 r2
@@ -152,12 +152,12 @@ musicOboeIIMvtI = \relative c' {
 % Bars 151 to 155
 	\ni \mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 	cis,,2.\fz( d4)\<
 	d4( fis e fis)\!
 % Bars 156 to 160
-	a1\dimD\> \mark \default
-	a2.(_\pdimD\> ais4)
+	a1\dimD \mark \default
+	\tempoXoffset #1 \hairpinLength #12 a2.(_\pdimD\> ais4)
 	b(\pp fis g fis
 	g dis2->\> e4)\!
 	g4( fis g fis)
@@ -190,7 +190,7 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	r4 bes,2.\f
-	\tuplet 3/2 4 {ees,8\< ges bes} \naturaltrill \afterGrace ees2.\startTrillSpan\! {d16[(\stopTrillSpan ees])}
+	\tuplet 3/2 4 {ees,8\< ges bes} \trillAccidental \naturaltrillmark \afterGrace ees2.\trill\! {d16[( ees])}
 % Bars 186 to 190
 	cis!8 r r4 r2
 	r8 a\fz r4 r2
@@ -199,14 +199,14 @@ musicOboeIIMvtI = \relative c' {
 	e8\brack\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata e8\f \mark \default
-	fis1\ff
+	\tempoXoffset #0.5 fis1\ff
 	fis
 	e
 	e
 % Bars 196 to 200
 	d-^
 	dis-^
-	e4._\dimmarkup fis16\> gis e2~
+	e4._\dimD\> fis16 gis e2~
 	e8\fz r r4 r2
 	R1*9
 % Bars 201 to 205
@@ -221,19 +221,19 @@ musicOboeIIMvtI = \relative c' {
 	\mmrPos #-4 R \no
 	R1
 	\ni \mmrPos #-4 R1 \no
-	\tuplet 6/4 2 {g,8\mf[ g g g g g]  g[ g g g g g]
-	g_\crescmarkup[ g g g g g]   g[ g g g g g]}
+	\tuplet 3/2 4 {g,8\mf g g g4.:8  g: g: 
+	g:_\crescmarkup g:   g: g:}
 % Bars 216 to 220
 	des'1\f
 	ces4( aes2.)
 	g4 r r2
-	R1*5
+	\markLengthOn R1*5
 	
 % Bars 221 to 225
 	
 	
 	\mark \default
-	R1*24
+	R1*16 
 	
 % Bars 226 to 230
 	
@@ -244,13 +244,13 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	
-	
+	R1*8 
 % Bars 241 to 245
 	
 % Bars 246 to 250
 	
 	\mark \default
-	R1*6
+	R1*6 \markLengthOff
 	
 	
 % Bars 251 to 255
@@ -278,23 +278,23 @@ musicOboeIIMvtI = \relative c' {
 	cis cis dis8( fis dis b)
 	ais2.\> r4\!
 % Bars 271 to 275
-	R1*10
+	\markLengthOn \mmrnDown R1*10 
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	\ni \mmrPos #4 R1
+	\ni \mmrPos #4 R1 \markLengthOff
 	\mmrPos #-4 R \no
-	<< fis1\mf {s2\mf\> s4 s\!} >>  \mark \default
-	fis2.(\p\> fisis4)\!
+	fis1\mf\> \markXoffset #-0.1 \mark \default
+	\tempoXoffset #1.8 fis2.(\p\> fisis4)\!
 	gis(\pp dis e dis)
 % Bars 286 to 290
-	e(\< bis2->\fz\> cis4\!)
+	e(\< bis2^>\fz\> cis4\!)
 	e( dis e dis)
-	e(\< bis2->_\fzmarkup cis4)\!
+	e(\< bis2^>_\fzmarkup cis4)\!
 	gis'(\mf fis gis fis)
-	e( dis\>_\dimmarkup e dis)\!
+	e(_\dimD\> dis e dis)\!
 % Bars 291 to 295
-	d!( cis\dimmarkup\> d cis)\!
+	d!(_\dimD\> cis d cis)\!
 	d4 r r2
 	R1*4
 	
@@ -339,24 +339,24 @@ musicOboeIIMvtI = \relative c' {
 	a!1)\<
 	gis8\f r r4 r2
 	R1
-	\tuplet 3/2 4 {dis'8\mf dis dis} dis4 \tuplet 3/2 4 {dis8 dis dis} dis4 
+	\tuplet 3/2 4 {\once \tupletUp dis'8\mf dis dis} dis4 \tuplet 3/2 4 {dis8 dis dis} dis4 
 	\tuplet 3/2 4 {dis8 dis dis} dis4 \tuplet 3/2 4 {dis8 dis dis} dis4 
 % Bars 331 to 335
 	b8( cis16 dis b8 cis16 dis b8 cis16 dis b8 cis16 dis)
 	b8 r r4 r2
 	R1
-	\naturaltrill f'1\startTrillSpan\<
-	f8\!\stopTrillSpan r r4 r2
+	\trillAccidental \naturaltrillmark f'1\trill\<
+	f8\! r r4 r2
 % Bars 336 to 340
 	R1*5
 % Bars 341 to 345
 	r4 r8  ais,-^\ff b-^ bis-^ cis-^ ais-^
-	dis1\ff\startTrillSpan
-	dis\startTrillSpan
-	dis\startTrillSpan
-	\sharptrill gis\startTrillSpan
+	dis1\ff\trill
+	dis\trill
+	dis\trill
+	\trillAccidental \sharptrillmark gis\trill
 % Bars 346 to 350
-	dis4\stopTrillSpan-. dis-. r e-.
+	dis4-. dis-. r e-.
 	r dis-. dis-. e-.
 	dis-. r dis-. r
 	dis-. r dis-. r

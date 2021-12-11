@@ -77,7 +77,7 @@ musicOboeIMvtII = \relative c'' {
 	
 % Bars 71 to 75
 	
-	r4 r fis8.(\p e16
+	r4 r fis8.(\brack\p e16
 	d4.)\< g'8(\! fis e)
 	fis4( \tuplet 3/2 4 {b8 a fis)} g16( fis) fis( e)
 	e4(_\dimmarkup d8 a~\> a4)

@@ -121,7 +121,7 @@ musicOboeIMvtI = \relative c'' {
 	R1*3
 	
 	
-	r4 r8 c'16\f c c8 c c4\fz->\>~
+	r4 r8 c'16\f\< c c8 c c4\fz->\>~
 	c8\! r r4 r2
 % Bars 116 to 120
 	r4 r8 c16\f\< c c8 c c4->\>~
@@ -133,7 +133,7 @@ musicOboeIMvtI = \relative c'' {
 	r8 g16-\crescmarkup g g8 r r fis16 fis fis8 r \partCombineAutomatic
 	R1*2
 	
-	r8. b16( cis8)[ r16 fis,]( a8)[ r16 e]( fis8)[ r16 b,](
+	r8. b16(\f cis8)[ r16 fis,]( a8)[ r16 e]( fis8)[ r16 b,](
 	d8) r r4 r2
 % Bars 126 to 130
 	fis8\f r r4 r2

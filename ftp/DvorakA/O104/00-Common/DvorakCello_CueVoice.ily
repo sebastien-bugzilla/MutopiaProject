@@ -202,7 +202,7 @@ cueVoiceOboeIMvtI = \relative c {
 	% bar 149
 	\transpose c a' {
 		\relative {
-			r8 g,(-.\pp^\markup {Clar.} c-. f-. g-.) r r4
+			r8 g,(-.\pp-\tweak X-offset #-3.5 ^\markup {Clar.} c-. f-. g-.) r r4
 		}
 	}
 	s1
@@ -237,7 +237,7 @@ cueVoiceOboeIMvtII = \relative c {
 	s2.*90
 	% bar 129 - 130
 	<<{
-		\InCueContext d'4(^\markup {Clar.} g f)
+		\InCueContext d'4(_\markup {Clar.} g f)
 		f16( e e8~ e2)
 	} \\ {
 		\InCueContext b2( d4)
@@ -247,7 +247,7 @@ cueVoiceOboeIMvtII = \relative c {
 cueVoiceOboeIMvtIII = \relative c {
 	s2*171
 	% bar 172 - 176
-	d'''4^\markup {Viol.I.} d8.( b16)
+	d'''4-\tweak X-offset #-5 ^\markup {Viol.I.} d8.( b16)
 	cis8.( a16 b8. g16)
 	a8( c b d)
 	cis!4 d8.( b16
@@ -260,7 +260,7 @@ cueVoiceOboeIMvtIII = \relative c {
 	b4( a)
 	s2*42
 	% bar 319 - 322
-	b'8(^\markup {Fl.I.} d16 cis b8 fis)
+	b'8(-\tweak X-offset #-3.5 ^\markup {Fl.I.} d16 cis b8 fis)
 	b( d16 cis b8 fis)
 	b( fis4.)
 	\acciaccatura d'8 b( fis4.)
@@ -268,7 +268,7 @@ cueVoiceOboeIMvtIII = \relative c {
 cueVoiceOboeIIMvtI = \relative c {
 	s1*66
 	% bar 67 - 71
-	\voiceOne r2 r4 e''(^\markup {Ob.I.}
+	\voiceOne r2 r4 e''(-\tweak X-offset #-3.5 ^\markup {Ob.I.}
 	a e cis b~
 	b) r r e(
 	a e cis a)
@@ -300,8 +300,8 @@ cueVoiceOboeIIMvtI = \relative c {
 	fis4( e bes e)
 	e8 r r4 r2
 	s1*4
-	% bar 261
-	r2 eis,,8(^\markup {Clar.} fis b a)
+	% bar 261 (originally transposed)
+	r2 eis,,8(^\markup {Clar.} fis b ais)
 	s1*19
 	% bar 281 - 282
 	fis'1^\markup {Ob.I.}
@@ -310,7 +310,7 @@ cueVoiceOboeIIMvtI = \relative c {
 cueVoiceOboeIIMvtII = \relative c {
 	s2.*33
 	% bar 34
-	c'''8(\trill^\markup {Fl.} e,!16) r g!8(\trill c,16) r b8.(\fermata a16)
+	c'''8(\trill-\tweak X-offset #-2.3 ^\markup {Fl.} e,!16) r g!8(\trill c,16) r b8.(\fermata a16)
 	s2.*94
 	% bar 129 - 130
 	<<{
@@ -324,7 +324,7 @@ cueVoiceOboeIIMvtII = \relative c {
 cueVoiceOboeIIMvtIII = \relative c {
 	s2*16
 	% bar 17 - 20
-	\voiceOne \slashedGrace e''8 e4^\markup {Viol.I.} b8 g
+	\voiceOne \slashedGrace e''8 e4-\tweak X-offset #-5.5 ^\markup {Viol.I.} b8 g
 	\slashedGrace g'8 g4 e8 c
 	\slashedGrace g' g4 e8 c
 	\slashedGrace c' c4 g8 e \oneVoice
@@ -341,18 +341,18 @@ cueVoiceOboeIIMvtIII = \relative c {
 	\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
 	s2*68
 	% bar 155 - 158
-	r8^\markup {Vcello Solo.} a,,8( bes16 d c bes)
+	r8-\tweak X-offset #-6 ^\markup {Vcello Solo.} a,,8( bes16 d c bes)
 	r8 a( bes16 d c bes)
 	r8 a( cis! fis!)
 	e( d4) r8
 	s2*91
 	% bar 250 - 252
-	cis4^\markup {Vcello Solo.} dis
+	cis4-\tweak X-offset #-3 _\markup {Vcello Solo.} dis
 	e8( fis) a16( g fis) e-. 
 	\tuplet 5/4 4 {d( e g fis e)} d8-.( cis-.)
 	s2*40
 	% bar 293 - 296
-	a4^\markup {Vcello Solo.} a4(~
+	a4-\tweak X-offset #-5 ^\markup {Vcello Solo.} a4(~
 	a8 b32 a gis a) \tuplet 3/2 4 {d8( c b)}
 	a4 \tuplet 3/2 4 {e'8( c b)}
 	a4 b16( a fis d)
@@ -362,7 +362,7 @@ cueVoiceOboeIIMvtIII = \relative c {
 	a( cis) cis( e) e( a)} a4\trill
 	s2*122
 	% bar 457 - 460
-	\voiceOne b,,4(^\markup {Vcello Solo.} \tuplet 3/2 4 {cis8 dis cis}
+	\voiceOne b,,4(-\tweak X-offset #-6 ^\markup {Vcello Solo.} \tuplet 3/2 4 {cis8 dis cis}
 	b4 \tuplet 3/2 4 {cis8 dis cis)
 	b( fis' e dis b' gis)} \oneVoice
 	fis2

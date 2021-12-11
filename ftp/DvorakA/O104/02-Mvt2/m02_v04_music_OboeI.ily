@@ -20,22 +20,26 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	R2.*20
+	R2.*15
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
+	
+	
+	\tempoXoffset #-1 R2.*3
+	
 % Bars 31 to 35
 	
+	\tempoXoffset #-1 R2.*2
 	
-	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	\ni \mmrPos #4 R2.
 % Bars 36 to 40
-	\mmrPos #4 R
-	\mmrPos #4 R
+	\mmrPos #6 R
+	\mmrPos #6 R
 	\mmrPos #4 R \no \bar "||" \key g \minor
 	g'2\ff g16-^ bes-^ a-^ g-^
 	g2 bes,8. c16
@@ -65,8 +69,8 @@ musicOboeIMvtII = \relative c'' {
 	ges4(\fz ees2\>)
 % Bars 61 to 65
 	f4\p r r
-	R2.*3
-	
+	R2.
+	\tempoXoffset #-1 R2.*2
 	\bar "||" \key g \major \mark \default
 	b,2\ff b16-^ d-^ cis-^ b-^
 % Bars 66 to 70
@@ -77,10 +81,10 @@ musicOboeIMvtII = \relative c'' {
 	
 % Bars 71 to 75
 	
-	r4 r fis8.(\p e16
+	r4 r fis8.(\brack\p e16
 	d4.)\< g'8(\! fis e)
-	fis4(\mf\< \tuplet 3/2 4 {b8\! a\> fis)} g16( fis) fis( e)\!
-	e4(_\dimmarkup d8 a~\> a4)
+	fis4(-\tweak X-offset #-3 \mf\< \tuplet 3/2 4 {b8 a\> fis)} g16( fis) fis( e)\!
+	e4(_\dimD\> d8 a~ a4)
 % Bars 76 to 80
 	fis'4.(\p e8 d cis
 	b2) a8( g
@@ -89,7 +93,7 @@ musicOboeIMvtII = \relative c'' {
 	a'4.\< g16 a f a e a)\!
 % Bars 81 to 85
 	d,4.( g4_\crescmarkup gis!8)
-	a4(\< bes)\! a8.( g!16 \mark \default
+	a4(\< bes)\! a8.( g!16 \markYoffset #5 \mark \default
 	f8) r r4 r
 	bes4\p\<( e,! g,\!
 	a8) r r4 r
@@ -110,7 +114,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	R2.\fermata
+	\once \ni R2.\fermata
 	R2.*21
 % Bars 111 to 115
 	
@@ -121,7 +125,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 126 to 130
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-8 R \no
 % Bars 131 to 135
@@ -129,7 +133,7 @@ musicOboeIMvtII = \relative c'' {
 	fis16( e) e8~ e2(
 	d8) r r4 r
 	R2.
-	R\fermata^\lunga
+	\once \ni R\fermata^\lunga
 % Bars 136 to 140
 	g,2\pp( fis!4)
 	f2( e!4)
@@ -137,15 +141,15 @@ musicOboeIMvtII = \relative c'' {
 	ees2._\crescD
 	e!\<
 % Bars 141 to 145
-	g\f-^~
-	g~_\dimmarkup
+	g\f^^~
+	g~-\tweak X-offset #-0.5 _\dimmarkup
 	g4\p r r
 	R2.*4
 	
 % Bars 146 to 150
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	d'4\p-- d-- d16(\<-- d-- d-- d--)
 	d4( b\!) g8.\< g16
 % Bars 151 to 155
@@ -161,5 +165,5 @@ musicOboeIMvtII = \relative c'' {
 	R2.*2
 	
 % Bar 166
-	R2.\fermata \bar "|."
+	\once \ni R2.\fermata \bar "|."
 }

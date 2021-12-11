@@ -121,7 +121,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	a16-.\p\< a-. cis-. fis-. a8-.\fz fis-.
 % Bars 121 to 125
-	R2*22
+	R2*14
 	
 	
 	
@@ -130,8 +130,16 @@ musicOboeIIMvtIII = \relative c'' {
 	
 % Bars 131 to 135
 	
+	
+	
+	
+	R2*5
 % Bars 136 to 140
 	
+	
+	
+	
+	\tempoXoffset #-2 \mmrMinLength #12 R2*3
 % Bars 141 to 145
 	
 	\mark \default
@@ -146,7 +154,7 @@ musicOboeIIMvtIII = \relative c'' {
 	\ni \cueClef bass \mmrPos #-4 R2
 % Bars 156 to 160
 	\mmrPos #-4 R
-	\mmrPos #-4 R
+	\tempoXoffset #-2 \mmrPos #-4 R
 	\mmrPos #-4 R \no \cueClefUnset
 	e,4(\p\> fis\!
 	g8 e fis4)
@@ -158,12 +166,13 @@ musicOboeIIMvtIII = \relative c'' {
 	R2*2
 % Bars 166 to 170
 	\mark \default
-	R2*10
+	R2*5
 % Bars 171 to 175
 	
+	\tempoXoffset #-3 R2*5
 % Bars 176 to 180
 	
-	r8 d(\pp b'4)
+	\tempoOsp r8 d(\pp b'4)
 	r8 d,( b'4)
 	r8 fis( d'4)
 	r8 fis,( d'4)
@@ -174,11 +183,11 @@ musicOboeIIMvtIII = \relative c'' {
 	c\<
 	cis!8\fz r r4
 % Bars 186 to 190
-	R2*7
+	\mmrLength #0.1 R2*7
 % Bars 191 to 195
 	
 	
-	r8 a\p\<( bes4)->\fz
+	r8 \hairpinLength #6 a-\tweak X-offset #-1 \p\<( bes4)->-\tweak X-offset #1 \fz
 	r8 a(\< bes4)\fz->
 	a8 r r4
 % Bars 196 to 200
@@ -191,7 +200,7 @@ musicOboeIIMvtIII = \relative c'' {
 	R2*2
 	
 	r4 r8 e'\ff \mark \default
-	d8. d16 d8 r
+	\tempoXoffset #1 d8. d16 d8 r
 	d8. d16 d8 r
 % Bars 206 to 210
 	r d\f r e
@@ -214,7 +223,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 221 to 225
 	fis4 e!8 eis \mark \default
 	fis8 r r4
-	R2*27
+	R2*19
 	
 % Bars 226 to 230
 	
@@ -224,8 +233,9 @@ musicOboeIIMvtIII = \relative c'' {
 	
 % Bars 241 to 245
 	
+	\tempoXoffset #-3 R2*4
 % Bars 246 to 250
-	
+	\tempoXoffset #-1 R2*4
 	
 	
 	
@@ -238,15 +248,15 @@ musicOboeIIMvtIII = \relative c'' {
 	cis8( d16 cis) b4
 % Bars 256 to 260
 	fis' e16( d cis b)
-	ais4.\startTrillSpan cis8\stopTrillSpan
+	ais4.\trill cis8
 	cis4-> dis->
 	e8(\< fis) a16(\! g fis e)
 	\tuplet 5/4 4 {d!( e g fis e)} d8-. cis-. \mark \default
 % Bars 261 to 265
 	d\ff r r4
 	d8 r r4
-	d8_\dimD\> r r4\!
-	d8 r r4
+	d8_\dimD\> r r4
+	d8\! r r4
 	R2*16
 % Bars 266 to 270
 	
@@ -291,7 +301,7 @@ musicOboeIIMvtIII = \relative c'' {
 	g fis
 	g fis8) r
 	R2 \mark \default
-	R2*16
+	\markLengthOn R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -303,7 +313,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	\mark \default
 % Bars 331 to 335
-	R2*2
+	R2*2 \markLengthOff
 	
 	\ni \cueClef bass \mmrPos #4 R2
 	\mmrPos #-6 R \no \cueClefUnset
@@ -322,7 +332,7 @@ musicOboeIIMvtIII = \relative c'' {
 	d4\< bes16( c bes c
 % Bars 346 to 350
 	d4) bes16( c d bes)\! \bar "||" \key b \major
-	dis!4 r
+	\tempoXoffset #-4.3 dis!4 r
 	R2*17
 % Bars 351 to 355
 	
@@ -390,14 +400,18 @@ musicOboeIIMvtIII = \relative c'' {
 	dis~\pp
 % Bars 436 to 440
 	dis4. r8
-	R2*12
+	\tempoXoffset #-2.5 R2*7
 % Bars 441 to 445
+	
+	
+	\tempoXoffset #-1 \tempoOsp R2*5
+	
 	
 % Bars 446 to 450
 	
 	
 	\mark \default
-	R2*8
+	\tempoXoffset #1 R2*8
 	
 % Bars 451 to 455
 	
@@ -433,14 +447,15 @@ musicOboeIIMvtIII = \relative c'' {
 	g\!~
 % Bars 481 to 485
 	g8 r r4
-	R2*15
+	R2*10
 % Bars 486 to 490
 	
 % Bars 491 to 495
 	
+	\tempoXoffset #-1 R2*5
 % Bars 496 to 500
 	\mark \default
-	dis2(\p\<
+	\tempoXoffset #1.5 dis2(\p\<
 	dis4 fis
 	b dis~
 	dis fis)\!

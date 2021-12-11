@@ -161,17 +161,20 @@ musicOboeIMvtIII = \relative c' {
 % Bars 141 to 145
 	
 	\mark \default
-	R2*24
+	\mmrMinLength #22 \mmrnDown R2*14
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
 % Bars 156 to 160
 	
+	\tempoXoffset #1 \mmrnDown R2*2
+	
+	R2*7
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	\mark \default
+	R2 \mark \default
 	R2*5
 % Bars 171 to 175
 	
@@ -188,16 +191,16 @@ musicOboeIMvtIII = \relative c' {
 % Bars 181 to 185
 	r8 bes,( f'4)
 	r8 bes,( f'4)
-	c'2\pp~
-	c\<
+	c'2\pp\<~
+	c
 	a8\fz r r4
 % Bars 186 to 190
-	R2*7
+	\mmrLength #0.5 R2*7
 % Bars 191 to 195
 	
 	
-	r8 cis,\p\<~ cis4->\fz
-	r8 cis\<~ cis4\fz->
+	r8 cis,-\tweak X-offset #-2 \p\<~ cis4->-\tweak X-offset #0.5 \fz
+	r8 cis\<~ cis4-\tweak X-offset #0.5 \fz->
 	cis8 r r4
 % Bars 196 to 200
 	R2*4
@@ -209,7 +212,7 @@ musicOboeIMvtIII = \relative c' {
 	R2*2
 	
 	r4 r8 g'\ff \mark \default
-	fis8. fis16 fis8 r
+	\tempoXoffset #1 fis8. fis16 fis8 r
 	fis8. fis16 fis8 r
 % Bars 206 to 210
 	r d\f r e
@@ -250,11 +253,16 @@ musicOboeIMvtIII = \relative c' {
 	fis~
 	fis~
 	fis8 r r4 
-	R2*14
+	R2*3
+	
 % Bars 241 to 245
 	
-% Bars 246 to 250
+	\tempoXoffset #-2.5 R2*4
 	
+	
+	
+% Bars 246 to 250
+	R2*7
 % Bars 251 to 255
 	
 	
@@ -263,15 +271,15 @@ musicOboeIMvtIII = \relative c' {
 	cis8( d16 cis) b4
 % Bars 256 to 260
 	fis e16( d cis b)
-	cis4.\startTrillSpan cis8\stopTrillSpan
+	cis4.\trill cis8
 	cis4-> dis->
 	e8(\< fis) a16(\! g fis e)
 	\tuplet 5/4 4 {d!( e g fis e)} d8-. cis-. \mark \default
 % Bars 261 to 265
 	fis\ff r r4
 	fis8 r r4
-	fis8_\dimD\> r r4\!
-	fis8 r r4
+	fis8_\dimD\> r r4
+	fis8\! r r4
 	R2*8
 % Bars 266 to 270
 	
@@ -284,9 +292,9 @@ musicOboeIMvtIII = \relative c' {
 % Bars 276 to 280
 	\mmrPos #-4 R \no
 	d4\p\<( c~
-	c8 b \tuplet 3/2 4 {c e g)\!}
+	c8 b \once \tupletUp \tuplet 3/2 4 {c e g)}
 	b2(\>
-	a)\brack\pp \bar "||" \mark \default
+	a)-\tweak X-offset #1 \brack\pp \bar "||" \mark \default
 % Bars 281 to 285
 	R2*16
 % Bars 286 to 290
@@ -295,7 +303,7 @@ musicOboeIMvtIII = \relative c' {
 	
 % Bars 296 to 300
 	
-	\tuplet 3/2 4 {g,8\p g g g g g
+	\tempoOsp \once \tupletDown \tuplet 3/2 4 {g,8\p g g g g g
 	g g g g g g
 	g g g g g g
 	g g g g g g
@@ -303,15 +311,15 @@ musicOboeIMvtIII = \relative c' {
 	g g g g\< g g
 	g g g fis fis e}
 	g4\p r
-	R2*11
+	R2*10
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 	
 	
-	\mark \default
-	R2*4
+	R2 \mark \default
+	\tempoXoffset #1 R2*4
 % Bars 316 to 320
 	
 	
@@ -331,7 +339,7 @@ musicOboeIMvtIII = \relative c' {
 	a!8.) b!16(\< b8. c16
 	c8. des16\! des8.\> c16\! \mark \default
 % Bars 331 to 335
-	des8)\p r r4
+	\tempoXoffset #1.5 des8)\p r r4
 	R2*3
 	
 	
@@ -427,7 +435,7 @@ musicOboeIMvtIII = \relative c' {
 	
 	
 	
-	b,2\p(~
+	\tempoOsp b,2\p(~
 	b
 % Bars 446 to 450
 	cis8. dis16 e4~
@@ -475,7 +483,7 @@ musicOboeIMvtIII = \relative c' {
 	
 % Bars 496 to 500
 	\mark \default
-	dis,2(\p\<
+	\tempoXoffset #1.8 dis,2(\p\<
 	fis4 b
 	dis fis~
 	fis b)\!

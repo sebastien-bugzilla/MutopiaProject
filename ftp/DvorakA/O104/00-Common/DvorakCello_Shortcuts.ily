@@ -320,6 +320,10 @@ tempoXoffset = #(define-music-function
 	#}
 )
 
+tempoOsp = {
+	\once \override Score.MetronomeMark.outside-staff-priority = #500
+}
+
 mmrLength = #(define-music-function
 	(length)
 	(number?)
@@ -339,3 +343,13 @@ mmrMinLength = #(define-music-function
 mmrnDown = {
 	\once \override MultiMeasureRestNumber.direction = #-1 
 }
+
+hairpinLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override Hairpin.minimum-length = #length
+	#}
+)
+
+
