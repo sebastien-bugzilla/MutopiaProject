@@ -149,8 +149,8 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 131 to 135
 	d8\!) r r4 r
 	R2.
-	d2(\p\< f4)\!
-	f16\((\< ees) ees8~ ees4. d8\)\!
+	d2(\p f4)\<
+	f16\(( ees) ees8~ ees4. d8\)
 	c(--\brack\mf\> g-- ees4--)\! r4\fermata
 % Bars 136 to 140
 	R2.*3

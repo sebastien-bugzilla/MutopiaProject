@@ -21,6 +21,7 @@
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Format_Part03_Clarinetti.ily"
+%\include "./00-Common/DvorakCello_Format_temp.ly"
 \include "./00-Common/DvorakCello_CueVoice.ily"
 \include "./01-Mvt1/m01_v06_music_ClarinettoI.ily"
 \include "./01-Mvt1/m01_v07_music_ClarinettoII.ily"
@@ -144,7 +145,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -153,6 +154,7 @@
 			}
 		}
 		\layout {
+			system-count = 32
 		}
 	}
 	\score {
@@ -181,6 +183,7 @@
 			}
 		}
 		\layout {
+			system-count = 13
 		}
 	}
 	\score {
@@ -209,6 +212,7 @@
 			}
 		}
 		\layout {
+			system-count = 27
 		}
 	}
 }

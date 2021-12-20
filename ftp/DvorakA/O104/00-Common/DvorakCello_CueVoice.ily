@@ -393,7 +393,7 @@ cueVoiceClarinettoIMvtI = \relative c {
 	% bar 245 - 247
 	\transpose a c {
 		\relative {
-			dis'''4.(^\markup {Ob.I.} fis16 e dis4 fisis,)
+			dis'''4.(-\tweak X-offset #-4 ^\markup {Ob.I.} fis16 e dis4 fisis,)
 			gis1^~
 			gis4 r r2
 		}
@@ -446,7 +446,7 @@ cueVoiceClarinettoIIMvtII = \relative c {
 	% bar 120 - 121
 	\transpose a c {
 		\relative {
-			d''4~^\markup {Vcello Solo.} d16 d( e d d,4)~
+			d''4~-\tweak X-offset #-5 ^\markup {\center-column { \lower #1.5 "Vcello" "Solo."} } d16 d( e d d,4)~
 			d16 d( e d d,4)~ d16 d'( e d)
 		}
 	}
@@ -456,7 +456,7 @@ cueVoiceClarinettoIIMvtIII = \relative c {
 	% bar 84 - 86
 	\transpose a c {
 		\relative {
-			\ottava #1 cis''''4^\markup {Viol.I.} d
+			\once \override Staff.OttavaBracket.shorten-pair = #'(0 . 0.2) \ottava #1 cis''''4^\markup {Viol.I.} d
 			e8( fis) a16( g fis e)
 			\tuplet 5/4 4 {d16( e g fis e)} d8 cis \ottava #0
 		}
@@ -482,7 +482,7 @@ cueVoiceClarinettoIIMvtIII = \relative c {
 	% bar 177 - 182
 	\transpose a c {
 		\relative {
-			\stemUp r8^\markup {Ob.Fl.} fis''( d'4)
+			\stemUp r8-\tweak X-offset #-2 ^\markup {Ob.Fl.} fis''( d'4)
 			r8 fis,( d'4)
 			r8 a( fis'4)
 			r8 a,( fis'4)

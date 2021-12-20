@@ -252,7 +252,7 @@ musicClarinettoIMvtIII = \relative c' {
 	e8( f16 e) d4
 % Bars 256 to 260
 	a' g16( f e d)
-	e4.\startTrillSpan e8\stopTrillSpan
+	e4.\trill e8
 	e4-> fis->
 	g8(\< a) c16(\! bes a g)
 	\tuplet 5/4 4 {f!( g bes a g)} f8-. e-. \mark \default
@@ -267,7 +267,7 @@ musicClarinettoIMvtIII = \relative c' {
 	a_\dimmarkup~
 	a~
 	a8 r r4
-	R2*11
+	\markLengthOn R2*11 \markLengthOff
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -277,7 +277,7 @@ musicClarinettoIMvtIII = \relative c' {
 	
 	\bar "||" \mark \default
 % Bars 281 to 285
-	d2(\p 
+	\tempoXoffset #0.5 d2(\p 
 	f)
 	f8( bes a g)
 	f( bes a g)
@@ -316,8 +316,8 @@ musicClarinettoIMvtIII = \relative c' {
 	d4(~\< d16 c f ees)
 	d4(~ d16 c f ees)\!
 	d4( c8) r
-	R2 \mark \default
-	R2*16
+	\tempoXoffset #-2 R2 \mark \default
+	\mmrLength #4.5 \tempoXoffset #3 R2*16 
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -329,7 +329,7 @@ musicClarinettoIMvtIII = \relative c' {
 	
 	\mark \default
 % Bars 331 to 335
-	e8\p r e4(~
+	\tempoXoffset #2 e8\p r e4(~
 	e8 f e f)
 	g4. r8
 	R2
@@ -361,12 +361,12 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 361 to 365
 	e( g
 	e a)
-	\tuplet 3/2 4 {a8 a a a a a
+	\once \tupletDown \tuplet 3/2 4 {a8 a a a a a
 	a\< a a a a a\!
 	a a a b( a g)_\crescmarkup
 % Bars 366 to 370
 	a a a b( a g)
-	a a a b\f b b}
+	\once \tupletDown a a a b\f b b}
 	b8( d cis b
 	a8) r r4
 	R2
@@ -436,14 +436,21 @@ musicClarinettoIMvtIII = \relative c' {
 	fis\pp~
 % Bars 436 to 440
 	fis4. r8
-	R2*12
+	\tempoXoffset #-3 R2*7
+	
+	
+	
 % Bars 441 to 445
+	
+	
+	
+	R2*5
 	
 % Bars 446 to 450
 	
 	
 	\mark \default
-	\tuplet 3/2 4 {fis8\pp( g fis} e fis)
+	\markXoffset #-0.5 \tuplet 3/2 4 {fis8\pp( g fis} e fis)
 	\tuplet 3/2 4 {fis( g fis } e8. g16)
 % Bars 451 to 455
 	\tuplet 3/2 4 {fis8( g fis} e fis)
@@ -454,7 +461,7 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 456 to 460
 	
 % Bars 461 to 465
-	fis4.(\pp\< g16 a
+	fis4.(\pp\<^\solo g16 a
 	fis2)
 	fis4.(\> e16 d
 	fis4. e16 d)
@@ -486,7 +493,7 @@ musicClarinettoIMvtIII = \relative c' {
 	
 % Bars 496 to 500
 	\mark \default
-	d,2\p\<(
+	\tempoXoffset #1.5 d,2\p\<(
 	fis4 a
 	d fis
 	a2)\!

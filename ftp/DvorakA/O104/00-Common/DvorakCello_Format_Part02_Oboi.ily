@@ -56,12 +56,12 @@ formatOboeIIMvtII = {
 	s2.*24  
 }
 formatOboeIIMvtIII = {
-\override Score.NonMusicalPaperColumn.line-break-permission = ##f
-\override Score.NonMusicalPaperColumn.page-break-permission = ##f
-s2*27 \break  s2*24 \break  s2*34 \break  s2*12 \break 
-s2*17 \break  s2*42 \break  s2*15 \break  s2*22 \break 
-s2*17 \break  s2*31 \pageBreak  s2*16 \break  s2*21 \break 
-s2*21 \break  s2*13 \break  s2*25 \break  s2*27 \break 
-s2*36 \break  s2*32 \break  s2*28 \break  s2*19 \break 
-s2*26 \break  s2*11  
+	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+	s2*27 \break  s2*24 \break  s2*34 \break  s2*12 \break 
+	s2*17 \break  s2*42 \break  s2*15 \break  s2*22 \break 
+	s2*17 \break  s2*31 \pageBreak  s2*16 \break  s2*21 \break 
+	s2*21 \break  s2*13 \break  s2*25 \break  s2*27 \break 
+	s2*36 \break  s2*32 \break  s2*28 \break  s2*19 \break 
+	s2*26 \break  s2*11  
 }

@@ -88,6 +88,19 @@ pizz=^\markup {pizz.}
 arco=^\markup {arco}
 arcobrack=^\markup {[arco]}
 lunga=^\markup {\italic lunga}
+lungafermata=^\markup {
+	\halign #-0.2 \center-column {
+		\lower #1 \italic "lunga"
+		\musicglyph #"scripts.ufermata"
+	}
+}
+lungafermatatrill=\markup {
+	\halign #-0.2 \center-column {
+		\text \lower #3 \italic "lunga"
+		\lower #1.2 \musicglyph #"scripts.trill"
+		\musicglyph #"scripts.ufermata"
+	}
+}
 morendo=^\markup {\italic morendo}
 mutainf=^\markup {\italic {muta in F}}
 ten=^\markup {\italic ten.}
@@ -352,4 +365,12 @@ hairpinLength = #(define-music-function
 	#}
 )
 
-
+scriptStencil = #(define-music-function
+	(mymarkup)
+	(markup?)
+	#{
+		\once \override Script.staff-padding = ##f
+		\once \override Script.stencil = #ly:text-interface::print
+		\once \override Script.text = #mymarkup
+	#}
+)
