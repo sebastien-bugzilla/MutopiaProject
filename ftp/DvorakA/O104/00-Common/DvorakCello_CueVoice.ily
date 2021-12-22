@@ -563,7 +563,7 @@ cueVoiceFagottoIMvtII = \relative c {
 	aes4( f) \tuplet 3/2 4 {d8( e! f)}
 	s2.*90
 	% bar 115
-	g'16^\markup {Fl.} e fis g fis8( e) fis16( d fis g)
+	g'16(^\markup {Fl.} e fis g) fis8( e) fis16( e fis g)
 }
 cueVoiceFagottoIMvtIII = \relative c {
 	s2*16
@@ -574,12 +574,12 @@ cueVoiceFagottoIMvtIII = \relative c {
 	\slashedGrace c'8 c4 g8 e
 	s2*63
 	% bar 84 - 86
-	cis'4->^\markup {Viol.} dis->
+	cis'4->-\tweak X-offset #-4 ^\markup {Viol.} dis->
 	e8( fis) a16( g fis e)
 	\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
 	s2*70
 	% bar 157 - 158
-	r8^\markup {Vcello Solo.} a,,( cis! fis!)
+	r8-\tweak X-offset #-3 ^\markup {\center-column {\lower #1.5 "Vcello" "Solo."}} a,,( cis! fis!)
 	e( d4) r8
 	s2*94
 	% bar 253
@@ -598,7 +598,7 @@ cueVoiceFagottoIMvtIII = \relative c {
 	f4( d16 ees f d)
 	s2*110
 	% bar 457 - 460
-	b,,4^( \tuplet 3/2 4 {cis8 dis cis}
+	b,,4^(-\tweak X-offset #-5 ^\markup {Vcello Solo.} \tuplet 3/2 4 {cis8 dis cis}
 	b4 \tuplet 3/2 4 {cis8 dis cis)
 	b( fis' e dis b' gis)}
 	fis2
@@ -622,7 +622,7 @@ cueVoiceFagottoIIMvtI = \relative c {
 	% bar 67 - 70
 	\transpose c a' {
 		\relative {
-			\stemUp g4(^\markup {Clar.} f d bes
+			\stemUp g4(-\tweak X-offset #-3 ^\markup {Clar.} f d bes
 			a g2) d'4
 			g( f d bes
 			a g2) c4 \stemNeutral
@@ -630,7 +630,7 @@ cueVoiceFagottoIIMvtI = \relative c {
 	}
 	s1*24
 	% bar 95 - 97
-	r2 r16 g'^\markup {Fag.I.} g g e8 g16 g
+	r2 r16 g'-\tweak X-offset #-5 ^\markup {Fag.I.} g g e8 g16 g
 	e8 r r4 r16 g g g e8 g16 g
 	e8 r r4 r2
 	s1*24
@@ -652,9 +652,9 @@ cueVoiceFagottoIIMvtI = \relative c {
 	% bar 151 - 153
 	\transpose c a' {
 		\relative {
-			r8 c e e g r r4
+			\stemUp r8 c e e g r r4
 			r8 d f f g r r4
-			r8 c, c e g r r4
+			r8 c, c e g r r4 \stemNeutral
 		}
 	}
 	s1*90
@@ -670,7 +670,7 @@ cueVoiceFagottoIIMvtII = \relative c {
 	r4^\markup {Flauto.} b''2(~
 	b4 d4. g8)
 	g2.\trill\<
-	g16\! e\< fis g fis8( e) fis16( e fis g)\!
+	g16(\! e\< fis g) fis8( e) fis16( e fis g)\!
 }
 cueVoiceFagottoIIMvtIII = \relative c {
 	s2*16
@@ -693,9 +693,9 @@ cueVoiceFagottoIIMvtIII = \relative c {
 	s4 \tuplet 5/4 4 {fis16(^\markup {Viol.} b cis d fis)}
 	s2*203
 	% bar 457 - 460
-	b,,,4^(^\markup {Vcello Solo.} \tuplet 3/2 4 {cis8 dis cis}
+	b,,,4^(-\tweak X-offset #-7 ^\markup {Vcello Solo.} \tuplet 3/2 4 {cis8 dis cis}
 	b4 \tuplet 3/2 4 {cis8 dis cis)
-	\stemUp b( fis' e dis b' gis} \stemNeutral
+	\shape #'((0 . 0)(0 . 1)(0 . 1)(0 . -2)) Slur \stemUp b( fis' e dis b' gis} \stemNeutral
 	fis2)
 	s2*32
 	% bar 493 - 495

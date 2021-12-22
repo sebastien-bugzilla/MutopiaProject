@@ -35,8 +35,8 @@ musicFagottoIMvtII = \relative c' {
 	\mmrPos #-4 R \no \cueClefUnset
 	d,2.\p\<
 % Bars 26 to 30
-	<<bes' {s4\fz\< s s\!}>>
-	a2 \tuplet 3/2 4 {d8(\< e f)}
+	bes'\fz\< 
+	a2\! \tuplet 3/2 4 {d8(\< e f)}
 	f2\fz\> e8.( d16)\!
 	d8(\p c16) r d8( c16) r c8( b16) r
 	b8( bes16) r bes8( a16)_\dimmarkup r a8( gis16) r
@@ -60,8 +60,8 @@ musicFagottoIMvtII = \relative c' {
 	
 % Bars 46 to 50
 	
-	g2.\p\<
-	f2_\dimD\>( a4)\!
+	\hairpinLength #7 g2.\p\<
+	\hairpinLength #7 f2_\dimD\>( a4)\!
 	bes4. r8 r4 \mark \default
 	R2.*6
 % Bars 51 to 55
@@ -76,13 +76,13 @@ musicFagottoIMvtII = \relative c' {
 	des2.\pp(
 	bes)
 	b2( e,4)
-	fis2(\pp\> ais4)\! \bar "||" \key g \major \mark \default
+	\hairpinShorten #'(0 . -1) fis2(\pp\> ais4)\! \bar "||" \key g \major \mark \default
 	b2\ff b,4
 % Bars 66 to 70
 	b16-^ d-^ cis-^ b-^ b4 b8. b16
 	fis'4 fis16-^ a-^ g-^ fis-^ fis4
-	b,16-^ d-^ cis-^ b-^ b4 r \clef tenor
-	fis''4.(\p e8 d cis) \clef bass
+	b,16-^ d-^ cis-^ b-^ b4 r
+	fis''4.(\p e8 d cis) 
 	b4 b\< \tuplet 3/2 4 {b8( cis d}
 % Bars 71 to 75
 	e4.)\! cis8( a g)\>
@@ -99,7 +99,7 @@ musicFagottoIMvtII = \relative c' {
 % Bars 81 to 85
 	bes, d f d bes f' d bes( b) f' d b
 	c4(\p\< f bes\! \mark \default
-	a8) r r4 f\p~
+	\tempoXoffset #1 a8) r r4 f\p~
 	f2.~\<
 	f8\! r r4 f\p~
 % Bars 86 to 90
@@ -119,7 +119,7 @@ musicFagottoIMvtII = \relative c' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	R2.\fermata
+	\once \ni R2.\fermata
 	R2.*8
 % Bars 111 to 115
 	
@@ -138,11 +138,11 @@ musicFagottoIMvtII = \relative c' {
 	b(\< c8 g'16 fis e8 d)\!
 	e4(\f c2)
 	c2.\>~
-	c_\dimD\>~
+	c_\dimD~
 % Bars 126 to 130
 	c8\p r r4 r
 	R2.
-	R\fermata \mark \default
+	\once \ni R\fermata \mark \default
 	R2.*6
 	
 % Bars 131 to 135
@@ -150,7 +150,7 @@ musicFagottoIMvtII = \relative c' {
 	
 	
 	
-	R2.\fermata
+	\once \ni R2.\fermata
 % Bars 136 to 140
 	R2.*4
 	
@@ -165,7 +165,7 @@ musicFagottoIMvtII = \relative c' {
 	d4 r r
 % Bars 146 to 150
 	R2.
-	r8 b\p\<-.( c-. d-.) \tuplet 3/2 4 {e-.( fis-. g-.)\!}
+	r8 b\p\<-.( c-. d-.) \once \tupletUp \tuplet 3/2 4 {e-.( fis-. g-.)\!}
 	a\f r r4 r\fermata \mark \default
 	R2.*2
 	
@@ -184,5 +184,5 @@ musicFagottoIMvtII = \relative c' {
 % Bars 161 to 165
 	
 % Bar 166
-	R2.\fermata \bar "|."
+	\once \ni R2.\fermata \bar "|."
 }

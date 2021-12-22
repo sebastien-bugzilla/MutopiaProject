@@ -365,6 +365,14 @@ hairpinLength = #(define-music-function
 	#}
 )
 
+hairpinShorten = #(define-music-function
+	(value)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #value
+	#}
+)
+
 scriptStencil = #(define-music-function
 	(mymarkup)
 	(markup?)

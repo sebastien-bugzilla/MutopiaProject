@@ -35,16 +35,16 @@ musicFagottoIIMvtII = \relative c' {
 	
 	a,2.\p\<
 % Bars 26 to 30
-	<<g {s4\fz\< s s\!}>>
-	f2.
-	<<e( {s4\fz\> s s\!}>>
-	a8) r r4 r
+	g\fz\<
+	f2.\!
+	e(\fz\>
+	a8)\! r r4 r
 	R2.*4
 % Bars 31 to 35
 	
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	g'2(\pp c,8 e)
 % Bars 36 to 40
 	g2.
@@ -61,8 +61,8 @@ musicFagottoIIMvtII = \relative c' {
 % Bars 46 to 50
 	g\p
 	ees'2\p\<( c4)\!
-	<<f,2. {s4_\dimD\> s s\!} >>
-	bes4. r8 r4 \mark \default
+	f,2._\dimD\>
+	bes4.\! r8 r4 \mark \default
 	R2.*6
 % Bars 51 to 55
 	
@@ -74,15 +74,15 @@ musicFagottoIIMvtII = \relative c' {
 	ees4\fz\>( << c2) {s4 s\!}>>
 % Bars 61 to 65
 	des4\pp r r
-	R2.*3
-	
+	R2.
+	\tempoXoffset #-1.5 R2.*2
 	\bar "||" \key g \major \mark \default
 	b,2\ff b,4
 % Bars 66 to 70
 	b16-^ d-^ cis-^ b-^ b4 b8. b16
 	fis'4 fis16-^ a-^ g-^ fis-^ fis4
-	b,16-^ d-^ cis-^ b-^ b4 r \clef tenor
-	d''4.(\p cis8 b a) \clef bass
+	b,16-^ d-^ cis-^ b-^ b4 r
+	d''4.(\p cis8 b a) 
 	g4 g\< \tuplet 3/2 4 {g8( a b}
 % Bars 71 to 75
 	cis4.)\! a8( fis e)\>
@@ -95,7 +95,7 @@ musicFagottoIIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	c2.\p\<~  \mark \default
-	c8\! r r4 f,\p~
+	\tempoXoffset #1 c8\! r r4 f,\p~
 	f2.~\<
 	f8\! r r4 f\p~
 % Bars 86 to 90
@@ -115,7 +115,7 @@ musicFagottoIIMvtII = \relative c' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	R2.\fermata
+	\once \ni R2.\fermata
 	R2.*5
 % Bars 111 to 115
 	
@@ -134,11 +134,11 @@ musicFagottoIIMvtII = \relative c' {
 	g(\< a8 e'16 d c8 b)\!
 	a2.\f
 	a2.\>~
-	a_\dimD\>~
+	a_\dimD~
 % Bars 126 to 130
 	a8\p r r4 r
 	R2.
-	R\fermata \mark \default
+	\once \ni R\fermata \mark \default
 	R2.*6
 	
 % Bars 131 to 135
@@ -146,7 +146,7 @@ musicFagottoIIMvtII = \relative c' {
 	
 	
 	
-	R2.\fermata
+	\once \ni R2.\fermata
 % Bars 136 to 140
 	a4(\pp c2)
 	g4( bes2)
@@ -176,5 +176,5 @@ musicFagottoIIMvtII = \relative c' {
 % Bars 161 to 165
 	
 % Bar 166
-	R2.\fermata \bar "|."
+	\once \ni R2.\fermata \bar "|."
 }

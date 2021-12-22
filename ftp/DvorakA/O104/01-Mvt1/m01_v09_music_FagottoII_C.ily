@@ -198,8 +198,8 @@ musicFagottoIIMvtI = \relative c {
 	d-^
 	d-^
 	d_\dimD\>~
-	8\fz r r4 e'2\p\>~
-	e1
+	d8\fz r r4 e'2\p\>~
+	e1~
 % Bars 201 to 205
 	e_\dimD~
 	e4 r r2

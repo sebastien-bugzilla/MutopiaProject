@@ -9,7 +9,7 @@ generalOptions = {
 	\override Score.RehearsalMark #'font-size = #4
 	\compressMMRests
 	\compressEmptyMeasures
-	\override Score.RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
+	\override Score.RehearsalMark.extra-spacing-width = #'(-0.5 . 0.5)
 	\override Score.RehearsalMark.outside-staff-priority = ##f
 	\override Staff.MultiMeasureRest.space-increment = 1
 }

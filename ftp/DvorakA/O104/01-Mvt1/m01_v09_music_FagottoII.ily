@@ -25,9 +25,9 @@ musicFagottoIIMvtI = \relative c {
 	
 	cis1_\pcrescD
 	cis1\<~
-	cis8\! r fis,2.~-^\fz\<
+	cis8\! r fis,2.~^^\fz\<
 % Bars 16 to 20
-	fis8\! r fis2.\f->\<
+	fis8\! r fis2.\f^>\<
 	ais'4.\ff( b16 cis ais2)
 	ais4.( g!16 fis ais2)
 	fis,1\f~
@@ -35,12 +35,12 @@ musicFagottoIIMvtI = \relative c {
 % Bars 21 to 25
 	fis8 r r4 r2
 	R1 \mark \default
-	r2 b'4.\ff cis16 d
+	\tempoXoffset #0.8 r2 b'4.\ff cis16 d
 	b4 r b4. cis16 d
 	b4 r r2
 % Bars 26 to 30
-	b8.\f\< d16 fis2.\startTrillSpan
-	e8\!\stopTrillSpan r r4 r2
+	b8.\f\< d16 fis2.\trill
+	e8\! r r4 r2
 	R1*9
 % Bars 31 to 35
 	
@@ -80,7 +80,7 @@ musicFagottoIIMvtI = \relative c {
 	gis1\<
 	a2.\fz\< a4\!
 	b2(\< cis) \mark \default
-	d,,4\ff r8 d d-. d-. d-. r
+	\tempoXoffset #1 d,,4\ff r8 d d-. d-. d-. r
 % Bars 76 to 80
 	d4 r8 d d-. d-. d-. r
 	fis4-> e8 d d a' a r
@@ -104,10 +104,10 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	
-	\ni R1
+	\ni \mmrPos #-4 R1
 % Bars 96 to 100
-	R
-	R \no
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	R1
 	r16 c'\p-. c-. b-. c8-. c-.\< \tuplet 3/2 4 {c-. c-. e-.} e16-. e-. e-. a-.\!
 	a8\fz r r4 r2
@@ -118,7 +118,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	\mark \default
-	b,8\fz r b\p-. d-. b-. d-. b-. d-.
+	\tempoXoffset #1 b,8\fz r b\p-. d-. b-. d-. b-. d-.
 % Bars 111 to 115
 	b-. r b-. d-. b-. d-. b-.\noBeam r
 	e-. r e-. g-. e-. g-. e-. g-.
@@ -153,14 +153,14 @@ musicFagottoIIMvtI = \relative c {
 	\ni \cueClef treble \mmrPos #-4 R1 \no
 	R1
 % Bars 151 to 155
-	\ni \mmrPos #4 R
-	\mmrPos #6 R
+	\ni \mmrPos #-4 R
+	\mmrPos #-4 R
 	\mmrPos #-4 R \no \cueClefUnset 
 	fis'1\fz
 	gis2.\<( b4)\! \clef tenor
 % Bars 156 to 160
 	d2(_\dimD\> b4 cis\!) \mark \default
-	d2._\pdimD\> d4(\!
+	\tempoXoffset #0.7 \hairpinShorten #'(0 . -2) d2._\pdimD\> d4(\!
 	cis)\pp d( cis d
 	cis ais2.->)\>
 	cis4\!( d cis d)
@@ -169,9 +169,9 @@ musicFagottoIIMvtI = \relative c {
 	e'(_\crescD\< fis e fis)\!
 	cis(\mf d cis d)
 	b( c_\dimmarkup b c)
-	b(_\pdimD\> c2.)\!
+	b(_\pdimD\> c2.)
 % Bars 166 to 170
-	cis!4 r r2
+	cis!4\! r r2
 	R1*2
 	\clef bass
 	fis,4(\pp eis dis eis)
@@ -189,7 +189,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	dis4\fp( e) dis(\fz e)
 % Bars 181 to 185
-	cis(\fz d!) cis(\fz d)
+	\stemUp cis(\fz d!) cis(\fz d) \stemNeutral
 	dis(\< e) eis( fis)\!
 	g2\f r
 	r4 aes,2\f aes4
@@ -210,8 +210,8 @@ musicFagottoIIMvtI = \relative c {
 	d-^
 	d-^
 	d_\dimD\>~
-	8\fz r r4 e'2\p\>~
-	e1
+	d8\fz r r4 e'2\p\>~
+	e1~
 % Bars 201 to 205
 	e_\dimD~
 	e4 r r2
@@ -240,12 +240,16 @@ musicFagottoIIMvtI = \relative c {
 	g( aes)\!
 	g8\p r r4 r2
 	R1 \mark \default
-	R1*20
+	\mmrLength #3 R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
+	
+	
+	
+	R1*4
 	
 % Bars 241 to 245
 	
@@ -262,7 +266,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 251 to 255
 	ais)\<
 	d!
-	cis\!_\crescmarkup \clef tenor
+	cis_\crescD
 	d
 	cis\<
 % Bars 256 to 260
@@ -270,7 +274,7 @@ musicFagottoIIMvtI = \relative c {
 	R1*4
 	
 	
-	\clef bass \mark \default
+	\mark \default
 % Bars 261 to 265
 	r8 ais,\mf( b ais) d!( cis eis fis)
 	r fis(\< eis fis) b( ais d cis)\!
@@ -284,7 +288,7 @@ musicFagottoIIMvtI = \relative c {
 	cis cis dis8( fis dis b)
 	ais2.\> r4\!
 % Bars 271 to 275
-	R1*10
+	R1*10 \pageBreak
 % Bars 276 to 280
 	
 % Bars 281 to 285
@@ -298,9 +302,9 @@ musicFagottoIIMvtI = \relative c {
 	ais4(\! b ais b)
 	ais(\< fisis2._\fzmarkup->)
 	cis'4(\mf dis cis dis)
-	ais( b\>_\dimmarkup ais b)\!
+	ais(_\dimD\> b ais b)\!
 % Bars 291 to 295
-	gis( a!\>_\dimmarkup gis a)\!
+	gis(_\dimD\> a! gis a)\!
 	<< { gis( a2.) } {s4 s\> s s\!} >>
 	\tuplet 3/2 4 {bes8\pp bes bes  bes bes bes  bes bes bes  bes bes bes 
 	bes bes bes bes bes bes bes bes bes bes bes bes }
@@ -321,7 +325,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	bis,,4(\fp cis) bis(\fp cis)
 	ais(\fp b!) ais(\fp b)
-	bis( cis_\crescmarkup cisis dis)
+	bis( cis_\crescmarkup cisis \once \stemUp dis)
 	e!2.-^\f r4
 % Bars 311 to 315
 	r2 r4 \tuplet 3/2 4 {g8\f\< b d}
@@ -368,7 +372,7 @@ musicFagottoIIMvtI = \relative c {
 	b-. r b-. r
 	b-. r r2
 % Bars 351 to 354
-	r4 \tuplet 3/2 4 {b''8\f b b} b4 b
+	r4 \tuplet 3/2 4 {b''8-\tweak X-offset #-0.5 \f b b} b4 b
 	b2 b,,4. b8
 	b1\<
 	b4\ff r r2 \markupfermata \bar "|."

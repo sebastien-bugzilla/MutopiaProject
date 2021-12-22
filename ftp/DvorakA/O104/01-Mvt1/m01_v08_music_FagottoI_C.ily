@@ -162,10 +162,10 @@ musicFagottoIMvtI = \relative c {
 	\once \partCombineApart cis! r r2
 	R1*2
 	\clef bass
-	a4(\pp gis fis gis)
+	ais4(\pp gis fis gis)
 	cis16\p-. cis-. cis-. cis-. r8. cis16-.\< d!-. d-. d-. d-.\! r8. d16-.
 % Bars 171 to 175
-	dis16-.\< dis-. dis-. dis-.\! r8. dis16\< e-. e-. e-. e-.\! r4
+	dis16-.\< dis-. dis-. dis-.\! r8. dis16-.\< e-. e-. e-. e-.\! r4
 	fis,8\f r \tuplet 3/2 4 {a8\p a a} a r \tuplet 3/2 4 {a a a}
 	bes\brack\f r \tuplet 3/2 4 {bes\brack\p\< bes bes} bes r \tuplet 3/2 4 {bes bes bes\!}
 	b!\f r r4 r2
@@ -198,8 +198,8 @@ musicFagottoIMvtI = \relative c {
 	d-^
 	d-^
 	d_\dimD\>~
-	8\fz r r4 g2\p\>~
-	g1
+	d8\fz r r4 g2\p\>~
+	g1~
 % Bars 201 to 205
 	g_\dimD~
 	g4 r r2
