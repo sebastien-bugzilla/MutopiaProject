@@ -16,7 +16,7 @@ musicCornoIIIMvtIII = \relative c' {
 	g8\p r bes r
 % Bars 6 to 10
 	\tuplet 3/2 4 {ees ees ees} bes4
-	g'4->\fz d8-. bes
+	g'4->\fz d8-. bes-.
 	c4 r
 	R2*40
 % Bars 11 to 15

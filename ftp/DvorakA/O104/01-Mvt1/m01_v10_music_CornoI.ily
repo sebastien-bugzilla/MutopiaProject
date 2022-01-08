@@ -57,7 +57,7 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	
-	ees2\p\< e\fz
+	\hairpinShorten #'(-0.5 . -0.5) \hairpinLength #4.5 ees2\p\< e\fz
 	f1\>~
 % Bars 51 to 55
 	f4\pp r r2
@@ -66,15 +66,15 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 % Bars 56 to 60
-	c2.(\pp cis4)
-	d2(~^\moltoespressivo d8 c! bes g
-	bes2 f4) bes(\<
+	c2.(\pp^\solo cis4)
+	d2(~_\moltoespressivo d8 c! bes g)
+	bes2( f4) bes(\<
 	c d f\> d8 bes)\!
 	c2.(_\dimmarkup cis4)
 % Bars 61 to 65
 	d2\pp(~ d8 c! bes g)
 	bes2( f4)\< f'->\!~
-	f a,(\>_\dimmarkup d c8 g\!
+	f a,(_\dimD\> d c8 g\!
 	f2.) r4
 	R1*6
 % Bars 66 to 70
@@ -83,15 +83,16 @@ musicCornoIMvtI = \relative c'' {
 	\ni \mmrPos #-4 R1 \no
 	d'1\p\<
 	d2.\fz\< d4\!
-	ees1_\crescmarkup \mark \default
+	ees1-\tweak X-offset #-1 _\crescmarkup \mark \default
+	\tempoXoffset #1 f4\ff r8 f g-. f-. f-. r
 % Bars 76 to 80
-	f4\ff r8 f g-. f-. f-. r
 	f4 r8 f ges-. f-. f-. r
 	f4-> f8 f d c c r
 	f4-> f8 f d c c r
 	d r r4 r2
-% Bars 81 to 85
 	R1*10
+% Bars 81 to 85
+	
 % Bars 86 to 90
 	
 	
@@ -113,7 +114,7 @@ musicCornoIMvtI = \relative c'' {
 	
 	c1\fz
 	d2_\dimD\> ees8( d4.)\! \mark \default
-	d8\fz r r4 r2
+	\tempoXoffset #1 d8\fz r r4 r2
 % Bars 111 to 115
 	R1*13
 % Bars 116 to 120
@@ -134,19 +135,28 @@ musicCornoIMvtI = \relative c'' {
 	c-^\fp
 	ees4\fz r r2
 	R1
-	c2.\fp\> r4\!
-	R1*22
+	\hairpinShorten #'(-0.5 . -0.5) c2.\fp\> r4\!
+	\mmrLength #0.1 R1*3
 % Bars 136 to 140
 	
+	
+	\mmrLength #0.1 R1*2
+	
+	R1*14
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	
+	
+	\mmrLength #2 \tempoXoffset #-1 R1*3
+	
 % Bars 156 to 160
 	\mark \default
-	R1*11
+	R1*1
+	\mmrLength #2.5 \tempoXoffset #-3 R1*10
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -154,7 +164,7 @@ musicCornoIMvtI = \relative c'' {
 	
 	\ni \mmrPos #-4 R1 
 	\mmrPos #-4 R1 \no
-	c16-.\p c-. c-. c-. r8. c16-.\< d-. d-. d-. d-.\! r8. d16-.\<
+	c16-.\p^\solo c-. c-. c-. r8. c16-.\< d-. d-. d-. d-.\! r8. d16-.\<
 % Bars 171 to 175
 	f-. f-. f-. f-.\! r8. f16\< f-. f-. f-. f-.\! r4
 	f8\f r \tuplet 3/2 4 {b,\p c b} b r \tuplet 3/2 4 {b c b}
@@ -162,10 +172,10 @@ musicCornoIMvtI = \relative c'' {
 	des\f r e!\f\<-. dis-. e-. dis-. e-. dis-.\!
 	e->\fz r r4 r2 \mark \default
 % Bars 176 to 180
-	\tuplet 3/2 4 {f8-^\mf\< d, d d f f f bes bes bes  d d\! }
-	d2\fz\> a\p
-	\tuplet 3/2 4 {bes8 d, d d\< f f f bes bes bes d d\!}
-	d2\fz\> a\p
+	\tuplet 3/2 4 {f8-^-\tweak X-offset #-2 \mf\< d, d d f f f bes bes \once \tupletUp bes  d d\! }
+	\hairpinLength #5 \hairpinShorten #'(-0.5 . -0.5) d2\fz\> a\p
+	\tuplet 3/2 4 {bes8 d, d d\< f f f bes bes \once \tupletUp bes d d\!}
+	\hairpinLength #5 \hairpinShorten #'(-0.5 . -0.5) d2\fz\> a\p
 	d4(\fp ees) d(\fz ees)
 % Bars 181 to 185
 	c(\fz d) c(\fz d)
@@ -188,9 +198,9 @@ musicCornoIMvtI = \relative c'' {
 % Bars 196 to 200
 	f1\fz
 	f\fz
-	<< e!\fz {s4\> s s s\!} >>
+	e!\fz\>
 	ees8\fz r r4 r2
-	R1*9
+	\mmrLength #0.1 R1*9
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -202,9 +212,9 @@ musicCornoIMvtI = \relative c'' {
 % Bars 211 to 215
 	
 	
-	ees2-^\p\< d!4-. des\!
-	\tuplet 6/4 2 {c8\mf[ c c c c c]  c[ c c c c c] 
-	c_\crescmarkup[ c c c c c]   c[ c c c c c] }
+	ees2-^\p\< d!4-. des-.\!
+	\tupletUp \tuplet 3/2 4 {c4.:8\mf c: c: c: 
+	c:_\crescmarkup c: c: c: } \tupletNeutral
 % Bars 216 to 220
 	ees1\f
 	e!->\fz
@@ -215,13 +225,18 @@ musicCornoIMvtI = \relative c'' {
 	R1*3
 	
 	\mark \default
-	R1*23
+	\mmrLength #3 \tempoXoffset #0.5 R1*16
+	
 % Bars 226 to 230
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
+	
+	
+	
+	R1*7
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -255,14 +270,14 @@ musicCornoIMvtI = \relative c'' {
 	d d d2
 	d2.\> r4\!
 % Bars 271 to 275
-	R1*12
+	\tempoXoffset #-3 \mmrnDown \mmrLength #1.8 R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	R1*2
 	
 	\ni \mmrPos #4 R1 \mark \default
-	\mmrPos #4 R1
+	\tempoXoffset #2 \mmrPos #4 R1 \no
 	R1*12
 % Bars 286 to 290
 	
@@ -270,8 +285,8 @@ musicCornoIMvtI = \relative c'' {
 	
 % Bars 296 to 300
 	
-	c16-.\pp c-. c-. c-. r8. c16-. b\<-. b-. b-. b-.\! r8. b16-.
-	d-.^\crescmarkup d-. d-. d-. r8. d16-.\< d-. d-. d-. d-.\! r4
+	c16-.\pp^\solo c-. c-. c-. r8. c16-. b\<-. b-. b-. b-.\! r8. b16-.
+	d-._\crescmarkup d-. d-. d-. r8. d16-.\< d-. d-. d-. d-.\! r4
 	f8\f r r4 r2
 	ees8\f r r4 r2
 % Bars 301 to 305

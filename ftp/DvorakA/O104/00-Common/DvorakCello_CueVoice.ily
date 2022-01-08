@@ -724,11 +724,11 @@ cueVoiceCornoIMvtI = \relative c {
 	% bar 124 - 125
 	\transpose c e {
 		\relative {
-			r8.^\markup {Fl.Ob.} b''16( cis8)[ r16 fis,](  a8)[ r16 e]( fis8)[ r16 b,](
+			r8.-\tweak X-offset #-4 ^\markup {Fl.Ob.} b''16( cis8)[ r16 fis,](  a8)[ r16 e]( fis8)[ r16 b,](
 			d8) r16
 		}
 		\transpose a c { 
-			\relative { f''(^\markup {Clar.} \stemUp bes8)[ r16 d,]( g8)[ r16 bes,]( e8)[ r16 g,] \stemNeutral
+			\relative { f''(-\tweak X-offset #-1 ^\markup {Clar.} \stemUp bes8)[ r16 d,]( g8)[ r16 bes,]( e8)[ r16 g,] \stemNeutral
 			}
 		}
 	}
@@ -736,7 +736,7 @@ cueVoiceCornoIMvtI = \relative c {
 	% bar 168 - 169
 	\transpose c e {
 		\relative {
-			cis'''2^\markup {Fl.}( fis4 cis8. dis16)
+			cis'''2-\tweak X-offset #-4 ^\markup {Fl.}( fis4 cis8. dis16)
 			ais( fis ais cis) cis2.
 		}
 	}
@@ -775,7 +775,7 @@ cueVoiceCornoIMvtIII = \relative c {
 	% bar 84 - 86
 	\transpose e c {
 		\relative c''' {
-			cis4->^\markup {Viol.I.} d->
+			cis4->-\tweak X-offset #-3 ^\markup {Viol.I.} d->
 			e8 fis a16( g fis e)
 			\tuplet 5/4 4 {d( e g fis e)} d8-. cis-. 
 		}
@@ -784,7 +784,7 @@ cueVoiceCornoIMvtIII = \relative c {
 	% bar 143 - 148
 	\transpose e a, {
 		\relative c''' {
-			\stemUp g4(^\markup {Clar.I.} e)
+			\stemUp g4(-\tweak X-offset #0.5 ^\markup {Clar.I.} e)
 			g( e)
 			g8.( e16) \stemNeutral c4~
 			c8( bes4 a8)
@@ -828,9 +828,9 @@ cueVoiceCornoIIMvtI = \relative c {
 	% bar 67 - 70
 	\transpose e c {
 		\relative c'' {
-			\voiceOne r2 r4 e(^\markup {Oboe.}
+			\voiceOne r2 r4 e(-\tweak X-offset #-4 ^\markup {Oboe.}
 			a e cis b~
-			b) r r e(
+			b) r r \shape #'((0 . 2.5)(0 . -1)(0 . -1)(0 . 2.5)) Slur e(
 			a e cis a) \oneVoice
 		}
 	}
@@ -842,7 +842,7 @@ cueVoiceCornoIIMvtI = \relative c {
 	% bar 124 - 125
 	\transpose e c {
 		\relative c''' {
-			r8. d16^\markup {Fl.}( g8)[ r16 b,]( e8)[ r16 g,]( cis8)[ r16 e,](
+			r8. d16-\tweak X-offset #-3.3 ^\markup {Fl.}( g8)[ r16 b,]( e8)[ r16 g,]( cis8)[ r16 e,](
 			b'8) r16 d,(^\markup {Clar.} g8)[ r16 b,]( e8)[ r16 g,]( cis8)[ r16 e,]
 		}
 	}
@@ -901,7 +901,7 @@ cueVoiceCornoIIMvtIII = \relative c {
 	% bar 151 - 154
 	\transpose e a, {
 		\relative c''' {
-			\voiceOne g4(^\markup {Clar.} e
+			\voiceOne g4(-\tweak X-offset #-3 ^\markup {Clar.} e
 			g e) 
 			\voiceTwo g8.( e16 c4~
 			c8 bes4 a8) \oneVoice 
@@ -909,14 +909,14 @@ cueVoiceCornoIIMvtIII = \relative c {
 	}
 	s2*42
 	% bar 197 - 199
-	\voiceOne r8^\markup {Corno I} ees4.
+	\voiceOne r8-\tweak X-offset #-4 ^\markup {Corno I} ees4.
 	r8 ees4.
 	ees8 ees r4 \oneVoice
 	s2*50
 	% bar 250 - 253
 	\transpose e c {
 		\relative c' {
-			cis4^\markup {Vcello.Solo.} dis
+			cis4-\tweak X-offset #-3 ^\markup {Vcello.Solo.} dis
 			e8 fis a16( g fis e)
 			\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
 			b4 r
@@ -926,7 +926,7 @@ cueVoiceCornoIIMvtIII = \relative c {
 	% bar 297 - 299
 	\transpose e c {
 		\relative c'' {
-			\tuplet 3/2 4 {g8^\markup {Oboe.} g g  g g g
+			\tuplet 3/2 4 {g8-\tweak X-offset #-5 ^\markup {Oboe.} g g  g g g
 			g g g   g g g
 			g g g   g g g }
 		}
@@ -950,7 +950,7 @@ cueVoiceCornoIIMvtIII = \relative c {
 	% bar 473 - 476
 	\transpose e c {
 		\relative c' {
-			\tuplet 3/2 4 {fis8^\markup {Vcello.Solo.} b( gis fis dis' cis)}
+			\tuplet 3/2 4 {fis8-\tweak X-offset #-2 ^\markup {Vcello.Solo.} b( gis fis dis' cis)}
 			b( fis' e dis)
 			b'2\trill
 			b\trill
@@ -1016,14 +1016,14 @@ cueVoiceCornoIIIMvtI = \relative c {
 	% bar 341
 	\transpose d e {
 		\relative c'' {
-			\voiceOne r4 r8^\markup {Cor.I.II.} c cis d ees c \oneVoice
+			\voiceOne r4 r8-\tweak X-offset #-3.5 ^\markup {Cor.I.II.} c cis d ees c \oneVoice
 		}
 	}
 }
 cueVoiceCornoIIIMvtII = \relative c {
 	s2.*86
 	% bar 87 - 91
-	\voiceOne des''8.(^\markup {Vcello.Solo.} c16) des8.( c16) des8.( c16) 
+	\voiceOne des''8.(-\tweak X-offset #-4 ^\markup {\center-column { \lower #1.5 "Vcello." "Solo." } } c16) des8.( c16) des8.( c16) 
 	c8.( b16) c8.( b16) c8.( b16) 
 	b8.( ais16) b8.( ais16) ais8.( gis16)
 	gis8.( fis16) gis8.( fis16) g8.( fis16)
@@ -1054,7 +1054,7 @@ cueVoiceCornoIIIMvtIII = \relative c {
 	% bar 314
 	\transpose e c {
 		\relative c' {
-			\tuplet 3/2 4 {d8(-^^\markup {Vcello Solo.} c!-^ a)-^ } \stemDown fis16(-^ d-^ c!-^ a)-^ \stemNeutral
+			\tuplet 3/2 4 {d8(-^-\tweak X-offset #-3 _\markup {Vcello Solo.} c!-^ a)-^ } \stemDown fis16(-^ d-^ c!-^ a)-^ \stemNeutral
 		}
 	}
 	s2*62
@@ -1081,7 +1081,7 @@ cueVoiceCornoIIIMvtIII = \relative c {
 	% bar 477 - 480
 	\transpose e a {
 		\relative c'' {
-			d4.(^\markup {Clar.} e16 f!)
+			d4.(-\tweak X-offset #-4 ^\markup {Clar.} e16 f!)
 			d2
 			d4.( e16 f)
 			d2

@@ -67,8 +67,8 @@ musicCornoIMvtI = \relative c'' {
 	
 % Bars 56 to 60
 	\partCombineApart c2.(\pp cis4)
-	d2(~^\moltoespressivo d8 c! bes g
-	bes2 f4) bes(\<
+	d2(~^\moltoespressivo d8 c! bes g)
+	bes2( f4) bes(\<
 	c d f\> d8 bes)\!
 	c2.(_\dimmarkup cis4)
 % Bars 61 to 65
@@ -84,14 +84,15 @@ musicCornoIMvtI = \relative c'' {
 	d'1\p
 	d2. d4
 	ees1_\crescmarkup \mark \default
-% Bars 76 to 80
 	f4\ff r8 f g-. f-. f-. r
+% Bars 76 to 80
 	f4 r8 f ges-. f-. f-. r
 	f4-> f8 f d c c r
 	f4-> f8 f d c c r
 	d r r4 r2
-% Bars 81 to 85
 	R1*12
+% Bars 81 to 85
+	
 % Bars 86 to 90
 	
 % Bars 91 to 95
@@ -198,7 +199,7 @@ musicCornoIMvtI = \relative c'' {
 % Bars 211 to 215
 	
 	
-	ees2-^\p\< d!4-. des\!
+	ees2-^\p\< d!4-. des-.\!
 	\tuplet 6/4 2 {c8\mf[ c c c c c]  c[ c c c c c] 
 	c_\crescmarkup[ c c c c c]   c[ c c c c c] }
 % Bars 216 to 220

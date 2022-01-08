@@ -27,7 +27,7 @@ musicCornoIIIMvtI = \relative c'' {
 % Bars 21 to 25
 	b8 r r4 r2
 	R1 \mark \default
-	a2.->\ff a4-.
+	\tempoXoffset #0.5 a2.->\ff a4-.
 	c,-. b-. c2~
 	c4 r r2
 % Bars 26 to 30
@@ -70,17 +70,18 @@ musicCornoIIIMvtI = \relative c'' {
 	
 	g2.\fz\< g4\!
 	a2->_\crescmarkup b-> \mark \default
-	c4\ff r8 c c-. c-. c-. r
+	\tempoXoffset #0.5 c4\ff r8 c c-. c-. c-. r
 % Bars 76 to 80
 	c4 r8 c c-. c-. c-. r
 	g4-> g8 g g g g r
 	g4-> g8 g g g g r
 	g r r4 r2
-	R1*30
+	R1*7
 % Bars 81 to 85
 	
 % Bars 86 to 90
 	
+	\mmrLength #3 R1*23
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -106,15 +107,19 @@ musicCornoIIIMvtI = \relative c'' {
 % Bars 126 to 130
 	e8\f r r4 r2
 	R1 \mark \default
-	a1-^\fp
-	f-^\fp
-	a-^\fp
+	a1^^\fp
+	f^^\fp
+	a^^\fp
 % Bars 131 to 135
-	f-^\fp
+	f^^\fp
 	c'4\fz r r2
-	R1*19
+	R1*5
 % Bars 136 to 140
 	
+	
+	R1*2
+	
+	\mmrLength #3 R1*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -127,26 +132,26 @@ musicCornoIIIMvtI = \relative c'' {
 	
 % Bars 156 to 160
 	g1\p\> \mark \default
-	c2.\! r4
-	R1*10
+	\tempoXoffset #0.5 c2.\! r4
+	\mmrLength #3 R1*10
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	
 	
-	\ni \mmrPos #-2 R1
-	\mmrPos #-2 R \no
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	R1*4
 % Bars 171 to 175
 	
 	
 	
-	r4 ees8\f\<-. d-. ees-. d-. ees-. d-.\!
+	r4 ees8\f\<-.^\solo d-. ees-. d-. ees-. d-.\!
 	ees->\fz r r4 r2 \mark \default
 % Bars 176 to 180
-	\tuplet 3/2 4 {c8\mf\<-^ g, g g c c c e e e g g\!}
+	\tuplet 3/2 4 {c8\mf-\tweak rotation #'(4 -1 0) \<-^ g, g g c c c e e e g g\!}
 	g2\fz\> f\p
-	\tuplet 3/2 4 {e8 g, g g\< c c c e e e g g\!}
+	\tuplet 3/2 4 {e8 g, g g-\tweak rotation #'(3 -1 0) \< c c c e e e g g\!}
 	g2\fz\> f\p
 	R1*3
 % Bars 181 to 185
@@ -174,7 +179,7 @@ musicCornoIIIMvtI = \relative c'' {
 	b8\fz r r4 r2
 	R1
 % Bars 201 to 205
-	r2 r4 r8 g'\pp~
+	r2 r4 r8 g'\pp~^\solo
 	g f4 d b g8~
 	g f4 d b g8
 	c,1~
@@ -196,7 +201,7 @@ musicCornoIIIMvtI = \relative c'' {
 	cis\p\>~
 	cis8\! r r4 r2
 	R1 \mark \default
-	R1*24
+	\tempoXoffset #0.7 R1*16
 	
 % Bars 226 to 230
 	
@@ -206,6 +211,8 @@ musicCornoIIIMvtI = \relative c'' {
 	
 % Bars 241 to 245
 	
+	
+	\mmrnDown R1*8
 % Bars 246 to 250
 	
 	\mark \default
@@ -233,14 +240,15 @@ musicCornoIIIMvtI = \relative c'' {
 	gis gis a2
 	gis2.\> r4\!
 % Bars 271 to 275
-	R1*13
+	\mmrnDown R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\mmrLength #2 R1*3
 	
 	\mark \default
-	R1*15
+	\tempoXoffset #0.8 R1
+	\mmrLength #2.5 R1*14
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -249,12 +257,12 @@ musicCornoIIIMvtI = \relative c'' {
 	
 	
 	
-	r4 \tuplet 3/2 4 {ais8-.\p b-. ais-.} ais-. r \tuplet 3/2 4 {ais-. b-. ais-.}
+	r4 \tuplet 3/2 4 {ais8-.\p^\solo b-. ais-.} ais-. r \tuplet 3/2 4 {ais-. b-. ais-.}
 	b\f r \tuplet 3/2 4 {b-. c!-. b-.} b r \tuplet 3/2 4 {b-. c-. b-.}
 % Bars 301 to 305
 	c\f r c-> b-. c-> b-. c-> b-. 
 	c\fz r r4 r2 \mark \default
-	r4 \tuplet 3/2 4 {r8 a,\f\< a a cis cis cis e e\!}
+	r4 \tuplet 3/2 4 {r8 a,\f-\tweak rotation #'(3 -1 0) \< a a cis cis cis e e\!}
 	e2(\> d\!)
 	cis8\brack\p r \tuplet 3/2 4 {r8 a\< a a cis cis cis e e\!}
 % Bars 306 to 310
@@ -273,15 +281,18 @@ musicCornoIIIMvtI = \relative c'' {
 	r8 b\fz r4 r8 b\fz r4
 	b8\fz r r4 r2
 	r2 r4 r8\fermata b
-	a1-^\ff 
+	a1^^\ff 
 	gis2-^ cis-^
 % Bars 321 to 325
 	r8 fis, r gis r a r a
 	cis2\fz d8 r b r \mark \default
 	a r r4 r2
-	R1*17
+	R1*5
 % Bars 326 to 330
 	
+	
+	
+	\mmrLength #4.5 R1*12
 % Bars 331 to 335
 	
 % Bars 336 to 340

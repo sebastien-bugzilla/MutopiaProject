@@ -84,14 +84,15 @@ musicCornoIIMvtI = \relative c' {
 	bes1\<
 	bes2.\fz\< bes4\!
 	g2 a-> \mark \default
-% Bars 76 to 80
 	d4\ff r8 d ees-. d-. d-. r
+% Bars 76 to 80
 	d4 r8 d ees-. d-. d-. r
 	f,4-> f8 f bes a a r
 	f4-> f8 f bes a a r
 	bes r r4 r2
-% Bars 81 to 85
 	R1*12
+% Bars 81 to 85
+	
 % Bars 86 to 90
 	
 % Bars 91 to 95
@@ -198,7 +199,7 @@ musicCornoIIMvtI = \relative c' {
 % Bars 211 to 215
 	
 	
-	ees'2-^\p\< d!4-. des\!
+	ees'2-^\p\< d!4-. des-.\!
 	\tuplet 6/4 2 {c8\mf[ c c c c c]  c[ c c c c c] 
 	c_\crescmarkup[ c c c c c]   c[ c c c c c] }
 % Bars 216 to 220

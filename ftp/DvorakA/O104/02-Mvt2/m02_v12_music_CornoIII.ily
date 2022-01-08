@@ -16,24 +16,28 @@ musicCornoIIIMvtII = \relative c' {
 	
 	
 	\mark \default
-	R2.*20
+	R2.*15
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
+	
+	
+	\mmrLength #2.5 \tempoOsp R2.*3
+	
 % Bars 31 to 35
 	
+	\tempoOsp R2.*2
 	
-	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*4
 % Bars 36 to 40
 	
 	
 	\bar "||" \key a \minor
-	R2.*11
+	\mmrLength #1.5 \tempoXoffset #-2.8 R2.*11
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -41,17 +45,18 @@ musicCornoIIIMvtII = \relative c' {
 	
 	
 	\mark \default
-	R2.*15
+	R2.*7
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	\mmrnDown \tempoXoffset #-1 R2.*6
 % Bars 61 to 65
 	
 	
-	
+	\mmrnDown \mmrLength #7 \tempoXoffset #0.5 R2.*2
 	\bar "||" \key c \major \mark \default
-	R2.*18
+	\mmrLength #2.8 \tempoXoffset #-1 R2.*18
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -73,7 +78,7 @@ musicCornoIIIMvtII = \relative c' {
 	d2.\p~
 	d_\dimmarkup~
 	d\> \mark \default
-	g2\p g8 e
+	\tempoXoffset #0.5 g2\p g8 e
 % Bars 96 to 100
 	g4 r8 g(--\< b-- g--)\!
 	d4 \tuplet 3/2 4 {e8\> e e} e4
@@ -83,7 +88,7 @@ musicCornoIIIMvtII = \relative c' {
 % Bars 101 to 105
 	g4->\< b-> b->\!
 	c2-^\ff\> c4\!
-	b( a_\dimmarkup fis)
+	\once \stemUp b( a_\dimmarkup fis)
 	g2(\p\> ees4)
 	d2_\dimD( cis4
 % Bars 106 to 110
@@ -97,7 +102,7 @@ musicCornoIIIMvtII = \relative c' {
 	
 	
 	
-	d2.\mf_\dimmarkup~
+	d2._\mfdim~
 % Bars 121 to 125
 	d
 	d\<
@@ -107,7 +112,7 @@ musicCornoIIIMvtII = \relative c' {
 % Bars 126 to 130
 	d4\p r r
 	R2.
-	R\fermata \mark \default
+	\once \ni R\fermata \mark \default
 	g,2.\pp~
 	g~
 % Bars 131 to 135
@@ -115,7 +120,7 @@ musicCornoIIIMvtII = \relative c' {
 	g~
 	g~
 	g8 r r4 r
-	R2.\fermata
+	\once \ni R2.\fermata
 % Bars 136 to 140
 	R2.*5
 % Bars 141 to 145
@@ -127,7 +132,7 @@ musicCornoIIIMvtII = \relative c' {
 % Bars 146 to 150
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*2
 	
 % Bars 151 to 155
@@ -139,5 +144,5 @@ musicCornoIIIMvtII = \relative c' {
 % Bars 161 to 165
 	
 % Bar 166
-	R2.\fermata \bar "|."
+	\once \ni R2.\fermata \bar "|."
 }

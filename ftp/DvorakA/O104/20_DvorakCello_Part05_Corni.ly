@@ -20,6 +20,7 @@
 \include "./00-Common/DvorakCello_OptionParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
+%\include "./00-Common/DvorakCello_Format_temp.ly"
 \include "./00-Common/DvorakCello_Format_Part05_Corni.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
 \include "./01-Mvt1/m01_v10_music_CornoI.ily"
@@ -147,7 +148,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -175,7 +176,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -231,7 +232,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -259,7 +260,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4

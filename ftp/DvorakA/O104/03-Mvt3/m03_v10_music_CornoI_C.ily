@@ -134,7 +134,7 @@ musicCornoIMvtIII = \relative c' {
 	d4\! \acciaccatura d8 ees4(
 % Bars 176 to 180
 	\acciaccatura cis8 d4 \acciaccatura b8 c4
-	f!8) r r4 \partCombineAutomatic
+	bes8) r r4 \partCombineAutomatic
 	R2*5
 	
 	

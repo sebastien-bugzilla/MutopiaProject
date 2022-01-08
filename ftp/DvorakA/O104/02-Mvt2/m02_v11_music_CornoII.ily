@@ -18,8 +18,8 @@ musicCornoIIMvtII = \relative c' {
 	R2.*2
 % Bars 11 to 15
 	
-	r4 r c\pp\<~
-	c2.\fp\> \mark \default
+	r4 r \hairpinLength #6 \hairpinShorten #'(-0.5 . -0.5) c\pp\<~
+	\hairpinLength #6 \hairpinShorten #'(-0.5 . -0.5) c2.\fp\> \mark \default
 	c2\pp~ c8 r^\mutainf \transposition f
 	R2.*19
 % Bars 16 to 20
@@ -31,7 +31,7 @@ musicCornoIIMvtII = \relative c' {
 % Bars 31 to 35
 	
 	
-	R2.\fermata
+	\once \ni R2.\fermata
 	\mark \default
 	R2.*4
 % Bars 36 to 40
@@ -51,17 +51,18 @@ musicCornoIIMvtII = \relative c' {
 	
 	
 	\mark \default
-	R2.*15
+	R2.*7
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	R2.*6
 % Bars 61 to 65
 	
 	
-	
+	\tempoXoffset #-2 R2.*2
 	\bar "||" \key c \major \mark \default
-	g,2\f g4
+	\tempoXoffset #1 g,2\f g4
 % Bars 66 to 70
 	g2 d8. d16
 	d4 d' d,
@@ -83,7 +84,7 @@ musicCornoIIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*9
+	\tempoXoffset #1 R2.*9
 	
 	
 % Bars 86 to 90
@@ -103,31 +104,41 @@ musicCornoIIMvtII = \relative c' {
 % Bars 101 to 105
 	g4\<-> a-> b->\!
 	b2-^\ff\> b4\!
-	b g2_\dimmarkup~
+	b g2-\tweak X-offset #-1 _\dimmarkup~
 	g4(\p fis)\> e~
 	e\! d2\>
 % Bars 106 to 110
 	cis2.\pp\fermata
 	d4 r r 
-	R2.*19
+	R2.*12
+	
+	
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
+	
+	
+	
+	\mmrnDown R2.*4
 % Bars 121 to 125
+	
+	
+	
+	\mmrnDown R2.*3
 	
 % Bars 126 to 130
 	
 	\ni \cueClef bass \mmrPos #-4 R2. 
 	\mmrPos #-4 R2._\fermata \no \cueClefUnset \mark \default
-	d2.~
+	\tempoXoffset #1 d2.~\pp
 	d~
 % Bars 131 to 135
 	d~
 	d~
 	d~
 	d8 r r4 r
-	R2.\fermata
+	\once \ni R2.\fermata
 % Bars 136 to 140
 	R2.*12
 % Bars 141 to 145
@@ -135,7 +146,7 @@ musicCornoIIMvtII = \relative c' {
 % Bars 146 to 150
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*17
 % Bars 151 to 155
 	
@@ -144,5 +155,5 @@ musicCornoIIMvtII = \relative c' {
 % Bars 161 to 165
 	
 % Bar 166
-	R2.\fermata \bar "|."
+	\once \ni R2.\fermata \bar "|."
 }

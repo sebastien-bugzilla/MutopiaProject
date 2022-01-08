@@ -29,15 +29,22 @@ musicCornoIMvtII = \relative c'' {
 	
 	r4 c2\p~
 % Bars 21 to 25
-	c4 r r^\mutainf \transposition f
-	R2.*12
+	c4 r^\mutainf r \transposition f
+	R2.*7
+	
+	
+	
 % Bars 26 to 30
+	
+	
+	
+	\mmrLength #2 R2.*3
 	
 % Bars 31 to 35
 	
+	\mmrLength #4 R2.*2
 	
-	R2.\fermata
-	\mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*4
 % Bars 36 to 40
 	
@@ -66,13 +73,13 @@ musicCornoIMvtII = \relative c'' {
 % Bars 56 to 60
 	c4( des8\> c ees des
 	c4)\! r^\mutaine r \transposition e
-	R2.*7
+	\mmrnDown R2.*5
 % Bars 61 to 65
 	
 	
-	
+	\tempoXoffset #-1 \mmrLength #3 \mmrnDown R2.*2
 	\bar "||" \key c \major \mark \default
-	g2\f g4
+	\tempoXoffset #0.8 g2\f g4
 % Bars 66 to 70
 	g2 d8. d16
 	d4 d' d,
@@ -91,7 +98,7 @@ musicCornoIMvtII = \relative c'' {
 % Bars 81 to 85
 	r4 d'4.(\p\< dis8)
 	e4( f)\! e8.( d!16 \mark \default
-	c8) r r4 r
+	\tempoXoffset #0.8 c8) r r4 r
 	r d16(\p\<-- e-- f-- e--)\! d4(\>
 	c8)\! r r4 r
 % Bars 86 to 90
@@ -103,7 +110,7 @@ musicCornoIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	a2\p b8 g
+	\tempoXoffset #1 a2_\psolo b8 g
 % Bars 96 to 100
 	a4 r8 a(--\< d-- a--)\!
 	fis4 \tuplet 3/2 4 {fis8\> fis fis} a( g)
@@ -114,22 +121,30 @@ musicCornoIMvtII = \relative c'' {
 	b4\<-> cis-> d->\!
 	fis2-^\ff\> e4\!
 	d( cis_\dimmarkup b)
-	b(\p a4.\> g8)
-	fis4\! fis\> fis
+	b(-\tweak X-offset #0.4 \p\> a4. g8)\!
+	fis4\> fis fis
 % Bars 106 to 110
 	fis2\pp\fermata e4
 	d r r 
-	R2.*20
+	R2.*12
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
+	
+	
+	
+	\tempoXoffset #-1 \mmrnDown R2.*4
 % Bars 121 to 125
+	
+	
+	
+	\mmrnDown R2.*4
 	
 % Bars 126 to 130
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*6
 	
 % Bars 131 to 135
@@ -137,7 +152,7 @@ musicCornoIMvtII = \relative c'' {
 	
 	
 	
-	R2.\fermata
+	\once \ni R2.\fermata
 % Bars 136 to 140
 	R2.*12
 % Bars 141 to 145
@@ -145,7 +160,7 @@ musicCornoIMvtII = \relative c'' {
 % Bars 146 to 150
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*17
 % Bars 151 to 155
 	
@@ -154,5 +169,5 @@ musicCornoIMvtII = \relative c'' {
 % Bars 161 to 165
 	
 % Bar 166
-	R2.\fermata \bar "|."
+	\once \ni R2.\fermata \bar "|."
 }

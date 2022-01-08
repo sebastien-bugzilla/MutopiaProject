@@ -57,7 +57,7 @@ musicCornoIIMvtI = \relative c' {
 	
 	
 	
-	c2\p\< cis\fz
+	\hairpinShorten #'(-0.5 . -0.5) c2\p\< cis\fz
 	d4(\> ees2.)~
 % Bars 51 to 55
 	ees4\pp r r2
@@ -80,16 +80,19 @@ musicCornoIIMvtI = \relative c' {
 	bes1\<
 	bes2.\fz\< bes4\!
 	g2_\crescmarkup a-> \mark \default
+	\tempoXoffset #1 d4\ff r8 d ees-. d-. d-. r
 % Bars 76 to 80
-	d4\ff r8 d ees-. d-. d-. r
 	d4 r8 d ees-. d-. d-. r
 	f,4-> f8 f bes a a r
 	f4-> f8 f bes a a r
 	bes r r4 r2
+	R1*7
 % Bars 81 to 85
-	R1*28
+	
 % Bars 86 to 90
 	
+	
+	\mmrLength #3 R1*21
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -101,7 +104,7 @@ musicCornoIIMvtI = \relative c' {
 	
 	\ni \mmrPos #-2 R1
 	\mmrPos #-2 R \no \mark \default
-	g8\fz r r4 r2
+	\tempoXoffset #1 g8\fz r r4 r2
 % Bars 111 to 115
 	R1*13
 % Bars 116 to 120
@@ -115,22 +118,30 @@ musicCornoIIMvtI = \relative c' {
 % Bars 126 to 130
 	a8\f r r4 r2
 	R1 \mark \default
-	g1-^\fp
+	g1^^\fp
 	bes-^\fp
-	g-^\fp
+	g^^\fp
 % Bars 131 to 135
 	bes-^\fp
 	g4\fz r r2
-	R1*24
+	R1*5
 	
 	
 % Bars 136 to 140
 	
+	
+	R1*2
+	
+	R1*14
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
+	
+	
+	
+	\mmrLength #2.5 \tempoXoffset #-1 R1*3
 	
 % Bars 156 to 160
 	\mark \default
@@ -154,16 +165,16 @@ musicCornoIIMvtI = \relative c' {
 	r4 g8\f\<-. fis-. g-. fis-. g-. fis-.\!
 	g->\fz r r4 r2 \mark \default
 % Bars 176 to 180
-	\tuplet 3/2 4 {d'8-^\mf\< bes, bes bes d d d f f f bes bes\! }
-	a2\fz\> f\p
-	\tuplet 3/2 4 {f8 bes, bes bes\< d d d f f f bes bes\!}
-	a2\fz\> f\p
+	\tuplet 3/2 4 {d'8-^\mf-\tweak rotation #'(3 -1 0) \< bes, bes bes d d d f f f bes bes\! }
+	\hairpinShorten #'(-0.5 . -0.5) \hairpinLength #6 a2\fz\> f\p
+	\tuplet 3/2 4 {f8 bes, bes bes-\tweak rotation #'(2 -1 0) \< d d d f f f bes bes\!}
+	\hairpinShorten #'(-0.5 . -0.5) \hairpinLength #6 a2\fz\> f\p
 	aes4(\fp g) aes(\fz g)
 % Bars 181 to 185
 	ges(\fz f) ges(\fz f)
 	aes(\< g!) bes( a)\!
 	c2\fz r
-	r4 fis,,2.\f
+	r4 fis,,2.-\tweak X-offset #1 \f
 	b2 b4-. b-.
 % Bars 186 to 190
 	c8 r r4 r2
@@ -172,7 +183,7 @@ musicCornoIIMvtI = \relative c' {
 	r8 c\fz r4 r8 c\brack\fz r4
 	c8\brack\fz r r4 r2
 % Bars 191 to 195
-	r2 r4 r8\fermata c\f \mark \default
+	\tempoXoffset #-1 r2 r4 r8\fermata c\f \mark \default
 	d1-^
 	d-^
 	c-^
@@ -180,7 +191,7 @@ musicCornoIIMvtI = \relative c' {
 % Bars 196 to 200
 	d1\fz
 	d\fz
-	<< c\fz {s4\> s s s\!} >>
+	c\fz\>
 	c8\fz r r4 r2
 	R1*4
 % Bars 201 to 205
@@ -198,26 +209,30 @@ musicCornoIIMvtI = \relative c' {
 % Bars 211 to 215
 	
 	
-	ees'2-^\p\< d!4-. des\!
-	\tuplet 6/4 2 {c8\mf[ c c c c c]  c[ c c c c c] 
-	c_\crescmarkup[ c c c c c]   c[ c c c c c] }
+	ees'2-^\p\< d!4-. des-.\!
+	\tuplet 3/2 4 {\once \tupletUp c8\mf c c c c c  c c c c c c 
+	\once \tupletUp c_\crescmarkup c c c c c   c c c c c c }
 % Bars 216 to 220
 	a!1\f
-	g->\fz
+	g^>\fz
 	fis4 r r2
-	R1*5
+	R1*3
 	
 % Bars 221 to 225
 	
-	
+	R1*2
 	\mark \default
-	R1*24
+	\mmrLength #3 \tempoXoffset #0.3 R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
+	
+	
+	
+	\mmrnDown R1*8
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -247,15 +262,15 @@ musicCornoIIMvtI = \relative c' {
 	a a b2
 	a2.\> r4\!
 % Bars 271 to 275
-	R1*12
+	\tempoXoffset #-1 \mmrLength #2 \mmrnDown R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\mmrnDown R1*2
 	
 	d,1\p\> \mark \default
-	g2.\! r4
-	R1*12
+	\tempoXoffset #2 g2.\! r4
+	\mmrLength #2.5 \mmrnDown R1*12
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -269,15 +284,15 @@ musicCornoIIMvtI = \relative c' {
 % Bars 301 to 305
 	bes8\f r fes-> ees-. fes-> ees-. fes-> ees-. 
 	fes\fz r r4 r2 \mark \default
-	\tuplet 3/2 4 {r8 g,\f g g\< b b b d d d g g\!}
+	\tuplet 3/2 4 {r8 g,\f g g-\tweak rotation #'(3 -1 0) \< b b b d d d g g\!}
 	fis2\>( d)\!
-	\tuplet 3/2 4 {d8\brack\p\noBeam g, g g\< b b b d d d g g\!}
+	\tuplet 3/2 4 {d8\brack\p\noBeam g, g g-\tweak rotation #'(3 -1 0) \< b b b d d d g g\!}
 % Bars 306 to 310
-	fis2\fz\>( d)\!
+	\hairpinShorten #'(0 . -1) fis2\fz\>( d)\!
 	R1*3
 	
 	
-	g2.\f-^ r4
+	g2.\f^^ r4
 % Bars 311 to 315
 	R1
 	aes2\f aes4-. aes-.
@@ -302,11 +317,11 @@ musicCornoIIMvtI = \relative c' {
 % Bars 336 to 340
 	
 	
-	\ni \cueClef tenor \mmrPos #-4 R1 \cueClefUnset \no
+	\ni \cueClef tenor \mmrPos #-4 R1 \no
 	R1*2
 	
 % Bars 341 to 345
-	r4 r8 a\f-. ais-. b-. c!-. a-.
+	\cueClefUnset r4 r8 a\f-. ais-. b-. c!-. a-.
 	b1\ff-^
 	b-^
 	b-^

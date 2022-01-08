@@ -36,8 +36,8 @@ musicCornoIMvtII = \relative c'' {
 % Bars 31 to 35
 	
 	
-	R2.\fermata
-	\mark \default
+	
+	R2.\fermata \mark \default
 	R2.*4
 % Bars 36 to 40
 	
