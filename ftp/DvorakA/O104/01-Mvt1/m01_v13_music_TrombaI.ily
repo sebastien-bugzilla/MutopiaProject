@@ -23,7 +23,7 @@ musicTrombaIMvtI = \relative c'' {
 % Bars 21 to 25
 	\mmrPos #-4 R
 	\mmrPos #-6 R \no \mark \default
-	g2\ff g4. g16 g
+	\tempoXoffset #1 g2\ff g4. g16 g
 	g2 g4. g16 g
 	g4 r r2
 % Bars 26 to 30
@@ -57,7 +57,7 @@ musicTrombaIMvtI = \relative c'' {
 	\mmrPos #-2 R
 	\mmrPos #-2 R \no
 	g4.\mf \tuplet 3/2 4 {g16_\crescmarkup g g} g4 g \mark \default
-	c\ff r8 c c-. c-. c-. r
+	\tempoXoffset #1 c\ff r8 c c-. c-. c-. r
 % Bars 76 to 80
 	c4 r8 c c-. c-. c-. r
 	g4 g8 g g g g r8
@@ -66,9 +66,10 @@ musicTrombaIMvtI = \relative c'' {
 	c4_\dimD\> c8 c c4 c8 c\!
 % Bars 81 to 85
 	c4\p r4^\mutaine r2 \transposition e
-	R1*28
+	R1*5
 % Bars 86 to 90
 	
+	\mmrLength #2.5 R1*23
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -90,20 +91,29 @@ musicTrombaIMvtI = \relative c'' {
 % Bars 126 to 130
 	
 	\mark \default
-	R1*29
+	R1*10
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
+	
+	R1*2
+	
+	R1*14
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	
+	
+	\mmrLength #3 R1*3
+	
 % Bars 156 to 160
 	\mark \default
-	R1*19
+	\tempoXoffset #1 R1*1
+	\mmrLength #3 \tempoXoffset #-3 R1*18
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -122,16 +132,16 @@ musicTrombaIMvtI = \relative c'' {
 	
 	
 	
-	\ni \mmrPos #-6 R1
-	\mmrPos #-6 R
+	\ni \mmrPos #-7 R1
+	\mmrPos #-7 R
 % Bars 191 to 195
-	\mmrPos #-6 R1_\fermata \no \mark \default
-	bes4\f d,8 f d8. bes16 f'4-^~
+	\mmrPos #-7 R1_\fermata \no \mark \default
+	\tempoXoffset #1 bes4\f d,8 f d8. bes16 f'4-^~
 	f2~ f8 r r4
 	c4-> e!8 g c,8. c16 c'4-^~
 	c2 r4 f,
 % Bars 196 to 200
-	d8.->\brack\f f16 f2 r4
+	d8.^>\brack\f f16 f2 r4
 	d8.-> f16 f2 r4
 	e!8.-> g16 c2.->\>~
 	c8\! r r4 r2
@@ -142,20 +152,24 @@ musicTrombaIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*15
+	R1*13
 % Bars 211 to 215
 	
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
-	
+	\mmrLength #6 R1*2
 	\mark \default
-	R1*24
+	\mmrLength #3.2 \tempoXoffset #0.5 R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
 	
+	
+	
+	
+	\mmrLength #2 R1*8
 % Bars 236 to 240
 	
 % Bars 241 to 245
@@ -185,14 +199,15 @@ musicTrombaIMvtI = \relative c'' {
 	d'8. d,16 d4. b8-. d-. g-.
 	d4\> d8. d16 d4\! r
 % Bars 271 to 275
-	R1*13
+	R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\mmrLength #2 R1*3
 	
 	\mark \default
-	R1*19
+	R1*1
+	\mmrLength #3.5 R1*18
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -210,26 +225,31 @@ musicTrombaIMvtI = \relative c'' {
 % Bars 316 to 320
 	
 	\ni \mmrPos #-4 R1
-	\mmrPos #-8 R_\fermata \no
+	\mmrPos #-9 R_\fermata \no
 	g2.\ff g8. g16
 	d2 \tuplet 3/2 2 {e4-^ fis-^ g-^}
 % Bars 321 to 325
-	g8-. b-. d2-^ \tuplet 3/2 4 {e8\< d c\!}
+	g8-. b-. d2-^ \once \tupletUp \tuplet 3/2 4 {e8\< d c\!}
 	f!2\fz \tuplet 3/2 4 {e8-. c-. a-.} d-. d,-. \mark \default
 	g r r4 r2
-	R1*18
+	R1*5
+	
 % Bars 326 to 330
+	
+	
+	
+	\mmrLength #4 R1*12
 	
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	
-	\ni \mmrPos #6 R1
-	\mmrPos #4 R
-	\mmrPos #6 R
-	\mmrPos #6 R \no
+	R1
+	\ni \mmrPos #-6 R1
+	\mmrPos #-9 R
+	\mmrPos #-8 R
+	\mmrPos #-6 R \no
 % Bars 346 to 350
 	g4.\ff a16 b g2
 	g4. a16 b g2

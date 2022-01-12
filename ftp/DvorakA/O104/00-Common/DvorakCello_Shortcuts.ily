@@ -355,9 +355,13 @@ mmrMinLength = #(define-music-function
 	#}
 )
 
+mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
+
 mmrnDown = {
 	\once \override MultiMeasureRestNumber.direction = #-1 
 }
+
+tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
 hairpinLength = #(define-music-function
 	(length)

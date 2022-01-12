@@ -27,7 +27,7 @@ musicTrombaIMvtIII = \relative c'' {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-8 R \no
+	\mmrPos #-7 R \no
 % Bars 41 to 45
 	g8\f g16 g g8 r
 	g g16 g g8 r
@@ -101,17 +101,21 @@ musicTrombaIMvtIII = \relative c'' {
 % Bars 141 to 145
 	
 	\mark \default
-	R2*24
+	R2*14
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
 % Bars 156 to 160
 	
+	\tempoOsp \mmrnDown R2*2
+	
+	\tempoOsp \mmrnDown R2*7
+	
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	\mark \default
+	\mmrnDown R2 \mark \default
 	R2*32
 % Bars 171 to 175
 	
@@ -133,7 +137,7 @@ musicTrombaIMvtIII = \relative c'' {
 	\mmrPos #-8 R
 	\mmrPos #-7 R \no
 	r4 r8 f,8\ff \mark \default
-	f8. f16 f8 r
+	\tempoXoffset #1 f8. f16 f8 r
 	bes8. f16 f8 r
 % Bars 206 to 210
 	R2*8
@@ -152,7 +156,7 @@ musicTrombaIMvtIII = \relative c'' {
 % Bars 221 to 225
 	g4 g8 g \mark \default
 	d' r r4
-	R2*27
+	R2*19
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -161,8 +165,9 @@ musicTrombaIMvtIII = \relative c'' {
 	
 % Bars 241 to 245
 	
+	\mmrLength #3 R2*4
 % Bars 246 to 250
-	
+	\mmrLength #4 \tempoXoffset #-1.5 R2*4
 	
 	
 	
@@ -186,33 +191,38 @@ musicTrombaIMvtIII = \relative c'' {
 	g8 r r4\!
 	g8\p r r4
 % Bars 266 to 270
-	R2*15
+	\mmrCondens R2*7
 % Bars 271 to 275
 	
+	
+	R2*4
 % Bars 276 to 280
 	
+	\mmrLength #4 R2*2
 	
-	
-	
+	R2*2
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*34
+	R2*16
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
+	\tempoOsp \tempoXoffset #-2 R2*4
 % Bars 301 to 305
+	R2*2
 	
+	\mmrLength #2 R2*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 	
 	
-	\mark \default
-	R2*16
+	R2 \mark \default
+	\tempoXoffset #0.5 R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -224,11 +234,15 @@ musicTrombaIMvtIII = \relative c'' {
 	
 	\mark \default
 % Bars 331 to 335
-	R2*16
+	\tempoXoffset #1 R2*14
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
+	
+	
+	
+	\mmrnDown \tempoOsp R2*2
 % Bars 346 to 350
 	\bar "||" \key c \major
 	R2*30
@@ -267,7 +281,7 @@ musicTrombaIMvtIII = \relative c'' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*4
+	\mmrLength #2 R2*4
 % Bars 416 to 420
 	
 	\ni \mmrPos #-4 R2
@@ -279,28 +293,29 @@ musicTrombaIMvtIII = \relative c'' {
 	g->
 	a->
 	b4-> a->
-	d2_\fzdim->~
+	d2-\tweak X-offset #-2 _\fzdim->~
 % Bars 426 to 430
 	d~\>
 	d~\p
 	d4. r8
-	R2*16
+	R2*8
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
+	\mmrLength #2 \tempoXoffset #-1 R2*7
 % Bars 441 to 445
 	
 	
 	
-	
+	R2
 	\ni \mmrPos #-4 R2
 % Bars 446 to 450
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no \mark \default
-	r4 d,^\soleconsord\pp
-	g \tuplet 3/2 4 {a8--( b-- a--)}
+	\tempoXoffset #2.5 r4 d,^\soleconsord\pp
+	g \once \tupletDown \tuplet 3/2 4 {a8--( b-- a--)}
 % Bars 451 to 455
 	g4 d
 	g \tuplet 3/2 4 {a8(-- b-- a--)}
@@ -329,7 +344,7 @@ musicTrombaIMvtIII = \relative c'' {
 	
 % Bars 496 to 500
 	\mark \default
-	\ni \mmrPos #-6 R2
+	\tempoXoffset #1 \ni \mmrPos #-7 R2
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-4 R \no

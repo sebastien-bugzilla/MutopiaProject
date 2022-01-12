@@ -147,7 +147,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -156,6 +156,7 @@
 			}
 		}
 		\layout {
+			system-count = 14
 		}
 	}
 	\score {
@@ -184,6 +185,7 @@
 			}
 		}
 		\layout {
+			system-count = 5
 		}
 	}
 	\score {
@@ -212,6 +214,7 @@
 			}
 		}
 		\layout {
+			system-count = 16
 		}
 	}
 }

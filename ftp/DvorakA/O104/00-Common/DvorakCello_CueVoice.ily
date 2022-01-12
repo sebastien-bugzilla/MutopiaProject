@@ -1096,7 +1096,7 @@ cueVoiceTrombaIMvtI = \relative c {
 	% bar 19 - 22
 	\transpose e c {
 		\relative c''' {
-			fis8:16^\markup {Viol.I.} g: a: g: fis: e: d: cis:
+			fis8:16-\tweak X-offset #-5 ^\markup {Viol.I.} g: a: g: fis: e: d: cis:
 			b: ais: e': d: cis: ais: fis: a:
 			g: fis: cis': ais: g: fis: e: d:
 			cis: b: ais: g': fis: e: d: cis:
@@ -1152,7 +1152,7 @@ cueVoiceTrombaIMvtII = \relative c {
 	% bar 35 - 38
 	\transpose c a, {
 		\relative c'' {
-			f2(^\markup {Clar.} g8 ees)
+			f2(-\tweak X-offset #1 ^\markup {Clar.} g8 ees)
 			f4 r8 f( bes f)
 			d4 d( \acciaccatura f8 ees4)
 			d2~ d8 c
@@ -1160,13 +1160,11 @@ cueVoiceTrombaIMvtII = \relative c {
 	}
 	s2.*22
 	% bar 61 - 64
-	\transpose e c {
-		\relative c'' {
-			beses8.(^\markup {Vcello Solo.} aes16) beses8.( aes16) beses8.( aes16) 
-			\cueClef tenor aes8.( g16) aes8.( g16) aes8.( g16)
-			g8.( fis16) g8.( fis16) g8.( f16)
-			f8.( e16) f8.( e16) e8.( dis16) \cueClefUnset
-		}
+	\relative c'' {
+		beses8.(^\markup {Vcello Solo.} aes16) beses8.( aes16) beses8.( aes16) 
+		\cueClef tenor aes8.( g16) aes8.( g16) aes8.( g16)
+		g8.( fis16) g8.( fis16) g8.( f16)
+		f8.( e16) f8.( e16) e8.( dis16) \cueClefUnset
 	}
 }
 cueVoiceTrombaIMvtIII = \relative c {
@@ -1203,10 +1201,10 @@ cueVoiceTrombaIMvtIII = \relative c {
 	% bar 250 - 253
 	\transpose e c {
 		\relative c' {
-			\cueClef bass cis4^\markup {Vcello Solo.} dis
+			\cueClef bass cis4-\tweak X-offset #-6 ^\markup {Vcello Solo.} dis
 			e8 fis a16( g fis e)
 			\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
-			b4 \cueClef treble \tuplet 5/4 4 {fis'16(^\markup {Viol.I.} b cis d fis)} \cueClefUnset
+			b4 \cueClef treble \tuplet 5/4 4 {fis'16(-\tweak X-offset #-1 ^\markup {Viol.I.} b cis d fis)} \cueClefUnset
 		}
 	}
 	s2*123
@@ -1243,7 +1241,7 @@ cueVoiceTrombaIMvtIII = \relative c {
 	% bar 497 - 500
 	\transpose e c {
 		\relative c' {
-			dis2(^\markup {Fl.Ob.}
+			dis2(-\tweak X-offset #1 ^\markup {Fl.Ob.}
 			fis4 b 
 			dis fis
 			b dis)
@@ -1255,7 +1253,7 @@ cueVoiceTrombaIIMvtI = \relative c {
 	% bar 19 - 22
 	\transpose e c {
 		\relative c''' {
-			fis8:16^\markup {Viol.I.} g: a: g: fis: e: d: cis:
+			fis8:16-\tweak X-offset #-5 ^\markup {Viol.I.} g: a: g: fis: e: d: cis:
 			b: ais: e': d: cis: ais: fis: a:
 			g: fis: cis': ais: g: fis: e: d:
 			cis: b: ais: g': fis: e: d: cis:
@@ -1311,7 +1309,7 @@ cueVoiceTrombaIIMvtII = \relative c {
 	% bar 35 - 38
 	\transpose c a, {
 		\relative c'' {
-			f2(^\markup {Clar.} g8 ees)
+			f2(-\tweak X-offset #1 ^\markup {Clar.} g8 ees)
 			f4 r8 f( bes f)
 			d4 d( \acciaccatura f8 ees4)
 			d2~ d8 c
@@ -1362,7 +1360,7 @@ cueVoiceTrombaIIMvtIII = \relative c {
 	% bar 199 - 202
 	\transpose e c {
 		\relative c'' {
-			\setSextolet \tuplet 6/4 4 {e16( g e cis e cis bes cis bes g bes g)
+			\setSextolet \tuplet 6/4 4 {e16(-\tweak X-offset #-4 ^\markup {Vcello Solo.} g e cis e cis bes cis bes g bes g)
 			\stemDown e( g e \cueClef tenor cis e cis bes cis bes g bes g) \stemNeutral
 			g'( bes g e g e cis e cis bes cis bes)
 			g^( bes g e g e \cueClef bass cis e cis bes cis bes)} \unsetSextolet \cueClefUnset
@@ -1372,10 +1370,10 @@ cueVoiceTrombaIIMvtIII = \relative c {
 	% bar 250 - 253
 	\transpose e c {
 		\relative c' {
-			\cueClef bass cis4^\markup {Vcello Solo.} dis
+			\cueClef bass cis4-\tweak X-offset #-2 ^\markup {Vcello Solo.} dis
 			e8 fis a16( g fis e)
 			\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
-			b4 \cueClef treble \tuplet 5/4 4 {fis'16(^\markup {Viol.I.} b cis d fis)} \cueClefUnset
+			b4 \cueClef treble \tuplet 5/4 4 {fis'16(-\tweak X-offset #-1 ^\markup {Viol.I.} b cis d fis)} \cueClefUnset
 		}
 	}
 	s2*123
@@ -1392,7 +1390,7 @@ cueVoiceTrombaIIMvtIII = \relative c {
 	% bar 417 - 420
 	\transpose e c {
 		\relative c'' {
-			\cueClef tenor gis4^\markup {Vcello Solo.} a!8( gis)
+			\cueClef tenor gis4-\tweak X-offset #-1 ^\markup {Vcello Solo.} a!8( gis)
 			fis( e) dis( cis)
 			fis4-> b->
 			cis\trill dis8-^ cis-^ \cueClefUnset
@@ -1412,7 +1410,7 @@ cueVoiceTrombaIIMvtIII = \relative c {
 	% bar 497 - 500
 	\transpose e c {
 		\relative c' {
-			dis2(^\markup {Fl.Ob.}
+			dis2(-\tweak X-offset #1 ^\markup {Fl.Ob.}
 			fis4 b 
 			dis fis
 			b dis)
