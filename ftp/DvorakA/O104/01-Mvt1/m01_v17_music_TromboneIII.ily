@@ -23,7 +23,7 @@ musicTromboneIIIMvtI = \relative c' {
 % Bars 21 to 25
 	\mmrPos #-4 R \no
 	r4 r8 g\f\<-. fis-. e-. d-. cis-.\! \mark \default
-	b2\f b2->~
+	\tempoXoffset #1 b2\f b2->~
 	b b~
 	b4 r r2
 % Bars 26 to 30
@@ -60,7 +60,7 @@ musicTromboneIIIMvtI = \relative c' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no \mark \default
-	d4\f r8 d d-. d-. d-. r
+	\tempoXoffset #1 d4\f r8 d d-. d-. d-. r
 % Bars 76 to 80
 	d4 r8 d d-. d-. d-. r
 	fis4 e8 d d a' a r
@@ -98,20 +98,29 @@ musicTromboneIIIMvtI = \relative c' {
 % Bars 126 to 130
 	
 	\mark \default
-	R1*29
+	\mmrCondens R1*10
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
+	
+	R1*2
+	
+	\mmrLength #1.5 R1*14
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	
+	
+	R1*3
+	
 % Bars 156 to 160
-	\mark \default
-	R1*19
+	\markXoffset #-0.2 \mark \default
+	R1*1
+	\mmrLength #3.2 \tempoXoffset #-3 R1*18
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -133,7 +142,7 @@ musicTromboneIIIMvtI = \relative c' {
 	\ni \mmrPos #-6  R1
 	\mmrPos #-6 R 
 % Bars 191 to 195
-	\mmrPos #-6 R1_\fermata \no \mark \default
+	\mmrPos #-6 R1_\fermata \no \markXoffset #-0.1 \mark \default
 	d1-^\f
 	d-^\fz
 	d-^\fz
@@ -147,7 +156,7 @@ musicTromboneIIIMvtI = \relative c' {
 % Bars 201 to 205
 	d~\pp
 	d4 r r2
-	R1*5
+	\mmrCondens R1*5
 % Bars 206 to 210
 	
 	
@@ -162,13 +171,17 @@ musicTromboneIIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R1*24
+	\mmrLength #3 R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
+	
+	
+	
+	\mmrLength #2 R1*8
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -190,20 +203,21 @@ musicTromboneIIIMvtI = \relative c' {
 	
 	\ni \mmrPos #-4 R1
 % Bars 266 to 270
-	\mmrPos #6 R \no
+	\mmrPos #-10 R \no
 	b2\ff e
 	b2. b4
 	fis'2 b,4 dis
 	fis2.\> r4\!
 % Bars 271 to 275
-	R1*13
+	\tempoXoffset #-4 R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\mmrLength #2 \tempoXoffset #-2.5 \tempoOsp R1*3
 	
 	\mark \default
-	R1*19
+	R1*1
+	\mmrLength #3 \tempoXoffset #-2 R1*18
 % Bars 286 to 290
 	
 % Bars 291 to 295

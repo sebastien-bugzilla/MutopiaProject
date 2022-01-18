@@ -59,7 +59,7 @@ musicTromboneIMvtIII = \relative c' {
 	b \once \partCombineApart b
 % Bars 86 to 90
 	d8-. e-. d-. cis-.
-	d\ff r fis r
+	d\f r fis r
 	g r fis r
 	d r r4
 	R2

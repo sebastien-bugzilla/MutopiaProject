@@ -17,7 +17,7 @@ musicTromboneIIMvtII = \relative c {
 	
 	\mark \default
 	R2.
-	d2.\pp(
+	d2.-\tweak X-offset #-3 \pp(
 % Bars 16 to 20
 	e)
 	d(
@@ -26,14 +26,18 @@ musicTromboneIIMvtII = \relative c {
 	e4( g gis)
 % Bars 21 to 25
 	e2 r4
-	R2.*12
+	\mmrCondens R2.*7
 % Bars 26 to 30
+	
+	
+	
+	\tempoXoffset #-1 R2.*3
 	
 % Bars 31 to 35
 	
+	R2.*2
 	
-	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*4
 % Bars 36 to 40
 	
@@ -61,8 +65,8 @@ musicTromboneIIMvtII = \relative c {
 	beses\>
 % Bars 61 to 65
 	aes8\pp) r r4 r
-	R2.*3
-	
+	R2.
+	\tempoXoffset #-1.5 \mmrnDown R2.*2
 	\bar "||" \key g \major \mark \default
 	fis2\f fis4
 % Bars 66 to 70
@@ -77,7 +81,7 @@ musicTromboneIIMvtII = \relative c {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*12
+	\mmrLength #2 \mmrnDown R2.*12
 	
 	
 % Bars 86 to 90
@@ -93,25 +97,33 @@ musicTromboneIIMvtII = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	R2.\fermata
-	R2.*21
+	\once \ni R2.\fermata
+	R2.*13
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
+	
+	
+	
+	\mmrnDown \tempoXoffset #-2 R2.*4
 % Bars 121 to 125
+	
+	
+	
+	\mmrnDown \tempoXoffset #-1 R2.*4
 	
 % Bars 126 to 130
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*6
 % Bars 131 to 135
 	
 	
 	
 	
-	R2.\fermata 
+	\once \ni R2.\fermata 
 % Bars 136 to 140
 	R2.*12
 % Bars 141 to 145
@@ -119,7 +131,7 @@ musicTromboneIIMvtII = \relative c {
 % Bars 146 to 150
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*9
 % Bars 151 to 155
 	
@@ -127,7 +139,7 @@ musicTromboneIIMvtII = \relative c {
 	
 	
 	\ni \mmrPos #-7 R2.
-	\mmrPos #-7 R \no 
+	\tempoXoffset #-2 \mmrPos #-7 R \no 
 	r4 g2(\p\<
 % Bars 161 to 165
 	aes2_\fzdimD a4)
@@ -136,5 +148,5 @@ musicTromboneIIMvtII = \relative c {
 	R2.*2
 	
 % Bar 166
-	R2.\fermata \bar "|."
+	\once \ni R2.\fermata \bar "|."
 }

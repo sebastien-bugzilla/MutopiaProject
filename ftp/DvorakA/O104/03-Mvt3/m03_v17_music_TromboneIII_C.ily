@@ -313,8 +313,8 @@ musicTromboneIIIMvtIII = \relative c {
 	\partCombineChords d2\ppp~
 	d~
 	d^(
-	e)
-	b8 \partCombineAutomatic r r4
+	e)(
+	b8) \partCombineAutomatic r r4
 % Bars 486 to 490
 	R2*11
 % Bars 491 to 495

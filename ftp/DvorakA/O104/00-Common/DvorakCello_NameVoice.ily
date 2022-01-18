@@ -427,17 +427,17 @@ nameTromboneIIMvtIII = {
 }
 nameTromboneIIIMvtI = {
 	\set Staff.instrumentName = "Trombone III"
-	\set Staff.shortInstrumentName = "Trbni. III"
+	\set Staff.shortInstrumentName = "Tbn. III"
 	\set Staff.midiInstrument = #"trombone"
 }
 nameTromboneIIIMvtII = {
 	\set Staff.instrumentName = "Trombone III"
-	\set Staff.shortInstrumentName = "Trbni. III"
+	\set Staff.shortInstrumentName = "Tbn. III"
 	\set Staff.midiInstrument = #"trombone"
 }
 nameTromboneIIIMvtIII = {
 	\set Staff.instrumentName = "Trombone III"
-	\set Staff.shortInstrumentName = "Trbni. III"
+	\set Staff.shortInstrumentName = "Tbn. III"
 	\set Staff.midiInstrument = #"trombone"
 }
 nameTubaMvtI = {

@@ -63,7 +63,7 @@ musicTromboneIMvtIII = \relative c' {
 	b b
 % Bars 86 to 90
 	d8-. e-. d-. cis-.
-	d\ff r fis r
+	d\f r fis r
 	g r fis r
 	d r r4
 	R2
@@ -92,7 +92,7 @@ musicTromboneIMvtIII = \relative c' {
 	
 	\mark \default
 % Bars 111 to 115
-	R2*32
+	R2*24
 % Bars 116 to 120
 	
 % Bars 121 to 125
@@ -101,27 +101,40 @@ musicTromboneIMvtIII = \relative c' {
 	
 % Bars 131 to 135
 	
+	
+	
+	
+	R2*5
 % Bars 136 to 140
 	
+	
+	
+	
+	\tempoXoffset #-1 R2*3
 % Bars 141 to 145
 	
 	\mark \default
-	R2*24
+	R2*14
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	\tempoOsp \mmrnDown R2*2
+	
+	\tempoOsp \mmrnDown R2*7
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	\mark \default
-	R2*32
+	\tempoOsp \mmrnDown R2 \mark \default
+	R2*5
 % Bars 171 to 175
 	
+	\tempoXoffset #-1 R2*5
 % Bars 176 to 180
 	
+	\mmrLength #1.8 R2*22
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -138,7 +151,7 @@ musicTromboneIMvtIII = \relative c' {
 	\mmrPos #-6 R
 	\mmrPos #-4 R \no
 	r4 r8 a\ff \mark \default
-	a8. a16 a8 r
+	\tempoXoffset #1 a8. a16 a8 r
 	d8. a16 a8 r
 % Bars 206 to 210
 	R2*2
@@ -196,36 +209,41 @@ musicTromboneIMvtIII = \relative c' {
 % Bars 261 to 265
 	d\f r r4
 	d8 r r4
-	d8_\dimmarkup r r4\>
+	d8_\dimD\> r r4
 	d8 r r4\!
 	b8\p r r4
 % Bars 266 to 270
-	R2*15
+	R2*7
 % Bars 271 to 275
 	
+	
+	R2*4
 % Bars 276 to 280
 	
+	\mmrLength #4 R2*2
 	
-	
-	
+	R2*2
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*34
+	R2*16
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
+	R2*4
 % Bars 301 to 305
+	\tempoXoffset #-1 \mmrnDown R2*2
 	
+	\mmrLength #1.5 \tempoXoffset #-1 R2*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 	
 	
-	\mark \default
+	\tempoXoffset #-0.2 R2*1 \mark \default
 	R2*16
 % Bars 316 to 320
 	
@@ -238,29 +256,38 @@ musicTromboneIMvtIII = \relative c' {
 	
 	\mark \default
 % Bars 331 to 335
-	R2*16
+	\tempoXoffset #0.6 R2*14
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
+	
+	
+	
+	\tempoOsp \mmrnDown R2*2
 % Bars 346 to 350
 	\bar "||" \key b \major
-	R2*30
+	\tempoXoffset #-6 \mmrLength #1.5 R2*16
 % Bars 351 to 355
 	
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
+	
+	R2*4
 % Bars 366 to 370
 	
+	\tempoXoffset #-2 R2*2
+	
+	R2*8
 % Bars 371 to 375
 	
 % Bars 376 to 380
 	
-	\ni \mmrPos #6 R2
-	\mmrPos #6 R
-	\mmrPos #6 R
+	\ni \mmrPos #7 R2
+	\mmrPos #7 R
+	\mmrPos #7 R
 	\mmrPos #7 R \no \mark \default
 % Bars 381 to 385
 	dis4\f dis 
@@ -298,18 +325,23 @@ musicTromboneIMvtIII = \relative c' {
 	fis~\>
 	fis\pp~
 	fis4. r8
-	R2*20
+	R2*8
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
+	\mmrLength #2 \tempoXoffset #-2 R2*7
 % Bars 441 to 445
+	
+	
+	
+	\tempoXoffset #-1 \mmrLength #1.7 R2*5
 	
 % Bars 446 to 450
 	
 	
 	\mark \default
-	R2*28
+	\tempoXoffset #1 R2*28
 % Bars 451 to 455
 	
 % Bars 456 to 460
@@ -338,7 +370,7 @@ musicTromboneIMvtIII = \relative c' {
 	
 % Bars 496 to 500
 	\mark \default
-	R2*4
+	\tempoXoffset #1 R2*4
 	
 	
 	
