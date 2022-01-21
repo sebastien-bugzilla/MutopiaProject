@@ -104,22 +104,28 @@ musicTriangoloMvtIII = \relative c {
 % Bars 141 to 145
 	
 	\mark \default
-	R2*24
+	\tempoXoffset #1 R2*14
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
 % Bars 156 to 160
 	
+	
+	\mmrnDown \tempoOsp R2*2
+	
+	\mmrnDown \tempoOsp R2*7
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	\mark \default
-	R2*37
+	R2*1 \mark \default
+	R2*5
 % Bars 171 to 175
 	
+	\mmrnDown R2*5
 % Bars 176 to 180
 	
+	R2*26
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -131,7 +137,7 @@ musicTriangoloMvtIII = \relative c {
 % Bars 201 to 205
 	
 	
-	\mark \default
+	R2*1 \mark \default
 	R2*18
 % Bars 206 to 210
 	
@@ -141,7 +147,7 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 221 to 225
 	\mark \default
-	R2*39
+	R2*20
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -150,8 +156,9 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 241 to 245
 	
+	R2*4
 % Bars 246 to 250
-	
+	\mmrLength #3 R2*15
 % Bars 251 to 255
 	
 % Bars 256 to 260
@@ -173,23 +180,26 @@ musicTriangoloMvtIII = \relative c {
 	
 	\mark \default \bar "||"
 % Bars 281 to 285
-	R2*34
+	R2*16
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
+	\tempoOsp \mmrnDown R2*4
 % Bars 301 to 305
+	R2*2
 	
+	R2*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 	
 	
-	\mark \default
-	R2*16
+	R2*1 \mark \default
+	\mmrLength #3 \tempoXoffset #3 R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -201,22 +211,31 @@ musicTriangoloMvtIII = \relative c {
 	
 	\mark \default
 % Bars 331 to 335
-	R2*16
+	\mmrLength #3 \tempoXoffset #1 R2*14
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
+	
+	
+	
+	\mmrnDown \tempoOsp R2*2
 % Bars 346 to 350
 	\bar "||"
-	R2*34
+	\tempoXoffset #-2 R2*16
 % Bars 351 to 355
 	
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
+	
+	R2*4
 % Bars 366 to 370
 	
+	R2*2
+	
+	\mmrLength #2 R2*12
 % Bars 371 to 375
 	
 % Bars 376 to 380
@@ -257,7 +276,7 @@ musicTriangoloMvtIII = \relative c {
 	
 	
 	\mark \default
-	R2*48
+	\tempoXoffset #1 R2*48
 % Bars 451 to 455
 	
 % Bars 456 to 460
@@ -278,11 +297,14 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 496 to 500
 	\mark \default
-	R2*20
+	\tempoXoffset #1 R2*9
 % Bars 501 to 505
 	
 % Bars 506 to 510
+	\mmrLength #3 \mmrCondens R2*3
 	
+	
+	R2*8
 % Bars 511 to 515
 	
 % Bar 516

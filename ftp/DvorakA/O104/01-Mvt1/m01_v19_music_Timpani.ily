@@ -35,11 +35,11 @@ musicTimpaniMvtI = \relative c, {
 % Bars 21 to 25
 	fis8 r r4 r2
 	R1 \mark \default
-	b2:32\f b4 r
+	\tempoXoffset #1 b2:32\f b4 r
 	b2:32 b4 r
 	b8-> b-> r4 r2
 % Bars 26 to 30
-	r4 b8\f b b4 b
+	r4 b8-\tweak extra-offset #'(-1 . -7.5) ^\f b b4 b
 	b2:32 b4 r
 	b2:32 b4 r
 	R1*16
@@ -53,13 +53,14 @@ musicTimpaniMvtI = \relative c, {
 	
 	
 	\mark \default
-	R1*26
+	R1*11
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	
+	\mmrnDown R1*1
+	R1*14
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -69,7 +70,7 @@ musicTimpaniMvtI = \relative c, {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no \mark \default
-	d4\f r8 d d d d r
+	\tempoXoffset #1 d4\f r8 d d d d r
 % Bars 76 to 80
 	d4 r8 d d d d r
 	R1*2
@@ -84,7 +85,7 @@ musicTimpaniMvtI = \relative c, {
 	
 % Bars 86 to 90
 	b1:32\pp 
-	b4 r r2
+	\tempoXoffset #-1.5 b4 r r2
 	R1*22
 % Bars 91 to 95
 	
@@ -107,22 +108,31 @@ musicTimpaniMvtI = \relative c, {
 % Bars 126 to 130
 	
 	\mark \default
-	R1*29
+	R1*10
 	
 	
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
+	
+	R1*2
+	
+	R1*14
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	
+	
+	\mmrLength #3 R1*3
+	
 % Bars 156 to 160
 	\mark \default
-	R1*19
+	R1*1
+	\mmrLength #3.5 \tempoXoffset #-0.5  R1*18
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -144,27 +154,27 @@ musicTimpaniMvtI = \relative c, {
 	\ni \mmrPos #-6 R1
 	\mmrPos #-4 R
 % Bars 191 to 195
-	\mmrPos #-6 R1_\fermata \no \mark \default
-	d2\ff\startTrillSpan r8\stopTrillSpan d16-. d-. d8 r
-	d2\startTrillSpan r8\stopTrillSpan d16-. d-. d8 r
-	d2\startTrillSpan r8\stopTrillSpan d16-. d-. d8 r
-	d2\startTrillSpan r8\stopTrillSpan d16-. d-. d8 r
+	\mmrPos #-6 R1_\fermata \no \markXoffset #-0.2 \mark \default
+	d2:32\ff r8 d16-. d-. d8 r
+	d2:32 r8 d16-. d-. d8 r
+	d2:32 r8 d16-. d-. d8 r
+	d2:32 r8 d16-. d-. d8 r
 % Bars 196 to 200
-	d2\startTrillSpan r8\stopTrillSpan d16-. d-. d8 r
-	d2\startTrillSpan r8\stopTrillSpan d16-. d-. d8 r
-	d1\f\>\startTrillSpan
-	d\startTrillSpan_\dimD
-	d\p\>\startTrillSpan
+	d2:32 r8 d16-. d-. d8 r
+	d2:32 r8 d16-. d-. d8 r
+	d1:32\f\>
+	d:32\dimD
+	d:32\p\>
 % Bars 201 to 205
-	d_\dimD\startTrillSpan
-	d\pp\startTrillSpan
-	d\startTrillSpan_\dimmarkup
-	d\startTrillSpan
-	d\startTrillSpan
+	d:32_\dimD
+	d:32\pp
+	d:32_\dimmarkup
+	d:32
+	d:32
 % Bars 206 to 210
-	d\startTrillSpan
-	d\startTrillSpan
-	d8\stopTrillSpan r r4 r2 \mark \default
+	d:32
+	d:32
+	d8 r r4 r2 \mark \default
 	R1*15
 % Bars 211 to 215
 	
@@ -174,18 +184,22 @@ musicTimpaniMvtI = \relative c, {
 	
 	
 	\mark \default
-	R1*24
+	\mmrLength #3 \mmrnDown \tempoXoffset #0.5 R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
+	
+	
+	
+	\mmrnDown R1*8
 % Bars 241 to 245
 	
 % Bars 246 to 250
 	
-	\mark \default
+	\markXoffset #-0.1 \mark \default
 	R1*4
 % Bars 251 to 255
 	
@@ -207,12 +221,12 @@ musicTimpaniMvtI = \relative c, {
 	R1*2
 % Bars 266 to 270
 	
-	b1\brack\f\startTrillSpan
-	b\startTrillSpan
-	fis\startTrillSpan
-	fis2\>\startTrillSpan fis4\stopTrillSpan\! r
+	b1:32\brack\f
+	b:
+	fis:
+	fis2:\> fis4\! r
 % Bars 271 to 275
-	R1*4
+	\mmrnDown \mmrLength #4 R1*4
 	
 	
 	
@@ -224,10 +238,11 @@ musicTimpaniMvtI = \relative c, {
 	r4 e8[ r16 e] e4 r
 	r4 e8[ r16 e] e4 r
 % Bars 281 to 285
-	R1*3
+	\mmrLength #3 \tempoXoffset #-1 \mmrnDown R1*3
 	
 	\mark \default
-	R1*19
+	\tempoXoffset #1.5 \mmrnDown R1*1
+	\tempoXoffset #-2.2 \mmrnDown R1*18
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -246,7 +261,7 @@ musicTimpaniMvtI = \relative c, {
 	
 	
 	r2 r4 r8\fermata r
-	R1*4
+	\mmrLength #4 \tempoXoffset #-1 R1*4
 % Bars 321 to 325
 	
 	

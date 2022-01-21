@@ -1782,7 +1782,7 @@ cueVoiceTubaMvtIII = \relative c {
 cueVoiceTimpaniMvtI = \relative c {
 	s1*70
 	% bar 71 - 74
-	\cueClef treble a'''2(^\markup {Viol.I.} ais4 b)
+	\cueClef treble a'''2(-\tweak X-offset #-5 ^\markup {Viol.I.} ais4 b)
 	b( cis d4. fis8)
 	fis4( a2.)
 	a2 cis,4.(\trill d8) \cueClefUnset
@@ -1793,16 +1793,16 @@ cueVoiceTimpaniMvtI = \relative c {
 	\tuplet 3/2 4 {g,8-> a-> bes-> e,-> fis-> g-> cis,-> d-> e->} bes->\fermata a-> \cueClefUnset
 	s1*60
 	% bar 252 - 255
-	\cueClef treble d'''2.^\markup {Fl.Ob.} e8( fis)
+	\cueClef treble d'''2.-\tweak X-offset #-5 ^\markup {Fl.Ob.} e8( fis)
 	fis4( e bes e)
 	a,( d2 e8 fis)
 	fis4( e bes e) \cueClefUnset
 	s1*82
-	% bar 338 - 342
+	% bar 338 - 341
 	\cueClef treble <ais,,, fis'>16^\markup {Vcello Solo.} q( <b g'>) q( <bis gis'>) q( <cis a'>) q( <cisis ais'>) q( <dis b'>) q( <disis bis'>) q( <eis cis'>) q( 
 	<eisis cisis'>) q( <fisis dis'>) q( <gis e'>) q( <gisis eis'>) q( <ais fis'>) q( <b g'!>) q( <ais fis'>) q( <b g'>) q(
 	<ais fis'>) q( <b g'>) q( <ais fis'>) q( <b g'>) q( <ais fis'>) q( <b g'>) q( <ais fis'>) q( <b g'>) q
-	r4 r8 ais'^\markup {Fl.Ob.} b bis cis ais \cueClefUnset
+	r4 r8 ais'-\tweak X-offset #-6 ^\markup {Fl.Ob.} b bis cis ais \cueClefUnset
 }
 cueVoiceTimpaniMvtII = \relative c {
 	s2.*31
@@ -1811,7 +1811,7 @@ cueVoiceTimpaniMvtII = \relative c {
 	\cueClef bass c8( b!16) r c8( b16) r  \tuplet 3/2 4 {d8( c bes)} \cueClefUnset
 	s2.*56
 	% bar 90 - 91
-	\cueClef tenor gis'8.(^\markup {Vcello Solo.} fis16) gis8.( fis16) g8.( fis16)
+	\cueClef tenor gis'8.(-\tweak X-offset #-6 ^\markup { \center-column { \lower #1.5 "Vcello" "Solo." } } fis16) gis8.( fis16) g8.( fis16)
 	fis8.( e16) e8.( d16) d8.( cis16) \cueClefUnset
 	s2.*13
 	% bar 105
@@ -1828,7 +1828,7 @@ cueVoiceTimpaniMvtIII = \relative c {
 	b4. r8 \cueClefUnset
 	s2*22
 	% bar 37 - 40
-	cis,4->^\markup {Vcello Solo.} dis->
+	cis,4->-\tweak X-offset #-0.5 ^\markup {Vcello Solo.} dis->
 	e8 fis a16( g fis e)
 	\tuplet 5/4 4 {d( e g fis e)} d8 cis
 	b4 \cueClef treble \tuplet 5/4 4 {fis'16(^\markup {Viol.} b cis d fis)} \cueClefUnset
@@ -1843,7 +1843,7 @@ cueVoiceTimpaniMvtIII = \relative c {
 	\tuplet 5/4 4 {d( e g fis e)} d8 cis \cueClefUnset
 	s2*121
 	% bar 201 - 203
-	\cueClef tenor \setSextolet \tuplet 6/4 4 {g16(^\markup {Vcello Solo.} bes g e g e cis e cis bes cis bes)
+	\cueClef tenor \setSextolet \tuplet 6/4 4 {g16(-\tweak X-offset #-9 ^\markup {Vcello Solo.} bes g e g e cis e cis bes cis bes)
 	g( bes g e g e \cueClef bass cis e cis bes cis bes)} \unsetSextolet
 	\once \tupletUp \tuplet 17/16 2 {a32( b cis d e fis g a b \cueClef tenor cis d e fis g a b cis)} \cueClefUnset
 	s2*46
@@ -1876,7 +1876,7 @@ cueVoiceTimpaniMvtIII = \relative c {
 	}
 	s2*55
 	% bar 480 - 484
-	\cueClef treble b2\trill^\markup {Vcello Solo.}
+	\cueClef treble b2\trill-\tweak X-offset #-9 ^\markup {Vcello Solo.}
 	b4( a!)
 	g!( fis)
 	a!( g!~
