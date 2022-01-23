@@ -137,7 +137,7 @@ musicViolinoIMvtI = \relative c' {
 % Bars 116 to 120
 	c8( d c d c d c d)
 	c( d e4 f2)
-	b,8( cis b cis b cis b cis)
+	b,8( cis! b cis b cis b cis)
 	b( cis dis4 e2)
 	ais,4(\p cis~ cis8_\crescmarkup b fis'4)
 % Bars 121 to 125
@@ -295,17 +295,17 @@ musicViolinoIMvtI = \relative c' {
 % Bars 256 to 260
 	ais1\fz\>~
 	ais8\p r r4 r2
-	ais,1\pp~
-	ais8 r r4 r2
-	R1 \mark \default
+	R1*3  % remove based on manuscrit
+	
+	\mark \default
 % Bars 261 to 265
 	R1*4
 	
 	
 	
-	<e' cis'>4\f r r2
+	<e cis'>4\f r r2
 % Bars 266 to 270
-	r2 r4 fis'8.\< dis'16\!
+	r2 r4 fis'8.\<( dis'16)\!
 	dis2\ff~ dis8 cis( b gis)
 	b2( fis4) b
 	cis-> cis-> dis8(-^ fis-^ dis-^ b-^)
@@ -319,11 +319,11 @@ musicViolinoIMvtI = \relative c' {
 	r2 r4 cis(
 	\sharptrill fis2\startTrillSpan~ fis8) r\stopTrillSpan r4
 % Bars 281 to 285
-	R1*2
+	R1*3
 	
-	<b,, dis>2:16\> e: \mark \default
-	dis8\p r r4 r2
-	R1*14
+	\mark \default
+	R1*15
+	
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -332,7 +332,7 @@ musicViolinoIMvtI = \relative c' {
 	
 	
 	
-	<a! fis'!>16\f q r8 r4 r2
+	<a,,! fis'!>16\f q r8 r4 r2
 	<g! g'!>8\f r r4 r2
 % Bars 301 to 305
 	<b gis'>8\f r r4 r2

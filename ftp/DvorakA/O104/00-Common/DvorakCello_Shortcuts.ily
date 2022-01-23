@@ -388,3 +388,11 @@ scriptStencil = #(define-music-function
 		\once \override Script.text = #mymarkup
 	#}
 )
+
+tremoloPosition = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override StemTremolo.Y-offset = #position
+	#}
+)

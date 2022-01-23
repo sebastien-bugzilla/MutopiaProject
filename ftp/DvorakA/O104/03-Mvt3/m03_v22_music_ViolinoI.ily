@@ -25,9 +25,9 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 16 to 20
 	b4. r8
 	\slashedGrace e8 e4\brack\fz-> b8-.\< g-.
-	\slashedGrace g'8 g4->_\fzmarkupbrack e8-. c-.
-	\slashedGrace g'8 g4->_\fzmarkupbrack e8-. c-.
-	\slashedGrace c'8 c4->_\fzmarkupbrack g8-. e-.\!
+	\slashedGrace g'8 g4->-\tweak extra-offset #'(0.5 . 4) _\fzmarkupbrack e8-. c-.
+	\slashedGrace g'8 g4->-\tweak extra-offset #'(0.5 . 4.5) _\fzmarkupbrack e8-. c-.
+	\slashedGrace c'8 c4->-\tweak extra-offset #'(0.5 . 5) _\fzmarkupbrack g8-. e-.\!
 % Bars 21 to 25
 	fis'2:32\ff
 	fis:
@@ -41,8 +41,8 @@ musicViolinoIMvtIII = \relative c'' {
 	fis fis,,16 fis fis8\ff fis16 fis
 	fis8 fis16 fis fis8 fis16 fis
 % Bars 31 to 35
-	fis8\fz-^ fis16 fis r4
-	fis8\fz-^ fis16 fis r4
+	fis8\fz^^ fis16 fis r4
+	fis8\fz^^ fis16 fis r4
 	R2*7
 	
 	
@@ -154,9 +154,17 @@ musicViolinoIMvtIII = \relative c'' {
 	e!\pp(
 	fis)
 % Bars 131 to 135
-	R2*12
+	R2*4
+	
+	
+	
+	R2*5
 % Bars 136 to 140
 	
+	
+	
+	
+	R2*3
 % Bars 141 to 145
 	
 	\mark \default
@@ -175,7 +183,7 @@ musicViolinoIMvtIII = \relative c'' {
 	\ni \mmrPos #-6 R2
 % Bars 166 to 170
 	\mmrPos #-6 R \mark \default
-	\mmrPos #-4 R
+	\tempoXoffset #1 \mmrPos #-4 R
 	\mmrPos #-4 R \no
 	r8 e'(\pp\< a4~
 	a\! d)\>
@@ -203,7 +211,7 @@ musicViolinoIMvtIII = \relative c'' {
 	r8 a(\< bes4\!
 % Bars 191 to 195
 	a8\p) r r4
-	R2*7
+	R2*7 
 % Bars 196 to 200
 	
 	
@@ -241,7 +249,7 @@ musicViolinoIMvtIII = \relative c'' {
 	fis8.\prall fis,16 fis8.\prall cis'16
 	cis8.\prall cis,16 cis8. r16
 % Bars 226 to 230
-	cis2\fp~
+	\startMeasureCount cis2\fp~
 	cis~
 	cis_\dimmarkup~
 	cis~\>
@@ -250,28 +258,30 @@ musicViolinoIMvtIII = \relative c'' {
 	cis~
 	cis~
 	cis~
-	cis
+	cis \stopMeasureCount
 	cis2:16\pp
 % Bars 236 to 240
 	cis:
 	cis:
 	cis8 r r4
-	R2*14
+	R2*3
+	
 % Bars 241 to 245
 	
+	\mmrLength #3 R2*4
 % Bars 246 to 250
-	
+	R2*7
 % Bars 251 to 255
 	
 	
-	r4 \tuplet 5/4 4 {fis16\ff( b cis d fis)}
+	r4 \tuplet 5/4 4 {fis16-\tweak X-offset #-3.3 \ff( b cis d fis)}
 	\tuplet 6/4 4 {fis( g fis eis fis) r b( cis b ais b) r
 	cis( d cis bis cis) r b!( cis b ais b) r
 % Bars 256 to 260
 	fis'( g fis eis fis) r e!( d cis d b) r}
-	cis2\startTrillSpan
-	cis4->\startTrillSpan dis->\startTrillSpan
-	e8(\stopTrillSpan fis) a16( g fis e)
+	cis2\trill
+	cis4->\trill dis->\trill
+	e8( fis) a16( g fis e)
 	\tuplet 5/4 4 {d!( e g fis e)} d8-.( cis-.) \mark \default
 % Bars 261 to 265
 	\tuplet 5/4 4 {b16(\ff d fis eis e)} d8-.( cis-.)
@@ -298,24 +308,27 @@ musicViolinoIMvtIII = \relative c'' {
 	c)\>~
 	c\!( \bar "||" \mark \default
 % Bars 281 to 285
-	b4) r
-	R2*33
+	\tempoXoffset #1 b4) r
+	\mmrLength #3 R2*15
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
+	R2*4
 % Bars 301 to 305
+	\mmrLength #7 \tempoXoffset #-1 R2*2
 	
+	\mmrLength #2 R2*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 	
 	
-	\mark \default
-	R2*16
+	R2*1 \mark \default
+	\tempoXoffset #1 R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -327,7 +340,7 @@ musicViolinoIMvtIII = \relative c'' {
 	
 	\mark \default
 % Bars 331 to 335
-	R2*12
+	\tempoXoffset #1 R2*12
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -338,7 +351,7 @@ musicViolinoIMvtIII = \relative c'' {
 	\mmrPos #-8 R
 % Bars 346 to 350
 	\mmrPos #-8 R \no \bar "||" \key b \major
-	dis'4_\ptranquilloemoltoespressivo^\solo--( dis~--
+	dis'4_\ptranquilloemoltoespressivo-\tweak X-offset #-5 ^\solo--( dis~--
 	dis8 e dis e)
 	fis4( b
 	fis b)
@@ -362,7 +375,7 @@ musicViolinoIMvtIII = \relative c'' {
 	fis4( b)_\crescmarkup
 % Bars 366 to 370
 	fis( b)
-	fis( b~-^\brack\f
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0)(0 . 0)) Slur fis( b~-^\brack\f
 	b8) gis(-^ fis-^ e)-^ 
 	dis4 dis
 	dis8.( cis16 fis8. e16)
@@ -377,9 +390,9 @@ musicViolinoIMvtIII = \relative c'' {
 	dis8.( b16 fis'4)
 	dis8.( b16 fis'4)
 	dis8.( b16) fis8\f r
-	R2 \mark \default
+	R2 \markXoffset #-0.2 \mark \default
 % Bars 381 to 385
-	fis4\f^\tutti b
+	fis4\f-\tweak X-offset #1.4 ^\tutti b
 	cis8( dis16 cis) b4->
 	cis8( dis16 cis) b4->
 	cis8( dis16 cis) b4->
@@ -397,13 +410,15 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*18
+	R2*5
 	
 	
 % Bars 416 to 420
 	
-% Bars 421 to 425
 	
+	\mmrnDown R2*3
+% Bars 421 to 425
+	\tempoXoffset #-1 R2*10
 % Bars 426 to 430
 	
 % Bars 431 to 435
@@ -428,7 +443,7 @@ musicViolinoIMvtIII = \relative c'' {
 	b4) <e, cis'>4~
 	q2~
 	q \mark \default
-	fis'\ppp~
+	\tempoXoffset #1 fis'\ppp~
 	fis~
 % Bars 451 to 455
 	fis~
@@ -457,7 +472,7 @@ musicViolinoIMvtIII = \relative c'' {
 	
 % Bars 476 to 480
 	
-	b,4\fz^\pizz r
+	b,4\fz^\pizz^\tutti r
 	R2
 	b4\mp r
 	R2
@@ -480,8 +495,8 @@ musicViolinoIMvtIII = \relative c'' {
 	d8_\morendo d r4
 	<b d>8 r r4
 % Bars 496 to 500
-	R2^\senzasord \mark \default
-	\repeat tremolo 8 {cisis32(\pp\<^\arco^\moltocresc dis)}
+	R2-\tweak X-offset #-3 _\senzasord \mark \default
+	\tempoXoffset #1 \repeat tremolo 8 {cisis32(\pp\<-\tweak X-offset #1 ^\arco-\tweak X-offset #1 ^\moltocresc dis)}
 	\repeat tremolo 4 {eis( fis)} \repeat tremolo 4 {ais( b)}
 	\repeat tremolo 4 {cisis( dis)} \repeat tremolo 4 {eis( fis)}
 	\repeat tremolo 4 {ais( b)} \repeat tremolo 4 {cisis( dis)\!}
@@ -492,7 +507,7 @@ musicViolinoIMvtIII = \relative c'' {
 	a4: a8: g16: a:
 	b2:
 % Bars 506 to 510
-	R2
+	\mmrnDown R2
 	b2:32\ff
 	R2
 	fis,8-. b-. \tuplet 3/2 4 {cis16( dis cis)} b8-.
@@ -502,7 +517,7 @@ musicViolinoIMvtIII = \relative c'' {
 	\tuplet 3/2 4 {e16( fis e)} d8-. \tuplet 3/2 4 {g16( a g)} fis8-.
 	b8 r r4
 	<fis,, dis' b'>8\arpeggio r q\arpeggio r
-	q\arpeggio b,4-^\fz b8-.
+	q\arpeggio b,4^^\fz b8-.
 % Bar 516
 	b r r4 \bar "|."
 }

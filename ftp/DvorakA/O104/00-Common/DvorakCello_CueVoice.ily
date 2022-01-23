@@ -2077,13 +2077,13 @@ cueVoiceViolinoIMvtI = \relative c {
 	ais( fis ais cis) cis2.
 	s1*125
 	% bar 295 - 296
-	bes2(^\markup {Fl.} ees4 bes8. c16)
+	bes2(-\tweak X-offset #-3.5 ^\markup {Fl.} ees4 bes8. c16)
 	g( ees g bes) bes2.
 }
 cueVoiceViolinoIMvtII = \relative c {
 	s2.*21
 	% bar 22 - 24
-	\cueClef alto g'2(^\markup {Viola.} a8 fis)
+	\cueClef alto g'2(-\tweak X-offset #-1 ^\markup {Viola.} a8 fis)
 	f2( g8 e)
 	ees2( f8 d) \cueClefUnset
 	s2.*56
@@ -2114,7 +2114,7 @@ cueVoiceViolinoIMvtIII = \relative c {
 	% bar 165 - 168
 	\stemUp r8^\markup {Vcello Solo.} g,( a b)
 	cis( \tuplet 3/2 8 {b16 cis b)} a8( g16 fis)
-	e'4(^\markup {Clar.} cis)
+	e'4(-\tweak extra-offset #'(-0.5 . 2) _\markup {Clar.} cis)
 	e( cis) \stemNeutral
 	s2*30
 	% bar 199 - 201
@@ -2137,7 +2137,7 @@ cueVoiceViolinoIMvtIII = \relative c {
 	\tuplet 3/2 4 {<b dis>( <cis e> <b dis>} <fis cis'> dis') \cueClefUnset \stemNeutral
 	s2*28
 	% bar 465 - 467
-	\stemUp \cueClef bass fis,8\repeatTie^\markup {Vcello Solo} dis'( cis b) \cueClefUnset
+	\stemUp \cueClef bass fis,8\repeatTie-\tweak X-offset #-4 ^\markup {\center-column { \lower #1.5 "Vcello" "Solo" } } dis'( cis b) \cueClefUnset
 	fis'16( e dis b' gis fis dis' b)
 	fis2 \stemNeutral
 }

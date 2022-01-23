@@ -21,7 +21,7 @@ musicViolinoIMvtII = \relative c' {
 	
 % Bars 21 to 25
 	
-	\ni \mmrPos #4 R2.
+	\ni \mmrPos #6 R2.
 	\mmrPos #4 R
 	\mmrPos #4 R \no
 	f2.\pp\<
@@ -30,18 +30,18 @@ musicViolinoIMvtII = \relative c' {
 	a'2\fz\< a8( d)
 	d2\fz\> c8.( b16)\!
 	b8(\p a16) r b8( a16) r gis8( f16) r
-	fis!8( c16) r fis8( c16)_\dimmarkup r d!8( b16) r
+	fis!8( c16) r fis8( c16)^\dimmarkup r d!8( b16) r
 % Bars 31 to 35
 	d8(_\dimmarkup b16) r d8( b16) r d8( b16) r
 	c8(\pp ees16) r c8( ees16) r c8( ees16) r
 	d4 r r
-	R2.\fermata \mark \default
-	R2.*4
+	\once \ni R2.\fermata \mark \default
+	R2.*3
 % Bars 36 to 40
 	
 	
-	\bar "||" \key g \minor
-	\acciaccatura <d bes'>8 <bes' g'>2-^\ff g'16-^ bes-^ a-^ g-^ 
+	\mmrnDown R2.*1 \bar "||" \key g \minor
+	\acciaccatura <d bes'>8 \tempoXoffset #-2 <bes' g'>2-^\ff g'16-^ bes-^ a-^ g-^ 
 	\acciaccatura <d, bes'>8 <bes' g'>2-^ bes8. c16
 % Bars 41 to 45
 	<d, d'>4-> <d bes'>-> <c a'>->
@@ -59,14 +59,14 @@ musicViolinoIMvtII = \relative c' {
 	
 % Bars 56 to 60
 	
-	des,8(\mf\< ees f ges) g16( aes ees' des\!
+	\tempoXoffset #-2 des,8(\mf\< ees f ges) g16( aes ees' des\!
 	c4\f) r r
 	f,8\p\<( ges g16 aes bes aes) \tuplet 3/2 4 {ges'8(\f f des}
 	c4) r r
 % Bars 61 to 65
-	R2.*4
+	R2.*2
 	
-	
+	\mmrLength #6 R2.*2
 	\bar "||" \key g \major \mark \default
 	\acciaccatura <d,, b'>8 <b' b'>2\ff b'16-^ d-^ cis-^ b-^ 
 % Bars 66 to 70
@@ -81,7 +81,7 @@ musicViolinoIMvtII = \relative c' {
 % Bars 81 to 85
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R \no \mark \default
-	f8(\mf\< g a bes)\! b16(\> c g' f)\!
+	\tempoXoffset #0.5 f8(\mf\< g a bes)\! b16(\> c g' f)\!
 	e4\p r r
 	a,!8(\< bes b16 c d c) \tuplet 3/2 4 {bes'8(\f\> a f)\!}
 % Bars 86 to 90
@@ -98,25 +98,33 @@ musicViolinoIMvtII = \relative c' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	R2.\fermata
-	R2.*21
+	\once \ni R2.\fermata
+	R2.*13
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
+	
+	
+	
+	\mmrnDown R2.*4
 % Bars 121 to 125
+	
+	
+	
+	\mmrnDown R2.*4
 	
 % Bars 126 to 130
 	
 	
-	R2.\fermata \mark \default
-	R2.*6
+	\once \ni R2.\fermata \mark \default
+	\tempoXoffset #1 R2.*6
 % Bars 131 to 135
 	
 	
 	
 	
-	R2.\fermata 
+	\once \ni R2.\fermata 
 % Bars 136 to 140
 	R2.*12
 % Bars 141 to 145
@@ -124,7 +132,7 @@ musicViolinoIMvtII = \relative c' {
 % Bars 146 to 150
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*9
 % Bars 151 to 155
 	
@@ -135,7 +143,7 @@ musicViolinoIMvtII = \relative c' {
 	\mmrPos #-8 R \no
 	r4 e,2(\p\<
 % Bars 161 to 165
-	ees2._\fzdimD\>)
+	ees2.\fz\>)
 	d\pp~
 	d
 	d2_\morendo d4~
