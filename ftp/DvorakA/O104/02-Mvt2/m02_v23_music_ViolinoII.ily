@@ -21,7 +21,7 @@ musicViolinoIIMvtII = \relative c' {
 	
 % Bars 21 to 25
 	
-	\ni \mmrPos #4 R2.
+	\ni \mmrPos #6 R2.
 	\mmrPos #4 R
 	\mmrPos #4 R \no
 	d2.\pp\<
@@ -35,12 +35,12 @@ musicViolinoIIMvtII = \relative c' {
 	b8(_\dimmarkup d16) r b8( d16) r b8( d16) r
 	c4\pp r r
 	R2.
-	R2.\fermata \mark \default
-	R2.*4
+	\once \ni R2.\fermata \mark \default
+	R2.*3
 % Bars 36 to 40
 	
 	
-	\bar "||" \key g \minor
+	\mmrnDown R2.*1 \bar "||" \key g \minor
 	<d d'>2\ff q4
 	q2 <bes g'>8. <d a'>16
 % Bars 41 to 45
@@ -68,9 +68,9 @@ musicViolinoIIMvtII = \relative c' {
 	<aes f'>2.\p\<
 	c8\fz r r4 r
 % Bars 61 to 65
-	R2.*4
+	R2.*2
 	
-	
+	\mmrLength #6 \mmrnDown R2.*2
 	\bar "||" \key g \major \mark \default
 	<fis d'>2\ff q4
 % Bars 66 to 70
@@ -85,9 +85,9 @@ musicViolinoIIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	\mark \default
-	<< c2.( {s4\mf\< s s16\> s s s\!} >>
+	<< \tempoXoffset #1 c2.( {\hairpinShorten #'(-0.5 . -1.4) s4\mf\< s \hairpinShorten #'(1.4 . -2) s16\> s s s\!} >>
 	des4)\p r r
-	<< c2.( {s4\< s s16\> s s s\!} >>
+	<< c2.( {s4\< s \hairpinShorten #'(0 . -2) s16\> s s s\!} >>
 % Bars 86 to 90
 	des4)\p r r
 	R2.*8
@@ -102,25 +102,32 @@ musicViolinoIIMvtII = \relative c' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	R2.\fermata
-	R2.*21
+	\once \ni R2.\fermata
+	R2.*13
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
+	
+	
+	
+	R2.*4
 % Bars 121 to 125
 	
+	
+	
+	\tempoXoffset #-1 R2.*4
 % Bars 126 to 130
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*6
 % Bars 131 to 135
 	
 	
 	
 	
-	R2.\fermata
+	\once \ni R2.\fermata
 % Bars 136 to 140
 	R2.*12
 % Bars 141 to 145
@@ -128,7 +135,7 @@ musicViolinoIIMvtII = \relative c' {
 % Bars 146 to 150
 	
 	
-	R2.\fermata \mark \default
+	\once \ni R2.\fermata \mark \default
 	R2.*9
 % Bars 151 to 155
 	

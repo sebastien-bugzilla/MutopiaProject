@@ -50,7 +50,7 @@ musicViolinoIIMvtIII = \relative c'' {
 	a'!4-> a->
 % Bars 46 to 50
 	gis8.(-> g16) b4\startTrillSpan
-	<d, b'>8-.\stopTrillSpan e16 cis <b fis'>8 ais-.
+	<d, b'>8-.\stopTrillSpan e16 cis <b fis'>8-. ais-.
 	b4. r8 \mark \default
 	R2*8
 % Bars 51 to 55
@@ -299,9 +299,9 @@ musicViolinoIIMvtIII = \relative c'' {
 	b4( c8. a16\!)
 	b4\mf( c8) r
 	R2 \mark \default
-	b4\pp r8 ais
+	b4-.\pp r8 ais
 % Bars 316 to 320
-	b4 r8 ais-.
+	b4-. r8 ais-.
 	b-. r c-. r
 	d-. r c-. b-.
 	d4 r8 cis!

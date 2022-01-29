@@ -2147,7 +2147,7 @@ cueVoiceViolinoIMvtIII = \relative c {
 cueVoiceViolinoIIMvtI = \relative c {
 	s1*8
 	% bar 9 - 10
-	fis'4.(^\markup {Viol.I.} gis16 a fis2)
+	fis'4.(-\tweak X-offset #-3 ^\markup {Viol.I.} gis16 a fis2)
 	fis4.( e16 cis fis2)
 }
 cueVoiceViolinoIIMvtII = \relative c {
@@ -2180,11 +2180,11 @@ cueVoiceViolinoIIMvtIII = \relative c {
 	% bar 165 - 168
 	\stemUp r8^\markup {Vcello Solo.} g,( a b)
 	cis( \tuplet 3/2 8 {b16 cis b)} a8( g16 fis)
-	e'4(^\markup {Clar.} cis)
+	\stemDown e'4(-\tweak X-offset #1.5 ^\markup {Clar.} cis)
 	e( cis) \stemNeutral
 	s2*30
 	% bar 199 - 201
-	\stemUp \cueClef alto g8^\pizz^\markup {Viola.} a, r4
+	\stemUp \cueClef alto g8^\pizz-\tweak X-offset #-4 ^\markup {Viola.} a, r4
 	\cueClef bass g8^\markup {Cello} a, r4
 	g'8^\markup {Basso.} a, r4 \cueClefUnset \stemNeutral
 }

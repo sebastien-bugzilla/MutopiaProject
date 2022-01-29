@@ -224,7 +224,7 @@ musicViolinoIIMvtI = \relative c' {
 	<fis a>1\downbow
 	q\upbow
 	<b, gis'>2:16_\dimD\> q:
-	<bes g'!>\fz\> cis:
+	<bes g'!>:\fz\> cis:
 	cis:\p cis:\>
 % Bars 201 to 205
 	cis: cis:
@@ -270,7 +270,7 @@ musicViolinoIIMvtI = \relative c' {
 	gis: gis:\!
 % Bars 236 to 240
 	b:\ppp b:
-	fisis! fisis:
+	fisis!: fisis:
 	gis1:
 	gis:
 	b1\pp(

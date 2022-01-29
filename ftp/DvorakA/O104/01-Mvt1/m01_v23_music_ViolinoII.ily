@@ -17,11 +17,11 @@ musicViolinoIIMvtI = \relative c' {
 	\ni \mmrPos #7 R1
 	\mmrPos #7 R \no
 % Bars 11 to 15
-	r4 cis8.\pp( e16 ais,8. cis16 g8. b16
+	r4 \shape #'((0 . 0.5)(0 . 0)(0 . 0)(0 . 0)) Slur cis8.\pp( e16 ais,8. cis16 g8. b16
 	ais8) r cis8.( e16 ais,8. cis16 g8. b16
 	ais8) r e'8.( g16 cis,8._\crescmarkup e16 b8. e16
 	ais,8) r e'8.( g16 cis,8. e16 b8. e16)
-	ais,8.(--->\< cis16-.) e8.(---> d16-.) cis8.(-> e16-.) g8.(-> fis16-.)
+	ais,8.(--^>\< cis16-.) e8.(--^> d16-.) cis8.(^> e16-.) g8.(^> fis16-.)
 % Bars 16 to 20
 	e4\! ais8.->\fz( b16-.) e8.(->\fz cis16-.) <e g>8.(->\fz q16-.)
 	g16(\f fis g fis g fis g fis g fis g fis g fis g fis)
@@ -66,12 +66,13 @@ musicViolinoIIMvtI = \relative c' {
 	R1
 % Bars 51 to 55
 	cis1\p\<
-	<<cis\> {s2 s2\dimmarkup}>>
+	cis\>
 	cis4(\p\> c cis c
 	ais b ais b)\!
 	gis(\pp g gis g)
 % Bars 56 to 60
-	R1*9
+	R1*1
+	\tempoXoffset #-3 R1*8
 % Bars 61 to 65
 	
 	
@@ -82,14 +83,14 @@ musicViolinoIIMvtI = \relative c' {
 	b: b:
 	b: b:
 	a2.: b4:
-	b2: b:
+	b1: 
 	a2.: cis16( a') a a
 % Bars 71 to 75
-	a2(_\crescD\< ais4 b)
+	a2(_\crescD\< ais4 \once \stemUp b)
 	b( cis d4. fis8)\!
 	fis4(\mf a2.)
-	a2_\crescmarkup cis,4.(\startTrillSpan d8\stopTrillSpan) \mark \default
-	<fis, d'>4->\ff a'16( fis d a) <d b'>8-. <d a'>-. q-. r
+	a2_\crescmarkup cis,4.(\trill d8) \mark \default
+	\tempoXoffset #1 <fis, d'>4->\ff a'16( fis d a) <d b'>8-. <d a'>-. q-. r
 % Bars 76 to 80
 	<d, a' fis'>4-> a''16\(( fis) fis( d)\) g8-. fis-. fis-. r
 	cis'16\(( a) a( fis)\) <a, g'>8-. <a fis'>-. q-. <cis e>-. q-. r
@@ -104,13 +105,13 @@ musicViolinoIIMvtI = \relative c' {
 	a\ppp b a ais)
 % Bars 86 to 90
 	b1:32
-	b2: b:
-	b: b:
-	b: b8 r r4
+	b:
+	b:
+	b2: b8 r r4
 	b2:32\< c4.:\! b16 b
 % Bars 91 to 95
-	b2:32\pp b:
-	b: b:
+	b1:32\pp 
+	b: 
 	b2.:\p\< c4:\!
 	c4:\fz\> d: <b d>2:\!
 	c4\f r r r8 <b d>\p^\pizz
@@ -125,7 +126,7 @@ musicViolinoIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	r8 b\pp^\arco r b r b r b
+	\tempoXoffset #1 r8 b\pp^\arco r b r b r b
 % Bars 111 to 115
 	r b r b r b r b
 	r <b d> r q r q r q
@@ -171,18 +172,18 @@ musicViolinoIIMvtI = \relative c' {
 % Bars 146 to 150
 	a b)
 	a2. r4
-	<d e>2:16\brack\pp q:
-	q: q:
-	q: q:
+	<d e>1:16\brack\pp 
+	q:
+	q: 
 % Bars 151 to 155
 	cis2.:  <d e>4:16
-	q2:_\crescmarkup q:
-	cis: cis:
+	q1:_\crescmarkup
+	cis:
 	cis2.:\mf d4:\<
 	d: fis:\! e: fis:
 % Bars 156 to 160
 	fis2:_\dimD\> <a, g'>:\! \mark \default
-	<a fis'>8\p r r4 r2
+	\tempoXoffset #1 <a fis'>8\p r r4 r2
 	R1*8
 	
 	
@@ -219,7 +220,7 @@ musicViolinoIIMvtI = \relative c' {
 	
 	<cis bes'>8\fz r r4 r2
 % Bars 191 to 195
-	r2 r4 r8\fermata <a g'>8\ff \mark \default
+	\tempoXoffset #-2 r2 r4 r8\fermata <a g'>8\ff \mark \default
 	<a fis'>4.\downbow e'16 fis d2\upbow\fz
 	c4.\fz\downbow b16 a c2\fz\upbow
 	e4.\fz\downbow fis16 gis e2\fz
@@ -228,10 +229,10 @@ musicViolinoIIMvtI = \relative c' {
 	<fis a>1\downbow
 	q\upbow
 	<b, gis'>2:16_\dimD\> q:
-	<bes g'!>\fz\> cis:
-	cis:\p cis:\>
+	<bes g'!>:\fz\> cis:
+	cis1:\p\> 
 % Bars 201 to 205
-	cis: cis:
+	cis:\!
 	cis1\pp~
 	cis
 	d4 r r2
@@ -243,7 +244,7 @@ musicViolinoIIMvtI = \relative c' {
 	c1\pp(
 	b8) r r4 r2
 % Bars 211 to 215
-	ees2:16\p ees:
+	ees1:16\p 
 	c'1
 	d16( bes d bes d bes d bes d bes d bes  d bes d bes)
 	d8 r d16( bes d bes d8)\< r d16( bes d bes
@@ -258,25 +259,25 @@ musicViolinoIIMvtI = \relative c' {
 	
 	
 	bes,4(_\ppdim des c ces) \mark \default
-	ces2:32\ppp b!:
-	b: b:
+	\tempoXoffset #1 ces2:32\ppp b!:
+	b1:
 % Bars 226 to 230
-	b: b:
-	b: b:
-	gis:\< gis:
-	gis: gis:\!
-	<< fisis1:\fz {s2 s_\dimmarkup } >>
+	b:
+	b: 
+	\tremoloPosition #-2 gis:\< 
+	\tremoloPosition #-2 gis:\!
+	\tremoloPosition #-2 fisis1:_\fzdimD\>
 % Bars 231 to 235
-	fisis2:32\> ais:
-	b:_\psempredimD b:
-	b: b:
-	gis:\> gis:
-	gis: gis:\!
+	fisis2:32 ais:\!
+	b1:-\tweak X-offset #0 _\psempredimD
+	b: 
+	\tremoloPosition #-2 gis:\>
+	\tremoloPosition #-2 gis:\!
 % Bars 236 to 240
-	b:\ppp b:
-	fisis! fisis:
-	gis1:
-	gis:
+	\tremoloPosition #-2 b:\ppp
+	\tremoloPosition #-2 fisis!:
+	\tremoloPosition #-2 gis1:
+	\tremoloPosition #-2 gis:
 	b1\pp(
 % Bars 241 to 245
 	cis2. ais4)
@@ -319,19 +320,19 @@ musicViolinoIIMvtI = \relative c' {
 	b2. dis4)
 	fis( cis b2)
 	ais( cis)
-	cis2:16\pp cis:
+	\tremoloPosition #-1 cis1:16\pp
 % Bars 276 to 280
-	cis: cis:
-	cis: cis:
-	ais: ais:
-	cis: cis:
-	ais: ais:
+	\tremoloPosition #-1 cis:
+	\tremoloPosition #-1 cis:
+	\tremoloPosition #-1 ais:
+	\tremoloPosition #-1 cis:
+	\tremoloPosition #-1 ais:
 % Bars 281 to 285
 	ais2.:\mf b4:
 	b: dis: cis: dis:
 	<b dis>2:\> e: \mark \default
-	dis8\p r r4 r2
-	R1*14
+	\tempoXoffset #1 dis8\p r r4 r2
+	\mmrLength #2.5 R1*14
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -367,17 +368,17 @@ musicViolinoIIMvtI = \relative c' {
 	b4.\ff cis16 dis b2
 	ais4. gis16 fis b2
 % Bars 321 to 325
-	b8.(-> ais32 b) cis8.(-> bis32 cis) dis8.->( cisis32 dis) e8.(->\< dis32 e)
+	\once \stemDown b8.(-> ais32 b) cis8.(-> bis32 cis) dis8.->( cisis32 dis) e8.(->\< dis32 e)
 	fis8.(-> eis32 fis)\! a!8(\fz gis) fis( e) dis( cis)
 	\setSextolet dis,16(_\fpp fis) \tuplet 3/2 4 {fis fis dis} dis16( fis) \tuplet 3/2 4 {fis fis dis} dis16( fis) \tuplet 3/2 4 {fis fis dis} dis16( fis) \tuplet 3/2 4 {fis fis dis} 
 	dis16( fis) \tuplet 3/2 4 {fis fis dis} dis16( fis) \tuplet 3/2 4 {fis fis dis} dis( gis) \tuplet 3/2 4 {gis gis dis} dis( gis) \tuplet 3/2 4 {gis gis dis} 
-	dis( gis) \tuplet 3/2 4 {gis gis dis} fis( ais) \tuplet 3/2 4 {ais ais fis} fis(_\crescmarkup b) \tuplet 3/2 4 {b b fis} gis( cis) \tuplet 3/2 4 {cis cis gis}
+	dis( gis) \tuplet 3/2 4 {gis gis dis} fis( ais) \tuplet 3/2 4 {ais ais fis} fis(_\crescmarkup b) \tuplet 3/2 4 {b b fis} gis!( cis) \tuplet 3/2 4 {cis cis gis}
 % Bars 326 to 330
-	a!(\< dis) \tuplet 3/2 4 {dis dis a} a( dis) \tuplet 3/2 4 {dis dis a} a( dis) \tuplet 3/2 4 {dis dis a} a( dis) \tuplet 3/2 4 {dis dis a\!}
+	\tupletUp a!(\< dis) \tuplet 3/2 4 {dis dis a} a( dis) \tuplet 3/2 4 {dis dis a} a( dis) \tuplet 3/2 4 {dis dis a} a( dis) \tuplet 3/2 4 {dis dis a\!} \tupletNeutral
 	\unsetSextolet <b e>8\fz r r4 r2
 	<gis b>8\p^\pizz r r4 r r8 d!\f
-	dis r r4 r2
-	R1*6
+	\tempoXoffset #-2 dis r r4 r2
+	\mmrLength #2 R1*6
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -388,10 +389,10 @@ musicViolinoIIMvtI = \relative c' {
 	
 % Bars 341 to 345
 	r2 r4 r8 fis,-.\f
-	<dis' fis>2:16\ff q:
-	q: q:
-	<fis dis'>: q:
-	<b gis'>: q:
+	<dis' fis>1:16\ff
+	q:
+	<fis dis'>:
+	<b gis'>: 
 % Bars 346 to 350
 	<dis fis>8 r <fis,, dis' b'>4-. r <e b' g'!>-.
 	r <fis dis'>-. <dis' b'>-. <b g'!>-.
