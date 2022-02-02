@@ -20,7 +20,8 @@
 \include "./00-Common/DvorakCello_OptionParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
-\include "./00-Common/DvorakCello_Format_Part12_Viola.ily"
+\include "./00-Common/DvorakCello_Format_temp.ly"
+%\include "./00-Common/DvorakCello_Format_Part12_Viola.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
 \include "./01-Mvt1/m01_v24_music_Viola.ily"
 \include "./02-Mvt2/m02_v24_music_Viola.ily"
@@ -66,6 +67,7 @@
 			}
 		}
 		\layout {
+			%system-count = 41
 		}
 	}
 	\score {
@@ -94,6 +96,7 @@
 			}
 		}
 		\layout {
+			%system-count = 15
 		}
 	}
 	\score {
@@ -113,7 +116,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -122,6 +125,7 @@
 			}
 		}
 		\layout {
+			%system-count = 39
 		}
 	}
 }

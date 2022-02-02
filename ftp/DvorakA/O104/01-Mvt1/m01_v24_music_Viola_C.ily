@@ -93,9 +93,9 @@ musicViolaMvtI = \relative c {
 	d( fis d fis  d fis d fis  d fis d fis) b,( d b d)\!
 	<a fis'>2:16\mf q:
 	<b d>:_\crescmarkup <e g>: \mark \default
-	<a, d>4\ff-> <fis' a>8 q-. <g b>-. <fis a>-. q-. r
+	<a, d>4\ff-> <fis' a>8-. q-. <g b>-. <fis a>-. q-. r
 % Bars 76 to 80
-	<a, d>4\ff-> <fis' a>8 q-. bes-. a-. a-. r
+	<a, d>4-> <fis' a>8-. q-. bes-. a-. a-. r
 	fis-. a-. cis-. d-. d,-. a'-. a,-. r
 	fis'-. a-. cis-. d-. d,-. a'-. a,-. r
 	<a d>4 d8 d <a d>4 d8 d 
@@ -390,7 +390,7 @@ musicViolaMvtI = \relative c {
 	q: <b dis>:
 % Bars 321 to 325
 	q4: <ais fis'>: <b fis'>: <b gis'>:
-	<dis a'!>2: <e gis>4: <ais, e'>:
+	<dis a'!>2: <e gis>4: <ais, e'>: \mark \default
 	b16_\fpp( dis) dis-. b-.  b( dis) dis-. b-.  b( dis) dis-. b-.  b( dis) dis-. b-.  
 	ais( dis) dis-. ais-. ais( dis) dis-. ais-. b( dis) dis-. b-.  b( dis) dis-. b-.  
 	b( dis) dis-. b-.  cis( fis) fis-. cis-. dis(_\crescmarkup fis) fis-. dis-. e( gis) gis-. e-.
