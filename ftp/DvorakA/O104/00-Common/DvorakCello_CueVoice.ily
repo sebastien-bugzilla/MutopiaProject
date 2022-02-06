@@ -2270,7 +2270,7 @@ cueVoiceContrabassoMvtIII = \relative c {
 	g8^\markup {Vcello} a, r4 \stemNeutral
 	s2*92
 	% bar 293 - 296
-	d8^\pizz^\markup {Vcello.} fis a fis
+	d8^\pizz-\tweak X-offset #-3 _\markup {Vcello.} fis a fis
 	d a' a, r
 	d a' a, r
 	d d, r4

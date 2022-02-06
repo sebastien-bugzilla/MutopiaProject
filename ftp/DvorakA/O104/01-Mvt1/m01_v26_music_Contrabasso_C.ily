@@ -27,7 +27,7 @@ musicContrabassoMvtI = \relative c' {
 	fis,2. fis'4->(
 	fis,8)\< r fis'4(-> fis,8) r fis'4->~
 % Bars 16 to 20
-	fis8 r\! fis'2.\ffz~
+	fis8 r\! fis'2.\fz~
 	fis8 r r4 r2
 	R1
 	fis,8\f fis fis fis  fis fis fis fis
