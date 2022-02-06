@@ -2230,7 +2230,7 @@ cueVoiceVioloncelloMvtII = \relative c {
 	e8( g fis4 e) \cueClefUnset
 	s2.*20
 	% bar 147 - 148
-	<b, d>8^\markup {Vcello Solo.} <g e'> <a fis'> <b g'> \tuplet 3/2 4 {<cis a'>( <d b'> <e cis'>)}
+	<b, d>8^\markup {Vcello Solo.} <g e'> <a fis'> <b g'> \tuplet 3/2 4 {<c a'>( <d b'> <e c'>)}
 	\afterGrace <fis d'>2.\trill\fermata {cis'16[ d]}
 }
 cueVoiceVioloncelloMvtIII = \relative c {

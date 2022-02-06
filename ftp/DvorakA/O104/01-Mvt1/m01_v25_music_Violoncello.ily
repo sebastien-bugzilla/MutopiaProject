@@ -25,17 +25,17 @@ musicVioloncelloMvtI = \relative c {
 	ais16( cis ais cis fis,2.)
 	fis fis'4_\crescmarkup
 	fis,2. fis'4
-	\tuplet 3/2 4 {fis8\< fis fis  fis fis fis  fis fis fis  fis fis fis
+	\tuplet 3/2 4 {fis4.:8\< fis: fis:  fis: 
 % Bars 16 to 20
-	fis fis fis } fis2.\fz
+	fis: } fis2.\fz
 	ais4.\f( b16 cis ais2)
 	ais4.( g!16 fis ais2)
-	fis8\f fis fis fis  fis fis fis fis
-	fis fis fis fis  fis fis fis fis
+	fis2:8\f fis: 
+	fis: fis: 
 % Bars 21 to 25
-	fis r r4 r2
+	fis8 r r4 r2
 	r4 r8 g-.\f\< fis-. e-. d-. cis-. \mark \default
-	b2\ff b->
+	\tempoXoffset #1 b2\ff b->
 	b2.\fz b4
 	b2.\fz b4-.
 % Bars 26 to 30
@@ -57,11 +57,11 @@ musicVioloncelloMvtI = \relative c {
 	fis( gis)\! gis4->\ff~ gis8 ais-. ais4\>~
 	ais_\dimD b( eis,2\p)
 % Bars 41 to 45
-	fis8\f\> eis16( fis  eis fis eis fis  e fis e fis  e fis e fis)\!
-	e(_\pcresc fis e fis  e fis e fis  d\< fis d fis  d fis d fis)\!
-	d(\mf\< e d e  d e d e  cis e cis e  cis e cis e)\!
-	cis(\f d cis d  b d b d  a cis a cis  g b g b) \mark \default
-	fis1\mf~
+	fis8\f\> eis16( fis  eis fis eis fis  \repeat tremolo 4 {e16 fis)\!}
+	\repeat tremolo 4 {e(_\pcrescD\< fis} \repeat tremolo 4 { d fis)}
+	\repeat tremolo 4 {d(\mf\< e} \repeat tremolo 4 { cis e)\!}
+	cis16(\f d cis d  b d b d  a cis a cis  g b g b) \mark \default
+	fis1-\tweak extra-offset #'(0 . -11.5) ^\mf~
 % Bars 46 to 50
 	fis
 	e1~_\dimmarkup
@@ -70,7 +70,7 @@ musicVioloncelloMvtI = \relative c {
 	R1
 % Bars 51 to 55
 	a1\p\<
-	<< a'\> {s2 s_\dimmarkup} >>
+	a'\>^\dimmarkup
 	a,1\p\>~
 	a~
 	a\pp~
@@ -93,7 +93,7 @@ musicVioloncelloMvtI = \relative c {
 	g: g:
 	g: g:
 % Bars 71 to 75
-	fis4(_\crescmarkup d) g2\<
+	fis4(_\crescD\< d) g2
 	gis2.\fz\< gis4
 	a1\brack\mf
 	a,\< \mark \default
@@ -135,7 +135,7 @@ musicVioloncelloMvtI = \relative c {
 	
 	
 	\mark \default
-	b8\pp^\pizz r d r b r d r
+	\tempoXoffset #1 b8\pp-\tweak X-offset #1 ^\pizz r d r b r d r
 % Bars 111 to 115
 	b r d r b r d r
 	b r e r b r e r
@@ -155,7 +155,7 @@ musicVioloncelloMvtI = \relative c {
 	fis,\fz r r4 r2
 	fis8\fz r r4 r2
 % Bars 126 to 130
-	fis,1\fz\<
+	\hairpinShorten #'(-0.5 . -0.5) fis,1\fz\<
 	fis8\fz r r4 r2 \mark \default
 	b'8-.\f b,-. r4 r2
 	g'8-.\f g,-. r4 r2
@@ -171,12 +171,12 @@ musicVioloncelloMvtI = \relative c {
 	e4 r r2
 	e2.\pp( a,4~
 	a1)
-	d2(\brack\pp g,
+	d2(\brack\pp g,)(
 % Bars 141 to 145
 	fis1)
 	a2( b)
 	cis4( b a2)
-	d2( g,)
+	\once \stemUp d2( g,)
 	fis( f
 % Bars 146 to 150
 	e1)
@@ -192,7 +192,7 @@ musicVioloncelloMvtI = \relative c {
 	r gis\< b d gis,4\! r8 gis
 % Bars 156 to 160
 	r8 a_\dimmarkup d fis a,4\> r8 a\! \mark \default
-	d,4\p r r2
+	\tempoXoffset #1 d,4\p r r2
 	cis'8\pp r d r cis r d r
 	cis r ais r r4 ais
 	cis8 r d r cis r d r
@@ -234,7 +234,7 @@ musicVioloncelloMvtI = \relative c {
 	a,8\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata a\ff \mark \default
-	d,2~ d8 d16-. d-. d4~
+	\tempoXoffset #1 d,2~ d8 d16-. d-. d4~
 	d2~ d8 d16-. d-. d4~
 	d2~ d8 d16-. d-. d4~
 	d2~ d8 d16-. d-. d4
@@ -281,8 +281,8 @@ musicVioloncelloMvtI = \relative c {
 	e!\! r r4 r e8 r
 	dis\fz r r4 r2
 % Bars 231 to 235
-	dis8\>_\dimmarkup r r4 fisis r8 fisis
-	gis4_\psempredimD r r2
+	dis8_\dimD\> r r4 fisis r8 fisis_\psempredimD
+	gis4 r r2
 	gis4 r r2
 	e4\> r r2
 	e4\! r r2
@@ -311,7 +311,7 @@ musicVioloncelloMvtI = \relative c {
 	d\mf fis d r d fis d r
 	cis\< e cis r cis e cis r\!
 % Bars 256 to 260
-	fis,1\fz\>~^\arco
+	\hairpinShorten #'(-0.5 . -0.5) fis,1\fz\>~^\arco
 	fis8\p r r4 r2
 	fis,1\pp~
 	fis8 r r4 r2
@@ -343,11 +343,11 @@ musicVioloncelloMvtI = \relative c {
 % Bars 281 to 285
 	r8 dis^\pizz\mf fis ais dis,4 r8 dis
 	r8 eis gis b eis,4 r8 eis
-	r fis\> b dis fis,4 r8 fis\! \mark \default
+	r fis\> b dis fis,4 r8 fis\! \markXoffset #-0.2 \mark \default
 	b,4\p r r2
 	ais'8\pp r b r ais r b r
 % Bars 286 to 290
-	ais\< r fisis r\! r4\> fisis8 r\!
+	\hairpinShorten #'(0 . 1) ais\< r fisis r\! r4\> fisis8 r\!
 	ais r b r ais r b r
 	ais r fisis\< r r4 fisis8 r\!
 	cis'8\mf r dis r cis r dis r
@@ -425,7 +425,7 @@ musicVioloncelloMvtI = \relative c {
 	q-. r q-. r
 	q-. r r2
 % Bars 351 to 354
-	r4 \tuplet 3/2 4 {b'8\f b b} b4 b
+	r4 \once \tupletUp \tuplet 3/2 4 {b'8\f b b} b4 b
 	b2 b,4. b8
 	b1:32\<
 	b4_\ffzD r r2 \markupfermata \bar "|."
