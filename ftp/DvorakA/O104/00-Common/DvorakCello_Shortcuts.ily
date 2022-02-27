@@ -65,7 +65,7 @@ dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
 pcrescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cresc."))
 fanimatoD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "animato"))
-ppdolceD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dolce"))
+ppdolceD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dolce"))
 psempredimD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "sempre dim."))
 ffzD = \tweak DynamicText.self-alignment-X #0 #(make-dynamic-script (markup #:dynamic "ffz"))
 ppdimD = \tweak DynamicText.self-alignment-X #0 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dim."))
@@ -92,7 +92,7 @@ arcobrack=^\markup {[arco]}
 lunga=^\markup {\italic lunga}
 lungafermata=^\markup {
 	\halign #-0.2 \center-column {
-		\lower #1 \italic "lunga"
+		\lower #1.1 \italic "lunga"
 		\musicglyph #"scripts.ufermata"
 	}
 }
@@ -175,6 +175,20 @@ naturaltrillmark = \markup {
 	}
 }
 
+sharptrillaccentmark = \markup { 
+	\center-column {
+		\concat { 
+			\hspace #1.2 \lower #1.3 
+			\general-align #Y #CENTER {
+				\musicglyph #"scripts.trill" 
+				\hspace #0.4
+				\teeny \sharp 
+			}
+		}
+		\musicglyph #"scripts.sforzato"
+	}
+}
+
 trillAccidental = #(define-music-function 
 	(accidental)
 	(markup?)
@@ -214,6 +228,7 @@ ffcolottava = {
 }
 
 fzconottavabassaadlibitum = {
+	\once \override TextSpanner.Y-extent = #'(0 . 0.5)
 	\once \override TextSpanner.bound-details.left.text = \markup {
 		\dynamic fz 
 		\italic {
@@ -221,6 +236,10 @@ fzconottavabassaadlibitum = {
 		}
 	}
 	\once \override TextSpanner.bound-details.left-broken.text = ""
+	\once \override TextSpanner.bound-details.right.text = \markup {
+		\italic { senza \concat {8 \super va} }
+	}
+	\once \override TextSpanner.bound-details.right-broken.text = ""
 }
 
 setSextolet = {
@@ -339,6 +358,14 @@ tempoOsp = {
 	\once \override Score.MetronomeMark.outside-staff-priority = #500
 }
 
+textOsp = #(define-music-function
+	(priority)
+	(number?)
+	#{
+		\once \override TextScript.outside-staff-priority = #priority
+	#}
+)
+
 mmrLength = #(define-music-function
 	(length)
 	(number?)
@@ -379,6 +406,14 @@ hairpinShorten = #(define-music-function
 	#}
 )
 
+ottavaShorten = #(define-music-function
+	(value)
+	(pair?)
+	#{
+		\once \override Staff.OttavaBracket.shorten-pair = #value
+	#}
+)
+
 scriptStencil = #(define-music-function
 	(mymarkup)
 	(markup?)
@@ -396,3 +431,130 @@ tremoloPosition = #(define-music-function
 		\once \override StemTremolo.Y-offset = #position
 	#}
 )
+
+% footnotes:
+footnotePageII = \markup {
+	"(*) Orig." \hspace #2
+	\score {
+		\new Staff \with { 
+			\omit Clef \omit TimeSignature \omit KeySignature
+			\magnifyStaff #2/3
+		} {
+			\relative c, { 
+				\key b \minor
+				\clef bass <fis dis' b'>4
+			}
+		}
+		\layout {
+			indent = 0
+		}
+	}
+}
+footnotePageVI = \markup {
+	% bar 298
+	"(*) Orig." \hspace #2
+	\score {
+		\new Staff \with { 
+			\omit Clef \omit TimeSignature \omit KeySignature
+			\magnifyStaff #2/3
+		} {
+			\relative c { 
+				\key b \minor
+				\clef bass <ais fis' e'>8.-^ dis'16-. cis(\< b ais fis')\!
+			}
+		}
+		\layout {
+			indent = 0
+		}
+	}
+	\hspace #5
+	% bar 301
+	"(**) Orig." \hspace #2
+	\score {
+		\new Staff \with { 
+			\omit Clef \omit TimeSignature \omit KeySignature
+			\magnifyStaff #2/3 
+		} {
+			\relative c'' { 
+				\key b \minor
+				\clef tenor gis16 ais( b) ais\laissezVibrer
+			}
+		}
+		\layout {
+			indent = 0
+		}
+	}
+}
+footnotePageVII = \markup {
+	"(*) Orig." \hspace #2
+	\score {
+		\new Staff \with { 
+			\omit Clef \omit TimeSignature \omit KeySignature
+			\magnifyStaff #2/3 
+		} {
+			\relative c' { 
+				\key b \minor
+				\clef bass e8.( fis32 gis)
+			}
+		}
+		\layout {
+			indent = 0
+		}
+	}
+	\hspace #5
+	"(**) Orig." \hspace #2
+	\score {
+		\new Staff \with { 
+			\omit Clef \omit TimeSignature \omit KeySignature
+			\magnifyStaff #2/3
+		} {
+			\relative c'' { 
+				\key b \minor
+				\clef treble <b b'>4
+			}
+		}
+		\layout {
+			indent = 0
+		}
+	}
+}
+footnotePageIX = \markup {
+}
+footnotePageX = \markup {
+	% bar 107
+	"(*) Orig. pizz."
+	% bar 116
+	\hspace #5
+	"(**) Orig." \hspace #2
+	\score {
+		\new Staff \with { 
+			\omit Clef \omit TimeSignature \omit KeySignature
+			\magnifyStaff #2/3
+		} {
+			\relative c' { 
+				\key g \major
+				\clef bass \once \stemUp fis2
+			}
+		}
+		\layout {
+			indent = 0
+		}
+	}
+	\hspace #5
+	% bar 138
+	"(***) Orig." \hspace #2
+	\score {
+		\new Staff \with { 
+			\omit Clef \omit TimeSignature \omit KeySignature
+			\magnifyStaff #2/3
+		} {
+			\relative c' { 
+				\key g \major
+				\clef tenor \tuplet 3/2 4 {d8( e! f)}
+			}
+		}
+		\layout {
+			indent = 0
+		}
+	}
+}

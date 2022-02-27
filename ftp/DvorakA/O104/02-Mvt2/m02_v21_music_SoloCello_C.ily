@@ -41,7 +41,7 @@ musicSoloCelloMvtII = \relative c' {
 	d8(->_\soufflet c16) r d8->(_\soufflet c16) r c8(->_\soufflet b16) r
 	b8(->_\soufflet bes16) r bes8(->_\soufflet a16) r a8(->_\soufflet gis16) r \clef tenor
 % Bars 31 to 35
-	aes8(_\pdim_\soufflet g16) r g8(_\soufflet fis!16) r fis8(_\soufflet f16) r 
+	aes8(_\pdim_\soufflet g!16) r g8(_\soufflet fis!16) r fis8(_\soufflet f16) r 
 	f8(\pp ees16) r f8( ees16) r d8( c16) r
 	c8( b!16) r c8( b16) r \clef bass \tuplet 3/2 4 {d8( c b)}
 	e2(\ppp d4\fermata \mark \default
@@ -152,7 +152,7 @@ musicSoloCelloMvtII = \relative c' {
 	}>>
 % Bars 116 to 120
 	<<{
-		fis''2^\f fis4 \clef tenor
+		<a'' fis'>2^\f fis'4 \clef tenor
 		<e c'>-> <d b'>-> <c a'>->
 	} \\ {
 		r4 d,\fz_\pizz r
@@ -182,7 +182,7 @@ musicSoloCelloMvtII = \relative c' {
 % Bars 136 to 140
 	c4\pp a) \tuplet 3/2 4 {fis8( gis a)}
 	bes4( g!) \tuplet 3/2 4 {e8( fis! g)}
-	aes4( f) \tuplet 3/2 4 {d8(\< e! f)}
+	aes4( f) \tuplet 3/2 4 {d8(\< ees f)}
 	ges2._\crescD~
 	ges4\< g( a!8 ais)
 % Bars 141 to 145

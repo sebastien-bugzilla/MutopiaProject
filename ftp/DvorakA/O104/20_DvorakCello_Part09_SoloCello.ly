@@ -23,8 +23,10 @@
 \include "./00-Common/DvorakCello_Format_Part09_SoloCello.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
 \include "./01-Mvt1/m01_v21_music_SoloCello.ily"
+\include "./01-Mvt1/m01_v21_music_SoloCello_Ossia.ily"
 \include "./02-Mvt2/m02_v21_music_SoloCello.ily"
 \include "./03-Mvt3/m03_v21_music_SoloCello.ily"
+\include "./03-Mvt3/m03_v21_music_SoloCello_Ossia.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -40,23 +42,32 @@
 			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
 		}
 		instrument = \markup {
-			"SoloCello"
+			"Violoncello Solo"
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatSoloCelloMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(solocello) \tempiPartMvtI
-			}
-			\new Voice {
-				\InCueContext \cueVoiceSoloCelloMvtI
-			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameSoloCelloMvtI \musicSoloCelloMvtI
+		<<
+			\new Staff <<
+				\new Voice {
+					\formatSoloCelloMvtI
+				}
+				\new Voice {
+					\keepWithTag #'(solocello) \tempiPartMvtI
+				}
+				\new Voice {
+					\InCueContext \cueVoiceSoloCelloMvtI
+				}
+				\new Voice {
+					\timeMvtI \generalOptions \partOptions
+					\nameSoloCelloMvtI \musicSoloCelloMvtI
+				}
+			>>
+			\new Staff = "ossia" \with {
+				\remove "Time_signature_engraver"
+				\magnifyStaff #2/3
+				\RemoveAllEmptyStaves
+			} { 
+				\musicSoloCelloOssiaMvtI
 			}
 		>>
 		\header {
@@ -88,7 +99,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -100,19 +111,28 @@
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatSoloCelloMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(solocello) \tempiPartMvtIII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceSoloCelloMvtIII
-			}
-			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameSoloCelloMvtIII \musicSoloCelloMvtIII
+		<<
+			\new Staff <<
+				\new Voice {
+					\formatSoloCelloMvtIII
+				}
+				\new Voice {
+					\keepWithTag #'(solocello) \tempiPartMvtIII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceSoloCelloMvtIII
+				}
+				\new Voice {
+					\timeMvtIII \generalOptions \partOptions
+					\nameSoloCelloMvtIII \musicSoloCelloMvtIII
+				}
+			>>
+			\new Staff = "ossia" \with {
+				\remove "Time_signature_engraver"
+				\magnifyStaff #2/3
+				\RemoveAllEmptyStaves
+			} { 
+				\musicSoloCelloOssiaMvtIII
 			}
 		>>
 		\header {

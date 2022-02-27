@@ -57,7 +57,7 @@ musicSoloCelloMvtI = \relative c' {
 	b4._\frisoluto\downbow cis16 dis b2\upbow
 	b4.\downbow a16 fis b2\upbow
 	b8.\< dis16 fis8.-> e16 dis4-^\! <a, fis' c'>-^\fz
-	<fis dis' b'>-^\fz\arpeggio <fis dis' a'>-^\fz\arpeggio <ees c' g'>-^\fz\arpeggio <dis a' fis'>-^\fz\arpeggio
+	<g dis' b'>-^\fz\arpeggio <fis dis' a'>-^\fz\arpeggio <ees c' g'>-^\fz\arpeggio <dis a' fis'>-^\fz\arpeggio
 % Bars 91 to 95
 	<gis e' b'>8\arpeggio e''4\downbow\ff fis16 gis e2\upbow
 	e4.\downbow d!16 b e2\upbow
@@ -121,8 +121,8 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 141 to 145
 	d2( a4) d(
 	e fis) a( fis8 d)
-	e2. eis4(
-	fis2~ fis8) e!( d b)
+	e2.( eis4)
+	fis2~ fis8 e!( d b)
 	d2( a4)\< a'~\!
 % Bars 146 to 150
 	a\> cis,( fis \tuplet 3/2 4 {e8 d b\!}
@@ -133,8 +133,8 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 151 to 155
 	fis( e2)\! b'4(\<
 	e d) b(\! g)
-	fis(\> e2)\! \clef tenor e4(\<
-	a_\fanimatoD fis) e( d)
+	fis(\> e2)\! \clef tenor e4\<
+	a(\f fis) e( d)
 	fis( d) cis( b)
 % Bars 156 to 160
 	d( a)_\dimmarkup \acciaccatura fis'8 e4.( d8) \mark \default
@@ -288,11 +288,11 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 296 to 300
 	ees8.( g,16 bes2.)
 	<ais, g'! cis>8._\fzconforza\< ais'16 g!( fis e cis')\! <b,! gis' dis'>8.\fz cis'!16 b( ais! gis! dis')
-	<bis, fis' dis'>8.\fz b'!16 a!(_\crescmarkup gis fis dis') <ais, fis' e'>8.-^\arpeggio dis'!16 cis(\< b ais fis')\! \clef tenor
+	<bis, fis' dis'>8.\fz b'!16 a!(_\crescmarkup gis fis dis') <ais, fis' e'>8.-^\arpeggio cis'!16 b(\< ais fis fis')\! \clef tenor
 	fis\f gis( a!) gis( a4) fis16 gis( a)_\crescmarkup gis( a4)
 	g!16 ais( b) ais( b4) g16 ais( b) ais( b4)
 % Bars 301 to 305
-	gis16\ff ais( b) ais( b) ais( b) ais( b) ais( b)\< ais( b) ais( b) ais( 
+	\footnote r16 ais(\ff b) ais( b) ais( b) ais( b) ais( b)\< ais( b) ais( b) ais( 
 	b) ais( b) ais( b) ais( b) ais(\! cis8 b) ais( gis) \mark \default
 	fis2 r \clef bass
 	\tuplet 3/2 4 {r8 fis,\f\< fis fis( fis') fis-.} fis( e)\! dis( cis)
@@ -307,7 +307,7 @@ musicSoloCelloMvtI = \relative c' {
 	d4)_\ffz r r2
 	R1 \clef bass
 	r4 \tuplet 3/2 4 {fis,,,8\f\<\upbow-. ais-. cis-. fis-. ais-. cis-.\! } cis8.\upbow(\fz dis32 e)
-	<ais,, fis' cis'>8 r \tuplet 3/2 4 {ais8\upbow-. cis-. e-. e-. ais-. cis-. } e8.(\upbow\fz fis32 gis)
+	<ais,, fis' cis'>8 r \tuplet 3/2 4 {ais8\upbow-. cis-. e-. e-. ais-. cis-. } e8.(\upbow\fz fis32 g)
 	<cis,, ais' e'>4\arpeggio \tuplet 3/2 4 {cis8 e ais ais cis e} \clef tenor ais8.(\fz b32 cis)
 % Bars 316 to 320
 	ais4 ais8.\fz( b32 cis) ais4 ais8.(\fz b32 cis)
@@ -346,7 +346,7 @@ musicSoloCelloMvtI = \relative c' {
 	<ais fis'>) <ais fis'>( <b g'>) <b g'>( <ais fis'>) <ais fis'>( <b g'>) <b g'>( <ais fis'>) <ais fis'>( <b g'>) <b g'>( <ais fis'>) <ais fis'>( <b g'>) <b g'>-.
 % Bars 341 to 345
 	fis'4->\trill fis\trill-> fis->\trill \afterGrace fis->\trill {eis16[( fis])}
-	<b, b'>4 r r2
+	b4\ff r r2
 	R1*12
 % Bars 346 to 350
 	

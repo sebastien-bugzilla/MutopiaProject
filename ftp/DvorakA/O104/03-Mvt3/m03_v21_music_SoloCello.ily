@@ -31,7 +31,7 @@ musicSoloCelloMvtIII = \relative c {
 % Bars 31 to 35
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no \clef bass
-	fis4->_\mfrisoluto b->
+	fis4->_\mfrisoluto^\solo b->
 	cis8 d16 cis b4
 	fis'4-> e16( d cis b)
 % Bars 36 to 40
@@ -74,18 +74,18 @@ musicSoloCelloMvtIII = \relative c {
 	fis4-> g16-. g( a g)
 	fis-^ fis( g fis) e-^ e( fis e)
 	cis-^ cis( d cis) ais-^ ais( b ais) \clef bass
-	\tuplet 3/2 8 {fis[(\stopTextSpan_\senzaottava a! g] fis[ e d] cis[ b ais]) e'[( d cis]
+	\tuplet 3/2 8 {fis[(\stopTextSpan a! g] fis[ e d] cis[ b ais]) e'[( d cis]
 	b[ ais fis])} cis'->[ e,-.] g[-> e'-.] g->[ b,-.]
 % Bars 71 to 75
 	ais-> g'-. fis-> ais,-. g'-> fis-. ais,-> g'-.
-	fis2_\ffz\startTrillSpan
-	fis\brack_\ffz\startTrillSpan
-	g\startTrillSpan
-	fis4.\startTrillSpan gis8\startTrillSpan
+	fis2-\tweak X-offset #-1 _\ffz\trill
+	fis\brack_\ffz\trill
+	g\trill
+	fis4.\trill gis8\trill
 % Bars 76 to 80
-	ais2\startTrillSpan \clef treble
-	ais4\startTrillSpan b\startTrillSpan~
-	b4. a!16\stopTrillSpan g
+	ais2\trill \clef treble
+	ais4\trill b\trill~
+	b4. a!16 g
 	fis16( e d cis) b8-. ais-.
 	b4 r \clef bass
 % Bars 81 to 85
@@ -144,7 +144,7 @@ musicSoloCelloMvtIII = \relative c {
 % Bars 141 to 145
 	e(\p g\>
 	b, cis8 d!)\! \mark \default
-	r8 e_\pdolce( fis16 a g fis)
+	\tempoXoffset #1 r8 e_\pdolce( fis16 a g fis)
 	r8 e( fis16 a g fis)
 	r8 \clef bass e(\< cis d)
 % Bars 146 to 150
@@ -163,7 +163,7 @@ musicSoloCelloMvtIII = \relative c {
 	r8 a( bes16 d c bes)\!
 	r8 a( cis! fis!)
 	e( d4) r8
-	r e(\mf\< fis4)\!
+	r \hairpinShorten #'(-0.5 . -2) e(\mf\< fis4)\!
 	r8 e(\< fis4)\!
 % Bars 161 to 165
 	r8 e(\< g fis)\!
@@ -172,8 +172,8 @@ musicSoloCelloMvtIII = \relative c {
 	r8 e(\< fis4)\! \clef treble
 	r8 g(\< a b)
 % Bars 166 to 170
-	cis!( \tuplet 3/2 8 {b16 cis b} a8\> g16 fis)\! \mark \default
-	r8 e!(\p\< \tuplet 5/4 4 {eis16 fis a g fis)\!}
+	cis!( \once \tupletUp \tuplet 3/2 8 {b16 cis b\!} a8\> g16 fis)\! \mark \default
+	\tempoXoffset #1 r8 e!(\p\< \tuplet 5/4 4 {eis16 fis a g fis)\!}
 	r8 e!(\< \tuplet 5/4 4 {eis16 fis a g fis)\!}
 	r8 \tuplet 3/2 8 {e!16\<([ fis e] d[ e d] cis[ d cis])
 	d[( e d] e[ fis e] g[ a g] fis[ g fis]\!)}
@@ -185,7 +185,7 @@ musicSoloCelloMvtIII = \relative c {
 	fis\! fis\f~( \tuplet 5/4 4 {fis16 g b a g)
 % Bars 176 to 180
 	eis( fis a g fis) dis( e g fis e)} \clef bass
-	\separateSextolet \tuplet 3/2 8 {d!16(\f\> fis d  b d b  fis b fis  d fis d)\!
+	\separateSextolet \tuplet 3/2 8 {d!16(\f\> fis d  b d b  fis b fis \once \tupletUp d fis d)\!
 	b( d b  d fis d  fis b fis  b d b)
 	d( fis d  a d a  fis a fis  d fis d)
 	a( d a  d fis d  fis a fis  a d a)
@@ -197,22 +197,22 @@ musicSoloCelloMvtIII = \relative c {
 	a'( cis! a  g bes g  e g e \clef bass cis! e cis)
 % Bars 186 to 190
 	a( cis a  g bes g  e g e  cis e cis) \unseparateSextolet \setSextolet
-	a(\< ais b  bis cis d  dis e eis  fis g gis)
+	a(\< ais b  bis cis d \tupletUp dis e eis  fis g gis) \tupletNeutral
 	a( ais b  bis cis d  \clef tenor dis e eis  fis g gis)\! } \unsetSextolet
-	\flattrill a2_\ffz\startTrillSpan
-	\flattrill << a2\startTrillSpan {s4 s8 s\stopTrillSpan} >>
+	\trillAccidental \flattrillmark a2_\ffz\trill
+	\trillAccidental \flattrillmark a2\trill 
 % Bars 191 to 195
 	a16(\< bes gis a bes gis a bes)
 	gis( a bes gis a bes gis a)\! \clef treble
-	cis2\fz~\startTrillSpan
-	<< cis {s4\startTrillSpan s8 s\stopTrillSpan}>>
+	cis2\fz~\trill
+	cis\trill 
 	cis16(\< d! bis cis d bis cis d)\!
 % Bars 196 to 200
 	bis( cis d bis cis d bis cis)
-	e2\startTrillSpan\fz~
-	<< e {s4\startTrillSpan s8 s\stopTrillSpan}>>
-	\setSextolet \tuplet 3/2 4 {e16(\ff g e cis e cis bes cis bes g bes g)
-	e( g e \clef tenor cis e cis bes cis bes g bes g)
+	e2\trill\fz~
+	e\trill
+	\setSextolet \tuplet 3/2 8 {e16(-\tweak X-offset #-2 \ff g e cis e cis bes cis bes g bes g)
+	e( g e cis e cis \clef tenor bes cis bes g bes g)
 % Bars 201 to 205
 	g'( bes g e g e cis e cis bes cis bes)
 	g( bes g e g e \clef bass cis e cis bes cis bes)} \unsetSextolet
@@ -265,25 +265,38 @@ musicSoloCelloMvtIII = \relative c {
 	e8-.(\< fis-.) a16( g fis) e-.\!
 	\tuplet 5/4 4 {d( e g fis\> e)} d8-.( cis-.)
 	b4\! r
-	R2*7
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 256 to 260
-	
-	
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \mark \default
 % Bars 261 to 265
-	R2*16
+	\mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R
 % Bars 266 to 270
-	
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 271 to 275
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-7 R
+	\mmrPos #-8 R
+	\mmrPos #-10 R
 % Bars 276 to 280
-	
-	\ni \mmrPos #-6 R2
+	\mmrPos #-8 R
+	\mmrPos #-6 R2
 	\mmrPos #-6 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \mark \default \bar "||"
+	\mmrPos #-4 R \no \mark \default \bar "||" \pageBreak
 % Bars 281 to 285
 	b4_\mpdolcecantabile(-- b~--
 	b8) a( b c)
@@ -325,7 +338,7 @@ musicSoloCelloMvtIII = \relative c {
 	d16( g b, e) d4\!
 	d16 g d e d a' fis e
 	\tuplet 3/2 4 {d8(-^ c-^ a)-^} fis16(-^ d-^ c-^ a)-^ \mark \default
-	<g b'>16(\fp d' g a b d, ais' b)
+	<g b'>16(-\tweak X-offset #-3 -\tweak extra-offset #'(0.9 . -1.8) \fp d' g a b d, ais' b)
 % Bars 316 to 320
 	b( d, g a! b d, ais' b)
 	b( d, ais' b) c( d, b' c)
@@ -348,30 +361,30 @@ musicSoloCelloMvtIII = \relative c {
 	cis!8-> r r4
 	\ni \mmrPos #-6 R2 \no
 	r4 \clef bass \tuplet 6/4 4 {a,,16(\mf\< cis) cis( e) e( a)
-	a( cis) cis( e) e( a)} a4\startTrillSpan\!
-	gis8\p\stopTrillSpan r r4
+	a( cis) cis( e) e( a)} a4\trill\!
+	gis8\p r r4
 % Bars 336 to 340
 	R2
 	r4 \tuplet 6/4 4 {gis,,16\mf\<( cis) cis( eis) eis( gis)
-	gis( cis)\! cis( eis) eis( gis)} gis4\startTrillSpan
-	ais8\p\stopTrillSpan r r4
+	gis( cis)\! cis( eis) eis( gis)} gis4\trill
+	ais8\p r r4
 	R2
 % Bars 341 to 345
 	r4 \tuplet 6/4 4 {bes,,16(\mf d) d( f) f( bes)
-	bes( d) d( f) f( bes)} \clef treble \naturaltrill \afterGrace bes4\startTrillSpan {a16( bes)\stopTrillSpan}
-	bes,(\< d) \tuplet 3/2 4 {d( f bes)} \naturaltrill << bes4\startTrillSpan {s16 s s s\stopTrillSpan} >>
-	bes,( d) \tuplet 3/2 4 {d( f bes)} \naturaltrill << bes4\startTrillSpan {s16 s s s\stopTrillSpan} >>
-	bes,( d) \tuplet 3/2 4 {d( f bes)} \naturaltrill << bes4\startTrillSpan {s16 s s s\stopTrillSpan} >>
+	bes( d) d( f) f( bes)} \clef treble \trillAccidental \naturaltrillmark \afterGrace bes4\trill {a16( bes)}
+	bes,16(\< d) \tuplet 3/2 8 {d( f bes)} \trillAccidental \naturaltrillmark bes4\trill
+	bes,16( d) \tuplet 3/2 8 {d( f bes)} \trillAccidental \naturaltrillmark bes4\trill 
+	bes,16( d) \tuplet 3/2 8 {d( f bes)} \trillAccidental \naturaltrillmark bes4\trill
 % Bars 346 to 350
-	bes,( d) \tuplet 3/2 4 {d( f bes)} \naturaltrill << bes4\startTrillSpan\! {s16 s s s\stopTrillSpan} >> \bar "||" \key b \major
-	\sharptrill b!2\startTrillSpan_\ffmoltoespressivo
-	b\startTrillSpan 
-	b\startTrillSpan 
-	b\startTrillSpan 
+	bes,16( d) \tuplet 3/2 8 {d( f bes)} \trillAccidental \naturaltrillmark bes4\trill\! \bar "||" \key b \major
+	\sharptrill b!2~\startTrillSpan_\ffmoltoespressivo
+	b~\startTrillSpan 
+	b~\startTrillSpan 
+	b~\startTrillSpan 
 % Bars 351 to 355
+	b~\startTrillSpan 
 	b\startTrillSpan 
-	b\startTrillSpan 
-	b4(\stopTrillSpan ais8.\prall gis16)
+	\once \stemUp b4(\stopTrillSpan ais8.\prall gis16)
 	ais2
 	ais4 ais(
 % Bars 356 to 360
@@ -451,13 +464,13 @@ musicSoloCelloMvtIII = \relative c {
 	gis a8(\< gis)
 	fis( e) dis( cis)\!
 	fis4-> b->
-	cis\startTrillSpan dis8-^\stopTrillSpan cis-^
+	cis\trill dis8-^ cis-^
 % Bars 421 to 425
 	b4 r
-	\clef treble \ni \mmrPos #-4 R2
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
-	\clef bass r4 fis,,-^\ff
+	\clef treble \ni \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
+	\clef bass r4 fis,,^^\ff
 % Bars 426 to 430
 	b \tuplet 3/2 4 {cis8( dis cis)}
 	b( dis <dis b'> <fis cis'>)
@@ -484,9 +497,9 @@ musicSoloCelloMvtIII = \relative c {
 	\tuplet 3/2 4 {cis8( dis_\dimmarkup cis b cis b
 % Bars 446 to 450
 	ais b ais gis ais\> gis)
-	fis( gis fis e fis e
-	dis e dis cis dis cis)} \mark \default
-	b4(\p fis~
+	\tupletUp fis( gis fis e fis e
+	dis e dis \stemDown cis dis cis)} \stemNeutral \tupletNeutral \mark \default
+	\tempoXoffset #2 b4(\p fis~
 	fis8 b_\dimmarkup fis4~
 % Bars 451 to 455
 	fis8) b( fis4~
@@ -499,22 +512,22 @@ musicSoloCelloMvtIII = \relative c {
 	b4( \tuplet 3/2 4 {cis8 dis cis}
 	b4 \tuplet 3/2 4 {cis8 dis cis)
 	b( fis' e dis b' gis}
-	fis2)~
+	\startMeasureCount fis2)~
 % Bars 461 to 465
 	fis~
 	fis~
 	fis~
-	fis~
+	fis~ \stopMeasureCount
 	fis8 dis'(\< cis b) \clef treble
 % Bars 466 to 470
 	fis'16( e dis b' gis fis dis' b)\!
-	fis2\fp~
+	\startMeasureCount fis2\fp~
 	fis~\>
 	fis~\!
 	fis~
 % Bars 471 to 475
 	fis~
-	fis~
+	fis~ \stopMeasureCount 
 	\tuplet 3/2 4 {fis8( b gis\> fis dis' cis)}
 	b( fis' e dis)\!
 	b'2\<\startTrillSpan
@@ -544,28 +557,19 @@ musicSoloCelloMvtIII = \relative c {
 	fis\<
 % Bars 496 to 500
 	fis4.( b8)\! \mark \default
-	b2\ff~
+	\tempoXoffset #1.3 b2\ff~
 	b~
 	b4 r
-	R2
+	\mmrnDown R2*6
 % Bars 501 to 505
-	\ni \mmrPos #4 R
-	\mmrPos #4 R
-	\mmrPos #4 R
-	\mmrPos #4 R
-	\mmrPos #-4 R
+	
 % Bars 506 to 510
-	\mmrPos #-6 R
-	\mmrPos #-4 R
-	\mmrPos #-6 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
+	\tempoXoffset #-3 \mmrnDown R2*3
+	
+	
+	\mmrnDown R2*8
 % Bars 511 to 515
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-9 R
-	\mmrPos #4 R
+	
 % Bar 516
-	\mmrPos #4 R \no \bar "|."
+	\bar "|."
 }

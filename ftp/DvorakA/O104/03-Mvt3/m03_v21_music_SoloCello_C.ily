@@ -199,7 +199,7 @@ musicSoloCelloMvtIII = \relative c {
 	bis( cis d bis cis d bis cis)
 	e2\startTrillSpan\fz~
 	<< e {s4\startTrillSpan s8 s\stopTrillSpan}>>
-	\setSextolet \tuplet 3/2 4 {e16(\ff g e cis e cis bes cis bes g bes g)
+	\setSextolet \tuplet 3/2 8 {e16(\ff g e cis e cis bes cis bes g bes g)
 	e( g e \clef tenor cis e cis bes cis bes g bes g)
 % Bars 201 to 205
 	g'( bes g e g e cis e cis bes cis bes)
@@ -352,12 +352,12 @@ musicSoloCelloMvtIII = \relative c {
 	bes,( d) \tuplet 3/2 4 {d( f bes)} \naturaltrill << bes4\startTrillSpan {s16 s s s\stopTrillSpan} >>
 % Bars 346 to 350
 	bes,( d) \tuplet 3/2 4 {d( f bes)} \naturaltrill << bes4\startTrillSpan\! {s16 s s s\stopTrillSpan} >> \bar "||" \key b \major
-	\grace {s8} \sharptrill b!2\startTrillSpan_\ffmoltoespressivo
-	b\startTrillSpan 
-	b\startTrillSpan 
-	b\startTrillSpan 
+	\grace {s8} \sharptrill b!2~\startTrillSpan_\ffmoltoespressivo
+	b~\startTrillSpan 
+	b~\startTrillSpan 
+	b~\startTrillSpan 
 % Bars 351 to 355
-	b\startTrillSpan 
+	b~\startTrillSpan 
 	b\startTrillSpan 
 	b4(\stopTrillSpan ais8.\prall gis16)
 	ais2

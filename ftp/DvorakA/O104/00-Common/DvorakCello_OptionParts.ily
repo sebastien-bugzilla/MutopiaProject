@@ -24,6 +24,7 @@ partOptions = {
 	\set Voice.restNumberThreshold = #0
 	\override Score.MeasureCounter.outside-staff-priority = #390
 	\override Arpeggio.padding = #0.25
+	\override Score.FootnoteItem #'annotation-line = ##f
 }
 #(set-global-staff-size 19)
 %#(ly:set-option 'debug-skylines #t)
