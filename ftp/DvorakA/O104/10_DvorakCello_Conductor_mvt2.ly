@@ -20,7 +20,8 @@
 \include "./00-Common/DvorakCello_NameStaff.ily"
 \include "./00-Common/DvorakCello_NameGrandStaff.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
-\include "./00-Common/DvorakCello_Format_Cond_Mvt02.ily"
+\include "./00-Common/DvorakCello_Format_temp.ly"
+%\include "./00-Common/DvorakCello_Format_Cond_Mvt02.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
 \include "./02-Mvt2/m02_v01_music_FlautoI_C.ily"
 \include "./02-Mvt2/m02_v02_music_FlautoII_C.ily"
@@ -68,9 +69,9 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtII
-%					}
+					\new Voice {
+						\formatConductorMvtII
+					}
 					\new Voice {
 						\tempiMvtII
 					}

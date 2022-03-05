@@ -51,8 +51,8 @@ formatOboeIIMvtI = {
 formatOboeIIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
-	 s2.*34 \break  s2.*12 \break  s2.*14 \break  s2.*4 \break 
-	s2.*9 \break  s2.*12 \break  s2.*44 \pageBreak  s2.*13 \break 
+	 s2.*28 \break  s2.*11 \break  s2.*17 \break  s2.*7 \break 
+	s2.*10 \break  s2.*12 \break  s2.*44 \pageBreak  s2.*13 \break 
 	s2.*24  
 }
 formatOboeIIMvtIII = {

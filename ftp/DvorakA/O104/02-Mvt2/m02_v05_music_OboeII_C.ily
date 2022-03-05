@@ -9,9 +9,13 @@ musicOboeIIMvtII = \relative c'' {
 	\key g \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*6
+	g2.~\p
+	g
+	g2( e4)
+	fis2( d4)
+	g2.
 % Bars 6 to 10
-	
+	\tuplet 5/4 4 {g16( a c b a)} b4 b
 	ais2.\fz
 	a!4(\> fis2
 	g4)\! r r
