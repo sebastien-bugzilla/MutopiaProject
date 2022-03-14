@@ -79,7 +79,7 @@ musicClarinettoIMvtII = \relative c'' {
 	\tempoXoffset #2 e4)\! r r
 	dis'4(\fz\> c! a
 	gis\p) r r
-	dis'(\fz c! a8 a')
+	dis'(\fz c!\> a8 a')
 % Bars 61 to 65
 	gis2.\pp
 	g(

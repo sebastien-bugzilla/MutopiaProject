@@ -26,9 +26,9 @@ musicViolinoIIMvtII = \relative c' {
 	
 	d2.\pp\<
 % Bars 26 to 30
-	cis\fz\<
+	cis-\tweak X-offset #1 \fz\<
 	d2\fz\< d8( a')\!
-	gis2.\fz\>
+	\hairpinShorten #'(0 . 2) gis2.\fz\>
 	gis8(\p a16) r gis8( a16) r f8( gis16) r
 	c,8( fis!16) r c8( fis16)_\dimmarkup r b,8( d16) r
 % Bars 31 to 35
@@ -85,7 +85,7 @@ musicViolinoIIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	\mark \default
-	\grace {s8} << c2.( {s4\mf\< s s16\> s s s\!} >>
+	\grace {s8} << c2.( {s4-\tweak X-offset #-1.5 \mf\< s s16\> s s s\!} >>
 	des4)\p r r
 	<< c2.( {s4\< s s16\> s s s\!} >>
 % Bars 86 to 90
@@ -137,9 +137,9 @@ musicViolinoIIMvtII = \relative c' {
 	
 	
 	
-	r4 g,2\((\p\<
+	r4 g,2^\((\p\<
 % Bars 161 to 165
-	aes\fz\>) a4\)\!
+	aes\fz\>) a4\)
 	b2.\pp~
 	b
 	b2_\morendo b4~

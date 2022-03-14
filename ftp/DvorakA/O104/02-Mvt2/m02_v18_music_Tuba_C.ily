@@ -17,15 +17,15 @@ musicTubaMvtII = \relative c, {
 	
 	\mark \default
 	R2.
-	\mmrPos #-6 R2.
+	R2.
 % Bars 16 to 20
-	\mmrPos #-6 R
-	\mmrPos #-6 R
-	\mmrPos #-6 R
-	\mmrPos #-6 R
-	\mmrPos #-6 R
+	R
+	R
+	R
+	R
+	R
 % Bars 21 to 25
-	\mmrPos #-6 R
+	R
 	R2.*12
 % Bars 26 to 30
 	
@@ -64,7 +64,7 @@ musicTubaMvtII = \relative c, {
 	R2.*3
 	
 	\bar "||" \key g \major \mark \default \grace {s8}
-	b2\f b4
+	b2-\tweak X-offset #1 \f b4
 % Bars 66 to 70
 	b16-^ d-^ cis-^ b-^ b4 b
 	fis' fis16-^ a-^ g-^ fis-^ fis4

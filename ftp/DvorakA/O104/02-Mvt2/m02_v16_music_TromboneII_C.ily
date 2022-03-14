@@ -39,7 +39,7 @@ musicTromboneIIMvtII = \relative c {
 	
 	
 	\bar "||" \key g \minor \grace {s8} 
-	bes'2\ff bes4
+	bes'2-\tweak X-offset #0.5 \ff bes4
 	bes16-> bes-> a-> g-> g4 g8. a16
 % Bars 41 to 45
 	bes4 g fis
@@ -57,10 +57,10 @@ musicTromboneIIMvtII = \relative c {
 	
 	aes2.\pp\<(
 	beses)\>
-	aes(\pp\<
+	aes^(\pp\<
 	beses\>
 % Bars 61 to 65
-	aes8\pp) r r4 r
+	aes8-\tweak X-offset #0.7 \pp) r r4 r
 	R2.*3
 	
 	\bar "||" \key g \major \mark \default  \grace {s8} 

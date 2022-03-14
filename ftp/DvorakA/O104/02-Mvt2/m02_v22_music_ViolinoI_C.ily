@@ -26,7 +26,7 @@ musicViolinoIMvtII = \relative c' {
 	
 	f2.\pp\<
 % Bars 26 to 30
-	<bes, e>\fz\<
+	<bes, e>-\tweak X-offset #1 \fz\<
 	a'2\fz\< a8( d)
 	d2\fz\> c8.( b16)\!
 	b8(\p a16) r b8( a16) r gis8( f16) r
@@ -41,7 +41,7 @@ musicViolinoIMvtII = \relative c' {
 	
 	
 	\bar "||" \key g \minor
-	\acciaccatura <d bes'>8 <bes' g'>2-^\ff g'16-^ bes-^ a-^ g-^ 
+	\acciaccatura <d bes'>8 <bes' g'>2-^-\tweak X-offset #-1.5 \ff g'16-^ bes-^ a-^ g-^ 
 	\acciaccatura <d, bes'>8 <bes' g'>2-^ bes8. c16
 % Bars 41 to 45
 	<d, d'>4-> <d bes'>-> <c a'>->
@@ -68,7 +68,7 @@ musicViolinoIMvtII = \relative c' {
 	
 	
 	\bar "||" \key g \major \mark \default
-	\acciaccatura <d,, b'>8 <b' b'>2\ff b'16-^ d-^ cis-^ b-^ 
+	\acciaccatura <d,, b'>8 <b' b'>2-\tweak X-offset #-1.5 \ff b'16-^ d-^ cis-^ b-^ 
 % Bars 66 to 70
 	b2 d,8. e16
 	<d fis>4-^ <fis,  d'>-^ <e cis'>-^
@@ -81,7 +81,7 @@ musicViolinoIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	\mark \default
-	\grace {s8} f8(\mf\< g a bes)\! b16(\> c g' f)\!
+	\grace {s8} f8(\mf\< g a bes) b16(\> c g' f)\!
 	e4\p r r
 	a,!8(\< bes b16 c d c) \tuplet 3/2 4 {bes'8(\f\> a f)\!}
 % Bars 86 to 90
@@ -135,7 +135,7 @@ musicViolinoIMvtII = \relative c' {
 	
 	r4 e,2(\p\<
 % Bars 161 to 165
-	ees2._\fzdimD\>)
+	ees2._\fz-\tweak extra-offset #'(0 . 1.3) \> -\tweak extra-offset #'(2.5 . 1.3) _\dimmarkup)
 	d\pp~
 	d
 	d2_\morendo d4~

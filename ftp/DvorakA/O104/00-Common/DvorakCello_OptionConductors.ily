@@ -14,7 +14,7 @@ generalOptions = {
 	\override Staff.MultiMeasureRest.space-increment = 1.5
 }
 conductorOptions = {
-	\override Score.BarNumber #'font-size = #2
+	\override Score.BarNumber #'font-size = #3
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
 		beam-event tuplet-span-event dynamic-event articulation-event
 		dynamic-event slur-event text-script-event trill-span-event
@@ -23,15 +23,18 @@ conductorOptions = {
 		tremolo-event)
 	%\set Voice.restNumberThreshold = #0
 	\override Score.MeasureCounter.outside-staff-priority = #390
+	\override StaffGroup.SystemStartBracket.collapse-height = #4
+	\override Score.SystemStartBar.collapse-height = #4
 }
-#(set-global-staff-size 14)
+#(set-global-staff-size 13)
 \layout {
-	#(layout-set-staff-size 14)
+	#(layout-set-staff-size 13)
+	%indent = 0\cm
 	\context {
 		\Voice
 		\override TupletBracket #'bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
-		\override TrillSpanner.bound-details.right.padding = #1  % 1.8
+		\override TrillSpanner.bound-details.right.padding = #1.5  % 1.8
 	}
 	\context {
 		\CueVoice
@@ -41,13 +44,14 @@ conductorOptions = {
 		\override StemTremolo.beam-thickness = #0.35 
 		\override Font.font-size = #+5
 	}
-%	\context {
-%		\Score
-%		scriptDefinitions = #my-script-alist
-%	}
+	\context {
+		\Score
+		\override MetronomeMark.font-size = #2
+	}
 	\context {
 		\Staff
 		\RemoveEmptyStaves
+		%\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
 	}
 	\context {

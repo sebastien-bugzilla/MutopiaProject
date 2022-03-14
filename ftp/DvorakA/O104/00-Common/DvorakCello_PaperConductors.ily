@@ -5,6 +5,7 @@
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
 	left-margin = 18 \mm
+%	annotate-spacing = ##t
 %	first-page-number = 0
 	slashSeparator = \markup {
 		\center-align

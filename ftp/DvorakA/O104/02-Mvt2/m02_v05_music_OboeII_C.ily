@@ -9,15 +9,15 @@ musicOboeIIMvtII = \relative c'' {
 	\key g \major
 %	\transposition a
 % Bars 1 to 5
-	g2.~\p
+	g2.~-\tweak X-offset #0.5 \p
 	g
 	g2( e4)
 	fis2( d4)
 	g2.
 % Bars 6 to 10
-	\tuplet 5/4 4 {g16( a c b a)} b4 b
-	ais2.\fz
-	a!4(\> fis2
+	\tuplet 5/4 4 {g16^( a c b a)} b4 b
+	ais2.-\tweak X-offset #0.3 \fz
+	\shape #'((0 . 1)(0 . 1)(0 . 1)(0 . 1)) Slur a!4(^\> fis2
 	g4)\! r r
 	R2.*4
 % Bars 11 to 15
@@ -36,12 +36,12 @@ musicOboeIIMvtII = \relative c'' {
 	
 	
 	R2.\fermata \mark \default
-	g2.\pp~
+	g2.-\tweak X-offset #0.5 \pp^~
 % Bars 36 to 40
 	g
-	g4.( fis8 e4)
-	d8( dis e f fis4) \bar "||" \key g \minor \grace {s8} 
-	g2\ff g'16-^ bes-^ a-^ g-^
+	g4.^( fis8 e4)
+	d8^( dis e f fis4) \bar "||" \key g \minor \grace {s8} 
+	g2-\tweak X-offset #0.5 \ff g'16-^ bes-^ a-^ g-^
 	g2 g,8. a16
 % Bars 41 to 45
 	bes4-> g'-> fis->
@@ -51,8 +51,8 @@ musicOboeIIMvtII = \relative c'' {
 	
 % Bars 46 to 50
 	
-	r4 g,2\p\<
-	f2.\>
+	r4 \hairpinShorten #'(0 . 2) g,2-\tweak extra-offset #'(1 . 1.5) \p-\tweak extra-offset #'(1 . 1.5) \<
+	\hairpinShorten #'(0 . 3) f2.-\tweak extra-offset #'(0 . 1.5) \>
 	f4.\! r8 r4 \mark \default
 	R2.*2
 % Bars 51 to 55
@@ -68,11 +68,11 @@ musicOboeIIMvtII = \relative c'' {
 	des4\p) r r
 	ees4(\fz c4.\> a!8)
 % Bars 61 to 65
-	a8.\p( gis16) r8 a16( gis) r8 a16( gis)
+	a8.-\tweak X-offset #-1.4 \p( gis16) r8 a16( gis) r8 a16( gis)
 	r8 aes16( g!) r8 aes16( g) r8 aes16( g)
-	r8 g16( fis) r8 g16( fis) r8 fis16( e)
-	r8 e16(\> d) r8 e16( d) r8 d16( cis)\! \bar "||" \key g \major  \mark \default \grace {s8}
-	b2\ff b'16-^ d-^ cis-^ b-^
+	r8 g16^( fis) r8 g16^( fis) r8 fis16^( e)
+	r8 e16^(\> d) r8 e16^( d) r8 d16^( cis)\! \bar "||" \key g \major  \mark \default \grace {s8}
+	b2-\tweak X-offset #1 \ff b'16-^ d-^ cis-^ b-^
 % Bars 66 to 70
 	b2 b8. cis16
 	d4-^ b-^ ais-^
@@ -83,12 +83,12 @@ musicOboeIIMvtII = \relative c'' {
 	
 	r4 r fis8.(\brack\p e16
 	d4.)\< g8(\! fis e)
-	fis(\mf\< d' \tuplet 3/2 4 {g8\! fis\> d)} b16( a) a( g)\!
+	fis(\mf-\tweak rotation #'(4 -2 0) \< d' \tuplet 3/2 4 {g8\! fis\> d)} b16( a) a( g)\!
 	g4( a8) r r4
 % Bars 76 to 80
 	R2.*2
 	
-	r4 cis,2\pp
+	r4 cis,2-\tweak extra-offset #'(1.7 . 2.2) \pp
 	\acciaccatura {d32 e} fis2 r4
 	R2.*3
 % Bars 81 to 85
@@ -104,7 +104,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 	\mmrPos #-6 R2.
 % Bars 91 to 95
-	\mmrPos #-8 R
+	\mmrPos #-6 R
 	R2.*3
 	
 	\mark \default
@@ -138,9 +138,9 @@ musicOboeIIMvtII = \relative c'' {
 	des
 	b!2.
 	ees2.
-	e!\<
+	<<e! {\hairpinShorten #'(0 . -5) s4\< s s\!}>>
 % Bars 141 to 145
-	d\f-^~
+	d2.\f-^~
 	d~
 	d4\p r r
 	R2.*4
@@ -150,7 +150,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 	R2.\fermata \mark \default
 	b'4\p-- b-- b16(\<-- b-- b-- b--)
-	b4( g\!) d8.\< e16
+	b4( g\!) d8.\< e16\!
 % Bars 151 to 155
 	fis4(\! d2~\>
 	d\!) r4

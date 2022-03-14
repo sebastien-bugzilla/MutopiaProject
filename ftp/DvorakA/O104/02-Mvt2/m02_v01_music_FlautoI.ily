@@ -142,7 +142,7 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 141 to 145
 	\ni \clef bass \mmrPos #-2 R2.
 	\mmrPos #-2 R \no \clef treble
-	d8(\p e b4) d8(\> e
+	d8(\p^\solo e b4) d8(\> e
 	b4) d8(\pp e d e
 	b2) r4
 % Bars 146 to 150

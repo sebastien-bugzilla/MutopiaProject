@@ -18,7 +18,7 @@ musicCornoIMvtII = \relative c'' {
 	R2.*2
 % Bars 11 to 15
 	
-	r4 r c\pp\<~
+	r4 r c-\tweak X-offset #-1.5 \pp\<~
 	c2.\fp\> \mark \default
 	c2\pp~ c8 r
 	R2.*5
@@ -27,7 +27,7 @@ musicCornoIMvtII = \relative c'' {
 	
 	
 	
-	\partCombineApart r4 c2\p~
+	\partCombineApart r4 c2_\p~
 % Bars 21 to 25
 	c4 r r^\mutainf \transposition f \partCombineAutomatic
 	R2.*12
@@ -43,7 +43,7 @@ musicCornoIMvtII = \relative c'' {
 	
 	
 	\bar "||" \key a \minor \grace {s8} 
-	d2\ff d16-^ f-^ e-^ d-^
+	d2-\tweak X-offset #0.5 \ff d16-^ f-^ e-^ d-^
 	d2 d8. d16
 % Bars 41 to 45
 	f4-> f-> e->
@@ -53,18 +53,18 @@ musicCornoIMvtII = \relative c'' {
 	
 % Bars 46 to 50
 	
-	\partCombineApart r4 r8 d(\p\< c bes)
-	a( c\! f_\dimD\> c) d16( c8.)\!
+	\partCombineApart r4 r8 d(_\p_\< c bes)
+	a( c\! \hairpinShorten #'(0 . -8) f_\dimD_\> c) d16( c8.)\!
 	c4. r8 r4 \mark \default
-	c2\pp r4
+	c2-\tweak X-offset #-2 \pp r4
 % Bars 51 to 55
 	f,2 r4
 	f2 r4
 	f2 r4
-	aes2( c4\<
+	aes2( c4_\<
 	f2 bes,8 b)\!
 % Bars 56 to 60
-	c4( des8\> c ees des
+	c4( des8_\> c ees des
 	c4)\! r^\mutaine r \transposition e \partCombineAutomatic
 	R2.*7
 % Bars 61 to 65
@@ -92,13 +92,13 @@ musicCornoIMvtII = \relative c'' {
 	
 	
 % Bars 81 to 85
-	\partCombineApart r4 d'4.(\p\< dis8)
+	\partCombineApart r4 d'4.(_\p_\< dis8)
 	e4( f)\! e8.( d!16 \mark \default
 	\grace {s8} c8) r r4 r
-	r d16(\p\<-- e-- f-- e--)\! d4(\>
+	r d16(_\p_\<-- e-- f-- e--)\! d4(_\>
 	c8)\! r r4 r
 % Bars 86 to 90
-	r d16(\<-- e-- f-- e--)\! d4(\>
+	r d16_(_\<-- e-- f-- e--)\! d4(_\>
 	c8)\! r r4 r \partCombineAutomatic
 	R2.*7
 % Bars 91 to 95
@@ -109,14 +109,14 @@ musicCornoIMvtII = \relative c'' {
 	a2\p b8 g
 % Bars 96 to 100
 	a4 r8 a(--\< d-- a--)\!
-	fis4 \tuplet 3/2 4 {fis8 fis fis} a( g)
+	fis4 \tuplet 3/2 4 {\hairpinShorten #'(0 . -15) fis8\> fis fis\!} a( g)
 	fis4. e8 \partCombineAutomatic d4
-	e\p\< fis g\!
+	\hairpinShorten #'(0 . -10) e\p\< fis g\!
 	a2.->
 % Bars 101 to 105
 	b4\<-> cis-> d->\!
 	fis2-^\ff\> e4\!
-	d( cis_\dimmarkup b)
+	d( cis-\tweak X-offset #0.5 _\dimmarkup b)
 	b( a4. g8)
 	fis4 fis fis
 % Bars 106 to 110

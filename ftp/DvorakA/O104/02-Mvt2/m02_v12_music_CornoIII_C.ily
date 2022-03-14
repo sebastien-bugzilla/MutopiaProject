@@ -83,7 +83,7 @@ musicCornoIIIMvtII = \relative c' {
 	g2(\p\> ees4)
 	d2_\dimD( cis4
 % Bars 106 to 110
-	d\pp c!2\fermata)
+	d-\tweak extra-offset #'(-2.5 . 2.7) \pp c!2\fermata)
 	b4 r r
 	R2.*12
 % Bars 111 to 115
@@ -93,7 +93,7 @@ musicCornoIIIMvtII = \relative c' {
 	
 	
 	
-	d2.\mf_\dimmarkup~
+	d2.\mf-\tweak X-offset #9 _\dimmarkup~
 % Bars 121 to 125
 	d
 	d\<

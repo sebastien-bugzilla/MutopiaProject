@@ -13,7 +13,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 6 to 10
 	
 	
-	r4 r d\pp
+	r4 r d-\tweak X-offset #0.5 \pp
 	g2( e4)
 	g2.
 % Bars 11 to 15
@@ -30,14 +30,14 @@ musicVioloncelloMvtII = \relative c {
 	<e' c'> r <<{b'8 e,} \\ {e e}>>
 % Bars 21 to 25
 	a4 r r 
-	ees'2(\pp^\arco d4)
+	ees'2(\pp-\tweak X-offset #-6 ^\arco d4)
 	des2(_\dimmarkup c4)
 	ces2\pp bes4
 	a!2.\<
 % Bars 26 to 30
 	g\fz\<
 	f2\fz\< f,4\!
-	<<e2. {s4\fz\> s s\!}>>
+	<<e2. {\hairpinShorten #'(0 . -12) s4\fz\> s s\!}>>
 	a16^\pizz e' a r a, e' a r d, f d' r
 	dis, fis! c' r dis, fis c'_\dimmarkup r e, b' d! r
 % Bars 31 to 35
@@ -55,7 +55,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 41 to 45
 	d4-> d16-> f-> ees-> d-> d4
 	g,16-^ bes-^ a-^ g-^ g4 r
-	g8\pp^\pizz d' g r g, g'
+	g8\pp-\tweak X-offset #-6.5 ^\pizz d' g r g, g'
 	c, g' c r c, c'
 	f,, c' f r f, f'
 % Bars 46 to 50
@@ -72,21 +72,21 @@ musicVioloncelloMvtII = \relative c {
 	ges ges ges r g g
 % Bars 56 to 60
 	aes r aes aes aes r
-	des,2.\mf\<^\arco
-	des\fp\>
+	des,2.\mf\<-\tweak X-offset #-6 ^\arco
+	des-\tweak X-offset #0.5 \fp\>
 	des\p\<
-	des\fp\>
+	des-\tweak X-offset #0.5 \fp\>
 % Bars 61 to 65
-	des16\p^\pizz des' f, r des des' f, r des des' f, r
+	des16\p-\tweak X-offset #-5 ^\pizz des' f, r des des' f, r des des' f, r
 	ais, cis' e, r ais, cis' e, r ais, cis' e, r
 	b b' fis r b, b' fis r e, g' e r
 	fis, b' fis r fis, b' fis r fis, ais' fis r \bar "||"  \key g \major \mark \default \grace {s8}
-	b,2\ff^\arco b'4
+	b,2-\tweak extra-offset #'(0 . 0.3) \ff-\tweak X-offset #-5.5 ^\arco b'4
 % Bars 66 to 70
 	b,16-^ d-^ cis-^ b-^ b4 b'8. b16
 	fis4-> fis16-^ a-^ g-^ fis-^ fis4->
 	b,16-^ d-^ cis-^ b-^ b4-> r
-	\tuplet 3/2 4 {b8^\pizz\pp fis' b,} b' r \tuplet 3/2 4 {b, b' b}
+	\tuplet 3/2 4 {b8-\tweak X-offset #-4 ^\pizz\pp fis' b,} b' r \tuplet 3/2 4 {b, b' b}
 	e,, b'16 e, e'8 r \tuplet 3/2 4 {e,8 e' e}
 % Bars 71 to 75
 	a, e'16 a, a'8 r \tuplet 3/2 4 {a, a' a}
@@ -96,7 +96,7 @@ musicVioloncelloMvtII = \relative c {
 	d r r4 r
 % Bars 76 to 81
 	<<{
-		fis2.^\arco
+		fis2.-\tweak X-offset #-5 ^\arco
 		g
 		<e g>
 		fis
@@ -112,12 +112,12 @@ musicVioloncelloMvtII = \relative c {
 	}>>
 % Bars 82 to 85
 	<c g'>2(\< c4)\! \mark \default
-	\grace {s8} <<f,2. {s4\mf\< s s16\> s s s\!}>>
+	\grace {s8} <<f,2. {s4-\tweak X-offset #0.5 \mf\< s s16\> s s s\!}>>
 	f2._\pdim
 	<<f2. {s4\< s s16\> s s s\!}>>
 % Bars 86 to 90
 	f2.\p 
-	f'16^\pizz\mf f' a, r f f' a, r f f' a, r
+	f'16-\tweak X-offset #-6.5 ^\pizz\mf f' a, r f f' a, r f f' a, r
 	d,_\dimmarkup d' f, r d d' f, r d d' f, r
 	dis\p dis' ais r dis, dis' ais r e_\dimmarkup e' b r
 	fis! dis' b r fis\pp dis' b r b, b' fis r
@@ -134,7 +134,7 @@ musicVioloncelloMvtII = \relative c {
 	c8^\pizz c' b b, a a'
 	g r16 \tuplet 3/2 4 {g,32^\arco g g} g4 r8 g^\pizz\<
 % Bars 101 to 105
-	c c' \tuplet 3/2 4 {b b, b} e, e'\!
+	c c' \once \tupletUp \tuplet 3/2 4 {b b, b} e, e'\!
 	fis,\f-^ r16 \tuplet 3/2 4 {fis32^\arco fis fis} fis8 r r fis^\pizz_\dimmarkup
 	g r a r16 a32\p^\arco a a8 r
 	b4^\pizz r8 b_\dimmarkup\noBeam c r16 c32^\arco c
@@ -152,14 +152,14 @@ musicVioloncelloMvtII = \relative c {
 	
 % Bars 126 to 130
 	
-	d'2.(\pp\>~
-	d4 c2\fermata)\! \mark \default
+	d'2.(-\tweak X-offset #0.5 \pp\>~
+	d4 c2\fermata) \mark \default
 	b16-.\ppp([ r b-.] r b-.[ r b-.] r b-.[ r b-.]) r 
 	c-.[( r c-.] r c-.[ r c-.] r c-.[ r c-.]) r 
 % Bars 131 to 135
 	b16-.([ r b-.] r b-.[ r b-.] r b-.[ r b-.]) r 
 	c-.[( r c-.] r c-.[ r c-.] r c-.[ r c-.]) r 
-	b16-.([ r b-.]_\crescmarkup r b-.[ r b-.] r b-.[ r b-.]) r 
+	b16-.([ r b-.] r_\crescmarkup b-.[ r b-.] r b-.[ r b-.]) r 
 	c-.[(\< r c-.] r c-.[ r c-.] r d-.[ r d-.])\! r 
 	c2\mf r4\fermata
 % Bars 136 to 140
@@ -173,7 +173,7 @@ musicVioloncelloMvtII = \relative c {
 	<d b'>4\pp^\div q q 
 	q q q 
 % Bars 151 to 155
-	<d c'> q q_\dimmarkup
+	<d c'> q q-\tweak X-offset #2 _\dimmarkup
 	<d b'> q q 
 	g,16\pp^\pizz d' d d g, d' d d g, d' d d
 	g, d' d d g, d' d d g, d' d d 
@@ -183,7 +183,7 @@ musicVioloncelloMvtII = \relative c {
 	g,4 r r
 	R2.*2
 	
-	r4^\arco <b e>2(\p\<
+	r4-\tweak X-offset #-1 ^\arco <b e>2(\p\<
 % Bars 161 to 165
 	<c ees>2.\fz\>)
 	<b d>\pp~

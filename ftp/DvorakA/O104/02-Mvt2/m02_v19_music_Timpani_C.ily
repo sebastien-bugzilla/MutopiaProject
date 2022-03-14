@@ -78,7 +78,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	d2.:32\pp\fermata
+	d2.:32-\tweak X-offset #0.7 \pp\fermata
 	R2.*13
 % Bars 111 to 115
 	

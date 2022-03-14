@@ -96,7 +96,7 @@ lungafermata=^\markup {
 		\musicglyph #"scripts.ufermata"
 	}
 }
-lungafermatatrill=\markup {
+lungatrillfermata=\markup {
 	\halign #-0.2 \center-column {
 		\text \lower #3 \italic "lunga"
 		\lower #1.2 \musicglyph #"scripts.trill"
@@ -354,6 +354,14 @@ tempoXoffset = #(define-music-function
 	#}
 )
 
+aIIXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override CombineTextScript.X-offset = #offset
+	#}
+)
+
 tempoOsp = {
 	\once \override Score.MetronomeMark.outside-staff-priority = #500
 }
@@ -429,6 +437,14 @@ tremoloPosition = #(define-music-function
 	(number?)
 	#{
 		\once \override StemTremolo.Y-offset = #position
+	#}
+)
+
+tupletYoffset = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override TupletNumber.Y-offset = #position
 	#}
 )
 

@@ -81,7 +81,7 @@ musicSoloCelloMvtII = \relative c' {
 	aes4\p r r \clef bass
 	\tuplet 5/4 4 {ees,16\mf\<( f ges a! c)} \clef treble ees( f ges aes)\! beses8.\>(^\moltoappassionato aes16)\!
 % Bars 61 to 65
-	beses8.(\f\> aes16) beses8.(\> aes16) beses8.( aes16)\! \clef tenor
+	beses8.(\f\> aes16) beses8.(\> aes16) beses8.(\> aes16)\! \clef tenor
 	aes8.(\> g!16) aes8.(\>_\dimmarkup g16) aes8.(\> g16)
 	g8.(\p\> fis16) g8.(\>_\dimmarkup fis16) fis8.(\> e16)
 	e8.(\pp d16) e8.( d16) d8.( cis16) \bar "||" \key g \major \clef bass \mark \default

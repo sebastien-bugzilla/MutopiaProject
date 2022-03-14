@@ -39,7 +39,7 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	\bar "||" \key g \minor \grace {s8} 
 	R2.
-	r4 r g'8.\ff a16
+	r4 r g'8.-\tweak X-offset #-1 \ff a16
 % Bars 41 to 45
 	bes4-> g-> fis->
 	g4. r8 r4
@@ -65,7 +65,7 @@ musicFlautoIIMvtII = \relative c'' {
 	cis2.~
 	cis4( b! g4)
 	fis(\> fis e)\! \bar "||"  \key g \major \mark \default \grace {s8}
-	d4\ff r r
+	d4-\tweak X-offset #1 \ff r r
 % Bars 66 to 70
 	R2.*8
 % Bars 71 to 75
@@ -83,16 +83,16 @@ musicFlautoIIMvtII = \relative c'' {
 	des''4\(\p\< bes16-- a-- g-- a-- bes4\!
 	a8\) r r4 r
 % Bars 86 to 90
-	des4\(\p\< bes16 a g a bes4\)\!
+	des4\(-\tweak extra-offset #'(0 . 0.5) \p\< bes16 a g a bes4\)\!
 	f2.\fz 
-	f_\dimD\>
+	f-\tweak extra-offset #'(0 . 0.6) _\dimD-\tweak extra-offset #'(0 . 0.6) \>
 	dis!2(\p\> b!4)~
 	b2.\pp
 % Bars 91 to 95
 	g!2.
 	fis!2.
 	dis4( e dis)
-	e(\> ees d \mark \default
+	\shape #'((0 . 0.5)(0 . 1)(0 . 1)(0 . 0.5)) Slur e(\> ees d \mark \default
 	d8)\! r r4 r
 % Bars 96 to 100
 	R2.*16

@@ -169,7 +169,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 146 to 150
 	R2.*2
 	
-	\scriptStencil \lungafermatatrill \afterGrace a2.\sf\>-\tweak extra-offset #'(0 . 1) \fermata( {gis16 a)} \mark \default
+	\scriptStencil \lungatrillfermata \afterGrace a2.\sf\>-\tweak extra-offset #'(0 . 1) \fermata( {gis16 a)} \mark \default
 	bes8\pp r r4 r
 	R2.*3
 % Bars 151 to 155

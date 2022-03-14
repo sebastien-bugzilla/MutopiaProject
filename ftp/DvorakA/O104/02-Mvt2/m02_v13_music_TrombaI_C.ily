@@ -33,7 +33,7 @@ musicTrombaIMvtII = \relative c'' {
 	
 	
 	\bar "||" \key a \minor \grace {s8} 
-	g2\ff g4
+	\aIIXoffset #-3.5 g2\ff g4
 	g r d'8. d16
 % Bars 41 to 45
 	d4 d c
@@ -54,7 +54,7 @@ musicTrombaIMvtII = \relative c'' {
 	
 	
 	\bar "||" \key c \major \mark \default \grace {s8} 
-	d,2\f d4
+	\aIIXoffset #1 d,2\f d4
 % Bars 66 to 70
 	d2 d8. d16 
 	d4 d d 

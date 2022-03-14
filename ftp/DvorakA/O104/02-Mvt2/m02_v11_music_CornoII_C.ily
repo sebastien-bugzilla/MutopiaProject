@@ -18,7 +18,7 @@ musicCornoIIMvtII = \relative c' {
 	R2.*2
 % Bars 11 to 15
 	
-	r4 r c\pp\<~
+	r4 r c-\tweak X-offset #-1.5 \pp\<~
 	c2.\fp\> \mark \default
 	c2\pp~ c8 r^\mutainf \transposition f
 	R2.*5
@@ -43,7 +43,7 @@ musicCornoIIMvtII = \relative c' {
 	
 	
 	\bar "||" \key a \minor \grace {s8} 
-	d2\ff d4
+	d2-\tweak X-offset #0.5 \ff d4
 	d2 d8. d16
 % Bars 41 to 45
 	d'4-> d-> cis->
@@ -58,9 +58,9 @@ musicCornoIIMvtII = \relative c' {
 	\mark \default
 	R2.
 % Bars 51 to 55
-	\mmrPos #-6 R2.
-	\mmrPos #-6 R
-	\mmrPos #-6 R
+	R2.
+	R
+	R
 	R2.*4
 % Bars 56 to 60
 	
@@ -110,7 +110,7 @@ musicCornoIIMvtII = \relative c' {
 	fis'2\p g8 d
 % Bars 96 to 100
 	fis4 r8 fis(--\< a-- fis--)\!
-	d4 \tuplet 3/2 4 {d8\> d d} d4\!
+	d4 \tuplet 3/2 4 {d8\> d d\!} d4
 	cis2_\dimD b4
 	b\p\< dis e\!
 	g4 fis8 e fis4
@@ -119,9 +119,9 @@ musicCornoIIMvtII = \relative c' {
 	b2-^\ff\> b4\!
 	b g2~
 	g4(\p fis)\> e~
-	e\! d2\>
+	e\! \hairpinShorten #'(1 . 1) d2\>
 % Bars 106 to 110
-	cis2.\pp\fermata
+	cis2.-\tweak X-offset #-4 \pp-\tweak extra-offset #'(0 . 0.5) \fermata
 	d4 r r 
 	R2.*20
 % Bars 111 to 115
@@ -134,7 +134,7 @@ musicCornoIIMvtII = \relative c' {
 	
 	
 	R2.\fermata \mark \default
-	\partCombineApart d2.\pp~
+	\partCombineApart d2.-\tweak X-offset #0.5 \pp~
 	d~
 % Bars 131 to 135
 	d~

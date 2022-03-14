@@ -35,8 +35,8 @@ musicFagottoIMvtII = \relative c' {
 	
 	\partCombineChords d,2.\p\<
 % Bars 26 to 30
-	<<bes' {s4\fz\< s s\!}>>
-	\partCombineApart a2 \tuplet 3/2 4 {d8(_\< e f\!)}
+	<<bes' {\hairpinShorten #'(0 . -18) s4\fz\< s s\!}>>
+	\partCombineApart a2 \once \tupletDown \tupletYoffset #2 \tuplet 3/2 4 {d8_(_\< e f\!)}
 	f2 e8.( d16)
 	d8(\p c16) r d8( c16) r c8( b16) r
 	b8( bes16) r bes8( a16)_\dimmarkup r a8( gis16) r
@@ -71,24 +71,24 @@ musicFagottoIMvtII = \relative c' {
 	des)\! r r
 	ges4\fz\>( ees2
 	f4\p) r r
-	\partCombineChords ges4\fz\>( << ees2) {s4 s\!}>>
+	\partCombineChords \hairpinShorten #'(0 . -14) ges4\fz\>( << ees2) {s4 s\!}>>
 % Bars 61 to 65
 	\partCombineApart des2.(
 	bes)
 	b2( e,4)
-	fis2(\pp\> ais4)\! \bar "||" \key g \major \mark \default \grace {s8}  \partCombineAutomatic
-	b2\ff b,4
+	fis2(_\pp_\> ais4)\! \bar "||" \key g \major \mark \default \grace {s8}  \partCombineAutomatic
+	b2-\tweak X-offset #0.5 \ff b,4
 % Bars 66 to 70
 	b16-^ d-^ cis-^ b-^ b4 b8. b16
 	fis'4 fis16-^ a-^ g-^ fis-^ fis4
 	b,16-^ d-^ cis-^ b-^ b4 r \clef tenor
 	fis''4.(\p e8 d cis) \clef bass
-	b4 b\< \tuplet 3/2 4 {b8( cis d}
+	b4 b\< \shape #'((0 . -1)(0 . 0)(0 . -0.3)(0 . -0.3)) Slur \once \tupletUp \tuplet 3/2 4 {b8( cis d}
 % Bars 71 to 75
 	e4.)\! cis8( a g)\>
 	fis4 fis\! r
 	R2.
-	\partCombineApart r4 r8 a(\p cis a)
+	\partCombineApart r4 r8 a_(_\p cis a)
 	a4 r r 
 % Bars 76 to 80
 	d,16_\psemplice fis a fis d a' fis d~ d fis a fis
@@ -110,7 +110,7 @@ musicFagottoIMvtII = \relative c' {
 	
 % Bars 91 to 95
 	
-	\partCombineApart r8 c'16(\p b) r8 b16( a) r8 a16( g)
+	\partCombineApart r8 c'16_(_\p b) r8 b16_( a) r8 a16_( g)
 	r8 g16(_\dimmarkup fis) r8 fis16( g) r8 g16( fis)
 	fis8 r r4 r \partCombineAutomatic \mark \default
 	R2.*11
@@ -148,11 +148,11 @@ musicFagottoIMvtII = \relative c' {
 	
 	R2.\fermata
 % Bars 136 to 140
-	\partCombineApart \mmrPos #10 R2.
-	\mmrPos #10 R
-	\mmrPos #10 R
-	R
-	\partCombineAutomatic cis,2.\brack\mf\<
+	\partCombineApart \mmrPos #8 R2.
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #6 R
+	\aIIXoffset #-2.9 \partCombineAutomatic cis,2.\brack\mf\<
 % Bars 141 to 145
 	d\f-^~
 	d\>~
@@ -166,11 +166,11 @@ musicFagottoIMvtII = \relative c' {
 	R2.*2
 	
 % Bars 151 to 155
-	\partCombineApart r4 d(\p\> c
+	\partCombineApart r4 d(_\p_\> c
 	b2\!) r4 
-	b--\pp b-- b16-- b-- b-- b--
+	b_-_\pp b_- b16_- b_- b_- b_-
 	b4( g) d
-	fis( d c) \partCombineAutomatic
+	fis_( d c) \partCombineAutomatic
 % Bars 156 to 160
 	d2.\brack\pp~
 	d2 d4~

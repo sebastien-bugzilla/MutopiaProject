@@ -30,21 +30,21 @@ musicContrabassoMvtII = \relative c' {
 	<<{c} \\ {c,}>> r e
 % Bars 21 to 25
 	a4 r r 
-	ees'2(\pp^\arco d4)
+	ees'2(\pp-\tweak X-offset #-6 ^\arco d4)
 	des2(_\dimmarkup c4)
 	ces2\pp bes4
 	a!2.\<
 % Bars 26 to 30
 	g\fz\<
 	f2\fz\< f,4\!
-	<<e2. {s4\fz\> s s\!}>>
+	<<e2. {\hairpinShorten #'(0 . -12) s4\fz\> s s\!}>>
 	a8^\pizz\p r a r d r
 	dis r dis r_\dimmarkup e r
 % Bars 31 to 35
 	eis_\dimmarkup r fis! r g r
 	c\pp r r4 c,8 r
 	d!_\dimD\> r r4 d8\! r
-	d'2.(\ppp^\arco  \mark \default
+	d'2.(\ppp-\tweak X-offset #-5 ^\arco  \mark \default
 	g,4) r r
 % Bars 36 to 40
 	R2.*3
@@ -55,34 +55,34 @@ musicContrabassoMvtII = \relative c' {
 % Bars 41 to 45
 	d4-> d16-> f-> ees-> d-> d4
 	g,16-^ bes-^ a-^ g-^ g4 r
-	g8\pp^\pizz r g r g r
+	g8\pp-\tweak X-offset #-6.5 ^\pizz r g r g r
 	c r c r c r
 	f, r f' r f r
 % Bars 46 to 50
 	g, r g r g r
 	ees' r ees_\crescmarkup r c c
-	f r f_\dimD\> r f r\!
+	f r \hairpinShorten  #'(0 . -1) f_\dimD\> r f r\!
 	bes, r bes' r r4 \mark \default
 	R2.*7
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
-	des,2.\mf\<^\arco
+	des,2.\mf\<-\tweak X-offset #-6 ^\arco
 	des\fp\>
 	des\p\<
 	des\fp\>
 % Bars 61 to 65
-	des8\p^\pizz r des r des r
+	des8\p-\tweak X-offset #-5.5 ^\pizz r des r des r
 	ais r ais r ais r
 	b r b r e! r
 	fis r fis r fis r \bar "||" \key g \major \mark \default \grace {s8}
-	b,2\ff^\arco b'4
+	b,2\ff-\tweak X-offset #-5.5 ^\arco b'4
 % Bars 66 to 70
 	b,16-^ d-^ cis-^ b-^ b4 b'8. b16
 	fis4-> fis16-^ a-^ g-^ fis-^ fis4->
 	b,16-^ d-^ cis-^ b-^ b4-> r
-	b8^\pizz\pp r b r b r 
+	b8-\tweak X-offset #-4 ^\pizz\pp r b r b r 
 	e r e r r e
 % Bars 71 to 75
 	a, r a' r a, r
@@ -99,12 +99,12 @@ musicContrabassoMvtII = \relative c' {
 % Bars 81 to 85
 	bes bes bes r b b
 	c\< r c, c c\! r \mark \default
-	\grace {s8} <<f,2.^\arco {s4\mf\< s s16\> s s s\!}>>
+	\grace {s8} <<f,2.-\tweak X-offset #-3 ^\arco {s4\mf\< s s16\> s s s\!}>>
 	f2._\pdim
 	<<f2. {s4\< s s16\> s s s\!}>>
 % Bars 86 to 90
 	f2.\p 
-	f'8\mf^\pizz r f r f r
+	f'8\mf-\tweak X-offset #-6.5 ^\pizz r f r f r
 	d_\dimmarkup r d r d r
 	dis\p r dis r e_\dimmarkup r
 	fis! r fis\pp r b, r
@@ -118,7 +118,7 @@ musicContrabassoMvtII = \relative c' {
 	g r16 \tuplet 3/2 4 {g,32^\arco g g } g8 r r d'^\pizz
 	g dis e r a,[ r16 a]
 	d!8 r r r16 \tuplet 3/2 4 {dis32^\arco dis dis} e8 r
-	c8^\pizz c' b b, a a'
+	c8-\tweak X-offset #-1 ^\pizz c' b b, a a'
 	g r16 \tuplet 3/2 4 {g,32^\arco g g} g4 r8 g^\pizz\<
 % Bars 101 to 105
 	c c' \tuplet 3/2 4 {b b, b} e, e'\!
@@ -140,14 +140,14 @@ musicContrabassoMvtII = \relative c' {
 % Bars 126 to 130
 	
 	d''2.(\pp\>
-	d,2.\fermata)\! \mark \default
+	d,2.\fermata) \mark \default
 	g,2.\ppp(
 	c)
 % Bars 131 to 135
 	g'(
 	c,) 
-	g2._\crescmarkup
-	c2\< e4
+	g2.-\tweak X-offset #8 _\crescmarkup
+	\hairpinShorten #'(0 . -5) c2\< e4\!
 	a,\mf a'-- r4\fermata
 % Bars 136 to 140
 	R2.*12
@@ -160,7 +160,7 @@ musicContrabassoMvtII = \relative c' {
 	g2.\pp~
 	g~
 % Bars 151 to 155
-	g~_\dimmarkup
+	g~-\tweak X-offset #20 _\dimmarkup
 	g
 	g,\pp~
 	g~
@@ -170,7 +170,7 @@ musicContrabassoMvtII = \relative c' {
 	g4 r r
 	R2.*2
 	
-	r4^\arco e'2(\p\<
+	r4-\tweak X-offset #-1 ^\arco e'2(\p\<
 % Bars 161 to 165
 	c2.\fz\>)
 	g\pp~
