@@ -20,7 +20,6 @@
 \include "./00-Common/DvorakCello_NameStaff.ily"
 \include "./00-Common/DvorakCello_NameGrandStaff.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
-%\include "./00-Common/DvorakCello_Format_temp.ly"
 \include "./00-Common/DvorakCello_Format_Cond_Mvt02.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
 \include "./02-Mvt2/m02_v01_music_FlautoI_C.ily"
@@ -70,9 +69,6 @@
 			\new StaffGroup <<
 				\new Staff <<
 					\new Voice {
-						\displayFilterVoice
-					}
-					\new Voice {
 						\formatConductorMvtII
 					}
 					\new Voice {
@@ -82,26 +78,22 @@
 						\timeMvtII \generalOptions \conductorOptions
 						\nameStaffIMvtII
 						\partCombine \musicFlautoIMvtII \musicFlautoIIMvtII
-						%\musicFlautoIIMvtII
 					}
 				>>
 				\new Staff {
 					\timeMvtII \generalOptions \conductorOptions
 					\nameStaffIIMvtII
 					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
-%					\musicOboeIIMvtII 
 				}
 				\new Staff {
 					\timeMvtII \generalOptions \conductorOptions
 					\nameStaffIIIMvtII
 					\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
-%					\musicClarinettoIIMvtII
 				}
 				\new Staff {
 					\timeMvtII \generalOptions \conductorOptions
 					\nameStaffIVMvtII
 					\partCombine #'(0 . 11) \musicFagottoIMvtII \musicFagottoIIMvtII
-%					\musicFagottoIIMvtII
 				}
 			>>
 			\new StaffGroup <<
@@ -110,7 +102,6 @@
 						\timeMvtII \generalOptions \conductorOptions
 						\nameStaffVMvtII
 						\partCombine \musicCornoIMvtII \musicCornoIIMvtII
-%						\musicCornoIIMvtII
 					}
 					\new Staff {
 						\timeMvtII \generalOptions \conductorOptions
@@ -122,20 +113,17 @@
 					\timeMvtII \generalOptions \conductorOptions
 					\nameStaffVIIMvtII
 					\partCombine \musicTrombaIMvtII \musicTrombaIIMvtII
-%					\musicTrombaIIMvtII
 				}
 				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
 					\new Staff {
 						\timeMvtII \generalOptions \conductorOptions
 						\nameStaffVIIIMvtII
 						\partCombine \musicTromboneIMvtII \musicTromboneIIMvtII
-%						\musicTromboneIIMvtII
 					}
 					\new Staff {
 						\timeMvtII \generalOptions \conductorOptions
 						\nameStaffIXMvtII
 						\partCombine \musicTromboneIIIMvtII \musicTubaMvtII
-%						\musicTubaMvtII
 					}
 				>>
 			>>
