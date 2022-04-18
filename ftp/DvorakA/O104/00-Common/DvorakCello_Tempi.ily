@@ -11,7 +11,7 @@ tempiMvtI = {
 		\medium { =116 } 
 	}
 	s1*22
-	\tempo "Grandioso" % bar 23
+	\tempoXoffset #2 \tempo "Grandioso" % bar 23
 	s1*33
 	\tempo "ritard" % bar 56
 	s1
@@ -51,7 +51,7 @@ tempiMvtI = {
 	s1*30
 	\tempo "poco ritard." % bar 222
 	s1*2
-	\tempo \markup { % bar 224 (source facsimile)
+	\tempoXoffset #2 \tempo \markup { % bar 224 (source facsimile)
 		"In tempo" 
 		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
 		\medium { =100 }
@@ -97,11 +97,11 @@ tempiMvtI = {
 %    M V T  II
 %--------------------------------------
 tempiMvtII = {
-%	\tempo \markup { 
-%		"Agagio, ma non troppo M.M." 
-%		\teeny \translate #'(0 . 0.4) { \note-by-number #3 #0 #0.9 } 
-%		\medium { =108 }
-%	}
+	\tempo \markup { 
+		"Agagio, ma non troppo M.M." 
+		\teeny \translate #'(0 . 0.4) { \note-by-number #3 #0 #0.9 } 
+		\medium { =108 }
+	}
 	s2.*28
 	\tempo "poco accelerando" % bar 29
 	s2.*3

@@ -107,6 +107,15 @@ nameStaffXIIMvtI = {
 	}
 	\set Staff.midiInstrument = #""
 }
+nameStaffXIIOssiaMvtI = {
+	\set Staff.instrumentName = "Violoncello solo"
+	\set Staff.shortInstrumentName = \markup {
+		\center-column {
+			\lower #1 "Vlc. Solo" "Ossia"
+		}
+	}
+	\set Staff.midiInstrument = #""
+}
 nameStaffXIIIMvtI = {
 	\set Staff.instrumentName = "I."
 	\set Staff.shortInstrumentName = "Vln. I."

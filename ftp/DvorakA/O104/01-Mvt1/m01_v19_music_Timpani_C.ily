@@ -23,8 +23,8 @@ musicTimpaniMvtI = \relative c, {
 % Bars 11 to 15
 	fis1:32\pp
 	fis:
-	fis:_\crescmarkup
-	fis:
+	<<fis: {s2 s_\crescmarkup}>>
+	fis1:32
 	fis:
 % Bars 16 to 20
 	fis:\<
@@ -148,7 +148,7 @@ musicTimpaniMvtI = \relative c, {
 % Bars 196 to 200
 	d2\startTrillSpan r8\stopTrillSpan d16-. d-. d8 r
 	d2\startTrillSpan r8\stopTrillSpan d16-. d-. d8 r
-	d1\f\>\startTrillSpan
+	\hairpinShorten #'(0 . 4) d1\f\>\startTrillSpan
 	d\startTrillSpan_\dimD
 	d\p\>\startTrillSpan
 % Bars 201 to 205
@@ -266,5 +266,5 @@ musicTimpaniMvtI = \relative c, {
 	b4 r r2
 	R1
 	b1:32\<
-	b4\f r r2 \markupfermata \bar "|."
+	b4\f r r2-\tweak extra-offset #'(7.5 . 0) ^\fermataSign \bar "|."
 }

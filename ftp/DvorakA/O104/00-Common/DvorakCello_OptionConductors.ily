@@ -26,9 +26,9 @@ conductorOptions = {
 	\override StaffGroup.SystemStartBracket.collapse-height = #4
 	\override Score.SystemStartBar.collapse-height = #4
 }
-#(set-global-staff-size 13)
+#(set-global-staff-size 12)
 \layout {
-	#(layout-set-staff-size 13)
+	#(layout-set-staff-size 12)
 	%indent = 0\cm
 	\context {
 		\Voice

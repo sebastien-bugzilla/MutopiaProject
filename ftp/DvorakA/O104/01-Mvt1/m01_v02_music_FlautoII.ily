@@ -290,7 +290,7 @@ musicFlautoIIMvtI = \relative c'' {
 	\ni \mmrPos #-4 R1
 % Bars 296 to 300
 	\mmrPos #-4 R \no
-	e!16\p-. e-. dis-. e-. r8. e16-. gis-. gis-. fisis-. gis-. r8. gis16-.
+	e!16\p-. e-. dis-. e-. r8. e16-. gis-.\< gis-. fisis-. gis-.\! r8. gis16-.
 	a!16-._\crescmarkup a-. gis-. a-. r8. a16-.\< ais-. ais-. gisis-. ais-.\! r4
 	a!8\fz r r4 r2
 	g!8\fz r r4 r2

@@ -18,7 +18,7 @@ musicClarinettoIIMvtI = \relative c' {
 	a4\! r r2
 	R1*2
 	
-	c!4--\mf r c r8 d
+	c!4---\tweak X-offset #0.3 \mf r c r8 d
 	c4-- b-- c-- r
 % Bars 11 to 15
 	R1*2
@@ -27,7 +27,7 @@ musicClarinettoIIMvtI = \relative c' {
 	cis8) r g'4( e d
 	cis8) r g'8. f16 e8.\< g16 bes8. a16\!
 % Bars 16 to 20
-	g8 r cis8.\f-> d16-. g8.->\< e16-. g8.-> g16-.\!
+	g8 r cis8.-\tweak X-offset #-0.5 \f-> d16-. g8.->\< e16-. g8.-> g16-.\!
 	e8 r r4 r2
 	R1
 	e1\f~
@@ -88,7 +88,7 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	c'4\ff r8 c d-. c-. c-. r
+	c'4_\ff r8 c d-. c-. c-. r
 % Bars 76 to 80
 	c4 r8 c des-. c-. c-. r
 	c4-> c8 c f e e r
@@ -120,13 +120,13 @@ musicClarinettoIIMvtI = \relative c' {
 	\mmrPos #-8 R1
 	R1
 % Bars 101 to 105
-	\mmrPos #-8 R
+	\mmrPos #-7 R
 	R1*7
 % Bars 106 to 110
 	
 	
 	
-	\mmrPos #-8 R1 \mark \default
+	\mmrPos #-10 R1 \mark \default
 	R1
 % Bars 111 to 115
 	R1*11
@@ -192,13 +192,13 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	
 	
-	r4 cis,2.\f
-	\tuplet 3/2 4 {fis8\< a cis} \sharptrill \afterGrace fis2.\!\startTrillSpan {eis16([\stopTrillSpan fis)]}
+	r4 cis,2.-\tweak X-offset #0.3 \f
+	\tuplet 3/2 4 {fis8\< a cis} \sharptrill \afterGrace 15/16 fis2.\!\startTrillSpan {eis16([\stopTrillSpan fis)]\stopTrillSpan}
 % Bars 186 to 190
 	e!8 r r4 r2
-	r8 c\fz r4 r2
-	r8 c\fz r4 r2
-	r8 cis\fz r4 r8 cis\brack\fz r4
+	r8 c-\tweak X-offset #0 \fz r4 r2
+	r8 c-\tweak X-offset #0 \fz r4 r2
+	r8 cis-\tweak X-offset #0 \fz r4 r8 cis-\tweak X-offset #0 \brack\fz r4
 	e8\brack\fz r r4 r2
 % Bars 191 to 195
 	r2 r4 r8\fermata e8\f \mark \default
@@ -209,11 +209,11 @@ musicClarinettoIIMvtI = \relative c' {
 % Bars 196 to 200
 	a-^
 	a-^
-	b2._\dimD\> b4\!
-	bes!8\fz r r4 e,2~\p\>
+	\hairpinShorten #'(0 . -2) b2._\dimD\> b4\!
+	bes!8-\tweak X-offset #0 \fz r r4 e,2~-\tweak X-offset #0.5 \p\>
 	e1~
 % Bars 201 to 205
-	e\!_\dimmarkup~
+	e_\dimD~
 	e4 r r2
 	R1*5
 	
@@ -223,7 +223,7 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	aes,1\p~ \mark \default
 	aes8 r r4 r2
-	b8-.\p d16-. d-. d8-. f-. f-. aes-. aes-. ces-.
+	b8-.-\tweak X-offset #-1 \p d16-. d-. d8-. f-. f-. aes-. aes-. ces-.
 % Bars 211 to 215
 	bes! r r4 r2
 	R1*2
@@ -264,7 +264,7 @@ musicClarinettoIIMvtI = \relative c' {
 	ais)
 	b(
 	g)
-	fis\>~
+	\hairpinShorten #'(0 . 12) fis\>~
 	fis
 % Bars 246 to 250
 	b\!~
@@ -281,10 +281,10 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	\mark \default
 % Bars 261 to 265
-	r2 gis,8(\mf a d cis)
+	r2 gis,8(-\tweak X-offset #-3 \mf a d cis)
 	r e\(\< d cis\) gis'\( a gis a\)\!
 	r cis(\f\< d cis)\! r cis(\< d cis)\!
-	d,8(\fz-> cis16) r d8->( cis16) r d8->( cis16) r d8->( cis16) r 
+	d,8(-\tweak X-offset #-1 \fz^> cis16) r d8->( cis16) r d8->( cis16) r d8->( cis16) r 
 	g'8\brack\f r r4 r2 
 % Bars 266 to 270
 	R1
@@ -323,15 +323,15 @@ musicClarinettoIIMvtI = \relative c' {
 % Bars 301 to 305
 	d!8\fz r r4 r2
 	R1 \mark \default
-	a8\brack\f r r4 r2
+	a8-\tweak X-offset #0.3 \brack\f r r4 r2
 	R1*3
 	
 % Bars 306 to 310
 	
 	c,4\(\fp b\) c\(\fp b\)
-	bes!\(\fp a\) bes\(\fp a\)
-	c\( b_\crescmarkup d cis\)
-	e2.\f-^ r4
+	bes!\(-\tweak X-offset #-1.3 \fp a\) bes\(-\tweak X-offset #-1.3 \fp a\)
+	c\( b-\tweak extra-offset #'(1.3 . 2) _\crescmarkup d cis\)
+	e2.\f^^ r4
 % Bars 311 to 315
 	r2 r4 \tuplet 3/2 4 {bes'8\f\< d f}
 	bes,2\! ees4-. ees-.
@@ -340,7 +340,7 @@ musicClarinettoIIMvtI = \relative c' {
 	r8 cis\fz r4 r2
 % Bars 316 to 320
 	r8 cis\fz r4 r8 cis\fz r4
-	cis8\fz r r4 r2
+	cis8-\tweak X-offset #0.3 \fz r r4 r2
 	r2 r4 r8\fermata cis
 	d4.\ff e16 fis d2
 	cis4. b16 a d2

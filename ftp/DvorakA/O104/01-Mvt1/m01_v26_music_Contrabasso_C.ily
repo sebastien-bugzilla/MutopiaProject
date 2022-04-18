@@ -23,7 +23,7 @@ musicContrabassoMvtI = \relative c' {
 % Bars 11 to 15
 	fis,,1\pp
 	fis
-	fis2. fis'4_\crescmarkup
+	fis2. fis'4-\tweak X-offset #-12 _\crescmarkup
 	fis,2. fis'4->(
 	fis,8)\< r fis'4(-> fis,8) r fis'4->~
 % Bars 16 to 20
@@ -151,7 +151,7 @@ musicContrabassoMvtI = \relative c' {
 	fis,\fz r r4 r2
 	fis8\fz r r4 r2
 % Bars 126 to 130
-	fis,1\fz\<
+	\hairpinShorten #'(0 . 6.5) fis,1\fz\<
 	fis8\fz r r4 r2 \mark \default
 	b'8-.\f b,-. r4 r2
 	g'8-.\f g,-. r4 r2
@@ -177,7 +177,7 @@ musicContrabassoMvtI = \relative c' {
 % Bars 146 to 150
 	e1)
 	a2. r4
-	r g'\brack\pp^\pizz r2
+	r g'\brack\pp-\tweak X-offset #-6.5 ^\pizz r2
 	r4 g r2
 	r4 g r2
 % Bars 151 to 155
@@ -233,7 +233,7 @@ musicContrabassoMvtI = \relative c' {
 % Bars 196 to 200
 	d2~ d8 d16-. d-. d4~
 	d2~ d8 d16-. d-. d4~
-	d2~_\dimD\> d8 d16-. d-. d4~
+	\hairpinShorten #'(0 . 3) d2~_\dimD\> d8 d16-. d-. d4~
 	d8\fz d4 d8\> d d4 d8\!
 	d\p d4 d8 d\> d4 d8
 % Bars 201 to 205

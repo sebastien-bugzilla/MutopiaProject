@@ -21,7 +21,7 @@ fzmarkupbrack=^\markup {
 fcresc=^\markup {\dynamic f \italic cresc.}
 piuf=^\markup {\italic più \dynamic f}
 pcresc=^\markup {\dynamic p \italic cresc.}
-ffz=^\markup {\dynamic ffz}
+ffz=^\markup {\hspace #-0.8 \dynamic ffz}
 psempre=^\markup {\dynamic p \italic sempre}
 frisoluto=^\markup {\dynamic f \italic risoluto}
 pspiccato=^\markup {\dynamic p \italic spiccato}
@@ -68,7 +68,7 @@ fanimatoD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (marku
 ppdolceD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dolce"))
 psempredimD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "sempre dim."))
 ffzD = \tweak DynamicText.self-alignment-X #0 #(make-dynamic-script (markup #:dynamic "ffz"))
-ppdimD = \tweak DynamicText.self-alignment-X #0 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dim."))
+ppdimD = \tweak DynamicText.self-alignment-X #-0.78 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dim."))
 fzdimD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim."))
 
 % expression & indications
@@ -209,6 +209,14 @@ fermatatrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 		\translate #'(0 . 2.6) \musicglyph #"scripts.ufermata"
 }
 
+trillPadding = #(define-music-function
+	(padding)
+	(number?)
+	#{
+		\once \override TrillSpanner.bound-details.right.padding = #padding
+	#}
+)
+
 mmrPos = #(define-music-function
 	(position)
 	(number?)
@@ -330,6 +338,8 @@ markupfermata = {
 	}
 }
 
+fermataSign = \markup { \musicglyph "scripts.ufermata" }
+
 markXoffset = #(define-music-function
 	(offset)
 	(number?)
@@ -359,6 +369,14 @@ aIIXoffset = #(define-music-function
 	(number?)
 	#{
 		\once \override CombineTextScript.X-offset = #offset
+	#}
+)
+
+aIIExtraOffset = #(define-music-function
+	(extraoffset)
+	(pair?)
+	#{
+		\once \override CombineTextScript.extra-offset = #extraoffset
 	#}
 )
 
@@ -447,6 +465,15 @@ tupletYoffset = #(define-music-function
 		\once \override TupletNumber.Y-offset = #position
 	#}
 )
+
+textSpannerRightPadding = #(define-music-function
+	(padding)
+	(number?)
+	#{
+		\once \override TextSpanner.bound-details.right.padding = #padding
+	#}
+)
+
 
 % footnotes:
 footnotePageII = \markup {

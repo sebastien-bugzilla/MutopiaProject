@@ -317,7 +317,7 @@ musicFlautoIMvtI = \relative c'' {
 	bes'2(\p ees4 bes8. c16)
 % Bars 296 to 300
 	g16( ees g bes) bes2.
-	e,!16\p-. e-. dis-. e-. r8. e16-. gis-. gis-. fisis-. gis-. r8. gis16-.
+	e,!16\p-. e-. dis-. e-. r8. e16-. gis-.\< gis-. fisis-. gis-.\! r8. gis16-.
 	a!16-._\crescmarkup a-. gis-. a-. r8. a16-.\< ais-. ais-. gisis-. ais-.\! r4
 	bis8\fz r r4 r2
 	cis8\fz r r4 r2

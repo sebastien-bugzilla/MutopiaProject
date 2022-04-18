@@ -126,14 +126,14 @@ musicTubaMvtI = \relative c, {
 	
 % Bars 191 to 195
 	R1\fermata \mark \default
-	d1-^\f
-	d-^\fz
-	d-^\fz
-	d-^\fz
+	d1^^\f
+	d^^\fz
+	d^^\fz
+	d^^\fz
 % Bars 196 to 200
-	d-^
-	d-^
-	d-^~
+	d^^
+	d^^
+	d^^~
 	d~
 	d~\p\>
 % Bars 201 to 205

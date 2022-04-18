@@ -98,11 +98,11 @@ musicCornoIIIMvtI = \relative c'' {
 % Bars 126 to 130
 	e8\f r r4 r2
 	R1 \mark \default
-	a1-^\fp
-	f-^\fp
-	a-^\fp
+	a1^^\fp
+	f^^\fp
+	a^^\fp
 % Bars 131 to 135
-	f-^\fp
+	f^^\fp
 	c'4\fz r r2
 	R1*23
 % Bars 136 to 140
@@ -154,8 +154,8 @@ musicCornoIIIMvtI = \relative c'' {
 % Bars 196 to 200
 	c4.\f d16 e c2
 	bes4. a16 g bes2
-	a1\fz\>
-	b8\fz r r4 r2
+	\hairpinShorten #'(0 . 3) a1\fz\>
+	b8-\tweak X-offset #0 \fz r r4 r2
 	R1
 % Bars 201 to 205
 	r2 r4 r8 g'\pp~
@@ -234,15 +234,15 @@ musicCornoIIIMvtI = \relative c'' {
 % Bars 301 to 305
 	c\f r c-> b-. c-> b-. c-> b-. 
 	c\fz r r4 r2 \mark \default
-	r4 \tuplet 3/2 4 {r8 a,\f\< a a cis cis cis e e\!}
+	r4 \tupletYoffset #1.5 \tuplet 3/2 4 {r8 a,\f\< a a cis cis cis e e\!}
 	e2(\> d\!)
-	cis8\brack\p r \tuplet 3/2 4 {r8 a\< a a cis cis cis e e\!}
+	cis8\brack\p r \tupletYoffset #2 \tuplet 3/2 4 {r8 a\< a a cis cis cis e e\!}
 % Bars 306 to 310
 	e2(\fz\> d)\!
 	R1*3
 	
 	
-	d2.\f-^ r4
+	d2.\f^^ r4
 % Bars 311 to 315
 	R1
 	des'2\f e!4-. e-.
@@ -253,7 +253,7 @@ musicCornoIIIMvtI = \relative c'' {
 	r8 b\fz r4 r8 b\fz r4
 	b8\fz r r4 r2
 	r2 r4 r8\fermata b
-	a1-^\ff 
+	a1^^\ff 
 	gis2-^ cis-^
 % Bars 321 to 325
 	r8 fis, r gis r a r a

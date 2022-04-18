@@ -24,7 +24,7 @@ musicCornoIIMvtI = \relative c' {
 	r4 fis8.\p\< g16 a8 r fis8. g16\!
 % Bars 16 to 20
 	c8\mf r c8.\<-> bes16-. ees8.-> d16-. g8.-> fis16-.\!
-	fis4.(_\piuf g16 a fis2)
+	fis4.(-\tweak X-offset #-1.5 _\piuf g16 a fis2)
 	fis4.(-> ees16 d fis2)
 	c1\f~
 	c~
@@ -153,10 +153,10 @@ musicCornoIIMvtI = \relative c' {
 	
 	
 	r4 g8\f\<-. fis-. g-. fis-. g-. fis-.\!
-	g->\fz r r4 r2 \mark \default
+	g->-\tweak X-offset #0.2 \fz r r4 r2 \mark \default
 % Bars 176 to 180
-	\tuplet 3/2 4 {d'8-^\mf\< bes, bes bes d d d f f f bes bes\! }
-	a2\fz\> f\p
+	\tuplet 3/2 4 {d'8-^-\tweak X-offset #-1 \mf\< bes, bes bes d d d f f f bes bes\! }
+	a2-\tweak X-offset #-0.1 \fz\> f\p
 	\tuplet 3/2 4 {f8 bes, bes bes\< d d d f f f bes bes\!}
 	a2\fz\> f\p
 	aes4(\fp g) aes(\fz g)
@@ -164,7 +164,7 @@ musicCornoIIMvtI = \relative c' {
 	ges(\fz f) ges(\fz f)
 	aes(\< g!) bes( a)\!
 	c2\fz r
-	r4 fis,,2.\f
+	r4 fis,,2.-\tweak extra-offset #'(0.8 . 0.8) \f
 	b2 b4-. b-.
 % Bars 186 to 190
 	c8 r r4 r2
@@ -181,8 +181,8 @@ musicCornoIIMvtI = \relative c' {
 % Bars 196 to 200
 	d1\fz
 	d\fz
-	<< c\fz {s4\> s s s\!} >>
-	c8\fz r r4 r2
+	\hairpinShorten #'(0 . 3) c\fz\>
+	c8-\tweak X-offset #0 \fz r r4 r2
 	R1*4
 % Bars 201 to 205
 	
@@ -247,7 +247,7 @@ musicCornoIIMvtI = \relative c' {
 	c'8\f r r4 r2
 % Bars 266 to 270
 	R1
-	b2\ff c
+	b2-\tweak X-offset #0.5 \ff c
 	b2. b4
 	a a b2
 	a2.\> r4\!

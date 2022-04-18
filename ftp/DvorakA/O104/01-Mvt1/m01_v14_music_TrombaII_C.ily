@@ -123,9 +123,9 @@ musicTrombaIIMvtI = \relative c'' {
 	c4-> e!8 g c,8. c16 c'4-^~
 	c2 r4 f,
 % Bars 196 to 200
-	d8.->\f f16 f2 r4
+	d8.^>\brack\f f16 f2 r4
 	d8.-> f16 f2 r4
-	e!8.-> g16 c2.->\>~
+	e!8.-> g16 \hairpinShorten #'(0 . 6) c2.->\>~
 	c8\! r r4 r2
 	R1*9
 % Bars 201 to 205

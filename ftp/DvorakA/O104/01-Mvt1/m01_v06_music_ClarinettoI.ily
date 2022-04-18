@@ -306,7 +306,7 @@ musicClarinettoIMvtI = \relative c' {
 	cis2\mf( e4 d)
 	fis(\< d cis b)\!
 	d(\> a) \acciaccatura fis'8 e4.( d8)\! \mark \default
-	\tempoXoffset #0.8 \hairpinLength #6 fis2.\> fis4\!
+	\tempoXoffset #0.8 \hairpinLength #6 fis2.\p\> fis4\!
 	g4(\pp fis g fis)
 % Bars 286 to 290
 	g(\< dis2->\fz\> e4)\!

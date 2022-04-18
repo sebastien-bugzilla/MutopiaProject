@@ -7,6 +7,7 @@
 	left-margin = 18 \mm
 %	annotate-spacing = ##t
 %	first-page-number = 0
+	max-systems-per-page = #1
 	slashSeparator = \markup {
 		\center-align
 		\vcenter \combine

@@ -14,7 +14,7 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	
-	\partCombineApart a4--\mp r a r8 bes
+	\partCombineApart a4--_\mp r a r8 bes
 	a4-- g-- a-- r \partCombineAutomatic
 % Bars 11 to 15
 	R1*4
@@ -23,8 +23,8 @@ musicCornoIMvtI = \relative c'' {
 	
 	r4 \partCombineApart fis8. g16 c8 \once \partCombineAutomatic r fis,8. g16
 % Bars 16 to 20
-	\partCombineAutomatic ees'8\mf r c8.\<-> bes16-. ees8.-> d16-. g8.-> fis16-.\!
-	fis4.(_\piuf g16 a fis2)
+	\partCombineAutomatic ees'8\mf r \aIIXoffset #-3 c8.\<-> bes16-. ees8.-> d16-. g8.-> fis16-.\!
+	fis4.(-\tweak X-offset #-1.5 _\piuf g16 a fis2)
 	fis4.(-> ees16 d fis2)
 	ees1\f~
 	ees~
@@ -66,15 +66,15 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 % Bars 56 to 60
-	\partCombineApart c2.(\pp cis4)
+	\partCombineApart c2.(_\pp cis4)
 	d2(~^\moltoespressivo d8 c! bes g)
-	bes2( f4) bes(\<
-	c d f\> d8 bes)\!
+	bes2( f4) bes(_\<
+	c d f_\> d8 bes)\!
 	c2.(_\dimmarkup cis4)
 % Bars 61 to 65
-	d2\pp(~ d8 c! bes g)
-	bes2( f4)\< f'->\!~
-	f a,(\>_\dimmarkup d c8 g\!
+	d2_\pp(~ d8 c! bes g)
+	bes2( f4)_\< f'->\!~
+	f a,(_\dimD_\> d c8 g\!
 	f2.) r4 \partCombineAutomatic
 	R1*6
 % Bars 66 to 70
@@ -97,9 +97,9 @@ musicCornoIMvtI = \relative c'' {
 	
 % Bars 91 to 95
 	
-	\partCombineApart r4 g,(\pp a bes~
-	bes) des8.(\< c16 fes2~
-	fes2.\f\> ees4~
+	\partCombineApart r4 g,(_\pp a bes~
+	bes) des8.(_\< c16 fes2~
+	fes2._\f_\> ees4~
 	ees)\! r r2 \partCombineAutomatic
 % Bars 96 to 100
 	R1*12
@@ -108,8 +108,8 @@ musicCornoIMvtI = \relative c'' {
 % Bars 106 to 110
 	
 	
-	\partCombineApart c1\fz
-	d2_\dimD\> ees8( d4.)\! \mark \default
+	\partCombineApart c1_\fz
+	d2_\dimD_\> ees8( d4.)\! \mark \default
 	d8 \partCombineAutomatic r r4 r2
 % Bars 111 to 115
 	R1*15
@@ -120,14 +120,14 @@ musicCornoIMvtI = \relative c'' {
 % Bars 126 to 130
 	c8\f r r4 r2
 	R1 \mark \default
-	bes1-^\fp
+	bes1^^\fp
 	c-^\fp
-	bes-^\fp
+	bes^^\fp
 % Bars 131 to 135
 	c-^\fp
 	ees4\fz r r2
 	R1
-	\partCombineApart c2.\fp\> r4\! \partCombineAutomatic
+	\partCombineApart c2._\fp_\> r4\! \partCombineAutomatic
 	R1*22
 % Bars 136 to 140
 	
@@ -147,16 +147,16 @@ musicCornoIMvtI = \relative c'' {
 	
 	\partCombineAutomatic
 	R1
-	\partCombineApart c16-.\p c-. c-. c-. r8. c16-.\< d-. d-. d-. d-.\! r8. d16-.\<
+	\partCombineApart c16-._\p c-. c-. c-. r8. c16-._\< d-. d-. d-. d-.\! r8. d16-._\<
 % Bars 171 to 175
-	f-. f-. f-. f-.\! r8. f16\< f-. f-. f-. f-.\! r4
-	f8\f r \tuplet 3/2 4 {b,\p c b} b r \tuplet 3/2 4 {b c b}
-	c\f r \tuplet 3/2 4 {c\brack\p\< des c} c r \tuplet 3/2 4 {c des c\!}
-	des\f r \partCombineAutomatic e!\f\<-. dis-. e-. dis-. e-. dis-.\!
-	e->\fz r r4 r2 \mark \default
+	f-. f-. f-. f-.\! r8. f16_\< f-. f-. f-. f-.\! r4
+	f8_\f r \tuplet 3/2 4 {b,_\p c b} b r \tuplet 3/2 4 {b c b}
+	c_\f r \tuplet 3/2 4 {c_\brack_\p_\< des c} c r \tuplet 3/2 4 {c des c\!}
+	des_\f r \partCombineAutomatic e!\f\<-. dis-. e-. dis-. e-. dis-.\!
+	e->-\tweak X-offset #0.2 \fz r r4 r2 \mark \default
 % Bars 176 to 180
-	\tuplet 3/2 4 {f8-^\mf\< d, d d f f f bes bes bes  d d\! }
-	d2\fz\> a\p
+	\tuplet 3/2 4 {f8-^-\tweak X-offset #-1 \mf\< d, d d f f f bes bes bes  d d\! }
+	d2-\tweak X-offset #-0.1 \fz\> a\p
 	\tuplet 3/2 4 {bes8 d, d d\< f f f bes bes bes d d\!}
 	d2\fz\> a\p
 	d4(\fp ees) d(\fz ees)
@@ -164,7 +164,7 @@ musicCornoIMvtI = \relative c'' {
 	c(\fz d) c(\fz d)
 	d(\< ees) e( f)\!
 	ges2\fz r
-	r4 fis,2.\f
+	r4 fis,2.-\tweak extra-offset #'(0.8 . 0.8) \f
 	b2 b4-. b-.
 % Bars 186 to 190
 	c8 r r4 r2
@@ -181,8 +181,8 @@ musicCornoIMvtI = \relative c'' {
 % Bars 196 to 200
 	f1\fz
 	f\fz
-	<< e!\fz {s4\> s s s\!} >>
-	ees8\fz r r4 r2
+	e!\fz\>
+	ees8-\tweak X-offset #0 \fz r r4 r2
 	R1*4
 % Bars 201 to 205
 	
@@ -205,8 +205,8 @@ musicCornoIMvtI = \relative c'' {
 % Bars 216 to 220
 	ees1\f
 	e!->\fz
-	dis4(\f\< g!2 fis4)\!
-	\partCombineApart e(_\dimD\> d!8. c!16 c4 ais)\!
+	dis4(_\f_\< g!2 fis4)\!
+	\partCombineApart e(_\dimD_\> d!8. c!16 c4 ais)\!
 	b r r2 \partCombineAutomatic
 % Bars 221 to 225
 	R1*3
@@ -232,22 +232,22 @@ musicCornoIMvtI = \relative c'' {
 	
 	\partCombineApart ees1_\pcresc
 	d
-	ees\<
+	\hairpinShorten #'(0 . 8) ees_\<
 % Bars 256 to 260
-	c8\fz r r4 r2 \partCombineAutomatic
+	c8_\fz r r4 r2 \partCombineAutomatic
 	R1*4
 	
 	
 	\mark \default
 % Bars 261 to 265
 	R1
-	\partCombineApart r2 r8 d4\p d8~
-	d\< d4 d d d8\!
-	ees8\fz->( c!16) r ees8->( c16) r ees8->( c16) r ees8->( c16) r \partCombineAutomatic
+	\partCombineApart r2 r8 d4_\p d8~
+	d_\< d4 d d d8\!
+	ees8_\fz->( c!16) r ees8->( c16) r ees8->( c16) r ees8->( c16) r \partCombineAutomatic
 	ees8\f r r4 r2
 % Bars 266 to 270
 	R1
-	d2\ff e!
+	d2-\tweak X-offset #0.5 \ff e!
 	d2. d4
 	d d d2
 	\once \partCombineChords d2.\> r4\!
@@ -267,20 +267,20 @@ musicCornoIMvtI = \relative c'' {
 	
 % Bars 296 to 300
 	
-	\partCombineApart c16-.\pp c-. c-. c-. r8. c16-. b\<-. b-. b-. b-.\! r8. b16-.
-	d-.^\crescmarkup d-. d-. d-. r8. d16-.\< d-. d-. d-. d-.\! r4 \partCombineAutomatic
+	\partCombineApart c16-._\pp c-. c-. c-. r8. c16-. b_\<-. b-. b-. b-.\! r8. b16-.
+	d-._\crescmarkup d-. d-. d-. r8. d16-._\< d-. d-. d-. d-.\! r4 \partCombineAutomatic
 	f8\f r r4 r2
 	ees8\f r r4 r2
 % Bars 301 to 305
 	des8\f r des-> c-. des-> c-. des-> c-. 
 	des\fz r r4 r2 \mark \default
-	\tuplet 3/2 4 {r8 b,\f b b\< d d d g g g b b\!}
+	\tupletYoffset #1.5 \tuplet 3/2 4 {r8 b,\f b b\< d d d g g g b b\!}
 	b2\>( fis)\!
 	\tuplet 3/2 4 {g8\brack\p\noBeam b, b b\< d d d g g g b b\!}
 % Bars 306 to 310
 	b2\fz\>( fis)\!
-	\partCombineApart b4(\fp c) b(\fp c)
-	a(\fp b) a(\fp b)
+	\partCombineApart b4(_\fp c) b(_\fp c)
+	a(_\fp b) a(_\fp b)
 	b( c_\crescmarkup cis d) \partCombineAutomatic
 	ees2.\f-^ r4
 % Bars 311 to 315
@@ -304,13 +304,13 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	
-	\partCombineApart g4\mp g,8. b16 d2
+	\partCombineApart g4_\mp g,8. b16 d2
 	g4 g,8. b16 d2~
 % Bars 331 to 335
 	d8 d4 d d d8~
 	d r r4 r2
-	d4->\p\< a-> e'-> c->\!
-	g'1\fz~
+	d4->_\p_\< a-> e'-> c->\!
+	g'1_\fz~
 	g8 r r4 r2 \partCombineAutomatic
 % Bars 336 to 340
 	R1*5
@@ -330,5 +330,5 @@ musicCornoIMvtI = \relative c'' {
 	d1_\ffz-^~
 	d4 r r2
 	R1
-	g,4\f r r2 \markupfermata \bar "|."
+	g,4\f r r2-\tweak extra-offset #'(7.5 . 0) ^\fermataSign \bar "|."
 }

@@ -12,13 +12,13 @@ musicFlautoIIMvtI = \relative c'' {
 	R1*6
 % Bars 6 to 10
 	
-	cis2\pp d2
+	cis2-\tweak X-offset #0.5 \pp d2
 	cis4. r8 r2
 	R1*7
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	r4 g'8.->\f\< fis16-. b8.-> ais16-. d8.-> cis16-.\!
+	r4 g'8.->\f-\tweak extra-offset #'(0 . 0.7) \< fis16-. b8.-> ais16-. d8.-> cis16-.\!
 	cis8 r g8(->\ff fis16) r g8(-> fis16) r g8(-> fis16) r 
 	g8(-> fis16) r g8(-> fis16) r g8(-> fis16) r g8(-> fis16) r 
 	cis'1\f~
@@ -46,7 +46,7 @@ musicFlautoIIMvtI = \relative c'' {
 	ais8\! r r4 r2
 	R1*3
 % Bars 41 to 45
-	\mmrPos #-6 R1
+	R1
 	R1*3
 	
 	\mark \default
@@ -158,8 +158,8 @@ musicFlautoIIMvtI = \relative c'' {
 	g'!16-.\p g-. fis-. g-. r8. g16-.\< b-. b-. ais-. b-.\! r8. b16-.\<
 % Bars 171 to 175
 	c-. c-. b-. c-.\! r8. c16\< cis!-. cis-. bis-. cis-.\! r4
-	c8\f r r4 r2
-	bes8\brack\f r r4 r2
+	c8-\tweak X-offset #-0.7 \f r r4 r2
+	bes8-\tweak X-offset #-0.2 \brack\f r r4 r2
 	d8\f r r4 r2
 	R1 \mark \default
 % Bars 176 to 180
@@ -173,7 +173,7 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 	r4 bes2.\f
-	\tuplet 3/2 4 {ees,8\< ges bes} \naturaltrill \afterGrace ees2.\!\startTrillSpan {d16[( ees)]\stopTrillSpan}
+	\tuplet 3/2 4 {ees,8\< ges bes} \naturaltrill \afterGrace 15/16 ees2.\!\startTrillSpan {d16[( ees)]\stopTrillSpan}
 % Bars 186 to 190
 	g!8 r r4 r2
 	r8 a,\fz r4 r2
@@ -193,7 +193,7 @@ musicFlautoIIMvtI = \relative c'' {
 	R1
 	\mmrPos #-8 R
 % Bars 201 to 205
-	\mmrPos #-8 R1
+	\mmrPos #-7 R1
 	R1*2
 	
 	d,,1\pp~
@@ -235,7 +235,7 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 	
-	gis2(~\p \tuplet 3/2 2 {gis4 ais b)}
+	gis2(~\p \once \tupletUp \tuplet 3/2 2 {gis4 ais b)}
 % Bars 241 to 245
 	b( ais2 e8 dis)
 	dis4(\< gis) gis-- gis--\!
@@ -287,7 +287,7 @@ musicFlautoIIMvtI = \relative c'' {
 	R1*2
 % Bars 296 to 300
 	
-	e!16\p-. e-. dis-. e-. r8. e16-. gis-. gis-. fisis-. gis-. r8. gis16-.
+	e!16\p-. e-. dis-. e-. r8. e16-. gis-.\< gis-. fisis-. gis-.\! r8. gis16-.
 	a!16-._\crescmarkup a-. gis-. a-. r8. a16-.\< ais-. ais-. gisis-. ais-.\! r4
 	a!8\fz r r4 r2
 	g!8\fz r r4 r2
@@ -346,6 +346,6 @@ musicFlautoIIMvtI = \relative c'' {
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {b8\f b b} b4 b
 	b2 r
-	R1*2
+	<< { R1 R} {s1 s1} >>
 	\bar "|."
 }

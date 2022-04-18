@@ -23,7 +23,7 @@ musicOboeIIMvtI = \relative c' {
 	
 	fis8.\mf\< ais16 cis8. b16 ais8. cis16 e8. d16\!
 % Bars 16 to 20
-	cis8.\f e16 g8-> r r2
+	cis8. e16 g8-> r r2
 	e8 r g8->-\ff( fis16) r g8(-> fis16) r g8(-> fis16) r 
 	g8(-> fis16) r g8(-> fis16) r g8(-> fis16) r g8(-> fis16) r 
 	e1\f~
@@ -53,7 +53,7 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 % Bars 41 to 45
-	\mmrPos #-6 R1
+	R1
 	R1*3
 	
 	\mark \default
@@ -137,7 +137,7 @@ musicOboeIIMvtI = \relative c' {
 	d8) r r4 r2
 % Bars 126 to 130
 	ais8\f r r4 r2
-	r8 fis16(\f\< g gis a ais b cis d dis e eis fis g! fis)\! \mark \default
+	r8 fis16(\f-\tweak extra-offset #'(0 . 0.3) \< g gis a ais b cis d dis e eis fis g! fis)\! \mark \default
 	R1*4
 	
 	
@@ -158,20 +158,20 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	
-	cis,,2.\fz( d4)\<
-	d4( fis e fis)\!
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur cis,,2.-\tweak X-offset #0.2 \fz( d4)\<
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur d4( fis e fis)\!
 % Bars 156 to 160
 	a1 \mark \default
 	a2.( ais4)
 	b fis g fis
-	g dis2->\> e4\!
+	g \hairpinShorten #'(1 . 0) dis2-\tweak rotation #'(-1 1 0) \> e4\!
 	g4( fis g fis)
 % Bars 161 to 165
-	g4(\< dis2->\> e4\!)
+	g4(\< dis2^>\> e4\!)
 	b'(\crescD\< a b a)\!
 	g(\mf fis g fis)
 	f( e f e)
-	d4( e f fis)
+	\shape #'((0 . 0.5)(0 . 0.5)(0 . 0)(0 . 0)) Slur d4( e f fis)
 % Bars 166 to 170
 	fis4(\pp eis dis eis)
 	fis( eis dis eis)
@@ -195,7 +195,7 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	r4 bes,2.\f
-	\tuplet 3/2 4 {ees,8\< ges bes} \naturaltrill \afterGrace ees2.\startTrillSpan\! {d16[(\stopTrillSpan ees])}
+	\tuplet 3/2 4 {ees,8\< ges bes} \naturaltrill \afterGrace 15/16 ees2.\startTrillSpan\! {d16[( ees])\stopTrillSpan}
 % Bars 186 to 190
 	cis!8 r r4 r2
 	r8 a\fz r4 r2
@@ -211,11 +211,11 @@ musicOboeIIMvtI = \relative c' {
 % Bars 196 to 200
 	d-^
 	dis-^
-	e4._\dimmarkup fis16\> gis e2~
+	\hairpinShorten #'(0 . 3) e4._\dimD\> fis16 gis e2~
 	e8\fz r r4 r2
 	\mmrPos #-8 R1
 % Bars 201 to 205
-	\mmrPos #-8 R
+	\mmrPos #-7 R
 	R1*7
 % Bars 206 to 210
 	
@@ -260,7 +260,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 246 to 250
 	
 	\mark \default
-	\mmrPos #-6 R1
+	R1
 	R1*8
 	
 % Bars 251 to 255
@@ -275,8 +275,8 @@ musicOboeIIMvtI = \relative c' {
 	R1
 	r4 d8\(\mf cis\< g'! fis eis\! fis\)
 	r ais(\f\< b ais)\! r ais(\< b ais)\!
-	eis8\fz->\( fis16\) r eis8->\( fis16\) r eis8\(-> fis16\) r eis8->\( fis16\) r
-	ais8\brack\f r r4 r2
+	eis8\fz^>\( fis16\) r eis8->\( fis16\) r eis8\(-> fis16\) r eis8->\( fis16\) r
+	ais8-\tweak X-offset #0.2 \brack\f r r4 r2
 % Bars 266 to 270
 	R1
 	dis2\ff~ dis8 cis\( b gis\)
@@ -294,13 +294,13 @@ musicOboeIIMvtI = \relative c' {
 	fis2.\(\p\> fisis4\)\!
 	gis\(\pp dis e dis\)
 % Bars 286 to 290
-	e(\< bis2->\fz\> cis4\!)
+	e(\< bis2^>\fz\> cis4\!)
 	e( dis e dis)
-	e(\< bis2-> cis4)\!
+	e(\< bis2^> cis4)
 	gis'(\mf fis gis fis)
 	e( dis\> e dis)\!
 % Bars 291 to 295
-	d!( cis\> d cis)\!
+	d!( cis_\dimD_\> d cis)\!
 	d4 r r2
 	R1
 	\mmrPos #-6 R

@@ -29,7 +29,7 @@ musicTromboneIMvtI = \relative c' {
 	b8 r r4 r2
 	R1
 % Bars 31 to 35
-	\partCombineApart e2->\f d->
+	\partCombineApart e2->_\f d->
 	c-> b-> \partCombineAutomatic
 	cis!8\f r r4 r2
 	R1*11
@@ -122,7 +122,7 @@ musicTromboneIMvtI = \relative c' {
 	
 % Bars 191 to 195
 	R1\fermata \mark \default
-	d'1-^\f
+	\aIIXoffset #-3 d'1-^\f
 	dis-^\fz
 	e-^\fz
 	cis-^\fz
