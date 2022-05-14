@@ -38,17 +38,17 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	\partCombineApart d4(\p-> fis,)
+	\partCombineApart d4(_\p-> fis,)
 	a->( d,)
 % Bars 51 to 55
 	b'( g8 a)
-	fis4 \tuplet 3/2 4 {fis8\<-. a-. d-.\!}
-	d4\fp( fis,)
+	fis4 \tuplet 3/2 4 {fis8_\<-. a-. d-.\!}
+	d4_\fp( fis,)
 	a( d,)
 	b'( g8 a)
 % Bars 56 to 60
 	fis4 fis,16-. a-. d-. fis-.
-	a2\p~
+	a2_\p~
 	a
 	a4( c8 a)
 	g4( fis8 b)
@@ -60,20 +60,20 @@ musicFlautoIMvtIII = \relative c''' {
 	cis4( e
 % Bars 66 to 70
 	cis e)
-	cis8 r fis\f r \partCombineAutomatic
+	cis8 r fis_\f r \partCombineAutomatic
 	R2*5
 	
 	
 % Bars 71 to 75
 	
 	
-	\partCombineApart fis,4-.\mp b-.
+	\partCombineApart fis,4-._\mp b-.
 	cis8( d16 cis b4)
 	fis'4( e16 d cis b)
 % Bars 76 to 80
 	cis4. r8
 	cis4( dis)
-	e8(\< fis a16 g fis e)\!
+	e8(_\< fis a16 g fis e)\!
 	\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
 	b r r4 \partCombineAutomatic
 % Bars 81 to 85
@@ -112,8 +112,8 @@ musicFlautoIMvtIII = \relative c''' {
 	R2*3
 	
 	
-	\partCombineApart r4 d,,16-.\p\< d-. fis-. b-. 
-	d-. d-. fis-. b-. d8-.\fz b-.  \partCombineAutomatic
+	\partCombineApart r4 d,,16-.-\offset X-offset #1 _\p_\< d-. fis-. b-. 
+	d-. d-. fis-. b-. d8-._\fz b-.  \partCombineAutomatic
 % Bars 116 to 120
 	R2*3
 	
@@ -260,27 +260,27 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	\partCombineApart g8(\p b16 a g8 d)
+	\partCombineApart g8(_\p b16 a g8 d)
 % Bars 316 to 320
 	g8( b16 a g8 d)
-	g(\> d4.)\!
-	\acciaccatura b'8 g(\> d4.)\!
+	g(_\> d4.)\!
+	\acciaccatura b'8 g(_\> d4.)\!
 	b'8( d16 cis! b8 fis)
 	b( d16 cis b8 fis)
 % Bars 321 to 325
-	b8(\> fis4.)\!
-	\acciaccatura d'8 b\>( fis4.)\!
-	ais4.\p ais16( cis
+	b8(_\> fis4.)\!
+	\acciaccatura d'8 b_\>( fis4.)\!
+	ais4._\p ais16( cis
 	ais4.) ais16( cis
-	bes8.) c16(\< c8. des16
+	bes8.) c16(_\< c8. des16
 % Bars 326 to 330
-	des8. ees16\! ees8.\> des16\!)
+	des8. ees16\! ees8._\> des16\!)
 	c4. c16( ees
 	c4.) c16( ees
-	c8.) d!16(\< d8. ees16
-	ees8. f16\! f8.\> ees16\! \mark \default
+	c8.) d!16(_\< d8. ees16
+	ees8. f16\! f8._\> ees16\! \mark \default
 % Bars 331 to 335
-	e!8)\p r r4 \partCombineAutomatic
+	e!8)_\p r r4 \partCombineAutomatic
 	R2*7
 % Bars 336 to 340
 	
@@ -327,16 +327,16 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 396 to 400
 	
 % Bars 401 to 405
-	\partCombineApart fis,4\mp b
+	\partCombineApart fis,4_\mp b
 	cis8( dis16 cis b4)
 	cis8( dis16 cis b4)
 	cis8( dis16 cis b4)
 	gis'8( fis \tuplet 3/2 4 {e dis cis)}
 % Bars 406 to 410
-	fis(\< e \tuplet 3/2 4 {dis cis b)}
+	fis(_\< e \tuplet 3/2 4 {dis cis b)}
 	e8( d \tuplet 3/2 4 {d cis b)}
 	e16( d cis b e d cis b)\!
-	g'8\fz r r4 \partCombineAutomatic
+	g'8_\fz r r4 \partCombineAutomatic
 	R2*3
 % Bars 411 to 415
 	
@@ -367,7 +367,7 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	\tuplet 3/2 4 {dis,8\pp( e dis} cis dis)
+	\tuplet 3/2 4 {dis,8-\tweak X-offset #-1 \pp( e dis} cis dis)
 	\tuplet 3/2 4 {dis( e dis} cis8. e16)
 % Bars 451 to 455
 	\tuplet 3/2 4 {dis8( e dis} cis dis)
@@ -384,8 +384,8 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 466 to 470
 	
 	
-	\partCombineApart r4 fis8.\p\<( dis'16)
-	dis4.(\fz\> cis8
+	\partCombineApart r4 fis8._\p_\<( dis'16)
+	dis4.(_\fz_\> cis8
 	b4. ais8)\!
 % Bars 471 to 475
 	ais8.( gis16) gis4_\dimmarkup(~

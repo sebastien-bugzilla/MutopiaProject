@@ -149,8 +149,8 @@ musicOboeIMvtIII = \relative c' {
 % Bars 131 to 135
 	eis2(
 	fis)~
-	fis~
-	fis
+	fis~\>
+	fis\!
 	\tuplet 3/2 4 {g!8 g g\< g g g
 % Bars 136 to 140
 	fis fis fis g g g\!

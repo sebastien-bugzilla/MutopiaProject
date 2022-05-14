@@ -375,7 +375,7 @@ musicFagottoIIMvtIII = \relative c, {
 	ais ais r b! b r
 % Bars 391 to 395
 	gis gis r gis gis r
-	g g r  g g\! r }
+	g g r  g g r\! }
 	b\f r r4
 	r r8 eis,\f
 	fis r fis r
@@ -424,7 +424,7 @@ musicFagottoIIMvtIII = \relative c, {
 	
 % Bars 461 to 465
 	fis2\pp\<~
-	fis\!
+	fis
 	fis\>~
 	fis(
 	b,4.)\pp r8

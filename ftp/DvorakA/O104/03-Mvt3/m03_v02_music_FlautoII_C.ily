@@ -113,7 +113,7 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	eis,2\p(
+	eis,2-\offset X-offset #0.5 \p(
 	fis)~
 	fis\>~
 	fis\!(
@@ -343,7 +343,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	\tuplet 3/2 4 {b,,8\pp( cis b} ais b)
+	\tuplet 3/2 4 {b,,8-\tweak X-offset #-1 \pp( cis b} ais b)
 	\tuplet 3/2 4 {b( cis b} ais8. cis16)
 % Bars 451 to 455
 	\tuplet 3/2 4 {b8( cis b} ais b)

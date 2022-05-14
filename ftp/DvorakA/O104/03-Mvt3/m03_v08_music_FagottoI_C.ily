@@ -24,7 +24,7 @@ musicFagottoIMvtIII = \relative c {
 	R2*2
 % Bars 26 to 30
 	
-	fis,8\ff fis16 fis fis8 fis16 fis
+	\aIIXoffset #-4 fis,8\ff fis16 fis fis8 fis16 fis
 	fis8 fis16 fis fis8 fis16 fis
 	fis8 r r4
 	R2*3
@@ -35,10 +35,10 @@ musicFagottoIMvtIII = \relative c {
 	R
 	R
 % Bars 36 to 40
-	\mmrPos #6 R
-	r4 b\p \partCombineAutomatic
+	\mmrPos #7 R
+	r4 b-\tweak X-offset #-0.5 \p \partCombineAutomatic
 	\partCombineChords b b8-.\< ais-.
-	\partCombineApart b b \partCombineChords fis-. fis-.\!
+	\partCombineApart \once \offset Beam.positions #'(-0.3 . -0.3) b b \partCombineChords fis-. fis-.\!
 	\partCombineAutomatic b4.\mf r8
 % Bars 41 to 45
 	R2*8
@@ -46,17 +46,17 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	\mark \default
-	\partCombineApart \mmrPos #8 R2
-	\mmrPos #8 R
+	\partCombineApart \mmrPos #6 R2
+	\mmrPos #6 R
 % Bars 51 to 55
-	\mmrPos #8 R
-	\mmrPos #8 R
-	\mmrPos #8 R
-	\mmrPos #8 R
-	\mmrPos #8 R
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R
 % Bars 56 to 60
-	\mmrPos #10 R
-	\mmrPos #8 R \partCombineAutomatic
+	\mmrPos #8 R
+	\mmrPos #6 R \partCombineAutomatic
 	R2*29
 % Bars 61 to 65
 	
@@ -110,7 +110,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart r8 d'-.\p cis-. r
+	\partCombineApart r8 d'-._\p cis-. r
 % Bars 126 to 130
 	r d-. cis-._\dimmarkup r
 	r d-. cis-. r
@@ -174,15 +174,15 @@ musicFagottoIMvtIII = \relative c {
 % Bars 181 to 185
 	
 	
-	\partCombineApart f'2\pp~
-	f\<
-	e8\fz r r4 \partCombineAutomatic
+	\partCombineApart f'2_\pp~
+	f_\<
+	e8_\fz r r4 \partCombineAutomatic
 % Bars 186 to 190
 	R2*7
 % Bars 191 to 195
 	
 	
-	\clef tenor r8 \partCombineChords g8\p\<( fis4->\fz) \partCombineAutomatic
+	\clef tenor r8 \partCombineChords \hairpinShorten #'(-0.5 . -0.5) g8\p\<( fis4->\fz) \partCombineAutomatic
 	r8 \partCombineChords g(\< fis4)\fz-> \partCombineAutomatic
 	g8 r r4 \clef bass
 % Bars 196 to 200
@@ -260,7 +260,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 281 to 285
 	d'2\p~
 	d
-	g4( d
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur g4( d
 	g d)
 	g( d)
 % Bars 286 to 290
@@ -268,9 +268,9 @@ musicFagottoIMvtIII = \relative c {
 	\partCombineApart d2~
 	d8 r r4
 	R2
-	\mmrPos #8 R
+	\mmrPos #6 R
 % Bars 291 to 295
-	\mmrPos #8 R
+	\mmrPos #7 R
 	R
 	d2
 	d4 e
@@ -283,7 +283,7 @@ musicFagottoIMvtIII = \relative c {
 	g g g  g g g
 % Bars 301 to 305
 	g g g  g\< g g
-	g g g  g g g\!}
+	\tupletUp g g g  g g g\!} \tupletNeutral
 	\once \partCombineApart d4 r
 	R2*11
 % Bars 306 to 310
@@ -341,7 +341,7 @@ musicFagottoIMvtIII = \relative c {
 	b b b  b b b
 	b b b  b\f b b
 	e e e  e e e}
-	dis2(\brack\mf
+	dis2(_\brack_\mf
 	e)
 % Bars 371 to 375
 	dis2(
@@ -365,11 +365,11 @@ musicFagottoIMvtIII = \relative c {
 	R2*3
 	
 	
-	\tuplet 3/2 4 {dis!8\brack\p\< dis r e e r
+	\tuplet 3/2 4 {\hairpinShorten #'(0 . -2) dis!8\brack\p\< dis r e e r
 	cis cis r dis dis r
 % Bars 391 to 395
 	b b r b b r
-	b b r b b\! r }
+	b b r b b r\! }
 	d\f r r4
 	r r8 eis\f
 	fis r e! r
@@ -417,8 +417,8 @@ musicFagottoIMvtIII = \relative c {
 % Bars 456 to 460
 	
 % Bars 461 to 465
-	b2\pp\<~
-	b\!
+	\hairpinShorten #'(0 . 2.5) b2\pp\<~
+	b
 	b\>~
 	b(
 	b4.)\pp r8
@@ -430,7 +430,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	cis2\p\>~
+	cis2_\p_\>~
 	cis(\!
 % Bars 481 to 485
 	d8) r r4
@@ -441,7 +441,7 @@ musicFagottoIMvtIII = \relative c {
 	
 % Bars 496 to 500
 	\mark \default
-	b,2\p\<~
+	\hairpinShorten #'(0 . -6) b,2\p\<~
 	b~
 	b~
 	b\!

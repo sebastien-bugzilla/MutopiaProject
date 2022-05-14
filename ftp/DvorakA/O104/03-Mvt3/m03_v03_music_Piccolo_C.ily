@@ -123,8 +123,11 @@ musicPiccoloMvtIII = \relative c' {
 % Bars 261 to 265
 	b8\ff r r4
 	b8 r^\mutainflautoII r4
+	R2
+	R
+	R
 % Bars 266 to 270
-	
+	R
 % Bars 271 to 275
 	
 % Bars 276 to 280

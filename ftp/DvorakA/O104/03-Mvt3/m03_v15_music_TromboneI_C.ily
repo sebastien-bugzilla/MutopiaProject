@@ -25,7 +25,7 @@ musicTromboneIMvtIII = \relative c' {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	d4\f d
+	d4-\tweak extra-offset #'(0 . 0.3) \f d
 	b4.-> b8
 	b4 d8 fis
 	cis4. r8
@@ -73,12 +73,12 @@ musicTromboneIMvtIII = \relative c' {
 	R2*3
 	
 	
-	c2->\f~
+	c2^>-\tweak X-offset #-0.8 \f~
 	c
 % Bars 101 to 105
 	R2*2
 	
-	c2->\f~
+	c2^>-\tweak X-offset #-0.8 \f~
 	c
 	cis!4 r
 % Bars 106 to 110
@@ -148,8 +148,8 @@ musicTromboneIMvtIII = \relative c' {
 	b r r4
 	R2
 	e2\ff 
-	eis\fz
-	fis\fz
+	eis-\tweak X-offset #0.5 \fz
+	fis-\tweak X-offset #0.5 \fz
 % Bars 221 to 225
 	fis4 e!8 cis! \mark \default
 	cis r r4
@@ -184,7 +184,7 @@ musicTromboneIMvtIII = \relative c' {
 % Bars 261 to 265
 	d\f r r4
 	d8 r r4
-	d8_\dimmarkup r r4\>
+	d8_\dimmarkup r \hairpinShorten #'(0 . -4) r4\>
 	d8 r r4\!
 	\once \partCombineApart b8 r r4
 % Bars 266 to 270
@@ -277,9 +277,9 @@ musicTromboneIMvtIII = \relative c' {
 	dis->
 	gis->~
 	gis
-	fis->_\fzdim~
+	fis->-\offset X-offset #-3.5 _\fzdimD\>~
 % Bars 426 to 430
-	fis~\>
+	fis~
 	fis\pp~
 	fis4. r8
 	R2*20

@@ -159,7 +159,7 @@ musicTrombaIMvtIII = \relative c'' {
 	
 	
 	
-	g,8.\f g32 g \tuplet 3/2 4 {g8 g g}
+	\aIIXoffset #-3.5 g,8.\f g32 g \tuplet 3/2 4 {g8 g g}
 	g8. g32 g \tuplet 3/2 4 {g8 g g}
 % Bars 256 to 260
 	g8. g32 g \tuplet 3/2 4 {g8 g g}
@@ -170,7 +170,7 @@ musicTrombaIMvtIII = \relative c'' {
 % Bars 261 to 265
 	g\f r r4
 	g8 r r4
-	g8_\dimmarkup r r4\>
+	g8_\dimmarkup r \hairpinShorten #'(0 . -4) r4\>
 	g8 r r4\!
 	g8\p r r4
 % Bars 266 to 270
@@ -263,9 +263,9 @@ musicTrombaIMvtIII = \relative c'' {
 	g->
 	a->
 	b4-> a->
-	d2_\fzdim->~
+	d2-\offset X-offset #-3.5 _\fzdimD\>->~
 % Bars 426 to 430
-	d~\>
+	d~
 	d~\p
 	d4. r8
 	R2*20

@@ -23,7 +23,7 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	e'2\ff~
+	e'2-\tweak X-offset #-1.5 \ff~
 	e~
 	e8 r r4
 	R2*3
@@ -69,7 +69,7 @@ musicClarinettoIMvtIII = \relative c' {
 	
 	
 	
-	\partCombineApart \tuplet 5/4 4 {d16(\f\< e g f e)\!} d8-. cis-.
+	\partCombineApart \tuplet 5/4 4 {d16(_\f_\< e g f e)\!} d8-. cis-.
 	d r r4 \partCombineAutomatic
 % Bars 81 to 85
 	R2*6
@@ -98,7 +98,7 @@ musicClarinettoIMvtIII = \relative c' {
 	R2*3
 	
 	
-	r4 d,16-.\p\< d-. f-. a-.
+	r4 \hairpinShorten #'(0 . -0.5) d,16-.\p-\tweak rotation #'(4 -1 0) \< d-. f-. a-.\!
 	d8\fz r r4
 % Bars 116 to 120
 	R2*3
@@ -111,7 +111,7 @@ musicClarinettoIMvtIII = \relative c' {
 	
 	
 	
-	\partCombineApart r8 f\p-. e-. r
+	\partCombineApart r8 f-\offset X-offset #-0.5 _\p-. e-. r
 % Bars 126 to 130
 	r f-. e-._\dimmarkup r
 	r f-. e-. r
@@ -133,44 +133,44 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 141 to 145
 	R2*2
 	\mark \default
-	\partCombineApart g'4(\p^\espressivoecantabile e
+	\partCombineApart g'4(_\pespressivoecantabile e
 	g e)
-	g8.(\< e16 c4~
+	g8.(_\< e16 c4~
 % Bars 146 to 150
-	c8\> bes4 a8)\!
-	g8\p( f' e4)
+	c8_\> bes4 a8)\!
+	g8_\p( f' e4)
 	g,8( f' e4)
-	g4(\< c~
-	c\! f16\> c a f)\!
+	g4(_\< c~
+	c\! f16_\> c a f)\!
 % Bars 151 to 155
-	g4(\p e
+	g4(_\p e
 	g e)
-	g8.(\< e16 c4~\!
-	c8\> bes4 a8)\!
-	a4\pp( bes
+	g8.(_\< e16 c4~\!
+	c8_\> bes4 a8)\!
+	a4_\pp( bes
 % Bars 156 to 160
 	a bes)
-	a(\< c~
+	a(_\< c~
 	c4. d8)\!
-	e!4(\p\> ees16 g f ees)\!
-	d8(\p e! ees16 g f ees)
+	e!4(_\p_\> ees16 g f ees)\!
+	d8(_\p e! ees16 g f ees)
 % Bars 161 to 165
 	d8( e! ees16 g f ees)
 	d( f ees d d4)
-	e!(\pp ees16 g f ees)
-	d8( e! ees16\> g f ees)\!
-	d8(\< g a bes
+	e!(_\pp ees16 g f ees)
+	d8( e! ees16_\> g f ees)\!
+	d8(_\< g a bes
 % Bars 166 to 170
-	c\! bes\f\> a g)\! \mark \default
-	g4(\brack\p e
+	c\! bes_\f_\> a g)\! \mark \default
+	g4(_\brack_\p e
 	g e)
-	g(\< f8 e)\!
-	f(\> g bes a)\!
+	g(_\< f8 e)\!
+	f(_\> g bes a)\!
 % Bars 171 to 175
-	g4(\< e8 a~
-	a4)\! \acciaccatura a8 bes4\mf(
+	g4(_\< e8 a~
+	a4)\! \acciaccatura a8 bes4_\mf(
 	\acciaccatura gis8 a4 \acciaccatura fis8 g4)
-	f!8(\< fis g gis)
+	f!8(_\< fis g gis)
 	a4\! \acciaccatura a8 bes4(
 % Bars 176 to 180
 	\acciaccatura gis8 a4 \acciaccatura fis8 g4
@@ -183,7 +183,7 @@ musicClarinettoIMvtIII = \relative c' {
 	
 	c'2\pp~
 	c\<
-	bes8\fz r r4
+	bes8-\tweak X-offset #-1.2 \fz r r4
 % Bars 186 to 190
 	R2*11
 % Bars 191 to 195
@@ -271,8 +271,8 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 281 to 285
 	d2(
 	f)
-	f8( bes a g)
-	f( bes a g)
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f8( bes a g)
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f( bes a g)
 	f8.( g16 f8 ees)
 % Bars 286 to 290
 	d4( ees8 f
@@ -295,7 +295,7 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 301 to 305
 	f4(_\< g~
 	g\!_\> f8 ees)\!
-	\partCombineApart d2\p~
+	\partCombineApart d2_\p~
 	d8 c( f8. ees16)
 	d8( f~ f16 bes d, g)
 % Bars 306 to 310
@@ -305,7 +305,7 @@ musicClarinettoIMvtIII = \relative c' {
 	d8( f~ f16 bes d, g)
 	f4(~ f16 ees d c)
 % Bars 311 to 315
-	d4(~\< d16 c f ees)
+	d4(~_\< d16 c f ees)
 	d4(~ d16 c f ees)\!
 	d4( c8) r \partCombineAutomatic
 	R2 \mark \default
@@ -321,7 +321,7 @@ musicClarinettoIMvtIII = \relative c' {
 	
 	\mark \default
 % Bars 331 to 335
-	e8\p r e4(~
+	e8-\tweak X-offset #0.5 \p r e4(~
 	e8 f e f)
 	g4. r8
 	R2
@@ -384,7 +384,7 @@ musicClarinettoIMvtIII = \relative c' {
 	bes a)\!
 	bes( a)
 	bes( a)
-	\tuplet 3/2 4 {r8 fis'!\< fis r g g
+	\tuplet 3/2 4 {r8\< fis'! fis r g g
 	r e e r fis fis
 % Bars 391 to 395
 	r d d r d d
@@ -450,7 +450,7 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 456 to 460
 	
 % Bars 461 to 465
-	fis4.(\pp\< g16 a
+	\hairpinShorten #'(0 . -2) fis4.(\pp\< g16 a
 	fis2)\!
 	fis4.( e16 d
 	fis4. e16 d)
@@ -469,7 +469,7 @@ musicClarinettoIMvtIII = \relative c' {
 	
 % Bars 476 to 480
 	
-	d4.\(\fp\> e16 f\)
+	\aIIXoffset #-1.5 d4.\(\fp\> e16 f\)
 	d2\!
 	d4.\(_\dimmarkup e16 f\)
 	d2~
@@ -482,7 +482,7 @@ musicClarinettoIMvtIII = \relative c' {
 	
 % Bars 496 to 500
 	\mark \default
-	d,2\p\<(
+	\hairpinShorten #'(0 . -6) d,2\p\<(
 	fis4 a
 	d fis
 	a2)\!

@@ -21,9 +21,9 @@ musicViolinoIIMvtIII = \relative c'' {
 % Bars 16 to 20
 	a4. r8
 	\slashedGrace b8 b4->\brack\fz g8-.\< e-.
-	\slashedGrace e'8 e4_\fzmarkupbrack-> c8-. g-.
-	\slashedGrace e'8 e4->_\fzmarkupbrack c8-. g-.
-	\slashedGrace g'8 g4->_\fzmarkupbrack e8-. c-.\!
+	\slashedGrace e'8 e4-\tweak extra-offset #'(0.3 . 3.8) _\fzmarkupbrack-> c8-. g-.
+	\slashedGrace e'8 e4->-\tweak extra-offset #'(0.3 . 4.3) _\fzmarkupbrack c8-. g-.
+	\slashedGrace g'8 g4->-\tweak extra-offset #'(0.3 . 4.8) _\fzmarkupbrack e8-. c-.\!
 % Bars 21 to 25
 	<cis! ais'>2:16\ff
 	q:
@@ -37,15 +37,15 @@ musicViolinoIIMvtIII = \relative c'' {
 	fis r fis,4\ff
 	fis eis
 % Bars 31 to 35
-	e!-^\fz r
-	cis-^\fz r
+	e!^^\fz r
+	cis^^\fz r
 	R2*8
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	<fis d'>4->\ff fis'->
 	g4.-> g8
-	fis(\< b4->\>) fis8-.\!
+	\hairpinShorten #'(0 . -2) fis(\< \hairpinShorten #'(2 . 0) b4->\>) fis8-.\!
 	<cis ais'>4. r8
 	a'!4-> a->
 % Bars 46 to 50
@@ -174,7 +174,7 @@ musicViolinoIIMvtIII = \relative c'' {
 	
 	r16 f(\p a8) r16 f( a8)
 	r16\< f( a8) r16 f( a8)\!
-	<a, g'>8\fz r r4
+	<a, g'>8-\tweak extra-offset #'(1 . 0.7) \fz r r4
 % Bars 186 to 190
 	r8 g'-.\p g-.[ r16 g-.]
 	g8-.\fz r r4
@@ -208,8 +208,8 @@ musicViolinoIIMvtIII = \relative c'' {
 	g'8\fz g g\fz g
 	g\fz g g\fz g
 	<c, e>2\fz->
-	<b b'>2\fz->
-	<ais ais'>2->\fz
+	<b b'>2-\offset X-offset #0.5 \fz->
+	<ais ais'>2->-\offset X-offset #0.5 \fz
 % Bars 221 to 225
 	<b b'>4 q8 q \mark \default
 	<cis ais'>8. fis16 fis8.\prall cis16
@@ -219,7 +219,7 @@ musicViolinoIIMvtIII = \relative c'' {
 % Bars 226 to 230
 	b,2\fp(
 	ais)
-	b(_\dimmarkup
+	b(-\offset X-offset #9 _\dimmarkup
 	ais)\>
 	b(\pp
 % Bars 231 to 235
@@ -253,7 +253,7 @@ musicViolinoIIMvtIII = \relative c'' {
 	\tuplet 5/4 4 {b16(\ff d fis eis e)} d8-.( cis-.)
 	\tuplet 5/4 4 {b16( d fis eis e)} d8(-. cis-.)
 	\tuplet 5/4 4 {b16(_\dimmarkup d, fis eis e)} d8-.( cis-.\>)
-	\tuplet 5/4 4 {b16( d fis eis e)} d8-.( cis-.)
+	\tuplet 5/4 4 {b16( d fis eis e)} d8-.( cis-.)\!
 	b2:32\fp\>
 % Bars 266 to 270
 	b:
@@ -266,7 +266,7 @@ musicViolinoIIMvtIII = \relative c'' {
 	e4( d8 cis
 	b2)
 	cis4( b_\dimmarkup
-	g\> c~
+	\hairpinShorten #'(0 . -4) g\> c~
 % Bars 276 to 280
 	c2)\!
 	e\ppp\<~
@@ -334,7 +334,7 @@ musicViolinoIIMvtIII = \relative c'' {
 	\tuplet 12/8 2 {f2.:16
 	f:}
 	\tuplet 6/4 4 {d16( f d f d f  d f d f d f
-	d f_\crescmarkup d f d f   d f d f d f)
+	d f-\tweak extra-offset #'(0 . 1.9) _\crescmarkup d f d f   d f d f d f)
 	d(\< f d f d f   d f d f d f
 % Bars 346 to 350
 	d f d f d f  d f d f d f)\!} \bar "||" \key b \major
@@ -429,7 +429,7 @@ musicViolinoIIMvtIII = \relative c'' {
 	<b dis> <b e>
 	<b dis> <b e>\!
 % Bars 441 to 450
-	<<{b4} \\ {b2*1/2\pp}>> e4)
+	<<{b4} \\ {b2*1/2-\offset X-offset #-2.2 \pp}>> e4)
 	<<{
 		b4( e
 		dis e
@@ -438,7 +438,7 @@ musicViolinoIIMvtIII = \relative c'' {
 		q4
 	}\\{
 		b2
-		b_\dimmarkup
+		b-\offset X-offset #0.8 _\dimmarkup
 		b
 		s2\ppp
 		s4
@@ -494,7 +494,7 @@ musicViolinoIIMvtIII = \relative c'' {
 	<b d>8 r r4
 % Bars 496 to 500
 	R2^\senzasord \mark \default
-	b2:32\pp\<^\arco 
+	\hairpinShorten #'(0 . -3) b2:32\pp\<^\arco 
 	dis!4: fis:
 	b: dis:
 	fis: b:\!

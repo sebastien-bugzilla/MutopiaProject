@@ -23,7 +23,7 @@ musicClarinettoIIMvtIII = \relative c' {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	cis'2\ff~
+	cis'2-\tweak X-offset #-1.5 \ff~
 	cis~
 	cis8 r r4
 	R2*3
@@ -44,7 +44,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	e8. e16 e8-. e-.
 	e4 fis
 	d g8-.\< e-.
-	d g d-. e-.\!
+	\once \offset Beam.positions #'(0.4 . 0.3) d g d-. e-.\!
 	g\mf( e f) r
 % Bars 41 to 45
 	R2*8
@@ -98,7 +98,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	R2*3
 	
 	
-	r4 a,16-.\p\< a-. d-. f-.
+	r4 a,16-.\p-\tweak rotation #'(4 -1 0) \< a-. d-. f-.\!
 	a8\fz r r4
 % Bars 116 to 120
 	R2*3
@@ -163,7 +163,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 	aes''2\pp~
 	aes\<
-	c,8\fz r r4
+	c,8-\tweak X-offset #-1.2 \fz r r4
 % Bars 186 to 190
 	R2*11
 % Bars 191 to 195
@@ -249,7 +249,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 	\bar "||" \mark \default
 % Bars 281 to 285
-	bes2\p~
+	bes2-\offset X-offset #0.5 \p~
 	bes8 a( bes c)
 	d8( g f ees)
 	d( g f ees)
@@ -264,7 +264,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	f ees
 	f) r
 	f2( 
-	f4~ \tuplet 3/2 4 {f8 ees d)}
+	f4~ \once \tupletUp \tuplet 3/2 4 {f8 ees d)}
 	c( d ees4)
 % Bars 296 to 300
 	ees r
@@ -301,7 +301,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 	\mark \default
 % Bars 331 to 335
-	c'8\p r c4(~
+	c'8-\tweak X-offset #0.5 \p r c4(~
 	c8 d c d)
 	e4. r8
 	R2
@@ -364,7 +364,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	g fis)\!
 	g( fis)
 	g( fis)
-	\tuplet 3/2 4 {r8 dis'!\< dis r e e
+	\tuplet 3/2 4 {r8\< dis'! dis r e e
 	r cis cis r d! d
 % Bars 391 to 395
 	r b! b r b b
@@ -379,7 +379,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	eis(
 	e!)
 % Bars 401 to 405
-	a,\fz\>~
+	a,-\offset X-offset #0.5 \fz\>~
 	a\!~
 	a~
 	a~

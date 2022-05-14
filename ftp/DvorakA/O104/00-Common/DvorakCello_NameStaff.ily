@@ -15,7 +15,7 @@ nameStaffIIMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffIIIMvtI = {
-	\set Staff.instrumentName = "Oboi I. I.."
+	\set Staff.instrumentName = "Oboi I. II."
 	\set Staff.shortInstrumentName = "Ob."
 	\set Staff.midiInstrument = #""
 }
@@ -150,7 +150,7 @@ nameStaffIMvtII = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffIIMvtII = {
-	\set Staff.instrumentName = "Oboi I. I.."
+	\set Staff.instrumentName = "Oboi I. II."
 	\set Staff.shortInstrumentName = "Ob."
 	\set Staff.midiInstrument = #""
 }
@@ -281,7 +281,7 @@ nameStaffIIMvtIII = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffIIIMvtIII = {
-	\set Staff.instrumentName = "Oboi I. I.."
+	\set Staff.instrumentName = "Oboi I. II."
 	\set Staff.shortInstrumentName = "Ob."
 	\set Staff.midiInstrument = #""
 }

@@ -14,11 +14,11 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	R2*4
-	
+	\mmrPos #-6 R2
+	\mmrPos #-6 R
 % Bars 11 to 15
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 	R2*8
 % Bars 16 to 20
 	
@@ -37,7 +37,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 31 to 35
 	
 	
-	R2
+	\mmrPos #-6 R2
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 % Bars 36 to 40
@@ -162,13 +162,13 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	e,4(\p\> fis\!
+	\hairpinShorten #'(0 . -6) e,4^(-\offset X-offset #0.5 \p\> fis\!
 	g8 e fis4)
 % Bars 161 to 165
-	g8( e g fis
+	g8^( e g fis
 	e dis e4)
-	e(\pp fis)
-	g8( e fis4)
+	e^(-\offset X-offset #1.3 \pp fis)
+	g8^( e fis4)
 	R2*2
 % Bars 166 to 170
 	\mark \default
@@ -290,17 +290,17 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 301 to 305
 	g g g g\< g g
 	g g g fis fis e\!}
-	g2(\p
+	g2^(-\offset X-offset #0.5 \p
 	fis)
-	g(
+	g^(
 % Bars 306 to 310
 	fis)
-	g(
+	g^(
 	fis)
-	g(
+	g^(
 	fis)
 % Bars 311 to 315
-	g4( fis
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur g4^( fis
 	g fis
 	g fis8) r
 	R2 \mark \default

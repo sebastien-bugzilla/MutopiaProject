@@ -276,13 +276,13 @@ musicTubaMvtIII = \relative c, {
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	b2\f->
+	b2-\tweak X-offset #0.5 \f->
 	gis'->
 	e->~
 	e
-	b->~
+	b->~\>
 % Bars 426 to 430
-	b~\>
+	b~
 	b~\pp
 	b4. r8
 	R2*20

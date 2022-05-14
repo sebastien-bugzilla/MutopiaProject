@@ -20,7 +20,7 @@ musicTimpaniMvtIII = \relative c, {
 	fis2:32\pp
 % Bars 16 to 20
 	fis:
-	fis:\<
+	\hairpinShorten #'(0 . -9.5) fis:\<
 	fis:
 	fis:
 	fis:\!
@@ -166,7 +166,7 @@ musicTimpaniMvtIII = \relative c, {
 % Bars 261 to 265
 	b16\ff b r8 r4 
 	b16 b r8 r4
-	b16_\dimmarkup b r8 r4\> 
+	b16_\dimmarkup b r8 \hairpinShorten #'(0 . -4) r4\> 
 	b16 b r8 r4\!
 	b16\p b r8 b16 b r8 
 % Bars 266 to 270
@@ -271,9 +271,9 @@ musicTimpaniMvtIII = \relative c, {
 	
 	
 	
-	b2:32_\fzdim
+	b2:32-\offset X-offset #-3.5 _\fzdimD\>
 % Bars 426 to 430
-	b:\>
+	b:
 	b:\p
 	b4 r 
 	R2*20

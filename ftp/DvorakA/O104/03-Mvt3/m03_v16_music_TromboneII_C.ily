@@ -25,7 +25,7 @@ musicTromboneIIMvtIII = \relative c {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	fis4\f fis
+	fis4-\tweak extra-offset #'(0 . 0.3) \f fis
 	g4.-> g8
 	fis4 fis8 fis
 	ais4. r8
@@ -73,12 +73,12 @@ musicTromboneIIMvtIII = \relative c {
 	R2*3
 	
 	
-	g2->\f~
+	g2->-\tweak X-offset #-0.8 \f~
 	g
 % Bars 101 to 105
 	R2*2
 	
-	g2->\f~
+	g2->-\tweak X-offset #-0.8 \f~
 	g
 	ais4 r
 % Bars 106 to 110
@@ -148,8 +148,8 @@ musicTromboneIIMvtIII = \relative c {
 	g r r4
 	R2
 	c2\ff 
-	b\fz
-	ais\fz
+	b-\tweak X-offset #0.5 \fz
+	ais-\tweak X-offset #0.5 \fz
 % Bars 221 to 225
 	b4 b8 b \mark \default
 	ais r r4
@@ -277,9 +277,9 @@ musicTromboneIIMvtIII = \relative c {
 	b->
 	b->~
 	b
-	dis->~
+	dis->~\>
 % Bars 426 to 430
-	dis~\>
+	dis~
 	dis\pp~
 	dis4. r8
 	R2*20

@@ -28,7 +28,7 @@ musicContrabassoMvtIII = \relative c, {
 	fis r fis_\crescmarkup r
 % Bars 16 to 20
 	fis r fis r
-	fis r fis\< r
+	fis r \hairpinShorten #'(0 . -3.5) fis\< r
 	fis r fis r
 	fis r fis r
 	fis r fis\! r
@@ -62,7 +62,7 @@ musicContrabassoMvtIII = \relative c, {
 	e-> b' cis,-> cis'
 	fis, fis fis,-. fis-.
 	b\< d16 fis\! b8 r \mark \default
-	a8^\pizz\pp r a r
+	a8-\offset X-offset #-6 ^\pizz\pp r a r
 	a r a r
 % Bars 51 to 55
 	a r a r
@@ -80,7 +80,7 @@ musicContrabassoMvtIII = \relative c, {
 	gis4 r
 	gis r
 	b_\crescmarkup r
-	b\<   cis8 b
+	\hairpinShorten #'(6 . 0) b\<   cis8 b
 	ais4 r8 b\!^\arcobrack
 % Bars 66 to 70
 	ais4 r8 b
@@ -127,7 +127,7 @@ musicContrabassoMvtIII = \relative c, {
 % Bars 101 to 105
 	e, r r4
 	R2
-	\tuplet 3/2 4 {e8\brack\fz e c g' g e
+	\once \tupletUp \tuplet 3/2 4 {e8\brack\fz e c g' g e
 	c' c g e' e c}
 	ais4 r
 % Bars 106 to 110
@@ -137,7 +137,7 @@ musicContrabassoMvtIII = \relative c, {
 	
 	\mark \default
 % Bars 111 to 115
-	b4^\pizz\pp r
+	b4-\offset X-offset #-5.5 ^\pizz\pp r
 	R2*4
 	
 	
@@ -204,7 +204,7 @@ musicContrabassoMvtIII = \relative c, {
 	ais r b d
 % Bars 176 to 180
 	a! cis g! b
-	gis,2\pp~^\arco
+	gis,2\pp~-\offset X-offset #-5.4 ^\arco
 	gis
 	a~
 	a
@@ -212,7 +212,7 @@ musicContrabassoMvtIII = \relative c, {
 	bes~
 	bes
 	f(\p
-	f'\<)
+	\hairpinShorten #'(0 . 8) f'\<)
 	e8\fz r r4
 % Bars 186 to 190
 	r8 e-.\p e8-.[ r16 e-.]
@@ -257,7 +257,7 @@ musicContrabassoMvtIII = \relative c, {
 % Bars 226 to 230
 	g!2\fp(
 	fis)
-	g(_\dimmarkup
+	g(-\offset X-offset #9 _\dimmarkup
 	fis)\>
 	g(\pp
 % Bars 231 to 235
@@ -294,7 +294,7 @@ musicContrabassoMvtIII = \relative c, {
 % Bars 261 to 265
 	b,8\ff r r4
 	b8 r r4
-	b8_\dimmarkup r r4\>
+	b8_\dimmarkup r \hairpinShorten #'(0 . -4) r4\>
 	b8 r r4\!
 	b8\p r r4
 % Bars 266 to 270
@@ -319,7 +319,7 @@ musicContrabassoMvtIII = \relative c, {
 	
 % Bars 296 to 300
 	
-	g'4\pp^\pizz r
+	g'4\pp-\offset X-offset #-6 ^\pizz r
 	f4\< r
 	f r8 f
 	f4 r8 f
@@ -340,7 +340,7 @@ musicContrabassoMvtIII = \relative c, {
 	d4 r8 d
 	d8\mf r d r
 	R2 \mark \default
-	g,4\pp^\arco r8 g
+	g,4\pp-.^\arco r8 g-.
 % Bars 316 to 320
 	g4 r8 g
 	g4 r8 g
@@ -376,7 +376,7 @@ musicContrabassoMvtIII = \relative c, {
 	bes r d bes
 	aes4 r
 	R2
-	aes4 r8\< aes
+	aes4 \hairpinShorten #'(0 . -3) r8\< aes
 % Bars 346 to 350
 	aes4 r8 gis\! \bar "||" \key b \major
 	\grace {s8} fis4\p fis'
@@ -439,7 +439,7 @@ musicContrabassoMvtIII = \relative c, {
 	fis-. r fis'-. r
 % Bars 396 to 400
 	R2
-	b4\p^\pizz r4
+	b4\p-\offset X-offset #-5 ^\pizz r4
 	a r
 	gis r
 	g r
@@ -539,7 +539,7 @@ musicContrabassoMvtIII = \relative c, {
 	g,8 r r4
 % Bars 496 to 500
 	R2^\senzasord \mark \default
-	b2:32\pp\<^\arco
+	\hairpinShorten #'(0 . -9) b2:32\pp\<^\arco
 	b:
 	b:
 	b:\!

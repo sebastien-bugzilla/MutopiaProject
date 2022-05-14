@@ -79,7 +79,7 @@ musicSoloCelloMvtIII = \relative c {
 % Bars 71 to 75
 	ais-> g'-. fis-> ais,-. g'-> fis-. ais,-> g'-.
 	fis2-\tweak X-offset #-1 _\ffz\trill
-	fis\brack_\ffz\trill
+	fis-\tweak X-offset #-1.2 _\brack_\ffzB\trill
 	g\trill
 	fis4.\trill gis8\trill
 % Bars 76 to 80

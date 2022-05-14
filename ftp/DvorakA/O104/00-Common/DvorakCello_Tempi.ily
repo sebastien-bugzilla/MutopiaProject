@@ -144,7 +144,7 @@ tempiMvtIII = {
 	s2*4
 	\tempo "molto rit." % bar 140
 	s2*3
-	\tempo \markup { % bar 143
+	\tempoXoffset #1 \tempo \markup { % bar 143
 		"Poco meno mosso M.M." 
 		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
 		\medium { =92 }
@@ -156,7 +156,7 @@ tempiMvtIII = {
 	s2*7
 	\tempo "rit." % bar 166
 	s2
-	\tempo "in tempo" % bar 167
+	\tempoXoffset #1 \tempo "in tempo" % bar 167
 	s2*5
 	\tempo "poco a poco accel." % bar 172
 	s2*5
@@ -184,7 +184,7 @@ tempiMvtIII = {
 	s2*2
 	\tempo "rit" % bar 279
 	s2*2
-	\tempo \markup { % bar 281
+	\tempoXoffset #1.5 \tempo \markup { % bar 281
 		"Moderato cantabile" 
 		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
 		\medium { =84 }
@@ -240,7 +240,7 @@ tempiMvtIII = {
 	s2*7
 	\tempo "poco a poco rit." % bar 444
 	s2*5
-	\tempo \markup { % bar 449
+	\tempoXoffset #2.5 \tempo \markup { % bar 449
 		"Andante" 
 		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
 		\medium { =76 }
@@ -248,7 +248,7 @@ tempiMvtIII = {
 	s2*43
 	\tempo "rit." % bar 492
 	s2*5
-	\tempo "Andante maestoso" % bar 497
+	\tempoXoffset #2.5 \tempo "Andante maestoso" % bar 497
 	s2*9
 	\tempo "accelerando" % bar 506
 	s2*3

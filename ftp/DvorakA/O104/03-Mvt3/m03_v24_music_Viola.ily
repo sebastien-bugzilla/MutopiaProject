@@ -374,9 +374,9 @@ musicViolaMvtIII = \relative c'' {
 	d: d: \stopMeasureCount
 	d:\mf } d8 r
 	R2 \mark \default
-	\tempoXoffset #2 g4\pp r8 fis
+	\tempoXoffset #2 g4-.\pp r8 fis
 % Bars 316 to 320
-	g4 r8 fis-.
+	g4-. r8 fis-.
 	g-. r a-. r
 	b-. r a-. g-.
 	b4 r8 ais

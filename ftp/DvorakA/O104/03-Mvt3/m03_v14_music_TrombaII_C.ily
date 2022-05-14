@@ -263,9 +263,9 @@ musicTrombaIIMvtIII = \relative c'' {
 	g->
 	g~
 	g
-	g2->~
+	g2->~\>
 % Bars 426 to 430
-	g~\>
+	g~
 	g~\p
 	g4. r8
 	R2*20

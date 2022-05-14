@@ -62,17 +62,17 @@ musicSoloCelloMvtIII = \relative c {
 	fis4-> g16-. g( a g)
 	fis-^ fis( g fis) e-^ e( fis e)
 	cis-^ cis( d cis) ais-^ ais( b ais) \clef bass
-	\tuplet 3/2 8 {fis[(\stopTextSpan_\senzaottava a! g] fis[ e d] cis[ b ais]) e'[( d cis]
+	\tuplet 3/2 8 {fis[(\stopTextSpan a! g] fis[ e d] cis[ b ais]) e'[( d cis]
 	b[ ais fis])} cis'->[ e,-.] g[-> e'-.] g->[ b,-.]
 % Bars 71 to 75
 	ais-> g'-. fis-> ais,-. g'-> fis-. ais,-> g'-.
 	fis2_\ffz\startTrillSpan
-	fis\brack_\ffz\startTrillSpan
+	fis-\tweak X-offset #-1.2 _\brack_\ffzB\startTrillSpan
 	g\startTrillSpan
-	fis4.\startTrillSpan gis8\startTrillSpan
+	fis4.\startTrillSpan \trillPadding #2 gis8\startTrillSpan
 % Bars 76 to 80
 	ais2\startTrillSpan \clef treble
-	ais4\startTrillSpan b\startTrillSpan~
+	\trillPadding #2 ais4\startTrillSpan b\startTrillSpan~
 	b4. a!16\stopTrillSpan g
 	fis16( e d cis) b8-. ais-.
 	b4 r \clef bass
@@ -119,9 +119,9 @@ musicSoloCelloMvtIII = \relative c {
 	
 % Bars 131 to 135
 	cis16(\p dis eis dis cis8 b)
-	ais8(\< cis4.)\!
+	\hairpinShorten #'(0 . -2.5) ais8(\< cis4.)\!
 	ais8( cis4.)
-	a!8(\> cis4.)\!
+	\hairpinShorten #'(0 . -2.5) a!8(\> cis4.)\!
 	a8(\p cis g b)
 % Bars 136 to 140
 	fis(\< a g b)\!
@@ -151,7 +151,7 @@ musicSoloCelloMvtIII = \relative c {
 	r8 a( bes16 d c bes)\!
 	r8 a( cis! fis!)
 	e( d4) r8
-	r e(\mf\< fis4)\!
+	r \hairpinShorten #'(0 . -2) e(-\offset X-offset #-1 \mf\< fis4)\!
 	r8 e(\< fis4)\!
 % Bars 161 to 165
 	r8 e(\< g fis)\!
@@ -185,12 +185,12 @@ musicSoloCelloMvtIII = \relative c {
 	a'( cis! a  g bes g  e g e \clef bass cis! e cis)
 % Bars 186 to 190
 	a( cis a  g bes g  e g e  cis e cis) \unseparateSextolet \setSextolet
-	a(\< ais b  bis cis d  dis e eis  fis g gis)
+	a(\< ais b  bis cis d \tupletUp dis e eis  fis g gis) \tupletNeutral
 	a( ais b  bis cis d  \clef tenor dis e eis  fis g gis)\! } \unsetSextolet
 	\flattrill a2_\ffz\startTrillSpan
-	\flattrill << a2\startTrillSpan {s4 s8 s\stopTrillSpan} >>
+	\trillPadding #3 \flattrill a2\startTrillSpan 
 % Bars 191 to 195
-	a16(\< bes gis a bes gis a bes)
+	a16(\stopTrillSpan\< bes gis a bes gis a bes)
 	gis( a bes gis a bes gis a)\! \clef treble
 	cis2\fz~\startTrillSpan
 	<< cis {s4\startTrillSpan s8 s\stopTrillSpan}>>
@@ -199,8 +199,8 @@ musicSoloCelloMvtIII = \relative c {
 	bis( cis d bis cis d bis cis)
 	e2\startTrillSpan\fz~
 	<< e {s4\startTrillSpan s8 s\stopTrillSpan}>>
-	\setSextolet \tuplet 3/2 8 {e16(\ff g e cis e cis bes cis bes g bes g)
-	e( g e \clef tenor cis e cis bes cis bes g bes g)
+	\setSextolet \tuplet 3/2 8 {\tupletUp e16(\ff g e cis e cis \tupletNeutral bes cis bes g bes g)
+	e( g e cis e cis \clef tenor bes cis bes g bes g)
 % Bars 201 to 205
 	g'( bes g e g e cis e cis bes cis bes)
 	g( bes g e g e \clef bass cis e cis bes cis bes)} \unsetSextolet
@@ -299,7 +299,7 @@ musicSoloCelloMvtIII = \relative c {
 % Bars 301 to 305
 	g\f\upbow c-^~
 	c8 g( fis e)
-	d4-^(~ d16 g b, e)
+	d4^^(~ d16 g b, e)
 	d4(~ d16 c b a)
 	d4 r 
 % Bars 306 to 310
@@ -473,7 +473,7 @@ musicSoloCelloMvtIII = \relative c {
 % Bars 446 to 450
 	ais b ais gis ais\> gis)
 	fis( gis fis e fis e
-	dis e dis cis dis cis)} \mark \default
+	dis e dis \once \stemDown cis dis cis)} \mark \default
 	b4(\p fis~
 	fis8 b_\dimmarkup fis4~
 % Bars 451 to 455

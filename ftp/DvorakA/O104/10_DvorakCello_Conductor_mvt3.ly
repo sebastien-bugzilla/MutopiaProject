@@ -43,6 +43,7 @@
 \include "./03-Mvt3/m03_v19_music_Timpani_C.ily"
 \include "./03-Mvt3/m03_v20_music_Triangolo_C.ily"
 \include "./03-Mvt3/m03_v21_music_SoloCello_C.ily"
+\include "./03-Mvt3/m03_v21_music_SoloCello_Ossia_C.ily"
 \include "./03-Mvt3/m03_v22_music_ViolinoI_C.ily"
 \include "./03-Mvt3/m03_v23_music_ViolinoII_C.ily"
 \include "./03-Mvt3/m03_v24_music_Viola_C.ily"
@@ -71,9 +72,9 @@
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtIII
-%						}
+						\new Voice {
+							\formatConductorMvtIII
+						}
 						\new Voice {
 							\tempiMvtIII
 						}
@@ -81,7 +82,6 @@
 							\timeMvtIII \generalOptions \conductorOptions
 							\nameStaffIMvtIII
 							\partCombine \musicFlautoIMvtIII \musicFlautoIIMvtIII
-%							\musicFlautoIIMvtIII
 						}
 					>>
 					\new Staff {
@@ -94,19 +94,16 @@
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffIIIMvtIII
 					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
-%					\musicOboeIIMvtIII
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffIVMvtIII
 					\partCombine \musicClarinettoIMvtIII \musicClarinettoIIMvtIII
-%					\musicClarinettoIIMvtIII
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffVMvtIII
 					\partCombine \musicFagottoIMvtIII \musicFagottoIIMvtIII
-%					\musicFagottoIIMvtIII
 				}
 			>>
 			\new StaffGroup <<
@@ -115,7 +112,6 @@
 						\timeMvtIII \generalOptions \conductorOptions
 						\nameStaffVIMvtIII
 						\partCombine \musicCornoIMvtIII \musicCornoIIMvtIII
-%						\musicCornoIIMvtIII
 					}
 					\new Staff {
 						\timeMvtIII \generalOptions \conductorOptions
@@ -127,20 +123,17 @@
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffVIIIMvtIII
 					\partCombine \musicTrombaIMvtIII \musicTrombaIIMvtIII
-%					\musicTrombaIIMvtIII
 				}
 				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
 					\new Staff {
 						\timeMvtIII \generalOptions \conductorOptions
 						\nameStaffIXMvtIII
 						\partCombine \musicTromboneIMvtIII \musicTromboneIIMvtIII
-%						\musicTromboneIIMvtIII
 					}
 					\new Staff {
 						\timeMvtIII \generalOptions \conductorOptions
 						\nameStaffXMvtIII
 						\partCombine \musicTromboneIIIMvtIII \musicTubaMvtIII
-%						\musicTubaMvtIII
 					}
 				>>
 			>>
@@ -158,6 +151,11 @@
 				\timeMvtIII \generalOptions \conductorOptions
 				\nameStaffXIIIMvtIII
 				\musicSoloCelloMvtIII
+			}
+			\new Staff \with { \magnifyStaff #3/4 \RemoveAllEmptyStaves } {
+				\timeMvtIII \generalOptions \conductorOptions
+				\nameStaffXIIIMvtIII
+				\musicSoloCelloOssiaMvtIII
 			}
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIVMvtIII } <<

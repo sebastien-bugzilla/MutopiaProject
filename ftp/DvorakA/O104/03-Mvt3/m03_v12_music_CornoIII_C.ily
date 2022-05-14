@@ -13,7 +13,7 @@ musicCornoIIIMvtIII = \relative c' {
 	
 	
 	
-	g8\p r bes r
+	g8-\tweak extra-offset #'(1.3 . 0.5) \p r bes r
 % Bars 6 to 10
 	\tuplet 3/2 4 {ees ees ees} bes4
 	g'4->\fz d8-. bes-.
@@ -155,9 +155,9 @@ musicCornoIIIMvtIII = \relative c' {
 % Bars 261 to 265
 	g\f r r4
 	g8 r r4
-	g8_\dimmarkup r r4\>
+	g8_\dimmarkup r \hairpinShorten #'(0 . -4) r4\>
 	g8 r r4\!
-	g,8\p r r4
+	g,8-\tweak extra-offset #'(0 . 0.3) \p r r4
 % Bars 266 to 270
 	R2*15
 % Bars 271 to 275
@@ -255,9 +255,9 @@ musicCornoIIIMvtIII = \relative c' {
 	b->
 	a->
 	b4-> a->
-	g2->_\fzdim~
+	g2^>-\offset X-offset #-3.5 _\fzdimD\>~
 % Bars 426 to 430
-	g\>~
+	g~
 	g\p~
 	g4. r8
 	g2->\mf
@@ -291,7 +291,7 @@ musicCornoIIIMvtIII = \relative c' {
 % Bars 476 to 480
 	
 % Bars 481 to 485
-	a4._\pconsord^\solo( b16 c)
+	a4._\pconsord-\offset X-offset #-4.6 ^\solo( b16 c)
 	a4.( b16 c)
 	a2(_\dimmarkup
 	b4 c8 d)

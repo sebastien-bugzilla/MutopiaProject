@@ -371,7 +371,7 @@ musicVioloncelloMvtIII = \relative c, {
 	R
 	d4\mf d8 r
 	R2 \markXoffset #-0.2 \mark \default
-	g4\pp r8 g
+	g4-.\pp r8 g-.
 % Bars 316 to 320
 	g4 r8 g
 	g4 r8 g

@@ -360,7 +360,7 @@ musicContrabassoMvtIII = \relative c, {
 	d4 r8 d
 	d8\mf r d r
 	\tempoXoffset #-1 R2 \mark \default
-	\tempoXoffset #1.8 g,4\pp-\tweak X-offset #1.8 ^\arco r8 g
+	\tempoXoffset #1.8 g,4-.\pp-\tweak X-offset #1.8 ^\arco r8 g-.
 % Bars 316 to 320
 	g4 r8 g
 	g4 r8 g

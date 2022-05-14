@@ -21,9 +21,9 @@ musicViolaMvtIII = \relative c'' {
 % Bars 16 to 20
 	dis4. r8
 	\slashedGrace g8 g4->\brack\fz e8-.\< b-.
-	\slashedGrace c'8 c4->_\fzmarkupbrack g8-. e-.
-	\slashedGrace c'8 c4->_\fzmarkupbrack g8-. e-.
-	\slashedGrace e'8 e4->_\fzmarkupbrack c8-. g-.\!
+	\slashedGrace c'8 c4->-\tweak extra-offset #'(0.3 . 4) _\fzmarkupbrack g8-. e-.
+	\slashedGrace c'8 c4->-\tweak extra-offset #'(0.3 . 4.5) _\fzmarkupbrack g8-. e-.
+	\slashedGrace e'8 e4->-\tweak extra-offset #'(0.3 . 5) _\fzmarkupbrack c8-. g-.\!
 % Bars 21 to 25
 	fis2:32\ff
 	fis:
@@ -37,13 +37,13 @@ musicViolaMvtIII = \relative c'' {
 	fis r fis,8\ff fis16 fis
 	fis4 fis
 % Bars 31 to 35
-	fis8\fz-^ fis16 fis r4
-	fis8\fz-^ fis16 fis r4
+	fis8\fz^^ fis16 fis r4
+	fis8\fz^^ fis16 fis r4
 	R2*8
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	<b d>4->\ff d'->
+	<b d>4->-\offset X-offset #1 \ff d'->
 	b4.-> b8
 	<b, d>4 fis'8-. d-.
 	fis4. r8
@@ -64,7 +64,7 @@ musicViolaMvtIII = \relative c'' {
 % Bars 61 to 65
 	gis( b gis b gis b   gis b gis b gis b)
 	gis( b gis b gis b   gis b gis b gis b)
-	b( d b d b d   b_\crescmarkup d b d b d)
+	b( d b d b d \tupletYoffset #2.5 b_\crescmarkup d b d b d)
 	cis( eis cis eis\< cis eis  cis eis cis eis cis eis)
 	ais,( cis ais cis ais cis   ais cis ais b\! cis b)
 % Bars 66 to 70
@@ -181,13 +181,13 @@ musicViolaMvtIII = \relative c'' {
 		e fis)
 		g(\< a 
 		g a)\!
-		g( b8 a\>
-		g fis d4)
+		g( b8 \hairpinShorten #'(0 . -4) a\>
+		g fis d4)\!
 % Bars 151 to 155
 		g(\p a
 		g a)
-		g(\< fis\!
-		e\> fis)\!
+		\hairpinShorten #'(0 . -2) g(\< fis\!
+		\hairpinShorten #'(0 . -4) e\> fis)\!
 		fis(\pp g
 % Bars 156 to 160
 		fis g)
@@ -209,7 +209,7 @@ musicViolaMvtIII = \relative c'' {
 		g,!4\p( a
 		g a)
 		g(\< fis8 e)
-		fis(\! g b\> a)\!
+		fis(\! g \hairpinShorten #'(0 . -4) b\> a)\!
 	}>>
 % Bars 171 to 175
 	\tuplet 3/2 4 {<a cis>8 q q   q q q
@@ -227,8 +227,8 @@ musicViolaMvtIII = \relative c'' {
 	<d f>~
 	q
 	<c a'>\p~
-	q\<
-	<cis! g'>8\fz r r4
+	\hairpinShorten #'(0 . 8) q\<
+	<cis! g'>8-\tweak extra-offset #'(0.3 . 0.3) \fz r r4
 % Bars 186 to 190
 	r8 d'-.\p d-.[ r16 cis-.]
 	cis8\fz-. r r4
@@ -306,7 +306,7 @@ musicViolaMvtIII = \relative c'' {
 	<g b> r <b e> <ais cis!>
 	<<{b cis} \\ {b b}>> <b d> <ais cis>
 	<b d> r r4
-	<b d>4\ff-^^\arco q-^
+	<b d>4-\offset X-offset #0.7 \ff-^^\arco q-^
 	<b g'>4.-^ q8
 % Bars 256 to 260
 	<b d>4 <d fis>8 q
@@ -315,9 +315,9 @@ musicViolaMvtIII = \relative c'' {
 	<b e>-> <b e>8-. <b g'>-.
 	<d fis>-. <cis e>-. <b d>-. <ais cis>-. \mark \default
 % Bars 261 to 265
-	<fis b d>\ff\arpeggio r r4
+	<fis b d>-\tweak extra-offset #'(0 . 0.3) \ff\arpeggio r r4
 	q8\arpeggio r r4
-	<b d>8_\dimmarkup r r4\>
+	<b d>8_\dimmarkup r \hairpinShorten #'(0 . -4) r4\>
 	q8 r r4\!
 	<d, fis>2:32\fp\>
 % Bars 266 to 270
@@ -331,9 +331,9 @@ musicViolaMvtIII = \relative c'' {
 	ais( b
 	fis gis
 	g!) fis(_\dimmarkup
-	e\> g8 e
+	\hairpinShorten #'(0 . -4) e\> g8 e
 % Bars 276 to 280
-	fis2)
+	fis2)\!
 	a\ppp\<~
 	a\!(
 	d)~\>
@@ -368,9 +368,9 @@ musicViolaMvtIII = \relative c'' {
 	d d d  d d d 
 	d\mf d d} d r
 	R2 \mark \default
-	g4\pp r8 fis
+	g4-.\pp r8 fis
 % Bars 316 to 320
-	g4 r8 fis-.
+	g4-. r8 fis-.
 	g-. r a-. r
 	b-. r a-. g-.
 	b4 r8 ais
@@ -460,8 +460,8 @@ musicViolaMvtIII = \relative c'' {
 	dis'(-> cis bis cis dis e-> dis cis dis e)
 	cis(->_\crescmarkup b! ais b cis dis-> cis b cis dis)
 % Bars 391 to 395
-	b(->\< ais gis ais b b-> ais gis ais b)
-	b(-> a g a b b-> a g a b)\!}
+	b(^>\< ais gis ais b b^> ais gis ais b)
+	b(^> a g a b b^> a g a b)\!}
 	<b d>8\f r r4
 	r r8 q-.
 	<b dis!>-. r <ais! cis>-. r
@@ -508,7 +508,7 @@ musicViolaMvtIII = \relative c'' {
 % Bars 441 to 445
 	<dis fis>\pp <e gis>)
 	<dis fis>( <e gis>
-	<dis fis>_\dimmarkup <e gis>
+	<dis fis>-\tweak extra-offset #'(0.5 . 2.5) _\dimmarkup <e gis>
 	<dis fis>) <e gis>~
 	q2\ppp~
 % Bars 446 to 450
@@ -560,7 +560,7 @@ musicViolaMvtIII = \relative c'' {
 	fis8 r r4
 % Bars 496 to 500
 	R2^\senzasord \mark \default
-	fis2:32\pp\<^\arco
+	\hairpinShorten #'(0 . -3) fis2:32\pp\<^\arco
 	b4: dis!:
 	fis: b:
 	dis: fis:\!
@@ -572,7 +572,7 @@ musicViolaMvtIII = \relative c'' {
 	<b fis'>:
 % Bars 506 to 510
 	R2
-	q2:32\ff
+	q2:32-\offset X-offset #1 \ff
 	R2
 	<b dis>8-. q-. q-. q-.
 	q-. q-. q-. q-.

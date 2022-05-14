@@ -29,7 +29,6 @@ conductorOptions = {
 #(set-global-staff-size 12)
 \layout {
 	#(layout-set-staff-size 12)
-	%indent = 0\cm
 	\context {
 		\Voice
 		\override TupletBracket #'bracket-visibility = ##f
@@ -51,7 +50,6 @@ conductorOptions = {
 	\context {
 		\Staff
 		\RemoveEmptyStaves
-		%\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
 	}
 	\context {
