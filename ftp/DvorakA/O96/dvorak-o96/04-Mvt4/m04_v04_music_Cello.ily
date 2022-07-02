@@ -1,37 +1,42 @@
-%#######################################################################
-%#               M O U V E M E N T   4   -   V O I X   4               #
-%#######################################################################
-MvtQuatreVoixQuatre = \relative c {
+%  work        : String Quartet No. 12 in F Major, Op. 96, "American"
+%  typesetter  : Sébastien MANEN
+%  date        : Tuesday 14 June 2022, 22:25
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicCelloMvtIV = \relative c {
 	\clef bass
-	\override TupletBracket #'bracket-visibility = ##f
-% mesure 1 à 4
-	r2
+	\key f \major
+% mesure 1 à 5
+	R2
 	f,8^\pizz\p r f' r
-	r2
+	R2
 	f,8 r f' r
-% mesure 5 à 10
 	R2*2
+% mesure 6 à 10
+	
 	d,8\p r f r
 	a r d f
 	R2*2 
+	
 % mesure 11 à 15
 	d,8 r f r
 	a r d-. f-.
-	r2
+	R2
 	d4^\arco\p r8 d
-	c4 r
+	c4 r\<
 % mesure 16 à 20
-	c\< r8 c
-	bes4-. a-.
-	a-.\mf b-.
-	c-.\< b-.
+	c r8 c
+	bes4-. a-.\!
+	a-.\mf b-.\<
+	c-. b-.\!
 	b-. b-.
 % mesure 21 à 25
 	c8\f r c c,
 	c' r c c,
 	c' r c c,
 	c' r c c, \mark \default
-	f4\fp r8_\dimi c'^\pizz\!
+	f4\fp r8_\dimmarkup c'^\pizz
 % mesure 26 à 30
 	f,4 r8 c'
 	f,4 r8 c'
@@ -54,14 +59,14 @@ MvtQuatreVoixQuatre = \relative c {
 	f4 r8 c
 	f4 r8 c
 	f4 r8 a,^\arco
-	gis\fz-> e gis-> e\<
+	gis\fz-> e gis->\< e
 	a-> e a-> e
 % mesure 46 à 50
-	gis-> e gis-> e\! \mark \default
+	gis-> e\! gis-> e \mark \default
 	<a e' a>8\ff r <a e' a> r
 	<a e' a>8 r <a e' a> r
-	a_\dimi r\! a\p\> r
-	a\! r r4
+	a_\dimmarkup r a\p r\>
+	a r\! r4
 % mesure 51 à 55
 	f4\pp r8 c'
 	f4 r8 c'
@@ -72,18 +77,18 @@ MvtQuatreVoixQuatre = \relative c {
 	f4 r8 bes
 	f4 r8 c'
 	f, f r c'
-	f f r c\<
-	f, f r c
+	f f r c
+	f,\< f r c\!
 % mesure 61 à 65
-	f f\! r f'
+	f\< f r f'\!
 	b,\mf g b g'
-	c,_\cres[ e\! g c]
+	c,_\crescmarkup[ e g c]
 	b g b g \mark \default
 	c\ff r c,, r
 % mesure 66 à 70
 	c r c r
-	c r c'\mp-. r\>
-	c-. r c-. r
+	c r c'\mp-. r
+	c-.\> r c-. r\!
 	aes\pp r c^\pizz r
 	ees r aes, aes
 % mesure 71 à 75
@@ -114,41 +119,41 @@ MvtQuatreVoixQuatre = \relative c {
 	ees r c r
 	aes\< r aes' r
 	bes, r des r
-	bes r des,\mf des
+	bes\! r des,\mf des
 	ees r ees' r
 % mesure 96 à 100
-	c r aes_\dimi c\!
+	c r aes_\dimmarkup c
 	ees,\> r ees' r
-	ees, r ees'^\arco ees \mark \default
+	ees, r ees'^\arco ees\! \mark \default
 	aes,8.\pp( bes16 aes8) ees-.
 	aes8.( bes16 aes8) ees-.
 % mesure 101 à 105
 	aes8.( bes16 aes8) ees-.
 	aes8.( bes16 aes8) ees-.
-	g2(
-	g)(
-	g)(
+	g2~
+	g~
+	g~
 % mesure 106 à 110
-	g)
+	g
 	\repeat tremolo 4 {bes16( des)}
 	\repeat tremolo 4 {bes16( des)}
 	\repeat tremolo 4 {bes16( des)}
 	\repeat tremolo 4 {bes16( des)} \mark \default
 % mesure 111 à 115
-	c8 c, r c'_\cresc
-	c c,\< r c'
-	c c, r c'
-	c c, r c'
-	<c, c'>\f r <c c'> r 
+	c8 c, r c'
+	c_\crescmarkup c, r c'
+	c\< c, r c'
+	c c, r c'\!
+	<c, c'>\f r q r 
 % mesure 116 à 120
-	<c c'> r <c c'> r 
-	<c c'> r <c c'> r 
-	<c c'> r <c c'> r 
-	c'8:16\fz des: c:\> des:
-	c: b: c: bes:
+	q r q r 
+	q r q r 
+	q r q r 
+	c'8:16\fz\>[ des: c: des:]
+	c:[ b: c: bes:]\!
 % mesure 121 à 125
-	aes:\p bes: aes:\> bes:
-	aes: g: aes: g: \mark \default
+	aes:\p\>[ bes: aes: bes:]
+	aes:[ g: aes: g:]\! \mark \default
 	f4\pp r8 c'
 	f4 r8 c
 	f4 r8 c
@@ -157,40 +162,46 @@ MvtQuatreVoixQuatre = \relative c {
 	f4 r8 bes
 	f4 r8 bes
 	f4 r8 c'
-	f8 f r c_\cresc
+	f8 f r_\crescmarkup c
 % mesure 131 à 135
 	f f\< r c
-	f f r c
+	f f r c\!
 	f f r f\mf
 	cis r cis8. a16
-	d8_\cres r\! d8. d16
+	d8\< r d8. d16
 % mesure 136 à 140
 	e8\< r e8. c!16
-	f8 r f8. f16
+	f8 r f8. f16\!
 	g8\f r g8. aes16
 	g8 r g8. aes16
-	g8_\cres r\! aes r
+	g8 r aes_\crescmarkup r
 % mesure 141 à 145
 	g r aes r
-	g r g r
 	g\< r g r
-	c,8:16[ bes: a!: g:]
-	f:[ e!: d!: c:] \mark \default
+	g r g\! r
+	c,8:16[\< bes: a!: g:]
+	f:[ e!: d!: c:]\! \mark \default
 % mesure 146 à 150
-	f8\ff r f''-> d
+	f8 r f''->\ff d
 	c-> a f-> d
-	d8.->[ d16 d8 d]
+	d8.-> d16 d8 d
 	d r f'-> des
 	c-> aes-. f-> des-.
 % mesure 151 à 155
 	des r r des
+	des8. des16 des8_\dimmarkup des
+	des\p r r des,
 	des8.\> des16 des8 des
-	des\p r r des,\>
-	des8. des16 des8 des
 	des\! r r4 
-% mesure 156 à 162
+% mesure 156 à 160
 	R2*7
-% mesure 163 à 165
+	
+	
+	
+	
+% mesure 161 à 165
+	
+	
 	des'2(\pp
 	bes
 	aes
@@ -209,56 +220,56 @@ MvtQuatreVoixQuatre = \relative c {
 % mesure 176 à 180
 	f r r bes
 	f r r4
-	r2 \mark \default \bar "||"
-	\tempo "Meno mosso." a'2\pp\<(
-	f)
+	R2 \mark \default \bar "||"
+	a'2\pp\<(
+	f)\!
 % mesure 181 à 185
 	c(\>
-	d)
+	d)\!
 	c(\<
-	b)
+	b)\!
 	c4(\> d
 % mesure 186 à 190
-	e2)
+	e2)\!
 	a\pp(
 	f)
 	c(\<
-	d)
+	d)\!
 % mesure 191 à 195
 	e(\<
 	gis)\>
 	a\p\>(
-	d)
+	d)\!
 	\tuplet 3/2 {a8\pp a a} a4(\<
 % mesure 196 à 200
 	a2)(\>
 	a,4)\p r
-	r2 \mark \default
+	R2 \mark \default
 	a'(_\mpespressivo\<
-	d)
+	d)\!
 % mesure 201 à 205
 	e\fz\>
 	d4( a)\!
 	a(\< e'~
-	e d)
+	e d)\!
 	c2\fz\>(~
 % mesure 206 à 210
-	c4 b)
+	c4 b)\!
 	a2\p
-	d4(\<-- d--)
-	f( e)(\!
-	e) d8( a)
+	d4\<--~ d--\!
+	f( e)~
+	e d8( a)
 % mesure 211 à 215
-	a4_\cres( e'~\!
-	e d)
-	\tuplet 3/2 {c8(\> b a)} a4\p(
-	a)_\dimi b8(\! g!)
+	a4_\cres( e'~\<
+	e d)\!
+	\tuplet 3/2 {c8(\>_\dimmarkup b a)} a4\p~
+	a\> b8( g!)\!
 	a2:16\pp
 % mesure 216 à 220
 	a:
 	a:
 	a: \mark \default
-	\tempo "Più mosso." e8\pp^\tempoI r e r
+	e8\pp r e r
 	e,8.\fp e16 e8 r
 % mesure 221 à 225
 	e' r e r
@@ -269,14 +280,14 @@ MvtQuatreVoixQuatre = \relative c {
 % mesure 226 à 230
 	e,8. e16 e8 r
 	e' r e-. e,-.
-	e'8.->_\cresc e16 e8-. e,-.\<
+	e'8.-> e16 e8-. e,-.
 	e'8. e16 e8 e
-	f f fis fis
+	f_\crescmarkup f fis fis\<
 % mesure 231 à 235
 	g-> g, g'-> g,
 	g'-> g, g'-> g,
-	g'-> g, g'\ff-> g, \mark \default
-	f4 r8 c'\pp^\pizz
+	g'-> g, g'-> g,\! \mark \default
+	f4\ff r8 c'\pp^\pizz
 	f4 r8 c
 % mesure 236 à 240
 	f4 r8 c
@@ -291,23 +302,23 @@ MvtQuatreVoixQuatre = \relative c {
 	f4 r8 a,^\arco
 	gis\mf e gis e
 % mesure 246 à 250
-	a_\cres e\! a e
-	gis\< e gis e
+	a_\crescmarkup e a e
+	gis\< e gis e\!
 	a\f r <a e'> r
 	<a e'> r <a e'> r
 	f'-.[ c-. f-.\> c-.]
 % mesure 251 à 255
 	f-.[ c-. f-. c-.]
-	des2\ppp(
-	des)(
-	des)(
-	des)
+	des2\ppp~
+	des~
+	des~
+	des
 % mesure 256 à 260
 	bes4( ges~
 	ges bes)
 	des2
-	des,(
-	des)(
+	des,~
+	des(
 % mesure 261 à 265
 	des')(
 	des')
@@ -316,45 +327,45 @@ MvtQuatreVoixQuatre = \relative c {
 	ees, r r4
 % mesure 266 à 270
 	r c''8\fp( bes\>
-	ees,) r\! r4
+	ees,)\! r r4
 	r des'8(\fp\> c
-	ees,) r\! r4
-	e!8_\cres r\! \tuplet 3/2 {e e e}
+	ees,)\! r r4
+	e!8_\crescmarkup r \tuplet 3/2 {e e e}
 % mesure 271 à 275
 	e\< r \tuplet 3/2 {e e e}
-	f r \tuplet 3/2 {f f f}
-	bes,\! r \tuplet 3/2 {bes bes bes}
-	b_\cres r\! \tuplet 3/2 {b b b}
-	b r \tuplet 3/2 {b b b}
+	f r \tuplet 3/2 {f f f\!}
+	bes,\! r \tuplet 3/2 {bes_\crescmarkup bes bes}
+	b\< r \tuplet 3/2 {b b b}
+	b r \tuplet 3/2 {b b b\!}
 % mesure 276 à 280
 	c\f([ a c,) c'-.]
-	c([_\dimi a\! c,) c'-.]
-	c([ a c,) c'-.]
+	c([_\dimmarkup\> a c,) c'-.]
+	c([ a c,) c'-.]\!
 	c([ g c,) c'-.] \mark \default
-	\tempo "Meno mosso." f,2(\p
+	f,2\p~
 % mesure 281 à 285
-	f)(
-	f)(
-	f)(
-	f)(\<
-	f)(
+	f~
+	f~
+	f~
+	f~\<
+	f~
 % mesure 286 à 290
-	f)(\>
-	f)
-	a\pp(
-	a)(
-	a)(
+	f~\>
+	f\!
+	a\pp~
+	a~
+	a~
 % mesure 291 à 295
-	a)(
-	a)(\<
-	a)
-	g\fp(\>
-	g)
+	a~
+	a~\<
+	a\!
+	g\fp\>~
+	g\!
 % mesure 296 à 300
-	f'4(\p e\>
-	d e) \mark \default
+	f'4(\p\> e
+	d e)\! \mark \default
 	f\pp r
-	f,8^\pizz\pp r a c
+	f,8^\pizz r a c
 	f r r4
 % mesure 301 à 305
 	f8\< r c r
@@ -372,29 +383,29 @@ MvtQuatreVoixQuatre = \relative c {
 	f r f' f,
 	f r f' f,
 	f r f' f,
-	f_\piucresc r f' f,
-	f\< r f' f,
+	f r f'_\piucresc f,
+	f r f' f,
 % mesure 316 à 320
 	f r f' f,
-	f r f' f,
+	f\< r f' f,\!
 	f-.\f aes-. des,4->
 	aes'-> des->\<
-	aes'-> des,->
+	aes'-> des,->\!
 % mesure 321 à 325
 	\tuplet 3/2 {c8\ff( a!) f-.} c r
 	\tuplet 3/2 {c'( a!) f-.} c r
 	\tuplet 3/2 {c'( a) f-.} c r
 	\tuplet 3/2 {c'( a) f-.} c c' \mark \default
-	f,4\ffp \tuplet 3/2 {f8\p\> f f\!}
+	f,4\ffp \tuplet 3/2 {f8\> f f\!}
 % mesure 326 à 330
 	f4 \tuplet 3/2 {f8 f f}
 	f4 \tuplet 3/2 {f8 f f}
 	f4 \tuplet 3/2 {f8 f f}
-	f4 \tuplet 3/2 {f8 f f_\cres}
-	f4 \tuplet 3/2 {f8\< f f}
+	f4 \tuplet 3/2 {f8_\cresc f f}
+	f4 \tuplet 3/2 {f8 f f}
 % mesure 331 à 335
-	f4 \tuplet 3/2 {f8 f f}
-	f4 \tuplet 3/2 {f8 f f}
+	f4 \tuplet 3/2 {f8\< f f}
+	f4 \tuplet 3/2 {f8 f f\!}
 	des2\f->
 	d!->\fz
 	d4->_\piuf e!->
@@ -438,10 +449,10 @@ MvtQuatreVoixQuatre = \relative c {
 	f'-. c-. c-. c,-.
 	\tuplet 6/4 {f2.:8\<}
 	\tuplet 6/4 {f2.:8}
+	\tuplet 6/4 {f2.:8\!\<}
 	\tuplet 6/4 {f2.:8}
-	\tuplet 6/4 {f2.:8\!}
 % mesure 371 à 375
-	\tuplet 3/2 {f4.:8} \tuplet 3/2 {f'4.:8\fff}
+	\tuplet 3/2 {f4.:8\!} \tuplet 3/2 {f'4.:8\fff}
 	\tuplet 6/4 {f2.:8}
 	des4 r
 	des r

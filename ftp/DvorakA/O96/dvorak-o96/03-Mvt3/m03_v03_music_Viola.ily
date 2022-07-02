@@ -1,9 +1,12 @@
-%#######################################################################
-%#               M O U V E M E N T   3   -   V O I X   3               #
-%#######################################################################
-MvtTroisVoixTrois = \relative c {
+%  work        : String Quartet No. 12 in F Major, Op. 96, "American"
+%  typesetter  : Sébastien MANEN
+%  date        : Tuesday 14 June 2022, 22:25
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolaMvtIII = \relative c {
 	\clef alto
-	\override TupletBracket #'bracket-visibility = ##f
+	\key f \major
 % mesure 1 à 5
 	R2.*4
 	a'4\p( bes4.-> g8)
@@ -21,9 +24,10 @@ MvtTroisVoixTrois = \relative c {
 	a4( bes4.-> g8)
 % mesure 16 à 20
 	a4 r r \mark \default
-	r <d, a'>8\ff <d a'> <d a'>\noBeam r
-	r4 <f c'>8 <f c'> <f c'>\noBeam r
+	r <d, a'>8\ff q q\noBeam r
+	r4 <f c'>8 q q\noBeam r
 	R2.*2
+	
 % mesure 21 à 25
 	f8\p f f f a( f)
 	f f f f a( f)
@@ -34,7 +38,7 @@ MvtTroisVoixTrois = \relative c {
 	f f f f a( f)
 	f f f f a( f)
 	f4-. f,-. r \mark \default
-	r2.
+	R2.
 	c'8\p d a4 r
 % mesure 31 à 35
 	c,8\mf d f4 r
@@ -49,19 +53,22 @@ MvtTroisVoixTrois = \relative c {
 	f f f f g( f)
 	c4 r r \mark \default
 % mesure 41 à 45
-	\tempo "Poco meno mosso." c'\mf( d-> f,)
+	c'\mf( d-> f,)
 	a2( d4)
 	c( d-> f,)
 	f'8\>( d c2)
 	a4\p\>( bes4.-> g8\!) 
-% mesure 46 à 48
+% mesure 46 à 50
 	a4( bes4.-> g8)
-	a4\>^\ritard( bes4.-> g8)
+	a4\>( bes4.-> g8)
 	a2\pp( c4)\fermata^\fine \bar "||" \key f \minor \mark \default
-% mesure 49 à 56
-	R2.*8^\atempo
-% mesure 57 à 60
-	f,8\fz f f4-> r
+	R2.*8
+	
+% mesure 51 à 55
+	
+% mesure 56 à 60
+	
+	f,8\fp f f4-> r
 	des8\fz des des4-> r
 	f8\fp f f4-> r
 	des8\fp des des4-> r 
@@ -70,13 +77,13 @@ MvtTroisVoixTrois = \relative c {
 	des8\fz-> des des4 r
 	f8\fz-> f f4 r
 	c8\fp-> c c4 r
-	des8\fp-> des des4\dimi r\!
+	des8\fp-> des des4_\dimmarkup r
 % mesure 66 à 70
-	des8\fp-> des\dimi des4\! r\>
-	des8 des des4 r
-	aes'8 aes aes4 r
+	des8\fp-> des_\dimmarkup des4 r
+	des8 des des4\> r
+	aes'8 aes aes4\! r
 	c,8\p c c4 r
-	c8\fp c c4\dimi r\!
+	c8\fp c c4_\dimmarkup r
 % mesure 71 à 75
 	f8\pp f f4 r
 	c2 r4 \mark \default
@@ -99,23 +106,23 @@ MvtTroisVoixTrois = \relative c {
 	aes8[ r16 g g8 r16 f] f4
 	aes8[ r16 g g8 r16 f] f4
 	ees8[ r16 des des8 r16 c] c4
-	f4\dimi r\! f8\> f
-	fes\dimi fes\! r4 fes8\> fes
-% mesure 91 à 95
-	fes fes r4 fes8 fes
+	f4_\dimD\> r f8 f\!
+	fes_\dimmarkup fes r4 fes8 fes
+% mesure 91 à 96
+	fes fes r4 fes8\> fes
 	ees ees r4 ees8 ees
 	f8\p f r4 aes8 aes
 	<<{
-		bes2.\((
-		bes4) a aes(
-		aes2.)\)
+		<c, bes'>2.(~
+		bes'4 a aes~
+		aes2.)
 	}\\{
-		c,2.\>(
-		c\pp)(
-		c)
+		\hideNotes c,2.\>~ \unHideNotes
+		c\pp~
+		c
 	}>> \bar "||" \key f \major \mark \default
 % mesure 97 à 100
-	c'8\upbow r f4.-> d8
+	c'8\upbow\p r f4.-> d8
 	c8 d f4 r
 	c8\upbow r f4.-> d8
 	c d a4 r
@@ -124,11 +131,11 @@ MvtTroisVoixTrois = \relative c {
 	a4( bes f8 g)
 	a4( bes f8 g)
 	a4 r r
-	r d\<\( g(
+	r d\<( g~\!
 % mesure 106 à 110
-	g)\> d\)\! r
-	r d\<\( g(
-	g)\> c,\)\! r
+	g\> d)\! r
+	r d\<( g~\!
+	g\> c,)\! r
 	a'\pp( bes4.-> g8)
 	a4( bes4.-> g8)
 % mesure 111 à 115
@@ -151,7 +158,7 @@ MvtTroisVoixTrois = \relative c {
 	r a'8\f a a4
 % mesure 126 à 130
 	r c,8\mf c c4
-	r a8_\dimi a\! a4
+	r a8_\dimmarkup a a4
 	r c,8\p c c4
 	f8\p f f f a( f)
 	f f f f a( f)
@@ -169,14 +176,14 @@ MvtTroisVoixTrois = \relative c {
 	<f' a>4( c2)
 % mesure 141 à 145
 	a'4\p( bes4. g8)
-	a4( bes4._\dimi g8)\!
+	a4( bes4._\dimmarkup g8)
 	a4( bes4. g8)
-	a4(^\moltorit\> bes2)\!
-	<<{a8^\intempo[_\legato( s a s a s)]}\\{s a[ s a s a]}>>
+	a4(\> bes2)\!
+	<<{a8[_\pplegato( s a s a s)]}\\{s a[ s a s a]}>>
 % mesure 146 à 150
 	<<{a8[( s a s a s)]}\\{s a[ s a s a]}>>
 	<<{a8[( s a s a s)]}\\{s a[ s a s a]}>>
-	<a a>2.\fermata \bar "||" \key f \minor \mark \default
+	<<{a2.\fermata}\\{a2.}>> \bar "||" \key f \minor \mark \default
 	\clef treble c2.\pp(
 	f2 des4
 % mesure 151 à 155
@@ -187,34 +194,34 @@ MvtTroisVoixTrois = \relative c {
 	c2 des4
 % mesure 156 à 160
 	aes2) r4 \clef alto
-	c,,4\f\<( bes'-> aes)
-	c,4\<( bes'-> aes)
-	c,4\<( bes'-> aes)
-	c4\<( bes'-> aes)
+	c,,4\f\<( bes'-> aes)\!
+	c,4\<( bes'-> aes)\!
+	c,4\<( bes'-> aes)\!
+	c4\<( bes'-> aes)\!
 % mesure 161 à 165
-	c,4\<( bes'-> aes)
-	c,4\<( bes'-> aes)
-	c,4\<( bes'-> aes)
-	ees,4\<( des'-> c)
-	c4\<( g'-> f)
+	c,4\<( bes'-> aes)\!
+	c,4\<( bes'-> aes)\!
+	c,4\<( bes'-> aes)\!
+	ees,4\<( des'-> c)\!
+	c4\<( g'-> f)\!
 % mesure 166 à 170
 	des4\<( aes'-> fes)\!
-	des_\dimi( ees\! fes)
-	ees_\dimi( bes'\! aes)
+	des_\dimmarkup( ees fes)
+	ees( bes' aes)
 	f!( e8\> f fis4
 	g e f!)
 % mesure 171 à 175
 	des!\p( c4. bes8)
 	aes2\> r4\! \mark \default
-	\tuplet 3/2 {\repeat tremolo 3 c,8\ppp} \tuplet 3/2 {\repeat tremolo 3 f} \tuplet 3/2 {\repeat tremolo 3 g}
-	\tuplet 3/2 {\repeat tremolo 3 aes} \tuplet 3/2 {\repeat tremolo 3 g} \tuplet 3/2 {\repeat tremolo 3 f}
-	\tuplet 3/2 {\repeat tremolo 3 aes} \tuplet 3/2 {\repeat tremolo 3 c} \tuplet 3/2 {\repeat tremolo 3 bes}
+	\tuplet 3/2 4 { c,4.:8\ppp  f:  g:
+	aes: g: f:
+	aes: c: bes:
 % mesure 176 à 180
-	\tuplet 3/2 {\repeat tremolo 3 aes} \tuplet 3/2 {\repeat tremolo 3 g} \tuplet 3/2 {\repeat tremolo 3 f}
-	\tuplet 3/2 {\repeat tremolo 3 ees} \tuplet 3/2 {\repeat tremolo 3 f} \tuplet 3/2 {\repeat tremolo 3 g}
-	\tuplet 3/2 {\repeat tremolo 3 aes} \tuplet 3/2 {\repeat tremolo 3 bes} \tuplet 3/2 {\repeat tremolo 3 b}
-	\tuplet 3/2 {\repeat tremolo 3 c} \tuplet 3/2 {\repeat tremolo 3 aes} \tuplet 3/2 {\repeat tremolo 3 f}
-	\tuplet 3/2 {\repeat tremolo 3 ees} \tuplet 3/2 {\repeat tremolo 3 fes} \tuplet 3/2 {\repeat tremolo 3 ees}
+	aes: g: f:
+	ees: f: g:
+	aes: bes: b:
+	c: aes: f:
+	ees: fes: ees:}
 % mesure 181 à 185
 	c4\ff( d\< e)
 	f( g aes8 f')\!
@@ -225,16 +232,16 @@ MvtTroisVoixTrois = \relative c {
 	f( g aes8 f')
 	e2( f8 f,)
 	f2 r4
-	ees_\dim( fes\> ees
-	ees2 c4\!)
+	ees( fes_\moltodim ees
+	ees2 c4)\>
 % mesure 191 à 194
-	des2( c4)
+	des2( c4)\!
 	bes'4->\p( aes g\>)
-	aes( f ees)
+	aes( f ees)\!
 	des2\pp( c8 bes')
-% mesure 195 à 200
+% mesure 195 à 196
 	<<{
-		bes4( aes g_\dacapo
+		bes4( aes g
 		aes2)
 	}\\{
 		c,2.(
