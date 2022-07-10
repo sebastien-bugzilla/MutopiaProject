@@ -7,236 +7,236 @@
 musicViolinIIMvtIII = \relative c {
 	\clef treble
 	\key f \major
-% mesure 1 à 5
+% bars 1 to 5
 	c''8\f r f4.-> d8
 	c d f4 r
 	c8 r f4.-> d8
 	c d a4 r
 	f4\p( g-> d8 e)
-% mesure 6 à 10
+% bars 6 to 10
 	f4( g-> d8 e)
 	f4( g-> d8 e)
 	f4( g8 e f) r
 	c'\f\upbow r f4.-> d8
 	c d f4 r
-% mesure 11 à 15
+% bars 11 to 15
 	c8\upbow r f4.-> d8
 	c d a4 r
 	f'4\pp( g-> d8 e)
 	f4( g-> d8 e)
 	f4( g-> d8 e
-% mesure 16 à 20
+% bars 16 to 20
 	f4) r r \mark \default
 	R2.
 	c'8\ff d a4 r
 	R2. 
 	c,8\> d a4\! r
-% mesure 21 à 25
+% bars 21 to 25
 	r4 c8\p d f4
 	r4 c8 d f4
 	r4 c8 d f4
 	r4 c8 d f4
 	r4 c8 d f4
-% mesure 26 à 30
+% bars 26 to 30
 	r4 c8 d f4
 	r4 c8( d bes4
 	a) r r \mark \default
 	c,8\p d f4 r
 	R2.
-% mesure 31 à 35
+% bars 31 to 35
 	r4 <d a'>8\mf <d a'> <d a'>\noBeam r
 	R2.
 	c'8->\ff d a4 r
 	c8-> d a4 r
 	c8-> d a4 r
-% mesure 36 à 40
+% bars 36 to 40
 	c8-> d a4 r
 	c8\ff d a4 r
 	c8 d a4 r
 	c8 d a4 g8( f)
 	f4 r r \mark \default
-% mesure 41 à 45
+% bars 41 to 45
 	<f a>2.\fz\>
 	<f a>\fz\>
 	<f a>\fz\>
 	<f a>\fz\>
 	f4\p\>( g-> d8 e)\!
-% mesure 46 à 50
+% bars 46 to 50
 	f4( g-> d8 e)
 	f4(\> g-> d8 e)
 	f2\pp( a,4)\fermata^\fine \bar "||" \key f \minor \mark \default
 	c'2._\ppdolce(
 	f2 des4)
-% mesure 51 à 55
+% bars 51 to 55
 	c2( des4
 	f2) r4
 	c2.(
 	f2 des4)
 	c2 des4(
-% mesure 56 à 60
+% bars 56 to 60
 	<aes c>2) r4
 	aes8->[\mf r16 g g8 r16 f] f4
 	aes8->[ r16 g g8 r16 f] f4
 	aes8->[ r16 g g8 r16 f] f4
 	aes8->[ r16 g g8 r16 f] f4
-% mesure 61 à 65
+% bars 61 to 65
 	aes8->[ r16 g g8 r16 f] f4
 	aes8->[\f r16 g g8 r16 f] f4
 	aes8->[ r16 g g8 r16 f] f4
 	ees2.\fp
 	ees\fp_\dimmarkup
-% mesure 66 à 70
+% bars 66 to 70
 	fes\fp_\dimmarkup(
 	fes\>)
 	ees
 	c\p(
 	c\fp)_\dimmarkup
-% mesure 71 à 75
+% bars 71 to 75
 	c\pp
 	aes2 r4 \mark \default
 	R2.*8
 	
 	
-% mesure 76 à 80
+% bars 76 to 80
 	
-% mesure 81 à 85
+% bars 81 to 85
 	aes'8\ff[ r16 g g8 r16 f] f4
 	aes8[ r16 g g8 r16 f] f4
 	aes8[ r16 g g8 r16 f] f4
 	aes8[ r16 g g8 r16 f] f4
 	aes8[ r16 g g8 r16 f] f4
-% mesure 86 à 90
+% bars 86 to 90
 	aes8[ r16 g g8 r16 f] f4
 	aes8[ r16 g g8 r16 f] f4
 	ees8[ r16 des des8 r16 c] c4
 	f8_\dimD\>[ r16 ees ees8 r16 des] des4\!
 	fes8_\dimmarkup[ r16 ees ees8 r16 des] des4
-% mesure 91 à 95
+% bars 91 to 95
 	fes8[\> r16 ees ees8 r16 des] des4
 	ees8[ r16 des des8 r16 c] c4
 	aes'8\p[ r16 g g8\> r16 f] f4
 	des'8[ r16 c] c8[ r16 b] b8[ r16 bes]
 	bes8\pp[ r16 a] a8[ r16 aes] aes8[ r16 g]
-% mesure 96 à 100
+% bars 96 to 100
 	g8[ r16 ges] ges8[ r16 e] f8 r \bar "||" \key f \major \mark \default
 	R2.*4
 	
 	
 	
-% mesure 101 à 105
+% bars 101 to 105
 	r4 r bes,(\p
 	a) r bes(
 	a) r bes(
 	a) r r
 	r a'\<( bes~\!
-% mesure 106 à 110
+% bars 106 to 110
 	bes\> a)\! r
 	r a(\< bes~\!
 	bes\> f)\! r
 	f'4\pp( g-> d8 e)
 	f4( g-> d8 e)
-% mesure 111 à 115
+% bars 111 to 115
 	f4( g-> d8 e)
 	f2 r4 \mark \default
 	r4 d8\p d d4
 	r f,8\mf f f4
 	r d''8\f d d4
-% mesure 116 à 120
+% bars 116 to 120
 	r f,8\ff f f4
 	r c8\f d f4
 	r c8 d f4
 	r c8 d f4
 	r c8 d f4
-% mesure 121 à 125
+% bars 121 to 125
 	r c8 d f4
 	r c8 d f4
 	r c8( d bes4
 	a) r r \mark \default
 	c8\f d f4 r
-% mesure 126 à 130
+% bars 126 to 130
 	c8\mf d a4 r
 	c,8_\dimmarkup d f4 r
 	c8\p d a4 r
 	c'8\p d a4 r
 	c8 d a4 r
-% mesure 131 à 135
+% bars 131 to 135
 	c8 d a4 r
 	c8 d a4 r
 	c8 d a4 r
 	c8 d a4 r
 	c8 d a4 g8( f)
-% mesure 136 à 140
+% bars 136 to 140
 	f4 r r \mark \default
 	c'4\ff( f4.-> d8-.)
 	c( d f2)
 	c4( f4.-> d8-.)
 	c8( d <f, a>2)
-% mesure 141 à 145
+% bars 141 to 145
 	f'4\p( g d8 e)
 	f4( g d8_\dimmarkup e)
 	f4( g d8 e)
 	f4\>( g d8 e)
 	f2.\pp\(~
-% mesure 146 à 150
+% bars 146 to 150
 	f(
 	c')(
 	f)\)\fermata \bar "||" \key f \minor \mark \default
 	c\pp(
 	f2 des4)
-% mesure 151 à 155
+% bars 151 to 155
 	c2( des4
 	f2) r4
 	c2.(
 	f2 des4)
 	c2( des4
-% mesure 156 à 160
+% bars 156 to 160
 	c2) r4
 	c,,4\f\<( bes'-> aes)\!
 	c,\<( bes'-> aes)\!
 	c,\<( bes'-> aes)\!
 	c\f\<( bes'-> aes)\!
-% mesure 161 à 165
+% bars 161 to 165
 	c,\<( bes'-> aes)\!
 	c,\<( bes'-> aes)\!
 	c,\<( bes'-> aes)\!
 	ees,\<( des' c\!)
 	c( g'-> f)
-% mesure 166 à 170
+% bars 166 to 170
 	des( aes'-> fes)
 	des_\dimmarkup( ees-> fes)
 	ees( bes' aes)
 	f!( e8 f fis4
 	g\> e! f)
-% mesure 171 à 175
+% bars 171 to 175
 	des!\p( c4. bes8
 	aes2)\> r4\! \mark \default
 	\tuplet 3/2 4 { c,4.:8\ppp   f:  g:
 	aes: g: f:
 	aes: c: bes:
-% mesure 176 à 180
+% bars 176 to 180
 	aes: g: f:
 	ees: f: g:
 	aes: bes: b:
 	c: aes: f:
 	c: b: c: }
-% mesure 181 à 185
+% bars 181 to 185
 	c8\ff c f f g g
 	aes aes g g f f
 	aes aes c c bes bes
 	aes aes g g f f
 	e e f f g g
-% mesure 186 à 190
+% bars 186 to 190
 	aes aes bes bes b b
 	c c aes aes f f
 	c c b b c c
 	c c b_\moltodim b\! c c
 	des des c c aes'\> aes
-% mesure 191 à 195
+% bars 191 to 195
 	f f fes fes\! ees ees
 	des\p des c c b b
 	c\> c aes' aes g g\!
 	f\pp f des' des e, e
 	f f f' f f, f
-% mesure 196
-	f' f f,4 r \bar "|."
+% bars 196
+	f' f f,4 r \bar "||"
 }

@@ -7,235 +7,236 @@
 musicViolinIMvtIII = \relative c {
 	\clef treble
 	\key f \major
-% mesure 1 à 5
+% bars 1 to 5
 	R2.*4
 	
 	
 	
-	<< c''2.-> {s4\p\< s\> s\!}>> 
-% mesure 6 à 10
-	<< c2.-> {s4\< s\> s\!}>> 
-	<< c2.->~ {s4\< s\> s\!}>> 
+	<< c''2.-> {\hairpinShorten #'(-0.7 . -1.3) s4-\offset X-offset #-1 \p\< \hairpinShorten #'(1 . -1.5) s\> s\!}>> 
+% bars 6 to 10
+	<< c2.-> {\hairpinShorten #'(0 . -0.8) s4\< \hairpinShorten #'(0.7 . -1.5) s\> s\!}>> 
+	<< c2.->~ {\hairpinShorten #'(0 . -0.8) s4\< \hairpinShorten #'(0.7 . -1.5) s\> s\!}>> 
 	c4 r r
 	c'8\f\upbow r f4.-> d8
 	c d f4 r
-% mesure 11 à 15
+% bars 11 to 15
 	c8\upbow r f4.-> d8
 	c d a4 r 
-	<< c2. {s4\pp\< s\> s\!} >>
-	<< c2. {s4\< s\> s\!} >>
-	<< c2.~ {s4\< s\> s\!} >>
-% mesure 16 à 20
+	<< c2. {\hairpinShorten #'(-0.7 . -1.2) s4-\offset X-offset #-1.5 \pp\< \hairpinShorten #'(0.9 . -1.3) s\> s\!} >>
+	<< c2. {\hairpinShorten #'(0 . -0.8) s4\< \hairpinShorten #'(0.7 . -1.5) s\> s\!} >>
+	<< c2.~ {\hairpinShorten #'(0 . -0.8) s4\< \hairpinShorten #'(0.7 . -1.5) s\> s\!} >>
+% bars 16 to 20
 	c4 r r \mark \default
 	c8\ff d f4 r
 	R2.
 	c,8\> d f4\! r
 	R2.
-% mesure 21 à 25
+% bars 21 to 25
 	a'4\p( f) r8 c
 	c4( g'8 f) r a
 	a4( f e8 d
 	f4) r r
 	a( f) r8 c
-% mesure 26 à 30
+% bars 26 to 30
 	c4( g'8 f) r a
 	a4( f e8 d
 	f4) r r \mark \default
 	r <d, a'>8\p <d a'> <d a'>\noBeam r
 	r4 <f, c'>8\< <f c'> <f c'>\!\noBeam r
-% mesure 31 à 35
+% bars 31 to 35
 	R2.*2
-	r4 c''8\ff d f4--
+	
+	\startMeasureCount r4 c''8\ff d f4--
 	r4 c8 d f4--
 	r4 c8 d f4--
-% mesure 36 à 40
+% bars 36 to 40
 	r4 c8 d f4--
 	r4 c8\ff d f4--
-	r4 c8 d f4--
+	r4 c8 d f4-- \stopMeasureCount
 	r4 c8( d bes4)
 	a-. f-. r \mark \default
-% mesure 41 à 45
+% bars 41 to 45
 	c4\mf( f4. d8)
 	c( d f4) r
 	c( f4. d8)
 	c\>( d a4\!) r
 	c2.\p\> \trill
-% mesure 46 à 50
+% bars 46 to 50
 	c2.\! \trill
-	\afterGrace 7/8 c\startTrillSpan {b16[^\stopTrillSpan c]}
-	c8\pp( d c g) f4\fermata^\fine \bar "||" \key f \minor \mark \default
+	\afterGrace 7/8 c\startTrillSpan {b16 c^\stopTrillSpan}
+	c8\pp( d c g) f4\fermata-\offset X-offset #-1.5 _\fine \bar "||" \key f \minor \mark \default
 	c'4\pp( f g
 	aes g f)
-% mesure 51 à 55
+% bars 51 to 55
 	aes( c bes
 	aes g f)
 	ees( f g
 	aes bes b)
 	c( aes f
-% mesure 56 à 60
+% bars 56 to 60
 	ees2) r4
-	aes8->[\mf r16 g g8 r16 f] f4
+	\startMeasureCount aes8->[\mf r16 g g8 r16 f] f4
 	aes8->[ r16 g g8 r16 f] f4
 	aes8->[ r16 g g8 r16 f] f4
 	aes8->[ r16 g g8 r16 f] f4
-% mesure 61 à 65
+% bars 61 to 65
 	aes8->[ r16 g g8 r16 f] f4
 	aes8->[\f r16 g g8 r16 f] f4
-	aes8->[ r16 g g8 r16 f] f4
+	aes8->[ r16 g g8 r16 f] f4 \stopMeasureCount 
 	ees8->[ r16 des des8 r16 c] c4
 	f8->[ r16 ees ees8_\dimmarkup r16 des] des4
-% mesure 66 à 70
+% bars 66 to 70
 	fes8->[ r16 ees ees8_\dimmarkup r16 des] des4
 	fes8->[\> r16 ees ees8 r16 des] des4
 	ees8->[ r16 des des8 r16 c] c4\!
 	aes8->\p[ r16 g g8 r16 f] f4
-	des'8->\fp\>[ r16 c c8 r16 b b8 r16 bes]
-% mesure 71 à 75
-	bes8[ r16 a] a8[ r16 aes] aes8\pp[ r16 g]
+	\hairpinShorten #'(0 . 2.5) des'8->\fp\>[ r16 c c8 r16 b b8 r16 bes]
+% bars 71 to 75
+	bes8[ r16 a] a8[ r16 aes]\! aes8\pp[ r16 g]
 	g8[ r16 f] f4 r \mark \default
 	R2.*8
 	
 	
-% mesure 76 à 80
+% bars 76 to 80
 	
-% mesure 81 à 85
+% bars 81 to 85
 	c''2._\fmoltoespressivo
 	f2( des4)
 	c2( des4)
 	f2.
 	c2.
-% mesure 86 à 90
+% bars 86 to 90
 	f2( des4)
 	c2( des4)
 	aes2 r4
-	aes2._\dimD\>
+	\hairpinShorten #'(-0.7 . 2) aes2.-\offset X-offset #-2 _\dimD\>
 	bes2\!_\dimmarkup( aes4)
-% mesure 91 à 95
+% bars 91 to 95
 	g2\>( aes4)
 	c2.
 	aes2.\p(\>
 	bes2 g4)
 	f2(\pp c4
-% mesure 96 à 100
+% bars 96 to 100
 	aes2 f4) \bar "||" \mark \default \key f \major
 	R2.*4
 	
 	
 	
-% mesure 101 à 105
+% bars 101 to 105
 	d2.\p\downbow
 	d\downbow
 	d(~\upbow
 	d8 c f g a c)
-	c4(\< f4. d8-.)
-% mesure 106 à 110
+	c4(\<\downbow f4.-> d8-.)
+% bars 106 to 110
 	c-. d-. f4-.\! r
 	c( f4.-> d8-.)
 	c-. d-. a4 r
 	d'2\pp\prall g8( d)
 	d2\prall g8( d)
-% mesure 111 à 115
+% bars 111 to 115
 	d2\prall g8( d)
 	d2 r4 \mark \default
 	r4 a8\p a a4
 	r4 c,8\mf c c4
 	r a''8\f a a4
-% mesure 116 à 120
+% bars 116 to 120
 	r c,8\ff c c4
 	a'4\f( f) r8 c
 	c4( g'8 f) r a
 	a4( f) e8( d
 	f4) r r
-% mesure 121 à 125
+% bars 121 to 125
 	a4( f) r8 c
 	c4( g'8 f) r a
 	a4( f) e8( d 
 	f2) r4 \mark \default
 	c8\f d f4 r
-% mesure 126 à 130
+% bars 126 to 130
 	c8\mf d a4 r
 	c,8_\dimmarkup d f4 r
 	c8\p d a4 r
 	r c'8\p d f4--
 	r c8 d f4-- 
-% mesure 131 à 135
+% bars 131 to 135
 	r c8 d f4--
 	r c8 d f4--
 	r c8 d f4--
 	r c8 d f4--
 	r c8( d bes4)
-% mesure 136 à 140
+% bars 136 to 140
 	a-. f-. r \mark \default
-	c'\ff( f4. d8-.)
+	c'-\offset X-offset #-1.5 \ff( f4. d8-.)
 	c( d f2->)
 	c4( f4.-> d8-.)
 	c8( d a2)
-% mesure 141 à 145
+% bars 141 to 145
 	d2\prall\p( g8 d)
 	d2\prall( g8_\dimmarkup d)
 	d2\prall( g8 d)
 	d4.\>( e8 f g)
-	a2.\pp~
-% mesure 146 à 150
+	\tempoXoffset #1.5 a2.\pp~
+% bars 146 to 150
 	a2.~
 	a2.~
 	a2.\fermata \bar "||" \key f \minor \mark \default
-	\ottava #1 \tuplet 3/2 4 {c,4.:8\pp f: g: 
+	\ottava #1 \tuplet 3/2 4 { \once \tupletUp c,4.:8\pp f: g: 
 	aes: g: f:
-% mesure 151 à 155
+% bars 151 to 155
 	aes: c: bes:
 	aes: g: f:
 	ees: f: g:
 	aes: bes: b:
 	c: aes: f:} 
-% mesure 156 à 160
+% bars 156 to 160
 	ees2 \ottava #0 r4
-	\ottava #1 \set Staff.ottavation = #"col 8va ad libitum" c'2.\f(
+	\colottavaadlibitum c2.\f(^\startTextSpan
 	f2 des4)
 	c2( des4
 	f2) r4
-% mesure 161 à 165
+% bars 161 to 165
 	c2.(
 	f2 des4)
 	c2( des4
 	aes2) r4
 	aes2.
-% mesure 166 à 170
+% bars 166 to 170
 	bes2( aes4)
 	g2( aes4_\dimmarkup
 	c2) r4
 	aes2~^( aes8 a
 	bes2\> g4)
-% mesure 171 à 175
+% bars 171 to 175
 	f2.\p
-	c2\> r4\! \ottava #0 \mark \default
-	c,4\ppp-- c8(-.^\staccato c-. c-. c-.)
+	c2\>\stopTextSpan r4\!  \mark \default
+	c4\ppp-- c8(-.^\staccato c-. c-. c-.)
 	f4-- f8(-. f-. des-. des-.)
 	c4-- c8(-. c-. des-. des-.)
-% mesure 176 à 180
+% bars 176 to 180
 	f(-. f-.) f4 r
 	c-- c8-.( c-. c-. c-.)
 	f4-- f8-.( f-. des-. des-.)
 	c4-- c8-.( c-. des-. des-.)
 	aes-.( aes-.) aes4 r
-% mesure 181 à 185
+% bars 181 to 185
 	c8\ff c f f g g
 	aes aes g g f f
 	aes aes c c bes bes
 	aes aes g g f f
 	e e f f g g
-% mesure 186 à 190
+% bars 186 to 190
 	aes aes bes bes b b
 	c c aes aes f f
 	c c b b c c
 	c c b_\moltodim b\! c c
 	des des c c aes'\> aes
-% mesure 191 à 195
+% bars 191 to 195
 	f\> f fes fes\! ees ees
 	des\p des c c b b
 	c\> c aes' aes g g\!
 	f\pp f des' des e, e
 	f f f' f f, f
-% mesure 196
-	f' f f,4 r \bar "|."
+% bars 196
+	\tempoDown f' f f,4 r \bar "||"
 }

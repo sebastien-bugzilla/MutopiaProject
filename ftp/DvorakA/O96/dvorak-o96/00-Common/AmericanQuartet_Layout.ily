@@ -5,6 +5,7 @@
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
 #(set-global-staff-size 20)
+%#(ly:set-option 'debug-skylines #t)
 \layout {
 	#(layout-set-staff-size 20)
 	\set Score.alternativeNumberingStyle = #'numbers
@@ -29,8 +30,9 @@
 	\context {
 		\Score
 		\override RehearsalMark #'font-size = #4
-		\override RehearsalMark.extra-spacing-width = #'(-0.5 . 0.5)
+		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
 		\override RehearsalMark.outside-staff-priority = ##f
+		\override RehearsalMark.extra-spacing-height = #'(-inf.0 . +inf.0)
 		\override DynamicTextSpanner.font-size = #0
 		\override BarNumber #'font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390

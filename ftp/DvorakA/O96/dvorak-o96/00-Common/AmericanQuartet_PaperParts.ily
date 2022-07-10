@@ -7,8 +7,9 @@
 \paper {
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
-	left-margin = 18 \mm
+%	left-margin = 10 \mm
 %	annotate-spacing = ##t
+%	top-margin = #2
 %	first-page-number = 0
 %	max-systems-per-page = #1
 %	slashSeparator = \markup {
@@ -18,6 +19,7 @@
 %		\raise #1.24 \beam #3.3 #0.5 #0.54
 %	}
 %	system-separator-markup = \slashSeparator
+	%markup-system-spacing.basic-distance = #2
 	bookTitleMarkup = \markup {
 		\column {
 			\vspace #15
@@ -40,7 +42,7 @@
 			\center-column {
 				\smaller \fromproperty #'header:subsubtitle
 				\fromproperty #'header:instrument
-				\vspace #1
+				%\vspace #1
 			}
 			\fromproperty #'page:page-number-string
 		}
@@ -51,7 +53,7 @@
 			\center-column {
 				\smaller \fromproperty #'header:subsubtitle
 				\fromproperty #'header:instrument
-				\vspace #1
+				%\vspace #1
 			}
 			\null
 		}
