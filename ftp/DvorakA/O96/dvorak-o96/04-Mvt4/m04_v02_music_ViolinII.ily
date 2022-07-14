@@ -8,35 +8,35 @@ musicViolinIIMvtIV = \relative c {
 	\clef treble
 	\key f \major
 % bars 1 to 5
-	a'8.->\p[ a16 a8 a]~
+	a'8.->\p[ a16 a8 a]~ \one
 	a[ a-. a-. a-.]
-	a8.[ a16 a8 a]~
+	a8.[ a16 a8 a]~ \two
 	a[ a-. a-. a-.]
-	a8.[ a16 a8 a]~
+	a8.[ a16 a8 a]~ \three
 % bars 6 to 10
 	a[ a-. a-. a-.]
-	a8.[ a16 a8 a]~
+	a8.[ a16 a8 a]~ \four
 	a[ a-. a-. a-.]
-	a8.[ a16 a8 a]~
+	a8.[ a16 a8 a]~ \five
 	a[ a-. a-. a-.]
 % bars 11 to 15
-	a8.[ a16 a8 a]~
+	a8.[ a16 a8 a]~ \six
 	a[ a-. a-. a-.]
-	a8.[ a16 a8 a]~
+	a8.[ a16 a8 a]~ \seven
 	a[ a-._\crescmarkup a-. a-.]
-	a8.[ a16\< a8 a]~
+	a8.[ a16\< a8 a]~ \eight
 % bars 16 to 20
-	a[ a-. a-. a-.]~
+	a[ a-. a-. a-.] 
 	a8.[ a16 a8 a]\!
 	f'8.\mf f16 f8\< f~
 	f8. f16 f8 f~\!
 	f8. f16 f8 f
 % bars 21 to 25
-	f\fz a g e
+	\startMeasureCount f\fz a g e
 	f\fz-> a g e
 	f\fz-> a g e
-	f\fz-> a g e \mark \default
-	c'->\fp a-. f-._\dimmarkup c-.
+	f\fz-> a g e \stopMeasureCount \mark \default
+	\startMeasureCount c'->\fp a-. f-._\dimmarkup c-.
 % bars 26 to 30
 	c'-> a-. f-. c-.
 	c'-> a-. f-. c-.
@@ -45,7 +45,7 @@ musicViolinIIMvtIV = \relative c {
 	c'-> a-. f-. c-.
 % bars 31 to 35
 	c'-> a-. f-. c-.
-	c'-> a-. f-. c-.
+	c'-> a-. f-. c-. \stopMeasureCount
 	f-. c-. c'->\pp a
 	f-. c-. c'-> a
 	f-. c-. c'-> a
@@ -89,34 +89,34 @@ musicViolinIIMvtIV = \relative c {
 	c r c r
 	c r r4
 	R2
-	<c ees>8.\pp[ q16 q8 q~]
+	<c ees>8.\pp[ q16 q8 q~] \one
 	q[ q-. q-.] r
 % bars 71 to 75
-	q8.[ q16 q8 q~]
+	q8.[ q16 q8 q~] \two
 	q[ q-. q-.] r
-	q8.[ q16 q8 q~]
+	q8.[ q16 q8 q~] \three
 	q[ q-. q-.] r
-	q8.[ q16 q8 q~]
+	q8.[ q16 q8 q~] \four
 % bars 76 to 80
 	q[ q-. q-.] r
-	q8.[ q16 q8 q~]
+	q8.[ q16 q8 q~] \five
 	q[ q-. q-.] r
-	q8.[ q16 q8 q~]
+	q8.[ q16 q8 q~] \six
 	q[ q-. q-.] r
 % bars 81 to 85
-	q8.[ q16 q8 q~]
+	q8.[ q16 q8 q~] \seven
 	q[ q-. q-.] r
 	<g ees'>8.[ q16 q8 q~]
 	q[ q-. q-.] r
 	q8.[ q16 q8 q~]
 % bars 86 to 90
 	q[ q-. q-.] r
-	<c ees>8.[ q16 q8 q~]
+	<c ees>8.[ q16 q8 q~] \one
 	q[ q-. q-.] r
-	q8.[ q16 q8 q~]
+	q8.[ q16 q8 q~] \two
 	q[ q-. q-.] r
 % bars 91 to 95
-	q8.[ q16 q8 q~]
+	q8.[ q16 q8 q~] \three
 	q\<[ q-. q-.] r
 	des8.[ des16 des8 des(]
 	des)[\! des-. des-.\mf] r
@@ -189,7 +189,7 @@ musicViolinIIMvtIV = \relative c {
 	c-> aes-. f-> des-.
 % bars 151 to 155
 	des8.-> des16 des8 des
-	des r r des_\dimmarkup
+	des r r des-\offset X-offset #-1 _\dimmarkup
 	des8.\p des16 des8 des\>
 	des\! r r4
 	R2*2
@@ -237,15 +237,15 @@ musicViolinIIMvtIV = \relative c {
 	f\!
 % bars 191 to 195
 	e4(\< c'~
-	c\> b)
+	c\> b)\!
 	e,\p( c
 	d\> f)\!
 	e\pp(^\sulG dis
 % bars 196 to 200
 	f\< e)\!
 	a\dimi( g8.\! a32 g
-	\tuplet 3/2 {e8-.\> e-. e-.) } e4\!( \mark \default
-	e8) r r4
+	\tuplet 3/2 {e8-.\> e-. e-.) } e4\!~ \mark \default
+	e8 r r4
 	R2*7
 % bars 201 to 205
 	
@@ -333,13 +333,13 @@ musicViolinIIMvtIV = \relative c {
 	\tuplet 3/2 {<a! g'!>8_\crescmarkup <a g'> <a g'>} <a g'> r
 % bars 271 to 275
 	\tuplet 3/2 {<a! g'!>8\< <a g'> <a g'>} <a g'> r
-	\tuplet 3/2 {<a g'>4.:8} <a g'>8\! r
+	\tuplet 3/2 {<a a'>4.:8} <a a'>8\! r
 	\tuplet 3/2 {<bes! g'>4.:8} <bes g'>8_\crescmarkup r
 	\tuplet 3/2 {<b! g'>4.:8\<} <b g'>8 r
 	\tuplet 3/2 {<b! gis'>4.:8} <b gis'>8\! r
 % bars 276 to 280
 	\tuplet 3/2 {a'8\f a a} bes!( a)
-	\tuplet 3/2 {f_\dimmarkup\> f f} g( f)
+	\tuplet 3/2 {f-\tweak extra-offset #'(0.5 . 3.8) _\dimmarkup\> f f} g( f)
 	\tuplet 3/2 {c c c} d( c)\!
 	\tuplet 3/2 {bes bes bes} c( bes) \mark \default
 	a2\p~
@@ -348,7 +348,7 @@ musicViolinIIMvtIV = \relative c {
 	a
 	c4( a~
 	a2)\<
-	a4( d8)[ r16 c-.]
+	a4( d8)[ r16 c-.]\!
 % bars 286 to 290
 	c2\>~
 	c~\!

@@ -140,10 +140,10 @@ musicViolinIMvtIII = \relative c {
 	d2 r4 \mark \default
 	r4 a8\p a a4
 	r4 c,8\mf c c4
-	r a''8\f a a4
+	r a''8-\tweak extra-offset #'(0 . 1) \f a a4
 % bars 116 to 120
-	r c,8\ff c c4
-	a'4\f( f) r8 c
+	r c,8-\tweak extra-offset #'(0 . 1) \ff c c4
+	a'4-\tweak extra-offset #'(0 . 1) \f( f) r8 c
 	c4( g'8 f) r a
 	a4( f) e8( d
 	f4) r r
@@ -191,7 +191,7 @@ musicViolinIMvtIII = \relative c {
 	c: aes: f:} 
 % bars 156 to 160
 	ees2 \ottava #0 r4
-	\colottavaadlibitum c2.\f(^\startTextSpan
+	\colottavaadlibitum c2.-\tweak extra-offset #'(0 . 2) \f(^\startTextSpan
 	f2 des4)
 	c2( des4
 	f2) r4

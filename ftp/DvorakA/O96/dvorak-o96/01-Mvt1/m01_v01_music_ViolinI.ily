@@ -8,7 +8,7 @@ musicViolinIMvtI = \relative c {
 	\clef treble
 	\key f \major
 % bars 1 to 5
-	r8 f''16\pp( a \repeat tremolo 6 {f16 a)}
+	r8 f''16-\tweak extra-offset #'(0 . 1.2) \pp( a \repeat tremolo 6 {f16 a)}
 	\repeat tremolo 4 {f16( a} \repeat tremolo 4 {f16 a)} 
 	\repeat volta 2 {
 		\repeat tremolo 4 {f16( a} \repeat tremolo 4 {f16 a)} 
@@ -49,7 +49,7 @@ musicViolinIMvtI = \relative c {
 		c8(\< d-> c d->) c( d-> c b->)\!
 		a( b->_\crescmarkup a b->) a( b-> a f->)
 		e16\fp\> e r d c c r\! a e'2\fp 
-		e16\fz e r d c c r a e'2\fz \mark \default
+		e16\fz e r d c c r a e'2-\tweak extra-offset #'(0 . 0.5) \fz \mark \default
 % bars 36 to 40
 		e4(\ff f) e( f)
 		e(\< f) g8( f e d)\!

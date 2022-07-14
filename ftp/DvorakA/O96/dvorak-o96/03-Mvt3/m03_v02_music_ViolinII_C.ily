@@ -72,9 +72,9 @@ musicViolinIIMvtIII = \relative c {
 	f2) r4
 	c2.(
 	f2 des4)
-	c2 des4(
+	c2 
 % bars 56 to 60
-	<aes c>2) r4
+	<< {\oneVoice des4( \voiceOne c2)} \\ {s4 aes2}>> r4
 	aes8->[\mf r16 g g8 r16 f] f4
 	aes8->[ r16 g g8 r16 f] f4
 	aes8->[ r16 g g8 r16 f] f4
@@ -199,7 +199,7 @@ musicViolinIIMvtIII = \relative c {
 	c,\<( bes'-> aes)\!
 	c,\<( bes'-> aes)\!
 	c,\<( bes'-> aes)\!
-	ees,\<( des' c\!)
+	ees,\<( des'-> c\!)
 	c( g'-> f)
 % bars 166 to 170
 	des( aes'-> fes)

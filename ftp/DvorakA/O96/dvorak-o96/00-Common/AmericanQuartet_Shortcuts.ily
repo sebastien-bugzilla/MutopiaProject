@@ -17,6 +17,7 @@ ffdim = \markup {\concat {\dynamic ff \italic dim. }}
 fine = \markup {\italic Fine.}
 flat = \markup { \flat}
 fmoltoespressivo = \markup { \dynamic f \italic {molto espressivo}}
+fpdim = \markup {\dynamic fp \italic dim.}
 fzcresc = \markup {\dynamic fz \italic cresc.}
 fzmarkup = \markup {\dynamic fz}
 fzshort = \markup {\overlay {\dynamic f \translate #'(0.85 . -0.15) \dynamic z}}
@@ -69,6 +70,12 @@ arcofermata = \markup {
 	}
 }
 
+flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
+	\concat { 
+		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
+	}
+}
+
 colottavaadlibitum = {
 	\once \override TextSpanner.dash-fraction = #0.2
 	\once \override TextSpanner.dash-period = #1
@@ -77,6 +84,7 @@ colottavaadlibitum = {
 			col \concat { 8 \super va } ad libitum
 		}
 	}
+	%\once \override TextSpanner.bound-details.left.stencil-align-dir-y = #CENTER
 	\once \override TextSpanner.bound-details.left-broken.text = ""
 	\once \override TextSpanner.bound-details.right.stencil = #ly:text-interface::print
 	\once \override TextSpanner.bound-details.right.text = \markup {
@@ -88,6 +96,17 @@ colottavaadlibitum = {
 	}
 	\once \override TextSpanner.bound-details.right.padding = #-1
 }
+
+scriptPriority = \once \override Script.script-priority = #-100
+
+one = \mark \markup {\abs-fontsize #8 \number 1}
+two = \mark \markup {\abs-fontsize #8 \number 2}
+three = \mark \markup {\abs-fontsize #8 \number 3}
+four = \mark \markup {\abs-fontsize #8 \number 4}
+five = \mark \markup {\abs-fontsize #8 \number 5}
+six = \mark \markup {\abs-fontsize #8 \number 6}
+seven = \mark \markup {\abs-fontsize #8 \number 7}
+eight = \mark \markup {\abs-fontsize #8 \number 8}
 
 ffz = #(make-dynamic-script "ffz")
 dimi = #(make-music 'DecrescendoEvent
@@ -107,11 +126,6 @@ moltocresc = #(make-music 'CrescendoEvent
              'span-type 'text
              'span-text "molto cresc.")
 
-flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-	\concat { 
-		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
-	}
-}
 
 dynamicSpacing = #(define-music-function
 	(spacing)

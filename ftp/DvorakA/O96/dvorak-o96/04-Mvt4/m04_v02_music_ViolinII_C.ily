@@ -26,7 +26,7 @@ musicViolinIIMvtIV = \relative c {
 	a[ a-._\crescmarkup a-. a-.]
 	a8.[ a16\< a8 a]~
 % bars 16 to 20
-	a[ a-. a-. a-.]~
+	a[ a-. a-. a-.]
 	a8.[ a16 a8 a]\!
 	f'8.\mf f16 f8\< f~
 	f8. f16 f8 f~\!
@@ -333,7 +333,7 @@ musicViolinIIMvtIV = \relative c {
 	\tuplet 3/2 {<a! g'!>8_\crescmarkup <a g'> <a g'>} <a g'> r
 % bars 271 to 275
 	\tuplet 3/2 {<a! g'!>8\< <a g'> <a g'>} <a g'> r
-	\tuplet 3/2 {<a g'>4.:8} <a g'>8\! r
+	\tuplet 3/2 {<a a'>4.:8} <a a'>8\! r
 	\tuplet 3/2 {<bes! g'>4.:8} <bes g'>8_\crescmarkup r
 	\tuplet 3/2 {<b! g'>4.:8\<} <b g'>8 r
 	\tuplet 3/2 {<b! gis'>4.:8} <b gis'>8\! r

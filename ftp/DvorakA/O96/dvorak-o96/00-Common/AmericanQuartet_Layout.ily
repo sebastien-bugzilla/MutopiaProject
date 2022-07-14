@@ -18,6 +18,7 @@
 		\override TrillSpanner.bound-details.right.padding = #1
 		\override Fingering.avoid-slur = #'around
 		\override Arpeggio.padding = #0.25
+		\override Script.staff-padding = #'()
 	}
 	\context {
 		\Staff

@@ -162,7 +162,7 @@ musicViolinIIMvtI = \relative c {
 % bars 126 to 130
 	<aes ges'>8\mf( q4-- q-- q-- q8)
 	gis16( cis e gis gis8._\dimmarkup e16-.)\! gis,16( cis e gis gis8. e16-.)
-	a,!( e'! g!\> a a8. g16-.) a,( e' g a a8. g16)\! \mark \default
+	a,!( e'! g!\> a a8. g16-.) a,( e' g a a8. g16-.)\! \mark \default
 	g4\pp~( g16 bes! d! g) d4~( d16 c bes g)
 	g4. r8 r2
 % bars 131 to 135

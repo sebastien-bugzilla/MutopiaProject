@@ -19,7 +19,9 @@
 %		\raise #1.24 \beam #3.3 #0.5 #0.54
 %	}
 %	system-separator-markup = \slashSeparator
-	%markup-system-spacing.basic-distance = #2
+	markup-system-spacing.basic-distance = #12
+	score-markup-spacing.basic-distance = #18
+	system-system-spacing.basic-distance = #10
 	bookTitleMarkup = \markup {
 		\column {
 			\vspace #15
