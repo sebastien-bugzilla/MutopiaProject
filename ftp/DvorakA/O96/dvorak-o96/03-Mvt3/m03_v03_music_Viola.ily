@@ -61,7 +61,7 @@ musicViolaMvtIII = \relative c {
 % bars 46 to 50
 	a4( bes4.-> g8)
 	a4\>( bes4.-> g8)
-	a2\pp( c4)\fermata^\fine \bar "||" \key f \minor \mark \default
+	a2\pp( c4)\fermata-\offset X-offset #-1.5 ^\fine \bar "||" \key f \minor \markXoffset #-0.3 \mark \default
 	R2.*8
 	
 % bars 51 to 55
@@ -97,14 +97,14 @@ musicViolaMvtIII = \relative c {
 	c4-. aes-. f-.
 	c-. ees-. aes-.
 % bars 81 to 85
-	aes8\ff[ r16 g g8 r16 f] f4
+	\startMeasureCount aes8\ff[ r16 g g8 r16 f] f4
 	aes8[ r16 g g8 r16 f] f4
 	aes8[ r16 g g8 r16 f] f4
 	aes8[ r16 g g8 r16 f] f4
 	aes8[ r16 g g8 r16 f] f4
 % bars 86 to 90
 	aes8[ r16 g g8 r16 f] f4
-	aes8[ r16 g g8 r16 f] f4
+	aes8[ r16 g g8 r16 f] f4 \stopMeasureCount 
 	ees8[ r16 des des8 r16 c] c4
 	f4_\dimD\> r f8 f\!
 	fes_\dimmarkup fes r4 fes8 fes
@@ -113,7 +113,7 @@ musicViolaMvtIII = \relative c {
 	ees ees r4 ees8 ees
 	f8\p f r4 aes8 aes
 	<<{
-		<c, bes'>2.(~
+		\shape #'((0 . 1.3)(0 . 0)(0 . 0)(0 . 1.3)) Slur <c, bes'>2.(~
 		bes'4 a aes~
 		aes2.)
 	}\\{
@@ -131,10 +131,10 @@ musicViolaMvtIII = \relative c {
 	a4( bes f8 g)
 	a4( bes f8 g)
 	a4 r r
-	r d\<( g~\!
+	r \shape #'((0 . -0.5)( 0 . 0.5)(0 . 0.5)(0 . -0.5)) Slur d\<( g~\!
 % bars 106 to 110
 	g\> d)\! r
-	r d\<( g~\!
+	r \shape #'((0 . -0.5)( 0 . 0.5)(0 . 0.5)(0 . -0.5)) Slur d\<( g~\!
 	g\> c,)\! r
 	a'\pp( bes4.-> g8)
 	a4( bes4.-> g8)
@@ -154,7 +154,7 @@ musicViolaMvtIII = \relative c {
 	f8 f f f a f
 	f8 f f f a f
 	f8 f f f g( f)
-	f4-. f,-. r \mark \default
+	f4-. f,-. r \markXoffset #-0.3 \mark \default
 	r a'8\f a a4
 % bars 126 to 130
 	r c,8\mf c c4
@@ -179,10 +179,10 @@ musicViolaMvtIII = \relative c {
 	a4( bes4._\dimmarkup g8)
 	a4( bes4. g8)
 	a4(\> bes2)\!
-	<<{a8[_\pplegato( s a s a s)]}\\{s a[ s a s a]}>>
+	<<{\shape #'((0 . 0)(0.8 . 0)(2 . 0.5)(2.5 . -1.7)) Slur a8[_\pplegato( s a s a s)]}\\{s a[ s a s a]}>>
 % bars 146 to 150
-	<<{a8[( s a s a s)]}\\{s a[ s a s a]}>>
-	<<{a8[( s a s a s)]}\\{s a[ s a s a]}>>
+	<<{\shape #'((0 . 0)(0.8 . 0)(2 . 0.5)(2.5 . -1.7)) Slur a8[( s a s a s)]}\\{s a[ s a s a]}>>
+	<<{\shape #'((0 . 0)(0.8 . 0)(2 . 0.5)(2.5 . -1.7)) Slur a8[( s a s a s)]}\\{s a[ s a s a]}>>
 	<<{a2.\fermata}\\{a2.}>> \bar "||" \key f \minor \mark \default
 	\clef treble c2.\pp(
 	f2 des4
@@ -209,7 +209,7 @@ musicViolaMvtIII = \relative c {
 	des_\dimmarkup( ees fes)
 	ees( bes' aes)
 	f!( e8\> f fis4
-	g e f!)
+	g e f!)\!
 % bars 171 to 175
 	des!\p( c4. bes8)
 	aes2\> r4\! \mark \default

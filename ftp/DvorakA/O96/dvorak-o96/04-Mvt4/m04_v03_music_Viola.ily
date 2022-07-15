@@ -8,25 +8,25 @@ musicViolaMvtIV = \relative c {
 	\clef alto
 	\key f \major
 % bars 1 to 5
-	f8.\p->[ f16 f8 f]~
+	f8.\p->[ f16 f8 f]~ \one
 	f[ f-. f-. f-.]
-	f8.[ f16 f8 f]~
+	f8.[ f16 f8 f]~ \two
 	f[ f-. f-. f-.]
-	f8.[ f16 f8 f]~
+	f8.[ f16 f8 f]~ \three
 % bars 6 to 10
 	f[ f-. f-. f-.]
-	f8.[ f16 f8 f]~
+	f8.[ f16 f8 f]~ \four
 	f[ f-. f-. f-.]
-	f8.[ f16 f8 f]~
+	f8.[ f16 f8 f]~ \five
 	f[ f-. f-. f-.]
 % bars 11 to 15
-	f8.[ f16 f8 f]~
+	f8.[ f16 f8 f]~ \six
 	f[ f-. f-. f-.]
-	f8.[ f16 f8\! f]~
+	f8.[ f16 f8\! f]~ \seven
 	f[ f-._\crescmarkup f-. f-.]
-	f8.[ f16\< f8 f]~
+	f8.[ f16\< f8 f]~ \eight
 % bars 16 to 20
-	f[ f-. f-. f-.]~
+	f[ f-. f-. f-.]
 	f8.[ f16 f8 f]\!
 	a8->\mf a g->\< g
 	a-> a g-> g\!
@@ -35,8 +35,8 @@ musicViolaMvtIV = \relative c {
 	a\fz f c'4-> 
 	a8\fz f c'4->
 	a8\fz f c'4->
-	a8\fz f c'4-> \mark \default
-	a'8->\fp f-. a,-._\dimmarkup c-.
+	a8\fz f c'4-> \markXoffset #-0.3 \mark \default
+	\startMeasureCount a'8->\fp f-. a,-._\dimmarkup c-.
 % bars 26 to 30
 	a'8-> f-. a,-. c-.
 	a'8-> f-. a,-. c-.
@@ -45,7 +45,7 @@ musicViolaMvtIV = \relative c {
 	a'8-> f-. a,-. c-.
 % bars 31 to 35
 	a'8-> f-. a,-. c-.
-	a'8-> f-. a,-. c-.
+	a'8-> f-. a,-. c-. \stopMeasureCount
 	a-. c-. a'->\pp f
 	a, c a'-> f
 	a, c a'-> f
@@ -89,22 +89,22 @@ musicViolaMvtIV = \relative c {
 	c r c r
 	c g' c-.\mp g-.
 	c-.\> g-. c-. g-.\!
-	aes8.\pp[ aes16 aes8 aes~]
+	aes8.\pp[ aes16 aes8 aes~] \one
 	aes[ aes-. aes-.] r
 % bars 71 to 75
-	aes8.[ aes16 aes8 aes~]
+	aes8.[ aes16 aes8 aes~] \two
 	aes[ aes-. aes-.] r
-	aes8.[ aes16 aes8 aes~]
+	aes8.[ aes16 aes8 aes~] \three
 	aes[ aes-. aes-.] r
-	aes8.[ aes16 aes8 aes~]
+	aes8.[ aes16 aes8 aes~] \four
 % bars 76 to 80
 	aes[ aes-. aes-.] r
-	g8.[ g16 g8 g~]
+	g8.[ g16 g8 g~] \five 
 	g[ g-. g-.] r
-	g8.[ g16 g8 g~]
+	g8.[ g16 g8 g~] \six
 	g[ g-. g-.] r
 % bars 81 to 85
-	g8.[ g16 g8 g~]
+	g8.[ g16 g8 g~] \seven
 	g[ g-. g-.] r
 	des'8.[ des16 des8 des~]
 	des[ des-. des-.] r
@@ -135,10 +135,10 @@ musicViolaMvtIV = \relative c {
 	\repeat tremolo 4 {g16 d}
 % bars 106 to 110
 	\repeat tremolo 4 {g16 d)}
+	\startMeasureCount ges8.( aes16 ges8) des-.
 	ges8.( aes16 ges8) des-.
 	ges8.( aes16 ges8) des-.
-	ges8.( aes16 ges8) des-.
-	ges8.( aes16 ges8) des-. \mark \default
+	ges8.( aes16 ges8) des-. \stopMeasureCount \mark \default
 % bars 111 to 115
 	c8:16 aes': c,: aes':
 	c,:_\crescmarkup aes': c,: aes':
@@ -149,7 +149,7 @@ musicViolaMvtIV = \relative c {
 	c'( des c c,) c'( des c c,) 
 	c'( des c c,) c'( des c c,) 
 	c'( des c c,) c'( des c c,) 
-	c'8:16\fz\>[ des: c: des]
+	c'8:16\fz\>[ des: c: des:]
 	c:[ b: c: bes:]\!
 % bars 121 to 125
 	aes:\p\>[ bes: aes: bes]
@@ -170,7 +170,7 @@ musicViolaMvtIV = \relative c {
 	cis: a: a: cis:
 	d:\< a: a: d:
 % bars 136 to 140
-	e:\< c: c: e:
+	e: c: c: e:
 	f: c: c: f:\!
 	g:\f ees: g: aes:
 	g: ees: g: aes:
@@ -236,13 +236,13 @@ musicViolaMvtIV = \relative c {
 	dis4( e
 	bes' b)
 % bars 191 to 195
-	c(\< a
-	f'2\>)
+	c(\< a\!
+	\hairpinShorten #'(0 . 2.5) f'2\>)
 	e(\>
 	f4\p d)
 	c\pp( b
 % bars 196 to 200
-	d\< c~
+	d\< c~\!
 	c\>) r4\!
 	R2 \mark \default
 	a2\p(
@@ -250,7 +250,7 @@ musicViolaMvtIV = \relative c {
 % bars 201 to 205
 	c\fp(\>
 	f)\!
-	e\<
+	\hairpinShorten #'(0 . 2) e\<
 	e\>
 	e\fz\>
 % bars 206 to 210
@@ -260,8 +260,8 @@ musicViolaMvtIV = \relative c {
 	c_\crescmarkup(
 	f)
 % bars 211 to 215
-	e(
-	e)
+	e~
+	e
 	e4( c')
 	d8\>([ f d f])\!
 	e4\pp( dis
@@ -280,7 +280,7 @@ musicViolaMvtIV = \relative c {
 % bars 226 to 230
 	a2:16
 	gis8.\fz a16 gis4:16
-	gis16(_\crescmarkup e') e e\< e4:16\!
+	gis16(_\crescmarkup e') e \hairpinShorten #'(0 . -2) e\< e4:16\!
 	gis,16( e') e e e4:16
 	e16(_\crescmarkup f) f-. f-. f( fis) fis-. fis-.\<
 % bars 231 to 235
@@ -316,12 +316,12 @@ musicViolaMvtIV = \relative c {
 % bars 256 to 260
 	bes,-. des-. bes-. des-.
 	bes-. des-. bes-. des-.
-	des-. f-. des-. f-.
+	\startMeasureCount des-. f-. des-. f-.
 	des-. f-. des-. f-.
 	des-. f-. des-. f-.
 % bars 261 to 265
 	des-. f-. des-. f-.
-	des-. f-. des-. f-.
+	des-. f-. des-. f-. \stopMeasureCount
 	des r c-.\fp bes-.
 	ees, r r4
 	\tuplet 6/4 {<ees c'>2.:8} 
@@ -330,7 +330,7 @@ musicViolaMvtIV = \relative c {
 	\tuplet 6/4 {<ees c'>2.:8} 
 	\tuplet 3/2 {ees4.:8} \tuplet 3/2 {ees4.:8}
 	\tuplet 6/4 {<ees des'>2.:8} 
-	\tuplet 3/2 {cis'8_\crescmarkup cis cis} cis8 r
+	\tupletUp \tuplet 3/2 {cis'8_\crescmarkup cis cis} cis8 r
 % bars 271 to 275
 	\tuplet 3/2 {cis\< cis cis} cis8 r
 	\tuplet 3/2 {d d d} d r\!
@@ -338,7 +338,7 @@ musicViolaMvtIV = \relative c {
 	\tuplet 3/2 {<d f>\< <d f> <d f>} <d f> r
 	\tuplet 3/2 {<d f> <d f> <d f>} <d f>\! r
 % bars 276 to 280
-	\tuplet 3/2 {c\f c c } d( c)
+	\tuplet 3/2 {c\f c c } d( c) \tupletNeutral
 	\tuplet 3/2 {a\>_\dimmarkup a a} bes( a)
 	\tuplet 3/2 {f f f} bes( a)\!
 	\tuplet 3/2 {f f f} a( g\!) \mark \default
@@ -350,15 +350,15 @@ musicViolaMvtIV = \relative c {
 	f4 c)\<
 	f( c
 % bars 286 to 290
-	f c8)\> c(
+	f c8)\! c(\>
 	f4 c8\! f)
-	e2~\pp
+	\startMeasureCount e2~\pp
 	e~
 	e~
 % bars 291 to 295
 	e~
 	e~\<
-	e\!
+	e\! \stopMeasureCount
 	f\fp\>~
 	f\!
 % bars 296 to 300

@@ -26,7 +26,7 @@ musicViolaMvtIV = \relative c {
 	f[ f-._\crescmarkup f-. f-.]
 	f8.[ f16\< f8 f]~
 % bars 16 to 20
-	f[ f-. f-. f-.]~
+	f[ f-. f-. f-.]
 	f8.[ f16 f8 f]\!
 	a8->\mf a g->\< g
 	a-> a g-> g\!
@@ -149,7 +149,7 @@ musicViolaMvtIV = \relative c {
 	c'( des c c,) c'( des c c,) 
 	c'( des c c,) c'( des c c,) 
 	c'( des c c,) c'( des c c,) 
-	c'8:16\fz\>[ des: c: des]
+	c'8:16\fz\>[ des: c: des:]
 	c:[ b: c: bes:]\!
 % bars 121 to 125
 	aes:\p\>[ bes: aes: bes]
@@ -170,7 +170,7 @@ musicViolaMvtIV = \relative c {
 	cis: a: a: cis:
 	d:\< a: a: d:
 % bars 136 to 140
-	e:\< c: c: e:
+	e: c: c: e:
 	f: c: c: f:\!
 	g:\f ees: g: aes:
 	g: ees: g: aes:

@@ -34,7 +34,7 @@ musicViolaMvtII = \relative c {
 % bars 21 to 25
 	e16\(( g) g( bes) a( g)\) e16\(( g) g( bes) a( g)\)
 	e16_\moltocrescmarkup\<\(( g) g( bes) a( g)\) e16\(( g) g( bes) b( f)\)\!
-	f\f\(( a) a( c) c( f,)\) d\((\> f) f( d')\dimD d( f,)\)
+	f\f\(( a) a( c) c( f,)\) d\((\> f) f( d') d( f,)\)\!
 	f\p\<\(( a) a( d) d( a)\) f\(( a) a( d) d( a)\)\!
 	f\(( a) a_\crescmarkup( f') f( a,)\) f\<\(( a) a( f') f( a,)\)\!
 % bars 26 to 30

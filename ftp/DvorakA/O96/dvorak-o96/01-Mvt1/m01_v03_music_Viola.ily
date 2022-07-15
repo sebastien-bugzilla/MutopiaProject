@@ -55,11 +55,11 @@ musicViolaMvtI = \relative c {
 		a1\ff
 		a2\< f4( b,)\!
 		c( d\> c2)
-		c4\p\>( d c2)
+		c4\p\>( d c2)\!
 		cis4\pp( d cis d)
 % bars 41 to 45
-		cis4\<( d4~ d8\> e16 d c8 bes!)
-		c4\p\>( b a_\dimmarkup gis
+		cis4\<( d4~ d8\! e16\> d c8 bes!)\!
+		c4\p\>( b a-\tweak extra-offset #'(0 . 3.1) _\dimmarkup gis
 		a fis2 gis4)\! \mark \default
 		e2\ppp a2~
 		a1
@@ -68,7 +68,7 @@ musicViolaMvtI = \relative c {
 		<d b'>\fz\>( <e cis'>)\!
 		cis'1\pp
 		a
-		a2\< <e a>
+		a2\< <e a>\!
 % bars 51 to 55
 		d8\f( fis d' b) gis2\>
 		ais2.\! b8( d)
@@ -103,7 +103,7 @@ musicViolaMvtI = \relative c {
 % bars 76 to 80
 	r2 b4\<( bis8 cis)
 	d2\f( cis4\> b)\!
-	<< <d, a'>1:32\ff\> {s2 s_\dimmarkup}>>
+	\hairpinShorten #'(-0.8 . -0.5) <d, a'>1:32-\offset X-offset #-0.5 _\ffdimD\>
 	<d a'>8\p r r4 r2 \mark \default
 	fis8.\mf^>\< g16 a16.^>( fis32) r8 a8.^> b16\! d16.( b32) r8
 % bars 81 to 85
@@ -117,13 +117,13 @@ musicViolaMvtI = \relative c {
 	a'4\<( fis'2\> a,4)\!
 	b8^> b b^> b b^>_\crescmarkup b b^> b
 	b\<^> b b^> b b^> b b^> b\! \mark \default
-	<c, bes'!>2:32\ff <<{bes':} \\ {c:}>> 
+	<c, bes'!>2:32-\offset X-offset #-1 \ff <<{bes':} \\ {c:}>> 
 % bars 91 to 95
 	<<{bes:\ffz} \\ {c:}>> <<{bes:} \\ {c:}>>
 	<c, c'>8\f r c16\<( e g c\!) c8.-> c,16-. c\<( e g c\!)
 	c8.-> c,16-. c\<( e g c\!) c8.-> c,16-. c\<( e g c\!)
 	<c, c'>8 r r4 r2
-	c''8.->\ff e,16 g8.-> c,16 des8.-> g,16 bes8.-> e,16 \mark \default
+	c''8.->\ff e,16 g8.-> c,16 des8.-> g,16 bes8.-> e,16 \markXoffset #-0.3 \mark \default
 % bars 96 to 100
 	f8 r r4 r2
 	R1*3
@@ -131,8 +131,8 @@ musicViolaMvtI = \relative c {
 	
 	f4\mp-> aes->_\crescmarkup f-> ees-> 
 % bars 101 to 105
-	c-> f8-.\< ees-. c4-> f8-. ees-.\! \mark \default
-	f8 r aes16\fz-> aes aes aes f8 r ees16\fz-> ees ees ees
+	c^> f8-.\< ees-. c4^> f8-. ees-.\! \mark \default
+	f8\ff r aes16\fz-> aes aes aes f8 r ees16\fz-> ees ees ees
 	c8 r f16 f ees ees c8 r f'16 f ees ees
 	d!4\fz-> g8-. f-. d2->
 	aes4\fz-> d8-. c-. aes2->
@@ -143,11 +143,11 @@ musicViolaMvtI = \relative c {
 	c1\p\>
 	ces\pp
 % bars 111 to 115
-	aes \mark \default
+	aes \markXoffset #-0.3 \mark \default
 	f8\mp\<( a!4 c8) d8.( f16 d4)\!
 	c8.\mf( a16 f8 g16 a) c2
 	c,8.^>\mp d16 f-. d-. r8 c8.^> d16 f-. d-. r8
-	c16\<( f a c) c8.\>( a16 f4.)\! r8
+	c16\<( f a c)\! c8.\>( a16 f4.)\! r8
 % bars 116 to 120
 	R1*3
 	
@@ -155,11 +155,11 @@ musicViolaMvtI = \relative c {
 	f'1\p
 	c1 \mark \default
 % bars 121 to 125
-	f,8 r f16\pp f f f f8 r f16 f f f
-	f8 r f16 f f f f8 r f16 f f f
-	des8 r des16\pp des des des des8 r des16 des des des
-	ges8 r ges16 ges ges ges ges8 r ges16 ges ges ges
-	f8 r f16_\crescmarkup f\! f f <f aes>8 r <f des'>4:16
+	f,8 r f4:16\pp f8 r f4:16
+	f8 r f4:16 f8 r f4:16
+	des8 r des4:16\pp des8 r des4:16
+	ges8 r ges4:16 ges8 r ges4:16
+	f8 r f4:16_\crescmarkup <f aes>8 r <f des'>4:16
 % bars 126 to 130
 	<ees c'>8\mf r <ees c'>4:16 <c aes'>8 r <c aes'>4:16
 	<des aes'>8 r <des aes'>4:16_\dimD <des aes'>8 r <cis gis'>4:16
@@ -169,50 +169,50 @@ musicViolaMvtI = \relative c {
 % bars 131 to 135
 	\acciaccatura f8 des'2.\fz\> c8( bes)\!
 	des2.\< c8 bes\!
-	aes16\< aes8 aes f( des16) aes16 aes8 aes f(\! des16)~
+	\hairpinShorten #'(0 . 1) aes16\< aes8 aes f( des16) aes16 aes8 aes f(\! des16)~
 	des aes'8 aes aes aes16~ aes aes8 aes aes aes16~
-	aes\> ces8 ces ces ces16~ ces ces8 ces ces ces16\!
+	aes\> ces8 ces ces ces16~ \stemUp ces ces8 ces ces ces16\! \stemNeutral
 % bars 136 to 140
-	b1\p\>
-	aes16-.\pp aes-. f( aes) aes8 r aes16-. aes-. f( aes) aes8 r \mark \default
-	c,8\fp( e! f aes) c-.( c-. c-. c-.)
+	\hairpinShorten #'(-0.5 . -0.5) b1\p\>
+	aes16-.\pp aes-. f( aes) aes8 r aes16-. aes-. f( aes) aes8 r \markXoffset #-0.3 \mark \default
+	c,8-\offset X-offset #-1 \fp( e! f aes) c-.( c-. c-. c-.)
 	c-.( c-. c-. c-.) c-.( c-. c-. c-.)
-	c-. c-. bes!-. bes-. des-.\< des-. des-. des-.\!
+	c8-. c-. bes!-. bes-. des-.\< des-. des-. des-.\!
 % bars 141 to 145
-	aes\fz( f) e!-. c-. aes'\fz( f) e-. c-.
+	aes-\offset X-offset #-1 \fz( f) e!-. c-. aes'\fz( f) e-. c-.
 	f2\fp~ f8 g-. aes4^>\fp
 	f8-. g-. aes4\fz^> f8-. g-. aes4\fz^>
-	ees'16\p ees r fes\< ees ees r fes ees ees r fes ees ees\! r des
-	c\< c r des c c r des c c r des c c\! r bes \mark \default
+	ees'16\p[ ees r fes]\< ees[ ees r fes] ees[ ees r fes] ees[ ees\! r des]
+	\stemUp c\<[ c r des] c[ c r des] c[ c r des] \stemNeutral c[ c\! r bes] \mark \default
 % bars 146 to 150
-	\grace {s8} c4.\f( aes'8) g16\fz g r f e e r g
-	c,4.\fz\<( aes'8)\! g16\fz g r f e e r g
-	f1\fz->
+	c4.\f( aes'8) g16\fz[ g r f] e[ e r g]
+	\hairpinShorten #'(-0.5 . -0.2) c,4.-\offset X-offset #-1.5 \fz\<( aes'8)\! g16\fz[ g r f] e[ e r g]
+	f1-\tweak extra-offset #'(0 . 2) \fz->
 	f2\< des4( g,)\!
 	c8( c4-- c-- c-- c8)(
 % bars 151 to 155
 	c'8) c4\>--( c-- c-- c8)\!
 	a!4\p( bes a bes)
-	a(\< bes)\! c8_\dimmarkup\>( bes aes ges)
+	a(\< bes)\! c8_\dimD\>( bes aes ges)\!
 	f4\>( g! f e!\!)
-	c2(\> bes)\! \mark \default
+	\once \stemUp c2(\> bes)\! \markXoffset #-0.3 \mark \default
 % bars 156 to 160
 	a!1\pp(
 	<f g>)
-	<<{g2\< <e g>\! <e g>\mf\> <f a>\!} \\ {f s s s }>>
-	
+	q2\< <e g>\! 
+	<e g>\mf\> <f a>\!
 	f16\p-. f-. r8 f16-. f-. r8 f16-. f-. r8 f16-. f-. r8
 % bars 161 to 165
 	<bes d>16-. <bes d>-. r8 <bes e>16-. <bes e>-. r8 <bes d>16-. <bes d>-. r8 <bes d>16-. <bes d>-. r8
-	<bes d>16\< <bes d> r8 <bes d>16 <bes d> r8 c16 c r8 c,16 c r8\!
+	<bes d>16^\< <bes d> r8 <bes d>16 <bes d> r8 c16 c r8 c,16 c r8\!
 	<c c'>16 <c c'> r8_\crescmarkup c16 c r8 c'16 c r8 c,16 c r8
-	c'16\f c r8 c,16 c r8 c'16 c r8 c,16 c r8
+	c'16-\tweak extra-offset #'(-1.8 . 1.0) \f c r8 c,16 c r8 c'16 c r8 c,16 c r8
 	c'16 c r8 c,16 c r8 c'16 c r8 c,16 c r8
 % bars 166 to 170
 	c'16 c r8 c,16 c r8 c'16 c r8 c,16 c r8
-	c2.\ff <c bes'>4_\dimD\> \mark \default
-	<c a'>1\>~
-	<< <c a'> {s4\p\> s s s\!} >>
+	\tempoXoffset #-1 c2.\ff <c bes'>4_\dimmarkup \markXoffset #-0.3 \mark \default
+	<c a'>1~\>
+	<c a'>\p
 	c'16( f a4 f8) a4(\p c,8) r
 % bars 171 to 175
 	r4 a'(\> f a,
@@ -222,6 +222,6 @@ musicViolaMvtI = \relative c {
 	\acciaccatura a,8 <f' a>2\ff <f, a>4. <f a>16 <f a>
 % bars 176 to 178
 	\acciaccatura a8 <f' a>2 <f, a>4. <f a>16 <f a>
-	c16\<( f a c) c8.\fz( a16 f8) r c'\ff r
+	c16\<( f a c)\! c8.\fz( a16 f8) r c'\ff r
 	c2.-> r4 \bar "|."
 }

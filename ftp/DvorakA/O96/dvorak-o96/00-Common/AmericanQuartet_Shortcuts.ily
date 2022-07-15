@@ -62,6 +62,7 @@ moltocrescD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (mar
 ffp = #(make-dynamic-script "ffp")
 fpp = #(make-dynamic-script "fpp")
 %pcrescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cresc."))
+ffdimD = #(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "dim."))
 
 arcofermata = \markup {
 	\hspace #-1.30 \center-column {
@@ -84,7 +85,7 @@ colottavaadlibitum = {
 			col \concat { 8 \super va } ad libitum
 		}
 	}
-	%\once \override TextSpanner.bound-details.left.stencil-align-dir-y = #CENTER
+	\once \override TextSpanner.bound-details.left.stencil-align-dir-y = #CENTER
 	\once \override TextSpanner.bound-details.left-broken.text = ""
 	\once \override TextSpanner.bound-details.right.stencil = #ly:text-interface::print
 	\once \override TextSpanner.bound-details.right.text = \markup {
@@ -98,6 +99,8 @@ colottavaadlibitum = {
 }
 
 scriptPriority = \once \override Script.script-priority = #-100
+
+textInStaff = \once \override TextScript.staff-padding = #'()
 
 one = \mark \markup {\abs-fontsize #8 \number 1}
 two = \mark \markup {\abs-fontsize #8 \number 2}
@@ -148,6 +151,14 @@ tempoXoffset = #(define-music-function
 	(number?)
 	#{
 		\once \override Score.MetronomeMark.X-offset = #offset
+	#}
+)
+
+tempoExtraOffset = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
 	#}
 )
 

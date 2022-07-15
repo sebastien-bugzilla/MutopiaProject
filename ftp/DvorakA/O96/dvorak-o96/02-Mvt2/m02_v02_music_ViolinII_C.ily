@@ -34,7 +34,7 @@ musicViolinIIMvtII = \relative c {
 % bars 21 to 25
 	g8\p r r r4 r8
 	bes,8\<( e f16 e) g8\f\<( e' f)\!
-	<c f>8.\f-> a'16( g f) <d, d'>4_\dimmarkup( <d bes'>8)
+	<c f>8.\f-> a'16( g f) <d, d'>4\>( <d bes'>8)\!
 	<f a>4.\p~ q8\< q q
 	q4\mf <a f'>8_\crescmarkup~ q q->\< q->
 % bars 26 to 30

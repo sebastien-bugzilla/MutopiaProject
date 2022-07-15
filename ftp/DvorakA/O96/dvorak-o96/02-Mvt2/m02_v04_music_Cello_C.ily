@@ -34,7 +34,7 @@ musicCelloMvtII = \relative c {
 % bars 21 to 25
 	cis r r cis r r 
 	cis\<_\moltocrescmarkup r r cis[ r cis\!]
-	f8\f f, r bes[_\dimmarkup r bes]
+	f8\f f, r bes[\> r bes]\!
 	d\p r d b_\crescmarkup[ r b]
 	c[ r cis]_\crescD\< d[ r dis]\!
 % bars 26 to 30

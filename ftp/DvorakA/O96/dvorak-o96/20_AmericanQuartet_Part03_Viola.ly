@@ -1,90 +1,62 @@
-%#######################################################################
-%#             G E N E R A L I T E S   E T   E N T E T E               #
-%#######################################################################
-\paper {
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
-}
-%-----------------------------------------------------------------------
-\layout {
-}
-%-----------------------------------------------------------------------
-globalMvtUn = {
-	\version "2.18.2"
-	\time 4/4
-	\key f \major
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Allegro ma non troppo." 4 = 112
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-globalMvtDeux = {
-	\version "2.18.2"
-	\time 6/8
-	\key f \major
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Lento" 8 = 112
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-globalMvtTrois = {
-	\version "2.18.2"
-	\time 3/4
-	\key f \major
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Molto Vivace" 2. = 72
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-globalMvtQuatre = {
-	\version "2.18.2"
-	\time 2/4
-	\key f \major
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Vivace ma non troppo." 4 = 152
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-\include "markup.ly"
-\include "01_DvorakAmericanQuartet_Mvt1_Voix3.ly"
-\include "02_DvorakAmericanQuartet_Mvt2_Voix3.ly"
-\include "03_DvorakAmericanQuartet_Mvt3_Voix3.ly"
-\include "04_DvorakAmericanQuartet_Mvt4_Voix3.ly"
-%#######################################################################
-%#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
-%#######################################################################
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Antonín Dvořák (1841 - 1904)
+%  work               : String Quartet No. 12 in F Major, Op. 96, "American"
+%  Source             : Berlin: N. Simrock, 1894. Plate 10,133.
+%  Type of score      : Score for Viola
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Tuesday 14 June 2022, 22:25
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/AmericanQuartet_Header.ily"
+\include "./00-Common/AmericanQuartet_PaperParts.ily"
+\include "./00-Common/AmericanQuartet_timeMvt.ily"
+\include "./00-Common/AmericanQuartet_Layout.ily"
+\include "./00-Common/AmericanQuartet_Shortcuts.ily"
+\include "./00-Common/AmericanQuartet_Format_temp.ily"
+%\include "./00-Common/AmericanQuartet_Format_Part03_Viola.ily"
+\include "./00-Common/AmericanQuartet_Tempi.ily"
+\include "01-Mvt1/m01_v03_music_Viola.ily"
+\include "02-Mvt2/m02_v03_music_Viola.ily"
+\include "03-Mvt3/m03_v03_music_Viola.ily"
+\include "04-Mvt4/m04_v03_music_Viola.ily"
+%###############################################################################
+%#                          S C O R E   S E C T I O N                          #
+%###############################################################################
 \book{
 	\header {
-	    title = "String Quartet No.12"
-	    composer = "Antonín Dvořák (1841 – 1904)"
-	    opus = "Op. 96"
-	    copyright = "Public Domain"
-
-	    %mutopia-specific headers:
-	    mutopiatitle = "String Quartet No.12"
-	    mutopiacomposer = "DvorakA"
-	    mutopiapoet = ""
-	    mutopiaopus = "O 96"
-	    mutopiainstrument = "violin, viola, cello"
-	    date = "1893"
-	    source = "N. Simrock, 1894"
-	    style = "Romantic"
-	    maintainer = "Sébastien Manen"
-	    maintainerEmail = "sebastien dot bugzilla at gmail dot com"
-	    lastupdated = "2017/Nov/15"
-        footer = "Mutopia-2006/12/18-584"
-        copyright =  \markup { \override #'(baseline-skip . 0 ) \right-column { \sans \bold \with-url #"http://www.MutopiaProject.org" { \abs-fontsize #9  "Mutopia " \concat { \abs-fontsize #12 \with-color #white \char ##x01C0 \abs-fontsize #9 "Project " } } } \override #'(baseline-skip . 0 ) \center-column { \abs-fontsize #12 \with-color #grey \bold { \char ##x01C0 \char ##x01C0 } } \override #'(baseline-skip . 0 ) \column { \abs-fontsize #8 \sans \concat { " Typeset using " \with-url #"http://www.lilypond.org" "LilyPond" " by " \maintainer " " \char ##x2014 " " \footer } \concat { \concat { \abs-fontsize #8 \sans{ " Placed in the " \with-url #"http://creativecommons.org/licenses/publicdomain" "public domain" " by the typesetter " \char ##x2014 " free to distribute, modify, and perform" } } \abs-fontsize #13 \with-color #white \char ##x01C0 } } }
+		subtitle = \markup { 
+			\abs-fontsize #12 \sans
+			\center-column {
+				"Part for Viola"
+			}
+		}
+		subsubtitle = \markup { 
+			"Antonín Dvořák — String Quartet No. 12 in F Major, Op. 96, \"American\""
+		}
+		instrument = \markup {
+			"Viola"
+		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnVoixTrois >>
-		}
+		\new Staff << 
+			\new Voice {
+				\formatViolaMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \musicViolaMvtI
+			}
+		>>
 		\header {
-			%breakbefore = ##t
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -93,16 +65,23 @@ globalMvtQuatre = {
 			}
 		}
 		\layout {
-		}
-		\midi {
+			\layoutPart
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxVoixTrois >>
-		}
+		\new Staff << 
+			\new Voice {
+				\formatViolaMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \musicViolaMvtII
+			}
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
@@ -111,14 +90,25 @@ globalMvtQuatre = {
 			}
 		}
 		\layout {
-		}
-		\midi {
+			\layoutPart
+			\context {
+				\Score
+				\revert RehearsalMark.extra-spacing-width
+			}
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtTrois \MvtTroisVoixTrois >>
-		}
+		\new Staff << 
+			\new Voice {
+				\formatViolaMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \musicViolaMvtIII
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -129,14 +119,21 @@ globalMvtQuatre = {
 			}
 		}
 		\layout {
-		}
-		\midi {
+			\layoutPart
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtQuatre \MvtQuatreVoixTrois >>
-		}
+		\new Staff << 
+			\new Voice {
+				\formatViolaMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \musicViolaMvtIV
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -147,8 +144,7 @@ globalMvtQuatre = {
 			}
 		}
 		\layout {
-		}
-		\midi {
+			\layoutPart
 		}
 	}
 }

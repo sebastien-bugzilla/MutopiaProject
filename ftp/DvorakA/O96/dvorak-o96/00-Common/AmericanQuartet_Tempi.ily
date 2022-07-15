@@ -70,30 +70,21 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 43
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(viola cello) {
-		\tempo "rit."
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup {\italic \medium "rit."}
 	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 44
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(viola cello) {
-		\tempo "in tempo"
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup {\italic \medium "in tempo"}
 	}
 	s1*15
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 59
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(viola cello) {
-		\tempo "molto rit."
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup {\italic \medium "molto rit."}
 	}
 %	\tag #'(violinII) {
@@ -103,73 +94,52 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 60
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "in Tempo"
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup {\italic \medium "in tempo"}
 	}
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 155
 	%%%%%%%%%%%%%%%%%%%%%%
 	s1*95
-	\tag #'(viola cello) {
-		\tempo "ritard."
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup { \italic \medium "ritard." }
 	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 156
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "in tempo"
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup { \italic \medium "in tempo" }
 	}
 	s1*11
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 167
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "molto ritard."
-	}
-	\tag #'(violinI) {
+	\tag #'(violinI  cello) {
 		\tempo \markup { \italic \medium \column { \lower #1.3 "molto" "ritard."}}
 	}
-	\tag #'(violinII) {
+	\tag #'(violinII viola) {
 		\tempo \markup { \italic \medium "molto ritard."}
 	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 168
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "in tempo"
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup { \italic \medium "in tempo"}
 	}
 	s1*4
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 172
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "poco rit." 
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup { \italic \medium "poco rit." }
 	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 173
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "in tempo"
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup { \italic \medium "in tempo" }
 	}
 	s1*5
@@ -184,20 +154,14 @@ tempiPartMvtII = {
 	% bar 81
 	%%%%%%%%%%%%%%%%%%%%%%
 	s4. 
-	\tag #'( viola cello) {
-		\tempo "ritard." 
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup { \medium \italic "ritard." }
 	}
 	s 
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 82
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "in tempo"
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup {\medium \italic "in tempo"}
 	}
 	s2.*16
@@ -217,50 +181,35 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 47
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "ritard."
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup {\medium \italic "ritard."}
 	}
 	s2.*2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 49
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "in tempo"
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup {\medium \italic "in tempo"}
 	}
 	s2.*95
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 144
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "molto rit."
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup {\medium \italic "molto rit."}
 	}
 	s2.
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 145
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "in tempo"
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup {\medium \italic "in tempo"}
 	}
 	s2.*51
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 196
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo "Da Capo al Fine."
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup {\medium \italic "Da Capo al Fine."}
 	}
 }
@@ -279,10 +228,7 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 219
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( viola cello) {
-		\tempo \markup {\column {\lower #1 "Più mosso." "Tempo I." }} 
-	}
-	\tag #'(violinI violinII) {
+	\tag #'(violinI violinII viola cello) {
 		\tempo \markup {\column {\lower #1 { "Più mosso."} \line {\hspace #3 \medium \italic "Tempo I." }}} 
 	}
 	s2*61

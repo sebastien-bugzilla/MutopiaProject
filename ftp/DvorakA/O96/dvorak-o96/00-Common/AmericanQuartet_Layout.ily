@@ -19,6 +19,7 @@
 		\override Fingering.avoid-slur = #'around
 		\override Arpeggio.padding = #0.25
 		\override Script.staff-padding = #'()
+		\override Hairpin.height = #0.55
 	}
 	\context {
 		\Staff
@@ -31,7 +32,7 @@
 	\context {
 		\Score
 		\override RehearsalMark #'font-size = #4
-		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
+		\override RehearsalMark.extra-spacing-width = #'(-0.3 . 0.3) %0.7
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override RehearsalMark.extra-spacing-height = #'(-inf.0 . +inf.0)
 		\override DynamicTextSpanner.font-size = #0
@@ -44,4 +45,10 @@ layoutPart = \layout {
 	\compressMMRests
 	\compressEmptyMeasures
 	\set Voice.restNumberThreshold = #0
+}
+layoutViola = \layout {
+	\context {
+		\Score
+		\override RehearsalMark.extra-spacing-width = #'()
+	}
 }
