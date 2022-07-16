@@ -257,7 +257,7 @@ musicViolaMvtIV = \relative c {
 	e\!
 	a(\<
 	f)\!
-	c_\crescmarkup(
+	c-\tweak extra-offset #'(1.8 . 2.5) _\crescmarkup(
 	f)
 % bars 211 to 215
 	e~
@@ -396,7 +396,7 @@ musicViolaMvtIV = \relative c {
 	c r \tuplet 3/2 {c'(\upbow a) f-.}
 	c r \tuplet 3/2 {c'(\upbow a) f-.}
 	c r \tuplet 3/2 {bes''(\upbow a) g-.} \mark \default
-	f r c8.->\fp\> d16-.\!
+	f r \hairpinShorten #'(-0.5 . -0.5) c8.->\fp\> d16-.\!
 % bars 326 to 330
 	c8-. a-. f-. d-.
 	c r c'8.->\fz d16

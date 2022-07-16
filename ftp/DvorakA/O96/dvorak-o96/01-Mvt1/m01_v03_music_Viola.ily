@@ -16,7 +16,7 @@ musicViolaMvtI = \relative c {
 		c8.( a16 f8 g16 a) c2
 		c,8.-> d16-. f-. d-. r8 c8.-> d16-. f-. d-. r8 
 % bars 6 to 10
-		c16(\< f a c c8.\> a16\! f4.) r8
+		c16(\< f a c\! c8.\> a16\! f4.) r8
 		\repeat tremolo 4 {f16\pp( a} \repeat tremolo 4 {f16 a)}
 		\repeat tremolo 4 {f16( a} \repeat tremolo 4 {f16 a)}
 		\repeat tremolo 4 {f16\<( a} \repeat tremolo 4 {f16 a)\!}
@@ -120,7 +120,7 @@ musicViolaMvtI = \relative c {
 	<c, bes'!>2:32-\offset X-offset #-1 \ff <<{bes':} \\ {c:}>> 
 % bars 91 to 95
 	<<{bes:\ffz} \\ {c:}>> <<{bes:} \\ {c:}>>
-	<c, c'>8\f r c16\<( e g c\!) c8.-> c,16-. c\<( e g c\!)
+	<c, c'>8-\offset X-offset #0.5 \f r c16\<( e g c\!) c8.-> c,16-. c\<( e g c\!)
 	c8.-> c,16-. c\<( e g c\!) c8.-> c,16-. c\<( e g c\!)
 	<c, c'>8 r r4 r2
 	c''8.->\ff e,16 g8.-> c,16 des8.-> g,16 bes8.-> e,16 \markXoffset #-0.3 \mark \default

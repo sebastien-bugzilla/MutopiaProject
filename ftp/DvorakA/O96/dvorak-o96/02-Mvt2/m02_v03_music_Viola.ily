@@ -38,7 +38,7 @@ musicViolaMvtII = \relative c {
 	f\p\<\(( a) a( d) d( a)\) f\(( a) a( d) d( a)\)\!
 	f\(( a) a_\crescmarkup( f') f( a,)\) \hairpinShorten #'(0 . 1) f\<\(( a) a( f') f( a,)\)\!
 % bars 26 to 30
-	a\mf\<\(( e') e( a) a( e)\) bes!\(( d) d( bes') bes( d,)\)\!
+	\hairpinShorten #'(1 . 0) a\mf-\tweak extra-offset #'(0 . 0.6) \<\(( e') e( a) a( e)\) bes!\(( d) d( bes') bes( d,)\)\!
 	f,\f\(( c') c( f) f( c)\) g_\dimD\>\(( ees') ees( g) g( g,)\)\!
 	\hairpinShorten #'(0 . 0.5) a\>\(( d) d( a') a( d,)\)\! d\p\(( g) g( d) d( f)\)
 	f\(( c) c( f) f_\dimD\>( c)\) c\(( e) e( c) c( e)\)\!
@@ -62,7 +62,7 @@ musicViolaMvtII = \relative c {
 	fis\mf\>\(( a) a( c) c( a)\) fis\(( a) a( c) c( a)\)\!
 	fis\p\<\(( a) a( c) c( a)\) fis\(( a) a( c) c( a)\)\!
 % bars 46 to 50
-	fis-\offset X-offset #-1.5 \sf\>\(( a) a( c) c( a)\) fis\(( a) a( c) c( a)\)\!
+	\hairpinShorten #'(3.5 . 0) fis-\offset X-offset #-1.5 \sf\>\(( a) a( c) c( a)\) fis\(( a) a( c) c( a)\)\!
 	f!\p\<\(( bes) bes( d) d( f,)\) f\(( bes) bes( d) d( f,)\)\!
 	g\f\>\(( bes) bes( c) c( bes)\) bes\(( c) c( bes) bes(-\offset X-offset #-1.5 _\dimD g)\)
 	f\pp\(( bes) bes( d) d( f,)\) f\>\(( bes) bes( d) d( f,)\)\!
@@ -98,7 +98,7 @@ musicViolaMvtII = \relative c {
 	d\f( f) f( a) a( f) a,( f') f( a) a( f)
 	d( f) f( a) a( f) a,( f') f( a) a( f)
 % bars 76 to 80
-	d\(( f) f( a) a( f)\) a,\((_\dimmarkup f') f( d') d( f,)\)
+	d\(( f) f( a) a( f)\) a,\((-\offset X-offset #-2.4 _\dimmarkup f') f( d') d( f,)\)
 	d( f) f( a) a( f) c\mp( f) f( c) c( f)
 	f,( a) a( d) d( a) f(_\dimD\> b) b( d) d( b)\!
 	f( a) a( c) c( a) \hairpinShorten #'(0 . 0.5) f(\> g) g( d') d( g,)\!
@@ -106,12 +106,12 @@ musicViolaMvtII = \relative c {
 % bars 81 to 85
 	f( a) a( c) c( a) a( cis) cis( a) a( cis,) \mark \default
 	\tempoExtraOffset #'(1.3 . -3) d8 d r d-\tweak extra-offset #'(0 . -1.5) ^\pizz d r
-	d^\arco d r d^\pizz d r
-	d^\arco d r a'^\pizz a r
-	d,^\arco d r d^\pizz d r
+	d-\offset Y-offset #0.4 ^\arco d r d^\pizz d r
+	d-\offset Y-offset #0.4 ^\arco d r a'^\pizz a r
+	d,-\offset Y-offset #0.4 ^\arco d r d^\pizz d r
 % bars 86 to 90
-	d^\arco d r d^\pizz d r
-	d^\arco d r d^\pizz d r
+	d-\offset Y-offset #0.4 ^\arco d r d^\pizz d r
+	d-\offset Y-offset #0.4 ^\arco d r d^\pizz d r
 	d4.^\arco\fp\>( des)\!
 	c\p\>( cis)\!
 	d4.:32\pp^\trem g4.:32

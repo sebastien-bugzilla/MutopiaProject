@@ -74,12 +74,12 @@ musicViolaMvtIII = \relative c {
 	des8\fp des des4-> r 
 % bars 61 to 65
 	f8\fp f f4-> r
-	des8\fz-> des des4 r
-	f8\fz-> f f4 r
-	c8\fp-> c c4 r
-	des8\fp-> des des4_\dimmarkup r
+	des8\fz^> des des4 r
+	f8\fz^> f f4 r
+	c8\fp^> c c4 r
+	des8\fp^> des des4_\dimmarkup r
 % bars 66 to 70
-	des8\fp-> des_\dimmarkup des4 r
+	des8\fp^> des des4_\dimmarkup r
 	des8 des des4\> r
 	aes'8 aes aes4\! r
 	c,8\p c c4 r
@@ -170,7 +170,7 @@ musicViolaMvtIII = \relative c {
 	f f f f g( f
 % bars 136 to 140
 	c4) r r \mark \default
-	<<{a''4( f2)}\\{a,2.\ff}>>
+	<<{a''4( f2)}\\{a,2.-\offset X-offset #0.7 \ff}>>
 	<<{a'4( f2)}\\{a,2.}>>
 	<<{a'4( f2)}\\{a,2.}>>
 	<f' a>4( c2)
@@ -242,7 +242,7 @@ musicViolaMvtIII = \relative c {
 % bars 195 to 196
 	<<{
 		bes4( aes g
-		aes2)
+		\tempoXoffset #-7 aes2)
 	}\\{
 		c,2.(
 		c2)

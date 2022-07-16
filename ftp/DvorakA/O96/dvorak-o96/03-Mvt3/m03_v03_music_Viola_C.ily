@@ -79,7 +79,7 @@ musicViolaMvtIII = \relative c {
 	c8\fp-> c c4 r
 	des8\fp-> des des4_\dimmarkup r
 % bars 66 to 70
-	des8\fp-> des_\dimmarkup des4 r
+	des8\fp-> des des4_\dimmarkup r
 	des8 des des4\> r
 	aes'8 aes aes4\! r
 	c,8\p c c4 r
