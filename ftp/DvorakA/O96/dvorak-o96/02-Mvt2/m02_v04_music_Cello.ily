@@ -15,20 +15,20 @@ musicCelloMvtII = \relative c {
 	<d a'> r r a r r
 % bars 6 to 10
 	<d a'>_\crescmarkup r r <d a'>\< r r\!
-	d\fp r r d\> r r\!
+	d-\offset X-offset #0.8 \fp r r d\> r r\!
 	<d a'> r r\< d r r\!
-	c\mf r r <c, g'> r r
-	<c g'>\> r_\dimmarkup r c' r r\! \clef tenor \mark \default
+	c-\tweak extra-offset #'(0 . 0.4) \mf r r <c, g'> r r
+	\hairpinShorten #'(2 . 0) <c g'>\> r_\dimmarkup r c' r r\! \clef tenor \mark \default
 % bars 11 to 15
 	a''4.\pp\<~^\arco a8 g( f16 d\!)
 	d4.~ d16\< a a( d) d( e)\!
 	f4( d8) c4\prall\> a16( c\!)
-	d4. r8 d32\<([ a bes! c!] \tuplet 5/4 { d[ e f g gis])}\!
+	d4. r8 \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur d32\<([ a bes! c!] \tuplet 5/4 { d[ e f g gis])}\!
 	a4.\sfz\>~ a8 g( f16 d)\!
 % bars 16 to 20
 	d4.\<~ d16 a a( d) e( f)\!
 	g4\mf( f16_\crescmarkup e) e4 \tuplet 3/2 {d16( c a) }
-	c4.\>~ c8\p r r \clef bass \markXoffset #-0.3 \mark \default
+	c4.\>~ c8-\offset X-offset #0.8 \p r r \clef bass \markXoffset #-0.3 \mark \default
 	cis,\pp^\pizz r r cis r r 
 	cis r r cis r r 
 % bars 21 to 25
@@ -46,7 +46,7 @@ musicCelloMvtII = \relative c {
 % bars 31 to 35
 	g''4\p^\arco\< f16( e) g4 \tuplet 3/2 {f16( a e)}\!
 	g4.~ g8 r g
-	g4\<( f16 e)_\crescmarkup g4 f32( a) a( e)\!
+	g4\<( f16 e)-\tweak extra-offset #'(0.3 . 2.7) _\crescmarkup g4 f32( a) a( e)\!
 	g4.~_\crescmarkup g8 \hairpinShorten #'(-1 . 0) gis4\<
 	a8\f( c) bes16( a) g8( f d)
 % bars 36 to 40
@@ -54,7 +54,7 @@ musicCelloMvtII = \relative c {
 	a4.\mf~ a16[\< f f( g]) a[( c])\! \clef treble
 	c4.->\f\< d8( g bes,!)\!
 	bes16\(( a) c4~\> c16\) bes( g_\dimmarkup ees) g( bes)\! \clef tenor
-	a4.\> g8\p\>( f d)\!
+	\hairpinShorten #'(-0.5 . 0) a4.\> g8\p\>( f d)\!
 % bars 41 to 45
 	c4\>(~ c16 a') a4.\pp
 	a4.~ a8 r r \clef bass \markXoffset #-0.3 \mark \default
@@ -83,7 +83,7 @@ musicCelloMvtII = \relative c {
 	c' r r a r r \mark \default
 	d r r d\< r d16 fis\!
 	c8\fz r\> r c r r\!
-	d\pp r r d\< r d16 fis\!
+	d-\offset X-offset #0.8 \pp r r d\< r d16 fis\!
 	c8_\crescD\< r r c r c\!
 % bars 66 to 70
 	bes\ff r r bes r r
@@ -98,7 +98,7 @@ musicCelloMvtII = \relative c {
 	f,\f r r f' r r
 	f, r r f' r r
 % bars 76 to 80
-	f, r r f'_\dimmarkup r r
+	f, r r f'-\tweak extra-offset #'(0.3 . 0.5) _\dimmarkup r r
 	f, r r f'\mp r r
 	d r \hairpinShorten #'(-0.5 . -1) r_\dimD\> g, r r\!
 	a r r b[\> r b]\!

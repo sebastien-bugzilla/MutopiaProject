@@ -153,7 +153,7 @@ musicCelloMvtIV = \relative c {
 	c:[ b: c: bes:]\!
 % bars 121 to 125
 	aes:\p\>[ bes: aes: bes:]
-	aes:[ g: aes: g:]\! \mark \default
+	aes:[ g: aes: g:]\! \markXoffset #-0.3 \mark \default
 	f4\pp r8 c'
 	f4 r8 c
 	f4 r8 c
@@ -170,7 +170,7 @@ musicCelloMvtIV = \relative c {
 	cis r cis8. a16
 	d8\< r d8. d16
 % bars 136 to 140
-	e8\< r e8. c!16
+	e8 r e8. c!16
 	f8 r f8. f16\!
 	g8\f r g8. aes16
 	g8 r g8. aes16

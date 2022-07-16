@@ -173,7 +173,7 @@ musicCelloMvtIII = \relative c {
 	d_\dimmarkup
 	d
 	d4(\> c2)
-	f4\pp( d4. c8)
+	\shape #'((0 . -0.3)(0 . -0.3)(0 . -0.3)(0 . -0.3)) Slur f4\pp( d4. c8)
 % bars 146 to 150
 	a4( f d)^~
 	d8 c a4.( g8

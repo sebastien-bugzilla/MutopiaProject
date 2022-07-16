@@ -130,7 +130,7 @@ musicCelloMvtI = \relative c {
 	
 	
 % bars 101 to 105
-	\mark \default
+	\markXoffset #-0.3 \mark \default
 	f4->\f aes-> f-> ees->
 	c-> f8-. ees-. c4-> f8-. ees-.
 	\flattrill d!1\f\startTrillSpan
@@ -170,7 +170,7 @@ musicCelloMvtI = \relative c {
 	ges(\< f) ges ges g--( g--) g(-- g--)\!
 	\hairpinShorten #'(0 . 4) aes\<( f des aes) \clef bass aes( f des aes)\!
 	aes2-\offset X-offset #-1 \f( ges)
-	e!\>( d!)\!
+	\shape #'((0 . 0.2)(0 . 0.3)(0 . 0.3)(0 . 0.2)) Slur e!\>( d!)\!
 % bars 136 to 140
 	des1\p
 	des\pp \mark \default
@@ -179,8 +179,8 @@ musicCelloMvtI = \relative c {
 	\clef tenor r4 f''\p\<( ges f)\!
 % bars 141 to 145
 	c'1\f\>
-	aes8\p( g f ees) \clef bass c( bes16 des c4)
-	c8( bes16 des c4) c8( bes16 des c4)
+	aes8-\tweak extra-offset #'(0 . 0.4) \p( g f ees) \clef bass c( bes16 des c4)
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur c8( bes16 des c4) c8( bes16 des c4)
 	aes8\p\< g16 g aes8 g16 g aes8 g16 g aes8 e!16 e\!
 	f8\< e16 e f8 e16 e f8 e16 e f8 bes,16 bes\! \mark \default 
 % bars 146 to 150
@@ -199,7 +199,7 @@ musicCelloMvtI = \relative c {
 	f\pp(
 	bes,)
 	bes2(\< a)\!
-	e\mf\>( f)\! \clef treble
+	\hairpinShorten #'(-0.5 . -1.5) e\mf\>( f)\! \clef treble
 	f''4\p( g) a(\< g8 f)\!
 % bars 161 to 165
 	f8( g4 f16 d) d2\>
