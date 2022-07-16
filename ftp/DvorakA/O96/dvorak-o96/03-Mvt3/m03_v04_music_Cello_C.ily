@@ -115,7 +115,7 @@ musicCelloMvtIII = \relative c {
 	c, c r4 c8 c
 	f16\pp f r8 f16 f r8 f16 f r8
 % bars 96 to 100
-	f16 f r8 f16 f r8 f16 f r8 \mark \default \key f \major
+	f16 f r8 f16 f r8 f16 f r8 \bar "||" \mark \default \key f \major
 	c'8\p r f4.-> d8
 	c d f4 r
 	c8 r f4.-> d8

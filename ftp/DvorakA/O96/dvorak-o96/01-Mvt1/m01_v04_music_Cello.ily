@@ -15,7 +15,7 @@ musicCelloMvtI = \relative c {
 		f~
 		f~
 % bars 6 to 10
-		f2~( f8\< a c\> a)\!
+		f2~( f8\< a\! c\> a)\!
 		f4. r8 r4 r8 f'8^\pizz
 		r a, r c r4 f8 f,
 		r4 r8 d_\crescmarkup r f\< a c\!
@@ -27,7 +27,7 @@ musicCelloMvtI = \relative c {
 		d,16\fz\<( f a d)\! d8. bes16-. a4 r8 a
 		d,8.\ff bes16 d8. bes16 d8. bes16 d8. bes16 
 % bars 16 to 20
-		d8._\dimmarkup bes16 d8. bes16\> d8. bes16 d8.\p bes16 \mark \default
+		d8._\dimD\> bes16 d8. bes16 d8. bes16 d8.\p bes16 \mark \default
 		d4~(_\piup d16 f a d) a4~( a16 g f d)
 		d8 r r4 r2
 		R1
@@ -57,8 +57,8 @@ musicCelloMvtI = \relative c {
 		e'\p e r e\> e e r e e e r e e e r e\!
 		g1\pp~
 % bars 41 to 45
-		g4\< f8( e d2\>)
-		e1\p\>_\dimmarkup
+		g4\< f8( e\! d2\>)
+		e1\p\>-\tweak extra-offset #'(3 . 4) _\dimmarkup
 		e,\! \mark \default
 		a\ppp
 		d
@@ -69,9 +69,9 @@ musicCelloMvtI = \relative c {
 		<<{r2 b~ b s}\\{d,1~ d2\< \oneVoice cis\!}>>
 		%<<{b'2) s}\\{d,2)\< cis\!}>>
 % bars 51 to 55
-		gis\f cis\>
+		gis\f \hairpinShorten #'(0 . 3) cis\>
 		fis2.\! b4
-		fis2._\dimD\> b,4 \mark \default
+		fis2._\dimmarkup b,4\> \mark \default
 		fis2.\pp( b4)
 		g!2.\<( c4)
 % bars 56 to 60
@@ -83,7 +83,7 @@ musicCelloMvtI = \relative c {
 % bars 61 to 65
 		a~\>
 		a4\pp r a^\pizz r
-		a r a r \mark \default
+		a r a r \markXoffset #-0.3 \mark \default
 	}
 	r4 fis2.\pp^\arco
 	fis fis4~
@@ -96,13 +96,13 @@ musicCelloMvtI = \relative c {
 % bars 71 to 75
 	e,( gis e gis) a( fis a fis) gis( cis gis cis) gis( bis gis bis) \mark \default
 	cis1\ff
-	cis16\fz cis cis4.\>~ cis2
-	cis'2\mf\>( e)
+	cis16\fz cis cis4.\>~ cis2\!
+	cis'2-\offset X-offset #-1 \mf\>( e)\!
 	e2.\p\> e8( cis)\!
 % bars 76 to 80
 	cis4\pp( cis,8) r cis4\<( cis,8)\! r
 	cis''8\f( cis,16) r cis8( cis,16) r cis8(\> cis'16) r cis8( cis,16)\! r
-	d8\ff( d'16) r\> d8( d'16) r_\dimmarkup d8( d,16) r d8( d,16)\! r
+	d8\ff( d'16) r\> d8( d'16) r-\tweak extra-offset #'(-2.5 . 3.5) _\dimmarkup d8( d,16) r d8( d,16)\! r
 	d''8\p( d,16) r d8(\> d,16) r d8( a'16) r a8( d,16)\! r \mark \default
 	d8-.\pp^\pizz[ a'-.] d,-.[ a'-.] d,-.[ a'-.] d,-.[ a'-.]
 % bars 81 to 85
@@ -156,7 +156,7 @@ musicCelloMvtI = \relative c {
 % bars 121 to 125
 	ees1~
 	ees \clef tenor
-	aes4\<(_\espressivoM des) ees( f)\!
+	aes4\<(^\espressivoM des) ees( f)\!
 	ees4.\>( des16 bes)\! bes2
 	aes8\<( des) des des ees4( f)\!
 % bars 126 to 130
@@ -168,8 +168,8 @@ musicCelloMvtI = \relative c {
 % bars 131 to 135
 	f8( e!) f-. f-. f-. f-. f-. f-.
 	ges(\< f) ges ges g--( g--) g(-- g--)\!
-	aes\<( f des aes) \clef bass aes( f des aes)\!
-	aes2\f( ges)
+	\hairpinShorten #'(0 . 4) aes\<( f des aes) \clef bass aes( f des aes)\!
+	aes2-\offset X-offset #-1 \f( ges)
 	e!\>( d!)\!
 % bars 136 to 140
 	des1\p
@@ -186,7 +186,7 @@ musicCelloMvtI = \relative c {
 % bars 146 to 150
 	\grace {s8} c2\f c,4.( c'8)
 	c2 c,4.( c'8)
-	\repeat tremolo 4 {ees16_\piuf( f)} \repeat tremolo 4 {ees16( f)}
+	\repeat tremolo 4 {ees16-\tweak extra-offset #'(-1.5 . -9) ^\piuf( f)} \repeat tremolo 4 {ees16( f)}
 	ees16( f ees f) ees(\< des c bes) bes2\!
 	c16 c r c  c c r c  c c r c  c c r c
 % bars 151 to 155
@@ -194,12 +194,12 @@ musicCelloMvtI = \relative c {
 	ees1\p~
 	ees4 des8(_\dimmarkup c bes2)
 	c1\>
-	c, \mark \default
+	\tempoXoffset #-0.5 c, \mark \default
 % bars 156 to 160
 	f\pp(
 	bes,)
 	bes2(\< a)\!
-	e\mf\>( f)\! \clef tenor
+	e\mf\>( f)\! \clef treble
 	f''4\p( g) a(\< g8 f)\!
 % bars 161 to 165
 	f8( g4 f16 d) d2\>
@@ -209,13 +209,13 @@ musicCelloMvtI = \relative c {
 	bes2 a
 % bars 166 to 170
 	f4( g8 d) c\<( f a c)(
-	c)\ff\> a-. f-. c-. \clef bass a8(_\dimD f \tuplet 3/2 {e c c,)} \mark \default
+	\tempoXoffset #-1 c)\ff\> a-. f-. c-. \clef bass a8(_\dimD f \tuplet 3/2 {e c c,)} \markXoffset #-0.3 \mark \default
 	f1\>~
 	f\p\>
 	f4\! a d\p( f8) r
 % bars 171 to 175
-	a,4(_\dimmarkup d8) r c2\p\>~
-	c4\pp( c,2.)
+	a,4(_\dimmarkup d8) r << c2~ {\hairpinShorten #'(-0.5 . -2.5) s4\p\> s\!} >>
+	\tempoXoffset #-1.5 c4\pp( c,2.)
 	f8. f16 d c r8 f8._\crescmarkup f16\! d c r8
 	f16\< f d c f f d c f f d c f f d c\!
 	f2\ff f16 f d c f f d c 

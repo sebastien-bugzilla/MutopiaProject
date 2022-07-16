@@ -18,36 +18,36 @@ musicCelloMvtII = \relative c {
 	d\fp r r d\> r r\!
 	<d a'> r r\< d r r\!
 	c\mf r r <c, g'> r r
-	<c g'>_\dimD\> r r c' r r\! \clef tenor \mark \default
+	<c g'>\> r_\dimmarkup r c' r r\! \clef tenor \mark \default
 % bars 11 to 15
 	a''4.\pp\<~^\arco a8 g( f16 d\!)
 	d4.~ d16\< a a( d) d( e)\!
 	f4( d8) c4\prall\> a16( c\!)
-	d4. r8 d32\<([ a bes c] \tuplet 5/4 { d[ e f g gis])}\!
+	d4. r8 d32\<([ a bes! c!] \tuplet 5/4 { d[ e f g gis])}\!
 	a4.\sfz\>~ a8 g( f16 d)\!
 % bars 16 to 20
 	d4.\<~ d16 a a( d) e( f)\!
 	g4\mf( f16_\crescmarkup e) e4 \tuplet 3/2 {d16( c a) }
-	c4.\>~ c8\p r r \clef bass \mark \default
+	c4.\>~ c8\p r r \clef bass \markXoffset #-0.3 \mark \default
 	cis,\pp^\pizz r r cis r r 
 	cis r r cis r r 
 % bars 21 to 25
 	cis r r cis r r 
 	cis\<_\moltocrescmarkup r r cis[ r cis\!]
 	f8\f f, r bes[\> r bes]\!
-	d\p r d b_\crescmarkup[ r b]
-	c[ r cis]_\crescD\< d[ r dis]\!
+	d-\offset X-offset #0.5 \p\< r d b[ r b]\!
+	c[ r cis]-\offset X-offset #-2 _\crescD\< d[ r dis]\!
 % bars 26 to 30
 	e\mf r r e\<[ r e]\!
 	f\f r r g\>_\dimmarkup r r\!
 	a\> r r\! b\p[ r b]
 	c[ r c\>] c_\dimmarkup[ r c]\!
-	f,\pp[ r c r f,] r \clef tenor \mark \default
+	f,\pp[ r c r f,] r \clef tenor \markXoffset #-0.3 \mark \default
 % bars 31 to 35
 	g''4\p^\arco\< f16( e) g4 \tuplet 3/2 {f16( a e)}\!
 	g4.~ g8 r g
 	g4\<( f16 e)_\crescmarkup g4 f32( a) a( e)\!
-	g4.~_\crescmarkup g8 gis4\<
+	g4.~_\crescmarkup g8 \hairpinShorten #'(-1 . 0) gis4\<
 	a8\f( c) bes16( a) g8( f d)
 % bars 36 to 40
 	d4.~\> d16 a a( d)\! e( f)
@@ -57,9 +57,9 @@ musicCelloMvtII = \relative c {
 	a4.\> g8\p\>( f d)\!
 % bars 41 to 45
 	c4\>(~ c16 a') a4.\pp
-	a4.~ a8 r r \clef bass \mark \default
+	a4.~ a8 r r \clef bass \markXoffset #-0.3 \mark \default
 	d,,8^\pizz\mp r r d\< r d16 fis\!
-	c8\f r r c\> r r
+	c8\f r r \hairpinShorten #'(0 . -1.5) c\> r r\!
 	d\p r r d\< r d16 fis\!
 % bars 46 to 50
 	c8\fz r r c\> r r\!
@@ -71,7 +71,7 @@ musicCelloMvtII = \relative c {
 	ees r r cis_\crescD\< r r
 	d r r\! d a f
 	bes_\crescmarkup f f' bes, f f'
-	f,\< f' r b, b'! r\!
+	f,\< f' r b, b'!\! r
 	<c,, c'>\ff r r q r r
 % bars 56 to 60
 	q r r q r r_\dimmarkup
@@ -100,7 +100,7 @@ musicCelloMvtII = \relative c {
 % bars 76 to 80
 	f, r r f'_\dimmarkup r r
 	f, r r f'\mp r r
-	d r r_\dimD\> g, r r\!
+	d r \hairpinShorten #'(-0.5 . -1) r_\dimD\> g, r r\!
 	a r r b[\> r b]\!
 	c\pp r r des r r
 % bars 81 to 85
@@ -118,7 +118,7 @@ musicCelloMvtII = \relative c {
 % bars 91 to 95
 	d4.~ d8 c( bes16 c) \clef bass
 	d4.~ d8\< a( g16 f)\!
-	d4.\>~ d8 a( g16 f)\!
+	\once \stemUp d4.\>~ d8 a( g16 f)\!
 	d8( a' g16 f) d8\ppp( a' g16 f)
 	d2.~_\morendo
 % bars 96 to 97

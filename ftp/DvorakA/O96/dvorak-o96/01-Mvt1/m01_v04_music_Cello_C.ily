@@ -27,7 +27,7 @@ musicCelloMvtI = \relative c {
 		d,16\fz\<( f a d)\! d8. bes16-. a4 r8 a
 		d,8.\ff bes16 d8. bes16 d8. bes16 d8. bes16 
 % bars 16 to 20
-		d8._\dimmarkup bes16 d8. bes16\> d8. bes16 d8.\p bes16 \mark \default
+		d8._\dimmarkup\> bes16 d8. bes16\> d8. bes16 d8.\p bes16 \mark \default
 		d4~(_\piup d16 f a d) a4~( a16 g f d)
 		d8 r r4 r2
 		R1

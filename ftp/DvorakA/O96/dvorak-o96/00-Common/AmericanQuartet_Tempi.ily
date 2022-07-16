@@ -101,8 +101,11 @@ tempiPartMvtI = {
 	% bar 155
 	%%%%%%%%%%%%%%%%%%%%%%
 	s1*95
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI violinII viola) {
 		\tempo \markup { \italic \medium "ritard." }
+	}
+	\tag #'(cello) {
+		\tempo \markup { \italic \medium "rit." }
 	}
 	s1
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -115,10 +118,10 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 167
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI  cello) {
+	\tag #'(violinI) {
 		\tempo \markup { \italic \medium \column { \lower #1.3 "molto" "ritard."}}
 	}
-	\tag #'(violinII viola) {
+	\tag #'(violinII viola cello) {
 		\tempo \markup { \italic \medium "molto ritard."}
 	}
 	s1

@@ -32,13 +32,13 @@ musicCelloMvtIV = \relative c {
 	c-. b-.\!
 	b-. b-.
 % bars 21 to 25
-	c8\f r c c,
+	\startMeasureCount c8\f r c c,
 	c' r c c,
 	c' r c c,
-	c' r c c, \mark \default
+	c' r c c, \stopMeasureCount \mark \default
 	f4\fp r8_\dimmarkup c'^\pizz
 % bars 26 to 30
-	f,4 r8 c'
+	\startMeasureCount f,4 r8 c'
 	f,4 r8 c'
 	f,4 r8 c'
 	f,4\p r8 c'
@@ -46,7 +46,7 @@ musicCelloMvtIV = \relative c {
 % bars 31 to 35
 	f,4 r8 c'
 	f,4 r8 c'
-	f,4 r8 c'\pp
+	f,4 r8 c'\pp \stopMeasureCount
 	f4 r8 c
 	f4 r8 c
 % bars 36 to 40
@@ -244,7 +244,7 @@ musicCelloMvtIV = \relative c {
 % bars 196 to 200
 	a2)(\>
 	a,4)\p r
-	R2 \mark \default
+	R2 \markXoffset #-0.3 \mark \default
 	a'(_\mpespressivo\<
 	d)\!
 % bars 201 to 205
@@ -256,11 +256,11 @@ musicCelloMvtIV = \relative c {
 % bars 206 to 210
 	c4 b)\!
 	a2\p
-	d4\<--~ d--\!
+	d4\<--( d--)\!
 	f( e)~
 	e d8( a)
 % bars 211 to 215
-	a4_\cres( e'~\<
+	a4( e'~\<
 	e d)\!
 	\tuplet 3/2 {c8(\>_\dimmarkup b a)} a4\p~
 	a\> b8( g!)\!
@@ -280,7 +280,7 @@ musicCelloMvtIV = \relative c {
 % bars 226 to 230
 	e,8. e16 e8 r
 	e' r e-. e,-.
-	e'8.-> e16 e8-. e,-.
+	e'8.->_\crescmarkup e16 e8-. e,-.
 	e'8. e16 e8 e
 	f_\crescmarkup f fis fis\<
 % bars 231 to 235
@@ -308,7 +308,7 @@ musicCelloMvtIV = \relative c {
 	<a e'> r <a e'> r
 	f'-.[ c-. f-.\> c-.]
 % bars 251 to 255
-	f-.[ c-. f-. c-.]
+	f-.[ c-. f-. c-.]\!
 	des2\ppp~
 	des~
 	des~
@@ -330,10 +330,10 @@ musicCelloMvtIV = \relative c {
 	ees,)\! r r4
 	r des'8(\fp\> c
 	ees,)\! r r4
-	e!8_\crescmarkup r \tuplet 3/2 {e e e}
+	\tupletUp e!8_\crescmarkup r \tuplet 3/2 {e e e}
 % bars 271 to 275
 	e\< r \tuplet 3/2 {e e e}
-	f r \tuplet 3/2 {f f f\!}
+	f r \tuplet 3/2 {f f f\!} \tupletNeutral
 	bes,\! r \tuplet 3/2 {bes_\crescmarkup bes bes}
 	b\< r \tuplet 3/2 {b b b}
 	b r \tuplet 3/2 {b b b\!}
@@ -341,8 +341,8 @@ musicCelloMvtIV = \relative c {
 	c\f([ a c,) c'-.]
 	c([_\dimmarkup\> a c,) c'-.]
 	c([ a c,) c'-.]\!
-	c([ g c,) c'-.] \mark \default
-	f,2\p~
+	c([ g c,) c'-.] \markXoffset #-0.3 \mark \default
+	\startMeasureCount f,2\p~
 % bars 281 to 285
 	f~
 	f~
@@ -351,14 +351,14 @@ musicCelloMvtIV = \relative c {
 	f~
 % bars 286 to 290
 	f~\>
-	f\!
-	a\pp~
+	f\! \stopMeasureCount
+	\startMeasureCount a\pp~
 	a~
 	a~
 % bars 291 to 295
 	a~
 	a~\<
-	a\!
+	a\! \stopMeasureCount
 	g\fp\>~
 	g\!
 % bars 296 to 300
@@ -370,7 +370,7 @@ musicCelloMvtIV = \relative c {
 % bars 301 to 305
 	f8\< r c r
 	a r f r
-	a r c f
+	a r c f\!
 	bes,\fz r r4
 	bes8\> r g bes
 % bars 306 to 310
@@ -380,14 +380,14 @@ musicCelloMvtIV = \relative c {
 	c, r c' r
 	f,\p r f'^\arco f,
 % bars 311 to 315
-	f r f' f,
+	\startMeasureCount f r f' f,
 	f r f' f,
 	f r f' f,
 	f r f'_\piucresc f,
 	f r f' f,
 % bars 316 to 320
 	f r f' f,
-	f\< r f' f,\!
+	f\< r f' f,\! \stopMeasureCount 
 	f-.\f aes-. des,4->
 	aes'-> des->\<
 	aes'-> des,->\!
@@ -396,7 +396,7 @@ musicCelloMvtIV = \relative c {
 	\tuplet 3/2 {c'( a!) f-.} c r
 	\tuplet 3/2 {c'( a) f-.} c r
 	\tuplet 3/2 {c'( a) f-.} c c' \mark \default
-	f,4\ffp \tuplet 3/2 {f8\> f f\!}
+	\startMeasureCount f,4\ffp \tuplet 3/2 {f8\> f f\!}
 % bars 326 to 330
 	f4 \tuplet 3/2 {f8 f f}
 	f4 \tuplet 3/2 {f8 f f}
@@ -405,10 +405,10 @@ musicCelloMvtIV = \relative c {
 	f4 \tuplet 3/2 {f8 f f}
 % bars 331 to 335
 	f4 \tuplet 3/2 {f8\< f f}
-	f4 \tuplet 3/2 {f8 f f\!}
+	f4 \tuplet 3/2 {f8 f f\!} \stopMeasureCount 
 	des2\f->
-	d!->\fz
-	d4->_\piuf e!->
+	d!-\offset X-offset #0.1 ->\fz
+	d4->-\offset X-offset #-0.1 _\piuf e!->
 % bars 336 to 340
 	f-> fis->
 	g-> a->

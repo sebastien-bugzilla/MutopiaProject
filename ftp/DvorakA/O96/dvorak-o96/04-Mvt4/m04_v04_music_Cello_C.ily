@@ -260,7 +260,7 @@ musicCelloMvtIV = \relative c {
 	f( e)~
 	e d8( a)
 % bars 211 to 215
-	a4_\cres( e'~\<
+	a4( e'~\<
 	e d)\!
 	\tuplet 3/2 {c8(\>_\dimmarkup b a)} a4\p~
 	a\> b8( g!)\!
@@ -280,7 +280,7 @@ musicCelloMvtIV = \relative c {
 % bars 226 to 230
 	e,8. e16 e8 r
 	e' r e-. e,-.
-	e'8.-> e16 e8-. e,-.
+	e'8.->_\crescmarkup e16 e8-. e,-.
 	e'8. e16 e8 e
 	f_\crescmarkup f fis fis\<
 % bars 231 to 235

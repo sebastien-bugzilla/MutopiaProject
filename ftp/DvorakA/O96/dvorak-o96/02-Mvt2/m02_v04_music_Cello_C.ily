@@ -23,7 +23,7 @@ musicCelloMvtII = \relative c {
 	a''4.\pp\<~^\arco a8 g( f16 d\!)
 	d4.~ d16\< a a( d) d( e)\!
 	f4( d8) c4\prall\> a16( c\!)
-	d4. r8 d32\<([ a bes c] \tuplet 5/4 { d[ e f g gis])}\!
+	d4. r8 d32\<([ a bes! c!] \tuplet 5/4 { d[ e f g gis])}\!
 	a4.\sfz\>~ a8 g( f16 d)\!
 % bars 16 to 20
 	d4.\<~ d16 a a( d) e( f)\!
@@ -35,7 +35,7 @@ musicCelloMvtII = \relative c {
 	cis r r cis r r 
 	cis\<_\moltocrescmarkup r r cis[ r cis\!]
 	f8\f f, r bes[\> r bes]\!
-	d\p r d b_\crescmarkup[ r b]
+	d\p\< r d b[ r b]\!
 	c[ r cis]_\crescD\< d[ r dis]\!
 % bars 26 to 30
 	e\mf r r e\<[ r e]\!

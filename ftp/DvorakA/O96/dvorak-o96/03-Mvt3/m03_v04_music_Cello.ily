@@ -31,13 +31,13 @@ musicCelloMvtIII = \relative c {
 	r4 <d' a'>8\mf <d a'> <d a'>\noBeam r8
 	r4 <f c'>8\> <f c'> <f c'>\noBeam\! r8
 % bars 21 to 25
-	c'8->\p d a4 r
+	\startMeasureCount c'8->\p d a4 r
 	c8-> d a4 r
 	c8-> d a4 r
 	c8-> d a4 r
 	c8-> d a4 r
 % bars 26 to 31
-	c8-> d a4 r
+	c8-> d a4 r \stopMeasureCount
 	c8-> d a4 g8( f)
 	f4-. f,-. r \mark \default
 	R2.*3
@@ -56,13 +56,13 @@ musicCelloMvtIII = \relative c {
 	f'4\mf( d2->)
 	f4( d2)->
 	f4( d2->)
-	d4\>( f2->)
+	d4\>( f2->)\!
 	c2.\p\>
 % bars 46 to 50
 	c\!
 	c\>
-	f,\pp\fermata^\fine \bar "||" \key f \minor \mark \default
-	R2.*8
+	f,\pp\fermata-\offset X-offset #-1.2 ^\fine \bar "||" \key f \minor \mark \default
+	\tempoXoffset #-2 R2.*8
 	
 % bars 51 to 55
 	
@@ -83,7 +83,7 @@ musicCelloMvtIII = \relative c {
 	g2(\> aes4)
 	c2.
 	aes\p\>
-	bes2( g4)
+	bes2( g4)\!
 % bars 71 to 75
 	f2.\pp(
 	f,2) r4 \mark \default
@@ -110,12 +110,12 @@ musicCelloMvtIII = \relative c {
 	des, des_\dimmarkup r4 des8 des
 % bars 91 to 95
 	des des r4 des8\> des
-	aes' aes r4 aes8 aes
+	aes' aes r4 aes8 aes\!
 	c\p c r4 c8\> c
-	c, c r4 c8 c
+	c, c r4 c8 c\!
 	f16\pp f r8 f16 f r8 f16 f r8
 % bars 96 to 100
-	f16 f r8 f16 f r8 f16 f r8 \mark \default \key f \major
+	f16 f r8 f16 f r8 f16 f r8 \bar "||" \mark \default \key f \major
 	c'8\p r f4.-> d8
 	c d f4 r
 	c8 r f4.-> d8
@@ -139,14 +139,14 @@ musicCelloMvtIII = \relative c {
 	c8\mf d a4 r
 	c'8\f d f4 r
 % bars 116 to 120
-	c8\ff d a4 r
+	\startMeasureCount c8\ff d a4 r
 	c8\f d a4 r
 	c8 d a4 r
 	c8 d a4 r
 	c8 d a4 r
 % bars 121 to 125
 	c8 d a4 r
-	c8 d a4 r
+	c8 d a4 r \stopMeasureCount 
 	c8 d a4 g8( f)
 	f4-. f,-. r \mark \default
 	r4 d''8\f d d4
@@ -175,7 +175,7 @@ musicCelloMvtIII = \relative c {
 	d4(\> c2)
 	f4\pp( d4. c8)
 % bars 146 to 150
-	a4( f d)~
+	a4( f d)^~
 	d8 c a4.( g8
 	f2.)\fermata \bar "||" \key f \minor \mark \default
 	c''2.\pp(
@@ -188,14 +188,14 @@ musicCelloMvtIII = \relative c {
 	c2( des4
 % bars 156 to 160
 	aes2) r4
-	aes,8\f[ r16 g] g8[ r16 f] f4
+	\startMeasureCount aes,8\f[ r16 g] g8[ r16 f] f4
 	aes8\fz[ r16 g] g8[ r16 f] f4
 	aes8\fz[ r16 g] g8[ r16 f] f4
 	aes8\fz[ r16 g] g8[ r16 f] f4
 % bars 161 to 165
 	aes8\fz[ r16 g] g8[ r16 f] f4
 	aes8\fz[ r16 g] g8[ r16 f] f4
-	aes8\fz[ r16 g] g8[ r16 f] f4
+	aes8\fz[ r16 g] g8[ r16 f] f4 \stopMeasureCount
 	c'8\fz[ r16 bes] bes8[ r16 aes] aes4
 	f8\fz[ r16 ees] ees8[ r16 des] des4
 % bars 166 to 170
@@ -227,7 +227,7 @@ musicCelloMvtIII = \relative c {
 	c4-> c8 c des des
 	aes-> aes aes4 r
 	aes-> aes8_\moltodim aes aes aes
-	bes4-> aes8 aes aes\> aes
+	bes4->\> aes8 aes aes aes
 % bars 191 to 195
 	g4-> g8 g\! aes aes
 	c\p c c4 r\>
