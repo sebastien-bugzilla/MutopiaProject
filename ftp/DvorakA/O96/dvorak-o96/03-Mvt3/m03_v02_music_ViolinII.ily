@@ -128,11 +128,11 @@ musicViolinIIMvtIII = \relative c {
 	a) r bes(
 	a) r bes(
 	a) r r
-	r a'\<( bes~\!
+	r a'\<( \stemUp bes~\!
 % bars 106 to 110
-	bes\> a)\! r
-	r a(\< bes~\!
-	bes\> f)\! r
+	bes\> \stemNeutral a)\! r
+	r a(\< \stemUp bes~\!
+	bes\> \stemNeutral f)\! r
 	f'4\pp( g-> d8 e)
 	f4( g-> d8 e)
 % bars 111 to 115
@@ -167,7 +167,7 @@ musicViolinIIMvtIII = \relative c {
 	c8 d a4 g8( f)
 % bars 136 to 140
 	f4 r r \mark \default
-	c'4-\offset X-offset #0.5 \ff( f4.-> d8-.)
+	c'4-\tweak extra-offset #'(0.5 . 0.8) \ff( f4.-> d8-.)
 	c( d f2)
 	c4( f4.-> d8-.)
 	c8( d <f, a>2)
@@ -176,7 +176,7 @@ musicViolinIIMvtIII = \relative c {
 	f4( g d8_\dimmarkup e)
 	f4( g d8 e)
 	f4\>( g d8 e)
-	\tempoXoffset #-2 f2.\pp\(~
+	\shape #'((0 . -0.4)(0 . -0.5)(0 . -0.5)(0 . 0)) PhrasingSlur \tempoXoffset #-2 f2.\pp\(~
 % bars 146 to 150
 	f(
 	c')(

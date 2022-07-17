@@ -17,8 +17,8 @@ musicViolinIIMvtII = \relative c {
 	d16( f8 f-.) f16-. d16\<( f8 f-.) f16-.\!
 	d16\fp( f8 f-.) f16-. d16\>( f8 f-.) f16-.\!
 	d16( f8 f-.) f16-. d16\<( f8 f-.) f16-.\!
-	c16\mf( e8 e-.) e16-. c16( e8 e-.) f16-.
-	c16_\dimD\>( e8 e-.) e16-. c16( e8 e-.) g16-.\! \mark \default
+	\shape #'((0 . 0.2)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur c16-\tweak extra-offset #'(-0.4 . 0.2) \mf( e8 e-.) e16-. c16( e8 e-.) f16-.
+	c16_\dimD\>( e8 e-.) e16-. c16( e8 e-.) g16-.\! \markXoffset #-0.3 \mark \default
 % bars 11 to 15
 	f16\pp\(( a) a( d) d( a)\) f\(( a) a( d) d( a)\)
 	f\(( a) a( d) d( a)\) f\(( a) a( d) d( a)\)
@@ -28,12 +28,12 @@ musicViolinIIMvtII = \relative c {
 % bars 16 to 20
 	f\<\(( a) a( d) d( a)\) f\(( a) a( d) d( a)\)\!
 	e\mf\(( g) g( c) c( g)\) e_\crescmarkup\(( g) g( c) c( f,)\)
-	e\>\(( g) g( c) c( g)\) e\p\(( g) g( c) c( g)\) \mark \default
+	e\>\(( g) g( c) c( g)\) e\p\(( g) g( c) c( g)\) \markXoffset #-0.3 \mark \default
 	g8 r r r4 r8
 	bes,8(\p\<^\espressivoM e f16 e)\! g8\f\>( e'8. g,16)\!
 % bars 21 to 25
 	g8\p r r r4 r8
-	bes,8\<( e f16 e) g8\f\<( e' f)\!
+	\shape #'((0 . 0.3)(0 . 0.5)(0 . 0.4)(0 . 0)) Slur bes,8-\tweak rotation #'(3 -1 0) \<( e f16 e) g8\f\<( e' f)\!
 	<c f>8.\f-> a'16( g f) <d, d'>4\>( <d bes'>8)\!
 	<f a>4.\p~ q8\< q q
 	q4\mf <a f'>8-\offset X-offset #-0.6 _\crescmarkup~ q q->\< q->
@@ -42,7 +42,7 @@ musicViolinIIMvtII = \relative c {
 	<bes g'>16\f( <a f'>) q4 \hairpinShorten #'(0.5 . 0) <g ees'>4.\>_\dimmarkup
 	<f d'> \set doubleSlurs = ##t <f d'>4\p( g8)
 	<f a>4( \hairpinShorten #'(0.5 . -0.5) <a f'>8)\> <a e'>4.\! \set doubleSlurs = ##f
-	<f c'>4.\pp~ q4 r8  \mark \default
+	<f c'>4.\pp~ q4 r8 \mark \default
 % bars 31 to 35
 	e16-\offset X-offset #-1 \p\(( g,) g( bes) a( g)\) e'\(( g,) g( bes) a( g)\)
 	e'\(( g,) g( bes) a( g)\) e'\(( g,) g( bes) a( g)\)
@@ -56,7 +56,7 @@ musicViolinIIMvtII = \relative c {
 	c,\(( f) f( c) a'8\) bes,16_\dimmarkup\(( ees) ees( bes) bes'8\)
 	a,16\>\(( d) d( a) a'8\)\! d,16\p\(( f) f( d) f8\)
 % bars 41 to 45
-	c16\((\> f) f( c) c( f)\) c\pp\(( c') c( c,) c( c')\)
+	\hairpinShorten #'(0 . 1) c16\((\> f) f( c) c( f)\)\! \shape #'((0 . 0)(0 . 0.5)(0 . 0)(0 . 0)) PhrasingSlur c\pp\(( c') c( c,) c( c')\)
 	f,\(( c') c( a) a( f)\) f8 r r \mark \default
 	R2.*1
 	r16 \hairpinShorten #'(0 . 1) fis\<( ees'8.[ d16])\! \hairpinShorten #'(0 . -1) d\mf\>( c ees4)\!
@@ -100,7 +100,7 @@ musicViolinIIMvtII = \relative c {
 % bars 76 to 80
 	<f, a>4. <<{a8(_\dimmarkup bes a)}\\{f4.}>>
 	a8( d c) a\mp( gis a)
-	a4. a8_\dimD\>( g! a)\!
+	a4. \hairpinShorten #'(-0.5 . -0.5) a8-\offset X-offset #-1.5 _\dimD\>( g! a)\!
 	a4. a8\>( g a)\!
 	a4.\pp aes8( g aes)
 % bars 81 to 85

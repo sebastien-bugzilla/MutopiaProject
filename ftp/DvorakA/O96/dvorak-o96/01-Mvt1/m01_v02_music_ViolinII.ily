@@ -27,7 +27,7 @@ musicViolinIIMvtI = \relative c {
 		d8 r d16\fz\<(\upbow e f g)\! a4( cis,)
 		d8->\ff[ d,-.] d'->[ d,-.] d'->[ d,-.] d'->[ d,-.]
 % bars 16 to 20
-		d16\>( f a) d-. d,( f a) d-. d,( f a) d-. d,\p( f a) d-. \mark \default
+		d16\>( f a) d-. d,( f a) d-. d,( f a) d-. d,\p( f a) d-. \markXoffset #-0.3 \mark \default
 		d,8-.(\p d-. d-. d-.) d-.( d-. d-. d-.)
 		d-.( d-. d-. d-.) d-.( d-. d-. d-.)
 		d'4\pp(~ d16 f a d) a4~( a16 g f d)
@@ -78,23 +78,23 @@ musicViolinIIMvtI = \relative c {
 		d( e d e)\! e,\f( e' cis a)
 		fis( b fis b) g!( cis g e)
 		d( fis ais-\tweak extra-offset #'(0 . 2.8) _\dimmarkup g b fis! a d,)
-		\tempoXoffset #-2 << {b2( gis)} {s2\> s4 s\p}>>
+		\tempoXoffset #-2 << {b2( gis)} {s2\> s4 s-\tweak extra-offset #'(0 . 0.7) \p}>>
 		a8\p( cis4 e8) fis8.( a16 fis4)
 % bars 61 to 65
-		e8.\>( cis16_\dimmarkup a8. cis16 e2)\!
+		e8.\>( cis16-\tweak extra-offset #'(0 . 0.3) _\dimmarkup a8. cis16 e2)\!
 		a2.\pp g!8( e
 		a2.) g8( e) \mark \default
 	} 
 	\stemUp a16\pp( c a c a c ees, c' \repeat tremolo 4 {a c)}
 	a16( c a c a c ees, c' \repeat tremolo 4 {a c)}
 % bars 66 to 70
-	a( c ees, c' a c ees, c' \repeat tremolo 4 {a c)}
+	a( c ees, c' a c ees, c' \repeat tremolo 4 {\offset positions #'(0 . -0.5) Beam a c)}
 	\repeat tremolo 4 {aes(_\crescmarkup ees\!} \repeat tremolo 4 {aes ees)} \stemNeutral
 	cis8\<( e!4 gis8-.) a!8.( cis16 a4)\!
 	cis4.\mf( dis16\< cis) gis8_( gis'4) gis,8-.\!
 	<cis gis'>8\f r <fis, cis' fis> r <e cis' e> r <gis dis'> r
 % bars 71 to 75
-	cis4.( dis16\< cis) gis8_( gis'4) gis,8\! \mark \default
+	cis4.( dis16\< cis) gis8_( gis'4) gis,8\! \markXoffset #-0.3 \mark \default
 	<gis, e'>1\ff
 	q16\fz-\tweak extra-offset #'(0 . 0.5) \> q q4.~ q2\!
 	gis'8\mf gis4 gis\> gis gis8~
@@ -138,11 +138,11 @@ musicViolinIIMvtI = \relative c {
 % bars 106 to 110
 	\tuplet 3/2 4 {aes,,8\<( bes c) c4.:8\! aes8\<( bes c) c4.:8\!}
 	\tuplet 3/2 4 {aes8\<( bes c) c4.:8\! aes8\<( bes c) c4.:8\!} 
-	<<{d4 \tuplet 3/2 {d4.:8_\dimmarkup} d4 \tuplet 3/2 {d4.:8}}\\{\tuplet 3/2 4 {aes8( bes c) c4.:8 aes8( bes c) c4.:8} }>>
+	<<{d4 \tuplet 3/2 4 {<c d>4.:8-\offset X-offset #-0.8 _\dimmarkup} d4 \tuplet 3/2 4 {<c d>4.:8}}\\{\tuplet 3/2 4 {aes8( bes c)} s4 \tuplet 3/2 4 {aes8( bes c)} s4 }>>
 	f1\p\>
 	f\pp
 % bars 111 to 115
-	b, \mark \default
+	b, \markXoffset #-0.3 \mark \default
 	\repeat tremolo 4 {a'16\ppp( f} \repeat tremolo 4 {a f)}
 	\repeat tremolo 4 {a16( f} \repeat tremolo 4 {a f)}
 	\repeat tremolo 4 {a16( f} \repeat tremolo 4 {a f)}
@@ -173,7 +173,7 @@ musicViolinIIMvtI = \relative c {
 	aes4.( ces8\>) aes4( ges)\!
 % bars 136 to 140
 	f8\p r aes16-.\> aes-. f( aes) aes8 r aes16-. aes-. f( aes)\!
-	aes8\pp r aes16-. aes-. f( aes) aes8 r aes16-. aes-. f( aes) \mark \default
+	aes8\pp r aes16-. aes-. f( aes) aes8 r aes16-. aes-. f( aes) \markXoffset #-0.3 \mark \default
 	aes'8\fz( g\> f c)\! aes4\p aes16\(( f) f( ees)\)
 	aes8\( g aes16( f) f( ees)\) aes8\( g aes16( f) f( ees!)\)
 	aes8( c) c\prall( bes) aes\prall\<( ges) f(\prall des)\!
@@ -182,7 +182,7 @@ musicViolinIIMvtI = \relative c {
 	c\fp c r bes aes( f) r f f8(\< ees) c4\!
 	f8\<( ees c4)\! f8\<( ees c4)\!
 	c'16\p\< c r des c c r des c c r des c c\! r bes
-	aes aes\< r bes aes aes r bes aes aes r bes aes aes\! r g \mark \default
+	aes aes\< r bes aes aes r bes aes aes r bes aes aes\! r g \markXoffset #-0.3 \mark \default
 % bars 146 to 150
 	aes4.\f( c8) bes16\fz bes r aes! g g r bes
 	aes4.\<( c8)\! bes16\fz bes r aes g g r bes
@@ -209,7 +209,7 @@ musicViolinIIMvtI = \relative c {
 	r8 <f d'>16 q r8 q16 q r8 <f c'>16 q r8 q16 q
 % bars 166 to 170
 	r8 <f d'>16 q r8 q16 q r8 <f c'>16 q r8 q16 q
-	\tempoXoffset #-2 <f a>2.\ff \hairpinShorten #'(-0.5 . -1) \tuplet 3/2 {g8-\offset X-offset #-1 _\dimD\>( bes e,)\!} \mark \default
+	\tempoXoffset #-2.5 <f a>2.\ff \hairpinShorten #'(-0.5 . -1) \tuplet 3/2 {g8-\offset X-offset #-1 _\dimD\>( bes e,)\!} \mark \default
 	<f a>1\>~
 	<f a>4.\p r8 r2
 	a8( c4 a8 f4.\p) r8

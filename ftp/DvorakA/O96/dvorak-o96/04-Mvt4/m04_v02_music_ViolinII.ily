@@ -286,7 +286,7 @@ musicViolinIIMvtIV = \relative c {
 % bars 231 to 235
 	b8.->_\fzmarkup c16 b8. c16
 	bes!8.->_\fzmarkup c16 bes8. c16
-	bes8.->_\fzmarkup c16 bes8 <g bes>\! \mark \default
+	bes8.->_\fzmarkup c16 bes8 <g bes>\! \markXoffset #-0.3 \mark \default
 	<f a>\fpp c c'-> a-.
 	f-. c-. c'-> a-.
 % bars 236 to 240
