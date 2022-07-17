@@ -88,7 +88,7 @@ musicViolinIIMvtI = \relative c {
 	\stemUp a16\pp( c a c a c ees, c' \repeat tremolo 4 {a c)}
 	a16( c a c a c ees, c' \repeat tremolo 4 {a c)}
 % bars 66 to 70
-	a( c ees, c' a c ees, c' \repeat tremolo 4 {\offset positions #'(0 . -0.5) Beam a c)}
+	a( c ees, c' a c ees, c' \repeat tremolo 4 {\once \offset positions #'(0 . -0.5) Beam a c)}
 	\repeat tremolo 4 {aes(_\crescmarkup ees\!} \repeat tremolo 4 {aes ees)} \stemNeutral
 	cis8\<( e!4 gis8-.) a!8.( cis16 a4)\!
 	cis4.\mf( dis16\< cis) gis8_( gis'4) gis,8-.\!
