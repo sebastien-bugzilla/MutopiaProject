@@ -27,7 +27,7 @@ musicViolinIMvtI = \relative c {
 		d8 r8 r4 a16(\fz\< d f a)\! a8. e16-.
 		d\ff( f a) d-. d,( f a) d-. d,( f a) d-._\dimmarkup d,( f a) d-. 
 % bars 16 to 20
-		<< d,,1~->^^\fz\> {s2 s_\dimmarkup} >> \mark \default
+		<< d,,1~^>\fz\> {s2 s_\dimmarkup} >> \mark \default
 		d4\! r4 r2
 		f2\p( bes,)
 		d8-.( d-. d-. d-.) d-.( d-. d-. d-.)

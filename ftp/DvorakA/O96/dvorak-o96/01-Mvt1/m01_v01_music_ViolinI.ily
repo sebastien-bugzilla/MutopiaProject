@@ -27,7 +27,7 @@ musicViolinIMvtI = \relative c {
 		d8 r8 r4 a16(\fz\< d f a)\! a8. e16-.
 		d\ff( f a) d-. d,( f a) d-. d,( f a) d-._\dimmarkup d,( f a) d-. 
 % bars 16 to 20
-		d,,1~->^^\fz\> \mark \default
+		d,,1~^>\fz\> \mark \default
 		d4\! r4-\tweak extra-offset #'(-10 . 5.6) _\dimmarkup r2
 		f2\p( bes,)
 		d8-.( d-. d-. d-.) d-.( d-. d-. d-.)
@@ -41,7 +41,7 @@ musicViolinIMvtI = \relative c {
 % bars 26 to 30
 		e16\fz-. e-. r \dynamicSpacing #'(-0.5 . 0.5) d-.\p \textLengthOn c-.-\tweak X-offset #-1 _\fzshort \dynamicSpacing #'(-0.5 . 0.5) c-.\p r b( a8 g! e4) \textLengthOff
 		a8( g e4) a8( g e4)
-		e8(\< g) g(\prall f) e(\prall d) c(\prall a)\!
+		\hairpinShorten #'(0 . 3) e8(\< g) g(\prall f) e(\prall d) c(\prall a)\!
 		a16\fp-. a-. r c-. b-. b-. r e,-. a-.\fp a-. r c-. b!-. b-. r e,-.
 		e'8(\fp gis a b) c( d g,16 e a g)
 % bars 31 to 35
@@ -71,7 +71,7 @@ musicViolinIMvtI = \relative c {
 % bars 51 to 55
 		<d fis>4.\f( <fis, d'>8) \hairpinShorten #'(0 . 3) <eis cis'>2\>
 		cis'4(\! d e!) d16( b) b8-.
-		\hairpinShorten #'(-0.5 . -0.5) fis'1_\dimD\> \mark \default
+		\hairpinShorten #'(-0.5 . -0.5) fis'1-\offset X-offset #-1 _\dimD\> \mark \default
 		cis4\pp( d e) d16-! b-! b8-!
 		g'!1\<
 % bars 56 to 60
@@ -121,7 +121,7 @@ musicViolinIMvtI = \relative c {
 	<c g'>\ffz
 	c8.\f-> d16 f! e r8 e8.-> a16 g e r8
 	e16\<( f g c)\! c8.-> e,16-. e16(\< f g c)\! c8.-> e,16-.
-	e16( f g c) c8.->\fz e,16 g8.->\fz c,16 e8.->-\tweak extra-offset #'(-0.2 . -9.8) ^\fz g,16
+	e16( f g c) c8.->-\offset X-offset #-1 \fz e,16 g8.->-\tweak extra-offset #'(-1 . 0.7) \fz c,16 \once \offset positions #'(0.5 . 0.5) Beam e8.->-\tweak extra-offset #'(-1 . -8.7) ^\fz g,16
 	c8 r r4 r2 \mark \default
 % bars 96 to 100
 	R1*2

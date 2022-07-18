@@ -39,7 +39,7 @@ musicViolinIMvtII = \relative c {
 	a4._\crescD\<~ a16( f) f( g) a( c)\!
 % bars 26 to 30
 	c4.\mf\< d8( g bes,\f)
-	bes16( a c4~ c16) bes->(\> g-> ees->_\dimmarkup g-> bes->)
+	bes16( a c4~ c16) bes->(-\tweak extra-offset #'(0 . 0.3) \> g-> ees->-\tweak extra-offset #'(0 . 0.6) _\dimmarkup g-> bes->)
 	a4. g8\p( f d)
 	c4(~ c16\> a') <c, a'>4.-\tweak extra-offset #'(0 . 3.5) _\dimmarkup 
 	<a f'>4.\pp~ <a f'>8\noBeam a16( c) c( a) \mark \default
@@ -48,7 +48,7 @@ musicViolinIMvtII = \relative c {
 	bes8(\< e f16 e)\! g8\f\>( e'8. g,16)\!
 	\afterGrace 35/36 bes2._\ppcresc^\startTrillSpan {a32( bes\stopTrillSpan)}
 	bes8( e) f16(\<-\tweak extra-offset #'(0 . 2.4) _\crescmarkup e) e8( f8.) f16-.
-	f8\f( a) g16( f) e8-> d-> bes->
+	\shape #'((0 . -0.2)(0 . -0.2)(0 . -0.2)(0 . -0.2)) Slur f8\f( a) g16( f) e8-> d-> bes->
 % bars 36 to 40
 	<f! a>4.~\> q8 q g\!
 	c(\< a) f' f4 f8\!
@@ -64,7 +64,7 @@ musicViolinIMvtII = \relative c {
 % bars 46 to 50
 	a'4.\fz\>~ a8 r a\!
 	d4.~\< d8 c( bes16 g)\!
-	g4.\f\>~ g8\! r g-\tweak X-offset #-2.5 _\dimmarkup
+	g4.-\tweak extra-offset #'(0 . 1.2) \f -\tweak extra-offset #'(0 . 1.2) \>~ g8\! r g-\tweak X-offset #-2.5 _\dimmarkup
 	d'4.\pp~ d8\> c( bes16 g)
 	g4.\pp~ g8 r g \mark \default
 % bars 51 to 55

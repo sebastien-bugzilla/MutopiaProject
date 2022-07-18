@@ -27,7 +27,7 @@ musicViolinIMvtIII = \relative c {
 	<< c2.~ {\hairpinShorten #'(0 . -0.8) s4\< \hairpinShorten #'(0.7 . -1.5) s\> s\!} >>
 % bars 16 to 20
 	c4 r r \mark \default
-	c8\ff d f4 r
+	c8-\tweak extra-offset #'(0 . 1) \ff d f4 r
 	R2.
 	c,8\> d f4\! r
 	R2.
@@ -90,7 +90,7 @@ musicViolinIMvtIII = \relative c {
 	fes8->[\> r16 ees ees8 r16 des] des4
 	ees8->[ r16 des des8 r16 c] c4\!
 	aes8->\p[ r16 g g8 r16 f] f4
-	\hairpinShorten #'(0 . 2.5) des'8->\fp\>[ r16 c c8 r16 b b8 r16 bes]
+	\hairpinShorten #'(0 . 2.5) des'8->-\offset X-offset #-1.5 \fp\>[ r16 c c8 r16 b b8 r16 bes]
 % bars 71 to 75
 	bes8[ r16 a] a8[ r16 aes]\! aes8\pp[ r16 g]
 	g8[ r16 f] f4 r \mark \default
@@ -139,7 +139,7 @@ musicViolinIMvtIII = \relative c {
 	d2\prall g8( d)
 	d2 r4 \mark \default
 	r4 a8\p a a4
-	r4 c,8\mf c c4
+	r4 c,8-\tweak extra-offset #'(0.3 . 0.2) \mf c c4
 	r a''8-\tweak extra-offset #'(0 . 1) \f a a4
 % bars 116 to 120
 	r c,8-\tweak extra-offset #'(0 . 1) \ff c c4
@@ -191,7 +191,7 @@ musicViolinIMvtIII = \relative c {
 	c: aes: f:} 
 % bars 156 to 160
 	ees2 \ottava #0 r4
-	\colottavaadlibitum c2.-\tweak extra-offset #'(0 . 2) \f(^\startTextSpan
+	\fcolottavaadlibitum c2.(_\startTextSpan
 	f2 des4)
 	c2( des4
 	f2) r4

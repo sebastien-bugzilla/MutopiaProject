@@ -170,7 +170,7 @@ musicViolinIMvtIV = \relative c {
 % bars 136 to 140
 	g4.) bes8(
 	aes4.) c8(\!
-	<ees, b'>4.)\f <ees c'>8
+	<ees, b'>4.)-\tweak extra-offset #'(0 . 1) \f <ees c'>8
 	<ees b'>4.-> <ees c'>8
 	<ees b'> r <ees c'>\cres r\!
 % bars 141 to 145

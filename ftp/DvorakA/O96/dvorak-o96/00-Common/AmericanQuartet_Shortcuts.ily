@@ -77,11 +77,11 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	}
 }
 
-colottavaadlibitum = {
+fcolottavaadlibitum = {
 	\once \override TextSpanner.dash-fraction = #0.2
 	\once \override TextSpanner.dash-period = #1
 	\once \override TextSpanner.bound-details.left.text = \markup {
-		\italic {
+		\hspace #-2 \dynamic f \italic {
 			col \concat { 8 \super va } ad libitum
 		}
 	}
@@ -89,13 +89,14 @@ colottavaadlibitum = {
 	\once \override TextSpanner.bound-details.left-broken.text = ""
 	\once \override TextSpanner.bound-details.right.stencil = #ly:text-interface::print
 	\once \override TextSpanner.bound-details.right.text = \markup {
-		\draw-line #'(0 . -0.7)
+		\draw-line #'(0 . 0.7)
 	}
 	\once \override TextSpanner.bound-details.right-broken.stencil = #ly:text-interface::print
 	\once \override TextSpanner.bound-details.right-broken.text = \markup {
 		\draw-line #'(0 . 0)
 	}
 	\once \override TextSpanner.bound-details.right.padding = #-1
+	\once \override TextSpanner.outside-staff-priority = #'()
 }
 
 scriptPriority = \once \override Script.script-priority = #-100
