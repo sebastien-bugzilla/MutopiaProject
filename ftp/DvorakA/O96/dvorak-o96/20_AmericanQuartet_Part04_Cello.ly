@@ -16,7 +16,7 @@
 \include "./00-Common/AmericanQuartet_Header.ily"
 \include "./00-Common/AmericanQuartet_PaperParts.ily"
 \include "./00-Common/AmericanQuartet_timeMvt.ily"
-\include "./00-Common/AmericanQuartet_Layout.ily"
+\include "./00-Common/AmericanQuartet_LayoutParts.ily"
 \include "./00-Common/AmericanQuartet_Shortcuts.ily"
 \include "./00-Common/AmericanQuartet_Format_Part04_Cello.ily"
 %\include "./00-Common/AmericanQuartet_Format_temp.ily"
