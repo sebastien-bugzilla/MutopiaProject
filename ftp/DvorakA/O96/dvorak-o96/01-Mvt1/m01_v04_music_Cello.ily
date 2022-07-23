@@ -77,8 +77,8 @@ musicCelloMvtI = \relative c {
 % bars 56 to 60
 		b2 cis4(\f a)
 		gis2 ais
-		b4( cis_\dimmarkup d f!\>)
-		d( d, e2)\!
+		b4( cis_\dimmarkup d f!)
+		d(\> d, e2)\!
 		a1\p~
 % bars 61 to 65
 		a~\>
@@ -194,7 +194,7 @@ musicCelloMvtI = \relative c {
 	ees1\p~
 	ees4 des8(_\dimmarkup c bes2)
 	c1\>
-	\tempoXoffset #-0.5 c, \mark \default
+	\tempoXoffset #-0.5 c,\> \mark \default
 % bars 156 to 160
 	f\pp(
 	bes,)

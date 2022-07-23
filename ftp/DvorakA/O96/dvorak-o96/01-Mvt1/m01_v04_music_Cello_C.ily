@@ -18,7 +18,7 @@ musicCelloMvtI = \relative c {
 		f2~( f8\< a c\> a)\!
 		f4. r8 r4 r8 f'8^\pizz
 		r a, r c r4 f8 f,
-		r4 r8 d_\crescmarkup r f\< a c\!
+		r4 r8 d-\offset X-offset #-2 _\crescmarkup r f\< a c\!
 		f_\crescmarkup r a f d' c f, r
 % bars 11 to 15
 		f,16\f^\arco( a c f) f8.-> d16-. c4 r8 c
@@ -27,13 +27,13 @@ musicCelloMvtI = \relative c {
 		d,16\fz\<( f a d)\! d8. bes16-. a4 r8 a
 		d,8.\ff bes16 d8. bes16 d8. bes16 d8. bes16 
 % bars 16 to 20
-		d8._\dimmarkup\> bes16 d8. bes16\> d8. bes16 d8.\p bes16 \mark \default
+		d8._\dimmarkup\> bes16 d8. bes16 d8. bes16 d8.\p bes16 \mark \default
 		d4~(_\piup d16 f a d) a4~( a16 g f d)
 		d8 r r4 r2
 		R1
-		f'2\p\<( b,)\!
+		\shape #'((0 . -0.3)(0 . -0.5)(0 . 0)(0 . 0)) Slur f'2\p\<( b,)\!
 % bars 21 to 25
-		c1\<_\crescmarkup
+		\hairpinShorten #'(0 . 2) c1_\crescD\<
 		c2\f( bes)
 		aes\>( g)\!
 		f16 f r8 f16 f r8_\diminmarkup f16 f r8 f16 f r8
@@ -63,13 +63,13 @@ musicCelloMvtI = \relative c {
 		a\ppp
 		d
 % bars 46 to 50
-		d2\<( cis)\!
+		\hairpinShorten #'(0 . -9) d2\<( cis)\!
 		gis\fz\>( a)\!
 		a'1\pp
-		<<{r2 b~ b s}\\{d,1~ d2\< \oneVoice cis\!}>>
+		<<{r2 b~ b s}\\{d,1~ \hairpinShorten #'(0 . -9) d2\< \oneVoice cis\!}>>
 		%<<{b'2) s}\\{d,2)\< cis\!}>>
 % bars 51 to 55
-		gis\f cis\>
+		gis\f \hairpinShorten #'(0 . 5) cis\>
 		fis2.\! b4
 		fis2._\dimD\> b,4 \mark \default
 		fis2.\pp( b4)
@@ -77,8 +77,8 @@ musicCelloMvtI = \relative c {
 % bars 56 to 60
 		b2 cis4(\f a)
 		gis2 ais
-		b4( cis_\dimmarkup d f!\>)
-		d( d, e2)\!
+		b4( cis_\dimmarkup d f!)
+		\hairpinShorten #'(0 . -7) d(\> d, e2)\!
 		a1\p~
 % bars 61 to 65
 		a~\>
@@ -100,7 +100,7 @@ musicCelloMvtI = \relative c {
 	cis'2\mf\>( e)
 	e2.\p\> e8( cis)\!
 % bars 76 to 80
-	cis4\pp( cis,8) r cis4\<( cis,8)\! r
+	cis4\pp( cis,8) r \hairpinShorten #'(0 . -3) cis4\<( cis,8)\! r
 	cis''8\f( cis,16) r cis8( cis,16) r cis8(\> cis'16) r cis8( cis,16)\! r
 	d8\ff( d'16) r\> d8( d'16) r_\dimmarkup d8( d,16) r d8( d,16)\! r
 	d''8\p( d,16) r d8(\> d,16) r d8( a'16) r a8( d,16)\! r \mark \default
@@ -148,10 +148,10 @@ musicCelloMvtI = \relative c {
 	R1*2
 	
 % bars 116 to 120
-	r4 f''8\pp^\pizz r f, r r4
+	r4 f''8\pp-\offset X-offset #-5 ^\pizz r f, r r4
 	r8 f' r f, r2
 	r8 f a c r f, a c
-	f4^\arco( e) d( c)
+	f4_\arco( e) d( c)
 	bes( a g f) \mark \default 
 % bars 121 to 125
 	ees1~
@@ -161,7 +161,7 @@ musicCelloMvtI = \relative c {
 	aes8\<( des) des des ees4( f)\!
 % bars 126 to 130
 	aes4.( ges8) ees2
-	fes2.\>_\dimmarkup aes4\!
+	<< { fes2.\> aes4\! } {s4 s2._\dimmarkup} >>
 	g!2.\> a!4\! \mark \default
 	bes!2.\p a8( g)
 	bes2. aes8( ges)
@@ -182,7 +182,7 @@ musicCelloMvtI = \relative c {
 	aes8\p( g f ees) \clef bass c( bes16 des c4)
 	c8( bes16 des c4) c8( bes16 des c4)
 	aes8\p\< g16 g aes8 g16 g aes8 g16 g aes8 e!16 e\!
-	f8\< e16 e f8 e16 e f8 e16 e f8 bes,16 bes\! \mark \default 
+	\hairpinShorten #'(0 . -2) f8\< e16 e f8 e16 e f8 e16 e f8\! bes,16 bes \mark \default 
 % bars 146 to 150
 	\grace {s8} c2\f c,4.( c'8)
 	c2 c,4.( c'8)
@@ -192,9 +192,9 @@ musicCelloMvtI = \relative c {
 % bars 151 to 155
 	c' c r c c\> c r c c c r c c c r c\!
 	ees1\p~
-	ees4 des8(_\dimmarkup c bes2)
-	c1\>
-	c, \mark \default
+	ees4 des8( c_\dimmarkup bes2)
+	\hairpinShorten #'(0 . 6) c1\>
+	\hairpinShorten #'(-1.4 . 4) c,\> \mark \default
 % bars 156 to 160
 	f\pp(
 	bes,)
@@ -205,11 +205,11 @@ musicCelloMvtI = \relative c {
 	f8( g4 f16 d) d2\>
 	f4(\! g8 d)\< c( f a c)\!
 	bes2_\crescmarkup a
-	f4\f( g8 d) c( f a c)
+	f4\f( g8 d) \shape #'((0 . 0)(0 . 0)(0 . -0.5)(0 . -0.3)) Slur c( f a c)
 	bes2 a
 % bars 166 to 170
-	f4( g8 d) c\<( f a c)(
-	c)\ff\> a-. f-. c-. \clef bass a8(_\dimD f \tuplet 3/2 {e c c,)} \mark \default
+	f4( g8 d) c\<( f a c)~
+	c\ff\> a-. f-. c-. \clef bass a8(_\dimD f \tuplet 3/2 {e c c,)} \mark \default
 	f1\>~
 	f\p\>
 	f4\! a d\p( f8) r
@@ -221,6 +221,6 @@ musicCelloMvtI = \relative c {
 	f2\ff f16 f d c f f d c 
 % bars 176 to 178
 	f2 f16 f d c f f d c
-	c16\<( f a c) c8.->\fz( a16 f8) r f\ff r
+	c16\<( f a c)\! c8.->\fz( a16 f8) r f\ff r
 	f2.-> r4 \bar "|."
 }

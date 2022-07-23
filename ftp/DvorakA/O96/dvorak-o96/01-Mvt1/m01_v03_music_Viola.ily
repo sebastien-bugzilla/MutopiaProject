@@ -78,8 +78,8 @@ musicViolaMvtI = \relative c {
 % bars 56 to 60
 		d( e d e)\! cis\f( e cis a)
 		fis( b fis b) g!( cis g e)
-		d( fis ais_\dimmarkup g!) b( fis! a d,)
-		<f! a>2\>( d)
+		d( fis ais_\dimmarkup g! b fis! a d,)
+		<f! a>2\>( d)\!
 		\repeat tremolo 4 {cis16\p( e} \repeat tremolo 4 {cis16 e)}
 % bars 61 to 65
 		\repeat tremolo 4 {cis16\>(e} \repeat tremolo 4 {cis16 e)\!}

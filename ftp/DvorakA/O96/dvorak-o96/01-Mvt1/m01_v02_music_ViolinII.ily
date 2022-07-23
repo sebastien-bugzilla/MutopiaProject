@@ -78,7 +78,7 @@ musicViolinIIMvtI = \relative c {
 		d( e d e)\! e,\f( e' cis a)
 		fis( b fis b) g!( cis g e)
 		d( fis ais-\tweak extra-offset #'(0 . 2.8) _\dimmarkup g b fis! a d,)
-		\tempoXoffset #-2 << {b2( gis)} {s2\> s4 s-\tweak extra-offset #'(0 . 0.7) \p}>>
+		\tempoXoffset #-2 b2(\> gis)\!
 		a8\p( cis4 e8) fis8.( a16 fis4)
 % bars 61 to 65
 		e8.\>( cis16-\tweak extra-offset #'(0 . 0.3) _\dimmarkup a8. cis16 e2)\!

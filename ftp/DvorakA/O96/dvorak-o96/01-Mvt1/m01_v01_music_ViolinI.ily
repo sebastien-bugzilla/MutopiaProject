@@ -78,8 +78,8 @@ musicViolinIMvtI = \relative c {
 		gis4( b)\! \tuplet 3/2 {a8\f( fis e-.)} e4
 		<fis, d'>4( <d' fis>) \acciaccatura cis8 \tuplet 3/2 {fis8( e cis-.)} <e, cis'>4
 		<d b'>4(\> <g e'>)-\tweak extra-offset #'(0.5 . 3.2) _\dimmarkup <fis d'>8( <d b'>4) <d b'>8\!
-		a'8\>( f!4 f8) f( e4 d16 b\p)
-		a4 r r2
+		a'8\>( f!4 f8) f( e4 d16 b)\!
+		a4\p r r2
 % bars 61 to 65
 		R1
 		e''8.\pp([ c!16 a8. c16] e2)
@@ -108,7 +108,7 @@ musicViolinIMvtI = \relative c {
 % bars 81 to 85
 	q8 q4-- q16-- q~ q8 q4 q16 q( 
 	<d a'>8) q4 q16 q~ q8 <a a'>4 q16 q~
-	q8 q4 q16 q~ q8 q4 <fis' a>16 q~
+	q8 q4 q16 q~ q8 q4 <fis' a>16 q
 	\hairpinShorten #'(-0.5 . -0.8) q4\pp\<( \hairpinShorten #'(0.7 . 0) <d' fis>2\> <fis, a>4\!)
 	q2 r4 q
 % bars 86 to 90
@@ -206,7 +206,7 @@ musicViolinIMvtI = \relative c {
 	r8 f16 f r8 f16\< f r8 f16 f r8 f16 f\!
 	<d_~ f>4( <d g>8_\crescmarkup d) c( f a c)
 	<d, bes'>2\f <c a'>
-	<d_~ f>4(\< <d g>8 d) c( f a c)\!
+	<d_~ f>4( <d g>8 d) c( f a c)
 % bars 166 to 170
 	<d, bes'>2 <c a'>~
 	\tempoXoffset #-1 q8\ff c'4 f8(~ \hairpinShorten #'(-0.5 . -3) f_\dimD\> a, g4)\! \mark \default

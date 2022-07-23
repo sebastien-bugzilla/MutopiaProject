@@ -103,6 +103,8 @@ scriptPriority = \once \override Script.script-priority = #-100
 
 textInStaff = \once \override TextScript.staff-padding = #'()
 
+tempoDown = \once \override Score.MetronomeMark.direction = #DOWN
+
 one = \mark \markup {\abs-fontsize #8 \number 1}
 two = \mark \markup {\abs-fontsize #8 \number 2}
 three = \mark \markup {\abs-fontsize #8 \number 3}
@@ -171,4 +173,10 @@ markXoffset = #(define-music-function
 	#}
 )
 
-tempoDown = \once \override Score.MetronomeMark.direction = #DOWN
+noteShift = #(define-music-function
+	(shift)
+	(number?)
+	#{
+		\once \override NoteColumn.force-hshift = #shift
+	#}
+)
