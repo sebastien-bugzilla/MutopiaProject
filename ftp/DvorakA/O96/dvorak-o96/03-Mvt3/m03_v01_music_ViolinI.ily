@@ -63,7 +63,7 @@ musicViolinIMvtIII = \relative c {
 	c2.\p\> \trill
 % bars 46 to 50
 	c2.\! \trill
-	\afterGrace 7/8 c\startTrillSpan {b16 c^\stopTrillSpan}
+	\afterGrace 7/8 c\startTrillSpan\> {b16 c^\stopTrillSpan\!}
 	c8\pp( d c g) f4\fermata-\offset X-offset #-1.5 _\fine \bar "||" \key f \minor \mark \default
 	c'4\pp( f g
 	aes g f)

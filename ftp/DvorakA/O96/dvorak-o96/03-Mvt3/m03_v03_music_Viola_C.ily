@@ -61,7 +61,7 @@ musicViolaMvtIII = \relative c {
 % bars 46 to 50
 	a4( bes4.-> g8)
 	a4\>( bes4.-> g8)
-	a2\pp( c4)\fermata^\fine \bar "||" \key f \minor \mark \default
+	a2\pp( c4)\fermata-\offset X-offset #-1.7 _\fine \bar "||" \key f \minor \mark \default
 	R2.*8
 	
 % bars 51 to 55
@@ -74,20 +74,20 @@ musicViolaMvtIII = \relative c {
 	des8\fp des des4-> r 
 % bars 61 to 65
 	f8\fp f f4-> r
-	des8\fz-> des des4 r
-	f8\fz-> f f4 r
-	c8\fp-> c c4 r
-	des8\fp-> des des4_\dimmarkup r
+	des8\fz^> des des4 r
+	f8\fz^> f f4 r
+	c8\fpp^> c c4 r
+	des8\fp^> des des4_\dimmarkup r
 % bars 66 to 70
-	des8\fp-> des des4_\dimmarkup r
+	des8-\offset X-offset #-0.5 \fp^> des des4_\dimmarkup r
 	des8 des des4\> r
 	aes'8 aes aes4\! r
 	c,8\p c c4 r
-	c8\fp c c4_\dimmarkup r
+	c8-\offset X-offset #-0.5 \fp c c4-\offset X-offset #1.5 _\dimmarkup r
 % bars 71 to 75
 	f8\pp f f4 r
 	c2 r4 \mark \default
-	c-.\p f-. g-.
+	c-.-\offset X-offset #-0.8 \p f-. g-.
 	aes-. g-. f-.
 	aes-. c-. r8 bes-.
 % bars 76 to 80
@@ -117,8 +117,8 @@ musicViolaMvtIII = \relative c {
 		bes'4 a aes~
 		aes2.)
 	}\\{
-		\hideNotes c,2.\>~ \unHideNotes
-		c\pp~
+		\hideNotes c,2.-\tweak extra-offset #'(0 . 1.3) \>~ \unHideNotes
+		c\!-\tweak extra-offset #'(1.5 . 1.3) \pp~
 		c
 	}>> \bar "||" \key f \major \mark \default
 % bars 97 to 100
@@ -155,7 +155,7 @@ musicViolaMvtIII = \relative c {
 	f8 f f f a f
 	f8 f f f g( f)
 	f4-. f,-. r \mark \default
-	r a'8\f a a4
+	r a'8-\tweak extra-offset #'(0 . 1) \f a a4
 % bars 126 to 130
 	r c,8\mf c c4
 	r a8_\dimmarkup a a4
@@ -170,21 +170,21 @@ musicViolaMvtIII = \relative c {
 	f f f f g( f
 % bars 136 to 140
 	c4) r r \mark \default
-	<<{a''4( f2)}\\{a,2.\ff}>>
+	<<{a''4( f2)}\\{a,2.-\offset X-offset #0.8 \ff}>>
 	<<{a'4( f2)}\\{a,2.}>>
 	<<{a'4( f2)}\\{a,2.}>>
 	<f' a>4( c2)
 % bars 141 to 145
 	a'4\p( bes4. g8)
-	a4( bes4._\dimmarkup g8)
+	a4( bes4.-\offset X-offset #2.5 _\dimmarkup g8)
 	a4( bes4. g8)
-	a4(\> bes2)\!
-	<<{a8[_\pplegato( s a s a s)]}\\{s a[ s a s a]}>>
+	\hairpinShorten #'(0 . -6) a4(\> bes2)\!
+	<<{a8[-\tweak extra-offset #'(-0.5 . 1) _\pplegato( s a s a s)]}\\{s a[ s a s a]}>>
 % bars 146 to 150
 	<<{a8[( s a s a s)]}\\{s a[ s a s a]}>>
 	<<{a8[( s a s a s)]}\\{s a[ s a s a]}>>
 	<<{a2.\fermata}\\{a2.}>> \bar "||" \key f \minor \mark \default
-	\clef treble c2.\pp(
+	\clef treble c2.-\offset X-offset #1.2 \pp(
 	f2 des4
 % bars 151 to 155
 	c2 des4
@@ -203,27 +203,27 @@ musicViolaMvtIII = \relative c {
 	c,4\<( bes'-> aes)\!
 	c,4\<( bes'-> aes)\!
 	ees,4\<( des'-> c)\!
-	c4\<( g'-> f)\!
+	c4( g'-> f)
 % bars 166 to 170
-	des4\<( aes'-> fes)\!
-	des_\dimmarkup( ees fes)
+	des4( aes'-> fes)
+	des( ees fes)-\offset X-offset #-4 _\dimmarkup
 	ees( bes' aes)
 	f!( e8\> f fis4
-	g e f!)
+	g e f!)\!
 % bars 171 to 175
 	des!\p( c4. bes8)
 	aes2\> r4\! \mark \default
 	\tuplet 3/2 4 { c,4.:8\ppp  f:  g:
 	aes: g: f:
-	aes: c: bes:
+	aes: \once \stemUp c: bes:
 % bars 176 to 180
 	aes: g: f:
 	ees: f: g:
 	aes: bes: b:
-	c: aes: f:
+	\once \stemUp c: aes: f:
 	ees: fes: ees:}
 % bars 181 to 185
-	c4\ff( d\< e)
+	c4-\offset X-offset #-0.7 \ff( d\< e)
 	f( g aes8 f')\!
 	e2( f4)
 	c( bes aes)
@@ -232,7 +232,7 @@ musicViolaMvtIII = \relative c {
 	f( g aes8 f')
 	e2( f8 f,)
 	f2 r4
-	ees( fes_\moltodim ees
+	\shape #'((0 . 0)(0 . -0.7)(0 . -0.7)(0 . -1)) Slur ees( fes-\tweak extra-offset #'(0 . 3.3) _\moltodim ees
 	ees2 c4)\>
 % bars 191 to 194
 	des2( c4)\!
@@ -244,7 +244,7 @@ musicViolaMvtIII = \relative c {
 		bes4( aes g
 		aes2)
 	}\\{
-		c,2.(
-		c2)
+		c,2.~
+		c2
 	}>> r4 \bar "||"
 }

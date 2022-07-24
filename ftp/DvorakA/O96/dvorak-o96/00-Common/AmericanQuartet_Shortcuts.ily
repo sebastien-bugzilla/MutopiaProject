@@ -99,6 +99,29 @@ fcolottavaadlibitum = {
 	\once \override TextSpanner.outside-staff-priority = #'()
 }
 
+fcolottavaadlibitumC = {
+	\once \override TextSpanner.dash-fraction = #0.2
+	\once \override TextSpanner.dash-period = #1
+	\once \override TextSpanner.bound-details.left.text = \markup {
+		\dynamic f \italic {
+			col \concat { 8 \super va } ad libitum
+		}
+	}
+	\once \override TextSpanner.bound-details.left.stencil-align-dir-y = #CENTER
+	\once \override TextSpanner.bound-details.left-broken.text = ""
+	\once \override TextSpanner.bound-details.right.stencil = #ly:text-interface::print
+	\once \override TextSpanner.bound-details.right.text = \markup {
+		\draw-line #'(0 . 0.7)
+	}
+	\once \override TextSpanner.bound-details.right-broken.stencil = #ly:text-interface::print
+	\once \override TextSpanner.bound-details.right-broken.text = \markup {
+		\draw-line #'(0 . 0)
+	}
+	\once \override TextSpanner.bound-details.right.padding = #-1
+	\once \override TextSpanner.outside-staff-priority = #'()
+}
+
+
 scriptPriority = \once \override Script.script-priority = #-100
 
 textInStaff = \once \override TextScript.staff-padding = #'()

@@ -61,7 +61,7 @@ musicCelloMvtIII = \relative c {
 % bars 46 to 50
 	c\!
 	c\>
-	f,\pp\fermata^\fine \bar "||" \key f \minor \mark \default
+	f,\pp\fermata-\offset X-offset #8 _\fine \bar "||" \key f \minor \mark \default
 	R2.*8
 	
 % bars 51 to 55
@@ -69,12 +69,12 @@ musicCelloMvtIII = \relative c {
 % bars 56 to 60
 	
 	c''2._\mfespressivo
-	f2( des4)
+	\shape #'((0.7 . -0.5)(0 . -0.5)(0 . 0)(0 . 0)) Slur f2( des4)
 	c2( des4)
 	f2.
 % bars 61 to 65
 	c2.
-	f2( des4)
+	\shape #'((0.7 . -0.5)(0 . -0.5)(0 . 0)(0 . 0)) Slur f2( des4)
 	c2( des4)
 	aes2 r4
 	aes2._\dimmarkup
@@ -83,7 +83,7 @@ musicCelloMvtIII = \relative c {
 	g2(\> aes4)
 	c2.
 	aes\p\>
-	bes2( g4)
+	\shape #'((0.5 . 0)(0 . 0)(0 . 0)(0 . 0)) Slur bes2( g4)
 % bars 71 to 75
 	f2.\pp(
 	f,2) r4 \mark \default
@@ -107,12 +107,12 @@ musicCelloMvtIII = \relative c {
 	f-> f r4 aes8-> aes
 	c-> c r4 aes8-> aes
 	des->_\dimD\> des r4 des8-> des\!
-	des, des_\dimmarkup r4 des8 des
+	des,_\dimmarkup des r4 des8 des
 % bars 91 to 95
 	des des r4 des8\> des
 	aes' aes r4 aes8 aes
 	c\p c r4 c8\> c
-	c, c r4 c8 c
+	c, c r4 c8 c\!
 	f16\pp f r8 f16 f r8 f16 f r8
 % bars 96 to 100
 	f16 f r8 f16 f r8 f16 f r8 \bar "||" \mark \default \key f \major
@@ -127,7 +127,7 @@ musicCelloMvtIII = \relative c {
 	f4 r r
 	R2.
 % bars 106 to 110
-	r4 d''8\p^\pizz a d,4
+	r4 d''8\p-\offset X-offset #-5.2 ^\pizz a d,4
 	R2.
 	r4 f8 c f,4
 	r4 d'8\pp a d,4
@@ -135,7 +135,7 @@ musicCelloMvtIII = \relative c {
 % bars 111 to 115
 	r4 d8 a d,4
 	d' d, r \mark \default
-	c'8^\arco\p d f4 r
+	c'8-\offset X-offset #-3.7 ^\arco\p d f4 r
 	c8\mf d a4 r
 	c'8\f d f4 r
 % bars 116 to 120
@@ -170,9 +170,9 @@ musicCelloMvtIII = \relative c {
 	d4( f2)
 % bars 141 to 145
 	d'2.\p
-	d_\dimmarkup
+	d-\offset X-offset #6 _\dimmarkup
 	d
-	d4(\> c2)
+	\hairpinShorten #'(0 . -6) d4(\> c2)\!
 	f4\pp( d4. c8)
 % bars 146 to 150
 	a4( f d)~

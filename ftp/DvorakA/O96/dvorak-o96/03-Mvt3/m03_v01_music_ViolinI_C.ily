@@ -12,19 +12,19 @@ musicViolinIMvtIII = \relative c {
 	
 	
 	
-	<< c''2.-> {s4\p\< s\> s\!}>> 
+	<< c''2.-> {\hairpinShorten #'(-0.3 . -2) s4-\offset X-offset #0.3 \p\< \hairpinShorten #'(2 . -2.5) s\> s\!}>> 
 % bars 6 to 10
-	<< c2.-> {s4\< s\> s\!}>> 
-	<< c2.->~ {s4\< s\> s\!}>> 
+	<< c2.-> {\hairpinShorten #'(0 . -1.5) s4\< \hairpinShorten #'(1.5 . -2.5) s\> s\!}>> 
+	<< c2.->~ {\hairpinShorten #'(0 . -1.5) s4\< \hairpinShorten #'(1.5 . -2.5) s\> s\!}>> 
 	c4 r r
 	c'8\f\upbow r f4.-> d8
 	c d f4 r
 % bars 11 to 15
 	c8\upbow r f4.-> d8
 	c d a4 r 
-	<< c2. {s4\pp\< s\> s\!} >>
-	<< c2. {s4\< s\> s\!} >>
-	<< c2.~ {s4\< s\> s\!} >>
+	<< c2. {\hairpinShorten #'(-0.3 . -2.3) s4\pp\< \hairpinShorten #'(2.3 . -2.5)  s\> s\!} >>
+	<< c2. {\hairpinShorten #'(0 . -1.5) s4\< \hairpinShorten #'(1.5 . -2.5) s\> s\!} >>
+	<< c2.~ {\hairpinShorten #'(0 . -1.5) s4\< \hairpinShorten #'(1.5 . -2.5) s\> s\!} >>
 % bars 16 to 20
 	c4 r r \mark \default
 	c8\ff d f4 r
@@ -62,8 +62,8 @@ musicViolinIMvtIII = \relative c {
 	c2.\p\> \trill
 % bars 46 to 50
 	c2.\! \trill
-	\afterGrace 7/8 c\startTrillSpan {b16[^\stopTrillSpan c]}
-	c8\pp( d c g) f4\fermata^\fine \bar "||" \key f \minor \mark \default
+	\afterGrace 7/8 c\startTrillSpan\> {b16[ c^\stopTrillSpan]}
+	c8\pp( d c g) f4\fermata-\offset X-offset #-1.7 _\fine \bar "||" \key f \minor \mark \default
 	c'4\pp( f g
 	aes g f)
 % bars 51 to 55
@@ -108,13 +108,13 @@ musicViolinIMvtIII = \relative c {
 	f2( des4)
 	c2( des4)
 	aes2 r4
-	aes2._\dimD\>
-	bes2\!_\dimmarkup( aes4)
+	\hairpinShorten #'(0 . 2) aes2._\dimD\>
+	bes2\!_\dimD( aes4)
 % bars 91 to 95
 	g2\>( aes4)
 	c2.
-	aes2.\p(\>
-	bes2 g4)
+	\hairpinShorten #'(0 . -4.5) aes2.\p(\>
+	bes2 g4)\!
 	f2(\pp c4
 % bars 96 to 100
 	aes2 f4) \bar "||" \mark \default \key f \major
@@ -139,7 +139,7 @@ musicViolinIMvtIII = \relative c {
 	d2 r4 \mark \default
 	r4 a8\p a a4
 	r4 c,8\mf c c4
-	r a''8\f a a4
+	r a''8-\tweak extra-offset #'(0 . 2) \f a a4
 % bars 116 to 120
 	r c,8\ff c c4
 	a'4\f( f) r8 c
@@ -174,13 +174,13 @@ musicViolinIMvtIII = \relative c {
 	d2\prall\p( g8 d)
 	d2\prall( g8_\dimmarkup d)
 	d2\prall( g8 d)
-	d4.\>( e8 f g)
+	d4.\>( e8 f g)\!
 	a2.\pp~
 % bars 146 to 150
 	a2.~
 	a2.~
 	a2.\fermata \bar "||" \key f \minor \mark \default
-	\ottava #1 \tuplet 3/2 4 {c,4.:8\pp f: g: 
+	\ottava #1 \tuplet 3/2 4 { \once \tupletUp c,4.:8\pp f: g: 
 	aes: g: f:
 % bars 151 to 155
 	aes: c: bes:
@@ -190,7 +190,7 @@ musicViolinIMvtIII = \relative c {
 	c: aes: f:} 
 % bars 156 to 160
 	ees2 \ottava #0 r4
-	\ottava #1 \set Staff.ottavation = #"col 8va ad libitum" c'2.\f(
+	\fcolottavaadlibitumC c2.(_\startTextSpan
 	f2 des4)
 	c2( des4
 	f2) r4
@@ -202,14 +202,14 @@ musicViolinIMvtIII = \relative c {
 	aes2.
 % bars 166 to 170
 	bes2( aes4)
-	g2( aes4_\dimmarkup
+	g2( aes4-\offset X-offset #-4 _\dimmarkup
 	c2) r4
 	aes2~^( aes8 a
-	bes2\> g4)
+	bes2\> g4)\!
 % bars 171 to 175
 	f2.\p
-	c2\> r4\! \ottava #0 \mark \default
-	c,4\ppp-- c8(-.^\staccato c-. c-. c-.)
+	c2\>\stopTextSpan r4\! \mark \default
+	c4\ppp-- c8(-.^\staccato c-. c-. c-.)
 	f4-- f8(-. f-. des-. des-.)
 	c4-- c8(-. c-. des-. des-.)
 % bars 176 to 180
@@ -231,7 +231,7 @@ musicViolinIMvtIII = \relative c {
 	c c b_\moltodim b\! c c
 	des des c c aes'\> aes
 % bars 191 to 195
-	f\> f fes fes\! ees ees
+	f f fes fes\! ees ees
 	des\p des c c b b
 	c\> c aes' aes g g\!
 	f\pp f des' des e, e

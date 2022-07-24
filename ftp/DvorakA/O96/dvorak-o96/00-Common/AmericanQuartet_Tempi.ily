@@ -44,11 +44,11 @@ tempiMvtIII = {
 	s2.*2
 	\tempo "in tempo" % bar 49
 	s2.*95
-	\tempo "molto rit." % bar 144
+	\tempoXoffset #-1.5 \tempo "molto rit." % bar 144
 	s2.
 	\tempo "in tempo" % bar 145
 	s2.*51
-	\tempo "Da Capo al Fine." % bar 196
+	\tempoXoffset #-9.5 \tempo \markup { \medium \italic "Da Capo al Fine." } % bar 196
 }
 tempiMvtIV = {
 	\tempo "Vivace ma non troppo. M.M. " 4 = 152

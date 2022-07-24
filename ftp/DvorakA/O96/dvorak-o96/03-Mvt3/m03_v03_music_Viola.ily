@@ -203,9 +203,9 @@ musicViolaMvtIII = \relative c {
 	c,4\<( bes'-> aes)\!
 	c,4\<( bes'-> aes)\!
 	ees,4\<( des'-> c)\!
-	c4\<( g'-> f)\!
+	c4( g'-> f)
 % bars 166 to 170
-	des4\<( aes'-> fes)\!
+	des4( aes'-> fes)
 	des_\dimmarkup( ees fes)
 	ees( bes' aes)
 	f!( e8\> f fis4
