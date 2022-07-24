@@ -149,6 +149,14 @@ hairpinShorten = #(define-music-function
 	#}
 )
 
+%hairpinShortenBroken = #(define-music-function
+%	(shortLength)
+%	(pair?)
+%	#{
+%		\alterBroken shorten-pair #'((7 . 0)(0 . 0)) Hairpin
+%	#}
+%)
+
 tempoXoffset = #(define-music-function
 	(offset)
 	(number?)

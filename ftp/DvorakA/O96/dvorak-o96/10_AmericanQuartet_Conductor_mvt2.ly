@@ -18,7 +18,8 @@
 \include "./00-Common/AmericanQuartet_timeMvt.ily"
 \include "./00-Common/AmericanQuartet_LayoutConductors.ily"
 \include "./00-Common/AmericanQuartet_Shortcuts.ily"
-\include "./00-Common/AmericanQuartet_FormatCondMvt02.ily"
+\include "./00-Common/AmericanQuartet_Format_Cond_Mvt02.ily"
+%\include "./00-Common/AmericanQuartet_Format_temp.ily"
 \include "./00-Common/AmericanQuartet_Tempi.ily"
 \include "./02-Mvt2/m02_v01_music_ViolinI_C.ily"
 \include "./02-Mvt2/m02_v02_music_ViolinII_C.ily"
@@ -47,9 +48,12 @@
 			\new StaffGroup <<
 				\new GrandStaff <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtII
-%						}
+						\new Voice {
+							\displayFilterVoice
+						}
+						\new Voice {
+							\formatConductorMvtII
+						}
 						\new Voice {
 							\tempiMvtII
 						}
@@ -73,7 +77,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-			%system-count = #44
 		}
 	}
 }

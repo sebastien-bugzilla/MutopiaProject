@@ -32,7 +32,7 @@ tempiMvtII = {
 	\tempo "Lento. M.M. " 8 = 112
 	s2.*80
 	s4. \tempo "ritard." s % bar 81
-	\tempo "in tempo" % bar 82
+	\tempoXoffset #2 \tempo "in tempo" % bar 82
 	s2.*16
 }
 tempiMvtIII = {

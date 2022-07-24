@@ -52,7 +52,7 @@ musicViolinIIMvtII = \relative c {
 % bars 36 to 40
 	<f! a>\>( f') f( a,) a( f') f( a,) a( f') g( d)\!
 	f,_\crescmarkup( f') f( f,)\< f( f') f( a,) a( a') c,( a)\!
-	e\f( e') e( e,) e( e') e,( g) g( e) e( g)
+	e\f( e') e( e,) e( e') e,(\< g) g( e) e( g)\!
 	c,\(( f) f( c) a'8\) bes,16_\dimmarkup\(( ees) ees( bes) bes'8\)
 	a,16\>\(( d) d( a) a'8\)\! d,16\p\(( f) f( d) f8\)
 % bars 41 to 45

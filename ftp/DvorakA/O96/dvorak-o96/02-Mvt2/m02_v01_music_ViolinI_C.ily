@@ -27,26 +27,26 @@ musicViolinIMvtII = \relative c {
 	d(\fp\> f8 f-. f16-.) d16( f8 f-. f16-.)\!
 % bars 16 to 20
 	d(\< f8 f-. f16-.) d16( f8) f16( g a)\!
-	c,16\mf( e8 e-. e16-.) c16(_\crescmarkup e8) e( c'16)
+	c,16\mf( e8 e-. e16-.) c16( e8_\crescmarkup) e( c'16)
 	c,16\>( e8 e-. e16-.)\! c16\p( e8 e-. e16-.) \mark \default
 	<bes g'>4\pp( f'16 e) <bes g'>4 << {\tuplet 3/2 {f'16( a e)}} \\ {a,8} >>
 	<bes g'>4. r8 r g'\p
 % bars 21 to 25
 	<bes, g'>4( f'16\< e) <bes g'>4 <a f'>32( a')\! a( e)
-	<bes g'>4._\moltocrescmarkup\< <bes g'>4( <b gis'>8)\!
+	<bes g'>4.-\tweak extra-offset #'(0.5 . 2.8) _\moltocrescmarkup\< <bes g'>4( <b gis'>8)\!
 	<c a'>->\f c'-> bes16 a \acciaccatura d,,8 g'8(\> f d)\!
 	d4.\p~ d16\< a a( d) e( f)\!
 	a4._\crescD\<~ a16( f) f( g) a( c)\!
 % bars 26 to 30
-	c4.\mf\< d8( g bes,\f)
+	c4.\mf-\tweak extra-offset #'(0 . 0.7) \< d8( g\! bes,\f)
 	bes16( a c4~ c16) bes->(\> g-> ees->_\dimmarkup g-> bes->\!)
 	a4.\> g8\p( f d)
-	c4(~ c16\> a') <c, a'>4._\dimmarkup 
-	<a f'>4.\pp~ <a f'>8\noBeam a16( c) c( a) \mark \default
+	c4(~ c16 a') << <c, a'>4. {\hairpinShorten #'(-5.5 . -3) s8-\tweak extra-offset #'(3 . 3.1) _\dimmarkup -\offset Y-offset #-2.5 \> s s\!} >>
+	<a f'>4.-\offset X-offset #1.5 \pp~ <a f'>8\noBeam a16( c) c( a) \mark \default
 % bars 31 to 35
 	\afterGrace 35/36 bes2.\p^\startTrillSpan {a32(\stopTrillSpan bes)} 
 	bes8(\< e f16 e)\! g8\f\>( e'8. g,16)\!
-	\afterGrace 35/36 bes2.\pp^\startTrillSpan_\crescmarkup {a32(\stopTrillSpan bes)}
+	<< { \afterGrace 35/36 bes2.\pp^\startTrillSpan {a32(\stopTrillSpan bes)} } {s4. s_\crescmarkup} >>
 	bes8( e) f16(\<_\crescmarkup e) e8( f8.) f16-.
 	f8\f( a) g16( f) e8-> d-> bes->
 % bars 36 to 40
@@ -64,11 +64,11 @@ musicViolinIMvtII = \relative c {
 % bars 46 to 50
 	a'4.\fz\>~ a8 r a\!
 	d4.~\< d8 c( bes16 g)
-	g4.\f\>~ g8\! r g_\dimmarkup
-	d'4.\pp~ d8\> c( bes16 g)
+	g4.\f\>~ g8\! r g-\offset X-offset #-0.5 _\dimmarkup
+	d'4.\pp~ d8\> c( bes16 g)\!
 	g4.\pp~ g8 r g \mark \default
 % bars 51 to 55
-	bes4.~\< bes8 a( g)
+	\once \alterBroken shorten-pair #'((7 . 0)(0 . 0)) Hairpin bes4.~\< bes8 a( g)
 	a8.[( g16)] \tuplet 3/2 {g16( f d\!)} d4 d8
 	g8--_\crescmarkup a8.( d16) g,8-- a8.( d16)
 	d4.\< dis4.\! 
@@ -94,13 +94,13 @@ musicViolinIMvtII = \relative c {
 % bars 71 to 75
 	a8.[\< g16] \tuplet 3/2 {g16( f d)} d4 d8-.\!
 	g8\< a8.( d16) g,8 a8.( d16)\!
-	g,4.->_\crescmarkup gis->
+	g,4.->-\offset X-offset #9 _\crescmarkup gis->
 	a8(\f f') e-> d8.(-> c16-> d8->)
 	a4.~ a4 r8
 % bars 76 to 80
 	a( d) c-- a_\dimmarkup( gis a)
 	a4.\mp f8( e f)
-	f4. f8(_\dimD\> e f)\!
+	f4. f8(-\offset X-offset #-3 _\dimD\> e f)\!
 	f4. f8(\> e f)\!
 	f4.\pp f8( e f)
 % bars 81 to 85
@@ -112,7 +112,7 @@ musicViolinIMvtII = \relative c {
 % bars 86 to 90
 	<a, f'>^\arco q r q^\pizz q r
 	q^\arco q r q^\pizz q r
-	b2.\fp\>^>^\arco
+	<< { b2.^>^\arco } {\hairpinShorten #'(0 . -2) s4.-\offset X-offset #0.2 \fp\> s\!} >>
 	c4.\p\> bes!\!
 	f'8\pp^\pizz f r f e r
 % bars 91 to 95
@@ -123,5 +123,5 @@ musicViolinIMvtII = \relative c {
 	f4 r8 f4 r8
 % bars 96 to 97
 	f4 r8 f4 r8
-	f2.^\fermata^\arco \bar "|."
+	f2.^\arcofermata \bar "|."
 }

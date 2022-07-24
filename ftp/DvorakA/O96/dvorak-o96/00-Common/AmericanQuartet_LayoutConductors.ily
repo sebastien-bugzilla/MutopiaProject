@@ -39,5 +39,6 @@
 		\override BarNumber.font-size = #2
 		\override MeasureCounter.outside-staff-priority = #390
 		\override FootnoteItem #'annotation-line = ##f
+		\override MetronomeMark.font-size = #2
 	}
 }
