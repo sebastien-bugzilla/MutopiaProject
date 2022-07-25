@@ -10,15 +10,13 @@
 	left-margin = 18 \mm
 	indent = 0
 %	annotate-spacing = ##t
-%	first-page-number = 0
-%	max-systems-per-page = #1
-%	slashSeparator = \markup {
-%		\center-align
-%		\vcenter \combine
-%		\beam #3.3 #0.5 #0.54
-%		\raise #1.24 \beam #3.3 #0.5 #0.54
-%	}
-%	system-separator-markup = \slashSeparator
+	slashSeparator = \markup {
+		\center-align
+		\vcenter \combine
+		\beam #3.3 #0.5 #0.54
+		\raise #1.24 \beam #3.3 #0.5 #0.54
+	}
+	system-separator-markup = \slashSeparator
 	bookTitleMarkup = \markup {
 		\column {
 			\vspace #15

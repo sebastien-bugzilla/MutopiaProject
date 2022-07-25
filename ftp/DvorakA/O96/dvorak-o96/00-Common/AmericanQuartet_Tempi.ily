@@ -23,7 +23,7 @@ tempiMvtI = {
 	s1
 	\tempo "in tempo" % bar 168
 	s1*4
-	\tempo "poco rit." % bar 172
+	\tempoXoffset #-3 \tempo "poco rit." % bar 172
 	s1
 	\tempo "in tempo" % bar 173
 	s1*5

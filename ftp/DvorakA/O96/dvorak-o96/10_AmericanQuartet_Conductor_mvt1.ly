@@ -19,7 +19,6 @@
 \include "./00-Common/AmericanQuartet_LayoutConductors.ily"
 \include "./00-Common/AmericanQuartet_Shortcuts.ily"
 \include "./00-Common/AmericanQuartet_Format_Cond_Mvt01.ily"
-%\include "./00-Common/AmericanQuartet_Format_temp.ily"
 \include "./00-Common/AmericanQuartet_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_ViolinI_C.ily"
 \include "./01-Mvt1/m01_v02_music_ViolinII_C.ily"
@@ -50,9 +49,6 @@
 					\new Staff <<
 						\new Voice {
 							\formatConductorMvtI
-						}
-						\new Voice {
-							\displayFilterVoice
 						}
 						\new Voice {
 							\tempiMvtI
