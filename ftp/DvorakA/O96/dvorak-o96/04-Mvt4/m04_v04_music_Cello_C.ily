@@ -36,7 +36,7 @@ musicCelloMvtIV = \relative c {
 	c' r c c,
 	c' r c c,
 	c' r c c, \mark \default
-	f4\fp r8_\dimmarkup c'^\pizz
+	f4\fp r8_\dimmarkup c'-\offset X-offset #-3.5 ^\pizz
 % bars 26 to 30
 	f,4 r8 c'
 	f,4 r8 c'
@@ -65,7 +65,7 @@ musicCelloMvtIV = \relative c {
 	gis-> e\! gis-> e \mark \default
 	<a e' a>8\ff r <a e' a> r
 	<a e' a>8 r <a e' a> r
-	a_\dimmarkup r a\p r\>
+	a-\offset X-offset #-0.5 _\dimmarkup r a\p r\>
 	a r\! r4
 % bars 51 to 55
 	f4\pp r8 c'
@@ -221,7 +221,7 @@ musicCelloMvtIV = \relative c {
 	f r r bes
 	f r r4
 	R2 \mark \default \bar "||"
-	a'2\pp\<(
+	\hairpinShorten #'(0 . -1.8) a'2\pp\<(
 	f)\!
 % bars 181 to 185
 	c(\>
@@ -233,11 +233,11 @@ musicCelloMvtIV = \relative c {
 	e2)\!
 	a\pp(
 	f)
-	c(\<
+	\hairpinShorten #'(0 . -5) c(\<
 	d)\!
 % bars 191 to 195
 	e(\<
-	gis)\>
+	gis)\!
 	a\p\>(
 	d)\!
 	\tuplet 3/2 {a8\pp a a} a4(\<
@@ -245,7 +245,7 @@ musicCelloMvtIV = \relative c {
 	a2)(\>
 	a,4)\p r
 	R2 \mark \default
-	a'(_\mpespressivo\<
+	a'(_\mp-\offset X-offset #3 _\espressivoM\<
 	d)\!
 % bars 201 to 205
 	e\fz\>
@@ -256,7 +256,7 @@ musicCelloMvtIV = \relative c {
 % bars 206 to 210
 	c4 b)\!
 	a2\p
-	d4\<--~ d--\!
+	\hairpinShorten #'(0 . -2) d4\<--~ d--\!
 	f( e)~
 	e d8( a)
 % bars 211 to 215
@@ -308,7 +308,7 @@ musicCelloMvtIV = \relative c {
 	<a e'> r <a e'> r
 	f'-.[ c-. f-.\> c-.]
 % bars 251 to 255
-	f-.[ c-. f-. c-.]
+	f-.[ c-. f-. c-.]\!
 	des2\ppp~
 	des~
 	des~
@@ -328,7 +328,7 @@ musicCelloMvtIV = \relative c {
 % bars 266 to 270
 	r c''8\fp( bes\>
 	ees,)\! r r4
-	r des'8(\fp\> c
+	r \hairpinShorten #'(-0.3 . -1.5) des'8(\fp\> c
 	ees,)\! r r4
 	e!8_\crescmarkup r \tuplet 3/2 {e e e}
 % bars 271 to 275
@@ -339,7 +339,7 @@ musicCelloMvtIV = \relative c {
 	b r \tuplet 3/2 {b b b\!}
 % bars 276 to 280
 	c\f([ a c,) c'-.]
-	c([_\dimmarkup\> a c,) c'-.]
+	c([_\dimD\> a c,) c'-.]
 	c([ a c,) c'-.]\!
 	c([ g c,) c'-.] \mark \default
 	f,2\p~
@@ -357,9 +357,9 @@ musicCelloMvtIV = \relative c {
 	a~
 % bars 291 to 295
 	a~
-	a~\<
+	\hairpinShorten #'(0 . -3) a~\<
 	a\!
-	g\fp\>~
+	\hairpinShorten #'(0 . -8) g\fp\>~
 	g\!
 % bars 296 to 300
 	f'4(\p\> e
@@ -447,12 +447,12 @@ musicCelloMvtIV = \relative c {
 	f'-. c-. c-. c,-.
 % bars 366 to 370
 	f'-. c-. c-. c,-.
-	\tuplet 6/4 {f2.:8\<}
+	\hairpinShorten #'(0 . -5) \tuplet 6/4 {f2.:8\<}
 	\tuplet 6/4 {f2.:8}
-	\tuplet 6/4 {f2.:8\!\<}
+	\hairpinShorten #'(5 . 0) \tuplet 6/4 {f2.:8\!\<}
 	\tuplet 6/4 {f2.:8}
 % bars 371 to 375
-	\tuplet 3/2 {f4.:8\!} \tuplet 3/2 {f'4.:8\fff}
+	\tuplet 3/2 {f4.:8\!} \once \tupletUp \tuplet 3/2 {f'4.:8\fff}
 	\tuplet 6/4 {f2.:8}
 	des4 r
 	des r

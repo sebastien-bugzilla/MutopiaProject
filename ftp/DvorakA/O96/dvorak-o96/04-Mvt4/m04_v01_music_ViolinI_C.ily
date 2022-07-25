@@ -15,7 +15,7 @@ musicViolinIMvtIV = \relative c {
 	c''8.->\fp d16-. f8-. d-.
 % bars 6 to 10
 	c-. a-. f-. d-.
-	d8.->\fp[ d16-. d8-. d-.]
+	d8.^>\fp[ d16-. d8-. d-.]
 	d-.[ d-. d-.] c'-. 
 	c8.->\fp d16-. f8-. d-.
 	c-. a-. f-. d-.
@@ -57,7 +57,7 @@ musicViolinIMvtIV = \relative c {
 	c8)[ a-.\pp f-. d-.]
 	c-. a-. c4->(
 	a) r8 f'(\<
-	e8.\fz) f16-.\< e8-. b-.
+	e8.\fz) f16-.^\< e8-. b-.
 	e8._\fzmarkup f16-. e8-. c-.
 % bars 46 to 50
 	e8._\fzmarkup f16-.\! e8-. b-. \mark \default
@@ -68,7 +68,7 @@ musicViolinIMvtIV = \relative c {
 % bars 51 to 55
 	r4 c'8.\pp( d16
 	c8) a-. f-. d-.
-	c-. a-. c4\fp->(\>
+	c-. a-. c4-\offset X-offset #0.8 \fp->(\>
 	a)\! r8 f'(
 	g) f-. d4(
 % bars 56 to 60
@@ -119,7 +119,7 @@ musicViolinIMvtIV = \relative c {
 	<ees g>( <des f>~
 	<des f>\! <des f>)\mf
 	% ligne suivante compte pour 2 barss
-	<<{\oneVoice <c aes'>4( \voiceOne ees4~ ees8[ c_\dimmarkup ees c])}\\{s4 ees,4~ ees2}>>
+	<<{\oneVoice <c aes'>4( \voiceOne ees4~ ees8[ c ees_\dimmarkup c])}\\{s4 ees,4~ ees2}>>
 % bars 97 to 100
 	<ees ees'>8-.\> aes-. <ees c'>4~(
 	<ees c'> <des bes'>\! \mark \default
@@ -142,7 +142,7 @@ musicViolinIMvtIV = \relative c {
 	aes'(_\crescmarkup bes aes f) aes( bes aes f)
 	c'(\< des c aes) c( des c aes)
 	f'( g f c) aes'( bes aes f)\!
-	<g, e'! c'>8\f r <aes f' c'> r
+	<g, e'! c'>8-\offset X-offset #0.5 \f r <aes f' c'> r
 % bars 116 to 119
 	<g e'! c'> r <aes f' c'> r
 	<g e'! c'> r <aes f' c'> r
@@ -185,7 +185,7 @@ musicViolinIMvtIV = \relative c {
 	c-> aes-. f-> des-.
 % bars 151 to 155
 	des8.-> des16 des8 des
-	des r r des,_\dimmarkup
+	des r r des,-\offset X-offset #-1 _\dimmarkup
 	des8.\p des16 des8 des\>
 	des\! r r4
 	des2\pp( 
@@ -217,7 +217,7 @@ musicViolinIMvtIV = \relative c {
 	a r r f
 	a r a r
 	a r a r \mark \default \bar "||"
-	a2\pp\<(
+	\hairpinShorten #'(0 . -1.8) a2\pp\<(
 	d)\!
 % bars 181 to 185
 	e\>(
@@ -232,7 +232,7 @@ musicViolinIMvtIV = \relative c {
 	f( e~\<
 	e d8 a)\! 
 % bars 191 to 195
-	a4\< e'(~
+	a4\< e'(~\!
 	e\> d)\!
 	\tuplet 3/2 {c8( b a} a4\p)~
 	a\> b8 g!\!
@@ -310,7 +310,7 @@ musicViolinIMvtIV = \relative c {
 	aes-. f-. aes4->(
 	f) r8 des'\<(
 % bars 256 to 260
-	ees) des-.\> bes4~\!
+	ees) \hairpinShorten #'(0 . -2.5) des-.\> bes4~\!
 	bes8[ aes(\! ges des')]
 	aes4( f8) r
 	r4 aes'8.( bes16
@@ -320,9 +320,9 @@ musicViolinIMvtIV = \relative c {
 	f) r8 des'(
 	c) bes-. ges4~
 	ges8 f-. ees4(~
-	ees8[ bes' ees,)] bes'\<(
+	ees8[ bes' ees,)] \hairpinShorten #'(-2 . 0) bes'\<(
 % bars 266 to 270
-	c)\fz bes-. ges4~
+	c)-\offset X-offset #-1 \fz bes-. ges4~
 	ges r8 bes8(\<
 	des\fz) c-. ges4~
 	ges r8 des'8(\fp
@@ -335,7 +335,7 @@ musicViolinIMvtIV = \relative c {
 	f\fz[ d) gis,] f'\f\((
 % bars 276 to 280
 	g!4) f!\)
-	d_\dimmarkup(\> c!)
+	d_\dimD\>( c!)
 	a( f!)\!
 	d( e) \mark \default
 	f2_\pespressivo^\sulG~
@@ -412,7 +412,7 @@ musicViolinIMvtIV = \relative c {
 	\tuplet 3/2 {f,8( f') f-.} f4->\!
 	\tuplet 3/2 {f,8\f( f') f-.} \tuplet 3/2 {f( f,) f-.}
 	\tuplet 3/2 {f8( f') f-.} \tuplet 3/2 {f( f,) f-.}
-	\tuplet 3/2 {f8_\piuf( f') f-.} \tuplet 3/2 {f( e!) e-.}
+	\tuplet 3/2 {f8-\tweak extra-offset #'(-0.5 . 0.3) _\piuf( f') f-.} \tuplet 3/2 {f( e!) e-.}
 % bars 336 to 340
 	\tuplet 3/2 {e8( ees) ees-.} \tuplet 3/2 {ees( d) d-.}
 	\tuplet 3/2 {ees8( d) d-.} \tuplet 3/2 {ees( d) d-.}
@@ -432,7 +432,7 @@ musicViolinIMvtIV = \relative c {
 	f4-> g->
 	a-> c->
 % bars 351 to 355
-	f,8 r <f, c' a'>4\arpeggio\ff
+	f,8 r <f, c' a'>4\arpeggio-\offset X-offset #1 \ff
 	r <a f' c'>\arpeggio
 	r <d, d' d'>\arpeggio
 	r <a' f' c'>\arpeggio

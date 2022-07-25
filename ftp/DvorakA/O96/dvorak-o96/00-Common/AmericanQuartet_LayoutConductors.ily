@@ -20,6 +20,7 @@
 		\override Arpeggio.padding = #0.25
 		\override Script.staff-padding = #'()
 		\override Hairpin.height = #0.55
+		\override TupletNumber.avoid-slur = #'ignore
 	}
 	\context {
 		\Staff

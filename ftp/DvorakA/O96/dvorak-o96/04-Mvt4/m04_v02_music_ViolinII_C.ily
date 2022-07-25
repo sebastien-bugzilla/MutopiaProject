@@ -8,7 +8,7 @@ musicViolinIIMvtIV = \relative c {
 	\clef treble
 	\key f \major
 % bars 1 to 5
-	a'8.->\p[ a16 a8 a]~
+	a'8.^>\p[ a16 a8 a]~
 	a[ a-. a-. a-.]
 	a8.[ a16 a8 a]~
 	a[ a-. a-. a-.]
@@ -65,7 +65,7 @@ musicViolinIIMvtIV = \relative c {
 	b4( d8)\! gis, \mark \default
 	<a, e' a>8\ff r <a e' a> r
 	<a e' a>8 r <a e' a> r
-	a'_\dimmarkup r a\p r
+	a'-\offset X-offset #-0.5 _\dimmarkup r a\p r
 	a\> r a-. c-.\!
 % bars 51 to 55
 	c\pp a f c
@@ -179,8 +179,8 @@ musicViolinIIMvtIV = \relative c {
 	ees b ees b
 	e!\fz c e\fz c
 	e\fz c e\fz c
-	e2_\fzmarkup\< \trill
-	e_\fzmarkup\! \trill \mark \default
+	\hairpinShorten #'(0 . -8) e2-\tweak extra-offset #'(0.5 . 3.5) _\fzmarkup\< \trill
+	e-\tweak extra-offset #'(0.5 . 4.5) _\fzmarkup\! \trill \mark \default
 % bars 146 to 150
 	<a, e'>8\! r f'8\ff-> d
 	c-> a-. f-> d-.
@@ -189,7 +189,7 @@ musicViolinIIMvtIV = \relative c {
 	c-> aes-. f-> des-.
 % bars 151 to 155
 	des8.-> des16 des8 des
-	des r r des_\dimmarkup
+	des r r des-\offset X-offset #-1 _\dimmarkup
 	des8.\p des16 des8 des\>
 	des\! r r4
 	R2*2
@@ -221,7 +221,7 @@ musicViolinIIMvtIV = \relative c {
 	c r r d
 	c r r4
 	R2 \mark \default \bar "||"
-	c2\pp\<(
+	\hairpinShorten #'(0 . -1.8) c2\pp\<(
 	d\!
 % bars 181 to 185
 	e\>
@@ -233,10 +233,10 @@ musicViolinIIMvtIV = \relative c {
 	e4 d)\!
 	c\pp( e)
 	d16( e f g a4~
-	a2)\<
+	\hairpinShorten #'(0 . -5) a2)\<
 	f\!
 % bars 191 to 195
-	e4(\< c'~
+	e4(\< c'~\!
 	c\> b)
 	e,\p( c
 	d\> f)\!
@@ -256,8 +256,8 @@ musicViolinIIMvtIV = \relative c {
 % bars 206 to 210
 	
 	r4 a\pp^\pizz
-	r\< a
-	a,\! a'_\crescmarkup
+	\hairpinShorten #'(0 . -2) r\< a\!
+	a, a'_\crescmarkup
 	r a
 % bars 211 to 215
 	r\! a
@@ -280,8 +280,8 @@ musicViolinIIMvtIV = \relative c {
 % bars 226 to 230
 	c2:16
 	b8.\fz c16 b4:16
-	b'8_\crescmarkup e, b'8.\fz c16
-	b8 e, b'8.\fz c16
+	b'8_\crescmarkup e, b'8.-\offset X-offset #-1.5 \fz c16
+	b8 e, b'8.-\offset X-offset #-1.5 \fz c16
 	b8._\pcresc c16 b8. c16\<
 % bars 231 to 235
 	b8.->_\fzmarkup c16 b8. c16
@@ -304,7 +304,7 @@ musicViolinIIMvtIV = \relative c {
 % bars 246 to 250
 	c4._\fzcresc( a8)
 	b4(\< d8) gis,-.\!
-	<a, e' a>\f r <a e' a> r
+	<a, e' a>-\tweak extra-offset #'(0.5 . 0.5) \f r <a e' a> r
 	<a e' a> r <a e' a> r
 	ees'2\>~
 % bars 251 to 255
@@ -335,11 +335,11 @@ musicViolinIIMvtIV = \relative c {
 	\tuplet 3/2 {<a! g'!>8\< <a g'> <a g'>} <a g'> r
 	\tuplet 3/2 {<a a'>4.:8} <a a'>8\! r
 	\tuplet 3/2 {<bes! g'>4.:8} <bes g'>8_\crescmarkup r
-	\tuplet 3/2 {<b! g'>4.:8\<} <b g'>8 r
+	\tuplet 3/2 {<b! g'>4.:8-\tweak extra-offset #'(0 . 0.6) \<} <b g'>8 r
 	\tuplet 3/2 {<b! gis'>4.:8} <b gis'>8\! r
 % bars 276 to 280
 	\tuplet 3/2 {a'8\f a a} bes!( a)
-	\tuplet 3/2 {f_\dimmarkup\> f f} g( f)
+	\tuplet 3/2 {f_\dimD\> f f} g( f)
 	\tuplet 3/2 {c c c} d( c)\!
 	\tuplet 3/2 {bes bes bes} c( bes) \mark \default
 	a2\p~
@@ -359,7 +359,7 @@ musicViolinIIMvtIV = \relative c {
 	c
 	c(\<
 	e4 c)\!
-	<bes! d>2\fp\>~
+	\hairpinShorten #'(0 . -8) <bes! d>2\fp\>~
 	<bes d>\!
 % bars 296 to 300
 	d4\p\>( c~
@@ -388,9 +388,9 @@ musicViolinIIMvtIV = \relative c {
 % bars 316 to 320
 	f8) r \tuplet 3/2 {aes8( f aes}
 	f8) r \tuplet 3/2 {aes8(\< f aes\!}
-	f8) r \tuplet 3/2 {b\f b b}
-	\tuplet 3/2 {b b b} \tuplet 3/2 {b\< b b} 
-	\tuplet 3/2 {b b b} \tuplet 3/2 {b b b\!}
+	f8) r \tuplet 3/2 {b-\offset X-offset #-0.5 \f b b}
+	\tupletUp \tuplet 3/2 {b b b} \tuplet 3/2 {b\< b b} 
+	\tuplet 3/2 {b b b} \tuplet 3/2 {b b b\!} \tupletNeutral
 % bars 321 to 325
 	f'8:16\ff[ g: a!: a,:]
 	f':[ g: a: a,:]
@@ -418,7 +418,7 @@ musicViolinIIMvtIV = \relative c {
 % bars 341 to 345
 	\tuplet 3/2 {e( f) f-.} \tuplet 3/2 {des( c) c-.}
 	\tuplet 3/2 {des( c) c-.} \tuplet 3/2 {b( bes) bes-.} \mark \default
-	<f a>8 r <a c>4->\ff
+	<f a>8 r <a c>4->-\offset X-offset #1 \ff
 	r <a c>->
 	r <f a>->
 % bars 346 to 350
@@ -428,7 +428,7 @@ musicViolinIIMvtIV = \relative c {
 	\tuplet 3/2 {<f a>4.:8 } \tuplet 3/2 {<f bes>:}
 	\tuplet 3/2 {<f c'>4.:8 } \tuplet 3/2 {<bes e>:}
 % bars 351 to 355
-	\tuplet 3/2 {<a f'>8\ff <f a> <f a> } \tuplet 3/2 {<f a>4.:8}
+	\tuplet 3/2 {<a f'>8-\offset X-offset #-1 \ff <f a> <f a> } \once \tupletDown \tuplet 3/2 {<f a>4.:8}
 	\tuplet 3/2 {<f a>4.:8} \tuplet 3/2 {<f a>4.:8}
 	\tuplet 3/2 {<f a>4.:8} \tuplet 3/2 {<f a>4.:8}
 	\tuplet 3/2 {<f a>4.:8} \tuplet 3/2 {<f a>4.:8}
@@ -448,11 +448,11 @@ musicViolinIIMvtIV = \relative c {
 % bars 366 to 370
 	\tuplet 3/2 {f8( a) a-.} \tuplet 3/2 {a( e) e-.}
 	\tuplet 3/2 {a,4.:8\<} \tuplet 3/2 {a4.:8}
-	\tuplet 3/2 {a8( bes) bes-.} \tuplet 3/2 {bes( b) b-.}
+	\tuplet 3/2 {a8( bes) bes-.} \tupletUp \tuplet 3/2 {bes( b) b-.}
 	\tuplet 3/2 {b!8( c) c-.\!} \tuplet 3/2 {c(\< des) des-.}
-	\tuplet 3/2 {des8( d) d-.} \tuplet 3/2 {d( ees) ees-.}
+	\tuplet 3/2 {des8( d) d-.} \tuplet 3/2 {d( ees) ees-.} \tupletNeutral
 % bars 371 to 375
-	\tuplet 3/2 {ees8( f) f-.\!} \tuplet 3/2 {<des aes'>4.:8\fff}
+	\tuplet 3/2 {ees8( f) f-.\!} \once \tupletUp \tuplet 3/2 {<des aes'>4.:8\fff}
 	\tuplet 6/4 {<des aes'>2.:8}
 	<b b'>4 r
 	f' r

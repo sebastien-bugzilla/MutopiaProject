@@ -237,7 +237,7 @@ musicCelloMvtIV = \relative c {
 	d)\!
 % bars 191 to 195
 	e(\<
-	gis)\>
+	gis)\!
 	a\p\>(
 	d)\!
 	\tuplet 3/2 {a8\pp a a} a4(\<

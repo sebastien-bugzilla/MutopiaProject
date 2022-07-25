@@ -65,7 +65,7 @@ musicViolaMvtIV = \relative c {
 	b-. gis-.\! b-. e-. \mark \default
 	a,\ff r a r
 	a r a r
-	a-._\dimmarkup e-. a-.\p e-.
+	a-.-\offset X-offset #-0.5 _\dimmarkup e-. a-.\p e-.
 	a-.\> e-. a-. a'-.\!
 % bars 51 to 55
 	a\pp f a, c
@@ -179,10 +179,10 @@ musicViolaMvtIV = \relative c {
 	g: ees: aes: ees:
 	<c bes'!>8\< r <c bes'> r
 	<c bes'> r <c bes'>\! r
-	<c, bes'>2:16\<
+	\hairpinShorten #'(0 . -8) <c, bes'>2:16\<
 	<c bes'>:\! \mark \default
 % bars 146 to 150
-	<c a'>8 r f'->\ff d-.
+	<c a'>8 r f'->-\offset X-offset #-1.8 \ff d-.
 	c-> a-. f-> d-.
 	d8.-> d16 d8 d
 	d r f'-> des-.
@@ -221,7 +221,7 @@ musicViolaMvtIV = \relative c {
 	f r f r
 	f r r4
 	R2 \bar "||" \mark \default
-	e'2\pp\<(
+	\hairpinShorten #'(0 . -1.8) e'2\pp\<(
 	a,~\!
 % bars 181 to 185
 	a~\>
@@ -237,8 +237,8 @@ musicViolaMvtIV = \relative c {
 	bes' b)
 % bars 191 to 195
 	c(\< a
-	f'2\>)
-	e(\>
+	f'2)\!
+	\hairpinShorten #'(0.5 . 0) e(\>
 	f4\p d)
 	c\pp( b
 % bars 196 to 200
@@ -248,16 +248,16 @@ musicViolaMvtIV = \relative c {
 	a2\p(
 	f)
 % bars 201 to 205
-	c\fp(\>
-	f)\!
+	<< c-\offset X-offset #-1.3 \fp( {\hairpinShorten #'(0 . -3) s4\> s\!}>>
+	f2)\!
 	e\<
-	e\>
-	e\fz\>
+	<< e {\hairpinShorten #'(0 . -3) s4\> s\! }>>
+	e2\fz\>
 % bars 206 to 210
 	e\!
-	a(\<
-	f)\!
-	c_\crescmarkup(
+	a(
+	<<f) {\hairpinShorten #'(0 . -2) s4\< s\!} >>
+	\shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur c2-\tweak extra-offset #'(4.5 . 3.0) _\crescmarkup(
 	f)
 % bars 211 to 215
 	e(
@@ -335,11 +335,11 @@ musicViolaMvtIV = \relative c {
 	\tuplet 3/2 {cis\< cis cis} cis8 r
 	\tuplet 3/2 {d d d} d r\!
 	\tuplet 3/2 {<d f> <d f> <d f>} <d f>_\crescmarkup r
-	\tuplet 3/2 {<d f>\< <d f> <d f>} <d f> r
-	\tuplet 3/2 {<d f> <d f> <d f>} <d f>\! r
+	\once \tupletUp \tuplet 3/2 {<d f>\< <d f> <d f>} <d f> r
+	\once \tupletUp \tuplet 3/2 {<d f> <d f> <d f>} <d f>\! r
 % bars 276 to 280
-	\tuplet 3/2 {c\f c c } d( c)
-	\tuplet 3/2 {a\>_\dimmarkup a a} bes( a)
+	\tuplet 3/2 {c-\offset X-offset #-0.5 \f c c } d( c)
+	\tuplet 3/2 {a_\dimD\> a a} bes( a)
 	\tuplet 3/2 {f f f} bes( a)\!
 	\tuplet 3/2 {f f f} a( g\!) \mark \default
 	c,2\p~
@@ -357,9 +357,9 @@ musicViolaMvtIV = \relative c {
 	e~
 % bars 291 to 295
 	e~
-	e~\<
+	\hairpinShorten #'(0 . -3) e~\<
 	e\!
-	f\fp\>~
+	\hairpinShorten #'(0 . -8) f\fp\>~
 	f\!
 % bars 296 to 300
 	<c bes'>\p\>~
@@ -383,7 +383,7 @@ musicViolaMvtIV = \relative c {
 	\tuplet 3/2 {a( f a} f) r 
 	\tuplet 3/2 {a( f a} f) r 
 	\tuplet 3/2 {a( f a} f) r 
-	\tuplet 3/2 {a( f a} f)_\piucresc r 
+	\tuplet 3/2 {a( f a} f)-\tweak extra-offset #'(0 . 0.5) _\piucresc r 
 	\tuplet 3/2 {aes( f aes} f) r
 % bars 316 to 320
 	\tuplet 3/2 {aes( f aes} f) r
@@ -406,7 +406,7 @@ musicViolaMvtIV = \relative c {
 % bars 331 to 335
 	des r des'8.->\< ees16
 	des8-. aes-. f-. ees-.\!
-	des2->\f
+	des2^>\f
 	aes'->
 	gis4_\piuf d'!8-> gis,
 % bars 336 to 340
@@ -452,14 +452,14 @@ musicViolaMvtIV = \relative c {
 	\tuplet 3/2 {des( c) c-.} \tuplet 3/2 {c(\< bes) bes-.}
 	\tuplet 3/2 {bes( a) a-.} \tuplet 3/2 {a4.:8}
 % bars 371 to 375
-	\tuplet 3/2 {a8( aes) aes-.\!} \tuplet 3/2 {<aes! f'>4.:8\fff}
+	\tuplet 3/2 {a8( aes) aes-.\!} \once \tupletUp \tuplet 3/2 {<aes! f'>4.:8\fff}
 	\tuplet 6/4 {<aes f'>2.:8}
 	<aes f'>4 r
 	<aes aes'> r
 	<a! f' a!> r
 % bars 376 to 380
 	<c, bes' e> r
-	<c a' f'>8 r f'8.->\fz d16
+	<c a' f'>8 r f'8.->-\offset X-offset #-0.5 \fz d16
 	c8.-> a16 f8.-> d16
 	f8 r <f c'>8. <f c'>16
 	<f c'>2->

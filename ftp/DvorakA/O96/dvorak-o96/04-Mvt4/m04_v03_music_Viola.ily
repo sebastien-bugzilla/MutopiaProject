@@ -236,9 +236,9 @@ musicViolaMvtIV = \relative c {
 	dis4( e
 	bes' b)
 % bars 191 to 195
-	c(\< a\!
-	\hairpinShorten #'(0 . 2.5) f'2\>)
-	e(\>
+	c(\< a
+	f'2\!)
+	\hairpinShorten #'(-3 . 0) e(\>
 	f4\p d)
 	c\pp( b
 % bars 196 to 200
