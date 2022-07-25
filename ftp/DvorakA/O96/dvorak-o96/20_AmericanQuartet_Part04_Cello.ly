@@ -19,7 +19,6 @@
 \include "./00-Common/AmericanQuartet_LayoutParts.ily"
 \include "./00-Common/AmericanQuartet_Shortcuts.ily"
 \include "./00-Common/AmericanQuartet_Format_Part04_Cello.ily"
-%\include "./00-Common/AmericanQuartet_Format_temp.ily"
 \include "./00-Common/AmericanQuartet_Tempi.ily"
 \include "01-Mvt1/m01_v04_music_Cello.ily"
 \include "02-Mvt2/m02_v04_music_Cello.ily"

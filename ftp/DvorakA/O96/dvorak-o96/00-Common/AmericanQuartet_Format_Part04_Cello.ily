@@ -78,7 +78,7 @@ formatCelloMvtI = {
 	)
 	s1*8 \break 
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 133.51)
+		(Y-offset . 133.61)
 	)
 	s1*5 \break 
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -134,7 +134,7 @@ formatCelloMvtII = {
 	)
 	s2.*6 \break 
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 137.16)
+		(Y-offset . 137.03)
 	)
 	s2.*6 \break 
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(

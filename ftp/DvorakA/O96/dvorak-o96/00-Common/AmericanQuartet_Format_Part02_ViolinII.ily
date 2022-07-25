@@ -134,7 +134,7 @@ formatViolinIIMvtI = {
 	)
 	s1*4 \break 
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 91.38)
+		(Y-offset . 91.14)
 	)
 	s1*7 \break 
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
