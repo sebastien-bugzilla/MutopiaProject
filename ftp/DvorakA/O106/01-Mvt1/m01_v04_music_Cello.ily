@@ -1,14 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/09-Quatuor_13/01_StringQuartet_13_Op106_Mvt1_Voix4.ly
-%Fichier généré le :  lundi 11 novembre 2013, 11:05:21 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   1   -   V O I X   4               #
-%#######################################################################
-MvtUnVoixQuatre = \relative c {
+%  work        : String Quartet No. 13 in G Major, Op. 106
+%  typesetter  : Sébastien MANEN
+%  date        : Tuesday 26 July 2022, 09:29
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicCelloMvtI = \relative c {
+	\key g \major
 	\clef bass
-	\override TupletBracket #'bracket-visibility = ##f
 	\partial 16 {r16}
 % mesure 1 à 5
 	g'16\p g r8 g16 g r8
@@ -474,7 +472,7 @@ MvtUnVoixQuatre = \relative c {
 	e8.-> e16 e8-. a,-.
 	d8. d16 d4(\startTrillSpan
 	d2)\stopTrillSpan
-	<g, d'>8\ff\intempo[ <g d'> <g d'> <g d'>] 
+	<g, d'>8\ff^\intempo[ <g d'> <g d'> <g d'>] 
 	<g d'>-.[ <g d'>-. <g d'>-.] d''16-._\marcato e-. 
 % mesure 391 à 393
 	d-. g-. e-. d-. b-. g-. e-. d-.

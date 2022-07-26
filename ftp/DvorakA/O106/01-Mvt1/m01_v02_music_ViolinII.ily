@@ -1,14 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/09-Quatuor_13/01_StringQuartet_13_Op106_Mvt1_Voix2.ly
-%Fichier généré le :  lundi 11 novembre 2013, 11:05:21 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   1   -   V O I X   2               #
-%#######################################################################
-MvtUnVoixDeux = \relative c {
+%  work        : String Quartet No. 13 in G Major, Op. 106
+%  typesetter  : Sébastien MANEN
+%  date        : Tuesday 26 July 2022, 09:29
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolinIIMvtI = \relative c {
+	\key g \major
 	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
 	\partial 16 { b''16\p }
 % mesure 1 à 5
 	d8-- r16 b d8-- r16 b\<
@@ -471,7 +469,7 @@ MvtUnVoixDeux = \relative c {
 	g8.-> fis16 g8-. e-.
 	f8. e16 fis4(\startTrillSpan
 	fis2)\stopTrillSpan
-	<d, b' g'>8\noBeam\intempo <d b'>-.[ <d b'>-. <d b'>-.]
+	<d, b' g'>8\noBeam^\intempo <d b'>-.[ <d b'>-. <d b'>-.]
 	<d b'>-.[ <d b'>-. <d b'>-.] g'16-. g-.
 % mesure 391 à 393
 	g-._\marcato b-. g-. e-. d-. b-. g-. e-.

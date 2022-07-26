@@ -1,14 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/09-Quatuor_13/02_StringQuartet_13_Op106_Mvt2_Voix2.ly
-%Fichier généré le :  lundi 11 novembre 2013, 11:05:21 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   2   -   V O I X   2               #
-%#######################################################################
-MvtDeuxVoixDeux = \relative c {
+%  work        : String Quartet No. 13 in G Major, Op. 106
+%  typesetter  : Sébastien MANEN
+%  date        : Tuesday 26 July 2022, 09:29
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolinIIMvtII = \relative c {
 	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
+	\key ees \major
 % mesure 1 à 5
 	R4.*2
 	bes'4\p^\sulG\upbow bes16.\<( bes32-.)
@@ -18,7 +16,7 @@ MvtDeuxVoixDeux = \relative c {
 	bes4.\ff\>\downbow(
 	bes)(\p\>
 	bes)(\!
-	bes)(\pp\cantabilemoltoexpress
+	bes)(\pp^\cantabilemoltoexpress
 	bes)
 % mesure 11 à 15
 	bes4( c16 ees)
@@ -36,7 +34,7 @@ MvtDeuxVoixDeux = \relative c {
 	<bes g'>4->\downbow <aes f'>16. <g ees'>32
 	<g ees'>4._\dimmarkup^\rit \mark \default
 	\tempo "Un pochettino più mosso" 8=72 R4.*2^\intempo
-	r8 <ges' bes>32\p\pizz <ges bes> r16 r8
+	r8 <ges' bes>32\p^\pizz <ges bes> r16 r8
 % mesure 26 à 30
 	r8 <ges bes>32 <ges bes> r16 r8
 	r8 <ees ces'>32 <ees ces'> r16 r8
@@ -99,9 +97,9 @@ MvtDeuxVoixDeux = \relative c {
 % mesure 76 à 81
 	des\<[ ces bes aes]\! r8
 	R4.*1^\rit
-	\tempo "Tempo I." 8 = 63 r8 <g ees'>\p\pizz r
+	\tempo "Tempo I." 8 = 63 r8 <g ees'>\p^\pizz r
 	r <g ees'>\pp r \mark \default
-	R4.*2\arco
+	R4.*2^\arco
 % mesure 82 à 85
 	bes4\pp\upbow^\sulG bes16.[( bes32-.])
 	ees4.\<
@@ -130,7 +128,7 @@ MvtDeuxVoixDeux = \relative c {
 	\key c \major \tempo 8 = 72 <fis ais>4.\ff\<-^
 	<fis a!>
 % mesure 106 à 110
-	r8 <fis a>32\ff\pizz <fis a> r16 r8
+	r8 <fis a>32\ff^\pizz <fis a> r16 r8
 	r8 <a cis>32 <a cis> r16 r8
 	r8 <fis d'>32 <fis d'> r16 r8
 	r8 <fis a>32 <fis a> r16 r8
@@ -149,7 +147,7 @@ MvtDeuxVoixDeux = \relative c {
 	fis\pp b b fis b gis
 % mesure 121 à 125
 	<fis a>[ <fis a>] r <fis b> <fis cis'> <fis a> \mark \default 
-	bis32\arco^\pocoapocoanimato\<([ cis bis cis] dis[ e\> dis e] fis[ g! fis g])
+	bis32^\arco^\pocoapocoanimato\<([ cis bis cis] dis[ e\> dis e] fis[ g! fis g])
 	g\p\>([ fis g fis] eis[ fis eis fis] g![ fis a g])
 	bis,\<([ cis bis cis] dis[ e dis\> e] fis[ g! fis g])
 	g([\p\> fis g fis] eis[ fis eis fis] \times 4/5 {g[ fis a g fis])}

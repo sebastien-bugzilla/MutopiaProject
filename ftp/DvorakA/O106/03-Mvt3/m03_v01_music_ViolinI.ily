@@ -1,14 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/09-Quatuor_13/03_StringQuartet_13_Op106_Mvt3_Voix1.ly
-%Fichier généré le :  lundi 11 novembre 2013, 11:05:21 (UTC+0100)
-%-----------------------------------------------------------------------
-%	  /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\	    -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#		 M O U V E M E N T   3   -   V O I X   1		 #
-%#######################################################################
-MvtTroisVoixUne = \relative c {
+%  work        : String Quartet No. 13 in G Major, Op. 106
+%  typesetter  : Sébastien MANEN
+%  date        : Tuesday 26 July 2022, 09:29
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolinIMvtIII = \relative c {
 	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
+	\key b \minor
 % mesure 1 à 5
 	b''4-.\ff r b-.
 	b-. r b-.

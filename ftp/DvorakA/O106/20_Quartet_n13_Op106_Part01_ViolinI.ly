@@ -1,124 +1,60 @@
-%Fichier : /media/Documents/Partitions/lilypond/09-Quatuor_13/00_StringQuartet_13_Op106_Voix1.ly
-%Fichier généré le :  lundi 11 novembre 2013, 11:05:21 (UTC+0100)
-%#######################################################################
-%#             G E N E R A L I T E S   E T   E N T E T E               #
-%#######################################################################
-\paper {
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
-	bookTitleMarkup = \markup {
-	    \override #'(baseline-skip . 3.5)
-	    \column {
-		    \fill-line { \fromproperty #'header:dedication }
-		    \override #'(baseline-skip . 3.5)
-		    \column {
-		        \fill-line {
-			        \huge \larger \larger \bold
-			        \fromproperty #'header:title
-		        }
-		        \fill-line {
-			        \large %\bold
-			        \fromproperty #'header:subtitle
-		        }
-		        \fill-line {
-			        \smaller %\bold
-			        \fromproperty #'header:subsubtitle
-		        }
-		        \fill-line {
-			        \fromproperty #'header:poet
-			        { \large \bold \fromproperty #'header:instrument }
-			        \fromproperty #'header:composer
-		        }
-		        \fill-line {
-			        \fromproperty #'header:meter
-			        \fromproperty #'header:arranger
-		        }
-		    }
-	    }
-	}
-}
-%-----------------------------------------------------------------------
-\layout {
-}
-%-----------------------------------------------------------------------
-globalMvtUn = {
-	\version "2.16.2"
-	\time 2/4
-	\key g \major
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Allegro moderato" 4 = 88
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-globalMvtDeux = {
-	\version "2.16.2"
-	\time 3/8
-	\key ees \major
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Adagio ma non troppo" 8 = 63
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-globalMvtTrois = {
-	\version "2.16.2"
-	\time 3/4
-	\key b \minor
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Molto vivace" 2. = 92
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-globalMvtQuatre = {
-	\version "2.16.2"
-	\time 4/4
-	\key g \major
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Andante sostenuto" 4 = 58
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-\include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_StringQuartet_13_Op106_Mvt1_Voix1.ly"
-\include "02_StringQuartet_13_Op106_Mvt2_Voix1.ly"
-\include "03_StringQuartet_13_Op106_Mvt3_Voix1.ly"
-\include "04_StringQuartet_13_Op106_Mvt4_Voix1.ly"
-%#######################################################################
-%#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
-%#######################################################################
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Antonín Dvořák (1841 - 1904)
+%  work               : String Quartet No. 13 in G Major, Op. 106
+%  Source             : Berlin: N. Simrock, 1896. Plate 10684.
+%  Type of score      : Score for Violin I
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Tuesday 26 July 2022, 09:29
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/Quartet_n13_Op106_Header.ily"
+\include "./00-Common/Quartet_n13_Op106_PaperParts.ily"
+\include "./00-Common/Quartet_n13_Op106_timeMvt.ily"
+\include "./00-Common/Quartet_n13_Op106_LayoutParts.ily"
+\include "./00-Common/Quartet_n13_Op106_Shortcuts.ily"
+%\include "./00-Common/Quartet_n13_Op106_Format_Part01_ViolinI.ily"
+\include "./00-Common/Quartet_n13_Op106_Tempi.ily"
+%\include "/media/Documents/Partitions/lilypond/markup.ly"
+\include "./01-Mvt1/m01_v01_music_ViolinI.ily"
+\include "./02-Mvt2/m02_v01_music_ViolinI.ily"
+\include "./03-Mvt3/m03_v01_music_ViolinI.ily"
+\include "./04-Mvt4/m04_v01_music_ViolinI.ily"
+%###############################################################################
+%#                          S C O R E   S E C T I O N                          #
+%###############################################################################
 \book{
 	\header {
-		title = \markup { 
-		    \fontsize #5 \sans 
+		subtitle = \markup { 
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Antonin Dvorak"
-				"1841 - 1904"
+				"Part for Violino I"
 			}
 		}
-		subtitle = \markup { 
-		    \fontsize #5 \sans
-		    \center-column {
-			    \vspace #10
-			    "Quatuor à corde n°13 en Sol Majeur B. 192 Op106"
-			    "Pour 2 violons, alto et violoncelle"
-		    }
-	    }
-	    subsubtitle = \markup { 
-	        \fontsize #3 \sans
-	        \center-column {
-			    \vspace #10
-			    "Violon 1"
-		    }
-	    }
+		subsubtitle = \markup { 
+			"Antonín Dvořák — String Quartet No. 13 in F Major, Op. 106"
+		}
+		instrument = \markup {
+			"Violino I"
+		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnVoixUne >>
-		}
+		\new Staff << 
+%			\new Voice {
+%				\formatViolinIMvtI
+%			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \musicViolinIMvtI
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -128,11 +64,22 @@ globalMvtQuatre = {
 				}
 			}
 		}
+		\layout {
+			\layoutPart
+		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxVoixUne >>
-		}
+		\new Staff << 
+%			\new Voice {
+%				\formatViolinIMvtII
+%			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \musicViolinIMvtII
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -142,11 +89,22 @@ globalMvtQuatre = {
 				}
 			}
 		}
+		\layout {
+			\layoutPart
+		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtTrois \MvtTroisVoixUne >>
-		}
+		\new Staff << 
+%			\new Voice {
+%				\formatViolinIMvtIII
+%			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \musicViolinIMvtIII
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -156,11 +114,22 @@ globalMvtQuatre = {
 				}
 			}
 		}
+		\layout {
+			\layoutPart
+		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtQuatre \MvtQuatreVoixUne >>
-		}
+		\new Staff << 
+%			\new Voice {
+%				\formatViolinIMvtIV
+%			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \musicViolinIMvtIV
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -169,6 +138,9 @@ globalMvtQuatre = {
 					IV
 				}
 			}
+		}
+		\layout {
+			\layoutPart
 		}
 	}
 }
