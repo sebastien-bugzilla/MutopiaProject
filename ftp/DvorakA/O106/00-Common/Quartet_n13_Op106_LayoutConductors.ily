@@ -4,10 +4,15 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 17)
+#(set-global-staff-size 20)
 %#(ly:set-option 'debug-skylines #t)
 \layout {
-	#(layout-set-staff-size 17)
+	% temporary
+	\compressMMRests
+	\compressEmptyMeasures
+	\set Voice.restNumberThreshold = #0
+	% end temporary
+	#(layout-set-staff-size 20)
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatType = #":|.|:"
 	\set Score.markFormatter = #format-mark-box-numbers
@@ -32,14 +37,15 @@
 	}
 	\context {
 		\Score
-		\override RehearsalMark #'font-size = #6
+		\override RehearsalMark #'font-size = #4  % 6
 		\override RehearsalMark.extra-spacing-width = #'(-0.3 . 0.3) %0.7
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override RehearsalMark.extra-spacing-height = #'(-inf.0 . +inf.0)
 		\override DynamicTextSpanner.font-size = #0
-		\override BarNumber.font-size = #2
+		\override BarNumber.font-size = #0.1 %2
 		\override MeasureCounter.outside-staff-priority = #390
 		\override FootnoteItem #'annotation-line = ##f
-		\override MetronomeMark.font-size = #2
+%		\override MetronomeMark.font-size = #2
 	}
 }
+
