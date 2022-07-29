@@ -12,10 +12,10 @@ arco = \markup {\italic arco}
 atempo = \markup {\italic {a tempo}}
 benmarc = \markup {\italic {ben marc.}}
 cantabileedespressivo = \markup {\italic {cantabile ed espressivo}}
-cantabilemoltoexpress = \markup {\italic {cantabile e molto express.}}
+cantabileemoltoespressivo = \markup {\italic {cantabile e molto espressivo}}
 cant = \markup {\italic {cant.}}
 conforza = \markup {\italic {con forza}}
-consentimentomoltocantabile = \markup {\italic {con sentimento e molto cantabile}}
+consentimentoemoltocantabile = \markup {\italic {con sentimento e molto cantabile}}
 crescmarkup = \markup {\italic cresc.}
 crescmolto = \markup {\italic {cresc. molto}}
 detache = \markup {\italic {détaché}}
@@ -25,7 +25,6 @@ dolce = \markup {\italic {dolce}}
 espressivomarkup = \markup {\italic {espressivo}}
 espress = \markup {\italic {espress.}}
 grandioso = \markup {\italic grandioso}
-intempoconsentimentomoltocantabile = \markup {\italic {in tempo con sentimento e molto cantabile}}
 intempo = \markup {\italic {in tempo}}
 legato = \markup {\italic legato}
 leggiero = \markup {\italic leggiero}
@@ -56,8 +55,9 @@ ritmolto = \markup {\italic {rit. molto}}
 sempredim = \markup {\italic {sempre dim.}}
 simile = \markup {\italic simile}
 string = \markup {\italic string.}
+sulD = \markup {sul D}
 sulDcantab = \markup {\italic {sul D. cantab.}}
-sulG = \markup {sul G.}
+sulG = \markup {sul G}
 ten = \markup {\italic {ten.}}
 %tranquillo = \markup {\italic tranquillo}
 trem = \markup {\italic {trem.}}
@@ -114,9 +114,11 @@ pprit = \markup { \dynamic pp \italic {rit.}}
 ppsemplice = \markup { \dynamic pp \italic {semplice}}
 pptranquillo = \markup { \dynamic pp \italic {tranquillo}}
 
-dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
+dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
+crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 piufD = #(make-dynamic-script (markup #:normal-text #:italic "più" #:dynamic "f"))
 ffzdimD = #(make-dynamic-script (markup #:dynamic "ffz" #:normal-text #:italic "dim."))
+fzdimD = #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim."))
 
 ffz = #(make-dynamic-script "ffz")
 mffz = #(make-dynamic-script "mffz")
@@ -157,3 +159,10 @@ pocoapococrescendostringendo = #(make-music 'CrescendoEvent
              'span-type 'text
              'span-text "poco a poco crescendo e stringendo")
 
+
+markFourMvtII = \markup {
+	\center-column { 
+		\box \bold 4 
+		\fontsize #-4 \musicglyph "scripts.ufermata" 
+	}
+}
