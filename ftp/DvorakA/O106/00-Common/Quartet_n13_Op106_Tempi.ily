@@ -73,7 +73,13 @@ tempiMvtII = {
 	\tempo "a tempo" % bar 187
 }
 tempiMvtIII = {
-	\tempo "Molto vivace" 2. = 92
+	\tempo "Molto vivace. M.M." 2. = 92
+	s2.*230
+	\tempo "Un poco meno mosso." % bar 231
+	s2.*93 s4
+	\tempo "poco a poco cresc. e string." % bar 324.3
+	s2 s2.*4
+	\tempo "Tempo I." 2. = 92 % bar 329
 }
 tempiMvtIV = {
 	\tempo "Andante sostenuto" 4 = 58

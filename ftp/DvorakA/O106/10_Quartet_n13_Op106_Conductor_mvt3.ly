@@ -36,7 +36,7 @@
 				"3rd movement"
 			}
 		}
-		subsubtitle = \markup { 
+		subsubtitle = \markup {
 			"String Quartet No. 13 in G Major, Op. 106"
 		}
 		instrument = \markup {
@@ -47,7 +47,7 @@
 		<<
 			\new StaffGroup <<
 				\new GrandStaff <<
-					\new Staff <<
+					\new Staff \with { \RemoveAllEmptyStaves } <<
 %						\new Voice {
 %							\formatConductorMvtIII
 %						}

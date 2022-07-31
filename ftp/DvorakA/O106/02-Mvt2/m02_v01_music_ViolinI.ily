@@ -204,9 +204,9 @@ musicViolinIMvtII = \relative c {
 	des8([ ces])\) ees16(\crescpocoapocostringendo aes\!)
 	ges16.([ ees32)] ees8 ges!16( ees')
 	des16.[( bes32 bes8)] bes16->\< bes'->\!
-	bes4.\ff->(
+	bes4.\ff->~
 % mesure 176 à 180
-	bes16) ces-^ bes-^_\appass aes-^ ges-^ fes-^
+	bes16 ces-^ bes-^_\appass aes-^ ges-^ fes-^
 	ees\> des ces aes ges fes\! \mark \default 
 	ees8--\pp ees16( g f16. c!32)
 	bes4.

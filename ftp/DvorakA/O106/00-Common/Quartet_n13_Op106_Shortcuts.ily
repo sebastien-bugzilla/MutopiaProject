@@ -63,7 +63,7 @@ ten = \markup {\italic {ten.}}
 trem = \markup {\italic {trem.}}
 unpocoritardando = \markup {\italic {Un poco ritardando}}
 unpocoritard = \markup {\italic {Un poco ritard.}}
-
+crescestring = \markup {\italic {cresc. e string.}}
 
 fbenmarcato = \markup {\dynamic f \italic {ben marcato}}
 fconforza = \markup {\dynamic f \italic {con forza}}
@@ -119,6 +119,7 @@ crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 piufD = #(make-dynamic-script (markup #:normal-text #:italic "più" #:dynamic "f"))
 ffzdimD = #(make-dynamic-script (markup #:dynamic "ffz" #:normal-text #:italic "dim."))
 fzdimD = #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim."))
+piupD = #(make-dynamic-script (markup #:normal-text #:italic "più" #:dynamic "p"))
 
 ffz = #(make-dynamic-script "ffz")
 mffz = #(make-dynamic-script "mffz")
