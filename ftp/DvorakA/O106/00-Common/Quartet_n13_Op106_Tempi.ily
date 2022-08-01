@@ -82,7 +82,53 @@ tempiMvtIII = {
 	\tempo "Tempo I." 2. = 92 % bar 329
 }
 tempiMvtIV = {
-	\tempo "Andante sostenuto" 4 = 58
+	\tempo "Andante sostenuto. M.M." 4 = 58
+	s1*6
+	\tempo "Allegro con fuoco. M.M." 4 = 138 % bar 7
+	s2*213
+	\tempo "tranquillo." % bar 220
+	s2*9
+	\tempo "rit." % bar 229
+	s2
+	\tempo "Andante sostenuto. M.M." 4 = 58 % bar 230
+	s2*18
+	\tempo "Un poco ritard." % bar 248
+	s2*4
+	\tempo "Un pochettino più mosso. M.M." 4 = 66 % bar 252
+	s2*29
+	\tempo "string." % bar 281
+	s2*2
+	\tempo "rit. molto" % bar 283
+	s2
+	\tempo "in tempo" % bar 284
+	s2*15
+	\tempo "Allegro con fuoco. Tempo I. M.M." 4 = 138 % bar 299
+	s2*74
+	\tempo "rit." % bar 373
+	s2*2
+	\tempo "in tempo" % bar 375
+	s2*65
+	\tempo "Meno mosso." % bar 440
+	s2*6
+	\tempo "rit." % bar 446
+	s2*2
+	\tempo "Tempo I." % bar 448
+	s2*8
+	\tempo "Meno mosso." % bar 456
+	s2*6
+	\tempo "rit." % bar 462
+	s2*2 
+	\tempo "Tempo I." % bar 464
+	s2*8
+	\tempo "Meno mosso." % bar 472
+	s2*6
+	\tempo "rit." % bar 478
+	s2*2
+	\tempo "Tempo I. M.M." 4 = 138 % bar 480
+	s2*28 s4
+	\tempo "rit" % bar 508.5
+	s4 
+	\tempo "in tempo" % bar 509
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #

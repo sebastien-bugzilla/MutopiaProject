@@ -344,7 +344,7 @@ musicViolinIMvtIII = \relative c {
 		cis4-.\downbow cis8_\dimmarkup( e cis4)
 % mesure 276 à 280
 		b4-.\downbow b8(\upbow d b4)
-		a4-. a8( cis a4)
+		a4-. \stemUp a8( cis \stemNeutral a4)
 		g-. g8( b g4)
 		fis-. fis8( a fis4)
 		e8\pp\>( a e4) e8( a

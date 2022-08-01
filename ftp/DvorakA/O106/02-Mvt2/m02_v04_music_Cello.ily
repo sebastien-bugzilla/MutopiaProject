@@ -165,7 +165,7 @@ musicCelloMvtII = \relative c {
 	gis'16[\ff( a32.) bis,64] bis8\noBeam gis'16-- a32.( bis,64)
 % mesure 131 à 135
 	bis8\noBeam gis'16([ a32.) bis,!64-.]\< bis16( fis'32.) a,!64-.\! \clef bass
-	ais16\ff([ dis32.) fis,64-.] ais32-^[ dis, fis-^ c!] dis-^[ a c-^ fis,]
+	a16\ff([ dis32.) fis,64-.] ais32-^[ dis, fis-^ c!] dis-^[ a c-^ fis,]
 	fis16^\conforza-^[ <c! c'!>32. fis64] fis16-^[ <c! c'!>32. fis64] fis16-^[ <c c'>32. fis64]
 	<c! c'!>32-^[\ff fis <c c'>-^ fis] <c c'>32-^[ fis <c c'>-^ fis] <c c'>32-^[ fis <c c'>-^ fis]
 	<g e'>4_\ffgrandioso\downbow q16.\downbow q32

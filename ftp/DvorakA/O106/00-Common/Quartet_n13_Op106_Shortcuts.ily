@@ -44,6 +44,7 @@ pocoapocoanimato = \markup {\italic {poco a poco animato}}
 pocoapococresc = \markup {\italic {poco a poco cresc.}}
 pocoapococrescendostringendo = \markup {\italic {poco a poco cresc. e stringendo}}
 pocoapocopiuanimato = \markup {\italic {poco a poco più animato}}
+pocoapocorit = \markup {\italic {poco a poco rit}}
 pocomarcato = \markup {\italic {poco marcato}}
 pocoritardando = \markup {\italic {poco ritardando}}
 pocoritard = \markup {\italic {poco ritard.}}
@@ -131,10 +132,10 @@ cres = #(make-music 'CrescendoEvent
 %             'span-direction START
 %             'span-type 'text
 %             'span-text "molto cresc.")
-pocoapocorit = #(make-music 'CrescendoEvent
-             'span-direction START
-             'span-type 'text
-             'span-text "poco a poco rit.")
+%pocoapocorit = #(make-music 'CrescendoEvent
+%             'span-direction START
+%             'span-type 'text
+%             'span-text "poco a poco rit.")
 %pocoapococresc = #(make-music 'CrescendoEvent
 %             'span-direction START
 %             'span-type 'text
@@ -160,10 +161,19 @@ pocoapococrescendostringendo = #(make-music 'CrescendoEvent
              'span-type 'text
              'span-text "poco a poco crescendo e stringendo")
 
-
 markFourMvtII = \markup {
 	\center-column { 
 		\box \bold 4 
 		\fontsize #-4 \musicglyph "scripts.ufermata" 
 	}
 }
+
+setSextolet = {
+	\set subdivideBeams = ##t
+	\set baseMoment = #(ly:make-moment 1/8)
+	\set beatStructure = 2,2,2,2
+}
+unsetSextolet = {
+	\set subdivideBeams = ##f
+}
+
