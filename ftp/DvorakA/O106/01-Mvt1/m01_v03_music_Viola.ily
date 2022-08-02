@@ -45,7 +45,7 @@ musicViolaMvtI = \relative c {
 	b4.. b'16\p
 	b-. d-. b-. g-. a-. c-. a-. fis-.
 % mesure 31 à 35
-	g b g e b'8 r
+	g-. b-. g-. e-. b'8 r
 	R2*2
 	
 	r4 r8 \tuplet 3/2 8 {gis16(\f ais gis
@@ -88,7 +88,7 @@ musicViolaMvtI = \relative c {
 	ees8 ees'16-. ees,~ ees ees'-. ees,8~
 % mesure 66 à 70
 	ees_\dimmarkup ees'16-. ees,~ ees ees'-. ees,8~
-	\tuplet 3/2 4 {ees d'-. d,-. d'-. d, d'-.}
+	\tuplet 3/2 4 {ees d'-. d,-. d'-. d,-. d'-.}
 	dis,4\p( e!8 g~
 	g4 a8 fis!)
 	dis4( e8_\dimmarkup g~
@@ -196,7 +196,7 @@ musicViolaMvtI = \relative c {
 	<f, bes d>8_\ffrisoluto r r4 
 % mesure 156 à 160
 	r4 r8 f'-.
-	d8.->( c16-.) d8.-.( f16-.)
+	d8.->( c16-.) d8-.( f-.)
 	d8.( c16)-. d8 f16 f
 	f\f->[ f r f] f->[_\dimmarkup f r f]
 	f->[ f r f] f->[ f r f]
@@ -304,7 +304,7 @@ musicViolaMvtI = \relative c {
 	ais,8\fz(-> cis16) r g'!8->\fz( e16) r
 % mesure 246 à 250
 	ais,8\fz(-> cis16) r g'!8->\fz( e16) r
-	b8\fz( d16) r a'!8\fz( fis16) r
+	b8\fz(-> d16) r a'!8\fz(-> fis16) r
 	cis8\fz( e16) r b'8\fz( g16) r
 	<fis, b>2\fz
 	<cis g'>->
@@ -333,7 +333,7 @@ musicViolaMvtI = \relative c {
 	q-.( q-.) q-.( q-.) 
 	q-.( q-.) q-.( q-.) 
 % mesure 271 à 275
-	q-.( fis'!-.) b,-. c-.
+	q-.( fis'!-.) b,-.( c-.)
 	<b e>-.( <b e>-.) <b e>-.( <b e>-.) 
 	<c e>-.( q-.) q-.( q-.) 
 	q-.(_\pocoapococresc q-.) q-.( q-.) 
@@ -395,9 +395,9 @@ musicViolaMvtI = \relative c {
 % mesure 321 à 325
 	<c e>8\fz r \tuplet 3/2 4 {r b'-._\piufmarcato a-.
 	r g-. fis-. r e-. d-.
-	c c,-. c-. c4\noBeam(-> d16 dis)
-	e4( eis16 fis) g8( gis) a16( ais)
-	b4\fz( c!16 cis) d8( dis) e16( eis)}
+	c c,-. c-. c4\noBeam-> d16( dis)
+	e4 eis16( fis) g8( gis) a16( ais)
+	b4\fz c!16( cis) d8( dis) e16( eis)}
 % mesure 326 à 330
 	\tuplet 6/4 4 {fis8 g16( fis g b) g( fis g b) g( fis
 	g b) g( fis g b) g( fis g b g fis)
@@ -414,7 +414,7 @@ musicViolaMvtI = \relative c {
 	q8 r a'16\f( b) b( a)
 	r4_\dimmarkup b16(\< c)\! c\>( b)\!
 	r4 cis,16(\p\< d\!) d(\> cis)\!
-	r4\! << {f16\<( g!)\! g(\> f)\!} \\ {s16\> s s s\!}>>
+	r4\! << {\oneVoice f16\<( g!)\! g(\> f)\!} \\ {s16\> s s s\!}>>
 	e4(\pp d
 % mesure 341 à 345
 	e8 dis4 e16 fis)

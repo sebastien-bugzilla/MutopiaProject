@@ -161,8 +161,8 @@ musicViolaMvtIV = \relative c {
 % mesure 126 à 130
 		ges2\>(^\dimmarkup
 		bes4. d,!8)\!
-		ees2\pp\>(
-		ees)\pp \mark \default
+		ees2\pp\>~
+		ees\pp \mark \default
 	}
 	ees16\!( g d fis ees g ees g
 % mesure 131 à 135
@@ -613,7 +613,7 @@ musicViolaMvtIV = \relative c {
 	g8-.[ b( c) e-.]
 	g-. fis16( g) g8-. dis-.
 	e8-. dis16 e e8-. cis-.
-	c!4 r8 e-^_\ffpesante
+	d!4 r8 e-^_\ffpesante
 	a,4-^ r8 d-^
 % mesure 506 à 510
 	g,-^\downbow g-^\downbow r e'
@@ -648,11 +648,11 @@ musicViolaMvtIV = \relative c {
 % mesure 531 à 535
 	e a]) fis[( dis fis dis]) c![( e
 	c e]) b[( d! b d]) a( c
-	g'8\ff) fis4-> e8(
-	e) d4-> c8(
-	c) b4 a8(
+	g'8\ff) fis4-> e8~
+	e d4-> c8~
+	c b4 a8~
 % mesure 536 à 540
-	a) g4 fis8
+	a g4 fis8
 	g-. e'16( d) d8-. e16( d)
 	d8-. e16( d) d8-. fis16( g)
 	g8-. c16( b) b8-. e16( d)

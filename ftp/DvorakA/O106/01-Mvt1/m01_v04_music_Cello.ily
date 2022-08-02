@@ -23,7 +23,7 @@ musicCelloMvtI = \relative c {
 % mesure 11 à 15
 	r r8 \tuplet 3/2 8 {g'16(\f c g
 	e[ g e] \stemDown c[ e c]) \stemNeutral g[( c g]} c,16) r
-	r4 r8 \tuplet 3/2 {a''16\f[( c a]
+	r4 r8 \tuplet 3/2 8 {a''16\f[( c a]
 	e[ a e] \stemDown c[ e c]) \stemNeutral a[( c a]} c,16) r
 	r4 r8 \tuplet 3/2 8 {a''16\f[( c a]
 % mesure 16 à 20
@@ -77,7 +77,7 @@ musicCelloMvtI = \relative c {
 % mesure 56 à 60
 	g[\! d_\pesante b]) ais'\fz\<(
 	b[\! g d]) cis'(\fz
-	d16)\ff b-. d8~ d16 b-. d8->~
+	d16)\ff b-. d8->~ d16 b-. d8->~
 	d16 b-. d8->~ d16 b-. d8->
 	ees4.._\ffzferoce-^ d32(\< c
 % mesure 61 à 65
@@ -151,7 +151,7 @@ musicCelloMvtI = \relative c {
 	f8\ff(\< fis4.)\!
 	f8(\< fis4.)\!
 % mesure 121 à 125
-	\tuplet 6/4 4 {fis!8\ff bes,16 bes a a bes bes d d fis,! fis
+	\tuplet 6/4 4 {fis!8\fz bes,16 bes a a bes bes d d fis,! fis
 	fis! fis bes bes d, d fis fis bes, bes d d } \mark \default
 	\tuplet 3/2 4 {fis,8\ff fis'-. fis,-. d'4( fis8)
 	r fis-. fis,-. d'4( fis8)
@@ -195,7 +195,7 @@ musicCelloMvtI = \relative c {
 % mesure 156 à 160
 	c8( bes) r f'-.
 	bes,8.->( f16-.) bes8(-. d-.)
-	bes8. f16 bes8-. f-.
+	bes8.( f16-.) bes8-.( f-.)
 	bes,\f f' bes,-._\dimmarkup f!-.
 	bes f' bes,-. f-.
 % mesure 161 à 165
@@ -328,7 +328,7 @@ musicCelloMvtI = \relative c {
 % mesure 261 à 265
 	fis2\pp~
 	fis \mark \default
-	g8-.(\pp a,-.) g-. a-.
+	g8-.(\pp a,-.) g-.( a-.)
 	g-.( g-.) g-.( g-.)
 	g-.( a-.) g-.( a-.)
 % mesure 266 à 270
@@ -346,7 +346,7 @@ musicCelloMvtI = \relative c {
 % mesure 276 à 280
 	g16 g a8 g-.( a-.)
 	g16 g a8 g-.( a-.)
-	g16-. g-. a( g) g-.( g-.) a(\< g)
+	g16-. g-. a( g) g-. g-. a(\< g)
 	g g a( g) g g a( g)\!
 	g g aes( g) g g \tuplet 3/2 {aes( g ges)}
 % mesure 281 à 285
@@ -400,7 +400,7 @@ musicCelloMvtI = \relative c {
 % mesure 321 à 325
 	c8\fz r \tuplet 3/2 4 {r g''-._\piufmarcato fis-.
 	r e-. d-. r c-. b-.
-	a\fz a, gis a4 ais16( b)
+	a\fz a,-. gis-. a4 ais16( b)
 	c4\fz cis16( d) e4\fz-> eis16( fis)
 	g4->\fz gis16( a) b4\fz c16( cis)}
 % mesure 326 à 330
@@ -408,10 +408,10 @@ musicCelloMvtI = \relative c {
 	d8\<( dis4.)\!
 	dis8\fz r r4
 	\tuplet 6/4 4 {r8 g,16\ff g b, b dis dis g, g b b}
-	\tuplet 3/2 4 {r8 dis-^_\fconforza dis,-^ b'4( dis8) 
+	\tuplet 3/2 4 {r8 dis-^_\fconforza dis,-^ b'4( \once \stemUp dis8) 
 % mesure 331 à 335
-	r dis-^ dis,-^ b'4(-> dis8)
-	r dis-^\> dis,-^ b'4( dis8)\!
+	r dis-^ dis,-^ b'4(-> \once \stemUp dis8)
+	r dis-^\> dis,-^ b'4( \once \stemUp dis8)\!
 	r ees-. ees,-._\dimmarkup a4( ees'8)} \mark \default 
 	d,!8\mf r d-. d'16-. c-.
 	c8-.\< a-. \tuplet 3/2 {d,-. d'-. c-.\!}

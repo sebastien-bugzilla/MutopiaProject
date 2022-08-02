@@ -11,8 +11,8 @@ musicViolinIIMvtI = \relative c {
 % mesure 1 à 5
 	d8-- r16 b d8-- r16 b\<
 	d32( e d e d e d)\! r r4
-	R2*1
-	b,8\f[ c b c]
+	R2
+	b,8\f[-. c-. b-. c]-.
 	b r r8. b'16\p
 % mesure 6 à 10
 	g'8-- r16 b, g'8-- r16 b,
@@ -53,11 +53,11 @@ musicViolinIIMvtI = \relative c {
 % mesure 36 à 40
 	r4 r8 \tuplet 3/2 8 {b16( cis b
 	ais[ gis ais] b[ gis ais]} b8) ais-.\noBeam
-	b8.\ff\trill-.( ais16-.) b8-.( ais-.)
-	b8.\trill-.( ais16-.) b8-.( gis-.)
-	a!8.\trill-.( gis16-.) a8-.( gis-.)
+	b8.\ff\trill( ais16-.) b8-.( ais-.)
+	b8.\trill( ais16-.) b8-.( gis-.)
+	a!8.\trill( gis16-.) a8-.( gis-.)
 % mesure 41 à 45
-	a8.\trill-.( gis16-.) a8 a
+	a8.\trill( gis16-.) a8-. a-.
 	g!-. g-. fis-. fis-.
 	e-. e-. d-. cis-.
 	d8(-> e16) r e8->( g16) r
@@ -66,10 +66,10 @@ musicViolinIIMvtI = \relative c {
 	d( e) e16( g) g( c)
 	b( c!) c( fis) fis( a) a( d) \mark \default
 	b,8->\ff( d16) r d8->( g16) r
-	d8( b) <d, b'> d'-. 
-	g8.\fz->( fis16) g8(-. b-.)
+	d8( b) <d, b'>-. d'-. 
+	g8.\fz->( fis16-.) g8(-. b-.)
 % mesure 51 à 55
-	g8.\fz->( fis16) g8(-. b-.)
+	g8.\fz->( fis16-.) g8(-. b-.)
 	\tuplet 3/2 8 {g16[( b g] d[ g d]) b[( g b] a[ fis a])}
 	\acciaccatura g8 e'([ d c)] g'-.
 	\tuplet 3/2 8 {g16[( b g] d[ g d]) b[( g b] a[ fis a])}
@@ -121,7 +121,7 @@ musicViolinIIMvtI = \relative c {
 	bes(\prall\! a g} f4)~
 	\tuplet 3/2 {f8( g f} ees4)
 	\tuplet 3/2 4 {r8 d(\< c d4 ees8)
-	r8 \acciaccatura g8 fis( e! fis bes d,)\!
+	r8 \acciaccatura g8 f( e! f bes d,)\!
 % mesure 96 à 100
 	d(\f ees d} c4)
 	\tuplet 3/2 {bes8( c bes} a4)
@@ -145,7 +145,7 @@ musicViolinIIMvtI = \relative c {
 	dis_\piuf( fis b fis dis fis  b\< fis dis fis b fis)
 	b( fis dis' b fis b fis b fis b dis b)\!}
 	\tuplet 3/2 4 {ees8->\ff f, e! f4( g8)
-	a4( bes8) c4( d8)}
+	a4( \once \stemUp bes8) c4( d8)}
 % mesure 116 à 120
 	<g, ees'>8\f r \tuplet 6/4 4 {r8 aes16\f( e! f bes)
 	r8 c16( g aes d) r8_\crescmarkup ees16(\< b! c f)
@@ -155,11 +155,11 @@ musicViolinIIMvtI = \relative c {
 % mesure 121 à 125
 	\tuplet 6/4 4 {<bes d>8 bes16 bes a a bes bes d d fis,! fis
 	fis! fis bes bes d, d fis! fis bes, bes d d} \mark \default
-	<bes d>2\ffz->
-	<b! d>\ffz->
+	<bes d>2\ffz-^
+	<b! d>\ffz-^
 	<c a'>_\ffzdimD\>
 % mesure 126 à 130
-	<c a'>\fz->
+	<c a'>\fz
 	ees4.\mf( d8)
 	c4.( f8)
 	f4 fis~
@@ -221,7 +221,7 @@ musicViolinIIMvtI = \relative c {
 % mesure 176 à 180
 	cis-. bis-. cis-._\crescmarkup e-. ais,-. gisis-. ais-. cis-.
 	\acciaccatura b,8 <e b'>2\fp\>^^
-	r4\! <fis b>8->\mf <b, e>->_\marc
+	r4\! <fis b>8->_\mfmarc <b, e>->
 	r8 \tuplet 3/2 8 {e'16\fz([\> b' e,] b[ e b] e,[ b' e,]\!)}
 	r8 \tuplet 3/2 8 {e'16\fz([\> b' e,] b[ e b] e,[ b' e,]\!)}
 % mesure 181 à 185
@@ -438,7 +438,7 @@ musicViolinIIMvtI = \relative c {
 	b8\!_\mfcresc r16 b[ g8\!] r16 b
 	<b, g'>8 r r4
 	g8\f-> b,16 b g'8-> b,16 b
-	g'8-> e16-. e-. c'8 a16 a
+	g'8-> e16-. e-. c'8-> a16 a
 	b b_\crescmarkup( d) d( d) d( g) g
 % mesure 361 à 365
 	<b, g'>8\ff r <g g'> r
@@ -475,7 +475,7 @@ musicViolinIIMvtI = \relative c {
 	f8. e16 fis4~\startTrillSpan
 	fis2\stopTrillSpan
 	<d, b' g'>8\noBeam <d b'>-.[ <d b'>-. <d b'>-.]
-	<d b'>-.[ <d b'>-. <d b'>-.] g'16-. g-.
+	<d b'>[ <d b'> <d b'>] g'16-. g-.
 % mesure 391 à 393
 	g-._\marcatoM b-. g-. e-. d-. b-. g-. e-.
 	<b d>8 r <d b' g'> r

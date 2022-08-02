@@ -184,7 +184,7 @@ musicViolinIIMvtII = \relative c {
 	c8[\< ees]) c'16( ees,
 	d!8[ f]) d'16( f,)\!
 	ees4.\mf\>
-	fes8( bes,4)\!
+	fes8( bes,4)\!^\rit
 	aes!4\pp\> a8\!
 % mesure 151 à 155
 	bes4.\ppp(

@@ -185,7 +185,7 @@ musicViolaMvtII = \relative c {
 	ees8\< aes16( g f8)~
 	f bes16( aes g8)\!
 	g4.\mf\>
-	aes8^~( <fes) aes>4)\!
+	aes8^~( <fes) aes>4)^\rit\!
 	e8\pp(\> f fis)\!
 % mesure 151 à 155
 	g4.\ppp~

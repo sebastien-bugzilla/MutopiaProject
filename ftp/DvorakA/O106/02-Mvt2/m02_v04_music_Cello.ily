@@ -185,7 +185,7 @@ musicCelloMvtII = \relative c {
 	aes4(\< a8)
 	bes4( b8)\!
 	c4.\mf\>
-	des4.\!
+	des4.\!^\rit
 	d!4(\pp\> d16 ees!)\!
 % mesure 151 à 155
 	ees4.\ppp

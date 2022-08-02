@@ -399,7 +399,7 @@ musicCelloMvtIII = \relative c {
 	d\fz r r
 	bes,\fz( a) r
 	r r bes'(\fz
-	a8) r_\crescestring r4 r
+	a8) r r4 r
 	R2.
 % mesure 326 à 330
 	r4 r bes,\fz(^\crescmarkup

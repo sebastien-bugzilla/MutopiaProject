@@ -18,6 +18,7 @@ conforza = \markup {\italic {con forza}}
 consentimentoemoltocantabile = \markup {\italic {con sentimento e molto cantabile}}
 crescmarkup = \markup {\italic cresc.}
 crescmolto = \markup {\italic {cresc. molto}}
+crescpocoapoco = \markup {\italic {cresc. poco a poco}}
 detache = \markup {\italic {détaché}}
 dimin = \markup {\italic dimin.}
 dimmarkup = \markup {\italic dim.}
@@ -25,7 +26,6 @@ dolce = \markup {\italic {dolce}}
 espressivomarkup = \markup {\italic {espressivo}}
 espress = \markup {\italic {espress.}}
 grandioso = \markup {\italic grandioso}
-intempo = \markup {\italic {in tempo}}
 legato = \markup {\italic legato}
 leggiero = \markup {\italic leggiero}
 marcatissimo = \markup {\italic marcatissimo}
@@ -34,25 +34,17 @@ marcatosemprelegato = \markup {\italic {marcato e sempre legato}}
 marc = ^\markup {\italic marc.}
 moltoappassionato = \markup {\italic {molto appassionato}}
 moltocresc = \markup {\italic {molto cresc.}}
-moltoexpress = \markup {\italic {molto express.}}
-moltorit = \markup {\italic {molto rit.}}
+moltoespress = \markup {\italic {molto espress.}}
 morendo = \markup {\italic {morendo}}
 nonlegato = \markup {\italic {non legato}}
 pesante = \markup {\italic pesante}
 pizz = \markup {\italic pizz.}
-pocoapocoanimato = \markup {\italic {poco a poco animato}}
 pocoapococresc = \markup {\italic {poco a poco cresc.}}
-pocoapococrescendostringendo = \markup {\italic {poco a poco cresc. e stringendo}}
-pocoapocopiuanimato = \markup {\italic {poco a poco più animato}}
 pocoapocorit = \markup {\italic {poco a poco rit}}
 pocomarcato = \markup {\italic {poco marcato}}
-pocoritardando = \markup {\italic {poco ritardando}}
-pocoritard = \markup {\italic {poco ritard.}}
 pocorit = \markup {\italic {poco rit.}}
 risoluto = \markup {\italic risoluto}
-ritard = \markup {\italic ritard}
 rit = \markup {\italic rit.}
-ritmolto = \markup {\italic {rit. molto}}
 sempredim = \markup {\italic {sempre dim.}}
 simile = \markup {\italic simile}
 string = \markup {\italic string.}
@@ -60,106 +52,59 @@ sulD = \markup {sul D}
 sulDcantab = \markup {\italic {sul D. cantab.}}
 sulG = \markup {sul G}
 ten = \markup {\italic {ten.}}
-%tranquillo = \markup {\italic tranquillo}
 trem = \markup {\italic {trem.}}
-unpocoritardando = \markup {\italic {Un poco ritardando}}
-unpocoritard = \markup {\italic {Un poco ritard.}}
-crescestring = \markup {\italic {cresc. e string.}}
 
-fbenmarcato = \markup {\dynamic f \italic {ben marcato}}
-fconforza = \markup {\dynamic f \italic {con forza}}
-fdim = \markup {\dynamic f \italic dim.}
-ffbenmarcato = \markup {\dynamic ff \italic {ben marcato}}
-ffdetache = \markup {\dynamic ff \italic détaché}
-fffgrandioso = \markup {\dynamic fff \italic grandioso}
-fffmaestoso = \markup {\dynamic fff \italic maestoso.}
-ffgrandioso = \markup {\dynamic ff \italic grandioso}
-ffmaestoso = \markup {\dynamic ff \italic {maestoso.}}
-ffpesante = \markup {\dynamic ff \italic pesante}
-ffrisoluto = \markup {\dynamic ff \italic risoluto}
-ffzdetache = \markup {\dynamic ffz \italic détaché}
-ffzdim = \markup {\dynamic ffz \italic dim.}
-ffzferoce = \markup {\dynamic ffz \italic feroce}
-fpsempredim= \markup {\dynamic fp \italic {sempre dim.}}
-fzcresc= \markup {\dynamic fz \italic cresc.}
-fzcrescstring= \markup {\dynamic fz \italic {cresc. e string.}}
-fzdim= \markup {\dynamic fz \italic {dim.}}
-fzmarcato= \markup {\dynamic fz \italic marcato}
-fzmarc= \markup {\dynamic fz \italic marc.}
-fzmarkup = \markup {\dynamic fz}
-fzpocoapococrescstringendo= \markup {\dynamic fz \italic {poco a poco cresc. e stringendo}}
-fzpocoapocorit= \markup {\dynamic fz \italic {poco a poco rit.}}
-fzrisoluto= \markup {\dynamic fz \italic risoluto}
-mfanimato = \markup { \dynamic mf \italic animato}
-mfcresc = \markup { \dynamic mf \italic cresc.}
-mfleggiero = \markup { \dynamic mf \italic leggiero}
-mfpesante = \markup { \dynamic mf \italic pesante}
-mfpocoapocoanimato = \markup { \dynamic mf \italic {poco a poco animato}}
-mfpocoapocopiuanimato = \markup { \dynamic mf \italic {poco a poco più animato}}
-mpspiccato = \markup { \dynamic mp \italic spiccato}
-pcresc = \markup { \dynamic p \italic cresc.}
-pdim = \markup { \dynamic p \italic dim.}
-pespressioso = \markup { \dynamic p \italic espressioso}
-pespressivo = \markup { \dynamic p \italic espressivo}
-pintempo = \markup { \dynamic p \italic {in tempo}}
-piuf = \markup {\italic {più} \dynamic f}
-piufmarcato = \markup {\italic più \dynamic f \italic marcato}
-piup = \markup {\italic {più} \dynamic p}
-pleggiero = \markup { \dynamic p \italic leggiero}
-pmarcato = \markup { \dynamic p \italic {marcato}}
-pmoltocantabile = \markup { \dynamic p \italic {molto cantabile}}
-ppdim = \markup {\dynamic pp \italic dim.}
-ppmoltocantabile = \markup { \dynamic pp \italic {molto cantabile}}
-ppnonlegato = \markup { \dynamic pp \italic {non legato}}
-pprit = \markup { \dynamic pp \italic {rit.}}
-ppsemplice = \markup { \dynamic pp \italic {semplice}}
-pptranquillo = \markup { \dynamic pp \italic {tranquillo}}
+fbenmarcato = \markup {\hspace #0.1 \dynamic f \italic {ben marcato}}
+fconforza = \markup {\hspace #0 \dynamic f \italic {con forza}}
+fdim = \markup {\hspace #0.1 \dynamic f \italic dim.}
+ffbenmarcato = \markup {\hspace #-0.5 \dynamic ff \italic {ben marcato}}
+ffdetache = \markup {\hspace #-0.5 \dynamic ff \italic détaché}
+ffgrandioso = \markup {\hspace #-0.5 \dynamic ff \italic grandioso}
+ffmaestoso = \markup {\hspace #-0.5 \dynamic ff \italic {maestoso.}}
+ffpesante = \markup {\hspace #-0.5 \dynamic ff \italic pesante}
+ffrisoluto = \markup {\hspace #-0.5 \dynamic ff \italic risoluto}
+fffgrandioso = \markup {\hspace #-1.3 \dynamic fff \italic grandioso}
+fffmaestoso = \markup {\hspace #-1.3 \dynamic fff \italic maestoso.}
+ffzdetache = \markup {\hspace #-1.2 \dynamic ffz \italic détaché}
+ffzdim = \markup {\hspace #-1.2 \dynamic ffz \italic dim.}
+ffzferoce = \markup {\hspace #-1.2 \dynamic ffz \italic feroce}
+fpsempredim= \markup {\hspace #-0.75 \dynamic fp \italic {sempre dim.}}
+fzcresc = \markup {\hspace #-0.45 \dynamic fz \italic cresc.}
+fzdim = \markup {\hspace #-0.45 \dynamic fz \italic {dim.}}
+fzmarcato = \markup {\hspace #-0.45 \dynamic fz \italic marcato}
+fzmarc = \markup {\hspace #-0.45 \dynamic fz \italic marc.}
+fzmarkup = \markup {\hspace #-0.45 \dynamic fz}
+fzrisoluto = \markup {\hspace #-0.45 \dynamic fz \italic risoluto}
+mfcresc = \markup {\hspace #-0.8 \dynamic mf \italic cresc.}
+mfleggiero = \markup {\hspace #-0.8 \dynamic mf \italic leggiero}
+mfpesante = \markup {\hspace #-0.8 \dynamic mf \italic pesante}
+mfmarc = \markup {\hspace #-0.8 \dynamic mf \italic marc.}
+mpspiccato = \markup {\hspace #-0.95 \dynamic mp \italic spiccato}
+pcresc = \markup {\hspace #-0.1 \dynamic p \italic cresc.}
+pdim = \markup {\hspace #-0.1 \dynamic p \italic dim.}
+pespressioso = \markup {\hspace #-0.1 \dynamic p \italic espressioso}
+pespressivo = \markup {\hspace #-0.1 \dynamic p \italic espressivo}
+pintempo = \markup {\hspace #-0.1 \dynamic p \italic {in tempo}}
+pleggiero = \markup {\hspace #-0.1 \dynamic p \italic leggiero}
+pmarcato = \markup {\hspace #-0.1 \dynamic p \italic {marcato}}
+pmoltocantabile = \markup {\hspace #-0.1 \dynamic p \italic {molto cantabile}}
+piuf = \markup {\hspace #-3.9 \italic più \dynamic f}
+piufmarcato = \markup {\hspace #-3.9 \italic più \dynamic f \italic marcato}
+piup = \markup {\hspace #-3.9 \italic più \dynamic p}
+ppdim = \markup {\hspace #-0.8 \dynamic pp \italic dim.}
+ppmoltocantabile = \markup {\hspace #-0.8 \dynamic pp \italic {molto cantabile}}
+ppnonlegato = \markup {\hspace #-0.8 \dynamic pp \italic {non legato}}
+ppsemplice = \markup {\hspace #-0.8 \dynamic pp \italic {semplice}}
 
-dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
-crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
-piufD = #(make-dynamic-script (markup #:normal-text #:italic "più" #:dynamic "f"))
-ffzdimD = #(make-dynamic-script (markup #:dynamic "ffz" #:normal-text #:italic "dim."))
-fzdimD = #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim."))
-piupD = #(make-dynamic-script (markup #:normal-text #:italic "più" #:dynamic "p"))
+dimD = \tweak DynamicText.self-alignment-X #-0.71 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
+crescD = \tweak DynamicText.self-alignment-X #-0.75 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
+piufD = \tweak DynamicText.self-alignment-X #0.75 #(make-dynamic-script (markup #:normal-text #:italic "più" #:dynamic "f"))
+ffzdimD = \tweak DynamicText.self-alignment-X #-0.58 #(make-dynamic-script (markup #:dynamic "ffz" #:normal-text #:italic "dim."))
+fzdimD = \tweak DynamicText.self-alignment-X #-0.685 #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim."))
+piupD = \tweak DynamicText.self-alignment-X #0.67 #(make-dynamic-script (markup #:normal-text #:italic "più" #:dynamic "p"))
 
 ffz = #(make-dynamic-script "ffz")
 mffz = #(make-dynamic-script "mffz")
-cres = #(make-music 'CrescendoEvent
-             'span-direction START
-             'span-type 'text
-             'span-text "cresc.")
-%moltocresc = #(make-music 'CrescendoEvent
-%             'span-direction START
-%             'span-type 'text
-%             'span-text "molto cresc.")
-%pocoapocorit = #(make-music 'CrescendoEvent
-%             'span-direction START
-%             'span-type 'text
-%             'span-text "poco a poco rit.")
-%pocoapococresc = #(make-music 'CrescendoEvent
-%             'span-direction START
-%             'span-type 'text
-%             'span-text "poco a poco cresc.")
-dimi = #(make-music 'DecrescendoEvent
-             'span-direction START
-             'span-type 'text
-             'span-text "dim.")
-%dimin = #(make-music 'DecrescendoEvent
-%             'span-direction START
-%             'span-type 'text
-%             'span-text "dimin.")
-crescpocoapocostringendo = #(make-music 'CrescendoEvent
-             'span-direction START
-             'span-type 'text
-             'span-text "cresc. poco a poco e stringendo")
-stringcresc = #(make-music 'CrescendoEvent
-             'span-direction START
-             'span-type 'text
-             'span-text "string. cresc.")
-pocoapococrescendostringendo = #(make-music 'CrescendoEvent
-             'span-direction START
-             'span-type 'text
-             'span-text "poco a poco crescendo e stringendo")
 
 markFourMvtII = \markup {
 	\center-column { 

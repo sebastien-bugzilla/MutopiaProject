@@ -173,7 +173,7 @@ musicViolinIMvtII = \relative c {
 	ees8(\<[ c)] ees16( g32 f)
 	f8([ d)] f16( aes32 g)\!
 	g8\mf( f16\> ees d c)
-	bes( aes ges^\rit fes ees des)\!
+	bes(^\rit aes ges fes ees des)\!
 	des8.\pp(\> c!8 ces16)\!
 % mesure 151 à 155
 	bes4.\ppp~
@@ -201,7 +201,7 @@ musicViolinIMvtII = \relative c {
 	fes8[ ees]\) ges,16(\<^\sulD ees')\!
 % mesure 171 à 175
 	ees16.([\> des32 des8)]\! ces16\pp\(( bes)
-	des8([ ces])\) ees16(\crescpocoapocostringendo aes\!)
+	des8([ ces])\) ees16(_\crescpocoapoco aes\!)
 	ges16.([ ees32)] ees8 ges!16( ees')
 	des16.[( bes32 bes8)] bes16->\< bes'->\!
 	bes4.\ff->~
