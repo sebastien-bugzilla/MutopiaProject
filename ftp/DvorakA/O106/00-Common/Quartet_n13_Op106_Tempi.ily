@@ -21,7 +21,7 @@ tempiMvtI = {
 	s4 s2*3
 	\tempo "Tempo I." % bar 348
 	s2*35
-	\tempo \markup { \column { \lower #1 "Meno mosso." "Maestoso"}} % bar 383
+	\tempo \markup { \column { \lower #0.8 "Meno mosso," "maestoso"}} % bar 383
 	s2*6
 	\tempo "in tempo" % bar 389
 }

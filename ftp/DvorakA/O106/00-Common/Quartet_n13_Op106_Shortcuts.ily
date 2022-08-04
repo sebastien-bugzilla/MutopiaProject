@@ -25,6 +25,7 @@ dimmarkup = \markup {\italic dim.}
 dolce = \markup {\italic {dolce}}
 espressivomarkup = \markup {\italic {espressivo}}
 espress = \markup {\italic {espress.}}
+feroce = \markup {\italic {feroce}}
 grandioso = \markup {\italic grandioso}
 legato = \markup {\italic legato}
 leggiero = \markup {\italic leggiero}
@@ -121,4 +122,79 @@ setSextolet = {
 unsetSextolet = {
 	\set subdivideBeams = ##f
 }
+
+% DEFAULT SCRIPT POSITION
+% from http://lilypond.1069038.n5.nabble.com/Articulation-mark-amp-slur-placement-td237907.html#a237941
+%
+#(define my-script-alist
+	(
+		append `(
+			("marcato"
+				(script-stencil . (feta . ("dmarcato" . "umarcato")))
+				(padding . 0.20)
+				(avoid-slur . outside)
+				;;(staff-padding . ())
+				(quantize-position . #t)
+				(side-relative-direction . ,DOWN))
+			("staccatissimo"
+				(avoid-slur . outside)
+				(quantize-position . #t)
+				(script-stencil . (feta . ("dstaccatissimo" . "ustaccatissimo")))
+				(padding . 0.20)
+				(skyline-horizontal-padding . 0.10)
+				(side-relative-direction . ,DOWN)
+				(toward-stem-shift . 1.0)
+				(toward-stem-shift-in-column . 0.0))
+		)
+		default-script-alist)
+)
+
+
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
+
+tempoXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.X-offset = #offset
+	#}
+)
+
+markXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+tupletOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override TupletNumber.Y-offset = #offset 
+	#}
+)
+
+trillSpanPadding = #(define-music-function
+	(padding)
+	(number?)
+	#{
+		\once \override TrillSpanner.bound-details.right.padding = #padding
+	#}
+)
 

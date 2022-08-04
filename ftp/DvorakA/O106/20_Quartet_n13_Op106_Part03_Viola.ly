@@ -66,6 +66,10 @@
 		}
 		\layout {
 			\layoutPart
+			\context {
+				\Score 
+				scriptDefinitions = #my-script-alist
+			}
 		}
 	}
 	\score {
@@ -91,6 +95,10 @@
 		}
 		\layout {
 			\layoutPart
+			\context {
+				\Score 
+				scriptDefinitions = #my-script-alist
+			}
 		}
 	}
 	\score {
@@ -116,6 +124,10 @@
 		}
 		\layout {
 			\layoutPart
+			\context {
+				\Score 
+				scriptDefinitions = #my-script-alist
+			}
 		}
 	}
 	\score {
@@ -141,6 +153,10 @@
 		}
 		\layout {
 			\layoutPart
+			\context {
+				\Score 
+				scriptDefinitions = #my-script-alist
+			}
 		}
 	}
 }
