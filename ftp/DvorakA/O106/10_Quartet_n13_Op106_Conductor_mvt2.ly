@@ -18,13 +18,14 @@
 \include "./00-Common/Quartet_n13_Op106_timeMvt.ily"
 \include "./00-Common/Quartet_n13_Op106_LayoutConductors.ily"
 \include "./00-Common/Quartet_n13_Op106_Shortcuts.ily"
-%\include "./00-Common/Quartet_n13_Op106_Format_Cond_Mvt02.ily"
+\include "./00-Common/Quartet_n13_Op106_Format_Cond_Mvt02.ily"
+%\include "./00-Common/Quartet_n13_Op106_Format_temp.ily"
 \include "./00-Common/Quartet_n13_Op106_Tempi.ily"
 %\include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "./02-Mvt2/m02_v01_music_ViolinI.ily"
-\include "./02-Mvt2/m02_v02_music_ViolinII.ily"
-\include "./02-Mvt2/m02_v03_music_Viola.ily"
-\include "./02-Mvt2/m02_v04_music_Cello.ily"
+\include "./02-Mvt2/m02_v01_music_ViolinI_C.ily"
+\include "./02-Mvt2/m02_v02_music_ViolinII_C.ily"
+\include "./02-Mvt2/m02_v03_music_Viola_C.ily"
+\include "./02-Mvt2/m02_v04_music_Cello_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -49,8 +50,11 @@
 				\new GrandStaff <<
 					\new Staff <<
 %						\new Voice {
-%							\formatConductorMvtI
+%							\displayFilterVoice
 %						}
+						\new Voice {
+							\formatConductorMvtII
+						}
 						\new Voice {
 							\tempiMvtII
 						}

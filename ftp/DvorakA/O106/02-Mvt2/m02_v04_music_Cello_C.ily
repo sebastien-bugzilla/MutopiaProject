@@ -10,9 +10,9 @@ musicCelloMvtII = \relative c {
 % mesure 1 à 5
 	ees4.~\pp
 	ees_\crescmarkup
-	ees\<
-	<< ces {s8\mf\< s s\!} >>
-	bes8( aes4)\f\<
+	\hairpinShorten #'(0 . 2) ees\<
+	<< ces {\hairpinShorten #'(0 . -2) s8\mf\< s s\!} >>
+	bes8( << aes4) {s8\f\< s16 s\!} >>
 % mesure 6 à 10
 	<ees bes'>4.\ff\downbow\>~
 	q16.[ q32]\! q8.\p q16
@@ -28,12 +28,12 @@ musicCelloMvtII = \relative c {
 % mesure 16 à 20
 	q4\! q8\p\<
 	q4^>\fz\> q8\p\<
-	<< q4 {s8\fz\> s_\crescD } >> \stemUp ees'16(\< c) \stemNeutral
+	<< q4 {s8\fz\> s_\crescD } >> \stemUp ees'16(\< c)\! \stemNeutral
 	<bes ees>4\f <bes f'>8
 	ees4\< ees16-^\ff c-^
 % mesure 21 à 25
 	<bes ees>4-^ <bes d>8-^
-	<< <ees, bes'>4. {s8\> s s\!} >>  \mark \default
+	<< <ees, bes'>4. {\hairpinShorten #'(0 . -1.5) s8\> s s\!} >>  \mark \default
 	ees32_\pintempo([ bes' ees, bes'] ees16 f ges ees)
 	ees,32([ bes' ees, bes'] ees16_\dimmarkup f ges ees)
 	ees,32([\pp bes' ees, bes'] ees16 f ges ees)
@@ -76,7 +76,7 @@ musicCelloMvtII = \relative c {
 % mesure 56 à 60
 	aes ges e f ges f)
 	r8 bes\pp r\fermata \mark \default
-	ees16^\pizz\pp[ r32 ees ees16 r32 ees ees16 r32 ees]
+	ees16-\offset X-offset #-1 ^\pizz\pp[ r32 ees ees16 r32 ees ees16 r32 ees]
 	ees16[ r32 ees ees16 r32 ees ees16 r32 ees]
 	ees16[ r32 ees ees16 r32 ees ees16 r32 ees]
 % mesure 61 à 65
@@ -86,15 +86,15 @@ musicCelloMvtII = \relative c {
 	ees'16[ r32 ees ees16 r32 ees, ees'16 r32 ees]
 	ees16[ r32 ees,] ees'16[ r32 ees g16 g->]
 % mesure 66 à 70
-	g-.\mf^\arco g-. g32( bes g bes) g16-. g-.
+	g-.\mf-\offset X-offset #1 ^\arco g-. g32( bes g bes) g16-. g-.
 	g-. g-.\< g32( bes g bes) gis16-. gis-.\!
 	gis-. gis-. gis32(_\crescmarkup b gis b) gis16-. gis-.
 	gis-.[ gis-.] gis32([ b gis b)] a16-.[ a-.]
 	a-.[\< a-.] a32([ c a c)] a16-^ a-^\!
 % mesure 71 à 75
-	\tuplet 3/2 {bes32->\ff[ g ees } bes16] \tuplet 3/2 {bes'32->[ g ees } bes16] \tuplet 3/2 {b'32->[ aes f } b,16]
+	\tuplet 3/2 {bes32->-\offset X-offset #-1.5 \ff[ g ees } bes16] \tuplet 3/2 {bes'32->[ g ees } bes16] \tuplet 3/2 {b'32->[ aes f } b,16]
 	\tuplet 6/4 {c'32-.[ g-. ees-. c-. g-. ees-.]} c16 r c''-> ces->
-	bes4 aes8\>
+	bes4 \hairpinShorten #'(0 . -15) aes8\>
 	g4(\! f8)\p
 	ges4_\dimmarkup d!16-- ees--
 % mesure 76 à 80
@@ -106,12 +106,12 @@ musicCelloMvtII = \relative c {
 % mesure 81 à 85
 	ees-.([ ees-. ees-. ees-.] \tuplet 3/2 {ees-. ees-. ees-.)}
 	ees32-.[ ees-. ees-. ees-.] ees32-.[ ees-. ees-. ees-.] ees32-.[ ees-. ees-. ees-.] 
-	\tuplet 6/4 8 {<ces ees>-.[_\moltocresc q-. q-. q-. q-. q-.] q-.[\< q-. q-. q-. q-. q-.] q-.[ q-. q-. q-. q-. q-.]\!
-	\stemUp <bes f'>-.\ff\< q-. q-. q-. q-. q-.] \stemNeutral <aes ees'>-.[ q-. q-. q-. q-. q-.] q-.[ q-. q-. q-. q-. q-.]\!
-	<ees bes'>-.[\f\> q-. q-. q-. q-. q-.] q-.[ q-. q-. q-. q-. q-.] q-.[ q-. q-. q-. q-._\dimD q-.]}
+	\tupletUp \tuplet 6/4 8 {<ces ees>-.[_\moltocresc q-. q-. q-. q-. q-.] q-.[\< q-. q-. q-. q-. q-.] q-.[ q-. q-. q-. q-. q-.]\!
+	\tupletDown \stemUp <bes f'>-.\ff\< q-. q-. q-. q-. q-.] \stemNeutral <aes ees'>-.[ q-. q-. q-. q-. q-.] q-.[ q-. q-. q-. q-. q-.]\! \tupletNeutral
+	<ees bes'>-.[\f\> q-. q-. q-. q-. q-.] q-.[ q-. q-. q-. q-. q-.] q-.[ q-. q-. q-. q-. q-.]_\dimD}
 % mesure 86 à 90
 	q-.\p\>[ q-. q-. q-.] \tuplet 3/2 {q16-.[ q-. q-.]} q-. q-.\!
-	q4.\pp\>
+	\hairpinShorten #'(0 . 2.5) q4.\pp\>
 	ees32\pp([ bes' ees, bes'] ees16 f ges ees)
 	f( ges aes f ges aes)
 	bes8( ces c)
@@ -129,9 +129,9 @@ musicCelloMvtII = \relative c {
 	g8( e_\crescmarkup d)
 % mesure 101 à 105
 	c( b g)
-	fis4.\mf\<
+	\hairpinShorten #'(0 . -20) fis4.\mf\<
 	fis\! \bar "||" \mark #5 \key c \major
-	fis,32(\ff[^\marcatosemprelegato cis' fis,\< cis')] fis16-> gis-> ais-> fis->
+	fis,32(\ff[-\offset X-offset #2 _\marcatosemprelegato cis' fis,\< cis')] fis16-> gis-> ais-> fis->
 	fis,32([ cis' fis, cis')] fis16-> gis-> a!-> fis->\!
 % mesure 106 à 110
 	fis,32([\ff cis' fis, cis')] fis16^\simile gis a! fis
@@ -147,32 +147,32 @@ musicCelloMvtII = \relative c {
 	fis4.
 % mesure 116 à 120
 	gis8(\< b d,!)\!
-	cis4.\>
+	\hairpinShorten #'(0 . 4) cis4.\>
 	e4\p e16.( e32-.)
 	dis4.
 	d!4\pp d16.( d32-.)
 % mesure 121 à 125
 	cis4. \mark \default
-	fis8\<(^\moltoappassionato g8.\> ais,16)\!
-	<<ais4. {s8\p\> s s\!} >>
+	fis8\<(_\moltoappassionato g8.\> ais,16)\!
+	<<ais4. {s8\p\> s s16 s\!} >>
 	fis'8\<( g8.\> ais,16)\!
 	<<ais4. {s8\p\> s s\!} >>
 % mesure 126 à 130
 	gis'8--\f\< a!8.( bis,16)\!
-	bis4._\crescmarkup
+	bis4.-\offset X-offset #10.5 _\crescmarkup
 	gis'8-- a8.( bis,16)
 	bis4.
 	gis'16[\ff( a32.) bis,64] bis8\noBeam gis'16-- a32.( bis,64)
 % mesure 131 à 135
 	bis8\noBeam gis'16([ a32.) bis,!64-.]\< bis16( fis'32.) a,!64-.\! \clef bass
 	a16\ff([ dis32.) fis,64-.] ais32-^[ dis, fis-^ c!] dis-^[ a c-^ fis,]
-	fis16^\conforza-^[ <c! c'!>32. fis64] fis16-^[ <c! c'!>32. fis64] fis16-^[ <c c'>32. fis64]
-	<c! c'!>32-^[\ff fis <c c'>-^ fis] <c c'>32-^[ fis <c c'>-^ fis] <c c'>32-^[ fis <c c'>-^ fis]
-	<g e'!>4_\ffgrandioso\downbow q16.\downbow q32
+	fis16_\conforza-^[ <c! c'!>32. fis64] fis16-^[ <c! c'!>32. fis64] fis16-^[ <c c'>32. fis64]
+	<c! c'!>32^^[-\offset X-offset #0.5 \ff fis <c c'>^^ fis] <c c'>32^^[ fis <c c'>^^ fis] <c c'>32^^[ fis <c c'>^^ fis]
+	<g e'!>4_\ffgrandioso-\tweak extra-offset #'(-.5 . -0.8) \downbow q16.-\tweak extra-offset #'(-.5 . -1) \downbow q32
 % mesure 136 à 140
-	q4.-^
-	<g e' c'>8-^ \arpeggio q8\downbow \arpeggio <g f' c'>8\downbow \arpeggio
-	<g e' c'>16[ \arpeggio g32-^ c-^\downbow] e16-^\downbow g-^\downbow c-^\downbow e-^\downbow
+	q4.^^
+	<g e' c'>8\arpeggio\downbow q8\downbow\arpeggio <g f' c'>8\downbow\arpeggio
+	<g e' c'>16[\arpeggio g32-^ c-^] e16-^\downbow g-^\downbow c-^\downbow e-^\downbow
 	<g,, e'>8\downbow q\downbow <g f'>\downbow
 	<g e' c'>16\downbow[ r q\downbow] r\fermata r8 \bar "||" \key ees \major \mark \default
 % mesure 141 à 145
@@ -185,7 +185,7 @@ musicCelloMvtII = \relative c {
 	aes4(\< a8)
 	bes4( b8)\!
 	c4.\mf\>
-	des4.\!^\rit
+	des4.\!-\offset X-offset #6.5 ^\rit
 	d!4(\pp\> d16 ees!)\!
 % mesure 151 à 155
 	ees4.\ppp
@@ -201,7 +201,7 @@ musicCelloMvtII = \relative c {
 	q4\! q8\<
 % mesure 161 à 165
 	q4\fz\> q8\<
-	q4\fz\> ees8(\<
+	<< q4\fz {\hairpinShorten #'(0 . -3) s8\> s\!} >> ees8(\<
 	c\! f) bes\fermata_\dimmarkup \mark \default
 	ees,16\pp-.( ees-. ees-. ees-. ees-. ees-.)
 	ees-.( ees-. ees-. ees-. ees-. ees-.)
@@ -232,7 +232,7 @@ musicCelloMvtII = \relative c {
 % mesure 186 à 190
 	R4.
 	e,,8\pp(\< f16 bes) bes8\!
-	f'32-> bes,-> r16 r8 d_\fdim\fermata \bar "||"
+	f'32-> bes,-> r16 r8 d-\offset X-offset #-1.5 _\fdim\fermata \bar "||"
 	ees4.\pp~
 	ees8( des4)
 % mesure 191 à 195

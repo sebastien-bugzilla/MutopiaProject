@@ -9,9 +9,10 @@ musicViolinIIMvtII = \relative c {
 	\key ees \major
 % mesure 1 à 5
 	R4.*2
+	
 	bes'4\p^\sulG\upbow bes16.\<( bes32-.)\!
-	ees4.\mf\<
-	f8--\! aes8.(\f ces,16)
+	<< ees4. {\hairpinShorten #'(0 . -2) s8\mf\< s s\!} >>
+	f8-- aes8.(\f ces,16)
 % mesure 6 à 10
 	bes4.\ff\>\downbow~
 	bes~\p
@@ -26,13 +27,13 @@ musicViolinIIMvtII = \relative c {
 	<bes d>4.\>
 % mesure 16 à 20
 	<g ees'>4\! g'8\p\<
-	bes16\fz\>( bes,)\! bes8([ g')]\p\<
-	bes16\fz( bes,) bes8_\crescD\< <bes g'>16( <g ees'>)\!
+	\hairpinShorten #'(-0.5 . -1) bes16\fz\>( bes,)\! bes8([ g')]\p\<
+	bes16\fz( bes,) bes8-\tweak extra-offset #'(0 . 0.5) _\crescD\< <bes g'>16( <g ees'>)\!
 	<g g' ees'>4\f \arpeggio <d' bes'>16( <aes f'>)
-	<g ees'>4\< bes16\ff-^\downbow ees-^
+	<g ees'>4\< bes16\ff^^\downbow ees^^
 % mesure 21 à 25
-	<bes g'>4^>\downbow <aes f'>16. <g ees'>32
-	<g ees'>4._\dimmarkup \mark \default
+	<bes g'>4-^\downbow <aes f'>16. <g ees'>32
+	<< <g ees'>4. {\hairpinShorten #'(0 . -1.5) s8\> s s\!} >> \mark \default
 	R4.*2
 	
 	r8 <ges' bes>32\p^\pizz q r16 r8
@@ -45,20 +46,20 @@ musicViolinIIMvtII = \relative c {
 % mesure 31 à 35
 	r8 <ees ges>32 q r16 r8
 	r8 <ees ges>32 q r16 r8
-	r8 r <d aes'>32\fz q r16
+	r8 r <d aes'>32-\offset X-offset #-1.5 \fz q r16
 	r8 r16 q32\p q r8
-	r8 r q32\fz q r16
+	r8 r q32-\offset X-offset #-1.5 \fz q r16
 % mesure 36 à 40
 	r8 r16 q32\p q r8
 	r8 r <e bes'>32\fz q r16
 	r8 r16 q32\p q r8
-	r8 r q32\< q\! r16
+	r8 r \hairpinShorten #'(-1 . -1) q32\< q\! r16
 	r8 r16 q32\mf q r8
 % mesure 41 à 45
 	r8 r <e aes!>32 q r16
-	r8 <e a>32\> q\! r16 r8
+	r8\> <e a>32 q\! r16 r8
 	<f a>32\> <f a> r16 r8 <fis c'>32\p <fis c'> r16 \mark \default
-	<d! b'>8\pp r8 r
+	<d! b'>8-\offset X-offset #0.5 \pp r8 r
 	b'\p^\arco\< d8.( f,16)\!
 % mesure 46 à 50
 	f16( d b') r r8
@@ -87,19 +88,19 @@ musicViolinIIMvtII = \relative c {
 % mesure 66 à 70
 	bes[(\mf g d g]) d16.->[ bes32] bes[( ees g bes])
 	bes[( g d g\<]) d16.->[ bes32] b[( e gis b])\!
-	b[( gis dis gis])_\crescmarkup dis16.->[ b32] b[( e gis b])
+	b[( gis dis gis]) dis16.->[_\crescmarkup b32] b[( e gis b])
 	b[( gis dis gis)] dis16.->[ b32] c![( f! a c])
 	c[(\< a e a]) e16.->[ c32] c16[ f32( fis)]\!
 % mesure 71 à 75
-	<bes,! g'>4_\ffgrandioso-^ aes'16.[( g32])
+	<bes,! g'>4-\tweak extra-offset #'(0.7 . 1) _\ffgrandioso-^ aes'16.[( g32])
 	g8. r16 g,([ aes!32 a])
 	\acciaccatura bes8( ees8)\noBeam \tuplet 3/2 {es32[-> bes-> g->} ees16->] ces'8(\>
-	bes) \tuplet 3/2 {bes32[-> g-> ees->} bes16->]\! aes'8\p[(
-	ges])_\dimmarkup \tuplet 3/2 {aes32[ ges des} bes16] f'--[ ees--]
+	bes) \once \tupletDown \tuplet 3/2 {bes32[^> g^> ees^>} bes16^>]\! aes'8\p[(
+	ges])-\offset X-offset #0.5 _\dimmarkup \tuplet 3/2 {aes32[ ges des} bes16] f'--[ ees--]
 % mesure 76 à 80
-	des\<[-> ces-> bes-> aes->]\! r8
+	des\<[^> ces^> bes^> aes^>]\! r8
 	R4.
-	r8 <g ees'>\p^\pizz r
+	r8 <g ees'>\p-\tweak extra-offset #'(0 . -0.7) ^\pizz r
 	r <g ees'> r \mark \markFourMvtII
 	R4.*2
 % mesure 81 à 85
@@ -128,9 +129,9 @@ musicViolinIIMvtII = \relative c {
 	e( fis e fis g16[_\crescmarkup a b g]) 
 % mesure 101 à 105
 	e(\< fis g d! e eis)\!
-	fis\mf\<([ gis ais fis)] ais( fis32 cis)
+	fis\mf\<([ gis ais fis)] \beamOffset #'(0 . 0.5) ais( fis32 cis)
 	b16( ais ais cis b ais)\! \bar "||" \mark #5 \key c \major 
-	<fis ais>4.\ff\<-^
+	<fis ais>4.-\offset X-offset #-1.5 \ff\< ^^
 	<fis a!>\!
 % mesure 106 à 110
 	r8 <fis a>32\ff^\pizz q r16 r8
@@ -161,19 +162,19 @@ musicViolinIIMvtII = \relative c {
 	a([ gis a gis] fisis[_\crescmarkup gis fisis gis] a[ gis b! a])
 	cisis,[( dis cisis dis] eis[ fis eis fis] gis[ a! gis a])
 	a([ gis a gis] fisis[ gis fisis gis] \tuplet 5/4 {a[ gis b a gis])}
-	cisis,[(\ff dis eis fis]) \tuplet 5/4 {a[( gis b! a gis])} cisis,![( dis! eis! fis!])
+	cisis,[(-\offset X-offset #-0.5 \ff dis eis fis]) \tuplet 5/4 {a[( gis b! a gis])} cisis,![( dis! eis! fis!])
 % mesure 131 à 135
 	\tuplet 5/4 {a[( gis b a gis])} cisis,[( dis) eis-. fis-.] r16 d32-. ees-.
 	r16 b32-. c!-. r a\ff\downbow r fis\downbow r dis\downbow r c\downbow
-	c4.\ffz-^~
+	c4.\ffz^^~
 	c16 r r8 r16 <dis a'>-.
-	\slashedGrace g,8 <e'! c'>4_\fffgrandioso <e c'>16.\downbow q32\upbow
+	\slashedGrace g,8 <e'! c'>4-\offset X-offset #1 _\fffgrandioso-\tweak extra-offset #'(-.5 . -0.8) \downbow <e c'>16.-\tweak extra-offset #'(-.5 . -0.8) \downbow q32
 % mesure 136 à 140
-	\slashedGrace g8 <c e>4.-^\downbow
-	<g, e' c' e>8 \arpeggio q\arpeggio <d' c' a'> \arpeggio
+	\slashedGrace g8 <c e>4.-^
+	<g, e' c' e>8\arpeggio\downbow q\arpeggio\downbow <d' c' a'>\arpeggio\downbow
 	\slashedGrace g,8 <g' e'>4\downbow q8\downbow
-	<g, e' c' e>8[\downbow \arpeggio q\downbow] \arpeggio <g f' d'>16\<\downbow \arpeggio a''32(\upbow g)]\!
-	<g,, e' c' g'>16[ \arpeggio r <g e' c' e>] \arpeggio r\fermata r8 \bar "||" \mark \default \key ees \major
+	<g, e' c' e>8[\downbow\arpeggio q\downbow]\arpeggio \stemDown \beamOffset #'(1 . 0) <g f' d'>16\downbow-\tweak rotation #'(14 -1 0) \<\arpeggio a''32( g)]\! \stemNeutral
+	<g,, e' c' g'>16[\arpeggio\downbow r <g e' c' e>\downbow]\arpeggio r\fermata r8 \bar "||" \mark \default \key ees \major
 % mesure 141 à 145
 	c4\pp c8
 	c4 c8
@@ -197,7 +198,7 @@ musicViolinIIMvtII = \relative c {
 	g'( f\prall ees)
 	g8([\< bes)] aes32( g f ees)\!
 	\set doubleSlurs = ##t <bes d>4.(\>
-	<g ees'>4) g'8\< \set doubleSlurs = ##f
+	<g ees'>4)\! g'8\< \set doubleSlurs = ##f
 % mesure 161 à 165
 	bes16(\fz bes,) bes8( g')\<
 	bes16\fz( bes,\<) bes8( g')\!
@@ -209,7 +210,7 @@ musicViolinIIMvtII = \relative c {
 	ges4( fes16 ces)
 	ees4 ees16(\< ees')\!
 	ees16.\>([ des32 des8)]\! ces16(\pp bes
-	des8[ ces]) ees,16\<( ces'!)\!
+	des8[ ces]) \beamOffset #'(0 . -0.5) ees,16\<( ces'!)\!
 % mesure 171 à 175
 	ces16.(\>[ bes32 bes8])\! ees,16\pp( des
 	bes8 aes) ces_\crescmarkup
@@ -226,24 +227,24 @@ musicViolinIIMvtII = \relative c {
 	ees,8-- ees16--( g f16. c32)
 	ees4( c'8)
 	bes\<( c) bes\!
-	<ees, c'>4.->\fz~
+	<ees, c'>4.^>\fz~
 	q8 r r
 % mesure 186 à 190
 	R4.
 	d8\pp[ d16.( c32]\< f ees c cis)\!
-	d-> d-> r16 r8 aes8_\fdim\fermata \bar "||"
+	d-> d-> r16 r8 aes8-\offset X-offset #-1.5 _\fdim\fermata \bar "||"
 	R4.*4\!
 	
 % mesure 191 à 195
 	
 	
-	ees''8\mf(\<^\espress g8.\>_\dimmarkup c,!16--)\!
+	ees''8-\offset X-offset #-1.5 \mf(\<-\offset X-offset #-7 ^\espress g8.\>_\dimmarkup c,!16--)\!
 	bes8(\< ees8.\> aes,16--)\!
 	g!8\p( bes16. f32 ees16. c32)
 % mesure 196 à 200
 	ees4-- bes16.( bes32-.)
 	ees4-- bes16.( bes32-.)
-	g'4.\<_\espress
+	g'4.\<^\espress
 	\once \stemUp bes4\>( aes8)\!
 	g8\p r r
 % mesure 201 à 202

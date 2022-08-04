@@ -52,7 +52,7 @@ tempiMvtII = {
 	s4.*18
 	\tempo "poco a poco animato." % bar 122
 	s4.*13
-	\grace {s8} \tempo "Tempo I. M.M." 8 = 63 % bar 135
+	\grace {s8} \tempo "Tempo I." 8 = 63 % bar 135
 	s4.*6
 	\tempo "tranquillo" % bar 141
 	s4.*9
