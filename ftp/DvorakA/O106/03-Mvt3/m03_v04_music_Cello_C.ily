@@ -101,7 +101,7 @@ musicCelloMvtIII = \relative c {
 	fis_\dimmarkup~
 	fis~
 	fis \mark \default
-	b4_\piup r b
+	b4-\offset X-offset #1 _\piup r b
 	b r b
 % mesure 81 à 85
 	b2.:8
@@ -140,21 +140,21 @@ musicCelloMvtIII = \relative c {
 	aes,-. ees'-. aes,-.
 	aes r r
 % mesure 111 à 115
-	\tuplet 2/3 2. { des'4.*2/3\pp^\arco-- aes--
+	\tuplet 2/3 2. { des'4.*2/3\pp-\offset X-offset #-5 ^\arco-- aes--
 	des-- aes--
 	bes-- f--
 	g!-- des!--
-	ees-- e--
+	\tupletUp ees-- e--
 % mesure 116 à 120
 	f-- ees!--\<
 	c-- bes--
 	aes-- des--\!}
-	\tuplet 3/2 4. { des'4*3/2(\mf f8*3/2 aes,4*3/2 c8*3/2)
+	\tupletDown \tuplet 3/2 4. { des'4*3/2(\mf f8*3/2 aes,4*3/2 c8*3/2)
 	des4*3/2( f8*3/2 aes,4*3/2 c8*3/2)
 % mesure 121 à 125
 	bes4*3/2( des8*3/2 f,4*3/2 aes8*3/2)
 	g!4*3/2( bes8*3/2 des,!4*3/2 f8*3/2)
-	ees4*3/2( g8*3/2 e4*3/2_\dimmarkup g8*3/2)
+	ees4*3/2( g8*3/2 e4*3/2_\dimmarkup g8*3/2) \tupletNeutral
 	f4*3/2( bes8*3/2 ges4*3/2 bes8*3/2)\>
 	f4*3/2( bes8*3/2 ges4*3/2 bes8*3/2)
 % mesure 126 à 130
@@ -172,7 +172,7 @@ musicCelloMvtIII = \relative c {
 % mesure 136 à 140
 	aes(
 	des)\<
-	aes4.-- ees--\!
+	aes4.--\! ees--
 	aes2._\crescmarkup~
 	aes\<
 % mesure 141 à 145
@@ -254,13 +254,13 @@ musicCelloMvtIII = \relative c {
 	b2\fp( ais4)
 	a!2.\fz(
 % mesure 206 à 210
-	g!)_\dimmarkup
-	f(\>
+	g!)-\offset X-offset #5 _\dimmarkup
+	\hairpinShorten #'(0 . 5) f(\>
 	ees)\!
-	<ees bes'>\mp~\>
+	\hairpinShorten #'(0 . -10) <ees bes'>\mp~\>
 	q\!
 % mesure 211 à 215
-	<fis! ais>~_\dimmarkup
+	<fis! ais>~-\offset X-offset #5 _\dimmarkup
 	q 
 	b8-.\pp fis-. b-. fis-. b-. fis-. 
 	b-. fis-. b-. fis-. b-. fis-. 
@@ -337,9 +337,9 @@ musicCelloMvtIII = \relative c {
 		b( b8 d b4)
 		cis2.~
 		cis4 r r
-		a,2.->_\dimmarkup~
+		<< a,2.~-> {s4 s_\dimmarkup s} >>
 % mesure 276 à 280
-		a~
+		a2.~
 		a
 		cis~
 		cis
@@ -439,7 +439,7 @@ musicCelloMvtIII = \relative c {
 	b,-. r gis'-.
 % mesure 356 à 360
 	b,-. r gis'-.
-	<b, fis'>\ff-. r <b g'!>-.
+	<b, fis'>-\offset X-offset #0.6 \ff-. r <b g'!>-.
 	<b fis'>8-. <b fis'>-. r4 <b e>-.
 	<b fis'>2.->~
 	<b fis'>4 r r
@@ -504,7 +504,7 @@ musicCelloMvtIII = \relative c {
 	d2(\fz cis4)
 	d2(\fz cis4) \stemNeutral
 % mesure 411 à 415
-	c2.\mf\>(
+	c2.\mf-\alterBroken shorten-pair #'(() (0 . -11)) \>(
 	bes)
 	aes(
 	ges)\!

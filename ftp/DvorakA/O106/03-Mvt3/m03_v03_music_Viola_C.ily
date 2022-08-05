@@ -78,7 +78,7 @@ musicViolaMvtIII = \relative c {
 	g,4-. b-. r8 g'-. 
 	g,4-. b-. r8 g'-. 
 	b,4 r r
-	a'4.--\fz g8-. f4-.
+	a'4.---\tweak extra-offset #'(0.5 . 2) \fz g8-. f4-.
 % mesure 61 à 65
 	f4.--\fz e8-. d4-.
 	d4.--\fz c8\noBeam-. b-. a-.
@@ -89,7 +89,7 @@ musicViolaMvtIII = \relative c {
 	c-. c-. c-.
 	fis,! r r
 	R2.
-	d4.->\f fis8-. b4-.
+	d4.^>\f fis8-. b4-.
 	b-. b-. b-.
 % mesure 71 à 75
 	c4.\f( e8-.\>) a4-.
@@ -98,10 +98,10 @@ musicViolaMvtIII = \relative c {
 	ges,4.( bes8-.) ees4-.\!
 	e,!2.\mp(
 % mesure 76 à 80
-	g!_\dimmarkup
+	g!-\tweak extra-offset #'(0 . 2.7) _\dimmarkup
 	fis!
 	e) \mark \default
-	fis8-._\piup fis-. fis-. fis-. g!-. g-.
+	fis8-.-\offset X-offset #1 _\piup fis-. fis-. fis-. g!-. g-.
 	fis-. fis-. fis-. fis-. g-. g-.
 % mesure 81 à 85
 	fis2.:8
@@ -120,10 +120,10 @@ musicViolaMvtIII = \relative c {
 	dis( dis,) dis-. dis-. dis-. dis-.
 	dis-. dis-. dis-. dis-. dis-. dis-.
 	gis4\fermata r r\fermata \bar "||" \key aes \major
-	c4(\mp\< ees aes_\espressivomarkup
+	c4(-\offset X-offset #1.3 \mp\< ees aes_\espressivomarkup
 % mesure 96 à 100
 	c ees c\!)
-	\tuplet 2/3 {bes4--(\> f--)\!}
+	\tupletOffset #-1.2 \tuplet 2/3 {bes4--(\> f--)\!}
 	<c ees>2.
 	R2.*4
 	
@@ -144,17 +144,17 @@ musicViolaMvtIII = \relative c {
 	des-- c--
 	bes-- aes--
 	g-- f--
-	ees-- des--
+	\tupletUp ees-- des--
 % mesure 116 à 120
-	c-- ees--\<
+	c-- ees--\< 
 	ees-- f--
 	aes-- aes--\!
-	des,(\mf aes
-	des aes)
+	\tupletOffset #2.1 des,(\mf aes
+	\tupletOffset #2.1 des aes)
 % mesure 121 à 125
 	bes( f
 	g! des!)
-	ees(_\dimmarkup e
+	ees(_\dimmarkup e \tupletNeutral
 	f ges\>
 	g ges~
 % mesure 126 à 130
@@ -245,22 +245,22 @@ musicViolaMvtIII = \relative c {
 	b4.\fz a8\noBeam-. gis-. fis-. \mark \default
 	\grace {s8} e4\f r r
 	R2.
-	e4.\ff->^\marcatissimo a8-. e'4-.
+	e4._\ffmarcatissimo^> a8-. e'4-.
 	e-. e-. e-.
 % mesure 201 à 205
 	b r r
 	R2.
-	dis,4.\f->^\marcatissimo gis8-. dis'4-.
+	dis,4._\fmarcatissimo^> gis8-. dis'4-.
 	dis-. dis-. dis-.
 	a!4.-> cis!8 fis4
 % mesure 206 à 210
-	g,!4. b8_\dimmarkup e4
-	f,4.->\> a8 d4\!
+	g,!4. b8-\offset X-offset #-1.5 _\dimmarkup e4
+	f,4.-\offset X-offset #0.2 ->\> a8 d4\!
 	ees,4.-> g8 c!4
 	ees,4.\mp\> g8-. bes4-.
 	ees,4. g8-. bes4-.\!
 % mesure 211 à 215
-	e,!4. ais8_\dimmarkup cis!4
+	e,!4. ais8-\offset X-offset #-1.5 _\dimmarkup cis!4
 	e,4. ais8 cis4
 	b8-.\pp cis-. b-. cis-. b-. cis-. 
 	b-. cis-. b-. cis-. b-. cis-. 
@@ -279,13 +279,13 @@ musicViolaMvtIII = \relative c {
 	d!4-.\f r r
 % mesure 226 à 230
 	cis-. r r
-	<fis, b d> \arpeggio r <b d>\ff\upbow
+	<fis, b d>\arpeggio r <b d>-\offset X-offset #0.8 \ff\upbow
 	<b e>\downbow <a! fis'> <cis e>8-. <cis e>-.
 	<fis, b d>4-. \arpeggio r r
 	b-^ r r\fermata \mark \default
 % mesure 231 à 235
 	\repeat volta 2 {
-		d,2.\pp~
+		d,2.-\offset X-offset #-0.7 \pp~
 		d~
 		d~
 		d~
@@ -316,7 +316,7 @@ musicViolaMvtIII = \relative c {
 		<fis a>2\downbow_\crescmarkup <fis a>4-.
 % mesure 256 à 260
 		<fis a>4.(\< d'8) <a fis'>4-.\!
-		<cis e>2.\>->~
+		\hairpinShorten #'(0.5 . 0) <cis e>2.\>->~
 		q2\! r4 \mark \default
 		R2.*2
 		
@@ -356,10 +356,10 @@ musicViolaMvtIII = \relative c {
 		fis~
 		fis~
 		fis
-		r8 d\p fis_\leggiero a d g
+		r8 d_\pleggiero fis a d g
 		d4-. d,-. r
 % mesure 291 à 295
-		r8 d\< fis a d g
+		r8 \beamOffset #'(0 . -0.5) d\< fis a d g
 		d4-. d,-.\! r
 		g2.\f~
 		g_\crescmarkup
@@ -384,7 +384,7 @@ musicViolaMvtIII = \relative c {
 	\acciaccatura d8 a'2.~
 	a
 % mesure 311 à 315
-	fis'8->(\< d a fis d) r
+	\hairpinShorten #'(0 . 2) fis'8->(-\tweak rotation #'(-3 1 0) \< d a fis d) r
 	e'->( cis a g e cis)\! \mark \default
 	d4\mf r r
 	cis''2\sf( a8 fis)
@@ -402,7 +402,7 @@ musicViolaMvtIII = \relative c {
 	a8) r r4 r
 	r bes,\fz( a8) r
 % mesure 326 à 330
-	r4 cis8\f a g e
+	r4 \beamOffset #'(-0.5 . -0.5) cis8\f a g e
 	cis'\< a g e cis' a
 	g e cis' a g e\!
 	d4-.\ff r d-.
@@ -415,7 +415,7 @@ musicViolaMvtIII = \relative c {
 	bes'-> bes bes bes bes bes
 % mesure 336 à 340
 	aes-> aes aes aes aes aes \mark \default
-	fis!->\fp fis'-. fis,-. fis'-. fis,-. fis'-. 
+	fis!^>\fp fis'-. fis,-. fis'-. fis,-. fis'-. 
 	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-. 
 	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-. 
 	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-. 
@@ -439,7 +439,7 @@ musicViolaMvtIII = \relative c {
 	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-. 
 % mesure 356 à 360
 	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-. 
-	<b, d!>4-.\ff r <b e>-.
+	<b, d!>4-.-\offset X-offset #0.6 \ff r <b e>-.
 	<b d>8-. <b d>-. r4 <b e>-.
 	<b d>2.->~
 	<b d>4 r r
@@ -490,13 +490,13 @@ musicViolaMvtIII = \relative c {
 	g,4-. b-. r8 g'-.
 	g,4-. b-. r8 g'-.
 	g,4 r r
-	a'4.--\fz g8-. f4-.
+	a'4.---\tweak extra-offset #'(0.5 . 1) \fz g8-. f4-.
 % mesure 401 à 405
 	f4.-- e8-. d4-.
 	d4.-- c8[-. b-. a]-. \mark \default
 	\grace {s8} g4 r r
 	R2.
-	g4.\f^\marc c8-. g'4-.
+	g4._\fmarc c8-. g'4-.
 % mesure 406 à 410
 	g-. g-. g-.
 	d4 r r
