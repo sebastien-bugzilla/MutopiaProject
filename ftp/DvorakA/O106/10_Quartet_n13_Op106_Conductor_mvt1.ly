@@ -19,7 +19,6 @@
 \include "./00-Common/Quartet_n13_Op106_LayoutConductors.ily"
 \include "./00-Common/Quartet_n13_Op106_Shortcuts.ily"
 \include "./00-Common/Quartet_n13_Op106_Format_Cond_Mvt01.ily"
-%\include "./00-Common/Quartet_n13_Op106_Format_temp.ily"
 \include "./00-Common/Quartet_n13_Op106_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_ViolinI_C.ily"
 \include "./01-Mvt1/m01_v02_music_ViolinII_C.ily"
@@ -48,9 +47,6 @@
 			\new StaffGroup <<
 				\new GrandStaff <<
 					\new Staff <<
-%						\new Voice {
-%							\displayFilterVoice
-%						}
 						\new Voice {
 							\formatConductorMvtI
 						}
