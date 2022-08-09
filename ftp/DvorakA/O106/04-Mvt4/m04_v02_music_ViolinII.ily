@@ -351,7 +351,7 @@ musicViolinIIMvtIV = \relative c {
 	e4.( cis8
 	dis4 e)
 	\tuplet 3/2 {r8 e-^\f d-^} e8.( fis16)
-	d4--^\< e~\!
+	d4--\< e~\!
 	<< e2 {s8\> s s s\!} >>
 % mesure 291 à 295
 	e8_\pmarcato^\pizz fis \tuplet 3/2 {g g e}

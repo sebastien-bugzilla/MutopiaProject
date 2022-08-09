@@ -19,9 +19,7 @@
 \include "./00-Common/Quartet_n13_Op106_LayoutConductors.ily"
 \include "./00-Common/Quartet_n13_Op106_Shortcuts.ily"
 \include "./00-Common/Quartet_n13_Op106_Format_Cond_Mvt03.ily"
-%\include "./00-Common/Quartet_n13_Op106_Format_temp.ily"
 \include "./00-Common/Quartet_n13_Op106_Tempi.ily"
-%\include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "./03-Mvt3/m03_v01_music_ViolinI_C.ily"
 \include "./03-Mvt3/m03_v02_music_ViolinII_C.ily"
 \include "./03-Mvt3/m03_v03_music_Viola_C.ily"
@@ -38,7 +36,8 @@
 			}
 		}
 		subsubtitle = \markup {
-			"String Quartet No. 13 in G Major, Op. 106"
+			"String Quartet No. 13 in G Major, Op. 106 — " 
+			\concat {"3" \super rd} " Movement"
 		}
 		instrument = \markup {
 			""
@@ -48,10 +47,7 @@
 		<<
 			\new StaffGroup <<
 				\new GrandStaff <<
-					\new Staff \with { \RemoveAllEmptyStaves } <<
-%						\new Voice {
-%							\displayFilterVoice
-%						}
+					\new Staff <<
 						\new Voice {
 							\formatConductorMvtIII
 						}

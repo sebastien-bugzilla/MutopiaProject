@@ -36,7 +36,8 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"String Quartet No. 13 in G Major, Op. 106"
+			"String Quartet No. 13 in G Major, Op. 106 — " 
+			\concat {"1" \super st} " Movement"
 		}
 		instrument = \markup {
 			""
