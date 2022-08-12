@@ -282,7 +282,7 @@ musicViolaMvtIII = \relative c {
 	<fis, b d>\arpeggio r <b d>-\offset X-offset #0.8 \ff\upbow
 	<b e>\downbow <a! fis'> <cis e>8-. <cis e>-.
 	<fis, b d>4-. \arpeggio r r
-	b-^ r r\fermata \mark \default
+	b-^ r r\fermata \bar ".|:-||" \mark \default
 % mesure 231 à 235
 	\repeat volta 2 {
 		d,2.-\offset X-offset #-0.7 \pp~

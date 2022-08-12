@@ -282,7 +282,7 @@ musicViolinIIMvtIII = \relative c {
 	<d b'>-. r fis'\ff
 	g!\downbow a! ais8-. ais-.
 	<d,, b' b'>4 \arpeggio r r
-	b-^ r r\fermata \mark \default 
+	b-^ r r\fermata \bar ".|:-||" \mark \default 
 % mesure 231 à 235
 	\repeat volta 2 {
 		<d fis>4.\pp--( <fis a>8-- <d fis>4--)

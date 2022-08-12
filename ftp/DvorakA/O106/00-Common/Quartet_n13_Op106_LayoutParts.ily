@@ -9,7 +9,7 @@
 \layout {
 	#(layout-set-staff-size 20)
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.doubleRepeatType = #":|.|:"
+%	\set Score.doubleRepeatType = #":|.|:"
 	\set Score.markFormatter = #format-mark-box-numbers
 	\context {
 		\Voice
@@ -20,6 +20,7 @@
 		\override Arpeggio.padding = #0.25
 		\override Script.staff-padding = #'()
 		\override Hairpin.height = #0.55
+		\override Beam.breakable = ##t
 	}
 	\context {
 		\Staff

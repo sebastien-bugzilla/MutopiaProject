@@ -82,13 +82,13 @@ musicViolinIMvtIII = \relative c {
 % mesure 61 à 65
 	b,4.\fz-- c8-. d4-.
 	g,4.\fz-- a8-. \once \stemUp b4-.
-	\acciaccatura c8( c'2)(\fp g4)
-	\acciaccatura c,8( c'2)(\fz g4)
+	\acciaccatura c8 c'2(\fp g4)
+	\acciaccatura c,8 c'2(\fz g4)
 	c2\fz r4
 % mesure 66 à 70
 	R2.
-	\acciaccatura b,8( b'2)(_\fpsempredim fis4)
-	\acciaccatura b,8( b'2)(\fz fis4)
+	\acciaccatura b,8 b'2(-\offset X-offset #-1 \fp-\offset X-offset #1.5 _\sempredimC fis4)
+	\acciaccatura b,8 b'2(\fz fis4)
 	b2\fz r4
 	R2.*1
 % mesure 71 à 75
@@ -143,20 +143,20 @@ musicViolinIMvtIII = \relative c {
 	ees-- des--
 	c-- bes--
 % mesure 116 à 120
-	aes-- bes--\<
-	c-- des--
-	ees-- f--\!
+	aes-- \once \stemUp bes--\<
+	\tupletUp c-- des--
+	ees-- f--\! \tupletNeutral
 	bes(\mf aes)
 	bes( aes)
 % mesure 121 à 125
 	g( f)
 	ees( des)
-	c(_\dimmarkup bes)
-	bes--(\> bes--)
+	\tupletUp c(_\dimmarkup bes)
+	\stemUp bes--(\> bes--)
 	bes--( bes--)
 % mesure 126 à 130
-	bes--( bes--)\! } \mark \default
-	\grace {s8} R2.*8
+	bes--( bes--)\! } \tupletNeutral \stemNeutral \mark \default
+	R2.*8
 	
 	
 	
@@ -190,7 +190,7 @@ musicViolinIMvtIII = \relative c {
 	b r8 d-. fis4-.
 % mesure 156 à 160
 	e-. d-. cis-.
-	\grace {d16[ e]} fis2.\fz\>~
+	\grace {d16([ e]} fis2.)\fz\>~
 	fis4\! r b,-.\pp
 	<gis b>8-. q-. r4 q-.
 	q8-. q-. r4 q-.
@@ -277,7 +277,7 @@ musicViolinIMvtIII = \relative c {
 	b-. r fis'-.\ff\upbow
 	g!\downbow a! ais8-. ais-.
 	b4-. r r
-	b,,,-^ r r\fermata \mark \default 
+	b,,,-^ r r\fermata \bar ".|:-||" \mark \default 
 % mesure 231 à 235
 	\repeat volta 2 {
 		a'4.--\pp^( d8-- fis,4--)
@@ -294,7 +294,7 @@ musicViolinIMvtIII = \relative c {
 % mesure 241 à 245
 		a'4--\mf\< b-- cis--
 		d-- e-- fis--\!
-		g2.\fz(\trill\>
+		\shape #'((0 . -0.8)(0 . -0.8)(0 . -0.8)(0 . -0.8)) Slur g2.\fz(\trill\>
 		fis2.\trill\p
 		e\trill_\dimmarkup
 % mesure 246 à 250
@@ -349,8 +349,8 @@ musicViolinIMvtIII = \relative c {
 		fis-. fis8( a fis4)
 		e8\pp\>( a e4) e8( a
 % mesure 281 à 285
-		e4) e8( a e4)
-		e8(\! a e4 e8 a) \mark \default
+		e4) e8( a e4)\!
+		e8( a e4 e8 a) \mark \default
 	}
 	\repeat volta 2 { 
 		a4.\pp--\downbow( d8-. fis,4-.)
@@ -366,7 +366,7 @@ musicViolinIMvtIII = \relative c {
 		g2.->\<
 		\acciaccatura fis,8( d'4.)( e8-. fis4-.)\!
 		\acciaccatura d,8( <b' g'>2.)\fz
-		g8(_\crescmarkup\< b) d-. g-. b-. d-.
+		g8(_\crescmarkup\< b) d-. g-. b-. d-.\!
 		g2.\fz~-^
 % mesure 296 à 300
 		g
@@ -390,12 +390,12 @@ musicViolinIMvtIII = \relative c {
 % mesure 311 à 315
 	d4) r r
 	a r r \mark \default
-	d8\mf( fis) a-. d-. fis-. a-.
+	\stemUp d8-\tweak extra-offset #'(-3 . 1.7) \mf( fis) a-. d-. fis-. a-. \stemNeutral
 	fis2.\fp
-	d,8(\< fis) a-. d-. fis-. a-.\!
+	\stemUp d,8(\< fis) a-. d-. fis-. a-.\! \stemNeutral
 % mesure 316 à 320
 	fis2.\fp
-	d,8\mf(-> fis) a-. d-. fis-. a-.
+	\stemUp d,8\mf(^> fis) a-. d-. fis-. a-. \stemNeutral
 	g->( e) cis-. a-. g'-. e-.
 	d\mf->( fis a d fis a)
 	g->( e cis a g e)

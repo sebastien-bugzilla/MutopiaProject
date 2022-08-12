@@ -18,9 +18,8 @@
 \include "./00-Common/Quartet_n13_Op106_timeMvt.ily"
 \include "./00-Common/Quartet_n13_Op106_LayoutParts.ily"
 \include "./00-Common/Quartet_n13_Op106_Shortcuts.ily"
-%\include "./00-Common/Quartet_n13_Op106_Format_Part01_ViolinI.ily"
+\include "./00-Common/Quartet_n13_Op106_Format_Part01_ViolinI.ily"
 \include "./00-Common/Quartet_n13_Op106_Tempi.ily"
-%\include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "./01-Mvt1/m01_v01_music_ViolinI.ily"
 \include "./02-Mvt2/m02_v01_music_ViolinI.ily"
 \include "./03-Mvt3/m03_v01_music_ViolinI.ily"
@@ -28,7 +27,7 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\book{
+\book {
 	\header {
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
@@ -43,11 +42,19 @@
 			"Violino I"
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolinIMvtI
-%			}
+			\new Voice {
+				\formatViolinIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtI
 			}
@@ -74,9 +81,9 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolinIMvtII
-%			}
+			\new Voice {
+				\formatViolinIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtII
 			}
@@ -103,9 +110,9 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolinIMvtIII
-%			}
+			\new Voice {
+				\formatViolinIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtIII
 			}
@@ -132,9 +139,9 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolinIMvtIV
-%			}
+			\new Voice {
+				\formatViolinIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtIV
 			}

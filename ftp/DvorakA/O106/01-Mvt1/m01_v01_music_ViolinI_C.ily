@@ -411,7 +411,7 @@ musicViolinIMvtI = \relative c {
 	e4( c8)_\crescmarkup d4( f8)
 	e4( c8) d4( f8)
 % mesure 321 à 325
-	\tupletUp e8-._\fzmarcato( e,-. dis-.) e4( fis8) \tupletNeutral
+	\tupletUp e8-._\fzmarcato( e,-. dis-.) e4( fis8-.) \tupletNeutral
 	g4( a8-.) b4(\< c16[ d])\!
 	e8\fz r r r4 r8}
 	R2*2

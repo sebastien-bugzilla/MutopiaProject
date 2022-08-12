@@ -282,7 +282,7 @@ musicCelloMvtIII = \relative c {
 	b,4.\ff d8 fis4\upbow
 	e\downbow d-. cis8-. fis,-.
 	b4 r r
-	b-^ r r\fermata \mark \default
+	b-^ r r\fermata \bar ".|:-||" \mark \default
 % mesure 231 à 235
 	\repeat volta 2 {
 		<fis' a>2.\pp~

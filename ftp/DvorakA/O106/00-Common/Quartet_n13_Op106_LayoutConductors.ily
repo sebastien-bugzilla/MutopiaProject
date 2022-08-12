@@ -14,7 +14,7 @@
 	% end temporary
 	#(layout-set-staff-size 16)
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.doubleRepeatType = #":|.|:"
+%	\set Score.doubleRepeatType = #":|.|:"
 	\set Score.markFormatter = #format-mark-box-numbers
 	\context {
 		\Voice

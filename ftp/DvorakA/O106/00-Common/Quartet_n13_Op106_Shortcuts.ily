@@ -47,6 +47,7 @@ pocorit = \markup {\italic {poco rit.}}
 risoluto = \markup {\italic risoluto}
 rit = \markup {\italic rit.}
 sempredim = \markup {\italic {sempre dim.}}
+sempredimC = \markup {\italic \center-column { \lower #1.5 "sempre" "dim." }}
 simile = \markup {\italic simile}
 string = \markup {\italic string.}
 sulD = \markup {sul D}
@@ -169,6 +170,14 @@ tempoXoffset = #(define-music-function
 	#}
 )
 
+tempoExtraOffset = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
 markXoffset = #(define-music-function
 	(offset)
 	(number?)
@@ -201,3 +210,23 @@ trillSpanPadding = #(define-music-function
 	#}
 )
 
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.space-increment = #length
+	#}
+)
+
+tempoDown = \once \override Score.MetronomeMark.direction = #-1 
+
+whiteoutRehearsalMark = {
+	\override Score.StaffSymbol.layer = #4
+	\override Score.RehearsalMark.layer = #3
+	\once \override Score.RehearsalMark.whiteout = ##t
+	%\once \override Score.RehearsalMark.whiteout-style = #'outline
+}
