@@ -96,7 +96,7 @@ musicCelloMvtIII = \relative c {
 	bes
 	aes
 	ges)\!
-	fis~\mp
+	fis!~\mp
 % mesure 76 à 80
 	fis_\dimmarkup~
 	fis~

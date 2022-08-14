@@ -404,7 +404,7 @@ musicCelloMvtI = \relative c {
 	c4\fz cis16( d) e4\fz-> eis16( fis)
 	g4->\fz gis16( a) b4\fz c16( cis)}
 % mesure 326 à 330
-	d8\<( dis4.\fz)
+	d!8\<( dis4.\fz)
 	d8\<( dis4.)\!
 	dis8\fz r r4
 	\once \tupletUp \tuplet 6/4 4 {r8 g,16\ff g b, b dis dis g, g b b}

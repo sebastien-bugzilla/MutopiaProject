@@ -27,7 +27,7 @@ musicCelloMvtIII = \relative c {
 	gis-. b-. ais-.
 % mesure 16 à 20
 	gis-. r r
-	<b, fis'>4\ff-. r <b g'!>-.
+	<b, fis'>4-\offset X-offset #0.7 \ff-. r <b g'!>-.
 	<b fis'>8-. <b fis'>-. r4 <b e>-.
 	<b fis'>2.\fz~
 	<b fis'>4 r r
@@ -46,7 +46,7 @@ musicCelloMvtIII = \relative c {
 % mesure 31 à 35
 	b, r8 d fis4
 	e8\< d cis b a g\! \mark \default
-	fis4-._\fbenmarcato r8 b-. fis'4-.
+	\startMeasureCount fis4-._\fbenmarcato r8 b-. fis'4-.
 	fis,4-. r8 b-. fis'4-. 
 	fis,4-. r8 b-. fis'4-. 
 % mesure 36 à 40
@@ -74,7 +74,7 @@ musicCelloMvtIII = \relative c {
 	fis,4-. r8 b-. fis'4-. 
 	fis,4-. r8 b-. fis'4-. 
 % mesure 56 à 60
-	fis,4-. r8 b-. fis'4-. 
+	fis,4-. r8 b-. fis'4-. \stopMeasureCount
 	g,4-. r8 b-. g'4-. 
 	g,4-. r8 b-. g'4-. 
 	g,4 r r
@@ -87,7 +87,7 @@ musicCelloMvtIII = \relative c {
 	e2(\fp dis4)
 % mesure 66 à 70
 	e2(\fp dis4)
-	d!2(_\fpsempredim cis4)
+	d!2(-\offset X-offset #-1 \fp-\offset X-offset #1 _\sempredimC cis4)
 	d2(\fp cis4)
 	d2(\fp cis4)
 	d2(\fp cis4)
@@ -96,7 +96,7 @@ musicCelloMvtIII = \relative c {
 	bes
 	aes
 	ges)\!
-	fis~\mp
+	fis!~\mp
 % mesure 76 à 80
 	fis_\dimmarkup~
 	fis~
@@ -159,7 +159,7 @@ musicCelloMvtIII = \relative c {
 	f4*3/2( bes8*3/2 ges4*3/2 bes8*3/2)
 % mesure 126 à 130
 	ges4*3/2( bes8*3/2 g4*3/2 ees8*3/2)\! } \mark \default
-	\grace {s8} <aes, ees'>2.(~\pp
+	<aes, ees'>2.(~\pp
 	q
 	des
 	aes4.-- ees--) 
@@ -207,7 +207,7 @@ musicCelloMvtIII = \relative c {
 	gis2.~
 % mesure 166 à 170
 	gis4 r r \mark \default
-	dis,4-._\fbenmarcato r8 gis-. dis'4-.
+	\startMeasureCount dis,4-._\fbenmarcato r8 gis-. dis'4-.
 	dis,4-. r8 gis-. dis'4-. 
 	dis,4-. r8 gis-. dis'4-. 
 	dis,4-. r8 gis-. dis'4-. 
@@ -234,7 +234,7 @@ musicCelloMvtIII = \relative c {
 	dis,4-. r8 gis-. dis'4-. 
 	dis,4-. r8 gis-. dis'4-. 
 	dis,4-. r8 gis-. dis'4-. 
-	dis,4-. r8 gis-. dis'4-. 
+	dis,4-. r8 gis-. dis'4-.  \stopMeasureCount
 % mesure 191 à 195
 	e,4-. r8 gis-. e'4-. 
 	e,4-. r8 gis-. e'4-. 
@@ -243,7 +243,7 @@ musicCelloMvtIII = \relative c {
 	b4.\fz a8-. gis4-.
 % mesure 196 à 200
 	gis4.\fz fis8-. e-. d-. \mark \default
-	\grace {s8} cis2\fp( bis4)
+	cis2\fp( bis4)
 	cis2\fp( bis4)
 	cis2\fp( bis4)
 	cis2\fp( bis4)
@@ -282,7 +282,7 @@ musicCelloMvtIII = \relative c {
 	b,4.\ff d8 fis4\upbow
 	e\downbow d-. cis8-. fis,-.
 	b4 r r
-	b-^ r r\fermata \mark \default
+	b-^ r r\fermata \mark \default \bar ".|:-||"
 % mesure 231 à 235
 	\repeat volta 2 {
 		<fis' a>2.\pp~
@@ -337,7 +337,7 @@ musicCelloMvtIII = \relative c {
 		b( b8 d b4)
 		cis2.~
 		cis4 r r
-		a,2.->_\dimmarkup~
+		a,2.^>_\dimmarkup~
 % mesure 276 à 280
 		a~
 		a
@@ -378,7 +378,7 @@ musicCelloMvtIII = \relative c {
 	}
 	R2.
 % mesure 306 à 310
-	d,8\fp-. fis-. a-. d-. fis-. a-.
+	d,8-\offset X-offset #1 \fp-. fis-. a-. d-. fis-. a-.
 	d4-. r r
 	d,,8-.\fp fis-. a-. d-. fis-. a-.
 	d4-. r r
@@ -400,12 +400,12 @@ musicCelloMvtIII = \relative c {
 	bes,\fz( a) r
 	r r bes'(\fz
 	a8) r r4 r
-	R2.
+	\mmrnDown R2.
 % mesure 326 à 330
 	r4 r bes,\fz(^\crescmarkup
 	a8) r bes4(\fz a8) r
 	bes4(\fz a8) r g e
-	d4-.\ff r d'-.
+	d4-.-\offset X-offset #1.69 \ff r d'-.
 	d-. r d-.
 % mesure 331 à 335
 	d2.->~
@@ -420,7 +420,7 @@ musicCelloMvtIII = \relative c {
 	fis4 r r
 	R2.
 % mesure 341 à 345
-	b4-.\pp r g'-.
+	\startMeasureCount b4-.\pp r g'-.
 	b,-. r g'-.
 	b,-. r g'-.
 	b,-. r g'-.
@@ -428,8 +428,8 @@ musicCelloMvtIII = \relative c {
 % mesure 346 à 350
 	b,-. r g'-.
 	b,-. r g'-.
-	b,-. r g'-.
-	b,-. r gis'-.
+	b,-. r g'-. \stopMeasureCount
+	\startMeasureCount b,-. r gis'-.
 	b,-. r gis'-.
 % mesure 351 à 355
 	b,-. r gis'-.
@@ -438,8 +438,8 @@ musicCelloMvtIII = \relative c {
 	b,-. r gis'-.
 	b,-. r gis'-.
 % mesure 356 à 360
-	b,-. r gis'-.
-	<b, fis'>\ff-. r <b g'!>-.
+	b,-. r gis'-. \stopMeasureCount
+	<b, fis'>-\offset X-offset #0.7 \ff-. r <b g'!>-.
 	<b fis'>8-. <b fis'>-. r4 <b e>-.
 	<b fis'>2.->~
 	<b fis'>4 r r
@@ -458,7 +458,7 @@ musicCelloMvtIII = \relative c {
 % mesure 371 à 375
 	b4. fis8 d4
 	b8( d cis b a g) \mark \default
-	fis4-._\ffbenmarcato r8 b-. fis'4-.
+	\startMeasureCount fis4-._\ffbenmarcato r8 b-. fis'4-.
 	fis,-. r8 b-. fis'4-.
 	fis,-. r8 b-. fis'4-.
 % mesure 376 à 380
@@ -486,7 +486,7 @@ musicCelloMvtIII = \relative c {
 	fis,-. r8 b-. fis'4-.
 	fis,-. r8 b-. fis'4-.
 % mesure 396 à 400
-	fis,-. r8 b-. fis'4-.
+	fis,-. r8 b-. fis'4-. \stopMeasureCount
 	g,-. r8 b-. g'4-.
 	g,-. r8 b-. g'4-.
 	g, r r
@@ -494,7 +494,7 @@ musicCelloMvtIII = \relative c {
 % mesure 401 à 405
 	d4.-- c8-. b4-.
 	b4.-- a8-. g-. f-. \mark \default
-	\grace {s8} e2(\fp dis4)
+	e2(\fp dis4)
 	e2(\fp dis4)
 	e2(\fp dis4)
 % mesure 406 à 410

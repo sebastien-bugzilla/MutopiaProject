@@ -18,9 +18,9 @@
 \include "./00-Common/Quartet_n13_Op106_timeMvt.ily"
 \include "./00-Common/Quartet_n13_Op106_LayoutParts.ily"
 \include "./00-Common/Quartet_n13_Op106_Shortcuts.ily"
-%\include "./00-Common/Quartet_n13_Op106_Format_Part04_Cello.ily"
+\include "./00-Common/Quartet_n13_Op106_Format_Part04_Cello.ily"
+%\include "./00-Common/Quartet_n13_Op106_Format_temp.ily"
 \include "./00-Common/Quartet_n13_Op106_Tempi.ily"
-%\include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "./01-Mvt1/m01_v04_music_Cello.ily"
 \include "./02-Mvt2/m02_v04_music_Cello.ily"
 \include "./03-Mvt3/m03_v04_music_Cello.ily"
@@ -43,13 +43,21 @@
 			"Cello"
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatCelloMvtI
-%			}
 			\new Voice {
-				\keepWithTag #'(Cello) \tempiPartMvtI
+				\formatCelloMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtI
 			}
 			\new Voice {
 				\timeMvtI \musicCelloMvtI
@@ -74,11 +82,11 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatCelloMvtII
-%			}
 			\new Voice {
-				\keepWithTag #'(Cello) \tempiPartMvtII
+				\formatCelloMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicCelloMvtII
@@ -103,11 +111,11 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatCelloMvtIII
-%			}
 			\new Voice {
-				\keepWithTag #'(Cello) \tempiPartMvtIII
+				\formatCelloMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \musicCelloMvtIII
@@ -132,11 +140,11 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatCelloMvtIV
-%			}
 			\new Voice {
-				\keepWithTag #'(Cello) \tempiPartMvtIV
+				\formatCelloMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \musicCelloMvtIV

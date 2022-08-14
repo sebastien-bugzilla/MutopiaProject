@@ -202,6 +202,14 @@ tupletOffset = #(define-music-function
 	#}
 )
 
+tupletExtraOffset = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TupletNumber.extra-offset = #offset 
+	#}
+)
+
 trillSpanPadding = #(define-music-function
 	(padding)
 	(number?)

@@ -14,7 +14,7 @@ musicCelloMvtIV = \relative c {
 	a2->_\dimmarkup~ a8 r r4
 	r8 a(\pp d4) r8 a( d4)
 % mesure 6 à 10
-	r8 a[_\accel( d) a(]\< d[) a( d)] d,\! \bar "||" \time 2/4
+	r8 a[^\accel( d) \hairpinShorten #'(0 . 2) a(]\< d[) a( d)] d,\! \bar "||" \time 2/4
 	g,8\f r r4
 	R2*2
 	
@@ -63,7 +63,7 @@ musicCelloMvtIV = \relative c {
 	d8 r r4 
 % mesure 46 à 50
 	R2 \mark \default
-	g4\ff-> d'8-. g-.
+	\startMeasureCount g4\ff^> d'8-. g-.
 	g,4-> d'8-. g-. 
 	g,4-> d'8-. g-. 
 	g,4-> d'8-. g-. 
@@ -72,7 +72,7 @@ musicCelloMvtIV = \relative c {
 	g,4-> d'8-. g-. 
 	g,4-> d'8-. g-. 
 	g,4-> d'8-. g-.
-	g,4->\p d'8-. g-. 
+	g,4^>\p d'8-. g-. 
 % mesure 56 à 60
 	g,4-> d'8-. g-. 
 	g,4-> d'8-. g-. 
@@ -80,7 +80,7 @@ musicCelloMvtIV = \relative c {
 	g,4-> d'8-. g-. 
 	g,4-> d'8-. g-.
 % mesure 61 à 65
-	g,4-> d'8-. g-. 
+	g,4-> d'8-. g-. \stopMeasureCount
 	g,4. r8
 	d''4\pp-- c--
 	bes-- r8 c-.
@@ -142,12 +142,12 @@ musicCelloMvtIV = \relative c {
 % mesure 111 à 115
 	R2*2
 	
-	g4\p\> f\! \key ees \major \mark \default
+	g4\p\> f\! \key ees \major \mark \default \pageBreak \bar ".|:-||"
 	\repeat volta 2 {
 		<ees bes'>2~^\arco\pp
 		q~
 % mesure 116 à 120
-		q8 r bes'8.\p(\< bes16-.)\!
+		q8 r \hairpinShorten #'(0 . -3) bes'8.\p(\< bes16-.)\!
 		ces4( bes)\>
 		g(\! ees)~
 		ees2\p~
@@ -161,7 +161,7 @@ musicCelloMvtIV = \relative c {
 % mesure 126 à 130
 		bes~\>^\dimmarkup
 		bes\!
-		<ees, bes'>2~\pp\>
+		\hairpinShorten #'(-0.5 . -0.5) <ees, bes'>2~\pp\>
 		q\pp~ \mark \default
 	}
 	q8 r r4
@@ -196,11 +196,11 @@ musicCelloMvtIV = \relative c {
 	ees,8\p r r4
 	R2
 % mesure 156 à 160
-	r4 bes''8.\p\< bes16\!
+	r4 \hairpinShorten #'(-0.5 . -0.5) bes''8.\p\< bes16\!
 	ces4(\fz\> bes)\!
 	g8[( ees bes g])
 	ees2
-	r4 bes''8.\p\< bes16\!
+	r4 \hairpinShorten #'(-0.5 . -0.5) bes''8.\p\< bes16\!
 % mesure 161 à 165
 	ces4\fz( \tuplet 3/2 {bes8 g ees)}
 	ces2~\<
@@ -283,7 +283,7 @@ musicCelloMvtIV = \relative c {
 	g~
 	g~
 	g4 r
-	R2 \bar "||" \mark \default
+	\mmrnDown R2 \bar "||" \mark \default
 	e''4\pp( d~
 % mesure 231 à 235
 	d c)
@@ -319,7 +319,7 @@ musicCelloMvtIV = \relative c {
 	q8 r r4
 	R2*2
 	
-	<e b'>2\pp->
+	<e b'>2\pp^>
 	\slashedGrace q8 q2--
 % mesure 261 à 265
 	q2--
@@ -328,7 +328,7 @@ musicCelloMvtIV = \relative c {
 	R2*2
 	\mark \default
 % mesure 266 à 270
-	<c g'>2~\pp
+	\startMeasureCount <c g'>2~\pp
 	q~
 	q~
 	q~
@@ -338,7 +338,7 @@ musicCelloMvtIV = \relative c {
 	q~
 	q
 	q~\p\<
-	q\!
+	q\! \stopMeasureCount
 % mesure 276 à 280
 	<f c'>\mf\>~
 	q\!
@@ -362,12 +362,12 @@ musicCelloMvtIV = \relative c {
 	\slashedGrace q8 q2
 	q
 	<<{
-		\tuplet 3/2 4 {r8 e'( dis e4 fis8)
-		r8\< e( dis e4 fis8)}
+		\tuplet 3/2 4 {r8 e'( dis \tupletOffset #4 e4 fis8)
+		\hairpinShorten #'(0.5 . 0) r8\< e( dis \tupletOffset #4 e4 fis8)\!}
 % mesure 296 à 300
 		fis4^\f( a8. g16)
-		g8[(\> fis_\dimmarkup f e]\!
-		dis[\> d cis c])\!
+		\hairpinShorten #'(0.5 . 0) g8[(\> fis-\tweak extra-offset #'(0 . 4.5) _\dimmarkup f e]\!
+		\hairpinShorten #'(0.5 . 0) dis[\> d cis c])\!
 	}\\{
 		c,2~
 		c
@@ -379,11 +379,11 @@ musicCelloMvtIV = \relative c {
 	b'2\pp~
 	b
 % mesure 301 à 305
-	b8 r b8.\p\<( b16-.)\!
+	b8 r \hairpinShorten #'(-0.5 . -1) b8.\p\<( b16-.)\!
 	c!4->\>( b)\!
 	gis( e)~
 	e2~
-	e8 r b'8.\p(\< b16-.)\!
+	e8 r \hairpinShorten #'(-0.5 . -1) b'8.\p(\< b16-.)\!
 % mesure 306 à 310
 	c4\fz\>( \tuplet 3/2 {b8 gis e)\!}
 	c2\<~
@@ -434,7 +434,7 @@ musicCelloMvtIV = \relative c {
 % mesure 341 à 345
 	b(\f dis b dis b dis b dis)
 	c( e b dis c e c e)
-	d!2(_\dimmarkup
+	\once \stemUp d!2(_\dimmarkup
 	d,)
 	g16(\p b fis ais g b g b
 % mesure 346 à 350
@@ -454,18 +454,18 @@ musicCelloMvtIV = \relative c {
 	q4 q\fz~
 	q2
 	q2\fz~
-	q4 q\fz~
+	q4 q-\offset X-offset #-0.8 \fz~
 % mesure 361 à 365
 	q2
 	q\fz~
-	q4 q_\fzdim~
+	q4 q-\offset X-offset #-0.8 \fz-\offset X-offset #1.5 _\dimmarkup~
 	q2
-	<< q2 {s8\> s s s\!} >>
+	<< q2 {\hairpinShorten #'(1.5 . -1.5) s8\> s s s\!} >>
 % mesure 366 à 370
 	fis!4( ais_\dimmarkup)
 	b2(\p
 	fis)
-	b(_\pocoapocorit
+	b(^\pocoapocorit
 	fis)\!
 % mesure 371 à 375
 	\tuplet 3/2 4 {d8 d d d d d
@@ -512,9 +512,9 @@ musicCelloMvtIV = \relative c {
 % mesure 406 à 410
 	des'8(\< des,16) r des'8( des,16)\! r 
 	des'8\f des,4.->~
-	des8 cis4.^^\ffz~
-	cis8 cis4.^^\ffz~
-	cis8 cis4.^^\ffz~
+	des8 cis4.^^-\tweak extra-offset #'(-0.5 . 0.5) \ffz~
+	cis8 cis4.^^-\tweak extra-offset #'(-0.5 . 0.5) \ffz~
+	cis8 cis4.^^-\tweak extra-offset #'(-0.5 . 0.5) \ffz~
 % mesure 411 à 415
 	cis8 cis'4._^(
 	d8[) d!-.\ffz e!-. fis!-.]
@@ -522,9 +522,9 @@ musicCelloMvtIV = \relative c {
 	d[\f-. e-. fis-. e]-.
 	d[-. e-. fis-. e]-.
 % mesure 416 à 420
-	d4( e
+	\shape #'((0 . -0.3)(0 . -0.6)(0 . -0.6)(0 . -0.3)) Slur d4( e
 	fis e)
-	d(_\dimmarkup e
+	\shape #'((0 . -0.3)(0 . -0.6)(0 . -0.6)(0 . -0.3)) Slur d(_\dimmarkup e
 	b c)
 	g( a
 % mesure 421 à 425
@@ -578,7 +578,7 @@ musicCelloMvtIV = \relative c {
 % mesure 461 à 465
 	
 	
-	
+	\pageBreak
 	aes16\p\<( c g b! aes c aes c\!
 	aes_\crescmarkup c g b! aes c aes c)
 % mesure 466 à 470
@@ -597,7 +597,7 @@ musicCelloMvtIV = \relative c {
 	
 	
 	
-	\mark \default
+	\mark \default 
 	a16(\p cis gis bis a cis a cis
 % mesure 481 à 485
 	a cis gis bis a cis a cis)
@@ -619,7 +619,7 @@ musicCelloMvtIV = \relative c {
 	r8 c'8:16\ff[ a: fis!:]
 % mesure 496 à 500
 	\tuplet 3/2 4 {e8 d c b a d} \mark \default
-	\grace {s8} g,8-.[\ff b( c) e-.]
+	g,8-.[\ff b( c) e-.]
 	g-. fis16( g) g8-. dis-.
 	e-. dis16( e) e8-. cis-.
 	\tuplet 3/2 {d!8 a fis} d8 r
@@ -662,7 +662,7 @@ musicCelloMvtIV = \relative c {
 % mesure 531 à 535
 	a) b4 c8(
 	c) d4 d,8
-	g8->\ff b-. b-> c-.
+	g8^>\ff b-. b-> c-.
 	c-> e-. e-> a,-.
 	a-> b-. b-> c-.
 % mesure 536 à 540

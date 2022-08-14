@@ -23,11 +23,11 @@ musicCelloMvtI = \relative c {
 % mesure 11 à 15
 	r r8 \tuplet 3/2 8 {g'16(\f c g
 	e[ g e] \stemDown c[ e c]) \stemNeutral g[( c g]} c,16) r
-	r4 r8 \tuplet 3/2 8 {a''16\f[( c a]
+	r4 r8 \tuplet 3/2 8 {a''16-\offset X-offset #-0.5 \f[( c a]
 	e[ a e] \stemDown c[ e c]) \stemNeutral a[( c a]} c,16) r
-	r4 r8 \tuplet 3/2 8 {a''16\f[( c a]
+	r4 r8 \tuplet 3/2 8 {a''16-\offset X-offset #-0.5 \f[( c a]
 % mesure 16 à 20
-	fis[ a fis]) d[( fis d] c[ d c])} c,16-. c'-.
+	fis[ a fis]) d[( fis d] \once \tupletDown c[ d c])} c,16-. c'-.
 	\tuplet 6/4 {b16\ff( ais b ais b ais} b4)~
 	b2~
 	b8 r16 a'!([ b8) r16 fis16](
@@ -48,10 +48,10 @@ musicCelloMvtI = \relative c {
 	b4~ b16\< b-. dis-. fis-.\!
 	b8\fz r r4
 	R2
-	r4 r8 <gis, dis' b'>8\f
+	r4 r8 <gis, dis' b'>8-\offset X-offset #0.5 \f
 	R2
 % mesure 36 à 40
-	r4 r8 <gis dis' b'>8\f
+	r4 r8 <gis dis' b'>8-\offset X-offset #0.5 \f
 	r4 r8 dis''-.\ff
 	\tuplet 3/2 {gis,16[ b dis]} gis8-.\noBeam r8 dis-.
 	\tuplet 3/2 {gis,16[ b dis]} gis8-.\noBeam r8 cis,-.
@@ -70,16 +70,16 @@ musicCelloMvtI = \relative c {
 	g-. b'-. g-. d-. g,-. b'-. g-. d-. 
 % mesure 51 à 55
 	g,-. b'-. g-. d-. g,-. b'-. g-. d-. 
-	<<b2 {s4\< s\!}>>
+	<<b2 {\hairpinShorten #'(0 . -1.5) s4\< s\!}>>
 	c16(\< e) e( g) g( c) c8\!
 	b,2\fz
 	c16( e) e( g) g( c) e,8\fz\<(
 % mesure 56 à 60
-	g[\! d_\pesante b]) ais'\fz\<(
+	g[\! d-\offset X-offset #-1.5 _\pesante b]) ais'\fz\<(
 	b[\! g d]) cis'(\fz
 	d16)\ff b-. d8->~ d16 b-. d8->~
 	d16 b-. d8->~ d16 b-. d8->
-	ees4.._\ffzferoce-^ d32(\< c
+	ees4.._\ffzferoce-^ \hairpinShorten #'(-2.5 . 0) d32(\< c
 % mesure 61 à 65
 	b!2)\fz
 	c4..-> bes32\<( aes
@@ -101,7 +101,9 @@ musicCelloMvtI = \relative c {
 % mesure 76 à 80
 	r4 d'8(\f ees
 	c[ bes a d)]
-	R2*3 \mark \default
+	R2*3 
+	
+	\mark \default
 % mesure 81 à 85
 	bes'16_\ppsemplice bes r8 f'16 f r8
 	d16 d r8 bes16 bes r8
@@ -146,18 +148,18 @@ musicCelloMvtI = \relative c {
 	R2
 % mesure 116 à 120
 	\tuplet 3/2 4 {c,8\f c' b! c4-> cis16( d)
-	ees4(_\crescmarkup e16)( f) ges8->(\< g)( gis16)( a)
-	bes4-> b16( c) cis8( d ees16 e)\!}
-	f8\ff(\< fis4.)\!
+	\tupletOffset #-3 ees4(_\crescmarkup e16)( f) \tupletOffset #4 \tupletUp ges8->(\< g)( gis16)( a)
+	\tupletOffset #5 bes4-> b16( c) \tupletExtraOffset #'(0.5 . 0) cis8( d ees16 e)\!} \tupletNeutral
+	\hairpinShorten #'(-0.5 . -0.5) f8-\offset X-offset #-1 \ff(\< fis4.)\!
 	f8(\< fis4.)\!
 % mesure 121 à 125
 	\tuplet 6/4 4 {fis!8\fz bes,16 bes a a bes bes d d fis,! fis
 	fis! fis bes bes d, d fis fis bes, bes d d } \mark \default
 	\tuplet 3/2 4 {fis,8\ff fis'-. fis,-. d'4( fis8)
 	r fis-. fis,-. d'4( fis8)
-	r fis-. fis,-. d'4(_\dimmarkup fis8)
+	r fis-. fis,-. \tupletOffset #-2.5 d'4(_\dimmarkup fis8)
 % mesure 126 à 130
-	r fis-.\> fis,-. c'!4( fis8)\!}
+	r fis-.\> fis,-. \tupletOffset #-2.5 c'!4( fis8)\!}
 	f,8\mf r f f'16 ees
 	ees8-. c-. \tuplet 3/2 {a8 f ees}
 	d r r d'
@@ -215,7 +217,7 @@ musicCelloMvtI = \relative c {
 	fis cis' fis, cis' fis, cis' fis, g!)
 	fis( cis' fis, cis' fis, cis' fis, ais
 	fis cis' fis, cis' fis, cis' fis, g)
-	fis( ais fis ais fis_\crescmarkup ais fis ais
+	fis( ais fis ais fis-\tweak extra-offset #'(0.5 . 2) _\crescmarkup ais fis ais
 % mesure 176 à 180
 	fis ais fis ais fis ais fis ais)
 	g!(_\pocoapococresc cis g cis g cis g cis
@@ -223,7 +225,7 @@ musicCelloMvtI = \relative c {
 	g!( cis g cis g cis g cis
 	g cis g cis g cis g cis)
 % mesure 181 à 185
-	g( g' g,_\crescmarkup g' g, g' g, g'
+	g( g' g,-\tweak extra-offset #'(0.9 . 2) _\crescmarkup g' g, g' g, g'
 	g, g' g, g' g, g' g, g')
 	\tuplet 5/4 4 {g,!\mf(\< <b g'> g <b g'> g <b g'> g <b g'> g <b g'>)
 	 g( <b g'> g <b g'> g <b g'> g <b g'> g <b g'>\!)} \mark \default
@@ -279,7 +281,7 @@ musicCelloMvtI = \relative c {
 	q
 % mesure 221 à 225
 	aes8 r r4
-	R2
+	R2 
 	ees'8\ppp( aes16) r aes8( c16) r
 	c8( ees16) r ees8( f16) r
 	ees8( aes,16) r r4
@@ -318,7 +320,7 @@ musicCelloMvtI = \relative c {
 	<g d'>
 	a
 	ais4(\< b)\!
-	c!8[( \tuplet 3/2 {d16 fis d]} \tuplet 6/4 {fis[ a fis a c a])}
+	\beamOffset #'(0.5 . 0) c!8[( \tuplet 3/2 {d16 fis d]} \tupletOffset #3.5 \tuplet 6/4 {fis[ a fis a c a])}
 % mesure 256 à 260
 	c8[( \tuplet 3/2 {d16 fis d]} c8[ \tuplet 3/2 {d16 fis d])}
 	c8.( d16_\dimmarkup c8. d16)
@@ -366,7 +368,7 @@ musicCelloMvtI = \relative c {
 	ees r r4
 	e!4(\f bis8 cis)
 	fis,!4( b!)
-	bis( cis_\dimmarkup
+	bis( cis-\offset X-offset #-0.8 _\dimmarkup
 % mesure 296 à 300
 	fis, b)
 	c!(_\dimD\> aes'
@@ -378,7 +380,7 @@ musicCelloMvtI = \relative c {
 	d~\>
 	d~
 	d)\!
-	<g, d' b'>8\pp^\pizz \arpeggio r r q \arpeggio
+	<g, d' b'>8-\offset X-offset #-0.8 \pp^\pizz \arpeggio r r q \arpeggio
 % mesure 306 à 310
 	r4 q8 r
 	<g d' a'> r q r
@@ -404,20 +406,20 @@ musicCelloMvtI = \relative c {
 	c4\fz cis16( d) e4\fz-> eis16( fis)
 	g4->\fz gis16( a) b4\fz c16( cis)}
 % mesure 326 à 330
-	d8\<( dis4.\fz)
-	d8\<( dis4.)\!
+	\hairpinShorten #'(-0.5 . -0.5) d8\<( dis4.-\offset X-offset #0.5 \fz)
+	d!8\<( dis4.)\!
 	dis8\fz r r4
-	\tuplet 6/4 4 {r8 g,16\ff g b, b dis dis g, g b b}
+	\tuplet 6/4 4 {r8 g,16-\offset X-offset #-1.5 \ff g b, b dis dis g, g b b}
 	\tuplet 3/2 4 {r8 dis-^_\fconforza dis,-^ b'4( \once \stemUp dis8) 
 % mesure 331 à 335
 	r dis-^ dis,-^ b'4(-> \once \stemUp dis8)
 	r dis-^\> dis,-^ b'4( \once \stemUp dis8)\!
-	r ees-. ees,-._\dimmarkup a4( ees'8)} \mark \default 
-	d,!8\mf r d-. d'16-. c-.
+	r ees-. ees,-.-\offset X-offset #2 _\dimmarkup a4( ees'8)} \mark \default 
+	d,!8-\offset X-offset #0.7 \mf r d-. d'16-. c-.
 	c8-.\< a-. \tuplet 3/2 {d,-. d'-. c-.\!}
 % mesure 336 à 340
 	b4 r8 b'--\f
-	r4_\dimD\< e--\>
+	\hairpinShorten #'(-0.8 . -0.5) r4-\offset X-offset #-2 _\dimD\< \hairpinShorten #'(0.5 . 0.8) e--\>
 	r4\! r8 fis,\p\>
 	r4 gis\!
 	a(\pp b
@@ -455,7 +457,7 @@ musicCelloMvtI = \relative c {
 	\tuplet 3/2 8 {e,16[( g b]) e[( g b])} e8-. b-.
 	e,-. r r4
 	\stemUp \tuplet 3/2 {b16\ff( d fis)} \stemNeutral b8\noBeam r4
-	a,8-^[ b-^ c-^ d-^]
+	a,8^^[ b^^ c^^ d^^]
 	g,16 g( b) b( g) g( b) b(
 % mesure 371 à 375
 	g8) r <g d' b'> r
@@ -477,7 +479,7 @@ musicCelloMvtI = \relative c {
 	b8.-> a16 b8-. b,-.
 % mesure 386 à 390
 	e8.-> e16 e8-. a,-.
-	d8. d16 d4~\startTrillSpan
+	d8. d16 \trillSpanPadding #-1.2 d4~\startTrillSpan
 	d2\stopTrillSpan
 	<g, d'>8[ q q q] 
 	q-.[ q-. q-.] d''16-. e-. 
