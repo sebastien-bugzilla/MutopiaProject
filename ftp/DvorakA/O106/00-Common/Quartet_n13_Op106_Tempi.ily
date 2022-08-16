@@ -249,10 +249,26 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 23
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI viola) {
 		\tempoDown
 		\tempoXoffset #-3
 		\tempoExtraOffset #'(0 . 3)
+		\tempo \markup {
+			\center-column {
+				\lower #2.3 
+				\line {
+					\general-align #Y #DOWN \abs-fontsize #7 
+					\note {8} #1 \medium "= 72."
+				}
+				\medium \italic {
+					\lower #1 "Un pochettino" " più mosso." 
+				}
+			}
+		}
+	}
+	\tag #'(violinII) {
+		\tempoXoffset #-1.5
+		\tempoExtraOffset #'(0 . -2)
 		\tempo \markup {
 			\center-column {
 				\lower #2.3 
@@ -290,9 +306,18 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 44
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI viola) {
 		\tempo \markup {
 			\medium \italic "Un pochettino più mosso M.M."
+			\line { \general-align #Y #DOWN
+				\abs-fontsize #7 \note {8} #1 \medium  "= 80."
+			}
+		}
+	}
+	\tag #'(violinII) {
+		\tempoExtraOffset #'(0 . -0.2)
+		\tempo \markup {
+			\medium \italic "Un pochettino più mosso"
 			\line { \general-align #Y #DOWN
 				\abs-fontsize #7 \note {8} #1 \medium  "= 80."
 			}
@@ -310,7 +335,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 55
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
+		\tempo \markup {
+			\medium \italic "poco rit."
+		}
+	}
+	\tag #'(violinII) {
+		\tempoXoffset #-2.5 
 		\tempo \markup {
 			\medium \italic "poco rit."
 		}
@@ -328,10 +359,19 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 58
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
 		\tempo \markup {
 			\line {
 				"Tempo I." \medium "M.M." 
+				\general-align #Y #DOWN \abs-fontsize #7 
+				\note {8} #1 \medium "= 63." 
+			}
+		}
+	}
+	\tag #'(violinII) {
+		\tempo \markup {
+			\line {
+				"Tempo I."
 				\general-align #Y #DOWN \abs-fontsize #7 
 				\note {8} #1 \medium "= 63." 
 			}
@@ -341,11 +381,18 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 66
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI  viola) {
 		\tempoDown
 		\tempoXoffset #2.5 
 		\tempo \markup { 
 			\medium \italic "più animato poco a poco"
+		}
+	}
+	\tag #'(violinII ) {
+		\tempoDown
+		\tempoXoffset #2. 
+		\tempo \markup { 
+			\medium \italic "poco a poco animato"
 		}
 	}
 	\tag #'(cello) {
@@ -368,7 +415,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 78
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI  viola) {
 		\tempoXoffset #-2.5
 		\tempo \markup { 
 			\column {
@@ -377,6 +424,16 @@ tempiPartMvtII = {
 					\hspace #0.8 \general-align #Y #DOWN \abs-fontsize #7 
 					\note {8} #1 \medium "= 63."
 				}
+			}
+		}
+	}
+	\tag #'(violinII) {
+		\tempoXoffset #-2.5
+		\tempo \markup { 
+			\line { "Tempo I."}
+			\line {
+				\hspace #0.7 \general-align #Y #DOWN \abs-fontsize #7 
+				\note {8} #1 \medium "= 63."
 			}
 		}
 	}
@@ -418,7 +475,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 135
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI viola) {
 		\tempoXoffset #-1.8 
 		\tempo \markup {
 			\column {
@@ -428,6 +485,16 @@ tempiPartMvtII = {
 					\general-align #Y #DOWN \abs-fontsize #7 
 					\note {8} #1 \medium "= 63."
 				}
+			}
+		}
+	}
+	\tag #'(violinII) {
+		\tempoXoffset #-2 
+		\tempo \markup {
+			\line { "Tempo I." \medium "M.M." }
+			\line { 
+				\general-align #Y #DOWN \abs-fontsize #7 
+				\note {8} #1 \medium "= 63."
 			}
 		}
 	}
@@ -445,7 +512,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 141
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI viola) {
+		\tempo \markup {
+			\medium \italic "tranquillo"
+		}
+	}
+	\tag #'(violinII) {
+		\tempoExtraOffset #'(0 . -0.4)
 		\tempo \markup {
 			\medium \italic "tranquillo"
 		}
@@ -461,16 +534,30 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 150
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
 		\tempo \markup {
 			\medium \italic "molto rit."
+		}
+	}
+	\tag #'(violinII) {
+		\tempoXoffset #-1
+		\tempo \markup {
+			\medium \italic \center-column {
+				\lower #1.5 "molto" "rit."
+			}
 		}
 	}
 	s4.
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 151
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
+		\tempo \markup { 
+			\medium \italic "in tempo"
+		}
+	}
+	\tag #'(violinII) {
+		\tempoXoffset #-1 
 		\tempo \markup { 
 			\medium \italic "in tempo"
 		}
@@ -479,12 +566,12 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 173.3
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI  viola) {
 		\tempo \markup {
 			\medium \italic "string." 
 		}
 	}
-	\tag #'(cello) {
+	\tag #'(violinII cello) {
 		\tempoXoffset #-3.5
 		\tempo \markup {
 			\medium \italic "string." 
@@ -509,14 +596,19 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 178
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
 		\tempo \markup {
 			\medium \italic "Tempo I."
 		}
 	}
+	\tag #'(violinII) {
+		\tempo \markup {
+			"Tempo I."
+		}
+	}
 	s4.*4 s8.
 	%%%%%%%%%%%%%%%%%%%%%%
-	% bar 185.5
+	% bar 182.5
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(violinI violinII viola) {
 		\tempo \markup { 
@@ -534,18 +626,18 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 186
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI viola) {
 		\tempoDown
 		\tempoExtraOffset #'(0 . 12.1) 
 		\tempo \markup { 
 			\medium \italic "molto rit."
 		}
 	}
-	\tag #'(cello) {
+	\tag #'(cello violinII) {
 		\tempoXoffset #-0.8
 		\tempo \markup { 
 			\medium \italic \center-column {
-				\lower #1 "molto" "rit."
+				\lower #1.5 "molto" "rit."
 			}
 		}
 	}
@@ -553,14 +645,14 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 187
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI viola) {
 		\tempoDown
 		\tempoExtraOffset #'(0 . 11.3) 
 		\tempo \markup {
 			\medium \italic "a tempo"
 		}
 	}
-	\tag #'(cello) {
+	\tag #'(cello violinII) {
 		\tempo \markup {
 			\medium \italic "a tempo"
 		}
@@ -702,7 +794,7 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 283
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI viola) {
 		\tempo \markup {
 			\medium \italic "rit. molto"
 		}
@@ -711,6 +803,13 @@ tempiPartMvtIV = {
 		\tempoXoffset #-1.5 
 		\tempo \markup {
 			\medium \italic "rit. molto"
+		}
+	}
+	\tag #'(violinII) {
+		\tempo \markup {
+			\medium \italic \center-column { 
+				\lower #1.5 "rit." "molto"
+			}
 		}
 	}
 	s2

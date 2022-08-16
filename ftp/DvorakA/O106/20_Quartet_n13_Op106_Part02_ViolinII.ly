@@ -18,9 +18,8 @@
 \include "./00-Common/Quartet_n13_Op106_timeMvt.ily"
 \include "./00-Common/Quartet_n13_Op106_LayoutParts.ily"
 \include "./00-Common/Quartet_n13_Op106_Shortcuts.ily"
-%\include "./00-Common/Quartet_n13_Op106_Format_Part02_ViolinII.ily"
+\include "./00-Common/Quartet_n13_Op106_Format_Part02_ViolinII.ily"
 \include "./00-Common/Quartet_n13_Op106_Tempi.ily"
-%\include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "./01-Mvt1/m01_v02_music_ViolinII.ily"
 \include "./02-Mvt2/m02_v02_music_ViolinII.ily"
 \include "./03-Mvt3/m03_v02_music_ViolinII.ily"
@@ -45,11 +44,11 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolinIIMvtI
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolinII) \tempiPartMvtI
+				\formatViolinIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(violinII) \tempiPartMvtI
 			}
 			\new Voice {
 				\timeMvtI \musicViolinIIMvtI
@@ -74,11 +73,11 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolinIIMvtII
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolinII) \tempiPartMvtII
+				\formatViolinIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(violinII) \tempiPartMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicViolinIIMvtII
@@ -103,11 +102,11 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolinIIMvtIII
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolinII) \tempiPartMvtIII
+				\formatViolinIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(violinII) \tempiPartMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \musicViolinIIMvtIII
@@ -132,11 +131,11 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolinIIMvtIV
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolinII) \tempiPartMvtIV
+				\formatViolinIIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(violinII) \tempiPartMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \musicViolinIIMvtIV

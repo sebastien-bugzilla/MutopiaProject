@@ -34,7 +34,7 @@ musicViolinIIMvtIII = \relative c {
 % mesure 21 à 25
 	fis\<( b2\fz)~
 	b2.
-	b8\>( cis d fis d cis)
+	\hairpinShorten #'(0 . 3.5) b8\>( cis d fis d cis)
 	b( fis d cis b fis)\!
 	b4\pp-. r b-.
 % mesure 26 à 30
@@ -53,7 +53,7 @@ musicViolinIIMvtIII = \relative c {
 	
 	
 	
-	b,2\f-> r4
+	b,2\f^> r4
 	cis2-> r4
 % mesure 41 à 45
 	\acciaccatura cis8 d4.^\sulG e8-. fis4-.
@@ -70,7 +70,7 @@ musicViolinIIMvtIII = \relative c {
 % mesure 51 à 55
 	fis2(\fz e4)
 	d2( cis4)
-	b4.\fz-> d8-. fis4-.
+	b4.\fz^> d8-. fis4-.
 	fis-. fis-. fis-. 
 	fis2(-> e4)
 % mesure 56 à 60
@@ -93,7 +93,7 @@ musicViolinIIMvtIII = \relative c {
 	fis b fis b f b)
 % mesure 71 à 75
 	e,\f( a e'4) r
-	d,8(\> g d'4) r
+	d,8(-\tweak extra-offset #'(0 . 0.3) \> g d'4) r
 	c,8( f c'4) r
 	bes,8( ees bes'4)\! r
 	ais,8(\mp e'! ais4) r
@@ -143,12 +143,12 @@ musicViolinIIMvtIII = \relative c {
 	\tuplet 2/3 2. { f'4.*2/3\pp-- ees--
 	f-- ees--
 	des-- c--
-	bes-- aes--
+	\once \stemUp bes-- aes--
 	g-- f--
 % mesure 116 à 120
 	f-- g--\<
 	g-- bes--
-	c-- des--\!}
+	\once \tupletUp c-- des--\!}
 	des8_\mfleggiero-. f-. des-. c-. ees-. c-.
 	des-. f-. des-. c-. ees-. c-.
 % mesure 121 à 125
@@ -159,7 +159,7 @@ musicViolinIIMvtIII = \relative c {
 	des-. f!-. des-. des-. fes-. des-.
 % mesure 126 à 130
 	des-. fes-. des-. des-. ees-. des-.\! \mark \default
-	\grace {s8} c4\pp( ees aes
+	c4\pp( ees aes
 	c ees c
 	bes4.-- f--
 	ees2.)
@@ -227,7 +227,7 @@ musicViolinIIMvtIII = \relative c {
 	gis-. r r
 	R2.
 	gis4.->\f b8-. dis4-.
-	dis-. dis-. dis-.
+	dis-.( dis-. dis-.)
 	dis2( cis4)
 % mesure 186 à 190
 	b2( ais4)
@@ -243,7 +243,7 @@ musicViolinIIMvtIII = \relative c {
 	gis,4.--\fp a8-. b4-.
 % mesure 196 à 200
 	e,4.--\fp fis8-. gis4-. \mark \default
-	\grace {s8} e8\fp( a e a e gis
+	e8\fp( a e a e gis
 	e a e a e gis)
 	e8\fp( a e a e gis
 	e a e a e gis)
@@ -262,14 +262,14 @@ musicViolinIIMvtIII = \relative c {
 % mesure 211 à 215
 	fis,8( cis' fis4)_\dimmarkup fis,8( cis'
 	fis4) fis,8( cis' fis4)
-	d,8\pp-. e-. d-. e-. d-. e-. 
+	\startMeasureCount d,8\pp-. e-. d-. e-. d-. e-. 
 	d-. e-. d-. e-. d-. e-. 
 	d-. e-. d-. e-. d-. e-. 
 % mesure 216 à 220
 	d-. e-. d-. e-. d-. e-. 
 	d-. e-. d-. e-. d-. e-. 
 	d-. e-. d-. e-. d-. e-. 
-	d-. e-. d-. e-. d-. e-. 
+	d-. e-. d-. e-. d-. e-. \stopMeasureCount
 	d-. e-. d-. e-. dis-. e-. 
 % mesure 221 à 225
 	dis-. e-. dis-. e-. dis-. e-. 
@@ -282,7 +282,7 @@ musicViolinIIMvtIII = \relative c {
 	<d b'>-. r fis'\ff
 	g!\downbow a! ais8-. ais-.
 	<d,, b' b'>4 \arpeggio r r
-	b-^ r r\fermata \mark \default 
+	b-^ r r\fermata \mark \default \pageBreak \bar ".|:-||"
 % mesure 231 à 235
 	\repeat volta 2 {
 		<d fis>4.\pp--( <fis a>8-- <d fis>4--)
@@ -383,7 +383,7 @@ musicViolinIIMvtIII = \relative c {
 		
 		
 	}
-	d8\pp( fis) a-. d-. fis-. a-.
+	d8-\tweak extra-offset #'(-2.5 . 1.2) \pp( fis) a-. d-. fis-. a-.
 % mesure 306 à 310
 	fis2.\fp
 	d,8( fis) a-. d-. fis-. a-.
@@ -427,7 +427,7 @@ musicViolinIIMvtIII = \relative c {
 	
 	
 % mesure 341 à 345
-	d4\pp-. r e-.
+	\startMeasureCount d4\pp-. r e-.
 	d-. r e-.
 	d-. r e-.
 	d-. r e-.
@@ -435,8 +435,8 @@ musicViolinIIMvtIII = \relative c {
 % mesure 346 à 350
 	d-. r e-.
 	d-. r e-.
-	d-. r e-.
-	dis-. r e-. 
+	d-. r e-. \stopMeasureCount 
+	\startMeasureCount dis-. r e-. 
 	dis-. r e-. 
 % mesure 351 à 355
 	dis-. r e-. 
@@ -445,7 +445,7 @@ musicViolinIIMvtIII = \relative c {
 	dis-. r e-. 
 	dis-. r e-. 
 % mesure 356 à 360
-	dis-. r e-. 
+	dis-. r e-. \stopMeasureCount 
 	<fis d'!>\ff-. r <g e'>-.
 	<fis d'>8-. <fis d'>-. r4 <e cis'>-.
 	<fis d'>2.->~
@@ -501,7 +501,7 @@ musicViolinIIMvtIII = \relative c {
 % mesure 401 à 405
 	g,4.-- a8-. b4-.
 	e,4.-- f8-. g4-. \mark \default
-	\grace {s8} g8\fp( c g c g b
+	g8\fp( c g c g b
 	g c g c g b)
 	g(\fp c g c g b
 % mesure 406 à 410

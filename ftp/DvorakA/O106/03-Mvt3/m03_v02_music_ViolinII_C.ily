@@ -227,7 +227,7 @@ musicViolinIIMvtIII = \relative c {
 	gis-. r r
 	R2.
 	gis4.->\f b8-. dis4-.
-	dis-. dis-. dis-.
+	dis-.( dis-. dis-.)
 	dis2( cis4)
 % mesure 186 à 190
 	b2( ais4)

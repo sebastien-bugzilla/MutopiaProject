@@ -16,6 +16,7 @@ cantabileemoltoespressivo = \markup {\italic {cantabile e molto espressivo}}
 cant = \markup {\italic {cant.}}
 conforza = \markup {\italic {con forza}}
 consentimentoemoltocantabile = \markup {\italic {con sentimento e molto cantabile}}
+consentimentoemoltocantabileC = \markup {\italic \center-column {\lower #1.5 "con sentimento e" "molto cantabile"}}
 crescmarkup = \markup {\italic cresc.}
 crescmolto = \markup {\italic {cresc. molto}}
 crescpocoapoco = \markup {\italic {cresc. poco a poco}}
@@ -238,3 +239,12 @@ whiteoutRehearsalMark = {
 	\once \override Score.RehearsalMark.whiteout = ##t
 	%\once \override Score.RehearsalMark.whiteout-style = #'outline
 }
+
+mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
+
+textInSlur = {
+	\once \override TextScript.outside-staff-priority = ##f
+	\once \override TextScript.avoid-slur = #'inside
+}
+
+
