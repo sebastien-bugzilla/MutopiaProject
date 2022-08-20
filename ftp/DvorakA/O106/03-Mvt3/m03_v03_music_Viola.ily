@@ -46,7 +46,7 @@ musicViolaMvtIII = \relative c {
 % mesure 31 à 35
 	fis-. b,-. r8 d
 	cis\< b a g fis e\! \mark \default
-	fis4-._\fbenmarcato b-. r8 fis'-. 
+	\startMeasureCount fis4-._\fbenmarcato b-. r8 fis'-. 
 	fis,4-. b-. r8 fis'-. 
 	fis,4-. b-. r8 fis'-. 
 % mesure 36 à 40
@@ -74,7 +74,7 @@ musicViolaMvtIII = \relative c {
 	fis,4-. b-. r8 fis'-. 
 	fis,4-. b-. r8 fis'-. 
 % mesure 56 à 60
-	fis,4-. b-. r8 fis'-. 
+	fis,4-. b-. r8 fis'-. \stopMeasureCount 
 	g,4-. b-. r8 g'-. 
 	g,4-. b-. r8 g'-. 
 	b,4 r r
@@ -104,11 +104,11 @@ musicViolaMvtIII = \relative c {
 	fis8-._\piup fis-. fis-. fis-. g!-. g-.
 	fis-. fis-. fis-. fis-. g-. g-.
 % mesure 81 à 85
-	fis2.:8
+	\textCenter \tuplet 6/6 {fis2.:8_\sixDots}
 	fis8-. eis-. fis-. b-. d-. e!-.
-	<b fis'>2.:8
+	\tupletUp \tuplet 6/6 2. { <b fis'>2.:8
 	<b g'>2.:8
-	<b fis'>2.:8
+	<b fis'>2.:8 } \tupletNeutral
 % mesure 86 à 90
 	b8-. e-. d-. b-. fis-. e-.
 	dis-.\pp dis-. dis-. dis-. gis-. gis-.
@@ -120,7 +120,7 @@ musicViolaMvtIII = \relative c {
 	dis( dis,) dis-. dis-. dis-. dis-.
 	dis-. dis-. dis-. dis-. dis-. dis-.
 	gis4\fermata r r\fermata \bar "||" \key aes \major
-	c4(\mp\< ees aes_\espressivomarkup
+	c4(\mp\< ees \textInSlur aes_\espressivomarkup
 % mesure 96 à 100
 	c ees c\!)
 	\tuplet 2/3 {bes4--(\> f--)\!}
@@ -146,11 +146,11 @@ musicViolaMvtIII = \relative c {
 	g-- f--
 	ees-- des--
 % mesure 116 à 120
-	c-- ees--\<
-	ees-- f--
-	aes-- aes--\!
-	des,(\mf aes
-	des aes)
+	\tupletOffset #-3 c-- ees--\<
+	\tupletOffset #-2 ees-- f--
+	\tupletOffset #-1 aes-- aes--\!
+	\shape #'(() ((0 . 1)(0 . 0.5)(0 . 0.5)(0 . -0.5))) Slur \tupletOffset #3 des,(\mf aes  
+	\tupletOffset #3 des aes)
 % mesure 121 à 125
 	bes( f
 	g! des!)
@@ -195,7 +195,7 @@ musicViolaMvtIII = \relative c {
 	d'2-> r4
 % mesure 156 à 160
 	e2-> r4
-	d2.~\fz\>
+	d2.~-\offset X-offset #0.5 \fz\>
 	d4\! r r
 	dis,8\pp-. dis-. r4 gis-.
 	dis8-. dis-. r4 gis-.
@@ -207,7 +207,7 @@ musicViolaMvtIII = \relative c {
 	dis2.~
 % mesure 166 à 170
 	dis4 r r \mark \default
-	dis,-._\fbenmarcato gis-. r8 dis'-.
+	\startMeasureCount dis,-._\fbenmarcato gis-. r8 dis'-.
 	dis,4-. gis-. r8 dis'-.
 	dis,4-. gis-. r8 dis'-.
 	dis,4-. gis-. r8 dis'-.
@@ -234,7 +234,7 @@ musicViolaMvtIII = \relative c {
 	dis,4-. gis-. r8 dis'-.
 	dis,4-. gis-. r8 dis'-.
 	dis,4-. gis-. r8 dis'-.
-	dis,4-. gis-. r8 dis'-.
+	dis,4-. gis-. r8 dis'-. \stopMeasureCount 
 % mesure 191 à 195
 	e,4-. gis-. r8 e'-.
 	e,4-. gis-. r8 e'-.
@@ -243,26 +243,26 @@ musicViolaMvtIII = \relative c {
 	d4.\fz cis8-. b4-.
 % mesure 196 à 200
 	b4.\fz a8\noBeam-. gis-. fis-. \mark \default
-	\grace {s8} e4\f r r
+	e4\f r r
 	R2.
-	e4.\ff->^\marcatissimo a8-. e'4-.
+	e4.\ff^>^\marcatissimo a8-. e'4-.
 	e-. e-. e-.
 % mesure 201 à 205
 	b r r
 	R2.
-	dis,4.\f->^\marcatissimo gis8-. dis'4-.
+	dis,4.\f^>^\marcatissimo gis8-. dis'4-.
 	dis-. dis-. dis-.
 	a!4.-> cis!8 fis4
 % mesure 206 à 210
 	g,!4. b8_\dimmarkup e4
-	f,4.->\> a8 d4\!
+	f,4.^>\> a8 d4\!
 	ees,4.-> g8 c!4
 	ees,4.\mp\> g8-. bes4-.
 	ees,4. g8-. bes4-.\!
 % mesure 211 à 215
-	e,!4. ais8_\dimmarkup cis!4
+	e,!4. ais8-\offset X-offset #-0.5 _\dimmarkup cis!4
 	e,4. ais8 cis4
-	b8-.\pp cis-. b-. cis-. b-. cis-. 
+	\startMeasureCount b8-.\pp cis-. b-. cis-. b-. cis-. 
 	b-. cis-. b-. cis-. b-. cis-. 
 	b-. cis-. b-. cis-. b-. cis-. 
 % mesure 216 à 220
@@ -272,17 +272,17 @@ musicViolaMvtIII = \relative c {
 	b-. cis-. b-. cis-. b-. cis-. 
 	b-. cis-. b-. cis-. b-. cis-. 
 % mesure 221 à 225
-	b-. cis-. b-. cis-. b-. cis-. 
+	b-. cis-. b-. cis-. b-. cis-.  
 	b-._\crescmarkup cis-. b-. cis-. b-. cis-. 
 	b-.\< cis-. b-. cis-. b-. cis-. 
-	b-. cis-. b-. cis-. b-. cis-.\! 
+	b-. cis-. b-. cis-. b-. cis-.\! \stopMeasureCount
 	d!4-.\f r r
 % mesure 226 à 230
 	cis-. r r
-	<fis, b d> \arpeggio r <b d>\ff\upbow
+	<fis, b d> \arpeggio r <b d>-\offset X-offset #0.8 \ff\upbow
 	<b e>\downbow <a! fis'> <cis e>8-. <cis e>-.
 	<fis, b d>4-. \arpeggio r r
-	b-^ r r\fermata \mark \default
+	b-^ r r\fermata \mark \default \bar ".|:-||"
 % mesure 231 à 235
 	\repeat volta 2 {
 		d,2.\pp~
@@ -294,7 +294,7 @@ musicViolaMvtIII = \relative c {
 		d
 		a'->~
 		a4 r r
-		a--\< b-- cis--
+		a--\< b-- \once \stemUp cis--
 		d-- e-- fis--\!
 % mesure 241 à 245
 		g r g8\mf g
@@ -315,7 +315,7 @@ musicViolaMvtIII = \relative c {
 		<fis a>2(\upbow <fis a>4-.)
 		<fis a>2\downbow_\crescmarkup <fis a>4-.
 % mesure 256 à 260
-		<fis a>4.(\< d'8) <a fis'>4-.\!
+		\hairpinShorten #'(0 . 1.8) <fis a>4.(\< d'8) <a fis'>4-.\!
 		<cis e>2.\>->~
 		q2\! r4 \mark \default
 		R2.*2
@@ -337,7 +337,7 @@ musicViolaMvtIII = \relative c {
 		q
 		q~
 		q4 r r
-		g,-.( g-._\dimmarkup g-.
+		g,-.( g-.^\dimmarkup g-.
 % mesure 276 à 280
 		g-. g-. g-. 
 		g-. g-. g-. 
@@ -366,7 +366,7 @@ musicViolaMvtIII = \relative c {
 		<e b'>~
 % mesure 296 à 300
 		q
-		<a g'>4\ff r q
+		<a g'>4-\offset X-offset #0.8 \ff r q
 		r q r
 		q\f r r
 		R2.*5
@@ -405,7 +405,7 @@ musicViolaMvtIII = \relative c {
 	r4 cis8\f a g e
 	cis'\< a g e cis' a
 	g e cis' a g e\!
-	d4-.\ff r d-.
+	d4-.-\tweak extra-offset #'(0.7 . 0.8) \ff r d-.
 	d-. r d-.
 % mesure 331 à 335
 	d2.->~
@@ -415,7 +415,7 @@ musicViolaMvtIII = \relative c {
 	bes'-> bes bes bes bes bes
 % mesure 336 à 340
 	aes-> aes aes aes aes aes \mark \default
-	fis!->\fp fis'-. fis,-. fis'-. fis,-. fis'-. 
+	\startMeasureCount fis!->\fp fis'-. fis,-. fis'-. fis,-. fis'-. 
 	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-. 
 	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-. 
 	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-. 
@@ -438,7 +438,7 @@ musicViolaMvtIII = \relative c {
 	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-. 
 	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-. 
 % mesure 356 à 360
-	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-. 
+	fis,-. fis'-. fis,-. fis'-. fis,-. fis'-.  \stopMeasureCount
 	<b, d!>4-.\ff r <b e>-.
 	<b d>8-. <b d>-. r4 <b e>-.
 	<b d>2.->~
@@ -458,7 +458,7 @@ musicViolaMvtIII = \relative c {
 % mesure 371 à 375
 	fis2.~
 	fis8 b,( a g fis e) \mark \default
-	fis4_\ffbenmarcato-. b-. r8 fis'-.
+	\startMeasureCount fis4-\offset X-offset #-2.5 _\ffbenmarcato-. b-. r8 fis'-.
 	fis,4-. b-. r8 fis'-.
 	fis,4-. b-. r8 fis'-.
 % mesure 376 à 380
@@ -486,7 +486,7 @@ musicViolaMvtIII = \relative c {
 	fis,4-. b-. r8 fis'-.
 	fis,4-. b-. r8 fis'-.
 % mesure 396 à 400
-	fis,4-. b-. r8 fis'-.
+	fis,4-. b-. r8 fis'-. \stopMeasureCount 
 	g,4-. b-. r8 g'-.
 	g,4-. b-. r8 g'-.
 	g,4 r r
@@ -494,7 +494,7 @@ musicViolaMvtIII = \relative c {
 % mesure 401 à 405
 	f4.-- e8-. d4-.
 	d4.-- c8[-. b-. a]-. \mark \default
-	\grace {s8} g4 r r
+	g4 r r
 	R2.
 	g4.\f^\marc c8-. g'4-.
 % mesure 406 à 410
@@ -513,7 +513,7 @@ musicViolaMvtIII = \relative c {
 	g!)(_\dimmarkup
 	fis
 	e)
-	b'8\pp-. cis-. b-. cis-. b-. cis-. 
+	\startMeasureCount b'8\pp-. cis-. b-. cis-. b-. cis-. 
 	b-. cis-. b-. cis-. b-. cis-. 
 % mesure 421 à 425
 	b-. cis-. b-. cis-. b-. cis-. 
@@ -526,7 +526,7 @@ musicViolaMvtIII = \relative c {
 	b-._\moltocresc cis-. b-. cis-. b-. cis-. 
 	b-.\< cis-. b-. cis-. b-. cis-. 
 	b-. cis-. b-. cis-. b-. cis-. 
-	b-. cis-. b-. cis-. b-. cis-.\!
+	b-. cis-. b-. cis-. b-. cis-.\! \stopMeasureCount
 % mesure 431 à 435
 	<b d!>4\ff r r
 	cis r r

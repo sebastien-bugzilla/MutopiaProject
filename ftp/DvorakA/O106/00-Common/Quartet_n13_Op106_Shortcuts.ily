@@ -123,9 +123,13 @@ setSextolet = {
 	\set subdivideBeams = ##t
 	\set baseMoment = #(ly:make-moment 1/8)
 	\set beatStructure = 2,2,2,2
+	\override TupletNumber.Y-offset = #-3
+	\override TupletNumber.avoid-slur = #'ignore
 }
 unsetSextolet = {
 	\set subdivideBeams = ##f
+	\revert TupletNumber.Y-offset
+	\revert TupletNumber.avoid-slur
 }
 
 % DEFAULT SCRIPT POSITION
@@ -247,4 +251,17 @@ textInSlur = {
 	\once \override TextScript.avoid-slur = #'inside
 }
 
+sixDots = \markup {
+	\general-align #X #CENTER \concat {
+		\musicglyph #"scripts.staccato" \hspace #0.25
+		\musicglyph #"scripts.staccato" \hspace #0.25
+		\musicglyph #"scripts.staccato" \hspace #0.25
+		\musicglyph #"scripts.staccato" \hspace #0.25
+		\musicglyph #"scripts.staccato" \hspace #0.25
+		\musicglyph #"scripts.staccato"
+	}
+}
 
+textCenter = {
+	\once \override TextScript.parent-alignment-X = #0
+}

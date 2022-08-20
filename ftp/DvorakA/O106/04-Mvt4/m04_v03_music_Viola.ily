@@ -54,7 +54,7 @@ musicViolaMvtIV = \relative c {
 	g-. fis16( g) g8-. dis-.
 	e-. dis16( e) e8 cis\fz
 	d b\fz c! ais\fz
-	b gis\fz a! fis\fz
+	b gis-\tweak extra-offset #'(0 . 0.3) \fz a! fis\fz
 % mesure 41 à 45
 	g e\fz g e\fz
 	g e\fz g e\fz
@@ -98,7 +98,7 @@ musicViolaMvtIV = \relative c {
 	f4( r8 ges--)
 	aes4->_\crescmolto ges->
 % mesure 76 à 80
-	aes->\< ges-> 
+	\hairpinShorten #'(3 . 0) aes->\< ges-> 
 	aes-> ges->\!
 	aes-> ges->
 	f8\f-. f,![->( ges) bes-.]
@@ -123,7 +123,7 @@ musicViolaMvtIV = \relative c {
 	g:
 % mesure 96 à 100
 	g16 g g g g g dis dis
-	e8:16[ fis: g:_\dimmarkup dis:]
+	e8:16[ fis: g:^\dimmarkup dis:]
 	e:[ fis: g: ees:]
 	d:[\pp fis: g ees:]
 	d:[ fis: g: ees:]
@@ -138,19 +138,19 @@ musicViolaMvtIV = \relative c {
 	R2
 	r8 g\f d'4
 	g, r4
-	R2*2
+	R2*2 \pageBreak
 % mesure 111 à 115
 	
 	r4 g\mf
 	R2 \key ees \major \mark \default
 	\repeat volta 2 {
-		r4 bes8.\<(^\arco bes16-.)\!
-		ces4\fz(\> bes)\!
+		r4 \hairpinShorten #'(0 . -1) bes8.\<(^\arco bes16-.)\!
+		\hairpinShorten #'(-.5 . -1) ces4-\offset X-offset #0.5 \fz(\> bes)\!
 % mesure 116 à 120
 		g! ees~
 		ees2
-		r4 bes'8.(\< bes16-.)\!
-		ces4_\dimmarkup\(( bes)
+		r4 \hairpinShorten #'(0 . -1) bes'8.(\< bes16-.)\!
+		ces4-\offset X-offset #0.5 _\dimmarkup\(( bes)
 		g! ees\)~
 % mesure 121 à 125
 		ees2
@@ -161,7 +161,7 @@ musicViolaMvtIV = \relative c {
 % mesure 126 à 130
 		ges2\>(^\dimmarkup
 		bes4. d,!8)\!
-		ees2\pp\>~
+		\hairpinShorten #'(-0.5 . -0.5) ees2\pp\>~
 		ees\pp \mark \default
 	}
 	ees16\!( g d fis ees g ees g
@@ -185,7 +185,7 @@ musicViolaMvtIV = \relative c {
 	des\> ees! des ees des ees des ees)\!
 % mesure 146 à 150
 	aes,8\p r ees'8.(\< ees16-.)\!
-	fes4(\fz\> ees\!
+	\hairpinShorten #'(-.5 . -1) fes4(\fz\> ees\!
 	c! aes)~
 	aes2
 	f'!4\< f8.( f16-.)\!
@@ -215,7 +215,7 @@ musicViolaMvtIV = \relative c {
 	
 % mesure 171 à 175
 	
-	<dis ais'>2-^
+	<dis ais'>2^^
 	gis8( b4) b8
 	fis4( dis')
 	cis( ais8 fis)
@@ -274,8 +274,8 @@ musicViolaMvtIV = \relative c {
 	e[ fis g dis])
 	e4\p( fis
 % mesure 221 à 225
-	g dis)\>
-	e( fis
+	g \hairpinShorten #'(0.5 . 0) dis) -\tweak height #0.4 \>
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e( fis
 	g ees)\!
 	d(\pp fis
 	g dis)
@@ -284,7 +284,7 @@ musicViolaMvtIV = \relative c {
 	ees)(
 	d4) r
 	R2 \bar "||" \mark \default
-	g'4(\pp fis~
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur g'4(\pp fis~
 % mesure 231 à 235
 	fis e)
 	d2~
@@ -292,11 +292,11 @@ musicViolaMvtIV = \relative c {
 	e4(\< d~
 	d c)\!
 % mesure 236 à 240
-	c2\>~->
-	c\!
-	b(
+	\alterBroken shorten-pair #'(() (0. . 6)) Hairpin c2\>~->
+	c
+	b(\!
 	gis4 a)
-	<< g!2 {s8\> s s s\!} >>
+	<< g!2 {\hairpinShorten #'(0 . -1) s8\> s s s\!} >>
 % mesure 241 à 245
 	fis4~ \tuplet 3/2 {fis8 g g}
 	b4(\> d\!
@@ -308,17 +308,17 @@ musicViolaMvtIV = \relative c {
 	fis)\!
 	e4\p\>( fis
 	g2)\!
-	fis\pp(
+	fis-\offset X-offset #-0.8 \pp(
 % mesure 251 à 255
 	b)\fermata
-	R2*4
+	\mmrnDown R2*4
 	
 	
 	
 % mesure 256 à 260
 	\tuplet 3/2 {r8 e,\f-^ d!-^} e8.( fis16-.)
 	d4(\< e\!
-	<< e2)~ {s8\> s s s\!} >>
+	<< e2)~ {\hairpinShorten #'(0 . -1.5) s8\> s s s\!} >>
 	e8\! r r4
 	R2*3
 % mesure 261 à 265
@@ -326,7 +326,7 @@ musicViolaMvtIV = \relative c {
 	
 	\tuplet 3/2 {r8 e\f-^ d-^} e8.( fis16-.)
 	d4\< e~\!
-	<< e2 {s8\> s s s\!} >> \mark \default
+	<< e2 {\hairpinShorten #'(0 . -1.5) s8\> s s s\!} >> \mark \default
 % mesure 266 à 270
 	e2--\pp~
 	e~
@@ -334,9 +334,9 @@ musicViolaMvtIV = \relative c {
 	g8 r r8.. g32\p
 	e'8-.\espressivo r16. g,32 e'8-.\espressivo r16. g,32
 % mesure 271 à 275
-	e'8-. \tuplet 3/2 8 {g,16\<[( c g] e[ g e] c[\! e c]}
+	e'8-. \tuplet 3/2 8 {\tupletOffset #-3 g,16\<[( c g] \tupletOffset #-3.5 e[ g e] c[\! e c]}
 	e'8) r16. g,32\p e'8-.\espressivo r16. g,32
-	e'8-. \tuplet 3/2 8 {g,16\<[( c g] e[ g e] c[\! e c])}
+	e'8-. \tuplet 3/2 8 {\tupletOffset #-3 g,16\<[( c g] \tupletOffset #-3.5 e[ g e] \tupletOffset #-3.8 c[\! e c])}
 	R2*2
 	
 % mesure 276 à 280
@@ -349,7 +349,7 @@ musicViolaMvtIV = \relative c {
 	
 	
 	
-	R2*4
+	\mmrnDown R2*4
 	
 % mesure 286 à 290
 	
@@ -367,12 +367,12 @@ musicViolaMvtIV = \relative c {
 	
 	
 	\bar "||" \mark \default
-	r4 b'8.\p\<( b16-.)\!
+	r4 \hairpinShorten #'(-0.5 . -1) b'8.\p\<( b16-.)\!
 	\once \stemUp c!4(\fz b)
 % mesure 301 à 305
 	gis\>( e~\!
 	e2)
-	r4 b'8.\p(\< b16-.)\!
+	r4 \hairpinShorten #'(-0.5 . -1) b'8.\p(\< b16-.)\!
 	\once \stemUp c!4(\fz b
 	gis) e~
 % mesure 306 à 310
@@ -403,22 +403,22 @@ musicViolaMvtIV = \relative c {
 	f( aes e! g f aes d, f)
 	ees( g dis fis! ees! g ees g)
 	f( g f g f g f g)(
-	e!8) r g'8.\p\<( g16-.)\!
+	e!8) r \hairpinShorten #'(-0.5 . -1.5) g'8.\p\<( g16-.)\!
 	aes4\fz( g)
 % mesure 331 à 335
 	e!( c\>)~
 	c2\!
 	a'!4 a8.(\< a16-.)
-	b!4(_\fzmarkup a)\!
+	b!4(-\tweak extra-offset #'(0.4 . 4.5) _\fzmarkup a)\!
 	d,( dis\>
 % mesure 336 à 340
 	e d!8 c!\!
 	b)\p r r4
-	R2*3
+	R2*3 \pageBreak
 	
 	
 % mesure 341 à 345
-	fis2\f->
+	fis2\f^>
 	e8( g4 g8)
 	d4( b'_\dimmarkup)
 	a( fis8 d
@@ -430,13 +430,13 @@ musicViolaMvtIV = \relative c {
 	g16\mp\<( bes fis! a g bes g bes
 	g bes g bes g bes g bes)\!
 % mesure 351 à 355
-	g(\mf\< bes fis! a g bes g bes)
-	ees,( g c, ees d f bes aes)\!
-	\tuplet 6/4 4 { \setSextolet ees16\ff( bes' g') g( bes, ees,) ees( bes' g') g( bes, ees,)
+	g(-\offset X-offset #-0.5 \mf\< bes fis! a g bes g bes)
+	\shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur ees,( g c, ees d f bes aes)\!
+	\tupletDown \tuplet 6/4 4 { \setSextolet ees16\ff( bes' g') g( bes, ees,) ees( bes' g') g( bes, ees,)
 	ees16( bes' g') g( bes, ees,) ees( bes' g') g( bes, ees,)
-	ees( bes' aes') aes( bes, ees,) ees( bes' aes') aes( bes, ees,) 
+	\beamOffset #'(-0.5 . -0.5) ees( bes' aes') aes( bes, ees,) ees( bes' aes') aes( bes, ees,) 
 % mesure 356 à 360
-	ees( bes' aes') aes( bes, ees,) ees( bes' aes') aes( bes, ees,) 
+	\beamOffset #'(-0.5 . -0.5) ees( bes' aes') aes( bes, ees,) ees( bes' aes') aes( bes, ees,) 
 	ees( bes' g') g( bes, ees,) ees( bes' g') g( bes, ees,)
 	ees( bes' aes') aes( bes, ees,) ees( bes' aes') aes( bes, ees,) 
 	ees( bes' g') g( bes, ees,) ees( bes' g') g( bes, ees,)
@@ -445,7 +445,7 @@ musicViolaMvtIV = \relative c {
 	ees( bes' ges') ges( bes, ees,) ees( bes' ges') ges( bes, ees,) 
 	ees( bes' ges') ges( bes, ees,) ees( bes' ges') ges( bes, ees,) 
 	ees( bes' aes') aes( bes, ees,) ees( bes' aes') aes(_\dimmarkup bes, ees,) 
-	ees( bes' aes') aes( bes, ees,) ees( bes' aes') aes( bes, ees,) 
+	ees( bes' aes') aes( bes, ees,) ees( bes' aes') aes( bes, ees,) \tupletNeutral
 	ees(\> bes' ges') ges( bes, ees,) ees( bes' ges') ges( bes, ees,)\! \unsetSextolet }
 % mesure 366 à 370
 	fis!16( fis') fis( fis,)_\dimmarkup fis( fis') fis( fis,) 
@@ -493,7 +493,7 @@ musicViolaMvtIV = \relative c {
 	aes4-- ges--
 	f r8 ges
 	aes4_\crescmolto ges
-	aes8(\< bes) c( bes)
+	\hairpinShorten #'(2 . 0) aes8(\< bes) c( bes)
 	aes4 ges\!
 % mesure 406 à 410
 	aes8(\< bes) c( bes)\!
@@ -550,7 +550,7 @@ musicViolaMvtIV = \relative c {
 	ees4(\! d)
 	b!( g8. d16-.)
 % mesure 451 à 455
-	ees4\fz->( d)
+	ees4-\tweak extra-offset #'(-1.3 . 1.2) \fz^>( d)
 	ees\fz( d)
 	ees2~\fz\>
 	ees~
@@ -568,7 +568,7 @@ musicViolaMvtIV = \relative c {
 	r4 ees8.(\< ees16-.)\!
 	fes4\fz\>( ees)\!
 % mesure 466 à 470
-	c!( aes8. ees16)(\<
+	c!( aes8. \hairpinShorten #'(-0.5 . -0.5) \shape #'((0 . 0)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur ees16)(\<
 	fes4\fz ees)
 	fes( ees)
 	e!2_\dimmarkup~
@@ -588,7 +588,7 @@ musicViolaMvtIV = \relative c {
 % mesure 481 à 485
 	f4\fz( e)
 	cis8( a) e'8.\<( e16-.)\!
-	f4(\fz\> e)\!
+	\hairpinShorten #'(-0.5 . -1) f4(\fz\> e)\!
 	c!8(_\crescmarkup a) e'8.(\< e16-.)\!
 	fis!4(\fz e)
 % mesure 486 à 490
@@ -604,8 +604,8 @@ musicViolaMvtIV = \relative c {
 	R2
 	d8:16[\ff c: a: fis:] 
 % mesure 496 à 500
-	\tuplet 3/2 4 {e8 <d d'> q  q q q} \mark \default
-	\grace {s8} g8-.\ff[ b( c) e-.]
+	\beamOffset #'(0.65 . -0.6) \tuplet 3/2 4 {e8 <d d'> q  q q q} \mark \default
+	g8-.\ff[ b( c) e-.]
 	g-. fis16( g) g8-. dis-.
 	e8-. dis16 e e8-. cis-.
 	\tuplet 3/2 {d! a fis} d r
@@ -613,7 +613,7 @@ musicViolaMvtIV = \relative c {
 	g8-.[ b( c) e-.]
 	g-. fis16( g) g8-. dis-.
 	e8-. dis16 e e8-. cis-.
-	d!4 r8 e-^_\ffpesante
+	d!4 r8 e-^\ff-\offset X-offset #-2 ^\pesante
 	a,4-^ r8 d-^
 % mesure 506 à 510
 	g,\downbow g\downbow r e'

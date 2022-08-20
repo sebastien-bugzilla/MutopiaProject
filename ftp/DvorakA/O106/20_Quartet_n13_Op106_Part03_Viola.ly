@@ -18,9 +18,8 @@
 \include "./00-Common/Quartet_n13_Op106_timeMvt.ily"
 \include "./00-Common/Quartet_n13_Op106_LayoutParts.ily"
 \include "./00-Common/Quartet_n13_Op106_Shortcuts.ily"
-%\include "./00-Common/Quartet_n13_Op106_Format_Part03_Viola.ily"
+\include "./00-Common/Quartet_n13_Op106_Format_Part03_Viola.ily"
 \include "./00-Common/Quartet_n13_Op106_Tempi.ily"
-%\include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "./01-Mvt1/m01_v03_music_Viola.ily"
 \include "./02-Mvt2/m02_v03_music_Viola.ily"
 \include "./03-Mvt3/m03_v03_music_Viola.ily"
@@ -45,11 +44,11 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolaMvtI
-%			}
 			\new Voice {
-				\keepWithTag #'(Viola) \tempiPartMvtI
+				\formatViolaMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtI
 			}
 			\new Voice {
 				\timeMvtI \musicViolaMvtI
@@ -74,11 +73,11 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolaMvtII
-%			}
 			\new Voice {
-				\keepWithTag #'(Viola) \tempiPartMvtII
+				\formatViolaMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicViolaMvtII
@@ -103,11 +102,11 @@
 	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolaMvtIII
-%			}
 			\new Voice {
-				\keepWithTag #'(Viola) \tempiPartMvtIII
+				\formatViolaMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \musicViolaMvtIII
@@ -130,13 +129,21 @@
 			}
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff << 
-%			\new Voice {
-%				\formatViolaMvtIV
-%			}
 			\new Voice {
-				\keepWithTag #'(Viola) \tempiPartMvtIV
+				\formatViolaMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \musicViolaMvtIV
