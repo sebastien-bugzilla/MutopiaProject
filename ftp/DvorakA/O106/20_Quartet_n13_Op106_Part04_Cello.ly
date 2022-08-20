@@ -19,7 +19,6 @@
 \include "./00-Common/Quartet_n13_Op106_LayoutParts.ily"
 \include "./00-Common/Quartet_n13_Op106_Shortcuts.ily"
 \include "./00-Common/Quartet_n13_Op106_Format_Part04_Cello.ily"
-%\include "./00-Common/Quartet_n13_Op106_Format_temp.ily"
 \include "./00-Common/Quartet_n13_Op106_Tempi.ily"
 \include "./01-Mvt1/m01_v04_music_Cello.ily"
 \include "./02-Mvt2/m02_v04_music_Cello.ily"
@@ -37,18 +36,10 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — String Quartet No. 13 in F Major, Op. 106"
+			"Antonín Dvořák — String Quartet No. 13 in G Major, Op. 106"
 		}
 		instrument = \markup {
 			"Cello"
-		}
-	}
-	\pageBreak
-	\markup {
-		\vspace #25.35
-		\abs-fontsize #20
-		\fill-line {
-			"Page intentionnaly left blank"
 		}
 	}
 	\score {

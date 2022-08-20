@@ -21,7 +21,7 @@ musicCelloMvtI = \relative c {
 	\tuplet 3/2 8 {g,16\f-.[ b-. g-.] fis-.[ a-. fis-.] e-.[ g-. e-.] fis-.[ b-. fis-.]}
 	e4 r
 % mesure 11 à 15
-	r r8 \tuplet 3/2 8 {g'16(\f c g
+	r r8 \tuplet 3/2 8 {g'16(-\offset X-offset #-0.5 \f c g
 	e[ g e] \stemDown c[ e c]) \stemNeutral g[( c g]} c,16) r
 	r4 r8 \tuplet 3/2 8 {a''16-\offset X-offset #-0.5 \f[( c a]
 	e[ a e] \stemDown c[ e c]) \stemNeutral a[( c a]} c,16) r
@@ -58,7 +58,7 @@ musicCelloMvtI = \relative c {
 	\tuplet 3/2 {fis,16[ a! cis]} fis8-.\noBeam r8 cis-.
 % mesure 41 à 45
 	\tuplet 3/2 {fis,16[ a cis]} fis8-.\noBeam r8 fis,-.
-	g!8_\marcatoM-. e-. fis-. dis-.
+	g!8^\marcatoM-. e-. fis-. dis-.
 	e-. cis-. d!-. a-.
 	d16-. d,-. d'8-^~ d16 d, d'8-^~
 	d16 d,16-. d'8-. r4
@@ -75,11 +75,11 @@ musicCelloMvtI = \relative c {
 	b,2\fz
 	c16( e) e( g) g( c) e,8\fz\<(
 % mesure 56 à 60
-	g[\! d-\offset X-offset #-1.5 _\pesante b]) ais'\fz\<(
+	g[\! d^\pesante b]) ais'\fz\<(
 	b[\! g d]) cis'(\fz
 	d16)\ff b-. d8->~ d16 b-. d8->~
 	d16 b-. d8->~ d16 b-. d8->
-	ees4.._\ffzferoce-^ \hairpinShorten #'(-2.5 . 0) d32(\< c
+	ees4..\ffz-\tweak extra-offset #'(3 . -10.1) ^\feroce-^ \hairpinShorten #'(-1 . 0) d32(-\tweak extra-offset #'(0 . -0.7) \< c
 % mesure 61 à 65
 	b!2)\fz
 	c4..-> bes32\<( aes
@@ -148,7 +148,7 @@ musicCelloMvtI = \relative c {
 	R2
 % mesure 116 à 120
 	\tuplet 3/2 4 {c,8\f c' b! c4-> cis16( d)
-	\tupletOffset #-3 ees4(_\crescmarkup e16)( f) \tupletOffset #4 \tupletUp ges8->(\< g)( gis16)( a)
+	\tupletOffset #-2.5 ees4(_\crescmarkup e16)( f) \tupletOffset #4 \tupletUp ges8->(\< g)( gis16)( a)
 	\tupletOffset #5 bes4-> b16( c) \tupletExtraOffset #'(0.5 . 0) cis8( d ees16 e)\!} \tupletNeutral
 	\hairpinShorten #'(-0.5 . -0.5) f8-\offset X-offset #-1 \ff(\< fis4.)\!
 	f8(\< fis4.)\!
@@ -186,7 +186,7 @@ musicCelloMvtI = \relative c {
 	c c'16 g e!8 c
 	c'16 g ees8 c c'16 g
 	ees8_\crescmarkup c c16 g ees c
-	f'\f d d, r r d'[ d,]\< r
+	f'-\offset X-offset #-0.8 \f d d, r r d'[ d,]\< r
 	r ees'[ ees,] r r fis'![ fis,!]\! r
 % mesure 151 à 155
 	\stemUp g'-.\ff g,-. a-. a'-. \stemNeutral bes-. bes,-. c-. c'-.
@@ -225,7 +225,7 @@ musicCelloMvtI = \relative c {
 	g!( cis g cis g cis g cis
 	g cis g cis g cis g cis)
 % mesure 181 à 185
-	g( g' g,-\tweak extra-offset #'(0.9 . 2) _\crescmarkup g' g, g' g, g'
+	\shape #'(((0 . 0)(0 . -0.6)(0 . -0.6)(0 . -1)) ()) Slur g( g' g,-\tweak extra-offset #'(0.9 . 2) _\crescmarkup g' g, g' g, g'
 	g, g' g, g' g, g' g, g')
 	\tuplet 5/4 4 {g,!\mf(\< <b g'> g <b g'> g <b g'> g <b g'> g <b g'>)
 	 g( <b g'> g <b g'> g <b g'> g <b g'> g <b g'>\!)} \mark \default
@@ -248,12 +248,12 @@ musicCelloMvtI = \relative c {
 		c!2\ff
 		c
 		c
-		c2*1/2 s4_\dimmarkup
+		c2*1/2 s4^\dimmarkup
 	}\\{
-		c8( c,4.)
-		c'8( c,4.)
-		c'8( c,4.)
-		c'8(-^ c,4.)
+		c8^( c,4.)
+		c'8^( c,4.)
+		c'8^( c,4.)
+		c'8^(-^ c,4.)
 	}>>
 % mesure 201 à 205
 	r4 r8. c16(
@@ -270,7 +270,7 @@ musicCelloMvtI = \relative c {
 % mesure 211 à 215
 	q2~_\dimmarkup
 	q2
-	<ees bes'>~\pp
+	<ees bes'>~-\tweak extra-offset #'(-1.4 . 0.9) \pp
 	q~
 	q~
 % mesure 216 à 220
@@ -312,15 +312,15 @@ musicCelloMvtI = \relative c {
 % mesure 246 à 250
 	ais,8->\fz( cis16) r g'!8\fz(-> e16) r
 	b8\fz->( d16) r a'!8->\fz( fis16) r
-	cis8\fz( e16) r b'8(\fz g16) r
+	cis8-\tweak extra-offset #'(-1.3 . -8.8) ^\fz( e16) r b'8(\fz g16) r
 	d2\fz
 	e,->
 % mesure 251 à 255
 	fis->
 	<g d'>
 	a
-	ais4(\< b)\!
-	\beamOffset #'(0.5 . 0) c!8[( \tuplet 3/2 {d16 fis d]} \tupletOffset #3.5 \tuplet 6/4 {fis[ a fis a c a])}
+	\shape #'((0 . 0.1)(0 . 0.3)(0 . 0.3)(0 . 0.1)) Slur ais4(-\tweak height #0.4 \< b)\!
+	\beamOffset #'(0.5 . 0) c!8[( \tuplet 3/2 {\tupletOffset #2 d16 fis d]} \tupletOffset #3.5 \tuplet 6/4 {fis[ a fis a c a])}
 % mesure 256 à 260
 	c8[( \tuplet 3/2 {d16 fis d]} c8[ \tuplet 3/2 {d16 fis d])}
 	c8.( d16_\dimmarkup c8. d16)
@@ -328,7 +328,7 @@ musicCelloMvtI = \relative c {
 	c2\p\>~
 	c\!
 % mesure 261 à 265
-	fis2\pp~
+	\shape #'((0 . -0.1)(0 . -0.3)(0 . -0.3)(0 . -0.1)) Tie fis2\pp~
 	fis \mark \default
 	g8-.(\pp a,-.) g-.( a-.)
 	g-.( g-.) g-.( g-.)
@@ -380,7 +380,7 @@ musicCelloMvtI = \relative c {
 	d~\>
 	d~
 	d)\!
-	<g, d' b'>8-\offset X-offset #-0.8 \pp^\pizz \arpeggio r r q \arpeggio
+	<g, d' b'>8-\offset X-offset #1.4 \pp^\pizz \arpeggio r r q \arpeggio
 % mesure 306 à 310
 	r4 q8 r
 	<g d' a'> r q r
@@ -410,16 +410,16 @@ musicCelloMvtI = \relative c {
 	d!8\<( dis4.)\!
 	dis8\fz r r4
 	\tuplet 6/4 4 {r8 g,16-\offset X-offset #-1.5 \ff g b, b dis dis g, g b b}
-	\tuplet 3/2 4 {r8 dis-^_\fconforza dis,-^ b'4( \once \stemUp dis8) 
+	\tuplet 3/2 4 {r8 dis^^-\tweak extra-offset #'(-1.6 . 1.3) _\fconforza dis,^^ b'4( \once \stemUp dis8) 
 % mesure 331 à 335
 	r dis-^ dis,-^ b'4(-> \once \stemUp dis8)
-	r dis-^\> dis,-^ b'4( \once \stemUp dis8)\!
+	r \hairpinShorten #'(3 . -1) dis^^\> dis,^^ b'4( \once \stemUp dis8)\!
 	r ees-. ees,-.-\offset X-offset #2 _\dimmarkup a4( ees'8)} \mark \default 
 	d,!8-\offset X-offset #0.7 \mf r d-. d'16-. c-.
 	c8-.\< a-. \tuplet 3/2 {d,-. d'-. c-.\!}
 % mesure 336 à 340
-	b4 r8 b'--\f
-	\hairpinShorten #'(-0.8 . -0.5) r4-\offset X-offset #-2 _\dimD\< \hairpinShorten #'(0.5 . 0.8) e--\>
+	b4 r8 b'---\offset X-offset #-1 \f
+	\hairpinShorten #'(-0.8 . -0.5) r4-\offset X-offset #-2.5 _\dimD\< \hairpinShorten #'(0.5 . 0.8) e--\>
 	r4\! r8 fis,\p\>
 	r4 gis\!
 	a(\pp b
@@ -440,11 +440,11 @@ musicCelloMvtI = \relative c {
 	e!8\pp-. e'16-. b-. gis8-. e-.
 	a, a'16 e cis8 a
 	a'16_\moltocresc e cis8 a a'16 e
-	c!8\< a a'16 c, e c\!
+	\hairpinShorten #'(0 . 0.5) c!8\< a a'16 c, e c\!
 % mesure 356 à 360
-	d8_\mfcresc-> d, d'->\! d,
+	d8-\tweak extra-offset #'(-1 . 1.) _\mfcresc-> d, d'->\! d,
 	d' r r4
-	r16 b'-.\f b,-. r r b'-. b,-. r
+	r16 \beamOffset #'(0.7 . 0.7) b'-.-\tweak extra-offset #'(-1 . 0.9) \f b,-. r r b'-. b,-. r
 	r c c, r r d' d, r
 	e'[ e,]_\crescmarkup fis[ fis'] g[ g,] a[ a']
 % mesure 361 à 365

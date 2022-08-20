@@ -147,7 +147,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 106
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI violinII viola) {
+		\tempo \markup {
+			\medium \italic "poco rit."
+		}
+	}
+	\tag #'(cello) {
+		\tempoXoffset #-0.5
 		\tempo \markup {
 			\medium \italic "poco rit."
 		}
@@ -165,7 +171,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 261
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI violinII viola) {
+		\tempo \markup {
+			\medium \italic "ritard."
+		}
+	}
+	\tag #'(cello) {
+		\tempoExtraOffset #'(0 . -0.2)
 		\tempo \markup {
 			\medium \italic "ritard."
 		}
@@ -174,7 +186,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 263
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI violinII viola) {
+		\tempo \markup {
+			\medium \italic "in tempo"
+		}
+	}
+	\tag #'(cello) {
+		\tempoDown \tempoXoffset #2.5
 		\tempo \markup {
 			\medium \italic "in tempo"
 		}
@@ -183,7 +201,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 340
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI violinII viola) {
+		\tempo \markup {
+			\medium \italic "tranquillo"
+		}
+	}
+	\tag #'(cello) {
+		\tempoDown \tempoXoffset #2.5
 		\tempo \markup {
 			\medium \italic "tranquillo"
 		}

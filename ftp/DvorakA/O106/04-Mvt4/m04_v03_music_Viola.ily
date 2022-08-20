@@ -644,9 +644,9 @@ musicViolaMvtIV = \relative c {
 	g, g b b c c g' g
 	g, g b b c c g' g
 	g8 d'16( b d b) g( c
-	g c) b( gis b[ gis]) e[( a
+	g c) b( gis b[ gis]) e( a
 % mesure 531 à 535
-	e a]) fis[( dis fis dis]) c![( e
+	e a) fis[( dis fis dis]) c![( e
 	c e]) b[( d! b d]) a( c
 	g'8\ff) fis4-> e8~
 	e d4-> c8~

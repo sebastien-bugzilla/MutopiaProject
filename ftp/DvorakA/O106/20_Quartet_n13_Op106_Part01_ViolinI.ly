@@ -37,7 +37,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — String Quartet No. 13 in F Major, Op. 106"
+			"Antonín Dvořák — String Quartet No. 13 in G Major, Op. 106"
 		}
 		instrument = \markup {
 			"Violino I"
