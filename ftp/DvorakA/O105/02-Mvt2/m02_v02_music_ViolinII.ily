@@ -8,79 +8,79 @@ musicViolinIIMvtII = \relative c {
 	\clef treble
 	\key f \minor
 % mesure 1 à 5
-    \repeat volta 2 {
-	    f''4-.\mp r des-.
-	    c-. r r
-	    c-. r aes-.
-	    g-. r r
-	    ees'_\crescmarkup ges8-. ees-. bes4
+	\repeat volta 2 {
+		f''4-.\mp r des-.
+		c-. r r
+		c-. r aes-.
+		g-. r r
+		ees'_\crescmarkup ges8-. ees-. bes4
 % mesure 6 à 10
-	    des8( f) r f f,4\fz\<(
-	    f) aes8-. f-. c4
-	    aes'8(\! c) r c c,4\fz
-	    c2->\ff c4->(
-	    c) bes4.->( aes8-.)
+		des8( f) r f f,4\fz\<~
+		f aes8-. f-. c4
+		aes'8(\! c) r c c,4\fz
+		c2->\ff c4->~
+		c bes4.->( aes8-.)
 % mesure 11 à 15
-	    bes2.->(
-	    aes2) r4 \mark \default
+		bes2.->(
+		aes2) r4 \mark \default
 	}
 	\repeat volta 2 {
-	    c'8(\mf f) r f f,4->(
-	    f) c'-. aes-.
-	    bes8(\> ees) r ees ees,4->(
+		c'8(\mf f) r f f,4->~
+		f c'-. aes-.
+		bes8(\> ees) r ees ees,4->~
 % mesure 16 à 20
-	    ees) bes'-. g-.
-	    aes8(\p des) r des des,4(->
-	    des) aes'-. f-.
-	    ees8(\pp aes) r aes aes,4->(
-	    aes) ees'(-. c-.)
+		ees bes'-. g-.\!
+		aes8(\p\> des) r des des,4->~
+		des aes'-. f-.\!
+		ees8(\pp aes) r aes aes,4->~
+		aes ees'(-. c-.)
 % mesure 21 à 25
-	    f2(^\sulG\< fis4)
-	    g2.(\!
-	    g4) ees(\< e)
-	    f2(~ f8 ees!)
-	    des2.(\!
+		f2(^\sulG\< fis4)
+		g2.~\!
+		g4 ees(\< e)
+		f2(~ f8 ees!)
+		des2.~\!
 % mesure 26 à 30
-	    des4) c4.( bes8-.)
-	    c2\ff c4~
-	    c bes4.-> aes8-.
-	    bes2.-^(
-	    aes2) r4 \mark \default
+		des4 c4.( bes8-.)
+		c2\ff c4~
+		c bes4.-> aes8-.
+		bes2.^^(
+		aes2) r4 \mark \default
 	}
 % mesure 31 à 35
 	ees'8(\mf bes') r4 ees,8( bes')
 	r4 ees,8( bes') r4
 	ees,8(\> bes') r4 ees,8( bes')
-	r4 ees,8( bes') r4
+	r4 ees,8( bes')\! r4
 	ees,8\pp( a) r4 ees8( a)
 % mesure 36 à 40
 	r4 ees8( a) r4
 	ees8( a) r4 ees8( a)
 	r4 ees8( a) r4
-	dis,8( a') r4 dis,8( a')
-	r4 dis,8(\< a') r4
+	dis,8( a') r4 dis,8(\< a')
+	r4 dis,8( a') r4
 % mesure 41 à 45
 	d,!8( aes') r4 d,8( aes')\!
 	r4 d,8(_\crescmarkup aes') r4
 	d,8( aes') r4 d,8( aes')
 	r4 d,8(\mf aes') r4
-	f8( g!) r4 f8( g)
+	f8( g!) r4 f8(\> g)
 % mesure 46 à 50
-	r4 f8(\> g) r4
+	r4 f8( g) r4
 	d8( ees) r4 d8( ees)\!
 	r4 d8( ees) r4
 	g2^\sulG_\espress\<-> f4~
-	f ees(-. des!-.)
+	f ees(-. des!-.)\!
 % mesure 51 à 55
 	c2\ff\< c4~
-	c des4.( ees8-.)
+	c des4.( ees8-.)\!
 	des2.(\f
 	c2) r4 \mark \default
 	aes'8(\f ees') r4 aes,8( ees')
 % mesure 56 à 60
 	r4 aes,8( ees') r4
 	aes,8(\> ees') r4 aes,8( ees')
-	r4 aes,8( ees') r4
+	r4 aes,8( ees')\! r4
 	aes,8(\pp eeses') r4 aes,8(_\dimmarkup eeses')
 	r4 aes,8( eeses') r4
 % mesure 61 à 65
@@ -118,115 +118,115 @@ musicViolinIIMvtII = \relative c {
 	aes' r r
 	R2.*2
 	
-	bes,2.~\f
+	bes,2.~\f\>
 % mesure 91 à 95
-	bes~\>
-	bes
+	bes~
+	bes\!
 	ces(~\p\>
-	ces
+	ces\!
 	bes~\pp
 % mesure 96 à 100
 	bes)
 	g'!8(\mf c) r c-. c,4
-	aes'2( f4)
+	aes'2(\< f4)\!
 	g8( c) r c-. c,4
-	aes'2( f4)
+	aes'2(\< f4)\!
 % mesure 101 à 105
 	f'8(\f bes) r bes-. bes,4
 	<g, e' c'>_\crescmarkup r r
-	<g e' c'> r r
-	<g e' c'> r r
+	q r r
+	q r r
 	c'8(\ff f) r f f,4~
 % mesure 106 à 110
 	f g-. aes-.
 	f r r
-	f2\ff\>\fermata r4\!\fermata \break \mark \default
+	f2\ff\>\fermata^\longacorona r4\!\fermata \break \mark \default
 	\repeat volta 2 {
-	    f4(-.\pp f2--
-	    f4-. f2--
+		f4(-.\pp f2--
+		f4-. f2--
 % mesure 111 à 115
-	    f4-. f2--
-	    f4-. f2--)
-	    <c aes'>4_\segue(-. <c aes'>2
-	    <c aes'>4-. <c aes'>2)
-	    <c aes'>4(-. <c aes'>2
+		f4-. f2--
+		f4-. f2--)
+		<c aes'>4_\segue(-. q2--
+		q4-. q2--)
+		q4(-. q2--
 % mesure 116 à 120
-	    <c aes'>4-. <c aes'>2)
-	    aes'4-.( aes2--)
-	    aes4-.( aes2--)
-	    aes4-.( aes2--)
-	    aes4-.( aes2--)
+		q4-. q2)--
+		aes'4-.( aes2--)
+		aes4-.( aes2--)
+		aes4-.( aes2--)
+		aes4-.( aes2--)
 % mesure 121 à 125
-	    <c, aes'>4(-. <c aes'>2--)
-	    <c aes'>4(-. <c aes'>2--)
-	    <ees aes>4(-.\< <ees aes>2--)
-	    <c aes'>4-.( <aes aes'>2--)\!
-	    <e' a>4-.\mf( <e a>2--)
+		<c, aes'>4(-. q2--)
+		q4(-. q2--)
+		<ees aes>4(-.\< q2--)
+		<c aes'>4-.( <aes aes'>2--)\!
+		<e' a>4-.\mf( q2--)
 % mesure 126 à 130
-	    <e a>4-.( <e a>2--)
-	    <gis b>4-.( <gis b>2--)
-	    <gis b>4-.( <gis b>2--)
-	    <f! des'!>4-._\dimmarkup( <f des'>2--)
-	    aes4-.( aes2--)
+		q4-.( q2--)
+		<gis b>4-.( q2--)
+		q4-.( q2--)
+		<f! des'!>4-._\dimmarkup( q2--)
+		aes4-.( aes2--)
 % mesure 131 à 135
-	    <ees bes'>4-.\p\>( <ees bes'>2--)
-	    <des ees>4-.( <des ees>2--)
-	    aes2\pp( aes4~
-	    aes bes c)
-	    des(\<^\sulG ees f
+		<ees bes'>4-.\p\>( q2--)
+		<des ees>4-.( q2--)
+		aes2\pp( aes4~
+		aes bes c)
+		des(\<^\sulG ees f\!
 % mesure 136 à 140
-	    ges\> f ees)
-	    ges2.\pp^\rit(
-	    f2 ees4)
-	    des2.~
-	    des\fermata \mark \default
+		ges\> f ees)\!
+		ges2.\pp(
+		f2 ees4)
+		des2.~
+		des\fermata \mark \default
 	}
 % mesure 141 à 145
-    \repeat volta 2 {
-	    ees4\pp\<(-.^\intempo ees-. ees-.
-	    ees-. ees-. ees-.)
-	    ees-.( ees-. ees-.)
-	    ees'( des ces)\!
-	    bes( ges aes
+	\repeat volta 2 {
+		ees4\pp\<(-. ees-. ees-.
+		ees-. ees-. ees-.)
+		ees-.( ees-. ees-.)
+		ees'( des ces)\!
+		bes( ges aes
 % mesure 146 à 150
-	    bes\> ces bes8 aes)
-	    ges4\pp-.( ges-. ges-.
-	    bes-. bes-. bes-.)
-	    bes-.( bes-. bes-.
-	    bes-. bes-. bes-.)
+		bes\> ces bes8 aes)\!
+		ges4\pp-.( ges-. ges-.
+		bes-. bes-. bes-.)
+		bes-.( bes-. bes-.
+		bes-. bes-. bes-.)
 % mesure 151 à 155
-	    bes-.\(\< bes-. bes(
-	    ces) ces-. c(
-	    des!) bes-. bes-.\)
-	    aes\>( ges aes
-	    bes) des(-.\pp\> des-.
+		bes-.\(\< bes-. bes(
+		ces) ces-. c(
+		des!) bes-. bes-.\)\!
+		aes( ges\> aes
+		bes)\! des(-.\pp\> des-.
 % mesure 156 à 160
-	    des-. des-. des-.)(\!
-	    d) d2\pp(
-	    ees e4~
-	    e f2
-	    c) c4~(
+		des-. des-. des-.)(\!
+		d) d2\pp(
+		ees e4~
+		e f2
+		c) c4~(
 % mesure 161 à 165
-	    c c2 
-	    des! d4~
-	    d ees!2)
-	    bes2( bes4~
-	    bes\< bes2)
+		c c2 
+		des! d4~
+		d ees!2)
+		bes2( bes4~
+		bes\< bes2)
 % mesure 166 à 170
-	    ces2( c4
-	    des!2.)(\f\>
-	    g,!2 g4\p)
-	    aes2( des4~-\tweak #'X-offset #-2 _\dimmarkup
-	    des2\pp c4)
+		ces2( c4\!
+		des!2.)(\f\>
+		g,!2 g4\p)
+		aes2( des4~_\dimmarkup
+		des2\pp c4)
 % mesure 171 à 175
-	    bes2.(
-	    aes4) r f8 ges \mark \default
+		bes2.(
+		aes4) r f8 ges \mark \default
 	}
 	aes2--(_\pmoltoespressivo aes4~--
 	aes bes c)
-	aes( bes\< c
+	aes(\< bes c
 % mesure 176 à 180
-	\times 3/4 {des ees f aes)\!}
+	\tuplet 4/3 {des ees f aes)\!}
 	aes2.
 	ges2\prall\f\>( f8 ees)
 	ees2.\!
@@ -234,8 +234,8 @@ musicViolinIIMvtII = \relative c {
 % mesure 181 à 185
 	aes,2--\p( aes4~\<
 	aes bes c)\!
-	\times 3/5 {aes( des\< ees f aes)}
-	\times 3/4 {des( c bes aes)}
+	\tuplet 5/3 {aes(\< des ees f aes)}
+	\tuplet 4/3 {des( c bes aes)\!}
 	bes2\f( aes4~
 % mesure 186 à 190
 	aes) ges8( f ees4)
@@ -254,19 +254,19 @@ musicViolinIIMvtII = \relative c {
 	aes2( aes4~
 	aes bes c)
 	des\p( ees\> f
-	ges f ees)
+	ges f ees)\!
 % mesure 201 à 205
-	des2.\pp-+
-	des-+
-	des\fz-+\>
-	des-+
-	des-+\!
+	des2.\pp\trill
+	des\trill
+	des\fz\trill\>
+	des\trill\>
+	des\trill\!
 % mesure 206 à 210
-	des-+\pp
-	des-+
-	des-+
-	\times 2/3 {des,8 des des} \times 2/3 {des des des} \times 2/3 {des des des} 
-	\times 2/3 {des des des} \times 2/3 {des des des} \times 2/3 {des des des} 
+	des\trill\pp
+	des\trill
+	des\trill
+	\tuplet 3/2 4 {des,8 des des des des des des des des
+	des des des des des des des des des} 
 % mesure 211 à 215
 	des4 r r
 	c2( des8 ees
@@ -278,36 +278,36 @@ musicViolinIIMvtII = \relative c {
 	des2.\pp~
 	des
 	<des f>~
-	<des f>~
+	q~
 % mesure 221 à 225
-	<des f>~
-	<des f>~
-	<des f>~
-	<des f>
-	<aes aes'>~\rit
+	q~
+	q~
+	q~
+	q
+	<aes aes'>~
 % mesure 226 à 230
-	<aes aes'>~
-	<aes aes'>~
-	<aes aes'>
+	q~
+	q~
+	q
 	R2.*4
 	
 % mesure 231 à 235
 	
 	
-	aes'8(\pp^\intempo des) r des-. des,4->(
+	aes'8(\pp des) r des-. des,4->(
 	cis) fis-. a-.
 	gis8( cis) r cis-. cis,4->~
 % mesure 236 à 240
 	cis fis-. a-.
-	a8(_\pocoapococrescmarkup cis) r cis-. cis,4
+	a8(_\pocoapococresc cis) r cis-. cis,4
 	a'8( d) r d-. d,4
 	b'8(\< dis) r dis8-. dis,4
-	b'8( e) r e-. e,4
+	b'8( e) r e-. e,4\!
 % mesure 241 à 245
 	bes'!8(\mf e) r e e,!4
 	g8(\mf c) r c-.\< c,4
-	g'8(_\crescmarkup c) r c-. c,4
-	g'8(\f\< c) r c-. c,4
+	g'8(_\crescmarkup c) r c-. c,4\!
+	g'8(\f\< c) r c-. c,4\!
 	c'8\ff c aes aes des des
 % mesure 246 à 250
 	aes aes c c aes aes
@@ -323,63 +323,61 @@ musicViolinIIMvtII = \relative c {
 	bes2.->(
 % mesure 256 à 260
 	aes2) r4
-	\repeat volta 2 {
-	    c'8(\mf f) r f f,4->(
-	    f) c'-. aes-.
-	    bes8(\> ees) r ees ees,4->(
-	    ees) bes'-. g-.
+	c'8(\mf f) r f f,4->~
+	f c'-. aes-.
+	bes8(\> ees) r ees ees,4->~
+	ees bes'-. g-.\!
 % mesure 261 à 265
-	    aes8(\p des) r des des,4(->
-	    des) aes'-. f-.
-	    ees8(\pp aes) r aes aes,4->(
-	    aes) ees'(-. c-.)
-	    f2(^\sulG\< fis4)
+	aes8(\p\> des) r des des,4~->
+	des aes'-. f-.\!
+	ees8(\pp aes) r aes aes,4->~
+	aes ees'(-. c-.)
+	f2(^\sulG\< fis4)
 % mesure 266 à 270
-	    g2.(\!
-	    g4) ees(\< e)
-	    f2(~ f8 ees!)
-	    des2.(\!
-	    des4) c4.( bes8-.)
+	g2.~\!
+	g4 ees(\< e)
+	f2(~ f8 ees!)
+	des2.~\!
+	des4 c4.( bes8-.)
 % mesure 271 à 275
-	    c2\ff c4~
-	    c bes4.-> aes8-.
-	    bes2.-^(
-	    aes2) r4
-	}
+	c2\ff c4~
+	c bes4.-> aes8-.
+	bes2.^^(
+	aes2) r4
 	ees'8(\mf bes') r4 ees,8( bes')
 % mesure 276 à 280
 	r4 ees,8( bes') r4
 	ees,8(\> bes') r4 ees,8( bes')
-	r4 ees,8( bes') r4
+	r4 ees,8( bes')\! r4
 	ees,8\pp( a) r4 ees8( a)
 	r4 ees8( a) r4
 % mesure 281 à 285
 	ees8( a) r4 ees8( a)
 	r4 ees8( a) r4
-	dis,8( a') r4 dis,8( a')
-	r4 dis,8(\< a') r4
+	dis,8( a') r4 dis,8(\< a')
+	r4 dis,8( a') r4
 	d,!8( aes') r4 d,8( aes')\!
 % mesure 286 à 290
 	r4 d,8(_\crescmarkup aes') r4
 	d,8( aes') r4 d,8( aes')
 	r4 d,8(\mf aes') r4
-	f8( g!) r4 f8( g)
-	r4 f8(\> g) r4
+	f8( g!) r4 f8(\> g)
+	r4 f8( g) r4
 % mesure 291 à 295
 	d8( ees) r4 d8( ees)\!
 	r4 d8( ees) r4
 	g2^\sulG_\espress\<-> f4~
-	f ees(-. des!-.)
+	f ees(-. des!-.)\!
 	c2\ff\< c4~
 % mesure 296 à 300
-	c des4.( ees8-.)
+	c des4.( ees8-.)\!
 	des2.(\f
 	c2) r4 \mark \default
 	aes'8(\f ees') r4 aes,8( ees')
 	r4 aes,8( ees') r4
 % mesure 301 à 305
 	aes,8(\> ees') r4 aes,8( ees')
-	r4 aes,8( ees') r4
+	r4 aes,8( ees')\! r4
 	aes,8(\pp eeses') r4 aes,8(_\dimmarkup eeses')
 	r4 aes,8( eeses') r4
 	aes,8( eeses') r4 aes,8( eeses')
@@ -417,24 +415,24 @@ musicViolinIIMvtII = \relative c {
 	aes' r r
 	R2.*2
 	
-	bes,2.~\f
-	bes~\>
+	bes,2.~\f\>
+	bes~
 % mesure 336 à 340
-	bes
+	bes\!
 	ces(~\p\>
-	ces
+	ces\!
 	bes~\pp
 	bes)
 % mesure 341 à 345
 	g'!8(\mf c) r c-. c,4
-	aes'2( f4)
+	aes'2(\< f4)\!
 	g8( c) r c-. c,4
-	aes'2( f4)
+	aes'2(\< f4)\!
 	f'8(\f bes) r bes-. bes,4
 % mesure 346 à 350
 	<g, e' c'>_\crescmarkup r r
-	<g e' c'> r r
-	<g e' c'> r r
+	q r r
+	q r r
 	c'8(\ff f) r f f,4~
 	f g-. aes-.
 % mesure 351 à 352

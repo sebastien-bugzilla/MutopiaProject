@@ -48,13 +48,13 @@
 		<<
 			\new StaffGroup <<
 				\new GrandStaff <<
-					\new Staff <<
+					\new Staff  << % \with { \RemoveAllEmptyStaves }
 %						\new Voice {
 %							\formatConductorMvtI
 %						}
-%						\new Voice {
-%							\tempiMvtI
-%						}
+						\new Voice {
+							\tempiMvtI
+						}
 						\new Voice {
 							\timeMvtI \musicViolinIMvtI
 						}

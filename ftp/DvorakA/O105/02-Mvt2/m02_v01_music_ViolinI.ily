@@ -9,60 +9,60 @@ musicViolinIMvtII = \relative c {
 	\key f \minor
 % mesure 1 à 5
 	\repeat volta 2 {
-	    c'''8\mp( f) r f\downbow f,4~
-	    f g-. aes-.
-	    g8( c) r c c,4->~\fp
-	    c d-. e-.
-	    ges8(_\crescmarkup bes) r bes-. bes,4->~
+		c'''8\mp( f) r f\downbow f,4~->\fp
+		f g-. aes-.
+		g8( c) r c c,4->~\fp
+		c d-. e-.
+		ges8(_\crescmarkup bes) r bes-. bes,4->~
 % mesure 6 à 10
-	    bes des8-. bes f4\<
-	    aes8( c) r c\! c,4->~
-	    c aes'8-. f-. c4
-	    aes'2\ff-> aes4~->
-	    aes g4.(-> f8)
+		bes des8-. bes f4\<
+		aes8( c) r c c,4->~
+		c\! aes'8-. f-. c4
+		aes'2\ff-> aes4~->
+		aes g4.(-> f8)
 % mesure 11 à 15
-	    g2.->(
-	    f2) r4 \mark \default
+		g2.->(
+		f2) r4 \mark \default
 	}
-    \repeat volta 2 {
-	    aes'2\mf aes4~
-	    aes g4.( f8-.)
-	    g2.~\>
+	\repeat volta 2 {
+		aes'2\mf aes4~
+		aes g4.( f8-.)
+		g2.~\>
 % mesure 16 à 20
-	    g4\! r r
-	    f2\p f4~
-	    f ees4.( des8-.)
-	    ees2.~\pp
-	    ees4 r r
+		g4\! r r
+		f2\p\> f4~
+		f ees4.( des8-.)\!
+		ees2.~\pp
+		ees4 r r
 % mesure 21 à 25
-	    des2 des4\<~
-	    des c4.( bes8-.)\!
-	    c2\< c4~
-	    c bes4.( aes8-.)
-	    bes2 bes4~\!
+		des2 des4\<~
+		des c4.( bes8-.)\!
+		c2\< c4~
+		c bes4.( aes8-.)
+		bes2 bes4~\!
 % mesure 26 à 30
-	    bes aes4.( g8-.)
-	    aes2\ff aes4~
-	    aes g4.-> f8-.
-	    g2.(-^
-	    f2) r4  \mark \default
+		bes aes4.( g8-.)
+		aes2\ff aes4~
+		aes g4.-> f8-.
+		g2.(^^
+		f2) r4  \mark \default
 	}
 % mesure 31 à 35
 	ees'2\mf ees4--~
 	ees ees4.-- ees8-.
 	ees2.
-	R2.*1
+	R2.
 	ees,2\pp ees4~
 % mesure 36 à 40
 	ees ees4. ees8-.
 	ees2.
-	R2.*1
+	R2.
 	ees'2_\ppmoltocantabile ees4~\<
 	ees ees4.( ees8-.)
 % mesure 41 à 45
 	ges2\! fes4~
 	fes ees2_\crescmarkup
-	d2~ d4~
+	d2 d4~
 	d\mf d4.( d8-.)
 	f!2 ees4~\>
 % mesure 46 à 50
@@ -70,10 +70,10 @@ musicViolinIMvtII = \relative c {
 	c! c4~\!
 	c c4. c8
 	ees2->^\espress\< des4~
-	des c-.( bes-.)
+	des c-.( bes-.)\!
 % mesure 51 à 55
 	aes2\ff\< aes4~
-	aes bes4.( c8-.)
+	aes bes4.( c8-.)\!
 	bes2.(\f
 	aes4) g8( aes c ees \mark \default
 	aes2)\f aes4~
@@ -100,11 +100,11 @@ musicViolinIMvtII = \relative c {
 	ees ees4.(_\crescmarkup ees8-.)
 	ges2 f4~
 	f ees des8 bes
-	<ees, ees'>2\f <ees ees'>4~
+	<ees, ees'>2\f q4~
 % mesure 76 à 80
-	<ees ees'> <ees ees'>2
-	<ees ees'>2.~
-	<ees ees'>8 c'(\< aes c ees aes) \bar "||" \mark \default
+	q q2
+	q2.~
+	q8 c'(\< aes c ees aes)\! \bar "||" \mark \default
 	c8(\f f) r f f,4->~
 	f g-. aes-.
 % mesure 81 à 85
@@ -118,151 +118,151 @@ musicViolinIMvtII = \relative c {
 	c'4 r r 
 	R2.*2
 	
-	c,2.\f(
+	c,2.\f\>(
 % mesure 91 à 95
-	cis\>
-	d
+	cis
+	d\!
 	ees!\p\>
-	e~
+	e~\!
 	e\pp
 % mesure 96 à 100
 	f!)
 	<bes, g'>4\mf r_\crescmarkup r
-	c'8(\< f) r f-. f,4
-	<bes, g'>\! r r
-	c'8(\< f) r f8-. f,4
+	c'8(\< f) r f-. f,4\!
+	<bes, g'> r r
+	c'8(\< f) r f8-. f,4\!
 % mesure 101 à 105
 	bes,\f r r
-	g''8\f\<( c) r c-. c,4
-	g'8(\! c) r c-. c,4
+	g''8\f\<( c) r c-. c,4\!
+	g'8( c) r c-. c,4
 	g'8( c) r c-. c,4
 	c'8(\ff f) r f f,4~
 % mesure 106 à 110
 	f g-. aes-.
 	f r r
-	f,2\ff\fermata\> r4\fermata^\fine\! \mark \default \break 
+	f,2\ff\fermata^\longacorona\> r4\fermata\! \mark \default \break 
 	\repeat volta 2 {
-	    aes2_\ppdolce( aes4--~
-	    aes bes c)
+		aes2_\ppdolce( aes4--~
+		aes bes c)
 % mesure 111 à 115
-	    aes\<( bes c
-	    \times 3/4 {des ees f aes)\!}
-	    aes2.\>(
-	    ges2\prall f8 ees)
-	    ees2.\!
+		aes\<( bes c
+		\tuplet 4/3 {des ees f aes)\!}
+		aes2.\>(
+		ges2\prall f8 ees)\!
+		ees2.
 % mesure 116 à 120
-	    R2.*1
-	    aes,2(\pp aes4~
-	    aes bes c)
-	    \times 3/5 {aes\<( des ees f aes)}
-	    \times 3/4 {des(\! c\> bes aes)}
+		R2.*1
+		aes,2(\pp aes4~
+		aes bes c)
+		\tuplet 5/3 {aes\<( des ees f aes)\!}
+		\tuplet 4/3 {des(\> c bes aes)\!}
 % mesure 121 à 125
-	    bes2\> aes4~
-	    aes ges8( f ees4)\!
-	    ees2.
-	    r4 r aes(\<
-	    des2.)\mf
+		bes2\> aes4~
+		aes ges8( f ees4)\!
+		ees2.
+		r4 r aes(\<
+		des2.)\mf
 % mesure 126 à 130
-	    ces2( beses4)
-	    aes2.
-	    ges2( e4)
-	    f2.(_\dimmarkup
-	    ees!2\> des4)
+		ces2( beses4)
+		aes2.
+		ges2( e4)
+		f2.(_\dimD\>
+		ees!2 des4)\!
 % mesure 131 à 135
-	    ees2.(\p
-	    des4 bes des)
-	    aes4\pp(-- aes2--
-	    aes-- aes4--)~
-	    aes aes2(
+		ees2.(\p
+		des4 bes des)\!
+		aes4\pp(-- aes2--
+		aes-- aes4--)~
+		aes aes2(
 % mesure 136 à 140
-	    <c, aes'>2) <c aes'>4
-	    des'2.^\ritard\pp~
-	    des
-	    des2( bes4
-	    aes2.)\fermata \mark \default
+		<c, aes'>2) <c aes'>4
+		des'2.\pp~
+		des
+		des2( bes4
+		aes2.)\fermata \mark \default
 	}
 % mesure 141 à 145
-    \repeat volta 2 {
-	    aes2\pp\<(^\intempo aes4~
-	    aes bes ces)
-	    ces(-- des-- ees--
-	    ees-- f-- ges--)\!
-	    ges2( f4
+	\repeat volta 2 {
+		aes2\pp\<( aes4~
+		aes bes ces)
+		ces(-- des-- ees--
+		ees-- f-- ges--)\!
+		ges2( f4
 % mesure 146 à 150
-	    ees2\> d4)
-	    ees2.\pp(
-	    ees4) r ees
-	    ees2( ees4
-	    ees f ges)
+		ees2\> d4)\!
+		ees2.\pp~
+		ees4 r ees
+		ees2( ees4
+		ees f ges)
 % mesure 151 à 155
-	    ges2.(\<
-	    aes2 a4)
-	    bes( des2)(\!
-	    des4.) ces8(\> bes aes)
-	    bes2.~
+		ges2.(\<
+		aes2 a4)
+		bes( des2)~\!
+		des4. ces8(\> bes aes)
+		bes2.~
 % mesure 156 à 160
-	    bes4 r\! bes(~\pp
-	    bes2 bes4~
-	    bes c!4. bes8)
-	    a2.(
-	    f2 g!4)
+		bes4\! r bes(~\pp
+		bes2 bes4~
+		bes c!4. bes8)
+		a2.(
+		f2 g!4)
 % mesure 161 à 165
-	    aes2( aes4~
-	    aes bes4. aes8)
-	    g!2.\((
-	    ees2)( ees8) f-.\)
-	    ges2\<( ges4~
+		aes!2( aes4~
+		aes bes4. aes8)
+		g!2.(
+		ees2~ ees8 f-.)
+		ges2\<( ges4~
 % mesure 166 à 170
-	    ges aes4. ges8)
-	    des'2.\f\>~
-	    des4 des,4.\p( ees8)
-	    f4( aes2_\dimmarkup)
-	    ees2\pp\prall( ees8) des
+		ges aes4. ges8)\!
+		des'2.\f\>~
+		des4\! des,4.\p( ees8)
+		f4( aes2_\dimmarkup)
+		ees2\pp\prall( ees8) des
 % mesure 171 à 175
-	    des2.~
-	    des4 r r \mark \default
+		des2.~
+		des4 r r \mark \default
 	}
 	R2.*2
 	
 	aes'2\p\<( aes4--)
 % mesure 176 à 180
-	\times 3/4 {bes( c des f)\!}
+	\tuplet 4/3 {bes( c des f)\!}
 	ees( f ges)
 	aes2.\f~
 	aes2 aes,4
 	aes(\> c bes)
 % mesure 181 à 185
 	aes4( f2)\!
-	R2.*1
+	R2.
 	aes2\mp\<( aes4)
-	\times 3/5 {aes( des ees f aes)}
+	\tuplet 5/3 {aes( des ees f aes)\!}
 	ges2\f( f4)
 % mesure 186 à 190
 	ees2( aes,4~
 	aes2) des4~(
 	des c bes8 aes)
 	beses4\f( des fes~
-	fes)\< fes2
+	fes)\< fes2\!
 % mesure 191 à 195
-	ces'2\!( fes,4~
+	ces'2( fes,4~
 	fes) ges( aes)
 	aes2.(
 	a)_\dimmarkup
 	bes2(\> ees,4~
 % mesure 196 à 200
-	ees e2)
+	ees e2)\!
 	f2(\< ees!4~
-	ees des c)
+	ees des c)\!
 	bes2\p\>( aes4~
-	aes bes c)
+	aes bes c)\!
 % mesure 201 à 205
 	ees2.(\pp
 	des~
 	des2) r4
 	r c\p( des8 ees)
-	ees2\>( des4)
+	ees2\>( des4)\!
 % mesure 206 à 210
-	des2.~\!
+	des2.~
 	des
 	r4 c\pp( des8 ees
 	des4) r r
@@ -271,10 +271,10 @@ musicViolinIMvtII = \relative c {
 	des4) r r
 	g,,!2.(
 	aes4) r r
-	c2.(~_\pdimin->\upbow
+	c2.~_\pdimin->\upbow
 	c~
 % mesure 216 à 220
-	c4 des ees) \mark \default
+	c4( des ees) \mark \default
 	des2.\pp(\downbow
 	ees2 e4~
 	e f2~
@@ -286,7 +286,7 @@ musicViolinIMvtII = \relative c {
 	des bes aes8 f)
 	f2.( 
 % mesure 226 à 230
-	ees2^\rit des4)
+	ees2 des4)
 	f2.(
 	ees2 des4)
 	f2.(
@@ -294,20 +294,20 @@ musicViolinIMvtII = \relative c {
 % mesure 231 à 235
 	des
 	des')
-	des2.(-+^\intempo
-	des)(
-	des)(-+
+	des2.~\trill
+	des~
+	des(\trill
 % mesure 236 à 240
-	cis)-+-\tweak #'X-offset #'3  ^\markup {\natural}
-	cis(_\pocoapococrescmarkup-+-\tweak #'X-offset #'3 ^\markup {\natural}
-	d)-+-\tweak #'X-offset #'3 ^\markup {\natural}
-	dis(\<-+-\tweak #'X-offset #'3 ^\markup {\natural}
-	e)-+~
+	\trillAccidental \naturaltrillmark cis)\trill
+	\trillAccidental \naturaltrillmark cis(_\pocoapococresc\trill
+	\trillAccidental \naturaltrillmark d)\trill
+	\trillAccidental \naturaltrillmark dis(\<\trill
+	e)\trill~
 % mesure 241 à 245
 	e4\! r r
 	g8(\mf c) r c-.\< c,4
-	g'8(_\crescmarkup c) r c-. c,4
-	g'8(\f\< c) r c-. c,4
+	g'8(_\crescmarkup c) r c-. c,4\!
+	g'8(\f\< c) r c-. c,4\!
 	c'8\ff( f) r f f,4->~
 % mesure 246 à 250
 	f g-.( aes-.)
@@ -323,34 +323,32 @@ musicViolinIMvtII = \relative c {
 	g2.->(
 % mesure 255 à 260
 	f2) r4
-	\repeat volta 2 { 
-	    aes'2\mf aes4~
-	    aes g4.( f8-.)
-	    g2.~\>
-	    g4\! r r
+	aes'2\mf aes4~
+	aes g4.( f8-.)
+	g2.~\>
+	g4\! r r
 % mesure 261 à 265
-	    f2\p\> f4~
-	    f ees4.( des8-.)
-	    ees2.~\pp
-	    ees4 r r
-	    des2 des4\<~
+	f2\p\> f4~
+	f ees4.( des8-.)\!
+	ees2.~\pp
+	ees4 r r
+	des2 des4\<~
 % mesure 266 à 270
-	    des c4.( bes8-.)\!
-	    c2\< c4~
-	    c bes4.( aes8-.)
-	    bes2 bes4~\!
-	    bes aes4.( g8-.)
+	des c4.( bes8-.)\!
+	c2\< c4~
+	c \once \stemUp bes4.( aes8-.)
+	bes2 bes4~\!
+	bes aes4.( g8-.)
 % mesure 271 à 275
-	    aes2\ff aes4~
-	    aes g4.-> f8-.
-	    g2.(-^
-	    f2) r4
-	}
+	aes2\ff aes4~
+	aes g4.-> f8-.
+	g2.(^^
+	f2) r4
 	ees'2\mf ees4--~
 % mesure 276 à 280
 	ees ees4.-- ees8-.
 	ees2.
-	R2.*1
+	R2.*1 
 	ees,2\pp ees4~
 	ees ees4. ees8-.
 % mesure 281 à 285
@@ -361,7 +359,7 @@ musicViolinIMvtII = \relative c {
 	ges2\! fes4~
 % mesure 286 à 290
 	fes ees2_\crescmarkup
-	d2~ d4~
+	d2 d4~
 	d\mf d4.( d8-.)
 	f!2 ees4~\>
 	ees des!2
@@ -369,10 +367,10 @@ musicViolinIMvtII = \relative c {
 	c! c4~\!
 	c c4. c8
 	ees2->^\espress\< des4~
-	des c-.( bes-.)
+	des c-.( bes-.)\!
 	aes2\ff\< aes4~
 % mesure 296 à 300
-	aes bes4.( c8-.)
+	aes bes4.( c8-.)\!
 	bes2.(\f
 	aes4) g8( aes c ees
 	aes2)\f aes4~
@@ -399,11 +397,11 @@ musicViolinIMvtII = \relative c {
 	ees ees4.(_\crescmarkup ees8-.)
 	ges2 f4~
 	f ees des8 bes
-	<ees, ees'>2\f <ees ees'>4~
-	<ees ees'> <ees ees'>2
+	<ees, ees'>2\f q4~
+	q q2
 % mesure 321 à 325
-	<ees ees'>2.~
-	<ees ees'>8 c'(\< aes c ees aes) \bar "||"
+	q2.~
+	q8 c'(\< aes c ees aes)\! \bar "||"
 	c8(\f f) r f f,4->~
 	f g-. aes-.
 	g8( c) r c c,4->~
@@ -417,23 +415,23 @@ musicViolinIMvtII = \relative c {
 	c'4 r r 
 	R2.*2
 	
-	c,2.\f(
-	cis\>
+	c,2.\f\>(
+	cis
 % mesure 336 à 340
-	d
+	d\!
 	ees!\p\>
-	e~
+	e~\!
 	e\pp
 	f!)
 % mesure 341 à 345
 	<bes, g'>4\mf r r
-	c'8(\< f) r f-. f,4
-	<bes, g'>\! r r
-	c'8(\< f) r f8-. f,4
+	c'8(\< f) r f-. f,4\!
+	<bes, g'> r r
+	c'8(\< f) r f8-. f,4\!
 	bes,\f r r
 % mesure 346 à 350
-	g''8\f\<( c) r c-. c,4
-	g'8(\! c) r c-. c,4
+	g''8\f\<( c) r c-. c,4\!
+	g'8( c) r c-. c,4
 	g'8( c) r c-. c,4
 	c'8(\ff f) r f f,4~
 	f g-. aes-.
