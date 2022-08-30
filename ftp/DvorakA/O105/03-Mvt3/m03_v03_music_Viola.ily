@@ -42,7 +42,7 @@ musicViolaMvtIII = \relative c {
 	a4( f8.)_\dimD\> d16 f8( a, d_\pmarkup c16 bes)\!
 	bes2\p_\dimmarkup( a4)\pp r \mark \default
 	e'_\tranquillo( c8 d e f a g)
-	fis4(\< dis e2\>) 
+	fis4(\< dis << e2) {s4\> s\!} >>
 % mesure 31 à 35
 	e4\pp( c8 d! e f!) g16( bes a g)
 	c2~\< c8(\> b bes e,)\!
@@ -106,7 +106,7 @@ musicViolaMvtIII = \relative c {
 % mesure 81 à 85
 	f8\p e32( f) f-. f-. f8 e32( f) f-. f-. a2
 	f4(_\crescmarkup f'8 e16 d) bes4.( bes8)--
-	c4~ \tuplet 6/4 {c16(\< bes a bes c d)} a8( c4) a'32( gis bes! a)\!
+	c4~ \tuplet 6/4 {c16(\< bes a bes c d)} a8( c4) a'32(\! gis bes! a)
 	g!16\mf g8 g g g16~ g g8 g16 e8( c)
 	ees16\<[ ees32 ees] ees ees ees ees ees16[ ees32 ees] ees ees ees ees ees16[ ees32 ees] ees ees ees ees\! ees8\ff c16( f)
 % mesure 86 à 90

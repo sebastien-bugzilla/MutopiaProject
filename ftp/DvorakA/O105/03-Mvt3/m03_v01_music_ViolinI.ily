@@ -39,7 +39,7 @@ musicViolinIMvtIII = \relative c {
 	c!4~(_\fcresc c16 bes a bes) b8( c) g'(\ff ees)
 % mesure 26 à 30
 	ees16 d f8~ f16 bes, d8~ d16 g, bes8~ bes16 e,! g8~
-	g16 f--( e-- f--) g_\dimmarkup(-- f-- e-- f)-- a(\>-- f-- e-- d)-- c(--_\pmarkup bes-- a-- g)-- 
+	g16 f--( e-- f--) g_\dimmarkup(-- f-- e-- f)-- a(\>-- f-- e-- d)-- c(--_\pmarkup bes-- a-- g)--\!
 	g2\p\>( f4)\pp r \mark \default
 	c'2.(_\tranquillo e4)
 	ees(\< fis)\! g8(\> e d c)\!
@@ -54,7 +54,7 @@ musicViolinIMvtIII = \relative c {
 	f( g2) f16( ees d c)
 	bes8 ees16( d f8) f16( bes, d8) d16( g, bes8) bes16( e,!)~
 	e f-> cis-> d-> e-> d-> g-> d-> f\> a c!4 e,8\!
-	g2\p\>( f4)\pp r
+	g2\p\>( f4)\pp r 
 % mesure 41 à 45
 	e8(\> ees d des16 c c4)\! r4
 	R1*2 \mark \default

@@ -77,7 +77,7 @@ musicCelloMvtIII = \relative c {
 	<< <des, aes'>1 {s4\f\> s s s\!} >>
 	aes'4(\< aes') ges2\!
 	f1
-	e!2\f( d!)
+	e!2_\fmoltoappassionato( d!)
 	des(\< g,)\!
 % mesure 61 à 65
 	c4\ff( c,2.)~
@@ -108,7 +108,7 @@ musicCelloMvtIII = \relative c {
 	\once \stemUp d4.(_\crescmarkup c16 bes) g4.( g8--)
 	a4~( \tuplet 6/4 {a16\< g f g a bes)} c8( f a f)\!
 	f8.\mf( g32 f e16 d e f) f8( e) c'8.( bes16)
-	a8\<( f) a16( g f g)\! a4 c8(\ff f,)
+	a8\<( f) a16( g f g) a4\! c8(\ff f,)
 % mesure 86 à 90
 	bes4( g) <g, bes'> c8( cis)
 	\once \stemUp d4( g,) c8( c,) c4_\dimmarkup

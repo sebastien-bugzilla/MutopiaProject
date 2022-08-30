@@ -30,7 +30,7 @@ musicViolinIIMvtIII = \relative c {
 	e4\pp( c8 d e2)
 	ees4(-> e2) r8. e16
 	e4\<( c8 d) e4( d)\!
-	c1\fz\>^>
+	<< c1^> {s4\fz\> s s s\! } >>
 % mesure 21 à 25
 	c2_\ppocoapococresc\!\upbow f~\downbow
 	f8\< f4~\upbow f8-. f( d'~\! d\mf c16 bes)
@@ -118,7 +118,7 @@ musicViolinIIMvtIII = \relative c {
 % mesure 91 à 95
 	g'(\pp e) c8( a'16 f d8 c)
 	bes( a g_\dimmarkup f d c a g)
-	c4(\pp bes a8) r r4
+	c4( bes a8) r r4
 	a2\pp( c8\< bes4.)\!
 	<bes e>2.\f\> bes4~\!
 % mesure 96 à 100
