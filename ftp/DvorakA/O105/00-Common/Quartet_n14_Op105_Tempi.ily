@@ -93,4 +93,38 @@ tempiMvtIII = {
 }
 tempiMvtIV = {
 	\tempo "Allegro non tanto. M.M." 4 = 112
+	s2*11
+	\tempo "in tempo" % bar 12
+	s2*126
+	\tempo "accel." % bar 135
+	s2*5 s4
+	\tempo "poco rit." % bar 140.5
+	s4 s2
+	\tempo "in tempo" % bar 142
+	s2*38
+	\tempo "rit." % bar 180
+	s2*2
+	\tempo "in tempo" % bar 182
+	s2*148
+	\tempo "Poco sostenuto" % bar 330
+	s2*12
+	\tempo "in tempo" % bar 342
+	s2*44 s4
+	\tempo "rit." % bar 386.5
+	s4 s2
+	\tempo "in tempo" % bar 388
+	s2*38
+	\tempo "rit." % bar 426
+	s2*2
+	\tempo "in tempo" % bar 428
+	s2*67
+	\tempo "Un poco più mosso" % bar 495
+	s2*21 s4
+	\tempo "rit." % bar 516.5
+	s4 s2
+	\tempo "in tempo" % bar 518
 }
+%###############################################################################
+%#                            T E M P I   P A R T S                            #
+%###############################################################################
+

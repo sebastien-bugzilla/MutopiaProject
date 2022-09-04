@@ -45,7 +45,7 @@ sempredim = \markup {\italic {sempre dim.}}
 sulD = \markup {sul D.}
 string = \markup {\italic string.}
 longacorona = \markup {\italic {longa corona}}
-
+marcatomarkup = \markup {\italic marcato}
 
 ffrisoluto = \markup {\dynamic ff \italic risoluto}
 fconforza = \markup {\dynamic f \italic {con forza}}
@@ -84,6 +84,8 @@ esprppp = \markup {
 		\dynamic ppp
 	}
 }
+fzmarkup = \markup {\dynamic fz}
+
 
 %pocoapococresc = #(make-music 'CrescendoEvent
 %             'span-direction START
@@ -114,19 +116,16 @@ naturaltrillmark = \markup {
 	}
 }
 
-%sharptrillaccentmark = \markup { 
-%	\center-column {
-%		\concat { 
-%			\hspace #1.2 \lower #1.3 
-%			\general-align #Y #CENTER {
-%				\musicglyph #"scripts.trill" 
-%				\hspace #0.4
-%				\teeny \sharp 
-%			}
-%		}
-%		\musicglyph #"scripts.sforzato"
-%	}
-%}
+sharptrillmark = \markup { 
+	\hspace #1.2
+	\concat { 
+		\general-align #Y #CENTER {
+			\musicglyph #"scripts.trill" 
+			\hspace #0.45
+			\teeny \sharp 
+		}
+	}
+}
 
 trillAccidental = #(define-music-function 
 	(accidental)

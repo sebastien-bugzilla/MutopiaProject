@@ -48,7 +48,7 @@
 		<<
 			\new StaffGroup <<
 				\new GrandStaff <<
-					\new Staff <<
+					\new Staff << % \with { \RemoveAllEmptyStaves } 
 %						\new Voice {
 %							\formatConductorMvtIV
 %						}
