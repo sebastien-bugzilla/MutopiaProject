@@ -155,4 +155,5 @@ unsetSextolet = {
 	\revert TupletNumber.Y-offset
 	\revert TupletNumber.avoid-slur
 }
-
+red = \override NoteHead.color = #red
+endRed = \revert NoteHead.color

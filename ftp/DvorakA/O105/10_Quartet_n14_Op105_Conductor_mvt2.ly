@@ -13,7 +13,6 @@
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
 \version "2.22.1"
-%\include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "./00-Common/Quartet_n14_Op105_Header.ily"
 \include "./00-Common/Quartet_n14_Op105_PaperConductors.ily"
 \include "./00-Common/Quartet_n14_Op105_timeMvt.ily"
@@ -21,10 +20,10 @@
 \include "./00-Common/Quartet_n14_Op105_Shortcuts.ily"
 %\include "./00-Common/Quartet_n14_Op105_Format_Cond_Mvt02.ily"
 \include "./00-Common/Quartet_n14_Op105_Tempi.ily"
-\include "./02-Mvt2/m02_v01_music_ViolinI.ily"
-\include "./02-Mvt2/m02_v02_music_ViolinII.ily"
-\include "./02-Mvt2/m02_v03_music_Viola.ily"
-\include "./02-Mvt2/m02_v04_music_Cello.ily"
+\include "./02-Mvt2/m02_v01_music_ViolinI_C.ily"
+\include "./02-Mvt2/m02_v02_music_ViolinII_C.ily"
+\include "./02-Mvt2/m02_v03_music_Viola_C.ily"
+\include "./02-Mvt2/m02_v04_music_Cello_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
