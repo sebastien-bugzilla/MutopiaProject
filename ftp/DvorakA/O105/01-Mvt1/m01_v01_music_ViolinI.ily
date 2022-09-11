@@ -20,7 +20,7 @@ musicViolinIMvtI = \relative c {
 	ges ges4(~\< ges16 f)
 	fes!8( ees des) des( ces beses)\!
 % mesure 11 à 15
-	beses(\mf aes) r16 aes aes4(\> aes32 bes g aes\!
+	beses(\mf aes) r16 aes aes4(\> aes32-- bes g aes\!
 	ces8-.)\p r ces16.( aes32-.) ees'4.~\pp
 	ees f~->
 	f_\moltocrescmark\< g\! \bar "||" \key aes \major \time 4/4

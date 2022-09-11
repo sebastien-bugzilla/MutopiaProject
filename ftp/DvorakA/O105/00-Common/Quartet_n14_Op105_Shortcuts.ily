@@ -47,36 +47,37 @@ string = \markup {\italic string.}
 longacorona = \markup {\italic {longa corona}}
 marcatomarkup = \markup {\italic marcato}
 
-ffrisoluto = \markup {\dynamic ff \italic risoluto}
-fconforza = \markup {\dynamic f \italic {con forza}}
-fdetache = \markup {\dynamic f \italic détaché}
-fzcresc= \markup {\dynamic fz \italic cresc.}
-mpespressivo = \markup { \dynamic mp \italic espressivo}
-pdim = \markup { \dynamic p \italic dim.}
-piuf = \markup {\italic {più} \dynamic f}
-ppleggiero = \markup { \dynamic pp \italic leggiero}
-ppespressivomoltocantabile = \markup { \dynamic pp \italic {espressivo e molto cantabile}}
-pdimin = \markup { \dynamic p \italic dimin.}
-pmoltoespressivo = \markup { \dynamic p \italic {molto espressivo}}
-ppdolce = \markup { \dynamic pp \italic dolce}
-pplegato = \markup { \dynamic pp \italic legato}
-ppmoltocantabile = \markup { \dynamic pp \italic {molto cantabile}}
-fcresc = \markup {\dynamic f \italic {cresc.}}
-fmoltoappassionato = \markup { \dynamic f \italic {molto appassionato}}
-mfpocoapocopiuanimato = \markup { \dynamic mf \italic {poco a poco più animato}}
-ppocoapococresc = \markup { \dynamic p \italic {poco a poco cresc.}}
-ppperdendosi = \markup { \dynamic pp \italic {perdendosi}}
-fespressivo = \markup {\dynamic f \italic espressivo}
-fmarcato = \markup {\dynamic f \italic marcato}
-fmoltoespress = \markup { \dynamic f \italic {molto espress}}
-frisoluto = \markup { \dynamic f \italic {risoluto}}
+fconforza = \markup {\hspace #0.1 \dynamic f \italic {con forza}}
+fcresc = \markup {\hspace #0.1 \dynamic f \italic {cresc.}}
+fdetache = \markup {\hspace #0.1 \dynamic f \italic détaché}
+fespressivo = \markup {\hspace #0.1 \dynamic f \italic espressivo}
+fmarcato = \markup {\hspace #0.1 \dynamic f \italic marcato}
+fmoltoappassionato = \markup {\hspace #0.1 \dynamic f \italic {molto appassionato}}
+fmoltoespress = \markup {\hspace #0.1 \dynamic f \italic {molto espress}}
 fppocosostenuto = \markup { \dynamic fp \italic {poco sostenuto}}
-mfleggiero = \markup { \dynamic mf \italic leggiero}
-pmoltocantabile = \markup { \dynamic p \italic {molto cantabile}}
-ppocosostenuto = \markup { \dynamic p \italic {poco sostenuto}}
-ppcantabile = \markup { \dynamic pp \italic cantabile}
+frisoluto = \markup {\hspace #0.1 \dynamic f \italic {risoluto}}
+ffrisoluto = \markup {\hspace #-0.5 \dynamic ff \italic risoluto}
+fzcresc= \markup {\hspace #-0.45 \dynamic fz \italic cresc.}
+fzmarkup = \markup {\dynamic fz}
+mfcresc = \markup {\hspace #-0.8 \dynamic mf \italic cresc.}
+mfleggiero = \markup {\hspace #-0.8 \dynamic mf \italic leggiero}
+mfpocoapocopiuanimato = \markup {\hspace #-0.8 \dynamic mf \italic {poco a poco più animato}}
+mpespressivo = \markup {\hspace #-0.95 \dynamic mp \italic espressivo}
+pdimin = \markup {\hspace #-0.1 \dynamic p \italic dimin.}
+pdim = \markup {\hspace #-0.1 \dynamic p \italic dim.}
+piuf = \markup {\hspace #-3.9 \italic {più} \dynamic f}
 pmarkup = \markup {\dynamic p}
-mfcresc = \markup {\dynamic mf \italic cresc.}
+pmoltocantabile = \markup {\hspace #-0.1 \dynamic p \italic {molto cantabile}}
+pmoltoespressivo = \markup {\hspace #-0.1 \dynamic p \italic {molto espressivo}}
+ppcantabile = \markup {\hspace #-0.8 \dynamic pp \italic cantabile}
+ppdolce = \markup {\hspace #-0.8 \dynamic pp \italic dolce}
+ppespressivomoltocantabile = \markup {\hspace #-0.8 \dynamic pp \italic {espressivo e molto cantabile}}
+pplegato = \markup {\hspace #-0.8 \dynamic pp \italic legato}
+ppleggiero = \markup {\hspace #-0.8 \dynamic pp \italic leggiero}
+ppmoltocantabile = \markup {\hspace #-0.8 \dynamic pp \italic {molto cantabile}}
+ppocoapococresc = \markup {\hspace #-0.8 \dynamic p \italic {poco a poco cresc.}}
+ppocosostenuto = \markup {\hspace #-0.1 \dynamic p \italic {poco sostenuto}}
+ppperdendosi = \markup {\hspace #-0.8 \dynamic pp \italic {perdendosi}}
 esprppp = \markup {
 	\line {
 		\general-align #Y #DOWN
@@ -84,7 +85,6 @@ esprppp = \markup {
 		\dynamic ppp
 	}
 }
-fzmarkup = \markup {\dynamic fz}
 
 
 %pocoapococresc = #(make-music 'CrescendoEvent
@@ -157,3 +157,110 @@ unsetSextolet = {
 }
 red = \override NoteHead.color = #red
 endRed = \revert NoteHead.color
+
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
+
+%tempoXoffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \override Score.MetronomeMark.X-offset = #offset
+%	#}
+%)
+
+%tempoExtraOffset = #(define-music-function
+%	(offset)
+%	(pair?)
+%	#{
+%		\once \override Score.MetronomeMark.extra-offset = #offset
+%	#}
+%)
+
+%markXoffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+%	#}
+%)
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+tupletOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override TupletNumber.Y-offset = #offset 
+	#}
+)
+
+%tupletExtraOffset = #(define-music-function
+%	(offset)
+%	(pair?)
+%	#{
+%		\once \override TupletNumber.extra-offset = #offset 
+%	#}
+%)
+
+%trillSpanPadding = #(define-music-function
+%	(padding)
+%	(number?)
+%	#{
+%		\once \override TrillSpanner.bound-details.right.padding = #padding
+%	#}
+%)
+
+%mmrnDown = {
+%	\once \override MultiMeasureRestNumber.direction = #-1 
+%}
+
+%mmrLength = #(define-music-function
+%	(length)
+%	(number?)
+%	#{
+%		\once \override MultiMeasureRest.space-increment = #length
+%	#}
+%)
+
+%tempoDown = \once \override Score.MetronomeMark.direction = #-1 
+
+%whiteoutRehearsalMark = {
+%	\override Score.StaffSymbol.layer = #4
+%	\override Score.RehearsalMark.layer = #3
+%	\once \override Score.RehearsalMark.whiteout = ##t
+%	%\once \override Score.RehearsalMark.whiteout-style = #'outline
+%}
+
+%mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
+
+%textInSlur = {
+%	\once \override TextScript.outside-staff-priority = ##f
+%	\once \override TextScript.avoid-slur = #'inside
+%}
+
+sixDots = \markup {
+	\general-align #X #CENTER \concat {
+		\musicglyph #"scripts.staccato" \hspace #0.25
+		\musicglyph #"scripts.staccato" \hspace #0.25
+		\musicglyph #"scripts.staccato" \hspace #0.25
+		\musicglyph #"scripts.staccato" \hspace #0.25
+		\musicglyph #"scripts.staccato" \hspace #0.25
+		\musicglyph #"scripts.staccato"
+	}
+}
+
+textCenter = {
+	\once \override TextScript.parent-alignment-X = #0
+}

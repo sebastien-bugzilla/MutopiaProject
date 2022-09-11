@@ -132,9 +132,9 @@ musicViolaMvtI = \relative c {
 	\acciaccatura c,,8 c'16 g' d g ees g d g c, g' d g ees g d g 
 	c,,4-. <g' ees'>-. c,-. <g' ees'>-. 
 	c,-. <g' ees'>-. c,-. <g' ees'>-. 
-	c,8[\f <g' ees'>] c,8[ <g' ees'>] c,8[ <g' ees'>] c,8[ <g' ees'>] 
+	c,8[\f-. <g' ees'>]-. c,8[-. <g' ees'>]-. c,8[-. <g' ees'>]-. c,8[-. <g' ees'>]-. 
 % mesure 106 à 110
-	c,8[ <g' ees'>] c,8[ <g' ees'>] c,8[ <g' ees'>] c,8[ <g' ees'>] 
+	c,8[-. <g' ees'>]-. c,8[-. <g' ees'>]-. c,8[-. <g' ees'>]-. c,8[-. <g' ees'>]-. 
 	c,16( ees) r8 c'16->\ff ees c bes aes8 r aes'4~\fz
 	aes16 des aes ges f8 r aes,16\fz des aes ges f8 r
 	aes2\fz aes16( bes g! aes) f'!8.\fz->( ees16-.)

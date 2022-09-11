@@ -92,15 +92,15 @@ musicViolinIIMvtI = \relative c {
 	<ees g>-- <d f>16 <d f> r8 <ees g>4-. <f, d'!>-.
 	<g bes>4-- <f aes>16 <f aes> r8 g4-._\dimmarkup f-.
 % mesure 71 à 75
-	r8 ees16\mp\> ees f8 r r ees16 ees aes,8\! r
+	r8 ees16 ees f8\mp\> r r ees16 ees aes,8\! r
 	g4:16_\dimmarkup aes8 r g4:16\p\> aes8 r
 	g4:16 aes8 r g4:16 aes8\! r
 	bes2\pp( des!~
 	des1)
 % mesure 76 à 80
 	c(_\pococresc^\sulG
-	ees2)(\< aes4\> f8_\dimmarkup c
-	bes4\pp aes)( g2
+	ees2)\< aes4\>( f8_\dimmarkup c\!
+	bes4\pp) aes( g2
 	aes8) r aes8.( bes16-.) c8 r r4 \mark \default
 	ees'2(\< fes)\!
 % mesure 81 à 85

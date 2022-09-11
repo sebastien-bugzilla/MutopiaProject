@@ -32,7 +32,7 @@ musicCelloMvtI = \relative c {
 	r2 <fes ces'>\f->
 	ces1-^
 % mesure 21 à 25
-	ees2(\> ees,)\!
+	\hairpinShorten #'(0 . -14) ees2(\> ees,)\!
 	aes8 r des\p r aes r r4
 	aes'8\p^\pizz r bes r aes r r4
 	aes,8 r bes' r aes r r4
@@ -52,12 +52,12 @@ musicCelloMvtI = \relative c {
 % mesure 36 à 40
 	ces8->[_\piuf ces->] des->[ des->] ees-> ces-> r des-.
 	ees\fz r des\fz[ des] ees\fz[ ees] e\fz[ e]
-	<<{s4 s\> s s8 s\!} \\ {fis8\fz[ fis] g!\fz[ g] aes!\fz[ aes] a\fz[ a]}>>
+	<<{s4 \hairpinShorten #'(0 . -2) s\> s s8 s\!} \\ {fis8\fz[ fis] g!\fz[ g] aes!\fz[ aes] a\fz[ a]}>>
 	bes8\mp bes4 bes8 bes2
 	<<{s4 s_\dimmarkup s2} \\ {bes8 bes4 bes8 bes2}>>
 % mesure 41 à 45
-	bes8\< bes4 bes8 bes2\!
-	bes,8\> bes4 bes8 bes2(\!
+	\hairpinShorten #'(0 . -5) bes8\< bes4 bes8 bes2\!
+	\hairpinShorten #'(0 . -5) bes,8\> bes4 bes8 bes2(\!
 	ces8)\p ces-.( ces-. ces~-> ces ces-. ces-. ces->)~
 	ces_\crescmarkup ces-.( ces-. ces~ ces\< ces-. ces-. ces->~\!
 	ces!4)\mf r c_\crescmarkup r \time 3/4
@@ -70,7 +70,7 @@ musicCelloMvtI = \relative c {
 % mesure 51 à 55
 	fes1)~_\pdim
 	fes2\> f(\!
-	fis4 g!\pp \once \stemUp d'! bes
+	fis4 g!-\tweak extra-offset #'(0 . 2.7) \pp \once \stemUp d'! bes
 	\tuplet 3/2 {ees,8) bes'-. ees,-.} ees8 r \tuplet 3/2 {ees8-._\crescmarkup bes'-. ees,-.} ees r 
 	\tuplet 3/2 {ees8-.\< bes'-. ees,-.} ees r \tuplet 3/2 {ees8-. bes'-. ees,-.} ees\! r 
 % mesure 56 à 60
@@ -84,7 +84,7 @@ musicCelloMvtI = \relative c {
 	\tuplet 3/2 4 {ees8\f ees ees ees'\fz ees ees ees, ees ees ees, ees ees}
 	ees1\fz \mark \default
 	\tuplet 3/2 4 {ees'8\f ees ees ees'\fz ees ees ees, ees ees ees, ees ees}
-	ees1-^\fz
+	ees1^^\fz
 % mesure 66 à 70
 	ees'4->\< c-> bes->\! \acciaccatura c,8 a'4->
 	\tuplet 3/2 4 {bes8\f ees g bes ees, g} bes,4-. r4
@@ -92,22 +92,22 @@ musicCelloMvtI = \relative c {
 	ees'8( ees,) ees-. ees ees ees ees ees ees ees ees ees
 	ees'8( ees,) ees-. ees ees ees ees_\dimmarkup ees ees ees ees ees
 % mesure 71 à 75
-	ees'8( ees,) ees-.\mp\> ees ees ees ees'( ees,) ees-. ees-. ees-. ees-.\!}
+	ees'8( ees,) ees-. ees\mp\> ees ees ees'( ees,) ees-. ees-. ees-. ees-.\!}
 	ees8\! r ees'4:16_\dimmarkup ees8\p r ees4:16\>
 	ees8 r ees4:16 ees8 r ees4:16\!
 	ees2(\pp des!
 	bes1)
 % mesure 76 à 80
 	aes(_\pococresc
-	<< c,2.) { s4\< s\! s\> } >> des8(_\dimmarkup d\!
+	<< c,2.) { s4\< s\! s\> } >> des8(\! d_\dimmarkup
 	ees1)\pp
 	aes8 r des r aes r r4 \mark \default
-	aes''2(\< fes)\!
+	\hairpinShorten #'(0 . -13) aes''2(\< fes)\!
 % mesure 81 à 85
 	ces2.(\fz ees4)
 	ges2.~\> ges8-. ges\p-.
 	ces, r r4 r ges8^\pizz ges
-	ces, r r4 r4 f'8^\arco-.\mf f-.
+	ces, r r4 r4 f'8-\offset X-offset #-5 ^\arco-.\mf f-.
 	bes, r r4 r4 f8^\pizz f
 % mesure 86 à 90
 	bes, r d16(^\arco\f f) d-. c-. bes8 r f'16( aes) f-. ees-.
@@ -116,7 +116,7 @@ musicCelloMvtI = \relative c {
 	ges16)(\ff bes ges ees d8) r d2\pp(
 	fes16)(\ff bes fes ees des!8) r des4.\pp des'16(\< c!)\! \bar "||" \key c \major
 % mesure 91 à 95 
-	\tuplet 3/2 {b8\ff b b} b4~\> \tuplet 3/2 {b8 b b} b4~\!
+	\tuplet 3/2 {b8\ff b b} \hairpinShorten #'(0 . -5) b4~\> \tuplet 3/2 {b8 b b} b4~\!
 	\tuplet 3/2 {b8\mp\> b b} b4~ \tuplet 3/2 {b8 b b} b4~\!
 	\tuplet 3/2 {b8_\pdim b b} b4~ \tuplet 3/2 {b8 b b} b4~ 
 	\tuplet 3/2 {b8\p b b} b4~ \tuplet 3/2 {b8 b b} b4 \mark \default
@@ -150,7 +150,7 @@ musicCelloMvtI = \relative c {
 	f,8.\fz bes16 a8 r d,8.\fz g!16 f8 r
 	ges,2\fz ces->
 	ges'-> ces->
-	c!8\noBeam c,,4.:16\fz\> c2:16\!
+	c!8\noBeam \hairpinShorten #'(0 . -15) c,,4.:16\fz\> c2:16\!
 % mesure 121 à 125
 	c8\p r r4 r2
 	ees''1\p~\>
@@ -213,7 +213,7 @@ musicCelloMvtI = \relative c {
 	aes4-^ f-^ ees-^ <d bes' f'>8 \arpeggio d
 % mesure 171 à 175
 	\tuplet 3/2 4 {ees\ff aes c ees aes, c} ees,8 r r4 \mark \default
-	\tuplet 3/2 4 {aes'8(\ff aes,) aes-. aes aes aes aes aes aes aes aes aes
+	\tuplet 3/2 4 {aes'8(-\offset X-offset #-0.5 \ff aes,) aes-. aes aes aes aes aes aes aes aes aes
 	aes'8( aes,) aes-. aes aes aes aes aes aes aes aes aes
 	aes8_\dimmarkup aes aes aes aes aes aes aes aes aes aes aes
 	aes8\mp\> aes aes aes aes aes aes aes aes aes aes aes\!}

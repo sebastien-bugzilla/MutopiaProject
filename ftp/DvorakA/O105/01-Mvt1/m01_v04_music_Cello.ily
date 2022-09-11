@@ -92,7 +92,7 @@ musicCelloMvtI = \relative c {
 	ees'8( ees,) ees-. ees ees ees ees ees ees ees ees ees
 	ees'8( ees,) ees-. ees ees ees ees_\dimmarkup ees ees ees ees ees
 % mesure 71 à 75
-	ees'8( ees,) ees-.\mp\> ees ees ees ees'( ees,) ees-. ees-. ees-. ees-.\!}
+	ees'8( ees,) ees-. ees\mp\> ees ees ees'( ees,) ees-. ees-. ees-. ees-.\!}
 	ees8\! r ees'4:16_\dimmarkup ees8\p r ees4:16\>
 	ees8 r ees4:16 ees8 r ees4:16\!
 	ees2(\pp des!
