@@ -45,6 +45,7 @@ sempredim = \markup {\italic {sempre dim.}}
 sulD = \markup {sul D.}
 string = \markup {\italic string.}
 longacorona = \markup {\italic {longa corona}}
+longacoronaCond = \markup {\italic \center-column {\lower #1 "longa" "corona"}}
 marcatomarkup = \markup {\italic marcato}
 
 fconforza = \markup {\hspace #0.1 \dynamic f \italic {con forza}}
@@ -189,6 +190,14 @@ hairpinShorten = #(define-music-function
 %		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
 %	#}
 %)
+
+markYoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.Y-offset = #offset
+	#}
+)
 
 beamOffset = #(define-music-function
 	(position)

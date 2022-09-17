@@ -18,7 +18,7 @@
 \include "./00-Common/Quartet_n14_Op105_timeMvt.ily"
 \include "./00-Common/Quartet_n14_Op105_LayoutConductors.ily"
 \include "./00-Common/Quartet_n14_Op105_Shortcuts.ily"
-%\include "./00-Common/Quartet_n14_Op105_Format_Cond_Mvt02.ily"
+\include "./00-Common/Quartet_n14_Op105_Format_Cond_Mvt02.ily"
 \include "./00-Common/Quartet_n14_Op105_Tempi.ily"
 \include "./02-Mvt2/m02_v01_music_ViolinI_C.ily"
 \include "./02-Mvt2/m02_v02_music_ViolinII_C.ily"
@@ -47,10 +47,10 @@
 		<<
 			\new StaffGroup <<
 				\new GrandStaff <<
-					\new Staff  << % \with { \RemoveAllEmptyStaves }
-%						\new Voice {
-%							\formatConductorMvtII
-%						}
+					\new Staff  << 
+						\new Voice {
+							\formatConductorMvtII
+						}
 						\new Voice {
 							\tempiMvtII
 						}
@@ -74,6 +74,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+%			system-count = 44
 %			\context {
 %				\Score 
 %				scriptDefinitions = #my-script-alist

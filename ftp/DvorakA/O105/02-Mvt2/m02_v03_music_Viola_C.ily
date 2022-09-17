@@ -72,7 +72,7 @@ musicViolaMvtII = \relative c {
 	f-.\< aes-. f-.
 	aes-. f-. aes-.\!
 % mesure 51 à 55
-	<ees aes>2\ff\< q4~
+	<ees aes>2-\offset X-offset #-1 \ff\< q4~
 	q q4. q8\!
 	<ees g>2.(\f
 	<ees aes>2) r4 \mark \default
@@ -86,7 +86,7 @@ musicViolaMvtII = \relative c {
 % mesure 61 à 65
 	ges-. f-. ges-.
 	f-. ges-. f-.
-	fis-.\pp e-. fis-.
+	fis-.-\offset X-offset #-1.5 \pp e-. fis-.
 	e-. fis-. e-.
 	g!-. cis,-. g'-.
 % mesure 66 à 70
@@ -100,7 +100,7 @@ musicViolaMvtII = \relative c {
 	r4 c,8(_\crescmarkup aes') r4
 	des,8( f) r4 f,8( des')
 	r4 f,8( bes) r4
-	<ees, aes>2\f <ees aes>4~
+	<ees, aes>2-\offset X-offset #-1 \f <ees aes>4~
 % mesure 76 à 80
 	q q4. q8
 	<ees g>2.(
@@ -122,8 +122,8 @@ musicViolaMvtII = \relative c {
 % mesure 91 à 95
 	e~
 	e\!
-	ees!(\p\>
-	des)~\!
+	ees!(\p-\alterBroken shorten-pair #'(()(0 . 2)) \>
+	des)~
 	des~\pp
 % mesure 96 à 100
 	des
@@ -132,22 +132,22 @@ musicViolaMvtII = \relative c {
 	c c c c c c 
 	c c c c c c 
 % mesure 101 à 105
-	c\f\< c c c c c\!
-	<c c'>_\crescmarkup q q q q q 
+	c-\offset X-offset #-1.5 \f\< c c c c c\!
+	<c c'>-\offset X-offset #1.8 _\crescmarkup q q q q q 
 	q q q q q q 
 	q q q q q q 
 	c'(\ff f) r f f,4~ 
 % mesure 106 à 110
 	f g-. aes-.
 	f r r
-	f'2\ff\>\fermata^\longacorona r4\!\fermata \mark \default \break 
+	\hairpinShorten #'(1 . 0) f'2-\offset X-offset #-2 \ff\>\fermata r4\!\fermata \mark \default \break \bar ".|:-||"
 	\repeat volta 2 { 
 		des4-.(\pp des2--
 		des4-. des2--
 % mesure 111 à 115
 		des4-. des2--
 		des4-. des2--)
-		ges4(-._\segue ges2--
+		\shape #'((0 . -0.3)(0 . -0.7)(0 . -0.7)(0 . -0.3)) Slur ges4(-._\segue ges2--
 		ges4-. ges2--
 		ges4-. ges2--
 % mesure 116 à 120
@@ -185,12 +185,12 @@ musicViolaMvtII = \relative c {
 	\repeat volta 2 {
 		c'!4-.\pp\<( c-. c-.
 		ces-. ces-. ces-.)
-		ces-.( ces-. ces-.
+		\shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur ces-.( ces-. ces-.
 		ces-. ces-. ees-.\!)
 		ees ees( f
 % mesure 146 à 150
 		ges\> aes ges8 f)\!
-		bes4-.\pp( bes-. bes-.
+		bes4-.-\offset X-offset #-1 \pp( bes-. bes-.
 		ges-. ges-. ges-.)
 		ges-.( ges-. ges-.
 		ges-. ges-. ges-.)
@@ -241,7 +241,7 @@ musicViolaMvtII = \relative c {
 	ges aes ges aes ges aes 
 	ges aes ges aes ges aes)
 	ges(\< aes ges aes c, ees)\!
-	des(\f fes des fes des\< fes
+	des(-\offset X-offset #-1 \f fes des fes des\< fes
 	des fes des fes des fes)\! 
 % mesure 191 à 195
 	fes( aes fes aes fes aes 
@@ -259,10 +259,10 @@ musicViolaMvtII = \relative c {
 	<ges bes>2.\pp(
 	<f aes>) 
 	<e g!>~\fp
-	\set doubleSlurs = ##t q(\>
+	\set doubleSlurs = ##t \hairpinShorten #'(1 . 0) q(\>
 	<f aes>2)\! r4 \set doubleSlurs = ##f
 % mesure 206 à 210
-	<f' aes>2.(\pp
+	<f' aes>2.(-\offset X-offset #-0.3 \pp
 	<e g!>~
 	<e g>
 	<f aes>4) r r
@@ -319,7 +319,7 @@ musicViolaMvtII = \relative c {
 	c aes aes f' e c
 	c aes aes f' e c
 	f,2-> f4->~
-	f e4.-> f8
+	f e4.-\offset X-offset #0.2 -> f8
 	<e g>2.->(
 % mesure 256 à 260
 	f2) r4
@@ -397,7 +397,7 @@ musicViolaMvtII = \relative c {
 	r4 c,8(_\crescmarkup aes') r4
 	des,8( f) r4 f,8( des')
 	r4 f,8( bes) r4
-	<ees, aes>2\f q4~
+	<ees, aes>2-\offset X-offset #-1 \f q4~
 	q q4. q8
 % mesure 321 à 325
 	<ees g>2.(
@@ -430,12 +430,12 @@ musicViolaMvtII = \relative c {
 	c c c c c c 
 	c\f\< c c c c c\!
 % mesure 346 à 350
-	<c c'>_\crescmarkup q q q q q 
+	<c c'>-\offset X-offset #1.7 _\crescmarkup q q q q q 
 	q q q q q q 
 	q q q q q q 
 	c'(\ff f) r f f,4~ 
 	f g-. aes-.
 % mesure 351 à 352
 	f r r
-	f'2\ff\>\fermata r4\!\fermata \bar "|."
+	\hairpinShorten #'(-0.3 . -1) f'2\ff\>\fermata r4\!\fermata \bar "|."
 }

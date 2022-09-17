@@ -64,7 +64,13 @@ tempiMvtI = {
 	\tempo "Vivo." % bar 201
 }
 tempiMvtII = {
-	\tempo "Molto vivace. M.M. " 2. = 92
+	\tempo \markup { 
+		"Molto vivace. M.M. "
+		\line {
+			\general-align #Y #DOWN \abs-fontsize #7 
+			\note {2.} #1 \medium "= 92."
+		}
+	}
 	s2.*136
 	\tempo "rit." % bar 137
 	s2.*4

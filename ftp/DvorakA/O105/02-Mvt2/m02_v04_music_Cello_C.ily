@@ -72,7 +72,7 @@ musicCelloMvtII = \relative c {
 	aes,\< des, aes'
 	des, aes' des,\!
 % mesure 51 à 55
-	ees2\ff\<^\arco ees4~
+	ees2\ff\<-\offset X-offset #0.5 ^\arco ees4~
 	ees ees4. ees8\!
 	ees2.\f(
 	aes2) r4 \mark \default
@@ -100,7 +100,7 @@ musicCelloMvtII = \relative c {
 	aes c_\crescmarkup aes
 	des, des' des,
 	des' des, des'
-	<ees, c'>2\f^\arco q4~
+	<ees, c'>2\f-\offset X-offset #0.5 ^\arco q4~
 % mesure 76 à 80
 	q <ees des'>4. <ees c'>8
 	<ees des'>2.(
@@ -122,8 +122,8 @@ musicCelloMvtII = \relative c {
 % mesure 91 à 95
 	ges~
 	ges~\!
-	ges~\p\>
-	ges~\!
+	ges~\p-\alterBroken shorten-pair #'(()(0 . 2)) \>
+	ges~
 	ges(\pp
 % mesure 96 à 100
 	f)
@@ -133,14 +133,14 @@ musicCelloMvtII = \relative c {
 	f r aes\!
 % mesure 101 à 105
 	<g f' des'>\f r r
-	<c, g' bes' e>_\crescmarkup\arpeggio r r
+	<c, g' bes' e>-\offset X-offset #1.8 _\crescmarkup\arpeggio r r
 	q\arpeggio r r 
 	q\arpeggio r r 
 	c'8(\ff f) r f f,4~
 % mesure 106 à 110
 	f g-. aes-.
 	f r r
-	f''2\fermata\ff\>^\longacorona r4\fermata\! \mark \default \break
+	f''2\fermata\ff\> r4\fermata\! \mark \default \break \bar ".|:-||"
 	\repeat volta 2 {
 		R2.*4
 	
@@ -185,7 +185,7 @@ musicCelloMvtII = \relative c {
 	\repeat volta 2 {
 		aes''4(-.\pp\< aes2--
 		aes4-. aes2--)
-		aes4-.( aes2--
+		\shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur aes4-.( aes2--
 		a4-. a2--)\!
 		bes4--( bes2--
 % mesure 146 à 150
@@ -241,19 +241,19 @@ musicCelloMvtII = \relative c {
 	ees f ges)\!
 	\once \stemUp des'( c bes)
 	bes(\< aes ges)\!
-	fes2.\f~\<
+	\hairpinShorten #'(0 . -12) fes2.\f~\<
 	fes\!
 % mesure 191 à 195
 	eeses->\!~
 	eeses
 	des!~
-	des_\dimmarkup
+	des-\offset X-offset #5 _\dimmarkup
 	ges(
 % mesure 196 à 200
 	g!)
 	aes~
 	aes
-	aes\p\>~
+	\hairpinShorten #'(0 . -14) aes\p\>~
 	aes\!
 % mesure 201 à 205
 	des\pp~
@@ -430,12 +430,12 @@ musicCelloMvtII = \relative c {
 	f r aes\!
 	<g f' des'>\f r r
 % mesure 346 à 350
-	<c, g' bes' e>_\crescmarkup\arpeggio r r
+	<c, g' bes' e>-\offset X-offset #1.7 _\crescmarkup\arpeggio r r
 	q\arpeggio r r 
 	q\arpeggio r r 
 	c'8(\ff f) r f f,4~
 	f g-. aes-.
 % mesure 351 à 352
 	f r r
-	f''2\fermata\ff\> r4\fermata\! \bar "|."
+	\hairpinShorten #'(-0.3 . -1) f''2\fermata\ff\> r4\fermata\! \bar "|."
 }

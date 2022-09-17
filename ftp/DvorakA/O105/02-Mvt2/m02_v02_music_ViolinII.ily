@@ -372,7 +372,7 @@ musicViolinIIMvtII = \relative c {
 % mesure 296 à 300
 	c des4.( ees8-.)\!
 	des2.(\f
-	c2) r4 \mark \default
+	c2) r4
 	aes'8(\f ees') r4 aes,8( ees')
 	r4 aes,8( ees') r4
 % mesure 301 à 305
