@@ -81,7 +81,13 @@ tempiMvtII = {
 	\tempo "in tempo" % bar 233
 }
 tempiMvtIII = {
-	\tempo "Lento e molto cantabile. M.M." 8 = 116
+	\tempo \markup {
+		"Lento e molto cantabile. M.M."
+		\line {
+			\general-align #Y #DOWN \abs-fontsize #7 
+			\note {8} #1 \medium "= 116."
+		}
+	}
 	s1*22
 	\tempo "Poco più animato" % bar 23
 	s1*4 s4 

@@ -70,14 +70,14 @@ piuf = \markup {\hspace #-3.9 \italic {più} \dynamic f}
 pmarkup = \markup {\dynamic p}
 pmoltocantabile = \markup {\hspace #-0.1 \dynamic p \italic {molto cantabile}}
 pmoltoespressivo = \markup {\hspace #-0.1 \dynamic p \italic {molto espressivo}}
+ppocoapococresc = \markup {\hspace #-0.1 \dynamic p \italic {poco a poco cresc.}}
+ppocosostenuto = \markup {\hspace #-0.1 \dynamic p \italic {poco sostenuto}}
 ppcantabile = \markup {\hspace #-0.8 \dynamic pp \italic cantabile}
 ppdolce = \markup {\hspace #-0.8 \dynamic pp \italic dolce}
 ppespressivomoltocantabile = \markup {\hspace #-0.8 \dynamic pp \italic {espressivo e molto cantabile}}
 pplegato = \markup {\hspace #-0.8 \dynamic pp \italic legato}
 ppleggiero = \markup {\hspace #-0.8 \dynamic pp \italic leggiero}
 ppmoltocantabile = \markup {\hspace #-0.8 \dynamic pp \italic {molto cantabile}}
-ppocoapococresc = \markup {\hspace #-0.8 \dynamic p \italic {poco a poco cresc.}}
-ppocosostenuto = \markup {\hspace #-0.1 \dynamic p \italic {poco sostenuto}}
 ppperdendosi = \markup {\hspace #-0.8 \dynamic pp \italic {perdendosi}}
 esprppp = \markup {
 	\line {
@@ -207,6 +207,14 @@ beamOffset = #(define-music-function
 	#}
 )
 
+stemOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \offset length #offset Stem
+	#}
+)
+
 tupletOffset = #(define-music-function
 	(offset)
 	(number?)
@@ -254,10 +262,10 @@ tupletOffset = #(define-music-function
 
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
-%textInSlur = {
-%	\once \override TextScript.outside-staff-priority = ##f
-%	\once \override TextScript.avoid-slur = #'inside
-%}
+textInSlur = {
+	\once \override TextScript.outside-staff-priority = ##f
+	\once \override TextScript.avoid-slur = #'inside
+}
 
 sixDots = \markup {
 	\general-align #X #CENTER \concat {
@@ -273,3 +281,6 @@ sixDots = \markup {
 textCenter = {
 	\once \override TextScript.parent-alignment-X = #0
 }
+
+markupOsp = \once \override TextScript.outside-staff-priority = #200
+

@@ -39,7 +39,7 @@ musicViolinIIMvtIII = \relative c {
 	f16_\fcresc f8 f f f16~ f f8 f16 \afterGrace a4\ff(\trill {g16[ a])}
 % mesure 26 à 30
 	bes8\upbow ees16(\downbow d f8) f16( bes, d8) d16( g, bes8) bes16( e,!)
-	f4( b)_\dimD\> c16( a f8~ f_\pmarkup e)
+	f4( b)_\dimD\> c16( a f8~ f_\pmarkup e)\!
 	e\p\>( ees d des16 c) c4\pp r \mark \default
 	g'4_\tranquillo( e8 f g a c bes)
 	\once \stemUp bes4.(\< a8\! g4\>) r8 g\!
@@ -65,7 +65,7 @@ musicViolinIIMvtIII = \relative c {
 	e!2--\mf\> des--\p
 	aes1\pp\<
 	des2(\f\>_\dimmarkup bes!\p)
-	aes4.\pp\<( c8) c4( f)\!
+	aes4.\p\<( c8) c4( f)\!
 	aes\mf( g!8 ges) g8_\crescmarkup( aes!4.)
 % mesure 51 à 55
 	aes2\f\>~ aes4 g!\p

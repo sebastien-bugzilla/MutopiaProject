@@ -26,26 +26,26 @@ musicViolaMvtIII = \relative c {
 	a4(\< d,) a'4.\! a8
 	g8.( e16 a2)\f f8( c')
 % mesure 16 à 20
-	a4( d_\dimmarkup c)\p r \mark \default
+	a4( d-\offset X-offset #-0.5 _\dimmarkup c)\p r \mark \default
 	c,2\pp~ c8 c4 c8
 	c2.-> c4~
 	c\< bes4.( a16 g f8 e)\!
 	<< { dis4-> e2. } {s4\fz s\> s s\!} >>
 % mesure 21 à 25
 	f2\!_\ppocoapococresc( a)
-	f4(\< f'8 e16 d)\! bes4.\mf( bes8--)
+	\hairpinShorten #'(0 . 0.5) f4(\< f'8 e16 d)\! bes4.-\offset X-offset #0.5 \mf( bes8--)
 	c4~(\< c16 bes c d) a8( \once \stemUp c4) a'8\!
-	g8\< g4 g_\crescmarkup g8(\noBeam e c)\!
-	ees16_\fcresc ees8 ees ees ees16~ ees ees8 ees16~ ees8\ff c16( f)
+	g8\< g4 g-\tweak extra-offset #'(3 . 2.5) _\crescmarkup g8(\noBeam e c)\!
+	ees16_\fcresc ees8 ees ees ees16~ ees ees8 ees16~ ees8-\offset X-offset #-1 \ff c16( f)
 % mesure 26 à 30
 	f4( d2) e!8.( bes'16)
-	a4( f8.)_\dimD\> d16 f8( a, d_\pmarkup c16 bes)\!
-	bes2\p_\dimmarkup( a4)\pp r \mark \default
+	a4( f8.)_\dimD\> d16 f8( a, \markupOsp d-\offset X-offset #-1.9 _\pmarkup c16 bes)\!
+	bes2\p-\offset X-offset #6 _\dimmarkup( a4)\pp r \mark \default
 	e'_\tranquillo( c8 d e f a g)
-	fis4(\< dis << e2) {s4\> s\!} >>
+	\hairpinShorten #'(0 . -2) fis4(\< dis\! << e2) {s4\> s8 s\!} >>
 % mesure 31 à 35
 	e4\pp( c8 d! e f!) g16( bes a g)
-	c2~\< c8(\> b bes e,)\!
+	<<c2~ {s8\< s s s16 s\!} >> c8(\> b bes e,)\!
 	f2~\pp f8 f4--~ f8
 	f4(\< bes,) e!( des8 c)\!
 	f4.(_\crescmarkup f16 g) a4( c8 a)
@@ -66,19 +66,19 @@ musicViolaMvtIII = \relative c {
 	c,4\pp\<( d!8 e f4 g8 aes)\!
 	a!4(\f aes8\> g ges4 f8 e!)\!
 	f4.(\p\< aes8) aes4( \once \stemUp c)\!
-	d!\mf( des8 c) des8(_\crescmarkup d4.)
+	d!\mf( des8 c)_\crescmarkup des8( d4.)
 % mesure 51 à 55
 	ees4(\f\> ces bes des\p
 	ces8) r r4 r2
 	ees,4( f!8\< g! aes4 bes8 ces)\!
-	deses4\f( ces8 bes) beses4(\> aes8 g!)\!
+	\once \stemUp deses4\f( ces8 bes) beses4(\> aes8 g!)\!
 	aes\pp( ees f! g aes)\< aes( bes! ces)\!
 % mesure 56 à 60
 	deses4\f( ces8\> bes) beses4( aes8 g!)\!
 	\tuplet 3/2 4 {aes\< <aes ces> q q q q q q q  q q q\! 
 	<a! ees'> q q q q q q q q q q q
-	<gis d'!>_\fmoltoappassionato q q q q q <gis e'!> q q q q q 
-	<aes f'!> q q <g f'>\< q f <f b> q q q q q\!
+	\tupletDown <gis d'!>_\fmoltoappassionato q q q q q <gis e'!> q q q q q \tupletNeutral
+	<aes f'!> q q \beamOffset #'(-0.8 . 0.5) <g f'>\< q f <f b> q q q q q\!
 % mesure 61 à 65
 	<g bes!>\ff q q q q q <e! c'> q q <c bes'> q q 
 	q q q q q q q q q e e e} \mark \default
@@ -87,19 +87,19 @@ musicViolaMvtIII = \relative c {
 	e4( g8 fis e4.\> fis16 g)
 % mesure 66 à 70
 	g4.-( fis8 e4. fis16 g)\!
-	g2\p\> e\!
-	<<{ees2_( e4 c)\pp} \\ {s4 s_\dimmarkup s s}>>
+	g2\p\> e
+	<<{ees2_(\! e4 c)\pp} {s4 \textInSlur s-\offset X-offset #-2.5 _\dimmarkup s s}>>
 	<c a'>8^\pizz[ <f a>] <f c'>[ <c a'>] <c a'>[ <a' c>] <a f'>[ <f c'>]
 	<c g'> g' e g <c, g'> g' e g
 % mesure 71 à 75
 	e[ <c bes'>] <e c'>[ <c bes'>] <e c'>[ <c bes'>] <bes' e>[ <c, g'>]
 	<e g>[ <e bes'>] <des g> <c a'>16 <c g'> <c a'>8 <f a>16 c' f e d! c
 	c8\< <c, a'> c' <c, a'>16 <c a'> c'8 <f, a>16 <f a>\! <a f'> e' d c
-	c8 b16 c d8 <g, d'>16 <g f'> f d' f g, e' g, d' g,
+	c8 b16 c \beamOffset #'(0.5 . 0.7) d8 <g, d'>16 <g f'> f d' f g, e' g, d' g,
 	e8 <e c'> \tuplet 3/2 {<a e'> <e c'> <c a'>} <d c'>_\dimmarkup[ <b' f'!>] <a f'>[ c]
 % mesure 76 à 80
 	a\p[ fis] <gis d'!>[ <d gis>] <e a>\noBeam c'16 c a8 r \mark \default
-	c2\pp^\arco \stemDown c8 b32( c) c-. c-. \stemNeutral c4
+	c2-\offset X-offset #-2.5 \pp^\arco \stemDown c8 b32( c) c-. c-. \stemNeutral c4
 	c4->~ c8 des32( c) c-. c-. c2~
 	c4( bes4.\< a16 g f8 e)\!
 	dis4( << e2.) {s4\> s s\!} >>
@@ -111,15 +111,15 @@ musicViolaMvtIII = \relative c {
 	ees16\<[ ees32 ees] ees ees ees ees ees16[ ees32 ees] ees ees ees ees ees16[ ees32 ees] ees ees ees ees\! ees8\ff c16( f)
 % mesure 86 à 90
 	f4( bes,) <f d'> e!16( g8 bes16)
-	a4 f'16( d f d) <a f'>4 a16_\dimmarkup( fis32 g e8)
+	a4 f'16( d f d) <a f'>4 \beamOffset #'(-0.5 . -0.5) a16_\dimmarkup( fis32 g e8)
 	e16(\> dis32 e dis e a16~ a8. g16\! f4)\p r \mark \default
-	d'4\p\< <g, f'>-- <a f'>-- <g' bes>--\!
+	d'4\p\< \stemOffset #-1 <g, f'>-- \stemOffset #-1 <a f'>-- <g' bes>--\!
 	bes2\>( a4)\p r4
 % mesure 91 à 95
 	c,2\pp f4 \clef treble <a f'>--
-	\set doubleSlurs = ##t <f f'>( <c c'>)_\dimmarkup \clef alto <a a'>(  <c, c'>)~ \set doubleSlurs = ##f
+	\set doubleSlurs = ##t <f f'>( <c c'>)-\offset X-offset #1 _\dimmarkup \clef alto <a a'>(  <c, c'>)~ \set doubleSlurs = ##f
 	<c c'>2~ <c c'>8 r r4
-	ees2\pp\<( d\!)
+	ees2\pp( \hairpinShorten #'(0 . 5) d)\<
 	des2.\f\> <des g>4(\!
 % mesure 96 à 100
 	c4)(\p d!8\< ees f4 fis8 g)\!

@@ -36,16 +36,16 @@ musicViolinIMvtIII = \relative c {
 	c4(\< bes8 c16 d) d8([ bes'\! f\mf e16 d)]
 	c4(\< f4.) a8 a8.( c16-.)\!
 	c2\trill\<~ c16_\crescmarkup cis( d bes a g a bes)\!
-	c!4~(_\fcresc c16 bes a bes) b8( c) g'(\ff ees)
+	c!4~(_\fcresc c16 bes a bes) b8( c) g'(-\offset X-offset #-1.3 \ff ees)
 % mesure 26 à 30
 	ees16 d f8~ f16 bes, d8~ d16 g, bes8~ bes16 e,! g8~
-	g16 f--( e-- f--) g_\dimmarkup(-- f-- e-- f)-- a(\>-- f-- e-- d)-- c(--_\pmarkup bes-- a-- g)--\!
+	g16 f--( e-- f--) g_\dimmarkup(-- f-- e-- f)-- a(\>-- f-- e-- d)-- \markupOsp c(---\offset X-offset #-0.5 _\pmarkup bes-- a-- g)--\!
 	g2\p\>( f4)\pp r \mark \default
 	c'2.(_\tranquillo e4)
-	ees(\< fis)\! g8(\> e d c)\!
+	\hairpinShorten #'(0 . -2) ees(\< fis)\! g8(\> e d c)\!
 % mesure 31 à 35
 	c2.(\pp e4)
-	g4(\< fis)\! g4.(\> c8)\!
+	\hairpinShorten #'(0 . -5) g4(\< fis)\! g4.(\> c8)\!
 	c2\pp c8\(( f) a4\)
 	bes8(\< g f) e16-- d-- cis8( d e, g)\!
 	c!2._\crescmarkup f8( a)
@@ -63,19 +63,19 @@ musicViolinIMvtIII = \relative c {
 	c,4\pp\<(^\sulG d!8 e!) f4( g8 aes)\!
 % mesure 46 à 50
 	a!4(\mf\> aes8 g!) ges( f e! des)\!
-	c1\pp\<
-	e!2\f(\>_\dimmarkup des)\p
+	<<c1 {s4\pp\< s s s8 s\! } >>
+	e!2\f(\>-\tweak extra-offset #'(4 . 4.3) _\dimmarkup des)\p
 	c4\p\<( d!8 e!) f4( g8 aes)\!
-	bes2._\mfcresc bes8(\< ces)
+	<< bes2.\mf {s4 s8 s_\crescmarkup s8 s} >> bes8(\< ces)
 % mesure 51 à 55
 	ces4\f(\> des8 ees)\! \acciaccatura fes8 ees4.\!_\dimmarkup( g,8\p)
 	\tuplet 3/2 4 {aes8\pp ees'-.( ees-.  ees-. ees-. ees-. ees-. ees-. ees-.   ees-. ees-. ees-.)
 	<ees, ees'>-.( q-. q-.) q-.(\< q-. q-.) q-.( q-. q-.) q-.( q-. q-.)\!
-	<fes fes'>-.(\f q-. q-.) q-.(\> q-. q-.) q-.( q-. q-.) q-.( q-. q-.)\!
+	\tupletUp \beamOffset #'(0.5 . 0.5) <fes fes'>-.(\f q-. q-.) \beamOffset #'(0.5 . 0.5) q-.(\> q-. q-.) \beamOffset #'(0.5 . 0.5) q-.( q-. q-.) \beamOffset #'(0.5 . 0.5) q-.( q-. q-.)\! \tupletNeutral
 	<ees ees'>-.(\pp q-. q-.) q-.(\< q-. q-.) q-.( q-. q-.) q-.( q-. q-.)\!
 % mesure 56 à 60
-	<fes fes'>-.(\f q-. q-.) q-.(\> q-. q-.) q-.( q-. q-.) q-.( q-. q-.)\!}
-	<< ees'1~ {s4\< s s s\!} >>
+	\tupletUp \beamOffset #'(0.5 . 0.5) <fes fes'>-.(\f q-. q-.) \beamOffset #'(0.5 . 0.5) q-.(\> q-. q-.) \beamOffset #'(0.5 . 0.5) q-.( q-. q-.) \beamOffset #'(0.5 . 0.5) q-.( q-. q-.)\!} \tupletNeutral
+	<< ees'1~ {s4\< s s s8 s\!} >>
 	ees4\! f!2( f8.-- fis16)
 	fis4(_\fmoltoappassionato g!8 gis) gis( a) ais( b)
 	b2\< b8( f'!) e!( d)\!
@@ -83,7 +83,7 @@ musicViolinIMvtIII = \relative c {
 	d\ff( g bes,! d) g,( c e, a)
 	\tuplet 3/2 4 {g8( fis-- f-- e-- d-- des--) c(-- b-- bes-- bes-- a-- aes--)} \mark \default
 	g1
-	g4(^\pocoapocodim e des2)
+	g4(_\pocoapocodim e des2)
 	c8( e f! fis g4\> fis8 f)
 % mesure 66 à 70
 	e4( f8 fis g4 fis8 f)\!

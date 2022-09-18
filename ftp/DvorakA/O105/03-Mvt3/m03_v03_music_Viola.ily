@@ -87,8 +87,8 @@ musicViolaMvtIII = \relative c {
 	e4( g8 fis e4.\> fis16 g)
 % mesure 66 à 70
 	g4.-( fis8 e4. fis16 g)\!
-	g2\p\> e\!
-	<<{ees2_( e4 c)\pp} \\ {s4 s_\dimmarkup s s}>>
+	g2\p\> e
+	<<{ees2_(\! e4 c)\pp} {s4 s_\dimmarkup s s}>>
 	<c a'>8^\pizz[ <f a>] <f c'>[ <c a'>] <c a'>[ <a' c>] <a f'>[ <f c'>]
 	<c g'> g' e g <c, g'> g' e g
 % mesure 71 à 75

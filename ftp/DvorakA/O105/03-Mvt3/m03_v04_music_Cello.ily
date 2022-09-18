@@ -59,7 +59,7 @@ musicCelloMvtIII = \relative c {
 	c''8(\> cis d dis16 e f4)\! r
 	<<{c,8(\pp b bes g)} \\ {c,2}>> r4 r8 c'8--
 	R1 \mark \default 
-	\tuplet 3/2 4 {f,8-.\pp(^\intempo f-. f-. f-. f-. f-. f-. f-. f-. f-. f-. f-.)
+	\tuplet 3/2 4 {f,8-.\pp( f-. f-. f-. f-. f-. f-. f-. f-. f-. f-. f-.)
 	f-.(\< f-. f-. f-. f-. f-. f-. f-. f-. f-. f-. f-.)\!
 % mesure 46 à 50
 	f-.(\mf\> f-. f-. f-. f-. f-. f-. f-. f-. f-. f-. f-.)\!
