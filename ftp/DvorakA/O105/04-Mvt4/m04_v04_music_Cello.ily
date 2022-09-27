@@ -42,7 +42,7 @@ musicCelloMvtIV = \relative c {
 		{
 			aes8\ff r des, r
 % mesure 26 à 30
-			c r c,4\<\fz~(
+			c r c,4\>\fz~(
 			c4.^\dimmarkup d8)\!
 		}{
 			aes''8\ff r ees[ r16 ees]

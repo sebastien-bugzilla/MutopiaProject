@@ -260,6 +260,16 @@ tupletOffset = #(define-music-function
 %	%\once \override Score.RehearsalMark.whiteout-style = #'outline
 %}
 
+whiteoutMarkup = {
+	\once \override TextScript.whiteout = ##t
+	\once \override TextScript.whiteout-style = #'outline
+}
+
+whiteoutDynamic = {
+	\once \override DynamicText.whiteout = ##t
+	\once \override DynamicText.whiteout-style = #'outline
+}
+
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 textInSlur = {
@@ -284,3 +294,10 @@ textCenter = {
 
 markupOsp = \once \override TextScript.outside-staff-priority = #200
 
+voltaShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Score.VoltaBracket.shorten-pair = #shortLength
+	#}
+)

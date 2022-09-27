@@ -184,18 +184,18 @@ musicViolinIIMvtIV = \relative c {
 	c'!( fis,
 	gis fis~\!
 	fis)\mf\< f^\sulD(_\espressivomarkup
-	bes! a)\!
+	\once \stemUp bes! a)\!
 	aes!\>( f
 % mesure 141 à 145
 	ees!\p eeses) \mark \default
-	des8_\ppcantabile(^\intempo f \tuplet 3/2 {ges aes f}
+	des8_\ppcantabile( f \tuplet 3/2 {ges aes f}
 	ges aes) bes4~
 	bes bes8( aes
 	\tuplet 3/2 {ges f ees} des ces)
 % mesure 146 à 150
 	bes( des \tuplet 3/2 {ges_\crescmarkup aes f}
-	ges) ges16-. aes-. bes4~
-	bes8[ bes~(] bes aes)
+	ges) ges16-. aes-. \stemUp bes4~
+	bes8[ bes~(] bes aes) \stemNeutral
 	\tuplet 3/2 {ges( f ees} des ces)
 	bes\<( des ges bes~\!
 % mesure 151 à 155
@@ -230,7 +230,7 @@ musicViolinIIMvtIV = \relative c {
 	r a r a
 % mesure 176 à 180
 	\tuplet 6/4 {gis16(\< a gis a gis a} \tuplet 6/4 {gis a gis a gis a}
-	\tuplet 6/4 {gis a gis a gis a} b8)\! r
+	\tuplet 6/4 {gis a gis a gis a} \once \stemUp b8)\! r
 	a4--( a--)
 	gis8(\< a gis fis)\!
 	fis2\<(

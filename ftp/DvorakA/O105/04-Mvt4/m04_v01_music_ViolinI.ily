@@ -378,7 +378,7 @@ musicViolinIMvtIV = \relative c {
 	bes4.\fp( c8)
 	bes4.(\fz c8)
 	bes16\p-. d-. f-. aes-. g-. f-. bes-. f-. 
-	ees4.\fz\>^( f8)
+	ees4.\fz\<^( f8)
 	ees4._\fzmarkup^( f8) 
 % mesure 306 à 310
 	ees4._\fzmarkup^( f8)\!
