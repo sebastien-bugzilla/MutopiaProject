@@ -26,8 +26,8 @@ musicViolinIMvtIII = \relative c {
 	d8(\< e16 f) a8.( f16 d8)\! a( b c)
 	c4 c4\f->~( c8 b a f)
 % mesure 16 à 20
-	e([ fis_\dimmarkup gis8. a16] a4)\p r8 a, \mark \default
-	g!4\pp( e8 f! g a c bes)
+	e([ fis_\dimmarkup gis8. a16] a4)\p r8 a,\pp \mark \default
+	g!4( e8 f! g a c bes)
 	bes4.->( a8 g4) r8. g16
 	g4(\< e8 f) g( a bes16 d c bes)\!
 	bes4\fz->\>~( bes16 a c bes a8 g)\! r g\p

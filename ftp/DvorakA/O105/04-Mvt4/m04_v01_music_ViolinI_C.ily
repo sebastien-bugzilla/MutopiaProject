@@ -84,7 +84,7 @@ musicViolinIMvtIV = \relative c {
 	ees16( g) aes-. des-. c-.\! bes-. ees-. bes-. \mark \default
 	c(->\f bes) c-. aes-. aes(-> g) aes-. f-.
 	ees(-> c) des-. c-. des(-> c) bes-. ees-.
-	ees8[ r16 e(] f8)[ r16 d(]
+	ees8[ r16 e(] f8)[ r16 des(]
 	c8) bes16-. aes-. bes( aes) g-. ees'-.
 % mesure 61 à 65
 	c'-> bes( c) aes-. aes-> g( aes) f-.

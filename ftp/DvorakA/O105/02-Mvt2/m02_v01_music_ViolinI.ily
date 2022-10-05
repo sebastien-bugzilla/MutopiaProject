@@ -38,10 +38,10 @@ musicViolinIMvtII = \relative c {
 		des2 des4\<~
 		des c4.( bes8-.)\!
 		c2\< c4~
-		c bes4.( aes8-.)
+		c \stemUp bes4.( aes8-.)
 		bes2 bes4~\!
 % mesure 26 à 30
-		bes aes4.( g8-.)
+		bes \stemNeutral aes4.( g8-.)
 		aes2\ff aes4~
 		aes g4.-> f8-.
 		g2.(^^
@@ -57,7 +57,7 @@ musicViolinIMvtII = \relative c {
 	ees ees4. ees8-.
 	ees2.
 	R2.
-	ees'2_\ppmoltocantabile ees4~\<
+	ees'2_\pp-\offset X-offset #2.2 _\moltocantabile ees4~\<
 	ees ees4.( ees8-.)
 % mesure 41 à 45
 	ges2\! fes4~
@@ -74,8 +74,8 @@ musicViolinIMvtII = \relative c {
 % mesure 51 à 55
 	aes2\ff\< aes4~
 	aes bes4.( c8-.)\!
-	bes2.(\f
-	aes4) g8( aes c ees \mark \default
+	\once \stemUp bes2.(\f
+	aes4) g8( aes c ees \markYoffset #4.5  \mark \default
 	aes2)\f aes4~
 % mesure 56 à 60
 	aes aes4.( aes8-.)
@@ -140,7 +140,7 @@ musicViolinIMvtII = \relative c {
 % mesure 106 à 110
 	f g-. aes-.
 	f r r
-	f,2\ff\fermata^\longacorona\> r4\fermata\! \mark \default \break 
+	f,2\ff\fermata-\offset Y-offset #2.2 -\offset X-offset #1 ^\longacoronaCond\> r4\fermata\! \bar ".|:-||" \mark \default 
 	\repeat volta 2 {
 		aes2_\ppdolce( aes4--~
 		aes bes c)
@@ -154,7 +154,7 @@ musicViolinIMvtII = \relative c {
 		R2.*1
 		aes,2(\pp aes4~
 		aes bes c)
-		\tuplet 5/3 {aes\<( des ees f aes)\!}
+		\once \tupletUp \tuplet 5/3 {aes\<( des ees f aes)\!}
 		\tuplet 4/3 {des(\> c bes aes)\!}
 % mesure 121 à 125
 		bes2\> aes4~
@@ -295,7 +295,7 @@ musicViolinIMvtII = \relative c {
 	des
 	des')
 	des2.~\trill
-	des~
+	des~\trill
 	des(\trill
 % mesure 236 à 240
 	\trillAccidental \naturaltrillmark cis)\trill
@@ -354,7 +354,7 @@ musicViolinIMvtII = \relative c {
 % mesure 281 à 285
 	ees2.
 	R2.*1
-	ees'2_\ppmoltocantabile ees4~\<
+	ees'2_\pp-\offset X-offset #2.2 _\moltocantabile ees4~\<
 	ees ees4.( ees8-.)
 	ges2\! fes4~
 % mesure 286 à 290
@@ -371,7 +371,7 @@ musicViolinIMvtII = \relative c {
 	aes2\ff\< aes4~
 % mesure 296 à 300
 	aes bes4.( c8-.)\!
-	bes2.(\f
+	\once \stemUp bes2.(\f
 	aes4) g8( aes c ees
 	aes2)\f aes4~
 	aes aes4.( aes8-.)
@@ -437,5 +437,5 @@ musicViolinIMvtII = \relative c {
 	f g-. aes-.
 % mesure 351 à 355
 	f r r
-	f,2\ff\fermata\>^\sulG r4\fermata\! \break \bar "|."
+	f,2\ff\fermata\>-\offset Y-offset #2 -\offset X-offset #-2 ^\sulG r4\fermata\! \break \bar "|."
 }

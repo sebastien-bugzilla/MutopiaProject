@@ -236,7 +236,7 @@ musicViolinIMvtI = \relative c {
 	aes2 r2
 	R1
 % mesure 191 à 195
-	r2 r4 ees'(_\pdim
+	r2 r4 \whiteoutMarkup ees'(_\pdim
 	g,2. f4)\>
 	ees4.(\! aes8) r4 aes(
 	g2.\pp f4)

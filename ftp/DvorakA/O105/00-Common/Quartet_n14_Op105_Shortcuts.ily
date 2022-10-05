@@ -47,6 +47,8 @@ string = \markup {\italic string.}
 longacorona = \markup {\italic {longa corona}}
 longacoronaCond = \markup {\italic \center-column {\lower #1 "longa" "corona"}}
 marcatomarkup = \markup {\italic marcato}
+risoluto = \markup {\italic risoluto}
+moltocantabile = \markup {\italic {molto cantabile}}
 
 fconforza = \markup {\hspace #0.1 \dynamic f \italic {con forza}}
 fcresc = \markup {\hspace #0.1 \dynamic f \italic {cresc.}}
@@ -148,8 +150,8 @@ setSextolet = {
 	\set subdivideBeams = ##t
 	\set baseMoment = #(ly:make-moment 1/8)
 	\set beatStructure = 2,2,2,2
-	\override TupletNumber.Y-offset = #-3
-	\override TupletNumber.avoid-slur = #'ignore
+	%\override TupletNumber.Y-offset = #-3
+	%\override TupletNumber.avoid-slur = #'ignore
 }
 unsetSextolet = {
 	\set subdivideBeams = ##f
@@ -167,13 +169,13 @@ hairpinShorten = #(define-music-function
 	#}
 )
 
-%tempoXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.MetronomeMark.X-offset = #offset
-%	#}
-%)
+tempoXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.X-offset = #offset
+	#}
+)
 
 %tempoExtraOffset = #(define-music-function
 %	(offset)
@@ -183,13 +185,13 @@ hairpinShorten = #(define-music-function
 %	#}
 %)
 
-%markXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
-%	#}
-%)
+markXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
 
 markYoffset = #(define-music-function
 	(offset)
@@ -251,7 +253,7 @@ tupletOffset = #(define-music-function
 %	#}
 %)
 
-%tempoDown = \once \override Score.MetronomeMark.direction = #-1 
+tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
 %whiteoutRehearsalMark = {
 %	\override Score.StaffSymbol.layer = #4
@@ -261,6 +263,8 @@ tupletOffset = #(define-music-function
 %}
 
 whiteoutMarkup = {
+	\once \override Hairpin.layer = #4
+	\once \override TextScript.layer = #3
 	\once \override TextScript.whiteout = ##t
 	\once \override TextScript.whiteout-style = #'outline
 }

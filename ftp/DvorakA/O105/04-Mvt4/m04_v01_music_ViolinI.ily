@@ -27,14 +27,14 @@ musicViolinIMvtIV = \relative c {
 		aes8-. aes-. aes16( bes c ees)
 		ees( des bes4->) ees8-.
 % mesure 16 à 20
-		<aes, f'>4->\fz ges'->
+		<aes, f'>4->-\offset X-offset #0.5 \fz ges'->
 		<aes, f'>-> ges'->
 		f8-. f16( ees) des8-. c-.
 		bes16 f\< g a bes a bes c\!
 		des4\f( bes16) bes-. c-. ees-.
 % mesure 21 à 25
 		des4( bes16) bes-. c-. ees-.
-		des8-._\scherzando \tuplet 3/2 {des16 c bes} bes8-. \tuplet 3/2 {bes16 g des}
+		des8-.^\scherzando \tuplet 3/2 {des16 c bes} bes8-. \tuplet 3/2 {bes16 g des}
 		c8-. \tuplet 3/2 {c16 f aes} f8-. \tuplet 3/2 {f16 bes des}
 		c16\(( ees) ees( aes)\) \tuplet 5/4 {g16( f ees des bes)}
 	}
@@ -45,12 +45,12 @@ musicViolinIMvtIV = \relative c {
 			c r r4
 			R2*1
 		}{
-			aes8\ff r bes[ r16 bes]
+			\voltaShorten #'(1 . 2) aes8\ff r bes[ r16 bes]
 % mesure 26 à 30
 			aes8 r r4 \mark \default
 		}
 	}
-	bes4(\p g16) g-. aes-. c-.
+	bes4(-\offset X-offset #0.5 \p g16) g-. aes-. c-.
 	bes4( g16) g-. aes-. c-.
 	bes8( c des! ees)
 	f( ees des bes')
@@ -73,18 +73,18 @@ musicViolinIMvtIV = \relative c {
 	
 	r4 g(\p
 	aes8) aes16( bes \stemUp c8 aes) \stemNeutral
-	bes4.\fp( c8)
+	bes4.-\offset X-offset #0.5 \fp( c8)
 % mesure 51 à 55
-	bes4.(\fp c8)
+	bes4.(-\offset X-offset #0.5 \fp c8)
 	bes16\p-. d-. f-. aes-. g-. f-. bes-. f-. 
 	ees4.\fz\>( f8)\!
 	ees4.\fz\<( f8)
-	ees4.(_\fzmarkup f8)
+	\whiteoutMarkup ees4.(-\tweak extra-offset #'(0 . 2) _\fzmarkup f8)
 % mesure 56 à 60
 	ees16( g) aes-. des-. c-.\! bes-. ees-. bes-. \mark \default
 	c(->\f bes) c-. aes-. aes(-> g) aes-. f-.
 	ees(-> c) des-. c-. des(-> c) bes-. ees-.
-	ees8[ r16 e(] f8)[ r16 d(]
+	ees8[ r16 e(] f8)[ r16 des(]
 	c8) bes16-. aes-. bes( aes) g-. ees'-.
 % mesure 61 à 65
 	c'-> bes( c) aes-. aes-> g( aes) f-.
@@ -121,7 +121,7 @@ musicViolinIMvtIV = \relative c {
 	bes~
 	bes4.) g8(
 	ees g \tuplet 3/2 {bes ees f)} \mark \default
-	g2\pp\<~
+	\hairpinShorten #'(0 . -3) g2\pp\<~
 % mesure 91 à 95
 	g\!
 	f(
@@ -145,7 +145,7 @@ musicViolinIMvtIV = \relative c {
 	ees-> d ees d c bes aes g
 	c( bes g ees) g8.(-> f16)
 	c'16( bes g ees) g8.(-> f16)
-	c'(\f bes g ees) ees'\fz->( d ees d
+	c'(\f bes g ees) \beamOffset #'(0.2 . 0.2) ees'-\offset X-offset #0.5 \fz->( d ees d
 % mesure 111 à 115
 	ees bes aes g) g'(->\fz\downbow fis g fis
 	g ees c bes) bes'->\fz(\upbow a bes a
@@ -172,10 +172,10 @@ musicViolinIMvtIV = \relative c {
 	ees( bes! c aes)
 % mesure 131 à 135
 	ees'( bes c aes)
-	b([ fis_\dimmarkup] gis[ e]
+	b([ \whiteoutMarkup fis-\tweak extra-offset #'(0 . 2.2) _\dimmarkup] gis[ e]
 	b'[ fis] gis[ e])
 	b'2\p\<~
-	b_\moltocrescmark
+	\whiteoutMarkup b-\tweak extra-offset #'(0.3 . 3.3) _\moltocrescmark
 % mesure 136 à 140
 	c!~
 	c
@@ -184,12 +184,12 @@ musicViolinIMvtIV = \relative c {
 	<< des {s8\> s s s\!}>>
 % mesure 141 à 145
 	ces4.\p( bes8) \mark \default
-	bes8(_\ppmoltocantabile aes \tuplet 3/2 {bes ces aes)}
+	bes8(_\ppmoltocantabile aes \once \tupletUp \tuplet 3/2 {bes ces aes)}
 	bes( ces) des4~
 	des8 ges( des ces
 	\tuplet 3/2 {bes des ces} bes aes)
 % mesure 146 à 150
-	ges( aes \tuplet 3/2 {bes_\crescmarkup ces aes}
+	ges( aes \once \tupletUp \tuplet 3/2 {bes_\crescmarkup ces aes}
 	bes) bes16-. ces-. des4~
 	des8 des16( ges des8 ces)
 	\tuplet 3/2 {bes( des ces} bes aes)
@@ -222,11 +222,11 @@ musicViolinIMvtIV = \relative c {
 	gis gis a b a gis fis d
 	cis8-. eis16-. gis-. cis8-. gis-.
 	cis-. gis-. cis4
-	d4--( d--)_\crescmarkup
+	d4--( d--)-\offset X-offset #-2 _\crescmarkup
 	d2
 % mesure 176 à 180
 	b4--(\< b--)
-	b4(~ \tuplet 5/4 {b16 gis fis e dis)\!}
+	b4(~ \once \tupletUp \tuplet 5/4 {b16 gis fis e dis)\!}
 	d4--(\! d--)
 	d2
 	b4\(--\< b--\!
@@ -341,7 +341,7 @@ musicViolinIMvtIV = \relative c {
 % mesure 271 à 275
 	des4\f( bes16) bes-. c-. ees-. 
 	des4( bes16) bes-. c-. ees-. 
-	des8-._\scherzando \tuplet 3/2 {des16 c bes} bes8-. \tuplet 3/2 {bes16 g des}
+	des8-.^\scherzando \tuplet 3/2 {des16 c bes} bes8-. \tuplet 3/2 {bes16 g des}
 	c8-. \tuplet 3/2 {c16 f aes} f8-. \tuplet 3/2 {f16 bes des} 
 	c16\(( ees) aes( ees)\) \tuplet 5/4 {g16( f ees des bes)}
 % mesure 276 à 280
@@ -379,9 +379,9 @@ musicViolinIMvtIV = \relative c {
 	bes4.(\fz c8)
 	bes16\p-. d-. f-. aes-. g-. f-. bes-. f-. 
 	ees4.\fz\<^( f8)
-	ees4._\fzmarkup^( f8) 
+	\whiteoutMarkup ees4.-\tweak extra-offset #'(0 . 2) _\fzmarkup( f8) 
 % mesure 306 à 310
-	ees4._\fzmarkup^( f8)\!
+	\whiteoutMarkup ees4.-\tweak extra-offset #'(0 . 1.3) _\fzmarkup( f8)\!
 	ees16\<( g) aes-. des-. c-. bes-. ees-. bes-.\! 
 	c->\f bes c aes aes-> g aes f
 	ees-> c des c des-> c bes ees
@@ -397,10 +397,10 @@ musicViolinIMvtIV = \relative c {
 	f16->\ffz\> ees f ees d ees f g\!
 	ees2->\fz
 	ees\fz->
-	d4(\> des)~\!
+	d4(\> des~\!
 % mesure 321 à 325
 	des2\p~
-	des8 r r4
+	des8) r r4
 	r bes'16\p( ees, bes' ees,)
 	R2*1
 	r4 bes'8(\p ees,)
@@ -448,15 +448,15 @@ musicViolinIMvtIV = \relative c {
 	f->( ees c aes) c8.->( bes16-.)
 % mesure 361 à 365
 	f'->( ees c aes) c8.(-> bes16-.)
-	f'( ees c aes) aes'->\fz\upbow( g aes g
-	aes ees des c) c'->\fz\downbow( b c b
-	c aes f ees) ees'\fz->(\upbow d ees d
+	f'( ees c aes) \whiteoutDynamic aes'->-\tweak extra-offset #'(0 . 1.3) \fz\upbow( g aes g
+	aes ees des c) \whiteoutDynamic c'->-\tweak extra-offset #'(0 . 1.3) \fz\downbow( b c b
+	c aes f ees) \whiteoutDynamic ees'-\tweak extra-offset #'(0 . 1.3) \fz->(\upbow d ees d
 	ees\< d ees d ees d ees d)\!
 % mesure 366 à 370
-	ees8(\ff\downbow aes) bes8.->(\upbow g16-.)
-	ees8( aes) bes8.(->\upbow g16-.)
+	ees8(\ff\downbow aes) bes8._>( g16-.)
+	ees8( aes) bes8.(_> g16-.)
 	aes4\f r16 ees(_\dimmarkup f bes
-	aes4) r16 ees(\upbow\> f bes\!
+	aes4) r16 \shape #'((0 . -1.3)(0 . 1)(0 . 1)(0 . 0)) Slur ees(\upbow\> f bes\!
 	aes8\p ees f c
 % mesure 371 à 375
 	ees4 aes,)
@@ -468,7 +468,7 @@ musicViolinIMvtIV = \relative c {
 	c'8( g a e)
 	g2
 	c8( g a e)
-	<< g2 {s8\< s s s\!} >> \mark \default
+	<< g2 {\hairpinShorten #'(0 . -2) s8\< s s s\!} >> \mark \default 
 	c8\p( g a f
 % mesure 381 à 385
 	c' g a f)
@@ -591,9 +591,9 @@ musicViolinIMvtIV = \relative c {
 	g' ees f aes g ees f des
 	bes' g aes c bes g aes f
 % mesure 481 à 485
-	des'\< a bes g f' c des bes
+	des'-\tweak rotation #'(1 -1 0) \< a bes g \beamOffset #'(0 . 0.5) f' c des bes
 	bes' fis g ees ees' e f! g\!
-	aes4\ff( ees!16) ees-. fes-. bes-. 
+	\whiteoutDynamic aes4-\tweak extra-offset #'(0 . 2.3) \ff( ees!16) ees-. fes-. bes-. 
 	aes4( ees16) ees-. fes-. bes-. 
 	aes8.(-> bes16-.) c8.(-> aes16)-.
 % mesure 486 à 490
@@ -612,7 +612,7 @@ musicViolinIMvtIV = \relative c {
 	R2*3
 	
 	
-	aes8\ff aes16 bes c8 aes
+	\whiteoutDynamic aes8-\tweak extra-offset #'(0 . 1) \ff aes16 bes c8 aes
 	bes4-> c->
 % mesure 501 à 505
 	des-> ees->

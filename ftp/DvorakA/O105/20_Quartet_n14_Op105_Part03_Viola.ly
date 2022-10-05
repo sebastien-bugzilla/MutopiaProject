@@ -134,7 +134,7 @@
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
-					I
+					IV
 				}
 			}
 		}

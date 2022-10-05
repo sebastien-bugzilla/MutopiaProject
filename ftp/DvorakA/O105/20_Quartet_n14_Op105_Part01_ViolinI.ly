@@ -13,13 +13,13 @@
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
 \version "2.22.1"
-%\include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "./00-Common/Quartet_n14_Op105_Header.ily"
 \include "./00-Common/Quartet_n14_Op105_PaperParts.ily"
 \include "./00-Common/Quartet_n14_Op105_timeMvt.ily"
 \include "./00-Common/Quartet_n14_Op105_LayoutParts.ily"
 \include "./00-Common/Quartet_n14_Op105_Shortcuts.ily"
-%\include "./00-Common/Quartet_n14_Op105_Format_Part01_ViolinI.ily"
+\include "./00-Common/Quartet_n14_Op105_Format_Part01_ViolinI.ily"
+%\include "./00-Common/Quartet_n14_Op105_Format_temp.ily"
 \include "./00-Common/Quartet_n14_Op105_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_ViolinI.ily"
 \include "./02-Mvt2/m02_v01_music_ViolinI.ily"
@@ -45,12 +45,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtI
-%			}
-%			\new Voice {
-%				\keepWithTag #'(violinI) \tempiPartMvtI
-%			}
+			\new Voice {
+				\formatViolinIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtI
+			}
 			\new Voice {
 				\timeMvtI \musicViolinIMvtI
 			}
@@ -70,12 +70,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(violinI) \tempiPartMvtII
-%			}
+			\new Voice {
+				\formatViolinIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtII
+			}
 			\new Voice {
 				\timeMvtII \musicViolinIMvtII
 			}
@@ -95,12 +95,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtIII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(violinI) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\formatViolinIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \musicViolinIMvtIII
 			}
@@ -120,12 +120,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtIV
-%			}
-%			\new Voice {
-%				\keepWithTag #'(violinI) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\formatViolinIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \musicViolinIMvtIV
 			}
@@ -135,7 +135,7 @@
 			piece = \markup {
 				\fill-line {
 					\fontsize #5
-					I
+					IV
 				}
 			}
 		}
