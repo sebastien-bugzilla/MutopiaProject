@@ -18,10 +18,10 @@ musicViolinIIMvtII = \relative c {
 		des8( f) r f f,4\fz\<~
 		f aes8-. f-. c4
 		aes'8(\! c) r c c,4\fz
-		c2->\ff c4->~
-		c bes4.->( aes8-.)
+		c2^>\ff c4^>~
+		c bes4.^>( aes8-.)
 % mesure 11 à 15
-		bes2.->(
+		bes2.^>(
 		aes2) r4 \mark \default
 	}
 	\repeat volta 2 {
@@ -30,14 +30,14 @@ musicViolinIIMvtII = \relative c {
 		bes8(\> ees) r ees ees,4->~
 % mesure 16 à 20
 		ees bes'-. g-.\!
-		aes8(\p\> des) r des des,4->~
+		aes8(\p\> des) r des des,4^>~
 		des aes'-. f-.\!
 		ees8(\pp aes) r aes aes,4->~
 		aes ees'(-. c-.)
 % mesure 21 à 25
-		f2(^\sulG\< fis4)
+		\hairpinShorten #'(0 . -3) f2(^\sulG\< fis4)
 		g2.~\!
-		g4 ees(\< e)
+		g4 ees(-\alterBroken shorten-pair #'(()(0 . -3.5)) \< e)
 		f2(~ f8 ees!)
 		des2.~\!
 % mesure 26 à 30
@@ -133,14 +133,14 @@ musicViolinIIMvtII = \relative c {
 	aes'2(\< f4)\!
 % mesure 101 à 105
 	f'8(\f bes) r bes-. bes,4
-	<g, e' c'>_\crescmarkup r r
+	<g, e' c'>-\offset X-offset #1 _\crescmarkup r r
 	q r r
 	q r r
 	c'8(\ff f) r f f,4~
 % mesure 106 à 110
 	f g-. aes-.
 	f r r
-	f2\ff\>\fermata^\longacorona r4\!\fermata \break \mark \default
+	\hairpinShorten #'(0 . -1) f2\ff\>\fermata-\offset Y-offset #2.2 ^\longacoronaCond r4\!\fermata \mark \default \bar ".|:-||"
 	\repeat volta 2 {
 		f4(-.\pp f2--
 		f4-. f2--
@@ -170,7 +170,7 @@ musicViolinIIMvtII = \relative c {
 		aes4-.( aes2--)
 % mesure 131 à 135
 		<ees bes'>4-.\p\>( q2--)
-		<des ees>4-.( q2--)
+		<des ees>4-.( q2--)\!
 		aes2\pp( aes4~
 		aes bes c)
 		des(\<^\sulG ees f\!
@@ -234,7 +234,7 @@ musicViolinIIMvtII = \relative c {
 % mesure 181 à 185
 	aes,2--\p( aes4~\<
 	aes bes c)\!
-	\tuplet 5/3 {aes(\< des ees f aes)}
+	\once \tupletUp \tuplet 5/3 {aes(\< des ees f aes)}
 	\tuplet 4/3 {des( c bes aes)\!}
 	bes2\f( aes4~
 % mesure 186 à 190
@@ -258,8 +258,8 @@ musicViolinIIMvtII = \relative c {
 % mesure 201 à 205
 	des2.\pp\trill
 	des\trill
-	des\fz\trill\>
-	des\trill\>
+	\hairpinShorten #'(0 . 2) des\fz\trill\>
+	\hairpinShorten #'(-1 . 0) des\trill\>
 	des\trill\!
 % mesure 206 à 210
 	des\trill\pp

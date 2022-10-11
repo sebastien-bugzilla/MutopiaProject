@@ -187,7 +187,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 54
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
+		\tempo \markup {
+			\medium \italic "a tempo"
+		}
+	}
+	\tag #'(violinII) {
+		\tempoExtraOffset #'(0 . -0.7)
 		\tempo \markup {
 			\medium \italic "a tempo"
 		}
@@ -205,8 +211,16 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 74
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
 		\tempo "Poco sostenuto e tranquillo."
+	}
+	\tag #'(violinII) {
+		\tempo \markup {
+			\column { 
+				\lower #1.2
+				"Poco sostenuto" "e tranquillo."
+			}
+		}
 	}
 	s1*4
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -230,7 +244,11 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 80
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
+		\tempo "Tempo I."
+	}
+	\tag #'(violinII) {
+		\tempoExtraOffset #'(-0.5 . -0.5)
 		\tempo "Tempo I."
 	}
 	s1*46
@@ -318,9 +336,16 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 175
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
 		\tempo \markup {
 			\medium \italic "poco a poco più tranquillo"
+		}
+	}
+	\tag #'(violinII) {
+		\tempo \markup {
+			\medium \italic \column {
+				\lower #1 "poco a poco" "più tranquillo"
+			}
 		}
 	}
 	s1*3
@@ -442,13 +467,13 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 37
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI) {
+	\tag #'(violinI violinII) {
 		\tempoDown
 		\tempo \markup {
 			\medium \italic "poco a poco più animato"
 		}
 	}
-	\tag #'(violinII viola cello) {
+	\tag #'( viola cello) {
 		\tempo \markup {
 			\medium \italic "poco a poco più animato"
 		}
@@ -493,7 +518,13 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 53
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
+		\tempo \markup {
+			\medium \italic "poco a poco più animato"
+		}
+	}
+	\tag #'(violinII) {
+		\tempoXoffset #2.3 
 		\tempo \markup {
 			\medium \italic "poco a poco più animato"
 		}
@@ -511,14 +542,14 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 84
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI) {
+	\tag #'(violinI violinII) {
 		\tempoDown
 		\tempoXoffset #3 
 		\tempo \markup {
 			\medium \italic "poco a poco più animato"
 		}
 	}
-	\tag #'(violinII viola cello) {
+	\tag #'( viola cello) {
 		\tempo \markup {
 			\medium \italic "poco a poco più animato"
 		}

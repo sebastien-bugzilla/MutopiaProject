@@ -177,13 +177,13 @@ tempoXoffset = #(define-music-function
 	#}
 )
 
-%tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
+tempoExtraOffset = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
 
 markXoffset = #(define-music-function
 	(offset)
@@ -241,9 +241,9 @@ tupletOffset = #(define-music-function
 %	#}
 %)
 
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
 
 %mmrLength = #(define-music-function
 %	(length)
@@ -305,3 +305,5 @@ voltaShorten = #(define-music-function
 		\once \override Score.VoltaBracket.shorten-pair = #shortLength
 	#}
 )
+
+revertScriptPadding = \once \revert Script.staff-padding

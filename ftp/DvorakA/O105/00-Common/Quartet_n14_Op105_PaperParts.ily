@@ -7,6 +7,7 @@
 \paper {
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
+%	indent = 0
 %	left-margin = 10 \mm
 %	annotate-spacing = ##t
 %	top-margin = #2
