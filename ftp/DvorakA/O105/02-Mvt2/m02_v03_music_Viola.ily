@@ -128,7 +128,7 @@ musicViolaMvtII = \relative c {
 % mesure 96 à 100
 	des
 	c8\p c c c\< c c
-	c_\moltocrescmark c c c c c\!
+	c^\moltocrescmark c c c c c\!
 	c c c c c c 
 	c c c c c c 
 % mesure 101 à 105
@@ -140,7 +140,7 @@ musicViolaMvtII = \relative c {
 % mesure 106 à 110
 	f g-. aes-.
 	f r r
-	f'2\ff\>\fermata^\longacorona r4\!\fermata \mark \default \break 
+	\hairpinShorten #'(-0.5 . -1.5) f'2\ff\>\fermata-\offset Y-offset #2.2 -\tweak extra-offset #'(0 . -0.5) ^\longacoronaCond r4\!\fermata \markXoffset #-1 \mark \default \bar ".|:-||" 
 	\repeat volta 2 { 
 		des4-.(\pp des2--
 		des4-. des2--
@@ -271,11 +271,11 @@ musicViolaMvtII = \relative c {
 	aes!4 \tuplet 3/2 4 {des,,8 des des des des des
 	<des beses'> q q q q q q q q} 
 	<des aes'>8 r r4 r
-	<e g!>2._\pdimin~
+	<e g!>2.-\offset X-offset #-1.3 _\pdimin~
 	q2.~
 % mesure 216 à 220
 	q \mark \default
-	<f aes>~\pp
+	\startMeasureCount <f aes>~\pp
 	q~
 	q~
 	q~
@@ -288,7 +288,7 @@ musicViolaMvtII = \relative c {
 % mesure 226 à 230
 	q~
 	q~
-	q
+	q \stopMeasureCount
 	R2.*4
 	
 % mesure 231 à 235
@@ -319,7 +319,7 @@ musicViolaMvtII = \relative c {
 	c aes aes f' e c
 	c aes aes f' e c
 	f,2-> f4->~
-	f e4.-> f8
+	f e4.-\offset X-offset #0.2 -> f8
 	<e g>2.->(
 % mesure 256 à 260
 	f2) r4
@@ -425,7 +425,7 @@ musicViolaMvtII = \relative c {
 	des
 % mesure 341 à 345
 	c8\p c c c\< c c
-	c_\moltocrescmark c c c c c\!
+	c^\moltocrescmark c c c c c\!
 	c c c c c c 
 	c c c c c c 
 	c\f\< c c c c c\!
@@ -437,5 +437,5 @@ musicViolaMvtII = \relative c {
 	f g-. aes-.
 % mesure 351 à 352
 	f r r
-	f'2\ff\>\fermata r4\!\fermata \bar "|."
+	\hairpinShorten #'(-0.5 . -1) f'2\ff\>\fermata r4\!\fermata \bar "|."
 }

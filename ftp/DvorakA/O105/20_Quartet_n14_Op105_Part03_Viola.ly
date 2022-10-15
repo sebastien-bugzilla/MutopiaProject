@@ -18,7 +18,7 @@
 \include "./00-Common/Quartet_n14_Op105_timeMvt.ily"
 \include "./00-Common/Quartet_n14_Op105_LayoutParts.ily"
 \include "./00-Common/Quartet_n14_Op105_Shortcuts.ily"
-%\include "./00-Common/Quartet_n14_Op105_Format_Part02_ViolinII.ily"
+\include "./00-Common/Quartet_n14_Op105_Format_Part03_Viola.ily"
 \include "./00-Common/Quartet_n14_Op105_Tempi.ily"
 \include "./01-Mvt1/m01_v03_music_Viola.ily"
 \include "./02-Mvt2/m02_v03_music_Viola.ily"
@@ -44,12 +44,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtI
-%			}
-%			\new Voice {
-%				\keepWithTag #'(viola) \tempiPartMvtI
-%			}
+			\new Voice {
+				\formatViolaMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtI
+			}
 			\new Voice {
 				\timeMvtI \musicViolaMvtI
 			}
@@ -69,12 +69,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(viola) \tempiPartMvtII
-%			}
+			\new Voice {
+				\formatViolaMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtII
+			}
 			\new Voice {
 				\timeMvtII \musicViolaMvtII
 			}
@@ -94,12 +94,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(viola) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\formatViolaMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \musicViolaMvtIII
 			}
@@ -119,12 +119,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIV
-%			}
-%			\new Voice {
-%				\keepWithTag #'(viola) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\formatViolaMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \musicViolaMvtIV
 			}

@@ -16,8 +16,8 @@ musicViolaMvtI = \relative c {
 % mesure 6 à 10
 	r4 r8 <aes'! d>8.\ff r16 r8
 	R2.*1
-	r4 ces16.(\pp aes32-.) d4.~
-	d4 d,8( ees4.)\<
+	r4 \whiteoutDynamic ces16.(-\tweak extra-offset #'(-1.8 . 1.5) \pp aes32-.) d4.~
+	d4 d,8( \hairpinShorten #'(1 . 0) ees4.)\<
 	fes fes'8( ees! des!)\!
 % mesure 11 à 15
 	c4.\mf ces4\> \tuplet 3/2 {bes16( ces aes)\!}
@@ -26,7 +26,7 @@ musicViolaMvtI = \relative c {
 	bes8(_\moltocrescmark\< des c) bes4.\! \bar "||" \key aes \major \time 4/4
 	ees4(\f c2.)
 % mesure 16 à 20
-	<< <aes c>1 {s4\fz\< s s s\!} >>
+	<< <aes c>1 {\hairpinShorten #'(-0.5 . -1.5) s4\fz\< s s s\!} >>
 	aes2.\>( g4)\!
 	aes8\! r g-.\p r aes-. r r4
 	aes,2->\f aes16( bes g aes ces8. aes16)
@@ -40,9 +40,9 @@ musicViolaMvtI = \relative c {
 % mesure 26 à 30
 	<f, b> q q q q q q q 
 	bes!(-> aes) aes(-. aes-. aes-. aes-. aes-. aes)-. 
-	ges1_\crescmarkup\trill
+	ges1_\crescmarkup-\tweak Y-offset #1 \trill
 	f8[ f] <f aes>[ q] q q q q 
-	<<{f1\trill} \\ {s8 s4 s4 s_\dimmarkup s8}>>
+	<<{f1-\tweak Y-offset #1 \trill} \\ {s8 s4 s4 s_\dimmarkup s8}>>
 % mesure 31 à 35
 	aes8 r f8. g16 aes8 r r4 \mark \default
 	R1*2 \time 3/4
@@ -57,13 +57,13 @@ musicViolaMvtI = \relative c {
 	f8( aes g_\dimmarkup f f4 d)
 % mesure 41 à 45
 	ees8(\< d4 ees8) ees2\!
-	c4(\> cis d aes!)\!
-	ges2\p \tuplet 3/2 4 {e8(\! g e' fis e g,)\!}
-	fis2_\crescmarkup e16\<( g! b e fis e b g\!
+	\hairpinShorten #'(0.7 . 0) c4(\> cis d aes!)\!
+	ges2\p \tuplet 3/2 4 {\once \tupletDown e8(\! g e' fis e g,)\!}
+	fis2-\offset X-offset #-1.5 _\crescmarkup \hairpinShorten #'(0 . 2.5) \shape #'(((0 . 0)(3 . -0.5)(0 . 0)(0 . 3.)) ((0 . 2.5)(0 . 2)(0 . 1)(0 . 1))) Slur e16\<( g! b e fis e b g\!  
 	ges4)\mf r <f! a>_\crescmarkup r
 % mesure 46 à 50
 	\time 3/4 <bes d>8_\piuf r q[ q] <bes ees>[ <bes ees>] \mark \default
-	\time 4/4 <aes f'> r r4 bes8->\f[ r16 bes']-. r4
+	\time 4/4 <aes f'> r r4 bes8->-\offset X-offset #-2.2 \f[ r16 bes']-. r4
 	bes,16\upbow( ces) a-. bes-. ces-. aes-. f-. ees-. d8 r r4
 	R1*4
 	
@@ -74,16 +74,16 @@ musicViolaMvtI = \relative c {
 	ees8) r \tuplet 3/2 {ees-. bes'-. ees,-. } ees_\crescmarkup r \tuplet 3/2 {ees-. bes'-. ees,-.}
 	ees\< r \tuplet 3/2 {ees-. bes'-. ees,-.} ees r \tuplet 3/2 {ees-. bes'-. ees,-.}\!
 % mesure 56 à 60
-	ees8\<[ r16 bes']\!_( <ces) aes'>4\fz r8. bes16_(\< <ces) aes'>4\fz
-	r8. bes16_(\< <ces) aes'>4\fz r8. bes16_(\< <ces) aes'>4\fz
+	ees8\<[ r16 bes']\!_( <ces) aes'>4\fz r8. \hairpinShorten #'(-0.5 . -0.5) bes16_(\< <ces) aes'>4-\offset X-offset #0.5 \fz
+	r8. \hairpinShorten #'(-0.5 . -0.5) bes16_(\< <ces) aes'>4-\offset X-offset #0.5 \fz r8. \hairpinShorten #'(-0.5 . -0.5) bes16_(\< <ces) aes'>4-\offset X-offset #0.5 \fz
 	ees,8\p r \tuplet 3/2 {ees8-. ees'-. bes-.} bes16( ees,) r8 \tuplet 3/2 {ees8-. ees'-. bes-.}
 	bes16( ees,) r8 \tuplet 3/2 {ees8-.\< ees'-. bes-.} ees,8 r \tuplet 3/2 {ees8-. ees'-. bes-.\!} 
 	bes16( ees,) r8 aes4\mf->( g8)_\crescmarkup r aes4->(\<
 % mesure 61 à 65
-	bes8) r bes4(-> ces8) r ces4\!
+	bes8) r bes4(-> \once \stemUp ces8) r \once \stemUp ces4\!
 	\acciaccatura bes8 ees,1\f^^
-	ees8.(_\fconforza f16) \tuplet 3/2 {ges8 f ges} ees8.(-> f16) \tuplet 3/2 {ges8 f ges} \mark \default
-	ees1\f-^
+	ees8.(-\offset X-offset #-1 _\fconforza f16) \tuplet 3/2 {ges8 f ges} ees8.(-> f16) \tuplet 3/2 {ges8 f ges} \mark \default
+	ees1\f^^
 	ees8.(_\fz f16) \tuplet 3/2 {ges8 f ges} ees8.(-> f16) \tuplet 3/2 4 {ges8 f ges
 % mesure 66 à 70
 	g!8( aes) fis g8(\< aes) fis g8( aes) fis} g16( ees') d-. c-.\!
@@ -98,8 +98,8 @@ musicViolaMvtI = \relative c {
 	g2\pp( aes
 	des,1)
 % mesure 76 à 80
-	ees(_\pococresc
-	aes4\< g\! e\> f\!_\dimmarkup)
+	ees(-\offset X-offset #-3 _\pococresc
+	aes4\< g\! e\> f\!-\tweak extra-offset #'(0 . 3.7) _\dimmarkup)
 	c2\pp( des
 	c8) r f8.( g16-.) aes8 r r4 \mark \default
 	c'2\< ces8.( bes16 aes8. ces16)\!
@@ -142,7 +142,7 @@ musicViolaMvtI = \relative c {
 % mesure 111 à 115
 	d,!16( f) r8 d'16\f->-. f-. d-. c-. bes8 r bes'4\fz~
 	bes16 ees bes aes ges8 r bes,16\fz ees bes aes ges8 r
-	bes16( d!) r8 d16\fz f d c! bes!8 r bes'4\fz~ \mark \default
+	bes16( d!) r8 d16\fz f d c! bes!8 r bes'4\fz~ \markYoffset #5.3 \mark \default
 	bes16 ees bes aes ges8 r ees8.\fz des16 ces8 r
 	ces8.\fz bes16 aes8 r gis8.\fz fis16 e!8 r
 % mesure 116 à 120
@@ -153,10 +153,10 @@ musicViolaMvtI = \relative c {
 	ges8\noBeam \clef alto ees,,4.:16\fz\> ees2:\!
 % mesure 121 à 125
 	e8\p r r4 r2
-	R1*3
+	R1*3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	
-	r2 r4 d''(_\ppespressivomoltocantabile
+	r2 r4 \whiteoutMarkup d''(\pp-\tweak extra-offset #'(2 . 1.7) _\espressivomoltocantabileII
 % mesure 126 à 130
 	e,2.)( fis4) 
 	a( g) r d'(
@@ -188,7 +188,7 @@ musicViolaMvtI = \relative c {
 	fes4\< r f\! r \time 3/4
 	g!8 r g_\crescmarkup r bes r \time 4/4
 % mesure 151 à 155
-	ees,8\f-^[ r16 ees'16]-. r4 r2
+	ees,8-\offset X-offset #1 -\tweak extra-offset #'(0 . 0.3) \f^^[ r16 ees'16]-. r4 r2
 	ees16\f\upbow( fes) d-. ees-. fes( des) bes-. aes-. g8 r r4 \mark \default
 	R1*4
 	
@@ -198,11 +198,11 @@ musicViolaMvtI = \relative c {
 	r4 \once \stemUp c\p\>( b bes)\!
 	aes8\pp r \tuplet 3/2 {aes-. ees'-. aes,-.} aes8 r \tuplet 3/2 {aes-. ees'-. aes,-.} 
 	aes8 r \tuplet 3/2 {aes-.\< ees'-. aes,-.} aes8 r \tuplet 3/2 {aes-. ees'-. aes,-.\!} 
-	aes\f\<[ r16 ees'](\! <fes des'>4\fz) r8. ees16(\< <fes des'>4\fz)
+	aes\f\<[ r16 ees'](\! <fes des'>4\fz) r8. \hairpinShorten #'(-0.5 . -0.5) ees16(\< <fes des'>4\fz)
 % mesure 161 à 165
-	r8. ees16(\< <fes des'>4\fz) r8. ees16(\< <fes des'>4\fz)
+	r8. \hairpinShorten #'(-0.5 . -0.5) ees16(\< <fes des'>4\fz) r8. \hairpinShorten #'(-0.5 . -0.5) ees16(\< <fes des'>4\fz)
 	ees8\p r \tuplet 3/2 {aes,8-. aes'-. ees-.} ees16( aes,) r8 \tuplet 3/2 {aes-. aes'-. ees-.}
-	ees16(\< aes,) r8 \tuplet 3/2 {aes-. aes'-. ees-.} ees16( aes,) r8 \tuplet 3/2 {aes-. aes'-. ees-.\!}
+	ees16(\< aes,) r8 \tupletUp \tuplet 3/2 {aes-. aes'-. ees-.} ees16( aes,) r8 \tuplet 3/2 {aes-. aes'-. ees-.\!} \tupletNeutral
 	ees16(\fz aes,) r8 des4(-> c8) r des4->(
 	ees8) r ees4->( fes8_\crescmarkup) r fes4 
 % mesure 166 à 170
@@ -227,7 +227,7 @@ musicViolaMvtI = \relative c {
 	des2)\! r2
 	R1*2
 	
-	f,1->\mp(\>
+	\hairpinShorten #'(-0.5 . -0.5) f,1->\mp(\>
 	aes2)\p r \mark \default
 % mesure 186 à 190
 	R1*2

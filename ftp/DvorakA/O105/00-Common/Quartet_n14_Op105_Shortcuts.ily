@@ -45,7 +45,7 @@ sempredim = \markup {\italic {sempre dim.}}
 sulD = \markup {sul D.}
 string = \markup {\italic string.}
 longacorona = \markup {\italic {longa corona}}
-longacoronaCond = \markup {\italic \center-column {\lower #1 "longa" "corona"}}
+longacoronaCond = \markup {\italic \center-column {\lower #1.5 "longa" "corona"}}
 marcatomarkup = \markup {\italic marcato}
 risoluto = \markup {\italic risoluto}
 moltocantabile = \markup {\italic {molto cantabile}}
@@ -77,6 +77,13 @@ ppocosostenuto = \markup {\hspace #-0.1 \dynamic p \italic {poco sostenuto}}
 ppcantabile = \markup {\hspace #-0.8 \dynamic pp \italic cantabile}
 ppdolce = \markup {\hspace #-0.8 \dynamic pp \italic dolce}
 ppespressivomoltocantabile = \markup {\hspace #-0.8 \dynamic pp \italic {espressivo e molto cantabile}}
+espressivomoltocantabileII = \markup {
+	\italic { 
+		\center-column {
+			\lower #1.5 "espressivo e" "molto cantabile"
+		}
+	}
+}
 pplegato = \markup {\hspace #-0.8 \dynamic pp \italic legato}
 ppleggiero = \markup {\hspace #-0.8 \dynamic pp \italic leggiero}
 ppmoltocantabile = \markup {\hspace #-0.8 \dynamic pp \italic {molto cantabile}}

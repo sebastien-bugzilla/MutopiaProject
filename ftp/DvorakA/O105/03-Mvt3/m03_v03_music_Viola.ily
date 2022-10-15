@@ -26,23 +26,23 @@ musicViolaMvtIII = \relative c {
 	a4(\< d,) a'4.\! a8
 	g8.( e16 a2)\f f8( c')
 % mesure 16 à 20
-	a4( d_\dimmarkup c)\p r \mark \default
+	a4( d-\offset X-offset #-1 _\dimmarkup c)\p r \mark \default
 	c,2\pp~ c8 c4 c8
 	c2.-> c4~
 	c\< bes4.( a16 g f8 e)\!
-	<< { dis4-> e2. } {s4\fz s\> s s\!} >>
+	<< { dis4^> e2. } {s4\fz s\> s s\!} >>
 % mesure 21 à 25
-	f2\!_\ppocoapococresc( a)
-	f4(\< f'8 e16 d)\! bes4.\mf( bes8--)
+	f2\!\p^\pocoapococresc( a)
+	\hairpinShorten #'(0 . 0.5) f4(\< f'8 e16 d)\! bes4.\mf( bes8--)
 	c4~(\< c16 bes c d) a8( \once \stemUp c4) a'8\!
-	g8\< g4 g_\crescmarkup g8(\noBeam e c)\!
+	g8\< g4 g-\tweak extra-offset #'(0 . 2.5) _\crescmarkup g8(\noBeam e c)\!
 	ees16_\fcresc ees8 ees ees ees16~ ees ees8 ees16~ ees8\ff c16( f)
 % mesure 26 à 30
 	f4( d2) e!8.( bes'16)
-	a4( f8.)_\dimD\> d16 f8( a, d_\pmarkup c16 bes)\!
-	bes2\p_\dimmarkup( a4)\pp r \mark \default
+	a4( f8.)_\dimD\> d16 f8( a, \whiteoutMarkup d-\tweak extra-offset #'(-1.5 . 2.5) _\pmarkup c16 bes)\!
+	bes2-\offset X-offset #-1 \p-\offset X-offset #0.5 _\dimmarkup( a4)\pp r \mark \default
 	e'_\tranquillo( c8 d e f a g)
-	fis4(\< dis << e2) {s4\> s\!} >>
+	\hairpinShorten #'(0 . 2) fis4(\< dis << e2) {\hairpinShorten #'(-2 . -2) s4\> s\!} >>
 % mesure 31 à 35
 	e4\pp( c8 d! e f!) g16( bes a g)
 	c2~\< c8(\> b bes e,)\!
@@ -83,7 +83,7 @@ musicViolaMvtIII = \relative c {
 	<g bes!>\ff q q q q q <e! c'> q q <c bes'> q q 
 	q q q q q q q q q e e e} \mark \default
 	e1
-	e8\<_\pocoapocodim( f fis g)\! aes4( g8 f!)
+	e8\<^\pocoapocodim( f fis g)\! aes4( g8 f!)
 	e4( g8 fis e4.\> fis16 g)
 % mesure 66 à 70
 	g4.-( fis8 e4. fis16 g)\!
@@ -106,7 +106,7 @@ musicViolaMvtIII = \relative c {
 % mesure 81 à 85
 	f8\p e32( f) f-. f-. f8 e32( f) f-. f-. a2
 	f4(_\crescmarkup f'8 e16 d) bes4.( bes8)--
-	c4~ \tuplet 6/4 {c16(\< bes a bes c d)} a8( c4) a'32(\! gis bes! a)
+	c4^~ \tuplet 6/4 {c16(\< bes a bes c d)} a8( c4) a'32(\! gis bes! a)
 	g!16\mf g8 g g g16~ g g8 g16 e8( c)
 	ees16\<[ ees32 ees] ees ees ees ees ees16[ ees32 ees] ees ees ees ees ees16[ ees32 ees] ees ees ees ees\! ees8\ff c16( f)
 % mesure 86 à 90
