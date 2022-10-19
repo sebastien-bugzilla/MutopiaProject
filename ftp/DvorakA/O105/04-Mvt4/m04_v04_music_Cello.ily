@@ -13,7 +13,7 @@ musicCelloMvtIV = \relative c {
 		e4-- r16 c-. des-. f-. 
 		e4( c16)\< c-. e-. g-.\!
 		fis2\fp\>^>~
-		fis~\!_\dimmarkup
+		fis~_\dimD
 % mesure 6 à 10
 		fis~
 		fis~\pp
@@ -45,7 +45,7 @@ musicCelloMvtIV = \relative c {
 			c r c,4\>\fz~(
 			c4.^\dimmarkup d8)\!
 		}{
-			aes''8\ff r ees[ r16 ees]
+			\voltaShorten #'(1 . 2) aes''8\ff r ees[ r16 ees]
 % mesure 26 à 30
 			aes,8 r r4 \mark \default
 		}
@@ -83,7 +83,7 @@ musicCelloMvtIV = \relative c {
 	f(\p bes, ees) r
 	bes'(\fz aes g) r
 	bes(\fz\< aes g) r
-	bes(_\fzmarkup aes g) r
+	\whiteoutMarkup bes(-\tweak extra-offset #'(0 . 2) _\fzmarkup aes g) r
 % mesure 56 à 60
 	g( f ees)\! r \mark \default
 	aes\f r des, r
@@ -93,7 +93,7 @@ musicCelloMvtIV = \relative c {
 % mesure 61 à 65
 	aes8[ r16 aes] f'8[ r16 f]
 	d8[ r16 d] g8[ r16 g]
-	<c,, c'>16\ff-^ g' <c, c'>-^ g' <c, c'>-^ g' <c, c'>-^ g' 
+	<c,, c'>16\ff^^ g' <c, c'>^^ g' <c, c'>^^ g' <c, c'>^^ g' 
 	<c, c'>2-^
 	<c c'>16-^ g' <c, c'>-^ g' <c, c'>-^ g' <c, c'>-^ g' 
 % mesure 66 à 70
@@ -121,7 +121,7 @@ musicCelloMvtIV = \relative c {
 	bes( aes
 	ees2)
 % mesure 86 à 90
-	ees8-.(_\dimmarkup ees-. ees-. ees-.)
+	ees8-.(-\offset X-offset #-1 _\dimmarkup ees-. ees-. ees-.)
 	ees(-. ees-. ees-. ees-.)
 	ees(-. ees-. ees-. ees-.)
 	ees r r4 \mark \default
@@ -179,7 +179,7 @@ musicCelloMvtIV = \relative c {
 	dis,( e_\dimmarkup
 	dis e)
 	dis2\p\<~
-	dis_\moltocrescmark
+	\textInSlur dis-\offset X-offset #0.4 _\moltocrescmark
 % mesure 136 à 140
 	d~
 	d\!
@@ -249,12 +249,12 @@ musicCelloMvtIV = \relative c {
 % mesure 191 à 195
 	ces4.\fz bes16 ces
 	aes4.\fz\< bes16 ces\!
-	des4.\fz\< c!16 des\!
+	des4.-\offset X-offset #0.5 \fz\< c!16 des\!
 	bes4.\ff c16 des
 	ees8-.\fz ees-. ees4->
 % mesure 196 à 200
 	bes4. c16 des
-	ees8-.\fz ees-. ees4~
+	\whiteoutDynamic ees8-.-\tweak extra-offset #'(-1.5 . 1) \fz ees-. ees4~
 	ees8 d d4->~
 	d8 des des4->~
 	des8 c!4-> ces8-.
@@ -266,7 +266,7 @@ musicCelloMvtIV = \relative c {
 	d'4--\pp r16 bes-. ces-. ees!-.
 % mesure 206 à 210
 	d4-- r16 bes-. ces-. ees-.
-	d8(\< bes \clef tenor bes'4~
+	\shape #'((0 . -0.8)(0 . -0.6)(0 . 0)(0 . 0)) Slur d8(\< bes \clef tenor \shape #'((0 . -0.2)(0 . -0.3)(0 . -0.3)(0 . -0.2)) Tie bes'4~
 	bes8[ g)] f( c)\! \clef bass
 	ees g,16( c) bes8-. bes-. \mark \default
 	ees,\f-. r r4
@@ -316,7 +316,7 @@ musicCelloMvtIV = \relative c {
 	gis~\mf
 	gis
 	a(
-	bes!_\sempredim)
+	bes!-\offset X-offset #-7 _\sempredim)
 	b(
 % mesure 251 à 255
 	c)~
@@ -383,9 +383,9 @@ musicCelloMvtIV = \relative c {
 	f8\fp( ees d) r 
 	f8\p( bes, ees) r
 	bes'\fz\<( aes g) r
-	bes_\fzmarkup( aes g) r
+	\whiteoutMarkup bes-\tweak extra-offset #'(0 . 2.1) _\fzmarkup( aes g) r
 % mesure 306 à 310
-	bes_\fzmarkup( aes g)\! r
+	\whiteoutMarkup bes-\tweak extra-offset #'(0 . 2.3) _\fzmarkup( aes g)\! r
 	g( f ees) r
 	aes\f r des, r
 	ees r ees r
@@ -394,14 +394,14 @@ musicCelloMvtIV = \relative c {
 	ees r ees r
 	aes8\ff[ r16 aes] f'8[ r16 f]
 	d8[ r16 d] g8[ r16 g] \mark \default
-	<c,, c'>16\ff-^ g' <c, c'>-^ g' <c, c'>-^ g' <c, c'>-^ g' 
+	<c,, c'>16\ff^^ g' <c, c'>^^ g' <c, c'>^^ g' <c, c'>^^ g' 
 	<c, c'>2-^
 % mesure 316 à 320
 	<c c'>16-^ g' <c, c'>-^ g' <c, c'>-^ g' <c, c'>-^ g' 
 	<c, c'>2-^
 	c'16->-.\fz g-. c->-. g-. c->-. g-. c->-. g-. 
 	ces\fz-. ges-. ces-. ges-. ces-. ges-. ces-. ges-.
-	bes-.\fz\> f-. bes-._\dimmarkup f-. a-. e-. a-. e-.\!
+	bes-.-\tweak extra-offset #'(0 . 0.3) \fz\> f-. bes-.^\dimmarkup f-. a-. e-. a-. e-.\!
 % mesure 321 à 325
 	bes'(\p ees,! bes' ees, bes' ees, bes' ees,
 	bes' ees, bes' ees,) r4
@@ -433,10 +433,10 @@ musicCelloMvtIV = \relative c {
 	g8.(\< f16 ees4)
 	aes2\!
 % mesure 346 à 350
-	r4 r8 ees\p(\<
+	\clef tenor r4 r8 ees\p(\<
 	aes c ees aes)\!
 	g8.\mf( f16 ees4)\<
-	aes2\!
+	aes2\! \clef bass
 	R2*2
 % mesure 351 à 355
 	\mark \default
@@ -554,7 +554,7 @@ musicCelloMvtIV = \relative c {
 	a8\fz-. a-. a4->
 % mesure 446 à 450
 	aes!2\>
-	g8_\fzmarkup g g4\! \mark \default
+	\whiteoutMarkup g8-\tweak extra-offset #'(0 . 1.2) _\fzmarkup g g4\! \mark \default
 	ees8\p-.( ees-. ees4--)
 	ees8-.( ees-. ees4--)
 	ees8-.( ees-. ees4--)
@@ -567,7 +567,7 @@ musicCelloMvtIV = \relative c {
 % mesure 456 à 460
 	des'4-- r16 a_\crescmarkup-. bes-. ees-.
 	des4-- r16 a-. bes-. ees-.
-	des8\<-. a-. bes-. ees-.
+	\hairpinShorten #'(0 . 2) des8\<-. a-. bes-. ees-.
 	des-. bes-. g-. ees-.\!
 	aes16\f aes' aes aes aes8( f)
 % mesure 461 à 465
@@ -625,7 +625,7 @@ musicCelloMvtIV = \relative c {
 	bes-. ges-. ees-. ees'-.
 	bes-. ges-. ees-. ees'-.
 % mesure 506 à 510
-	aes,4->_\fmarcato aes'-^
+	aes,4^>_\fmarcato aes'-^
 	<aes c>2-^\downbow
 	<g c>2-^\downbow
 	<f des'>-^\downbow

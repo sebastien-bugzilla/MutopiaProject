@@ -18,10 +18,10 @@ musicCelloMvtII = \relative c {
 		bes r f\<
 		f r c
 		f\! r c
-		f,2->\ff f4~->
-		f f4.->~ f8-.
+		f,2^>\ff f4~^>
+		f f4.^>~ f8-.
 % mesure 11 à 15
-		<c c'>2.->(
+		<c c'>2.^>(
 		f2) r4 \mark \default
 	}
 	\repeat volta 2 {
@@ -117,17 +117,17 @@ musicCelloMvtII = \relative c {
 	f r c
 	c8(\f f) r f f,4->~
 	f g-. aes-.
-	ges2.\fz\>~
+	\startMeasureCount ges2.\fz\>~
 	ges~
 % mesure 91 à 95
 	ges~
 	ges~\!
 	ges~\p\>
 	ges~\!
-	ges(\pp
+	ges(\pp \stopMeasureCount
 % mesure 96 à 100
 	f)
-	e4\p\< r r
+	e4-\tweak extra-offset #'(0.5 . 0.7) \p-\tweak extra-offset #'(0 . 0.7) \< r r
 	f r aes
 	e r r
 	f r aes\!
@@ -140,14 +140,14 @@ musicCelloMvtII = \relative c {
 % mesure 106 à 110
 	f g-. aes-.
 	f r r
-	f''2\fermata\ff\>^\longacorona r4\fermata\! \mark \default \break
+	f''2\fermata\ff\>-\offset X-offset #2.3 ^\longacoronaCond r4\fermata\! \mark \default \bar ".|:-||"
 	\repeat volta 2 {
 		R2.*4
 	
 % mesure 111 à 115
 	
 	
-		c,2(\p\< ees4~
+		\shape #'((0 . 1)(0 . 1)(0 . 1)(0 . 0)) Slur c,2(\p\< ees4~
 		ees f ges)\!
 		bes2.\>(
 % mesure 116 à 120
@@ -157,7 +157,7 @@ musicCelloMvtII = \relative c {
 	
 	
 % mesure 121 à 125
-		c2\p\<( ees4~
+		\shape #'((0 . 1)(0 . 1)(0 . 1)(0 . 0)) Slur c2\p\<( ees4~
 		ees f ges)
 		des'( c) bes-.
 		bes( aes)\! ges
@@ -171,12 +171,12 @@ musicCelloMvtII = \relative c {
 % mesure 131 à 135
 		ges,4.(\p\> des
 		bes ges)\!
-		aes4_\pplegato( des) aes(
-		des) aes( des)
+		aes4_\pplegato( \once \stemUp des) aes(
+		\once \stemUp des) aes( \once \stemUp des)
 		aes2 aes4~
 % mesure 136 à 140
 		aes aes2
-		des,\pp des4~
+		des,-\offset X-offset #-2.3 \pp des4~
 		des des2
 		des2.~
 		des\fermata \mark \default
@@ -214,7 +214,7 @@ musicCelloMvtII = \relative c {
 		d4--(\< d2--
 % mesure 166 à 170
 		d4-- d2--)\!
-		des!4--(\f\> des2--)\!
+		\hairpinShorten #'(0 . -2) des!4--(\f\> des2--)\!
 		beses4--(\p beses2--)
 		aes4--( aes2--)-\tweak #'X-offset #-1 _\dimmarkup
 		aes4(--\pp aes2--)
@@ -227,7 +227,7 @@ musicCelloMvtII = \relative c {
 	des,2 r4
 % mesure 176 à 180
 	R2.
-	c'2\p(\< ees4~
+	\shape #'((0 . 1)(0 . 1)(0 . 1)(0 . 0)) Slur c'2\p(\< ees4~
 	ees f ges)\!
 	bes2.(\>
 	aes2 ges4)\!
@@ -236,7 +236,7 @@ musicCelloMvtII = \relative c {
 	des2.)
 	des,2 r4
 	R2.*1
-	c2\f(\< ees4~
+	c2-\offset X-offset #-1.5 \f(\< ees4~
 % mesure 186 à 190
 	ees f ges)\!
 	\once \stemUp des'( c bes)
@@ -275,7 +275,7 @@ musicCelloMvtII = \relative c {
 	des des des des des des des des des 
 % mesure 216 à 220
 	des des des des des des des des des} \mark \default
-	<des aes'>2.~\pp
+	\startMeasureCount <des aes'>2.~\pp
 	q~
 	q~
 	q~
@@ -288,7 +288,7 @@ musicCelloMvtII = \relative c {
 % mesure 226 à 230
 	q~
 	q~
-	q
+	q \stopMeasureCount 
 	R2.*4
 	
 % mesure 231 à 235
@@ -322,7 +322,7 @@ musicCelloMvtII = \relative c {
 	c'( c,)] c-.[ c-. c'( c,)]
 	c-. c-. c'( c,) c-. c-.
 % mesure 256 à 260
-	f c f c f r
+	f c f c f\noBeam r
 	f4\mf^\pizz c' f
 	aes c r
 	ees,,\> bes' ees
@@ -414,17 +414,17 @@ musicCelloMvtII = \relative c {
 % mesure 331 à 335
 	c8(\f f) r f f,4->~
 	f g-. aes-.
-	ges2.\fz\>~
+	\startMeasureCount ges2.\fz\>~
 	ges~
 	ges~
 % mesure 336 à 340
 	ges~\!
 	ges~\p\>
 	ges~\!
-	ges(\pp
+	ges(\pp \stopMeasureCount
 	f)
 % mesure 341 à 345
-	e4\p\< r r
+	e4-\tweak extra-offset #'(0.5 . 0.5) \p\< r r
 	f r aes
 	e r r
 	f r aes\!

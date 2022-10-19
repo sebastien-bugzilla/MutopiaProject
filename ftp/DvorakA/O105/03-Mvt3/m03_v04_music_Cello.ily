@@ -21,7 +21,7 @@ musicCelloMvtIII = \relative c {
 	e4( c2) d8( dis)
 % mesure 11 à 15
 	e4( d!8 c16 d) e4( a8 g)
-	<<{f1} \\ {s4\< s\! s\> s\!}>>
+	<<{f1} \\ {\hairpinShorten #'(-0.5 . -0.4) s4\< s\! \hairpinShorten #'(-0.4 . -0.5) s\> s\!}>>
 	f2\pp( e4 d)
 	b2\< f'4.(\! d8)
 	e8(\< a,16 a') g8(\f fis) f4( d8 dis)
@@ -30,19 +30,19 @@ musicCelloMvtIII = \relative c {
 	bes,!2(\pp a4 g)
 	fis(-> g a8 bes c bes)
 	bes4(\< g) c,( g)\!
-	fis->\fz( g\> a8 bes c bes)\!
+	fis^>\fz( g\> a8 bes c bes)\!
 % mesure 21 à 25
 	a4_\ppocoapococresc~( a16 g a bes) c8( a f' c)
 	d4.(\< c16 bes)\! g4.\mf( g8--)
 	a4\<(~ a16 g a bes) c8( f a f)\!
-	f4\<( e8 d f_\crescmarkup e) c'8.( bes16)\!
+	f4\<( \beamOffset #'(-0.5 . -0.5) e8 d f-\tweak extra-offset #'(0 . 2.7) _\crescmarkup e) c'8.( bes16)\!
 	a4~(_\fcresc a16 g f g) a4 c8(\ff f,)
 % mesure 26 à 30
 	bes2. c8( cis
-	d4) g,(_\dimmarkup c!8) c,4\> c8\!_\pmarkup
+	d4) g,(_\dimmarkup c!8) c,4-\tweak outside-staff-padding #-1 \> \whiteoutMarkup c8\!-\tweak extra-offset #'(0 . 2.2) _\pmarkup
 	c(\p cis d_\dimmarkup ees16 e f4\pp) r \mark \default
-	c'1_\tranquillo
-	<<{c} \\ {s4\< s\! s\> s\!}>>
+	c'1-\offset X-offset #-3 _\tranquillo
+	<<{c} \\ {\hairpinShorten #'(-0.5 . -0.4) s4\< s\! \hairpinShorten #'(-0.4 . -0.5) s\> s\!}>>
 % mesure 31 à 35
 	c1\pp
 	e4(\< dis)\! e4.(\> c8)\!
@@ -57,7 +57,7 @@ musicCelloMvtIII = \relative c {
 	e8\p\>( ees d! des16 c f4)\pp r
 % mesure 41 à 45
 	c''8(\> cis d dis16 e f4)\! r
-	<<{c,8(\pp b bes g)} \\ {c,2}>> r4 r8 c'8--
+	<<{c,8(-\offset X-offset #1.5 \pp b bes g)} \\ {c,2}>> r4 r8 c'8--
 	R1 \mark \default 
 	\tuplet 3/2 4 {f,8-.\pp( f-. f-. f-. f-. f-. f-. f-. f-. f-. f-. f-.)
 	f-.(\< f-. f-. f-. f-. f-. f-. f-. f-. f-. f-. f-.)\!
@@ -72,9 +72,9 @@ musicCelloMvtIII = \relative c {
 	aes8 r r4 r2
 	<< aes1 {s4\pp\< s s s\!} >>
 	<< des,1 {s4\f\> s s s\!} >>
-	<< aes'1 {s4\pp\< s s s\!} >>
+	<< aes'1 {\hairpinShorten #'(-0.5 . -1) s4\pp\< s s s\!} >>
 % mesure 56 à 60
-	<< <des, aes'>1 {s4\f\> s s s\!} >>
+	<< <des, aes'>1 {\hairpinShorten #'(-0.5 . -1) s4\f\> s s s\!} >>
 	aes'4(\< aes') ges2\!
 	f1
 	e!2_\fmoltoappassionato( d!)
@@ -82,13 +82,13 @@ musicCelloMvtIII = \relative c {
 % mesure 61 à 65
 	c4\ff( c,2.)~
 	c1 \mark \default
-	\tuplet 3/2 4 {c8-> c-> c-> c8-> c-> c-> c8-> c-> c-> c8-> c-> c-> 
+	\tuplet 3/2 4 {c8^> c^> c^> c8^> c^> c^> c8^> c^> c^> c8^> c^> c^> 
 	c'8_\pocoapocodim c c c8 c c c8 c c c8 c c } 
 	c4( bes a\> bes)
 % mesure 66 à 70
 	c( bes a bes)\!
 	c1\p\>_(
-	<< { \voiceTwo c,_\dimD) } \new Voice {\voiceOne r2 bes'4( g)\pp} >> \oneVoice
+	<< { \voiceTwo c,_\dimD) } \new Voice {\voiceOne r2 bes'4_( g)\pp} >> \oneVoice
 	f8^\pizz[ c'] a'[ f] f,[ f'] c'[ a]
 	e, e' c e e, e' c e
 % mesure 71 à 75
@@ -111,7 +111,7 @@ musicCelloMvtIII = \relative c {
 	a8\<( f) a16( g f g) a4\! c8(\ff f,)
 % mesure 86 à 90
 	bes4( g) <g, bes'> c8( cis)
-	\once \stemUp d4( g,) c8( c,) c4_\dimmarkup
+	\once \stemUp d4( g,) c8( c,) c4-\offset X-offset #-0.5 _\dimmarkup
 	c2\>( f4\p) r \clef tenor \mark \default
 	f''8\p(\< e16 f) g( f e f) c'( a g f)\! f( e d e)
 	e(\>[ dis32 e] dis[ e a16~] a8. g16\! f4)\p r

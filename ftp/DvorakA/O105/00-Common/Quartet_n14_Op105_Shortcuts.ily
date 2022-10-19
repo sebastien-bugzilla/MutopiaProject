@@ -4,6 +4,7 @@
 %###############################################################################
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
+accel = \markup {\italic accel.}
 animato = \markup {\italic animato}
 appassionato = \markup {\italic appassionato}
 arco = \markup {\italic arco}
@@ -12,43 +13,42 @@ cantabile = \markup {\italic {cantabile}}
 crescmarkup = \markup {\italic cresc.}
 dimmarkup = \markup {\italic dim.}
 dolcepococresc = \markup {\italic {dolce poco cresc.}}
-intempo = \markup {\italic {in tempo}}
-intempopocoapocopiuanimato = \markup {\italic {in tempo poco a poco più animato}}
-moltocrescmark = \markup {\italic {molto cresc.}}
-pesante = \markup {\italic pesante}
-pizz = \markup {\italic pizz.}
-pocoapocopiuanimato = \markup {\italic {poco a poco più animato}}
-pocoapocopiutranquillo = \markup {\italic {poco a poco più tranquillo}}
-pococresc = \markup {\italic {poco cresc.}}
-pocosostenutoetranquillo = \markup {\italic {poco sostenuto e tranquillo}}
-pocotranquillo = \markup {\italic {poco tranquillo}}
-rit = \markup {\italic rit.}
-sulG = \markup {sul G.}
+espressivomarkup = \markup {\italic {espressivo}}
 espress = \markup {\italic {espress.}}
 fine = \markup {\italic Fine}
-pocoapococresc = \markup {\italic {poco a poco cresc.}}
-ritard = \markup {\italic ritard}
-segue = \markup {\italic segue}
+intempo = \markup {\italic {in tempo}}
+intempopocoapocopiuanimato = \markup {\italic {in tempo poco a poco più animato}}
+longacoronaCond = \markup {\italic \center-column {\lower #1.5 "longa" "corona"}}
+longacorona = \markup {\italic {longa corona}}
+marcatomarkup = \markup {\italic marcato}
 moltoappassionato = \markup {\italic {molto appassionato}}
-moltorit = \markup {\italic {molto rit.}}
-pocoapocodim = \markup {\italic {poco a poco dim.}}
-pocoapocoritmarkup = \markup {\italic {poco a poco rit.}}
-scherzando = \markup {\italic scherzando}
-tranquillo = \markup {\italic tranquillo}
-accel = \markup {\italic accel.}
-espressivomarkup = \markup {\italic {espressivo}}
+moltocantabile = \markup {\italic {molto cantabile}}
+moltocrescmark = \markup {\italic {molto cresc.}}
 moltoespressivo = \markup {\italic {molto espressivo}}
+moltorit = \markup {\italic {molto rit.}}
+pesante = \markup {\italic pesante}
+pizz = \markup {\italic pizz.}
+pocoapococresc = \markup {\italic {poco a poco cresc.}}
+pocoapocodim = \markup {\italic {poco a poco dim.}}
+pocoapocopiuanimato = \markup {\italic {poco a poco più animato}}
+pocoapocopiutranquillo = \markup {\italic {poco a poco più tranquillo}}
+pocoapocoritmarkup = \markup {\italic {poco a poco rit.}}
+pococresc = \markup {\italic {poco cresc.}}
 pocorit = \markup {\italic {poco rit.}}
+pocosostenutoetranquillo = \markup {\italic {poco sostenuto e tranquillo}}
 pocosostenuto = \markup {\italic {poco sostenuto}}
+pocotranquillo = \markup {\italic {poco tranquillo}}
+risoluto = \markup {\italic risoluto}
+ritard = \markup {\italic ritard}
+rit = \markup {\italic rit.}
+scherzando = \markup {\italic scherzando}
+segue = \markup {\italic segue}
 semplicecresc = \markup {\italic {semplice cresc.}}
 sempredim = \markup {\italic {sempre dim.}}
-sulD = \markup {sul D.}
 string = \markup {\italic string.}
-longacorona = \markup {\italic {longa corona}}
-longacoronaCond = \markup {\italic \center-column {\lower #1.5 "longa" "corona"}}
-marcatomarkup = \markup {\italic marcato}
-risoluto = \markup {\italic risoluto}
-moltocantabile = \markup {\italic {molto cantabile}}
+sulD = \markup {sul D.}
+sulG = \markup {sul G.}
+tranquillo = \markup {\italic tranquillo}
 
 fconforza = \markup {\hspace #0.1 \dynamic f \italic {con forza}}
 fcresc = \markup {\hspace #0.1 \dynamic f \italic {cresc.}}
@@ -76,7 +76,10 @@ ppocoapococresc = \markup {\hspace #-0.1 \dynamic p \italic {poco a poco cresc.}
 ppocosostenuto = \markup {\hspace #-0.1 \dynamic p \italic {poco sostenuto}}
 ppcantabile = \markup {\hspace #-0.8 \dynamic pp \italic cantabile}
 ppdolce = \markup {\hspace #-0.8 \dynamic pp \italic dolce}
-ppespressivomoltocantabile = \markup {\hspace #-0.8 \dynamic pp \italic {espressivo e molto cantabile}}
+ppespressivomoltocantabile = \markup {
+	\hspace #-0.8 \dynamic pp 
+	\italic {espressivo e molto cantabile}
+}
 espressivomoltocantabileII = \markup {
 	\italic { 
 		\center-column {
@@ -97,23 +100,13 @@ esprppp = \markup {
 }
 
 
-%pocoapococresc = #(make-music 'CrescendoEvent
-%             'span-direction START
-%             'span-type 'text
-%             'span-text "poco a poco cresc.")
 ffz = #(make-dynamic-script "ffz")
-dimD = \tweak DynamicText.self-alignment-X #-0.71 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
+dimD = \tweak DynamicText.self-alignment-X #-0.71 #(
+	make-dynamic-script (
+		markup #:normal-text #:italic "dim."
+	)
+)
 
-%flattrillmark = \markup { 
-%	\hspace #1.1
-%	\concat { 
-%		\general-align #Y #CENTER {
-%			\musicglyph #"scripts.trill" 
-%			\hspace #0.45
-%			\teeny \flat 
-%		}
-%	}
-%}
 
 naturaltrillmark = \markup {
 	\concat {
@@ -146,12 +139,6 @@ trillAccidental = #(define-music-function
 		\once \override Script.text = #accidental
 	#}
 )
-
-%fine = {
-%	\once \override Score.RehearsalMark.self-alignment-X = #1 
-%	\once \override Score.RehearsalMark.font-size = #0
-%	\mark \markup {"Fine"}
-%}
 
 setSextolet = {
 	\set subdivideBeams = ##t
@@ -232,42 +219,11 @@ tupletOffset = #(define-music-function
 	#}
 )
 
-%tupletExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TupletNumber.extra-offset = #offset 
-%	#}
-%)
-
-%trillSpanPadding = #(define-music-function
-%	(padding)
-%	(number?)
-%	#{
-%		\once \override TrillSpanner.bound-details.right.padding = #padding
-%	#}
-%)
-
 mmrnDown = {
 	\once \override MultiMeasureRestNumber.direction = #-1 
 }
 
-%mmrLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.space-increment = #length
-%	#}
-%)
-
 tempoDown = \once \override Score.MetronomeMark.direction = #-1 
-
-%whiteoutRehearsalMark = {
-%	\override Score.StaffSymbol.layer = #4
-%	\override Score.RehearsalMark.layer = #3
-%	\once \override Score.RehearsalMark.whiteout = ##t
-%	%\once \override Score.RehearsalMark.whiteout-style = #'outline
-%}
 
 whiteoutMarkup = {
 	\once \override Hairpin.layer = #4
@@ -281,7 +237,11 @@ whiteoutDynamic = {
 	\once \override DynamicText.whiteout-style = #'outline
 }
 
-%mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
+whiteoutMetronomeMark = {
+	\once \override Score.MetronomeMark.whiteout = ##t
+	\once \override Score.MetronomeMark.whiteout-style = #'outline
+}
+
 
 textInSlur = {
 	\once \override TextScript.outside-staff-priority = ##f
@@ -314,3 +274,6 @@ voltaShorten = #(define-music-function
 )
 
 revertScriptPadding = \once \revert Script.staff-padding
+
+dynamicPriority = \once \override DynamicLineSpanner.outside-staff-priority = #100
+
