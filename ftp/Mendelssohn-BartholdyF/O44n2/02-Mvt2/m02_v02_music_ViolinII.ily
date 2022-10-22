@@ -1,12 +1,10 @@
-%Fichier : /media/Documents/Partitions/lilypond/11-MendelssohnQuatuor4/02_StringQuartet_4_Mvt2_Voix2.ly
-%Fichier généré le :  mardi 18 mars 2014, 22:14:57 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   2   -   V O I X   2               #
-%#######################################################################
-MvtDeuxVoixDeux = \relative c {
+%  work        : String Quartet No. 4 in E Minor, Op. 44 No.2
+%  typesetter  : Sébastien MANEN
+%  date        : Saturday 22 October 2022, 10:46
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolinIIMvtII = \relative c {
 	\clef treble
 	\override TupletBracket #'bracket-visibility = ##f
 % mesures 1 à 5

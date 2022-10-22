@@ -1,186 +1,145 @@
-%Fichier : /media/Documents/Partitions/lilypond/11-MendelssohnQuatuor4/00_StringQuartet_4_Voix3.ly
-%Fichier généré le :  mardi 18 mars 2014, 22:14:58 (UTC+0100)
-%#######################################################################
-%#             G E N E R A L I T E S   E T   E N T E T E               #
-%#######################################################################
-\paper {
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
-	bookTitleMarkup = \markup {
-	    \override #'(baseline-skip . 3.5)
-	    \column {
-		    \fill-line { \fromproperty #'header:dedication }
-		    \override #'(baseline-skip . 3.5)
-		    \column {
-		        \fill-line {
-			        \huge \larger \larger \bold
-			        \fromproperty #'header:title
-		        }
-		        \fill-line {
-			        \large %\bold
-			        \fromproperty #'header:subtitle
-		        }
-		        \fill-line {
-			        \smaller %\bold
-			        \fromproperty #'header:subsubtitle
-		        }
-		        \fill-line {
-			        \fromproperty #'header:poet
-			        { \large \bold \fromproperty #'header:instrument }
-			        \fromproperty #'header:composer
-		        }
-		        \fill-line {
-			        \fromproperty #'header:meter
-			        \fromproperty #'header:arranger
-		        }
-		    }
-	    }
-	}
-}
-%-----------------------------------------------------------------------
-\layout {
-}
-%-----------------------------------------------------------------------
-globalMvtUn = {
-	\version "2.18.2"
-	\time 4/4
-	\key e \minor
-	%\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Allegro assai appassionato." 2=88
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-globalMvtDeux = {
-	\version "2.18.2"
-	\time 3/4
-	\key e \major
-	%\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "SCHERZO - Allegro di molto." 2.=72
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-globalMvtTrois = {
-	\version "2.18.2"
-	\time 4/4
-	\key e \minor
-	%\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Andante." 4 = 60
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-globalMvtQuatre = {
-	\version "2.18.2"
-	\time 3/4
-	\key c \major
-	%\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Presto agitato." 2. = 72
-	#(set-global-staff-size 19)
-}
-%-----------------------------------------------------------------------
-\include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_StringQuartet_4_Mvt1_Voix3.ly"
-\include "02_StringQuartet_4_Mvt2_Voix3.ly"
-\include "03_StringQuartet_4_Mvt3_Voix3.ly"
-\include "04_StringQuartet_4_Mvt4_Voix3.ly"
-%#######################################################################
-%#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
-%#######################################################################
-\book{
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Felix Mendelssohn (1809 - 1847)
+%  work               : String Quartet No. 4 in E Minor, Op. 44 No.2
+%  Source             : Leipzig : Breitkopf & Härtel, 1875. Plate M.B. 25.
+%  Type of score      : Score part for viola
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Saturday 22 October 2022, 10:46
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/QuartetOp44n2_Header.ily"
+\include "./00-Common/QuartetOp44n2_PaperParts.ily"
+\include "./00-Common/QuartetOp44n2_timeMvt.ily"
+\include "./00-Common/QuartetOp44n2_LayoutParts.ily"
+\include "./00-Common/QuartetOp44n2_Shortcuts.ily"
+%\include "./00-Common/QuartetOp44n2_Format_Part03_Viola.ly"
+\include "./00-Common/QuartetOp44n2_Tempi.ily"
+\include "./01-Mvt1/m01_v03_music_Viola.ily"
+\include "./02-Mvt2/m02_v03_music_Viola.ily"
+\include "./03-Mvt3/m03_v03_music_Viola.ily"
+\include "./04-Mvt4/m04_v03_music_Viola.ily"
+%###############################################################################
+%#                          S C O R E    S E C T I O N                         #
+%###############################################################################
+\book {
 	\header {
-		title = \markup { 
-		    \fontsize #5 \sans 
+		subtitle = \markup { 
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Felix Mendelssohn"
-				"1809 - 1847"
+				"Part for Viola"
 			}
 		}
-		subtitle = \markup { 
-		    \fontsize #5 \sans
-		    \center-column {
-			    \vspace #10
-			    "Quatuor à corde n°4 en Mi Mineur Op44 n°2"
-			    "Pour 2 violons, alto et violoncelle"
-		    }
-	    }
-	    subsubtitle = \markup { 
-	        \fontsize #3 \sans
-	        \center-column {
-			    \vspace #10
-			    "Alto"
-		    }
-	    }
+		subsubtitle = \markup { 
+			"Felix Mendelssohn — String Quartet No. 4 in E Minor, Op. 44 No. 2"
+		}
+		instrument = \markup {
+			"Viola"
+		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnVoixTrois >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatViolaMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(Viola) \tempiPartMvtI
+%			}
+			\new Voice {
+				\timeMvtI \musicViolaMvtI
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					I
 				}
 			}
 		}
 		\layout {
-			%system-count = #20
+			\layoutPart
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxVoixTrois >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatViolaMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(Viola) \tempiPartMvtII
+%			}
+			\new Voice {
+				\timeMvtII \musicViolaMvtII
+			}
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					II
 				}
 			}
 		}
 		\layout {
-			system-count = #28
+			\layoutPart
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtTrois \MvtTroisVoixTrois >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatViolaMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(Viola) \tempiPartMvtIII
+%			}
+			\new Voice {
+				\timeMvtIII \musicViolaMvtIII
+			}
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					III
 				}
 			}
 		}
 		\layout {
-			%system-count = #20
+			\layoutPart
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtQuatre \MvtQuatreVoixTrois >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatViolaMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(Viola) \tempiPartMvtIV
+%			}
+			\new Voice {
+				\timeMvtIV \musicViolaMvtIV
+			}
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					IV
 				}
 			}
 		}
 		\layout {
-			system-count = #42
+			\layoutPart
 		}
 	}
 }
