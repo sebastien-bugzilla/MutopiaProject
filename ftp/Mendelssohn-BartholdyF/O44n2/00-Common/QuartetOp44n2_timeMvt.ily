@@ -5,6 +5,13 @@
 %#                           T I M E   S E C T I O N                           #
 %###############################################################################
 timeMvtI = {
+%%	\set Timing.beamExceptions = #'()
+%%	\set Timing.baseMoment = #(ly:make-moment 1/2)
+%%	\set Timing.beamExceptions = \beamExceptions {
+%%		16[ 16 16 16] 16[ 16 16 16] 16[ 16 16 16] 16[ 16 16 16] |
+%%		8.[ 16 8. 16] 8.[ 16 8. 16]
+%%	}
+%	\overrideTimeSignatureSettings 4/4 1/2 1,1 \beamExceptions {16[ 16 16 16] 16[ 16 16 16] 16[ 16 16 16] 16[ 16 16 16] | 8.[ 16 8. 16] 8.[ 16 8. 16] }
 	\time 4/4
 }
 timeMvtII = {

@@ -44,13 +44,13 @@
 		}
 	}
 	\score {
-		<<
-			\new StaffGroup <<
-				\new GrandStaff <<
+%		<<
+%			\new StaffGroup <<
+%				\new GrandStaff <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtII
-%						}
+%%						\new Voice {
+%%							\formatConductorMvtII
+%%						}
 						\new Voice {
 							\tempiMvtII
 						}
@@ -58,18 +58,18 @@
 							\timeMvtII \musicViolinIMvtII
 						}
 					>>
-					\new Staff {
-						\timeMvtII \musicViolinIIMvtII
-					}
-				>>
-				\new Staff {
-					\timeMvtII \musicViolaMvtII
-				}
-				\new Staff {
-					\timeMvtII \musicCelloMvtII
-				}
-			>>
-		>>
+%					\new Staff {
+%						\timeMvtII \musicViolinIIMvtII
+%					}
+%				>>
+%				\new Staff {
+%					\timeMvtII \musicViolaMvtII
+%				}
+%				\new Staff {
+%					\timeMvtII \musicCelloMvtII
+%				}
+%			>>
+%		>>
 		\header {
 			breakbefore = ##t
 		}

@@ -4,12 +4,12 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 16) 
+#(set-global-staff-size 20) 
 %#(ly:set-option 'debug-skylines #t)
 \layout {
-	#(layout-set-staff-size 16)
+	#(layout-set-staff-size 20)
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.markFormatter = #format-mark-box-numbers
+	\set Score.markFormatter = #format-mark-alphabet
 	\context {
 		\Voice
 		\override TupletBracket #'bracket-visibility = ##f

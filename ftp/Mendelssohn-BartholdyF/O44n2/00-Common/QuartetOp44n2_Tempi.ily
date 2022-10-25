@@ -5,7 +5,13 @@
 %#                       T E M P I  C O N D U C T O R S                        #
 %###############################################################################
 tempiMvtI = {
-	\tempo "Allegro assai appasionato"
+	\tempo \markup {
+		"Allegro assai appasionato. M.M."
+		\line {
+			\general-align #Y #DOWN \abs-fontsize #7 
+			\note {2} #1 \medium "= 88."
+		}
+	}
 }
 tempiMvtII = {
 	\tempo "Scherzo"
