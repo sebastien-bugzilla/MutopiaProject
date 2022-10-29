@@ -14,7 +14,16 @@ tempiMvtI = {
 	}
 }
 tempiMvtII = {
-	\tempo "Scherzo"
+	\tempo \markup {
+		\column {
+			\lower #1 "Scherzo."
+			\line {
+				"Allegro di molto." 
+				\general-align #Y #DOWN \abs-fontsize #7 
+				\note {2.} #1 "= 72."
+			}
+		}
+	}
 }
 tempiMvtIII = {
 	\tempo "Andante"

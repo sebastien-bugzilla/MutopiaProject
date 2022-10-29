@@ -6,7 +6,7 @@
 %###############################################################################
 musicCelloMvtII = \relative c {
 	\clef bass
-	\override TupletBracket #'bracket-visibility = ##f
+	\key e \major
 % mesures 1 à 5
 	e'16\f e e e e8-. e\p-. e-. e-. 
 	e-. e-. e-. dis-. e-. cis-. 
@@ -34,7 +34,7 @@ musicCelloMvtII = \relative c {
 % mesures 21 à 25
 	bis4.\sf bis8-. cis-. cis-. 
 	ais4.\sf ais8 b! b
-	gis gis ais_\dimmarkup ais fisis fisis
+	gis gis ais ais_\dimmarkup fisis fisis
 	gis r e r fis r
 	b,16\pp-> b b b b8 fis dis fis
 % mesures 26 à 30
@@ -46,9 +46,9 @@ musicCelloMvtII = \relative c {
 % mesures 31 à 35
 	fis,4 r r
 	r r8 fis'_\crescmarkup ais fis
-	b16\f-> b b b b8 fis dis fis
-	b16-> b b b b8 fis dis fis 
-	b16-> b b b b8 fis dis fis 
+	b4:16\f-> b8 fis dis fis
+	b4:16-> b8 fis dis fis 
+	b4:16-> b8 fis dis fis 
 % mesures 36 à 40
 	b fis b gis cis cis,
 	fis4 r fis,8 r
@@ -84,18 +84,18 @@ musicCelloMvtII = \relative c {
 	r r cis,,\p(
 	d2.)(\espressivo
 	cis4) r8 d'\p-. cis-. b-. 
-	\acciaccatura b16 ais8 gis ais fis b d
+	\grace b16 ais8 gis ais fis b d
 % mesures 66 à 70
 	fis4.-> e8 d b
-	\acciaccatura b16 ais8 gis ais fis b d
+	\grace b16 ais8 gis ais fis b d
 	fis e d fis d fis
 	cis4. a8 gis fis
-	\acciaccatura fis16 eis8 dis eis cis fis a
+	\grace fis16 eis8 dis eis cis fis a
 % mesures 71 à 75
 	cis4.\sf b8 a fis
 	eis gis fis a gis b
 	a4 r8 cis'\moltocresc a gis
-	\acciaccatura gis16 fis8 eis fis cis fis gis
+	\grace gis16 fis8 eis fis cis fis gis
 	a4.-> cis,8 fis gis
 % mesures 76 à 80
 	a4.-> a,8 a a
@@ -140,9 +140,9 @@ musicCelloMvtII = \relative c {
 	gis4:16\sf gis8-. a-. gis-. fis-. 
 	gis4:16\sf gis8-. a-. gis-. fis-. 
 % mesures 111 à 115
-	gis4:16\sf gis'8 r r4
+	gis4:16\f gis'8 r r4
 	e'4:16 gis8 r r4
-	gis,,4:16 gis'8 r r4
+	gis,,4:16\f gis'8 r r4
 	e'4:16 gis8 r r4
 	gis,,4:16_\dimmarkup gis'8 r r4
 % mesures 116 à 120
@@ -158,7 +158,7 @@ musicCelloMvtII = \relative c {
 	gis4:16 gis8 r r4
 	cis4:16\pp cis8 gis e gis
 % mesures 126 à 130
-	cis4:16\pp cis8 gis e gis
+	cis4:16 cis8 gis e gis
 	cis8 r gis4( a 
 	b cis) cis,
 	fis2 r4
@@ -224,7 +224,7 @@ musicCelloMvtII = \relative c {
 	b r r4 r
 	R2.*1
 % mesures 181 à 185
-	r4 r8 fis'' fis e_\crescmarkup
+	r4 r8 fis''_\crescmarkup fis e
 	dis cis b e dis fis
 	e4:16\f e8 b gis b
 	e4:16 e8 b gis b
@@ -242,7 +242,7 @@ musicCelloMvtII = \relative c {
 	r4 r b'8\p-. dis-. 
 	e-. fis-. d-. e-. cis-. e-. 
 % mesures 196 à 200
-	c-._\crescmarkup e-. c-. e-. b-. e-. 
+	c-. e-. c-._\crescmarkup e-. b-. e-. 
 	b-. e-. cis!-. b-. ais-. cis-. 
 	b\p b b b b b
 	b' b, b b b b
@@ -260,7 +260,7 @@ musicCelloMvtII = \relative c {
 	gis r b r e r
 	ais, r cis r fis r
 % mesures 211 à 215
-	b16-.-> b-. b-. b-. b8 ais a gis
+	b4:16-.-> b8 ais a gis
 	fis e dis cis b a
 	gis r b r e r
 	ais, r cis r fis r

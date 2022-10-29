@@ -6,7 +6,7 @@
 %###############################################################################
 musicViolaMvtII = \relative c {
 	\clef alto
-	\override TupletBracket #'bracket-visibility = ##f
+	\key e \major
 % mesures 1 à 5
 	gis''16\f gis gis gis gis8-. cis\p-. b-. a-.
 	gis-. fis-. gis-. fis-. gis-.\noBeam r
@@ -15,9 +15,9 @@ musicViolaMvtII = \relative c {
 	fis4:16-> fis8-. e-. dis-. e-. 
 % mesures 6 à 10
 	fis4:16-> fis8-. e-. dis-. e-. 
-	fis-. gis-. a_\crescmarkup-. b-. cis-. e-. 
-	dis\<-. e-. fis-. gis-. a-. b-. 
-	gis4:16\f gis8-. cis\p-. b-. a-. 
+	fis-. gis-. a-. b-._\crescmarkup cis-. e-. 
+	dis\<-. e-. fis-. gis-. a-. b-. \!
+	gis4:16\f gis8-. cis\p-. b-. a-.
 	gis-. fis-. gis-. fis-. gis-.\noBeam r 
 % mesures 11 à 15
 	R2.*1
@@ -26,15 +26,15 @@ musicViolaMvtII = \relative c {
 	fis4:16-> fis8 e-. dis-. e-.
 	fis-. gis-. a-. ais-. b-. dis-. 
 % mesures 16 à 20
-	e4 r8 e\p e e
-	fis fis_\stacc fis gis e e
+	e4 r8 e_\pstaccato e e
+	fis fis fis gis e e
 	dis4.-> dis8 e e
 	fis fis fis gis e e
 	dis4.\sf dis8-. e-. e-.
 % mesures 21 à 25
 	dis4.\sf gis8-. gis-. e-.
 	cis4.\sf fis8 fis dis
-	b e cis_\dimmarkup e ais, dis
+	b e cis e_\dimmarkup ais, dis
 	b dis gis, cis cis ais
 	b4.\pp-> ais8-. fis-. ais-. 
 % mesures 26 à 30
@@ -45,7 +45,7 @@ musicViolaMvtII = \relative c {
 	fis4:16-> fis8 cis ais cis  
 % mesures 31 à 35
 	fis4:16-> fis8 cis ais cis 
-	fis gis_\crescmarkup ais b cis fis,
+	fis gis ais_\crescmarkup b cis fis,
 	b4.\f ais8 fis ais
 	b4.-> ais8 fis ais
 	b4.-> ais8 fis ais
@@ -65,10 +65,10 @@ musicViolaMvtII = \relative c {
 	ais) r b->~
 	b r b->(
 	fis8\p) fis-. \repeat tremolo 2 {e-. fis-.}
-	dis-.\< fis-. \repeat tremolo 2 {e-. fis-.}
-	dis-.\> fis-. \repeat tremolo 2 {e-. fis-.}
+	dis-.\< fis-. \repeat tremolo 2 {e-. fis-.\!}
+	dis-.\> fis-. \repeat tremolo 2 {e-. fis-.\!}
 % mesures 51 à 55
-	dis\! r r4 r
+	dis r r4 r
 	R2.*1 \mark \default
 	gis4:16\f gis8 cis\p b a
 	\repeat tremolo 2 {gis fis} gis r
@@ -77,7 +77,7 @@ musicViolaMvtII = \relative c {
 	fis,4:16-> fis8 e dis e
 	fis4:16-> fis8 e dis e
 	fis4:16-> fis8 e dis e
-	fis gis a b cis e
+	fis gis a b_\crescmarkup cis e
 	dis e fis gis a b
 % mesures 61 à 65
 	gis4:16\f gis8 a\p b a
@@ -94,8 +94,8 @@ musicViolaMvtII = \relative c {
 % mesures 71 à 75
 	<cis cis'>4:16-> <cis cis'>2:8
 	<cis cis'>8 cis' dis, cis' eis, cis'
-	fis,4 r8_\moltocresc cis''-. a-. gis-.
-	\acciaccatura gis16 fis8-. eis-. fis-. cis-. fis-. gis-. 
+	fis,4 r8 cis''-._\moltocresc a-. gis-.
+	\grace gis16 fis8-. eis-. fis-. cis-. fis-. gis-. 
 	a4.-> cis,8 fis gis
 % mesures 76 à 80
 	a4.-> a,8 a a
@@ -134,8 +134,8 @@ musicViolaMvtII = \relative c {
 	r4 fis4:16 fis8 r \mark \default
 	gis4:16\ff gis2:8
 % mesures 106 à 110
-	gis8 gis gis b b b
-	b4:16\sf b8 gis gis fis
+	gis8 gis gis cis cis cis
+	cis4:16\sf cis8 gis gis fis
 	e fis gis cis, cis cis
 	cis4:16\sf cis2:8
 	cis4:16\sf cis2:8
@@ -153,7 +153,7 @@ musicViolaMvtII = \relative c {
 	r4 b4:16_\dimmarkup e8 r
 % mesures 121 à 125
 	r4 a,4:16 e'8 r
-	r4 e,4:16 cis'8_\sempre r
+	r4 e,4:16_\sempredim cis'8 r
 	r4 e,4:16 gis8 r
 	r4 fis4:16 gis8 r
 	e4.\pp dis8-. cis-. dis-. 
@@ -178,12 +178,12 @@ musicViolaMvtII = \relative c {
 % mesures 141 à 145
 	r4 gis'4\pp gis
 	gis8.( a16 gis4) gis
-	gis2\<( cis4
+	gis2\<( cis4\!
 	bis\> gis fis\!
 	e) gis gis
 % mesures 146 à 150
 	gis8.( a16 gis4) gis
-	gis2(\< cis4
+	gis2(\< cis4\!
 	bis\> gis fis)\!
 	e2.(
 	gis)~ \mark \default
@@ -239,13 +239,13 @@ musicViolaMvtII = \relative c {
 	e\p r e, r r4 
 	e'8 r e, r r4
 	e'8 r e, r r4
-	b'8 dis-. b-. dis-. b-. dis-. 
+	b'8-. dis-. b-. dis-. b-. dis-. 
 	e-. fis-. d-. e-. cis-. e-. 
 % mesures 196 à 200
-	c-. e-._\crescmarkup c-. e-. b-. e-. 
+	c-. e-. c-._\crescmarkup e-. b-. e-. 
 	b-. e-. cis!-. b-. ais-. cis-. 
 	b\p <a'! b> <a b>2:8-.
-	<gis b>4\< <a b>2:8
+	<gis b>4\< <a b>2:8\!
 	<gis b>4\> <a b>2:8\!
 % mesures 201 à 205
 	<gis b>8 r r4 r
@@ -269,12 +269,12 @@ musicViolaMvtII = \relative c {
 	R2.*1
 	r4  b'\pp b
 	b8.( cis16 b4) b
-	b2\<( e4
+	b2\<( e4\!
 	dis\> b a\!
 % mesures 221 à 225
 	gis) b b
 	b8.( cis16 b4) b
-	b2\<( e4
+	b2\<( e4\!
 	dis\> b a\!)
 	gis gis_\dolce gis
 % mesures 226 à 230

@@ -34,8 +34,10 @@ crescpocoapoco=^\markup {\italic {cresc. poco a poco}}
 
 
 
-moltocresc = #(make-music 'CrescendoEvent
-             'span-direction START
-             'span-type 'text
-             'span-text "molto cresc.")
+moltocresc = #(
+	make-music 'CrescendoEvent
+	'span-direction START
+	'span-type 'text
+	'span-text "molto cresc."
+)
 

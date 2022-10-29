@@ -6,30 +6,30 @@
 %###############################################################################
 musicViolinIMvtII = \relative c {
 	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
+	\key e \major
 % mesures 1 à 5
 	b'''16\f b b b b8-. a\p-. gis-. fis-. 
-	\acciaccatura fis16-. e8-. dis-. e-. cis-. b-. a-. 
-	gis-. fis-. \acciaccatura fis16 e8-. dis-. e-. fis-. 
+	\grace fis16 e8-. dis-. e-. cis-. b-. a-. 
+	gis-. fis-. \grace fis16 e8-. dis-. e-. fis-. 
 	e4->( dis8) cis-. b-. cis-. 
 	e4->( dis8) cis-. b-. cis-. 
 % mesures 6 à 10
 	e4->( dis8) ais-. b-. cis-.
 	dis-. e-. fis-. gis_\crescmarkup-. a-. ais-. 
-	b-.\< cis-. dis-. e-. fis-. b,-. 
+	b-.\< cis-. dis-. e-. fis-. b,-.\!
 	b'4:16\f b8-. a\p-. gis-. fis-. 
-	\acciaccatura fis16 e8-. dis-. e-. cis-. b-. a-. 
+	\grace fis16 e8-. dis-. e-. cis-. b-. a-. 
 % mesures 11 à 15
-	gis fis \acciaccatura fis16 e8 dis e fis
+	gis fis \grace fis16 e8 dis e fis
 	e4->( dis8) cis-. b-. cis-. 
 	e4->( dis8) cis-. b-. cis-. 
 	e4->( dis8) cis-. b-. cis-. 
 	dis-. e-. fis-. cis'-. b-. a-. 
 % mesures 16 à 20
-	gis4 r8 e'_\pstacc dis cis
-	\acciaccatura cis16 bis8 ais bis gis cis e
+	gis4 r8 e'_\pstaccato dis cis
+	\grace cis16 bis8 ais bis gis cis e
 	gis4.-> fis8 e cis
-	\acciaccatura cis16 bis8 ais bis gis cis e
+	\grace cis16 bis8 ais bis gis cis e
 	gis4.\sf fis8-. e-. cis-.
 % mesures 21 à 25
 	gis'4.\sf dis8-. e-. cis-.
@@ -40,7 +40,7 @@ musicViolinIMvtII = \relative c {
 % mesures 26 à 30
 	fis4.-> fis8-. fis-. fis-. 
 	fis4.-> fis8-. fis-. fis-. 
-	\acciaccatura gis16 fis8 eis fis gis eis b'
+	\grace gis16 fis8 eis fis gis eis b'
 	b4->( ais8) gis-. fis-. gis-.
 	b4->( ais8) gis-. fis-. gis-.
 % mesures 31 à 35
@@ -50,7 +50,7 @@ musicViolinIMvtII = \relative c {
 	fis4.-> fis8-. fis-. fis-. 
 	fis4.-> fis8-. fis-. fis-. 
 % mesures 36 à 40
-	\acciaccatura gis16 fis8 eis fis gis eis b'
+	\grace gis16 fis8 eis fis gis eis b'
 	ais gis fis4 r8 b
 	ais gis fis4 r8 b
 	ais gis fis b_\dimmarkup ais gis
@@ -59,30 +59,30 @@ musicViolinIMvtII = \relative c {
 	dis-.\p e-. fis4->( eis8) r
 	cis-. dis-. e!4(-> dis8) r
 	b-. cis-. d4(-> cis8) r
-	ais b cis dis e cis
+	ais b cis dis! e cis
 	fis e dis fis b b,
 % mesures 46 à 50
 	e dis cis e b' b,
 	d cis b d b' b,
 	e\p dis! cis b ais cis
-	b bis\< cis dis e cis
+	b bis\< cis dis e cis\!
 	fis\> dis cis b ais\! cis
 % mesures 51 à 55
 	b r r4 r4
 	R2.*1 \mark \default
 	b'4:16\f b8 a\p gis fis 
-	\acciaccatura fis16 e8 dis e cis b a 
-	gis fis \acciaccatura fis16 e8 dis e fis 
+	\grace fis16 e8 dis e cis b a 
+	gis fis \grace fis16 e8 dis e fis 
 % mesures 56 à 60
 	e4->( dis8) cis b cis 
 	e4->( dis8) cis b cis 
 	e4->( dis8) ais b cis
 	dis e fis gis_\crescmarkup a ais 
-	b\< cis dis e fis b, 
+	b\< cis dis e fis b,\!
 % mesures 61 à 65
 	b'4:16\f b8 a\p gis fis 
 	gis fis eis d cis b
-	a gis \acciaccatura gis16 fis8 eis fis gis
+	a gis \grace gis16 fis8 eis fis gis
 	eis gis cis4 r
 	e,!4.\p e8-. d-. d-. 
 % mesures 66 à 70
@@ -94,9 +94,9 @@ musicViolinIMvtII = \relative c {
 % mesures 71 à 75
 	cis4 r r
 	cis4:16-> cis2:8
-	dis!4:16_\cresc dis2:8 
-	dis4:16 dis2:8 
-	dis4:16 dis2:8 
+	dis!4:16->_\cresc dis2:8 
+	dis4:16-> dis2:8 
+	dis4:16-> dis2:8 
 % mesures 76 à 80
 	dis4-> e8 eis fis fisis
 	gis4:16->\f gis8 fis e dis
@@ -134,7 +134,7 @@ musicViolinIMvtII = \relative c {
 	cis cis dis! \mark \default
 	gis4:16\ff gis8-. fis-. e-. dis-.
 % mesures 106 à 110
-	e-. ais,-. b-. ais-. gis-. fis-. 
+	e-. bis-. cis-. a-. gis-. fis-. 
 	gis4:16\sf gis8-. fis-. e-. dis-. 
 	e-. bis-. cis-. a-. gis-. fis-. 
 	gis4.\sf fis8-. gis-. a-.
@@ -189,8 +189,8 @@ musicViolinIMvtII = \relative c {
 	e \mark \default
 % mesures 151 à 155
 	b''4:16\pp b8 a gis fis
-	\acciaccatura fis16 e8 dis! e cis b a
-	gis fis \acciaccatura fis16 e8 dis e fis
+	\grace fis16 e8 dis! e cis b a
+	gis fis \grace fis16 e8 dis e fis
 	e4(-> dis8) cis b cis
 	e4(-> dis8) cis b cis
 % mesures 156 à 160
@@ -198,18 +198,18 @@ musicViolinIMvtII = \relative c {
 	dis\cresc e fis gis a ais
 	b cis dis e fis b,
 	b'4:16\f b8 a gis fis
-	\acciaccatura fis16 e8 dis e cis b a
+	\grace fis16 e8 dis e cis b a
 % mesures 161 à 165
-	gis fis \acciaccatura fis16 e8 cis' b a
+	gis fis \grace fis16 e8 cis' b a
 	a4->(\f gis8) fis e fis
 	a4->( gis8) fis e fis
 	a4->( gis8) dis!-. e-. fis-. 
 	gis-. a-. b-. fis'-. e-. d-. 
 % mesures 166 à 170
 	cis4 r8 a'8\p gis fis
-	\acciaccatura fis16 eis8_\stacc dis eis cis fis a
+	\grace fis16 eis8_\stacc dis eis cis fis a
 	cis4.\sf b8  a fis
-	\acciaccatura fis16 eis8 dis eis cis fis a
+	\grace fis16 eis8 dis eis cis fis a
 	cis4.\sf b8 a fis
 % mesures 171 à 175
 	cis'4.\sf b8 a fis
@@ -220,11 +220,11 @@ musicViolinIMvtII = \relative c {
 % mesures 176 à 180
 	b4. b8 b b
 	b4. b8 b b
-	\acciaccatura cis16 b8-. ais-. b-. cis-. ais-. e'-. 
+	\grace cis16 b8-. ais-. b-. cis-. ais-. e'-. 
 	e4( dis8) cis-. b-. cis-. 
 	e4( dis8) cis-. b-. cis-. 
 % mesures 181 à 185
-	e4( dis8) ais-._\crescmarkup b-. cis-. 
+	e4( dis8) ais-._\crescmarkup b-. cis-. %%%%%%%%%%%%%%%%%%%%%%
 	dis-. e-. fis-. gis-. a!-. b,-. 
 	b'4.\f b8 b b
 	b4. b8 b b
@@ -242,11 +242,11 @@ musicViolinIMvtII = \relative c {
 	dis e fis gis! a fis
 	b a gis b e e,
 % mesures 196 à 200
-	a gis fis a_\crescmarkup e' e,
+	a gis fis_\crescmarkup a e' e,
 	g fis e g e' e,
 	a\p gis! fis e dis fis
-	e eis\< fis gis a fis
-	b gis fis e! dis fis\!
+	e eis\< fis gis a fis\!
+	b\> gis fis e! dis fis\!
 % mesures 201 à 205
 	e8 r r4 r
 	R2.*1
@@ -285,7 +285,7 @@ musicViolinIMvtII = \relative c {
 	R2.*1
 % mesures 231 à 235
 	b''4:16\pp b8-. a-. gis-. fis-. 
-	\acciaccatura fis16 e8 dis e cis b a
+	\grace fis16 e8 dis e cis b a
 	gis fis e fis dis b
 	e4 r r
 	e4:16-> e8 b gis b
