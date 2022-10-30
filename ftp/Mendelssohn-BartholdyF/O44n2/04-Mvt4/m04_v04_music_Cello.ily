@@ -6,7 +6,7 @@
 %###############################################################################
 musicCelloMvtIV = \relative c {
 	\clef bass
-	\override TupletBracket #'bracket-visibility = ##f
+	\key e \minor
 % mesures 1 à 5
 	e,8\f-> e e4 r
 	R2.*7
@@ -64,7 +64,7 @@ musicCelloMvtIV = \relative c {
 % mesures 46 à 50
 	b~_\crescmarkup
 	b4 r8 e, b' d
-	d4.->( cis8_\crescmarkup) b ais
+	d4.->(_\crescmarkup cis8) b ais
 	e'4.(-> d8) cis b
 	fis'4.->( e8) d cis
 % mesures 51 à 55
@@ -140,15 +140,15 @@ musicCelloMvtIV = \relative c {
 	d(
 	c)
 % mesures 111 à 115
-	b_\crescmarkup
-	a
+	b
+	a_\crescmarkup
 	fis
 	g4. fis'8 g a
 	b2 g4
 % mesures 116 à 120
 	e2_\crescmarkup a4
 	fis4. d8 e fis
-	g( fis)\> g fis e d
+	g( fis)\> g fis e d\!
 	c\p c c4 r
 	d8 d d4 r
 % mesures 121 à 125
@@ -190,7 +190,7 @@ musicCelloMvtIV = \relative c {
 % mesures 151 à 155
 	d8) r cis-.\< r c r
 	b r a r g\! r
-	fis4 r r
+	fis4-. r r
 	R2.*1
 	g,4^\pizz\p r r
 % mesures 156 à 160
@@ -219,12 +219,12 @@ musicCelloMvtIV = \relative c {
 	c,8\ff e g c e d
 % mesures 176 à 180
 	c g e g a\sf b
-	c g e g, a b
-	c g e g\sf a b
+	c g e g, a\sf b
+	c g e g a\sf b
 	c4\f-. g-. c,-.
 	g'-. c,-. g'-.
 % mesures 181 à 185
-	c, r r
+	c,-. r r
 	R2.*4
 	
 	
@@ -239,13 +239,13 @@ musicCelloMvtIV = \relative c {
 	fis,!2(-> g4)
 	a( b) b
 	e,2 r4
-	c'4 c_\cresc c
+	c'4_\cresc c c
 	b2.
 % mesures 196 à 200
 	c4 c c
 	b2.
 	c4 c c
-	fis,2(\sf g4)
+	fis,2(_\sfmarkup g4)
 	a( b) b \mark \default
 % mesures 201 à 205
 	e,\f r r 
@@ -272,7 +272,7 @@ musicCelloMvtIV = \relative c {
 	cis-. b-. ais-. g-. fis-. ais-. 
 	b4-. r8 b-. d-. cis-. 
 % mesures 221 à 225
-	b4-. r8 b'-. d-. cis-. 
+	b4 r8 b'-. d-. cis-. 
 	b4 r8 b,_\crescmarkup-. d-. cis-. 
 	b4 b b
 	b'8-. d_\crescmarkup-. f-. e-. d-. b-. 
@@ -286,14 +286,14 @@ musicCelloMvtIV = \relative c {
 % mesures 231 à 235
 	a g fis! fis g a
 	b a g4 g'\p
-	a,2_\crescmarkup g'4
+	a,2 g'4_\crescmarkup
 	b,2 g'4
 	cis, g' cis,
 % mesures 236 à 240
 	d r8 d-. f-. e-.
-	d4\< d d
+	d4\< d d\!
 	a'4.\sf d,8-. f-. e-. 
-	d4\< d d 
+	d4\< d d\!
 	a'4.\sf a8-.\f c-. b-.
 % mesures 241 à 245
 	a4 a a
@@ -329,7 +329,7 @@ musicCelloMvtIV = \relative c {
 	R2.*1
 	c'2.\p(
 	b4) g-. e-.
-	b-. g-. e
+	b-. g-. e-.
 	b'2.~
 % mesures 271 à 275
 	b~
@@ -342,9 +342,9 @@ musicCelloMvtIV = \relative c {
 	c r8 fis, g a
 	b4 r r
 	R2.*1
-	dis8_\crescmarkup dis e4 fis8 fis
+	dis8_\crescmarkup dis e4 fis8\< fis
 % mesures 281 à 285
-	g4\< fis8 fis g e
+	g4 fis8 fis g\! e
 	b'8\f b b4 b 
 	b8 b b4 b
 	c2.~
@@ -368,22 +368,22 @@ musicCelloMvtIV = \relative c {
 	R2.*1
 	f4 f f
 % mesures 301 à 305
-	e2.(\p \mark \default
+	e2.(\p 
 	a
 	g
 	f)
 	e(
 % mesures 306 à 310
 	a
-	g_\crescmarkup
-	a)\sf
+	g\cresc
+	a)_\sfmarkup
 	b(
 	c
 % mesures 311 à 315
 	b
 	a)
 	g(
-	fis_\dimmarkup
+	fis\dim
 	b 
 % mesures 316 à 320
 	e,)
@@ -400,7 +400,7 @@ musicCelloMvtIV = \relative c {
 % mesures 326 à 330
 	a
 	c\sf\>~
-	c( \bar "||" \key cis \minor \mark \default
+	c(\! \bar "||" \key cis \minor \mark \default
 	b)\p~
 	b~
 % mesures 331 à 335
@@ -423,8 +423,8 @@ musicCelloMvtIV = \relative c {
 	b,2.\p~
 % mesures 346 à 350
 	b~
-	b~\<
-	b4 b\! cis
+	b~
+	b4\< b cis\!
 	d8(\f e d e d e
 	d e d e d e
 % mesures 351 à 355
@@ -489,8 +489,8 @@ musicCelloMvtIV = \relative c {
 	c(\ff
 % mesures 401 à 405
 	b8) r ais\< r a r
-	gis r fis r e r\!
-	dis4 r r
+	gis r fis r e\! r
+	dis4-. r r
 	R2.*1
 	e,4\p r r 
 % mesures 406 à 410
@@ -544,7 +544,7 @@ musicCelloMvtIV = \relative c {
 % mesures 446 à 450
 	a b c a b c
 	b c d b c d
-	c d_\crescmarkup e c d e
+	c_\crescmarkup d e c d e
 	d e f e fis gis
 	fis gis a gis a b
 % mesures 451 à 455
@@ -556,7 +556,7 @@ musicCelloMvtIV = \relative c {
 % mesures 456 à 460
 	gis
 	a\>
-	ais
+	ais\!
 	b4)\pp r r
 	b r r 
 % mesures 461 à 465
@@ -573,7 +573,7 @@ musicCelloMvtIV = \relative c {
 	a b c a b c
 % mesures 471 à 475
 	b c d b c d
-	c d_\crescmarkup e c d e
+	c_\crescmarkup d e c d e
 	d e f e fis gis
 	fis gis a gis a b
 	a-.\ff b-. c4-. r

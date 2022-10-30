@@ -6,9 +6,9 @@
 %###############################################################################
 musicViolinIMvtIV = \relative c {
 	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
+	\key e \minor
 % mesures 1 à 5
-	r4 r8 b'\mf d g
+	r4 r8 b'\mf e g
 	g4.( fis8) e dis
 	a'4.( fis8) e dis
 	e g b e g fis
@@ -42,7 +42,7 @@ musicViolinIMvtIV = \relative c {
 	b'4.( a8 g fis)
 	e4 e e
 	e'(\fp c b)
-	\acciaccatura b16 a4( g fis)
+	\grace b16 a4( g fis)
 % mesures 31 à 35
 	fis( g) r
 	r r r8 a(
@@ -62,7 +62,7 @@ musicViolinIMvtIV = \relative c {
 	b( a) c
 	c( b) b8 e
 % mesures 46 à 50
-	e4(_\crescmarkup dis) e8 fis
+	e4( dis)_\crescmarkup e8 fis
 	fis4( e) fis8 g
 	fis4_\crescmarkup fis fis
 	fis2.~
@@ -78,7 +78,7 @@ musicViolinIMvtIV = \relative c {
 	e->( c!) b a g fis
 	e4 g'\f g
 	g\sf( fis2)
-	r4 fis fis
+	r4 fis fis 
 % mesures 61 à 65
 	fis(\sf e2)
 	r4 d d
@@ -96,13 +96,13 @@ musicViolinIMvtIV = \relative c {
 	b( d) fis b, d fis
 	g2.\sf~
 	g \mark \default
-	fis,2( g4
+	fis,2(\p g4
 % mesures 76 à 80
 	gis a b)
 	c( b a
 	g'!2-> fis4)
 	fis,2( g4
-	gis_\crescmarkup a b)
+	gis a_\crescmarkup b)
 % mesures 81 à 85
 	c( d fis
 	b2\sf a4)
@@ -156,7 +156,7 @@ musicViolinIMvtIV = \relative c {
 	e'4. cis8 b a
 	g'4.\sf fis8 e d
 	cis d e fis g a \mark \default
-	b(_\fpanimato g) fis-. a-. g-. d-. 
+	b(\fp g) fis-. a-. g-. d-. 
 % mesures 126 à 130
 	g( d) c!-. e-. d-. b-. 
 	e( cis) bes-. a-. bes-. g-. 
@@ -184,12 +184,12 @@ musicViolinIMvtIV = \relative c {
 % mesures 146 à 150
 	cis( e) e( g) g( bes)
 	bes( cis) cis( e) e( g)
-	g(\< e) e( g) g( bes)
+	g(\< e) e( g) g( bes)\!
 	bes2.\sf
 	cis,,2.\ff(
 % mesures 151 à 155
 	d8) r e\< r fis r
-	g r a r b r
+	g r a r b r\!
 	c\fp a fis d c a
 	fis a c d fis a
 	b(_\pleggiero g) fis a g d
@@ -209,12 +209,12 @@ musicViolinIMvtIV = \relative c {
 	g( e) dis fis e b
 	cis\f-. e-. g-. b-. a-. g-. 
 	b a g b a g
-	cis2 d4-+
+	cis2 d4\trill
 	e2 r4
 % mesures 171 à 175
 	c,!8-. d-. fis-. a-. g-. fis-. 
 	a g fis a g fis
-	b2 c4-+
+	b2 c4\trill
 	d2 r4 \mark \default
 	e,8\ff-. g-. c-. e-. g-. f-. 
 % mesures 176 à 180
@@ -237,21 +237,21 @@ musicViolinIMvtIV = \relative c {
 	e4 e e
 % mesures 191 à 195
 	e'->( c b)
-	\acciaccatura b16 a4( g fis)
+	\grace b16 a4( g fis)
 	fis( g) r
-	r r r8 a(
-	fis'-> e_\cresc dis c b a 
+	r r r8 a(_\cresc
+	fis'-> e dis c b a 
 % mesures 196 à 200
 	g4) r r8 a(
 	fis'-> e dis c b a
 	g) g'( fis e d! c)
-	a'^\sfmarkup( c,) a'( c,) e( g)
+	a'_\sfmarkup( c,) a'( c,) e( g)
 	a,( fis') e( g,) b( dis) \mark \default
 % mesures 201 à 205
 	e4\f r8 b, e g
 	g4.-> fis8 e dis
 	a'4.-> fis8 e dis
-	e g b e g fis
+	e-> g b e g fis
 	dis4( e8) r b\p e
 % mesures 206 à 210
 	e( dis) fis c b a
@@ -273,7 +273,7 @@ musicViolinIMvtIV = \relative c {
 	fis_\stacc b d cis b fis
 % mesures 221 à 225
 	b g fis d fis e
-	d b_\crescmarkup d cis b fis
+	d b d_\crescmarkup cis b fis
 	b g fis e d cis
 	b4 r8 g'_\crescmarkup b a
 	g4 r8 b d c %finVerification
@@ -281,10 +281,10 @@ musicViolinIMvtIV = \relative c {
 	b4 r8 d\f f e
 	d4 d d
 	g4.\sf c,8\p e d
-	c4\< c c
+	c4\< c c\!
 	g'4.\sf c,8 e d
 % mesures 231 à 235
-	c4\< c c
+	c4\< c c\!
 	g'2\sf d,4\p
 	ees2.(
 	d2) r4
@@ -305,14 +305,14 @@ musicViolinIMvtIV = \relative c {
 	a( b) c-. b-. c-. a-. 
 	b-. d!-. e-. gis-. b-. d-. 
 	c4( d dis
-	e\< fis gis)
+	e\< fis gis)\!
 	a(\> fis ees\!
 % mesures 251 à 255
 	d2 c4)
 	b(_\crescmarkup c cis
-	d\< e fis)
-	g(\> e des
-	c2\! bes4)
+	d\< e fis)\!
+	g(\> e des\!
+	c2 bes4)
 % mesures 256 à 260
 	a8(-> f) e g f c
 	R2.*1
@@ -344,10 +344,10 @@ musicViolinIMvtIV = \relative c {
 	g( b) a-. c-. b( e)
 	fis,-. a-. g( b) a-.\< c-. 
 % mesures 281 à 285
-	b( e) dis-.\! fis-. e( g)
+	b( e) dis-. fis-. e(\! g)
 	g4.\f fis8 e dis
 	a'4. fis8 e dis
-	e g c e g fis \mark \default
+	e g c e g fis \mark \default 
 	e4 r r
 % mesures 286 à 290
 	r r8 e,\f g fis
@@ -400,7 +400,7 @@ musicViolinIMvtIV = \relative c {
 % mesures 326 à 330
 	fis
 	e\sf\>~
-	e( \mark \default \bar "||" \key cis \minor
+	e(\! \mark \default \bar "||" \key cis \minor
 	dis2)(\p e4
 	eis fis gis)
 % mesures 331 à 335
@@ -444,7 +444,7 @@ musicViolinIMvtIV = \relative c {
 	dis e cis)
 	b-. e-. gis->~
 	gis fis-. b,-.
-	b'2.(
+	\once \stemUp b'2.(
 % mesures 366 à 370
 	ais_\crescmarkup
 	a!
@@ -460,7 +460,7 @@ musicViolinIMvtIV = \relative c {
 % mesures 376 à 380
 	e'4. cis8 b ais
 	cis4.\sf b8 ais b
-	ais b cis dis e fis \mark \default
+	ais\< b cis dis e fis\! \mark \default
 	gis8(\fp e) dis-. fis-. e-. b-. 
 	e( b) a!-. cis-. b-. gis-. 
 % mesures 381 à 385
@@ -471,7 +471,7 @@ musicViolinIMvtIV = \relative c {
 	cis( ais) g-. fis-. g-. e-. 
 % mesures 386 à 390
 	dis fis a! b dis fis
-	gis( e) dis fis_\crescmarkup e dis
+	gis( e) dis fis e_\crescmarkup dis
 	e cis bis dis cis a
 	a'( fis) e gis fis e
 	fis dis cis e dis b
@@ -484,11 +484,11 @@ musicViolinIMvtIV = \relative c {
 % mesures 396 à 400
 	g( ais) ais( cis) cis( e)
 	e( ais,) ais( cis) cis( e)
-	e(\< cis) cis( e) e( g)
+	e(\< cis) cis( e) e( g)\!
 	g2.\sf
 	ais,,2.\ff(
 % mesures 401 à 405
-	b8) r\< cis r dis r
+	b8) r cis\< r dis r
 	e r fis r gis\! r
 	a\fp fis dis b a fis
 	dis fis a b dis fis
@@ -509,12 +509,12 @@ musicViolinIMvtIV = \relative c {
 	e( cis) bis dis cis e
 	ais,\f-. cis-. e-. gis-. fis-. e-. 
 	gis-. fis-. e-. gis-. fis-. e-. 
-	ais2 b4-+
+	ais2 b4\trill
 	cis2 r4 
 % mesures 421 à 425
 	ais,8-. cis-. e-. g-. fis-. e-. 
 	g-. fis-. e-. g-. fis-. e-. 
-	ais2 b4-+
+	ais2 b4\trill
 	cis2 r4 \bar "||" \key e \minor
 	b,,8\p^\confuoco-. fis'-. a-. c-. a-. c-. 
 % mesures 426 à 430
@@ -544,7 +544,7 @@ musicViolinIMvtIV = \relative c {
 % mesures 446 à 450
 	c-. b-. a-. c-. b-. a-. 
 	d c b d c b
-	e d c e d c
+	e_\crescmarkup d c e d c
 	f e d gis fis e
 	a gis fis b a gis
 % mesures 451 à 455
@@ -556,7 +556,7 @@ musicViolinIMvtIV = \relative c {
 % mesures 456 à 460
 	f( e d) f-. e-. d-. 
 	c( b\> a) c-. b-. a-. 
-	e'( d c) e-. d-. c-. 
+	e'( d c) e-. d-. c-.\!
 	b\pp( g' fis e d c)
 	b( c b a g fis)
 % mesures 461 à 465
@@ -573,7 +573,7 @@ musicViolinIMvtIV = \relative c {
 	c b a c b a
 % mesures 471 à 475
 	d c b d c b
-	e d_\crescmarkup c e d c
+	e_\crescmarkup d c e d c
 	f e d gis fis e
 	a gis fis b a gis
 	c(\ff b a) c-. b-. a-. 
@@ -588,7 +588,7 @@ musicViolinIMvtIV = \relative c {
 	e'( d c) e-. d-. c-. 
 	b( g' fis e d c)
 	b( c b a g fis)
-	e4 r8 e g_\crescmarkup fis
+	e4 r8 e_\crescmarkup g fis
 % mesures 486 à 490
 	e4 e e
 	c'4.-> b8 a g

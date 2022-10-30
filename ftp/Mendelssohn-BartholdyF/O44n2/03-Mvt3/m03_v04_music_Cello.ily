@@ -6,13 +6,13 @@
 %###############################################################################
 musicCelloMvtIII = \relative c {
 	\clef bass
-	\override TupletBracket #'bracket-visibility = ##f
+	\key e \minor
 % mesures 1 à 5
 	g1~\p
 	g~
 	g~
 	g~
-	g2 b4\< g
+	g2 b4\< g\!
 % mesures 6 à 10
 	d2(\f g4) r
 	<cis e>1\p
@@ -23,11 +23,11 @@ musicCelloMvtIII = \relative c {
 	R1*1
 	gis,2( c4._\crescmarkup gis8)
 	a2. a4
-	b4\f g_\dimmarkup c,2
+	b4\f g c,2_\dimmarkup
 	<cis' e>1\p
 % mesures 16 à 20
 	d2 gis,
-	a4( c! d) d,
+	a4( c! \once \stemUp d) d,
 	g2 r
 	fis fis4 fis
 	g2 r16 d''16\p( b g e d b g)
@@ -39,7 +39,7 @@ musicCelloMvtIII = \relative c {
 	d1\p~
 % mesures 26 à 30
 	d4 g, a2
-	d,4. fis,8( g b_\crescmarkup e g)
+	d,4. fis,8( g_\crescmarkup b e g)
 	cis,( d b g) a4. a8
 	a b(-> a) gis-. r gis(->_\crescmarkup a) b-.
 	r b\< b b b4\f e
@@ -52,7 +52,7 @@ musicCelloMvtIII = \relative c {
 % mesures 36 à 40
 	d,1~
 	d4 g a8-. a-.( a-. a-.)
-	d2.\f d8-.(\< d-.)
+	d2.\f d8-.(\< d-.)\!
 	e8.\>([ fis16) b8(-. g-.)]\! a-. a-.(_\dimmarkup a-. a-.)
 	d,4\p r cis r
 % mesures 41 à 45
@@ -65,14 +65,14 @@ musicCelloMvtIII = \relative c {
 	R1*1 \mark \default \clef tenor
 	d2(_\dolce g4. dis8)
 	e2 a4( c,)
-	b( d\< g4. b8)
-	d4(\!\sf c) b2_\dimmarkup
+	b( d\< g4. b8)\!
+	d4(\sf c) b2_\dimmarkup
 % mesures 51 à 55
 	a2\p a4 a
-	a2(\< b)
-	c4(\! a) g( fis)
+	a2( << b) {s8\< s s s\!} >>
+	c4( a) g( fis)
 	g2.\sf r4\fermata \clef bass
-	c,,!2_\pcresc b4 a
+	c,,!2\p b4_\crescmarkup a
 % mesures 56 à 60
 	fis4\f~ fis8 r r2
 	g'1\p~
@@ -81,9 +81,9 @@ musicCelloMvtIII = \relative c {
 	fis,( d e c) d2
 % mesures 61 à 65
 	r8 e'\sf( d) cis-. r cis(_\sfcresc d) e-.
-	r e( fis) g-.\f e d cis4
-	c!8(\pp fis,) g16( d' a d b) d( b g' c, g' d g
-	e) g(_\crescmarkup f g e g d g) c,4( b)
+	r e( fis) g-. e\f d cis4
+	c!8(\p fis,) g16( d' a d b) d( b g' c, g' d g
+	e)_\crescmarkup g( f g e g d g) c,4(\f b)
 	a( gis) a(_\dimmarkup c)
 % mesures 66 à 70
 	d2 g,4 r \mark \default

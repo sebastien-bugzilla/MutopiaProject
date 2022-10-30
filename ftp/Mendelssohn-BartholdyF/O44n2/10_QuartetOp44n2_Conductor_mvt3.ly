@@ -20,10 +20,10 @@
 \include "./00-Common/QuartetOp44n2_Shortcuts.ily"
 %\include "./00-Common/QuartetOp44n2_Format_Cond_Mvt03.ly"
 \include "./00-Common/QuartetOp44n2_Tempi.ily"
-\include "./03-Mvt3/m03_v01_music_ViolinI.ly"
-\include "./03-Mvt3/m03_v02_music_ViolinII.ly"
-\include "./03-Mvt3/m03_v03_music_Viola.ly"
-\include "./03-Mvt3/m03_v04_music_Cello.ly"
+\include "./03-Mvt3/m03_v01_music_ViolinI.ily"
+\include "./03-Mvt3/m03_v02_music_ViolinII.ily"
+\include "./03-Mvt3/m03_v03_music_Viola.ily"
+\include "./03-Mvt3/m03_v04_music_Cello.ily"
 %###############################################################################
 %#                          S C O R E    S E C T I O N                         #
 %###############################################################################

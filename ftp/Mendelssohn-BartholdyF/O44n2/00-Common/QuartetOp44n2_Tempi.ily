@@ -26,10 +26,25 @@ tempiMvtII = {
 	}
 }
 tempiMvtIII = {
-	\tempo "Andante"
+	\tempo \markup {
+		"Andante."
+		\line {
+			\medium "Dieses Stück darf durchaus nicht schleppend gespielt werden." 
+			\general-align #Y #DOWN \abs-fontsize #7 
+			\note {4} #1 \medium "= 60."
+		}
+	}
 }
 tempiMvtIV = {
-	\tempo "Presto agitato"
+	\tempo \markup {
+		"Presto agitato."
+		\line {
+			\general-align #Y #DOWN \abs-fontsize #7 
+			\note {2} #1 \medium "= 72."
+		}
+	}
+	s2.*124
+	\tempo "Animato."
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #
