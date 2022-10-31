@@ -39,7 +39,7 @@ musicCelloMvtI = \relative c {
 		b\p c b2) \mark \default
 		e,4 e'16\pp( fis g e b' a g fis) e( fis g e
 % mesures 26 à 30
-		c' b a g) fis(_\crescmarkup g a fis c' b a g fis g fis e
+		c' b a g) \shape #'((0 . -1)(0 . 0.3)(0 . 0)(0 . 0)) Slur fis(_\crescmarkup g a fis c' b a g fis g fis e
 		dis8) r r c\f b4. c8
 		b16( cis dis e fis\< g a g\! fis\> e dis cis b a g fis)\!
 		e4 e'\p( d! c!8 b)
@@ -90,7 +90,7 @@ musicCelloMvtI = \relative c {
 		a'4.->( d,8) d4 d
 		g(\< e d cis)\!
 		a'\sf\>( fis d c!)\!
-		b(\p g'_\crescmarkup fis f)
+		b(\p g' fis_\crescmarkup f)
 		e2( b)
 % mesures 71 à 75
 		r4 g'(_\crescmarkup fis f)
@@ -132,7 +132,7 @@ musicCelloMvtI = \relative c {
 			r2 r4 b'\p(
 			g d b g)
 % mesures 101 à 105
-			e1\laissezVibrer
+			e1-\shape #'((0 . 0)(5 . -1)(10 . -1)(15 . 0)) \laissezVibrer
 		}{
 			g2 r
 			g1\p
@@ -225,7 +225,7 @@ musicCelloMvtI = \relative c {
 	b4 r r2
 	b4 r r2
 % mesures 171 à 175
-	e,4 r8 b'8\p^\arco( e g b e)
+	e,4 r8 b'8\p-\offset X-offset #-1 ^\arco( e g b e)
 	e4 r8 a,,( c e a c)
 	c4 r8 c,( a_\crescmarkup c a g
 	fis a c fis a4) r8 a,(
@@ -239,7 +239,7 @@ musicCelloMvtI = \relative c {
 % mesures 181 à 185
 	a2(_\dimmarkup b4 c)
 	d2.\p d4
-	dis(_\crescmarkup e2\sf) b'4
+	dis(-\offset X-offset #-0.5 _\crescmarkup e2\sf) b'4
 	c a2(\sf b4)
 	c2.(\> b4)\!
 % mesures 186 à 190
