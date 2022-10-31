@@ -21,22 +21,22 @@ musicViolinIIMvtII = \relative c {
 	b a b a gis e
 % mesures 11 à 15
 	e dis b b b cis
-	a4:16-> a2:8
-	a4:16-> a2:8
+	a4:16-> a8 a a a
+	a4:16-> a8 a a a
 	a4:16-> a8 ais b\noBeam r
 	r4 r8 e-. dis-. fis-.
 % mesures 16 à 20
-	<gis, gis'>4:16-> <gis gis'>2:8\p
+	<gis, gis'>4:16-> <gis gis'>8\p q q q
 	<gis gis'>4 r r
-	<gis gis'>4:16-> <gis gis'>2:8
+	<gis gis'>4:16-> <gis gis'>8 q q q
 	<gis gis'>4 r r
 	<gis gis'>4:16\sf <gis gis'>4 r 
 % mesures 21 à 25
 	<gis gis'>4:16\sf <gis gis'>4 r 
 	fis'4:16\sf fis4 r
-	e2:8 dis8_\dimmarkup dis
-	dis dis cis2:8
-	dis4.->\pp cis8-. b-. cis-. 
+	e8 e e e_\dimmarkup dis8 dis
+	dis dis cis8 cis cis cis
+	dis4.->-\offset X-offset #-0.5 \pp cis8-. b-. cis-. 
 % mesures 26 à 30
 	dis4.-> cis8-. b-. cis-. 
 	dis4.-> cis8-. b-. cis-.
@@ -45,7 +45,7 @@ musicViolinIIMvtII = \relative c {
 	<cis e>4.-> <cis e>8 <cis e> <cis e> 
 % mesures 31 à 35
 	<cis e>4.-> eis8 fis eis
-	e! dis cis_\crescmarkup b ais e'
+	e! dis cis-\offset X-offset #-1 _\crescmarkup b ais e'
 	dis4.\f cis8 b cis 
 	dis4.-> cis8 b cis 
 	dis4.-> cis8 b cis 
@@ -53,10 +53,10 @@ musicViolinIIMvtII = \relative c {
 	dis cisis dis b eis cis
 	<cis' e!>4.-> <cis e>8 <cis e> <cis e> 
 	<cis e>4.-> <cis e>8 <cis e> <cis e> 
-	<cis e>2.:8_\dimmarkup
-	<cis e>2:8 cis8 cis \mark \default
+	<cis e>8 q q q_\dimmarkup q q
+	<cis e>8 q q q cis8 cis \mark \default
 % mesures 41 à 45
-	b4\pp r r
+	b4-\offset X-offset #1.6 \pp r r
 	R2.*3
 	
 	
@@ -66,7 +66,7 @@ musicViolinIIMvtII = \relative c {
 	b-. cis-. d!4->( cis8) r
 	ais\p b cis dis! e cis
 	fis dis\< cis b ais cis\!
-	b\> bis cis dis\! e cis
+	b\> bis cis dis e\! cis
 % mesures 51 à 55
 	fis r r4 r
 	R2.*1 \mark \default
@@ -94,11 +94,11 @@ musicViolinIIMvtII = \relative c {
 % mesures 71 à 75
 	\grace fis16 eis8 dis eis cis fis a
 	cis4 r r
-	cis4:16-> cis2:8\cresc 
-	cis4:16-> cis2:8 
-	cis4:16-> cis2:8 
+	cis4:16-> cis8\cresc cis cis cis
+	cis4:16-> cis8 cis cis cis 
+	cis4:16-> cis8 cis cis cis  
 % mesures 76 à 80
-	cis2.:8
+	cis8 cis cis cis cis cis
 	bis8 r gis4\f fis'
 	fis( e4.) dis8
 	dis4( cis4.) bis8
@@ -118,7 +118,7 @@ musicViolinIIMvtII = \relative c {
 % mesures 91 à 95
 	cis cis cis d cis b
 	cis b a gis fis-. e-. 
-	dis!4:16\ff-> dis8 e fis gis
+	dis!4:16\ff^> dis8 e fis gis
 	a b a gis fis e
 	dis4:16\sf dis8 e fis gis
 % mesures 96 à 100
@@ -144,7 +144,7 @@ musicViolinIIMvtII = \relative c {
 	e8 r r4 cis'4:16
 	e8 r r4 cis,4:16\f
 	e8 r r4 cis'4:16
-	e8 r r4 b,4:16_\dimmarkup
+	e8 r r4 \whiteoutMarkup b,4:16-\offset X-offset #1 _\dimmarkup
 % mesures 116 à 120
 	e8 r r4 b'4:16
 	e8 r r4 a,4:16\p
@@ -153,7 +153,7 @@ musicViolinIIMvtII = \relative c {
 	b'8_\dimmarkup r r4 e,4:16
 % mesures 121 à 125
 	a,8 r r4 e'4:16
-	cis'8 r r4 cis,4:16_\sempredim
+	cis'8 r r4 \whiteoutMarkup cis,4:16_\sempredim
 	gis8 r r4 gis4:16
 	gis8 r r4 gis4:16
 	gis4.\pp gis8 gis gis
@@ -168,7 +168,7 @@ musicViolinIIMvtII = \relative c {
 	dis cis bis)
 	cis2.~
 	cis~
-	cis4 b( a 
+	cis4 \once \stemUp b( a 
 % mesures 136 à 140
 	gis fis eis)
 	fis4~ fis8 cis-. a-. cis-. 
@@ -191,8 +191,8 @@ musicViolinIIMvtII = \relative c {
 	<b d>2.:16\pp
 	cis8-. bis-. cis-. e-. dis!-. cis-. 
 	b!-. a-. gis-. b-. b-. gis-. 
-	a4:16-> a2:8 
-	a4:16-> a2:8 
+	a4:16-> a8 a a a 
+	a4:16-> a8 a a a 
 % mesures 156 à 160
 	a4.-> r8 r4
 	r8 e'\cresc dis e e fis
@@ -201,21 +201,21 @@ musicViolinIIMvtII = \relative c {
 	gis a gis a e e
 % mesures 161 à 165
 	e d cis cis d cis
-	d4:16->\f d2:8 
-	d4:16-> d2:8 
-	d4:16-> d8 r r4
+	\dynEO #'(0.5 . 0.5) d4:16^>\f d8 d d d 
+	d4:16-\offset X-offset #0.15 -> d8 d d d
+	d4:16-\offset X-offset #0.15 -> d8 r r4
 	R2.*1 
 % mesures 166 à 170
-	<cis cis'>4:16->\p q2:8
+	<cis cis'>4:16^>\p q8 q q q
 	q4 r r 
-	q4:16\sf q2:8
+	q4:16\sf q8 q q q 
 	q4 r r 
 	q4:16\sf q8 r r4
 % mesures 171 à 175
 	q4:16\sf q8 r r4
 	b'4:16 b4_\dimmarkup r8 b
-	a2:8 gis8 gis
-	gis4:8 fis2:8
+	a8 a a a gis8 gis
+	gis8 gis fis8 fis fis fis
 	gis4.\pp fis8-. e-. fis-. 
 % mesures 176 à 180
 	gis4. fis8-. e-. fis-. 
@@ -225,16 +225,16 @@ musicViolinIIMvtII = \relative c {
 	<fis a>4. <fis a>8 <fis a> <fis a> 
 % mesures 181 à 185
 	<fis a>4. fis8_\crescmarkup fis ais
-	b2:8 b8 dis
+	b8 b b b b8 dis
 	e4.\f dis8 b dis
 	e4. dis8 b dis
 	e dis b dis e dis
 % mesures 186 à 190
-	b dis e2:8
-	<fis, a!>4:16 <fis a>2:8 
-	<fis a>4:16 <fis a>2:8 
-	<fis a>2.:8
-	<fis a>2:8 fis8 b \mark \default
+	b dis e8 e e e
+	<fis, a!>4:16 <fis a>8 q q q 
+	<fis a>4:16 <fis a>8 q q q 
+	<fis a>8 q q q q q
+	<fis a>8 q q q fis8 b \mark \default
 % mesures 191 à 195
 	e\p-. fis-. d-. e-. cis-. e-. 
 	c e c e b e

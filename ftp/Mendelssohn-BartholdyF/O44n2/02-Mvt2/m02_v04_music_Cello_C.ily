@@ -17,7 +17,7 @@ musicCelloMvtII = \relative c {
 	b4.-> r8 r4
 	R2.*2
 	
-	e'16\f e e e e8 e\p e e
+	e'4:16\f e8 e\p e e
 	e e e dis e cis
 % mesures 11 à 15
 	b a gis fis gis a
@@ -27,19 +27,19 @@ musicCelloMvtII = \relative c {
 	R2.*1	
 % mesures 16 à 20
 	r4 r8 e'_\pstaccato e e
-	dis2:8 cis8 cis 
+	dis8 dis dis dis cis8 cis 
 	bis4.-> bis8 cis cis
-	dis2:8 cis8 cis
+	dis8 dis dis dis cis8 cis
 	bis4.\sf bis8-. cis-. cis-. 
 % mesures 21 à 25
 	bis4.\sf bis8-. cis-. cis-. 
 	ais4.\sf ais8 b! b
 	gis gis ais ais_\dimmarkup fisis fisis
 	gis r e r fis r
-	b,16\pp-> b b b b8 fis dis fis
+	b,4:16\pp-> b8 fis dis fis
 % mesures 26 à 30
-	b16-> b b b b8 fis dis fis
-	b16-> b b b b8 fis dis fis
+	b4:16-> b8 fis dis fis
+	b4:16-> b8 fis dis fis
 	b fis b gis cis cis,
 	fis4 r fis'8 r
 	fis,4 r fis'8 r
@@ -80,7 +80,7 @@ musicCelloMvtII = \relative c {
 	R2.*2
 	
 % mesures 61 à 65
-	eis'16\f eis eis eis eis4 r
+	eis'4:16\f eis4 r
 	r r cis,,\p(
 	d2.)(\espressivo
 	cis4) r8 d'\p-. cis-. b-. 
@@ -104,7 +104,7 @@ musicCelloMvtII = \relative c {
 	
 	
 % mesures 81 à 85
-	cis'16\f-> cis cis cis cis8-. b-. a-. gis-. 
+	cis'4:16\f-> cis8-. b-. a-. gis-. 
 	a-. gis-. fis-. d-. b-. cis-. 
 	a b a gis fis a
 	b cis d b cis d
@@ -123,16 +123,16 @@ musicCelloMvtII = \relative c {
 	gis2.(\sf
 % mesures 96 à 100
 	fis4) r fis'
-	eis16-> eis eis eis eis8 fis gis a
+	eis4:16-> eis8 fis gis a
 	b cis b a gis fis
-	eis16-> eis eis eis eis8 fis gis a
+	eis4:16-> eis8 fis gis a
 	b cis b a gis fis
 % mesures 101 à 105
 	eis4:16 eis8 r fis4
 	fis4:16_\crescmarkup fis8 r gis4
 	gis4:16 gis8 r a4
 	ais4:16 ais8 r b4 \mark \default
-	bis4:16\ff bis2:8
+	bis4:16\ff bis8 bis bis bis
 % mesures 106 à 110
 	cis8-. dis-. e-. fis,-. gis-. a-. 
 	gis4:16\sf gis8-. bis,-. cis-. bis-. 
@@ -201,15 +201,15 @@ musicCelloMvtII = \relative c {
 	cis bis cis a b cis
 % mesures 161 à 165
 	b gis a a, b cis
-	e,4.->\f a8 gis fis
+	e,4.^>\f a8 gis fis
 	e4.-> a8 gis fis
 	e4 r r
 	r r8 d''8-. cis-. e-. 
 % mesures 166 à 170
 	a4 r8 a8\p a a
-	gis2:8 fis8 fis
+	gis8 gis gis gis fis8 fis
 	eis4.\sf eis8 fis fis
-	gis2:8 fis8 fis
+	gis8 gis gis gis fis8 fis
 	eis4.\sf eis8 fis fis
 % mesures 171 à 175
 	eis4.\sf eis8 fis fis

@@ -77,6 +77,17 @@ stemOffset = #(define-music-function
 	#}
 )
 
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = ##t
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+
 %naturaltrillmark = \markup {
 %	\concat {
 %		\hspace #0.8

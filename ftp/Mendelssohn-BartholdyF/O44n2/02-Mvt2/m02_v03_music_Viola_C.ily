@@ -21,12 +21,12 @@ musicViolaMvtII = \relative c {
 	gis-. fis-. gis-. fis-. gis-.\noBeam r 
 % mesures 11 à 15
 	R2.*1
-	fis,4:16-> fis2:8 
-	fis4:16-> fis2:8
+	fis,4:16-> fis8 fis fis fis  
+	fis4:16-> fis8 fis fis fis 
 	fis4:16-> fis8 e-. dis-. e-.
 	fis-. gis-. a-. ais-. b-. dis-. 
 % mesures 16 à 20
-	e4 r8 e_\pstaccato e e
+	e4 r8 \whiteoutMarkup e_\pstaccato e e
 	fis fis fis gis e e
 	dis4.-> dis8 e e
 	fis fis fis gis e e
@@ -46,7 +46,7 @@ musicViolaMvtII = \relative c {
 % mesures 31 à 35
 	fis4:16-> fis8 cis ais cis 
 	fis gis ais_\crescmarkup b cis fis,
-	b4.\f ais8 fis ais
+	\whiteoutDynamic b4.-\tweak extra-offset #'(0 . 1.5) \f ais8 fis ais
 	b4.-> ais8 fis ais
 	b4.-> ais8 fis ais
 % mesures 36 à 40
@@ -57,21 +57,21 @@ musicViolaMvtII = \relative c {
 	ais cis fis cis ais fis' \mark \default
 % mesures 41 à 45
 	b\p-. cis-. a!-. b-. gis-. b-. 
-	\repeat tremolo 2 {g8-. b-.} fis-. b-.
-	fis-. b-. \repeat tremolo 2 {eis,-. gis-.}
-	\repeat tremolo 3 {e!-. fis-.}
+	g8-. b-. g-. b-. fis-. b-.
+	fis-. b-. eis,-. gis-. eis-. gis-. 
+	e!-. fis-. e-. fis-. e-. fis-. 
 	dis4 r b'(->
 % mesures 46 à 50
 	ais) r b->~
 	b r b->(
-	fis8\p) fis-. \repeat tremolo 2 {e-. fis-.}
-	dis-.\< fis-. \repeat tremolo 2 {e-. fis-.\!}
-	dis-.\> fis-. \repeat tremolo 2 {e-. fis-.\!}
+	fis8\p) fis-. e-. fis-. e-. fis-. 
+	dis-. fis-.\<  e-. fis-. e-. fis-.\!
+	dis-.\> fis-. e-. fis-. e-.\! fis-.
 % mesures 51 à 55
 	dis r r4 r
 	R2.*1 \mark \default
 	gis4:16\f gis8 cis\p b a
-	\repeat tremolo 2 {gis fis} gis r
+	gis fis gis fis gis r
 	R2.*1
 % mesures 56 à 60
 	fis,4:16-> fis8 e dis e
@@ -80,21 +80,21 @@ musicViolaMvtII = \relative c {
 	fis gis a b_\crescmarkup cis e
 	dis e fis gis a b
 % mesures 61 à 65
-	gis4:16\f gis8 a\p b a
+	\dynEO #'(0 . 1.2) \whiteoutDynamic gis4:16\f gis8 a\p b a
 	b a gis eis cis eis
 	fis b, a gis a fis
 	cis' cis eis4 r
-	fis,4:16\p-> fis2:8
+	fis,4:16\p-> fis8 fis fis fis
 % mesures 66 à 70
 	fis4 r r
-	fis4:16-> fis2:8
+	fis4:16-> fis8 fis fis fis
 	fis4 r r
-	<cis cis'>4:16-> <cis cis'>2:8
+	<cis cis'>4:16-> <cis cis'>8 q q q
 	<cis cis'>4 r r
 % mesures 71 à 75
-	<cis cis'>4:16-> <cis cis'>2:8
+	<cis cis'>4:16-> <cis cis'>8 q q q
 	<cis cis'>8 cis' dis, cis' eis, cis'
-	fis,4 r8 cis''-._\moltocresc a-. gis-.
+	fis,4 r8 \whiteoutDynamic cis''-._\moltocresc a-. gis-.
 	\grace gis16 fis8-. eis-. fis-. cis-. fis-. gis-. 
 	a4.-> cis,8 fis gis
 % mesures 76 à 80
@@ -111,7 +111,7 @@ musicViolaMvtII = \relative c {
 	gis a b gis a b
 % mesures 86 à 90
 	cis4 r r
-	e4:16\f e8 d cis b
+	\dynEO #'(0 . 2) \whiteoutDynamic e4:16\f e8 d cis b
 	a gis a gis fis dis!
 	b r b' e d cis
 	b a b a gis eis
@@ -123,7 +123,7 @@ musicViolaMvtII = \relative c {
 	gis2.(\sf
 % mesures 96 à 100
 	fis4) r dis
-	gis4:16\f-> gis8 a b cis
+	gis4:16-> gis8 a b cis
 	d e d cis b a
 	gis4:16-> gis8 a b cis
 	d e d cis b a
@@ -132,13 +132,13 @@ musicViolaMvtII = \relative c {
 	r4 e4:16_\crescmarkup d8 r
 	r4 e4:16 e8 r
 	r4 fis4:16 fis8 r \mark \default
-	gis4:16\ff gis2:8
+	gis4:16\ff gis8 gis gis gis
 % mesures 106 à 110
 	gis8 gis gis cis cis cis
 	cis4:16\sf cis8 gis gis fis
 	e fis gis cis, cis cis
-	cis4:16\sf cis2:8
-	cis4:16\sf cis2:8
+	cis4:16\sf cis8 cis cis cis
+	cis4:16\sf cis8 cis cis cis
 % mesures 111 à 115
 	cis8 r gis4:16\f cis8 r
 	r4 gis'4:16 cis8 r
@@ -153,7 +153,7 @@ musicViolaMvtII = \relative c {
 	r4 b4:16_\dimmarkup e8 r
 % mesures 121 à 125
 	r4 a,4:16 e'8 r
-	r4 e,4:16_\sempredim cis'8 r
+	r4 \whiteoutMarkup e,4:16_\sempredim cis'8 r
 	r4 e,4:16 gis8 r
 	r4 fis4:16 gis8 r
 	e4.\pp dis8-. cis-. dis-. 
@@ -177,8 +177,8 @@ musicViolaMvtII = \relative c {
 	a'( gis2)
 % mesures 141 à 145
 	r4 gis'4\pp gis
-	gis8.( a16 gis4) gis
-	gis2\<( cis4\!
+	gis8.-\tweak extra-offset #'(0 . -0.5) ( a16 gis4) gis
+	\shape #'((0 . 0)(0 . 0)(0 . -0.5)(0 . -1)) Slur gis2\<( cis4\!
 	bis\> gis fis\!
 	e) gis gis
 % mesures 146 à 150
@@ -197,22 +197,22 @@ musicViolaMvtII = \relative c {
 	fis4:16-> fis8 e dis e
 	fis_\crescmarkup gis a b cis e
 	dis e fis gis a b
-	gis4:16\f gis8 fis gis dis
-	e fis e2:8
+	\dynEO #'(0 . 1.5) gis4:16\f gis8 fis gis dis
+	e fis e8 e e e 
 % mesures 161 à 165
 	e8 r r4 r
-	b4:16\f-> b2:8
-	b4:16-> b2:8
+	b4:16\f^> b8 b b b
+	b4:16-> b8 b b b
 	b4:16-> b8 a gis a
 	b cis d gis a gis
 % mesures 166 à 170
-	a4 r8 cis\p cis cis
-	b2:8 a8 a
-	gis4.\sf gis8 a a
-	b2:8 a8 a
-	gis4.\sf gis8 a a
+	a4 r8 \dynEO #'(0 . 1.5) cis\p cis cis
+	b8 b b b a8 a
+	\dynEO #'(0 . 1.5) gis4.\sf gis8 a a
+	b8 b b b a8 a
+	\dynEO #'(0 . 1.5) gis4.\sf gis8 a a
 % mesures 171 à 175
-	gis4.\sf gis8 a a
+	\dynEO #'(0 . 1.5) gis4.\sf gis8 a a
 	fis4. fis8_\dimmarkup gis gis
 	e a fis a dis, gis
 	e gis cis, fis b, dis
@@ -244,9 +244,9 @@ musicViolaMvtII = \relative c {
 % mesures 196 à 200
 	c-. e-. c-._\crescmarkup e-. b-. e-. 
 	b-. e-. cis!-. b-. ais-. cis-. 
-	b\p <a'! b> <a b>2:8-.
-	<gis b>4\< <a b>2:8\!
-	<gis b>4\> <a b>2:8\!
+	b\p <a'! b> <a b>8-. q-. q-. q-. 
+	<gis b>4\< <a b>8 q q q\!
+	<gis b>4\> <a b>8 q q q\!
 % mesures 201 à 205
 	<gis b>8 r r4 r
 	R2.*1
@@ -293,10 +293,10 @@ musicViolaMvtII = \relative c {
 	gis4. fis8-. e-. fis-.
 	gis4. fis8-. e-. fis-.
 	gis4 r8 <gis b>8\p <gis b> <gis b>
-	<gis b>2.:8
-	<gis b>2.:8
+	<gis b>8 q q q q q
+	<gis b>8 q q q q q 
 % mesures 241 à 244
-	<gis b>2.:8
+	<gis b>8 q q q q q
 	<gis b>8 r r4 r
 	a8 r r4 r
 	gis r 4 r \bar "|."
