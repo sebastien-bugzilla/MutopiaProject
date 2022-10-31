@@ -35,8 +35,8 @@ musicViolinIIMvtIII = \relative c {
 	e,4~\p e16( g fis e) e4~ e16( g fis e)
 	d4 b'4. b8_\crescmarkup b b
 	b4 d4. d8 d d
-	d4~\f d16 f,( b d) e4~\> e16 a,( cis e\!
-	fis!4) r8 fis\p fis4( e)~ 
+	d4~\f d16 f,( b d) e4~\> e16\! a,( cis e
+	fis!4) r8 \dynEO #'(0 . 1) fis\p fis4( e)~ 
 % mesures 26 à 30
 	e8 d4 d8~ d cis-.( b-. cis-.)
 	d fis, fis fis fis4(_\crescmarkup e)~
@@ -77,7 +77,7 @@ musicViolinIIMvtIII = \relative c {
 	d\f( a' c a c8) r r4 c\p
 	r r8 b b4( a)~
 	a8 g4 g fis8-.( e-. fis-.)
-	g b,(-. b-. b-.) b4(_\crescmarkup a)~
+	g b,(-. b-. b-.) b4(-\tweak extra-offset #'(1.5 . 2.5) _\crescmarkup a)~
 	a r r2
 % mesures 61 à 65
 	r4 r8 e'16(_\crescmarkup cis) a4 r8 g'16( e)

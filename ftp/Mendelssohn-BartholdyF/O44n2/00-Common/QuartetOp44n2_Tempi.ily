@@ -27,11 +27,14 @@ tempiMvtII = {
 }
 tempiMvtIII = {
 	\tempo \markup {
-		"Andante."
-		\line {
-			\medium "Dieses Stück darf durchaus nicht schleppend gespielt werden." 
-			\general-align #Y #DOWN \abs-fontsize #7 
-			\note {4} #1 \medium "= 60."
+		\column {
+			\line {
+				"Andante." \general-align #Y #DOWN \abs-fontsize #7 
+				\note {4} #1 \medium "= 60."
+			}
+			\line {
+				\medium \italic "Dieses Stück darf durchaus nicht schleppend gespielt werden." 
+			}
 		}
 	}
 }
