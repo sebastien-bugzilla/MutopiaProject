@@ -8,7 +8,7 @@ musicCelloMvtIV = \relative c {
 	\clef bass
 	\key e \minor
 % mesures 1 à 5
-	e,8\f-> e e4 r
+	e,8\f^> e e4 r
 	R2.*7
 	
 	
@@ -166,7 +166,7 @@ musicCelloMvtIV = \relative c {
 % mesures 131 à 135
 	g, g' r
 	g,-. g-. g-.
-	g r b\f(->
+	g r b\f(^>
 	e) fis-. g-.
 	r r e->(
 % mesures 136 à 140
@@ -245,7 +245,7 @@ musicCelloMvtIV = \relative c {
 	c4 c c
 	b2.
 	c4 c c
-	fis,2(_\sfmarkup g4)
+	\whiteoutMarkup fis,2(-\tweak extra-offset #'(0 . 1.5) _\sfmarkup g4)
 	a( b) b \mark \default
 % mesures 201 à 205
 	e,\f r r 
@@ -376,14 +376,14 @@ musicCelloMvtIV = \relative c {
 % mesures 306 à 310
 	a
 	g\cresc
-	a)_\sfmarkup
+	\whiteoutMarkup a)-\tweak extra-offset #'(0 . 2) _\sfmarkup
 	b(
 	c
 % mesures 311 à 315
 	b
 	a)
-	g(
-	fis\dim
+	<< g( {s4 s s8 s\!} >>
+	fis2.\dim
 	b 
 % mesures 316 à 320
 	e,)
@@ -501,7 +501,7 @@ musicCelloMvtIV = \relative c {
 	gis r r
 % mesures 411 à 415
 	cis,2.(
-	dis)
+	\once \stemUp dis)
 	bis(
 	cis4) r r
 	bis2.(
@@ -526,7 +526,7 @@ musicCelloMvtIV = \relative c {
 % mesures 431 à 435
 	b4 r r
 	R2.*1
-	dis4_\crescmarkup^\arco( e fis)
+	dis4_\crescmarkup-\offset X-offset #-4 ^\arco( e fis)
 	fis( g a)
 	b2.(
 % mesures 436 à 440

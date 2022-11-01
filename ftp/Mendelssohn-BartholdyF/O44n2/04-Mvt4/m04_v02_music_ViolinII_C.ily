@@ -8,7 +8,7 @@ musicViolinIIMvtIV = \relative c {
 	\clef treble
 	\key e \minor
 % mesures 1 à 5
-	b'8->\f b b4 b\p
+	b'8^>-\offset X-offset #-1.3 \f b b4 b\p
 	c8-> c c4 c
 	c8-> c c4 c
 	b8-> b b4 b
@@ -94,18 +94,18 @@ musicViolinIIMvtIV = \relative c {
 % mesures 71 à 75
 	g g2
 	fis4 fis2
-	ais,2.\sf~
+	ais,2.-\offset X-offset #-1 \sf~
 	ais \mark \default
-	\repeat tremolo 3 {c!8(\p d}
+	c!8(\p d c d c d
 % mesures 76 à 80
-	\repeat tremolo 3 {c8 d}
-	\repeat tremolo 3 {c8 d}
-	\repeat tremolo 3 {c8 d)}
+	c d c d c d 
+	c d c d c d 
+	c d c d c d)
 	c4 r r
-	r8 d( fis d g d_\crescmarkup
+	r8 d( fis d g \whiteoutMarkup d-\tweak extra-offset #'(0 . 2) _\crescmarkup
 % mesures 81 à 85
-	\repeat tremolo 3 {fis8 d}
-	\repeat tremolo 3 {fis8 d)}
+	fis8 d fis8 d fis8 d
+	fis8 d fis8 d fis8 d)
 	g4 r r
 	r g\p g
 	g2.
@@ -116,15 +116,15 @@ musicViolinIIMvtIV = \relative c {
 	e2.
 	R2.*1
 % mesures 91 à 95
-	\repeat tremolo 3 {c8(\p d}
-	\repeat tremolo 3 {c8 d}
-	\repeat tremolo 3 {c8 d}
-	\repeat tremolo 3 {c8 d)}
-	\repeat tremolo 3 {b( g_\crescmarkup}
+	c8(\p d c d c d
+	c d c d c d 
+	c d c d c d
+	c d c d c d)
+	b( g b g b-\tweak extra-offset #'(0 . 1.9) _\crescmarkup g
 % mesures 96 à 100
-	\repeat tremolo 2 {b g} c g)
-	\repeat tremolo 3 {d'(\f g,}
-	\repeat tremolo 3 {d' g,)}
+	b g b g c g)
+	\shape #'((0 . 0)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur d'(-\offset X-offset #-1 \f g, d' g, d' g,
+	d' g, d' g, d' g,) 
 	c2 r4
 	r e'\p( b 
 % mesures 101 à 105
@@ -146,7 +146,7 @@ musicViolinIIMvtIV = \relative c {
 	b4 g d
 	d'2.(
 % mesures 116 à 120
-	cis_\crescmarkup
+	cis-\offset X-offset #0.5 _\crescmarkup
 	c!
 	b2) g4
 	e8\p e e4 r
@@ -166,7 +166,7 @@ musicViolinIIMvtIV = \relative c {
 % mesures 131 à 135
 	r g( e)
 	d-. d-. d-.
-	d r dis->\f(
+	d r dis^>-\offset X-offset #-1 \f(
 	e) b b
 	r r c->(
 % mesures 136 à 140
@@ -186,7 +186,7 @@ musicViolinIIMvtIV = \relative c {
 	cis2.~
 	cis2 r4
 	R2.*1
-	bes'2.\ff(
+	bes'2.-\offset X-offset #0.6 \ff(
 % mesures 151 à 155
 	b!8) r a\< r d r
 	d r <d, c'> r <d b'> r\!
@@ -248,7 +248,7 @@ musicViolinIIMvtIV = \relative c {
 	c4(_\sfmarkup dis, e)
 	c( b a) \mark \default
 % mesures 201 à 205
-	g8\f b b4 b
+	g8-\offset X-offset #0.5 \f b b4 b
 	c8-> c c4 c
 	c8-> c c4 c
 	b8-> b b4 b
@@ -309,7 +309,7 @@ musicViolinIIMvtIV = \relative c {
 	a( b) c-. b-. c-. a-. 
 % mesures 251 à 255
 	fis'-. d-. fis-. a-. fis-. c-. 
-	b4(_\crescmarkup c cis
+	b4(^\crescmarkup c cis
 	d\< e fis)\!
 	g(\> e des\!
 	c2 bes4
@@ -321,7 +321,7 @@ musicViolinIIMvtIV = \relative c {
 	R2.*1
 % mesures 261 à 265
 	fis'8->( e) dis fis e a,
-	a\ff a a4 a
+	\dynEO #'(0 . 1.0) a\ff a a4 a
 	a8 a a4 a
 	g g' e
 	b g e
@@ -345,7 +345,7 @@ musicViolinIIMvtIV = \relative c {
 	fis8 fis e4 a8\< a
 % mesures 281 à 285
 	g4 b8 b b4\!
-	b8\f b b4 b
+	b8-\offset X-offset #-0.7 \f b b4 b
 	c4. c8 b a
 	g2.~ \mark \default
 	g4 r8 e'\f-. g-. fis-.
@@ -394,23 +394,23 @@ musicViolinIIMvtIV = \relative c {
 % mesures 321 à 325
 	c4 r8 e g fis
 	e4 r8 c e d
-	c2.\f->
+	c2.-\offset X-offset #-0.5 \f->
 	c->
-	c\sf~
+	c-\offset X-offset #-0.5 \sf~
 % mesures 326 à 330
 	c
-	a~\sf\>
+	a~-\offset X-offset #-1 \sf\>
 	a~\! \bar "||" \key cis \minor \mark \default
 	a8\p( b a b a b)
-	\repeat tremolo 3 {a( b}
+	a( b a b a b
 % mesures 331 à 335
-	\repeat tremolo 3 {a b}
-	\repeat tremolo 3 {a b}
+	a b a b a b 
+	a b a b a b
 	a4) r r
-	r8 b( dis b e_\crescmarkup b
-	\repeat tremolo 3 {fis' b,}
+	r8 b( dis b \whiteoutMarkup e_\crescmarkup b
+	fis' b, fis' b, fis' b,
 % mesures 336 à 340
-	\repeat tremolo 2 {dis b} fis' b,
+	dis b dis b fis' b,
 	e2) r4
 	r e\p e
 	e2.
@@ -422,14 +422,14 @@ musicViolinIIMvtIV = \relative c {
 	R2.*1
 	a8(\p b a b a b
 % mesures 346 à 350
-	\repeat tremolo 3 {a b}
-	\repeat tremolo 3 {a b}
-	\repeat tremolo 3 {a\< b)\!}
-	\repeat tremolo 3 {gis(\f b}
-	\repeat tremolo 3 {gis b}
+	a b a b a b
+	a b a b a b
+	a\< b a b a b\!) 
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur gis(-\offset X-offset #-0.5 \f b gis b gis b 
+	gis b gis b gis b
 % mesures 351 à 355
-	\repeat tremolo 3 {gis b}
-	\repeat tremolo 3 {gis b)}
+	gis b gis b gis b
+	gis b gis b gis b)
 	a4 r r
 	r cis'_\dimmarkup( gis
 	b a) r
@@ -461,7 +461,7 @@ musicViolinIIMvtIV = \relative c {
 	g8 g g4 r
 	<a, fis'>8 <a fis'> <a fis'>4 r
 	R2.*1 \mark \default
-	<gis e'>8\f r b'2\p 
+	<gis e'>8-\offset X-offset #-0.5 \f r b'2\p 
 	r4 a( gis)
 % mesures 381 à 385
 	r e( cis)
@@ -471,7 +471,7 @@ musicViolinIIMvtIV = \relative c {
 	r e( cis)
 % mesures 386 à 390
 	b-. b-. b-.
-	b r fis'->(_\crescmarkup
+	b r \whiteoutMarkup fis'->(_\crescmarkup
 	e) fis-. gis-.
 	r r a->~
 	a a-. a-.
@@ -544,11 +544,11 @@ musicViolinIIMvtIV = \relative c {
 % mesures 446 à 450
 	c b a c b a
 	d c b d c b
-	e_\crescmarkup d c e d c
+	e-\offset X-offset #-0.7 _\crescmarkup d c e d c
 	f e d gis fis e
 	a gis fis b a gis
 % mesures 451 à 455
-	c\ff-. b-. a4 r
+	c-.-\offset X-offset #-1.2 \ff b-. a4 r
 	R2.*2
 	
 	f2.\p(
@@ -574,9 +574,9 @@ musicViolinIIMvtIV = \relative c {
 % mesures 471 à 475
 	a4.( gis8) a b
 	b4.(_\crescmarkup a8) b c
-	d,2.:8
-	d2: c8 b
-	e\ff-. d-. c4 r
+	d,8 d d d d d
+	d d d d c8 b
+	e-\offset X-offset #-0.7 \ff-. d-. c4 r
 % mesures 476 à 480
 	R2.*2
 	
@@ -596,21 +596,21 @@ musicViolinIIMvtIV = \relative c {
 	e4 r r
 	R2.*1
 % mesures 491 à 495
-	e'2.(\f
+	\dynEO #'(0.3 . 1.7) e'2.(\f
 	dis)
 	e4 r r
 	c4 c c
 	b2 r4
 % mesures 496 à 500
 	c c c
-	f2._\piuf->
+	\whiteoutMarkup f2._\piuf->
 	f4 f f
 	gis2.->
 	gis4 gis gis
 % mesures 501 à 505
 	a2.->
 	ais->
-	<b, b'>\ff->~
+	<b, b'>-\offset X-offset #0.8 \ff->~
 	<b b'>
 	g'\sf
 % mesures 506 à 510
@@ -620,7 +620,7 @@ musicViolinIIMvtIV = \relative c {
 	b b dis e b dis
 	e b dis e b dis
 % mesures 511 à 515
-	e4\ff <b, b'> <b b'> 
+	\dynEO #'(0 . 2.1) e4\ff <b, b'> <b b'> 
 	<b b'> <b b'> <b b'> 
 	<b b'> r r
 	<b, a' b> r r

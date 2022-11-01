@@ -29,7 +29,7 @@ sempredim = \markup {\italic {sempre dim.}}
 sempre = \markup {\italic sempre}
 semprep = \markup {\italic sempre \dynamic p }
 sfcresc= \markup {\hspace #-0.4 \dynamic sf \italic {cresc.}}
-sfmarkup = \markup {\hspace #-0.4 \dynamic sf}
+sfmarkup = \markup {\hspace #-0.39 \dynamic sf}
 stacc = \markup {\italic stacc.}
 
 

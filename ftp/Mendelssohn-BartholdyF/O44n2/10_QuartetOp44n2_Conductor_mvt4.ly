@@ -18,12 +18,12 @@
 \include "./00-Common/QuartetOp44n2_timeMvt.ily"
 \include "./00-Common/QuartetOp44n2_LayoutConductors.ily"
 \include "./00-Common/QuartetOp44n2_Shortcuts.ily"
-%\include "./00-Common/QuartetOp44n2_Format_Cond_Mvt04.ly"
+\include "./00-Common/QuartetOp44n2_Format_Cond_Mvt4.ily"
 \include "./00-Common/QuartetOp44n2_Tempi.ily"
-\include "./04-Mvt4/m04_v01_music_ViolinI.ily"
-\include "./04-Mvt4/m04_v02_music_ViolinII.ily"
-\include "./04-Mvt4/m04_v03_music_Viola.ily"
-\include "./04-Mvt4/m04_v04_music_Cello.ily"
+\include "./04-Mvt4/m04_v01_music_ViolinI_C.ily"
+\include "./04-Mvt4/m04_v02_music_ViolinII_C.ily"
+\include "./04-Mvt4/m04_v03_music_Viola_C.ily"
+\include "./04-Mvt4/m04_v04_music_Cello_C.ily"
 %###############################################################################
 %#                          S C O R E    S E C T I O N                         #
 %###############################################################################
@@ -37,7 +37,7 @@
 		}
 		subsubtitle = \markup { 
 			"String Quartet No. 4 in E Minor, Op. 44 No. 2 — "
-			\concat {"4" \super th} " Movement"
+			\concat {"4" \super th} "Movement"
 		}
 		instrument = \markup {
 			""
@@ -48,9 +48,9 @@
 			\new StaffGroup <<
 				\new GrandStaff <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtIV
-%						}
+						\new Voice {
+							\formatConductorMvtIV
+						}
 						\new Voice {
 							\tempiMvtIV
 						}

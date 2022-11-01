@@ -8,7 +8,7 @@ musicViolaMvtIV = \relative c {
 	\clef alto
 	\key e \minor
 % mesures 1 à 5
-	g'8\f-> g g4 g\p
+	g'8\f^> g g4 g\p
 	a8-> a a4 a
 	a8-> a a4 a
 	g8-> g g4 g
@@ -32,7 +32,7 @@ musicViolaMvtIV = \relative c {
 	dis4. c'8 b a
 	g2.\sf~
 % mesures 21 à 25
-	g4 r8 e\f-. g-. fis-. 
+	g4 r8 e-\offset X-offset #-1 \f-. g-. fis-. 
 	e4 r r
 	R2.*1
 	g,4\p g g
@@ -64,7 +64,7 @@ musicViolaMvtIV = \relative c {
 % mesures 46 à 50
 	g4.->( fis8)_\crescmarkup e dis
 	a'4->( g8) g fis e
-	e_\crescmarkup g fis e d! cis
+	\beamOffset #'(0.3 . 0.3) e_\crescmarkup g fis e d! cis
 	fis a g fis e d
 	fis4 ais cis
 % mesures 51 à 55
@@ -86,10 +86,10 @@ musicViolaMvtIV = \relative c {
 	b( cis) d b cis d
 	e( fis) g-. e-. fis-. g-. 
 % mesures 66 à 70
-	e4 g\f g
-	g(\sf fis2)
+	e4 \dynEO #'(0 . 1.5) g\f g
+	\dynEO #'(0.5 . 1.5) g(\sf fis2)
 	r4 fis fis
-	fis(\sf e2)
+	\dynEO #'(0.5 . 1.5) fis(\sf e2)
 	r4 d_\crescmarkup d
 % mesures 71 à 75
 	e ais2
@@ -104,8 +104,8 @@ musicViolaMvtIV = \relative c {
 	c8(\p d c d c d
 	c d c d_\crescmarkup b d)
 % mesures 81 à 85
-	\repeat tremolo 3 {a8( d}
-	\repeat tremolo 3 {a8 d)}
+	a8( d a d a d
+	a d a d a d)
 	d4 r r
 	r c,(\p c')
 	c2( b4)
@@ -120,11 +120,11 @@ musicViolaMvtIV = \relative c {
 	gis\< a b)
 	c( b a\!
 	g'2 fis4)
-	\repeat tremolo 3 {f8( g_\crescmarkup}
+	\shape #'((0 . 0)(0 . -0.7)(0 . -0.7)(0 . 0)) Slur f8( g f g f_\crescmarkup g
 % mesures 96 à 100
-	\repeat tremolo 2 {f g} e g)
-	\repeat tremolo 3 {d(\f g}
-	\repeat tremolo 3 {d g)}
+	f g f g e g)
+	\shape #'((0 . 0)(0 . -0.7)(0 . -0.7)(0 . 0)) Slur d(\f g d g d g
+	d g d g d g)
 	g,2 r4
 	r c'(\p gis
 % mesures 101 à 105
@@ -166,7 +166,7 @@ musicViolaMvtIV = \relative c {
 % mesures 131 à 135
 	r e( cis)
 	c!-. c-. c-. 
-	b r b->\f~
+	b r b^>\f~
 	b a-. g-. 
 	r r g->(
 % mesures 136 à 140
@@ -176,7 +176,7 @@ musicViolaMvtIV = \relative c {
 	c'8(\ff g) f-. aes-. g-. e-. 
 	c( e) f d e a
 % mesures 141 à 145
-	a4\f fis!-. fis-. 
+	a4\f fis!-. fis-.
 	fis-. fis-. fis-. 
 	fis2.
 	a,2.:8\<
@@ -186,7 +186,7 @@ musicViolaMvtIV = \relative c {
 	<g bes>2.~
 	<g bes>2 r4
 	R2.*1
-	g'2.\ff~
+	\dynEO #'(0.5 . 1.5) g'2.\ff~
 % mesures 151 à 155
 	g8 r g\< r a r
 	d, r fis r g\! r
@@ -207,7 +207,7 @@ musicViolaMvtIV = \relative c {
 	b( \grace d16 c4 b)
 % mesures 166 à 170
 	b2( e4)
-	g\f <g cis> <g cis> 
+	\dynEO #'(0 . 1.5) g\f <g cis> <g cis> 
 	<g cis> <g cis> <g cis> 
 	<g cis>2 r4
 	R2.*1
@@ -245,7 +245,7 @@ musicViolaMvtIV = \relative c {
 	e4 e e
 	b'4.->( a8 g fis)
 	e4 e e
-	e'(_\sfmarkup c b)
+	e'(-\tweak extra-offset #'(0 . 3) _\sfmarkup c b)
 	\grace b16 a4( g fis) \mark \default
 % mesures 201 à 205
 	e8\f g g4 g
@@ -286,7 +286,7 @@ musicViolaMvtIV = \relative c {
 % mesures 231 à 235
 	ees4\< ees ees\!
 	d r8 g,\p a b
-	c b a a b_\crescmarkup c 
+	c b a a \whiteoutMarkup b_\crescmarkup c 
 	d c b b c d
 	e d cis cis d e
 % mesures 236 à 240
@@ -314,7 +314,7 @@ musicViolaMvtIV = \relative c {
 	g'( e) bes-. a-. bes-. g-. 
 	e-. g-. bes-. c-. e-. g-. 
 % mesures 256 à 260
-	a4( \grace c16 bes4 a)
+	a4( \grace {\once \stemDown c16} bes4 a)
 	a2( c4)
 	a4(_\crescmarkup gis a)
 	a2( c4)
@@ -345,7 +345,7 @@ musicViolaMvtIV = \relative c {
 	b8 b b4 dis8\< dis
 % mesures 281 à 285
 	e4 a8 a g4\!
-	<dis a'>8\f <dis a'> <dis a'>4 <dis a'>
+	<dis a'>8-\offset X-offset #-0.7 \f <dis a'> <dis a'>4 <dis a'>
 	a'4. a8 g fis
 	e2.~ \mark \default
 	e4 r8 e\f-. g-. fis-. 
@@ -407,10 +407,10 @@ musicViolaMvtIV = \relative c {
 	
 	
 	a8(\p b a b a b
-	\repeat tremolo 3 {a8 b}
-	\repeat tremolo 3 {a8_\crescmarkup b}
+	a b a b a b
+	a_\crescmarkup b a b a b 
 % mesures 336 à 340
-	\repeat tremolo 2 {a8 b} dis b)
+	a b a b dis b)
 	b2 r4
 	r e\p( cis)
 	cis2( bis4)
@@ -420,16 +420,16 @@ musicViolaMvtIV = \relative c {
 	a2( b4)
 	a2.
 	R2.*1
-	dis,2\p( e4
+	dis,2\p_( e4
 % mesures 346 à 350
-	eis\< fis gis\!
+	eis-\tweak extra-offset #'(0 . 2.2) \< fis gis\!
 	a gis fis
 	e'2\sf dis4)
-	\repeat tremolo 3 {e8(\f gis}
-	\repeat tremolo 3 {e gis}
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur e8(-\offset X-offset #-0.5 \f gis e gis e gis 
+	e gis e gis e gis
 % mesures 351 à 355
-	\repeat tremolo 3 {e gis}
-	\repeat tremolo 3 {e gis)}
+	e gis e gis e gis
+	e gis e gis e gis) 
 	e4 r r 
 	r a(_\dimmarkup eis
 	gis fis) r
@@ -437,7 +437,7 @@ musicViolaMvtIV = \relative c {
 	r fis( cis
 	e dis) r
 	R2.*1
-	c2.\p(
+	\once \stemUp c2.\p(
 	b
 % mesures 361 à 365
 	ais
@@ -471,7 +471,7 @@ musicViolaMvtIV = \relative c {
 	r cis( ais)
 % mesures 386 à 390
 	a!-. a-. a-.
-	gis r gis->~_\crescmarkup
+	gis r \whiteoutMarkup gis->~_\crescmarkup
 	gis gis-. cis-.
 	r r a->~
 	a a-. a-.
@@ -486,7 +486,7 @@ musicViolaMvtIV = \relative c {
 	e2.~
 	e2 r4
 	R2.
-	e2.\ff~
+	e2.-\offset X-offset #-1 \ff~
 % mesures 401 à 405
 	e8 r e\< r fis r
 	b, r dis r e\! r
@@ -530,7 +530,7 @@ musicViolaMvtIV = \relative c {
 	a( b c)
 	dis( e fis)
 % mesures 436 à 440
-	<fis a>2.\f \mark \default
+	\dynEO #'(0.3 . 1.5) <fis a>2.\f \mark \default
 	R2.*4
 	
 	
@@ -552,7 +552,7 @@ musicViolaMvtIV = \relative c {
 	R2.*2
 	
 	a,,2.\p(
-	c
+	\once \stemUp c
 % mesures 456 à 460
 	f,
 	e\>)~
@@ -564,7 +564,7 @@ musicViolaMvtIV = \relative c {
 	R2.*3
 	
 	
-	r8 b'\p e d c b_\crescmarkup
+	r8 b'\p e d c \whiteoutMarkup b_\crescmarkup
 % mesures 466 à 470
 	a b c a b c
 	b dis e b dis e
@@ -603,7 +603,7 @@ musicViolaMvtIV = \relative c {
 	b'4.\sf a8 g fis
 % mesures 496 à 500
 	e4 e e
-	f2.->_\piuf
+	\whiteoutMarkup f2.->_\piuf
 	f4 f f
 	gis2.->
 	gis4 gis gis
@@ -620,7 +620,7 @@ musicViolaMvtIV = \relative c {
 	b b dis e b dis
 	e b dis e b dis
 % mesures 511 à 515
-	e4\ff dis e 
+	\dynEO #'(0 . 2.1) e4\ff dis e 
 	dis e dis
 	e r r
 	b, r r
