@@ -14,7 +14,7 @@ musicViolinIMvtIII = \relative c {
 	e2 a4( c,)
 	b(\< d g4. b8)\!
 % mesures 6 à 10
-	d4(\f c) b2_\dimmarkup
+	d4(\f c) b2-\offset X-offset #-1 _\dimmarkup
 	a2\p a4 a
 	a2( b\<
 	c4)\! c( b a8 e)
@@ -23,7 +23,7 @@ musicViolinIMvtIII = \relative c {
 	d2(_\pcresc g4. dis8)
 	e1
 	c2( f4. c8)
-	d4\f g e2_\dimmarkup
+	d4\f g e2-\offset X-offset #-1.7 _\dimmarkup
 	a2\p a4 a
 % mesures 16 à 20
 	a2\<( b)\!
@@ -45,14 +45,14 @@ musicViolinIMvtIII = \relative c {
 	r d(\< e fis)\f fis4( e8) d-.
 % mesures 31 à 35
 	cis16(\p d e g! fis d cis e d) a( cis e d a ais cis
-	b) g_\crescmarkup( fis a! g d fis d) e(\f fis g gis a_\dimmarkup b cis d)
+	b) g-\offset X-offset #-3 _\crescmarkup( fis a! g d fis d) e(-\offset X-offset #-1 \f fis g-\tweak X-offset #1 ^\dimmarkup gis \stemUp a b cis d) \stemNeutral % -\tweak extra-offset #'(5 . 1)
 	e( fis g gis a c! b a) gis!( g fis e dis e g e
-	cis\p d fis d b a d a) \tuplet 6/4 4 {g( fis a d a fis d fis a d fis d 
+	cis\p d fis d b a d a) \tupletDown \shape #'((0 . 0)(0 . 0)(0 . -0.5)(0 . -0.5)) Slur \tuplet 6/4 4 {g( fis a d a fis d fis a d fis d \tupletNeutral
 	a d e a e d} e a) cis-. e-. a4.( cis,,8) \mark \default
 % mesures 36 à 40
 	d4 fis,8_\pespress-.( fis-.) a8.([ g16) fis8-.( fis-.)]
 	fis8.([ e16) d8-.( b-.)] a-. a-.( a-. a-.)
-	a16(\< d fis a\! d8-.\f d-.) d4.\< fis8\!
+	\hairpinShorten #'(1.5 . 0) a16(\< d fis a\! d8-.\f d-.) d4.\< fis8\!
 	fis8.[(\> e16) d8-.( b-.)]\! a-. a-.(_\dimmarkup a-. a-.)
 	a1\p~
 % mesures 41 à 45
@@ -80,7 +80,7 @@ musicViolinIMvtIII = \relative c {
 	b8 d,-.( d-. d-.) d4(_\crescmarkup c)~
 	c( b8) c( b) a-.( g-. a-.)
 % mesures 61 à 65
-	b cis(\sf d) e-. r e(\sf fis)_\crescmarkup g-.
+	b cis(\sf d) e-. r \dynEO #'(-2.3 . 2) e(\sf fis)^\crescmarkup g-.
 	r g( a) b-. cis d\f e4~
 	e16\p d( a' c! b g fis a g) d( dis fis e c b d
 	c)_\crescmarkup g( b d c g b g) a(\f b c cis d e fis g)
@@ -99,9 +99,9 @@ musicViolinIMvtIII = \relative c {
 	d4( g,) fis4._\crescmarkup( d'8)
 % mesures 76 à 80
 	d4( f,) e4. c8
-	ees2(\f d4) d_\dimmarkup
+	ees2(\f d4) d-\offset X-offset #-1 _\dimmarkup
 	d'1\p~
-	d2~_\dimmarkup d16 b\pp( a g e d e d)
+	d2~-\offset X-offset #-1 _\dimmarkup d16 b\pp( a g e d e d)
 	g( d c b d b a g) d( g b fis a g e d)
 % mesures 81 à 83
 	\repeat tremolo 4 {e16(\pp d} \repeat tremolo 4 {e d)}

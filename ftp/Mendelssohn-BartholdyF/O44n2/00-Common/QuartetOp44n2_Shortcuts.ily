@@ -31,7 +31,7 @@ semprep = \markup {\italic sempre \dynamic p }
 sfcresc= \markup {\hspace #-0.4 \dynamic sf \italic {cresc.}}
 sfmarkup = \markup {\hspace #-0.39 \dynamic sf}
 stacc = \markup {\italic stacc.}
-
+tranquillo = \markup {\italic tranquillo}
 
 
 moltocresc = #(
@@ -84,6 +84,14 @@ dynEO = #(define-music-function
 		\once \override DynamicText.extra-offset = #offset
 		\once \override DynamicText.whiteout = ##t
 		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+markYoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.Y-offset = #offset
 	#}
 )
 
@@ -159,15 +167,6 @@ dynEO = #(define-music-function
 %		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
 %	#}
 %)
-
-%markYoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.Y-offset = #offset
-%	#}
-%)
-
 
 %tupletOffset = #(define-music-function
 %	(offset)

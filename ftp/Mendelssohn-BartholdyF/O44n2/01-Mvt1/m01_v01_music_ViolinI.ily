@@ -12,17 +12,17 @@ musicViolinIMvtI = \relative c {
 	e g b e)
 	\repeat volta 2 {
 		g2(\sf fis4 e)
-		fis,4. fis8( b4.) b8(
+		fis,4. fis8( \stemUp b4.) b8( \stemNeutral
 		a4 g) r a8 b
 % mesures 6 à 10
 		d4\<( c) b-. a-.\!
 		g( fis) r fis8 g
-		b4(\> a)  g-. fis-.\!
+		\once \stemUp b4(\> a)  g-. fis-.\!
 		e(\p dis) r b( 
 		e g_\crescmarkup b e)
 % mesures 11 à 15
 		g2\sf( fis4 e)
-		fis,4. fis8( b4.) b8(
+		fis,4. fis8( b4.) \once \stemUp b8(
 		a4 gis) r a8 b
 		d4( c) b-. a-.
 		a( gis) r a8_\crescmarkup b
@@ -46,12 +46,12 @@ musicViolinIMvtI = \relative c {
 		c' b a g) fis(_\crescmarkup g a fis c' b a g fis g fis e)
 % mesures 31 à 35
 		dis( e fis dis a' g fis e) dis( e fis dis a' g fis e)
-		dis8\f fis' fis fis fis4 fis,
+		dis8-\tweak extra-offset #'(0.3 . 0.7) \f fis' fis fis fis4 fis,
 		r8 g'_\crescmarkup g g g( e c g)
 		a d, d'2 d4~
 		d8 b'[ b b] b( g e) e-.
 % mesures 36 à 40
-		e\ff( e') e-. e-. e( cis ais e)
+		\dynEO #'(0 . 1) e\ff( e') e-. e-. e( cis ais e)
 		d( d') d-. d-. d( b fis d)
 		cis'(\sf g e cis) b'(\sf gis d b)
 		ais r ais'16\sf( b cis ais e' d cis b) ais( b cis ais
@@ -65,7 +65,7 @@ musicViolinIMvtI = \relative c {
 % mesures 46 à 50
 		fis8( e4 d8-.) d( cis4 b8-.)
 		ais4 r r g->
-		fis16( g fis g e\< fis e fis dis\>_\dimmarkup e dis e\! d e d e)
+		fis16( g fis g e\< fis e fis dis\>^\dimmarkup e dis e\! d e d e)
 		cis4 r b_\dimmarkup r 
 		ais r cis'-.( r
 % mesures 51 à 55
@@ -117,10 +117,10 @@ musicViolinIMvtI = \relative c {
 		b2(\sf\> a4 g)\!
 		a,4.(\p a8-.) d2~
 % mesures 91 à 95
-		d8 b( g a b g d \grace { fis16 } e8
-		d4._\dimmarkup d8-.) d'2~
-		d8 b( g a b g d \grace { fis16 } e8
-		d4.\pp d8-.) d'2~
+		d8 \shape #'((0 . 0)(0 . -1.3)(0 . -1.3)(0 . 0)) Slur b( g a b g d \grace { fis16 } e8
+		d4.-\tweak extra-offset #'(-1.5 . 2.7) _\dimmarkup d8-.) d'2~
+		d8 \shape #'(((0 . 0)(0 . 0)(0 . 0)(0 . 0)) ((0 . -1.5)(0 . -1)(0 . 0)(0 . 0))) Slur b( g a b g d \grace { fis16 } e8
+		d4.-\tweak extra-offset #'(0 . 2.6) \pp d8-.) d'2~
 		d8 b( g a b g d g)
 % mesures 96 à 100
 		b( g d fis g d b d)
@@ -161,7 +161,7 @@ musicViolinIMvtI = \relative c {
 % mesures 116 à 120
 	e2(\sf d4 c)
 	d,4. d8 g4. g8
-	g4( fis!) r g,,(
+	g4( fis!) r \shape #'((0 . 2)(0 . -0.5)(0 . -0.8)(0 . 0)) Slur g,,(
 	c_\dimmarkup e g c)
 	e2(\p d4 c)
 % mesures 121 à 125
@@ -223,12 +223,12 @@ musicViolinIMvtI = \relative c {
 	c e g c) e r a,,4(
 	e'\< g b e)\!
 	g2\sf\>( fis4 e)\!
-	fis,4. fis8( b4.) b8(
+	fis,4. fis8( \stemUp b4.) b8( \stemNeutral
 % mesures 171 à 175
 	a4 g-.) r a8 b
 	d4( c) b a
 	g( fis) r fis8_\crescmarkup g
-	b4( a) g fis
+	\once \stemUp b4( a) g fis
 	e( dis) r b'\p
 % mesures 176 à 180
 	b'2( a8 g fis e)
@@ -250,9 +250,9 @@ musicViolinIMvtI = \relative c {
 	fis4 r b-.(_\dimmarkup r
 % mesures 191 à 195
 	b-. r ais-. r
-	a!-.) r r a\pp( \mark \default
+	a!-.) r r a\pp( \markYoffset #4.5 \mark \default
 	gis b a fis)
-	e( dis2) e4(
+	e( dis2) \shape #'((0 . 2)(0 . -1.5)(0 . -1.5)(0 . 1)) Slur e4(
 	fis\< gis a cis)\!
 % mesures 196 à 200
 	cis\>( b2)\! b4
@@ -267,7 +267,7 @@ musicViolinIMvtI = \relative c {
 	a\>( gis2)\! r4
 	ais,2\< r4 ais(\!
 % mesures 206 à 210
-	<< a!2.) {s4\> s s\!} >> r4
+	<< a!2.) {\hairpinShorten #'(-3 . -2) s4\> s s\!} >> r4
 	gis2\p~ gis8( b d! e)
 	a,2~ a8( c! e a)
 	gis,2~ gis8( b d! e)
@@ -310,7 +310,7 @@ musicViolinIMvtI = \relative c {
 	b4->( a) g fis
 % mesures 241 à 245
 	dis( e) r g8-. fis-.
-	dis4( e_\cresc) g( fis)
+	dis4( e-\tweak extra-offset #'(0.5 . 0.5) _\cresc) g( fis)
 	fis( g) c( b)
 	b( c) dis( e)
 	g2\f( fis4) b,\p
@@ -331,9 +331,9 @@ musicViolinIMvtI = \relative c {
 	e( d! c b) e( d c b) g'( fis e dis) e( d c b)
 	c( b a g) c( b a g) c( b a g) a( g fis e)
 	a(\sf g fis e dis e fis g) a(\sf g fis e dis e fis g)
-	a\sf r dis,( fis a\< b dis fis\! a8) r dis,,4_\ptranquillo(
+	a\sf r dis,( fis a\< b dis fis\! a8) r dis,,4\p(
 % mesures 261 à 265
-	e g f! d!)
+	e^\tranquillo g f! d!)
 	b( c2) dis4(
 	e g f d!)
 	b4( c2) c4(\pp
@@ -341,8 +341,8 @@ musicViolinIMvtI = \relative c {
 % mesures 266 à 270
 	g2) r4 b,,(
 	e g c e
-	g2) r4 b,,(
-	e8_\crescmarkup g cis e) fis4 r8 b,,8(
+	g2) r4 \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur b,,(
+	e8-\tweak extra-offset #'(-3 . 2.3) _\crescmarkup g cis e) fis4 r8 b,,8(
 	e gis b e) e4 r8 b,8(
 % mesures 271 à 275
 	fis' a c e) dis4 b(

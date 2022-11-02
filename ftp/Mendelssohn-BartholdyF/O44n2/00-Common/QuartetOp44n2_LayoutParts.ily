@@ -10,7 +10,7 @@
 	#(layout-set-staff-size 20)
 	\set Score.alternativeNumberingStyle = #'numbers
 %	\set Score.doubleRepeatType = #":|.|:"
-	\set Score.markFormatter = #format-mark-box-numbers
+	\set Score.markFormatter = #format-mark-alphabet
 	\context {
 		\Voice
 		\override TupletBracket #'bracket-visibility = ##f
@@ -18,7 +18,7 @@
 		\override TrillSpanner.bound-details.right.padding = #1
 		\override Fingering.avoid-slur = #'around
 		\override Arpeggio.padding = #0.25
-		\override Script.staff-padding = #'()
+		%\override Script.staff-padding = #'()
 		\override Hairpin.height = #0.55
 		\override Beam.breakable = ##t
 	}

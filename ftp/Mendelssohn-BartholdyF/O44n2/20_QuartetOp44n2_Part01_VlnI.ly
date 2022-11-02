@@ -18,7 +18,7 @@
 \include "./00-Common/QuartetOp44n2_timeMvt.ily"
 \include "./00-Common/QuartetOp44n2_LayoutParts.ily"
 \include "./00-Common/QuartetOp44n2_Shortcuts.ily"
-%\include "./00-Common/QuartetOp44n2_Format_Part01_ViolinI.ly"
+\include "./00-Common/QuartetOp44n2_Format_Part01_ViolinI.ily"
 \include "./00-Common/QuartetOp44n2_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_ViolinI.ily"
 \include "./02-Mvt2/m02_v01_music_ViolinI.ily"
@@ -44,12 +44,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtI
-%			}
-%			\new Voice {
-%				\keepWithTag #'(violinI) \tempiPartMvtI
-%			}
+			\new Voice {
+				\formatViolinIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtI
+			}
 			\new Voice {
 				\timeMvtI \musicViolinIMvtI
 			}
@@ -69,18 +69,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(violinI) \tempiPartMvtII
-%			}
+			\new Voice {
+				\formatViolinIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtII
+			}
 			\new Voice {
 				\timeMvtII \musicViolinIMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -94,18 +94,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtIII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(violinI) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\formatViolinIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \musicViolinIMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -119,12 +119,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtIV
-%			}
-%			\new Voice {
-%				\keepWithTag #'(violinI) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\formatViolinIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(violinI) \tempiPartMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \musicViolinIMvtIV
 			}

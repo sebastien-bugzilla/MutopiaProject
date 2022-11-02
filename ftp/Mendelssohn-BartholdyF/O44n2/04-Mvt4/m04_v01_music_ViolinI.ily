@@ -53,7 +53,7 @@ musicViolinIMvtIV = \relative c {
 	g) g'(\p fis e d c)
 	a'(\sf c, a' c,) e( g)
 	a,( fis') e( g,) b dis
-	e4 r8 b,\f e g 
+	e4 r8 b,-\offset X-offset #-2 \f e g 
 	g4.( fis8) e dis
 % mesures 41 à 45
 	b'4.( g8) fis e
@@ -98,11 +98,11 @@ musicViolinIMvtIV = \relative c {
 	g \mark \default
 	fis,2(\p g4
 % mesures 76 à 80
-	gis a b)
+	gis a \once \stemUp b)
 	c( b a
 	g'!2-> fis4)
 	fis,2( g4
-	gis a_\crescmarkup b)
+	gis a_\crescmarkup \once \stemUp b)
 % mesures 81 à 85
 	c( d fis
 	b2\sf a4)
@@ -117,7 +117,7 @@ musicViolinIMvtIV = \relative c {
 	g!2.->
 % mesures 91 à 95
 	fis2( g4
-	gis\< a b)
+	gis\< a \once \stemUp b)
 	c( b\! a
 	g'2 fis4)
 	b,2( c4_\crescmarkup
@@ -134,8 +134,8 @@ musicViolinIMvtIV = \relative c {
 	e d a)
 	c!2.(\pp
 % mesures 106 à 110
-	b)~
-	b4( a g
+	b)^~
+	\once \stemUp b4( a g
 	fis g e)
 	d-. g-. b~
 	b a-. d,-.
@@ -171,12 +171,12 @@ musicViolinIMvtIV = \relative c {
 	c'\sf( a) g b a g
 % mesures 136 à 140
 	a fis e g fis d
-	d'(\ff b) a c b g
+	\dynEO #'(0 . 1.8) d'(\ff b) a c b g
 	b( g) fis a g e
 	g( e) d f e c
 	e( c) b d c a
 % mesures 141 à 145
-	fis\f( a) a( c) c( ees)
+	\stemUp fis-\offset X-offset #-1.3 \f( a) a( c) c( ees) \stemNeutral
 	ees( fis) fis( a) a( c)
 	c( a) a( c) c( ees)
 	ees2\sf r4
@@ -201,7 +201,7 @@ musicViolinIMvtIV = \relative c {
 	g( d) c e d b
 % mesures 161 à 165
 	cis( e) bes-. a-. bes-. g-. 
-	d-. a'-. c!-. d-. fis-. a-. 
+	\beamOffset #'(0.5 . 0.5) d-. a'-. c!-. d-. fis-. a-. 
 	b( g) fis a g fis
 	g( e) dis fis e b
 	b'( g) fis a g fis
@@ -245,7 +245,7 @@ musicViolinIMvtIV = \relative c {
 	g4) r r8 a(
 	fis'-> e dis c b a
 	g) g'( fis e d! c)
-	a'_\sfmarkup( c,) a'( c,) e( g)
+	a'-\tweak extra-offset #'(0 . 2.5 )_\sfmarkup( c,) a'( c,) e( g)
 	a,( fis') e( g,) b( dis) \mark \default
 % mesures 201 à 205
 	e4\f r8 b, e g
@@ -290,7 +290,7 @@ musicViolinIMvtIV = \relative c {
 	d2) r4
 	bes2.(
 % mesures 236 à 240
-	a4.) a8_\crescmarkup cis d
+	a4.) a8-\offset X-offset #-0.5 _\crescmarkup cis d
 	e d cis cis d e
 	f e d4 r
 	r r8 b' c d
@@ -376,13 +376,13 @@ musicViolinIMvtIV = \relative c {
 % mesures 306 à 310
 	f
 	e_\cresc
-	c'_\sfmarkup)
+	\whiteoutMarkup c'-\tweak extra-offset #'(0 . 2) _\sfmarkup)
 	b(
 	a
 % mesures 311 à 315
 	g
 	c)
-	b(_\dim
+	\once \stemUp b(_\dim
 	ais
 	a!
 % mesures 316 à 320
@@ -610,7 +610,7 @@ musicViolinIMvtIV = \relative c {
 % mesures 501 à 505
 	<e e'> <e e'> <e e'>~
 	<e e'> <e e'> <e e'>~
-	<e e'>8 b,\ff dis e b dis
+	<e e'>8\noBeam b,\ff dis e b dis
 	e e fis g e fis
 	g g a b g a
 % mesures 506 à 510

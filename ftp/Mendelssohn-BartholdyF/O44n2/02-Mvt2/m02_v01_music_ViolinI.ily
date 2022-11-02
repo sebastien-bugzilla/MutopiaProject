@@ -99,7 +99,7 @@ musicViolinIMvtII = \relative c {
 	dis4:16-> dis2:8 
 % mesures 76 à 80
 	dis4-> e8 eis fis fisis
-	gis4:16->\f gis8 fis e dis
+	gis4:16->-\tweak extra-offset #'(0 . 0.3) \f gis8 fis e dis
 	e dis cis a fis gis
 	e4:16-> e8 fis gis a
 	gis a b cis dis eis
@@ -120,7 +120,7 @@ musicViolinIMvtII = \relative c {
 	a gis fis e dis! cis
 	bis4:16->\ff bis8 cis dis e
 	fis gis fis e dis cis
-	bis4:16\sf bis8 cis dis e
+	bis4:16-\tweak extra-offset #'(-0.5 . 0.5) \sf bis8 cis dis e
 % mesures 96 à 100
 	fis e dis fis bis gis
 	cis2.\sf(
@@ -267,7 +267,7 @@ musicViolinIMvtII = \relative c {
 	b,4:16 b8 r r4
 % mesures 216 à 220
 	a4 r r
-	gis2.\pp(
+	gis2.-\offset X-offset #-2.3 \pp(
 	a
 	gis)
 	a4( b dis)
