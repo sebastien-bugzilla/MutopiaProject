@@ -22,7 +22,7 @@ musicViolaMvtIII = \relative c {
 % mesures 11 à 15
 	R1*1
 	e,8\p( b' d b) e,( c' e b)
-	a4 r r f'~_\crescmarkup
+	a4 r r f'~-\offset X-offset #-1.5 _\crescmarkup
 	f8\f d( b g)~ g_\dimmarkup g'( e c)
 	<g a>1\p
 % mesures 16 à 20
@@ -42,7 +42,7 @@ musicViolaMvtIII = \relative c {
 	fis( a, b cis d e d cis) b(_\crescmarkup cis d dis e d cis b)
 	a( ais b cis d cis b d) a( d a g fis a g a)
 	fis4 r8 b16(_\crescmarkup gis) e4 r8 d'16( b)
-	gis2:8\< gis4~\f gis16 e( fis gis)
+	gis8\< gis gis gis\! gis4~\f gis16 e( fis gis)
 % mesures 31 à 35
 	a2.\p~ a8 d
 	d4._\crescmarkup a8 cis4(\f a)_\dimmarkup
@@ -57,7 +57,7 @@ musicViolaMvtIII = \relative c {
 	d!4\p r a16( e' g e a dis, fis e)
 % mesures 41 à 45
 	d!8 r a4~ a16 ais( cis b a g fis e)
-	d!8 r d16( g b g c_\crescmarkup a d c b d b g)
+	d!8 r d16( g b g c-\tweak extra-offset #'(0 . 2.5) _\crescmarkup a d c b d b g)
 	r4 e16( a c a d_\crescmarkup b e d c e c a)
 	r4 g16(\f c e c f d g f e g e c)
 	e4 r r16 d'( c a_\dimmarkup d gis, a c)
@@ -66,13 +66,13 @@ musicViolaMvtIII = \relative c {
 	d1\p~
 	d2. r4
 	g2 b4\< g\!
-	d4.\f( dis8) e( fis_\dimmarkup g e)
+	d4.-\offset X-offset #-1.5 \f( dis8) e( fis_\dimmarkup g e)
 % mesures 51 à 55
 	cis1\p
-	d2 << gis {s8\< s s s\!} >>
+	d2 << gis {\hairpinShorten #'(0 . -1.5) s8\< s s s\!} >>
 	a4 c,! d d
 	cis2.\sf r4\fermata
-	<e g>2.\p_\crescmarkup <e g>4
+	<e g>2.\p-\offset X-offset #1.8 _\crescmarkup <e g>4
 % mesures 56 à 60
 	<c' d>\f r r a'\p~
 	a16 d,( e fis g a g fis e fis g gis a e fis e)
@@ -80,8 +80,8 @@ musicViolaMvtIII = \relative c {
 	b( d, e fis g a g fis) e(_\crescmarkup fis g gis a e fis e)
 	d( e fis a g! fis e a) g( d fis d e d fis d)
 % mesures 61 à 65
-	\repeat tremolo 4 {g16( a)} \repeat tremolo 4 {g(_\crescmarkup a)} 
-	\repeat tremolo 4 {g( a)} g8 g\f e a~
+	g16( a g a g a g a) g(_\crescmarkup a g a g a g a)
+	g( a g a g a g a) g8 g\f e a~
 	a\p a16( d b d c fis d) g( g, b g c g b)
 	g_\crescmarkup( c g b g c g g') fis4(\f d)
 	c( b) e(_\dimmarkup c)
@@ -92,8 +92,8 @@ musicViolaMvtIII = \relative c {
 	g2~ g8 g(-.\> g-. g-.)\!
 	r\! g(-.\p g-. g-.) fis-.( g-. e-. fis-.)
 % mesures 71 à 75
-	b,4 r <e, g>2\<~
-	<e g>\> fis16(\p a d a fis eis fis d)
+	b,4 r \hairpinShorten #'(0 . 1.5) <e, g>2\<~
+	\hairpinShorten #'(-1.5 . 0) <e g>\> fis16(\p a d a fis eis fis d)
 	d4 r <e g>2\<~
 	<e g>4\> <e g> fis16\p( a d a fis eis fis d)
 	g( a b c d e fis_\crescmarkup g) c( b a g fis e d c)
@@ -104,7 +104,7 @@ musicViolaMvtIII = \relative c {
 	b(_\dimmarkup c b ais b a g a) b2\pp~
 	b2.~ b8 g
 % mesures 81 à 83
-	\repeat tremolo 4 {fis16(\pp g} \repeat tremolo 4 {fis g)}
+	fis16(\pp g fis g fis g fis g    fis g fis g fis g fis g)
 	d2 d4 d
 	d1\fermata \bar "|."
 }

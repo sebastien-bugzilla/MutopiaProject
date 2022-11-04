@@ -53,7 +53,7 @@ musicViolaMvtII = \relative c {
 	b4 r r
 	fis4:16-> fis8 cis ais cis 
 	fis4:16-> fis8 cis ais cis 
-	fis cis ais cis_\dimmarkup fis cis
+	fis cis ais cis^\dimmarkup fis cis
 	ais cis fis cis ais fis' \mark \default
 % mesures 41 à 45
 	b\p-. cis-. a!-. b-. gis-. b-. 
@@ -226,7 +226,7 @@ musicViolaMvtII = \relative c {
 % mesures 181 à 185
 	b4:16-> b8 fis_\crescmarkup-. dis-. fis-. 
 	b8 cis dis e fis a
-	gis4.\f fis8  e fis 
+	\dynEO #'(0 . 1) gis4.\f fis8  e fis 
 	gis4. fis8  e fis 
 	gis fis e fis gis fis
 % mesures 186 à 190
@@ -242,7 +242,7 @@ musicViolaMvtII = \relative c {
 	b'8-. dis-. b-. dis-. b-. dis-. 
 	e-. fis-. d-. e-. cis-. e-. 
 % mesures 196 à 200
-	c-. e-. c-._\crescmarkup e-. b-. e-. 
+	c-. e-. c-.^\crescmarkup e-. b-. e-. 
 	b-. e-. cis!-. b-. ais-. cis-. 
 	b\p <a'! b> <a b>2:8-.
 	<gis b>4\< <a b>2:8\!

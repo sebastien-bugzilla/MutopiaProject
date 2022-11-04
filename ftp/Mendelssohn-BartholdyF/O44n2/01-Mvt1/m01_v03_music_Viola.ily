@@ -40,18 +40,18 @@ musicViolaMvtI = \relative c {
 		g8 r e16\pp( fis g e b' a g fis) e( fis g e
 % mesures 26 à 30
 		c' b a g) fis(_\crescmarkup g a fis c' b a g fis g fis e)
-		dis(\f e fis dis a' g fis e) dis( e fis dis a' g fis e)
+		dis(-\offset X-offset #-1 \f e fis dis a' g fis e) dis( e fis dis a' g fis e)
 		dis4 r r8 a''(\> fis dis)\!
 		e4 g,2\p g4(
 		a) a2_\crescmarkup a4(
 % mesures 31 à 35
 		fis8) <fis a> <fis a>4. <fis a>8 <fis a>4~
-		<fis a> r r8 a'(\f fis dis)
+		<fis a> r r8 \dynEO #'(0 . 0.5) a'(\f fis dis)
 		e16( fis g e b' a g fis) e( fis g e g fis e d)
 		c8 r r4 r fis,_\crescmarkup
 		g16( a b g d' c b a) g( a b g e' d cis b)
 % mesures 36 à 40
-		ais2->\ff r4 r8 ais'8
+		ais2^>\ff r4 r8 ais'8
 		b16( cis d b d cis b ais) b( a g fis e d cis b)
 		g8 r r cis'-. d16\sf( cis b a gis fis eis d)
 		cis8 r <cis e!>2\sf <cis e>4\sf~
@@ -79,7 +79,7 @@ musicViolaMvtI = \relative c {
 		g1~
 		g~
 		g2 a2\<~
-		a4(\> b c2)\!
+		a4(\> b \once \stemUp c2)\!
 % mesures 61 à 65
 		b2(\pp e)
 		d2. d4(
@@ -135,7 +135,7 @@ musicViolaMvtI = \relative c {
 			g g4 g g g8\laissezVibrer
 		}{
 			d2 r
-			r8 <d g>4\p <d g> <d g> <d g>8~
+			r8 <d g>4-\offset X-offset #-2 \p <d g> <d g> <d g>8~
 		}
 	}
 	d\< d4 d d d8~\!
@@ -169,7 +169,7 @@ musicViolaMvtI = \relative c {
 	cis16(\< d e cis g' f e d\! cis\> d e cis g' f e d\!
 	cis8) r g'4( f e)
 	a1_\crescmarkup~
-	a4 bes( a cis)
+	a4 bes( a \once \stemUp cis)
 % mesures 126 à 130
 	c!1\sf~
 	c4 a( g b)
@@ -203,7 +203,7 @@ musicViolaMvtI = \relative c {
 % mesures 151 à 155
 	dis r r c!->
 	b16( c b c a\< b a b\! gis\> a gis a\! g a g a)
-	b4_\dimmarkup r b-.( r
+	b4_\dimmarkup r b-._( r
 	a-.) r r fis\p( \mark \default
 	e2 f)
 % mesures 156 à 160
@@ -219,7 +219,7 @@ musicViolaMvtI = \relative c {
 	<e g>4 r a2~
 	a(\< b\!
 % mesures 166 à 170
-	c\> b~\!
+	\once \stemUp c\> b~\!
 	b a)
 	g8( b e g) g4 r8 g,(
 	b e g b) b4 r8 g,(
@@ -239,7 +239,7 @@ musicViolaMvtI = \relative c {
 % mesures 181 à 185
 	fis(_\dimmarkup e a g fis e d c)
 	b(\p d c b a b c a)
-	fis'4_\crescmarkup( e2\sf) dis4
+	fis'4^\crescmarkup( e2\sf) dis4
 	e a2(\sf fis4)
 	e4( dis\> e g)\!
 % mesures 186 à 190
@@ -253,9 +253,9 @@ musicViolaMvtI = \relative c {
 	dis-.) r r dis(\pp \mark \default
 	e d! cis a)
 	fis2. gis4(
-	a\< gis fis dis)\!
+	\hairpinShorten #'(0 . 1) a-\tweak extra-offset #'(-2 . 2.2) \< gis fis dis)\!
 % mesures 196 à 200
-	dis(\> e2)\! e'4
+	\shape #'((0 . 0.2)(0 . 0.4)(0 . 0.4)(0 . 0)) Slur dis(-\tweak height #0.50 \> e2)\! e'4
 	e1~
 	e
 	R1*1
@@ -264,7 +264,7 @@ musicViolaMvtI = \relative c {
 	gis b a fis)
 	e( dis2) e4(
 	fis\< gis a cis)\!
-	cis\>( b2)\! r4
+	\shape #'((0 . -0.2)(0 . -0.4)(0 . -0.4)(0 . 0)) Slur cis\>( b2)\! r4
 	<< cis,,1 {s4\< s s s\!} >>
 % mesures 206 à 210
 	<<dis1 {s4\> s s s\!} >>

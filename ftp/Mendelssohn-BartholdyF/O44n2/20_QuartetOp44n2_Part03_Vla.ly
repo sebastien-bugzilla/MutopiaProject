@@ -18,7 +18,7 @@
 \include "./00-Common/QuartetOp44n2_timeMvt.ily"
 \include "./00-Common/QuartetOp44n2_LayoutParts.ily"
 \include "./00-Common/QuartetOp44n2_Shortcuts.ily"
-%\include "./00-Common/QuartetOp44n2_Format_Part03_Viola.ly"
+\include "./00-Common/QuartetOp44n2_Format_Part03_Viola.ily"
 \include "./00-Common/QuartetOp44n2_Tempi.ily"
 \include "./01-Mvt1/m01_v03_music_Viola.ily"
 \include "./02-Mvt2/m02_v03_music_Viola.ily"
@@ -42,14 +42,22 @@
 			"Viola"
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtI
-%			}
-%			\new Voice {
-%				\keepWithTag #'(Viola) \tempiPartMvtI
-%			}
+			\new Voice {
+				\formatViolaMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtI
+			}
 			\new Voice {
 				\timeMvtI \musicViolaMvtI
 			}
@@ -69,18 +77,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(Viola) \tempiPartMvtII
-%			}
+			\new Voice {
+				\formatViolaMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtII
+			}
 			\new Voice {
 				\timeMvtII \musicViolaMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -94,18 +102,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(Viola) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\formatViolaMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \musicViolaMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -119,12 +127,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIV
-%			}
-%			\new Voice {
-%				\keepWithTag #'(Viola) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\formatViolaMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \musicViolaMvtIV
 			}

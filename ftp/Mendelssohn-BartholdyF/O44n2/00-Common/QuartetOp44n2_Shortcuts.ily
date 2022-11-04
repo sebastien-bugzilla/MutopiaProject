@@ -107,7 +107,6 @@ mmrnDown = {
 	\once \override MultiMeasureRestNumber.direction = #-1 
 }
 
-
 %naturaltrillmark = \markup {
 %	\concat {
 %		\hspace #0.8
