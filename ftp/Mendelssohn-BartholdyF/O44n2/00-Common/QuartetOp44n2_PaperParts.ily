@@ -13,8 +13,9 @@
 %	top-margin = #2
 %	first-page-number = 0
 %	max-systems-per-page = #1
-	markup-system-spacing.basic-distance = #12
-	%score-markup-spacing.basic-distance = #18
+	markup-system-spacing.basic-distance = #6
+%	markup-system-spacing.minimum-distance = #5
+	score-markup-spacing.basic-distance = #12
 	system-system-spacing.basic-distance = #10
 	bookTitleMarkup = \markup {
 		\column {

@@ -64,10 +64,10 @@ musicViolinIIMvtI = \relative c {
 		fis16( g fis g) e(_\dimmarkup fis e fis) d( e d e) c!( d c d)
 % mesures 46 à 50
 		b4 r r g'->
-		fis16( g fis g e\<_\dimmarkup fis e fis\! dis\> e dis e\! d e d e)
+		fis16( g fis g e\<^\dimmarkup fis e fis\! dis\> e dis e\! d e d e)
 		cis4 r b r
 		ais r r2
-		r2 ais'4-.( r
+		r2 ais'4-._( r
 % mesures 51 à 55
 		fis-._\dimmarkup r fis-. r
 		e-.) r r e(\pp \mark \default
@@ -115,7 +115,7 @@ musicViolinIIMvtI = \relative c {
 		a4. a,8 a a( d c!)
 		b( d g_\dimmarkup b) d( b g d)~
 		d d( g b) g( e cis a)~
-		a a(\p d4.) a8( c! d)
+		a a(-\offset X-offset #-0.7 \p d4.) a8( c! d)
 % mesures 91 à 95
 		b2 r
 		c8_\dimmarkup c4 c c c8
@@ -247,7 +247,7 @@ musicViolinIIMvtI = \relative c {
 	b16( c b c a\< b a b\! gis\> a gis a\! g a g a)
 	b4 r r e,->(
 	dis) r r c'->(
-	b) r a-._\dimmarkup( r
+	b) r a-._\dimmarkup_( r
 % mesures 191 à 195
 	g-. r g-. r
 	fis-.) r r fis(\pp \mark \default

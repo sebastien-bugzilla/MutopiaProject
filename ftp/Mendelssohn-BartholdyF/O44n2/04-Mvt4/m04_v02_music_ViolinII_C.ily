@@ -178,7 +178,7 @@ musicViolinIIMvtIV = \relative c {
 % mesures 141 à 145
 	c4\f <c ees>-. <c ees>-. 
 	<c ees>-. <c ees>-. <c ees>-. 
-	<c ees>2.-.
+	<c ees>2.
 	c2.:8\<
 	cis4\sf cis cis
 % mesures 146 à 150

@@ -45,7 +45,7 @@ musicViolinIIMvtII = \relative c {
 	<cis e>4.-> <cis e>8 <cis e> <cis e> 
 % mesures 31 à 35
 	<cis e>4.-> eis8 fis eis
-	e! dis cis_\crescmarkup b ais e'
+	e! dis cis^\crescmarkup b ais e'
 	dis4.\f cis8 b cis 
 	dis4.-> cis8 b cis 
 	dis4.-> cis8 b cis 
@@ -153,7 +153,7 @@ musicViolinIIMvtII = \relative c {
 	b'8_\dimmarkup r r4 e,4:16
 % mesures 121 à 125
 	a,8 r r4 e'4:16
-	cis'8 r r4 cis,4:16_\sempredim
+	cis'8 r r4 cis,4:16^\sempredim
 	gis8 r r4 gis4:16
 	gis8 r r4 gis4:16
 	gis4.\pp gis8 gis gis
@@ -168,7 +168,7 @@ musicViolinIIMvtII = \relative c {
 	dis cis bis)
 	cis2.~
 	cis~
-	cis4 b( a 
+	cis4 \once \stemUp b( a 
 % mesures 136 à 140
 	gis fis eis)
 	fis4~ fis8 cis-. a-. cis-. 
@@ -201,9 +201,9 @@ musicViolinIIMvtII = \relative c {
 	gis a gis a e e
 % mesures 161 à 165
 	e d cis cis d cis
-	d4:16->\f d2:8 
-	d4:16-> d2:8 
-	d4:16-> d8 r r4
+	d4:16^>\f d2:8 
+	d4:16^> d2:8 
+	d4:16^> d8 r r4
 	R2.*1 
 % mesures 166 à 170
 	<cis cis'>4:16->\p q2:8

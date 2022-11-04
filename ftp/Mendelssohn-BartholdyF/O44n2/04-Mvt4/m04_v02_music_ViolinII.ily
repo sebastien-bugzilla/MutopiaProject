@@ -8,7 +8,7 @@ musicViolinIIMvtIV = \relative c {
 	\clef treble
 	\key e \minor
 % mesures 1 à 5
-	b'8->\f b b4 b\p
+	b'8^>\f b b4 b\p
 	c8-> c c4 c
 	c8-> c c4 c
 	b8-> b b4 b
@@ -53,18 +53,18 @@ musicViolinIIMvtIV = \relative c {
 	r8 e(\p fis g a b)
 	c4(\sf dis, e)
 	c( b a)
-	g8\f b b4 b
+	\dynEO #'(0 . -10.5) g8^\f b b4 b
 	c8-> c c4 c 
 % mesures 41 à 45
 	e8-> e e4 b
 	c8-> c c4 c
-	b r8 b\p e g
+	b r8 \dynEO #'(0 . -9) b^\p e g
 	g4.( fis8) e dis
 	a'4.->( g8) fis e
 % mesures 46 à 50
 	b'4.->( a8)_\crescmarkup g fis
 	c'4( b) b
-	b_\crescmarkup( ais) cis
+	b-\offset X-offset #0.7 _\crescmarkup( ais) cis
 	cis( b) d
 	d4.( cis8) b ais
 % mesures 51 à 55
@@ -94,7 +94,7 @@ musicViolinIIMvtIV = \relative c {
 % mesures 71 à 75
 	g g2
 	fis4 fis2
-	ais,2.\sf~
+	\dynEO #'(-0.5 . -3) ais,2.^\sf~
 	ais \mark \default
 	\repeat tremolo 3 {c!8(\p d}
 % mesures 76 à 80
@@ -114,7 +114,7 @@ musicViolinIIMvtIV = \relative c {
 	g2( f4)
 	e2( d4)
 	e2.
-	R2.*1
+	\mmrnDown R2.*1
 % mesures 91 à 95
 	\repeat tremolo 3 {c8(\p d}
 	\repeat tremolo 3 {c8 d}
@@ -178,7 +178,7 @@ musicViolinIIMvtIV = \relative c {
 % mesures 141 à 145
 	c4\f <c ees>-. <c ees>-. 
 	<c ees>-. <c ees>-. <c ees>-. 
-	<c ees>2.-.
+	<c ees>2.
 	c2.:8\<
 	cis4\sf cis cis
 % mesures 146 à 150
@@ -244,8 +244,8 @@ musicViolinIIMvtIV = \relative c {
 % mesures 196 à 200
 	r8 e( a g fis e
 	dis2.->)
-	r8 e( fis_\crescmarkup g a b)
-	c4(_\sfmarkup dis, e)
+	r8 e( fis\cresc g a b)
+	c4(-\tweak extra-offset #'(-1.3 . 3.8) _\sfmarkup dis, e)
 	c( b a) \mark \default
 % mesures 201 à 205
 	g8\f b b4 b
@@ -387,14 +387,14 @@ musicViolinIIMvtIV = \relative c {
 	r r8 d! f e
 % mesures 316 à 320
 	d4\! r r
-	r r8 a c\cresc b
+	r r8 a c b\cresc
 	a4 r8 c e d
 	c4 r8 a c b
 	a4 r8 c e d
 % mesures 321 à 325
 	c4 r8 e g fis
 	e4 r8 c e d
-	c2.\f->
+	c2.\f^>
 	c->
 	c\sf~
 % mesures 326 à 330
@@ -425,7 +425,7 @@ musicViolinIIMvtIV = \relative c {
 	\repeat tremolo 3 {a b}
 	\repeat tremolo 3 {a b}
 	\repeat tremolo 3 {a\< b)\!}
-	\repeat tremolo 3 {gis(\f b}
+	\repeat tremolo 3 {gis(-\offset X-offset #-1.8 \f b}
 	\repeat tremolo 3 {gis b}
 % mesures 351 à 355
 	\repeat tremolo 3 {gis b}
@@ -516,7 +516,7 @@ musicViolinIIMvtIV = \relative c {
 	
 	ais,8-. cis-. e-. g-. fis-. e-. 
 	g-. fis-. e-. g-. fis-. e-. \bar "||" \key e \minor
-	dis4(\p\< e\> fis\!)
+	dis4(-\offset X-offset #-2 \p\< e\> fis\!)
 % mesures 426 à 430
 	R2.*1
 	b4( g e)

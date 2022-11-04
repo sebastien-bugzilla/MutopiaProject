@@ -95,6 +95,18 @@ markYoffset = #(define-music-function
 	#}
 )
 
+markXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
+
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
 
 %naturaltrillmark = \markup {
 %	\concat {
@@ -160,14 +172,6 @@ markYoffset = #(define-music-function
 %	#}
 %)
 
-%markXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
-%	#}
-%)
-
 %tupletOffset = #(define-music-function
 %	(offset)
 %	(number?)
@@ -175,10 +179,6 @@ markYoffset = #(define-music-function
 %		\once \override TupletNumber.Y-offset = #offset 
 %	#}
 %)
-
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
 
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 

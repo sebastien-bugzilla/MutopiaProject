@@ -8,15 +8,15 @@ musicViolinIIMvtIII = \relative c {
 	\clef treble
 	\key e \minor
 % mesures 1 à 5
-	b'16\p( d g d b' fis a g) b,( d g d b' fis a g)
+	b'16-\offset X-offset #-1.5 \p( d g d b' fis a g) b,( d g d b' fis a g)
 	c,( e a e c' gis b a) g( fis a fis d dis e fis)
 	g( d g d b' fis a g) b,( d g d b' fis a g)
 	c,( e a e c' gis b a) g( fis a fis d dis e fis)
-	g( d g d b' fis a g) g,( d' g\< d b' fis a g)\!
+	g( d g d b' fis a g) g,^( d' g\< d b' fis a g)\!
 % mesures 6 à 10
 	fis(\f a c a g fis e fis) a(_\dimmarkup g fis e d cis d dis)
 	e\p( g a g e' fis, a g) e( g a g e' fis, a g)
-	fis( a d a fis d c! d) b( d\< e d b' gis e\! d)
+	fis( a d a fis d c! d) b( \hairpinShorten #'(0 . 1) d-\tweak extra-offset #'(0 . 2.5) \< e d b' gis e\! d)
 	c( e a e) c'( gis b a) d( ais c b) e(_\crescmarkup b d c)
 	b( d g d c b c cis) d( a fis_\dimmarkup g a fis d c!)
 % mesures 11 à 15
@@ -45,7 +45,7 @@ musicViolinIIMvtIII = \relative c {
 	\repeat tremolo 4 {d16( e)} d16(\f e d e d e fis gis)
 % mesures 31 à 35
 	a2.\p~ a8 d
-	d4._\crescmarkup d,8 e4(\f d)_\dimmarkup
+	d4.^\crescmarkup d,8 e4(-\offset X-offset #-1 \f d)_\dimmarkup
 	cis( c b2)
 	<a d>1~\p
 	<a d>4 cis8 b a2~ \mark \default
@@ -59,16 +59,16 @@ musicViolinIIMvtIII = \relative c {
 	fis g
 	a,16(_\crescmarkup d fis d g cis, e d) d( fis a fis b fis g f)
 	b,( e gis e a dis, f e) e(_\crescmarkup gis! b gis c a  e a)
-	d,\f( g b g c fis,! a g) g( b d b e b d c)
+	\dynEO #'(-1 . -9) d,^\f( g b g c fis,! a g) g( b d b e b d c)
 	c( e gis e a_\dimmarkup f e dis e8) r r4
 % mesures 46 à 50
-	r16 f,(_\dimmarkup e a gis d c e) d( b e c b gis a e') \mark \default
+	r16 f,(_\dimmarkup e a gis d c e) d( b e c b gis a e') \markXoffset #-0.5  \markYoffset #3.7 \mark \default
 	g,!8(\p b d b) g( b d b)
 	r c( e c)~ c( a fis' a,)
 	b( d g d) d(\< b) d( b)\!
-	a\f( fis' d a) g( a_\dimmarkup b e)
+	a-\offset X-offset #-1.8 \f( fis' d a) g( a_\dimmarkup b e)
 % mesures 51 à 55
-	g,(\p e' a e) g,( e' a e)
+	g,(-\offset X-offset #-1.3 \p e' a e) g,( e' a e)
 	d( fis d a) d\< d( b' f)\!
 	e( c e ees) d( b a fis')
 	e16(\< g a g\! e'\> fis, a g e8)\! r r4\fermata
@@ -92,10 +92,10 @@ musicViolinIIMvtIII = \relative c {
 	d8.->([ c16) b8-.( b-.)] b( bes)\> bes-.( bes-.)\!
 	r bes(-.\p bes-. bes-.) a-.( g-. c,-. c-.)
 % mesures 71 à 75
-	b!16( e g b a g fis e) a,( e' g e a dis,\< fis e)
-	a,( e' g e\! a\> dis, fis e)\! c!2\p
-	b16( c d e fis g d b) a(\< e' g e a dis, fis e)\!
-	a,(\> e' g e a dis, fis e)\! c2\p
+	b!16( e g b a g fis e) a,^( e' g e a dis,\< fis e)
+	a,^( e' g e\! a\> dis, fis e)\! c!2\p
+	b16( c d e fis g d b) \hairpinShorten #'(1.5 . 0) a^(\< e' g e a dis, fis e)\!
+	\hairpinShorten #'(2 . -0.3) a,^(\> e' g e a dis, fis e)\! c2-\tweak extra-offset #'(1 . 0.3) \p
 	b16( c d e fis g a_\crescmarkup b) a( g fis e d c b a)
 % mesures 76 à 80
 	d( e f g a b c d) e( d c b a g f e)
