@@ -8,7 +8,7 @@ musicCelloMvtII = \relative c {
 	\clef bass
 	\key e \major
 % mesures 1 à 5
-	e'16\f e e e e8-. e\p-. e-. e-. 
+	\dynEO #'(0 . 1) e'16\f e e e e8-. e\p-. e-. e-. 
 	e-. e-. e-. dis-. e-. cis-. 
 	b-. a-. gis-. fis-. gis-. a-. 
 	b,4.-> b8-. b-. b-. 
@@ -17,7 +17,7 @@ musicCelloMvtII = \relative c {
 	b4.-> r8 r4
 	R2.*2
 	
-	e'16\f e e e e8 e\p e e
+	\dynEO #'(0 . -9.3) e'16^\f e e e e8 e\p e e
 	e e e dis e cis
 % mesures 11 à 15
 	b a gis fis gis a
@@ -36,16 +36,16 @@ musicCelloMvtII = \relative c {
 	ais4.\sf ais8 b! b
 	gis gis ais ais_\dimmarkup fisis fisis
 	gis r e r fis r
-	b,16\pp-> b b b b8 fis dis fis
+	b,4:16\pp^> b8 fis dis fis
 % mesures 26 à 30
-	b16-> b b b b8 fis dis fis
-	b16-> b b b b8 fis dis fis
+	b4:16-> b8 fis dis fis
+	b4:16-> b8 fis dis fis
 	b fis b gis cis cis,
 	fis4 r fis'8 r
 	fis,4 r fis'8 r
 % mesures 31 à 35
 	fis,4 r r
-	r r8 fis'_\crescmarkup ais fis
+	r r8 fis'-\offset X-offset #-2 _\crescmarkup ais fis
 	b4:16\f-> b8 fis dis fis
 	b4:16-> b8 fis dis fis 
 	b4:16-> b8 fis dis fis 
@@ -70,7 +70,7 @@ musicCelloMvtII = \relative c {
 % mesures 51 à 55
 	fis'(-. e-. dis-. cis-. b-. ais-. 
 	a!-. fis-. dis-. b-. a-. fis)-. \mark \default
-	e4.\f e''8\p e e
+	e4.-\offset X-offset #-1.5 \f e''8\p e e
 	e e e dis e cis
 	b a gis fis gis a
 % mesures 56 à 60
@@ -81,8 +81,8 @@ musicCelloMvtII = \relative c {
 	
 % mesures 61 à 65
 	eis'16\f eis eis eis eis4 r
-	r r cis,,\p(
-	d2.)(\espressivo
+	r r cis,,-\offset X-offset #-1.5 \p(
+	d2.)(^\espressivo
 	cis4) r8 d'\p-. cis-. b-. 
 	\grace b16 ais8 gis ais fis b d
 % mesures 66 à 70
@@ -100,7 +100,7 @@ musicCelloMvtII = \relative c {
 % mesures 76 à 80
 	a4.-> a,8 a a
 	gis4\f r r
-	R2.*3
+	\mmrLength #0 R2.*3
 	
 	
 % mesures 81 à 85
@@ -135,7 +135,7 @@ musicCelloMvtII = \relative c {
 	bis4:16\ff bis2:8
 % mesures 106 à 110
 	cis8-. dis-. e-. fis,-. gis-. a-. 
-	gis4:16\sf gis8-. bis,-. cis-. bis-. 
+	\dynEO #'(0 . 1) gis4:16\sf gis8-. bis,-. cis-. bis-. 
 	cis dis e fis, gis a
 	gis4:16\sf gis8-. a-. gis-. fis-. 
 	gis4:16\sf gis8-. a-. gis-. fis-. 
@@ -197,11 +197,11 @@ musicCelloMvtII = \relative c {
 	b4.-> r8 r4
 	R2.*1
 	r8 g''_\crescmarkup fis e dis b
-	e4:16\f e8 dis e bis
+	\dynEO #'(0 . 2) e4:16\f e8 dis e bis
 	cis bis cis a b cis
 % mesures 161 à 165
 	b gis a a, b cis
-	e,4.->\f a8 gis fis
+	\dynEO #'(-2 . 1) e,4.^>\f a8 gis fis
 	e4.-> a8 gis fis
 	e4 r r
 	r r8 d''8-. cis-. e-. 
@@ -226,7 +226,7 @@ musicCelloMvtII = \relative c {
 % mesures 181 à 185
 	r4 r8 fis''_\crescmarkup fis e
 	dis cis b e dis fis
-	e4:16\f e8 b gis b
+	\dynEO #'(0 . 2) e4:16\f e8 b gis b
 	e4:16 e8 b gis b
 	e b gis b e b
 % mesures 186 à 190
@@ -244,7 +244,7 @@ musicCelloMvtII = \relative c {
 % mesures 196 à 200
 	c-. e-. c-._\crescmarkup e-. b-. e-. 
 	b-. e-. cis!-. b-. ais-. cis-. 
-	b\p b b b b b
+	\dynEO #'(0 . 0.7) b\p b b b b b
 	b' b, b b b b
 	b' b, b b b b
 % mesures 201 à 205
@@ -284,7 +284,7 @@ musicCelloMvtII = \relative c {
 	cis4 r r
 	R2.*1
 % mesures 231 à 235
-	e,4:16\pp^\arco e4 r
+	e,4:16-\offset X-offset #-2.7 \pp^\arco e4 r
 	a4:16 a4 r
 	b4:16 b8 r b r
 	e4:16->\p e8-. b-. gis-. b-.
@@ -292,7 +292,7 @@ musicCelloMvtII = \relative c {
 % mesures 236 à 240
 	e4:16-> e8-. b-. gis-. b-.  
 	e4 r8 dis-. e-. dis-. 
-	e4 r b'8^\pizz r
+	e4 r b'8-\offset X-offset #-1 ^\pizz r
 	e r gis, r b r
 	e, r b' r gis r
 % mesures 241 à 244

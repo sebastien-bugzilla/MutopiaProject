@@ -107,119 +107,20 @@ mmrnDown = {
 	\once \override MultiMeasureRestNumber.direction = #-1 
 }
 
-%naturaltrillmark = \markup {
-%	\concat {
-%		\hspace #0.8
-%		\general-align #Y #CENTER {
-%			\musicglyph #"scripts.trill" 
-%			\hspace #0.45
-%			\teeny \natural 
-%		}
-%	}
-%}
+dynSpanYoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override DynamicTextSpanner.bound-details.right.Y = #offset
+	#}
+)
 
-%sharptrillmark = \markup { 
-%	\hspace #1.2
-%	\concat { 
-%		\general-align #Y #CENTER {
-%			\musicglyph #"scripts.trill" 
-%			\hspace #0.45
-%			\teeny \sharp 
-%		}
-%	}
-%}
-
-%trillAccidental = #(define-music-function 
-%	(accidental)
-%	(markup?)
-%	#{
-%		\once \override Script.padding = #0.20
-%		\once \override Script.stencil = #ly:text-interface::print
-%		\once \override Script.text = #accidental
-%	#}
-%)
-
-%setSextolet = {
-%	\set subdivideBeams = ##t
-%	\set baseMoment = #(ly:make-moment 1/8)
-%	\set beatStructure = 2,2,2,2
-%	%\override TupletNumber.Y-offset = #-3
-%	%\override TupletNumber.avoid-slur = #'ignore
-%}
-%unsetSextolet = {
-%	\set subdivideBeams = ##f
-%	\revert TupletNumber.Y-offset
-%	\revert TupletNumber.avoid-slur
-%}
-%red = \override NoteHead.color = #red
-%endRed = \revert NoteHead.color
-
-
-%tempoXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.MetronomeMark.X-offset = #offset
-%	#}
-%)
-
-%tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-
-%tupletOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override TupletNumber.Y-offset = #offset 
-%	#}
-%)
-
-%tempoDown = \once \override Score.MetronomeMark.direction = #-1 
-
-
-%whiteoutMetronomeMark = {
-%	\once \override Score.MetronomeMark.whiteout = ##t
-%	\once \override Score.MetronomeMark.whiteout-style = #'outline
-%}
-
-
-%textInSlur = {
-%	\once \override TextScript.outside-staff-priority = ##f
-%	\once \override TextScript.avoid-slur = #'inside
-%}
-
-%sixDots = \markup {
-%	\general-align #X #CENTER \concat {
-%		\musicglyph #"scripts.staccato" \hspace #0.25
-%		\musicglyph #"scripts.staccato" \hspace #0.25
-%		\musicglyph #"scripts.staccato" \hspace #0.25
-%		\musicglyph #"scripts.staccato" \hspace #0.25
-%		\musicglyph #"scripts.staccato" \hspace #0.25
-%		\musicglyph #"scripts.staccato"
-%	}
-%}
-
-%textCenter = {
-%	\once \override TextScript.parent-alignment-X = #0
-%}
-
-%markupOsp = \once \override TextScript.outside-staff-priority = #200
-
-%voltaShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Score.VoltaBracket.shorten-pair = #shortLength
-%	#}
-%)
-
-%revertScriptPadding = \once \revert Script.staff-padding
-
-%dynamicPriority = \once \override DynamicLineSpanner.outside-staff-priority = #100
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.space-increment = #length
+	#}
+)
 
 

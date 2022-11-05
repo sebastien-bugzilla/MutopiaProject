@@ -18,7 +18,7 @@
 \include "./00-Common/QuartetOp44n2_timeMvt.ily"
 \include "./00-Common/QuartetOp44n2_LayoutParts.ily"
 \include "./00-Common/QuartetOp44n2_Shortcuts.ily"
-%\include "./00-Common/QuartetOp44n2_Format_Part04_Cello.ly"
+\include "./00-Common/QuartetOp44n2_Format_Part04_Cello.ily"
 \include "./00-Common/QuartetOp44n2_Tempi.ily"
 \include "./01-Mvt1/m01_v04_music_Cello.ily"
 \include "./02-Mvt2/m02_v04_music_Cello.ily"
@@ -42,14 +42,22 @@
 			"Cello"
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtI
-%			}
-%			\new Voice {
-%				\keepWithTag #'(Cello) \tempiPartMvtI
-%			}
+			\new Voice {
+				\formatCelloMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtI
+			}
 			\new Voice {
 				\timeMvtI \musicCelloMvtI
 			}
@@ -69,12 +77,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(Cello) \tempiPartMvtII
-%			}
+			\new Voice {
+				\formatCelloMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtII
+			}
 			\new Voice {
 				\timeMvtII \musicCelloMvtII
 			}
@@ -94,12 +102,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtIII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(Cello) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\formatCelloMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \musicCelloMvtIII
 			}
@@ -119,18 +127,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtIV
-%			}
-%			\new Voice {
-%				\keepWithTag #'(Cello) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\formatCelloMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \musicCelloMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4

@@ -31,7 +31,7 @@ musicCelloMvtI = \relative c {
 		fis,( b4 a)
 		g1\fp
 		a
-		b2~ b8 fis''( e dis
+		b2~ \once \override Beam.auto-knee-gap = #2 b8 fis''( e dis
 % mesures 21 à 25
 		e_\crescmarkup b a fis) g( e dis b)
 		e2\f~ e8( b a g)
@@ -70,7 +70,7 @@ musicCelloMvtI = \relative c {
 		fis16 fis(\p g fis g fis g fis \repeat tremolo 4 {g16\< fis}
 % mesures 51 à 55
 		\repeat tremolo 4 {g16\> fis} \repeat tremolo 4 {g16 fis\!}
-		\repeat tremolo 4 {g16_\dimmarkup fis} \repeat tremolo 4 {g16 fis)} \mark \default
+		\repeat tremolo 4 {g16-\tweak extra-offset #'(0.2  . 2.45) _\dimmarkup fis} \repeat tremolo 4 {g16 fis)} \mark \default
 		g1\pp~
 		g4 r g2~
 		g1~
@@ -81,7 +81,7 @@ musicCelloMvtI = \relative c {
 		cis1->(
 		d)
 % mesures 61 à 65
-		r4 gis,\pp( a c)
+		r4 gis,-\offset X-offset #-1.5 \pp( a c)
 		d2( c4) b(
 		c d\< e fis)\!
 		fis2(\> g4)\! d'
@@ -90,7 +90,7 @@ musicCelloMvtI = \relative c {
 		a'4.->( d,8) d4 d
 		g(\< e d cis)\!
 		a'\sf\>( fis d c!)\!
-		b(\p g'_\crescmarkup fis f)
+		\shape #'((0 . -1)(0 . 0)(0 . 0)(0 . 0)) Slur b(\p g'_\crescmarkup fis f)
 		e2( b)
 % mesures 71 à 75
 		r4 g'(_\crescmarkup fis f)
@@ -111,7 +111,7 @@ musicCelloMvtI = \relative c {
 		b2 r4 b4\f(
 		e, g a cis)
 % mesures 86 à 90
-		d2. d,4_\dimmarkup
+		d2. d,4^\dimmarkup
 		e2( fis)
 		g2. g4(_\dimmarkup
 		e g cis e)
@@ -132,14 +132,14 @@ musicCelloMvtI = \relative c {
 			r2 r4 b'\p(
 			g d b g)
 % mesures 101 à 105
-			e1\laissezVibrer
+			e1-\shape #'((0 . 0)(1 . -0.3)(2 . -0.3)(3 . 0)) \laissezVibrer
 		}{
 			g2 r
 			g1\p
 		}
 	}
-	<< fis1 {s4\< s s s\!} >>
-	<< f1 {s4\> s s s\! } >>
+	<< fis1 {\hairpinShorten #'(0 . -0.5) s4\< s s s\!} >>
+	<< f1 {\hairpinShorten #'(0 . -0.5) s4\> s s s\! } >>
 % mesures 101 à 105
 	e1
 	r2 d'(
@@ -203,7 +203,7 @@ musicCelloMvtI = \relative c {
 % mesures 151 à 155
 	b r e r
 	b1~
-	b16 b\<( c b c b c b\> \repeat tremolo 4 {c16 b\!} 
+	b16 b\<( c b c b c \hairpinShorten #'(0 . -1.5) b\> \repeat tremolo 4 {c16 b\!} 
 	\repeat tremolo 4 {c16 b} \repeat tremolo 4 {c16_\dimmarkup b)} \mark \default
 	c1\p~
 % mesures 156 à 160
@@ -239,7 +239,7 @@ musicCelloMvtI = \relative c {
 % mesures 181 à 185
 	a2(_\dimmarkup b4 c)
 	d2.\p d4
-	dis(_\crescmarkup e2\sf) b'4
+	dis(^\crescmarkup e2\sf) b'4
 	c a2(\sf b4)
 	c2.(\> b4)\!
 % mesures 186 à 190
@@ -251,7 +251,7 @@ musicCelloMvtI = \relative c {
 % mesures 191 à 195
 	\repeat tremolo 4 {c16\> b} \repeat tremolo 4 {c16 b\!} 
 	\repeat tremolo 4 {c16_\dimmarkup b} \repeat tremolo 4 {c16 b)} \mark \default
-	e,1\pp~
+	e,1-\offset X-offset #-2.5 \pp~
 	e4 r e2~
 	e1~
 % mesures 196 à 200
@@ -307,24 +307,24 @@ musicCelloMvtI = \relative c {
 	e,\p( g b e)
 	e2.-> e,4
 	d( g b d)
-	c2.-> c4\p
+	c2.-> \dynEO #'(0 . -7) c4^\p
 % mesures 241 à 245
 	b( e g b)
 	b,1~
-	b~_\crescmarkup
+	b~-\tweak extra-offset #'(0 . -6.3) ^\crescmarkup
 	b
 	b2.\f g8\p( fis)
 % mesures 246 à 250
-	dis4( e\cresc) g( fis)
+	dis4( e) \dynSpanYoffset #2 g(\cresc fis) % \dynSpanYoffset #2 
 	fis( g) c( b)
 	b( c) cis( c)
-	b\f b'2 b,4 \mark \default
-	e(\ff g b e)
+	\dynEO #'(0 . -7.8) b^\f b'2 b,4 \mark \default
+	e(-\offset X-offset #0.5 \ff g b e)
 % mesures 251 à 255
-	g2\sf( fis4) fis,,
+	g2-\offset X-offset #-1 \sf( fis4) fis,,
 	g g'( b e)
 	g2(\sf fis4) fis,,
-	g8 r e'16(\f fis g e) b'8\sf r e,16( fis g e)
+	g8 r e'16(-\offset X-offset #-2 \f fis g e) b'8\sf r e,16( fis g e)
 	c'8\sf r fis,16( g a fis) c'8\sf r a16( b c a)
 % mesures 256 à 260
 	a'8\sf r dis,,16( e fis dis b'\ff a g fis) g( fis e dis)

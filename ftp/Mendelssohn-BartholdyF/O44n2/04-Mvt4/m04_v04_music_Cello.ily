@@ -8,7 +8,7 @@ musicCelloMvtIV = \relative c {
 	\clef bass
 	\key e \minor
 % mesures 1 à 5
-	e,8\f-> e e4 r
+	e,8\f^> e e4 r
 	R2.*7
 	
 	
@@ -18,10 +18,10 @@ musicCelloMvtIV = \relative c {
 	
 	
 	r4 r8 e\p fis g
-	a2(\sf b4)
+	a2(-\offset X-offset #-1.5 \sf b4)
 % mesures 11 à 15
 	c r8 e, fis g
-	a2\sf( b4)
+	a2-\offset X-offset #-1.5 \sf( b4)
 	c4 r8 fis, g a
 	b8\p b b4_\crescmarkup b8 b
 	e4 fis8 fis g4
@@ -51,9 +51,9 @@ musicCelloMvtIV = \relative c {
 	b2.\sf
 % mesures 36 à 40
 	c4\p c c
-	fis,2\sf( g4)
+	fis,2-\offset X-offset #-1.5 \sf( g4)
 	a4( b) b
-	e,8\f e e4 e'
+	e,8-\offset X-offset #-2.3 \f e e4 e'
 	a,8-> a a4 e'
 % mesures 41 à 45
 	g,8-> g g4 e'
@@ -66,7 +66,7 @@ musicCelloMvtIV = \relative c {
 	b4 r8 e, b' d
 	d4.->(_\crescmarkup cis8) b ais
 	e'4.(-> d8) cis b
-	fis'4.->( e8) d cis
+	fis'4.-\tweak extra-offset #'(0 . -0.5) -> -\tweak extra-offset #'(0 . -0.3) ( e8) d cis
 % mesures 51 à 55
 	d4\f r r
 	R2.*1
@@ -102,7 +102,7 @@ musicCelloMvtIV = \relative c {
 	d~
 	d4 r r
 	d,2.~
-	d_\crescmarkup~
+	d-\offset X-offset #-1.8 _\crescmarkup~
 % mesures 81 à 85
 	d
 	c'2.\sf(
@@ -116,7 +116,7 @@ musicCelloMvtIV = \relative c {
 	
 	
 % mesures 91 à 95
-	d,2.\p~
+	d,2.-\offset X-offset #-1.7 \p~
 	d\<~
 	d~
 	d4\! d d
@@ -207,7 +207,7 @@ musicCelloMvtIV = \relative c {
 	dis' r r
 	e r r
 % mesures 166 à 170
-	e\f^\arco e' e
+	e\f-\offset X-offset #-2.5 ^\arco e' e
 	e e e
 	e2 g4
 	cis,2 r4
@@ -245,10 +245,10 @@ musicCelloMvtIV = \relative c {
 	c4 c c
 	b2.
 	c4 c c
-	fis,2(_\sfmarkup g4)
-	a( b) b \mark \default
+	\whiteoutMarkup fis,2(-\tweak extra-offset #'(0 . 0.5) _\sfmarkup g4)
+	a( b) b\! \mark \default
 % mesures 201 à 205
-	e,\f r r 
+	e,-\offset X-offset #-2.3 \f r r 
 	R2.*3
 	
 	
@@ -376,7 +376,7 @@ musicCelloMvtIV = \relative c {
 % mesures 306 à 310
 	a
 	g\cresc
-	a)_\sfmarkup
+	\whiteoutMarkup a)-\tweak extra-offset #'(0 . 3) _\sfmarkup
 	b(
 	c
 % mesures 311 à 315
@@ -431,7 +431,7 @@ musicCelloMvtIV = \relative c {
 	d e d e d e
 	d e d e d e)
 	cis4 r r
-	R2.*5
+	\mmrLength #0  R2.*5
 	
 % mesures 356 à 360
 	
@@ -471,7 +471,7 @@ musicCelloMvtIV = \relative c {
 	e r r 
 % mesures 386 à 390
 	b' b b
-	e r bis->(_\crescmarkup
+	e r bis^>(_\crescmarkup
 	cis) dis-. e-.
 	r r cis(->
 	dis) e-. fis-.
