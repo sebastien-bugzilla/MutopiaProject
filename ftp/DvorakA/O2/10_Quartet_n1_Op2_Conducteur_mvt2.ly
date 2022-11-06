@@ -1,114 +1,80 @@
-%Fichier : /media/Documents/Partitions/lilypond/12-Quatuor_1/00_Dvorak_Quatuor_1_Conducteur_Mvt2.ly
-%Fichier généré le :  samedi 4 novembre 2017, 18:14:16 (UTC+0100)
-%#######################################################################
-%#             G E N E R A L I T E S   E T   E N T E T E               #
-%#######################################################################
-\paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { \fromproperty #'header:dedication }
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-%-----------------------------------------------------------------------
-global = {
-	\version "2.18.2"
-	\time 3/4
-	\key fis \minor
-	%\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Andante affettuoso ed appassionato"
-	#(set-global-staff-size 15)
-	\set Score.doubleRepeatType = #":|.|:"
-}
-%-----------------------------------------------------------------------
-\include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "02_Dvorak_Quatuor_1_Mvt2_Voix1.ly"
-\include "02_Dvorak_Quatuor_1_Mvt2_Voix2.ly"
-\include "02_Dvorak_Quatuor_1_Mvt2_Voix3.ly"
-\include "02_Dvorak_Quatuor_1_Mvt2_Voix4.ly"
-%#######################################################################
-%#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
-%#######################################################################
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Antonín Dvořák (1841 - 1904)
+%  work               : String Quartet No. 1 in A Major, Op. 2
+%  Source             : Souborné vydání díla, series IV, vol.5a Prague: Editio 
+%                       Supraphon, 1989. Plate H 7625.
+%  Type of score      : Score conductor mvt II
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Sunday 6 November 2022, 07:18
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/Quartet_n1_Op2_Header.ily"
+\include "./00-Common/Quartet_n1_Op2_PaperConductors.ily"
+\include "./00-Common/Quartet_n1_Op2_timeMvt.ily"
+\include "./00-Common/Quartet_n1_Op2_LayoutConductors.ily"
+\include "./00-Common/Quartet_n1_Op2_Shortcuts.ily"
+%\include "./00-Common/Quartet_n1_Op2_Format_Cond_Mvt02.ily"
+\include "./00-Common/Quartet_n1_Op2_Tempi.ily"
+\include "./02-Mvt2/m02_v01_music_ViolinI.ily"
+\include "./02-Mvt2/m02_v02_music_ViolinII.ily"
+\include "./02-Mvt2/m02_v03_music_Viola.ily"
+\include "./02-Mvt2/m02_v04_music_Cello.ily"
+%###############################################################################
+%#                          S C O R E   S E C T I O N                          #
+%###############################################################################
 \book{
 	\header {
-		title = \markup { \fontsize #5 \sans 
+		subtitle = \markup {
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Anton Dvorak"
-				"1841 - 1904"
+				"2nd movement"
 			}
 		}
-		subtitle = \markup { 
-			\fontsize #5 \sans
-			\center-column {
-				\vspace #10
-				"Quatuor pour corde n°1 en La Majeur"
-				"Op. 2 - B.8"
-			}
+		subsubtitle = \markup { 
+			"String Quartet No. 1 in A Major, Op. 2 — " 
+			\concat {"2" \super nd} "Movement"
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Mouvement 2"
-			}
+		instrument = \markup {
+			""
 		}
 	}
 	\score {
-		\new StaffGroup <<
-			\new Staff << \global \MvtDeuxVoixUne >>
-			\new Staff << \global \MvtDeuxVoixDeux >>
-			\new Staff << \global \MvtDeuxVoixTrois >>
-			\new Staff << \global \MvtDeuxVoixQuatre >>
+		<<
+			\new StaffGroup <<
+				\new GrandStaff <<
+					\new Staff <<
+%						\new Voice {
+%							\formatConductorMvtII
+%						}
+						\new Voice {
+							\tempiMvtII
+						}
+						\new Voice {
+							\timeMvtII \musicViolinIMvtII
+						}
+					>>
+					\new Staff {
+						\timeMvtII \musicViolinIIMvtII
+					}
+				>>
+				\new Staff {
+					\timeMvtII \musicViolaMvtII
+				}
+				\new Staff {
+					\timeMvtII \musicCelloMvtII
+				}
+			>>
 		>>
 		\header {
 			breakbefore = ##t
 		}
 		\layout {
-			%system-count = #37
-		}
-	}
-	\score {
-		\new StaffGroup <<
-			\new Staff << \global \MvtDeuxVoixUne >>
-			\new Staff << \global \MvtDeuxVoixDeux >>
-			\new Staff << \global \MvtDeuxVoixTrois >>
-			\new Staff << \global \MvtDeuxVoixQuatre >>
-		>>
-		\midi {
-		    \tempo 4 = 57
-			\context {
-			    \Score
-			    midiMinimumVolume = #0.8
-				midiMaximumVolume = #0.9
-			}
 		}
 	}
 }

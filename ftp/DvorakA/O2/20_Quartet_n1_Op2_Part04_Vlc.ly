@@ -1,185 +1,146 @@
-%Fichier : /media/Documents/Partitions/lilypond/12-Quatuor_1/00_Dvorak_Quatuor_1_Voix4.ly
-%Fichier généré le :  samedi 4 novembre 2017, 18:14:16 (UTC+0100)
-%#######################################################################
-%#             G E N E R A L I T E S   E T   E N T E T E               #
-%#######################################################################
-\paper {
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { \fromproperty #'header:dedication }
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-%-----------------------------------------------------------------------
-globalMvtUn = {
-	\version "2.18.2"
-	\time 9/8
-	\key a \major
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Andante" 
-	#(set-global-staff-size 19)
-	\set Score.doubleRepeatType = #":|.|:"
-}
-%-----------------------------------------------------------------------
-globalMvtDeux = {
-	\version "2.18.2"
-	\time 3/4
-	\key fis \minor
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Andante affettuoso ed appassionato" 
-	#(set-global-staff-size 19)
-	\set Score.doubleRepeatType = #":|.|:"
-}
-%-----------------------------------------------------------------------
-globalMvtTrois = {
-	\version "2.18.2"
-	\time 3/4
-	\key fis \minor
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Allegro Scherzando"
-	#(set-global-staff-size 19)
-	\set Score.doubleRepeatType = #":|.|:"
-}
-%-----------------------------------------------------------------------
-globalMvtQuatre = {
-	\version "2.18.2"
-	\time 4/4
-	\key a \major
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Allegro animato"
-	#(set-global-staff-size 19)
-	\set Score.doubleRepeatType = #":|.|:"
-}
-%-----------------------------------------------------------------------
-\include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_Dvorak_Quatuor_1_Mvt1_Voix4.ly"
-\include "02_Dvorak_Quatuor_1_Mvt2_Voix4.ly"
-\include "03_Dvorak_Quatuor_1_Mvt3_Voix4.ly"
-\include "04_Dvorak_Quatuor_1_Mvt4_Voix4.ly"
-%#######################################################################
-%#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
-%#######################################################################
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Antonín Dvořák (1841 - 1904)
+%  work               : String Quartet No. 1 in A Major, Op. 2
+%  Source             : Souborné vydání díla, series IV, vol.5a Prague: Editio 
+%                       Supraphon, 1989. Plate H 7625.
+%  Type of score      : Score part for Cello
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Sunday 6 November 2022, 07:18
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/Quartet_n1_Op2_Header.ily"
+\include "./00-Common/Quartet_n1_Op2_PaperParts.ily"
+\include "./00-Common/Quartet_n1_Op2_timeMvt.ily"
+\include "./00-Common/Quartet_n1_Op2_LayoutParts.ily"
+\include "./00-Common/Quartet_n1_Op2_Shortcuts.ily"
+%\include "./00-Common/Quartet_n1_Op2_Format_Part04_Cello.ily"
+\include "./00-Common/Quartet_n1_Op2_Tempi.ily"
+\include "./01-Mvt1/m01_v04_music_Cello.ily"
+\include "./02-Mvt2/m02_v04_music_Cello.ily"
+\include "./03-Mvt3/m03_v04_music_Cello.ily"
+\include "./04-Mvt4/m04_v04_music_Cello.ily"
+%###############################################################################
+%#                          S C O R E   S E C T I O N                          #
+%###############################################################################
 \book{
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Anton Dvorak"
-				"1841 - 1904"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Quatuor pour corde n°1 en La Majeur"
-				"Op. 2 - B.8"
+				"Part for Cello"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Cello"
-			}
+		subsubtitle = \markup { 
+			"Antonín Dvořák — String Quartet No. 1 in A Major, Op. 2"
+		}
+		instrument = \markup {
+			"Cello"
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnVoixQuatre >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatCelloMvtI
+%			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \musicCelloMvtI
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					I
 				}
 			}
 		}
 		\layout {
-			%system-count = #20
+			\layoutPart
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxVoixQuatre >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatCelloMvtII
+%			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \musicCelloMvtII
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					II
 				}
 			}
 		}
 		\layout {
-			%system-count = #20
+			\layoutPart
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtTrois \MvtTroisVoixQuatre >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatCelloMvtIII
+%			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \musicCelloMvtIII
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					III
 				}
 			}
 		}
 		\layout {
-			%system-count = #20
+			\layoutPart
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtQuatre \MvtQuatreVoixQuatre >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatCelloMvtIV
+%			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \musicCelloMvtIV
+			}
+		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					IV
 				}
 			}
 		}
 		\layout {
-			%system-count = #20
+			\layoutPart
 		}
 	}
 }

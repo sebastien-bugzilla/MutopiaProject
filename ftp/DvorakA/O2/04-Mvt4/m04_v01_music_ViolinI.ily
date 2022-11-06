@@ -1,14 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/12-Quatuor_1/04_Dvorak_Quatuor_1_Mvt4_Voix1.ly
-%Fichier généré le :  samedi 4 novembre 2017, 18:14:16 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   4   -   V O I X   1               #
-%#######################################################################
-MvtQuatreVoixUne = \relative c {
+%  work        : String Quartet No. 1 in A Major, Op. 2
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 6 November 2022, 07:18
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolinIMvtIV = \relative c {
 	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
+	\key a \major
 % mesures 1 à 5
 	e''4->\f fis-> cis4.-> d8-.
 	e8( fis) cis-. d-. e4. eis8-.

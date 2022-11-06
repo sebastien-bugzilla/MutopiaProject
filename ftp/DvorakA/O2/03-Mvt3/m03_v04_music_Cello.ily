@@ -1,14 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/12-Quatuor_1/03_Dvorak_Quatuor_1_Mvt3_Voix4.ly
-%Fichier généré le :  samedi 4 novembre 2017, 18:14:16 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   3   -   V O I X   4               #
-%#######################################################################
-MvtTroisVoixQuatre = \relative c {
+%  work        : String Quartet No. 1 in A Major, Op. 2
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 6 November 2022, 07:18
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicCelloMvtIII = \relative c {
 	\clef bass
-	\override TupletBracket #'bracket-visibility = ##f
+	\key fis \minor
 % mesures 1 à 5
 	r4 gis(\f\> a \bar "||" \mark \markup { \musicglyph #"scripts.segno" }
 	ais2\p) b4_\dimmarkup~
@@ -196,5 +194,5 @@ MvtTroisVoixQuatre = \relative c {
 % mesures 146 à 148
 	a-.\p cis,( e)
 	a,( cis) e,-.
-	e8( fis) gis!4(\f_\dacapo a) \bar "||"
+	e8( fis) gis!4(\f^\dacapo a) \bar "||"
 }

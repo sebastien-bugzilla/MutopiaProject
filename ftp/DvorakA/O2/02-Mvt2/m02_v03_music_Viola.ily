@@ -1,14 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/12-Quatuor_1/02_Dvorak_Quatuor_1_Mvt2_Voix3.ly
-%Fichier généré le :  samedi 4 novembre 2017, 18:14:16 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   2   -   V O I X   3               #
-%#######################################################################
-MvtDeuxVoixTrois = \relative c {
+%  work        : String Quartet No. 1 in A Major, Op. 2
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 6 November 2022, 07:18
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolaMvtII = \relative c {
 	\clef alto
-	\override TupletBracket #'bracket-visibility = ##f
+	\key fis \minor
 % mesures 1 à 5
 	cis'4\f cis cis\>
 	cis2\! r4

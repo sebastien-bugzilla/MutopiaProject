@@ -1,14 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/12-Quatuor_1/04_Dvorak_Quatuor_1_Mvt4_Voix3.ly
-%Fichier généré le :  samedi 4 novembre 2017, 18:14:16 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   4   -   V O I X   3               #
-%#######################################################################
-MvtQuatreVoixTrois = \relative c {
+%  work        : String Quartet No. 1 in A Major, Op. 2
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 6 November 2022, 07:18
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolaMvtIV = \relative c {
 	\clef alto
-	\override TupletBracket #'bracket-visibility = ##f
+	\key a \major
 % mesures 1 à 5
 	\times 2/3 {<e a>8\f <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} 
 	\times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} 
