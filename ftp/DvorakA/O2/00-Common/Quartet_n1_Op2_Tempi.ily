@@ -6,6 +6,14 @@
 %###############################################################################
 tempiMvtI = {
 	\tempo "Andante"
+	s4.*3*13
+	\tempo "Allegro" % bar 14
+	s2.*44
+	\tempo "rit." % bar 58
+	s2.*2
+	\tempo "a tempo" % bar 60
+	s2.*58 s4.
+	\tempo "calando" % bar 118
 }
 tempiMvtII = {
 	\tempo "Andante affettuoso ed appassionato"

@@ -4,10 +4,10 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 16) 
+#(set-global-staff-size 16) %16
 %#(ly:set-option 'debug-skylines #t)
 \layout {
-	#(layout-set-staff-size 16)
+	#(layout-set-staff-size 16) %16
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.markFormatter = #format-mark-alphabet
 	\context {
@@ -15,9 +15,8 @@
 		\override TupletBracket #'bracket-visibility = ##f
 %		\override TupletNumber.avoid-slur = #'outside
 		\override Hairpin.to-barline = ##f
-		\override TrillSpanner.bound-details.right.padding = #1
+		\override TrillSpanner.bound-details.right.padding = #1.5
 		\override Fingering.avoid-slur = #'around
-		\override Arpeggio.padding = #0.25
 		%\override Script.staff-padding = #'()
 		\override Hairpin.height = #0.55
 	}
