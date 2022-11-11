@@ -31,7 +31,7 @@ pocoapococresc = #(make-music 'CrescendoEvent
              'span-direction START
              'span-type 'text
              'span-text "poco a poco cresc.")
-
+fourthcorda = \markup {\italic { \concat {4 \super {ta}} corda}}
 
 dacapo = \markup {\italic {D.C. al Fine}}
 fine = \markup {\italic Fine}
@@ -70,6 +70,11 @@ naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	\concat { 
 		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
+	}
+}
+sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
+	\concat { 
+		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \sharp  
 	}
 }
 

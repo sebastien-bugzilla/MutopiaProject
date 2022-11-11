@@ -13,10 +13,15 @@ tempiMvtI = {
 	s2.*2
 	\tempo "a tempo" % bar 60
 	s2.*58 s4.
-	\tempo "calando" % bar 118
+	\tempo "calando" % bar 118.5
 }
 tempiMvtII = {
 	\tempo "Andante affettuoso ed appassionato"
+	s2.*35 s2
+	\tempo "rit." % bar 36.6
+	s4 
+	\tempo "in tempo" % bar 37
+	
 }
 tempiMvtIII = {
 	\tempo "Allegro Scherzando"
