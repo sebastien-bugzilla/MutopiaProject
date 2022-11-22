@@ -8,25 +8,25 @@ musicViolaMvtIV = \relative c {
 	\clef alto
 	\key a \major
 % mesures 1 à 5
-	\times 2/3 {<e a>8\f <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} 
-	\times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} \times 2/3 {<e a>8 <e a> <e a>} 
-	\times 2/3 {<a fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } 
-	\times 2/3 {dis dis dis} \times 2/3 {dis dis dis} \times 2/3 {gis, gis gis} \times 2/3 {gis gis gis} 
-	\times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} 
+	\tuplet 3/2 4 {<e a>8\f q q  q q q  q q q  q q q
+	q q q  q q q  q q q  q q q 
+	<a fis'> q q  q q q  q q q  q q q
+	dis dis dis dis dis dis gis, gis gis gis gis gis
+	fis fis fis fis fis fis fis fis fis fis fis fis 
 % mesures 6 à 10
-	\times 2/3 {fis' fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} 
-	\times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} 
-	\times 2/3 {<a, fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } \times 2/3 {<a fis'> <a fis'> <a fis'> } 
-	\times 2/3 {e'\ff e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
-	\times 2/3 {e'\fz e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
+	fis' fis fis fis fis fis fis fis fis fis fis fis
+	fis fis fis fis fis fis fis fis fis fis fis fis
+	<a, fis'> q q  q q q  q q q  q q q
+	e'\ff e, e e e e e e e e( fis e)
+	e'\fz e, e e e e e e e e( fis e)
 % mesures 11 à 15
-	\times 2/3 {e'\fz e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
-	\times 2/3 {e'\fz e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
+	e'\fz e, e e e e e e e e( fis e)
+	e'\fz e, e e e e e e e e( fis e)}
 	gis1\fz~
 	gis4 fis8-! gis-! a4-! b-!
 	e,1->~
 % mesures 16 à 20
-	e4 a(\< cis e)
+	e4 a(\< cis e)\!
 	<fis a>2\fp->( <e a>->)
 	<dis a'>->( <e a>) \mark \default
 	<dis a'>8\f r c-. b-. \acciaccatura d c-. b-. a16-. b-. c-. d-. 
@@ -48,15 +48,15 @@ musicViolaMvtIV = \relative c {
 	cis2 b4.(\p e,8)
 	a16( e fis e fis e fis e) cis( e fis e fis e fis e)
 	a,( e' fis e fis e fis e) a( e fis e fis e fis e)
-	a,(\< b a b a b a b) a(\> b cis b cis b a b)\!
+	a,(\< b a b a b a b)\! a(\> b cis b cis b a b)\!
 % mesures 36 à 40
-	\times 2/3 {e,8_\dimmarkup fis e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e' e e} \mark \default
+	\tuplet 3/2 4 {e,8_\dimmarkup fis e e e e e e e e' e e} \mark \default
 	<fis a>2\p-> <e a>->
 	<dis a'>-> <e a>->
 	a->\f gis->
 	<fis cis'>4 a,-> b-> cis->
 % mesures 41 à 45
-	cis,\>( d e2)
+	cis,\>( d e2)\!
 	fis16\p( b cis b cis\fp b cis b) cis( b cis b cis b cis b)
 	dis,( b' cis b cis\fz b cis b cis b cis b) a( b cis b)
 	fis( b cis b cis\fz b cis b cis b cis b) a(-> b cis b)
@@ -81,8 +81,8 @@ musicViolaMvtIV = \relative c {
 	e fis-.( dis-.) r
 % mesures 61 à 65
 	fis2(\p gis)
-	a\< gis4( cis)
-	dis\mf <fis, dis'>-> <fis dis'>-> <fis dis'>->\>
+	a\< gis4( cis)\!
+	dis\mf <fis, dis'>-> q-> q->\>
 	cis'2( b4)\! r
 	dis,,8\p( b' a b gis b e, b')
 % mesures 66 à 70
@@ -93,16 +93,16 @@ musicViolaMvtIV = \relative c {
 	b4 a8( b dis, b' a b)
 % mesures 71 à 75
 	\acciaccatura gis b2( e\<)
-	dis\>( fis)
-	r4\! <<{gis,4} \\ {gis8( e')}>> r4 <<{b4} \\ {b8( gis')}>>
+	dis\>( fis)\!
+	r4 <<{gis,4\p} \\ {gis8( e')}>> r4 <<{b4} \\ {b8( gis')}>>
 	r4 <<{b,4} \\ {b8( fis')}>> r4 <<{b,4} \\ {b8( a')}>>
 	r4 b,\< r gis\!
 % mesures 76 à 80
 	r e\> r fis\!
 	gis8-. b-. gis-. e~ e gis-. e-. cis~
-	cis fis-. dis-. b'~ b fis'-. fis,-._\pococresc b~
+	cis fis-. dis-. b'~ b_\pococresc fis'-. fis,-. b~
 	b dis,-. e-. b'~ b d!-. b-. gis~
-	gis cis,-. a'-. fis~ fis dis-. e-. a
+	gis cis,-. a'-. fis~ fis dis-. e-. a-.
 % mesures 81 à 85
 	b1->\f
 	b16( cis b cis) dis( e dis e) fis( gis fis gis) a( b a b)
@@ -119,56 +119,56 @@ musicViolaMvtIV = \relative c {
 	<e d'>\fz r
 	<e d'>\fz r
 	<<{
-	    s1
-	    s
-	    s
+		s1
+		s
+		s
 % mesures 96 à 100
-	    r2 d'
+		r2 d'
 	} \\ {
-	    e,1\pp~
-	    e~
-	    e~
+		e,1\pp~
+		e~
+		e~
 % mesures 96 à 100
-	    e
+		e
 	}>>
 	r2 <cis' e>\ff->
 	r <cis e>\fz
 	r <b e>\fz
 	r <ais e'>\fz
 % mesures 101 à 105
-	<fis ais>1\p\((
-	ais2)_\dimmarkup cis\)
+	<fis ais~>1\p(
+	ais2_\dimmarkup cis)
 	b1(
 	fisis)
-	\times 2/3 {gis8\p( b gis} \times 2/3 {b gis b} \times 2/3 {gis b gis} \times 2/3 {b gis b)} 
+	\tuplet 3/2 4 {gis8\p( b gis b gis b gis b gis b gis b)
 % mesures 106 à 110
-	\times 2/3 {a( b a} \times 2/3 {b a b} \times 2/3 {a b a} \times 2/3 {b a b)}
-	\times 2/3 {gis( b gis} \times 2/3 {b gis b} \times 2/3 {gis b gis} \times 2/3 {b gis b)} 
-	\times 2/3 {a( b a} \times 2/3 {b a b} \times 2/3 {a b a} \times 2/3 {b a b)}
+	a( b a b a b a b a b a b)
+	gis( b gis b gis b gis b gis b gis b)
+	a( b a b a b a b a b a b)}
 	gis4 r r2
 	r1
 % mesures 111 à 115
-	b2\p\<( \afterGrace e)\startTrillSpan {dis16[\stopTrillSpan e]}
-	dis2\<( \afterGrace fis)\startTrillSpan {e16[\stopTrillSpan fis]} \mark \default
+	b2\p\<( \afterGrace e)\startTrillSpan {dis16[ e]\stopTrillSpan\!}
+	dis2\<( \afterGrace fis)\startTrillSpan {e16[ fis]\stopTrillSpan\!} \mark \default
 	<b, gis'>2\ff-> <b eis>->
 	<b fis'>-> <dis a'>->
 	<gis b>->_\dimmarkup <b, gis'>->
 % mesures 116 à 120
 	<e! a>->\p <a, fis'>->
 	e^\((\pp fis)\<
-	cis( cisis)\)
+	cis( cisis)\)\!
 	dis1\p\<~
 	dis\f
 % mesures 121 à 125
 	a'2\pp( b)
-	a(\< gis)
+	a(\< gis)\!
 	fis8\f r dis16( e dis e fis gis fis gis a b a b)
 	cis( dis cis dis e fis e fis) gis( a gis a b cis b cis)
-	fis,1_\fzdim
+	<< fis,1 {s4 s s s_\fzdim}>>
 % mesures 126 à 130
-	dis,\>
-	cis'2\p \times 2/3 {cis8( d cis} \times 2/3 {b a b)}
-	cis2 \times 2/3 {cis8( d cis} \times 2/3 {b a gis)}
+	dis,1\>
+	cis'2\p \tuplet 3/2 4 {cis8( d cis b a b)}
+	cis2 \tuplet 3/2 4 {cis8( d cis b a gis)}
 	fis4(_\ppsempre e a g)
 	b-^( a8 g) <fis a>2
 % mesures 131 à 135
@@ -186,23 +186,23 @@ musicViolaMvtIV = \relative c {
 % mesures 141 à 145
 	d8( f) bes-. c-. bes\< r r4
 	d,8( f) bes-. c-. bes\! r r4
-	f'4\f-> f-> \times 2/3 {f8 f f} \times 2/3 {f8 f f} 
-	\times 2/3 {f8 f f} \times 2/3 {f8 f f} \times 2/3 {f8 f f} \times 2/3 {f8 f f} 
-	\times 2/3 {g g g} \times 2/3 {g g g} \times 2/3 {a a a } \times 2/3 {a\< a a } 
+	f'4\f-> f-> \tuplet 3/2 4 {f8 f f f8 f f
+	f8 f f f8 f f f8 f f f8 f f
+	g g g g g g a a a  a\< a a
 % mesures 146 à 150
-	\times 2/3 {bes-> bes bes} \times 2/3 {b-> b b} \times 2/3 {c-> c c} \times 2/3 {cis-> cis cis\!}
-	\times 2/3 {d->_\ffsempre d d} \times 2/3 {cis!-> cis cis} \times 2/3 {b-> b b } \times 2/3 {bes-> bes bes}
-	\times 2/3 {a a a} \times 2/3 {g g g} \times 2/3 {fis fis fis} \times 2/3 {e e e}
+	bes-> bes bes b-> b b c-> c c cis-> cis cis\!
+	d->_\ffsempre d d cis!-> cis cis b-> b b  bes-> bes bes
+	a a a g g g fis fis fis e e e}
 	d8->\f d'4-> cis-> b-> bes8->~
 	bes a4-> g-> fis-> e8-.
 % mesures 151 à 155
 	<a, fis'>1\ff->
 	<d, a'>\fz 
-	a'\trill
-	a\trill \mark \default
-	a2(\p ais)
+	a'\startTrillSpan
+	a\startTrillSpan \mark \default
+	a2(\p\stopTrillSpan ais)
 % mesures 156 à 160
-	b( <b d>)
+	b(_~ <b d>)
 	fis1~
 	fis2\> e\!
 	a4 r r2
@@ -211,12 +211,12 @@ musicViolaMvtIV = \relative c {
 	d4\p d2-> cis4-.
 	b2-> e->
 	d4\p fis2->\< e4
-	d2-> g->
-	fis4\!-> g-> gis->_\crescmarkup a->
+	d2-> g->\!
+	fis4-> g-> gis->_\crescmarkup a->
 % mesures 166 à 170
 	b2->\f cis->
 	d4-> d\<-> d-> d->
-	d-> cis8-. d-. e4-. a,-.
+	d-> cis8-. d-. e4-. a,-.\!
 	<d, a'>1\ff
 	<g, d'>\fz
 % mesures 171 à 175
@@ -224,9 +224,9 @@ musicViolaMvtIV = \relative c {
 	<g, d'>\fz
 	<d' a'>2-> <d a'>->
 	<a d>-> <a d>-> \mark \default
-	b'4-> a8-.( b-.) \afterGrace cis2\startTrillSpan {b16[\stopTrillSpan cis]}
+	b'4-> a8-.( b-.) \afterGrace cis2\startTrillSpan {b16[ cis]\stopTrillSpan}
 % mesures 176 à 180
-	b4-> a8-.( b-.) \afterGrace cis2\startTrillSpan {b16[\stopTrillSpan cis]}
+	b4-> a8-.( b-.) \afterGrace cis2\startTrillSpan {b16[ cis]\stopTrillSpan}
 	dis,,16( a' b a b a b a c a b a) e( a b a)
 	dis,( a' b a b a b a c a b a) e( a b a)
 	a4\p r a r
@@ -238,11 +238,11 @@ musicViolaMvtIV = \relative c {
 	b a4 b a b8~
 	b a a b~ b a a\< b~
 % mesures 186 à 190
-	b a a b~ b fis e dis
+	b a a b~ b fis e dis\!
 	e(\p d!) d-. c-. c'( b) b-. a-.
 	c( b) b-. a-._\crescmarkup e'( d) d-. c-.
 	c( b) b-. a-. c'( b) b-. a-.
-	e'( d) d-. c-. c(\< b) b-. a-.
+	e'( d) d-. c-. c(\< b) b-. a-.\!
 % mesures 191 à 195
 	<gis b>2\f <fis dis'>\ff~
 	<fis dis'> <e b'> \mark \default
@@ -252,50 +252,50 @@ musicViolaMvtIV = \relative c {
 % mesures 196 à 200
 	gis2~ gis8 e-. gis!-. dis-. 
 	r4 <d! e>\p r <d e>
-	r4 <d! e>\p r <d e>
+	r4 <d! e> r <d e>
 	d\pp r8. d,16 d4 r8. d16
 	d4 r8. d16 d4 r
 % mesures 201 à 205
 	e''8( cis) d-. b-. r2
 	e,8( cis) d-. b-. e, r r4
 	e'16( cis d b e,8) r e'16( cis d b e,8) r 
-	e'16( cis d\< b e,8) r e'16( cis d b e,8) r\!
+	e'16( cis d\< b e,8) r e'16( cis d b e,8)\! r
 	e'8(\ff cis) dis-. b-. e( cis) dis-. b-.
 % mesures 206 à 210
 	cis'16 cis e e b b d! d a a cis cis gis gis b b
 	fis fis a a e e gis gis d d fis fis cis cis e e
 	c c ees ees b b d d a a d d gis, gis d' d \mark \default
-	\times 2/3 {<e, a>8\f <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } 
-	\times 2/3 {<e a> <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } \times 2/3 {<e a> <e a> <e a> } 
+	\tuplet 3/2 4 {<e, a>8\f q q  q q q  q q q  q q q
+	q q q  q q q  q q q  q q q
 % mesures 211 à 215
-	\times 2/3 {<a fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} 
-	\times 2/3 {dis dis dis} \times 2/3 {dis dis dis} \times 2/3 {gis, gis gis} \times 2/3 {gis gis gis} 
-	\times 2/3 {<fis d'> <fis d'> <fis d'> } \times 2/3 {<fis d'> <fis d'> <fis d'> } \times 2/3 {<fis d'> <fis d'> <fis d'> } \times 2/3 {<fis d'> <fis d'> <fis d'> } 
-	\times 2/3 {fis' fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} 
-	\times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} \times 2/3 {fis fis fis} 
+	<a fis'> q q  q q q  q q q  q q q
+	dis dis dis dis dis dis gis, gis gis gis gis gis
+	<fis d'> q q  q q q  q q q  q q q
+	fis' fis fis fis fis fis fis fis fis fis fis fis
+	fis fis fis fis fis fis fis fis fis fis fis fis
 % mesures 216 à 220
-	\times 2/3 {<a, fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} \times 2/3 {<a fis'> <a fis'> <a fis'>} 
-	\times 2/3 {e'\ff e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
-	\times 2/3 {e'\ff e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
-	\times 2/3 {e'-> e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
-	\times 2/3 {e'-> e, e} \times 2/3 {e e e} \times 2/3 {e e e} \times 2/3 {e( fis e)} 
+	<a, fis'> q q  q q q  q q q   q q q
+	e'\ff e, e e e e e e e e( fis e)
+	e'\ff e, e e e e e e e e( fis e)
+	e'-> e, e e e e e e e e( fis e)
+	e'-> e, e e e e e e e e( fis e)}
 % mesures 221 à 225
 	gis1->~
 	gis4 fis8-. gis-. a4-. b-.
 	e,1->~
-	e4 a(\< cis e) \mark \default
-	\set doubleSlurs = ##t <fis a>2\p( <e a>)
+	e4 a(\< cis e)\! \mark \default
+	<fis a^~>2\p_( <e a>)
 % mesures 226 à 230
-	<ees a>( <d a'>)(
-	<d a'>8) \set doubleSlurs = ##f r c\pp b-. c-. b-. a16( b c d)
+	<ees a^~>_( <d a'>)~
+	<d a'>8 r c-.\pp b-. c-. b-. a16( b c d)
 	c8-. d,-. c'-. b-. c-. b-. a16( b c d)
-	<e, b'>1\pp\<~
-	<e b'>
+	<e, b'>1\pp\<~ 
+	<e b'>\!
 % mesures 231 à 235
 	c8\pp r c r c r c r
 	c r c r c r c r 
 	c8[ r16 c] c8[_\crescmarkup r16 c] c8[ r16 c] c8[ r16 c] 
-	c8[ r16 c] c8[\< r16 c] c8[ r16 c] c8[ r16 c] 
+	c8[ r16 c] c8[\< r16 c] c8[ r16 c] c8[ r16 c]\!
 	e8\f( g) r4 e'8( g) r4
 % mesures 236 à 240
 	g,8( bes) r4 g'8( bes) r4 \mark \default
@@ -314,57 +314,57 @@ musicViolaMvtIV = \relative c {
 	a,4 b2-> r4
 	d2( cis)
 	e2.(_\crescmarkup fis4)
-	gis-.( <gis b>-.\< <gis b>-. <gis b>-.)
+	gis-.( <gis b>-.\< q-. q-.)\!
 % mesures 251 à 255
-	fis2(\> e4) r\!
+	fis2(\> e4)\! r
 	gis,8\p( e' d e cis e a, e')
 	b( e d e gis, e' d e)
 	cis1~
 	cis4 e(-- e-- e--) \mark \default
 % mesures 256 à 260
-	e8( fis e d cis\< b cis a)
+	e8( fis e d cis\< b cis a)\!
 	b(\> e d e\! gis, e' d e)
-	r4 e--( e--\< e--)
-	e\>( fis2 e4)
+	r4 e--( e--\< e--)\!
+	e\>( fis2\! e4)
 	e2\p( a)
 % mesures 261 à 265
 	gis( b)_\crescmarkup
-	a(\< e')
-	dis\!_\dimmarkup( \times 2/3 {d8-.) b-. gis-.} \times 2/3 {e d b}
+	a(\< e')\!
+	dis_\dimmarkup( \tuplet 3/2 4 {d8-.) b-. gis-. e-. d-. b-.}
 	a16\p( b cis b a b a b) a( b cis b a b a b)
 	gis( a b a gis a gis a) gis( b e b gis b gis b)
 % mesures 266 à 270
 	a(_\pococresc e' fis e a e fis e) g( e fis g fis e fis g)
-	fis( dis e fis e\< dis e fis) d( a' b a d a b a)
+	fis( dis e fis e\< dis e fis) d( a' b a d a b a)\!
 	e1\f->
-	e16( fis e\< fis) gis( a gis a) b( cis b cis) d( e d e)
+	e16( fis e\< fis) gis( a gis a) b( cis b cis) d( e d e)\!
 	e,1\fz
 % mesures 271 à 275
-	e16( fis e\< fis) gis( a gis a) b( cis b cis) d( e d e) \mark \default
+	e16( fis e\< fis) gis( a gis a) b( cis b cis) d( e d e)\! \mark \default
 	cis,2\p( e)
 	a,( b)_\crescmarkup
 	cis( d)\<
-	fis( e) \mark \default
+	fis( e)\! \mark \default
 % mesures 276 à 280
 	<d, b'>\ff-> r
-	<d b'>4-> <d b'>-> r2
+	q4-> q-> r2
 	<e cis'>-> r
-	<e cis'>4-> <e cis'>-> r2
+	q4-> q-> r2
 	a1\p~
 % mesures 281 à 285
 	a
 	<<{
-	    r2 fis'
-	    r g
+		r2 fis'
+		r g
 	} \\ {
-	    a,1~
-	    a
+		a,1~
+		a
 	}>>
-	r2 <b fis'>4\ff-> <b fis'>->
-	<b fis'>2-> <b fis'>->
+	r2 <b fis'>4\ff-> q->
+	q2-> q->
 % mesures 286 à 290
-	r2 <b e>4-> <b e>->
-	<b dis>2-> <b dis>->
+	r2 <b e>4-> q->
+	<b dis>2-> q->
 	b1~\p
 	b
 	a(_\dimmarkup
@@ -373,7 +373,7 @@ musicViolaMvtIV = \relative c {
 	cis8(\p e, a e' cis e, a e')
 	d( e b e gis, e' d e)
 	cis-. cis(\< b a d cis fis e)\!
-	d( fis) e-. a-. gis\<-. b-. e-. d-.
+	d( fis) e-. a-. gis\<-. b-. e-. d-.\!
 % mesures 296 à 300
 	cis16(\f b a b a b cis b) fis2->
 	b16( cis d cis b cis b a) e2->
@@ -383,49 +383,49 @@ musicViolaMvtIV = \relative c {
 % mesures 301 à 305
 	<d d>->
 	<d b'>\f~->
-	<d b'>4\< a'-> fis-> d->
+	q4\< a'-> fis-> d->\!
 	cis(\ff b a gis)
 	a16( b a b) cis( d cis d) e( fis e fis) gis( a_\dimmarkup gis a)
 % mesures 306 à 310
 	e4( d cis b)
 	a1
-	\times 2/3 {d8(\pp b d} \times 2/3 {b d b} \times 2/3 {d8 b d} \times 2/3 {b d b)} 
-	\times 2/3 {d8( b d} \times 2/3 {b d b} \times 2/3 {d8 b d} \times 2/3 {b d b)} 
-	\times 2/3 {d'8( b d} \times 2/3 {b d_\crescmarkup b} \times 2/3 {d8 b d} \times 2/3 {b d b)} 
+	\tuplet 3/2 4 {d8(\pp b d \stemDown b d b \stemNeutral d8 b d \stemDown b d b) \stemNeutral
+	d8( b d \stemDown b d b \stemNeutral d8 b d \stemDown b d b) \stemNeutral
+	d'8( b d b d_\crescmarkup b d8 b d b d b)
 % mesures 311 à 315
-	\times 2/3 {d8( b d\<} \times 2/3 {b d b} \times 2/3 {d8 b d} \times 2/3 {b d b)} \mark \default
+	d8( b d\< b d b d8 b d b d b)\!} \mark #18
 	gis2\ff-> <fis a>->
 	<b, fis'>-> <e d'>->
 	<<{
-	    cis2(\f\< e)
-	    d(\> b)
+		cis2(\f\< e)\!
+		d(\> b)\!
 	} \\ {
-	    e,1
-	    e
+		e,1
+		e
 	}>>
 % mesures 316 à 320
 	<<{
-	    cis'2(\< e)
-	    e(\> b)\!
+		cis'2(\< e)\!
+		e(\> b)\!
 	} \\ {
-	    e,1
-	    e
+		e,1
+		e
 	}>>
 	d'1\pp~
 	d~
 	d~
 % mesures 321 à 325
-	d2~\< d4\fermata^\lunga\> r4\! \bar "||" \time 9/8
-	\tempo "Adagio" a2.\ppp e4.(~
+	d2~\< d4^\lungafermata\> r4\! \bar "||" \time 9/8
+	a2.\ppp e4.(~
 	e a gis)
-	a(\< cis) e4(\f d8)
-	a4.(\> e a)~
+	a(\< cis)\! e4(\f d8)
+	a4.(\> e a)~\!
 % mesures 326 à 330
 	a2.\ppp~( a8 gis a)
 	a2.~( a8 gis a)
 	a2.\ppp~ a4._\dimmarkup~
 	a2.~ a4.\fermata \bar "||" \time 4/4
-	\tempo "Tempo I, Allegro animato" R1*2
+	R1*2
 % mesures 331 à 335
 	
 	e'4->\f fis-> cis4.( d8-.)

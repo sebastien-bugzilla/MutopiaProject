@@ -14,7 +14,6 @@
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
 \version "2.22.1"
-%\include "/media/Documents/Partitions/lilypond/markup.ly"
 \include "./00-Common/Quartet_n1_Op2_Header.ily"
 \include "./00-Common/Quartet_n1_Op2_PaperConductors.ily"
 \include "./00-Common/Quartet_n1_Op2_timeMvt.ily"

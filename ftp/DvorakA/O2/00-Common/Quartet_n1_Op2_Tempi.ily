@@ -25,9 +25,23 @@ tempiMvtII = {
 }
 tempiMvtIII = {
 	\tempo "Allegro Scherzando"
+	s2.*19 s4
+	\tempo "poco ritardando" % bar 20.3
+	s2 s2.*3 
+	\tempo "a tempo" % bar 24
+	s2.*44
+	\tempo "poco a poco rit." % bar 68
+	s2.*43
+	\tempo "poco sostenuto" % bar 103
+	s2.*16
+	\tempo "in tempo" % bar 119
 }
 tempiMvtIV = {
 	\tempo "Allegro animato"
+	s1*321
+	\tempo "Adagio" % bar 322
+	s4.*3*8
+	\tempo "Tempo I, Allegro animato" % bar 330
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #
