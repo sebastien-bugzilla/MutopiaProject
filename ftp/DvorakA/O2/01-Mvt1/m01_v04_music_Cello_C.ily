@@ -14,7 +14,7 @@ musicCelloMvtI = \relative c {
 	a2.\> e4.\!
 	a,\pp( d) cis4( b8)
 % mesures 6 à 10
-	a4.( gis_\crescmarkup fis)
+	a4.( gis-\offset X-offset #7 _\crescmarkup fis)
 	cis(\f\> dis e)\!
 	a~(_\dimmarkup a4\pp b8) e,(\<-. e-.\> e-.)\!
 	e r r r4. r
@@ -293,15 +293,15 @@ musicCelloMvtI = \relative c {
 % mesures 226 à 230
 	b4 r8 r b4\<
 	bes\f r8 r4 r8 \mark #10
-	a16\fp a' a a a a  a a a a a a
+	a16\fp a' a a a a  a4.:16
 	a2.:16\p
 	a:
 % mesures 231 à 235
-	e16\fz e, e e e e  e e e e e e
-	a\f a' a a a a  a a a a a a
-	a,\fz a' a a a a  a a a a a a
-	a,\fz a' a a a a a, a' a a a a
-	e\fz e, e e e e  e e e e e e
+	e16\fz e, e e e e  e4.:16
+	a16\f a' a a a a  a4.:16
+	a,16\fz a' a a a a  a4.:16
+	a,16\fz a' a a a a a, a' a a a a
+	e\fz e, e e e e  e4.:16
 % mesures 236 à 240
 	cis'8_\piuf cis cis bis r r
 	cis cis cis bis r r 
@@ -319,10 +319,10 @@ musicCelloMvtI = \relative c {
 	a,4 r8 r4 r8
 	a4 r8 a'4 r8
 	e,4 r8 r4 r8
-	b''4.~^\arco b8 r r
+	\whiteoutMarkup b''4.~-\offset X-offset #-4.5 ^\arco b8 r r
 % mesures 251 à 255
 	e,16_\crescmarkup e e e e e  e e e e e e
-	e8\p e, e fis4.\<
+	e8\p e, e << fis4. {s8\< s s\!} >>
 	fis'8->\< fis, fis gis4.\! \mark \default
 	a8\f-. gis-. a-. fis-. r r
 	a8-. gis-. a-. fis-. r r
@@ -357,19 +357,19 @@ musicCelloMvtI = \relative c {
 	d4.( e)\<
 	fis\>( g4\! a8)
 % mesures 281 à 285
-	a'16\p( bes d bes a bes a f e f e d)
+	\shape #'((0 . -1.3)(0 . 0)(0 . 0)(0 . 0)) Slur a'16\p( bes d bes a bes a f e f e d)
 	a( bes d bes a bes a f e f e d)
 	a'( bes d bes a bes) a8 r r
 	a16( bes d bes a bes) a8 r r
 	bes16(\pp c d c bes c) bes8 r r
 % mesures 286 à 290
 	b!16( c d c b c) b8 r r
-	c4\p^\pizz r8 f4 r8
+	\whiteoutMarkup c4\p-\offset X-offset #-5.5 ^\pizz r8 f4 r8
 	ees4 r8 d4 r8
 	c4\< r8 f4 r8
 	ees4 r8 d4\! r8 \mark \default
 % mesures 291 à 295
-	e!4.~_\fconmoltaforza^\arco e4 cis!8
+	e!4.~_\fconmoltaforza-\offset X-offset #-5 ^\arco e4 cis!8
 	b8( a) fis-. e4.
 	r8 r d'-. d4( cis8)
 	b8( fis') fis-. fis4( e8)
@@ -389,7 +389,7 @@ musicCelloMvtI = \relative c {
 % mesures 306 à 310
 	e8(\! gis fis) e(\> fis gis)\!
 	a16\! a e e a, a a' a e e a, a 
-	a'\< a e e a, a d4.\! \mark \default
+	\hairpinShorten #'(0 . -6) a'\< a e e a, a d4.\! \mark \default
 	cis8->\f b-> a-> gis16( a b a gis cis)
 	fis,4( fis'8) fis16( a gis fis e d)
 % mesures 311 à 315
@@ -419,7 +419,7 @@ musicCelloMvtI = \relative c {
 % mesures 331 à 335
 	a,,8\pp( cis e) a( e cis)
 	a'( e cis) a( e cis')
-	a2.~\<
+	\hairpinShorten #'(0 . -11) a2.~\<
 	a\!
 	a8(\pp cis e a cis e~
 % mesures 336 à 340
@@ -448,7 +448,7 @@ musicCelloMvtI = \relative c {
 	a2.
 % mesures 356 à 359
 	g4.(_\dimmarkup f)
-	e(\p\> a)
+	\hairpinShorten #'(0 . -12) e(\p\> a)
 	a( e')\!
 	a2.\ppp\fermata \bar "|."
 }

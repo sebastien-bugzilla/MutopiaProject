@@ -20,11 +20,12 @@
 \include "./00-Common/Quartet_n1_Op2_LayoutConductors.ily"
 \include "./00-Common/Quartet_n1_Op2_Shortcuts.ily"
 %\include "./00-Common/Quartet_n1_Op2_Format_Cond_Mvt01.ily"
+\include "./00-Common/Quartet_n1_Op2_Format_temp.ily"
 \include "./00-Common/Quartet_n1_Op2_Tempi.ily"
-\include "./01-Mvt1/m01_v01_music_ViolinI.ily"
-\include "./01-Mvt1/m01_v02_music_ViolinII.ily"
-\include "./01-Mvt1/m01_v03_music_Viola.ily"
-\include "./01-Mvt1/m01_v04_music_Cello.ily"
+\include "./01-Mvt1/m01_v01_music_ViolinI_C.ily"
+\include "./01-Mvt1/m01_v02_music_ViolinII_C.ily"
+\include "./01-Mvt1/m01_v03_music_Viola_C.ily"
+\include "./01-Mvt1/m01_v04_music_Cello_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -49,9 +50,12 @@
 			\new StaffGroup <<
 				\new GrandStaff <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtI
-%						}
+						\new Voice {
+							\displayFilterVoice
+						}
+						\new Voice {
+							\formatConductorMvtI
+						}
 						\new Voice {
 							\tempiMvtI
 						}
@@ -75,7 +79,7 @@
 			breakbefore = ##t
 		}
 		\layout {
-			system-count = 72
+			system-count = 68
 		}
 	}
 }

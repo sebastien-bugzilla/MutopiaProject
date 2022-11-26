@@ -8,7 +8,7 @@
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
 	left-margin = 15 \mm
-%	indent = 0
+	indent = 0
 %	annotate-spacing = ##t
 %	slashSeparator = \markup {
 %		\center-align

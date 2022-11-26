@@ -385,7 +385,7 @@ musicViolinIMvtI = \relative b {
 	gis(\> e e')\! e4.~
 	e\pp~ e8 r r
 	r4 r8 e,( a gis)
-	fis4.(~ fis8\< b a)\!
+	fis4.(~ fis8\< b a)
 % mesures 306 à 310
 	gis(\! e e') e4.(~\>
 	e~\! e4 cis8)
@@ -433,7 +433,7 @@ musicViolinIMvtI = \relative b {
 	d8-.\f b-. d-. d4( \tuplet 3/2 {cis16 b a)}
 	gis4( a8) b4( cis8)
 	d-. b-. d-. d4( \tuplet 3/2 {cis16 b a)}
-	gis gis a a b b cis cis d d dis dis
+	gis gis a a b_\crescmarkup b cis cis d d dis dis
 % mesures 346 à 350
 	e\< e fis fis gis gis a a b b e, e\!
 	a8-.\f gis-. a-. a4 fis16( e)

@@ -50,14 +50,17 @@ simile=^\markup {\italic simile}
 staccsempre=^\markup {\italic {stacc. sempre}}
 sulG = \markup {sul G.}
 
-pocoapococresc = #(make-music 'CrescendoEvent
-             'span-direction START
-             'span-type 'text
-             'span-text "poco a poco cresc.")
+pocoapococresc = #(
+	make-music 'CrescendoEvent
+	'span-direction START
+	'span-type 'text
+	'span-text "poco a poco cresc."
+)
 
 
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
+pconespressioneD = \tweak DynamicText.self-alignment-X #-0.88 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "con espressione"))
 
 lungafermata=^\markup {
 	\halign #-0.21 \center-column {
@@ -85,5 +88,98 @@ sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	}
 }
 
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = ##t
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+whiteoutMarkup = {
+	\once \override Hairpin.layer = #4
+	\once \override TextScript.layer = #3
+	\once \override TextScript.whiteout = ##t
+	\once \override TextScript.whiteout-style = #'outline
+}
+
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
+
+beamGap = #(define-music-function
+	(gap)
+	(number?)
+	#{
+		\once \override Beam.auto-knee-gap = #gap
+	#}
+)
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+
+%whiteoutDynamic = {
+%	\once \override DynamicText.whiteout = ##t
+%	\once \override DynamicText.whiteout-style = #'outline
+%}
+
+
+
+%stemOffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \offset length #offset Stem
+%	#}
+%)
+
+
+%markYoffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \override Score.RehearsalMark.Y-offset = #offset
+%	#}
+%)
+
+%markXoffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+%	#}
+%)
+
+%mmrnDown = {
+%	\once \override MultiMeasureRestNumber.direction = #-1 
+%}
+
+%dynSpanYoffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \override DynamicTextSpanner.bound-details.right.Y = #offset
+%	#}
+%)
+
+%mmrLength = #(define-music-function
+%	(length)
+%	(number?)
+%	#{
+%		\once \override MultiMeasureRest.space-increment = #length
+%	#}
+%)
 
 

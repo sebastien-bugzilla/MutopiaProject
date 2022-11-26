@@ -322,7 +322,7 @@ musicCelloMvtI = \relative c {
 	b''4.~^\arco b8 r r
 % mesures 251 à 255
 	e,16_\crescmarkup e e e e e  e e e e e e
-	e8\p e, e fis4.\<
+	e8\p e, e << fis4. {s8\< s s\!} >>
 	fis'8->\< fis, fis gis4.\! \mark \default
 	a8\f-. gis-. a-. fis-. r r
 	a8-. gis-. a-. fis-. r r

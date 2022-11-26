@@ -39,17 +39,17 @@ musicViolaMvtI = \relative c' {
 		e\fz e r b\fz b r
 		b\fz b r a\fz a r
 % mesures 26 à 30
-		b4(\p cis8)\> b4( a8)\!
+		b4(\p \once \stemUp cis8)\> b4( a8)\!
 		gis8\pp e e e r r 
 		cis'16\fp cis' cis, cis cis cis cis cis cis cis cis cis
 		cis\fp cis' cis, cis cis cis cis cis cis cis cis cis
 		d\fp d' d, d d d d d d d d d 
 % mesures 31 à 35
-		gis,\fp gis' gis, gis gis gis gis gis gis gis gis gis
+		gis,-\offset X-offset #-1 \fp gis' gis, gis gis gis gis gis gis gis gis gis
 		cis'\fp cis, cis cis cis cis cis'\fp cis, cis cis cis cis
 		cis'\fp cis, cis cis cis cis cis4.:16\p
 		<a d>2.:\pp
-		gis4.:\fp fisis:\fp
+		gis4.:\fp fisis:-\tweak extra-offset #'(0.5 . 0.5) \fp
 % mesures 36 à 40
 		gis2.:\fp
 		gis4.: fisis:
@@ -63,8 +63,8 @@ musicViolaMvtI = \relative c' {
 		d2.:16
 		dis:\fz
 % mesures 46 à 50
-		dis,:\fz
-		e4.\fz fis8-> e-> dis->
+		dis,:-\tweak extra-offset #'(0 . 0.4) \fz
+		e4.\fz fis8^> e^> dis^>
 		<e cis'>2.~
 		<e cis'>
 		cis'4.( a_\dimmarkup)
@@ -94,12 +94,12 @@ musicViolaMvtI = \relative c' {
 		ais4( b8) fis4.\<~
 % mesures 71 à 75
 		fis8\! r r r4 r8
-		b'4.\pp~ b4 gis8-.
+		\dynEO #'(0 . 1) b'4.\pp~ b4 gis8-.
 		gis8( fis e16 cis b4.)
 		ais4( b8)\< fis4.~
 		fis8\! r r r4 r8
 % mesures 76 à 80
-		b'4.\mf~ b4 gis8
+		\dynEO #'(0 . 1) b'4.\mf~ b4 gis8
 		fis8( e dis)\< cis( bis cis)\!
 		dis4(\f cis8) bis4.->
 		gis'4( fis8) e16( gis fis e dis cis)
@@ -161,7 +161,7 @@ musicViolaMvtI = \relative c' {
 			d \tuplet 3/2 {ais16( b cis)} d8~ d16\< fis( e d cis b)\!
 		}
 		{
-			e,8\pp( dis e) e4( cis16 dis)
+			e,8-\offset X-offset #-1.5 \pp( dis e) e4( cis16 dis)
 		}
 	}
 % mesures 121 à 125
@@ -185,7 +185,7 @@ musicViolaMvtI = \relative c' {
 % mesures 136 à 140
 	bes8 r r r4 r8
 	R2.
-	ees4\p d16( ees f ees d ees d c)
+	ees4-\offset X-offset #0.5 \p d16( ees f ees d ees d c)
 	bes4 a16( bes c bes a bes a g)
 	f2.~
 % mesures 141 à 145
@@ -288,7 +288,7 @@ musicViolaMvtI = \relative c' {
 	d8( e d) e4( d16 e)
 	e2.
 	d8( e d) e4( d16 e)
-	d8(\f e d\>) e'( d) d,~(\!
+	d8(\f e d) e'(\> d) d,~(
 	d\p e d) e'( d) d,~(
 % mesures 226 à 230
 	d e d)\< e'( d) d,~(\!
@@ -305,12 +305,12 @@ musicViolaMvtI = \relative c' {
 % mesures 236 à 240
 	a8_\piuf a a fis' r r
 	a, a a fis' r r
-	e'\fz e, r b'\fz b, r 
-	b'\fz b, r a'\fz a, r
+	e'-\offset X-offset #-0.5 \fz e, r b'-\offset X-offset #-0.5 \fz b, r 
+	b'-\offset X-offset #-0.5 \fz b, r a'\fz a, r
 	e'4\>( e8-.)\! e4(\p dis8)
 % mesures 241 à 245
 	gis,\pp e e e r r
-	a16_\ppsempre( cis a cis a cis a cis a cis a cis)
+	\beamOffset #'(-0.3 . -0.3) a16_\ppsempre( cis a cis a cis a cis a cis a cis)
 	a( cis a cis a cis a cis a cis a cis)
 	a( d a d a d a d a d a d)
 	gis,( d' gis, d' gis, d' gis, d' gis, d' gis, d')
@@ -357,7 +357,7 @@ musicViolaMvtI = \relative c' {
 	a'( b d b a b) a8 r r
 	a16( b d b a b) a8 r r
 % mesures 281 à 285
-	d,8\p a'-. d~ d a-. d,~
+	d,8-\offset X-offset #-1 \p a'-. d~ d a-. d,~
 	d8 a'-. d~ d a-. d,~
 	d r r d16( e g e d e)
 	d8 r r d16( e g e d e)
