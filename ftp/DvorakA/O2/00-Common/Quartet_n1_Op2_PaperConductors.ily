@@ -10,13 +10,13 @@
 	left-margin = 15 \mm
 	indent = 0
 %	annotate-spacing = ##t
-%	slashSeparator = \markup {
-%		\center-align
-%		\vcenter \combine
-%		\beam #3.3 #0.5 #0.54
-%		\raise #1.24 \beam #3.3 #0.5 #0.54
-%	}
-%	system-separator-markup = \slashSeparator
+	slashSeparator = \markup {
+		\center-align
+		\vcenter \combine
+		\beam #3.3 #0.5 #0.54
+		\raise #1.24 \beam #3.3 #0.5 #0.54
+	}
+	system-separator-markup = \slashSeparator
 	bookTitleMarkup = \markup {
 		\column {
 			\vspace #15
