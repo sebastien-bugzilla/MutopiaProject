@@ -33,10 +33,10 @@ musicViolaMvtII = \relative c {
 	eis8. r16 eis'8. r16 eis,8. r16
 % mesures 21 à 25
 	cis''4->(\<_\conespressione cis-> cis->)\!
-	d4.( cis8\<) \tuplet 6/4 {d16\(( cis) cis( b) b( a)\)\!}
+	\shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur d4.( cis8\<) \tuplet 6/4 {d16\(( cis) cis( b) b( a)\)\!}
 	b4\f\>(-> b-> b->)\!
 	cis4.(_\dimmarkup b8) \tuplet 6/4 {cis16\((\pp b) b( a) a( gis)\)}
-	b4( a) a,8. r16 
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur b4( a) a,8. r16 
 % mesures 26 à 30
 	a8. r16 a8. r16 a8. r16 
 	eis8. r16 eis8. r16 eis8. r16 
@@ -46,7 +46,7 @@ musicViolaMvtII = \relative c {
 % mesures 31 à 35
 	<eis cis'>8. r16 q8. r16 q8. r16 
 	<b' d>8. r16 q8.\< r16 q8.\! r16 \mark \default
-	\grace {s8} \tuplet 3/2 4 {cis,4\mf( eis8) cis4( eis8) cis4( eis16 fis)} 
+	\grace {s8} \tuplet 3/2 4 {cis,4-\offset X-offset #-2.5 \mf( eis8) cis4( eis8) cis4( eis16 fis)} 
 	gis8. eis16( gis8.) eis16( gis8.) eis16(
 	d'8.)\f b16( d8.) b16( d8.) b16
 % mesures 36 à 40
@@ -60,12 +60,12 @@ musicViolaMvtII = \relative c {
 	ais4\> gis8(\! ais b d)
 	fis'\pp\<(-- eis-- e-- d-- cis-- b--)\!
 	ais4\< gis8( ais b d)\! \clef treble
-	g16(\f fis e g) g4.( fis8)
+	\dynEO #'(0 . 1) g16(\f fis e g) g4.( fis8)
 % mesures 46 à 50
 	g8( fis16) r \clef alto g,8(_\dimmarkup fis16) r g,8( fis16) r
 	fis4\p( gis! e')
 	e8.( d16) \tuplet 3/2 {d8( cis a)_\dimmarkup} a8( gis)
-	d'4( cis) <e g>8(\mf a,16) r
+	d'4( cis) <e g>8(-\offset X-offset #-1.5 \mf a,16) r
 	fis4.(\> gis!8 a4)
 % mesures 51 à 55
 	a4~ a8\! r r4
@@ -74,7 +74,7 @@ musicViolaMvtII = \relative c {
 	r8 gis r e'\< r <e b'>\!
 	<d e>4:32_\crescmarkup \tuplet 6/4 4 {e16(\prall d) d(\prall cis) cis(\prall b) b8\< b16(\prall a) a(\prall gis)\!} \mark \default
 % mesures 56 à 60
-	<e cis'>16->\ff <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> 
+	\beamOffset #'(1 . 1) <e cis'>16->\ff <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> 
 	<e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> 
 	<e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <fis d'>-> <fis' a>-> <fis a>-> <fis, d'>-> 
 	e'8\<( fis gis a) \tuplet 3/2 {b( cis d)\!}
@@ -89,7 +89,7 @@ musicViolaMvtII = \relative c {
 	d2(_\sempredim c4)
 	b4_\(\pp f cis16( d32) r e16( f!32)\) r
 	a4( ees c16 cis d dis)
-	e!16 d''!8\< e,, d'' e,, d''( e,,16)\!
+	\beamGap #2 e!16 d''!8\< e,, d'' e,, d''( e,,16)\!
 	e16-._\pocoapococresc e'-.\! fis,-. e'-. gis,-. e'-. a,-. e'-. b-. e-. cis-. e-.
 % mesures 71 à 75
 	d( cis b d) d4.( cis8)
@@ -101,11 +101,11 @@ musicViolaMvtII = \relative c {
 	cis,4._\pdim a'8( g fis)
 	e8(\> b'4) e8( d cis)\! \mark \default
 	<b d>2.\pp~
-	<< <b d> {s4\< s s\!} >>
-	r16 cis8\f cis16 r fis8 fis16 r cis8 cis16
+	<< <b d> {s4\< s s8.. s32\!} >>
+	r16 cis8-\offset X-offset #-2 \f cis16 r fis8 fis16 r cis8 cis16
 % mesures 81 à 85
 	r <a d>8 <a d>16 r fis8 fis16 r <a d>8 <a d>16
-	r <cis, gis'>8\< <cis gis'>16 r <fis b>8 <fis b>16 r cis'8 cis16\!
+	r <cis, gis'>8\< q16 r \beamOffset #'(-0.5 . -0.5) <fis b>8 q16 r cis'8 cis16\!
 	r <b d>8\> <b d>16 r <b d>8 <b d>16 r <b d>8 <b d>16\! 
 	r a8\pp a16 r b8 b16 r cis8 cis16
 	r <b d>8 <b d>16 r cis8 cis16 r <fis, a>8 <fis a>16
@@ -117,8 +117,8 @@ musicViolaMvtII = \relative c {
 	r16 cis8. r16 gis8. r16 cis,8.
 % mesures 91 à 95
 	r16 eis8. r16 eis8. r16 cis'8.
-	cis'4(--_\ppocoespressione cis\<-- cis\!--)
-	d4.(\< cis8) \tuplet 6/4 {d16\(( cis) cis( b)\! b( a)\)}
+	\whiteoutMarkup \shape #'((0 . -0.2)(0 . -0.7)(0 . -0.7)(0 . -0.2)) Slur cis'4(---\tweak extra-offset #'(0 . 3) _\ppocoespressione cis\<-- cis\!--)
+	\shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . -0.5)) Slur d4.(\< cis8) \tuplet 6/4 {d16\(( cis) cis( b)\! b( a)\)}
 	b4(\mf-- b--_\dimmarkup b--)
 	cis4.( b8) \tuplet 6/4 {cis16\((\pp b) b( a) a( gis)\)} \mark \default
 % mesures 96 à 100
@@ -146,8 +146,8 @@ musicViolaMvtII = \relative c {
 	b2.\pp
 	b2(\< e4)\!
 % mesures 116 à 120
-	d2(\f g4)
-	d8_\dimmarkup( g16) r d,8( g16) r a8(\p d,16) r
+	\dynEO #'(0.5 . 1) d2(\f g4)
+	\beamOffset #'(0.5 . 0) d8_\dimmarkup( g16) r d,8( g16) r a8(\p d,16) r
 	R2.
 	\tuplet 6/4 4 {gis!16(\pp b gis b gis b) gis16( b gis b gis b) gis16( b gis b gis b) 
 	eis,16( b' eis, b' eis, b') eis,16( b' eis, b' eis, b') eis,16( b' eis, b' eis, b')} 
@@ -164,7 +164,7 @@ musicViolaMvtII = \relative c {
 	<d a'>2.\p
 	<g d'>2.\pp\<
 % mesures 131 à 135
-	<fis a>2:32\mf <a fis'>8:\< <cis fis>:\!
+	<fis a>2:32\mf \hairpinShorten #'(0 . -6.5) <a fis'>8:\< <cis fis>:\!
 	<d fis>16\f <b d>-.( <b d>-.) <d fis>~ <d fis> <fis, b>-.( <fis b>-.)_\dimmarkup <b d>~ <b d> <gis b>8 <gis b>16
 	a16_\ppsempre r cis r cis r cis r cis r cis r 
 	cis4( gis-> bis)

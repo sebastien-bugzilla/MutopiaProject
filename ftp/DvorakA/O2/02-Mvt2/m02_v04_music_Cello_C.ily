@@ -101,14 +101,14 @@ musicCelloMvtII = \relative c {
 	fis_\pdim( gis a) dis,( e bis')
 	cis(\> dis e) ais,( b! g')\! \mark \default
 	gis!2.\pp
-	<< fis {s4\< s s\!} >>
+	<< fis {s4\< s s8.. s32\!} >>
 	eis4:32(\f d!: cis:)
 % mesures 81 à 85
 	d:( a: fis:)
 	eis(:\< d!: cis:)\!
 	gis':(\> fis: eis:)\!
 	fis:\pp( gis: a:)
-	b:( cis: d:)
+	b:( cis: \once \stemUp d:)
 % mesures 86 à 90
 	cis: d:_\crescmarkup bis:
 	cis:\< d:\! b!:\>
@@ -132,7 +132,7 @@ musicCelloMvtII = \relative c {
 	<fis cis'>2.:32
 	<fis cis'>2: <e cis'>4:
 	<d a'>2.:
-	d'2:_\crescmarkup cis4:
+	<< d'2: {s4 s_\crescmarkup} >> cis4:
 % mesures 106 à 110
 	b2(\f cis4)
 	d2(\> e,4)\!
@@ -153,8 +153,8 @@ musicCelloMvtII = \relative c {
 	cis
 % mesures 121 à 125
 	fis~
-	fis~_\crescmarkup
-	fis~\f
+	<< fis~ {s4 s_\crescmarkup s} >>
+	fis2.~\f
 	fis\p
 	d'\pp
 % mesures 126 à 130
@@ -165,7 +165,7 @@ musicCelloMvtII = \relative c {
 	<b d>\pp\<
 % mesures 131 à 135
 	cis4.(\mf fis,8) fis32(\< a) a( gis) gis( eis) eis( fis)\!
-	gis4\f( d'_\dimmarkup \afterGrace cis\startTrillSpan) {bis16[ cis]\stopTrillSpan}
+	gis4\f( \once \stemUp d'-\offset X-offset #7 _\dimmarkup \afterGrace 11/12 cis\startTrillSpan) {bis16[ cis]\stopTrillSpan}
 	fis,2._\ppsempre
 	cis4. cis'8( a fis)
 	cis4. cis'8( a fis)

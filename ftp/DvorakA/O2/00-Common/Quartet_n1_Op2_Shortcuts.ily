@@ -12,22 +12,12 @@ crescendo=^\markup {\italic crescendo}
 crescmarkup = \markup {\italic cresc.}
 dacapo = \markup {\italic {D.C. al Fine}}
 dimmarkup = \markup {\italic dim.}
-fconespressione = \markup {\hspace #0.1 \dynamic f \italic {con espressione}}
-fconmoltaforza = \markup {\hspace #0.1 \dynamic f \italic {con molta forza}}
-fespressivo = \markup {\hspace #0.1 \dynamic f \italic espressivo}
-ffsempre = \markup {\hspace #-0.5 \dynamic ff \italic sempre}
 fine = \markup {\italic Fine}
 fourthcorda = \markup {\italic { \concat {4 \super {ta}} corda}}
-fsempre = \markup {\hspace #0.1 \dynamic f \italic {sempre}}
-fzcresc= \markup {\hspace #-0.45 \dynamic fz \italic cresc.}
-fzdim= \markup {\hspace #-0.45 \dynamic fz \italic {dim.}}
 intempo = \markup {\italic {in tempo}}
 leggiero = \markup {\italic leggiero}
-lunga=^\markup {\italic {lunga}}
-pconespressione = \markup {\hspace #-0.1 \dynamic p \italic {con espressione}}
-pdim = \markup {\hspace #-0.1 \dynamic p \italic dim.}
-pespressione = \markup {\hspace #-0.1 \dynamic p \italic espressione}
-piuf = \markup {\hspace #-3.9 \italic {più} \dynamic f}
+lunga = \markup {\italic {lunga}}
+moltoespressivo = \markup {\italic {molto espressivo}}
 pizz = \markup {\italic pizz.}
 pocoapococrescmarkup=^\markup {\italic {poco a poco cresc.}}
 pocoapocoritmarkup = \markup {\italic {poco a poco rit.}}
@@ -36,19 +26,33 @@ pococresc = \markup {\italic {poco cresc.}}
 pocoritardando = \markup {\italic {poco ritardando}}
 pocorit = \markup {\italic {poco rit.}}
 pocosostenuto = \markup {\italic {poco sostenuto}}
-ppespr = \markup { \dynamic pp \italic { espr.}}
-ppmarc = \markup {\dynamic pp \italic {marc.}}
-ppmoltoespressivo = \markup { \dynamic pp \italic {molto espressivo}}
+rit = \markup {\italic rit.}
+sempredim = \markup {\italic {sempre dim.}}
+semprestacc = \markup {\italic {sempre stacc.}}
+simile = \markup {\italic simile}
+staccsempre = \markup {\italic {stacc. sempre}}
+sulG = \markup {sul G.}
+
+
+fconespressione = \markup {\hspace #0.1 \dynamic f \italic {con espressione}}
+fconmoltaforza = \markup {\hspace #0.1 \dynamic f \italic {con molta forza}}
+fespressivo = \markup {\hspace #0.1 \dynamic f \italic espressivo}
+ffsempre = \markup {\hspace #-0.5 \dynamic ff \italic sempre}
+fsempre = \markup {\hspace #0.1 \dynamic f \italic {sempre}}
+fzcresc= \markup {\hspace #-0.45 \dynamic fz \italic cresc.}
+fzdim= \markup {\hspace #-0.45 \dynamic fz \italic {dim.}}
+pconespressione = \markup {\hspace #-0.1 \dynamic p \italic {con espressione}}
+pdim = \markup {\hspace #-0.1 \dynamic p \italic dim.}
+pespressione = \markup {\hspace #-0.1 \dynamic p \italic espressione}
+piuf = \markup {\hspace #-3.9 \italic {più} \dynamic f}
+ppespr = \markup {\hspace #-0.8 \dynamic pp \italic { espr.}}
+ppmarc = \markup {\hspace #-0.8 \dynamic pp \italic {marc.}}
+ppmoltoespressivo = \markup {\hspace #-0.8 \dynamic pp \italic {molto espressivo}}
 ppocoespressione = \markup {\hspace #-0.1 \dynamic p \italic {poco espressione}}
 pppocoapococresc = \markup {\hspace #-0.8 \dynamic pp \italic {poco a poco cresc.}}
 pppocomarc = \markup {\hspace #-0.8 \dynamic pp \italic {poco marc.}}
 ppsempre = \markup {\hspace #-0.8 \dynamic pp \italic {sempre}}
-rit = \markup {\italic rit.}
-sempredim = \markup {\italic {sempre dim.}}
-semprestacc=^\markup {\italic {sempre stacc.}}
-simile=^\markup {\italic simile}
-staccsempre=^\markup {\italic {stacc. sempre}}
-sulG = \markup {sul G.}
+
 
 pocoapococresc = #(
 	make-music 'CrescendoEvent
@@ -126,6 +130,14 @@ beamOffset = #(define-music-function
 	(pair?)
 	#{
 		\once \offset positions #position Beam
+	#}
+)
+
+tupletOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override TupletNumber.Y-offset = #offset 
 	#}
 )
 
