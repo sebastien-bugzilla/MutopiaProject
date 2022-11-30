@@ -32,7 +32,7 @@ semprestacc = \markup {\italic {sempre stacc.}}
 simile = \markup {\italic simile}
 staccsempre = \markup {\italic {stacc. sempre}}
 sulG = \markup {sul G.}
-
+trio = \markup {\abs-fontsize #11 TRIO}
 
 fconespressione = \markup {\hspace #0.1 \dynamic f \italic {con espressione}}
 fconmoltaforza = \markup {\hspace #0.1 \dynamic f \italic {con molta forza}}
@@ -61,6 +61,25 @@ pocoapococresc = #(
 	'span-text "poco a poco cresc."
 )
 
+markSegno = \mark \markup {
+	\abs-fontsize #11 \musicglyph #"scripts.segno"
+}
+
+markFine = {
+	\once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
+	\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+	\mark \markup {
+		\hspace #-4 \abs-fontsize #11 \italic "Fine"
+	}
+}
+
+markDSalfine = {
+	\once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
+	\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+	\mark \markup {
+		\hspace #-14 \abs-fontsize #11 \italic { D.S. al Fine }
+	}
+}
 
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
@@ -138,6 +157,14 @@ tupletOffset = #(define-music-function
 	(number?)
 	#{
 		\once \override TupletNumber.Y-offset = #offset 
+	#}
+)
+
+markYoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.Y-offset = #offset
 	#}
 )
 

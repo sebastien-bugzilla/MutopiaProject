@@ -19,12 +19,12 @@
 \include "./00-Common/Quartet_n1_Op2_timeMvt.ily"
 \include "./00-Common/Quartet_n1_Op2_LayoutConductors.ily"
 \include "./00-Common/Quartet_n1_Op2_Shortcuts.ily"
-%\include "./00-Common/Quartet_n1_Op2_Format_Cond_Mvt03.ily"
+\include "./00-Common/Quartet_n1_Op2_Format_Cond_Mvt3.ily"
 \include "./00-Common/Quartet_n1_Op2_Tempi.ily"
-\include "./03-Mvt3/m03_v01_music_ViolinI.ily"
-\include "./03-Mvt3/m03_v02_music_ViolinII.ily"
-\include "./03-Mvt3/m03_v03_music_Viola.ily"
-\include "./03-Mvt3/m03_v04_music_Cello.ily"
+\include "./03-Mvt3/m03_v01_music_ViolinI_C.ily"
+\include "./03-Mvt3/m03_v02_music_ViolinII_C.ily"
+\include "./03-Mvt3/m03_v03_music_Viola_C.ily"
+\include "./03-Mvt3/m03_v04_music_Cello_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -49,9 +49,9 @@
 			\new StaffGroup <<
 				\new GrandStaff <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtIII
-%						}
+						\new Voice {
+							\formatConductorMvtIII
+						}
 						\new Voice {
 							\tempiMvtIII
 						}

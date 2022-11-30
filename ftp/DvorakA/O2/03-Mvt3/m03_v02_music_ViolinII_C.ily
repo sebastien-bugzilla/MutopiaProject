@@ -22,14 +22,14 @@ musicViolinIIMvtIII = \relative c {
 % mesures 11 à 15
 	r4 b''\fz\>( cis
 	e,2)\! d4\p(~
-	d fis,)_\dimmarkup b~(
-	b\pp a8 gis) a4(
+	d fis,)-\offset X-offset #-0.5 _\dimmarkup b~(
+	b-\offset X-offset #1.5 \pp a8 gis) a4(
 	e) cis'(\f-> b)
 % mesures 16 à 20
 	e,->( g) b->(
 	gis!) dis'(-> bis)
 	cis2( a'4)
-	<gis, b>2\>_\dimmarkup e'4(~\!
+	<gis, b>2\>-\offset X-offset #3 _\dimmarkup e'4(~\!
 	e\p d) fis,
 % mesures 21 à 25
 	eis(\pp fis gis)
@@ -39,7 +39,7 @@ musicViolinIIMvtIII = \relative c {
 		e,8\pp[ r16 a e8 r16 a] e8 r
 		cis8[ r16 fis cis8 r16 fis] cis8 r
 % mesures 26 à 30
-		a8\fz\<[ r16 cis a8 r16 cis] a8\! r
+		a8-\offset X-offset #-2 \fz\<[ r16 cis a8 r16 cis] a8\! r
 		a r r4 r
 		cis2.\pp(
 		a)
@@ -85,7 +85,7 @@ musicViolinIIMvtIII = \relative c {
 		a4( e) cis'\fz(
 		b) b\fz( cis)
 		g2\fz gis4\fz~
-		gis bis2\fz\<
+		gis bis2-\offset X-offset #0.5 \fz\<
 % mesures 66 à 70
 		cis( a'4)\!
 		<gis, b>2 e'4~(
@@ -93,10 +93,10 @@ musicViolinIIMvtIII = \relative c {
 		eis(\> fis gis)\!
 		e!2\pp\>( fis4
 % mesures 71 à 75
-		d\! e) r^\fine
+		d\! e) r \markFine
 	}
 	\repeat volta 2 {
-		<a, fis'>4\p^"TRIO" q r8 q
+		<a, fis'>4-\offset X-offset #-1.5 \p q r8 q
 		<b gis'>4 q r8 q
 		q4 q r8 q
 		<cis a'>4 q r8 q
@@ -114,13 +114,13 @@ musicViolinIIMvtIII = \relative c {
 			<a fis'>->
 			<a g'>->
 			<a g'>_\crescmarkup
-			<a fis'>->\<
+			\hairpinShorten #'(0 . 2.2) <a fis'>->\<
 % mesures 86 à 90
 			<a g'>->\!
 			<a fis'>->
 		}
 		{
-			c,2_\ppmarc-\offset X-offset #0.2 -> g'4->~
+			c,2-\offset X-offset #1 _\ppmarc^> g'4->~
 % mesures 81 à 85
 			g d2-> 
 		}
@@ -150,7 +150,7 @@ musicViolinIIMvtIII = \relative c {
 % mesures 101 à 105
 	fis4 r r
 	R2. \bar "||"
-	fis4\p^\pizz fis' d,
+	fis4\p-\offset X-offset #0.5 ^\pizz fis' d,
 	b' d d,
 	fis d'\< d,
 % mesures 106 à 110
@@ -194,5 +194,5 @@ musicViolinIIMvtIII = \relative c {
 	g'8( fis_\dimmarkup e4) g8( fis
 	e4)\p a,8( b cis4)
 	cis8( d e4) d8( e
-	fis e) d4->\f(^\dacapo cis) \bar "||"
+	fis e) d4->\f( cis) \markDSalfine \bar "||"
 }

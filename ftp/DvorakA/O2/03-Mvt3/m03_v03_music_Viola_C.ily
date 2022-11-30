@@ -8,7 +8,7 @@ musicViolaMvtIII = \relative c {
 	\clef alto
 	\key fis \minor
 % mesures 1 à 5
-	r4 d(\f\> cis \bar "||" \markSegno
+	r4 d(-\offset X-offset #-1 \f\> cis \bar "||" \markSegno
 	g'2)\p fis4_\dimmarkup~
 	fis2 b4\pp~
 	b a8( gis a4
@@ -22,14 +22,14 @@ musicViolaMvtIII = \relative c {
 % mesures 11 à 15
 	r4 d''\fz\>( cis
 	g2)\! fis4\p~ 
-	fis d'2_\dimmarkup~
-	d\pp cis4( 
+	fis d'2-\offset X-offset #-0.5 _\dimmarkup~
+	\dynEO #'(0.35 . 1.5) d\pp cis4( 
 	a) a,\f(-> d)
 % mesures 16 à 20
 	g(-> e) gis(->
 	b) bis(-> dis)
 	cis2( c4)
-	<gis b>2\>_\dimmarkup g,4(\!
+	<gis b>2\>-\offset X-offset #3 _\dimmarkup g,4(\!
 	fis2)\p dis'4
 % mesures 21 à 25
 	cis\pp( fis d!)
@@ -83,9 +83,9 @@ musicViolaMvtIII = \relative c {
 % mesures 61 à 65
 		d\!
 		cis4( a) fis\fz(
-		e) d(\fz cis)
+		e) d(-\offset X-offset #-0.5 \fz cis)
 		e'2\fz b'4\fz~
-		b dis,2\fz\<
+		b dis,2-\offset X-offset #0.5 \fz\<
 % mesures 66 à 70
 		e2( c'4)\!
 		<gis b>2\> g4(\!
@@ -93,10 +93,10 @@ musicViolaMvtIII = \relative c {
 		gis,(\> fis d'!)\!
 		cis2\pp\>( d4
 % mesures 71 à 75
-		b\! cis) r^\fine
+		b\! cis) r \markFine
 	}
 	\repeat volta 2 {
-		cis'4._\pespressione^"TRIO"( fis,8-. fis4-.)
+		cis'4._\pespressione( fis,8-. fis4-.)
 		eis2.
 		cis'4.( eis,8-. eis4-.)
 		fis2.
@@ -108,7 +108,7 @@ musicViolaMvtIII = \relative c {
 	}
 	\alternative {
 		{
-			d,2_\pppocomarc-> a'4~->
+			d,2_\pppocomarc^> a'4~->
 % mesures 81 à 85
 			a e2->
 			fis-> d'4->~
@@ -132,7 +132,7 @@ musicViolaMvtIII = \relative c {
 % mesures 86 à 90
 	\once \stemUp <g f'>\!
 	<g e'>\f \bar "||"
-	cis'!4.\ff-> fis,8-. fis4-.
+	\dynEO #'(0 . 1) cis'!4.\ff-> fis,8-. fis4-.
 	eis2.
 	cis'4.-> eis,8-. eis4-.
 % mesures 91 à 95
@@ -178,21 +178,21 @@ musicViolaMvtIII = \relative c {
 	cis2.->
 	a'8[ r16 cis,] cis8[ r16 cis] cis8[ r16 cis]
 % mesures 126 à 130
-	<<dis2.-> {s4\< s s\!} >>
+	<<dis2.^> {s4\< s s\!} >>
 	e4\f e e
 	fis4.-> g8 a4
 	g4-\offset X-offset #0.2 -> g-> g->
 	fis4.-> e8-. d4
 % mesures 131 à 135
-	e-> r r
-	d-> r r
-	g-> r a
+	e^> r r
+	d^> r r
+	g^> r a
 	d, r r
-	a'\fz r a
+	a'-\offset X-offset #0.5 \fz r a
 % mesures 136 à 140
 	g'8\>( fis e4) g8( fis\!
 	e4)_\dimmarkup g8( fis e d)
 	cis(\p d e d cis d)
 	cis( b a4) b8( a
-	g a) b4(->\f^\dacapo cis) \bar "||"
+	g a) b4(->\f cis) \markDSalfine  \bar "||"
 }

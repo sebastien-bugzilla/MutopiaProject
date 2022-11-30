@@ -93,10 +93,10 @@ musicViolinIMvtIII = \relative c {
 		cis2\> b4~\!
 		b\pp a2\>~
 % mesures 71 à 75
-		a4\! r r^\fine
+		a4\! r r \markFine \break
 	}
 	\repeat volta 2 {
-		cis2.\p~^"TRIO"
+		<>-\offset X-offset #-7 ^\trio cis2.\p~
 		cis4 d4.( cis8)
 		cis2.~
 		cis4 a4.( fis8)
@@ -108,7 +108,7 @@ musicViolinIMvtIII = \relative c {
 	}
 	\alternative {
 		{
-			a8:16\pp g: fis: a: g: fis:
+			\dynEO #'(0 . 1) a8:16\pp g: fis: a: g: fis:
 % mesures 81 à 85
 			g: fis: e: g: fis: e:
 			fis: e: d: fis: e: d:
@@ -150,7 +150,7 @@ musicViolinIMvtIII = \relative c {
 % mesures 101 à 105
 	fis4 r r 
 	R2. \bar "||"
-	d16(\pp a' d a') a2_\leggiero
+	d16(-\offset X-offset #-2.5 \pp a' d a') a2_\leggiero
 	d,,16( b' g' b) b2
 	d,,16( a' fis' cis') cis2\<
 % mesures 106 à 110
@@ -194,5 +194,5 @@ musicViolinIMvtIII = \relative c {
 	cis_\dimmarkup r a
 	g8(\p fis e4) g8( fis
 	e4) g8( fis e4)
-	a8( g) fis4\f->(^\dacapo e) \bar "||"
+	a8( g) fis4\f->( e) \markYoffset #5 \markDSalfine \bar "||"
 }
