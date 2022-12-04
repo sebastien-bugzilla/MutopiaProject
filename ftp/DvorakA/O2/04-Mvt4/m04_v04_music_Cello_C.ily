@@ -35,17 +35,17 @@ musicCelloMvtIV = \relative c {
 	e,2.\p( a4)
 	cis( e\< a fis)\!
 	e2.\>( fis4)\!
-	cis2(\p d)
+	cis2(\p \once \stemUp d)
 	e(\pp e,)
 % mesures 26 à 30
 	a2.(\< d4)\!
 	<<cis2( {s4 s_\crescmarkup} >> \once \stemUp d2)
 	a(_\dimmarkup fis)
-	\tuplet 3/2 4 {e8\pp e e e e e e e e e e e
-	e\< e e e e e a a a gis gis gis\!
+	\tuplet 3/2 4 {e4.:8\pp e: e: e: 
+	e:\< e: a: gis:\!
 % mesures 31 à 35
-	fis fis fis fis fis fis cis\> cis cis cis cis cis
-	e e e e e\p e e e e e e e} 
+	fis: fis: cis:\> cis: 
+	e: e:\p e: e: } 
 	a4 r r2
 	r2 r4 e\p
 	a(\< cis\! fis\> e)\!
@@ -66,7 +66,7 @@ musicCelloMvtIV = \relative c {
 	dis,2( e)\<
 	fis(\> gis)\!
 	gis4\p gis' fis, fis'\<
-	e,\! e'_\crescmarkup dis, dis'
+	e,\! e'-\offset X-offset #-1 _\crescmarkup dis, dis'
 % mesures 51 à 55
 	cis(\f fis e b)
 	cis8[ r16 cis]( gis'8 fis) e( dis cis b)
@@ -125,8 +125,8 @@ musicCelloMvtIV = \relative c {
 	cis(\> b\!)
 	r <ais fis'>->\ff
 	r <ais  fis'>\fz
-	r <b fis'>\fz
-	r <c fis>\fz
+	r <b fis'>-\offset X-offset #0.5 \fz
+	r <c fis>-\offset X-offset #0.5 \fz
 % mesures 101 à 105
 	cis!1(\p
 	fis,)_\dimmarkup
@@ -137,8 +137,8 @@ musicCelloMvtIV = \relative c {
 	dis(\> fis)\!
 	b, r
 	R1
-	<< b2( {s4 s_\pocoapococrescmarkup} >> \afterGrace e2)\startTrillSpan {dis16[ e]\stopTrillSpan}
-	dis2( \afterGrace fis)\startTrillSpan {eis16[ fis]\stopTrillSpan}
+	<< b2( {s4 s_\pocoapococrescmarkup} >> \afterGrace 8/9 e2)\startTrillSpan {dis16[ e]\stopTrillSpan}
+	dis2( \afterGrace 8/9 fis)\startTrillSpan {eis16[ fis]\stopTrillSpan}
 % mesures 111 à 115
 	b,1\p~\<
 	<< b {s4 s s s\!} >> \mark \default
@@ -153,7 +153,7 @@ musicCelloMvtIV = \relative c {
 	fis\f
 % mesures 121 à 125
 	fis2(\pp gis)
-	fis(\< e)\!
+	\hairpinShorten #'(0 . -5) fis(\< e)\!
 	dis1\f
 	cis'
 	b2 \tuplet 3/2 4 {b8( cis b a_\dimmarkup gis a)}
@@ -168,9 +168,9 @@ musicCelloMvtIV = \relative c {
 	<d c'>
 	<a d>~
 	<a d>
-	\tuplet 3/2 4 {d,8 d d d d d d d d d d d 
+	\tuplet 3/2 4 {d,4.:8 d: d: d: 
 % mesures 136 à 140
-	d d d d d d d d d d d d} \mark \default
+	d: d: d: d:} \mark \default
 	c'2\pp a~
 	a fis(
 	bes) g~
@@ -207,7 +207,7 @@ musicCelloMvtIV = \relative c {
 	d4-. d-. d-._\crescmarkup d-.
 % mesures 166 à 170
 	d\f cis8-. d-. e4 e,
-	d-> cis->\< b-> a->
+	d-> \hairpinShorten #'(0 . -18) cis->\< b-> a->
 	g1~\!
 	g4\ff fis8-. g-. a4-. d,-.
 	g1\fz~
@@ -255,7 +255,7 @@ musicCelloMvtIV = \relative c {
 	fis)\ff fis fis fis b, b b b 
 % mesures 206 à 210
 	e,1->\startTrillSpan
-	\afterGrace e\startTrillSpan {dis16[ e]\stopTrillSpan}
+	\afterGrace 16/17 e\startTrillSpan {dis16[ e]\stopTrillSpan}
 	e4 r e' r \mark \default
 	a,1\fz
 	gis\fz
@@ -347,7 +347,7 @@ musicCelloMvtIV = \relative c {
 	a,( b)
 	cis( d)
 	fis( e)
-	r <dis a'>4\ff-> <dis a'>
+	r <dis a'>4-\offset X-offset #0.8 \ff-> <dis a'>
 	<dis a'>2-> <dis a'>->
 % mesures 286 à 290
 	r <e a>4-> <e a>->
@@ -402,10 +402,10 @@ musicCelloMvtIV = \relative c {
 	e( f g)
 	fis2.\ppp~ fis4._\dimmarkup~
 	fis f2.\fermata \bar "||" \time 4/4
-	\tuplet 3/2 4 {e8\f e e e e e e e e e e e
+	\tuplet 3/2 4 {e4.:8\f e: e: e: 
 % mesures 331 à 335
-	e e e e e e e e e e e e
-	e e e e e e e e e e e e} 
+	e: e: e: e:
+	e: e: e: e:} 
 	e4-> fis-> cis4.-> d8-.
 	e4-> fis-> cis4.-> d8-.
 	e8.->[ fis16 cis8. d16] e8.->[ fis16 cis8. d16] 

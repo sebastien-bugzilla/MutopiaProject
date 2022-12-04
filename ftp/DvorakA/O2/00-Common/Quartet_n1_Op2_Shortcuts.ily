@@ -168,6 +168,13 @@ markYoffset = #(define-music-function
 	#}
 )
 
+trillSpanPadding = #(define-music-function
+	(padding)
+	(number?)
+	#{
+		\once \override TrillSpanner.bound-details.right.padding = #padding
+	#}
+)
 
 %whiteoutDynamic = {
 %	\once \override DynamicText.whiteout = ##t

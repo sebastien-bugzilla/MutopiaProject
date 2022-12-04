@@ -8,26 +8,26 @@ musicViolinIIMvtIV = \relative c {
 	\clef treble
 	\key a \major
 % mesures 1 à 5
-	\tuplet 3/2 4 {<cis' e>4.:8\f q: q: q: 
+	\tuplet 3/2 4 {<cis' e>4.:8-\offset X-offset #-0.5 \f q: q: q: 
 	q: q: q: q:
 	<cis a'>: q: q: q: 
-	<a fis'>8 q q  q q q  <b e> q q  <b eis> q q
-	<d fis> q q  q q q  q q q  q q q
+	<a fis'>: q:  <b e>:  <b eis>:
+	<d fis>: q: q: q:
 % mesures 6 à 10
-	<cis d> q  q q q  q q q  q q q q
-	<b d> q q  q q q  q q q  q q q 
-	<a d> q q  q q q  q q q  q q q 
-	e''\ff e, e  e e e  e e e  e( fis e)
-	e'\fz e, e  e e e  e e e  e( fis e)
+	<cis d>: q: q: q:
+	<b d>: q: q: q:
+	<a d>: q: q: q:
+	e''8\ff e, e  e e e  e e e  e8( fis e)
+	e'\fz e, e  e e e  e e e  e8( fis e)
 % mesures 11 à 15
-	e'\fz e, e  e e e  e e e  e( fis e)
-	e'\fz e, e  e e e  e e e  e( fis e)
-	e'\fz e, e  e e e  e e e  e( fis e)
-	<d e> q q  q q q  q q q  q q q
-	e'\fz e, e  e e e  e e e  e( fis e)
+	e'\fz e, e  e e e  e e e  e8( fis e)
+	e'\fz e, e  e e e  e e e  e8( fis e)
+	e'\fz e, e  e e e  e e e  e8( fis e)
+	<d e>4.:8 q: q: q:
+	e'8\fz e, e  e e e  e e e  e8( fis e)
 % mesures 16 à 20
-	<cis e> q q  q q q  q q q  q q q }
-	r4 c'2\p a16( b c d
+	<cis e>4.:8  q: q: q: }
+	r4 c'2-\offset X-offset #0.5 \p a16( b c d
 	c4) c2-> a16( b c d) \mark \default
 	c8\f r c-. b-. \acciaccatura d c-. b-. a16-. b-. c-. d-. 
 	c8 r c-. b-. \acciaccatura d c-. b-. a16-. b-. c-. d-. 
@@ -46,7 +46,7 @@ musicViolinIIMvtIV = \relative c {
 % mesures 31 à 35
 	\stemUp a( b cis b \stemNeutral a b a b) \stemUp a( b cis b \stemNeutral a b a b)
 	cis,( e fis e fis e fis e) gis,( e' fis e fis e fis e)
-	<a, e'>1\p~
+	<a, e'>1-\offset X-offset #-1.5 \p~
 	<a e'>4 a'( d_\crescmarkup cis)
 	<a cis>1->
 % mesures 36 à 40
@@ -63,7 +63,7 @@ musicViolinIIMvtIV = \relative c {
 	r b,, b' r
 % mesures 46 à 50
 	r b b' r
-	a,2^\arco \tuplet 3/2 4 {a8( b a  gis\< fis gis\!)}
+	a,2^\arco \tuplet 3/2 4 {a8( b a  gis\< fis gis)}
 	a2\> a16(\! cis b a) a( gis fis gis)
 	a2\p b\<
 	<< cis {s4\! s_\crescmarkup}>> dis2
@@ -81,7 +81,7 @@ musicViolinIIMvtIV = \relative c {
 	gis e(-. fis)-. r
 % mesures 61 à 65
 	a2\p( gis)
-	a(\< b)\!
+	a(\< \once \stemUp b)\!
 	b4\mf <fis b>-> <fis b>-> <fis b>->\>
 	\once \stemUp <fis e'>2( <fis dis'>4)\! r4
 	b,1\p(
@@ -123,10 +123,10 @@ musicViolinIIMvtIV = \relative c {
 	b8[ r16 b e8 r16 e] cis8[ r16 cis e8 r16 e]
 % mesures 96 à 100
 	e,8[ r16 e e8 r16 e] e8[ r16 e e8 r16 e] 
-	<ais e'>2\ff-> r
-	<ais e'>\fz r
-	<b e>\fz r
-	<fis e'>\fz r
+	<ais e'>2-\offset X-offset #0.8 \ff-> r
+	<ais e'>-\offset X-offset #0.5 \fz r
+	<b e>-\offset X-offset #0.5 \fz r
+	<fis e'>-\offset X-offset #0.5 \fz r
 % mesures 101 à 105
 	e1\p~
 	e_\dimmarkup~
@@ -144,21 +144,21 @@ musicViolinIIMvtIV = \relative c {
 	b'(\< a) a( b,) b'( a) a( b,) b'( a) a( b,) b'( a) a( b,)\! \mark \default
 	e'2\ff-> <eis, d'>->
 	<e! cis'> <fis b>
-	<b gis'>->_\dimmarkup <b eis>->
+	<b gis'>->-\offset X-offset #0.4 _\dimmarkup <b eis>->
 % mesures 116 à 120
-	<b fis'>->\p <fis dis'>->
+	<b fis'>->-\offset X-offset #0.5 \p <fis dis'>->
 	<b, a'>1\pp\<~
-	<b a'>\!
+	<< <b a'> {s4 s s s\!} >>
 	<<{
-		<b a'>2\p \tuplet 3/2 {gis'4( fis\< gis)}
-		<b, a'>2 \tuplet 3/2 {gis'4(\! fis\f gis)}
+		<b a'>2\p \tupletOffset #3 \tuplet 3/2 {gis'4( \hairpinShorten #'(0 . 2) fis\< gis)}
+		<b, a'>2 \tupletOffset #3 \tuplet 3/2 {gis'4(\! fis\f gis)}
 	} \\ {
 		s2 b,
 		s b
 	}>>
 % mesures 121 à 125
 	<b a'>1\pp~
-	<< <b a'> {s4\< s s s\!}>>
+	<< <b a'> {\hairpinShorten #'(0 . -2) s4\< s s s\!}>>
 	<b'_~ fis'>1\f(
 	<b e>)
 	e4 dis2 cis4_\dimmarkup~
@@ -183,12 +183,12 @@ musicViolinIIMvtIV = \relative c {
 % mesures 141 à 145
 	d r r4 d8(\< f) bes-. c-.
 	bes r r4 d,8( f) bes-. c-.\!
-	gis'!4->\f a-> \tuplet 3/2 4 {f8 f f f8 f f
-	f8 f f  f f f  f f f  f f f 
-	g g g  g g g  a a a  a\< a a 
+	gis'!4->\f a-> \tuplet 3/2 4 {f4.:8 f:
+	f: f: f: f:
+	g8 g g  g g g  a a a  a\< a a 
 % mesures 146 à 150
 	bes-> bes bes b-> b b c-> c c cis-> cis cis\!
-	d->_\ffsempre d d cis! cis cis b-> b b bes-> bes bes
+	\whiteoutMarkup d->-\tweak extra-offset #'(-0.5 . 0.5) _\ffsempre d d cis! cis cis b-> b b bes-> bes bes
 	a a a g g g fis fis fis e e e}
 	fis4->\f a-> d,4.-> e8-.
 	fis( a) d,-. e-. fis4. g8-.
@@ -212,9 +212,9 @@ musicViolinIIMvtIV = \relative c {
 	d4-. << fis2-> {s4 s_\crescmarkup}>> e4
 % mesures 166 à 170
 	d2->\f g->
-	fis4 g\< gis-> a->
+	fis4 \hairpinShorten #'(0 . -8.5) g\< gis-> a->
 	b2-> cis->\!
-	d4\ff-> d-> d-> d->
+	\dynEO #'(0 . 1) d4\ff-> d-> d-> d->
 	d-> cis8-. d-. e4-. a,-.
 % mesures 171 à 175
 	d4-> d-> d-> d->
@@ -241,13 +241,13 @@ musicViolinIIMvtIV = \relative c {
 	b( c) gis( a)
 	b( c) d(\< dis)\!
 % mesures 191 à 195
-	e2\f fis\ff~
+	e2\f \dynEO #'(0 . 1) fis\ff~
 	fis gis \mark \default
 	<b,, gis'>( <b b'>)
 	<b a'>( <b fis'>)
-	\tuplet 3/2 4 {<b b'>8 q q  q q q  q q q  q q q} 
+	\tuplet 3/2 4 {<b b'>4.:8 q: q: q: 
 % mesures 196 à 200
-	\tuplet 3/2 4 {<b a'> q q  q q q  q q q  q q q} 
+	<b a'>: q: q: q:} 
 	<b gis'>4\p r r2
 	R1
 	fis''8\pp( d) e-. cis-. d( b) cis-. a-.
@@ -262,26 +262,26 @@ musicViolinIIMvtIV = \relative c {
 	e'16 e cis cis d! d b b cis cis a a b b gis gis
 	a a fis fis gis gis e e fis fis d d e e cis cis
 	ees es c c d d b b d d a a d d gis, gis \mark \default
-	\tuplet 3/2 4 {<cis, e>8\f q q  q q q  q q q  q q q
-	q q q  q q q  q q q  q q q
+	\tuplet 3/2 4 {<cis, e>4.:8-\offset X-offset #-1 \f q: q:  q: 
+	q: q: q: q:
 % mesures 211 à 215
-	<cis a'> q q  q q q  q q q  q q q 
-	<a fis'> q q  q q q  <b e> q q  <b eis> q q
-	<d fis> q q  q q q  q q q  q q q 
-	<cis d> q q  q q q  q q q  q q q
-	<b d> q q  q q q  q q q  q q q 
+	<cis a'>: q: q: q:
+	<a fis'>: q: <b e>:  <b eis>:
+	<d fis>: q: q: q: 
+	<cis d>: q: q: q: 
+	<b d>: q: q: q: 
 % mesures 216 à 220
-	<a d>  q q  q q q  q q q  q q q 
-	e''\ff e, e e e e e e e e( fis e)
-	e'\ff e, e e e e e e e e( fis e)
+	<a d>: q: q: q: 
+	\dynEO #'(-0.5 . 1.5) e''8\ff e, e e e e e e e e( fis e)
+	\dynEO #'(-0.5 . 1.5) e'\ff e, e e e e e e e e( fis e)
 	e'-> e, e e e e e e e e( fis e)
 	e'-> e, e e e e e e e e( fis e)
 % mesures 221 à 225
 	e'-> e, e e e e e e e e( fis e)
-	<d e>  q q  q q q  q q q  q q q 
-	e'-> e, e e e e e e e e( fis e)
-	<cis e>  q q  q q q  q q q  q q q} \mark \default 
-	r4 c'2\p a16( b c d
+	<d e>4.:8 q: q: q: 
+	e'8-> e, e e e e e e e e( fis e)
+	<cis e>4.:8 q: q: q: } \mark \default 
+	r4 c'2-\offset X-offset #0.5 \p a16( b c d
 % mesures 226 à 230
 	c4) c2 a16( b c d
 	c8) r c-.\pp b-. c-. b-. a16( b c d)
@@ -297,11 +297,11 @@ musicViolinIIMvtIV = \relative c {
 % mesures 236 à 240
 	r4 g,8( bes) r4 g'8( bes) \mark \default
 	a4( g8) r g4( aes8) r
-	r2 c,4\p~ c8 r
+	r2 c,4-\offset X-offset #0.5 \p~ c8 r
 	c4( d8) r r2
 	aes2( g)
 % mesures 241 à 245
-	f2.~ f4-._\dimmarkup
+	f2.~ \whiteoutMarkup f4-._\dimmarkup
 	bes2( a!)
 	g2.~ g4-.
 	a1(\pp
@@ -317,21 +317,21 @@ musicViolinIIMvtIV = \relative c {
 	e,1\p\<~
 	<< e {s4\> s s s\!} >>
 	e2( a\<)
-	gis(\> b)\! \mark \default
+	gis(\> \once \stemUp b)\! \mark \default
 % mesures 256 à 260
 	e,1~
 	e
 	e2( a\<)
-	gis\>( b)\!
+	gis\>( \once \stemUp b)\!
 	e,4 r r2
 % mesures 261 à 265
 	R1
-	r4 e'\p-. r cis-.
+	r4 \dynEO #'(0.6 . 1) e'\p-. r cis-.
 	r_\dimmarkup a-. r b-.
 	cis8\p-. e-. cis-. a~ a cis-. a-. fis~
 	fis b-. gis-. e'~ e b'-. b,-. e~
 % mesures 266 à 270
-	e_\pococrescendo gis,-. a-. e'~ e g-. e-. cis~
+	\beamOffset #'(0.3 . 0.3) e_\pococrescendo gis,-. a-. e'~ e g-. e-. cis~
 	cis fis,-. dis'-.\< b~ b gis-. a-. d\!
 	cis8\f[ r16 cis]( cis'8[) r16 cis]( b8[) r16 b]( a8[) r16 a](
 	gis1\fz)
@@ -374,7 +374,7 @@ musicViolinIIMvtIV = \relative c {
 	<a, fis'>1\ff->
 % mesures 301 à 305
 	<a fis'>->
-	<d, a'>->\f
+	<d, a'>^>\f
 	<d' fis>\<->
 	a16\ff( b a b) cis( d cis d) e( fis e fis) gis( a gis a)
 	<< <a, e'>1-> {s4 s  s s_\dimmarkup} >>
@@ -383,7 +383,7 @@ musicViolinIIMvtIV = \relative c {
 	cis4( a e cis)
 	\tuplet 3/2 4 {b8(\pp d b d b d b d b d b d)
 	b8( d b d b d b d b d b d)
-	b'8( d b d b d_\crescmarkup b d b d b d) 
+	b'8( d b d b d-\offset X-offset #-1 _\crescmarkup b d b d b d) 
 % mesures 311 à 315
 	b8( d b\< d b d b d b d b d)\!} \mark #18
 	<e, d'>2\ff-> <a a'>->
@@ -410,7 +410,7 @@ musicViolinIIMvtIV = \relative c {
 	e2~\< e4\>^\lungafermata r4\! \bar "||" \time 9/8
 	cis4.(\ppp d e4 d8)
 	cis4.~ cis b4( e8~
-	e4.)\< a,2.(\f~
+	e4.)\< << a,2.(~ {s4.\! s\f} >>
 	a2.\> fis'4.)\!
 % mesures 326 à 330
 	f(\ppp e d)
