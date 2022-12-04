@@ -29,7 +29,7 @@ musicCelloMvtIII = \relative c {
 	bes->( a) d->(
 	cis) a'->( gis8 fis)
 	e2( dis4)
-	\hairpinShorten #'(1 . 0) d2(\>-\offset X-offset #3 _\dimmarkup ais4\!
+	\hairpinShorten #'(1 . 0) d!2(\>-\offset X-offset #3 _\dimmarkup ais4\!
 	b2)\p bis4
 % mesures 21 à 25
 	cis(\pp d e)

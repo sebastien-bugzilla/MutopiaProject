@@ -87,8 +87,8 @@ musicCelloMvtI = \relative c {
 		e'4( b8) \acciaccatura b e,4.
 		e'4 b8 \acciaccatura b e,4.
 % mesures 66 à 70
-		e'4 e16( b) \acciaccatura b e,4.
-		e'4 e16( b) \acciaccatura b e,4.
+		e'4 e16( b) \acciaccatura b8 e,4.
+		e'4 e16( b) \acciaccatura b8 e,4.
 		e16 e gis gis b b e, e gis gis b b 
 		e, e gis gis b b e, e gis gis b b 
 		e,8( cis' b) ais4.\<
@@ -189,7 +189,7 @@ musicCelloMvtI = \relative c {
 	d16( bes f8) f-. f16( d bes8) bes-.
 	ees4( d16 ees) f( ees d ees d c)
 % mesures 141 à 145
-	bes4( a16 bes) c( bes c d \tuplet 3/2 {c bes aes)} \mark \default
+	bes4( a16 bes) c( bes c \beamLeftTwoRightOne d \tuplet 3/2 {\beamLeftOneRightTwo c bes aes)} \mark \default
 	g2.
 	g4( fis!16 g) a( g fis g f e)
 	d8.(\p b'16-.) g8 d8.( b'16-.) g8 

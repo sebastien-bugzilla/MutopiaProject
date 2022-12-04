@@ -24,12 +24,12 @@ musicCelloMvtIII = \relative c {
 	ais2)\! b4\p~
 	b2_\dimmarkup e4~
 	e2\pp a,4~
-	a fis,->\f( gis)
+	a fis,^>\f( gis)
 % mesures 16 à 20
 	bes->( a) d->(
 	cis) a'->( gis8 fis)
 	e2( dis4)
-	d2(\>_\dimmarkup ais4\!
+	\once \stemUp d!2(\>_\dimmarkup ais4\!
 	b2)\p bis4
 % mesures 21 à 25
 	cis(\pp d e)
@@ -78,7 +78,7 @@ musicCelloMvtIII = \relative c {
 		b-. cis-. d-. cis-. b-. a-. 
 		gis\crescD\<-. fis-. e-. cis'-. b-. a-. 
 		gis-. fis-. e-. cis'\!-. b-. a-. 
-		gis4\f( ais2)\>
+		gis4-\offset X-offset #-1 \f( ais2)\>
 		b\p\> e4~
 % mesures 61 à 65
 		e2.\!
@@ -89,14 +89,14 @@ musicCelloMvtIII = \relative c {
 % mesures 66 à 70
 		e2( dis4)\!
 		d!2(\> ais4)\!
-		b2(_\dimmarkup bis4)\p
+		b2(-\offset X-offset #-1.3 _\dimmarkup bis4)\p
 		cis(\> d e)\!
 		a(\pp\> e) a,~
 % mesures 71 à 75
-		a2\! r4^\fine
+		a2\! r4 \markFine \break
 	}
 	\repeat volta 2 {
-		fis8\p(^"TRIO" a cis cis,) cis'4~
+		fis8\p(^\trio a cis cis,) cis'4~
 		cis8 gis( cis cis,) cis'4~
 		cis8 cis,( gis' cis,) cis'4~
 		cis8 fis,( a fis) cis'4
@@ -120,7 +120,7 @@ musicCelloMvtIII = \relative c {
 			q r r
 		}
 		{
-			r <c, g'>\pp^\pizz q 
+			r <c, g'>-\offset X-offset #0.5 \pp^\pizz q 
 % mesures 81 à 85
 			q r q 
 		}
@@ -194,5 +194,5 @@ musicCelloMvtIII = \relative c {
 	a,(_\dimmarkup cis e,)
 	a-.\p cis,( e)
 	a,( cis) e,-.
-	e8( fis) gis!4(\f^\dacapo a) \bar "||"
+	e8( fis) gis!4(\f a) \markDSalfine \bar "||"
 }

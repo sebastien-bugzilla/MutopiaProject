@@ -45,20 +45,20 @@ musicCelloMvtII = \relative c {
 	r8 d'16( a gis fis) r8 d'16( a gis fis) r8 d'16( a gis fis)
 % mesures 31 à 35
 	r8 gis16(_\crescmarkup fis eis cis) r8 cis'16( gis eis cis) r8 gis'16( fis eis cis)
-	r8 fis'16( d cis\< b) r8 b'16( fis d b) r8 fis'16( d cis b)\!} \mark \default
-	\grace {s8} \tuplet 6/4 4 {r8 gis16(\mf fis eis cis) r8 gis'16( fis eis cis) r8 cis'16( a gis fis)
+	r8 fis'16( d cis\< b) \tupletOffset #4.7 r8 b'16( fis d b) r8 fis'16( d cis b)\!} \mark \default
+	\tuplet 6/4 4 {r8 gis16(\mf fis eis cis) r8 gis'16( fis eis cis) r8 cis'16( a gis fis)
 	r8 cis'16( gis eis cis) r8 cis'16( gis eis cis) r8 cis'16( gis eis cis)} 
 	e!32(\f fis) fis( gis) gis( a) a( b) b( cis) cis( d) d( e) e( f) e4
 % mesures 36 à 40
-	e,8\fz r r4 r
-	<< e'2. {s4\pp\< s s\!} >>
-	e,2(\> e'4)\!
+	e,8-\offset X-offset #-1.9 \fz r r4 r
+	<< e'2. {\hairpinShorten #'(-0.5 . -2.3) s4-\offset X-offset #1 \pp\< s s\!} >>
+	\hairpinShorten #'(1.5 . 0) e,2(\> e'4)\!
 	e8(-- dis-- d--\< cis-- b-- a--)\!
 	gis4\f\> fis8( e a4)\!
 % mesures 41 à 45
-	<< fis2.~ {s4\pp\< s s\!} >>
+	<< fis2.~ {\hairpinShorten #'(-0.5 . -2) s4\pp\< s s\!} >>
 	<<fis2. {s4\> s s\!} >>
-	<< fis''2.~( {s4\pp\< s s\!} >>
+	<< fis''2.~( {\hairpinShorten #'(-0.5 . -2) s4\pp\< s s\!} >>
 	fis2\< b,4)\!
 	a'2(\f d,4)
 % mesures 46 à 50
@@ -72,7 +72,7 @@ musicCelloMvtII = \relative c {
 	e2\p r4
 	f2.\pp
 	\sharptrill \afterGrace e2\startTrillSpan\< {dis16[ e\stopTrillSpan]} e16( b gis e)\!
-	\tuplet 6/4 4 {e16(_\crescmarkup b' gis b e gis) gis,( e' b e gis b) a(\<\prall gis) gis(\prall fis) fis(\prall e)\!} \mark \default
+	\tuplet 6/4 4 {e16(_\crescmarkup b' gis b e gis) gis,( e' b e gis b) \tupletOffset #4.5 a(\<\prall gis) gis(\prall fis) fis(\prall e)\!} \mark \default
 % mesures 56 à 60
 	a,8\ff r a r a r
 	a2(\< g4)\!
@@ -94,7 +94,7 @@ musicCelloMvtII = \relative c {
 % mesures 71 à 75
 	b4( e) gis8( a)
 	b16( a gis e') fis,8(\< gis e ais,)\!
-	d4\ff^~ d16 cis( b d) d4
+	\once \stemUp d4\ff~ d16 cis( b d) d4
 	g,4~ g16 fis( e g) g4
 	gis!4(~ gis16_\dimmarkup fis eis fis) gis8-^ cis,-^
 % mesures 76 à 80
@@ -108,7 +108,7 @@ musicCelloMvtII = \relative c {
 	eis(:\< d!: cis:)\!
 	gis':(\> fis: eis:)\!
 	fis:\pp( gis: a:)
-	b:( cis: d:)
+	b:( cis: \once \stemUp d:)
 % mesures 86 à 90
 	cis: d:_\crescmarkup bis:
 	cis:\< d:\! b!:\>
@@ -138,10 +138,10 @@ musicCelloMvtII = \relative c {
 	d2(\> e,4)\!
 	a2\pp a'8(\< d,)\!
 	b2 cis4
-	d4\p~ d8 r r4
+	d4-\offset X-offset #0.8 \p~ d8 r r4
 % mesures 111 à 115
-	e4\pp~ e8 r r4 \mark \default
-	\grace {s8} << a,2.~ {s4\pp\< s s\!} >>
+	e4-\offset X-offset #0.5 \pp~ e8 r r4 \mark \default
+	<< a,2.~ {\hairpinShorten #'(-0.5 . -2) s4\pp\< s s\!} >>
 	a2\> d4\! \clef tenor
 	b'8(\pp\<-- cis-- dis-- e-- fis-- g--)\!
 	a16(\< g fis a) a4.( g8)\!
@@ -164,7 +164,7 @@ musicCelloMvtII = \relative c {
 	<fis a>2.\p
 	<b d>\pp\<
 % mesures 131 à 135
-	cis4.(\mf fis,8) fis32(\< a) a( gis) gis( eis) eis( fis)\!
+	cis4.(\mf fis,8) \setBeamTriple fis32(\< a) a( gis) gis( eis) eis( fis)\! \unsetBeamTriple
 	gis4\f( d'_\dimmarkup \afterGrace cis\startTrillSpan) {bis16[ cis]\stopTrillSpan}
 	fis,2._\ppsempre
 	cis4. cis'8( a fis)

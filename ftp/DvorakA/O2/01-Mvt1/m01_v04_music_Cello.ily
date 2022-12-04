@@ -15,13 +15,13 @@ musicCelloMvtI = \relative c {
 	a,\pp( d) cis4( b8)
 % mesures 6 à 10
 	a4.( gis_\crescmarkup fis)
-	cis(\f\> dis e)\!
-	a~(_\dimmarkup a4\pp b8) e,(\<-. e-.\> e-.)\!
+	cis(-\offset X-offset #-1 \f\> dis e)\!
+	a~(-\offset X-offset #-1 _\dimmarkup a4\pp b8) e,(\<-. e-.\> e-.)\!
 	e r r r4. r
 	b''4.\pp( a gis)
 % mesures 11 à 15
 	fis2.(~\< fis16 gis a gis fis e)\!
-	e4._\crescmarkup fis16( gis a gis fis e d\< cis b a gis fis)\!
+	e4._\crescmarkup \shape #'((0 . -1.3)(0 . -0.2)(0 . 0)(0 . 0)) Slur fis16( gis a gis fis e d\< cis b a gis fis)\!
 	e2.\f\> e'4.\!\fermata \time 6/8
 	\repeat volta 2 {
 		a2.:16\fp
@@ -46,8 +46,8 @@ musicCelloMvtI = \relative c {
 		a'16\fp a, a a a a a a a a a a
 % mesures 31 à 35
 		e'\fp e, e e e e e e e e e e
-		a'16\fp a, a a a a a'\fp a, a a a a
-		a'\fp a, a a a a a4.:16\p
+		a'16\fp a, a a a a a'-\offset X-offset #-1 \fp a, a a a a
+		\stemUp a'\fp a, a a a a \stemNeutral a4.:16\p
 		a8 r r r4 r8
 		b'4\p\< b16( cis)\! e8(\> cis ais)\!
 % mesures 36 à 40
@@ -87,8 +87,8 @@ musicCelloMvtI = \relative c {
 		e'4( b8) \acciaccatura b e,4.
 		e'4 b8 \acciaccatura b e,4.
 % mesures 66 à 70
-		e'4 e16( b) \acciaccatura b e,4.
-		e'4 e16( b) \acciaccatura b e,4.
+		e'4 e16( b) \acciaccatura b8 e,4.
+		e'4 e16( b) \acciaccatura b8 e,4.
 		e16 e gis gis b b e, e gis gis b b 
 		e, e gis gis b b e, e gis gis b b 
 		e,8( cis' b) ais4.\<
@@ -120,7 +120,7 @@ musicCelloMvtI = \relative c {
 		cis( a) gis-. a( fis) b-.
 		e, r r r4 gis8
 		cis( a) gis-. a-^ fis-^ b-^
-		e,-> dis-> e-> e'4->( d!32\> cis b a)
+		e,-> dis-> e-> \once \stemUp e'4->( d!32\> cis b a)
 		gis8-^ fis-^ gis-^ a16( b a gis a8)\!
 % mesures 96 à 100
 		b4.\p( ais)
@@ -189,7 +189,7 @@ musicCelloMvtI = \relative c {
 	d16( bes f8) f-. f16( d bes8) bes-.
 	ees4( d16 ees) f( ees d ees d c)
 % mesures 141 à 145
-	bes4( a16 bes) c( bes c d \tuplet 3/2 {c bes aes)} \mark \default
+	bes4( a16 bes) c( bes c \beamLeftTwoRightOne d \tuplet 3/2 {\beamLeftOneRightTwo c bes aes)} \mark \default
 	g2.
 	g4( fis!16 g) a( g fis g f e)
 	d8.(\p b'16-.) g8 d8.( b'16-.) g8 
@@ -291,15 +291,15 @@ musicCelloMvtI = \relative c {
 	fis\f r8 r fis4\>
 	a\p r8 r4 r8
 % mesures 226 à 230
-	b4 r8 r b4\<
+	b4 r8 r \hairpinShorten #'(-0.5 . -0.5) b4\<
 	bes\f r8 r4 r8 \mark #10
 	a16\fp a' a a a a  a a a a a a
 	a2.:16\p
 	a:
 % mesures 231 à 235
 	e16\fz e, e e e e  e e e e e e
-	a\f a' a a a a  a a a a a a
-	a,\fz a' a a a a  a a a a a a
+	\beamOffset #'(0.5 . 0) a\f a' a a a a  a a a a a a
+	\beamOffset #'(0.5 . 0) a,\fz a' a a a a  a a a a a a
 	a,\fz a' a a a a a, a' a a a a
 	e\fz e, e e e e  e e e e e e
 % mesures 236 à 240
@@ -383,7 +383,7 @@ musicCelloMvtI = \relative c {
 % mesures 301 à 305
 	a,8( fis' e) dis4.\<
 	e8(\> gis fis)\! e( fis gis)
-	a16\pp a e e a, a a' a e e a, a 
+	a16-\offset X-offset #-1 \pp a e e a, a a' a e e a, a 
 	a' a e e a, a a' a e e a, a 
 	b8( fis' e) dis4.\<
 % mesures 306 à 310

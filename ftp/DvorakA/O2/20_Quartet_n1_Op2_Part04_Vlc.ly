@@ -19,7 +19,7 @@
 \include "./00-Common/Quartet_n1_Op2_timeMvt.ily"
 \include "./00-Common/Quartet_n1_Op2_LayoutParts.ily"
 \include "./00-Common/Quartet_n1_Op2_Shortcuts.ily"
-%\include "./00-Common/Quartet_n1_Op2_Format_Part04_Cello.ily"
+\include "./00-Common/Quartet_n1_Op2_Format_Part04_Cello.ily"
 \include "./00-Common/Quartet_n1_Op2_Tempi.ily"
 \include "./01-Mvt1/m01_v04_music_Cello.ily"
 \include "./02-Mvt2/m02_v04_music_Cello.ily"
@@ -45,9 +45,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtI
-%			}
+			\new Voice {
+				\formatCelloMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(cello) \tempiPartMvtI
 			}
@@ -70,9 +70,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtII
-%			}
+			\new Voice {
+				\formatCelloMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(cello) \tempiPartMvtII
 			}
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtIII
-%			}
+			\new Voice {
+				\formatCelloMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(cello) \tempiPartMvtIII
 			}
@@ -120,9 +120,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtIV
-%			}
+			\new Voice {
+				\formatCelloMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(cello) \tempiPartMvtIV
 			}

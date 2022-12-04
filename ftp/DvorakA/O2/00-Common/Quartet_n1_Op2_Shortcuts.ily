@@ -34,11 +34,11 @@ staccsempre = \markup {\italic {stacc. sempre}}
 sulG = \markup {sul G.}
 trio = \markup {\abs-fontsize #11 TRIO}
 
-fconespressione = \markup {\hspace #0.1 \dynamic f \italic {con espressione}}
-fconmoltaforza = \markup {\hspace #0.1 \dynamic f \italic {con molta forza}}
-fespressivo = \markup {\hspace #0.1 \dynamic f \italic espressivo}
+fconespressione = \markup {\dynamic f \italic {con espressione}}
+fconmoltaforza = \markup {\dynamic f \italic {con molta forza}}
+fespressivo = \markup {\dynamic f \italic espressivo}
 ffsempre = \markup {\hspace #-0.5 \dynamic ff \italic sempre}
-fsempre = \markup {\hspace #0.1 \dynamic f \italic {sempre}}
+fsempre = \markup {\dynamic f \italic {sempre}}
 fzcresc= \markup {\hspace #-0.45 \dynamic fz \italic cresc.}
 fzdim= \markup {\hspace #-0.45 \dynamic fz \italic {dim.}}
 pconespressione = \markup {\hspace #-0.1 \dynamic p \italic {con espressione}}
@@ -77,7 +77,7 @@ markDSalfine = {
 	\once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
 	\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 	\mark \markup {
-		\hspace #-14 \abs-fontsize #11 \italic { D.S. al Fine }
+		\hspace #-12 \abs-fontsize #11 \italic { D.S. al Fine }
 	}
 }
 
@@ -176,6 +176,36 @@ trillSpanPadding = #(define-music-function
 	#}
 )
 
+beamLeftTwoRightOne = {
+	\set stemLeftBeamCount = #2
+	\set stemRightBeamCount = #1
+}
+
+beamLeftOneRightTwo = {
+	\set stemLeftBeamCount = #1
+	\set stemRightBeamCount = #2
+}
+
+setBeamTriple = { 
+	\set subdivideBeams = ##t
+	\set baseMoment = #(ly:make-moment 1/8)
+	\set beatStructure = 2,2,2
+}
+
+unsetBeamTriple = {
+	\set subdivideBeams = ##f
+	\unset baseMoment
+	\unset beatStructure
+}
+
+tempoXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.X-offset = #offset
+	#}
+)
+
 %whiteoutDynamic = {
 %	\once \override DynamicText.whiteout = ##t
 %	\once \override DynamicText.whiteout-style = #'outline
@@ -228,4 +258,11 @@ trillSpanPadding = #(define-music-function
 %	#}
 %)
 
+%tempoExtraOffset = #(define-music-function
+%	(offset)
+%	(pair?)
+%	#{
+%		\once \override Score.MetronomeMark.extra-offset = #offset
+%	#}
+%)
 
