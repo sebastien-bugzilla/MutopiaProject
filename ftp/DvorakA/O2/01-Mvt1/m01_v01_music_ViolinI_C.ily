@@ -352,8 +352,8 @@ musicViolinIMvtI = \relative b {
 	e4.(\< fis)\!
 % mesures 276 à 280
 	g\>\( a4(\! b8)\)
-	a8\pp a,,-. d'~ d a, a''~
-	a a,, d'~ d a,-. a''-.
+	a8\pp a,,-. d'~ d a,-. a''~
+	a a,,-. d'~ d a,-. a''-.
 	a r r d,16( e g e d e)
 	a8 r r d,,16( e g e d e)
 % mesures 281 à 285

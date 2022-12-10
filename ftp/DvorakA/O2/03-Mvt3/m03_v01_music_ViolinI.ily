@@ -48,13 +48,13 @@ musicViolinIMvtIII = \relative c {
 		fis8 cis(\> e d cis b)\!
 		a4.(\p gis16 a b8)[ r16 a-.]
 		a4.( gis16 a b8)[ r16 a-.]
-		<< gis2. {s4\f\< s s\!}>>
+		<< gis2. {\hairpinShorten #'(-0.5 . -2) s4\f\< s s\!}>>
 		e8(\! fis\> gis a b cis)\! 
 % mesures 36 à 40
 		d4.\p( cis16 d e8)\<[ r16 d-.]
 		d4.( cis16 d e8)\![ r16 d-.]
 		\acciaccatura d8 b'2.\f~
-		\once \override Beam.auto-knee-gap = #2 b8 e,,16(\> fis gis8 a b cis)\!
+		\beamGap #2 b8 e,,16(\> fis gis8 a b cis)\!
 		d4.\pp( cis16 d e8)[ r16 d-.]
 % mesures 41 à 45
 		d4.( cis16 d e8)[ r16 d-.]
@@ -67,9 +67,9 @@ musicViolinIMvtIII = \relative c {
 		e->\f cis2->
 		d4( b fis)
 		a4.( gis8 fis e)
-		e4(\fz cis) fis\p(
+		e4(-\offset X-offset #-1.2 \fz cis) fis\p(
 % mesures 51 à 55
-		e)\> << cis2->~ {s4 s\!} >>
+		e)\> << \shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Tie cis2^>~ {s4 s\!} >>
 		cis4\ppp d( fis
 		a cis d
 		fis a cis)
@@ -77,7 +77,7 @@ musicViolinIMvtIII = \relative c {
 % mesures 56 à 60
 		d-. r fis(
 		e)_\crescmarkup r fis(\<
-		e)\! r fis(\f
+		e)\! r \shape #'((0 . -0.2)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur fis(\f
 		e cis2->)\>
 		d4\p\>( b fis)
 % mesures 61 à 65
@@ -93,10 +93,10 @@ musicViolinIMvtIII = \relative c {
 		cis2\> b4~\!
 		b\pp a2\>~
 % mesures 71 à 75
-		a4\! r r^\fine
+		a4\! r r \markFine \break
 	}
 	\repeat volta 2 {
-		cis2.\p~^"TRIO"
+		cis2.\p~-\offset X-offset #-6 ^\trio
 		cis4 d4.( cis8)
 		cis2.~
 		cis4 a4.( fis8)
@@ -117,7 +117,7 @@ musicViolinIMvtIII = \relative c {
 			cis: b: a: cis: b: a:
 % mesures 86 à 90
 			b:\< a: g: b: a: g:\!
-			a: g: fis: a: g: fis:
+			a: g: fis: a: g: fis: \break
 		}
 		{
 			g':\pp f: e: g: f: e:
@@ -150,7 +150,7 @@ musicViolinIMvtIII = \relative c {
 % mesures 101 à 105
 	fis4 r r 
 	R2. \bar "||"
-	d16(\pp a' d a') a2_\leggiero
+	d16(\pp a' d a') a2-\offset X-offset #-1.5 _\leggiero
 	d,,16( b' g' b) b2
 	d,,16( a' fis' cis') cis2\<
 % mesures 106 à 110
@@ -174,11 +174,11 @@ musicViolinIMvtIII = \relative c {
 % mesures 121 à 125
 	a a a a e e a, a gis' gis a a
 	a a a a e e a, a gis' gis a a
-	a'_\pococresc a a a e e a,, a gis'' gis a a
+	a'-\offset X-offset #-1.5 _\pococresc a a a e e a,, a gis'' gis a a
 	a a a a e e a,, a gis'' gis a a
 	a a a a e e a,, a gis'' gis a a
 % mesures 126 à 130
-	a a a a\< e e a,, a gis'' gis a a\!
+	a a a a\< \beamOffset #'(-1.5 . 0.5) e e a,, a gis'' gis a a\!
 	a4.\f-> cis,8 cis4
 	d2.->
 	a'4.-> cis,8 cis4
@@ -194,5 +194,5 @@ musicViolinIMvtIII = \relative c {
 	cis_\dimmarkup r a
 	g8(\p fis e4) g8( fis
 	e4) g8( fis e4)
-	a8( g) fis4\f->(^\dacapo e) \bar "||"
+	a8( g) fis4\f->( e) \markYoffset #5 \markDSalfine \bar "||"
 }

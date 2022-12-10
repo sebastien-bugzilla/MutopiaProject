@@ -12,6 +12,7 @@ crescendo=^\markup {\italic crescendo}
 crescmarkup = \markup {\italic cresc.}
 dacapo = \markup {\italic {D.C. al Fine}}
 dimmarkup = \markup {\italic dim.}
+espr = \markup {\italic espr. }
 fine = \markup {\italic Fine}
 fourthcorda = \markup {\italic { \concat {4 \super {ta}} corda}}
 intempo = \markup {\italic {in tempo}}

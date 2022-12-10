@@ -140,7 +140,7 @@ musicViolinIMvtIV = \relative c {
 	gis,8-. gis-. gis-._\pocoapococrescmarkup cis~-> cis b-. b-. fis'~
 	fis cis-. cis-. e->~ e dis-. dis-. gis~->
 % mesures 111 à 115
-	gis r \tuplet 3/2 {gis,-. gis-. cis~ cis b-. b-. b-.\< b-. fis'~
+	gis r \tuplet 3/2 4 {gis,-. gis-. cis~ cis b-. b-. b-.\< b-. fis'~
 	fis fis-. cis~ cis cis-. e~ e e-. dis~ dis dis( b')\!} \mark \default
 	b2->\ff gis->
 	a-> fis->

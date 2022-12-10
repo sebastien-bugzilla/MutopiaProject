@@ -19,7 +19,7 @@
 \include "./00-Common/Quartet_n1_Op2_timeMvt.ily"
 \include "./00-Common/Quartet_n1_Op2_LayoutParts.ily"
 \include "./00-Common/Quartet_n1_Op2_Shortcuts.ily"
-%\include "./00-Common/Quartet_n1_Op2_Format_Part01_ViolinI.ily"
+\include "./00-Common/Quartet_n1_Op2_Format_Part01_ViolinI.ily"
 \include "./00-Common/Quartet_n1_Op2_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_ViolinI.ily"
 \include "./02-Mvt2/m02_v01_music_ViolinI.ily"
@@ -45,9 +45,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtI
-%			}
+			\new Voice {
+				\formatViolinIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtI
 			}
@@ -70,9 +70,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtII
-%			}
+			\new Voice {
+				\formatViolinIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtII
 			}
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtIII
-%			}
+			\new Voice {
+				\formatViolinIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtIII
 			}
@@ -120,9 +120,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIMvtIV
-%			}
+			\new Voice {
+				\formatViolinIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtIV
 			}
@@ -131,7 +131,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4

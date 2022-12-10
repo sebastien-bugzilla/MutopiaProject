@@ -22,7 +22,7 @@ musicViolinIMvtI = \relative b {
 % mesures 11 à 15
 	fis4.(\< e d)\!
 	d16(_\crescmarkup cis b a gis fis) e4.( fis)\<
-	b4\f(~ b16 e,) e2.\fermata \time 6/8 
+	\stemUp b4\f(~ b16 \stemNeutral e,) e2.\fermata \time 6/8 
 	\repeat volta 2 {
 		e'4.\fz fis\p
 		e8( a, b) d4( cis8)
@@ -93,7 +93,7 @@ musicViolinIMvtI = \relative b {
 		gis( e b gis) r r 
 		r r cis'-. cis(\< fis e)
 % mesures 71 à 75
-		dis( b b')\! b4.\>~
+		dis( b b')\! \hairpinShorten #'(-0.5 . -0.5) b4.\>~
 		b~\pp b8 r r 
 		r4 r8 b,( e dis)
 		cis4.\< cis8( fis e)\!
@@ -142,7 +142,7 @@ musicViolinIMvtI = \relative b {
 		a gis a~ a fis16(\> gis) a8~
 % mesures 111 à 115
 		a fis,16( gis) a8~ a fis,16( gis) a8\!
-		<b, gis'>4\p--( q8) r r q-.(
+		<b, gis'>4-\offset X-offset #-1 \p--( q8) r r q-.(
 		q4-- q8-.) r r q-.(
 		<b a'>4-- q8-.) r r q-.(
 		q4-- q8)-. r r q
@@ -228,8 +228,8 @@ musicViolinIMvtI = \relative b {
 	f16(\< ees d ees d c) f( ees d ees d c)\!
 	a'\f a, a' a, a' a, a' a, a' a, a' a, 
 	a'\fz a, a' a, a' a, a' a, a' a, a' a, 
-	a' a,,\fz a'' a,, a'' a,, a'' a,, a'' a,, a'' a,, 
-	a''\fz a,, a'' a,, a'' a,, a'' a,, a'' a,, a'' a,, \mark \default
+	a'\fz a,, a'' a,, a'' a,, a'' a,, a'' a,, a'' a,, 
+	\beamOffset #'(0.5 . 0.5) a''\fz a,, a'' a,, a'' a,, a'' a,, a'' a,, a'' a,, \mark \default
 % mesures 176 à 180
 	g''8\pp( fis) e-. e( d) cis-.
 	cis( b) ais-. ais( cis) e-.
@@ -345,21 +345,21 @@ musicViolinIMvtI = \relative b {
 	b16( cis e cis b cis b gis fis gis fis e)
 	b(_\dimmarkup cis e cis b cis b gis fis gis fis e)
 % mesures 271 à 275
-	b(\p cis e cis b cis) b8 r r 
+	b(-\offset X-offset #-1.5 \p cis e cis b cis) b8 r r 
 	b'16( cis e cis b cis) b8 r r
 	g''2.\pp~
 	g
 	e4.(\< fis)\!
 % mesures 276 à 280
 	g\>\( a4(\! b8)\)
-	a8\pp a,,-. d'~ d a, a''~
-	a a,, d'~ d a,-. a''-.
+	a8\pp a,,-. d'~ d a,-. a''~
+	a a,,-. d'~ d a,-. a''-.
 	a r r d,16( e g e d e)
 	a8 r r d,,16( e g e d e)
 % mesures 281 à 285
-	\naturaltrill f2.\startTrillSpan
+	\trillSpanPadding #2 \naturaltrill f2.\startTrillSpan
 	\naturaltrill \afterGrace f2.\startTrillSpan_( {e16[ f\stopTrillSpan])}
-	<f, d'>4.( <a e'>)\<
+	<f, d'>4.( \hairpinShorten #'(1 . 0) <a e'>)\<
 	<d f>(\> <e g>4\< <f a>8)
 	<f a>2.\fp
 % mesures 286 à 290

@@ -29,7 +29,7 @@ musicViolinIMvtIV = \relative c {
 	e-. cis-. e,4.-> e8-.
 	dis16\fp( fis e dis) <a fis''>2\fz e'4
 	fis16(\fp a gis fis) <a, fis''>2\fz e'4 \mark \default
-	<a, dis'>2\fz <a e''>\fz
+	<a, dis'>2-\offset X-offset #0.5 \fz \dynEO #'(1 . 2) <a e''>\fz
 	<a fis''>-> <a e''>4-> <a dis'>->
 % mesures 21 à 25
 	e'' r r2
@@ -48,7 +48,7 @@ musicViolinIMvtIV = \relative c {
 	e2\p\> d4.( e8)\! 
 	cis2. \tuplet 6/4 {a,,16( cis e a cis e)}
 	a4( cis) fis(_\crescmarkup e)
-	<<{dis2. e4} {s4\< s s\> s\!}>>
+	<<{dis2. e4} {\hairpinShorten #'(-0.5 . 0) s4\< s s\> s\!}>>
 % mesures 36 à 40
 	cis2_\dimmarkup\! b4.( e,8) \mark \default
 	dis16(\p fis e dis) <a fis''>2\fp-> e'4
@@ -63,8 +63,8 @@ musicViolinIMvtIV = \relative c {
 	b'2\fz~ \tuplet 3/2 4 {b8\p) gis( a b gis e)}
 % mesures 46 à 50
 	b2 r4 b\p
-	cis( fis) e( b)\<
-	cis8\>[-. r16 cis]( gis'8 fis) e(\! dis cis b)
+	cis( fis) e( \hairpinShorten #'(0 . -2) b)\<
+	\hairpinShorten #'(2 . 0) cis8\>[-. r16 cis]( gis'8 fis) e(\! dis cis b)
 	\tuplet 3/2 4 {cis8-.\p dis-. e-. fis-. e-. fis-. dis-. e-. fis-. gis-.\< fis-. gis-.\!
 	e-. fis-. gis-. a-._\crescmarkup gis-. a-. fis-. gis-. a-. b-. cis-. b-.}
 % mesures 51 à 55
@@ -98,7 +98,7 @@ musicViolinIMvtIV = \relative c {
 	b,8-. b'-. cis-. b-. cis-. b-. dis-. b-. cis-. b-. cis-. b-.
 	b,8-. b'-. cis-. b-. cis-. b-. b,-. gis'-. a-. gis-. a-. gis-.
 % mesures 76 à 80
-	 e,-. e'-. fis-. e-. fis-. e-.} b4-. r
+	\beamOffset #'(0.8 . -0.2) e,-. e'-. fis-. e-. fis-. e-.} b4-. r
 	b'2\p( e)
 	dis( fis)_\pococresc
 	e( b')
@@ -123,10 +123,10 @@ musicViolinIMvtIV = \relative c {
 	c8 r b16( ais c b) b8-. r a4->~
 % mesures 96 à 100
 	a8 r a16( gis b a) a8-. r gis4->
-	<cis, fis>2\ff-> r
-	<cis fis>2\fz r
-	<b fis'>\fz r
-	<ais fis'>\fz r
+	<cis, fis>2-\offset X-offset #0.8 \ff-> r
+	<cis fis>2-\offset X-offset #0.5 \fz r
+	<b fis'>-\offset X-offset #0.8 \fz r
+	<ais fis'>-\offset X-offset #0.5 \fz r
 % mesures 101 à 105
 	r gis'\p(
 	fis_\dimmarkup ais,)
@@ -140,7 +140,7 @@ musicViolinIMvtIV = \relative c {
 	gis,8-. gis-. gis-._\pocoapococrescmarkup cis~-> cis b-. b-. fis'~
 	fis cis-. cis-. e->~ e dis-. dis-. gis~->
 % mesures 111 à 115
-	gis r \tuplet 3/2 {gis,-. gis-. cis~ cis b-. b-. b-.\< b-. fis'~
+	gis r \tuplet 3/2 4 {gis,-. gis-. cis~ cis b-. b-. b-.\< b-. fis'~
 	fis fis-. cis~ cis cis-. e~ e e-. dis~ dis dis( b')\!} \mark \default
 	b2->\ff gis->
 	a-> fis->
@@ -149,26 +149,26 @@ musicViolinIMvtIV = \relative c {
 	<e! cis'>->\p <dis b'>->
 	<b a'>1\pp\<~
 	<< <b a'> {s4 s s s\!}>>
-	b,16\p( cis b cis dis e dis e) fis( gis fis gis a\< b a b)
+	b,16-\offset X-offset #-1.3 \p( cis b cis dis e dis e) fis( gis fis gis a\< b a b)
 	cis( dis cis dis e fis\! e fis) gis( a gis a\f b cis b cis)
 % mesures 121 à 125
-	dis2\pp \tuplet 3/2 {e4( dis e)}
+	\ottava #1 dis2\pp \tuplet 3/2 {e4( dis e)}
 	fis2\< \tuplet 3/2 {gis4( fis gis)\!}
 	a2\f-> \tuplet 3/2 4 {a8( b a) gis( fis gis)}
 	a2-> \tuplet 3/2 4 {a8( b a) gis( fis gis)}
-	a8->-. fis-. fis->-. dis-. dis->-. b-. b->_\dimmarkup-. a-. 
+	a8->-. fis-. fis->-. dis-. \ottava #0 dis->-. b-. b->_\dimmarkup-. a-. 
 % mesures 126 à 130
 	a->\>-. fis-. fis->-. dis-. dis->-. b\!-. b->-. a-. 
 	gis\p-. cis-. cis-. gis-. gis-. cis-. cis-. fis-. 
 	fis-. eis-. eis-. b'-. b-. cis-. cis-. d!-. 
-	d a, a''2._\ppsempre~
+	d a, \ottava #1 a''2._\ppsempre~
 	a1
 % mesures 131 à 135
 	a8 r r4 a8 r r4 
 	a8 r r4 a8 r r4 
 	c8 r r4 c8 r r4 
 	c8 r r4 c8 r r4 
-	c4.( gis!8) a4.( d,8)
+	c4.( gis!8) a4.( d,8) \ottava #0
 % mesures 136 à 140
 	e4.( b8) c4.( e,8) \mark \default
 	\tuplet 3/2 4 {a8\pp-. g-. fis-. a-. g-. fis-. c'-. b-. a-. c-. b-. a-.
@@ -206,8 +206,8 @@ musicViolinIMvtIV = \relative c {
 	e d-. cis-. b~ b bes\!-. a-. a,~
 	a b'!-. a-. a,~ a b'-._\crescmarkup a-. a,,~
 % mesures 166 à 170
-	a\f d-. e-. fis-. a,-. e'-. fis-. g-. 
-	a,_\staccsempre fis' e\< d~ d d' cis b~
+	a-\offset X-offset #-1 \f d-. e-. fis-. a,-. e'-. fis-. g-. 
+	a,-\offset X-offset #-0.5 ^\staccsempre fis' e\< d~ d d' cis b~
 	b fis' e d cis g' fis e\!
 	d\ff b' a a,~ a b' a a,,~
 	a b'' a a,~ a b' a a,,~
@@ -236,14 +236,14 @@ musicViolinIMvtIV = \relative c {
 	a4 r8. a,16 a4 r8. a16
 	a4 r8. a16 a4 r8. a16
 % mesures 191 à 195
-	gis4 r <b' fis'>2\ff~
+	gis4 r <b' fis'>2-\offset X-offset #0.7 \ff~
 	<b fis'> <b gis'> \mark \default
-	gis''4( a ais b)
+	\ottava #1 gis''4( a ais b)
 	b2~ b8 gis-. a!-. fis-.
 	gis4( a ais b)
 % mesures 196 à 200
 	b2~ b8 gis-. a!-. fis-.
-	gis8\p( e) fis-. d-. e( cis) d-. b-.
+	gis8\p( e) fis-. d-. e( cis) d-. b-. \ottava #0
 	cis( a) b-. gis-. a( fis) gis-. e-.
 	<a, a'>1\pp~
 	<a a'>
@@ -276,17 +276,17 @@ musicViolinIMvtIV = \relative c {
 	d4-. b-. e,4.-> e8-.
 	e'8( d) cis-. b-. cis4-. d-.
 	e-. cis-. e,4.-> e8-. \mark \default
-	dis16\p( fis e dis) <a fis''>2\fz e'4->
+	dis16\p( fis e dis) <a fis''>2-\offset X-offset #0.5 \fz e'4->
 % mesures 226 à 230
-	fis16( a g fis) <a, fis''>2\fz e'4->
+	fis16( a g fis) <a, fis''>2-\offset X-offset #0.5 \fz e'4->
 	<c fis>1\pp~
 	<c fis>
-	g'8\pp r g-. fis-. g-. fis-. e16( fis g\< a)
+	\dynEO #'(0 . 1.5) g'8\pp r g-. fis-. g-. fis-. e16( fis g\< a)
 	b8-. r g-. fis-. g-. fis-. e16( fis g a)\!
 % mesures 231 à 235
 	<c, bes'>1\pp~
 	<c bes'>
-	<c bes'>\startTrillSpan_\crescmarkup
+	\trillSpanPadding #2 <c bes'>\startTrillSpan_\crescmarkup
 	<< <c bes'>\startTrillSpan {s4\< s s s\!}>>
 	bes'16\f\stopTrillSpan( d c bes) g'2->( f4)
 % mesures 236 à 240
@@ -299,7 +299,7 @@ musicViolinIMvtIV = \relative c {
 	d2.( d4-._\dimmarkup)
 	g2( f)
 	e2.( e4-.)
-	e2(\pp a
+	\dynEO #'(1. . 1) e2(\pp a
 	gis! b)
 % mesures 246 à 250
 	e,4(-. e-. e-. e)-. 
