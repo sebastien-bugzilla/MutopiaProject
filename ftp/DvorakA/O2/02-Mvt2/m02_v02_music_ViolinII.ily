@@ -35,17 +35,17 @@ musicViolinIIMvtII = \relative c {
 	r8 cis16( fis gis a) r8 cis,16( fis gis a) r8 cis,16( fis gis a)
 	r8 cis,16( fis gis a) r8 cis,16( fis gis a) r8 cis,16( fis gis a)
 	r8 b,16( cis d fis) r8 b,16( cis d eis) r8 b16( cis d eis)
-	r8 b16( cis eis gis) r8 b,16( cis eis gis) r8 d'16\pp( cis) cis( b)} 
-	<< cis2 {s4\<_\pconespressione s s\!} >>
+	r8 b16( cis eis gis) r8 b,16( cis eis gis) \tupletOffset #3.5 r8 d'16\pp( cis) cis( b)} 
+	<< cis2 {\hairpinShorten #'(0.8 . -1.5) s4\<-\tweak extra-offset #'(-1 . 0.2) _\pconespressione s s\!} >>
 % mesures 26 à 30
 	fis,2 \tuplet 6/4 {fis16\(( a) a( eis) eis( fis)\)}
 	<< gis2. {s4\< s s\!} >>
-	<< d'2. {s4\> s s\!} >>
-	<< cis2. {s4\p\< s s\!} >>
+	<< d'2. {\hairpinShorten #'(0.8 . -1) s4\> s s\!} >>
+	<< cis2. {\hairpinShorten #'(-0.5 . -2) s4-\offset X-offset #0.5 \p\< s s\!} >>
 	fis,2 \tuplet 6/4 {fis16\(( a) a( eis) eis( fis)\)}
 % mesures 31 à 35
 	gis2._\crescmarkup
-	<< d' {s4\< s s\!} >> \mark \default 
+	<< d' {\hairpinShorten #'(0 . -1.5) s4\< s s\!} >> \mark \default 
 	\grace {s8} \tuplet 6/4 4 {eis16\(\mf\prall( dis) dis( cis)\) cis,8\noBeam eis'16\(\prall( dis) dis( cis)\) cis,8\noBeam gis''16(\prall fis) fis(\prall cis) b(\prall a)
 	gis16\prall\(( fis) fis(\prall eis)\) cis'8->\<\noBeam gis16\prall\(( fis) fis(\prall eis)\) cis'8->\noBeam gis16\prall\(( fis) fis(\prall eis)\) cis'8->\!\noBeam }
 	e,!8.\f d'16( e,8.) d'16( e,8.) d'16
@@ -59,13 +59,13 @@ musicViolinIIMvtII = \relative c {
 	fis,8\pp(-- gis-- ais--\< b-- cis-- d--)\!
 	e16(\> d cis e) e4.(\! d8)
 	fis8\pp\<--( gis-- ais-- b-- cis-- d--)\!
-	e16(\< d cis e) e4.->( d8\!)
+	\ottava #1 e16(\< d cis e) e4.->( d8\!)
 	e16(\f d cis e) e4.( d8)
 % mesures 46 à 50
-	e8( d16) r e,8(_\dimmarkup d16) r e,8( d16) r 
+	e8( d16) \ottava #0 r e,8(_\dimmarkup d16) r e,8( d16) r 
 	fis4(\p gis a)
-	fis4 \tuplet 3/2 {fis8( e d)_\dimmarkup} d4
-	fis4( e) cis8\mf( fis16) r
+	fis4 \tuplet 3/2 {fis8( e d)-\offset X-offset #1 _\dimmarkup} d4
+	fis4( e) cis8-\offset X-offset #-2 \mf( fis16) r
 	e4(\> d e)
 % mesures 51 à 55
 	fis4~ fis8\! r r4
@@ -74,34 +74,34 @@ musicViolinIIMvtII = \relative c {
 	r8 <d e> r <d b'>\< r <d' e>\!
 	\tuplet 6/4 {a'16(_\crescmarkup\prall gis) gis(\prall fis) fis(\prall e)} <e, d'>4:32 <e d'>:\< \mark \default
 % mesures 56 à 60
-	r16\! <e cis'>8.\ff r16 q8. r16 q8. 
+	r16\! <e cis'>8.-\tweak extra-offset #'(0.5 . 0.5) \ff r16 q8. r16 q8. 
 	r16 <a, g'>8. r16 q8. r16 q8. 
 	r16 q8. r16 q8. r16 <a fis'>8. 
 	r16 <e' e'>8. r16 q8. r16 q8. 
 	r16 q8. r16 q8. r16 q8. 
 % mesures 61 à 65
-	cis''16(\pp b a cis) cis4.(\< b8)\!
+	\shape #'((0 . -0.2)(0 . -0.5)(0 . -0.5)(0 . -0.2)) Slur cis''16(\pp b a cis) cis4.(\< b8)\!
 	b16( a g e~\> e) e\prall( d e) e( a) a( a,)\!
 	b(\pp a gis! b) b4.(\< a8)
-	gis16( a b e~\! e)\f gis,(\prall fis gis)\> gis( b) b( a)\!
+	gis16( a b e~\! e)\f gis,(-\offset X-offset 0.3 \prall fis gis)\> gis( b) b( a)\!
 	e'(\p b) e,-. e-. d'( b) e,-. e-. c'( a) d,-. d-. 
 % mesures 66 à 70
-	c'( a) d,-._\sempredim d-. c'( a) d,-. d-. bes'( g) c,-. c-.
+	c'( a) d,-.-\offset X-offset #-2 _\sempredim d-. c'( a) d,-. d-. bes'( g) c,-. c-.
 	f4\pp_\( cis!16( d32) r e16( f!32) r b,4\)
-	ees4_\( b16( c32) r d16( ees!32) r a,16 bes b c\)
+	\shape #'((0 . 0)(0 . 0.3)(0 . 0.5)(0 . 0)) PhrasingSlur ees4_\( b16( c32) r d16( ees!32) r a,16 bes b c\)
 	d16( e8\< d16~ d e8 d16~ d e8 d16)\!
 	e8 r r4 r
 % mesures 71 à 75
 	e16(\mf e' fis,\< e') gis,( e' a, e') b( e cis e)\!
 	d( cis b d) d4.(\< cis8)\!
-	\tuplet 6/4 4 {b16(\ff fis b fis b fis) b16( fis b fis b fis) b16( fis b fis b fis)
+	\tuplet 6/4 4 {\tupletOffset #-3 b16(\ff fis b fis b fis) \tupletOffset #-3 b16( fis b fis b fis) \tupletOffset #-3 b16( fis b fis b fis) \tupletNeutral
 	ais( e ais e ais e) ais( e ais e ais e) ais( e ais e ais e)} 
 	<< <b eis>2:32 {s4 s_\dimmarkup} >> <b e>4:32
 % mesures 76 à 80
 	a'8(_\pdim b cis) fis,( g a)
 	e(\> fis g) cis,( d e)\! \mark \default
 	<d_~ f>2.\pp^(
-	<< <d fis!>) {s4\< s s\!} >>
+	<< <d fis!>) {\hairpinShorten #'(0 . -2) s4\< s s\!} >>
 	r16 <b gis'>8\f <b gis'>16 r16 <b gis'>8 <b gis'>16 r <b eis>8 <b eis>16
 % mesures 81 à 85
 	r16 fis'8 fis16 r <cis fis>8 <cis fis>16 r <a fis'>8 <a fis'>16
@@ -110,7 +110,7 @@ musicViolinIIMvtII = \relative c {
 	r <fis' a>8\pp <fis a>16 r <fis a>8 <fis a>16 r <fis a>8 <fis a>16 
 	r fis8 fis16 r <a, fis'>8 <a fis'>16 r <d fis>8 <d fis>16
 % mesures 86 à 90
-	r <gis, eis'>8 <gis eis'>16_\crescmarkup r <b fis'>8 <b fis'>16 r <gis fis'>8 <gis fis'>16 
+	r <gis, eis'>8 <gis eis'>16-\offset X-offset #-2 _\crescmarkup r <b fis'>8 <b fis'>16 r <gis fis'>8 <gis fis'>16 
 	r <gis eis'>8\< <gis eis'>16 r <ais fis'>8\! <ais fis'>16\> r <d fis>8 <d fis>16\!
 	\tuplet 6/4 4 {r8 cis16(\pp fis gis a) r8 cis,16( fis gis a) r8 cis,16( fis gis a)
 	r8 d,16( fis gis a) r8 d,16( fis gis a) r8 cis,16( fis gis a)
@@ -120,7 +120,7 @@ musicViolinIIMvtII = \relative c {
 	r8 cis16( fis gis a) r8 b,16( fis' gis a) r8 a,16( fis' gis a)
 	r8 a,16( fis' gis a) r8 a,16( fis' gis a) r8 a16\(( gis) gis( fis)\)
 	r8 b,16( cis d fis) r8 b,16( cis d f) r8 b,16( d cis eis)
-	r8 b16( cis eis gis) r8 b,16( cis eis gis) r8 d'16\pp( cis) cis( b)} \mark \default
+	r8 b16( cis eis gis) r8 b,16( cis eis gis) \tupletOffset #3.3 r8 \beamOffset #'(0.3 . 0.3) d'16-\offset X-offset #-0.5 \pp( cis) cis( b)} \mark \default
 % mesures 96 à 100
 	fis'2.:32
 	a:
@@ -129,7 +129,7 @@ musicViolinIIMvtII = \relative c {
 	a32(\pp[ e') e( b)] b([ cis) cis( gis)] gis([ a) a( dis,)] dis([ e) e( bis)] bis([ cis) cis( gis)] gis([ a) a( e)]
 % mesures 101 à 105
 	e4~(\<^\fourthcorda e16 a)\! a(\> e)\! \acciaccatura e8 d8.\!( cis16)
-	cis2\espressivo b8.( a16)
+	cis2-\offset X-offset #1.3 \espressivo b8.( a16)
 	a4(\< cis'8 a)\! cis16(_\crescmarkup b a gis)
 	\acciaccatura a8 gis8.\f( fis16) fis8. r16 r8. fis16\p
 	<<{fis4( e'4._\crescmarkup d8)} \\ {fis,2.}>>
@@ -159,13 +159,13 @@ musicViolinIIMvtII = \relative c {
 	r8 b32(\pp[ a gis a]~ a8) b32( a gis a~ a8) b32( a gis a)
 % mesures 126 à 130
 	r8 cis32( b ais b~ b8) cis32( b ais b~ b8) cis32( b ais b) 
-	b( a! gis a b a gis a) cis(\< a gis a cis a gis a) d( cis) cis( b)\! b( gis) gis( a)
+	\setBeamTriple b( a! gis a b a gis a) cis(\< a gis a cis a gis a) \stemUp d( cis) cis( b)\! b( gis) gis( a) \stemNeutral
 	b(\f a gis fis)\> r8 b32( a gis fis) r8 a32(\! gis fis eis) r8 \mark \default
 	<d d'>2.\p
 	g'2\pp~ g16\< fis32( g a g fis g)\!
 % mesures 131 à 135
-	cis,32\mf( b) b( a) a( gis!) gis( fis) cis'( b) b( a) a( gis) gis( fis) d'(\< cis) cis( b) b( gis) gis( a)\!
-	r8 b32(\f a gis fis~ fis8) b32(_\dimmarkup a gis fis~ fis16 gis) a32( gis fis eis) 
+	cis,32\mf( b) b( a) a( gis!) gis( fis) cis'( b) b( a) a( gis) gis( fis) \stemUp d'(\< cis) cis( b) b( gis) gis( a)\! \stemNeutral
+	r8 b32(\f a gis fis~ fis8) b32(-\tweak extra-offset #'(-1 . 0.8) _\dimmarkup a gis fis~ fis16 gis) a32( gis fis eis) \unsetBeamTriple
 	fis16_\ppsempre r cis' r fis r gis r a r a r
 	gis4( cis,-> fis8 a)
 	gis4( cis,-> fis8 a)

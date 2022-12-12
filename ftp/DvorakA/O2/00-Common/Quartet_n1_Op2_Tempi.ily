@@ -85,8 +85,15 @@ tempiPartMvtI = {
 	}
 }
 tempiPartMvtII = {
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
 		\tempo "Andante affettuoso ed appassionato"
+	}
+	\tag #'(violinII) {
+		\tempo \markup {
+			\column {
+				\lower #1 "Andante affettuoso" "ed appassionato"
+			}
+		}
 	}
 	s2.*35 s2
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -178,7 +185,15 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 330
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI viola cello) {
 		\tempo "Tempo I, Allegro animato" 
+	}
+	\tag #'(violinII) {
+		\tempoXoffset #1 \tempoExtraOffset #'(0 . -1)
+		\tempo \markup {
+			\column {
+				\lower #1 "Tempo I," \medium \italic "Allegro animato"
+			}
+		}
 	}
 }

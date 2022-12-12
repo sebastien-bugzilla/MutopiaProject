@@ -28,6 +28,7 @@ pocoritardando = \markup {\italic {poco ritardando}}
 pocorit = \markup {\italic {poco rit.}}
 pocosostenuto = \markup {\italic {poco sostenuto}}
 rit = \markup {\italic rit.}
+sempre = \markup {\italic {sempre}}
 sempredim = \markup {\italic {sempre dim.}}
 semprestacc = \markup {\italic {sempre stacc.}}
 simile = \markup {\italic simile}
@@ -109,6 +110,14 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	\concat { 
 		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \sharp  
+	}
+}
+
+trillflat = \markup { 
+	\general-align #X #CENTER 
+	\concat { 
+		\hspace #2.4 \musicglyph #"scripts.trill" 
+		\translate #'(0.5 . 0.49) \tiny \flat 
 	}
 }
 
@@ -207,6 +216,27 @@ tempoXoffset = #(define-music-function
 	#}
 )
 
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
+mmrMinLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.minimum-length = #length
+	#}
+)
+
+tempoExtraOffset = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
+
 %whiteoutDynamic = {
 %	\once \override DynamicText.whiteout = ##t
 %	\once \override DynamicText.whiteout-style = #'outline
@@ -239,10 +269,6 @@ tempoXoffset = #(define-music-function
 %	#}
 %)
 
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
-
 %dynSpanYoffset = #(define-music-function
 %	(offset)
 %	(number?)
@@ -259,11 +285,4 @@ tempoXoffset = #(define-music-function
 %	#}
 %)
 
-%tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
 
