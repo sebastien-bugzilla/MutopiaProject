@@ -74,7 +74,7 @@ musicViolaMvtII = \relative c {
 	r8 gis r e'\< r <e b'>\!
 	<d e>4:32_\crescmarkup \tuplet 6/4 4 {e16(\prall d) d(\prall cis) cis(\prall b) b8\< b16(\prall a) a(\prall gis)\!} \mark \default
 % mesures 56 à 60
-	<e cis'>16->\ff <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> 
+	\beamOffset #'(0.8 . 0.8) <e cis'>16->-\offset X-offset #-1.5 \ff <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> 
 	<e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> 
 	<e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <e cis'>-> <e' a>-> <e a>-> <e, cis'>-> <fis d'>-> <fis' a>-> <fis a>-> <fis, d'>-> 
 	e'8\<( fis gis a) \tuplet 3/2 {b( cis d)\!}
@@ -86,7 +86,7 @@ musicViolaMvtII = \relative c {
 	f'( e d b~\! b)\f b\prall( a b)\> b( e) e-. e-.\!
 	e2(\p d4)
 % mesures 66 à 70
-	d2(_\sempredim c4)
+	d2(-\offset X-offset #-2 _\sempredim c4)
 	b4_\(\pp f cis16( d32) r e16( f!32)\) r
 	a4( ees c16 cis d dis)
 	e!16 d''!8\< e,, d'' e,, d''( e,,16)\!

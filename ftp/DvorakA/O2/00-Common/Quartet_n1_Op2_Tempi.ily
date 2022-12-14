@@ -60,7 +60,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 58
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI violinII cello) {
+		\tempo \markup {
+			\medium \italic "rit." 
+		}
+	}
+	\tag #'(viola) {
+		\tempoExtraOffset #'(0 . -0.4)
 		\tempo \markup {
 			\medium \italic "rit." 
 		}

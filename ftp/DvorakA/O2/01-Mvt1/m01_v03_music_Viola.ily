@@ -46,7 +46,7 @@ musicViolaMvtI = \relative c' {
 		d\fp d' d, d d d d d d d d d 
 % mesures 31 à 35
 		gis,\fp gis' gis, gis gis gis gis gis gis gis gis gis
-		cis'\fp cis, cis cis cis cis cis'\fp cis, cis cis cis cis
+		cis'-\offset X-offset #-1 \fp cis, cis cis cis cis cis'\fp cis, cis cis cis cis
 		cis'\fp cis, cis cis cis cis cis4.:16\p
 		<a d>2.:\pp
 		gis4.:\fp fisis:\fp
@@ -63,16 +63,16 @@ musicViolaMvtI = \relative c' {
 		d2.:16
 		dis:\fz
 % mesures 46 à 50
-		dis,:\fz
+		dis,:-\tweak extra-offset #'(0.8 . 0.5) \fz
 		e4.\fz fis8-> e-> dis->
 		<e cis'>2.~
 		<e cis'>
-		cis'4.( a_\dimmarkup)
+		cis'4.( a-\offset X-offset #-1 _\dimmarkup)
 % mesures 51 à 55
 		gis8\p( b e) dis16( cis b a) a8-. \mark \default 
 		gis2._\ppsempre
 		b
-		c4.(\< b)\!
+		\once \stemUp c4.(\< b)\!
 		a\pp~ a8 a-. a-.
 % mesures 56 à 60
 		gis2.:16
@@ -91,7 +91,7 @@ musicViolaMvtI = \relative c' {
 		r r a a4( c8)
 		b'4.\p\<~ b4 gis8\!
 		fis8(\> e cis\! b4.)
-		ais4( b8) fis4.\<~
+		ais4( b8) \hairpinShorten #'(-0.3 . -1) fis4.\<~
 % mesures 71 à 75
 		fis8\! r r r4 r8
 		b'4.\pp~ b4 gis8-.
@@ -105,7 +105,7 @@ musicViolaMvtI = \relative c' {
 		gis'4( fis8) e16( gis fis e dis cis)
 		dis4( cis8) bis4.->
 % mesures 81 à 85
-		gis4( fis8)\> e16( gis fis e dis e)\!
+		gis4( fis8)-\tweak extra-offset #'(0 . 0.3) \> \shape #'((0 . 0.2)(0 . 0.7)(0 . 0.7)(0 . 0.2)) Slur e16( gis fis e dis e)\!
 		fis4._\fsempre cis'^~
 		cis8 fis,-> gis-> ais4.-> \mark \default
 		b\f dis4( e8)
@@ -139,7 +139,7 @@ musicViolaMvtI = \relative c' {
 		dis,-> gis->
 		a4.~ a8 b-! cis-!
 		a4( gis8) fis( dis e)
-		e2.~\>
+		e2.~-\tweak extra-offset #'(0 . 0.5) \>
 % mesures 111 à 115
 		e4 dis8-. dis4( dis'8)\!
 		r r <gis, e'>8\p-. q4(-- q8)-.
@@ -158,7 +158,7 @@ musicViolaMvtI = \relative c' {
 % mesures 121 à 125
 			gis8 e e e16 e e e e8
 			d' b d~ d b16( cis) d8~
-			d \tuplet 3/2 {ais16( b cis)} d8~ d16\< fis( e d cis b)\!
+			d \once \tupletDown \tuplet 3/2 {ais16( b cis)} d8~ d16\< fis( e d cis b)\!
 		}
 		{
 			e,8\pp( dis e) e4( cis16 dis)
@@ -178,7 +178,7 @@ musicViolaMvtI = \relative c' {
 	c2.~
 % mesures 131 à 135
 	c2.
-	c4.\pp( d
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur c4.\pp( d
 	e f)~
 	f( g
 	a bes)~
@@ -201,7 +201,7 @@ musicViolaMvtI = \relative c' {
 	a4.\fz~ a8 g-^ f-^
 	e4\f e'8 e,4\fz e'8
 % mesures 151 à 155
-	e,4\fz e'8 e,4\fz e'8
+	e,4-\tweak extra-offset #'(0.5 . 0.5) \fz e'8 e,4-\tweak extra-offset #'(0.5 . 0.5) \fz e'8
 	e2.:16\fp
 	fis:\fp
 	e:\fp
@@ -213,9 +213,9 @@ musicViolaMvtI = \relative c' {
 	a4->( gis16 a) b( a gis a gis fis)
 	fis8->( e) dis-. e(-> dis) e-.
 % mesures 161 à 165
-	gis,4->( fisis32 gis a gis gis'8) fisis16( gis a gis)
+	\shape #'((0 . 2.1)(0 . 0.5)(0 . 0)(0 . 0)) Slur gis,4->( fisis32 gis a gis gis'8) fisis16( gis a gis)
 	fis8->( e) dis-. e(-> fis) gis-.
-	b,4->( ais32 b cis b b'8) ais16( b cis b)
+	\shape #'((0 . 2.5)(0 . 0.5)(0 . 0)(0 . 0)) Slur b,4->( ais32 b cis b b'8) ais16( b cis b)
 	<d,! a'!>2._\ppsempre~
 	<d a'>
 % mesures 166 à 170
@@ -226,7 +226,7 @@ musicViolaMvtI = \relative c' {
 	c4.(_\crescmarkup d)
 % mesures 171 à 175
 	c8(\< f, g) bes4( a8)\!
-	a16\f a' a, a' a, a' a, a' a, a' a, a' 
+	\beamOffset #'(0.5 . 0.5) a16-\offset X-offset #-1.7 \f a' a, a' a, a' a, a' a, a' a, a' 
 	a, a' a, a' a, a' a, a' a, a' a, a' 
 	\tuplet 3/2 {g,16( a g} fis8 e) \tuplet 3/2 {g16( a g} fis8 e) 
 % mesures 176 à 180
@@ -269,7 +269,7 @@ musicViolaMvtI = \relative c' {
 % mesures 206 à 210
 	b b4( a8)
 	a4(\< gis8) e'4->( e,8)\!
-	a8_\fsempre a, a'~ a a, a'~ 
+	\beamOffset #'(0.5 . 0.5) a8-\tweak extra-offset #'(-2 . 0.6) _\fsempre a, a'~ a a, a'~ 
 	a a, a'~ a a, a'~ 
 	a a, a'~ a a, a'~ 
 % mesures 211 à 215
@@ -376,7 +376,7 @@ musicViolaMvtI = \relative c' {
 	gis4-> e8~ e e'-. e,-.
 % mesures 296 à 300
 	e-. cis-. a^~ a e-. cis-.
-	d4( cis16 d) d8( e_\dimmarkup) fis-. 
+	d4( cis16 d) d8( e-\tweak extra-offset #'(0 . 0.7) _\dimmarkup) fis-. 
 	d4( cis16 d) d8( e) f-. 
 	e4.\p e''4( cis8)
 	b( a fis) e4.
@@ -402,12 +402,12 @@ musicViolaMvtI = \relative c' {
 	b8 a-! gis-! fis-! e-! d-!
 	d-.\f d-. cis16( d) e( f e d c b)
 	d8-. d-. cis!16( d) e( f e d c b)
-	d(\pp e f g a8) \flattrill \afterGrace a4._(\startTrillSpan {g16[ a]\stopTrillSpan)}
-	d,16( e f g a8) \flattrill \afterGrace a4._(\startTrillSpan {g16[ a]\stopTrillSpan)}
+	d(\pp e f g a8) \afterGrace a4._(^\trillflat {g16[ a])}
+	d,16( e f g a8) \afterGrace a4._(^\trillflat {g16[ a])}
 % mesures 321 à 325
 	gis!2.(\<
 	d8)\! r r r4 r8
-	r8 r e'\f e4( cis8)
+	r8 r \dynEO #'(0 . 1) e'\f e4( cis8)
 	b( a) fis-. e4.
 	e2.
 % mesures 326 à 330

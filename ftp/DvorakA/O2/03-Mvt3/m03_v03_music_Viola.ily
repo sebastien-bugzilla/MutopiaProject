@@ -63,7 +63,7 @@ musicViolaMvtIII = \relative c {
 		<e, d'>2.\p~
 		<e d'>~
 % mesures 46 à 50
-		<e d'>2 d4\fz
+		<e d'>2 d4-\tweak extra-offset #'(0 . 0.3) \fz
 		cis\f g'2->
 		fis2.~
 		fis4 b( a8 gis)
@@ -93,10 +93,10 @@ musicViolaMvtIII = \relative c {
 		gis,(\> fis d'!)\!
 		cis2\pp\>( d4
 % mesures 71 à 75
-		b\! cis) r^\fine
+		b\! cis) r \markFine \break
 	}
 	\repeat volta 2 {
-		cis'4._\pespressione^"TRIO"( fis,8-. fis4-.)
+		cis'4._\pespressione-\offset X-offset #-6 ^\trio( fis,8-. fis4-.)
 		eis2.
 		cis'4.( eis,8-. eis4-.)
 		fis2.
@@ -108,7 +108,7 @@ musicViolaMvtIII = \relative c {
 	}
 	\alternative {
 		{
-			d,2_\pppocomarc-> a'4~->
+			d,2_\pppocomarc^> a'4~->
 % mesures 81 à 85
 			a e2->
 			fis-> d'4->~
@@ -194,5 +194,5 @@ musicViolaMvtIII = \relative c {
 	e4)_\dimmarkup g8( fis e d)
 	cis(\p d e d cis d)
 	cis( b a4) b8( a
-	g a) b4(->\f^\dacapo cis) \bar "||"
+	g a) b4(->\f cis) \markDSalfine \bar "||"
 }

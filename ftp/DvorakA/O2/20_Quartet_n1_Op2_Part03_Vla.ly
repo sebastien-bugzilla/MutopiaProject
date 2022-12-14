@@ -19,7 +19,7 @@
 \include "./00-Common/Quartet_n1_Op2_timeMvt.ily"
 \include "./00-Common/Quartet_n1_Op2_LayoutParts.ily"
 \include "./00-Common/Quartet_n1_Op2_Shortcuts.ily"
-%\include "./00-Common/Quartet_n1_Op2_Format_Part03_Viola.ily"
+\include "./00-Common/Quartet_n1_Op2_Format_Part03_Viola.ily"
 \include "./00-Common/Quartet_n1_Op2_Tempi.ily"
 \include "./01-Mvt1/m01_v03_music_Viola.ily"
 \include "./02-Mvt2/m02_v03_music_Viola.ily"
@@ -45,9 +45,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtI
-%			}
+			\new Voice {
+				\formatViolaMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtI
 			}
@@ -70,9 +70,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtII
-%			}
+			\new Voice {
+				\formatViolaMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtII
 			}
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIII
-%			}
+			\new Voice {
+				\formatViolaMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIII
 			}
@@ -106,7 +106,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -120,9 +120,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIV
-%			}
+			\new Voice {
+				\formatViolaMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIV
 			}
@@ -131,7 +131,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
