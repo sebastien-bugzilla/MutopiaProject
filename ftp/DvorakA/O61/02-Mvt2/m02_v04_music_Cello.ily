@@ -1,15 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/14-DvorakQuatuor11/02_DvorakQuatuor11_Mvt2_Voix4.ly
-%Fichier généré le :  samedi 27 octobre 2018, 21:30:34 (UTC+0200)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   2   -   V O I X   4               #
-%#######################################################################
-MvtDeuxVoixQuatre = \relative c, {
-	\set Staff.instrumentName = #"Cello"
+%  work        : String Quartet No. 11 in C Major, Op. 61
+%  typesetter  : Sébastien MANEN
+%  date        : Thursday 15 December 2022, 20:07
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicCelloMvtII = \relative c, {
+	\key f \major
 	\clef bass
-	\override TupletBracket #'bracket-visibility = ##f
 % mesures 1 à 5
 	f4(\pp~ \times 2/3 {f8 c' f} f,4~ \times 2/3 {f8 bes d)}
 	f,4(\< \times 2/3 {d8 a' d)} bes4(\> \times 2/3 {c,8 g' c)\!}

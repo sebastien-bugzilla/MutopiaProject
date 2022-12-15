@@ -1,181 +1,145 @@
-%Fichier : /media/Documents/Partitions/lilypond/14-DvorakQuatuor11/00_DvorakQuatuor11_Voix3.ly
-%Fichier généré le :  samedi 27 octobre 2018, 21:30:35 (UTC+0200)
-%#######################################################################
-%#             G E N E R A L I T E S   E T   E N T E T E               #
-%#######################################################################
-\paper {
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { \fromproperty #'header:dedication }
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-%-----------------------------------------------------------------------
-globalMvtUn = {
-	\version "2.18.2"
-	\time 4/4
-	\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
-	\tempo "Allegro" 4 = 60
-	\set Score.doubleRepeatType = #":|.|:"
-}
-%-----------------------------------------------------------------------
-globalMvtDeux = {
-	\version "2.18.2"
-	\time 4/4
-	\key f \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
-	\tempo "Poco adagio e molto cantabile" 4 = 50
-	\set Score.doubleRepeatType = #":|.|:"
-}
-%-----------------------------------------------------------------------
-globalMvtTrois = {
-	\version "2.18.2"
-	\time 3/4
-	\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
-	\tempo "Allegro vivo" 4 = 150
-	\set Score.doubleRepeatType = #":|.|:"
-}
-%-----------------------------------------------------------------------
-globalMvtQuatre = {
-	\version "2.18.2"
-	\time 2/4
-	\key c \major
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\compressFullBarRests
-	\tempo "Vivace" 4 = 130
-	\set Score.doubleRepeatType = #":|.|:"
-}
-%-----------------------------------------------------------------------
-\include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_DvorakQuatuor11_Mvt1_Voix3.ly"
-\include "02_DvorakQuatuor11_Mvt2_Voix3.ly"
-\include "03_DvorakQuatuor11_Mvt3_Voix3.ly"
-\include "04_DvorakQuatuor11_Mvt4_Voix3.ly"
-%#######################################################################
-%#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
-%#######################################################################
-\book{
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Antonín Dvořák (1841 - 1904)
+%  work               : String Quartet No. 11 in C Major, Op. 61
+%  Source             : Berlin: N. Simrock, n.d.[1882]. Plate 8281. 
+%  Type of score      : Score part for Viola
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Thursday 15 December 2022, 20:07
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/Quartet_n11_Op61_Header.ily"
+\include "./00-Common/Quartet_n11_Op61_PaperParts.ily"
+\include "./00-Common/Quartet_n11_Op61_timeMvt.ily"
+\include "./00-Common/Quartet_n11_Op61_LayoutParts.ily"
+\include "./00-Common/Quartet_n11_Op61_Shortcuts.ily"
+%\include "./00-Common/Quartet_n11_Op61_Format_Part01_ViolinI.ily"
+\include "./00-Common/Quartet_n11_Op61_Tempi.ily"
+\include "./01-Mvt1/m01_v03_music_Viola.ily"
+\include "./02-Mvt2/m02_v03_music_Viola.ily"
+\include "./03-Mvt3/m03_v03_music_Viola.ily"
+\include "./04-Mvt4/m04_v03_music_Viola.ily"
+%###############################################################################
+%#                          S C O R E   S E C T I O N                          #
+%###############################################################################
+\book {
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Anton Dvorak"
-				"1841 - 1904"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Quatuor à corde n°11 en Do Majeur"
-				"Op61"
+				"Part for Viola"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Alto"
-			}
+		subsubtitle = \markup { 
+			"Antonín Dvořák — String Quartet No. 11 in C Major, Op. 61"
+		}
+		instrument = \markup {
+			"Viola"
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtUn \MvtUnVoixTrois >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatViolaMvtI
+%			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \musicViolaMvtI
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					I
 				}
 			}
 		}
 		\layout {
-			#(layout-set-staff-size 19)
+			\layoutPart
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtDeux \MvtDeuxVoixTrois >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatViolaMvtII
+%			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \musicViolaMvtII
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					II
 				}
 			}
 		}
 		\layout {
-			#(layout-set-staff-size 19)
+			\layoutPart
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtTrois \MvtTroisVoixTrois >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatViolaMvtIII
+%			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \musicViolaMvtIII
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					III
 				}
 			}
 		}
 		\layout {
-			#(layout-set-staff-size 19)
+			\layoutPart
 		}
 	}
 	\score {
-		{
-			\new Staff << \globalMvtQuatre \MvtQuatreVoixTrois >>
-		}
+		\new Staff <<
+%			\new Voice {
+%				\formatViolaMvtIV
+%			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \musicViolaMvtIV
+			}
+		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					IV
 				}
 			}
 		}
 		\layout {
-			#(layout-set-staff-size 19)
+			\layoutPart
 		}
 	}
 }

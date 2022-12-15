@@ -1,15 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/14-DvorakQuatuor11/02_DvorakQuatuor11_Mvt2_Voix2.ly
-%Fichier généré le :  samedi 27 octobre 2018, 21:30:34 (UTC+0200)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   2   -   V O I X   2               #
-%#######################################################################
-MvtDeuxVoixDeux = \relative c' {
-	\set Staff.instrumentName = #"Violin II"
+%  work        : String Quartet No. 11 in C Major, Op. 61
+%  typesetter  : Sébastien MANEN
+%  date        : Thursday 15 December 2022, 20:07
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolinIIMvtII = \relative c' {
+	\key f \major
 	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
 % mesures 1 à 5
 	r2 r8 d(\p g4)
 	f2\<(~ f8.\> e32 d e8. d32 c)\!

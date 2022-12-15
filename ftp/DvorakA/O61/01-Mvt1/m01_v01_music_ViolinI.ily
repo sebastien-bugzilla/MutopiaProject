@@ -1,15 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/14-DvorakQuatuor11/01_DvorakQuatuor11_Mvt1_Voix1.ly
-%Fichier généré le :  samedi 27 octobre 2018, 21:30:34 (UTC+0200)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   1   -   V O I X   1               #
-%#######################################################################
-MvtUnVoixUne = \relative c''' {
+%  work        : String Quartet No. 11 in C Major, Op. 61
+%  typesetter  : Sébastien MANEN
+%  date        : Thursday 15 December 2022, 20:07
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolinIMvtI = \relative c''' {
 	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
-    \set Staff.instrumentName = #"Violin I"
+	\key c \major
     \repeat volta 2 {
 % mesures 1 à 5
 	    g2_\pespressivo e4.( f8)

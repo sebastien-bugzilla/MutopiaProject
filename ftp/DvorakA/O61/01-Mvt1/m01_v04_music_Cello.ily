@@ -1,15 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/14-DvorakQuatuor11/01_DvorakQuatuor11_Mvt1_Voix4.ly
-%Fichier généré le :  samedi 27 octobre 2018, 21:30:34 (UTC+0200)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   1   -   V O I X   4               #
-%#######################################################################
-MvtUnVoixQuatre = \relative c {
-	\set Staff.instrumentName = #"Cello"
+%  work        : String Quartet No. 11 in C Major, Op. 61
+%  typesetter  : Sébastien MANEN
+%  date        : Thursday 15 December 2022, 20:07
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicCelloMvtI = \relative c {
 	\clef bass
-	\override TupletBracket #'bracket-visibility = ##f
+	\key c \major
 	\repeat volta 2 {
 % mesures 1 à 5
 	    R1*4

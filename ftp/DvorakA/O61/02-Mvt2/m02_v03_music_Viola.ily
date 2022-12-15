@@ -1,15 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/14-DvorakQuatuor11/02_DvorakQuatuor11_Mvt2_Voix3.ly
-%Fichier généré le :  samedi 27 octobre 2018, 21:30:34 (UTC+0200)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   2   -   V O I X   3               #
-%#######################################################################
-MvtDeuxVoixTrois = \relative c {
-	\set Staff.instrumentName = #"Alto"
+%  work        : String Quartet No. 11 in C Major, Op. 61
+%  typesetter  : Sébastien MANEN
+%  date        : Thursday 15 December 2022, 20:07
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolaMvtII = \relative c {
+	\key f \major
 	\clef alto
-	\override TupletBracket #'bracket-visibility = ##f
 % mesures 1 à 5
 	\times 2/3 {r8 c(\pp f} a4~ \times 2/3 {a8 d, f} d'4~
 	\times 2/3 {d8)(\< c f,} a4)\! \times 2/3 {r8\> d,( g} bes4)\!
