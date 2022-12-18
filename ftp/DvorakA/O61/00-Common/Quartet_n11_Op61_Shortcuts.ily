@@ -5,19 +5,19 @@
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
 arco = \markup {\italic arco}
-crescendo = \markup {\italic crescendo}
+%crescendo = \markup {\italic crescendo}
 crescmarkup = \markup {\italic cresc.}
 dimmarkup = \markup {\italic dim.}
 dolce = \markup {\italic {dolce}}
 fdim = \markup {\dynamic f \italic dim.}
-feroce = \markup {\italic feroce}
+ffferoce = \markup {\dynamic ff \italic feroce}
 intempo = \markup {\italic {in tempo}}
 mfcresc = \markup { \dynamic mf \italic cresc.}
 morendo = \markup {\italic {morendo}}
 pcresc = \markup { \dynamic p \italic cresc.}
 pdim = \markup { \dynamic p \italic dim.}
 pizz = \markup {\italic pizz.}
-pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
+%pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
 pocoapocostring = \markup {\italic {poco a poco string}}
 ppmorendo = \markup { \dynamic pp \italic {morendo}}
 pppnonlegato = \markup { \dynamic ppp \italic {non legato}}
@@ -29,8 +29,22 @@ semprecresc = \markup {\italic {sempre cresc.}}
 tranquillo = \markup {\italic tranquillo}
 pespress = \markup { \dynamic p \italic espress.}
 pespressivo = \markup { \dynamic p \italic espressivo}
-
+fzdim= \markup {\dynamic fz \italic dim.}
 ffz = #(make-dynamic-script "ffz")
+
+pocoapococrescendo = #(
+	make-music 'CrescendoEvent
+	'span-direction START
+	'span-type 'text
+	'span-text "poco a poco crescendo"
+)
+
+crescendo = #(
+	make-music 'CrescendoEvent
+	'span-direction START
+	'span-type 'text
+	'span-text "crescendo"
+)
 
 
 
@@ -70,4 +84,22 @@ pocoapocoritard = \markup {\italic {poco a poco ritard.}}
 ppocomarcato = \markup { \dynamic p \italic {poco marcato}}
 semprepiup = \markup {\italic {sempre più} \dynamic p}
 unpocomenomosso = \markup {\bold {Un poco meno mosso.}}
+
+
+
+trillflat = \markup { 
+	\general-align #X #CENTER 
+	\concat { 
+		\hspace #2.4 \musicglyph #"scripts.trill" 
+		\translate #'(0.5 . 0.49) \tiny \flat 
+	}
+}
+
+trillsharp = \markup { 
+	\general-align #X #CENTER 
+	\concat { 
+		\hspace #2.53 \musicglyph #"scripts.trill" 
+		\translate #'(0.4 . 1.05) \tiny \sharp 
+	}
+}
 

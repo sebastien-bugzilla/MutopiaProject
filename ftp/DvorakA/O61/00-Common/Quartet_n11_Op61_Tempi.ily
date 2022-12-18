@@ -6,6 +6,32 @@
 %###############################################################################
 tempiMvtI = {
 	\tempo "Allegro"
+	s1*65
+	\tempo "rit." % bar 65
+	s1*3
+	\tempo "in tempo" % bar 69
+	s1*24
+	\tempo "tranqillo" % bar 93
+	s1*121 s2
+	\tempo "ritard" % bar 208.5
+	s2 s1
+	\tempo "in tempo" % bar 210
+	s1*19
+	\tempo "ritard." % bar 229
+	s1*3
+	\tempo "in tempo" % bar 232
+	s1*62
+	\tempo "rit." % bar 294
+	s1
+	\tempo "in tempo" % bar 295
+	s1*2
+	\tempo "poco a poco string." % bar 297
+	s1*4
+	\tempo "Vivace." % bar 301
+	s1*4
+	\tempo "Tempo I." % bar 305
+	s1*13
+	\tempo "ritard." % bar 318
 }
 tempiMvtII = {
 	\tempo "Poco adagio e molto cantabile" 4 = 50
