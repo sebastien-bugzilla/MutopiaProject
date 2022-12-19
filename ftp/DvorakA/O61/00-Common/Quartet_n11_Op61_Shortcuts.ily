@@ -56,7 +56,7 @@ stringendo = \markup {\italic stringendo}
 sulG = \markup {sul G.}
 ten = \markup {\italic {ten.}}
 ppsempre = \markup { \dynamic pp \italic {sempre}}
-
+espressivoM = \markup {\italic espressivo}
 
 
 fine = \markup {\italic Fine}

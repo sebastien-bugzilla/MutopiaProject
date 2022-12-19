@@ -35,6 +35,10 @@ tempiMvtI = {
 }
 tempiMvtII = {
 	\tempo "Poco adagio e molto cantabile" 4 = 50
+	s1*12 s4
+	\tempo "stringendo" % bar 13.25
+	s2.
+	\tempo "a tempo"
 }
 tempiMvtIII = {
 	\tempo "SCHERZO - Allegro vivo" 4 = 150
