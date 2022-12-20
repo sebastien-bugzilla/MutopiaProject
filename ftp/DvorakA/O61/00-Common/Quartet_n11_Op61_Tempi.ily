@@ -38,10 +38,16 @@ tempiMvtII = {
 	s1*12 s4
 	\tempo "stringendo" % bar 13.25
 	s2.
-	\tempo "a tempo"
+	\tempo "a tempo" % bar 14
 }
 tempiMvtIII = {
-	\tempo "SCHERZO - Allegro vivo" 4 = 150
+	\tempo "Allegro vivo" 4 = 150
+	s2.*84 s2*198
+	\tempo "poco a poco rit."
+	s2*9
+	\tempo "in tempo"
+	s2*2
+	\tempo "ritard"
 }
 tempiMvtIV = {
 	\tempo "Vivace" 4 = 130

@@ -46,25 +46,43 @@ crescendo = #(
 	'span-text "crescendo"
 )
 
+dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 
 
-
-atempo = \markup {\italic {a tempo}}
+%atempo = \markup {\italic {a tempo}}
 espress = \markup {\italic {espress.}}
 ppmoltoespress = \markup { \dynamic pp \italic {molto espress.}}
-stringendo = \markup {\italic stringendo}
+%stringendo = \markup {\italic stringendo}
 sulG = \markup {sul G.}
 ten = \markup {\italic {ten.}}
 ppsempre = \markup { \dynamic pp \italic {sempre}}
 espressivoM = \markup {\italic espressivo}
 
 
+
 fine = \markup {\italic Fine}
 fzmarkup = \markup {\dynamic fz}
 pdolce = \markup { \dynamic p \italic dolce.}
 pocoapocoritmarkup = \markup {\italic {poco a poco rit.}}
-scherzodcalfine = \markup { \right-align \italic {Scherzo D.C. al Fine}}
-
+attacca = \markup {\italic {attacca}}
+scherzodcalfine = {
+	\once \override TextScript.self-alignment-X = 1
+	s8_\markup {
+		\italic {Scherzo D.C. al Fine.}
+	}
+}
+markFine = {
+	\once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
+	\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+	\mark \markup {
+		\hspace #-4 \abs-fontsize #11 \italic "Fine"
+	}
+}
+trio = \markup {
+	\column { 
+		\bold { \lower #1.2 "TRIO." "L'istesso tempo." }
+	}
+}
 
 
 accel = \markup {\italic accel.}
@@ -100,6 +118,12 @@ trillsharp = \markup {
 	\concat { 
 		\hspace #2.53 \musicglyph #"scripts.trill" 
 		\translate #'(0.4 . 1.05) \tiny \sharp 
+	}
+}
+
+sharptrillspan = \once \override TrillSpanner.bound-details.left.text = \markup {
+	\concat { 
+		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \sharp  
 	}
 }
 
