@@ -63,7 +63,7 @@ espressivoM = \markup {\italic espressivo}
 fine = \markup {\italic Fine}
 fzmarkup = \markup {\dynamic fz}
 pdolce = \markup { \dynamic p \italic dolce.}
-pocoapocoritmarkup = \markup {\italic {poco a poco rit.}}
+%pocoapocoritmarkup = \markup {\italic {poco a poco rit.}}
 attacca = \markup {\italic {attacca}}
 scherzodcalfine = {
 	\once \override TextScript.self-alignment-X = 1
@@ -85,23 +85,23 @@ trio = \markup {
 }
 
 
-accel = \markup {\italic accel.}
-crescedaccel = \markup {\italic {cresc. ed accel.}}
+%accel = \markup {\italic accel.}
+%crescedaccel = \markup {\italic {cresc. ed accel.}}
 fcresc = \markup {\dynamic f \italic {cresc.}}
 fsemprecresc = \markup { \dynamic f \italic {sempre cresc.}}
 fzcresc= \markup {\dynamic fz \italic cresc.}
-grandioso = \markup {\italic grandioso}
-moltorit = \markup {\italic {molto rit.}}
+%grandioso = \markup {\italic grandioso}
+%moltorit = \markup {\italic {molto rit.}}
 mpespressivo = \markup { \dynamic mp \italic espressivo}
 pnonlegato = \markup { \dynamic p \italic {non legato}}
 pocoapococresc = #(make-music 'CrescendoEvent
              'span-direction START
              'span-type 'text
              'span-text "poco a poco cresc.")
-pocoapocoritard = \markup {\italic {poco a poco ritard.}}
+%pocoapocoritard = \markup {\italic {poco a poco ritard.}}
 ppocomarcato = \markup { \dynamic p \italic {poco marcato}}
 semprepiup = \markup {\italic {sempre più} \dynamic p}
-unpocomenomosso = \markup {\bold {Un poco meno mosso.}}
+%unpocomenomosso = \markup {\bold {Un poco meno mosso.}}
 
 
 

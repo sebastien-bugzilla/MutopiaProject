@@ -43,14 +43,34 @@ tempiMvtII = {
 tempiMvtIII = {
 	\tempo "Allegro vivo" 4 = 150
 	s2.*84 s2*198
-	\tempo "poco a poco rit."
+	\tempo "poco a poco rit." % bar 283
 	s2*9
-	\tempo "in tempo"
+	\tempo "in tempo" % bar 292
 	s2*2
-	\tempo "ritard"
+	\tempo "ritard" % bar 294
 }
 tempiMvtIV = {
 	\tempo "Vivace" 4 = 130
+	s2*334 s4
+	\tempo "ritard." % bar 335.5
+	s4 s2
+	\tempo "in tempo" % bar 337
+	s2*70
+	\tempo "grandioso." % bar 407
+	s2*28
+	\tempo "poco a poco ritard." % bar 435
+	s2*5
+	\tempo "Un poco meno mosso." % bar 440
+	s2*15
+	\tempo "ritard." % bar 455
+	s2*3
+	\tempo "accelerando" % bar 458
+	s2*3
+	\tempo "molto rit." % bar 461
+	s2*4
+	\tempo "Tempo I." % bar 465
+	s2*8
+	\tempo "cresc. ed accel." % bar 473
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #
