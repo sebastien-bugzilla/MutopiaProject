@@ -38,6 +38,7 @@ tempiMvtII = {
 	s1*12 s4
 	\tempo "stringendo" % bar 13.25
 	s2.
+	\tempoXoffset #-4
 	\tempo "a tempo" % bar 14
 }
 tempiMvtIII = {

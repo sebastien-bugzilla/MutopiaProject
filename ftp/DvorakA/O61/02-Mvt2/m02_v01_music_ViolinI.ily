@@ -36,7 +36,7 @@ musicViolinIMvtII = \relative c'' {
 	r8 ges( bes4~ bes8.) aes32( ges bes4)\!
 	r8 bes(\f ges'4~ ges8) f16( ees ges8 bes,)
 	r8 des8(~\> \tuplet 3/2 {des c-- bes--)} aes(-- g!--\! \tuplet 3/2 {ges--\p f-- e!--)}
-	r4 ges,(\pp f ees \bar "||" \key des \major
+	r4 ges,(\pp f ees \bar "||" \key des \major 
 % mesures 26 à 30
 	des!8) r r4 r2
 	R1*4
@@ -83,8 +83,8 @@ musicViolinIMvtII = \relative c'' {
 	f fis2 g4)~
 	g8(\pp gis a g f)_\crescmarkup e( d! a)
 	c( bes) r e,( a g) r bes,(\f\>[
-	f' e)\!] r g,([_\dimmarkup d' c)] r c \bar "||" \key f \major
-	r4 << <e, c'>2. {s4\p\> s s\!} >> \mark \default
+	f' e)\!] r g,([_\dimmarkup d' c)] r c \bar "||" \key f \major 
+	r4 << <e, c'>2. {s4\p\> s s\!} >> \mark \default 
 % mesures 66 à 70
 	r8 a8(\!_\ppmoltoespress c4~ c8.) bes32(\< a bes4~
 	bes8.) a32(\! g a4) g4.( a8)\>
@@ -122,7 +122,7 @@ musicViolinIMvtII = \relative c'' {
 	f4( bes)_\crescmarkup a( des)
 	c8(\f\< fes) ees( aes~ aes)\! g4(\> f8~
 % mesures 96 à 99
-	f) c(\p bes8. a!16~ a4)\> f4(~
+	f) c(\p bes8. a!16~ a4)\> f4(~\!
 	f2\pp~ f8 c bes8. a16)
 	a2-- a--
 	a1\fermata \bar "|."

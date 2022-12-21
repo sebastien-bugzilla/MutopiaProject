@@ -50,7 +50,7 @@ musicViolinIIMvtII = \relative c' {
 	c4 \tuplet 3/2 {r 8 f,(\> f')} f4(~ \tuplet 3/2 {f8 f, f')\!}
 	f4(~ \tuplet 3/2 4 {f8\pp e g) c,( c, c')} c4
 % mesures 36 à 40
-	c8 c,16(_\crescmarkup c')~ c4~ c8 c,16( c'~ c4)~
+	c8 c,16(_\crescmarkup c'~ c4)~ c8 c,16( c'~ c4)~
 	c~ c8_\dimmarkup bes aes( des4 c8)
 	\tuplet 3/2 {des8(\pp c des} bes16 des aes des) \tuplet 3/2 {ges,8( aes beses} aes16 des ges, des')
 	\tuplet 3/2 4 {aes8( f des beses'\< ges c,) ces'( aes f} des'16 beses g des)\!
@@ -111,7 +111,7 @@ musicViolinIIMvtII = \relative c' {
 	R1
 % mesures 86 à 90
 	r8 c,\pp( a'4~ a8. gis32 fis gis4)
-	r8 bes,( g'!4~ g8. fis32 eis fis4)
+	r8 bes,!( g'!4~ g8. fis32 eis fis4)
 	r8 aes,( f'!4~ f8. e!32 dis e8.) ees32( d
 	ees8.)_\crescmarkup d32( cis d8.) des32( c des8.) c32( b c8.) b32(_\dimmarkup ais
 	b16) bes(-. a-. aes-.) g8-.\p r b--\pp r r4

@@ -153,6 +153,15 @@ beamOffset = #(define-music-function
 	#}
 )
 
+tempoXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.X-offset = #offset
+	#}
+)
+
+
 %beamGap = #(define-music-function
 %	(gap)
 %	(number?)
@@ -198,14 +207,6 @@ beamOffset = #(define-music-function
 %	\unset baseMoment
 %	\unset beatStructure
 %}
-
-%tempoXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.MetronomeMark.X-offset = #offset
-%	#}
-%)
 
 %mmrnDown = {
 %	\once \override MultiMeasureRestNumber.direction = #-1 

@@ -9,7 +9,7 @@ musicCelloMvtII = \relative c, {
 	\clef bass
 % mesures 1 à 5
 	f4(\pp~ \tuplet 3/2 {f8 c' f} f,4~ \tuplet 3/2 {f8 bes d)}
-	f,4(\< \tuplet 3/2 {d8 a' d)\!} bes4(\> \tuplet 3/2 {c,8 g' c)\!}
+	f,4(\< \tuplet 3/2 {d8\! a' d)} bes4(\> \tuplet 3/2 {c,8 g' c)\!}
 	f,4~(_\dimmarkup \tuplet 3/2 {f8 c' f)} f,( a c4)
 	f,4~(\pp\< \tuplet 3/2 {f8 c' f)\!} c4( \tuplet 3/2 {c,8 g' c)}
 	d,4(~ \tuplet 3/2 {d8 a' fis')\>} g( g,~ \tuplet 3/2 {g bes d)\!}
