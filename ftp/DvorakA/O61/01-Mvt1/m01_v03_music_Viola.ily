@@ -43,10 +43,10 @@ musicViolaMvtI = \relative c' {
 		\acciaccatura <c,, g'>8 e'8.( g16) g8.( e16) e8.( d16) d8.( c16)
 		c2. \tuplet 3/2 {d8( e f)}
 		\tuplet 3/2 4 {f-.\fz e-. f-. e-. f-. e-.} f8 r r4 \mark \default
-		<a, e' a>8\f r16 a-. \tuplet 3/2 {a8( b cis-.)} d8 r16 e f8 r
+		<a, e' a>8\f r16 a-. \tuplet 3/2 {a8( b cis-.)} d8[ r16 e] f8 r
 % mesures 31 à 35
 		a,4\fp r8 a-. d-. d,-. r4
-		r8. c'16-.\f \tuplet 3/2 {c8(\< d e-.)} f8 r16 g a8\! r
+		r8. c'16-.\f \tuplet 3/2 {c8(\< d e-.)} f8[ r16 g] a8\! r
 		c,4\fp r8 c-. f-. f,-. r4
 		dis'4\pp( fis8 dis g c, e g)
 		fis4( dis8 fis g c, e g)
@@ -59,7 +59,7 @@ musicViolaMvtI = \relative c' {
 % mesures 41 à 45
 		b r r4 r2
 		<g, e' c'>8\ff r r4 r2
-		\tuplet 3/2 {f'8\f( aes) b-.} c8.-> d16 c8 r r4
+		\tuplet 3/2 {f'8\f( aes) b-.} c8.-> d16-. c8 r r4
 		r2 <c,, aes' f'>8 r r4
 		r4 \tuplet 3/2 4 {g'8(\p a) b-. <f b>( c') d-. d4( f8)
 % mesures 46 à 50
@@ -120,7 +120,7 @@ musicViolaMvtI = \relative c' {
 		g,8\pp r r8. f!16( ees8)[ r16 f(] ees8) r
 		r4 r8. a16( g8)[ r16 a(] g8) r \mark \default
 		g2\pp( g')\<
-		d4( g, e' g,)\!
+		d4( g, e'\! g,)
 		g'(\> fis8 g dis e b cis)\!
 % mesures 96 à 100
 		d!4( b8 g c!2)\pp
@@ -225,12 +225,12 @@ musicViolaMvtI = \relative c' {
 	q\f r r4 d'8-> g,-. r4 \mark \default
 	r2 \tuplet 3/2 {g'8-> g,-. g-.} r4
 	r g( a-> g)
-	r bes'8\fz g, r4 b'8\fz g,-.
+	r bes'8\fz g,-. r4 b'8\fz g,-.
 	r4 c'8\fz g,-. r4 cis'8\fz g,-.
 % mesures 171 à 175
 	d''8\fz g,,16 g g'-> g g, g g'-> g g, g g'-> g g, g
 	c'8\ff r r4 c,,16(-> d c d c d c d)
-	c( d c d c d c d) c16( d c d c d) r e
+	c( d c d c d c d) c16( d c d c d) r e-.
 	e1\fz 
 	<e g>->
 % mesures 176 à 180
@@ -249,7 +249,7 @@ musicViolaMvtI = \relative c' {
 	c4( f,!8 c')~ c g( ees c)
 	c'4( f,8 c')~ c g( ees c)\!
 	b\f r16 g \tuplet 3/2 {g8( a) b-.} b8[ r16 g'] \tuplet 3/2 {g8( a) b-.}
-	b r r4 r2 \mark \default
+	b-. r r4 r2 \mark \default
 	<g, e' c'>8\ff r r4 r2
 % mesures 191 à 195
 	\tuplet 3/2 {f'8\fz\<( aes) b!} c8.-> d16-.\! c8 r r4
@@ -280,7 +280,7 @@ musicViolaMvtI = \relative c' {
 	e2 \tuplet 3/2 {a,8( cis d} e8. fis16-.)
 	e1(
 	c!2 a)
-	b f!4..( a16)
+	b f!4..( a16-.)
 % mesures 216 à 220
 	b2 \tuplet 3/2 {d,8( f a} b8. c16-.)
 	b1(_\crescmarkup
@@ -390,9 +390,9 @@ musicViolaMvtI = \relative c' {
 	<g d' c'>\fz r <g f' b>\fz r
 	\acciaccatura c,8 <g' e'>1\ff
 % mesures 306 à 310
-	\tuplet 3/2 {f8(-- aes-- des--)} f8.-> g16-. \tuplet 3/2 {f8--( des-- aes--)} f8.-> des16
+	\tuplet 3/2 {f8(-- aes-- des--)} f8.-> g16-. \tuplet 3/2 {f8--( des-- aes--)} f8.-> des16-.
 	\acciaccatura c8 <g' e'>1\ffz
-	\tuplet 3/2 {aes8-.( b!-. d-.)} f8.-> aes16-. \tuplet 3/2 {f8-.( d-. b-.)} aes8.-> f16
+	\tuplet 3/2 {aes8-.( b!-. d-.)} f8.-> aes16-. \tuplet 3/2 {f8-.( d-. b-.)} aes8.-> f16-.
 	<c g' e'>4-.-^ r \tuplet 3/2 {c8\< e g} c8. d16-.\!
 	<c, g' e'>4-.-^ r \tuplet 3/2 {c'8\< e g} c8. d16-.\!
 % mesures 311 à 315

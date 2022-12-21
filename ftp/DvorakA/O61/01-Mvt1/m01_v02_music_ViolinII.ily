@@ -37,13 +37,13 @@ musicViolinIIMvtI = \relative c'' {
 		b c d c d e d e f e f g
 		f g a g a b a b c b c d\!}
 		e1\ff
-		c2-> e,4..-> c16
+		c2-> e,4..-> c16-.
 % mesures 26 à 30
 		\tuplet 3/2 4 {c8\fz-. b-. c-. b-. c-. b-.} c8 r r4
 		\acciaccatura <g, e'>8 c'8.( d16) d8.( c16) c8.( g16) g8.( e16)
 		e2. \tuplet 3/2 {f8( g aes)}
 		\tuplet 3/2 4 {aes8-.\fz g-. aes-. g-. aes-. g-.} aes8-. r r4 \mark \default
-		<cis, e a!>8\f r16 cis-. \tuplet 3/2 {cis8( d e-.)} f8 r16 g a8 r
+		<cis, e a!>8\f r16 cis-. \tuplet 3/2 {cis8( d e-.)} f8[ r16 g] a8 r
 % mesures 31 à 35
 		a4\fp( e8.) g16-. f8[ r16 e] d8 r
 		r8. e16\f\<-. \tuplet 3/2 {e8( f g)-.} a8[ r16 bes] c8\! r8
@@ -82,8 +82,8 @@ musicViolinIIMvtI = \relative c'' {
 		c(\pp b!)\<
 % mesures 61 à 65
 		c( des)\!
-		<bes, f' d'!>8\f r <d bes' f'>4 r d8(\< f
-		aes)\! r r4 r2
+		<bes, f' d'!>8\f r <d bes' f'>4-> r d8(\< f
+		aes-.)\! r r4 r2
 		R1
 		r2 r8. d,16[\p\<( ees8.\> d16)]\!
 % mesures 66 à 70
@@ -112,7 +112,7 @@ musicViolinIIMvtI = \relative c'' {
 		b4\pp( c2 d4)
 % mesures 86 à 90
 		b4( c2 d4)
-		<d g>8\ppp[ r16 <e g>( <d g>8) r16 <e g>]( <d g>8) r r4
+		<d g>8-.\ppp[ r16 <e g>( <d g>8) r16 <e g>]( <d g>8) r r4
 		d8-.[ r16 ees( d8) r16 ees]( d8) r r4
 		r r8. d16(\p\< c8)[ r16\> d(] c8)\! r
 		r4 r8. b16(_\dimmarkup a8)[ r16 b]( a8) r8
@@ -121,7 +121,7 @@ musicViolinIIMvtI = \relative c'' {
 		b4(\< c2\> a4)\! \mark \default
 		b2(\pp b'\<)
 		g2( g'4\! fis8-- e--)
-		d4( b'8\> d, g b, d g,)\!
+		d4(\> b'8 d, g b, d g,)\!
 % mesures 96 à 100
 		b4( g8 b d2)\pp
 		g,8(\p\< a4 g \once \stemUp b g8)~\!
@@ -207,7 +207,7 @@ musicViolinIIMvtI = \relative c'' {
 	a8(\< d f a bes f d bes\!
 	b!)\f r g4(\< g'4.)\! g8~
 	g b,( g' b d cis c g)
-	r g(_\dimmarkup b, b') r d,( aes aes')
+	r g( b, b')_\dimmarkup r d,( aes aes')
 	r aes,( d, d') r g,( d d')~
 % mesures 156 à 160
 	d r d,4\p( d'4. d8~
@@ -237,7 +237,7 @@ musicViolinIIMvtI = \relative c'' {
 	\acciaccatura g,8 <e' c'>2-> <c e>->
 	<f aes>1\fz
 	<cis e a!>8\fz r16 cis \tuplet 3/2 {cis8(\< d e-.)} f8[ r16 g] a8\! r
-	a4(\fp e8)[ r16 g] f8[ r16 e] d8 r
+	a4(\fp e8)[ r16 g-.] f8[ r16 e] d8 r
 	r8. e16\f\< \tuplet 3/2 {e8( f g-.)} a8[ r16 bes] c8\! r
 % mesures 181 à 185
 	c4(\fp g8)[ r16 bes-.] a8[ r16 g] f8 r
@@ -253,7 +253,7 @@ musicViolinIIMvtI = \relative c'' {
 	e8\ff r r4 r2
 % mesures 191 à 195
 	<aes,, c>8\fz r r4 <f c' aes'>8\arpeggio r r4
-	r2 d'8\fz[ r16 d,] d8 r
+	r2 d'8\fz[ r16 d,]-. d8 r
 	d4(\p d'2.~)
 	d2_\crescmarkup d,4( d')~
 	d2. d,4(\f
@@ -322,9 +322,9 @@ musicViolinIIMvtI = \relative c'' {
 	g( e g a f! c' a c a  fis b a)}
 	gis4(\pp a2 b4~
 	b8) r a2( b4)
-	<b e>8[ r16 <cis e~>_( <b e>8) r16 <cis e~>]_( <b e>8) r r4
+	<b e>8-.[ r16 <cis e~>_( <b e>8) r16 <cis e~>]_( <b e>8) r r4
 % mesures 251 à 255
-	<gis b>8[ r16 <a c!>( <gis b>8) r16 <a c>]( <g b>8) r r4
+	<gis b>8-.[ r16 <a c!>( <gis b>8) r16 <a c>]( <g b>8) r r4
 	r4 r8. b16(\< a8)[ r16\> b(] a8)\! r8
 	r4 r8. gis16(_\dimmarkup fis8)[ r16 gis(] fis8) r
 	e r r8. d!16\pp( c!8)[ r16 d]( c8) r

@@ -77,7 +77,7 @@ musicCelloMvtI = \relative c {
 % mesures 56 à 60
 		bes4)\p r8 f(_\dimmarkup aes4) r8 f(
 		bes4)\pp r8 f( d'4) r8 f,(
-		bes4) r8 f(\< aes4) r8 f8(
+		bes4) r8 \hairpinShorten #'(0 . -5) f(\< aes4) r8 f8(
 		c'4)\! r8 f,(\> aes4) r8 f(\!
 		c'4)\pp r8 f,( des'4)\< r8 f,8(
 % mesures 61 à 65
@@ -102,10 +102,10 @@ musicCelloMvtI = \relative c {
 		ees4 r r ees8 ees
 		ees\< r des r c r bes\! r
 		aes\> r g r c r c\! r \clef tenor
-		f'4\pp^\arco\<( ges2\> e!4)\!
+		\whiteoutMarkup f'4\pp-\offset X-offset -4.5 ^\arco\<( ges2\> e!4)\!
 		f(\< ges2\> e4)\!
 % mesures 81 à 85
-		f4(\< g!) fis2\!
+		\hairpinShorten #'(0 . -5) f4(\< g!) fis2\!
 		g8(\> d ees g) d( g fis d)\!
 		d4(\pp\< ees2\> d4)\!
 		d4(\< ees2\> d4)\!
@@ -172,7 +172,7 @@ musicCelloMvtI = \relative c {
 	g, r d' r g r b r
 	gis,\< r e' r gis r b\! r
 	a,\< r e' r a r cis\! r \mark \default
-	\tuplet 3/2 {ais,\f-.^\arco cis-. e-.} fis8.-> g16-. fis8 r r4
+	\tuplet 3/2 {ais,\f-.-\offset X-offset -4 ^\arco cis-. e-.} fis8.-> g16-. fis8 r r4
 % mesures 126 à 130
 	R1*2
 	
@@ -200,7 +200,7 @@ musicCelloMvtI = \relative c {
 % mesures 146 à 150
 	b2 b, \mark \default
 	r8 d,!_\fdim( fis b d fis b d)
-	fis2\p g4.( b,8
+	fis2\p \shape #'((0 . -0.5)(0 . -0.7)(0 . -0.7)(0 . 0)) Slur g4.( b,8
 	d) r d,,4( d'4.) d8-.
 	d1
 % mesures 151 à 155
@@ -259,7 +259,7 @@ musicCelloMvtI = \relative c {
 	\tuplet 3/2 {b8( d) f!-.} gis8. b16 c8[\f r16 c,] c8 r
 % mesures 196 à 200
 	b'8[_\dimmarkup r16 b,] b8 r bes'[ r16 bes,] bes8 r
-	f'8[ r16 f,] f8 r des'[\p\> r16 des,] des8\! r
+	f'8[ r16 f,] f8 r \hairpinShorten #'(0 . -3.5) des'[\p\> r16 des,] des8\! r
 	c'4(\pp c,2.)~
 	c1~
 	c
@@ -295,7 +295,7 @@ musicCelloMvtI = \relative c {
 	g8)\f r8 b\fz r r2
 % mesures 226 à 230
 	R1
-	r8. g'16\p\<([ aes8. g16\!] f8\> d c b)\!
+	r8. g'16\p\<([ aes8. g16\!] \stemDown f8\> d c b)\! \stemNeutral
 	aes2( f_\dimmarkup)
 	e(\p\> d)\!
 	des1\pp~
@@ -304,17 +304,17 @@ musicCelloMvtI = \relative c {
 	c4_\pptranquillo( cis d f)
 	e( cis d f)
 	e( cis8 d e4 g)\<
-	fis( g8 a b!4 ees)\!
+	\shape #'((0 . 2)(0 . 0)(0 . 0)(0 . 0)) Slur fis( g8 a b!4 ees)\!
 % mesures 236 à 240
-	d4(\f\> des c b)
+	d4(\f des c\> b)
 	a4.( g8 f4 g)\!
 	c8\p r g'^\pizz g g4 g
 	c, g'8 g g4 g
 	c,8 r bes\< r a r g\! r
 % mesures 241 à 245
 	f r e\> r a r a\! r
-	d'4(^\arco\p\< e2\> g4)\!
-	f8( d\< e2\> g4)\!
+	d'4(-\offset X-offset -4.5 ^\arco\p\< e2\> g4)\!
+	f8(\< d e2\> g4)\!
 	f8( d c4\< b a)
 	g(\! fis\> b b,)\!
 % mesures 246 à 250
@@ -325,8 +325,8 @@ musicCelloMvtI = \relative c {
 	e,2~ e8[ r16 b'-. e,8-. r16 b'-.]
 % mesures 251 à 255
 	e,2~ e8[ r16 b'-. e,8-. r16 b'-.]
-	e,4(\< fis2\> dis4)\!
-	e(\< c!2\> a4)\!_\dimmarkup
+	e,4(\< \hairpinShorten #'(0 . 8) fis2\> dis4)\!
+	\once \stemUp e(\< \hairpinShorten #'(0 . 9) c!2\> a4)\!-\offset X-offset -10 _\dimmarkup
 	e8 r r8. a16(\pp fis8)[ r16 a]( fis8) r
 	r4 r8. d16( c8)[ r16 d]( c8) r \mark \default
 % mesures 256 à 260
@@ -336,11 +336,11 @@ musicCelloMvtI = \relative c {
 	b1\pp
 	e,8\p r e'8.\< e,16 cis'8 r cis8. cis,16\!
 % mesures 261 à 265
-	gis'8 r gis'8.\f gis,16 fis8\> r fis'8. fis,16\!
+	gis'8 r gis'8.\f gis,16 fis8\> r \beamOffset #'(-0.5 . 0) fis'8. fis,16\!
 	gis8 r e'8. gis,16 ais8 r fis'8. ais,16
 	b8_\dimmarkup r b'8. b,16 ais8 r ais4(
 	b1~
-	b8) r \tuplet 3/2 4  {e8( dis e cis bis cis} gis ais)
+	b8) r \tuplet 3/2 4  {e8( dis e \once \tupletDown cis bis cis} gis ais)
 % mesures 266 à 270
 	b!1\p
 	e2( b
@@ -360,7 +360,7 @@ musicCelloMvtI = \relative c {
 	r8 d''(->\< a d,) r d(-> a d,)
 	r8 d''(-> a d,)\! r d(-> a d,)
 % mesures 281 à 285
-	r8 aes''(\f-> c, f,) r aes'( c, f,)
+	r8 aes''(\f-> c, f,) r aes'(-> c, f,)
 	r f''(\< c aes) f( c aes f)\! \mark \default
 	d\ff r r4 c''2\pp
 	\tuplet 3/2 {f,8( aes c} d8. ees16-.) d2(
@@ -370,7 +370,7 @@ musicCelloMvtI = \relative c {
 	fis4) b!2\< b,4\!~
 	b e2_\crescmarkup a,4~
 	a\< d2( d,4)\!
-	\tuplet 3/2 {g8(\f\< c e} g8. a16-.) g8\! r r4
+	\once \tupletDown \tuplet 3/2 {g8(\f\< c e} g8. a16-.) g8\! r r4
 % mesures 291 à 295
 	\tuplet 3/2 {r8 c,( f} c') r \tuplet 3/2 {r f,,( c'} f) r 
 	\tuplet 3/2 {r c,(_\dimmarkup f} c') r r2

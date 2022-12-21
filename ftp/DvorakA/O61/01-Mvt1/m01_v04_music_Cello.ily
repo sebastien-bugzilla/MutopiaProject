@@ -360,7 +360,7 @@ musicCelloMvtI = \relative c {
 	r8 d''(->\< a d,) r d(-> a d,)
 	r8 d''(-> a d,)\! r d(-> a d,)
 % mesures 281 à 285
-	r8 aes''(\f-> c, f,) r aes'( c, f,)
+	r8 aes''(\f-> c, f,) r aes'(-> c, f,)
 	r f''(\< c aes) f( c aes f)\! \mark \default
 	d\ff r r4 c''2\pp
 	\tuplet 3/2 {f,8( aes c} d8. ees16-.) d2(

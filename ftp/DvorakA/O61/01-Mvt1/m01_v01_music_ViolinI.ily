@@ -199,7 +199,7 @@ musicViolinIMvtI = \relative c''' {
 	e2 \tuplet 3/2 {dis8(\< cisis dis\!} fis16\> e) r dis-.\!
 % mesures 146 à 150
 	dis4( d) b4..\<( b'16)\! \mark \default
-	fis'1\fz\>
+	<< fis'1 {s4\fz\> s s s\!} >>
 	d2\p-> b4..( g16-.)
 	g2 \tuplet 3/2 {fis8(\< eis fis\!} a16\> g) r\! fis-.
 	fis4( f) d4..(\< a''16)\!
@@ -388,7 +388,7 @@ musicViolinIMvtI = \relative c''' {
 	a8. b16 a8. b16 c8. d16 c8.\! d16
 	e4\fz r f\fz r
 	d\fz r g\fz r
-	\tempo "Tempo I." \tuplet 3/2 {c,,8\ff--( e-- g--)} c8.-> d16-. \tuplet 3/2 {c8(-- g-- e)-- } d8.-> c16-.
+	\tuplet 3/2 {c,,8\ff--( e-- g--)} c8.-> d16-. \tuplet 3/2 {c8(-- g-- e)-- } d8.-> c16-.
 % mesures 306 à 310
 	\acciaccatura f,8( <des' f>1\ffz)
 	\tuplet 3/2 {c8-.( e-. g-.)} c8.-> d!16-. \tuplet 3/2 {c8(-. g-. e)-. } d8.-> c16-.

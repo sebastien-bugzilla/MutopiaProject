@@ -5,65 +5,17 @@
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
 arco = \markup {\italic arco}
-%crescendo = \markup {\italic crescendo}
+pizz = \markup {\italic pizz.}
 crescmarkup = \markup {\italic cresc.}
 dimmarkup = \markup {\italic dim.}
 dolce = \markup {\italic {dolce}}
-fdim = \markup {\dynamic f \italic dim.}
-ffferoce = \markup {\dynamic ff \italic feroce}
-intempo = \markup {\italic {in tempo}}
-mfcresc = \markup { \dynamic mf \italic cresc.}
 morendo = \markup {\italic {morendo}}
-pcresc = \markup { \dynamic p \italic cresc.}
-pdim = \markup { \dynamic p \italic dim.}
-pizz = \markup {\italic pizz.}
-%pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
-pocoapocostring = \markup {\italic {poco a poco string}}
-ppmorendo = \markup { \dynamic pp \italic {morendo}}
-pppnonlegato = \markup { \dynamic ppp \italic {non legato}}
-pptranquillo = \markup { \dynamic pp \italic {tranquillo}}
-rit = \markup {\italic rit.}
-ritard = \markup {\italic ritard}
-riten = \markup {\italic riten.}
 semprecresc = \markup {\italic {sempre cresc.}}
 tranquillo = \markup {\italic tranquillo}
-pespress = \markup { \dynamic p \italic espress.}
-pespressivo = \markup { \dynamic p \italic espressivo}
-fzdim= \markup {\dynamic fz \italic dim.}
-ffz = #(make-dynamic-script "ffz")
-
-pocoapococrescendo = #(
-	make-music 'CrescendoEvent
-	'span-direction START
-	'span-type 'text
-	'span-text "poco a poco crescendo"
-)
-
-crescendo = #(
-	make-music 'CrescendoEvent
-	'span-direction START
-	'span-type 'text
-	'span-text "crescendo"
-)
-
-dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
-
-
-%atempo = \markup {\italic {a tempo}}
 espress = \markup {\italic {espress.}}
-ppmoltoespress = \markup { \dynamic pp \italic {molto espress.}}
-%stringendo = \markup {\italic stringendo}
 sulG = \markup {sul G.}
 ten = \markup {\italic {ten.}}
-ppsempre = \markup { \dynamic pp \italic {sempre}}
 espressivoM = \markup {\italic espressivo}
-
-
-
-fine = \markup {\italic Fine}
-fzmarkup = \markup {\dynamic fz}
-pdolce = \markup { \dynamic p \italic dolce.}
-%pocoapocoritmarkup = \markup {\italic {poco a poco rit.}}
 attacca = \markup {\italic {attacca}}
 scherzodcalfine = {
 	\once \override TextScript.self-alignment-X = 1
@@ -84,26 +36,49 @@ trio = \markup {
 	}
 }
 
+dimD = \tweak DynamicText.self-alignment-X #-0.71 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
+ffz = #(make-dynamic-script "ffz")
+pocoapococrescendo = #(
+	make-music 'CrescendoEvent
+	'span-direction START
+	'span-type 'text
+	'span-text "poco a poco crescendo"
+)
+crescendo = #(
+	make-music 'CrescendoEvent
+	'span-direction START
+	'span-type 'text
+	'span-text "crescendo"
+)
+pocoapococresc = #(
+	make-music 'CrescendoEvent
+	'span-direction START
+	'span-type 'text
+	'span-text "poco a poco cresc."
+)
 
-%accel = \markup {\italic accel.}
-%crescedaccel = \markup {\italic {cresc. ed accel.}}
+fdim = \markup {\dynamic f \italic dim.}
 fcresc = \markup {\dynamic f \italic {cresc.}}
 fsemprecresc = \markup { \dynamic f \italic {sempre cresc.}}
-fzcresc= \markup {\dynamic fz \italic cresc.}
-%grandioso = \markup {\italic grandioso}
-%moltorit = \markup {\italic {molto rit.}}
-mpespressivo = \markup { \dynamic mp \italic espressivo}
-pnonlegato = \markup { \dynamic p \italic {non legato}}
-pocoapococresc = #(make-music 'CrescendoEvent
-             'span-direction START
-             'span-type 'text
-             'span-text "poco a poco cresc.")
-%pocoapocoritard = \markup {\italic {poco a poco ritard.}}
-ppocomarcato = \markup { \dynamic p \italic {poco marcato}}
+pcresc = \markup {\hspace #-0.08 \dynamic p \italic cresc.}
+pdim = \markup {\hspace #-0.08 \dynamic p \italic dim.}
+pespress = \markup {\hspace #-0.08 \dynamic p \italic espress.}
+pespressivo = \markup {\hspace #-0.08 \dynamic p \italic espressivo}
+pnonlegato = \markup {\hspace #-0.08 \dynamic p \italic {non legato}}
+pdolce = \markup {\hspace #-0.08 \dynamic p \italic dolce.}
+ppocomarcato = \markup {\hspace #-0.08 \dynamic p \italic {poco marcato}}
+ffferoce = \markup {\hspace #-0.63 \dynamic ff \italic feroce}
+mfcresc = \markup {\hspace #-0.85 \dynamic mf \italic cresc.}
+ppmorendo = \markup {\hspace #-0.82 \dynamic pp \italic {morendo}}
+pptranquillo = \markup {\hspace #-0.82  \dynamic pp \italic {tranquillo}}
+ppmoltoespress = \markup {\hspace #-0.82 \dynamic pp \italic {molto espress.}}
+ppsempre = \markup {\hspace #-0.82  \dynamic pp \italic {sempre}}
+pppnonlegato = \markup {\hspace #-1.55 \dynamic ppp \italic {non legato}}
+fzdim= \markup {\hspace #-0.55 \dynamic fz \italic dim.}
+fzcresc= \markup {\hspace #-0.55 \dynamic fz \italic cresc.}
+fzmarkup = \markup {\hspace #-0.55 \dynamic fz}
+mpespressivo = \markup {\hspace #-0.95 \dynamic mp \italic espressivo}
 semprepiup = \markup {\italic {sempre più} \dynamic p}
-%unpocomenomosso = \markup {\bold {Un poco meno mosso.}}
-
-
 
 trillflat = \markup { 
 	\general-align #X #CENTER 
@@ -127,3 +102,176 @@ sharptrillspan = \once \override TrillSpanner.bound-details.left.text = \markup 
 	}
 }
 
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = ##t
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+markEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TextScript.extra-offset = #offset
+		\once \override TextScript.whiteout = ##t
+		\once \override TextScript.whiteout-style = #'outline
+	#}
+)
+
+tupletOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override TupletNumber.Y-offset = #offset 
+	#}
+)
+
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
+
+whiteoutMarkup = {
+%	\once \override Hairpin.layer = #4
+	\once \override TextScript.layer = #3
+	\once \override TextScript.whiteout = ##t
+	\once \override TextScript.whiteout-style = #'outline
+}
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+%beamGap = #(define-music-function
+%	(gap)
+%	(number?)
+%	#{
+%		\once \override Beam.auto-knee-gap = #gap
+%	#}
+%)
+
+%markYoffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \override Score.RehearsalMark.Y-offset = #offset
+%	#}
+%)
+
+%trillSpanPadding = #(define-music-function
+%	(padding)
+%	(number?)
+%	#{
+%		\once \override TrillSpanner.bound-details.right.padding = #padding
+%	#}
+%)
+
+%beamLeftTwoRightOne = {
+%	\set stemLeftBeamCount = #2
+%	\set stemRightBeamCount = #1
+%}
+
+%beamLeftOneRightTwo = {
+%	\set stemLeftBeamCount = #1
+%	\set stemRightBeamCount = #2
+%}
+
+%setBeamTriple = { 
+%	\set subdivideBeams = ##t
+%	\set baseMoment = #(ly:make-moment 1/8)
+%	\set beatStructure = 2,2,2
+%}
+
+%unsetBeamTriple = {
+%	\set subdivideBeams = ##f
+%	\unset baseMoment
+%	\unset beatStructure
+%}
+
+%tempoXoffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \override Score.MetronomeMark.X-offset = #offset
+%	#}
+%)
+
+%mmrnDown = {
+%	\once \override MultiMeasureRestNumber.direction = #-1 
+%}
+
+%mmrMinLength = #(define-music-function
+%	(length)
+%	(number?)
+%	#{
+%		\once \override MultiMeasureRest.minimum-length = #length
+%	#}
+%)
+
+%tempoExtraOffset = #(define-music-function
+%	(offset)
+%	(pair?)
+%	#{
+%		\once \override Score.MetronomeMark.extra-offset = #offset
+%	#}
+%)
+
+
+%whiteoutDynamic = {
+%	\once \override DynamicText.whiteout = ##t
+%	\once \override DynamicText.whiteout-style = #'outline
+%}
+
+
+
+%stemOffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \offset length #offset Stem
+%	#}
+%)
+
+
+%markYoffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \override Score.RehearsalMark.Y-offset = #offset
+%	#}
+%)
+
+%markXoffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+%	#}
+%)
+
+%dynSpanYoffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \override DynamicTextSpanner.bound-details.right.Y = #offset
+%	#}
+%)
+
+%mmrLength = #(define-music-function
+%	(length)
+%	(number?)
+%	#{
+%		\once \override MultiMeasureRest.space-increment = #length
+%	#}
+%)
