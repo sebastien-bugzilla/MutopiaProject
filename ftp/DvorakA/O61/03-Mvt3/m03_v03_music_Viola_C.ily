@@ -11,8 +11,8 @@ musicViolaMvtIII = \relative c {
 	\repeat volta 2 {
 		\tuplet 3/2 {e'8(\p fis gis} a8.) b16-. gis4\fp
 		\tuplet 3/2 {gis8( a b} c8.) d16-. b4\fp
-		\tuplet 3/2 {b8(\< c d} \dynEO #'(0 . 1) f8.->\f) e16-.( d8.-> c16-.)
-		b8.(->\> a16-. gis8. fis16-.)\! e8 r
+		\shape #'((0 . 0)(0 . 0)(0 . -0.5)(0 . -0.8)) Slur \tuplet 3/2 {b8(\< c d} \dynEO #'(0 . 1.5) f8.->\f) e16-.( d8.-> c16-.)
+		\shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur b8.(->\> a16-. gis8. fis16-.)\! e8 r
 		r4 r \tuplet 3/2 {e8(\fp e,) e-.}
 % mesures 6 à 10
 		r4 r \tuplet 3/2 {e'8(\fp e,) e-.}
@@ -40,14 +40,14 @@ musicViolaMvtIII = \relative c {
 	d8\< e-. bes'8.-- a16-. g8.-- f16-.\!
 	e8\f r \tuplet 3/2 4 {f'(\fz\> c) c-. \markEO #'(0 . 2.2) e(_\fzmarkup c) c-. 
 % mesures 26 à 30
-	aes(_\fzmarkup c) c-.\! g(-> c) c-. f,(_\pdim c) c-.
+	\markEO #'(0 . 1) aes(_\fzmarkup c) c-.\! g(-> c) c-. f,(_\pdim c) c-.
 	e( c) c-. aes( c) c-. g(\pp c) c-.
 	f,( c) c-. e( c) c-.} r4
 	\tuplet 3/2 {e8( c) c-.} r4 \tuplet 3/2 {e8( c) c-.}
 	\repeat volta 2 {
 		R2.
 % mesures 31 à 35
-		c'4(\pp d e
+		c'4(-\offset X-offset 1.3 \pp d e
 		g fis\< f)~
 		f8( e d c\! e4~
 		e ees\> d)
@@ -85,12 +85,12 @@ musicViolaMvtIII = \relative c {
 % mesures 61 à 65
 		g a c,
 		d c d)
-		c2.\pp(
+		c2.-\offset X-offset -1.5 \pp(
 		e
 		d~
 % mesures 66 à 70
 		d) \mark \default
-		c8 r r e'(\p b'4)\fp
+		c8 r r e'(\p \dynEO #'(0 . 1.5) b'4)\fp
 		r8 gis(\< a8. b16) gis4->\!
 		e8-. b'-. c-. e,-. b'-. e,-.
 		e'-. e,-. e'_\crescmarkup-. e,-. e'-. e,-. 
@@ -112,7 +112,7 @@ musicViolaMvtIII = \relative c {
 	}
 	e2.
 	e\fermata_\attacca \markFine \break \bar "||" \key a \major \time 2/4
-	e2\p~^\trio
+	e2\p~
 % mesures 86 à 90
 	e\<
 	f4->\>( e8. d16)\!
@@ -141,10 +141,10 @@ musicViolaMvtIII = \relative c {
 	\tuplet 3/2 4 {gis a gis_\crescmarkup a gis cis)}
 	a4.(\< fis8
 	\tuplet 3/2 4 {gis a gis\! a gis cis)
-	b\f( cis b cis b d
+	\tupletDown b\f( cis b \tupletUp cis b d \tupletNeutral
 	fis gis fis gis\> fis b,)\!
 % mesures 111 à 115
-	cis( d_\dimmarkup cis d cis fis->
+	cis( d-\offset X-offset 0.5 _\dimmarkup cis d cis fis->
 	e\p d cis} b) r
 	e,2\p~
 	e\<
@@ -164,7 +164,7 @@ musicViolaMvtIII = \relative c {
 % mesures 126 à 130
 	fis!(
 	b4 d,8 fis)
-	\tuplet 3/2 4 {a8( b a b a r)} \bar "||"
+	\tupletDown \tuplet 3/2 4 {a8( b a b a r)} \tupletNeutral \bar "||"
 	fis4.\pp( d8
 	\tuplet 3/2 4 {e fis e fis e a)}
 % mesures 131 à 135
@@ -249,7 +249,7 @@ musicViolaMvtIII = \relative c {
 % mesures 191 à 195
 	g4( ees8. bes16
 	f'2) \mark \default
-	<bes, f'>4\p^\pizz r
+	<bes, f'>4-\offset X-offset 0.5 \p^\pizz r
 	<bes f'> r
 	<bes ges'> r
 % mesures 196 à 200
@@ -260,16 +260,16 @@ musicViolaMvtIII = \relative c {
 	<bes f'> r
 % mesures 201 à 205
 	R2
-	\tuplet 3/2 4 {bes8(\p^\arco c bes c bes bes')}
+	\tuplet 3/2 4 {bes8(\p-\offset X-offset -4 ^\arco c bes c bes bes')}
 	R2
 	\tuplet 3/2 4 {bes,8(_\crescmarkup c bes c bes bes')}
 	R2
 % mesures 206 à 210
-	\tuplet 3/2 4 {cis,,!8(\mf dis cis dis cis cis'!)}
+	\tuplet 3/2 4 {cis,,!8(-\offset X-offset -1.8 \mf dis cis dis cis cis'!)}
 	R2
-	\tuplet 3/2 4 {cis,8(\f dis cis dis cis cis')} \mark \default
+	\tuplet 3/2 4 {cis,8(-\offset X-offset -1.5 \f dis cis dis cis cis')} \mark \default
 	R2
-	\tuplet 3/2 {e,8(\ff-> fis e)} r4 
+	\tuplet 3/2 {e,8(\ff^> fis e)} r4 
 % mesures 211 à 215
 	\tuplet 3/2 {e8(-> fis e)} r4 
 	\tuplet 3/2 {e8(-> fis e)} r4 
@@ -303,7 +303,7 @@ musicViolaMvtIII = \relative c {
 		e
 		fis8( e a e)
 	} \\ {
-		gis,2\f(
+		gis,2-\offset X-offset -1.5 \f(
 		a4 cis)
 		d2
 		d8( cis4.) \mark \default
@@ -345,18 +345,18 @@ musicViolaMvtIII = \relative c {
 	d4( cis8. b16)
 % mesures 266 à 270
 	a4. r8
-	<a e' cis'>4\f^\pizz\arpeggio a
+	<a e' cis'>4\f-\offset X-offset -6.5 ^\pizz\arpeggio a
 	<a e' cis'>\arpeggio a
 	<a f' a>\arpeggio a
 	<a e' cis'>\arpeggio a
 % mesures 271 à 275
 	<a e' cis'>\arpeggio a
-	<a e' cis'>\arpeggio_\dimmarkup a
+	<a e' cis'>\arpeggio-\offset X-offset 0.5 _\dimmarkup a
 	<a f' a>\arpeggio a
 	<a e' cis'>\arpeggio a
 	e2\p^\arco~
 % mesures 276 à 280
-	e_\dimmarkup
+	e-\offset X-offset 7 _\dimmarkup
 	f4( e8. d16
 	e2)
 	e(\pp
@@ -378,5 +378,5 @@ musicViolaMvtIII = \relative c {
 	e8 r c'8.( d16
 	b2)\fermata
 	e4.( fis8-.)
-	b,4( e)\fermata \bar "||" \key a \minor \time 3/4 \scherzodcalfine
+	b,4( e)\fermata \bar "||" \key a \minor \time 3/4 s8
 }

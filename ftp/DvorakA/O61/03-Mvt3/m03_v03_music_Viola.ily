@@ -37,7 +37,7 @@ musicViolaMvtIII = \relative c {
 	R2.
 	gis8(\pp b c d b4)~
 	b8 d( e f d4)~
-	d8\< e-. bes'8.-- a16-. g8.--\! f16-.
+	d8\< e-. bes'8.-- a16-. g8.-- f16-.\!
 	e8\f r \tuplet 3/2 4 {f'(\fz\> c) c-. e(_\fzmarkup c) c-. 
 % mesures 26 à 30
 	aes(_\fzmarkup c) c-.\! g(-> c) c-. f,(_\pdim c) c-.

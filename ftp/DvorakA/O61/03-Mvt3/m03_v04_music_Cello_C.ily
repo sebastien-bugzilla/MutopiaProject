@@ -85,12 +85,12 @@ musicCelloMvtIII = \relative c' {
 % mesures 61 à 65
 		e f a
 		g a d,)
-		e2.\pp~
+		e2.-\offset X-offset -1.5 \pp~
 		e~
 		e~
 % mesures 66 à 70
 		e \mark \default
-		a8 r r4 e''8->^\pizz e,
+		a8 r r4 e''8->-\offset X-offset -5.5 ^\pizz e,
 		r4 r e'8-> e,
 		r4  r \tuplet 3/2 {e8(^\arco e,) e-.}
 		r4 r \tuplet 3/2 {e'8(_\crescmarkup e,) e-.}
@@ -112,7 +112,7 @@ musicCelloMvtIII = \relative c' {
 	}
 	a2.
 	a\fermata_\attacca \markFine \break \bar "||" \key a \major \time 2/4
-	a2\p~^\trio
+	a2\p~
 % mesures 86 à 90
 	a~
 	a~
@@ -141,7 +141,7 @@ musicCelloMvtIII = \relative c' {
 	cis2)_\crescmarkup
 	\tuplet 3/2 4 {fis,8( gis fis gis\< fis a}
 	cis2)\!
-	\tuplet 3/2 4 {b8(\f cis b cis b d
+	\tupletDown \shape #'((0 . 0)(0 . 0)(0 . -0.5)(0 . -1)) Slur \tuplet 3/2 4 {b8(\f cis b cis b d \tupletNeutral
 	fis gis fis gis\> fis b,)\!}
 % mesures 111 à 115
 	e2(_\dimmarkup
@@ -342,7 +342,7 @@ musicCelloMvtIII = \relative c' {
 	a'-. cis-. a,-. a
 	a2\p~
 % mesures 276 à 280
-	a~_\dimmarkup
+	a~-\offset X-offset 7 _\dimmarkup
 	a~
 	a
 	a\pp(

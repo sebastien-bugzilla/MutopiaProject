@@ -184,7 +184,7 @@ musicViolinIMvtIII = \relative c'' {
 	b2\fz
 	cis\fz
 	d4-. b-.
-	d(--_\dimmarkup b--)
+	d(-- b--)_\dimmarkup
 % mesures 146 à 150
 	d--( b--)
 	d(--\p\> b--)
@@ -246,7 +246,7 @@ musicViolinIMvtIII = \relative c'' {
 	d2
 	ees4( d8. c16)
 % mesures 196 à 200
-	d8.( ees16 f8)[ r16 f]
+	d8.( ees16 f8)[ r16 f-.]
 	bes4( f8.) d16-.
 	d2
 	ees4( d8. c16)
@@ -254,7 +254,7 @@ musicViolinIMvtIII = \relative c'' {
 % mesures 201 à 205
 	bes'4( ges8.) ees16-.
 	f2
-	bes4(_\crescmarkup ges8.) ees16
+	bes4(_\crescmarkup ges8.) ees16-.
 	f2
 	cis'!4(\mf\< ais8.) fis16-.
 % mesures 206 à 210

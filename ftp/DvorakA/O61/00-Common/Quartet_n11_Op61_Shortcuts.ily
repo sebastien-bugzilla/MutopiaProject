@@ -116,6 +116,7 @@ markEO = #(define-music-function
 	(offset)
 	(pair?)
 	#{
+		\once \override TextScript.layer = #3
 		\once \override TextScript.extra-offset = #offset
 		\once \override TextScript.whiteout = ##t
 		\once \override TextScript.whiteout-style = #'outline
@@ -129,6 +130,16 @@ tupletOffset = #(define-music-function
 		\once \override TupletNumber.Y-offset = #offset 
 	#}
 )
+
+tupletAvoidSlur = \once \override TupletNumber.avoid-slur = #'ignore
+
+%tupletEO = #(define-music-function
+%	(offset)
+%	(pair?)
+%	#{
+%		\once \override TupletNumber.extra-offset = #offset 
+%	#}
+%)
 
 hairpinShorten = #(define-music-function
 	(shortLength)
@@ -161,20 +172,19 @@ tempoXoffset = #(define-music-function
 	#}
 )
 
+markYoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.Y-offset = #offset
+	#}
+)
 
 %beamGap = #(define-music-function
 %	(gap)
 %	(number?)
 %	#{
 %		\once \override Beam.auto-knee-gap = #gap
-%	#}
-%)
-
-%markYoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.Y-offset = #offset
 %	#}
 %)
 

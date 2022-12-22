@@ -238,7 +238,7 @@ musicViolinIIMvtIII = \relative c' {
 	e4( cis')
 	b8(-. gis4-- e8-.)
 	g4( e')
-	d8-.( b4-- g8--)
+	d8-.( b4-- g8-.)
 % mesures 191 à 195
 	bes4( g')
 	f8(-. d4-- bes8-.) \mark \default
