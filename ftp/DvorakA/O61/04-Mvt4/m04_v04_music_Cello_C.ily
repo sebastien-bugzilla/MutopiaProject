@@ -17,12 +17,12 @@ musicCelloMvtIV = \relative c {
 	r4 a'8-.\< b-.\!
 	c-.\> a-. b-. b-.\!
 	e,-.[\p b-. e,-.] r
-	e'4\pp( d
+	\shape #'((0 . -1)(0 . 0)(0 . 0)(0 . 0)) Slur e'4\pp( d
 	c b)
 % mesures 11 à 15
 	a2(
 	e4.) r8
-	e2\<~
+	\hairpinShorten #'(0 . 5) e2\<~
 	e~
 	e\!
 % mesures 16 à 20
@@ -80,7 +80,7 @@ musicCelloMvtIV = \relative c {
 	R2*2
 	\mark \default
 % mesures 61 à 65
-	c8\p^\pizz c' b b,
+	c8\p-\offset X-offset -1 ^\pizz c' b b,
 	e e' f, g
 	a f g g,
 	c[ g\fz c,] r
@@ -101,7 +101,7 @@ musicCelloMvtIV = \relative c {
 	R2
 	e2\p~
 	e4 r
-	e8\< r r4
+	\hairpinShorten #'(0 . -7) e8\< r r4
 	e'8 r r4\!
 % mesures 81 à 85
 	a,2\mf~
@@ -128,7 +128,7 @@ musicCelloMvtIV = \relative c {
 	fis2\>~
 	fis4.\! g8 \mark \default
 % mesures 101 à 105
-	a4(\p\< b\!
+	\hairpinShorten #'(0 . -1) a4(\p\< b\!
 	c) c16\((\> b) b( a)\)\!
 	a4(\< b\!
 	c) c16\((\> b) b( a)\)\!
@@ -155,8 +155,8 @@ musicCelloMvtIV = \relative c {
 	d r d a
 	d, r d' r
 	<g, d' b'>4\p\arpeggio r
-	<g ees' bes'>\<\arpeggio r\!
-	q\>\arpeggio r\!
+	\hairpinShorten #'(1 . 0) <g ees' bes'>\<\arpeggio r\!
+	\hairpinShorten #'(1 . 0) q\>\arpeggio r\!
 % mesures 126 à 130
 	<g d' b'!>\arpeggio r
 	<d a' d>\arpeggio\pp r
@@ -173,13 +173,13 @@ musicCelloMvtIV = \relative c {
 	g8\> fis16 e)\! d8-. c-. \mark \default
 	b-.\fz[ g-. g'-.]\pocoapococresc r
 	e-.[_\fzmarkup g-. e'-.] r
-	g,,-.[_\fzmarkup b-. g'-.] r
-	e-.[_\fzmarkup g-. e'-.] r
+	\markEO #'(0 . 0.5) g,,-.[_\fzmarkup b-. g'-.] r
+	\markEO #'(0 . 1) e-.[_\fzmarkup g-. e'-.] r
 % mesures 141 à 145
-	b,[_\fzmarkup-. d-. b'-.] r
-	g[-._\fzmarkup b-. g'-.] r
-	b,,[-._\fzmarkup d-. b'-.] r
-	g[-._\fzmarkup b-. g'-.] r
+	\markEO #'(0 . 1) b,[_\fzmarkup-. d-. b'-.] r
+	\markEO #'(0 . 2) g[-._\fzmarkup b-. g'-.] r
+	\markEO #'(0 . 1) b,,[-._\fzmarkup d-. b'-.] r
+	\markEO #'(0 . 2) g[-._\fzmarkup b-. g'-.] r
 	d,\ff r ees'4\fz~
 % mesures 146 à 150
 	ees8 d16( c) b8-. a-.
@@ -413,7 +413,7 @@ musicCelloMvtIV = \relative c {
 	R2
 	R2*2
 	
-	<c, aes' ees'>4\fz^\pizz\arpeggio r
+	<c, aes' ees'>4\fz-\offset X-offset -4 ^\pizz\arpeggio r
 	<c g' e'!>8\p\arpeggio r c'_\dimmarkup e
 % mesures 341 à 345
 	g r g\pp d
@@ -428,7 +428,7 @@ musicCelloMvtIV = \relative c {
 	c8 r r4
 	R2
 % mesures 351 à 355
-	c4\<(^\arco c'~\!
+	c4\<(-\offset X-offset -4 ^\arco c'~\!
 	c8\> b16 a) g8-.\! f-.
 	e4( c
 	g' g,)
@@ -438,13 +438,13 @@ musicCelloMvtIV = \relative c {
 	e-.\fz[ c-. c'-.] r
 	a,-.\fz[ c-.\pocoapococresc a'-.] r
 	c,-._\fzmarkup[ e-. c'-.] r
-	a,-.[_\fzmarkup c-. a'-.] r
+	\markEO #'(0 . 1) a,-.[_\fzmarkup c-. a'-.] r
 % mesures 361 à 365
-	e-._\fzmarkup[ g-. e'-.] r
-	c,_\fzmarkup[-. e-. c'-.] r
-	e,[-._\fzmarkup g-. e'-.] r
-	c,[-._\fzmarkup e-. c'-.] r
-	g, r aes''4->\ff~
+	\markEO #'(0 . 2) e-._\fzmarkup[ g-. e'-.] r
+	\markEO #'(0 . 2) c,_\fzmarkup[-. e-. c'-.] r
+	\markEO #'(0 . 2) e,[-._\fzmarkup g-. e'-.] r
+	\markEO #'(0 . 2) c,[-._\fzmarkup e-. c'-.] r
+	g,\! r aes''4->\ff~
 % mesures 366 à 370
 	aes8 g16( f) e8-. d-.
 	c\fz b-. f'\fz d-.
@@ -520,7 +520,7 @@ musicCelloMvtIV = \relative c {
 % mesures 426 à 430
 	r4 g'8( c,)
 	c2(
-	e4 f\<
+	e4 \hairpinShorten #'(0 . -9) f\<
 	fis2
 	g)\!
 % mesures 431 à 435

@@ -22,15 +22,15 @@ musicViolaMvtIV = \relative c' {
 % mesures 11 à 15
 	e~
 	e4( gis8 b)
-	e,2\<~
+	\hairpinShorten #'(0 . 5) e,2\<~
 	e~
 	e4\! e'8( d'
 % mesures 16 à 20
 	c[\mf\> b e,-.)]\! r
 	r4 e8(\p\cresc d'
-	c_\fzmarkup[ b e,-.)] e(
-	c'_\fzmarkup[ b e,]-.) e(
-	c'_\fzmarkup[ b e,]-.) e-.\!
+	\markEO #'(0 . 1.5) c_\fzmarkup[ b e,-.)] e(
+	\markEO #'(0 . 1.5) c'_\fzmarkup[ b e,]-.) e(
+	\markEO #'(0 . 1.5) c'_\fzmarkup[ b e,]-.) e-.\!
 % mesures 21 à 25
 	a4(\f gis8-.) a(~\fz
 	a gis-.) a4(\fz
@@ -42,9 +42,9 @@ musicViolaMvtIV = \relative c' {
 	
 	
 	r4 r8 g\p\<(
-	ees'[\! d\> g,)]\! g'(\mf\<
+	ees'[\! d\> g,)]\! g'(-\offset X-offset -1.5 \mf\<
 % mesures 31 à 35
-	c[\! b\> g)]\! c\f-.
+	c[\! b\> g)]\! \dynEO #'(0 . 2) c\f-.
 	b-.\> a-. g-. f-.\! \mark \default
 	e4(_\ppocomarcato fis)
 	g4(~ g16 fis e dis)
@@ -65,14 +65,14 @@ musicViolaMvtIV = \relative c' {
 	e2
 	gis8->_\crescmarkup fis-. eis-. fis-.
 	gis-> fis-. eis-. fis-.
-	<g,! f'!>8\f r r4
+	<g,! f'!>8-\tweak extra-offset #'(0.6 . 1) \f r r4
 	f'16( a) g8-. g16( b) a8-.
 % mesures 51 à 55
 	e16( g) f8-. f16( aes) g8-.
 	cis16( e) d8-. cis16( e) d8-.
 	d16( f) g,8-. a16( c!) b8-.
 	d16( f) g,8-. a16( c) b8-.
-	ees8.\ff-> d16-. ees8.-> d16-.
+	\dynEO #'(0 . 2) ees8.\ff-> d16-. ees8.-> d16-.
 % mesures 56 à 60
 	ees8.-> d16-. ees8.-> d16-.
 	ees8-. r <f, d'> r
@@ -120,7 +120,7 @@ musicViolaMvtIV = \relative c' {
 	R2
 	c,4\f c'\fz~
 	c2
-	b8 r b'4\fz~
+	b8 r \dynEO #'(0 . 1.5) b'4\fz~
 % mesures 96 à 100
 	b2
 	a16( g b a fis e g fis)
@@ -128,7 +128,7 @@ musicViolaMvtIV = \relative c' {
 	a2\>~
 	a4.\! b8 \mark \default
 % mesures 101 à 105
-	c4\p\<( d\!
+	\hairpinShorten #'(0 . -1) c4-\offset X-offset 0.5 \p\<( d\!
 	ees->\>) ees16\(( d)\! d( c)\)
 	c4(\< d\!
 	ees\>) ees16\(( d)\! d( c)\)
@@ -149,7 +149,7 @@ musicViolaMvtIV = \relative c' {
 	R2
 	g'4(\p d'\<
 	ees g~\!
-	g8)\> f16( ees d8-.) c-.\!
+	g8)-\tweak rotation #'(-3 1 0) \> f16( ees d8-.) c-.\!
 	b!-. g-. d'4->~
 % mesures 121 à 125
 	d a8.( b16
@@ -171,16 +171,16 @@ musicViolaMvtIV = \relative c' {
 	d(\> g d c b d g, b)\!
 % mesures 136 à 140
 	a( d a g fis a e fis) \mark \default
-	g8-.\fz[ b-. b'-.]\pocoapococresc r
+	g8-.-\offset X-offset -1.5 \fz[ b-. b'-.]\pocoapococresc r
 	g,_\fzmarkup[-. b-. g']-. r
-	b,_\fzmarkup[-. d-. b'-.] r
-	g,_\fzmarkup[-. b-. g'-.] r
+	\markEO #'(0 . 1.5) b,_\fzmarkup[-. d-. b'-.] r
+	\markEO #'(0 . 1.5) g,_\fzmarkup[-. b-. g'-.] r
 % mesures 141 à 145
-	d,-._\fzmarkup[ fis-. d'-.] r
-	b_\fzmarkup-.[ d-. b'-.] r
-	d,,_\fzmarkup-.[ fis-. d'-.] r
-	b_\fzmarkup[-. d-. b'-.] r
-	d,\ff r ees'4\fz~
+	\markEO #'(0 . 0.8) d,-._\fzmarkup[ fis-. d'-.] r
+	\markEO #'(0 . 1.2) b_\fzmarkup-.[ d-. b'-.] r
+	\markEO #'(0 . 0.7) d,,_\fzmarkup-.[ fis-. d'-.] r
+	\markEO #'(0 . 1.2) b_\fzmarkup[-. d-. b'-.] r
+	d,\ff r \dynEO #'(0 . 2) ees'4\fz~
 % mesures 146 à 150
 	ees8 d16( c) b8-. a-.
 	g\fz fis-. c'\fz a-.
@@ -192,7 +192,7 @@ musicViolaMvtIV = \relative c' {
 	R2*3
 	
 	
-	e'8(\f e' d\> d,)
+	\shape #'((0 . -1.3)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e'8(\f e' d\> d,)
 % mesures 156 à 160
 	c( c' b b,)
 	a4. e'8(\!
@@ -202,7 +202,7 @@ musicViolaMvtIV = \relative c' {
 % mesures 161 à 165
 	c'->[ b e,]-.) e(
 	c'->[ b e,]-.) e(
-	a4_\fzcresc gis8-.) a~(\fz\<
+	a4-\offset X-offset -1 _\fzcresc gis8-.) a~(\fz\<
 	a gis-.) a4(\fz
 	gis8-.) r r4
 % mesures 166 à 170
@@ -214,7 +214,7 @@ musicViolaMvtIV = \relative c' {
 % mesures 171 à 175
 	r4 r8 g,(\p\<
 	ees'->[\! d\> g,)-.]\! g'(\mf\<
-	c[\! b\> g-.)]\! c-.\f
+	c[\! b\> g-.)]\! \dynEO #'(0 . 2) c-.\f
 	b-.\> a-. g-. f-.\!
 	e4(\mp fis)
 % mesures 176 à 180
@@ -236,14 +236,14 @@ musicViolaMvtIV = \relative c' {
 	gis8-._\crescmarkup fis-. eis-. fis-.
 	gis\<-. fis-. eis-. fis-.\!
 % mesures 191 à 195
-	<g,! f'!>\mf r r4
+	<g,! f'!>-\offset X-offset 1.5 \mf r r4
 	f'16( a) g8-. g16( b) a8-.
 	e16(_\crescmarkup g) f8-. f16( aes) g8-.
 	cis16( e) d8-. cis16( e) d8-.
 	d16(\f\< f) g,8-. a16( c) b8-.
 % mesures 196 à 200
 	d16( f) g,8-. a16( c) b8-.\!
-	ees8.->\ff d16-. ees8.-> d16-. 
+	\dynEO #'(0 . 1) ees8.->\ff d16-. ees8.-> d16-. 
 	ees8.-> d16-. ees8.-> d16-. 
 	ees8 r <g,, f' d'>\arpeggio r
 	R2*3
@@ -399,7 +399,7 @@ musicViolaMvtIV = \relative c' {
 	f2_\semprepiup~
 % mesures 326 à 330
 	f~
-	f4 b,8( c
+	f4 \stemDown b,8( c \stemNeutral
 	cis d e f)
 	b,2~_\(
 	b8( c) \stemUp c( d)\)
@@ -437,19 +437,19 @@ musicViolaMvtIV = \relative c' {
 	d( g d c b d a b)
 	c8-.[\fz e-. e-.] r
 	c,\fz-.[\pocoapococresc e-. c'-.] r
-	e,-.[_\fzmarkup g-. e'-.] r
-	c,-.[_\fzmarkup e-. c'-.] r
+	\markEO #'(1.5 . 4.5) e,-.[_\fzmarkup g-. e'-.] r
+	\markEO #'(0 . 1) c,-.[_\fzmarkup e-. c'-.] r
 % mesures 361 à 365
-	g[-._\fzmarkup b-. g'-.] r
-	e,[-._\fzmarkup g-. e'-.] r
-	g,[-._\fzmarkup b-. g'-.] r
-	e,[-._\fzmarkup g-. e'-.] r
-	g, r \clef treble aes''4\ff~->
+	\markEO #'(0 . 1) g[-._\fzmarkup b-. g'-.] r
+	\markEO #'(0 . 1) e,[-._\fzmarkup g-. e'-.] r
+	\markEO #'(0 . 1) g,[-._\fzmarkup b-. g'-.] r
+	\markEO #'(0 . 1) e,[-._\fzmarkup g-. e'-.] r
+	g,\! r \clef treble \dynEO #'(0 . 2) aes''4\ff~->
 % mesures 366 à 370
 	aes8 g16( f) e8-. d-.
 	c\fz b-. f'\fz d-. \clef alto
 	b\fz aes-. f\fz d-.
-	c\fz a!-. ees'\fz c-.
+	c\fz a!-. \beamOffset #'(0.5 . 0.5) ees'\fz c-.
 	a\fz fis-. ees\fz c-.
 % mesures 371 à 375
 	g'4(\fp\> f!
@@ -500,7 +500,7 @@ musicViolaMvtIV = \relative c' {
 	c-. d'-. c-. c,-.
 	c-. d'-. c-. c,-.
 % mesures 411 à 415
-	c,-._\dimmarkup d'-. c-. c,-.
+	c,-.-\offset X-offset -0.7 _\dimmarkup d'-. c-. c,-.
 	c-. d'-. c-. c,-.
 	c-. d'-. c-. c,-.
 	c-. d'-. c-. c,-.

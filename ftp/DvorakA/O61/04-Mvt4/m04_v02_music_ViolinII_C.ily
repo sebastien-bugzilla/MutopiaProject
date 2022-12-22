@@ -24,13 +24,13 @@ musicViolinIIMvtIV = \relative c'' {
 	a[-. gis-. b-.] r
 	e,(\< e' d d,
 	c c' b b,)\!
-	a4. e'8\mf(
+	a4. e'8-\offset X-offset -2.8 \mf(
 % mesures 16 à 20
 	dis'[\> e e,-.])\! r
-	r4 r8 e_\p(\cresc
-	dis'_\fzmarkup[ e e,)]-. e(
-	dis'_\fzmarkup[ e e,)]-. e(
-	dis'_\fzmarkup[ e e,)]-. e-.\!
+	r4 r8 \shape #'((0 . 0.3)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e-\offset X-offset -2 _\p(\cresc
+	\markEO #'(0 . 5) dis'_\fzmarkup[ e e,)]-. \shape #'((0 . 0.3)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e(
+	\markEO #'(0 . 5) dis'_\fzmarkup[ e e,)]-. \shape #'((0 . 0.3)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e(
+	\markEO #'(0 . 5) dis'_\fzmarkup[ e e,)]-. e-.\!
 % mesures 21 à 25
 	c'4(\f b8-.) c(\fz~
 	c b-.) c4(\fz
@@ -42,9 +42,9 @@ musicViolinIIMvtIV = \relative c'' {
 	
 	
 	
-	r4 r8 g(\mf\<
+	r4 r8 g(-\offset X-offset -1.5 \mf\<
 % mesures 31 à 35
-	ees'[\! d\> g,)]\! f'-.\f
+	ees'[\! d\> g,)]\! \dynEO #'(0 . 1) f'-.\f
 	e!8-.\> d-. c-. b-.\! \mark \default
 	g'4(_\pespressivo a)
 	b4.( c8)
@@ -70,9 +70,9 @@ musicViolinIIMvtIV = \relative c'' {
 % mesures 51 à 55
 	<< b2\fz {s8\startTrillSpan s s s\stopTrillSpan } >>
 	R2\stopTrillSpan
-	b4\fz^\trill r
-	b\fz^\trill r
-	a16\ff( c) c( b) a( c) c( b)
+	\dynEO #'(0 . 2) b4\fz^\trill r
+	\dynEO #'(0 . 2) b\fz^\trill r
+	\dynEO #'(0 . 2) a16\ff( c) c( b) a( c) c( b)
 % mesures 56 à 60
 	a( c) c( b) a( c) c( b)
 	a8-. r \once \stemUp <d,, b' g'>8\arpeggio r
@@ -123,12 +123,12 @@ musicViolinIIMvtIV = \relative c'' {
 	e4-> fis->
 % mesures 96 à 100
 	g-> g16\(( fis) fis( e)\)
-	e8 r c'4\fz~
+	e8 r \dynEO #'(0 . 1) c'4\fz~
 	c2~
 	c4.\> b8(
 	a e c b)\! \mark \default
 % mesures 101 à 105
-	a4(\p\< g~\!
+	\hairpinShorten #'(0 . -1) a4(\p\< g~\!
 	<< g2) {s4\> s\!} >>
 	a4(\< g~\!
 	<< g2) {s4\> s\!} >>
@@ -172,14 +172,14 @@ musicViolinIIMvtIV = \relative c'' {
 % mesures 136 à 140
 	d4( d,)~ \mark \default
 	d8 r r4_\pocoapococresc
-	b8 r \once \stemUp b'4_\fzmarkup~
+	b8 r \once \stemUp \markEO #'(0 . 4.8) b'4_\fzmarkup~
 	b8 a16( g) fis8-. e-.
-	b r \once \stemUp b'4_\fzmarkup~
+	b r \once \stemUp \markEO #'(0 . 3) b'4_\fzmarkup~
 % mesures 141 à 145
 	b8 a16( g) fis8-. e-.
-	d r d'4_\fzmarkup~
+	d r \markEO #'(0 . 2) d'4_\fzmarkup~
 	d8 c16( b) a8-. g-.
-	d r d'4_\fzmarkup~
+	d r \markEO #'(0 . 2) d'4_\fzmarkup~
 	d8\ff c16( b) a8-. g-.
 % mesures 146 à 150
 	fis r r4
@@ -197,17 +197,17 @@ musicViolinIIMvtIV = \relative c'' {
 	e4.\> d8
 	c-. d-. c16( e) e8-.\!
 	dis\p[( e e,]-.) r
-	r4 r8 e(
-	dis'->[ e e,]-.) e(
+	r4 r8 \shape #'((0 . 0.3)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur e(
+	dis'^>[ e e,]-.) \shape #'((0 . 0.3)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur e(
 % mesures 161 à 165
-	dis'->[ e e,]-.) e(
-	dis'->[ e e,]-.) e(
-	c'4_\fcresc b8-.) c\fz\<~(
+	dis'^>[ e e,]-.) \shape #'((0 . 0.3)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur e(
+	dis'^>[ e e,]-.) e(
+	c'4-\offset X-offset -1 _\fcresc b8-.) c\fz\<~(
 	c b-.) c4\fz(
 	b8-.) r r4
 % mesures 166 à 170
 	R2 \mark \default
-	<g, f' b>4.\fz r8
+	<g, f' b>4.-\tweak extra-offset #'(0.7 . 0.5) \fz r8
 	r4 r8 b'16(\p a
 	g8) r r4
 	r8. a16([ g8)] r
@@ -240,17 +240,17 @@ musicViolinIIMvtIV = \relative c'' {
 	a16( c) b8-. b16( d) c8-.\!
 	<< b2\f {s8\startTrillSpan s s s\stopTrillSpan } >>
 	R2
-	b4\fz\trill r
+	\dynEO #'(0 . 2) b4\fz\trill r
 % mesures 196 à 200
-	b\fz\trill r 
-	a16(\ff c) c( b) a( c) c( b)
+	\dynEO #'(0 . 2) b\fz\trill r 
+	\dynEO #'(0 . 2) a16(\ff c) c( b) a( c) c( b)
 	a( c) c( b) a( c) c( b)
 	a8 r <g, d' b'>\arpeggio r
 	r4 g'16( d') d( b)
 % mesures 201 à 205
 	b( g) g( f) f( d) d( b)
 	R2 \mark \default
-	<c e>4\f-> <b fis'>->
+	\dynEO #'(0.5 . 1) <c e>4\f-> <b fis'>->
 	<b g'>-> a'8( b)
 	c8-. d-. e-. d-.
 % mesures 206 à 210
@@ -260,8 +260,8 @@ musicViolinIIMvtIV = \relative c'' {
 	d( c) c( d) d( e) e( d)
 	d( c) c( b) d( c) c( b)
 % mesures 211 à 215
-	c8\fz g'-. c\fz g-.
-	e\fz d-. c\fz g-.
+	c8\fz g'-. \dynEO #'(0 . 1) c\fz g-.
+	e\fz d-. \dynEO #'(0 . 1) c\fz g-.
 	e->_\dimmarkup g-. c-> g-.
 	e-> d-. c-> g-.
 	c\p r r4
@@ -317,7 +317,7 @@ musicViolinIIMvtIV = \relative c'' {
 	gis a b a gis f e e'
 	e2\fz
 	c\fz
-	a4.->( c8-.)
+	\shape #'((0 . -0.7)(0 . -0.3)(0 . 0)(0 . 0)) Slur a4.->( c8-.)
 	b4.->( dis,8-.)
 % mesures 261 à 265
 	e4.( d'!8-.)
@@ -375,7 +375,7 @@ musicViolinIIMvtIV = \relative c'' {
 	e-. gis-. b-. a-.
 % mesures 306 à 310
 	gis-. f!-. e-. d-.
-	c16( b d c a gis b a
+	\stemUp c16( b d c \stemNeutral a gis b a
 	e dis f e c b d c)
 	d'( cis e d a_\crescmarkup gis b a
 	f e g! f d cis e d)
@@ -387,7 +387,7 @@ musicViolinIIMvtIV = \relative c'' {
 	a4-> b!->
 % mesures 316 à 320
 	c-> c16( b) b( a)
-	a8 r f''4\fz~
+	a8 r \dynEO #'(0 . 2) f''4\fz~
 	f2~
 	f4.( e8)
 	d( a) f( e) \mark \default
@@ -426,24 +426,24 @@ musicViolinIIMvtIV = \relative c'' {
 	g\> d8.( e16\!
 	f4\pp g) \mark \default
 	c,8 r r4
-	c(\< c'~\!
+	\shape #'((0 . -2)(0 . 0.3)(0 . 0.3)(0 . -0.5)) Slur c(\< c'~\!
 % mesures 351 à 355
 	c8\> b16 a) g8-.\! e-.
 	g4( g,)~
 	g8 r r4
-	c(\< c'~\!
+	\shape #'((0 . -2)(0 . 0.3)(0 . 0.3)(0 . -0.5)) Slur c(\< c'~\!
 	c8\> b16 a) g8-. e-.\!
 % mesures 356 à 360
 	g4( g,)~
 	g8 r r4
-	e8\pocoapococresc r e'4(_\fzmarkup~
+	e8\pocoapococresc r e'4(-\tweak extra-offset #'(0 . 0.3) _\fzmarkup~
 	e8 d16 c) b8-. a-.
-	e r e'4(_\fzmarkup~
+	e r \markEO #'(0 . 1.5) e'4(_\fzmarkup~
 % mesures 361 à 365
 	e8 d16 c) b8-. a-.
-	g r g'4(~_\fzmarkup
+	g r \markEO #'(0 . 1.9) g'4(~_\fzmarkup
 	g8 f16 e) d8-. c-.
-	g r g'4(_\fzmarkup~
+	g r \markEO #'(0 . 1.9) g'4(_\fzmarkup~
 	g8\! f16 e) d8-. c-.
 % mesures 366 à 370
 	b8 r r4
@@ -477,7 +477,7 @@ musicViolinIIMvtIV = \relative c'' {
 	b8. ais16 b8. ais16
 % mesures 391 à 395
 	b8 r r4
-	r <g,, f' b>8\f r
+	r <g,, f' b>8-\tweak extra-offset #'(-1.5 . 0.5) \f r
 	R2*2
 	
 	r8 a'([\f-> g g,)]
@@ -552,7 +552,7 @@ musicViolinIIMvtIV = \relative c'' {
 	a
 	g\p\>~
 	g\!
-	aes\pp~
+	aes-\offset X-offset -0.5 \pp~
 % mesures 456 à 460
 	aes
 	c~
@@ -579,7 +579,7 @@ musicViolinIIMvtIV = \relative c'' {
 	a16( c) c8-. a16( c) c8-. 
 % mesures 476 à 480
 	a16( c) c8-. a16( c) c8-. 
-	<f,, c' a'>8-.\ff r r4
+	<f,, c' a'>8-.-\offset X-offset 0.8 \ff r r4
 	<d b' g'>8-. r r4
 	c''8-. r <g, c e>4-.
 	q-. q-.

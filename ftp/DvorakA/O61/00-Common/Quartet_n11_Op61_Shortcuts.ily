@@ -180,6 +180,14 @@ markYoffset = #(define-music-function
 	#}
 )
 
+trillSpanPadding = #(define-music-function
+	(padding)
+	(number?)
+	#{
+		\once \override TrillSpanner.bound-details.right.padding = #padding
+	#}
+)
+
 %beamGap = #(define-music-function
 %	(gap)
 %	(number?)
@@ -188,13 +196,6 @@ markYoffset = #(define-music-function
 %	#}
 %)
 
-%trillSpanPadding = #(define-music-function
-%	(padding)
-%	(number?)
-%	#{
-%		\once \override TrillSpanner.bound-details.right.padding = #padding
-%	#}
-%)
 
 %beamLeftTwoRightOne = {
 %	\set stemLeftBeamCount = #2
