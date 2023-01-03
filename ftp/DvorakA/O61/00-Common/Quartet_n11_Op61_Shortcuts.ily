@@ -17,6 +17,7 @@ sulG = \markup {sul G.}
 ten = \markup {\italic {ten.}}
 espressivoM = \markup {\italic espressivo}
 attacca = \markup {\italic {attacca}}
+moltoespress = \markup {\italic {molto espress.}}
 scherzodcalfine = {
 	\once \override TextScript.self-alignment-X = 1
 	s8_\markup {
@@ -35,9 +36,17 @@ trio = \markup {
 		\bold { \lower #1.2 "TRIO." "L'istesso tempo." }
 	}
 }
+trioPart = \markup {
+	\column { 
+		\bold { \lower #1.2 "TRIO." \medium \italic "L'istesso tempo." }
+	}
+}
 
 dimD = \tweak DynamicText.self-alignment-X #-0.71 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
+crescD = \tweak DynamicText.self-alignment-X #-0.71 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 ffz = #(make-dynamic-script "ffz")
+pnonlegatoD = \tweak DynamicText.self-alignment-X #LEFT #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "non legato"))
+
 pocoapococrescendo = #(
 	make-music 'CrescendoEvent
 	'span-direction START
@@ -79,6 +88,12 @@ fzcresc= \markup {\hspace #-0.55 \dynamic fz \italic cresc.}
 fzmarkup = \markup {\hspace #-0.55 \dynamic fz}
 mpespressivo = \markup {\hspace #-0.95 \dynamic mp \italic espressivo}
 semprepiup = \markup {\italic {sempre più} \dynamic p}
+semprepiupII = \markup {
+	\center-column {
+		\italic \lower #1 "sempre" 
+		\line { \italic "più" \dynamic p}
+	}
+}
 
 trillflat = \markup { 
 	\general-align #X #CENTER 
@@ -123,6 +138,16 @@ markEO = #(define-music-function
 	#}
 )
 
+hairpinEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Hairpin.extra-offset = #offset
+		\once \override Hairpin.whiteout = ##t
+		\once \override Hairpin.whiteout-style = #'outline
+	#}
+)
+
 tupletOffset = #(define-music-function
 	(offset)
 	(number?)
@@ -132,14 +157,6 @@ tupletOffset = #(define-music-function
 )
 
 tupletAvoidSlur = \once \override TupletNumber.avoid-slur = #'ignore
-
-%tupletEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TupletNumber.extra-offset = #offset 
-%	#}
-%)
 
 hairpinShorten = #(define-music-function
 	(shortLength)
@@ -188,6 +205,26 @@ trillSpanPadding = #(define-music-function
 	#}
 )
 
+stemOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \offset length #offset Stem
+	#}
+)
+
+markYoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.Y-offset = #offset
+	#}
+)
+
+tempoDown = \once \override Score.MetronomeMark.direction = #-1 
+
+omitMMRN = \omit MultiMeasureRestNumber
+
 %beamGap = #(define-music-function
 %	(gap)
 %	(number?)
@@ -196,6 +233,13 @@ trillSpanPadding = #(define-music-function
 %	#}
 %)
 
+%tupletEO = #(define-music-function
+%	(offset)
+%	(pair?)
+%	#{
+%		\once \override TupletNumber.extra-offset = #offset 
+%	#}
+%)
 
 %beamLeftTwoRightOne = {
 %	\set stemLeftBeamCount = #2
@@ -244,25 +288,6 @@ trillSpanPadding = #(define-music-function
 %	\once \override DynamicText.whiteout = ##t
 %	\once \override DynamicText.whiteout-style = #'outline
 %}
-
-
-
-%stemOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \offset length #offset Stem
-%	#}
-%)
-
-
-%markYoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.Y-offset = #offset
-%	#}
-%)
 
 %markXoffset = #(define-music-function
 %	(offset)

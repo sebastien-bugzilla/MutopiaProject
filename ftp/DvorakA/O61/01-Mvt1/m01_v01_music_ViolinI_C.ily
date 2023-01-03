@@ -295,7 +295,7 @@ musicViolinIMvtI = \relative c''' {
 	\dynEO #'(0 . 1) b!8\fz r16 g(\< f'8 d\!) b( g f d)
 % mesures 226 à 230
 	b\>( g' f d) b( g f d)\!
-	<<{b1~} \\ {s4\fp\< s \hairpinShorten #'(0 . -2) s\> s\! }>>
+	<<b1~ {s4\fp\< s \hairpinShorten #'(0 . -2) s\> s\! }>>
 	b8[ r16 cis\((_\dimmarkup d8) r16 cis(] d2)\)(
 	e\> f)\!
 	aes1\pp~

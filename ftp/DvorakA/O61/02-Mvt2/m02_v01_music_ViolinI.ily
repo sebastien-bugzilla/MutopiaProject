@@ -24,9 +24,9 @@ musicViolinIMvtII = \relative c'' {
 	r8 g(\pp d'4~ d8.) c32( b c8. bes16)
 	bes8( a) r4 r2 \mark \default
 	r8.. d32\p f8..^\ten bes,32 d8..-- f,32 bes8..-- bes,32->\f
-	a8-> r16. e''32 g8..-- cis,32 e8..-- g,32 bes8..-- g,32->\f
+	a8-> r16. e''32 g8..-- cis,32 e8..-- g,32 bes8..-- g,32->\f\noBeam
 % mesures 16 à 20
-	f8 r16. f'32[\p\< a8.]\! r16 r8.. f32\<[ aes8.]\! r16
+	f8 r16. \hairpinShorten #'(-0.3 . -0.7) f'32[-\offset X-offset -1.5 \p\< a8.]\! r16 r8.. f32\<[ aes8.]\! r16
 	r8.. f'32\p aes8..^\ten d,32 f8..-- b,32 d8..-- aes32
 	aes2( g)_\dimmarkup
 	r16 ees32(\pp ges ees'8~ ees4)~ ees16 ges32( ees ges,8~ ges4)~
@@ -50,7 +50,7 @@ musicViolinIMvtII = \relative c'' {
 	\tuplet 3/2 {aes( c f\>} des16 f c f) \tuplet 3/2 {bes,8( c des} c16 f bes, f')\!
 	\tuplet 3/2 {aes,8( c f)} bes8(\pp e,) f16( c a f) f8.( e16)
 % mesures 36 à 40
-	\tuplet 3/2 4 {c'8( a f~_\crescmarkup f g e) c'8( a f~ f g e)}
+	\tuplet 3/2 4 {c'8( a f~-\offset X-offset -1 _\crescmarkup f g e) c'8( a f~ f g e)}
 	\tuplet 3/2 {f( aes! ges!)} f8._\dimmarkup( ees!16) \tuplet 3/2 {des8( aes' des,~} des16[ bes']) c,32( ees aes ges)
 	f4\pp( ges8. f16) ees4( f8. ees16)
 	des4( ges)\< f( bes)\!
@@ -71,10 +71,10 @@ musicViolinIMvtII = \relative c'' {
 	a4 r r2
 	g'4( e8 d cis8\< fis ais) cis(~
 	cis d4 b8)\! b4.\f( a!8)
-	gis!4.(\< fis8 d4.)\! r8
+	gis!4.(-\tweak extra-offset #'(0 . 0.3) \< fis8 \stemOffset #-1 d4.)\! r8
 	R1
 % mesures 56 à 60
-	d4(\pp b8 a gis b d eis)
+	\dynEO #'(1.5 . 1) d4(\pp b8 a gis b d eis)
 	gis4.( a8 b2~
 	b4) b2( c4~
 	c des2 d4~
@@ -84,13 +84,13 @@ musicViolinIMvtII = \relative c'' {
 	g8(\pp gis a g f)_\crescmarkup e( d! a)
 	c( bes) r e,( a g) r bes,(\f\>[
 	f' e)\!] r g,([_\dimmarkup d' c)] r c \bar "||" \key f \major 
-	r4 << <e, c'>2. {s4\p\> s s\!} >> \mark \default 
+	r4 << <e, c'>2. {\hairpinShorten #'(-0.5 . -0.7) s4-\offset X-offset -1 \p\> s s\!} >> \mark \default 
 % mesures 66 à 70
-	r8 a8(\!_\ppmoltoespress c4~ c8.) bes32(\< a bes4~
+	r8 a8(\pp^\moltoespress c4~ c8.) bes32(\< a bes4~
 	bes8.) a32(\! g a4) g4.( a8)\>
 	a4( bes8 d\! f4) r
 	r8 c( f4~ f8_\crescmarkup) \tuplet 5/4 {f32( ees d ees f} ees4~
-	ees8.)\< d32( cis d16 a' d, c)\! c(\>[ bes] \tuplet 3/2 {a16 bes c} bes8. d16)\!
+	ees8.)\< d32( cis d16 a' d, c)\! c(\>[ bes] \once \tupletUp \tuplet 3/2 {a16 bes c} bes8. d16)\!
 % mesures 71 à 75
 	r8 d(\pp a'4~ a8.) g32( fis g8. f16)
 	e8( d) r4 r2
@@ -110,7 +110,7 @@ musicViolinIMvtII = \relative c'' {
 	R1 \mark \default
 	R1
 % mesures 86 à 90
-	r8 a,8\pp( c4~ c8. b!32 ais b4)
+	r8 \shape #'((0 . 1)(0 . 1.5)(0 . 1.5)(0 . 0)) Slur a,8\pp( c4~ c8. b!32 ais b4)
 	r8 g!( \once \stemUp bes!4~ bes8. a32 gis a4)
 	r8 f!8( aes4~ aes8. g32 fis g8.) ges32( f!
 	ges8.)_\crescmarkup f32( e f8.) fes32( ees fes8.) ees32( d! ees8.) d32(_\dimmarkup cis
@@ -119,7 +119,7 @@ musicViolinIMvtII = \relative c'' {
 	r8 <g, e'>-- r4 r8 c' r4
 	f,4 r r2
 	a4\p\<( bes8. a16) g4( a8.\! g16)
-	f4( bes)_\crescmarkup a( des)
+	f4( \once \stemUp bes)_\crescmarkup a( des)
 	c8(\f\< fes) ees( aes~ aes)\! g4(\> f8~
 % mesures 96 à 99
 	f) c(\p bes8. a!16~ a4)\> f4(~\!

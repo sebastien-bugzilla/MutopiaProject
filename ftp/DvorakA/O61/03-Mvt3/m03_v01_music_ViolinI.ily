@@ -21,26 +21,26 @@ musicViolinIMvtIII = \relative c'' {
 		f'(\f f,) f-. g'( g,) g-. c'( c,) c-.
 		f( f,) f-. bes'( bes,) bes-. e(_\dimmarkup e,) e-.
 % mesures 11 à 15
-		a'( e) f(\> e) c( d) c( a) b!-.\!}
-		<< a2.~ {s4\p\> s s8 s\!}>>
+		a'( e) f(\> \tupletUp e) c( d) c( a) b!-.\!} \tupletNeutral
+		<< a2.~ {\hairpinShorten #'(-0.3 . -0.7) s4\p\> s s8 s\!}>>
 		a2.\pp
 	}
-	\tuplet 3/2 {e8(\p fis gis} a8.) b16-. gis4(~
-	\tuplet 3/2 {gis8 a b_\crescmarkup} c8.) d16-. b4(~
+	\tuplet 3/2 {e8(\p fis gis} a8.) b16-. \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur gis4(~
+	\once \tupletDown \tuplet 3/2 {gis8 a b_\crescmarkup} c8.) d16-. b4(~
 % mesures 16 à 20
 	\tuplet 3/2 {b8 c d)\<} f8.-- e16-. d8.-- c16-.\!
-	b8\f r g'^\pizz r g, r
+	b8\f r g'-\offset X-offset -0.5 ^\pizz r g, r
 	g' r g,_\dimmarkup r g r
 	g,\p\> r g' r g,\! r
 	g'\pp r g, r r4 \mark \default
 % mesures 21 à 25
 	R2.
-	r4 r \tuplet 3/2 {e''8(\fp^\arco e,) e-.}
+	r4 r \tuplet 3/2 {e''8(\fp-\offset X-offset -4 ^\arco e,) e-.}
 	e r r4 \tuplet 3/2 {e''8(\fp e,) e-.}
 	r8 e\<( c'4. g'8)\!
 	\tuplet 3/2 {g8(\f e) c-.} c2~\>
 % mesures 26 à 30
-	c4 \tuplet 3/2 {g8(\! e) c-.} c4~_\pdim
+	c4 \tuplet 3/2 {g8(\! e) c-.} c4~-\offset X-offset -1 _\pdim
 	c2 \tuplet 3/2 {g8(\pp e) c-.}
 	c8 r r4 \tuplet 3/2 {g'8( e) c-.}
 	r4 \tuplet 3/2 {g'8( e) c-.} r4
@@ -61,9 +61,9 @@ musicViolinIMvtIII = \relative c'' {
 % mesures 41 à 45
 		f8\< e d c e4)\!
 		gis4(\f g fis
-		<<e2.) {s4\> s s\!} >>
+		<<e2.) {\hairpinShorten #'(0 . -1) s4\> s s\!} >>
 		e8( fis16 e_\dimmarkup dis8 e16 dis e4)~
-		e8(\p\> dis cis b dis4)\! \mark \default
+		\beamOffset #'(0.5 . 0.5) e8(\p\> dis cis b dis4)\! \mark \default
 % mesures 46 à 50
 		\tuplet 3/2 {e8(_\dolce gis a} b8.) cis16-. b4
 		\tuplet 3/2 {e,8( gis a} b8.) cis16-. b4
@@ -111,8 +111,8 @@ musicViolinIMvtIII = \relative c'' {
 		a,8-. r r4 r
 	}
 	a'2.
-	a\fermata_\attacca \markFine \break \bar "||" \key a \major \time 2/4
-	a'4(_\pdolce^\trio e8. cis16)
+	a\fermata_\attacca \markYoffset #5 \markFine \break \bar "||" \key a \major \time 2/4
+	a'4(_\pdolce^\trioPart e8. cis16)
 % mesures 86 à 90
 	cis2\<
 	d4\>->( cis8. b16)\!
@@ -142,9 +142,9 @@ musicViolinIMvtIII = \relative c'' {
 	cis4( a8.\< fis16
 	gis8-.) gis4.->\!
 	<b, b'>4\f fis'8. d16
-	cis4~ cis8.\> dis16
+	cis4~ cis8.\> dis16\!
 % mesures 111 à 115
-	e2\!~\dimD
+	e2~-\offset X-offset -1 \dimD
 	e4\p \tuplet 3/2 {e8( fis gis)}
 	a4(_\pdolce e8. cis16)
 	cis2\<
@@ -157,7 +157,7 @@ musicViolinIMvtIII = \relative c'' {
 	fis4~ fis8 r
 % mesures 121 à 125
 	a'4( e8. cis16)
-	cis2\<
+	\hairpinShorten #'(0 . -0.9) cis2\<
 	d4->\>( cis8. b16)\!
 	cis8.( d16 e8) r
 	a4( e8. cis16)
@@ -172,24 +172,24 @@ musicViolinIMvtIII = \relative c'' {
 	<a e'>8-. <a e'>4.->
 	cis'4( a8.)_\crescmarkup fis16-.
 	gis2
-	cis4(\< a8.) fis16-.
+	cis4(-\alterBroken extra-offset #'( () (0 . 0.5) ) \< a8.) fis16-.
 % mesures 136 à 140
 	gis8-. gis4.->\! \mark \default
-	e'4(\f cis8)[ r16 a-.]
-	b2\fz
-	cis\fz
+	\dynEO #'(0 . 2) e'4(\f cis8)[ r16 a-.]
+	\dynEO #'(0 . 2) b2\fz
+	\dynEO #'(0 . 2) cis\fz
 	d4-. b-.
 % mesures 141 à 145
 	e( cis8)[ r16 a-.]
-	b2\fz
-	cis\fz
+	\dynEO #'(0 . 2) b2\fz
+	\dynEO #'(0 . 2) cis\fz
 	d4-. b-.
-	d(-- b--)_\dimmarkup
+	d(-- \markEO #'(0 . 1) b--)_\dimmarkup
 % mesures 146 à 150
 	d--( b--)
-	d(--\p\> b--)
+	\dynEO #'(0 . 1) \hairpinEO #'(0 . 1) d(--\p\> b--)
 	d(-- b--)\!
-	d(\pp b
+	\dynEO #'(0 . 1) d(\pp b
 	c e)
 % mesures 151 à 155
 	g2( 
@@ -256,27 +256,27 @@ musicViolinIMvtIII = \relative c'' {
 	f2
 	bes4(_\crescmarkup ges8.) ees16-.
 	f2
-	cis'!4(\mf\< ais8.) fis16-.
+	\dynEO #'(0 . 1) \hairpinEO #'(0 . 1) cis'!4(\mf\< ais8.) fis16-.
 % mesures 206 à 210
 	gis2\!
-	cis4(\f\< ais8.) fis16-.
+	\dynEO #'(0 . 1) \hairpinEO #'(0 . 1) cis4(\f\< ais8.) fis16-.
 	gis2\! \mark \default
-	e'4(\ff cis8.) a!16-.
-	<e b'>2\fz
+	\dynEO #'(0 . 2) e'4(\ff cis8.) a!16-.
+	\dynEO #'(0.8 . 2) <e b'>2\fz
 % mesures 211 à 215
-	<e cis'>\fz
+	\dynEO #'(0.8 . 2) <e cis'>\fz
 	<e d'>4-- <e b'>--
 	e'4( cis8)[ r16 a-.]
-	<e b'>2\fz
-	<e cis'>\fz
+	\dynEO #'(0.8 . 2) <e b'>2\fz
+	\dynEO #'(0.8 . 2) <e cis'>\fz
 % mesures 216 à 220
 	<e d'>4-. <e b'>-.
-	d'_\dimmarkup-. b-.
+	\markEO #'(0 . 2) d'_\dimmarkup-. b-.
 	d--( b--)
-	d--(\p b--)
+	\dynEO #'(0 . 2) d--(\p b--)
 	d--( b--)
 % mesures 221 à 225
-	d4(\pp b
+	\dynEO #'(0 . 1) d4(\pp b
 	c e)
 	g2(
 	a8 g e c)
@@ -312,16 +312,16 @@ musicViolinIMvtIII = \relative c'' {
 	e,!( fis e b' e, fis e b'
 	dis, e dis b' dis, e dis b')
 % mesures 251 à 255
-	d,!( e d b'-> b,\< cis b gis'->
+	\shape #'( () ((0.5 . 3.5)(0 . -0.5)(0 . -0.5)(0 . 0)) ) Slur d,!( e d b'-> b,-\alterBroken shorten-pair #'(() (0 . 1)) \< cis b gis'->
 	gis, a gis e'-> fis, gis fis d'->
 	d, e d b'-> b, cis b gis'->\!
-	gis,\f a gis e'->) r4
+	gis,-\tweak extra-offset #'(-2 . -11.5) ^\f a gis e'->) r4
 	R2
 % mesures 256 à 260
 	r4 e'16(\f fis e e')
 	e,-. fis-. e-._\dimmarkup e'-. e,-. fis-. e-. e'-. 
-	e,-. fis-. e-. e'-. e,-. fis-. e-. e'-. \mark \default
-	\ottava #1 e'2\p~
+	e,-. fis-. e-. e'-. e,-. fis-. e-. e'-. \mark \default \break
+	\ottava #2 e'2\p~
 	e~
 % mesures 261 à 265
 	e~_\crescmarkup
@@ -363,6 +363,6 @@ musicViolinIMvtIII = \relative c'' {
 	dis2\pp\fermata
 	e2~
 	e\fermata
-	\tuplet 3/2 {gis,8( a b} c8-- d--)
+	\once \tupletDown \tuplet 3/2 {gis,8( a b} c8-- d--)
 	b2\fermata \bar "||" \startStaff \key a \minor \time 3/4 \scherzodcalfine
 }
