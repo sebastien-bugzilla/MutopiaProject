@@ -102,7 +102,7 @@ formatViolinIIMvtI = {
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
 		(Y-offset . 147.38)
 	)
-	s1*6 \pageBreak
+	s1*5 \pageBreak
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
 		(Y-offset . 6.5)
 	)
@@ -116,35 +116,35 @@ formatViolinIIMvtI = {
 	)
 	s1*4 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 41.87)
+		(Y-offset . 41.86)
+	)
+	s1*4 \break
+	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
+		(Y-offset . 52.81)
+	)
+	s1*8 \break
+	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
+		(Y-offset . 64.36)
 	)
 	s1*6 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 52.61)
+		(Y-offset . 76.59)
+	)
+	s1*6 \break
+	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
+		(Y-offset . 88.39)
 	)
 	s1*7 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 64.77)
-	)
-	s1*6 \break
-	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 77.3)
-	)
-	s1*6 \break
-	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 88.38)
-	)
-	s1*6 \break
-	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
 		(Y-offset . 98.82)
 	)
-	s1*8 \break
+	s1*9 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
 		(Y-offset . 112.7)
 	)
 	s1*5 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 123.5)
+		(Y-offset . 123.51)
 	)
 	s1*5 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
