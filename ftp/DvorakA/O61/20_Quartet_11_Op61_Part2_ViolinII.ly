@@ -18,7 +18,7 @@
 \include "./00-Common/Quartet_n11_Op61_timeMvt.ily"
 \include "./00-Common/Quartet_n11_Op61_LayoutParts.ily"
 \include "./00-Common/Quartet_n11_Op61_Shortcuts.ily"
-%\include "./00-Common/Quartet_n11_Op61_Format_Part02_ViolinII.ily"
+\include "./00-Common/Quartet_n11_Op61_Format_Part02_ViolinII.ily"
 \include "./00-Common/Quartet_n11_Op61_Tempi.ily"
 \include "./01-Mvt1/m01_v02_music_ViolinII.ily"
 \include "./02-Mvt2/m02_v02_music_ViolinII.ily"
@@ -44,9 +44,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtI
-%			}
+			\new Voice {
+				\formatViolinIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtI
 			}
@@ -69,9 +69,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtII
-%			}
+			\new Voice {
+				\formatViolinIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtII
 			}
@@ -80,7 +80,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -92,11 +92,23 @@
 			\layoutPart
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #24 % 25.78
+		\abs-fontsize #20
+		\fill-line {
+			\center-column {
+				\line { "The third movement is formatted" }
+				\line { "to be displayed on three pages." }
+				\line { "Please attach page 9 next to page 10." }
+			}
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtIII
-%			}
+			\new Voice {
+				\formatViolinIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtIII
 			}
@@ -119,9 +131,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtIV
-%			}
+			\new Voice {
+				\formatViolinIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtIV
 			}

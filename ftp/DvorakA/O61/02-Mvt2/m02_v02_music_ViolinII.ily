@@ -9,9 +9,9 @@ musicViolinIIMvtII = \relative c' {
 	\clef treble
 % mesures 1 à 5
 	r2 r8 d(\p g4)
-	f2\<(~ f8.\> e32 d e8. d32 c)\!
+	\hairpinShorten #'(0 . -2) f2\<(~ \hairpinShorten #'(2 . 0) f8.\> e32 d e8. d32 c)\!
 	c8_\dimmarkup( f g c,) a'( f~ f16 e d c)
-	a'4\pp r r8^\sulG c,(\< a' g~\!
+	a'4\pp r r8 c,(\<^\sulG a' g~\!
 	g) fis4( a8~\> a) d,( g bes,)\!
 % mesures 6 à 10
 	R1
@@ -26,7 +26,7 @@ musicViolinIIMvtII = \relative c' {
 	d8-.\f r r16 d32(\p f bes16-.) r r4 r16 f,32( bes d16)-. f,\noBeam->\f
 	e8-> r r16 e'32(\p g cis16-.) r r4 r16 e,,32( g cis16-.) e,16\noBeam\f->
 % mesures 16 à 20
-	d8-> r r16 a'32\p( d f16)-. <a,, f'>16\noBeam\f-> <aes f'>8-> r r16 aes'32(\p d f16)-. <aes,, f'>16->\noBeam\f
+	d8-> r r16 a'32-\offset X-offset -1 \p( d f16)-. <a,, f'>16\noBeam\f-> <aes f'>8-> r r16 aes'32(-\offset X-offset -1 \p d f16)-. <aes,, f'>16->\noBeam\f
 	<g f'>8-> r r16 b'32(\p d f16-.) r r4 r16 f,32( aes b16-.) r
 	r8.. bes!32 des8..^\ten g,32 bes8..--_\dimmarkup e,32 g8..-- des32
 	des2\pp( c)
@@ -38,8 +38,8 @@ musicViolinIIMvtII = \relative c' {
 	r8 bes8\>(~ \tuplet 3/2 {bes c-- des--~} des b\! c4)\p
 	r4 c,2.\pp \bar "||" \key des \major
 % mesures 26 à 30
-	f4^\sulG_\espressivoM( ges8. f16) ees4(\< f8.\> ees16)\!
-	des4(\< ges\!) f(\> bes)\!
+	f4^\sulG-\offset X-offset -1.5 _\espressivoM( ges8. f16) ees4(\< f8.\> ees16)\!
+	des4(\< ges\!) f(\> \once \stemUp bes)\!
 	aes4(\pp bes8. aes16) g4( aes8. g16)
 	f4( aes8. ges!16) f4( fes16 aes ees ges)
 	f!8\( fes_\crescmarkup ees16( aes) ees( ges)\) fes4( ees16 aes ees ges)
@@ -47,30 +47,30 @@ musicViolinIIMvtII = \relative c' {
 	fes8.( ees32_\dimmarkup aes) fes8.( ees32 aes) fes8.( ees32 aes) fes8.( ees32 aes) \mark \default
 	aes4\pp \tuplet 3/2 {r8 des,( des')} des2(~
 	des8\< aes~ aes16) aes( aes'8~ aes16) aes,( aes'8 g16\! ees bes des)
-	c4 \tuplet 3/2 {r 8 f,(\> f')} f4(~ \tuplet 3/2 {f8 f, f')\!}
+	c4 \once \tupletUp \tuplet 3/2 {r 8 f,(\> f')} f4(~ \tupletOffset #3 \tuplet 3/2 {f8 f, f')\!}
 	f4(~ \tuplet 3/2 4 {f8\pp e g) c,( c, c')} c4
 % mesures 36 à 40
 	c8 c,16(_\crescmarkup c'~ c4)~ c8 c,16( c'~ c4)~
 	c~ c8_\dimmarkup bes aes( des4 c8)
-	\tuplet 3/2 {des8(\pp c des} bes16 des aes des) \tuplet 3/2 {ges,8( aes beses} aes16 des ges, des')
+	\tuplet 3/2 {des8(-\offset X-offset -0.5 \pp c des} bes16 des aes des) \once \tupletDown \tuplet 3/2 {ges,8( aes beses} aes16 des ges, des')
 	\tuplet 3/2 4 {aes8( f des beses'\< ges c,) ces'( aes f} des'16 beses g des)\!
 	c!( f aes c des_\crescmarkup f c f) \tuplet 3/2 {bes,8( c des} c16 f bes, f')
 % mesures 41 à 45
-	\tuplet 3/2 {aes,8(\f c f} c16 aes' c, ees~ \tuplet 3/2 {ees8) aes,( des~} des c)
+	\tuplet 3/2 {aes,8(-\offset X-offset -0.5 \f c f} c16 aes' c, ees~ \tuplet 3/2 {ees8) aes,( des~} des c)
 	des( f_\dimmarkup fes ees) des( g,4 aes8)~
 	aes_\pdim g4\( aes8 g(-- aes--) g(-- aes--)\)
-	\tuplet 3/2 {aes8(\pp des aes} ces16 aes beses ges!) \tuplet 3/2 {f8( aes f} ees16 ges des fes)\<
-	\tuplet 3/2 {c!8( ees c} ees16 ges des fes)\! \tuplet 3/2 {c8( ees c} ees16\f ges des fes)
+	\tuplet 3/2 {aes8(-\offset X-offset -1 \pp des aes} ces16 aes beses ges!) \tuplet 3/2 {f8( aes f} ees16 ges des fes)-\tweak extra-offset #'(0 . 0.2) \<
+	\tuplet 3/2 {\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur c!8( ees c} ees16 ges des fes)\! \tuplet 3/2 {c8( ees c} ees16\f ges des fes)
 % mesures 46 à 50
-	c1~_\dimmarkup
+	c1~-\offset X-offset -1.5 _\dimmarkup
 	c4\p r r2 \bar "||" \key a \major \mark \default
-	d!4\pp r r2
+	d!4-\offset X-offset 0.8 \pp r r2
 	R1*2
 	
 % mesures 51 à 55
 	a''4(\pp fis8 e d fis a) d~
 	d4( cis8 b ais4.\< fis'8)
-	<< fis2 {s4 s\!} >> gis4.(\f fis8)
+	<< fis2 {s4 s\!} >> \shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur gis4.(\f fis8)
 	d4.(\< a8 gis4.)\! r8
 	R1
 % mesures 56 à 60
@@ -81,8 +81,8 @@ musicViolinIIMvtII = \relative c' {
 	b2 gis!)
 % mesures 61 à 65
 	ais4(~ ais16 fis cis! b ais2)(
-	\stemUp bes2)~\pp\< bes8\! \stemNeutral r r4
-	g'4_\crescmarkup r8 e4. r8 bes\f\>~
+	\stemUp \hairpinShorten #'(-0.3 . -0.7) bes2)~-\offset X-offset -0.5 \pp\< bes8\! \stemNeutral r r4
+	g'4_\crescmarkup r8 e4. r8 \hairpinShorten #'(-0.3 . -1) bes\f\>~
 	bes4\! r8 g4_\dimmarkup gis8( a g) \bar "||" \key f \major
 	r4 fis(\p\> a g\! \mark \default
 % mesures 66 à 70

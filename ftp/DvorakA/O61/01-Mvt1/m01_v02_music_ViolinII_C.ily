@@ -249,7 +249,7 @@ musicViolinIIMvtI = \relative c'' {
 	f!4( c8 f) ees( c g ees)
 	f'4( c8 f) ees( c g ees)\!
 	d\f r16 b \tuplet 3/2 {b8( c) d-.} d8[ r16 b'] \tuplet 3/2 {b8( c) d-.}
-	d-. r r g-. \tuplet 3/2 {g8(\< a) b-. b( c) d-.\!} \mark \default
+	d-. r r g-. \tuplet 3/2 4 {g8(\< a) b-. b( c) d-.\!} \mark \default
 	\dynEO #'(0 . 1.5) e8\ff r r4 r2
 % mesures 191 à 195
 	<aes,, c>8-\offset X-offset 1 \fz r r4 <f c' aes'>8\arpeggio r r4

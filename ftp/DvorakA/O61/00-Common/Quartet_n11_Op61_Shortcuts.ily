@@ -18,6 +18,8 @@ ten = \markup {\italic {ten.}}
 espressivoM = \markup {\italic espressivo}
 attacca = \markup {\italic {attacca}}
 moltoespress = \markup {\italic {molto espress.}}
+pocoa = \markup {\italic {poco a}}
+feroce = \markup {\italic feroce}
 scherzodcalfine = {
 	\once \override TextScript.self-alignment-X = 1
 	s8_\markup {
@@ -53,6 +55,14 @@ pocoapococrescendo = #(
 	'span-type 'text
 	'span-text "poco a poco crescendo"
 )
+
+pococrescendo = #(
+	make-music 'CrescendoEvent
+	'span-direction START
+	'span-type 'text
+	'span-text "poco crescendo"
+)
+
 crescendo = #(
 	make-music 'CrescendoEvent
 	'span-direction START
@@ -225,6 +235,11 @@ tempoDown = \once \override Score.MetronomeMark.direction = #-1
 
 omitMMRN = \omit MultiMeasureRestNumber
 
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
+
 %beamGap = #(define-music-function
 %	(gap)
 %	(number?)
@@ -263,9 +278,6 @@ omitMMRN = \omit MultiMeasureRestNumber
 %	\unset beatStructure
 %}
 
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
 
 %mmrMinLength = #(define-music-function
 %	(length)

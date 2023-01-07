@@ -28,9 +28,9 @@ musicViolinIIMvtIV = \relative c'' {
 % mesures 16 à 20
 	dis'[\> e e,-.])\! r
 	r4 r8 e_\p(\cresc
-	dis'_\fzmarkup[ e e,)]-. e(
-	dis'_\fzmarkup[ e e,)]-. e(
-	dis'_\fzmarkup[ e e,)]-. e-.\!
+	\markEO #'(0 . 5.1) dis'_\fzmarkup[ e e,)]-. e(
+	\markEO #'(0 . 2) dis'_\fzmarkup[ e e,)]-. e(
+	\markEO #'(0 . 4.1) dis'_\fzmarkup[ e e,)]-. e-.\!
 % mesures 21 à 25
 	c'4(\f b8-.) c(\fz~
 	c b-.) c4(\fz
@@ -68,8 +68,8 @@ musicViolinIIMvtIV = \relative c'' {
 	f!16(\f a) g!8-. g16( b) a8-.
 	a16( c) b8-. b16( d) c8-.
 % mesures 51 à 55
-	<< b2\fz {s8\startTrillSpan s s s\stopTrillSpan } >>
-	R2\stopTrillSpan
+	b2\fz\trill
+	R2
 	b4\fz^\trill r
 	b\fz^\trill r
 	a16\ff( c) c( b) a( c) c( b)
@@ -128,10 +128,10 @@ musicViolinIIMvtIV = \relative c'' {
 	c4.\> b8(
 	a e c b)\! \mark \default
 % mesures 101 à 105
-	a4(\p\< g~\!
-	<< g2) {s4\> s\!} >>
-	a4(\< g~\!
-	<< g2) {s4\> s\!} >>
+	\hairpinShorten #'(0 . -1.4) a4(\p\< g~\!
+	<< g2) {\hairpinShorten #'(-1.4 . -0.5) s4\> s\!} >>
+	\hairpinShorten #'(0 . -0.7) a4(\< g~\!
+	<< g2) {\hairpinShorten #'(-2.2 . -1.5) s4\> s\!} >>
 	fis2( 
 % mesures 106 à 110
 	ees)_\dimmarkup
@@ -172,14 +172,14 @@ musicViolinIIMvtIV = \relative c'' {
 % mesures 136 à 140
 	d4( d,)~ \mark \default
 	d8 r r4_\pocoapococresc
-	b8 r \once \stemUp b'4_\fzmarkup~
+	b8 r \once \stemUp \markEO #'(0 . 4.5) b'4_\fzmarkup~
 	b8 a16( g) fis8-. e-.
-	b r \once \stemUp b'4_\fzmarkup~
+	b r \once \stemUp \markEO #'(0 . 2.5) b'4_\fzmarkup~
 % mesures 141 à 145
 	b8 a16( g) fis8-. e-.
-	d r d'4_\fzmarkup~
+	d r \markEO #'(0 . 2.5) d'4_\fzmarkup~
 	d8 c16( b) a8-. g-.
-	d r d'4_\fzmarkup~
+	d r \markEO #'(0 . 2.5) d'4_\fzmarkup~
 	d8\ff c16( b) a8-. g-.
 % mesures 146 à 150
 	fis r r4
@@ -202,12 +202,12 @@ musicViolinIIMvtIV = \relative c'' {
 % mesures 161 à 165
 	dis'->[ e e,]-.) e(
 	dis'->[ e e,]-.) e(
-	c'4_\fcresc b8-.) c\fz\<~(
+	c'4-\offset X-offset -2.5 _\fcresc b8-.) c\fz\<~(
 	c b-.) c4\fz(
 	b8-.) r r4
 % mesures 166 à 170
 	R2 \mark \default
-	<g, f' b>4.\fz r8
+	<g, f' b>4.-\offset X-offset -2.2 \fz r8
 	r4 r8 b'16(\p a
 	g8) r r4
 	r8. a16([ g8)] r
@@ -243,7 +243,7 @@ musicViolinIIMvtIV = \relative c'' {
 	b4\fz\trill r
 % mesures 196 à 200
 	b\fz\trill r 
-	a16(\ff c) c( b) a( c) c( b)
+	\dynEO #'(0 . 1) a16(\ff c) c( b) a( c) c( b)
 	a( c) c( b) a( c) c( b)
 	a8 r <g, d' b'>\arpeggio r
 	r4 g'16( d') d( b)
@@ -327,7 +327,7 @@ musicViolinIIMvtIV = \relative c'' {
 	gis4.( f'!8)-.
 % mesures 266 à 270
 	e4.( gis,8-.)
-	d'4.(_\dimmarkup f,!8\>-.)
+	d'4.(_\dimD\> f,!8-.)
 	b4.( d,8-.)\!
 	f-.\p r r4
 	R2
@@ -411,7 +411,7 @@ musicViolinIIMvtIV = \relative c'' {
 	d8 r r4
 % mesures 336 à 340
 	R2
-	c16\pp\<( e c e c e c e
+	\shape #'( () ((0 . 0.4)(0 . 0.7)(0 . 0.7)(0 . 0)) ) Slur c16\pp\<( e c e c e c e
 	c ees c ees c ees c ees\!
 	c\> ees c ees c ees c ees)\!
 	c( e! c e c e c e 
@@ -426,24 +426,24 @@ musicViolinIIMvtIV = \relative c'' {
 	g\> d8.( e16\!
 	f4\pp g) \mark \default
 	c,8 r r4
-	c(\< c'~\!
+	\shape #'((0 . -2.5)(0 . 0.7)(0 . 0.7)(0 . -0.5)) Slur c(\< c'~\!
 % mesures 351 à 355
 	c8\> b16 a) g8-.\! e-.
 	g4( g,)~
 	g8 r r4
-	c(\< c'~\!
+	\shape #'((0 . -2.5)(0 . 0.7)(0 . 0.7)(0 . -0.5)) Slur c(\< c'~\!
 	c8\> b16 a) g8-. e-.\!
 % mesures 356 à 360
 	g4( g,)~
 	g8 r r4
-	e8\pocoapococresc r e'4(_\fzmarkup~
+	e8\pocoapococresc r \markEO #'(0.8 . 5) e'4(_\fzmarkup~
 	e8 d16 c) b8-. a-.
-	e r e'4(_\fzmarkup~
+	e r \markEO #'(0 . 2) e'4(_\fzmarkup~
 % mesures 361 à 365
 	e8 d16 c) b8-. a-.
-	g r g'4(~_\fzmarkup
+	g r \markEO #'(0 . 1) g'4(~_\fzmarkup
 	g8 f16 e) d8-. c-.
-	g r g'4(_\fzmarkup~
+	g r \markEO #'(0 . 1) g'4(_\fzmarkup~
 	g8\! f16 e) d8-. c-.
 % mesures 366 à 370
 	b8 r r4
@@ -477,7 +477,7 @@ musicViolinIIMvtIV = \relative c'' {
 	b8. ais16 b8. ais16
 % mesures 391 à 395
 	b8 r r4
-	r <g,, f' b>8\f r
+	r <g,, f' b>8-\offset X-offset 0.8 \f r
 	R2*2
 	
 	r8 a'([\f-> g g,)]
@@ -520,7 +520,7 @@ musicViolinIIMvtIV = \relative c'' {
 % mesures 426 à 430
 	c( d e d)
 	c-. r r4
-	R2*11
+	R2*7
 	
 	
 % mesures 431 à 435
@@ -528,7 +528,7 @@ musicViolinIIMvtIV = \relative c'' {
 	
 	
 	
-	
+	\mmrnDown R2*4
 % mesures 436 à 440
 	
 	
@@ -550,8 +550,8 @@ musicViolinIIMvtIV = \relative c'' {
 % mesures 451 à 455
 	a~
 	a
-	g\p\>~
-	g\!
+	<< \shape #'((0 . 3)(0 . 3)(0 . 3)(0 . 3)) Slur g-\tweak extra-offset #'(0 . 0.35 ) \p^( {s8 s\> s4 } >>
+	g2)\!
 	aes\pp~
 % mesures 456 à 460
 	aes
@@ -564,7 +564,7 @@ musicViolinIIMvtIV = \relative c'' {
 	q~
 	q~
 	q4\! b'\pp\fermata
-	e4\p( dis\<
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur e4\p( dis\<
 % mesures 466 à 470
 	e) a,8-. b-.\!
 	a-. a-. a-.\> a-.
@@ -587,5 +587,5 @@ musicViolinIIMvtIV = \relative c'' {
 	q-. r 
 	q-. r
 	q-. r
-	R2\fermata \bar "|."
+	\omitMMRN R2\fermata \bar "|."
 }
