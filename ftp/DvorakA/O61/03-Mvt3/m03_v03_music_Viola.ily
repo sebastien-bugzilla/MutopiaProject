@@ -11,18 +11,18 @@ musicViolaMvtIII = \relative c {
 	\repeat volta 2 {
 		\tuplet 3/2 {e'8(\p fis gis} a8.) b16-. gis4\fp
 		\tuplet 3/2 {gis8( a b} c8.) d16-. b4\fp
-		\tuplet 3/2 {b8(\< c d} f8.->\f) e16-.( d8.-> c16-.)
+		\shape #'((0 . 0)(0 . 0)(0 . 0)(0 . -0.7)) Slur \tuplet 3/2 {b8(\< c d} f8.->\f) e16-.( d8.-> c16-.)
 		b8.(->\> a16-. gis8. fis16-.)\! e8 r
 		r4 r \tuplet 3/2 {e8(\fp e,) e-.}
 % mesures 6 à 10
 		r4 r \tuplet 3/2 {e'8(\fp e,) e-.}
 		r4 a8.(\fz\< g16-. f4)
-		b8.(_\fzmarkup a16-. g4) c8.(_\fzmarkup b16-.\!
+		\markEO #'(0 . 2) b8.(_\fzmarkup a16-. g4) \markEO #'(0 . 2.2) c8.(_\fzmarkup b16-.\!
 		a4)\f d8.( b16 g'8 g,)
 		c8.( a16 f'8 f,) b8.(_\dimmarkup gis16
 % mesures 11 à 15
 		e'8 d c[\>) r16 f-.] e8[-. r16 d-.]\!
-		<< d2.(~ {s4\p\> s s8 s\!} >>
+		<< d2.(~ {\hairpinShorten #'(-0.3 . -3) s4\p\> s s8 s\!} >>
 		d4 c2)\pp
 	}
 	d4(\p e d)
@@ -38,9 +38,9 @@ musicViolaMvtIII = \relative c {
 	gis8(\pp b c d b4)~
 	b8 d( e f d4)~
 	d8\< e-. bes'8.-- a16-. g8.-- f16-.\!
-	e8\f r \tuplet 3/2 4 {f'(\fz\> c) c-. e(_\fzmarkup c) c-. 
+	e8\f r \tuplet 3/2 4 {f'(\fz\> c) c-. \markEO #'(0 . 2.2) e(_\fzmarkup c) c-. 
 % mesures 26 à 30
-	aes(_\fzmarkup c) c-.\! g(-> c) c-. f,(_\pdim c) c-.
+	\markEO #'(0 . 2) aes(_\fzmarkup c) c-.\! g(-> c) c-. f,(_\pdim c) c-.
 	e( c) c-. aes( c) c-. g(\pp c) c-.
 	f,( c) c-. e( c) c-.} r4
 	\tuplet 3/2 {e8( c) c-.} r4 \tuplet 3/2 {e8( c) c-.}
@@ -49,7 +49,7 @@ musicViolaMvtIII = \relative c {
 % mesures 31 à 35
 		c'4(\pp d e
 		g fis\< f)~
-		f8( e d c\! e4~
+		\beamOffset #'(0 . 0.5) f8( e d c\! e4~
 		e ees\> d)
 		c2.(~
 % mesures 36 à 40
@@ -60,14 +60,14 @@ musicViolaMvtIII = \relative c {
 		g( fis_\crescmarkup f~
 % mesures 41 à 45
 		f8 e d c e4)
-		\sharptrillspan b'2.\f\startTrillSpan~
+		\trillSpanPadding #3 \sharptrillspan b'2.\f\startTrillSpan~
 		b2\> ais8(\stopTrillSpan\! b16 ais)
 		a!2\startTrillSpan gis4\startTrillSpan
-		<< fis2. {\sharptrillspan s4\p\>\startTrillSpan s s\!\stopTrillSpan } >> \mark \default
+		<< fis2. {\hairpinShorten #'(-0.3 . -2) \sharptrillspan s4\p\>\startTrillSpan s s\!\stopTrillSpan } >> \mark \default
 % mesures 46 à 50
 		e8 r\! \tuplet 3/2 4 {fis( dis e dis cis dis)}
 		e4 \tuplet 3/2 4 {fis8( dis e dis cis dis)}
-		e8(\< b'~ \tuplet 3/2 4 {b gis a gis\! fis gis)}
+		\shape #'((0 . -1)(0 . 1)(0 . 0.5)(0 . 0)) Slur e8(\< b'~ \tuplet 3/2 4 {b gis a gis\! fis gis)}
 		\tuplet 3/2 4 {a( b_\crescmarkup a gis e fis gis fis gis)}
 		\tuplet 3/2 4 {a( b a} gis4~_\dimmarkup \tuplet 3/2 {gis8 fis gis)}
 % mesures 51 à 55
@@ -80,7 +80,7 @@ musicViolaMvtIII = \relative c {
 		g! f g
 		e_\dimmarkup c a
 		d c d)
-		b(\p gis a_\dimmarkup
+		b(\p gis a-\tweak extra-offset #'(0 . -6.8) ^\dimmarkup
 		g! c, e
 % mesures 61 à 65
 		g a c,
@@ -96,7 +96,7 @@ musicViolaMvtIII = \relative c {
 		e'-. e,-. e'_\crescmarkup-. e,-. e'-. e,-. 
 % mesures 71 à 75
 		e'-. e,-. \tuplet 3/2 4 {a( a,) a-. b'(\< b,) b-.
-		b'( b,) b-. c'( c,) c-. c'(\f c,) a'-.}
+		b'( b,) b-. c'( c,) c-. c'(-\offset X-offset -0.5 \f c,) a'-.}
 		<f bes>8 r r4 r
 		R2. 
 		\tuplet 3/2 {e,8(\f fis gis)} a8.-> b16-. c8.-> d16-.
@@ -111,7 +111,7 @@ musicViolaMvtIII = \relative c {
 		\tuplet 3/2 {e8( a) a-.} r4 r
 	}
 	e2.
-	e\fermata_\attacca \markFine \break \bar "||" \key a \major \time 2/4
+	e\fermata_\attacca \markYoffset #4 \markFine \bar "||" \key a \major \time 2/4
 	e2\p~^\trio
 % mesures 86 à 90
 	e\<
@@ -141,7 +141,7 @@ musicViolaMvtIII = \relative c {
 	\tuplet 3/2 4 {gis a gis_\crescmarkup a gis cis)}
 	a4.(\< fis8
 	\tuplet 3/2 4 {gis a gis\! a gis cis)
-	b\f( cis b cis b d
+	\once \tupletDown b\f( cis b cis b d
 	fis gis fis gis\> fis b,)\!
 % mesures 111 à 115
 	cis( d_\dimmarkup cis d cis fis->
@@ -164,7 +164,7 @@ musicViolaMvtIII = \relative c {
 % mesures 126 à 130
 	fis!(
 	b4 d,8 fis)
-	\tuplet 3/2 4 {a8( b a b a r)} \bar "||"
+	\tupletDown \tuplet 3/2 4 {a8( b a b a r)} \bar "||" \tupletNeutral
 	fis4.\pp( d8
 	\tuplet 3/2 4 {e fis e fis e a)}
 % mesures 131 à 135
@@ -249,7 +249,7 @@ musicViolaMvtIII = \relative c {
 % mesures 191 à 195
 	g4( ees8. bes16
 	f'2) \mark \default
-	<bes, f'>4\p^\pizz r
+	<bes, f'>4-\offset X-offset 0.5 \p^\pizz r
 	<bes f'> r
 	<bes ges'> r
 % mesures 196 à 200
@@ -260,7 +260,7 @@ musicViolaMvtIII = \relative c {
 	<bes f'> r
 % mesures 201 à 205
 	R2
-	\tuplet 3/2 4 {bes8(\p^\arco c bes c bes bes')}
+	\tuplet 3/2 4 {bes8(\p-\offset X-offset -4 ^\arco c bes c bes bes')}
 	R2
 	\tuplet 3/2 4 {bes,8(_\crescmarkup c bes c bes bes')}
 	R2
@@ -329,7 +329,7 @@ musicViolaMvtIII = \relative c {
 	gis8 r r4
 	R2*2
 	
-	r4 e,16(\f fis e e')
+	r4 e,16(-\offset X-offset -2 \f fis e e')
 	r4 e,16( fis e e')
 % mesures 256 à 260
 	R2*3 \mark \default
@@ -345,7 +345,7 @@ musicViolaMvtIII = \relative c {
 	d4( cis8. b16)
 % mesures 266 à 270
 	a4. r8
-	<a e' cis'>4\f^\pizz\arpeggio a
+	<a e' cis'>4\f-\offset X-offset #-1 ^\pizz\arpeggio a
 	<a e' cis'>\arpeggio a
 	<a f' a>\arpeggio a
 	<a e' cis'>\arpeggio a
@@ -372,9 +372,9 @@ musicViolaMvtIII = \relative c {
 	dis\>( cis
 	b2)\!
 	a4(\p\> b
-	c2)~\!
+	\stemUp c2)~\!
 % mesures 291 à 295
-	c4\pp a\fermata
+	c4\pp \stemNeutral a\fermata
 	e8 r c'8.( d16
 	b2)\fermata
 	e4.( fis8-.)

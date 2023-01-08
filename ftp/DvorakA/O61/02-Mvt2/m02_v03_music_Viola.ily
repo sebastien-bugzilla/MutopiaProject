@@ -8,21 +8,21 @@ musicViolaMvtII = \relative c {
 	\key f \major
 	\clef alto
 % mesures 1 à 5
-	\tuplet 3/2 {r8 c(\pp f} a4~ \tuplet 3/2 {a8 d, f} d'4)~
+	\tuplet 3/2 {r8 c(\pp f} a4~ \once \tupletDown \tuplet 3/2 {a8 d, f} d'4)~
 	\tuplet 3/2 {d8(\< c f,} a4)\! \tuplet 3/2 {r8\> d,( g} bes4)\!
 	\tuplet 3/2 {r8 c,( a'_\dimmarkup} c4)~ \tuplet 3/2 {c8 a( f} g e)
-	\tuplet 3/2 {r8 c\pp( f} a4~\< \tuplet 3/2 {a8 g c,} c'4)~\!
+	\tuplet 3/2 {r8 c\pp( f} a4~\< \tupletOffset #-3 \tuplet 3/2 {a8 g c,} c'4)~\!
 	\tuplet 3/2 {c8( a d,} d'4)~ \tuplet 3/2 {d8(\> g, d} bes'4\!)
 % mesures 6 à 10
-	\tuplet 3/2 {r8 d,(\pp bes'~} \once \stemUp <bes d>4~ \tuplet 3/2 {q8 d, bes'~} <bes d>4)
+	\tuplet 3/2 {r8 d,(\pp bes'~} \once \stemUp <bes d>4~ \once \tupletDown \tuplet 3/2 {q8 d, bes'~} <bes d>4)
 	\tuplet 3/2 {r8 d,(\< bes'~} \once \stemUp <bes d>4~\! \tuplet 3/2 {q8\> d, bes'~} \once \stemUp <bes d>4\!)
-	\tuplet 3/2 {r8 d,\pp( bes'~} \once \stemUp <bes d>4~ \tuplet 3/2 {q8 d, bes'~} \once \stemUp <bes d>4)
+	\tuplet 3/2 {r8 d,-\offset X-offset -2.2 \pp( bes'~} \once \stemUp <bes d>4~ \tuplet 3/2 {q8 d, bes'~} \once \stemUp <bes d>4)
 	\tuplet 3/2 {r8 d,\< bes'~} \once \stemUp <bes d>4~\! \tuplet 3/2 {q8 d,(\> bes'} d bes\!)
-	\tuplet 3/2 {\stemDown c(\pp g ees'~} \stemNeutral <ees g>4)~ \tuplet 3/2 {q8 g,( ees'~} <ees g>4)~
+	\tupletUp \tuplet 3/2 {\stemDown c(\pp g ees'~} \stemNeutral <ees g>4)~ \tuplet 3/2 {q8 g,( ees'~} <ees g>4)~
 % mesures 11 à 15
 	\tuplet 3/2 {<ees g>8 g,( ees'_\crescmarkup~} <ees g>4)~ \tuplet 3/2 {q8 g,( ees'~\>} <ees g>4)~
 	\tuplet 3/2 {q8\pp g,( ees'~} <ees g>4)~ \tuplet 3/2 {q8 g,( ees'~} <ees g>4)~
-	\tuplet 3/2 {q8\< g,( ees'~} <ees a>4~) \tuplet 3/2 {q8\! c,( ees~} <ees a>4) \mark \default
+	\tuplet 3/2 {q8\< g,( ees'~} <ees a>4~) \tuplet 3/2 {q8\! c,( ees~} <ees a>4) \mark \default \tupletNeutral
 	<d bes'>8-.\f r r4 r16 \clef treble bes''32(\p d f16-.) r \clef alto r8. f,,16->\f
 	a8-> r r4 \clef treble r16 cis'32(\p e g16-.) r r8. \clef alto bes,,16->\f
 % mesures 16 à 20
@@ -34,18 +34,18 @@ musicViolaMvtII = \relative c {
 % mesures 21 à 25
 	ees1*1/3 s1*2/3\<
 	ees2( ges)\!
-	<ges bes>4\f bes16 bes8 bes16 bes8( bes'~ bes16 ges ees c)
+	<ges bes>4\f bes16 bes8 bes16 \shape #'((0 . -2)(-1 . 0.8)(1 . 0.8)(0.3 . -2)) Slur bes8( bes'~ bes16 ges ees c)
 	r8 des(\> ees8. e16) f8( d\! ees\p ges)
 	r4 ees,(\pp aes ges) \bar "||" \key des \major
 % mesures 26 à 30
 	\tuplet 3/2 {f8( des'! c} bes16 des aes des) \tuplet 3/2 {ges,8\<( aes beses\!} aes16\> des ges, des')\!
 	\tuplet 3/2 4 {f,8(\< aes des ees, aes c) d,( aes' ces\! ees, g des')}
-	\tuplet 3/2 {f,\pp( aes c} des16 f c f) \tuplet 3/2 {bes,8( c des} c16 f bes, f')
+	\once \tupletDown \tuplet 3/2 {f,\pp( aes c} des16 f c f) \tuplet 3/2 {bes,8( c des} c16 f bes, f')
 	\tuplet 3/2 {aes,8( c aes} ees16 c' aes ees')~ \tuplet 3/2 4 {ees8 aes,( des~ des c ees)~
-	ees aes,(_\crescmarkup des~ des c ees~ ees) aes,( des~ des c ees)}
+	ees aes,(-\offset X-offset #1.5 ^\crescmarkup des~ des c ees~ ees) aes,( des~ des c ees)}
 % mesures 31 à 35
 	des8.( c16_\dimmarkup des8. c16) des8.( c16 des8. c16) \mark \default
-	des4 r r \tuplet 3/2 {r8 des,^\pizz des}
+	des4 r r \tupletOffset #1.7 \tuplet 3/2 {r8 des,^\pizz des}
 	des\< f ees c' d, ces' d,\! ees'
 	f, f' r4\> f,8 f' r4\!
 	f,8 r \tuplet 3/2 {c'(^\arco\pp c' bes)} a4 a16( c g c)
@@ -81,25 +81,25 @@ musicViolaMvtII = \relative c {
 	gis d')
 % mesures 61 à 65
 	cis4(~ cis16 ais gis fis e2~)
-	e2~\pp\< e8\! r r4
-	e'4_\crescmarkup r8 c4( bes8) r g8~\f\>
+	\hairpinShorten #'(-0.3 . -1.5) e2~\pp\< e8\! r r4
+	e'4_\crescmarkup r8 c4( bes8) r \hairpinShorten #'(-0.3 . -1.5) g8~\f\>
 	g4\! r8 <<{e4.~ e4} \\ {e4._\dimmarkup( c8 bes)}>> \bar "||" \key f \major
 	r4 a(\p\> \once \stemUp c bes)\! \mark \default
 % mesures 66 à 70
-	\tuplet 6/4 4 {a16(\pp c a c a f' a, c a c a f' g, bes g bes g g' g, bes g bes g bes)
+	\tuplet 6/4 4 {a16(\pp c a c a f' a, c a c a f' g, bes g bes g g' \once \tupletDown g, bes g bes g bes)
 	d,( f d f d d' d, f d f d f d f d f d f c g' c, bes' c, bes')
 	a( c, f c f c g' c, g' c, c' c, f a f a f f' f, a f a f g)
 	f( a f a f a a c a c_\crescmarkup a c \stemUp g c g c g g' \stemNeutral g, c g c g c)
-	a(\< c a c a a' a, c a c a c\! \stemUp g\> d' g, d' g, g' \stemNeutral g, d' g, d' g, d')\!
+	\once \tupletUp a(\< c a c a a' a, c a c a c\! \stemUp g\> d' g, d' g, g' \stemNeutral g, d' g, d' g, d')\!
 % mesures 71 à 75
 	d(\pp f c e bes d bes d bes d bes d bes d bes d bes d bes d bes d bes d) 
-	bes(\< d bes d bes d bes d bes d bes d bes d bes d\! bes\> d bes d bes d bes d)\!
+	\tupletUp bes(\< d bes d bes d bes d bes d bes d bes d bes d\! bes\> d bes d bes d bes d)\! \tupletNeutral
 	d(\pp f c e bes d bes d bes d bes d bes d bes d bes d bes d bes d bes d)
-	bes(\< d bes d bes d bes d bes d bes d bes d bes\! d\> bes d bes d bes d bes d)\!
+	\tupletUp bes(\< d bes d bes d bes d bes d bes d bes d bes\! d\> bes d bes d bes d bes d)\! \tupletNeutral
 	c\pp( ees c ees c ees ees g ees g ees g ees g ees g ees g ees g ees g ees g)
 % mesures 76 à 80
 	g( bes f a\< ees g ees g, ees g ees g\! ees g ees g ees g ees g ees g ees' g)
-	a,( c ees a, c_\crescmarkup ees a, c ees a c a ees' c ees, a a, c f, a f' a, f a)} \mark \default
+	\shape #'((0 . -3)(0 . 0)(0 . 0)(0 . 0)) Slur a,( c ees a, c_\crescmarkup ees a, c ees a c a ees' c ees, a a, c \once \tupletDown f, a f' a, f a)} \mark \default
 	d,32\fp\>( f d f d f d f\! d f d f d f d f d f d f d f d f d f d f d f d f)
 	des(\fz f des f des f des f des f des f des f des f des f des f des f des f des f des f des f des f)
 	f4 r r8 <f f'>8(--_\dimmarkup q-- q--)
@@ -113,7 +113,7 @@ musicViolaMvtII = \relative c {
 	f8(\pp e f e dis e dis e
 	g!2) r4 r8 cis,32( d cis d
 	des8 c! des c) b'( c~ c16) c32( b c8~
-	c) r16 f,32_\crescmarkup f f8( bes!~ bes) ees,~( ees16 aes8 d,!16)~_\dimmarkup
+	\once \stemUp c) r16 f,32_\crescmarkup f f8( bes!~ bes) ees,~( ees16 aes8 d,!16)~_\dimmarkup
 	d g(-. c,-. f-.) g8-.\p r f--\pp r r4
 % mesures 91 à 95
 	r8 bes-- r4 r8 <bes e>8 r4

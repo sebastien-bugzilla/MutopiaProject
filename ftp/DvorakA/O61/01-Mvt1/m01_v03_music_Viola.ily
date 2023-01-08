@@ -10,9 +10,9 @@ musicViolaMvtI = \relative c' {
 % mesures 1 à 5
 	\repeat volta 2 {
 		<c e>1\pp~
-		<< q {s4\< s s s\!} >>
-		c2.\fp\> \tuplet 3/2 {c8 c c}
-		c2. \tuplet 3/2 {c8 c c\!}
+		<< q {\hairpinShorten #'(0 . -0.5) s4\< s s s\!} >>
+		c2.\fp\> \once \tupletUp \tuplet 3/2 {c8 c c}
+		c2. \once \tupletUp \tuplet 3/2 {c8 c c\!}
 		<c, c'>2.\pp \tuplet 3/2 {q8 q q}
 % mesures 6 à 10
 		q2. \tuplet 3/2 {q8 q q}
@@ -46,8 +46,8 @@ musicViolaMvtI = \relative c' {
 		<a, e' a>8\f r16 a-. \tuplet 3/2 {a8( b cis-.)} d8[ r16 e] f8 r
 % mesures 31 à 35
 		a,4\fp r8 a-. d-. d,-. r4
-		r8. c'16-.\f \tuplet 3/2 {c8(\< d e-.)} f8[ r16 g] a8\! r
-		c,4\fp r8 c-. f-. f,-. r4
+		r8. c'16-.\f \once \tupletUp \tuplet 3/2 {c8(\< d e-.)} f8[ r16 g] a8\! r
+		c,4-\offset X-offset 0.8 \fp r8 c-. f-. f,-. r4
 		dis'4\pp( fis8 dis g c, e g)
 		fis4( dis8 fis g c, e g)
 % mesures 36 à 40
@@ -58,7 +58,7 @@ musicViolaMvtI = \relative c' {
 		b8\f r16 g-. \tuplet 3/2 {g8( a) b-.} b8[ r16 g'] \tuplet 3/2 {g8( a) b-.}
 % mesures 41 à 45
 		b r r4 r2
-		<g, e' c'>8\ff r r4 r2
+		<g, e' c'>8-\offset X-offset 0.8 \ff r r4 r2
 		\tuplet 3/2 {f'8\f( aes) b-.} c8.-> d16-. c8 r r4
 		r2 <c,, aes' f'>8 r r4
 		r4 \tuplet 3/2 4 {g'8(\p a) b-. <f b>( c') d-. d4( f8)
@@ -71,25 +71,25 @@ musicViolaMvtI = \relative c' {
 % mesures 51 à 55
 		ees2 c)
 		d aes4.( c8)
-		d2 \tuplet 3/2 {f,8(_\crescmarkup aes c} d8. ees16-.)
-		d1~\<
+		d2 \once \tupletDown \tuplet 3/2 {f,8(_\crescmarkup aes c} d8. ees16-.)
+		\hairpinShorten #'(0 . 0.5) d1~\<
 		<< {\voiceOne d\! } \new Voice {\voiceTwo c2( aes)\!} >> \oneVoice 
 % mesures 56 à 60
-		d,16(\p\> f d f d f d f d\! f d f d f d f)
-		d(\pp f d f d f d f d f d f d f d f)
-		d( f d f d\< f d f d f d f d f d f)
-		f( aes f\! aes f aes f\> aes f aes f aes f aes f aes)
-		f(\pp aes f aes f aes f aes f\< aes f aes f aes f aes)
+		\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur \repeat tremolo 4 {d,16(-\tweak extra-offset #'(0  . 0.3) \p\> f} \repeat tremolo 4 {d f)\!} 
+		\repeat tremolo 4 {d(\pp f} \repeat tremolo 4 {d f)}
+		\repeat tremolo 4 {d(\< f} \repeat tremolo 4 {d f)\!}
+		\repeat tremolo 4 {f(\> aes } \repeat tremolo 4 {f aes)\!}
+		\repeat tremolo 4 {f(\pp aes} \repeat tremolo 4 {f\< aes)}
 % mesures 61 à 65
-		f( aes f aes f aes f aes f aes f aes f aes f' aes)\!
+		\repeat tremolo 4 {f( aes} f aes f aes \beamOffset #'(0.4 . 0) f aes f' aes)\! 
 		<bes, aes'>8\f r q4-> r bes8(\< d
 		f-.)\! r r4 r2
-		r8. bes,16\p\<( << ces2.)~ {s4\> s s\!} >>
+		r8. \hairpinShorten #'(-0.3 . 0) bes,16\p\<( << \once \stemUp ces2.)~ {s4\> s s\!} >>
 		ces1_\dimmarkup
 % mesures 66 à 70
 		b!\pp
 		<<aes~ {s4\< s s s\!} >>
-		aes2\> bes\ppp~ \mark \default
+		\hairpinShorten #'(-0.5 . -0.3) aes2\> bes\ppp~ \mark \default
 		bes4 r r2
 		R1*5
 % mesures 71 à 75
@@ -114,7 +114,7 @@ musicViolaMvtI = \relative c' {
 		d,( d') d-. d-. d-. d-. d-. d-.
 		g-.[\ppp r16 d( g8) r16 d(] g8) r r4
 		g,8[-. r16 d( g8) r16 d]( g8) r r4
-		r4 r8. a'16(\p\< c8)[ r16\> a(] c8)\! r
+		r4 r8. \hairpinShorten #'(-0.3 . -0.4) a'16(-\offset X-offset -0.5 \p\< c8)[ \hairpinShorten #'(0.4 . 0) r16\> a(] c8)\! r
 		r4 r8. g,16(_\dimmarkup g'8)[ r16 g,(] g'8) r
 % mesures 91 à 95
 		g,8\pp r r8. f!16( ees8)[ r16 f(] ees8) r
@@ -124,14 +124,14 @@ musicViolaMvtI = \relative c' {
 		g'(\> fis8 g dis e b cis)\!
 % mesures 96 à 100
 		d!4( b8 g c!2)\pp
-		b16(\p\< g b g b g b g b g b g b g b g)\!
-		b(\f g b g b g b g cis g cis g d' g, e' g,)
-		d'( g, b g d' g, b g_\dimmarkup a g a g a g a g)
-		b(\p g b g d' g, b g b g b g b g b g)
+		\repeat tremolo 4 {b16(\p\< g} \repeat tremolo 4 {b g)\!}
+		\repeat tremolo 4 {b(\f g} cis g cis g d' g, e' g,)
+		d'( g, b g d' g, b g_\dimmarkup \repeat tremolo 4 {a g)}
+		b(\p g b g d' g, b g \repeat tremolo 4 {b g)}
 % mesures 101 à 105
-		b4 \tuplet 3/2 4 {g'8\>( fis g e dis e} b8 cis\!)
+		b4 \tupletUp \tuplet 3/2 4 { \tupletOffset #3.1 g'8\>( fis g e dis e} \tupletNeutral b8 cis\!)
 		d!4(\pp b g4. a8)
-		ais8( b4 g8 c2)
+		ais8( b4 g8 \once \stemUp c2)
 		b( <d, a'!>)
 		b'( <d, a'>)
 % mesures 106 à 110
@@ -139,12 +139,12 @@ musicViolaMvtI = \relative c' {
 	}
 	\alternative {
 		{
-			b(\< a)\!
+			\hairpinShorten #'(0 . -3) b(\< a)\!
 			b8 r r g(~\> g a4 g8)\!
 			R1*2
 			
 % mesures 111 à 115
-			r2 r4 <b dis>4\pp~
+			r2 r4 \once \stemUp <b dis>4\pp~
 			q1
 		}
 		{
@@ -152,7 +152,7 @@ musicViolaMvtI = \relative c' {
 			b2(\< a\!
 		}
 	}
-	gis8)\! r r4 r r8 e(~_\pdim
+	gis8)\! r r4 r r8 \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e(~\p-\tweak extra-offset #'(1.3 . 1.2) _\dimmarkup
 	e f4 e8~ e) r r4
 	R1*2
 % mesures 111 à 115
@@ -160,31 +160,31 @@ musicViolaMvtI = \relative c' {
 	<c' e>1\pp~
 	q
 	a'16( c a c a c a c a c a c a c a b)
-	c( a e a e a e a \stemUp e c a c \stemNeutral a c a c) 
+	\shape #'((0 . -0.1)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur c( a e a e a e a \stemUp e c a c \stemNeutral a c a c) 
 % mesures 116 à 120
 	b2 g4..->( a16)
 	b2 \tuplet 3/2 {e,8( g a} b8. c16-.)
 	b1
 	bes2 \tuplet 3/2 {e,8( g a} bes8. c16-.)
-	a16( c a c a c a c a c a c a c a c)
+	\repeat tremolo 4 {a16( c } \repeat tremolo 4 {a c)}
 % mesures 121 à 125
-	a( c a c a c a c a_\crescmarkup c a c a c a c)
-	b!( d b d b d b d b d b d b d b d)
-	b(\< d b d b d b d b d b d\! b d b d)
-	cis(\< e cis e cis e cis e cis e cis e\! cis e cis e) \mark \default
+	\repeat tremolo 4 {a( c } \repeat tremolo 4 {a_\crescmarkup c)}
+	\repeat tremolo 4 {b!( d} \repeat tremolo 4 {b d)}
+	\repeat tremolo 4 {b\<( d} \repeat tremolo 4 {b\! d)}
+	\repeat tremolo 4 {cis\<( e} \repeat tremolo 4 {cis\! e)} \mark \default
 	<cis e>8\f r r4 \tuplet 3/2 {ais8-.\f cis-. e-.} fis8.-> g16-.
 % mesures 126 à 130
 	fis8 r r4 r2
 	r2 fis8.\fz g16-. fis8 r
 	r4 fis,8.-> g16 fis8\< r \tuplet 3/2 {e'8-> d-> cis->\!}
-	b8-._\ffferoce r b'4(\fz b,8) r d4(\fz
-	d,8) r d''4(\fz b8) r d,,4(\fz
+	b8-.\ff-\offset X-offset -1 ^\feroce r b'4(\fz b,8) r d4(\fz
+	d,8) r d''4(\fz b8) r d,,4(-\offset X-offset -0.5 \fz
 % mesures 131 à 135
 	cis8) r a''4(\fz a,8) r cis4(\fz
 	cis,8) r cis''4(\fz a8) r cis,4(\fz
 	\tuplet 3/2 4 {b8)( g b g b g b g b g b g)
 	a( f! a f_\dimmarkup a f a f a f a f) \mark \default
-	<e b'>8\pp-.( q-. q-.)} q8. q16 \tuplet 3/2 {q8-.( q-. q-.)} q8. q16
+	<e b'>8-\offset X-offset -1 \pp-.( q-. q-.)} q8. q16 \tuplet 3/2 {q8-.( q-. q-.)} q8. q16
 % mesures 136 à 140
 	\tuplet 3/2 {q8-.( q-. q-.)} q8. q16 \tuplet 3/2 {q8-.( q-. q-.)} q8. q16
 	\tuplet 3/2 {<cis b'>8(-. q-. q-.)} q8. q16 \tuplet 3/2 {q8-.( q-. q-.)} q8. q16
@@ -210,9 +210,9 @@ musicViolaMvtI = \relative c' {
 	g b, b') r d,(_\dimmarkup aes aes') r
 	aes,( d, d') r g,( d d') r
 % mesures 156 à 160
-	aes2\p \tuplet 3/2 {aes8(\< g aes\!} c16\> bes)\! r16 aes-.
+	aes2\p \tuplet 3/2 {\hairpinShorten #'(0 . 0.5) aes8(\< g aes\!} \hairpinShorten #'(-0.5 . 0) c16\> bes)\! r16 aes-.
 	a!1
-	aes2_\dimmarkup \tuplet 3/2 {aes8(\< g aes\!} c16\> bes)\! r aes-.
+	aes2-\offset X-offset -1.5 _\dimmarkup \tuplet 3/2 {\hairpinShorten #'(0 . 0.5) aes8(\< g aes\!} \hairpinShorten #'(-0.5 . 0) c16\> bes)\! r aes-.
 	a!1\pp
 	aes2 \tuplet 3/2 {aes8( g aes} c16 bes) r16 aes-.
 % mesures 161 à 165
@@ -229,8 +229,8 @@ musicViolaMvtI = \relative c' {
 	r4 c'8\fz g,-. r4 cis'8\fz g,-.
 % mesures 171 à 175
 	d''8\fz g,,16 g g'-> g g, g g'-> g g, g g'-> g g, g
-	c'8\ff r r4 c,,16(-> d c d c d c d)
-	c( d c d c d c d) c16( d c d c d) r e-.
+	c'8\ff r r4 \repeat tremolo 4 {c,,16(-> d)}
+	\repeat tremolo 4 {c( d)} c16( d c d c d) r e-.
 	e1\fz 
 	<e g>->
 % mesures 176 à 180
@@ -238,9 +238,9 @@ musicViolaMvtI = \relative c' {
 	<f aes>1\fz
 	<e a!>8\fz r16 a \tuplet 3/2 {a8(\< b cis-.)} d8[ r16 e] f8\! r
 	a,4\fp r8 a-. d-. d,-. r4
-	r8. c'16\f\< \tuplet 3/2 {c8( d e-.)} f8[ r16 g] a8\! r
+	r8. c'16-\tweak extra-offset #'(0 . 0.6) \f\< \tuplet 3/2 {c8( d e-.)} f8[ r16 g] a8\! r
 % mesures 181 à 185
-	c,4\fp r8 c-. f f,-. r4
+	c,4-\offset X-offset 0.8 \fp r8 c-. f f,-. r4
 	dis'4(\pp fis8 dis g c, e g)
 	fis4( dis8 fis g c, e g)
 	c4( fis,8 c')~ c c,( g' c)
@@ -250,7 +250,7 @@ musicViolaMvtI = \relative c' {
 	c'4( f,8 c')~ c g( ees c)\!
 	b\f r16 g \tuplet 3/2 {g8( a) b-.} b8[ r16 g'] \tuplet 3/2 {g8( a) b-.}
 	b-. r r4 r2 \mark \default
-	<g, e' c'>8\ff r r4 r2
+	<g, e' c'>8-\offset X-offset 0.8 \ff r r4 r2
 % mesures 191 à 195
 	\tuplet 3/2 {f'8\fz\<( aes) b!} c8.-> d16-.\! c8 r r4
 	r2 <f,, aes>8\fz r r4
@@ -267,7 +267,7 @@ musicViolaMvtI = \relative c' {
 	r4 <d' f>2\< q4~
 	q q2 q4~\!
 	q8\f r r4 r2
-	<f, b>1~\fz\>
+	\hairpinShorten #'(-0.3 . -1) <f, b>1~\fz\>
 	q8\! r r4 r d'8\mf r
 % mesures 206 à 210
 	r2 b8\p r r4
@@ -277,7 +277,7 @@ musicViolaMvtI = \relative c' {
 	a'1\pp 
 % mesures 211 à 215
 	e2( cis4.. d16-.)
-	e2 \tuplet 3/2 {a,8( cis d} e8. fis16-.)
+	e2 \once \tupletDown \tuplet 3/2 {a,8( cis d} e8. fis16-.)
 	e1(
 	c!2 a)
 	b f!4..( a16-.)
@@ -285,30 +285,30 @@ musicViolaMvtI = \relative c' {
 	b2 \tuplet 3/2 {d,8( f a} b8. c16-.)
 	b1(_\crescmarkup
 	a2 f)
-	d16(\p b' d, b' d, b' d, b' d,_\dimmarkup b' d, b' d, b' d, b')
-	d,( b' d, b' d, b' d, b' d, b' d, b' d, b' d, b')
+	\repeat tremolo 4 {d16(\p b'} \repeat tremolo 4 {d,_\dimmarkup b')}
+	\repeat tremolo 4 {d,( b'} \repeat tremolo 4 {d, b')}
 % mesures 221 à 225
-	d,(\pp b' d, b' d, b' d, b' d, b' d, b' d, b' d, b')
-	f( d' f, d' f, d' f, d' f, d' f, d' f, d' f, d')
-	f,( d' f, d' f, d' f, d' f,_\crescmarkup d' f, d' f, d' f, d')
-	f,(\< d' f, d' f, d' f, d' f, d' f, d' f, d' f, d')\!
+	\repeat tremolo 4 {d,(\pp b'} \repeat tremolo 4 {d, b')}
+	\repeat tremolo 4 {f( d'} \repeat tremolo 4 {f, d')}
+	\repeat tremolo 4 {f,( d'} \repeat tremolo 4 {f, d')}
+	\repeat tremolo 4 {f,(\< d'} \repeat tremolo 4 {f, d')\!}
 	<f, d'>8\f r <g f'>\fz r r4 g8(\< b
 % mesures 226 à 230
 	d-.)\! r r4 r2
-	r8. g,16\p\<( aes2.\>)~
+	r8. \hairpinShorten #'(-0.3 . -1.5) g,16-\offset X-offset -1 \p\<( \hairpinShorten #'(1.5 . 0) aes2.\>)~
 	aes1\!~
 	aes\p\>
 	f\pp~
 % mesures 231 à 235
 	f2( g4 aes \mark \default
-	c) r r2
+	\once \stemUp c) r r2
 	R1
 	c4(\pp\< ais8 b c4 cis)
 	d( fis g fis)\!
 % mesures 236 à 240
 	f!2(\f e4\> d)
 	c2( a4 b)\!
-	c4(\pp\< cis\> d f)\!
+	\hairpinShorten #'(-0.3 . -2) c4(-\offset X-offset -1 \pp\< \hairpinShorten #'(2 . 0) cis\> d f)\! 
 	e8(\< c! cis4\> d f)\!
 	e8(\< c! g d') cis( a e bes')\!
 % mesures 241 à 245
@@ -327,19 +327,19 @@ musicViolaMvtI = \relative c' {
 	e8-.[ r16 a,( e'8) r16 a,(] e'8) r r4
 	r4 r8. fis16(\< a8)[ r16\> fis]( a8)\! r
 	r4 r8. dis,,16(_\dimmarkup dis'8)[ r16 dis,]( dis'8) r
-	b4\pp(\< c2\> a4)\!
+	\hairpinShorten #'(-0.3 . -1) b4-\offset X-offset -1 \pp(\< \hairpinShorten #'(1 . 0) c2\> a4)\!
 	gis4(\< a2\> fis4)\! \mark \default
 % mesures 256 à 260
 	gis8( b4 gis) e'( gis,8)~
 	gis\< e'( dis cis)\! bis(\> cis dis e)\!
 	e4(\p dis8 e bis cis gis ais)
 	b!4(\pp gis8 e a!2)
-	gis16(\p e gis e gis\< e gis e gis e gis e gis e gis e)\!
+	\repeat tremolo 4 {gis16(\p e} \repeat tremolo 4 {gis e\!)}
 % mesures 261 à 265
-	gis(\f e gis e gis e gis e ais\> e ais e b' e, cis' e,)\!
-	b'( e, gis e b' e, gis e fis e fis e fis e fis e)
-	gis(_\dimmarkup e gis e b' e, gis e gis e gis e gis e gis e)
-	gis4 \tuplet 3/2 4 {e'8( dis e cis bis cis} gis!8 ais)
+	\repeat tremolo 4 {gis(\f e } ais\> e ais e b' e, cis' e,)\!
+	b'( e, gis e b' e, gis e \repeat tremolo 4 {fis e)}
+	gis(_\dimmarkup e gis e b' e, gis e \repeat tremolo 4 {gis e)}
+	gis4 \tuplet 3/2 4 {e'8( dis e \once \tupletDown cis bis cis} gis!8 ais)
 	b!4( gis e4. fis8)
 % mesures 266 à 270
 	fisis8(\p gis4 e8 a2)
@@ -348,17 +348,17 @@ musicViolaMvtI = \relative c' {
 	gis(\pp fis
 	gis fis) \mark \default
 % mesures 271 à 275
-	d16_\pppnonlegato a' d, a' d, a' d, a' d, a' d, a' d, a' d, a' 
-	d, a' d, a' d, a' d, a' d, a' d, a' d, a' d, a' 
-	a d a d a d a d a d a d a d a d 
-	a d a d a d a d a d a d a d a d 
-	a d a d a d a d a d a d a d a d 
+	\repeat tremolo 4 {d16_\pppnonlegato a' } \repeat tremolo 4 {d, a'} 
+	\repeat tremolo 4 {d, a'} \repeat tremolo 4 {d, a'} 
+	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
+	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
+	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
 % mesures 276 à 280
-	a d a d a d a d a d a d a d a d 
-	a_\crescmarkup d a d a d a d a d a d a d a d 
-	a d a d a d a d a d a d a d a d 
-	a d a d a\< d a d a d a d a d a d 
-	a d a d a d a d a\! d a d a d a d 
+	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
+	\repeat tremolo 4 {a_\crescmarkup d} \repeat tremolo 4 {a d} 
+	\repeat tremolo 4 {a d} \repeat tremolo 4 {a d} 
+	\repeat tremolo 4 {a d\<} \repeat tremolo 4 {a d} 
+	\repeat tremolo 4 {a d\!} \repeat tremolo 4 {a d} 
 % mesures 281 à 285
 	\tuplet 3/2 {d8\f-.( f-. aes-.)} c4-> \tuplet 3/2 {d,8-.( f-. aes-.)} c4-> 
 	\tuplet 3/2 4 {d,8->\< f aes c-> f, aes c-> f, aes c-> f, aes\!} \mark \default
@@ -366,11 +366,11 @@ musicViolaMvtI = \relative c' {
 	r f,\pp~
 	f1
 % mesures 286 à 290
-	fis2 \tuplet 3/2 {ais,8( cis dis} e!8. fis16-.)
+	fis2 \once \tupletDown \tuplet 3/2 {ais,8( cis dis} e!8. fis16-.)
 	dis1_\crescmarkup
-	\tuplet 3/2 {d!8(\< gis, b} d8. e16-.) cis2\!
-	\tuplet 3/2 {c!8(\< fis, a} c8. d16-.) c2\!
-	<< <c e>1 {s4\f\< s s s\!}>>
+	\once \tupletDown \tuplet 3/2 {d!8(\< gis, b} d8. e16-.) cis2\!
+	\once \tupletDown \tuplet 3/2 {c!8(\< fis, a} c8. d16-.) c2\!
+	<< <c e>1 {\hairpinShorten #'(-0.3 . -2) s4\f\< s s s\!}>>
 % mesures 291 à 295
 	aes'2( f
 	d\> b)~\!
@@ -381,31 +381,31 @@ musicViolaMvtI = \relative c' {
 	c, g'8 g g4 g
 	c, g'8 g_\crescmarkup g4 g
 	c, g'8 g g4 g 
-	c,8->_\semprecresc d16( c) c'8-> d16( c) e8-> f16( e) c8-> d16( b)
+	c,8^>_\semprecresc d16( c) c'8-> d16( c) e8-> f16( e) c8-> d16( b)
 	c8-> d16( c) c8-> d16( c) e8-> f16( e) c8-> d16( b)
 % mesures 301 à 305
 	a8.\f a'16 a8. a16 a8.\< a16 a8. d16
 	c8. d16 c8. d16 e8. f16 e8.\! a,16
 	b4\fz r <aes, f' c'>\fz r
 	<g d' c'>\fz r <g f' b>\fz r
-	\acciaccatura c,8 <g' e'>1\ff
+	\acciaccatura c,8 <g' e'>1-\offset X-offset #0.5 \ff
 % mesures 306 à 310
 	\tuplet 3/2 {f8(-- aes-- des--)} f8.-> g16-. \tuplet 3/2 {f8--( des-- aes--)} f8.-> des16-.
 	\acciaccatura c8 <g' e'>1\ffz
 	\tuplet 3/2 {aes8-.( b!-. d-.)} f8.-> aes16-. \tuplet 3/2 {f8-.( d-. b-.)} aes8.-> f16-.
 	<c g' e'>4-.-^ r \tuplet 3/2 {c8\< e g} c8. d16-.\!
-	<c, g' e'>4-.-^ r \tuplet 3/2 {c'8\< e g} c8. d16-.\!
+	<c, g' e'>4-.-^ r \once \tupletUp \tuplet 3/2 {c'8\< e g} c8. d16-.\!
 % mesures 311 à 315
 	<e,, g>1\fp~
-	q1*1/2 s1*1/2_\dimmarkup
+	q1*1/2 s1*1/2-\offset X-offset -1_\dimmarkup
 	<e g>1_\ppmorendo~
 	q
 	\tuplet 3/2 {c8( e g} c8. d16-.) c2
 % mesures 316 à 320
 	\tuplet 3/2 {c,8( e g} c8. d16-.) c2
 	\tuplet 3/2 {c,8( e f} g8. a16-.) g4..( b16)
-	c4..(_\ppp b16 c4.. b16)
-	c4..( b16 c4.. b16)
+	\stemUp c4..(_\ppp b16 c4.. b16)
+	c4..( b16 c4.. b16) \stemNeutral
 	c2-- g--
 % mesures 321 à 325
 	g1\fermata \bar "|."

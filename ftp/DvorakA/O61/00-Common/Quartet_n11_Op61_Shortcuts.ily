@@ -86,6 +86,7 @@ pespressivo = \markup {\hspace #-0.08 \dynamic p \italic espressivo}
 pnonlegato = \markup {\hspace #-0.08 \dynamic p \italic {non legato}}
 pdolce = \markup {\hspace #-0.08 \dynamic p \italic dolce.}
 ppocomarcato = \markup {\hspace #-0.08 \dynamic p \italic {poco marcato}}
+ppoco = \markup {\hspace #-0.08 \dynamic p \italic poco}
 ffferoce = \markup {\hspace #-0.63 \dynamic ff \italic feroce}
 mfcresc = \markup {\hspace #-0.85 \dynamic mf \italic cresc.}
 ppmorendo = \markup {\hspace #-0.82 \dynamic pp \italic {morendo}}
@@ -98,6 +99,7 @@ fzcresc= \markup {\hspace #-0.55 \dynamic fz \italic cresc.}
 fzmarkup = \markup {\hspace #-0.55 \dynamic fz}
 mpespressivo = \markup {\hspace #-0.95 \dynamic mp \italic espressivo}
 semprepiup = \markup {\italic {sempre più} \dynamic p}
+marcato = \markup {\italic marcato}
 semprepiupII = \markup {
 	\center-column {
 		\italic \lower #1 "sempre" 

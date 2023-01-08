@@ -27,27 +27,27 @@ musicViolaMvtIV = \relative c' {
 	e4\! e'8( d'
 % mesures 16 à 20
 	c[\mf\> b e,-.)]\! r
-	r4 e8(\p\cresc d'
-	c_\fzmarkup[ b e,-.)] e(
-	c'_\fzmarkup[ b e,]-.) e(
-	c'_\fzmarkup[ b e,]-.) e-.\!
+	r4 e8(-\offset X-offset -2 \p\cresc d'
+	\markEO #'(0 . 1) c_\fzmarkup[ b e,-.)] e(
+	\markEO #'(0 . 1) c'_\fzmarkup[ b e,]-.) e(
+	\markEO #'(0 . 1) c'_\fzmarkup[ b e,]-.) e-.\!
 % mesures 21 à 25
 	a4(\f gis8-.) a(~\fz
 	a gis-.) a4(\fz
 	gis8-.) r r4
 	R2
-	<g,! f'!>4.\fz r8
+	<g,! f'!>4.-\offset X-offset 0.5 \fz r8
 % mesures 26 à 30
 	R2*3
 	
 	
 	r4 r8 g\p\<(
-	ees'[\! d\> g,)]\! g'(\mf\<
+	ees'[\! d\> g,)]\! \hairpinShorten #'(0 . -0.6) g'(\mf\<
 % mesures 31 à 35
-	c[\! b\> g)]\! c\f-.
+	c[\! \hairpinShorten #'(0.4 . 0) b\> g)]\! c\f-.
 	b-.\> a-. g-. f-.\! \mark \default
-	e4(_\ppocomarcato fis)
-	g4(~ g16 fis e dis)
+	e4(_\ppoco fis)
+	g4(~_\marcato g16 fis e dis)
 	e8-. fis-. \acciaccatura e g-. fis-.
 % mesures 36 à 40
 	e-.[ dis-. e-.] r
@@ -128,7 +128,7 @@ musicViolaMvtIV = \relative c' {
 	a2\>~
 	a4.\! b8 \mark \default
 % mesures 101 à 105
-	c4\p\<( d\!
+	\hairpinShorten #'(-0.3 . -1.7) c4\p\<( d\!
 	ees->\>) ees16\(( d)\! d( c)\)
 	c4(\< d\!
 	ees\>) ees16\(( d)\! d( c)\)
@@ -158,8 +158,8 @@ musicViolaMvtIV = \relative c' {
 	g\< bes g bes g bes g bes\!
 	g\> bes g bes g bes g bes)\!
 % mesures 126 à 130
-	g( b! g b g b g b
-	g\pp a g a g a g a
+	\shape #'((0 . 0)(0 . -0.6)(0 . -0.6)(0 . 0)) Slur g( b! g b g b g b
+	g-\tweak extra-offset #'(0 . 2.6) \pp a g a g a g a
 	g a g a fis a fis a)
 	g( b g b g b g b)
 	g(\< b d g fis g e g)\!
@@ -171,15 +171,15 @@ musicViolaMvtIV = \relative c' {
 	d(\> g d c b d g, b)\!
 % mesures 136 à 140
 	a( d a g fis a e fis) \mark \default
-	g8-.\fz[ b-. b'-.]\pocoapococresc r
-	g,_\fzmarkup[-. b-. g']-. r
-	b,_\fzmarkup[-. d-. b'-.] r
-	g,_\fzmarkup[-. b-. g'-.] r
+	\stemUp g8-.-\offset X-offset -1 \fz[ b-. b'-.]\pocoapococresc \stemNeutral r
+	\markEO #'(-2.2 . -6.5) \beamOffset #'(0.3 . 0) g,^\fzmarkup[-. b-. g']-. r
+	\markEO #'(0 . 2) b,_\fzmarkup[-. d-. b'-.] r
+	\markEO #'(0 . 1) g,_\fzmarkup[-. b-. g'-.] r
 % mesures 141 à 145
-	d,-._\fzmarkup[ fis-. d'-.] r
-	b_\fzmarkup-.[ d-. b'-.] r
-	d,,_\fzmarkup-.[ fis-. d'-.] r
-	b_\fzmarkup[-. d-. b'-.] r
+	\markEO #'(0 . 1) d,-._\fzmarkup[ fis-. d'-.] r
+	\markEO #'(0 . 2) b_\fzmarkup-.[ d-. b'-.] r
+	\markEO #'(0 . 1) d,,_\fzmarkup-.[ fis-. d'-.] r
+	\markEO #'(0 . 1) b_\fzmarkup[-. d-. b'-.] r
 	d,\ff r ees'4\fz~
 % mesures 146 à 150
 	ees8 d16( c) b8-. a-.
@@ -202,7 +202,7 @@ musicViolaMvtIV = \relative c' {
 % mesures 161 à 165
 	c'->[ b e,]-.) e(
 	c'->[ b e,]-.) e(
-	a4_\fzcresc gis8-.) a~(\fz\<
+	a4\fz^\crescmarkup gis8-.) a~(\fz\<
 	a gis-.) a4(\fz
 	gis8-.) r r4
 % mesures 166 à 170
@@ -213,7 +213,7 @@ musicViolaMvtIV = \relative c' {
 	R2
 % mesures 171 à 175
 	r4 r8 g,(\p\<
-	ees'->[\! d\> g,)-.]\! g'(\mf\<
+	ees'->[\! d\> g,)-.]\! \hairpinShorten #'(-0.4 . -0.6) g'(\mf\<
 	c[\! b\> g-.)]\! c-.\f
 	b-.\> a-. g-. f-.\!
 	e4(\mp fis)
@@ -322,12 +322,12 @@ musicViolaMvtIV = \relative c' {
 % mesures 261 à 265
 	b8 r r4
 	e,16(\fz g e g e g e g)
-	cis2_\crescmarkup
+	cis2-\offset X-offset -1 _\crescmarkup
 	fis,16(\fz a fis a fis a fis a)
 	d2
 % mesures 266 à 270
 	gis,16(\fz b gis b gis b gis b) 
-	gis8_\dimmarkup r gis16(\> b gis b
+	gis8-\offset X-offset -1 _\dimmarkup r gis16(\> b gis b
 	gis8) r b16( d a d)\!
 	b4-.\p c~
 	c8 d-. e-. f-.
@@ -339,15 +339,15 @@ musicViolaMvtIV = \relative c' {
 	e,( gis e gis e gis e gis
 % mesures 276 à 280
 	e gis e gis d e d e)
-	d( e d e d e d e
-	d e d e d e d e
-	d e d e d e d e
-	d e d e d e d e)
+	\startMeasureCount \repeat tremolo 4 {d( e}
+	\repeat tremolo 4 {d e}
+	\repeat tremolo 4 {d e}
+	\repeat tremolo 4 {d e)}
 % mesures 281 à 285
-	d( e d e d e d e
-	d e d e d e d e
-	d e d e d e d e
-	d e d e d e d e) \mark \default
+	\repeat tremolo 4 {d( e}
+	\repeat tremolo 4 {d e}
+	\repeat tremolo 4 {d e}
+	\repeat tremolo 4 {d e)} \stopMeasureCount \mark \default
 	a2\pp~
 % mesures 286 à 290
 	a
@@ -380,7 +380,7 @@ musicViolaMvtIV = \relative c' {
 	d,4--\< d'--\!
 	R2
 % mesures 311 à 315
-	e,4_\crescmarkup\<-- e'--\!
+	e,4^\crescmarkup\<-- e'--\!
 	R2
 	f,8\f r f'4\fz~
 	f2
@@ -411,7 +411,7 @@ musicViolaMvtIV = \relative c' {
 	f8) r r4
 % mesures 336 à 340
 	R2
-	c4_\pespress( g'\<
+	c4_\pespress( \hairpinShorten #'(3 . 0) g'\<
 	aes \once \stemUp c)~\!
 	c8\> bes16( aes g8-.) f-.\!
 	e!-. c-. g'4->~
@@ -436,15 +436,15 @@ musicViolaMvtIV = \relative c' {
 % mesures 356 à 360
 	d( g d c b d a b)
 	c8-.[\fz e-. e-.] r
-	c,\fz-.[\pocoapococresc e-. c'-.] r
-	e,-.[_\fzmarkup g-. e'-.] r
-	c,-.[_\fzmarkup e-. c'-.] r
+	c,\fz-.[ e-.\pocoapococresc c'-.] r
+	\markEO #'(-2.1 . 4.5) e,-.[_\fzmarkup g-. e'-.] r
+	\markEO #'(-2.3 . 4) c,-.[_\fzmarkup e-. c'-.] r
 % mesures 361 à 365
-	g[-._\fzmarkup b-. g'-.] r
-	e,[-._\fzmarkup g-. e'-.] r
-	g,[-._\fzmarkup b-. g'-.] r
-	e,[-._\fzmarkup g-. e'-.] r
-	g, r \clef treble aes''4\ff~->
+	\markEO #'(0 . 1) g[-._\fzmarkup b-. g'-.] r
+	\markEO #'(0 . 1.5) e,[-._\fzmarkup g-. e'-.] r
+	\markEO #'(0 . 1) g,[-._\fzmarkup b-. g'-.] r
+	\markEO #'(0 . 1.5) e,[-._\fzmarkup g-. e'-.] r
+	g,\! r \clef treble aes''4\ff~->
 % mesures 366 à 370
 	aes8 g16( f) e8-. d-.
 	c\fz b-. f'\fz d-. \clef alto
@@ -461,16 +461,16 @@ musicViolaMvtIV = \relative c' {
 	ees( ees' d d,)
 	\acciaccatura c c'-. d-. c16( ees) d8-.
 	c-.[ b-. d-.] r \mark \default
-	<f, g>16\pocoapococresc <f g> q q q q q q 
-	q q q q q q q q 
+	\startMeasureCount <f, g>4:16\pocoapococresc q:
+	q: q:
 % mesures 381 à 385
-	q q q q q q q q 
-	q q q q q q q q 
-	q q q q q q q q 
-	q q q q q q q q\! 
-	q_\fsemprecresc q q q q q q q 
+	q: q:
+	q: q:
+	q: q:
+	q: q:\! 
+	q:_\fsemprecresc q: \stopMeasureCount
 % mesures 386 à 390
-	q q q q g f' g, f'
+	q16 q q q g f' g, f'
 	g, f' g, f' g, f' g, f'
 	f8.\ff e16 f8. e16 
 	f8. e16 f8. e16 
@@ -519,20 +519,20 @@ musicViolaMvtIV = \relative c' {
 	e8( g c g)
 % mesures 426 à 430
 	e8( g c g)
-	c,( d' c c,)
-	c(\< d' c c,)
-	c( d' c c,)
-	c( d' c c,)\!
+	\startMeasureCount c,([ d' c c,)]
+	c[(\< d' c c,)]
+	c[( d' c c,)]
+	c[( d' c c,)]\!
 % mesures 431 à 435
-	c( d' c c,)
-	c(\> d' c c,)
-	c( d' c c,)\!
-	c(\p\> d' c c,)
-	c( d' c c,)
+	c[( d' c c,)]
+	c[(\> d' c c,)]
+	c[( d' c c,)]\!
+	c[(\p\> d' c c,)]
+	c[( d' c c,)]
 % mesures 436 à 440
-	c( d' c c,)\!
-	c(\pp d' c c,)
-	c( d' c c,)
+	c[( d' c c,)]\!
+	c[(\pp d' c c,)]
+	c[( d' c c,)] \stopMeasureCount 
 	e2~ \mark \default
 	e
 % mesures 441 à 445
@@ -587,5 +587,5 @@ musicViolaMvtIV = \relative c' {
 	<c g' e'>4-. r
 	q-. r
 	q-. r
-	R2^\fermata \bar "|."
+	\omitMMRN R2^\fermata \bar "|."
 }
