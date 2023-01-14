@@ -46,13 +46,6 @@ mpespressivo = \markup {\hspace #-0.95 \dynamic mp \italic espressivo}
 semprepiup = \markup {\italic {sempre più} \dynamic p}
 marcato = \markup {\italic marcato}
 
-semprepiupII = \markup {
-	\center-column {
-		\italic \lower #1 "sempre" 
-		\line { \italic "più" \dynamic p}
-	}
-}
-
 scherzodcalfine = {
 	\once \override TextScript.self-alignment-X = 1
 	s8_\markup {
@@ -241,4 +234,12 @@ omitMMRN = \omit MultiMeasureRestNumber
 mmrnDown = {
 	\once \override MultiMeasureRestNumber.direction = #-1 
 }
+
+tempoEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
 

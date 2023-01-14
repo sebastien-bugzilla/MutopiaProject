@@ -31,7 +31,7 @@ musicViolinIMvtIII = \relative c'' {
 	\tuplet 3/2 {b8 c d)\<} f8.-- e16-. d8.-- c16-.\!
 	b8\f r g'-\offset X-offset -0.5 ^\pizz r g, r
 	g' r g,_\dimmarkup r g r
-	g,\p\> r g' r g,\! r
+	g,-\tweak extra-offset #'(1.5 . 1) \p-\tweak extra-offset #'(1 . 0.5) \> r g' r g,\! r
 	g'\pp r g, r r4 \mark \default
 % mesures 21 à 25
 	R2.
@@ -90,7 +90,7 @@ musicViolinIMvtIII = \relative c'' {
 		c
 % mesures 66 à 70
 		b) \mark \default
-		a8 r r4 \tuplet 3/2 {e''8(\fp-> e,) e-.}
+		a8 r r4 \tuplet 3/2 {e''8(\fp^> e,) e-.}
 		r4 r \tuplet 3/2 {e'8(\fp e,) e-.}
 		\tuplet 3/2 {e'( fis gis} a8. b16-.) gis4
 		\tuplet 3/2 {gis8( a b} c8._\crescmarkup d16-.) b4
@@ -103,7 +103,7 @@ musicViolinIMvtIII = \relative c'' {
 % mesures 76 à 80
 		\tuplet 3/2 {e'8( fis gis)} a8.-> c16-. e8.-> gis,16-.
 		a8-.\fz r a,-. r a'-. r
-		a,-. r a-._\dimmarkup r a,-. r
+		a,-. r a-.^\dimmarkup r a,-. r
 		a'-.\p\> r a,-. r a'-.\! r
 		a,-.\pp r a'-. r a,-. r
 % mesures 81 à 85
@@ -112,7 +112,7 @@ musicViolinIMvtIII = \relative c'' {
 	}
 	a'2.
 	a\fermata_\attacca \markYoffset #5 \markFine \break \bar "||" \key a \major \time 2/4
-	a'4(_\pdolce^\trioPart e8. cis16)
+	a'4(_\pdolce-\offset X-offset -6 ^\trioPart e8. cis16)
 % mesures 86 à 90
 	cis2\<
 	d4\>->( cis8. b16)\!
@@ -199,7 +199,7 @@ musicViolinIMvtIII = \relative c'' {
 	b( c16 d c8 b)
 % mesures 156 à 160
 	c4.( e8)
-	\tuplet 3/2 {e8(\mf-> fis! e)} r4 
+	\tuplet 3/2 {\dynEO #'(-0.7 . 1) e8(\mf-> fis! e)} r4 
 	\tuplet 3/2 {e8(_\crescmarkup-> fis e)} r4 
 	\tuplet 3/2 {e8(-> fis e)} r4 
 	\tuplet 3/2 {e8(-> fis e)} r4 
@@ -312,7 +312,7 @@ musicViolinIMvtIII = \relative c'' {
 	e,!( fis e b' e, fis e b'
 	dis, e dis b' dis, e dis b')
 % mesures 251 à 255
-	\shape #'( () ((0.5 . 3.5)(0 . -0.5)(0 . -0.5)(0 . 0)) ) Slur d,!( e d b'-> b,-\alterBroken shorten-pair #'(() (0 . 1)) \< cis b gis'->
+	d,!( e d b'-> b,-\alterBroken shorten-pair #'(() (0 . 1)) \< cis b gis'->
 	gis, a gis e'-> fis, gis fis d'->
 	d, e d b'-> b, cis b gis'->\!
 	gis,-\tweak extra-offset #'(-2 . -11.5) ^\f a gis e'->) r4
