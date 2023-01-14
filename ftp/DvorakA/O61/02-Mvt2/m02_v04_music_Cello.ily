@@ -9,7 +9,7 @@ musicCelloMvtII = \relative c, {
 	\clef bass
 % mesures 1 à 5
 	f4(\pp~ \tuplet 3/2 {f8 c' f} f,4~ \tuplet 3/2 {f8 bes d)}
-	f,4(\< \tuplet 3/2 {d8\! a' d)} bes4(\> \tuplet 3/2 {c,8 g' c)\!}
+	f,4(\< \tuplet 3/2 {d8 a' d\!)} bes4(\> \tuplet 3/2 {c,8 g' c)\!}
 	f,4~(_\dimmarkup \tuplet 3/2 {f8 c' f)} f,( a c4)
 	f,4~(\pp\< \tuplet 3/2 {f8 c' f)\!} c4( \tuplet 3/2 {c,8 g' c)}
 	d,4(~ \tuplet 3/2 {d8 a' fis')\>} g( g,~ \tuplet 3/2 {g bes d)\!}
@@ -20,9 +20,9 @@ musicCelloMvtII = \relative c, {
 	g4(\<~ \tuplet 3/2 {g8 bes f)\!} e4(~\> \tuplet 3/2 {e8 bes' g)\!}
 	a4(~ \tuplet 3/2 {a8 ees' g)} bes,4(~ \tuplet 3/2 {bes8 ees g)}
 % mesures 11 à 15
-	c,4(~ \tuplet 3/2 {c8_\crescmarkup ees g)} bes,4(~ \tuplet 3/2 {bes8\> ees g)\!}
+	c,4(~ \tupletUp  \tuplet 3/2 {c8_\crescmarkup ees g)} bes,4(~ \tuplet 3/2 {bes8\> ees g)\!} \tupletNeutral
 	c,4\pp(~ \tuplet 3/2 {c8 ees g)} bes,4(~ \tuplet 3/2 {bes8 ees g)}
-	c,4(~\< \tuplet 3/2 {c8 ees g)\!} f,4(~ \tuplet 3/2 {f8 c' f)} \mark \default
+	c,4(~\< \once \tupletUp \tuplet 3/2 {c8 ees g)\!} f,4(~ \tuplet 3/2 {f8 c' f)} \mark \default
 	<bes, f' d'>8-.\f\arpeggio r r4 r r8. d16\f->
 	cis8-> r r4 r4 r8. cis16\f->
 % mesures 16 à 20
@@ -42,15 +42,15 @@ musicCelloMvtII = \relative c, {
 	des,8 r r4 r \tuplet 3/2 {r8 ees-> r}
 	f8\pp r \tuplet 3/2 {r f' f} f, r  \tuplet 3/2 {r r f'}
 	f, r \tuplet 3/2 {r ees' aes,} des r \tuplet 3/2 {r aes' aes,}
-	aes' aes,_\crescmarkup \tuplet 3/2 {r aes' aes,} aes' aes, \tuplet 3/2 4 {r aes' aes, 
+	aes' aes,-\offset X-offset -1 _\crescmarkup \tuplet 3/2 {r aes' aes,} aes' aes, \tuplet 3/2 4 {r aes' aes, 
 % mesures 31 à 35
-	r aes' aes,_\dimmarkup r aes' aes, r aes' aes, r aes' aes,} \mark \default
+	r aes' aes,-\offset X-offset -0.5 _\dimmarkup r aes' aes, r aes' aes, r aes' aes,} \mark \default
 	des \clef tenor f'(_\espress^\arco ges f) ees4( f8. ees16)
 	des4(\< ges) f( bes)\!
 	aes( bes8.\> aes16) g4( aes8.\! g16)
 	\tuplet 3/2 {f8( c aes)} \clef bass g8^\pizz\pp c, f4 \tuplet 3/2 {r8 c c'}
 % mesures 36 à 40
-	f, f,_\crescmarkup \tuplet 3/2 {r c' c'} f f, \tuplet 3/2 {r c c'}
+	f, f,-\offset X-offset -1 _\crescmarkup \tuplet 3/2 {r c' c'} f f, \tuplet 3/2 {r c c'}
 	f, f, \tuplet 3/2 {r f'_\dimmarkup ges!} aes! aes, \tuplet 3/2 {r aes aes}
 	des4\pp \tuplet 3/2 {r8 des des,} des'4 \tuplet 3/2 {r8 des des,}
 	f\< des' c, ees' d, d' ees, ees'\!
@@ -69,36 +69,36 @@ musicCelloMvtII = \relative c, {
 	g,4(\pp e8 d cis e g b)
 % mesures 51 à 55
 	a4.( g8 fis4 f)
-	e1\<
-	d8( d' b gis!)\! eis\f( gis b d)
+	e1-\tweak height #0.40 \<
+	\shape #'((0 . 0.2)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur d8( d' b gis!)\! \shape #'((0 . 0.3)(0 . 0)(0 . 0)(0 . 0)) Slur eis-\tweak extra-offset #'(-1 . 0.55) \f( gis b d)
 	eis(\< gis b d) eis4.\! r8
 	R1*2
 % mesures 56 à 60
 	
 	b4(\pp gis8 fis eis gis b d)
-	f1(~
+	\shape #'((0 . -0.2)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur \shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Tie f1(~
 	f
 	e2 b)
 % mesures 61 à 65
 	fis!( cis!)
 	c2\pp\<~ c8\! r r4
 	r8 c_\crescmarkup( c' bes) r c,( a' g)
-	r c,,( f' e)_\dimmarkup r c,(\f c' c,) \bar "||" \key f \major
-	r4 << c'2. {s4\p\> s s\!} >> \mark \default
+	r c,,( f' e)_\dimmarkup r c,(-\offset X-offset -1 \f c' c,) \bar "||" \key f \major
+	r4 << c'2. {\hairpinShorten #'(-0.3 . -2) s4-\offset X-offset -1 \p\> s s\!} >> \mark \default 
 % mesures 66 à 70
 	f,8\pp^\pizz f' r f16 f f,8 f' d bes
 	d, d' r d16 c bes8 g r c
 	f, c' r4 f,8 f' \tuplet 3/2 {d c bes}
 	a f r f_\crescmarkup \tuplet 3/2 {c' g' ees} c a
-	d\< d, \tuplet 3/2 4 {r d fis\! g\> d' g bes, g' bes\!}
+	d\< d, \tuplet 3/2 4 {r d fis\! g\> d' g \once \tupletUp bes, g' bes\!}
 % mesures 71 à 75
 	bes\pp bes, \tuplet 3/2 {r a' a,} g' g, \tuplet 3/2 {r f' f,}
-	\tuplet 3/2 4 {g'\< bes g  f bes f e bes' e,\! r\> e f\!
+	\tupletUp \tuplet 3/2 4 {g'\< bes g  f bes f e bes' e,\! r\> e f\! \tupletNeutral
 	g\pp a bes r bes a} g g, \tuplet 3/2 4 {r f' f,
-	g' bes g\< f bes f e\! bes'\> e,} r16 e f g\!
+	\tupletUp g' bes g\< f bes f e\! bes'\> e,} r16 e f g\! \tupletNeutral
 	a8\pp a, \tuplet 3/2 {r a' bes} c c, \tuplet 3/2 {r c' d}
 % mesures 76 à 80
-	ees ees,\< \tuplet 3/2 {r ees d\!} c c, \tuplet 3/2 {r a' bes}
+	ees ees,\< \once \tupletUp \tuplet 3/2 {r ees d\!} c c, \tuplet 3/2 {r a' bes}
 	c8 f,_\crescmarkup \tuplet 3/2 4 {r c'' f, a c, f a, c f,} \mark \default
 	bes\f^\arco r r4 r8 bes(\p-- bes-- bes--)
 	bes4\fz r r8 bes(\p-- bes-- bes--)
@@ -119,7 +119,7 @@ musicCelloMvtII = \relative c, {
 	r8 c-- r4 r8 c' r4
 	f,1\p
 	f2(\< des)\!
-	c8( f g4_\crescmarkup a8 f bes4)
+	c8( f g4-\tweak extra-offset #'(0 . 2.7) _\crescmarkup a8 f bes4)
 	c8(\f\< des ees f)\! g4(\> gis)\!
 % mesures 96 à 99
 	a4(\p g!8\> f) f2~\!

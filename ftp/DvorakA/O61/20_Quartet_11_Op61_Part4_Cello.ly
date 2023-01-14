@@ -18,7 +18,7 @@
 \include "./00-Common/Quartet_n11_Op61_timeMvt.ily"
 \include "./00-Common/Quartet_n11_Op61_LayoutParts.ily"
 \include "./00-Common/Quartet_n11_Op61_Shortcuts.ily"
-%\include "./00-Common/Quartet_n11_Op61_Format_Part01_ViolinI.ily"
+\include "./00-Common/Quartet_n11_Op61_Format_Part04_Cello.ily"
 \include "./00-Common/Quartet_n11_Op61_Tempi.ily"
 \include "./01-Mvt1/m01_v04_music_Cello.ily"
 \include "./02-Mvt2/m02_v04_music_Cello.ily"
@@ -44,9 +44,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtI
-%			}
+			\new Voice {
+				\formatCelloMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(cello) \tempiPartMvtI
 			}
@@ -69,9 +69,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtII
-%			}
+			\new Voice {
+				\formatCelloMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(cello) \tempiPartMvtII
 			}
@@ -92,11 +92,23 @@
 			\layoutPart
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #24 
+		\abs-fontsize #20
+		\fill-line {
+			\center-column {
+				\line { "The third movement is formatted" }
+				\line { "to be displayed on three pages." }
+				\line { "Please attach page 9 next to page 10." }
+			}
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtIII
-%			}
+			\new Voice {
+				\formatCelloMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(cello) \tempiPartMvtIII
 			}
@@ -119,9 +131,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtIV
-%			}
+			\new Voice {
+				\formatCelloMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(cello) \tempiPartMvtIV
 			}

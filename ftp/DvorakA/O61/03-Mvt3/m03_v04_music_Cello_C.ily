@@ -339,7 +339,7 @@ musicCelloMvtIII = \relative c' {
 	a'-. cis-. a,-. a-. 
 	a'_\dimmarkup-. cis-. a,-. a-. 
 	b'-. d-. a,-. a-. 
-	a'-. cis-. a,-. a
+	a'-. cis-. a,-. a-.
 	a2\p~
 % mesures 276 à 280
 	a~-\offset X-offset 7 _\dimmarkup

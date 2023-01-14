@@ -111,7 +111,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 208.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI violinII viola) {
+		\tempo \markup {
+			\medium \italic "ritard."
+		}
+	}
+	\tag #'(cello) {
+		\tempoXoffset #1
 		\tempo \markup {
 			\medium \italic "ritard."
 		}
@@ -165,7 +171,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 297
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI violinII viola) {
+		\tempo \markup {
+			\medium \italic "poco a poco string."
+		}
+	}
+	\tag #'(cello) {
+		\tempoDown
 		\tempo \markup {
 			\medium \italic "poco a poco string."
 		}
@@ -273,12 +285,12 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 335.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI cello) {
+	\tag #'(violinI) {
 		\tempo \markup {
 			\medium \italic "ritard."
 		}
 	}
-	\tag #'(violinII) {
+	\tag #'(violinII cello) {
 		\tempoXoffset #-1 
 		\tempo \markup {
 			\medium \italic "ritard."
@@ -294,7 +306,13 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 337
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI violinII viola) {
+		\tempo \markup {
+			\medium \italic "in tempo"
+		}
+	}
+	\tag #'(cello) {
+		\tempoXoffset #-2
 		\tempo \markup {
 			\medium \italic "in tempo"
 		}
@@ -303,12 +321,7 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 407
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( cello) {
-		\tempo \markup {
-			\medium \italic "grandioso."
-		}
-	}
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI violinII viola cello) {
 		\tempoDown \tempoXoffset #2.5
 		\tempo \markup {
 			\medium \italic "grandioso."
@@ -342,8 +355,15 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 440
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII viola cello) {
+	\tag #'(violinI violinII viola) {
 		\tempo "Un poco meno mosso."
+	}
+	\tag #'(cello) {
+		\tempo \markup {
+			\column {
+				\lower #1.5 "Un poco" "meno mosso."
+			}
+		}
 	}
 	s2*15
 	%%%%%%%%%%%%%%%%%%%%%%

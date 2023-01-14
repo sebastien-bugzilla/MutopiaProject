@@ -9,7 +9,7 @@ musicCelloMvtIV = \relative c {
 	\key c \major
 % mesures 1 à 5
 	R2
-	r4 f8\mp\<-. g-.\!
+	r4 \hairpinShorten #'(-0.3 . -1.5) f8-\offset X-offset -1 \mp\<-. g-.\!
 	a-. f-.\> g-. g-.\!
 	c,-.\p[ g-. c-.] r
 	R2
@@ -66,10 +66,10 @@ musicCelloMvtIV = \relative c {
 	cis->_\crescmarkup
 	cis->
 	<g d'>8\f r r4
-	<< g,2\fz {s8\startTrillSpan s s s\stopTrillSpan } >>
+	g,2\fz\trill
 % mesures 51 à 55
 	R2
-	<< g2\fz {s8\startTrillSpan s s s\stopTrillSpan } >>
+	g2\fz\trill
 	r4 g\fz^\trill
 	r g\fz\trill
 	c'8.->\ff g16-. c8.-> g16-. 
@@ -84,7 +84,7 @@ musicCelloMvtIV = \relative c {
 	e e' f, g
 	a f g g,
 	c[ g\fz c,] r
-	e'^\arco-. e'-. d-. d,-.
+	e'-\offset X-offset -1.5 ^\arco-. e'-. d-. d,-.
 % mesures 66 à 70
 	g_\crescmarkup-. g'-. a,-. b-.
 	c-. a-. b-. b-.
@@ -149,14 +149,14 @@ musicCelloMvtIV = \relative c {
 	R2*3
 	
 	
-	<g ees' bes'>4\fz^\pizz\arpeggio r
-	<g d' b'!>\p\arpeggio g8 b
+	<g ees' bes'>4-\offset X-offset 0.5 \fz^\pizz\arpeggio r
+	<g d' b'!>-\offset X-offset 0.5 \p\arpeggio g8 b
 % mesures 121 à 125
 	d r d a
 	d, r d' r
-	<g, d' b'>4\p\arpeggio r
-	<g ees' bes'>\<\arpeggio r\!
-	q\>\arpeggio r\!
+	<g, d' b'>4-\offset X-offset 0.5 \p\arpeggio r
+	\hairpinShorten #'(0.8 . -0.8) <g ees' bes'>\<\arpeggio r\!
+	\hairpinShorten #'(0.8 . -0.8) q\>\arpeggio r\!
 % mesures 126 à 130
 	<g d' b'!>\arpeggio r
 	<d a' d>\arpeggio\pp r
@@ -164,22 +164,22 @@ musicCelloMvtIV = \relative c {
 	g8 r r4
 	R2
 % mesures 131 à 135
-	g4^\arco( g'~\<
+	g4^\arco(\< g'~\!
 	g8\> fis16 e)\! d8-. c-.
 	b4( g)
 	d'( d,)
-	g(\< g'~
+	g(\< g'~\!
 % mesures 136 à 140
 	g8\> fis16 e)\! d8-. c-. \mark \default
 	b-.\fz[ g-. g'-.]\pocoapococresc r
-	e-.[_\fzmarkup g-. e'-.] r
-	g,,-.[_\fzmarkup b-. g'-.] r
-	e-.[_\fzmarkup g-. e'-.] r
+	\markEO #'(-2.1 . 4.5) e-.[_\fzmarkup g-. e'-.] r
+	\markEO #'(0 . 1.5) g,,-.[_\fzmarkup b-. g'-.] r
+	\markEO #'(0 . 1.5) e-.[_\fzmarkup g-. e'-.] r
 % mesures 141 à 145
-	b,[_\fzmarkup-. d-. b'-.] r
-	g[-._\fzmarkup b-. g'-.] r
-	b,,[-._\fzmarkup d-. b'-.] r
-	g[-._\fzmarkup b-. g'-.] r
+	\markEO #'(0 . 0.5) b,[_\fzmarkup-. d-. b'-.] r
+	\markEO #'(0 . 1.5) g[-._\fzmarkup b-. g'-.] r
+	\markEO #'(0 . 0.5) b,,[-._\fzmarkup d-. b'-.] r
+	\markEO #'(0 . 1.5) g[-._\fzmarkup b-. g'-.] r
 	d,\ff r ees'4\fz~
 % mesures 146 à 150
 	ees8 d16( c) b8-. a-.
@@ -212,8 +212,8 @@ musicCelloMvtIV = \relative c {
 	
 	
 % mesures 171 à 175
-	r4 r8 g'\p\<(
-	c[\! b\> g)]\!-. r
+	r4 r8  g'\p-\alterBroken shorten-pair #'((-0.3 . 0) (0 . 2)) \<(
+	c[ \hairpinShorten #'(-2 . 0) b\> g)]\!-. r
 	r4 r8 a'-.\f
 	g\>-. f-. e-. d-.\!
 	c2\mp(
@@ -237,9 +237,9 @@ musicCelloMvtIV = \relative c {
 	<< d {s8\< s s s\!} >>
 % mesures 191 à 195
 	<g,, g' d'>8\mf\arpeggio r r4
-	<< g2\fz {s8\startTrillSpan s s s\stopTrillSpan } >>
+	g2\fz\trill
 	R2
-	<< g2\fz {s8\startTrillSpan s s s\stopTrillSpan } >>
+	g2\fz\trill
 	r4 g\fz\trill
 % mesures 196 à 200
 	r g\fz\trill
@@ -291,30 +291,30 @@ musicCelloMvtIV = \relative c {
 	cis8\f r cis-. d-.
 % mesures 236 à 240
 	e-. d-. cis-. a-.
-	d,16\f d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
+	\startMeasureCount \repeat tremolo 4 {d,16\f d'}
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
 % mesures 241 à 245
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
 % mesures 246 à 250
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' \mark \default
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'} \mark \default
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
 % mesures 251 à 255
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
-	d, d' d, d' d, d' d, d' 
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
+	\repeat tremolo 4 {d, d'}
 % mesures 256 à 260
-	d, d' d, d' d, d' d, d' 
+	\repeat tremolo 4 {d, d'} \stopMeasureCount 
 	c\f d e d c b a gis
 	a b c b a g! fis e
 	dis4.-> e8-.
@@ -413,7 +413,7 @@ musicCelloMvtIV = \relative c {
 	R2
 	R2*2
 	
-	<c, aes' ees'>4\fz^\pizz\arpeggio r
+	<c, aes' ees'>4-\tweak extra-offset #'(0.5 . 0.5) \fz^\pizz\arpeggio r
 	<c g' e'!>8\p\arpeggio r c'_\dimmarkup e
 % mesures 341 à 345
 	g r g\pp d
@@ -437,13 +437,13 @@ musicCelloMvtIV = \relative c {
 	c8\> b16 a) g8-.\! f-.
 	e-.\fz[ c-. c'-.] r
 	a,-.\fz[ c-.\pocoapococresc a'-.] r
-	c,-._\fzmarkup[ e-. c'-.] r
-	a,-.[_\fzmarkup c-. a'-.] r
+	\markEO #'(-2.4 . 4.3) c,-._\fzmarkup[ e-. c'-.] r
+	\markEO #'(0 . 0.5) a,-.[_\fzmarkup c-. a'-.] r
 % mesures 361 à 365
-	e-._\fzmarkup[ g-. e'-.] r
-	c,_\fzmarkup[-. e-. c'-.] r
-	e,[-._\fzmarkup g-. e'-.] r
-	c,[-._\fzmarkup e-. c'-.] r
+	\markEO #'(0 . 1.5) e-._\fzmarkup[ g-. e'-.] r
+	\markEO #'(0 . 1.5) c,_\fzmarkup[-. e-. c'-.] r
+	\markEO #'(0 . 1.5) e,[-._\fzmarkup g-. e'-.] r
+	\markEO #'(0 . 0.5) c,[-._\fzmarkup e-. c'-.] r
 	g, r aes''4->\ff~
 % mesures 366 à 370
 	aes8 g16( f) e8-. d-.
@@ -504,22 +504,22 @@ musicCelloMvtIV = \relative c {
 	c-. d'-. c-. c,-.
 	c-. d'-. c-. c,-.
 	c-. d'-. c-. c,-.
-	c(\p d' c c,)
+	\startMeasureCount c[(\p d' c c,)]
 % mesures 416 à 420
-	c( d' c c,)
-	c( d' c c,)
-	c( d' c c,)
-	c(_\ppmorendo d' c c,)
-	c( d' c c,)
+	c[( d' c c,)]
+	c[( d' c c,)]
+	c[( d' c c,)]
+	c[(_\ppmorendo d' c c,)]
+	c[( d' c c,)]
 % mesures 421 à 425
-	c( d' c c,)
-	c( d' c c,)
+	c[( d' c c,)]
+	c[( d' c c,)] \stopMeasureCount
 	r4 g'8-. c,-.
 	r4 g'8-. c,-.
 	r4 g'8( c,)
 % mesures 426 à 430
 	r4 g'8( c,)
-	c2(
+	\shape #'( ((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0.5)) () ) Slur c2(
 	e4 f\<
 	fis2
 	g)\!
@@ -587,5 +587,5 @@ musicCelloMvtIV = \relative c {
 	b'16( c) c,8-. r4
 	c-. r
 	c-. r
-	R2\fermata \bar "|."
+	\omitMMRN R2\fermata \bar "|."
 }

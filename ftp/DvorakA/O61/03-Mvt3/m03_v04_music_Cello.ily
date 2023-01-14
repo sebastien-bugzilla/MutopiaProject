@@ -9,7 +9,7 @@ musicCelloMvtIII = \relative c' {
 	\key a \minor
 % mesures 1 à 5
 	\repeat volta 2 {
-		r4 r  e8\fz^\pizz e,
+		r4 r  e8\fz-\offset X-offset -6 ^\pizz e,
 		r4 r e'8\fz e,
 		r4 a'8\f a, f' f,
 		d'\>[ d,] e[ e,]\! e r
@@ -17,19 +17,19 @@ musicCelloMvtIII = \relative c' {
 % mesures 6 à 10
 		\tuplet 3/2 {gis8( a b} c8.) d16-. b4\fp
 		\tuplet 3/2 {b8( c d)} f8.(\fz\< e16-. d4)
-		g8.(_\fzmarkup f16-. e4) a8.(_\fzmarkup g16-.
+		\markEO #'(0 . 2) g8.(_\fzmarkup f16-. e4) \markEO #'(0 . 2.2) a8.(_\fzmarkup g16-.
 		f4)\f f( e)
 		ees( d) d(_\dimmarkup
 % mesures 11 à 15
 		c8)[\> r16 d-.] e!8-. r e,-.\! r
-		\tuplet 3/2 {a8(\p\> b gis} a d f a)\!
+		\once \tupletDown \tuplet 3/2 {a8(\p\> b gis} a d f a)\!
 		a2.\pp
 	}
 	b4(\p c b)
 	a( gis2)_\crescmarkup
 % mesures 16 à 20
 	a4(\< d,2)\!
-	g8\f r r g'^\pizz r g,
+	g8\f r r g'-\offset X-offset -5.5 ^\pizz r g,
 	r g' r_\dimmarkup g, r g
 	r g,\p\> r g r g\!
 	r g^\arco\pp r g \tuplet 3/2 4 {fis( g) g-. \mark \default
@@ -53,17 +53,17 @@ musicCelloMvtIII = \relative c' {
 		g!( fis\> f~
 		f8 e d c ees4)\!
 % mesures 36 à 40
-		d2(\pp c8 a)
-		f2( d4
+		\once \stemUp d2(\pp c8 a)
+		\shape #'((0 . 0.3)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f2( d4
 		c8-.) r c'^\pizz d e r
 		a a g r c ais
 		b r b,_\crescmarkup b b' r
 % mesures 41 à 45
 		gis e\< a r a^\arco-.\! fis-.
-		b(\f cis16 b ais8 b16 ais a8 b16 a)
+		\shape #'((0 . -0.3)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur b(\f cis16 b ais8 b16 ais a8 b16 a)
 		a8(\> gis fis e) g4->\!
 		fis2(_\dimmarkup e8 gis,)
-		<< b2. {s4\p\> s s\!} >> \mark \default
+		<< b2. {\hairpinShorten #'(-0.3 . -1.5) s4-\offset X-offset -1 \p\> s s\!} >> \mark \default
 % mesures 46 à 50
 		e4( a2)
 		gis8( e a2)
@@ -80,7 +80,7 @@ musicCelloMvtIII = \relative c' {
 		e f c
 		e_\dimmarkup f a
 		g a d,)
-		e(\p b a_\dimmarkup
+		e(-\offset X-offset 0.5 \p b a_\dimmarkup
 		e f c
 % mesures 61 à 65
 		e f a
@@ -90,7 +90,7 @@ musicCelloMvtIII = \relative c' {
 		e~
 % mesures 66 à 70
 		e \mark \default
-		a8 r r4 e''8->^\pizz e,
+		a8 r r4 e''8->-\offset X-offset -5.5 ^\pizz e,
 		r4 r e'8-> e,
 		r4  r \tuplet 3/2 {e8(^\arco e,) e-.}
 		r4 r \tuplet 3/2 {e'8(_\crescmarkup e,) e-.}
@@ -111,7 +111,7 @@ musicCelloMvtIII = \relative c' {
 		r4 e'8.( a,16) a4~
 	}
 	a2.
-	a\fermata_\attacca \markFine \break \bar "||" \key a \major \time 2/4
+	a\fermata_\attacca \markYoffset #3.5 \markFine \bar "||" \key a \major \time 2/4
 	a2\p~^\trio
 % mesures 86 à 90
 	a~
@@ -141,8 +141,8 @@ musicCelloMvtIII = \relative c' {
 	cis2)_\crescmarkup
 	\tuplet 3/2 4 {fis,8( gis fis gis\< fis a}
 	cis2)\!
-	\tuplet 3/2 4 {b8(\f cis b cis b d
-	fis gis fis gis\> fis b,)\!}
+	\tupletDown \tuplet 3/2 4 {b8(\f cis b cis b d \tupletNeutral
+	fis gis fis \once \tupletUp gis\> fis b,)\!}
 % mesures 111 à 115
 	e2(_\dimmarkup
 	e,4.)\p r8 
@@ -208,7 +208,7 @@ musicCelloMvtIII = \relative c' {
 	e8) r e16( fis e fis
 	e8) r e16( fis e fis
 	e8) r e16( fis e e') \mark \default
-	d4\fp b8-. d-.
+	\once \stemUp d4\fp b8-. d-.
 % mesures 166 à 170
 	R2*3
 	
@@ -218,14 +218,14 @@ musicCelloMvtIII = \relative c' {
 % mesures 171 à 175
 	
 	
-	cis,16(_\ppsempre bis cis bis cis bis cis bis
+	\startMeasureCount cis,16(_\ppsempre bis cis bis cis bis cis bis
 	cis bis cis bis cis bis cis bis)
 	cis( bis cis bis cis bis cis bis
 % mesures 176 à 180
 	cis bis cis bis cis bis cis bis)
 	cis( bis cis bis cis bis cis bis
 	cis bis cis bis cis bis cis bis)
-	cis( bis cis bis cis bis cis bis)
+	cis( bis cis bis cis bis cis bis) \stopMeasureCount
 	cis2~
 % mesures 181 à 185
 	cis
@@ -286,11 +286,11 @@ musicCelloMvtIII = \relative c' {
 	g16( a g a g8) r
 	g16( a g a g8) r
 	e\mf r \tuplet 3/2 {e( fis! e)}
-	r4 \tuplet 3/2 {e8(_\crescmarkup fis e)}
+	r4 \tuplet 3/2 {e8(^\crescmarkup fis e)}
 % mesures 231 à 235
 	r4 \tuplet 3/2 {e8( fis e)}
 	r4 \tuplet 3/2 {e8( fis e)}
-	r4 e16(\f fis e fis
+	r4 e16(-\offset X-offset -1.8 \f fis e fis
 	e8) r e16( fis e fis
 	e8) r e16( fis e fis
 % mesures 236 à 240
@@ -321,14 +321,14 @@ musicCelloMvtIII = \relative c' {
 	R2*3
 	
 	\mark \default
-	a,16(\p b a b a b a b
+	\startMeasureCount a,16(\p b a b a b a b
 	a b a b a b a b)
 % mesures 261 à 265
 	a( b a_\crescmarkup b a b a b
 	a b a b a b a b)
 	a( b a b a b a b
 	a\< b a b a b a b)
-	a( b a b a b a b\!
+	a( b a b a b a b\! \stopMeasureCount
 % mesures 266 à 270
 	a8) r r4
 	a'8\f-. cis-. a,-. a-. 
@@ -339,7 +339,7 @@ musicCelloMvtIII = \relative c' {
 	a'-. cis-. a,-. a-. 
 	a'_\dimmarkup-. cis-. a,-. a-. 
 	b'-. d-. a,-. a-. 
-	a'-. cis-. a,-. a
+	a'-. cis-. a,-. a-.
 	a2\p~
 % mesures 276 à 280
 	a~_\dimmarkup

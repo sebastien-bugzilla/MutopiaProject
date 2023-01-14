@@ -20,6 +20,39 @@ attacca = \markup {\italic {attacca}}
 moltoespress = \markup {\italic {molto espress.}}
 pocoa = \markup {\italic {poco a}}
 feroce = \markup {\italic feroce}
+
+fdim = \markup {\dynamic f \italic dim.}
+fcresc = \markup {\dynamic f \italic {cresc.}}
+fsemprecresc = \markup { \dynamic f \italic {sempre cresc.}}
+pcresc = \markup {\hspace #-0.08 \dynamic p \italic cresc.}
+pdim = \markup {\hspace #-0.08 \dynamic p \italic dim.}
+pespress = \markup {\hspace #-0.08 \dynamic p \italic espress.}
+pespressivo = \markup {\hspace #-0.08 \dynamic p \italic espressivo}
+pnonlegato = \markup {\hspace #-0.08 \dynamic p \italic {non legato}}
+pdolce = \markup {\hspace #-0.08 \dynamic p \italic dolce.}
+ppocomarcato = \markup {\hspace #-0.08 \dynamic p \italic {poco marcato}}
+ppoco = \markup {\hspace #-0.08 \dynamic p \italic poco}
+ffferoce = \markup {\hspace #-0.63 \dynamic ff \italic feroce}
+mfcresc = \markup {\hspace #-0.85 \dynamic mf \italic cresc.}
+ppmorendo = \markup {\hspace #-0.82 \dynamic pp \italic {morendo}}
+pptranquillo = \markup {\hspace #-0.82  \dynamic pp \italic {tranquillo}}
+ppmoltoespress = \markup {\hspace #-0.82 \dynamic pp \italic {molto espress.}}
+ppsempre = \markup {\hspace #-0.82  \dynamic pp \italic {sempre}}
+pppnonlegato = \markup {\hspace #-1.55 \dynamic ppp \italic {non legato}}
+fzdim= \markup {\hspace #-0.55 \dynamic fz \italic dim.}
+fzcresc= \markup {\hspace #-0.55 \dynamic fz \italic cresc.}
+fzmarkup = \markup {\hspace #-0.55 \dynamic fz}
+mpespressivo = \markup {\hspace #-0.95 \dynamic mp \italic espressivo}
+semprepiup = \markup {\italic {sempre più} \dynamic p}
+marcato = \markup {\italic marcato}
+
+semprepiupII = \markup {
+	\center-column {
+		\italic \lower #1 "sempre" 
+		\line { \italic "più" \dynamic p}
+	}
+}
+
 scherzodcalfine = {
 	\once \override TextScript.self-alignment-X = 1
 	s8_\markup {
@@ -75,37 +108,6 @@ pocoapococresc = #(
 	'span-type 'text
 	'span-text "poco a poco cresc."
 )
-
-fdim = \markup {\dynamic f \italic dim.}
-fcresc = \markup {\dynamic f \italic {cresc.}}
-fsemprecresc = \markup { \dynamic f \italic {sempre cresc.}}
-pcresc = \markup {\hspace #-0.08 \dynamic p \italic cresc.}
-pdim = \markup {\hspace #-0.08 \dynamic p \italic dim.}
-pespress = \markup {\hspace #-0.08 \dynamic p \italic espress.}
-pespressivo = \markup {\hspace #-0.08 \dynamic p \italic espressivo}
-pnonlegato = \markup {\hspace #-0.08 \dynamic p \italic {non legato}}
-pdolce = \markup {\hspace #-0.08 \dynamic p \italic dolce.}
-ppocomarcato = \markup {\hspace #-0.08 \dynamic p \italic {poco marcato}}
-ppoco = \markup {\hspace #-0.08 \dynamic p \italic poco}
-ffferoce = \markup {\hspace #-0.63 \dynamic ff \italic feroce}
-mfcresc = \markup {\hspace #-0.85 \dynamic mf \italic cresc.}
-ppmorendo = \markup {\hspace #-0.82 \dynamic pp \italic {morendo}}
-pptranquillo = \markup {\hspace #-0.82  \dynamic pp \italic {tranquillo}}
-ppmoltoespress = \markup {\hspace #-0.82 \dynamic pp \italic {molto espress.}}
-ppsempre = \markup {\hspace #-0.82  \dynamic pp \italic {sempre}}
-pppnonlegato = \markup {\hspace #-1.55 \dynamic ppp \italic {non legato}}
-fzdim= \markup {\hspace #-0.55 \dynamic fz \italic dim.}
-fzcresc= \markup {\hspace #-0.55 \dynamic fz \italic cresc.}
-fzmarkup = \markup {\hspace #-0.55 \dynamic fz}
-mpespressivo = \markup {\hspace #-0.95 \dynamic mp \italic espressivo}
-semprepiup = \markup {\italic {sempre più} \dynamic p}
-marcato = \markup {\italic marcato}
-semprepiupII = \markup {
-	\center-column {
-		\italic \lower #1 "sempre" 
-		\line { \italic "più" \dynamic p}
-	}
-}
 
 trillflat = \markup { 
 	\general-align #X #CENTER 
@@ -179,7 +181,6 @@ hairpinShorten = #(define-music-function
 )
 
 whiteoutMarkup = {
-%	\once \override Hairpin.layer = #4
 	\once \override TextScript.layer = #3
 	\once \override TextScript.whiteout = ##t
 	\once \override TextScript.whiteout-style = #'outline
@@ -241,88 +242,3 @@ mmrnDown = {
 	\once \override MultiMeasureRestNumber.direction = #-1 
 }
 
-
-%beamGap = #(define-music-function
-%	(gap)
-%	(number?)
-%	#{
-%		\once \override Beam.auto-knee-gap = #gap
-%	#}
-%)
-
-%tupletEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TupletNumber.extra-offset = #offset 
-%	#}
-%)
-
-%beamLeftTwoRightOne = {
-%	\set stemLeftBeamCount = #2
-%	\set stemRightBeamCount = #1
-%}
-
-%beamLeftOneRightTwo = {
-%	\set stemLeftBeamCount = #1
-%	\set stemRightBeamCount = #2
-%}
-
-%setBeamTriple = { 
-%	\set subdivideBeams = ##t
-%	\set baseMoment = #(ly:make-moment 1/8)
-%	\set beatStructure = 2,2,2
-%}
-
-%unsetBeamTriple = {
-%	\set subdivideBeams = ##f
-%	\unset baseMoment
-%	\unset beatStructure
-%}
-
-
-%mmrMinLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.minimum-length = #length
-%	#}
-%)
-
-%tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-
-
-%whiteoutDynamic = {
-%	\once \override DynamicText.whiteout = ##t
-%	\once \override DynamicText.whiteout-style = #'outline
-%}
-
-%markXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
-%	#}
-%)
-
-%dynSpanYoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override DynamicTextSpanner.bound-details.right.Y = #offset
-%	#}
-%)
-
-%mmrLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.space-increment = #length
-%	#}
-%)
