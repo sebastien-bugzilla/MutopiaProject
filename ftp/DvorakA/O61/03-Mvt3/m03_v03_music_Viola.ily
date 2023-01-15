@@ -104,7 +104,7 @@ musicViolaMvtIII = \relative c {
 		e8.-> e16-. e8-. r e-. r
 		\tuplet 3/2 4 {d'8(\fz a) a-. c(\fz a) a-. f(\fz a) a-.
 		e(\fz a) a-. d,(->_\dimmarkup a) a-. c(-> a) a-.
-		f(\p\> a) a-. e( a) a-. f(\! a) a-.
+		f(\p-\tweak height 0.5 \> a) a-. e( a) a-. f(\! a) a-.
 		e(\pp a) a-. f( a) a-. e( a) a-.}
 % mesures 81 à 85
 		r4 \tuplet 3/2 {e8( a) a-.} r4
@@ -112,7 +112,7 @@ musicViolaMvtIII = \relative c {
 	}
 	e2.
 	e\fermata_\attacca \markYoffset #4 \markFine \bar "||" \key a \major \time 2/4
-	e2\p~^\trio
+	e2\p~^\trioPart
 % mesures 86 à 90
 	e\<
 	f4->\>( e8. d16)\!

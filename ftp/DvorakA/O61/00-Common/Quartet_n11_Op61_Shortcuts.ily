@@ -89,6 +89,13 @@ pococrescendo = #(
 	'span-text "poco crescendo"
 )
 
+pococresc = #(
+	make-music 'CrescendoEvent
+	'span-direction START
+	'span-type 'text
+	'span-text "poco cresc."
+)
+
 crescendo = #(
 	make-music 'CrescendoEvent
 	'span-direction START

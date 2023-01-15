@@ -92,6 +92,18 @@
 			\layoutPart
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #24 
+		\abs-fontsize #20
+		\fill-line {
+			\center-column {
+				\line { "The third movement is formatted" }
+				\line { "to be displayed on three pages." }
+				\line { "Please attach page 9 next to page 10." }
+			}
+		}
+	}
 	\score {
 		\new Staff <<
 			\new Voice {
@@ -130,7 +142,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4

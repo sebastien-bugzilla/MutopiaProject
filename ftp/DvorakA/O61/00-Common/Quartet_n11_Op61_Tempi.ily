@@ -421,7 +421,7 @@ tempiPartMvtIV = {
 		}
 	}
 	\tag #'(viola) {
-		\tempoXoffset #-1 
+		\tempoEO #'(0 . -12)
 		\tempo \markup {
 			\medium \italic "cresc. ed accel."
 		}
