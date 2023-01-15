@@ -1,15 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/15-MendelssohnSymphony11/03_Symphony11_MWV11_Mvt3_Voix4.ly
-%Fichier généré le :  mardi 30 octobre 2018, 11:16:41 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   3   -   V O I X   4               #
-%#######################################################################
-MvtTroisVoixQuatre = \relative c {
+%  work        : String Symphony No. 11 in F major, MWV 11
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 15 January 2023, 12:23
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolaIIMvtIII = \relative c {
 	\clef alto
-	\override TupletBracket #'bracket-visibility = ##f
-	\set Staff.instrumentName = #"Viola II"
+	\key ees \major
 % mesures 1 à 5
 	ees2.\p~
 	ees

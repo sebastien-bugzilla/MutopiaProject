@@ -1,129 +1,89 @@
-%Fichier : /media/Documents/Partitions/lilypond/15-MendelssohnSymphony11/00_Symphony11_MWV11_Conducteur_Mvt1.ly
-%Fichier généré le :  mardi 30 octobre 2018, 11:16:41 (UTC+0100)
-%#######################################################################
-%#             G E N E R A L I T E S   E T   E N T E T E               #
-%#######################################################################
-\paper {
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { \fromproperty #'header:dedication }
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-%-----------------------------------------------------------------------
-global = {
-	\version "2.18.2"
-	\time 4/4
-	\key f \major
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Adagio" 4=60
-	#(set-global-staff-size 15)
-	\set Score.doubleRepeatType = #":|.|:"
-}
-%-----------------------------------------------------------------------
-\include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "01_Symphony11_MWV11_Mvt1_Voix1.ly"
-\include "01_Symphony11_MWV11_Mvt1_Voix2.ly"
-\include "01_Symphony11_MWV11_Mvt1_Voix3.ly"
-\include "01_Symphony11_MWV11_Mvt1_Voix4.ly"
-\include "01_Symphony11_MWV11_Mvt1_Voix5.ly"
-\include "01_Symphony11_MWV11_Mvt1_Voix6.ly"
-%#######################################################################
-%#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
-%#######################################################################
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Felix Mendelssohn (1809 - 1847)
+%  work               : String Symphony No. 11 in F Major, MWV 11
+%  Source             : Leipziger Ausgabe der Werke, Serie I, Bd.3
+%  Type of score      : Score conductor mvt I
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Sunday 15 January 2023, 12:23
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/Symph11_MWV11_Header.ily"
+\include "./00-Common/Symph11_MWV11_PaperConductors.ily"
+\include "./00-Common/Symph11_MWV11_timeMvt.ily"
+\include "./00-Common/Symph11_MWV11_LayoutConductors.ily"
+\include "./00-Common/Symph11_MWV11_Shortcuts.ily"
+\include "./00-Common/Symph11_MWV11_NameStaff.ily"
+%\include "./00-Common/Symph11_MWV11_Format_Cond_Mvt1.ily"
+\include "./00-Common/Symph11_MWV11_Tempi.ily"
+\include "./01-Mvt1/m01_v01_music_ViolinI.ily"
+\include "./01-Mvt1/m01_v02_music_ViolinII.ily"
+\include "./01-Mvt1/m01_v03_music_ViolaI.ily"
+\include "./01-Mvt1/m01_v04_music_ViolaII.ily"
+\include "./01-Mvt1/m01_v05_music_Cello.ily"
+\include "./01-Mvt1/m01_v06_music_Basso.ily"
+%###############################################################################
+%#                          S C O R E   S E C T I O N                          #
+%###############################################################################
 \book{
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Felix Mendelssohn"
-				"1809 - 1847"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Symphonie n°11 pour Cordes en Fa Majeur"
-				"MWV N 11"
+				"1st movement"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Mouvement n°1 - Adagio"
-			}
+		subsubtitle = \markup { 
+			"String Symphony No. 11 in F Major, MWV 11 — " 
+			\concat {"1" \super st} "Movement"
 		}
 	}
 	\score {
-	    \new StaffGroup <<
-		    \new GrandStaff <<
-			    \new Staff << \global \MvtUnVoixUne >>
-			    \new Staff << \global \MvtUnVoixDeux >>
-			>>
-			\new GrandStaff <<
-			    \new Staff << \global \MvtUnVoixTrois >>
-			    \new Staff << \global \MvtUnVoixQuatre >>
-			>>
-			\new GrandStaff <<
-			    \new Staff << \global \MvtUnVoixCinq >>
-			    \new Staff << \global \MvtUnVoixSix >>
+		<<
+			\new StaffGroup <<
+				\new GrandStaff <<
+					\new Staff << 
+%						\new Voice {
+%							\formatConductorMvtI
+%						}
+						\new Voice {
+							\tempiMvtI
+						}
+						\new Voice {
+							\timeMvtI \nameStaffIMvtI \musicViolinIMvtI
+						}
+					>>
+					\new Staff { 
+						\timeMvtI \nameStaffIIMvtI \musicViolinIIMvtI
+					}
+				>>
+				\new GrandStaff <<
+					\new Staff {
+						\timeMvtI \nameStaffIIIMvtI \musicViolaIMvtI
+					}
+					\new Staff { 
+						\timeMvtI \nameStaffIVMvtI \musicViolaIIMvtI
+					}
+				>>
+				\new GrandStaff <<
+					\new Staff {
+						\timeMvtI \nameStaffVMvtI \partCombine \musicCelloMvtI \musicBassoMvtI
+					}
+%					\new Staff {
+%						\timeMvtI \musicBassoMvtI
+%					}
+				>>
 			>>
 		>>
 		\header {
 			breakbefore = ##t
 		}
 		\layout {
-			%system-count = #20
-			\context { 
-		        \Staff \RemoveEmptyStaves 
-	        }
-		}
-	}
-	\score {
-		\new StaffGroup <<
-			\new Staff << \global \MvtUnVoixUne >>
-			\new Staff << \global \MvtUnVoixDeux >>
-			\new Staff << \global \MvtUnVoixTrois >>
-			\new Staff << \global \MvtUnVoixQuatre >>
-			\new Staff << \global \MvtUnVoixCinq >>
-			\new Staff << \global \MvtUnVoixSix >>
-		>>
-		\midi {
-		    %\tempo 2 = 90
-			\context {
-			    \Score
-			    midiMinimumVolume = #0.8
-				midiMaximumVolume = #0.9
-			}
 		}
 	}
 }

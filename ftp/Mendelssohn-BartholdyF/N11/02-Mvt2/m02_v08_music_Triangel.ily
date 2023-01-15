@@ -1,12 +1,10 @@
-%Fichier : /media/Documents/Partitions/lilypond/15-MendelssohnSymphony11/02_Symphony11_MWV11_Mvt2_Voix8.ly
-%Fichier généré le :  mardi 30 octobre 2018, 11:16:41 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   2   -   V O I X   8               #
-%#######################################################################
-MvtDeuxVoixHuit = \drummode {
+%  work        : String Symphony No. 11 in F major, MWV 11
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 15 January 2023, 12:23
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicTriangelMvtII = \drummode {
     \override Staff.StaffSymbol.line-positions = #'( 0 )
     \override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
     \set Staff.instrumentName = #"Triangel"

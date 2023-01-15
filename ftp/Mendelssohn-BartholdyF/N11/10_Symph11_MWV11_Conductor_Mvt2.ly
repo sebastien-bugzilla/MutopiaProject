@@ -1,144 +1,100 @@
-%Fichier : /media/Documents/Partitions/lilypond/15-MendelssohnSymphony11/00_Symphony11_MWV11_Conducteur_Mvt2.ly
-%Fichier généré le :  mardi 30 octobre 2018, 11:16:41 (UTC+0100)
-%#######################################################################
-%#             G E N E R A L I T E S   E T   E N T E T E               #
-%#######################################################################
-\paper {
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { \fromproperty #'header:dedication }
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-%-----------------------------------------------------------------------
-global = {
-	\version "2.18.2"
-	\time 2/4
-	\key d \minor
-	\set Score.markFormatter = #format-mark-box-numbers
-	\compressFullBarRests
-	\tempo "Commodo Schweizerlied" 4 = 75
-	#(set-global-staff-size 15)
-	\set Score.doubleRepeatType = #":|.|:"
-}
-%-----------------------------------------------------------------------
-\include "/media/Documents/Partitions/lilypond/markup.ly"
-\include "02_Symphony11_MWV11_Mvt2_Voix1.ly"
-\include "02_Symphony11_MWV11_Mvt2_Voix2.ly"
-\include "02_Symphony11_MWV11_Mvt2_Voix3.ly"
-\include "02_Symphony11_MWV11_Mvt2_Voix4.ly"
-\include "02_Symphony11_MWV11_Mvt2_Voix5.ly"
-\include "02_Symphony11_MWV11_Mvt2_Voix7.ly"
-\include "02_Symphony11_MWV11_Mvt2_Voix8.ly"
-\include "02_Symphony11_MWV11_Mvt2_Voix9.ly"
-%#######################################################################
-%#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
-%#######################################################################
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Felix Mendelssohn (1809 - 1847)
+%  work               : String Symphony No. 11 in F Major, MWV 11
+%  Source             : Leipziger Ausgabe der Werke, Serie I, Bd.3
+%  Type of score      : Score conductor mvt I
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Sunday 15 January 2023, 12:23
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/Symph11_MWV11_Header.ily"
+\include "./00-Common/Symph11_MWV11_PaperConductors.ily"
+\include "./00-Common/Symph11_MWV11_timeMvt.ily"
+\include "./00-Common/Symph11_MWV11_LayoutConductors.ily"
+\include "./00-Common/Symph11_MWV11_Shortcuts.ily"
+\include "./00-Common/Symph11_MWV11_NameStaff.ily"
+%\include "./00-Common/Symph11_MWV11_Format_Cond_Mvt2.ily"
+\include "./00-Common/Symph11_MWV11_Tempi.ily"
+\include "./02-Mvt2/m02_v01_music_ViolinI.ily"
+\include "./02-Mvt2/m02_v02_music_ViolinII.ily"
+\include "./02-Mvt2/m02_v03_music_ViolaI.ily"
+\include "./02-Mvt2/m02_v04_music_ViolaII.ily"
+\include "./02-Mvt2/m02_v05_music_Cello.ily"
+\include "./02-Mvt2/m02_v06_music_Basso.ily"
+\include "./02-Mvt2/m02_v07_music_Timpani.ily"
+\include "./02-Mvt2/m02_v08_music_Triangel.ily"
+\include "./02-Mvt2/m02_v09_music_Becken.ily"
+%###############################################################################
+%#                          S C O R E   S E C T I O N                          #
+%###############################################################################
 \book{
 	\header {
-		title = \markup { \fontsize #5 \sans 
+		subtitle = \markup {
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Felix Mendelssohn"
-				"1809 - 1847"
+				"2nd movement"
 			}
 		}
-		subtitle = \markup { 
-			\fontsize #5 \sans
-			\center-column {
-				\vspace #10
-				"Symphonie n°11 pour Cordes en Fa Majeur"
-				"MWV N 11"
-			}
+		subsubtitle = \markup { 
+			"String Symphony No. 11 in F Major, MWV 11 — " 
+			\concat {"2" \super nd} "Movement"
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Mouvement n°2 - Scherzo"
-			}
+		instrument = \markup {
+			""
 		}
 	}
 	\score {
-	    <<
-		    \new StaffGroup = "Strings" <<
-		        \new GrandStaff <<
-			        \new Staff { \global \MvtDeuxVoixUne }
-			        \new Staff { \global \MvtDeuxVoixDeux }
-			    >>
-			    \new GrandStaff <<
-			        \new Staff { \global \MvtDeuxVoixTrois }
-			        \new Staff { \global \MvtDeuxVoixQuatre }
-			    >>
-			    \new GrandStaff <<
-			        \new Staff { \global \MvtDeuxVoixCinq }
-			    >>
-		    >>
-			\new Staff { \global \MvtDeuxVoixSept }
-			\new RhythmicStaff = "Triangle" <<
-			    \global \MvtDeuxVoixHuit
+		<<
+			\new StaffGroup <<
+				\new GrandStaff <<
+					\new Staff << 
+%						\new Voice {
+%							\formatConductorMvtII
+%						}
+						\new Voice {
+							\tempiMvtII
+						}
+						\new Voice {
+							\timeMvtII \nameStaffIMvtII \musicViolinIMvtII
+						}
+					>>
+					\new Staff { 
+						\timeMvtII \nameStaffIIMvtII \musicViolinIIMvtII
+					}
+				>>
+				\new GrandStaff <<
+					\new Staff { 
+						\timeMvtII \nameStaffIIIMvtII \musicViolaIMvtII
+					}
+					\new Staff { 
+						\timeMvtII \nameStaffIVMvtII \musicViolaIIMvtII
+					}
+				>>
+				\new Staff {
+					\timeMvtII \nameStaffVMvtII 
+					\partCombine \musicCelloMvtII \musicBassoMvtII
+				}
 			>>
-			\new RhythmicStaff = "Cymbale" <<
-			    \global \MvtDeuxVoixNeuf
-			>>
+			\new Staff { 
+				\timeMvtII \nameStaffVIMvtII \musicTimpaniMvtII
+			}
+			\new RhythmicStaff {
+				\timeMvtII \nameStaffVIIMvtII \musicTriangelMvtII
+			}
+			\new RhythmicStaff {
+				\timeMvtII \nameStaffVIIIMvtII \musicBeckenMvtII
+			}
 		>>
 		\header {
 			breakbefore = ##t
 		}
 		\layout {
-			%system-count = #20
-			\context { 
-		        \Staff \RemoveEmptyStaves
-	        }
-	        \context {
-	            \RhythmicStaff \RemoveEmptyStaves
-	        }
-		}
-	}
-	\score {
-		\new StaffGroup <<
-			\new Staff << \global \MvtDeuxVoixUne >>
-			\new Staff << \global \MvtDeuxVoixDeux >>
-			\new Staff << \global \MvtDeuxVoixTrois >>
-			\new Staff << \global \MvtDeuxVoixQuatre >>
-			\new Staff << \global \MvtDeuxVoixCinq >>
-			\new Staff << \global \MvtDeuxVoixSept >>
-			\new Staff << \global \MvtDeuxVoixHuit >>
-			\new Staff << \global \MvtDeuxVoixNeuf >>
-		>>
-		\midi {
-		    %\tempo 2 = 90
-			\context {
-			    \Score
-			    midiMinimumVolume = #0.8
-				midiMaximumVolume = #0.9
-			}
 		}
 	}
 }

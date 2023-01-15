@@ -1,16 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/15-MendelssohnSymphony11/01_Symphony11_MWV11_Mvt1_Voix1.ly
-%Fichier généré le :  mardi 30 octobre 2018, 11:16:41 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   1   -   V O I X   1               #
-%#######################################################################
-MvtUnVoixUne = \relative c'' {
-    \set Staff.midiInstrument = #"violin"
-    \set Staff.instrumentName = #"Violin I"
+%  work        : String Symphony No. 11 in F major, MWV 11
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 15 January 2023, 12:23
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicViolinIMvtI = \relative c'' {
 	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
+	\key f \major
 % mesures 1 à 5
 	R1*5
 	
@@ -55,170 +51,170 @@ MvtUnVoixUne = \relative c'' {
 	g8) r r8. f16( e8) r r8. aes16
 % mesures 36 à 40
 	g2.\espressivo\fermata \key f \minor \repeat volta 2 { \tempo "Allegro molto" 2=140 c,4-.\p
-	    f4-. r r c-.
-	    f-. r r8 c-. d-. e-. 
-	    f-. g-. aes-. g-. f-. ees!-. des!-. c-. 
-	    b4-. g'-. r bes,-.
+		f4-. r r c-.
+		f-. r r8 c-. d-. e-. 
+		f-. g-. aes-. g-. f-. ees!-. des!-. c-. 
+		b4-. g'-. r bes,-.
 % mesures 41 à 45
-	    g'-. r r bes,-.
-	    g'-. r r8 f-. g-. aes-. 
-	    bes-. aes-. g-. f-. e-. des-. c-. bes-. 
-	    aes4-. f'-. r c'
-	    f2( ees4) des-.
+		g'-. r r bes,-.
+		g'-. r r8 f-. g-. aes-. 
+		bes-. aes-. g-. f-. e-. des-. c-. bes-. 
+		aes4-. f'-. r c'
+		f2( ees4) des-.
 % mesures 46 à 50
-	    des2( c4) r
-	    bes'2( aes4) g-.
-	    g2( f4) r
-	    des'2( c4) bes-.
-	    g( aes) e( f)
+		des2( c4) r
+		bes'2( aes4) g-.
+		g2( f4) r
+		des'2( c4) bes-.
+		g( aes) e( f)
 % mesures 51 à 55
-	    c( des) aes-. bes-.
-	    c2. c4
-	    f2\p( ees4 des)
-	    des2( c4) r
-	    bes'2( aes4 g)
+		c( des) aes-. bes-.
+		c2. c4
+		f2\p( ees4 des)
+		des2( c4) r
+		bes'2( aes4 g)
 % mesures 56 à 60
-	    g2( f4) r
-	    des'2( c4 bes)
-	    bes( aes) r g
-	    bes( aes) r g
-	    des'8( c) c-. c-. c( bes) bes-. bes-.
+		g2( f4) r
+		des'2( c4 bes)
+		bes( aes) r g
+		bes( aes) r g
+		des'8( c) c-. c-. c( bes) bes-. bes-.
 % mesures 61 à 65
-	    bes( aes) aes-. aes-. aes( g) g-. g-.
-	    c4( aes) r f
-	    bes( g) r e
-	    des'8( c) c-. c-. c( bes) bes-. bes-.
-	    bes( aes) aes-. aes-. aes( g) g-. g-.
+		bes( aes) aes-. aes-. aes( g) g-. g-.
+		c4( aes) r f
+		bes( g) r e
+		des'8( c) c-. c-. c( bes) bes-. bes-.
+		bes( aes) aes-. aes-. aes( g) g-. g-.
 % mesures 66 à 70
-	    bes( aes) aes-. aes-. g( f) f-. f-.
-	    aes( g) g-. g-. c( e,) e-. e-.
-	    f4 f'2\ff c4
-	    aes f c aes
-	    f r r aes'8 aes
+		bes( aes) aes-. aes-. g( f) f-. f-.
+		aes( g) g-. g-. c( e,) e-. e-.
+		f4 f'2\ff c4
+		aes f c aes
+		f r r aes'8 aes
 % mesures 71 à 75
-	    aes( g) g-. g-. g( f) f-. f-.
-	    e4 bes'2 g4
-	    e c bes g
-	    e r r des''8 des
-	    des( c) c-. c-. c( bes-.) bes-. bes-.
+		aes( g) g-. g-. g( f) f-. f-.
+		e4 bes'2 g4
+		e c bes g
+		e r r des''8 des
+		des( c) c-. c-. c( bes-.) bes-. bes-.
 % mesures 76 à 80
-	    aes4 r r c,
-	    f r r8 c d ees
-	    f g aes g f ees d c
-	    b4 g d'2~
-	    d4 c ees2~ 
+		aes4 r r c,
+		f r r8 c d ees
+		f g aes g f ees d c
+		b4 g d'2~
+		d4 c ees2~ 
 % mesures 81 à 85
-	    ees4 c f2
-	    r2 r8 bes, c des
-	    ees g bes aes g f ees des
-	    c4 aes ees'2~
-	    ees4 d8 c d ees c d
+		ees4 c f2
+		r2 r8 bes, c des
+		ees g bes aes g f ees des
+		c4 aes ees'2~
+		ees4 d8 c d ees c d
 % mesures 86 à 90
-	    ees r ees' d c bes aes g
-	    f ees d c bes aes g f
-	    ees( d) d-. d-. f( d) d-. d-.
-	    aes'2. d,4
-	    ees8 r ees'' d c bes aes g
+		ees r ees' d c bes aes g
+		f ees d c bes aes g f
+		ees( d) d-. d-. f( d) d-. d-.
+		aes'2. d,4
+		ees8 r ees'' d c bes aes g
 % mesures 91 à 95
-	    f ees d c bes aes g f
-	    ees( d) d-. d-. f( d) d-. d-.
-	    ces'2. d,4
-	    ees r r2
-	    <ees bes' g'>4 r r2
+		f ees d c bes aes g f
+		ees( d) d-. d-. f( d) d-. d-.
+		ces'2. d,4
+		ees r r2
+		<ees bes' g'>4 r r2
 % mesures 96 à 100
-	    <ees bes' g'>4 r r2
-	    <ees bes' g'>4 r <ees bes' g'>4 r
-	    <ees bes' g'>4 des''8(\f c bes c aes bes
-	    g aes bes aes g aes f g
-	    ees) r g( f ees f des ees
+		<ees bes' g'>4 r r2
+		<ees bes' g'>4 r <ees bes' g'>4 r
+		<ees bes' g'>4 des''8(\f c bes c aes bes
+		g aes bes aes g aes f g
+		ees) r g( f ees f des ees
 % mesures 101 à 105
-	    c des bes c aes bes g bes)
-	    aes4 r r2
-	    R1*3
-	    
-	    
+		c des bes c aes bes g bes)
+		aes4 r r2
+		R1*3
+		
+		
 % mesures 106 à 110
-	    aes1\p(~
-	    aes2 g)
-	    ees'1
-	    des4 r r2
-	    R1*3
+		aes1\p(~
+		aes2 g)
+		ees'1
+		des4 r r2
+		R1*3
 % mesures 111 à 115
-	    
-	    
-	    c1~
-	    c4 r r2
-	    R1*2
+		
+		
+		c1~
+		c4 r r2
+		R1*2
 % mesures 116 à 120
-	    
-	    d2( \acciaccatura f8 ees4 d)
-	    ees2 c
-	    ees2( ees4) ees
-	    c'1
+		
+		d2( \acciaccatura f8 ees4 d)
+		ees2 c
+		ees2( ees4) ees
+		c'1
 % mesures 121 à 125
-	    bes4( aes) g-. f-.
-	    f( ees) des-. c-.
-	    bes2*2/3( s2*1/3\turn ees4) des
-	    c4 r r2
-	    c'2( c,4) c-.
+		bes4( aes) g-. f-.
+		f( ees) des-. c-.
+		bes2*2/3( s2*1/3\turn ees4) des
+		c4 r r2
+		c'2( c,4) c-.
 % mesures 126 à 130
-	    g'2( f4) r
-	    g2( \grace {aes16[ g]} f4) g-.
-	    aes2 r
-	    a,4( bes des bes)
-	    f'( ees des c)
+		g'2( f4) r
+		g2( \grace {aes16[ g]} f4) g-.
+		aes2 r
+		a,4( bes des bes)
+		f'( ees des c)
 % mesures 131 à 135
-	    ees( des) r2
-	    ees'2.\ff d8( f)
-	    ees4 d8( f) ees4 d8( f)
-	    ees4 r ees8 d f ees
-	    des! c bes aes g bes ees des
+		ees( des) r2
+		ees'2.\ff d8( f)
+		ees4 d8( f) ees4 d8( f)
+		ees4 r ees8 d f ees
+		des! c bes aes g bes ees des
 % mesures 136 à 140
-	    c4 r ees, d8( f)
-	    ees4 d8( f) ees4 d8( f)
-	    ees4 r ees8 d f ees
-	    des! c bes aes g bes ees des
-	    c4 r c8 b des c
+		c4 r ees, d8( f)
+		ees4 d8( f) ees4 d8( f)
+		ees4 r ees8 d f ees
+		des! c bes aes g bes ees des
+		c4 r c8 b des c
 % mesures 141 à 145
-	    bes aes g f e g c bes
-	    aes4 r aes8 g bes aes
-	    ges f ees des c ees aes g
-	    f4 r r2
-	    bes'8 aes g f ees des c bes
+		bes aes g f e g c bes
+		aes4 r aes8 g bes aes
+		ges f ees des c ees aes g
+		f4 r r2
+		bes'8 aes g f ees des c bes
 % mesures 146 à 150
-	    aes aes c c f f aes aes
-	    bes bes f f g g ees ees
-	    aes( c,) c-. c-. c( bes) bes-. bes-.
-	    aes( c) c-. c-. c( bes) bes-. bes-.
-	    aes( c) c-. c-. c( bes) bes-. bes-.
+		aes aes c c f f aes aes
+		bes bes f f g g ees ees
+		aes( c,) c-. c-. c( bes) bes-. bes-.
+		aes( c) c-. c-. c( bes) bes-. bes-.
+		aes( c) c-. c-. c( bes) bes-. bes-.
 % mesures 151 à 155
-	    aes( c) c-. c-. c c c c
-	    bes2:8 bes:
-	    bes: c8 c des des
-	    ees2:8 des:
-	    c: bes:
+		aes( c) c-. c-. c c c c
+		bes2:8 bes:
+		bes: c8 c des des
+		ees2:8 des:
+		c: bes:
 % mesures 156 à 160
-	    aes8( c) c-. c-. c( bes) bes-. bes-.
-	    aes( c) c-. c-. c( bes) bes-. bes-.
-	    aes( c) c-. c-. c( bes) bes-. bes-.
-	    aes( c) c-. c-. c2:8
-	    bes: bes:
+		aes8( c) c-. c-. c( bes) bes-. bes-.
+		aes( c) c-. c-. c( bes) bes-. bes-.
+		aes( c) c-. c-. c( bes) bes-. bes-.
+		aes( c) c-. c-. c2:8
+		bes: bes:
 % mesures 161 à 165
-	    bes: c4: des:
-	    ees2: des:
-	    c: bes:
-	    aes4 r r <ees bes' g'>\ff
-	    <ees c' aes'> r r <ees bes' g'>
+		bes: c4: des:
+		ees2: des:
+		c: bes:
+		aes4 r r <ees bes' g'>\ff
+		<ees c' aes'> r r <ees bes' g'>
 % mesures 166 à 170
-	    <ees c' aes'> r r g
-	    aes g aes g
-	    aes r r c,\p
-	    c' r r2
-	    r r4 b,
+		<ees c' aes'> r r g
+		aes g aes g
+		aes r r c,\p
+		c' r r2
+		r r4 b,
 % mesures 171 à 175
-	    c b c b
-	    c r r } c-.
-    des-. c-. des-. c-.
+		c b c b
+		c r r } c-.
+	des-. c-. des-. c-.
 	des r r des-.
 	des'-. r r2
 % mesures 176 à 180

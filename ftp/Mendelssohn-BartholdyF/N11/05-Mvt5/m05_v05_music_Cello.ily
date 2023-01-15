@@ -1,15 +1,12 @@
-%Fichier : /media/Documents/Partitions/lilypond/15-MendelssohnSymphony11/05_Symphony11_MWV11_Mvt5_Voix5.ly
-%Fichier généré le :  mardi 30 octobre 2018, 11:16:41 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   5   -   V O I X   5               #
-%#######################################################################
-MvtCinqVoixCinq = \relative c {
+%  work        : String Symphony No. 11 in F major, MWV 11
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 15 January 2023, 12:23
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
+musicCelloMvtV = \relative c {
 	\clef bass
-	\override TupletBracket #'bracket-visibility = ##f
-	\set Staff.instrumentName = #"Bassi"
+	\key f \minor
 	\repeat volta 2 {
 % mesures 1 à 5
 	    f2\f aes4 bes
@@ -388,7 +385,7 @@ MvtCinqVoixCinq = \relative c {
 	c~^\pocorit
 % mesures 316 à 320
 	c~
-	c~\rit
+	c~^\rit
 	c
 	r2^\atempo <c g'>4-.\p q
 	q1~
