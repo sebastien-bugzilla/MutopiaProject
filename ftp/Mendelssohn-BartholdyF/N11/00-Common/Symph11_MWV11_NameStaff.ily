@@ -19,7 +19,7 @@ nameStaffIVMvtI = {
 nameStaffVMvtI = {
 	\set Staff.instrumentName = "Bassi"
 }
-nameVoiceStaffV = {
+nameVoiceStaffVMvtI = {
 	\set Staff.soloText = \markup { \medium "Vc."}
 	\set Staff.soloIIText = \markup { \medium "Cb."}
 	\set Staff.aDueText = \markup { \medium "Bassi"}
@@ -41,6 +41,11 @@ nameStaffIVMvtII = {
 }
 nameStaffVMvtII = {
 	\set Staff.instrumentName = "Bassi"
+}
+nameVoiceStaffVMvtII = {
+	\set Staff.soloText = \markup { \medium "Vc."}
+	\set Staff.soloIIText = \markup { \medium "Cb."}
+	\set Staff.aDueText = \markup { \medium "Bassi"}
 }
 nameStaffVIMvtII = {
 	\set Staff.instrumentName = \markup {

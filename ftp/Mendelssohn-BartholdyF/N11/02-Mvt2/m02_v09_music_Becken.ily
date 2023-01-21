@@ -5,9 +5,8 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicBeckenMvtII = \drummode {
-    \override Staff.StaffSymbol.line-positions = #'( 0 )
-    \override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
-    \set Staff.instrumentName = #"Becken"
+	\override Staff.StaffSymbol.line-positions = #'( 0 )
+	\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
 	\partial 8 r8
 % mesures 1 à 5
 	R2*122
@@ -86,16 +85,16 @@ musicBeckenMvtII = \drummode {
 	R2
 	tamb8\p r tamb r
 	tamb r tamb r
-	tamb tamb tamb r
+	tamb[ tamb tamb] r
 % mesures 146 à 150
-	tamb tamb tamb r
-	tamb tamb tamb r
+	tamb[ tamb tamb] r
+	tamb[ tamb tamb] r
 	tamb r tamb r
 	tamb4 r
 	tamb r8 tamb
 % mesures 151 à 155
 	tamb r tamb r
-	tamb tamb tamb r
+	tamb[ tamb tamb] r
 	tamb2\f\trill
 	tamb\trill
 	tamb\trill

@@ -6,8 +6,6 @@
 %###############################################################################
 musicTimpaniMvtII = \relative c {
 	\clef bass
-	\override TupletBracket #'bracket-visibility = ##f
-	%\set Staff.instrumentName = #"Timpani in d/A"
 	\partial 8 r8
 % mesures 1 à 5
 	R2*122

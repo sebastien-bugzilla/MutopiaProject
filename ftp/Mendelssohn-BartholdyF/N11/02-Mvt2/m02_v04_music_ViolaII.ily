@@ -6,8 +6,7 @@
 %###############################################################################
 musicViolaIIMvtII = \relative c' {
 	\clef alto
-	\override TupletBracket #'bracket-visibility = ##f
-	\set Staff.instrumentName = #"Viola II"
+	\key d \minor
 	\partial 8 r8
 % mesures 1 à 5
 	a r d r
@@ -90,7 +89,7 @@ musicViolaIIMvtII = \relative c' {
 % mesures 66 à 70
 	c8 r c, r
 	g' r g, r
-	g4 r8 ees''16 d
+	g4 r8 ees''16\f d
 	c bes a g fis8 a
 	d,16 d d d ees( d) d-. d-.
 % mesures 71 à 75

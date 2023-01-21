@@ -6,8 +6,7 @@
 %###############################################################################
 musicViolinIIMvtII = \relative c'' {
 	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
-	\set Staff.instrumentName = #"Violin II"
+	\key d \minor
 	\partial 8 r8
 % mesures 1 à 5
 	a r a r
@@ -16,7 +15,7 @@ musicViolinIIMvtII = \relative c'' {
 	d d,)
 	r d'8-. a-.
 % mesures 6 à 10
-	a-. gis-. a-. r
+	a-.[ gis-. a-.] r
 	a r a r
 	r g[ g] r
 	a-.[ a-. a-. a-.] 
@@ -30,7 +29,7 @@ musicViolinIIMvtII = \relative c'' {
 % mesures 16 à 20
 	c~
 	c
-	\afterGrace cis\trill {b16[ cis]}
+	\afterGrace 15/16 cis\trill {b16[ cis]}
 	d8 r r a16-. b-.
 	cis( d) cis-. b-. a8-. g-.
 % mesures 21 à 25
@@ -90,7 +89,7 @@ musicViolinIIMvtII = \relative c'' {
 % mesures 66 à 70
 	c8 c d16( c) b-. c-.
 	d8 d e16( d) c-. d-.
-	c4 r8 ees16 d
+	c4 r8 ees16\f d
 	c bes a g fis8 a
 	d, r <d a' fis'> r
 % mesures 71 à 75

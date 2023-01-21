@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicCelloMvtII = \relative c {
+musicBassoMvtII = \relative c {
 	\clef bass
 	\key d \minor
 	\partial 8 r8
@@ -23,17 +23,17 @@ musicCelloMvtII = \relative c {
 % mesures 11 à 15
 	d,4 r
 	a r
-	c'(^\vc e)
-	f( bes,)
-	a^\bassi g
+	R2*2
+	
+	a'4 g
 % mesures 16 à 20
 	f c
-	a'8-.[^\vc a-. a-.] r
-	g8-.[ g-. g-.] r
-	f8-.[ f-. f-.] r
-	e8-.[ e-. e-.] r
+	f_\cb r
+	a, r
+	d r
+	a r
 % mesures 21 à 25
-	d4^\bassi r
+	d4 r
 	d r8 g
 	d[-. f-. g-. a]-. 
 	d,-.[ d'-. d,-.] r
@@ -113,12 +113,12 @@ musicCelloMvtII = \relative c {
 % mesures 86 à 90
 	f: 
 	f:
-	c'2~^\vc
-	c~
-	c~
+	f:_\cb
+	f:
+	f:
 % mesures 91 à 95
-	c~
-	c4 r8 ees16^\bassi\f[ d]
+	c:
+	f4 r8 ees'16\f[ d]
 	c16 bes a g fis8 a
 	d, r c r
 	bes r a r
@@ -127,22 +127,22 @@ musicCelloMvtII = \relative c {
 	bes aes g f e8 g
 	c, r bes' r
 	a r c r
-	f,^\vc[ f,\p f f]
+	f,4_\cb r
 % mesures 101 à 105
-	f4 r 
-	f''2~
-	f
-	ees~
-	ees4 des8 bes
+	\mmrPos #-6 R2
+	f4 r
+	f r
+	f r
+	f r
 % mesures 106 à 112
-	f' r a,,\p^\bassi r
+	f8 r a,\p^\bassi r
 	bes8 r c r
-	f'2(^\vc
-	e
-	ees
+	f2:8_\cb
+	f:
+	f:
 % mesures 111 à 115
-	des
-	c4) r8 c,16^\bassi\f d
+	f:
+	f4 r8 c16^\bassi\f d
 	e16 f g a bes c d e
 	f8 r d r
 	c r c, r
@@ -177,21 +177,21 @@ musicCelloMvtII = \relative c {
 	d' f a a,
 	d[ a d] r
 % mesures 141 à 145
-	f,4^\vc\p bes
-	a e
-	f c
-	f c'8 r
-	f,4 r
+	\mmrPos #-6 R2
+	\mmrPos #-8 R
+	\mmrPos #-10 R
+	\mmrPos #-6 R
+	\mmrPos #-8 R
 % mesures 146 à 150
-	cis r
-	d r
-	a' r
-	d, r
-	d r8 a'
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+	\mmrPos #-6 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
 % mesures 151 à 155
-	d f, a a
-	d[ a d,] r
-	f'4\f^\bassi bes
+	\mmrPos #-7 R
+	\mmrPos #-10 R
+	f4\f^\bassi bes
 	a e
 	f8 f16 f16 e8 e16 e
 % mesures 156 à 160

@@ -25,8 +25,8 @@
 \include "./02-Mvt2/m02_v02_music_ViolinII.ily"
 \include "./02-Mvt2/m02_v03_music_ViolaI.ily"
 \include "./02-Mvt2/m02_v04_music_ViolaII.ily"
-\include "./02-Mvt2/m02_v05_music_Cello.ily"
-\include "./02-Mvt2/m02_v06_music_Basso.ily"
+\include "./02-Mvt2/m02_v05_music_Cello_C.ily"
+\include "./02-Mvt2/m02_v06_music_Basso_C.ily"
 \include "./02-Mvt2/m02_v07_music_Timpani.ily"
 \include "./02-Mvt2/m02_v08_music_Triangel.ily"
 \include "./02-Mvt2/m02_v09_music_Becken.ily"
@@ -76,20 +76,23 @@
 						\timeMvtII \nameStaffIVMvtII \musicViolaIIMvtII
 					}
 				>>
-				\new Staff {
+				\new Staff \with { \nameVoiceStaffVMvtII } {
 					\timeMvtII \nameStaffVMvtII 
 					\partCombine \musicCelloMvtII \musicBassoMvtII
+%					\musicBassoMvtII 
 				}
 			>>
-			\new Staff { 
+			\new Staff \with {\RemoveEmptyStaves} { 
 				\timeMvtII \nameStaffVIMvtII \musicTimpaniMvtII
 			}
-			\new RhythmicStaff {
-				\timeMvtII \nameStaffVIIMvtII \musicTriangelMvtII
-			}
-			\new RhythmicStaff {
-				\timeMvtII \nameStaffVIIIMvtII \musicBeckenMvtII
-			}
+			\new GrandStaff <<
+				\new RhythmicStaff \with {\RemoveEmptyStaves} {
+					\timeMvtII \nameStaffVIIMvtII \musicTriangelMvtII
+				}
+				\new RhythmicStaff \with {\RemoveEmptyStaves} {
+					\timeMvtII \nameStaffVIIIMvtII \musicBeckenMvtII
+				}
+			>>
 		>>
 		\header {
 			breakbefore = ##t

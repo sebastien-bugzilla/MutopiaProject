@@ -5,24 +5,23 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicViolinIMvtII = \relative c'' {
-    \set Staff.instrumentName = #"Violin I"
 	\clef treble
-	\override TupletBracket #'bracket-visibility = ##f
+	\key d \minor
 	\partial 8 a8(
 % mesures 1 à 5
-	d) \acciaccatura e d16-. cis-. d8 d16-. e-.
+	d) \acciaccatura e d16-. cis-. d8-. d16-. e-.
 	f8-. d-. c!-. e16( f)
 	g8-. f-. e-. d16( e)
 	f8-. e-. d-. f16( e)
-	d8. e16-. f8-. d-.
+	d8.-. e16-. f8-. d-.
 % mesures 6 à 10
 	d16( cis) b( cis) a8 a(
-	d) \acciaccatura e d16-. cis-. d8 d16-. e-.
+	d) \acciaccatura e d16-. cis-. d8-. d16-. e-.
 	f8-. d-. c!-. e16( f)
 	g8-. f-. e-. d16( e)
 	f8-. e-. d-. f16( e)
 % mesures 11 à 15
-	d8. e16-. f8-. d-.
+	d8.-. e16-. f8-. d-.
 	d16( cis) b( cis) a8 r
 	a'4-. g-.
 	f-. c-.
@@ -32,7 +31,7 @@ musicViolinIMvtII = \relative c'' {
 	a8 f f e16( f)
 	g8 e e d16( e)
 	f8 d d cis16-. d-.
-	e( f) e-. d-. cis8 a
+	e( f) e-. d-. cis8-. a-.
 % mesures 21 à 25
 	d8.( e16 f8 g)
 	a16( g a bes a8 g)
@@ -58,9 +57,9 @@ musicViolinIMvtII = \relative c'' {
 	c8([ a bes des)]
 	c4( a'8) a,16( bes)
 % mesures 41 à 45
-	c8( a bes d)
+	c8([ a bes d)]
 	c4( a'16) g-.( f-. e-. 
-	d-. c-. bes-. a-. g-. f-. e-. d)-. 
+	d-. c-. b-. a-. g-. f-. e-. d)-. 
 	c4 r8 g'16(-. a-. 
 	b-. c-. d-. e-. f-. g-. a-. b)-. 
 % mesures 46 à 50
@@ -71,8 +70,8 @@ musicViolinIMvtII = \relative c'' {
 	c2~
 % mesures 51 à 55
 	c4 b\trill
-	c r8 a,16( b)
-	c8( a bes d)
+	c r8 a,16( bes)
+	c8([ a bes d])
 	c4( f8) a,16( bes)
 	c8([ a bes d)]
 % mesures 56 à 60
@@ -84,13 +83,13 @@ musicViolinIMvtII = \relative c'' {
 % mesures 61 à 65
 	b-. c-. d-. e-. f-. g-. a-. b)-. 
 	c2
-	\afterGrace b\trill {a16[ b]}
+	\afterGrace 15/16 b\trill {a16[ b!]}
 	c4 r8 g,,16\f a
 	b c d e f g a b
 % mesures 66 à 70
 	c8 r <e c'> r
 	<d c'> r <d b'> r
-	<e c'>4 r8 ees16 d
+	<e c'>4 r8 ees16\f d
 	c bes a g fis8 a
 	d, r <d a' fis'> r
 % mesures 71 à 75
