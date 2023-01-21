@@ -25,8 +25,8 @@
 \include "./01-Mvt1/m01_v02_music_ViolinII.ily"
 \include "./01-Mvt1/m01_v03_music_ViolaI.ily"
 \include "./01-Mvt1/m01_v04_music_ViolaII.ily"
-\include "./01-Mvt1/m01_v05_music_Cello.ily"
-\include "./01-Mvt1/m01_v06_music_Basso.ily"
+\include "./01-Mvt1/m01_v05_music_Cello_C.ily"
+\include "./01-Mvt1/m01_v06_music_Basso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -71,12 +71,14 @@
 					}
 				>>
 				\new GrandStaff <<
-					\new Staff {
-						\timeMvtI \nameStaffVMvtI \partCombine \musicCelloMvtI \musicBassoMvtI
+					\new Staff \with { \nameVoiceStaffV } {
+						\timeMvtI \nameStaffVMvtI 
+						\partCombine \musicCelloMvtI \musicBassoMvtI
+%						\timeMvtI \nameStaffVMvtI \musicBassoMvtI
 					}
-%					\new Staff {
-%						\timeMvtI \musicBassoMvtI
-%					}
+					\new Staff \with { \RemoveAllEmptyStaves } {
+						\timeMvtI \musicBassoApartMvtI
+					}
 				>>
 			>>
 		>>

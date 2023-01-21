@@ -8,23 +8,39 @@ musicBassoMvtI = \relative c {
 	\clef bass
 	\key f \major
 % mesures 1 à 5
-	R1*21
+	\mmrPos #-8 R1
+	\mmrPos #-6 R
+	\mmrPos #-8 R
+	\mmrPos #-6 R
+	\mmrPos #-8 R
 % mesures 6 à 10
-	
+	\mmrPos #-8 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % mesures 11 à 15
-	
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-10 R
 % mesures 16 à 20
-	
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
 % mesures 21 à 25
-	
-	r4 c^\pizz\p r c 
+	\mmrPos #-6 R
+	r4 c_\pizz\p_\cb r c 
 	R1
 	r4 c r c
 	R1
 % mesures 26 à 30
-	r2 f,^\arco
+	r2 f,_\arco
 	des'4( bes) ees,2(
-	f_\semprepp ges
+	f ges
 	g!4) aes( bes b 
 	c1)~
 % mesures 31 à 35
@@ -34,10 +50,10 @@ musicBassoMvtI = \relative c {
 	c~ 
 	c4 r4 r2 
 % mesures 36 à 40
-	r2 r4 \key f \minor \break \bar ".|:-||"
+	r2 f,4\rest \key f \minor \break \bar ".|:-||" 
 	\repeat volta 2 { 
 		r4
-		r f-.\p f-. r 
+		r f'-.\p f-. r 
 		r f-. f-. r 
 		R1 
 		r4 f-. f-. r 
@@ -111,22 +127,46 @@ musicBassoMvtI = \relative c {
 		ees4 r r2 
 		ees4 r ees r 
 		ees r r2 
-		R1*33
+		R1*3
 		
 % mesures 101 à 105
 		
+		R1
+		R
+		R
+		R
 % mesures 106 à 110
-		
+		R
+		R
+		R
+		R
+		R
 % mesures 111 à 115
+		R
+		R
+		\mmrPos #-8 R
+		R1*3
 		
 % mesures 116 à 120
 		
+		\mmrPos #-6 R1
+		\mmrPos #-6 R
+		\mmrPos #-8 R
+		\mmrPos #-6 R
 % mesures 121 à 125
-		
+		R
+		R
+		R
+		R
+		R
 % mesures 126 à 130
-		
+		R
+		R
+		R
+		R
+		R
 % mesures 131 à 135
-		
+		R
 		aes2:8\ff aes: 
 		aes: aes: 
 		aes: c: 
@@ -152,7 +192,7 @@ musicBassoMvtI = \relative c {
 % mesures 151 à 155
 		aes bes c bes aes g f ees 
 		d1 
-		\afterGrace des!1\trill {ees16[ f]}  
+		\afterGrace 15/16 des!1\trill {ees16[ f]}  
 		c4 r des r 
 		ees r r ees 
 % mesures 156 à 160
@@ -162,7 +202,7 @@ musicBassoMvtI = \relative c {
 		aes bes c bes aes g f ees 
 		d1 
 % mesures 161 à 165
-		\afterGrace des!1\trill {ees16[ f]}  
+		\afterGrace 15/16 des!1\trill {ees16[ f]}  
 		c2 des  
 		ees ees  
 		aes4 r r ees\ff 
@@ -181,25 +221,28 @@ musicBassoMvtI = \relative c {
 	
 	r2 r4 ges'-.
 % mesures 176 à 180
-	des-. r  r2
-	R1*6
+	des-. r  a,2\rest
+	\mmrPos #-10 R1
+	R
+	R
+	R
 % mesures 181 à 185
-	
-	
-	r2 r4 f-. 
-	bes-. r r f-. 
-	bes-. r4 r f-.
+	R
+	R
+	s1
+	s
+	s
 % mesures 186 à 190
-	bes-. r r g,
-	e'1 
-	f4 r r2 
-	R1
-	r2 r4 ees-.
+	s
+	s
+	s
+	s
+	s
 % mesures 191 à 195
-	aes-. r r aes,-.
-	d-. r r2
+	s
+	s
 	R1
-	r4 c\f c' r 
+	r4 c'\f c' r 
 	r bes, bes' r 
 % mesures 196 à 200
 	r a, a' r 
@@ -314,12 +357,12 @@ musicBassoMvtI = \relative c {
 	
 	
 	
-	R1*5
+	\mmrPos #-12 R1
 % mesures 291 à 295
-	
-	
-	
-	
+	\mmrPos #-12 R
+	\mmrPos #-10 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
 	R1*8 
 % mesures 296 à 300
 	
@@ -330,7 +373,7 @@ musicBassoMvtI = \relative c {
 % mesures 301 à 305
 	
 	
-	r2 r4 c'\f-.^\bassi
+	r2 r4 c'\f-.
 	f-. r r c-. 
 	f-. r r8 c-. d-. e-.  
 % mesures 306 à 310
@@ -370,21 +413,49 @@ musicBassoMvtI = \relative c {
 	
 	
 % mesures 336 à 340
-	R1*36
+	R1
+	R
+	R
+	R
+	R
 % mesures 341 à 345
-	
+	\mmrPos #-10 R
+	R
+	R
+	R
+	R
 % mesures 346 à 350
+	R
+	\mmrPos #-8 R
+	R
+	R1*3
 	
 % mesures 351 à 355
 	
+	R1
+	R
+	R
+	R1
 % mesures 356 à 360
-	
+	R1
+	R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-8 R
 % mesures 361 à 365
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-11 R
+	\mmrPos #-10 R
+	\mmrPos #-10 R
 % mesures 366 à 370
-	
+	\mmrPos #-10 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % mesures 371 à 375
-	
+	\mmrPos #-6 R
 	f2.:8\f f4:-> 
 	f: f:-> f: f:-> 
 	f2: aes: 
@@ -416,29 +487,29 @@ musicBassoMvtI = \relative c {
 % mesures 396 à 400
 	c r e-> r 
 	R1\fermata  \bar "||" \key f \major 
-	R1*6
-	
-	
+	\mmrPos #-8 R1
+	\mmrPos #-5 R
+	\mmrPos #-8 R
 % mesures 401 à 405
-	
-	
-	
-	f,,4-.(~\pp f8 f~-. f f-. f-. f-.) 
-	f4-.(~ f8 f~-. f f-. f-. f-.) 
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-7 R
+	s1
+	s
 % mesures 406 à 410
-	f'2( ees) 
-	des1
-	c8 r r4 r2 
-	R1
-	R1\fermata \key f \minor \bar "||"
+	s
+	s
+	s
+	s
+	s \key f \minor \bar "||"
 % mesures 411 à 415
-	f4\ff r r c 
+	f,4\ff r r c 
 	f r r c 
 	f r r8 c d e 
 	f g aes g f ees! des! c  
 	b1 
 % mesures 416 à 420
-	\afterGrace bes!1\trill {aes16[ bes]}  
+	\afterGrace 15/16 bes!1\trill {aes16[ bes]}  
 	aes4 r bes r 
 	c r r c 
 	f r r c 
@@ -447,7 +518,7 @@ musicBassoMvtI = \relative c {
 	f r r8 c d e 
 	f g aes g f ees! des! c 
 	b1 
-	\afterGrace bes!1\trill {aes16[ bes]}  
+	\afterGrace 7/8 bes!1\trill {aes16[ bes]}  
 	aes4 r des r 
 % mesures 426 à 430
 	bes r c r 
@@ -473,4 +544,36 @@ musicBassoMvtI = \relative c {
 	f r  
 	f r 
 	f, r\fermata \bar "|." 
+}
+musicBassoApartMvtI = \relative c {
+	\clef bass
+	\key f \minor
+% mesure 1 à 180
+	s1*180
+% mesure 181 à 185
+	s1
+	s
+	r2 r4 f-.
+	bes-. r r f-.
+	bes-. r r f-.
+% mesure 186 à 190
+	bes-. r r g,
+	e'1
+	f4 r r2
+	R1
+	r2 r4 ees-.
+% mesure 191 à 195
+	aes-. r r aes,-.
+	des-. r r2
+	s1*211
+	\key f \major
+% mesure 404 à 405
+	f,4(-.~\pp f8 f~-. f f-. f-. f-.)
+	f4(-.~ f8 f~-. f f-. f-. f-.)
+% mesure 406 à 410
+	f'2( ees)
+	des1
+	c8 r r4 r2
+	R1
+	R\fermata \key f \minor
 }

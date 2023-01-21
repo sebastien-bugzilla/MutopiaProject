@@ -50,7 +50,7 @@ musicViolinIMvtI = \relative c'' {
 	e)[ r8 b'16]( c[) r8 b16]( c[) r8 d,16(] e[) r8 aes16](
 	g8) r r8. f16( e8) r r8. aes16
 % mesures 36 à 40
-	g2.\espressivo\fermata \key f \minor \repeat volta 2 { \tempo "Allegro molto" 2=140 c,4-.\p
+	g2.\espressivo\fermata \key f \minor \break \bar ".|:-||" \repeat volta 2 { c,4-.\p
 		f4-. r r c-.
 		f-. r r8 c-. d-. e-. 
 		f-. g-. aes-. g-. f-. ees!-. des!-. c-. 
@@ -69,7 +69,7 @@ musicViolinIMvtI = \relative c'' {
 		g( aes) e( f)
 % mesures 51 à 55
 		c( des) aes-. bes-.
-		c2. c4
+		c2. c4 %%%%%%%%%%%%%%%%%
 		f2\p( ees4 des)
 		des2( c4) r
 		bes'2( aes4 g)
@@ -122,9 +122,9 @@ musicViolinIMvtI = \relative c'' {
 		ees r r2
 		<ees bes' g'>4 r r2
 % mesures 96 à 100
-		<ees bes' g'>4 r r2
-		<ees bes' g'>4 r <ees bes' g'>4 r
-		<ees bes' g'>4 des''8(\f c bes c aes bes
+		q4 r r2
+		q4 r q4 r
+		q4 des''8(\f c bes c aes bes
 		g aes bes aes g aes f g
 		ees) r g( f ees f des ees
 % mesures 101 à 105
@@ -178,7 +178,7 @@ musicViolinIMvtI = \relative c'' {
 % mesures 141 à 145
 		bes aes g f e g c bes
 		aes4 r aes8 g bes aes
-		ges f ees des c ees aes g
+		ges f ees des c ees aes ges
 		f4 r r2
 		bes'8 aes g f ees des c bes
 % mesures 146 à 150
@@ -222,7 +222,7 @@ musicViolinIMvtI = \relative c'' {
 	
 	
 	r2 r4 aes'-.
-	ges r r d
+	ges-. r r d-.
 % mesures 181 à 185
 	ees-. d-. ees-. f-.
 	bes, r r c
@@ -401,7 +401,7 @@ musicViolinIMvtI = \relative c'' {
 	c( b) b-. b-. d( b) b-. b-.
 	f'2. b,4
 	c8 r c'' b a g f e
-	d c b a f g e d 
+	d c b a g f e d 
 	c b b b d b b b
 % mesures 331 à 335
 	aes'2. b,4
@@ -483,7 +483,7 @@ musicViolinIMvtI = \relative c'' {
 	c( e) e-. e-. e4 e 
 % mesures 396 à 400
 	e r g-> r
-	r1\fermata \bar "||" \tempo "Adagio come Ima" 4=60 \key f \major
+	R1\fermata \bar "||" \key f \major
 	R1*2
 	
 	f,,2.\p\<( e8\> f\!)
@@ -491,14 +491,14 @@ musicViolinIMvtI = \relative c'' {
 	f4 r r2
 	g4(~ g16 a g a bes a g a bes c bes c)
 	a8 d c4 r8 des(-> c4)
-	des4\pp(-.~ des8 des~ des-. des-. des-. des)-.
-	des4(-.~ des8 des~ des-. des-. des-. des)-.
+	des4\pp(-.~ des8 des~-. des des-. des-. des)-.
+	des4(-.~ des8 des~-. des des-. des-. des)-.
 % mesures 406 à 410
 	c4-.( c-. c-. c-.)
 	c2 b
 	c8[ r16 b_\pp(] c8[) r16 f,]( e8)[ r16 b]( c8[) r16 aes]
 	g4 r r2
-	r1\fermata \bar "||" \key f \minor \tempo "Allegro come Ima" 2=140
+	R1\fermata \bar "||" \key f \minor 
 % mesures 411 à 415
 	f'''2:8\ff f: 
 	f: f: 

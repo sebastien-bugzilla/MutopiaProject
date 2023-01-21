@@ -6,6 +6,12 @@
 %###############################################################################
 tempiMvtI = {
 	\tempo "Adagio" 4=60
+	s1*35 s2.
+	\tempo "Allegro molto" % bar 36.75
+	s4 s1*361
+	\tempo "Adagio come Ima" % bar 398
+	s1*13
+	\tempo "Allegro come Ima" % bar 411
 }
 tempiMvtII = {
 	\tempo "Commodo Schweizerlied" 4 = 75

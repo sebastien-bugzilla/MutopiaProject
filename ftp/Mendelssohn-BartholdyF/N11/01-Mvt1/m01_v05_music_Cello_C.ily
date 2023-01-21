@@ -4,40 +4,56 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicBassoMvtI = \relative c {
+musicCelloMvtI = \relative c, {
 	\clef bass
 	\key f \major
 % mesures 1 à 5
-	R1*21
+	\partCombineApart f2(\p\<^\vc e4.\> f8\!) 
+	f4 r r2 
+	f2(\< e4.\> f8\!) 
+	f4 r r2 
+	f1~ 
 % mesures 6 à 10
-	
+	f 
+	f4~( f16 g f g) a4(~ a16 bes a bes) 
+	c4~( c16 e d e) f4~ f16 f-. c-. a-. 
+	f4 r r r8 e( 
+	f4) r r r8 e 
 % mesures 11 à 15
-	
+	f4~\< f8\> f~\< f\> f(-.\! f-. f-.) 
+	f4~\< f8\> f~\< f\> f(-.\! f-. f-.) 
+	e!4~\< e8\> e~\< e\> e(-.\! e-. e-.) 
+	ees4~\< ees8\> ees~\< ees\> ees(-.\! ees-. ees-.) 
+	d!1 
 % mesures 16 à 20
-	
+	des~ 
+	des 
+	ges2(\< f4.\> ges8)\! 
+	ges2(\< f4.\> ges8)\! 
+	ges2(\< g4.\> aes8)\! 
 % mesures 21 à 25
-	
-	r4 c^\pizz\p r c 
-	R1
-	r4 c r c
-	R1
+	aes4 a8.->( bes16) bes4 b8.( c16) 
+	c2(\< e4.\> f8)\! 
+	f4 r r2 
+	f2(\< e4.\> f8)\! 
+	f2( b 
 % mesures 26 à 30
-	r2 f,^\arco
-	des'4( bes) ees,2(
-	f_\semprepp ges
-	g!4) aes( bes b 
-	c1)~
+	bes! a) 
+	bes bes,~
+	bes1~_\semprepp
+	bes4 c( des d 
+	c4) r r2 
 % mesures 31 à 35
-	c~
-	c~ 
-	c~
-	c~ 
-	c4 r4 r2 
+	bes'4~( bes16 aes bes aes g aes bes aes g f g f) 
+	e( f g f e f e f e f g f e f e f 
+	e)[ r8 d!16]( e16) r8. r2 
+	R1 
+	r2 r4 c\p 
 % mesures 36 à 40
-	r2 r4 \key f \minor \break \bar ".|:-||"
-	\repeat volta 2 { 
-		r4
-		r f-.\p f-. r 
+	c,2.\espressivo\fermata \key f \minor \break \bar ".|:-||" 
+	\repeat volta 2 { \partCombineUnisono
+		r4 
+		r f'-.\p f-. r 
 		r f-. f-. r 
 		R1 
 		r4 f-. f-. r 
@@ -110,23 +126,47 @@ musicBassoMvtI = \relative c {
 % mesures 96 à 100
 		ees4 r r2 
 		ees4 r ees r 
-		ees r r2 
-		R1*33
+		ees r r2 \partCombineAutomatic
+		R1*3 \partCombineApart
 		
 % mesures 101 à 105
 		
+		r2 r4 ees-.\p^\vc
+		aes-. r r ees-. 
+		aes-. r r8 ees-. f-. g-.  
+		aes-. bes-. c-. bes-. aes-. g-. f-. ees-.  
 % mesures 106 à 110
-		
+		d4-. bes'-. r2 
+		des,!4-. bes'-. r2 
+		c,4-. aes'-. r aes,-. 
+		des-. r r aes-. 
+		des-. r r8 aes-. bes-. c-.  
 % mesures 111 à 115
+		des-. ees-. f-. ees-. des-. c-. bes-. aes-.  
+		g4-. e'-. r2 
+		c,4-. e'-. r2 \partCombineAutomatic
+		R1*3 
 		
 % mesures 116 à 120
 		
+		\partCombineApart b1^\vc
+		c 
+		g 
+		aes 
 % mesures 121 à 125
-		
+		des 
+		ees~ 
+		ees 
+		e 
+		bes' 
 % mesures 126 à 130
-		
+		aes 
+		e 
+		f 
+		des 
+		ees~ 
 % mesures 131 à 135
-		
+		ees  \partCombineAutomatic
 		aes2:8\ff aes: 
 		aes: aes: 
 		aes: c: 
@@ -152,7 +192,7 @@ musicBassoMvtI = \relative c {
 % mesures 151 à 155
 		aes bes c bes aes g f ees 
 		d1 
-		\afterGrace des!1\trill {ees16[ f]}  
+		\afterGrace 15/16 des!1\trill {ees16[ f]}  
 		c4 r des r 
 		ees r r ees 
 % mesures 156 à 160
@@ -162,7 +202,7 @@ musicBassoMvtI = \relative c {
 		aes bes c bes aes g f ees 
 		d1 
 % mesures 161 à 165
-		\afterGrace des!1\trill {ees16[ f]}  
+		\afterGrace 15/16 des!1\trill {ees16[ f]}  
 		c2 des  
 		ees ees  
 		aes4 r r ees\ff 
@@ -177,28 +217,31 @@ musicBassoMvtI = \relative c {
 		c f c f 
 		c r r 
 	} r 
-	R1*2
+	R1*2 
 	
-	r2 r4 ges'-.
+	r2 r4 ges'-. 
 % mesures 176 à 180
-	des-. r  r2
-	R1*6
+	des-. r \partCombineApart r d,-.^\vc
+	ees-. d-. ees-. d-. 
+	ees r r2 \partCombineAutomatic
+	R1*4 
+	
 % mesures 181 à 185
 	
 	
-	r2 r4 f-. 
+	\oneVoice r2 r4  f'-. 
 	bes-. r r f-. 
-	bes-. r4 r f-.
+	bes-. r4 r8 f-. g-. a-.  
 % mesures 186 à 190
-	bes-. r r g,
-	e'1 
+	bes-. c-. des!-. c-. bes-. aes!-. g-. f-.  
+	e1
 	f4 r r2 
-	R1
-	r2 r4 ees-.
+	r r4 bes,-. 
+	ees-. r r ees,-.
 % mesures 191 à 195
-	aes-. r r aes,-.
-	d-. r r2
-	R1
+	aes-. r r8 aes-. bes-. c-.  
+	d-. ees-. f-. ees-. d-. c-. b-. a-.  
+	\partCombineApart g!4 r r2 \partCombineAutomatic \oneVoice
 	r4 c\f c' r 
 	r bes, bes' r 
 % mesures 196 à 200
@@ -314,12 +357,12 @@ musicBassoMvtI = \relative c {
 	
 	
 	
-	R1*5
+	\partCombineApart \voiceOne c1~(^\vc
 % mesures 291 à 295
-	
-	
-	
-	
+	c 
+	des 
+	e 
+	f4) r r2 \partCombineAutomatic
 	R1*8 
 % mesures 296 à 300
 	
@@ -330,7 +373,7 @@ musicBassoMvtI = \relative c {
 % mesures 301 à 305
 	
 	
-	r2 r4 c'\f-.^\bassi
+	r2 r4 c'\f-.
 	f-. r r c-. 
 	f-. r r8 c-. d-. e-.  
 % mesures 306 à 310
@@ -370,21 +413,49 @@ musicBassoMvtI = \relative c {
 	
 	
 % mesures 336 à 340
-	R1*36
+	\partCombineApart r2 r4 c-.\p^\vc
+	f-. r r c-. 
+	f-. r r8 c-. d-. e-.  
+	f-. g-. aes-. g-. f-. ees!-. des!-. c-.  
+	b4-. aes'-. r2 
 % mesures 341 à 345
-	
+	c,4-. c,-. r c'-. 
+	f-. r r c-. 
+	f-. r r c-. 
+	f-. r r8 c-. d-. e-.  
+	f-. g-. aes-. g-. f-. ees!-. des!-. c-.  
 % mesures 346 à 350
+	b4-. aes'-. r2 
+	ees,4-. ees'-. r ees-. 
+	aes-. r r2 \partCombineAutomatic
+	R1*3 
 	
 % mesures 351 à 355
 	
+	\partCombineApart r2 r8 bes,-. c-. d!-.  
+	ees-. f-. ges-. f-. ees-. des!-. c-. bes-.  
+	a4-. a'-. r2 \partCombineAutomatic
+	R1 
 % mesures 356 à 360
-	
+	\partCombineApart bes,1~ 
+	bes 
+	aes( 
+	g) 
+	f( 
 % mesures 361 à 365
-	
+	bes 
+	c) 
+	c,( 
+	<<des {s4\< s s\! s}>>
+	<<ees1 {s4\> s s\! s}>> 
 % mesures 366 à 370
-	
+	des1\!) 
+	a'( 
+	bes~ 
+	bes) 
+	c~ 
 % mesures 371 à 375
-	
+	c \partCombineAutomatic
 	f2.:8\f f4:-> 
 	f: f:-> f: f:-> 
 	f2: aes: 
@@ -416,29 +487,29 @@ musicBassoMvtI = \relative c {
 % mesures 396 à 400
 	c r e-> r 
 	R1\fermata  \bar "||" \key f \major 
-	R1*6
-	
-	
+	\partCombineApart f,,2(\<^\vc e4.\> f8)\! 
+	f4( c') r2 
+	f,1  
 % mesures 401 à 405
-	
-	
-	
-	f,,4-.(~\pp f8 f~-. f f-. f-. f-.) 
+	f~ 
+	f~ 
+	f4 r r r8 e \partCombineAutomatic
+	\oneVoice f4-.(~\pp f8 f~-. f f-. f-. f-.) 
 	f4-.(~ f8 f~-. f f-. f-. f-.) 
 % mesures 406 à 410
-	f'2( ees) 
-	des1
-	c8 r r4 r2 
-	R1
-	R1\fermata \key f \minor \bar "||"
+	f2( ees) 
+	\afterGrace 15/16 des1\trill {c16[ des]}  
+	c8 r r4 r r8. b'16\pp 
+	c4 r des2 
+	ees,1\espressivo\fermata \key f \minor \bar "||" \partCombineAutomatic
 % mesures 411 à 415
-	f4\ff r r c 
+	f'4\ff r r c 
 	f r r c 
 	f r r8 c d e 
 	f g aes g f ees! des! c  
 	b1 
 % mesures 416 à 420
-	\afterGrace bes!1\trill {aes16[ bes]}  
+	\afterGrace 15/16 bes!1\trill {aes16[ bes]}  
 	aes4 r bes r 
 	c r r c 
 	f r r c 
@@ -447,7 +518,7 @@ musicBassoMvtI = \relative c {
 	f r r8 c d e 
 	f g aes g f ees! des! c 
 	b1 
-	\afterGrace bes!1\trill {aes16[ bes]}  
+	\afterGrace 7/8 bes!1\trill {aes16[ bes]}  
 	aes4 r des r 
 % mesures 426 à 430
 	bes r c r 

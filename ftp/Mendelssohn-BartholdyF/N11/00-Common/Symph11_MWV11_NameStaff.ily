@@ -19,8 +19,14 @@ nameStaffIVMvtI = {
 nameStaffVMvtI = {
 	\set Staff.instrumentName = "Bassi"
 }
-
-
+nameVoiceStaffV = {
+	\set Staff.soloText = \markup { \medium "Vc."}
+	\set Staff.soloIIText = \markup { \medium "Cb."}
+	\set Staff.aDueText = \markup { \medium "Bassi"}
+}
+%###############################################################################
+%#                     S T A F F   N A M E   :   M V T   I I                   #
+%###############################################################################
 nameStaffIMvtII = {
 	\set Staff.instrumentName = "Violino I"
 }
@@ -49,8 +55,9 @@ nameStaffVIIMvtII = {
 nameStaffVIIIMvtII = {
 	\set Staff.instrumentName = "Becken"
 }
-
-
+%###############################################################################
+%#                   S T A F F   N A M E   :   M V T   I I I                   #
+%###############################################################################
 nameStaffIMvtIII = {
 	\set Staff.instrumentName = "Violino I"
 }
@@ -66,7 +73,9 @@ nameStaffIVMvtIII = {
 nameStaffVMvtIII = {
 	\set Staff.instrumentName = "Bassi"
 }
-
+%###############################################################################
+%#                    S T A F F   N A M E   :   M V T   I V                    #
+%###############################################################################
 nameStaffIMvtIV = {
 	\set Staff.instrumentName = "Violino I"
 }
@@ -82,7 +91,9 @@ nameStaffIVMvtIV = {
 nameStaffVMvtIV = {
 	\set Staff.instrumentName = "Bassi"
 }
-
+%###############################################################################
+%#                     S T A F F   N A M E   :   M V T   V                     #
+%###############################################################################
 nameStaffIMvtV = {
 	\set Staff.instrumentName = "Violino I"
 }

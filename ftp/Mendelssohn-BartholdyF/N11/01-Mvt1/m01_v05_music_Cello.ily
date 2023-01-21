@@ -8,7 +8,7 @@ musicCelloMvtI = \relative c, {
 	\clef bass
 	\key f \major
 % mesures 1 à 5
-	f2(\p\<^\vc e4.\> f8\!) 
+	f2(\p\< e4.\> f8\!) 
 	f4 r r2 
 	f2(\< e4.\> f8\!) 
 	f4 r r2 
@@ -39,8 +39,8 @@ musicCelloMvtI = \relative c, {
 	f2( b 
 % mesures 26 à 30
 	bes! a) 
-	bes bes,~ 
-	bes1~ 
+	bes bes,~
+	bes1~_\semprepp
 	bes4 c( des d 
 	c4) r r2 
 % mesures 31 à 35
@@ -50,178 +50,178 @@ musicCelloMvtI = \relative c, {
 	R1 
 	r2 r4 c\p 
 % mesures 36 à 40
-	c,2.\espressivo\fermata \key f \minor 
+	c,2.\espressivo\fermata \key f \minor \break \bar ".|:-||"
 	\repeat volta 2 { 
-	    \tempo "Allegro molto" 2=140 r4^\bassi
-	    r f'-.\p f-. r 
-	    r f-. f-. r 
-	    R1 
-	    r4 f-. f-. r 
+		r4
+		r f'-.\p f-. r 
+		r f-. f-. r 
+		R1 
+		r4 f-. f-. r 
 % mesures 41 à 45
-	    r f-. e-. r 
-	    r des-. des-. r 
-	    c r r2 
-	    r4 f,-. f-. r 
-	    R1*22 
+		r f-. e-. r 
+		r des-. des-. r 
+		c r r2 
+		r4 f,-. f-. r 
+		R1*22 
 % mesures 46 à 50
-	     
-	     
-	     
-	     
-	     
+		
+		
+		
+		
+		
 % mesures 51 à 55
-	     
-	     
-	     
-	     
-	     
+		
+		
+		
+		
+		
 % mesures 56 à 60
-	     
-	     
-	     
-	     
-	     
+		
+		
+		
+		
+		
 % mesures 61 à 65
-	     
-	     
-	     
-	     
-	     
+		
+		
+		
+		
+		
 % mesures 66 à 70
-	     
-	    r2 r4 c'\ff 
-	    f r r c 
-	    f r r8 c d e 
-	    f g aes g f ees! des! c 
+		
+		r2 r4 c'\ff 
+		f r r c 
+		f r r8 c d e 
+		f g aes g f ees! des! c 
 % mesures 71 à 75
-	    b4 r r g' 
-	    c r r g 
-	    c r r8 g aes bes 
-	    c4 des8 c bes aes g f 
-	    e2 e 
+		b4 r r g' 
+		c r r g 
+		c r r8 g aes bes 
+		c4 des8 c bes aes g f 
+		e2 e 
 % mesures 76 à 80
-	    f4 r r2 
-	    R1*3 
-	     
-	     
-	    c'4 r r c, 
+		f4 r r2 
+		R1*3 
+		
+		
+		c'4 r r c, 
 % mesures 81 à 85
-	    f r r8 f g a 
-	    bes c des c bes aes! g f 
-	    ees4 r r ees  
-	    aes r r aes, 
-	    f'1 
+		f r r8 f g a 
+		bes c des c bes aes! g f 
+		ees4 r r ees  
+		aes r r aes, 
+		f'1 
 % mesures 86 à 90
-	    ees2:8 ees:  
-	    ees: ees:  
-	    ees: ees:  
-	    ees: ees:  
-	    ees: ees:  
+		ees2:8 ees:  
+		ees: ees:  
+		ees: ees:  
+		ees: ees:  
+		ees: ees:  
 % mesures 91 à 95
-	    ees: ees:  
-	    ees: ees:  
-	    ees: ees: 
-	    ees4 r r2 
-	    ees4 r r2 
+		ees: ees:  
+		ees: ees:  
+		ees: ees: 
+		ees4 r r2 
+		ees4 r r2 
 % mesures 96 à 100
-	    ees4 r r2 
-	    ees4 r ees r 
-	    ees r r2 
-	    R1*3 
-	     
+		ees4 r r2 
+		ees4 r ees r 
+		ees r r2 
+		R1*3 
+		
 % mesures 101 à 105
-	     
-	    r2 r4 ees-.\p^\vc
-	    aes-. r r ees-. 
-	    aes-. r r8 ees-. f-. g-.  
-	    aes-. bes-. c-. bes-. aes-. g-. f-. ees-.  
+		
+		r2 r4 ees-.\p
+		aes-. r r ees-. 
+		aes-. r r8 ees-. f-. g-.  
+		aes-. bes-. c-. bes-. aes-. g-. f-. ees-.  
 % mesures 106 à 110
-	    d4-. bes' r2 
-	    des,!4-. bes'-. r2 
-	    c,4-. aes'-. r aes,-. 
-	    des-. r r aes-. 
-	    des-. r r8 aes-. bes-. c-.  
+		d4-. bes'-. r2 
+		des,!4-. bes'-. r2 
+		c,4-. aes'-. r aes,-. 
+		des-. r r aes-. 
+		des-. r r8 aes-. bes-. c-.  
 % mesures 111 à 115
-	    des-. ees-. f-. ees-. des-. c-. bes-. aes-.  
-	    g4-. e'-. r2 
-	    c,4-. e'-. r2 
-	    R1*3 
-	     
+		des-. ees-. f-. ees-. des-. c-. bes-. aes-.  
+		g4-. e'-. r2 
+		c,4-. e'-. r2 
+		R1*3 
+		
 % mesures 116 à 120
-	     
-	    b1^\vc
-	    c 
-	    g 
-	    aes 
+		
+		b1 
+		c 
+		g 
+		aes 
 % mesures 121 à 125
-	    des 
-	    ees~ 
-	    ees 
-	    e 
-	    bes' 
+		des 
+		ees~ 
+		ees 
+		e 
+		bes' 
 % mesures 126 à 130
-	    aes 
-	    e 
-	    f 
-	    des 
-	    ees~ 
+		aes 
+		e 
+		f 
+		des 
+		ees~ 
 % mesures 131 à 135
-	    ees 
-	    aes2:8\ff^\bassi aes: 
-	    aes: aes: 
-	    aes: c: 
-	    bes: ees,: 
+		ees 
+		aes2:8\ff aes: 
+		aes: aes: 
+		aes: c: 
+		bes: ees,: 
 % mesures 136 à 140
-	    aes: aes: 
-	    aes: aes: 
-	    aes: c:  
-	    bes: ees,: 
-	    aes4 r aes r 
+		aes: aes: 
+		aes: aes: 
+		aes: c:  
+		bes: ees,: 
+		aes4 r aes r 
 % mesures 141 à 145
-	    bes r c r 
-	    f, r f r 
-	    ges r aes r 
-	    des, r bes r 
-	    ees r g r 
+		bes r c r 
+		f, r f r 
+		ges r aes r 
+		des, r bes r 
+		ees r g r 
 % mesures 146 à 150
-	    aes r f r 
-	    des r ees r 
-	    aes, r r ees'\ff 
-	    aes r r ees 
-	    aes r r8 ees f g 
+		aes r f r 
+		des r ees r 
+		aes, r r ees'\ff 
+		aes r r ees 
+		aes r r8 ees f g 
 % mesures 151 à 155
-	    aes bes c bes aes g f ees 
-	    d1 
-	    \afterGrace des!1\trill {ees16[ f]}  
-	    c4 r des r 
-	    ees r r ees 
+		aes bes c bes aes g f ees 
+		d1 
+		\afterGrace des!1\trill {ees16[ f]}  
+		c4 r des r 
+		ees r r ees 
 % mesures 156 à 160
-	    aes r r ees 
-	    aes r r ees 
-	    aes r r8 ees f g 
-	    aes bes c bes aes g f ees 
-	    d1 
+		aes r r ees 
+		aes r r ees 
+		aes r r8 ees f g 
+		aes bes c bes aes g f ees 
+		d1 
 % mesures 161 à 165
-	    \afterGrace des!1\trill {ees16[ f]}  
-	    c2 des  
-	    ees ees  
-	    aes4 r r ees\ff 
-	    aes r r ees 
+		\afterGrace des!1\trill {ees16[ f]}  
+		c2 des  
+		ees ees  
+		aes4 r r ees\ff 
+		aes r r ees 
 % mesures 166 à 170
-	    aes r r aes  
-	    aes aes aes aes 
-	    aes r r2 
-	    r2 r4 f\p 
-	    c r r f 
+		aes r r aes  
+		aes aes aes aes 
+		aes r r2 
+		r2 r4 f\p 
+		c r r f 
 % mesures 171 à 175
-	    c f c f 
-	    c r r 
+		c f c f 
+		c r r 
 	} r 
 	R1*2 
 	 
 	r2 r4 ges'-. 
 % mesures 176 à 180
-	des-. r r d,-.^\vc 
+	des-. r r d,-. 
 	ees-. d-. ees-. d-. 
 	ees r r2 
 	R1*4 
@@ -237,12 +237,12 @@ musicCelloMvtI = \relative c, {
 	e1 
 	f4 r r2 
 	r r4 bes,-. 
-	ees-. r r ees, 
+	ees-. r r ees,-.
 % mesures 191 à 195
 	aes-. r r8 aes-. bes-. c-.  
 	d-. ees-. f-. ees-. d-. c-. b-. a-.  
 	g!4 r r2 
-	r4 c\f^\bassi c' r 
+	r4 c\f c' r 
 	r bes, bes' r 
 % mesures 196 à 200
 	r a, a' r 
@@ -269,7 +269,7 @@ musicCelloMvtI = \relative c, {
 	e1 
 	f2:8\ff f: 
 % mesures 216 à 220
-	ees: ees: \bar "" \key g \minor 
+	ees: ees: \bar "||" \key g \minor 
 	d4 r d r 
 	R1 
 	g2:8 g: 
@@ -305,7 +305,7 @@ musicCelloMvtI = \relative c, {
 	g e des bes 
 	g r r des''8 des 
 % mesures 246 à 250
-	des( c) c-. c-. c( bes) bes-. bes-. \bar "" \key f \minor 
+	des( c) c-. c-. c( bes) bes-. bes-. \bar "||" \key f \minor 
 	a2:8 a:  
 	a: a:  
 	a: a:  
@@ -413,7 +413,7 @@ musicCelloMvtI = \relative c, {
 	 
 	 
 % mesures 336 à 340
-	r2 r4 c-.^\vc
+	r2 r4 c-.\p
 	f-. r r c-. 
 	f-. r r8 c-. d-. e-.  
 	f-. g-. aes-. g-. f-. ees!-. des!-. c-.  
@@ -456,7 +456,7 @@ musicCelloMvtI = \relative c, {
 	c~ 
 % mesures 371 à 375
 	c 
-	f2.:8\f^\bassi f4:-> 
+	f2.:8\f f4:-> 
 	f: f:-> f: f:-> 
 	f2: aes: 
 	g: c,: 
@@ -486,7 +486,7 @@ musicCelloMvtI = \relative c, {
 	c' c8 c c4 c 
 % mesures 396 à 400
 	c r e-> r 
-	r1\fermata  \bar "" \tempo "Adagio come Ima" 4=60 \key f \major 
+	R1\fermata  \bar "||" \key f \major 
 	f,,2(\<^\vc e4.\> f8)\! 
 	f4( c') r2 
 	f,1  
@@ -494,16 +494,16 @@ musicCelloMvtI = \relative c, {
 	f~ 
 	f~ 
 	f4 r r r8 e 
-	f4-.(\pp f8-. f~ f-. f-. f-. f-.) 
-	f4-.( f8-. f~ f-. f-. f-. f-.) 
+	f4-.(~\pp f8 f~-. f f-. f-. f-.) 
+	f4-.(~ f8 f~-. f f-. f-. f-.) 
 % mesures 406 à 410
 	f2( ees) 
 	\afterGrace des1\trill {c16[ des]}  
 	c8 r r4 r r8. b'16\pp 
 	c4 r des2 
-	ees,1\espressivo\fermata \key f \minor \tempo "Allegro come Ima" 2=140 
+	ees,1\espressivo\fermata \key f \minor \bar "||"
 % mesures 411 à 415
-	f'4\ff^\bassi r r c 
+	f'4\ff r r c 
 	f r r c 
 	f r r8 c d e 
 	f g aes g f ees! des! c  
@@ -543,5 +543,5 @@ musicCelloMvtI = \relative c, {
 	f f 
 	f r  
 	f r 
-	f, r\fermata \bar "." 
+	f, r\fermata \bar "|." 
 }

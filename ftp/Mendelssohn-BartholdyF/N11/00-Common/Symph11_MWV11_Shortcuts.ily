@@ -25,3 +25,13 @@ dimmarkup = \markup {\italic dim.}
 pocorit = \markup {\italic {poco rit.}}
 rit = \markup {\italic rit.}
 
+
+
+mmrPos = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)
+
