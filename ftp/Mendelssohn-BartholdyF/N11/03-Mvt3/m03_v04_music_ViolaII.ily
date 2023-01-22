@@ -46,9 +46,9 @@ musicViolaIIMvtIII = \relative c {
 % mesures 31 à 35
 	r8 ees''(-. b-. c-. ees,-. f)-. 
 	g4 r cis,8 cis
-	d(-. d-. d-. d-. d-. d)-. 
+	\slurDashed d(-. d-. d-. d-. d-. d)-. \slurSolid
 	ees(-. ees-. ees-. ees-. d-. d)-. 
-	c(-. c-. c-. c-. d-. e)-. 
+	\slurDashed c(-. c-. c-. c-. d-. e)-. \slurSolid
 % mesures 36 à 40
 	f f,( ges f ees des)
 	c( des ees e f e)
@@ -62,7 +62,7 @@ musicViolaIIMvtIII = \relative c {
 	a4 r r
 	R2.
 % mesures 46 à 50
-	d8(-. d-. d-. d-. c-. c)-. 
+	\slurDashed d8(-. d-. d-. d-. c-. c)-. \slurSolid
 	fis,^\simile fis g g ees ees 
 	c'8 c c c c c
 	c4( bes8) r r4
@@ -71,7 +71,7 @@ musicViolaIIMvtIII = \relative c {
 	r4 c( e
 	f) r bes,
 	a r r
-	d8(-. d-. d-. d-. c-. c)-. 
+	\slurDashed d8(-. d-. d-. d-. c-. c)-. \slurSolid
 	fis,(-. fis-. g-. g-. ees'-. ees)-. 
 % mesures 56 à 60
 	ees(-. ees-. ees-. ees-. c-. c)-. 
@@ -101,7 +101,7 @@ musicViolaIIMvtIII = \relative c {
 	g4. r8 r4
 	r r8 g( b d)
 	f4( e8) b( c bes)
-	a4 a(~ a16 g f e)
+	a4 \slurDashed a(~ a16 g f e) \slurSolid 
 	e4( d8) r r4
 % mesures 81 à 85
 	R2.*2
@@ -117,7 +117,7 @@ musicViolaIIMvtIII = \relative c {
 	r8 f f2
 % mesures 91 à 95
 	r8 f[ f] r r4
-	f8 r f r f r
+	f8 r f r bes r
 	bes4 r r
 	R2.^\adlib
 	R2.*2
@@ -140,7 +140,7 @@ musicViolaIIMvtIII = \relative c {
 	f2.\p
 	bes4-. bes2-.
 % mesures 111 à 115
-	g8(-. g-. g-. g-. f-. f)-. 
+	\slurDashed g8(-. g-. g-. g-. f-. f)-. \slurSolid
 	b_\simile b c c aes aes
 	aes aes aes aes aes f
 	f4( ees8) g(-. aes-. bes-.)
@@ -154,12 +154,12 @@ musicViolaIIMvtIII = \relative c {
 % mesures 121 à 125
 	r d r ees r f
 	bes, r r4 r
-	r r8 ees r d 
+	r r8 ees r d! 
 	ees,4( fes ees
-	des c \afterGrace d {c32[ d])}
+	des c \afterGrace d\trill {c32[ d])}
 % mesures 126 à 130
 	ees4( fes ees
-	des c \afterGrace d) {c32[ d]}
+	des c \afterGrace d)\trill {c32[ d]}
 	ees8( ees'-. bes-. bes-. bes-. bes)-. 
 	r bes_\simile bes bes bes bes
 	r g'( d ees g, a) 

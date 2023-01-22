@@ -46,7 +46,7 @@ musicViolinIIMvtIII = \relative c' {
 % mesures 31 à 35
 	c-.( c-. ees-. ees-. c'-. c-.)
 	c-.( c-. b-. b-. bes-. bes-.)
-	bes-.( bes-. bes-. bes-. bes-. bes-.)
+	\slurDashed bes-.( bes-. bes-. bes-. bes-. bes-.) \slurSolid
 	bes(-. bes-. b-. b-. b-. b)-. 
 	c(-. c-. c-. c-. bes-. bes)-. 
 % mesures 36 à 40
@@ -64,7 +64,7 @@ musicViolinIIMvtIII = \relative c' {
 % mesures 46 à 50
 	f2.
 	a4( bes4. g8)
-	f(-. f-. f-. f-. a-. a-.)
+	\slurDashed f(-. f-. f-. f-. a-. a-.) \slurSolid
 	a(-. a-. bes-. d-. d-. d)-. 
 	c4( bes a)
 % mesures 51 à 55
@@ -105,7 +105,7 @@ musicViolinIIMvtIII = \relative c' {
 	
 % mesures 81 à 85
 	d'4( cis8) r r4
-	c4. d8(-. ees-. d-.)
+	c!4. d8(-. ees-. d-.)
 	c4~ c16( b c d c ees d c)
 	c4 b b
 	g'2 r4
@@ -130,7 +130,7 @@ musicViolinIIMvtIII = \relative c' {
 % mesures 101 à 105
 	cis4( d c)
 	a( bes) r
-	bes'8(-. bes-. bes-. bes-. bes-. bes)-. 
+	\slurDashed bes'8(-. bes-. bes-. bes-. bes-. bes)-. \slurSolid
 	d(-. d-. ees-. ees-. c-. c)-. 
 	bes( a aes f d f)
 % mesures 106 à 110
@@ -167,6 +167,6 @@ musicViolinIIMvtIII = \relative c' {
 	r8 ees ees ees d d
 	ees2:8 d8 d
 	bes bes d d d d
-	f4( ees8) r ees r
+	\slurDashed f4( ees8) \slurSolid r ees r
 	ees4 r r \bar "|."
 }

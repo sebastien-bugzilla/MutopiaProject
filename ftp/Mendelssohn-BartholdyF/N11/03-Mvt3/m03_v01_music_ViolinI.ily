@@ -15,7 +15,7 @@ musicViolinIMvtIII = \relative c' {
 	g4( f8) bes,( d f)
 % mesures 6 à 10
 	aes4( g8) bes(-. bes-. bes)-. 
-	bes4~ bes16( a f f e f ees c)
+	bes4~ bes16( a g f e f ees c)
 	c4( bes) r
 	ees2.~(
 	ees2~ ees8 e)
@@ -24,9 +24,9 @@ musicViolinIMvtIII = \relative c' {
 	f4( ees8) g,( bes ees)
 	e4( f8) bes,( d f)
 	fis4( g8) e-.( fis-. g-.)
-	aes16( b \acciaccatura d8 c16 b c8) d,(-. ees-. f-.)
+	aes16( b \slashedGrace d8 c16 b c8) d,(-. ees-. f-.)
 % mesures 16 à 20
-	g16( d' \acciaccatura f8 ees16 d ees8) c(-. aes-. f-.)
+	g16( d' \slashedGrace f8 ees16 d ees8) c(-. aes-. f-.)
 	r ees r ees r d
 	r bes' r bes r bes
 	r a r aes r g
@@ -71,7 +71,7 @@ musicViolinIMvtIII = \relative c' {
 	d16( c bes'8~ bes16 a g f e d c bes)
 	a( a' e f cis d bes g a bes d, e)
 	f( g a bes c d ees d f ees g, a)
-	bes2( a4)
+	\slurDashed bes2( a4) \slurSolid
 	ees' d16\( bes'( a) g-. f-. ees-. d-. c-.\)
 % mesures 56 à 60
 	bes4( a8 c ees g16 f)
@@ -86,7 +86,7 @@ musicViolinIMvtIII = \relative c' {
 	ees16( f) fis-. g-. ees( f) fis-. g-. f( ees) d-. c-.
 	g'2.\<~
 % mesures 66 à 70
-	g4( f\f ees~
+	g4(\! f\f ees~
 	ees d c)
 	c16\f-. des-. d-. ees-. c-. d-. ees-. e-. c-. d-. e-. f-. 
 	fis4 fis4. fis8
@@ -119,7 +119,7 @@ musicViolinIMvtIII = \relative c' {
 	ees( d) r d(-. d-. d)-. 
 	g( f) bes( aes) ees'( d)
 	aes'4(~ aes16 g f ees d c bes a)
-	c4(~ c16 bes^\adlib aes! g bes aes c, d)
+	\slurDashed c4(~ c16 bes^\adlib aes! g bes aes c, d) \slurSolid
 	ees2.~(
 % mesures 96 à 100
 	ees2~ ees8 e)
@@ -144,7 +144,7 @@ musicViolinIMvtIII = \relative c' {
 	aes'( g16) ees'( b c g bes) aes-. f-.
 	ees4\(( d16) bes' f' ees d c bes a\)
 	aes!4( g8) e(-. f-. g-.)
-	aes16( b \acciaccatura d8 c16 b c8) d,(-. ees-. f-.)
+	aes16( b \slashedGrace d8 c16 b c8) d,(-. ees!-. f-.)
 % mesures 116 à 120
 	g16 d'( ees d ees8) c( aes f)
 	r ees r ees r d
@@ -167,11 +167,11 @@ musicViolinIMvtIII = \relative c' {
 	r8 ges f2:8
 	ees8 ees f f f f
 	<<{
-	    ees4 r8 f16-. g-. aes( bes) c-. d-.
-	    d4( ees8) r g, r
+		ees4 r8 f16-. g-. aes( bes) c-. d-.
+		d4( ees8) \oneVoice r \voiceOne g, \oneVoice r
 	} \\ {
-	    ees8 ees f f f f
-	    f4( g8) r g r
+		ees8 ees f f f f
+		f4( g8) s g s
 	}>>
 	ees4 r r \bar "|."
 }

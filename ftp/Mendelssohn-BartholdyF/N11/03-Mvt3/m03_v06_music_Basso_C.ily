@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicCelloMvtIII = \relative c {
+musicBassoMvtIII = \relative c {
 	\clef bass
 	\key ees \major
 % mesures 1 à 5
@@ -37,20 +37,20 @@ musicCelloMvtIII = \relative c {
 	bes8 r bes r bes r
 	ees r ees r ees r
 	ees r ees r ees r
-% mesures 26 à 31
+% mesures 26 à 30
 	ees, r ees r ees r
 	ees r ees r ees r
-	ees^\vc g'( d ees g, aes)
-	bes2 r4
-	r8 aes'8( e f aes, bes)
-	c4 r r
-% mesures 32 à 35
+	ees4 r r
+	R2.*3
+	
+% mesures 31 à 35
+	
 	R2.*4
 	
 	
 	
 % mesures 36 à 40
-	r8 f(^\bassi\p ges f ees des)
+	r8 f'(\p ges f ees des)
 	c( des ees e f e)
 	f f( ges f ees des)
 	c( des ees e f e)
@@ -100,8 +100,8 @@ musicCelloMvtIII = \relative c {
 % mesures 76 à 80
 	c4. r8 r4
 	g4. r8 r4
-	c4.^\vc f8( g f)
-	e4 e4. cis8
+	\partCombineApart c4._\cb d8( e d)
+	cis4 cis aes \partCombineAutomatic
 	d4. r8 r4
 % mesures 81 à 85
 	a4. r8 r4
@@ -158,15 +158,25 @@ musicCelloMvtIII = \relative c {
 	ees, r ees r ees r
 	ees r ees r ees r
 % mesures 126 à 130
-	ees2.~
-	ees~
-	ees8 g'( d ees g, aes)
-	bes4. d16-. c-. bes( aes) g-. f-.
-	ees8 g'( d ees g, a)
+	s2.*5
 % mesures 131 à 135
-	bes4. d16-. c-. bes( aes) g-. f-.
-	ees4 r8 d'16-. c-. bes( aes) g-. f-.
-	ees4 r8 d'16-. c-. bes( aes) g-. f-.
-	ees2.~
+	s2.*5
+}
+musicBassoApartMvtIII = \relative c {
+	\clef bass
+	\key ees \major
+% mesures 1 à 125
+	s2.*125
+% mesures 126 à 130
+	ees8 r ees r ees r
+	ees r ees r ees r
+	ees4 r r
+	R2.
+	ees4 r r
+% mesures 131 à 135
+	R2.
+	ees2.\p~
+	ees
+	ees4 r ees8 r
 	ees4 r r \bar "|."
 }

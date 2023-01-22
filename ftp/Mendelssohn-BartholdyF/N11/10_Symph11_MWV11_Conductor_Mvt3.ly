@@ -18,14 +18,15 @@
 \include "./00-Common/Symph11_MWV11_timeMvt.ily"
 \include "./00-Common/Symph11_MWV11_LayoutConductors.ily"
 \include "./00-Common/Symph11_MWV11_Shortcuts.ily"
+\include "./00-Common/Symph11_MWV11_NameStaff.ily"
 %\include "./00-Common/Symph11_MWV11_Format_Cond_Mvt3.ily"
 \include "./00-Common/Symph11_MWV11_Tempi.ily"
 \include "./03-Mvt3/m03_v01_music_ViolinI.ily"
 \include "./03-Mvt3/m03_v02_music_ViolinII.ily"
 \include "./03-Mvt3/m03_v03_music_ViolaI.ily"
 \include "./03-Mvt3/m03_v04_music_ViolaII.ily"
-\include "./03-Mvt3/m03_v05_music_Cello.ily"
-\include "./03-Mvt3/m03_v06_music_Basso.ily"
+\include "./03-Mvt3/m03_v05_music_Cello_C.ily"
+\include "./03-Mvt3/m03_v06_music_Basso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -72,9 +73,16 @@
 						\timeMvtIII \nameStaffIVMvtIII \musicViolaIIMvtIII
 					}
 				>>
-				\new Staff {
-					\timeMvtIII \nameStaffVMvtIII \partCombine \musicCelloMvtIII \musicBassoMvtIII
-				}
+				\new GrandStaff <<
+					\new Staff \with { \nameVoiceStaffVMvtIII } {
+						\timeMvtIII \nameStaffVMvtIII 
+						\partCombine \musicCelloMvtIII \musicBassoMvtIII
+%						\musicBassoMvtIII
+					}
+					\new Staff \with {\RemoveAllEmptyStaves} {
+						\timeMvtIII \musicBassoApartMvtIII
+					}
+				>>
 			>>
 		>>
 		\header {

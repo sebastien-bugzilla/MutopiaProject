@@ -42,12 +42,12 @@ musicViolaIMvtIII = \relative c' {
 	r g r aes r f'
 	r ees(-. bes-. bes-. bes-. bes)-. 
 	r4 r8 bes(-. bes-. bes-.)
-	bes(-. aes-. aes-. aes-. aes-. aes)
+	\slurDashed bes(-. aes-. aes-. aes-. aes-. aes) \slurSolid
 % mesures 31 à 35
 	g(-. g-. c-. c-. g'-. g)-. 
-	g(-. g-. g-. g-. g-. g)-.
-	f(-. bes-. aes-. aes-. aes!-. aes)-. %check
-	g(-. g-. g-. g-. g-. g)-. 
+	\slurDashed g(-. g-. g-. g-. g-. g)-. \slurSolid
+	f(-. bes-. aes-. aes-. aes!-. aes)-. 
+	\slurDashed g(-. g-. g-. g-. g-. g)-. \slurSolid
 	g(-. g-. gis-. a-. bes-. g)-. 
 % mesures 36 à 40
 	aes4 r8 f( ges f
@@ -62,7 +62,7 @@ musicViolaIMvtIII = \relative c' {
 	c4 r r
 	R2.
 % mesures 46 à 50
-	f8(-. f-. f-. f-. ees-. ees)-. 
+	\slurDashed f8(-. f-. f-. f-. ees-. ees)-. \slurSolid
 	c^\simile c bes bes g' ees
 	ees ees ees ees f f
 	f f f bes bes bes
@@ -71,7 +71,7 @@ musicViolaIMvtIII = \relative c' {
 	e e( g)
 	f2( c4)
 	c r r 
-	f8(-. f-. f-. f-. ees-. ees)-. 
+	\slurDashed f8(-. f-. f-. f-. ees-. ees)-. \slurSolid
 	c(-. c-. bes-. bes-. g'-. g)-. 
 % mesures 56 à 60
 	f(-. f-. f-. f-. f-. f)-. 
@@ -84,9 +84,9 @@ musicViolaIMvtIII = \relative c' {
 	bes4 f f'
 	f16-. g-. gis-. a( f) g-. gis-. a( g) f-. e-. f(
 	ees!4) r r
-	bes16( c) cis( d) bes( c) cis( d) c( bes) a( g)
+	bes16( c) cis( d) bes( c) cis( d) \slurDashed c( bes) a( g) \slurSolid
 % mesures 66 à 70
-	aes!4~ aes16-. g-. fis-. f-. g-. aes-. a-. bes-. 
+	aes!4~\f aes16-. g-. fis-. f-. g-. aes-. a-. bes-. 
 	f8 f'4 f8 ees16-. f-. fis-. g-. 
 	ees8\ff ees ees ees ees ees
 	ees2.:8
@@ -107,7 +107,7 @@ musicViolaIMvtIII = \relative c' {
 	gis4( a8) r r4
 	a4. a8(-. a-. bes)-. 
 	c4 r r
-	f4(~ f16 e f g f aes g f)
+	f!4(~ f16 e f g f aes g f)
 	f4( e e)
 % mesures 86 à 90
 	c'2 c,4
@@ -129,18 +129,18 @@ musicViolaIMvtIII = \relative c' {
 	ces'4( bes8) bes(-. bes-. bes)-. 
 % mesures 101 à 105
 	bes2 f4
-	ges4( f8) aes( g f)
+	ges4( f8) aes( ges f)
 	ees(-. g'-. g-. g-. f-. f)-. 
 	b(-. b-. c-. c-. aes-. aes)-. 
 	g( fis f d bes d)
 % mesures 106 à 110
 	ees4. ees'8(-. ees-. ees)-. 
 	d4( c bes
-	a g ges)
+	aes g ges)
 	f(-. ees-. ees-.)
 	d-. d2-.
 % mesures 111 à 115
-	bes8(-. bes-. bes-. bes-. aes-. aes)-. 
+	\slurDashed bes8(-. bes-. bes-. bes-. aes-. aes)-. \slurSolid
 	d^\simile d ees ees c c
 	bes2.:8
 	aes4( g8) bes(-. c-. c-.)

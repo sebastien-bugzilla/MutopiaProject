@@ -78,6 +78,11 @@ nameStaffIVMvtIII = {
 nameStaffVMvtIII = {
 	\set Staff.instrumentName = "Bassi"
 }
+nameVoiceStaffVMvtIII = {
+	\set Staff.soloText = \markup { \medium "Vc."}
+	\set Staff.soloIIText = \markup { \medium "Cb."}
+	\set Staff.aDueText = \markup { \medium "Bassi"}
+}
 %###############################################################################
 %#                    S T A F F   N A M E   :   M V T   I V                    #
 %###############################################################################

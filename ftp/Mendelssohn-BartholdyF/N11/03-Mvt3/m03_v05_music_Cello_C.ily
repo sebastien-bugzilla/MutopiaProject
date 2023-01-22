@@ -40,17 +40,17 @@ musicCelloMvtIII = \relative c {
 % mesures 26 à 31
 	ees, r ees r ees r
 	ees r ees r ees r
-	ees^\vc g'( d ees g, aes)
+	\partCombineApart ees^\vc g'( d ees g, aes)
 	bes2 r4
 	r8 aes'8( e f aes, bes)
-	c4 r r
+	c4 r r \partCombineAutomatic
 % mesures 32 à 35
 	R2.*4
 	
 	
 	
 % mesures 36 à 40
-	r8 f(^\bassi\p ges f ees des)
+	r8 f(\p ges f ees des)
 	c( des ees e f e)
 	f f( ges f ees des)
 	c( des ees e f e)
@@ -158,7 +158,7 @@ musicCelloMvtIII = \relative c {
 	ees, r ees r ees r
 	ees r ees r ees r
 % mesures 126 à 130
-	ees2.~
+	\oneVoice ees2.~
 	ees~
 	ees8 g'( d ees g, aes)
 	bes4. d16-. c-. bes( aes) g-. f-.
