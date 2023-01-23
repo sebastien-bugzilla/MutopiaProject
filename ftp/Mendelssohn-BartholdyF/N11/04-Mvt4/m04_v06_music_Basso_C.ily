@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicCelloMvtIV = \relative c {
+musicBassoMvtIV = \relative c {
 	\clef bass
 	\key f \minor
 	\repeat volta 2 {
@@ -45,9 +45,9 @@ musicCelloMvtIV = \relative c {
 % mesures 26 à 30
 		c'4 c,8 c( f) f-.
 		f( e) e-. e( aes) aes-. \slurSolid
-		aes g c,^\vc c( b) b-.
-		b( bes) bes-. bes( a) a-.
-		a[ aes] f'8^\bassi aes g f
+		aes g r r4 r8
+		\mmrPos #-6 R2.
+		r4 f8 aes g f
 % mesures 31 à 35
 		c'4 e,8 e e e
 		f4 f8 ees4 des8
@@ -70,7 +70,7 @@ musicCelloMvtIV = \relative c {
 		f, r \key f \major \markTrio
 	}
 	\repeat volta 2 {
-		r8 c^\vc r r
+		r8 r4 r8
 		R2.*7
 		
 		
@@ -79,7 +79,7 @@ musicCelloMvtIV = \relative c {
 		
 		
 		
-		c'2.~\p^\bassi
+		c'2.~\p
 		c~
 % mesures 56 à 60
 		c~
@@ -87,17 +87,17 @@ musicCelloMvtIV = \relative c {
 		c8 r
 	}
 	\repeat volta 2 {
-		r8 e,^\vc r r
+		r8 r4 r8
 		R2.*3
 		
 % mesures 61 à 65
 		
-		r4 r8 g\f r r
+		\mmrPos #-7 R2.
 		R2.
-		r4 r8 c\p r r
+		R2.
 		R2.
 % mesures 66 à 70
-		r4 r8 c,\f r r
+		\mmrPos #-10 R2.
 		R2.*7
 		
 		
@@ -106,11 +106,11 @@ musicCelloMvtIV = \relative c {
 		
 		
 		
-		f''4.(\p^\vc e
-		ees des)
+		f,2.~\p_\cb
+		f~
 % mesures 76 à 80
-		c8 r r r4 r8
-		f,,2.~^\bassi
+		f~
+		f~
 	}
 	\alternative {
 		{
@@ -123,15 +123,15 @@ musicCelloMvtIV = \relative c {
 		}
 	}
 	R2.
-	r8 r8 c^\vc\pp c( f) f-.
+	\mmrPos #-10 R
 % mesures 81 à 85
-	f( e!) r r4 r8
-	r8 r c c( f) f-.
-	f( e) r r4 r8
-	r4 r8 r r b'
-	b c r r r b
+	\mmrPos #-8 R
+	\mmrPos #-10 R
+	\mmrPos #-8 R
+	R
+	R
 % mesures 86 à 88
-	c4 c8\p\< c( b) b-.
-	b( bes) bes-. bes(\! a!) a-.
-	a![( aes]) \bar "||" \key f \minor \menuettodacapo
+	R
+	R
+	r4 \bar "||" \key f \minor
 }

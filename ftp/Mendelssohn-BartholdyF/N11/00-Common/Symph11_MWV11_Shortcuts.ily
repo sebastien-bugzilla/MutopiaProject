@@ -35,3 +35,21 @@ mmrPos = #(define-music-function
 	#}
 )
 
+markTrio = \mark \markup {
+	\abs-fontsize #12 \bold "Trio."
+}
+
+%markMenuettodacapo = {
+%	\once \override Score.RehearsalMark.break-visibility = ##(#t #t #t)
+%	\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+%	\mark \markup {
+%		\abs-fontsize #12 \italic "Menuetto da capo"
+%	}
+%}
+menuettodacapo = {
+	\once \override TextScript.self-alignment-X = 1
+	s8^\markup {
+		\italic {Menuetto da capo}
+	}
+}
+

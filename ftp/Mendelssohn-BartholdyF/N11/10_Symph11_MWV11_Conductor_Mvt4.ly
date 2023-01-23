@@ -25,8 +25,8 @@
 \include "./04-Mvt4/m04_v02_music_ViolinII.ily"
 \include "./04-Mvt4/m04_v03_music_ViolaI.ily"
 \include "./04-Mvt4/m04_v04_music_ViolaII.ily"
-\include "./04-Mvt4/m04_v05_music_Cello.ily"
-\include "./04-Mvt4/m04_v06_music_Basso.ily"
+\include "./04-Mvt4/m04_v05_music_Cello_C.ily"
+\include "./04-Mvt4/m04_v06_music_Basso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -73,8 +73,9 @@
 						\timeMvtIV \nameStaffIVMvtIV \musicViolaIIMvtIV
 					}
 				>>
-				\new Staff {
+				\new Staff \with { \nameVoiceStaffVMvtIV } {
 					\timeMvtIV \nameStaffVMvtIV \partCombine \musicCelloMvtIV \musicBassoMvtIV
+%					\timeMvtIV \nameStaffVMvtIV \musicBassoMvtIV
 				}
 			>>
 		>>
