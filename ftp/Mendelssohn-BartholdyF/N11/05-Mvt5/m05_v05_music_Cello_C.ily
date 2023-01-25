@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicBassoMvtV = \relative c {
+musicCelloMvtV = \relative c {
 	\clef bass
 	\key f \minor
 	\repeat volta 2 {
@@ -193,28 +193,48 @@ musicBassoMvtV = \relative c {
 			g r r2
 		}
 		{
-			R1*2
-			
+			\partCombineApart g,2\p^\vc g'4 g
+			g r r2
 		}
 	}
 % mesures 161 à 165
-	R1*30
+	fis,2\pp fis'4 fis
+	fis1~
+	fis~
+	fis~
+	fis~
 % mesures 166 à 170
-	
+	fis~
+	\once \slurDashed fis2( fis,4) fis-.
+	\once \tieDashed fis1~
+	fis
+	f!
 % mesures 171 à 175
-	
+	f~
+	f~
+	f~
+	f
+	ges~
 % mesures 176 à 180
-	
+	ges~
+	ges
+	g!
+	aes~
+	aes
 % mesures 181 à 185
-	
+	g~
+	g
+	fis~
+	fis
+	g~
 % mesures 186 à 190
-	
-	
-	
-	
-	\bar "||" \key c \minor
+	g~
+	g
+	aes
+	\once \tieDashed g~
+	g \bar "||" \key c \minor
 % mesures 191 à 195
-	r2 c,2^\bassi\f
+	c4 r \partCombineAutomatic c2\f
 	ees c
 	g'4 f2 e4
 	f ees!2 d!4
@@ -334,22 +354,50 @@ musicBassoMvtV = \relative c {
 	
 	\bar "||" \key f \minor
 % mesures 291 à 295
-	R1*36
+	\partCombineApart g2\p^\vc g,4-. g-.
+	g1~
+	g~
+	g~
+	g~
 % mesures 296 à 300
-	
+	g2 g4-. g-.
+	g1\pp~
+	g
+	aes~
+	aes~
 % mesures 301 à 305
-	
+	aes
+	a
+	bes~
+	bes
+	e,~
 % mesures 306 à 310
-	
+	e
+	f~
+	f
+	b~
+	b
 % mesures 311 à 315
-	
+	c,~
+	c~
+	c~
+	c~^\dimmarkup
+	c~
 % mesures 316 à 320
-	
+	c~
+	c~\pp
+	c
+	r2 <c g'>4-.\p q-.
+	q1~
 % mesures 321 à 325
-	
+	q4 r q-. q-.
+	q1~
+	q4 r q-. q-.
+	q1~^\crescmarkup
+	q2 c4-. c-.
 % mesures 326 à 330
-	
-	r2 c4-.^\bassi\f\< c-.
+	c2 c4-.\f c-.
+	c2 \partCombineAutomatic c'4-.\f\< c-.
 	c2 c4-. c-.\!
 	c2 c'4-.\ff c-.
 	c-. c-. c-. c-.
@@ -525,12 +573,12 @@ musicBassoMvtV = \relative c {
 	r2 f4 r
 	r2 c4\pp r
 	r2 c4 r
-	r2 c4 r
-	r2 c4 r
+	c,1~
+	c~
 % mesures 478 à 480
-	r2 c4 r
-	r2 c4 r
-	des2\f des'4 des
+	c~
+	c
+	des2\f des''4 des
 	des2 r
 	des,2\ff des'4 des
 % mesures 481 à 485

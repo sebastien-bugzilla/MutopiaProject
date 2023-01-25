@@ -9,212 +9,212 @@ musicViolaIMvtV = \relative c' {
 	\key f \minor
 	\repeat volta 2 {
 % mesures 1 à 5
-	    f2\f aes4 aes
-	    g r r2
-	    c,2 f4 f
-	    f r r2
-	    bes,2 g'4 bes
+		f2\f aes4 aes
+		g r r2
+		c,2 f4 f
+		f r r2
+		bes,2 g'4 bes
 % mesures 6 à 10
-	    bes2 c4 c
-	    c2 f,
-	    c4 r r2
-	    R1*2
-	    
+		bes2 c4 c
+		c2 f,
+		c4 r r2
+		R1*2
+		
 % mesures 11 à 15
-	    c2\p c'4 c
-	    bes r r2
-	    ees,,1
-	    aes4 r bes2->
-	    c4 des c c,
+		c2\p c'4 c
+		bes r r2
+		ees,,1
+		aes4 r bes2->
+		c4 des c c,
 % mesures 16 à 20
-	    f r bes2->
-	    c4 des c bes
-	    aes8\ff c c c c2:8
-	    c: c:
-	    des: des:
+		f r bes2->
+		c4 des c bes
+		aes8\ff c c c c2:8
+		c: c:
+		des: des:
 % mesures 21 à 25
-	    des: des:
-	    c8 bes aes g f g aes bes
-	    c2:8 c:
-	    des: des:
-	    des: bes:
+		des: des:
+		c8 bes aes g f g aes bes
+		c2:8 c:
+		des: des:
+		des: bes:
 % mesures 26 à 30
-	    f8 g aes bes c d e f
-	    c, d e f g a b c
-	    f, g aes bes c d e f
-	    g, aes bes c d e f g
-	    aes, bes c d e f g aes
+		f8 g aes bes c d e f
+		c, d e f g a b c
+		f, g aes bes c d e f
+		g, aes bes c d e f g
+		aes, bes c d e f g aes
 % mesures 31 à 35
-	    bes, ces des! ees f g aes bes
-	    g2:8 g:
-	    aes: aes:
-	    aes: aes:
-	    g: g:
+		bes, ces des! ees f g aes bes
+		g2:8 g:
+		aes: aes:
+		aes: aes:
+		g: g:
 % mesures 36 à 40
-	    g: g:
-	    aes: aes:
-	    aes: aes:
-	    c,4 r r b(
-	    c) r r b(
+		g: g:
+		aes: aes:
+		aes: aes:
+		c,4 r r b(
+		c) r r b(
 % mesures 41 à 45
-	    c) r c' r
-	    e,,2 r
-	    R1*9
-	    
-	    
+		c) r c' r
+		e,,2 r
+		R1*9
+		
+		
 % mesures 46 à 50
-	    
-	    
-	    
-	    
-	    
+		
+		
+		
+		
+		
 % mesures 51 à 55
-	    
-	    f2\f f'4 f
-	    e c ees2
-	    d4 bes des2
-	    r4 c c bes
+		
+		f2\f f'4 f
+		e c ees2
+		d4 bes des2
+		r4 c c bes
 % mesures 56 à 60
-	    aes g aes f
-	    g r des' e
-	    f r c d
-	    ees2 d
-	    c1~
+		aes g aes f
+		g r des' e
+		f r c d
+		ees2 d
+		c1~
 % mesures 61 à 65
-	    c4 bes c aes
-	    g r c2
-	    f, bes
-	    r e,
-	    c'1
+		c4 bes c aes
+		g r c2
+		f, bes
+		r e,
+		c'1
 % mesures 66 à 70
-	    des4 ees fes2
-	    ees4 ees f g
-	    aes g8 f ees4 des8 c
-	    des4 r r c
-	    aes' r r2
+		des4 ees fes2
+		ees4 ees f g
+		aes g8 f ees4 des8 c
+		des4 r r c
+		aes' r r2
 % mesures 71 à 75
-	    ees,2 g'4 g
-	    aes bes c des
-	    g,2 ges
-	    f fes
-	    ees aes~
+		ees,2 g'4 g
+		aes bes c des
+		g,2 ges
+		f fes
+		ees aes~
 % mesures 76 à 80
-	    aes f4 g
-	    aes1
-	    R1
-	    r4 ees' ees des
-	    c c, des ees
+		aes f4 g
+		aes1
+		R1
+		r4 ees' ees des
+		c c, des ees
 % mesures 81 à 85
-	    f ees des c
-	    des2 des'4 des
-	    des1
-	    c~
-	    c
+		f ees des c
+		des2 des'4 des
+		des1
+		c~
+		c
 % mesures 86 à 90
-	    bes
-	    ees,2 ees'4 ees
-	    ees1~
-	    ees
-	    f2 bes,
+		bes
+		ees,2 ees'4 ees
+		ees1~
+		ees
+		f2 bes,
 % mesures 91 à 95
-	    bes4 r bes2
-	    aes g 
-	    aes f
-	    fes ees4 ces
-	    bes r g'2
+		bes4 r bes2
+		aes g 
+		aes f
+		fes ees4 ces
+		bes r g'2
 % mesures 96 à 100
-	    f fes
-	    ees f
-	    ees ees
-	    <des ees>2 q4 q
-	    q2 des'4 des
+		f fes
+		ees f
+		ees ees
+		<des ees>2 q4 q
+		q2 des'4 des
 % mesures 101 à 105
-	    ees,2 <des ees>4 q
-	    q2 des'4 des
-	    des r ees,4-.\p ees-.
-	    ees2 ees4-. ees-.
-	    ees1~
+		ees,2 <des ees>4 q
+		q2 des'4 des
+		des r ees,4-.\p ees-.
+		ees2 ees4-. ees-.
+		ees1~
 % mesures 106 à 110
-	    ees~
-	    ees
-	    bes(
-	    aes
-	    bes)
+		ees~
+		ees
+		bes(
+		aes
+		bes)
 % mesures 111 à 115
-	    aes(
-	    g)
-	    f2( aes
-	    g aes
-	    g) ees'4( des)
+		aes(
+		g)
+		f2( aes
+		g aes
+		g) ees'4( des)
 % mesures 116 à 120
-	    c2( des4 ees)
-	    f2( aes,)
-	    beses1
-	    aes2( a
-	    bes1~
+		c2( des4 ees)
+		f2( aes,)
+		beses1
+		aes2( a
+		bes1~
 % mesures 121 à 125
-	    bes)
-	    c2( bes)
-	    g1(
-	    aes)
-	    des(
+		bes)
+		c2( bes)
+		g1(
+		aes)
+		des(
 % mesures 126 à 130
-	    ees)
-	    f
-	    f,~
-	    f
-	    aes2 g
+		ees)
+		f
+		f,~
+		f
+		aes2 g
 % mesures 131 à 135
-	    c4 c8\f des ees des ees f
-	    ees f ees des c des bes c
-	    des ees des c bes c aes bes
-	    c des c bes aes bes g aes
-	    bes c bes aes g aes g g'
+		c4 c8\f des ees des ees f
+		ees f ees des c des bes c
+		des ees des c bes c aes bes
+		c des c bes aes bes g aes
+		bes c bes aes g aes g g'
 % mesures 136 à 140
-	    aes2 c4 c
-	    c4:8 ees,: ees: ees:
-	    ees8 g aes bes c bes c des
-	    ees bes ees des c des c bes
-	    aes ces bes aes g aes f g
+		aes2 c4 c
+		c4:8 ees,: ees: ees:
+		ees8 g aes bes c bes c des
+		ees bes ees des c des c bes
+		aes ces bes aes g aes f g
 % mesures 141 à 145
-	    aes g aes bes aes c bes aes
-	    g aes bes aes g aes f g
-	    aes ees f g aes c bes aes
-	    bes aes g f ees des c bes
-	    aes4 c' r bes
+		aes g aes bes aes c bes aes
+		g aes bes aes g aes f g
+		aes ees f g aes c bes aes
+		bes aes g f ees des c bes
+		aes4 c' r bes
 % mesures 146 à 150
-	    r aes r ees
-	    aes,8 bes c des ees f g aes
-	    bes aes g f ees des c bes 
-	    aes g' f ees des f ees des
-	    c ees des c bes des c bes
+		r aes r ees
+		aes,8 bes c des ees f g aes
+		bes aes g f ees des c bes 
+		aes g' f ees des f ees des
+		c ees des c bes des c bes
 % mesures 151 à 155
-	    aes bes c des ees f g aes
-	    bes aes g f ees des c bes
-	    aes bes c des ees f g aes
-	    bes aes g f ees des c bes
-	    aes4:8 fes': ees: fes:
+		aes bes c des ees f g aes
+		bes aes g f ees des c bes
+		aes bes c des ees f g aes
+		bes aes g f ees des c bes
+		aes4:8 fes': ees: fes:
 % mesures 156 à 160
-	    ees: fes: ees: fes:
-	    ees2 ees'4 ees
-	    ees r r2
+		ees: fes: ees: fes:
+		ees2 ees'4 ees
+		ees r r2
 	}
 	\alternative {
-	    {
-	        e,2\ff e'4 e
-	        e r r2
-	    }
-	    {
-	        e,,2\p c'4 c
-	        c r r2
-	    }
+		{
+			e,2\ff e'4 e
+			e r r2
+		}
+		{
+			e,,2\p c'4 c
+			c r r2
+		}
 	}
 % mesures 161 à 165
 	R1
 	ees,2\pp ees'4 ees
 	ees1~
 	ees~
-	ees~
+	\once \tieDashed ees~
 % mesures 166 à 170
 	ees2( ees,4) ees-.
 	ees1~
@@ -354,7 +354,7 @@ musicViolaIMvtV = \relative c' {
 	fis r r2
 	fis,2 fis'4 fis
 % mesures 281 à 285
-	a, r d,-.\pp d
+	a, r d,-.\pp d-.
 	d2 d4-. d-.
 	d1~
 	d~
@@ -394,12 +394,12 @@ musicViolaIMvtV = \relative c' {
 	g
 	aes!~
 	aes_\dimmarkup
-	g~^\pocorit
+	g~
 % mesures 316 à 320
 	g
-	aes\pp^\rit~
+	aes\pp~
 	aes
-	g4) r^\atempo r2
+	g4) r r2
 	r2 g4-.\p g-.
 % mesures 321 à 325
 	g2 r
@@ -408,7 +408,7 @@ musicViolaIMvtV = \relative c' {
 	r e4-._\crescmarkup e-.
 	e2 <g, g'>4-. q-.
 % mesures 326 à 330
-	g2 bes'4\f-. bes-.
+	q2 bes'4\f-. bes-.
 	bes2\< e4-. e-.
 	e2 e4-. e-.\!
 	e2 c4\ff-. c-.
@@ -495,7 +495,7 @@ musicViolaIMvtV = \relative c' {
 	des c bes aes
 	aes1~
 	aes4 g aes a\<
-	bes a bes b
+	bes a bes b\!
 	c2\ff c'4 c
 % mesures 401 à 405
 	c1~
@@ -505,7 +505,7 @@ musicViolaIMvtV = \relative c' {
 	f fes
 % mesures 406 à 410
 	ees d
-	des c4 aes
+	des! c4 aes
 	g2 g
 	g g'
 	f f

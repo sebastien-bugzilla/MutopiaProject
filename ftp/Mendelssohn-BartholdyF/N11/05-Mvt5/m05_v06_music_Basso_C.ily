@@ -193,28 +193,48 @@ musicBassoMvtV = \relative c {
 			g r r2
 		}
 		{
-			R1*2
-			
+			\mmrPos #-6 R1
+			\mmrPos #-6 R
 		}
 	}
 % mesures 161 à 165
-	R1*30
+	\mmrPos #-6 R
+	R
+	R
+	R
+	R
 % mesures 166 à 170
-	
+	R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
 % mesures 171 à 175
-	
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
 % mesures 176 à 180
-	
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
 % mesures 181 à 185
-	
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
 % mesures 186 à 190
-	
-	
-	
-	
-	\bar "||" \key c \minor
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-8 R \bar "||" \key c \minor
 % mesures 191 à 195
-	r2 c,2^\bassi\f
+	r2 c,2\f
 	ees c
 	g'4 f2 e4
 	f ees!2 d!4
@@ -334,22 +354,50 @@ musicBassoMvtV = \relative c {
 	
 	\bar "||" \key f \minor
 % mesures 291 à 295
-	R1*36
+	\mmrPos #-7 R1
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
 % mesures 296 à 300
-	
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
 % mesures 301 à 305
-	
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-8 R
 % mesures 306 à 310
-	
+	\mmrPos #-8 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
 % mesures 311 à 315
-	
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+	\mmrPos #-10 R
 % mesures 316 à 320
-	
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+	\mmrPos #-10 R
 % mesures 321 à 325
-	
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+	\mmrPos #-10 R
+	\mmrPos #-10 R
 % mesures 326 à 330
-	
-	r2 c4-.^\bassi\f\< c-.
+	\mmrPos #-10 R
+	r2 c4-.\f\< c-.
 	c2 c4-. c-.\!
 	c2 c'4-.\ff c-.
 	c-. c-. c-. c-.
@@ -525,12 +573,12 @@ musicBassoMvtV = \relative c {
 	r2 f4 r
 	r2 c4\pp r
 	r2 c4 r
-	r2 c4 r
-	r2 c4 r
+	s1
+	s
 % mesures 478 à 480
-	r2 c4 r
-	r2 c4 r
-	des2\f des'4 des
+	s
+	s
+	s2 des'4 des
 	des2 r
 	des,2\ff des'4 des
 % mesures 481 à 485
@@ -567,4 +615,15 @@ musicBassoMvtV = \relative c {
 	f r
 	f2:8 f:
 	f4 r r2 \bar "|."
+}
+musicBassoApartMvtV = \relative c {
+	\clef bass
+	\key f \minor
+% mesures 1 à 477
+	s1*475
+	r2 c4 r
+	r2 c4 r
+	r2 c4 r
+	r2 c4 r
+	des2\f s2
 }

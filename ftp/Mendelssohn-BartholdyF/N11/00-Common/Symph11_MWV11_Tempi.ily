@@ -24,6 +24,13 @@ tempiMvtIV = {
 }
 tempiMvtV = {
 	\tempo "Allegro molto" 2 = 150
+	s1*316
+	\tempo "poco rit." % bar 315
+	s1*2 s2
+	\tempo "rit." % bar 317.5
+	s2 s1 s4
+	\tempo "a tempo" % bar 319.25
+	
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #

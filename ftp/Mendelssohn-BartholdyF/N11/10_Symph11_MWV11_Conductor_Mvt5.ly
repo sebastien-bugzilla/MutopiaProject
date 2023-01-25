@@ -25,8 +25,8 @@
 \include "./05-Mvt5/m05_v02_music_ViolinII.ily"
 \include "./05-Mvt5/m05_v03_music_ViolaI.ily"
 \include "./05-Mvt5/m05_v04_music_ViolaII.ily"
-\include "./05-Mvt5/m05_v05_music_Cello.ily"
-\include "./05-Mvt5/m05_v06_music_Basso.ily"
+\include "./05-Mvt5/m05_v05_music_Cello_C.ily"
+\include "./05-Mvt5/m05_v06_music_Basso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -73,9 +73,15 @@
 						\timeMvtV \nameStaffIVMvtIV \musicViolaIIMvtV
 					}
 				>>
-				\new Staff {
-					\timeMvtV \nameStaffVMvtIV \partCombine \musicCelloMvtV \musicBassoMvtV
-				}
+				\new GrandStaff <<
+					\new Staff \with {\nameVoiceStaffVMvtV} {
+						\timeMvtV \nameStaffVMvtIV 
+						\partCombine \musicCelloMvtV \musicBassoMvtV
+					}
+					\new Staff \with { \RemoveAllEmptyStaves } {
+						\timeMvtV \musicBassoApartMvtV
+					}
+				>>
 			>>
 		>>
 		\header {

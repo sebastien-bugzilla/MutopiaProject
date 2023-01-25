@@ -9,205 +9,205 @@ musicViolinIIMvtV = \relative c' {
 	\key f \minor
 	\repeat volta 2 {
 % mesures 1 à 5
-	    f2\f c'4 c
-	    c r r2
-	    c,2 c'4 c
-	    bes r r2
-	    bes,2 des'4 des
+		f2\f c'4 c
+		c r r2
+		c,2 c'4 c
+		bes r r2
+		bes,2 des'4 des
 % mesures 6 à 10
-	    c2 g'4 g
-	    f2 f,
-	    g4 r r2
-	    R1
-	    r4 g'8\p( f e des c bes
+		c2 g'4 g
+		f2 f,
+		g4 r r2
+		R1
+		r4 g'8\p( f e des c bes
 % mesures 11 à 15
-	    a bes c bes a bes g a)
-	    bes4 f'8( ees des c bes aes)
-	    g( aes g f g aes f g)
-	    aes4 r e2->
-	    f4 g f e
+		a bes c bes a bes g a)
+		bes4 f'8( ees des c bes aes)
+		g( aes g f g aes f g)
+		aes4 r e2->
+		f4 g f e
 % mesures 16 à 20
-	    f r e2->
-	    f4 g f e
-	    f2\ff f'4 f
-	    f c aes f
-	    e2:8 e:
+		f r e2->
+		f4 g f e
+		f2\ff f'4 f
+		f c aes f
+		e2:8 e:
 % mesures 21 à 25
-	    e: e:
-	    f2 f'4 f
-	    f c aes f
-	    e2:8 e:
-	    e: e:
+		e: e:
+		f2 f'4 f
+		f c aes f
+		e2:8 e:
+		e: e:
 % mesures 26 à 30
-	    f2 f'4 f
-	    f2 e
-	    aes, aes'4 aes
-	    aes2 g
-	    c, c'4 c
+		f2 f'4 f
+		f2 e
+		aes, aes'4 aes
+		aes2 g
+		c, c'4 c
 % mesures 31 à 35
-	    c2 bes
-	    bes r
-	    f, f'4 f
-	    aes2 g4 f
-	    c4 r r2
+		c2 bes
+		bes r
+		f, f'4 f
+		aes2 g4 f
+		c4 r r2
 % mesures 36 à 40
-	    bes'2 aes4 g
-	    f2 f4 f
-	    aes1
-	    g8-. g( f e) aes-. aes( g f)
-	    e-. g( f e) aes-. aes( g f)
+		bes'2 aes4 g
+		f2 f4 f
+		aes1
+		g8-. g( f e) aes-. aes( g f)
+		e-. g( f e) aes-. aes( g f)
 % mesures 41 à 45
-	    e4 r g r
-	    g,,2 r
-	    R1*4
-	    
-	    
+		e4 r g r
+		g,,2 r
+		R1*4
+		
+		
 % mesures 46 à 50
-	    
-	    c2\f c'4 c
-	    b g bes2
-	    a4 f aes2
-	    r4 g g f
+		
+		c2\f c'4 c
+		b g bes2
+		a4 f aes2
+		r4 g g f
 % mesures 51 à 55
-	    ees2 e
-	    f4 g aes f
-	    g r g a
-	    bes r f g
-	    aes2 g
+		ees2 e
+		f4 g aes f
+		g r g a
+		bes r f g
+		aes2 g
 % mesures 56 à 60
-	    f4 ees f d
-	    g r g2
-	    c, f
-	    r b,
-	    c4 r g'2
+		f4 ees f d
+		g r g2
+		c, f
+		r b,
+		c4 r g'2
 % mesures 61 à 65
-	    f4 r r2
-	    g f~
-	    f f~
-	    f g4 c,
-	    c'2 r
+		f4 r r2
+		g f~
+		f f~
+		f g4 c,
+		c'2 r
 % mesures 66 à 70
-	    r4 bes bes aes
-	    g g aes bes
-	    c des ees f
-	    g r r2
-	    R1*2
+		r4 bes bes aes
+		g g aes bes
+		c des ees f
+		g r r2
+		R1*2
 % mesures 71 à 75
-	    
-	    f,2 f'4 f
-	    e c ees2
-	    d4 bes des2~
-	    des ces
+		
+		f,2 f'4 f
+		e c ees2
+		d4 bes des2~
+		des ces
 % mesures 76 à 80
-	    bes1
-	    aes4 ges f2
-	    f f'4 f
-	    ees bes bes2
-	    c4 c c bes
+		bes1
+		aes4 ges f2
+		f f'4 f
+		ees bes bes2
+		c4 c c bes
 % mesures 81 à 85
-	    aes a bes c
-	    bes r r2
-	    r4 g, aes bes
-	    c aes bes c
-	    des f e f
+		aes a bes c
+		bes r r2
+		r4 g, aes bes
+		c aes bes c
+		des f e f
 % mesures 86 à 90
-	    bes des c bes
-	    aes2 aes'4 aes
-	    aes1~
-	    aes
-	    r4 bes bes aes
+		bes des c bes
+		aes2 aes'4 aes
+		aes1~
+		aes
+		r4 bes bes aes
 % mesures 91 à 95
-	    g2 ees'4 ees
-	    d bes des2
-	    c4 aes ces2
-	    bes4 g aes d,
-	    ees r bes2
+		g2 ees'4 ees
+		d bes des2
+		c4 aes ces2
+		bes4 g aes d,
+		ees r bes2
 % mesures 96 à 100
-	    aes g 
-	    aes ees'
-	    ees, ees'4 ees
-	    ees r r2
-	    <ees, bes'> bes''4 bes
+		aes g 
+		aes ees'
+		ees, ees'4 ees
+		ees r r2
+		<ees, bes'> bes''4 bes
 % mesures 101 à 105
-	    bes r r2
-	    <ees,, bes'> bes''4 bes
-	    bes r r2
-	    R1*3
-	    
+		bes r r2
+		<ees,, bes'> bes''4 bes
+		bes r r2
+		R1*3
+		
 % mesures 106 à 110
-	    
-	    \repeat tremolo 2 {c,,8(\p ees} \repeat tremolo 2 {c ees)} 
-	    \repeat tremolo 2 {des( ees} \repeat tremolo 2 {des ees)} 
-	    \repeat tremolo 2 {c8( ees} \repeat tremolo 2 {c ees)} 
-	    \repeat tremolo 2 {des( bes} \repeat tremolo 2 {des bes)}
+		
+		\repeat tremolo 2 {c,,8(\p ees} \repeat tremolo 2 {c ees)} 
+		\repeat tremolo 2 {des( ees} \repeat tremolo 2 {des ees)} 
+		\repeat tremolo 2 {c8( ees} \repeat tremolo 2 {c ees)} 
+		\repeat tremolo 2 {des( bes} \repeat tremolo 2 {des bes)}
 % mesures 111 à 115
-	    \repeat tremolo 2 {c( ees} \repeat tremolo 2 {c ees)}
-	    \repeat tremolo 2 {c( e} \repeat tremolo 2 {c e)}
-	    \repeat tremolo 2 {f( aes} \repeat tremolo 2 {f aes)}
-	    \repeat tremolo 2 {g( bes} \repeat tremolo 2 {aes bes)}
-	    g8 bes! g ees \repeat tremolo 2 {g, bes}
+		\repeat tremolo 2 {c( ees} \repeat tremolo 2 {c ees)}
+		\repeat tremolo 2 {c( e} \repeat tremolo 2 {c e)}
+		\repeat tremolo 2 {f( aes} \repeat tremolo 2 {f aes)}
+		\repeat tremolo 2 {g( bes} \repeat tremolo 2 {aes bes)}
+		g8 bes! g ees \repeat tremolo 2 {g, bes}
 % mesures 116 à 120
-	    \repeat tremolo 2 {aes( c} aes des aes c)
-	    aes( des f aes \repeat tremolo 2 {f aes)}
-	    \repeat tremolo 2 {ges( beses} \repeat tremolo 2 {ges beses)}
-	    \repeat tremolo 2 {f_\simile aes} \repeat tremolo 2 {f aes} 
-	    \repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
+		\repeat tremolo 2 {aes( c} aes des aes c)
+		aes( des f aes \repeat tremolo 2 {f aes)}
+		\repeat tremolo 2 {ges( beses} \repeat tremolo 2 {ges beses)}
+		\repeat tremolo 2 {f_\simile aes} \repeat tremolo 2 {f aes} 
+		\repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
 % mesures 121 à 125
-	    \repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
-	    \repeat tremolo 2 {ees aes} \repeat tremolo 2 {ees g}
-	    \repeat tremolo 2 {e g} \repeat tremolo 2 {e g}
-	    \repeat tremolo 2 {f aes} \repeat tremolo 2 {ges aes}
-	    \repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
+		\repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
+		\repeat tremolo 2 {ees aes} \repeat tremolo 2 {ees g}
+		\repeat tremolo 2 {e g} \repeat tremolo 2 {e g}
+		\repeat tremolo 2 {f aes} \repeat tremolo 2 {ges aes}
+		\repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
 % mesures 126 à 130
-	    \repeat tremolo 2 {ges beses} \repeat tremolo 2 {ges beses}
-	    \repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
-	    \repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
-	    \repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
-	    ees8 aes c ees des ees des ees
+		\repeat tremolo 2 {ges beses} \repeat tremolo 2 {ges beses}
+		\repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
+		\repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
+		\repeat tremolo 2 {f aes} \repeat tremolo 2 {f aes} 
+		ees8 aes c ees des ees des ees
 % mesures 131 à 135
-	    c2\f aes'4 aes
-	    g ees ges2
-	    f4 des g,2
-	    aes4 c ees2
-	    d4 bes fes2
+		c2\f aes'4 aes
+		g ees ges2
+		f4 des g,2
+		aes4 c ees2
+		d4 bes fes2
 % mesures 136 à 140
-	    ees8 c' c c c2:8
-	    c4: ees: des2:8
-	    c4 r r2
-	    ees,2 ees'4 ees
-	    d bes des2
+		ees8 c' c c c2:8
+		c4: ees: des2:8
+		c4 r r2
+		ees,2 ees'4 ees
+		d bes des2
 % mesures 141 à 145
-	    c4 aes c2
-	    bes4 g bes2
-	    aes4 r r2
-	    g8 aes bes c des ees f g
-	    aes g f ees des f ees des
+		c4 aes c2
+		bes4 g bes2
+		aes4 r r2
+		g8 aes bes c des ees f g
+		aes g f ees des f ees des
 % mesures 146 à 150
-	    c ees des c bes des c bes
-	    aes2 aes'4 aes
-	    bes2 bes,4 bes
-	    c8 bes aes g f aes g f
-	    ees ges f ees des fes ees des
+		c ees des c bes des c bes
+		aes2 aes'4 aes
+		bes2 bes,4 bes
+		c8 bes aes g f aes g f
+		ees ges f ees des fes ees des
 % mesures 151 à 155
-	    c4 r r2
-	    bes2 bes'4 bes 
-	    c4 r r2
-	    bes,2 bes'4 bes
-	    c4:8 bes: c: bes:
+		c4 r r2
+		bes2 bes'4 bes 
+		c4 r r2
+		bes,2 bes'4 bes
+		c4:8 bes: c: bes:
 % mesures 156 à 160
-	    c: bes: c: bes:
-	    c2 aes'4 aes
-	    aes r r2
+		c: bes: c: bes:
+		c2 aes'4 aes
+		aes r r2
 	}
 	\alternative {
-	    {
-	        bes,2\ff bes'4 bes
-	        bes4 r r2
-	    }
-	    {
-	        bes,,2 e4 e
-	        e r r2
-	    }
+		{
+			bes,2\ff bes'4 bes
+			bes4 r r2
+		}
+		{
+			bes,,2\p e4 e
+			e? r r2
+		}
 	}
 % mesures 161 à 165
 	R1
@@ -394,12 +394,12 @@ musicViolinIIMvtV = \relative c' {
 	bes
 	b~
 	b_\dimmarkup
-	bes!~^\pocorit
+	bes!~
 % mesures 316 à 320
 	bes
-	b~\pp^\rit
+	b~\pp
 	b
-	bes!4) r^\atempo r2
+	bes!4) r r2
 	r2 bes4\p-. bes-.
 % mesures 321 à 325
 	bes2 r
@@ -535,14 +535,14 @@ musicViolinIIMvtV = \relative c' {
 	\repeat tremolo 2 {f( aes} \repeat tremolo 2 {f aes)}
 % mesures 431 à 435
 	\repeat tremolo 2 {ges( ees} \repeat tremolo 2 {ges ees)}
+	\once \slurDashed \repeat tremolo 2 {f( aes} \repeat tremolo 2 {f aes)}
+	\once \slurDashed \repeat tremolo 2 {f( aes} \repeat tremolo 2 {f aes)}
 	\repeat tremolo 2 {f( aes} \repeat tremolo 2 {f aes)}
-	\repeat tremolo 2 {f( aes} \repeat tremolo 2 {f aes)}
-	\repeat tremolo 2 {f( aes} \repeat tremolo 2 {f aes)}
-	\repeat tremolo 2 {ees( aes} \repeat tremolo 2 {ees g)}
+	\once \slurDashed \repeat tremolo 2 {ees( aes} \repeat tremolo 2 {ees g)}
 % mesures 436 à 440
 	e( g e c \repeat tremolo 2 {bes8 c)}
 	\repeat tremolo 2 {aes( c} \repeat tremolo 2 {aes c)}
-	\repeat tremolo 2 {f( aes} \repeat tremolo 2 {f aes)}
+	\once \slurDashed \repeat tremolo 2 {f( aes} \repeat tremolo 2 {f aes)}
 	\repeat tremolo 2 {ges( ees} \repeat tremolo 2 {ges ees)}
 	\repeat tremolo 2 {f( aes} \repeat tremolo 2 {f aes)}
 % mesures 441 à 445
