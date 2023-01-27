@@ -50,7 +50,7 @@ musicBassoMvtI = \relative c {
 	c~ 
 	c4 r4 r2 
 % mesures 36 à 40
-	r2 f,4\rest \key f \minor \break \bar ".|:-||" 
+	r2 f,4\rest \key f \minor \bar ".|:-||" 
 	\repeat volta 2 { 
 		r4
 		r f'-.\p f-. r 

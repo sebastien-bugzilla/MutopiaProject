@@ -50,7 +50,7 @@ musicCelloMvtI = \relative c, {
 	R1 
 	r2 r4 c\p 
 % mesures 36 à 40
-	c,2.\espressivo\fermata \key f \minor \break \bar ".|:-||" 
+	c,2.\espressivo\fermata \key f \minor \bar ".|:-||" 
 	\repeat volta 2 { \partCombineUnisono
 		r4 
 		r f'-.\p f-. r 
