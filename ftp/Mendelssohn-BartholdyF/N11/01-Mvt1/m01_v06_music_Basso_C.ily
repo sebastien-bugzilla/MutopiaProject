@@ -33,7 +33,7 @@ musicBassoMvtI = \relative c {
 	\mmrPos #-8 R
 % mesures 21 à 25
 	\mmrPos #-6 R
-	r4 c_\pizz\p_\cb r c 
+	r4 c_\pizz-\offset X-offset 0.5 \p_\cb r c 
 	R1
 	r4 c r c
 	R1
@@ -241,9 +241,9 @@ musicBassoMvtI = \relative c {
 % mesures 191 à 195
 	s
 	s
-	R1
-	r4 c'\f c' r 
-	r bes, bes' r 
+	s
+	s
+	r4 bes' bes' r 
 % mesures 196 à 200
 	r a, a' r 
 	r2 r4 f\f 
@@ -441,15 +441,15 @@ musicBassoMvtI = \relative c {
 	R
 	\mmrPos #-6 R
 	\mmrPos #-6 R
-	\mmrPos #-8 R
+	\mmrPos #-6 R
 % mesures 361 à 365
 	\mmrPos #-6 R
 	\mmrPos #-6 R
-	\mmrPos #-11 R
-	\mmrPos #-10 R
-	\mmrPos #-10 R
+	\mmrPos #-9 R
+	\mmrPos #-9 R
+	\mmrPos #-9 R
 % mesures 366 à 370
-	\mmrPos #-10 R
+	\mmrPos #-9 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R
@@ -487,12 +487,12 @@ musicBassoMvtI = \relative c {
 % mesures 396 à 400
 	c r e-> r 
 	R1\fermata  \bar "||" \key f \major 
-	\mmrPos #-8 R1
-	\mmrPos #-5 R
-	\mmrPos #-8 R
+	\mmrPos #-9 R1
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % mesures 401 à 405
-	\mmrPos #-8 R
-	\mmrPos #-8 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 	\mmrPos #-7 R
 	s1
 	s
@@ -552,7 +552,7 @@ musicBassoApartMvtI = \relative c {
 	s1*180
 % mesure 181 à 185
 	s1
-	s
+	R1
 	r2 r4 f-.
 	bes-. r r f-.
 	bes-. r r f-.
@@ -562,18 +562,27 @@ musicBassoApartMvtI = \relative c {
 	f4 r r2
 	R1
 	r2 r4 ees-.
-% mesure 191 à 195
+% mesure 191 à 194
 	aes-. r r aes,-.
 	des-. r r2
-	s1*211
+	R1
+	r4 c\f c' r
+% mesure 195 à 403
+	s1*22
+	\key g \minor
+	s1*30
 	\key f \major
+	s1*151
+	\key d \minor
+	s1*6
 % mesure 404 à 405
 	f,4(-.~\pp f8 f~-. f f-. f-. f-.)
 	f4(-.~ f8 f~-. f f-. f-. f-.)
 % mesure 406 à 410
-	f'2( ees)
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur f'2( ees)
 	des1
 	c8 r r4 r2
 	R1
 	R\fermata \key f \minor
+	R1
 }

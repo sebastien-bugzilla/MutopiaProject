@@ -20,21 +20,21 @@ musicViolinIMvtI = \relative c'' {
 	r8 d'( c4) r8 d,( c4)
 	r8 des'( c4) r8 des( c4)
 % mesures 11 à 15
-	des4~\< des8\> des~\< des\> des-.(\! des-. des-.) 
-	des4~\< des8\> des~\< des\> des-.(\! des-. des-.) 
-	des4~\< des8\> des~\< des\> des-.(\! des-. des-.) 
-	c4~\< c8\> c~\< c\> c-.(\! c-. c-.) 
+	\hairpinShorten #'(0 . 0.7) des4~\< \hairpinShorten #'(-0.7 . 0) des8\> \hairpinShorten #'(0 . -0.4) des~\< \hairpinShorten #'(0.4 . 0) des\> des-.(\! des-. des-.) 
+	\hairpinShorten #'(0 . 0.7) des4~\< \hairpinShorten #'(-0.7 . 0) des8\> \hairpinShorten #'(0 . -0.4) des~\< \hairpinShorten #'(0.4 . 0) des\> des-.(\! des-. des-.) 
+	\hairpinShorten #'(0 . 0.7) des4~\< \hairpinShorten #'(-0.7 . 0) des8\> \hairpinShorten #'(0 . -0.4) des~\< \hairpinShorten #'(0.4 . 0) des\> des-.(\! des-. des-.) 
+	\hairpinShorten #'(0 . 0.7) c4~\< \hairpinShorten #'(-0.7 . 0) c8\> \hairpinShorten #'(0 . -0.4) c~\< \hairpinShorten #'(0.4 . 0) c\> \once \slurDashed c-.(\! c-. c-.) 
 	c1
 % mesures 16 à 20
 	des(~
 	des4~ des16 ces des ces bes ces des ces bes aes bes aes)
-	ges2(\< aes4.\> ges8)\!
-	ges2(\< aes4.\> ges8)\!
+	\hairpinShorten #'(0 . 1.2) ges2(\< \hairpinShorten #'(-1.2 . 0) aes4.\> ges8)\!
+	\hairpinShorten #'(0 . 1.2) ges2(\< \hairpinShorten #'(-1.2 . 0) aes4.\> ges8)\!
 	ges2( bes4. aes8)
 % mesures 21 à 25
 	aes4 c8.(-> bes16) bes4 d8.(-> c16)
 	c1
-	c2\p\<( des4.\> c8)\!
+	\hairpinShorten #'(-0.3 . -0.3) c2-\offset X-offset 0.5 \p\<( \hairpinShorten #'(0.3 . 0) des4.\> c8)\!
 	c1
 	c2\<( d!4.\> c8)\!
 % mesures 26 à 30
@@ -50,8 +50,8 @@ musicViolinIMvtI = \relative c'' {
 	e)[ r8 b'16]( c[) r8 b16]( c[) r8 d,16(] e[) r8 aes16](
 	g8) r r8. f16( e8) r r8. aes16
 % mesures 36 à 40
-	g2.\espressivo\fermata \key f \minor \bar ".|:-||" \repeat volta 2 { c,4-.\p
-		f4-. r r c-.
+	g2.\espressivo\fermata \key f \minor \break \bar ".|:-||" \repeat volta 2 { c,4-.\p
+		\displayBarNumber f4-. r r c-.
 		f-. r r8 c-. d-. e-. 
 		f-. g-. aes-. g-. f-. ees!-. des!-. c-. 
 		b4-. g'-. r bes,-.
@@ -69,8 +69,8 @@ musicViolinIMvtI = \relative c'' {
 		g( aes) e( f)
 % mesures 51 à 55
 		c( des) aes-. bes-.
-		c2. c4 %%%%%%%%%%%%%%%%%
-		f2\p( ees4 des)
+		c2. c4
+		\once \slurDashed f2\p( ees4 des)
 		des2( c4) r
 		bes'2( aes4 g)
 % mesures 56 à 60
@@ -154,7 +154,7 @@ musicViolinIMvtI = \relative c'' {
 % mesures 121 à 125
 		bes4( aes) g-. f-.
 		f( ees) des-. c-.
-		bes2*2/3( s2*1/3\turn ees4) des
+		\once \slurDashed bes2*2/3( s2*1/3\turn ees4) des
 		c4 r r2
 		c'2( c,4) c-.
 % mesures 126 à 130
@@ -165,7 +165,7 @@ musicViolinIMvtI = \relative c'' {
 		f'( ees des c)
 % mesures 131 à 135
 		ees( des) r2
-		ees'2.\ff d8( f)
+		\dynEO #'(0 . 2) ees'2.\ff d8( f)
 		ees4 d8( f) ees4 d8( f)
 		ees4 r ees8 d f ees
 		des! c bes aes g bes ees des
@@ -203,7 +203,7 @@ musicViolinIMvtI = \relative c'' {
 		bes: c4: des:
 		ees2: des:
 		c: bes:
-		aes4 r r <ees bes' g'>\ff
+		aes4 r r <ees bes' g'>-\offset X-offset 0.8 \ff
 		<ees c' aes'> r r <ees bes' g'>
 % mesures 166 à 170
 		<ees c' aes'> r r g
@@ -213,8 +213,8 @@ musicViolinIMvtI = \relative c'' {
 		r r4 b,
 % mesures 171 à 175
 		c b c b
-		c r r } c-.
-	des-. c-. des-. c-.
+		c r r } \break c-.
+	\displayBarNumber des-. c-. des-. c-.
 	des r r des-.
 	des'-. r r2
 % mesures 176 à 180
@@ -264,9 +264,9 @@ musicViolinIMvtI = \relative c'' {
 	c bes aes g f ees des c
 	bes4 r r g'8 aes
 	bes aes g f e4 r
-	c'2.\ff b8( des!)
+	\dynEO #'(0.2 . 1) c'2.\ff b8( des!)
 % mesures 216 à 220
-	c4 b8( des) c4 b8( des) \bar "||" \key g \minor
+	c4 \once \slurDashed b8( des) c4 \once \slurDashed b8( des) \bar "||" \key g \minor
 	c4 r ees8 d c bes
 	a! g fis ees d4 r
 	d'2. cis8( e)
@@ -288,7 +288,7 @@ musicViolinIMvtI = \relative c'' {
 	a: a:
 	a4 r cis r
 	cis, r r2
-	d'2.\ff-> a!4
+	\dynEO #'(0.2 . 2) d'2.\ff-> a!4
 % mesures 236 à 240
 	f d a f
 	a, r r ees'''8 ees
@@ -303,7 +303,7 @@ musicViolinIMvtI = \relative c'' {
 	bes: bes: 
 % mesures 246 à 250
 	bes2 e,4 r \bar "||" \key f \minor
-	ges2.\ff-> ees4
+	\dynEO #'(0.2 . 1) ges2.\ff-> ees4
 	c a ges ees
 	c r r ges''8 ges
 	ges( f) f-. f-. f( ees) ees-. ees-.
@@ -311,7 +311,7 @@ musicViolinIMvtI = \relative c'' {
 	des2:8 des:
 	c: c:
 	b4 r <b aes'> r
-	r2 r4 g,\f
+	r2 r4 g,-\tweak extra-offset #'(-2.5 . 1.8) \f
 	c c4:8 des: c:
 % mesures 256 à 260
 	des: c: des: des:
@@ -392,7 +392,7 @@ musicViolinIMvtI = \relative c'' {
 	ees8 d ees des c bes aes g
 	aes4 r r2
 % mesures 321 à 325
-	aes'1\ff~->
+	\dynEO #'(0 . 2) aes'1\ff~->
 	aes4 aes r a
 	r bes r b
 	r c8 b a g f e
@@ -406,7 +406,7 @@ musicViolinIMvtI = \relative c'' {
 % mesures 331 à 335
 	aes'2. b,4
 	c4 r r2
-	r4 g''8\f( f e f d e
+	r4 \dynEO #'(0 . 1) g''8\f( f e f d e
 	c d e d c des bes c
 	aes bes g aes f g e g
 % mesures 336 à 340
@@ -442,7 +442,7 @@ musicViolinIMvtI = \relative c'' {
 % mesures 361 à 365
 	g4( f) ees-. des-.
 	des( c) bes-. aes-.
-	g2*2/3( s2*1/3\turn c4) bes
+	\once \slurDashed g2*2/3( s2*1/3\turn c4) bes
 	aes4 r r2
 	f'2( f,4) f-.
 % mesures 366 à 370
@@ -486,7 +486,7 @@ musicViolinIMvtI = \relative c'' {
 	R1\fermata \bar "||" \key f \major
 	R1*2
 	
-	f,,2.\p\<( e8\> f\!)
+	\hairpinShorten #'(0 . 2) f,,2.\p\<( \hairpinShorten #'(-2 . 0) e8\> f\!)
 % mesures 401 à 405
 	f4 r r2
 	g4(~ g16 a g a bes a g a bes c bes c)
@@ -498,9 +498,9 @@ musicViolinIMvtI = \relative c'' {
 	c2 b
 	c8[ r16 b_\pp(] c8[) r16 f,]( e8)[ r16 b]( c8[) r16 aes]
 	g4 r r2
-	R1\fermata \bar "||" \key f \minor 
+	R1\fermata \bar "||" \key f \minor \break
 % mesures 411 à 415
-	f'''2:8\ff f: 
+	\dynEO #'(0 . 2) f'''2:8\ff f: 
 	f: f: 
 	f: f: 
 	f: f: 

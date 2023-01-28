@@ -22,8 +22,8 @@ musicViolaIIMvtI = \relative c {
 % mesures 11 à 15
 	c4~\< c8\> c~\< c\> c(-.\! c-. c-.)
 	bes4~\< bes8\> bes~\< bes\> bes(-.\! bes-. bes-.)
-	bes4~\< bes8\> bes~\< bes\> bes(-.\! bes-. bes-.)
-	a!4~\< a8\> a~\< a\> a(-.\! a-. a-.)
+	bes4~\< bes8\> bes~\< bes\> \once \slurDashed bes(-.\! bes-. bes-.)
+	a!4~\< a8\> a~\< a\> \once \slurDashed a(-.\! a-. a-.)
 	a!1
 % mesures 16 à 20
 	bes
@@ -188,9 +188,9 @@ musicViolaIIMvtI = \relative c {
 		ees( c) c-. c-. c( ees) ees-. ees-.
 		ees( c) c-. c-. c( ees) ees-. ees-.
 % mesures 151 à 155
-		ees( c) c-. c-. c2:8
-		f8( bes,) bes-. bes-. bes2:8
-		f'8( bes,) bes-. bes-. bes2:8
+		\once \slurDashed ees( c) c-. c-. c2:8
+		\once \slurDashed f8( bes,) bes-. bes-. bes2:8
+		\once \slurDashed f'8( bes,) bes-. bes-. bes2:8
 		c2:8 f:
 		c: des:
 % mesures 156 à 160
@@ -494,7 +494,7 @@ musicViolaIIMvtI = \relative c {
 	<c c'>4-.\pp(~ q8 q~-. q q-. q-. q-.)
 	<c bes'>4-.(~ q8 q~-. q q-. q-. q-.)
 % mesures 406 à 410
-	<c aes'>4(-. f-. f-. f-.)
+	\once \slurDashed <c aes'>4(-. f-. f-. f-.)
 	f1
 	g8 r r4 r r8. d16\pp
 	e4 r r2

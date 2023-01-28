@@ -19,8 +19,7 @@
 \include "./00-Common/Symph11_MWV11_LayoutConductors.ily"
 \include "./00-Common/Symph11_MWV11_Shortcuts.ily"
 \include "./00-Common/Symph11_MWV11_NameStaff.ily"
-%\include "./00-Common/Symph11_MWV11_Format_Cond_Mvt1.ily"
-\include "./00-Common/Symph11_MWV11_Format_temp.ily"
+\include "./00-Common/Symph11_MWV11_Format_Cond_Mvt1.ily"
 \include "./00-Common/Symph11_MWV11_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_ViolinI_C.ily"
 \include "./01-Mvt1/m01_v02_music_ViolinII_C.ily"
@@ -48,7 +47,7 @@
 		<<
 			\new StaffGroup <<
 				\new GrandStaff <<
-					\new Staff << 
+					\new Staff <<
 						\new Voice {
 							\formatConductorMvtI
 						}
@@ -75,7 +74,6 @@
 					\new Staff \with { \nameVoiceStaffVMvtI } {
 						\timeMvtI \nameStaffVMvtI 
 						\partCombine \musicCelloMvtI \musicBassoMvtI
-%						\timeMvtI \nameStaffVMvtI \musicBassoMvtI
 					}
 					\new Staff \with { \RemoveAllEmptyStaves } {
 						\timeMvtI \musicBassoApartMvtI
@@ -87,7 +85,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-			system-count = 64
 		}
 	}
 }

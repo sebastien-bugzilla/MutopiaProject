@@ -17,13 +17,13 @@ musicViolinIIMvtI = \relative c' {
 	f2 e)
 	f8 r a,4 r c
 	r c r2
-	r4 r8 bes'( a4) r8 bes,(
+	r4 r8 bes'( a4) r8 \once \slurDashed bes,(
 	a4) r8 bes'( aes4) r
 % mesures 11 à 15
 	f4\<~ f8\> f~\< f\> f(-.\! f-. f-.)
 	e!4\<~ e8\> e~\< e\> e(-.\! e-. e-.)
 	g4\<~ g8\> g~\< g\> g(-.\! g-. g-.)
-	ges4\<~ ges8\> ges~\< ges\> ges(-.\! ges-. ges-.)
+	ges4\<~ ges8\> ges~\< ges\> \once \slurDashed ges(-.\! ges-. ges-.)
 	ges1
 % mesures 16 à 20
 	ges
@@ -189,7 +189,7 @@ musicViolinIIMvtI = \relative c' {
 		c( ees) ees-. ees-. ees( des) des-. des-.
 		c( ees) ees-. ees-. ees( des) des-. des-.
 % mesures 151 à 155
-		c( aes') aes-. aes-. aes aes aes aes
+		\once \slurDashed c( aes') aes-. aes-. aes aes aes aes
 		aes2:8 aes:
 		g: g:
 		c: bes:
@@ -198,7 +198,7 @@ musicViolinIIMvtI = \relative c' {
 		ees4 ees ees'2->
 		ees,4 ees ees'2->
 		r4 ees, ees'2->
-		ees,8( aes) aes-. aes-. aes2:8
+		\once \slurDashed ees,8( aes) aes-. aes-. aes2:8
 		aes: aes:
 % mesures 161 à 165
 		g: g:
@@ -268,7 +268,7 @@ musicViolinIIMvtI = \relative c' {
 	bes aes g f e des c bes
 	aes2\ff c4 b8( des!)
 % mesures 216 à 220
-	c4 b8( des) c4 bes8( des) \bar "||" \key g \minor
+	c4 \once \slurDashed b8( des) c4 \once \slurDashed bes8( des) \bar "||" \key g \minor
 	c4 r ees8 d c bes
 	a! g' fis ees d c bes a
 	g4 r d' cis8( e)
@@ -479,7 +479,7 @@ musicViolinIIMvtI = \relative c' {
 	des4\ff des2-> des4(
 % mesures 391 à 395
 	d) d2-> d4(
-	c) <c, f>2-> q4->~
+	c) <c, f>2-> \once \tieDashed q4->~
 	q q2-> q4->~
 	q q2-> q4->~
 	q c'8 c c4 c

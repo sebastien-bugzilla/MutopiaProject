@@ -20,10 +20,10 @@ musicCelloMvtI = \relative c, {
 	f4 r r r8 e( 
 	f4) r r r8 e 
 % mesures 11 à 15
+	f4~\< f8\> f~\< f\> \once \slurDashed f(-.\! f-. f-.) 
 	f4~\< f8\> f~\< f\> f(-.\! f-. f-.) 
-	f4~\< f8\> f~\< f\> f(-.\! f-. f-.) 
-	e!4~\< e8\> e~\< e\> e(-.\! e-. e-.) 
-	ees4~\< ees8\> ees~\< ees\> ees(-.\! ees-. ees-.) 
+	e!4~\< e8\> e~\< e\> \once \slurDashed e(-.\! e-. e-.) 
+	ees4~\< ees8\> ees~\< ees\> \once \slurDashed ees(-.\! ees-. ees-.) 
 	d!1 
 % mesures 16 à 20
 	des~ 

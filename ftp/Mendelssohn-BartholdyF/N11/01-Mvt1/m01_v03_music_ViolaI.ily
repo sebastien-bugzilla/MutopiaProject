@@ -17,7 +17,7 @@ musicViolaIMvtI = \relative c' {
 	bes
 	c8 r r4 r2
 	r r4 c,
-	r4 r8 g''( f4) r8 g,(
+	r4 r8 g''( f4) r8 \once \slurDashed g,(
 	f4) r8 e'( f4) r
 % mesures 11 à 15
 	aes,4~\< aes8\> aes~\< aes\> aes-.(\! aes-. aes-.)
@@ -32,7 +32,7 @@ musicViolaIMvtI = \relative c' {
 	cis4\<( d!\> cis2)\!~
 	cis4 e!2~( e8 f)
 % mesures 21 à 25
-	f4 fis8.->( g16) g4 gis
+	f4 \once \slurDashed fis8.->( g16) g4 gis
 	a2(\< bes4.\> a8)\!
 	a2 bes
 	a(\< bes4.\> a8)\!
@@ -188,7 +188,7 @@ musicViolaIMvtI = \relative c' {
 		aes aes aes aes aes( g) g-. g-.
 		aes aes aes aes aes( g) g-. g-.
 % mesures 151 à 155
-		aes( ees) ees -. ees-. ees ees ees ees 
+		\once \slurDashed aes( ees) ees -. ees-. ees ees ees ees 
 		f2:8 f:
 		ees: ees:
 		aes: aes:
@@ -218,7 +218,7 @@ musicViolaIMvtI = \relative c' {
 	des r r2
 	r r4 des'-.
 % mesures 176 à 180
-	des-. r r d
+	des-. r r d-.
 	ees-. d-. ees-. d-.
 	ees r r2
 	r r4 bes-.
@@ -477,7 +477,7 @@ musicViolaIMvtI = \relative c' {
 	g\ff g2-> g4(
 % mesures 391 à 395
 	aes) aes2-> aes4~
-	aes <c,, aes'>2-> q4->~
+	aes \once \tieDashed <c,, aes'>2-> q4->~
 	q q2-> q4~->
 	q q2-> q4~->
 	q bes''8 bes bes4 bes
@@ -494,7 +494,7 @@ musicViolaIMvtI = \relative c' {
 	aes,4\pp(~-. aes8 aes~-. aes aes-. aes-. aes-.)
 	g4(~-. g8 g~-. g g-. g-. g-.)
 % mesures 406 à 410
-	aes4(-. aes-. aes-. aes-.)
+	\once \slurDashed aes4(-. aes-. aes-. aes-.)
 	aes2(~ aes8 g aes) g16-. f-.
 	c8 r r4 r8. f16(\pp e!8[) r16 f]
 	e4 r r2 

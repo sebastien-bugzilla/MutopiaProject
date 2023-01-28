@@ -23,7 +23,7 @@ musicViolinIMvtI = \relative c'' {
 	des4~\< des8\> des~\< des\> des-.(\! des-. des-.) 
 	des4~\< des8\> des~\< des\> des-.(\! des-. des-.) 
 	des4~\< des8\> des~\< des\> des-.(\! des-. des-.) 
-	c4~\< c8\> c~\< c\> c-.(\! c-. c-.) 
+	c4~\< c8\> c~\< c\> \once \slurDashed c-.(\! c-. c-.) 
 	c1
 % mesures 16 à 20
 	des(~
@@ -69,8 +69,8 @@ musicViolinIMvtI = \relative c'' {
 		g( aes) e( f)
 % mesures 51 à 55
 		c( des) aes-. bes-.
-		c2. c4 %%%%%%%%%%%%%%%%%
-		f2\p( ees4 des)
+		c2. c4
+		\once \slurDashed f2\p( ees4 des)
 		des2( c4) r
 		bes'2( aes4 g)
 % mesures 56 à 60
@@ -154,7 +154,7 @@ musicViolinIMvtI = \relative c'' {
 % mesures 121 à 125
 		bes4( aes) g-. f-.
 		f( ees) des-. c-.
-		bes2*2/3( s2*1/3\turn ees4) des
+		\once \slurDashed bes2*2/3( s2*1/3\turn ees4) des
 		c4 r r2
 		c'2( c,4) c-.
 % mesures 126 à 130
@@ -266,7 +266,7 @@ musicViolinIMvtI = \relative c'' {
 	bes aes g f e4 r
 	c'2.\ff b8( des!)
 % mesures 216 à 220
-	c4 b8( des) c4 b8( des) \bar "||" \key g \minor
+	c4 \once \slurDashed b8( des) c4 \once \slurDashed b8( des) \bar "||" \key g \minor
 	c4 r ees8 d c bes
 	a! g fis ees d4 r
 	d'2. cis8( e)
@@ -442,7 +442,7 @@ musicViolinIMvtI = \relative c'' {
 % mesures 361 à 365
 	g4( f) ees-. des-.
 	des( c) bes-. aes-.
-	g2*2/3( s2*1/3\turn c4) bes
+	\once \slurDashed g2*2/3( s2*1/3\turn c4) bes
 	aes4 r r2
 	f'2( f,4) f-.
 % mesures 366 à 370

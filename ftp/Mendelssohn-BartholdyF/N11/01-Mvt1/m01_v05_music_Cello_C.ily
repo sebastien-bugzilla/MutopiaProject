@@ -8,7 +8,7 @@ musicCelloMvtI = \relative c, {
 	\clef bass
 	\key f \major
 % mesures 1 à 5
-	\partCombineApart f2(\p\<^\vc e4.\> f8\!) 
+	\partCombineApart \hairpinShorten #'(-0.3 . -0.9) f2(\p\<-\offset X-offset -3.5 ^\vc \hairpinShorten #'(0.9 . 0) e4.\> f8\!) 
 	f4 r r2 
 	f2(\< e4.\> f8\!) 
 	f4 r r2 
@@ -20,32 +20,32 @@ musicCelloMvtI = \relative c, {
 	f4 r r r8 e( 
 	f4) r r r8 e 
 % mesures 11 à 15
-	f4~\< f8\> f~\< f\> f(-.\! f-. f-.) 
-	f4~\< f8\> f~\< f\> f(-.\! f-. f-.) 
-	e!4~\< e8\> e~\< e\> e(-.\! e-. e-.) 
-	ees4~\< ees8\> ees~\< ees\> ees(-.\! ees-. ees-.) 
+	\hairpinShorten #'(0 . 0.7) f4~\< \hairpinShorten #'(-0.7 . 0) f8\> \hairpinShorten #'(0 . -0.4) f~\< \hairpinShorten #'(0.4 . 0) f\> \once \slurDashed f(-.\! f-. f-.) 
+	\hairpinShorten #'(0 . 0.7) f4~\< \hairpinShorten #'(-0.7 . 0) f8\> \hairpinShorten #'(0 . -0.4) f~\< \hairpinShorten #'(0.4 . 0) f\> f(-.\! f-. f-.) 
+	\hairpinShorten #'(0 . 0.7) e!4~\< \hairpinShorten #'(-0.7 . 0) e8\> \hairpinShorten #'(0 . -0.4) e~\< \hairpinShorten #'(0.4 . 0) e\> \once \slurDashed e(-.\! e-. e-.) 
+	\hairpinShorten #'(0 . 0.7) ees4~\< \hairpinShorten #'(-0.7 . 0) ees8\> \hairpinShorten #'(0 . -0.4) ees~\< \hairpinShorten #'(0.4 . 0) ees\> \once \slurDashed ees(-.\! ees-. ees-.) 
 	d!1 
 % mesures 16 à 20
 	des~ 
 	des 
-	ges2(\< f4.\> ges8)\! 
-	ges2(\< f4.\> ges8)\! 
-	ges2(\< g4.\> aes8)\! 
+	\hairpinShorten #'(0 . 1.2) ges2(\< \hairpinShorten #'(-1.2 . 0) f4.\> ges8)\! 
+	\hairpinShorten #'(0 . 1.2) ges2(\< \hairpinShorten #'(-1.2 . 0) f4.\> ges8)\! 
+	\hairpinShorten #'(0 . 0.5) ges2(\< \hairpinShorten #'(-0.5 . 0) g4.\> aes8)\! 
 % mesures 21 à 25
 	aes4 a8.->( bes16) bes4 b8.( c16) 
 	c2(\< e4.\> f8)\! 
 	f4 r r2 
 	f2(\< e4.\> f8)\! 
-	f2( b 
+	\shape #'((0 . -1)(0 . -1)(0 . -1)(0 . -1)) Slur f2( b 
 % mesures 26 à 30
 	bes! a) 
 	bes bes,~
-	bes1~_\semprepp
+	bes1~-\offset X-offset 7 _\semprepp
 	bes4 c( des d 
 	c4) r r2 
 % mesures 31 à 35
 	bes'4~( bes16 aes bes aes g aes bes aes g f g f) 
-	e( f g f e f e f e f g f e f e f 
+	\shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur e( f g f e f e f e f g f e f e f 
 	e)[ r8 d!16]( e16) r8. r2 
 	R1 
 	r2 r4 c\p 
@@ -131,7 +131,7 @@ musicCelloMvtI = \relative c, {
 		
 % mesures 101 à 105
 		
-		r2 r4 ees-.\p^\vc
+		r2 g4\rest ees-.\p-\offset X-offset -4 ^\vc
 		aes-. r r ees-. 
 		aes-. r r8 ees-. f-. g-.  
 		aes-. bes-. c-. bes-. aes-. g-. f-. ees-.  
@@ -167,7 +167,7 @@ musicCelloMvtI = \relative c, {
 		ees~ 
 % mesures 131 à 135
 		ees  \partCombineAutomatic
-		aes2:8\ff aes: 
+		\aIIXoffset #-7.5 aes2:8\ff aes: 
 		aes: aes: 
 		aes: c: 
 		bes: ees,: 
@@ -241,8 +241,8 @@ musicCelloMvtI = \relative c, {
 % mesures 191 à 195
 	aes-. r r8 aes-. bes-. c-.  
 	d-. ees-. f-. ees-. d-. c-. b-. a-.  
-	\partCombineApart g!4 r r2 \partCombineAutomatic \oneVoice
-	r4 c\f c' r 
+	g!4 r r2 
+	r4 c\f c' r \partCombineAutomatic \oneVoice
 	r bes, bes' r 
 % mesures 196 à 200
 	r a, a' r 
@@ -373,7 +373,7 @@ musicCelloMvtI = \relative c, {
 % mesures 301 à 305
 	
 	
-	r2 r4 c'\f-.
+	r2 r4 \aIIXoffset #-1.5  c'\f-.
 	f-. r r c-. 
 	f-. r r8 c-. d-. e-.  
 % mesures 306 à 310
@@ -413,7 +413,7 @@ musicCelloMvtI = \relative c, {
 	
 	
 % mesures 336 à 340
-	\partCombineApart r2 r4 c-.\p^\vc
+	\partCombineApart r2 r4 c-.\p-\offset X-offset -4 ^\vc
 	f-. r r c-. 
 	f-. r r8 c-. d-. e-.  
 	f-. g-. aes-. g-. f-. ees!-. des!-. c-.  
@@ -447,7 +447,7 @@ musicCelloMvtI = \relative c, {
 	c) 
 	c,( 
 	<<des {s4\< s s\! s}>>
-	<<ees1 {s4\> s s\! s}>> 
+	<<ees1 {\hairpinShorten #'(0 . -2) s4\> s s\! s}>> 
 % mesures 366 à 370
 	des1\!) 
 	a'( 
@@ -487,23 +487,23 @@ musicCelloMvtI = \relative c, {
 % mesures 396 à 400
 	c r e-> r 
 	R1\fermata  \bar "||" \key f \major 
-	\partCombineApart f,,2(\<^\vc e4.\> f8)\! 
+	\partCombineApart f,,2(\<-\offset X-offset -3.5 ^\vc e4.\> f8)\! 
 	f4( c') r2 
 	f,1  
 % mesures 401 à 405
 	f~ 
 	f~ 
 	f4 r r r8 e \partCombineAutomatic
-	\oneVoice f4-.(~\pp f8 f~-. f f-. f-. f-.) 
+	\oneVoice \aIIOmit f4-.(~\pp f8 f~-. f f-. f-. f-.) 
 	f4-.(~ f8 f~-. f f-. f-. f-.) 
 % mesures 406 à 410
-	f2( ees) 
-	\afterGrace 15/16 des1\trill {c16[ des]}  
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f2( ees) 
+	\afterGrace 16/17 des1\trill {c16[ des]}  
 	c8 r r4 r r8. b'16\pp 
 	c4 r des2 
 	ees,1\espressivo\fermata \key f \minor \bar "||" \partCombineAutomatic
 % mesures 411 à 415
-	f'4\ff r r c 
+	\aIIXoffset #-7 f'4\ff r r c 
 	f r r c 
 	f r r8 c d e 
 	f g aes g f ees! des! c  
