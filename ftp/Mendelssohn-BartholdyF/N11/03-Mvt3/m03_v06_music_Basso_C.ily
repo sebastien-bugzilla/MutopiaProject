@@ -40,7 +40,7 @@ musicBassoMvtIII = \relative c {
 % mesures 26 à 30
 	ees, r ees r ees r
 	ees r ees r ees r
-	ees4 r r
+	ees4-\offset X-offset 0.5 _\cb r r
 	R2.*3
 	
 % mesures 31 à 35
@@ -150,13 +150,9 @@ musicBassoMvtIII = \relative c {
 	bes r a r aes r
 	g r g' r ges r
 	f r d r ees r
-	r aes, r aes' r g
+	s2.*6
 % mesures 121 à 125
-	r f r ees r aes,
-	bes4 c a
-	bes8 r bes r bes r
-	ees, r ees r ees r
-	ees r ees r ees r
+	
 % mesures 126 à 130
 	s2.*5
 % mesures 131 à 135
@@ -165,8 +161,15 @@ musicBassoMvtIII = \relative c {
 musicBassoApartMvtIII = \relative c {
 	\clef bass
 	\key ees \major
-% mesures 1 à 125
-	s2.*125
+% mesures 1 à 120
+	s2.*119
+	r8 aes r aes' r g
+% mesures 121 à 125
+	r f r ees r aes,
+	bes4 c a
+	bes8 r bes r bes r
+	ees, r ees r ees r
+	ees r ees r ees r
 % mesures 126 à 130
 	ees8 r ees r ees r
 	ees r ees r ees r

@@ -40,7 +40,7 @@ musicCelloMvtIII = \relative c {
 % mesures 26 à 31
 	ees, r ees r ees r
 	ees r ees r ees r
-	\partCombineApart ees^\vc g'( d ees g, aes)
+	\partCombineApart \whiteoutMarkup ees-\offset X-offset -2.5 ^\vc g'( d ees g, aes)
 	bes2 r4
 	r8 aes'8( e f aes, bes)
 	c4 r r \partCombineAutomatic
@@ -50,7 +50,7 @@ musicCelloMvtIII = \relative c {
 	
 	
 % mesures 36 à 40
-	r8 f(\p ges f ees des)
+	r8 \aIIXoffset #-3 f(\p ges f ees des)
 	c( des ees e f e)
 	f f( ges f ees des)
 	c( des ees e f e)
@@ -150,7 +150,7 @@ musicCelloMvtIII = \relative c {
 	bes r a r aes r
 	g r g' r ges r
 	f r d r ees r
-	r aes, r aes' r g
+	\oneVoice r \aIIXoffset #-3 aes, r aes' r g
 % mesures 121 à 125
 	r f r ees r aes,
 	bes4 c a
@@ -158,7 +158,7 @@ musicCelloMvtIII = \relative c {
 	ees, r ees r ees r
 	ees r ees r ees r
 % mesures 126 à 130
-	\oneVoice ees2.~
+	ees2.~
 	ees~
 	ees8 g'( d ees g, aes)
 	bes4. d16-. c-. bes( aes) g-. f-.
