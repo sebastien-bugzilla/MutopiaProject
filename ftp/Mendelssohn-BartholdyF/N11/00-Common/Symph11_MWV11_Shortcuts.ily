@@ -94,6 +94,21 @@ beamOffset = #(define-music-function
 
 aIIOmit = \once \omit Voice.CombineTextScript
 
+whiteoutMarkup = {
+	\once \override Hairpin.layer = #4
+	\once \override TextScript.layer = #3
+	\once \override TextScript.whiteout = ##t
+	\once \override TextScript.whiteout-style = #'outline
+}
+
+beamGap = #(define-music-function
+	(gap)
+	(number?)
+	#{
+		\once \override Beam.auto-knee-gap = #gap
+	#}
+)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -115,15 +130,6 @@ aIIOmit = \once \omit Voice.CombineTextScript
 %		\once \override Voice.Arpeggio.padding = #padding
 %	#}
 %)
-
-%beamGap = #(define-music-function
-%	(gap)
-%	(number?)
-%	#{
-%		\once \override Beam.auto-knee-gap = #gap
-%	#}
-%)
-
 
 %beamLeftTwoRightOne = {
 %	\set stemLeftBeamCount = #2
@@ -447,12 +453,6 @@ aIIOmit = \once \omit Voice.CombineTextScript
 %}
 
 
-%whiteoutMarkup = {
-%	\once \override Hairpin.layer = #4
-%	\once \override TextScript.layer = #3
-%	\once \override TextScript.whiteout = ##t
-%	\once \override TextScript.whiteout-style = #'outline
-%}
 
 %whiteoutDynamic = {
 %	\once \override DynamicText.whiteout = ##t

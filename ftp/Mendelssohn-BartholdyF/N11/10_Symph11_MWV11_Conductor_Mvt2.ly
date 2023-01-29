@@ -19,17 +19,17 @@
 \include "./00-Common/Symph11_MWV11_LayoutConductors.ily"
 \include "./00-Common/Symph11_MWV11_Shortcuts.ily"
 \include "./00-Common/Symph11_MWV11_NameStaff.ily"
-%\include "./00-Common/Symph11_MWV11_Format_Cond_Mvt2.ily"
+\include "./00-Common/Symph11_MWV11_Format_Cond_Mvt2.ily"
 \include "./00-Common/Symph11_MWV11_Tempi.ily"
-\include "./02-Mvt2/m02_v01_music_ViolinI.ily"
-\include "./02-Mvt2/m02_v02_music_ViolinII.ily"
-\include "./02-Mvt2/m02_v03_music_ViolaI.ily"
-\include "./02-Mvt2/m02_v04_music_ViolaII.ily"
+\include "./02-Mvt2/m02_v01_music_ViolinI_C.ily"
+\include "./02-Mvt2/m02_v02_music_ViolinII_C.ily"
+\include "./02-Mvt2/m02_v03_music_ViolaI_C.ily"
+\include "./02-Mvt2/m02_v04_music_ViolaII_C.ily"
 \include "./02-Mvt2/m02_v05_music_Cello_C.ily"
 \include "./02-Mvt2/m02_v06_music_Basso_C.ily"
-\include "./02-Mvt2/m02_v07_music_Timpani.ily"
-\include "./02-Mvt2/m02_v08_music_Triangel.ily"
-\include "./02-Mvt2/m02_v09_music_Becken.ily"
+\include "./02-Mvt2/m02_v07_music_Timpani_C.ily"
+\include "./02-Mvt2/m02_v08_music_Triangel_C.ily"
+\include "./02-Mvt2/m02_v09_music_Becken_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -53,10 +53,10 @@
 		<<
 			\new StaffGroup <<
 				\new GrandStaff <<
-					\new Staff << 
-%						\new Voice {
-%							\formatConductorMvtII
-%						}
+					\new Staff <<
+						\new Voice {
+							\formatConductorMvtII
+						}
 						\new Voice {
 							\tempiMvtII
 						}
@@ -79,7 +79,6 @@
 				\new Staff \with { \nameVoiceStaffVMvtII } {
 					\timeMvtII \nameStaffVMvtII 
 					\partCombine \musicCelloMvtII \musicBassoMvtII
-%					\musicBassoMvtII 
 				}
 			>>
 			\new Staff \with {\RemoveEmptyStaves} { 

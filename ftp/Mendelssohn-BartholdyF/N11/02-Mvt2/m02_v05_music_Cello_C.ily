@@ -23,12 +23,12 @@ musicCelloMvtII = \relative c {
 % mesures 11 à 15
 	d,4 r
 	a r
-	\partCombineApart c'(^\vc e)
+	\partCombineApart \whiteoutMarkup c'(-\offset X-offset -3 ^\vc e)
 	f( bes,) \partCombineAutomatic
 	a g
 % mesures 16 à 20
 	f c
-	\partCombineApart a'8-.[^\vc a-. a-.] r
+	\partCombineApart a'8-.[-\offset X-offset -3 ^\vc a-. a-.] r
 	g8-.[ g-. g-.] r
 	f8-.[ f-. f-.] r
 	e8-.[ e-. e-.] r \partCombineAutomatic
@@ -113,7 +113,7 @@ musicCelloMvtII = \relative c {
 % mesures 86 à 90
 	f: 
 	f:
-	\partCombineApart c'2~^\vc
+	\partCombineApart \whiteoutMarkup c'2~-\offset X-offset -3 ^\vc
 	c~
 	c~
 % mesures 91 à 95
@@ -127,7 +127,7 @@ musicCelloMvtII = \relative c {
 	bes aes g f e8 g
 	c, r bes' r
 	a r c r
-	\partCombineApart f,^\vc[ f,\p f f]
+	\partCombineApart \whiteoutMarkup f,-\offset X-offset -2 ^\vc[ f,\p f f]
 % mesures 101 à 105
 	f4 r 
 	f''2~
@@ -137,7 +137,7 @@ musicCelloMvtII = \relative c {
 % mesures 106 à 112
 	f' \partCombineAutomatic r a,,\p r
 	bes8 r c r
-	\partCombineApart f'2(^\vc
+	\partCombineApart \whiteoutMarkup f'2(-\offset X-offset -3.1 ^\vc
 	e
 	ees
 % mesures 111 à 115
@@ -177,7 +177,7 @@ musicCelloMvtII = \relative c {
 	d' f a a,
 	d[ a d] r
 % mesures 141 à 145
-	\partCombineApart f,4^\vc\p bes
+	\partCombineApart f,4-\offset X-offset -4 ^\vc\p bes
 	a e
 	f c
 	f c'8 r

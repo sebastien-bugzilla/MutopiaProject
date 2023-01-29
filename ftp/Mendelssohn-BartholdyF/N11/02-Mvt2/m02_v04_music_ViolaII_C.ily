@@ -41,7 +41,7 @@ musicViolaIIMvtII = \relative c' {
 % mesures 26 à 30
 	f( g)
 	\once \slurDashed c( bes)
-	a8( b c) r
+	\shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -0.3)) Slur a8( b c) r
 	f,8-.[ f-. f-.] r
 	a,-.[ g'-. g-.] r
 % mesures 31 à 35
@@ -89,7 +89,7 @@ musicViolaIIMvtII = \relative c' {
 % mesures 66 à 70
 	c8 r c, r
 	g' r g, r
-	g4 r8 ees''16\f d
+	g4 r8 \dynEO #'(0 . 1.8) ees''16\f d
 	c bes a g fis8 a
 	d,16 d d d ees( d) d-. d-.
 % mesures 71 à 75
@@ -118,7 +118,7 @@ musicViolaIIMvtII = \relative c' {
 	a:
 % mesures 91 à 95
 	bes:
-	a4 r8 ees''16\f d
+	a4 r8 \dynEO #'(-1.3 . 2) ees''16\f d
 	c bes a g fis8 a
 	d, r fis, r
 	g r c r
@@ -131,7 +131,7 @@ musicViolaIIMvtII = \relative c' {
 % mesures 101 à 105
 	a8([ f g bes]) \slurSolid
 	a4. f16( g)
-	a8[(\< f g bes)]
+	a8[(-\tweak rotation #'(-1 1 0) \< f g bes)]
 	a4. f16( g)\!
 	a8[( f g bes)]
 % mesures 106 à 110
@@ -142,7 +142,7 @@ musicViolaIIMvtII = \relative c' {
 	a:
 % mesures 111 à 115
 	bes:
-	c4 r8 c16\f d
+	c4 r8 c16-\offset X-offset -1 \f d
 	e f g a bes c d, e
 	f8 r f r
 	c r c r

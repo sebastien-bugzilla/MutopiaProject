@@ -65,7 +65,7 @@ musicViolinIIMvtII = \relative c'' {
 % mesures 46 à 50
 	c8 c d16( c) b( c)
 	d8 d e16( d) c( d)
-	e4( g8) g,,16(-. a-. 
+	e4( \beamGap #1 g8) g,,16(-. a-. 
 	b-. c-. d-. e-. f-. g-. a-. b)-. 
 	c8 c d16( c) b( c)
 % mesures 51 à 55
@@ -84,7 +84,7 @@ musicViolinIIMvtII = \relative c'' {
 	b-. c-. d-. e-. f-. g-. a-. b)-. 
 	c8 c d16( c) b( c)
 	d8 d e16( d) c( d)
-	e4 g8 g,,16\f a
+	e4 \beamGap #1 g8 g,,16\f a
 	b c d e f g a b
 % mesures 66 à 70
 	c8 c d16( c) b-. c-.
@@ -142,7 +142,7 @@ musicViolinIIMvtII = \relative c'' {
 	r8 f g16( f) e( f)
 % mesures 111 à 115
 	g8 g a16( g) f( g)
-	a4( c8) c,16\f d
+	a4( \beamOffset #'(-0.5 . 0) c8) c,16\f d
 	e f g a bes c d e
 	f8 f, g16 f e f
 	g8 g a16 g f g

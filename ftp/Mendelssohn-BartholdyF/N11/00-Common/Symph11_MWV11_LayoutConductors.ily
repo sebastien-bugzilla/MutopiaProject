@@ -4,10 +4,10 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 15) %16
+#(set-global-staff-size 15) %15
 %#(ly:set-option 'debug-skylines #t)
 \layout {
-	#(layout-set-staff-size 15) %16
+	#(layout-set-staff-size 15) %15
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.markFormatter = #format-mark-alphabet
 	\context {
@@ -27,6 +27,11 @@
 		\override Fingering.staff-padding = #'()
 		%\override Script.staff-padding = ##f
 		\override MultiMeasureRest.space-increment = 1
+%		\RemoveAllEmptyStaves
+	}
+	\context {
+		\RhythmicStaff
+%		\RemoveAllEmptyStaves
 	}
 	\context {
 		\Score
