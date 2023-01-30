@@ -88,7 +88,7 @@ musicViolaIMvtIV = \relative c'' {
 	}
 	\repeat volta 2 {
 		r8 r4 r8
-		c'2.(~\p
+		\dynEO #'(0 . 1) c'2.(~\p
 		c4. a)
 % mesures 61 à 65
 		fis2.
@@ -97,9 +97,9 @@ musicViolaIMvtIV = \relative c'' {
 		g8 r r r4 r8
 		g2.\(~
 % mesures 66 à 70
-		g2.*1/3(\< s2.*2/3\>
-		a4.)\< g\)\>
-		c2.~\!
+		<< g2.( {s8\< s s s\> s s\!} >>
+		\hairpinShorten #'(0 . 1.3) a4.)\< << g\) {\hairpinShorten #'(-1.3 . 0) s8\> s s\! } >>
+		c2.~
 		c4.~ c8 r4
 		f,8( e f g e f)
 % mesures 71 à 75
@@ -133,5 +133,5 @@ musicViolaIMvtIV = \relative c'' {
 % mesures 86 à 88
 	c4 c'8\p\< c( b) b-.
 	b( bes) bes-. bes(\! a!) a-.
-	a!([ aes)] \bar "||" \key f \minor \menuettodacapo
+	a!([ aes)] \bar "||" \key f \minor s8
 }

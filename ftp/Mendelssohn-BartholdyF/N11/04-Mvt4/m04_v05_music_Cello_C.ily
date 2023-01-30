@@ -8,7 +8,7 @@ musicCelloMvtIV = \relative c {
 	\clef bass
 	\key f \minor
 	\repeat volta 2 {
-		\partial 2 f8\f aes g f
+		\partial 2 \aIIXoffset #-3.5 f8\f aes g f
 % mesures 1 à 5
 		c'4 c,8 \once \slurDashed e( d) c
 		f4 f8 ees!4 des8
@@ -67,7 +67,7 @@ musicCelloMvtIV = \relative c {
 		f r f'\f des' c b
 		c, r r c\p r r
 % mesures 46 à 50
-		f, r \key f \major \markTrio
+		f, r \key f \major \markTrio \break
 	}
 	\repeat volta 2 {
 		\partCombineApart r8 c^\vc r r \partCombineAutomatic
@@ -79,7 +79,7 @@ musicCelloMvtIV = \relative c {
 		
 		
 		
-		c'2.~\p
+		\aIIXoffset #-4 c'2.~\p
 		c~
 % mesures 56 à 60
 		c~
@@ -97,7 +97,7 @@ musicCelloMvtIV = \relative c {
 		\partCombineApart r4 r8 c\p r r \partCombineAutomatic
 		R2.
 % mesures 66 à 70
-		\partCombineApart r4 r8 c,\f r r \partCombineAutomatic
+		\partCombineApart r4 r8 \dynEO #'(0 . -2) c,\f r r \partCombineAutomatic
 		R2.*7
 		
 		
@@ -106,7 +106,7 @@ musicCelloMvtIV = \relative c {
 		
 		
 		
-		f''4.(\p^\vc e
+		\shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur \whiteoutMarkup f''4.(\p-\offset X-offset -3.8 ^\vc e
 		ees des)
 % mesures 76 à 80
 		c8 r r r4 r8
@@ -123,7 +123,7 @@ musicCelloMvtIV = \relative c {
 		}
 	}
 	R2.
-	\partCombineApart r8 r8 c^\vc\pp c( f) f-.
+	\partCombineApart r8 r8 c^\vc-\offset X-offset 1 \pp c( f) f-.
 % mesures 81 à 85
 	f( e!) r r4 r8
 	r8 r c c( f) f-.
@@ -133,5 +133,5 @@ musicCelloMvtIV = \relative c {
 % mesures 86 à 88
 	c4 c8\p\< c( b) b-.
 	b( bes) bes-. bes(\! a!) a-.
-	a![( aes]) \bar "||" \key f \minor \menuettodacapo
+	a![( aes]) \bar "||" \key f \minor s
 }

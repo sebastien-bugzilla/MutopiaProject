@@ -106,7 +106,7 @@ musicBassoMvtIV = \relative c {
 		
 		
 		
-		f,2.~\p_\cb
+		f,2.~-\offset X-offset 0.5 \p-\offset X-offset -3.8 _\cb
 		f~
 % mesures 76 à 80
 		f~
@@ -133,5 +133,5 @@ musicBassoMvtIV = \relative c {
 % mesures 86 à 88
 	R
 	R
-	r4 \bar "||" \key f \minor
+	r4 \bar "||" \key f \minor s8
 }
