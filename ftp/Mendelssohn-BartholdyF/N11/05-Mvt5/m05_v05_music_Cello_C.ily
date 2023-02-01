@@ -9,7 +9,7 @@ musicCelloMvtV = \relative c {
 	\key f \minor
 	\repeat volta 2 {
 % mesures 1 à 5
-		f2\f aes4 bes
+		\aIIXoffset #-4 f2\f aes4 bes
 		c r r2
 		c, g'4 a 
 		bes r r2
@@ -193,7 +193,7 @@ musicCelloMvtV = \relative c {
 			g r r2
 		}
 		{
-			\partCombineApart g,2\p^\vc g'4 g
+			\partCombineApart \dynEO #'(0 . -1) g,2\p-\offset X-offset -4 ^\vc g'4 g
 			g r r2
 		}
 	}
@@ -354,14 +354,14 @@ musicCelloMvtV = \relative c {
 	
 	\bar "||" \key f \minor
 % mesures 291 à 295
-	\partCombineApart g2\p^\vc g,4-. g-.
+	\partCombineApart g2-\offset X-offset -0.5 \p-\offset X-offset -4.5 ^\vc g,4-. g-.
 	g1~
 	g~
 	g~
 	g~
 % mesures 296 à 300
 	g2 g4-. g-.
-	g1\pp~
+	\dynEO #'(0 . -2) g1\pp~
 	g
 	aes~
 	aes~
@@ -381,13 +381,13 @@ musicCelloMvtV = \relative c {
 	c,~
 	c~
 	c~
-	c~^\dimmarkup
+	\markEO #'(0 . -2.3) c~^\dimmarkup
 	c~
 % mesures 316 à 320
 	c~
-	c~\pp
+	\dynEO #'(0 . -2) c~\pp
 	c
-	r2 <c g'>4-.\p q-.
+	r2 \dynEO #'(-0.9 . -2) <c g'>4-.\p q-.
 	q1~
 % mesures 321 à 325
 	q4 r q-. q-.
@@ -396,7 +396,7 @@ musicCelloMvtV = \relative c {
 	q1~^\crescmarkup
 	q2 c4-. c-.
 % mesures 326 à 330
-	c2 c4-.\f c-.
+	c2 \dynEO #'(0 . -2) c4-.\f c-.
 	c2 \partCombineAutomatic c'4-.\f\< c-.
 	c2 c4-. c-.\!
 	c2 c'4-.\ff c-.
@@ -566,7 +566,7 @@ musicCelloMvtV = \relative c {
 % mesures 466 à 470
 	r2 a4 r
 	r2 bes4 r
-	r2 g4 r
+	\oneVoice r2 g4 r
 	r2 aes4\p r
 	r2 e4_\dimmarkup r
 % mesures 471 à 477
@@ -580,7 +580,7 @@ musicCelloMvtV = \relative c {
 	c
 	des2\f des''4 des
 	des2 r
-	des,2\ff des'4 des
+	des,2\ff des'4 des 
 % mesures 481 à 485
 	des2 r
 	r aes4 r

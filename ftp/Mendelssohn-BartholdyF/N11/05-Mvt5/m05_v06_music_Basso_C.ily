@@ -566,21 +566,21 @@ musicBassoMvtV = \relative c {
 % mesures 466 à 470
 	r2 a4 r
 	r2 bes4 r
-	r2 g4 r
-	r2 aes4\p r
-	r2 e4_\dimmarkup r
-% mesures 471 à 477
-	r2 f4 r
-	r2 c4\pp r
-	r2 c4 r
 	s1
+	s
+	s
+% mesures 471 à 477
+	s
+	s
+	s
+	s
 	s
 % mesures 478 à 480
 	s
 	s
-	s2 des'4 des
-	des2 r
-	des,2\ff des'4 des
+	s
+	s
+	s
 % mesures 481 à 485
 	des2 r
 	r aes4 r
@@ -619,11 +619,21 @@ musicBassoMvtV = \relative c {
 musicBassoApartMvtV = \relative c {
 	\clef bass
 	\key f \minor
-% mesures 1 à 477
-	s1*475
+% mesures 1 à 467
+	s1*469
+	r2 g'4 r
+	r2 aes4\p r
+	r2 e4_\dimmarkup r
+% mesure 471 à 475
+	r2 f4 r
+	r2 c4\pp r
 	r2 c4 r
 	r2 c4 r
 	r2 c4 r
+% mesure 476 à 480
 	r2 c4 r
-	des2\f s2
+	r2 c4 r
+	des2\f des'4 des
+	des2 r
+	des,2\ff des'4 des
 }

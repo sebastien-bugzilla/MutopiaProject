@@ -109,6 +109,16 @@ beamGap = #(define-music-function
 	#}
 )
 
+markEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TextScript.layer = #3
+		\once \override TextScript.extra-offset = #offset
+		\once \override TextScript.whiteout = ##t
+		\once \override TextScript.whiteout-style = #'outline
+	#}
+)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -202,17 +212,6 @@ beamGap = #(define-music-function
 %%	\override Beam.length = #7
 %	\unset fontSize
 %}
-
-%markEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TextScript.layer = #3
-%		\once \override TextScript.extra-offset = #offset
-%		\once \override TextScript.whiteout = ##t
-%		\once \override TextScript.whiteout-style = #'outline
-%	#}
-%)
 
 %mmrPos = #(define-music-function
 %	(position)

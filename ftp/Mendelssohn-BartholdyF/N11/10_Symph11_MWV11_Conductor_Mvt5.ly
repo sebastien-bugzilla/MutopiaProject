@@ -19,12 +19,12 @@
 \include "./00-Common/Symph11_MWV11_LayoutConductors.ily"
 \include "./00-Common/Symph11_MWV11_Shortcuts.ily"
 \include "./00-Common/Symph11_MWV11_NameStaff.ily"
-%\include "./00-Common/Symph11_MWV11_Format_Cond_Mvt5.ily"
+\include "./00-Common/Symph11_MWV11_Format_Cond_Mvt5.ily"
 \include "./00-Common/Symph11_MWV11_Tempi.ily"
-\include "./05-Mvt5/m05_v01_music_ViolinI.ily"
-\include "./05-Mvt5/m05_v02_music_ViolinII.ily"
-\include "./05-Mvt5/m05_v03_music_ViolaI.ily"
-\include "./05-Mvt5/m05_v04_music_ViolaII.ily"
+\include "./05-Mvt5/m05_v01_music_ViolinI_C.ily"
+\include "./05-Mvt5/m05_v02_music_ViolinII_C.ily"
+\include "./05-Mvt5/m05_v03_music_ViolaI_C.ily"
+\include "./05-Mvt5/m05_v04_music_ViolaII_C.ily"
 \include "./05-Mvt5/m05_v05_music_Cello_C.ily"
 \include "./05-Mvt5/m05_v06_music_Basso_C.ily"
 %###############################################################################
@@ -50,10 +50,10 @@
 		<<
 			\new StaffGroup <<
 				\new GrandStaff <<
-					\new Staff << 
-%						\new Voice {
-%							\formatConductorMvtV
-%						}
+					\new Staff <<
+						\new Voice {
+							\formatConductorMvtV
+						}
 						\new Voice {
 							\tempiMvtV
 						}
