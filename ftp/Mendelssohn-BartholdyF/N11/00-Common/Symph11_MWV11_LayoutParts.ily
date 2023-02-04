@@ -46,4 +46,5 @@ layoutPart = \layout {
 	\compressMMRests
 	\compressEmptyMeasures
 	\set Voice.restNumberThreshold = #0
+	\set Score.barNumberVisibility = #first-bar-number-invisible-save-broken-bars
 }

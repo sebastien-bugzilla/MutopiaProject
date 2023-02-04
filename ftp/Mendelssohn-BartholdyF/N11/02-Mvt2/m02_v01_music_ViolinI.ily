@@ -84,7 +84,7 @@ musicViolinIMvtII = \relative c'' {
 	b-. c-. d-. e-. f-. g-. a-. b)-. 
 	c2
 	\afterGrace 15/16 b\trill {a16[ b!]}
-	c4 r8 g,,16\f a
+	c4 r8 g,,16-\tweak extra-offset #'(-2.2 . 2) \f a
 	b c d e f g a b
 % mesures 66 à 70
 	c8 r <e c'> r
@@ -137,7 +137,7 @@ musicViolinIMvtII = \relative c'' {
 % mesures 106 à 110
 	c a'16(\f-. g-. f-. e-. d-. c-. 
 	bes-. a-. g-. f-. e-. f-. g-. e)-. 
-	f4 r8 c16(-.\p d-. 
+	f4 r8 c16(-.-\offset X-offset -1 \p d-. 
 	e-. f-. g-. a-. bes-. c-. d-. e)-. 
 	f2(~
 % mesures 111 à 115

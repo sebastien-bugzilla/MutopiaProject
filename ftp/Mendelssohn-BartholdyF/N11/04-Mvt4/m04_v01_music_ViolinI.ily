@@ -22,7 +22,7 @@ musicViolinIMvtIV = \relative c'' {
 		f g aes) c,( des bes)
 		aes4 r8 r4 r8
 % mesures 11 à 15
-		r r bes\p bes( c des)
+		r r bes-\offset X-offset 0.4 \p bes( c des)
 		ees2.~
 		ees8 des( c bes aes g)
 		aes r
@@ -69,7 +69,7 @@ musicViolinIMvtIV = \relative c'' {
 % mesures 46 à 50
 		f r \key f \major
 	}
-	\repeat volta 2 { \markTrio
+	\repeat volta 2 { \markTrio \break
 		r r4 r8
 		c'4.\p( d)
 		c( a'8 g f)
@@ -93,12 +93,12 @@ musicViolinIMvtIV = \relative c'' {
 % mesures 61 à 65
 		d ees d c d c)
 		bes r r r4 r8
-		c4.(\< << d) {s8\> s s\!}>>
+		\hairpinShorten #'(0 . 1.3) c4.(\< << d) {\hairpinShorten #'(-1.3 . 0) s8\> s s\!}>>
 		c8 r r r4 r8
-		c4.(\< des\>)
+		\hairpinShorten #'(0 . 1.3) c4.(\< << des) {\hairpinShorten #'(-1.3 . 0) s8\> s s\!} >>
 % mesures 66 à 70
-		c2.*1/3\((\< s2.*2/3\>
-		c4.\<) d!\>\)
+		<< c2.\(( {\hairpinShorten #'(0 . 0) s8\< s s \hairpinShorten #'(0 . -1) s\> s s\!}>>
+		\hairpinShorten #'(0 . 1.3) c4.\<) << d!\) {\hairpinShorten #'(-1.3 . 0) s8\> s s\!} >>
 		c4.(\! a'8 g f)
 		e( f d c d bes)
 		a r r r4 r8
@@ -132,6 +132,6 @@ musicViolinIMvtIV = \relative c'' {
 	f( e!)\! e-. e(\p f) f-.
 % mesures 86 à 88
 	f( e!) r r4 r8
-	R2.
+	\mmrnDown R2.
 	r4 \bar "||" \key f \minor \menuettodacapo 
 }

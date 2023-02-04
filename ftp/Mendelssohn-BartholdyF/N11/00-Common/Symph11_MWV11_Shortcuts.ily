@@ -120,6 +120,20 @@ markEO = #(define-music-function
 	#}
 )
 
+omitMMRN = \omit MultiMeasureRestNumber
+
+tempoExtraOffset = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -221,10 +235,6 @@ markEO = #(define-music-function
 %	#}
 %)
 
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
-
 %mmrLength = #(define-music-function
 %	(length)
 %	(number?)
@@ -242,9 +252,6 @@ markEO = #(define-music-function
 %)
 
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
-
-%omitMMRN = \omit MultiMeasureRestNumber
-
 
 %markXoffset = #(define-music-function
 %	(offset)
@@ -333,13 +340,6 @@ markEO = #(define-music-function
 %	#}
 %)
 
-%tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
 %tempoEO = #(define-music-function
 %	(offset)
 %	(pair?)

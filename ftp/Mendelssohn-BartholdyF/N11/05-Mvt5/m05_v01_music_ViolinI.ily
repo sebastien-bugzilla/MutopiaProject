@@ -165,7 +165,7 @@ musicViolinIMvtV = \relative c' {
 		des c ees des f c des bes)
 		aes2 bes\trill
 % mesures 131 à 135
-		aes2\f aes4 aes
+		\dynEO #'(0 . 2) aes2\f aes4 aes
 		g ees ges2
 		f4 des fes2
 		ees4 c ees2
@@ -380,7 +380,7 @@ musicViolinIMvtV = \relative c' {
 % mesures 301 à 305
 	c~
 	c
-	f\(~
+	\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -1)) PhrasingSlur f^\(~
 	f2 bes,
 	aes1(
 % mesures 306 à 310
@@ -393,11 +393,11 @@ musicViolinIMvtV = \relative c' {
 	e(~
 	e
 	f~
-	f_\dimmarkup
+	f-\tweak extra-offset #'(0 . 2.8) _\dimmarkup
 	e~
 % mesures 316 à 320
 	e
-	f~\pp
+	f~-\tweak extra-offset #'(0 . 2.7) \pp
 	f
 	e4) r r2
 	r e4\p-. e-.

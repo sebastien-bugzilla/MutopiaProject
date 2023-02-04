@@ -20,10 +20,10 @@ musicViolinIMvtI = \relative c'' {
 	r8 d'( c4) r8 d,( c4)
 	r8 des'( c4) r8 des( c4)
 % mesures 11 à 15
-	des4~\< des8\> des~\< des\> des-.(\! des-. des-.) 
-	des4~\< des8\> des~\< des\> des-.(\! des-. des-.) 
-	des4~\< des8\> des~\< des\> des-.(\! des-. des-.) 
-	c4~\< c8\> c~\< c\> \once \slurDashed c-.(\! c-. c-.) 
+	\hairpinShorten #'(0 . 1) des4~\< \hairpinShorten #'(-1 . 0) des8\> \hairpinShorten #'(0 . -0.5) des~\< \hairpinShorten #'(0.5 . 0) des\> des-.(\! des-. des-.) 
+	\hairpinShorten #'(0 . 1) des4~\< \hairpinShorten #'(-1 . 0) des8\> \hairpinShorten #'(0 . -0.5) des~\< \hairpinShorten #'(0.5 . 0) des\> des-.(\! des-. des-.) 
+	\hairpinShorten #'(0 . 1) des4~\< \hairpinShorten #'(-1 . 0) des8\> \hairpinShorten #'(0 . -0.5) des~\< \hairpinShorten #'(0.5 . 0) des\> des-.(\! des-. des-.) 
+	\hairpinShorten #'(0 . 1) c4~\< \hairpinShorten #'(-1 . 0) c8\> \hairpinShorten #'(0 . -0.5) c~\< \hairpinShorten #'(0.5 . 0) c\> \once \slurDashed c-.(\! c-. c-.) 
 	c1
 % mesures 16 à 20
 	des(~
@@ -34,7 +34,7 @@ musicViolinIMvtI = \relative c'' {
 % mesures 21 à 25
 	aes4 c8.(-> bes16) bes4 d8.(-> c16)
 	c1
-	c2\p\<( des4.\> c8)\!
+	\hairpinShorten #'(-0.3 . -0.5) c2\p\<( \hairpinShorten #'(0.5 . 0) des4.\> c8)\!
 	c1
 	c2\<( d!4.\> c8)\!
 % mesures 26 à 30
@@ -483,7 +483,7 @@ musicViolinIMvtI = \relative c'' {
 	c( e) e-. e-. e4 e 
 % mesures 396 à 400
 	e r g-> r
-	R1\fermata \bar "||" \key f \major
+	\once \omitMMRN R1\fermata \bar "||" \key f \major
 	R1*2
 	
 	f,,2.\p\<( e8\> f\!)
@@ -491,14 +491,14 @@ musicViolinIMvtI = \relative c'' {
 	f4 r r2
 	g4(~ g16 a g a bes a g a bes c bes c)
 	a8 d c4 r8 des(-> c4)
-	des4\pp(-.~ des8 des~-. des des-. des-. des)-.
-	des4(-.~ des8 des~-. des des-. des-. des)-.
+	des4\pp(-.~ des8 des~-. \beamOffset #'(0.5 . 0.5) des des-. des-. des)-.
+	des4(-.~ \beamOffset #'(0.5 . 0.5) des8 des~-. \beamOffset #'(0.5 . 0.5) des des-. des-. des)-.
 % mesures 406 à 410
 	c4-.( c-. c-. c-.)
 	c2 b
-	c8[ r16 b_\pp(] c8[) r16 f,]( e8)[ r16 b]( c8[) r16 aes]
+	\beamOffset #'(0.5 . 0.5) c8[ r16 b_\pp(] c8[) r16 f,]( e8)[ r16 b]( c8[) r16 aes]
 	g4 r r2
-	R1\fermata \bar "||" \key f \minor 
+	\once \omitMMRN R1\fermata \bar "||" \key f \minor 
 % mesures 411 à 415
 	f'''2:8\ff f: 
 	f: f: 

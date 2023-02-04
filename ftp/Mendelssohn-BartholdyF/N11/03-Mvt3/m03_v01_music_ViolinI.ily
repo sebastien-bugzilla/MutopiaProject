@@ -111,7 +111,7 @@ musicViolinIMvtIII = \relative c' {
 	c4 r g'
 % mesures 86 à 90
 	f r r
-	aes'4(~ aes16 g aes bes aes ces bes aes)
+	\shape #'((0 . 0)(0 . -1)(0 . -0.8)(0 . 0)) Slur aes'4(~ aes16 g aes bes aes ces bes aes)
 	ges( f ees d ees8) ces( bes a)
 	bes4 r8 bes,(-. bes-. bes)-. 
 	ces( bes) r bes(-. bes-. bes)-. 
