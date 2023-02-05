@@ -8,7 +8,7 @@ musicViolinIIMvtIV = \relative c'' {
 	\clef treble
 	\key f \minor
 	\repeat volta 2 {
-		\partial 2 c8\f c c c
+		\partial 2  c8\f^\markMenuetto c c c
 % mesures 1 à 5
 		c4 c8 c( g') g-.
 		g( f) aes-. g4 f8
@@ -69,7 +69,7 @@ musicViolinIIMvtIV = \relative c'' {
 % mesures 46 à 50
 		c r
 	}
-	\repeat volta 2 { \key f \major \markTrio
+	\repeat volta 2 { \key f \major \markTrio \break
 		r8 r4 r8
 		a'4.(\p bes)
 		a4. r4 r8
@@ -97,10 +97,10 @@ musicViolinIIMvtIV = \relative c'' {
 		bes8 r r r4 r8
 		bes2.~\(
 % mesures 66 à 70
-		bes2.*1/3\<( s2.*2/3\>
-		a4.)\< bes\>\)
-		a(\! c)
-		bes4( a8 g4 e8)
+		<< bes2.( {\hairpinShorten #'(0 . -0.5) s8\< s s \hairpinShorten #'(0.5 . -0.8) s\> s s\!} >>
+		\hairpinShorten #'(0 . 1.3) a4.)\< << bes\) {\hairpinShorten #'(-1.3 . 0) s8\> s s\!} >>
+		a4.( c)
+		\once \stemUp bes4( a8 g4 e8)
 		f4.( c)
 % mesures 71 à 75
 		b4. c'8( b c)
@@ -114,12 +114,12 @@ musicViolinIIMvtIV = \relative c'' {
 	}
 	\alternative {
 		{
-		    \set Timing.measureLength = #(ly:make-moment 1/4)
-		    a8 r
+			\set Timing.measureLength = #(ly:make-moment 1/4)
+			a8 r
 		}
 		{
-		    \set Timing.measureLength = #(ly:make-moment 3/4)
-		    a r r r4 r8
+			\set Timing.measureLength = #(ly:make-moment 3/4)
+			a r r r4 r8
 		}
 	}
 	R2.*4
@@ -133,5 +133,5 @@ musicViolinIIMvtIV = \relative c'' {
 % mesures 86 à 88
 	aes( g) r r4 r8
 	R2.
-	r4 \bar "||" \key f \minor \menuettodacapo 
+	r4 \bar "||" \key f \minor \menuettodacapoDown
 }

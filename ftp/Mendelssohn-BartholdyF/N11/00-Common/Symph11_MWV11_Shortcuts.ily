@@ -26,7 +26,11 @@ pocorit = \markup {\italic {poco rit.}}
 rit = \markup {\italic rit.}
 
 markTrio = \mark \markup {
-	\abs-fontsize #12 \bold "Trio."
+	\abs-fontsize #12 \bold "Trio"
+}
+
+markMenuetto = \markup {
+	\abs-fontsize #12 \bold "Menuetto"
 }
 
 %markMenuettodacapo = {
@@ -39,6 +43,13 @@ markTrio = \mark \markup {
 menuettodacapo = {
 	\once \override TextScript.self-alignment-X = 1
 	s8^\markup {
+		\italic {Menuetto da capo}
+	}
+}
+
+menuettodacapoDown = {
+	\once \override TextScript.self-alignment-X = 1
+	s8_\markup {
 		\italic {Menuetto da capo}
 	}
 }

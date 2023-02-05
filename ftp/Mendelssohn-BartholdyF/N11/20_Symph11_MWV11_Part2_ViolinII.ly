@@ -18,7 +18,7 @@
 \include "./00-Common/Symph11_MWV11_timeMvt.ily"
 \include "./00-Common/Symph11_MWV11_LayoutParts.ily"
 \include "./00-Common/Symph11_MWV11_Shortcuts.ily"
-%\include "./00-Common/Symph11_MWV11_Format_Part01_ViolinI.ily"
+\include "./00-Common/Symph11_MWV11_Format_Part02_ViolinII.ily"
 \include "./00-Common/Symph11_MWV11_Tempi.ily"
 \include "./01-Mvt1/m01_v02_music_ViolinII.ily"
 \include "./02-Mvt2/m02_v02_music_ViolinII.ily"
@@ -45,11 +45,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtI
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolinII) \tempiPartMvtI
+				\formatViolinIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(violinII) \tempiPartMvtI
 			}
 			\new Voice {
 				\timeMvtI \musicViolinIIMvtI
@@ -70,18 +70,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtII
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolinII) \tempiPartMvtII
+				\formatViolinIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(violinII) \tempiPartMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicViolinIIMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -95,11 +95,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtIII
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolinII) \tempiPartMvtIII
+				\formatViolinIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(violinII) \tempiPartMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \musicViolinIIMvtIII
@@ -120,18 +120,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtIV
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolinII) \tempiPartMvtIV
+				\formatViolinIIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(violinII) \tempiPartMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \musicViolinIIMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -145,11 +145,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtV
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolinII) \tempiPartMvtV
+				\formatViolinIIMvtV
+			}
+			\new Voice {
+				\keepWithTag #'(violinII) \tempiPartMvtV
 			}
 			\new Voice {
 				\timeMvtV \musicViolinIIMvtV

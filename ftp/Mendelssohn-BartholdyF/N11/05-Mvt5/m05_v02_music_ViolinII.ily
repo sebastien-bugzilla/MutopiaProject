@@ -211,7 +211,7 @@ musicViolinIIMvtV = \relative c' {
 	}
 % mesures 161 à 165
 	R1
-	a,2\pp a'4 a
+	a,2-\offset X-offset 0.7 \pp a'4 a
 	a1~
 	a~
 	a~
@@ -393,7 +393,7 @@ musicViolinIIMvtV = \relative c' {
 	bes(~
 	bes
 	b~
-	b_\dimmarkup
+	b-\tweak extra-offset #'(1.5 . 2.6) _\dimmarkup
 	bes!~
 % mesures 316 à 320
 	bes

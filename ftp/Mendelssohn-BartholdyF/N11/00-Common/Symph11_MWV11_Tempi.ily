@@ -51,14 +51,18 @@ tempiPartMvtI = {
 	% bar 398
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(violinI violinII violaI violaI cello basso timpani becken) {
-		\tempo "Adagio come Ima" 
+		\tempo \markup {
+			\concat { "Adagio come I" \super "ma" }
+		}
 	}
 	s1*13
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 411
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(violinII violaI violaI cello basso timpani becken) {
-		\tempo "Allegro come Ima" 
+		\tempo \markup {
+			\concat { "Allegro come I" \super "ma"} 
+		}
 	}
 	\tag #'(violinI) {
 		\tempoExtraOffset #'(0 . -0.3)

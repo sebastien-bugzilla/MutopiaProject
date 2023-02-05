@@ -8,7 +8,7 @@ musicViolinIIMvtI = \relative c' {
 	\clef treble
 	\key f \major
 % mesures 1 à 5
-	f2(\p\< g4.\> f8\!)
+	\hairpinShorten #'(0 . -0.6) f2(\p\< \hairpinShorten #'(0.3 . 0) g4.\> f8\!)
 	f4 r r2
 	f2(\< g4.\> f8\!)
 	f4 r r2
@@ -20,10 +20,10 @@ musicViolinIIMvtI = \relative c' {
 	r4 r8 bes'( a4) r8 \once \slurDashed bes,(
 	a4) r8 bes'( aes4) r
 % mesures 11 à 15
-	f4\<~ f8\> f~\< f\> f(-.\! f-. f-.)
-	e!4\<~ e8\> e~\< e\> e(-.\! e-. e-.)
-	g4\<~ g8\> g~\< g\> g(-.\! g-. g-.)
-	ges4\<~ ges8\> ges~\< ges\> \once \slurDashed ges(-.\! ges-. ges-.)
+	\hairpinShorten #'(0 . 1) f4\<~ \hairpinShorten #'(-1 . 0) f8\> \hairpinShorten #'(0 . -0.6) f~\< \hairpinShorten #'(0.6 . 0) f\> f(-.\! f-. f-.)
+	\hairpinShorten #'(0 . 1) e!4\<~ \hairpinShorten #'(-1 . 0) e8\> \hairpinShorten #'(0 . -0.6) e~\< \hairpinShorten #'(0.6 . 0) e\> e(-.\! e-. e-.)
+	\hairpinShorten #'(0 . 1) g4\<~ \hairpinShorten #'(-1 . 0) g8\> \hairpinShorten #'(0 . -0.6) g~\< \hairpinShorten #'(0.6 . 0) g\> g(-.\! g-. g-.)
+	\hairpinShorten #'(0 . 1) ges4\<~ \hairpinShorten #'(-1 . 0) ges8\> \hairpinShorten #'(0 . -0.6) ges~\< \hairpinShorten #'(0.6 . 0) ges\> \once \slurDashed ges(-.\! ges-. ges-.)
 	ges1
 % mesures 16 à 20
 	ges
@@ -50,8 +50,8 @@ musicViolinIIMvtI = \relative c' {
 	c)[ r8 d16]( e)[ r8 aes16]( g)[ r8 b,16]( c)[ r8 b16](
 	c8) r r8. b16( c8) r8 r8. b16
 % mesures 36 à 40
-	c2.\espressivo\fermata \key f \minor \bar ".|:-||" \repeat volta 2 { r4
-		R1
+	c2.\espressivo\fermata \key f \minor \bar ".|:-||" \break \repeat volta 2 { r4
+		\once \mmrnDown R1
 		r4 c-.\p aes-. r
 		R1
 		r4 d-. b-. r
@@ -485,8 +485,8 @@ musicViolinIIMvtI = \relative c' {
 	q c'8 c c4 c
 % mesures 396 à 400
 	c r des'-> r
-	R1\fermata \bar "||" \key f \major
-	f,,2\p(\< g4.\> f8)\!
+	\once \omitMMRN R1\fermata \bar "||" \key f \major
+	\hairpinShorten #'(-0.3 . -0.8) f,,2\p(\< \hairpinShorten #'(0.8 . 0) g4.\> f8)\!
 	f4 r r2
 	f2(\< g4.\> f8)\!
 % mesures 401 à 405
@@ -500,7 +500,7 @@ musicViolinIIMvtI = \relative c' {
 	f1
 	e8 r r8. b16(\pp c8)[ r16 aes]( g8) r
 	R1
-	R1\fermata \bar "||" \key f \minor 
+	\once \omitMMRN R1\fermata \bar "||" \key f \minor 
 % mesures 411 à 415
 	aes''2:8\ff aes: 
 	aes: aes: 
