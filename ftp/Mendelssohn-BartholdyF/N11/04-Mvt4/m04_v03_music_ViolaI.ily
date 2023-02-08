@@ -8,7 +8,7 @@ musicViolaIMvtIV = \relative c'' {
 	\clef alto
 	\key f \minor
 	\repeat volta 2 {
-		\partial 2 aes8\f aes aes aes
+		\partial 2 aes8\f^\markMenuetto aes aes aes
 % mesures 1 à 5
 		g4 g8 g( c) c-.
 		c4 aes8 g4 f8
@@ -67,7 +67,7 @@ musicViolaIMvtIV = \relative c'' {
 		aes8 r aes'\f aes aes aes
 		aes r r bes,\p r r
 % mesures 46 à 50
-		aes r \key f \major \markTrio
+		aes r \key f \major \markTrio \break
 	}
 	\repeat volta 2 { 
 		r8 r4 r8
@@ -97,8 +97,8 @@ musicViolaIMvtIV = \relative c'' {
 		g8 r r r4 r8
 		g2.\(~
 % mesures 66 à 70
-		g2.*1/3(\< s2.*2/3\>
-		a4.)\< g\)\>
+		<< g2.( {s8\< s s \hairpinShorten #'(0 . -1) s\> s s\! }>>
+		\hairpinShorten #'(0 . 1.5) a4.)\< << g\) {\hairpinShorten #'(-1.5 . 0) s8\> s s\!} >>
 		c2.~\!
 		c4.~ c8 r4
 		f,8( e f g e f)
@@ -133,5 +133,5 @@ musicViolaIMvtIV = \relative c'' {
 % mesures 86 à 88
 	c4 c'8\p\< c( b) b-.
 	b( bes) bes-. bes(\! a!) a-.
-	a!([ aes)] \bar "||" \key f \minor \menuettodacapo
+	a!([ aes)] \bar "||" \key f \minor \menuettodacapoDown
 }

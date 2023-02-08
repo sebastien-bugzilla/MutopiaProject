@@ -18,7 +18,7 @@
 \include "./00-Common/Symph11_MWV11_timeMvt.ily"
 \include "./00-Common/Symph11_MWV11_LayoutParts.ily"
 \include "./00-Common/Symph11_MWV11_Shortcuts.ily"
-%\include "./00-Common/Symph11_MWV11_Format_Part01_ViolinI.ily"
+\include "./00-Common/Symph11_MWV11_Format_Part03_ViolaI.ily"
 \include "./00-Common/Symph11_MWV11_Tempi.ily"
 \include "./01-Mvt1/m01_v03_music_ViolaI.ily"
 \include "./02-Mvt2/m02_v03_music_ViolaI.ily"
@@ -43,13 +43,25 @@
 			"Viola I"
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #24 
+		\abs-fontsize #20
+		\fill-line {
+			\center-column {
+				\line { "The first movement is formatted" }
+				\line { "to be displayed on three pages." }
+				\line { "Please attach page 2 next to page 3." }
+			}
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaIMvtI
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolaI) \tempiPartMvtI
+				\formatViolaIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(violaI) \tempiPartMvtI
 			}
 			\new Voice {
 				\timeMvtI \musicViolaIMvtI
@@ -70,18 +82,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaIMvtII
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolaI) \tempiPartMvtII
+				\formatViolaIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(violaI) \tempiPartMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicViolaIMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -95,11 +107,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaIMvtIII
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolaI) \tempiPartMvtIII
+				\formatViolaIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(violaI) \tempiPartMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \musicViolaIMvtIII
@@ -120,18 +132,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaIMvtIV
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolaI) \tempiPartMvtIV
+				\formatViolaIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(violaI) \tempiPartMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \musicViolaIMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -145,11 +157,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaIMvtV
-%			}
 			\new Voice {
-				\keepWithTag #'(ViolaI) \tempiPartMvtV
+				\formatViolaIMvtV
+			}
+			\new Voice {
+				\keepWithTag #'(violaI) \tempiPartMvtV
 			}
 			\new Voice {
 				\timeMvtV \musicViolaIMvtV

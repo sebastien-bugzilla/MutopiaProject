@@ -145,6 +145,14 @@ mmrnDown = {
 	\once \override MultiMeasureRestNumber.direction = #-1 
 }
 
+stemOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \offset length #offset Stem
+	#}
+)
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -318,14 +326,6 @@ mmrnDown = {
 %	\revert TupletNumber.avoid-slur
 %}
 
-
-%stemOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \offset length #offset Stem
-%	#}
-%)
 
 %textInSlur = {
 %	%\once \override TextScript.outside-staff-priority = 0
