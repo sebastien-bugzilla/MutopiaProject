@@ -201,7 +201,7 @@ musicViolaIIMvtII = \relative c' {
 	a[ a a] r
 	a[ a a a]
 % mesures 161 à 165
-	d8.\ff e16 f8 g
+	\beamOffset #'(1 . 1) d8.\ff e16 f8 g
 	a16 g a bes a8 a,
 	d8. e16 f8 g
 	a16 g a bes a8 a,

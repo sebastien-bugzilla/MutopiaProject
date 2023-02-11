@@ -8,7 +8,7 @@ musicViolaIIMvtIV = \relative c' {
 	\clef alto
 	\key f \minor
 	\repeat volta 2 {
-		\partial 2 f8\f f f f
+		\partial 2 f8\f^\markMenuetto f f f
 % mesures 1 à 5
 		g4 c,8 g'8 g g
 		e( f) f-. ees4 des8
@@ -133,5 +133,5 @@ musicViolaIIMvtIV = \relative c' {
 % mesures 86 à 88
 	r4 c'8\p\< c( b) b-.
 	b( bes) bes-. bes(\! a!) a-.
-	a!([ aes)] \bar "||" \key f \minor \menuettodacapo
+	a!([ aes)] \bar "||" \key f \minor \menuettodacapoDown
 }

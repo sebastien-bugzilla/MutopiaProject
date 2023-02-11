@@ -153,6 +153,25 @@ stemOffset = #(define-music-function
 	#}
 )
 
+%tempoXoffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \override Score.MetronomeMark.X-offset = #offset
+%	#}
+%)
+
+tempoEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -342,23 +361,6 @@ stemOffset = #(define-music-function
 %)
 
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
-
-%tempoXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.MetronomeMark.X-offset = #offset
-%	#}
-%)
-
-%tempoEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-
 
 %tupletOffset = #(define-music-function
 %	(offset)

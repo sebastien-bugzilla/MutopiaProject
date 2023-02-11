@@ -592,7 +592,7 @@ musicViolaIIMvtV = \relative c' {
 	r2 g4 r
 	f2\f f'4 f 
 	f2 r
-	ces2\ff ces'4 ces
+	ces2-\offset X-offset 0.5 \ff ces'4 ces
 % mesures 481 à 485
 	ces2 r
 	r c!4 r

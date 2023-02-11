@@ -9,9 +9,9 @@ musicViolaIIMvtI = \relative c {
 	\key f \major
 % mesures 1 à 5
 	c1\p~
-	c4\< c-.( c-.\> c-.)\!
+	\hairpinShorten #'(0 . 1.5) c4\< c-.( \hairpinShorten #'(-1.5 . 0) c-.\> c-.)\!
 	c1~
-	c4\< c-.( c-.\> c-.)\!
+	\hairpinShorten #'(0 . 1.5) c4\< c-.( \hairpinShorten #'(-1.5 . 0) c-.\> c-.)\!
 	c4~( c16 d c d ees d c d ees f ees f)
 % mesures 6 à 10
 	des2.( c4)
@@ -20,16 +20,16 @@ musicViolaIIMvtI = \relative c {
 	r4 r8 e'( f4) r4
 	c,2..( c'8)
 % mesures 11 à 15
-	c4~\< c8\> c~\< c\> c(-.\! c-. c-.)
-	bes4~\< bes8\> bes~\< bes\> bes(-.\! bes-. bes-.)
-	bes4~\< bes8\> bes~\< bes\> \once \slurDashed bes(-.\! bes-. bes-.)
-	a!4~\< a8\> a~\< a\> \once \slurDashed a(-.\! a-. a-.)
+	\hairpinShorten #'(0 . 0.7) c4~\< \hairpinShorten #'(-0.7 . 0) c8\> \hairpinShorten #'(0 . -0.5) c~\< \hairpinShorten #'(0.5 . 0) c\> c(-.\! c-. c-.)
+	\hairpinShorten #'(0 . 0.7) bes4~\< \hairpinShorten #'(-0.7 . 0) bes8\> \hairpinShorten #'(0 . -0.5) bes~\< \hairpinShorten #'(0.5 . 0) bes\> bes(-.\! bes-. bes-.)
+	\hairpinShorten #'(0 . 0.7) bes4~\< \hairpinShorten #'(-0.7 . 0) bes8\> \hairpinShorten #'(0 . -0.5) bes~\< \hairpinShorten #'(0.5 . 0) bes\> \once \slurDashed bes(-.\! bes-. bes-.)
+	\hairpinShorten #'(0 . 0.7) a!4~\< \hairpinShorten #'(-0.7 . 0) a8\> \hairpinShorten #'(0 . -0.5) a~\< \hairpinShorten #'(0.5 . 0) a\> \once \slurDashed a(-.\! a-. a-.)
 	a!1
 % mesures 16 à 20
 	bes
 	ces
-	bes4(\< << ces2.) {s4\> s s\! } >>
-	bes4(\< << ces2.) {s4\> s s\! } >>
+	\hairpinShorten #'(0 . 0.7) bes4(\< << ces2.) {\hairpinShorten #'(-0.7 . 0) s4\> s s\! } >>
+	\hairpinShorten #'(0 . 0.7) bes4(\< << ces2.) {\hairpinShorten #'(-0.7 . 0) s4\> s s\! } >>
 	bes4\! r r2
 % mesures 21 à 25
 	R1
@@ -50,7 +50,7 @@ musicViolaIIMvtI = \relative c {
 	g) c( bes aes g aes g f e f e f e f e d
 	e8) r r8. aes16( g8) r r8. f16
 % mesures 36 à 40
-	g2.\espressivo\fermata \key f \minor \bar ".|:-||" \repeat volta 2 { r4
+	g2.\espressivo\fermata \key f \minor \break \bar ".|:-||" \repeat volta 2 { r4
 		r4 aes-.\p f-. r
 		r c-. c-. r
 		R1
@@ -474,7 +474,7 @@ musicViolaIIMvtI = \relative c {
 	g, aes bes c d e f g
 	aes, bes c d e f g aes
 	bes, c des! ees! f4 g8 aes
-	bes4\ff des,2-> des4(
+	bes4-\offset X-offset -1 \ff des,2-> des4(
 % mesures 391 à 395
 	d) f2-> f4~
 	f r <c, aes' f'> r 
@@ -483,7 +483,7 @@ musicViolaIIMvtI = \relative c {
 	q g''8 g g4 g
 % mesures 396 à 400
 	g r g-> r
-	R1\fermata \bar "||" \key f \major
+	\once \omitMMRN R1\fermata \bar "||" \key f \major
 	c,,1\p~
 	c4 r c r
 	c\<( ees\> des2)\!
@@ -491,14 +491,14 @@ musicViolaIIMvtI = \relative c {
 	c4~( c16 d! c d ees d c d ees f ees f)
 	des2.( c4)
 	c1
-	<c c'>4-.\pp(~ q8 q~-. q q-. q-. q-.)
+	<c c'>4-.-\offset X-offset -2 \pp(~ q8 q~-. q q-. q-. q-.)
 	<c bes'>4-.(~ q8 q~-. q q-. q-. q-.)
 % mesures 406 à 410
 	\once \slurDashed <c aes'>4(-. f-. f-. f-.)
 	f1
 	g8 r r4 r r8. d16\pp
 	e4 r r2
-	R1\fermata \bar "||" \key f \minor 
+	\once \omitMMRN R1\fermata \bar "||" \key f \minor 
 % mesures 411 à 415
 	<c' f>2:8\ff q: 
 	q: q: 

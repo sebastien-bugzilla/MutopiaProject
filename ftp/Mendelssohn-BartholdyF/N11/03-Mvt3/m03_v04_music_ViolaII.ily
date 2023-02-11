@@ -96,7 +96,7 @@ musicViolaIIMvtIII = \relative c {
 	d8 r <g, d'>4 r
 	c,2.\p~
 	c~
-	c4( c' b8 g)
+	\shape #'((0 . -1.5)(0 . -0.5)(0 . -0.3)(0 . -0.3)) Slur c4( c' b8 g)
 % mesures 76 à 80
 	g4. r8 r4
 	r r8 g( b d)
