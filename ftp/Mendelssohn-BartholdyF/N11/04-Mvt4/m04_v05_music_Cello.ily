@@ -8,7 +8,7 @@ musicCelloMvtIV = \relative c {
 	\clef bass
 	\key f \minor
 	\repeat volta 2 {
-		\partial 2 f8\f aes g f
+		\partial 2 f8\f-\offset X-offset -2 ^\markMenuetto aes g f
 % mesures 1 à 5
 		c'4 c,8 \once \slurDashed e( d) c
 		f4 f8 ees!4 des8
@@ -67,7 +67,7 @@ musicCelloMvtIV = \relative c {
 		f r f'\f des' c b
 		c, r r c\p r r
 % mesures 46 à 50
-		f, r \key f \major \markTrio
+		f, r \key f \major \markTrio \break
 	}
 	\repeat volta 2 {
 		r8 c^\vc r r
@@ -97,7 +97,7 @@ musicCelloMvtIV = \relative c {
 		r4 r8 c\p r r
 		R2.
 % mesures 66 à 70
-		r4 r8 c,\f r r
+		r4 r8 c,-\offset X-offset -2.3 \f r r
 		R2.*7
 		
 		
@@ -106,7 +106,7 @@ musicCelloMvtIV = \relative c {
 		
 		
 		
-		f''4.(\p^\vc e
+		f''4.(\p-\offset X-offset -3.8 ^\vc e
 		ees des)
 % mesures 76 à 80
 		c8 r r r4 r8

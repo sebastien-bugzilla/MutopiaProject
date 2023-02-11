@@ -69,7 +69,7 @@ musicCelloMvtV = \relative c {
 % mesures 56 à 60
 	
 % mesures 61 à 65
-		f,2\f f'4 f
+		f,2-\tweak extra-offset #'(0 . 0.5) \f f'4 f
 		e c ees2
 		d4 bes des2
 		r4 c c bes
@@ -381,23 +381,23 @@ musicCelloMvtV = \relative c {
 	c,~
 	c~
 	c~
-	c~_\dimmarkup
+	\markEO #'(0 . 6) c~_\dimmarkup
 	c~
 % mesures 316 à 320
 	c~
-	c~\pp
+	\dynEO #'(0.5 . 6) c~\pp
 	c
-	r2 <c g'>4-.\p q-.
+	r2 <c g'>4-.-\offset X-offset -1.5 \p q-.
 	q1~
 % mesures 321 à 325
 	q4 r q-. q-.
 	q1~
 	q4 r q-. q-.
-	q1~_\crescmarkup
+	\markEO #'(-0.5 . 8) q1~_\crescmarkup
 	q2 c4-. c-.
 % mesures 326 à 330
 	c2 c4-.\f c-.
-	c2 c'4-.^\bassi\f\< c-.
+	c2 \stemOffset #-1 c'4-.^\bassi\f\< \stemOffset #-1  c-.
 	c2 c4-. c-.\!
 	c2 c'4-.\ff c-.
 	c-. c-. c-. c-.

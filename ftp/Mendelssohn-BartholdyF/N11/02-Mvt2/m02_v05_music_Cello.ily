@@ -23,7 +23,7 @@ musicCelloMvtII = \relative c {
 % mesures 11 à 15
 	d,4 r
 	a r
-	c'(^\vc e)
+	c'(-\offset X-offset -2 ^\vc e)
 	f( bes,)
 	a^\bassi g
 % mesures 16 à 20
@@ -118,7 +118,7 @@ musicCelloMvtII = \relative c {
 	c~
 % mesures 91 à 95
 	c~
-	c4 r8 ees16^\bassi\f[ d]
+	c4 r8 \dynEO #'(0 . 1) ees16^\bassi\f[ d]
 	c16 bes a g fis8 a
 	d, r c r
 	bes r a r
@@ -137,7 +137,7 @@ musicCelloMvtII = \relative c {
 % mesures 106 à 112
 	f' r a,,\p^\bassi r
 	bes8 r c r
-	f'2(^\vc
+	f'2(-\offset X-offset -3 ^\vc
 	e
 	ees
 % mesures 111 à 115

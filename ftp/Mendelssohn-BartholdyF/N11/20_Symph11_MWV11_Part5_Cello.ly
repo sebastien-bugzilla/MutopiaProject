@@ -18,7 +18,7 @@
 \include "./00-Common/Symph11_MWV11_timeMvt.ily"
 \include "./00-Common/Symph11_MWV11_LayoutParts.ily"
 \include "./00-Common/Symph11_MWV11_Shortcuts.ily"
-%\include "./00-Common/Symph11_MWV11_Format_Part01_ViolinI.ily"
+\include "./00-Common/Symph11_MWV11_Format_Part05_Cello.ily"
 \include "./00-Common/Symph11_MWV11_Tempi.ily"
 \include "./01-Mvt1/m01_v05_music_Cello.ily"
 \include "./02-Mvt2/m02_v05_music_Cello.ily"
@@ -45,11 +45,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtI
-%			}
 			\new Voice {
-				\keepWithTag #'(Cello) \tempiPartMvtI
+				\formatCelloMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtI
 			}
 			\new Voice {
 				\timeMvtI \musicCelloMvtI
@@ -70,11 +70,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtII
-%			}
 			\new Voice {
-				\keepWithTag #'(Cello) \tempiPartMvtII
+				\formatCelloMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicCelloMvtII
@@ -95,11 +95,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtIII
-%			}
 			\new Voice {
-				\keepWithTag #'(Cello) \tempiPartMvtIII
+				\formatCelloMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \musicCelloMvtIII
@@ -120,18 +120,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtIV
-%			}
 			\new Voice {
-				\keepWithTag #'(Cello) \tempiPartMvtIV
+				\formatCelloMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \musicCelloMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -145,11 +145,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCelloMvtV
-%			}
 			\new Voice {
-				\keepWithTag #'(Cello) \tempiPartMvtV
+				\formatCelloMvtV
+			}
+			\new Voice {
+				\keepWithTag #'(cello) \tempiPartMvtV
 			}
 			\new Voice {
 				\timeMvtV \musicCelloMvtV

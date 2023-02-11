@@ -8,7 +8,7 @@ musicCelloMvtI = \relative c, {
 	\clef bass
 	\key f \major
 % mesures 1 à 5
-	f2(\p\< e4.\> f8\!) 
+	\hairpinShorten #'(-0.3 . -0.5) \shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur f2(\p\< \hairpinShorten #'(0.5 . 0) e4.\> f8\!) 
 	f4 r r2 
 	f2(\< e4.\> f8\!) 
 	f4 r r2 
@@ -20,10 +20,10 @@ musicCelloMvtI = \relative c, {
 	f4 r r r8 e( 
 	f4) r r r8 e 
 % mesures 11 à 15
-	f4~\< f8\> f~\< f\> \once \slurDashed f(-.\! f-. f-.) 
-	f4~\< f8\> f~\< f\> f(-.\! f-. f-.) 
-	e!4~\< e8\> e~\< e\> \once \slurDashed e(-.\! e-. e-.) 
-	ees4~\< ees8\> ees~\< ees\> \once \slurDashed ees(-.\! ees-. ees-.) 
+	\hairpinShorten #'(0 . 1) f4~\< \hairpinShorten #'(-1 . 0) f8\> \hairpinShorten #'(0 . -0.5) f~\< \hairpinShorten #'(0.5 . 0) f\> \once \slurDashed f(-.\! f-. f-.) 
+	\hairpinShorten #'(0 . 1) f4~\< \hairpinShorten #'(-1 . 0) f8\> \hairpinShorten #'(0 . -0.5) f~\< \hairpinShorten #'(0.5 . 0) f\> f(-.\! f-. f-.) 
+	\hairpinShorten #'(0 . 1) e!4~\< \hairpinShorten #'(-1 . 0) e8\> \hairpinShorten #'(0 . -0.5) e~\< \hairpinShorten #'(0.5 . 0) e\> \once \slurDashed e(-.\! e-. e-.) 
+	\hairpinShorten #'(0 . 1) ees4~\< \hairpinShorten #'(-1 . 0) ees8\> \hairpinShorten #'(0 . -0.5) ees~\< \hairpinShorten #'(0.5 . 0) ees\> \once \slurDashed ees(-.\! ees-. ees-.) 
 	d!1 
 % mesures 16 à 20
 	des~ 
@@ -33,10 +33,10 @@ musicCelloMvtI = \relative c, {
 	ges2(\< g4.\> aes8)\! 
 % mesures 21 à 25
 	aes4 a8.->( bes16) bes4 b8.( c16) 
-	c2(\< e4.\> f8)\! 
+	\hairpinShorten #'(0 . 0.5) c2(\< \hairpinShorten #'(-0.5 . 0) e4.\> f8)\! 
 	f4 r r2 
-	f2(\< e4.\> f8)\! 
-	f2( b 
+	\hairpinShorten #'(0 . 0.5) f2(\< \hairpinShorten #'(-0.5 . 0) e4.\> f8)\! 
+	\shape #'((0 . 0)(0 . -1)(0 . -1)(0 . 0)) Slur f2( b 
 % mesures 26 à 30
 	bes! a) 
 	bes bes,~
@@ -112,7 +112,7 @@ musicCelloMvtI = \relative c, {
 		aes r r aes, 
 		f'1 
 % mesures 86 à 90
-		ees2:8 ees:  
+		\startMeasureCount ees2:8 ees:  
 		ees: ees:  
 		ees: ees:  
 		ees: ees:  
@@ -120,7 +120,7 @@ musicCelloMvtI = \relative c, {
 % mesures 91 à 95
 		ees: ees:  
 		ees: ees:  
-		ees: ees: 
+		ees: ees: \stopMeasureCount 
 		ees4 r r2 
 		ees4 r r2 
 % mesures 96 à 100
@@ -398,7 +398,7 @@ musicCelloMvtI = \relative c, {
 	aes'2\ff r4 aes, 
 	des1~ 
 	des 
-	c2:8 c:  
+	\startMeasureCount c2:8 c:  
 	c: c:  
 % mesures 326 à 330
 	c: c:  
@@ -407,7 +407,7 @@ musicCelloMvtI = \relative c, {
 	c: c:  
 	c: c:  
 % mesures 331 à 335
-	c: c:  
+	c: c: \stopMeasureCount
 	c8 r r4 r2 
 	R1*3 
 	 
@@ -477,7 +477,7 @@ musicCelloMvtI = \relative c, {
 	g 
 	aes 
 	bes 
-	bes'4\ff bes2-> bes4( 
+	\dynEO #'(0 . 1) bes'4\ff bes2-> bes4( 
 % mesures 391 à 395
 	b) b2-> b4( 
 	c) c,2-> c4->~ 
@@ -486,15 +486,15 @@ musicCelloMvtI = \relative c, {
 	c' c8 c c4 c 
 % mesures 396 à 400
 	c r e-> r 
-	R1\fermata  \bar "||" \key f \major 
-	f,,2(\<^\vc e4.\> f8)\! 
+	\once \omitMMRN R1\fermata  \bar "||" \key f \major 
+	f,,2(\<-\offset X-offset -3 ^\vc e4.\> f8)\! 
 	f4( c') r2 
 	f,1  
 % mesures 401 à 405
 	f~ 
 	f~ 
 	f4 r r r8 e 
-	f4-.(~\pp f8 f~-. f f-. f-. f-.) 
+	f4-.(~-\tweak extra-offset #'(-1.5 . -8.5) ^\pp f8 f~-. f f-. f-. f-.) 
 	f4-.(~ f8 f~-. f f-. f-. f-.) 
 % mesures 406 à 410
 	f2( ees) 
@@ -522,7 +522,7 @@ musicCelloMvtI = \relative c, {
 	aes4 r des r 
 % mesures 426 à 430
 	bes r c r 
-	f2:8 f:  
+	\startMeasureCount f2:8 f:  
 	f: f:  
 	f: f:  
 	f: f:  
@@ -530,7 +530,7 @@ musicCelloMvtI = \relative c, {
 	f: f:  
 	f: f:  
 	f: f:  
-	f: f:  
+	f: f: \stopMeasureCount
 	f4 r c r 
 % mesures 436 à 440
 	f4 r c r 
