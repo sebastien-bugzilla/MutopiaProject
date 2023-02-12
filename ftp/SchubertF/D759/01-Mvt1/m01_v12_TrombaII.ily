@@ -6,45 +6,6 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   6               #
 %#######################################################################
-flautoNotesA = \relative c'' {
-    \transposition e
-    s2.*25
-    bes2.~
-    bes2~ bes8( c)
-    c2 s4
-}
-flautoNotesB = \relative c''' {
-    \transposition e
-    s2.*100
-    g8.( aes16 bes4. des8)
-    c4.( bes8[ a! g)]
-    f2( bes4)
-    ees,8 r
-}
-flautoNotesC = \relative c'' {
-    \transposition e
-    s2.*240
-    f2.~
-    f2~ f8( g)
-    g2
-}
-hornNotesA = \relative c'' {
-    \transposition e
-    s2.*144
-    ees4 c d
-    ees c c
-}
-violinNotesA = \relative c'' {
-    \transposition e
-    s2.*344
-    d2( cis4)
-    d2( cis4)
-}
-\addQuote "flautoA" {\flautoNotesA}
-\addQuote "flautoB" {\flautoNotesB}
-\addQuote "flautoC" {\flautoNotesC}
-\addQuote "hornA" {\hornNotesA}
-\addQuote "violinA" {\violinNotesA}
 MvtUnTrombeEI = \relative c {
 	\clef treble
 	\key a \minor
@@ -52,7 +13,7 @@ MvtUnTrombeEI = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*24
+	    R2.*26
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -62,9 +23,9 @@ MvtUnTrombeEI = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	    \new CueVoice { \set instrumentCueName = "Fl. I"}
-	    \cueDuring #"flautoA" #UP {R2.*2 r4 r4}
-	      c''4\fz
+	    
+	    
+	    r4 r c''\fz
 	    c\fz r r
 	    R2.*5
 % mesures 31 à 35
@@ -77,7 +38,7 @@ MvtUnTrombeEI = \relative c {
 	    d4 r8 d d4
 	    r8 d d4 d8 d \mark \default
 	    d4\fz r r
-	    R2.*23
+	    R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -87,13 +48,13 @@ MvtUnTrombeEI = \relative c {
 % mesures 56 à 60
 	
 % mesures 61 à 65
-	    R2._\gp
+	    
 	    \mark \default
 	    R2.*8
 % mesures 66 à 70
 	
 % mesures 71 à 75
-	    c,4\fz r r
+	    \partcombineApartOnce c,4 r r
 	    R2.*9
 % mesures 76 à 80
 	
@@ -102,25 +63,25 @@ MvtUnTrombeEI = \relative c {
 	    c
 	    c\fz
 	    c
-	    r4 g'2\fz
+	    r4 g'2-\tweak X-offset #-2. \fz
 % mesures 86 à 90
-	    r4 c,2\fz
-	    r4 g'2\fz
+	    r4 \partcombineApartOnce c,2
+	    r4 g'2 -\tweak X-offset #-3.1 \fz
 	    R2.
-	    r4 g2\fz
-	    r4 c,2->\fz
+	    r4 g2 -\tweak X-offset #-3.1 \fz
+	    r4 \partcombineApartOnce c,2
 % mesures 91 à 95
 	    r4 c'2->\fz
 	    R2. \mark \default
 	    g4 r r
-	    R2.*7
+	    R2.*10
 % mesures 96 à 100
-	    
+	
 % mesures 101 à 105
-	    \new CueVoice { \set instrumentCueName = "Fl. I"}
-	    \cueDuring #"flautoB" #UP {R2.*3 r4}
 	    
-	     g2\ff\>~
+	    
+	    
+	    r4 g2\ff\>~
 	    g2.~
 % mesures 106 à 110
 	    g4\pp r r
@@ -139,7 +100,7 @@ MvtUnTrombeEI = \relative c {
 	g~
 	g~
 	g4 r r
-	R2.*29
+	R2.*31
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -151,8 +112,7 @@ MvtUnTrombeEI = \relative c {
 % mesures 136 à 140
 	
 % mesures 141 à 145
-	\new CueVoice { \set instrumentCueName = "Hr."}
-	\cueDuring #"hornA" #UP {R2.*2}
+	
 % mesures 146 à 150
 	c2.\ff\>~
 	c\!
@@ -191,17 +151,17 @@ MvtUnTrombeEI = \relative c {
 % mesures 176 à 180
 	c4 r r
 	R2.
-	d2.\>
-	d2\! d4
-	d r r
+	\partcombineApart d2.
+	d2 d4
+	\partcombineAutomatic d r r
 % mesures 181 à 185
 	R2.*3
 	
 	
-	d8.[ d16 d8. d16] d8. d16
+	\partcombineApart d8.[ d16 d8. d16] d8. d16
 	d8.[ d16 d8. d16] d8. d16
 % mesures 186 à 190
-	d4 r r
+	d4 \partcombineAutomatic r r
 	R2.
 	g,8.[ g16 g8. g16] g8. g16
 	g8.[ g16 g8. g16] g8. g16
@@ -225,7 +185,7 @@ MvtUnTrombeEI = \relative c {
 % mesures 216 à 220
 	
 	\mark \default
-	R2.*22
+	R2.*24
 % mesures 221 à 225
 	
 % mesures 226 à 230
@@ -233,11 +193,10 @@ MvtUnTrombeEI = \relative c {
 % mesures 231 à 235
 	
 % mesures 236 à 240
-	\new CueVoice { \set instrumentCueName = "Fl. I"}
-	\cueDuring #"flautoC" #UP {R2.*2 r4 r4}
+	
 % mesures 241 à 245
 	
-	 g\f-.
+	r4 r g\f-.
 	g-.\fz r r
 	R2.*5
 	
@@ -249,8 +208,8 @@ MvtUnTrombeEI = \relative c {
 	g2.~
 % mesures 251 à 255
 	g \mark \default
-	f4\fz r r
-	R2.*27
+	\partcombineApartOnce f4 r r
+	R2.*28
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -260,7 +219,7 @@ MvtUnTrombeEI = \relative c {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	R2._\gp \mark \default
+	\mark \default
 % mesures 281 à 285
 	g2.\ff\>~
 	g4\! r r
@@ -284,17 +243,17 @@ MvtUnTrombeEI = \relative c {
 % mesures 301 à 305
 	g2.\fz
 	r8 g4 g g8
-	g r g2(\fz
-	c,8) r e2(\fz
-	g8) r g2(\fz
+	\partcombineApartOnce g r \partcombineApart g2(
+	c,8) \partcombineAutomatic r \partcombineApart e2(
+	g8) \partcombineAutomatic r \partcombineApart g2(
 % mesures 306 à 310
 	e'4) d-. d-.
-	d8 r g,2\fz(
-	c,8) r e2\fz~
-	e8 r e2(\fz
+	d8 \partcombineAutomatic r \partcombineApart g,2(
+	c,8) \partcombineAutomatic r \partcombineApart e2~
+	e8 \partcombineAutomatic r \partcombineApart e2(
 	c'4) d-. d-. \mark \default
 % mesures 311 à 315
-	d r r
+	d \partcombineAutomatic r r
 	R2.*10
 % mesures 316 à 320
 	
@@ -303,7 +262,7 @@ MvtUnTrombeEI = \relative c {
 	r4 g,2\ffz\>~
 	g2.\p~
 	g4\pp r r
-	R2.*19
+	R2.*21
 % mesures 326 à 330
 	
 % mesures 331 à 335
@@ -311,17 +270,16 @@ MvtUnTrombeEI = \relative c {
 % mesures 336 à 340
 	
 % mesures 341 à 345
-	\new CueVoice { \set instrumentCueName = "Viol. I"}
-	\cueDuring #"violinA" #UP {R2.*2}
+	
 % mesures 346 à 350
 	r4 g\< r
 	g r g\!
-	g g\f g
-	g\< g g
-	d'2.\ff
+	g \partcombineApart g g
+	g g g
+	d'2.
 % mesures 351 à 355
 	d
-	d4 r r
+	\partcombineAutomatic d4 r r
 	R2.*3
 	
 	
@@ -349,7 +307,7 @@ MvtUnTrombeEII = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*24
+	    R2.*26
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -359,9 +317,9 @@ MvtUnTrombeEII = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	    \new CueVoice { \set instrumentCueName = "Fl. I"}
-	    \cueDuring #"flautoA" #UP {R2.*2 r4 r4}
-	     c'\fz
+	    
+	    
+	    r4 r c'\fz
 	    c\fz r r
 	    R2.*5
 % mesures 31 à 35
@@ -374,7 +332,7 @@ MvtUnTrombeEII = \relative c {
 	    c4 r8 c c4
 	    r8 c c4 c8 c \mark \default
 	    g4\fz r r
-	    R2.*23
+	    R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -385,7 +343,7 @@ MvtUnTrombeEII = \relative c {
 	
 % mesures 61 à 65
 	    
-	    R2._\gp \mark \default
+	    \mark \default
 	    R2.*8
 % mesures 66 à 70
 	
@@ -399,25 +357,25 @@ MvtUnTrombeEII = \relative c {
 	    c
 	    c\fz
 	    c
-	    r4 g2\fz
+	    r4 g2-\tweak X-offset #-2. \fz
 % mesures 86 à 90
-	    r4 c2\fz
-	    r4 g2\fz
+	    r4 c2-\tweak X-offset #-3.1 \fz
+	    r4 g2-\tweak X-offset #-3.1 \fz
 	    R2.
-	    r4 g2\fz
-	    r4 c2->\fz
+	    r4 g2 -\tweak X-offset #-3.1 \fz
+	    r4 c2-> -\tweak X-offset #-3.1 \fz
 % mesures 91 à 95
 	    r4 c2->\fz
 	    R2. \mark \default
 	    g4 r r
-	    R2.*7
+	    R2.*10
 % mesures 96 à 100
 	
 % mesures 101 à 105
-	    \new CueVoice { \set instrumentCueName = "Fl. I"}
-	    \cueDuring #"flautoB" #UP {R2.*3 r4}
 	    
-	     g2\ff\>~
+	    
+	    
+	    r4 g2\ff\>~
 	    g2.~
 % mesures 106 à 110
 	    g4\pp r r
@@ -436,7 +394,7 @@ MvtUnTrombeEII = \relative c {
 	g~
 	g~
 	g4 r r
-	R2.*29
+	R2.*31
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -448,8 +406,7 @@ MvtUnTrombeEII = \relative c {
 % mesures 136 à 140
 	
 % mesures 141 à 145
-	\new CueVoice { \set instrumentCueName = "Hr."}
-	\cueDuring #"hornA" #UP {R2.*2}
+	
 % mesures 146 à 150
 	c2.\ff\>~
 	c\!
@@ -522,7 +479,7 @@ MvtUnTrombeEII = \relative c {
 % mesures 216 à 220
 	
 	\mark \default
-	R2.*22
+	R2.*24
 % mesures 221 à 225
 	
 % mesures 226 à 230
@@ -530,11 +487,10 @@ MvtUnTrombeEII = \relative c {
 % mesures 231 à 235
 	
 % mesures 236 à 240
-	\new CueVoice { \set instrumentCueName = "Fl. I"}
-	\cueDuring #"flautoC" #UP {R2.*2 r4 r4}
+	
 % mesures 241 à 245
 	
-	 e\f-.
+	r4 r e\f-.
 	e-.\fz r r
 	R2.*5
 	
@@ -547,7 +503,7 @@ MvtUnTrombeEII = \relative c {
 % mesures 251 à 255
 	e \mark \default
 	f4\fz r r
-	R2.*27
+	R2.*28
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -557,7 +513,7 @@ MvtUnTrombeEII = \relative c {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	R2._\gp \mark \default
+	\mark \default
 % mesures 281 à 285
 	g,2.\ff\>~
 	g4\! r r
@@ -581,13 +537,13 @@ MvtUnTrombeEII = \relative c {
 % mesures 301 à 305
 	e2.\fz
 	r8 e4 e e8
-	g r g,2(\fz
-	c8) r c2(\fz
+	g r g,2( -\tweak X-offset #-2.7 \fz
+	c8) r c2( -\tweak X-offset #-2.7 \fz
 	g8) r g'2(\fz
 % mesures 306 à 310
 	c4) d-. d-.
-	g,8 r g,2\fz(
-	c8) r c2\fz(
+	g,8 r g,2 -\tweak X-offset #-2.7 \fz(
+	c8) r c2 -\tweak X-offset #-2.5 \fz(
 	e8) r e2(\fz
 	c'4) d-. d-. \mark \default
 % mesures 311 à 315
@@ -600,7 +556,7 @@ MvtUnTrombeEII = \relative c {
 	r4 g,2\ffz\>~
 	g2.\p~
 	g4\pp r r
-	R2.*19
+	R2.*21
 % mesures 326 à 330
 	
 % mesures 331 à 335
@@ -608,8 +564,7 @@ MvtUnTrombeEII = \relative c {
 % mesures 336 à 340
 	
 % mesures 341 à 345
-	\new CueVoice { \set instrumentCueName = "Viol. I"}
-	\cueDuring #"violinA" #UP {R2.*2}
+	
 % mesures 346 à 350
 	r4 g\< r
 	g r g\!

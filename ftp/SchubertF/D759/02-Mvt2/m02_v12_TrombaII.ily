@@ -6,49 +6,12 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   6               #
 %#######################################################################
-clarinetNotesM = \relative c'' {
-    \transposition e
-    s4.*30
-    g16( b d f e d
-    c8) r r
-}
-oboeNotesM = \relative c'' {
-    \transposition e
-    s4.*93
-    fis16.( e32 fis16 e cis a)
-    e'16.( d32 e16 d b gis)
-}
-fluteNotesM = \relative c'' {
-    \transposition e
-    s4.*169
-    g16( b d f e d
-    c8) r r
-    g16( b d f e d
-    c4) r8
-}
-fluteNotesN = \relative c'' {
-    \transposition e
-    s4.*234
-    d16.( c32 d16 c a f
-    c'16. bes32 c16 bes g e)
-}
-hornNotesM = \relative c, {
-    \transposition e
-    s4.*307
-    <c c'>4.~
-    <c c'>
-}
-\addQuote "clarinetM" {\clarinetNotesM}
-\addQuote "oboeM" {\oboeNotesM}
-\addQuote "fluteM" {\fluteNotesM}
-\addQuote "fluteN" {\fluteNotesN}
-\addQuote "hornM" {\hornNotesM}
 MvtDeuxTrombeEI = \relative c'' {
 	\clef treble
 	\key c \major
 	\transposition e
 % mesures 1 à 5
-	R4.*30
+	R4.*32
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -58,8 +21,7 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	\new CueVoice { \set instrumentCueName = "Kl. I"}
-	\cueDuring #"clarinetM" #UP {R4.*2}
+	
 % mesures 31 à 35
 	
 	\mark \default
@@ -67,10 +29,10 @@ MvtDeuxTrombeEI = \relative c'' {
 	g
 	g8 g4
 % mesures 36 à 40
-	g4.
-	d'
+	g4. \partcombineApart
+	d' \partcombineAutomatic
 	d
-	d8 d4
+	\partcombineApart d8 d4 \partcombineAutomatic
 	g,4.
 % mesures 41 à 45
 	e
@@ -81,9 +43,9 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	g4.(\p
+	g4.( -\tweak X-offset #-2.2 \p
 	e8) r r
-	R4.*41
+	R4.*43
 % mesures 56 à 60
 	
 % mesures 61 à 65
@@ -101,18 +63,18 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 91 à 95
 	
 	
-	\new CueVoice { \set instrumentCueName = "Ob. I"}
-	\cueDuring #"oboeM" #UP {R4.*2}
+	
+	
 	\mark \default
 % mesures 96 à 100
 	e4.\ff
-	e
+	\partcombineApart e \partcombineAutomatic
 	R4.
-	e
+	\partcombineApart e
 	e
 % mesures 101 à 105
-	r8 r c~
-	c e-. e-.
+	\partcombineAutomatic r8 r \partcombineApart c~
+	c e-. e-. \partcombineAutomatic
 	r e4\fz
 	r8 e4\fz
 	r8 d'4\fz
@@ -120,10 +82,10 @@ MvtDeuxTrombeEI = \relative c'' {
 	r8 e,4\fz
 	r8 e4\fz
 	r8 d'-. c-.
-	c,4.
-	c \mark \default
+	\partcombineApart c,4.
+	c \partcombineAutomatic \mark \default
 % mesures 111 à 115
-	R4.*59
+	R4.*63
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -147,8 +109,8 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 166 à 170
 	
 % mesures 171 à 175
-	\new CueVoice { \set instrumentCueName = "Fl. I"}
-	\cueDuring #"fluteM" #UP {R4.*4}
+	
+	
 	\mark \default
 	g'4.\ff
 	g
@@ -160,7 +122,7 @@ MvtDeuxTrombeEI = \relative c'' {
 	c8 c4\fz
 % mesures 181 à 185
 	c4.
-	R4.*53
+	R4.*55
 % mesures 186 à 190
 	
 % mesures 191 à 195
@@ -180,8 +142,7 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	\new CueVoice { \set instrumentCueName = "Fl. I"}
-	\cueDuring #"fluteN" #UP {R4.*2}
+	
 % mesures 236 à 240
 	\mark \default
 	c4.\ff
@@ -192,29 +153,29 @@ MvtDeuxTrombeEI = \relative c'' {
 	c
 	R4.
 	r8 g-. g-.
-	c8 c4\fz
-	r8 c4\fz
+	c8 c4 -\tweak X-offset #-2.7 \fz
+	r8 c4 -\tweak X-offset #-2.7 \fz
 % mesures 246 à 250
-	r8 c4\fz
-	r8 g4\fz
-	r8 g4\fz
+	r8 c4 -\tweak X-offset #-2.7 \fz
+	r8 g4 -\tweak X-offset #-2.7 \fz
+	r8 g4 -\tweak X-offset #-2.7 \fz
 	r8 c-. c-.
-	c4.\ff
+	c4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
 	c
 	R4.*2
 	
-	g4.\ff
+	g4. -\tweak X-offset #-3.8 \ff
 	g \mark \default
 % mesures 256 à 260
 	e8 r r
 	R4.
-	g4.\pp(
+	g4. -\tweak X-offset #-3.5 \pp(
 	c,8) r r
 	g'4.(
 % mesures 261 à 265
 	e8) r r
-	R4.*46
+	R4.*48
 % mesures 266 à 270
 	
 % mesures 271 à 275
@@ -234,8 +195,8 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 306 à 310
 	
 	
-	\clef bass \new CueVoice { \set instrumentCueName = "Hr."}
-	\cueDuring #"hornM" #DOWN {R4.*2} \clef treble
+	
+	
 	e4.\pp~
 % mesures 311 à 312
 	e~
@@ -246,7 +207,7 @@ MvtDeuxTrombeEII = \relative c' {
 	\key c \major
 	\transposition e
 % mesures 1 à 5
-	R4.*30
+	R4.*32
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -256,12 +217,11 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	\new CueVoice { \set instrumentCueName = "Kl. I"}
-	\cueDuring #"clarinetM" #UP {R4.*2}
+	
 % mesures 31 à 35
 	
 	\mark \default
-	g4.\f
+	g4.
 	g
 	g8 g4
 % mesures 36 à 40
@@ -279,9 +239,9 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	g,4.(\p
+	g,4.(
 	c8) r r
-	R4.*41
+	R4.*43
 % mesures 56 à 60
 	
 % mesures 61 à 65
@@ -299,11 +259,11 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 91 à 95
 	
 	
-	\new CueVoice { \set instrumentCueName = "Ob. I"}
-	\cueDuring #"oboeM" #UP {R4.*2}
+	
+	
 	\mark \default
 % mesures 96 à 100
-	c4.\ff
+	c4.
 	e
 	R4.
 	e
@@ -321,7 +281,7 @@ MvtDeuxTrombeEII = \relative c' {
 	c,4.
 	c \mark \default
 % mesures 111 à 115
-	R4.*59
+	R4.*63
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -345,8 +305,8 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 166 à 170
 	
 % mesures 171 à 175
-	\new CueVoice { \set instrumentCueName = "Fl. I"}
-	\cueDuring #"fluteM" #UP {R4.*4}
+	
+	
 	\mark \default
 	g4.\ff
 	g
@@ -358,7 +318,7 @@ MvtDeuxTrombeEII = \relative c' {
 	c8 c4\fz
 % mesures 181 à 185
 	c4.
-	R4.*53
+	R4.*55
 % mesures 186 à 190
 	
 % mesures 191 à 195
@@ -378,8 +338,7 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 226 à 230
 	
 % mesures 231 à 235
-	\new CueVoice { \set instrumentCueName = "Fl. I"}
-	\cueDuring #"fluteN" #UP {R4.*2}
+	
 % mesures 236 à 240
 	\mark \default
 	c4.\ff
@@ -390,29 +349,29 @@ MvtDeuxTrombeEII = \relative c' {
 	c
 	R4.
 	r8 g-. g-.
-	c8 c4\fz
-	r8 c4\fz
+	c8 c4 -\tweak X-offset #-2.7 \fz
+	r8 c4 -\tweak X-offset #-2.7 \fz
 % mesures 246 à 250
-	r8 c4\fz
-	r8 g4\fz
-	r8 g4\fz
+	r8 c4 -\tweak X-offset #-2.7 \fz
+	r8 g4 -\tweak X-offset #-2.7 \fz
+	r8 g4 -\tweak X-offset #-2.7 \fz
 	r8 c-. c-.
-	c4.\ff
+	c4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
 	c
 	R4.*2
 	
-	g4.\ff
+	g4. -\tweak X-offset #-3.8 \ff
 	g \mark \default
 % mesures 256 à 260
 	c8 r r
 	R4.
-	g4.\pp(
+	g4. -\tweak X-offset #-3.5 \pp(
 	c8) r r
 	g4.(
 % mesures 261 à 265
 	c8) r r
-	R4.*46
+	R4.*48
 % mesures 266 à 270
 	
 % mesures 271 à 275
@@ -432,8 +391,8 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 306 à 310
 	
 	
-	\clef bass \new CueVoice { \set instrumentCueName = "Hr."}
-	\cueDuring #"hornM" #DOWN {R4.*2} \clef treble
+	
+	
 	c4.\pp~
 % mesures 311 à 312
 	c~

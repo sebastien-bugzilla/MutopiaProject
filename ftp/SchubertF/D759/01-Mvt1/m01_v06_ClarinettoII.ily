@@ -6,48 +6,6 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   3               #
 %#######################################################################
-fagotNotesA = \relative c' {
-    \transposition a
-    s2.*130
-    a2.~
-    a4( bes c)
-    b2.~
-    b4( c d)
-}
-clarinetNotesA = \relative c''' {
-    \transposition a
-    s2.*21
-    a2.(
-    d,4. cis8[ d e])
-    a2.(
-    d,4. cis8[ d e])
-}
-clarinetNotesB = \relative c'' {
-    \transposition a
-    s2.*235
-    bes2.(
-    c4 des4. c8)
-    bes4( a2)
-}
-clarinetNotesC = \relative c'' {
-    \transposition a
-    s2.*319
-    fis8.( g16 a4. c!8)
-    b4.( a8[ g fis])
-    e2( a4
-    d,8) r
-}
-fluteNotesA = \relative c''' {
-    \transposition a
-    s2.*98
-    bes4( f4. bes8)
-    a8.( bes16 c4. e8)
-}
-\addQuote "fagotA" {\fagotNotesA}
-\addQuote "clarinetA" {\clarinetNotesA}
-\addQuote "fluteA" {\fluteNotesA}
-\addQuote "clarinetB" {\clarinetNotesB}
-\addQuote "clarinetC" {\clarinetNotesC}
 MvtUnClarinettiAI = \relative c {
 	\clef treble
 	\key d \minor
@@ -61,7 +19,7 @@ MvtUnClarinettiAI = \relative c {
 % mesures 11 à 15
 	    
 	    
-	    a'''2.\pp(
+	    \partcombineApart a'''2.\pp(
 	    d,4. cis8[ d e])
 	    a2.(
 % mesures 16 à 20
@@ -71,22 +29,22 @@ MvtUnClarinettiAI = \relative c {
 	    f4( e2
 	    f4) r r
 % mesures 21 à 25
-	    R2.
+	    \partcombineAutomatic R2. \partcombineApart
 	    a2.(
 	    d,4. cis8[ d e])
 	    a2.( 
 	    d,4. cis8[ d e])
 % mesures 26 à 30
-	    f4( d4. ees8)
-	    ees4( d4._\crescmarkup d8)
+	    \partcombineChords f4( d4. ees8)
+	    ees4( d4. d8)
 	    d4( e!) e\fz
-	    e\fz bes'4.(\fp\> a8
-	    bes4\! a2)
+	    e\fz \partcombineAutomatic bes'4.( a8
+	    bes4 a2)
 % mesures 31 à 35
-	    c,4\p( d4. ees8)
-	    ees4( d4._\crescmarkup d8)
+	    c,4( d4. ees8)
+	    ees4( d4. d8)
 	    d4( e!4. e8)
-	    e4(\f f4. e8)
+	    e4(-\tweak X-offset #-2. \f f4. e8)
 	    e4( f4.) e8\ff
 % mesures 36 à 40
 	    e2.~
@@ -96,15 +54,15 @@ MvtUnClarinettiAI = \relative c {
 	    
 % mesures 41 à 45
 	    
-	    <<{r8 f4(-.\pp f-. f8-.)}{s4. s^\un}>>
-	    <<{r8 f4-.( f-. f8-.)}{s4. s^\deux}>>
-	    <<{r8 f4-.( f-. f8-.)}{s4. s^\trois}>>
-	    <<{r8 f4-.( f-. f8-.)}{s4. s^\quatre}>>
+	    r8 f4(-.\pp f-. f8-.)
+	    r f4-.( f-. f8-.)
+	    r f4-.( f-. f8-.)
+	    r f4-.( f-. f8-.)
 % mesures 46 à 50
-	    <<{r8 f4-.( f-. f8-.)}{s4. s^\cinq}>>
-	    <<{r8 f4-.( f-. f8-.)}{s4. s^\six}>>
-	    <<{r8 f4-.( f-. f8-.)}{s4. s^\sept}>>
-	    r8 g4-.( g-. g8-.)
+	    r f4-.( f-. f8-.)
+	    r f4-.( f-. f8-.)
+	    r f4-.( f-. f8-.)
+	    r g4-.( g-. g8-.)
 	    r g4-.( g-. g8-.)
 % mesures 51 à 55
 	    r g4-.( g-. g8-.)
@@ -117,28 +75,28 @@ MvtUnClarinettiAI = \relative c {
 	    r f4-.( f-. f8-.)
 	    r g4-.( g-. g8-.)
 	    r g4-.( g-. g8-.)
-	    r g4-.(_\decresc g-. g8-.)\!
+	    r g4-.( g-. g8-.)
 % mesures 61 à 65
 	    r ges[( f]) f4-.( f8-.)
-	    R2._\gp \mark \default
-	    bes,2.\ffz\>(
+	    \partcombineAutomatic R2. \mark \default
+	    bes,2.(
 	    ees,4)\! r r
 	    bes'2.(\fz\> 
 % mesures 66 à 70
 	    f4)\! r r
 	    bes2.(\fz\>
 	    ges4)\! e'!\fz e\fz
-	    e!\fz_\crescmarkup e\fz e\fz
+	    e!\fz e\fz e\fz
 	    e!\fz e\fz e\fz
 % mesures 71 à 75
-	    e!8\fz des4\> des des8~
+	    e!8\fz des!4\> des des8~
 	    des des4 des\! des8(
-	    c2.\p)~
+	    c2.)~
 	    c2( ces4)
 	    bes2.~
 % mesures 76 à 80
 	    bes
-	    g'\f~
+	    g'~
 	    g2( ges4)
 	    f2.~
 	    f
@@ -147,7 +105,7 @@ MvtUnClarinettiAI = \relative c {
 	    r8 e4 e e8
 	    e2.\fz
 	    r8 e4 e e8(
-	    f) r d2\fz->(
+	    f) r d2(
 % mesures 86 à 90
 	    ees8) r ees2(\fz->
 	    f8) r f2\fz(->
@@ -170,17 +128,17 @@ MvtUnClarinettiAI = \relative c {
 	    r4 r r8 d(\p\<
 	    ees8. f16 g2)\>
 	    f2.\!~
-	    f8 r d2\ff\>~
+	    f8 r d2~
 	    d2.~
 % mesures 106 à 110
-	    d~\pp
 	    d~
-	    d(
-	    a)~\>
+	    d~
+	    d( \partcombineAutomatic
+	    a)~
 	}
 	\alternative {
 	    {
-	        a4\! r r
+	        a4 r r
 	    }
 	    {
 	        a2.~
@@ -191,7 +149,7 @@ MvtUnClarinettiAI = \relative c {
 	a(
 	c)(
 	bes4) r r
-	R2.*15
+	R2.*19
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -199,19 +157,16 @@ MvtUnClarinettiAI = \relative c {
 % mesures 126 à 130
 	
 % mesures 131 à 135
-	\clef bass
-	\new CueVoice { \set instrumentCueName = "Fagot"}
-	\cueDuring #"fagotA" #UP {R2.*4}
-	\clef treble
 	
 	
-	r4 r e->\fz~
+	
+	r4 r e-> -\tweak X-offset #-2.5 \fz~
 	e r r
 % mesures 136 à 140
-	e2->\fz r4
-	r e2->\fz
-	r4 r e4->\fz~
-	e r e\fz
+	e2-> -\tweak X-offset #-2.5 \fz r4
+	r e2-> -\tweak X-offset #-2.5 \fz
+	r4 r e4-> -\tweak X-offset #-2.5 \fz~
+	e r e -\tweak X-offset #-2.5 \fz
 	r e\fz r
 % mesures 141 à 145
 	e\fz r e\fz
@@ -220,8 +175,8 @@ MvtUnClarinettiAI = \relative c {
 	e8 e e e e e 
 	e e e e g g
 % mesures 146 à 150
-	b2.\ff\>(
-	g2)(\! e4)
+	b2.(
+	g2)( e4)
 	b2.~\>
 	b\!~
 	b8\p g'4 g g8
@@ -230,7 +185,7 @@ MvtUnClarinettiAI = \relative c {
 	r8 fis4 fis fis8
 	r8 fis4 fis fis8
 	aes2.\ff\>~
-	aes
+	aes\!
 % mesures 156 à 160
 	b,\>~
 	b(\!
@@ -268,7 +223,7 @@ MvtUnClarinettiAI = \relative c {
 	c) a2\fz
 	c\fz~ c8 d32( e f g)
 % mesures 186 à 190
-	a2.\fz
+	a2. -\tweak X-offset #-1.5 \fz
 	gis4-. d-. e-.
 	f-. d2\fz
 	f\fz~ f8 g32( a bes c)
@@ -277,14 +232,14 @@ MvtUnClarinettiAI = \relative c {
 	cis4-. g-. a-.
 	bes-. g,2\fz
 	bes2\fz~ bes8 c32( d ees f)
-	g2.\ffz\>~
-	g\!
-% mesures 196 à 200
-	g~\fz\>
-	g\!
-	g~\pp
+	g2.~
 	g
-	g_\crescmarkup~
+% mesures 196 à 200
+	g~
+	g
+	g~
+	g
+	g~ 
 % mesures 201 à 205
 	g
 	f\ff
@@ -311,39 +266,39 @@ MvtUnClarinettiAI = \relative c {
 	
 % mesures 221 à 225
 	
-	a'2.(\pp
+	\partcombineApart a'2.(\pp
 	d,4. cis8[ d e])
 	a2.(
 	d,4. cis8[ d e])
 % mesures 226 à 230
 	f2.(
 	g4\< aes4.\> g8)
-	f4(\! e2)
-	R2.*2
-	
+	f4(\! e2) \partcombineAutomatic
+	R2.
+	R2.
 % mesures 231 à 235
-	d2.(\p
+	\partcombineApart d2.(\p
 	g,4. fis8[ g a])
 	d2.(
 	g,4. fis8[ g a)]
 	bes2.(
 % mesures 236 à 240
 	c4\< des4.\> c8)
-	bes4(\! a2)
+	bes4(\! a2) \partcombineAutomatic
 	c8( d! ees4. d8
 	ees4)( d2)
 	c2.~
 % mesures 241 à 245
 	c2~ c8(_\crescmarkup d)
 	d2 e4-.\f
-	f\fz f4.(\fp\> e8
-	f4\! e2)
-	c2.~\p
+	f\fz f4.( e8
+	f4 e2)
+	c2.~
 % mesures 246 à 250
 	c2~ c8( d)
 	d2~ d8(_\crescmarkup e)
 	e2~ e8 e
-	e2~ e8 gis\ff
+	e2~ e8[ gis]
 	gis2.~
 % mesures 251 à 255
 	gis \mark \default
@@ -352,15 +307,15 @@ MvtUnClarinettiAI = \relative c {
 	
 	
 % mesures 256 à 260
-	<<{r8 c,4(\pp-. c-. c8-.)}{s4. s^\un}>>
-	<<{r8 c4(-. c-. c8-.)}{s4. s^\deux}>>
-	<<{r8 c4(-. c-. c8-.)}{s4. s^\trois}>>
-	<<{r8 c4(-. c-. c8-.)}{s4. s^\quatre}>>
-	<<{r8 c4(-. c-. c8-.)}{s4. s^\cinq}>>
+	r8 c,4(\pp-. c-. c8-.)
+	r c4(-. c-. c8-.)
+	r c4(-. c-. c8-.)
+	r c4(-. c-. c8-.)
+	r c4(-. c-. c8-.)
 % mesures 261 à 265
-	<<{r8 c4(-. c-. c8-.)}{s4. s^\six}>>
-	<<{r8 c4(-. c-. c8-.)}{s4. s^\sept}>>
-	r8 d4(-. d-. d8-.)
+	r c4(-. c-. c8-.)
+	r c4(-. c-. c8-.)
+	r d4(-. d-. d8-.)
 	r d4(-. d-. d8-.)
 	r d4(-. d-. d8-.)
 % mesures 266 à 270
@@ -380,7 +335,7 @@ MvtUnClarinettiAI = \relative c {
 	r ces([-> bes]) bes4 bes8
 	r bes4 bes bes8
 	r a!4 a a8
-	R2._\gp \mark \default
+	R2. \mark \default
 % mesures 281 à 285
 	d2.(\ff\>
 	g,4)\! r r
@@ -398,7 +353,7 @@ MvtUnClarinettiAI = \relative c {
 	e2( ees4)
 	d2.~
 	d
-	b'\f~
+	b'~
 % mesures 296 à 300
 	b2( bes4)
 	a2.~
@@ -408,7 +363,7 @@ MvtUnClarinettiAI = \relative c {
 % mesures 301 à 305
 	gis2.\fz
 	r8 gis4 gis gis8(
-	a) r d,2\fz~
+	a) r d,2~
 	d8 r d2\fz(
 	fis8) r fis2\fz(
 % mesures 306 à 310
@@ -424,16 +379,16 @@ MvtUnClarinettiAI = \relative c {
 	
 	
 % mesures 316 à 320
-	
+	\partcombineApart
 	d4(\p a4. d8)
 	cis8.( d16 e4. g8)
-	fis8.(\< g16 a4.\! c!8)
-	b4.(\> a8[ g fis])\!
+	fis8.(_\< g16 a4.\! c!8)
+	b4.(_\> a8[ g fis])\!
 % mesures 321 à 325
 	e2( a4
-	d,8) r d2\ffz\>~
-	d2.~\p
-	d\pp~
+	d,8) r \partcombineAutomatic d2~
+	d2.~
+	d~
 	d~
 % mesures 326 à 330
 	d(
@@ -445,7 +400,7 @@ MvtUnClarinettiAI = \relative c {
 	
 	
 	
-	a2.\pp~
+	a2.~
 	a~
 % mesures 336 à 340
 	a4 r r
@@ -462,26 +417,26 @@ MvtUnClarinettiAI = \relative c {
 % mesures 346 à 350
 	d)( e\< d
 	e d e
-	d)\! a\f( d
+	d)\! a -\tweak X-offset #-2. \f( d
 	f\< a d)\!
 	f,2.\ff
 % mesures 351 à 355
 	e
-	d(\pp
-	e2\< f4)
-	d2.(\>
+	d(_\pp
+	e2_\< f4)
+	d2.(_\>
 	e2\! f4)
 % mesures 356 à 360
-	f,2.\mf\<~
+	f,2.~
 	f(
-	g)\>~
+	g)~
 	g(
-	a)\pp\<~
+	a)~
 % mesures 361 à 365
 	a(
-	bes)~\>
+	bes)~
 	bes
-	a4\ff r r
+	a4 r r
 	cis r r
 % mesures 366 à 368
 	d r r
@@ -495,38 +450,38 @@ MvtUnClarinettiAII = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*20
+	    R2.*11
 % mesures 6 à 10
 	
 % mesures 11 à 15
 	    
 	    
-	    
-	    
-	    
+	    R2.
+	    R2.
+	    R2.
 % mesures 16 à 20
-	    
-	    
-	    
-	    
-	    
+	    R2.
+	    R2.
+	    R2.
+	    R2.
+	    R2.
 % mesures 21 à 25
-	    
-	    
-	    
-	    \new CueVoice { \set instrumentCueName = "Clarinet I"}
-	    \cueDuring #"clarinetA" #UP {R2.*4}
+	    R2.
+	    R2.
+	    R2.
+	    R2.
+	    R2.
 % mesures 26 à 30
-	    a''4\p( bes4. c!8)
+	    a''4 -\tweak X-offset #-2. \p( bes4. c!8)
 	    c4( bes4._\crescmarkup b8)
 	    b4( c) cis\fz
 	    cis\fz g'2\fp\>~
 	    g2.
 % mesures 31 à 35
-	    a,4\p( bes4. c8)
+	    a,4 -\tweak X-offset #-2. \p( bes4. c8)
 	    c4( bes4._\crescmarkup b8)
 	    b4( c4. cis8)
-	    cis4(\f d4. cis8)
+	    cis4( d4. cis8)
 	    cis4( d4.) cis8\ff
 % mesures 36 à 40
 	    cis2.~
@@ -557,10 +512,10 @@ MvtUnClarinettiAII = \relative c {
 	    r d4-.( d-. d8-.)
 	    r f4-.( f-. f8-.)
 	    r f4-.( f-. f8-.)
-	    r ees4-.(_\decresc ees-.\! ees8-.)
+	    r ees4-.(_\decresc ees-. ees8-.)\!
 % mesures 61 à 65
 	    r ees4-.( ees4-. ees8-.)
-	    R2._\gp \mark \default
+	    R2. \mark \default
 	    bes2.\ffz\>(
 	    ees,4)\! r r
 	    bes'2.(\fz\> 
@@ -587,7 +542,7 @@ MvtUnClarinettiAII = \relative c {
 	    r8 c4 c c8
 	    des2.\fz
 	    r8 c4 c c8(
-	    d!) r bes2\fz->~
+	    d!) r bes2-\tweak X-offset #-2. \fz->~
 % mesures 86 à 90
 	    bes8 r bes2(\fz->
 	    d8) r d2\fz(->
@@ -598,14 +553,14 @@ MvtUnClarinettiAII = \relative c {
 	    b8) r d2->(\fz
 	    c4) bes!-. a-. \mark \default
 	    bes r r
-	    R2.*5
+	    R2.*7
 	    
 % mesures 96 à 100
 	    
 	    
 	    
-	    \new CueVoice { \set instrumentCueName = "Fluto I"}
-	    \cueDuring #"fluteA" #UP {R2.*2}
+	    
+	    
 % mesures 101 à 105
 	    bes4\p\<( f4. b8)(
 	    c8. d16) ees4.\>( e8)\!
@@ -631,27 +586,24 @@ MvtUnClarinettiAII = \relative c {
 	fis~
 	fis(
 	g4) r r
-	R2.*15
+	R2.*19
 % mesures 116 à 120
 	
 % mesures 121 à 125
 	
 % mesures 126 à 130
-	\clef bass
-	\new CueVoice { \set instrumentCueName = "Fagot"}
-	\cueDuring #"fagotA" #UP {R2.*4}
-	\clef treble
+	
 % mesures 131 à 135
 	
 	
 	
-	r4 r cis->\fz~
+	r4 r cis-> -\tweak X-offset #-2.5 \fz~
 	cis r r
 % mesures 136 à 140
-	cis2->\fz r4
-	r cis2->\fz
-	r4 r cis4->\fz~
-	cis r cis\fz
+	cis2-> -\tweak X-offset #-2.5 \fz r4
+	r cis2-> -\tweak X-offset #-2.5 \fz
+	r4 r cis4-> -\tweak X-offset #-2.5 \fz~
+	cis r cis -\tweak X-offset #-2.5 \fz
 	r cis\fz r
 % mesures 141 à 145
 	cis\fz r cis\fz
@@ -670,7 +622,7 @@ MvtUnClarinettiAII = \relative c {
 	r8 e4 e e8
 	r8 dis4 dis dis8
 	f!2.\ff\>~
-	f
+	f\!
 % mesures 156 à 160
 	b,\>~
 	b(\!
@@ -705,10 +657,10 @@ MvtUnClarinettiAII = \relative c {
 	R2.
 	gis,2.(\>
 	a2\! b4
-	a) a2\fz
+	a) a2
 	c\fz~ c8 d32( e f g)
 % mesures 186 à 190
-	a2.\fz
+	a2. -\tweak X-offset #-1.5 \fz
 	gis4-. d-. e-.
 	f-. d2\fz
 	f\fz~ f8 g32( a bes c)
@@ -747,29 +699,41 @@ MvtUnClarinettiAII = \relative c {
 	cis~
 	cis( \mark \default
 	d4) r r
-	R2.*16
+	R2.*3
 	
 % mesures 221 à 225
 	
+	R2.
+	R
+	R
+	R
 % mesures 226 à 230
-	
+	R
+	R
+	R
+	R
+	R
 % mesures 231 à 235
-	
+	R
+	R
+	R
+	R
+	R
 % mesures 236 à 240
-	\new CueVoice { \set instrumentCueName = "Clarinet I"}
-	\cueDuring #"clarinetB" #UP {R2.*3}
+	R
+	R
 	c2.\<(~
 	c2\> b4)\!
 	g4( a4. bes!8)
 % mesures 241 à 245
-	bes4( a4._\crescmarkup c8)
+	bes4( a4. c8)
 	c4( bes) d-.\f
 	d\fz d2\fp\>~
 	d2.\!
 	g,4(\p a4. bes8)
 % mesures 246 à 250
 	bes4( a4. c8)
-	c4( bes4._\crescmarkup d8)
+	c4( bes4. d8)
 	d4( c4. d8)
 	d4( c4.) d8\ff
 	d2.~
@@ -808,7 +772,7 @@ MvtUnClarinettiAII = \relative c {
 	r aes4 aes aes8
 	r g4 g g8
 	r g4 g g8
-	R2._\gp \mark \default
+	R2. \mark \default
 % mesures 281 à 285
 	d'2.(\ff\>
 	g,4)\! r r
@@ -847,19 +811,19 @@ MvtUnClarinettiAII = \relative c {
 	g4) d'-. cis-. \mark \default
 % mesures 311 à 315
 	d r r
-	R2.*7
+	R2.*5
 	
 	
 	
 % mesures 316 à 320
 	
-	
-	
-	\new CueVoice { \set instrumentCueName = "Clarinet I"}
-	\cueDuring #"clarinetC" #UP {R2.*3 r4}
+	R2.
+	R2.
+	R2.
+	R2.
 % mesures 321 à 325
-	
-	 d2\ffz\>~
+	R2.
+	r4 d2 -\tweak X-offset #-3.2 \ffz\>~
 	d2.~\p
 	d\pp~
 	d~
@@ -873,7 +837,7 @@ MvtUnClarinettiAII = \relative c {
 	
 	
 	
-	f2.\pp(
+	f2. -\tweak X-offset #-3.2 \pp(
 	g)(
 % mesures 336 à 340
 	f4) r r
@@ -890,12 +854,12 @@ MvtUnClarinettiAII = \relative c {
 % mesures 346 à 350
 	d)( e\< d
 	e d e
-	d)\! d,\f( f
+	d)\! d, -\tweak X-offset #-2. \f( f
 	a\< d f)\!
 	d2.\ff
 % mesures 351 à 355
 	cis
-	d4\pp r r 
+	d4 r r 
 	R2.*3
 	
 	

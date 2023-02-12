@@ -6,45 +6,6 @@
 %#######################################################################
 %#               M O U V E M E N T   2   -   V O I X   1               #
 %#######################################################################
-oboeNotesM = \relative c''' {
-    s4.*89
-    bes16.( aes32 bes16 aes f des)
-    aes'16.(-> ges32 aes16 ges ees c)
-}
-oboeNotesN = \relative c'' {
-    s4.*232
-    fis16.( e32 fis16 e cis a
-    e'16. d32 e16 d b gis)
-}
-violinNotesM = \relative c'' {
-    s4.*152
-    dis4.(
-    cis)
-}
-violinNotesN = \relative c''' {
-    s4.*291
-    c4.(
-    aes
-    ees
-    ces)
-}
-fluteNotesM = \relative c''' {
-    s4.*91
-    bes16.( aes32 bes16 aes f des)
-    aes'16.( ges32 aes16 ges ees c
-    des8) r r
-}
-fluteNotesN = \relative c'' {
-    s4.*234
-    fis16.( e32 fis16 e cis a
-    e'16. d32 e d b gis)
-}
-\addQuote "oboeM" {\oboeNotesM}
-\addQuote "oboeN" {\oboeNotesN}
-\addQuote "violinM" {\violinNotesM}
-\addQuote "violinN" {\violinNotesN}
-\addQuote "fluteM" {\fluteNotesM}
-\addQuote "fluteN" {\fluteNotesN}
 MvtDeuxFlautiI = \relative c'' {
 	\clef treble
 	\key e \major
@@ -73,12 +34,12 @@ MvtDeuxFlautiI = \relative c'' {
 % mesures 26 à 30
 	
 	
-	
-	b,16(\> dis fis a gis fis
+	\partcombineApart
+	b,16(_\> dis fis a gis fis
 	e8)\! r r
 % mesures 31 à 35
-	b16(\> dis fis a\! gis fis
-	e8) r r \mark \default
+	b16(_\> dis fis a\! gis fis
+	e8) r r  \partcombineAutomatic \mark \default
 	fis4.\f
 	gis
 	a8( b8.-> a16)
@@ -102,15 +63,15 @@ MvtDeuxFlautiI = \relative c'' {
 	c(\fp\>
 % mesures 51 à 55
 	b4)\! r8
-	b'(\p gis e
+	\partcombineApart b'(-\tweak X-offset #-1.5 \p gis e
 	b) r r
 	b'->( cis16_\crescmarkup b gis e
 	b8) r r
 % mesures 56 à 60
-	e4.(\pp
+	e4.( 
 	fis
-	gis8) r r
-	R4.*31
+	gis8) \partcombineAutomatic r r
+	R4.*33
 % mesures 61 à 65
 	
 % mesures 66 à 70
@@ -122,17 +83,13 @@ MvtDeuxFlautiI = \relative c'' {
 % mesures 81 à 85
 	
 % mesures 86 à 90
-	\new CueVoice { 
-	    \set instrumentCueName = "Ob. I"
-	    \override InstrumentSwitch.self-alignment-X = #RIGHT
-	}
-	\cueDuring #"oboeM" #UP {R4.*2}
+	
 % mesures 91 à 95
 	
-	bes16.(->\pp aes32 bes16 aes f des)
-	aes'16.(-> ges32 aes16 ges ees c
+	\partcombineApart bes16.(_> -\tweak X-offset #-4.0 \pp aes32 bes16 aes f des)
+	aes'16.(_> ges32 aes16 ges ees c
 	des8) r r
-	R4. \mark \default
+	\partcombineAutomatic R4. \mark \default
 % mesures 96 à 100
 	gis!4.\ff
 	cis
@@ -161,29 +118,29 @@ MvtDeuxFlautiI = \relative c'' {
 	
 	
 	
-	r8 r g,~\p\<
-	g\trill( b\> a
+	r8 r g,~
+	g\trill( b a
 % mesures 121 à 125
-	g4)\! r8
+	g4) r8
 	R4.*5
 	
 	
 	
 % mesures 126 à 130
 	
-	r8 r c\<~
-	c(\trill -\tweak X-offset #2.2 \becarre\> e d\!
+	r8 r c~
+	c(\trill e d
 	c4) r8
-	e,4(-> d16 b
+	\partcombineApart e,4(-> d16 b
 % mesures 131 à 135
 	c8) r r
 	e4(-> d16 b
-	c8) r r
+	c8) r r \partcombineAutomatic
 	R4.*2
 	
 % mesures 136 à 140
-	g'4(\pp-> e8)
-	R4.*16
+	\partcombineApart g'4(-\tweak X-offset #-3.5 \pp-> e8) \partcombineAutomatic
+	R4.*18
 	
 	
 	
@@ -194,14 +151,14 @@ MvtDeuxFlautiI = \relative c'' {
 % mesures 151 à 155
 	
 	
-	\new CueVoice { \set instrumentCueName = "Viol. I"}
-	\cueDuring #"violinM" #UP {R4.*2}
+	
+	
 	c4.(\fp\>
 % mesures 156 à 160
 	b)\!
-	e(\pp\<
-	fis\>
-	g8)\! r r
+	e(
+	fis
+	g8) r r
 	R4.*3
 % mesures 161 à 165
 	
@@ -213,13 +170,13 @@ MvtDeuxFlautiI = \relative c'' {
 	R4.*4
 	
 	
-	
+	\partcombineApart
 	b,16(\< dis fis a\> gis fis
 % mesures 171 à 175
 	e8)\! r r 
 	b16(\< dis fis a\> gis fis
 	e4)\! r8 \mark \default
-	fis4.\ff
+	\partcombineAutomatic fis4.\ff
 	gis
 % mesures 176 à 180
 	a8( b8.-> a16)
@@ -240,17 +197,17 @@ MvtDeuxFlautiI = \relative c'' {
 	gis4.->(
 	fis)
 % mesures 191 à 195
-	f(\fp\>
+	f(
 	e)\!
 	e'8(\< cis\> a\!
 	e) r r
-	e'8(\<^\crescmarkup fis16 e\> cis a\!
+	e'8(\< fis16 e\> cis a\!
 % mesures 196 à 200
 	e8) r r
 	a4.(\pp
 	b
 	cis8) r r
-	R4.*33
+	R4.*35
 % mesures 201 à 205
 	
 % mesures 206 à 210
@@ -266,15 +223,12 @@ MvtDeuxFlautiI = \relative c'' {
 % mesures 231 à 235
 	
 	
-	\new CueVoice { 
-	    \set instrumentCueName = "Ob. I"
-	    \override InstrumentSwitch.self-alignment-X = #RIGHT
-	}
-	\cueDuring #"oboeN" #UP {R4.*2}
-	fis,16.(\ppp-> e32 fis16 e cis a
+	
+	
+	\partcombineApart fis,16.( -\tweak X-offset #-5.0 \ppp-> e32 fis16 e cis a
 % mesures 236 à 240
 	e'16.-> d32 e16 d b gis) \mark \default
-	a'4.\ff
+	\partcombineAutomatic a'4.\ff
 	c
 	b
 	d
@@ -282,30 +236,30 @@ MvtDeuxFlautiI = \relative c'' {
 	c8 e4
 	d8 f4
 	e8-. g-. fis!-.
-	e4.
-	g
+	\partcombineApart e4.
+	\partcombineAutomatic g
 % mesures 246 à 250
 	fis
 	a
-	g8 b,4
+	g8 \partcombineApart b,4
 	a8 c4
-	e16\ff e8 e e16( 
+	\partcombineChords e16\ff[ e8 e e16(] 
 % mesures 251 à 255
-	g) g8 g g16
-	a8 r r
+	g)[ g8 g g16] \partcombineAutomatic
+	a8 r r 
 	R4. 
 	dis,!16\ff dis8 dis dis16(
 	fis) fis8 fis fis16( \mark \default
 % mesures 256 à 260
-	e8) r r
-	c,4.\fp\>(
+	\partcombineChordsOnce e8) r r
+	c,4.(
 	b16)\!( dis! fis a gis fis)
 	c4.(\fp\>
 	b4)\! r8
 % mesures 261 à 265
-	b'8( gis e
+	\partcombineApart b'8( gis e
 	b4) r8
-	b'8(_\crescmarkup cis16 b gis e
+	\partcombineAutomatic b'8(_\crescmarkup cis16 b gis e
 	b4) r8
 	R4.
 % mesures 266 à 270
@@ -315,11 +269,11 @@ MvtDeuxFlautiI = \relative c'' {
 	fis
 	gis
 % mesures 271 à 275
-	ais)(\<
-	b4\> a!16 fis!\!
+	ais)(
+	b4 a!16 fis!
 	gis4 fis16 dis
 	e8) r r
-	R4.*17
+	R4.*21
 % mesures 276 à 280
 	
 % mesures 281 à 285
@@ -327,22 +281,18 @@ MvtDeuxFlautiI = \relative c'' {
 % mesures 286 à 290
 	
 % mesures 291 à 295
-	\new CueVoice { 
-	    \set instrumentCueName = "Viol. I"
-	    \override InstrumentSwitch.self-alignment-X = #RIGHT
-	}
-	\cueDuring #"violinN" #UP {R4.*4}
+	
 % mesures 296 à 300
-	b'4.\pp\<(
-	cis\>
-	b8\! gis e
+	b'4.(
+	cis
+	b8 gis e
 	fis4.)(->
 	gis4) r8
 % mesures 301 à 305
 	R4.*3
 	
 	
-	gis4.(->_\dimmarkup
+	gis4.(->
 	fis8) r r
 % mesures 306 à 310
 	gis4.(->
@@ -378,16 +328,16 @@ MvtDeuxFlautiII = \relative c'' {
 	d4.(\<
 	fis\>
 	g8\!) r r
-	R4.*8
+	R4.*4
 % mesures 26 à 30
 	
 	
 	
-	
-	
+	R4.
+	R4.
 % mesures 31 à 35
-	
-	\mark \default
+	R4.
+	R4. \mark \default
 	dis4.\f
 	e
 	fis8( gis8.-> fis16)
@@ -411,14 +361,14 @@ MvtDeuxFlautiII = \relative c'' {
 	ais(\fp\>
 % mesures 51 à 55
 	a!4)\! r8
-	R4.*4
-	
-	
-	
+	R4.
+	R4.
+	R4.
+	R4.
 % mesures 56 à 60
-	e'4.(\pp
+	e'4.\pp
 	dis
-	e8) r r
+	e8 r r
 	R4.*33
 % mesures 61 à 65
 	
@@ -434,10 +384,10 @@ MvtDeuxFlautiII = \relative c'' {
 	
 % mesures 91 à 95
 	
-	\new CueVoice { \set instrumentCueName = "Fl. I"}
-	\cueDuring #"fluteM" #UP {R4.*3}
-	
-	R4. \mark \default
+	R4.
+	R4.
+	R4.
+	R4.\mark \default
 % mesures 96 à 100
 	e4.\ff
 	gis
@@ -479,14 +429,17 @@ MvtDeuxFlautiII = \relative c'' {
 	r8 r e16(\< fis!
 	g8\> c b\!
 	c4) r8
-	R4.*23
+	R4.
 % mesures 131 à 135
-	
-	
-	
-	
+	R
+	R
+	R
+	R4.*2
 	
 % mesures 136 à 140
+	R4.
+	R4.*18
+	
 	
 	
 % mesures 141 à 145
@@ -496,8 +449,8 @@ MvtDeuxFlautiII = \relative c'' {
 % mesures 151 à 155
 	
 	
-	\new CueVoice { \set instrumentCueName = "Viol. I"}
-	\cueDuring #"violinM" #UP {R4.*2}
+	
+	
 	ais,4.(\fp\>
 % mesures 156 à 160
 	a!)\!
@@ -512,15 +465,15 @@ MvtDeuxFlautiII = \relative c'' {
 	fis\>
 	g8)\! r r
 % mesures 166 à 170
-	R4.*8
+	R4.*4
 	
 	
 	
-	
+	R4.
 % mesures 171 à 175
-	
-	
-	\mark \default
+	R4.
+	R4.
+	R4. \mark \default
 	dis4.\ff
 	e
 % mesures 176 à 180
@@ -569,10 +522,10 @@ MvtDeuxFlautiII = \relative c'' {
 	
 	
 	
-	\new CueVoice { \set instrumentCueName = "Fl. I"}
-	\cueDuring #"fluteN" #UP {R4.*2}
+	
+	R4.
 % mesures 236 à 240
-	\mark \default
+	R4. \mark \default
 	e4.\ff
 	a
 	a
@@ -588,9 +541,9 @@ MvtDeuxFlautiII = \relative c'' {
 	a
 	g8 b4
 	a8 c4
-	c16\ff c8 c c16~
+	c16\ff[ c8 c c16~]
 % mesures 251 à 255
-	c c8 c c16
+	c[ c8 c c16]
 	c8 r r
 	R4. 
 	a16\ff a8 a a16(
@@ -602,8 +555,8 @@ MvtDeuxFlautiII = \relative c'' {
 	ais4.(\fp\>
 	a!4)\! r8
 % mesures 261 à 265
-	R4.*2
-	
+	R4.
+	R4.
 	b'8(_\crescmarkup cis16 b gis e
 	b4) r8
 	R4.
@@ -618,7 +571,7 @@ MvtDeuxFlautiII = \relative c'' {
 	gis4\> a!16 fis!\!
 	gis4 fis16 dis
 	e8) r r
-	R4.*17
+	R4.*21
 % mesures 276 à 280
 	
 % mesures 281 à 285
@@ -626,8 +579,7 @@ MvtDeuxFlautiII = \relative c'' {
 % mesures 286 à 290
 	
 % mesures 291 à 295
-	\new CueVoice { \set instrumentCueName = "Viol. I"}
-	\cueDuring #"violinN" #UP {R4.*4}
+	
 % mesures 296 à 300
 	e4.\pp\<~
 	e\>~

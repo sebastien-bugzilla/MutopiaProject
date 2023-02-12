@@ -6,22 +6,6 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   5               #
 %#######################################################################
-oboeNotesA = \relative c'' {
-    \transposition d
-    s2.*16
-    c2.(
-    d4 ees4. d8)
-    c4( b2
-    c4) r
-}
-violinNotesA = \relative c''' {
-    \transposition d
-    s2.*132
-    c2.(
-    b)
-}
-\addQuote "oboeA" {\oboeNotesA}
-\addQuote "violinA" {\violinNotesA}
 MvtUnCorniDI = \relative c {
 	\clef treble
 	\key a \minor
@@ -29,7 +13,7 @@ MvtUnCorniDI = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*15
+	    R2.*18
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -37,23 +21,23 @@ MvtUnCorniDI = \relative c {
 % mesures 16 à 20
 	    
 	    
-	    \new CueVoice { \set instrumentCueName = "Oboe I"}
-	    \cueDuring #"oboeA" #UP {R2.*3 r4}
-	     f''4.(\fz\> e8
+	    
+	    
+	    r4 f''4.( e8
 % mesures 21 à 25
-	    f4 e2)\p
-	    R2.
+	    f4 e2)
+	    R2. \partcombineApart
 	    e2->(~ e8 f
 	    e4) r r
 	    e2(->~ e8 f
 % mesures 26 à 30
-	    e4) c2\p~
-	    c~_\crescmarkup c8( d)
-	    d2 e4\fz
-	    f\fz f4.\fp\>( e8
+	    e4) c2~
+	    c~ c8( d)
+	    d2 e4
+	    f f4.(_\fp_\> e8
 	    f4 e2)\!
 % mesures 31 à 35
-	    r4 c2\p~
+	    \partcombineAutomatic r4 c2\p~
 	    c~ c8_\crescmarkup( d)
 	    d2~ d8( e)
 	    e2\f~ e8 e
@@ -61,12 +45,12 @@ MvtUnCorniDI = \relative c {
 % mesures 36 à 40
 	    e2.~
 	    e \mark \default
-	    e4\fz c2\fp\>~
-	    c2.\!~
+	    e4\fz \partcombineApart c2~
+	    c2.~
 	    c~
 % mesures 41 à 45
 	    c4( d e)
-	    f\pp r r
+	    f \partcombineAutomatic r r
 	    R2.*10
 % mesures 46 à 50
 	
@@ -78,13 +62,13 @@ MvtUnCorniDI = \relative c {
 	    c c4 r8 r c~
 % mesures 56 à 60
 	    c c4 r8 r c~
-	    c c4 r8 r c~
-	    c d4 r8 r d~
-	    d d4 r8 r4
-	    R2.*2
+	    c c4 r8 r \partcombineApart c~
+	    c \partcombineAutomatic d4  r8 r d~
+	    d d4 r8 r4 
+	    R2.*3
 % mesures 61 à 65
 	    
-	    R2._\gp \mark \default
+	    \mark \default
 	    f2.\ffz\>~
 	    f4\! r r
 	    c2.\fz\>~
@@ -111,15 +95,15 @@ MvtUnCorniDI = \relative c {
 	    r8 f4 f f8
 	    f2.\fz
 	    r8 f4 f f8~
-	    f r f2->\fz~
+	    f r f2~
 % mesures 86 à 90
-	    f8 r f2\fz->~
-	    f8 r f2->\fz~
-	    f4 c-. c-.
-	    c8 r f2->\fz~
-	    f8 r f2\fz->(
+	    f8 r f2~
+	    f8 r f2~
+	    f4 \partcombineApart c-. c-. 
+	    c8 \partcombineAutomatic r f2~
+	    f8 r f2(
 % mesures 91 à 95
-	    d8) r d2->\fz~
+	    d8) r d2~
 	    d4 c-. c-. \mark \default
 	    c r r
 	    R2.*3
@@ -155,7 +139,7 @@ MvtUnCorniDI = \relative c {
 	a~
 	a~
 	a4 r r
-	R2.*17
+	R2.*19
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -164,8 +148,8 @@ MvtUnCorniDI = \relative c {
 	
 % mesures 131 à 135
 	
-	\new CueVoice { \set instrumentCueName = "Violino I"}
-	\cueDuring #"violinA" #UP {R2.*2}
+	
+	
 	d2.\f
 	e2( f4)
 % mesures 136 à 140
@@ -193,8 +177,8 @@ MvtUnCorniDI = \relative c {
 	c2.\ff\>~
 	c\!
 % mesures 156 à 160
-	c~\>
-	c\!
+	\partcombineApart c~
+	c \partcombineAutomatic
 	R2.*4
 	
 	
@@ -231,9 +215,9 @@ MvtUnCorniDI = \relative c {
 % mesures 186 à 190
 	e4 r r
 	R2.
-	a,8.[ a16 a8. a16] a8. a16
+	\partcombineApart a,8.[ a16 a8. a16] a8. a16
 	a8.[ a16 a8. a16] a8. a16
-	e'8.[ e16 e8. e16] e8. e16
+	\partcombineAutomatic e'8.[ e16 e8. e16] e8. e16
 % mesures 191 à 195
 	e8.[ e16 e8. e16] e8. e16
 	d8.[ d16 d8. d16] d8. d16
@@ -255,18 +239,18 @@ MvtUnCorniDI = \relative c {
 % mesures 206 à 210
 	e\ff
 	d\fz
-	e\fp~^\un
-	e~^\deux
-	e~^\trois
+	e\fp~
+	e~
+	e~
 % mesures 211 à 215
-	e~_\decresc^\quatre
-	e~\!^\cinq
-	e~^\six
-	e~\pp^\sept
-	e~^\huit
+	e~_\decresc
+	e~\!
+	e~
+	e~\pp
+	e~
 % mesures 216 à 220
-	e~^\neuf
-	e~^\dix \mark \default
+	e~
+	e~ \mark \default
 	e4 r r
 	R2.*10
 	
@@ -276,17 +260,17 @@ MvtUnCorniDI = \relative c {
 	
 	
 	
-	e4(\p\< f4. e8
-	f4\> e2)(
+	e4( f4. e8
+	f4 e2)(
 % mesures 231 à 235
-	f4)\! r r
+	f4) r r
 	R2.*9
 % mesures 236 à 240
 	
 % mesures 241 à 245
-	r4 r r8 e_\crescmarkup
-	e4( d) a-.\f
-	c\fz-. r r
+	\partcombineApart r4 r r8 e_\crescmarkup
+	e4( d) a-.
+	\partcombineAutomatic c\fz-. r r
 	R2.
 	g'2.\p~
 % mesures 246 à 250
@@ -297,7 +281,7 @@ MvtUnCorniDI = \relative c {
 	
 % mesures 251 à 255
 	\mark \default
-	e4\fz g,2\fp\>~
+	e4 g,2\fp\>~
 	g2.\!~
 	g~
 	g4(\pp\< a d\>
@@ -316,9 +300,9 @@ MvtUnCorniDI = \relative c {
 	g g4 r8 r g(
 	a) a4 r8 r a~
 	a a4 r8 r4
-	R2.*6
+	R2.*7
 % mesures 276 à 280
-	R2._\gp \mark \default
+	\mark \default
 % mesures 281 à 285
 	d2.\ff\>~
 	d4\! r r
@@ -336,25 +320,25 @@ MvtUnCorniDI = \relative c {
 	
 	
 	
-	e4\f r r
+	\partcombineApart e4 \partcombineAutomatic r r
 % mesures 296 à 300
-	d r r
-	e r r
+	\partcombineApart d \partcombineAutomatic r r
+	\partcombineAutomatic e r r
 	e r r
 	c2.\fz
-	a\fz
+	\partcombineApartOnce a
 % mesures 301 à 305
 	c\fz
-	a\fz
-	e'8 r e2(\fz
-	d8) r d2(\fz
-	e8) r e2(\fz
+	\partcombineApartOnce a
+	e'8 r \partcombineApart e2(
+	d8) \partcombineAutomatic r \partcombineApart d2(
+	e8) \partcombineAutomatic r \partcombineApart e2(
 % mesures 306 à 310
-	d4) e-. e-.
-	e8 r e2\fz(
-	d8) r d2(\fz
-	e8) r e2(\fz
-	d4) e-. e-. \mark \default
+	d4) e-. \partcombineAutomatic e-.
+	e8 \partcombineAutomatic r \partcombineApart e2(
+	d8) \partcombineAutomatic r \partcombineApart d2(
+	e8) \partcombineAutomatic r \partcombineApart e2(
+	d4) \partcombineAutomatic e-. e-. \mark \default
 % mesures 311 à 315
 	e r r
 	R2.*3
@@ -392,7 +376,7 @@ MvtUnCorniDI = \relative c {
 	
 	
 	
-	e4_\crescmarkup r r
+	e4 r r
 	e r r
 % mesures 346 à 350
 	e r e\<
@@ -402,21 +386,21 @@ MvtUnCorniDI = \relative c {
 	e2.\ff
 % mesures 351 à 355
 	e
-	a,\pp~
-	a~\<
-	a\>~
+	a,~
+	a~
+	a~
 	a
 % mesures 356 à 360
-	e'\mf\<~
+	e'~
 	e(
-	f)~\>
+	f)~
 	f
-	e\pp\<~
+	e~
 % mesures 361 à 365
 	e(
-	f)\>~
+	f)~
 	f
-	e4\ff r r
+	e4 r r
 	e r r
 % mesures 366 à 368
 	e r r
@@ -430,7 +414,7 @@ MvtUnCorniDII = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*15
+	    R2.*18
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -438,21 +422,21 @@ MvtUnCorniDII = \relative c {
 % mesures 16 à 20
 	    
 	    
-	    \new CueVoice { \set instrumentCueName = "Oboe I"}
-	    \cueDuring #"oboeA" #UP {R2.*3 r4}
-	     d''2\fz\>~
+	    
+	    
+	    r4 d''2\fz\>~
 % mesures 21 à 25
 	    d2.\p
-	    R2.*4
-	    
-	    
-	    
+	    R2.
+	    R
+	    R
+	    R
 % mesures 26 à 30
 	    r4 c2\p~
 	    c~_\crescmarkup c8( d)
 	    d2 d4\fz
-	    d\fz d2\fp\>~
-	    d2.\!
+	    d\fz d2~
+	    d2.
 % mesures 31 à 35
 	    r4 c2\p~
 	    c~ c8_\crescmarkup( d)
@@ -482,10 +466,10 @@ MvtUnCorniDII = \relative c {
 	    c c4 r8 r c'~
 	    c c4 r8 r c~
 	    c c4 r8 r4
-	    R2.*2
+	    R2.*3
 % mesures 61 à 65
 	    
-	    R2._\gp \mark \default
+	    \mark \default
 	    f2.\ffz\>~
 	    f4\! r r
 	    c2.\fz\>~
@@ -512,10 +496,10 @@ MvtUnCorniDII = \relative c {
 	    r8 d4 d d8
 	    d2.\fz
 	    r8 d4 d d8(
-	    c) r c2->\fz(
+	    c) r c2->-\tweak X-offset #-2. \fz(
 % mesures 86 à 90
-	    d8) r d2\fz->(
-	    c8) r c2->\fz(
+	    d8) r d2 -\tweak X-offset #-2. \fz->(
+	    c8) r c2-> -\tweak X-offset #-3. \fz(
 	    d4) c-. c-.
 	    c8 r c2->\fz(
 	    d8) r d2\fz->~
@@ -556,7 +540,7 @@ MvtUnCorniDII = \relative c {
 	a~
 	a~
 	a4 r r
-	R2.*17
+	R2.*19
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -565,8 +549,8 @@ MvtUnCorniDII = \relative c {
 	
 % mesures 131 à 135
 	
-	\new CueVoice { \set instrumentCueName = "Violino I"}
-	\cueDuring #"violinA" #UP {R2.*2}
+	
+	
 	d2.\f
 	e2( f4)
 % mesures 136 à 140
@@ -656,18 +640,18 @@ MvtUnCorniDII = \relative c {
 % mesures 206 à 210
 	c'\ff
 	g\fz
-	e\fp~^\un
-	e~^\deux
-	e~^\trois
+	e\fp~
+	e~
+	e~
 % mesures 211 à 215
-	e~_\decresc^\quatre
-	e~\!^\cinq
-	e~^\six
-	e~\pp^\sept
-	e~^\huit
+	e~_\decresc
+	e~\!
+	e~
+	e~\pp
+	e~
 % mesures 216 à 220
-	e~^\neuf
-	e~^\dix \mark \default
+	e~
+	e~ \mark \default
 	e4 r r
 	R2.*10
 	
@@ -717,9 +701,9 @@ MvtUnCorniDII = \relative c {
 	g g4 r8 r g'~
 	g g4 r8 r a~
 	a a4 r8 r4
-	R2.*6
+	R2.*7
 % mesures 276 à 280
-	R2._\gp \mark \default
+	\mark \default
 % mesures 281 à 285
 	d2.\ff\>~
 	d4\! r r

@@ -6,59 +6,7 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   2               #
 %#######################################################################
-violinNotesA = \relative c''' {
-    s2.*59
-    a4( e4. gis8)
-    a4( d, e8 fis)
-    R2.
-}
-violinNotesB = \relative c'' {
-    s2.*278
-    c4( g4. b8
-    ais4 fis gis8 ais)
-    R2.
-}
-fagotNotesA = \relative c {
-    s2.*130
-    fis2.~
-    fis4( g a)
-    gis2.~
-    gis4( a b)
-}
-clarinetNotesA = \relative c'' {
-    s2.*341
-    fis2.(
-    e4) r r
-    fis2.
-}
-oboeNotesA = \relative c'' {
-    s2.*23
-    fis2.(
-    b,4. ais8[ b cis])
-}
-oboeNotesB = \relative c'' {
-    s2.*226
-    d2.(
-    e4 f4. e8)
-    d4( cis2)
-}
-oboeNotesC = \relative c'' {
-    s2.*318
-    cis4( fis,4. cis'8)
-    b8.( cis16 dis4. fis8)
-    fis4( e8[ dis cis b])
-    b4( ais8 gis ais4
-    b8) r
-}
-\addQuote "violinA" {\violinNotesA}
-\addQuote "violinB" {\violinNotesB}
-\addQuote "fagotA" {\fagotNotesA}
-\addQuote "clarinetA" {\clarinetNotesA}
-\addQuote "oboeA" {\oboeNotesA}
-\addQuote "oboeB" {\oboeNotesB}
-\addQuote "oboeC" {\oboeNotesC}
-
-MvtUnOboeI = \relative c'' {
+MvtUnOboiI = \relative c'' {
 	\clef treble
 	\key b \minor
 % mesures 1 à 5
@@ -71,7 +19,7 @@ MvtUnOboeI = \relative c'' {
 % mesures 11 à 15
 	    
 	    
-	    fis2.\pp(
+	    \partcombineApart fis2.\pp(
 	    b,4. ais8[ b cis])
 	    fis2.(
 % mesures 16 à 20
@@ -81,28 +29,28 @@ MvtUnOboeI = \relative c'' {
 	    d4(\! cis2
 	    d4) r r
 % mesures 21 à 25
-	    R2.
+	    \partcombineAutomatic R2. \partcombineApart
 	    fis2.(
 	    b,4. ais8[ b cis])
 	    fis2.(
-	    b,4. ais8[ b cis])
+	    b,4. ais8[ b cis]) \partcombineAutomatic
 % mesures 26 à 30
 	    d2.~
-	    d2~ d8(_\crescmarkup e)
+	    d2~ d8( e)
 	    e2 fis4\fz
 	    g\fz r r
 	    R2.
 % mesures 31 à 35
 	    d2.~
-	    d2~ d8(_\crescmarkup e)
+	    d2~ d8( e)
 	    e2~ e8( fis)
 	    fis2~ fis8 fis
-	    fis2~ fis8 ais
+	    fis2~ fis8[ ais]
 % mesures 36 à 40
 	    ais2.~
 	    ais \mark \default
 	    b4\fz r r
-	    R2.*21
+	    R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -110,8 +58,7 @@ MvtUnOboeI = \relative c'' {
 % mesures 51 à 55
 	
 % mesures 56 à 60
-	    \new CueVoice { \set instrumentCueName = "Violino I"}
-	    \cueDuring #"violinA" #UP {R2.*2 R2._\gp}
+	
 % mesures 61 à 65
 	    
 	    \mark \default
@@ -121,8 +68,8 @@ MvtUnOboeI = \relative c'' {
 % mesures 66 à 70
 	    d4) r\! r
 	    g2.(\fz\>
-	    ees4)\! bes''\!\fz bes\fz
-	    bes\fz_\crescmarkup bes\fz bes\fz
+	    ees4)\! bes''\fz bes\fz
+	    bes\fz bes\fz bes\fz 
 	    bes\fz bes\fz bes\fz 
 % mesures 71 à 75
 	    bes8\fz bes4\> bes bes8~
@@ -132,7 +79,7 @@ MvtUnOboeI = \relative c'' {
 	    
 % mesures 76 à 80
 	    
-	    e,2.\f~
+	    e,2.~
 	    e2( ees4)
 	    d2.~
 	    d
@@ -140,52 +87,52 @@ MvtUnOboeI = \relative c'' {
 	    r8 g4\ff g g8
 	    g2.\fz
 	    r8 g4 g g8
-	    g2.~\fz
-	    g8 r g2\fz->~
+	    g2.~
+	    g8 r g2->~
 % mesures 86 à 90
 	    g8 r g2\fz->(
 	    b8) r b2->(\fz
 	    c4) g-. fis!-.
-	    g8 r g2->\fz~
+	    g8 r g2->~
 	    g8 r g2->\fz(
 % mesures 91 à 95
 	    gis8) r b2->(\fz
 	    a4) g!-. a-. \mark \default
 	    g r r
 	    R2.
-	    r4 r r8 c,\p
+	    \partcombineApart r4 r r8 c,\p
 % mesures 96 à 100
 	    b8.(\< c16 d4. f8)
-	    e4.(\> d8[\! c b])
+	    e4.(\! d8[ c b])
 	    a2( d4)
-	    g, r r
+	    g, \partcombineAutomatic r r \partcombineApart
 	    a'(\p d,4. a'8)
 % mesures 101 à 105
 	    g8.(\< a16 b4. d8)
 	    d4(\> c8[ b a g)]\!
 	    g4( fis8 e fis4)
-	    g8 r b,2\ff\>~
+	    g8 r \partcombineAutomatic b,2~
 	    b2.~
 % mesures 106 à 110
-	    b~\pp
+	    b~
 	    b~
 	    b
-	    ais(\>
+	    ais(
 	}
 	\alternative {
 	    {
-	        b4)\! r r
+	        b4) r r
 	    }
 	    {
-	        b2.\>~
+	        b2.~
 	    }
 	}
 % mesures 111 à 115
-	b~\!
+	b~
 	b~
 	b~
 	b4 r r
-	R2.*15
+	R2.*19
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -193,17 +140,16 @@ MvtUnOboeI = \relative c'' {
 % mesures 126 à 130
 	
 % mesures 131 à 135
-	\clef bass
-	\new CueVoice { \set instrumentCueName = "Fagot"}
-	\cueDuring #"fagotA" #UP {R2.*4}
-	\clef treble
+	
+	
+	
 	g'2.\f(
 	fis2 e4)
 % mesures 136 à 140
 	g2.( 
 	fis2 e4)
 	g2( fis4)
-	e2(_\crescmarkup g4)
+	e2( g4)
 	fis2( e4)
 % mesures 141 à 145
 	g2( fis4)
@@ -231,8 +177,8 @@ MvtUnOboeI = \relative c'' {
 	
 % mesures 161 à 165
 	
-	bes2.(\ff\>
-	g2\! e4)
+	bes2.(
+	g2 e4)
 	R2.*6
 	
 % mesures 166 à 170
@@ -274,12 +220,12 @@ MvtUnOboeI = \relative c'' {
 % mesures 196 à 200
 	c2.\fz\>(
 	b2\! ais4)
-	cis!2.\pp(
+	\partcombineApart cis!2. -\tweak X-offset #-2.0 \pp(
 	b2 ais4)
 	cis'2._\crescmarkup(
 % mesures 201 à 205
 	b2 bes4)
-	a2.\ff
+	\partcombineAutomatic a2.\ff
 	e\fz
 	fis4 r r
 	R2.
@@ -292,18 +238,18 @@ MvtUnOboeI = \relative c'' {
 % mesures 211 à 215
 	
 	
-	
-	e4.\pp( fis8[ e fis]
+	\partcombineApart
+	e4. -\tweak X-offset #-2. \pp( fis8[ e fis]
 	e4. fis8[ e fis])
 % mesures 216 à 220
 	e2.~
 	e( \mark \default
-	d4) r r
+	d4) r r \partcombineAutomatic
 	R2.*3
 	
 % mesures 221 à 225
 	
-	fis2.(\pp
+	\partcombineApart fis2.(\pp
 	b,4. ais8[ b cis])
 	fis2.(
 	b,4. ais8[ b cis])
@@ -311,36 +257,36 @@ MvtUnOboeI = \relative c'' {
 	d2.(
 	e4\< f4.\> e8)
 	d4(\! cis2)
-	c2.~\<
-	c4\>( b2)~\!
+	c2.~
+	c4( b2)~
 % mesures 231 à 235
-	b4 r r
+	b4 \partcombineAutomatic r r \partcombineApart
 	b2(~ b8 c
 	b4) r r
 	b2(~ b8 c
-	b4) r r
+	b4) r r \partcombineAutomatic
 % mesures 236 à 240
 	R2.*2
 	
 	f'2.\<~
-	f4(\> e2)\!
+	f4(\> \partcombineChordsOnce e2)\!
 	e4( fis!4. g8)
 % mesures 241 à 245
-	g4( fis4. fis8_\crescmarkup)
+	g4( fis4. fis8)
 	fis4( g) gis-.\f
 	gis\fz-. r r
 	R2.
 	e4(\p fis4. g8)
 % mesures 246 à 250
 	g4( fis4. fis8)
-	fis4( g4. gis8_\crescmarkup)
+	fis4( g4. gis8)
 	gis4( a4. gis8)
-	gis4( a4.) b8-.\ff
+	gis4( a4.) b8-.
 	b2.~
 % mesures 251 à 255
 	b \mark \default
 	a4\fz r r
-	R2.*25
+	R2.*28
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -350,8 +296,6 @@ MvtUnOboeI = \relative c'' {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	\new CueVoice { \set instrumentCueName = "Violino I"}
-	\cueDuring #"violinB" #UP {R2.*2 R2._\gp}
 	\mark \default
 % mesures 281 à 285
 	b,2.(\ff\>
@@ -370,7 +314,7 @@ MvtUnOboeI = \relative c'' {
 	
 	
 	
-	gis2.\f~
+	gis2.~
 % mesures 296 à 300
 	gis2( g4)
 	fis2.~
@@ -379,8 +323,8 @@ MvtUnOboeI = \relative c'' {
 	b2.\fz
 % mesures 301 à 305
 	r8 b4 b b8
-	b2.\fz~
-	b8 r b2\fz~
+	b2.~
+	b8 r b2~
 	b8 r b2(\fz
 	dis8) r dis2(\fz
 % mesures 306 à 310
@@ -393,35 +337,34 @@ MvtUnOboeI = \relative c'' {
 	b r r
 	R2.*2
 	
-	r4 r r8 fis\p\<~
+	\partcombineApart r4 r r8 fis\p\<~
 	fis4( e8[\> dis\! cis b)]
 % mesures 316 à 320
 	b4( ais8 gis ais4)
 	b r r
 	cis4( fis,4. cis'8)
-	b8.(\< cis16 dis4.\! fis8)
-	fis4(\> e8[\! dis cis b])
+	b8.(_\< cis16 dis4.\! fis8)
+	fis4(_\> e8[\! dis cis b])
 % mesures 321 à 325
 	b4( ais8 gis ais4
-	b8) r b2\ffz\>~
-	b2.\p~
-	b\pp~
+	b8) r \partcombineAutomatic b2~
+	b2.~
+	b~
 	b~
 % mesures 326 à 330
 	b(
-	ais)\>(
+	ais)(
 	b4)\! r r
-	R2.*12
+	R2.*15
 % mesures 331 à 335
 	
 % mesures 336 à 340
-	\new CueVoice { \set instrumentCueName = "Clarinet I"}
-	\cueDuring #"clarinetA" #UP {R2.*3}
+	
 % mesures 341 à 345
 	
 	
 	
-	fis'2(->_\crescmarkup eis4)
+	fis'2(-> eis4)
 	fis2(-> eis4)
 % mesures 346 à 350
 	fis( eis\< fis
@@ -431,15 +374,15 @@ MvtUnOboeI = \relative c'' {
 	b2.\ff
 % mesures 351 à 355
 	ais
-	b,\pp(
-	cis2\< d4)
-	b2.(\>
-	cis2\! d4)
+	b,_\pp(
+	cis2_\< d4)
+	b2.(_\>
+	cis2_\! d4)
 % mesures 356 à 360
-	b2.\mf\<~
+	b2.~
 	b~
-	b\>~
-	b\!~
+	b~
+	b~
 	b4 r r 
 % mesures 361 à 365
 	R2.*3
@@ -449,54 +392,54 @@ MvtUnOboeI = \relative c'' {
 	e r r
 % mesures 366 à 368
 	d r r
-	b2.~\>
-	b4\! r r \bar "|."
+	\partcombineApart b2.~
+	b4 \partcombineAutomatic r r \bar "|."
 }
-MvtUnOboeII = \relative c'' {
+MvtUnOboiII = \relative c'' {
 	\clef treble
 	\key b \minor
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
 % mesures 6 à 10
-	    R2.*22
+	    R2.*11
 	    
 	    
 % mesures 11 à 15
 	    
 	    
-	    
-	    
-	    
+	    R2.
+	    R
+	    R
 % mesures 16 à 20
-	    
-	    
-	    
-	    
-	    
+	    R
+	    R
+	    R
+	    R
+	    R
 % mesures 21 à 25
-	    
-	    
-	    
-	    \new CueVoice { \set instrumentCueName = "Oboe I"}
-	    \cueDuring #"oboeA" #UP {R2.*2}
+	    R
+	    R
+	    R
+	    R
+	    R 
 % mesures 26 à 30
-	    a!4(\p b4. c8)
+	    a!4( -\tweak X-offset #-2. \p b4. c8)
 	    c4( b4._\crescmarkup d8)
 	    d4( cis!) e4\fz
 	    e\fz r r
 	    R2.
 % mesures 31 à 35
-	    a,4(\p b4. c8)
+	    a,4( -\tweak X-offset #-2. \p b4. c8)
 	    c4( b4._\crescmarkup) b8
 	    b4( cis!4. cis8)
-	    cis4(\f d4. e8)
+	    cis4(-\tweak X-offset #-2. \f d4. e8)
 	    e4( d4.) e8\ff
 % mesures 36 à 40
 	    e2.~
 	    e \mark \default
 	    d4\fz r r
-	    R2.*21
+	    R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -504,8 +447,7 @@ MvtUnOboeII = \relative c'' {
 % mesures 51 à 55
 	
 % mesures 56 à 60
-	    \new CueVoice { \set instrumentCueName = "Violino I"}
-	    \cueDuring #"violinA" #UP {R2.*2 R2._\gp}
+	
 % mesures 61 à 65
 	    
 	    \mark \default
@@ -515,7 +457,7 @@ MvtUnOboeII = \relative c'' {
 % mesures 66 à 70
 	    d4) r\! r
 	    g2.(\fz\>
-	    ees4)\! g'\!\fz g\fz
+	    ees4)\! g'\fz g\fz
 	    g\fz_\crescmarkup g\fz g\fz
 	    g\fz g\fz g\fz 
 % mesures 71 à 75
@@ -535,12 +477,12 @@ MvtUnOboeII = \relative c'' {
 	    e2.\fz
 	    r8 e4 e e8
 	    e2~\fz e8 cis(
-	    d) r d2\fz->(
+	    d) r d2-\tweak X-offset #-2. \fz(
 % mesures 86 à 90
 	    e8) r e2\fz->(
 	    f8) r f2->(\fz
 	    e4) d-. d-.
-	    d8 r f2->\fz(
+	    d8 r f2\fz(
 	    e8) r e2->\fz(
 % mesures 91 à 95
 	    d8) r gis2->(\fz
@@ -579,7 +521,7 @@ MvtUnOboeII = \relative c'' {
 	a~
 	a(
 	g4) r r
-	R2.*15
+	R2.*19
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -587,10 +529,9 @@ MvtUnOboeII = \relative c'' {
 % mesures 126 à 130
 	
 % mesures 131 à 135
-	\clef bass
-	\new CueVoice { \set instrumentCueName = "Fagot"}
-	\cueDuring #"fagotA" #UP {R2.*4}
-	\clef treble
+	
+	
+	
 	g2.\f(
 	fis2 e4)
 % mesures 136 à 140
@@ -668,11 +609,11 @@ MvtUnOboeII = \relative c'' {
 % mesures 196 à 200
 	c2.\fz\>(
 	b2\! ais4)
-	R2.*4
-	
-	
+	R2.
+	R
+	R
 % mesures 201 à 205
-	
+	R
 	fis'2.\ff
 	cis\fz
 	d4 r r
@@ -681,30 +622,30 @@ MvtUnOboeII = \relative c'' {
 	fis2.\ff
 	cis\fz
 	d4 r r
-	R2.*9
+	R2.*5
 	
 % mesures 211 à 215
 	
 	
 	
-	
-	
+	R2.
+	R
 % mesures 216 à 220
-	
-	\mark \default
-	R2.*8
+	R
+	R \mark \default
+	R2.*4
 	
 	
 % mesures 221 à 225
 	
-	
-	
-	
-	
+	R2.
+	R
+	R
+	R
 % mesures 226 à 230
-	
-	\new CueVoice { \set instrumentCueName = "Oboe I"}
-	\cueDuring #"oboeB" #UP {R2.*3}
+	R
+	R
+	R
 	a2.~\<
 	a4\>( b2)(\!
 % mesures 231 à 235
@@ -734,7 +675,7 @@ MvtUnOboeII = \relative c'' {
 % mesures 251 à 255
 	gis \mark \default
 	fis4\fz r r
-	R2.*25
+	R2.*28
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -744,8 +685,6 @@ MvtUnOboeII = \relative c'' {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	\new CueVoice { \set instrumentCueName = "Violino I"}
-	\cueDuring #"violinB" #UP {R2.*2 R2._\gp}
 	\mark \default
 % mesures 281 à 285
 	b,2.(\ff\>
@@ -785,33 +724,31 @@ MvtUnOboeII = \relative c'' {
 	e4) dis-. e-. \mark \default
 % mesures 311 à 315
 	dis r r
-	R2.*6
+	R2.*2
 	
-	
-	
+	R2.
+	R
 % mesures 316 à 320
-	
-	
-	
-	
-	\new CueVoice { \set instrumentCueName = "Oboe I"}
-	\cueDuring #"oboeC" #UP {R2.*4 r4}
+	R
+	R
+	R
+	R
+	R
 % mesures 321 à 325
-	
-	 b2\ffz\>~
+	R
+	r4 b2 -\tweak X-offset #-3.2 \ffz\>~
 	b2.\p~
 	b\pp~
 	b~
-% mesures 326 à 330
 	b(
+% mesures 326 à 330
 	fis)\>~
 	fis4\! r r
-	R2.*12
+	R2.*15
 % mesures 331 à 335
 	
 % mesures 336 à 340
-	\new CueVoice { \set instrumentCueName = "Clarinet I"}
-	\cueDuring #"clarinetA" #UP {R2.*3}
+	
 % mesures 341 à 345
 	
 	
@@ -832,8 +769,8 @@ MvtUnOboeII = \relative c'' {
 	
 % mesures 356 à 360
 	fis,2.\mf\<~
-	fis
-	g\>~
+	fis(
+	g\>)~
 	g\!(
 	fis4) r r 
 % mesures 361 à 365

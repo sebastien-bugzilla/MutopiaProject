@@ -6,34 +6,18 @@
 %#######################################################################
 %#               M O U V E M E N T   1   -   V O I X   7               #
 %#######################################################################
-flautoNotesA = \relative c'' {
-    s2.*25
-    d2.~
-    d2~ d8( e)
-    e2 s4
-}
-flautoNotesB = \relative c''' {
-    s2.*240
-    a2.~
-    a2~ a8( b)
-    b2
-}
-FagotNotesA = \relative c' {
-    s2.*132
-    gis2.~
-    gis4( a b)
-}
-\addQuote "flautoA" {\flautoNotesA}
-\addQuote "flautoB" {\flautoNotesB}
-\addQuote "fagotA" {\FagotNotesA}
-
 MvtUnTromboni_alto = \relative c {
 	\clef tenor
 	\key b \minor
+%	\override TupletBracket #'bracket-visibility = ##f
+%	\override Hairpin.to-barline = ##f
+%	\set Staff.instrumentName = #"Tromboni"
+%	\set Staff.midiInstrument = #"trombone"
+%	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*24
+	    R2.*26
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -43,11 +27,9 @@ MvtUnTromboni_alto = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	    \clef treble
-	    \new CueVoice { \set instrumentCueName = "Fl. I"}
-	    \cueDuring #"flautoA" #UP {R2.*2 r4 r4}
-	    \clef tenor
-	     cis'\fz
+	    
+	    
+	    r4 r cis'\fz
 	    cis\fz r r
 	    R2.*6
 % mesures 31 à 35
@@ -56,7 +38,7 @@ MvtUnTromboni_alto = \relative c {
 	    cis4 r cis
 	    r cis4. cis8 \mark \default
 	    d4\fz r r
-	    R2.*23
+	    R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -67,7 +49,7 @@ MvtUnTromboni_alto = \relative c {
 	
 % mesures 61 à 65
 	    
-	    R2._\gp \mark \default
+	    \mark \default
 	    c2.\ffz\>~
 	    c4\! r r
 	    d2.\fz\>~
@@ -75,7 +57,7 @@ MvtUnTromboni_alto = \relative c {
 	    d4\! r r
 	    ees2.\fz\>~
 	    ees4\! ees\fz ees\fz 
-	    ees\fz_\crescmarkup ees\fz ees\fz 
+	    ees\fz ees\fz ees\fz 
 	    ees\fz ees\fz ees\fz 
 % mesures 71 à 75
 	    e!\fz r r
@@ -87,12 +69,12 @@ MvtUnTromboni_alto = \relative c {
 	    r8 cis4 cis cis8
 	    cis2.\fz
 	    r8 cis4 cis cis8(
-	    d) r b2\fz(->
+	    d) r b2(
 % mesures 86 à 90
-	    c8) r c2->\fz(
-	    f8) r f2->\fz(
+	    c8) r c2(
+	    f8) r f2(
 	    e4) b-. c-.
-	    b8 r b2->\fz(
+	    b8 r b2(
 	    c8) r c2\fz->(
 % mesures 91 à 95
 	    b8) r b2->\fz(
@@ -104,9 +86,9 @@ MvtUnTromboni_alto = \relative c {
 % mesures 101 à 105
 	    
 	    
-	    r4 b2\ff\>~
+	    r4 \partcombineApart b2~
 	    b2.~
-	    b4\pp r r
+	    b4 \partcombineAutomatic r r
 % mesures 106 à 110
 	    R2.*3
 	}
@@ -123,7 +105,7 @@ MvtUnTromboni_alto = \relative c {
 	dis~
 	dis(
 	e4) r r
-	R2.*17
+	R2.*19
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -132,13 +114,13 @@ MvtUnTromboni_alto = \relative c {
 	
 % mesures 131 à 135
 	
-	\new CueVoice { \set instrumentCueName = "Fagot"}
-	\cueDuring #"fagotA" #UP {R2.*2}
+	
+	
 	cis2\fz-> r4
 	r cis2->\fz
 % mesures 136 à 140
-	r4 r cis~\fz\>->
-	cis r\! r
+	r4 r cis~\fz->
+	cis r r
 	cis2->\fz r4
 	r cis->\fz r
 	cis\fz r cis\fz
@@ -183,7 +165,7 @@ MvtUnTromboni_alto = \relative c {
 	e
 	e4 e e
 	e2.\fz
-	b\fz \mark \default
+	\partcombineApartOnce b \mark \default
 % mesures 176 à 180
 	e2.
 	fis2 g4
@@ -230,7 +212,7 @@ MvtUnTromboni_alto = \relative c {
 % mesures 216 à 220
 	
 	\mark \default
-	R2.*22
+	R2.*24
 % mesures 221 à 225
 	
 % mesures 226 à 230
@@ -238,13 +220,10 @@ MvtUnTromboni_alto = \relative c {
 % mesures 231 à 235
 	
 % mesures 236 à 240
-	\clef treble
-	\new CueVoice { \set instrumentCueName = "Fl. I"}
-	\cueDuring #"flautoB" #UP {R2.*2 r4 r4}
-	\clef tenor
+	
 % mesures 241 à 245
 	
-	 eis\f-.
+	r4 r eis\f-.
 	eis\fz  r r
 	R2.*6
 % mesures 246 à 250
@@ -256,7 +235,7 @@ MvtUnTromboni_alto = \relative c {
 % mesures 251 à 255
 	r eis4. eis8 \mark \default
 	fis4\fz r r
-	R2.*27
+	R2.*28
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -266,7 +245,7 @@ MvtUnTromboni_alto = \relative c {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	R2._\gp \mark \default
+	\mark \default
 % mesures 281 à 285
 	b,2.\ff\>~
 	b4\! r r
@@ -290,7 +269,7 @@ MvtUnTromboni_alto = \relative c {
 % mesures 301 à 305
 	eis2.\fz
 	r8 eis4 eis eis8
-	fis r dis2(\fz
+	fis r dis!2(
 	e8) r e2(\fz
 	fis8) r fis2(\fz
 % mesures 306 à 310
@@ -306,9 +285,9 @@ MvtUnTromboni_alto = \relative c {
 	
 % mesures 321 à 325
 	
-	r4 b2\ffz\>~
-	b2.\p~
-	b4\pp r r
+	r4 \partcombineApart b2~
+	b2.~
+	b4 \partcombineAutomatic r r
 	R2.*9
 % mesures 326 à 330
 	
@@ -316,7 +295,7 @@ MvtUnTromboni_alto = \relative c {
 	
 	
 	
-	fis2.\pp~
+	fis2.~
 	fis~
 % mesures 336 à 340
 	fis4 r r
@@ -331,7 +310,7 @@ MvtUnTromboni_alto = \relative c {
 	d2.\ff
 % mesures 351 à 355
 	cis
-	b4 r r
+	\partcombineApartOnce b4 r r
 	R2.*3
 	
 	
@@ -355,10 +334,15 @@ MvtUnTromboni_alto = \relative c {
 MvtUnTromboni_tenore = \relative c {
 	\clef tenor
 	\key b \minor
+%	\override TupletBracket #'bracket-visibility = ##f
+%	\override Hairpin.to-barline = ##f
+%	\set Staff.instrumentName = #"Tromboni"
+%	\set Staff.midiInstrument = #"trombone"
+%	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*24
+	    R2.*26
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -368,11 +352,9 @@ MvtUnTromboni_tenore = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	    \clef treble
-	    \new CueVoice { \set instrumentCueName = "Fl. I"}
-	    \cueDuring #"flautoA" #UP {R2.*2 r4 r4}
-	    \clef tenor
-	     ais'\fz
+	    
+	    
+	    r4 r ais'\fz
 	    ais\fz r r
 	    R2.*6
 % mesures 31 à 35
@@ -381,7 +363,7 @@ MvtUnTromboni_tenore = \relative c {
 	    ais4 r ais
 	    r ais4. ais8 \mark \default
 	    b4\fz r r
-	    R2.*23
+	    R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -392,7 +374,7 @@ MvtUnTromboni_tenore = \relative c {
 	
 % mesures 61 à 65
 	    
-	    R2._\gp \mark \default
+	    \mark \default
 	    ees,2.\ffz\>~
 	    ees4\! r r
 	    bes'2.\fz\>~
@@ -400,7 +382,7 @@ MvtUnTromboni_tenore = \relative c {
 	    bes4\! r r
 	    bes2.\fz\>~
 	    bes4\! bes\fz bes\fz 
-	    bes\fz_\crescmarkup bes\fz bes\fz 
+	    bes\fz^\crescmarkup bes\fz bes\fz 
 	    bes\fz bes\fz bes\fz 
 % mesures 71 à 75
 	    bes\fz r r
@@ -412,7 +394,7 @@ MvtUnTromboni_tenore = \relative c {
 	    r8 a4 a a8
 	    bes2.\fz
 	    r8 a4 a a8(
-	    b!) r g2\fz->~
+	    b!) r g2-\tweak X-offset #-2. \fz->~
 % mesures 86 à 90
 	    g8 r g2->\fz~
 	    g8 r g2->\fz~
@@ -448,7 +430,7 @@ MvtUnTromboni_tenore = \relative c {
 	fis~
 	fis(
 	g4) r r
-	R2.*17
+	R2.*19
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -456,8 +438,8 @@ MvtUnTromboni_tenore = \relative c {
 % mesures 126 à 130
 	
 % mesures 131 à 135
-	\new CueVoice { \set instrumentCueName = "Fagot"}
-	\cueDuring #"fagotA" #UP {R2.*2}
+	
+	
 	
 	ais2\fz-> r4
 	r ais2->\fz
@@ -555,7 +537,7 @@ MvtUnTromboni_tenore = \relative c {
 % mesures 216 à 220
 	
 	\mark \default
-	R2.*22
+	R2.*24
 % mesures 221 à 225
 	
 % mesures 226 à 230
@@ -563,13 +545,10 @@ MvtUnTromboni_tenore = \relative c {
 % mesures 231 à 235
 	
 % mesures 236 à 240
-	\clef treble
-	\new CueVoice { \set instrumentCueName = "Fl. I"}
-	\cueDuring #"flautoB" #UP {R2.*2 r4 r4}
-	\clef tenor
+	
 % mesures 241 à 245
 	
-	 gis\f-.
+	r4 r gis\f-.
 	b\fz  r r
 	R2.*6
 % mesures 246 à 250
@@ -581,7 +560,7 @@ MvtUnTromboni_tenore = \relative c {
 % mesures 251 à 255
 	r gis4. gis8 \mark \default
 	a4\fz r r
-	R2.*27
+	R2.*28
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -591,7 +570,7 @@ MvtUnTromboni_tenore = \relative c {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	R2._\gp \mark \default
+	\mark \default
 % mesures 281 à 285
 	g2.\ff\>~
 	g4\! r r
