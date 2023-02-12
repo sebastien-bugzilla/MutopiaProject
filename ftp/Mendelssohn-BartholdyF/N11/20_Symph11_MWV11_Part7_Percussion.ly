@@ -18,8 +18,8 @@
 \include "./00-Common/Symph11_MWV11_timeMvt.ily"
 \include "./00-Common/Symph11_MWV11_LayoutParts.ily"
 \include "./00-Common/Symph11_MWV11_Shortcuts.ily"
-%\include "./00-Common/Symph11_MWV11_Format_Part01_ViolinI.ily"
 \include "./00-Common/Symph11_MWV11_Tempi.ily"
+\include "./00-Common/Symph11_MWV11_NameStaff.ily"
 \include "./02-Mvt2/m02_v07_music_Timpani.ily"
 \include "./02-Mvt2/m02_v08_music_Triangel.ily"
 \include "./02-Mvt2/m02_v09_music_Becken.ily"
@@ -43,14 +43,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatBassoMvtI
-%			}
 			\new Voice {
-				\keepWithTag #'(Timpani) \tempiPartMvtII
+				\keepWithTag #'(timpani) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \musicTimpaniMvtII
+				\nameStaffVIMvtII \timeMvtII \musicTimpaniMvtII
 			}
 		>>
 		\header {
@@ -67,15 +64,12 @@
 		}
 	}
 	\score {
-		\new Staff <<
-%			\new Voice {
-%				\formatBassoMvtII
-%			}
+		\new RhythmicStaff <<
 			\new Voice {
-				\keepWithTag #'(Triangel) \tempiPartMvtII
+				\keepWithTag #'(triangel) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \musicTriangelMvtII
+				\nameStaffVIIMvtII \timeMvtII \musicTriangelMvtII
 			}
 		>>
 		\header {
@@ -92,15 +86,12 @@
 		}
 	}
 	\score {
-		\new Staff <<
-%			\new Voice {
-%				\formatBassoMvtIII
-%			}
+		\new RhythmicStaff  <<
 			\new Voice {
-				\keepWithTag #'(Becken) \tempiPartMvtII
+				\keepWithTag #'(becken) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \musicBeckenMvtII
+				\nameStaffVIIIMvtII \timeMvtII \musicBeckenMvtII
 			}
 		>>
 		\header {

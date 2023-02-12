@@ -36,21 +36,21 @@ tempiMvtV = {
 %#                            T E M P I   P A R T S                            #
 %###############################################################################
 tempiPartMvtI = {
-	\tag #'(violinI violinII violaI violaII cello basso timpani becken) {
+	\tag #'(violinI violinII violaI violaII cello basso) {
 		\tempo "Adagio" 4=60
 	}
 	s1*35 s2.
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 36.75
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII violaI violaII cello basso timpani becken) {
+	\tag #'(violinI violinII violaI violaII cello basso) {
 		\tempo "Allegro molto" 
 	}
 	s4 s1*361
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 398
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII violaI violaII cello basso timpani becken) {
+	\tag #'(violinI violinII violaI violaII cello basso) {
 		\tempo \markup {
 			\concat { "Adagio come I" \super "ma" }
 		}
@@ -59,7 +59,7 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 411
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinII violaI timpani becken) {
+	\tag #'(violinII violaI) {
 		\tempo \markup {
 			\concat { "Allegro come I" \super "ma"} 
 		}
@@ -88,29 +88,29 @@ tempiPartMvtI = {
 	}
 }
 tempiPartMvtII = {
-	\tag #'(violinI violinII violaI violaII cello basso timpani becken) {
+	\tag #'(violinI violinII violaI violaII cello basso timpani triangel becken) {
 		\tempo "Commodo Schweizerlied" 4 = 75
 	}
 }
 tempiPartMvtIII = {
-	\tag #'(violinI violinII violaI violaII cello basso timpani becken) {
+	\tag #'(violinI violinII violaI violaII cello basso) {
 		\tempo "Adagio" 4 = 60
 	}
 }
 tempiPartMvtIV = {
-	\tag #'(violinI violinII violaI violaII cello basso timpani becken) {
+	\tag #'(violinI violinII violaI violaII cello basso) {
 		\tempo "Allegro moderato" 4. = 90
 	}
 }
 tempiPartMvtV = {
-	\tag #'(violinI violinII violaI violaII cello basso timpani becken) {
+	\tag #'(violinI violinII violaI violaII cello basso) {
 		\tempo "Allegro molto" 2 = 150
 	}
 	s1*316
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 315
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII violaI violaII cello basso timpani becken) {
+	\tag #'(violinI violinII violaI violaII cello basso) {
 		\tempo \markup { 
 			\medium \italic "poco rit."
 		}
@@ -119,7 +119,7 @@ tempiPartMvtV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 317.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII violaI violaII cello basso timpani becken) {
+	\tag #'(violinI violinII violaI violaII cello basso) {
 		\tempo \markup {
 			\medium \italic "rit."
 		}
@@ -128,7 +128,7 @@ tempiPartMvtV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 319.25
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinI violinII violaI violaII cello basso timpani becken) {
+	\tag #'(violinI violinII violaI violaII cello basso) {
 		\tempo \markup {
 			\medium \italic "a tempo"
 		}
