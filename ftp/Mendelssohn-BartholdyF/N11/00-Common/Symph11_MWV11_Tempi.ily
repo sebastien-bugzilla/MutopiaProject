@@ -59,7 +59,7 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 411
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(violinII violaI cello basso timpani becken) {
+	\tag #'(violinII violaI timpani becken) {
 		\tempo \markup {
 			\concat { "Allegro come I" \super "ma"} 
 		}
@@ -76,6 +76,12 @@ tempiPartMvtI = {
 	}
 	\tag #'(cello) {
 		\tempoEO #'(-0.2 . -0.5)
+		\tempo \markup {
+			\concat { "Allegro come I" \super "ma"} 
+		}
+	}
+	\tag #'(basso) {
+		\tempoEO #'(0.4 . -0.5)
 		\tempo \markup {
 			\concat { "Allegro come I" \super "ma"} 
 		}

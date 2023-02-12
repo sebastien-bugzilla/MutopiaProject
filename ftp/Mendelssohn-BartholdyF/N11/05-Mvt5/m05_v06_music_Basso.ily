@@ -334,7 +334,7 @@ musicBassoMvtV = \relative c {
 	
 	\bar "||" \key f \minor
 % mesures 291 à 295
-	R1*36
+	R1*24 R1*2
 % mesures 296 à 300
 	
 % mesures 301 à 305
@@ -345,6 +345,9 @@ musicBassoMvtV = \relative c {
 	
 % mesures 316 à 320
 	
+	\mmrnDown R1
+	R1
+	R1*8
 % mesures 321 à 325
 	
 % mesures 326 à 330

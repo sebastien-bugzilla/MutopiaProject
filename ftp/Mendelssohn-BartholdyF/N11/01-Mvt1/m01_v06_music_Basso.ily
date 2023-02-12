@@ -8,7 +8,7 @@ musicBassoMvtI = \relative c {
 	\clef bass
 	\key f \major
 % mesures 1 à 5
-	R1*21
+	\mmrnDown R1*21
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -23,7 +23,7 @@ musicBassoMvtI = \relative c {
 	R1
 % mesures 26 à 30
 	r2 f,^\arco
-	des'4( bes) ees,2(
+	des'4( bes) \shape #'( ((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) () ) Slur ees,2(
 	f_\semprepp ges
 	g!4) aes( bes b 
 	c1)~
@@ -49,27 +49,11 @@ musicBassoMvtI = \relative c {
 		R1*22 
 % mesures 46 à 50
 		
-		
-		
-		
-		
 % mesures 51 à 55
-		
-		
-		
-		
 		
 % mesures 56 à 60
 		
-		
-		
-		
-		
 % mesures 61 à 65
-		
-		
-		
-		
 		
 % mesures 66 à 70
 		
@@ -96,7 +80,7 @@ musicBassoMvtI = \relative c {
 		aes r r aes, 
 		f'1 
 % mesures 86 à 90
-		ees2:8 ees:  
+		\startMeasureCount ees2:8 ees:  
 		ees: ees:  
 		ees: ees:  
 		ees: ees:  
@@ -104,7 +88,7 @@ musicBassoMvtI = \relative c {
 % mesures 91 à 95
 		ees: ees:  
 		ees: ees:  
-		ees: ees: 
+		ees: ees: \stopMeasureCount 
 		ees4 r r2 
 		ees4 r r2 
 % mesures 96 à 100
@@ -304,28 +288,16 @@ musicBassoMvtI = \relative c {
 	c r r2 
 	r4 f,-. f-. r 
 % mesures 281 à 285
-	R1*9 
+	R1*22 
 	
 	
 	
 	
 % mesures 286 à 290
 	
-	
-	
-	
-	R1*5
 % mesures 291 à 295
 	
-	
-	
-	
-	R1*8 
 % mesures 296 à 300
-	
-	
-	
-	
 	
 % mesures 301 à 305
 	
@@ -355,7 +327,7 @@ musicBassoMvtI = \relative c {
 	aes'2\ff r4 aes, 
 	des1~ 
 	des 
-	c2:8 c:  
+	\startMeasureCount c2:8 c:  
 	c: c:  
 % mesures 326 à 330
 	c: c:  
@@ -364,13 +336,13 @@ musicBassoMvtI = \relative c {
 	c: c:  
 	c: c:  
 % mesures 331 à 335
-	c: c:  
+	c: c:  \stopMeasureCount 
 	c8 r r4 r2 
-	R1*3 
+	R1*39 
 	
 	
 % mesures 336 à 340
-	R1*36
+	
 % mesures 341 à 345
 	
 % mesures 346 à 350
@@ -415,22 +387,22 @@ musicBassoMvtI = \relative c {
 	c' c8 c c4 c 
 % mesures 396 à 400
 	c r e-> r 
-	R1\fermata  \bar "||" \key f \major 
-	R1*6
+	\once \omitMMRN R1\fermata  \bar "||" \key f \major 
+	\mmrnDown R1*6
 	
 	
 % mesures 401 à 405
 	
 	
 	
-	f,,4-.(~\pp f8 f~-. f f-. f-. f-.) 
+	\shape #'((0 . 0.2)(0 . 0.7)(0 . 0.7)(0 . 0.2)) Slur f,,4-.(~-\offset X-offset -2 \pp f8 f~-. f f-. f-. f-.) 
 	f4-.(~ f8 f~-. f f-. f-. f-.) 
 % mesures 406 à 410
 	f'2( ees) 
 	des1
 	c8 r r4 r2 
 	R1
-	R1\fermata \key f \minor \bar "||"
+	\once \omitMMRN R1\fermata \key f \minor \bar "||"
 % mesures 411 à 415
 	f4\ff r r c 
 	f r r c 
@@ -451,7 +423,7 @@ musicBassoMvtI = \relative c {
 	aes4 r des r 
 % mesures 426 à 430
 	bes r c r 
-	f2:8 f:  
+	\startMeasureCount f2:8 f:  
 	f: f:  
 	f: f:  
 	f: f:  
@@ -459,7 +431,7 @@ musicBassoMvtI = \relative c {
 	f: f:  
 	f: f:  
 	f: f:  
-	f: f:  
+	f: f:  \stopMeasureCount 
 	f4 r c r 
 % mesures 436 à 440
 	f4 r c r 

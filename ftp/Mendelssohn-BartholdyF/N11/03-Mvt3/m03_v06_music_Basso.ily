@@ -37,15 +37,15 @@ musicBassoMvtIII = \relative c {
 	bes8 r bes r bes r
 	ees r ees r ees r
 	ees r ees r ees r
-% mesures 26 à 31
+% mesures 26 à 30
 	ees, r ees r ees r
 	ees r ees r ees r
 	ees4 r r
-	R2.*3
+	R2.*7
 	
 	
-% mesures 32 à 35
-	R2.*4
+% mesures 31 à 35
+	
 	
 	
 	
@@ -119,7 +119,7 @@ musicBassoMvtIII = \relative c {
 	r8 bes[ bes] r r4
 	bes8 r bes r bes r
 	bes4 r r
-	R2.^\adlib
+	\mmrnDown R2.^\adlib
 	ees4( d c)
 % mesures 96 à 100
 	bes( aes g)

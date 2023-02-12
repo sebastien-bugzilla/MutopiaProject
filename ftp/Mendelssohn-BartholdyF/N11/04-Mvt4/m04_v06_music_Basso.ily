@@ -8,7 +8,7 @@ musicBassoMvtIV = \relative c {
 	\clef bass
 	\key f \minor
 	\repeat volta 2 {
-		\partial 2 f8\f aes g f
+		\partial 2 f8\f^\markMenuetto aes g f
 % mesures 1 à 5
 		c'4 c,8 \once \slurDashed e( d) c
 		f4 f8 ees!4 des8
@@ -67,7 +67,7 @@ musicBassoMvtIV = \relative c {
 		f r f'\f des' c b
 		c, r r c\p r r
 % mesures 46 à 50
-		f, r \key f \major \markTrio
+		f, r \key f \major \markTrio \break
 	}
 	\repeat volta 2 {
 		r8 r4 r8
@@ -88,25 +88,17 @@ musicBassoMvtIV = \relative c {
 	}
 	\repeat volta 2 {
 		r8 r4 r8
-		R2.*3
+		R2.*15
 		
 % mesures 61 à 65
 		
-		R2.
-		R2.
-		R2.
-		R2.
 % mesures 66 à 70
-		R2.
-		R2.*7
-		
-		
 		
 % mesures 71 à 75
 		
 		
 		
-		f,2.~\p_\cb
+		f,2.~\p^\cb
 		f~
 % mesures 76 à 80
 		f~

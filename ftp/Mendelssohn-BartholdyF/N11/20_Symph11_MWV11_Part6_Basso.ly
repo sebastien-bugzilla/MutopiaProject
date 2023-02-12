@@ -18,7 +18,7 @@
 \include "./00-Common/Symph11_MWV11_timeMvt.ily"
 \include "./00-Common/Symph11_MWV11_LayoutParts.ily"
 \include "./00-Common/Symph11_MWV11_Shortcuts.ily"
-%\include "./00-Common/Symph11_MWV11_Format_Part01_ViolinI.ily"
+\include "./00-Common/Symph11_MWV11_Format_Part06_Basso.ily"
 \include "./00-Common/Symph11_MWV11_Tempi.ily"
 \include "./01-Mvt1/m01_v06_music_Basso.ily"
 \include "./02-Mvt2/m02_v06_music_Basso.ily"
@@ -45,11 +45,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatBassoMvtI
-%			}
 			\new Voice {
-				\keepWithTag #'(Basso) \tempiPartMvtI
+				\formatBassoMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(basso) \tempiPartMvtI
 			}
 			\new Voice {
 				\timeMvtI \musicBassoMvtI
@@ -70,18 +70,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatBassoMvtII
-%			}
 			\new Voice {
-				\keepWithTag #'(Basso) \tempiPartMvtII
+				\formatBassoMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(basso) \tempiPartMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicBassoMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -95,18 +95,18 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatBassoMvtIII
-%			}
 			\new Voice {
-				\keepWithTag #'(Basso) \tempiPartMvtIII
+				\formatBassoMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(basso) \tempiPartMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \musicBassoMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -120,19 +120,20 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatBassoMvtIV
-%			}
 			\new Voice {
-				\keepWithTag #'(Basso) \tempiPartMvtIV
+				\formatBassoMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(basso) \tempiPartMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \musicBassoMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
+				\vspace #2
 				\fill-line {
 					\fontsize #4
 					IV
@@ -145,11 +146,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatBassoMvtV
-%			}
 			\new Voice {
-				\keepWithTag #'(Basso) \tempiPartMvtV
+				\formatBassoMvtV
+			}
+			\new Voice {
+				\keepWithTag #'(basso) \tempiPartMvtV
 			}
 			\new Voice {
 				\timeMvtV \musicBassoMvtV

@@ -100,7 +100,7 @@ musicBassoMvtII = \relative c {
 	a r g r
 % mesures 76 à 80
 	f4 r
-	f\p r
+	\dynEO #'(0.8 . 2) f\p r
 	f r
 	f r
 	f_\crescendo r
@@ -177,20 +177,12 @@ musicBassoMvtII = \relative c {
 	d' f a a,
 	d[ a d] r
 % mesures 141 à 145
-	R2
-	R
-	R
-	R
-	R
+	R2*12
 % mesures 146 à 150
-	R
-	R
-	R
-	R
-	R
+	
 % mesures 151 à 155
-	R
-	R
+	
+	
 	f4\f^\bassi bes
 	a e
 	f8 f16 f16 e8 e16 e
