@@ -1,16 +1,14 @@
-%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/01_SchubertSymphonie8_Mvt1_Flauti3.ly
-%Fichier généré le :  samedi 2 février 2019, 13:30:06 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   1   -   V O I X   13               #
-%#######################################################################
+%  work        : Schubert Symphony No. 8 in B minor, D.759
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 12 February 2023, 19:55
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
 MvtUnVioloncello = \relative c {
 	\clef bass
 	\key b \minor
 % mesures 1 à 5
-	b2.(
+	b2.(\pp
 	\repeat volta 2 {
 	    cis2 d4)
 	    b2.(
@@ -20,7 +18,7 @@ MvtUnVioloncello = \relative c {
 	    fis2.)~
 	    fis~
 	    fis
-	    b4^\pizz -\tweak X-offset #-3 \pp r8 b[ b b]
+	    b4^\pizz r8 b[ b b]
 	    b4 r8 b[ b g]
 % mesures 11 à 15
 	    b4 r8 b[ b b]
@@ -95,7 +93,7 @@ MvtUnVioloncello = \relative c {
 	    ees-._\crescmarkup ees-. ees-.
 	    ees-. ees-. ees-.
 % mesures 71 à 75
-	    e!-.\fz r r
+	    e!\fz r r
 	    R2.
 	    cis'!8.\p( d16 e8[ a, b cis])
 	    d4 r r
@@ -125,7 +123,7 @@ MvtUnVioloncello = \relative c {
 	    R2.*2
 	    
 % mesures 96 à 100
-	    g'4(\p\< d4. gis8)
+	    g'4(\p\< d4. gis8)\!
 	    a8.(\> b16 c4.\! cis8)
 	    d2.
 	    g,4 r r
@@ -144,7 +142,7 @@ MvtUnVioloncello = \relative c {
 	}
 	\alternative {
 	    {
-	        b2.^\arco~
+	        b2.^\arco\laissezVibrer
 	    }
 	    {
 	        b4^\pizz r r
@@ -164,7 +162,7 @@ MvtUnVioloncello = \relative c {
 	e
 % mesures 121 à 125
 	d)
-	c2.:16
+	c2.:32
 	c:
 	c:
 	c:
@@ -359,7 +357,7 @@ MvtUnVioloncello = \relative c {
 	e4\! r r
 	fis2.:16\ff\>
 	fis4\! r r
-	g2.:32\fz\> 
+	g2.:16\fz\> 
 % mesures 286 à 290
 	g4\! g,\fz g\fz
 	g\fz_\crescmarkup g\fz g\fz
@@ -394,13 +392,13 @@ MvtUnVioloncello = \relative c {
 	b,4 r r
 	b\p r r
 	R2.
-	b'4(\p\< fis4. bis8)
-	cis8.(\> dis16 e4. eis8)\!
+	b'4(\p\< fis4. bis8)\!
+	cis8.(\> dis16 e4.\! eis8)
 % mesures 316 à 320
 	fis2( e!4
 	dis) r r
 	R2.
-	b4(\< fis4. bis8)
+	b4(\< fis4. bis8)\!
 	cis8.(\> dis16 e4.\! eis8)
 % mesures 321 à 325
 	fis2( e!4
@@ -434,7 +432,7 @@ MvtUnVioloncello = \relative c {
 	d2(-> cis4)
 % mesures 346 à 350
 	d(\< cis d
-	cis d cis)
+	cis d cis)\!
 	d\f d'8[ d b b]
 	fis_\crescmarkup fis d d b b
 	fis8\ff fis fis fis fis fis
@@ -446,14 +444,14 @@ MvtUnVioloncello = \relative c {
 	
 % mesures 356 à 360
 	b'2.\mf\<~
-	b~
+	b~\!
 	b2.\>~ 
-	b
+	b\!
 	b,2.\pp\<(
 % mesures 361 à 365
-	cis2 d4)
+	cis2 d4)\!
 	b2.(\>
-	cis2 d4)
+	cis2 d4)\!
 	d -\tweak X-offset #-3.3 \ff r r
 	fis r r
 % mesures 366 à 368

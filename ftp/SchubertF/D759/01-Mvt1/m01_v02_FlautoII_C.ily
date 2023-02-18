@@ -61,27 +61,27 @@ musicFlautoIIMvtI = \relative c {
 		g g4 g\! g8~
 		g2.\p(
 		f)
-		f(
+		f_(
 % mesures 76 à 80
 		e)
 		d'\f(
 		c)
-		c(
+		c_(
 		b)
 % mesures 81 à 85
 		r8 bes!4\ff bes bes8
 		a2.\fz
 		r8 bes4 bes bes8
-		a2.\fz(
-		b!8) r b2(->\fz
+		a2.\fz_(
+		b!8) r b2_(->\fz
 % mesures 86 à 90
-		c8) r c2(\fz->
-		d8) r d2(\fz->
+		c8) r c2_(\fz->
+		d8) r d2_(\fz->
 		c4) b-. c-.
-		b8 r b2(\fz->
-		c8) r c2(\fz->
+		b8 r b2_(\fz->
+		c8) r c2_(\fz->
 % mesures 91 à 95
-		d8) r d2(\fz->
+		d8) r d2_(\fz->
 		c4) b-. c-. \mark \default
 		b r r
 		R2.*5
@@ -102,20 +102,20 @@ musicFlautoIIMvtI = \relative c {
 		
 		
 		
-		fis,2.\pp\>_(
+		fis,2._(\pp\> 
 	}
 	\alternative {
 		{
 			fis4)\! r r
 		}
 		{
-			a!2.\>(
+			<< a!2._( { s4\> s s\! } >>
 		}
 	}
 % mesures 111 à 115
-	a2.)(\!
-	a)(
-	a)(
+	a2.)_(\!
+	a)_(
+	a)_(
 	g4) r r
 	R2.*23
 % mesures 116 à 120
@@ -158,8 +158,8 @@ musicFlautoIIMvtI = \relative c {
 	r8 d4 d d8
 % mesures 161 à 165
 	r8 cis4 cis cis8
-	g'2.\ff\>~(
-	g2\! e4)
+	g'2.\ff\>~
+	g2\! e4
 	bes2.(\>
 	g2\! e4)
 % mesures 166 à 170
@@ -225,8 +225,8 @@ musicFlautoIIMvtI = \relative c {
 % mesures 216 à 220
 	R2.
 	R2.\mark \default
-	R2.*11
-	
+	R2.
+	R2.*10
 	
 % mesures 221 à 225
 	
@@ -283,7 +283,7 @@ musicFlautoIIMvtI = \relative c {
 	r a4(-. a-. a8-.)
 	r g4(-. g-. g8-.)
 % mesures 266 à 270
-	r g4 g g8(
+	r g4 g g8_(
 	fis4) r r
 	R2.*13
 	
@@ -326,16 +326,16 @@ musicFlautoIIMvtI = \relative c {
 	cis2.\fz
 % mesures 301 à 305
 	r8 d4 d d8
-	cis2.\fz(
-	dis8) r dis2(\fz
-	e8) r e2(\fz
-	fis8) r fis2\fz(
+	cis2.\fz_(
+	dis8) r dis2_(\fz
+	e8) r e2_(\fz
+	fis8) r fis2\fz_(
 % mesures 306 à 310
 	e4) dis-. e-.
-	dis8 r dis2(\fz
-	e8) r e2(\fz
-	dis8) r dis2(\fz
-	cis4) dis cis \mark \default
+	dis8 r dis2_(\fz
+	e8) r e2_(\fz
+	dis8) r dis2_(\fz
+	cis4) dis-. cis-. \mark \default
 % mesures 311 à 315
 	b r r
 	R2.
@@ -356,8 +356,8 @@ musicFlautoIIMvtI = \relative c {
 	
 % mesures 326 à 330
 	
-	fis,2.~ -\tweak X-offset #-3. \pp\>
-	fis4\! r r
+	fis,2._(\pp\>
+	fis4)\! r r
 	R2.*5
 	
 % mesures 331 à 335
@@ -382,7 +382,7 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	r4 fis(\f b
-	d\< fis b)
+	d\< fis b)\!
 	d2.\ff
 % mesures 351 à 355
 	cis
@@ -392,9 +392,9 @@ musicFlautoIIMvtI = \relative c {
 	
 % mesures 356 à 360
 	b,2.(\mf\< 
-	cis2 d4)
-	b2.\>(
 	cis2 d4)\!
+	b2.\>(
+	cis2\! d4)
 	b4 r r
 % mesures 361 à 365
 	R2.*3

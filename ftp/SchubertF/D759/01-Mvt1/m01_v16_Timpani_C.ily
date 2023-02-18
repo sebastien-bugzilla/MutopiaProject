@@ -4,13 +4,13 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnTimpaniEH = \relative c {
+musicTimpaniMvtI = \relative c {
 	\clef bass
 	\key a \minor
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*26
+		R2.*26
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -20,22 +20,22 @@ MvtUnTimpaniEH = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	    
-	    
-	    r4 r f\fz
-	    f\fz r r
-	    R2.*5
+		
+		
+		r4 r f\fz
+		f\fz r r
+		R2.*5
 % mesures 31 à 35
-	    
-	    
-	    
-	    
-	    r4 r r8 f\ff
+		
+		
+		
+		
+		r4 r r8 f\ff
 % mesures 36 à 40
-	    f4 r8 f f4
-	    r8 f f4 f8 f \mark \default
-	    b,4\fz r r
-	    R2.*24
+		f4 r8 f f4
+		r8 f f4 f8 f \mark \default
+		b,4\fz r r
+		R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -45,9 +45,9 @@ MvtUnTimpaniEH = \relative c {
 % mesures 56 à 60
 	
 % mesures 61 à 65
-	    
-	    \mark \default
-	    R2.*22
+		
+		\mark \default
+		R2.*22
 % mesures 66 à 70
 	
 % mesures 71 à 75
@@ -55,39 +55,39 @@ MvtUnTimpaniEH = \relative c {
 % mesures 76 à 80
 	
 % mesures 81 à 85
-	    
-	    
-	    
-	    
-	    r4 b4:16\fz b8 r
+		
+		
+		
+		
+		r4 b4:16\fz b8 r
 % mesures 86 à 90
-	    R2.
-	    r4 b4:16\fz b8 r
-	    R2.
-	    r4 b4:16\fz b8 r
-	    R2.
+		R2.
+		r4 b4:16\fz b8 r
+		R2.
+		r4 b4:16\fz b8 r
+		R2.
 % mesures 91 à 95
-	    r4 b4:16\fz b8 r
-	    r4 b f' \mark \default
-	    b, r r
-	    R2.*10
+		r4 b4:16\fz b8 r
+		r4 b f' \mark \default
+		b, r r
+		R2.*10
 % mesures 96 à 100
 	
 % mesures 101 à 105
-	    
-	    
-	    
-	    r4 b\ff-. r
-	    R2.*5
+		
+		
+		
+		r4 b\ff-. r
+		R2.*5
 % mesures 106 à 110
 	}
 	\alternative {
-	    {
-	        R2.
-	    }
-	    {
-	        b2.:16\pp\>
-	    }
+		{
+			R2.
+		}
+		{
+			b2.:16\pp\>
+		}
 	}
 % mesures 111 à 115
 	b4\! r r
@@ -273,10 +273,10 @@ MvtUnTimpaniEH = \relative c {
 	
 % mesures 356 à 360
 	b2.:32\mf\<
-	b:
+	b:\!
 	b:\>
-	b:
-	b4\! r r
+	b:\!
+	b4 r r
 % mesures 361 à 365
 	R2.*3
 	

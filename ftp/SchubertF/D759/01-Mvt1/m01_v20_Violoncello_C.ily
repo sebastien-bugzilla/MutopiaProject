@@ -4,149 +4,149 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnBasso = \relative c {
+musicVioloncelloMvtI = \relative c {
 	\clef bass
 	\key b \minor
 % mesures 1 à 5
-	b2.(
+	b2.(\pp
 	\repeat volta 2 {
-	    cis2 d4)
-	    b2.(
-	    a4 fis g)
-	    d2( cis4
+		cis2 d4)
+		b2.(
+		a4 fis g)
+		d2( cis4
 % mesures 6 à 10
-	    fis2.)~
-	    fis~
-	    fis
-	    b4^\pizz -\tweak X-offset #-3 \pp r8 b[ b b]
-	    b4 r8 b[ b g]
+		fis2.)~
+		fis~
+		fis
+		b4^\pizz r8 b[ b b]
+		b4 r8 b[ b g]
 % mesures 11 à 15
-	    b4 r8 b[ b b]
-	    b4 r8 b[ b g]
-	    b4 r8 b[ b b]
-	    b4 r8 b[ b g]
-	    b4 r8 b[ b b]
+		b4 r8 b[ b b]
+		b4 r8 b[ b g]
+		b4 r8 b[ b b]
+		b4 r8 b[ b g]
+		b4 r8 b[ b b]
 % mesures 16 à 20
-	    b4 r8 b[ b g]
-	    d4 r8 d'[ d d]
-	    g4\< r8 g[\> g gis]\!
-	    a4 r8 a,[ a a]
-	    d r fis,4\fz^\arco r
+		b4 r8 b[ b g]
+		d4 r8 d'[ d d]
+		g4\< r8 g[\> g gis]\!
+		a4 r8 a,[ a a]
+		d r fis,4\fz^\arco r
 % mesures 21 à 25
-	    r r8 fis^\pizz\p[ fis fis]
-	    b4\pp r8 b[ b b]
-	    b4 r8 b[ b g]
-	    b4 r8 b[ b b]
-	    b4 r8 b[ b g]
+		r r8 fis^\pizz\p[ fis fis]
+		b4\pp r8 b[ b b]
+		b4 r8 b[ b g]
+		b4 r8 b[ b b]
+		b4 r8 b[ b g]
 % mesures 26 à 30
-	    d4 r8 d'^\arco[ d fis]
-	    g4 r8 g[_\crescmarkup g e]
-	    e4 r8 a[ fis\fz fis]
-	    fis4\fz r8 fis,[\p fis fis]
-	    fis4 r8 fis[ fis fis]
+		d4 r8 d'^\arco[ d fis]
+		g4 r8 g[_\crescmarkup g e]
+		e4 r8 a[ fis\fz fis]
+		fis4\fz r8 fis,[\p fis fis]
+		fis4 r8 fis[ fis fis]
 % mesures 31 à 35
-	    d4 r8 d'[ d fis]
-	    g4 r8 g[_\crescmarkup g e]
-	    e4 r8 a[ a fis]
-	    fis4\f r8 b[ b fis]
-	    fis4 r8 b[ b fis\ff]
+		d4 r8 d'[ d fis]
+		g4 r8 g[_\crescmarkup g e]
+		e4 r8 a[ a fis]
+		fis4\f r8 b[ b fis]
+		fis4 r8 b[ b fis\ff]
 % mesures 36 à 40
-	    fis4 r8 fis fis4
-	    r8 fis fis4 fis8 fis \mark \default
-	    b,4\fz r r
-	    R2.*3
-	    
+		fis4 r8 fis fis4
+		r8 fis fis4 fis8 fis \mark \default
+		b,4\fz r r
+		R2.*5
+		
 % mesures 41 à 45
-	    
-	    g'4\pp^\pizz r r
-	    g r r
-	    g r r
-	    d r r
+		
+		
+		
+		g'4(\pp d4. g8)
+		fis8.( g16 a4. g8)
 % mesures 46 à 50
-	    d r r 
-	    g, r r 
-	    g' r r
-	    e r r
-	    e r r
+		fis8.( g16 a8[ d, e fis])
+		g4( d2)
+		g4( d4. g8)
+		gis8.( a16 b4. a8)
+		gis8.( a16 b8[ e, fis gis])
 % mesures 51 à 55
-	    a r r
-	    d, r r
-	    g r r
-	    d r r
-	    d r r
+		a4( e4. gis8)
+		a4( d, e8 fis)
+		g8 r g4(-> d)
+		r fis->( d)
+		r fis( d)
 % mesures 56 à 60
-	    g, r r
-	    g' r r
-	    e r r
-	    e r r
-	    a_\decresc r\! r
+		r g( d)
+		r g( d)
+		r gis( e)
+		r gis( e)
+		r a(_\decresc e)\!
 % mesures 61 à 65
-	    d, r r
-	    R2. \mark \default
-	    c2.:32\ffz\>
-	    c4\! r r
-	    d2.:32\fz\>
+		r a( d,)
+		R2. \mark \default
+		c2.:32\ffz\>
+		c4\! r r
+		d2.:32\fz\>
 % mesures 66 à 70
-	    d4\! r r
-	    ees2.:32\fz\>
-	    ees4-.\! ees-. ees-.
-	    ees-._\crescmarkup ees-. ees-.
-	    ees-. ees-. ees-.
+		d4\! r r
+		ees2.:32\fz\>
+		ees4-.\! ees-. ees-.
+		ees-._\crescmarkup ees-. ees-.
+		ees-. ees-. ees-.
 % mesures 71 à 75
-	    e!\fz r r
-	    R2.*5
-	    
-	    
-	    
+		e!\fz r r
+		R2.
+		cis'!8.\p( d16 e8[ a, b cis])
+		d4 r r
+		b8.( c16 d8[ g, a b])
 % mesures 76 à 80
-	    
-	    gis8.-.\f a16-. b8-.[ e,-. fis-. gis-.]
-	    a4-. r r
-	    fis8.-. g!16-. a8-.[ d,-. e-. fis-.]
-	    g4-. r r
+		c4 r r
+		gis8.-.\f a16-. b8-.[ e,-. fis-. gis-.]
+		a4-. r r
+		fis8.-. g!16-. a8-.[ d,-. e-. fis-.]
+		g4-. r r
 % mesures 81 à 85
-	    g8.\ff-. a16-. bes8-.[ e,-. fis-. g-.]
-	    a4-. r r
-	    g8.-. a16-. bes8-.[ e,-. fis-. g-.]
-	    a4-. r8 a[-. g-. e-.]
-	    d r d2:16\fz
+		g8.\ff-. a16-. bes8-.[ e,-. fis-. g-.]
+		a4-. r r
+		g8.-. a16-. bes8-.[ e,-. fis-. g-.]
+		a4-. r8 a[-. g-. e-.]
+		d r d2:16\fz
 % mesures 86 à 90
-	    c8 r c2:16\fz
-	    g8 r g2:16\fz
-	    c4-. d-. d-.
-	    g,8 r g'2:16\fz
-	    c,8 r c2:16\fz
+		c8 r c2:16\fz
+		g8 r g2:16\fz
+		c4-. d-. d-.
+		g,8 r g'2:16\fz
+		c,8 r c2:16\fz
 % mesures 91 à 95
-	    e8 r e2:16\fz
-	    a,4-. d-. d-. \mark \default
-	    g, r r
-	    g'\p r r
-	    d r r
+		e8 r e2:16\fz
+		a,4-. d-. d-. \mark \default
+		g, r r
+		R2.*2
+		
 % mesures 96 à 100
-	    d r r
-	    d r r
-	    d r r
-	    g r r
-	    d r r
+		g'4(\p\< d4. gis8)\!
+		a8.(\> b16 c4.\! cis8)
+		d2.
+		g,4 r r
+		d r r
 % mesures 101 à 105
-	    d r r
-	    d r r
-	    d r r
-	    g8 r b,4-.-\tweak X-offset #-2. \ffz r
-	    R2.
+		d r r
+		d r r
+		d r r
+		g8 r b,4-.-\tweak X-offset #-2. \ffz r
+		R2.
 % mesures 106 à 110
-	    g'4^\pizz\pp r r
-	    fis r r
-	    d r r
-	    cis! r r
+		g'4^\pizz\pp r r
+		fis r r
+		d r r
+		cis! r r
 	}
 	\alternative {
-	    {
-	        b2.^\arco\laissezVibrer
-	    }
-	    {
-	        b4^\pizz r r
-	    }
+		{
+			b2.^\arco\laissezVibrer
+		}
+		{
+			b4^\pizz r r
+		}
 	}
 % mesures 111 à 115
 	c' r r
@@ -162,7 +162,7 @@ MvtUnBasso = \relative c {
 	e
 % mesures 121 à 125
 	d)
-	c2.:16
+	c2.:32
 	c:
 	c:
 	c:
@@ -176,26 +176,26 @@ MvtUnBasso = \relative c {
 	dis:
 	e:
 	eis:
-	fis:\f
-	fis:
+	fis4\f e''!2
+	fis2( g4)
 % mesures 136 à 140
-	fis:
-	fis:
-	fis:
-	fis:_\crescmarkup
-	fis:
+	e2.
+	fis2( g4)
+	e2( fis4)
+	g2(_\crescmarkup e4)
+	fis2( g4)
 % mesures 141 à 145
-	fis:
-	fis':
-	fis:
-	fis:
-	fis4: e: a!:
+	e2( fis4)
+	g( e fis)
+	g( e fis)
+	g( e fis)
+	g( e cis)
 % mesures 146 à 150
-	gis2.:\ff\>
+	gis2.:16\ff\>
 	gis:\!
 	gis,:\>
 	gis:\!
-	gis4-.\p r r
+	gis4-. r r
 % mesures 151 à 155
 	a-. r r
 	fis-. r r
@@ -248,16 +248,16 @@ MvtUnBasso = \relative c {
 	cis
 	e'\fz
 	d4-. b-. c-.
-	g,2.\ffz\>~
-	g\!
+	c,2.\ffz\>(
+	b2\! ais4)
 % mesures 196 à 200
-	g\fz\>~
-	g\!
-	g\pp~ 
-	g~
-	g~_\crescmarkup
+	c2.(\fz\>
+	b2\! ais4)
+	cis!2.\pp( 
+	b2 ais4)
+	cis2.(_\crescmarkup
 % mesures 201 à 205
-	g
+	b2 bes4)
 	fis4\ff \grace {d'32( e fis g)} a4-. \grace {a32( b cis)} d4-.
 	a,\fz \grace {a32( b cis d)} e4-. \grace {e32( fis gis)} a4-.
 	d,4 r r8. d32(\p e
@@ -319,41 +319,41 @@ MvtUnBasso = \relative c {
 % mesures 251 à 255
 	r8 cis-. cis4-. cis8-. cis-. \mark \default
 	fis,4\fz r r
-	R2.*3
+	R2.*5
 	
 	
 % mesures 256 à 260
-	d'4^\pizz\pp r r
-	d r r
-	d r r 
-	a r r
-	a r r
+	
+	
+	d''4(\pp a4. d8)
+	cis8.( d16 e4. d8)
+	cis8.( d16 e8[ a, b cis])
 % mesures 261 à 265
-	d r r
-	d r r
-	b r r
-	b r r
-	e r r 
+	d4( a2)
+	d4( a4. d8)
+	dis8.( e16 fis4. e8)
+	dis8.( e16 fis8[ b, cis dis])
+	e4( b4. dis8)
 % mesures 266 à 270
-	a, r r
-	d r r
-	a r r 
-	a r r
-	d r r
+	e4( a, b8 cis
+	d8) r d,4(\pp a)
+	r cis( a)
+	r cis( a)
+	r d( a)
 % mesures 271 à 275
-	d r r
-	b r r
-	b r r
-	e r r
-	a, r r
+	r d( a)
+	r dis( b)
+	r dis( b)
+	r e( b)
+	r e( a,)
 % mesures 276 à 280
-	a_\decresc r\! d
-	g, r r
-	g r e'
-	fis r r
+	r d(_\decresc a)\!
+	r d( g,)
+	r c( g)
+	r cis!( fis,)
 	R2. \mark \default
 % mesures 281 à 285
-	e2.:16\ff\>^\arco
+	e'2.:16\ff\>
 	e4\! r r
 	fis2.:16\ff\>
 	fis4\! r r
@@ -363,12 +363,12 @@ MvtUnBasso = \relative c {
 	g\fz_\crescmarkup g\fz g\fz
 	g'\fz g\fz g\fz 
 	gis\fz r r
-	R2.*5
+	R2.
 % mesures 291 à 295
-	
-	
-	
-	
+	\clef tenor eis'8.(\p fis16 gis8[ cis, dis eis]
+	fis4) r r
+	dis8.( e16 fis8[ b, cis dis]
+	e4) r r \clef bass
 	bis8.\f-. cis16-. dis8-.[ gis,-. ais-. bis-.]
 % mesures 296 à 300
 	cis4 r r
@@ -391,18 +391,18 @@ MvtUnBasso = \relative c {
 % mesures 311 à 315
 	b,4 r r
 	b\p r r
-	fis r r
-	fis r r 
-	fis r r 
+	R2.
+	b'4(\p\< fis4. bis8)\!
+	cis8.(\> dis16 e4.\! eis8)
 % mesures 316 à 320
-	fis r r
-	b r r
-	fis' r r
-	fis r r
-	fis r r
+	fis2( e!4
+	dis) r r
+	R2.
+	b4(\< fis4. bis8)\!
+	cis8.(\> dis16 e4.\! eis8)
 % mesures 321 à 325
-	fis r r
-	b,8 r b'4\ffz r
+	fis2( e!4
+	dis8) r b4\ffz r
 	R2.
 	g!4\pp^\pizz r r
 	fis r r
@@ -435,9 +435,9 @@ MvtUnBasso = \relative c {
 	cis d cis)\!
 	d\f d'8[ d b b]
 	fis_\crescmarkup fis d d b b
-	fis8\ff fis fis fis fis fis
+	fis2.:8\ff 
 % mesures 351 à 355
-	fis' fis fis fis fis fis
+	fis':
 	b,4 r r
 	R2.*3
 	

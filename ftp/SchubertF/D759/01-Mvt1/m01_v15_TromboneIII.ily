@@ -1,11 +1,9 @@
-%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/01_SchubertSymphonie8_Mvt1_Tromboni_basso.ly
-%Fichier généré le :  samedi 2 février 2019, 13:30:06 (UTC+0100)
-%-----------------------------------------------------------------------
-%         /!\ /!\ /!\   Fichier non compilable   /!\ /!\ /!\           -
-%-----------------------------------------------------------------------
-%#######################################################################
-%#               M O U V E M E N T   1   -   V O I X   8               #
-%#######################################################################
+%  work        : Schubert Symphony No. 8 in B minor, D.759
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 12 February 2023, 19:55
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
 MvtUnTromboni_basso = \relative c {
 	\clef bass
 	\key b \minor
@@ -140,7 +138,7 @@ MvtUnTromboni_basso = \relative c {
 % mesures 146 à 150
 	gis2.\ff\>~
 	gis\!
-	gis,\>
+	gis,\>~
 	gis\!
 	R2.*4
 % mesures 151 à 155
@@ -189,7 +187,7 @@ MvtUnTromboni_basso = \relative c {
 	a2.
 	gis
 	b'\fz
-	a4-. fis-. g-.
+	a4-. fis-. g!-.
 	d2.
 % mesures 191 à 195
 	cis
@@ -323,9 +321,9 @@ MvtUnTromboni_basso = \relative c {
 	d2(-> cis4)
 % mesures 346 à 350
 	d\< cis d
-	cis d cis
+	cis d cis\!
 	d\! fis2\f
-	fis2\< fis4
+	fis2\< fis4\!
 	fis2.\ff
 % mesures 351 à 355
 	fis

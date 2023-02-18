@@ -1,181 +1,150 @@
-%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/00_SchubertSymphonie8_Conducteur_Mvt1.ly
-%Fichier généré le :  samedi 2 février 2019, 13:30:06 (UTC+0100)
-%#######################################################################
-%#             G E N E R A L I T E S   E T   E N T E T E               #
-%#######################################################################
-\paper {
-	%annotate-spacing = ##t
-	%system-separator-markup = \slashSeparator
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { \fromproperty #'header:dedication }
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-%-----------------------------------------------------------------------
-global = {
-	\time 3/4
-	\tempo "Allegro moderato"
-}
-%-----------------------------------------------------------------------
-\include "00_SchubertSymphonie8_markup.ly"
-\include "00_SchubertSymphonie8_StaffOptionsC.ly"
-\include "01_SchubertSymphonie8_Mvt1_01_Flauti_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_02_Oboi_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_03_ClarinettiA_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_04_Fagotti_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_05_CorniD_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_06_TrombeE_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_07_Tromboni_alto_tenore_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_08_Tromboni_basso_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_09_Timpani_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_10_ViolinoI_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_11_ViolinoII_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_12_Viola_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_13_Violoncello_C.ly"
-\include "01_SchubertSymphonie8_Mvt1_14_Basso_C.ly"
-\include "01_Voice_part_formatting.ly"
-%#######################################################################
-%#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
-%#######################################################################
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Franz Schubert (1797 - 1828)
+%  work               : Symphony No. 8 in B Minor, D.759
+%  Source             : Franz Schubert's Werke, Serie I: Symphonien, No.8
+%                       Leipzig Breitkopf & Härtel, 1885. Plate F.S. 8. 
+%  Type of score      : Score conductor mvt I
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Sunday 12 February 2023, 19:55
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/Symph8_D759_Header.ily"
+\include "./00-Common/Symph8_D759_PaperConductors.ily"
+\include "./00-Common/Symph8_D759_timeMvt.ily"
+\include "./00-Common/Symph8_D759_LayoutConductors.ily"
+\include "./00-Common/Symph8_D759_Shortcuts.ily"
+\include "./00-Common/Symph8_D759_NameStaff.ily"
+\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
+%\include "./00-Common/Symph8_D759_Format_Cond_Mvt1.ily"
+\include "./00-Common/Symph8_D759_Tempi.ily"
+\include "./01-Mvt1/m01_v01_FlautoI_C.ily"
+\include "./01-Mvt1/m01_v02_FlautoII_C.ily"
+\include "./01-Mvt1/m01_v03_OboeI_C.ily"
+\include "./01-Mvt1/m01_v04_OboeII_C.ily"
+\include "./01-Mvt1/m01_v05_ClarinettoI_C.ily"
+\include "./01-Mvt1/m01_v06_ClarinettoII_C.ily"
+\include "./01-Mvt1/m01_v07_FagottoI_C.ily"
+\include "./01-Mvt1/m01_v08_FagottoII_C.ily"
+\include "./01-Mvt1/m01_v09_CornoI_C.ily"
+\include "./01-Mvt1/m01_v10_CornoII_C.ily"
+\include "./01-Mvt1/m01_v11_TrombaI_C.ily"
+\include "./01-Mvt1/m01_v12_TrombaII_C.ily"
+\include "./01-Mvt1/m01_v13_TromboneI_C.ily"
+\include "./01-Mvt1/m01_v14_TromboneII_C.ily"
+\include "./01-Mvt1/m01_v15_TromboneIII_C.ily"
+\include "./01-Mvt1/m01_v16_Timpani_C.ily"
+\include "./01-Mvt1/m01_v17_ViolinoI_C.ily"
+\include "./01-Mvt1/m01_v18_ViolinoII_C.ily"
+\include "./01-Mvt1/m01_v19_Viola_C.ily"
+\include "./01-Mvt1/m01_v20_Violoncello_C.ily"
+\include "./01-Mvt1/m01_v21_Basso_C.ily"
+%###############################################################################
+%#                          S C O R E   S E C T I O N                          #
+%###############################################################################
 \book{
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Franz Schubert"
-				"1797 - 1828"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Sinfonie Nr. 8 in h-moll"
-				"Die Unvollendete"
+				"1st movement"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Mouvement 1"
-			}
+		subsubtitle = \markup {
+			"Franz Schubert  — "
+			"Symphony No. 8 in B Minor, D.759 — " 
+			\concat {"1" \super st} "Movement"
 		}
 	}
 	\score {
-	    <<
-	        \new StaffGroup <<
-			    \new Staff <<
-			        \new Voice {
-			            \conductorFormattingMvtI
-			        }
-			        \new Voice {
-			            \global \commonOptions \commonConductorOptions
-			            \nameFlauti
-			            \partcombine \MvtUnFlautiI \MvtUnFlautiII
-			        }
-%			        \new Voice {
-%			            \displayMvtI
-%			        }
-			    >>
-			    \new Staff { 
-			        \global \commonOptions \commonConductorOptions
-			        \nameOboi
-			        \partcombine \MvtUnOboiI \MvtUnOboiII 
-			    }
-			    \new Staff {
-			        \global \commonOptions \commonConductorOptions
-			        \nameClarinetti
-			        \partcombine \MvtUnClarinettiAI \MvtUnClarinettiAII
-			    }
-			    \new Staff {
-			        \global \commonOptions \commonConductorOptions
-			        \nameFagotti
-			        \partcombine \MvtUnFagottiI \MvtUnFagottiII
-			    }
-			    \new Staff { 
-			        \global \commonOptions \commonConductorOptions
-			        \nameCorniMvtI
-			        \partcombine \MvtUnCorniDI \MvtUnCorniDII
-			    }
-			    \new Staff { 
-			        \global \commonOptions \commonConductorOptions
-			        \nameTrombe
-			        \partcombine \MvtUnTrombeEI \MvtUnTrombeEII
-			    }
-			    \new GrandStaff \with { \nameTromboni } <<
-			        \new Staff { 
-			            \global \commonOptions \commonConductorOptions
-			            \partcombine \MvtUnTromboni_alto \MvtUnTromboni_tenore 
-			        }
-			        \new Staff { 
-			            \global \commonOptions \commonConductorOptions
-			            \MvtUnTromboni_basso 
-			        }
-		        >>
-		        \new Staff { 
-		            \global \commonOptions \commonConductorOptions
-		            \nameTimpaniC
-		            \MvtUnTimpaniEH 
-		        }
-		        \new GrandStaff \with { \nameViolin } <<
-			        \new Staff { 
-			            \global \commonOptions \commonConductorOptions
-			            \MvtUnViolinoI
-			        }
-			        \new Staff { 
-			            \global \commonOptions \commonConductorOptions
-			            \MvtUnViolinoII
-			        }
-		        >>
-		        \new Staff { 
-		            \global \commonOptions \commonConductorOptions
-		            \nameViolaC
-		            \MvtUnViola
-		        }
-		        \new GrandStaff \with { \nameBassi } <<
-			        \new Staff { 
-			            \global \commonOptions \commonConductorOptions
-			            \MvtUnVioloncello
-			        }
-			        \new Staff { 
-			            \global \commonOptions \commonConductorOptions
-			            \MvtUnBasso
-			        }
-		        >>
+		<<
+			\new StaffGroup <<
+				\new Staff <<
+					\new Voice {
+						\tempiMvtI
+					}
+%					\new Voice {
+%						\conductorFormattingMvtI
+%					}
+					\new Voice {
+						\timeMvtI \nameStaffIMvtI
+						\partCombine \musicFlautoIMvtI \musicFlautoIIMvtI
+					}
+				>>
+				\new Staff { 
+					\timeMvtI \nameStaffIIMvtI
+					\partCombine \musicOboeIMvtI \musicOboeIIMvtI 
+				}
+				\new Staff {
+					\timeMvtI \nameStaffIIIMvtI 
+					\partCombine \musicClarinettoIMvtI \musicClarinettoIIMvtI
+				}
+				\new Staff {
+					\timeMvtI \nameStaffIVMvtI 
+					\partCombine \musicFagottoIMvtI \musicFagottoIIMvtI
+				}
+			>>
+			\new StaffGroup <<
+				\new Staff { 
+					\timeMvtI \nameStaffVMvtI
+					\partCombine \musicCornoIMvtI \musicCornoIIMvtI
+				}
+				\new Staff { 
+					\timeMvtI \nameStaffVIMvtI
+					\partCombine \musicTrombaIMvtI \musicTrombaIIMvtI
+				}
+				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
+					\new Staff { 
+						\timeMvtI \nameStaffVIIMvtI 
+						\partCombine \musicTromboneIMvtI \musicTromboneIIMvtI 
+					}
+					\new Staff { 
+						\timeMvtI \nameStaffVIIIMvtI 
+						\musicTromboneIIImvtI 
+					}
+				>>
+			>>
+			\new Staff { 
+				\timeMvtI \nameStaffIXMvtI
+				\musicTimpaniMvtI
+			}
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
+					\new Staff { 
+						\timeMvtI \nameStaffXMvtI
+						\musicViolinoIMvtI
+					}
+					\new Staff { 
+						\timeMvtI \nameStaffXIMvtI 
+						\musicViolinoIIMvtI
+					}
+				>>
+				\new Staff { 
+					\timeMvtI \nameStaffXIIMvtI 
+					\musicViolaMvtI
+				}
+				\new GrandStaff <<
+					\new Staff { 
+						\timeMvtI \nameStaffXIIIMvtI 
+						\musicVioloncelloMvtI
+					}
+					\new Staff { 
+						\timeMvtI \nameStaffXIVMvtI 
+						\musicBassoMvtI
+					}
+				>>
 			>>
 		>>
 		\header {
 			breakbefore = ##t
 		}
 		\layout {
+			\layoutTemp
 			%system-count = #20
 		}
 	}

@@ -4,51 +4,51 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnOboiI = \relative c'' {
+musicOboeIMvtI = \relative c'' {
 	\clef treble
 	\key b \minor
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
 % mesures 6 à 10
-	    R2.*11
-	    
-	    
+		R2.*11
+		
+		
 % mesures 11 à 15
-	    
-	    
-	    \partCombineApart fis2.\pp(
-	    b,4. ais8[ b cis])
-	    fis2.(
+		
+		
+		\partCombineApart fis2.\pp(
+		b,4. ais8[ b cis])
+		fis2.(
 % mesures 16 à 20
-	    b,4. ais8[ b cis])
-	    d2.(
-	    e4\< f4.\> e8)
-	    d4(\! cis2
-	    d4) r r
+		b,4. ais8[ b cis])
+		d2.(
+		e4\< f4.\> e8)\!
+		d4( cis2
+		d4) r r
 % mesures 21 à 25
-	    \partCombineAutomatic R2. \partCombineApart
-	    fis2.(
-	    b,4. ais8[ b cis])
-	    fis2.(
-	    b,4. ais8[ b cis]) \partCombineAutomatic
+		\partCombineAutomatic R2. \partCombineApart
+		fis2.(
+		b,4. ais8[ b cis])
+		fis2.(
+		b,4. ais8[ b cis]) \partCombineAutomatic
 % mesures 26 à 30
-	    d2.~
-	    d2~ d8( e)
-	    e2 fis4\fz
-	    g\fz r r
-	    R2.
+		d2.~
+		d2~ d8( e)
+		e2 \once \partCombineApart fis4
+		g\fz r r
+		R2.
 % mesures 31 à 35
-	    d2.~
-	    d2~ d8( e)
-	    e2~ e8( fis)
-	    fis2~ fis8 fis
-	    fis2~ fis8[ ais]
+		d2.~
+		d2~ d8( e)
+		e2~ e8( fis)
+		fis2~ fis8 fis
+		fis2~ fis8[ ais]
 % mesures 36 à 40
-	    ais2.~
-	    ais \mark \default
-	    b4\fz r r
-	    R2.*24
+		ais2.~
+		ais \mark \default
+		b4\fz r r
+		R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -58,78 +58,78 @@ MvtUnOboiI = \relative c'' {
 % mesures 56 à 60
 	
 % mesures 61 à 65
-	    
-	    \mark \default
-	    g,2.\ffz\>(
-	    c,4) r\! r
-	    g'2.\fz(\>
+		
+		\mark \default
+		g,2.\ffz\>(
+		c,4)\! r r
+		g'2.\fz(\>
 % mesures 66 à 70
-	    d4) r\! r
-	    g2.(\fz\>
-	    ees4)\! bes''\fz bes\fz
-	    bes\fz bes\fz bes\fz 
-	    bes\fz bes\fz bes\fz 
+		d4)\! r r
+		g2.(\fz\>
+		ees4)\! bes''\fz bes\fz
+		bes\fz bes\fz bes\fz 
+		bes\fz bes\fz bes\fz 
 % mesures 71 à 75
-	    bes8\fz bes4\> bes bes8~
-	    bes bes4 bes\! r8
-	    R2.*4
-	    
-	    
+		bes8\fz bes4\> bes bes8~
+		bes bes4 bes\! r8
+		R2.*4
+		
+		
 % mesures 76 à 80
-	    
-	    e,2.~
-	    e2( ees4)
-	    d2.~
-	    d
+		
+		e,2.~
+		e2( ees4)
+		d2.^(
+		d)
 % mesures 81 à 85
-	    r8 g4\ff g g8
-	    g2.\fz
-	    r8 g4 g g8
-	    g2.~
-	    g8 r g2->~
+		r8 g4\ff g g8
+		g2.\fz
+		r8 g4 g g8
+		g2.~
+		g8 r g2->^(
 % mesures 86 à 90
-	    g8 r g2\fz->(
-	    b8) r b2->(\fz
-	    c4) g-. fis!-.
-	    g8 r g2->~
-	    g8 r g2->\fz(
+		g8) r g2\fz->^(
+		b8) r b2->^(\fz
+		c4) g-. fis!-.
+		g8 r g2->^(
+		g8) r g2->\fz^(
 % mesures 91 à 95
-	    gis8) r b2->(\fz
-	    a4) g!-. a-. \mark \default
-	    g r r
-	    R2.
-	    \partCombineApart r4 r r8 c,\p
+		gis8) r b2->^(
+		\once \partCombineApart a4) g!-. a-. \mark \default
+		g r r
+		R2.
+		\partCombineApart r4 r r8 c,\p
 % mesures 96 à 100
-	    b8.(\< c16 d4. f8)
-	    e4.(\! d8[ c b])
-	    a2( d4)
-	    g, \partCombineAutomatic r r \partCombineApart
-	    a'(\p d,4. a'8)
+		b8.(\< c16 d4. f8)\!
+		e4.(\! d8[ c! b])
+		a2( d4)
+		g, \partCombineAutomatic r r \partCombineApart
+		a'(\p d,4. a'8)
 % mesures 101 à 105
-	    g8.(\< a16 b4. d8)
-	    d4(\> c8[ b a g)]\!
-	    g4( fis8 e fis4)
-	    g8 r \partCombineAutomatic b,2~
-	    b2.~
+		g8.(\< a16 b4. d8)\!
+		d4(\> c8[ b\! a g)]
+		g4( fis8 e fis4)
+		g8 r \partCombineUnisono b,2~\ff\>
+		b2.~
 % mesures 106 à 110
-	    b~
-	    b~
-	    b
-	    ais(
+		b~\pp
+		b~
+		b_(
+		\partCombineChords ais)^(\>
 	}
 	\alternative {
-	    {
-	        b4) r r
-	    }
-	    {
-	        b2.~
-	    }
+		{
+			b4)\! \partCombineAutomatic r r
+		}
+		{
+			\partCombineChords b2.~
+		}
 	}
 % mesures 111 à 115
 	b~
 	b~
-	b~
-	b4 r r
+	b^~
+	b4 \partCombineAutomatic r r
 	R2.*19
 % mesures 116 à 120
 	
@@ -190,7 +190,7 @@ MvtUnOboiI = \relative c'' {
 	e2.
 	d4-. b-. c-.
 	b2.\fz
-	\afterGrace dis2.\fz\trill {cis16[ dis!]} \mark \default
+	\afterGrace dis2.\fz\trill {cis!16[ dis]} \mark \default
 % mesures 176 à 180
 	e4 r r
 	R2.
@@ -213,11 +213,11 @@ MvtUnOboiI = \relative c'' {
 	fis8.[ fis16 fis8. fis16] fis8. fis16
 	e8.[ e16 e8. e16] e8. e16
 	e8.[ e16 e8. e16] e8. e16
-	c2.\ffz\>(
-	b2\! ais4)
+	c2.\ffz\>\(
+	b2\! ais4\)
 % mesures 196 à 200
-	c2.\fz\>(
-	b2\! ais4)
+	c2.\fz\>\(
+	b2\! ais4\)
 	\partCombineApart cis!2. -\tweak X-offset #-2.0 \pp(
 	b2 ais4)
 	cis'2._\crescmarkup(
@@ -253,12 +253,12 @@ MvtUnOboiI = \relative c'' {
 	b,4. ais8[ b cis])
 % mesures 226 à 230
 	d2.(
-	e4\< f4.\> e8)
-	d4(\! cis2)
-	c2.~
-	c4( b2)~
+	e4\< f4.\> e8)\!
+	d4( cis2)
+	\partCombineChords c2.~\<
+	c4(\> \once \partCombineUnisono b2)\!( 
 % mesures 231 à 235
-	b4 \partCombineAutomatic r r \partCombineApart
+	b4) \partCombineAutomatic r r \partCombineApart
 	b2(~ b8 c
 	b4) r r
 	b2(~ b8 c
@@ -267,7 +267,7 @@ MvtUnOboiI = \relative c'' {
 	R2.*2
 	
 	f'2.\<~
-	f4(\> \partCombineChordsOnce e2)\!
+	f4(\> e2)\!
 	e4( fis!4. g8)
 % mesures 241 à 245
 	g4( fis4. fis8)
@@ -315,21 +315,21 @@ MvtUnOboiI = \relative c'' {
 	gis2.~
 % mesures 296 à 300
 	gis2( g4)
-	fis2.~
-	fis
+	fis2.^(
+	fis)
 	r8 b4\ff b b8
 	b2.\fz
 % mesures 301 à 305
 	r8 b4 b b8
-	b2.~
+	\partCombineChords b2.~
 	b8 r b2~
-	b8 r b2(\fz
-	dis8) r dis2(\fz
+	b8 r b2^(\fz
+	dis8) r dis2^(\fz
 % mesures 306 à 310
-	e4) b-. ais-.
-	b8 r a!2\fz(
-	gis8) r gis2(\fz
-	bis8) r bis2(\fz
+	e4) \partCombineAutomatic b-. ais-.
+	b8 r a!2\fz^(
+	gis8) r gis2^(\fz
+	bis8) r bis2^(\fz
 	cis4) fis,-. ais-. \mark \default
 % mesures 311 à 315
 	b r r
@@ -345,14 +345,14 @@ MvtUnOboiI = \relative c'' {
 	fis4(_\> e8[\! dis cis b])
 % mesures 321 à 325
 	b4( ais8 gis ais4
-	b8) r \partCombineAutomatic b2~
-	b2.~
-	b~
-	b~
-% mesures 326 à 330
+	b8) r \partCombineUnisono b2~\ffz\>
+	b2.~\p
+	b~\pp
 	b(
-	ais)(
-	b4)\! r r
+% mesures 326 à 330
+	b)( \partCombineChords
+	ais)^(
+	b4)\! \partCombineAutomatic r r
 	R2.*15
 % mesures 331 à 335
 	
@@ -368,7 +368,7 @@ MvtUnOboiI = \relative c'' {
 	fis( eis\< fis
 	eis fis eis\!
 	fis) b,(\f d
-	fis\< b d)
+	fis\< b d)\!
 	b2.\ff
 % mesures 351 à 355
 	ais
@@ -377,11 +377,11 @@ MvtUnOboiI = \relative c'' {
 	b2.(_\>
 	cis2_\! d4)
 % mesures 356 à 360
-	b2.~
+	\partCombineChords b2.~
+	b^~
 	b~
-	b~
-	b~
-	b4 r r 
+	b^~
+	b4 \partCombineAutomatic r r 
 % mesures 361 à 365
 	R2.*3
 	

@@ -4,133 +4,133 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnCorniDII = \relative c {
+musicCornoIMvtI = \relative c {
 	\clef treble
 	\key a \minor
 	\transposition d
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*18
+		R2.*18
 % mesures 6 à 10
 	
 % mesures 11 à 15
 	
 % mesures 16 à 20
-	    
-	    
-	    
-	    
-	    r4 d''2\fz\>~
+		
+		
+		
+		
+		r4 f''4.( e8
 % mesures 21 à 25
-	    d2.\p
-	    R2.
-	    R
-	    R
-	    R
+		f4 e2)
+		R2. \partCombineApart
+		e2->(~ e8 f
+		e4) r r
+		e2(->~ e8 f
 % mesures 26 à 30
-	    r4 c2\p~
-	    c~_\crescmarkup c8( d)
-	    d2 d4\fz
-	    d\fz d2~
-	    d2.
+		e4) c2~
+		c~ c8( d)
+		d2 e4
+		f f4.(_\fp_\> e8
+		f4 e2)\!
 % mesures 31 à 35
-	    r4 c2\p~
-	    c~ c8_\crescmarkup( d)
-	    d2~ d8( e)
-	    e2\f~ e8 e,
-	    e2~ e8 d'\ff
+		\partCombineAutomatic r4 c2\p~
+		c~ c8_\crescmarkup( d)
+		d2~ d8( e)
+		\partCombineApart e2~ e8 e \partCombineAutomatic
+		e2~ e8 e\ff
 % mesures 36 à 40
-	    d2.~
-	    d \mark \default
-	    c4\fz c2\fp\>~
-	    c2.\!~
-	    c~
+		e2.~
+		e \mark \default
+		e4\fz \partCombineApart c2~
+		c2.~
+		c~
 % mesures 41 à 45
-	    c4( b c)
-	    c\pp r r
-	    R2.*10
+		c4( d e)
+		\partCombineAutomatic f r r
+		R2.*10
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	    
-	    
-	    r4 r r8 c,8\pp~
-	    c c4 r8 r c~
-	    c c4 r8 r c~
+		
+		
+		r4 r r8 c8\pp~
+		c c4 r8 r c~
+		c c4 r8 r c~
 % mesures 56 à 60
-	    c c4 r8 r c~
-	    c c4 r8 r c'~
-	    c c4 r8 r c~
-	    c c4 r8 r4
-	    R2.*3
+		c c4 r8 r c~
+		c c4 r8 r \partCombineApart c~
+		c \partCombineAutomatic d4  r8 r d~
+		d d4 r8 r4 
+		R2.*3
 % mesures 61 à 65
-	    
-	    \mark \default
-	    f2.\ffz\>~
-	    f4\! r r
-	    c2.\fz\>~
+		
+		\mark \default
+		f2.\ffz\>~
+		f4\! r r
+		c2.\fz\>~
 % mesures 66 à 70
-	    c4\! r r
-	    f2.\fz\>~
-	    f4\! f\fz f\fz 
-	    f\fz_\crescmarkup f\fz f\fz 
-	    f\fz f\fz f\fz 
+		c4\! r r
+		f2.\fz\>~
+		f4\! f\fz f\fz 
+		f\fz_\crescmarkup f\fz f\fz 
+		f\fz f\fz f\fz 
 % mesures 71 à 75
-	    d\fz r r
-	    R2.*5
-	    
-	    
-	    
+		f\fz r r
+		R2.*5
+		
+		
+		
 % mesures 76 à 80
-	    
-	    d4\f r r
-	    d r r
-	    c r r
-	    c r r
+		
+		d4\f r r
+		d r r
+		c r r
+		c r r
 % mesures 81 à 85
-	    d2.\fz
-	    r8 d4 d d8
-	    d2.\fz
-	    r8 d4 d d8(
-	    c) r c2->-\tweak X-offset #-2. \fz(
+		f2.\fz
+		r8 f4 f f8
+		f2.\fz
+		r8 f4 f f8^(
+		f) r f2^(
 % mesures 86 à 90
-	    d8) r d2 -\tweak X-offset #-2. \fz->(
-	    c8) r c2-> -\tweak X-offset #-3. \fz(
-	    d4) c-. c-.
-	    c8 r c2->\fz(
-	    d8) r d2\fz->~
+		f8) r f2^(
+		f8) r f2^(
+		f4) \partCombineApart c-. c-. 
+		c8 \partCombineAutomatic r f2^(
+		f8) r f2^\(
 % mesures 91 à 95
-	    d8 r c2->\fz(
-	    g4) c,-. c-. \mark \default
-	    c r r
-	    R2.*3
-	    
+		d8\) r d2^(
+		d4) c-. c-. \mark \default
+		c r r
+		R2.*3
+		
 % mesures 96 à 100
-	    
-	    \clef bass c,,2.\p~
-	    c 
-	    R2.*3
-	    
+		
+		\clef bass c,,2.\p~
+		c 
+		R2.*3
+		
 % mesures 101 à 105
-	    \clef treble
-	    c''2.~\<
-	    c\>
-	    r4\! a'2\ff\>~
-	    a2.~
+		\clef treble
+		c''2.~\<
+		c\>
+		r4\! a2\ff\>~
+		a2.~
 % mesures 106 à 110
-	    a\pp~
-	    a~
-	    a(
-	    e)\>~
+		a\pp~
+		a~
+		a(
+		e)\>~
 	}
 	\alternative {
-	    {
-	        e4\! r r
-	    }
-	    {
-	        a2.~\>
-	    }
+		{
+			e4\! r r
+		}
+		{
+			a2.\repeatTie~\>
+		}
 	}
 % mesures 111 à 115
 	a~\!
@@ -165,27 +165,27 @@ MvtUnCorniDII = \relative c {
 % mesures 146 à 150
 	d2.\ff\>~
 	d\!
-	R2.*2
-	
+	\partCombineApart d_\>~
+	d\! \partCombineAutomatic
 	R2.*4
 % mesures 151 à 155
 	
 	
 	
-	c,2.\ff\>~
+	c2.\ff\>~
 	c\!
 % mesures 156 à 160
-	c'~\>
-	c\!
+	\partCombineApart c~
+	c \partCombineAutomatic
 	R2.*4
 	
 	
 % mesures 161 à 165
 	
-	d2.\ff\>~
-	d\!
-	d2.\>~
-	d\!
+	f2.\ff\>~
+	f\!
+	f2.\>~
+	f\!
 % mesures 166 à 170
 	R2.*4
 	
@@ -197,11 +197,11 @@ MvtUnCorniDII = \relative c {
 	d
 	d4 d d
 	d2.\fz
-	a\fz \mark \default
+	g\fz \mark \default
 % mesures 176 à 180
-	d4 r r
+	f4 r r
 	R2.
-	e,2.\>
+	e2.\>
 	e2\! e4
 	e r r
 % mesures 181 à 185
@@ -213,12 +213,12 @@ MvtUnCorniDII = \relative c {
 % mesures 186 à 190
 	e4 r r
 	R2.
+	\partCombineApart a,8.[ a16 a8. a16] a8. a16
 	a8.[ a16 a8. a16] a8. a16
-	a8.[ a16 a8. a16] a8. a16
-	e8.[ e16 e8. e16] e8. e16
+	\partCombineAutomatic e'8.[ e16 e8. e16] e8. e16
 % mesures 191 à 195
 	e8.[ e16 e8. e16] e8. e16
-	d'8.[ d16 d8. d16] d8. d16
+	d8.[ d16 d8. d16] d8. d16
 	d8.[ d16 d8. d16] d8. d16
 	d2.\ffz\>~
 	d\!
@@ -230,13 +230,13 @@ MvtUnCorniDII = \relative c {
 	
 % mesures 201 à 205
 	
-	c2.\ff
-	g\fz
+	e2.\ff
+	d\fz
 	e\fp\>~
 	e\!
 % mesures 206 à 210
-	c'\ff
-	g\fz
+	e\ff
+	d\fz
 	e\fp~
 	e~
 	e~
@@ -258,45 +258,45 @@ MvtUnCorniDII = \relative c {
 	
 	
 	
-	d'2.\p\<~
-	d2\>( cis4\!
+	e4( f4. e8
+	f4 e2)(
 % mesures 231 à 235
-	d) r r
+	f4) r r
 	R2.*9
 % mesures 236 à 240
 	
 % mesures 241 à 245
+	\partCombineApart r4 r r8 e_\crescmarkup
+	e4( d) a-.
+	\partCombineAutomatic c\fz-. r r
 	R2.
-	r4 r a-.\f
-	a\fz-. r r
-	R2.
-	g2.\p~
+	g'2.\p~
 % mesures 246 à 250
-	g2~ g8 e'\<
-	e4(\> d\!) r
+	g2~ g8 g\<
+	g4(\> f\!) r
 	R2.*4
 	
 	
 % mesures 251 à 255
 	\mark \default
-	e,4\fz g2\fp\>~
+	e4 g,2\fp\>~
 	g2.\!~
 	g~
-	g4(\pp\< a g\>
+	g4\(\pp\< a d\>
 % mesures 256 à 260
-	g)\! r r
+	c\)\! r r
 	R2.*10
 % mesures 261 à 265
 	
 % mesures 266 à 270
 	
-	r4 r r8 g,8\pp~
+	r4 r r8 g8\pp~
 	g g4 r8 r g~
 	g g4 r8 r g~
 	g g4 r8 r g~
 % mesures 271 à 275
-	g g4 r8 r g'~
-	g g4 r8 r a~
+	g g4 r8 r g(
+	a) a4 r8 r a~
 	a a4 r8 r4
 	R2.*7
 % mesures 276 à 280
@@ -304,7 +304,7 @@ MvtUnCorniDII = \relative c {
 % mesures 281 à 285
 	d2.\ff\>~
 	d4\! r r
-	e,2.~\ff\>
+	e2.~\ff\>
 	e4\! r r
 	c2.\fz\>~
 % mesures 286 à 290
@@ -318,25 +318,25 @@ MvtUnCorniDII = \relative c {
 	
 	
 	
-	e'4\f r r
+	\partCombineApart e4 \partCombineAutomatic r r
 % mesures 296 à 300
-	d r r
-	d r r
-	a r r
-	c,2.\fz
-	a'\fz
+	\partCombineApart d \partCombineAutomatic r r
+	\partCombineAutomatic e r r
+	e r r
+	c2.\fz
+	\once \partCombineApart a
 % mesures 301 à 305
-	c,\fz
-	a'\fz
-	e8 r a2(\fz
-	d8) r d2(\fz
-	a8) r a2(\fz
+	c\fz
+	\once \partCombineApart a
+	e'8 r \partCombineApart e2(
+	d8) \partCombineAutomatic r \partCombineApart d2(
+	e8) \partCombineAutomatic r \partCombineApart e2(
 % mesures 306 à 310
-	d4) e-. e,-.
-	e8 r a2\fz(
-	d8) r d2(\fz
-	e8) r e2(\fz
-	d4) e,-. e-. \mark \default
+	d4) e-. \partCombineAutomatic e-.
+	e8 \partCombineAutomatic r \partCombineApart e2(
+	d8) \partCombineAutomatic r \partCombineApart d2(
+	e8) \partCombineAutomatic r \partCombineApart e2(
+	d4) \partCombineAutomatic e-. e-. \mark \default
 % mesures 311 à 315
 	e r r
 	R2.*3
@@ -351,13 +351,13 @@ MvtUnCorniDII = \relative c {
 	\clef bass e,,2.\>~
 % mesures 321 à 325
 	e~\!
-	e8 r \clef treble a''2\ffz\>~
+	e8 r \clef treble a'2\ffz\>~
 	a2.\p~
 	a\pp~
 	a~
 % mesures 326 à 330
-	a(
-	e)~\>
+	a\(
+	e\)~\>
 	e4\! r r
 	R2.*5
 % mesures 331 à 335
@@ -365,7 +365,7 @@ MvtUnCorniDII = \relative c {
 	
 	
 	
-	e2.\pp~
+	e'2.\pp~
 % mesures 336 à 340
 	e~
 	e4 r r
@@ -374,34 +374,34 @@ MvtUnCorniDII = \relative c {
 	
 	
 	
-	e4_\crescmarkup r r
+	e4 r r
 	e r r
 % mesures 346 à 350
 	e r e\<
 	r e\! r
-	e c'\f c
-	c\< c c
-	c2.\ff
+	e e\f e
+	e\< e e\!
+	e2.\ff
 % mesures 351 à 355
-	d
-	a\pp~
-	a~\<
-	a\>~
-	a
+	e
+	\partCombineUnisono a,~\pp
+	a~
+	a~
+	a \partCombineChords
 % mesures 356 à 360
-	c\mf\<~
-	c(
-	d)~\>
-	d
-	c\pp\<~
+	e'~
+	e^(
+	f)~
+	f
+	e~
 % mesures 361 à 365
-	c(
-	d)\>~
-	d
-	c4\ff r r
-	d r r
+	e^(
+	f)~
+	f
+	e4 r r
+	e r r
 % mesures 366 à 368
-	c r r
-	c2.\>~
-	c4\! r r \bar "|."
+	e r r
+	e2.\>~
+	e4\! r r \bar "|."
 }

@@ -4,51 +4,51 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnOboiII = \relative c'' {
+musicOboeIIMvtI = \relative c'' {
 	\clef treble
 	\key b \minor
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
 % mesures 6 à 10
-	    R2.*11
-	    
-	    
+		R2.*11
+		
+		
 % mesures 11 à 15
-	    
-	    
-	    R2.
-	    R
-	    R
+		
+		
+		R2.
+		R
+		R
 % mesures 16 à 20
-	    R
-	    R
-	    R
-	    R
-	    R
+		R
+		R
+		R
+		R
+		R
 % mesures 21 à 25
-	    R
-	    R
-	    R
-	    R
-	    R 
+		R
+		R
+		R
+		R
+		R 
 % mesures 26 à 30
-	    a!4( -\tweak X-offset #-2. \p b4. c8)
-	    c4( b4._\crescmarkup d8)
-	    d4( cis!) e4\fz
-	    e\fz r r
-	    R2.
+		a!4( -\tweak X-offset #-2. \p b4. c8)
+		c4( b4._\crescmarkup d8)
+		d4( cis!) e4\fz
+		e\fz r r
+		R2.
 % mesures 31 à 35
-	    a,4( -\tweak X-offset #-2. \p b4. c8)
-	    c4( b4._\crescmarkup) b8
-	    b4( cis!4. cis8)
-	    cis4(-\tweak X-offset #-2. \f d4. e8)
-	    e4( d4.) e8\ff
+		a,4( -\tweak X-offset #-2. \p b4. c8)
+		c4( b4._\crescmarkup) b8
+		b4( cis!4. cis8)
+		cis4(-\tweak X-offset #-2. \f d4. e8)
+		e4( d4.) e8\ff
 % mesures 36 à 40
-	    e2.~
-	    e \mark \default
-	    d4\fz r r
-	    R2.*24
+		e2.~
+		e \mark \default
+		d4\fz r r
+		R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -58,72 +58,72 @@ MvtUnOboiII = \relative c'' {
 % mesures 56 à 60
 	
 % mesures 61 à 65
-	    
-	    \mark \default
-	    g,2.\ffz\>(
-	    c,4) r\! r
-	    g'2.\fz(\>
+		
+		\mark \default
+		g,2.\ffz\>(
+		c,4)\! r r
+		g'2.\fz(\>
 % mesures 66 à 70
-	    d4) r\! r
-	    g2.(\fz\>
-	    ees4)\! g'\fz g\fz
-	    g\fz_\crescmarkup g\fz g\fz
-	    g\fz g\fz g\fz 
+		d4)\! r r
+		g2.(\fz\>
+		ees4)\! g'\fz g\fz
+		g\fz_\crescmarkup g\fz g\fz
+		g\fz g\fz g\fz 
 % mesures 71 à 75
-	    g8\fz g4\> g g8~
-	    g g4 g\! r8
-	    R2.*4
-	    
-	    
+		g8\fz g4\> g g8~
+		g g4 g\! r8
+		R2.*4
+		
+		
 % mesures 76 à 80
-	    
-	    d2.\f(
-	    c2.)
-	    c2.(
-	    b)
+		
+		d2.\f(
+		c2.)
+		c2._(
+		b)
 % mesures 81 à 85
-	    r8 e4\ff e e8
-	    e2.\fz
-	    r8 e4 e e8
-	    e2~\fz e8 cis(
-	    d) r d2-\tweak X-offset #-2. \fz(
+		r8 e4\ff e e8
+		e2.\fz
+		r8 e4 e e8
+		e2~\fz e8 cis(
+		d) r d2\fz_(
 % mesures 86 à 90
-	    e8) r e2\fz->(
-	    f8) r f2->(\fz
-	    e4) d-. d-.
-	    d8 r f2\fz(
-	    e8) r e2->\fz(
+		e8) r e2\fz->_(
+		f8) r f2->_(\fz
+		e4) d-. d-.
+		d8 r f2\fz_(
+		e8) r e2->\fz_(
 % mesures 91 à 95
-	    d8) r gis2->(\fz
-	    a4) d,-. c-. \mark \default
-	    b r r
-	    R2.*2
-	    
+		d8) r gis2\fz
+		a4 d,-. c-. \mark \default
+		b r r
+		R2.
+		R
 % mesures 96 à 100
-	    r4 r r8 d\p\>~
-	    d4( c8[\! b a g])
-	    g4( fis8 e fis4)
-	    g r r
-	    R2.*4
+		r4 r r8 d\p\>~
+		d4( c8[\! b a g])
+		g4( fis8 e fis4)
+		g r r
+		R2.*4
 % mesures 101 à 105
-	    
-	    
-	    
-	    r4 b2\ff\>~
-	    b2.~
+		
+		
+		
+		r4 b2\ff\>~
+		b2.~
 % mesures 106 à 110
-	    b~\pp
-	    b~
-	    b(
-	    fis\>~)
+		b~\pp
+		b~
+		b(
+		fis\>~)
 	}
 	\alternative {
-	    {
-	        fis4\! r r
-	    }
-	    {
-	        a!2.\>~
-	    }
+		{
+			fis4\! r r
+		}
+		{
+			a!2.\>~
+		}
 	}
 % mesures 111 à 115
 	a~\!
@@ -190,7 +190,7 @@ MvtUnOboiII = \relative c'' {
 	e2.
 	d4-. b-. c-.
 	b2.\fz
-	\afterGrace dis2.\fz\trill {cis16[ dis!]} \mark \default
+	\afterGrace dis2.\fz\trill {cis!16[ dis]} \mark \default
 % mesures 176 à 180
 	e4 r r
 	R2.
@@ -213,11 +213,11 @@ MvtUnOboiII = \relative c'' {
 	fis8.[ fis16 fis8. fis16] fis8. fis16
 	e8.[ e16 e8. e16] e8. e16
 	e8.[ e16 e8. e16] e8. e16
-	c'2.\ffz\>(
-	b2\! ais4)
+	c'2.\ffz\>\(
+	b2\! ais4\)
 % mesures 196 à 200
-	c2.\fz\>(
-	b2\! ais4)
+	c2.\fz\>\(
+	b2\! ais4\)
 	R2.
 	R
 	R
@@ -242,8 +242,8 @@ MvtUnOboiII = \relative c'' {
 % mesures 216 à 220
 	R
 	R \mark \default
-	R2.*4
-	
+	R2.
+	R2.*3
 	
 % mesures 221 à 225
 	
@@ -259,12 +259,12 @@ MvtUnOboiII = \relative c'' {
 	a4\>( b2)(\!
 % mesures 231 à 235
 	g4) r r
-	R2.*6
+	R2.*4
 	
 	
 	
 % mesures 236 à 240
-	
+	R2.*2
 	
 	d'2.\<~
 	d4(\> e2)\!
@@ -315,21 +315,21 @@ MvtUnOboiII = \relative c'' {
 	fis2.\f(
 % mesures 296 à 300
 	e)
-	e(
+	e_(
 	dis)
 	r8 gis4\ff gis gis8
 	gis2.\fz
 % mesures 301 à 305
 	r8 gis4 gis gis8
-	gis2.\fz(
-	fis8) r fis2\fz(
-	gis8) r gis2(\fz
-	a8) r a2(\fz
+	gis2.\fz_(
+	fis8) r fis2\fz_(
+	gis8) r gis2_(\fz
+	a8) r a2_(\fz
 % mesures 306 à 310
 	gis4) dis-. e-.
-	dis8 r fis2\fz(
-	e8) r e2(\fz
-	fis8) r fis2(\fz
+	dis8 r fis2\fz_(
+	e8) r e2_(\fz
+	fis8) r fis2_(\fz
 	e4) dis-. e-. \mark \default
 % mesures 311 à 315
 	dis r r
@@ -345,7 +345,7 @@ MvtUnOboiII = \relative c'' {
 	R
 % mesures 321 à 325
 	R
-	r4 b2 -\tweak X-offset #-3.2 \ffz\>~
+	r4 b2\ffz\>~
 	b2.\p~
 	b\pp~
 	b~
@@ -368,7 +368,7 @@ MvtUnOboiII = \relative c'' {
 	fis( eis\< fis
 	eis fis eis\!
 	fis) d(\f fis
-	b\< d fis)
+	b\< d fis)\!
 	d2.\ff
 % mesures 351 à 355
 	e
