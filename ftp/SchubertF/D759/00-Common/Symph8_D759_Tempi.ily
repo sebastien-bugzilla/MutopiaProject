@@ -8,7 +8,7 @@ tempiMvtI = {
 	\tempo "Allegro moderato"
 }
 tempiMvtII = {
-	
+	\tempo "Andante con moto"
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #

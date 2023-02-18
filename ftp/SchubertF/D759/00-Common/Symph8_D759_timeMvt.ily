@@ -8,6 +8,6 @@ timeMvtI = {
 	\time 3/4
 }
 timeMvtII = {
-	\time 2/4
+	\time 3/8
 }
 

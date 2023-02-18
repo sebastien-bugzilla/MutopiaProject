@@ -4,10 +4,10 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 13) %15
+#(set-global-staff-size 13) %13
 %#(ly:set-option 'debug-skylines #t)
 \layout {
-	#(layout-set-staff-size 13) %15
+	#(layout-set-staff-size 13) %13
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.markFormatter = #format-mark-alphabet
 %	\mergeDifferentlyHeadedOn
