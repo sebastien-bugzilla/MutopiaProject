@@ -65,7 +65,7 @@ MvtDeuxTromboni_basso = \relative c' {
 	e8 gis4
 % mesures 101 à 105
 	fis8 a4
-	gis8-. gis,-. gis
+	gis8-. gis,-. gis-.
 	cis4.
 	e
 	dis

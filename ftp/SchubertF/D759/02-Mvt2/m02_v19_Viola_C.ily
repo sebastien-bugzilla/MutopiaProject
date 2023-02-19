@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxViola = \relative c'' {
+musicViolaMvtII = \relative c'' {
 	\clef alto
 	\key e \major
 % mesures 1 à 5
@@ -106,7 +106,7 @@ MvtDeuxViola = \relative c'' {
 	bis bis8-> bis bis16(
 	cis) cis8 cis\< cis16~
 % mesures 71 à 75
-	cis cis8 cis cis16(
+	cis cis8 cis cis16(\!
 	g')\f\> g8 g g16(\!
 	fis)\p fis8 d des16(
 	c)\pp c8 c c16~
@@ -127,8 +127,8 @@ MvtDeuxViola = \relative c'' {
 	c) c8 c c16~
 	c c8-> c c16(
 	des) des8 des\< des16~
-	des des8 des des16~
-	des\f\> f8 f f16(
+	des des8 des des16~\!
+	des\f\> f8 f f16(\!
 % mesures 91 à 95
 	ges)\p ges8 ges ges16(
 	f)\pp f8 f f16(
@@ -163,7 +163,7 @@ MvtDeuxViola = \relative c'' {
 	cis cis8 cis cis16(
 	d) d8 d d16~
 	d d8 d d16~
-	d d(\< b) b8( cis!16)
+	d d(\< b) b8( cis!16)\!
 	d4(\> c8)\!
 % mesures 121 à 127
 	<<{
@@ -181,7 +181,7 @@ MvtDeuxViola = \relative c'' {
 		fis fis8 fis fis16(
 		g) g8 g g16~
 		g g8 g g16~
-		g g^(\< e) e8^( fis16)\!
+		g g^(\< e) e8^( fis!16)\!
 	}>>
 % mesures 128 à 130
 	g4(\> f8)\!
@@ -218,8 +218,8 @@ MvtDeuxViola = \relative c'' {
 	cis\!)
 	<<{
 		g'\fp\>(
-		fis)(
-		e8)\!
+		fis)(\!
+		e8)
 	} \\ {
 		e4.(
 		dis)(
@@ -288,10 +288,10 @@ MvtDeuxViola = \relative c'' {
 	a16 a8 a a16~
 	a16 a8-> a a16(
 	gis) gis8 gis gis16~
-	gis gis8 gis gis16
+	gis gis8-> gis gis16
 % mesures 211 à 215
 	a a8 a a16\<~
-	a a8 a a16(
+	a a8 a a16(\!
 	ees'\f\>) ees8 ees ees16(\!
 	d) d8\p bes a16(
 	aes) aes8\pp aes aes16~
@@ -312,7 +312,7 @@ MvtDeuxViola = \relative c'' {
 	gis) gis8 gis gis16~
 	gis gis8-> gis gis16(
 	a)\< a8 a a16~
-	a a8 a a16~
+	a a8 a a16~\!
 % mesures 231 à 235
 	a\f\> cis8 cis cis16\!(
 	d) d8\p d d16(
@@ -333,7 +333,7 @@ MvtDeuxViola = \relative c'' {
 	e[ b' g' fis] e[ d c b] c[ b a g]
 % mesures 246 à 250
 	a[ b c b] a[ c fis e] dis![ c b a]
-	g[ fis e fis] dis[ fis b c] b[ a g fis]
+	g[ fis e fis] dis![ fis b c] b[ a g fis]
 	e[ fis g e] d[ g b c] d[ f e d]
 	c[ b a gis!] e'[ d c b] c[ bes g e]
 	c[ -\tweak X-offset #-4.2 \ff e g bes] c[ bes g e] c[ e g bes]

@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxVioloncello = \relative c {
+musicVioloncelloMvtII = \relative c {
 	\clef bass
 	\key e \major
 % mesures 1 à 5
@@ -32,7 +32,7 @@ MvtDeuxVioloncello = \relative c {
 	e d c)
 	b( g e'
 % mesures 21 à 25
-	d4.\>)
+	\once \stemUp d4.\>)
 	g'8\!^\pizz-. fis-. e-. 
 	d-. c-. a-. 
 	g-. g^\arco( fis
@@ -108,13 +108,13 @@ MvtDeuxVioloncello = \relative c {
 	cis8)\ppp r r
 	R4.*2
 	
-	des,4\pp(-> c16 des
+	\once \stemUp des,4\pp(-> c16 des
 % mesures 86 à 90
 	aes8) r r
 	ees'4(-> d!16 ees
 	aes,8) r des->\<~
-	des4 des'8->~
-	des16\f\> des8 des des16~
+	des4 des'8->~\!
+	des16\f\> des8 des des16~\!
 % mesures 91 à 95
 	des\p des8 des des16~
 	des\pp des8 des des16~
@@ -149,7 +149,7 @@ MvtDeuxVioloncello = \relative c {
 	g4 fis16 e)
 	fis4.(
 	c'4 b16 ais)
-	b8(\< g e)
+	b8(\< g e)\!
 	d4.\>
 % mesures 121 à 125
 	g\!(
@@ -159,7 +159,7 @@ MvtDeuxVioloncello = \relative c {
 	b4.(
 % mesures 126 à 130
 	f'4 e16 dis!)
-	e8(\< c a)
+	e8(\< c a)\!
 	g4.(\>
 	c,16)\! c8\p c c16~
 	c c8 c c16~
@@ -210,11 +210,11 @@ MvtDeuxVioloncello = \relative c {
 	b( g a)
 	b4.\>
 	R4.\! \clef tenor
-	b'16(\< dis fis a\> gis fis
+	b'16(\< dis fis a\> gis fis\!
 % mesures 171 à 175
-	e8)\! r r
-	b16(\< dis fis a\> gis fis
-	e8)\!\noBeam \clef bass gis,-.\ff a-. \mark \default
+	e8) r r
+	b16(\< dis fis a\> gis fis\!
+	e8)\noBeam \clef bass gis,-.\ff a-. \mark \default
 	b-. cis-. a-.
 	gis_\stacc fis e
 % mesures 176 à 180
@@ -308,7 +308,7 @@ MvtDeuxVioloncello = \relative c {
 	g4.(\fp\>
 	fis8)\! r r \clef bass
 % mesures 261 à 265
-	gis,8(\p e cis'
+	gis,!8(\p e cis'
 	b8) r r
 	gis(_\crescmarkup e cis'
 	b8) r r
@@ -341,7 +341,7 @@ MvtDeuxVioloncello = \relative c {
 	
 	
 	
-	b'8 -\tweak X-offset #-4 \pizz\pp r r
+	b'8 -\tweak X-offset #-4 ^\pizz\pp r r
 	e r r
 % mesures 301 à 305
 	b r r

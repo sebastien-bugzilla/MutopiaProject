@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxViolinoII = \relative c'' {
+musicViolinoIIMvtII = \relative c'' {
 	\clef treble
 	\key e \major
 % mesures 1 à 5
@@ -21,7 +21,7 @@ MvtDeuxViolinoII = \relative c'' {
 	cis
 % mesures 11 à 15
 	b8 gis e)
-	dis(\< e fis\!
+	dis(\> e fis\!
 	e4.)(
 	ais)(\fp\>
 	a!)(\!
@@ -92,8 +92,8 @@ MvtDeuxViolinoII = \relative c'' {
 	dis) dis8-> dis dis16(
 	e) e8 e\< eis16(
 % mesures 71 à 75
-	fis) fis8 fis fis16(
-	a)\f\> a8 a a16~
+	fis) fis8 fis fis16(\!
+	a)\f\> a8 a a16~\!
 	a\p a8 fis16( f) f~
 	f\pp f8 f f16(
 	e) e8 e e16(
@@ -113,8 +113,8 @@ MvtDeuxViolinoII = \relative c'' {
 	ges) ges8 ges ges16~
 	ges ges8-> ges ges16(
 	f) f8 f\< f16(
-	ges) ges8 ges ges16
-	f\f\> aes8 aes aes16~
+	ges) ges8 ges ges16\!
+	f\f\> aes8 aes aes16~\!
 % mesures 91 à 95
 	aes\p aes8 aes aes16~
 	aes\pp aes8 aes aes16~
@@ -122,7 +122,7 @@ MvtDeuxViolinoII = \relative c'' {
 	aes\ppp aes8 aes aes16~
 	aes aes8 aes aes16 \mark \default
 % mesures 96 à 100
-	gis!8\ff-. cis,-. gis'~
+	gis!8\ff-. cis,!-. gis'~
 	gis cis,-. cis'~
 	cis fis,-. a~
 	a gis-. dis'~
@@ -139,28 +139,17 @@ MvtDeuxViolinoII = \relative c'' {
 	a[ gis fis eis] cis'[ b a gis] a[ g e! cis]
 	a16\noBeam\fz <cis' e>8 q q16
 	<a g'>16 q8 q q16 \mark \default
-% mesures 111 à 118
-	<a fis'>16\noBeam <<{
-		<fis a>8\p q q16~
-		q q8 q q16~
-		q q8 q q16~
-		q q8 q q16(
-		<g a>) q8 q q16(
-		a16) a8 a a16(
-		<fis a>16) q8 q q16(
-		fis) fis8 fis16( g fis)
-	} \\ {
-		s8 s s16
-		s4.
-		s
-		s
-		s
-		e16 e8 e16 fis g
-		s4.
-		s
-	}>> 
-% mesures 119 à 120
-	g16\< g8 g( a16)
+% mesures 111 à 115
+	<a fis'>16\noBeam <fis a>8\p q q16~
+	q q8 q q16~
+	q q8 q q16~
+	q q8 q <fis a^~>16(
+	<g a>) q8 q <g a^~>16(
+% mesures 116 à 120
+	<< { \voiceOne a16) a8 a a16( } \new Voice {\voiceTwo e16 e8 e16 fis g} >> \oneVoice
+	<fis a>16) q8 q q16(
+	fis) fis8 fis16( g fis)
+	g16\< g8 g( a16)\!
 	b8\>( g fis)\!
 % mesures 121 à 125
 	g16 d'8 d d16~
@@ -170,7 +159,7 @@ MvtDeuxViolinoII = \relative c'' {
 	d d8 d d16(
 % mesures 126 à 130
 	b) b8 b16( c b)
-	c\< c8( c d16)
+	c\< c8( c d16)\!
 	e8(\> c b)\!
 	c16\noBeam g,8\p g g16(
 	gis!) gis8 gis gis16(
@@ -223,8 +212,8 @@ MvtDeuxViolinoII = \relative c'' {
 	b'8(\! gis! e
 	b) r r
 % mesures 171 à 175
-	b'8(\< cis16 b gis\> e
-	b8)\! r r
+	b'8(\< cis16 b\> gis e\!
+	b8) r r
 	e\noBeam gis-.\ff a-. \mark \default
 	b-. cis-. a-.
 	gis_\stacc fis e
@@ -247,11 +236,11 @@ MvtDeuxViolinoII = \relative c'' {
 	
 	
 % mesures 191 à 195
-	dis4.\fp\>(
+	dis!4.\fp\>(
 	<d e>)(\!
 	<cis e>8) r r
-	e16(_\crescmarkup\< gis b d\> cis b
-	a8)\! r r
+	e16(_\crescmarkup\< gis b d\> cis b\!
+	a8) r r
 % mesures 196 à 200
 	e16( gis b d\> cis b\!
 	a8)\pp r r
@@ -272,7 +261,7 @@ MvtDeuxViolinoII = \relative c'' {
 	b) b8-> b b16(
 % mesures 211 à 215
 	c) c8 c\< cis16(
-	d) d8 d d16(
+	d) d8 d d16(\!
 	f)\f\> f8 f f16~\!
 	f f8\p d16( des) des~
 	des des8\pp des des16(
@@ -293,7 +282,7 @@ MvtDeuxViolinoII = \relative c'' {
 	d) d8 d d16~
 	d d8-> d d16(
 	cis)\< cis8 cis cis16(
-	d) d8 d d16(
+	d) d8 d d16(\!
 % mesures 231 à 235
 	cis)\f\> e8 e e16\!~
 	e e8\p e e16~
@@ -320,7 +309,7 @@ MvtDeuxViolinoII = \relative c'' {
 	c16\noBeam -\tweak X-offset #-4.2 \ff <g' e'>8 q q16~
 % mesures 251 à 255
 	q q8 q q16
-	<a f'>8 r r
+	<a f'>8-. r r
 	R4.
 	<b a'>16 -\tweak X-offset #-3.8 \ff q8 q q16~
 	q q8 q <a fis'>16 \mark \default
@@ -334,10 +323,10 @@ MvtDeuxViolinoII = \relative c'' {
 	<gis b>8) r r
 	b,16(_\crescmarkup dis fis a gis fis
 	e8) r r
-	b16(\< dis fis a\> gis fis)
+	b16(\< dis fis a\> gis fis)\!
 	a(\pp gis fis a gis fis
 % mesures 266 à 270
-	cis'\< b a gis fis a
+	cis'\< b a gis fis a\!
 	cis4\> b8)\!
 	e,8\pp r r
 	R4.*20

@@ -230,7 +230,7 @@ MvtDeuxCorniDII = \relative c' {
 	g4-> d'8~->
 	d\pp d4->
 % mesures 266 à 270
-	d\< d8
+	d\< d8\!
 	g,4.(\>
 	c8)\! r r
 	R4.*5

@@ -102,9 +102,9 @@ MvtDeuxClarinettiAII = \relative c'' {
 	b e,-. e'~->
 	e a,-. c->~
 % mesures 106 à 110
-	c b-. fis'~
+	c b-. fis'->~
 	fis16 e-. g8-. gis~
-	gis16 b-. a8-. bes
+	gis16 b-. a8-. bes-.
 	bes,16\fz bes8 bes bes16
 	e e8 e e16 \mark \default
 % mesures 111 à 115

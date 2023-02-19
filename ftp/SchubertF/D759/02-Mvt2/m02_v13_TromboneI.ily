@@ -62,10 +62,10 @@ MvtDeuxTromboni_alto = \relative c' {
 	e
 	dis
 	fis
-	e8 \partcombineApart gis,4
+	e8 \partCombineApart gis,4
 % mesures 101 à 105
 	fis8 a4
-	gis8-. cis-. bis-. \partcombineAutomatic 
+	gis8-. cis-. bis-. \partCombineAutomatic 
 	cis r e\fz
 	r r e\fz
 	r r cis\fz
@@ -145,8 +145,8 @@ MvtDeuxTromboni_alto = \relative c' {
 	a
 	gis
 % mesures 241 à 245
-	\partcombineApart a8 e g~
-	g f4 \partcombineAutomatic
+	\partCombineApart a8 e g~
+	g f4 \partCombineAutomatic
 	e8-. e-. dis-.
 	e r b -\tweak X-offset #-2.7 \fz
 	r r b -\tweak X-offset #-2.7 \fz

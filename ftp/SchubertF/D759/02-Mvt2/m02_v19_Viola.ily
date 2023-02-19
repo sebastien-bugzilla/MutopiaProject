@@ -218,8 +218,8 @@ MvtDeuxViola = \relative c'' {
 	cis\!)
 	<<{
 		g'\fp\>(
-		fis)(
-		e8)\!
+		fis)(\!
+		e8)
 	} \\ {
 		e4.(
 		dis)(
@@ -288,7 +288,7 @@ MvtDeuxViola = \relative c'' {
 	a16 a8 a a16~
 	a16 a8-> a a16(
 	gis) gis8 gis gis16~
-	gis gis8 gis gis16
+	gis gis8-> gis gis16
 % mesures 211 à 215
 	a a8 a a16\<~
 	a a8 a a16(

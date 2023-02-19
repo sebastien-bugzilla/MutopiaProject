@@ -15,7 +15,7 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 	
-	ais4.(\fp\>
+	ais4._(\fp\>
 	a!4)\! r8
 % mesures 16 à 20
 	b4.(\pp\<
@@ -49,7 +49,7 @@ musicFlautoIIMvtII = \relative c'' {
 	dis4.
 % mesures 41 à 45
 	dis
-	e4( dis8)
+	e4_( dis8)
 	e8( fis8.-> e16)
 	dis4.
 	b!\pp(
@@ -58,7 +58,7 @@ musicFlautoIIMvtII = \relative c'' {
 	b8 gis e)
 	dis8(-> e fis
 	e4.)
-	ais(\fp\>
+	ais_(\fp\>
 % mesures 51 à 55
 	a!4)\! r8
 	R4.
@@ -151,7 +151,7 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 	
-	ais,4.(\fp\>
+	ais,4._(\fp\>
 % mesures 156 à 160
 	a!)\!
 	gis\pp\<
@@ -189,7 +189,7 @@ musicFlautoIIMvtII = \relative c'' {
 	a8( b8.-> a16)
 	gis4.(
 % mesures 186 à 190
-	e!
+	e!\pp
 	fis
 	e8 cis a)
 	gis8->( a b
@@ -202,9 +202,9 @@ musicFlautoIIMvtII = \relative c'' {
 	e8(\<^\crescmarkup fis16 e\> cis a\!
 % mesures 196 à 200
 	e8) r r
-	a'4.(\pp
+	a'4.\(\pp
 	gis
-	a8) r r
+	a8\) r r
 	R4.*35
 % mesures 201 à 205
 	
@@ -233,7 +233,7 @@ musicFlautoIIMvtII = \relative c'' {
 % mesures 241 à 245
 	a4( bes8
 	a4) c8~
-	c e-. dis!-.
+	<c e>^.[ <e g>^. <dis! fis!>]^.
 	e4.
 	g,
 % mesures 246 à 250
@@ -252,7 +252,7 @@ musicFlautoIIMvtII = \relative c'' {
 	e8) r r
 	ais,,4.\fp\>(
 	a!4)\! r8
-	ais4.(\fp\>
+	ais4._(\fp\>
 	a!4)\! r8
 % mesures 261 à 265
 	R4.
@@ -290,10 +290,10 @@ musicFlautoIIMvtII = \relative c'' {
 	R4.*3
 	
 	
-	e4.(->_\dimmarkup
+	e4._(->_\dimmarkup
 	dis8) r r
 % mesures 306 à 310
-	e4.(->
+	e4._(->
 	dis8) r r
 	e4.(
 	gis

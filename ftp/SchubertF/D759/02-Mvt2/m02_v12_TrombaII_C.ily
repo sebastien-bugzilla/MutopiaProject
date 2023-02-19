@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxTrombeEII = \relative c' {
+musicTrombaIIMvtII = \relative c' {
 	\clef treble
 	\key c \major
 	\transposition e
@@ -41,7 +41,7 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	g,4.(
+	g,4._(
 	c8) r r
 	R4.*43
 % mesures 56 à 60
@@ -168,9 +168,9 @@ MvtDeuxTrombeEII = \relative c' {
 % mesures 256 à 260
 	c8 r r
 	R4.
-	g4. -\tweak X-offset #-3.5 \pp(
-	c8) r r
-	g4.(
+	\once \stemUp g4. -\tweak X-offset #-3.5 \pp (
+	s8) r r
+	g4._(
 % mesures 261 à 265
 	c8) r r
 	R4.*48

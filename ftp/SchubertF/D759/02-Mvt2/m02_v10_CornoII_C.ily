@@ -4,20 +4,20 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxCorniDII = \relative c' {
+musicCornoIIMvtII = \relative c' {
 	\clef treble
 	\key c \major
 	\transposition e
 % mesures 1 à 5
 	e4.\pp\<
-	g\>~
+	g\>_~
 	g8\! r r
 	R4.*3
 	
 % mesures 6 à 10
 	
 	e4.\<
-	g\>~
+	g\>_~
 	g8\! r r
 	R4.*5
 % mesures 11 à 15
@@ -25,7 +25,7 @@ MvtDeuxCorniDII = \relative c' {
 	
 	
 	
-	g,4.(
+	g,4._(
 % mesures 16 à 20
 	c8) r r
 	R4.*12
@@ -35,10 +35,10 @@ MvtDeuxCorniDII = \relative c' {
 	
 	
 	
-	g'4.\>~
+	g'4.\>_~
 	g8\! r r
 % mesures 31 à 35
-	g4.\>~
+	g4.\>_~
 	g8\! r r \mark \default
 	g4.\f
 	g
@@ -60,18 +60,18 @@ MvtDeuxCorniDII = \relative c' {
 	
 	
 	
-	c4.\fp\>(
+	c4.\fp\>_(
 % mesures 51 à 55
 	g4)\! r8
 	R4.
-	g'4.->~
+	g'4.->_~
 	g8 r r
-	g4.->~
+	g4.->_~
 % mesures 56 à 60
 	g8 r r
 	R4.
 	e4.\ppp
-	g~
+	g_~
 	g4 r8
 % mesures 61 à 65
 	R4.*35
@@ -126,19 +126,19 @@ MvtDeuxCorniDII = \relative c' {
 % mesures 141 à 145
 	c'4( c,8)
 	e4.\pp\<
-	g\>~
+	g\>_~
 	g8\! r r
 	R4.*3
 % mesures 146 à 150
 	
 	
 	e4.\<
-	g\>~
+	g\>_~
 	g8\! r r
 % mesures 151 à 155
 	R4.*5
 % mesures 156 à 160
-	g,4.(
+	g,4._(
 	c8) r r
 	R4.*12
 % mesures 161 à 165
@@ -148,10 +148,10 @@ MvtDeuxCorniDII = \relative c' {
 	
 	
 	
-	g'4.->~
+	g'4.->_~
 % mesures 171 à 175
 	g8 r r
-	g4.->~
+	g4.->_~
 	g4 r8 \mark \default
 	g4.\ff
 	g
@@ -173,10 +173,10 @@ MvtDeuxCorniDII = \relative c' {
 	
 	c,4.\p~
 	c8 r r
-	c'4.->~
+	c'4.->_~
 	c8 r r
 % mesures 196 à 200
-	c4.->~
+	c4.->_~
 	c8 r r 
 	R4.*39
 % mesures 201 à 205
@@ -219,19 +219,19 @@ MvtDeuxCorniDII = \relative c' {
 	g, \mark \default
 % mesures 256 à 260
 	e8 r r
-	c4.\fp\>(
+	c4.\fp\>_(
 	g)\!
-	c(\fp\>
+	c_(\fp\>
 	g4)\! r8
 % mesures 261 à 265
 	R4.
-	g'4.->~
+	g'4.->_~
 	g8 r r
 	g4-> d'8~->
 	d\pp d4->
 % mesures 266 à 270
-	d\< d8
-	g,4.(\>
+	d\< d8\!
+	g,4._(\>
 	c8)\! r r
 	R4.*5
 	
@@ -244,8 +244,8 @@ MvtDeuxCorniDII = \relative c' {
 % mesures 276 à 280
 	g(\<
 	a)(\!
-	g4)\> f8
-	g,4\! g8
+	g4)\> f8\!
+	g,4 g8
 	c4 r8
 % mesures 281 à 285
 	R4.*15
@@ -254,10 +254,10 @@ MvtDeuxCorniDII = \relative c' {
 % mesures 291 à 295
 	
 % mesures 296 à 300
-	c4. -\tweak X-offset #-3.0 \pp~
-	c~
+	\voiceOne c4. -\tweak X-offset #-3.0 \pp_~
+	c_~ \voiceTwo
 	c4( a'8)
-	g4.->(
+	g4.(
 	e8) r r
 % mesures 301 à 305
 	R4.

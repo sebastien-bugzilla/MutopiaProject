@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxClarinettiAII = \relative c'' {
+musicClarinettoIIMvtII = \relative c'' {
 	\clef treble
 	\key g \major
 	\transposition a
@@ -16,7 +16,7 @@ MvtDeuxClarinettiAII = \relative c'' {
 	
 	
 	
-	g4.\fp\>(
+	g4.\fp\>_(
 	fis4)\! r8
 % mesures 16 à 20
 	R4.*15
@@ -38,16 +38,16 @@ MvtDeuxClarinettiAII = \relative c'' {
 	d4.
 % mesures 41 à 45
 	dis
-	e4( dis8)
+	e4_( dis8)
 	e8( fis8.-> e16)
 	dis4.
 	R4.
 % mesures 46 à 50
 	R
 	R
-	R
-	R
-	g,4.\fp\>(
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	g,4.\fp\>_(
 % mesures 51 à 55
 	fis4)\! r8
 	R4.
@@ -97,14 +97,14 @@ MvtDeuxClarinettiAII = \relative c'' {
 	g4( gis8)
 % mesures 101 à 105
 	a4( ais8
-	b)-. e-. dis-.
+	b)-.[ <e b'>^. <dis b'>^.]
 	e\noBeam e,-. b'->~
 	b e,-. e'~->
 	e a,-. c->~
 % mesures 106 à 110
-	c b-. fis'~
+	c b-. fis'->~
 	fis16 e-. g8-. gis~
-	gis16 b-. a8-. bes
+	gis16 b-. a8-. bes-.
 	bes,16\fz bes8 bes bes16
 	e e8 e e16 \mark \default
 % mesures 111 à 115
@@ -131,10 +131,10 @@ MvtDeuxClarinettiAII = \relative c'' {
 	
 	
 	
-	g,4.(\fp\>
+	g,4._(\fp\>
 % mesures 156 à 160
-	fis)\!(
-	g8) r r
+	fis)\!_(
+	s8) r r
 	R4.*14
 % mesures 161 à 165
 	
@@ -161,19 +161,19 @@ MvtDeuxClarinettiAII = \relative c'' {
 % mesures 186 à 190
 	R4.*5
 % mesures 191 à 195
-	fis!4.\fp\>(
-	f)\!(
+	fis!4.\fp\>_(
+	f)\!_(
 	e8) r r
-	b'4.->(
+	b'4.->_(
 	c8) r r
 % mesures 196 à 200
-	b4.->(
+	b4.->_(
 	c8) r r
 	R4.
-	c4.(\pp
+	s4.
 	b
 % mesures 201 à 205
-	c4) r8
+	c4 r8
 	R4.*23
 % mesures 206 à 210
 	
@@ -216,18 +216,18 @@ MvtDeuxClarinettiAII = \relative c'' {
 	c
 	bes8 d4
 	c8 ees4
-	des16\ff[ des8 des des16(]
+	des16\ff[ des8 des des16_(]
 % mesures 251 à 255
-	bes)[ bes8 bes bes16(]
+	bes)[ bes8 bes bes16_(]
 	aes4.)\>~
 	aes\p
-	a!16\ff a8 a a16~
-	a a8 a a16( \mark \default
+	a!16\ff a8 a a16_~
+	a a8 a a16_( \mark \default
 % mesures 256 à 260
-	g4.\>)(
+	g4.\>)_(
 	cis\fp\>)
-	d4\! r8
-	cis4.(\fp\>
+	s4.\!
+	cis4._(\fp\>
 	c!4)\! r8
 % mesures 261 à 265
 	d( b g
@@ -267,18 +267,18 @@ MvtDeuxClarinettiAII = \relative c'' {
 	b!4.(\pp\<
 	c!\>
 	b)\!
-	c4.(
+	c4._(
 	b4) r8
 % mesures 301 à 305
-	fis4.->(
+	fis4.->_(
 	g4) r8
-	fis4.->(
+	fis4.->_(
 	g8) r r 
-	fis4.(->
+	fis4._(->
 % mesures 306 à 310
 	g8) r r
-	fis4.\>
-	g4.~\!
+	fis4.
+	g4.~
 	g(
 	b)~
 % mesures 311 à 312

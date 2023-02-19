@@ -202,7 +202,7 @@ MvtDeuxBasso = \relative c {
 % mesures 161 à 165
 	b( g e')
 	d4.\>(
-	g,8-.\!) r r 
+	g,8\!) r r 
 	R4.
 	g8( g' fis
 % mesures 166 à 170
@@ -243,7 +243,7 @@ MvtDeuxBasso = \relative c {
 	cis(_\crescmarkup a fis'
 % mesures 196 à 200
 	e) r r
-	a,\pp-. r r
+	a,\pp r r
 	R4.
 	a'8-.\ppp^\pizz gis-. fis-.
 	e-. d-. b-.
@@ -313,7 +313,7 @@ MvtDeuxBasso = \relative c {
 	r e,-.\fp g-.
 	b-. r r 
 % mesures 261 à 265
-	gis8(\p -\tweak X-offset #-3. ^\arco e cis'
+	gis!8(\p -\tweak X-offset #-3. ^\arco e cis'
 	b8) r r
 	gis(_\crescmarkup e cis'
 	b8) r r
@@ -326,9 +326,9 @@ MvtDeuxBasso = \relative c {
 	
 % mesures 271 à 275
 	
-	gis8-.\pp^\pizz r a!
+	gis8\pp^\pizz r a!
 	b r b,
-	e-. r r
+	e r r
 	R4.
 % mesures 276 à 280
 	gis8-. fis-. e-.

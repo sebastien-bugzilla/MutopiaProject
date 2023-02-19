@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxTromboni_basso = \relative c' {
+musicTromboneIIIMvtII = \relative c' {
 	\clef bass
 	\key e \major
 % mesures 1 à 5
@@ -65,7 +65,7 @@ MvtDeuxTromboni_basso = \relative c' {
 	e8 gis4
 % mesures 101 à 105
 	fis8 a4
-	gis8-. gis,-. gis
+	gis8-. gis,-. gis-.
 	cis4.
 	e
 	dis
@@ -187,7 +187,7 @@ MvtDeuxTromboni_basso = \relative c' {
 % mesures 286 à 290
 	aes'4.\ppp~
 	aes~
-	aes4\<( f8
+	aes4\<( f8\!
 	ees4.\>
 	aes4)\! r8
 % mesures 291 à 295

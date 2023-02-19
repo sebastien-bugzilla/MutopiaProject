@@ -27,10 +27,10 @@ MvtDeuxTrombeEI = \relative c'' {
 	g
 	g8 g4
 % mesures 36 à 40
-	g4. \partcombineApart
-	d' \partcombineAutomatic
+	g4. \partCombineApart
+	d' \partCombineAutomatic
 	d
-	\partcombineApart d8 d4 \partcombineAutomatic
+	\partCombineApart d8 d4 \partCombineAutomatic
 	g,4.
 % mesures 41 à 45
 	e
@@ -66,13 +66,13 @@ MvtDeuxTrombeEI = \relative c'' {
 	\mark \default
 % mesures 96 à 100
 	e4.\ff
-	\partcombineApart e \partcombineAutomatic
+	\partCombineApart e \partCombineAutomatic
 	R4.
-	\partcombineApart e
+	\partCombineApart e
 	e
 % mesures 101 à 105
-	\partcombineAutomatic r8 r \partcombineApart c~
-	c e-. e-. \partcombineAutomatic
+	\partCombineAutomatic r8 r \partCombineApart c~
+	c e-. e-. \partCombineAutomatic
 	r e4\fz
 	r8 e4\fz
 	r8 d'4\fz
@@ -80,8 +80,8 @@ MvtDeuxTrombeEI = \relative c'' {
 	r8 e,4\fz
 	r8 e4\fz
 	r8 d'-. c-.
-	\partcombineApart c,4.
-	c \partcombineAutomatic \mark \default
+	\partCombineApart c,4.
+	c \partCombineAutomatic \mark \default
 % mesures 111 à 115
 	R4.*63
 % mesures 116 à 120

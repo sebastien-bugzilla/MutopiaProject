@@ -23,8 +23,8 @@ MvtDeuxViolinoI = \relative c''' {
 	b8 gis e)
 	dis4.(\>
 	cis)\!(
-	c)(\fp
-	b16)( dis! fis a gis fis
+	c)(\fp\>
+	b16)(\! dis! fis a gis fis
 % mesures 16 à 20
 	e8) r r
 	R4.*1
@@ -92,8 +92,8 @@ MvtDeuxViolinoI = \relative c''' {
 	gis a8-> gis gis16~
 	gis gis8 gis16(\< a b)(
 % mesures 71 à 75
-	a) a8 a16( bis cis)
-	e\f\> e8 e e16~
+	a) a8 a16( bis cis)\!
+	e\f\> e8 e e16~\!
 	e(\p d a) a8 a16~
 	a\pp a8 a a16(
 	bes) bes8 bes bes16(
@@ -113,8 +113,8 @@ MvtDeuxViolinoI = \relative c''' {
 	aes aes8 aes aes16~
 	aes bes8-> aes aes16~
 	aes aes8 aes16(\< bes ces)
-	bes bes8 bes16( c! des)
-	des16\f\> des8 des des16(
+	bes bes8 bes16( c! des)\!
+	des16\f\> des8 des des16(\!
 % mesures 91 à 95
 	c16)\p c8 c c16(
 	des\pp) des8 des des16(
@@ -149,7 +149,7 @@ MvtDeuxViolinoI = \relative c''' {
 	a'4.~
 	a4( fis16 d)
 	d'4.~
-	d8(\< b g)
+	d8(\< b g)\!
 	g(\>\trill b a)\!
 % mesures 121 à 125
 	g4 r8
@@ -159,8 +159,8 @@ MvtDeuxViolinoI = \relative c''' {
 	d4 b16 g)
 % mesures 126 à 130
 	g'4.~
-	g8(\< e c)
-	c(\trill\> e d)\!
+	g8(\< e c)\!
+	c(^\naturaltrillmark\> e d)\!
 	c4 r8
 	e,4.\p\>~
 % mesures 131 à 135
@@ -212,8 +212,8 @@ MvtDeuxViolinoI = \relative c''' {
 	b'8(\! gis! e
 	b) r r
 % mesures 171 à 175
-	b'8(\< cis16 b\> gis e
-	b8)\! r r
+	b'8(\< cis16 b\> gis e\!
+	b8) r r
 	e,\noBeam gis-.\ff a-. \mark \default
 	b-. cis-. a-. 
 	gis_\stacc fis e
@@ -268,7 +268,7 @@ MvtDeuxViolinoI = \relative c''' {
 % mesures 216 à 220
 	ges) ges8 ges ges16(
 	f) f8 f f16(
-	ees) ees8 ees ees16(_\dimmarkup
+	ees) ees8 ees_\dimmarkup ees16(
 	dis!) dis8 dis dis16~
 	dis8( e! dis)(
 % mesures 221 à 225

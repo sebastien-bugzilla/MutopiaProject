@@ -45,9 +45,9 @@ MvtDeuxCorniDI = \relative c'' {
 	g8 g4->
 % mesures 36 à 40
 	g4.
-	\partcombineApart d 
+	\partCombineApart d 
 	d
-	d8 d4 \partcombineAutomatic
+	d8 d4 \partCombineAutomatic
 	d4.
 % mesures 41 à 45
 	e
@@ -90,21 +90,21 @@ MvtDeuxCorniDI = \relative c'' {
 	\mark \default
 % mesures 96 à 100
 	e4.\ff
-	\partcombineApart e \partcombineAutomatic
+	\partCombineApart e \partCombineAutomatic
 	f
 	e
 	e4 g8~
 % mesures 101 à 105
-	g( f) \partcombineApart c~
-	c \partcombineAutomatic e-. e-.
+	g( f) \partCombineApart c~
+	c \partCombineAutomatic e-. e-.
 	e r e\fz
 	r r e\fz
 	r r f\fz
 % mesures 106 à 110
 	r r e\fz
 	r r e\fz
-	r r \partcombineApart c
-	c4. \partcombineAutomatic
+	r r \partCombineApart c
+	c4. \partCombineAutomatic
 	f \mark \default
 % mesures 111 à 115
 	f8 r r
@@ -116,14 +116,14 @@ MvtDeuxCorniDI = \relative c'' {
 % mesures 126 à 130
 	
 % mesures 131 à 135
-	\partcombineApart c4->( f16 c)
+	\partCombineApart c4->( f16 c)
 	c8 r r
 	c4->( f16. ees32)
 	ees8 r r
-	c4-> -\tweak X-offset #-3.5 \pp( c,8) \partcombineAutomatic
+	c4-> -\tweak X-offset #-3.5 \pp( c,8) \partCombineAutomatic
 % mesures 136 à 140
 	R4.
-	\partcombineApart c'4(-> c,8) \partcombineAutomatic
+	\partCombineApart c'4(-> c,8) \partCombineAutomatic
 	R4.
 	c'4(\ppp c,8)
 	c'4( c,8)
@@ -156,7 +156,7 @@ MvtDeuxCorniDI = \relative c'' {
 % mesures 171 à 175
 	e8) r r
 	d4.(->
-	e4) r8 \mark \default \partcombineAutomatic
+	e4) r8 \mark \default \partCombineAutomatic
 	g4.\ff
 	g
 % mesures 176 à 180
@@ -167,10 +167,10 @@ MvtDeuxCorniDI = \relative c'' {
 	c8 c4\fz
 % mesures 181 à 185
 	c4.
-	\partcombineApart a
+	\partCombineApart a
 	a4 a8
 	a8 a4
-	a4. \partcombineAutomatic
+	a4. \partCombineAutomatic
 % mesures 186 à 190
 	R4.*6
 % mesures 191 à 195
@@ -204,19 +204,19 @@ MvtDeuxCorniDI = \relative c'' {
 	f
 	e
 % mesures 241 à 245
-	\partcombineApart c
+	\partCombineApart c
 	f 
 	c8-. c-. g'-. 
-	c, \partcombineAutomatic r c -\tweak X-offset #-2.7 \fz
+	c, \partCombineAutomatic r c -\tweak X-offset #-2.7 \fz
 	r r c -\tweak X-offset #-2.7 \fz
 % mesures 246 à 250
 	r r d -\tweak X-offset #-2.7 \fz
 	r r g -\tweak X-offset #-2.7 \fz
 	r r g -\tweak X-offset #-2.7 \fz
-	r \partcombineApart c, c \partcombineAutomatic
+	r \partCombineApart c, c \partCombineAutomatic
 	c4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
-	\partcombineApart c \partcombineAutomatic
+	\partCombineApart c \partCombineAutomatic
 	f8 r r
 	R4.
 	f4. -\tweak X-offset #-3.8 \ff
@@ -234,7 +234,7 @@ MvtDeuxCorniDI = \relative c'' {
 	d4-> f8~->
 	f\pp f4->
 % mesures 266 à 270
-	f\< f8
+	f\< f8\!
 	g4.(\>
 	e8)\! r r
 	R4.*5
@@ -264,7 +264,7 @@ MvtDeuxCorniDI = \relative c'' {
 	d->(
 	g8)( e c)
 % mesures 301 à 305
-	\partcombineApart g4. \partcombineAutomatic
+	\partCombineApart g4. \partCombineAutomatic
 	g'8( e c)
 	g4.->~
 	g~

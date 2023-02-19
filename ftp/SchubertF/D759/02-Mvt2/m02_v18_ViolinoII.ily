@@ -21,7 +21,7 @@ MvtDeuxViolinoII = \relative c'' {
 	cis
 % mesures 11 à 15
 	b8 gis e)
-	dis(\< e fis\!
+	dis(\> e fis\!
 	e4.)(
 	ais)(\fp\>
 	a!)(\!

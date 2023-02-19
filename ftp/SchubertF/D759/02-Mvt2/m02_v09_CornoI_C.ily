@@ -4,28 +4,28 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxCorniDI = \relative c'' {
+musicCornoIMvtII = \relative c'' {
 	\clef treble
 	\key c \major
 	\transposition e
 % mesures 1 à 5
-	c4.(
+	\partCombineChords c4.(
 	d
-	e8) r r
+	e8) \partCombineAutomatic r r
 	R4.*3
 	
 % mesures 6 à 10
 	
-	c4.(
+	\partCombineChords c4.(
 	d
-	e8) r r
+	e8) \partCombineAutomatic r r
 	R4.*5
 % mesures 11 à 15
 	
 	
 	
 	
-	g,4.(
+	g,4.^(
 % mesures 16 à 20
 	e8) r r
 	R4.*12
@@ -35,19 +35,19 @@ MvtDeuxCorniDI = \relative c'' {
 	
 	
 	
-	d'4.(
-	e8) r r
+	\partCombineChords d'4.(
+	e8) \partCombineAutomatic r r
 % mesures 31 à 35
-	d4.(
-	e8) r r \mark \default
+	\partCombineChords d4.(
+	e8) \partCombineAutomatic r r \mark \default
 	g4.\f
 	g
 	g8 g4->
 % mesures 36 à 40
 	g4.
-	\partcombineApart d 
+	\partCombineApart d 
 	d
-	d8 d4 \partcombineAutomatic
+	d8 d4 \partCombineAutomatic
 	d4.
 % mesures 41 à 45
 	e
@@ -60,19 +60,19 @@ MvtDeuxCorniDI = \relative c'' {
 	
 	
 	
-	c4.\fp\>(
+	c4.\fp\>^(
 % mesures 51 à 55
 	g4)\! r8
 	R4.
-	d'4.->(
-	e8) r r
-	d4.->(
+	\partCombineChords d'4.->(
+	e8) \partCombineAutomatic r r
+	\partCombineChords d4.->(
 % mesures 56 à 60
-	e8) r r
+	e8) \partCombineAutomatic r r
 	R4.
-	c(
+	\partCombineChords c(
 	d
-	e4) r8
+	e4) \partCombineAutomatic r8
 % mesures 61 à 65
 	R4.*35
 % mesures 66 à 70
@@ -90,21 +90,21 @@ MvtDeuxCorniDI = \relative c'' {
 	\mark \default
 % mesures 96 à 100
 	e4.\ff
-	\partcombineApart e \partcombineAutomatic
+	\partCombineApart e \partCombineAutomatic
 	f
 	e
 	e4 g8~
 % mesures 101 à 105
-	g( f) \partcombineApart c~
-	c \partcombineAutomatic e-. e-.
+	g( f) \partCombineApart c~
+	c \partCombineAutomatic e-. e-.
 	e r e\fz
 	r r e\fz
 	r r f\fz
 % mesures 106 à 110
 	r r e\fz
 	r r e\fz
-	r r \partcombineApart c
-	c4. \partcombineAutomatic
+	r r \partCombineApart c
+	c4. \partCombineAutomatic
 	f \mark \default
 % mesures 111 à 115
 	f8 r r
@@ -116,33 +116,33 @@ MvtDeuxCorniDI = \relative c'' {
 % mesures 126 à 130
 	
 % mesures 131 à 135
-	\partcombineApart c4->( f16 c)
+	\partCombineApart c4->( f16 c)
 	c8 r r
 	c4->( f16. ees32)
 	ees8 r r
-	c4-> -\tweak X-offset #-3.5 \pp( c,8) \partcombineAutomatic
+	c4-> -\tweak X-offset #-3.5 \pp( c,8) \partCombineAutomatic
 % mesures 136 à 140
 	R4.
-	\partcombineApart c'4(-> c,8) \partcombineAutomatic
+	\partCombineApart c'4(-> c,8) \partCombineAutomatic
 	R4.
 	c'4(\ppp c,8)
 	c'4( c,8)
 % mesures 141 à 145
 	c'4( c,8)
-	c'4.(
+	\partCombineChords c'4.(
 	d
-	e8) r r
+	e8) \partCombineAutomatic r r
 	R4.*3
 % mesures 146 à 150
 	
 	
-	c4.(
+	\partCombineChords c4.(
 	d
-	e8) r r
+	e8) \partCombineAutomatic r r
 % mesures 151 à 155
 	R4.*5
 % mesures 156 à 160
-	g,4.(-\tweak X-offset #-2.3 \p
+	g,4.^(-\tweak X-offset #-2.3 \p
 	e8) r r
 	R4.*12
 % mesures 161 à 165
@@ -152,11 +152,11 @@ MvtDeuxCorniDI = \relative c'' {
 	
 	
 	
-	d'4.(->
+	\partCombineChords d'4.(->
 % mesures 171 à 175
 	e8) r r
 	d4.(->
-	e4) r8 \mark \default \partcombineAutomatic
+	e4) r8 \mark \default \partCombineAutomatic
 	g4.\ff
 	g
 % mesures 176 à 180
@@ -167,21 +167,21 @@ MvtDeuxCorniDI = \relative c'' {
 	c8 c4\fz
 % mesures 181 à 185
 	c4.
-	\partcombineApart a
+	\partCombineApart a
 	a4 a8
 	a8 a4
-	a4. \partcombineAutomatic
+	a4. \partCombineAutomatic
 % mesures 186 à 190
 	R4.*6
 % mesures 191 à 195
 	
 	c4.\p~
 	c8 r r
-	e4.->(
+	\partCombineChords e4.->(
 	f8) r r
 % mesures 196 à 200
 	e4.(->
-	f8) r r 
+	f8) \partCombineAutomatic r r 
 	R4.*39
 % mesures 201 à 205
 	
@@ -204,38 +204,38 @@ MvtDeuxCorniDI = \relative c'' {
 	f
 	e
 % mesures 241 à 245
-	\partcombineApart c
+	\partCombineApart c
 	f 
 	c8-. c-. g'-. 
-	c, \partcombineAutomatic r c -\tweak X-offset #-2.7 \fz
+	c, \partCombineAutomatic r c -\tweak X-offset #-2.7 \fz
 	r r c -\tweak X-offset #-2.7 \fz
 % mesures 246 à 250
 	r r d -\tweak X-offset #-2.7 \fz
 	r r g -\tweak X-offset #-2.7 \fz
 	r r g -\tweak X-offset #-2.7 \fz
-	r \partcombineApart c, c \partcombineAutomatic
+	r \partCombineApart c, c \partCombineAutomatic
 	c4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255
-	\partcombineApart c \partcombineAutomatic
+	\partCombineApart c \partCombineAutomatic
 	f8 r r
 	R4.
 	f4. -\tweak X-offset #-3.8 \ff
 	d \mark \default
 % mesures 256 à 260
 	c8 r r
-	c4.\fp\>(
+	c4.\fp\>^(
 	g)\!
-	c(\fp\>
+	c^(\fp\>
 	g4)\! r8
 % mesures 261 à 265
 	R4.
-	d'4.(->
-	e8) r r
+	\partCombineChords d'4.(->
+	e8) \partCombineAutomatic r r
 	d4-> f8~->
 	f\pp f4->
 % mesures 266 à 270
-	f\< f8
-	g4.(\>
+	f\< f8\!
+	g4.^(\>
 	e8)\! r r
 	R4.*5
 	
@@ -243,14 +243,14 @@ MvtDeuxCorniDI = \relative c'' {
 	
 	
 	
-	c4.(
-	d)(
+	\voiceTwo c4.^(
+	d)^(
 % mesures 276 à 280
-	e)(
-	dis)(
-	e4)( f16 d!
+	e)^(
+	dis)^(
+	\voiceOne e4)( f16 d!
 	e4 d16 b
-	c4) r8
+	c4) \oneVoice r8 
 % mesures 281 à 285
 	R4.*15
 % mesures 286 à 290
@@ -264,7 +264,7 @@ MvtDeuxCorniDI = \relative c'' {
 	d->(
 	g8)( e c)
 % mesures 301 à 305
-	\partcombineApart g4. \partcombineAutomatic
+	\partCombineApart g4. \partCombineAutomatic
 	g'8( e c)
 	g4.->~
 	g~

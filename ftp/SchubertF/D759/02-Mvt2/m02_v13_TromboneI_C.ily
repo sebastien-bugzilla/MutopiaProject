@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxTromboni_alto = \relative c' {
+musicTromboneIMvtII = \relative c' {
 	\clef tenor
 	\key e \major
 % mesures 1 à 5
@@ -33,7 +33,7 @@ MvtDeuxTromboni_alto = \relative c' {
 	dis4.
 % mesures 41 à 45
 	dis
-	e4( dis8)
+	e4^( dis8)
 	e8( fis8.-> e16)
 	dis4.
 	R4.*51
@@ -62,10 +62,10 @@ MvtDeuxTromboni_alto = \relative c' {
 	e
 	dis
 	fis
-	e8 \partcombineApart gis,4
+	e8 \partCombineApart gis,4
 % mesures 101 à 105
 	fis8 a4
-	gis8-. cis-. bis-. \partcombineAutomatic 
+	gis8-. cis-. bis-. \partCombineAutomatic 
 	cis r e\fz
 	r r e\fz
 	r r cis\fz
@@ -145,8 +145,8 @@ MvtDeuxTromboni_alto = \relative c' {
 	a
 	gis
 % mesures 241 à 245
-	\partcombineApart a8 e g~
-	g f4 \partcombineAutomatic
+	\partCombineApart a8 e g~
+	g f4 \partCombineAutomatic
 	e8-. e-. dis-.
 	e r b -\tweak X-offset #-2.7 \fz
 	r r b -\tweak X-offset #-2.7 \fz

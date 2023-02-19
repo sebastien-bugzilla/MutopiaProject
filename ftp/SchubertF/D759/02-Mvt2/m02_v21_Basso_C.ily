@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxBasso = \relative c {
+musicBassoMvtII = \relative c {
 	\clef bass
 	\key e \major
 % mesures 1 à 5
@@ -32,7 +32,7 @@ MvtDeuxBasso = \relative c {
 	e d c)
 	b( g e'
 % mesures 21 à 25
-	d4.\>)(
+	\once \stemUp d4.\>)(
 	g,8\!) r r 
 	R4. 
 	g8 g'( fis
@@ -74,7 +74,7 @@ MvtDeuxBasso = \relative c {
 	gis(_\crescmarkup e cis'
 	b8) r r
 % mesures 56 à 60
-	e\pp-. r r 
+	e\pp r r 
 	R4.
 	e8-.^\pizz\ppp dis-. cis-.
 	b-. a-. fis-.
@@ -149,7 +149,7 @@ MvtDeuxBasso = \relative c {
 	g4 fis16 e)
 	fis4.(
 	c'4 b16 ais)
-	b8(\< g e)
+	b8(\< g e)\!
 	d4.\>
 % mesures 121 à 125
 	g\!(
@@ -159,7 +159,7 @@ MvtDeuxBasso = \relative c {
 	b4.(
 % mesures 126 à 130
 	f'4 e16 dis!)
-	e8(\< c a)
+	e8(\< c a)\!
 	g4.(\>
 	c,16)\! c8\p c c16~
 	c c8 c c16~
@@ -202,7 +202,7 @@ MvtDeuxBasso = \relative c {
 % mesures 161 à 165
 	b( g e')
 	d4.\>(
-	g,8-.\!) r r 
+	g,8\!) r r 
 	R4.
 	g8( g' fis
 % mesures 166 à 170
@@ -243,7 +243,7 @@ MvtDeuxBasso = \relative c {
 	cis(_\crescmarkup a fis'
 % mesures 196 à 200
 	e) r r
-	a,\pp-. r r
+	a,\pp r r
 	R4.
 	a'8-.\ppp^\pizz gis-. fis-.
 	e-. d-. b-.
@@ -313,7 +313,7 @@ MvtDeuxBasso = \relative c {
 	r e,-.\fp g-.
 	b-. r r 
 % mesures 261 à 265
-	gis8(\p -\tweak X-offset #-3. ^\arco e cis'
+	gis!8(\p -\tweak X-offset #-3. ^\arco e cis'
 	b8) r r
 	gis(_\crescmarkup e cis'
 	b8) r r
@@ -326,9 +326,9 @@ MvtDeuxBasso = \relative c {
 	
 % mesures 271 à 275
 	
-	gis8-.\pp^\pizz r a!
+	gis8\pp^\pizz r a!
 	b r b,
-	e-. r r
+	e r r
 	R4.
 % mesures 276 à 280
 	gis8-. fis-. e-.
@@ -346,7 +346,7 @@ MvtDeuxBasso = \relative c {
 	
 	
 	
-	b8 -\tweak X-offset #-4 \pizz\pp r r
+	b8 -\tweak X-offset #-4 ^\pizz\pp r r
 	e r r
 % mesures 301 à 305
 	b r r

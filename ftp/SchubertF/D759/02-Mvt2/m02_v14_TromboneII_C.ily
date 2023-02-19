@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxTromboni_tenore = \relative c {
+musicTromboneIIMvtII = \relative c {
 	\clef tenor
 	\key e \major
 % mesures 1 à 5
@@ -33,7 +33,7 @@ MvtDeuxTromboni_tenore = \relative c {
 	b4.
 % mesures 41 à 45
 	bis
-	cis4( bis8)
+	cis4_( bis8)
 	cis8( dis8.-> cis16)
 	bis4.
 	R4.*51
@@ -153,7 +153,7 @@ MvtDeuxTromboni_tenore = \relative c {
 % mesures 246 à 250
 	r r fis -\tweak X-offset #-2.7 \fz
 	r r b -\tweak X-offset #-2.7 \fz
-	b b d -\tweak X-offset #-2.7 \fz
+	b b d! -\tweak X-offset #-2.7 \fz
 	r c-. bes-.
 	bes4. -\tweak X-offset #-3.8 \ff
 % mesures 251 à 255

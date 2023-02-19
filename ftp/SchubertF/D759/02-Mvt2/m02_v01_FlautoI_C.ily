@@ -15,7 +15,7 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	
-	c4.(\fp\>
+	c4.^(\fp\>
 	b4)\! r8
 % mesures 16 à 20
 	e4.(\pp\<
@@ -32,12 +32,12 @@ musicFlautoIMvtII = \relative c'' {
 % mesures 26 à 30
 	
 	
-	\partcombineApart
+	\partCombineApart
 	b,16(_\> dis fis a gis fis
 	e8)\! r r
 % mesures 31 à 35
 	b16(_\> dis fis a\! gis fis
-	e8) r r  \partcombineAutomatic \mark \default
+	e8) r r  \partCombineAutomatic \mark \default
 	fis4.\f
 	gis
 	a8( b8.-> a16)
@@ -49,7 +49,7 @@ musicFlautoIMvtII = \relative c'' {
 	b4.
 % mesures 41 à 45
 	bis
-	cis4( bis8)
+	cis4^( bis8)
 	cis8( dis8.-> cis16)
 	bis4.
 	b!\pp(
@@ -58,17 +58,17 @@ musicFlautoIMvtII = \relative c'' {
 	b8 gis e)
 	dis4.(->
 	cis)
-	c(\fp\>
+	c^(\fp\>
 % mesures 51 à 55
 	b4)\! r8
-	\partcombineApart b'(-\tweak X-offset #-1.5 \p gis e
+	\partCombineApart b'(-\tweak X-offset #-1.5 \p gis e
 	b) r r
 	b'->( cis16_\crescmarkup b gis e
 	b8) r r
 % mesures 56 à 60
 	e4.( 
 	fis
-	gis8) \partcombineAutomatic r r
+	gis8) \partCombineAutomatic r r
 	R4.*33
 % mesures 61 à 65
 	
@@ -84,10 +84,10 @@ musicFlautoIMvtII = \relative c'' {
 	
 % mesures 91 à 95
 	
-	\partcombineApart bes16.(_> -\tweak X-offset #-4.0 \pp aes32 bes16 aes f des)
+	\partCombineApart bes16.(->_\pp aes32 bes16 aes f des)
 	aes'16.(_> ges32 aes16 ges ees c
 	des8) r r
-	\partcombineAutomatic R4. \mark \default
+	\partCombineAutomatic R4. \mark \default
 % mesures 96 à 100
 	gis!4.\ff
 	cis
@@ -127,17 +127,17 @@ musicFlautoIMvtII = \relative c'' {
 % mesures 126 à 130
 	
 	r8 r c~
-	c(\trill e d
+	c(^\naturaltrillmark e d
 	c4) r8
-	\partcombineApart e,4(-> d16 b
+	\partCombineApart e,4(-> d16 b
 % mesures 131 à 135
 	c8) r r
 	e4(-> d16 b
-	c8) r r \partcombineAutomatic
+	c8) r r \partCombineAutomatic
 	R4.*2
 	
 % mesures 136 à 140
-	\partcombineApart g'4(-\tweak X-offset #-3.5 \pp-> e8) \partcombineAutomatic
+	\partCombineApart g'4(-\tweak X-offset #-3.5 \pp-> e8) \partCombineAutomatic
 	R4.*18
 	
 	
@@ -151,12 +151,12 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	
-	c4.(\fp\>
+	c4.^(\fp\>
 % mesures 156 à 160
 	b)\!
-	e(
+	\partCombineChords e(
 	fis
-	g8) r r
+	g8) \partCombineAutomatic r r
 	R4.*3
 % mesures 161 à 165
 	
@@ -168,13 +168,13 @@ musicFlautoIMvtII = \relative c'' {
 	R4.*4
 	
 	
-	\partcombineApart
-	b,16(\< dis fis a\> gis fis
+	\partCombineApart
+	b,16(_\< dis fis a_\> gis fis\!
 % mesures 171 à 175
-	e8)\! r r 
-	b16(\< dis fis a\> gis fis
-	e4)\! r8 \mark \default
-	\partcombineAutomatic fis4.\ff
+	e8) r r 
+	b16(_\< dis fis a_\> gis fis\!
+	e4) r8 \mark \default
+	\partCombineAutomatic fis4.\ff
 	gis
 % mesures 176 à 180
 	a8( b8.-> a16)
@@ -189,7 +189,7 @@ musicFlautoIMvtII = \relative c'' {
 	fis8( gis8.-> fis16)
 	eis4.(
 % mesures 186 à 190
-	e!
+	e!\pp
 	fis
 	e8 cis a)
 	gis4.->(
@@ -202,9 +202,9 @@ musicFlautoIMvtII = \relative c'' {
 	e'8(\< fis16 e\> cis a\!
 % mesures 196 à 200
 	e8) r r
-	a4.(\pp
+	a4.\(\pp
 	b
-	cis8) r r
+	cis8\) r r
 	R4.*35
 % mesures 201 à 205
 	
@@ -223,41 +223,41 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	
-	\partcombineApart fis,16.( -\tweak X-offset #-5.0 \ppp-> e32 fis16 e cis a
+	\partCombineApart fis,16.(_\ppp-> e32 fis16 e cis a
 % mesures 236 à 240
 	e'16.-> d32 e16 d b gis) \mark \default
-	\partcombineAutomatic a'4.\ff
+	\partCombineAutomatic a'4.\ff
 	c
 	b
 	d
 % mesures 241 à 245
 	c8 e4
 	d8 f4
-	e8-. g-. fis!-.
-	\partcombineApart e4.
-	\partcombineAutomatic g
+	s4. %e8-. g-. fis!-.
+	\partCombineApart e4.
+	\partCombineAutomatic g
 % mesures 246 à 250
 	fis
 	a
-	g8 \partcombineApart b,4
+	g8 \partCombineApart b,4
 	a8 c4
-	\partcombineChords e16\ff[ e8 e e16(] 
+	\partCombineChords e16\ff[ e8 e e16(] 
 % mesures 251 à 255
-	g)[ g8 g g16] \partcombineAutomatic
+	g)[ g8 g g16] \partCombineAutomatic
 	a8 r r 
 	R4. 
 	dis,!16\ff dis8 dis dis16(
 	fis) fis8 fis fis16( \mark \default
 % mesures 256 à 260
-	\partcombineChordsOnce e8) r r
+	e8) r r
 	c,4.(
 	b16)\!( dis! fis a gis fis)
-	c4.(\fp\>
+	c4.^(\fp\>
 	b4)\! r8
 % mesures 261 à 265
-	\partcombineApart b'8( gis e
+	\partCombineApart b'8( gis e
 	b4) r8
-	\partcombineAutomatic b'8(_\crescmarkup cis16 b gis e
+	\partCombineAutomatic b'8(_\crescmarkup cis16 b gis e
 	b4) r8
 	R4.
 % mesures 266 à 270
@@ -267,7 +267,7 @@ musicFlautoIMvtII = \relative c'' {
 	fis
 	gis
 % mesures 271 à 275
-	ais)(
+	ais)( 
 	b4 a!16 fis!
 	gis4 fis16 dis
 	e8) r r
@@ -290,10 +290,10 @@ musicFlautoIMvtII = \relative c'' {
 	R4.*3
 	
 	
-	gis4.(->
+	gis4.^(->
 	fis8) r r
 % mesures 306 à 310
-	gis4.(->
+	gis4.^(->
 	fis8) r r
 	gis4.(
 	b

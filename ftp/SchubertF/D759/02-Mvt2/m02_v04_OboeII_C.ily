@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxOboeII = \relative c'' {
+musicOboeIIMvtII = \relative c'' {
 	\clef treble
 	\key e \major
 % mesures 1 à 5
@@ -24,8 +24,8 @@ MvtDeuxOboeII = \relative c'' {
 	
 	
 % mesures 21 à 25
-	b4.\<(
-	c\>)(
+	b4.\<_(
+	c\>)_(
 	b8\!) r r
 	R4.*8
 % mesures 26 à 30
@@ -98,8 +98,8 @@ MvtDeuxOboeII = \relative c'' {
 	bis
 	cis~
 % mesures 101 à 105
-	cis4 dis8
-	e e-. dis-.
+	<cis fis>4^( <dis fisis>8 %cis4 dis8
+	<e gis>8)[ <e cis'>^. <dis bis'>^.] %e e-. dis-.
 	e32\noBeam gis, cis b a[ gis fis e] gis[ fis e dis]
 	cis[ gis' e' dis] cis[ b a gis] a[ gis fis e]
 	fis[ gis a gis] fis[ a dis cis] bis[ a' gis fis]
@@ -111,7 +111,7 @@ MvtDeuxOboeII = \relative c'' {
 	g' g8 g g16 \mark \default
 % mesures 111 à 115
 	fis8 r r
-	R4.*8
+	R4.*7
 	
 	
 	
@@ -119,17 +119,17 @@ MvtDeuxOboeII = \relative c'' {
 	
 	
 	
-	
+	R4.
 	r8 b,8( c
 % mesures 121 à 125
 	b4) r8
-	R4.*6
+	R4.*5
 	
 	
 	
 % mesures 126 à 130
 	
-	
+	R4.
 	r8 e( f
 	e4) r8
 	R4.
@@ -156,8 +156,8 @@ MvtDeuxOboeII = \relative c'' {
 % mesures 161 à 165
 	
 	
-	b4.\<(
-	c)(\>
+	b4.\<_(
+	c)_(\>
 	b8\!) r r
 % mesures 166 à 170
 	R4.*8
@@ -193,8 +193,8 @@ MvtDeuxOboeII = \relative c'' {
 	
 % mesures 196 à 200
 	
-	cis4.\pp(
-	d)(
+	cis4.\pp_(
+	d)_(
 	cis8) r r
 	R4.*7
 % mesures 201 à 205
@@ -253,24 +253,24 @@ MvtDeuxOboeII = \relative c'' {
 	bes,) bes8 bes bes16(
 	a4.)\>~
 	a\p
-	a16 -\tweak X-offset #-3.5 \ff a8 a a16~
-	a a8 a a16( \mark \default
+	a16 -\tweak X-offset #-3.5 \ff a8 a a16_~
+	a a8 a a16_( \mark \default
 % mesures 256 à 260
-	gis4.)\>(
-	e)\fp\>(
+	gis4.)\>_(
+	e)\fp\>_(
 	dis4)\! r8
-	e4.\fp\>(
+	e4.\fp\>_(
 	dis4)\! r8
 % mesures 261 à 265
 	b'8( gis! e
 	b'4) r8
-	b(_\crescmarkup cis16 b gis e
-	b'4) r8
+	b\(_\crescmarkup cis16 b gis e
+	b'4\) r8
 	R4.
 % mesures 266 à 270
-	b4\< b8
-	cis4\>( b8)
-	gis4.\!(
+	b4\< b8\!
+	cis4\>( b8)\!
+	gis4.(
 	a)(
 	gis
 % mesures 271 à 275

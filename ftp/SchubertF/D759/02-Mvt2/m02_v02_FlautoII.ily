@@ -189,7 +189,7 @@ musicFlautoIIMvtII = \relative c'' {
 	a8( b8.-> a16)
 	gis4.(
 % mesures 186 à 190
-	e!
+	e!\pp
 	fis
 	e8 cis a)
 	gis8->( a b

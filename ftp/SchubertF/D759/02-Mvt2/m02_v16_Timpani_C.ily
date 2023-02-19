@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxTimpaniEH = \relative c {
+musicTimpaniMvtII = \relative c {
 	\clef bass
 	\key c \major
 % mesures 1 à 5
@@ -63,13 +63,13 @@ MvtDeuxTimpaniEH = \relative c {
 	
 	\mark \default
 % mesures 96 à 100
-	e8:32\ff\noBeam e r
-	e:32\noBeam e r
+	e8:64\ff\noBeam e r
+	e:64\noBeam e r
 	R4.*2
 	
-	e8:32\noBeam e r8
+	e8:64\noBeam e r8
 % mesures 101 à 105
-	r r e:32
+	r r e:64
 	e r r
 	r e32 e e e e8\noBeam
 	r e32 e e e e8\noBeam
@@ -141,12 +141,12 @@ MvtDeuxTimpaniEH = \relative c {
 	
 % mesures 236 à 240
 	\mark \default
-	e8:32\ff\noBeam e8 r
-	e:32\noBeam e r
+	e8:64\ff\noBeam e8 r
+	e:64\noBeam e r
 	R4.
-	b8:32\noBeam b8 r
+	b8:64\noBeam b8 r
 % mesures 241 à 245
-	e8:32\noBeam e8 r
+	e8:64\noBeam e8 r
 	R4.
 	r8 b b
 	e e\fz r

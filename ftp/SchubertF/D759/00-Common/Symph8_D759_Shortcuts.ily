@@ -20,6 +20,17 @@ neuf=^\markup {\tiny \number 9}
 dix=^\markup {\tiny \number 10}
 onze=^\markup {\tiny \number 11}
 
+naturaltrillmark = \markup {
+	\concat {
+		\hspace #0.8
+		\general-align #Y #CENTER {
+			\musicglyph #"scripts.trill" 
+			\hspace #0.45
+			\teeny \natural 
+		}
+	}
+}
+
 
 mmrPos = #(define-music-function
 	(position)
