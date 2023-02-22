@@ -4,18 +4,13 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnTromboni_alto = \relative c {
+musicTromboneIMvtI = \relative c {
 	\clef tenor
 	\key b \minor
-%	\override TupletBracket #'bracket-visibility = ##f
-%	\override Hairpin.to-barline = ##f
-%	\set Staff.instrumentName = #"Tromboni"
-%	\set Staff.midiInstrument = #"trombone"
-%	\set Score.alternativeNumberingStyle = #'numbers
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*26
+		R2.*26
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -25,18 +20,18 @@ MvtUnTromboni_alto = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	    
-	    
-	    r4 r cis'\fz
-	    cis\fz r r
-	    R2.*6
+		
+		
+		r4 r cis'\fz
+		cis\fz r r
+		R2.*6
 % mesures 31 à 35
 	
 % mesures 36 à 40
-	    cis4 r cis
-	    r cis4. cis8 \mark \default
-	    d4\fz r r
-	    R2.*24
+		cis4 r cis
+		r cis4. cis8 \mark \default
+		d4\fz r r
+		R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -46,57 +41,57 @@ MvtUnTromboni_alto = \relative c {
 % mesures 56 à 60
 	
 % mesures 61 à 65
-	    
-	    \mark \default
-	    c2.\ffz\>~
-	    c4\! r r
-	    d2.\fz\>~
+		
+		\mark \default
+		c2.\ffz\>~
+		c4\! r r
+		d2.\fz\>~
 % mesures 66 à 70
-	    d4\! r r
-	    ees2.\fz\>~
-	    ees4\! ees\fz ees\fz 
-	    ees\fz ees\fz ees\fz 
-	    ees\fz ees\fz ees\fz 
+		d4\! r r
+		ees2.\fz\>~
+		ees4\! ees\fz ees\fz 
+		ees\fz ees\fz ees\fz 
+		ees\fz ees\fz ees\fz 
 % mesures 71 à 75
-	    e!\fz r r
-	    R2.*9
+		e!\fz r r
+		R2.*9
 % mesures 76 à 80
 	
 % mesures 81 à 85
-	    cis2.\fz
-	    r8 cis4 cis cis8
-	    cis2.\fz
-	    r8 cis4 cis cis8(
-	    d) r b2(
+		cis2.\fz
+		r8 cis4 cis cis8
+		cis2.\fz
+		r8 cis4 cis cis8(
+		d) r b2(\fz->
 % mesures 86 à 90
-	    c8) r c2(
-	    f8) r f2(
-	    e4) b-. c-.
-	    b8 r b2(
-	    c8) r c2\fz->(
+		c8) r c2(\fz->
+		f8) r f2(\fz->
+		e4) b-. c-.
+		b8 r b2(\fz->
+		c8) r c2\fz->(
 % mesures 91 à 95
-	    b8) r b2->\fz(
-	    c4) b-. c-. \mark \default
-	    b r r
-	    R2.*10
+		b8) r b2->\fz(
+		c4) b-. c-. \mark \default
+		b r r
+		R2.*10
 % mesures 96 à 100
 	
 % mesures 101 à 105
-	    
-	    
-	    r4 \partCombineApart b2~
-	    b2.~
-	    b4 \partCombineAutomatic r r
+		
+		
+		r4 b2~\ff\>
+		b2.~\!
+		b4\pp r r
 % mesures 106 à 110
-	    R2.*3
+		R2.*3
 	}
 	\alternative {
-	    {
-	        R2.
-	    }
-	    {
-	        dis2.\pp\>~
-	    }
+		{
+			R2.
+		}
+		{
+			dis2.\pp\>~
+		}
 	}
 % mesures 111 à 115
 	dis~\!
@@ -163,7 +158,7 @@ MvtUnTromboni_alto = \relative c {
 	e
 	e4 e e
 	e2.\fz
-	\partCombineApartOnce b \mark \default
+	b\fz \mark \default
 % mesures 176 à 180
 	e2.
 	fis2 g4
@@ -267,7 +262,7 @@ MvtUnTromboni_alto = \relative c {
 % mesures 301 à 305
 	eis2.\fz
 	r8 eis4 eis eis8
-	fis r dis!2(
+	fis r dis!2(\fz
 	e8) r e2(\fz
 	fis8) r fis2(\fz
 % mesures 306 à 310
@@ -283,9 +278,9 @@ MvtUnTromboni_alto = \relative c {
 	
 % mesures 321 à 325
 	
-	r4 \partCombineApart b2~
-	b2.~
-	b4 \partCombineAutomatic r r
+	r4 b2~\ffz\>
+	b2.~\p
+	b4\pp r r
 	R2.*9
 % mesures 326 à 330
 	
@@ -293,7 +288,7 @@ MvtUnTromboni_alto = \relative c {
 	
 	
 	
-	fis2.~
+	fis2.~\pp
 	fis~
 % mesures 336 à 340
 	fis4 r r
@@ -304,17 +299,17 @@ MvtUnTromboni_alto = \relative c {
 	
 	
 	r4 d'2\f
-	d2\< d4
+	d2\< d4\!
 	d2.\ff
 % mesures 351 à 355
 	cis
-	\partCombineApartOnce b4 r r
+	b4 r r
 	R2.*3
 	
 	
 % mesures 356 à 360
 	d2.\mf\<~
-	d(
+	d(\!
 	e)\>~
 	e(\!
 	d4) r r

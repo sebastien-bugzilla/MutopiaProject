@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxClarinettiAI = \relative c'' {
+musicClarinettoIMvtII = \relative c'' {
 	\clef treble
 	\key g \major
 	\transposition a
@@ -25,8 +25,8 @@ MvtDeuxClarinettiAI = \relative c'' {
 % mesures 26 à 30
 	
 % mesures 31 à 35
-	\partCombineApart d16(\> fis a c\! b a
-	g8) r r \mark \default \partCombineAutomatic
+	d16(\> fis a c\! b a
+	g8) r r \mark \default 
 	fis4.\f
 	g
 	a8( b8.-> a16)
@@ -41,25 +41,25 @@ MvtDeuxClarinettiAI = \relative c'' {
 	g4( fis8)
 	g8( a8.-> g16)
 	fis4.
-	\partCombineApart b,( -\tweak X-offset #-2.5 \pp
+	b,(\pp
 % mesures 46 à 50
 	c
 	b8 g e)
 	dis4.->(
-	e) \partCombineAutomatic
+	e) 
 	bes'\fp\>(
 % mesures 51 à 55
 	a4)\! r8
-	\partCombineApart d8( b g
+	d8( b g
 	d) r r
 	d'8(-> e16_\crescmarkup d b g
-	d8) r r \partCombineAutomatic
+	d8) r r 
 % mesures 56 à 60
 	R4.*10
 % mesures 61 à 65
 	
 % mesures 66 à 70
-	\partCombineApart e'4.( -\tweak X-offset #-3 \pp
+	e'4.(\pp
 	g->
 	fis
 	a->)
@@ -79,7 +79,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 % mesures 81 à 85
 	b\!~
 	b~ -\tweak X-offset #2 ^\morendo
-	b4 r8 \partCombineAutomatic
+	b4 r8 
 	R4.*12
 % mesures 86 à 90
 	
@@ -121,7 +121,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 % mesures 136 à 140
 	
 	
-	\partCombineApart bes!4_\ppp(-> g8) \partCombineAutomatic
+	bes!4_\ppp(-> g8) 
 	R4.*16
 % mesures 141 à 145
 	
@@ -132,10 +132,10 @@ MvtDeuxClarinettiAI = \relative c'' {
 	
 	
 	
-	\partCombineChords bes,4.(\fp\>
+	bes,4.(\fp\>
 % mesures 156 à 160
 	a)\!(
-	g8) \partCombineAutomatic r r
+	g8) r r
 	R4.*14
 % mesures 161 à 165
 	
@@ -143,8 +143,8 @@ MvtDeuxClarinettiAI = \relative c'' {
 	
 % mesures 171 à 175
 	
-	\partCombineApart d'16_(_\< fis a c_\> b a\!
-	g4) r8 \partCombineAutomatic \mark \default
+	d'16_(_\< fis a c_\> b a\!
+	g4) r8 \mark \default
 	fis4.\ff
 	g
 % mesures 176 à 180
@@ -160,14 +160,14 @@ MvtDeuxClarinettiAI = \relative c'' {
 	a8( b8.-> a16)
 	gis4.
 % mesures 186 à 190
-	\partCombineApart e( -\tweak X-offset #-3 \pp
+	e(\pp
 	f
 	e8 c a)
 	gis4.(->
-	a) \partCombineAutomatic
+	a) 
 % mesures 191 à 195
-	aes(
-	g)~
+	aes(\fp\>
+	g)~\!
 	g8 r r
 	d'4.->(
 	e8) r r
@@ -191,17 +191,17 @@ MvtDeuxClarinettiAI = \relative c'' {
 	
 	
 	
-	\partCombineApart c4. -\tweak X-offset #-2.4 \pp(
+	c4.\pp(
 % mesures 226 à 230
 	e->
 	d
 	f->)
 	e8(_\< g4
-	f8 a4)~
+	f8 a4)~\!
 % mesures 231 à 235
-	a16.(_\f\> g32 a16 g e c
+	a16.(_\f\> g32 a16 g e c\!
 	g'16.->_\p f32 g16 f d b
-	c8) r r \partCombineAutomatic
+	c8) r r 
 	R4.*3
 	
 % mesures 236 à 240
@@ -221,16 +221,16 @@ MvtDeuxClarinettiAI = \relative c'' {
 	c
 	bes8 d4
 	c8 ees4
-	ees16[ ees8 ees ees16~]
+	ees16[\ff ees8 ees ees16~]
 % mesures 251 à 255
 	ees[ ees8 ees ees16~]
-	ees4.~
-	ees
-	d16[ d8 d d16(]
+	ees4.~\>
+	ees\p
+	d16[\ff d8 d d16(]
 	fis)[ fis8 fis fis16(] \mark \default
 % mesures 256 à 260
-	g4.)(
-	ees)(
+	g4.)(\>
+	ees)(\fp\>
 	d16)_(\! fis a c b a)
 	ees4.(\fp\>
 	d4)\! r8
@@ -253,25 +253,25 @@ MvtDeuxClarinettiAI = \relative c'' {
 	
 	
 % mesures 276 à 280
-	\partCombineApart b4.(\pp\<
+	b4.(\pp\<
 	cis\!
 	d4\> c!16 a\!
 	b4 a16 fis
-	g4) r8 \partCombineAutomatic
+	g4) r8 
 % mesures 281 à 285
 	R4.*5
 % mesures 286 à 290
-	ges'4.(
+	ges'4.(\ppp
 	aes
-	ges8_\< ees ces
+	ges8_\< ees ces\!
 	des4._\>
 	ees4)\! r8
 % mesures 291 à 295
 	R4.*5
 % mesures 296 à 300
-	d!4.(
-	e!
-	d4 e8)
+	d!4.(\pp\<
+	e!\>
+	d4\! e8)
 	d4.~
 	d4 r8
 % mesures 301 à 305
@@ -282,7 +282,7 @@ MvtDeuxClarinettiAI = \relative c'' {
 	a4.(->
 % mesures 306 à 310
 	b8) r r
-	a4( b16 c)
+	a4(\> b16\! c)
 	b4.~
 	b(
 	d)~

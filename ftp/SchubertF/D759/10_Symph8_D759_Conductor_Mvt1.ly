@@ -105,7 +105,7 @@
 					}
 					\new Staff { 
 						\timeMvtI \nameStaffVIIIMvtI 
-						\musicTromboneIIImvtI 
+						\musicTromboneIIIMvtI 
 					}
 				>>
 			>>

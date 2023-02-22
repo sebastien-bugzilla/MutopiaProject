@@ -4,14 +4,14 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnTrombeEII = \relative c {
+musicTrombaIIMvtI = \relative c {
 	\clef treble
 	\key a \minor
 	\transposition e
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*26
+		R2.*26
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -21,22 +21,22 @@ MvtUnTrombeEII = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	    
-	    
-	    r4 r c'\fz
-	    c\fz r r
-	    R2.*5
+		
+		
+		r4 r c'\fz
+		c\fz r r
+		R2.*5
 % mesures 31 à 35
-	    
-	    
-	    
-	    
-	    r4 r r8 c'\ff
+		
+		
+		
+		
+		r4 r r8 c'\ff
 % mesures 36 à 40
-	    c4 r8 c c4
-	    r8 c c4 c8 c \mark \default
-	    g4\fz r r
-	    R2.*24
+		c4 r8 c c4
+		r8 c c4 c8 c \mark \default
+		g4\fz r r
+		R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -46,52 +46,52 @@ MvtUnTrombeEII = \relative c {
 % mesures 56 à 60
 	
 % mesures 61 à 65
-	    
-	    \mark \default
-	    R2.*8
+		
+		\mark \default
+		R2.*8
 % mesures 66 à 70
 	
 % mesures 71 à 75
-	    c,4\fz r r
-	    R2.*9
+		c,4\fz r r
+		R2.*9
 % mesures 76 à 80
 	
 % mesures 81 à 85
-	    c2.\fz
-	    c
-	    c\fz
-	    c
-	    r4 g2-\tweak X-offset #-2. \fz
+		c2.\fz
+		c
+		c\fz
+		c
+		r4 g2\fz
 % mesures 86 à 90
-	    r4 c2-\tweak X-offset #-3.1 \fz
-	    r4 g2-\tweak X-offset #-3.1 \fz
-	    R2.
-	    r4 g2 -\tweak X-offset #-3.1 \fz
-	    r4 c2-> -\tweak X-offset #-3.1 \fz
+		r4 c2\fz
+		r4 g2\fz
+		R2.
+		r4 g2\fz
+		r4 c2->\fz
 % mesures 91 à 95
-	    r4 c2->\fz
-	    R2. \mark \default
-	    g4 r r
-	    R2.*10
+		r4 c2->\fz
+		R2. \mark \default
+		g4 r r
+		R2.*10
 % mesures 96 à 100
 	
 % mesures 101 à 105
-	    
-	    
-	    
-	    r4 g2\ff\>~
-	    g2.~
+		
+		
+		
+		r4 g2\ff\>~
+		g2.~
 % mesures 106 à 110
-	    g4\pp r r
-	    R2.*3
+		g4\pp r r
+		R2.*3
 	}
 	\alternative {
-	    {
-	        R2.
-	    }
-	    {
-	        g2.\>~
-	    }
+		{
+			R2.
+		}
+		{
+			g2.\>~
+		}
 	}
 % mesures 111 à 115
 	g~\!
@@ -241,13 +241,13 @@ MvtUnTrombeEII = \relative c {
 % mesures 301 à 305
 	e2.\fz
 	r8 e4 e e8
-	g r g,2( -\tweak X-offset #-2.7 \fz
-	c8) r c2( -\tweak X-offset #-2.7 \fz
+	g r g,2(\fz
+	c8) r c2(\fz
 	g8) r g'2(\fz
 % mesures 306 à 310
 	c4) d-. d-.
-	g,8 r g,2 -\tweak X-offset #-2.7 \fz(
-	c8) r c2 -\tweak X-offset #-2.5 \fz(
+	g,8 r g,2\fz(
+	c8) r c2\fz(
 	e8) r e2(\fz
 	c'4) d-. d-. \mark \default
 % mesures 311 à 315
@@ -273,7 +273,7 @@ MvtUnTrombeEII = \relative c {
 	r4 g\< r
 	g r g\!
 	g g'\f g
-	g\< g g
+	g\< g g\!
 	g2.\ff
 % mesures 351 à 355
 	d'
@@ -283,14 +283,14 @@ MvtUnTrombeEII = \relative c {
 	
 % mesures 356 à 360
 	g,2.\mf\<~
-	g~
+	g~\!
 	g\>~
-	g~
+	g~\!
 	g\pp\<~
 % mesures 361 à 365
-	g~
+	g~\!
 	g\>~
-	g
+	g\!
 	g4\ff r r
 	c r r
 % mesures 366 à 368

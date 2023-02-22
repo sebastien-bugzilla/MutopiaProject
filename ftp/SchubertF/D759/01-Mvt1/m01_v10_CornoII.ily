@@ -4,133 +4,133 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnCorniDII = \relative c {
+musicCornoIIMvtI = \relative c {
 	\clef treble
 	\key a \minor
 	\transposition d
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*18
+		R2.*18
 % mesures 6 à 10
 	
 % mesures 11 à 15
 	
 % mesures 16 à 20
-	    
-	    
-	    
-	    
-	    r4 d''2\fz\>~
+		
+		
+		
+		
+		r4 d''2\fz\>~
 % mesures 21 à 25
-	    d2.\p
-	    R2.
-	    R
-	    R
-	    R
+		d2.\p
+		R2.
+		R
+		R
+		R
 % mesures 26 à 30
-	    r4 c2\p~
-	    c~_\crescmarkup c8( d)
-	    d2 d4\fz
-	    d\fz d2~
-	    d2.
+		r4 c2\p~
+		c~_\crescmarkup c8( d)
+		d2 d4\fz
+		d\fz d2~\fp\>
+		d2.\!
 % mesures 31 à 35
-	    r4 c2\p~
-	    c~ c8_\crescmarkup( d)
-	    d2~ d8( e)
-	    e2\f~ e8 e,
-	    e2~ e8 d'\ff
+		r4 c2\p~
+		c~ c8_\crescmarkup( d)
+		d2~ d8( e)
+		e2\f~ e8 e,
+		e2~ e8 d'\ff
 % mesures 36 à 40
-	    d2.~
-	    d \mark \default
-	    c4\fz c2\fp\>~
-	    c2.\!~
-	    c~
+		d2.~
+		d \mark \default
+		c4\fz c2\fp\>~
+		c2.\!~
+		c~
 % mesures 41 à 45
-	    c4( b c)
-	    c\pp r r
-	    R2.*10
+		c4( b c)
+		c\pp r r
+		R2.*10
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	    
-	    
-	    r4 r r8 c,8\pp~
-	    c c4 r8 r c~
-	    c c4 r8 r c~
+		
+		
+		r4 r r8 c,8\pp~
+		c c4 r8 r c~
+		c c4 r8 r c~
 % mesures 56 à 60
-	    c c4 r8 r c~
-	    c c4 r8 r c'~
-	    c c4 r8 r c~
-	    c c4 r8 r4
-	    R2.*3
+		c c4 r8 r c~
+		c c4 r8 r c'~
+		c c4 r8 r c~
+		c c4 r8 r4
+		R2.*3
 % mesures 61 à 65
-	    
-	    \mark \default
-	    f2.\ffz\>~
-	    f4\! r r
-	    c2.\fz\>~
+		
+		\mark \default
+		f2.\ffz\>~
+		f4\! r r
+		c2.\fz\>~
 % mesures 66 à 70
-	    c4\! r r
-	    f2.\fz\>~
-	    f4\! f\fz f\fz 
-	    f\fz_\crescmarkup f\fz f\fz 
-	    f\fz f\fz f\fz 
+		c4\! r r
+		f2.\fz\>~
+		f4\! f\fz f\fz 
+		f\fz_\crescmarkup f\fz f\fz 
+		f\fz f\fz f\fz 
 % mesures 71 à 75
-	    d\fz r r
-	    R2.*5
-	    
-	    
-	    
+		d\fz r r
+		R2.*5
+		
+		
+		
 % mesures 76 à 80
-	    
-	    d4\f r r
-	    d r r
-	    c r r
-	    c r r
+		
+		d4\f r r
+		d r r
+		c r r
+		c r r
 % mesures 81 à 85
-	    d2.\fz
-	    r8 d4 d d8
-	    d2.\fz
-	    r8 d4 d d8(
-	    c) r c2->-\tweak X-offset #-2. \fz(
+		d2.\fz
+		r8 d4 d d8
+		d2.\fz
+		r8 d4 d d8(
+		c) r c2->\fz(
 % mesures 86 à 90
-	    d8) r d2 -\tweak X-offset #-2. \fz->(
-	    c8) r c2-> -\tweak X-offset #-3. \fz(
-	    d4) c-. c-.
-	    c8 r c2->\fz(
-	    d8) r d2\fz->~
+		d8) r d2\fz->(
+		c8) r c2->\fz(
+		d4) c-. c-.
+		c8 r c2->\fz(
+		d8) r d2\fz->~
 % mesures 91 à 95
-	    d8 r c2->\fz(
-	    g4) c,-. c-. \mark \default
-	    c r r
-	    R2.*3
-	    
+		d8 r c2->\fz(
+		g4) c,-. c-. \mark \default
+		c r r
+		R2.*3
+		
 % mesures 96 à 100
-	    
-	    \clef bass c,,2.\p~
-	    c 
-	    R2.*3
-	    
+		
+		\clef bass c,,2.\p~
+		c 
+		R2.*3
+		
 % mesures 101 à 105
-	    \clef treble
-	    c''2.~\<
-	    c\>
-	    r4\! a'2\ff\>~
-	    a2.~
+		\clef treble
+		c''2.~\<
+		c\>
+		r4\! a'2\ff\>~
+		a2.~\!
 % mesures 106 à 110
-	    a\pp~
-	    a~
-	    a(
-	    e)\>~
+		a\pp~
+		a~
+		a(
+		e)\>~
 	}
 	\alternative {
-	    {
-	        e4\! r r
-	    }
-	    {
-	        a2.~\>
-	    }
+		{
+			e4\! r r
+		}
+		{
+			a2.~\>
+		}
 	}
 % mesures 111 à 115
 	a~\!
@@ -282,9 +282,9 @@ MvtUnCorniDII = \relative c {
 	e,4\fz g2\fp\>~
 	g2.\!~
 	g~
-	g4(\pp\< a g\>
+	g4(\pp\< a\> g\!
 % mesures 256 à 260
-	g)\! r r
+	g) r r
 	R2.*10
 % mesures 261 à 265
 	
@@ -380,24 +380,24 @@ MvtUnCorniDII = \relative c {
 	e r e\<
 	r e\! r
 	e c'\f c
-	c\< c c
+	c\< c c\!
 	c2.\ff
 % mesures 351 à 355
 	d
 	a\pp~
 	a~\<
 	a\>~
-	a
+	a\!
 % mesures 356 à 360
 	c\mf\<~
-	c(
+	c(\!
 	d)~\>
-	d
+	d\!
 	c\pp\<~
 % mesures 361 à 365
-	c(
+	c(\!
 	d)\>~
-	d
+	d\!
 	c4\ff r r
 	d r r
 % mesures 366 à 368

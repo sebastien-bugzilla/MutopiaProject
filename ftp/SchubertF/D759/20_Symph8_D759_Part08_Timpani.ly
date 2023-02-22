@@ -1,129 +1,96 @@
-%Fichier : /media/Documents/Partitions/lilypond/16-SchubertSymph8/00_SchubertSymphonie8_09_Timpani.ly
-%Fichier généré le :  samedi 2 février 2019, 13:30:07 (UTC+0100)
-%#######################################################################
-%#             G E N E R A L I T E S   E T   E N T E T E               #
-%#######################################################################
-\paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
-	%systems-per-page = #12
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { \fromproperty #'header:dedication }
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-%-----------------------------------------------------------------------
-globalMvtUn = {
-	\time 3/4
-	\tempo "Allegro moderato" 
-}
-%-----------------------------------------------------------------------
-globalMvtDeux = {
-	\time 3/8
-	\tempo "Andante con moto."
-}
-%-----------------------------------------------------------------------
-\include "00_SchubertSymphonie8_markup.ly"
-\include "00_SchubertSymphonie8_StaffOptionsV.ly"
-\include "01_SchubertSymphonie8_Mvt1_09_Timpani_V.ly"
-\include "01_Voice_part_formatting.ly"
-\include "02_SchubertSymphonie8_Mvt2_09_Timpani_V.ly"
-\include "02_Voice_part_formatting.ly"
-%#######################################################################
-%#       C O N S T R U C T I O N   D E   L A   P A R T I T I O N       #
-%#######################################################################
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Franz Schubert (1797 - 1828)
+%  work               : Symphony No. 8 in B Minor, D.759
+%  Source             : Franz Schubert's Werke, Serie I: Symphonien, No.8
+%                       Leipzig Breitkopf & Härtel, 1885. Plate F.S. 8. 
+%  Type of score      : Score for Timpani
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Sunday 12 February 2023, 19:55
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/Symph8_D759_Header.ily"
+\include "./00-Common/Symph8_D759_PaperParts.ily"
+\include "./00-Common/Symph8_D759_timeMvt.ily"
+\include "./00-Common/Symph8_D759_LayoutParts.ily"
+\include "./00-Common/Symph8_D759_Shortcuts.ily"
+%\include "./00-Common/Symph8_D759_NameStaff.ily"
+%\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
+%\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_Tempi.ily"
+\include "./01-Mvt1/m01_v16_Timpani.ily"
+\include "./02-Mvt2/m02_v16_Timpani.ily"
+%###############################################################################
+%#                          S C O R E   S E C T I O N                          #
+%###############################################################################
 \book{
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Franz Schubert"
-				"1797 - 1828"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Sinfonie Nr. 8 in h-moll"
-				"Die Unvollendete"
+				"Part for Timpani"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Timpani"
-			}
+		subsubtitle = \markup { 
+			"Franz Schubert — Symphony No. 8 in B Minor, D.759"
+		}
+		instrument = \markup {
+			"Timpani"
 		}
 	}
 	\score {
-		\new Staff << 
-		    \new Voice {
-		        \timpaniFormattingMvtI
-		    }
-		    \new Voice {
-		        \globalMvtUn \commonOptions \commonPartOptions
-		        \nameTimpaniV \MvtUnTimpaniEH
-		    }
+		\new Staff <<
+%			\new Voice {
+%				\fluteIFormattingMvtI
+%			}
+			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \musicTimpaniMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					I
 				}
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
-		\new Staff << 
-		    \new Voice {
-		        \timpaniFormattingMvtII
-		    }
-		    \new Voice {
-		        \globalMvtDeux \commonOptions \commonPartOptions
-		        \nameTimpaniV \MvtDeuxTimpaniEH 
-		    }
+		\new Staff <<
+%			\new Voice {
+%				\fluteIFormattingMvtII
+%			}
+			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \musicTimpaniMvtII
+			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\fill-line {
-					\fontsize #5
+					\fontsize #4
 					II
 				}
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 }

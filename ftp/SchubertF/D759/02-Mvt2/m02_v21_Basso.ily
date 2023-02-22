@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxBasso = \relative c {
+musicBassoMvtII = \relative c {
 	\clef bass
 	\key e \major
 % mesures 1 à 5
@@ -346,7 +346,7 @@ MvtDeuxBasso = \relative c {
 	
 	
 	
-	b8 -\tweak X-offset #-4 \pizz\pp r r
+	b8 -\tweak X-offset #-4 ^\pizz\pp r r
 	e r r
 % mesures 301 à 305
 	b r r

@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxTromboni_basso = \relative c' {
+musicTromboneIIIMvtII = \relative c' {
 	\clef bass
 	\key e \major
 % mesures 1 à 5

@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxVioloncello = \relative c {
+musicVioloncelloMvtII = \relative c {
 	\clef bass
 	\key e \major
 % mesures 1 à 5
@@ -341,7 +341,7 @@ MvtDeuxVioloncello = \relative c {
 	
 	
 	
-	b'8 -\tweak X-offset #-4 \pizz\pp r r
+	b'8 -\tweak X-offset #-4 ^\pizz\pp r r
 	e r r
 % mesures 301 à 305
 	b r r

@@ -218,7 +218,7 @@ musicClarinettoIIMvtI = \relative c {
 	R2.
 	gis,2.(\>
 	a2\! b4
-	a) a2
+	a) a2\fz
 	c\fz~ c8 d32\( e f g\)
 % mesures 186 à 190
 	a2. -\tweak X-offset #-1.5 \fz

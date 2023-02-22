@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxClarinettiAII = \relative c'' {
+musicClarinettoIIMvtII = \relative c'' {
 	\clef treble
 	\key g \major
 	\transposition a
@@ -283,5 +283,5 @@ MvtDeuxClarinettiAII = \relative c'' {
 	b)~
 % mesures 311 à 312
 	b~
-	b \bar "|."
+	b\espressivo \bar "|."
 }

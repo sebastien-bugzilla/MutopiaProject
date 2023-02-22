@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxTimpaniEH = \relative c {
+musicTimpaniMvtII = \relative c {
 	\clef bass
 	\key c \major
 % mesures 1 à 5

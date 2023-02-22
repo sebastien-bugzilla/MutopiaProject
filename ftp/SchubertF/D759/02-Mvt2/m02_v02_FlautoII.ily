@@ -261,8 +261,8 @@ musicFlautoIIMvtII = \relative c'' {
 	b4) r8
 	R4.
 % mesures 266 à 270
-	r8 a'16( gis fis a)
-	a8.( fis16 gis a
+	r8 a'16(\< gis fis a)\!
+	a8.(\> fis16\! gis a
 	gis8) r r
 	dis4.(
 	e

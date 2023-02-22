@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxOboeII = \relative c'' {
+musicOboeIIMvtII = \relative c'' {
 	\clef treble
 	\key e \major
 % mesures 1 à 5
@@ -120,9 +120,9 @@ MvtDeuxOboeII = \relative c'' {
 	
 	
 	
-	r8 b,8( c
+	r8 b,8(\p\> c
 % mesures 121 à 125
-	b4) r8
+	b4)\! r8
 	R4.*6
 	
 	
@@ -130,8 +130,8 @@ MvtDeuxOboeII = \relative c'' {
 % mesures 126 à 130
 	
 	
-	r8 e( f
-	e4) r8
+	r8 e(\> f
+	e4)\! r8
 	R4.
 % mesures 131 à 135
 	R
@@ -253,7 +253,7 @@ MvtDeuxOboeII = \relative c'' {
 	bes,) bes8 bes bes16(
 	a4.)\>~
 	a\p
-	a16 -\tweak X-offset #-3.5 \ff a8 a a16~
+	a16\ff a8 a a16~
 	a a8 a a16( \mark \default
 % mesures 256 à 260
 	gis4.)\>(
@@ -269,8 +269,8 @@ MvtDeuxOboeII = \relative c'' {
 	R4.
 % mesures 266 à 270
 	b4\< b8
-	cis4\>( b8)
-	gis4.\!(
+	cis4\>( b8)\!
+	gis4.(
 	a)(
 	gis
 % mesures 271 à 275

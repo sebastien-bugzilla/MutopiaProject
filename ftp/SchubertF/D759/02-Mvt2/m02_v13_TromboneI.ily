@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxTromboni_alto = \relative c' {
+musicTromboneIMvtII = \relative c' {
 	\clef tenor
 	\key e \major
 % mesures 1 à 5
@@ -62,10 +62,10 @@ MvtDeuxTromboni_alto = \relative c' {
 	e
 	dis
 	fis
-	e8 \partCombineApart gis,4
+	e8 gis,4
 % mesures 101 à 105
 	fis8 a4
-	gis8-. cis-. bis-. \partCombineAutomatic 
+	gis8-. cis-. bis-. 
 	cis r e\fz
 	r r e\fz
 	r r cis\fz
@@ -145,22 +145,22 @@ MvtDeuxTromboni_alto = \relative c' {
 	a
 	gis
 % mesures 241 à 245
-	\partCombineApart a8 e g~
-	g f4 \partCombineAutomatic
+	a8 e g~
+	g f4 
 	e8-. e-. dis-.
-	e r b -\tweak X-offset #-2.7 \fz
-	r r b -\tweak X-offset #-2.7 \fz
+	e r b\fz
+	r r b\fz
 % mesures 246 à 250
-	r r a -\tweak X-offset #-2.7 \fz
-	r r dis! -\tweak X-offset #-2.7 \fz
-	e d f -\tweak X-offset #-2.7 \fz
+	r r a\fz
+	r r dis!\fz
+	e d f\fz
 	r a-. e-.
-	e4. -\tweak X-offset #-3.8 \ff
+	e4.\ff
 % mesures 251 à 255
 	e
 	f8 r r
 	R4.
-	dis!4. -\tweak X-offset #-3.8 \ff
+	dis!4.\ff
 	dis \mark \default
 % mesures 256 à 260
 	e8 r r

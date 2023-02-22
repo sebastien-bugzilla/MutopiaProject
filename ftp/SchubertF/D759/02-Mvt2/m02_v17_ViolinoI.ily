@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxViolinoI = \relative c''' {
+musicViolinoIMvtII = \relative c''' {
 	\clef treble
 	\key e \major
 % mesures 1 à 5

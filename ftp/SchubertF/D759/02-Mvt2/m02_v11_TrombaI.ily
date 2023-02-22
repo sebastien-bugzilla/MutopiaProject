@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxTrombeEI = \relative c'' {
+musicTrombaIMvtII = \relative c'' {
 	\clef treble
 	\key c \major
 	\transposition e
@@ -27,10 +27,10 @@ MvtDeuxTrombeEI = \relative c'' {
 	g
 	g8 g4
 % mesures 36 à 40
-	g4. \partCombineApart
-	d' \partCombineAutomatic
+	g4. 
+	d' 
 	d
-	\partCombineApart d8 d4 \partCombineAutomatic
+	d8 d4 
 	g,4.
 % mesures 41 à 45
 	e
@@ -41,7 +41,7 @@ MvtDeuxTrombeEI = \relative c'' {
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	g4.( -\tweak X-offset #-2.2 \p
+	g4.(\p
 	e8) r r
 	R4.*43
 % mesures 56 à 60
@@ -66,13 +66,13 @@ MvtDeuxTrombeEI = \relative c'' {
 	\mark \default
 % mesures 96 à 100
 	e4.\ff
-	\partCombineApart e \partCombineAutomatic
+	e 
 	R4.
-	\partCombineApart e
+	e
 	e
 % mesures 101 à 105
-	\partCombineAutomatic r8 r \partCombineApart c~
-	c e-. e-. \partCombineAutomatic
+	r8 r c~
+	c e-. e-. 
 	r e4\fz
 	r8 e4\fz
 	r8 d'4\fz
@@ -80,8 +80,8 @@ MvtDeuxTrombeEI = \relative c'' {
 	r8 e,4\fz
 	r8 e4\fz
 	r8 d'-. c-.
-	\partCombineApart c,4.
-	c \partCombineAutomatic \mark \default
+	c,4.
+	c \mark \default
 % mesures 111 à 115
 	R4.*63
 % mesures 116 à 120
@@ -151,24 +151,24 @@ MvtDeuxTrombeEI = \relative c'' {
 	c
 	R4.
 	r8 g-. g-.
-	c8 c4 -\tweak X-offset #-2.7 \fz
-	r8 c4 -\tweak X-offset #-2.7 \fz
+	c8 c4\fz
+	r8 c4\fz
 % mesures 246 à 250
-	r8 c4 -\tweak X-offset #-2.7 \fz
-	r8 g4 -\tweak X-offset #-2.7 \fz
-	r8 g4 -\tweak X-offset #-2.7 \fz
+	r8 c4\fz
+	r8 g4\fz
+	r8 g4\fz
 	r8 c-. c-.
-	c4. -\tweak X-offset #-3.8 \ff
+	c4.\ff
 % mesures 251 à 255
 	c
 	R4.*2
 	
-	g4. -\tweak X-offset #-3.8 \ff
+	g4.\ff
 	g \mark \default
 % mesures 256 à 260
 	e8 r r
 	R4.
-	g4. -\tweak X-offset #-3.5 \pp(
+	g4.\pp(
 	c,8) r r
 	g'4.(
 % mesures 261 à 265

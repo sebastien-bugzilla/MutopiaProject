@@ -14,9 +14,17 @@ tempiMvtII = {
 %#                            T E M P I   P A R T S                            #
 %###############################################################################
 tempiPartMvtI = {
-	
+	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI
+		fagottoII cornoI cornoII trombaI trombaII tromboneI tromboneII 
+		tromboneIII timpani violinoI violinoII viola violoncello basso) {
+		\tempo "Allegro moderato"
+	}
 }
 tempiPartMvtII = {
-	
+	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI
+		fagottoII cornoI cornoII trombaI trombaII tromboneI tromboneII 
+		tromboneIII timpani violinoI violinoII viola violoncello basso) {
+		\tempo "Andante con moto"
+	}
 }
 

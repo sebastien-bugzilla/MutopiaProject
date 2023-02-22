@@ -4,134 +4,134 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnFagottiI = \relative c {
+musicFagottoIMvtI = \relative c {
 	\clef bass
 	\key b \minor
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
 % mesures 6 à 10
-	    R2.*18
+		R2.*18
 % mesures 11 à 15
 	
 % mesures 16 à 20
 	
 	
-	    
-	    
-	    r4 cis'2\fz\>~
+		
+		
+		r4 cis'2\fz\>~
 % mesures 21 à 25
-	    cis2.\p
-	    R2.*4
-	    
-	    
-	    
+		cis2.\p
+		R2.*4
+		
+		
+		
 % mesures 26 à 30
-	    a4( -\tweak X-offset #-2. \p b4. c8)
-	    c4( b4. d8)
-	    d4( cis!) cis\fz
-	    cis\fz cis2\fp\>~
-	    cis2.
+		a4(\p b4. c8)
+		c4( b4._\crescmarkup d8)
+		d4( cis!) cis\fz
+		cis\fz cis2\fp\>~
+		cis2.\!
 % mesures 31 à 35
-	    a4( -\tweak X-offset #-2. \p b4. c8)
-	    c4( b4. d8)
-	    d4( cis!4. e8)
-	    e4(-\tweak X-offset #-2. \f d4. e8)
-	    e4( d4.) cis8\ff
+		a4(\p b4. c8)
+		c4( b4._\crescmarkup d8)
+		d4( cis!4. e8)
+		e4(\f d4. e8)
+		e4( d4.) cis8\ff
 % mesures 36 à 40
-	    cis2.~
-	    cis \mark \default
-	    d4\fz \partCombineApart d2~
-	    d2.\!~ \clef tenor
-	    d~
+		cis2.~
+		cis \mark \default
+		d4\fz d2~\fp\>
+		d2.\!~ \clef tenor
+		d~
 % mesures 41 à 45
-	    \partCombineAutomatic d4( e a)
-	    g\pp r r
-	    R2.*10
+		d4( e a)
+		g\pp r r
+		R2.*10
 % mesures 46 à 50
 	
 % mesures 51 à 55
-	    
-	    
-	    \clef bass r8 d4(-.\pp d-. d8-.)
-	    r d4(-. d-. d8-.)
-	    r d4-.( d-. d8-.)
+		
+		
+		\clef bass r8 d4(-.\pp d-. d8-.)
+		r d4(-. d-. d8-.)
+		r d4-.( d-. d8-.)
 % mesures 56 à 60
-	    r d4(-. d-. d8-.)
-	    r d4(-. d-. d8-.)
-	    r e4-.( e-. e8-.)
-	    r e4-.( e-. e8-.)
-	    r e4-.(_\decresc e-. e8-.)\!
+		r d4(-. d-. d8-.)
+		r d4(-. d-. d8-.)
+		r e4-.( e-. e8-.)
+		r e4-.( e-. e8-.)
+		r e4-.(_\decresc e-. e8-.)\!
 % mesures 61 à 65
-	    r ees[( d)] d4-.( d8-.)
-	    R2. \mark \default
-	    g,2.\ffz\>~
-	    g4\! r r
-	    bes2.~\fz\>
+		r ees[( d)] d4-.( d8-.)
+		R2. \mark \default
+		g,2.\ffz\>~
+		g4\! r r
+		bes2.~\fz\>
 % mesures 66 à 70
-	    bes4\! r r
-	    bes2.\fz\>~
-	    bes4\! ees,\fz ees\fz 
-	    ees\fz_\crescmarkup ees\fz ees\fz 
-	    ees\fz ees\fz ees\fz 
+		bes4\! r r
+		bes2.\fz\>~
+		bes4\! ees,\fz ees\fz 
+		ees\fz_\crescmarkup ees\fz ees\fz 
+		ees\fz ees\fz ees\fz 
 % mesures 71 à 75
-	    e!8\fz \clef tenor bes''4\> bes bes8~
-	    bes bes4 bes r8\!
-	    R2.*4
-	    
-	    
+		e!8\fz \clef tenor bes''4\> bes bes8~
+		bes bes4 bes\! r8
+		R2.*4
+		
+		
 % mesures 76 à 80
-	    
-	    \clef bass \partCombineChords e,2.~
-	    e2( ees4)
-	    d2.~
-	    d
+		
+		\clef bass e,2.~\f
+		e2( ees4)
+		d2.~
+		d
 % mesures 81 à 85
-	    \partCombineAutomatic g,8.\ff-. a16-. bes8-.[ e,-. fis-. g-.]
-	    a4-. r r
-	    g8.-. a16-. bes8-.[ e,-. fis-. g-.]
-	    a4-. r8 a[-. g-. e-.]
-	    d8 r d2->-\tweak X-offset #-2. \fz(
+		g,8.\ff-. a16-. bes8-.[ e,-. fis-. g-.]
+		a4-. r r
+		g8.-. a16-. bes8-.[ e,-. fis-. g-.]
+		a4-. r8 a[-. g-. e-.]
+		d8 r d2->\fz(
 % mesures 86 à 90
-	    c8) r \partCombineChords e'2(->
-	    f8) r f2(->
-	    e4) b-. c-.
-	    b8 r \partCombineAutomatic g2(\fz->
-	    c,8) r e'2(\fz->
+		c8) r e'2(->\fz
+		f8) r f2(->\fz
+		e4) b-. c-.
+		b8 r g2(\fz->
+		c,8) r e'2(\fz->
 % mesures 91 à 95
-	    d8) r d2->\fz(
-	    c4) d-. d-. \mark \default
-	    d r r
-	    R2.*2
-	    
+		d8) r d2->\fz(
+		c4) d-. d-. \mark \default
+		d r r
+		R2.*2
+		
 % mesures 96 à 100
-	    r4 r r8 b(\p
-	    c8. d16 e2)
-	    d2.~
-	    d4 r r
-	    R2.*4
+		r4 r r8 b(\p\>
+		c8. d16 e2)\!
+		d2.~
+		d4 r r
+		R2.*4
 % mesures 101 à 105
-	    
-	    
-	    
-	    r4 b2\ff\>~
-	    b2.~
+		
+		
+		
+		r4 b2\ff\>~
+		b2.~\!
 % mesures 106 à 110
-	    b~\pp
-	    b~
-	    b^(
-	    ais)\>^(
+		b~\pp
+		b~
+		b^(
+		ais)\>^(
 	}
 	\alternative {
-	    {
-	        b4)\! r r
-	    }
-	    {
-	        a!2.~
-	    }
+		{
+			b4)\! r r
+		}
+		{
+			a!2.~\>
+		}
 	}
 % mesures 111 à 115
-	a~
+	a~\!
 	a~
 	a^(
 	g4) r r 
@@ -143,7 +143,7 @@ MvtUnFagottiI = \relative c {
 	
 	
 	e2.(\pp
-	fis2\< g4)
+	fis2\< g4)\!
 % mesures 126 à 130
 	b2.(\>
 	ais)\!
@@ -173,7 +173,7 @@ MvtUnFagottiI = \relative c {
 	e\!
 	cis\>~
 	cis\!
-	e,~
+	e,~\p
 % mesures 151 à 155
 	e(
 	dis)~
@@ -181,9 +181,9 @@ MvtUnFagottiI = \relative c {
 	gis'\ff\>~
 	gis\!
 % mesures 156 à 160
-	\partCombineApart f~
-	f
-	\partCombineAutomatic f,~
+	f~\>
+	f\!
+	f,~\p
 	f(
 	e)~
 % mesures 161 à 165
@@ -193,7 +193,7 @@ MvtUnFagottiI = \relative c {
 	bes\>~
 	bes\!
 % mesures 166 à 170
-	g~
+	g~\p
 	g(
 	fis)~
 	fis
@@ -211,13 +211,13 @@ MvtUnFagottiI = \relative c {
 	d2\! e4
 	d) r r
 % mesures 181 à 185
-	R2. \partCombineApart 
-	gis,2.(
-	a2 b4
+	R2. 
+	gis,2.(\>
+	a2\! b4
 	a) fis2\fz
 	e!4-. cis-. d-.
 % mesures 186 à 190
-	cis8.[  cis'16 cis8. cis16] \partCombineAutomatic cis8. cis16 
+	cis8.[  cis'16 cis8. cis16] cis8. cis16 
 	cis8.[ cis16 cis8. cis16] cis8. cis16 
 	b2.\fz
 	a4-. fis-. g-.
@@ -226,11 +226,11 @@ MvtUnFagottiI = \relative c {
 	cis
 	e\fz
 	d4-. b-. c-.
-	c2.(
-	b2 ais4)
+	c2.(\ffz\>
+	b2\! ais4)
 % mesures 196 à 200
-	c2.(
-	b2 ais4)
+	c2.(\fz\>
+	b2\! ais4)
 	R2.*4
 	
 	
@@ -263,10 +263,10 @@ MvtUnFagottiI = \relative c {
 	
 	
 	
-	\partCombineApart c2.~
-	c4( b2)(
+	c2.~\p\<
+	c4(\> b2)(\!
 % mesures 231 à 235
-	e,4) \partCombineAutomatic r r
+	e,4) r r
 	R2.*6
 % mesures 236 à 240
 	
@@ -275,23 +275,23 @@ MvtUnFagottiI = \relative c {
 	f4\>^( e2)\!
 	cis!4( d4. e8)
 % mesures 241 à 245
-	e4( d4. dis8)
+	e4( d4._\crescmarkup dis8)
 	dis4( e) cis4\f-.
-	d!-.\fz d4.( cis8
+	d!-.\fz d4.(\fp\> cis8\!
 	d4 cis2)
-	cis4( d4. e8)
+	cis4(\p d4. e8)
 % mesures 246 à 250
 	e4( d4. d8)
-	dis4( e4. gis8)
+	dis4( e4._\crescmarkup gis8)
 	gis4( fis4. gis8)
-	gis4( fis4.) \partCombineApartOnce gis8-.
+	gis4( fis4.) gis8-.\ff
 	gis2.~
 % mesures 251 à 255
 	gis \mark \default
 	fis4\fz a,2~\fp\>
 	a2.\!~
 	a~
-	a4\pp\<( b\> cis
+	a4\pp\<( b\> cis\!
 % mesures 256 à 260
 	d)\! r r
 	R2.*10
@@ -332,7 +332,7 @@ MvtUnFagottiI = \relative c {
 	
 	
 	
-	\clef tenor gis2.~
+	\clef tenor gis2.~\f
 % mesures 296 à 300
 	gis2( g4)
 	fis2.~
@@ -342,13 +342,13 @@ MvtUnFagottiI = \relative c {
 % mesures 301 à 305
 	b8.-. cis16-. d8-.[ gis,-. ais-. b-.]
 	cis4 r8 cis[-. b-. gis-.]
-	fis r \partCombineApart fis2(
-	e8) \partCombineAutomatic r \partCombineApart e2(
-	b8) \partCombineAutomatic r \partCombineApart dis'2(
+	fis r fis2(\fz
+	e8) r e2(\fz
+	b8) r dis'2(\fz
 % mesures 306 à 310
-	e4) \partCombineAutomatic dis-. e-.
-	dis8 r \partCombineApart b2(
-	e,8) \partCombineAutomatic r e2(\fz
+	e4) dis-. e-.
+	dis8 r b2(\fz
+	e,8) r e2(\fz
 	gis8) r gis2(\fz
 	cis,4) fis-. fis-. \mark \default
 % mesures 311 à 315
@@ -356,16 +356,16 @@ MvtUnFagottiI = \relative c {
 	R2.*2
 	
 	\clef tenor r4 r r8 dis'(\p
-	e8. fis16 gis2)
+	e8.\> fis16\! gis2)
 % mesures 316 à 320
 	fis2.~
 	fis4 r r
 	R2.
 	r4 r r8 dis( 
-	e8. fis16 gis2)
+	e8.\> fis16\! gis2)
 % mesures 321 à 325
 	fis2.~
-	fis8 r \clef bass b,2 -\tweak X-offset #-3.2 \ffz~
+	fis8 r \clef bass b,2\ffz~
 	b2.\p~
 	b\pp~
 	b~
@@ -379,7 +379,7 @@ MvtUnFagottiI = \relative c {
 	
 	
 	
-	b2.(
+	b2.(\pp
 	cis)(
 % mesures 336 à 340
 	b4) r r
@@ -391,30 +391,30 @@ MvtUnFagottiI = \relative c {
 	cis2.\>^(
 	b4)\! r r
 	cis2.^(\>
-	b4)\! r cis(->~
+	b4)\! r cis(->~_\crescmarkup
 	cis b) cis^(
 % mesures 346 à 350
 	b)(\< cis b
 	cis b cis\!
-	b) \partCombineApart d( b
-	fis d b) \partCombineAutomatic
-	fis'2.
+	b) d(\f b
+	fis\< d b)\! 
+	fis'2.\ff
 % mesures 351 à 355
 	e'
-	fis,~
+	fis,~\pp
 	fis_\<
 	g~_\>
-	g
+	g\!
 % mesures 356 à 360
 	fis~_\mf\<
-	fis(
+	fis(\!
 	g)~_\>
-	g(
+	g(\!
 	b)~_\pp_\<
 % mesures 361 à 365
-	b~
+	b~\!
 	b~_\>
-	b
+	b\!
 	d,4_\ff r r
 	fis r r
 % mesures 366 à 368

@@ -4,143 +4,143 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnClarinettiAI = \relative c {
+musicClarinettoIMvtI = \relative c {
 	\clef treble
 	\key d \minor
 	\transposition a
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*11
+		R2.*11
 % mesures 6 à 10
 	
 % mesures 11 à 15
-	    
-	    
-	    \partCombineApart a'''2.\pp(
-	    d,4. cis8[ d e])
-	    a2.(
+		
+		
+		a'''2.\pp(
+		d,4. cis8[ d e])
+		a2.(
 % mesures 16 à 20
-	    d,4. cis8[ d e])
-	    f2.(
-	    g4 aes4. g8)
-	    f4( e2
-	    f4) r r
+		d,4. cis8[ d e])
+		f2.(
+		g4\< aes4.\> g8)\!
+		f4( e2
+		f4) r r
 % mesures 21 à 25
-	    \partCombineAutomatic R2. \partCombineApart
-	    a2.(
-	    d,4. cis8[ d e])
-	    a2.( 
-	    d,4. cis8[ d e])
+		R2. 
+		a2.(
+		d,4. cis8[ d e])
+		a2.( 
+		d,4. cis8[ d e])
 % mesures 26 à 30
-	    \partCombineChords f4( d4. ees8)
-	    ees4( d4. d8)
-	    d4( e!) e\fz
-	    e\fz \partCombineAutomatic bes'4.( a8
-	    bes4 a2)
+		f4(\p d4. ees8)
+		ees4( d4._\crescmarkup d8)
+		d4( e!) e\fz
+		e\fz bes'4.(\fp\> a8
+		bes4\! a2)
 % mesures 31 à 35
-	    c,4( d4. ees8)
-	    ees4( d4. d8)
-	    d4( e!4. e8)
-	    e4(-\tweak X-offset #-2. \f f4. e8)
-	    e4( f4.) e8\ff
+		c,4(\p d4. ees8)
+		ees4( d4._\crescmarkup d8)
+		d4( e!4. e8)
+		e4(\f f4. e8)
+		e4( f4.) e8\ff
 % mesures 36 à 40
-	    e2.~
-	    e \mark \default
-	    f4\fz r r
-	    R2.*3
-	    
+		e2.~
+		e \mark \default
+		f4\fz r r
+		R2.*3
+		
 % mesures 41 à 45
-	    
-	    r8 f4(-.\pp f-. f8-.)
-	    r f4-.( f-. f8-.)
-	    r f4-.( f-. f8-.)
-	    r f4-.( f-. f8-.)
+		
+		r8 f4(-.\pp f-. f8-.)
+		r f4-.( f-. f8-.)
+		r f4-.( f-. f8-.)
+		r f4-.( f-. f8-.)
 % mesures 46 à 50
-	    r f4-.( f-. f8-.)
-	    r f4-.( f-. f8-.)
-	    r f4-.( f-. f8-.)
-	    r g4-.( g-. g8-.)
-	    r g4-.( g-. g8-.)
+		r f4-.( f-. f8-.)
+		r f4-.( f-. f8-.)
+		r f4-.( f-. f8-.)
+		r g4-.( g-. g8-.)
+		r g4-.( g-. g8-.)
 % mesures 51 à 55
-	    r g4-.( g-. g8-.)
-	    r ges([ f)] f4-.( f8-.)
-	    r f4-.( f-. f8-.)
-	    r f4-.( f-. f8-.)
-	    r f4-.( f-. f8-.)
+		r g4-.( g-. g8-.)
+		r ges([ f)] f4-.( f8-.)
+		r f4-.( f-. f8-.)
+		r f4-.( f-. f8-.)
+		r f4-.( f-. f8-.)
 % mesures 56 à 60
-	    r f4-.( f-. f8-.)
-	    r f4-.( f-. f8-.)
-	    r g4-.( g-. g8-.)
-	    r g4-.( g-. g8-.)
-	    r g4-.( g-. g8-.)
+		r f4-.( f-. f8-.)
+		r f4-.( f-. f8-.)
+		r g4-.( g-. g8-.)
+		r g4-.( g-. g8-.)
+		r g4-.(_\decresc g-.\! g8-.)
 % mesures 61 à 65
-	    r ges[( f]) f4-.( f8-.)
-	    \partCombineAutomatic R2. \mark \default
-	    bes,2.(
-	    ees,4)\! r r
-	    bes'2.(\fz\> 
+		r ges[( f]) f4-.( f8-.)
+		R2. \mark \default
+		bes,2.(\ffz\>
+		ees,4)\! r r
+		bes'2.(\fz\> 
 % mesures 66 à 70
-	    f4)\! r r
-	    bes2.(\fz\>
-	    ges4)\! e'!\fz e\fz
-	    e!\fz e\fz e\fz
-	    e!\fz e\fz e\fz
+		f4)\! r r
+		bes2.(\fz\>
+		ges4)\! e'!\fz e\fz
+		e!\fz e\fz e\fz
+		e!\fz e\fz e\fz
 % mesures 71 à 75
-	    e!8\fz des!4\> des des8~
-	    des des4 des\! des8(
-	    c2.)~
-	    c2( ces4)
-	    bes2.~
+		e!8\fz des!4\> des des8~
+		des des4 des\! des8(
+		c2.)~\p
+		c2( ces4)
+		bes2.~
 % mesures 76 à 80
-	    bes
-	    g'~
-	    g2( ges4)
-	    f2.~
-	    f
+		bes
+		g'~\f
+		g2( ges4)
+		f2.~
+		f
 % mesures 81 à 85
-	    e!\fz
-	    r8 e4 e e8
-	    e2.\fz
-	    r8 e4 e e8(
-	    f) r d2(
+		e!\fz
+		r8 e4 e e8
+		e2.\fz
+		r8 e4 e e8(
+		f) r d2(\fz
 % mesures 86 à 90
-	    ees8) r ees2(\fz->
-	    f8) r f2\fz(->
-	    g4) d-. c-.
-	    d8 r f2\fz->(
-	    g8) r ees2(\fz->
+		ees8) r ees2(\fz->
+		f8) r f2\fz(->
+		g4) d-. c-.
+		d8 r f2\fz->(
+		g8) r ees2(\fz->
 % mesures 91 à 95
-	    d8) r f2->(\fz
-	    ees4) d-. c-. \mark \default
-	    d r r
-	    R2.*7
-	    
+		d8) r f2->(\fz
+		ees4) d-. c-. \mark \default
+		d r r
+		R2.*7
+		
 % mesures 96 à 100
-	    
-	    
-	    
-	    
-	    
+		
+		
+		
+		
+		
 % mesures 101 à 105
-	    r4 r r8 d(\p\<
-	    ees8. f16 g2)\>
-	    f2.\!~
-	    f8 r d2~
-	    d2.~
+		r4 r r8 d(\p\<
+		ees8. f16\! g2)\>
+		f2.\!~
+		f8 r d2~\ff\>
+		d2.~\!
 % mesures 106 à 110
-	    d~
-	    d~
-	    d( \partCombineAutomatic
-	    a)~
+		d~\pp
+		d~
+		d( 
+		a)~\>
 	}
 	\alternative {
-	    {
-	        a4 r r
-	    }
-	    {
-	        a2.~
-	    }
+		{
+			a4\! r r
+		}
+		{
+			a2.~
+		}
 	}
 % mesures 111 à 115
 	a~
@@ -158,13 +158,13 @@ MvtUnClarinettiAI = \relative c {
 	
 	
 	
-	r4 r e-> -\tweak X-offset #-2.5 \fz~
+	r4 r e->\fz~
 	e r r
 % mesures 136 à 140
-	e2-> -\tweak X-offset #-2.5 \fz r4
-	r e2-> -\tweak X-offset #-2.5 \fz
-	r4 r e4-> -\tweak X-offset #-2.5 \fz~
-	e r e -\tweak X-offset #-2.5 \fz
+	e2-> r4
+	r e2->\fz
+	r4 r e4->\fz~
+	e r e\fz
 	r e\fz r
 % mesures 141 à 145
 	e\fz r e\fz
@@ -173,8 +173,8 @@ MvtUnClarinettiAI = \relative c {
 	e8 e e e e e 
 	e e e e g g
 % mesures 146 à 150
-	b2.(
-	g2)( e4)
+	b2.(\ff\>
+	g2)(\! e4)
 	b2.~\>
 	b\!~
 	b8\p g'4 g g8
@@ -192,7 +192,7 @@ MvtUnClarinettiAI = \relative c {
 	r8 g4 g g8
 % mesures 161 à 165
 	r8 g4 g g8
-	bes2.\ff\>~
+	bes2.\ff\>~ 
 	bes\!
 	des,\>~
 	des(\!
@@ -230,14 +230,14 @@ MvtUnClarinettiAI = \relative c {
 	cis4-. g-. a-.
 	bes-. g,2\fz
 	bes2\fz~ bes8 c32( d ees f)
-	g2.~
-	g
+	g2.~\ffz\>
+	g\!
 % mesures 196 à 200
-	g~
+	g~\fz\>
+	g\!
+	g~\pp
 	g
-	g~
-	g
-	g~ 
+	g~_\crescmarkup
 % mesures 201 à 205
 	g
 	f\ff
@@ -264,39 +264,39 @@ MvtUnClarinettiAI = \relative c {
 	
 % mesures 221 à 225
 	
-	\partCombineApart a'2.(\pp
+	a'2.(\pp
 	d,4. cis8[ d e])
 	a2.(
 	d,4. cis8[ d e])
 % mesures 226 à 230
 	f2.(
-	g4\< aes4.\> g8)
-	f4(\! e2) \partCombineAutomatic
+	g4\< aes4.\> g8)\!
+	f4( e2) 
 	R2.
 	R2.
 % mesures 231 à 235
-	\partCombineApart d2.(\p
+	d2.(\p
 	g,4. fis8[ g a])
 	d2.(
 	g,4. fis8[ g a)]
 	bes2.(
 % mesures 236 à 240
-	c4\< des4.\> c8)
-	bes4(\! a2) \partCombineAutomatic
-	c8( d! ees4. d8
-	ees4)( d2)
+	c4\< des4.\> c8)\!
+	bes4( a2) 
+	c8(\< d! ees4.\! d8
+	ees4)(\> d2)\!
 	c2.~
 % mesures 241 à 245
 	c2~ c8(_\crescmarkup d)
 	d2 e4-.\f
-	f\fz f4.( e8
-	f4 e2)
-	c2.~
+	f-.\fz f4.( e8
+	f4\fp\> e2)\!
+	c2.~\p
 % mesures 246 à 250
 	c2~ c8( d)
 	d2~ d8(_\crescmarkup e)
 	e2~ e8 e
-	e2~ e8[ gis]
+	e2~ e8[ gis]\ff
 	gis2.~
 % mesures 251 à 255
 	gis \mark \default
@@ -351,7 +351,7 @@ MvtUnClarinettiAI = \relative c {
 	e2( ees4)
 	d2.~
 	d
-	b'~
+	b'~\f
 % mesures 296 à 300
 	b2( bes4)
 	a2.~
@@ -361,7 +361,7 @@ MvtUnClarinettiAI = \relative c {
 % mesures 301 à 305
 	gis2.\fz
 	r8 gis4 gis gis8(
-	a) r d,2~
+	a) r d,2~\fz
 	d8 r d2\fz(
 	fis8) r fis2\fz(
 % mesures 306 à 310
@@ -377,14 +377,14 @@ MvtUnClarinettiAI = \relative c {
 	
 	
 % mesures 316 à 320
-	\partCombineApart
+	
 	d4(\p a4. d8)
 	cis8.( d16 e4. g8)
 	fis8.(_\< g16 a4.\! c!8)
-	b4.(_\> a8[ g fis])\!
+	b4.(_\> a8[\! g fis])
 % mesures 321 à 325
 	e2( a4
-	d,8) r \partCombineAutomatic d2~\ffz\>
+	d,8) r d2~\ffz\>
 	d2.~\p
 	d~\pp
 	d~
@@ -398,7 +398,7 @@ MvtUnClarinettiAI = \relative c {
 	
 	
 	
-	a2.~
+	a2.~\pp
 	a~
 % mesures 336 à 340
 	a4 r r
@@ -414,27 +414,27 @@ MvtUnClarinettiAI = \relative c {
 	e d) e->(
 % mesures 346 à 350
 	d)( e\< d
-	e d e
-	d)\! a -\tweak X-offset #-2. \f( d
+	e d e\!
+	d) a\f( d
 	f\< a d)\!
 	f,2.\ff
 % mesures 351 à 355
 	e
 	d(_\pp
-	e2_\< f4)
+	e2_\< f4)\!
 	d2.(_\>
 	e2\! f4)
 % mesures 356 à 360
-	f,2.~
-	f(
-	g)~
-	g(
-	a)~
+	f,2.~\mf\<
+	f(\!
+	g)~\>
+	g(\!
+	a)~\pp\<
 % mesures 361 à 365
-	a(
-	bes)~
-	bes
-	a4 r r
+	a(\!
+	bes)~\>
+	bes\!
+	a4\ff r r
 	cis r r
 % mesures 366 à 368
 	d r r

@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTromboneIIImvtI = \relative c {
+musicTromboneIIIMvtI = \relative c {
 	\clef bass
 	\key b \minor
 % mesures 1 à 5

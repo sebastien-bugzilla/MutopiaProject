@@ -4,14 +4,14 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnTrombeEI = \relative c {
+musicTrombaIMvtI = \relative c {
 	\clef treble
 	\key a \minor
 	\transposition e
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*26
+		R2.*26
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -21,22 +21,22 @@ MvtUnTrombeEI = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-	    
-	    
-	    r4 r c''\fz
-	    c\fz r r
-	    R2.*5
+		
+		
+		r4 r c''\fz
+		c\fz r r
+		R2.*5
 % mesures 31 à 35
-	    
-	    
-	    
-	    
-	    r4 r r8 d\ff
+		
+		
+		
+		
+		r4 r r8 d\ff
 % mesures 36 à 40
-	    d4 r8 d d4
-	    r8 d d4 d8 d \mark \default
-	    d4\fz r r
-	    R2.*24
+		d4 r8 d d4
+		r8 d d4 d8 d \mark \default
+		d4\fz r r
+		R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -46,52 +46,52 @@ MvtUnTrombeEI = \relative c {
 % mesures 56 à 60
 	
 % mesures 61 à 65
-	    
-	    \mark \default
-	    R2.*8
+		
+		\mark \default
+		R2.*8
 % mesures 66 à 70
 	
 % mesures 71 à 75
-	    \partCombineApartOnce c,4 r r
-	    R2.*9
+		c,4\fz r r
+		R2.*9
 % mesures 76 à 80
 	
 % mesures 81 à 85
-	    c2.\fz
-	    c
-	    c\fz
-	    c
-	    r4 g'2-\tweak X-offset #-2. \fz
+		c2.\fz
+		c
+		c\fz
+		c
+		r4 g'2\fz
 % mesures 86 à 90
-	    r4 \partCombineApartOnce c,2
-	    r4 g'2 -\tweak X-offset #-3.1 \fz
-	    R2.
-	    r4 g2 -\tweak X-offset #-3.1 \fz
-	    r4 \partCombineApartOnce c,2
+		r4 c,2\fz
+		r4 g'2\fz
+		R2.
+		r4 g2\fz
+		r4 c,2->\fz
 % mesures 91 à 95
-	    r4 c'2->\fz
-	    R2. \mark \default
-	    g4 r r
-	    R2.*10
+		r4 c'2->\fz
+		R2. \mark \default
+		g4 r r
+		R2.*10
 % mesures 96 à 100
 	
 % mesures 101 à 105
-	    
-	    
-	    
-	    r4 g2\ff\>~
-	    g2.~
+		
+		
+		
+		r4 g2\ff\>~
+		g2.~
 % mesures 106 à 110
-	    g4\pp r r
-	    R2.*3
+		g4\pp r r
+		R2.*3
 	}
 	\alternative {
-	    {
-	        R2.
-	    }
-	    {
-	        g2.\>~
-	    }
+		{
+			R2.
+		}
+		{
+			g2.\>~
+		}
 	}
 % mesures 111 à 115
 	g~\!
@@ -149,17 +149,17 @@ MvtUnTrombeEI = \relative c {
 % mesures 176 à 180
 	c4 r r
 	R2.
-	\partCombineApart d2.
-	d2 d4
-	\partCombineAutomatic d r r
+	d2.\>
+	d2\! d4
+	d r r
 % mesures 181 à 185
 	R2.*3
 	
 	
-	\partCombineApart d8.[ d16 d8. d16] d8. d16
+	d8.[ d16 d8. d16] d8. d16
 	d8.[ d16 d8. d16] d8. d16
 % mesures 186 à 190
-	d4 \partCombineAutomatic r r
+	d4 r r
 	R2.
 	g,8.[ g16 g8. g16] g8. g16
 	g8.[ g16 g8. g16] g8. g16
@@ -205,8 +205,8 @@ MvtUnTrombeEI = \relative c {
 	r4 r r8 g\ff
 	g2.~
 % mesures 251 à 255
-	g \mark \default
-	\partCombineApartOnce f4 r r
+	g\fz \mark \default
+	f4 r r
 	R2.*28
 % mesures 256 à 260
 	
@@ -241,17 +241,17 @@ MvtUnTrombeEI = \relative c {
 % mesures 301 à 305
 	g2.\fz
 	r8 g4 g g8
-	\partCombineApartOnce g r \partCombineApart g2(
-	c,8) \partCombineAutomatic r \partCombineApart e2(
-	g8) \partCombineAutomatic r \partCombineApart g2(
+	g r g2(\fz
+	c,8) r e2(\fz
+	g8) r g2(\fz
 % mesures 306 à 310
 	e'4) d-. d-.
-	d8 \partCombineAutomatic r \partCombineApart g,2(
-	c,8) \partCombineAutomatic r \partCombineApart e2~
-	e8 \partCombineAutomatic r \partCombineApart e2(
+	d8 r g,2(\fz
+	c,8) r e2~\fz
+	e8 r e2(\fz
 	c'4) d-. d-. \mark \default
 % mesures 311 à 315
-	d \partCombineAutomatic r r
+	d r r
 	R2.*10
 % mesures 316 à 320
 	
@@ -272,25 +272,25 @@ MvtUnTrombeEI = \relative c {
 % mesures 346 à 350
 	r4 g\< r
 	g r g\!
-	g \partCombineApart g g
-	g g g
-	d'2.
+	g g\f g
+	g\< g g\!
+	d'2.\ff
 % mesures 351 à 355
 	d
-	\partCombineAutomatic d4 r r
+	d4 r r
 	R2.*3
 	
 	
 % mesures 356 à 360
 	g,2.\mf\<~
-	g~
+	g~\!
 	g\>~
-	g~
+	g~\!
 	g\pp\<~
 % mesures 361 à 365
-	g~
+	g~\!
 	g\>~
-	g
+	g\!
 	g4\ff r r
 	d' r r
 % mesures 366 à 368

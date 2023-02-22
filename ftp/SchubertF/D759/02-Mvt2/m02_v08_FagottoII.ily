@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtDeuxFagottiII = \relative c' {
+musicFagottoIIMvtII = \relative c' {
 	\clef bass
 	\key e \major
 % mesures 1 à 5
@@ -112,9 +112,9 @@ MvtDeuxFagottiII = \relative c' {
 	
 	
 	r8 r g16(\p\< a
-	b4)(\> c8)
+	b4)(\> c8)\!
 % mesures 121 à 125
-	b4\! r8
+	b4 r8
 	R4.*5
 	
 	
@@ -122,8 +122,8 @@ MvtDeuxFagottiII = \relative c' {
 % mesures 126 à 130
 	
 	r8 r \clef tenor c16(\< d
-	e4)(\> f8
-	e4\!) r8
+	e4)(\> f8\!
+	e4) r8
 	R4.
 % mesures 131 à 135
 	R
@@ -237,12 +237,12 @@ MvtDeuxFagottiII = \relative c' {
 	c b-. fis'~
 	fis16 e g,8-. gis~
 	gis16 b a8-. c-.
-	c,32[ -\tweak X-offset #-3.5 \ff e g bes] c[ bes g e] c[ e g bes]
+	c,32[\ff e g bes] c[ bes g e] c[ e g bes]
 % mesures 251 à 255
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
 	R4.
-	b,!32[ -\tweak X-offset #-3.5 \ff dis! fis! a] b![ a fis dis] b[ dis fis a]
+	b,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8\> r r\!
@@ -257,7 +257,7 @@ MvtDeuxFagottiII = \relative c' {
 	a4-> b8~->
 	b\pp b4->
 % mesures 266 à 270
-	b4\< b8 \clef tenor
+	b4\< b8\! \clef tenor
 	dis4.\>( 
 	e8\!) r r
 	R4.*5
@@ -270,7 +270,7 @@ MvtDeuxFagottiII = \relative c' {
 	a)(
 % mesures 276 à 280
 	gis)(\<
-	cis)(
+	cis)(\!
 	b4)(\> a8
 	gis4\! a8
 	gis4) r8
@@ -294,8 +294,8 @@ MvtDeuxFagottiII = \relative c' {
 	a4.->(
 % mesures 306 à 310
 	gis8) r r
-	b4\>( b16 a)
-	gis4.~\!
+	b4\>( b16 a)\!
+	gis4.~
 	gis~
 	gis~
 % mesures 311 à 312

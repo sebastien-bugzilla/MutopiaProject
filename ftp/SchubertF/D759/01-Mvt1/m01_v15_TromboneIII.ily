@@ -4,38 +4,38 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-MvtUnTromboni_basso = \relative c {
+musicTromboneIIIMvtI = \relative c {
 	\clef bass
 	\key b \minor
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-	    R2.*18
+		R2.*18
 % mesures 6 à 10
 	
 % mesures 11 à 15
 	
 % mesures 16 à 20
-	    
-	    
-	    
-	    
-	    r4 fis,\fz r
+		
+		
+		
+		
+		r4 fis,\fz r
 % mesures 21 à 25
-	    R2.*7
+		R2.*7
 % mesures 26 à 30
-	    
-	    
-	    r4 r fis'\fz
-	    fis\fz r r
-	    R2.*6
+		
+		
+		r4 r fis'\fz
+		fis\fz r r
+		R2.*6
 % mesures 31 à 35
 	
 % mesures 36 à 40
-	    fis4 r fis
-	    r fis4. fis8 \mark \default
-	    b,4\fz r r
-	    R2.*24
+		fis4 r fis
+		r fis4. fis8 \mark \default
+		b,4\fz r r
+		R2.*24
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -45,65 +45,65 @@ MvtUnTromboni_basso = \relative c {
 % mesures 56 à 60
 	
 % mesures 61 à 65
-	    
-	    \mark \default
-	    c2.\ffz\>~
-	    c4\! r r
-	    d2.\fz\>~
+		
+		\mark \default
+		c2.\ffz\>~
+		c4\! r r
+		d2.\fz\>~
 % mesures 66 à 70
-	    d4\! r r
-	    ees2.\fz\>~
-	    ees4\! ees\fz ees\fz 
-	    ees\fz^\crescmarkup ees\fz ees\fz 
-	    ees\fz ees\fz ees\fz 
+		d4\! r r
+		ees2.\fz\>~
+		ees4\! ees\fz ees\fz 
+		ees\fz^\crescmarkup ees\fz ees\fz 
+		ees\fz ees\fz ees\fz 
 % mesures 71 à 75
-	    e!\fz r r
-	    R2.*5
-	    
-	    
-	    
+		e!\fz r r
+		R2.*5
+		
+		
+		
 % mesures 76 à 80
-	    
-	    gis4\f r r
-	    a r r
-	    fis r r
-	    g r r
+		
+		gis4\f r r
+		a r r
+		fis r r
+		g r r
 % mesures 81 à 85
-	    g,2\fz r4
-	    a2 r4
-	    g2\fz r4
-	    a2 r8 e'(
-	    d) r d2->\fz(
+		g,2\fz r4
+		a2 r4
+		g2\fz r4
+		a2 r8 e'(
+		d) r d2->\fz(
 % mesures 86 à 90
-	    c8) r c2\fz->(
-	    g8) r g2->( -\tweak X-offset #-3. \fz 
-	    c4) d-. d-.
-	    g,8 r g'2->\fz(
-	    c,8) r c2->(\fz
+		c8) r c2\fz->(
+		g8) r g2->( -\tweak X-offset #-3. \fz 
+		c4) d-. d-.
+		g,8 r g'2->\fz(
+		c,8) r c2->(\fz
 % mesures 91 à 95
-	    e8) r e2(->\f
-	    a,4) d-. d-. \mark \default
-	    g, r r
-	    R2.*10
+		e8) r e2(->\f
+		a,4) d-. d-. \mark \default
+		g, r r
+		R2.*10
 % mesures 96 à 100
 	
 % mesures 101 à 105
-	    
-	    
-	    
-	    r4 b2\ff\>~
-	    b2.~
+		
+		
+		
+		r4 b2\ff\>~
+		b2.~
 % mesures 106 à 110
-	    b4\pp r r
-	    R2.*3
+		b4\pp r r
+		R2.*3
 	}
 	\alternative {
-	    {
-	        R2.
-	    }
-	    {
-	        b2.\pp\>~
-	    }
+		{
+			R2.
+		}
+		{
+			b2.\pp\>~
+		}
 	}
 % mesures 111 à 115
 	b\!~

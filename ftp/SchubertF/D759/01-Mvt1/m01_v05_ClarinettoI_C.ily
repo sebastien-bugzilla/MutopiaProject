@@ -23,7 +23,7 @@ musicClarinettoIMvtI = \relative c {
 % mesures 16 à 20
 		d,4. cis8[ d e])
 		f2.(
-		g4 aes4. g8)
+		g4\< aes4.\> g8)\!
 		f4( e2
 		f4) r r
 % mesures 21 à 25
@@ -289,7 +289,7 @@ musicClarinettoIMvtI = \relative c {
 % mesures 241 à 245
 	c2~ c8(_\crescmarkup d)
 	d2 e4-.\f
-	f\fz f4.( e8
+	f-.\fz f4.( e8
 	f4 e2)
 	c2.~
 % mesures 246 à 250
