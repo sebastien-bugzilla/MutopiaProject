@@ -17,7 +17,7 @@ musicClarinettoIMvtI = \relative c {
 % mesures 11 à 15
 		
 		
-		\partCombineApart a'''2.\pp(
+		\partCombineApart a'''2.-\offset X-offset -1 \pp(
 		d,4. cis8[ d e])
 		a2.(
 % mesures 16 à 20
@@ -42,8 +42,8 @@ musicClarinettoIMvtI = \relative c {
 		c,4( d4. ees8)
 		ees4( d4. d8)
 		d4( e!4. e8)
-		e4(-\tweak X-offset #-2. \f f4. e8)
-		e4( f4.) e8\ff
+		e4(-\offset X-offset -1 \f f4. e8)
+		e4( f4.) e8-\tweak X-offset #0.5 \ff
 % mesures 36 à 40
 		e2.~
 		e \mark \default
@@ -73,22 +73,22 @@ musicClarinettoIMvtI = \relative c {
 		r f4-.( f-. f8-.)
 		r g4-.( g-. g8-.)
 		r g4-.( g-. g8-.)
-		r g4-.(_\decresc g-. g8-.)\!
+		r g4-.(-\tweak extra-offset #'(0 . 0.5) _\decrescmarkup g-.\! g8-.)
 % mesures 61 à 65
 		r ges[( f]) f4-.( f8-.)
 		\partCombineAutomatic R2. \mark \default
-		bes,2.(\ffz\>
+		\aIIEO #'(-3.3 . -2.8) bes,2.(\ffz\>
 		ees,4)\! r r
 		bes'2.(\fz\> 
 % mesures 66 à 70
 		f4)\! r r
-		bes2.(\fz\>
+		\hairpinShorten #'(0 . 5) bes2.(\fz\>
 		ges4)\! e'!\fz e\fz
 		e!\fz e\fz e\fz
 		e!\fz e\fz e\fz
 % mesures 71 à 75
 		e!8\fz des!4\> des des8~
-		des des4 des\! des8(
+		des des4 des\! \voiceTwo \noFlag des8^( \voiceOne
 		c2.)~ 
 		c2( ces4)
 		\partCombineChords bes2.^~
@@ -105,11 +105,11 @@ musicClarinettoIMvtI = \relative c {
 		r8 e4 e e8(
 		f) r \partCombineChords d2(
 % mesures 86 à 90
-		ees8) r ees2^(\fz->
+		ees8) r ees2^(-\tweak X-offset 0.5 \fz->
 		f8) r f2\fz^(->
 		g4) \partCombineAutomatic d-. c-.
-		d8 r f2\fz->^(
-		g8) r ees2^(\fz->
+		d8 r f2->^(
+		g8) r ees2^(->
 % mesures 91 à 95
 		d8) r f2->^(\fz
 		ees4) d-. c-. \mark \default
@@ -139,7 +139,7 @@ musicClarinettoIMvtI = \relative c {
 			a4 r r
 		}
 		{
-			\partCombineChords a2.~\repeatTie
+			\hairpinShorten #'(0 . 6) \partCombineChords a2.~\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -158,13 +158,13 @@ musicClarinettoIMvtI = \relative c {
 	
 	
 	
-	r4 r e-> -\tweak X-offset #-2.5 \fz~
+	r4 r e->-\tweak X-offset #0.5 \fz~
 	e r r
 % mesures 136 à 140
-	e2-> -\tweak X-offset #-2.5 \fz r4
-	r e2-> -\tweak X-offset #-2.5 \fz
-	r4 r e4-> -\tweak X-offset #-2.5 \fz~
-	e r e -\tweak X-offset #-2.5 \fz
+	e2->-\tweak X-offset #0.5  \fz r4
+	r e2->-\tweak X-offset #0.5  \fz
+	r4 r e4->-\tweak X-offset #0.5  \fz~
+	e r e-\tweak X-offset #0.5  \fz
 	r e\fz r
 % mesures 141 à 145
 	e\fz r e\fz
@@ -173,7 +173,7 @@ musicClarinettoIMvtI = \relative c {
 	e8 e e e e e 
 	e e e e g g
 % mesures 146 à 150
-	b2.(
+	\voiceTwo b2.^( \voiceOne
 	g2)( e4)
 	\partCombineApart b2.~
 	b~
@@ -192,7 +192,7 @@ musicClarinettoIMvtI = \relative c {
 	r8 g4 g g8
 % mesures 161 à 165
 	r8 g4 g g8
-	bes2.\ff\>~
+	\dynEO #'(0.8 . 1.5) \hairpinEO #'(0.8 . 1.5) bes2.\ff\>~
 	bes\!
 	\partCombineApart des,~
 	des(
@@ -201,31 +201,31 @@ musicClarinettoIMvtI = \relative c {
 	r bes4 bes bes8
 	r a4 a a8
 	r a4 a a8
-	g'2.\ff
+	g'2.-\tweak X-offset 0.5 \ff
 % mesures 171 à 175
 	a2-. bes4-.
 	g2.
 	f4-. d-. ees-.
-	d2.\fz
-	\afterGrace fis\fz\trill {e!16[ fis]} \mark \default
+	d2.-\tweak X-offset -1.5 -\tweak extra-offset #'(0 . 0.5) \fz
+	\dynEO #'(0.8 . 1.8) \afterGrace fis\fz\trill {e!16[ fis]} \mark \default
 % mesures 176 à 180
 	g4 r r
 	R2.
-	e2.(\>
+	\shape #'((0 . 0)(0 . -0.7)(0 . -0.7)(0 . -0.2)) Slur \hairpinShorten #'(1 . 0) e2.(\>
 	f2\! g4
 	f) r r
 % mesures 181 à 185
 	R2.
 	b,2.(\>
-	c2\! d4
-	c) a2\fz
-	c\fz~ c8 d32\( e f g\)
+	\stemOffset #-1 c2\! d4
+	c) \aIIXoffset #-3 \dynEO #'(-1.3 . 1.5) a2\fz
+	c-\tweak X-offset #0.2 \fz~ c8 d32\( e f g\)
 % mesures 186 à 190
-	a2. -\tweak X-offset #-1.5 \fz
+	a2. -\offset X-offset #-1.5 \fz
 	gis4-. d-. e-.
 	f-. d2\fz
 	f\fz~ f8 g32\( a bes c\)
-	d2.\f
+	\dynEO #'(0 . 2) d2.\f
 % mesures 191 à 195
 	cis4-. g-. a-.
 	bes-. g,2\fz
@@ -240,18 +240,18 @@ musicClarinettoIMvtI = \relative c {
 	g~ 
 % mesures 201 à 205
 	g
-	f\ff
-	e\fz
-	a\fp\>(
+	f-\tweak X-offset 0.2 \ff
+	e-\tweak X-offset 0.2 \fz
+	\dynEO #'(0.5 . 1.1) \hairpinEO #'(0.5 . 1) a\fp\>^(
 	e\!)
 % mesures 206 à 210
-	f\ff
-	e\fz
-	a\fp(
+	f-\tweak X-offset 0.3 \ff
+	e-\tweak X-offset 0.3 \fz
+	\dynEO #'(0.8 . 1.3) a\fp(
 	e)~
 	e4. d8[( e f]
 % mesures 211 à 215
-	e4._\decresc d8[\! e f]
+	e4._\decrescmarkup d8[\! e f]
 	e4. d8[ e f]
 	e2.)~
 	e\pp~
@@ -264,7 +264,7 @@ musicClarinettoIMvtI = \relative c {
 	
 % mesures 221 à 225
 	
-	\partCombineApart a'2.(\pp
+	\partCombineApart a'2.(-\offset X-offset -1.3 \pp
 	d,4. cis8[ d e])
 	a2.(
 	d,4. cis8[ d e])
@@ -275,7 +275,7 @@ musicClarinettoIMvtI = \relative c {
 	R2.
 	R2.
 % mesures 231 à 235
-	\partCombineApart d2.(\p
+	\partCombineApart d2.(-\offset X-offset -0.5 \p
 	g,4. fis8[ g a])
 	d2.(
 	g,4. fis8[ g a)]
@@ -287,14 +287,14 @@ musicClarinettoIMvtI = \relative c {
 	ees4)( d2)
 	c2.~
 % mesures 241 à 245
-	c2~ c8(_\crescmarkup d)
+	c2~ \markEO #'(-1 . 2.5) c8(_\crescmarkup d)
 	d2 e4-.\f
 	f-.\fz f4.( e8
 	f4 e2)
 	c2.~
 % mesures 246 à 250
 	c2~ c8( d)
-	d2~ d8(_\crescmarkup e)
+	d2~ d8(-\tweak extra-offset #'(0 . 2.2) _\crescmarkup e)
 	e2~ e8 e
 	e2~ e8[ gis]
 	gis2.~
@@ -329,7 +329,7 @@ musicClarinettoIMvtI = \relative c {
 	r d4 d d8
 	r des[( c]) c4 c8
 % mesures 276 à 280
-	r c4-._\decresc c-. c8-.\!
+	r c4-._\decrescmarkup c-. c8-.\!
 	r ces([-> bes]) bes4 bes8
 	r bes4 bes bes8
 	r a!4 a a8
@@ -339,15 +339,15 @@ musicClarinettoIMvtI = \relative c {
 	g,4)\! r r
 	d'2.(\ff\>
 	a4)\! r r
-	d2.(\fz\>
+	\hairpinShorten #'(0 . 7) d2.(\fz\>
 % mesures 286 à 290
-	bes4)\! d\fz d\fz 
-	d\fz d\fz d\fz 
-	d\fz d\fz d\fz 
-	d8\fz\> f4 f f8~\!
+	bes4)\! d-\tweak X-offset 0.3 \fz d-\tweak X-offset 0.3 \fz 
+	d-\tweak X-offset 0.3 \fz d-\tweak X-offset 0.3 \fz d-\tweak X-offset 0.3 \fz 
+	d-\tweak X-offset 0.3 \fz d-\tweak X-offset 0.3 \fz d-\tweak X-offset 0.3 \fz 
+	d8-\tweak X-offset 0.3 \fz\> f4 f f8~\!
 	f f4 f f8( 
 % mesures 291 à 295
-	e2.)~\p
+	e2.)~
 	e2( ees4)
 	d2.~
 	d
@@ -356,19 +356,19 @@ musicClarinettoIMvtI = \relative c {
 	b2( bes4)
 	a2.^(
 	a)
-	gis\fz
+	\dynEO #'(0.5 . 2) gis\fz
 	r8 gis4 gis gis8
 % mesures 301 à 305
-	gis2.\fz
+	\dynEO #'(0.5 . 2) gis2.\fz
 	r8 gis4 gis gis8(
 	a) r d,2(
-	d8) r d2\fz( 
-	fis8) r fis2\fz(
+	d8) r d2-\tweak X-offset 0.3 \fz( 
+	fis8) r fis2-\tweak X-offset 0.3 \fz(
 % mesures 306 à 310
 	g4) d-. e-.
-	d8 r fis2\fz(
-	g8) r d2\fz(
-	fis8) r fis2(\fz
+	d8 r fis2-\tweak X-offset 0.3 \fz(
+	g8) r d2-\tweak X-offset 0.3 \fz(
+	fis8) r fis2(-\tweak X-offset 0.3 \fz
 	e4) fis-. e-. \mark \default
 % mesures 311 à 315
 	fis r r
@@ -378,10 +378,10 @@ musicClarinettoIMvtI = \relative c {
 	
 % mesures 316 à 320
 	\partCombineApart
-	d4(\p a4. d8)
+	d4(-\offset X-offset -1 \p a4. d8)
 	cis8.( d16 e4. g8)
-	fis8.(_\< g16 a4.\! c!8)
-	b4.(_\> a8[\! g fis])
+	\shape #'((0 . 0)(0 . -0.8)(0 . -0.8)(0 . -0.5)) Slur fis8.(_\< g16 a4.\! c!8)
+	\shape #'((0 . -0.8)(0 . -0.8)(0 . -0.8)(0 . 0)) Slur b4.(_\> a8[\! g fis])
 % mesures 321 à 325
 	e2( a4
 	d,8) r \partCombineUnisono d2~\ffz\>
@@ -413,17 +413,17 @@ musicClarinettoIMvtI = \relative c {
 	d4\)\! r e\(->_\crescmarkup~
 	e d\) e->\(
 % mesures 346 à 350
-	d\)\( e\< d
+	\shape #'( ((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) () ) PhrasingSlur d\)\( e\< d
 	e d e\!
-	d\) a\f( d
-	f\< a d)\!
+	d\) a-\tweak X-offset -1 \f( d
+	\hairpinShorten #'(1 . 0) f\< a d)\!
 	f,2.\ff
 % mesures 351 à 355
 	e
 	\partCombineApart d(_\pp
-	e2_\< f4)\!
-	<< d2.( {s4_\> s s\!}>>
-	e2 f4) \partCombineChords
+	\hairpinShorten #'(0 . 6) e2_\< f4)
+	\hairpinShorten #'(-1 . 4) d2.(\> 
+	e2\! f4) \partCombineChords
 % mesures 356 à 360
 	f,2.~
 	f(

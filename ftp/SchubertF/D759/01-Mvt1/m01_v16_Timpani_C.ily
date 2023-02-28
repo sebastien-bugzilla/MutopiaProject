@@ -86,7 +86,7 @@ musicTimpaniMvtI = \relative c {
 			R2.
 		}
 		{
-			b2.:16\pp\>
+			\hairpinShorten #'(0 . 6) b2.:16\pp\>
 		}
 	}
 % mesures 111 à 115
@@ -207,7 +207,7 @@ musicTimpaniMvtI = \relative c {
 	b4\! r r
 	b2.:32\ff\>
 	b4\! r r
-	b2.:32\fz\>
+	\hairpinShorten #'(0 . 7) b2.:32\fz\>
 % mesures 286 à 290
 	b4\! b\fz b\fz 
 	b\fz b\fz b\fz 
@@ -264,7 +264,7 @@ musicTimpaniMvtI = \relative c {
 	b:
 	b4 b\f b
 	b\< b b\!
-	f'\ff r r
+	\dynEO #'(0.8 . 1) f'\ff r r
 % mesures 351 à 355
 	f r r
 	b, r r

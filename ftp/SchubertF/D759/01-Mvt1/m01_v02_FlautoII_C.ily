@@ -22,19 +22,19 @@ musicFlautoIIMvtI = \relative c {
 % mesures 26 à 30
 		R2.
 		R2.
-		r4 r e'''\fz
-		e\fz r r
+		r4 r \dynEO #'(0 . 2) e'''\fz
+		\dynEO #'(0 . 2) e\fz r r
 		R2.*2
 % mesures 31 à 35
 		
-		r4 r_\crescmarkup r8 d,
-		d4( cis4. e8)
-		e4( -\tweak X-offset #-2. \f d4. e'8)
-		e4( d4.) e8\ff
+		r4 r-\offset X-offset 7 _\crescmarkup r8 d,
+		\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0.5)) Slur d4( cis4. e8)
+		e4( -\offset X-offset #-2. \f d4. e'8)
+		e4( d4.) \dynEO #'(0 . 2) e8\ff
 % mesures 36 à 40
 		e2.~
 		e \mark \default
-		d4\fz r r
+		\dynEO #'(0 . 2) d4\fz r r
 		R2.*24
 % mesures 41 à 45
 	
@@ -54,7 +54,7 @@ musicFlautoIIMvtI = \relative c {
 		d4)\! r r
 		g2.(\fz\>
 		ees4)\! cis''!4\fz cis\fz
-		cis_\crescmarkup\fz cis\fz cis\fz
+		cis-\tweak extra-offset #'(0 . 2.5) _\crescmarkup\fz cis\fz cis\fz
 		cis\fz cis\fz cis\fz
 % mesures 71 à 75
 		cis8\fz g4\> g g8~
@@ -64,7 +64,7 @@ musicFlautoIIMvtI = \relative c {
 		f_(
 % mesures 76 à 80
 		e)
-		d'\f(
+		\dynEO #'(0 . 2) d'\f( 
 		c)
 		c_(
 		b)
@@ -109,7 +109,7 @@ musicFlautoIIMvtI = \relative c {
 			fis4)\! r r
 		}
 		{
-			<< a!2._( { s4\> s s\! } >>
+			a!2._(\>\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -139,7 +139,7 @@ musicFlautoIIMvtI = \relative c {
 	e( g fis)
 	e( g) e'-.
 % mesures 146 à 150
-	e2.\ff\>~
+	\dynEO #'(0 . 2) \hairpinEO #'(0 . 2) e2.\ff\>~
 	e2(\! cis4)
 	gis2.(\>
 	e2\! cis4)
@@ -148,7 +148,7 @@ musicFlautoIIMvtI = \relative c {
 	r8 cis4 cis cis8
 	r8 cis4 cis cis8
 	r bis4 bis bis8
-	f''2.\ff\>~
+	\dynEO #'(0 . 2) \hairpinEO #'(0 . 2) f''2.\ff\>~
 	f2(\! d4)
 % mesures 156 à 160
 	gis,2.(\>
@@ -158,7 +158,7 @@ musicFlautoIIMvtI = \relative c {
 	r8 d4 d d8
 % mesures 161 à 165
 	r8 cis4 cis cis8
-	g'2.\ff\>~
+	\dynEO #'(0.5 . 2) \hairpinEO #'(0.5 . 2) g'2.\ff\>~
 	g2\! e4
 	bes2.(\>
 	g2\! e4)
@@ -201,13 +201,13 @@ musicFlautoIIMvtI = \relative c {
 % mesures 196 à 200
 	c2.(\fz\>
 	b2\! ais4)
-	cis!2.\pp(
+	\dynEO #'(-0.5 . 1.8) cis!2.\pp(
 	b2 ais4)
-	cis2.(_\crescmarkup
+	\markEO #'(-1 . 1) cis2.(_\crescmarkup
 % mesures 201 à 205
 	b2 bes4)
-	fis'2.\ff
-	cis\fz
+	\dynEO #'(0 . 1.8) fis'2.\ff
+	\dynEO #'(0 . 1.8) cis\fz
 	d4 r r
 	R2.
 % mesures 206 à 210
@@ -238,11 +238,11 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	
-	e,2.\p\<~ 
-	e2\>( dis4\!
+	\hairpinShorten #'(7 . 0) \dynEO #'(0 . 1.5) e,2.\p\<~ 
+	\hairpinShorten #'(0 . 10) e2\>( dis4\!
 % mesures 231 à 235
 	e4) r r
-	b2~( b8 c
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur b2~( b8 c
 	b4) r r
 	b2~( b8 c 
 	b4) r r
@@ -250,7 +250,7 @@ musicFlautoIIMvtI = \relative c {
 	R2.
 	R2.
 	a'2.\<(~
-	a2\> gis4)\!
+	\hairpinShorten #'(0 . 9) a2\> gis4)\!
 	R2.
 % mesures 241 à 245
 	r4 r fis8(_\crescmarkup a)
@@ -262,11 +262,11 @@ musicFlautoIIMvtI = \relative c {
 	r4 r fis8\p( a)
 	a4( g4. b8)
 	b4( a4. b8)
-	b4( a4.) cis8-.\ff
+	b4( a4.) \dynEO #'(0 . 1.5) cis8-.\ff
 	cis2.~
 % mesures 251 à 255
 	cis \mark \default
-	cis4\fz r r
+	\dynEO #'(0 . 2) cis4\fz r r
 	R2.*3
 	
 	
@@ -301,11 +301,11 @@ musicFlautoIIMvtI = \relative c {
 	
 	\mark \default
 % mesures 281 à 285
-	b,2.\ff\>(
+	b,2.-\tweak X-offset 0.3 \ff\>(
 	e,4)\! r r
-	b'2.(\ff\>
+	b'2.(-\tweak X-offset 0.3 \ff\>
 	fis4)\! r r
-	b2.(\fz\>
+	b2.(-\tweak X-offset 0.3 \fz\>
 % mesures 286 à 290
 	g4)\! b'\fz b\fz 
 	b\fz b\fz b\fz 
@@ -317,7 +317,7 @@ musicFlautoIIMvtI = \relative c {
 	a)~
 	a(
 	gis)
-	fis'\f(
+	\dynEO #'(0 . 2) fis'\f(
 % mesures 296 à 300
 	e)
 	e(
@@ -332,9 +332,9 @@ musicFlautoIIMvtI = \relative c {
 	fis8) r fis2\fz_(
 % mesures 306 à 310
 	e4) dis-. e-.
-	dis8 r dis2_(\fz
-	e8) r e2_(\fz
-	dis8) r dis2_(\fz
+	dis8 r \dynEO #'(0.5 . 2) dis2_(\fz
+	e8) r \dynEO #'(0.5 . 2) e2_(\fz
+	dis8) r \dynEO #'(0.5 . 2) dis2_(\fz
 	cis4) dis-. cis-. \mark \default
 % mesures 311 à 315
 	b r r
@@ -345,7 +345,7 @@ musicFlautoIIMvtI = \relative c {
 % mesures 316 à 320
 	R2.
 	R2.
-	cis4(\p fis,4. cis'8)
+	\dynEO #'(-1.5 . 1.5) cis4(\p fis,4. cis'8)
 	b8.(\< cis16 dis!4.\! fis8)
 	fis4(\> e8[\! dis cis b])
 % mesures 321 à 325
@@ -364,7 +364,7 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	
-	fis2. -\tweak X-offset #-3. \pp~
+	fis2.-\offset X-offset 1.3 \pp~
 	fis~
 % mesures 336 à 340
 	fis4 r r

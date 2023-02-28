@@ -21,7 +21,7 @@
 \include "./00-Common/Symph8_D759_Shortcuts.ily"
 \include "./00-Common/Symph8_D759_NameStaff.ily"
 \include "./00-Common/Symph8_D759_NameGrandStaff.ily"
-%\include "./00-Common/Symph8_D759_Format_Cond_Mvt1.ily"
+\include "./00-Common/Symph8_D759_Format_Cond_Mvt1.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v01_FlautoI_C.ily"
 \include "./01-Mvt1/m01_v02_FlautoII_C.ily"
@@ -68,9 +68,9 @@
 					\new Voice {
 						\tempiMvtI
 					}
-%					\new Voice {
-%						\conductorFormattingMvtI
-%					}
+					\new Voice {
+						\formatConductorMvtI
+					}
 					\new Voice {
 						\timeMvtI \nameStaffIMvtI
 						\partCombine \musicFlautoIMvtI \musicFlautoIIMvtI
@@ -145,7 +145,6 @@
 		}
 		\layout {
 			\layoutTemp
-			%system-count = #20
 		}
 	}
 }

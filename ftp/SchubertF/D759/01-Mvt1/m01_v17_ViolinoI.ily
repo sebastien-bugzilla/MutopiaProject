@@ -343,7 +343,7 @@ musicViolinoIMvtI = \relative c {
 	g,4:32\fz\> b: d:\!
 % mesures 286 à 290
 	g: b: d:
-	eis: fis: g:
+	eis:_\crescmarkup fis: g:
 	ais: b: cis:
 	d4\fz r r
 	R2.*2

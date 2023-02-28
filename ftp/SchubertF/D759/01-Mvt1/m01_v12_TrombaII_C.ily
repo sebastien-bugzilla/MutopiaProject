@@ -35,7 +35,7 @@ musicTrombaIIMvtI = \relative c {
 % mesures 36 à 40
 		c4 r8 c c4
 		r8 c c4 c8 c \mark \default
-		g4\fz r r
+		g4-\tweak X-offset 0.5 \fz r r
 		R2.*24
 % mesures 41 à 45
 	
@@ -52,7 +52,7 @@ musicTrombaIIMvtI = \relative c {
 % mesures 66 à 70
 	
 % mesures 71 à 75
-		c,4\fz r r
+		c,4-\offset X-offset 0.5 \fz r r
 		R2.*9
 % mesures 76 à 80
 	
@@ -61,13 +61,13 @@ musicTrombaIIMvtI = \relative c {
 		c
 		c\fz
 		c
-		r4 g2-\tweak X-offset #-2. \fz
+		r4 g2-\tweak extra-offset #'(1 . 0.8) \fz
 % mesures 86 à 90
-		r4 c2-\tweak X-offset #-3.1 \fz
-		r4 g2-\tweak X-offset #-3.1 \fz
+		r4 c2-\offset X-offset #0.7 \fz
+		r4 g2-\tweak extra-offset #'(1 . 0.8) \fz
 		R2.
-		r4 g2 -\tweak X-offset #-3.1 \fz
-		r4 c2 -\tweak X-offset #-3.1 \fz
+		r4 g2 -\tweak X-offset #-2 \fz
+		r4 c2 -\offset X-offset #0.7 \fz
 % mesures 91 à 95
 		r4 c2^>\fz
 		R2. \mark \default
@@ -79,10 +79,10 @@ musicTrombaIIMvtI = \relative c {
 		
 		
 		
-		r4 g2\ff\>~
+		r4 g2-\tweak X-offset -1.2 \ff\>~
 		g2.~
 % mesures 106 à 110
-		g4\pp r r
+		g4-\tweak extra-offset #'(0.5 . 0.8) \pp r r
 		R2.*3
 	}
 	\alternative {
@@ -121,7 +121,7 @@ musicTrombaIIMvtI = \relative c {
 	
 	
 	
-	g2.\ff\>~
+	g2.-\tweak extra-offset #'(-1.2 . 0.6) \ff-\tweak extra-offset #'(-1 . 0.5) \>~
 	g\!
 % mesures 156 à 160
 	R2.*6
@@ -131,7 +131,7 @@ musicTrombaIIMvtI = \relative c {
 	
 % mesures 161 à 165
 	
-	c2.\ff\>~
+	c2.-\tweak extra-offset #'(-1 . 0.5) \ff-\tweak extra-offset #'(-1 . 0.5) \>~
 	c\!
 	R2.*6
 % mesures 166 à 170
@@ -144,8 +144,8 @@ musicTrombaIIMvtI = \relative c {
 	c
 	c
 	c4 c c
-	g2.\fz
-	g\fz \mark \default
+	g2.-\tweak extra-offset #'(-0.5 . 0.3) \fz
+	g-\tweak extra-offset #'(-0.5 . 0.3) \fz \mark \default
 % mesures 176 à 180
 	c4 r r
 	R2.
@@ -206,7 +206,7 @@ musicTrombaIIMvtI = \relative c {
 	e2.~
 % mesures 251 à 255
 	e \mark \default
-	f4\fz r r
+	f4-\offset X-offset 0.7 \fz r r
 	R2.*28
 % mesures 256 à 260
 	
@@ -241,14 +241,14 @@ musicTrombaIIMvtI = \relative c {
 % mesures 301 à 305
 	e2.\fz
 	r8 e4 e e8
-	g r g,2( -\tweak X-offset #-2.7 \fz
-	c8) r c2( -\tweak X-offset #-2.7 \fz
-	g8) r g'2(\fz
+	g r g,2( -\offset X-offset 0.5 \fz
+	c8) r c2( -\offset X-offset 0.4 \fz
+	g8) r g'2(-\tweak X-offset 0.3 \fz
 % mesures 306 à 310
 	c4) d d
-	g,8 r g,2 -\tweak X-offset #-2.7 \fz(
-	c8) r c2 -\tweak X-offset #-2.5 \fz(
-	e8) r e2(\fz
+	g,8 r g,2 -\offset X-offset 0.5 \fz(
+	c8) r c2 -\offset X-offset 0.5 \fz(
+	e8) r e2(-\tweak X-offset 0.3 \fz
 	c'4) d d \mark \default
 % mesures 311 à 315
 	g, r r
@@ -274,7 +274,7 @@ musicTrombaIIMvtI = \relative c {
 	g r g\!
 	g g'\f g
 	g\< g g\!
-	g2.\ff
+	g2.-\offset X-offset 0.8 \ff
 % mesures 351 à 355
 	d'
 	g,4 r r
@@ -282,7 +282,7 @@ musicTrombaIIMvtI = \relative c {
 	
 	
 % mesures 356 à 360
-	g,2.\mf\<~
+	g,2.-\tweak X-offset -2 \mf\<~
 	g~\!
 	g\>~
 	g~\!

@@ -33,10 +33,10 @@ musicCornoIMvtI = \relative c {
 		c~ c8( d)
 		d2 e4
 		f f4.(_\fp_\> e8
-		f4 e2)\!
+		f4\! e2)
 % mesures 31 à 35
 		\partCombineAutomatic r4 c2\p~
-		c~ c8_\crescmarkup( d)
+		c~ c8-\offset X-offset -6 _\crescmarkup( d)
 		d2~ d8( e)
 		\partCombineApart e2~ e8 e \partCombineAutomatic
 		e2~ e8 e\ff
@@ -55,29 +55,29 @@ musicCornoIMvtI = \relative c {
 % mesures 51 à 55
 		
 		
-		r4 r r8 c8\pp~
+		r4 r r8 c8-\tweak X-offset -2.2 \pp~
 		c c4 r8 r c~
 		c c4 r8 r c~
 % mesures 56 à 60
 		c c4 r8 r c~
 		c c4 r8 r \partCombineApart c~
-		c \partCombineAutomatic d4  r8 r d~
+		c \partCombineAutomatic d4 r8 r d~
 		d d4 r8 r4 
 		R2.*3
 % mesures 61 à 65
 		
 		\mark \default
-		f2.\ffz\>~
+		\aIIXoffset #-3 f2.\ffz\>~
 		f4\! r r
 		c2.\fz\>~
 % mesures 66 à 70
 		c4\! r r
-		f2.\fz\>~
+		\hairpinShorten #'(0 . 5) f2.\fz\>~
 		f4\! f\fz f\fz 
-		f\fz_\crescmarkup f\fz f\fz 
-		f\fz f\fz f\fz 
+		\dynEO #'(0.6 . 1.5) f\fz-\tweak extra-offset #'(0 . 1.5) _\crescmarkup \dynEO #'(0.6 . 1.5) f\fz \dynEO #'(0.6 . 1.5) f\fz 
+		\dynEO #'(0.6 . 1.5) f\fz \dynEO #'(0.6 . 1.5) f\fz \dynEO #'(0.6 . 1.5) f\fz 
 % mesures 71 à 75
-		f\fz r r
+		\dynEO #'(0.6 . 1.5) f\fz r r
 		R2.*5
 		
 		
@@ -89,7 +89,7 @@ musicCornoIMvtI = \relative c {
 		c r r
 		c r r
 % mesures 81 à 85
-		f2.\fz
+		\dynEO #'(0.7 . 1) f2.\fz
 		r8 f4 f f8
 		f2.\fz
 		r8 f4 f f8^(
@@ -99,9 +99,9 @@ musicCornoIMvtI = \relative c {
 		f8) r f2^(
 		f4) \partCombineApart c-. c-. 
 		c8 \partCombineAutomatic r f2^(
-		f8) r f2^\(
+		f8) r \partCombineApart \voiceTwo f2^>^\( \voiceOne
 % mesures 91 à 95
-		d8\) r d2^(
+		d8\) \partCombineAutomatic r d2^(
 		d4) c-. c-. \mark \default
 		c r r
 		R2.*3
@@ -129,7 +129,7 @@ musicCornoIMvtI = \relative c {
 			e4\! r r
 		}
 		{
-			a2.\repeatTie~\>
+			\hairpinShorten #'(0 . 6) a2.\repeatTie~\>
 		}
 	}
 % mesures 111 à 115
@@ -172,7 +172,7 @@ musicCornoIMvtI = \relative c {
 	
 	
 	
-	c2.\ff\>~
+	c2.-\tweak extra-offset #'(-1.5 . 0.8) \ff -\tweak extra-offset #'(-1 . 0.5) \>~
 	c\!
 % mesures 156 à 160
 	\partCombineApart c~
@@ -191,13 +191,13 @@ musicCornoIMvtI = \relative c {
 	
 	
 	
-	d2.\ff
+	\dynEO #'(0.9 . 1) d2.\ff
 % mesures 171 à 175
 	d
 	d
 	d4 d d
 	d2.\fz
-	g\fz \mark \default
+	g-\tweak X-offset 0.5 \fz \mark \default
 % mesures 176 à 180
 	f4 r r
 	R2.
@@ -235,13 +235,13 @@ musicCornoIMvtI = \relative c {
 	e\fp\>~
 	e\!
 % mesures 206 à 210
-	e\ff
-	d\fz
+	e-\tweak X-offset 0.3 \ff
+	d-\tweak X-offset 0.3 \fz
 	e\fp~
 	e~
 	e~
 % mesures 211 à 215
-	e~_\decresc
+	e~_\decrescmarkup
 	e~\!
 	e~
 	e~\pp
@@ -282,9 +282,9 @@ musicCornoIMvtI = \relative c {
 	e4 g,2\fp\>~
 	g2.\!~
 	g~
-	g4\(\pp\< a d\>
+	\hairpinShorten #'(-0.3 . -1.3) g4\(\pp\< \hairpinShorten #'(1.3 . 0) a\> d\!
 % mesures 256 à 260
-	c\)\! r r
+	c\) r r
 	R2.*10
 % mesures 261 à 265
 	
@@ -306,7 +306,7 @@ musicCornoIMvtI = \relative c {
 	d4\! r r
 	e2.~\ff\>
 	e4\! r r
-	c2.\fz\>~
+	\hairpinShorten #'(0 . 7) c2.\fz\>~
 % mesures 286 à 290
 	c4\! c4\fz c\fz 
 	c\fz c\fz c\fz 
@@ -385,9 +385,9 @@ musicCornoIMvtI = \relative c {
 % mesures 351 à 355
 	e
 	\partCombineUnisono a,~\pp
-	a~
-	a~
-	a \partCombineChords
+	\hairpinShorten #'(0 . 6) a~\<
+	\hairpinShorten #'(-1 . 4) a~\>
+	a\! \partCombineChords
 % mesures 356 à 360
 	e'~
 	e^(

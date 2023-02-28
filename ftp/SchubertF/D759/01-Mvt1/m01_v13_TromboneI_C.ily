@@ -48,12 +48,12 @@ musicTromboneIMvtI = \relative c {
 		d2.\fz\>~
 % mesures 66 à 70
 		d4\! r r
-		ees2.\fz\>~
+		\hairpinShorten #'(0 . 5) ees2.\fz\>~
 		ees4\! ees\fz ees\fz 
-		ees\fz ees\fz ees\fz 
-		ees\fz ees\fz ees\fz 
+		\dynEO #'(0.7 . 1) ees\fz \dynEO #'(0.7 . 1) ees\fz \dynEO #'(0.7 . 1) ees\fz 
+		\dynEO #'(0.7 . 1) ees\fz \dynEO #'(0.7 . 1) ees\fz \dynEO #'(0.7 . 1) ees\fz 
 % mesures 71 à 75
-		e!\fz r r
+		\dynEO #'(0.7 . 1) e!\fz r r
 		R2.*9
 % mesures 76 à 80
 	
@@ -90,7 +90,7 @@ musicTromboneIMvtI = \relative c {
 			R2.
 		}
 		{
-			dis2.\pp\>~
+			\hairpinShorten #'(0 . 6) dis2.\pp\>~
 		}
 	}
 % mesures 111 à 115
@@ -109,13 +109,13 @@ musicTromboneIMvtI = \relative c {
 	
 	
 	
-	cis2\fz-> r4
-	r cis2->\fz
+	cis2-\tweak X-offset 0.5 \fz-> r4
+	r cis2->-\tweak X-offset 0.5 \fz
 % mesures 136 à 140
-	r4 r cis~\fz->
+	r4 r cis~-\tweak X-offset 0.5 \fz->
 	cis r r
-	cis2->\fz r4
-	r cis->\fz r
+	cis2->-\tweak X-offset 0.5 \fz r4
+	r cis->-\tweak X-offset 0.5 \fz r
 	cis\fz r cis\fz
 % mesures 141 à 145
 	r cis\fz r
@@ -133,7 +133,7 @@ musicTromboneIMvtI = \relative c {
 	
 	
 	
-	f2.\ff\>~
+	f2.-\tweak X-offset 0.5 \ff\>~
 	f\!
 % mesures 156 à 160
 	f\>~
@@ -169,17 +169,17 @@ musicTromboneIMvtI = \relative c {
 	cis2 d4
 	cis2.~
 	cis
-	fis\fz
+	fis-\tweak X-offset 0.3 \fz
 	e4-. cis-. d-.
 % mesures 186 à 190
 	a2.
 	gis
-	b\fz
+	b-\tweak X-offset 0.3 \fz
 	a4-. fis-. g!-.
 	d'2.
 % mesures 191 à 195
 	cis
-	e\fz
+	e-\tweak X-offset 0.3 \fz
 	d4-. b-. c-.
 	c2.\ffz\>(
 	b2\! ais4)
@@ -224,10 +224,10 @@ musicTromboneIMvtI = \relative c {
 	
 	
 	
-	eis4\ff r eis
+	eis4-\tweak X-offset 0.3 \ff r eis
 % mesures 251 à 255
 	r eis4. eis8 \mark \default
-	fis4\fz r r
+	fis4-\tweak X-offset 0.3 \fz r r
 	R2.*28
 % mesures 256 à 260
 	
@@ -240,11 +240,11 @@ musicTromboneIMvtI = \relative c {
 % mesures 276 à 280
 	\mark \default
 % mesures 281 à 285
-	b,2.\ff\>~
+	b,2.-\tweak X-offset 0.3 \ff\>~
 	b4\! r r
 	d2.\ff\>~
 	d4\! r r
-	d2.\fz\>~
+	\hairpinShorten #'(0 . 7) d2.\fz\>~
 % mesures 286 à 290
 	d4\! f\fz f\fz 
 	f\fz f\fz f\fz 
@@ -308,7 +308,7 @@ musicTromboneIMvtI = \relative c {
 	
 	
 % mesures 356 à 360
-	d2.\mf\<~
+	d2.-\tweak X-offset 0.4 \mf\<~
 	d^(\!
 	e)\>~
 	e^(\!

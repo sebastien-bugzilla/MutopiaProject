@@ -6,8 +6,11 @@ morendo = \markup {\italic {morendo}}
 stacc = \markup {\italic stacc.}
 becarre = \markup { \tiny \natural }
 gp = \markup {G.P.}
+decrescmarkup = \markup {\italic decresc.}
 
 ffz = #(make-dynamic-script "ffz")
+crescD = \tweak DynamicText.self-alignment-X #-0.5 \tweak DynamicText.font-size #1 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
+
 un=^\markup {\tiny \number 1}
 deux=^\markup {\tiny \number 2}
 trois=^\markup {\tiny \number 3}
@@ -40,39 +43,91 @@ mmrPos = #(define-music-function
 	#}
 )
 
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = ##t
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+aIIEO = #(define-music-function
+	(extraoffset)
+	(pair?)
+	#{
+		\once \override CombineTextScript.extra-offset = #extraoffset
+		\once \override CombineTextScript.whiteout = ##t
+		\once \override CombineTextScript.whiteout-style = #'outline
+	#}
+)
+
+aIIXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override CombineTextScript.X-offset = #offset
+	#}
+)
+
+markEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TextScript.layer = #3
+		\once \override TextScript.extra-offset = #offset
+		\once \override TextScript.whiteout = ##t
+		\once \override TextScript.whiteout-style = #'outline
+	#}
+)
+
+noFlag = \once \omit Flag
+
+stemOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \offset length #offset Stem
+	#}
+)
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
+
+hairpinEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Hairpin.extra-offset = #offset
+		\once \override Hairpin.whiteout = ##t
+		\once \override Hairpin.whiteout-style = #'outline
+	#}
+)
+
+aIIOmit = \once \omit Voice.CombineTextScript
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%aIIXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override CombineTextScript.X-offset = #offset
-%	#}
-%)
-
-%aIIOmit = \once \omit Voice.CombineTextScript
-
-%aIIExtraOffset = #(define-music-function
-%	(extraoffset)
-%	(pair?)
-%	#{
-%		\once \override CombineTextScript.extra-offset = #extraoffset
-%	#}
-%)
 
 %arpeggioPadding = #(define-music-function
 %	(padding)
 %	(number?)
 %	#{
 %		\once \override Voice.Arpeggio.padding = #padding
-%	#}
-%)
-
-%beamOffset = #(define-music-function
-%	(position)
-%	(pair?)
-%	#{
-%		\once \offset positions #position Beam
 %	#}
 %)
 
@@ -127,33 +182,6 @@ mmrPos = #(define-music-function
 %	#}
 %)
 
-%dynEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override DynamicText.extra-offset = #offset
-%		\once \override DynamicText.whiteout = ##t
-%		\once \override DynamicText.whiteout-style = #'outline
-%	#}
-%)
-
-%hairpinShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.shorten-pair = #shortLength
-%	#}
-%)
-
-%hairpinEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.extra-offset = #offset
-%		\once \override Hairpin.whiteout = ##t
-%		\once \override Hairpin.whiteout-style = #'outline
-%	#}
-%)
 
 %InCueContext = {
 %	\override Beam.beam-thickness = #0.30 % 0.30
@@ -175,16 +203,6 @@ mmrPos = #(define-music-function
 %	\unset fontSize
 %}
 
-%markEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TextScript.layer = #3
-%		\once \override TextScript.extra-offset = #offset
-%		\once \override TextScript.whiteout = ##t
-%		\once \override TextScript.whiteout-style = #'outline
-%	#}
-%)
 
 %mmrnDown = {
 %	\once \override MultiMeasureRestNumber.direction = #-1 
@@ -265,14 +283,6 @@ mmrPos = #(define-music-function
 %	\revert TupletNumber.avoid-slur
 %}
 
-
-%stemOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \offset length #offset Stem
-%	#}
-%)
 
 %textInSlur = {
 %	%\once \override TextScript.outside-staff-priority = 0

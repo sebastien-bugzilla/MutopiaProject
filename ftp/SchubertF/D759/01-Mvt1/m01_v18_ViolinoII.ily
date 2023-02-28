@@ -227,7 +227,7 @@ musicViolinoIIMvtI = \relative c {
 	fis4 fis,2\fz
 	a2\fz~ a8 b32( cis d e)
 % mesures 186 à 190
-	fis2.
+	fis2.\fz
 	eis4-. b-. cis-.
 	d-. b,2\fz
 	d\fz~ d8 e32( fis g a)

@@ -27,14 +27,14 @@ musicFagottoIIMvtI = \relative c {
 		
 		
 % mesures 26 à 30
-		fis4(-\tweak X-offset #-2. \p g4. a8)
+		fis4(-\offset X-offset -2 \p g4. a8)
 		a4( g4._\crescmarkup b8)
 		b4( a) fis\fz
 		fis\fz ais2\fp\>~
 		ais2.\!
 % mesures 31 à 35
-		fis4(-\tweak X-offset #-2. \p g4. a8)
-		a4( g4._\crescmarkup b8)
+		fis4(\p g4. a8)
+		a4( g4.-\offset X-offset 7 _\crescmarkup b8)
 		b4( a4. cis8)
 		cis4( b4. cis8)
 		cis4( b4.) ais8\ff
@@ -42,8 +42,8 @@ musicFagottoIIMvtI = \relative c {
 		ais2.~
 		ais \mark \default
 		b4\fz d2\fp\>~
-		d2.\!~ \clef tenor
-		d~
+		d2.\!( \clef tenor
+		d)~
 % mesures 41 à 45
 		d4( cis c)
 		b\pp r r
@@ -61,7 +61,7 @@ musicFagottoIIMvtI = \relative c {
 		r b4(-. b-. b8-.)
 		r d4-.( d-. d8-.)
 		r d4-.( d-. d8-.)
-		r c4-.(_\decresc c-. c8-.)\!
+		r c4-.( c-.\! c8-.)
 % mesures 61 à 65
 		r c4(-. c-. c8-.)
 		R2. \mark \default
@@ -82,7 +82,7 @@ musicFagottoIIMvtI = \relative c {
 		
 % mesures 76 à 80
 		
-		\clef bass d2.\f_(
+		\clef bass \dynEO #'(0 . 2) d2.\f_(
 		c2.)
 		c_(
 		b)
@@ -91,7 +91,7 @@ musicFagottoIIMvtI = \relative c {
 		a4-. r r
 		g8.-. a16-. bes8-.[ e,-. fis-. g-.]
 		a4-. r8 a[-. g-. e-.]
-		d8 r d2->-\tweak X-offset #-2. \fz(
+		d8 r d2->\fz(
 % mesures 86 à 90
 		c8) r c2_(\fz->
 		g8) r g2_(\fz->
@@ -127,7 +127,7 @@ musicFagottoIIMvtI = \relative c {
 			b4)\! r r
 		}
 		{
-			b2.~\>
+			b2.~\>\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -214,19 +214,19 @@ musicFagottoIIMvtI = \relative c {
 	R2.
 	eis,2.\>
 	fis2\! gis4
-	fis2. -\tweak X-offset #-2. \fz
+	fis2. -\offset X-offset #-1.3 \fz
 	e!4 cis d
 % mesures 186 à 190
 	cis8.[ cis16 cis8. cis16] cis8. cis16 
 	cis8.[ cis16 cis8. cis16] cis8. cis16 
-	b2.\fz
+	b2.-\tweak X-offset 0.3 \fz
 	a4-. fis-. g-.
 	d'2.
 % mesures 191 à 195
 	cis
-	e\fz
+	e-\tweak X-offset 0.3 \fz
 	d4-. b-. c-.
-	g2.\ffz\>~
+	g2.-\tweak X-offset 0.3 \ffz\>~
 	g\!
 % mesures 196 à 200
 	g\fz\>~
@@ -237,7 +237,7 @@ musicFagottoIIMvtI = \relative c {
 % mesures 201 à 205
 	
 	fis2.\ff
-	a\fz
+	a-\tweak X-offset 0.2 \fz
 	d'\fp_(\>
 	ais)\!
 % mesures 206 à 210
@@ -247,7 +247,7 @@ musicFagottoIIMvtI = \relative c {
 	ais)~
 	ais4. gis8[( ais b]
 % mesures 211 à 215
-	ais4._\decresc gis8[\! ais b]
+	ais4._\decrescmarkup gis8[\! ais b]
 	ais4. gis8[ ais b]
 	ais2.)~
 	ais\pp~
@@ -263,7 +263,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	
-	a2.~\p\<
+	\hairpinShorten #'(7 . 0) a2.~\p\<
 	a4(\> b2\!)(
 % mesures 231 à 235
 	e,4) r r
@@ -288,7 +288,7 @@ musicFagottoIIMvtI = \relative c {
 	cis2.~
 % mesures 251 à 255
 	cis \mark \default
-	fis,4\fz a2~\fp\>
+	fis,4-\tweak X-offset 0.3 \fz a2~-\tweak X-offset 0.3 \fp\>
 	a2.\!~
 	a~
 	a4\pp\<\( gis\> g\! 
@@ -310,7 +310,7 @@ musicFagottoIIMvtI = \relative c {
 	r g4 g g8
 	r g4 g g8
 % mesures 276 à 280
-	r fis4_\decresc fis\! fis8
+	r fis4 fis\! fis8
 	r f!4 f f8
 	r e4 e e8
 	r e4 e e8
@@ -361,11 +361,11 @@ musicFagottoIIMvtI = \relative c {
 	fis2( e!4
 	dis) r r
 	R2.
-	b4(\< fis4. bis8)\!
+	b4(\< fis4.\! bis8)
 	cis8.\>( dis16 e4.\! eis8)
 % mesures 321 à 325
 	fis2( e!4
-	dis8) r \clef bass b,2 -\tweak X-offset #-3.2 \ffz~
+	dis8) r \clef bass b,2 -\tweak X-offset #0.3 \ffz~
 	b2.\p~
 	b\pp~
 	b~
@@ -391,14 +391,14 @@ musicFagottoIIMvtI = \relative c {
 	cis2.\>_(
 	b4)\! r r
 	cis2._(\>
-	b4)\! r cis(->_\crescmarkup~
+	b4)\! r cis(->-\offset X-offset 0.8 _\crescmarkup~
 	cis b) cis_(
 % mesures 346 à 350
-	b)(\< cis b
+	b)( cis\< b
 	cis b cis\!
 	b) d'\f b
 	fis\< d b\!
-	fis2. -\tweak X-offset #1.5 \ff
+	fis2. -\offset X-offset #1.5 \ff
 % mesures 351 à 355
 	fis'
 	d~\pp

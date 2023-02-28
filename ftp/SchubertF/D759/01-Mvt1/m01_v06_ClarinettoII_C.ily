@@ -33,17 +33,17 @@ musicClarinettoIIMvtI = \relative c {
 		R2.
 		R2.
 % mesures 26 à 30
-		a''4 -\tweak X-offset #-2. \p( bes4. c8)
-		c4( bes4._\crescmarkup b8)
+		a''4 -\offset X-offset #-2. \p( bes4. c8)
+		c4( bes4.-\offset X-offset 1 _\crescmarkup b8)
 		b4( c) cis\fz
 		cis\fz g'2\fp\>~
 		g2.\!
 % mesures 31 à 35
-		a,4 -\tweak X-offset #-2. \p( bes4. c8)
-		c4( bes4._\crescmarkup b8)
+		a,4\p( bes4. c8)
+		c4( bes4.-\offset X-offset 7 _\crescmarkup b8)
 		b4( c4. cis8)
 		cis4( d4. cis8)
-		cis4( d4.) cis8\ff
+		cis4( d4.) cis8-\tweak X-offset #0.5 \ff
 % mesures 36 à 40
 		cis2.~
 		cis \mark \default
@@ -73,9 +73,9 @@ musicClarinettoIIMvtI = \relative c {
 		r d4-.( d-. d8-.)
 		r f4-.( f-. f8-.)
 		r f4-.( f-. f8-.)
-		r ees4-.(_\decresc ees-. ees8-.)\!
+		r ees4-.( ees-.\! ees8-.)
 % mesures 61 à 65
-		r ees4-.( ees4-. ees8-.)
+		r \shape #'((0 . 0.2)(0 . 0.8)(0 . 0.8)(0 . 0.2)) Slur ees4-.( ees4-. ees8-.)
 		R2. \mark \default
 		bes2.\ffz\>(
 		ees,4)\! r r
@@ -94,7 +94,7 @@ musicClarinettoIIMvtI = \relative c {
 		aes2.(
 % mesures 76 à 80
 		g)
-		f'\f(
+		\dynEO #'(0 . 1) f'\f(
 		ees)
 		ees_(
 		d)
@@ -105,11 +105,11 @@ musicClarinettoIIMvtI = \relative c {
 		r8 c4 c c8(
 		d!) r bes2\fz->_~
 % mesures 86 à 90
-		bes8 r bes2_(\fz->
+		bes8 r bes2_(-\tweak X-offset 0.5 \fz->
 		d8) r d2\fz_(->
 		ees4) bes-. a-.
-		bes8 r d2\fz->_(
-		ees8) r bes2_(\fz->
+		bes8 r d2-\tweak X-offset 0.5 \fz->_(
+		ees8) r bes2_(-\tweak X-offset 0.5 \fz->
 % mesures 91 à 95
 		b8) r d2->_(\fz
 		c4) bes!-. a-. \mark \default
@@ -158,13 +158,13 @@ musicClarinettoIIMvtI = \relative c {
 	
 	
 	
-	r4 r cis-> -\tweak X-offset #-2.5 \fz~
+	r4 r cis->-\tweak X-offset #0.5 \fz~
 	cis r r
 % mesures 136 à 140
-	cis2-> -\tweak X-offset #-2.5 \fz r4
-	r cis2-> -\tweak X-offset #-2.5 \fz
-	r4 r cis4-> -\tweak X-offset #-2.5 \fz~
-	cis r cis -\tweak X-offset #-2.5 \fz
+	cis2->-\tweak X-offset #0.5  \fz r4
+	r cis2->-\tweak X-offset #0.5  \fz
+	r4 r cis4->-\tweak X-offset #0.5  \fz~
+	cis r cis-\tweak X-offset #0.5  \fz
 	r cis\fz r
 % mesures 141 à 145
 	cis\fz r cis\fz
@@ -173,19 +173,19 @@ musicClarinettoIIMvtI = \relative c {
 	cis8 cis cis cis cis cis
 	cis cis cis cis e e
 % mesures 146 à 150
-	e2.\ff\>~
+	\dynEO #'(0.8 . 2) \hairpinEO #'(0.8 . 2) e2.\ff\>_~
 	e2.\!
-	b2.~\>
+	b2.~^\>
 	b\!~
 	b8\p e4 e e8
 % mesures 151 à 155
 	r8 e4 e e8
 	r8 e4 e e8
 	r8 dis4 dis dis8
-	f!2.\ff\>~
+	\dynEO #'(0.8 . 2) \hairpinEO #'(0.8 . 2) f!2.\ff\>~
 	f\!
 % mesures 156 à 160
-	b,\>~
+	b,^\>~
 	b(\!
 	c8)\p f4 f f8
 	r8 f4 f f8
@@ -201,12 +201,12 @@ musicClarinettoIIMvtI = \relative c {
 	r g4 g g8
 	r g4 g g8
 	r fis4 fis fis8
-	g2.\ff
+	g2.-\tweak X-offset 0.5 \ff
 % mesures 171 à 175
 	a2-. bes4-.
 	g2.
 	f4-. d-. ees-.
-	d2.\fz
+	d2.-\tweak X-offset -1.5 -\tweak extra-offset #'(0 . 0.5) \fz
 	\afterGrace fis\fz\trill {e!16[ fis]} \mark \default
 % mesures 176 à 180
 	g4 r r
@@ -219,9 +219,9 @@ musicClarinettoIIMvtI = \relative c {
 	gis,2.(\>
 	a2\! b4
 	a) a2\fz
-	c\fz~ c8 d32\( e f g\)
+	c-\tweak X-offset #0.2 \fz~ c8 d32\( e f g\)
 % mesures 186 à 190
-	a2. -\tweak X-offset #-1.5 \fz
+	a2. -\offset X-offset #-1.5 \fz
 	gis4-. d-. e-.
 	f-. d2\fz
 	f\fz~ f8 g32\( a bes c\)
@@ -240,18 +240,18 @@ musicClarinettoIIMvtI = \relative c {
 	e2.(_\crescmarkup
 % mesures 201 à 205
 	d2 des4)
-	a2.\ff
-	g\fz
-	f'\fp\>(
+	a2.-\tweak X-offset 0.2 \ff
+	g-\tweak X-offset 0.2 \fz
+	f'\fp\>_(
 	cis\!)
 % mesures 206 à 210
-	a\ff
-	g\fz
+	a-\tweak X-offset 0.3 \ff
+	g-\tweak X-offset 0.3 \fz
 	f'\fp(
 	cis)~
 	cis4. b8[( cis d]
 % mesures 211 à 215
-	cis4._\decresc b8[\! cis d]
+	cis4. b8[\! cis d]
 	cis4. b8[ cis d]
 	cis2.)~
 	cis\pp~
@@ -284,19 +284,19 @@ musicClarinettoIIMvtI = \relative c {
 	R
 	R
 	c2.\<(~
-	c2\> b4)\!
-	g4( a4. bes!8)
+	\hairpinShorten #'(1 . 9) c2\> b4)\!
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur g4( a4. bes!8)
 % mesures 241 à 245
-	bes4( a4. c8)
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur bes4( a4. c8)
 	c4( bes) d-.\f
 	d\fz d2\fp\>~
 	d2.\!
-	g,4(\p a4. bes8)
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur g,4(\p a4. bes8)
 % mesures 246 à 250
-	bes4( a4. c8)
-	c4( bes4. d8)
-	d4( c4. d8)
-	d4( c4.) d8\ff
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur bes4( a4. c8)
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur c4( bes4. d8)
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur d4( c4. d8)
+	d4( c4.) d8-\offset X-offset -1.5 \ff
 	d2.~
 % mesures 251 à 255
 	d \mark \default
@@ -329,7 +329,7 @@ musicClarinettoIIMvtI = \relative c {
 	r bes4 bes bes8
 	r bes4 bes bes8
 % mesures 276 à 280
-	r a4-._\decresc a-. a8-.\!
+	r a4-. a-. a8-.\!
 	r aes4 aes aes8
 	r g4 g g8
 	r g4 g g8
@@ -341,17 +341,17 @@ musicClarinettoIIMvtI = \relative c {
 	a4)\! r r
 	d2.(\fz\>
 % mesures 286 à 290
-	bes4)\! aes\fz aes\fz 
-	aes\fz aes\fz aes\fz 
-	aes\fz aes\fz aes\fz 
-	aes8\fz\> d4 d d8~\!
+	bes4)\! aes-\tweak X-offset 0.3 \fz aes-\tweak X-offset 0.3 \fz 
+	aes-\tweak X-offset 0.3 \fz aes-\tweak X-offset 0.3 \fz aes-\tweak X-offset 0.3 \fz 
+	aes-\tweak X-offset 0.3 \fz aes-\tweak X-offset 0.3 \fz aes-\tweak X-offset 0.3 \fz 
+	aes8-\tweak X-offset 0.3 \fz\> d4 d d8~\!
 	d d4 d d8~ 
 % mesures 291 à 295
 	d2.(\p
 	c)~
 	c(
 	b)
-	a'\f(
+	\dynEO #'(0.5 . 2) a'\f(
 % mesures 296 à 300
 	g)
 	g_(
@@ -361,14 +361,14 @@ musicClarinettoIIMvtI = \relative c {
 % mesures 301 à 305
 	f2.\fz
 	r8 e4 e e8( 
-	fis) r a,2\fz(
-	b8) r b2\fz(
-	c8) r c2\fz(
+	fis) r a,2-\tweak X-offset 0.3 \fz(
+	b8) r b2-\tweak X-offset 0.3 \fz(
+	c8) r c2-\tweak X-offset 0.3 \fz(
 % mesures 306 à 310
 	b4) a-. a-.
-	a8 r c2\fz(
-	b8) r b2\fz(
-	a8) r a2(\fz
+	a8 r c2-\tweak X-offset 0.3 \fz(
+	b8) r b2-\tweak X-offset 0.3 \fz(
+	a8) r a2(-\tweak X-offset 0.3 \fz
 	g4) d'-. cis-. \mark \default
 % mesures 311 à 315
 	d r r
@@ -415,7 +415,7 @@ musicClarinettoIIMvtI = \relative c {
 % mesures 346 à 350
 	d\)\( e\< d
 	e d e\!
-	d\) d,\f( f
+	d\) d,-\tweak X-offset -1 \f( f
 	a\< d f)\!
 	d2.\ff
 % mesures 351 à 355
@@ -425,7 +425,7 @@ musicClarinettoIIMvtI = \relative c {
 	
 	
 % mesures 356 à 360
-	d,2.\mf\<~
+	d,2.-\offset X-offset -1 \mf\<~
 	d~\!
 	d~\>~
 	d(\!

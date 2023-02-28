@@ -33,16 +33,16 @@ musicOboeIIMvtI = \relative c'' {
 		R
 		R 
 % mesures 26 à 30
-		a!4( -\tweak X-offset #-2. \p b4. c8)
-		c4( b4._\crescmarkup d8)
+		a!4( -\offset X-offset #-2. \p b4. c8)
+		c4( b4.-\tweak extra-offset #'(1 . 2.2) _\crescmarkup d8)
 		d4( cis!) e4\fz
 		e\fz r r
 		R2.
 % mesures 31 à 35
-		a,4( -\tweak X-offset #-2. \p b4. c8)
-		c4( b4._\crescmarkup) b8
+		a,4(\p b4. c8)
+		c4( b4.-\offset X-offset 7 _\crescmarkup) b8
 		b4( cis!4. cis8)
-		cis4(-\tweak X-offset #-2. \f d4. e8)
+		cis4(-\offset X-offset -1 \f d4. e8)
 		e4( d4.) e8\ff
 % mesures 36 à 40
 		e2.~
@@ -67,7 +67,7 @@ musicOboeIIMvtI = \relative c'' {
 		d4)\! r r
 		g2.(\fz\>
 		ees4)\! g'\fz g\fz
-		g\fz_\crescmarkup g\fz g\fz
+		g\fz-\tweak extra-offset #'(0 . 2.5) _\crescmarkup g\fz g\fz
 		g\fz g\fz g\fz 
 % mesures 71 à 75
 		g8\fz g4\> g g8~
@@ -77,7 +77,7 @@ musicOboeIIMvtI = \relative c'' {
 		
 % mesures 76 à 80
 		
-		d2.\f(
+		\dynEO #'(0.5 . 0.5) d2.\f(
 		c2.)
 		c2._(
 		b)
@@ -91,10 +91,10 @@ musicOboeIIMvtI = \relative c'' {
 		e8) r e2\fz->_(
 		f8) r f2->_(\fz
 		e4) d-. d-.
-		d8 r f2\fz_(
-		e8) r e2->\fz_(
+		d8 r \dynEO #'(0.8 . 2) f2\fz_(
+		e8) r \dynEO #'(0.8 . 2) e2->\fz_(
 % mesures 91 à 95
-		d8) r gis2\fz
+		d8) r \dynEO #'(0.8 . 2) gis2\fz
 		a4 d,-. c-. \mark \default
 		b r r
 		R2.
@@ -109,7 +109,7 @@ musicOboeIIMvtI = \relative c'' {
 		
 		
 		
-		r4 b2\ff\>~
+		r4 b2-\offset X-offset 0.5 \ff\>~
 		b2.~
 % mesures 106 à 110
 		b~\pp
@@ -122,7 +122,7 @@ musicOboeIIMvtI = \relative c'' {
 			fis4\! r r
 		}
 		{
-			a!2.\>~
+			a!2.\>~\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -175,7 +175,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 % mesures 161 à 165
 	
-	e2.\ff\>~
+	\dynEO #'(0.8 . 1.5) \hairpinEO #'(0.8 . 1.5) e2.\ff\>~
 	e\!
 	R2.*6
 	
@@ -213,7 +213,7 @@ musicOboeIIMvtI = \relative c'' {
 	fis8.[ fis16 fis8. fis16] fis8. fis16
 	e8.[ e16 e8. e16] e8. e16
 	e8.[ e16 e8. e16] e8. e16
-	c'2.\ffz\>\(
+	c'2.-\tweak X-offset 0.2 \ffz\>\(
 	b2\! ais4\)
 % mesures 196 à 200
 	c2.\fz\>\(
@@ -229,7 +229,7 @@ musicOboeIIMvtI = \relative c'' {
 	R2.
 % mesures 206 à 210
 	fis2.\ff
-	cis\fz
+	cis-\tweak X-offset 0.3 \fz
 	d4 r r
 	R2.*5
 	
@@ -256,9 +256,9 @@ musicOboeIIMvtI = \relative c'' {
 	R
 	R
 	a2.~\<
-	a4\>( b2)(\!
+	a4\>( b2)\(\!
 % mesures 231 à 235
-	g4) r r
+	g4\) r r
 	R2.*4
 	
 	
@@ -267,19 +267,19 @@ musicOboeIIMvtI = \relative c'' {
 	R2.*2
 	
 	d'2.\<~
-	d4(\> e2)\!
+	\hairpinShorten #'(1 . 0) d4(\> e2)\!
 	cis!4( d4. e8)
 % mesures 241 à 245
-	e4( d4. dis8_\crescmarkup)
+	e4( d4. dis8-\offset X-offset -6 _\crescmarkup)
 	dis4( e) eis-.\f
 	eis\fz-. r r 
 	R2.
 	cis4(\p d4. e8)
 % mesures 246 à 250
 	e4( d4. dis8)
-	dis4( e4. eis8_\crescmarkup)
+	dis4( e4. eis8-\offset X-offset #-6 _\crescmarkup)
 	eis4( fis4. eis8)
-	eis4( fis4.) gis8-.\ff
+	eis4( fis4.) \dynEO #'(0.7 . 2) gis8-.\ff
 	gis2.~
 % mesures 251 à 255
 	gis \mark \default
@@ -296,13 +296,13 @@ musicOboeIIMvtI = \relative c'' {
 % mesures 276 à 280
 	\mark \default
 % mesures 281 à 285
-	b,2.(\ff\>
-	e,4)\! r r
-	b'2.(\ff\>
-	fis4)\! r r
-	b2.(\fz\>
+	b,2.\(-\tweak X-offset 0.3 \ff\>
+	e,4\)\! r r
+	b'2.\(-\tweak X-offset 0.3 \ff\>
+	fis4\)\! r r
+	b2.\(-\tweak X-offset 0.3 \fz\>
 % mesures 286 à 290
-	g4)\! d'\fz d\fz 
+	g4\)\! d'\fz d\fz 
 	d\fz d\fz d\fz 
 	d\fz d\fz d\fz 
 	d8\fz\> d4 d d8~\!
@@ -312,7 +312,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	fis2.\f(
+	\dynEO #'(0.7 . 2) fis2.\f(
 % mesures 296 à 300
 	e)
 	e_(
@@ -321,7 +321,7 @@ musicOboeIIMvtI = \relative c'' {
 	gis2.\fz
 % mesures 301 à 305
 	r8 gis4 gis gis8
-	gis2.\fz_(
+	\dynEO #'(0.5 . 2) gis2.\fz_(
 	fis8) r fis2\fz_(
 	gis8) r gis2_(\fz
 	a8) r a2_(\fz
@@ -345,14 +345,14 @@ musicOboeIIMvtI = \relative c'' {
 	R
 % mesures 321 à 325
 	R
-	r4 b2\ffz\>~
+	r4 b2-\tweak X-offset #0.3 \ffz\>~
 	b2.\p~
 	b\pp~
 	b~
-	b(
+	b\(
 % mesures 326 à 330
-	fis)\>~
-	fis4\! r r
+	fis\)_\(\>
+	fis4\)\! r r
 	R2.*15
 % mesures 331 à 335
 	
@@ -362,7 +362,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	fis2(->_\crescmarkup eis4)
+	fis2(->-\offset X-offset 0.8 _\crescmarkup eis4)
 	fis2(-> eis4)
 % mesures 346 à 350
 	fis( eis\< fis

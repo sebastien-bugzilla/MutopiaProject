@@ -30,13 +30,13 @@ musicCornoIIMvtI = \relative c {
 		R
 % mesures 26 à 30
 		r4 c2\p~
-		c~_\crescmarkup c8( d)
+		c~-\offset X-offset #10 _\crescmarkup c8( d)
 		d2 d4\fz
 		d\fz d2~
 		d2.
 % mesures 31 à 35
 		r4 c2\p~
-		c~ c8_\crescmarkup( d)
+		c~ c8-\offset X-offset -5 _\crescmarkup( d)
 		d2~ d8( e)
 		e2\f~ e8 e,
 		e2~ e8 d'\ff
@@ -55,7 +55,7 @@ musicCornoIIMvtI = \relative c {
 % mesures 51 à 55
 		
 		
-		r4 r r8 c,8\pp~
+		r4 r r8 c,8-\tweak X-offset -2.2 \pp~
 		c c4 r8 r c~
 		c c4 r8 r c~
 % mesures 56 à 60
@@ -93,15 +93,15 @@ musicCornoIIMvtI = \relative c {
 		r8 d4 d d8
 		d2.\fz
 		r8 d4 d d8_(
-		c) r c2->-\tweak X-offset #-2. \fz_(
+		c) r c2->-\offset X-offset 0.5 \fz_(
 % mesures 86 à 90
-		d8) r d2 -\tweak X-offset #-2. \fz->_(
-		c8) r c2-> -\tweak X-offset #-3. \fz_(
+		d8) r d2\fz->_(
+		c8) r c2->-\offset X-offset 0.5 \fz_(
 		d4) c c
 		c8 r c2->\fz_(
-		d8) r d2\fz->_\(
+		d8) r d2\fz_\(
 % mesures 91 à 95
-		d8\) r c2->\fz_(
+		d8\) r c2->-\offset X-offset 0.5 \fz_(
 		g4) c,-. c-. \mark \default
 		c r r
 		R2.*3
@@ -172,7 +172,7 @@ musicCornoIIMvtI = \relative c {
 	
 	
 	
-	c,2.\ff\>~
+	c,2.-\tweak extra-offset #'(-1.5 . 0.8) \ff-\tweak extra-offset #'(-1 . 0.5) \>~
 	c\!
 % mesures 156 à 160
 	c'~\>
@@ -197,7 +197,7 @@ musicCornoIIMvtI = \relative c {
 	d
 	d4 d d
 	d2.\fz
-	a\fz \mark \default
+	a-\tweak X-offset 0.5 \fz \mark \default
 % mesures 176 à 180
 	d4 r r
 	R2.
@@ -235,13 +235,13 @@ musicCornoIIMvtI = \relative c {
 	e\fp\>~
 	e\!
 % mesures 206 à 210
-	c'\ff
-	g\fz
+	c'-\tweak X-offset 0.3 \ff
+	g-\tweak X-offset 0.3 \fz
 	e\fp~
 	e~
 	e~
 % mesures 211 à 215
-	e~_\decresc
+	e~
 	e~\!
 	e~
 	e~\pp
@@ -258,8 +258,8 @@ musicCornoIIMvtI = \relative c {
 	
 	
 	
-	d'2.\p\<~
-	d2\>( cis4\!
+	\hairpinShorten #'(7 . 0) d'2.\p\<~
+	\hairpinShorten #'(0 . 10) d2\>( cis4\!
 % mesures 231 à 235
 	d) r r
 	R2.*9
@@ -282,9 +282,9 @@ musicCornoIIMvtI = \relative c {
 	e,4\fz g2\fp\>~
 	g2.\!~
 	g~
-	g4\(\pp\< a g\>
+	g4\(\pp\< a\> g\!
 % mesures 256 à 260
-	g\)\! r r
+	g\) r r
 	R2.*10
 % mesures 261 à 265
 	
@@ -324,16 +324,16 @@ musicCornoIIMvtI = \relative c {
 	d r r
 	a r r
 	c,2.\fz
-	a'\fz
+	a'-\offset X-offset 0.5 \fz
 % mesures 301 à 305
 	c,\fz
-	a'\fz
-	e8 r a2(\fz
+	a'-\offset X-offset 0.5 \fz
+	e8 r a2(-\tweak X-offset 0.3 \fz
 	d8) r d2(\fz
-	a8) r a2(\fz
+	a8) r a2(-\tweak X-offset 0.3 \fz
 % mesures 306 à 310
 	d4) e e,
-	e8 r a2\fz(
+	e8 r a2-\tweak X-offset 0.3 \fz(
 	d8) r d2(\fz
 	e8) r e2(\fz
 	d4) e,-. e-. \mark \default

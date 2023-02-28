@@ -52,12 +52,12 @@ musicTromboneIIIMvtI = \relative c {
 		d2.\fz\>~
 % mesures 66 à 70
 		d4\! r r
-		ees2.\fz\>~
+		\hairpinShorten #'(0 . 5) ees2.\fz\>~
 		ees4\! ees\fz ees\fz 
-		ees\fz^\crescmarkup ees\fz ees\fz 
-		ees\fz ees\fz ees\fz 
+		\dynEO #'(0.8 . 1) ees\fz^\crescmarkup \dynEO #'(0.8 . 1) ees\fz \dynEO #'(0.8 . 1) ees\fz 
+		\dynEO #'(0.8 . 1) ees\fz \dynEO #'(0.8 . 1) ees\fz \dynEO #'(0.8 . 1) ees\fz 
 % mesures 71 à 75
-		e!\fz r r
+		\dynEO #'(0.8 . 1) e!\fz r r
 		R2.*5
 		
 		
@@ -76,7 +76,7 @@ musicTromboneIIIMvtI = \relative c {
 		d) r d2->\fz(
 % mesures 86 à 90
 		c8) r c2\fz->(
-		g8) r g2->( -\tweak X-offset #-3. \fz 
+		g8) r g2->( -\offset X-offset #-3. \fz 
 		c4) d-. d-.
 		g,8 r g'2->\fz(
 		c,8) r c2->(\fz
@@ -102,7 +102,7 @@ musicTromboneIIIMvtI = \relative c {
 			R2.
 		}
 		{
-			b2.\pp\>~
+			\hairpinShorten #'(0 . 6) b2.\pp\>~
 		}
 	}
 % mesures 111 à 115
@@ -260,7 +260,7 @@ musicTromboneIIIMvtI = \relative c {
 	e4\! r r
 	fis2.\ff\>~
 	fis4\! r r
-	g2.\fz\>~
+	\hairpinShorten #'(0 . 7) g2.\fz\>~
 % mesures 286 à 290
 	g4\! g,\fz g\fz 
 	g\fz g\fz g\fz 
@@ -320,7 +320,7 @@ musicTromboneIIIMvtI = \relative c {
 	d2(->_\crescmarkup cis4)
 	d2(-> cis4)
 % mesures 346 à 350
-	d\< cis d
+	d cis\< d
 	cis d cis\!
 	d\! fis2\f
 	fis2\< fis4\!
@@ -328,8 +328,8 @@ musicTromboneIIIMvtI = \relative c {
 % mesures 351 à 355
 	fis
 	b,\pp~
-	b\<~
-	b\>~
+	\hairpinShorten #'(0 . 6) b\<~
+	\hairpinShorten #'(-1 . 4) b\>~
 	b\!
 % mesures 356 à 360
 	b\mf\<~

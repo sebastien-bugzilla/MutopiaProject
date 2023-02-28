@@ -79,7 +79,7 @@ musicBassoMvtI = \relative c {
 		g' r r
 		e r r
 		e r r
-		a_\decresc r\! r
+		a_\decrescmarkup r\! r
 % mesures 61 à 65
 		d, r r
 		R2. \mark \default
@@ -88,7 +88,7 @@ musicBassoMvtI = \relative c {
 		d2.:32\fz\>
 % mesures 66 à 70
 		d4\! r r
-		ees2.:32\fz\>
+		\hairpinShorten #'(0 . 5) ees2.:32\fz\>
 		ees4-.\! ees-. ees-.
 		ees-._\crescmarkup ees-. ees-.
 		ees-. ees-. ees-.
@@ -132,7 +132,7 @@ musicBassoMvtI = \relative c {
 		d r r
 		d r r
 		d r r
-		g8 r b,4-.-\tweak X-offset #-2. \ffz r
+		g8 r b,4-.\ffz r
 		R2.
 % mesures 106 à 110
 		g'4^\pizz\pp r r
@@ -142,7 +142,7 @@ musicBassoMvtI = \relative c {
 	}
 	\alternative {
 		{
-			b2.^\arco\laissezVibrer
+			\shape #'((-0.2 . -0.3)(2.5 . -0.7)(5 . -0.7)(7.5 . 0)) LaissezVibrerTie b2.^\arco\laissezVibrer
 		}
 		{
 			b4^\pizz r r
@@ -152,7 +152,7 @@ musicBassoMvtI = \relative c {
 	c' r r
 	a r r
 	fis r r
-	e2.(\pp^\arco
+	e2.(-\offset X-offset 1.5 \pp^\arco
 	fis2 g4)
 % mesures 116 à 120
 	e2.( 
@@ -269,7 +269,7 @@ musicBassoMvtI = \relative c {
 	fis4) r r8. \times 2/3 {cis32( dis eis}
 	fis4) r r8. \times 2/3 {cis32( dis eis}
 % mesures 211 à 215
-	fis4)_\decresc r\! r8. \times 2/3 {cis32( dis\! eis}
+	fis4)_\decrescmarkup r\! r8. \times 2/3 {cis32( dis\! eis}
 	fis4) r r
 	R2.
 	fis4\pp^\pizz r r
@@ -347,7 +347,7 @@ musicBassoMvtI = \relative c {
 	e r r
 	a, r r
 % mesures 276 à 280
-	a_\decresc r\! d
+	a_\decrescmarkup r\! d
 	g, r r
 	g r e'
 	fis r r
@@ -357,7 +357,7 @@ musicBassoMvtI = \relative c {
 	e4\! r r
 	fis2.:16\ff\>
 	fis4\! r r
-	g2.:16\fz\> 
+	\hairpinShorten #'(0 . 7) g2.:16\fz\> 
 % mesures 286 à 290
 	g4\! g,\fz g\fz
 	g\fz_\crescmarkup g\fz g\fz
@@ -409,7 +409,7 @@ musicBassoMvtI = \relative c {
 % mesures 326 à 330
 	d r r
 	cis r r
-	b2.(\pp^\arco
+	\markEO #'(-4 . -1) b2.(\pp^\arco
 	cis2 d4)
 	b2.(
 % mesures 331 à 335
@@ -452,7 +452,7 @@ musicBassoMvtI = \relative c {
 	cis2 d4)\!
 	b2.(\>
 	cis2 d4)\!
-	d -\tweak X-offset #-3.3 \ff r r
+	d -\offset X-offset #-3.3 \ff r r
 	fis r r
 % mesures 366 à 368
 	b r r

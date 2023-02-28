@@ -17,7 +17,7 @@ musicOboeIMvtI = \relative c'' {
 % mesures 11 à 15
 		
 		
-		\partCombineApart fis2.\pp(
+		\partCombineApart fis2.-\offset X-offset -1 \pp(
 		b,4. ais8[ b cis])
 		fis2.(
 % mesures 16 à 20
@@ -60,17 +60,17 @@ musicOboeIMvtI = \relative c'' {
 % mesures 61 à 65
 		
 		\mark \default
-		g,2.\ffz\>(
+		\aIIEO #'(-2 . -2.8) g,2.\ffz\>(
 		c,4)\! r r
 		g'2.\fz(\>
 % mesures 66 à 70
 		d4)\! r r
-		g2.(\fz\>
+		\hairpinShorten #'(0 . 5) g2.(\fz\>
 		ees4)\! bes''\fz bes\fz
-		bes\fz bes\fz bes\fz 
-		bes\fz bes\fz bes\fz 
+		\dynEO #'(0.5 . 2.5) bes\fz \dynEO #'(0.5 . 2.5) bes\fz \dynEO #'(0.5 . 2.5) bes\fz 
+		\dynEO #'(0.5 . 2.5) bes\fz \dynEO #'(0.5 . 2.5) bes\fz \dynEO #'(0.5 . 2.5) bes\fz 
 % mesures 71 à 75
-		bes8\fz bes4\> bes bes8~
+		\dynEO #'(0.5 . 2.5) bes8\fz bes4\> bes bes8~
 		bes bes4 bes\! r8
 		R2.*4
 		
@@ -88,13 +88,13 @@ musicOboeIMvtI = \relative c'' {
 		g2.~
 		g8 r g2->^(
 % mesures 86 à 90
-		g8) r g2\fz->^(
-		b8) r b2->^(\fz
+		g8) r \dynEO #'(0.8 . 1.5) g2\fz->^(
+		b8) r \dynEO #'(0.8 . 1.5) b2->^(\fz
 		c4) g-. fis!-.
 		g8 r g2->^(
 		g8) r g2->\fz^(
 % mesures 91 à 95
-		gis8) r b2->^(
+		gis8) r \voiceTwo b2^>^( \voiceOne
 		\once \partCombineApart a4) g!-. a-. \mark \default
 		g r r
 		R2.
@@ -109,7 +109,7 @@ musicOboeIMvtI = \relative c'' {
 		g8.(\< a16 b4. d8)\!
 		d4(\> c8[ b\! a g)]
 		g4( fis8 e fis4)
-		g8 r \partCombineUnisono b,2~\ff\>
+		g8 r \partCombineUnisono b,2~-\offset X-offset 0.5 \ff\>
 		b2.~
 % mesures 106 à 110
 		b~\pp
@@ -122,7 +122,7 @@ musicOboeIMvtI = \relative c'' {
 			b4)\! \partCombineAutomatic r r
 		}
 		{
-			\partCombineChords b2.~
+			\hairpinShorten #'(0 . 6) \partCombineChords b2.~\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -156,7 +156,7 @@ musicOboeIMvtI = \relative c'' {
 	e( g fis)
 	e( g) cis-.
 % mesures 146 à 150
-	cis2.\ff\>~
+	\dynEO #'(0.8 . 2) \hairpinEO #'(0.8 . 2) cis2.\ff\>~
 	cis\!
 	R2.*6
 	
@@ -165,7 +165,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	
-	d2.\ff\>~
+	\dynEO #'(0.8 . 2) \hairpinEO #'(0.8 . 2) d2.\ff\>~
 	d\!
 % mesures 156 à 160
 	R2.*6
@@ -184,41 +184,41 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	
-	e2.\ff
+	\dynEO #'(0.7 . 2) e2.\ff
 % mesures 171 à 175
 	fis2-. g4-.
 	e2.
 	d4-. b-. c-.
-	b2.\fz
-	\afterGrace dis2.\fz\trill {cis!16[ dis]} \mark \default
+	\dynEO #'(0.7 . 1.3) b2.\fz
+	\dynEO #'(0.8 . 1.8) \afterGrace dis2.\fz\trill {cis!16[ dis]} \mark \default
 % mesures 176 à 180
 	e4 r r
 	R2.
-	ais2.\>(
+	\hairpinShorten #'(1 . 0) \shape #'((0 . -0.5)(0 . -0.7)(0 . -0.7)(0 . -0.2)) Slur ais2.\>(
 	b2\! cis4
 	b) r r
 % mesures 181 à 185
 	R2.
-	eis,2.\>(
+	\hairpinShorten #'(1 . 0) eis,2.\>(
 	fis2\! gis4
-	fis8.)[ fis16 fis8. fis16] fis8.[ fis16]
-	fis8.[ fis16 fis8. fis16] fis8.[ fis16]
+	\beamOffset #'(0.5 . 0.5) fis8.)[ fis16 fis8. fis16] fis8.[ fis16]
+	fis8.[ fis16 fis8. fis16] \beamOffset #'(1 . 1) fis8.[ fis16]
 % mesures 186 à 190
 	cis8.[ cis16 cis8. cis16] cis8.[ cis16]
 	cis8.[ cis16 cis8. cis16] cis8.[ cis16]
 	b8.[ b16 b8. b16] b8. b16
 	b8.[ b16 b8. b16] b8. b16
-	fis'8.[ fis16 fis8. fis16] fis8. fis16
+	\beamOffset #'(0.5 . 0.5) fis'8.[ fis16 fis8. fis16] fis8. fis16
 % mesures 191 à 195
-	fis8.[ fis16 fis8. fis16] fis8. fis16
+	\beamOffset #'(0.5 . 0.5) fis8.[ fis16 fis8. fis16] fis8. fis16
 	e8.[ e16 e8. e16] e8. e16
 	e8.[ e16 e8. e16] e8. e16
-	c2.\ffz\>\(
+	c2.-\tweak X-offset 0.2 \ffz\>\(
 	b2\! ais4\)
 % mesures 196 à 200
 	c2.\fz\>\(
 	b2\! ais4\)
-	\partCombineApart cis!2. -\tweak X-offset #-2.0 \pp(
+	\partCombineApart cis!2. -\offset X-offset -1 \pp(
 	b2 ais4)
 	cis'2._\crescmarkup(
 % mesures 201 à 205
@@ -228,8 +228,8 @@ musicOboeIMvtI = \relative c'' {
 	fis4 r r
 	R2.
 % mesures 206 à 210
-	a2.\ff
-	e\fz
+	\dynEO #'(0.5 . 2) a2.\ff
+	e-\tweak X-offset 0.3 \fz
 	fis4 r r
 	R2.*5
 	
@@ -237,7 +237,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	\partCombineApart
-	e4. -\tweak X-offset #-2. \pp( fis8[ e fis]
+	e4. -\offset X-offset -1 \pp( fis8[ e fis]
 	e4. fis8[ e fis])
 % mesures 216 à 220
 	e2.~
@@ -247,7 +247,7 @@ musicOboeIMvtI = \relative c'' {
 	
 % mesures 221 à 225
 	
-	\partCombineApart fis2.(\pp
+	\partCombineApart fis2.(-\offset X-offset -1.3 \pp
 	b,4. ais8[ b cis])
 	fis2.(
 	b,4. ais8[ b cis])
@@ -255,24 +255,24 @@ musicOboeIMvtI = \relative c'' {
 	d2.(
 	e4\< f4.\> e8)\!
 	d4( cis2)
-	\partCombineChords c2.~\<
-	c4(\> \once \partCombineUnisono b2)\!( 
+	\partCombineChords \hairpinShorten #'(9 . 0) c2.~\<
+	c4(\> \once \partCombineUnisono b2)\!\( 
 % mesures 231 à 235
-	b4) \partCombineAutomatic r r \partCombineApart
-	b2(~ b8 c
+	b4\) \partCombineAutomatic r r \partCombineApart
+	\shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur b2(~ b8 c
 	b4) r r
 	b2(~ b8 c
 	b4) r r \partCombineAutomatic
 % mesures 236 à 240
 	R2.*2
 	
-	f'2.\<~
-	f4(\> e2)\!
+	\partCombineApart \voiceTwo f'2.^~
+	f4^( \voiceOne e2) \partCombineChords 
 	e4( fis!4. g8)
 % mesures 241 à 245
 	g4( fis4. fis8)
-	fis4( g) gis-.\f
-	gis\fz-. r r
+	fis4( g) \dynEO #'(0 . 1) gis-.\f
+	gis\fz-. \partCombineAutomatic r r
 	R2.
 	e4(\p fis4. g8)
 % mesures 246 à 250
@@ -296,13 +296,13 @@ musicOboeIMvtI = \relative c'' {
 % mesures 276 à 280
 	\mark \default
 % mesures 281 à 285
-	b,2.(\ff\>
-	e,4)\! r r
-	b'2.(\ff\>
-	fis4)\! r r
-	b2.(\fz\>
+	b,2.\(-\tweak X-offset 0.3 \ff\>
+	e,4\)\! r r
+	b'2.\(-\tweak X-offset 0.3 \ff\>
+	fis4\)\! r r
+	\hairpinShorten #'(0 . 7) b2.\(-\tweak X-offset 0.3 \fz\>
 % mesures 286 à 290
-	g4)\! f'\fz f\fz 
+	g4\)\! f'\fz f\fz 
 	f\fz f\fz f\fz 
 	f\fz f\fz f\fz 
 	f8\fz\> b4 b b8~\!
@@ -317,42 +317,42 @@ musicOboeIMvtI = \relative c'' {
 	gis2( g4)
 	fis2.^(
 	fis)
-	r8 b4\ff b b8
-	b2.\fz
+	r8 \dynEO #'(0.5 . 2) b4\ff b b8
+	\dynEO #'(0.5 . 2) b2.\fz
 % mesures 301 à 305
 	r8 b4 b b8
 	\partCombineChords b2.~
 	b8 r b2~
-	b8 r b2^(\fz
-	dis8) r dis2^(\fz
+	b8 r \dynEO #'(0.5 . 2) b2^(\fz
+	dis8) r \dynEO #'(0.5 . 2) dis2^(\fz
 % mesures 306 à 310
 	e4) \partCombineAutomatic b-. ais-.
-	b8 r a!2\fz^(
-	gis8) r gis2^(\fz
-	bis8) r bis2^(\fz
+	b8 r \dynEO #'(0.5 . 2) a!2\fz^(
+	gis8) r \dynEO #'(0.5 . 2) gis2^(\fz
+	bis8) r \dynEO #'(0.5 . 2) bis2^(\fz
 	cis4) fis,-. ais-. \mark \default
 % mesures 311 à 315
 	b r r
 	R2.*2
 	
 	\partCombineApart r4 r r8 fis\p\<~
-	fis4( e8[\> dis\! cis b)]
+	fis4(\> e8[\! dis cis b)]
 % mesures 316 à 320
 	b4( ais8 gis ais4)
 	b r r
-	cis4(\p fis,4. cis'8)
-	b8.(_\< cis16 dis4.\! fis8)
+	cis4(-\offset X-offset -1 \p fis,4. cis'8)
+	\shape #'((0 . 0)(0 . -0.8)(0 . -0.8)(0 . -0.5)) Slur b8.(_\< cis16 dis4.\! fis8)
 	fis4(_\> e8[\! dis cis b])
 % mesures 321 à 325
 	b4( ais8 gis ais4
-	b8) r \partCombineUnisono b2~\ffz\>
+	b8) r \partCombineUnisono b2~-\tweak X-offset #0.3 \ffz\>
 	b2.~\p
 	b~\pp
-	b(
+	b\(
 % mesures 326 à 330
-	b)( \partCombineChords
-	ais)^(
-	b4)\! \partCombineAutomatic r r
+	b\)\( \partCombineChords
+	ais\)^\(
+	b4\)\! \partCombineAutomatic r r
 	R2.*15
 % mesures 331 à 335
 	
@@ -365,22 +365,22 @@ musicOboeIMvtI = \relative c'' {
 	fis'2(-> eis4)
 	fis2(-> eis4)
 % mesures 346 à 350
-	fis( eis\< fis
-	eis fis eis\!
+	fis( eis\< \stemOffset #-1 fis
+	eis \stemOffset #-1 fis eis\!
 	fis) b,(\f d
-	fis\< b d)\!
+	\hairpinShorten #'(1 . 0) fis\< b d)\!
 	b2.\ff
 % mesures 351 à 355
 	ais
 	b,_\pp(
-	cis2_\< d4)
-	b2.(_\>
+	\hairpinShorten #'(0 . 6) cis2_\< d4)
+	\hairpinShorten #'(-1 . 4) b2.(_\>
 	cis2_\! d4)
 % mesures 356 à 360
-	\partCombineChords b2.~
+	\partCombineChords b2.~\mf\<
 	b^~
-	b~
-	b^~
+	b~\>
+	b^~\!
 	b4 \partCombineAutomatic r r 
 % mesures 361 à 365
 	R2.*3

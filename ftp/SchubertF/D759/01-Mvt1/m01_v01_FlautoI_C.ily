@@ -30,7 +30,7 @@ musicFlautoIMvtI = \relative c {
 		d2~ d8( e)
 		e2~ e8( fis)
 		fis2~ fis8( fis')
-		fis2~ fis8[ fis]
+		fis2~ fis8[ fis] 
 % mesures 36 à 40
 		fis2.~
 		fis \mark \default
@@ -52,14 +52,14 @@ musicFlautoIMvtI = \relative c {
 		g'2.(\fz\>
 % mesures 66 à 70
 		d4)\! r r
-		g2.(\fz\>
-		ees4)\! g''4\fz g\fz
-		g\fz g\fz g\fz
-		g\fz g\fz g\fz
+		\hairpinShorten #'(0 . 5) g2.(\fz\>
+		ees4)\! \dynEO #'(0 . 2.5) g''4\fz \dynEO #'(0 . 2.5) g\fz
+		\dynEO #'(0 . 2.5) g\fz \dynEO #'(0 . 2.5) g\fz \dynEO #'(0 . 2.5) g\fz
+		\dynEO #'(0 . 2.5) g\fz \dynEO #'(0 . 2.5) g\fz \dynEO #'(0 . 2.5) g\fz
 % mesures 71 à 75
-		g8\fz bes,4\> bes bes8~
-		bes bes4 bes\! bes8(
-		a2.)~ 
+		\dynEO #'(0 . 2.5) g8\fz bes,4\> bes bes8~
+		bes bes4 bes\! \voiceTwo \noFlag bes8^( \voiceOne
+		a2.)^~ 
 		a2( aes4)
 		g2.^(
 % mesures 76 à 80
@@ -72,16 +72,16 @@ musicFlautoIMvtI = \relative c {
 		r8 cis!4\ff cis cis8
 		cis2.\fz
 		r8 cis4 cis cis8
-		cis2.\fz^(
-		d8) r d2^(->\fz
+		\dynEO #'(0.8 . 2) cis2.\fz^(
+		d8) r \dynEO #'(0.8 . 2) d2^(->\fz
 % mesures 86 à 90
-		e8) r e2^(\fz->
-		g8) r g2^(\fz->
+		e8) r \dynEO #'(0.8 . 2) e2^(\fz->
+		g8) r \dynEO #'(0.8 . 2) g2^(\fz->
 		e4) d-. d-.
-		d8 r d2^(\fz->
-		e8) r e2^(\fz->
+		d8 r \dynEO #'(0.8 . 2) d2^(\fz->
+		e8) r \dynEO #'(0.8 . 2) e2^(\fz->
 % mesures 91 à 95
-		gis8) r gis2^(\fz->
+		gis8) r \dynEO #'(0.8 . 2.5) gis2^(\fz->
 		a4) d,-. fis-. \mark \default
 		g r r
 		R2.*5
@@ -109,7 +109,7 @@ musicFlautoIMvtI = \relative c {
 			b4)\! r r
 		}
 		{
-			<< b2.^( {s4\> s s\!}>>
+			\hairpinShorten #'(0 . 6) b2.^(\>\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -139,7 +139,7 @@ musicFlautoIMvtI = \relative c {
 	e( g fis)
 	e( g) g-. \partCombineApart
 % mesures 146 à 150
-	gis2.(
+	\voiceTwo gis2.^( \voiceOne
 	e2)( cis4)
 	gis2.(
 	e2 cis4)
@@ -167,35 +167,35 @@ musicFlautoIMvtI = \relative c {
 	r g4 g g8
 	r fis4 fis fis8
 	r fis4 fis fis8
-	e'2.\ff
+	\dynEO #'(0.7 . 2) e'2.\ff
 % mesures 171 à 175
 	fis2-. g4-.
 	e2.
 	d!4-. b-. c-.
-	b2.\fz
-	\afterGrace dis2.\fz^\trill {cis!16[ dis]} \mark \default
+	\dynEO #'(0.7 . 2) b2.\fz
+	\dynEO #'(0.7 . 2) \afterGrace dis2.\fz^\trill {cis!16[ dis]} \mark \default
 % mesures 176 à 180
 	e4 r r
 	R2.
-	cis2.(\>
+	\hairpinEO #'(0 . 1) \hairpinShorten #'(1 . 0) cis2.(\>
 	d2\! e4
 	d) r r
 % mesures 181 à 185
 	R2.
 	gis,2.\>(
 	a2\! b4
-	a4) fis2\fz
-	a2\fz~ a8 b32( cis d e)
+	a4) \dynEO #'(0.7 . 2) fis2\fz
+	\dynEO #'(0 . 2) a2\fz~ a8 b32( cis d e)
 % mesures 186 à 190
-	fis2.\fz
+	\dynEO #'(0 . 2) fis2.\fz
 	eis4-. b-. cis-.
 	d-. b,2\fz
 	d\fz~ d8 e32( fis g a)
 	b2.\fz
 % mesures 191 à 195
 	ais4-. e-. fis-.
-	g-. e2\fz
-	g\fz~ g8 a32( b c d)
+	g-. \dynEO #'(0.7 . 2) e2\fz
+	\dynEO #'(0.7 . 2) g\fz~ g8 a32( b c d)
 	e2.~
 	e
 % mesures 196 à 200
@@ -211,15 +211,15 @@ musicFlautoIMvtI = \relative c {
 	fis4 r r
 	R2.
 % mesures 206 à 210
-	a2.\ff
-	e\fz
+	\dynEO #'(0.5 . 2) a2.\ff
+	\dynEO #'(0.5 . 2) e\fz
 	fis4 r r
 	R2.*4
 	
 % mesures 211 à 215
 	
 	
-	\partCombineApart r4 e,(-\tweak X-offset #-2. \pp fis)
+	\partCombineApart r4 e,(-\offset X-offset -1 \pp fis)
 	g4.( fis8[ g fis]
 	g4. fis8[ g fis])
 % mesures 216 à 220
@@ -254,10 +254,10 @@ musicFlautoIMvtI = \relative c {
 	a2.~
 % mesures 241 à 245
 	a2~ a8( b)
-	b2 cis4-.\f
-	d-.\fz r r 
+	b2 \dynEO #'(0 . 2) cis4-.\f
+	\dynEO #'(0 . 2) d-.\fz r r 
 	R2.
-	a2.\p~
+	a2.-\offset X-offset -1 \p~
 % mesures 246 à 250
 	a2~ a8( b)
 	b2~ b8(_\crescmarkup cis)
@@ -301,11 +301,11 @@ musicFlautoIMvtI = \relative c {
 	
 	\mark \default
 % mesures 281 à 285
-	b,2.\ff\>(
+	b,2.-\tweak X-offset 0.3 \ff\>(
 	e,4)\! r r
-	b'2.(\ff\>
+	b'2.(-\tweak X-offset 0.3 \ff\>
 	fis4)\! r r
-	b2.(\fz\>
+	\hairpinShorten #'(0 . 7) b2.(-\tweak X-offset 0.3 \fz\>
 % mesures 286 à 290
 	g4)\! d''\fz d\fz 
 	d\fz d\fz d\fz 
@@ -322,29 +322,29 @@ musicFlautoIMvtI = \relative c {
 	gis2( g4)
 	fis2.(
 	fis)
-	r8 eis4\ff eis eis8
-	eis2.\fz
+	r8 \dynEO #'(0 . 2) eis4\ff eis eis8
+	\dynEO #'(0 . 2) eis2.\fz
 % mesures 301 à 305
 	r8 eis4 eis eis8
-	eis2.\fz^(
-	fis8) r fis2^(\fz
-	gis8) r gis2^(\fz
-	a8) r a2\fz^(
+	\dynEO #'(0 . 2) eis2.\fz^(
+	fis8) r \dynEO #'(0.5 . 2) fis2^(\fz
+	gis8) r \dynEO #'(0.5 . 2) gis2^(\fz
+	a8) r \dynEO #'(0.5 . 2.5) a2\fz^(
 % mesures 306 à 310
 	gis4) fis-. fis-.
-	fis8 r fis2^(\fz
+	fis8 r \dynEO #'(0.5 . 2) fis2^(\fz
 	gis8) r gis2^(
 	bis,8) r bis2^(
 	cis4) fis-. ais,-. \mark \default
 % mesures 311 à 315
 	\once \partCombineApart b r r
 	R2. \partCombineApart
-	r4 r r8 e,\p
+	r4 r r8 e,-\offset X-offset -1 \p
 	dis8.(\< e16 fis4. a!8)\!
 	gis4.(\> fis8\![ e dis])
 % mesures 316 à 320
 	cis2( fis4)
-	b(\p fis4. b8)
+	b(-\offset X-offset -1 \p fis4. b8)
 	ais8.( b16 cis4. e8)
 	\partCombineAutomatic dis8.(\< e16 fis4.\! a!8) \partCombineApart
 	gis4.( fis8[ e dis])
