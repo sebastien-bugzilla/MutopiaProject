@@ -122,7 +122,7 @@ musicBassoMvtII = \relative c {
 	
 	\mark \default
 % mesures 96 à 100
-	cis'!4.\ff^\arco
+	cis'!4.\ff-\offset X-offset -5 ^\arco
 	e
 	dis
 	fis
@@ -142,7 +142,7 @@ musicBassoMvtII = \relative c {
 % mesures 111 à 115
 	d8 r r
 	R4.
-	d4.(\p
+	d4.(-\offset X-offset 0.5 \p
 	fis4 e16 d)
 	e4.(
 % mesures 116 à 120
@@ -150,7 +150,7 @@ musicBassoMvtII = \relative c {
 	fis4.(
 	c'4 b16 ais)
 	b8(\< g e)\!
-	d4.\>
+	\hairpinShorten #'(1 . 0) d4.\>
 % mesures 121 à 125
 	g\!(
 	b4 a16 g)
@@ -170,7 +170,7 @@ musicBassoMvtII = \relative c {
 	c\pp c8 c c16~
 	c c8 c c16~
 % mesures 136 à 140
-	c_\decresc c8\! c c16~
+	c_\decrescmarkup c8\! c c16~
 	c c8 c c16~
 	c4.~
 	c(
@@ -238,7 +238,7 @@ musicBassoMvtII = \relative c {
 % mesures 191 à 195
 	r a,-.\fp c-.
 	e r r
-	cis!( -\tweak X-offset #-3.5 ^\arco a fis'
+	cis!( -\tweak X-offset #-4 ^\arco a fis'
 	e) r r
 	cis(_\crescmarkup a fis'
 % mesures 196 à 200
@@ -308,12 +308,12 @@ musicBassoMvtII = \relative c {
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r
-	r e^\pizz-. g-.
+	r e-\offset X-offset -8 ^\pizz-. g-.
 	b-. r r 
 	r e,-.\fp g-.
 	b-. r r 
 % mesures 261 à 265
-	gis!8(\p -\tweak X-offset #-3. ^\arco e cis'
+	gis!8(\p -\tweak X-offset -5 ^\arco e cis'
 	b8) r r
 	gis(_\crescmarkup e cis'
 	b8) r r

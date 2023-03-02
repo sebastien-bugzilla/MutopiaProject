@@ -149,9 +149,9 @@ musicOboeIIMvtII = \relative c'' {
 	
 % mesures 156 à 160
 	
-	b4.(\pp\<
+	b4.\pp\<
 	a\>
-	g8)\! r r
+	g8\! r r
 	R4.*3
 % mesures 161 à 165
 	
@@ -186,7 +186,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 	
 % mesures 191 à 195
-	a,4.(\fp\>
+	a,4.(-\offset X-offset 0.5 \fp\>
 	gis)\!(
 	a8) r r 
 	R4.*3
@@ -229,11 +229,11 @@ musicOboeIIMvtII = \relative c'' {
 	
 	
 	R4.
-	R
+	\mmrPos #-6 R
 	R
 % mesures 236 à 240
 	R \mark \default
-	a4.\ff
+	a4.-\tweak X-offset 0.5 \ff
 	c
 	b
 	d
@@ -256,14 +256,14 @@ musicOboeIIMvtII = \relative c'' {
 	a16 -\tweak X-offset #-3.5 \ff a8 a a16_~
 	a a8 a a16_( \mark \default
 % mesures 256 à 260
-	gis4.)\>_(
+	gis4.)-\tweak extra-offset #'(0 . 0.7) \>_(
 	e)\fp\>_(
 	dis4)\! r8
-	e4.\fp\>_(
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e4.\fp\>_(
 	dis4)\! r8
 % mesures 261 à 265
-	b'8( gis! e
-	b'4) r8
+	b'8\( gis! e
+	b'4\) r8
 	b\(_\crescmarkup cis16 b gis e
 	b'4\) r8
 	R4.

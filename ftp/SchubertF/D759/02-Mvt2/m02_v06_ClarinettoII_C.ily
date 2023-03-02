@@ -161,7 +161,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % mesures 186 à 190
 	R4.*5
 % mesures 191 à 195
-	fis!4.\fp\>_(
+	fis!4.-\tweak X-offset #-1 \fp\>_(
 	f)\!_(
 	e8) r r
 	b'4.->_(
@@ -201,7 +201,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 % mesures 236 à 240
 	\mark \default
-	c4.\ff
+	c4.-\tweak X-offset 0.3 \ff
 	ees
 	d
 	b4 f8
@@ -224,10 +224,10 @@ musicClarinettoIIMvtII = \relative c'' {
 	a!16\ff a8 a a16_~
 	a a8 a a16_( \mark \default
 % mesures 256 à 260
-	g4.\>)_(
-	cis\fp\>)
+	g4.-\tweak extra-offset #'(1 . 1) \>)_(
+	cis-\tweak extra-offset #'(1 . 1.8) \fp-\tweak extra-offset #'(1 . 2) \>)
 	s4.\!
-	cis4._(\fp\>
+	\hairpinShorten #'(0 . 1) cis4._(-\tweak X-offset 1 \fp\>
 	c!4)\! r8
 % mesures 261 à 265
 	d( b g

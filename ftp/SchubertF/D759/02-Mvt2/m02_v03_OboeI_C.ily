@@ -77,7 +77,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	
-	\partCombineApart des4.\pp(
+	\partCombineApart des4.-\offset X-offset -1 \pp(
 	f->
 % mesures 86 à 90
 	ees
@@ -89,7 +89,7 @@ musicOboeIMvtII = \relative c'' {
 	aes'16.(_\p-> ges32 aes16 ges ees c
 	des8) r r \partCombineAutomatic
 	R4. \partCombineApart
-	bes'16.(_\ppp-> aes32 bes16 aes f des)
+	\beamOffset #'(-0.5 . -0.5) \shape #'((0 . 0)(0 . -0.4)(0 . -0.4)(0 . 0)) Slur bes'16.(_\ppp-> aes32 bes16 aes f des)
 	aes'16.(-> ges32 aes16 ges ees c) \mark \default \partCombineAutomatic
 % mesures 96 à 100
 	cis!4.\ff
@@ -119,7 +119,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	
-	\partCombineApart r8 r g,16(_\< a
+	\partCombineApart r8 r \hairpinEO #'(-1 . 2) g,16(_\< a
 	b8_\> d d\!
 % mesures 121 à 125
 	d4) \partCombineAutomatic r8
@@ -149,14 +149,14 @@ musicOboeIMvtII = \relative c'' {
 	
 % mesures 156 à 160
 	
-	b4.(\pp\<
-	dis\>
-	e8)\! r r \partCombineAutomatic
+	\partCombineApart b4.( \voiceTwo
+	dis
+	\noFlag e8) \partCombineAutomatic  \voiceOne r r \partCombineAutomatic
 	R4.*3
 % mesures 161 à 165
 	
 	
-	\partCombineChords d4.~
+	\aIIOmit \partCombineChords d4.~
 	d~
 	d8 \partCombineAutomatic r r
 % mesures 166 à 170
@@ -165,7 +165,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	fis4.\ff
+	\oneVoice fis4.\ff
 	gis
 % mesures 176 à 180
 	a8( b8.-> a16)
@@ -186,8 +186,8 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 % mesures 191 à 195
-	c,4.(
-	b)\!(
+	\partCombineApart \voiceOne c,4.(
+	b)(
 	e8)( cis! a
 	\partCombineApart e) r r 
 	e'8(_\crescmarkup fis16 e cis a
@@ -228,12 +228,12 @@ musicOboeIMvtII = \relative c'' {
 % mesures 231 à 235
 	
 	
-	\partCombineApart fis16.(->-\tweak X-offset #-3.5 \pp e32 fis16 e cis a
+	\partCombineApart fis16._(->_\pp e32 fis16 e cis a
 	e'16. d32 e16 d b gis
 	a8) r r \partCombineAutomatic
 % mesures 236 à 240
 	R4. \mark \default
-	c4.\ff
+	c4.-\tweak X-offset 0.5 \ff
 	e
 	f4 d8
 	b'4 gis8
@@ -256,14 +256,14 @@ musicOboeIMvtII = \relative c'' {
 	\partCombineChords dis!16 -\tweak X-offset #-3.5 \ff dis8 dis dis16(
 	fis) fis8 fis fis16^( \mark \default
 % mesures 256 à 260
-	e4.)\>^(
-	g,)\fp\>^(
+	\hairpinShorten #'(1 . 0) e4.)-\tweak extra-offset #'(0 . 0.7) \>^(
+	\hairpinShorten #'(0 . 1) g,)\fp\>^(
 	fis4)\! \partCombineAutomatic r8
 	g4.\fp\>^(
 	fis4)\! r8
 % mesures 261 à 265
-	b'8( gis! e
-	b4) r8
+	b'8\( gis! e
+	b4\) r8
 	b'\( cis16 b gis e
 	b4\) r8
 	R4.

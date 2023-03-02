@@ -15,10 +15,10 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 	
-	ais4._(\fp\>
+	ais4._(-\tweak X-offset #0.3 \fp\>
 	a!4)\! r8
 % mesures 16 à 20
-	b4.(\pp\<
+	b4.(-\tweak X-offset #0.6 \pp\<
 	dis\>
 	e8)\! r r
 	R4.*3
@@ -151,19 +151,19 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 	
-	ais,4._(\fp\>
+	ais,4._(-\tweak X-offset 0.3 \fp\>
 % mesures 156 à 160
 	a!)\!
-	gis\pp\<
-	b\>~
+	\hairpinShorten #'(-0.3 . -1.5) gis-\tweak X-offset 0.5 \pp\<
+	\hairpinShorten #'(1.5 . 0) b\>~
 	b8\! r r
 	R4.*3
 % mesures 161 à 165
 	
 	
-	g'4.(\<
+	g'4.\<
 	fis\>
-	g8)\! r r
+	g8\! r r
 % mesures 166 à 170
 	R4.*4
 	
@@ -202,9 +202,9 @@ musicFlautoIIMvtII = \relative c'' {
 	e8(\<^\crescmarkup fis16 e\> cis a\!
 % mesures 196 à 200
 	e8) r r
-	a'4.\(\pp
+	a'4.\pp
 	gis
-	a8\) r r
+	a8 r r
 	R4.*35
 % mesures 201 à 205
 	
@@ -247,12 +247,12 @@ musicFlautoIIMvtII = \relative c'' {
 	c8 r r
 	R4. 
 	a16\ff a8 a a16(
-	dis) dis8 dis dis16( \mark \default
+	dis) dis8 dis dis16\( \mark \default
 % mesures 256 à 260
-	e8) r r
-	ais,,4.\fp\>(
+	e8\) r r
+	ais,,4.-\tweak X-offset 0.3 \fp\>(
 	a!4)\! r8
-	ais4._(\fp\>
+	ais4._(-\tweak X-offset 0.3 \fp\>
 	a!4)\! r8
 % mesures 261 à 265
 	R4.

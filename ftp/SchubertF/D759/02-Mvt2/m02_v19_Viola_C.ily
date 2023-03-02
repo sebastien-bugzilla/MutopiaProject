@@ -23,7 +23,7 @@ musicViolaMvtII = \relative c'' {
 	gis8 e cis)
 	<<{
 		bis4.(
-		cis)(
+		\shape #'((0 . -0.3)(0 . -0.5)(0 . -0.5)(0 . -0.3)) Slur cis)(
 		g'
 		fis)(
 		e8)
@@ -88,7 +88,7 @@ musicViolaMvtII = \relative c'' {
 	gis,8(_\crescmarkup e cis'
 	b) r r
 % mesures 56 à 60
-	e,\pp r r
+	e,-\offset X-offset 0.7 \pp r r
 	R4.*7
 	
 	
@@ -109,7 +109,7 @@ musicViolaMvtII = \relative c'' {
 	cis cis8 cis cis16(\!
 	g')\f\> g8 g g16(\!
 	fis)\p fis8 d des16(
-	c)\pp c8 c c16~
+	\beamOffset #'(0.5 . 0.5) c)\pp c8 c c16~
 	c c8 c16( cis) cis(
 % mesures 76 à 80
 	d) d8 d d16(
@@ -194,7 +194,7 @@ musicViolaMvtII = \relative c'' {
 	e4.\pp~
 	e~
 % mesures 136 à 140
-	e~_\decresc
+	e~_\decrescmarkup
 	e\!~
 	e~
 	e~
@@ -321,7 +321,7 @@ musicViolaMvtII = \relative c'' {
 	cis)\ppp cis8 cis cis16(
 % mesures 236 à 240
 	d) d8 d d16 \mark \default
-	c8-.\ff a-. e'~
+	c8-.-\offset X-offset -2.7 \ff a-. e'~
 	e a,-. a'~
 	a d,-. f8~
 	f e-. b'~
@@ -330,9 +330,9 @@ musicViolaMvtII = \relative c'' {
 	cis16 e d8-. dis-.
 	e-. g-. b-.
 	e,32[ b e d] c[ b a g] b[ a g fis]
-	e[ b' g' fis] e[ d c b] c[ b a g]
+	\beamOffset #'(0 . -1) e[ b' g' fis] e[ d c b] c[ b a g]
 % mesures 246 à 250
-	a[ b c b] a[ c fis e] dis![ c b a]
+	a[ b c b] \beamOffset #'(0.5 . 0.5) a[ c fis e] dis![ c b a]
 	g[ fis e fis] dis![ fis b c] b[ a g fis]
 	e[ fis g e] d[ g b c] d[ f e d]
 	c[ b a gis!] e'[ d c b] c[ bes g e]
@@ -345,9 +345,9 @@ musicViolaMvtII = \relative c'' {
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r
-	<e g>4.\fp\>(
+	<e g>4.-\offset X-offset 0.5 \fp\>(
 	<dis fis>)\!
-	<e g>(\fp\>
+	\dynEO #'(0.7 . 1) <e g>(\fp-\tweak extra-offset #'(0.7 . 1) \>
 	<dis fis>)(\!
 % mesures 261 à 265
 	e8) e,( cis'
@@ -395,5 +395,5 @@ musicViolaMvtII = \relative c'' {
 	<e b'> r r
 % mesures 311 à 312
 	<e b'> r r
-	<e b'>4. -\tweak X-offset #-5.5 ^\arco\fermata\espressivo \bar "|."
+	<e b'>4. -\tweak X-offset #-6 ^\arco\fermata\espressivo \bar "|."
 }

@@ -16,7 +16,7 @@ musicClarinettoIMvtII = \relative c'' {
 	
 	
 	
-	bes4.\fp\>^(
+	\hairpinShorten #'(0 . 1) bes4.\fp\>^(
 	a4)\! r8
 % mesures 16 à 20
 	R4.*15
@@ -25,7 +25,7 @@ musicClarinettoIMvtII = \relative c'' {
 % mesures 26 à 30
 	
 % mesures 31 à 35
-	\partCombineApart d16_(\> fis a c\! b a
+	\partCombineApart d16_(_\> fis a c\! b a
 	g8) r r \mark \default \partCombineAutomatic
 	fis4.\f
 	g
@@ -47,7 +47,7 @@ musicClarinettoIMvtII = \relative c'' {
 	b8 g e)
 	dis4.->(
 	e) \partCombineAutomatic
-	bes'\fp\>^(
+	\hairpinShorten #'(0 . 1) bes'\fp\>^(
 % mesures 51 à 55
 	a4)\! r8
 	\partCombineApart d8( b g
@@ -132,7 +132,7 @@ musicClarinettoIMvtII = \relative c'' {
 	
 	
 	
-	\partCombineChords bes,4.^(\fp\>
+	\partCombineChords \hairpinShorten #'(0 . 1) bes,4.^(\fp\>
 % mesures 156 à 160
 	a)\!^(
 	<< g8) \new Voice {\voiceTwo g} >> \oneVoice \partCombineAutomatic r r
@@ -166,7 +166,7 @@ musicClarinettoIMvtII = \relative c'' {
 	gis4.(->
 	a) \partCombineAutomatic
 % mesures 191 à 195
-	\partCombineChords aes^(\fp\>
+	\partCombineChords aes^(-\tweak X-offset #-1 \fp\>
 	g)^~\!
 	g8 \partCombineAutomatic r r
 	d'4.->^(
@@ -191,7 +191,7 @@ musicClarinettoIMvtII = \relative c'' {
 	
 	
 	
-	\partCombineApart \voiceOne c4. -\tweak X-offset #-2.4 \pp(
+	\partCombineApart \voiceOne c4.\pp(
 % mesures 226 à 230
 	e->
 	d
@@ -199,14 +199,14 @@ musicClarinettoIMvtII = \relative c'' {
 	e8(_\< g4
 	f8 a4)~\!
 % mesures 231 à 235
-	a16.(_\f_\> g32 a16 g e c\!
+	a16._(_\f_\> g32 a16 g e c\!
 	g'16.->_\p f32 g16 f d b
 	c8) r r \partCombineAutomatic \oneVoice
 	R4.*3
 	
 % mesures 236 à 240
 	\mark \default
-	ees4.\ff
+	ees4.-\tweak X-offset 0.3 \ff
 	g
 	aes4 f8
 	d4 b8
@@ -232,7 +232,7 @@ musicClarinettoIMvtII = \relative c'' {
 	g4.)^(
 	ees)( 
 	<< { \voiceOne d16)_(\! fis a c b a) } \new Voice { \voiceTwo d,4 r8 } >> \partCombineAutomatic \oneVoice
-	ees4.^(\fp\>
+	ees4.^(-\tweak X-offset 1 \fp\>
 	d4)\! r8
 % mesures 261 à 265
 	d( b g
@@ -282,7 +282,7 @@ musicClarinettoIMvtII = \relative c'' {
 	a4.^(->
 % mesures 306 à 310
 	b8) r r
-	\partCombineAutomatic a4(_\> b16 c)\!
+	\partCombineAutomatic \hairpinShorten #'(1 . 0) a4(_\> b16 c)\!
 	\partCombineChords b4.~
 	b(
 	d)~

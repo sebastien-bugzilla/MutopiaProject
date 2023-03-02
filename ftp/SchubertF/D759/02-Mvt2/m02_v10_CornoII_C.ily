@@ -102,7 +102,7 @@ musicCornoIIMvtII = \relative c' {
 	r r d'\fz
 % mesures 106 à 110
 	r r e,\fz
-	r r a\fz
+	r r a-\tweak X-offset 0.3 \fz
 	r r c
 	c4.
 	c \mark \default
@@ -153,14 +153,14 @@ musicCornoIIMvtII = \relative c' {
 	g8 r r
 	g4.->_~
 	g4 r8 \mark \default
-	g4.\ff
+	g4.-\tweak X-offset 0.5 \ff
 	g
 % mesures 176 à 180
-	g8 g4\fz
+	g8 g4-\tweak X-offset 0.5 \fz
 	g4.
 	c,
 	c
-	c8 c4\fz
+	c8 c4-\tweak X-offset 0.5 \fz
 % mesures 181 à 185
 	c4.
 	a'
@@ -210,7 +210,7 @@ musicCornoIIMvtII = \relative c' {
 	r r g -\tweak X-offset #-2.7 \fz
 	r r g -\tweak X-offset #-2.7 \fz
 	r c c
-	c,4. -\tweak X-offset #-3.8 \ff
+	c,4. -\tweak X-offset #-3 \ff
 % mesures 251 à 255
 	c'
 	f,8 r r

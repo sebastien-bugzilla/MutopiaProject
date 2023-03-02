@@ -58,7 +58,7 @@ musicTromboneIIMvtII = \relative c {
 % mesures 91 à 95
 	\mark \default
 % mesures 96 à 100
-	cis,4.\ff
+	cis,4.-\tweak X-offset #-1.5 \ff
 	e
 	dis
 	fis
@@ -68,9 +68,9 @@ musicTromboneIIMvtII = \relative c {
 	gis8-. e-. dis-.
 	e r cis'\fz
 	r r cis\fz
-	r r a\fz
+	r r a-\tweak X-offset 0.3 \fz
 % mesures 106 à 110
-	r r bis\fz
+	r r bis-\tweak X-offset 0.3 \fz
 	r cis-. b!-.
 	r cis-. cis-.
 	cis4.
@@ -104,7 +104,7 @@ musicTromboneIIMvtII = \relative c {
 	
 	
 	\mark \default
-	fis4.\ff
+	fis4.-\tweak X-offset 0.5 \ff
 	gis
 % mesures 176 à 180
 	a8( b8.-> a16)
@@ -155,12 +155,12 @@ musicTromboneIIMvtII = \relative c {
 	r r b -\tweak X-offset #-2.7 \fz
 	b b d! -\tweak X-offset #-2.7 \fz
 	r c-. bes-.
-	bes4. -\tweak X-offset #-3.8 \ff
+	bes4. -\tweak X-offset #0.1 \ff
 % mesures 251 à 255
 	bes
 	a8 r r
 	R4.
-	a4. -\tweak X-offset #-3.8 \ff
+	a4. -\tweak X-offset #0.1 \ff
 	a \mark \default
 % mesures 256 à 260
 	gis!8 r r

@@ -52,7 +52,7 @@ musicTrombaIIMvtI = \relative c {
 % mesures 66 à 70
 	
 % mesures 71 à 75
-		c,4-\offset X-offset 0.5 \fz r r
+		c,4-\offset X-offset 1 \fz r r
 		R2.*9
 % mesures 76 à 80
 	

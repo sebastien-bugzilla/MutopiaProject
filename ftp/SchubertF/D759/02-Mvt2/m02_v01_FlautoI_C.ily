@@ -15,10 +15,10 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	
-	c4.^(\fp\>
+	c4.^(-\tweak X-offset #0.3 \fp\>
 	b4)\! r8
 % mesures 16 à 20
-	e4.(\pp\<
+	e4.(-\tweak X-offset #0.6 \pp\<
 	fis\>
 	g8)\! r r
 	R4.*3
@@ -63,7 +63,7 @@ musicFlautoIMvtII = \relative c'' {
 	b4)\! r8
 	\partCombineApart b'(-\tweak X-offset #-1.5 \p gis e
 	b) r r
-	b'->( cis16_\crescmarkup b gis e
+	b'->( \markEO #'(0 . 3) cis16_\crescmarkup b gis e
 	b8) r r
 % mesures 56 à 60
 	e4.( 
@@ -84,7 +84,7 @@ musicFlautoIMvtII = \relative c'' {
 	
 % mesures 91 à 95
 	
-	\partCombineApart bes16.(->_\pp aes32 bes16 aes f des)
+	\partCombineApart \dynEO #'(0 . 3) bes16.(->_\pp aes32 bes16 aes f des)
 	aes'16.(_> ges32 aes16 ges ees c
 	des8) r r
 	\partCombineAutomatic R4. \mark \default
@@ -151,7 +151,7 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	
-	c4.^(\fp\>
+	c4.^(-\tweak X-offset 0.3 \fp\>
 % mesures 156 à 160
 	b)\!
 	\partCombineChords e(
@@ -161,15 +161,15 @@ musicFlautoIMvtII = \relative c'' {
 % mesures 161 à 165
 	
 	
-	g4.(\<
-	a\>
-	b8)\! r r
+	\partCombineApart g4.(
+	\voiceTwo a
+	\noFlag b8) \partCombineAutomatic r r
 % mesures 166 à 170
 	R4.*4
 	
 	
 	\partCombineApart
-	b,16(_\< dis fis a_\> gis fis\!
+	\voiceOne b,16(_\< dis fis a_\> gis fis\!
 % mesures 171 à 175
 	e8) r r 
 	b16(_\< dis fis a_\> gis fis\!
@@ -199,12 +199,12 @@ musicFlautoIMvtII = \relative c'' {
 	e)\!
 	e'8(\< cis\> a\!
 	e) r r
-	e'8(\< fis16 e\> cis a\!
+	\beamOffset #'(0.5 . 0.5) e'8(\< fis16 e\> cis a\!
 % mesures 196 à 200
 	e8) r r
-	a4.\(\pp
-	b
-	cis8\) r r
+	\partCombineApart a4.\(
+	\voiceTwo b
+	\noFlag cis8\) \partCombineAutomatic r r
 	R4.*35
 % mesures 201 à 205
 	
@@ -223,10 +223,10 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	
-	\partCombineApart fis,16.(_\ppp-> e32 fis16 e cis a
+	\partCombineApart \voiceOne fis,16._(_\ppp-> e32 fis16 e cis a
 % mesures 236 à 240
 	e'16.-> d32 e16 d b gis) \mark \default
-	\partCombineAutomatic a'4.\ff
+	\partCombineAutomatic \dynEO #'(0.5 . 2) a'4.\ff
 	c
 	b
 	d
@@ -241,18 +241,18 @@ musicFlautoIMvtII = \relative c'' {
 	a
 	g8 \partCombineApart b,4
 	a8 c4
-	\partCombineChords e16\ff[ e8 e e16(] 
+	\partCombineChords \dynEO #'(0 . 1.5) e16\ff[ e8 e e16(] 
 % mesures 251 à 255
 	g)[ g8 g g16] \partCombineAutomatic
 	a8 r r 
 	R4. 
-	dis,!16\ff dis8 dis dis16(
-	fis) fis8 fis fis16( \mark \default
+	\dynEO #'(0 . 1.5) dis,!16\ff dis8 dis dis16(
+	fis) fis8 fis fis16\( \mark \default
 % mesures 256 à 260
-	e8) r r
+	e8\) r r
 	c,4.(
 	b16)\!( dis! fis a gis fis)
-	c4.^(\fp\>
+	c4.^(-\tweak X-offset 0.3 \fp\>
 	b4)\! r8
 % mesures 261 à 265
 	\partCombineApart b'8( gis e

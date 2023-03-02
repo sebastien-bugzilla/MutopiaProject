@@ -23,7 +23,7 @@ musicFagottoIMvtII = \relative c' {
 	
 	
 	
-	\clef tenor \partCombineApart \voiceOne c4.(\fp\>
+	\clef tenor \partCombineApart \voiceOne c4._(_\fp_\>
 	b16\! dis fis a gis fis
 % mesures 16 à 20
 	e8) r r \partCombineAutomatic
@@ -94,7 +94,7 @@ musicFagottoIMvtII = \relative c' {
 	e8 \partCombineApart \voiceOne gis,4
 % mesures 101 à 105
 	fis8 a4
-	gis8-.[ \partCombineAutomatic e'-. dis-.]
+	\beamOffset #'(-0.5 . -0.5) gis8-.[ \partCombineAutomatic e'-. dis-.]
 	cis4.
 	e
 	dis
@@ -111,7 +111,7 @@ musicFagottoIMvtII = \relative c' {
 	
 	
 	
-	r8 r b'16( cis!
+	r8 r \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur b'16( cis!
 	d4.)~
 % mesures 121 à 125
 	d4 r8
@@ -121,7 +121,7 @@ musicFagottoIMvtII = \relative c' {
 	
 % mesures 126 à 130
 	
-	r8 r \clef tenor e16( fis!
+	r8 r \clef tenor \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur e16( fis!
 	g4.)~
 	g4 r8
 	R4.
@@ -222,7 +222,7 @@ musicFagottoIMvtII = \relative c' {
 	
 % mesures 236 à 240
 	\clef bass \mark \default
-	a,8\ff-. a,-. e'~
+	a,8-\tweak X-offset #-2 \ff-. a,-. e'~
 	e a,-. a'~
 	a d,-. f~
 	f e-. b'~
@@ -245,8 +245,8 @@ musicFagottoIMvtII = \relative c' {
 	b,,!32[ -\tweak X-offset #-3.5 \ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
-	\partCombineApart cis'!4.(\>
-	s4.)\! % g')(
+	\partCombineApart cis'!4.(
+	s4.) % g')(
 	s4 \once \partCombineAutomatic r8 \clef tenor % fis4) r8 \clef tenor
 	\partCombineApart c4._\fp(_\>
 	b16)\!_( dis fis a gis fis
@@ -258,7 +258,7 @@ musicFagottoIMvtII = \relative c' {
 	dis\pp dis4->
 % mesures 266 à 270
 	dis4\< dis8\! \clef tenor
-	a'8. fis16 gis a
+	\beamOffset #'(-0.5 . -0.5) a'8. fis16 gis a
 	gis8 r r
 	R4.*5
 	

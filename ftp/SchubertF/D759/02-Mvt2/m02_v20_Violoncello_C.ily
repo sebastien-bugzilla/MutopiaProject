@@ -26,14 +26,14 @@ musicVioloncelloMvtII = \relative c {
 	R4.*2
 	
 % mesures 16 à 20
-	e'8-.^\pizz dis-. cis-. 
+	e'8-.-\offset X-offset -1 ^\pizz dis-. cis-. 
 	b-. a-. fis-. 
 	e-. g^\arco( fis
 	e d c)
 	b( g e'
 % mesures 21 à 25
 	\once \stemUp d4.\>)
-	g'8\!^\pizz-. fis-. e-. 
+	g'8\!-\offset X-offset -6.5 ^\pizz-. fis-. e-. 
 	d-. c-. a-. 
 	g-. g^\arco( fis
 	e d c)
@@ -74,7 +74,7 @@ musicVioloncelloMvtII = \relative c {
 	gis(_\crescmarkup e cis'
 	b8) r r
 % mesures 56 à 60
-	e' -\tweak X-offset #-5.5 ^\pizz\pp-. dis-. cis-. 
+	e' -\tweak X-offset -6 ^\pizz\pp-. dis-. cis-. 
 	b-. a-. fis-. 
 	e-. r r 
 	R4.*13
@@ -142,7 +142,7 @@ musicVioloncelloMvtII = \relative c {
 % mesures 111 à 115
 	d8 r r
 	R4.
-	d4.(\p
+	d4.(-\offset X-offset 0.5 \p
 	fis4 e16 d)
 	e4.(
 % mesures 116 à 120
@@ -150,7 +150,7 @@ musicVioloncelloMvtII = \relative c {
 	fis4.(
 	c'4 b16 ais)
 	b8(\< g e)\!
-	d4.\>
+	\hairpinShorten #'(1 . 0) d4.\>
 % mesures 121 à 125
 	g\!(
 	b4 a16 g)
@@ -170,7 +170,7 @@ musicVioloncelloMvtII = \relative c {
 	c\pp c8 c c16~
 	c c8 c c16~
 % mesures 136 à 140
-	c_\decresc c8\! c c16~
+	c_\decrescmarkup c8\! c c16~
 	c c8 c c16~
 	c4.~
 	c(
@@ -192,7 +192,7 @@ musicVioloncelloMvtII = \relative c {
 	e8( e, fis)
 	gis4.(\>
 	cis,)\!
-	r8 e,^\pizz\fp-. g-.
+	r8 e,^\pizz-\offset X-offset -1 \fp-. g-.
 % mesures 156 à 160
 	b4 r8
 	e'-. dis-. cis-.
@@ -279,7 +279,7 @@ musicVioloncelloMvtII = \relative c {
 	a\ppp a8 a a16~ 
 % mesures 236 à 240
 	a a8 a a16~ \mark \default
-	a8\ff a,-. e'~
+	a8-\offset X-offset -2.7 \ff a,-. e'~
 	e a,-. a'~
 	a d,-. f~
 	f e-. b'~
@@ -352,10 +352,10 @@ musicVioloncelloMvtII = \relative c {
 % mesures 306 à 310
 	e8) r r
 	R4.
-	e8 -\tweak X-offset #-4 ^\pizz-. cis-. b-.
+	e8 -\tweak X-offset #-5 ^\pizz-. cis-. b-.
 	a-. gis-. fis-.
 	e r r 
 % mesures 311 à 312
 	e r r
-	<e b'>4. -\tweak X-offset #-5.5 ^\arco\fermata\espressivo \bar "|."
+	<e b'>4. -\tweak X-offset #-6 ^\arco\fermata\espressivo \bar "|."
 }

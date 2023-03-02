@@ -102,7 +102,7 @@ musicCornoIMvtII = \relative c'' {
 	r r f\fz
 % mesures 106 à 110
 	r r e\fz
-	r r e\fz
+	r r e-\tweak X-offset 0.3 \fz
 	r r \partCombineApart c
 	c4. \partCombineAutomatic
 	f \mark \default
@@ -142,7 +142,7 @@ musicCornoIMvtII = \relative c'' {
 % mesures 151 à 155
 	R4.*5
 % mesures 156 à 160
-	g,4.^(-\tweak X-offset #-2.3 \p
+	g,4.^(\p
 	e8) r r
 	R4.*12
 % mesures 161 à 165
@@ -157,14 +157,14 @@ musicCornoIMvtII = \relative c'' {
 	e8) r r
 	d4.(->
 	e4) r8 \mark \default \partCombineAutomatic
-	g4.\ff
+	g4.-\tweak X-offset 0.5 \ff
 	g
 % mesures 176 à 180
-	g8 g4\fz
+	g8 g4-\tweak X-offset 0.5 \fz
 	e4.
 	c
 	c
-	c8 c4\fz
+	c8 c4-\tweak X-offset 0.5 \fz
 % mesures 181 à 185
 	c4.
 	\partCombineApart a
@@ -214,7 +214,7 @@ musicCornoIMvtII = \relative c'' {
 	r r g -\tweak X-offset #-2.7 \fz
 	r r g -\tweak X-offset #-2.7 \fz
 	r \partCombineApart c, c \partCombineAutomatic
-	c4. -\tweak X-offset #-3.8 \ff
+	c4. -\tweak X-offset #-3 \ff
 % mesures 251 à 255
 	\partCombineApart c \partCombineAutomatic
 	f8 r r

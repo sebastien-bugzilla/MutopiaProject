@@ -161,15 +161,15 @@ musicTromboneIIIMvtII = \relative c' {
 	b e,-. e~
 % mesures 246 à 250
 	e a,-. c~
-	c b-. fis'~
+	\beamOffset #'(0 . -0.5) c b-. fis'~
 	fis16 e g8-. gis~
 	gis16 b a8-. c-.
-	c,4. -\tweak X-offset #-3.8 \ff
+	c,4.\ff
 % mesures 251 à 255
 	c
 	f,8 r r
 	R4.
-	b! -\tweak X-offset #-3.8 \ff
+	b!\ff
 	b \mark \default
 % mesures 256 à 260
 	cis!8 r r

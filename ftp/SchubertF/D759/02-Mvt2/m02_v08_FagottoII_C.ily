@@ -222,7 +222,7 @@ musicFagottoIIMvtII = \relative c' {
 	
 % mesures 236 à 240
 	\clef bass \mark \default
-	a8\ff-. a,-. e'~
+	a8-\tweak X-offset #-2 \ff-. a,-. e'~
 	e a,-. a'~
 	a d,-. f~
 	f e-. b'~
@@ -245,7 +245,7 @@ musicFagottoIIMvtII = \relative c' {
 	b,!32[ -\tweak X-offset #-3.5 \ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
-	cis!8 r r
+	cis!8\> r r
 	<e' g>4.^(\fp\> % e'4.\fp\>(
 	<dis fis>4)\! r8 \clef tenor % dis4\!) r8 \clef tenor
 	R4.*3

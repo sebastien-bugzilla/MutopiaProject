@@ -65,7 +65,7 @@ musicTrombaIMvtII = \relative c'' {
 	
 	\mark \default
 % mesures 96 à 100
-	e4.\ff
+	e4.-\tweak X-offset #-1.5 \ff
 	\partCombineApart e \partCombineAutomatic
 	R4.
 	\partCombineApart e
@@ -113,7 +113,7 @@ musicTrombaIMvtII = \relative c'' {
 	g'4.\ff
 	g
 % mesures 176 à 180
-	g8 g4\fz
+	g8 g4-\tweak X-offset 1 \fz
 	g4.
 	c
 	c
@@ -158,7 +158,7 @@ musicTrombaIMvtII = \relative c'' {
 	r8 g4 -\tweak X-offset #-2.7 \fz
 	r8 g4 -\tweak X-offset #-2.7 \fz
 	r8 c-. c-.
-	c4. -\tweak X-offset #-3.8 \ff
+	c4. -\tweak X-offset #-3 \ff
 % mesures 251 à 255
 	c
 	R4.*2
