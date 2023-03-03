@@ -22,6 +22,7 @@
 %\include "./00-Common/Symph8_D759_NameStaff.ily"
 %\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
 %\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v03_OboeI.ily"
 \include "./01-Mvt1/m01_v04_OboeII.ily"
@@ -54,6 +55,9 @@
 				\keepWithTag #'(oboeI) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceOboeIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicOboeIMvtI
 			}
 		>>
@@ -77,6 +81,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicOboeIMvtII
@@ -104,6 +111,9 @@
 				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceOboeIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicOboeIIMvtI 
 			}
 		>>
@@ -127,6 +137,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicOboeIIMvtII 

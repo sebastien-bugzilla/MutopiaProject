@@ -120,6 +120,33 @@ hairpinEO = #(define-music-function
 
 aIIOmit = \once \omit Voice.CombineTextScript
 
+InCueContext = {
+	\override Beam.beam-thickness = #0.30 % 0.30
+	\override StemTremolo.beam-thickness = #0.35 % 0.30
+	\override Beam.length-fraction = #0.67 % 0.8
+	\override Stem.length-fraction = #0.85 % 0.8
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\set fontSize = #-3 %-3
+	\override TupletNumber.avoid-slur = #'ignore
+	\override Script.staff-padding = ##f
+}
+
+OutCueContext = {
+	\revert Beam.beam-thickness
+	\revert StemTremolo.beam-thickness
+	\revert Beam.length-fraction
+	\revert Stem.length-fraction
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\unset fontSize
+	\revert TupletNumber.avoid-slur
+	\revert Script.staff-padding
+	
+}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

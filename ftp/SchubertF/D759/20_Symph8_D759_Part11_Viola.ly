@@ -22,6 +22,7 @@
 %\include "./00-Common/Symph8_D759_NameStaff.ily"
 %\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
 %\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v19_Viola.ily"
 \include "./02-Mvt2/m02_v19_Viola.ily"
@@ -52,6 +53,9 @@
 				\keepWithTag #'(viola) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceViolaMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicViolaMvtI
 			}
 		>>
@@ -75,6 +79,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolaMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicViolaMvtII

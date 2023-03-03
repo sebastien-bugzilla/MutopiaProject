@@ -22,6 +22,7 @@
 %\include "./00-Common/Symph8_D759_NameStaff.ily"
 %\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
 %\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v01_FlautoI.ily"
 \include "./01-Mvt1/m01_v02_FlautoII.ily"
@@ -54,6 +55,9 @@
 				\keepWithTag #'(flautoI) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicFlautoIMvtI
 			}
 		>>
@@ -77,6 +81,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicFlautoIMvtII
@@ -104,6 +111,9 @@
 				\keepWithTag #'(flautoII) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicFlautoIIMvtI 
 			}
 		>>
@@ -127,6 +137,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicFlautoIIMvtII 

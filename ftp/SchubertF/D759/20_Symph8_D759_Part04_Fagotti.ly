@@ -22,6 +22,7 @@
 %\include "./00-Common/Symph8_D759_NameStaff.ily"
 %\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
 %\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v07_FagottoI.ily"
 \include "./01-Mvt1/m01_v08_FagottoII.ily"
@@ -54,6 +55,9 @@
 				\keepWithTag #'(fagottoI) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicFagottoIMvtI
 			}
 		>>
@@ -77,6 +81,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicFagottoIMvtII
@@ -104,6 +111,9 @@
 				\keepWithTag #'(fagottoII) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicFagottoIIMvtI 
 			}
 		>>
@@ -127,6 +137,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicFagottoIIMvtII 

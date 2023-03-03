@@ -22,6 +22,7 @@
 %\include "./00-Common/Symph8_D759_NameStaff.ily"
 %\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
 %\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v05_ClarinettoI.ily"
 \include "./01-Mvt1/m01_v06_ClarinettoII.ily"
@@ -54,6 +55,9 @@
 				\keepWithTag #'(clarinettoI) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceClarinettoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicClarinettoIMvtI
 			}
 		>>
@@ -77,6 +81,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicClarinettoIMvtII
@@ -104,6 +111,9 @@
 				\keepWithTag #'(clarinettoII) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceClarinettoIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicClarinettoIIMvtI 
 			}
 		>>
@@ -127,6 +137,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicClarinettoIIMvtII 

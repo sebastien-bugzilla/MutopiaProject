@@ -22,6 +22,7 @@
 %\include "./00-Common/Symph8_D759_NameStaff.ily"
 %\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
 %\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v09_CornoI.ily"
 \include "./01-Mvt1/m01_v10_CornoII.ily"
@@ -54,6 +55,9 @@
 				\keepWithTag #'(cornoI) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicCornoIMvtI
 			}
 		>>
@@ -77,6 +81,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(cornoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicCornoIMvtII
@@ -104,6 +111,9 @@
 				\keepWithTag #'(cornoII) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicCornoIIMvtI 
 			}
 		>>
@@ -127,6 +137,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(cornoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicCornoIIMvtII 

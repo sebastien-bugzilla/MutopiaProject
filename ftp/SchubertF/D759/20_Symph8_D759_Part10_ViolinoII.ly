@@ -22,6 +22,7 @@
 %\include "./00-Common/Symph8_D759_NameStaff.ily"
 %\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
 %\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v18_ViolinoII.ily"
 \include "./02-Mvt2/m02_v18_ViolinoII.ily"
@@ -52,6 +53,9 @@
 				\keepWithTag #'(violinoII) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceViolinoIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicViolinoIIMvtI
 			}
 		>>
@@ -75,6 +79,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(violinoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolinoIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicViolinoIIMvtII

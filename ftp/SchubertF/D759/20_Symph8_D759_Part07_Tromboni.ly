@@ -22,6 +22,7 @@
 %\include "./00-Common/Symph8_D759_NameStaff.ily"
 %\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
 %\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v13_TromboneI.ily"
 \include "./01-Mvt1/m01_v14_TromboneII.ily"
@@ -56,6 +57,9 @@
 				\keepWithTag #'(tromboneI) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTromboneIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicTromboneIMvtI
 			}
 		>>
@@ -79,6 +83,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(tromboneI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTromboneIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicTromboneIMvtII
@@ -106,6 +113,9 @@
 				\keepWithTag #'(tromboneII) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTromboneIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicTromboneIIMvtI 
 			}
 		>>
@@ -129,6 +139,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(tromboneII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTromboneIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicTromboneIIMvtII 
@@ -156,6 +169,9 @@
 				\keepWithTag #'(tromboneIII) \tempiPartMvtI
 			}
 			\new Voice {
+				\InCueContext \cueVoiceTromboneIIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \musicTromboneIIIMvtI 
 			}
 		>>
@@ -179,6 +195,9 @@
 %			}
 			\new Voice {
 				\keepWithTag #'(tromboneIII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTromboneIIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \musicTromboneIIIMvtII 
