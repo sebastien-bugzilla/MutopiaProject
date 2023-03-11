@@ -11,7 +11,7 @@ musicCornoIMvtI = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-		R2.*18
+		R2.*16
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -19,8 +19,8 @@ musicCornoIMvtI = \relative c {
 % mesures 16 à 20
 		
 		
-		
-		
+		\omitMMRN \mmrPos #-2 R2.
+		\mmrPos #-2 R \resetMMRN
 		r4 f''4.(\fz\> e8
 % mesures 21 à 25
 		f4 e2)\p
@@ -63,10 +63,10 @@ musicCornoIMvtI = \relative c {
 		c c4 r8 r c~
 		c d4  r8 r d~
 		d d4 r8 r4 
-		R2.*3
+		R2.*2
 % mesures 61 à 65
 		
-		\mark \default
+		R2._\gp \mark \default
 		f2.\ffz\>~
 		f4\! r r
 		c2.\fz\>~
@@ -74,7 +74,7 @@ musicCornoIMvtI = \relative c {
 		c4\! r r
 		f2.\fz\>~
 		f4\! f\fz f\fz 
-		f\fz_\crescmarkup f\fz f\fz 
+		f\fz^\crescmarkup f\fz f\fz 
 		f\fz f\fz f\fz 
 % mesures 71 à 75
 		f\fz r r
@@ -113,8 +113,8 @@ musicCornoIMvtI = \relative c {
 		R2.*3
 		
 % mesures 101 à 105
-		\clef treble
-		c''2.~\<
+		
+		\clef treble c''2.~\<
 		c\>
 		r4\! a2\ff\>~
 		a2.~\!
@@ -129,7 +129,7 @@ musicCornoIMvtI = \relative c {
 			e4\! r r
 		}
 		{
-			a2.~\>
+			a2.~\>\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -137,7 +137,7 @@ musicCornoIMvtI = \relative c {
 	a~
 	a~
 	a4 r r
-	R2.*19
+	R2.*17
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -146,8 +146,8 @@ musicCornoIMvtI = \relative c {
 	
 % mesures 131 à 135
 	
-	
-	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R \resetMMRN
 	d2.\f
 	e2( f4)
 % mesures 136 à 140
@@ -237,7 +237,7 @@ musicCornoIMvtI = \relative c {
 % mesures 206 à 210
 	e\ff
 	d\fz
-	e\fp~
+	\startMeasureCount e\fp~
 	e~
 	e~
 % mesures 211 à 215
@@ -248,7 +248,7 @@ musicCornoIMvtI = \relative c {
 	e~
 % mesures 216 à 220
 	e~
-	e~ \mark \default
+	e~ \mark \default \stopMeasureCount
 	e4 r r
 	R2.*10
 	
@@ -298,9 +298,13 @@ musicCornoIMvtI = \relative c {
 	g g4 r8 r g(
 	a) a4 r8 r a~
 	a a4 r8 r4
-	R2.*7
+	R2.*6
 % mesures 276 à 280
-	\mark \default
+	
+	
+	
+	
+	R2._\gp \mark \default
 % mesures 281 à 285
 	d2.\ff\>~
 	d4\! r r

@@ -11,7 +11,7 @@ musicTrombaIIMvtI = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-		R2.*26
+		R2.*24
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -21,8 +21,8 @@ musicTrombaIIMvtI = \relative c {
 % mesures 21 à 25
 	
 % mesures 26 à 30
-		
-		
+		\omitMMRN \mmrPos #-2 R2.
+		\mmrPos #-2 R \resetMMRN
 		r4 r c'\fz
 		c\fz r r
 		R2.*5
@@ -36,7 +36,7 @@ musicTrombaIIMvtI = \relative c {
 		c4 r8 c c4
 		r8 c c4 c8 c \mark \default
 		g4\fz r r
-		R2.*24
+		R2.*23
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -47,7 +47,7 @@ musicTrombaIIMvtI = \relative c {
 	
 % mesures 61 à 65
 		
-		\mark \default
+		R2._\gp \mark \default
 		R2.*8
 % mesures 66 à 70
 	
@@ -98,7 +98,7 @@ musicTrombaIIMvtI = \relative c {
 	g~
 	g~
 	g4 r r
-	R2.*31
+	R2.*29
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -111,6 +111,10 @@ musicTrombaIIMvtI = \relative c {
 	
 % mesures 141 à 145
 	
+	
+	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R \resetMMRN
 % mesures 146 à 150
 	c2.\ff\>~
 	c\!
@@ -183,12 +187,20 @@ musicTrombaIIMvtI = \relative c {
 % mesures 216 à 220
 	
 	\mark \default
-	R2.*24
+	R2.*11
 % mesures 221 à 225
 	
 % mesures 226 à 230
 	
+	
+	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R
 % mesures 231 à 235
+	\mmrPos #-2 R \resetMMRN
+	R2.*10
+	
+	
 	
 % mesures 236 à 240
 	
@@ -207,7 +219,7 @@ musicTrombaIIMvtI = \relative c {
 % mesures 251 à 255
 	e \mark \default
 	f4\fz r r
-	R2.*28
+	R2.*27
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -217,7 +229,11 @@ musicTrombaIIMvtI = \relative c {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	\mark \default
+	
+	
+	
+	
+	R2._\gp \mark \default
 % mesures 281 à 285
 	g,2.\ff\>~
 	g4\! r r
@@ -260,7 +276,7 @@ musicTrombaIIMvtI = \relative c {
 	r4 g,2\ffz\>~
 	g2.\p~
 	g4\pp r r
-	R2.*21
+	R2.*19
 % mesures 326 à 330
 	
 % mesures 331 à 335
@@ -269,6 +285,10 @@ musicTrombaIIMvtI = \relative c {
 	
 % mesures 341 à 345
 	
+	
+	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R \resetMMRN
 % mesures 346 à 350
 	r4 g\< r
 	g r g\!

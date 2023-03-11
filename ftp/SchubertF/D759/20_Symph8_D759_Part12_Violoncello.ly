@@ -19,8 +19,7 @@
 \include "./00-Common/Symph8_D759_timeMvt.ily"
 \include "./00-Common/Symph8_D759_LayoutParts.ily"
 \include "./00-Common/Symph8_D759_Shortcuts.ily"
-%\include "./00-Common/Symph8_D759_NameStaff.ily"
-%\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
+\include "./00-Common/Symph8_D759_NameVoice.ily"
 %\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
 \include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
@@ -56,7 +55,7 @@
 				\InCueContext \cueVoiceVioloncelloMvtI
 			}
 			\new Voice {
-				\timeMvtI \musicVioloncelloMvtI
+				\timeMvtI \nameVioloncelloMvtI \musicVioloncelloMvtI
 			}
 		>>
 		\header {
@@ -84,7 +83,7 @@
 				\InCueContext \cueVoiceVioloncelloMvtII
 			}
 			\new Voice {
-				\timeMvtII \musicVioloncelloMvtII
+				\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
 			}
 		>>
 		\header {

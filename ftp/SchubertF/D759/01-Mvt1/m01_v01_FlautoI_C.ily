@@ -21,7 +21,7 @@ musicFlautoIMvtI = \relative c {
 	
 % mesures 26 à 30
 		\partCombineApart d''2.\p~
-		d2~ d8( e)
+		d2~_\crescmarkup d8( e)
 		e2 fis'4
 		\once \partCombineChords g \partCombineAutomatic r r
 		R2.
@@ -262,7 +262,7 @@ musicFlautoIMvtI = \relative c {
 	a2~ a8( b)
 	b2~ b8(_\crescmarkup cis)
 	cis2~ cis8 cis
-	cis2~ cis8[ eis]
+	cis2~ cis8[ eis-.]
 	eis2.~
 % mesures 251 à 255
 	eis \mark \default

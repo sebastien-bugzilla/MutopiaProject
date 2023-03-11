@@ -10,7 +10,7 @@ musicTromboneIIIMvtI = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-		R2.*18
+		R2.*16
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -18,8 +18,8 @@ musicTromboneIIIMvtI = \relative c {
 % mesures 16 à 20
 		
 		
-		
-		
+		\omitMMRN \mmrPos #-2 R2.
+		\mmrPos #-2 R \resetMMRN
 		r4 fis,\fz r
 % mesures 21 à 25
 		R2.*7
@@ -35,7 +35,7 @@ musicTromboneIIIMvtI = \relative c {
 		fis4 r fis
 		r fis4. fis8 \mark \default
 		b,4\fz r r
-		R2.*24
+		R2.*23
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -46,7 +46,7 @@ musicTromboneIIIMvtI = \relative c {
 	
 % mesures 61 à 65
 		
-		\mark \default
+		R2._\gp \mark \default
 		c2.\ffz\>~
 		c4\! r r
 		d2.\fz\>~
@@ -92,7 +92,7 @@ musicTromboneIIIMvtI = \relative c {
 		
 		
 		r4 b2\ff\>~
-		b2.~
+		b2.~\!
 % mesures 106 à 110
 		b4\pp r r
 		R2.*3
@@ -110,7 +110,7 @@ musicTromboneIIIMvtI = \relative c {
 	b~
 	b(
 	e4) r r
-	R2.*19
+	R2.*17
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -119,8 +119,8 @@ musicTromboneIIIMvtI = \relative c {
 	
 % mesures 131 à 135
 	
-	
-	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R \resetMMRN
 	fis2\fz-> r4
 	r fis2\fz->
 % mesures 136 à 140
@@ -216,7 +216,7 @@ musicTromboneIIIMvtI = \relative c {
 % mesures 216 à 220
 	
 	\mark \default
-	R2.*24
+	R2.*22
 % mesures 221 à 225
 	
 % mesures 226 à 230
@@ -225,8 +225,12 @@ musicTromboneIIIMvtI = \relative c {
 	
 % mesures 236 à 240
 	
-% mesures 241 à 245
 	
+	
+	
+	\omitMMRN \mmrPos #-2 R2.
+% mesures 241 à 245
+	\mmrPos #-2 R \resetMMRN
 	r4 r cis,\f-.
 	cis\fz-. r r
 	R2.*6
@@ -240,7 +244,7 @@ musicTromboneIIIMvtI = \relative c {
 % mesures 251 à 255
 	r cis4. cis8 \mark \default
 	fis,4\fz r r
-	R2.*28
+	R2.*27
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -254,7 +258,7 @@ musicTromboneIIIMvtI = \relative c {
 	
 	
 	
-	\mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	e'2.\ff\>~
 	e4\! r r

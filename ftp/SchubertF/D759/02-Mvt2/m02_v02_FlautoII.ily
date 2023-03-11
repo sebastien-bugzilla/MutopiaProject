@@ -28,16 +28,12 @@ musicFlautoIIMvtII = \relative c'' {
 	d4.(\<
 	fis\>
 	g8\!) r r
-	R4.*4
+	R4.*8
 % mesures 26 à 30
 	
-	
-	
-	R4.
-	R4.
 % mesures 31 à 35
-	R4.
-	R4. \mark \default
+	
+	\mark \default
 	dis4.\f
 	e
 	fis8( gis8.-> fis16)
@@ -61,10 +57,10 @@ musicFlautoIIMvtII = \relative c'' {
 	ais(\fp\>
 % mesures 51 à 55
 	a!4)\! r8
-	R4.
-	R4.
-	R4.
-	R4.
+	R4.*4
+	
+	
+	
 % mesures 56 à 60
 	e'4.\pp
 	dis
@@ -84,16 +80,16 @@ musicFlautoIIMvtII = \relative c'' {
 	
 % mesures 91 à 95
 	
-	R4.
-	R4.
-	R4.
-	R4.\mark \default
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R4.
+	\mmrPos #-2 R4. \resetMMRN
+	R4. \mark \default
 % mesures 96 à 100
 	e4.\ff
 	gis
 	a~
 	a8( gis4)
-	gis( b!8)~
+	gis( b8)~
 % mesures 101 à 105
 	b( a) cis~
 	cis e-. dis-.
@@ -117,7 +113,7 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 	r8 r b,16\p\<( cis!
-	d8 g\> fis
+	d8\! g\> fis
 % mesures 121 à 125
 	g4)\! r8
 	R4.*5
@@ -129,18 +125,10 @@ musicFlautoIIMvtII = \relative c'' {
 	r8 r e16(\< fis!
 	g8\> c b\!
 	c4) r8
-	R4.
+	R4.*23
 % mesures 131 à 135
-	R
-	R
-	R
-	R4.*2
 	
 % mesures 136 à 140
-	R4.
-	R4.*18
-	
-	
 	
 % mesures 141 à 145
 	
@@ -149,8 +137,8 @@ musicFlautoIIMvtII = \relative c'' {
 % mesures 151 à 155
 	
 	
-	
-	
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R \resetMMRN
 	ais,4.(\fp\>
 % mesures 156 à 160
 	a!)\!
@@ -165,15 +153,15 @@ musicFlautoIIMvtII = \relative c'' {
 	fis\>
 	g8)\! r r
 % mesures 166 à 170
-	R4.*4
+	R4.*8
 	
 	
 	
-	R4.
+	
 % mesures 171 à 175
-	R4.
-	R4.
-	R4. \mark \default
+	
+	
+	\mark \default
 	dis4.\ff
 	e
 % mesures 176 à 180
@@ -223,9 +211,9 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 	
-	R4.
+	\omitMMRN \mmrPos #-2 R4.
 % mesures 236 à 240
-	R4. \mark \default
+	\mmrPos #-2 R4. \resetMMRN \mark \default
 	e4.\ff
 	a
 	a
@@ -255,8 +243,8 @@ musicFlautoIIMvtII = \relative c'' {
 	ais4.(\fp\>
 	a!4)\! r8
 % mesures 261 à 265
-	R4.
-	R4.
+	R4.*2
+	
 	b'8(_\crescmarkup cis16 b gis e
 	b4) r8
 	R4.
@@ -271,7 +259,7 @@ musicFlautoIIMvtII = \relative c'' {
 	gis4\> a!16 fis!\!
 	gis4 fis16 dis
 	e8) r r
-	R4.*21
+	R4.*17
 % mesures 276 à 280
 	
 % mesures 281 à 285
@@ -280,6 +268,10 @@ musicFlautoIIMvtII = \relative c'' {
 	
 % mesures 291 à 295
 	
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN
 % mesures 296 à 300
 	e4.\pp\<~
 	e\>~
@@ -300,5 +292,5 @@ musicFlautoIIMvtII = \relative c'' {
 	b)~
 % mesures 311 à 312
 	b~
-	b\fermata\espressivo \bar "|."
+	b\fermata_\espressivo \bar "|."
 }

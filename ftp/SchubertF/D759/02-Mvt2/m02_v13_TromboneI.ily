@@ -8,7 +8,7 @@ musicTromboneIMvtII = \relative c' {
 	\clef tenor
 	\key e \major
 % mesures 1 à 5
-	R4.*32
+	R4.*28
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -19,8 +19,12 @@ musicTromboneIMvtII = \relative c' {
 	
 % mesures 26 à 30
 	
-% mesures 31 à 35
 	
+	
+	\omitMMRN \mmrPos #-2 R4. 
+	\mmrPos #-2 R \resetMMRN
+% mesures 31 à 35
+	R4.*2
 	\mark \default
 	dis4.\f
 	e
@@ -36,7 +40,7 @@ musicTromboneIMvtII = \relative c' {
 	e4( dis8)
 	e8( fis8.-> e16)
 	dis4.
-	R4.*51
+	R4.*49
 % mesures 46 à 50
 	
 % mesures 51 à 55
@@ -56,9 +60,13 @@ musicTromboneIMvtII = \relative c' {
 % mesures 86 à 90
 	
 % mesures 91 à 95
-	\mark \default
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R \resetMMRN \mark \default
 % mesures 96 à 100
-	cis4.\ff
+	cis!4.\ff
 	e
 	dis
 	fis
@@ -77,7 +85,7 @@ musicTromboneIMvtII = \relative c' {
 	cis, \mark \default
 % mesures 111 à 115
 	d8 r r
-	R4.*62
+	R4.*58
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -100,10 +108,14 @@ musicTromboneIMvtII = \relative c' {
 	
 % mesures 166 à 170
 	
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
 % mesures 171 à 175
-	
-	
-	\mark \default
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN \mark \default
 	dis4.\ff
 	e
 % mesures 176 à 180
@@ -119,7 +131,7 @@ musicTromboneIMvtII = \relative c' {
 	fis8( gis8.-> fis16)
 	eis4.
 % mesures 186 à 190
-	R4.*51
+	R4.*49
 % mesures 191 à 195
 	
 % mesures 196 à 200
@@ -138,8 +150,12 @@ musicTromboneIMvtII = \relative c' {
 	
 % mesures 231 à 235
 	
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
 % mesures 236 à 240
-	\mark \default
+	\mmrPos #-2 R \resetMMRN \mark \default
 	e4.\ff
 	a
 	a
@@ -147,7 +163,7 @@ musicTromboneIMvtII = \relative c' {
 % mesures 241 à 245
 	a8 e g~
 	g f4 
-	e8-. e-. dis-.
+	e8-. e-. dis!-.
 	e r b\fz
 	r r b\fz
 % mesures 246 à 250
@@ -164,7 +180,7 @@ musicTromboneIMvtII = \relative c' {
 	dis \mark \default
 % mesures 256 à 260
 	e8 r r
-	R4.*51
+	R4.*46
 % mesures 261 à 265
 	
 % mesures 266 à 270
@@ -183,13 +199,17 @@ musicTromboneIMvtII = \relative c' {
 	
 % mesures 301 à 305
 	
+	
+	\omitMMRN \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % mesures 306 à 310
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \resetMMRN
 	b4.\pp~
 	b~
 	b~
 % mesures 311 à 312
 	b~
-	b\fermata\espressivo \bar "|."
+	b\fermata_\espressivo \bar "|."
 }

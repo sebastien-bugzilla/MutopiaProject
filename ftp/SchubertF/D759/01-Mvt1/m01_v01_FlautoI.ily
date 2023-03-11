@@ -10,7 +10,7 @@ musicFlautoIMvtI = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-		R2.*24
+		R2.*20
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -18,10 +18,14 @@ musicFlautoIMvtI = \relative c {
 % mesures 16 à 20
 	
 % mesures 21 à 25
-	
+		
+		\omitMMRN \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \resetMMRN
 % mesures 26 à 30
 		d''2.\p~
-		d2~ d8( e)
+		d2~_\crescmarkup d8( e)
 		e2 fis'4\fz
 		g\fz r r
 		R2.
@@ -35,7 +39,7 @@ musicFlautoIMvtI = \relative c {
 		fis2.~
 		fis \mark \default
 		b,4\fz r r
-		R2.*24
+		R2.*23
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -46,7 +50,7 @@ musicFlautoIMvtI = \relative c {
 	
 % mesures 61 à 65
 	
-		\mark \default
+		R2._\gp \mark \default
 		g,2.\ffz\>(
 		c,4)\! r r
 		g'2.(\fz\>
@@ -106,10 +110,10 @@ musicFlautoIMvtI = \relative c {
 	}
 	\alternative {
 		{
-			b4)\! r r
+			\once \stemUp b4)\! r r
 		}
 		{
-			b2.\>~
+			b2.\>~\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -117,7 +121,7 @@ musicFlautoIMvtI = \relative c {
 	b~
 	b~
 	b4 r r
-	R2.*23
+	R2.*19
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -126,11 +130,15 @@ musicFlautoIMvtI = \relative c {
 	
 % mesures 131 à 135
 	
-% mesures 136 à 140
 	
+	
+	\omitMMRN \mmrPos #-4 R2.
+	\mmrPos #-4 R \resetMMRN
+% mesures 136 à 140
+	R2.*2
 	
 	g''2\f( fis4)
-	e2(^\crescmarkup g4)
+	e2(_\crescmarkup g4)
 	fis2( e4)
 % mesures 141 à 145
 	g2( fis4)
@@ -254,7 +262,7 @@ musicFlautoIMvtI = \relative c {
 	a2.~
 % mesures 241 à 245
 	a2~ a8(_\crescmarkup b)
-	b2 cis4-.\f
+	b2 cis!4-.\f
 	d-.\fz r r
 	R2.
 	a2.\p~
@@ -262,7 +270,7 @@ musicFlautoIMvtI = \relative c {
 	a2~ a8( b)
 	b2~ b8(_\crescmarkup cis)
 	cis2~ cis8 cis
-	cis2~ cis8[ eis]\ff
+	cis2~ cis8[ eis-.]\ff
 	eis2.~
 % mesures 251 à 255
 	eis \mark \default
@@ -271,21 +279,21 @@ musicFlautoIMvtI = \relative c {
 	
 	
 % mesures 256 à 260
-	r8 a,4(-.\pp a-. a8-.)
+	\startMeasureCount r8 a,4(-.\pp a-. a8-.)
 	r a4(-. a-. a8-.) 
 	r a4(-. a-. a8-.) 
 	r a4(-. a-. a8-.) 
 	r a4(-. a-. a8-.) 
 % mesures 261 à 265
 	r a4(-. a-. a8-.) 
-	r a4(-. a-. a8-.) 
+	r a4(-. a-. a8-.) \stopMeasureCount 
 	r b4(-. b-. b8-.)
 	r b4(-. b-. b8-.)
 	r b4(-. b-. b8-.)
 % mesures 266 à 270
 	r bes([ a)] a4 a8~
 	a4 r r
-	R2.*13
+	R2.*12
 	
 	
 % mesures 271 à 275
@@ -299,7 +307,7 @@ musicFlautoIMvtI = \relative c {
 	
 	
 	
-	\mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	b,2.\ff\>(
 	e,4)\! r r
@@ -335,7 +343,7 @@ musicFlautoIMvtI = \relative c {
 	fis8 r fis2(\fz
 	gis8) r gis2(
 	bis,8) r bis2(\fz
-	cis4) fis ais, \mark \default
+	cis4) fis-. ais,-. \mark \default
 % mesures 311 à 315
 	b r r
 	R2. 
@@ -357,7 +365,7 @@ musicFlautoIMvtI = \relative c {
 % mesures 326 à 330
 	
 	ais,2.(\pp\>
-	b4)\! r r
+	\once \stemUp b4)\! r r
 	R2.*5
 	
 % mesures 331 à 335
@@ -367,7 +375,7 @@ musicFlautoIMvtI = \relative c {
 	fis2.(\pp
 	ais)(
 % mesures 336 à 340
-	b4) r r
+	\once \stemUp b4) r r
 	R2.*11
 	
 	

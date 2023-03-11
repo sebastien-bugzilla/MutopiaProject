@@ -52,14 +52,14 @@ musicClarinettoIMvtI = \relative c {
 		
 % mesures 41 à 45
 		
-		r8 f4(-.\pp f-. f8-.)
+		\startMeasureCount r8 f4(-.\pp f-. f8-.)
 		r f4-.( f-. f8-.)
 		r f4-.( f-. f8-.)
 		r f4-.( f-. f8-.)
 % mesures 46 à 50
 		r f4-.( f-. f8-.)
 		r f4-.( f-. f8-.)
-		r f4-.( f-. f8-.)
+		r f4-.( f-. f8-.) \stopMeasureCount 
 		r g4-.( g-. g8-.)
 		r g4-.( g-. g8-.)
 % mesures 51 à 55
@@ -76,7 +76,7 @@ musicClarinettoIMvtI = \relative c {
 		r g4-.(_\decresc g-.\! g8-.)
 % mesures 61 à 65
 		r ges[( f]) f4-.( f8-.)
-		R2. \mark \default
+		R2._\gp \mark \default
 		bes,2.(\ffz\>
 		ees,4)\! r r
 		bes'2.(\fz\> 
@@ -139,7 +139,7 @@ musicClarinettoIMvtI = \relative c {
 			a4\! r r
 		}
 		{
-			a2.~
+			a2.~\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -147,7 +147,7 @@ musicClarinettoIMvtI = \relative c {
 	a(
 	c)(
 	bes4) r r
-	R2.*19
+	R2.*17
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -156,12 +156,12 @@ musicClarinettoIMvtI = \relative c {
 	
 % mesures 131 à 135
 	
-	
-	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R \resetMMRN
 	r4 r e->\fz~
 	e r r
 % mesures 136 à 140
-	e2-> r4
+	e2->\fz r4
 	r e2->\fz
 	r4 r e4->\fz~
 	e r e\fz
@@ -272,8 +272,8 @@ musicClarinettoIMvtI = \relative c {
 	f2.(
 	g4\< aes4.\> g8)\!
 	f4( e2) 
-	R2.
-	R2.
+	R2.*2
+	
 % mesures 231 à 235
 	d2.(\p
 	g,4. fis8[ g a])
@@ -305,14 +305,14 @@ musicClarinettoIMvtI = \relative c {
 	
 	
 % mesures 256 à 260
-	r8 c,4(\pp-. c-. c8-.)
+	\startMeasureCount r8 c,4(\pp-. c-. c8-.)
 	r c4(-. c-. c8-.)
 	r c4(-. c-. c8-.)
 	r c4(-. c-. c8-.)
 	r c4(-. c-. c8-.)
 % mesures 261 à 265
 	r c4(-. c-. c8-.)
-	r c4(-. c-. c8-.)
+	r c4(-. c-. c8-.) \stopMeasureCount 
 	r d4(-. d-. d8-.)
 	r d4(-. d-. d8-.)
 	r d4(-. d-. d8-.)
@@ -333,7 +333,7 @@ musicClarinettoIMvtI = \relative c {
 	r ces([-> bes]) bes4 bes8
 	r bes4 bes bes8
 	r a!4 a a8
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	d2.(\ff\>
 	g,4)\! r r
@@ -432,8 +432,8 @@ musicClarinettoIMvtI = \relative c {
 	a)~\pp\<
 % mesures 361 à 365
 	a(\!
-	bes)~\>
-	bes\!
+	\stemUp bes)~\>
+	bes\! \stemNeutral
 	a4\ff r r
 	cis r r
 % mesures 366 à 368

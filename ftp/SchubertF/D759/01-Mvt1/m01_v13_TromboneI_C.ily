@@ -28,7 +28,7 @@ musicTromboneIMvtI = \relative c {
 % mesures 31 à 35
 	
 % mesures 36 à 40
-		cis4 r cis
+		cis4\ff r cis
 		r cis4. cis8 \mark \default
 		d4\fz r r
 		R2.*24

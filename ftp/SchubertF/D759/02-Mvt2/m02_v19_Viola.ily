@@ -89,14 +89,14 @@ musicViolaMvtII = \relative c'' {
 	b) r r
 % mesures 56 à 60
 	e,\pp r r
-	R4.*7
+	R4.*3
 	
 	
-	
+	\omitMMRN \mmrPos #-4 R4.
 % mesures 61 à 65
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \resetMMRN
 	cis'16\pp cis8 cis cis16~
 	cis cis8 cis cis16~
 % mesures 66 à 70
@@ -274,14 +274,14 @@ musicViolaMvtII = \relative c'' {
 % mesures 196 à 200
 	e) r r
 	a,\pp r r 
-	R4.*7
+	R4.*3
 	
 	
 % mesures 201 à 205
-	
-	
-	
-	
+	\omitMMRN \mmrPos #-6 R4.
+	\mmrPos #-6 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN
 	a16\pp a8 a a16~
 % mesures 206 à 210
 	a16 a8 a a16~
@@ -362,15 +362,15 @@ musicViolaMvtII = \relative c'' {
 	b-. a-. fis-.
 	e-. r r
 % mesures 271 à 275
-	R4.*18
+	R4.*15
 % mesures 276 à 280
 	
 % mesures 281 à 285
 	
 % mesures 286 à 290
-	
-	
-	
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN 
 	ees16\pp( -\tweak X-offset #-4 ^\arco g bes des c bes
 	aes8) r r
 % mesures 291 à 295

@@ -8,17 +8,17 @@ musicViolinoIMvtI = \relative c {
 	\clef treble
 	\key b \minor
 % mesures 1 à 5
-	R2.
+	\omitMMRN \mmrPos #4 R2.
 	\repeat volta 2 {
-		R2.*7
-		
-		
-		
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R
 % mesures 6 à 10
-		
-		
-		
-		fis'16 -\tweak X-offset #-3 \pp fis eis eis fis fis d d e e fis fis
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R \resetMMRN
+		fis'16\pp fis eis eis fis fis d d e e fis fis
 		g g fis fis g g ais ais b b cis cis
 % mesures 11 à 15
 		fis, fis eis eis fis fis d d e e fis fis
@@ -54,15 +54,15 @@ musicViolinoIMvtI = \relative c {
 		q4 r8 q8 q4
 		r8 q q4 q8 q \mark \default
 		<d b'>4\fz r r
-		R2.*14
+		R2.*12
 		
 % mesures 41 à 45
 	
 % mesures 46 à 50
 	
 % mesures 51 à 55
-		
-		
+		\omitMMRN \mmrPos #4 R2.
+		\mmrPos #4 R \resetMMRN
 		g4(\pp d4. g8
 		fis8. g16 a4. g8)
 		fis8.( g16 a8[ d, e fis])
@@ -145,15 +145,15 @@ musicViolinoIMvtI = \relative c {
 	a r r
 	fis r r
 	e r r
-	R2.*7
+	R2.*3
 % mesures 116 à 120
 	
 	
-	
-	
-	
+	\omitMMRN \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
 % mesures 121 à 125
-	
+	\mmrPos #4 R \resetMMRN
 	e'2.(\pp^\arco\<
 	fis2 g4)
 	b2.(\>
@@ -311,14 +311,18 @@ musicViolinoIMvtI = \relative c {
 % mesures 251 à 255
 	r8 q-. q4-. q8-. q-. \mark \default
 	<cis a'>4\fz r r
-	R2.*14
+	R2.*12
 	
 % mesures 256 à 260
 	
 % mesures 261 à 265
 	
-% mesures 266 à 270
 	
+	
+	
+	\omitMMRN \mmrPos #4 R2.
+% mesures 266 à 270
+	\mmrPos #4 R \resetMMRN
 	d4(\pp a4. d8)
 	cis8.( d16 e4. d8)
 	cis8.( d16 e8[ a, b cis])
@@ -346,9 +350,9 @@ musicViolinoIMvtI = \relative c {
 	eis:_\crescmarkup fis: g:
 	ais: b: cis:
 	d4\fz r r
-	R2.*2
+	R2.
 % mesures 291 à 295
-	
+	\omitMMRN \mmrPos #4 R2. \resetMMRN
 	a8.(\p b16 cis8[ fis, gis a]
 	b4) r r
 	gis8.( a16 b8[ e, fis gis])
@@ -393,17 +397,13 @@ musicViolinoIMvtI = \relative c {
 	d r r 
 	cis r r
 	b r r
-	R2.*9
+	R2.*7
 	
 % mesures 331 à 335
 	
-	
-	
-	
-	
 % mesures 336 à 340
-	
-	
+	\omitMMRN \mmrPos #4 R2.
+	\mmrPos #4 R \resetMMRN
 	b'2.( -\tweak X-offset #-2. \p^\arco
 	cis2 d4)
 	fis2.(\>
@@ -430,12 +430,12 @@ musicViolinoIMvtI = \relative c {
 	cis2 d4)\!
 	b2.(\>
 	cis2 d4)\!
-	b4 r r
+	\voiceOne b4 r r
 % mesures 361 à 365
-	R2.*3
-	
-	
-	<d,, b' fis'>4 -\tweak X-offset #-3.3 \ff r r
+	\omitMMRN \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R \resetMMRN
+	\oneVoice <d,, b' fis'>4\ff r r
 	<fis cis' ais'> r r
 % mesures 366 à 368
 	<b, fis' d' b'> r r

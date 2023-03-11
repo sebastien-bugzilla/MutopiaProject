@@ -7,6 +7,7 @@ stacc = \markup {\italic stacc.}
 becarre = \markup { \tiny \natural }
 gp = \markup {G.P.}
 decrescmarkup = \markup {\italic decresc.}
+fcresc = \markup {\dynamic f \italic cresc.}
 
 ffz = #(make-dynamic-script "ffz")
 crescD = \tweak DynamicText.self-alignment-X #-0.5 \tweak DynamicText.font-size #1 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
@@ -145,6 +146,15 @@ OutCueContext = {
 	
 }
 
+resetMMRN = {
+	\undo \omit MultiMeasureRestNumber
+}
+
+
+omitMMRN = {
+	\omit MultiMeasureRestNumber
+}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -279,15 +289,6 @@ OutCueContext = {
 %		\once \override NoteColumn.force-hshift = #shift
 %	#}
 %)
-
-%no = {
-%	\undo \omit MultiMeasureRestNumber
-%}
-
-
-%ni = {
-%	\omit MultiMeasureRestNumber
-%}
 
 %ottavaShorten = #(define-music-function
 %	(value)

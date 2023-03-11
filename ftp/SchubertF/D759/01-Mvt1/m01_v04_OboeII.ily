@@ -11,29 +11,21 @@ musicOboeIIMvtI = \relative c'' {
 	R2.
 	\repeat volta 2 {
 % mesures 6 à 10
-		R2.*11
+		R2.*20
 		
 		
 % mesures 11 à 15
 		
-		
-		R2.
-		R
-		R
 % mesures 16 à 20
-		R
-		R
-		R
-		R
-		R
+		
 % mesures 21 à 25
-		R
-		R
-		R
-		R
-		R 
+		
+		\omitMMRN \mmrPos #-4 R2.
+		\mmrPos #-4 R \resetMMRN
+		R2.*2
+		
 % mesures 26 à 30
-		a!4(\p b4. c8)
+		a4(\p b4. c8)
 		c4( b4._\crescmarkup d8)
 		d4( cis!) e4\fz
 		e\fz r r
@@ -48,7 +40,7 @@ musicOboeIIMvtI = \relative c'' {
 		e2.~
 		e \mark \default
 		d4\fz r r
-		R2.*24
+		R2.*23
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -59,7 +51,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 % mesures 61 à 65
 		
-		\mark \default
+		R2._\gp \mark \default
 		g,2.\ffz\>(
 		c,4) r\! r
 		g'2.\fz(\>
@@ -86,7 +78,7 @@ musicOboeIIMvtI = \relative c'' {
 		e2.\fz
 		r8 e4 e e8
 		e2~\fz e8 cis(
-		d) r d2-\tweak X-offset #-2. \fz(
+		d) r d2\fz(
 % mesures 86 à 90
 		e8) r e2\fz->(
 		f8) r f2->(\fz
@@ -122,7 +114,7 @@ musicOboeIIMvtI = \relative c'' {
 			fis4\! r r
 		}
 		{
-			a!2.\>~
+			a2.\>~\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -130,7 +122,7 @@ musicOboeIIMvtI = \relative c'' {
 	a~
 	a(
 	g4) r r
-	R2.*19
+	R2.*17
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -139,8 +131,8 @@ musicOboeIIMvtI = \relative c'' {
 	
 % mesures 131 à 135
 	
-	
-	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R \resetMMRN
 	g2.\f(
 	fis2 e4)
 % mesures 136 à 140
@@ -190,7 +182,7 @@ musicOboeIIMvtI = \relative c'' {
 	e2.
 	d4-. b-. c-.
 	b2.\fz
-	\afterGrace dis2.\fz\trill {cis16[ dis]} \mark \default
+	\afterGrace dis2.\fz\trill {cis!16[ dis]} \mark \default
 % mesures 176 à 180
 	e4 r r
 	R2.
@@ -218,11 +210,11 @@ musicOboeIIMvtI = \relative c'' {
 % mesures 196 à 200
 	c2.\fz\>(
 	b2\! ais4)
-	R2.
-	R
-	R
+	R2.*4
+	
+	
 % mesures 201 à 205
-	R
+	
 	fis'2.\ff
 	cis\fz
 	d4 r r
@@ -231,32 +223,24 @@ musicOboeIIMvtI = \relative c'' {
 	fis2.\ff
 	cis\fz
 	d4 r r
-	R2.*5
+	R2.*9
 	
 % mesures 211 à 215
 	
-	
-	
-	R2.
-	R
 % mesures 216 à 220
-	R
-	R \mark \default
-	R2.*4
+	
+	\mark \default
+	R2.*9
 	
 	
 % mesures 221 à 225
 	
-	R2.
-	R
-	R
-	R
 % mesures 226 à 230
-	R
-	R
-	R
-	a2.~\<
-	a4\>( b2)(\!
+	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R \resetMMRN
+	a2.~\p\<
+	a4\>( \once \stemUp b2)(\!
 % mesures 231 à 235
 	g4) r r
 	R2.*6
@@ -268,7 +252,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	d'2.\<~
 	d4(\> e2)\!
-	cis!4( d4. e8)
+	cis4( d4. e8)
 % mesures 241 à 245
 	e4( d4. dis8_\crescmarkup)
 	dis4( e) eis-.\f
@@ -284,7 +268,7 @@ musicOboeIIMvtI = \relative c'' {
 % mesures 251 à 255
 	gis \mark \default
 	fis4\fz r r
-	R2.*28
+	R2.*27
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -294,13 +278,17 @@ musicOboeIIMvtI = \relative c'' {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	\mark \default
+	
+	
+	
+	
+	R2._\gp \mark \default
 % mesures 281 à 285
-	b,2.(\ff\>
+	\once \stemUp b,2.(\ff\>
 	e,4)\! r r
-	b'2.(\ff\>
+	\once \stemUp b'2.(\ff\>
 	fis4)\! r r
-	b2.(\fz\>
+	\once \stemUp b2.(\fz\>
 % mesures 286 à 290
 	g4)\! d'\fz d\fz 
 	d\fz d\fz d\fz 
@@ -333,19 +321,15 @@ musicOboeIIMvtI = \relative c'' {
 	e4) dis-. e-. \mark \default
 % mesures 311 à 315
 	dis r r
-	R2.*2
+	R2.*10
 	
-	R2.
-	R
+	
+	
 % mesures 316 à 320
-	R
-	R
-	R
-	R
-	R
+	
 % mesures 321 à 325
-	R
-	r4 b2 -\tweak X-offset #-3.2 \ffz\>~
+	
+	r4 b2\ffz\>~
 	b2.\p~
 	b\pp~
 	b~

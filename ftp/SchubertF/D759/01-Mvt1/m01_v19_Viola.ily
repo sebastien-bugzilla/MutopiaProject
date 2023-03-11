@@ -69,12 +69,16 @@ musicViolaMvtI = \relative c {
 		r <c e>4-.( q-. q8-.)
 		r <<{ees8[( d)] d4-.( d8-.)} \\ {c4-.( c-. c8-.)}>>
 		<b d>4 r r
-		R2.*9
+		R2.*6
 % mesures 56 à 60
-	
-% mesures 61 à 65
 		
-		\mark \default
+		
+		
+		
+		\omitMMRN \mmrPos #-2 R2.
+% mesures 61 à 65
+		\mmrPos #-2 R \resetMMRN 
+		R2._\gp \mark \default
 		ees,2.:32\ffz\>
 		ees4\! r r
 		g2.:32\fz\>
@@ -150,7 +154,7 @@ musicViolaMvtI = \relative c {
 	a r r
 	fis r r
 	e r r
-	R2.*9
+	R2.*7
 % mesures 116 à 120
 	
 	
@@ -159,8 +163,8 @@ musicViolaMvtI = \relative c {
 	
 % mesures 121 à 125
 	
-	
-	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R \resetMMRN 
 	e2.\pp(^\arco 
 	fis2\< g4)\!
 % mesures 126 à 130
@@ -316,7 +320,7 @@ musicViolaMvtI = \relative c {
 % mesures 251 à 255
 	r8 cis-. cis4-. cis8-. cis-. \mark \default
 	fis,4\fz r r
-	R2.*23
+	R2.*20
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -325,6 +329,10 @@ musicViolaMvtI = \relative c {
 	
 % mesures 271 à 275
 	
+	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN
 % mesures 276 à 280
 	d'4(_\decresc a4.\! cis8
 	d4 g, a8 b)
@@ -394,11 +402,15 @@ musicViolaMvtI = \relative c {
 	d r r
 	cis r r
 	b r r
-	R2.*12
+	R2.*9
 % mesures 331 à 335
 	
 % mesures 336 à 340
 	
+	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN
 % mesures 341 à 345
 	cis2.->^\arco(
 	b4) r r

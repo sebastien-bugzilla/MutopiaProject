@@ -11,14 +11,14 @@ musicFagottoIMvtI = \relative c {
 	R2.
 	\repeat volta 2 {
 % mesures 6 à 10
-		R2.*18
+		R2.*16
 % mesures 11 à 15
 	
 % mesures 16 à 20
 	
 	
-		
-		
+		\omitMMRN \mmrPos #-2 R2.
+		\mmrPos #-2 R \resetMMRN
 		r4 cis'2\fz\>~
 % mesures 21 à 25
 		cis2.\p
@@ -42,7 +42,7 @@ musicFagottoIMvtI = \relative c {
 		cis2.~
 		cis \mark \default
 		d4\fz d2~\fp\>
-		d2.\!~ \clef tenor
+		d2.\!~
 		d~
 % mesures 41 à 45
 		d4( e a)
@@ -53,7 +53,7 @@ musicFagottoIMvtI = \relative c {
 % mesures 51 à 55
 		
 		
-		\clef bass r8 d4(-.\pp d-. d8-.)
+		r8 d4(-.\pp d-. d8-.)
 		r d4(-. d-. d8-.)
 		r d4-.( d-. d8-.)
 % mesures 56 à 60
@@ -64,7 +64,7 @@ musicFagottoIMvtI = \relative c {
 		r e4-.(_\decresc e-. e8-.)\!
 % mesures 61 à 65
 		r ees[( d)] d4-.( d8-.)
-		R2. \mark \default
+		R2._\gp \mark \default
 		g,2.\ffz\>~
 		g4\! r r
 		bes2.~\fz\>
@@ -127,7 +127,7 @@ musicFagottoIMvtI = \relative c {
 			b4)\! r r
 		}
 		{
-			a!2.~\>
+			a!2.~\>\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -271,7 +271,7 @@ musicFagottoIMvtI = \relative c {
 % mesures 236 à 240
 	
 	
-	\clef tenor f'2.\<~
+	f'2.\<~
 	f4\>^( e2)\!
 	cis!4( d4. e8)
 % mesures 241 à 245
@@ -281,7 +281,7 @@ musicFagottoIMvtI = \relative c {
 	d4 cis2)
 	cis4(\p d4. e8)
 % mesures 246 à 250
-	e4( d4. d8)
+	e4( d4. dis8)
 	dis4( e4._\crescmarkup gis8)
 	gis4( fis4. gis8)
 	gis4( fis4.) gis8-.\ff
@@ -299,12 +299,12 @@ musicFagottoIMvtI = \relative c {
 	
 % mesures 266 à 270
 	
-	\clef bass r8 a4-.(\pp a-. a8-.)
+	\startMeasureCount r8 a4-.(\pp a-. a8-.)
 	r a4-.( a-. a8-.)
 	r a4 a a8
 	r a4 a a8
 % mesures 271 à 275
-	r a4 a a8
+	r a4 a a8 \stopMeasureCount
 	r b4(-. b-. b8-.)
 	r b4 b b8
 	r b4 b b8
@@ -314,7 +314,7 @@ musicFagottoIMvtI = \relative c {
 	r aes[(-> g]) g4 g8
 	r g4 g g8
 	r fis!4 fis fis8
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	b2.\ff\>~
 	b4\! r r
@@ -332,11 +332,11 @@ musicFagottoIMvtI = \relative c {
 	
 	
 	
-	\clef tenor gis2.~\f
+	gis2.~\f
 % mesures 296 à 300
 	gis2( g4)
 	fis2.~
-	fis \clef bass
+	fis 
 	b,8.\ff-. cis16-. d!8-.[ gis,-. ais-. b-.]
 	cis4 r r
 % mesures 301 à 305
@@ -355,7 +355,7 @@ musicFagottoIMvtI = \relative c {
 	b, r r
 	R2.*2
 	
-	\clef tenor r4 r r8 dis'(\p
+	r4 r r8 dis'(\p
 	e8.\> fis16\! gis2)
 % mesures 316 à 320
 	fis2.~
@@ -365,7 +365,7 @@ musicFagottoIMvtI = \relative c {
 	e8.\> fis16\! gis2)
 % mesures 321 à 325
 	fis2.~
-	fis8 r \clef bass b,2\ffz~
+	fis8 r b,2\ffz\>~
 	b2.\p~
 	b\pp~
 	b~

@@ -80,47 +80,27 @@ musicBassoMvtII = \relative c {
 	b-. a-. fis-.
 	e-. r r
 % mesures 61 à 65
-	R4.*35
+	R4.*33
 	
 	
 	
 	
 % mesures 66 à 70
 	
-	
-	
-	
-	
 % mesures 71 à 75
-	
-	
-	
-	
 	
 % mesures 76 à 80
 	
-	
-	
-	
-	
 % mesures 81 à 85
 	
-	
-	
-	
-	
 % mesures 86 à 90
-	
-	
-	
-	
 	
 % mesures 91 à 95
 	
 	
 	
-	
-	\mark \default
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R \resetMMRN \mark \default
 % mesures 96 à 100
 	cis'!4.\ff^\arco
 	e
@@ -249,42 +229,26 @@ musicBassoMvtII = \relative c {
 	e-. d-. b-.
 % mesures 201 à 205
 	a-. r r
-	R4.*35
+	R4.*33
 % mesures 206 à 210
 	
 % mesures 211 à 215
 	
-	
-	
-	
-	
 % mesures 216 à 220
-	
-	
-	
-	
 	
 % mesures 221 à 225
 	
-	
-	
-	
-	
 % mesures 226 à 230
-	
-	
-	
-	
 	
 % mesures 231 à 235
 	
 	
 	
 	
-	
+	\omitMMRN \mmrPos #-2 R4.
 % mesures 236 à 240
-	\mark \default
-	a'8-.\ff -\tweak X-offset #-5.0 ^\arco a,-. e'~
+	\mmrPos #-2 R \resetMMRN \mark \default
+	a'8-.\ff^\arco a,-. e'~
 	e a,-. a'~
 	a d,-. f~
 	f e-. b'~
@@ -337,16 +301,16 @@ musicBassoMvtII = \relative c {
 	b r b
 	e r r
 % mesures 281 à 285
-	R4.*18
+	R4.*15
 % mesures 286 à 290
 	
 % mesures 291 à 295
 	
 % mesures 296 à 300
-	
-	
-	
-	b8 -\tweak X-offset #-4 ^\pizz\pp r r
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN
+	b8^\pizz\pp r r
 	e r r
 % mesures 301 à 305
 	b r r

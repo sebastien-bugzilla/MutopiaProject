@@ -8,7 +8,7 @@ musicTromboneIIMvtII = \relative c {
 	\clef tenor
 	\key e \major
 % mesures 1 à 5
-	R4.*32
+	R4.*28
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -19,8 +19,12 @@ musicTromboneIIMvtII = \relative c {
 	
 % mesures 26 à 30
 	
-% mesures 31 à 35
 	
+	
+	\omitMMRN \mmrPos #-2 R4. 
+	\mmrPos #-2 R \resetMMRN
+% mesures 31 à 35
+	R4.*2
 	\mark \default
 	fis4.\f
 	gis
@@ -36,7 +40,7 @@ musicTromboneIIMvtII = \relative c {
 	cis4( bis8)
 	cis8( dis8.-> cis16)
 	bis4.
-	R4.*51
+	R4.*49
 % mesures 46 à 50
 	
 % mesures 51 à 55
@@ -56,9 +60,13 @@ musicTromboneIIMvtII = \relative c {
 % mesures 86 à 90
 	
 % mesures 91 à 95
-	\mark \default
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4. 
+	\mmrPos #-2 R \resetMMRN \mark \default
 % mesures 96 à 100
-	cis,4.\ff
+	cis,!4.\ff
 	e
 	dis
 	fis
@@ -77,7 +85,7 @@ musicTromboneIIMvtII = \relative c {
 	g \mark \default
 % mesures 111 à 115
 	fis8 r r
-	R4.*62
+	R4.*58
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -100,10 +108,14 @@ musicTromboneIIMvtII = \relative c {
 	
 % mesures 166 à 170
 	
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
 % mesures 171 à 175
-	
-	
-	\mark \default
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN \mark \default
 	fis4.\ff
 	gis
 % mesures 176 à 180
@@ -119,7 +131,7 @@ musicTromboneIIMvtII = \relative c {
 	a8( b8.-> a16)
 	gis4.
 % mesures 186 à 190
-	R4.*51
+	R4.*49
 % mesures 191 à 195
 	
 % mesures 196 à 200
@@ -138,8 +150,12 @@ musicTromboneIIMvtII = \relative c {
 	
 % mesures 231 à 235
 	
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
 % mesures 236 à 240
-	\mark \default
+	\mmrPos #-2 R \resetMMRN \mark \default
 	c4.\ff
 	c
 	b
@@ -164,7 +180,7 @@ musicTromboneIIMvtII = \relative c {
 	a \mark \default
 % mesures 256 à 260
 	gis!8 r r
-	R4.*51
+	R4.*46
 % mesures 261 à 265
 	
 % mesures 266 à 270
@@ -183,9 +199,13 @@ musicTromboneIIMvtII = \relative c {
 	
 % mesures 301 à 305
 	
+	
+	\omitMMRN \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % mesures 306 à 310
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \resetMMRN 
 	gis4.\pp~
 	gis~
 	gis~

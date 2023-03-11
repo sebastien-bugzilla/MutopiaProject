@@ -281,7 +281,7 @@ musicFagottoIMvtI = \relative c {
 	d4 cis2)
 	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur cis4( d4. e8)
 % mesures 246 à 250
-	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur e4( d4. d8)
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur e4( d4. dis8)
 	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur dis4( e4. gis8)
 	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur gis4( fis4. gis8)
 	gis4( fis4.) gis8-. \partCombineAutomatic

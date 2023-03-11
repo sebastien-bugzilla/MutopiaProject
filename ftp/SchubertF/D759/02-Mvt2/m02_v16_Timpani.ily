@@ -8,7 +8,7 @@ musicTimpaniMvtII = \relative c {
 	\clef bass
 	\key c \major
 % mesures 1 à 5
-	R4.*32
+	R4.*30
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -20,7 +20,8 @@ musicTimpaniMvtII = \relative c {
 % mesures 26 à 30
 	
 % mesures 31 à 35
-	
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R \resetMMRN
 	\mark \default
 	b4\f r8
 	b4 r8
@@ -41,7 +42,7 @@ musicTimpaniMvtII = \relative c {
 	e4.:32\fp->
 % mesures 51 à 55
 	b8 r r
-	R4.*44
+	R4.*42
 % mesures 56 à 60
 	
 % mesures 61 à 65
@@ -60,8 +61,8 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	
-	
-	\mark \default
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R \resetMMRN \mark \default
 % mesures 96 à 100
 	e8:64\ff\noBeam e r
 	e:64\noBeam e r
@@ -81,7 +82,7 @@ musicTimpaniMvtII = \relative c {
 	e4.:32
 	e4: e8 \mark \default
 % mesures 111 à 115
-	R4.*63
+	R4.*59
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -104,10 +105,14 @@ musicTimpaniMvtII = \relative c {
 	
 % mesures 166 à 170
 	
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
 % mesures 171 à 175
-	
-	
-	\mark \default
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN \mark \default
 	b4\ff r8
 	b4 r8
 % mesures 176 à 180
@@ -118,7 +123,7 @@ musicTimpaniMvtII = \relative c {
 	e e\fz r
 % mesures 181 à 185
 	e4 r8
-	R4.*55
+	R4.*53
 % mesures 186 à 190
 	
 % mesures 191 à 195
@@ -139,8 +144,12 @@ musicTimpaniMvtII = \relative c {
 	
 % mesures 231 à 235
 	
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
 % mesures 236 à 240
-	\mark \default
+	\mmrPos #-2 R \resetMMRN \mark \default
 	e8:64\ff\noBeam e8 r
 	e:64\noBeam e r
 	R4.
@@ -170,7 +179,7 @@ musicTimpaniMvtII = \relative c {
 	e4.:32
 	b8 r r
 % mesures 261 à 265
-	R4.*42
+	R4.*38
 % mesures 266 à 270
 	
 % mesures 271 à 275
@@ -185,9 +194,13 @@ musicTimpaniMvtII = \relative c {
 	
 % mesures 296 à 300
 	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R
 % mesures 301 à 305
-	
-	
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN
 	b4.:32\pp
 	e8 r r
 	b4.:32
@@ -199,5 +212,5 @@ musicTimpaniMvtII = \relative c {
 	e r b
 % mesures 311 à 312
 	e r b
-	e4.:32\fermata\espressivo \bar "|."
+	e4.:32\fermata_\espressivo \bar "|."
 }

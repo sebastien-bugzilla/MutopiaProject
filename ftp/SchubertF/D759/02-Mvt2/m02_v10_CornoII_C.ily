@@ -42,7 +42,7 @@ musicCornoIIMvtII = \relative c' {
 	g8\! r r \mark \default
 	g4.\f
 	g
-	g8 g4->
+	g8 g4
 % mesures 36 à 40
 	c4.
 	d 
@@ -121,11 +121,11 @@ musicCornoIIMvtII = \relative c' {
 	R4.
 	R4.
 	R4.
-	c4(\ppp c,8)
-	c'4( c,8)
+	R
+	R
 % mesures 141 à 145
-	c'4( c,8)
-	e4.\pp\<
+	R
+	e,4.\pp\<
 	g\>_~
 	g8\! r r
 	R4.*3

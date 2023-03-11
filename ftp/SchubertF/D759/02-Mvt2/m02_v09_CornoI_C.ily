@@ -42,7 +42,7 @@ musicCornoIMvtII = \relative c'' {
 	e8) \partCombineAutomatic r r \mark \default
 	g4.\f
 	g
-	g8 g4->
+	g8 g4
 % mesures 36 à 40
 	g4.
 	\partCombineApart d 
@@ -125,7 +125,7 @@ musicCornoIMvtII = \relative c'' {
 	R4.
 	\partCombineApart c'4(-> c,8) \partCombineAutomatic
 	R4.
-	c'4(\ppp c,8)
+	\partCombineApart c'4(-\offset X-offset -2 \ppp c,8)
 	c'4( c,8)
 % mesures 141 à 145
 	c'4( c,8)

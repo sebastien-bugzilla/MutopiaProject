@@ -8,8 +8,8 @@ musicViolinoIMvtII = \relative c''' {
 	\clef treble
 	\key e \major
 % mesures 1 à 5
-	R4.*2
-	
+	\omitMMRN \mmrPos #4 R4.
+	\mmrPos #4 R \resetMMRN
 	b4.(\pp
 	cis
 	b8 gis e)
@@ -329,14 +329,14 @@ musicViolinoIMvtII = \relative c''' {
 	cis'\< b a gis fis a
 	cis4\> b8\!)
 	e,8\pp r r
-	R4.*11
+	R4.*7
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	
-	
-	
-	
+	\omitMMRN \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \resetMMRN
 	b4.\ppp(~
 % mesures 281 à 285
 	b

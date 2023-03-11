@@ -1,226 +1,350 @@
-commonOptions = {
-	\version "2.18.2"
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.doubleRepeatType = #":|.|:"
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\override Score.RehearsalMark #'font-size = #4
-	\compressFullBarRests
+%  work        : Schubert Symphony No. 8 in B minor, D.759
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 12 February 2023, 19:55
+%###############################################################################
+%#                    V O I C E   N A M E   :   F L A U T I                    #
+%###############################################################################
+nameFlautoIMvtI = {
+	\set Staff.instrumentName = #"Flauto I"
+	\set Staff.shortInstrumentName = #""
 }
-commonPartOptions = {
-	#(set-global-staff-size 19)
-	\override Score.BarNumber #'font-size = #0.1
-	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-                                      beam-event tuplet-span-event
-                                      dynamic-event slur-event)
+nameFlautoIMvtII = {
+	\set Staff.instrumentName = #"Flauto I"
+	\set Staff.shortInstrumentName = #""
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%             S T A F F    0 1               %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-nameFlautiI = {
-    \set Staff.instrumentName = #"Flauto I"
-    \set Staff.shortInstrumentName = #""
+nameFlautoIIMvtI = {
+	\set Staff.instrumentName = #"Flauto II"
+	\set Staff.shortInstrumentName = #""
 }
-nameFlautiII = {
-    \set Staff.instrumentName = #"Flauto II"
-    \set Staff.shortInstrumentName = #""
+nameFlautoIIMvtII = {
+	\set Staff.instrumentName = #"Flauto II"
+	\set Staff.shortInstrumentName = #""
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%             S T A F F    0 2               %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-nameOboiI = {
-    \set Staff.instrumentName = #"Oboe I"
-    \set Staff.shortInstrumentName = #""
+%###############################################################################
+%#                      V O I C E   N A M E   :   O B O I                      #
+%###############################################################################
+nameOboeIMvtI = {
+	\set Staff.instrumentName = #"Oboe I"
+	\set Staff.shortInstrumentName = #""
 }
-nameOboiII = {
-    \set Staff.instrumentName = #"Oboe II"
-    \set Staff.shortInstrumentName = #""
+nameOboeIMvtII = {
+	\set Staff.instrumentName = #"Oboe I"
+	\set Staff.shortInstrumentName = #""
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%             S T A F F    0 3               %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-nameClarinettiI = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Clarinet I"
-	        \line {
-	            "in A"
-	        }
-	    }
+nameOboeIIMvtI = {
+	\set Staff.instrumentName = #"Oboe II"
+	\set Staff.shortInstrumentName = #""
+}
+nameOboeIIMvtII = {
+	\set Staff.instrumentName = #"Oboe II"
+	\set Staff.shortInstrumentName = #""
+}
+%###############################################################################
+%#                V O I C E   N A M E   :   C L A R I N E T T I                #
+%###############################################################################
+nameClarinettoIMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Clarinet I"
+			\line {
+				"in A"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-nameClarinettiII = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Clarinet II"
-	        \line {
-	            "in A"
-	        }
-	    }
+nameClarinettoIMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Clarinet I"
+			\line {
+				"in A"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%             S T A F F    0 4               %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-nameFagottiI = {
-    \set Staff.instrumentName = #"Fagot I"
-    \set Staff.shortInstrumentName = #""
-}
-nameFagottiII = {
-    \set Staff.instrumentName = #"Fagot II"
-    \set Staff.shortInstrumentName = #""
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%             S T A F F    0 5               %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-nameCorniIMvtI = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Corni I"
-	        \line {
-	            "in D"
-	        }
-	    }
+nameClarinettoIIMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Clarinet II"
+			\line {
+				"in A"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-nameCorniIIMvtI = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Corni II"
-	        \line {
-	            "in D"
-	        }
-	    }
+nameClarinettoIIMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Clarinet II"
+			\line {
+				"in A"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-nameCorniIMvtII = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Corni I"
-	        \line {
-	            "in E"
-	        }
-	    }
+%###############################################################################
+%#                   V O I C E   N A M E   :   F A G O T T I                   #
+%###############################################################################
+nameFagottoIMvtI = {
+	\set Staff.instrumentName = #"Fagot I"
+	\set Staff.shortInstrumentName = #""
+}
+nameFagottoIMvtII = {
+	\set Staff.instrumentName = #"Fagot I"
+	\set Staff.shortInstrumentName = #""
+}
+nameFagottoIIMvtI = {
+	\set Staff.instrumentName = #"Fagot II"
+	\set Staff.shortInstrumentName = #""
+}
+nameFagottoIIMvtII = {
+	\set Staff.instrumentName = #"Fagot II"
+	\set Staff.shortInstrumentName = #""
+}
+%###############################################################################
+%#                     V O I C E   N A M E   :   C O R N I                     #
+%###############################################################################
+nameCornoIMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Corno I"
+			\line {
+				"in D"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-nameCorniIIMvtII = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Corni II"
-	        \line {
-	            "in E"
-	        }
-	    }
+nameCornoIMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Corno I"
+			\line {
+				"in E"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%             S T A F F    0 6               %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-nameTrombeI = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Trombe I"
-	        \line {
-	            "in E"
-	        }
-	    }
+nameCornoIIMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Corno II"
+			\line {
+				"in D"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-nameTrombeII = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Trombe II"
-	        \line {
-	            "in E"
-	        }
-	    }
+nameCornoIIMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Corno II"
+			\line {
+				"in E"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%           S T A F F    0 7 / 0 8           %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-nameTromboniI = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Trombone"
-	        \line {
-	            "alto"
-	        }
-	    }
+%###############################################################################
+%#                    V O I C E   N A M E   :   T R O M B A                    #
+%###############################################################################
+nameTrombaIMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Trombe I"
+			\line {
+				"in E"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-nameTromboniII = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Trombone"
-	        \line {
-	            "tenor"
-	        }
-	    }
+nameTrombaIMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Trombe I"
+			\line {
+				"in E"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-nameTromboniIII = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Trombone"
-	        \line {
-	            "basso"
-	        }
-	    }
+nameTrombaIIMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Trombe II"
+			\line {
+				"in E"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%             S T A F F    0 9               %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-nameTimpaniV = {
-    \set Staff.instrumentName = \markup {
-	    \center-column {
-	        "Timpani"
-	        \line {
-	            "in H F" \small \sharp
-	        }
-	    }
+nameTrombaIIMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Trombe II"
+			\line {
+				"in E"
+			}
+		}
 	}
-    \set Staff.shortInstrumentName = #""
+	\set Staff.shortInstrumentName = #""
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%           S T A F F    1 0 / 1 1           %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-nameViolinIV = {
-    \set Staff.instrumentName = #"Violino I"
-    \set Staff.shortInstrumentName = #""
+%###############################################################################
+%#                  V O I C E   N A M E   :   T R O M B O N I                  #
+%###############################################################################
+nameTromboneIMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Trombone"
+			\line {
+				"alto"
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = #""
 }
-nameViolinIIV = {
-    \set Staff.instrumentName = #"Violino II"
-    \set Staff.shortInstrumentName = #""
+nameTromboneIMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Trombone"
+			\line {
+				"alto"
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = #""
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%             S T A F F    1 2               %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-nameViolaV = {
-    \set Staff.instrumentName = #"Viola"
-    \set Staff.shortInstrumentName = #""
+nameTromboneIIMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Trombone"
+			\line {
+				"tenor"
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = #""
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%           S T A F F    1 3 / 1 4           %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-nameVioloncelloV = {
-    \set Staff.instrumentName = #"Violoncello"
-    \set Staff.shortInstrumentName = #""
+nameTromboneIIMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Trombone"
+			\line {
+				"tenor"
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = #""
 }
-nameBassoV = {
-    \set Staff.instrumentName = #"Basso"
-    \set Staff.shortInstrumentName = #""
+nameTromboneIIIMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Trombone"
+			\line {
+				"basso"
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = #""
+}
+nameTromboneIIIMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Trombone"
+			\line {
+				"basso"
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = #""
+}
+%###############################################################################
+%#                   V O I C E   N A M E   :   T I M P A N I                   #
+%###############################################################################
+nameTimpaniMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			"Timpani"
+			\line {
+				"in H F" \small \sharp
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = #""
+}
+nameTimpaniMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			"Timpani"
+			\line {
+				"in H F" \small \sharp
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = #""
+}
+%###############################################################################
+%#                 V O I C E   N A M E   :   V I O L I N O   I                 #
+%###############################################################################
+nameViolinIMvtI = {
+	\set Staff.instrumentName = #"Violino I"
+	\set Staff.shortInstrumentName = #""
+}
+nameViolinIMvtII = {
+	\set Staff.instrumentName = #"Violino I"
+	\set Staff.shortInstrumentName = #""
+}
+%###############################################################################
+%#                V O I C E   N A M E   :   V I O L I N O   I I                #
+%###############################################################################
+nameViolinIIMvtI = {
+	\set Staff.instrumentName = #"Violino II"
+	\set Staff.shortInstrumentName = #""
+}
+nameViolinIIMvtII = {
+	\set Staff.instrumentName = #"Violino II"
+	\set Staff.shortInstrumentName = #""
+}
+%###############################################################################
+%#                     V O I C E   N A M E   :   V I O L A                     #
+%###############################################################################
+nameViolaMvtI = {
+	\set Staff.instrumentName = #"Viola"
+	\set Staff.shortInstrumentName = #""
+}
+nameViolaMvtII = {
+	\set Staff.instrumentName = #"Viola"
+	\set Staff.shortInstrumentName = #""
+}
+%###############################################################################
+%#               V O I C E   N A M E   :   V I O L O N C E L L O               #
+%###############################################################################
+nameVioloncelloMvtI = {
+	\set Staff.instrumentName = #"Violoncello"
+	\set Staff.shortInstrumentName = #""
+}
+nameVioloncelloMvtII = {
+	\set Staff.instrumentName = #"Violoncello"
+	\set Staff.shortInstrumentName = #""
+}
+%###############################################################################
+%#               V O I C E   N A M E   :   C O N T R A B A S S O               #
+%###############################################################################
+nameBassoMvtI = {
+	\set Staff.instrumentName = #"Basso"
+	\set Staff.shortInstrumentName = #""
+}
+nameBassoMvtII = {
+	\set Staff.instrumentName = #"Basso"
+	\set Staff.shortInstrumentName = #""
 }

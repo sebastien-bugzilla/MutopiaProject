@@ -97,7 +97,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	g4( gis8)
 % mesures 101 à 105
 	a4( ais8
-	b)-.[ <e b'>^. <dis b'>^.]
+	b)[ <e b'>^. <dis b'>^.]
 	e\noBeam e,-. b'->~
 	b e,-. e'~->
 	e a,-. c->~
@@ -119,6 +119,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % mesures 131 à 135
 	
 % mesures 136 à 140
+	
 	
 	R4.
 	R4.*16

@@ -47,24 +47,16 @@ musicOboeIIMvtII = \relative c'' {
 	cis4( bis8)
 	cis( dis8.-> cis16)
 	bis4.
-	R4.*7
+	R4.*11
 % mesures 46 à 50
-	
-	
-	
-	
 	
 % mesures 51 à 55
 	
-	R4.
-	R
-	R
-	R
 % mesures 56 à 60
 	gis4.\pp(
 	a)(
 	gis8) r r
-	R4.*25
+	R4.*35
 % mesures 61 à 65
 	
 % mesures 66 à 70
@@ -75,22 +67,14 @@ musicOboeIIMvtII = \relative c'' {
 	
 % mesures 81 à 85
 	
-	
-	
-	R4.
-	R
 % mesures 86 à 90
-	R
-	R
-	R
-	R
-	R
+	
 % mesures 91 à 95
-	R
-	R
-	R
-	R
-	R\mark \default
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R \resetMMRN \mark \default
 % mesures 96 à 100
 	gis!4.\ff
 	cis
@@ -98,8 +82,8 @@ musicOboeIIMvtII = \relative c'' {
 	bis
 	cis~
 % mesures 101 à 105
-	cis4 dis8
-	e e-. dis-.
+	cis4( dis8
+	e) e-. dis-.
 	e32\noBeam gis, cis b a[ gis fis e] gis[ fis e dis]
 	cis[ gis' e' dis] cis[ b a gis] a[ gis fis e]
 	fis[ gis a gis] fis[ a dis cis] bis[ a' gis fis]
@@ -132,13 +116,9 @@ musicOboeIIMvtII = \relative c'' {
 	
 	r8 e(\> f
 	e4)\! r8
-	R4.
+	R4.*25
 % mesures 131 à 135
-	R
-	R
-	R
-	R
-	R4.*22
+	
 % mesures 136 à 140
 	
 % mesures 141 à 145
@@ -147,8 +127,12 @@ musicOboeIIMvtII = \relative c'' {
 	
 % mesures 151 à 155
 	
-% mesures 156 à 160
 	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
+% mesures 156 à 160
+	\mmrPos #-2 R \resetMMRN 
 	b4.(\pp\<
 	a\>
 	g8)\! r r
@@ -196,51 +180,35 @@ musicOboeIIMvtII = \relative c'' {
 	cis4.\pp(
 	d)(
 	cis8) r r
-	R4.*7
+	R4.*35
 % mesures 201 à 205
 	
 % mesures 206 à 210
 	
-	R4.
-	R
-	R
-	R
 % mesures 211 à 215
-	R
-	R
-	R
-	R
-	R
+	
 % mesures 216 à 220
-	R
-	R
-	R
-	R
-	R
+	
 % mesures 221 à 225
-	R
-	R
-	R
-	R
-	R4.*8
+	
 % mesures 226 à 230
 	
 % mesures 231 à 235
 	
 	
-	R4.
-	R
-	R
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
 % mesures 236 à 240
-	R \mark \default
+	\mmrPos #-2 R \resetMMRN \mark \default
 	a4.\ff
 	c
 	b
 	d
 % mesures 241 à 245
 	c8 e4(
-	d8) f4
-	e8 e-. dis!-.
+	d8) f4(
+	e8) e-. dis!-.
 	e4.
 	g
 % mesures 246 à 250
@@ -262,23 +230,23 @@ musicOboeIIMvtII = \relative c'' {
 	e4.\fp\>(
 	dis4)\! r8
 % mesures 261 à 265
-	b'8( gis! e
+	b'8( gis e
 	b'4) r8
 	b(_\crescmarkup cis16 b gis e
 	b'4) r8
 	R4.
 % mesures 266 à 270
-	b4\< b8
+	b4\< b8\!
 	cis4\>( b8)\!
 	gis4.(
 	a)(
 	gis
 % mesures 271 à 275
 	cis)(\<
-	b4)(\> a8\!
+	\once \stemUp b4)(\> a8\!
 	gis4 a8
 	gis8) r r
-	R4.*29
+	R4.*28
 % mesures 276 à 280
 	
 % mesures 281 à 285
@@ -292,7 +260,7 @@ musicOboeIIMvtII = \relative c'' {
 % mesures 301 à 305
 	
 	
-	
+	\omitMMRN \mmrPos #4 R4. \resetMMRN
 	gis4.->_\dimmarkup(
 	a8) r r
 % mesures 306 à 310
@@ -303,5 +271,5 @@ musicOboeIIMvtII = \relative c'' {
 	e)~
 % mesures 311 à 312
 	e~
-	e\fermata\espressivo \bar "|."
+	e\fermata_\espressivo \bar "|."
 }

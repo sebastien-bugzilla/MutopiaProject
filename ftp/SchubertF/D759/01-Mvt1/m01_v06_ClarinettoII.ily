@@ -11,27 +11,19 @@ musicClarinettoIIMvtI = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-		R2.*11
+		R2.*20
 % mesures 6 à 10
 	
 % mesures 11 à 15
 		
-		
-		R2.
-		R2.
-		R2.
 % mesures 16 à 20
-		R2.
-		R2.
-		R2.
-		R2.
-		R2.
+		
 % mesures 21 à 25
-		R2.
-		R2.
-		R2.
-		R2.
-		R2.
+		
+		\omitMMRN \mmrPos #-2 R2.
+		\mmrPos #-2 R \resetMMRN
+		R2.*2
+		
 % mesures 26 à 30
 		a''4\p( bes4. c!8)
 		c4( bes4._\crescmarkup b8)
@@ -76,7 +68,7 @@ musicClarinettoIIMvtI = \relative c {
 		r ees4-.(_\decresc ees-. ees8-.)\!
 % mesures 61 à 65
 		r ees4-.( ees4-. ees8-.)
-		R2. \mark \default
+		R2._\gp \mark \default
 		bes2.\ffz\>(
 		ees,4)\! r r
 		bes'2.(\fz\> 
@@ -123,8 +115,8 @@ musicClarinettoIIMvtI = \relative c {
 		
 		
 % mesures 101 à 105
-		bes4\p\<( f4. b8)(\!
-		c8. d16) ees4.\>( e8)\!
+		bes4\p\<( f4. b8)\!
+		c8.( d16 ees4.\> e8)\!
 		f2( ees4
 		d8) r d2\ff\>~
 		d2.~\!
@@ -139,7 +131,7 @@ musicClarinettoIIMvtI = \relative c {
 			f4)\! r r
 		}
 		{
-			fis2.~\>
+			fis2.~\>\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -147,7 +139,7 @@ musicClarinettoIIMvtI = \relative c {
 	fis~
 	fis(
 	g4) r r
-	R2.*19
+	R2.*17
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -156,8 +148,8 @@ musicClarinettoIIMvtI = \relative c {
 	
 % mesures 131 à 135
 	
-	
-	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R \resetMMRN 
 	r4 r cis->\fz~
 	cis r r
 % mesures 136 à 140
@@ -203,7 +195,7 @@ musicClarinettoIIMvtI = \relative c {
 	r fis4 fis fis8
 	g2.\ff
 % mesures 171 à 175
-	a2-. bes4-.
+	a2-. \once \stemUp bes4-.
 	g2.
 	f4-. d-. ees-.
 	d2.\fz
@@ -217,7 +209,7 @@ musicClarinettoIIMvtI = \relative c {
 % mesures 181 à 185
 	R2.
 	gis,2.(\>
-	a2\! b4
+	a2\! \once \stemUp b4
 	a) a2\fz
 	c\fz~ c8 d32( e f g)
 % mesures 186 à 190
@@ -260,29 +252,17 @@ musicClarinettoIIMvtI = \relative c {
 	cis~
 	cis( \mark \default
 	d4) r r
-	R2.*3
+	R2.*17
 	
 % mesures 221 à 225
 	
-	R2.
-	R
-	R
-	R
 % mesures 226 à 230
-	R
-	R
-	R
-	R
-	R
+	
 % mesures 231 à 235
-	R
-	R
-	R
-	R
-	R
+	
 % mesures 236 à 240
-	R
-	R
+	\omitMMRN \mmrPos #-4 R2.
+	\mmrPos #-4 R \resetMMRN 
 	c2.\<(~
 	c2\> b4)\!
 	g4( a4. bes!8)
@@ -296,7 +276,7 @@ musicClarinettoIIMvtI = \relative c {
 	bes4( a4. c8)
 	c4( bes4._\crescmarkup d8)
 	d4( c4. d8)
-	d4( c4.) d8\ff
+	d4( c4.) d8-.\ff
 	d2.~
 % mesures 251 à 255
 	d \mark \default
@@ -333,7 +313,7 @@ musicClarinettoIIMvtI = \relative c {
 	r aes4 aes aes8
 	r g4 g g8
 	r g4 g g8
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	d'2.(\ff\>
 	g,4)\! r r
@@ -372,18 +352,14 @@ musicClarinettoIIMvtI = \relative c {
 	g4) d'-. cis-. \mark \default
 % mesures 311 à 315
 	d r r
-	R2.*5
+	R2.*10
 	
 	
 	
 % mesures 316 à 320
 	
-	R2.
-	R2.
-	R2.
-	R2.
 % mesures 321 à 325
-	R2.
+	
 	r4 d2\ffz\>~
 	d2.~\p
 	d\pp~

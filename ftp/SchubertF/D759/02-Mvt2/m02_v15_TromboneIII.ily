@@ -8,7 +8,7 @@ musicTromboneIIIMvtII = \relative c' {
 	\clef bass
 	\key e \major
 % mesures 1 à 5
-	R4.*32
+	R4.*28
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -19,8 +19,12 @@ musicTromboneIIIMvtII = \relative c' {
 	
 % mesures 26 à 30
 	
-% mesures 31 à 35
 	
+	
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R \resetMMRN
+% mesures 31 à 35
+	R4.*2
 	\mark \default
 	b8-.\f cis-. a-.
 	gis-. fis-. e-. 
@@ -36,7 +40,7 @@ musicTromboneIIIMvtII = \relative c' {
 	e cis gis'
 	e bis cis
 	gis'4.
-	R4.*51
+	R4.*49
 % mesures 46 à 50
 	
 % mesures 51 à 55
@@ -56,9 +60,13 @@ musicTromboneIIIMvtII = \relative c' {
 % mesures 86 à 90
 	
 % mesures 91 à 95
-	\mark \default
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4. 
+	\mmrPos #-2 R \resetMMRN \mark \default
 % mesures 96 à 100
-	cis,4.\ff
+	cis,!4.\ff
 	e
 	dis
 	fis
@@ -92,7 +100,7 @@ musicTromboneIIIMvtII = \relative c' {
 	r8 r a'\p
 	g4.(
 	c,4) r8
-	R4.*44
+	R4.*42
 % mesures 131 à 135
 	
 % mesures 136 à 140
@@ -111,8 +119,8 @@ musicTromboneIIIMvtII = \relative c' {
 	
 % mesures 171 à 175
 	
-	
-	\mark \default
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R \resetMMRN \mark \default
 	b'8\ff-. cis-. a-.
 	gis-. fis-. e-. 
 % mesures 176 à 180
@@ -128,7 +136,7 @@ musicTromboneIIIMvtII = \relative c' {
 	a' eis fis
 	cis4.
 % mesures 186 à 190
-	R4.*51
+	R4.*49
 % mesures 191 à 195
 	
 % mesures 196 à 200
@@ -147,8 +155,12 @@ musicTromboneIIIMvtII = \relative c' {
 	
 % mesures 231 à 235
 	
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
 % mesures 236 à 240
-	\mark \default
+	\mmrPos #-2 R \resetMMRN \mark \default
 	a'8-.\ff a,-. e'~
 	e a,-. a'~
 	a d,-. f~
@@ -164,16 +176,16 @@ musicTromboneIIIMvtII = \relative c' {
 	c b-. fis'~
 	fis16 e g8-. gis~
 	gis16 b a8-. c-.
-	c,4. -\tweak X-offset #-3.8 \ff
+	c,4.\ff
 % mesures 251 à 255
 	c
 	f,8 r r
 	R4.
-	b! -\tweak X-offset #-3.8 \ff
+	b!\ff
 	b \mark \default
 % mesures 256 à 260
 	cis!8 r r
-	R4.*29
+	R4.*23
 % mesures 261 à 265
 	
 % mesures 266 à 270
@@ -182,8 +194,16 @@ musicTromboneIIIMvtII = \relative c' {
 	
 % mesures 276 à 280
 	
-% mesures 281 à 285
 	
+	
+	
+	\omitMMRN \mmrPos #-2 R4.
+% mesures 281 à 285
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN
 % mesures 286 à 290
 	aes'4.\ppp~
 	aes~
@@ -204,5 +224,5 @@ musicTromboneIIIMvtII = \relative c' {
 	e~
 % mesures 311 à 312
 	e~
-	e\fermata\espressivo \bar "|."
+	e\fermata_\espressivo \bar "|."
 }

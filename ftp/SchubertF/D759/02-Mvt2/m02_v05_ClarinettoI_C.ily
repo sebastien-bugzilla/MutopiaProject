@@ -50,7 +50,7 @@ musicClarinettoIMvtII = \relative c'' {
 	\hairpinShorten #'(0 . 1) bes'\fp\>^(
 % mesures 51 à 55
 	a4)\! r8
-	\partCombineApart d8( b g
+	\partCombineApart d8(-\tweak X-offset #-1.5 \p b g
 	d) r r
 	d'8(-> e16_\crescmarkup d b g
 	d8) r r \partCombineAutomatic

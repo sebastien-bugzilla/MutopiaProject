@@ -9,16 +9,16 @@ musicCornoIIMvtII = \relative c' {
 	\key c \major
 	\transposition e
 % mesures 1 à 5
-	e4.\pp\<
+	e4.\pp\<(
 	g\>~
-	g8\! r r
+	g8\!) r r
 	R4.*3
 	
 % mesures 6 à 10
 	
-	e4.\<
+	e4.\<(
 	g\>~
-	g8\! r r
+	g8\!) r r
 	R4.*5
 % mesures 11 à 15
 	
@@ -42,7 +42,7 @@ musicCornoIIMvtII = \relative c' {
 	g8\! r r \mark \default
 	g4.\f
 	g
-	g8 g4->
+	g8 g4
 % mesures 36 à 40
 	c4.
 	d 
@@ -70,11 +70,11 @@ musicCornoIIMvtII = \relative c' {
 % mesures 56 à 60
 	g8 r r
 	R4.
-	e4.\ppp
+	e4.\ppp(
 	g~
-	g4 r8
+	g4) r8
 % mesures 61 à 65
-	R4.*35
+	R4.*33
 % mesures 66 à 70
 	
 % mesures 71 à 75
@@ -87,7 +87,10 @@ musicCornoIIMvtII = \relative c' {
 	
 % mesures 91 à 95
 	
-	\mark \default
+	
+	
+	\omitMMRN \mmrPos #-2 R4. 
+	\mmrPos #-2 R \resetMMRN \mark \default
 % mesures 96 à 100
 	c4.\ff
 	e
@@ -108,7 +111,7 @@ musicCornoIIMvtII = \relative c' {
 	c \mark \default
 % mesures 111 à 115
 	d8 r r
-	R4.*19
+	R4.*27
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -116,25 +119,25 @@ musicCornoIIMvtII = \relative c' {
 % mesures 126 à 130
 	
 % mesures 131 à 135
-	R4.*5
+	
 % mesures 136 à 140
-	R4.
-	R4.
-	R4.
-	c4(\ppp c,8)
-	c'4( c,8)
+	
+	
+	
+	\omitMMRN \mmrPos #4 R4.
+	\mmrPos #4 R
 % mesures 141 à 145
-	c'4( c,8)
-	e4.\pp\<
+	\mmrPos #4 R \resetMMRN
+	e,4.\pp\<(
 	g\>~
-	g8\! r r
+	g8\!) r r
 	R4.*3
 % mesures 146 à 150
 	
 	
-	e4.\<
+	e4.\<(
 	g\>~
-	g8\! r r
+	g8\!) r r
 % mesures 151 à 155
 	R4.*5
 % mesures 156 à 160
@@ -178,7 +181,7 @@ musicCornoIIMvtII = \relative c' {
 % mesures 196 à 200
 	c4.->~
 	c8 r r 
-	R4.*39
+	R4.*37
 % mesures 201 à 205
 	
 % mesures 206 à 210
@@ -193,8 +196,12 @@ musicCornoIIMvtII = \relative c' {
 	
 % mesures 231 à 235
 	
+	
+	
+	
+	\omitMMRN \mmrPos #-2 R4. 
 % mesures 236 à 240
-	\mark \default
+	\mmrPos #-2 R \resetMMRN \mark \default
 	c,4.\ff
 	c
 	g'
@@ -262,12 +269,12 @@ musicCornoIIMvtII = \relative c' {
 % mesures 301 à 305
 	R4.
 	g8( e c)
-	g4.->~
+	\startMeasureCount g4.->~
 	g~
 	g~
 % mesures 306 à 310
 	g~
-	g \clef bass
+	g \stopMeasureCount \clef bass
 	c,,~
 	c~
 	c~

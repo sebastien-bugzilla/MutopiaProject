@@ -75,14 +75,14 @@ musicViolinoIIMvtII = \relative c'' {
 	b16( dis fis\> a gis fis
 % mesures 56 à 60
 	e8)\pp r r
-	R4.*7
+	R4.*3
 	
 	
-	
+	\omitMMRN \mmrPos #-4 R4.
 % mesures 61 à 65
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \resetMMRN
 	e16\pp e8 e e16~
 	e e8 e e16~ 
 % mesures 66 à 70
@@ -255,14 +255,14 @@ musicViolinoIIMvtII = \relative c'' {
 % mesures 196 à 200
 	e16( gis b d\> cis b\!
 	a8)\pp r r
-	R4.*7
+	R4.*3
 	
 	
 % mesures 201 à 205
-	
-	
-	
-	
+	\omitMMRN \mmrPos #-6 R4.
+	\mmrPos #-6 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN
 	c,16\pp c8 c c16~
 % mesures 206 à 210
 	c c8 c c16~
@@ -340,7 +340,7 @@ musicViolinoIIMvtII = \relative c'' {
 	cis'\< b a gis fis a
 	cis4\> b8)\!
 	e,8\pp r r
-	R4.*20
+	R4.*17
 % mesures 271 à 275
 	
 % mesures 276 à 280
@@ -348,9 +348,9 @@ musicViolinoIIMvtII = \relative c'' {
 % mesures 281 à 285
 	
 % mesures 286 à 290
-	
-	
-	
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN
 	ees16(\pp g bes des c bes
 	aes8) r r
 % mesures 291 à 295

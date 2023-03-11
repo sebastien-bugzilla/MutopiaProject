@@ -16,7 +16,7 @@ musicClarinettoIMvtII = \relative c'' {
 	
 	
 	
-	bes4.\fp\>(
+	\once \stemUp bes4.\fp\>(
 	a4)\! r8
 % mesures 16 à 20
 	R4.*15
@@ -47,10 +47,10 @@ musicClarinettoIMvtII = \relative c'' {
 	b8 g e)
 	dis4.->(
 	e) 
-	bes'\fp\>(
+	\once \stemUp bes'\fp\>(
 % mesures 51 à 55
 	a4)\! r8
-	d8( b g
+	d8(\p b g
 	d) r r
 	d'8(-> e16_\crescmarkup d b g
 	d8) r r 
@@ -63,12 +63,12 @@ musicClarinettoIMvtII = \relative c'' {
 	g->
 	fis
 	a->)
-	g8(_\< b4->
+	g8(\< b4->
 % mesures 71 à 75
 	a8 c4->)\!~
-	c4._\f_\>~
-	c_\p~
-	c4_\pp( bes16 aes
+	c4.\f\>~
+	c\p~
+	c4\pp( bes16 aes
 	g8 bes g)
 % mesures 76 à 80
 	aes4( g16 f
@@ -78,7 +78,7 @@ musicClarinettoIMvtII = \relative c'' {
 	b'!4.\>~
 % mesures 81 à 85
 	b\!~
-	b~ -\tweak X-offset #2 ^\morendo
+	b~_\morendo
 	b4 r8 
 	R4.*12
 % mesures 86 à 90
@@ -109,7 +109,7 @@ musicClarinettoIMvtII = \relative c'' {
 	g' g8 g g16 \mark \default
 % mesures 111 à 115
 	a8 r r
-	R4.*26
+	R4.*24
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -119,9 +119,9 @@ musicClarinettoIMvtII = \relative c'' {
 % mesures 131 à 135
 	
 % mesures 136 à 140
-	
-	
-	bes!4_\ppp(-> g8) 
+	\omitMMRN \mmrPos #-4 R4.
+	\mmrPos #-4 R \resetMMRN 
+	bes!4\ppp(-> g8) 
 	R4.*16
 % mesures 141 à 145
 	
@@ -143,7 +143,7 @@ musicClarinettoIMvtII = \relative c'' {
 	
 % mesures 171 à 175
 	
-	d'16_(_\< fis a c_\> b a\!
+	d'16(\< fis a c\> b a\!
 	g4) r8 \mark \default
 	fis4.\ff
 	g
@@ -179,7 +179,7 @@ musicClarinettoIMvtII = \relative c'' {
 	d
 % mesures 201 à 205
 	e4) r8
-	R4.*23
+	R4.*19
 % mesures 206 à 210
 	
 % mesures 211 à 215
@@ -187,20 +187,20 @@ musicClarinettoIMvtII = \relative c'' {
 % mesures 216 à 220
 	
 % mesures 221 à 225
-	
-	
-	
-	
+	\omitMMRN \mmrPos #-2 R4.
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \resetMMRN
 	c4.\pp(
 % mesures 226 à 230
 	e->
 	d
 	f->)
-	e8(_\< g4
+	e8(\< g4
 	f8 a4)~\!
 % mesures 231 à 235
-	a16.(_\f\> g32 a16 g e c\!
-	g'16.->_\p f32 g16 f d b
+	a16.(\f\> g32 a16 g e c\!
+	g'16.->\p f32 g16 f d b
 	c8) r r 
 	R4.*3
 	
@@ -263,8 +263,8 @@ musicClarinettoIMvtII = \relative c'' {
 % mesures 286 à 290
 	ges'4.(\ppp
 	aes
-	ges8_\< ees ces\!
-	des4._\>
+	ges8\< ees ces\!
+	des4.\>
 	ees4)\! r8
 % mesures 291 à 295
 	R4.*5
@@ -288,5 +288,5 @@ musicClarinettoIMvtII = \relative c'' {
 	d)~
 % mesures 311 à 312
 	d~
-	d\fermata\espressivo \bar "|."
+	d\fermata_\espressivo \bar "|."
 }

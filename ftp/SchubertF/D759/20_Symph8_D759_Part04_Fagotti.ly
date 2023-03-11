@@ -19,8 +19,7 @@
 \include "./00-Common/Symph8_D759_timeMvt.ily"
 \include "./00-Common/Symph8_D759_LayoutParts.ily"
 \include "./00-Common/Symph8_D759_Shortcuts.ily"
-%\include "./00-Common/Symph8_D759_NameStaff.ily"
-%\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
+\include "./00-Common/Symph8_D759_NameVoice.ily"
 %\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
 \include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
@@ -58,7 +57,7 @@
 				\InCueContext \cueVoiceFagottoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \musicFagottoIMvtI
+				\timeMvtI \nameFagottoIMvtI \musicFagottoIMvtI
 			}
 		>>
 		\header {
@@ -86,7 +85,7 @@
 				\InCueContext \cueVoiceFagottoIMvtII
 			}
 			\new Voice {
-				\timeMvtII \musicFagottoIMvtII
+				\timeMvtII \nameFagottoIMvtII \musicFagottoIMvtII
 			}
 		>>
 		\header {
@@ -114,7 +113,7 @@
 				\InCueContext \cueVoiceFagottoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \musicFagottoIIMvtI 
+				\timeMvtI \nameFagottoIIMvtI \musicFagottoIIMvtI 
 			}
 		>>
 		\header {
@@ -142,7 +141,7 @@
 				\InCueContext \cueVoiceFagottoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \musicFagottoIIMvtII 
+				\timeMvtII \nameFagottoIIMvtII \musicFagottoIIMvtII 
 			}
 		>>
 		\header {

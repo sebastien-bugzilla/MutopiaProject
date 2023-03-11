@@ -48,7 +48,7 @@ musicOboeIMvtI = \relative c'' {
 		ais2.~
 		ais \mark \default
 		b4\fz r r
-		R2.*24
+		R2.*23
 % mesures 41 à 45
 	
 % mesures 46 à 50
@@ -59,7 +59,7 @@ musicOboeIMvtI = \relative c'' {
 	
 % mesures 61 à 65
 		
-		\mark \default
+		R2._\gp \mark \default
 		g,2.\ffz\>(
 		c,4)\! r r
 		g'2.\fz(\>
@@ -90,7 +90,7 @@ musicOboeIMvtI = \relative c'' {
 % mesures 86 à 90
 		g8 r g2\fz->(
 		b8) r b2->(\fz
-		c4) g-. fis!-.
+		c4) g-. fis-.
 		g8 r g2->~\fz
 		g8 r g2->\fz(
 % mesures 91 à 95
@@ -122,7 +122,7 @@ musicOboeIMvtI = \relative c'' {
 			b4)\! r r
 		}
 		{
-			b2.~\>
+			b2.~\>\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -130,7 +130,7 @@ musicOboeIMvtI = \relative c'' {
 	b~
 	b~
 	b4 r r
-	R2.*19
+	R2.*17
 % mesures 116 à 120
 	
 % mesures 121 à 125
@@ -139,8 +139,8 @@ musicOboeIMvtI = \relative c'' {
 	
 % mesures 131 à 135
 	
-	
-	
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R \resetMMRN
 	g'2.\f(
 	fis2 e4)
 % mesures 136 à 140
@@ -190,7 +190,7 @@ musicOboeIMvtI = \relative c'' {
 	e2.
 	d4-. b-. c-.
 	b2.\fz
-	\afterGrace dis2.\fz\trill {cis16[ dis]} \mark \default
+	\afterGrace dis2.\fz\trill {cis!16[ dis]} \mark \default
 % mesures 176 à 180
 	e4 r r
 	R2.
@@ -284,7 +284,7 @@ musicOboeIMvtI = \relative c'' {
 % mesures 251 à 255
 	b \mark \default
 	a4\fz r r
-	R2.*28
+	R2.*27
 % mesures 256 à 260
 	
 % mesures 261 à 265
@@ -294,7 +294,7 @@ musicOboeIMvtI = \relative c'' {
 % mesures 271 à 275
 	
 % mesures 276 à 280
-	\mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	b,2.(\ff\>
 	e,4)\! r r
@@ -338,7 +338,7 @@ musicOboeIMvtI = \relative c'' {
 	r4 r r8 fis\p\<~
 	fis4( e8[\> dis\! cis b)]
 % mesures 316 à 320
-	b4( ais8 gis ais4)
+	\once \stemUp b4( ais8 gis ais4)
 	b r r
 	cis4(\p fis,4. cis'8)
 	b8.(_\< cis16 dis4.\! fis8)

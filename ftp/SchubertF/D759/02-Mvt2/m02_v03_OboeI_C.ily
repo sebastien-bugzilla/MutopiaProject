@@ -229,7 +229,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	\partCombineApart fis16._(->_\pp e32 fis16 e cis a
-	e'16. d32 e16 d b gis
+	e'16.-> d32 e16 d b gis
 	a8) r r \partCombineAutomatic
 % mesures 236 à 240
 	R4. \mark \default

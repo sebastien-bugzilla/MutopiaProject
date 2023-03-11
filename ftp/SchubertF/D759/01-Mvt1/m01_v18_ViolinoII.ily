@@ -51,14 +51,14 @@ musicViolinoIIMvtI = \relative c {
 		q4 r8 q q4
 		r8 q q4 q8 q \mark \default
 		<d fis>4\fz r r
-		R2.*14 
+		R2.*12 
 % mesures 41 à 45
 	
 % mesures 46 à 50
 	
 % mesures 51 à 55
-		
-		
+		\omitMMRN \mmrPos #-2 R2.
+		\mmrPos #-2 R \resetMMRN
 		g,4(\pp d4. g8
 		fis8. g16 a4. g8)
 		fis8.( g16 a8[ d, e fis])
@@ -307,13 +307,17 @@ musicViolinoIIMvtI = \relative c {
 % mesures 251 à 255
 	r8 q-. q4-. q8-. q-. \mark \default
 	<a fis'>4\fz r r
-	R2.*14
+	R2.*12
 % mesures 256 à 260
 	
 % mesures 261 à 265
 	
-% mesures 266 à 270
 	
+	
+	
+	\omitMMRN \mmrPos #-2 R2. 
+% mesures 266 à 270
+	\mmrPos #-2 R \resetMMRN
 	d,4(\pp a4. d8)
 	cis8.( d16 e4. d8)
 	cis8.( d16 e8[ a, b cis])
@@ -388,13 +392,14 @@ musicViolinoIIMvtI = \relative c {
 	d r r
 	cis r r
 	b r r
-	R2.*9
+	R2.*7
+	
 % mesures 331 à 335
 	
 % mesures 336 à 340
-	
-	
-	b2.( -\tweak X-offset #-2. \p^\arco
+	\omitMMRN \mmrPos #-2 R2.
+	\mmrPos #-2 R \resetMMRN
+	b2.(\p^\arco
 	cis2 d4)
 	fis2.(\>
 % mesures 341 à 345

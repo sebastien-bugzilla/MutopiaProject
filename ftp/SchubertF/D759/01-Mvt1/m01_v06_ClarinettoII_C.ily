@@ -296,7 +296,7 @@ musicClarinettoIIMvtI = \relative c {
 	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur bes4( a4. c8)
 	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur c4( bes4. d8)
 	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur d4( c4. d8)
-	d4( c4.) d8-\offset X-offset -1.5 \ff
+	d4( c4.) d8-.-\offset X-offset -1.5 \ff
 	d2.~
 % mesures 251 à 255
 	d \mark \default

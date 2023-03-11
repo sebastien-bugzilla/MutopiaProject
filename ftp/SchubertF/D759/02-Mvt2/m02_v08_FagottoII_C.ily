@@ -100,7 +100,7 @@ musicFagottoIIMvtII = \relative c' {
 	dis
 % mesures 106 à 110
 	fis
-	gis8 gis4
+	e8 gis4
 	fis8 a4
 	a,32[ cis e g] a[ g e cis] a[ cis e g]
 	a[ g e cis] a[ cis e g] a[ g e a,] \mark \default
