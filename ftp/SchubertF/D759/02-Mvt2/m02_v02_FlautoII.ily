@@ -18,8 +18,8 @@ musicFlautoIIMvtII = \relative c'' {
 	ais4.(\fp\>
 	a!4)\! r8
 % mesures 16 à 20
-	b4.(\pp\<
-	dis\>
+	\hairpinShorten #'(-0.3 . -1) b4.(\pp\<
+	\hairpinShorten #'(1 . 0) dis\>
 	e8)\! r r
 	R4.*3
 	
@@ -62,9 +62,9 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 % mesures 56 à 60
-	e'4.\pp
+	e'4.(\pp
 	dis
-	e8 r r
+	e8) r r
 	R4.*33
 % mesures 61 à 65
 	
@@ -112,7 +112,7 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 	
-	r8 r b,16\p\<( cis!
+	r8 r b,16-\offset X-offset -2 \p\<( cis!
 	d8\! g\> fis
 % mesures 121 à 125
 	g4)\! r8
@@ -139,12 +139,12 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	\omitMMRN \mmrPos #-2 R4.
 	\mmrPos #-2 R \resetMMRN
-	ais,4.(\fp\>
+	ais,4.(\fp-\alterBroken shorten-pair #'( () (0 . 3) ) \>
 % mesures 156 à 160
-	a!)\!
-	gis\pp\<
-	b\>~
-	b8\! r r
+	a!)
+	gis\pp\<(
+	\once \stemUp b\>~
+	\once \stemUp b8\!) r r
 	R4.*3
 % mesures 161 à 165
 	
@@ -177,7 +177,7 @@ musicFlautoIIMvtII = \relative c'' {
 	a8( b8.-> a16)
 	gis4.(
 % mesures 186 à 190
-	e!\pp
+	e\pp
 	fis
 	e8 cis a)
 	gis8->( a b
@@ -238,8 +238,8 @@ musicFlautoIIMvtII = \relative c'' {
 	dis) dis8 dis dis16( \mark \default
 % mesures 256 à 260
 	e8) r r
-	ais,,4.\fp\>(
-	a!4)\! r8
+	ais,,4.\fp-\alterBroken shorten-pair #'(()(0 . 2.5)) \>(
+	a!4) r8\!
 	ais4.(\fp\>
 	a!4)\! r8
 % mesures 261 à 265

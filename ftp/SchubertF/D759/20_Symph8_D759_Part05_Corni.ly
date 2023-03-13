@@ -19,8 +19,7 @@
 \include "./00-Common/Symph8_D759_timeMvt.ily"
 \include "./00-Common/Symph8_D759_LayoutParts.ily"
 \include "./00-Common/Symph8_D759_Shortcuts.ily"
-%\include "./00-Common/Symph8_D759_NameStaff.ily"
-%\include "./00-Common/Symph8_D759_NameGrandStaff.ily"
+\include "./00-Common/Symph8_D759_NameVoice.ily"
 %\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
 \include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
@@ -58,7 +57,7 @@
 				\InCueContext \cueVoiceCornoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \musicCornoIMvtI
+				\timeMvtI \nameCornoIMvtI \musicCornoIMvtI
 			}
 		>>
 		\header {
@@ -86,7 +85,7 @@
 				\InCueContext \cueVoiceCornoIMvtII
 			}
 			\new Voice {
-				\timeMvtII \musicCornoIMvtII
+				\timeMvtII \nameCornoIMvtII \musicCornoIMvtII
 			}
 		>>
 		\header {
@@ -114,7 +113,7 @@
 				\InCueContext \cueVoiceCornoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \musicCornoIIMvtI 
+				\timeMvtI \nameCornoIIMvtI \musicCornoIIMvtI 
 			}
 		>>
 		\header {
@@ -142,7 +141,7 @@
 				\InCueContext \cueVoiceCornoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \musicCornoIIMvtII 
+				\timeMvtII \nameCornoIIMvtII \musicCornoIIMvtII 
 			}
 		>>
 		\header {

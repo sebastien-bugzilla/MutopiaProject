@@ -18,8 +18,8 @@ musicFlautoIMvtII = \relative c'' {
 	c4.(\fp\>
 	b4)\! r8
 % mesures 16 à 20
-	e4.(\pp\<
-	fis\>
+	\hairpinShorten #'(-0.5 . -1.5) e4.(\pp\<
+	\hairpinShorten #'(1.5 . 0) fis\>
 	g8)\! r r
 	R4.*3
 	
@@ -155,11 +155,11 @@ musicFlautoIMvtII = \relative c'' {
 	
 	\omitMMRN \mmrPos #-2 R4.
 	\mmrPos #-2 R \resetMMRN
-	c4.(\fp\>
+	c4.(-\offset X-offset 0.5 \fp\>
 % mesures 156 à 160
 	b)\!
-	e(\pp\<
-	fis\>
+	\hairpinShorten #'(0 . -1.5) e(\pp\<
+	\hairpinShorten #'(1.5 . 0) fis\>
 	g8)\! r r
 	R4.*3
 % mesures 161 à 165
@@ -176,7 +176,7 @@ musicFlautoIMvtII = \relative c'' {
 	b,16(\< dis fis\! a\> gis fis\!
 % mesures 171 à 175
 	e8) r r 
-	b16(\< dis fis\! a\> gis fis\!
+	\beamOffset #'(0.3 . 0.3) b16(\< dis fis\! a\> gis fis\!
 	e4) r8 \mark \default
 	fis4.\ff
 	gis
@@ -203,7 +203,7 @@ musicFlautoIMvtII = \relative c'' {
 	e)\!
 	e'8(\< cis\> a\!
 	e) r r
-	e'8(\<^\crescmarkup fis16 e\> cis a\!
+	e'8(\<_\crescmarkup fis16 e\> cis a\!
 % mesures 196 à 200
 	e8) r r
 	a4.(\pp
@@ -227,7 +227,7 @@ musicFlautoIMvtII = \relative c'' {
 	
 	\omitMMRN \mmrPos #-2 R4.
 	\mmrPos #-2 R \resetMMRN
-	fis,16.(\ppp-> e32 fis16 e cis a
+	\beamOffset #'(0.5 . 0.5) fis,16.(\ppp-> e32 fis16 e cis a
 % mesures 236 à 240
 	e'16.-> d32 e16 d b gis) \mark \default
 	a'4.\ff

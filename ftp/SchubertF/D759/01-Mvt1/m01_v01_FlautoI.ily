@@ -51,7 +51,7 @@ musicFlautoIMvtI = \relative c {
 % mesures 61 à 65
 	
 		R2._\gp \mark \default
-		g,2.\ffz\>(
+		\hairpinShorten #'(-0.5 . -1.5) g,2.\ffz\>(
 		c,4)\! r r
 		g'2.(\fz\>
 % mesures 66 à 70
@@ -68,7 +68,7 @@ musicFlautoIMvtI = \relative c {
 		g2.(
 % mesures 76 à 80
 		g)
-		e'~\f
+		\dynEO #'(0 . 2) e'~\f
 		e2( ees4)
 		d2.(
 		d)
@@ -100,7 +100,7 @@ musicFlautoIMvtI = \relative c {
 		b8.( c16\< d4. f8)\!
 		e4.(\> d8[\! c b])
 		a2( d4)
-		g,8 r b4\fz  r
+		g,8 r \dynEO #'(0 . 2) b4\fz  r
 		R2.*4
 % mesures 106 à 110
 		
@@ -113,7 +113,7 @@ musicFlautoIMvtI = \relative c {
 			\once \stemUp b4)\! r r
 		}
 		{
-			b2.\>~\repeatTie
+			\hairpinShorten #'(0.7 . 0) b2.\>~\repeatTie
 		}
 	}
 % mesures 111 à 115
@@ -166,7 +166,7 @@ musicFlautoIMvtI = \relative c {
 	r8 e4 e e8
 % mesures 161 à 165
 	r8 e4 e e8
-	bes'2.(\ff\>
+	\dynEO #'(0 . 1) bes'2.(\ff-\tweak extra-offset #'(0 . 0.8) \>
 	g2\! e4)
 	bes2.(\>
 	g2\! e4)
@@ -197,7 +197,7 @@ musicFlautoIMvtI = \relative c {
 % mesures 186 à 190
 	fis2.\fz
 	eis4-. b-. cis-.
-	d-. b,2\fz
+	d-. b,2-\offset X-offset 0.5 \fz
 	d\fz~ d8 e32( fis g a)
 	b2.\fz
 % mesures 191 à 195
@@ -227,11 +227,11 @@ musicFlautoIMvtI = \relative c {
 % mesures 211 à 215
 	
 	
-	 r4 e,(-\tweak X-offset #-2. \pp fis)
+	 r4 e,(\pp fis)
 	g4.( fis8[ g fis]
 	g4. fis8[ g fis])
 % mesures 216 à 220
-	g2.(
+	\shape #'( () ((0 . 0.5)(0 . 1)(0 . 1)(0 . 0.5)) ) Slur g2.(
 	ais \mark \default
 	b4) r r 
 	R2.*10
@@ -309,23 +309,23 @@ musicFlautoIMvtI = \relative c {
 	
 	R2._\gp \mark \default
 % mesures 281 à 285
-	b,2.\ff\>(
+	\once \stemUp b,2.-\offset X-offset -1.5 \ff\>(
 	e,4)\! r r
-	b'2.(\ff\>
+	\once \stemUp \dynEO #'(-1.8 . 1) \hairpinShorten #'(-2 . 0) b'2.(\ff-\tweak extra-offset #'(0 . 0.7) \>
 	fis4)\! r r
-	b2.(\fz\>
+	\once \stemUp \hairpinShorten #'(-0.5 . 0) b2.(\fz\>
 % mesures 286 à 290
-	g4)\! d''\fz d\fz 
+	g4)\! d''-\offset X-offset -0.3 \fz d\fz 
 	d\fz d\fz d\fz 
 	d\fz d\fz d\fz 
-	d8\fz\> d4 d d8~\!
+	\dynEO #'(0 . 1) d8\fz-\tweak extra-offset #'(0 . 0.7) \> d4 d d8~\!
 	d d4 d d8(
 % mesures 291 à 295
-	cis2.)~\p
+	\dynEO #'(0 . 2) cis2.)~\p
 	cis2( c4)
 	b2.~
 	b
-	gis'2.~\f
+	\dynEO #'(0 . 2) gis'2.~\f
 % mesures 296 à 300
 	gis2( g4)
 	fis2.~
@@ -342,7 +342,7 @@ musicFlautoIMvtI = \relative c {
 	gis4) fis-. fis-.
 	fis8 r fis2(\fz
 	gis8) r gis2(
-	bis,8) r bis2(\fz
+	bis,8) r \dynEO #'(0 . 2) bis2(\fz
 	cis4) fis-. ais,-. \mark \default
 % mesures 311 à 315
 	b r r

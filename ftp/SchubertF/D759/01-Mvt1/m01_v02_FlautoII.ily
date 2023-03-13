@@ -27,9 +27,9 @@ musicFlautoIIMvtI = \relative c {
 		R2.*2
 % mesures 31 à 35
 		
-		r4 r r8 d,
+		r4 r r8 d,_\pcresc
 		d4( cis4. e8)
-		e4( -\tweak X-offset #-2. \f d4. e'8)
+		e4(\f d4. e'8)
 		e4( d4.) e8\ff
 % mesures 36 à 40
 		e2.~
@@ -52,9 +52,9 @@ musicFlautoIIMvtI = \relative c {
 		g'2.(\fz\>
 % mesures 66 à 70
 		d4)\! r r
-		g2.(\fz\>
-		ees4)\! cis''!4\fz cis\fz
-		cis_\crescmarkup\fz cis\fz cis\fz
+		g2.(\fz-\alterBroken shorten-pair #'(()(0 . 0.5)) \>
+		ees4) cis''!4-\tweak extra-offset #'(0 . 0.38) \fz cis\fz
+		\markEO #'(0 . 5) cis_\crescmarkup\fz cis\fz cis\fz
 		cis\fz cis\fz cis\fz
 % mesures 71 à 75
 		cis8\fz g4\> g g8~
@@ -156,10 +156,10 @@ musicFlautoIIMvtI = \relative c {
 	r8 cis4 cis cis8
 	g'2.\ff\>~(
 	g2\! e4)
-	bes2.(\>
+	\once \stemUp bes2.(\>
 	g2\! e4)
 % mesures 166 à 170
-	b'!8\p e4 e e8
+	b'!8-\offset X-offset #0.3 \p e4 e e8
 	r e4 e e8
 	r e4 e e8
 	r dis4 dis dis8
@@ -293,11 +293,11 @@ musicFlautoIIMvtI = \relative c {
 	
 	R2._\gp \mark \default
 % mesures 281 à 285
-	b,2.\ff\>(
+	b,2.-\offset X-offset 0.3 \ff\>(
 	e,4)\! r r
-	b'2.(\ff\>
+	b'2.(-\offset X-offset 0.3 \ff\>
 	fis4)\! r r
-	b2.(\fz\>
+	b2.(-\offset X-offset 0.5 \fz\>
 % mesures 286 à 290
 	g4)\! b'\fz b\fz 
 	b\fz b\fz b\fz 
@@ -312,7 +312,7 @@ musicFlautoIIMvtI = \relative c {
 	fis'\f(
 % mesures 296 à 300
 	e)
-	e(
+	\shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur e(
 	dis)
 	r8 d!4\ff d d8
 	cis2.\fz

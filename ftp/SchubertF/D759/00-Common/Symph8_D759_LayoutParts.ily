@@ -10,7 +10,7 @@
 	#(layout-set-staff-size 20)
 	\set Score.alternativeNumberingStyle = #'numbers
 %	\set Score.doubleRepeatType = #":|.|:"
-	\set Score.markFormatter = #format-mark-alphabet
+	\set Score.markFormatter = #format-mark-box-alphabet
 	\context {
 		\Voice
 		\override TupletBracket #'bracket-visibility = ##f

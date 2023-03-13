@@ -1,3 +1,9 @@
+%  work        : Schubert Symphony No. 8 in B minor, D.759
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 12 February 2023, 19:55
+%###############################################################################
+%#                      S H O R T C U T S   S E C T I O N                      #
+%###############################################################################
 arco = \markup {\italic arco}
 crescmarkup = \markup {\italic cresc.}
 pizz = \markup {\italic pizz.}
@@ -8,6 +14,7 @@ becarre = \markup { \tiny \natural }
 gp = \markup {G.P.}
 decrescmarkup = \markup {\italic decresc.}
 fcresc = \markup {\dynamic f \italic cresc.}
+pcresc = \markup {\dynamic p \italic cresc.}
 
 ffz = #(make-dynamic-script "ffz")
 crescD = \tweak DynamicText.self-alignment-X #-0.5 \tweak DynamicText.font-size #1 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
@@ -34,7 +41,6 @@ naturaltrillmark = \markup {
 		}
 	}
 }
-
 
 mmrPos = #(define-music-function
 	(position)

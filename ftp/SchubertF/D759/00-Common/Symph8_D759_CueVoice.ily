@@ -13,13 +13,13 @@ cueVoiceFlautoIMvtI = \relative c'' {
 	b,4. ais8 b cis)
 	s2.*109
 	% bar 134 - 135
-	g'2.(^\markup {Ob.I}
+	g'2.(-\offset X-offset -3 ^\markup {Ob.I}
 	fis2 e4)
 }
 cueVoiceFlautoIMvtII = \relative c'' {
 	s4.*89
 	% bar 90 - 91
-	\voiceOne bes'16.(\repeatTie^\markup {Ob.I} aes32 bes16 aes f des)
+	\voiceOne bes'16.(\repeatTie-\offset X-offset -3 ^\markup {Ob.I} aes32 bes16 aes f des)
 	aes'16.(-> ges32 aes16 ges ees c)
 	s4.*61
 	% bar 153 - 154
@@ -27,7 +27,7 @@ cueVoiceFlautoIMvtII = \relative c'' {
 	cis)\!
 	s4.*78
 	% bar 233 - 234
-	fis16.(->^\markup {Ob.I} e32 fis16 e cis a
+	fis16.(->-\offset X-offset -3.7 ^\markup {Ob.I} e32 fis16 e cis a
 	e'16.-> d32 e16 d b gis)
 	s4.*57
 	% bar 292 - 295
@@ -44,7 +44,7 @@ cueVoiceFlautoIIMvtI = \relative c'' {
 	e2 s4
 	s2.*110
 	% bar 138 - 141
-	\oneVoice g'2(^\markup {Fl.I} fis4)
+	\oneVoice g'2(-\offset X-offset -3.5 ^\markup {Fl.I} fis4)
 	e2( g4)
 	fis2( e4)
 	g2( fis4)
@@ -56,7 +56,7 @@ cueVoiceFlautoIIMvtI = \relative c'' {
 cueVoiceFlautoIIMvtII = \relative c''' {
 	s4.*91
 	% bar 92 - 95
-	\voiceOne bes16.(->^\markup {Fl.I} aes32 bes16 aes f des)
+	\voiceOne bes16.(->-\offset X-offset #-3.5 ^\markup {Fl.I} aes32 bes16 aes f des)
 	aes'16.(-> ges32 aes16 ges ees c
 	des8) r r
 	s4.*58
@@ -65,11 +65,11 @@ cueVoiceFlautoIIMvtII = \relative c''' {
 	cis)\!
 	s4.*80
 	% bar 235 - 236
-	fis16.(->^\markup {Fl.I} e32 fis16 e cis a
+	fis16.(->-\offset X-offset -3.5 ^\markup {Fl.I} e32 fis16 e cis a
 	e'16.-> d32 e16 d b gis)
 	s4.*55
 	% bar 292 - 295
-	c'4.(^\markup {Viol.I}
+	c'4.(-\offset X-offset -5 ^\markup {Viol.I}
 	aes
 	ees
 	ces)
