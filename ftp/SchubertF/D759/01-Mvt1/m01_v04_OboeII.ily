@@ -53,10 +53,10 @@ musicOboeIIMvtI = \relative c'' {
 		
 		R2._\gp \mark \default
 		g,2.\ffz\>(
-		c,4) r\! r
+		c,4)\! r r
 		g'2.\fz(\>
 % mesures 66 à 70
-		d4) r\! r
+		d4)\! r r
 		g2.(\fz\>
 		ees4)\! g'\fz g\fz
 		g\fz_\crescmarkup g\fz g\fz
@@ -101,12 +101,12 @@ musicOboeIIMvtI = \relative c'' {
 		
 		
 		
-		r4 b2\ff\>~
+		r4 \stemUp b2\ff\>~
 		b2.~
 % mesures 106 à 110
 		b~\pp
 		b~
-		b(
+		b( \stemNeutral
 		fis\>~)
 	}
 	\alternative {
@@ -240,7 +240,7 @@ musicOboeIIMvtI = \relative c'' {
 	\omitMMRN \mmrPos #-2 R2.
 	\mmrPos #-2 R \resetMMRN
 	a2.~\p\<
-	a4\>( \once \stemUp b2)(\!
+	\hairpinShorten #'(0 . -2) a4\>( \once \stemUp b2)(\!
 % mesures 231 à 235
 	g4) r r
 	R2.*6
@@ -250,13 +250,13 @@ musicOboeIIMvtI = \relative c'' {
 % mesures 236 à 240
 	
 	
-	d'2.\<~
-	d4(\> e2)\!
+	\hairpinShorten #'(0 . 1.5) d'2.\<~
+	\hairpinShorten #'(-1.5 . 0) d4(\> e2)\!
 	cis4( d4. e8)
 % mesures 241 à 245
-	e4( d4. dis8_\crescmarkup)
+	e4( d4. dis8-\offset X-offset -3 _\crescmarkup)
 	dis4( e) eis-.\f
-	eis\fz-. r r 
+	\dynEO #'(0.5 . 1) eis\fz-. r r 
 	R2.
 	cis4(\p d4. e8)
 % mesures 246 à 250
@@ -288,7 +288,7 @@ musicOboeIIMvtI = \relative c'' {
 	e,4)\! r r
 	\once \stemUp b'2.(\ff\>
 	fis4)\! r r
-	\once \stemUp b2.(\fz\>
+	\once \stemUp \hairpinShorten #'(-0.3 . -1) b2.(\fz\>
 % mesures 286 à 290
 	g4)\! d'\fz d\fz 
 	d\fz d\fz d\fz 
@@ -309,7 +309,7 @@ musicOboeIIMvtI = \relative c'' {
 	gis2.\fz
 % mesures 301 à 305
 	r8 gis4 gis gis8
-	gis2.\fz(
+	\dynEO #'(0 . 1) gis2.\fz(
 	fis8) r fis2\fz(
 	gis8) r gis2(\fz
 	a8) r a2(\fz

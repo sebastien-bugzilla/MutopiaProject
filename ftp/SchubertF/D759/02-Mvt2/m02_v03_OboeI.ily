@@ -104,7 +104,7 @@ musicOboeIMvtII = \relative c'' {
 % mesures 101 à 105
 	fis4)( fisis8
 	gis) cis-. bis-.
-	cis32\noBeam gis, cis b a[ gis fis e] gis[ fis e dis]
+	cis32 gis, cis b a[ gis fis e] gis[ fis e dis]
 	cis[ gis' e' dis] cis[ b a gis] a[ gis fis e]
 	fis[ gis a gis] fis[ a dis cis] bis[ a' gis fis]
 % mesures 106 à 110
@@ -123,19 +123,19 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	
-	r8 r g,16(\p\< a
-	b8\> d d
+	r8 r \hairpinShorten #'(-0.3 . -1) g,16(\p\< a
+	\hairpinShorten #'(1 . 0) b8\> d d\!
 % mesures 121 à 125
-	d4)\! r8
+	d4) r8
 	R4.*5
 	
 	
 	
 % mesures 126 à 130
 	
-	r8 r c16_\<( d
-	e8) g4~_\>
-	g\! r8 
+	r8 r \hairpinShorten #'(0 . 1) c16_\<( d
+	\hairpinShorten #'(-1 . 0) e8)\> g4~\!
+	g r8 
 	e4->( d16 b
 % mesures 131 à 135
 	c8) r r
@@ -157,8 +157,8 @@ musicOboeIMvtII = \relative c'' {
 	\omitMMRN \mmrPos #-2 R4.
 % mesures 156 à 160
 	\mmrPos #-2 R \resetMMRN
-	b4.(\pp\<
-	dis\>
+	\hairpinShorten #'(-0.3 . 0) b4.(-\offset X-offset -1 \pp\<
+	\hairpinShorten #'(0 . 1) dis\>
 	e8)\! r r 
 	R4.*3
 % mesures 161 à 165
@@ -198,7 +198,7 @@ musicOboeIMvtII = \relative c'' {
 	b)\!(
 	e8)( cis! a
 	e) r r 
-	e'8(_\crescmarkup fis16 e cis a
+	e'8(\<_\crescmarkup fis16 e\> cis a\!
 % mesures 196 à 200
 	e8) r r 
 	e'4.~\pp
@@ -216,7 +216,7 @@ musicOboeIMvtII = \relative c'' {
 % mesures 211 à 215
 	c8(_\< e4->
 	d8 f4->)~\!
-	f4.~\f\>
+	\hairpinShorten #'(-0.1 . -0.3) f4.~-\offset X-offset -1 \f\>
 	f\p~
 	f4\pp( ees16 des
 % mesures 216 à 220
@@ -236,7 +236,7 @@ musicOboeIMvtII = \relative c'' {
 % mesures 231 à 235
 	
 	
-	fis16.(->\pp e32 fis16 e cis a
+	\shape #'((0 . -0.3)(0 . 1)(0 . 1)(0 . 0)) Slur fis16.(->\pp e32 fis16 e cis a
 	e'16.-> d32 e16 d b gis
 	a8) r r 
 % mesures 236 à 240
@@ -264,7 +264,7 @@ musicOboeIMvtII = \relative c'' {
 	dis!16\ff dis8 dis dis16(
 	fis!) fis8 fis fis16( \mark \default
 % mesures 256 à 260
-	e4.)\>(
+	\hairpinShorten #'(-2 . 0) e4.)\>(
 	g,)\fp\>(
 	fis4)\! r8
 	g4.\fp\>(
@@ -277,7 +277,7 @@ musicOboeIMvtII = \relative c'' {
 	R4.
 % mesures 266 à 270
 	dis4\< dis8\!
-	dis4.\>
+	\hairpinShorten #'(0 . 2) dis4.\>
 	b4.~\!
 	b~
 	b(

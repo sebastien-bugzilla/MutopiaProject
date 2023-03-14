@@ -20,7 +20,7 @@
 \include "./00-Common/Symph8_D759_LayoutParts.ily"
 \include "./00-Common/Symph8_D759_Shortcuts.ily"
 \include "./00-Common/Symph8_D759_NameVoice.ily"
-%\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_Format_Part02_Oboi.ily"
 \include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v03_OboeI.ily"
@@ -47,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtI
-%			}
+			\new Voice {
+				\formatOboeIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtI
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtII
-%			}
+			\new Voice {
+				\formatOboeIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtII
 			}
@@ -91,7 +91,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
+				\vspace #3.5 \fill-line {
 					\fontsize #4
 					II
 				}
@@ -103,9 +103,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtI
-%			}
+			\new Voice {
+				\formatOboeIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
@@ -131,9 +131,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtII
-%			}
+			\new Voice {
+				\formatOboeIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
@@ -147,7 +147,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
+				\vspace #4 \fill-line {
 					\fontsize #5
 					II
 				}

@@ -255,7 +255,7 @@ musicOboeIIMvtI = \relative c'' {
 	R
 	R
 	R
-	a2.~\<
+	a2.~-\offset X-offset 0.5 \p\<
 	a4\>( b2)\(\!
 % mesures 231 à 235
 	g4\) r r

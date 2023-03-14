@@ -80,7 +80,7 @@ cueVoiceFlautoIIMvtII = \relative c''' {
 cueVoiceOboeIMvtI = \relative c''' {
 	s2.*132
 	% bar 132 - 133
-	d2.(^\markup {Viol.I}
+	\shape #'((0 . -0.2)(0 . -0.5)(0 . -0.8)(0 . -0.8)) Slur d2.(-\offset X-offset -5 ^\markup {Viol.I}
 	cis)
 }
 cueVoiceOboeIMvtII = \relative c''' {
@@ -92,11 +92,11 @@ cueVoiceOboeIMvtII = \relative c''' {
 	g4 r8
 	s4.*71
 	% bar 155 - 156
-	c,4.(^\>^\markup {Fl.I}
+	\hairpinShorten #'(1.3 . 0.7) c,4.(^\>^\markup {Fl.I}
 	b)\!
 	s4.*146
 	% bar 303
-	\voiceTwo b,16(_\markup {Viol.I} dis fis a gis fis)
+	\voiceTwo b,16(^\markup {Viol.I} dis fis a gis fis)
 }
 cueVoiceOboeIIMvtI = \relative c'' {
 	s2.*21
@@ -105,17 +105,17 @@ cueVoiceOboeIIMvtI = \relative c'' {
 	b,4. ais8 b cis)
 	s2.*109
 	% bar 132 - 133
-	d'2.(^\markup {Viol.I}
+	\oneVoice d'2.(-\offset X-offset -4.7 ^\markup {Viol.I}
 	cis)
 	s2.*93
 	% bar 227 - 228
-	e,4(^\markup {Ob.I} f4. e8)
+	\voiceOne e,4(^\markup {Ob.I} f4. e8)
 	d4( cis2)
 }
 cueVoiceOboeIIMvtII = \relative c''' {
 	s4.*93
 	% bar 94 - 95
-	\voiceOne bes16.(->^\markup {Ob.I} aes32 bes16 aes f des)
+	\voiceOne bes16.(->-\offset X-offset -4 ^\markup {Ob.I} aes32 bes16 aes f des)
 	aes'16.(-> ges32 aes16 ges ees c)
 	s4.*59
 	% bar 155 - 156
@@ -124,10 +124,10 @@ cueVoiceOboeIIMvtII = \relative c''' {
 	s4.*78
 	% bar 235 - 236
 	fis'16.(->^\markup {Fl.I} e32 fis16 e cis a
-	e'16.-> d32 e16 dis b gis)
+	e'16.-> d32 e16 d b gis)
 	s4.*66
 	% bar 303
-	\voiceTwo b,16(_\markup {Viol.I} dis fis a gis fis)}
+	\voiceTwo b,16(^\markup {Viol.I} dis fis a gis fis)}
 %###############################################################################
 %#               C U E   V O I C E   F O R   C L A R I N E T T I               #
 %###############################################################################

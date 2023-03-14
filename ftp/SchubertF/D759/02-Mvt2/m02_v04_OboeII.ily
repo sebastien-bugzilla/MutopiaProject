@@ -18,7 +18,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 	gis4.\pp\<(
 % mesures 16 à 20
-	a\>)(
+	\hairpinShorten #'(0 . 2) a\>)(
 	g8)\! r r 
 	R4.*3
 	
@@ -54,7 +54,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 % mesures 56 à 60
 	gis4.\pp(
-	a)(
+	a
 	gis8) r r
 	R4.*35
 % mesures 61 à 65
@@ -84,7 +84,7 @@ musicOboeIIMvtII = \relative c'' {
 % mesures 101 à 105
 	cis4( dis8
 	e) e-. dis-.
-	e32\noBeam gis, cis b a[ gis fis e] gis[ fis e dis]
+	e32 gis, cis b a[ gis fis e] gis[ fis e dis]
 	cis[ gis' e' dis] cis[ b a gis] a[ gis fis e]
 	fis[ gis a gis] fis[ a dis cis] bis[ a' gis fis]
 % mesures 106 à 110
@@ -104,7 +104,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 	
 	
-	r8 b,8(\p\> c
+	r8 \hairpinShorten #'(-0.5 . 3) b,8(\p\> c
 % mesures 121 à 125
 	b4)\! r8
 	R4.*6
@@ -114,7 +114,7 @@ musicOboeIIMvtII = \relative c'' {
 % mesures 126 à 130
 	
 	
-	r8 e(\> f
+	r8 \hairpinShorten #'(0 . 3) e(\> f
 	e4)\! r8
 	R4.*25
 % mesures 131 à 135
@@ -133,8 +133,8 @@ musicOboeIIMvtII = \relative c'' {
 	\omitMMRN \mmrPos #-2 R4.
 % mesures 156 à 160
 	\mmrPos #-2 R \resetMMRN 
-	b4.(\pp\<
-	a\>
+	\once \stemUp \hairpinShorten #'(0 . -1) b4.(\pp\<
+	\hairpinShorten #'(1 . 0) a\>
 	g8)\! r r
 	R4.*3
 % mesures 161 à 165
@@ -231,9 +231,9 @@ musicOboeIIMvtII = \relative c'' {
 	dis4)\! r8
 % mesures 261 à 265
 	b'8( gis e
-	b'4) r8
+	\once \stemUp b'4) r8
 	b(_\crescmarkup cis16 b gis e
-	b'4) r8
+	\once \stemUp b'4) r8
 	R4.
 % mesures 266 à 270
 	b4\< b8\!

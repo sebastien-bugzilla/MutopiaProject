@@ -62,12 +62,12 @@ musicOboeIMvtI = \relative c'' {
 		R2._\gp \mark \default
 		g,2.\ffz\>(
 		c,4)\! r r
-		g'2.\fz(\>
+		g'2.\fz(-\alterBroken shorten-pair #'(()(0 . 2)) \>
 % mesures 66 à 70
-		d4)\! r r
+		d4) r\! r
 		g2.(\fz\>
 		ees4)\! bes''\fz bes\fz
-		bes\fz_\crescmarkup bes\fz bes\fz 
+		\markEO #'(0 . 5.2) bes\fz_\crescmarkup bes\fz bes\fz 
 		bes\fz bes\fz bes\fz 
 % mesures 71 à 75
 		bes8\fz bes4\> bes bes8~
@@ -109,7 +109,7 @@ musicOboeIMvtI = \relative c'' {
 		g8.(\< a16 b4. d8)\!
 		d4(\> c8[ b a g)]\!
 		g4( fis8 e fis4)
-		g8 r b,2~\ff\>
+		g8 r b,2~-\offset X-offset 0.5 \ff\>
 		b2.~\!
 % mesures 106 à 110
 		b~\pp
@@ -218,7 +218,7 @@ musicOboeIMvtI = \relative c'' {
 % mesures 196 à 200
 	c2.\fz\>(
 	b2\! ais4)
-	cis!2. -\tweak X-offset #-2.0 \pp(
+	cis!2.\pp(
 	b2 ais4)
 	cis'2._\crescmarkup(
 % mesures 201 à 205
@@ -237,7 +237,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	
-	e4. -\tweak X-offset #-2. \pp( fis8[ e fis]
+	e4.\pp( fis8[ e fis]
 	e4. fis8[ e fis])
 % mesures 216 à 220
 	e2.~
@@ -255,7 +255,7 @@ musicOboeIMvtI = \relative c'' {
 	d2.(
 	e4\< f4.\> e8)\!
 	d4( cis2)
-	c2.~\<
+	c2.~\p\<
 	c4(\> b2)~\!
 % mesures 231 à 235
 	b4 r r 
@@ -266,8 +266,8 @@ musicOboeIMvtI = \relative c'' {
 % mesures 236 à 240
 	R2.*2
 	
-	f'2.\<~
-	f4(\> e2)\!
+	\hairpinShorten #'(0 . 1) f'2.\<~
+	\hairpinShorten #'(-1 . 0) f4(\> e2)\!
 	e4( fis!4. g8)
 % mesures 241 à 245
 	g4( fis4._\crescmarkup fis8)
@@ -318,7 +318,7 @@ musicOboeIMvtI = \relative c'' {
 	fis2.~
 	fis
 	r8 b4\ff b b8
-	b2.\fz
+	\dynEO #'(0 . 1) b2.\fz
 % mesures 301 à 305
 	r8 b4 b b8
 	b2.~\fz
@@ -335,8 +335,8 @@ musicOboeIMvtI = \relative c'' {
 	b r r
 	R2.*2
 	
-	r4 r r8 fis\p\<~
-	fis4( e8[\> dis\! cis b)]
+	r4 r r8 \hairpinShorten #'(0 . 1) fis\p\<~
+	fis4( \hairpinShorten #'(-1 . 0) e8[\> dis\! cis b)]
 % mesures 316 à 320
 	\once \stemUp b4( ais8 gis ais4)
 	b r r
@@ -344,8 +344,8 @@ musicOboeIMvtI = \relative c'' {
 	b8.(_\< cis16 dis4.\! fis8)
 	fis4(_\> e8[\! dis cis b])
 % mesures 321 à 325
-	b4( ais8 gis ais4
-	b8) r b2~\ffz\>
+	\once \stemUp b4( ais8 gis ais4
+	\once \stemUp b8) r \hairpinShorten #'(-0.3 . -0.3) b2~-\offset X-offset -1 \ffz\>
 	b2.~\p
 	b~\pp
 	b~
