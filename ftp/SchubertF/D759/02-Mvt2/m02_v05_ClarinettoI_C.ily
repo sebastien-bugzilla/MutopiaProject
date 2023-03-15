@@ -272,7 +272,7 @@ musicClarinettoIMvtII = \relative c'' {
 	d!4.(
 	e!
 	d4 e8)
-	\partCombineChords d4.~
+	\partCombineChords d4.->~
 	d4 r8
 % mesures 301 à 305
 	a4.->^(

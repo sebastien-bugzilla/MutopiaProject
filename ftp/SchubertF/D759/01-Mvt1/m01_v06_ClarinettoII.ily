@@ -26,7 +26,7 @@ musicClarinettoIIMvtI = \relative c {
 		
 % mesures 26 à 30
 		a''4\p( bes4. c!8)
-		c4( bes4._\crescmarkup b8)
+		c4( bes4.-\offset X-offset 1 _\crescmarkup b8)
 		b4( c) cis\fz
 		cis\fz g'2\fp\>~
 		g2.\!
@@ -76,7 +76,7 @@ musicClarinettoIIMvtI = \relative c {
 		f4)\! r r
 		bes2.(\fz\>
 		ges4)\! des'\fz des\fz
-		des\fz_\crescmarkup des\fz des\fz
+		des\fz^\crescmarkup des\fz des\fz
 		des\fz des\fz des\fz
 % mesures 71 à 75
 		des8\fz bes4\> bes bes8~
@@ -225,8 +225,8 @@ musicClarinettoIIMvtI = \relative c {
 	ees2.\ffz\>(
 	d2\! cis4)
 % mesures 196 à 200
-	ees2.(\fz\>
-	d2\! cis4)
+	ees2.(\fz-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 4)) \>
+	d2 cis4)\!
 	e!2.(\pp
 	d2 cis4)
 	e2.(_\crescmarkup
@@ -269,7 +269,7 @@ musicClarinettoIIMvtI = \relative c {
 % mesures 241 à 245
 	bes4( a4._\crescmarkup c8)
 	c4( bes) d-.\f
-	d\fz d2\fp\>~
+	d-.\fz d2\fp\>~
 	d2.\!
 	g,4(\p a4. bes8)
 % mesures 246 à 250
@@ -309,7 +309,7 @@ musicClarinettoIIMvtI = \relative c {
 	r bes4 bes bes8
 	r bes4 bes bes8
 % mesures 276 à 280
-	r a4-._\decresc a-. a8-.\!
+	r a4_\decresc a\! a8
 	r aes4 aes aes8
 	r g4 g g8
 	r g4 g g8
@@ -360,8 +360,8 @@ musicClarinettoIIMvtI = \relative c {
 	
 % mesures 321 à 325
 	
-	r4 d2\ffz\>~
-	d2.~\p
+	r4 \hairpinShorten #'(-0.5 . -0.5) d2-\offset X-offset -1 \ffz\>~
+	d2.~-\offset X-offset 0.5 \p
 	d\pp~
 	d~
 % mesures 326 à 330

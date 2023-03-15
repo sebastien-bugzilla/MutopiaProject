@@ -45,7 +45,7 @@ musicClarinettoIMvtII = \relative c'' {
 % mesures 46 à 50
 	c
 	b8 g e)
-	dis4.->(
+	dis4.^>(
 	e) 
 	\once \stemUp bes'\fp\>(
 % mesures 51 à 55
@@ -199,7 +199,7 @@ musicClarinettoIMvtII = \relative c'' {
 	e8(\< g4
 	f8 a4)~\!
 % mesures 231 à 235
-	a16.(\f\> g32 a16 g e c\!
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur a16.(\f\> g32 a16 g e c\!
 	g'16.->\p f32 g16 f d b
 	c8) r r 
 	R4.*3
@@ -227,11 +227,11 @@ musicClarinettoIMvtII = \relative c'' {
 	ees4.~\>
 	ees\p
 	d16[\ff d8 d d16(]
-	fis)[ fis8 fis fis16(] \mark \default
+	fis)[ fis8 fis fis16(] \markWhiteout \mark \default
 % mesures 256 à 260
 	g4.)(\>
 	ees)(\fp\>
-	d16)_(\! fis a c b a)
+	d16)(\! fis a c b a)
 	ees4.(\fp\>
 	d4)\! r8
 % mesures 261 à 265
@@ -272,7 +272,7 @@ musicClarinettoIMvtII = \relative c'' {
 	d!4.(\pp\<
 	e!\>
 	d4\! e8)
-	d4.~
+	d4.->~
 	d4 r8
 % mesures 301 à 305
 	a4.->(

@@ -138,7 +138,7 @@ cueVoiceClarinettoIMvtI = \relative c {
 		\relative c''' {
 			\voiceOne d2.(^\markup {Viol.II}
 			cis)
-			g'^\markup {Ob.I}
+			g'-\offset X-offset -3.5 ^\markup {Ob.I}
 		}
 	}
 }
@@ -159,8 +159,8 @@ cueVoiceClarinettoIMvtII = \relative c {
 	% bar 221 - 224
 	\transpose a c {
 		\relative c''' {
-			e4.^\>^\markup {Ob.I}~
-			e~\!^\morendo
+			\hairpinShorten #'(1.4 . 1) e4.^\>-\offset X-offset -3 ^\markup {Ob.I}~
+			e~\!-\offset X-offset 1 ^\morendo
 			e~
 			e4 r8
 		}
@@ -177,12 +177,12 @@ cueVoiceClarinettoIIMvtI = \relative c''' {
 		\relative c''' {
 			\voiceOne d2.(^\markup {Viol.II}
 			cis)
-			g'^\markup {Ob.I}
+			g'-\offset X-offset -3 ^\markup {Ob.I}
 		}
 	}
 	s2.*101
 	% bar 236 - 237
-	c4(^\markup {Klar.I} des4. c8)
+	c4(-\offset X-offset -3.5 ^\markup {Klar.I} des4. c8)
 	bes4( a2)
 }
 cueVoiceClarinettoIIMvtII = \relative c {
@@ -190,7 +190,7 @@ cueVoiceClarinettoIIMvtII = \relative c {
 	% bar 90 - 92
 	\transpose a c {
 		\relative c'''' {
-			bes16.->(^\markup {Ob.I} aes32 bes16 aes f des)
+			bes16.->(-\offset X-offset -4 ^\markup {Ob.I} aes32 bes16 aes f des)
 			aes'16.(-> ges32 aes16 ges ees c
 			des8) r r
 		}
@@ -202,7 +202,7 @@ cueVoiceClarinettoIIMvtII = \relative c {
 	% bar 235 - 236
 	\transpose a c {
 		\relative c''' {
-			fis16.(->^\markup {Fl.I} e32 fis16 e cis a
+			fis16.(->-\offset X-offset -3.5 ^\markup {Fl.I} e32 fis16 e cis a
 			e'16.-> d32 e16 d b gis)
 		}
 	}

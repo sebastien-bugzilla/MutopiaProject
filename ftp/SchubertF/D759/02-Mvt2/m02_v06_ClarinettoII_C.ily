@@ -268,7 +268,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	b!4.(\pp\<
 	c!\>
 	b)\!
-	c4._(
+	c4._(->
 	b4) r8
 % mesures 301 à 305
 	fis4.->_(

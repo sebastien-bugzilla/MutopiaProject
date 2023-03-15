@@ -329,7 +329,7 @@ musicClarinettoIIMvtI = \relative c {
 	r bes4 bes bes8
 	r bes4 bes bes8
 % mesures 276 à 280
-	r a4-. a-. a8-.\!
+	r a4 a a8
 	r aes4 aes aes8
 	r g4 g g8
 	r g4 g g8

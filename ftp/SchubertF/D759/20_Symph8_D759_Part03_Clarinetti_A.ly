@@ -20,7 +20,7 @@
 \include "./00-Common/Symph8_D759_LayoutParts.ily"
 \include "./00-Common/Symph8_D759_Shortcuts.ily"
 \include "./00-Common/Symph8_D759_NameVoice.ily"
-%\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_Format_Part03_Clarinetti.ily"
 \include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v05_ClarinettoI.ily"
@@ -47,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtI
-%			}
+			\new Voice {
+				\formatClarinettoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtI
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtII
-%			}
+			\new Voice {
+				\formatClarinettoIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtII
 			}
@@ -89,7 +89,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -101,11 +101,22 @@
 			\layoutPart
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #24 
+		\abs-fontsize #20
+		\fill-line {
+			\center-column {
+				\line { "This page is left blank to" }
+				\line { "optimize page-break." }
+			}
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtI
-%			}
+			\new Voice {
+				\formatClarinettoIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtI
 			}
@@ -131,9 +142,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtII
-%			}
+			\new Voice {
+				\formatClarinettoIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtII
 			}
@@ -145,7 +156,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5

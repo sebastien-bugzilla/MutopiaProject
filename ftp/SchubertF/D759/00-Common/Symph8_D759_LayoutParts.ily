@@ -15,6 +15,7 @@
 		\Voice
 		\override TupletBracket #'bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
+%		\override Hairpin.after-line-breaking = ##t
 		\override TrillSpanner.bound-details.right.padding = #1
 		\override Fingering.avoid-slur = #'around
 		\override Arpeggio.padding = #0.25

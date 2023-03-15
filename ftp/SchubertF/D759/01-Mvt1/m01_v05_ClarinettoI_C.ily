@@ -84,10 +84,10 @@ musicClarinettoIMvtI = \relative c {
 		f4)\! r r
 		\hairpinShorten #'(0 . 5) bes2.(\fz\>
 		ges4)\! e'!\fz e\fz
-		e!\fz e\fz e\fz
-		e!\fz e\fz e\fz
+		e\fz e\fz e\fz
+		e\fz e\fz e\fz
 % mesures 71 à 75
-		e!8\fz des!4\> des des8~
+		e8\fz des!4\> des des8~
 		des des4 des\! \voiceTwo \noFlag des8^( \voiceOne
 		c2.)~ 
 		c2( ces4)
@@ -329,7 +329,7 @@ musicClarinettoIMvtI = \relative c {
 	r d4 d d8
 	r des[( c]) c4 c8
 % mesures 276 à 280
-	r c4-._\decrescmarkup c-. c8-.\!
+	r c4_\decrescmarkup c c8\!
 	r ces([-> bes]) bes4 bes8
 	r bes4 bes bes8
 	r a!4 a a8

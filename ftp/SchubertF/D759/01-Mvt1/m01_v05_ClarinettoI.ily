@@ -43,7 +43,7 @@ musicClarinettoIMvtI = \relative c {
 		ees4( d4._\crescmarkup d8)
 		d4( e!4. e8)
 		e4(\f f4. e8)
-		e4( f4.) e8\ff
+		e4( f4.) \dynEO #'(0 . 0.5) e8\ff
 % mesures 36 à 40
 		e2.~
 		e \mark \default
@@ -79,15 +79,15 @@ musicClarinettoIMvtI = \relative c {
 		R2._\gp \mark \default
 		bes,2.(\ffz\>
 		ees,4)\! r r
-		bes'2.(\fz\> 
+		\hairpinShorten #'(-0.5 . 0) bes'2.(\fz-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 1.5)) \> 
 % mesures 66 à 70
-		f4)\! r r
+		f4) r\! r
 		bes2.(\fz\>
-		ges4)\! e'!\fz e\fz
-		e!\fz e\fz e\fz
-		e!\fz e\fz e\fz
+		ges4)\! e'\fz e\fz
+		e\fz e\fz e\fz
+		e\fz e\fz e\fz
 % mesures 71 à 75
-		e!8\fz des!4\> des des8~
+		e8\fz des!4\> des des8~
 		des des4 des\! des8(
 		c2.)~\p
 		c2( ces4)
@@ -99,7 +99,7 @@ musicClarinettoIMvtI = \relative c {
 		f2.~
 		f
 % mesures 81 à 85
-		e!\fz
+		\dynEO #'(0.5 . 1) e\fz
 		r8 e4 e e8
 		e2.\fz
 		r8 e4 e e8(
@@ -229,7 +229,7 @@ musicClarinettoIMvtI = \relative c {
 % mesures 191 à 195
 	cis4-. g-. a-.
 	bes-. g,2\fz
-	bes2\fz~ bes8 c32( d ees f)
+	bes2-\offset X-offset 0.5 \fz~ bes8 c32( d ees f)
 	g2.~\ffz\>
 	g\!
 % mesures 196 à 200
@@ -258,7 +258,7 @@ musicClarinettoIMvtI = \relative c {
 	e~
 % mesures 216 à 220
 	e~
-	e( \mark \default
+	e( \markWhiteout \mark \default
 	d4) r r
 	R2.*3
 	
@@ -289,14 +289,14 @@ musicClarinettoIMvtI = \relative c {
 % mesures 241 à 245
 	c2~ c8(_\crescmarkup d)
 	d2 e4-.\f
-	f-.\fz f4.( e8
-	f4\fp\> e2)\!
+	f-.-\offset X-offset -0.3 \fz \hairpinShorten #'(-0.5 . -1) f4.(\fp\> e8\!
+	f4 e2)
 	c2.~\p
 % mesures 246 à 250
 	c2~ c8( d)
 	d2~ d8(_\crescmarkup e)
 	e2~ e8 e
-	e2~ e8[ gis]\ff
+	e2~ e8[ gis]-.\ff
 	gis2.~
 % mesures 251 à 255
 	gis \mark \default
@@ -332,7 +332,7 @@ musicClarinettoIMvtI = \relative c {
 	r c4-._\decresc c-. c8-.\!
 	r ces([-> bes]) bes4 bes8
 	r bes4 bes bes8
-	r a!4 a a8
+	r a4 a a8
 	R2._\gp \mark \default
 % mesures 281 à 285
 	d2.(\ff\>
@@ -384,8 +384,8 @@ musicClarinettoIMvtI = \relative c {
 	b4.(_\> a8[\! g fis])
 % mesures 321 à 325
 	e2( a4
-	d,8) r d2~\ffz\>
-	d2.~\p
+	d,8) r \hairpinShorten #'(-0.5 . -0.5) d2~-\offset X-offset -0.5 \ffz\>
+	d2.~-\offset X-offset 0.5 \p
 	d~\pp
 	d~
 % mesures 326 à 330
