@@ -220,11 +220,11 @@ cueVoiceFagottoIMvtI = \relative c {
 cueVoiceFagottoIMvtII = \relative c {
 	s4.*93
 	% bar 94 - 95
-	\voiceOne \cueClef treble bes'''16.(->^\markup {Ob.I} aes32 bes16 aes f des)
+	\voiceOne \cueClef treble bes'''16.(->-\offset X-offset -3.8 ^\markup {Ob.I} aes32 bes16 aes f des)
 	aes'16.(-> ges32 aes16 ges ees c) \cueClefUnset
 	s4.*139
 	% bar 235 - 236
-	\cueClef treble fis16.(->^\markup {Fl.I} e32 fis16 e cis a 
+	\cueClef treble \shape #'( () ((0 . 0.5)(0 . 0.5)(0 . 0)(0 . 0)) ) Slur fis16.(->-\offset X-offset -3.5 ^\markup {Fl.I} e32 fis16 e cis a 
 	e'16.-> d32 e16 d b gis) \cueClefUnset
 }
 cueVoiceFagottoIIMvtI = \relative c {
@@ -237,17 +237,17 @@ cueVoiceFagottoIIMvtI = \relative c {
 cueVoiceFagottoIIMvtII = \relative c {
 	s4.*27
 	% bar 28
-	\voiceTwo gis8(^\markup {Bassi} e cis')
+	\voiceTwo gis8^(^\markup {Bassi} e cis')
 	s4.*65
 	% bar 94 - 95
-	\voiceOne \cueClef treble bes'''16.(->^\markup {Ob.I} aes32 bes16 aes f des)
+	\voiceOne \cueClef treble bes'''16.(->-\offset X-offset -3.8 ^\markup {Ob.I} aes32 bes16 aes f des)
 	aes'16.(-> ges32 aes16 ges ees c) \cueClefUnset
 	s4.*73
 	% bar 169
-	\voiceTwo gis,,8(^\markup {Bassi} e cis')
+	\voiceTwo gis,,8^(^\markup {Bassi} e cis')
 	s4.*65
 	% bar 235 - 236
-	\cueClef treble \voiceOne fis''16.(->^\markup {Fl.I} e32 fis16 e cis a 
+	\cueClef treble \voiceOne fis''16.(->-\offset X-offset -3.5 ^\markup {Fl.I} e32 fis16 e cis a 
 	e'16.-> d32 e16 d b gis) \cueClefUnset
 
 }

@@ -30,6 +30,8 @@
 		\override Fingering.staff-padding = #'()
 		%\override Script.staff-padding = ##f
 		\override MultiMeasureRest.space-increment = 1
+		\override CueClef.font-size = -2
+		\override CueEndClef.font-size = -2
 	}
 	\context {
 		\Score

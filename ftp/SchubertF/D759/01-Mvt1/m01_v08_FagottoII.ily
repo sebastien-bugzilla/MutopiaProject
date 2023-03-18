@@ -41,9 +41,9 @@ musicFagottoIIMvtI = \relative c {
 % mesures 36 à 40
 		ais2.~
 		ais \mark \default
-		b4\fz d2\fp\>~
-		d2.\!~ 
-		d~
+		b4\fz d2\fp-\alterBroken shorten-pair #'((-0.5 . 0) (0 . 7)) \>~
+		d2.~ 
+		d~\!
 % mesures 41 à 45
 		d4( cis c)
 		b\pp r r
@@ -65,7 +65,7 @@ musicFagottoIIMvtI = \relative c {
 % mesures 61 à 65
 		r c4(-. c-. c8-.)
 		R2._\gp \mark \default
-		ees,2.\ffz\>~
+		ees,2.-\offset X-offset 0.5 \ffz\>~
 		ees4\! r r
 		g2.~\fz\>
 % mesures 66 à 70
@@ -82,7 +82,7 @@ musicFagottoIIMvtI = \relative c {
 		
 % mesures 76 à 80
 		
-		d2.\f(
+		\shape #'((0 . -0.6)(0 . -0.6)(0 . -0.6)(0 . -0.6)) Slur d2.\f(
 		c2.)
 		c(
 		b)
@@ -93,8 +93,8 @@ musicFagottoIIMvtI = \relative c {
 		a4-. r8 a[-. g-. e-.]
 		d8 r d2->\fz(
 % mesures 86 à 90
-		c8) r c2(\fz->
-		g8) r g2(\fz->
+		c8) r c2(\fz^>
+		g8) r g2(\fz^>
 		c4) d-. d-.
 		g8 r g2(\fz->
 		c,8) r c'2(\fz->
@@ -238,7 +238,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	fis2.\ff
 	a\fz
-	d'\fp(\>
+	d'\fp(-\tweak extra-offset #'(0 . 0.5) \>
 	ais)\!
 % mesures 206 à 210
 	fis,\ff
@@ -254,7 +254,7 @@ musicFagottoIIMvtI = \relative c {
 	ais~
 % mesures 216 à 220
 	ais~
-	ais( \mark \default
+	ais( \markWhiteout \mark \default
 	b4) r r
 	R2.*10
 % mesures 221 à 225
@@ -291,7 +291,7 @@ musicFagottoIIMvtI = \relative c {
 	fis,4\fz a2~\fp\>
 	a2.\!~
 	a~
-	a4\pp\<( gis\> g\!
+	\hairpinShorten #'(-0.3 . -0.8) a4-\offset X-offset -1 \pp\<( \hairpinShorten #'(0.8 . 0) gis\> g\!
 % mesures 256 à 260
 	fis) r r
 	R2.*10
@@ -316,8 +316,8 @@ musicFagottoIIMvtI = \relative c {
 	r e4 e e8
 	R2._\gp \mark \default
 % mesures 281 à 285
-	g2.\ff\>~
-	g4\! r r
+	\dynEO #'(0.5 . 1) g2.\ff-\alterBroken shorten-pair #'((-0.2 . 0)(0 . 1.5))  -\alterBroken extra-offset #'((0 . 0.5)()) \>~
+	g4 r\! r
 	b2.\ff\>~
 	b4\! r r
 	b2.\fz\>~
@@ -332,7 +332,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	
-	fis'2.\f(
+	\shape #'((0 . 0)(0 . -0.2)(0 . -0.2)(0 . -0.6)) Slur fis'2.\f(
 % mesures 296 à 300
 	e)
 	e(
@@ -342,21 +342,21 @@ musicFagottoIIMvtI = \relative c {
 % mesures 301 à 305
 	b8.-. cis16-. d8-.[ gis,-. ais-. b-.]
 	cis4 r8 cis[-. b-. gis-.]
-	fis r fis'2(\fz
-	e8) r e2(\fz
+	fis r \dynEO #'(0.7 . 1.3) fis'2(\fz
+	e8) r \dynEO #'(0.7 . 1.5) e2(\fz
 	b8) r b2(\fz
 % mesures 306 à 310
 	e4) fis-. fis-.
 	b8 r b2\fz(
-	e,8) r e2(\fz
-	gis8) r gis2(\fz
+	e,8) r \dynEO #'(0.7 . 1) e2(\fz
+	gis8) r \dynEO #'(0.7 . 1) gis2(\fz
 	cis,4) fis-. fis-. \mark \default
 % mesures 311 à 315
 	b, r r
 	R2.*2
 	
-	b'4(\p fis4. bis8)
-	cis8.\>( dis16 e4.\! eis8)
+	b'4(\p\< fis4. bis8)\!
+	\shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur cis8.\>( dis16 e4.\! eis8)
 % mesures 316 à 320
 	fis2( e!4
 	dis) r r
@@ -365,7 +365,7 @@ musicFagottoIIMvtI = \relative c {
 	cis8.\>( dis16 e4.\! eis8)
 % mesures 321 à 325
 	fis2( e!4
-	dis8) r b,2\ffz~
+	dis8) r \hairpinShorten #'(-0.5 . -0.5) b,2-\offset X-offset -0.5 \ffz\>~
 	b2.\p~
 	b\pp~
 	b~

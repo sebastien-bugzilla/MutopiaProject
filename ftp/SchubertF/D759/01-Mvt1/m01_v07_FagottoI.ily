@@ -72,7 +72,7 @@ musicFagottoIMvtI = \relative c {
 		bes4\! r r
 		bes2.\fz\>~
 		bes4\! ees,\fz ees\fz 
-		ees\fz_\crescmarkup ees\fz ees\fz 
+		ees\fz^\crescmarkup ees\fz ees\fz 
 		ees\fz ees\fz ees\fz 
 % mesures 71 à 75
 		e!8\fz \clef tenor bes''4\> bes bes8~
@@ -254,7 +254,7 @@ musicFagottoIMvtI = \relative c {
 	cis~
 % mesures 216 à 220
 	cis~
-	cis^( \mark \default
+	cis^( \markWhiteout \mark \default
 	b4) r r
 	R2.*10
 % mesures 221 à 225
@@ -263,16 +263,16 @@ musicFagottoIMvtI = \relative c {
 	
 	
 	
-	c2.~\p\<
-	c4(\> b2)(\!
+	\hairpinShorten #'(0 . 0.5) c2.~\p\<
+	\hairpinShorten #'(-0.5 . 0) c4(\> b2)(\!
 % mesures 231 à 235
 	e,4) r r
 	R2.*6
 % mesures 236 à 240
 	
 	
-	f'2.\<~
-	f4\>^( e2)\!
+	\hairpinShorten #'(0 . 1) f'2.\<~
+	\hairpinShorten #'(-1 . 0) f4\>^( e2)\!
 	cis!4( d4. e8)
 % mesures 241 à 245
 	e4( d4._\crescmarkup dis8)
@@ -343,7 +343,7 @@ musicFagottoIMvtI = \relative c {
 	b8.-. cis16-. d8-.[ gis,-. ais-. b-.]
 	cis4 r8 cis[-. b-. gis-.]
 	fis r fis2(\fz
-	e8) r e2(\fz
+	e8) r e2(-\offset X-offset 0.5 \fz
 	b8) r dis'2(\fz
 % mesures 306 à 310
 	e4) dis-. e-.
@@ -365,7 +365,7 @@ musicFagottoIMvtI = \relative c {
 	e8.\> fis16\! gis2)
 % mesures 321 à 325
 	fis2.~
-	fis8 r b,2\ffz\>~
+	fis8 r \hairpinShorten #'(-0.5 . -0.5) b,2-\offset X-offset -1 \ffz\>~
 	b2.\p~
 	b\pp~
 	b~
@@ -406,8 +406,8 @@ musicFagottoIMvtI = \relative c {
 	g~_\>
 	g\!
 % mesures 356 à 360
-	fis~_\mf\<
-	fis(\!
+	fis~\mf-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 6)) \<
+	fis(
 	g)~_\>
 	g(\!
 	b)~_\pp_\<

@@ -8,8 +8,8 @@ musicFagottoIMvtII = \relative c' {
 	\clef bass
 	\key e \major
 % mesures 1 à 5
-	b4.(\pp\<
-	dis\>
+	\hairpinShorten #'(-0.3 . -1) b4.(-\offset X-offset -0.5 \pp\<
+	\hairpinShorten #'(1 . 0) dis\>
 	e8)\! r r 
 	R4.*3
 	
@@ -59,7 +59,7 @@ musicFagottoIMvtII = \relative c' {
 	e8 e, fis)
 	gis4.->(
 	cis,)
-	c'4.(\fp\>
+	\dynEO #'(0 . 0.5) c'4.(\fp\>
 % mesures 51 à 55
 	b16)(\! dis fis a gis fis
 	e8) r r 
@@ -139,8 +139,8 @@ musicFagottoIMvtII = \relative c' {
 	
 % mesures 141 à 145
 	
-	\clef bass b,4.(\pp\<
-	dis\>
+	\clef bass \hairpinShorten #'(-0.3 . -1) b,4.(-\offset X-offset -0.5 \pp\<
+	\hairpinShorten #'(1 . 0) dis\>
 	e8)\! r r
 	R4.*3
 % mesures 146 à 150
@@ -156,7 +156,7 @@ musicFagottoIMvtII = \relative c' {
 	
 	c4.(_\fp_\>
 % mesures 156 à 160
-	b16\!)_( dis! fis a gis fis 
+	b16\!)( dis! fis a gis fis 
 	e8) r r 
 	R4.*4
 	
@@ -177,7 +177,7 @@ musicFagottoIMvtII = \relative c' {
 	e8) r r
 	dis4.(->
 	e4) r8 \mark \default 
-	dis4.\ff
+	\dynEO #'(0 . 1) dis4.\ff
 	e
 % mesures 176 à 180
 	fis8( gis8.-> fis16)
@@ -230,7 +230,7 @@ musicFagottoIMvtII = \relative c' {
 	\omitMMRN \mmrPos #-2 R4.
 % mesures 236 à 240
 	\mmrPos #-2 R \resetMMRN \mark \default
-	a,8\ff-. a,-. e'~
+	a,8-\offset X-offset -1 \ff-. a,-. e'~
 	e a,-. a'~
 	a d,-. f~
 	f e-. b'~
@@ -250,14 +250,14 @@ musicFagottoIMvtII = \relative c' {
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f'4.~\>
 	f\p
-	b,,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
+	\stemUp b,,!32[\ff dis! fis! a] \stemNeutral b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis'!4.(\>
 	g')(\fp\>
 	fis4)\! r8
-	c4.\fp(\>
-	b16)\!( dis fis a gis fis
+	c4.\fp(-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 3)) \>
+	b16)( dis\! fis a gis fis
 % mesures 261 à 265
 	e8) r r
 	dis4.(->

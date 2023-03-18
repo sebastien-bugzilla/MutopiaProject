@@ -163,9 +163,11 @@ omitMMRN = {
 
 markWhiteout = {
 	\once \override Score.RehearsalMark.layer = #3
-	\once \override Score.RehearsalMark.whiteout = #0.75
+	\once \override Score.RehearsalMark.whiteout = #0.85
 	\once \override Score.RehearsalMark.whiteout-style = #'outline
 }
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -8,8 +8,8 @@ musicFagottoIIMvtII = \relative c' {
 	\clef bass
 	\key e \major
 % mesures 1 à 5
-	b4.(\pp\<
-	a\>
+	\dynEO #'(0 . 0.5) \hairpinShorten #'(-0.5 . -0.5) b4.(\pp\<
+	\hairpinShorten #'(0.5 . 0) a\>
 	gis8)\! r r 
 	R4.*3
 	
@@ -130,15 +130,15 @@ musicFagottoIIMvtII = \relative c' {
 	
 % mesures 141 à 145
 	
-	b4.(\pp\<
-	a\>
+	\hairpinShorten #'(0 . -1) b4.(\pp\<
+	\hairpinShorten #'(1 . 0) a\>
 	gis8)\! r r
 	R4.*3
 % mesures 146 à 150
 	
 	
-	b4.(\<
-	a\>
+	\hairpinShorten #'(0 . 1.5) b4.(\<
+	\hairpinShorten #'(-1.5 . 0) a\>
 	gis8)\! r r
 % mesures 151 à 155
 	R4.*18
@@ -182,7 +182,7 @@ musicFagottoIIMvtII = \relative c' {
 	
 % mesures 191 à 195
 	a4.(\fp\>
-	gis)(\!
+	gis\!
 	a8) r r
 	d4.(->
 	cis8) r r
@@ -191,7 +191,7 @@ musicFagottoIIMvtII = \relative c' {
 	cis8) r r
 	R4.
 	cis4.\pp(
-	d)(
+	d
 % mesures 201 à 205
 	cis4) r8
 	R4.*33
@@ -236,7 +236,7 @@ musicFagottoIIMvtII = \relative c' {
 	b,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
-	cis!8\> r r\!
+	cis!8 r r
 	e'4.\fp\>(
 	dis4\!) r8
 	R4.*3
