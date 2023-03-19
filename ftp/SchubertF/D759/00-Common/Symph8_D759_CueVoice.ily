@@ -268,7 +268,7 @@ cueVoiceCornoIMvtI = \relative c {
 	% bar 132 - 133
 	\transpose d c {
 		\relative c''' {
-			d2.(^\markup {Viol.I}
+			d2.(-\offset X-offset -4 ^\markup {Viol.I}
 			cis)
 		}
 	}
@@ -312,7 +312,7 @@ cueVoiceCornoIIMvtI = \relative c {
 	% bar 132 - 133
 	\transpose d c {
 		\relative c''' {
-			d2.(^\markup {Viol.I}
+			d2.(-\offset X-offset -4 ^\markup {Viol.I}
 			cis)
 		}
 	}
@@ -323,8 +323,8 @@ cueVoiceCornoIIMvtII = \relative c {
 	% bar 94 - 95
 	\transpose e c {
 		\relative c''' {
-			ais16.(->^\markup {Ob.I} gis32 ais16 gis eis cis)
-			gis'16.(-> fis32 gis16 fis dis bis)
+			ais16._(->-\offset X-offset -3.8 ^\markup {Ob.I} gis32 ais16 gis eis cis)
+			gis'16._(-> fis32 gis16 fis dis bis)
 		}
 	}
 	s4.*43
@@ -336,7 +336,7 @@ cueVoiceCornoIIMvtII = \relative c {
 	% bar 235 - 236
 	\transpose e c {
 		\relative c'' {
-			\voiceOne fis16.->(^\markup {Fl.I} e32 fis16 e cis a
+			\voiceOne fis16.->(-\offset X-offset -3.2 ^\markup {Fl.I} e32 fis16 e cis a
 			e'16.-> d32 e16 d b gis)
 		}
 	}

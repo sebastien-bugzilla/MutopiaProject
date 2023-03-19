@@ -43,9 +43,9 @@ musicCornoIIMvtI = \relative c {
 % mesures 36 à 40
 		d2.~
 		d \mark \default
-		c4\fz c2\fp\>~
-		c2.\!~
-		c~
+		c4\fz c2\fp-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 7)) \>~
+		c2.~
+		c~\!
 % mesures 41 à 45
 		c4( b c)
 		c\pp r r
@@ -55,7 +55,7 @@ musicCornoIIMvtI = \relative c {
 % mesures 51 à 55
 		
 		
-		r4 r r8 c,8\pp~
+		r4 r r8 c,8-\offset X-offset -1 \pp~
 		c c4 r8 r c~
 		c c4 r8 r c~
 % mesures 56 à 60
@@ -74,7 +74,7 @@ musicCornoIIMvtI = \relative c {
 		c4\! r r
 		f2.\fz\>~
 		f4\! f\fz f\fz 
-		f\fz_\crescmarkup f\fz f\fz 
+		f\fz^\crescmarkup f\fz f\fz 
 		f\fz f\fz f\fz 
 % mesures 71 à 75
 		d\fz r r
@@ -114,8 +114,8 @@ musicCornoIIMvtI = \relative c {
 		
 % mesures 101 à 105
 		\clef treble
-		c''2.~\<
-		c\>
+		\hairpinShorten #'(0 . 3) c''2.~\<
+		\hairpinShorten #'(-3 . 3) c\>
 		r4\! a'2\ff\>~
 		a2.~\!
 % mesures 106 à 110
@@ -248,7 +248,7 @@ musicCornoIIMvtI = \relative c {
 	e~
 % mesures 216 à 220
 	e~
-	e~ \mark \default \stopMeasureCount 
+	\tieMinLength #8.5 e~ \mark \default \stopMeasureCount 
 	e4 r r
 	R2.*10
 	
@@ -279,10 +279,10 @@ musicCornoIIMvtI = \relative c {
 	
 % mesures 251 à 255
 	\mark \default
-	e,4\fz g2\fp\>~
-	g2.\!~
-	g~
-	g4(\pp\< a\> g\!
+	e,4\fz g2\fp-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 7)) \>~
+	g2.~
+	g~\!
+	\hairpinShorten #'(-0.5 . -1) g4(-\offset X-offset -0.5 \pp\< \hairpinShorten #'(1 . 0) a\> g\!
 % mesures 256 à 260
 	g) r r
 	R2.*10
@@ -290,7 +290,7 @@ musicCornoIIMvtI = \relative c {
 	
 % mesures 266 à 270
 	
-	r4 r r8 g,8\pp~
+	r4 r r8 g,8-\offset X-offset -2.5 \pp~
 	g g4 r8 r g~
 	g g4 r8 r g~
 	g g4 r8 r g~
@@ -310,9 +310,9 @@ musicCornoIIMvtI = \relative c {
 	d4\! r r
 	e,2.~\ff\>
 	e4\! r r
-	c2.\fz\>~
+	c2.\fz-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 0.5)) \>~
 % mesures 286 à 290
-	c4\! c4\fz c\fz 
+	c4 c4\fz c\fz 
 	c\fz c\fz c\fz 
 	c\fz c\fz c\fz 
 	c\fz r r
@@ -355,7 +355,7 @@ musicCornoIIMvtI = \relative c {
 	\clef bass e,,2.\>~
 % mesures 321 à 325
 	e~\!
-	e8 r \clef treble a''2\ffz\>~
+	e8 r \clef treble \hairpinShorten #'(-0.5 . -0.3) a''2\ffz\>~
 	a2.\p~
 	a\pp~
 	a~
@@ -394,7 +394,7 @@ musicCornoIIMvtI = \relative c {
 	a\!
 % mesures 356 à 360
 	c\mf\<~
-	c(\!
+	c(
 	d)~\>
 	d\!
 	c\pp\<~

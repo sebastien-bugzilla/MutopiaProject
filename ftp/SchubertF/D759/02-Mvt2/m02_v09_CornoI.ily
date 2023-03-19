@@ -9,8 +9,8 @@ musicCornoIMvtII = \relative c'' {
 	\key c \major
 	\transposition e
 % mesures 1 à 5
-	c4.(\pp\<
-	d\>
+	\hairpinShorten #'(0 . -1) c4.(\pp\<
+	\hairpinShorten #'(1 . 0) d\>
 	e8)\! r r
 	R4.*3
 	
@@ -60,9 +60,9 @@ musicCornoIMvtII = \relative c'' {
 	
 	
 	
-	c4.\fp\>(
+	c4.\fp-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 2)) \>(
 % mesures 51 à 55
-	g4)\! r8
+	g4) r8\!
 	R4.
 	d'4.->(
 	e8) r r
@@ -136,8 +136,8 @@ musicCornoIMvtII = \relative c'' {
 	c'4( c,8)
 % mesures 141 à 145
 	c'4( c,8)
-	c'4.(\pp\<
-	d\>
+	\hairpinShorten #'(0 . -1) c'4.(\pp\<
+	\hairpinShorten #'(1 . 0) d\>
 	e8)\! r r
 	R4.*3
 % mesures 146 à 150
@@ -230,7 +230,7 @@ musicCornoIMvtII = \relative c'' {
 	c 
 	f8 r r
 	R4.
-	f4. -\tweak X-offset #-3.8 \ff
+	f4.\ff
 	d \mark \default
 % mesures 256 à 260
 	c8 r r

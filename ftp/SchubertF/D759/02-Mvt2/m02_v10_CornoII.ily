@@ -35,8 +35,8 @@ musicCornoIIMvtII = \relative c' {
 	
 	
 	
-	g'4.\>~
-	g8\! r r
+	g'4.-\alterBroken shorten-pair #'((0 . 0)(0 . 1.5)) \>~
+	g8 r\! r
 % mesures 31 à 35
 	g4.\>~
 	g8\! r r \mark \default
@@ -60,7 +60,7 @@ musicCornoIIMvtII = \relative c' {
 	
 	
 	
-	c4.\fp\>(
+	c4.-\tweak extra-offset #'(0 . 0.5) \fp\>(
 % mesures 51 à 55
 	g4)\! r8
 	R4.
@@ -89,8 +89,8 @@ musicCornoIIMvtII = \relative c' {
 	
 	
 	
-	\omitMMRN \mmrPos #-2 R4. 
-	\mmrPos #-2 R \resetMMRN \mark \default
+	\omitMMRN \mmrPos #-6 R4. 
+	\mmrPos #-6 R \resetMMRN \mark \default
 % mesures 96 à 100
 	c4.\ff
 	e
@@ -128,8 +128,8 @@ musicCornoIIMvtII = \relative c' {
 	\mmrPos #4 R
 % mesures 141 à 145
 	\mmrPos #4 R \resetMMRN
-	e,4.\pp\<(
-	g\>~
+	\hairpinShorten #'(0 . 1) e,4.\pp\<(
+	\hairpinShorten #'(-1 . 0) g\>~
 	g8\!) r r
 	R4.*3
 % mesures 146 à 150

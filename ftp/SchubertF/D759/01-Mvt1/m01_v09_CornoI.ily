@@ -248,7 +248,7 @@ musicCornoIMvtI = \relative c {
 	e~
 % mesures 216 à 220
 	e~
-	e~ \mark \default \stopMeasureCount
+	\tieMinLength #8.1 e~ \mark \default \stopMeasureCount
 	e4 r r
 	R2.*10
 	
@@ -279,9 +279,9 @@ musicCornoIMvtI = \relative c {
 	
 % mesures 251 à 255
 	\mark \default
-	e4\fz g,2\fp\>~
-	g2.\!~
-	g~
+	e4\fz g,2\fp-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 7))\>~
+	g2.~
+	g~\!
 	g4(\pp\< a d\>
 % mesures 256 à 260
 	c)\! r r
@@ -310,9 +310,9 @@ musicCornoIMvtI = \relative c {
 	d4\! r r
 	e2.~\ff\>
 	e4\! r r
-	c2.\fz\>~
+	c2.\fz-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 1)) \>~
 % mesures 286 à 290
-	c4\! c4\fz c\fz 
+	c4 c4\fz c\fz 
 	c\fz c\fz c\fz 
 	c\fz c\fz c\fz 
 	c\fz r r

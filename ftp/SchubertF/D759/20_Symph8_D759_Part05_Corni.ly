@@ -20,7 +20,7 @@
 \include "./00-Common/Symph8_D759_LayoutParts.ily"
 \include "./00-Common/Symph8_D759_Shortcuts.ily"
 \include "./00-Common/Symph8_D759_NameVoice.ily"
-%\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_Format_Part05_Corni.ily"
 \include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v09_CornoI.ily"
@@ -47,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtI
-%			}
+			\new Voice {
+				\formatCornoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(cornoI) \tempiPartMvtI
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtII
-%			}
+			\new Voice {
+				\formatCornoIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(cornoI) \tempiPartMvtII
 			}
@@ -89,7 +89,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -103,9 +103,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtI
-%			}
+			\new Voice {
+				\formatCornoIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(cornoII) \tempiPartMvtI
 			}
@@ -131,9 +131,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtII
-%			}
+			\new Voice {
+				\formatCornoIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(cornoII) \tempiPartMvtII
 			}
@@ -145,7 +145,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #5

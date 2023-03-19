@@ -167,7 +167,13 @@ markWhiteout = {
 	\once \override Score.RehearsalMark.whiteout-style = #'outline
 }
 
-
+tieMinLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override Tie.minimum-length = #length
+	#}
+)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
