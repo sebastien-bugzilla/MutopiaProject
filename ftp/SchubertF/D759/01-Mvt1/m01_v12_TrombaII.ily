@@ -67,9 +67,9 @@ musicTrombaIIMvtI = \relative c {
 		r4 g2\fz
 		R2.
 		r4 g2\fz
-		r4 c2->\fz
+		r4 c2^>\fz
 % mesures 91 à 95
-		r4 c2->\fz
+		r4 c2^>\fz
 		R2. \mark \default
 		g4 r r
 		R2.*10
@@ -125,7 +125,7 @@ musicTrombaIIMvtI = \relative c {
 	
 	
 	
-	g2.\ff\>~
+	g2.\ff-\tweak extra-offset #'(0 . 0.5) \>~
 	g\!
 % mesures 156 à 160
 	R2.*6

@@ -83,7 +83,7 @@ musicTrombaIIMvtII = \relative c' {
 	c,4.
 	c \mark \default
 % mesures 111 à 115
-	R4.*59
+	\mmrLength #2.5 R4.*59
 % mesures 116 à 120
 	
 % mesures 121 à 125

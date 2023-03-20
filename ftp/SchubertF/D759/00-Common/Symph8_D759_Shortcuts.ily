@@ -175,6 +175,14 @@ tieMinLength = #(define-music-function
 	#}
 )
 
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.space-increment = #length
+	#}
+)
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -262,14 +270,6 @@ tieMinLength = #(define-music-function
 %mmrnDown = {
 %	\once \override MultiMeasureRestNumber.direction = #-1 
 %}
-
-%mmrLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.space-increment = #length
-%	#}
-%)
 
 %mmrMinLength = #(define-music-function
 %	(length)

@@ -67,7 +67,7 @@ musicTrombaIMvtI = \relative c {
 		r4 g'2\fz
 		R2.
 		r4 g2\fz
-		r4 c,2->\fz
+		r4 c,2^>\fz
 % mesures 91 à 95
 		r4 c'2->\fz
 		R2. \mark \default

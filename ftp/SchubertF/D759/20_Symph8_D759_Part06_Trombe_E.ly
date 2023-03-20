@@ -20,7 +20,7 @@
 \include "./00-Common/Symph8_D759_LayoutParts.ily"
 \include "./00-Common/Symph8_D759_Shortcuts.ily"
 \include "./00-Common/Symph8_D759_NameVoice.ily"
-%\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_Format_Part06_Trombe.ily"
 \include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v11_TrombaI.ily"
@@ -45,67 +45,67 @@
 			"Tromba"
 		}
 	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\fluteIFormattingMvtI
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(trombaI) \tempiPartMvtI
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceTrombaIMvtI
-%			}
-%			\new Voice {
-%				\timeMvtI \nameTrombaIMvtI \musicTrombaIMvtI
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #4
-%					I
-%				}
-%			}
-%		}
-%		\layout {
-%			\layoutPart
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\fluteIFormattingMvtII
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(trombaI) \tempiPartMvtII
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceTrombaIMvtII
-%			}
-%			\new Voice {
-%				\timeMvtII \nameTrombaIMvtII \musicTrombaIMvtII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #4
-%					II
-%				}
-%			}
-%		}
-%		\layout {
-%			\layoutPart
-%		}
-%	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtI
-%			}
+			\new Voice {
+				\formatTrombaIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(trombaI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombaIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTrombaIMvtI \musicTrombaIMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					I
+				}
+			}
+		}
+		\layout {
+			\layoutPart
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTrombaIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(trombaI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombaIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTrombaIMvtII \musicTrombaIMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #2 \fill-line {
+					\fontsize #4
+					II
+				}
+			}
+		}
+		\layout {
+			\layoutPart
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTrombaIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(trombaII) \tempiPartMvtI
 			}
@@ -113,7 +113,7 @@
 				\InCueContext \cueVoiceTrombaIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameTrombaIMvtII \musicTrombaIIMvtI 
+				\timeMvtI \nameTrombaIIMvtI \musicTrombaIIMvtI 
 			}
 		>>
 		\header {
@@ -131,9 +131,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtII
-%			}
+			\new Voice {
+				\formatTrombaIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(trombaII) \tempiPartMvtII
 			}
@@ -147,7 +147,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
+				\vspace #3.5 \fill-line {
 					\fontsize #5
 					II
 				}

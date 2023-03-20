@@ -358,7 +358,7 @@ cueVoiceTrombaIMvtI = \relative c {
 	% bar 144 - 145
 	\transpose e d {
 		\relative c'' {
-			f4^\markup {Hr.} d e
+			f4-\offset X-offset -3 ^\markup {Hr.} d e
 			f d d
 		}
 	}
@@ -366,7 +366,7 @@ cueVoiceTrombaIMvtI = \relative c {
 	% bar 229 - 231
 	\transpose e d {
 		\relative c'' {
-			e4(^\markup {Hr.I} f4. e8
+			\shape #'((0 . 1)(0 . 0)(0 . 0)(0 . 1)) Slur e4(-\offset X-offset -3 ^\markup {Hr.I} f4. e8
 			f4 e2)(
 			f4) r r 
 		}
@@ -375,7 +375,7 @@ cueVoiceTrombaIMvtI = \relative c {
 	% bar 344 - 345
 	\transpose e c {
 		\relative c'' {
-			fis2(^\markup {Viol.I} eis4)
+			fis2(-\offset X-offset -4 ^\markup {Viol.I} eis4)
 			fis2( eis4)
 		}
 	}
@@ -385,7 +385,7 @@ cueVoiceTrombaIMvtII = \relative c {
 	% bar 31 - 32
 	\transpose e a {
 		\relative c' {
-			d16(^\markup {Kl.I} fis a c b a 
+			\shape #'((0 . 0)(0 . 0)(0 . -0.3)(0 . -1)) Slur d16(-\offset X-offset -2.5 ^\markup {Kl.I} fis a c b a 
 			g8) r r
 		}
 	}
@@ -393,7 +393,7 @@ cueVoiceTrombaIMvtII = \relative c {
 	% bar 94 - 95
 	\transpose e c {
 		\relative c''' {
-			ais16.->(^\markup {Ob.I} gis32 ais16 gis eis cis)
+			ais16.->(-\offset X-offset -4 ^\markup {Ob.I} gis32 ais16 gis eis cis)
 			gis'16.(-> fis32 gis16 fis dis bis)
 		}
 	}
@@ -403,7 +403,7 @@ cueVoiceTrombaIMvtII = \relative c {
 		\relative c'' {
 			b16(^\markup {Fl.I} dis fis a gis fis
 			e8) r r 
-			b16(^\markup {Fl.KL.}  dis fis a gis fis
+			b16(-\offset X-offset -4.5 ^\markup {Fl.KL.}  dis fis a gis fis
 			e4) r8
 		}
 	}
@@ -434,7 +434,7 @@ cueVoiceTrombaIIMvtI = \relative c {
 	% bar 144 - 145
 	\transpose e d {
 		\relative c'' {
-			f4^\markup {Hr.} d e
+			f4-\offset X-offset -2.5 ^\markup {Hr.} d e
 			f d d
 		}
 	}
@@ -442,7 +442,7 @@ cueVoiceTrombaIIMvtI = \relative c {
 	% bar 229 - 231
 	\transpose e d {
 		\relative c'' {
-			e4(^\markup {Hr.I} f4. e8
+			\shape #'((0 . 1)(0 . 0)(0 . 0)(0 . 1)) Slur e4(-\offset X-offset -3 ^\markup {Hr.I} f4. e8
 			f4 e2)(
 			f4) r r 
 		}
@@ -461,7 +461,7 @@ cueVoiceTrombaIIMvtII = \relative c {
 	% bar 31 - 32
 	\transpose e a {
 		\relative c' {
-			d16(^\markup {Kl.I} fis a c b a 
+			\shape #'((0 . 0)(0 . 0)(0 . -0.3)(0 . -1)) Slur d16(-\offset X-offset -3 ^\markup {Kl.I} fis a c b a 
 			g8) r r
 		}
 	}
@@ -469,7 +469,7 @@ cueVoiceTrombaIIMvtII = \relative c {
 	% bar 94 - 95
 	\transpose e c {
 		\relative c''' {
-			ais16.->(^\markup {Ob.I} gis32 ais16 gis eis cis)
+			ais16.->(-\offset X-offset -3.8 ^\markup {Ob.I} gis32 ais16 gis eis cis)
 			gis'16.(-> fis32 gis16 fis dis bis)
 		}
 	}
@@ -477,9 +477,9 @@ cueVoiceTrombaIIMvtII = \relative c {
 	% bar 170 - 173
 	\transpose e c {
 		\relative c'' {
-			b16(^\markup {Fl.I} dis fis a gis fis
+			\shape #'((0 . 0)(0 . 0)(0 . -0.3)(0 . -1)) Slur b16(-\offset X-offset -3 ^\markup {Fl.I} dis fis a gis fis
 			e8) r r 
-			b16(^\markup {Fl.KL.}  dis fis a gis fis
+			\shape #'((0 . 0)(0 . 0)(0 . -0.3)(0 . -1)) Slur b16(-\offset X-offset -4 ^\markup {Fl.Kl.}  dis fis a gis fis
 			e4) r8
 		}
 	}
@@ -487,7 +487,7 @@ cueVoiceTrombaIIMvtII = \relative c {
 	% bar 235 - 236
 	\transpose e c {
 		\relative c'' {
-			fis16.(->^\markup {Fl.I} e32 fis16 e cis a
+			fis16.(->-\offset X-offset -3.5 ^\markup {Fl.I} e32 fis16 e cis a
 			e'16.-> d32 e16 d b gis)
 		}
 	}
