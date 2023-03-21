@@ -217,8 +217,8 @@ musicTimpaniMvtI = \relative c {
 % mesures 281 à 285
 	b,2.:32\ff\>
 	b4\! r r
-	b2.:32\ff\>
-	b4\! r r
+	b2.:32\ff-\alterBroken shorten-pair #'((-0.3 . 0)(0 . 1.5)) \>
+	b4 r\! r
 	b2.:32\fz\>
 % mesures 286 à 290
 	b4\! b\fz b\fz 
@@ -284,11 +284,11 @@ musicTimpaniMvtI = \relative c {
 	
 	
 % mesures 356 à 360
-	b2.:32\mf\<
+	b2.:32\mf-\alterBroken shorten-pair #'((-0.3 . 0)(0 . 7)) \<
 	b:
 	b:\>
-	b:
-	b4\! r r
+	b:\!
+	b4 r r
 % mesures 361 à 365
 	R2.*3
 	

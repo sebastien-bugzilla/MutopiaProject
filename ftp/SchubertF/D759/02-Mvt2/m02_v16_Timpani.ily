@@ -165,12 +165,12 @@ musicTimpaniMvtII = \relative c {
 	r b\fz r
 	r b\fz r
 	r e e
-	e4.:32 -\tweak X-offset #-3.8 \ff
+	e4.:32\ff
 % mesures 251 à 255
 	e4:32 e8
 	R4.*2
 	
-	b4.:32 -\tweak X-offset #-3.8 \ff
+	b4.:32\ff
 	b: \mark \default
 % mesures 256 à 260
 	e8 r r

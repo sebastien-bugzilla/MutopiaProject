@@ -638,42 +638,42 @@ cueVoiceTimpaniMvtI = \relative c {
 	e2 \cueClefUnset s4
 	s2.*52
 	% bar 81 - 84
-	\voiceTwo \cueClef treble d,2.\fz^\markup {Trbe}
+	\voiceTwo \cueClef treble d,2.-\offset X-offset 0.5 \fz^\markup {Trbe}
 	d
-	d\fz
+	d-\offset X-offset 0.5 \fz
 	d \cueClefUnset
 	s2.*54
 	% bar 138 - 139
-	\cueClef treble g''2^(^\markup {Fl.I} fis4)
+	\cueClef treble g''2^(-\offset X-offset -3.5 ^\markup {Fl.I} fis4)
 	e2^( g4) \cueClefUnset
 	s2.*89
 	% bar 229 - 231
-	\voiceOne \cueClef treble fis,4(^\markup {Hr.I} g4. fis8
+	\voiceOne \cueClef treble \shape #'((0 . 1)(0 . -0.5)(0 . -0.5)(0 . 1)) Slur fis,4(-\offset X-offset -3 ^\markup {Hr.I} g4. fis8
 	g4 fis2)(
 	e4) r r \cueClefUnset
 }
 cueVoiceTimpaniMvtII = \relative c {
 	\voiceOne s4.*30
 	% bar 31 - 32
-	\cueClef treble b''16(^\markup {Fl.Kl.} dis fis a gis fis
+	\cueClef treble b''16(-\offset X-offset -4 ^\markup {Fl.Kl.} dis fis a gis fis
 	e8) r r \cueClefUnset
 	s4.*61
 	% bar 94 - 95
-	\cueClef treble bes'16.(^\markup {Ob.I} aes32 bes16 aes f des)
-	aes'16.( ges32 aes16 ges ees c) \cueClefUnset
+	\cueClef treble bes'16._(-\offset X-offset -3 ^\markup {Ob.I} aes32 bes16 aes f des)
+	aes'16._( ges32 aes16 ges ees c) \cueClefUnset
 	s4.*74
 	% bar 170 - 173
-	\cueClef treble b16(^\markup {Fl.I} dis fis a gis fis 
+	\cueClef treble \shape #'((0 . 0)(0 . 0)(0 . -0.3)(0 . -1)) Slur b16(-\offset X-offset -3 ^\markup {Fl.I} dis fis a gis fis 
 	e8) r r
-	b16(^\markup {Fl.Kl} dis fis a gis fis
+	\shape #'((0 . 0)(0 . 0)(0 . -0.3)(0 . -1)) Slur b16(-\offset X-offset -4 ^\markup {Fl.Kl} dis fis a gis fis
 	e4) r8 \cueClefUnset
 	s4.*61
 	% bar 235 - 236
-	\cueClef treble fis16.(->^\markup {Fl.I} e32 fis16 e cis a
+	\cueClef treble fis16.(->-\offset X-offset -4 ^\markup {Fl.I} e32 fis16 e cis a
 	e'16.-> d32 e16 d b gis) \cueClefUnset
 	s4.*62
 	% bar 299 - 302
-	\cueClef treble b16(^\markup {Viol.I} dis fis a gis fis 
+	\cueClef treble b16(-\offset X-offset -4 ^\markup {Viol.I} dis fis a gis fis 
 	e8) r r
 	b16( dis fis a gis fis 
 	e8) r r \cueClefUnset
