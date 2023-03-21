@@ -20,7 +20,7 @@
 \include "./00-Common/Symph8_D759_LayoutParts.ily"
 \include "./00-Common/Symph8_D759_Shortcuts.ily"
 \include "./00-Common/Symph8_D759_NameVoice.ily"
-%\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_Format_Part07_Tromboni.ily"
 \include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v13_TromboneI.ily"
@@ -49,9 +49,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtI
-%			}
+			\new Voice {
+				\formatTromboneIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(tromboneI) \tempiPartMvtI
 			}
@@ -77,9 +77,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtII
-%			}
+			\new Voice {
+				\formatTromboneIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(tromboneI) \tempiPartMvtII
 			}
@@ -93,7 +93,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
+				\vspace #3.5 \fill-line {
 					\fontsize #4
 					II
 				}
@@ -105,9 +105,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtI
-%			}
+			\new Voice {
+				\formatTromboneIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(tromboneII) \tempiPartMvtI
 			}
@@ -133,9 +133,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtII
-%			}
+			\new Voice {
+				\formatTromboneIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(tromboneII) \tempiPartMvtII
 			}
@@ -149,7 +149,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
+				\vspace #2.5 \fill-line {
 					\fontsize #5
 					II
 				}
@@ -161,9 +161,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtI
-%			}
+			\new Voice {
+				\formatTromboneIIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(tromboneIII) \tempiPartMvtI
 			}
@@ -189,9 +189,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIIFormattingMvtII
-%			}
+			\new Voice {
+				\formatTromboneIIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(tromboneIII) \tempiPartMvtII
 			}
@@ -205,7 +205,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
+				\vspace #2 \fill-line {
 					\fontsize #5
 					II
 				}

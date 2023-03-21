@@ -181,8 +181,8 @@ musicTromboneIMvtI = \relative c {
 	cis
 	e\fz
 	d4-. b-. c-.
-	c2.\ffz\>(
-	b2\! ais4)
+	c2.\ffz-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 4.5)) \>(
+	b2 ais4)\!
 % mesures 196 à 200
 	c2.(\fz\>
 	b2\! ais4)

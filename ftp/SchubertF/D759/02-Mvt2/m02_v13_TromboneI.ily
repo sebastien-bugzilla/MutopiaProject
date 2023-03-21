@@ -74,9 +74,9 @@ musicTromboneIMvtII = \relative c' {
 % mesures 101 à 105
 	fis8 a4
 	gis8-. cis-. bis-. 
-	cis r e\fz
+	cis r \dynEO #'(0 . 1) e\fz
 	r r e\fz
-	r r cis\fz
+	r r \dynEO #'(0.8 . 1) cis\fz
 % mesures 106 à 110
 	r r dis\fz
 	r e-. eis-.

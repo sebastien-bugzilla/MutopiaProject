@@ -518,21 +518,21 @@ cueVoiceTromboneIMvtI = \relative c {
 cueVoiceTromboneIMvtII = \relative c {
 	s4.*28
 	% bar 29 - 30
-	\cueClef treble \voiceOne b''16(^\markup {Fl.I} dis fis a gis fis
+	\cueClef treble \shape #'((0 . 0)(0 . 0)(0 . -0.3)(0 . -1)) Slur \voiceOne b''16(-\offset X-offset -3 ^\markup {Fl.I} dis fis a gis fis
 	e8) r r \cueClefUnset
 	s4.*63
 	% bar 94 - 95
-	\cueClef treble bes'16.(->^\markup {Ob.I} aes32 bes16 aes f des)
+	\cueClef treble bes'16.(->-\offset X-offset -3.8 ^\markup {Ob.I} aes32 bes16 aes f des)
 	aes'16.(-> ges32 aes16 ges ees c) \cueClefUnset
 	s4.*74
 	% bar 170 - 173
-	\cueClef treble b16(^\markup {Fl.I} dis fis a gis fis
+	\cueClef treble \shape #'((0 . 0)(0 . 0)(0 . -0.3)(0 . -1)) Slur b16(-\offset X-offset -3 ^\markup {Fl.I} dis fis a gis fis
 	e8) r r
-	b16->(^\markup {Fl.Kl.} dis fis a gis fis
+	\shape #'((0 . 0)(0 . 0)(0 . -0.3)(0 . -1)) Slur b16->(-\offset X-offset -4.7 ^\markup {Fl.Kl.} dis fis a gis fis
 	e4) r8 \cueClefUnset
 	s4.*61
 	% bar 235 - 236
-	\cueClef treble fis16.(->^\markup {Fl.I} e32 fis16 e cis a
+	\cueClef treble fis16.(->-\offset X-offset -3.5 ^\markup {Fl.I} e32 fis16 e cis a
 	e'16.-> d32 e16 d b gis) \cueClefUnset
 	s4.*66
 	% bar 303 - 307
@@ -554,28 +554,28 @@ cueVoiceTromboneIIMvtI = \relative c {
 	gis4( a b)
 	s2.*106
 	% bar 240 - 242
-	\voiceOne \cueClef treble a''2.~^\markup {Fl.I}
+	\voiceOne \cueClef treble a''2.~-\offset X-offset -3 ^\markup {Fl.I}
 	a2~ a8( b)
 	b2 \cueClefUnset s4
 }
 cueVoiceTromboneIIMvtII = \relative c {
 	s4.*28
 	% bar 29 - 30
-	\cueClef treble \voiceOne b''16(^\markup {Fl.I} dis fis a gis fis
+	\cueClef treble \voiceOne \shape #'((0 . 0)(0 . 0)(0 . -0.3)(0 . -1)) Slur b''16(-\offset X-offset -3 ^\markup {Fl.I} dis fis a gis fis
 	e8) r r \cueClefUnset
 	s4.*63
 	% bar 94 - 95
-	\cueClef treble bes'16.(->^\markup {Ob.I} aes32 bes16 aes f des)
+	\cueClef treble bes'16.(->-\offset X-offset -4 ^\markup {Ob.I} aes32 bes16 aes f des)
 	aes'16.(-> ges32 aes16 ges ees c) \cueClefUnset
 	s4.*74
 	% bar 170 - 173
-	\cueClef treble b16(^\markup {Fl.I} dis fis a gis fis
+	\cueClef treble b16_(-\offset X-offset -2.5 ^\markup {Fl.I} dis fis a gis fis
 	e8) r r
-	b16->(^\markup {Fl.Kl.} dis fis a gis fis
+	b16->_(-\offset X-offset -4.7 ^\markup {Fl.Kl.} dis fis a gis fis
 	e4) r8 \cueClefUnset
 	s4.*61
 	% bar 235 - 236
-	\cueClef treble fis16.(->^\markup {Fl.I} e32 fis16 e cis a
+	\cueClef treble fis16.(->-\offset X-offset -3.5 ^\markup {Fl.I} e32 fis16 e cis a
 	e'16.-> d32 e16 d b gis) \cueClefUnset
 	s4.*66
 	% bar 303 - 307
@@ -588,7 +588,7 @@ cueVoiceTromboneIIMvtII = \relative c {
 cueVoiceTromboneIIIMvtI = \relative c {
 	s2.*17 \voiceOne
 	% bar 18 - 20
-	\cueClef treble e''4(^\markup {Ob.I} f4. e8)
+	\cueClef treble e''4(-\offset X-offset -3.5 ^\markup {Ob.I} f4. e8)
 	d4( cis2
 	d4) \cueClefUnset s2
 	s2.*112
@@ -597,26 +597,26 @@ cueVoiceTromboneIIIMvtI = \relative c {
 	gis4( a b)
 	s2.*106
 	% bar 240 - 242
-	\cueClef treble a''2.~^\markup {Fl.I}
+	\cueClef treble a''2.~-\offset X-offset -3 ^\markup {Fl.I}
 	a2~ a8( b)
 	b2 \cueClefUnset s4
 }
 cueVoiceTromboneIIIMvtII = \relative c {
 	s4.*28
 	% bar 29 - 30
-	\voiceOne \cueClef treble b''16(^\markup {Fl.I} dis fis a gis fis
+	\voiceOne \cueClef treble \shape #'((0 . 0)(0 . 0)(0 . -0.3)(0 . -1)) Slur b''16(-\offset X-offset -3 ^\markup {Fl.I} dis fis a gis fis
 	e8) r r \cueClefUnset
 	s4.*63
 	% bar 94 - 95
-	\cueClef treble bes'16.(->^\markup {Ob.I} aes32 bes16 aes f des)
-	aes'16.(-> ges32 aes16 ges ees c) \cueClefUnset
+	\cueClef treble bes'16._(->-\offset X-offset -4.5 ^\markup {Ob.I} aes32 bes16 aes f des)
+	aes'16._(-> ges32 aes16 ges ees c) \cueClefUnset
 	s4.*76
 	% bar 172 - 173
-	\cueClef treble b16->(^\markup {Fl.Kl.} dis fis a gis fis
+	\cueClef treble b16->_(-\offset X-offset -5 ^\markup {Fl.Kl.} dis fis a gis fis
 	e4) r8 \cueClefUnset
 	s4.*61
 	% bar 235 - 236
-	\cueClef treble fis16.(->^\markup {Fl.I} e32 fis16 e cis a
+	\cueClef treble fis16.(->-\offset X-offset -3.5 ^\markup {Fl.I} e32 fis16 e cis a
 	e'16.-> d32 e16 d b gis) \cueClefUnset
 	s4.*43
 	% bar 280 - 285

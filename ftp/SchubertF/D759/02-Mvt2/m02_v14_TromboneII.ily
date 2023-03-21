@@ -111,11 +111,11 @@ musicTromboneIIMvtII = \relative c {
 	
 	
 	
-	\omitMMRN \mmrPos #-2 R4.
+	\omitMMRN \mmrPos #-4 R4.
 % mesures 171 à 175
-	\mmrPos #-2 R
-	\mmrPos #-2 R
-	\mmrPos #-2 R \resetMMRN \mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \resetMMRN \mark \default
 	fis4.\ff
 	gis
 % mesures 176 à 180

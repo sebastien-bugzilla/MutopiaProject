@@ -10,7 +10,7 @@ musicTromboneIIIMvtI = \relative c {
 % mesures 1 à 5
 	R2.
 	\repeat volta 2 {
-		R2.*16
+		\mmrLength #1.6 R2.*16
 % mesures 6 à 10
 	
 % mesures 11 à 15
@@ -75,11 +75,11 @@ musicTromboneIIIMvtI = \relative c {
 		a2 r8 e'(
 		d) r d2->\fz(
 % mesures 86 à 90
-		c8) r c2\fz->(
-		g8) r g2->( -\tweak X-offset #-3. \fz 
+		c8) r c2\fz^>(
+		g8) r g2^>(\fz 
 		c4) d-. d-.
 		g,8 r g'2->\fz(
-		c,8) r c2->(\fz
+		c,8) r c2^>(\fz
 % mesures 91 à 95
 		e8) r e2(->\f
 		a,4) d-. d-. \mark \default
@@ -193,10 +193,10 @@ musicTromboneIIIMvtI = \relative c {
 	cis
 	e\fz
 	d4-. b-. c-.
-	g2.\ffz\>~
-	g\!
+	g2.\ffz-\alterBroken shorten-pair #'((-0.3 . 0)(0 . 3.5)) \>~
+	g
 % mesures 196 à 200
-	g\fz\>~
+	g-\offset X-offset -1 \fz\>~
 	g\!
 	R2.*4
 	
@@ -260,8 +260,8 @@ musicTromboneIIIMvtI = \relative c {
 	
 	R2._\gp \mark \default
 % mesures 281 à 285
-	e'2.\ff\>~
-	e4\! r r
+	e'2.\ff-\alterBroken shorten-pair #'((-0.3 . 0)(0 . 1.5)) \>~
+	e4 r\! r
 	fis2.\ff\>~
 	fis4\! r r
 	g2.\fz\>~
@@ -302,7 +302,7 @@ musicTromboneIIIMvtI = \relative c {
 	
 % mesures 321 à 325
 	
-	r4 b2\ffz\>~
+	r4 \hairpinShorten #'(-0.3 . -0.3) b2\ffz\>~
 	b2.\p~
 	b4\pp r r
 	R2.*9
@@ -337,7 +337,7 @@ musicTromboneIIIMvtI = \relative c {
 	b\!
 % mesures 356 à 360
 	b\mf\<~
-	b~
+	b~\!
 	b~\>
 	b\!~
 	b4 r r

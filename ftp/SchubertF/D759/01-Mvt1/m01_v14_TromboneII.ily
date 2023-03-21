@@ -62,15 +62,15 @@ musicTromboneIIMvtI = \relative c {
 		r8 a4 a a8
 		bes2.\fz
 		r8 a4 a a8(
-		b!) r g2\fz->~
+		b!) r g2\fz^>~
 % mesures 86 à 90
-		g8 r g2->\fz~
-		g8 r g2->\fz~
+		g8 r g2^>\fz~
+		g8 r g2^>\fz~
 		g4 g-. a-.
-		g8 r f2->\fz(
-		e8) r g2\fz->(
+		g8 r f2^>\fz(
+		e8) r g2\fz^>(
 % mesures 91 à 95
-		gis8) r gis2->\fz(
+		gis8) r gis2^>\fz(
 		a4) g!-. a-. \mark \default
 		g r r
 		R2.*10
