@@ -683,7 +683,7 @@ cueVoiceTimpaniMvtII = \relative c {
 %###############################################################################
 cueVoiceViolinoIMvtI = \relative c {
 	% bar 1 - 8
-	\voiceTwo \cueClef bass b2.(_\markup {Basse}
+	\voiceTwo \cueClef bass b2.(-\offset X-offset -6 _\markup {Basse}
 	cis2 d4)
 	b2.(
 	a4 fis gis)
@@ -693,28 +693,28 @@ cueVoiceViolinoIMvtI = \relative c {
 	fis \cueClefUnset
 	s2.*42
 	% bar 51 - 52
-	a''4(_\markup {Vc.} e4. gis8)
+	a''4(^\markup {Vc.} e4. gis8)
 	a4( d, e8 fis)
 	s2.*66
 	% bar 118 - 121
-	\cueClef bass g,,2.(_\markup {Basse}
+	\cueClef bass \voiceOne g,,2._(^\markup {Basse}
 	fis
 	e 
-	d) \cueClefUnset
+	d) \cueClefUnset \voiceTwo
 	s2.*143
 	% bar 265 - 266
-	e''4(_\markup {Vc.} b4. dis8)
+	e''4(^\markup {Vc.} b4. dis8)
 	e4( a, b8 cis)
 	s2.*24
 	% bar 291
-	eis8.(\p_\markup {Vc.} fis16 gis8 cis, dis eis)
+	eis8.(\p^\markup {Vc.} fis16 gis8 cis, dis eis)
 	s2.*44
 	% bar 336 - 337
-	b2.(_\markup {Basse}
+	b2.(^\markup {Basse}
 	cis2 d4)
 	s2.*22
 	% bar 360 - 363
-	b2.(_\markup {Basse} 
+	b2.(-\offset X-offset -5 _\markup {Basse} 
 	cis2 d4)
 	b2.(
 	cis2 d4)
@@ -725,9 +725,9 @@ cueVoiceViolinoIMvtII = \relative c {
 	b-. a-. fis-. \cueClefUnset
 	s4.*273
 	% bar 276 - 279
-	gis''4.\pp^\markup {Klar.I}( 
-	ais\<
-	b4\> a!16 fis\!
+	gis''4.-\offset X-offset -2 \pp^\markup {Klar.I}( 
+	ais-\tweak extra-offset #'(0 . 2.5) \<
+	b4-\tweak extra-offset #'(0 . 2.1) \> a!16 fis\!
 	gis4 fis16 dis)
 }
 %###############################################################################

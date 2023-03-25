@@ -33,7 +33,7 @@ musicViolinoIMvtII = \relative c''' {
 	d8 b g)
 % mesures 21 à 25
 	a4.(\>
-	b8)\! r r
+	\once \stemUp b8)\! r r
 	R4.*1
 	b4.(
 	c
@@ -66,7 +66,7 @@ musicViolinoIMvtII = \relative c''' {
 	
 	
 	
-	c'4.\fp\>(
+	\hairpinShorten #'(-0.5 . 0) c'4.\fp\>(
 % mesures 51 à 55
 	b16)(\! dis fis a gis fis
 	e8) r r
@@ -78,7 +78,7 @@ musicViolinoIMvtII = \relative c''' {
 	R4.*3
 	
 	
-	gis,4.\pp(~
+	\shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur gis,4.\pp(~
 % mesures 61 à 65
 	gis
 	gis'
@@ -201,14 +201,14 @@ musicViolinoIMvtII = \relative c''' {
 	c
 % mesures 161 à 165
 	d8 b g)
-	a4.\>(
-	b8)\! r r
+	a4.-\alterBroken shorten-pair #'((0 . 0)(0 . 1.5)) \>(
+	\once \stemUp b8) r\! r
 	R4.
 	b4.(
 % mesures 166 à 170
 	c
 	d8 b g)
-	fis4.\>
+	\hairpinShorten #'(0 . 2) fis4.\>
 	b'8(\! gis! e
 	b) r r
 % mesures 171 à 175
@@ -239,7 +239,7 @@ musicViolinoIMvtII = \relative c''' {
 	f'4.(\fp\>
 	e16\! gis b d cis b
 	a8) r r
-	e'16(_\crescmarkup^\< gis b d^\> cis b
+	e'16(_\crescmarkup\< gis b d\> cis b
 	a8\!) r r
 % mesures 196 à 200
 	e16( gis b d\> cis b
@@ -248,7 +248,7 @@ musicViolinoIMvtII = \relative c''' {
 	
 	
 % mesures 201 à 205
-	e,4.(\pp~
+	\shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur e,4.(\pp~
 	e
 	e'
 	c
@@ -261,7 +261,7 @@ musicViolinoIMvtII = \relative c''' {
 	e f8-> e e16~ 
 % mesures 211 à 215
 	e e8 e16(\< f g)
-	f16 f8 f16( gis! a)
+	f16 f8 f16( gis! a)\!
 	c\f\> c8 c c16\!~
 	c( bes\p f) f8 f16~
 	f f8\pp f f16(
@@ -282,7 +282,7 @@ musicViolinoIMvtII = \relative c''' {
 	e e8 e e16~
 	e fis8-> e e16~
 	e\< e8 e16( fis g)
-	fis fis8 fis16( gis! a)
+	fis fis8 fis16( gis! a)\!
 % mesures 231 à 235
 	a\f\> a8 a a16(\!
 	gis) gis8\p gis gis16(
@@ -306,12 +306,12 @@ musicViolinoIMvtII = \relative c''' {
 	a
 	g8 b4
 	a8 c4
-	<c, bes'>16 -\tweak X-offset #-3.8 \ff q8 q q16~
+	<c, bes'>16\ff q8 q q16~
 % mesures 251 à 255
 	q q8 q q16
 	<c a'>8-. r r
 	R4.
-	<fis! dis'!>16 -\tweak X-offset #-3.8 \ff <fis dis'>8 q q16~
+	<fis! dis'!>16\ff <fis dis'>8 q q16~
 	q q8 q q16 \mark \default
 % mesures 256 à 260
 	<e e'>8-. r r
@@ -321,12 +321,12 @@ musicViolinoIMvtII = \relative c''' {
 	b16\!)( dis fis a gis fis
 % mesures 261 à 265
 	e8) r r
-	b16(^\crescmarkup\< dis fis a\> gis fis
-	e8)\! r r
-	b16(\< dis fis a\> gis fis)
+	b16(^\crescmarkup\< dis fis\! a\> gis fis\!
+	e8) r r
+	b16(\< dis fis\! a\> gis fis)\!
 	a(\pp gis fis a gis fis
 % mesures 266 à 270
-	cis'\< b a gis fis a
+	cis'\< b a gis fis a\!
 	cis4\> b8\!)
 	e,8\pp r r
 	R4.*7
@@ -337,7 +337,7 @@ musicViolinoIMvtII = \relative c''' {
 	\mmrPos #4 R
 	\mmrPos #4 R
 	\mmrPos #4 R \resetMMRN
-	b4.\ppp(~
+	\shape #'((0 . -1.5)(0 . 0.5)(0 . 0.5)(0 . -1.5)) Slur b4.\ppp(~
 % mesures 281 à 285
 	b
 	b'
@@ -365,7 +365,7 @@ musicViolinoIMvtII = \relative c''' {
 % mesures 301 à 305
 	b16(\> dis fis a gis fis\!
 	e8) r r
-	b,16( -\tweak X-offset #-4. _\dimmarkup dis fis a gis fis
+	b,16(_\dimmarkup dis fis a gis fis
 	e8) r r
 	b16( dis fis a gis fis
 % mesures 306 à 310
@@ -376,5 +376,5 @@ musicViolinoIMvtII = \relative c''' {
 	e r r
 % mesures 311 à 312
 	e r r
-	<gis, e'>4. -\tweak X-offset #-5.5 ^\arco\fermata\espressivo \bar "|."
+	<gis, e'>4.^\arco\fermata\espressivo \bar "|."
 }

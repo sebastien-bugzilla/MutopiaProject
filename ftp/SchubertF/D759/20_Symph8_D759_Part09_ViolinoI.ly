@@ -20,7 +20,7 @@
 \include "./00-Common/Symph8_D759_LayoutParts.ily"
 \include "./00-Common/Symph8_D759_Shortcuts.ily"
 \include "./00-Common/Symph8_D759_NameVoice.ily"
-%\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_Format_Part09_ViolinoI.ily"
 \include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v17_ViolinoI.ily"
@@ -45,9 +45,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtI
-%			}
+			\new Voice {
+				\formatViolinoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(violinoI) \tempiPartMvtI
 			}
@@ -73,9 +73,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtII
-%			}
+			\new Voice {
+				\formatViolinoIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(violinoI) \tempiPartMvtII
 			}
@@ -89,7 +89,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
+				\vspace #2 \fill-line {
 					\fontsize #4
 					II
 				}

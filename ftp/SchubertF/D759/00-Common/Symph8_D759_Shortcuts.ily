@@ -18,6 +18,7 @@ pcresc = \markup {\dynamic p \italic cresc.}
 
 ffz = #(make-dynamic-script "ffz")
 crescD = \tweak DynamicText.self-alignment-X #-0.5 \tweak DynamicText.font-size #1 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
+crescDP = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 
 un=^\markup {\tiny \number 1}
 deux=^\markup {\tiny \number 2}
