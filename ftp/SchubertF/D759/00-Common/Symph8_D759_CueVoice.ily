@@ -772,39 +772,39 @@ cueVoiceViolinoIIMvtII = \relative c {
 cueVoiceViolaMvtI = \relative c {
 	s2.*59 \voiceOne
 	% bar 60 - 61
-	\cueClef treble a'''4(^\markup {Viol.I} e4. gis8)
+	\cueClef treble a'''4(-\offset X-offset -4 ^\markup {Viol.I} e4. gis8)
 	a4( d, e8 fis) \cueClefUnset
 	s2.*61
 	% bar 122 - 123
-	\cueClef treble e2.(^\markup {Viol.I} 
+	\cueClef treble e2.(-\offset X-offset -3.5 ^\markup {Viol.I} 
 	fis2 g4) \cueClefUnset
 	s2.*149
 	% bar 273 - 275
-	\cueClef treble dis8.(^\markup {Viol.I} e16 fis8 b, cis dis)
+	\cueClef treble dis8.(-\offset X-offset -3.5 ^\markup {Viol.I} e16 fis8 b, cis dis)
 	e4( b4. dis8)
 	e4( a, b8 cis) \cueClefUnset
 	s2.*62
 	% bar 338 - 340
-	\cueClef treble b2.(^\markup {Viol.I}
+	\cueClef treble b2.(-\offset X-offset -3.5 ^\markup {Viol.I}
 	cis2 d4)
 	fis2. \cueClefUnset
 }
 cueVoiceViolaMvtII = \relative c {
 	s4.*59 \voiceOne
 	% bar 60 - 63
-	\cueClef treble gis''4.(~^\markup {Viol.I}
+	\cueClef treble \shape #'((0 . -1.5)(0 . -0.5)(0 . -0.5)(-0.5 . -1.5)) Slur gis''4.(~-\offset X-offset -3 ^\markup {Viol.I}
 	gis
 	gis'
 	e) \cueClefUnset
 	s4.*137
 	% bar 201 - 204
-	\cueClef treble e,4.(~^\markup {Viol.I} 
+	\cueClef treble \shape #'((0 . -1)(0 . 0.2)(0 . 0.2)(0 . -1.5)) Slur e,4.(~-\offset X-offset -3 ^\markup {Viol.I} 
 	e
 	e'
 	c) \cueClefUnset
 	s4.*81
 	% bar 286 - 288
-	\cueClef treble ees4.(^\markup {Klar.I}
+	\cueClef treble ees4.(-\offset X-offset -4 ^\markup {Klar.I}
 	f
 	ees8 c aes) \cueClefUnset
 }

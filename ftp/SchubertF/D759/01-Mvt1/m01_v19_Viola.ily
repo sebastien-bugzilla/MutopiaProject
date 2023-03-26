@@ -15,7 +15,7 @@ musicViolaMvtI = \relative c {
 		
 		
 		
-		b'4^\pizz -\tweak X-offset #-3 \pp r8 b[ b b]
+		b'4^\pizz\pp r8 b[ b b]
 		b4 r8 b[ b g]
 % mesures 11 à 15
 		b4 r8 b[ b b]
@@ -81,9 +81,9 @@ musicViolaMvtI = \relative c {
 		R2._\gp \mark \default
 		ees,2.:32\ffz\>
 		ees4\! r r
-		g2.:32\fz\>
+		g2.:32\fz-\alterBroken shorten-pair #'((-0.3 . 0)(0 . 1.5)) \>
 % mesures 66 à 70
-		g4\! r r
+		g4 r\! r
 		g4:32\fz\> bes: ees:\!
 		g: bes: ees:
 		<g,, g'>4-._\crescmarkup q-. q-.
@@ -91,7 +91,7 @@ musicViolaMvtI = \relative c {
 % mesures 71 à 75
 		q\fz r r
 		R2.
-		cis!8.\p( d16 e8[ a, b cis])
+		cis!8.\p( d16 \stemDown e8[ a, b cis]) \stemNeutral
 		d4 r r
 		b8.( c16 d8[ g, a b])
 % mesures 76 à 80
@@ -122,18 +122,18 @@ musicViolaMvtI = \relative c {
 		r <b d>4\< q( <gis b>8)\!
 		<a c>8.(\> <b d>16 <c! e>8) q4-.(\! <cis e>8-.)
 		<<{
-			d2.~
-			d4
+			d2.(
+			s4)
 		} \\ {
 			d2( c4
-			b)
+			<b d>)
 		}>> r r
 		R2.
 % mesures 101 à 105
 		g'4(\p d4.\< gis8)\!
 		a8.(\> b16 c4.\! cis8)
 		d2.
-		g,8 r b,4-. -\tweak X-offset #-2. \ffz r
+		g,8 r b,4-.\ffz r
 		R2.
 % mesures 106 à 110
 		g'4^\pizz\pp r r
@@ -170,14 +170,14 @@ musicViolaMvtI = \relative c {
 % mesures 126 à 130
 	b2.(\>
 	ais)\!
-	e2.(_\crescmarkup
+	e2.(^\crescmarkup
 	fis2 g4)
 	fis2.~
 % mesures 131 à 135
 	fis4( g a)
 	gis2.~
 	gis4( a b)
-	<ais cis>2.:32\f
+	\startMeasureCount <ais cis>2.:32\f
 	q:
 % mesures 136 à 140
 	q:
@@ -189,7 +189,7 @@ musicViolaMvtI = \relative c {
 	q:
 	q:
 	q:
-	q:
+	q: \stopMeasureCount 
 	q2: <cis e>4:
 % mesures 146 à 150
 	q2.:16\ff\>
@@ -201,10 +201,10 @@ musicViolaMvtI = \relative c {
 	a-. r r
 	fis-. r r
 	gis-. r r
-	<d' f>2.:16\ff\>
-	<d f>:\!
+	<d' f>2.:16\ff-\alterBroken shorten-pair #'((-0.3 . 0)(0 . 5.5)) \>
+	<d f>:
 % mesures 156 à 160
-	<f, d'>:\>
+	\hairpinShorten #'(-0.7 . 0) <f, d'>:\>
 	q:\!
 	a4-.\p r r
 	bes-. r r
@@ -231,7 +231,7 @@ musicViolaMvtI = \relative c {
 	e'16 dis e fis g dis e fis g e fis g
 	a eis fis g a fis g a b g a b
 	cis,!\< d e fis g fis g fis g fis g fis\!
-	g\> fis g fis g fis g fis ais\! fis ais fis 
+	g\> fis g fis g fis g fis\! ais fis ais fis 
 	b ais, b cis d ais b cis d b cis d
 % mesures 181 à 185
 	e bis cis d e cis d e fis d e fis
@@ -267,10 +267,10 @@ musicViolaMvtI = \relative c {
 	fis,4\ff \grace {d'32( e fis g)} a4-. \grace {a32( b cis)} d4-.
 	a,\fz \grace {a32( b cis d)} e4-. \grace {e32( fis gis)} a4-.
 	d, r r8. d32(\p e
-	fis4) r r8. \times 2/3 {cis32( dis eis}
-	fis4) r r8. \times 2/3 {cis32( dis eis}
+	fis4) r r8. \tuplet 3/2 {cis32( dis eis}
+	fis4) r r8. \tuplet 3/2 {cis32( dis eis}
 % mesures 211 à 215
-	fis4)_\decresc r\! r8. \times 2/3 {cis32( dis\! eis}
+	fis4)_\decresc r\! r8. \tuplet 3/2 {cis32( dis\! eis}
 	fis4) r r
 	R2.
 	fis,4\pp^\pizz r r
@@ -338,7 +338,7 @@ musicViolaMvtI = \relative c {
 	d4 g, a8 b)
 	c4( g4. b8
 	ais4 fis gis8 ais)
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	g!2.:32\ff\>
 	g4\! r r
@@ -347,7 +347,7 @@ musicViolaMvtI = \relative c {
 	d4:32\fz\> d,: g:\!
 % mesures 286 à 290
 	b: d: g:
-	b4_\crescmarkup b,\fz b\fz
+	b4-\offset X-offset -3 _\crescmarkup b,\fz b\fz
 	b\fz b\fz b\fz 
 	<d f>\fz r r
 	R2.
@@ -412,14 +412,14 @@ musicViolaMvtI = \relative c {
 	\mmrPos #-2 R
 	\mmrPos #-2 R \resetMMRN
 % mesures 341 à 345
-	cis2.->^\arco(
+	\stemUp cis2.->^\arco(
 	b4) r r
 	cis2.(->
 	b4)_\crescmarkup r cis(->~
 	cis b) cis(->
 % mesures 346 à 350
 	b)(\< cis b
-	cis b cis)\!
+	cis b cis)\! \stemNeutral
 	b16\f b b b d d d d fis fis fis fis
 	b_\crescmarkup b b b d d d d fis fis fis fis
 	fis2.:16\ff
@@ -439,7 +439,7 @@ musicViolaMvtI = \relative c {
 	R2.*3
 	
 	
-	<fis, d' b'>4 -\tweak X-offset #-3.3 \ff r r
+	<fis, d' b'>4\ff r r
 	<fis cis' ais'> r r
 % mesures 366 à 368
 	<b fis' b> r r
