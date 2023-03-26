@@ -74,7 +74,7 @@ musicViolinoIMvtI = \relative c {
 		a4(-\offset X-offset -0.6 _\decrescmarkup e4.\! gis8)
 % mesures 61 à 65
 		a4( d, e8 fis)
-		R2. \mark \default
+		R2._\gp \mark \default
 		\hairpinShorten #'(-0.5 . 0) c,2.:32-\offset X-offset 0.5 \ffz\>
 		c4\! r r
 		d2.:32\fz\>
@@ -338,7 +338,7 @@ musicViolinoIMvtI = \relative c {
 	d4 g, a8 b)
 	c4( g4. b8
 	ais4 fis gis8 ais)
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	e2.:32\ff\>
 	e4\! r r

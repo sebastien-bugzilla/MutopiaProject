@@ -70,7 +70,7 @@ musicViolinoIIMvtI = \relative c {
 		a4(_\decresc e4.\! gis8)
 % mesures 61 à 65
 		a4( d, e8 fis)
-		R2. \mark \default
+		R2._\gp \mark \default
 		g,2.:32-\offset X-offset -1 \ffz\>
 		g4\! r r
 		bes2.:32\fz\>
@@ -330,10 +330,10 @@ musicViolinoIIMvtI = \relative c {
 	e4( a, b8 cis)
 % mesures 276 à 280
 	d!4 r r
-	R2.*4
+	R2.*3
 	
 	
-	\mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	b2.:32\ff\>
 	b4\! r r
