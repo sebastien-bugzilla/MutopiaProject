@@ -15,38 +15,38 @@ musicViolinoIIMvtI = \relative c {
 		
 		
 		
-		d'16 -\tweak X-offset #-3 \pp d cis cis d d b b cis cis d d
-		e e dis dis e e cis cis d d e e 
+		d'16\pp d cis cis d d b b cis cis d d
+		e8:16 dis: e: cis: d: e: 
 % mesures 11 à 15
-		d d cis cis d d b b  cis cis d d
-		e e dis dis e e cis cis d d e e
-		d d cis cis d d b b cis cis d d
-		e e dis dis e e e e d d e e
-		d d cis cis d d b b cis cis d d
+		d: cis: d: b: cis: d:
+		e: dis: e: cis: d: e:
+		d: cis: d: b: cis: d:
+		e: dis: e4: d8: e:
+		d: cis: d: b: cis: d:
 % mesures 16 à 20
-		e e dis dis e e e e d d e e 
-		fis fis eis eis fis fis d d e e fis fis
-		g\< g ais ais b b\! ais\> ais b b e, e\!
-		g g fis fis g g e e fis fis g g
-		fis fis d d cis\fz cis e e e\> e cis cis
+		e: dis: e4: d8: e:
+		fis: eis: fis: d: e: fis:
+		g:\< ais: b:\! ais:\> b: e,:\!
+		g: fis: g: e: fis: g:
+		fis: d: cis:\fz e: e:\> cis:
 % mesures 21 à 25
-		cis cis e e\! e e cis cis cis cis e e
-		d\pp d cis cis d d b b cis cis d d 
-		e e dis dis e e e e d d e e
-		d d cis cis d d b b cis cis d d
-		e e dis dis e e e e d d e e
+		cis: e:\! e: cis: cis: e:
+		d:\pp cis: d: b: cis: d:
+		e: dis: e4: d8: e:
+		d: cis: d: b: cis: d:
+		e: dis: e4: d8: e:
 % mesures 26 à 30
-		fis fis d d g g d d g g a a 
-		a a d, d g_\crescmarkup g d d g g <gis b> q
-		q q e e a a e e <ais cis>\fz q q q
-		q8\fz\noBeam e16 e cis\fp\> cis e e e e cis cis
-		cis cis e e\! e e cis cis cis cis e e
+		fis: d: g: d: g: a:
+		a: d,: g:_\crescmarkup d: g: <gis b>: 
+		q: e: a: e: \once \stemUp <ais cis>4:\fz
+		\once \stemUp q8\fz\noBeam e16 e cis8:16\fp\> e: e: cis:
+		cis: e:\! e: cis: cis: e:
 % mesures 31 à 35
-		fis fis d d g g d d g g a a
-		a a d, d g g d_\crescmarkup d g g <gis b> q
-		q q e e a a e e a a ais ais
-		ais\f ais fis fis b b fis fis b b ais ais
-		ais ais fis fis b b fis fis b b <e fis>8\ff\noBeam
+		fis: d: g: d: g: a:
+		a: d,: g: d:_\crescmarkup g: <gis b>:
+		q: e: a: e: a: ais:
+		ais:\f fis: b: fis: b: ais:
+		ais: fis: b: fis: b: <e fis>8\ff\noBeam
 % mesures 36 à 40
 		q4 r8 q q4
 		r8 q q4 q8 q \mark \default
@@ -65,13 +65,13 @@ musicViolinoIIMvtI = \relative c {
 % mesures 56 à 60
 		g4( d2)
 		g4( d4. g8)
-		gis8.( a16 b4. a8)
+		gis8.( a16 \once \stemUp b4. a8)
 		gis8.( a16 b8[ e, fis gis])
 		a4(_\decresc e4.\! gis8)
 % mesures 61 à 65
 		a4( d, e8 fis)
 		R2. \mark \default
-		g,2.:32\ffz\>
+		g,2.:32-\offset X-offset -1 \ffz\>
 		g4\! r r
 		bes2.:32\fz\>
 % mesures 66 à 70
@@ -82,7 +82,7 @@ musicViolinoIIMvtI = \relative c {
 		fis!: g: a:
 % mesures 71 à 75
 		<cis,! bes'>\fz r r
-		R2.*2
+		\mmrnDown R2.*2
 		
 		f,8.(\p g16 a8[ d, e f)]
 		g4 r r 
@@ -120,7 +120,7 @@ musicViolinoIIMvtI = \relative c {
 		r8 b4\< b( gis8)\!
 		a8.(\> b16 c8)\! c4(-. cis8-.)
 		d2.
-		g,8 r <b b'>4-.-\tweak X-offset #-2. \ffz r
+		g,8 r <b b'>4-.\ffz r
 		R2.
 % mesures 106 à 110
 		g4\pp^\pizz r r
@@ -157,8 +157,8 @@ musicViolinoIIMvtI = \relative c {
 % mesures 126 à 130
 	e(
 	fis2\< g4)\!
-	b2.(\>
-	ais\!)_\crescmarkup
+	\once \stemUp b2.(\>
+	ais)_\crescDP
 	c(
 % mesures 131 à 135
 	b)
@@ -200,7 +200,7 @@ musicViolinoIIMvtI = \relative c {
 	a-. r r
 	<g e'>2.:16\ff\>
 	<g e'>\!:
-	<g, e'>:\>
+	<g, e'>:-\tweak extra-offset #'(0 . 0.3) -\tweak rotation #'(1 -1 0) \>
 	<g e'>:\!
 % mesures 166 à 170
 	<g e'>4-.\p r r
@@ -236,7 +236,7 @@ musicViolinoIIMvtI = \relative c {
 	ais4-. e-. fis-.
 	g-. e2\fz
 	g2\f~ g8 a32( b c d)
-	e2.:32\ff\>
+	\startMeasureCount e2.:32\ff\>
 	e:\!
 % mesures 196 à 200
 	e:\fz\>
@@ -245,14 +245,14 @@ musicViolinoIIMvtI = \relative c {
 	e:
 	e:_\crescmarkup
 % mesures 201 à 205
-	e:
-	<a, a'>4\ff \grace {d,32( e fis g)} a4-. \grace {a32( b cis)} d4-.
+	e: \stopMeasureCount
+	<a, a'>4-\tweak extra-offset #'(0.5 . 0.9) \ff \grace {d,32( e fis g)} a4-. \grace {a32( b cis)} d4-.
 	a,\fz \grace {a32( b cis d)} e4-. \grace {e32( fis gis)} a4-.
 	d,4 r r8. d32(\p e
 	fis4) r r
 % mesures 206 à 210
 	<a a'>4\ff \grace {d,32( e fis g)} a4-. \grace {a32( b cis)} d4-.
-	a,\fz \grace {a'32( b cis d)} e4-. \grace {e32( fis gis)} a4-.
+	a,-\tweak extra-offset #'(-0.5 . 0.3) \fz \grace {a'32( b cis d)} e4-. \grace {e32( fis gis)} a4-.
 	<d,, d'>4 r r8. d32(\p e
 	fis4) r r8. \times 2/3 {cis32( dis eis}
 	fis4) r r8. \times 2/3 {cis32( dis eis}
@@ -266,43 +266,43 @@ musicViolinoIIMvtI = \relative c {
 	fis r r
 	R2. \mark \default
 	d16\pp^\arco d cis cis d d b b cis cis d d
-	e e dis dis e e cis cis d d e e
-	d d cis cis d d b b cis cis d d
+	e8:16 dis: e: cis: d: e:
+	d: cis: d: b: cis: d:
 % mesures 221 à 225
-	e e dis dis e e cis cis d d e e
-	d d cis cis d d b b cis cis d d 
-	e e dis dis e e e e d d e e
-	d d cis cis d d b b cis cis d d
-	e e dis dis e e e e d d e e 
+	e: dis: e: cis: d: e:
+	d: cis: d: b: cis: d:
+	e: dis: e4: d8: e:
+	d: cis: d: b: cis: d:
+	e: dis: e4: d8: e: 
 % mesures 226 à 230
-	fis fis eis eis fis fis d d e e fis fis
-	g\< g ais ais b b\! ais\> ais b b e, e\!
-	e e fis fis g g fis fis g g a a
-	e\p e a a a a e e e e a a
-	e e e e e e e e dis dis dis dis 
+	fis: eis: fis: d: e: fis:
+	g\<: ais: b:\! ais:\> b: e,:\!
+	e: fis: g: fis: g: a:
+	e:\p a: a: e: e: a:
+	e2: dis4:
 % mesures 231 à 235
-	b b ais ais b b g g a a b b 
-	b b b b  b b fis' fis e e dis dis
-	e e ais, ais b b g g a a b b
-	b b b b b b fis' fis e e ees ees
-	d d cis! cis d d b b c c d d 
+	b8: ais: b: g: a: b:
+	b4:  b8: fis': e: dis:
+	e: ais,: b: g: a: b:
+	b4: b8: fis': e: ees:
+	d: cis!: d: b: c: d:
 % mesures 236 à 240
-	e\< e fis fis g  g\! fis\> fis g g e e\!
-	d d d d d d d d ees ees d d
-	f f a a a a f f f f a a 
-	d, d f f e e b b b b e e
-	cis'! cis a a d d a a d d e e
+	e\<: fis: g:\! fis:\> g: e:\!
+	d2: ees8: d:
+	f: a: a: f: f: a: 
+	d,: f: e: b: b: e:
+	cis'!: a: d: a: d: e:
 % mesures 241 à 245
-	e e a, a d d a a d_\crescmarkup d <dis fis> q
-	q q b b e e b b <b gis'>\f q q q
-	q8\fz\noBeam\> b16 b gis gis\! b\p b b b b b
-	gis gis b b b b gis gis gis gis b b
-	cis cis a a d d a a d d e e 
+	e: a,: d: a: d:_\crescmarkup <dis fis>:
+	q: b: e: b: <b gis'>4:\f
+	q8\fz\noBeam\> b16 b gis gis\! b\p b \once \stemUp b4:16
+	gis8: b: b: gis: gis: b:
+	cis: a: d: a: d: e:
 % mesures 246 à 250
-	e e a, a d d a a d d <dis fis> q
-	q q b b e e b b e_\crescmarkup e <gis, eis'> q
-	q q cis cis <a fis'> q cis cis fis fis <gis, eis'> q
-	q q cis cis <a fis'> q cis cis <a fis'>8-. <gis eis'>-.\ff
+	e: a,: d: a: d: <dis fis>:
+	q: b: e: b: e:_\crescmarkup <gis, eis'>:
+	q: cis: <a fis'>: cis: fis: <gis, eis'>:
+	q: cis: <a fis'>: cis: <a fis'>8-.[ <gis eis'>-.]\ff
 	q4-. r8 q-. q4-.
 % mesures 251 à 255
 	r8 q-. q4-. q8-. q-. \mark \default
@@ -320,7 +320,7 @@ musicViolinoIIMvtI = \relative c {
 	\mmrPos #-2 R \resetMMRN
 	d,4(\pp a4. d8)
 	cis8.( d16 e4. d8)
-	cis8.( d16 e8[ a, b cis])
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur cis8.( d16 e8[ a, b cis])
 	d4( a2)
 % mesures 271 à 275
 	d4( a4. d8)
@@ -349,7 +349,7 @@ musicViolinoIIMvtI = \relative c {
 % mesures 291 à 295
 	
 	a8.(\p b16 cis8[ fis, gis a]
-	b4) r r
+	\once \stemUp b4) r r
 	gis8.( a16 b8[ e, fis gis])
 	gis4\f r r
 % mesures 296 à 300
@@ -392,7 +392,7 @@ musicViolinoIIMvtI = \relative c {
 	d r r
 	cis r r
 	b r r
-	R2.*7
+	\mmrCondens R2.*7
 	
 % mesures 331 à 335
 	
@@ -430,7 +430,7 @@ musicViolinoIIMvtI = \relative c {
 	R2.*3
 	
 	
-	<d, b' fis'>4 -\tweak X-offset #-3.3 \ff r r
+	<d, b' fis'>4\ff r r
 	<fis e'> r r
 % mesures 366 à 368
 	<b, fis' d'> r r

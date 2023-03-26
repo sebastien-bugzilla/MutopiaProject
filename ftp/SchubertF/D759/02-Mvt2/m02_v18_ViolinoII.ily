@@ -92,8 +92,8 @@ musicViolinoIIMvtII = \relative c'' {
 	dis) dis8-> dis dis16(
 	e) e8 e\< eis16(
 % mesures 71 à 75
-	fis) fis8 fis fis16(
-	a)\f\> a8 a a16~
+	fis) fis8 fis fis16(\!
+	a)\f\> a8 a a16~\!
 	a\p a8 fis16( f) f~
 	f\pp f8 f f16(
 	e) e8 e e16(
@@ -113,8 +113,8 @@ musicViolinoIIMvtII = \relative c'' {
 	ges) ges8 ges ges16~
 	ges ges8-> ges ges16(
 	f) f8 f\< f16(
-	ges) ges8 ges ges16
-	f\f\> aes8 aes aes16~
+	ges) ges8 ges ges16\!
+	f\f\> aes8 aes aes16~\!
 % mesures 91 à 95
 	aes\p aes8 aes aes16~
 	aes\pp aes8 aes aes16~
@@ -122,16 +122,16 @@ musicViolinoIIMvtII = \relative c'' {
 	aes\ppp aes8 aes aes16~
 	aes aes8 aes aes16 \mark \default
 % mesures 96 à 100
-	gis!8\ff-. cis,-. gis'~
+	gis!8-\offset X-offset -0.5 \ff-. cis,-. gis'~
 	gis cis,-. cis'~
 	cis fis,-. a~
 	a gis-. dis'~
 	dis16 cis-. e8-. eis~
 % mesures 101 à 105
 	eis16 gis-. fis8-. fisis-.
-	gis-. <e, cis'>-. <fis bis>-.
+	gis-.\noBeam <e, cis'>-. <fis bis>-.
 	<e cis'>32[ gis cis b!] a[ gis fis e] gis[ fis e dis]
-	cis[ gis' e' dis] cis[ b a gis] a[ gis fis e]
+	\beamOffset #'(1 . -0.5) cis[ gis' e' dis] cis[ b a gis] a[ gis fis e]
 	fis[ gis a gis] fis[ a dis cis] bis[ a! gis fis]
 % mesures 106 à 110
 	e[ dis cis dis] bis[ dis gis a] gis[ fis e dis]
@@ -140,27 +140,16 @@ musicViolinoIIMvtII = \relative c'' {
 	a16\noBeam\fz <cis' e>8 q q16
 	<a g'>16 q8 q q16 \mark \default
 % mesures 111 à 118
-	<a fis'>16\noBeam <<{
-		<fis a>8\p q q16~
-		q q8 q q16~
-		q q8 q q16~
-		q q8 q q16(
-		<g a>) q8 q q16(
-		a16) a8 a a16(
-		<fis a>16) q8 q q16(
-		fis) fis8 fis16( g fis)
-	} \\ {
-		s8 s s16
-		s4.
-		s
-		s
-		s
-		e16 e8 e16 fis g
-		s4.
-		s
-	}>> 
-% mesures 119 à 120
-	g16\< g8 g( a16)
+	<a fis'>16\noBeam <fis a>8\p q q16~
+	q q8 q q16~
+	q q8 q q16~
+	q q8 q <fis a^~>16(
+	<g a>) q8 q <g a^~>16(
+% mesures 116 à 120
+	<< { \voiceOne a16) a8 a a16( } \new Voice {\voiceTwo e16 e8 e16 fis g} >> \oneVoice
+	<fis a>16) q8 q q16(
+	fis) fis8 fis16( g fis)
+	g16\< g8 g( a16)\!
 	b8\>( g fis)\!
 % mesures 121 à 125
 	g16 d'8 d d16~
@@ -189,7 +178,7 @@ musicViolinoIIMvtII = \relative c'' {
 % mesures 141 à 145
 	ais(
 	b8) r r
-	R4.
+	\mmrnDown R4.
 	b'4.(\pp
 	cis
 % mesures 146 à 150
@@ -241,7 +230,7 @@ musicViolinoIIMvtII = \relative c'' {
 	a eis fis
 	cis' cis, b 
 % mesures 186 à 190
-	a\p r r
+	a-\tweak extra-offset #'(0 . 0.4) \p r r
 	R4.*4
 	
 	
@@ -272,7 +261,7 @@ musicViolinoIIMvtII = \relative c'' {
 	b) b8-> b b16(
 % mesures 211 à 215
 	c) c8 c\< cis16(
-	d) d8 d d16(
+	d) d8 d d16(\!
 	f)\f\> f8 f f16~\!
 	f f8\p d16( des) des~
 	des des8\pp des des16(
@@ -293,7 +282,7 @@ musicViolinoIIMvtII = \relative c'' {
 	d) d8 d d16~
 	d d8-> d d16(
 	cis)\< cis8 cis cis16(
-	d) d8 d d16(
+	d) d8 d d16(\!
 % mesures 231 à 235
 	cis)\f\> e8 e e16\!~
 	e e8\p e e16~
@@ -311,18 +300,18 @@ musicViolinoIIMvtII = \relative c'' {
 	d8 f4
 	e8-. <g, e'>-. <fis! dis'!>-.
 	<g e'>32[ b e d] c[ b a g] b[ a g fis]
-	e^[ b' g' fis] e[ d c b] c[ b a g]
+	e[ b' g' fis] e[ d c b] c[ b a g]
 % mesures 246 à 250
 	a[ b c b] a[ c fis e] dis![ c b a]
 	g[ fis e fis] dis![ fis b c] b[ a g fis]
 	e[ fis g e] d[ g b c] d[ f e d]
 	c[ b a gis!] e'[ d c b] c[ bes g e]
-	c16\noBeam -\tweak X-offset #-4.2 \ff <g' e'>8 q q16~
+	c16\noBeam\ff <g' e'>8 q q16~
 % mesures 251 à 255
 	q q8 q q16
 	<a f'>8 r r
 	R4.
-	<b a'>16 -\tweak X-offset #-3.8 \ff q8 q q16~
+	<b a'>16\ff q8 q q16~
 	q q8 q <a fis'>16 \mark \default
 % mesures 256 à 260
 	<gis e'>8 r r
@@ -332,12 +321,12 @@ musicViolinoIIMvtII = \relative c'' {
 	<a! b>\!)(
 % mesures 261 à 265
 	<gis b>8) r r
-	b,16(_\crescmarkup dis fis a gis fis
+	b,16(-\offset X-offset -4 _\crescmarkup dis fis a gis fis
 	e8) r r
-	b16(\< dis fis a\> gis fis)
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur b16(\< dis fis\! a\> gis fis)\!
 	a(\pp gis fis a gis fis
 % mesures 266 à 270
-	cis'\< b a gis fis a
+	cis'\< b a gis fis a\!
 	cis4\> b8)\!
 	e,8\pp r r
 	R4.*17
@@ -351,7 +340,7 @@ musicViolinoIIMvtII = \relative c'' {
 	\omitMMRN \mmrPos #-2 R4.
 	\mmrPos #-2 R
 	\mmrPos #-2 R \resetMMRN
-	ees16(\pp g bes des c bes
+	\beamOffset #'(-0.5 . -0.5) ees16(\pp g bes des c bes
 	aes8) r r
 % mesures 291 à 295
 	R4.*8
@@ -375,5 +364,5 @@ musicViolinoIIMvtII = \relative c'' {
 	gis r r
 % mesures 311 à 312
 	gis r r
-	<gis e'>4. -\tweak X-offset #-5.5 ^\arco\fermata\espressivo \bar "|."
+	<gis e'>4.-\offset X-offset -1.4 ^\arco\fermata\espressivo \bar "|."
 }

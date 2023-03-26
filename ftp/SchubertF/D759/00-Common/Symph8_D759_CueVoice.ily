@@ -740,29 +740,29 @@ cueVoiceViolinoIIMvtI = \relative c {
 	a4( d, e8 fis) \cueClefUnset
 	s2.*213
 	% bar 265 - 266
-	\cueClef bass e'4(^\markup {Vc.} b4. dis8)
-	e4( a, b8 cis) \cueClefUnset
+	\cueClef bass e'4(-\offset X-offset -2.5 ^\markup {Vc.} b4. dis8)
+	\shape #'((0 . -0.5)(0 . -0.8)(0 . -0.8)(0 . 0)) Slur e4( a, b8 cis) \cueClefUnset
 	s2.*69
 	% bar 336 - 337
-	\cueClef bass b2.(^\markup {Basse}
+	\cueClef bass b2.(-\offset X-offset -4.5 ^\markup {Basse}
 	cis2 d4) \cueClefUnset
 }
 cueVoiceViolinoIIMvtII = \relative c {
 	s4.*59 \voiceOne
 	% bar 60 - 63
-	gis''4.(~^\markup {Viol.I}
+	\shape #'((0 . -1)(0 . -0.5)(0 . -0.5)(0 . -1)) Slur gis''4.(~-\offset X-offset -3 ^\markup {Viol.I}
 	gis
 	gis'
 	e)
 	s4.*137
 	% bar 201 - 204
-	e,4.(~^\markup {Viol.I} 
+	\shape #'((0 . -1)(0 . -0.5)(0 . -0.5)(0 . -1)) Slur e,4.(~^\markup {Viol.I} 
 	e
 	e'
 	c)
 	s4.*81
 	% bar 286 - 288
-	ees4.(^\markup {Klar.I}
+	ees4.(-\offset X-offset -4 ^\markup {Klar.I}
 	f
 	ees8 c aes)
 }

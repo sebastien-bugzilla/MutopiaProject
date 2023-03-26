@@ -184,6 +184,15 @@ mmrLength = #(define-music-function
 	#}
 )
 
+mmrCondens = {
+	\once \override MultiMeasureRest.springs-and-rods = 
+		#ly:spanner::set-spacing-rods
+}
+
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -268,10 +277,6 @@ mmrLength = #(define-music-function
 %}
 
 
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
-
 %mmrMinLength = #(define-music-function
 %	(length)
 %	(number?)
@@ -279,8 +284,6 @@ mmrLength = #(define-music-function
 %		\once \override MultiMeasureRest.minimum-length = #length
 %	#}
 %)
-
-%mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 %omitMMRN = \omit MultiMeasureRestNumber
 

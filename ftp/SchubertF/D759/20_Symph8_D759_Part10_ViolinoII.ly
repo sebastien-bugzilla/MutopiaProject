@@ -6,7 +6,7 @@
 %  work               : Symphony No. 8 in B Minor, D.759
 %  Source             : Franz Schubert's Werke, Serie I: Symphonien, No.8
 %                       Leipzig Breitkopf & Härtel, 1885. Plate F.S. 8. 
-%  Type of score      : Score for Violino I
+%  Type of score      : Score for Violino II
 %  Typesetter         : Sébastien MANEN
 %  date of initiation : Sunday 12 February 2023, 19:55
 %
@@ -20,7 +20,7 @@
 \include "./00-Common/Symph8_D759_LayoutParts.ily"
 \include "./00-Common/Symph8_D759_Shortcuts.ily"
 \include "./00-Common/Symph8_D759_NameVoice.ily"
-%\include "./00-Common/Symph8_D759_Format_Part01_Flauti.ily"
+\include "./00-Common/Symph8_D759_Format_Part10_ViolinoII.ily"
 \include "./00-Common/Symph8_D759_CueVoice.ily"
 \include "./00-Common/Symph8_D759_Tempi.ily"
 \include "./01-Mvt1/m01_v18_ViolinoII.ily"
@@ -43,11 +43,23 @@
 			"Violino II"
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #24 
+		\abs-fontsize #20
+		\fill-line {
+			\center-column {
+				\line { "The first movement is formatted" }
+				\line { "to be displayed on three pages." }
+				\line { "Please attach page 3 next to page 4." }
+			}
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtI
-%			}
+			\new Voice {
+				\formatViolinoIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(violinoII) \tempiPartMvtI
 			}
@@ -73,9 +85,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\fluteIFormattingMvtII
-%			}
+			\new Voice {
+				\formatViolinoIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(violinoII) \tempiPartMvtII
 			}
@@ -87,7 +99,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
