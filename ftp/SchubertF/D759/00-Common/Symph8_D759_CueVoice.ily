@@ -838,15 +838,15 @@ cueVoiceBassoMvtI = \relative c {
 cueVoiceBassoMvtII = \relative c {
 	s4.*93 \voiceOne
 	% bar 94 - 95
-	\cueClef treble bes'''16.(->^\markup {Ob.I} aes32 bes16 aes f des)
+	\cueClef treble bes'''16.(->-\offset X-offset -4 ^\markup {Ob.I} aes32 bes16 aes f des)
 	aes'16.->( ges32 aes16 ges ees c) \cueClefUnset
 	s4.*139
 	% bar 235 - 236
-	\cueClef treble fis16.(->^\markup {Fl.I} e32 fis16 e cis a
+	\cueClef treble fis16.(->-\offset X-offset -3.5 ^\markup {Fl.I} e32 fis16 e cis a
 	e'16.-> d32 e16 d b gis) \cueClefUnset
 	s4.*59
 	% bar 296 - 298
-	\cueClef treble b'4.(^\markup {Fl.I}
+	\cueClef treble b'4.(-\offset X-offset -3.5 ^\markup {Fl.I}
 	cis
 	b8 gis e) \cueClefUnset
 }

@@ -10,7 +10,7 @@ musicBassoMvtI = \relative c {
 % mesures 1 à 5
 	b2.(
 	\repeat volta 2 {
-		cis2 d4)
+		cis2 \once \stemUp d4)
 		b2.(
 		a4 fis g)
 		d2( cis4
@@ -18,7 +18,7 @@ musicBassoMvtI = \relative c {
 		fis2.)~
 		fis~
 		fis
-		b4^\pizz -\tweak X-offset #-3 \pp r8 b[ b b]
+		b4^\pizz\pp r8 b[ b b]
 		b4 r8 b[ b g]
 % mesures 11 à 15
 		b4 r8 b[ b b]
@@ -82,14 +82,14 @@ musicBassoMvtI = \relative c {
 		a_\decresc r\! r
 % mesures 61 à 65
 		d, r r
-		R2. \mark \default
+		R2._\gp \mark \default
 		c2.:32\ffz\>
 		c4\! r r
 		d2.:32\fz\>
 % mesures 66 à 70
 		d4\! r r
-		ees2.:32\fz\>
-		ees4-.\! ees-. ees-.
+		ees2.:32\fz-\alterBroken shorten-pair #'((-0.3 . 0)(0 . 3)) \>
+		ees4-. ees-.\! ees-.
 		ees-._\crescmarkup ees-. ees-.
 		ees-. ees-. ees-.
 % mesures 71 à 75
@@ -132,7 +132,7 @@ musicBassoMvtI = \relative c {
 		d r r
 		d r r
 		d r r
-		g8 r b,4-.-\tweak X-offset #-2. \ffz r
+		g8 r b,4-.\ffz r
 		R2.
 % mesures 106 à 110
 		g'4^\pizz\pp r r
@@ -162,21 +162,21 @@ musicBassoMvtI = \relative c {
 	e
 % mesures 121 à 125
 	d)
-	c2.:16
+	\startMeasureCount c2.:16
 	c:
 	c:
 	c:
 % mesures 126 à 130
 	c:
 	c:
-	c:_\crescmarkup
+	c:_\crescmarkup \stopMeasureCount
 	cis!:
 	d:
 % mesures 131 à 135
 	dis:
 	e:
 	eis:
-	fis:\f
+	\startMeasureCount fis:\f
 	fis:
 % mesures 136 à 140
 	fis:
@@ -185,7 +185,7 @@ musicBassoMvtI = \relative c {
 	fis:_\crescmarkup
 	fis:
 % mesures 141 à 145
-	fis:
+	fis: \stopMeasureCount 
 	fis':
 	fis:
 	fis:
@@ -243,7 +243,7 @@ musicBassoMvtI = \relative c {
 	gis
 	b\fz
 	a4-. fis-. g!-.
-	d2.\fz
+	\dynEO #'(0.2 . 1.1) \once \stemUp d2.\fz
 % mesures 191 à 195
 	cis
 	e'\fz
@@ -253,7 +253,7 @@ musicBassoMvtI = \relative c {
 % mesures 196 à 200
 	g\fz\>~
 	g\!
-	g\pp~ 
+	g-\offset X-offset -1.5 \pp~ 
 	g~
 	g~_\crescmarkup
 % mesures 201 à 205
@@ -351,7 +351,7 @@ musicBassoMvtI = \relative c {
 	g, r r
 	g r e'
 	fis r r
-	R2. \mark \default
+	R2._\gp \mark \default
 % mesures 281 à 285
 	e2.:16\ff\>^\arco
 	e4\! r r
@@ -360,7 +360,7 @@ musicBassoMvtI = \relative c {
 	g2.:16\fz\> 
 % mesures 286 à 290
 	g4\! g,\fz g\fz
-	g\fz_\crescmarkup g\fz g\fz
+	g\fz^\crescmarkup g\fz g\fz
 	g'\fz g\fz g\fz 
 	gis\fz r r
 	R2.*5
@@ -410,7 +410,7 @@ musicBassoMvtI = \relative c {
 	d r r
 	cis r r
 	b2.(\pp^\arco
-	cis2 d4)
+	cis2 \once \stemUp d4)
 	b2.(
 % mesures 331 à 335
 	a4 fis g)
@@ -431,8 +431,8 @@ musicBassoMvtI = \relative c {
 	d2(->_\crescmarkup cis4)
 	d2(-> cis4)
 % mesures 346 à 350
-	d(\< cis d
-	cis d cis)\!
+	\stemUp d(\< cis d
+	cis d cis)\! \stemNeutral
 	d\f d'8[ d b b]
 	fis_\crescmarkup fis d d b b
 	fis8\ff fis fis fis fis fis
@@ -449,10 +449,10 @@ musicBassoMvtI = \relative c {
 	b\!
 	b,2.\pp\<(
 % mesures 361 à 365
-	cis2 d4)\!
+	cis2 \once \stemUp d4)\!
 	b2.(\>
-	cis2 d4)\!
-	d -\tweak X-offset #-3.3 \ff r r
+	cis2 \once \stemUp d4)\!
+	d\ff r r
 	fis r r
 % mesures 366 à 368
 	b r r

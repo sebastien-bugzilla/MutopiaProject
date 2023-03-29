@@ -32,7 +32,7 @@ musicBassoMvtII = \relative c {
 	e d c)
 	b( g e'
 % mesures 21 à 25
-	d4.\>)(
+	\once \stemUp d4.\>)(
 	g,8\!) r r 
 	R4. 
 	g8 g'( fis
@@ -129,19 +129,19 @@ musicBassoMvtII = \relative c {
 	g4 fis16 e)
 	fis4.(
 	c'4 b16 ais)
-	b8(\< g e)
+	b8(\< g e)\!
 	d4.\>
 % mesures 121 à 125
 	g\!(
 	b4 a16 g)
 	a4.(
 	c4 b16 a)
-	b4.(
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur b4.(
 % mesures 126 à 130
 	f'4 e16 dis!)
-	e8(\< c a)
+	e8(\< c a)\!
 	g4.(\>
-	c,16)\! c8\p c c16~
+	\startMeasureCount c,16)\! c8\p c c16~
 	c c8 c c16~
 % mesures 131 à 135
 	c c8 c c16~
@@ -151,7 +151,7 @@ musicBassoMvtII = \relative c {
 	c c8 c c16~
 % mesures 136 à 140
 	c_\decresc c8\! c c16~
-	c c8 c c16~
+	c c8 c c16~ \stopMeasureCount 
 	c4.~
 	c(
 	cis!)~
@@ -196,7 +196,7 @@ musicBassoMvtII = \relative c {
 	b8) r r
 	e8\noBeam-. gis-.\ff a-. \mark \default
 	b-. cis-. a-.
-	gis_\stacc fis e
+	gis^\stacc fis e
 % mesures 176 à 180
 	dis b dis
 	e gis b
@@ -218,7 +218,7 @@ musicBassoMvtII = \relative c {
 % mesures 191 à 195
 	r a,-.\fp c-.
 	e r r
-	cis!( -\tweak X-offset #-3.5 ^\arco a fis'
+	cis!(^\arco a fis'
 	e) r r
 	cis(_\crescmarkup a fis'
 % mesures 196 à 200
@@ -263,12 +263,12 @@ musicBassoMvtII = \relative c {
 	c b-. fis'~
 	fis16 e g,8-. gis~
 	gis16 b a8-. c
-	c,32[ -\tweak X-offset #-3.8 \ff e g bes] c[ bes g e] c[ e g bes]
+	c,32[\ff e g bes] c[ bes g e] c[ e g bes]
 % mesures 251 à 255
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
 	R4.
-	b,!32[ -\tweak X-offset #-3.8 \ff dis! fis! a] b![ a fis dis] b[ dis fis a]
+	b,!32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r
@@ -277,15 +277,15 @@ musicBassoMvtII = \relative c {
 	r e,-.\fp g-.
 	b-. r r 
 % mesures 261 à 265
-	gis!8(\p -\tweak X-offset #-3. ^\arco e cis'
+	gis!8(\p^\arco e cis'
 	b8) r r
 	gis(_\crescmarkup e cis'
 	b8) r r
 	b\pp r b,
 % mesures 266 à 270
 	r b\< r\!
-	b16(\> dis fis a gis fis)\!
-	e8\pp r r
+	b16(-\tweak rotation #'(4 -1 0) \> dis fis a gis fis)\!
+	e8-\tweak extra-offset #'(1.2 . 1) \pp r r
 	R4.*3
 	
 % mesures 271 à 275
