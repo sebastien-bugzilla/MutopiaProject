@@ -66,7 +66,7 @@ musicVioloncelloMvtII = \relative c {
 	
 	
 	cis8\pp^\pizz-. dis-. e-.
-	r e,\fp-. g-.
+	r e,-\offset X-offset -2 \fp-. g-.
 % mesures 51 à 55
 	b r r
 	gis!(^\arco e cis'
@@ -74,7 +74,7 @@ musicVioloncelloMvtII = \relative c {
 	gis(_\crescmarkup e cis'
 	b8) r r
 % mesures 56 à 60
-	e' -\tweak X-offset #-5.5 ^\pizz\pp-. dis-. cis-. 
+	e'^\pizz\pp-. dis-. cis-. 
 	b-. a-. fis-. 
 	e-. r r 
 	R4.*11
@@ -109,8 +109,8 @@ musicVioloncelloMvtII = \relative c {
 	aes8) r r
 	ees'4(-> d!16 ees
 	aes,8) r des->\<~
-	des4 des'8->~
-	des16\f\> des8 des des16~
+	des4 des'8->~\!
+	des16\f\> des8 des des16~\!
 % mesures 91 à 95
 	des\p des8 des des16~
 	des\pp des8 des des16~
@@ -138,7 +138,7 @@ musicVioloncelloMvtII = \relative c {
 % mesures 111 à 115
 	d8 r r
 	R4.
-	d4.(\p
+	d4.(-\offset X-offset 0.5 \p
 	fis4 e16 d)
 	e4.(
 % mesures 116 à 120
@@ -233,13 +233,13 @@ musicVioloncelloMvtII = \relative c {
 	fis'8\pp^\pizz-. gis-. a-.
 % mesures 191 à 195
 	r a,-.\fp c-.
-	e16( -\tweak X-offset #-3.5 ^\arco gis b d cis b
+	e16(^\arco gis b d cis b
 	a8) a,( fis'
 	e) r r
 	cis(_\crescmarkup a fis'
 % mesures 196 à 200
 	e) r r \clef tenor
-	a' -\tweak X-offset #-5.5 ^\pizz\pp-. gis-. fis-.
+	a'^\pizz\pp-. gis-. fis-.
 	e-. d-. b-.
 	a-. r r
 	R4.*11
@@ -290,12 +290,12 @@ musicVioloncelloMvtII = \relative c {
 	g[ fis e fis] dis![ fis b c] b[ a g fis]
 	e[ fis g e] d[ g b c] d[ f e d]
 	c[ b a gis!] e'[ d c b] c[ bes g e]
-	c[ -\tweak X-offset #-3.8 \ff e g bes] c[ bes g e] c[ e g bes]
+	c[\ff e g bes] c[ bes g e] c[ e g bes]
 % mesures 251 à 255
 	c[ bes g e] c[ e g bes] c[ bes g c,]
 	f8 r r
 	R4.
-	b,32[ -\tweak X-offset #-3.8 \ff dis! fis! a] b![ a fis dis] b[ dis fis a]
+	b,32[\ff dis! fis! a] b![ a fis dis] b[ dis fis a]
 	b[ a fis dis] b[ dis fis a] b[ a fis b,] \mark \default
 % mesures 256 à 260
 	cis!8 r r \clef tenor
@@ -353,5 +353,5 @@ musicVioloncelloMvtII = \relative c {
 	e r r 
 % mesures 311 à 312
 	e r r
-	<e b'>4.^\arco\fermata\espressivo \bar "|."
+	<e b'>4.-\offset X-offset -1.4 ^\arco\fermata\espressivo \bar "|."
 }

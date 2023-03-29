@@ -817,15 +817,15 @@ cueVoiceVioloncelloMvtI = \relative c {
 cueVoiceVioloncelloMvtII = \relative c {
 	s4.*69 \voiceOne
 	% bar 70 - 71
-	\cueClef treble e''8(^\markup {Clar.I} g4->
+	\cueClef treble e''8(-\offset X-offset -4 ^\markup {Clar.I} g4->
 	fis8 a4->) \cueClefUnset
 	s4.*139
 	% bar 211 - 212
-	\cueClef treble c,8(^\markup {Oboe.I} e4->
+	\cueClef treble c,8(-\offset X-offset -4 ^\markup {Oboe.I} e4->
 	d8 f4->) \cueClefUnset
 	s4.*83
 	% bar 296 - 298
-	\cueClef treble b4.(^\markup {Fl.I}
+	\cueClef treble b4.(-\offset X-offset -3 ^\markup {Fl.I}
 	cis
 	b8 gis e) \cueClefUnset
 }
