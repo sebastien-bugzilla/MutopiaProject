@@ -20,7 +20,7 @@
 \include "./00-Common/BWV1046_LayoutConductors.ily"
 \include "./00-Common/BWV1046_Shortcuts.ily"
 \include "./00-Common/BWV1046_NameStaff.ily"
-%\include "./00-Common/BWV1046_Format_Cond_Mvt1.ily"
+\include "./00-Common/BWV1046_Format_Cond_Mvt1.ily"
 \include "./00-Common/BWV1046_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_CornoI.ily"
 \include "./01-Mvt1/m01_v02_music_CornoII.ily"
@@ -54,30 +54,28 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new GrandStaff <<
-					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtI
-%						}
-						\new Voice {
-							\timeMvtI \nameStaffIMvtI \musicCornoIMvtI
-						}
-					>>
-					\new Staff {
-							\timeMvtI \nameStaffIIMvtI \musicCornoIIMvtI
+				\new Staff <<
+					\new Voice {
+						\formatConductorMvtI
+					}
+					\new Voice {
+						\timeMvtI \nameStaffIMvtI \musicCornoIMvtI
 					}
 				>>
-				\new GrandStaff <<
-					\new Staff {
-						\timeMvtI \nameStaffIIIMvtI \musicOboeIMvtI
-					}
-					\new Staff {
-						\timeMvtI \nameStaffIVMvtI \musicOboeIIMvtI
-					}
-					\new Staff {
-						\timeMvtI \nameStaffVMvtI \musicOboeIIIMvtI
-					}
-				>>
+				\new Staff {
+						\timeMvtI \nameStaffIIMvtI \musicCornoIIMvtI
+				}
+			>>
+			\new StaffGroup <<
+				\new Staff {
+					\timeMvtI \nameStaffIIIMvtI \musicOboeIMvtI
+				}
+				\new Staff {
+					\timeMvtI \nameStaffIVMvtI \musicOboeIIMvtI
+				}
+				\new Staff {
+					\timeMvtI \nameStaffVMvtI \musicOboeIIIMvtI
+				}
 				\new Staff {
 					\timeMvtI \nameStaffVIMvtI \musicFagottoMvtI
 				}
@@ -111,7 +109,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-%			system-count = 22
 		}
 	}
 }

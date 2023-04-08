@@ -10,7 +10,7 @@ musicCornoIIMvtI = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	r8 f a c f c a16 f c'8
-	\times 2/3 {c c c} \times 2/3 {c c c} c8.( g'16) r4
+	\tuplet 3/2 {c c c} \tuplet 3/2 {c c c} c8.( g'16) r4
 	R1*6
 	
 	
@@ -18,11 +18,11 @@ musicCornoIIMvtI = \relative c {
 	
 	
 	
-	r2 \clef bass r8 f, \times 2/3 {f f f}
-	\times 2/3 {f c f} \times 2/3 {f f f } f8.( c'16) r4
+	r2 \clef bass r8 f, \tuplet 3/2 {f f f}
+	\tuplet 3/2 {f c f} \tuplet 3/2 {f f f } f8.( c'16) r4
 % Bars 11 to 15
 	r2 r4 r8 \clef treble c
-	\times 2/3 {f f f} \times 2/3 {f c f} \times 2/3 {c a c} \times 2/3 {a f a}
+	\tuplet 3/2 {f f f} \tuplet 3/2 {f c f} \tuplet 3/2 {c a c} \tuplet 3/2 {a f a}
 	f8 a'16 g a g a g f g a bes g8 c,
 	f a, c c16 c c8 f16 g a g f g
 	c,4 r r2
@@ -95,7 +95,7 @@ musicCornoIIMvtI = \relative c {
 % Bars 71 to 75
 	g f g f g a f g a8 f, a c
 	a f a c f c a16 f c'8
-	\times 2/3 {c c c} \times 2/3 {c c c} c8.( g'16) r4
+	\tuplet 3/2 {c c c} \tuplet 3/2 {c c c} c8.( g'16) r4
 	R1*6
 	
 % Bars 76 to 80
@@ -103,10 +103,10 @@ musicCornoIIMvtI = \relative c {
 	
 	
 	
-	r2 \clef bass r8 f, \times 2/3 {f f f}
+	r2 \clef bass r8 f, \tuplet 3/2 {f f f}
 % Bars 81 to 84
-	\times 2/3 {f c f} \times 2/3 {f f f} f8.( c'16) r4
+	\tuplet 3/2 {f c f} \tuplet 3/2 {f f f} f8.( c'16) r4
 	r2 r4 \clef treble r8 c
-	\times 2/3 {f f f} \times 2/3 {f c f} \times 2/3 {c a c} \times 2/3 {a f a}
-	\times 2/3 {f f f} \times 2/3 {f f f} f2\fermata \bar "|."
+	\tuplet 3/2 {f f f} \tuplet 3/2 {f c f} \tuplet 3/2 {c a c} \tuplet 3/2 {a f a}
+	\tuplet 3/2 {f f f} \tuplet 3/2 {f f f} f2\fermata \bar "|."
 }

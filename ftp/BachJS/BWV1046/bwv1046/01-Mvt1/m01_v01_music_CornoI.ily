@@ -11,18 +11,18 @@ musicCornoIMvtI = \relative c {
 % Bars 1 to 5
 	R1
 	r8 c' f a c g g16 c, g'8
-	\times 2/3 {g8 g g} g8.( c16) r2
+	\tuplet 3/2 {g8 g g} g8.( c16) r2
 	R1*4
 	
 % Bars 6 to 10
 	
 	
-	r2 r8 c, \times 2/3 {c8 c c} 
-	\times 2/3 {c f, c'} \times 2/3 {c c c} c8.( f16) r4
+	r2 r8 c, \tuplet 3/2 {c8 c c} 
+	\tuplet 3/2 {c f, c'} \tuplet 3/2 {c c c} c8.( f16) r4
 	R1*2
 % Bars 11 to 15
 	
-	r8 c \times 2/3 {f f f} \times 2/3 {f c f} \times 2/3 {c a c}
+	r8 c \tuplet 3/2 {f f f} \tuplet 3/2 {f c f} \tuplet 3/2 {c a c}
 	a8 c'16 bes c bes c bes a bes c d bes a bes g
 	a8 c, f g\trill a16 bes a bes c bes a bes
 	g4 r r2
@@ -96,17 +96,17 @@ musicCornoIMvtI = \relative c {
 	e d e d e f d e f bes, a g g8. f16
 	f4 r r2
 	r8 c f a c g g16( c,) g'8
-	\times 2/3 {g8 g g} g8. c16 r2
+	\tuplet 3/2 {g8 g g} g8. c16 r2
 	R1*4
 % Bars 76 to 80
 	
 	
 	
-	r2 r8 c, \times 2/3 {c c c}
-	\times 2/3 {c f, c'} \times 2/3 {c c c} c8.( f16) r4
+	r2 r8 c, \tuplet 3/2 {c c c}
+	\tuplet 3/2 {c f, c'} \tuplet 3/2 {c c c} c8.( f16) r4
 % Bars 81 to 84
 	R1*2
 	
-	r8 c \times 2/3 {f f f} \times 2/3 {f c f} \times 2/3 {c a c}
-	\times 2/3 {a a a} \times 2/3 {a a a} a2\fermata \bar "|."
+	r8 c \tuplet 3/2 {f f f} \tuplet 3/2 {f c f} \tuplet 3/2 {c a c}
+	\tuplet 3/2 {a a a} \tuplet 3/2 {a a a} a2\fermata \bar "|."
 }
