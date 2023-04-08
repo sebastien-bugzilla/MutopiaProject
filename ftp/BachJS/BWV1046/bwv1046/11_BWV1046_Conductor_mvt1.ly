@@ -59,6 +59,9 @@
 						\formatConductorMvtI
 					}
 					\new Voice {
+						\tempiMvtI
+					}
+					\new Voice {
 						\timeMvtI \nameStaffIMvtI \musicCornoIMvtI
 					}
 				>>

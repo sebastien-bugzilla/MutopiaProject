@@ -1,143 +1,92 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      00_BWV1046_Conductor_mvt2.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
 %###############################################################################
-%#                           S E C T I O N  P A P E R                          #
+%#                                 H E A D E R                                 #
 %###############################################################################
-\paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { 
-				\fromproperty #'header:dedication
-			}
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-\include "./00-Common/BWV1046_timeMvt.ly"
-\include "./00-Common/BWV1046_Conductor_option.ly"
-\include "./00-Common/BWV1046_VoiceName.ly"
-\include "./00-Common/BWV1046_markup.ly"
-\include "./02-Mvt2/m02_v03_music_OboeI.ly"
-\include "./02-Mvt2/m02_v04_music_OboeII.ly"
-\include "./02-Mvt2/m02_v05_music_OboeIII.ly"
-\include "./02-Mvt2/m02_v06_music_Fagotto.ly"
-\include "./02-Mvt2/m02_v07_music_Violinopiccolo.ly"
-\include "./02-Mvt2/m02_v08_music_ViolinoI.ly"
-\include "./02-Mvt2/m02_v09_music_ViolinoII.ly"
-\include "./02-Mvt2/m02_v10_music_Viola.ly"
-\include "./02-Mvt2/m02_v12_music_Continuoe.ly"
-\include "./00-Common/00_BWV1046_Format_Mvt2.ly"
+%
+%  Composer           : Johann Sebastian Bach (1685 - 1750)
+%  work               : Brandenburg Concerto No.1 in F major, BWV1046
+%  Source             : Bach-Gesellschaft Ausgabe, Band 19 (pp.1-30)
+%                       Leipzig: Breitkopf und Härtel, 1871. Plate B.W. XIX.
+%  Type of score      : Score conductor mvt II
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Monday 03 April 2023, 23:44
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/BWV1046_Header.ily"
+\include "./00-Common/BWV1046_PaperConductors.ily"
+\include "./00-Common/BWV1046_timeMvt.ily"
+\include "./00-Common/BWV1046_LayoutConductors.ily"
+\include "./00-Common/BWV1046_Shortcuts.ily"
+\include "./00-Common/BWV1046_NameStaff.ily"
+\include "./00-Common/BWV1046_Format_Cond_Mvt2.ily"
+\include "./00-Common/BWV1046_Tempi.ily"
+\include "./02-Mvt2/m02_v03_music_OboeI.ily"
+\include "./02-Mvt2/m02_v04_music_OboeII.ily"
+\include "./02-Mvt2/m02_v05_music_OboeIII.ily"
+\include "./02-Mvt2/m02_v06_music_Fagotto.ily"
+\include "./02-Mvt2/m02_v07_music_Violinopiccolo.ily"
+\include "./02-Mvt2/m02_v08_music_ViolinoI.ily"
+\include "./02-Mvt2/m02_v09_music_ViolinoII.ily"
+\include "./02-Mvt2/m02_v10_music_Viola.ily"
+\include "./02-Mvt2/m02_v12_music_Continuoe.ily"
 %###############################################################################
 %#                          S C O R E    S E C T I O N                         #
 %###############################################################################
 \book {
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Johann Sebastian Bach"
-				"1685 - 1750"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Concerto Brandebourgeois n 1"
-				"en Fa majeur BWV1046"
+				"1st movement"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Movement 2"
-			}
+		subsubtitle = \markup { 
+			"Johann Sebastian Bach — "
+			"Brandenburg Concerto No.1 — BWV1046"
+			\concat {"2" \super nd} "Movement"
 		}
 	}
 	\score {
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\display
-%					}
 					\new Voice {
 						\formatConductorMvtII
 					}
 					\new Voice {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameVoiceIII
-						\musicOboeIMvtII
+						\tempiMvtII
+					}
+					\new Voice {
+						\timeMvtII \nameStaffIMvtII \musicOboeIMvtII
 					}
 				>>
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameVoiceIV
-					\musicOboeIIMvtII
+					\timeMvtII \nameStaffIIMvtII \musicOboeIIMvtII
 				}
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameVoiceV
-					\musicOboeIIIMvtII
+					\timeMvtII \nameStaffIIIMvtII \musicOboeIIIMvtII
 				}
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameVoiceVI
-					\musicFagottoMvtII
+					\timeMvtII \nameStaffIVMvtII \musicFagottoMvtII
 				}
 			>>
 			\new Staff {
-				\timeMvtII \generalOptions \conductorOptions
-				\nameVoiceVII
-				\musicViolinopiccoloMvtII
+				\timeMvtII \nameStaffVMvtII \musicViolinopiccoloMvtII
 			}
 			\new StaffGroup <<
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameVoiceVIII
-					\musicViolinoIMvtII
+					\timeMvtII \nameStaffVIMvtII \musicViolinoIMvtII
 				}
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameVoiceIX
-					\musicViolinoIIMvtII
+					\timeMvtII \nameStaffVIIMvtII \musicViolinoIIMvtII
 				}
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameVoiceX
-					\musicViolaMvtII
+					\timeMvtII \nameStaffVIIIMvtII \musicViolaMvtII
 				}
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameVoiceXII
-					\musicContinuoeMvtII
+					\timeMvtII \nameStaffIXMvtII \musicContinuoeMvtII
 				}
 			>>
 		>>
@@ -145,6 +94,10 @@
 			breakbefore = ##t
 		}
 		\layout {
+			\context {
+				\Score
+				\override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4)
+			}
 		}
 	}
 }

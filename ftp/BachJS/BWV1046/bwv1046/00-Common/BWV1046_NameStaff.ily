@@ -59,9 +59,46 @@ nameStaffXIIMvtI = {
 %###############################################################################
 %#                    S T A F F   N A M E   :   M V T   I I                    #
 %###############################################################################
-
-
-
+nameStaffIMvtII = {
+	\set Staff.instrumentName = #"Oboe I"
+	\set Staff.shortInstrumentName = #"Ob. I"
+}
+nameStaffIIMvtII = {
+	\set Staff.instrumentName = #"Oboe II"
+	\set Staff.shortInstrumentName = #"Ob. II"
+}
+nameStaffIIIMvtII = {
+	\set Staff.instrumentName = #"Oboe III"
+	\set Staff.shortInstrumentName = #"Ob. III"
+}
+nameStaffIVMvtII = {
+	\set Staff.instrumentName = #"Fagotto"
+	\set Staff.shortInstrumentName = #"Fag."
+}
+nameStaffVMvtII = {
+	\set Staff.instrumentName = #"Violino piccolo"
+	\set Staff.shortInstrumentName = #"Vln. Pc"
+}
+nameStaffVIMvtII = {
+	\set Staff.instrumentName = #"Violiono I"
+	\set Staff.shortInstrumentName = #"Vln. I"
+}
+nameStaffVIIMvtII = {
+	\set Staff.instrumentName = #"Violiono II"
+	\set Staff.shortInstrumentName = #"Vln. II"
+}
+nameStaffVIIIMvtII = {
+	\set Staff.instrumentName = #"Viola"
+	\set Staff.shortInstrumentName = #"Vla"
+}
+nameStaffIXMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #2 "Continuo e" \lower #1 "violoncello" "e Violone grosso"
+		}
+	}
+	\set Staff.shortInstrumentName = #"Cont."
+}
 %###############################################################################
 %#                   S T A F F   N A M E   :   M V T   I I I                   #
 %###############################################################################

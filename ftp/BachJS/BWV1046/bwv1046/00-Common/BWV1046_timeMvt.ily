@@ -6,11 +6,9 @@
 %###############################################################################
 timeMvtI = {
 	\time 4/4
-	\tempo "-"
 }
 timeMvtII = {
 	\time 3/4
-	\tempo "Adagio"
 }
 timeMvtIII = {
 	\time 6/8

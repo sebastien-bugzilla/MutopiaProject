@@ -5,10 +5,10 @@
 %#                       T E M P I  C O N D U C T O R S                        #
 %###############################################################################
 tempiMvtI = {
-	\tempo ""
+	\tempo "-"
 }
 tempiMvtII = {
-	\tempo "Andante con moto"
+	\tempo "Adagio"
 }
 
 
