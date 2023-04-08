@@ -1,6 +1,6 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      m03_v05_music_OboeIII.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
+%  work        : Johann Sebastian Bach, Brandeburg Concerto No.I, BWV1046
+%  typesetter  : Sébastien MANEN
+%  date        : Monday 03 April 2023, 23:44
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -106,8 +106,8 @@ musicOboeIIIMvtIII = \relative c {
 	r8 d'\p d c r r
 % Bars 81 to 85
 	r c c bes r r
-	\tempo "Adagio" r2.\fermata
-	r4 r8 \tempo "Allegro" r8 bes\f bes
+	R2.\fermata
+	r4 r8 r8 bes\f bes
 	c a r r4 r8
 	R2.*3
 % Bars 86 to 90

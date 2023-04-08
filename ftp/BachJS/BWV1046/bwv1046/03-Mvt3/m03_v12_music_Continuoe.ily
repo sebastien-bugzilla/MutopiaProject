@@ -1,6 +1,6 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      m03_v12_music_Continuoe.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
+%  work        : Johann Sebastian Bach, Brandeburg Concerto No.I, BWV1046
+%  typesetter  : Sébastien MANEN
+%  date        : Monday 03 April 2023, 23:44
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -106,8 +106,8 @@ musicContinuoeMvtIII = \relative c {
 	g16\p a bes a bes g c d ees d ees c
 % Bars 81 to 85
 	f g a g a f bes c d c d bes
-	\tempo "Adagio" d,4.\fermata ees16 d ees c g' f
-	g ees f8 f, \tempo "Allegro" bes a\f g
+	d,4.\fermata ees16 d ees c g' f
+	g ees f8 f, bes a\f g
 	f16 g a g a f f'8 e d
 	c16 d e d e c bes'8 a g
 % Bars 86 to 90

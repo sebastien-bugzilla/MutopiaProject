@@ -1,6 +1,6 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      m03_v08_music_ViolinoI.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
+%  work        : Johann Sebastian Bach, Brandeburg Concerto No.I, BWV1046
+%  typesetter  : Sébastien MANEN
+%  date        : Monday 03 April 2023, 23:44
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -84,7 +84,7 @@ musicViolinoIMvtIII = \relative c {
 	b8 r r r c16 b c g
 	a8 r r r4 r8
 	R2.
-	b'16 -\tweak X-offset #-2 \f( c b c d c) b8( b b)
+	b'16\f( c b c d c) b8( b b)
 	b16( c b c d c) b8( b b)
 % Bars 66 to 70
 	a16( b a b c b) a8( a a)
@@ -106,8 +106,8 @@ musicViolinoIMvtIII = \relative c {
 	g8 r r r ees\p ees
 % Bars 81 to 85
 	ees16 d c bes c a d ees d ees f8
-	\tempo "Adagio" bes,4.\fermata~ bes8. a16 bes a
-	bes c c8. bes16 \tempo "Allegro" bes8 d16\f c d bes
+	bes,4.\fermata~ bes8. a16 bes a
+	bes c c8. bes16 bes8 d16\f c d bes
 	c8 f, r r4 r8
 	R2.*3
 % Bars 86 to 90

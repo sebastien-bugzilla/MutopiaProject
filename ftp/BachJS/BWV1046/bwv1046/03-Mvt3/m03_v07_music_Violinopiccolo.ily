@@ -1,6 +1,6 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      m03_v07_music_Violinopiccolo.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
+%  work        : Johann Sebastian Bach, Brandeburg Concerto No.I, BWV1046
+%  typesetter  : Sébastien MANEN
+%  date        : Monday 03 April 2023, 23:44
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -49,10 +49,17 @@ musicViolinopiccoloMvtIII = \relative c {
 	<<{d16 c b a b g e'8 e e} \\ {b,16 s s4 r8 e e} \\ {g16 s s4 s8 b8 b}>>
 	<<{e16 d c b c a f'8 f f} \\ {c,16 s s4 r8 c8 c} \\ {a'16 s s4 s8 a8 a}>>
 	<<{f'16 e d c d b g'8 g g} \\ {b,,16 s s4 s8 g''8 g} \\ {g,16 s s4 s4.}>>
-	<g' g>4.\trill~ q~
+	<< {
+		g'4.\trill~ g~
 % Bars 36 to 40
-	q~ q~
-	g16 a g f g e a bes a g  f e
+		g~ g(
+		s16) s s4 s4.
+	} \\ {
+		g4.~ g~
+% Bars 36 to 40
+		g~ g~
+		g16 a g f g e a bes a g f e
+	}>>
 	d8 c16( b a g) d' e e8.\trill d32 e
 	f16 e d c d b g' d e b( c b)
 	c f <<{d8. c16 c4 r8} \\ {g4 c,4 r8} \\ {s4 g' s8}>>
@@ -98,8 +105,8 @@ musicViolinopiccoloMvtIII = \relative c {
 	g8 d' g ees\trill d16 ees c8
 % Bars 81 to 85
 	r8 c( d16 ees32 f) ees16( d) c( d) bes8
-	\tempo "Adagio" r8 f' aes, g8. ees'16 d8~
-	d32 ees f16 a,8.[ bes16] \tempo "Allegro" bes4 r8
+	r8 f' aes, g8. ees'16 d8~
+	d32 ees f16 a,8.[ bes16] bes4 r8
 	r8 <<{f8 f f a16 g a f} \\ {f8 f f s4}>>
 	<<{s8 c' c c s4} \\ {c8 c c c e16 d e c}>>
 % Bars 86 to 90
@@ -124,14 +131,14 @@ musicViolinopiccoloMvtIII = \relative c {
 	<<{f'8 g16 f e d} \\ {d,4 s8} \\ {b'8 s4}>> e16 f e d c d
 	e16 f g f g e f8 e16\trill d c8
 	r <<{
-	    c8 c c4.\trill~ 
-	    c16 d c b a g f8 f' f
+		c8 c c4.\trill~ 
+		c16 d c b a g f8 f' f
 	} \\ {
-	    c8 c c4.
-	    s4. r8 d, d
+		c8 c c4.
+		s4. r8 d, d
 	} \\ {
-	    s4 s4.
-	    s4. s8 a' a
+		s4 s4.
+		s4. s8 a' a
 	}>>
 	<<{f'8 g16 f e d} \\ {c,8 s4} \\ {a'8 s4}>> e'8 c g~
 % Bars 106 to 110

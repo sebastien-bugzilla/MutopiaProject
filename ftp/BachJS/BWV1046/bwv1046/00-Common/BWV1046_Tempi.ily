@@ -10,6 +10,13 @@ tempiMvtI = {
 tempiMvtII = {
 	\tempo "Adagio"
 }
+tempiMvtIII = {
+	\tempo "Allegro"
+	s2.*81
+	\tempo "Adagio" % bar 82
+	s2. s4.
+	\tempo "Allegro" % bar 83.5
+}
 
 
 

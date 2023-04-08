@@ -1,6 +1,6 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      m03_v10_music_Viola.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
+%  work        : Johann Sebastian Bach, Brandeburg Concerto No.I, BWV1046
+%  typesetter  : Sébastien MANEN
+%  date        : Monday 03 April 2023, 23:44
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -84,7 +84,7 @@ musicViolaMvtIII = \relative c {
 	d r r r c c
 	c r r r4 r8
 	R2.
-	d'16( -\tweak X-offset #-2 \f e d e f e) d8( d d)
+	d'16(\f e d e f e) d8( d d)
 	d16( e d e f e) d8( d d)
 % Bars 66 to 70
 	c16( d c d e d) c8( c c)
@@ -106,8 +106,8 @@ musicViolaMvtIII = \relative c {
 	r4 r8 r g' g
 % Bars 81 to 85
 	f r r r f f
-	\tempo "Adagio" aes,4\fermata f8 ees bes'16 c d8~
-	d16 c c8. d16 \tempo "Allegro" d8 bes\f bes
+	aes,4\fermata f8 ees bes'16 c d8~
+	d16 c c8. d16 d8 bes\f bes
 	f' a, r r4 r8
 	R2.*3
 % Bars 86 to 90

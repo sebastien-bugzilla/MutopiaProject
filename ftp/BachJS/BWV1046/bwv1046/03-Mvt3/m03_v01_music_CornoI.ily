@@ -1,6 +1,6 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      m03_v01_music_CornoI.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
+%  work        : Johann Sebastian Bach, Brandeburg Concerto No.I, BWV1046
+%  typesetter  : Sébastien MANEN
+%  date        : Monday 03 April 2023, 23:44
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -92,8 +92,8 @@ musicCornoIMvtIII = \relative c {
 	
 % Bars 81 to 85
 	
-	\tempo "Adagio" r2.\fermata
-	r4. \tempo "Allegro" r
+	R2.\fermata
+	r4. r
 	R2.*3
 % Bars 86 to 90
 	

@@ -30,7 +30,7 @@
 		\override Fingering.staff-padding = #'()
 		%\override Script.staff-padding = ##f
 		\override MultiMeasureRest.space-increment = 1
-		\RemoveEmptyStaves
+%		\RemoveEmptyStaves
 %		\RemoveAllEmptyStaves
 	}
 	\context {
