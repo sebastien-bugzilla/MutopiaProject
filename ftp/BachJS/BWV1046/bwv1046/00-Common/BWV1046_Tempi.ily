@@ -17,9 +17,27 @@ tempiMvtIII = {
 	s2. s4.
 	\tempo "Allegro" % bar 83.5
 }
-
-
-
+tempiMvtIV = {
+	\tempo "Menuet"
+}
+tempiMvtV = {
+	\tempo "Trio"
+}
+tempiMvtVI = {
+	\tempo "Menuet"
+}
+tempiMvtVII = {
+	\tempo "Polonaise"
+}
+tempiMvtVIII = {
+	\tempo "Menuet"
+}
+tempiMvtIX = {
+	\tempo "Trio"
+}
+tempiMvtX = {
+	\tempo "Menuet"
+}
 %###############################################################################
 %#                            T E M P I   P A R T S                            #
 %###############################################################################

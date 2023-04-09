@@ -12,33 +12,25 @@ timeMvtII = {
 }
 timeMvtIII = {
 	\time 6/8
-	\tempo "Allegro"
 }
 timeMvtIV = {
 	\time 3/4
-	\tempo "Menuet"
 }
 timeMvtV = {
 	\time 3/4
-	\tempo "Trio I"
 }
 timeMvtVI = {
 	\time 3/4
-	\tempo "Menuet"
 }
 timeMvtVII = {
 	\time 3/8
-	\tempo "Polonaise"
 }
 timeMvtVIII = {
 	\time 3/4
-	\tempo "Menuet"
 }
 timeMvtIX = {
 	\time 2/4
-	\tempo "Trio II"
 }
 timeMvtX = {
 	\time 3/4
-	\tempo "Menuet"
 }

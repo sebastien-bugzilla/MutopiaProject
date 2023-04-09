@@ -15,7 +15,7 @@
 	title = \markup { 
 		\abs-fontsize #18 \sans
 		\center-column {
-			"Brandeburg Concerto No.1"
+			"Brandenburg Concerto No.1"
 			"BWV.1046"
 		}
 	}

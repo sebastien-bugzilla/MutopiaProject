@@ -8,7 +8,7 @@ semprep = \markup {\italic sempre \dynamic p}
 psempre = \markup {\dynamic p \italic sempre}
 ppsempre = \markup {\dynamic pp \italic sempre}
 prallup = \markup {\musicglyph #"scripts.prallup"}
-
+markFermata = \mark \markup {\abs-fontsize #7 \musicglyph #"scripts.ufermata"}
 
 %dynEO = #(define-music-function
 %	(offset)

@@ -1,86 +1,102 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      00_BWV1046_Conductor_mvt4.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
 %###############################################################################
-%#                           S E C T I O N  P A P E R                          #
+%#                                 H E A D E R                                 #
 %###############################################################################
-\paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { 
-				\fromproperty #'header:dedication
-			}
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-\include "./00-Common/BWV1046_timeMvt.ly"
-\include "./00-Common/BWV1046_Conductor_option.ly"
-\include "./00-Common/BWV1046_VoiceName.ly"
-\include "./00-Common/BWV1046_markup.ly"
-\include "./04-Mvt4/m04_v01_music_CornoI.ly"
-\include "./04-Mvt4/m04_v02_music_CornoII.ly"
-\include "./04-Mvt4/m04_v03_music_OboeI.ly"
-\include "./04-Mvt4/m04_v04_music_OboeII.ly"
-\include "./04-Mvt4/m04_v05_music_OboeIII.ly"
-\include "./04-Mvt4/m04_v06_music_Fagotto.ly"
-\include "./04-Mvt4/m04_v07_music_Violinopiccolo.ly"
-\include "./04-Mvt4/m04_v08_music_ViolinoI.ly"
-\include "./04-Mvt4/m04_v09_music_ViolinoII.ly"
-\include "./04-Mvt4/m04_v10_music_Viola.ly"
-\include "./04-Mvt4/m04_v12_music_Continuoe.ly"
-\include "./00-Common/00_BWV1046_Format_Mvt4.ly"
+%
+%  Composer           : Johann Sebastian Bach (1685 - 1750)
+%  work               : Brandenburg Concerto No.1 in F major, BWV1046
+%  Source             : Bach-Gesellschaft Ausgabe, Band 19 (pp.1-30)
+%                       Leipzig: Breitkopf und Härtel, 1871. Plate B.W. XIX.
+%  Type of score      : Score conductor mvt II
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Monday 03 April 2023, 23:44
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/BWV1046_Header.ily"
+\include "./00-Common/BWV1046_PaperConductors.ily"
+\include "./00-Common/BWV1046_timeMvt.ily"
+\include "./00-Common/BWV1046_LayoutConductors.ily"
+\include "./00-Common/BWV1046_Shortcuts.ily"
+\include "./00-Common/BWV1046_NameStaff.ily"
+\include "./00-Common/BWV1046_Format_Cond_Mvt4.ily"
+\include "./00-Common/BWV1046_Tempi.ily"
+\include "./04-Mvt4/m04_v01_music_CornoI.ily"
+\include "./04-Mvt4/m04_v02_music_CornoII.ily"
+\include "./04-Mvt4/m04_v03_music_OboeI.ily"
+\include "./04-Mvt4/m04_v04_music_OboeII.ily"
+\include "./04-Mvt4/m04_v05_music_OboeIII.ily"
+\include "./04-Mvt4/m04_v06_music_Fagotto.ily"
+\include "./04-Mvt4/m04_v07_music_Violinopiccolo.ily"
+\include "./04-Mvt4/m04_v08_music_ViolinoI.ily"
+\include "./04-Mvt4/m04_v09_music_ViolinoII.ily"
+\include "./04-Mvt4/m04_v10_music_Viola.ily"
+\include "./04-Mvt4/m04_v12_music_Continuoe.ily"
+%
+\include "./05-Mvt5/m05_v03_music_OboeI.ily"
+\include "./05-Mvt5/m05_v04_music_OboeII.ily"
+\include "./05-Mvt5/m05_v06_music_Fagotto.ily"
+%
+\include "./06-Mvt6/m06_v01_music_CornoI.ily"
+\include "./06-Mvt6/m06_v02_music_CornoII.ily"
+\include "./06-Mvt6/m06_v03_music_OboeI.ily"
+\include "./06-Mvt6/m06_v04_music_OboeII.ily"
+\include "./06-Mvt6/m06_v05_music_OboeIII.ily"
+\include "./06-Mvt6/m06_v06_music_Fagotto.ily"
+\include "./06-Mvt6/m06_v07_music_Violinopiccolo.ily"
+\include "./06-Mvt6/m06_v08_music_ViolinoI.ily"
+\include "./06-Mvt6/m06_v09_music_ViolinoII.ily"
+\include "./06-Mvt6/m06_v10_music_Viola.ily"
+\include "./06-Mvt6/m06_v12_music_Continuoe.ily"
+%
+\include "./07-Mvt7/m07_v08_music_ViolinoI.ily"
+\include "./07-Mvt7/m07_v09_music_ViolinoII.ily"
+\include "./07-Mvt7/m07_v10_music_Viola.ily"
+\include "./07-Mvt7/m07_v12_music_Continuoe.ily"
+%
+\include "./08-Mvt8/m08_v01_music_CornoI.ily"
+\include "./08-Mvt8/m08_v02_music_CornoII.ily"
+\include "./08-Mvt8/m08_v03_music_OboeI.ily"
+\include "./08-Mvt8/m08_v04_music_OboeII.ily"
+\include "./08-Mvt8/m08_v05_music_OboeIII.ily"
+\include "./08-Mvt8/m08_v06_music_Fagotto.ily"
+\include "./08-Mvt8/m08_v07_music_Violinopiccolo.ily"
+\include "./08-Mvt8/m08_v08_music_ViolinoI.ily"
+\include "./08-Mvt8/m08_v09_music_ViolinoII.ily"
+\include "./08-Mvt8/m08_v10_music_Viola.ily"
+\include "./08-Mvt8/m08_v12_music_Continuoe.ily"
+%
+\include "./09-Mvt9/m09_v01_music_CornoI.ily"
+\include "./09-Mvt9/m09_v02_music_CornoII.ily"
+\include "./09-Mvt9/m09_v03_music_OboeI.ily"
+%
+\include "./10-Mvt10/m10_v01_music_CornoI.ily"
+\include "./10-Mvt10/m10_v02_music_CornoII.ily"
+\include "./10-Mvt10/m10_v03_music_OboeI.ily"
+\include "./10-Mvt10/m10_v04_music_OboeII.ily"
+\include "./10-Mvt10/m10_v05_music_OboeIII.ily"
+\include "./10-Mvt10/m10_v06_music_Fagotto.ily"
+\include "./10-Mvt10/m10_v07_music_Violinopiccolo.ily"
+\include "./10-Mvt10/m10_v08_music_ViolinoI.ily"
+\include "./10-Mvt10/m10_v09_music_ViolinoII.ily"
+\include "./10-Mvt10/m10_v10_music_Viola.ily"
+\include "./10-Mvt10/m10_v12_music_Continuoe.ily"
 %###############################################################################
 %#                          S C O R E    S E C T I O N                         #
 %###############################################################################
 \book {
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Johann Sebastian Bach"
-				"1685 - 1750"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Concerto Brandebourgeois n 1"
-				"en Fa majeur BWV1046"
+				"4th movement"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Movement 4"
-			}
+		subsubtitle = \markup { 
+			"Johann Sebastian Bach — "
+			"Brandenburg Concerto No.1 — BWV1046"
+			\concat {"4" \super th} "Movement"
 		}
 	}
 	\score {
@@ -91,64 +107,45 @@
 						\formatConductorMvtIV
 					}
 					\new Voice {
-						\timeMvtIV \generalOptions \conductorOptions
-						\nameVoiceI
-						\musicCornoIMvtIV
+						\tempiMvtIV
+					}
+					\new Voice {
+						\timeMvtIV \nameStaffIMvtIV \musicCornoIMvtIV
 					}
 				>>
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameVoiceII
-					\musicCornoIIMvtIV
+					\timeMvtIV \nameStaffIIMvtIV \musicCornoIIMvtIV
 				}
 			>>
 			\new StaffGroup <<
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameVoiceIII
-					\musicOboeIMvtIV
+					\timeMvtIV \nameStaffIIIMvtIV \musicOboeIMvtIV
 				}
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameVoiceIV
-					\musicOboeIIMvtIV
+					\timeMvtIV \nameStaffIVMvtIV \musicOboeIIMvtIV
 				}
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameVoiceV
-					\musicOboeIIIMvtIV
+					\timeMvtIV \nameStaffVMvtIV \musicOboeIIIMvtIV
 				}
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameVoiceVI
-					\musicFagottoMvtIV
+					\timeMvtIV \nameStaffVIMvtIV \musicFagottoMvtIV
 				}
 			>>
 			\new Staff {
-				\timeMvtIV \generalOptions \conductorOptions
-				\nameVoiceVII
-				\musicViolinopiccoloMvtIV
+				\timeMvtIV \nameStaffVIIMvtIV \musicViolinopiccoloMvtIV
 			}
 			\new StaffGroup <<
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameVoiceVIII
-					\musicViolinoIMvtIV
+					\timeMvtIV \nameStaffVIIIMvtIV \musicViolinoIMvtIV
 				}
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameVoiceIX
-					\musicViolinoIIMvtIV
+					\timeMvtIV \nameStaffIXMvtIV \musicViolinoIIMvtIV
 				}
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameVoiceX
-					\musicViolaMvtIV
+					\timeMvtIV \nameStaffXMvtIV \musicViolaMvtIV
 				}
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameVoiceXII
-					\musicContinuoeMvtIV
+					\timeMvtIV \nameStaffXIMvtIV \musicContinuoeMvtIV
 				}
 			>>
 		>>
@@ -156,7 +153,261 @@
 			breakbefore = ##t
 		}
 		\layout {
-		    system-count = 4
+		}
+	}
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff <<
+					\new Voice {
+						\formatConductorMvtV
+					}
+					\new Voice {
+						\tempiMvtV
+					}
+					\new Voice {
+						\timeMvtV \nameStaffIMvtV \musicOboeIMvtV
+					}
+				>>
+				\new Staff {
+					\timeMvtV \nameStaffIIMvtV \musicOboeIIMvtV
+				}
+				\new Staff {
+					\timeMvtV \nameStaffIIIMvtV \musicFagottoMvtV
+				}
+			>>
+		>>
+		\header {
+			breakbefore = ##t
+		}
+		\layout {
+		}
+	}
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff <<
+					\new Voice {
+						\formatConductorMvtVI
+					}
+					\new Voice {
+						\tempiMvtVI
+					}
+					\new Voice {
+						\timeMvtVI \nameStaffIMvtVI \musicCornoIMvtVI
+					}
+				>>
+				\new Staff {
+					\timeMvtVI \nameStaffIIMvtVI \musicCornoIIMvtVI
+				}
+			>>
+			\new StaffGroup <<
+				\new Staff {
+					\timeMvtVI \nameStaffIIIMvtVI \musicOboeIMvtVI
+				}
+				\new Staff {
+					\timeMvtVI \nameStaffIVMvtVI \musicOboeIIMvtVI
+				}
+				\new Staff {
+					\timeMvtVI \nameStaffVMvtVI \musicOboeIIIMvtVI
+				}
+				\new Staff {
+					\timeMvtVI \nameStaffVIMvtVI \musicFagottoMvtVI
+				}
+			>>
+			\new Staff {
+				\timeMvtVI \nameStaffVIIMvtVI \musicViolinopiccoloMvtVI
+			}
+			\new StaffGroup <<
+				\new Staff {
+					\timeMvtVI \nameStaffVIIIMvtVI \musicViolinoIMvtVI
+				}
+				\new Staff {
+					\timeMvtVI \nameStaffIXMvtVI \musicViolinoIIMvtVI
+				}
+				\new Staff {
+					\timeMvtVI \nameStaffXMvtVI \musicViolaMvtVI
+				}
+				\new Staff {
+					\timeMvtVI \nameStaffXIMvtVI \musicContinuoeMvtVI
+				}
+			>>
+		>>
+		\header {
+			breakbefore = ##f
+		}
+		\layout {
+		}
+	}
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff <<
+					\new Voice {
+						\formatConductorMvtVII
+					}
+					\new Voice {
+						\tempiMvtVII
+					}
+					\new Voice {
+						\timeMvtVII \nameStaffIMvtVII \musicViolinoIMvtVII
+					}
+				>>
+				\new Staff {
+					\timeMvtVII \nameStaffIIMvtVII \musicViolinoIIMvtVII
+				}
+				\new Staff {
+					\timeMvtVII \nameStaffIIIMvtVII \musicViolaMvtVII
+				}
+				\new Staff {
+					\timeMvtVII \nameStaffIVMvtVII \musicContinuoeMvtVII
+				}
+			>>
+		>>
+		\header {
+			breakbefore = ##t
+		}
+		\layout {
+		}
+	}
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff <<
+					\new Voice {
+						\formatConductorMvtVIII
+					}
+					\new Voice {
+						\tempiMvtVIII
+					}
+					\new Voice {
+						\timeMvtVIII \nameStaffIMvtVIII \musicCornoIMvtVIII
+					}
+				>>
+				\new Staff {
+					\timeMvtVIII \nameStaffIIMvtVIII \musicCornoIIMvtVIII
+				}
+			>>
+			\new StaffGroup <<
+				\new Staff {
+					\timeMvtVIII \nameStaffIIIMvtVIII \musicOboeIMvtVIII
+				}
+				\new Staff {
+					\timeMvtVIII \nameStaffIVMvtVIII \musicOboeIIMvtVIII
+				}
+				\new Staff {
+					\timeMvtVIII \nameStaffVMvtVIII \musicOboeIIIMvtVIII
+				}
+				\new Staff {
+					\timeMvtVIII \nameStaffVIMvtVIII \musicFagottoMvtVIII
+				}
+			>>
+			\new Staff {
+				\timeMvtVIII \nameStaffVIIMvtVIII \musicViolinopiccoloMvtVIII
+			}
+			\new StaffGroup <<
+				\new Staff {
+					\timeMvtVIII \nameStaffVIIIMvtVIII \musicViolinoIMvtVIII
+				}
+				\new Staff {
+					\timeMvtVIII \nameStaffIXMvtVIII \musicViolinoIIMvtVIII
+				}
+				\new Staff {
+					\timeMvtVIII \nameStaffXMvtVIII \musicViolaMvtVIII
+				}
+				\new Staff {
+					\timeMvtVIII \nameStaffXIMvtVIII \musicContinuoeMvtVIII
+				}
+			>>
+		>>
+		\header {
+			breakbefore = ##t
+		}
+		\layout {
+		}
+	}
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff <<
+					\new Voice {
+						\formatConductorMvtIX
+					}
+					\new Voice {
+						\tempiMvtIX
+					}
+					\new Voice {
+						\timeMvtIX \nameStaffIMvtIX \musicCornoIMvtIX
+					}
+				>>
+				\new Staff {
+					\timeMvtIX \nameStaffIIMvtIX \musicCornoIIMvtIX
+				}
+			>>
+			\new Staff {
+				\timeMvtIX \nameStaffIIIMvtIX \musicOboeIMvtIX
+			}
+		>>
+		\header {
+			breakbefore = ##t
+		}
+		\layout {
+		}
+	}
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff <<
+					\new Voice {
+						\formatConductorMvtX
+					}
+					\new Voice {
+						\tempiMvtX
+					}
+					\new Voice {
+						\timeMvtX \nameStaffIMvtX \musicCornoIMvtX
+					}
+				>>
+				\new Staff {
+					\timeMvtX \nameStaffIIMvtX \musicCornoIIMvtX
+				}
+			>>
+			\new StaffGroup <<
+				\new Staff {
+					\timeMvtX \nameStaffIIIMvtX \musicOboeIMvtX
+				}
+				\new Staff {
+					\timeMvtX \nameStaffIVMvtX \musicOboeIIMvtX
+				}
+				\new Staff {
+					\timeMvtX \nameStaffVMvtX \musicOboeIIIMvtX
+				}
+				\new Staff {
+					\timeMvtX \nameStaffVIMvtX \musicFagottoMvtX
+				}
+			>>
+			\new Staff {
+				\timeMvtX \nameStaffVIIMvtX \musicViolinopiccoloMvtX
+			}
+			\new StaffGroup <<
+				\new Staff {
+					\timeMvtX \nameStaffVIIIMvtX \musicViolinoIMvtX
+				}
+				\new Staff {
+					\timeMvtX \nameStaffIXMvtX \musicViolinoIIMvtX
+				}
+				\new Staff {
+					\timeMvtX \nameStaffXMvtX \musicViolaMvtX
+				}
+				\new Staff {
+					\timeMvtX \nameStaffXIMvtX \musicContinuoeMvtX
+				}
+			>>
+		>>
+		\header {
+			breakbefore = ##t
+		}
+		\layout {
 		}
 	}
 }
