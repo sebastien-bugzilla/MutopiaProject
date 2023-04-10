@@ -41,4 +41,74 @@ tempiMvtX = {
 %###############################################################################
 %#                            T E M P I   P A R T S                            #
 %###############################################################################
+tempiPartMvtI = {
+	\tag #'(cornoI cornoII oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "-"
+	}
+}
+tempiPartMvtII = {
+	\tag #'(cornoI cornoII oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "Adagio"
+	}
+}
+tempiPartMvtIII = {
+	\tag #'(cornoI cornoII oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "Allegro"
+	}
+	s2.*81
+	\tag #'(cornoI cornoII oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "Adagio" % bar 82
+	}
+	s2. s4.
+	\tag #'(cornoI cornoII oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "Allegro" % bar 83.5
+	}
+}
+tempiPartMvtIV = {
+	\tag #'(oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "Menuet"
+	}
+}
+tempiPartMvtV = {
+	\tag #'(oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "Trio"
+	}
+}
+tempiPartMvtVI = {
+	\tag #'(oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "Menuet"
+	}
+}
+tempiPartMvtVII = {
+	\tag #'(oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "Polonaise"
+	}
+}
+tempiPartMvtVIII = {
+	\tag #'(oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "Menuet"
+	}
+}
+tempiPartMvtIX = {
+	\tag #'(oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "Trio"
+	}
+}
+tempiPartMvtX = {
+	\tag #'(oboeI oboeII oboeIII fagotto violinoPiccolo violinoI
+		violinoII viola violoncello continuo) {
+		\tempo "Menuet"
+	}
+}
 

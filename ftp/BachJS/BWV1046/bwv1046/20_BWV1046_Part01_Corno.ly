@@ -1,407 +1,400 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      00_BWV1046_Part01_Corno.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
 %###############################################################################
-%#                           S E C T I O N  P A P E R                          #
+%#                                 H E A D E R                                 #
 %###############################################################################
-\paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { 
-				\fromproperty #'header:dedication
-			}
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-\include "./00-Common/BWV1046_timeMvt.ly"
-\include "./00-Common/BWV1046_Parts_option.ly"
-\include "./00-Common/BWV1046_VoiceName.ly"
-\include "./00-Common/BWV1046_markup.ly"
-\include "./01-Mvt1/m01_v01_music_CornoI.ly"
-\include "./03-Mvt3/m03_v01_music_CornoI.ly"
-\include "./04-Mvt4/m04_v01_music_CornoI.ly"
-\include "./06-Mvt6/m06_v01_music_CornoI.ly"
-\include "./08-Mvt8/m08_v01_music_CornoI.ly"
-\include "./09-Mvt9/m09_v01_music_CornoI.ly"
-\include "./10-Mvt10/m10_v01_music_CornoI.ly"
-\include "./01-Mvt1/m01_v02_music_CornoII.ly"
-\include "./03-Mvt3/m03_v02_music_CornoII.ly"
-\include "./04-Mvt4/m04_v02_music_CornoII.ly"
-\include "./06-Mvt6/m06_v02_music_CornoII.ly"
-\include "./08-Mvt8/m08_v02_music_CornoII.ly"
-\include "./09-Mvt9/m09_v02_music_CornoII.ly"
-\include "./10-Mvt10/m10_v02_music_CornoII.ly"
-\include "./00-Common/00_BWV1046_Format_Corno.ly"
+%
+%  Composer           : Johann Sebastian Bach (1685 - 1750)
+%  work               : Brandenburg Concerto No.1 in F major, BWV1046
+%  Source             : Bach-Gesellschaft Ausgabe, Band 19 (pp.1-30)
+%                       Leipzig: Breitkopf und Härtel, 1871. Plate B.W. XIX.
+%  Type of score      : Score Part Corni
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Monday 03 April 2023, 23:44
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/BWV1046_Header.ily"
+\include "./00-Common/BWV1046_PaperParts.ily"
+\include "./00-Common/BWV1046_timeMvt.ily"
+\include "./00-Common/BWV1046_LayoutParts.ily"
+\include "./00-Common/BWV1046_Shortcuts.ily"
+\include "./00-Common/BWV1046_NameVoice.ily"
+\include "./00-Common/BWV1046_Format_Part01_Corno.ily"
+\include "./00-Common/BWV1046_CueVoice.ily"
+\include "./00-Common/BWV1046_Tempi.ily"
+\include "./01-Mvt1/m01_v01_music_CornoI_V.ily"
+\include "./02-Mvt2/m02_v01_music_CornoI_V.ily"
+\include "./03-Mvt3/m03_v01_music_CornoI_V.ily"
+\include "./04-Mvt4/m04_v01_music_CornoI_V.ily"
+\include "./05-Mvt5/m05_v01_music_CornoI_V.ily"
+\include "./07-Mvt7/m07_v01_music_CornoI_V.ily"
+\include "./09-Mvt9/m09_v01_music_CornoI_V.ily"
+\include "./01-Mvt1/m01_v02_music_CornoII_V.ily"
+\include "./02-Mvt2/m02_v02_music_CornoII_V.ily"
+\include "./03-Mvt3/m03_v02_music_CornoII_V.ily"
+\include "./04-Mvt4/m04_v02_music_CornoII_V.ily"
+\include "./05-Mvt5/m05_v02_music_CornoII_V.ily"
+\include "./07-Mvt7/m07_v02_music_CornoII_V.ily"
+\include "./09-Mvt9/m09_v02_music_CornoII_V.ily"
 %###############################################################################
 %#                          S C O R E    S E C T I O N                         #
 %###############################################################################
 \book {
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Johann Sebastian Bach"
-				"1685 - 1750"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Concerto Brandebourgeois n 1"
-				"en Fa majeur BWV1046"
+				"Part for Corni"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Part for Corno"
-			}
+		subsubtitle = \markup { 
+			"Johann Sebastian Bach — "
+			"Brandenburg Concerto No.1 — BWV1046"
+		}
+		instrument = \markup {
+			"Corni"
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVoiceI
+				\formatCornoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVoiceI \musicCornoIMvtI
+				\InCueContext \cueVoiceCornoIMvtI 
+			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameCornoIMvtI \musicCornoIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold \larger 1.
 			}
 		}
 		\layout {
-		    %system-count = 16
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameVoiceI R2.*39
+				\formatCornoIMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \musicCornoIMvtII 
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold \larger 2.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIIVoiceI
+				\formatCornoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVoiceI \musicCornoIMvtIII
+				\keepWithTag #'(cornoI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameCornoIMvtIII \musicCornoIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold \larger 3.
 			}
 		}
 		\layout {
-		    %system-count = 17
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVVoiceI
+				\formatCornoIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameVoiceI \musicCornoIMvtIV
+				\keepWithTag #'(cornoI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameCornoIMvtIV \musicCornoIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold \larger 4. Menuet
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\timeMvtV \generalOptions \partOptions
-				\nameVoiceI R2.*28
+				\formatCornoIMvtV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtV
+			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtV
+			}
+			\new Voice {
+				\timeMvtV \musicCornoIMvtV
 			}
 		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #1 \bold \larger Trio : \underline tacet
+			}
+		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtVIVoiceI
+				\formatCornoIMvtVII
 			}
 			\new Voice {
-				\timeMvtVI \generalOptions \partOptions
-				\nameVoiceI \musicCornoIMvtVI
+				\InCueContext \cueVoiceCornoIMvtVII
+			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtVII
+			}
+			\new Voice {
+				\timeMvtVII \musicCornoIMvtVII
 			}
 		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #1 \bold \larger Polonaise : \underline tacet
+			}
+		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\timeMvtVII \generalOptions \partOptions
-				\nameVoiceI R4.*32
+				\formatCornoIMvtIX
+			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtIX
+			}
+			\new Voice {
+				\timeMvtIX \nameCornoIMvtIX \musicCornoIMvtIX
 			}
 		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #1 \bold \larger Trio
+			}
+		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtVIIIVoiceI
+				\formatCornoIIMvtI
 			}
 			\new Voice {
-				\timeMvtVIII \generalOptions \partOptions
-				\nameVoiceI \musicCornoIMvtVIII
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtIXVoiceI
+				\keepWithTag #'(cornoII) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtIX \generalOptions \partOptions
-				\nameVoiceI \musicCornoIMvtIX
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtXVoiceI
+				\InCueContext \cueVoiceCornoIIMvtI
 			}
 			\new Voice {
-				\timeMvtX \generalOptions \partOptions
-				\nameVoiceI \musicCornoIMvtX
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtIVoiceII
-			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVoiceII \musicCornoIIMvtI
+				\timeMvtI \nameCornoIIMvtI  \musicCornoIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold \larger 1.
 			}
 		}
 		\layout {
-		    %system-count = 16
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameVoiceII R2.*39
+				\formatCornoIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \musicCornoIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold \larger 2.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIIVoiceII
+				\formatCornoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVoiceII \musicCornoIIMvtIII
+				\keepWithTag #'(cornoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameCornoIIMvtIII \musicCornoIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold \larger 3.
 			}
 		}
 		\layout {
-		    system-count = 16
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVVoiceII
+				\formatCornoIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameVoiceII \musicCornoIIMvtIV
+				\keepWithTag #'(cornoII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameCornoIIMvtIV \musicCornoIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #5 \bold \larger 4. Menuet
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\timeMvtV \generalOptions \partOptions
-				\nameVoiceII R2.*28
+				\formatCornoIIMvtV
+			}
+			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtV
+			}
+			\new Voice {
+				\timeMvtV \musicCornoIIMvtV
 			}
 		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold \larger Trio : \underline Tacet 
+			}
+		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtVIVoiceII
+				\formatCornoIIMvtVII
 			}
 			\new Voice {
-				\timeMvtVI \generalOptions \partOptions
-				\nameVoiceII \musicCornoIIMvtVI
+				\keepWithTag #'(cornoII) \tempiPartMvtVII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtVII
+			}
+			\new Voice {
+				\timeMvtVII \musicCornoIIMvtVII
 			}
 		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #5 \bold \larger Polonaise : \underline Tacet 
+			}
+		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\timeMvtVII \generalOptions \partOptions
-				\nameVoiceII R4.*32
+				\formatCornoIIMvtIX
+			}
+			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtIX
+			}
+			\new Voice {
+				\timeMvtIX \nameCornoIIMvtIX \musicCornoIIMvtIX
 			}
 		>>
-		\layout {
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #4.2 \bold \larger Trio 
+			}
 		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIIIVoiceII
-			}
-			\new Voice {
-				\timeMvtVIII \generalOptions \partOptions
-				\nameVoiceII \musicCornoIIMvtVIII
-			}
-		>>
 		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtIXVoiceII
-			}
-			\new Voice {
-				\timeMvtIX \generalOptions \partOptions
-				\nameVoiceII \musicCornoIIMvtIX
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtXVoiceII
-			}
-			\new Voice {
-				\timeMvtX \generalOptions \partOptions
-				\nameVoiceII \musicCornoIIMvtX
-			}
-		>>
-		\layout {
+			\layoutPart
 		}
 	}
 }

@@ -25,7 +25,7 @@ musicViolinoIMvtVII = \relative c' {
 % Bars 11 to 15
 		a'( c) bes( g) a( f)
 		b8 b8.( g16)
-		d'( b) f'( d) e c
+		d'( b) f'( d) e( c)
 		d( b) c( a) b( g)
 		g'8 f16( e) d( c)
 	}
@@ -60,10 +60,10 @@ musicViolinoIMvtVII = \relative c' {
 	}
 	\alternative {
 		{
-			g e f8 g
+			g( e) f8 g\noBeam
 		}
 		{
-			g16[ e f8] \bar "|."
+			g16[( e) f8] \bar "|."
 		}
 	}
 }

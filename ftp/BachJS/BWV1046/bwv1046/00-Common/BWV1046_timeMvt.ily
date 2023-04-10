@@ -30,6 +30,12 @@ timeMvtVIII = {
 }
 timeMvtIX = {
 	\time 2/4
+	\set Timing.beamExceptions = \beamExceptions {
+		8[ 8 8 8] |
+		16[ 16 16 16] 16[ 16 16 16] |
+		8[ 16 16] 8[ 8] |
+		16[ 16 16 16] 8[ 8]
+	}
 }
 timeMvtX = {
 	\time 3/4
