@@ -336,8 +336,159 @@ cueVoiceCornoIIMvtVII = \relative c {
 %###############################################################################
 %#                     C U E   V O I C E   F O R   O B O I                     #
 %###############################################################################
-
-
+cueVoiceOboeIMvtIII = \relative c {
+	\voiceOne s2.*33
+	% bar 34
+	<b' g' f'>16^\markup {Viol.picc.} e' d c d b g'8 g g
+	s2.*7
+	% bar 42 - 43
+	c,16^\markup {Viol.I} b a g a f b b, e f g e
+	a g f e f d g g, c d e c
+	s2.*35
+	% bar 79
+	fis16(-\offset X-offset -6 ^\markup {Viol.picc.} a c ees) d8~ d16 c bes8\trill a16 g
+	s2.*21
+	% bar 101 - 102
+	<d b' f'>8^\markup {Viol.picc.} g'16 f e d e f e d c d
+	e f g f g e f8 s4
+}
+cueVoiceOboeIMvtVII = \relative c {
+	% bar 0 - 4
+	\voiceOne \partial 8 c'8^\markup {Viol.I}
+	f16( a) g( e) f( c) 
+	g'( bes) a( f) g( c,)
+	a'( c) bes( g) a( f)
+	bes8 bes8.( g16)
+	s4.*8
+	% bar 13 - 20
+	d'16(^\markup {Viol.I} b) f'( d) e( c)
+	d( b) c( a) b( g)
+	g'8 f16( e) d( c)
+	d( b) c8 c,\noBeam
+	d'16( b) c8 g\noBeam
+	c16(^\markup {Viol.I} e) d( b) c( g)
+	d'( f) e( c) d( g,)
+	e'( g) f( d) e( g,)
+	bes'8 bes8.( a16)
+	s4.*8
+	% bar 29 - 32_2
+	a,,16(^\markup {Viol.I} c) bes( g) a( c)
+	f( a) g( e) f( a)
+	c8 bes16( a) g( f)
+	g( e) f8 g\noBeam
+	g16([ e) f8]-\offset X-offset -6 _\menuetdacapo
+}
+cueVoiceOboeIIMvtIII = \relative c {
+	\voiceOne s2.*33
+	% bar 34
+	<b' g' f'>16^\markup {Viol.picc.} e' d c d b g'8 g g
+	s2.*7
+	% bar 42 - 43
+	c,16^\markup {Viol.I} b a g a f b b, e f g e
+	a g f e f d g g, c d e c
+	s2.*15
+	% bar 59 - 60
+	d'8^\markup {Ob.I} b c~ c16 d gis,8. a16
+	a8 s4 s4.
+	s2.*18
+	% bar 79
+	fis16(-\offset X-offset -6 ^\markup {Viol.picc.} a c ees) d8~ d16 c bes8\trill a16 g
+	s2.*21
+	% bar 101 - 102
+	<d b' f'>8^\markup {Viol.picc.} g'16 f e d e f e d c d
+	e f g f g e f8 s4
+}
+cueVoiceOboeIIMvtVII = \relative c {
+	% bar 0 - 4
+	\voiceOne \partial 8 c'8^\markup {Viol.I}
+	f16( a) g( e) f( c) 
+	g'( bes) a( f) g( c,)
+	a'( c) bes( g) a( f)
+	bes8 bes8.( g16)
+	s4.*8
+	% bar 13 - 20
+	d'16(^\markup {Viol.I} b) f'( d) e( c)
+	d( b) c( a) b( g)
+	g'8 f16( e) d( c)
+	d( b) c8 c,\noBeam
+	d'16( b) c8 g\noBeam
+	c16(^\markup {Viol.I} e) d( b) c( g)
+	d'( f) e( c) d( g,)
+	e'( g) f( d) e( g,)
+	bes'8 bes8.( a16)
+	s4.*8
+	% bar 29 - 32_2
+	a,,16(^\markup {Viol.I} c) bes( g) a( c)
+	f( a) g( e) f( a)
+	c8 bes16( a) g( f)
+	g( e) f8 g\noBeam
+	g16([ e) f8]-\offset X-offset -6 _\menuetdacapo
+}
+cueVoiceOboeIIIMvtIII = \relative c {
+	\voiceOne s2.*33
+	% bar 34
+	<b' g' f'>16^\markup {Viol.picc.} e' d c d b g'8 g g
+	s2.*7
+	% bar 42 - 43
+	c,16^\markup {Viol.I} b a g a f b b, e f g e
+	a g f e f d g g, c d e c
+	s2.*15
+	% bar 59
+	d'8^\markup {Ob.I} b c~ c16 d gis,8. a16
+	s2.*19
+	% bar 79
+	fis16(-\offset X-offset -6 ^\markup {Viol.picc.} a c ees) d8~ d16 c bes8\trill a16 g
+	s2.*21
+	% bar 101 - 102
+	<d b' f'>8^\markup {Viol.picc.} g'16 f e d e f e d c d
+	e f g f g e f8 s4
+}
+cueVoiceOboeIIIMvtV = \relative c {
+	% bar 1 - 4
+	\voiceOne f''2^\markup {Ob.I} g4
+	e2 f4
+	d bes'2
+	g4.(\trill f16 g) a4
+	s2.*5
+	% bar 9 - 12
+	e2^\markup {Ob.I} f4
+	g2 e4
+	f d g
+	f8( e d e) c d
+	s2.*12
+	% bar 25 - 28_2
+	d2^\markup {Ob.I} e4
+	cis8 e g4. a8
+	g f e d e cis
+	d2.
+	d-\offset X-offset -6 _\menuetdacapo \markFermata \bar "|."
+}
+cueVoiceOboeIIIMvtVII = \relative c {
+	% bar 0 - 4
+	\voiceOne \partial 8 c'8^\markup {Viol.I}
+	f16( a) g( e) f( c) 
+	g'( bes) a( f) g( c,)
+	a'( c) bes( g) a( f)
+	bes8 bes8.( g16)
+	s4.*8
+	% bar 13 - 20
+	d'16(^\markup {Viol.I} b) f'( d) e( c)
+	d( b) c( a) b( g)
+	g'8 f16( e) d( c)
+	d( b) c8 c,\noBeam
+	d'16( b) c8 g\noBeam
+	c16(^\markup {Viol.I} e) d( b) c( g)
+	d'( f) e( c) d( g,)
+	e'( g) f( d) e( g,)
+	bes'8 bes8.( a16)
+	s4.*8
+	% bar 29 - 32_2
+	a,,16(^\markup {Viol.I} c) bes( g) a( c)
+	f( a) g( e) f( a)
+	c8 bes16( a) g( f)
+	g( e) f8 g\noBeam
+	g16([ e) f8]-\offset X-offset -6 _\menuetdacapo \markFermata 
+}
 %###############################################################################
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #
 %###############################################################################

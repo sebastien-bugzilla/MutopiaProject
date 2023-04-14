@@ -1,595 +1,549 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      00_BWV1046_Part02_Oboe.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
 %###############################################################################
-%#                           S E C T I O N  P A P E R                          #
+%#                                 H E A D E R                                 #
 %###############################################################################
-\paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { 
-				\fromproperty #'header:dedication
-			}
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-\include "./00-Common/BWV1046_timeMvt.ly"
-\include "./00-Common/BWV1046_Parts_option.ly"
-\include "./00-Common/BWV1046_VoiceName.ly"
-\include "./00-Common/BWV1046_markup.ly"
-\include "./01-Mvt1/m01_v03_music_OboeI.ly"
-\include "./02-Mvt2/m02_v03_music_OboeI.ly"
-\include "./03-Mvt3/m03_v03_music_OboeI.ly"
-\include "./04-Mvt4/m04_v03_music_OboeI.ly"
-\include "./05-Mvt5/m05_v03_music_OboeI.ly"
-\include "./06-Mvt6/m06_v03_music_OboeI.ly"
-\include "./08-Mvt8/m08_v03_music_OboeI.ly"
-\include "./09-Mvt9/m09_v03_music_OboeI.ly"
-\include "./10-Mvt10/m10_v03_music_OboeI.ly"
-\include "./01-Mvt1/m01_v04_music_OboeII.ly"
-\include "./02-Mvt2/m02_v04_music_OboeII.ly"
-\include "./03-Mvt3/m03_v04_music_OboeII.ly"
-\include "./04-Mvt4/m04_v04_music_OboeII.ly"
-\include "./05-Mvt5/m05_v04_music_OboeII.ly"
-\include "./06-Mvt6/m06_v04_music_OboeII.ly"
-\include "./08-Mvt8/m08_v04_music_OboeII.ly"
-\include "./10-Mvt10/m10_v04_music_OboeII.ly"
-\include "./01-Mvt1/m01_v05_music_OboeIII.ly"
-\include "./02-Mvt2/m02_v05_music_OboeIII.ly"
-\include "./03-Mvt3/m03_v05_music_OboeIII.ly"
-\include "./04-Mvt4/m04_v05_music_OboeIII.ly"
-\include "./06-Mvt6/m06_v05_music_OboeIII.ly"
-\include "./08-Mvt8/m08_v05_music_OboeIII.ly"
-\include "./10-Mvt10/m10_v05_music_OboeIII.ly"
-\include "./00-Common/00_BWV1046_Format_Oboi.ly"
+%
+%  Composer           : Johann Sebastian Bach (1685 - 1750)
+%  work               : Brandenburg Concerto No.1 in F major, BWV1046
+%  Source             : Bach-Gesellschaft Ausgabe, Band 19 (pp.1-30)
+%                       Leipzig: Breitkopf und Härtel, 1871. Plate B.W. XIX.
+%  Type of score      : Score Part Corni
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Monday 03 April 2023, 23:44
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/BWV1046_Header.ily"
+\include "./00-Common/BWV1046_PaperParts.ily"
+\include "./00-Common/BWV1046_timeMvt.ily"
+\include "./00-Common/BWV1046_LayoutParts.ily"
+\include "./00-Common/BWV1046_Shortcuts.ily"
+\include "./00-Common/BWV1046_NameVoice.ily"
+\include "./00-Common/BWV1046_Format_Part02_Oboi.ily"
+\include "./00-Common/BWV1046_CueVoice.ily"
+\include "./00-Common/BWV1046_Tempi.ily"
+\include "./01-Mvt1/m01_v03_music_OboeI.ily"
+\include "./02-Mvt2/m02_v03_music_OboeI.ily"
+\include "./03-Mvt3/m03_v03_music_OboeI_V.ily"
+\include "./04-Mvt4/m04_v03_music_OboeI.ily"
+\include "./05-Mvt5/m05_v03_music_OboeI_V.ily"
+\include "./07-Mvt7/m07_v03_music_OboeI_V.ily"
+\include "./09-Mvt9/m09_v03_music_OboeI_V.ily"
+\include "./01-Mvt1/m01_v04_music_OboeII.ily"
+\include "./02-Mvt2/m02_v04_music_OboeII.ily"
+\include "./03-Mvt3/m03_v04_music_OboeII_V.ily"
+\include "./04-Mvt4/m04_v04_music_OboeII.ily"
+\include "./05-Mvt5/m05_v04_music_OboeII_V.ily"
+\include "./07-Mvt7/m07_v04_music_OboeII_V.ily"
+\include "./09-Mvt9/m09_v04_music_OboeII_V.ily"
+\include "./01-Mvt1/m01_v05_music_OboeIII.ily"
+\include "./02-Mvt2/m02_v05_music_OboeIII.ily"
+\include "./03-Mvt3/m03_v05_music_OboeIII_V.ily"
+\include "./04-Mvt4/m04_v05_music_OboeIII.ily"
+\include "./05-Mvt5/m05_v05_music_OboeIII_V.ily"
+\include "./07-Mvt7/m07_v05_music_OboeIII_V.ily"
+\include "./09-Mvt9/m09_v05_music_OboeIII_V.ily"
 %###############################################################################
 %#                          S C O R E    S E C T I O N                         #
 %###############################################################################
 \book {
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Johann Sebastian Bach"
-				"1685 - 1750"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Concerto Brandebourgeois n 1"
-				"en Fa majeur BWV1046"
+				"Part for Oboi"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Part for Oboe"
-			}
+		subsubtitle = \markup { 
+			"Johann Sebastian Bach — "
+			"Brandenburg Concerto No.1 — BWV1046"
+		}
+		instrument = \markup {
+			"Oboi"
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVoiceIII
+				\formatOboeIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVoiceIII \musicOboeIMvtI
+				\keepWithTag #'(oboeI) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameOboeIMvtI \musicOboeIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold \larger 1.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIVoiceIII
+				\formatOboeIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameVoiceIII \musicOboeIMvtII
+				\keepWithTag #'(oboeI) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameOboeIMvtII \musicOboeIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold \larger 2.
 			}
 		}
 		\layout {
-		    %system-count = 9
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIIVoiceIII
+				\formatOboeIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVoiceIII \musicOboeIMvtIII
+				\InCueContext \cueVoiceOboeIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameOboeIMvtIII \musicOboeIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2 \bold \larger 3.
 			}
 		}
 		\layout {
-		    %system-count = 21
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVVoiceIII
+				\formatOboeIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameVoiceIII \musicOboeIMvtIV
+				\keepWithTag #'(oboeI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameOboeIMvtIV \musicOboeIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #4 \bold \larger 4. Menuet
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtVVoiceIII
+				\formatOboeIMvtV
 			}
 			\new Voice {
-				\timeMvtV \generalOptions \partOptions
-				\nameVoiceIII \musicOboeIMvtV
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIVoiceIII
+				\keepWithTag #'(oboeI) \tempiPartMvtV
 			}
 			\new Voice {
-				\timeMvtVI \generalOptions \partOptions
-				\nameVoiceIII \musicOboeIMvtVI
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\timeMvtVII \generalOptions \partOptions
-				\nameVoiceIII R4.*32
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIIIVoiceIII
-			}
-			\new Voice {
-				\timeMvtVIII \generalOptions \partOptions
-				\nameVoiceIII \musicOboeIMvtVIII
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtIXVoiceIII
-			}
-			\new Voice {
-				\timeMvtIX \generalOptions \partOptions
-				\nameVoiceIII \musicOboeIMvtIX
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtXVoiceIII
-			}
-			\new Voice {
-				\timeMvtX \generalOptions \partOptions
-				\nameVoiceIII \musicOboeIMvtX
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtIVoiceIV
-			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVoiceIV \musicOboeIIMvtI
+				\timeMvtV \nameOboeIMvtV \musicOboeIMvtV
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\vspace #2 \bold \larger Trio
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIVoiceIV
+				\formatOboeIMvtVII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameVoiceIV \musicOboeIIMvtII
+				\InCueContext \cueVoiceOboeIMvtVII
+			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtVII
+			}
+			\new Voice {
+				\timeMvtVII \musicOboeIMvtVII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.5 \bold \larger Polonaise : \underline tacet
 			}
 		}
 		\layout {
-		    system-count = 5
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIIVoiceIV
+				\formatOboeIMvtIX
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVoiceIV \musicOboeIIMvtIII
-			}
-		>>
-		\header {
-			breakbefore = ##t
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtIVVoiceIV
+				\keepWithTag #'(oboeI) \tempiPartMvtIX
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameVoiceIV \musicOboeIIMvtIV
+				\timeMvtIX \nameOboeIMvtIX \musicOboeIMvtIX
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold \larger Trio
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtVVoiceIV
+				\formatOboeIIMvtI
 			}
 			\new Voice {
-				\timeMvtV \generalOptions \partOptions
-				\nameVoiceIV \musicOboeIIMvtV
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIVoiceIV
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtVI \generalOptions \partOptions
-				\nameVoiceIV \musicOboeIIMvtVI
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\timeMvtVII \generalOptions \partOptions
-				\nameVoiceIV R4.*32
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIIIVoiceIV
-			}
-			\new Voice {
-				\timeMvtVIII \generalOptions \partOptions
-				\nameVoiceIV \musicOboeIIMvtVIII
-			}
-		>>
-		\header {
-			breakbefore = ##t
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtIXVoiceIII
-			}
-			\new Voice {
-				\timeMvtIX \generalOptions \partOptions
-				\nameVoiceIV \musicOboeIMvtIX
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtXVoiceIV
-			}
-			\new Voice {
-				\timeMvtX \generalOptions \partOptions
-				\nameVoiceIV \musicOboeIIMvtX
-			}
-		>>
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtIVoiceV
-			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVoiceV \musicOboeIIIMvtI
+				\timeMvtI \nameOboeIIMvtI \musicOboeIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold \larger 1.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIVoiceV
+				\formatOboeIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameVoiceV \musicOboeIIIMvtII
+				\keepWithTag #'(oboeII) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameOboeIIMvtII \musicOboeIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold \larger 2.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIIVoiceV
+				\formatOboeIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVoiceV \musicOboeIIIMvtIII
-			}
-		>>
-		\header {
-			breakbefore = ##t
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtIVVoiceV
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameVoiceV \musicOboeIIIMvtIV
+				\InCueContext \cueVoiceOboeIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameOboeIIMvtIII \musicOboeIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold \larger 3.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\timeMvtV \generalOptions \partOptions
-				\nameVoiceV R2.*28
+				\formatOboeIIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameOboeIIMvtIV \musicOboeIIMvtIV
 			}
 		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold \larger 4. Menuet
+			}
+		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtVIVoiceV
+				\formatOboeIIMvtV
 			}
 			\new Voice {
-				\timeMvtVI \generalOptions \partOptions
-				\nameVoiceV \musicOboeIIIMvtVI
+				\keepWithTag #'(oboeII) \tempiPartMvtV
+			}
+			\new Voice {
+				\timeMvtV \nameOboeIIMvtV \musicOboeIIMvtV
 			}
 		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold \larger Trio
+			}
+		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\timeMvtVII \generalOptions \partOptions
-				\nameVoiceV R4.*32
+				\formatOboeIIMvtVII
+			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtVI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIIMvtVII
+			}
+			\new Voice {
+				\timeMvtVII \musicOboeIIMvtVII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold \larger Polonaise : \underline tacet
+			}
+		}
+		\layout { 
+			\layoutPart
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatOboeIIMvtIX
+			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtIX
+			}
+			\new Voice {
+				\timeMvtIX \nameOboeIIMvtIX \musicOboeIMvtIX
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold \larger Trio
+			}
+		}
+		\layout {
+			\layoutPart
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatOboeIIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(oboeIII) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameOboeIIIMvtI \musicOboeIIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
+			piece = \markup {
+				\bold \large 1.
+			}
 		}
 		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIIIVoiceV
-			}
-			\new Voice {
-				\timeMvtVIII \generalOptions \partOptions
-				\nameVoiceV \musicOboeIIIMvtVIII
-			}
-		>>
-		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIXVoiceIII
+				\formatOboeIIIMvtII
 			}
 			\new Voice {
-				\timeMvtIX \generalOptions \partOptions
-				\nameVoiceV \musicOboeIMvtIX
+				\keepWithTag #'(oboeIII) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameOboeIIIMvtII \musicOboeIIIMvtII
 			}
 		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #2 \bold \larger 2.
+			}
+		}
 		\layout {
-		    system-count = 5
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtXVoiceV
+				\formatOboeIIIMvtIII
 			}
 			\new Voice {
-				\timeMvtX \generalOptions \partOptions
-				\nameVoiceV \musicOboeIIIMvtX
+				\keepWithTag #'(oboeIII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameOboeIIIMvtIII \musicOboeIIIMvtIII
 			}
 		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold \larger 3.
+			}
+		}
 		\layout {
+			\layoutPart
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatOboeIIIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(oboeIII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameOboeIIIMvtIV \musicOboeIIIMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold \larger 4. Menuet
+			}
+		}
+		\layout {
+			\layoutPart
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatOboeIIIMvtV
+			}
+			\new Voice {
+				\keepWithTag #'(oboeIII) \tempiPartMvtV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIIIMvtV
+			}
+			\new Voice {
+				\timeMvtV \nameOboeIIIMvtV \musicOboeIIIMvtV
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold \large Trio \underline tacet
+			}
+		}
+		\layout {
+			\layoutPart
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatOboeIIIMvtVII
+			}
+			\new Voice {
+				\keepWithTag #'(oboeIII) \tempiPartMvtVII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIIIMvtVII
+			}
+			\new Voice {
+				\timeMvtVII \nameOboeIIIMvtVII \musicOboeIIIMvtVII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold \large Polonaise : \underline tacet
+			}
+		}
+		\layout {
+			\layoutPart
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatOboeIIIMvtIX
+			}
+			\new Voice {
+				\keepWithTag #'(oboeIII) \tempiPartMvtIX
+			}
+			\new Voice {
+				\timeMvtIX \nameOboeIIIMvtIX \musicOboeIIIMvtIX
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold \large Trio
+			}
+		}
+		\layout {
+			\layoutPart
 		}
 	}
 }

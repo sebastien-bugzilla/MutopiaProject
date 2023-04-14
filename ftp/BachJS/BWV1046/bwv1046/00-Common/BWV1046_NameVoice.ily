@@ -127,6 +127,10 @@ nameOboeIIMvtVIII = {
 	\set Staff.instrumentName = #"Oboe II"
 	\set Staff.shortInstrumentName = #""
 }
+nameOboeIIMvtIX = {
+	\set Staff.instrumentName = #"Oboe II"
+	\set Staff.shortInstrumentName = #""
+}
 nameOboeIIMvtX = {
 	\set Staff.instrumentName = #"Oboe II"
 	\set Staff.shortInstrumentName = #""
@@ -147,18 +151,30 @@ nameOboeIIIMvtIV = {
 	\set Staff.instrumentName = #"Oboe III"
 	\set Staff.shortInstrumentName = #""
 }
-nameOboeIIIMvtVI = {
+nameOboeIIIMvtV = {
 	\set Staff.instrumentName = #"Oboe III"
 	\set Staff.shortInstrumentName = #""
 }
-nameOboeIIIMvtVIII = {
+%nameOboeIIIMvtVI = {
+%	\set Staff.instrumentName = #"Oboe III"
+%	\set Staff.shortInstrumentName = #""
+%}
+nameOboeIIIMvtVII = {
 	\set Staff.instrumentName = #"Oboe III"
 	\set Staff.shortInstrumentName = #""
 }
-nameOboeIIIMvtX = {
+%nameOboeIIIMvtVIII = {
+%	\set Staff.instrumentName = #"Oboe III"
+%	\set Staff.shortInstrumentName = #""
+%}
+nameOboeIIIMvtIX = {
 	\set Staff.instrumentName = #"Oboe III"
 	\set Staff.shortInstrumentName = #""
 }
+%nameOboeIIIMvtX = {
+%	\set Staff.instrumentName = #"Oboe III"
+%	\set Staff.shortInstrumentName = #""
+%}
 %###############################################################################
 %#                 V O I C E   N A M E S   :   F A G O T T O                   #
 %###############################################################################
