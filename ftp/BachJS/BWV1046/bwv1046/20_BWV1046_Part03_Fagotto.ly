@@ -1,262 +1,215 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      00_BWV1046_Part03_Fagotto.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
 %###############################################################################
-%#                           S E C T I O N  P A P E R                          #
+%#                                 H E A D E R                                 #
 %###############################################################################
-\paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { 
-				\fromproperty #'header:dedication
-			}
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-\include "./00-Common/BWV1046_timeMvt.ly"
-\include "./00-Common/BWV1046_Parts_option.ly"
-\include "./00-Common/BWV1046_VoiceName.ly"
-\include "./00-Common/BWV1046_markup.ly"
-\include "./01-Mvt1/m01_v06_music_Fagotto.ly"
-\include "./02-Mvt2/m02_v06_music_Fagotto.ly"
-\include "./03-Mvt3/m03_v06_music_Fagotto.ly"
-\include "./04-Mvt4/m04_v06_music_Fagotto.ly"
-\include "./05-Mvt5/m05_v06_music_Fagotto.ly"
-\include "./06-Mvt6/m06_v06_music_Fagotto.ly"
-\include "./08-Mvt8/m08_v06_music_Fagotto.ly"
-\include "./10-Mvt10/m10_v06_music_Fagotto.ly"
-\include "./00-Common/00_BWV1046_Format_Fagotto.ly"
+%
+%  Composer           : Johann Sebastian Bach (1685 - 1750)
+%  work               : Brandenburg Concerto No.1 in F major, BWV1046
+%  Source             : Bach-Gesellschaft Ausgabe, Band 19 (pp.1-30)
+%                       Leipzig: Breitkopf und Härtel, 1871. Plate B.W. XIX.
+%  Type of score      : Score Part Fagotto
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Monday 03 April 2023, 23:44
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/BWV1046_Header.ily"
+\include "./00-Common/BWV1046_PaperParts.ily"
+\include "./00-Common/BWV1046_timeMvt.ily"
+\include "./00-Common/BWV1046_LayoutParts.ily"
+\include "./00-Common/BWV1046_Shortcuts.ily"
+\include "./00-Common/BWV1046_NameVoice.ily"
+\include "./00-Common/BWV1046_Format_Part03_Fagotto.ily"
+\include "./00-Common/BWV1046_CueVoice.ily"
+\include "./00-Common/BWV1046_Tempi.ily"
+\include "./01-Mvt1/m01_v06_music_Fagotto.ily"
+\include "./02-Mvt2/m02_v06_music_Fagotto.ily"
+\include "./03-Mvt3/m03_v06_music_Fagotto_V.ily"
+\include "./04-Mvt4/m04_v06_music_Fagotto.ily"
+\include "./05-Mvt5/m05_v06_music_Fagotto_V.ily"
+\include "./07-Mvt7/m07_v06_music_Fagotto_V.ily"
+\include "./09-Mvt9/m09_v06_music_Fagotto_V.ily"
 %###############################################################################
 %#                          S C O R E    S E C T I O N                         #
 %###############################################################################
 \book {
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Johann Sebastian Bach"
-				"1685 - 1750"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Concerto Brandebourgeois n 1"
-				"en Fa majeur BWV1046"
-			}
-		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
 				"Part for Fagotto"
 			}
 		}
+		subsubtitle = \markup { 
+			"Johann Sebastian Bach — "
+			"Brandenburg Concerto No.1 — BWV1046"
+		}
+		instrument = \markup {
+			"Fagotto"
+		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVoiceVI
+				\formatFagottoMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVoiceVI \musicFagottoMvtI
+				\keepWithTag #'(fagotto) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFagottoMvtI \musicFagottoMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold \larger 1.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIVoiceVI
+				\formatFagottoMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameVoiceVI \musicFagottoMvtII
+				\keepWithTag #'(fagotto) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFagottoMvtII \musicFagottoMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold \larger 2.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIIVoiceVI
+				\formatFagottoMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVoiceVI \musicFagottoMvtIII
+				\InCueContext \cueVoiceFagottoMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(fagotto) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFagottoMvtIII \musicFagottoMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2 \bold \larger 3.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVVoiceVI
+				\formatFagottoMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameVoiceVI \musicFagottoMvtIV
+				\keepWithTag #'(fagotto) \tempiPartMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFagottoMvtIV \musicFagottoMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold \larger 4. Menuet
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtVVoiceVI
+				\formatFagottoMvtV
 			}
 			\new Voice {
-				\timeMvtV \generalOptions \partOptions
-				\nameVoiceVI \musicFagottoMvtV
+				\keepWithTag #'(fagotto) \tempiPartMvtV
+			}
+			\new Voice {
+				\timeMvtV \nameFagottoMvtV \musicFagottoMvtV
 			}
 		>>
 		\header {
 			breakbefore = ##f
+			piece = \markup {
+				\vspace #2 \bold \larger Trio
+			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtVIVoiceVI
+				\formatFagottoMvtVII
 			}
 			\new Voice {
-				\timeMvtVI \generalOptions \partOptions
-				\nameVoiceVI \musicFagottoMvtVI
+				\InCueContext \cueVoiceFagottoMvtVII
+			}
+			\new Voice {
+				\keepWithTag #'(fagotto) \tempiPartMvtVII
+			}
+			\new Voice {
+				\timeMvtVII \musicFagottoMvtVII
 			}
 		>>
 		\header {
 			breakbefore = ##f
+			piece = \markup {
+				\bold \larger Polonaise : \underline \italic tacet
+			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\timeMvtVII \generalOptions \partOptions
-				\nameVoiceVI R4.*32
+				\formatFagottoMvtIX
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoMvtIX
+			}
+			\new Voice {
+				\keepWithTag #'(fagotto) \tempiPartMvtIX
+			}
+			\new Voice {
+				\timeMvtIX \musicFagottoMvtIX
 			}
 		>>
 		\header {
 			breakbefore = ##f
+			piece = \markup {
+				\bold \larger Trio : \underline \italic tacet
+			}
 		}
 		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIIIVoiceVI
-			}
-			\new Voice {
-				\timeMvtVIII \generalOptions \partOptions
-				\nameVoiceVI \musicFagottoMvtVIII
-			}
-		>>
-		\header {
-			breakbefore = ##t
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\timeMvtIX \generalOptions \partOptions
-				\nameVoiceVI R2*32
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		    ragged-right = ##f
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtXVoiceVI
-			}
-			\new Voice {
-				\timeMvtX \generalOptions \partOptions
-				\nameVoiceVI \musicFagottoMvtX
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
+			\layoutPart
 		}
 	}
 }

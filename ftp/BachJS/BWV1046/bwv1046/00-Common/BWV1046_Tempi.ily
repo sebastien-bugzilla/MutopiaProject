@@ -70,43 +70,43 @@ tempiPartMvtIII = {
 	}
 }
 tempiPartMvtIV = {
-	\tag #'(fagotto violinoPiccolo violinoI
+	\tag #'(violinoPiccolo violinoI
 		violinoII viola violoncello continuo) {
 		\tempo "Menuet"
 	}
 }
 tempiPartMvtV = {
-	\tag #'(fagotto violinoPiccolo violinoI
+	\tag #'(violinoPiccolo violinoI
 		violinoII viola violoncello continuo) {
 		\tempo "Trio"
 	}
 }
 tempiPartMvtVI = {
-	\tag #'(fagotto violinoPiccolo violinoI
+	\tag #'(violinoPiccolo violinoI
 		violinoII viola violoncello continuo) {
 		\tempo "Menuet"
 	}
 }
 tempiPartMvtVII = {
-	\tag #'(fagotto violinoPiccolo violinoI
+	\tag #'(violinoPiccolo violinoI
 		violinoII viola violoncello continuo) {
 		\tempo "Polonaise"
 	}
 }
 tempiPartMvtVIII = {
-	\tag #'(fagotto violinoPiccolo violinoI
+	\tag #'(violinoPiccolo violinoI
 		violinoII viola violoncello continuo) {
 		\tempo "Menuet"
 	}
 }
 tempiPartMvtIX = {
-	\tag #'(fagotto violinoPiccolo violinoI
+	\tag #'(violinoPiccolo violinoI
 		violinoII viola violoncello continuo) {
 		\tempo "Trio"
 	}
 }
 tempiPartMvtX = {
-	\tag #'(fagotto violinoPiccolo violinoI
+	\tag #'(violinoPiccolo violinoI
 		violinoII viola violoncello continuo) {
 		\tempo "Menuet"
 	}

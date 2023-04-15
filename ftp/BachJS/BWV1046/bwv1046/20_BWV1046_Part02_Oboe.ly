@@ -6,7 +6,7 @@
 %  work               : Brandenburg Concerto No.1 in F major, BWV1046
 %  Source             : Bach-Gesellschaft Ausgabe, Band 19 (pp.1-30)
 %                       Leipzig: Breitkopf und Härtel, 1871. Plate B.W. XIX.
-%  Type of score      : Score Part Corni
+%  Type of score      : Score Part Oboi
 %  Typesetter         : Sébastien MANEN
 %  date of initiation : Monday 03 April 2023, 23:44
 %

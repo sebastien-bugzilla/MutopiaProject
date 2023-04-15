@@ -198,18 +198,18 @@ nameFagottoMvtV = {
 	\set Staff.instrumentName = #"Fagotto"
 	\set Staff.shortInstrumentName = #""
 }
-nameFagottoMvtVI = {
-	\set Staff.instrumentName = #"Fagotto"
-	\set Staff.shortInstrumentName = #""
-}
-nameFagottoMvtVIII = {
-	\set Staff.instrumentName = #"Fagotto"
-	\set Staff.shortInstrumentName = #""
-}
-nameFagottoMvtX = {
-	\set Staff.instrumentName = #"Fagotto"
-	\set Staff.shortInstrumentName = #""
-}
+%nameFagottoMvtVI = {
+%	\set Staff.instrumentName = #"Fagotto"
+%	\set Staff.shortInstrumentName = #""
+%}
+%nameFagottoMvtVIII = {
+%	\set Staff.instrumentName = #"Fagotto"
+%	\set Staff.shortInstrumentName = #""
+%}
+%nameFagottoMvtX = {
+%	\set Staff.instrumentName = #"Fagotto"
+%	\set Staff.shortInstrumentName = #""
+%}
 %###############################################################################
 %#          V O I C E   N A M E S   :   V I O L I N O   P I C C O L O          #
 %###############################################################################
