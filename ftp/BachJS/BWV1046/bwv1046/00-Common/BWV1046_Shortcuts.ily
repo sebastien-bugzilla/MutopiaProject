@@ -54,6 +54,23 @@ mmrPos = #(define-music-function
 
 menuetdacapo = \markup { \italic "Menuet da capo" }
 
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+stemOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \offset length #offset Stem
+	#}
+)
+
+
 %dynEO = #(define-music-function
 %	(offset)
 %	(pair?)
@@ -89,14 +106,6 @@ menuetdacapo = \markup { \italic "Menuet da capo" }
 %	(number?)
 %	#{
 %		\once \override Voice.Arpeggio.padding = #padding
-%	#}
-%)
-
-%beamOffset = #(define-music-function
-%	(position)
-%	(pair?)
-%	#{
-%		\once \offset positions #position Beam
 %	#}
 %)
 
@@ -298,13 +307,6 @@ menuetdacapo = \markup { \italic "Menuet da capo" }
 %}
 
 
-%stemOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \offset length #offset Stem
-%	#}
-%)
 
 %textInSlur = {
 %	%\once \override TextScript.outside-staff-priority = 0

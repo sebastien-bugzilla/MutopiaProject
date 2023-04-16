@@ -560,14 +560,85 @@ cueVoiceFagottoMvtIX = \relative c {
 	a16 g a f g f g a
 	f2-\offset X-offset -4 _\menuetdacapo \markFermata 
 }
-
-
 %###############################################################################
 %#          C U E   V O I C E   F O R   V I O L I N O   P I C C O L O          #
 %###############################################################################
-
-
-
+cueVoiceViolinopiccoloMvtIII = \relative c {
+	\voiceOne s2.*50
+	% bar 51 - 53
+	c''16^\markup {Viol.I} b c g a g a e f e f d
+	e d e b c b c d d8. c16
+	c8 s4 s4.
+}
+cueVoiceViolinopiccoloMvtV = \relative c {
+	% bar 1 - 4
+	\voiceOne f''2^\markup {Ob.I} g4
+	e2 f4
+	d bes'2
+	g4.(\trill f16 g) a4
+	s2.*5
+	% bar 9 - 12
+	e2^\markup {Ob.I} f4
+	g2 e4
+	f d g
+	f8( e d e) c d
+	s2.*12
+	% bar 25 - 28_2
+	d2^\markup {Ob.I} e4
+	cis8 e g4. a8
+	g f e d e cis
+	d2.
+	d-\offset X-offset -3 _\menuetdacapo \markFermata \bar "|."
+}
+cueVoiceViolinopiccoloMvtVII = \relative c {
+	% bar 0 - 4
+	\voiceOne \partial 8 c'8^\markup {Viol.I}
+	f16( a) g( e) f( c) 
+	g'( bes) a( f) g( c,)
+	a'( c) bes( g) a( f)
+	bes8 bes8.( g16)
+	s4.*8
+	% bar 13 - 20
+	d'16(^\markup {Viol.I} b) f'( d) e( c)
+	d( b) c( a) b( g)
+	g'8 f16( e) d( c)
+	d( b) c8 c,\noBeam
+	d'16( b) c8 g\noBeam
+	c16(^\markup {Viol.I} e) d( b) c( g)
+	d'( f) e( c) d( g,)
+	e'( g) f( d) e( g,)
+	bes'8 bes8.( a16)
+	s4.*8
+	% bar 29 - 32_2
+	a,,16(^\markup {Viol.I} c) bes( g) a( c)
+	f( a) g( e) f( a)
+	c8 bes16( a) g( f)
+	g( e) f8 g\noBeam
+	g16([ e) f8]-\offset X-offset -6 _\menuetdacapo \markFermata 
+}
+cueVoiceViolinopiccoloMvtIX = \relative c {
+	% bar 1 - 4
+	\voiceOne c''4-.^\markup {Corno I} d8 c
+	bes a bes g
+	a4-. c-.
+	bes8 a bes g
+	s2*8
+	% bar 13 - 20
+	a8^\markup {Corno I} f c'4-.
+	a8 f f'4-.
+	a,8 g16 a bes a bes a
+	g2
+	g4-. f8 g
+	a g a f
+	g4-. bes-.
+	a8 g a f
+	s2*8
+	% bar 29 - 32
+	g8^\markup {Corno I} c, bes'4
+	a8 f f' c
+	a16 g a f g f g a
+	f2-\offset X-offset -4 _\menuetdacapo \markFermata 
+}
 %###############################################################################
 %#                C U E   V O I C E   F O R   V I O L I N O   I                #
 %###############################################################################

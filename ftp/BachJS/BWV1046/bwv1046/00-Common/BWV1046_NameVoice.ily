@@ -198,47 +198,49 @@ nameFagottoMvtV = {
 	\set Staff.instrumentName = #"Fagotto"
 	\set Staff.shortInstrumentName = #""
 }
-%nameFagottoMvtVI = {
-%	\set Staff.instrumentName = #"Fagotto"
-%	\set Staff.shortInstrumentName = #""
-%}
-%nameFagottoMvtVIII = {
-%	\set Staff.instrumentName = #"Fagotto"
-%	\set Staff.shortInstrumentName = #""
-%}
-%nameFagottoMvtX = {
-%	\set Staff.instrumentName = #"Fagotto"
-%	\set Staff.shortInstrumentName = #""
-%}
 %###############################################################################
 %#          V O I C E   N A M E S   :   V I O L I N O   P I C C O L O          #
 %###############################################################################
 nameViolinopiccoloMvtI = {
-	\set Staff.instrumentName = #"Violino piccolo"
+	\set Staff.instrumentName = \markup {
+		\center-column { \lower #1.5 "Violino" "piccolo" }
+	}
 	\set Staff.shortInstrumentName = #""
 }
 nameViolinopiccoloMvtII = {
-	\set Staff.instrumentName = #"Violino piccolo"
+	\set Staff.instrumentName = \markup {
+		\center-column { \lower #1.5 "Violino" "piccolo" }
+	}
 	\set Staff.shortInstrumentName = #""
 }
 nameViolinopiccoloMvtIII = {
-	\set Staff.instrumentName = #"Violino piccolo"
+	\set Staff.instrumentName = \markup {
+		\center-column { \lower #1.5 "Violino" "piccolo" }
+	}
 	\set Staff.shortInstrumentName = #""
 }
 nameViolinopiccoloMvtIV = {
-	\set Staff.instrumentName = #"Violino piccolo"
+	\set Staff.instrumentName = \markup {
+		\center-column { \lower #1.5 "Violino" "piccolo" }
+	}
 	\set Staff.shortInstrumentName = #""
 }
-nameViolinopiccoloMvtVI = {
-	\set Staff.instrumentName = #"Violino piccolo"
+nameViolinopiccoloMvtV = {
+	\set Staff.instrumentName = \markup {
+		\center-column { \lower #1.5 "Violino" "piccolo" }
+	}
 	\set Staff.shortInstrumentName = #""
 }
-nameViolinopiccoloMvtVIII = {
-	\set Staff.instrumentName = #"Violino piccolo"
+nameViolinopiccoloMvtVII = {
+	\set Staff.instrumentName = \markup {
+		\center-column { \lower #1.5 "Violino" "piccolo" }
+	}
 	\set Staff.shortInstrumentName = #""
 }
-nameViolinopiccoloMvtX = {
-	\set Staff.instrumentName = #"Violino piccolo"
+nameViolinopiccoloMvtIX = {
+	\set Staff.instrumentName = \markup {
+		\center-column { \lower #1.5 "Violino" "piccolo" }
+	}
 	\set Staff.shortInstrumentName = #""
 }
 %###############################################################################
