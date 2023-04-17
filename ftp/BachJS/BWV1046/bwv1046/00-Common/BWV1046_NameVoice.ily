@@ -262,22 +262,22 @@ nameViolinoIMvtIV = {
 	\set Staff.instrumentName = #"Violino I"
 	\set Staff.shortInstrumentName = #""
 }
-nameViolinoIMvtVI = {
-	\set Staff.instrumentName = #"Violino I"
-	\set Staff.shortInstrumentName = #""
-}
+%nameViolinoIMvtVI = {
+%	\set Staff.instrumentName = #"Violino I"
+%	\set Staff.shortInstrumentName = #""
+%}
 nameViolinoIMvtVII = {
 	\set Staff.instrumentName = #"Violino I"
 	\set Staff.shortInstrumentName = #""
 }
-nameViolinoIMvtVIII = {
-	\set Staff.instrumentName = #"Violino I"
-	\set Staff.shortInstrumentName = #""
-}
-nameViolinoIMvtX = {
-	\set Staff.instrumentName = #"Violino I"
-	\set Staff.shortInstrumentName = #""
-}
+%nameViolinoIMvtVIII = {
+%	\set Staff.instrumentName = #"Violino I"
+%	\set Staff.shortInstrumentName = #""
+%}
+%nameViolinoIMvtX = {
+%	\set Staff.instrumentName = #"Violino I"
+%	\set Staff.shortInstrumentName = #""
+%}
 %###############################################################################
 %#               V O I C E   N A M E S   :   V I O L I N O   I I               #
 %###############################################################################
