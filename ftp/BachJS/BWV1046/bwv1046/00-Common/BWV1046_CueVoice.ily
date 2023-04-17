@@ -703,8 +703,68 @@ cueVoiceViolinoIMvtIX = \relative c {
 %###############################################################################
 %#               C U E   V O I C E   F O R   V I O L I N O   I I               #
 %###############################################################################
-
-
+cueVoiceViolinoIIMvtIII = \relative c {
+	\voiceOne s2.*33
+	% bar 34
+	<b' g' f'>16^\markup {Viol.picc.} e' d c d b g'8 g g
+	s2.*24
+	% bar 59 - 60
+	gis,16-\offset X-offset -3 ^\markup {\center-column {\lower #2 "Viol." "picc."}} b d f e8~ e16 d c8 b16\trill a
+	a8 e' a f\trill s4
+	s2.*18
+	% bar 79 - 80
+	fis,16(^\markup {Viol.picc.} a c ees) d8~ d16 c bes8\trill a16 g
+	g8 d' g ees\trill s4
+	s2.*20
+	% bar 101 - 102
+	<d, b' f'>8^\markup {Viol.picc.} g'16 f e d e f e d c d
+	e f g f g e f8 s4
+}
+cueVoiceViolinoIIMvtV = \relative c {
+	\voiceOne 
+	% bar 1 - 4
+	f''2^\markup {Ob.I} g4
+	e2 f4
+	d4 bes'2
+	g4.(\trill f16 g) a4
+	s2.*5
+	% bar 9 - 12
+	e2^\markup {Ob.I} f4
+	g2 e4
+	f d g
+	f8( e d e) c d
+	s2.*12
+	% bar 25 - 28_2
+	d2^\markup {Ob.I} e4
+	cis8 e g4. a8
+	g f e d e cis
+	d2.
+	d-\offset X-offset -3 _\menuetdacapo \markFermata \bar "|."
+}
+cueVoiceViolinoIIMvtIX = \relative c {
+	\voiceOne 
+	% bar 1 - 4
+	c''4^\markup {Corno.I} d8 c
+	bes a bes g
+	a4-. c-.
+	bes8 a bes g
+	s2*8
+	% bar 13 - 20
+	a8^\markup {Corno.I} f c'4-.
+	a8 f f'4-.
+	a,8 g16 a bes a bes a
+	g2
+	g4-. f8 g
+	a g a f
+	g4-. bes-. 
+	a8 g a f
+	s2*8
+	% bar 29 - 32
+	g8^\markup {Corno.I} c, bes'4
+	a8 f f' c
+	a16 g a f g f g a
+	f2-\offset X-offset -4 _\menuetdacapo \markFermata
+}
 %###############################################################################
 %#                    C U E   V O I C E   F O R   V I O L A                    #
 %###############################################################################
