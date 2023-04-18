@@ -70,37 +70,37 @@ tempiPartMvtIII = {
 	}
 }
 tempiPartMvtIV = {
-	\tag #'(violinoII viola violoncello continuo) {
+	\tag #'(violoncello continuo) {
 		\tempo "Menuet"
 	}
 }
 tempiPartMvtV = {
-	\tag #'(violinoII viola violoncello continuo) {
+	\tag #'(violoncello continuo) {
 		\tempo "Trio"
 	}
 }
 tempiPartMvtVI = {
-	\tag #'(violinoII viola violoncello continuo) {
+	\tag #'(violoncello continuo) {
 		\tempo "Menuet"
 	}
 }
 tempiPartMvtVII = {
-	\tag #'(violinoII viola violoncello continuo) {
+	\tag #'(violoncello continuo) {
 		\tempo "Polonaise"
 	}
 }
 tempiPartMvtVIII = {
-	\tag #'(violinoII viola violoncello continuo) {
+	\tag #'(violoncello continuo) {
 		\tempo "Menuet"
 	}
 }
 tempiPartMvtIX = {
-	\tag #'(violinoII viola violoncello continuo) {
+	\tag #'(violoncello continuo) {
 		\tempo "Trio"
 	}
 }
 tempiPartMvtX = {
-	\tag #'(violinoII viola violoncello continuo) {
+	\tag #'(violoncello continuo) {
 		\tempo "Menuet"
 	}
 }

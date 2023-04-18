@@ -1,261 +1,215 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      00_BWV1046_Part07_Vla.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
 %###############################################################################
-%#                           S E C T I O N  P A P E R                          #
+%#                                 H E A D E R                                 #
 %###############################################################################
-\paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { 
-				\fromproperty #'header:dedication
-			}
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-\include "./00-Common/BWV1046_timeMvt.ly"
-\include "./00-Common/BWV1046_Parts_option.ly"
-\include "./00-Common/BWV1046_VoiceName.ly"
-\include "./00-Common/BWV1046_markup.ly"
-\include "./01-Mvt1/m01_v10_music_Viola.ly"
-\include "./02-Mvt2/m02_v10_music_Viola.ly"
-\include "./03-Mvt3/m03_v10_music_Viola.ly"
-\include "./04-Mvt4/m04_v10_music_Viola.ly"
-\include "./06-Mvt6/m06_v10_music_Viola.ly"
-\include "./07-Mvt7/m07_v10_music_Viola.ly"
-\include "./08-Mvt8/m08_v10_music_Viola.ly"
-\include "./10-Mvt10/m10_v10_music_Viola.ly"
-\include "./00-Common/00_BWV1046_Format_Vla.ly"
+%
+%  Composer           : Johann Sebastian Bach (1685 - 1750)
+%  work               : Brandenburg Concerto No.1 in F major, BWV1046
+%  Source             : Bach-Gesellschaft Ausgabe, Band 19 (pp.1-30)
+%                       Leipzig: Breitkopf und Härtel, 1871. Plate B.W. XIX.
+%  Type of score      : Score Part Viola
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Monday 03 April 2023, 23:44
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/BWV1046_Header.ily"
+\include "./00-Common/BWV1046_PaperParts.ily"
+\include "./00-Common/BWV1046_timeMvt.ily"
+\include "./00-Common/BWV1046_LayoutParts.ily"
+\include "./00-Common/BWV1046_Shortcuts.ily"
+\include "./00-Common/BWV1046_NameVoice.ily"
+\include "./00-Common/BWV1046_Format_Part07_Vla.ily"
+\include "./00-Common/BWV1046_CueVoice.ily"
+\include "./00-Common/BWV1046_Tempi.ily"
+\include "./01-Mvt1/m01_v10_music_Viola.ily"
+\include "./02-Mvt2/m02_v10_music_Viola.ily"
+\include "./03-Mvt3/m03_v10_music_Viola_V.ily"
+\include "./04-Mvt4/m04_v10_music_Viola.ily"
+\include "./05-Mvt5/m05_v10_music_Viola_V.ily"
+\include "./07-Mvt7/m07_v10_music_Viola_V.ily"
+\include "./09-Mvt9/m09_v10_music_Viola_V.ily"
 %###############################################################################
 %#                          S C O R E    S E C T I O N                         #
 %###############################################################################
 \book {
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Johann Sebastian Bach"
-				"1685 - 1750"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Concerto Brandebourgeois n 1"
-				"en Fa majeur BWV1046"
+				"Part for Viola"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"Part for Vla"
-			}
+		subsubtitle = \markup { 
+			"Johann Sebastian Bach — "
+			"Brandenburg Concerto No.1 — BWV1046"
+		}
+		instrument = \markup {
+			"Viola"
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVoiceX
+				\formatViolaMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVoiceX \musicViolaMvtI
+				\keepWithTag #'(viola) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameViolaMvtI \musicViolaMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold \larger 1.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIVoiceX
+				\formatViolaMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameVoiceX \musicViolaMvtII
+				\keepWithTag #'(viola) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameViolaMvtII \musicViolaMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #3 \bold \larger 2.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIIVoiceX
+				\formatViolaMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVoiceX \musicViolaMvtIII
+				\InCueContext \cueVoiceViolaMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameViolaMvtIII \musicViolaMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2.6 \bold \larger 3.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVVoiceX
+				\formatViolaMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameVoiceX \musicViolaMvtIV
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\timeMvtV \generalOptions \partOptions
-				\nameVoiceX R2.*28
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIVoiceX
+				\keepWithTag #'(viola) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtVI \generalOptions \partOptions
-				\nameVoiceX \musicViolaMvtVI
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIIVoiceX
-			}
-			\new Voice {
-				\timeMvtVII \generalOptions \partOptions
-				\nameVoiceX \musicViolaMvtVII
+				\timeMvtIV \nameViolaMvtIV \musicViolaMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##t
+			piece = \markup {
+				\bold \larger 4. Menuet
+			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtVIIIVoiceX
+				\formatViolaMvtV
 			}
 			\new Voice {
-				\timeMvtVIII \generalOptions \partOptions
-				\nameVoiceX \musicViolaMvtVIII
+				\InCueContext \cueVoiceViolaMvtV
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtV
+			}
+			\new Voice {
+				\timeMvtV \musicViolaMvtV
 			}
 		>>
 		\header {
 			breakbefore = ##f
+			piece = \markup {
+				\vspace #1.5 \bold \larger Trio : \italic \underline tacet
+			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\timeMvtIX \generalOptions \partOptions
-				\nameVoiceX R2*32
+				\formatViolaMvtVII
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtVII
+			}
+			\new Voice {
+				\timeMvtVII \nameViolaMvtVII \musicViolaMvtVII
 			}
 		>>
 		\header {
 			breakbefore = ##f
+			piece = \markup {
+				\vspace #2.3 \bold \larger Polonaise
+			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtXVoiceX
+				\formatViolaMvtIX
 			}
 			\new Voice {
-				\timeMvtX \generalOptions \partOptions
-				\nameVoiceX \musicViolaMvtX
+				\InCueContext \cueVoiceViolaMvtIX
+			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIX
+			}
+			\new Voice {
+				\timeMvtIX \musicViolaMvtIX
 			}
 		>>
 		\header {
 			breakbefore = ##f
+			piece = \markup {
+				\vspace #1.6 \bold \larger Trio : \underline \italic tacet
+			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 }
