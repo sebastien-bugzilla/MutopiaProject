@@ -349,83 +349,94 @@ nameViolaMvtX = {
 	\set Staff.shortInstrumentName = #""
 }
 %###############################################################################
-%#             V O I C E   N A M E S   :   V I O L O N C E L L O               #
-%###############################################################################
-nameVioloncelloMvtI = {
-	\set Staff.instrumentName = #"Violoncello"
-	\set Staff.shortInstrumentName = #""
-}
-%###############################################################################
 %#                V O I C E   N A M E S   :   C O N T I N U O                  #
 %###############################################################################
-nameContinuoMvtI = {
+nameContinuoeMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\line { "Continuo e" }
-			\line { "Violone grosso" }
+			\lower #2.4 "Continuo"
+			\lower #1.2 "e Violone" "grosso"
 		}
 	}
 	\set Staff.shortInstrumentName = #""
 }
-nameContinuoMvtII = {
+nameContinuoeMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\line { "Continuo e" }
-			\line { "Violone grosso" }
+			\lower #2.4 "Continuo"
+			\lower #1.2 "e Violone" "grosso"
 		}
 	}
 	\set Staff.shortInstrumentName = #""
 }
-nameContinuoMvtIII = {
+nameContinuoeMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\line { "Continuo e" }
-			\line { "Violone grosso" }
+			\lower #2.4 "Continuo"
+			\lower #1.2 "e Violone" "grosso"
 		}
 	}
 	\set Staff.shortInstrumentName = #""
 }
-nameContinuoMvtIV = {
+nameContinuoeMvtIV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\line { "Continuo e" }
-			\line { "Violone grosso" }
+			\lower #2.4 "Continuo"
+			\lower #1.2 "e Violone" "grosso"
 		}
 	}
 	\set Staff.shortInstrumentName = #""
 }
-nameContinuoMvtVI = {
+nameContinuoeMvtVI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\line { "Continuo e" }
-			\line { "Violone grosso" }
+			\lower #2.4 "Continuo"
+			\lower #1.2 "e Violone" "grosso"
 		}
 	}
 	\set Staff.shortInstrumentName = #""
 }
-nameContinuoMvtVII = {
+nameContinuoeMvtV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\line { "Continuo e" }
-			\line { "Violone grosso" }
+			\lower #2.5 "Continuo"
+			\lower #1.5 "e Violone" "grosso"
 		}
 	}
 	\set Staff.shortInstrumentName = #""
 }
-nameContinuoMvtVIII = {
+nameContinuoeMvtVII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\line { "Continuo e" }
-			\line { "Violone grosso" }
+			\lower #2.4 "Continuo"
+			\lower #1.2 "e Violone" "grosso"
 		}
 	}
 	\set Staff.shortInstrumentName = #""
 }
-nameContinuoMvtX = {
+nameContinuoeMvtVIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\line { "Continuo e" }
-			\line { "Violone grosso" }
+			\lower #2.4 "Continuo"
+			\lower #1.2 "e Violone" "grosso"
+		}
+	}
+	\set Staff.shortInstrumentName = #""
+}
+nameContinuoeMvtIX = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #2.4 "Continuo"
+			\lower #1.2 "e Violone" "grosso"
+		}
+	}
+	\set Staff.shortInstrumentName = #""
+}
+nameContinuoeMvtX = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #2.4 "Continuo"
+			\lower #1.2 "e Violone" "grosso"
 		}
 	}
 	\set Staff.shortInstrumentName = #""

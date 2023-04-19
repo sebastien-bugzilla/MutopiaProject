@@ -1,441 +1,225 @@
-% Project Name : Concerto Brandebourgeois n°1
-% Fichier :      00_BWV1046_Part08_Vlc.ly
-% Generated on : Wednesday 19 June 2019, 22:53:55
 %###############################################################################
-%#                           S E C T I O N  P A P E R                          #
+%#                                 H E A D E R                                 #
 %###############################################################################
-\paper {
-	ragged-last-bottom = ##t
-	ragged-bottom = ##t
-	bookTitleMarkup = \markup {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\fill-line { 
-				\fromproperty #'header:dedication
-			}
-			\override #'(baseline-skip . 3.5)
-			\column {
-				\fill-line {
-					\huge \larger \larger \bold
-					\fromproperty #'header:title
-				}
-				\fill-line {
-					\large %\bold
-					\fromproperty #'header:subtitle
-				}
-				\fill-line {
-					\smaller %\bold
-					\fromproperty #'header:subsubtitle
-				}
-				\fill-line {
-					\fromproperty #'header:poet
-					{ \large \bold \fromproperty #'header:instrument }
-					\fromproperty #'header:composer
-				}
-				\fill-line {
-					\fromproperty #'header:meter
-					\fromproperty #'header:arranger
-				}
-			}
-		}
-	}
-}
-\include "./00-Common/BWV1046_timeMvt.ly"
-\include "./00-Common/BWV1046_Parts_option.ly"
-\include "./00-Common/BWV1046_VoiceName.ly"
-\include "./00-Common/BWV1046_markup.ly"
-\include "./01-Mvt1/m01_v11_music_Violoncello.ly"
-\include "./01-Mvt1/m01_v12_music_Continuoe.ly"
-\include "./02-Mvt2/m02_v12_music_Continuoe.ly"
-\include "./03-Mvt3/m03_v12_music_Continuoe.ly"
-\include "./04-Mvt4/m04_v12_music_Continuoe.ly"
-\include "./06-Mvt6/m06_v12_music_Continuoe.ly"
-\include "./07-Mvt7/m07_v12_music_Continuoe.ly"
-\include "./08-Mvt8/m08_v12_music_Continuoe.ly"
-\include "./10-Mvt10/m10_v12_music_Continuoe.ly"
-\include "./00-Common/00_BWV1046_Format_Vlc.ly"
+%
+%  Composer           : Johann Sebastian Bach (1685 - 1750)
+%  work               : Brandenburg Concerto No.1 in F major, BWV1046
+%  Source             : Bach-Gesellschaft Ausgabe, Band 19 (pp.1-30)
+%                       Leipzig: Breitkopf und Härtel, 1871. Plate B.W. XIX.
+%  Type of score      : Score Part Cello
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Monday 03 April 2023, 23:44
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.22.1"
+\include "./00-Common/BWV1046_Header.ily"
+\include "./00-Common/BWV1046_PaperParts.ily"
+\include "./00-Common/BWV1046_timeMvt.ily"
+\include "./00-Common/BWV1046_LayoutParts.ily"
+\include "./00-Common/BWV1046_Shortcuts.ily"
+\include "./00-Common/BWV1046_NameVoice.ily"
+\include "./00-Common/BWV1046_Format_Part08_Vlc.ily"
+\include "./00-Common/BWV1046_CueVoice.ily"
+\include "./00-Common/BWV1046_Tempi.ily"
+\include "./01-Mvt1/m01_v11_music_Violoncello.ily"
+\include "./01-Mvt1/m01_v12_music_Continuoe.ily"
+\include "./02-Mvt2/m02_v12_music_Continuoe.ily"
+\include "./03-Mvt3/m03_v12_music_Continuoe.ily"
+\include "./04-Mvt4/m04_v12_music_Continuoe.ily"
+\include "./05-Mvt5/m05_v12_music_Continuoe_V.ily"
+\include "./07-Mvt7/m07_v12_music_Continuoe_V.ily"
+\include "./09-Mvt9/m09_v12_music_Continuoe_V.ily"
 %###############################################################################
 %#                          S C O R E    S E C T I O N                         #
 %###############################################################################
 \book {
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"Johann Sebastian Bach"
-				"1685 - 1750"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"Concerto Brandebourgeois n 1"
-				"en Fa majeur BWV1046"
+				"Part for Violoncello"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
+		subsubtitle = \markup { 
+			"Johann Sebastian Bach — "
+			"Brandenburg Concerto No.1 — BWV1046"
+		}
+		instrument = \markup {
+			"Cello"
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
 			\center-column {
-				\vspace #10
-				"Part for Vlc"
+				"The first three movements are formatted to"
+				"be displayed on three pages. Attached the "
+				"first page next to the second page"
 			}
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVoiceXI
+				\formatContinuoeMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVoiceXI \musicVioloncelloMvtI
+				\keepWithTag #'(continuoe) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameContinuoeMvtI \musicContinuoeMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold \larger 1.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIVoiceXI
+				\formatContinuoeMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameVoiceXI \musicContinuoeMvtII
+				\keepWithTag #'(continuoe) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameContinuoeMvtII \musicContinuoeMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold \larger 2.
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIIVoiceXI
+				\formatContinuoeMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVoiceXI \musicContinuoeMvtIII
+				\keepWithTag #'(continuoe) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameContinuoeMvtIII \musicContinuoeMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold \larger 3.
+			}
+		}
+		\layout {
+			\layoutPart
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatContinuoeMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(continuoe) \tempiPartMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameContinuoeMvtIV \musicContinuoeMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold \larger 4. Menuet
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVVoiceXI
+				\formatContinuoeMvtV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameVoiceXI \musicContinuoeMvtIV
-			}
-		>>
-		\header {
-			breakbefore = ##t
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\timeMvtV \generalOptions \partOptions
-				\nameVoiceXI R2.*28
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIVoiceXI
+				\InCueContext \cueVoiceContinuoeMvtV
 			}
 			\new Voice {
-				\timeMvtVI \generalOptions \partOptions
-				\nameVoiceXI \musicContinuoeMvtVI
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIIVoiceXI
+				\keepWithTag #'(continuoe) \tempiPartMvtV
 			}
 			\new Voice {
-				\timeMvtVII \generalOptions \partOptions
-				\nameVoiceXI \musicContinuoeMvtVII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		    system-count = 4
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIIIVoiceXI
-			}
-			\new Voice {
-				\timeMvtVIII \generalOptions \partOptions
-				\nameVoiceXI \musicContinuoeMvtVIII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\timeMvtIX \generalOptions \partOptions
-				\nameVoiceXI R2*32
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtXVoiceXI
-			}
-			\new Voice {
-				\timeMvtX \generalOptions \partOptions
-				\nameVoiceXI \musicContinuoeMvtX
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtIVoiceXII
-			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVoiceXII \musicContinuoeMvtI
-			}
-		>>
-		\header {
-			breakbefore = ##t
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtIIVoiceXII
-			}
-			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameVoiceXII \musicContinuoeMvtII
+				\timeMvtV \musicContinuoeMvtV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.3 \bold \larger Trio : \italic \underline tacet
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIIIVoiceXII
+				\formatContinuoeMvtVII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVoiceXII \musicContinuoeMvtIII
+				\keepWithTag #'(continuoe) \tempiPartMvtVII
+			}
+			\new Voice {
+				\timeMvtVII \nameContinuoeMvtVII \musicContinuoeMvtVII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2.1 \bold \larger Polonaise
 			}
 		}
 		\layout {
+			\layoutPart
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatMvtIVVoiceXII
+				\formatContinuoeMvtIX
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameVoiceXII \musicContinuoeMvtIV
+				\InCueContext \cueVoiceContinuoeMvtIX
+			}
+			\new Voice {
+				\keepWithTag #'(continuoe) \tempiPartMvtIX
+			}
+			\new Voice {
+				\timeMvtIX \musicContinuoeMvtIX
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #1.7 \bold \larger Trio : \underline \italic tacet
 			}
 		}
 		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\timeMvtV \generalOptions \partOptions
-				\nameVoiceXII R2.*28
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIVoiceXII
-			}
-			\new Voice {
-				\timeMvtVI \generalOptions \partOptions
-				\nameVoiceXII \musicContinuoeMvtVI
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIIVoiceXII
-			}
-			\new Voice {
-				\timeMvtVII \generalOptions \partOptions
-				\nameVoiceXII \musicContinuoeMvtVII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtVIIIVoiceXII
-			}
-			\new Voice {
-				\timeMvtVIII \generalOptions \partOptions
-				\nameVoiceXII \musicContinuoeMvtVIII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\timeMvtIX \generalOptions \partOptions
-				\nameVoiceXII R2*32
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatMvtXVoiceXII
-			}
-			\new Voice {
-				\timeMvtX \generalOptions \partOptions
-				\nameVoiceXII \musicContinuoeMvtX
-			}
-		>>
-		\header {
-			breakbefore = ##f
-		}
-		\layout {
+			\layoutPart
 		}
 	}
 }
