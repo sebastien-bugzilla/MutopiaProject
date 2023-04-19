@@ -1,4 +1,4 @@
-%  work        : Johann Sebastian Bach, Brandeburg Concerto No.I, BWV1046
+%  work        : Johann Sebastian Bach, Brandenburg Concerto No.I, BWV1046
 %  typesetter  : Sébastien MANEN
 %  date        : Monday 03 April 2023, 23:44
 %###############################################################################

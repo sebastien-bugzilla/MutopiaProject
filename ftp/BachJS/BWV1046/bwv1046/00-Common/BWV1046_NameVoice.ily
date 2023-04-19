@@ -1,4 +1,4 @@
-%  work        : Johann Sebastian Bach, Brandeburg Concerto No.I, BWV1046
+%  work        : Johann Sebastian Bach, Brandenburg Concerto No.I, BWV1046
 %  typesetter  : Sébastien MANEN
 %  date        : Monday 03 April 2023, 23:44
 %###############################################################################
@@ -16,19 +16,7 @@ nameCornoIMvtIV = {
 	\set Staff.instrumentName = #"Corno I"
 	\set Staff.shortInstrumentName = #""
 }
-nameCornoIMvtVI = {
-	\set Staff.instrumentName = #"Corno I"
-	\set Staff.shortInstrumentName = #""
-}
-nameCornoIMvtVIII = {
-	\set Staff.instrumentName = #"Corno I"
-	\set Staff.shortInstrumentName = #""
-}
 nameCornoIMvtIX = {
-	\set Staff.instrumentName = #"Corno I"
-	\set Staff.shortInstrumentName = #""
-}
-nameCornoIMvtX = {
 	\set Staff.instrumentName = #"Corno I"
 	\set Staff.shortInstrumentName = #""
 }
@@ -44,19 +32,7 @@ nameCornoIIMvtIV = {
 	\set Staff.instrumentName = #"Corno II"
 	\set Staff.shortInstrumentName = #""
 }
-nameCornoIIMvtVI = {
-	\set Staff.instrumentName = #"Corno II"
-	\set Staff.shortInstrumentName = #""
-}
-nameCornoIIMvtVIII = {
-	\set Staff.instrumentName = #"Corno II"
-	\set Staff.shortInstrumentName = #""
-}
 nameCornoIIMvtIX = {
-	\set Staff.instrumentName = #"Corno II"
-	\set Staff.shortInstrumentName = #""
-}
-nameCornoIIMvtX = {
 	\set Staff.instrumentName = #"Corno II"
 	\set Staff.shortInstrumentName = #""
 }
@@ -83,19 +59,7 @@ nameOboeIMvtV = {
 	\set Staff.instrumentName = #"Oboe I"
 	\set Staff.shortInstrumentName = #""
 }
-nameOboeIMvtVI = {
-	\set Staff.instrumentName = #"Oboe I"
-	\set Staff.shortInstrumentName = #""
-}
-nameOboeIMvtVIII = {
-	\set Staff.instrumentName = #"Oboe I"
-	\set Staff.shortInstrumentName = #""
-}
 nameOboeIMvtIX = {
-	\set Staff.instrumentName = #"Oboe I"
-	\set Staff.shortInstrumentName = #""
-}
-nameOboeIMvtX = {
 	\set Staff.instrumentName = #"Oboe I"
 	\set Staff.shortInstrumentName = #""
 }
@@ -119,19 +83,7 @@ nameOboeIIMvtV = {
 	\set Staff.instrumentName = #"Oboe II"
 	\set Staff.shortInstrumentName = #""
 }
-nameOboeIIMvtVI = {
-	\set Staff.instrumentName = #"Oboe II"
-	\set Staff.shortInstrumentName = #""
-}
-nameOboeIIMvtVIII = {
-	\set Staff.instrumentName = #"Oboe II"
-	\set Staff.shortInstrumentName = #""
-}
 nameOboeIIMvtIX = {
-	\set Staff.instrumentName = #"Oboe II"
-	\set Staff.shortInstrumentName = #""
-}
-nameOboeIIMvtX = {
 	\set Staff.instrumentName = #"Oboe II"
 	\set Staff.shortInstrumentName = #""
 }
@@ -155,26 +107,14 @@ nameOboeIIIMvtV = {
 	\set Staff.instrumentName = #"Oboe III"
 	\set Staff.shortInstrumentName = #""
 }
-%nameOboeIIIMvtVI = {
-%	\set Staff.instrumentName = #"Oboe III"
-%	\set Staff.shortInstrumentName = #""
-%}
 nameOboeIIIMvtVII = {
 	\set Staff.instrumentName = #"Oboe III"
 	\set Staff.shortInstrumentName = #""
 }
-%nameOboeIIIMvtVIII = {
-%	\set Staff.instrumentName = #"Oboe III"
-%	\set Staff.shortInstrumentName = #""
-%}
 nameOboeIIIMvtIX = {
 	\set Staff.instrumentName = #"Oboe III"
 	\set Staff.shortInstrumentName = #""
 }
-%nameOboeIIIMvtX = {
-%	\set Staff.instrumentName = #"Oboe III"
-%	\set Staff.shortInstrumentName = #""
-%}
 %###############################################################################
 %#                 V O I C E   N A M E S   :   F A G O T T O                   #
 %###############################################################################
@@ -225,24 +165,6 @@ nameViolinopiccoloMvtIV = {
 	}
 	\set Staff.shortInstrumentName = #""
 }
-nameViolinopiccoloMvtV = {
-	\set Staff.instrumentName = \markup {
-		\center-column { \lower #1.5 "Violino" "piccolo" }
-	}
-	\set Staff.shortInstrumentName = #""
-}
-nameViolinopiccoloMvtVII = {
-	\set Staff.instrumentName = \markup {
-		\center-column { \lower #1.5 "Violino" "piccolo" }
-	}
-	\set Staff.shortInstrumentName = #""
-}
-nameViolinopiccoloMvtIX = {
-	\set Staff.instrumentName = \markup {
-		\center-column { \lower #1.5 "Violino" "piccolo" }
-	}
-	\set Staff.shortInstrumentName = #""
-}
 %###############################################################################
 %#               V O I C E   N A M E S   :   V I O L I N O   I                 #
 %###############################################################################
@@ -262,22 +184,10 @@ nameViolinoIMvtIV = {
 	\set Staff.instrumentName = #"Violino I"
 	\set Staff.shortInstrumentName = #""
 }
-%nameViolinoIMvtVI = {
-%	\set Staff.instrumentName = #"Violino I"
-%	\set Staff.shortInstrumentName = #""
-%}
 nameViolinoIMvtVII = {
 	\set Staff.instrumentName = #"Violino I"
 	\set Staff.shortInstrumentName = #""
 }
-%nameViolinoIMvtVIII = {
-%	\set Staff.instrumentName = #"Violino I"
-%	\set Staff.shortInstrumentName = #""
-%}
-%nameViolinoIMvtX = {
-%	\set Staff.instrumentName = #"Violino I"
-%	\set Staff.shortInstrumentName = #""
-%}
 %###############################################################################
 %#               V O I C E   N A M E S   :   V I O L I N O   I I               #
 %###############################################################################
@@ -297,19 +207,7 @@ nameViolinoIIMvtIV = {
 	\set Staff.instrumentName = #"Violino II"
 	\set Staff.shortInstrumentName = #""
 }
-nameViolinoIIMvtVI = {
-	\set Staff.instrumentName = #"Violino II"
-	\set Staff.shortInstrumentName = #""
-}
 nameViolinoIIMvtVII = {
-	\set Staff.instrumentName = #"Violino II"
-	\set Staff.shortInstrumentName = #""
-}
-nameViolinoIIMvtVIII = {
-	\set Staff.instrumentName = #"Violino II"
-	\set Staff.shortInstrumentName = #""
-}
-nameViolinoIIMvtX = {
 	\set Staff.instrumentName = #"Violino II"
 	\set Staff.shortInstrumentName = #""
 }
@@ -332,19 +230,7 @@ nameViolaMvtIV = {
 	\set Staff.instrumentName = #"Viola"
 	\set Staff.shortInstrumentName = #""
 }
-nameViolaMvtVI = {
-	\set Staff.instrumentName = #"Viola"
-	\set Staff.shortInstrumentName = #""
-}
 nameViolaMvtVII = {
-	\set Staff.instrumentName = #"Viola"
-	\set Staff.shortInstrumentName = #""
-}
-nameViolaMvtVIII = {
-	\set Staff.instrumentName = #"Viola"
-	\set Staff.shortInstrumentName = #""
-}
-nameViolaMvtX = {
 	\set Staff.instrumentName = #"Viola"
 	\set Staff.shortInstrumentName = #""
 }
@@ -387,24 +273,6 @@ nameContinuoeMvtIV = {
 	}
 	\set Staff.shortInstrumentName = #""
 }
-nameContinuoeMvtVI = {
-	\set Staff.instrumentName = \markup {
-		\center-column {
-			\lower #2.4 "Continuo"
-			\lower #1.2 "e Violone" "grosso"
-		}
-	}
-	\set Staff.shortInstrumentName = #""
-}
-nameContinuoeMvtV = {
-	\set Staff.instrumentName = \markup {
-		\center-column {
-			\lower #2.5 "Continuo"
-			\lower #1.5 "e Violone" "grosso"
-		}
-	}
-	\set Staff.shortInstrumentName = #""
-}
 nameContinuoeMvtVII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
@@ -414,31 +282,3 @@ nameContinuoeMvtVII = {
 	}
 	\set Staff.shortInstrumentName = #""
 }
-nameContinuoeMvtVIII = {
-	\set Staff.instrumentName = \markup {
-		\center-column {
-			\lower #2.4 "Continuo"
-			\lower #1.2 "e Violone" "grosso"
-		}
-	}
-	\set Staff.shortInstrumentName = #""
-}
-nameContinuoeMvtIX = {
-	\set Staff.instrumentName = \markup {
-		\center-column {
-			\lower #2.4 "Continuo"
-			\lower #1.2 "e Violone" "grosso"
-		}
-	}
-	\set Staff.shortInstrumentName = #""
-}
-nameContinuoeMvtX = {
-	\set Staff.instrumentName = \markup {
-		\center-column {
-			\lower #2.4 "Continuo"
-			\lower #1.2 "e Violone" "grosso"
-		}
-	}
-	\set Staff.shortInstrumentName = #""
-}
-
