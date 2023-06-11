@@ -3,42 +3,47 @@
 %  typesetter  : Sébastien MANEN
 %  date        : Monday 04 May 2020, 21:05
 %###############################################################################
-%#                                 O P T I O N                                 #
+%#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-generalOptions = {
-	\version "2.20.0"
-	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.doubleRepeatType = #":|.|:"
-	\set Score.markFormatter = #format-mark-box-alphabet
-	\override Score.RehearsalMark #'font-size = #8
-	\compressFullBarRests
-	\override BreathingSign.text = \markup {
-		\musicglyph "scripts.caesura.curved"
-	}
-	\override Beam.auto-knee-gap = #3
-	\override Score.DynamicTextSpanner.font-size = #0
-	\override Score.SustainPedal.parent-alignment-X = 0
-}
-conductorOptions = {
-	\set Staff.soloText = #"1."
-	\set Staff.soloIIText = #"2."
-	\override Score.BarNumber #'font-size = #2
-	\override Score.RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
-	\override Score.RehearsalMark.outside-staff-priority = ##f
-	\override TupletNumber.avoid-slur = #'ignore
-	\override StaffGroup.SystemStartBracket.collapse-height = #4
-	\override Score.SystemStartBar.collapse-height = #4
-}
 #(set-global-staff-size 13)
 \layout {
-	%indent = 0\cm
+	#(layout-set-staff-size 13)
+	\set Score.alternativeNumberingStyle = #'numbers
+	\set Score.markFormatter = #format-mark-box-alphabet
+	\set Staff.soloText = #"1."
+	\set Staff.soloIIText = #"2."
+	\set Score.doubleRepeatType = #":|.|:"
+	\mergeDifferentlyDottedOn
+	\compressFullBarRests
+	\context {
+		\Score
+		\override RehearsalMark #'font-size = #8
+		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
+		\override RehearsalMark.outside-staff-priority = ##f
+		\override DynamicTextSpanner.font-size = #0
+		\override BarNumber #'font-size = #2
+		\override SystemStartBar.collapse-height = #4
+		\override SustainPedal.parent-alignment-X = 0
+	}
 	\context {
 		\Staff
 		\override TupletBracket #'bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
 		\RemoveEmptyStaves
+%		\RemoveAllEmptyStaves
 		%\override VerticalAxisGroup.remove-first = ##t
 		\override TupletNumber.avoid-slur = #'ignore
 	}
-	#(layout-set-staff-size 13)
+	\context {
+		\StaffGroup
+		\override SystemStartBracket.collapse-height = #4
+	}
+	\context {
+		\Voice
+		\override TupletNumber.avoid-slur = #'ignore
+		\override Beam.auto-knee-gap = #3
+		\override BreathingSign.text = \markup {
+			\musicglyph "scripts.caesura.curved"
+		}
+	}
 }
