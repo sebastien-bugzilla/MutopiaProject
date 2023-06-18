@@ -10,7 +10,7 @@ musicVioloncellMvtI = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	c2\pp( b8[ c e8. d16])
+	\aIIOmit c2\pp( b8[ c e8. d16])
 	d4 r r2
 	d2( cis8[ d f8. e16])
 	e4 r r8. e16([ g8. f16])
@@ -56,7 +56,7 @@ musicVioloncellMvtI = \relative c {
 	\tuplet 3/2 4 {c,\p e a c a e c e a c, e a}
 	\tuplet 3/2 4 {c,\sfp e a c a e c e a c, e a}
 	\tuplet 3/2 4 {d, g b d, g b d, fis a d cis d}
-	\partCombineAutomatic g,4 g,2_\crescmarkup( a8. b16)
+	\partCombineAutomatic g,4 g,2_\crescmarkup^\arco( a8. b16)
 % Bars 41 to 45
 	c4-.\p r c^\pizz c
 	c r r a
@@ -457,11 +457,11 @@ musicVioloncellMvtI = \relative c {
 	e! r r2
 	R1*2
 	
-	r4 \once \override CombineTextScript.X-offset = #-2 g\pp r2
+	\partCombineApart r4 g-\offset X-offset -1.5 \pp r2
 % Bars 416 to 420
 	r4 g r2
 	r8 g g g  g g g g
-	g g, g g  g g g g
+	g g, g g  g g g g \partCombineAutomatic
 	c4 r r r8. c16
 	c4 r r  r8. c16
 % Bars 421 to 425
@@ -553,8 +553,8 @@ musicVioloncellMvtI = \relative c {
 	g~
 	g~
 	g~
-	g~\<
-	g\>
+	<< g~ {\hairpinShorten #'(0 . -3.4) s4\< s s s\!}>>
+	<< g1 {\hairpinShorten #'(1.5 . -4) s4\> s s s\!}>>
 % Bars 506 to 510
 	c2\pp^\unobassoeviolonc b8[( c e8. c16)]
 	r2 b8[( c g'8. c,16)]

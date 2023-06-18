@@ -274,7 +274,7 @@ musicViolinIMvtI = \relative c' {
 	c8.[ a16-. e8.-. a16-.] c2\sf~
 % Bars 231 to 235
 	c8. a16 c4~\sf c8. a16 c4\sf~
-	c8.[ a16-. c8.-. a16-.] c8.[-. a16-. c8.-. a16-.]
+	c8.-.[ a16-. c8.-. a16-.] c8.[-. a16-. c8.-. a16-.]
 	<b, gis'>4\f r8. q16 <c a'>4 r8. q16
 	<b a'>4 r8. q16 <b gis'>4 r8. q16
 	<c a'>4 r r <gis e' b'>
@@ -417,7 +417,7 @@ musicViolinIMvtI = \relative c' {
 	a16\ff a a a a a a a a a a a a8\p a
 	a a a a a a a a
 % Bars 351 to 355
-	b16\ff b b b b b b b b b b b b8\p b
+	\beamOffset #'(0.5 . 0.5) b16\ff b b b b b b b b b b b b8\p b
 	b b b b b b b b \mark #11
 	cis16\f cis cis cis cis cis cis cis cis cis cis cis a8\p a 
 	a a a a a a a a
@@ -581,8 +581,8 @@ musicViolinIMvtI = \relative c' {
 	f
 	d~
 	d
-	b\<~
-	b\>
+	<< b~ {\hairpinShorten #'(0 . -3.4) s4\< s s s\!}>>
+	<<b1 {\hairpinShorten #'(1.5 . -4) s4\> s s s\!}>>
 % Bars 506 to 510
 	bes8\! e\pp e e e e e e 
 	e e e e e e e e 

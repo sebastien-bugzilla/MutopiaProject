@@ -63,10 +63,10 @@ musicPianoUpMvtI = \relative c'' {
 	<f f'>2. <g g'>4^\trill(
 	<a a'>_\crescmarkup <f f'> <d d'> <c c'>)
 	<b b'>2(\p\< <d d'>4..\> <c c'>16)\!
-	\afterGrace <f a>2.\startTrillSpan( {gis16[\stopTrillSpan a]} <a c>8. <f a>16)
+	\afterGrace 15/16 <f a>2.\startTrillSpan( {gis16[\stopTrillSpan a]} <a c>8. <f a>16)
 	<e g!>4-. <c' e>4. <c e>16 <b d> <a c> <g b> <f a> <e g>
 % Bars 106 to 110
-	<d f>4 \afterGrace <d, f>2\startTrillSpan {e16[\stopTrillSpan f]} <f a>8. <d f>16
+	<d f>4 \afterGrace 15/16 <d, f>2\startTrillSpan {e16[\stopTrillSpan f]} <f a>8. <d f>16
 	<c e>4 r e16\f f g a b c d e
 	a,4 r a16 b c d e f g a 
 	e e, f fis g gis a bes b c cis d dis e f fis
@@ -99,7 +99,7 @@ musicPianoUpMvtI = \relative c'' {
 	r8 e,16( e') d,( d') c,( c') b,( b') a,( a') g,( g') f,( f')
 	e,( e') r8 r4 r2
 	r8 e,16(\p e') f,( f') g,( g') a,( a') b,( b') c,( c') d,( d')
-	e,( e') r8 e2(\turn f8. c16)
+	e,( e') r8 e2(-\offset X-offset #3 -\offset Y-offset #2.6 \turn f8. c16)
 	e8.( dis16 d4.) d8\trill( \grace {cis16[ d]} e8 b)
 % Bars 136 to 140
 	d( c! b a) a4(-\tweak X-offset #-0.2 \trill \grace {gis16[ a]} c8. a16)
@@ -197,7 +197,7 @@ musicPianoUpMvtI = \relative c'' {
 	b~\startTrillSpan
 	b2~ b16\stopTrillSpan d, e fis gis a b c
 	<b d>1\startTrillSpan\cresc~
-	\afterGrace q {<a c>16[(\stopTrillSpan <b d>])} \mark \default
+	\afterGrace 15/16 q {<a c>16[(\stopTrillSpan <b d>])} \mark \default
 	<a c>4\ff r r2
 % Bars 226 to 230
 	R1*42
@@ -423,7 +423,7 @@ musicPianoUpMvtI = \relative c'' {
 	d2~ d16\stopTrillSpan b,-. c-. d-. e-. f-. g-. a-.
 	b1\startTrillSpan~\cresc
 % Bars 461 to 465
-	\afterGrace b {a16[(\stopTrillSpan b])} \mark \default
+	\afterGrace 15/16 b {a16[(\stopTrillSpan b])} \mark \default
 	c4\ff r r2
 	R1*8
 % Bars 466 to 470
@@ -456,7 +456,7 @@ musicPianoUpMvtI = \relative c'' {
 	r8. <g b! f' g>16 q8 r r8. q16 q8 r \mark \default
 	r2 r16 bes,,-\tweak X-offset #-2.3 \ff e g bes e g bes
 	a4 r r16 a f c a f c f
-	\change Staff = "down" \voiceOne \tuplet 3/2 4 {a,8^\p( f, a c a c f c f a f a}
+	\change Staff = "down" \voiceOne \tuplet 3/2 4 {\shape #'(((0 . 0)(0 . 2)(0 . 2)(0 . 0)) ()) Slur a,8-\offset X-offset -1 ^\p( f, a c a c f c f a f a}
 	\change Staff = "up" \oneVoice \tuplet 3/2 4 {c a c f c f a f a c a c}
 % Bars 496 to 500
 	\tuplet 3/2 4 {f c f a_\dimin f a c a c f c f}

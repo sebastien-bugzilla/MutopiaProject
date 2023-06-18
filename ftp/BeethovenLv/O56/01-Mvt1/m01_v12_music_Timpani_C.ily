@@ -66,7 +66,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 71 to 75
 	
 	
-	g1\ff\startTrillSpan
+	\trillSpanPadding #-2 g1\ff\startTrillSpan
 	c4\stopTrillSpan r8. c16 c4 c \mark \default
 	c4 r r2
 % Bars 76 to 80

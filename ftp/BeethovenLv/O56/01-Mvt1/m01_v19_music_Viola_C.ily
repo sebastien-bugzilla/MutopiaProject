@@ -575,8 +575,8 @@ musicViolaMvtI = \relative c' {
 	d
 	f~
 	f
-	<d f>\<~
-	q\>
+	<< <d f>~ {\hairpinShorten #'(0 . -3.4) s4\< s s s\!}>>
+	<<q1 {\hairpinShorten #'(1.5 . -4) s4\> s s s\!}>>
 % Bars 506 to 510
 	<c e>8\! g'\pp g g  g g g g
 	bes bes bes bes   bes bes bes bes

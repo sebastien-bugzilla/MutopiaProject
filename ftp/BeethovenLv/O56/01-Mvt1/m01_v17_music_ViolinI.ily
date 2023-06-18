@@ -297,7 +297,7 @@ musicViolinIMvtI = \relative c' {
 	c8.[ a16-. e8.-. a16-.] c2\sf~
 % Bars 231 to 235
 	c8. a16 c4~\sf c8. a16 c4\sf~
-	c8.[ a16-. c8.-. a16-.] c8.[-. a16-. c8.-. a16-.]
+	c8.-.[ a16-. c8.-. a16-.] c8.[-. a16-. c8.-. a16-.]
 	<b, gis'>4\f r8. q16 <c a'>4 r8. q16
 	<b a'>4 r8. q16 <b gis'>4 r8. q16
 	<c a'>4 r r <gis e' b'>

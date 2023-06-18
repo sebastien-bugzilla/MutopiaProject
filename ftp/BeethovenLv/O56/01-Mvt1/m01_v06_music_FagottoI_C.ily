@@ -175,7 +175,7 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	\partCombineApart r8. a16[-.\p a8.-. a16]-. a4 r
+	\partCombineApart r8. a16[-._\p a8.-. a16]-. a4 r
 	r4 r8. a16-. a4-. r8. a16-.
 % Bars 201 to 205
 	a4-. r r2 \partCombineAutomatic
@@ -257,7 +257,7 @@ musicFagottoIMvtI = \relative c' {
 	R1
 	\partCombineApart r2 b8[( c! e8. c16]) \partCombineAutomatic
 	R1
-	\partCombineApart r2 cis8([ d f8. d16]) \partCombineAutomatic
+	\partCombineApart r2 \beamOffset #'(-0.5 . -0.5) cis8([ d f8. d16]) \partCombineAutomatic
 	R1
 % Bars 296 to 300
 	\partCombineApart r2 b8([ c! ees8. c16]) \partCombineAutomatic
@@ -297,24 +297,24 @@ musicFagottoIMvtI = \relative c' {
 	
 	\clef tenor \partCombineApart c'1_\cresc
 	b8[( c d8. c16)] c4-. c-.
-	\oneVoice c2~_\f \noFlag c8 \once \partCombineAutomatic r \voiceOne  c\p r \clef bass
+	\oneVoice c2~_\f \noFlag c8 \once \partCombineAutomatic r \voiceOne  c-\offset X-offset -0.5 \p r \clef bass
 % Bars 346 to 350
 	a r c r a r f r
-	\partCombineChords c'2~ c8 \once \partCombineAutomatic r \partCombineApart c4\p(
+	\partCombineChords c'2~ c8 \once \partCombineAutomatic r \partCombineApart c4-\offset X-offset -0.5 \p(
 	b8[ c d8. c16]) c4-. c-.
-	c2~ c8 r c\p r
+	c2~ c8 r c-\offset X-offset -0.5 \p r
 	a r c r a r f r
 % Bars 351 to 355
-	\partCombineChords b2~ b8 \once \partCombineAutomatic r \partCombineApart d\p r
+	\partCombineChords b2~ b8 \once \partCombineAutomatic r \partCombineApart d-\offset X-offset -0.5 \p r
 	b r d r b r g r \mark #11
-	\partCombineChords cis2~ cis8 \once \partCombineAutomatic r \partCombineApart e\p r
+	\partCombineChords cis2~ cis8 \once \partCombineAutomatic r \partCombineApart e-\offset X-offset -0.5 \p r
 	cis r e r cis r a r
 	d r f r d r a r
 % Bars 356 to 360
 	d r f r d r bes r
 	a-\crescmarkup r c r a r f r
-	c'2\f\>( e4 g)
-	f\p r r2 \partCombineAutomatic
+	\shape #'((0 . -0.3)(0 . -0.5)(0 . -0.5)(0 . -0.3)) Slur c'2_\f_\>( e4 g)
+	f_\p r r2 \partCombineAutomatic
 	R1*3
 % Bars 361 to 365
 	
@@ -364,7 +364,7 @@ musicFagottoIMvtI = \relative c' {
 	
 % Bars 426 to 430
 	
-	r2 r8. b16[\pp-. b8.-. b16]-. 
+	r2 r8. \beamOffset #'(0.5 . 0.5) b16[\pp-. b8.-. b16]-. 
 	c4 r r8. g16[-. g8.-. g16]-. 
 	a4 r r2
 	R1 \mark \default

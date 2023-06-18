@@ -32,7 +32,7 @@ musicBassoMvtI = \relative c {
 	a4 r a a
 	a r r a 
 	d r d r
-	g4 g,2_\crescmarkup( a8. b16)
+	g4 g,2_\crescmarkup^\arco( a8. b16)
 % Bars 41 to 45
 	c4-.\p r c^\pizz c
 	c r r a

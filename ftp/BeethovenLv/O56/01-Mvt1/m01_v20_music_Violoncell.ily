@@ -56,7 +56,7 @@ musicVioloncellMvtI = \relative c {
 	\tuplet 3/2 4 {c,\p e a c a e c e a c, e a}
 	\tuplet 3/2 4 {c,\sfp e a c a e c e a c, e a}
 	\tuplet 3/2 4 {d, g b d, g b d, fis a d cis d}
-	g,4 g,2_\crescmarkup( a8. b16)
+	g,4 g,2_\crescmarkup^\arco( a8. b16)
 % Bars 41 to 45
 	c4-.\p r c^\pizz c
 	c r r a

@@ -171,7 +171,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	
-	\partCombineApart r8. a16-.-\tweak X-offset #-1 \p[ a8.-. a16-.] a4 r
+	\partCombineApart r8. a16-.-\tweak X-offset #-1 _\p[ a8.-. a16-.] a4 r
 	r r8. a16-. a4-. r8. a16-.
 % Bars 201 to 205
 	a4-. r r2 \partCombineAutomatic
@@ -284,25 +284,25 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	\partCombineApart c,1_\cresc
-	b8([ c d8. c16)] c4-. c-.
-	\oneVoice f2_\f~ \noFlag f8 \partCombineAutomatic r \partCombineApart \voiceOne  c\p r
+	\beamOffset #'(-0.5 . -0.5) b8([ c d8. c16)] c4-. c-.
+	\oneVoice f2_\f~ \noFlag f8 \partCombineAutomatic r \partCombineApart \voiceOne  c-\offset X-offset -0.5 \p r
 % Bars 346 to 350
 	a r c r a r f r \partCombineAutomatic
-	c'2-\tweak X-offset #-2 \ff~ c8 r \partCombineApart c4\p(
+	c'2-\tweak X-offset #-2 \ff~ c8 r \partCombineApart c4-\offset X-offset -0.5 \p(
 	b8[ c d8. c16]) c4-. c-.
-	\partCombineAutomatic a'2\ff~ a8 r \partCombineApart c,\p r
+	\partCombineAutomatic a'2\ff~ a8 r \partCombineApart c,-\offset X-offset -0.5 \p r
 	a r c r a r f r
 % Bars 351 to 355
-	\partCombineAutomatic b'2~\f b8 r \partCombineApart d,\p r
+	\partCombineAutomatic b'2~\f b8 r \partCombineApart d,-\offset X-offset -0.5 \p r
 	b r d r b r g r \mark #11
-	\partCombineAutomatic g'2-\tweak X-offset #-2 \f~ g8 r \partCombineApart e\p r
+	\partCombineAutomatic g'2-\tweak X-offset #-2 \f~ g8 r \partCombineApart e-\offset X-offset -0.5 \p r
 	cis r e  r cis r a r
 	d r f r d r a r
 % Bars 356 to 360
 	d r f r d r bes r
 	a_\crescmarkup r c r a r f r
-	c'2.\f(\> bes4)
-	a4\p r r2 \partCombineAutomatic
+	c'2._\f(_\> bes4)
+	a4_\p r r2 \partCombineAutomatic
 	R1*10
 % Bars 361 to 365
 	

@@ -393,7 +393,34 @@ stemOffset = #(define-music-function
 	#}
 )
 
+aIIOmit = \once \omit Voice.CombineTextScript
 
+
+beamGap = #(define-music-function
+	(gap)
+	(number?)
+	#{
+		\once \override Beam.auto-knee-gap = #gap
+	#}
+)
+
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = #1
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -405,8 +432,6 @@ stemOffset = #(define-music-function
 %		\once \override CombineTextScript.X-offset = #offset
 %	#}
 %)
-
-%aIIOmit = \once \omit Voice.CombineTextScript
 
 %aIIExtraOffset = #(define-music-function
 %	(extraoffset)
@@ -423,15 +448,6 @@ stemOffset = #(define-music-function
 %		\once \override Voice.Arpeggio.padding = #padding
 %	#}
 %)
-
-%beamGap = #(define-music-function
-%	(gap)
-%	(number?)
-%	#{
-%		\once \override Beam.auto-knee-gap = #gap
-%	#}
-%)
-
 
 %beamLeftTwoRightOne = {
 %	\set stemLeftBeamCount = #2
@@ -475,23 +491,6 @@ stemOffset = #(define-music-function
 %	#}
 %)
 
-%dynEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override DynamicText.extra-offset = #offset
-%		\once \override DynamicText.whiteout = ##t
-%		\once \override DynamicText.whiteout-style = #'outline
-%	#}
-%)
-
-%hairpinShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.shorten-pair = #shortLength
-%	#}
-%)
 
 %hairpinEO = #(define-music-function
 %	(offset)

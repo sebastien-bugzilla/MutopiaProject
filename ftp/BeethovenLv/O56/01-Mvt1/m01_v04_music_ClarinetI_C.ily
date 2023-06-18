@@ -261,7 +261,7 @@ musicClarinetIMvtI = \relative c' {
 	
 	
 	
-	r2 r4 c~-\tweak extra-offset #'(-2.0 . 3.5) \f
+	r2 r4 \dynEO #'(-2 . 3.5) c~\f
 % Bars 371 to 375
 	c r r2
 	R1*14
@@ -325,7 +325,7 @@ musicClarinetIMvtI = \relative c' {
 % Bars 471 to 475
 	R1*5
 % Bars 476 to 480
-	\partCombineApart g1\pp
+	\partCombineApart \dynEO #'(0 . -1) g1\pp
 	fis
 	g4 r r2 \partCombineAutomatic
 	R1*9

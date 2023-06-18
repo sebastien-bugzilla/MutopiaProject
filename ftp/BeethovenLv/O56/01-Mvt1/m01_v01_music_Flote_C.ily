@@ -265,12 +265,12 @@ musicFloteMvtI = \relative c''' {
 	f2\f~ f8 r r4
 % Bars 346 to 350
 	R1
-	c2\ff~ c8 r c4-\tweak X-offset #-1 \p(
+	\dynEO #'(0 . 2) c2\ff~ c8 r \dynEO #'(0 . 2) c4-\tweak X-offset #-1 \p(
 	b8[ c d8. c16]) c4-. c-.
-	c2-\tweak X-offset #-1.5 \ff~ c8 r r4
+	\dynEO #'(0 . 2) c2\ff~ c8 r r4
 	R1
 % Bars 351 to 355
-	d2~-\tweak X-offset #-0.5 \f d8 r r4
+	\dynEO #'(0 . 2) d2~\f d8 r r4
 	R1 \mark #11
 	cis2-\tweak X-offset #-1 \f~ cis8 r r4
 	R1*3
@@ -287,7 +287,7 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	
-	r2 r4 c'-\tweak extra-offset #'(0.5 . 2) \f~
+	r2 r4 \dynEO #'(0.5 . 2) c'\f~
 % Bars 371 to 375
 	c r r2
 	R1*14
@@ -362,7 +362,7 @@ musicFloteMvtI = \relative c''' {
 	
 	
 % Bars 476 to 480
-	g1\pp
+	\dynEO #'(0 . 1) g1\pp
 	fis
 	g4 r r2
 	R1*13

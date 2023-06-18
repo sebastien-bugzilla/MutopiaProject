@@ -42,7 +42,7 @@ musicClarinetIIMvtI = \relative c' {
 	
 	r4 b,( d f)
 % Bars 41 to 45
-	\voiceOne e2_~ \omitBeam e8.[ e16_( g8. e16])  
+	\voiceOne e2_~ \omitBeam e8.[ e16_( \omitBeam g8. e16])  
 	e4 r r g_(
 	f) \voiceTwo e4( f g
 	a) \oneVoice r r2
@@ -52,7 +52,7 @@ musicClarinetIIMvtI = \relative c' {
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	r8. g16[\p a8. g16] g4 r
+	r8. g16[-\offset X-offset -1.5 \p a8. g16] g4 r
 	r8. g16[ a8. g16] g4 r
 	r8. g16[ a8. g16] g4 r
 	fis2-\tweak X-offset #0.3 \ff fis
@@ -261,7 +261,7 @@ musicClarinetIIMvtI = \relative c' {
 	
 	
 	
-	r2 r4 c,~-\tweak extra-offset #'(-2.0 . 3.5) \f
+	r2 r4 \dynEO #'(-2 . 3.5) c,~\f
 % Bars 371 to 375
 	c r r2
 	R1*14
@@ -357,7 +357,7 @@ musicClarinetIIMvtI = \relative c' {
 % Bars 516 to 520
 	r2 r8. d'16[-\tweak X-offset #-1.5 \f f8. e16]
 	d8.[ c16 b8. a16] b8.[ g16 c8. e,16]
-	f4\ff r r2 \mark \default
+	f4-\offset X-offset 0.8 \ff r r2 \mark \default
 	g4-.\ff r r2
 	c,4 r r d8 r
 % Bars 521 to 525

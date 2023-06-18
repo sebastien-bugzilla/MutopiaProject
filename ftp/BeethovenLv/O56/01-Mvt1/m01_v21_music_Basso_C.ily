@@ -56,7 +56,7 @@ musicBassoMvtI = \relative c {
 	a4 r a a
 	a r r a 
 	d r d r
-	g4 g,2_\crescmarkup( a8. b16)
+	g4 g,2_\crescmarkup^\arco( a8. b16)
 % Bars 41 to 45
 	c4-.\p r c^\pizz c
 	c r r a
@@ -455,9 +455,9 @@ musicBassoMvtI = \relative c {
 % Bars 411 to 415
 	ees4 r r ees
 	e! r r2
-	R1*5
+	R1*2
 	
-	
+	R1*3
 % Bars 416 to 420
 	
 	
@@ -553,8 +553,8 @@ musicBassoMvtI = \relative c {
 	g~
 	g~
 	g~
-	g~\<
-	g\>
+	<< g~ {\hairpinShorten #'(0 . -3.4) s4\< s s s\!}>>
+	<< g1 {\hairpinShorten #'(1.5 . -4) s4\> s s s\!}>>
 % Bars 506 to 510
 	c2\pp^\unobassoeviolonc b8[( c e8. c16)]
 	r2 b8[( c g'8. c,16)]

@@ -17,13 +17,15 @@
 	\compressEmptyMeasures
 	\context {
 		\Score
-		\override RehearsalMark.font-size = #4 % 8
+		\override RehearsalMark.font-size = #8
 		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
+		\override RehearsalMark.extra-spacing-height = #'(-inf.0 . +inf.0)
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override DynamicTextSpanner.font-size = #0
 		\override BarNumber.font-size = #2
 		\override SystemStartBar.collapse-height = #4
 		\override SustainPedal.parent-alignment-X = 0
+		\override MetronomeMark.font-size = #2 %1
 	}
 	\context {
 		\Staff

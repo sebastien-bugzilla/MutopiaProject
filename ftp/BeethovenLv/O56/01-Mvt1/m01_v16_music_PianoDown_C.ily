@@ -63,10 +63,10 @@ musicPianoDownMvtI = \relative c' {
 	f2. g4\trill(
 	a f d c)
 	b2( d4.. c16)
-	\afterGrace a'2.\startTrillSpan( {gis16[\stopTrillSpan a]} c8. a16)
+	\afterGrace 15/16 a'2.\startTrillSpan( {gis16[\stopTrillSpan a]} c8. a16)
 	g!4-. e'4. e16 d c b a g
 % Bars 106 to 110
-	f4 \clef bass \afterGrace f,2\startTrillSpan {e16[\stopTrillSpan f]} a8. f16
+	f4 \clef bass \afterGrace 15/16 f,2\startTrillSpan {e16[\stopTrillSpan f]} a8. f16
 	e4 r c16 d e f g a b c
 	f,4 r f16 g a b c d e f 
 	c\noBeam \clef treble c d dis e f fis g gis a bes b c cis d dis
@@ -213,7 +213,7 @@ musicPianoDownMvtI = \relative c' {
 	d2~ d16\stopTrillSpan gis,, a b c d e fis
 	gis b, c d e fis gis a b d, e fis gis a b c
 	d1\startTrillSpan~
-	\afterGrace d {c16[(\stopTrillSpan d)]} \mark \default
+	\afterGrace 15/16 d {c16[(\stopTrillSpan d)]} \mark \default
 	c4 r r2
 % Bars 226 to 230
 	R1*42
@@ -452,7 +452,7 @@ musicPianoDownMvtI = \relative c' {
 	b\noBeam d,-. e-. f-. g-. a-. b-. c-. d-. d,-. e-. f-. g-. a-. b-. c-.
 	d1\startTrillSpan~
 % Bars 461 to 465
-	\afterGrace d {c16[(\stopTrillSpan d])} \mark \default
+	\afterGrace 15/16 d {c16[(\stopTrillSpan d])} \mark \default
 	c4 r r2
 	R1*8
 % Bars 466 to 470
@@ -486,7 +486,7 @@ musicPianoDownMvtI = \relative c' {
 	r2 \clef bass r16 c,\sustainOn g e c g e c
 	f4\sustainOff r r16 f,\sustainOn a c f a c a
 	\voiceTwo \shape #'((0 . 0)(0 . -1)(0 . -1)(0 . 2.5)) Slur \tuplet 3/2 4 {f8( f, a c a c f c f a f a}
-	\oneVoice \tuplet 3/2 4 {c) a( c f c f a f a c a c}
+	\oneVoice \tuplet 3/2 4 {\once \tupletDown c) \shape #'(((0 . -1)(0 . 0.5)(0 . 0.5)(0 . 0)) ()) Slur a( c f c f a f a c a c}
 % Bars 496 to 500
 	\tuplet 3/2 4 {f c f \clef treble a f a c a c f c f}
 	\tuplet 3/2 4 {a c, f a c, f a c, f a\sustainOff g f}

@@ -118,7 +118,7 @@ musicSoloViolinMvtI = \relative c''' {
 % Bars 146 to 150
 	\tuplet 3/2 4 {e) gis,,(_\crescmarkup b) b( e) e( gis) gis( b) b( e) e(}
 	\tuplet 3/2 4 {gis) gis( e) e( b) b( gis) gis( e) e( b) b(}
-	\tuplet 3/2 4 {gis)-\tweak X-offset #-2 \ff e'-. b-. gis'-. e-. b'-. gis-. e'-. b-. gis'-. gis-. gis-. } \mark \default
+	\tuplet 3/2 4 {\beamOffset #'(0.5 . 0) gis)-\tweak X-offset #-2 \ff e'-. b-. gis'-. e-. b'-. gis-. e'-. b-. gis'-. gis-. gis-. } \mark \default
 	gis4 r r2
 	R1*7
 % Bars 151 to 155
@@ -145,7 +145,7 @@ musicSoloViolinMvtI = \relative c''' {
 		fis1( 
 		f!
 		f)~
-		f2.( c!4)~
+		\once \voiceTwo f2.^( c!4)~
 		c2( bes
 		<<a1)( {s4^\> s s s\!}>>
 		a2)( b!
@@ -200,18 +200,18 @@ musicSoloViolinMvtI = \relative c''' {
 	
 	b,2(~\p\dim b8.[ ais16 b8. ais16])
 	b2(~ b8.[ ais16 b8. ais16])
-	\tuplet 3/2 4 {b8(\sempreppD ais a gis g fis f e dis d cis c)}
+	\tuplet 3/2 4 {b8(-\tweak X-offset 0 \sempreppD ais a gis g fis f e dis d cis c)}
 % Bars 216 to 220
 	\tuplet 3/2 4 {b( ais a gis g fis f e dis d cis c)}
 	b16( c d e fis gis a ais b c d e fis gis a! ais)
 	b1\startTrillSpan~
 	b~
-	\afterGrace b {a16[\stopTrillSpan b]} 
+	\afterGrace 31/32 b {a16[\stopTrillSpan b]} 
 % Bars 221 to 225
 	gis16 gis,-. a-. b-. c-. d-. e-. fis-. gis-. b,-. c-. d-. e-. fis-. gis-. a-. 
 	b-. d, e fis gis a b c d gis, a b c d e fis
 	gis1\cresc\startTrillSpan~
-	\afterGrace gis {fis16[(\stopTrillSpan gis)]} \mark \default
+	\afterGrace 15/16 gis {fis16[(\stopTrillSpan gis)]} \mark \default
 	a4-\tweak X-offset #-2 \ff r r2
 % Bars 226 to 230
 	R1*30
@@ -350,8 +350,8 @@ musicSoloViolinMvtI = \relative c''' {
 % Bars 376 to 380
 	f''4_\crescmarkup f4. fis8[( g d])
 	f!16( e d c b c e c b c d c b a d fis,)
-	\tuplet 3/2 4 {g8 g g g g g g(\sfp aes) aes-. aes aes aes}
-	\tuplet 3/2 4 {aes(\sfp g) g-. g g g g( f) f-. f( ees) ees-.}
+	\tuplet 3/2 4 {g8 g g g g g \dynEO #'(0 . 1) g(\sfp aes) aes-. aes aes aes}
+	\tuplet 3/2 4 {\dynEO #'(0 . 1) aes(\sfp g) g-. g g g g( f) f-. f( ees) ees-.}
 	d4 r r2
 % Bars 381 to 385
 	r2 \tuplet 3/2 4 {r8 aes' aes aes( a) a}
@@ -408,7 +408,7 @@ musicSoloViolinMvtI = \relative c''' {
 	R1*3
 	
 	
-	g,16-\tweak X-offset #-1. \f( ees') c'( ees,) c'( ees,) c'( ees,) g,( ees') c'( ees,) c'( ees,) c'( ees,) 
+	g,16-\tweak X-offset #-1.8 \f( ees') c'( ees,) c'( ees,) c'( ees,) g,( ees') c'( ees,) c'( ees,) c'( ees,) 
 	g,( ees') c'( ees,)  g,( ees') c' ees, g, ees' c' ees, g, ees' c' ees, 
 % Bars 421 to 425
 	g, f' d' f, g, f' b f g, f' d' f, g, d' b' d,
@@ -456,7 +456,7 @@ musicSoloViolinMvtI = \relative c''' {
 	d-. b c d e f g a b d, e f g a b c
 	\trillSpanPadding #1 d2\cresc\startTrillSpan \trillSpanPadding #1 g\startTrillSpan~
 % Bars 461 to 465
-	\afterGrace g1 {fis16[(\stopTrillSpan g)] } \mark \default
+	\afterGrace 15/16 g1 {fis16[(\stopTrillSpan g)] } \mark \default
 	c4\ff r r2
 	R1*11
 % Bars 466 to 470

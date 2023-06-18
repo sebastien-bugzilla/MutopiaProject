@@ -55,7 +55,7 @@ musicSoloCelloMvtI = \relative c' {
 	f2. g4\trill
 	a( f d c)
 	b2( d4.._\crescmarkup c16)
-	\afterGrace a1\startTrillSpan {g16([\stopTrillSpan b a)]}
+	\afterGrace 15/16 a1\startTrillSpan {g16([\stopTrillSpan b a)]}
 	g2\p( g')
 % Bars 86 to 90
 	fis1~
@@ -114,7 +114,7 @@ musicSoloCelloMvtI = \relative c' {
 	\tuplet 3/2 4 {e8-. f-. fis-. g-. gis-. a-. bes-. b-. c-. cis-. d-. dis-. }
 	e4\pp e2 f8.( c!16)
 	e8.( dis16) d4. d8\trill( \grace {cis16[ d]} e8 b)
-	d(\p c!_\crescmarkup b a) a4\trill( \grace {gis16 a} c8. a16
+	d(\p c!_\crescmarkup b a) a4(\trill \grace {gis16 a} c8. a16
 % Bars 141 to 145
 	\tuplet 3/2 4 {gis8)-. e-. e-. e-. e-. e-. e( d) d-. d-. d-. d-. } \clef bass
 	\tuplet 3/2 4 {d(\fp c) c-. c-. c-. c-. c( b) b-. b( a) a-.}
@@ -172,7 +172,7 @@ musicSoloCelloMvtI = \relative c' {
 	\tuplet 3/2 4 {a( bes) bes-. bes-. bes-. bes-. bes-. a-. g!-. g-. f-. e-. }
 % Bars 191 to 195
 	\tuplet 3/2 4 {f( g) g-. g-. g-. g-. g-. f-. e-. e-. d-. cis-. }
-	\clef bass d16 a, d, a' d, a' d, a' dis, a' dis, a' dis, a' dis, a'
+	\clef bass \beamGap #1 d16 a, d, a' d, a' d, a' dis, a' dis, a' dis, a' dis, a'
 	e a e a f a f a d,! a' d, a' e gis e gis \mark \default
 	a4\f r a'16 b a gis a b a b
 	b c b c b c b c b c d c f e d c
@@ -204,7 +204,7 @@ musicSoloCelloMvtI = \relative c' {
 	\clef tenor \acciaccatura cis8 d1~\startTrillSpan
 	d~
 	d16\stopTrillSpan b\cresc c! d e fis gis a b2\startTrillSpan~
-	\afterGrace b1 {a16[(\stopTrillSpan b)]} \mark \default
+	\afterGrace 15/16 b1 {a16[(\stopTrillSpan b)]} \mark \default
 	a4-\tweak X-offset #-2.5 \ff r r2 \clef bass
 % Bars 226 to 230
 	R1*17
@@ -395,7 +395,7 @@ musicSoloCelloMvtI = \relative c' {
 	f1_\dimmarkup~
 	f-\tweak X-offset #0.5 \pp~
 	f_\crescmarkup
-	ees4-\tweak extra-offset #'(0.5 . 1) \pp( c) c-.( c-.)
+	\dynEO #'(0.5 . 2) ees4\pp( c) c-.( c-.)
 % Bars 411 to 415
 	<<{
 		bes1(~
@@ -459,7 +459,7 @@ musicSoloCelloMvtI = \relative c' {
 	f2~ f16\stopTrillSpan b,-. c-. d-. e-. f-. g-. a-. 
 	b1\startTrillSpan\cresc~
 % Bars 461 to 465
-	\afterGrace b {a16[(\stopTrillSpan b)]} \mark \default
+	\afterGrace 15/16 b {a16[(\stopTrillSpan b)]} \mark \default
 	c4\ff r r2
 	R1*7
 % Bars 466 to 470
@@ -519,7 +519,7 @@ musicSoloCelloMvtI = \relative c' {
 	c2.( bes4)
 	a2~ a16 a b! c d e f g
 	b( a gis a b a g f e d f e g f e d)
-	\tempo "Più allegro." c4 r r2 \clef bass
+	c4 r r2 \clef bass
 	R1*4
 % Bars 516 to 520
 	
