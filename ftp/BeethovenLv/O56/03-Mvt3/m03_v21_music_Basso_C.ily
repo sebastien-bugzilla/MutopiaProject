@@ -17,7 +17,7 @@ musicBassoMvtIII = \relative c {
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	r4 r \once \override CombineTextScript.X-offset = #-3.5 c8.(\pp^\arco e16
+	r4 r c8.(\pp^\arco e16
 	g8-.) r r4 g,8.( b16
 	c8-.) r r4 c8.-. a16-. 
 	d8.-. d16-. d8-. r d-. r
@@ -113,15 +113,18 @@ musicBassoMvtIII = \relative c {
 	c_\dimmarkup r c r c r
 	c r c r c r
 % Bars 106 to 110
-	c4\pp r8 r_\rallentando r4
+	c4\pp r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*24
+	R2.*9
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
+	
+	
+	R2.*15
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -307,12 +310,12 @@ musicBassoMvtIII = \relative c {
 	f r r4 r8 c
 	f,\dim r f' r f r
 	f r f r f r
-	f\pp r r r_\rallentando r4
+	f\pp r r r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*4
+	R2.*4
 % Bars 306 to 310
 	
 	e8^\pizz r e r r e
@@ -345,12 +348,12 @@ musicBassoMvtIII = \relative c {
 	g8 r r4 g8\p-\tweak X-offset #-5 ^\pizz r
 % Bars 331 to 335
 	g r r4 r
-	<<{r4 r r8 \breathe \tempo "Allegro." r}{\fermataCentered}>> \bar "||"
-	\time 2/4 R2*26
+	s2. \bar "||"
+	\time 2/4 R2*3
 	
 	
 % Bars 336 to 340
-	
+	R2*21
 % Bars 341 to 345
 	
 % Bars 346 to 350
@@ -359,7 +362,7 @@ musicBassoMvtIII = \relative c {
 	
 % Bars 356 to 360
 	
-	
+	R2*2
 	
 	r4 r8 g\pp
 	c c r c
@@ -446,8 +449,8 @@ musicBassoMvtIII = \relative c {
 	\mark \default
 % Bars 441 to 445
 	g8^\pizz r r4
-	R2\fermataMarkup \bar "||"
-	\time 3/4 \tempo "Tempo I." R2.
+	R2\fermata \bar "||"
+	\time 3/4 R2.
 	c8\f-\tweak X-offset #-5 ^\arco r c r r4
 	R2.
 % Bars 446 to 450

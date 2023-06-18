@@ -17,8 +17,8 @@ musicOboeIMvtIII = \relative c'' {
 	
 % Bars 16 to 20
 	
-	r8 \once \override CombineTextScript.X-offset = #-3 g16-.\pp g-. g8-. g-. g-. r
-	r8 c16-. c-. c8-. c-. c-. r
+	\partCombineApart r8 g16-.\pp g-. g8-. g-. g-. r
+	r8 c16-. c-. c8-. c-. c-. r \partCombineAutomatic
 	R2.*12
 % Bars 21 to 25
 	
@@ -33,13 +33,13 @@ musicOboeIMvtIII = \relative c'' {
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r \acciaccatura fis,8 g-\tweak X-offset #-3.5 _\ff \acciaccatura fis g
+	r4 r \acciaccatura fis,8 \oneVoice \omitBeam \beamOffset #'(-1.5 . -1.5) g-\tweak X-offset #-3.5 _\ff \acciaccatura fis g 
 	g4. e8[ e f]
-	\partcombineApart e4( c4.-\tweak extra-offset #'(-1.1 . -4) \sf b8)
-	a( f') \partcombineAutomatic b,\noBeam( f'4) f8
+	\partCombineApart \voiceOne e4( c4.-\tweak extra-offset #'(-1.1 . -4) \sf b8)
+	a( f') b,\noBeam( f'4) \partCombineAutomatic f8
 % Bars 41 to 45
-	f4(\sf e8) r \partcombineApart g4(
-	c,16) b c d \partcombineAutomatic e d c b a gis a b
+	f4(\sf e8) r \partCombineApart \once \oneVoice g4(
+	c,16) b c d \partCombineAutomatic e d c b a gis a b
 	c b a g! f e f g a g f e
 	d8\noBeam d'16 e f e d c b c d e 
 	f g a b c b a g f e d c
@@ -51,15 +51,15 @@ musicOboeIMvtIII = \relative c'' {
 	e\p r r4 r
 % Bars 51 to 55
 	R2.
-	\partcombineApart c4. e32([ g16.-.]) g32([ e16.-.)] e32([ c16.-.])
+	\partCombineApart c4. e32([ g16.-.]) g32([ e16.-.)] e32([ c16.-.])
 	c32[( b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.]) b32[( g16.-.])
 	c4 e, g
-	c16 b c d e d e f g g a b 
+	c16 b c d e d e f \partCombineAutomatic g g a b 
 % Bars 56 to 60
-	c4. e,8[( g, b]) \mark \default
-	c \partcombineAutomatic r r4 r
-	c8-. e\sf-. g,-. c\sf-. e,-. g'\sf-. 
-	c, e\sf g, c'\sf e, g\sf
+	c4. \partCombineApart e,8[( g, b]) \mark \default
+	c \partCombineAutomatic r r4 r
+	\partCombineApart c8-. e-. g,-. c-. e,-. g'-. 
+	c,[ e g,] \voiceTwo \omitBeam c' e, g \partCombineAutomatic \oneVoice 
 	c, r e r e r
 % Bars 61 to 65
 	e r r4 r 
@@ -80,13 +80,13 @@ musicOboeIMvtIII = \relative c'' {
 	
 	
 	
-	d2.~
+	d2.(
 % Bars 81 to 85
-	d
-	d
+	d)
+	\partCombineApart \voiceOne d \partCombineAutomatic
 	d4 r r8 d
 	d4 r r8 d
-	d r r4 g,8-. a-.
+	d r r4 \partCombineApart g,8-. a-. \partCombineAutomatic
 % Bars 86 to 90
 	b r r4 b8-. c-.
 	d r d r d r
@@ -100,16 +100,16 @@ musicOboeIMvtIII = \relative c'' {
 	d2.\p
 	d2\f~ d8 d
 % Bars 96 to 100
-	d2.\p
+	\once \partCombineApart d2.\p
 	R2.*9
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*25
+	R2.*25
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -123,9 +123,9 @@ musicOboeIMvtIII = \relative c'' {
 	
 	
 	
-	r8 \once \override CombineTextScript.X-offset = #-3  g,16\pp-. g-. g8-.[ g-. g-.] r
+	\partCombineApart r8 g,16\pp-. g-. g8-.[ g-. g-.] r
 % Bars 136 to 140
-	r8 c16-. c-. c8[-. c-. c]-. r
+	r8 c16-. c-. c8[-. c-. c]-. r \partCombineAutomatic
 	R2.*12
 % Bars 141 to 145
 	
@@ -140,13 +140,13 @@ musicOboeIMvtIII = \relative c'' {
 	
 	
 	
-	r4 r \acciaccatura fis,8 g \acciaccatura fis g
+	r4 r \acciaccatura fis,8 \oneVoice \omitBeam \beamOffset #'(-1.5 . -1.5) g \acciaccatura fis g
 % Bars 156 to 160
 	g4. e8[ e f]
-	\partcombineApart e4 c4.-\tweak extra-offset #'(-1 . -2) \sf( b8)
-	a( f') \partcombineAutomatic b,\noBeam( f'4) f8
-	f4(\sf e8) r g4(
-	c,8) r r4 r
+	\partCombineApart \voiceOne e4 c4.-\tweak extra-offset #'(-1 . -2) \sf( b8)
+	a( f') \partCombineAutomatic b,\noBeam( f'4) f8
+	f4(\sf e8) r \partCombineApart \oneVoice g4(
+	c,8) \partCombineAutomatic r r4 r
 % Bars 161 to 165
 	gis'4(\sf a8) r r4
 	r c(\sf f,8) r
@@ -157,10 +157,10 @@ musicOboeIMvtIII = \relative c'' {
 	e8\p e16 e e8[ e e e]
 	e\f r r4 b'8\sf b16 b
 	c8-\tweak X-offset #-1 \sf c16 c b8-\tweak X-offset #-1 \sf b16 b c8-\tweak X-offset #-1 \sf c16 c
-	b8 e,4\sf f8-. e-. d-.
+	b8 \partCombineApart \voiceOne e,4 f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
-	a\p r r4 r
+	a \partCombineAutomatic r r4 r
 	R2.*7
 % Bars 176 to 180
 	
@@ -181,18 +181,18 @@ musicOboeIMvtIII = \relative c'' {
 	
 	
 	
-	r8 g'16\pp g g8[ g g g]
-	g r e r r4
+	\partCombineApart r8 g'16\pp g g8[ g g g]
+	g r e r r4 \partCombineAutomatic
 % Bars 211 to 215
 	R2.*5
 % Bars 216 to 220
-	r8 \once \override CombineTextScript.X-offset = #-3 d16\pp d d8[ d d d]
+	\partCombineApart r8 d16\pp d d8[ d d d] \partCombineAutomatic
 	R2.
-	r8 g16\pp g g8[ g g g]
+	\partCombineApart r8 g16\pp g g8[ g g g] \partCombineAutomatic
 	R2.
-	r8 g16\pp g g8[ g g g]
+	\partCombineApart r8 g16\pp g g8[ g g g]
 % Bars 221 to 225
-	g2._\crescmarkup \mark \default
+	g2._\crescmarkup \mark \default \partCombineAutomatic
 	c8-.-\tweak X-offset #-2 \f[ g-. c-. g-. e-. c-.]
 	g' r r4 r
 	R2.*21
@@ -218,7 +218,7 @@ musicOboeIMvtIII = \relative c'' {
 	a4 b8( f'4) f8
 	f4-\tweak X-offset #-1.5 \ff( e8) r f4(\sf
 	e8) r c' r c r
-	c r \once \partcombineApart c, r r4
+	c r \once \partCombineApart c, r r4
 	R2.
 % Bars 256 to 260
 	r4 e4(\p f8) r
@@ -234,11 +234,11 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 271 to 275
 	
 	
-	g2.(
-	g)(
-	g)
+	\partCombineApart \oneVoice g2.(
+	\noteShift #0.9 g)(
+	\voiceOne g)
 % Bars 276 to 280
-	g8 r r4 r
+	g8 \partCombineAutomatic r r4 r
 	R2.*2
 	
 	e8\p r r4 e8-. f-.
@@ -260,16 +260,16 @@ musicOboeIMvtIII = \relative c'' {
 	
 	
 	
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*5
+	R2.*5
 % Bars 306 to 310
 	
 	
-	e2.\pp~
+	\partCombineApart e2.\pp~
 	e~
 	e4( c e)
 % Bars 311 to 315
@@ -292,13 +292,13 @@ musicOboeIMvtIII = \relative c'' {
 	g_\crescmarkup \mark \default
 % Bars 326 to 330
 	c8\f-.[ g-. c-. g-. e-. c-.]
-	g8\f g16 g b8 b16 b d8 d16 d
+	g8 g16 g b8 b16 b d8 d16 d \partCombineAutomatic
 	f8 r r4 r
 	d8 r r4 r
 	b8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< {r4 r r8 \breathe \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
+	<< {\oneVoice r4 r r8 \breathe r } {\fermataCentered} >> \bar "||"
 	\time 2/4 R2*54
 % Bars 336 to 340
 	
@@ -325,7 +325,7 @@ musicOboeIMvtIII = \relative c'' {
 	g8(-\tweak X-offset #-1.5 \f a16 b c8 d)
 	e4( c8) r
 	R2
-	r4 g8 g
+	r4 \partCombineApart g8 g \partCombineAutomatic
 % Bars 391 to 395
 	g-\tweak X-offset #-0.5 \f( a16 b c8 d)
 	ees4.\sf r8
@@ -336,8 +336,8 @@ musicOboeIMvtIII = \relative c'' {
 	d'-\tweak X-offset #-2.5 \ff~
 	d
 	ees,\sf
-	\partcombineChords a2\sf
-	g8 \partcombineAutomatic r r4
+	\partCombineChords a2\sf
+	g8 \partCombineAutomatic r r4
 % Bars 401 to 405
 	R2*12
 % Bars 406 to 410
@@ -374,9 +374,9 @@ musicOboeIMvtIII = \relative c'' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||" 
-	\time 3/4 \tempo "Tempo I." R2.
-	e8\f r c r r4
+	R2\fermata \bar "||" 
+	\time 3/4 R2.
+	e8\f r \once \partCombineApart \voiceOne c r r4
 	R2.
 % Bars 446 to 450
 	d8\f r b r r4
@@ -390,11 +390,11 @@ musicOboeIMvtIII = \relative c'' {
 	
 	c8\f[ e e e e e]
 	f[ f f f f f] \mark \default
-	e4. \once \override CombineTextScript.X-offset = #-3 e8\sf-. g,-. b-. 
-	c8 r r4 r
+	e4. \partCombineApart e8-. g,-. b-. 
+	c8 \partCombineAutomatic r r4 r
 % Bars 461 to 465
-	c4. e8\sf-. g,-. b-. 
-	c8 r r4 r
+	\partCombineApart c4. e8-. g,-. b-. 
+	c8 \partCombineAutomatic r r4 r
 	R2.*2
 	\mark \default
 	c8\ff-. e\sf-. g,-. c\sf-. e,-. g\sf-. 
@@ -402,11 +402,11 @@ musicOboeIMvtIII = \relative c'' {
 	c8 r r4 r
 	c8-. e\sf-. g,-. c\sf-. e,-. g\sf-. 
 	c, r r4 r
-	c8 r r4 c'8\sf r
-	c, r r4 e'8\sf r 
+	\once \partCombineApart c8 r r4 c'8\sf r
+	\once \partCombineApart c, r r4 e'8\sf r 
 % Bars 471 to 475
-	c, r r4 c'8\sf r
-	c r g' r e r
+	\once \partCombineApart c, r r4 \once \partCombineApart c'8 r
+	\once \partCombineApart c r \once \partCombineApart g' r \once \partCombineApart e r
 	c' r r4 r
 	c8 r r4 r
 	c8 r r4 r \bar "|."

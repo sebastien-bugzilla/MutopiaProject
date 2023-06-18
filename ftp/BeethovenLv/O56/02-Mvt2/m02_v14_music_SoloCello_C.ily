@@ -31,7 +31,7 @@ musicSoloCelloMvtII = \relative c'' {
 	f8.\p f16(~_\crescmarkup f32.[ des64) f32.( des64)]
 	c8.\noBeam b32([\p c]) b( c) b( c)
 	ees8._\crescmarkup des16( bes! g)
-	aes([ bes]) c8\sf~\noBeam c32(\> bes ees g,)
+	aes([ bes]) c8\sf~\noBeam c32(\> bes ees g,)\!
 	bes8\p( aes16) r r8 \mark \default
 % Bars 21 to 25
 	R4.*3
@@ -47,7 +47,7 @@ musicSoloCelloMvtII = \relative c'' {
 	r8 r16 ees,([\trill \grace {d16[ ees]} aes c)]
 % Bars 31 to 35
 	r8 ees,64_\crescmarkup[( d ees f g f g aes)] bes16-. bes-. \mark \default
-	bes8.\sf des16(\> c bes)
+	bes8.\sf des16(\> c bes)\!
 	aes4\p( g16 aes)
 	bes4 \tuplet 3/2 16 {aes32[( c bes)] bes[( des c)]}
 	c8_\crescmarkup( bes4)\sf\>
@@ -61,8 +61,8 @@ musicSoloCelloMvtII = \relative c'' {
 	R4.*3
 	
 	\mark \default
-	\clef bass \tuplet 3/2 16 {g,,32\p([ g' fis] g[ b ais] b[ d cis] d[ g d])} f(\< ees) d(\>-. c-.)\!
-	b8 r16 g,\<\noBeam \afterGrace aes8(\startTrillSpan\> { g16[\stopTrillSpan aes])}
+	\clef bass \tuplet 3/2 16 {g,,32\p([ g' fis] g[ b ais] b[ d cis] d[ g d])} f(\< ees)\! d(\>-. c-.)\!
+	b8 r16 g,\<\noBeam \afterGrace aes8(\startTrillSpan\> { g16[\stopTrillSpan aes])\!}
 % Bars 46 to 50
 	<g g'>4.\p~
 	q~

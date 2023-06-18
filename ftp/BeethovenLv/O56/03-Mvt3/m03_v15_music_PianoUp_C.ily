@@ -109,7 +109,7 @@ musicPianoUpMvtIII = \relative c {
 	<g e'>4 r8 <e c'>-.( <g e'>-. <e c'>-.)
 	<g e'>-.( <e c'>-. <g e'>-. <e c'>-. <g e'>-. <e c'>-.)
 	<g e'>4 r8 <e c'>-.( <g e'>-. <e c'>-.)\stopTextSpan
-	<>^\atempo <g e'>\noBeam\pp c( e) r r e,(
+	<g e'>\noBeam\pp c( e) r r e,(
 % Bars 111 to 115
 	g) r r g,( c) r
 	r fis,( g) r r4
@@ -298,7 +298,7 @@ musicPianoUpMvtIII = \relative c {
 % Bars 301 to 305
 	<a c>-.( <f a>-. <a c>-. <f a>-. <a c>-. <f a>-.)
 	<a c>4 r8 <e a>-.( <a c>-. <e a>-.)\stopTextSpan
-	<>^\atempo <a c>8 r r fis( a) r
+	<a c>8 r r fis( a) r
 	r a,( c) r r4
 	r8 a([ c]) r r4
 % Bars 306 to 310
@@ -333,7 +333,7 @@ musicPianoUpMvtIII = \relative c {
 	b8) r r4 r
 % Bars 331 to 335
 	R2.
-	<< { <d, aes'>4-\tweak X-offset #-1.5 \p\fermata r r8 \breathe \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
+	<< { <d, aes'>4-\tweak X-offset #-1.5 \p\fermata r r8 \breathe r } {\fermataCentered} >> \bar "||"
 	\time 2/4 R2*3
 % Bars 336 to 340
 	r4 r8 d'16(-\tweak X-offset #-1 \p b
@@ -349,9 +349,9 @@ musicPianoUpMvtIII = \relative c {
 	c b c b c e d c
 % Bars 351 to 355
 	b d c b a c b a
-	g\< a b c d b\> c a
+	g\< a b c d\! b\> c a
 	g4\! r16 d e fis
-	g\< a b c d b\> c a 
+	g\< a b c d\! b\> c a 
 	g4\! r16 d e fis
 % Bars 356 to 360
 	g2_\crescmarkup\startTrillSpan~
@@ -446,7 +446,7 @@ musicPianoUpMvtIII = \relative c {
 % Bars 441 to 445
 	g~\<
 	\afterGrace g\>\fermata {fis16[\stopTrillSpan g\!]} \bar "||"
-	\time 3/4 \tempo "Tempo I." g4.(_\dolce a16 b c8 d)
+	\time 3/4 g4.(_\dolce a16 b c8 d)
 	\grace {c16[( d]} e4)(~\f e16 c g e c g e c)
 	R2.*4
 % Bars 446 to 450

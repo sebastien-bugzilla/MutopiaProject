@@ -10,13 +10,14 @@ musicCornoIMvtII = \relative c'' {
 	\key c \major
 	\transposition ees
 % Bars 1 to 5
-	R4.*20
+	R4.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	\partCombineApart R4.*4
 % Bars 16 to 20
-	
+	\partCombineAutomatic R4.*5
 	
 	
 	
@@ -35,15 +36,15 @@ musicCornoIMvtII = \relative c'' {
 	c
 % Bars 31 to 35
 	c8_\crescmarkup c c \mark \default
-	\once \partcombineChords c8.\sf\> r16\! r8
+	\once \partCombineChords c8.\sf\> r16\! \partCombineApart r8
 	R4.*2
 	
-	r8 e4\sf\>
+	r8 e4
 % Bars 36 to 40
-	d8.\pp[ d16~] d d
-	c8. c8 c16
+	d8.[ d16~] d d
+	\partCombineAutomatic c8. c8 c16 \partCombineApart
 	c4~ c16 e
-	d d c4~
+	d d \partCombineAutomatic c4~
 	c8 r r
 % Bars 41 to 45
 	R4.*3

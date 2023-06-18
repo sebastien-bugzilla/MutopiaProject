@@ -31,8 +31,8 @@ musicClarinetIMvtI = \relative c' {
 	a-. a-. a-. a-.
 % Bars 31 to 35
 	a-. f'2-\tweak X-offset #0.5 \sf d8.-. c!16-.
-	b4-. c2\sf a8.-. fis16-. \mark \default
-	g4\p r r2
+	b4-. c2\sf \partCombineApart a8.-. fis16-. \mark \default
+	g4 \partCombineAutomatic r r2
 	R1*6
 	
 % Bars 36 to 40
@@ -42,19 +42,19 @@ musicClarinetIMvtI = \relative c' {
 	
 	r4 g(_\crescmarkup f g)
 % Bars 41 to 45
-	g2(~\p g8.[ c16 g'8. e16])
-	g,4 r r a~
-	a a2 c4~
-	c r r2
+	\partCombineApart g2^(~_\p g8.[ c16 g'8. e16]) \oneVoice \partCombineAutomatic
+	g,4 r r a^(
+	a) \partCombineApart a2 c4~
+	c \partCombineAutomatic r r2
 	R1*11
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	r8. g16([\p a8. g16]) g4 r
-	r8. g16_\crescmarkup([ a8. g16]) g4 r
-	r8. g16([ a8. g16]) g4 r
+	r8. \partCombineApart g16([ a8. g16]) g4 \partCombineAutomatic r
+	r8. \partCombineApart g16_\crescmarkup([ a8. g16]) g4 \partCombineAutomatic r
+	r8. \partCombineApart g16([ a8. g16]) g4 \partCombineAutomatic r
 	a2-\tweak X-offset #0.3 \ff a
 	a4 a a a
 % Bars 61 to 65
@@ -118,10 +118,10 @@ musicClarinetIMvtI = \relative c' {
 	
 	
 	\mark \default
-	e2\ff b4-. gis-.
+	e2\ff \partCombineApart b4-. gis-.
 	e-. e'-. b-. gis-.
 % Bars 151 to 155
-	e-. r r2
+	e-. \partCombineAutomatic r r2
 	R1*13
 % Bars 156 to 160
 	
@@ -172,7 +172,7 @@ musicClarinetIMvtI = \relative c' {
 % Bars 231 to 235
 	fis1~
 	fis4 fis fis fis
-	\partcombineApart b,8. b16 \partcombineAutomatic b4 r8. c16 c4
+	\partCombineApart b,8. b16 \partCombineAutomatic b4 r8. c16 c4
 	r8. f!16 f4 r8. e16 e4
 	r2 r4 d-.
 % Bars 236 to 240
@@ -224,8 +224,8 @@ musicClarinetIMvtI = \relative c' {
 % Bars 326 to 330
 	d4 r r2
 	d2( cis8[ d f8. e16])
-	e4 \partcombineApart c!2 bes4
-	a \partcombineAutomatic f'2 f4
+	e4 \partCombineApart c!2 bes4
+	a \partCombineAutomatic f'2 f4
 	f-. f-. f-. f-.
 % Bars 331 to 335
 	f2( e~
@@ -325,9 +325,9 @@ musicClarinetIMvtI = \relative c' {
 % Bars 471 to 475
 	R1*5
 % Bars 476 to 480
-	g1\pp
+	\partCombineApart g1\pp
 	fis
-	g4 r r2
+	g4 r r2 \partCombineAutomatic
 	R1*9
 % Bars 481 to 485
 	
@@ -352,12 +352,12 @@ musicClarinetIMvtI = \relative c' {
 	
 	
 	
-	\tempo "Più allegro." R1*2
+	R1*2
 	
 % Bars 516 to 520
-	r2 r8. d16[-\tweak X-offset #-1.5 \f-. f8.-. e16]-. 
+	r2 r8. \partCombineApart d16[-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4-.\ff r r2 \mark \default
+	f4-. \partCombineAutomatic r r2 \mark \default
 	g'4-.\ff r r2
 	c,4 r r g8 r
 % Bars 521 to 525
@@ -365,7 +365,7 @@ musicClarinetIMvtI = \relative c' {
 	g4 r r b8 r
 	c r b r c r b r
 	c4 r r b8 r
-	c r b r c r \once \partcombineApart b r
+	c r b r c r \once \partCombineApart b r
 % Bars 526 to 530
 	e r d r e r d r
 	e r d r e r d r

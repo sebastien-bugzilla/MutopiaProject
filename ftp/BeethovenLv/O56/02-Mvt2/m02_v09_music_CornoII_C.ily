@@ -39,14 +39,14 @@ musicCornoIIMvtII = \relative c, {
 	c
 % Bars 31 to 35
 	c8 c c \mark \default
-	c8.\sf\> r16\! r16 \clef bass c,,\pp
+	c8. r16 r16 \clef bass c,,\pp
 	c4 c16 c
 	c4 c16 c
 	c8 \clef treble e'''4\sf\>
 % Bars 36 to 40
 	d8.\pp[ d16~] d d
 	c,8. c8 c16
-	c4~ c16 e'
+	\once \voiceOne c4_~ c16 e'
 	d d c,4~
 	c8 r r
 % Bars 41 to 45

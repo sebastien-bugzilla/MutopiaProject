@@ -124,11 +124,11 @@ musicViolinIMvtIII = \relative c' {
 	e_\dimmarkup r e r e r
 	e r e r e r
 % Bars 106 to 110
-	e4\pp r8 r_\rallentando r4
+	e4\pp r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*9
+	R2.*9
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -330,12 +330,12 @@ musicViolinIMvtIII = \relative c' {
 	a r r4 r8 bes
 	a\dim r a r a r
 	a r a r a r
-	a\pp r r r_\rallentando r4
+	a\pp r r r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*4
+	R2.*4
 % Bars 306 to 310
 	
 	gis,16-\tweak extra-offset #'(1 . 1) \pp e' b e gis, e' b e gis, e' b e
@@ -368,7 +368,7 @@ musicViolinIMvtIII = \relative c' {
 	<g d' b'>8 r r4 f'8\p-\tweak X-offset #-5 ^\pizz r
 % Bars 331 to 335
 	f r r4 r
-	<<{r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
+	<<{r4 r r8 \breathe r} {\fermataCentered}>> \bar "||"
 	\time 2/4 R2*3
 	
 	
@@ -486,8 +486,8 @@ musicViolinIMvtIII = \relative c' {
 	\mark \default
 % Bars 441 to 445
 	<g, f'>8^\pizz r r4
-	R2\fermataMarkup \bar "||"
-	\tempo "Tempo I." \time 3/4 R2.
+	R2\fermata \bar "||"
+	\time 3/4 R2.
 	<g e' e'>8-\tweak X-offset #-2.1 \f-\tweak X-offset #-5 ^\arco r <g e' c'> r r4
 	R2.
 % Bars 446 to 450

@@ -31,7 +31,7 @@ musicClarinetIIMvtI = \relative c' {
 	g-. g-. g-. g-.
 % Bars 31 to 35
 	f-. f2-\tweak X-offset #0.5 \sf d8.-. c!16-.
-	b4-. c2\sf a'8.-. fis16-. \mark \default
+	b4-. c2\sf a'8. fis16 \mark \default
 	g4\p r r2
 	R1*6
 	
@@ -42,19 +42,19 @@ musicClarinetIIMvtI = \relative c' {
 	
 	r4 b,( d f)
 % Bars 41 to 45
-	e2~ e8.[ e16( g8. e16])
-	e4 r r g(
-	f) e4( f g
-	a) r r2
+	\voiceOne e2_~ \omitBeam e8.[ e16_( g8. e16])  
+	e4 r r g_(
+	f) \voiceTwo e4( f g
+	a) \oneVoice r r2
 	R1*11
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	r8. g16([\p a8. g16]) g4 r
-	r8. g16_\crescmarkup([ a8. g16]) g4 r
-	r8. g16([ a8. g16]) g4 r
+	r8. g16[\p a8. g16] g4 r
+	r8. g16[ a8. g16] g4 r
+	r8. g16[ a8. g16] g4 r
 	fis2-\tweak X-offset #0.3 \ff fis
 	fis4 fis fis fis
 % Bars 61 to 65
@@ -118,10 +118,10 @@ musicClarinetIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	e2\ff b'4-. gis-.
-	e-. e'-. b-. gis-.
+	e2\ff b'4 gis
+	e e' b gis
 % Bars 151 to 155
-	e-. r r2
+	e r r2
 	R1*13
 % Bars 156 to 160
 	
@@ -352,12 +352,12 @@ musicClarinetIIMvtI = \relative c' {
 	
 	
 	
-	\tempo "Più allegro." R1*2
+	R1*2
 	
 % Bars 516 to 520
-	r2 r8. d'16[-\tweak X-offset #-1.5 \f-. f8.-. e16]-. 
-	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4-.\ff r r2 \mark \default
+	r2 r8. d'16[-\tweak X-offset #-1.5 \f f8. e16]
+	d8.[ c16 b8. a16] b8.[ g16 c8. e,16]
+	f4\ff r r2 \mark \default
 	g4-.\ff r r2
 	c,4 r r d8 r
 % Bars 521 to 525

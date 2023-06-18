@@ -38,26 +38,28 @@ musicTrombeIMvtIII = \relative c'' {
 	g4 g8 r g4(
 	c,8) r r4 r 
 	R2.*3
+	
+	
 % Bars 46 to 50
-	d'4.\sf d16 d d8 d
-	d8 d4\sf d16 d d8 d
-	d g,4-\tweak extra-offset #'(0 . 0.7) \sf g16 g g8 g
+	\partCombineApart d'4. d16 d d8 d
+	d8 d4 d16 d d8 d
+	d \partCombineAutomatic g,4-\tweak extra-offset #'(0 . 0.7) \sf g16 g g8 g
 	r4 g8 r g r 
-	\once \partcombineApart c, r r4 r
+	\once \partCombineApart c, r r4 r
 % Bars 51 to 55
 	R2.
-	\once \partcombineApart c2.
+	\once \partCombineApart c2.
 	g'
-	\partcombineApart c,4 e \partcombineAutomatic g8. g16
-	c4 \once \partcombineApart e, g8. g16
+	\partCombineApart c,4 e \partCombineAutomatic g8. g16
+	c4 \once \partCombineApart e, g8. g16
 % Bars 56 to 60
-	\once \partcombineApart c,4. g'8\sf g g \mark \default
+	\once \partCombineApart c,4. g'8\sf g g \mark \default
 	c8 r r4 r
 	c8 r c r c r
 	c c c c c c
-	\once \partcombineApart c, r \once \partcombineApart g' r \once \partcombineApart e r
+	\once \partCombineApart c, r \once \partCombineApart g' r \once \partCombineApart e r
 % Bars 61 to 65
-	\once \partcombineApart c r r4 r
+	\once \partCombineApart c r r4 r
 	R2.*31
 % Bars 66 to 70
 	
@@ -86,11 +88,11 @@ musicTrombeIMvtIII = \relative c'' {
 	c r r4 r 
 	R2.
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*39
+	R2.*39
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -128,9 +130,9 @@ musicTrombeIMvtIII = \relative c'' {
 	r4 c-\tweak X-offset #-1 \sf c8 r
 	R2.*2
 	
-	\once \override CombineTextScript.X-offset = #1 e,8\f e16 e e8 e e e
+	\partCombineApart e,8 e16 e e8 e e e
 % Bars 166 to 170
-	e\p r r4 r
+	e \partCombineAutomatic r r4 r
 	R2.
 	e'8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4. r8 r4
@@ -160,8 +162,8 @@ musicTrombeIMvtIII = \relative c'' {
 	
 % Bars 221 to 225
 	r4 r g,-\tweak extra-offset #'(-2 . 2) \p \mark \default
-	\partcombineApart c8-. g-. c-. g-. e-. c-. 
-	g \partcombineAutomatic r r4 r
+	\partCombineApart c8-. g-. c-. g-. e-. c-. 
+	g \partCombineAutomatic r r4 r
 	R2.*20
 % Bars 226 to 230
 	
@@ -177,15 +179,15 @@ musicTrombeIMvtIII = \relative c'' {
 	g2 g8 g
 % Bars 246 to 250
 	g4 c4. c8
-	c r r4 r8 \partcombineApart d~
-	d d d\noBeam \partcombineAutomatic g,4 g8
+	c r r4 r8 \partCombineApart d~
+	d d d\noBeam \partCombineAutomatic g,4 g8
 	g4. g8 g g
 	g4 c4. c16 c
 % Bars 251 to 255
 	c8 r g4 r8 g16 g
 	g4^(-\tweak extra-offset #'(1.5 . 1.5) \ff c8) r g4-\tweak extra-offset #'(1.5 . 2) \sf^(
-	c8) r \once \partcombineApart g r \once \partcombineApart e r
-	\once \partcombineApart c r \once \partcombineApart c r r4
+	c8) r \once \partCombineApart g r \once \partCombineApart e r
+	\once \partCombineApart c r \once \partCombineApart c r r4
 	R2.*7
 % Bars 256 to 260
 	
@@ -220,12 +222,12 @@ musicTrombeIMvtIII = \relative c'' {
 	c r r4 r8 c
 	c r r4 r
 	R2.
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*22
+	R2.*22
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -239,14 +241,14 @@ musicTrombeIMvtIII = \relative c'' {
 	
 	g2._\pcresc \mark \default
 % Bars 326 to 330
-	\partcombineApart c8-. g-. c-. g-. e-. c-. \partcombineAutomatic
+	\partCombineApart c8-. g-. c-. g-. e-. c-. \partCombineAutomatic
 	g' r g r g r
 	g r r4 r
 	g8 r r4 r
 	g8 r r4 r
 % Bars 331 to 335
 	R2.
-	<<{r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
+	<<{\oneVoice r4 r r8 \breathe r} {\fermataCentered}>> \bar "||"
 	\time 2/4 R2*54
 % Bars 336 to 340
 	
@@ -310,8 +312,8 @@ musicTrombeIMvtIII = \relative c'' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||"
-	\tempo "Tempo I." \time 3/4 R2.
+	R2\fermata \bar "||"
+	\time 3/4 R2.
 	c8\f r c r r4
 	R2.
 % Bars 446 to 450
@@ -324,7 +326,7 @@ musicTrombeIMvtIII = \relative c'' {
 	
 % Bars 456 to 460
 	
-	\once \partcombineApart c,2.
+	\once \partCombineApart c,2.
 	g' \mark \default
 	c4. g8-\tweak X-offset #-3.2 \sf g g
 	c r r4 r
@@ -338,12 +340,12 @@ musicTrombeIMvtIII = \relative c'' {
 	c r r4 r
 	c8 c\sf c c\sf c c\sf
 	c r r4 r
-	\once \partcombineApart c,8 r r4 \once \partcombineApart c8 r
-	\once \partcombineApart c r r4 e8\sf r
+	\once \partCombineApart c,8 r r4 \once \partCombineApart c8 r
+	\once \partCombineApart c r r4 e8\sf r
 % Bars 471 to 475
-	\once \partcombineApart c r r4 e8\sf r
-	\once \partcombineApart c' r \once \partcombineApart g r \once \partcombineApart e r
+	\once \partCombineApart c r r4 e8\sf r
+	\once \partCombineApart c' r \once \partCombineApart g r \once \partCombineApart e r
 	e r r4 r
 	c'8 r r4 r
-	\once \partcombineApart c,8 r r4 r \bar "|."
+	\once \partCombineApart c,8 r r4 r \bar "|."
 }

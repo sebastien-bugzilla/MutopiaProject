@@ -47,10 +47,10 @@ musicCornoIMvtIII = \relative c'' {
 	
 	
 % Bars 46 to 50
-	d4.\sf d16 d d8 d
-	d d4\sf d16 d d8 d
-	d g,4-\tweak extra-offset #'(-0.2 . 0.7) \sf g16 g g8-. g'-.
-	\partcombineApart f8. f16 \partcombineAutomatic e8 r d r
+	\partCombineApart d4. d16 d d8 d
+	d d4 d16 d d8 d
+	d \partCombineAutomatic g,4-\tweak extra-offset #'(-0.2 . 0.7) \sf g16 g g8-. g'-.
+	\partCombineApart f8. f16 \partCombineAutomatic e8 r d r
 	c2.\p
 % Bars 51 to 55
 	g'
@@ -104,11 +104,11 @@ musicCornoIMvtIII = \relative c'' {
 	c8 r r4 r
 	R2.
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*8
+	R2.*8
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -236,8 +236,8 @@ musicCornoIMvtIII = \relative c'' {
 	c2 c8 g
 % Bars 246 to 250
 	g4 c4. c8
-	c r r4 r8 \partcombineApart d
-	d d d\noBeam \partcombineAutomatic d4 d8
+	c r r4 r8 \partCombineApart d
+	d d d\noBeam \partCombineAutomatic d4 d8
 	c2 g4~
 	g c2~
 % Bars 251 to 255
@@ -283,12 +283,12 @@ musicCornoIMvtIII = \relative c'' {
 	c r r4 r8 c
 	c r r4 r
 	R2.
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*4
+	R2.*4
 % Bars 306 to 310
 	
 	e2.\pp~
@@ -310,14 +310,14 @@ musicCornoIMvtIII = \relative c'' {
 	
 	\mark \default
 % Bars 326 to 330
-	r8 \partcombineApart g,-. c-. g'-. e-. c-. \partcombineAutomatic
+	r8 \partCombineApart g,-. c-. g'-. e-. c-. \partCombineAutomatic
 	\once \offset positions #'(-0.7 . 0) Beam g' g,16 g g8 g16 g g8 g16 g
 	f'8 r r4 r
 	d8 r r4 r
 	d8 r r4 r
 % Bars 331 to 335
 	R2.
-	<<{r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered} >> \bar "||"
+	<<{\oneVoice r4 r r8 \breathe r} {\fermataCentered} >> \bar "||"
 	\time 2/4 R2*34
 % Bars 336 to 340
 	
@@ -333,8 +333,8 @@ musicCornoIMvtIII = \relative c'' {
 	
 % Bars 366 to 370
 	
-	r8 c4\pp c8
-	r8 c4 c8
+	r8 \partCombineApart \voiceOne c4 c8 \partCombineAutomatic
+	r8 \partCombineApart c4 c8 \partCombineAutomatic
 	r d4 d8
 	r d4 d8
 % Bars 371 to 375
@@ -344,8 +344,8 @@ musicCornoIMvtIII = \relative c'' {
 	R2*3
 % Bars 376 to 380
 	
-	r8 c4-\tweak X-offset #0.8 \pp c8
-	r c4 c8
+	r8 \partCombineApart c4 c8 \partCombineAutomatic
+	r \partCombineApart c4 c8 \partCombineAutomatic
 	r d4 d8
 	r d4 d8
 % Bars 381 to 385
@@ -364,7 +364,7 @@ musicCornoIMvtIII = \relative c'' {
 	c4.-\tweak X-offset #-1 \sf r8
 	c4.-\tweak X-offset #-1 \sf r8
 	R2
-	\once \partcombineApart f
+	\once \partCombineApart f
 % Bars 396 to 400
 	f-\tweak X-offset #-2.5 \ff
 	d
@@ -401,7 +401,7 @@ musicCornoIMvtIII = \relative c'' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||"
+	R2\fermata \bar "||"
 	\time 3/4 \tempo "Tempo I." R2.
 	e8\f r c r r4
 	R2.
@@ -436,7 +436,7 @@ musicCornoIMvtIII = \relative c'' {
 	c8 r r4 c8\sf r
 	c r r4 c8\sf r
 % Bars 471 to 475
-	\once \partcombineApart c, r r4 e'8\sf r
+	\once \partCombineApart c, r r4 e'8\sf r
 	c r g' r e r
 	c r r4 r
 	c8 r r4 r

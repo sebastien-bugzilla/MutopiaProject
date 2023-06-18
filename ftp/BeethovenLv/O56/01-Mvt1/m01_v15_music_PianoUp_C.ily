@@ -123,7 +123,7 @@ musicPianoUpMvtI = \relative c'' {
 	\clef bass e,,16\fp gis b a gis b d cis \clef treble b gis' b a gis b d cis
 	b gis' b a gis b d cis b d fis e d e cis d
 	b\< cis ais cis b d cis e d fis e fis d e cis d
-	b cis ais cis b d cis e d\> fis e fis d e cis d\!
+	b cis ais cis b d cis e\! d\> fis e fis d e cis d\!
 	b d cis d b cis a! b gis b a b gis a fis gis
 % Bars 156 to 160
 	e fis_\dimmarkup dis fis e fis dis fis e fis d e cis d b cis
@@ -146,7 +146,7 @@ musicPianoUpMvtI = \relative c'' {
 	\tuplet 3/2 4 {\once \tupletUp d(_\crescmarkup c! bes a g f! e bes' g e c! bes)}
 	a4\sf\>(~ \tuplet 3/2 4 {a8 gis a cis e gis a e g\!)}
 % Bars 176 to 180
-	f4-\tweak extra-offset #'(0 . -1.5) _\plegato^\dolce(~ \once \tupletUp \tuplet 3/2 4 {f8 d' f} e4~ \tuplet 3/2 4 {e8 b d}
+	f4_\plegato^\dolce(~ \once \tupletUp \tuplet 3/2 4 {f8 d' f} e4~ \tuplet 3/2 4 {e8 b d}
 	c4~ \tuplet 3/2 4 {c8 a' c} b4~ \tuplet 3/2 4 {b8 fis b)}
 	a2~ \tuplet 3/2 4 {a8( e_\dimmarkup fis gis a b)}
 	c2~ \tuplet 3/2 4 {c8 gis( a b c d)}
@@ -345,7 +345,7 @@ musicPianoUpMvtI = \relative c'' {
 	d b' d c b d f e d b' d c b d f e
 	d\< f a g f g e f d e cis e d f e g
 % Bars 391 to 395
-	f g a g f g e f d\> e cis e d f e g\!
+	f g a g f g e f\! d\> e cis e d f e g\!
 	f g e f d e cis e d e c d b c a c
 	b_\dimin c a b g( a fis a g a f g e f d e)
 	c4\p r \clef bass <e,, g c>8 r q r
@@ -429,9 +429,9 @@ musicPianoUpMvtI = \relative c'' {
 % Bars 466 to 470
 	
 % Bars 471 to 475
-	r8. g16[(\< a8.\> g16)] g4\! r
-	r8. g16[(\< a8.\> g16)] g4\! r
-	r8. g16[(\< a8.\> g16)] r8.\! g16[(\< a8.\> g16)]\!
+	r8. g16[(\< a8.\> g16)]\! g4 r
+	r8. g16[(\< a8.\> g16)]\! g4 r
+	r8. g16[(\< a8.\> g16)]\! r8. g16[(\< a8.\> g16)]\!
 	r16 g( fis g a g fis g) g,4 r
 	r16 g'( fis g a g fis g) g,4 r
 % Bars 476 to 480
@@ -480,7 +480,7 @@ musicPianoUpMvtI = \relative c'' {
 	r16 g fis g a g f e d c d e f g a bes
 	b!( c b c d c bes a) g8( f) f-. f-.
 	f2~ f16 f( a g b! a g f)
-	\tempo "Più allegro." e4 r r2
+	e4 r r2
 	R1*4
 % Bars 516 to 520
 	

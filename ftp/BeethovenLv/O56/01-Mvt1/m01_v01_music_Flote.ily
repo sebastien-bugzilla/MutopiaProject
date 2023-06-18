@@ -395,7 +395,7 @@ musicFloteMvtI = \relative c''' {
 	}
 	c2.\ff-\tweak X-offset #-1 ^\tutti c4(
 	ees2. des4)
-	bes4-. bes-. \acciaccatura c8 bes8.([ aes16 bes8. c16-.)]
+	bes4-. bes-. \acciaccatura c8 bes8.([ aes16 bes8. c16)]
 	aes2~ aes8 ees-. c-. ees-.
 % Bars 466 to 470
 	aes8.-.[ c16-. aes8.-. c16-.] ees2~-\tweak X-offset #-2 \sf

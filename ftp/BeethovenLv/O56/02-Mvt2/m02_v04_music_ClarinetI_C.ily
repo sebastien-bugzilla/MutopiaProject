@@ -35,18 +35,18 @@ musicClarinetIMvtII = \relative c'' {
 	f~
 % Bars 31 to 35
 	f8_\crescmarkup f f \mark \default
-	\partcombineChords f8.-\tweak X-offset #0.5 \sf\> r16\! \partcombineAutomatic r8
+	\partCombineChords f8.-\tweak X-offset #0.5 \sf\> r16\! \partCombineAutomatic r8
 	R4.*7
 % Bars 36 to 40
 	
 	
 	
 	
-	d4(\pp cis16 d)
+	\partCombineApart d4(\pp cis16 d)
 % Bars 41 to 45
 	d4.\f\>
 	d8.\p([ cis32 d]) cis( d cis d)
-	d8.\f f8\> f16\! \mark \default
+	d8.\f f8\> f16\! \partCombineAutomatic \mark \default
 	e8\p r r
 	R4.*9
 % Bars 46 to 50

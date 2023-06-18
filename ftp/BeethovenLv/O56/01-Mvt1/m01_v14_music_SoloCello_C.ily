@@ -96,7 +96,7 @@ musicSoloCelloMvtI = \relative c' {
 	d-. d-. \acciaccatura e8 d8.[( c16 d8. e16])
 % Bars 121 to 125
 	c2. \clef treble \acciaccatura c8 c'8.( b16)
-	b4( a~ a8) gis( a b)
+	\once \stemUp b4( a~ a8) gis( a b)
 	\acciaccatura b8 d4( c4~ c8) e( c a)
 	g2(~ g8 f e16 g f8)
 	e16\noBeam \clef bass e,( g e g e g e) c( e g e g e g e)
@@ -400,12 +400,12 @@ musicSoloCelloMvtI = \relative c' {
 	<<{
 		bes1(~
 		bes2._\sf_\> g4\!)
-		aes2 g(~
+		\voiceTwo aes2 g^(^~
 		g a!)
 	} \\ {
 		ees1_\crescmarkup(
 		e!)
-		f2\pp b,!(
+		f2\pp b,!_(
 		c fis)
 	}>>
 	g4 r r2

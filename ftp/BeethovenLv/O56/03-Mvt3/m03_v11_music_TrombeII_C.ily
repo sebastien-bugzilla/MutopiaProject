@@ -35,11 +35,13 @@ musicTrombeIIMvtIII = \relative c' {
 	g4 c4. c8
 	c c g\noBeam g4 g8
 % Bars 41 to 45
-	g4 g8 r g4-\tweak X-offset #0.5 \sf\(
+	g4 g8 r \voiceOne g4-\tweak X-offset #0.5 \sf_\(
 	c8\) r r4 r 
 	R2.*3
+	
+	
 % Bars 46 to 50
-	d'4.\sf d16 d d8 d
+	\voiceTwo d'4.\sf d16 d d8 d
 	d8 d4\sf d16 d d8 d
 	d g,,4-\tweak extra-offset #'(0 . 0.7) \sf g16 g g8 g
 	r4 g8 r g r 
@@ -86,11 +88,11 @@ musicTrombeIIMvtIII = \relative c' {
 	c r r4 r 
 	R2.
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*39
+	R2.*39
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -220,12 +222,12 @@ musicTrombeIIMvtIII = \relative c' {
 	c r r4 r8 c
 	c r r4 r
 	R2.
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*22
+	R2.*22
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -239,14 +241,14 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	g2. \mark \default
 % Bars 326 to 330
-	c8-\tweak extra-offset #'(-2.3 . 2) \f-. g-. c-. g'-. e-. c-. 
+	c8-\tweak extra-offset #'(-2.3 . 2) \f g c g' e c 
 	g r g r g r
 	g r r4 r
 	g8 r r4 r
 	g8 r r4 r
 % Bars 331 to 335
 	R2.
-	<<{r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
+	s2. \bar "||"
 	\time 2/4 R2*54
 % Bars 336 to 340
 	
@@ -310,8 +312,8 @@ musicTrombeIIMvtIII = \relative c' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||"
-	\tempo "Tempo I." \time 3/4 R2.
+	R2\fermata \bar "||"
+	\time 3/4 R2.
 	c8\f r c r r4
 	R2.
 % Bars 446 to 450

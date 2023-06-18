@@ -587,7 +587,7 @@ musicViolaMvtI = \relative c' {
 	bes bes bes bes   bes bes bes bes
 	a a a a  a a a a
 	g g g g   g g g g
-	\tempo "Più allegro." r2 cis,16(-\tweak X-offset #-5 _\crescmarkup d cis d) f8.( e16)
+	r2 cis,16(-\tweak X-offset #-5 _\crescmarkup d cis d) f8.( e16)
 	dis16( e dis e) g8.( f16) e( f e f) a8.-. g16-.
 % Bars 516 to 520
 	f8.\f[-. e'16-. d8.-. c16]-. b8.[-. d16-. f8.-. e16]-. 

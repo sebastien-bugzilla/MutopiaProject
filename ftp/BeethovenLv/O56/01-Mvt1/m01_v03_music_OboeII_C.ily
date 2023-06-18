@@ -34,8 +34,8 @@ musicOboeIIMvtI = \relative c'' {
 	cis2. e4-.
 	cis-. e-. cis-. a-.
 % Bars 31 to 35
-	d4-. f2\sf d8.-. c!16-.
-	b4-. c2\sf a8.-. fis16-. \mark \default
+	d4-. f2\sf d8. c!16
+	b4 c2\sf a8. fis16 \mark \default
 	g4\p r r2
 	R1*6
 % Bars 36 to 40
@@ -71,10 +71,10 @@ musicOboeIIMvtI = \relative c'' {
 	r8 d4 d d d8~
 	d d4 d d d8
 	d4 r r2
-	R1*3
+	R1*2
 % Bars 71 to 75
 	
-	
+	R1
 	R1
 	e1 \mark \default
 	c4 r r2
@@ -104,22 +104,23 @@ musicOboeIIMvtI = \relative c'' {
 	c1
 	b1
 % Bars 116 to 120
-	d4-. d-. \acciaccatura e8 d8.([ c16 d8. e16)]
-	c2~ c8 g'-. e-. g-. \mark \default
+	d4 d \acciaccatura e8 d8.[ c16 d8. e16]
+	c2~ c8 g' e g \mark \default
 	c,\p r r4 r2
-	R1*13
+	R1*6
+	
 % Bars 121 to 125
 	
 	
 	
 	
-	
+	R1*5
 % Bars 126 to 130
 	
 	
 	
 	
-	
+	R1*2
 % Bars 131 to 135
 	
 	c4-.\f c2( d8. b16)
@@ -162,11 +163,16 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*31
+	R1*5
 % Bars 196 to 200
+	
+	
+	
+	R1*3
 	
 % Bars 201 to 205
 	
+	R1*23
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -190,16 +196,18 @@ musicOboeIIMvtI = \relative c'' {
 	c8.-.[ c16-. c8.-. c16-.] c8.-.[ c16-. c8.-. c16-.] 
 	b8. b16 b4 r8. c16 c4
 	r8. b16 b4 r8. b16 b4
-	r e-. e2~
+	r e e2~
 % Bars 236 to 240
-	e4 e-. e2~
-	e8.[ e16-. e8.-. e16-.] e2~
-	e8.[ e16-. e8.-. e16-.] e2~
+	e4 e e2~
+	e8.[ e16 e8. e16] e2~
+	e8.[ e16 e8. e16] e2~
 	e8 e4 e e e8~
 	e e4 e e e8~
 % Bars 241 to 245
 	e4 r r2
-	R1*35
+	R1*2
+	
+	R1*33
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -285,10 +293,14 @@ musicOboeIIMvtI = \relative c'' {
 	d2~\f d8 r r4
 	R1 \mark #11
 	cis2-\tweak X-offset #-2 \f~ cis8 r r4
-	R1*16
+	R1*6
 	
 % Bars 356 to 360
 	
+	
+	
+	
+	R1*10
 % Bars 361 to 365
 	
 % Bars 366 to 370
@@ -309,9 +321,9 @@ musicOboeIIMvtI = \relative c'' {
 	
 	\mark \default
 % Bars 386 to 390
-	g,2-\tweak X-offset #-3.3 \ff d'4-. b-.
-	g-. g'-. d-. b-.
-	g-. r r2
+	g,2-\tweak X-offset #-3.3 \ff d'4 b
+	g g' d b
+	g r r2
 	R1
 	r4 b8-.\p r r2
 % Bars 391 to 395
@@ -321,7 +333,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 % Bars 401 to 405
 	
-	r8. e16-.\f[ a,8.-. f16-.] e2~
+	r8. e16-.\f[ a,8.-. f16-.] \once \stemUp e2~
 	e~ e8 r r4
 	r d'4(\pp c8) r r4
 	R1*18
@@ -350,9 +362,9 @@ musicOboeIIMvtI = \relative c'' {
 	g8.-.[ g16-. g8.-. g16-.] g4-. r
 	r8. e16-.[ e8.-. e16-.] e4-. r
 % Bars 436 to 440
-	r8. c'16-.[-\tweak X-offset #-1 \p c8.-. c16-.] c4-. r
-	r r8. c16-. c4-. r8. c16-.
-	c4-. r r2
+	r8. c'16[-\tweak X-offset #-1 \p c8. c16-.] c4 r
+	r r8. c16 c4 r8. c16
+	c4 r r2
 	R1*23
 % Bars 441 to 445
 	
@@ -405,12 +417,12 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	\tempo "Più allegro." R1*2
+	R1*2
 	
 % Bars 516 to 520
-	r2 r8. d16-\tweak X-offset #-1.5 \f-.[ f8.-. e16-.] 
-	d8.-.[ c16-. b8.-. a16-.] b8.-.[ g16-. c8.-. e,16-.] 
-	f4-.\ff r r2 \mark \default
+	r2 r8. d16-\tweak X-offset #-1.5 \f[ f8. e16] 
+	d8.[ c16 b8. a16] b8. g16 c8. e,16 
+	f4\ff r r2 \mark \default
 	g4-.\ff r r2
 	c,4 r r g'8 r
 % Bars 521 to 525

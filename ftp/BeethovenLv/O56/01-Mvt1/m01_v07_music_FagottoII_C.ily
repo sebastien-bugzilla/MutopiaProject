@@ -37,7 +37,7 @@ musicFagottoIIMvtI = \relative c {
 	d-. f2\sf d8.-. c!16-.
 	b4-. c2\sf a8.-. fis16-. \mark \default
 	g4\p r r2
-	r2 r4 e'~\p
+	r2 r4 e'_~\p
 	e gis a b
 % Bars 36 to 40
 	c1~
@@ -130,7 +130,7 @@ musicFagottoIIMvtI = \relative c {
 	R1*2
 % Bars 131 to 135
 	
-	\once \override CombineTextScript.X-offset = #1.2 c4(\f a g f)
+	c4\f a g f
 	e r r2
 	R1*15
 % Bars 136 to 140
@@ -141,10 +141,10 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	\mark \default
-	e'2-\tweak X-offset #-1.5 \ff b'4-. gis-.
-	e-. e-. b-. gis-.
+	e'2-\tweak X-offset #-1.5 \ff b'4 gis
+	e e b gis
 % Bars 151 to 155
-	e-. r r2
+	e r r2
 	R1*13
 % Bars 156 to 160
 	
@@ -302,10 +302,10 @@ musicFagottoIIMvtI = \relative c {
 	R1
 	g,2-\tweak X-offset #-3.5 \ff~ g8 r r4
 	R1
-	\once \override CombineTextScript.transparent = ##t <f c''>2-\tweak X-offset #-3.2 \ff~ <f c''>8 r r4
+	f2-\tweak X-offset #-3.2 \ff~ f8 r r4
 	R1
 % Bars 351 to 355
-	\once \override CombineTextScript.transparent = ##t <f b'>2-\tweak X-offset #-2 \f~ <f b'>8 r r4
+	f2-\tweak X-offset #-2 \f~ f8 r r4
 	R1 \mark #11
 	e2~-\tweak X-offset #-2.2 \f e8 r r4
 	R1
@@ -341,8 +341,8 @@ musicFagottoIIMvtI = \relative c {
 	\mark \default
 % Bars 386 to 390
 	g,2-\tweak X-offset #-3.3 \ff d'4-. b-.
-	g'-. g-. d-. b-.
-	g-. r r2
+	g' g d b
+	g r r2
 	R1*13
 % Bars 391 to 395
 	
@@ -423,12 +423,12 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	
-	\tempo "Più allegro." R1*2
+	R1*2
 	
 % Bars 516 to 520
-	r2 r8. d'16\f[-. f8.-. e16]-. 
-	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4-.-\tweak X-offset #-1 \ff r r2 \mark \default
+	r2 r8. d'16\f[ f8. e16] 
+	d8.[ c16 b8. a16] b8.[ g16 c8. e,16] 
+	f4-\tweak X-offset #-1 \ff r r2 \mark \default
 	g4-.\ff r r2
 	c,4 r r g''8 r
 % Bars 521 to 525

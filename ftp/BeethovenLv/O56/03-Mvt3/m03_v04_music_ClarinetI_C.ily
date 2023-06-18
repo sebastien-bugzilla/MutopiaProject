@@ -32,8 +32,8 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	r4 r f,8-\tweak X-offset #-3.5 \ff f
 	e4. c'8 c d
-	c8 r e,16 d e f g e f g
-	a f g a d,8( d'4) d8
+	c8 r \partCombineApart e,16 d e f g e f g
+	a f g a d,8( d'4) \partCombineAutomatic d8
 % Bars 41 to 45
 	d4-\tweak extra-offset #'(-0.4 . 0.7) \sf( c8) r d4(\sf
 	c8\ff) c r4 r
@@ -50,12 +50,12 @@ musicClarinetIMvtIII = \relative c'' {
 	R2.
 	g2._\crescmarkup
 	g
-	\partcombineApart c4 e, g
-	c16 b c d e d e f g g, a b
+	\partCombineApart c4 e, g
+	\partCombineAutomatic c16 b c d e d e f g g, a b
 % Bars 56 to 60
-	c4. e8( g, b) \mark \default
-	c \partcombineAutomatic r r4 r
-	c8-. e\sf-. g,-. c\sf-. e,-. g'\sf-. 
+	c4. \partCombineApart e8( g, b) \mark \default
+	c \partCombineAutomatic r r4 r
+	\partCombineApart c8-. e-. g,-. c-. e,-. g'-. \partCombineAutomatic
 	c, e\sf g, c\sf e, g\sf
 	c, r c' r c r
 % Bars 61 to 65
@@ -72,7 +72,7 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	d,2.~
 % Bars 81 to 85
-	d~
+	\noteShift #0.9 \once \omit Stem d~
 	d2 d4
 	d r r
 	R2.*8
@@ -89,11 +89,11 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*8
+	R2.*8
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -127,19 +127,19 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 156 to 160
 	e4. c'8 c d
 	c r e,16 d e f g e f g
-	a f g a \partcombineApart d,8( d'4) \partcombineAutomatic d8
+	a f g a \partCombineApart d,8( d'4) \partCombineAutomatic d8
 	d4-\tweak X-offset #-2 \sf( c8) r f,4(-\tweak X-offset #-1 \sf
 	e8) r r4 r
 % Bars 161 to 165
 	e'4\sf( e8) r r4
-	r c(-\tweak extra-offset #'(-1.5 . 1.0) \sf f,8) r
+	r \partCombineApart c(-\tweak extra-offset #'(-1.5 . 1.0) \sf f,8) \partCombineAutomatic r
 	R2.*3
 % Bars 166 to 170
 	b8\p b16 b b8-. b-. c-. c-. 
 	b8\f r r4 e8\sf e16 e
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4.\sf f8-. e-. d-.
-	\acciaccatura d c-. b-. c-. d-. e-. e,-.
+	\acciaccatura d c[ b c d e \once \partCombineApart e,]
 % Bars 171 to 175
 	a\p r r4 r
 	R2.*3
@@ -181,8 +181,8 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	
 	
-	r8 g16\pp g g8 g g g
-	g r e r r4
+	\partCombineApart r8 g16\pp g g8 g g g
+	g r e r r4 \partCombineAutomatic
 % Bars 211 to 215
 	R2.*11
 % Bars 216 to 220
@@ -192,7 +192,7 @@ musicClarinetIMvtIII = \relative c'' {
 	\once \override CombineTextScript.X-offset = #-2 c'8\f-. g-. c-. g-. e-. c-. 
 	g' r r4 r
 	R2.
-	r4 g8-\tweak X-offset #0 \pp r g r
+	\partCombineApart r4 g8-\tweak X-offset #0 \pp r g r \partCombineAutomatic
 % Bars 226 to 230
 	a8 r r4 r 
 	r b8 r b r
@@ -212,7 +212,7 @@ musicClarinetIMvtIII = \relative c'' {
 	c2-\tweak X-offset #-2 \ff~ c8 d
 % Bars 246 to 250
 	c4 c4. c8
-	a4 a8 r r a
+	\partCombineApart a4 a8 \partCombineAutomatic r r \once \partCombineApart a
 	g fis g\noBeam d4 d16( f)
 	e4. c'4 d8
 	c4. r8 r4
@@ -220,7 +220,7 @@ musicClarinetIMvtIII = \relative c'' {
 	r r8 d4 d8
 	d4(-\tweak X-offset #-2.5 \ff c8) r d4(-\tweak X-offset #-2 \sf
 	c8) r e r e r
-	e r \once \partcombineApart c, r r4
+	e r \once \partCombineApart c, r r4
 	R2.*5
 % Bars 256 to 260
 	
@@ -237,11 +237,11 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 271 to 275
 	
 	
-	g2.~
-	g~
-	g
+	\partCombineApart g2.~
+	\noteShift #1 \once \omit Stem g~
+	\noteShift #1.6 g
 % Bars 276 to 280
-	g8 r r4 r
+	g8 \partCombineAutomatic r r4 r
 	R2.*2
 	
 	e8-\tweak X-offset #-1 \p r r4 e8-. f-.
@@ -263,19 +263,19 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	
 	
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*11
+	R2.*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 	
 	
-	r4 r g-\tweak X-offset #-1 _\semprepp(
+	\partCombineApart r4 r g-\tweak X-offset #-1 _\semprepp(
 	b2.)~
 % Bars 316 to 320
 	b~
@@ -290,14 +290,14 @@ musicClarinetIMvtIII = \relative c'' {
 	g~
 	g_\crescmarkup \mark \default
 % Bars 326 to 330
-	\once \override CombineTextScript.X-offset = #-3 c8-\tweak X-offset #-1 \f-. g-. c-. g-. e-. c-. 
-	g g'16 g b8 b16 b d8 d16 d
+	c8-. g-. c-. g-. e-. c-. 
+	g[ g'16 g] \partCombineAutomatic b8 b16 b d8 d16 d
 	d8 r r4 r
 	b8 r r4 r
 	f8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< { r4 r r8 \breathe \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
+	<< { \oneVoice r4 r r8 \breathe r } {\fermataCentered} >> \bar "||"
 	\time 2/4 R2*54
 % Bars 336 to 340
 	
@@ -324,12 +324,12 @@ musicClarinetIMvtIII = \relative c'' {
 	g8-\tweak X-offset #-1.5 \f( a16 b c8 d)
 	e4( c8) r
 	R2
-	r4 \partcombineApart g8 g \partcombineAutomatic
+	r4 \partCombineApart g8 g \partCombineAutomatic
 % Bars 391 to 395
 	g(\f a16 b c8 b)
 	c4.-\tweak X-offset #-1 \sf r8
 	c4.-\tweak X-offset #-1 \sf r8
-	\once \partcombineApart g4. r8
+	\once \partCombineApart g4. r8
 	aes2
 % Bars 396 to 400
 	g-\tweak X-offset #-2.5 \ff~
@@ -363,8 +363,8 @@ musicClarinetIMvtIII = \relative c'' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||"
-	\time 3/4 \tempo "Tempo I." g8\pp-. g-. g-. g-. g-. g-. 
+	R2\fermata \bar "||"
+	\time 3/4 g8\pp-. g-. g-. g-. g-. g-. 
 	g\f r g r r4
 	f8\pp-. f-. f-. f-. f-. f-. 
 % Bars 446 to 450
@@ -379,23 +379,23 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	e,8\f e e e e e 
 	f f f f f f \mark \default
-	e4. \once \override CombineTextScript.X-offset = #-3 e'8-\tweak X-offset #-1.5 \sf-. g,-. b-. 
-	c8 r r4 r
+	e4. \partCombineApart \voiceOne e'8-. g,-. b-. 
+	c8 \partCombineAutomatic r r4 r
 % Bars 461 to 465
-	c4. e8-\tweak X-offset #-1.5 \sf-. g,-. b-.
-	c r r4 r
+	\partCombineApart c4. e8-. g,-. b-.
+	c \partCombineAutomatic r r4 r
 	R2.*2
 	\mark \default
-	c8\ff-. e\sf-. g,-. c\sf-. e,-. g\sf-. 
+	\partCombineApart c8 e g, c e, g \partCombineAutomatic
 % Bars 466 to 470
 	c8 r r4 r
 	c8-. e\sf-. g,-. c\sf-. e,-. g\sf-. 
 	c, r r4 r
-	c8 r r4 e8\sf r
-	\once \partcombineApart c r r4 c'8\sf r
+	\once \partCombineApart c8 r r4 e8\sf r
+	\once \partCombineApart c r r4 c'8\sf r
 % Bars 471 to 475
-	\once \partcombineApart c, r r4 \once \partcombineApart c8 r
-	\once \partcombineApart c' r \once \partcombineApart g r \once \partcombineApart e r 
+	\once \partCombineApart c, r r4 \once \partCombineApart c8 r
+	\once \partCombineApart c' r \once \partCombineApart g r \once \partCombineApart e r 
 	c' r r4 r 
 	c8 r r4 r
 	c8 r r4 r \bar "|."

@@ -593,7 +593,7 @@ musicViolinIMvtI = \relative c' {
 	e e e e e e e e 
 	f f f f f f f f
 	f f f f f f f f
-	\tempo "Più allegro." b,16_\crescmarkup( c b c) e8.( d16) cis16( d cis d) f8.( e16)
+	b,16_\crescmarkup( c b c) e8.( d16) cis16( d cis d) f8.( e16)
 	dis16( e dis e) g8.( f16) e16( f e f) a8.-. g16-.
 % Bars 516 to 520
 	f8.\f[-. e16-. d8.-. c16-.] b8.[-. d'16-. f8.-. e16]-. 

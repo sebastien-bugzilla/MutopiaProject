@@ -19,8 +19,8 @@ musicBassoMvtII = \relative c {
 	R4.
 	R4.
 	R4.
-	R4.
-	R4.
+	\mmrPos #-6 R4.
+	\mmrPos #-6 R4.
 % Bars 11 to 15
 	R4.
 	r8 r16 ees,16(\p f g)
@@ -51,9 +51,9 @@ musicBassoMvtII = \relative c {
 	
 	aes,16-.\pp(-\tweak X-offset #1.5 ^\arco aes-. aes-. aes-. aes-. aes-.)
 % Bars 41 to 45
-	g32\f[ g g g] g[ g\> g g] g[ g g g]
+	g32\f[ g g g] g[ g\> g g] g[ g g g]\!
 	f16\p f f f f f
-	fis32\f[ fis' fis fis] fis[ fis fis\> fis] fis[ fis, fis fis] \mark \default
+	fis32\f[ fis' fis fis] fis[ fis fis\> fis] fis[ fis, fis fis]\! \mark \default
 	g8\p r16 g16\<(\noBeam \afterGrace aes8\>)\startTrillSpan {g16[\stopTrillSpan aes]\!}
 	g8 r r
 % Bars 46 to 50

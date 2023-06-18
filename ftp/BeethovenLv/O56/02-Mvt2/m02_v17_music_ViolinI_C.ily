@@ -51,9 +51,9 @@ musicViolinIMvtII = \relative c' {
 	
 	c16-\tweak X-offset #-1.5 \pp-.^\arco( c-. c-. c-. c-. c-.)
 % Bars 41 to 45
-	c32\f[ c c c] c[ c\> c c] c[ c c c]
+	c32\f[ c c c] c[ c\> c c] c[ c c c]\!
 	c16\p c c c c c
-	c32\f[ ees ees ees] ees[ c' c\> c] c[ ees, ees ees] \mark \default
+	c32\f[ ees ees ees] ees[ c' c\> c] c[ ees, ees ees]\! \mark \default
 	d8\p r16 g,(\<\noBeam \afterGrace aes!8)\startTrillSpan\> {g16[\stopTrillSpan aes\!]}
 	g8 r r
 % Bars 46 to 50

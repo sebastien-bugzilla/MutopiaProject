@@ -50,7 +50,7 @@ musicSoloViolinMvtII = \relative c''' {
 	
 	\mark \default
 	R4.
-	\tuplet 3/2 16 {g,32([ g' fis] g[ b ais] b[ d cis] d[ g d])} f!(\< ees) d(-.\> c-.)
+	\tuplet 3/2 16 {g,32([ g' fis] g[ b ais] b[ d cis] d[ g d])} f!(\< ees)\! d(-.\> c-.)
 % Bars 46 to 50
 	b8\p r g,16.( b32)
 	b8 r b16.( d32)

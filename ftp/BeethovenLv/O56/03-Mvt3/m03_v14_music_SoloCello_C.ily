@@ -123,7 +123,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	e4 r8 g(-. e-. g)-. 
 	e(-. g-. e-. g-. e-. g)-. 
 	e4 r8 g(-. e-. g)-.\stopTextSpan
-	<>^\atempo e4\pp r r
+	e4\pp r r
 % Bars 111 to 115
 	r r r8 e( 
 	g) r r4 r8 fis(
@@ -336,7 +336,7 @@ musicSoloCelloMvtIII = \relative c'' {
 % Bars 301 to 305
 	a(-. c-. a-. c-. a-. c)-. 
 	a4 r8 c(-. a-. c)-.\stopTextSpan
-	<>^\atempo a r r4 r
+	a r r4 r
 	r4 r8 fis([ a)] r
 	r4 r8 fis([ a]) r
 % Bars 306 to 310
@@ -394,9 +394,9 @@ musicSoloCelloMvtIII = \relative c'' {
 % Bars 351 to 355
 	g! b a g fis a g fis
 	g4 r16 d-. e-. fis-.
-	g\< a b c d\> b c a\!
+	g\< a b c\! d\> b c a\!
 	g4 r16 d e fis
-	g\< a b c d\> b c a\! \clef bass
+	g\< a b c\! d\> b c a\! \clef bass
 % Bars 356 to 360
 	g(_\crescmarkup fis g a b a g fis)
 	g( a b c d c b ais) \clef tenor
@@ -496,7 +496,7 @@ musicSoloCelloMvtIII = \relative c'' {
 % Bars 441 to 445
 	d\startTrillSpan~\<
 	\afterGrace d2\>\fermata {c16[\stopTrillSpan d\!]} \bar "||"
-	\tempo "Tempo I." \time 3/4 e4 r r
+	\time 3/4 e4 r r
 	R2. \clef tenor
 	\acciaccatura a,8 f'4_\pespressivo~ f8. e16 e( d) r16 c \clef bass
 % Bars 446 to 450

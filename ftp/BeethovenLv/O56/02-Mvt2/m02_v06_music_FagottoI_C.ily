@@ -35,7 +35,7 @@ musicFagottoIMvtII = \relative c' {
 	c
 % Bars 31 to 35
 	des8_\crescmarkup des des \mark \default
-	\partcombineChords des8.\sf\> r16\! \partcombineAutomatic r8
+	\partCombineChords des8.\sf\> r16\! \partCombineAutomatic r8
 	R4.*7
 % Bars 36 to 40
 	
@@ -46,7 +46,7 @@ musicFagottoIMvtII = \relative c' {
 % Bars 41 to 45
 	c4.
 	c8.([ b32 c)] b( c b c)
-	c8. ees8 ees16 \mark \default
+	\partCombineChords c8. ees8 ees16 \partCombineAutomatic \mark \default
 	d8 r r
 	R4.*9
 % Bars 46 to 50

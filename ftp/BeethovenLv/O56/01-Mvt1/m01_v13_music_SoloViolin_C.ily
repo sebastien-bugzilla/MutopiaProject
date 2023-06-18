@@ -155,10 +155,10 @@ musicSoloViolinMvtI = \relative c''' {
 		a1_\dimmarkup
 		a\pp
 		bes(_\crescmarkup
-		a2.)-\tweak X-offset #0.5 \pp f4(
-		e2)-\tweak X-offset #0.7 _\crescmarkup g~
+		a2.)-\tweak X-offset #0.5 \pp \voiceOne f4_(
+		e2)-\tweak X-offset #0.7 _\crescmarkup g_~ \voiceTwo
 		g2.-\tweak X-offset #0.7 _\sf e4(
-		f!2)-\tweak X-offset #0.8 \p e
+		\voiceOne f!2)-\tweak X-offset #0.8 \p e
 		e fis
 		c4 
 	}>> r r2
@@ -250,7 +250,7 @@ musicSoloViolinMvtI = \relative c''' {
 	e2( g)
 	cis(_\crescmarkup e
 % Bars 276 to 280
-	g cis) \mark \default
+	g cis) \mark \default 
 	\tuplet 3/2 4 {d8\f-. f,-. bes-. d,-. f-. bes,-. d-. f,-. bes-. d, d d}
 	d2. d''4(
 	\tuplet 3/2 4 {ees8-.) f,-. c'-. ees,-. f-. c-. ees-. f,-. c'-. ees, ees ees}
@@ -386,10 +386,10 @@ musicSoloViolinMvtI = \relative c''' {
 		a1(
 		aes)
 		aes
-		aes4( ees) ees(-. ees-.)
-		ees2.( des4)
-		<<c1( {s4^\sf^\> s s s\!}>>
-		c2)( d!
+		\voiceTwo aes4^( ees) ees^(-. ees-.)
+		\voiceOne ees2.( des4)
+		<< c1( {s4^\sf^\> s s s\!}>>
+		\once \voiceTwo c2)^( d!
 		c c)
 		c4
 	} \\ {
@@ -397,13 +397,13 @@ musicSoloViolinMvtI = \relative c''' {
 		c1~_\dimmarkup
 		c\pp
 		des_\crescmarkup
-		c4(-\tweak X-offset #0.5 \pp aes) aes aes
+		c4_(-\tweak X-offset #0.5 \pp aes) aes aes
 		g1_\crescmarkup
 		g2. bes4
-		aes2-\tweak X-offset #0.5 \pp f
+		aes2-\tweak X-offset #0.5 \pp \voiceOne f
 		ees d
 		ees4
-	}>> r r2
+	}>> \oneVoice r r2
 % Bars 416 to 420
 	R1*3
 	
@@ -508,7 +508,7 @@ musicSoloViolinMvtI = \relative c''' {
 	c2.( bes4)
 	a2~ a16 f' g a b! c d e
 	g( f e f g f e d c b d c e d f b,)
-	\tempo "Più allegro." c4 r r2
+	c4 r r2
 	R1*4
 % Bars 516 to 520
 	

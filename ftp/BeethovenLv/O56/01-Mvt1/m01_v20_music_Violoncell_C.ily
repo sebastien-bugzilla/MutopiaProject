@@ -48,7 +48,7 @@ musicVioloncellMvtI = \relative c {
 % Bars 31 to 35
 	d4-. f2\sf d8.-. c!16-.
 	b4-. c2\sf a8.-. fis16-. \mark \default
-	\partcombineApart \tuplet 3/2 4 {g8 b d g d b g b d g, b d}
+	\partCombineApart \tuplet 3/2 4 {g8 b d g d b g b d g, b d}
 	\tuplet 3/2 4 {g, b d g d b g b d e, b' e}
 	\tuplet 3/2 4 {a, c e e, b' e a, c e g, d' g}
 % Bars 36 to 40
@@ -56,7 +56,7 @@ musicVioloncellMvtI = \relative c {
 	\tuplet 3/2 4 {c,\p e a c a e c e a c, e a}
 	\tuplet 3/2 4 {c,\sfp e a c a e c e a c, e a}
 	\tuplet 3/2 4 {d, g b d, g b d, fis a d cis d}
-	\partcombineAutomatic g,4 g,2_\crescmarkup( a8. b16)
+	\partCombineAutomatic g,4 g,2_\crescmarkup( a8. b16)
 % Bars 41 to 45
 	c4-.\p r c^\pizz c
 	c r r a
@@ -565,7 +565,7 @@ musicVioloncellMvtI = \relative c {
 	r2 b16( c b c g'8 c,)
 	r2 r8 c( a' c,)
 	r2 r4 b16( c b c)
-	\tempo "Più allegro." b(^\tutti_\crescmarkup c b c) e8.( d16) cis16( d cis d) f8.( e16)
+	b(^\tutti_\crescmarkup c b c) e8.( d16) cis16( d cis d) f8.( e16)
 	dis16( e dis e) g8.( f16) e16( f e f) a8.-. g16-.
 % Bars 516 to 520
 	f8.\f[-. e16-. d8.-. c16]-. b8.[-. d16-. f8.-. e16]-. 

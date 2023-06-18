@@ -72,14 +72,14 @@ musicCornoIIMvtI = \relative c'' {
 % Bars 61 to 65
 	g r r d''
 	d r r d
-	d r r8. d16[-. d8.-. d16]-. 
-	d4 r r8. d16[-. d8.-. d16]-.
-	d4 r8. d16-. d4-. r8. d16-.
+	d r r8. d16[ d8. d16] 
+	d4 r r8. d16[ d8. d16]
+	d4 r8. d16 d4 r8. d16
 % Bars 66 to 70
-	g,4-. r8. d'16-. d4-. r8. d16-.
-	d4-. d-. d-. d-.
-	d-. d-. d-. d-.
-	d-. r r2
+	g,4-. r8. d'16 d4 r8. d16
+	d4 d d d
+	d d d d
+	d r r2
 	R1*3
 % Bars 71 to 75
 	
@@ -202,8 +202,8 @@ musicCornoIIMvtI = \relative c'' {
 	c2. c4
 	c c c c
 	c2~ c8 c-. c-. c-.
-	c4 r r8. f'16-.[ f8.-. f16]-. 
-	e4 r r8. e16[-. e8.-. e16-.] 
+	c4 r r8. f'16[ f8. f16] 
+	e4 r r8. e16[ e8. e16] 
 % Bars 231 to 235
 	c,4 r c r
 	c r c r
@@ -373,7 +373,7 @@ musicCornoIIMvtI = \relative c'' {
 	g8.-. g16-. g8-. r r8. g16-. g8-. r
 % Bars 426 to 430
 	r8. g16-. g8-. r r8. g16[-. g8.-. g16]-. 
-	c4 r r8. e16[-. e8.-. e16]-. 
+	c4 r r8. e16[ e8. e16] 
 	e4 r r8. c16[-. c8.-. c16]-. 
 	c4 r r2
 	R1 \mark \default
@@ -433,7 +433,7 @@ musicCornoIIMvtI = \relative c'' {
 	c8 r r8. c'16 c8 r r8. c16
 % Bars 491 to 495
 	g8 r r8. g16 g8 r r8. g16 \mark \default
-	c8.[-\tweak X-offset #-3 \mf c,16-. c8.-. c16]-. c8 r r4
+	c8.[-\tweak X-offset #-3 \mf c,16 c8. c16] c8 r r4
 	r8. c16[ c8. c16] c8 r r4
 	R1*12
 % Bars 496 to 500
@@ -441,7 +441,7 @@ musicCornoIIMvtI = \relative c'' {
 % Bars 501 to 505
 	
 % Bars 506 to 510
-	\clef bass c,,1~\f
+	\clef bass \partCombineApart c,,1~\f
 	c~
 	c~
 	c~
@@ -450,7 +450,7 @@ musicCornoIIMvtI = \relative c'' {
 	c~
 	c~
 	c
-	\tempo "Più allegro." c4 r r2
+	c4 r r2 \partCombineAutomatic
 	R1*2 \clef treble
 % Bars 516 to 520
 	

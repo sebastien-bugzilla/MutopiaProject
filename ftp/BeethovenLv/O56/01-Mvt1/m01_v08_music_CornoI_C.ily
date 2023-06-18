@@ -15,7 +15,7 @@ musicCornoIMvtI = \relative c'' {
 	
 % Bars 11 to 15
 	
-	\partcombineChords d1\f\>
+	\partCombineChords d1\f\>
 	c~\pp
 	c~
 	\crescText "cresc. poco a poco" c~\<
@@ -26,7 +26,7 @@ musicCornoIMvtI = \relative c'' {
 	c~
 	c
 % Bars 21 to 25
-	c2.\f \partcombineAutomatic c4-.
+	c2.\f \partCombineAutomatic c4-.
 	c-. c-. c-. c-.
 	c1~
 	c4 c-. c-. c-. 
@@ -70,22 +70,22 @@ musicCornoIMvtI = \relative c'' {
 	c2\ff c
 	c4 c c c
 % Bars 61 to 65
-	g r r d'
-	d r r d
-	d r r8. d16[-. d8.-. d16]-. 
-	d4 r r8. d16[-. d8.-. d16]-.
-	d4 r8. d16-. d4-. r8. d16-.
+	g r r \partCombineApart d'
+	d \partCombineAutomatic r r \partCombineApart d
+	d \partCombineAutomatic r r8. \partCombineApart d16[-. d8.-. d16]-. 
+	d4 \partCombineAutomatic r r8. \partCombineApart d16[-. d8.-. d16]-.
+	d4 \once \partCombineAutomatic r8. d16-. d4-. \once \partCombineAutomatic r8. d16-.
 % Bars 66 to 70
-	d4-. r8. d16-. d4-. r8. d16-.
+	\once \partCombineChords d4-. \once \partCombineAutomatic r8. d16-. d4-. \once \partCombineAutomatic r8. d16-.
 	d4-. d-. d-. d-.
 	d-. d-. d-. d-.
-	d-. r r2
+	d-. \partCombineAutomatic r r2
 	R1*3
 % Bars 71 to 75
 	
 	
-	\partcombineChords g1\ff(
-	e) \partcombineAutomatic \mark \default
+	\partCombineChords g1\ff(
+	e) \partCombineAutomatic \mark \default
 	c4 r r2
 % Bars 76 to 80
 	R1*9
@@ -177,12 +177,12 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	r8. e16-.\p e8-. r r8. e16-. e8-. r
-	r8. e16-. e8.-. e16-. e4-. r
+	r8. e16-.\p\noBeam e8-. r r8. e16-.\noBeam e8-. r
+	r8. e16-.\noBeam e8.-. e16-. e4-. r
 % Bars 196 to 200
 	r8. e16-. e4-. r8. e16-. e4-.
-	r8. e16-. e8.-. e16-. e4-. r
-	r8. c16-. c8.-. c16-. c4-. r
+	r8. e16-.\noBeam e8.-. e16-. e4-. r
+	r8. c16-.\noBeam c8.-. c16-. c4-. r
 	R1*26
 % Bars 201 to 205
 	
@@ -202,13 +202,13 @@ musicCornoIMvtI = \relative c'' {
 	c2. c4
 	c c c c
 	c2~ c8 c-. c-. c-.
-	c4 r r8. f16-.[ f8.-. f16]-. 
-	e4 r r8. e16[-. e8.-. e16]-.
+	c4 r r8. \partCombineApart f16-.[ f8.-. f16]-. 
+	e4 \partCombineAutomatic r r8. \partCombineApart e16[-. e8.-. e16]-. \partCombineAutomatic 
 % Bars 231 to 235
 	c4 r c r
 	c r c r
 	e r e r
-	\once \partcombineApart f r e r
+	\once \partCombineApart f r e r
 	r e-. e2~ 
 % Bars 236 to 240
 	e4 e-. e2~
@@ -283,8 +283,8 @@ musicCornoIMvtI = \relative c'' {
 	c4 c8. c16 c4 c
 	c1~
 	c8.[ c16 c8. c16] c2~
-	c8.[ c16 c8. c16] \partcombineApart c8.[ f16 f8. f16]
-	f4 \partcombineAutomatic f f f
+	c8.[ c16 c8. c16] \partCombineApart c8.[ f16 f8. f16]
+	f4 \partCombineAutomatic f f f
 % Bars 331 to 335
 	d2 e
 	c1
@@ -327,7 +327,7 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	
-	r4 \once \partcombineApart f2 c4~
+	r4 \once \partCombineApart f2 c4~
 % Bars 371 to 375
 	c r r2
 	R1*6
@@ -368,13 +368,13 @@ musicCornoIMvtI = \relative c'' {
 % Bars 421 to 425
 	
 	
-	r8. c16-.\pp c8-. r r8. c16-. c8-. r
-	r8. c16-. c8-. r r8. c16[-. c8.-. c16]-. 
-	d8.-. d16-. d8-. r r8. d16-. d8-. r
+	r8. c16-.\pp\noBeam c8-. r r8. c16-.\noBeam c8-. r
+	r8. c16-.\noBeam c8-. r r8. c16[-. c8.-. c16]-. 
+	d8.-. d16-. d8-.\noBeam r r8. d16-.\noBeam d8-. r
 % Bars 426 to 430
-	r8. d16-. d8-. r r8. d16[-. d8.-. d16]-. 
-	e4 r r8. e16[-. e8.-. e16]-. 
-	e4 r r8. e16[-. e8.-. e16]-. 
+	r8. d16-.\noBeam d8-. r r8. d16[-. d8.-. d16]-. 
+	e4 r r8. \partCombineApart e16[-. e8.-. e16]-. 
+	e4 \partCombineAutomatic r r8. e16[-. e8.-. e16]-. 
 	f4 r r2
 	R1 \mark \default
 % Bars 431 to 435
@@ -433,24 +433,24 @@ musicCornoIMvtI = \relative c'' {
 	c8 r r8. e16 e8 r r8. e16
 % Bars 491 to 495
 	d8 r r8. d16 d8 r r8. d16 \mark \default
-	\partcombineApart c8.[ c16-. c8.-. c16]-. \partcombineAutomatic c8 r r4
+	\partCombineApart c8.[ c16-. c8.-. c16]-. \partCombineAutomatic c8 r r4
 	r8. c16[ c8. c16] c8 r r4
-	R1*20
+	R1*12
 % Bars 496 to 500
 	
 % Bars 501 to 505
 	
 % Bars 506 to 510
-	
+	R1*9
 % Bars 511 to 515
 	
 	
 	
-	\tempo "Più allegro." R1*3
 	
+	R1*2
 % Bars 516 to 520
 	
-	r2 r8. g16-\tweak X-offset #-2 \f[-. c8.-. c16]-. 
+	r2 r8. \clef treble g16-\tweak X-offset #-2 \f[-. c8.-. c16]-. 
 	c4-.-\tweak X-offset #-1.5 \ff r r2 \mark \default
 	g'4-.\ff r r2
 	c,4 r r d8 r 

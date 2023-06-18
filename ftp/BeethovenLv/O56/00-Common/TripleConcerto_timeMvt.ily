@@ -7,13 +7,17 @@
 %###############################################################################
 timeMvtI = {
 	\time 4/4
-%	\tempo "Allegro"
+	\set Timing.beamExceptions = \beamExceptions {
+		8.[ 16 8. 16] 8.[ 16 8. 16] |
+		2 8[ 8 8 8] |
+		8[ 8 8 8] 8[ 8 8 8] |
+		\tuplet 3/2 4 {8[ 8 8] 8[ 8 8] 8[ 8 8] 8[ 8 8]} |
+		16[ 16 16 16] 16[ 16 16 16] 16[ 16 16 16] 16[ 16 16 16] 
+	}
 }
 timeMvtII = {
 	\time 3/8
-	\tempo "Largo"
 }
 timeMvtIII = {
 	\time 3/4
-	\tempo "Rondo alla Polacca."
 }

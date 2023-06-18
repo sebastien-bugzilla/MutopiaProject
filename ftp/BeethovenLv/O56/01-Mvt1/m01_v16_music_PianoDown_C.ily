@@ -509,7 +509,7 @@ musicPianoDownMvtI = \relative c' {
 	r16 g fis g a g f e d c d e f g a bes
 	b!( c b c d c bes a) g8( f) f-. f-.
 	f2~ f16 f( a g b! a g f)
-	\tempo "Più allegro." e4 r r2 \clef bass
+	e4 r r2 \clef bass
 	R1*4
 % Bars 516 to 520
 	

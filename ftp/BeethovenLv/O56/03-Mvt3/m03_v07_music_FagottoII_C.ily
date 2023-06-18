@@ -56,9 +56,9 @@ musicFagottoIIMvtIII = \relative c {
 	c8..\f[ c32 e8.. e32 g8.. g32]
 	c8..[ c32 e,8.. e32 g8.. g32]
 % Bars 56 to 60
-	c,4. e8(\sf g, b) \mark \default
+	c,4. e8\sf g, b \mark \default
 	c8 r r4 r
-	c8-. e'\sf-. g,-. c\sf-. e,-. g\sf-. 
+	\partCombineApart c8 e'\sf g, c\sf e, g\sf \partCombineAutomatic
 	c, e\sf g, c\sf e, g\sf
 	c, r g' r e r
 % Bars 61 to 65
@@ -105,11 +105,11 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*25
+	R2.*25
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -145,12 +145,12 @@ musicFagottoIIMvtIII = \relative c {
 	c16 g c g c g c g c g c g
 	c g c g c b c d e c d e
 	f d e f g g, b g b g b g
-	g4(-\tweak X-offset #0.5 \sf c8) r g4(-\tweak extra-offset #'(-2.5 . 1) \sf
+	g4(-\tweak X-offset #0.5 \sf c8) r \voiceOne g4_(\sf
 	c8) r r4 r 
 % Bars 161 to 165
 	e,4(-\tweak X-offset #-1 \sf a8) r r4
 	r4 c(-\tweak X-offset #-1 \sf f,8) r
-	a'4(\sf d,8) r a'4\sf( 
+	\voiceTwo a'4(\sf d,8) r a'4\sf( 
 	dis,8) r a'4.(\sf dis,8)
 	e8 r r4 r
 % Bars 166 to 170
@@ -174,7 +174,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 181 to 185
 	r8 c16 c c8 c b d16 b
 	c8 r r4 r
-	r8 \once \override CombineTextScript.X-offset = #-4 c16\pp c c8 c c c
+	r8 c16\pp c c8 c c c
 	r8 c16 c c8 c c c
 	r8 b16 b b8 b b b
 % Bars 186 to 190
@@ -287,12 +287,12 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*11
+	R2.*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -321,7 +321,7 @@ musicFagottoIIMvtIII = \relative c {
 	g8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< {r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
+	s2. \bar "||"
 	\time 2/4 R2*34
 % Bars 336 to 340
 	
@@ -412,13 +412,13 @@ musicFagottoIIMvtIII = \relative c {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||"
-	\time 3/4 \tempo "Tempo I." \once \override CombineTextScript.X-offset = #-4 c'8\pp-. c-. c-. c-. c-. c-. 
+	R2\fermata \bar "||"
+	\time 3/4 c'8\pp c c c c c 
 	c,\f r c r r4
 	f8\pp-. f-. f-. f-. f-. f-. 
 % Bars 446 to 450
 	g\f r g r r4
-	\once \override CombineTextScript.X-offset = #-4 c8\pp-. c-. c-. c-. c-. c-. 
+	c8\pp c c c c c 
 	c,\f r c r r4
 	a8 r a r r4
 	R2.*7

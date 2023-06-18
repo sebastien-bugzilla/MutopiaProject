@@ -119,7 +119,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	g4 r8 e(-. g-. e)-. 
 	g(-. e-. g-. e-. g-. e)-. 
 	g4 r8 e(-. g-. e)-.\stopTextSpan
-	<>^\atempo g\pp r r g,([ c)] r
+	g\pp r r g,([ c)] r
 % Bars 111 to 115
 	r c,[( e)] r r4
 	r r8 e,([ g]) r
@@ -323,7 +323,7 @@ musicSoloViolinMvtIII = \relative c'' {
 % Bars 301 to 305
 	a(-. f-. a-. f-. a-. f-.)
 	a4 r8 e(-. a-. e-.)\!
-	<>^\atempo a\noBeam a,( c) r r dis,( 
+	a\noBeam a,( c) r r dis,( 
 	fis) r r4 r8 dis,(
 	fis) r r4 r8 dis(
 % Bars 306 to 310
@@ -358,7 +358,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	\tuplet 6/4 4 {d,,16\f( f e f b ais b d cis d f e f a! gis a) a( gis}
 % Bars 331 to 335
 	a2.)\>
-	aes2-\tweak X-offset #-1.5 \p\fermata~ aes8 \breathe \tempo "Allegro." g16[ g] \bar "||"
+	aes2-\tweak X-offset #-1.5 \p\fermata~ aes8 \breathe g16[ g] \bar "||"
 	\time 2/4 g4. g16 g
 	g4. g16 g
 	\tuplet 3/2 4 {g8 g_\crescmarkup g g g g
@@ -379,9 +379,9 @@ musicSoloViolinMvtIII = \relative c'' {
 % Bars 351 to 355
 	
 	r4 r16 d,-. e-. fis-.
-	g\< a b c d\> b c a\!
+	g\< a b c\! d\> b c a\!
 	g4 r16 d e fis
-	g\< a b c d\> b c a\!
+	g\< a b c\! d\> b c a\!
 % Bars 356 to 360
 	g(_\crescmarkup a b c d c b ais)
 	b( c d e f e d cis)
@@ -473,7 +473,7 @@ musicSoloViolinMvtIII = \relative c'' {
 % Bars 441 to 445
 	b\startTrillSpan~\<
 	\afterGrace b\>\fermata {a16[\stopTrillSpan b]\!} \bar "||"
-	\tempo "Tempo I." \time 3/4 c4 r r
+	\time 3/4 c4 r r
 	R2.*2
 	
 % Bars 446 to 450

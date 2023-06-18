@@ -86,11 +86,11 @@ musicFloteMvtIII = \relative c''' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*25
+	R2.*25
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -222,12 +222,12 @@ musicFloteMvtIII = \relative c''' {
 	
 	
 	
-	r4 r8 r^\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*23
+	R2.*23
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -312,8 +312,8 @@ musicFloteMvtIII = \relative c''' {
 	\once \override Score.RehearsalMark.outside-staff-priority = #100 \mark \default
 % Bars 441 to 445
 	R2
-	R\fermataMarkup \bar "||" 
-	\time 3/4 \tempo "Tempo I." R2.
+	R\fermata \bar "||" 
+	\time 3/4 R2.
 	e8\f r  c r r4
 	R2.
 % Bars 446 to 450

@@ -30,7 +30,7 @@ musicTrombeIMvtI = \relative c'' {
 	g1~
 	g4 g-. g-. g-.
 % Bars 31 to 35
-	\once \partcombineApart d'-. r r2
+	\once \partCombineApart d'-. r r2
 	r4 c2 c4 \mark \default
 	g\p r r2
 	R1*7
@@ -51,21 +51,21 @@ musicTrombeIMvtI = \relative c'' {
 	r8. c16\f c4 r8. c16 c4
 	r8. c16[-. c8.-. c16]-. c8.[-. c16-. c8.-. c16]-. 
 % Bars 61 to 65
-	g4 r r d'
-	d r r d
-	d r r8. d16[-. d8.-. d16]-. 
-	d4 r r8. d16[-. d8.-. d16]-. 
-	d4 r8. d16-. d4-. r8. d16-.
+	g4 r r \partCombineApart d'
+	d \partCombineAutomatic r r \partCombineApart d
+	d \partCombineAutomatic r r8. \partCombineApart d16[-. d8.-. d16]-. 
+	d4 \partCombineAutomatic r r8. \partCombineApart d16[-. d8.-. d16]-. 
+	d4 \partCombineAutomatic r8. \partCombineApart d16-. d4-. r8. d16-.
 % Bars 66 to 70
-	d4-. r8. \partcombineApart d16-. d4-. \partcombineAutomatic r8. \partcombineApart d16-.
-	d4-. d-. d-. d-.
-	d-. d-. d-. d-.
-	d-. \partcombineAutomatic r r2
+	\partCombineAutomatic d4-. r8. \partCombineApart d16-. d4-. \once \partCombineAutomatic r8. d16-.
+	d4-. d-. \once \partCombineAutomatic d-. d-.
+	\once \partCombineAutomatic d-. d-. \once \partCombineAutomatic d-. d-.
+	\partCombineAutomatic d-. r r2
 	R1*3
 % Bars 71 to 75
 	
-	g,1~
-	g4.. e16 e4 e \mark \default
+	g,1^(
+	g4..) e16 e4 e \mark \default
 	e r r2
 	R1*21
 % Bars 76 to 80
@@ -161,13 +161,13 @@ musicTrombeIMvtI = \relative c'' {
 	c4 r c r
 	c r c r
 	e r e r
-	\once \partcombineApart d r e r
+	\once \partCombineApart d r e r
 	r2 r4 e-.
 % Bars 236 to 240
 	e-. r r e-.
 	e-. r r8. e16[-. e8.-. e16]-. 
 	e4 r r8. e16[-. e8.-. e16]-. 
-	e4 r r e-.
+	e4-. r r e-.
 	e-. e-. e-. e-.
 % Bars 241 to 245
 	e r r2
@@ -214,7 +214,7 @@ musicTrombeIMvtI = \relative c'' {
 	c1~
 	c8.[ c16 c8. c16] c2~
 	c8.[ c16 c8. c16] c4 r
-	r2 r4 \once \partcombineApart d
+	r2 r4 \once \partCombineApart d
 % Bars 331 to 335
 	g, g8. g16 c4 c8. c16
 	c1
@@ -326,7 +326,7 @@ musicTrombeIMvtI = \relative c'' {
 	
 	
 	
-	\tempo "Più allegro." R1*3
+	R1*3
 % Bars 516 to 520
 	
 	r2 r8. g16-\tweak X-offset #-2 \f[-. c8.-. c16]-. 
@@ -334,10 +334,10 @@ musicTrombeIMvtI = \relative c'' {
 	g4-.\ff r r2
 	c4 r r g8 r
 % Bars 521 to 525
-	\once \partcombineApart c, r g' r \once \partcombineApart c, r g' r
-	\once \partcombineApart c,4 r r g'8 r
-	\once \partcombineApart c, r g' r \once \partcombineApart c, r g' r
-	\once \partcombineApart c,4 r r g'8 r
+	\once \partCombineApart c, r g' r \once \partCombineApart c, r g' r
+	\once \partCombineApart c,4 r r g'8 r
+	\once \partCombineApart c, r g' r \once \partCombineApart c, r g' r
+	\once \partCombineApart c,4 r r g'8 r
 	c r g r c r g r
 % Bars 526 to 530
 	c r g r c r g r

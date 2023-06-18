@@ -53,18 +53,18 @@ musicTrombeIIMvtI = \relative c' {
 % Bars 61 to 65
 	g4 r r d''
 	d r r d
-	d r r8. d16[-. d8.-. d16]-. 
-	d4 r r8. d16[-. d8.-. d16]-. 
-	d4 r8. d16-. d4-. r8. d16-.
+	d r r8. d16[ d8. d16] 
+	d4 r r8. d16[ d8. d16] 
+	d4 r8. d16 d4 r8. d16
 % Bars 66 to 70
-	g,4-. r8. d'16-. d4-. r8. d16-.
-	d4-. d-. g,-. d'-.
-	g,-. d'-. g,-. d'-.
-	g,-. r r2
+	g,4 r8. d'16 d4 r8. d16
+	d4 d g, d'
+	g, d' g, d'
+	g, r r2
 	R1*3
 % Bars 71 to 75
 	
-	g,1-\tweak X-offset #-2.8 \ff(
+	g,1-\tweak X-offset #-2.8 \ff_(
 	e'4..) c16 c4 c \mark \default
 	c r r2
 	R1*21
@@ -167,7 +167,7 @@ musicTrombeIIMvtI = \relative c' {
 	e-. r r e-.
 	e-. r r8. e16[-. e8.-. e16]-. 
 	e4 r r8. e16[-. e8.-. e16]-. 
-	e4 r r e-.
+	e4-. r r e-.
 	e-. e-. e-. e-.
 % Bars 241 to 245
 	e r r2
@@ -326,7 +326,7 @@ musicTrombeIIMvtI = \relative c' {
 	
 	
 	
-	\tempo "Più allegro." R1*3
+	R1*3
 % Bars 516 to 520
 	
 	r2 r8. g16-\tweak X-offset #-2 \f[-. c8.-. c16]-. 

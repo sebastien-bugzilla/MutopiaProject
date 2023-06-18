@@ -13,7 +13,7 @@ musicVioloncellMvtII = \relative c {
 	aes4\p des16-. c-.
 	g8  r g
 	g8~ g16. ees32( aes16. des32)
-	ees8.\noBeam \partcombineApart \clef tenor ees'32( des c16 bes)
+	ees8.\noBeam \partCombineApart \clef tenor ees'32( des c16 bes)
 	aes4( des16 c)
 % Bars 6 to 10
 	bes8( g ees16 g) \clef bass
@@ -23,7 +23,7 @@ musicVioloncellMvtII = \relative c {
 	ees,( aes c)
 % Bars 11 to 15
 	ees,(_\crescmarkup bes' g)
-	ees8._\sf\noBeam ees16( f g) \partcombineAutomatic
+	ees8._\sf\noBeam ees16( f g) \partCombineAutomatic
 	aes4( des16 c)
 	bes8( ees8. des16)
 	c8_\crescmarkup c4\f\>
@@ -51,9 +51,9 @@ musicVioloncellMvtII = \relative c {
 	
 	aes,16-.\pp(-\tweak X-offset #1.5 ^\arco aes-. aes-. aes-. aes-. aes-.)
 % Bars 41 to 45
-	g32\f[ g g g] g[ g\> g g] g[ g g g]
+	g32\f[ g g g] g[ g\> g g] g[ g g g]\!
 	f16\p f f f f f
-	fis32\f[ fis' fis fis] fis[ fis fis\> fis] fis[ fis, fis fis] \mark \default
+	fis32\f[ fis' fis fis] fis[ fis fis\> fis] fis[ fis, fis fis]\! \mark \default
 	g8\p r16 g16\<(\noBeam \afterGrace aes8\>)\startTrillSpan {g16[\stopTrillSpan aes]\!}
 	g8 r r
 % Bars 46 to 50

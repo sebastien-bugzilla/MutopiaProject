@@ -55,7 +55,7 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 56 to 60
 	c4. e'8\sf g, b \mark \default
 	c r r4 r
-	c8-. e\sf-. g,-. c\sf-. e,-. g\sf-. 
+	c8 e\sf g, c\sf e, g\sf 
 	c e\sf g, c\sf e, g\sf
 	c, r e r e r
 % Bars 61 to 65
@@ -70,11 +70,11 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	
 	
-	b2.-\tweak X-offset #-3.1 \pp(
+	\voiceOne  b2.-\tweak X-offset #-3.1 \pp_(
 % Bars 81 to 85
 	c)
-	a2~ a8 fis
-	b4 r r
+	\voiceTwo a2~ a8 fis
+	\partCombineAutomatic b4 r r
 	R2.*8
 % Bars 86 to 90
 	
@@ -89,11 +89,11 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*8
+	R2.*8
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -127,19 +127,19 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 156 to 160
 	c4. e8 e f
 	e r e16 d e f g e f g
-	a f g a d,8( f4) f8
+	a f g a d,8( \voiceOne f4) f8
 	f4-\tweak X-offset #-2 \sf( e8) r d4(-\tweak X-offset #-1 \sf
 	c8) r r4 r
 % Bars 161 to 165
 	d'4\sf( c8) r r4
-	r c,(-\tweak extra-offset #'(-1.5 . 1.0) \sf f8) r
+	r c,_(-\tweak extra-offset #'(-1.5 . 1.0) \sf f8) r
 	R2.*3
 % Bars 166 to 170
 	gis8\p gis16 gis gis8-. gis-. a-. a-. 
 	gis8\f r r4 e8\sf e16 e
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4.\sf f8-. e-. d-.
-	\acciaccatura d c-. b-. c-. d-. e-. e-.
+	\noFlag \stemOffset #2 \acciaccatura d \omitBeam c_. b_. c_. d_. e_. \voiceTwo e_.\noBeam
 % Bars 171 to 175
 	a,\p r r4 r
 	R2.*3
@@ -182,7 +182,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	
 	R2.
-	R2.
+	\mmrPos #-6 R2.
 % Bars 211 to 215
 	R2.*11
 % Bars 216 to 220
@@ -237,9 +237,9 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 271 to 275
 	
 	
-	e2.-\tweak X-offset #0.5 \pp(
-	f)~
-	f8 b,-. d-. b-. d-. b-.
+	\voiceOne e2.-\tweak X-offset #0.5 \pp_(
+	f)_~
+	\voiceTwo f8 b,-. d-. b-. d-. b-.
 % Bars 276 to 280
 	e8 r r4 r
 	R2.*2
@@ -263,12 +263,12 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	
 	
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*11
+	R2.*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -290,14 +290,14 @@ musicClarinetIIMvtIII = \relative c'' {
 	R
 	R \mark \default
 % Bars 326 to 330
-	\once \override CombineTextScript.X-offset = #-3 c'8-\tweak X-offset #-1 \f-. g-. c-. g-. e-. c-. 
-	g\noBeam g16 g b8 b16 b d8 d16 d
+	c'8-\tweak X-offset #-1 \f g c g e c 
+	g\noBeam \voiceOne \omitBeam \beamOffset #'(1.5 . 1.5) g16 g b8 b16 b d8 d16 d
 	f8 r r4 r
 	d8 r r4 r
 	d8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< {r4 r r8 \breathe \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
+	s2. \bar "||"
 	\time 2/4 R2*54
 % Bars 336 to 340
 	
@@ -324,7 +324,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	e8-\tweak X-offset #-1.5 \f( f16 d e8 f)
 	g4( e8) r
 	R2
-	r4 g8 g
+	r4 \voiceTwo g8 g
 % Bars 391 to 395
 	e(\f f16 d e8 g)
 	ees4.-\tweak X-offset #-1 \sf r8
@@ -363,8 +363,8 @@ musicClarinetIIMvtIII = \relative c'' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||"
-	\time 3/4 \tempo "Tempo I." e8\pp-. e-. e-. e-. e-. e-. 
+	R2\fermata \bar "||"
+	\time 3/4 e8\pp-. e-. e-. e-. e-. e-. 
 	e\f r e r r4
 	d8\pp-. d-. d-. d-. d-. d-. 
 % Bars 446 to 450
@@ -379,14 +379,14 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	c8\f c c c c c 
 	d d d d d d  \mark \default
-	c4. \once \override CombineTextScript.X-offset = #-3 e'8-\tweak X-offset #-1.5 \sf-. g,-. b-. 
+	c4. e'8-\tweak X-offset #-1.5 \sf g, b 
 	c8 r r4 r
 % Bars 461 to 465
-	c4. e8-\tweak X-offset #-1.5 \sf-. g,-. b-.
+	c4. e8-\tweak X-offset #-1.5 \sf g, b
 	c r r4 r
 	R2.*2
 	\mark \default
-	c,8\ff-. e\sf-. g,-. c\sf-. e-. g\sf-. 
+	\voiceOne \omitBeam c,8\ff_. e\sf_. g,_. c\sf_. \voiceTwo e_.[ g\sf_.] 
 % Bars 466 to 470
 	c,8 r r4 r
 	c'8-. e\sf-. g,-. c\sf-. e,-. g\sf-. 

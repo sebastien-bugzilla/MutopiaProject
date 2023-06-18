@@ -123,7 +123,7 @@ musicPianoUpMvtI = \relative c'' {
 	\clef bass e,,16\fp^\solobold gis b a gis b d cis \clef treble b gis' b a gis b d cis
 	b gis' b a gis b d cis b d fis e d e cis d
 	b\< cis ais cis b d cis e d fis e fis d e cis d
-	b cis ais cis b d cis e d\> fis e fis d e cis d\!
+	b cis ais cis b d cis e\! d\> fis e fis d e cis d\!
 	b d cis d b cis a! b gis b a b gis a fis gis
 % Bars 156 to 160
 	e fis_\dimmarkup dis fis e fis dis fis e fis d e cis d b cis
@@ -345,7 +345,7 @@ musicPianoUpMvtI = \relative c'' {
 	d b' d c b d f e d b' d c b d f e
 	d\< f a g f g e f d e cis e d f e g
 % Bars 391 to 395
-	f g a g f g e f d\> e cis e d f e g\!
+	f g a g f g e f\! d\> e cis e d f e g\!
 	f g e f d e cis e d e c d b c a c
 	b_\dimin c a b g( a fis a g a f g e f d e)
 	c4\p r \clef bass <e,, g c>8 r q r

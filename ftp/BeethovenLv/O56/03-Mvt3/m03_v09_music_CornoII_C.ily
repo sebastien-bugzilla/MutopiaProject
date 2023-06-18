@@ -104,11 +104,11 @@ musicCornoIIMvtIII = \relative c' {
 	c8 r r4 r
 	R2.
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*8
+	R2.*8
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -283,12 +283,12 @@ musicCornoIIMvtIII = \relative c' {
 	c r r4 r8 c
 	c r r4 r
 	R2.
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*4
+	R2.*4
 % Bars 306 to 310
 	
 	e2.\pp~
@@ -310,14 +310,14 @@ musicCornoIIMvtIII = \relative c' {
 	
 	\mark \default
 % Bars 326 to 330
-	r8 g\f-. c-. g-. e-. c-. 
+	r8 g\f c g e c 
 	\once \offset positions #'(-0.7 . 0) Beam g' g,16 g g8 g16 g g8 g16 g
 	d''8 r r4 r
 	g,8 r r4 r
 	g8 r r4 r
 % Bars 331 to 335
 	R2.
-	<<{r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered} >> \bar "||"
+	s2. \bar "||"
 	\time 2/4 R2*34
 % Bars 336 to 340
 	
@@ -401,7 +401,7 @@ musicCornoIIMvtIII = \relative c' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||"
+	R2\fermata \bar "||"
 	\time 3/4 \tempo "Tempo I." R2.
 	c'8\f r e, r r4
 	R2.

@@ -347,7 +347,7 @@ musicFloteMvtI = \relative c''' {
 	\mark \default
 	c2.\ff c4(
 	ees2. des4)
-	bes4-. bes-. \acciaccatura c8 bes8.([ aes16 bes8. c16-.)]
+	bes4-. bes-. \acciaccatura c8 bes8.([ aes16 bes8. c16)]
 	aes2~ aes8 ees-. c-. ees-.
 % Bars 466 to 470
 	aes8.-.[ c16-. aes8.-. c16-.] ees2~\sf
@@ -383,7 +383,7 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	
-	\tempo "Più allegro." R1*2
+	R1*2
 	
 % Bars 516 to 520
 	f8.-.\f[ e16-. d8.-. c16-.] b8.-.\noBeam d'16-.[ f8.-. e16-.]

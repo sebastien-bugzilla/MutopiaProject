@@ -5,29 +5,29 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 13)
+#(set-global-staff-size 13) % 13
 \layout {
-	#(layout-set-staff-size 13)
+	#(layout-set-staff-size 13) % 13
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.markFormatter = #format-mark-box-alphabet
+	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 	\set Staff.soloText = #"1."
 	\set Staff.soloIIText = #"2."
-	\set Score.doubleRepeatType = #":|.|:"
+%	\set Score.doubleRepeatType = #":|.|:"
 	\mergeDifferentlyDottedOn
-	\compressFullBarRests
+	\compressEmptyMeasures
 	\context {
 		\Score
-		\override RehearsalMark #'font-size = #8
+		\override RehearsalMark.font-size = #4 % 8
 		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override DynamicTextSpanner.font-size = #0
-		\override BarNumber #'font-size = #2
+		\override BarNumber.font-size = #2
 		\override SystemStartBar.collapse-height = #4
 		\override SustainPedal.parent-alignment-X = 0
 	}
 	\context {
 		\Staff
-		\override TupletBracket #'bracket-visibility = ##f
+		\override TupletBracket.bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
 		\RemoveEmptyStaves
 %		\RemoveAllEmptyStaves

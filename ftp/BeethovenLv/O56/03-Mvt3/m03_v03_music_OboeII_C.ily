@@ -38,8 +38,8 @@ musicOboeIIMvtIII = \relative c'' {
 	c8 r r4 r
 	r4 f,8( d'4) d8 
 % Bars 41 to 45
-	d4(\sf c8) r b4-\tweak X-offset #-1 \sf
-	c16\ff b c d e d c b a gis a b
+	d4(\sf c8) r b4-\tweak X-offset #-1 \sf(
+	c16)\ff b c d e d c b a gis a b
 	c b a g! f e f g a g f e
 	d8\noBeam d'16 e f e d c b c d e 
 	f g a b c b a g f e d c
@@ -56,9 +56,9 @@ musicOboeIIMvtIII = \relative c'' {
 	c4\f e, g
 	c16 b c d e d e f g, g a b 
 % Bars 56 to 60
-	c4. e8[(\sf g, b]) \mark \default
+	c4. e8[\sf g, b] \mark \default
 	c r r4 r
-	c8-. e\sf-. g,-. c\sf-. e,-. g\sf-. 
+	c8 e\sf g, c\sf e, g\sf 
 	c e\sf g, c\sf e, g\sf
 	c, r c' r c r
 % Bars 61 to 65
@@ -86,7 +86,7 @@ musicOboeIIMvtIII = \relative c'' {
 	a2~ a8 fis
 	b4 r r8 fis
 	g4 r r8 fis
-	g r r4 g8-. fis-.
+	g r r4 g8 fis
 % Bars 86 to 90
 	g r r4 g8-. a-.
 	b r b r b r
@@ -144,8 +144,8 @@ musicOboeIIMvtIII = \relative c'' {
 	g4. c8[ c d]
 	c8 r r4 r
 	r f,8( d'4) d8
-	d4(\sf c8) r \partcombineApart b4(\sf
-	c8) \partcombineAutomatic r r4 r
+	d4(\sf c8) r b4(\sf
+	c8) r r4 r
 % Bars 161 to 165
 	b4(\sf c8) r r4
 	r c(\sf f,8) r
@@ -157,7 +157,7 @@ musicOboeIIMvtIII = \relative c'' {
 	e\f r r4 gis'8\sf gis16 gis
 	a8-\tweak X-offset #-1 \sf a16 a gis8-\tweak X-offset #-1 \sf gis16 gis a8-\tweak X-offset #-1 \sf a16 a
 	gis8 e4\sf f8-. e-. d-.
-	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
+	\acciaccatura d c b c d e e, 
 % Bars 171 to 175
 	a\p r r4 r
 	R2.*7
@@ -234,7 +234,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	e2.\pp(
-	f)(
+	\once \omit Stem f)(
 	f8)[ b,-. d-. b-. d-. b]-. 
 % Bars 276 to 280
 	e8 r r4 r
@@ -259,12 +259,12 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*5
+	R2.*5
 % Bars 306 to 310
 	
 	
@@ -297,7 +297,7 @@ musicOboeIIMvtIII = \relative c'' {
 	f8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< {r4 r r8 \breathe \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
+	s2. \bar "||"
 	\time 2/4 R2*54
 % Bars 336 to 340
 	
@@ -373,9 +373,9 @@ musicOboeIIMvtIII = \relative c'' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||" 
-	\time 3/4 \tempo "Tempo I." R2.
-	c8\f r \once \partcombineApart c r r4
+	R2\fermata \bar "||" 
+	\time 3/4 R2.
+	c8\f r c r r4
 	R2.
 % Bars 446 to 450
 	b8\f r g r r4
@@ -389,10 +389,10 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	e,8\f[ c' c  c c c]
 	d[ d d d d d] \mark \default
-	c4. \once \override CombineTextScript.X-offset = #-3 e8\sf-. g,-. b-. 
+	c4. e8\sf g, b 
 	c8 r r4 r
 % Bars 461 to 465
-	c4. e8\sf-. g,-. b-. 
+	c4. e8\sf g, b 
 	c8 r r4 r
 	R2.*2
 	\mark \default
@@ -402,9 +402,9 @@ musicOboeIIMvtIII = \relative c'' {
 	c8-. e\sf-. g,-. c\sf-. e,-. g\sf-. 
 	c, r r4 r
 	c8 r r4 e8\sf r
-	\once \partcombineApart c r r4 c'8\sf r 
+	c r r4 c'8\sf r 
 % Bars 471 to 475
-	\once \partcombineApart c, r r4 c'8\sf r
+	c, r r4 c'8\sf r
 	c r g' r e r
 	e r r4 r
 	e8 r r4 r

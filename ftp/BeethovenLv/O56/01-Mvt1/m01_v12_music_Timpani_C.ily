@@ -331,7 +331,7 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	\tempo "Più allegro." R1*3
+	R1*3
 	
 % Bars 516 to 520
 	

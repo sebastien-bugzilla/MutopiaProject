@@ -22,27 +22,28 @@
 \include "./00-Common/TripleConcerto_NameGrandStaff.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_Format_Cond_Mvt01.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_Flote_C.ily"
-%\include "./01-Mvt1/m01_v02_music_OboeI_C.ily"
-%\include "./01-Mvt1/m01_v03_music_OboeII_C.ily"
-%\include "./01-Mvt1/m01_v04_music_ClarinetI_C.ily"
-%\include "./01-Mvt1/m01_v05_music_ClarinetII_C.ily"
-%\include "./01-Mvt1/m01_v06_music_FagottoI_C.ily"
-%\include "./01-Mvt1/m01_v07_music_FagottoII_C.ily"
-%\include "./01-Mvt1/m01_v08_music_CornoI_C.ily"
-%\include "./01-Mvt1/m01_v09_music_CornoII_C.ily"
-%\include "./01-Mvt1/m01_v10_music_TrombeI_C.ily"
-%\include "./01-Mvt1/m01_v11_music_TrombeII_C.ily"
-%\include "./01-Mvt1/m01_v12_music_Timpani_C.ily"
-%\include "./01-Mvt1/m01_v13_music_SoloViolin_C.ily"
-%\include "./01-Mvt1/m01_v14_music_SoloCello_C.ily"
-%\include "./01-Mvt1/m01_v15_music_PianoUp_C.ily"
-%\include "./01-Mvt1/m01_v16_music_PianoDown_C.ily"
-%\include "./01-Mvt1/m01_v17_music_ViolinI_C.ily"
-%\include "./01-Mvt1/m01_v18_music_ViolinII_C.ily"
-%\include "./01-Mvt1/m01_v19_music_Viola_C.ily"
-%\include "./01-Mvt1/m01_v20_music_Violoncell_C.ily"
-%\include "./01-Mvt1/m01_v21_music_Basso_C.ily"
+\include "./01-Mvt1/m01_v02_music_OboeI_C.ily"
+\include "./01-Mvt1/m01_v03_music_OboeII_C.ily"
+\include "./01-Mvt1/m01_v04_music_ClarinetI_C.ily"
+\include "./01-Mvt1/m01_v05_music_ClarinetII_C.ily"
+\include "./01-Mvt1/m01_v06_music_FagottoI_C.ily"
+\include "./01-Mvt1/m01_v07_music_FagottoII_C.ily"
+\include "./01-Mvt1/m01_v08_music_CornoI_C.ily"
+\include "./01-Mvt1/m01_v09_music_CornoII_C.ily"
+\include "./01-Mvt1/m01_v10_music_TrombeI_C.ily"
+\include "./01-Mvt1/m01_v11_music_TrombeII_C.ily"
+\include "./01-Mvt1/m01_v12_music_Timpani_C.ily"
+\include "./01-Mvt1/m01_v13_music_SoloViolin_C.ily"
+\include "./01-Mvt1/m01_v14_music_SoloCello_C.ily"
+\include "./01-Mvt1/m01_v15_music_PianoUp_C.ily"
+\include "./01-Mvt1/m01_v16_music_PianoDown_C.ily"
+\include "./01-Mvt1/m01_v17_music_ViolinI_C.ily"
+\include "./01-Mvt1/m01_v18_music_ViolinII_C.ily"
+\include "./01-Mvt1/m01_v19_music_Viola_C.ily"
+\include "./01-Mvt1/m01_v20_music_Violoncell_C.ily"
+\include "./01-Mvt1/m01_v21_music_Basso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -55,8 +56,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Ludwig van Beethoven — Concerto for Violin Cello and Piano 
-			in C Major Op56 \"Triple Concerto\" — 1st movement"
+			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 \"Triple Concerto\" — 1st movement"
 		}
 		instrument = \markup {
 			""
@@ -64,71 +64,74 @@
 	}
 	\score {
 		<<
-%			\new StaffGroup <<
-%				\new Staff <<
-%%					\new Voice {
-%%						\formatConductorMvtI
-%%					}
+			\new StaffGroup <<
+				\new Staff <<
 %					\new Voice {
-%						\timeMvtI \nameStaffIMvtI \musicFloteMvtI
+%						\formatConductorMvtI
 %					}
-%				>>
-%				\new Staff {
-%					\timeMvtI \nameStaffIIMvtI
-%					\partcombine #'(0 . 10) \musicOboeIMvtI \musicOboeIIMvtI
-%				}
-%				\new Staff {
-%					\timeMvtI \nameStaffIIIMvtI
-%					\partcombine \musicClarinetIMvtI \musicClarinetIIMvtI
-%				}
-%				\new Staff {
-%					\timeMvtI \nameStaffIVMvtI
-%					\partcombine \musicFagottoIMvtI \musicFagottoIIMvtI
-%				}
-%				\new Staff {
-%					\timeMvtI \nameStaffVMvtI
-%					\partcombine \musicCornoIMvtI \musicCornoIIMvtI
-%				}
-%				\new Staff {
-%					\timeMvtI \nameStaffVIMvtI
-%					\partcombine \musicTrombeIMvtI \musicTrombeIIMvtI
-%				}
-%				\new Staff {
-%					\timeMvtI \nameStaffVIIMvtI
-%					\musicTimpaniMvtI
-%				}
-%			>>
-%			\new Staff {
-%				\timeMvtI \nameStaffVIIIMvtI \musicSoloViolinMvtI
-%			}
-%			\new Staff {
-%				\timeMvtI \nameStaffIXMvtI \musicSoloCelloMvtI
-%			}
-%			\new PianoStaff \with { \nameGrandStaffIMvtI } <<
-%				\new Staff = "up" {
-%					\timeMvtI \nameStaffXMvtI \musicPianoUpMvtI
-%				}
-%				\new Staff ="down" {
-%					\timeMvtI \nameStaffXIMvtI \musicPianoDownMvtI
-%				}
-%			>>
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
-%					\new Staff {
-%						\timeMvtI \nameStaffXIIMvtI \musicViolinIMvtI
-%					}
-%					\new Staff {
-%						\timeMvtI \nameStaffXIIIMvtI \musicViolinIIMvtI
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtI \nameStaffXIVMvtI \musicViolaMvtI
-%				}
-%				\new Staff {
-%					\timeMvtI \nameStaffXVMvtI 
-%					\partcombine \musicVioloncellMvtI \musicBassoMvtI
-%				}
-%			>>
+					\new Voice {
+						\tempiMvtI
+					}
+					\new Voice {
+						\timeMvtI \nameStaffIMvtI \musicFloteMvtI
+					}
+				>>
+				\new Staff {
+					\timeMvtI \nameStaffIIMvtI
+					\partCombine #'(0 . 10) \musicOboeIMvtI \musicOboeIIMvtI
+				}
+				\new Staff {
+					\timeMvtI \nameStaffIIIMvtI
+					\partCombine \musicClarinetIMvtI \musicClarinetIIMvtI
+				}
+				\new Staff {
+					\timeMvtI \nameStaffIVMvtI
+					\partCombine \musicFagottoIMvtI \musicFagottoIIMvtI
+				}
+				\new Staff {
+					\timeMvtI \nameStaffVMvtI
+					\partCombine \musicCornoIMvtI \musicCornoIIMvtI
+				}
+				\new Staff {
+					\timeMvtI \nameStaffVIMvtI
+					\partCombine \musicTrombeIMvtI \musicTrombeIIMvtI
+				}
+				\new Staff {
+					\timeMvtI \nameStaffVIIMvtI
+					\musicTimpaniMvtI
+				}
+			>>
+			\new Staff {
+				\timeMvtI \nameStaffVIIIMvtI \musicSoloViolinMvtI
+			}
+			\new Staff {
+				\timeMvtI \nameStaffIXMvtI \musicSoloCelloMvtI
+			}
+			\new PianoStaff \with { \nameGrandStaffIMvtI } <<
+				\new Staff = "up" {
+					\timeMvtI \nameStaffXMvtI \musicPianoUpMvtI
+				}
+				\new Staff ="down" {
+					\timeMvtI \nameStaffXIMvtI \musicPianoDownMvtI
+				}
+			>>
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
+					\new Staff {
+						\timeMvtI \nameStaffXIIMvtI \musicViolinIMvtI
+					}
+					\new Staff {
+						\timeMvtI \nameStaffXIIIMvtI \musicViolinIIMvtI
+					}
+				>>
+				\new Staff {
+					\timeMvtI \nameStaffXIVMvtI \musicViolaMvtI
+				}
+				\new Staff {
+					\timeMvtI \nameStaffXVMvtI 
+					\partCombine \musicVioloncellMvtI \musicBassoMvtI
+				}
+			>>
 		>>
 		\header {
 			breakbefore = ##t

@@ -190,7 +190,7 @@ musicTrombeIMvtI = \relative c'' {
 	e-. r r e-.
 	e-. r r8. e16[-. e8.-. e16]-. 
 	e4 r r8. e16[-. e8.-. e16]-. 
-	e4 r r e-.
+	e4-. r r e-.
 	e-. e-. e-. e-.
 % Bars 241 to 245
 	e r r2^\solo

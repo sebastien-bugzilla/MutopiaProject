@@ -22,7 +22,7 @@ musicFagottoIMvtI = \relative c' {
 	c1_\f_\cresc
 	b8([ c d8. c16]) c4-. c-.
 % Bars 21 to 25
-	\partcombineApart f2.\ff c4-.
+	\partCombineApart f2.\ff c4-.
 	a-. c-. a-. f-.
 	c'1
 	b8([ c d8. c16]) c4-. c-.
@@ -32,24 +32,24 @@ musicFagottoIMvtI = \relative c' {
 	b2. d4-.
 	b-. d-. b-. g-.
 	cis2. e4-.
-	cis-. \partcombineAutomatic e-. cis-. a-.
+	cis-. \partCombineAutomatic e-. cis-. a-.
 % Bars 31 to 35
 	d-. f2\sf d8.-. c!16-.
 	b4-. c2\sf a8.-. fis16-. \mark \default
 	g4\p r r2
-	r2 r4 \partcombineChords gis(
-	a b c d) \partcombineAutomatic
+	r2 r4 \partCombineChords gis(
+	a b c d) \partCombineAutomatic
 % Bars 36 to 40
 	e1_\crescmarkup~
 	e2.\p e4~
 	e2. c4(
 	b d c a)
-	\once \partcombineApart g r r2
+	\once \partCombineApart g r r2
 % Bars 41 to 45
 	R1
 	r2 r4 \clef tenor cis(\p
 	d e f g)
-	\partcombineApart a1_\dimmarkup(
+	\partCombineApart a1_\dimmarkup(
 	aes)(
 % Bars 46 to 50
 	aes)_\crescmarkup(
@@ -59,18 +59,18 @@ musicFagottoIMvtI = \relative c' {
 	c2\pp d!
 % Bars 51 to 55
 	c1
-	b4) \partcombineAutomatic r r2
-	R1*3
-	
-	
+	b4) \partCombineAutomatic r r2
+	R1
+	\partCombineApart \mmrPos #6 R1
+	\mmrPos #6 R
 % Bars 56 to 60
 	\clef bass g1(_\pcresc
 	f)
-	e2( ees)
+	e2( ees) \partCombineAutomatic
 	ees'\ff ees
 	ees4 ees ees ees
 % Bars 61 to 65
-	d \partcombineApart d-. d2~
+	d \partCombineApart d-. d2~
 	d4 d-. d2~
 	d8.[ d16-. d8.-. d16]-. d2~
 	d8.[ d16-. d8.-. d16]-. d2~
@@ -82,7 +82,7 @@ musicFagottoIMvtI = \relative c' {
 	d2( e
 	a,2. d4
 % Bars 71 to 75
-	g,) r r2 \partcombineAutomatic
+	g,) r r2 \partCombineAutomatic
 	R1
 	g1~_\ff
 	g \mark \default
@@ -109,29 +109,29 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	\partcombineApart c2.( e4)
+	\partCombineApart c2.( e4)
 	g2.( f4)
 % Bars 116 to 120
 	d-. d-. \acciaccatura e8 d8.([ c16 d8. e16])
 	c2~ c8 g-. e-. g-. \mark \default
-	c, \partcombineAutomatic r r4 r2
+	c, \partCombineAutomatic r r4 r2
 	R1*6
 % Bars 121 to 125
 	
 	
 	
 	
-	\once \override CombineTextScript.X-offset = #-3.5 c'1\pp~
+	\partCombineApart c'1\pp~
 % Bars 126 to 130
 	c~
 	c
 	g~
-	g4 r r2
+	g4 r r2 \partCombineAutomatic
 	R1*2
 % Bars 131 to 135
 	
-	\once \override CombineTextScript.X-offset = #1.2 c,4(\f a g f)
-	e r r2
+	\partCombineApart c,4( a g f)
+	e \partCombineAutomatic r r2
 	R1*15
 % Bars 136 to 140
 	
@@ -141,10 +141,10 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	\mark \default
-	e'2-\tweak X-offset #-1.5 \ff b'4-. gis-.
+	\partCombineApart e'2 b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
-	e-. r r2
+	e-. \partCombineAutomatic r r2
 	R1*13
 % Bars 156 to 160
 	
@@ -175,10 +175,10 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	r8. a16[-.\p a8.-. a16]-. a4 r
+	\partCombineApart r8. a16[-.\p a8.-. a16]-. a4 r
 	r4 r8. a16-. a4-. r8. a16-.
 % Bars 201 to 205
-	a4-. r r2
+	a4-. r r2 \partCombineAutomatic
 	R1*23
 % Bars 206 to 210
 	
@@ -191,12 +191,12 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	\mark \default
-	\partcombineApart a2. \shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . -0.5)) Slur a4(
+	\partCombineApart a2. \shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . -0.5)) Slur a4(
 % Bars 226 to 230
 	c2. bes4)
 	g4-. g-. \acciaccatura a8 g8.[( f16 g8. a16)]
-	f2~ f8 s4.
-	a4 \partcombineAutomatic r r8. a16-.[ a8.-. a16]-. 
+	f2~ f8 s4. \partCombineAutomatic 
+	a4 r r8. a16-.[ a8.-. a16]-. 
 	c4 r r8. c16[-. c8.-. c16]-. 
 % Bars 231 to 235
 	c1~
@@ -207,7 +207,7 @@ musicFagottoIMvtI = \relative c' {
 % Bars 236 to 240
 	c-. r r b-.
 	c-. r r8. d16[-. d8.-. d16]-. 
-	\once \partcombineApart c4 r r8. b16[-. b8.-. b16]-. 
+	\once \partCombineApart c4 r r8. b16[-. b8.-. b16]-. 
 	c4-. b-. c-. d-.
 	c-. d-. c-. e-.
 % Bars 241 to 245
@@ -238,32 +238,32 @@ musicFagottoIMvtI = \relative c' {
 % Bars 276 to 280
 	\mark \default
 	R1
-	\partcombineApart r2 a8\p[( bes d8. bes16)] \partcombineAutomatic
+	\partCombineApart r2 a8\p[( bes d8. bes16)] \partCombineAutomatic
 	R1
-	\partcombineApart r2 b!8-\tweak X-offset #-10 ^\semprepp[( c ees8. c16]) \partcombineAutomatic
+	\partCombineApart r2 b!8-\tweak X-offset #-10 ^\semprepp[( c ees8. c16]) \partCombineAutomatic
 % Bars 281 to 285
 	R1
-	\partcombineApart r2 a8[( bes des8. bes16]) \partcombineAutomatic
+	\partCombineApart r2 a8[( bes des8. bes16]) \partCombineAutomatic
 	R1
-	\partcombineApart r2 b!8[(\p c d!8. c16)] \partcombineAutomatic
+	\partCombineApart r2 b!8[(\p c d!8. c16)] \partCombineAutomatic
 	R1
 % Bars 286 to 290
-	\partcombineApart r2 ais8[(-\tweak X-offset #-9 ^\semprep b d8. b16)] \partcombineAutomatic
+	\partCombineApart r2 ais8[(-\tweak X-offset #-9 ^\semprep b d8. b16)] \partCombineAutomatic
 	R1
-	\partcombineApart r2 ais8[( b d8. b16]) \partcombineAutomatic
+	\partCombineApart r2 ais8[( b d8. b16]) \partCombineAutomatic
 	R1
-	\partcombineApart r2 cis8[( d e8. d16]) \partcombineAutomatic
+	\partCombineApart r2 cis8[( d e8. d16]) \partCombineAutomatic
 % Bars 291 to 295
 	R1
-	\partcombineApart r2 b8[( c! e8. c16]) \partcombineAutomatic
+	\partCombineApart r2 b8[( c! e8. c16]) \partCombineAutomatic
 	R1
-	\partcombineApart r2 cis8([ d f8. d16]) \partcombineAutomatic
+	\partCombineApart r2 cis8([ d f8. d16]) \partCombineAutomatic
 	R1
 % Bars 296 to 300
-	\partcombineApart r2 b8([ c! ees8. c16]) \partcombineAutomatic
+	\partCombineApart r2 b8([ c! ees8. c16]) \partCombineAutomatic
 	R1
-	\partcombineApart r2 b8[( c d8. c16]) \partcombineAutomatic
-	R1*25
+	\partCombineApart r2 b8[( c d8. c16]) \partCombineAutomatic
+	R1*24
 % Bars 301 to 305
 	
 % Bars 306 to 310
@@ -275,8 +275,8 @@ musicFagottoIMvtI = \relative c' {
 % Bars 321 to 325
 	
 	
-	
-	g'1^\crescmarkup \mark \default %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\partCombineApart \mmrPos #6 R1 \partCombineAutomatic
+	g'1^\crescmarkup \mark \default 
 	c,2(\ff b8[ c e8. d16])
 % Bars 326 to 330
 	d4 r r2
@@ -295,26 +295,26 @@ musicFagottoIMvtI = \relative c' {
 % Bars 341 to 345
 	
 	
-	\clef tenor c'1_\cresc
+	\clef tenor \partCombineApart c'1_\cresc
 	b8[( c d8. c16)] c4-. c-.
-	c2~_\f c8  r c\p r \clef bass
+	\oneVoice c2~_\f \noFlag c8 \once \partCombineAutomatic r \voiceOne  c\p r \clef bass
 % Bars 346 to 350
 	a r c r a r f r
-	c'2~ c8 r c4\p(
+	\partCombineChords c'2~ c8 \once \partCombineAutomatic r \partCombineApart c4\p(
 	b8[ c d8. c16]) c4-. c-.
-	\once \override CombineTextScript.transparent = ##t s2 s8 r c\p r
+	c2~ c8 r c\p r
 	a r c r a r f r
 % Bars 351 to 355
-	\once \override CombineTextScript.transparent = ##t s2 s8 r d'\p r
+	\partCombineChords b2~ b8 \once \partCombineAutomatic r \partCombineApart d\p r
 	b r d r b r g r \mark #11
-	cis2~ cis8 r e\p r
+	\partCombineChords cis2~ cis8 \once \partCombineAutomatic r \partCombineApart e\p r
 	cis r e r cis r a r
 	d r f r d r a r
 % Bars 356 to 360
 	d r f r d r bes r
 	a-\crescmarkup r c r a r f r
 	c'2\f\>( e4 g)
-	f\p r r2
+	f\p r r2 \partCombineAutomatic
 	R1*3
 % Bars 361 to 365
 	
@@ -341,8 +341,8 @@ musicFagottoIMvtI = \relative c' {
 	\mark \default
 % Bars 386 to 390
 	g2-\tweak X-offset #-3.3 \ff d'4-. b-.
-	\partcombineApart g-. g-. d-. b-.
-	g-. \partcombineAutomatic r r2
+	\partCombineApart g-. g-. d-. b-.
+	g-. \partCombineAutomatic r r2
 	R1*13
 % Bars 391 to 395
 	
@@ -394,9 +394,9 @@ musicFagottoIMvtI = \relative c' {
 	d4 r r2
 % Bars 471 to 475
 	R1
-	g,1\pp
+	\partCombineApart g,1\pp
 	f(
-	e4) r r2
+	e4) r r2 \partCombineAutomatic
 	R1*13
 % Bars 476 to 480
 	
@@ -423,12 +423,12 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	\tempo "Più allegro." R1*2
+	R1*2
 	
 % Bars 516 to 520
-	r2 r8. d16\f[-. f8.-. e16]-. 
+	r2 r8. \partCombineApart d16[-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4-.-\tweak X-offset #-1 \ff r r2 \mark \default
+	f4-. \partCombineAutomatic r r2 \mark \default
 	g'4-.\ff r r2
 	c,4 r r b'8 r
 % Bars 521 to 525
@@ -442,7 +442,7 @@ musicFagottoIMvtI = \relative c' {
 	e r d r e r d r
 	e4 r d r
 	e r d r
-	e r8. c16 c4 r8. \partcombineApart c,16
+	e r8. c16 c4 r8. \partCombineApart c,16
 % Bar 531
-	c4 \partcombineAutomatic r r2 \bar "|."
+	c4 \partCombineAutomatic r r2 \bar "|."
 }

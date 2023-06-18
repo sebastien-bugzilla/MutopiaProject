@@ -17,8 +17,8 @@ musicFagottoIMvtIII = \relative c' {
 	
 % Bars 16 to 20
 	
-	r8 \once \override CombineTextScript.X-offset = #-3 g16\pp-. g-. g8-. g-. g-. r
-	r8 c16-. c-. c8-. c-. c-. r
+	\partCombineApart r8 g16\pp-. g-. g8-. g-. g-. r
+	r8 c16-. c-. c8-. c-. c-. r \partCombineAutomatic
 	R2.*12
 % Bars 21 to 25
 	
@@ -33,13 +33,13 @@ musicFagottoIMvtIII = \relative c' {
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r \acciaccatura fis8 g \acciaccatura fis g
-	g4.( a16 b c8 d)
+	r4 r \acciaccatura fis8 \once \voiceTwo \omitBeam g \acciaccatura fis \once \voiceTwo g
+	\voiceOne g4.( a16 b c8 d)
 	\grace {c16[( d]} e4)( c4.-\tweak extra-offset #'(-1.6 . -3.7) \sf b8)
 	a( f') b,(\noBeam g'4) g8
 % Bars 41 to 45
-	g4-\tweak X-offset #0.3 \sf( c,8) r f4\sf(
-	e16)\ff b c d e d c b a gis a b
+	\partCombineApart g4( c,8) r f4(
+	e16) b c d \partCombineAutomatic e d c b a gis a b
 	c b a g! f e f g a g f e
 	d cis d e f e d c b c d e
 	f g a b c b a g f e d c
@@ -47,26 +47,26 @@ musicFagottoIMvtIII = \relative c' {
 	a'4.\sf a16 a a8 a
 	b8 a4\sf a16 a a8 a
 	b8 b4\sf b16 b b8-. a-.
-	a8. a16 \once \partcombineApart g8 r \once \partcombineApart g, r
-	\once \partcombineApart c r r4 r
+	a8. a16 \once \partCombineApart g8 r \once \partCombineApart g, r
+	\once \partCombineApart c r r4 r
 % Bars 51 to 55
 	R2.
-	c'4._\crescmarkup e32[( g16.-.]) g32([ e16.-.]) e32[( c16.-.])
+	\partCombineApart c'4._\crescmarkup e32[( g16.-.]) g32([ e16.-.]) e32[( c16.-.])
 	c32[( b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.]) b32[( g16.-.])
-	\partcombineApart c8..[ c,32 e8.. e32 g8.. g32]
+	c8..[ c,32 e8.. e32 g8.. g32]
 	c8..[ c32 e,8.. e32 g8.. g32]
 % Bars 56 to 60
-	c,4. e8(\sf g, b) \mark \default
-	c8 \partcombineAutomatic r r4 r
-	c8-. e'\sf-. g,-. c\sf-. e,-. g\sf-. 
+	c,4. e8( g, b) \mark \default
+	c8 \partCombineAutomatic r r4 r
+	\partCombineApart c8-. e'-. g,-. c-. e,-. g-. \partCombineAutomatic
 	c, e\sf g, c\sf e, g\sf
 	c, r g' r e r
 % Bars 61 to 65
 	c r r4 r
 	R2.
-	c'4\pp( e g)
+	\partCombineApart c'4\pp( e g)
 	c( e, g
-	c g8) r r4
+	c g8) r r4 \partCombineAutomatic
 % Bars 66 to 70
 	R2.
 	\clef tenor d'2(\pp c4)
@@ -80,11 +80,11 @@ musicFagottoIMvtIII = \relative c' {
 	
 	
 	
-	\clef bass g8\pp-. d-. g-. d-. g-. d-. 
+	\clef bass \partCombineApart g8\pp-. d-. g-. d-. g-. d-. 
 % Bars 81 to 85
 	a' d, a' d, a' d, 
 	fis d fis d fis d
-	g4 r r8 a
+	g4 \partCombineAutomatic r r8 a
 	b4 r r8 a
 	b r r4 b8-. c-.
 % Bars 86 to 90
@@ -96,8 +96,8 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 91 to 95
 	d r r4 r
 	r g,8\p r a r \mark \default
-	\partcombineApart g\noBeam b([-\tweak extra-offset #'(-1 . -2.5) \trill \grace {a16[ b]} g8)] d'-\tweak extra-offset #'(-1 . -2.5) \trill[( \grace {c16[ d]} b8]) \afterGrace g'8-\tweak extra-offset #'(-1 . -2) \trill {fis16[ g]}
-	g4_\p( fis8) r r4 \partcombineAutomatic
+	\partCombineApart g\noBeam b([-\tweak extra-offset #'(-1 . -2.5) \trill \grace {a16[ b]} g8)] d'-\tweak extra-offset #'(-1 . -2.5) \trill[( \grace {c16[ d]} b8]) \afterGrace g'8-\tweak extra-offset #'(-1 . -2) \trill {fis16[ g]}
+	g4_\p( fis8) r r4 \partCombineAutomatic
 	a,8\f fis a fis a fis
 % Bars 96 to 100
 	b\p r r4 r
@@ -105,11 +105,11 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*25
+	R2.*25
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -123,9 +123,9 @@ musicFagottoIMvtIII = \relative c' {
 	
 	
 	
-	r8 \once \override CombineTextScript.X-offset = #-3 g16-.\pp g-. g8-. g-. g-. r
+	\partCombineApart r8 g16-.\pp g-. g8-. g-. g-. r
 % Bars 136 to 140
-	r8 c16-. c-. c8-. c-. c-. r
+	r8 c16-. c-. c8-. c-. c-. r \partCombineAutomatic
 	R2.*12
 % Bars 141 to 145
 	
@@ -140,19 +140,19 @@ musicFagottoIMvtIII = \relative c' {
 	
 	
 	
-	r4 r \acciaccatura fis8 g \acciaccatura fis g
+	r4 r \partCombineApart \acciaccatura fis8 \omitBeam \once \voiceTwo g \acciaccatura fis \once \voiceTwo g
 % Bars 156 to 160
 	g4.( a16 b c8 d)
 	\grace {c16[( d]} e4) c4.-\tweak X-offset #-1.7 \sf( b8)
 	a( f') b,(\noBeam g'4) g8
-	g4( c,8) r \partcombineApart g4(
-	c,8) \partcombineAutomatic r r4 r 
+	g4( c,8) r \partCombineApart g4(
+	c,8) \partCombineAutomatic r r4 r 
 % Bars 161 to 165
 	e4(-\tweak X-offset #-1 \sf a8) r r4
 	r4 c(-\tweak X-offset #-1 \sf f,8) r
-	a4(\sf d,8) r a'4\sf( 
-	dis,8) r a'4.(\sf dis,8)
-	e8 r r4 r
+	\partCombineApart a4( d,8) \once \partCombineAutomatic r a'4( 
+	dis,8) \once \partCombineAutomatic r a'4.( dis,8)
+	e8 \partCombineAutomatic r r4 r
 % Bars 166 to 170
 	e'16(\p dis e dis) e-. d-. c-. b-. a-. b-. c-. d-. 
 	e8\f r r4 b8\sf b16 b 
@@ -172,13 +172,13 @@ musicFagottoIMvtIII = \relative c' {
 	r8 c16-\tweak X-offset #-1.5 \pp c c8 c c c
 	r8 c16 c c8 c c c
 % Bars 181 to 185
-	r8 e16 e e8 e \partcombineApart f f \partcombineAutomatic
+	r8 e16 e e8 e \partCombineApart f f \partCombineAutomatic
 	e r r4 r
-	r8 \once \override CombineTextScript.X-offset = #-4 c16\pp c c8 c c c
-	r8 c16 c c8 c c c
-	r8 e16 e e8 e dis fis16 dis
+	r8 \partCombineApart c16 c c8 c c c
+	\once \partCombineAutomatic r8 c16 c c8 c c c
+	\once \partCombineAutomatic r8 \voiceTwo \omitBeam e16 e \omitBeam e8[ e dis] \voiceOne fis16[ dis]
 % Bars 186 to 190
-	e8 r r4 r
+	\partCombineAutomatic e8 r r4 r
 	r8 e16_\semprepp e e8 e e e
 	r8 e16 e e8 e g g
 	r8 f16 f f8 f g g
@@ -191,24 +191,24 @@ musicFagottoIMvtIII = \relative c' {
 	r8 \clef tenor e16 e e8 e e e
 % Bars 196 to 200
 	r8 e16 e e8 e g g
-	r8 f16 f f8 f \partcombineApart g g \partcombineAutomatic
+	r8 f16 f f8 f \partCombineApart g g \partCombineAutomatic
 	f r r4 r
 	\clef bass r8 b,16 b b8 b b b
 	r8 b16 b b8 b d d
 % Bars 201 to 205
-	r8 c16 c c8 c \partcombineApart d d \partcombineAutomatic
+	r8 c16 c c8 c \partCombineApart d d \partCombineAutomatic
 	c8 r r4 r4
 	R2.*6
 % Bars 206 to 210
 	
 	
 	
-	r8 g16\pp g g8 g g g
-	g r e r r4
+	\partCombineApart r8 g16\pp g g8 g g g
+	g r e r r4 \partCombineAutomatic
 % Bars 211 to 215
 	R2.*5
 % Bars 216 to 220
-	r8 \once \override CombineTextScript.X-offset = #-3 d'16\pp d d8 d d d
+	\partCombineApart r8 d'16\pp d d8 d d d \partCombineAutomatic
 	R2.*5
 % Bars 221 to 225
 	\mark \default
@@ -242,8 +242,8 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 251 to 255
 	a( f') b,(\noBeam g'4) g8
 	g4(-\tweak X-offset #0.5 \ff c,8) r g'4(-\tweak X-offset #0.5 \sf
-	c,8) r \once \partcombineApart g r \once \partcombineApart e r
-	\once \partcombineApart c r \once \partcombineApart c r r4
+	c,8) r \once \partCombineApart g r \once \partCombineApart e r
+	\once \partCombineApart c r \once \partCombineApart c r r4
 	r e'4(\p f8) r 
 % Bars 256 to 260
 	R2.*3
@@ -260,11 +260,11 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 271 to 275
 	
 	
-	\once \override CombineTextScript.X-offset = #-3 c8\pp-. g-. c-. g-. c-. g-. 
+	\partCombineApart c8\pp-. g-. c-. g-. c-. g-. 
 	d'-. g,-. d'-. g,-. d'-. g,-. 
 	d'-. g,-. b-. g-. b-. g-. 
 % Bars 276 to 280
-	c r r4 r 
+	c r r4 r \partCombineAutomatic
 	R2.*2
 	
 	c8\p r r4 c8-. c-.
@@ -278,8 +278,8 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 286 to 290
 	e\f r g, r g r
 	g2.\p
-	\partcombineApart g8-\tweak X-offset #-1 \f\noBeam b8-\tweak extra-offset #'(-1 . -2) \trill([ \grace {a16[ b]} g8)] d'-\tweak extra-offset #'(-1 . -2) \trill([ \grace {cis16[ d]} b8]) \afterGrace g'8-\tweak extra-offset #'(-1 . -2.5) \trill {fis16[ g]}
-	f!4\p( e8) r r4 \partcombineAutomatic
+	\partCombineApart g8-\tweak X-offset #-1 \f\noBeam b8-\tweak extra-offset #'(-1 . -2) \trill([ \grace {a16[ b]} g8)] d'-\tweak extra-offset #'(-1 . -2) \trill([ \grace {cis16[ d]} b8]) \afterGrace g'8-\tweak extra-offset #'(-1 . -2.5) \trill {fis16[ g]}
+	f!4\p( e8) r r4 \partCombineAutomatic
 	R2.*9
 % Bars 291 to 295
 	
@@ -287,19 +287,19 @@ musicFagottoIMvtIII = \relative c' {
 	
 	
 	
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*11
+	R2.*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 	
 	
-	r4 r g,-\tweak X-offset #-1 _\semprepp(
+	\partCombineApart r4 r g,-\tweak X-offset #-1 _\semprepp(
 	b2.)~
 % Bars 316 to 320
 	b~
@@ -315,13 +315,13 @@ musicFagottoIMvtIII = \relative c' {
 	g_\crescmarkup \mark \default
 % Bars 326 to 330
 	c8\f-. g-. c-. g-. e-. c-. 
-	\once \offset positions #'(-0.7 . 0) Beam g'-\tweak X-offset #-1 \f g,16 g b8 b16 b d8 d16 d
-	g8 r r4 r
-	g,8 r r4 r
-	g8 r r4 r
+	\once \offset positions #'(-0.7 . 0) Beam g' g,16 g b8 b16 b d8 d16 d
+	g8 \partCombineAutomatic r r4 r
+	\once \partCombineApart g,8 r r4 r
+	\once \partCombineApart g8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< {r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
+	<< {\oneVoice r4 r r8 \breathe r} {\fermataCentered}>> \bar "||"
 	\time 2/4 R2*34
 % Bars 336 to 340
 	
@@ -362,8 +362,8 @@ musicFagottoIMvtIII = \relative c' {
 	\mark \default
 	g,8-\tweak X-offset #-2 \f( a16 b c8 d)
 	e4( c8) r
-	f16( g f e d e d c)
-	b( c b a) g8-. g-.
+	\partCombineApart \voiceOne f16( g f e d e d c)
+	b( c b a) g8-. g-. \partCombineAutomatic
 % Bars 391 to 395
 	g-\tweak X-offset #-0.5 \f( a16 b c8 d)
 	ees4( c8) r
@@ -375,7 +375,7 @@ musicFagottoIMvtIII = \relative c' {
 	d
 	ees\sf
 	c\sf
-	g8 r r4
+	\once \partCombineApart g8 r r4
 % Bars 401 to 405
 	R2*12
 % Bars 406 to 410
@@ -412,13 +412,13 @@ musicFagottoIMvtIII = \relative c' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||"
-	\time 3/4 \tempo "Tempo I." \once \override CombineTextScript.X-offset = #-4 c8\pp-. c-. c-. c-. c-. c-. 
+	R2\fermata \bar "||"
+	\time 3/4 \partCombineApart c8-. c-. c-. c-. c-. c-. \partCombineAutomatic
 	c\f r c r r4
 	a8\pp-. a-. a-. a-. a-. a-. 
 % Bars 446 to 450
-	b\f r \once \partcombineApart g r r4
-	\once \override CombineTextScript.X-offset = #-4 c8\pp-. c-. c-. c-. c-. c-. 
+	b\f r \once \partCombineApart g r r4
+	\partCombineApart c8-. c-. c-. c-. c-. c-. \partCombineAutomatic
 	c\f r c r r4
 	a8 r a r r4
 	R2.*7
@@ -426,7 +426,7 @@ musicFagottoIMvtIII = \relative c' {
 	
 % Bars 456 to 460
 	
-	c4. e32[_( g16.-.]) g32[_( e16.-.]) e32[_( c16.-.])
+	c4. e32[( g16.-.]) g32[( e16.-.]) e32[( c16.-.])
 	c32[( b16.-.]) b4 b32[( d16.-.]) d32([ b16.-.]) b32[( g16.-.)] \mark \default
 	c4. e8-.-\tweak X-offset #-2.7 \sf g,-. b-.
 	c8 r r4 r
@@ -440,12 +440,12 @@ musicFagottoIMvtIII = \relative c' {
 	c, r r4 r
 	c8-. e'\sf-. g,-. c\sf-. e,-. g\sf-. 
 	c,8 r r4 r
-	c8 r r4 c8\sf r
-	c8 r r4 c8\sf r
+	\once \partCombineApart c8 r r4 \once \partCombineApart c8 r
+	\once \partCombineApart c8 r r4 \once \partCombineApart c8 r
 % Bars 471 to 475
-	c r r4 c8\sf r
-	c' r g r e r
-	c r r4 r 
-	c8 r r4 r
-	c8 r r4 r \bar "|."
+	\once \partCombineApart c r r4 \once \partCombineApart c8 r
+	\once \partCombineApart c' r \once \partCombineApart g r \once \partCombineApart e r
+	\once \partCombineApart c r r4 r 
+	\once \partCombineApart c8 r r4 r
+	\once \partCombineApart c8 r r4 r \bar "|."
 }

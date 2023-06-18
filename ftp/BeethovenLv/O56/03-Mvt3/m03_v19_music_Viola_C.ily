@@ -124,11 +124,11 @@ musicViolaMvtIII = \relative c' {
 	g_\dimmarkup r g r g r
 	g r g r g r
 % Bars 106 to 110
-	g4\pp r8 r_\rallentando r4
+	g4\pp r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*9
+	R2.*9
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -329,12 +329,12 @@ musicViolaMvtIII = \relative c' {
 	c r r4 r8 g
 	f\dim r f r f r
 	f r f r f r
-	f\pp r r r_\rallentando r4
+	f\pp r r r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*4
+	R2.*4
 % Bars 306 to 310
 	
 	gis4^\pizz gis r8 gis
@@ -367,7 +367,7 @@ musicViolaMvtIII = \relative c' {
 	g8 r r4 b8-\tweak X-offset #-5 ^\pizz\p r
 % Bars 331 to 335
 	b r r4 r
-	<<{r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
+	<<{r4 r r8 \breathe r} {\fermataCentered}>> \bar "||"
 	\time 2/4 R2*3
 	
 	
@@ -485,8 +485,8 @@ musicViolaMvtIII = \relative c' {
 	\mark \default
 % Bars 441 to 445
 	b8^\pizz r r4
-	R2\fermataMarkup \bar "||"
-	\time 3/4 \tempo "Tempo I." R2.
+	R2\fermata \bar "||"
+	\time 3/4 R2.
 	<c, c'>8-\tweak X-offset #-2.1 \f-\tweak X-offset #-5 ^\arco r q r r4
 	R2.
 % Bars 446 to 450
