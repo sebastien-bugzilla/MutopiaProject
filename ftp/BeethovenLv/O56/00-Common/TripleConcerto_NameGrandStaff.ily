@@ -29,7 +29,7 @@ nameGrandStaffIIMvtI = {
 nameGrandStaffIMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Piano-" "Concertante"
+			\lower #1 "Piano-" "concertante."
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
@@ -50,7 +50,7 @@ nameGrandStaffIIMvtII = {
 nameGrandStaffIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Piano-" "Concertante"
+			\lower #1 "Piano-" "concertante."
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {

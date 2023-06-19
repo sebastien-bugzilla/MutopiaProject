@@ -60,9 +60,9 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtII
-%					}
+					\new Voice {
+						\formatConductorMvtII
+					}
 					\new Voice {
 						\tempiMvtII
 					}
@@ -116,10 +116,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-			\context {
-				\Staff
-				\RemoveEmptyStaves
-			}
 		}
 	}
 }

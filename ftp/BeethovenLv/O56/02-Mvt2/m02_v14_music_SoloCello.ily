@@ -53,7 +53,7 @@ musicSoloCelloMvtII = \relative c'' {
 	c8_\crescmarkup( \dynEsw #'(-9 . 0) bes4)\sf\>
 % Bars 36 to 40
 	aes16\!_\crescmarkup([ a bes c)] des32.[( bes64]) des64.[( bes128) des64.( bes128)]
-	aes16(\p ees8 \clef tenor c16 aes a)
+	aes!16(\p ees8 \clef tenor c16 aes a)
 	bes16 des8 g bes16 \clef treble
 	aes16\trill bes\trill c8\noBeam~ \tuplet 3/2 16 {c32[ a( bes]} ees32. g,64)
 	aes!8 \clef bass s s

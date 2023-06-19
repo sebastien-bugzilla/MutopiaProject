@@ -10,7 +10,7 @@ musicVioloncellMvtII = \relative c {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	aes4\p des16-. c-.
+	\aIIOmit aes4\p des16-. c-.
 	g8  r g
 	g8~ g16. ees32( aes16. des32)
 	ees8.\noBeam \partCombineApart \clef tenor ees'32( des c16 bes)

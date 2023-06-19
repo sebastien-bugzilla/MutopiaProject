@@ -23,7 +23,7 @@ musicViolinIIMvtII = \relative c' {
 	r c c c r c c c r c c c
 % Bars 11 to 15
 	r bes_\crescmarkup bes bes r g g g r bes bes bes
-	r16 bes8\sf( des16_\dimmarkup c bes)
+	r16 \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur bes8-\offset X-offset -1 \sf( des16_\dimmarkup c bes)
 	c8\p([ aes] g16 aes)
 	g8. bes16( aes bes)
 	aes8_\crescmarkup bes4\f\>

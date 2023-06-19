@@ -15,7 +15,7 @@ musicCornoIIMvtII = \relative c, {
 	
 % Bars 11 to 15
 	
-	\clef bass r8. c16\p c c
+	\clef bass r8. c16-\offset X-offset -1.5 \p c c
 	c4.~
 	c~
 	c16 r r8 r

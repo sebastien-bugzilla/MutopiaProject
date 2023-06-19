@@ -422,6 +422,14 @@ hairpinShorten = #(define-music-function
 	#}
 )
 
+whiteoutMarkup = {
+	\once \override Hairpin.layer = #4
+	\once \override TextScript.layer = #3
+	\once \override TextScript.whiteout = #1
+	\once \override TextScript.whiteout-style = #'outline
+}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -770,13 +778,6 @@ hairpinShorten = #(define-music-function
 %	%\once \override Score.RehearsalMark.whiteout-style = #'outline
 %}
 
-
-%whiteoutMarkup = {
-%	\once \override Hairpin.layer = #4
-%	\once \override TextScript.layer = #3
-%	\once \override TextScript.whiteout = ##t
-%	\once \override TextScript.whiteout-style = #'outline
-%}
 
 %whiteoutDynamic = {
 %	\once \override DynamicText.whiteout = ##t

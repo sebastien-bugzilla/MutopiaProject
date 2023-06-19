@@ -96,13 +96,13 @@ musicPianoUpMvtII = \relative c' {
 	\tuplet 3/2 16 {ees[ g bes] \change Staff = "up" 
 		ees[ \change Staff = "down" bes g] 
 		ees[ g bes] 
-		des[^\crescmarkup bes g] 
+		\whiteoutMarkup des[^\crescmarkup bes g] 
 		ees[ g bes] 
 		des[ bes g]} \mark \default
 	\tuplet 3/2 16 {ees[ g\> bes] 
 		des[ bes g] 
 		ees[ g bes]\! 
-		ees,[^\decresc g \change Staff = "up" ees'] \change Staff = "down" 
+		\whiteoutMarkup ees,[^\decresc g \change Staff = "up" ees'] \change Staff = "down" 
 		ees,[ aes \change Staff = "up" ees'] \change Staff = "down" 
 		ees,[ bes' \change Staff = "up" ees]}
 	\oneVoice r8 
@@ -176,7 +176,7 @@ musicPianoUpMvtII = \relative c' {
 		b64[ \change Staff = "down" g d b] \oneVoice \change Staff = "up" 
 	r8 \voiceOne 
 		\tuplet 3/2 16 {r32 r d'' 
-		g[ b g] 
+		\once \tupletDown g[ b g] 
 		d[ b g] \change Staff = "down" 
 		d[ b g]} \change Staff = "up" \oneVoice 
 	r8 
@@ -184,7 +184,7 @@ musicPianoUpMvtII = \relative c' {
 		b[ d b] 
 		g[ d b] 
 		g[ d b]} \voiceOne \change Staff = "down" 
-	\tuplet 3/2 16 {g32[^\dimmarkup d' b] 
+	\tuplet 3/2 16 {\whiteoutMarkup g32[^\dimmarkup d' b] 
 		g[ b g] 
 		d![ b' g] 
 		d[ g d] 

@@ -43,14 +43,14 @@ musicSoloViolinMvtII = \relative c''' {
 	f8.\!_\crescmarkup[ f16]~ f32.([ des64]) f64.[( des128) f64.( des128)]
 	c8.\p[ c16~] c32[ b64( c)] b[( c) b( c)]
 	ees8. des16( bes! g)
-	\trillSpanPadding #1 aes16_\startTrillSpan \trillSpanPadding #1 bes\startTrillSpan c8\noBeam\stopTrillSpan~ \tuplet 3/2 16 {c32[ a( bes]} ees32. g,64)
+	\trillSpanPadding #1 aes16\startTrillSpan \trillSpanPadding #1 bes\startTrillSpan c8\noBeam\stopTrillSpan~ \tuplet 3/2 16 {c32[ a( bes]} ees32. g,64)
 	aes!8 r r
 % Bars 41 to 45
 	R4.*3
 	
 	\mark \default
 	R4.
-	\tuplet 3/2 16 {g,32([ g' fis] g[ b ais] b[ d cis] d[ g d])} f!(\< ees)\! d(-.\> c-.)
+	\tuplet 3/2 16 {g,32([ g' fis] g[ b ais] b[ d cis] d[ g d])} f!(\< ees)\! d(-.\> c-.)\!
 % Bars 46 to 50
 	b8\p r g,16.( b32)
 	b8 r b16.( d32)
