@@ -170,7 +170,7 @@ musicPianoUpMvtII = \relative c' {
 	
 % Bars 46 to 50
 	r8_\semprep 
-		\tuplet 3/2 16 {\once \override TupletNumber.Y-offset = #-3 r32( r b'') 
+		\tuplet 3/2 16 {\tupletOffset #-3 r32( r b'') 
 		d[ g d] 
 		b[ g d]} \voiceOne 
 		b64[ \change Staff = "down" g d b] \oneVoice \change Staff = "up" 

@@ -425,11 +425,11 @@ musicSoloCelloMvtI = \relative c' {
 	\tuplet 3/2 4 {d( b) f'-. f-. f-. f-. f-. e-. d-. d-. c-. b-.}
 	\tuplet 3/2 4 {c( d) d-. d-. d-. d-. d-. c-. b-. b-. a-. gis-.}
 	\tuplet 3/2 4 {a( bes) bes-. bes-. bes-. bes-. bes-. a-. g!-. g-. f-. e-.}
-	\clef bass \once \override Beam.auto-knee-gap = #2 f16 c, f, c' f, c' f, c' fis, c' fis, c' fis, c' fis, c'
+	\clef bass \beamGap #2 f16 c, f, c' f, c' f, c' fis, c' fis, c' fis, c' fis, c'
 	g c g c a c a c f,! c' f, c' g b g b \mark \default
 % Bars 431 to 435
 	c,4-\tweak X-offset #-1.5 \f r c''16 d c b c d c d
-	\once \override Beam.auto-knee-gap = #2 e c,, e g c e g c e e f e d c f e
+	\beamGap #2 e c,, e g c e g c e e f e d c f e
 	d e d c b a g a b c b a g a b c
 	d e d c b c d e f e g f e d c b
 	c d cis d cis d cis d cis d e d c b a gis
@@ -472,7 +472,7 @@ musicSoloCelloMvtI = \relative c' {
 	b2~ b8.[ g16( a8. g16)]
 	c2~ c8.[ g16( a8. g16)]
 	f'4( d b f)
-	\clef bass \once \override Beam.auto-knee-gap = #2 \tuplet 3/2 4 {e8( c,\p e) g-. e-. c-. g-. c-. e-. g-. e-. c-.}
+	\clef bass \beamGap #2 \tuplet 3/2 4 {e8( c,\p e) g-. e-. c-. g-. c-. e-. g-. e-. c-.}
 	\tuplet 3/2 4 {g-. d'-. f-. g-. f-. d-. g,-. d'-. f-. g-. f-. d-.}
 % Bars 476 to 480
 	\tuplet 3/2 4 {g,_\crescmarkup c e g e c g c ees g ees c}

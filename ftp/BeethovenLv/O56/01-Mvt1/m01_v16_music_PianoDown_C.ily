@@ -150,8 +150,8 @@ musicPianoDownMvtI = \relative c' {
 		d,( f bes d)
 		c,!( f a c)
 		\clef bass c,,( e g c,)
-		\once \override TupletNumber.Y-offset = #2.7 \tuplet 3/2 4 {r8 cis e} g2.~
-		\once \override TupletNumber.Y-offset = #4 \tuplet 3/2 4 {g4 a8} d4~ \tuplet 3/2 4 {d8 gis, b} e4~
+		\tupletOffset #2.7 \tuplet 3/2 4 {r8 cis e} g2.~
+		\tupletOffset #4 \tuplet 3/2 4 {g4 a8} d4~ \tuplet 3/2 4 {d8 gis, b} e4~
 		\tuplet 3/2 4 {e8 \clef treble a, e'} a4~ \tuplet 3/2 4 {a8 d, fis} b4 
 	} \\ {
 		\omit TupletNumber d,1
@@ -389,8 +389,8 @@ musicPianoDownMvtI = \relative c' {
 		f,( aes des f) \clef bass
 		ees,,( aes c ees)
 		ees,( g bes ees,)
-		\once \override TupletNumber.Y-offset = #4.5 \tuplet 3/2 4 {r8 e! g} bes2 c4~
-		\tuplet 3/2 4 {c8 f, c'} f4~ \once \override TupletNumber.Y-offset = #4 \tuplet 3/2 4 {f8\noBeam \clef treble b,! d!} g4~
+		\tupletOffset #4.5 \tuplet 3/2 4 {r8 e! g} bes2 c4~
+		\tuplet 3/2 4 {c8 f, c'} f4~ \tupletOffset #4 \tuplet 3/2 4 {f8\noBeam \clef treble b,! d!} g4~
 		\tuplet 3/2 4 {g8 c, g'} c4~ \tuplet 3/2 4 {c8 fis, a!} d4
 	} \\ {
 		\omit TupletNumber f,1

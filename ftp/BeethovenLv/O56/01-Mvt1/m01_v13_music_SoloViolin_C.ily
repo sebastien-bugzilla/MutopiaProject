@@ -114,7 +114,7 @@ musicSoloViolinMvtI = \relative c''' {
 	\tuplet 3/2 4 {f(-\tweak X-offset #-1 \fp e) e-. e-. e-. e-. e( d) d-. d( c) c-.}
 	b4 r r2
 	r \tuplet 3/2 4 {r8 f f fis fis fis}
-	\tuplet 3/2 4 {\once \tupletUp \once \override Beam.auto-knee-gap = #2 gis e,(\sf gis) gis( b) b( e) e( gis) gis( b) b(}
+	\tuplet 3/2 4 {\once \tupletUp \beamGap #2 gis e,(\sf gis) gis( b) b( e) e( gis) gis( b) b(}
 % Bars 146 to 150
 	\tuplet 3/2 4 {e) gis,,(_\crescmarkup b) b( e) e( gis) gis( b) b( e) e(}
 	\tuplet 3/2 4 {gis) gis( e) e( b) b( gis) gis( e) e( b) b(}

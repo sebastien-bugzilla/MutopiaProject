@@ -450,6 +450,16 @@ rehearsalMarkOsp = #(define-music-function
 	#}
 )
 
+tupletOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override TupletNumber.Y-offset = #offset 
+	#}
+)
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %aIIExtraOffset = #(define-music-function
@@ -686,14 +696,6 @@ rehearsalMarkOsp = #(define-music-function
 %	#}
 %)
 
-
-%tupletOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override TupletNumber.Y-offset = #offset 
-%	#}
-%)
 
 %tupletExtraOffset = #(define-music-function
 %	(offset)

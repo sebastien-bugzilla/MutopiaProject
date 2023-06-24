@@ -79,7 +79,7 @@ musicVioloncellMvtI = \relative c {
 	c_\crescmarkup)
 	f
 	e2( ees)
-	\once \override CombineTextScript.X-offset = #-2.5 g,8.\ff g'16 g4 g,8. g'16 g4
+	\aIIXoffset #-2.5 g,8.\ff g'16 g4 g,8. g'16 g4
 	g,8.-.[ g'16-. g8.-. g16]-. g8.[-. g16-. g8.-. g16]-. 
 % Bars 61 to 65
 	g,4 r r g'-.
@@ -521,7 +521,7 @@ musicVioloncellMvtI = \relative c {
 	f!
 	e!
 	d)
-	\once \override CombineTextScript.X-offset = #-3.5 g,4^\pizz r g r
+	\aIIXoffset #-3.5 g,4^\pizz r g r
 	g r g r
 % Bars 476 to 480
 	g_\crescmarkup r g r
