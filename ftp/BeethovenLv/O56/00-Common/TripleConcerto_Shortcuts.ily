@@ -429,17 +429,28 @@ whiteoutMarkup = {
 	\once \override TextScript.whiteout-style = #'outline
 }
 
+aIIXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override CombineTextScript.X-offset = #offset
+	#}
+)
 
+revertRehearsalMark = {
+	\once \revert Score.RehearsalMark.extra-spacing-width
+	\once \revert Score.RehearsalMark.extra-spacing-height
+}
+
+rehearsalMarkOsp = #(define-music-function
+	(prio)
+	(number?)
+	#{
+		\once \override Staff.RehearsalMark.outside-staff-priority = #prio
+	#}
+)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%aIIXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override CombineTextScript.X-offset = #offset
-%	#}
-%)
 
 %aIIExtraOffset = #(define-music-function
 %	(extraoffset)

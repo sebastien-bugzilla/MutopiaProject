@@ -98,7 +98,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	e d c b c d e d c b c d} e8 g\sf
 % Bars 91 to 95
 	d,,\f d''4\sf b8-. g-. e-.
-	d-. b-. g-. e-. d8.( e32 fis) \mark \default
+	d-.[ b-. g-. e-.] d8.( e32 fis) \mark \default
 	g8 r r4 r
 	\tuplet 6/4 4 {c'16(\p b) d-. c( b) d-. c-. a-. fis-. c-. fis-. c-. a-. c-. a-. fis-. a-. fis-.}
 	c8 r r4 r
@@ -235,7 +235,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	R2.*2
 	
 % Bars 221 to 225
-	r16 fis(\f g a b c d e g f! e d \mark \default
+	r16 \shape #'((0 . 0)(0 . 0)(0 . 0.3)(0 . -1)) Slur fis(\f g a b c d e g f! e d \mark \default
 	e-.\noBeam) g,(\ff a b c d e f a g f e
 	d8) r r4 r
 	R2.*3
@@ -408,7 +408,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	e\p g c e a,, c f a
 % Bars 376 to 380
 	g, c e g g, b d g
-	\once \override Beam.auto-knee-gap = #1 c,\p e' g f e d c bes
+	\beamGap #1 c,\p e' g f e d c bes
 	a8 r r4
 	r16 fis' a g fis e d c
 	b!8 r r4
@@ -468,7 +468,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	d
 	\trillSpanPadding #1 f,\startTrillSpan~
 	f
-	\trillSpanPadding #1.5 d'\startTrillSpan~
+	\trillSpanPadding #2.5 d'\startTrillSpan~
 	d \mark \default
 % Bars 441 to 445
 	b\startTrillSpan~\<

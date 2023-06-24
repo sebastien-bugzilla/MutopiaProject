@@ -28,7 +28,7 @@ musicViolaMvtIII = \relative c' {
 	e8 r r4 r8 g
 	a r d r r f,
 % Bars 16 to 20
-	g\pp r c r c,8.(^\arco e16
+	g\pp r c r \shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur c,8.(^\arco e16
 	g8-.) r r4 g8.( b16
 	c8-.) r r4 c8.-. a16-.
 	d8.-. d16-. d8-. r d-. r
@@ -108,7 +108,7 @@ musicViolaMvtIII = \relative c' {
 % Bars 91 to 95
 	
 	\mark \default
-	g16(\f-\tweak X-offset #1 ^\arco d g d g d g d g d g d)
+	g16(-\offset X-offset -1 \f-\tweak X-offset #1 ^\arco d g d g d g d g d g d)
 	a'8\p d, a' d, a' d,
 	fis16(\f d fis d fis d fis d fis d fis d)
 % Bars 96 to 100d
@@ -135,7 +135,7 @@ musicViolaMvtIII = \relative c' {
 	
 	
 	
-	c2.-\tweak extra-offset #'(1.3 . 1.8) \pp
+	\dynEO #'(1.3 . 1.8) c2.\pp
 	c
 % Bars 121 to 125
 	c
@@ -153,7 +153,7 @@ musicViolaMvtIII = \relative c' {
 	e r r4 r
 	e8 r r4 r8 g
 	a r d r r f,
-	g\pp r c r c,8.^\arco( e16
+	g\pp r c r \shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur c,8.^\arco( e16
 	g8)-. r r4 g8.( b16
 % Bars 136 to 140
 	c8-.) r r4 c8.-. a16-.

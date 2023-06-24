@@ -33,20 +33,20 @@ musicFloteMvtIII = \relative c''' {
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r \acciaccatura fis,8 g-\tweak extra-offset #'(-2 . 1) \ff \acciaccatura fis g
+	r4 r \acciaccatura fis,8 \dynEO #'(0 . 1.5) g\ff \acciaccatura fis g
 	g4.( a16 b c8 d)
-	\grace {c16[( d]} e4)( c4.-\tweak extra-offset #'(0 . 2) \sf b8)
+	\grace {c16[( d]} e4)( \dynEO #'(0 . 2) c4.\sf b8)
 	a([ f']) b,( g'4) g8
 % Bars 41 to 45
 	g4(\sf c,8) r g'4-\tweak X-offset #-1 \sf(
-	c,16)\ff b c d e d c b a gis a b
+	\dynEO #'(0 . 1) c,16)\ff b c d e d c b a gis a b
 	c b a g! f e f g a g f e 
 	d cis d e f e d c b c d e
 	f g a b c b a g f e d c
 % Bars 46 to 50
-	d'4.\sf d16 d d8 d
-	d8 d4\sf d16 d d8 d
-	d8 d4\sf d16 d d8-. e-.
+	\dynEO #'(0 . 1) d'4.\sf d16 d d8 d
+	d8 \dynEO #'(0 . 2) d4\sf d16 d d8 d
+	d8 \dynEO #'(0 . 2) d4\sf d16 d d8-. e-.
 	f8. d16 c8 r b r
 	c\p r r4 r
 % Bars 51 to 55
@@ -59,7 +59,7 @@ musicFloteMvtIII = \relative c''' {
 	c4. e8([\sf g, b)] \mark \default
 	c8 r r4 r
 	c8-. e-.\sf g,-. c\sf-. e,-. g'\sf-. 
-	c,-. e\sf-. g,-. c\sf-. e,-. g\sf-. 
+	c,-. \dynEO #'(0 . 1) e\sf-. g,-. \dynEO #'(0 . 1) c\sf-. e,-. \dynEO #'(0 . 1) g\sf-. 
 	c, r c' r c r
 % Bars 61 to 65
 	c r r4 r
@@ -81,7 +81,7 @@ musicFloteMvtIII = \relative c''' {
 	g4\p( fis!8) r r4
 	d8\f[ fis(-\tweak extra-offset #'(0 . -2.6) \trill \grace {e16[ fis]} d8) a'(-\tweak extra-offset #'(0 . -2.6) \trill \grace {g16[ a]} fis8) \afterGrace d'8\trill] {cis16[ d]}  
 % Bars 96 to 100
-	c!4\p( b8) r r4
+	\dynEO #'(0 . 1) c!4\p( b8) r r4
 	R2.*9
 % Bars 101 to 105
 	
@@ -121,12 +121,12 @@ musicFloteMvtIII = \relative c''' {
 	
 	
 	
-	r4 r \acciaccatura fis,8 g-\tweak extra-offset #'(-2.5 . 1.5) \ff \acciaccatura fis g
+	r4 r \acciaccatura fis,8 \dynEO #'(-2.5 . 1.5) g\ff \acciaccatura fis g
 % Bars 156 to 160
 	g4.( a16 b c8 d)
-	\grace {c16[( d]} e4) c4.-\tweak extra-offset #'(0 . 3) \sf( b8)
+	\grace {c16[( d]} e4) \dynEO #'(0 . 2) c4.\sf( b8)
 	a( f') b,(\noBeam g'4) g8
-	g4\sf( c,8) r g'4(-\tweak X-offset #-1 \sf
+	\dynEO #'(0 . 2) g4\sf( c,8) r \dynEO #'(0 . 2) g'4(\sf
 	c,8) r r4 r
 % Bars 161 to 165
 	e4(\sf a,8) r r4
@@ -182,7 +182,7 @@ musicFloteMvtIII = \relative c''' {
 	r4 r \acciaccatura fis8 g\ff \acciaccatura fis g
 	g4.( a16 b c8 d)
 % Bars 246 to 250
-	e4( c4.-\tweak X-offset #-1 \sf b8)
+	e4( \dynEO #'(0 . 1) c4.\sf b8)
 	a( f'~ f) f16( e) e( d) d( c)
 	c( b) b( a) a( g) fis( g) fis( g) fis( g)
 	\shape #'((0 . 2)(0 . 1.5)(0 . 0)(0 . 0)) Slur g4.-\tweak extra-offset #'(0  . -3.8) \startTrillSpan( a16\stopTrillSpan b c8 d)
@@ -239,16 +239,16 @@ musicFloteMvtIII = \relative c''' {
 	
 	
 	
-	\markXoffset #1 \mark \default
+	\revertRehearsalMark \mark \default
 % Bars 326 to 330
-	r8 g,\f-. c-. g-. e-. c-. 
+	r8 g,-\offset X-offset 1 ^\f-. c-. g-. e-. c-. 
 	g' g16 g b8 b16 b d8 d16 d
 	f8 r r4 r
 	d8 r r4 r
 	b8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< { r4 r r8 \breathe \tempo "Allegro." r } {\fermataCentered}>> \bar "||"
+	<< { r4 r r8 \breathe r } {\fermataCentered}>> \bar "||"
 	\time 2/4 R2*54
 % Bars 336 to 340
 	
@@ -309,7 +309,7 @@ musicFloteMvtIII = \relative c''' {
 	
 	
 	
-	\once \override Score.RehearsalMark.outside-staff-priority = #100 \mark \default
+	\rehearsalMarkOsp #100 \mark \default
 % Bars 441 to 445
 	R2
 	R\fermata \bar "||" 
@@ -328,10 +328,10 @@ musicFloteMvtIII = \relative c''' {
 	
 	c4.-\tweak X-offset #-1 \f e32([ g16.-.)] g32[( e16.-.)] e32([ c16.-.])
 	c32([ b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.)] b32[( g16.-.)] \mark \default
-	c4. e8-.\sf[ g,-. b-.]
+	c4. \dynEO #'(0 . 2) e8-.\sf[ g,-. b-.]
 	c8 r r4 r
 % Bars 461 to 465
-	c4. e8[\sf-. g,-. b-.]
+	c4. \dynEO #'(0 . 2) e8[\sf-. g,-. b-.]
 	c8 r r4 r
 	R2.*2
 	\mark \default

@@ -32,7 +32,7 @@ musicPianoUpMvtIII = \relative c {
 	<g b d>8 r r4 <d' a' c d>8. q16
 	<d g b d>8 r r4 r
 	<g b d g>8 r r4 r
-	\tuplet 6/4 4 {r16 f'!(-\tweak X-offset #-2.5 _\crescmarkup e f e f) d( b' ais b ais b) f( d' cis d cis d)} \mark #4
+	\tuplet 6/4 4 {r16 f'!(-\tweak X-offset #-2.8 _\crescmarkup e f e f) d( b' ais b ais b) f( d' cis d cis d)} \mark #4
 % Bars 31 to 35
 	\grace {cis16[ d e]} d2\fermata\f \acciaccatura fis,8 g\pp \acciaccatura fis g
 	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
@@ -134,13 +134,13 @@ musicPianoUpMvtIII = \relative c {
 	d8-.) r r4 \acciaccatura e8 d16( cis) d-. d-.
 	g8 r r4 \acciaccatura d8 c!16( b c a
 	d8-.) r r4 \acciaccatura e8 d16( cis) d-. d-.
-	g8 r r4 \clef treble <a c d>8._\semprepp q16
+	g8 r r4 \clef treble <a c d>8.-\offset X-offset -10 _\semprepp q16
 	<g b d>8 r r4 <d' a' c d>8. q16
 % Bars 146 to 150
 	<d g b d>8 r r4 r
 	<g b d g>8 r r4 r
 	\tuplet 6/4 4 {r16_\crescmarkup f'!( e f e f) d( b' ais b ais b) f( d' cis d cis d)} \mark \default 
-	\grace {cis16[( d e]} d2)\fermata\f \acciaccatura fis,8 g\pp \acciaccatura fis g
+	\grace {cis16[( d e]} \dynEO #'(0 . 2) d2)\fermata\f \acciaccatura fis,8 g\pp \acciaccatura fis g
 	\acciaccatura fis8 g4 r \acciaccatura fis8 g \acciaccatura fis g
 % Bars 151 to 155
 	\acciaccatura fis8 g4 r \acciaccatura fis8 g \acciaccatura fis g
@@ -229,7 +229,7 @@ musicPianoUpMvtIII = \relative c {
 % Bars 231 to 235
 	b,,_\crescmarkup\noBeam g'([ d]) b'([ g)] d'([ b)] g'([ d)]
 	b'[( g]) b[( g]) b[( g]) b[( g]) b(}
-	\once \override TrillSpanner.X-offset = 2 g2.)\f\startTrillSpan~
+	g2.)\f\startTrillSpan~
 	g_\dimin~
 	g\p~
 % Bars 236 to 240

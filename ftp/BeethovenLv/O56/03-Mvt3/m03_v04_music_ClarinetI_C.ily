@@ -35,8 +35,8 @@ musicClarinetIMvtIII = \relative c'' {
 	c8 r \partCombineApart e,16 d e f g e f g
 	a f g a d,8( d'4) \partCombineAutomatic d8
 % Bars 41 to 45
-	d4-\tweak extra-offset #'(-0.4 . 0.7) \sf( c8) r d4(\sf
-	c8\ff) c r4 r
+	\dynEO #'(-0.4 . 0.7) d4\sf( c8) r d4(-\tweak X-offset -0.5 \sf
+	c8-\tweak X-offset -1 \ff) c r4 r
 	r f,16 e f g a g f e
 	d cis d e f e d c b c d e
 	f g a b c b a g f e d c
@@ -56,7 +56,7 @@ musicClarinetIMvtIII = \relative c'' {
 	c4. \partCombineApart e8( g, b) \mark \default
 	c \partCombineAutomatic r r4 r
 	\partCombineApart c8-. e-. g,-. c-. e,-. g'-. \partCombineAutomatic
-	c, e\sf g, c\sf e, g\sf
+	\aIIXoffset -2 c, e\sf g, c\sf e, g\sf
 	c, r c' r c r
 % Bars 61 to 65
 	c r r4 r
@@ -132,7 +132,7 @@ musicClarinetIMvtIII = \relative c'' {
 	e8) r r4 r
 % Bars 161 to 165
 	e'4\sf( e8) r r4
-	r \partCombineApart c(-\tweak extra-offset #'(-1.5 . 1.0) \sf f,8) \partCombineAutomatic r
+	r \partCombineApart c( f,8) \partCombineAutomatic r
 	R2.*3
 % Bars 166 to 170
 	b8\p b16 b b8-. b-. c-. c-. 
@@ -145,7 +145,7 @@ musicClarinetIMvtIII = \relative c'' {
 	R2.*3
 	
 	
-	r8 g16\pp g g8 g g g
+	r8 \dynEO #'(-1 . 0.4) g16\pp g g8 g g g
 % Bars 176 to 180
 	r8 g16 g g8 g g g
 	r8 b16 b b8 b b b
@@ -155,7 +155,7 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 181 to 185
 	
 	
-	r8 g16\pp g g8 g g g
+	r8 \dynEO #'(-1 . 0.4) g16\pp g g8 g g g
 	r8 g16 g g8 g g g
 	r b16 b b8 b b b
 % Bars 186 to 190
@@ -181,7 +181,7 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	
 	
-	\partCombineApart r8 g16\pp g g8 g g g
+	\partCombineApart r8 g16-\offset X-offset -1 \pp g g8 g g g
 	g r e r r4 \partCombineAutomatic
 % Bars 211 to 215
 	R2.*11
@@ -189,7 +189,7 @@ musicClarinetIMvtIII = \relative c'' {
 	
 % Bars 221 to 225
 	\mark \default
-	\once \override CombineTextScript.X-offset = #-2 c'8\f-. g-. c-. g-. e-. c-. 
+	\aIIXoffset #-2 c'8\f-. g-. c-. g-. e-. c-. 
 	g' r r4 r
 	R2.
 	\partCombineApart r4 g8-\tweak X-offset #0 \pp r g r \partCombineAutomatic
@@ -364,12 +364,12 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 441 to 445
 	R2
 	R2\fermata \bar "||"
-	\time 3/4 g8\pp-. g-. g-. g-. g-. g-. 
+	\time 3/4 g8-\tweak X-offset -2.5 \pp-. g-. g-. g-. g-. g-. 
 	g\f r g r r4
 	f8\pp-. f-. f-. f-. f-. f-. 
 % Bars 446 to 450
 	f8\f r b r r4
-	g8\pp-. g-. g-. g-. g-. g-. 
+	g8-\tweak X-offset -2.5 \pp-. g-. g-. g-. g-. g-. 
 	c\f r c r r4
 	c8 r c r r4
 	R2.*7

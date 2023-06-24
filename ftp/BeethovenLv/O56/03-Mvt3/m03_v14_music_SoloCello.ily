@@ -389,7 +389,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	c b a gis a c b a
 	g! b a g fis a g fis \clef tenor
 	e2~
-	e4~ e16-. d-. c-. b-. 
+	e4~ e16 d-. c-. b-. 
 	a gis a gis a c b a
 % Bars 351 to 355
 	g! b a g fis a g fis

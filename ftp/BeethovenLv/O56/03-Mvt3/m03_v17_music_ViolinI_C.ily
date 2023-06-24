@@ -218,7 +218,7 @@ musicViolinIMvtIII = \relative c' {
 % Bars 186 to 190
 	g8 r r4 r8 \tuplet 3/2 8 {e16(-\tweak X-offset #-5 ^\arco\f fis gis)} 
 	a8 r r4 r
-	<a, g'!>8\p^\pizz r r4 r
+	<a, g'!>8-\offset X-offset -0.5 \p^\pizz r r4 r
 	<a f'>8 r r4 <a g'>8 r
 	<a f'> r r4 r8 \tuplet 3/2 8 {b'16(\f-\tweak X-offset #-5 ^\arco cis dis)}
 % Bars 191 to 195

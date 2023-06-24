@@ -282,7 +282,7 @@ musicViolinIIMvtIII = \relative c' {
 	e' g, e' g, e' d e f g e f g 
 % Bars 251 to 255
 	a f g a d, b d b d b d b
-	<g f'>4(-\tweak X-offset #-2.5 \ff <g e'>8) r <g f'>4(-\tweak X-offset #-2 \sf
+	<g f'>4(-\tweak X-offset #-2.8 \ff <g e'>8) r <g f'>4(-\tweak X-offset #-2.3 \sf
 	<g e'>8) r <g e' c'> r q r
 	q r c r r4
 	r8 e\p r e  r f

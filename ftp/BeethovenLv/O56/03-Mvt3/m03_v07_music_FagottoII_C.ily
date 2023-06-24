@@ -33,12 +33,12 @@ musicFagottoIIMvtIII = \relative c {
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r c8-\tweak X-offset #-3.5 \ff c
+	r4 r c8\ff c
 	c16 g c g c g c g c g c g
 	c g c g c b c d e c d e
 	f d e f g g, b g b g b g
 % Bars 41 to 45
-	g4-\tweak X-offset #0.3 \sf( c8) r d'4\sf(
+	\dynEO #'(0 . 6.5) g4\sf( c8) r \dynEO #'(0 . 1) d'4\sf(
 	c16)\ff b c d e d c b a gis a b
 	c b a g! f e f g a g f e
 	d cis d e f e d c b c d e
@@ -315,7 +315,7 @@ musicFagottoIIMvtIII = \relative c {
 	R \mark \default
 % Bars 326 to 330
 	R
-	\once \offset positions #'(-0.7 . 0) Beam g8-\tweak X-offset #-1 \f g16 g b8 b16 b d8 d16 d
+	\beamOffset #'(0 . 0) g8-\tweak X-offset #-1 \f g16 g b8 b16 b d8 d16 d
 	g8 r r4 r
 	g,8 r r4 r
 	g8 r r4 r

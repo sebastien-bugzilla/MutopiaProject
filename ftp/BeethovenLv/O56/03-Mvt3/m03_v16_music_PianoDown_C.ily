@@ -253,7 +253,7 @@ musicPianoDownMvtIII = \relative c, {
 	c b! c gis a gis a e' f e f cis 
 % Bars 266 to 270
 	d c! b d c b a c b a gis b)
-	a( g! f e d e f e d c b a \clef bass
+	\shape #'((0 . 0)(0 . 0.3)(0 . 0.6)(0 . -2.5)) Slur a( g! f e d e f e d c b a \clef bass
 	g d' f e d c b a g f e d)
 	c8 g, c g c g
 	d' g, d' g, d' g,
@@ -328,7 +328,7 @@ musicPianoDownMvtIII = \relative c, {
 	b8) r r4 r
 % Bars 331 to 335
 	R2. \clef bass
-	<< { b4\fermata r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
+	<< { b4\fermata r r8 \breathe r} {\fermataCentered}>> \bar "||"
 	\time 2/4 R2*3
 	
 	
@@ -439,7 +439,7 @@ musicPianoDownMvtIII = \relative c, {
 % Bars 441 to 445
 	f2\startTrillSpan~
 	\afterGrace f\fermata {e16[\stopTrillSpan f]} \bar "||"
-	\tempo "Tempo I." \time 3/4 g4.( a16 b c8 d)
+	\time 3/4 g4.( a16 b c8 d)
 	\grace {c16[( d]} e4)(~ e16 c g e \clef bass c g e c)
 	R2.*4
 % Bars 446 to 450

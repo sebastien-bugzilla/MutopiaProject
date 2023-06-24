@@ -59,7 +59,7 @@ musicOboeIIMvtIII = \relative c'' {
 	c4. e8[\sf g, b] \mark \default
 	c r r4 r
 	c8 e\sf g, c\sf e, g\sf 
-	c e\sf g, c\sf e, g\sf
+	\beamOffset #'(0.5 . 0.5) c e\sf g, c\sf e, g\sf
 	c, r c' r c r
 % Bars 61 to 65
 	c r r4 r 
@@ -108,7 +108,7 @@ musicOboeIIMvtIII = \relative c'' {
 	R2.*3
 	
 	
-	<>^\atempo R2.*25
+	R2.*25
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -389,10 +389,10 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	e,8\f[ c' c  c c c]
 	d[ d d d d d] \mark \default
-	c4. e8\sf g, b 
+	c4. e8-\offset X-offset -1.5 \sf g, b 
 	c8 r r4 r
 % Bars 461 to 465
-	c4. e8\sf g, b 
+	c4. e8-\offset X-offset -1.5 \sf g, b 
 	c8 r r4 r
 	R2.*2
 	\mark \default

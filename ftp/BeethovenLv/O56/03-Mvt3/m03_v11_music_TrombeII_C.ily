@@ -35,7 +35,7 @@ musicTrombeIIMvtIII = \relative c' {
 	g4 c4. c8
 	c c g\noBeam g4 g8
 % Bars 41 to 45
-	g4 g8 r \voiceOne g4-\tweak X-offset #0.5 \sf_\(
+	g4 g8 r \voiceOne g4-\tweak X-offset #-2.8 \sf_\(
 	c8\) r r4 r 
 	R2.*3
 	
@@ -130,9 +130,9 @@ musicTrombeIIMvtIII = \relative c' {
 	r4 c-\tweak X-offset #-1 \sf c8 r
 	R2.*2
 	
-	\once \override CombineTextScript.X-offset = #1 e8\f e16 e e8 e e e
+	e8-\offset X-offset -2 \f e16 e e8 e e e
 % Bars 166 to 170
-	e\p r r4 r
+	e-\offset X-offset 0.5 \p r r4 r
 	R2.
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4. r8 r4
@@ -241,7 +241,7 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	g2. \mark \default
 % Bars 326 to 330
-	c8-\tweak extra-offset #'(-2.3 . 2) \f g c g' e c 
+	\beamOffset #'(1 . 1) \dynEO #'(-2.3 . 2) c8\f g c g' e c 
 	g r g r g r
 	g r r4 r
 	g8 r r4 r

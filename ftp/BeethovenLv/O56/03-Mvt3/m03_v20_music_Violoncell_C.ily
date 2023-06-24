@@ -10,7 +10,7 @@ musicVioloncellMvtIII = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	\partCombineApart c2.-\tweak extra-offset #'(0.4 . -1) ^\arco-\tweak X-offset #3 ^\semprepp
+	\partCombineApart c2.-\tweak extra-offset #'(0.8 . 0) ^\arco-\tweak X-offset #3 ^\semprepp
 	c
 	c
 	c4 c c
@@ -28,8 +28,8 @@ musicVioloncellMvtIII = \relative c' {
 	e8 r e r r g
 	a r d r r f,
 % Bars 16 to 20
-	g r c r c,8.(\pp^\arco e16
-	g8-.) \partCombineAutomatic r r4 g,8.( b16
+	g r c r \shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur \beamOffset #'(-0.5 . -0.5) c,8.(-\offset X-offset -4 ^\arco e16
+	\stemOffset #-1 g8-.) \partCombineAutomatic r r4 g,8.( b16
 	c8-.) r r4 c8.-. a16-. 
 	d8.-. d16-. d8-. r d-. r
 	g,-. r r4 r
@@ -96,7 +96,7 @@ musicVioloncellMvtIII = \relative c' {
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	\once \override CombineTextScript.X-offset = #-4 g,4^\pizz r r
+	\aIIXoffset #-4 g,4^\pizz r r
 	d r r 
 	d r r
 	g r r
@@ -135,7 +135,7 @@ musicVioloncellMvtIII = \relative c' {
 	
 	
 	
-	\partCombineApart c'2.\pp
+	\partCombineApart c'2._\pp
 	c
 % Bars 121 to 125
 	c
@@ -153,8 +153,8 @@ musicVioloncellMvtIII = \relative c' {
 	e8 r r4 r
 	e8 r e r r g
 	a r d r r f,
-	g r c r c,8.( e16
-	g8-.) \partCombineAutomatic r r4 g,8.( b16
+	g r c r \beamOffset #'(-0.5 . -0.5) \shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur c,8.( e16
+	\stemOffset #-1 g8-.) \partCombineAutomatic r r4 g,8.( b16
 % Bars 136 to 140
 	c8-.) r r4 c8.-. a16-. 
 	d8.-. d16-. d8-. r d-. r

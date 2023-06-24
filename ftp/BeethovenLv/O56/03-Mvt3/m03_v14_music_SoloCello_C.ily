@@ -43,7 +43,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	d-. b'( ais b ais b) b-. d( cis d cis d) b-. f'!( e f e f)}
 	f2_\crescmarkup\startTrillSpan~ f8..( e32)\stopTrillSpan \mark #4
 % Bars 31 to 35
-	\grace {s8.} f2-\tweak extra-offset #'(0 . 1.5) \f\fermata r4
+	\grace {s8.} \dynEO #'(0 . 1.5) f2\f\fermata r4
 	R2.
 	\acciaccatura fis,,8 g\pp \acciaccatura fis g \acciaccatura fis g4 \clef tenor \acciaccatura fis'8 g \acciaccatura fis g
 	g4.\startTrillSpan a16\stopTrillSpan( b c8 d)
@@ -159,7 +159,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	
 	
 	
-	\clef bass \shape #'((0 . -1.5)(0 . 1)(0 . 0.5)(0 . 0)) Slur c,,16-\tweak X-offset #1 _\semprepp( c' e g \clef treble c e g c e dis e c
+	\clef bass \shape #'((0 . -1.5)(0 . 1)(0 . 0.5)(0 . 0)) Slur c,,16-\tweak X-offset #1.5 _\semprepp( c' e g \clef treble c e g c e dis e c
 % Bars 141 to 145
 	b8) r r4 r
 	g,16( b d g b d g fis e dis e c
@@ -170,7 +170,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	g-. b( ais b ais b) g-. d'( cis d cis d) b-. g'( fis g fis g)
 	d-. b'( ais b ais b) b-. d( cis d cis d) b-. f'!( e f e f)}
 	f2_\crescmarkup\startTrillSpan~ f8..( e32)\stopTrillSpan \mark \default
-	\grace {s8.} f2\fermata\f r4
+	\grace {s8.} \dynEO #'(0 . 2) f2\fermata\f r4
 	R2.
 % Bars 151 to 155
 	\acciaccatura fis,,8 g\pp \acciaccatura fis g \acciaccatura fis g4 \clef tenor \acciaccatura fis'8 g \acciaccatura fis g 
@@ -258,7 +258,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	
 	
 	
-	\clef tenor f'2\p(~ f16 e d c
+	\clef tenor \dynEO #'(0 . 1) f'2\p(~ f16 e d c
 % Bars 236 to 240
 	b a g f \clef bass e d c b a g a b)
 	c-. c( e c) g( c e c) g( c e c)
@@ -296,7 +296,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	a a, r d f,[ fis]
 	g r r4 r
 	c,8^\arco\noBeam \clef treble e''[(\trill \grace {d16[ e]} c8)] g'[(\trill \grace {fis16[ g]} e8)] \afterGrace c'\trill( {b16[ c])}
-	\once \override Hairpin.shorten-pair = #'(1 . 1.5) c4(\> b8)\! r r4 \clef bass 
+	\hairpinShorten #'(1 . 1.5) c4(\> b8)\! r r4 \clef bass 
 % Bars 271 to 275
 	g,,8 \clef tenor b'[(\trill \grace {a16[ b]} g8)] d'[(\trill \grace {cis16[ d]} b8]) \afterGrace g'\trill( {fis16[ g)]}
 	f!4( e8) r r4
@@ -371,7 +371,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	R2.*2
 % Bars 331 to 335
 	
-	<< {f'4\fermata-\tweak X-offset #-1.5 \p r r8 \breathe \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
+	<< {f'4\fermata-\tweak X-offset #-1.5 \p r r8 \breathe r } {\fermataCentered} >> \bar "||"
 	\time 2/4 R2*3
 	
 	
@@ -389,7 +389,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	c b a gis a c b a
 	g! b a g fis a g fis \clef tenor
 	e2~
-	e4~ e16-. d-. c-. b-. 
+	e4~ e16 d-. c-. b-. 
 	a gis a gis a c b a
 % Bars 351 to 355
 	g! b a g fis a g fis

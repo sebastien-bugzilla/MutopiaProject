@@ -152,7 +152,7 @@ musicCornoIIMvtIII = \relative c' {
 	e8) r r4 r
 % Bars 161 to 165
 	e4-\tweak X-offset #-1 \sf e8 r r4
-	r c4-\tweak X-offset #-1 \sf c8 r
+	r c4-\tweak X-offset #-1.5 \sf c8 r
 	R2.*2
 	
 	e8\f e16 e e8 e e e
@@ -310,8 +310,8 @@ musicCornoIIMvtIII = \relative c' {
 	
 	\mark \default
 % Bars 326 to 330
-	r8 g\f c g e c 
-	\once \offset positions #'(-0.7 . 0) Beam g' g,16 g g8 g16 g g8 g16 g
+	r8 g-\offset X-offset -2 \f c g e c 
+	\beamOffset #'(-0.7 . 0) g' g,16 g g8 g16 g g8 g16 g
 	d''8 r r4 r
 	g,8 r r4 r
 	g8 r r4 r
@@ -402,7 +402,7 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 441 to 445
 	R2
 	R2\fermata \bar "||"
-	\time 3/4 \tempo "Tempo I." R2.
+	\time 3/4 R2.
 	c'8\f r e, r r4
 	R2.
 % Bars 446 to 450

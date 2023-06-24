@@ -17,7 +17,7 @@ musicFagottoIMvtIII = \relative c' {
 	
 % Bars 16 to 20
 	
-	\partCombineApart r8 g16\pp-. g-. g8-. g-. g-. r
+	\partCombineApart r8 g16_\pp-. g-. g8-. g-. g-. r
 	r8 c16-. c-. c8-. c-. c-. r \partCombineAutomatic
 	R2.*12
 % Bars 21 to 25
@@ -80,10 +80,10 @@ musicFagottoIMvtIII = \relative c' {
 	
 	
 	
-	\clef bass \partCombineApart g8\pp-. d-. g-. d-. g-. d-. 
+	\clef bass \partCombineApart g8_\pp-. d-. g-. d-. g-. d-. 
 % Bars 81 to 85
 	a' d, a' d, a' d, 
-	fis d fis d fis d
+	\beamOffset #'(-0.5 . -0.5) fis d fis d fis d
 	g4 \partCombineAutomatic r r8 a
 	b4 r r8 a
 	b r r4 b8-. c-.
@@ -123,7 +123,7 @@ musicFagottoIMvtIII = \relative c' {
 	
 	
 	
-	\partCombineApart r8 g16-.\pp g-. g8-. g-. g-. r
+	\partCombineApart r8 g16-._\pp g-. g8-. g-. g-. r
 % Bars 136 to 140
 	r8 c16-. c-. c8-. c-. c-. r \partCombineAutomatic
 	R2.*12
@@ -203,12 +203,12 @@ musicFagottoIMvtIII = \relative c' {
 	
 	
 	
-	\partCombineApart r8 g16\pp g g8 g g g
+	\partCombineApart r8 g16-\offset X-offset -1 \pp g g8 g g g
 	g r e r r4 \partCombineAutomatic
 % Bars 211 to 215
 	R2.*5
 % Bars 216 to 220
-	\partCombineApart r8 d'16\pp d d8 d d d \partCombineAutomatic
+	\partCombineApart r8 \beamOffset #'(-0.3 . -0.3) d'16-\offset X-offset -1 \pp d d8 d d d \partCombineAutomatic
 	R2.*5
 % Bars 221 to 225
 	\mark \default
@@ -260,7 +260,7 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 271 to 275
 	
 	
-	\partCombineApart c8\pp-. g-. c-. g-. c-. g-. 
+	\partCombineApart \beamOffset #'(-0.3 . -0.3) c8_\pp-. g-. c-. g-. c-. g-. 
 	d'-. g,-. d'-. g,-. d'-. g,-. 
 	d'-. g,-. b-. g-. b-. g-. 
 % Bars 276 to 280
@@ -278,7 +278,7 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 286 to 290
 	e\f r g, r g r
 	g2.\p
-	\partCombineApart g8-\tweak X-offset #-1 \f\noBeam b8-\tweak extra-offset #'(-1 . -2) \trill([ \grace {a16[ b]} g8)] d'-\tweak extra-offset #'(-1 . -2) \trill([ \grace {cis16[ d]} b8]) \afterGrace g'8-\tweak extra-offset #'(-1 . -2.5) \trill {fis16[ g]}
+	\partCombineApart g8\noBeam b8-\tweak extra-offset #'(-1 . -2) \trill([ \grace {a16[ b]} g8)] d'-\tweak extra-offset #'(-1 . -2) \trill([ \grace {cis16[ d]} b8]) \afterGrace g'8-\tweak extra-offset #'(-1 . -2.5) \trill {fis16[ g]}
 	f!4\p( e8) r r4 \partCombineAutomatic
 	R2.*9
 % Bars 291 to 295
@@ -314,7 +314,7 @@ musicFagottoIMvtIII = \relative c' {
 	g~
 	g_\crescmarkup \mark \default
 % Bars 326 to 330
-	c8\f-. g-. c-. g-. e-. c-. 
+	\beamOffset #'(-1 . -1) c8-\offset X-offset -1 \f-. g-. c-. g-. e-. c-. 
 	\once \offset positions #'(-0.7 . 0) Beam g' g,16 g b8 b16 b d8 d16 d
 	g8 \partCombineAutomatic r r4 r
 	\once \partCombineApart g,8 r r4 r
@@ -426,7 +426,7 @@ musicFagottoIMvtIII = \relative c' {
 	
 % Bars 456 to 460
 	
-	c4. e32[( g16.-.]) g32[( e16.-.]) e32[( c16.-.])
+	c4. \beamOffset #'(-0.5 . -0.5) e32[( g16.-.]) \beamOffset #'(-0.5 . -0.5) g32[( e16.-.]) \beamOffset #'(-0.5 . -0.5) e32[( c16.-.])
 	c32[( b16.-.]) b4 b32[( d16.-.]) d32([ b16.-.]) b32[( g16.-.)] \mark \default
 	c4. e8-.-\tweak X-offset #-2.7 \sf g,-. b-.
 	c8 r r4 r

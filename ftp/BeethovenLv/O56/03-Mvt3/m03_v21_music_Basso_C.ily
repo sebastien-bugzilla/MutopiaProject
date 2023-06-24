@@ -17,7 +17,7 @@ musicBassoMvtIII = \relative c {
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	r4 r c8.(\pp^\arco e16
+	r4 r c8.(\pp e16
 	g8-.) r r4 g,8.( b16
 	c8-.) r r4 c8.-. a16-. 
 	d8.-. d16-. d8-. r d-. r
@@ -85,7 +85,7 @@ musicBassoMvtIII = \relative c {
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	\once \override CombineTextScript.X-offset = #-4 g,4^\pizz r r
+	\aIIXoffset #-4 g,4^\pizz r r
 	d r r 
 	d r r
 	g r r
@@ -133,7 +133,7 @@ musicBassoMvtIII = \relative c {
 	
 	
 	
-	r4 r c8.(\pp^\arco e16
+	r4 r c8.(\pp-\offset X-offset -3 ^\arco e16
 	g8-.) r r4 g,8.( b16
 % Bars 136 to 140
 	c8-.) r r4 c8.-. a16-. 

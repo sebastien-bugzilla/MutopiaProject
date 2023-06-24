@@ -35,6 +35,7 @@
 %		\RemoveAllEmptyStaves
 		%\override VerticalAxisGroup.remove-first = ##t
 		\override TupletNumber.avoid-slur = #'ignore
+		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 	}
 	\context {
 		\StaffGroup
@@ -47,5 +48,6 @@
 		\override BreathingSign.text = \markup {
 			\musicglyph "scripts.caesura.curved"
 		}
+		\override TrillSpanner.bound-details.right.end-on-accidental = ##f
 	}
 }
