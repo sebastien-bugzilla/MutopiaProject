@@ -6,120 +6,119 @@
 %#                   C U E   V O I C E   F O R   F L A U T O                   #
 %###############################################################################
 cueVoiceFloteMvtI = \relative c' {
-	R1*12
+	s1*12
 	% bar 13 - 18
-	c1\pp -\tweak X-offset #-5 _\markup {Viol.I}
+	\voiceTwo c1\pp -\tweak X-offset #-5 _\markup {Viol.I}
 	b8^( c d8. c16) c4^. c^.
 	e1
 	dis8^( e f8. e16) e4^. e^. 
 	g1
 	fis8^( g a8. g16) g4^. g^.
-	R1*19
+	s1*19
 	% bar 38 - 39
-	e2.-\tweak X-offset #-4.5 ^\markup {Fag.I} c4-\shape #'((0 . 2) (0 . 0) (0 . 0) (0 . 1.5)) (
+	e2.-\tweak X-offset #-4.5 ^\markup {Fag.I} c4(
 	b d c a
-	g) r r2
-	R1*7
+	g) s s2
+	s1*7
 	% bar 48 - 50
-	ees''2.(^\markup {Viol.I} des4)
+	\voiceOne ees''2.(^\markup {Viol.I} des4)
 	c1~^\sf^\>
 	c2(^\pp d!
 	c1)
-	R1*60
+	s1*60
 	% bar 112 - 113
 	r4 g4_~\p^\markup {Cor.I} g8 c_( e g)
 	g8._( f16) e2 f8._( d16)
-	R1*32
+	s1*32
 	% bar 146 - 148
-	\tuplet 3/2 4 {r8 e,_(_\crescmarkup-\tweak X-offset #-1.5 ^\markup {Pf} gis) gis_( b) b_( e) e_( gis) gis_( b) b_(
-	e) e_( b) b_( gis) gis_( e) e_( b) b_( gis) gis_(
+	\tuplet 3/2 4 {\oneVoice r8 e,(_\crescmarkup-\tweak X-offset #-1.5 ^\markup {Pf} gis) gis( b) b( e) e( gis) gis( b) b(
+	e) e( b) b( gis) gis( e) e( b) b( gis) gis(
 	e)\ff b'-. gis-. e'-. b-. gis'-. e-. b'-. gis-. <gis b e>-. q-. q-. }
-	R1*14
+	s1*14
 	% bar 163 - 164
-	r2 r4 e,,^\arco^\markup {Vlc.}^~
+	\voiceTwo r2 r4 e,,^\arco^\markup {Vlc.}^~
 	e cis b8.\noBeam e,16\f-.[ fis8.-. gis16-.]
-	R1*32
+	s1*32
 	% bar 197 - 198
-	r8. e'''16-.-\tweak X-offset #-4 ^\markup {Cor.I} e8.-. e16-. e4-. r
+	\voiceOne r8. e'''16-.-\tweak X-offset #-4 ^\markup {Cor.I} e8.-. e16-. e4-. r
 	r8. c16-. c8.-. c16-. c4-. r
-	R1*24
+	s1*24
 	% bar 223 - 224
 	gis8_\ppcrescpocoapoco^\markup {Viol.I} gis gis gis b b b b
 	d d d d gis gis gis gis
-	R1*53
+	s1*53
 	% bar 278 - 282
 	r2 a,8[_(-\tweak X-offset #-0.5 \p-\tweak X-offset #-3 ^\markup {Ob.I} bes d8. bes16)]
-	R1
+	s1
 	r2 b!8[_(_\semprepp c ees8. c16)]
-	R1
+	s1
 	r2 a8_([ bes des8. bes16)]
-	R1*40
+	s1*40
 	% bar 323 - 324
-	r16 f^\markup {Vl.conc.} g a b c d e f g a b c d e f
+	\voiceTwo r16 f^\markup {Vl.conc.} g a b c d e f g a b c d e f
 	r b,, c d e f g a b c d e f g a b
-	R1*59
+	s1*59
 	% bar 384 - 385
-	\tuplet 3/2 4 {b,8-\tweak X-offset #-3 ^\markup {\column {Viol. \lower #-1.6 conc}} b_( g) g_( d) d_( b) b_( g) g_( d) d_(
-	b) b'-. g-. d'-. b-. g'-. d-. b'-. g-. d'-. b-. g'-. }
-	R1*14
+	\oneVoice \tuplet 3/2 4 {b,8-\tweak X-offset #-3 ^\markup {\column {Viol. \lower #-1.6 conc}} b( g) g( d) d( \voiceOne b) b_( g) g_( d) d_(
+	b) b'-. g-. d'-. b-. g'-. \oneVoice d-. b'-. g-. d'-. b-. g'-. }
+	s1*14
 	% bar 400 - 401
-	s2 s4-\tweak X-offset #-1 ^\markup {Vlc.} g,,,(~^\arco
+	\voiceOne s2 s4-\tweak X-offset #-1 ^\markup {Vlc.} g,,,(~^\arco
 	g e d8.) g,16[\f-. a8.-. b16]-. 
-	R1*32
+	s1*32
 	% bar 434 - 435
 	g'''8.[-.^\markup {Ob.I} g16-. g8.-. g16]-. g4-. r
 	r8. e16[-. e8.-. e16]-. e4-. r
-	R1*24
+	s1*24
 	% bar 460 - 461
 	b8_\ppcrescpocoapoco^\markup {Viol.I} b b b d d d d
 	f f f f b b b b
-	R1*52
+	s1*52
 	% bar 514 - 515
 	b,,16_(_\crescmarkup-\tweak X-offset #-5 _\markup {Viol.I} c b c) e8._( d16) cis16_( d cis d) f8._( e16)
 	dis_( e dis e) g8._( f16) e_( f e f) a8.-. g16-.
 }
 cueVoiceFloteMvtIII = \relative c'' {
-	R2.*12
+	s2.*12
 	% bar 13 - 17
-	b4.(-\tweak X-offset #-5 ^\markup {Vln.conc} cis16 dis e8 fis)
+	\voiceOne b4.(-\tweak X-offset #-5 ^\markup {Vln.conc} cis16 dis e8 fis)
 	g4( e4. d8)
 	cis( a' d,4. c8)
 	b(\p g' c,) r c,8.(^\markup {Viol.I} e16
 	g8) s s2
-	R2.*73
+	s2.*73
 	% bar 91 - 92
-	d8-\tweak X-offset #-5 ^\markup {Vln.conc}\f d''4-\tweak extra-offset #'(0 . 5)_\sf b8-. g-. e-.
+	d8-\tweak X-offset #-5 ^\markup {Vln.conc}\f \dynEO #'(0 . 5) d''4_\sf b8-. g-. e-.
 	d-. b-. g-. e-. d8._( e32 fis)
-	R2.*38
+	s2.*38
 	% bar 131 - 134
 	b4.(^\markup {Vln.conc} cis16 dis e8 fis)
 	g4( e4. d8)
 	cis( a' d,4. c8)
 	b(\p g' c,) r r4
-	R2.*83
+	s2.*83
 	% bar 218 - 220
-	r8 g'16-\tweak DynamicText.extra-offset #'(0 . 3.5) \pp-\tweak X-offset #-3 ^\markup {Ob.I} g g8 g g g
-	R2.
-	r8 g16-\tweak DynamicText.extra-offset #'(0 . 3.5) \pp g g8 g g g
-	R2.*20
+	r8 \dynEO #'(0 . 3.5) g'16\pp-\tweak X-offset #-3 ^\markup {Ob.I} g g8 g g g
+	s2.
+	r8 \dynEO #'(0 . 3.5) g16\pp g g8 g g g
+	s2.*20
 	% bar 241 - 244
 	g,4.(_\crescmarkup^\markup {Vln.conc} a16 b c8 d)
 	\grace {c16 d} e4( c4. b8)
 	a([ f']) b,( g'4) g8
-	g4(-\tweak DynamicText.extra-offset #'(0 . 4.5)\f c,8) r s4
-	R2.*39
+	\dynEO #'(0 . 4.5) g4(\f c,8) r s4
+	s2.*39
 	% bar 284 - 285
-	g,8\f-\tweak X-offset #-4.5 ^\markup {Vln.conc} g'''4-\tweak extra-offset #'(0 . 5)\sf e8-. c-. a-.
-	g-. e-. c-. a-. g8.( a32 b)
-	R2.*37
+	\oneVoice g,8\f-\tweak X-offset #-2 ^\markup {\column {\lower #1.5 "Vln." "conc"}} \dynEO #'(0 . 4) g'''4\sf e8-. c-. a-.
+	\voiceOne g-. e-. c-. a-. g8.( a32 b)
+	s2.*37
 	% bar 323 - 325
 	r16 fis(^\markup {Pf.} g a b c d e g f! e d)
 	e( g, a b c d e f a g f e
 	d) fis,(_\crescmarkup g <fis a> <g b> <a c> <b d> <c e> <e g> <d f!> <c e> <b d>)
-	R2.*7 \time 2/4
-	R2*52
+	s2.*7 s2*52
 	% bar 385 - 386
-	d'16^\markup {Vln.conc}\p c b c d c b a
+	\oneVoice d'16^\markup {Vln.conc}\p c b c d c b a
 	a^( g) fis^. g^. a^( g) fis^. g^.
 }
 %###############################################################################
@@ -2373,7 +2372,7 @@ cueVoiceSoloCelloMvtI = \relative c {
 % Bars 31 to 35
 	d4-. f2\sf d8.-. c16-.
 	b4-. c2\sf a8.-. fis16-.
-	\partcombineApart \tuplet 3/2 4 {g8\p b d g d b g b d g, b d}
+	\partCombineApart \tuplet 3/2 4 {g8\p b d g d b g b d g, b d}
 	\tuplet 3/2 4 {g, b d g d b g b d e, b' e}
 	\tuplet 3/2 4 {a, c e e, b' e a, c e g, d' g}
 % Bars 36 to 40
@@ -2381,7 +2380,7 @@ cueVoiceSoloCelloMvtI = \relative c {
 	\tuplet 3/2 4 {c,\p e a c a e c e a c, e a}
 	\tuplet 3/2 4 {c,\sfp e a c a e c e a c, e a}
 	\tuplet 3/2 4 {d, g b d, g b d, fis a d cis d}
-	\partcombineAutomatic g,4 g,2_\crescmarkup( a8. b16)
+	\partCombineAutomatic g,4 g,2_\crescmarkup( a8. b16)
 % Bars 41 to 45
 	c4-.\p r c^\pizz c
 	c r r a

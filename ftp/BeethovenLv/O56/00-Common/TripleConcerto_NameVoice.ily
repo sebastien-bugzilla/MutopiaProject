@@ -7,12 +7,17 @@
 %###############################################################################
 nameFloteMvtI = {
 	\set Staff.instrumentName = "Flote"
-	\set Staff.shortInstrumentName = "Fl"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"flute"
+}
+nameFloteMvtII = {
+	\set Staff.instrumentName = "Flote"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }
 nameFloteMvtIII = {
 	\set Staff.instrumentName = "Flote"
-	\set Staff.shortInstrumentName = "Fl"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }
 %###############################################################################

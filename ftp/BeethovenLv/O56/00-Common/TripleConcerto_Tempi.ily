@@ -9,7 +9,7 @@ tempiMvtI = {
 	\tempo "Allegro."
 	s1*513
 	% bar 514
-	\tempo "Piu Allegro."
+	\tempo "Più Allegro."
 }
 tempiMvtII = {
 	\tempo "Largo."
@@ -41,4 +41,101 @@ tempiMvtIII = {
 %###############################################################################
 %#                            T E M P I   P A R T S                            #
 %###############################################################################
+tempiPartMvtI = {
+	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		violinII viola violoncello basso) {
+		\tempo "Allegro."
+	}
+	s1*513
+	%%%%%%%%%%%%%%%%%%%%%%
+	% bar 514
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		violinII viola violoncello basso) {
+		\tempo "Più Allegro."
+	}
+}
+tempiPartMvtII = {
+	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		violinII viola violoncello basso) {
+		\tempo "Largo."
+	}
+}
+tempiPartMvtIII = {
+	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		violinII viola violoncello basso) {
+		\tempo "Rondo alla Polacca."
+	}
+	s2.*105 s4.
+	%%%%%%%%%%%%%%%%%%%%%%
+	% bar 106.5
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		violinII viola violoncello basso) {
+		\tempo \markup {
+			\medium \italic "rallentando"
+		}
+	}
+	s4. s2.*3
+	%%%%%%%%%%%%%%%%%%%%%%
+	% bar 110
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		violinII viola violoncello basso) {
+		\tempo "a tempo"
+	}
+	s2.*189 s4.
+	%%%%%%%%%%%%%%%%%%%%%%
+	% bar 299.5
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		violinII viola violoncello basso) {
+		\tempo \markup {
+			\medium \italic "rallentando"
+		}
+	}
+	s4. s2.*3
+	%%%%%%%%%%%%%%%%%%%%%%
+	% bar 303
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		violinII viola violoncello basso) {
+		\tempo "a tempo"
+	}
+	s2.*29 s2 s8
+	%%%%%%%%%%%%%%%%%%%%%%
+	% bar 332.84
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		violinII viola violoncello basso) {
+		\tempo "Allegro."
+	}
+	s8 s2*109 s4
+	%%%%%%%%%%%%%%%%%%%%%%
+	% bar 442.5
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		violinII viola violoncello basso) {
+		\tempo "adagio"
+	}
+	s4
+	%%%%%%%%%%%%%%%%%%%%%%
+	% bar 443
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		violinII viola violoncello basso) {
+		\tempo "Tempo I."
+	}
+}
 

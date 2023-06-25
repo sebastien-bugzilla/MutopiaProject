@@ -244,11 +244,13 @@ ottavaBracket = #(define-music-function
 
 no = {
 	\undo \omit MultiMeasureRestNumber
+%	\revert MultiMeasureRest.staff-position
 }
 
 
 ni = {
 	\omit MultiMeasureRestNumber
+%	\override MultiMeasureRest.staff-position = #-6
 }
 
 
@@ -283,13 +285,13 @@ attacca = {
 
 
 InCueContext = {
-	\override Beam.beam-thickness = #0.30 % 0.30
+	\override Beam.beam-thickness = #0.35 % 0.30
 	\override StemTremolo.beam-thickness = #0.35 % 0.30
-	\override Beam.length-fraction = #0.67 % 0.8
-	\override Stem.length-fraction = #0.8 % 0.8
+	\override Beam.length-fraction = #0.63 % 0.8
+	\override Stem.length-fraction = #0.63 % 0.8
 %	\override Stem.length = #7
 %	\override Beam.length = #7
-	\set fontSize = #-3 %-3
+	\set fontSize = #-4 %-4
 }
 
 OutCueContext = {
@@ -458,6 +460,25 @@ tupletOffset = #(define-music-function
 	#}
 )
 
+InCueContext = {
+	\override Beam.beam-thickness = #0.30 % 0.30
+	\override StemTremolo.beam-thickness = #0.35 % 0.30
+	\override Beam.length-fraction = #0.67 % 0.8
+	\override Stem.length-fraction = #0.8 % 0.8
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\set fontSize = #-3 %-3
+}
+
+OutCueContext = {
+	\revert Beam.beam-thickness
+	\revert StemTremolo.beam-thickness
+	\revert Beam.length-fraction
+	\revert Stem.length-fraction
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\unset fontSize
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

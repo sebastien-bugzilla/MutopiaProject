@@ -15,20 +15,20 @@
 %###############################################################################
 \version "2.24.1"
 \include "./00-Common/TripleConcerto_Header.ily"
-\include "./00-Common/TripleConcerto_PaperParts.ily"
-\include "./00-Common/TripleConcerto_timeMvt.ily"
-\include "./00-Common/TripleConcerto_OptionParts.ily"
-\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartFlauto.ily"
+\include "./00-Common/TripleConcerto_PaperParts.ily"
+\include "./00-Common/TripleConcerto_LayoutParts.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
+\include "./00-Common/TripleConcerto_Format_Part01_Flauto.ily"
 \include "./01-Mvt1/m01_v01_music_Flote.ily"
-%\include "./03-Mvt3/m03_v01_music_Flote.ily"
+\include "./02-Mvt2/m02_v01_music_Flote.ily"
+\include "./03-Mvt3/m03_v01_music_Flote.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-%\addQuote "cueVoiceFloteMvtI" { \cueVoiceFloteMvtI }
-%\addQuote "cueVoiceFloteMvtIII" { \cueVoiceFloteMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -50,23 +50,23 @@
 				\formatFloteMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameFloteMvtI \musicFloteMvtI
+				\keepWithTag #'(flote) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFloteMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFloteMvtI \musicFloteMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+			piece = \markup { 
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
+			system-count = 24
 		}
 	}
 	\score {
@@ -75,29 +75,20 @@
 				\formatFloteMvtII
 			}
 			\new Voice {
-				\generalOptions \partOptions \nameFloteMvtIII 
-				\timeMvtII \clef treble \key aes \major
-				\override Staff.MultiMeasureRest.space-increment = 3.14
-				R4.*20 \mark \default 
-				R4.*11 \mark \default
-				R4.*12 \mark \default
-				R4.*10
-				\bar "||" \key c \major \time 3/4 \attacca
+				\keepWithTag #'(flote) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFloteMvtII \musicFloteMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
+			ragged-right = ##f
 		}
 	}
 	\score {
@@ -106,23 +97,22 @@
 				\formatFloteMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameFloteMvtIII \musicFloteMvtIII
+				\keepWithTag #'(flote) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFloteMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFloteMvtIII \musicFloteMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }
