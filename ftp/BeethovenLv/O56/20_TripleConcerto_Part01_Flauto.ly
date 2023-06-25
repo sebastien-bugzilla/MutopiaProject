@@ -66,7 +66,6 @@
 			}
 		}
 		\layout {
-			system-count = 24
 		}
 	}
 	\score {
