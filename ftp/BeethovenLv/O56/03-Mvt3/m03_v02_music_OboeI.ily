@@ -16,13 +16,12 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 11 to 15
 	
 	
-	\cueDuring #"cueVoiceOboeIMvtIII" #UP {
-		\ni R2.
-		R
-		R
+	\ni \voiceTwo R2.
+	R
+	R
 % Bars 16 to 20
-		<< R {s2 \textOsp #800 s4^\tutti} >> \no
-		r8 } g16-.\pp g-. g8-. g-. g-. r
+	<< R {s2 \textOsp #800 s4^\tutti} >> \no
+	r8 \oneVoice g16-.\pp g-. g8-. g-. g-. r
 	r8 c16-. c-. c8-. c-. c-. r
 	<>-\tweak X-offset #-1.5 ^\solo R2.*12
 % Bars 21 to 25
@@ -83,10 +82,8 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 76 to 80
 	
 	
-	\cueDuring #"cueVoiceOboeIMvtIII" #UP {
-		\ni \clef bass << \mmrPos #-8 R2. {s8 \clef treble s8 s2}>>
-		R2. \no
-	}
+	\ni \clef bass << \mmrPos #-8 R2. {s8 \clef treble s8 s2}>>
+	\once \voiceTwo R2. \no
 	d2.\pp~
 % Bars 81 to 85
 	d
@@ -112,11 +109,11 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*21
+	R2.*21
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -126,12 +123,10 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	\cueDuring #"cueVoiceOboeIMvtIII" #UP {
-		\ni R2.
-		R
-		R
-		<< R {s2 s4^\tutti} >> \no
-	}
+	\ni \voiceTwo R2.
+	R
+	R
+	<< R {s2 s4-\offset X-offset -1.5 ^\tutti} >> \no \oneVoice 
 	r8 g,16\pp-. g-. g8-.[ g-. g-.] r
 % Bars 136 to 140
 	r8 c16-. c-. c8[-. c-. c]-. r
@@ -188,10 +183,8 @@ musicOboeIMvtIII = \relative c'' {
 	
 % Bars 206 to 210
 	
-	\cueDuring #"cueVoiceOboeIMvtIII" #DOWN {
-		\ni R2.
-		R \no
-	}
+	\ni \voiceOne R2.
+	R \no \oneVoice 
 	r8 g'16\pp g g8[ g g g]
 	g r e r r4
 % Bars 211 to 215
@@ -214,12 +207,10 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	\cueDuring #"cueVoiceOboeIMvtIII" #UP {
-		\ni \mmrPos #-6 R2.
-		R
-		R
-		<<R {s2 s4^\tutti} >> \no
-	}
+	\ni \mmrPos #-6 R2.
+	\voiceTwo R
+	R
+	<<R {s2 s4^\tutti} >> \no \oneVoice 
 	e2\ff~ e8 f
 % Bars 246 to 250
 	e4 e16 d e f g e f g
@@ -245,10 +236,8 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 266 to 270
 	
 % Bars 271 to 275
-	\cueDuring #"cueVoiceOboeIMvtIII" #UP {
-		\ni \clef bass << \mmrPos #4 R2. {s8 \clef treble s8 s2} >>
-		\mmrPos #4 R2. \no
-	}
+	\ni \clef bass << \mmrPos #4 R2. {s8 \clef treble s8 s2} >>
+	\mmrPos #4 R2. \no
 	g2.\pp~
 	g~
 	g
@@ -263,7 +252,7 @@ musicOboeIMvtIII = \relative c'' {
 	a r a r a r
 	a r r4 r8 a\f
 	g r r4 r
-	r g8\p r g r \markYoffset #4.5 \mark \default
+	r g8\p r g r \mark \default
 % Bars 286 to 290
 	g\f r g r  g r
 	g2.\p
@@ -275,17 +264,15 @@ musicOboeIMvtIII = \relative c'' {
 	
 	
 	
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	\tempo "a tempo" R2.*3
+	R2.*3
 % Bars 306 to 310
-	\cueDuring #"cueVoiceOboeIMvtIII" #UP {
-		\ni R2.
-		R \no
-	}
+	\ni \voiceTwo R2.
+	R \no \oneVoice 
 	e2.\pp~
 	e~
 	e4( c e)
@@ -315,7 +302,7 @@ musicOboeIMvtIII = \relative c'' {
 	b8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< {r4 r r8 \breathe \tempo "Allegro." r} {\ni \fermataCentered \no}>> \bar "||"
+	<< {r4 r r8 \breathe r} {\ni \fermataCentered \no}>> \bar "||"
 	\time 2/4 R2*52
 % Bars 336 to 340
 	
@@ -340,11 +327,9 @@ musicOboeIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIMvtIII" #DOWN {
-		\ni \mmrPos #-4 R2
+	\ni \mmrPos #-4 R2
 % Bars 386 to 390
-		\mmrPos #-4 R \no \mark \default
-	}
+	\mmrPos #-4 R \no \mark \default
 	g8(\f^\tutti a16 b c8 d)
 	e4( c8) r
 	R2
@@ -397,8 +382,8 @@ musicOboeIMvtIII = \relative c'' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	\ni R2\fermataMarkup \no \bar "||" 
-	\time 3/4 \tempo "Tempo I." R2.
+	\ni R2\fermata \no \bar "||" 
+	\time 3/4 R2.
 	e8\f r c r r4
 	R2.
 % Bars 446 to 450
@@ -412,7 +397,7 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 456 to 460
 	
 	c8\f[ e e e e e]
-	f[ f f f f f] \markYoffset #4.5 \mark \default
+	f[ f f f f f] \mark \default
 	e4. e8\sf[-. g,-. b]-. 
 	c8 r r4 r
 % Bars 461 to 465

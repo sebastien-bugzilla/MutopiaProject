@@ -16,13 +16,15 @@
 	\context {
 		\Score
 		\override RehearsalMark.font-size = #4
-		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
+		\override RehearsalMark.extra-spacing-width = #'(-0.2 . 0.2)
+		\override RehearsalMark.extra-spacing-height = #'(-inf.0 . +inf.0)
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override BarNumber.font-size = #0.1
 	}
 	\context {
 		\Staff
 		\override SustainPedal.parent-alignment-X = 0
+		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 	}
 	\context {
 		\Voice
@@ -34,6 +36,7 @@
 		\override TupletNumber.avoid-slur = #'ignore
 		\override TupletBracket.bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
+		\override MultiMeasureRest.space-increment = #0
 	}
 }
 %layoutCueVoice = \with {

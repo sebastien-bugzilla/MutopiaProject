@@ -321,8 +321,7 @@ mmrLength = #(define-music-function
 	(length)
 	(number?)
 	#{
-		%\once \override MultiMeasureRest #'minimum-length = #length
-		\once \override MultiMeasureRest.space-increment = #length
+		\once \override MultiMeasureRest.minimum-length = #length
 	#}
 )
 
@@ -481,6 +480,11 @@ OutCueContext = {
 }
 
 
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %aIIExtraOffset = #(define-music-function
@@ -596,10 +600,6 @@ OutCueContext = {
 %		\once \override MultiMeasureRest.staff-position = #(- position 2)
 %	#}
 %)
-
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
 
 %mmrLength = #(define-music-function
 %	(length)

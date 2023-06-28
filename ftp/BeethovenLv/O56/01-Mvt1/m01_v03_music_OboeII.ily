@@ -10,19 +10,17 @@ musicOboeIIMvtI = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>-\tweak X-offset #-2 ^\tutti R1*16
+	<>-\tweak X-offset #-5 ^\tutti R1*16
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R1
-		\mmrPos #-6 R
-		R
-		R \no
-	}
+	\ni \voiceTwo R1
+	\mmrPos #-7 R
+	R
+	\mmrPos #-6 R \no \oneVoice 
 % Bars 21 to 25
 	c2.\ff c4-.
 	c-. c-. c-. c-. 
@@ -43,10 +41,9 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 36 to 40
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni \clef bass R1
-		R 
-		r4 \no \clef treble } b(_\crescmarkup c f,)
+	\ni \clef bass \voiceTwo R1
+	R \no 
+	r4 \oneVoice \clef treble b(_\crescmarkup c f,)
 % Bars 41 to 45
 	e4\p r r2
 	r2 r4 e4(
@@ -59,10 +56,8 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni \clef bass R1
-		R \no \clef treble
-	}
+	\ni \clef bass \voiceTwo R1
+	R \no \clef treble \oneVoice 
 % Bars 56 to 60
 	r8. g,16([\p a8. g16]) g4 r
 	r8. g16([_\crescmarkup a8. g16]) g4 r
@@ -74,11 +69,10 @@ musicOboeIIMvtI = \relative c'' {
 	R1*3
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R1
+	\ni \mmrPos #-6 R1
 % Bars 66 to 70
-		R
-		r8 \no } d4 d d d8~
+	\mmrPos #-6 R \no
+	r8 d4 d d d8~
 	d d4 d d d8
 	d4 r r2
 	R1*4
@@ -104,11 +98,10 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R1
+	\ni \voiceTwo R1
 % Bars 106 to 110
-		\mmrPos #-6 R
-		f4\rest \no } c8\p r r2
+	\mmrPos #-6 R \no
+	\voiceOne r4 \oneVoice c8\p r r2
 	r4 c8 r r2
 	R1*5
 	
@@ -136,9 +129,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 % Bars 131 to 135
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R1 \no
-	}
+	\ni \mmrPos #-7 R1 \no
 	c4-.\f c2( d8. b16)
 	c4 r r2
 	R1*13
@@ -148,10 +139,8 @@ musicOboeIIMvtI = \relative c'' {
 	
 % Bars 146 to 150
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R1
-		R \no \markYoffset #4.5 \mark \default
-	}
+	\ni \voiceTwo R1
+	R \no \mark \default \oneVoice 
 	e2\ff^\tutti b4-. gis-.
 	e-. e-. b'-. gis-.
 % Bars 151 to 155
@@ -162,10 +151,8 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 161 to 165
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni \clef bass R1
-		<<R {s2 s8. s16^\tutti s4} >> \no \clef treble
-	}
+	\ni \clef bass \voiceTwo  R1
+	<<R {s2 s8. s16^\tutti s4} >> \no \clef treble \oneVoice 
 	r8. cis'16-.\f[ b8.-. b16-.] a2~\sf
 % Bars 166 to 170
 	a2~ a8 r r4
@@ -197,11 +184,9 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 221 to 225
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R1
-		R \mark \default \no
-	}
-	a2.\ff-\tweak X-offset #1 ^\tutti a4
+	\ni \voiceTwo R1
+	R \mark \default \no \oneVoice 
+	a2.\ff^\tutti a4
 % Bars 226 to 230
 	c2. bes4
 	bes bes bes bes
@@ -236,7 +221,7 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 271 to 275
 	
 % Bars 276 to 280
-	\markYoffset #4.5 \mark \default
+	\mark \default
 	R1*44
 % Bars 281 to 285
 	
@@ -255,12 +240,10 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 316 to 320
 	
 % Bars 321 to 325
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R1
-		R
-		R
-		R  \mark \default \no
-	}
+	\ni \voiceTwo R1
+	R
+	R
+	R \oneVoice \mark \default \no
 	c1\ff-\tweak X-offset #1 ^\tutti~
 % Bars 326 to 330
 	c4 c8. c16 c4 c
@@ -279,10 +262,8 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 341 to 345
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R1
-		R \no
-	}
+	\ni \voiceTwo R1
+	R \no \oneVoice 
 	c2\f~ c8 r^\solo r4
 % Bars 346 to 350
 	R1
@@ -292,7 +273,7 @@ musicOboeIIMvtI = \relative c'' {
 	R1
 % Bars 351 to 355
 	d2~\f d8 r r4
-	R1 \markYoffset #4.5 \mark #11
+	R1 \mark #11
 	cis2\f~ cis8 r r4
 	R1*15
 	
@@ -304,9 +285,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni \mmrPos #-6 R1 \no
-	}
+	\ni \mmrPos #-7 R1 \no
 	f4-.\f^\tutti f2( g8. e16)
 % Bars 371 to 375
 	f4^\solo r r2
@@ -317,12 +296,10 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R1
-		R \no \mark \default
-	}
+	\ni \voiceTwo R1
+	R \oneVoice \no \mark \default
 % Bars 386 to 390
-	g,2\ff-\tweak X-offset #1.5 ^\tutti d'4-. b-.
+	g,2\ff^\tutti d'4-. b-.
 	g-. g'-. d-. b-.
 	g-. r r2
 	R1
@@ -335,11 +312,9 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni \clef bass R1
+	\ni \clef bass \voiceTwo R1
 % Bars 401 to 405
-		<<R {s2 s8. s16^\tutti s4}>> \no \clef treble
-	}
+	<<R {s2 s8. s16^\tutti s4}>> \oneVoice \no \clef treble
 	r8. e16-.\f[ a,8.-. f16-.] e2~
 	e~ e8 r^\solo r4
 	r d'4(\pp c8) r r4
@@ -351,10 +326,8 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni \clef bass R1
-		R \no \clef treble
-	}
+	\ni \clef bass \voiceTwo R1
+	R \no \oneVoice \clef treble
 	r8. e,16-.\pp e8-. r r8. e16-. e8-. r
 	r8. e16-. e8-. r r8. e16-.[ e8.-. e16-.]
 	f8.-. b16-. b8-. r r8. b16-. b8-. r
@@ -386,12 +359,10 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R1
+	\ni \voiceTwo R1
 % Bars 461 to 465
-		R \mark \default \no
-	}
-	c1\ff-\tweak X-offset #1.5 ^\tutti
+	R \mark \default \no \oneVoice 
+	c1\ff^\tutti
 	g
 	des'
 	c
@@ -408,9 +379,8 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 481 to 485
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R1 \no
-		r2 r4 } c8\pp r
+	\ni \voiceTwo R1 \no
+	r2 r4 \oneVoice c8\pp r
 	b r r4 r b8 r
 % Bars 486 to 490
 	c r r4 r8. c16-.[ c8.-. c16-.] 
@@ -419,7 +389,7 @@ musicOboeIIMvtI = \relative c'' {
 	a8 r r4 r8. a16-.[ a8.-. a16-.] 
 	c8 r r8. c16 c8 r r8. c16
 % Bars 491 to 495
-	b!8 r r8. b16 b8 r r8. b16 \markYoffset #4.5 \mark \default
+	b!8 r r8. b16 b8 r r8. b16 \mark \default
 	bes8.\mf-.[ e16-. e8.-. e16-.] e4 r
 	r8. f16[ f8. f16] f8 r r4
 	R1*20
@@ -433,11 +403,10 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\tempo "Più allegro." \ni \mmrPos #6 <>^\tutti R1 
-		\mmrPos #6 R 
+	\ni \mmrPos #6 <>^\tutti R1 
+	\mmrPos #6 R \no
 % Bars 516 to 520
-		r2 \no } r8. d16\f-.[ f8.-. e16-.] 
+	r2 r8. d16\f-.[ f8.-. e16-.] 
 	d8.-.[ c16-. b8.-. a16-.] b8.-.[ g16-. c8.-. e,16-.] 
 	f4-.\ff r r2 \mark \default
 	g4-.\ff-\tweak X-offset #2 ^\solo r r2

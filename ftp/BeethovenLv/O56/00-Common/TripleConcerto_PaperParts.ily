@@ -9,8 +9,8 @@
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
 	left-margin = 16 \mm
-%	bottom-margin = 16 \mm
 %	annotate-spacing = ##t
+%	indent = 0
 %	first-page-number = 0
 	bookTitleMarkup = \markup {
 		\column {

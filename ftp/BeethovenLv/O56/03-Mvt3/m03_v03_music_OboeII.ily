@@ -17,10 +17,8 @@ musicOboeIIMvtIII = \relative c'' {
 	
 % Bars 16 to 20
 	
-	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni <>-\tweak X-offset #-5 ^\tutti R2.
-		R \no
-	}
+	\ni <>-\tweak X-offset #-4 ^\tutti \voiceTwo R2.
+	R \no \oneVoice 
 	<>-\tweak X-offset #-1.5 ^\solo R2.*12
 % Bars 21 to 25
 	
@@ -80,10 +78,8 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 76 to 80
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni \clef bass << \mmrPos #-8 R2. {s8 \clef treble s8 s2 } >>
-		R2. \no
-	}
+	\ni \clef bass \voiceTwo << \mmrPos #-8 R2. {s8 \clef treble s8 s2 } >>
+	R2. \no \oneVoice 
 	b2.\pp(
 % Bars 81 to 85
 	c)
@@ -100,7 +96,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 91 to 95
 	b! r r4 r
 	r b8\p r c r \mark \default
-	b\f[ b b b b b]
+	\stemUp b\f[ b b b b b] \stemNeutral
 	c2.\p
 	a2\f~ a8 fis
 % Bars 96 to 100
@@ -108,11 +104,11 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*25
+	\mmrLength #12 R2.*25
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -126,12 +122,10 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni <>-\tweak X-offset #-4.5 ^\tutti R2.
+	\ni \voiceTwo <>-\tweak X-offset #-4.2 ^\tutti R2.
 % Bars 136 to 140
-		R2. \no
-	}
-	<>-\tweak X-offset #-1.5 ^\solo R2.*12
+	R2. \no \oneVoice 
+	<>-\tweak X-offset #-1.5 ^\solo \mmrnDown R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -189,13 +183,11 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 216 to 220
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni R2.
-		R2.
-		R2.
+	\ni \voiceTwo R2.
+	R2.
+	R2.
 % Bars 221 to 225
-		R2. \mark \default \no
-	}
+	R2. \mark \default \no \oneVoice 
 	e8-.\f[ g-. c-. g-. e-. c-.]
 	g' r r4 r
 	R2.*17
@@ -206,12 +198,10 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni \mmrPos #-6 R2.
-		R
-		R
-		<< R {s2 \textOsp #800 s4^\tutti} >> \no
-	}
+	\ni \voiceTwo \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	<< R {s2 \textOsp #800 s4^\tutti} >> \no \oneVoice 
 	c2\ff~ c8 d
 % Bars 246 to 250
 	c4 e,16 d e f g e f g
@@ -237,10 +227,8 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 266 to 270
 	
 % Bars 271 to 275
-	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni \clef bass << \mmrPos #4 R2. {s8 \clef treble s8 s2}>>
-		\mmrPos #4 R2. \no
-	}
+	\ni \clef bass << \mmrPos #4 R2. {s8 \clef treble s8 s2}>>
+	\mmrPos #4 R2. \no
 	e2.\pp(
 	f)~
 	f8[ b,-. d-. b-. d-. b]-. 
@@ -267,12 +255,12 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	r4 r8 r_\rallentando r4
+	r4 r8 r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	\tempo "a tempo" R2.*5
+	R2.*5
 % Bars 306 to 310
 	
 	
@@ -295,20 +283,18 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni R2.
-		R \mark \default
+	\ni \voiceTwo R2.
+	R \mark \default
 % Bars 326 to 330
-		R2. \no
-	}
+	R2. \no \oneVoice 
 	g8\f g16 g b8 b16 b d8 d16 d
 	d8 r r4 r
 	b8 r r4 r
 	f8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< { r4 r r8 \breathe \tempo "Allegro." r } {\ni \fermataCentered \no} >> \bar "||"
-	\time 2/4 R2*51
+	<< { r4 r r8 \breathe r } {\ni \fermataCentered \no} >> \bar "||"
+	\time 2/4 \mmrLength #15 R2*51
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -331,13 +317,11 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni R2
-		R
+	\ni \voiceTwo R2
+	R
 % Bars 386 to 390
-		R \mark \default \no
-	}
-	e8(\f-\tweak X-offset #1.8 ^\tutti f16 e e8 f)
+	R \mark \default \no \oneVoice 
+	e8(-\offset X-offset -1.5 \f^\tutti f16 e e8 f)
 	g4( e8) r
 	R2
 	r4 g8 g
@@ -389,8 +373,8 @@ musicOboeIIMvtIII = \relative c'' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	\ni R2\fermataMarkup \no \bar "||" 
-	\time 3/4 \tempo "Tempo I." R2.
+	\ni R2\fermata \no \bar "||" 
+	\time 3/4 R2.
 	c8\f r c r r4
 	R2.
 % Bars 446 to 450
@@ -404,11 +388,9 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni R2.
+	\ni \voiceTwo R2.
 % Bars 456 to 460
-		R \no
-	}
+	R \no \oneVoice 
 	e,8\f[ c' c  c c c]
 	d[ d d d d d] \mark \default
 	c4. e8\sf[-. g,-. b]-. 

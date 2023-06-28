@@ -123,7 +123,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 442.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
+	\tag #'(clarinetI clarinetII fagottoI fagottoII cornoI 
 		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
 		violinII viola violoncello basso) {
 		\tempo "adagio"
