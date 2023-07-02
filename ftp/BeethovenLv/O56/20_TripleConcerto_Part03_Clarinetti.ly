@@ -13,30 +13,25 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.20.0"
+\version "2.24.1"
 \include "./00-Common/TripleConcerto_Header.ily"
-\include "./00-Common/TripleConcerto_PaperParts.ily"
-\include "./00-Common/TripleConcerto_timeMvt.ily"
-\include "./00-Common/TripleConcerto_OptionParts.ily"
-\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartClarinetti.ily"
+\include "./00-Common/TripleConcerto_PaperParts.ily"
+\include "./00-Common/TripleConcerto_LayoutParts.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
+\include "./00-Common/TripleConcerto_Format_Part03_Clarinetti.ily"
 \include "./01-Mvt1/m01_v04_music_ClarinetI.ily"
-\include "./01-Mvt1/m01_v05_music_ClarinetII.ily"
 \include "./02-Mvt2/m02_v04_music_ClarinetI.ily"
-\include "./02-Mvt2/m02_v05_music_ClarinetII.ily"
 \include "./03-Mvt3/m03_v04_music_ClarinetI.ily"
+\include "./01-Mvt1/m01_v05_music_ClarinetII.ily"
+\include "./02-Mvt2/m02_v05_music_ClarinetII.ily"
 \include "./03-Mvt3/m03_v05_music_ClarinetII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceClarinetIMvtI" { \cueVoiceClarinetIMvtI }
-\addQuote "cueVoiceClarinetIMvtII" { \cueVoiceClarinetIMvtII }
-\addQuote "cueVoiceClarinetIMvtIII" { \cueVoiceClarinetIMvtIII }
-\addQuote "cueVoiceClarinetIIMvtI" { \cueVoiceClarinetIIMvtI }
-\addQuote "cueVoiceClarinetIIMvtII" { \cueVoiceClarinetIIMvtII }
-\addQuote "cueVoiceClarinetIIMvtIII" { \cueVoiceClarinetIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -58,23 +53,22 @@
 				\formatClarinetIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameClarinetIMvtI \musicClarinetIMvtI
+				\keepWithTag #'(clarinetI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinetIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameClarinetIMvtI \musicClarinetIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -83,23 +77,22 @@
 				\formatClarinetIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameClarinetIMvtII \musicClarinetIMvtII
+				\keepWithTag #'(clarinetI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinetIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameClarinetIMvtII \musicClarinetIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #3.6 \bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -108,23 +101,22 @@
 				\formatClarinetIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameClarinetIMvtIII \musicClarinetIMvtIII
+				\keepWithTag #'(clarinetI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinetIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameClarinetIMvtIII \musicClarinetIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -133,23 +125,22 @@
 				\formatClarinetIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameClarinetIIMvtI \musicClarinetIIMvtI
+				\keepWithTag #'(clarinetII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinetIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameClarinetIIMvtI \musicClarinetIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -158,23 +149,22 @@
 				\formatClarinetIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameClarinetIIMvtII \musicClarinetIIMvtII
+				\keepWithTag #'(clarinetII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinetIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameClarinetIIMvtII \musicClarinetIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #3 \bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -183,23 +173,22 @@
 				\formatClarinetIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameClarinetIIMvtIII \musicClarinetIIMvtIII
+				\keepWithTag #'(clarinetII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinetIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameClarinetIIMvtIII \musicClarinetIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

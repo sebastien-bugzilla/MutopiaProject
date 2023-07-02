@@ -23,11 +23,10 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
-		\ni \mmrPos #-6 R2.
-		R \mark #4 \no
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \mark #4 \no
 % Bars 31 to 35
-		r4 } b\fermata\ff r
+	r4 b\fermata\ff r
 	R2.*5
 % Bars 36 to 40
 	
@@ -69,10 +68,8 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 76 to 80
 	
 	
-	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
-		\ni << \mmrPos #-8 R2. {\clef bass s8 \clef treble s s2} >>
-		R2. \no
-	}
+	\ni << \mmrPos #-8 R2. {\clef bass s8 \clef treble s s2} >>
+	\mmrPos #-6 R2. \no
 	b2.\pp(
 % Bars 81 to 85
 	c)
@@ -92,18 +89,16 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
-	R2.*3
+	r4 r8 r r4
+	\mmrnDown R2.*3
 	
 	
-	<>^\atempo R2.*6
+	R2.*6
 % Bars 111 to 115
 	
 % Bars 116 to 120
-	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
-		\ni \mmrPos #-8 R2.
-		R \no
-	}
+	\ni \mmrPos #-7 R2.
+	\mmrPos #-6 R \no
 	<< c2.~ {s8-\tweak X-offset #-2 \pp\< s s s s s\>}>>
 	c8\! r r4 r
 	R2.*27
@@ -119,10 +114,9 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 % Bars 146 to 150
 	
-	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
-		\ni \mmrPos #-6 R2.
-		R \markYoffset #4.5 \mark \default \no
-		r4 } b'\fermata\ff r
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \mark \default \no
+	r4 b'\fermata\ff r
 	R2.*5
 % Bars 151 to 155
 	
@@ -192,17 +186,13 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
-		\ni R2.
+	\ni \voiceTwo R2.
 % Bars 221 to 225
-		R \no \mark \default
-	}
+	R \oneVoice \no \mark \default
 	c'8\f-. g-. c-. g-. e-. c-. 
 	g' r r4 r
 	R2.
-	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
-		\ni R \no
-	}
+	\ni \mmrPos #-4 R \no
 % Bars 226 to 230
 	fis8 r r4 r
 	r g8 r g r
@@ -215,12 +205,10 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
-		\ni R2.
-		R
-		R
-		<< R {s2  s4^\tutti } >> \no
-	}
+	\ni \voiceTwo R2.
+	R
+	R
+	<< R {s2  s4^\tutti } >> \no \oneVoice 
 	e2\ff~ e8 f
 % Bars 246 to 250
 	e4 c4. c8
@@ -263,7 +251,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	f r f r f r
 	f r r4 r8 ees\f
 	e! r r4 r
-	r4 c'8\p r d r \markYoffset #4.5 \mark \default
+	r4 c'8\p r d r \mark \default
 % Bars 286 to 290
 	c\f r e, r e r
 	R2.
@@ -275,12 +263,12 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	
 	
-	r4 r8 r_\rallentando r4
-	R2.*3
+	r4 r8 r r4
+	\mmrnDown R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*20
+	R2.*20
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -290,11 +278,9 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 321 to 325
 	
 	
-	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
-		\ni R2.
-		R
-		R \no \mark \default
-	}
+	\ni \voiceTwo \mmrPos #-6 R2.
+	R
+	\mmrPos #-6 R \no \oneVoice \mark \default
 % Bars 326 to 330
 	c'8\f-. g-. c-. g-. e-. c-. 
 	g g16 g b8 b16 b d8 d16 d
@@ -303,7 +289,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	d8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< {r4 r r8 \breathe \tempo "Allegro." r } {\ni \fermataCentered \no } >> \bar "||"
+	<< {r4 r r8 \breathe r } {\ni \fermataCentered \no } >> \bar "||"
 	\time 2/4 R2*51
 % Bars 336 to 340
 	
@@ -327,13 +313,11 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceClarinetIIMvtIII" #DOWN {
-		\ni \mmrPos #-4 R2
-		\mmrPos #-4 R
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 386 to 390
-		\mmrPos #-4 R \no \markXoffset #-0.2 \mark \default
-	}
-	e8\f(-\tweak X-offset #1.2 ^\tutti f16 d e8 f)
+	\mmrPos #-4 R \no \mark \default
+	e8\f(^\tutti f16 d e8 f)
 	g4( e8) r
 	R2
 	r4 g8 g
@@ -355,18 +339,16 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 % Bars 411 to 415
 	
-	\markYoffset #4.5 \mark \default
+	\mark \default
 	R2*10
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	
 	
-	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
-		\ni R2
-		R 
-		R \no
-	}
+	\ni \voiceTwo R2
+	R 
+	R \no \oneVoice 
 % Bars 426 to 430
 	c,2\p
 	c8 r r4
@@ -381,8 +363,8 @@ musicClarinetIIMvtIII = \relative c'' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	\ni R2\fermataMarkup \no \bar "||"
-	\time 3/4 \tempo "Tempo I." e8\pp-. e-. e-. e-. e-. e-. 
+	\ni R2\fermata \no \bar "||"
+	\time 3/4 e8\pp-. e-. e-. e-. e-. e-. 
 	e\f r e r r4
 	d8\pp-. d-. d-. d-. d-. d-. 
 % Bars 446 to 450

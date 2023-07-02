@@ -10,7 +10,7 @@ musicClarinetIIMvtII = \relative c'' {
 	\key bes \major
 	\transposition bes
 % Bars 1 to 5
-	<>-\tweak X-offset #-3 ^\tutti R4.*19
+	<>-\tweak X-offset #-5 ^\tutti R4.*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,9 +20,7 @@ musicClarinetIIMvtII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceClarinetIIMvtII" #UP {
-		\ni R4. \no \mark \default
-	}
+	\ni \mmrPos #-4 R4. \no \mark \default
 % Bars 21 to 25
 	bes4\p( a16 bes)
 	c8 r c
@@ -44,12 +42,11 @@ musicClarinetIIMvtII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceClarinetIIMvtII" #UP {
-		\ni <>^\tutti R4.
+	\ni <>^\tutti \voiceTwo R4.
 % Bars 41 to 45
-		R
-		R \no
-		r8. } d'8\> d16\! \mark \default
+	R
+	R \no
+	r8. \oneVoice d'8\> d16\! \mark \default
 	cis8\p^\solo r r
 	R4.*9
 % Bars 46 to 50
