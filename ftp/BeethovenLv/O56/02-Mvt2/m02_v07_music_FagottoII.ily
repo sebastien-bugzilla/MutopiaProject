@@ -10,7 +10,7 @@ musicFagottoIIMvtII = \relative c' {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*19
+	<>-\tweak X-offset #-5 ^\tutti R4.*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,21 +20,17 @@ musicFagottoIIMvtII = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceFagottoIIMvtII" #UP {
-		\ni R4. \no \mark \default
-	}
+	\ni \voiceTwo \mmrPos #-6 R4. \no \mark \default \oneVoice 
 % Bars 21 to 25
 	aes4(\p g16 aes)
 	bes8 r bes
 	bes(~\noBeam  bes16. g32 aes16. bes32)
 	g8 r r
-	\cueDuring #"cueVoiceFagottoIIMvtII" #UP {
-		\ni \clef treble R4.
+	\ni \clef treble \mmrPos #-6 R4.
 % Bars 26 to 30
-		R
-		R
-		R \no \clef bass
-	}
+	\mmrPos #-6 R
+	\mmrPos #-8 R
+	\mmrPos #-4 R \no \clef bass
 	g4.\pp
 	aes
 % Bars 31 to 35
@@ -42,12 +38,10 @@ musicFagottoIIMvtII = \relative c' {
 	bes8.\sf\> r16\! r8
 	R4.*3
 % Bars 36 to 40
-	\cueDuring #"cueVoiceFagottoIIMvtII" #UP {
-		\ni \clef treble R4.
-		<< R {s8. \clef tenor s8. }>>
-		R4. \clef treble
-		R \no \clef bass
-	}
+	\ni \clef treble \voiceTwo R4.
+	<<\mmrPos #-7 R {s8. \clef tenor s8. }>>
+	R4. \clef treble
+	R \no \clef bass \oneVoice 
 	aes,4.\pp
 % Bars 41 to 45
 	g4.\f\>

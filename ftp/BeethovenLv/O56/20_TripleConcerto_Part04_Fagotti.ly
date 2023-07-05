@@ -13,30 +13,25 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.20.0"
+\version "2.24.1"
 \include "./00-Common/TripleConcerto_Header.ily"
-\include "./00-Common/TripleConcerto_PaperParts.ily"
-\include "./00-Common/TripleConcerto_timeMvt.ily"
-\include "./00-Common/TripleConcerto_OptionParts.ily"
-\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartFagotti.ily"
+\include "./00-Common/TripleConcerto_PaperParts.ily"
+\include "./00-Common/TripleConcerto_LayoutParts.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
+\include "./00-Common/TripleConcerto_Format_PartFagotti.ily"
 \include "./01-Mvt1/m01_v06_music_FagottoI.ily"
-\include "./01-Mvt1/m01_v07_music_FagottoII.ily"
 \include "./02-Mvt2/m02_v06_music_FagottoI.ily"
-\include "./02-Mvt2/m02_v07_music_FagottoII.ily"
 \include "./03-Mvt3/m03_v06_music_FagottoI.ily"
+\include "./01-Mvt1/m01_v07_music_FagottoII.ily"
+\include "./02-Mvt2/m02_v07_music_FagottoII.ily"
 \include "./03-Mvt3/m03_v07_music_FagottoII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceFagottoIMvtI" { \cueVoiceFagottoIMvtI }
-\addQuote "cueVoiceFagottoIMvtII" { \cueVoiceFagottoIMvtII }
-\addQuote "cueVoiceFagottoIMvtIII" { \cueVoiceFagottoIMvtIII }
-\addQuote "cueVoiceFagottoIIMvtI" { \cueVoiceFagottoIIMvtI }
-\addQuote "cueVoiceFagottoIIMvtII" { \cueVoiceFagottoIIMvtII }
-\addQuote "cueVoiceFagottoIIMvtIII" { \cueVoiceFagottoIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -58,23 +53,22 @@
 				\formatFagottoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameFagottoIMvtI \musicFagottoIMvtI
+				\keepWithTag #'(fagottoI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFagottoIMvtI \musicFagottoIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -83,23 +77,22 @@
 				\formatFagottoIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameFagottoIMvtII \musicFagottoIMvtII
+				\keepWithTag #'(fagottoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFagottoIMvtII \musicFagottoIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #6 \bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -108,23 +101,22 @@
 				\formatFagottoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameFagottoIMvtIII \musicFagottoIMvtIII
+				\keepWithTag #'(fagottoI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFagottoIMvtIII \musicFagottoIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -133,23 +125,22 @@
 				\formatFagottoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameFagottoIIMvtI \musicFagottoIIMvtI
+				\keepWithTag #'(fagottoII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFagottoIIMvtI \musicFagottoIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -158,23 +149,22 @@
 				\formatFagottoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameFagottoIIMvtII \musicFagottoIIMvtII
+				\keepWithTag #'(fagottoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFagottoIIMvtII \musicFagottoIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.5 \bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -183,23 +173,22 @@
 				\formatFagottoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameFagottoIIMvtIII \musicFagottoIIMvtIII
+				\keepWithTag #'(fagottoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFagottoIIMvtIII \musicFagottoIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2.7 \bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

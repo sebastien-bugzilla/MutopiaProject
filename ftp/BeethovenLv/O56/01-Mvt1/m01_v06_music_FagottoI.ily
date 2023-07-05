@@ -10,22 +10,20 @@ musicFagottoIMvtI = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>-\tweak X-offset #-3 ^\tutti R1*12
+	<>-\tweak X-offset #-5 ^\tutti R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni \clef treble \mmrPos #4 R1
-		\mmrPos #4 R
-		\mmrPos #4 R
+	\ni \clef treble \mmrPos #4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 16 to 20
-		\mmrPos #6 R
-		\mmrPos #4 R
-		\mmrPos #8 R \clef bass \no
-	}
-	c1\f\cresc
+	\mmrPos #6 R
+	\mmrPos #4 R
+	\mmrPos #8 R \clef bass \no
+	c1-\offset X-offset -2 \f\cresc
 	b8([ c d8. c16]) c4-. c-.
 % Bars 21 to 25
 	f2.\ff c4-.
@@ -108,12 +106,11 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni \clef treble R1
-		R
+	\ni \clef treble \voiceTwo R1
+	R
 % Bars 106 to 110
-		\mmrPos #-6 R \no
-		e''4\rest \clef bass } e,8\p r r2
+	\mmrPos #-6 R \no
+	\voiceOne r4 \oneVoice \clef bass e'8\p r r2
 	r4 f8 r r2
 	R1*5
 % Bars 111 to 115
@@ -125,7 +122,7 @@ musicFagottoIMvtI = \relative c' {
 % Bars 116 to 120
 	d-. d-. \acciaccatura e8 d8.([ c16 d8. e16])
 	c2~ c8 g-. e-. g-. \mark \default
-	c,\p-\tweak X-offset #1 ^\solo r r4 r2
+	c,\p^\solo r r4 r2
 	R1*6
 % Bars 121 to 125
 	
@@ -150,11 +147,9 @@ musicFagottoIMvtI = \relative c' {
 	
 % Bars 146 to 150
 	
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni R1
-		\mmrPos #-6 R \no \markXoffset #-0.2 \mark \default
-	}
-	e'2\ff-\tweak X-offset #1 ^\tutti b'4-. gis-.
+	\ni \mmrPos #-4 R1
+	\mmrPos #-6 R \no \mark \default
+	e'2\ff^\tutti b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
 	e-.^\solo r r2
@@ -164,10 +159,8 @@ musicFagottoIMvtI = \relative c' {
 % Bars 161 to 165
 	
 	
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni R1
-		<< R {s2. s4^\tutti}>> \no
-	}
+	\ni \voiceTwo R1
+	<< R {s2. s4^\tutti}>> \no \oneVoice
 	r8. e''16\f[-. d8.-. b16-.] a2\sf(~
 % Bars 166 to 170
 	a8.[ cis16 a8. cis16]) a8 r^\solo r4
@@ -187,11 +180,9 @@ musicFagottoIMvtI = \relative c' {
 	\mark \default
 	R1*2
 % Bars 196 to 200
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni R1
-		R
-		R \no
-	}
+	\ni \voiceTwo R1
+	R
+	R \no \oneVoice 
 	r8. a16[-.\p a8.-. a16]-. a4 r
 	r4 r8. a16-. a4-. r8. a16-.
 % Bars 201 to 205
@@ -206,11 +197,9 @@ musicFagottoIMvtI = \relative c' {
 % Bars 221 to 225
 	
 	
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni \clef treble R1
-		R \clef bass \no \markXoffset #-0.3 \mark \default
-	}
-	a2.\ff-\tweak X-offset #0.7 ^\tutti a4(
+	\ni \clef treble \voiceTwo R1
+	R \clef bass \no \oneVoice \mark \default
+	a2.\ff^\tutti a4(
 % Bars 226 to 230
 	c2. bes4)
 	g4-. g-. \acciaccatura a8 g8.[( f16 g8. a16)]
@@ -243,16 +232,14 @@ musicFagottoIMvtI = \relative c' {
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni R1
-		R \no
-	}
-	a1\pp~^\one
-	a~^\two
-	a~^\three
+	\ni \voiceTwo R1
+	R \no \oneVoice 
+	a1\pp~
+	a~
+	a~
 % Bars 271 to 275
-	a~^\four
-	a~^\five
+	a~
+	a~
 	a4 r r2
 	R1*3
 	
@@ -295,10 +282,8 @@ musicFagottoIMvtI = \relative c' {
 	
 % Bars 321 to 325
 	
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni << \mmrPos #-8 R1 {s2 \clef treble s \clef bass}>>
-		R1 \no
-	}
+	\ni << \mmrPos #-8 R1 {s2 \clef treble s \clef bass}>>
+	\mmrPos #-4 R1 \no
 	g'1_\crescmarkup \mark \default
 	c,2(\ff^\tutti b8[ c e8. d16])
 % Bars 326 to 330
@@ -360,12 +345,10 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni R1
-		R \no \mark \default
-	}
+	\ni \voiceTwo R1
+	\mmrPos #-7 R \oneVoice \no \mark \default
 % Bars 386 to 390
-	g2\ff-\tweak X-offset #1.2 ^\tutti d'4-. b-.
+	g2\ff^\tutti d'4-. b-.
 	g-. g-. d-. b-.
 	g-.^\solo r r2
 	R1*11
@@ -376,11 +359,9 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni R1
+	\ni \voiceTwo R1
 % Bars 401 to 405
-		R \no
-	}
+	\mmrPos #-6 R \no \oneVoice 
 	r8. g'16[\f-.^\tutti a8.-. b16]-. c2~
 	c4 c~ c8 r^\solo r4
 	r f(\pp e8) r r4
@@ -396,11 +377,10 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni \clef treble R1
+	\ni \clef treble \voiceTwo R1
 % Bars 426 to 430
-		R \no
-		r2 \clef bass } r8. b16[\pp-. b8.-. b16]-. 
+	R \no \oneVoice 
+	r2 \clef bass r8. b16[\pp-. b8.-. b16]-. 
 	c4 r r8. g16[-. g8.-. g16]-. 
 	a4 r r2
 	R1 \mark \default
@@ -419,11 +399,9 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni \clef treble R1
+	\ni \clef treble \voiceTwo R1
 % Bars 461 to 465
-		R \clef bass \no \mark \default
-	}
+	R \clef bass \oneVoice \no \mark \default
 	ees'1\ff^\tutti
 	ees
 	ees
@@ -445,10 +423,9 @@ musicFagottoIMvtI = \relative c' {
 % Bars 481 to 485
 	
 % Bars 486 to 490
-	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni \clef treble R1
-		R \no
-		r2 \clef bass } r8. c'16[\pp-. c8.-. c16]-. 
+	\ni \clef treble \voiceTwo R1
+	R \no
+	r2 \clef bass \oneVoice r8. c'16[\pp-. c8.-. c16]-. 
 	f,8 r r4 r8. f16[-. f8.-. f16]-. 
 	g8 r r4 r2
 % Bars 491 to 495
@@ -466,11 +443,10 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	\tempo "Più allegro." \cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni <>^\tutti R1
-		R \no
+	\ni <>^\tutti \voiceTwo R1
+	R \no
 % Bars 516 to 520
-		r2 } r8. d16\f[-. f8.-. e16]-. 
+	r2 \oneVoice r8. d16\f[-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
 	f4-.\ff r r2 \mark \default
 	g'4-.\ff^\solo r r2
