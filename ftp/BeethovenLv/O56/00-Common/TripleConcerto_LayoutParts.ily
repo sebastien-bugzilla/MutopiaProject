@@ -23,6 +23,7 @@
 	}
 	\context {
 		\Staff
+		\consists #Measure_counter_engraver
 		\override SustainPedal.parent-alignment-X = 0
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 	}

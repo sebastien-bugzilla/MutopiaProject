@@ -14,11 +14,9 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 6 to 10
 	
 	
-	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni R2.
-		R
-		R \no
-	}
+	\ni \voiceTwo R2.
+	\mmrPos #-6 R
+	R \no \oneVoice 
 % Bars 11 to 15
 	e2.\pp~
 	e~
@@ -32,11 +30,10 @@ musicCornoIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni \mmrPos #-6 R2.
-		R \mark #4 \no
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \mark #4 \no
 % Bars 31 to 35
-		r4 } d\ff\fermata r
+	r4 d\ff\fermata r
 	R2.*2
 	
 	c2.\pp~
@@ -82,11 +79,10 @@ musicCornoIMvtIII = \relative c'' {
 	
 % Bars 81 to 85
 	
-	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni \clef bass R2.
-		R
-		R \no
-		r4 r \clef treble } g8\pp-. g-.
+	\ni \clef bass \voiceTwo R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no 
+	r4 r \oneVoice \clef treble g8\pp-. g-.
 % Bars 86 to 90
 	g r r4 g8-. g-.
 	g r g r g r
@@ -112,33 +108,29 @@ musicCornoIMvtIII = \relative c'' {
 	c8 r r4 r
 	R2.
 % Bars 106 to 110
-	r4 r8 r_\rallentando r4
-	R2.*3
+	r4 r8 r r4
+	\mmrnDown R2.*3
 	
 	
-	<>^\atempo R2.*4
+	R2.*4
 % Bars 111 to 115
 	
 	
 	
-	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni \mmrPos #-6 R2.
-		\mmrPos #-6 R
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 116 to 120
-		\mmrPos #-8 R
-		R \no
-	}
-	<< g2.~ {\hairpinLength #6.5 s8\pp\< s s s s s\>} >>
+	\mmrPos #-8 R
+	\mmrPos #-6 R \no
+	<< g2.~ {\hairpinShorten #'(-0.5 . -0.1) s8-\offset X-offset -1 \pp\< s s s s \hairpinShorten #'(0.1 . -0.3) s\>} >>
 	g8\! r r4 r
 	R2.*6
 % Bars 121 to 125
 	
 % Bars 126 to 130
-	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni R2.
-		R
-		R \no
-	}
+	\ni \voiceTwo R2.
+	R
+	R \no \oneVoice 
 	e'2.\pp~
 	e~
 % Bars 131 to 135
@@ -150,10 +142,9 @@ musicCornoIMvtIII = \relative c'' {
 	
 % Bars 146 to 150
 	
-	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni \mmrPos #-6 R2.
-		R \mark \default \no
-		r4 } d\ff\fermata r
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \mark \default \no
+	r4 d\ff\fermata r
 	R2.*2
 % Bars 151 to 155
 	
@@ -235,7 +226,7 @@ musicCornoIMvtIII = \relative c'' {
 	R2.
 	r8 g16\pp g g8 g g g
 % Bars 221 to 225
-	\textLengthOn g2._\crescmarkup~ \markYoffset #4.5 \mark \default \textLengthOff
+	\textLengthOn g2._\crescmarkup~ \mark \default \textLengthOff
 	g4.\f g8-. e-. c-.
 	g r r4 r
 	R2.*17
@@ -246,11 +237,10 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni \mmrPos #-6 R2.
-		R
-		R \no
-		c,4\rest r } g'8\ff^\tutti g
+	\ni \mmrPos #-6 R2.
+	\voiceTwo R
+	R \no
+	r4 r \oneVoice g8\ff^\tutti g
 	c2 c8 g
 % Bars 246 to 250
 	g4 c4. c8
@@ -282,11 +272,10 @@ musicCornoIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni R2.
-		R \no
+	\ni \voiceTwo R2.
+	R \no
 % Bars 281 to 285
-		r4 } r r8 c\p
+	r4 \oneVoice r r8 c\p
 	c r c r c r
 	c r r4 r8 c\f
 	c r r4 r
@@ -306,12 +295,12 @@ musicCornoIMvtIII = \relative c'' {
 	c r r4 r8 c
 	c r r4 r
 	R2.
-	r4 r8 r_\rallentando r4
-	R2.*3
+	r4 r8 r r4
+	\mmrnDown R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*4
+	R2.*4
 % Bars 306 to 310
 	
 	e2.\pp~
@@ -329,11 +318,9 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 321 to 325
 	
 	
-	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni \mmrPos #-6 R2.
-		\mmrPos #-6 R
-		R \no \mark \default
-	}
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-7 R \no \mark \default
 % Bars 326 to 330
 	r8 g,\f-. c-. g'-. e-. c-. 
 	g' g,16 g g8 g16 g g8 g16 g
@@ -342,7 +329,7 @@ musicCornoIMvtIII = \relative c'' {
 	d8 r r4 r
 % Bars 331 to 335
 	R2.
-	<<{r4 r r8 \breathe \tempo "Allegro." r} {\ni \fermataCentered \no} >> \bar "||"
+	<<{r4 r r8 \breathe r} {\ni \fermataCentered \no} >> \bar "||"
 	\time 2/4 R2*30
 % Bars 336 to 340
 	
@@ -357,13 +344,11 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 361 to 365
 	
 	
-	\cueDuring #"cueVoiceCornoIMvtIII" #DOWN {
-		\ni \mmrPos #-4 R2
-		\mmrPos #-4 R
-		\mmrPos #-4 R
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 366 to 370
-		\mmrPos #-4 R \no
-	}
+	\mmrPos #-4 R \no
 	r8 c4\pp c8
 	r8 c4 c8
 	r d4 d8
@@ -413,12 +398,10 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni R2
-		R
-		R
-		R \no
-	}
+	\ni \voiceTwo R2
+	R
+	R
+	R \no \oneVoice 
 	c2\fp~
 % Bars 426 to 430
 	c~
@@ -430,14 +413,12 @@ musicCornoIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni \mmrPos #4 R2
-		\mmrPos #4 R \mark \default
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \mark \default
 % Bars 441 to 445
-		\mmrPos #-6 R2
-		\mmrPos #-6 R2 \bar "||"
-		\time 3/4 \tempo "Tempo I." R2. \no
-	}
+	\mmrPos #-6 R2
+	\mmrPos #-6 R2 \bar "||"
+	\time 3/4 \mmrPos #-4 R2. \no
 	e8\f r c r r4
 	R2.
 % Bars 446 to 450

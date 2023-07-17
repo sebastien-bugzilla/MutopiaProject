@@ -152,11 +152,7 @@ nameCornoIMvtI = {
 			\lower #1 "Corno I" "in C"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cor I" "in C"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameCornoIMvtII = {
@@ -165,11 +161,7 @@ nameCornoIMvtII = {
 			\lower #1 "Corno I" \concat { "in E " \lower #-0.5 \tiny \flat }
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cor I" \concat { "in E " \lower #-0.5 \tiny \flat }
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameCornoIMvtIII = {
@@ -178,11 +170,7 @@ nameCornoIMvtIII = {
 			\lower #1 "Corno I" "in C"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cor I" "in C"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameCornoIIMvtI = {
@@ -191,11 +179,7 @@ nameCornoIIMvtI = {
 			\lower #1 "Corno II" "in C"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cor II" "in C"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameCornoIIMvtII = {
@@ -204,11 +188,7 @@ nameCornoIIMvtII = {
 			\lower #1 "Corno II" \concat { "in E " \lower #-0.5 \tiny \flat }
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cor II" \concat { "in E " \lower #-0.5 \tiny \flat }
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameCornoIIMvtIII = {
@@ -217,11 +197,7 @@ nameCornoIIMvtIII = {
 			\lower #1 "Corno II" "in C"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cor II" "in C"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 %###############################################################################

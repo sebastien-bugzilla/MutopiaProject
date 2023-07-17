@@ -13,30 +13,26 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.20.0"
+\version "2.24.1"
 \include "./00-Common/TripleConcerto_Header.ily"
-\include "./00-Common/TripleConcerto_PaperParts.ily"
-\include "./00-Common/TripleConcerto_timeMvt.ily"
-\include "./00-Common/TripleConcerto_OptionParts.ily"
-\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartCorni.ily"
+\include "./00-Common/TripleConcerto_PaperParts.ily"
+\include "./00-Common/TripleConcerto_LayoutParts.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
+\include "./00-Common/TripleConcerto_Format_Part05_Corni.ily"
+\include "./00-Common/TripleConcerto_Format_temp.ily"
 \include "./01-Mvt1/m01_v08_music_CornoI.ily"
-\include "./01-Mvt1/m01_v09_music_CornoII.ily"
 \include "./02-Mvt2/m02_v08_music_CornoI.ily"
-\include "./02-Mvt2/m02_v09_music_CornoII.ily"
 \include "./03-Mvt3/m03_v08_music_CornoI.ily"
+\include "./01-Mvt1/m01_v09_music_CornoII.ily"
+\include "./02-Mvt2/m02_v09_music_CornoII.ily"
 \include "./03-Mvt3/m03_v09_music_CornoII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceCornoIMvtI" { \cueVoiceCornoIMvtI }
-\addQuote "cueVoiceCornoIMvtII" { \cueVoiceCornoIMvtII }
-\addQuote "cueVoiceCornoIMvtIII" { \cueVoiceCornoIMvtIII }
-\addQuote "cueVoiceCornoIIMvtI" { \cueVoiceCornoIIMvtI }
-\addQuote "cueVoiceCornoIIMvtII" { \cueVoiceCornoIIMvtII }
-\addQuote "cueVoiceCornoIIMvtIII" { \cueVoiceCornoIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -58,24 +54,22 @@
 				\formatCornoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameCornoIMvtI \musicCornoIMvtI
+				\keepWithTag #'(cornoI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameCornoIMvtI \musicCornoIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			system-count = #33
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -84,23 +78,22 @@
 				\formatCornoIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameCornoIMvtII \musicCornoIMvtII
+				\keepWithTag #'(cornoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameCornoIMvtII \musicCornoIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #3.1 \bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -109,23 +102,22 @@
 				\formatCornoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameCornoIMvtIII \musicCornoIMvtIII
+				\keepWithTag #'(cornoI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameCornoIMvtIII \musicCornoIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1.4 \bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -134,23 +126,22 @@
 				\formatCornoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameCornoIIMvtI \musicCornoIIMvtI
+				\keepWithTag #'(cornoII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameCornoIIMvtI \musicCornoIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -159,23 +150,22 @@
 				\formatCornoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameCornoIIMvtII \musicCornoIIMvtII
+				\keepWithTag #'(cornoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameCornoIIMvtII \musicCornoIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #4.2 \bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -184,23 +174,22 @@
 				\formatCornoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameCornoIIMvtIII \musicCornoIIMvtIII
+				\keepWithTag #'(cornoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameCornoIIMvtIII \musicCornoIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1.5 \bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

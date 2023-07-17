@@ -85,8 +85,8 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 110
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flote oboeI oboeII     cornoI 
-		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+	\tag #'(flote oboeI oboeII      
+		 trombeI trombeII timpani soloViolin soloCello piano violinI
 		violinII viola violoncello basso) {
 		\tempo "a tempo"
 	}
@@ -94,7 +94,7 @@ tempiPartMvtIII = {
 		\tempoXoffset #-2.5 
 		\tempo "a tempo"
 	}
-	\tag #'(fagottoI fagottoII) {
+	\tag #'(fagottoI fagottoII cornoI cornoII) {
 		\tempoXoffset #-2
 		\tempo "a tempo"
 	}
@@ -113,8 +113,8 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 303
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flote oboeI oboeII cornoI 
-		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+	\tag #'(flote oboeI oboeII  
+		 trombeI trombeII timpani soloViolin soloCello piano violinI
 		violinII viola violoncello basso) {
 		\tempo "a tempo"
 	}
@@ -122,7 +122,7 @@ tempiPartMvtIII = {
 		\tempoXoffset #-2.5
 		\tempo "a tempo"
 	}
-	\tag #'(fagottoI fagottoII) {
+	\tag #'(fagottoI fagottoII cornoI cornoII) {
 		\tempoXoffset #-2
 		\tempo "a tempo"
 	}
@@ -130,12 +130,12 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 332.84
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flote oboeI oboeII cornoI 
-		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+	\tag #'(flote oboeI oboeII  
+		 trombeI trombeII timpani soloViolin soloCello piano violinI
 		violinII viola violoncello basso) {
 		\tempo "Allegro."
 	}
-	\tag #'(clarinetI clarinetII fagottoI fagottoII) {
+	\tag #'(clarinetI clarinetII fagottoI fagottoII cornoI cornoII) {
 		\tempoXoffset #-1 
 		\tempo "Allegro."
 	}
@@ -143,12 +143,12 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 442.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  cornoI 
-		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+	\tag #'(   
+		trombeI trombeII timpani soloViolin soloCello piano violinI
 		violinII viola violoncello basso) {
 		\tempo "adagio"
 	}
-	\tag #'(fagottoI fagottoII) {
+	\tag #'(fagottoI fagottoII cornoI cornoII) {
 		\tempo \markup {
 			\medium \italic "adagio"
 		}
