@@ -10,19 +10,17 @@ musicTrombeIIMvtI = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>-\tweak X-offset #-2 ^\tutti R1*16
+	<>-\tweak X-offset #-5 ^\tutti R1*16
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
-	\cueDuring #"cueVoiceTrombeIIMvtI" #UP {
-		\ni R1
-		\mmrPos #-6 R
-		R
-		R \no
-	}
+	\ni \voiceTwo R1
+	\mmrPos #-7 R
+	R
+	R \no \oneVoice 
 % Bars 21 to 25
 	c1\f~
 	c4 c-. c-. c-.
@@ -51,11 +49,9 @@ musicTrombeIIMvtI = \relative c' {
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	\cueDuring #"cueVoiceTrombeIIMvtI" #UP {
-		\ni R1
-		R
-		R \no
-	}
+	\ni \voiceTwo R1
+	R
+	R \no \oneVoice 
 	r8. c16\f c4 r8. c16 c4
 	r8. c16[-. c8.-. c16]-. c8.[-. c16-. c8.-. c16]-. 
 % Bars 61 to 65
@@ -94,18 +90,16 @@ musicTrombeIIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceTrombeIIMvtI" #DOWN {
-		\ni \mmrPos #-4 R1
+	\ni \mmrPos #-4 R1
 % Bars 111 to 115
-		\mmrPos #-4 R
-		\mmrPos #-4 R
-		\mmrPos #-4 R \no
-	}
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	c1\ff^\tutti
 	g
 % Bars 116 to 120
 	g
-	g2~ g8 c-. c-. c-. \markYoffset #4.5 \mark \default
+	g2~ g8 c-. c-. c-. \mark \default
 	c\p^\solo r r4 r2
 	R1*10
 % Bars 121 to 125
@@ -114,12 +108,10 @@ musicTrombeIIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceTrombeIIMvtI" #UP {
-		\ni R1
-		R
+	\ni \mmrPos #-7 \voiceTwo R1
+	R
 % Bars 131 to 135
-		R \no
-	}
+	\mmrPos #-7 R \no \oneVoice 
 	r4 c\f c g
 	g r r2
 	R1*12
@@ -128,12 +120,10 @@ musicTrombeIIMvtI = \relative c' {
 % Bars 141 to 145
 	
 % Bars 146 to 150
-	\cueDuring #"cueVoiceTrombeIIMvtI" #UP {
-		\ni R1 
-		R
-		R \no \markXoffset #-0.3 \mark \default
-	}
-	e'2\ff-\tweak X-offset #1 ^\tutti e4-. e-.
+	\ni \voiceTwo R1 
+	R
+	R \no \oneVoice \mark \default
+	e'2\ff^\tutti e4-. e-.
 	e-. e-. e-. e-.
 % Bars 151 to 155
 	e-.^\solo r r2
@@ -170,11 +160,9 @@ musicTrombeIIMvtI = \relative c' {
 % Bars 221 to 225
 	
 	
-	\cueDuring #"cueVoiceTrombeIIMvtI" #UP {
-		\ni R1
-		R \no \markXoffset #-0.3 \mark \default
-	}
-	c4\ff-\tweak X-offset #1 ^\tutti r r2
+	\ni \voiceTwo R1
+	R \oneVoice \no \mark \default
+	c4\ff^\tutti r r2
 % Bars 226 to 230
 	c4 r r2
 	r4 c r c
@@ -195,7 +183,7 @@ musicTrombeIIMvtI = \relative c' {
 	e-. e-. e-. e-.
 % Bars 241 to 245
 	e r r2
-	<>-\tweak X-offset #-3 ^\solo \mmrLength #0.8 R1*35
+	<>-\tweak X-offset #-3 ^\solo R1*35
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -210,7 +198,7 @@ musicTrombeIIMvtI = \relative c' {
 	
 % Bars 276 to 280
 	\mark \default
-	\mmrLength #0.8 R1*46
+	R1*46
 % Bars 281 to 285
 	
 % Bars 286 to 290
@@ -230,11 +218,9 @@ musicTrombeIIMvtI = \relative c' {
 % Bars 321 to 325
 	
 	
-	\cueDuring #"cueVoiceTrombeIIMvtI" #UP {
-		\ni \mmrPos #-6 R1
-		R \no \mark \default
-	}
-	c1\ff~-\tweak X-offset #0.5 ^\tutti
+	\ni \mmrPos #-6 R1
+	\mmrPos #-4 R \no \mark \default
+	c1\ff~^\tutti
 % Bars 326 to 330
 	c4 c8. c16 c4 c
 	c1~
@@ -252,22 +238,20 @@ musicTrombeIIMvtI = \relative c' {
 % Bars 341 to 345
 	
 	
-	\cueDuring #"cueVoiceTrombeIIMvtI" #DOWN {
-		\ni R1
-		R \no
-	}
+	\ni \voiceOne R1
+	R \no \oneVoice 
 	c,2\f~ c8 r^\solo r4
 % Bars 346 to 350
 	R1
 	c2\ff~ c8 r r4
 	R1
-	c2~-\tweak X-offset #-3.3 \ff c8 r r4
+	c2~\ff c8 r r4
 	R1
 % Bars 351 to 355
 	g2~\f g8 r r4
 	R1 \mark #11
 	g2~\f g8 r r4
-	\mmrLength #0.8 R1*30
+	R1*30
 % Bars 356 to 360
 	
 % Bars 361 to 365
@@ -282,15 +266,13 @@ musicTrombeIIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceTrombeIIMvtI" #UP {
-		\ni R1
-		R \no \markXoffset #-0.3 \mark \default
-	}
+	\ni \mmrPos #-7 R1
+	\mmrPos #-8 R \no \mark \default
 % Bars 386 to 390
-	g2\ff-\tweak X-offset #1 ^\tutti g4-. g-.
+	g2\ff^\tutti g4-. g-.
 	g-. g-. g-. g-.
 	g-.^\solo r r2
-	\mmrLength #0.8 R1*42
+	R1*42
 % Bars 391 to 395
 	
 % Bars 396 to 400
@@ -310,7 +292,7 @@ musicTrombeIIMvtI = \relative c' {
 	
 	
 	
-	\markYoffset #4.5 \mark \default
+	\mark \default
 % Bars 431 to 435
 	R1*29
 % Bars 436 to 440
@@ -326,12 +308,10 @@ musicTrombeIIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceTrombeIIMvtI" #DOWN {
-		\ni \mmrPos #-6 R1
+	\ni \mmrPos #-6 R1
 % Bars 461 to 465
-		\mmrPos #-4 R \no \markXoffset #-0.2 \mark \default
-	}
-	c4\ff-\tweak X-offset #1.2 ^\tutti r r2
+	\mmrPos #-4 R \no \mark \default
+	c4\ff^\tutti r r2
 	g4 r r2
 	g4 r r2
 	c4 r r2
@@ -342,7 +322,7 @@ musicTrombeIIMvtI = \relative c' {
 	c8.[ c16-. c8.-. c16]-. c8.[-. c16-. c8.-. c16]-. 
 	g4 r^\solo r2
 % Bars 471 to 475
-	\mmrLength #2.8 R1*21
+	R1*21
 % Bars 476 to 480
 	
 % Bars 481 to 485
@@ -362,12 +342,11 @@ musicTrombeIIMvtI = \relative c' {
 	
 	
 	
-	\tempo "Più allegro." \cueDuring #"cueVoiceTrombeIIMvtI" #UP {
-		\ni \mmrPos #4 R1
-		\mmrPos #6 R
+	\ni \mmrPos #4 R1
+	\mmrPos #6 R
 % Bars 516 to 520
-		\mmrPos #4 R \no
-		r2 } r8. g16\f[-. c8.-. c16]-. 
+	\mmrPos #4 R \no
+	r2 r8. g16\f[-. c8.-. c16]-. 
 	c4-.\ff r r2 \mark \default
 	g4-.\ff r r2
 	c4 r r g8 r

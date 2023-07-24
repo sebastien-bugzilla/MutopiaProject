@@ -86,7 +86,7 @@ tempiPartMvtIII = {
 	% bar 110
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flote oboeI oboeII      
-		 trombeI trombeII timpani soloViolin soloCello piano violinI
+		   timpani soloViolin soloCello piano violinI
 		violinII viola violoncello basso) {
 		\tempo "a tempo"
 	}
@@ -94,7 +94,7 @@ tempiPartMvtIII = {
 		\tempoXoffset #-2.5 
 		\tempo "a tempo"
 	}
-	\tag #'(fagottoI fagottoII cornoI cornoII) {
+	\tag #'(fagottoI fagottoII cornoI cornoII trombeI trombeII) {
 		\tempoXoffset #-2
 		\tempo "a tempo"
 	}
@@ -114,7 +114,7 @@ tempiPartMvtIII = {
 	% bar 303
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flote oboeI oboeII  
-		 trombeI trombeII timpani soloViolin soloCello piano violinI
+		   timpani soloViolin soloCello piano violinI
 		violinII viola violoncello basso) {
 		\tempo "a tempo"
 	}
@@ -122,7 +122,7 @@ tempiPartMvtIII = {
 		\tempoXoffset #-2.5
 		\tempo "a tempo"
 	}
-	\tag #'(fagottoI fagottoII cornoI cornoII) {
+	\tag #'(fagottoI fagottoII cornoI cornoII trombeI trombeII) {
 		\tempoXoffset #-2
 		\tempo "a tempo"
 	}
@@ -131,11 +131,11 @@ tempiPartMvtIII = {
 	% bar 332.84
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flote oboeI oboeII  
-		 trombeI trombeII timpani soloViolin soloCello piano violinI
+		   timpani soloViolin soloCello piano violinI
 		violinII viola violoncello basso) {
 		\tempo "Allegro."
 	}
-	\tag #'(clarinetI clarinetII fagottoI fagottoII cornoI cornoII) {
+	\tag #'(clarinetI clarinetII fagottoI fagottoII cornoI cornoII trombeI trombeII) {
 		\tempoXoffset #-1 
 		\tempo "Allegro."
 	}
@@ -144,11 +144,11 @@ tempiPartMvtIII = {
 	% bar 442.5
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(   
-		trombeI trombeII timpani soloViolin soloCello piano violinI
+		  timpani soloViolin soloCello piano violinI
 		violinII viola violoncello basso) {
 		\tempo "adagio"
 	}
-	\tag #'(fagottoI fagottoII cornoI cornoII) {
+	\tag #'(fagottoI fagottoII cornoI cornoII trombeI trombeII) {
 		\tempo \markup {
 			\medium \italic "adagio"
 		}
@@ -158,8 +158,12 @@ tempiPartMvtIII = {
 	% bar 443
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
-		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
+		cornoII trombeI timpani soloViolin soloCello piano violinI
 		violinII viola violoncello basso) {
+		\tempo "Tempo I."
+	}
+	\tag #'(trombeII) {
+		\tempoXoffset #4.5
 		\tempo "Tempo I."
 	}
 }

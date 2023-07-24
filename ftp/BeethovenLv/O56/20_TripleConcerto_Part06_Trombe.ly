@@ -13,26 +13,25 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.20.0"
+\version "2.24.1"
 \include "./00-Common/TripleConcerto_Header.ily"
-\include "./00-Common/TripleConcerto_PaperParts.ily"
-\include "./00-Common/TripleConcerto_timeMvt.ily"
-\include "./00-Common/TripleConcerto_OptionParts.ily"
-\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartTrombe.ily"
+\include "./00-Common/TripleConcerto_PaperParts.ily"
+\include "./00-Common/TripleConcerto_LayoutParts.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
+\include "./00-Common/TripleConcerto_Format_Part06_Trombe.ily"
 \include "./01-Mvt1/m01_v10_music_TrombeI.ily"
-\include "./01-Mvt1/m01_v11_music_TrombeII.ily"
+\include "./02-Mvt2/m02_v10_music_TrombeI.ily"
 \include "./03-Mvt3/m03_v10_music_TrombeI.ily"
+\include "./01-Mvt1/m01_v11_music_TrombeII.ily"
+\include "./02-Mvt2/m02_v11_music_TrombeII.ily"
 \include "./03-Mvt3/m03_v11_music_TrombeII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceTrombeIMvtI" { \cueVoiceTrombeIMvtI }
-\addQuote "cueVoiceTrombeIMvtIII" { \cueVoiceTrombeIMvtIII }
-\addQuote "cueVoiceTrombeIIMvtI" { \cueVoiceTrombeIIMvtI }
-\addQuote "cueVoiceTrombeIIMvtIII" { \cueVoiceTrombeIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -54,53 +53,40 @@
 				\formatTrombeIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTrombeIMvtI \musicTrombeIMvtI
+				\keepWithTag #'(trombeI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTrombeIMvtI \musicTrombeIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatTrombeIMvtII
+				\keepWithTag #'(trombeI) \tempiPartMvtII
 			}
 			\new Voice {
-				\generalOptions \partOptions \nameTrombeIMvtIII 
-				\timeMvtII \clef treble \key aes \major
-				R4.*20 \mark \default 
-				R4.*11 \mark \default
-				R4.*12 \mark \default
-				R4.*10
-				\bar "||" \time 3/4 \key c \major \attacca
+				\timeMvtII \nameTrombeIMvtII \musicTrombeIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 			ragged-right = ##f
 		}
 	}
@@ -110,23 +96,22 @@
 				\formatTrombeIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTrombeIMvtIII \musicTrombeIMvtIII
+				\keepWithTag #'(trombeI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameTrombeIMvtIII \musicTrombeIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -135,53 +120,40 @@
 				\formatTrombeIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTrombeIIMvtI \musicTrombeIIMvtI
+				\keepWithTag #'(trombeII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTrombeIIMvtI \musicTrombeIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatTrombeIIMvtII
+				\keepWithTag #'(trombeII) \tempiPartMvtII
 			}
 			\new Voice {
-				\generalOptions \partOptions \nameTrombeIIMvtIII 
-				\timeMvtII \clef treble \key aes \major
-				R4.*20 \mark \default 
-				R4.*11 \mark \default
-				R4.*12 \mark \default
-				R4.*10
-				\bar "||" \key c \major \time 3/4 \attacca
+				\timeMvtII \nameTrombeIIMvtII \musicTrombeIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 			ragged-right = ##f
 		}
 	}
@@ -191,23 +163,22 @@
 				\formatTrombeIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTrombeIIMvtIII \musicTrombeIIMvtIII
+				\keepWithTag #'(trombeII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameTrombeIIMvtIII \musicTrombeIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

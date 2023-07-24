@@ -23,7 +23,6 @@
 \include "./00-Common/TripleConcerto_CueVoice.ily"
 \include "./00-Common/TripleConcerto_Tempi.ily"
 \include "./00-Common/TripleConcerto_Format_Part05_Corni.ily"
-\include "./00-Common/TripleConcerto_Format_temp.ily"
 \include "./01-Mvt1/m01_v08_music_CornoI.ily"
 \include "./02-Mvt2/m02_v08_music_CornoI.ily"
 \include "./03-Mvt3/m03_v08_music_CornoI.ily"
