@@ -13,22 +13,22 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.20.0"
+\version "2.24.1"
 \include "./00-Common/TripleConcerto_Header.ily"
-\include "./00-Common/TripleConcerto_PaperParts.ily"
-\include "./00-Common/TripleConcerto_timeMvt.ily"
-\include "./00-Common/TripleConcerto_OptionParts.ily"
-\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartTimpani.ily"
+\include "./00-Common/TripleConcerto_PaperParts.ily"
+\include "./00-Common/TripleConcerto_LayoutParts.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
+\include "./00-Common/TripleConcerto_Format_Part07_Timpani.ily"
 \include "./01-Mvt1/m01_v12_music_Timpani.ily"
+\include "./02-Mvt2/m02_v12_music_Timpani.ily"
 \include "./03-Mvt3/m03_v12_music_Timpani.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceTimpaniMvtI" { \cueVoiceTimpaniMvtI }
-\addQuote "cueVoiceTimpaniMvtIII" { \cueVoiceTimpaniMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -50,23 +50,22 @@
 				\formatTimpaniMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTimpaniMvtI \musicTimpaniMvtI
+				\keepWithTag #'(timpani) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTimpaniMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTimpaniMvtI \musicTimpaniMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -75,28 +74,19 @@
 				\formatTimpaniMvtII
 			}
 			\new Voice {
-				\generalOptions \partOptions \nameTimpaniMvtIII 
-				\timeMvtII \clef bass \key aes \major
-				R4.*20 \mark \default 
-				R4.*11 \mark \default
-				R4.*12 \mark \default
-				R4.*10
-				\bar "||" \key c \major \time 3/4 \attacca
+				\keepWithTag #'(timpani) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTimpaniMvtII \musicTimpaniMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 			ragged-right = ##f
 		}
 	}
@@ -106,23 +96,22 @@
 				\formatTimpaniMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTimpaniMvtIII \musicTimpaniMvtIII
+				\keepWithTag #'(timpani) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTimpaniMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameTimpaniMvtIII \musicTimpaniMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

@@ -266,7 +266,16 @@ nameTimpaniMvtI = {
 			\lower #1 "Timpani" "in C G"
 		}
 	}
-	\set Staff.shortInstrumentName = "Timp."
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
+nameTimpaniMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Timpani" "in C G"
+		}
+	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
 nameTimpaniMvtIII = {
@@ -275,7 +284,7 @@ nameTimpaniMvtIII = {
 			\lower #1 "Timpani" "in C G"
 		}
 	}
-	\set Staff.shortInstrumentName = "Timp."
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
 %###############################################################################

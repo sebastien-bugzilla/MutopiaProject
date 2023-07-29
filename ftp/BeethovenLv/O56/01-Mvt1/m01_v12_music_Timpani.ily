@@ -10,30 +10,28 @@ musicTimpaniMvtI = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>-\tweak X-offset #-2 ^\tutti R1*16
+	<>-\tweak X-offset #-5 ^\tutti R1*16
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
-	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
-		\ni \clef treble R1
-		\mmrPos #-6 R
-		R
-		R \no \clef bass
-	}
+	\ni \clef treble \voiceTwo R1
+	\mmrPos #-6 R
+	R
+	R \no \clef bass \oneVoice
 % Bars 21 to 25
-	c1\f\startTrillSpan~
+	\trillSpanPadding #-2 c1\f\startTrillSpan~
 	c4\stopTrillSpan c-. c-. c-.
-	c1~\startTrillSpan
+	\trillSpanPadding #-2 c1~\startTrillSpan
 	c4\stopTrillSpan c-. c-. c-.
-	c1~\startTrillSpan
+	\trillSpanPadding #-2 c1~\startTrillSpan
 % Bars 26 to 30
 	c4\stopTrillSpan c-. c-. c-.
-	g1~\startTrillSpan
+	\trillSpanPadding #-2 g1~\startTrillSpan
 	g4\stopTrillSpan g-. g-. g-.
-	g1~\startTrillSpan
+	\trillSpanPadding #-2 g1~\startTrillSpan
 	g4\stopTrillSpan g-. g-. g-.
 % Bars 31 to 35
 	R1
@@ -72,7 +70,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 71 to 75
 	
 	
-	g1\ff\startTrillSpan
+	\trillSpanPadding #-2 g1\ff\startTrillSpan
 	c4\stopTrillSpan r8. c16 c4 c \mark \default
 	c4 r^\solo r2
 % Bars 76 to 80
@@ -93,28 +91,24 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 111 to 115
 	
-	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
-		\ni \clef treble R1
-		R \no \clef bass
-	}
+	\ni \clef treble \voiceTwo R1
+	R \no \clef bass \oneVoice 
 	c4\ff^\tutti r r2
 	g4 r r2
 % Bars 116 to 120
 	g4 g g g
 	c r r2 \mark \default
-	<>^\solo \mmrLength #2.8 R1*11
+	<>^\solo R1*11
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
 	
 	
-	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
-		\ni \clef treble R1
-		R
+	\ni \clef treble \mmrPos #-8 R1
+	\mmrPos #-4 R
 % Bars 131 to 135
-		R \no \clef bass
-	}
+	\mmrPos #-6 R \no \clef bass
 	r4 c\f c g
 	g r r2
 	R1*15
@@ -159,13 +153,11 @@ musicTimpaniMvtI = \relative c {
 % Bars 216 to 220
 	
 % Bars 221 to 225
-	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
-		\ni \clef treble R1
-		R
-		R
-		R \no \clef bass \markXoffset #-0.2 \mark \default
-	}
-	c4\ff-\tweak X-offset #0.6 ^\tutti r r2
+	\ni \clef treble \voiceTwo R1
+	R
+	R
+	R \no \oneVoice \clef bass \mark \default
+	c4\ff^\tutti r r2
 % Bars 226 to 230
 	c4 r r2
 	c4 r c r
@@ -213,12 +205,10 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 321 to 325
 	
-	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
-		\ni \clef treble R1
-		R
-		R1 \no \clef bass \markXoffset #-0.2 \mark \default 
-	}
-	c4\ff-\tweak X-offset #1 ^\tutti r r2
+	\ni \clef treble \voiceTwo R1
+	R
+	R1 \no \clef bass \oneVoice \mark \default 
+	c4\ff^\tutti r r2
 % Bars 326 to 330
 	c4 c8. c16 c4 c
 	c r r2
@@ -248,8 +238,8 @@ musicTimpaniMvtI = \relative c {
 % Bars 351 to 355
 	g2\f\startTrillSpan~ g8 r\stopTrillSpan r4
 	R1 \mark #11
-	\dynEsw #'(-2 . 0) g2\f\startTrillSpan~ g8 r\stopTrillSpan r4
-	\mmrLength #1.2 R1*30
+	g2\f\startTrillSpan~ g8 r\stopTrillSpan r4
+	R1*30
 % Bars 356 to 360
 	
 % Bars 361 to 365
@@ -264,15 +254,13 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
-		\ni \clef treble R1
-		R \no \clef bass \markXoffset #-0.2 \mark \default
-	}
+	\ni \clef treble \voiceTwo R1
+	\mmrPos #-6 R \no \oneVoice \clef bass \mark \default
 % Bars 386 to 390
-	g4\ff-\tweak X-offset #1.2 ^\tutti r g4-. g-.
+	g4\ff^\tutti r g4-. g-.
 	g-. g-. g-. g-.
 	g-.^\solo r r2
-	\mmrLength #1.5 R1*42
+	R1*42
 % Bars 391 to 395
 	
 % Bars 396 to 400
@@ -294,7 +282,7 @@ musicTimpaniMvtI = \relative c {
 	
 	\mark \default
 % Bars 431 to 435
-	\mmrLength #1.5 R1*27
+	R1*27
 % Bars 436 to 440
 	
 % Bars 441 to 445
@@ -306,14 +294,12 @@ musicTimpaniMvtI = \relative c {
 % Bars 456 to 460
 	
 	
-	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
-		\ni \clef treble R1
-		R
-		R
+	\ni \clef treble \voiceTwo R1
+	R
+	R
 % Bars 461 to 465
-		R \no \clef bass \markXoffset #-0.15 \mark \default
-	}
-	c4\ff-\tweak X-offset #0.5 ^\tutti r r2
+	R \oneVoice \no \clef bass \mark \default
+	c4\ff^\tutti r r2
 	g4 r r2
 	g4 r r2
 	c4 r r2
@@ -357,14 +343,13 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	\tempo "Più allegro." \cueDuring #"cueVoiceTimpaniMvtI" #UP {
-		\ni \clef treble \mmrPos #-10 << R1 {s4^\tutti s2.}>>
-		\mmrPos #-8 R1
+	\ni \clef treble \mmrPos #-10 << R1 {s4^\tutti s2.}>>
+	\mmrPos #-7 R1
 % Bars 516 to 520
-		\mmrPos #-8 R \no
-		r2 \clef bass } r8. g16[\f-. c8.-. c16]-. 
-	c4-.\ff r r2 \markXoffset #-0.2 \mark \default
-	g4-.\ff-\tweak X-offset #1 ^\solo r r2
+	\mmrPos #-9 R \no
+	r2 \clef bass r8. g16[\f-. c8.-. c16]-. 
+	c4-.\ff r r2 \mark \default
+	g4-.\ff^\solo r r2
 	c4 r r g8 r
 % Bars 521 to 525
 	c r g r c r g r

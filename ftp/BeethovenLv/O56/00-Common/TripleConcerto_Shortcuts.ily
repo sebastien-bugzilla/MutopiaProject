@@ -503,6 +503,23 @@ tempoXoffset = #(define-music-function
 	#}
 )
 
+trillSpanPadding = #(define-music-function
+	(padding)
+	(number?)
+	#{
+		\once \override TrillSpanner.bound-details.right.padding = #padding
+	#}
+)
+
+tempoEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %aIIExtraOffset = #(define-music-function
@@ -708,13 +725,6 @@ tempoXoffset = #(define-music-function
 %		\once \override Score.MetronomeMark.extra-offset = #offset
 %	#}
 %)
-%tempoEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
 
 
 %tupletExtraOffset = #(define-music-function
@@ -735,14 +745,6 @@ tempoXoffset = #(define-music-function
 %	(number?)
 %	#{
 %		\once \override StemTremolo.Y-offset = #position
-%	#}
-%)
-
-%trillSpanPadding = #(define-music-function
-%	(padding)
-%	(number?)
-%	#{
-%		\once \override TrillSpanner.bound-details.right.padding = #padding
 %	#}
 %)
 

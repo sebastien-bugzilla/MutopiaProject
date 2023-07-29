@@ -38,6 +38,7 @@
 		\override TupletBracket.bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
 		\override MultiMeasureRest.space-increment = #0
+		\override TrillSpanner.bound-details.right.end-on-accidental = ##f
 	}
 }
 %layoutCueVoice = \with {
