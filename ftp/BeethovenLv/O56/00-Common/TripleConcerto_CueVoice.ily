@@ -1573,7 +1573,7 @@ cueVoiceTimpaniMvtIII = \relative c {
 cueVoiceSoloViolinMvtI = \relative c {
 	\InCueContext 
 % Bars 1 to 5
-	R1*6
+	s1*6
 % Bars 6 to 10
 	
 	f'2(\pp^\tuttibold e~
@@ -1626,7 +1626,7 @@ cueVoiceSoloViolinMvtI = \relative c {
 	aes_\crescmarkup~
 	aes4(\p ees) ees-.( ees-.)
 	ees2.(_\crescmarkup des4)
-	c1~\sf\>
+	\hairpinShorten #'(-0.5 . -0.5) c1~\sf\>
 	c2\pp( d!
 % Bars 51 to 55
 	c1
@@ -1655,7 +1655,7 @@ cueVoiceSoloViolinMvtI = \relative c {
 % Bars 71 to 75
 	g2(\pp a
 	d,1)
-	<g, g'>\ff
+	<g, g'>-\offset X-offset -1 \ff
 	c4 r8. <e' c'>16-. q4-. q-.
 	q8\noBeam c,8\pp^\solobold c c c2:8
 % Bars 76 to 80
@@ -1684,7 +1684,7 @@ cueVoiceSoloViolinMvtI = \relative c {
 	
 	
 	r2 r4 b'8\p r
-	<g, e' c'>2.(\ff^\tuttibold e''4)
+	\dynEO #'(0.5 . 0.3) <g, e' c'>2.(\ff^\tuttibold e''4)
 	g2.( f4)
 % Bars 116 to 120
 	d4-. d-. \acciaccatura e8 d8.[( c16 d8. e16])
@@ -1815,7 +1815,7 @@ cueVoiceSoloViolinMvtI = \relative c {
 	d4-. f-. d-. c-.
 % Bars 331 to 335
 	b2( c)
-	\afterGrace a1\startTrillSpan {g16\stopTrillSpan a}
+	\afterGrace a1\startTrillSpan {g16 a\stopTrillSpan}
 	g4 r <g, d' b' g'> r
 	q r r2
 	<a' f'!>4\p r r r8 g,16(\p a
@@ -1829,8 +1829,8 @@ cueVoiceSoloViolinMvtI = \relative c {
 	g1
 	fis8[( g a8. g16]) g4-. g-.
 	c16( g c g c g c g c g c g c g c g)
-	e'( c e c e c e c g' e g e g e g e)
-	f\ff f, f f  f f f f  f f f f s4
+	e'( c e c e c e c g' e g e g e g e)\!
+	\stemUp f\ff f, f f \stemNeutral f f f f  f f f f s4
 % Bars 346 to 350
 	s1*6
 % Bars 351 to 355
@@ -1842,7 +1842,7 @@ cueVoiceSoloViolinMvtI = \relative c {
 % Bars 356 to 360
 	r f f f f f f f
 	r f_\crescmarkup f f f f f f
-	r e\f\> e e e e e e 
+	r e\f\> e e e e e e\!
 	f4\p r r2
 	R1*3
 % Bars 361 to 365
@@ -1910,7 +1910,7 @@ cueVoiceSoloViolinMvtI = \relative c {
 	ees8.[ c16-. g8.-. c16]-. ees2\sf~
 	ees8. c16 ees4\sf~ ees8. c16 ees4~\sf
 	ees8.[ c16-. ees8.-. c16]-. ees8.[-. c16-. ees8.-. c16]-. 
-	\tuplet 3/2 4 {b!8\fp\noBeam b,,8-._\markup {Viol.rip.}^\solobold d-. g d b g b d g d b
+	\tuplet 3/2 4 {\tupletOffset #1.5 b!8\fp\noBeam b,,8-._\markup {Viol.rip.}^\solobold d-. g d b g b d g d b
 % Bars 471 to 475
 	g b d g d b g b d g d b
 	g c e! g e c g c e g e c
@@ -1976,7 +1976,7 @@ cueVoiceSoloViolinMvtII = \relative c {
 	r16 des8(\sf f16_\dimmarkup ees des)
 	c4(\p bes16 c)
 	des4( c16 des)
-	ees8_\crescmarkup e4\f\>
+	ees8-\offset X-offset -2 _\crescmarkup e4\f\>
 % Bars 16 to 20
 	f4(~\p f16_\crescmarkup des)
 	c32\p c c c r c c c r c[ r c]
@@ -1998,11 +1998,11 @@ cueVoiceSoloViolinMvtII = \relative c {
 	
 	
 	
-	s8 c16(^\tuttibold\p-. c-. c-. c-.)
+	s8 \shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur c16(^\tuttibold-\offset X-offset -1.5 \p-. c-. c-. c-.)
 % Bars 41 to 45
-	c32\f[ c c c] c[ c\> c c] c[ c c c]
+	c32\f[ c c c] c[ c\> c c] c[ c c c]\!
 	c16\p c c c c c
-	c32\f[ ees ees ees] ees[ c' c\> c] c[ ees, ees ees]
+	c32\f[ ees ees ees] ees[ c' c\> c] c[ ees, ees ees]\!
 	d8\p-\tweak X-offset #0.5 ^\solobold r r
 	s4.*9
 % Bars 46 to 50
@@ -2015,7 +2015,7 @@ cueVoiceSoloViolinMvtIII = \relative c {
 	e'16\pp(^\markup {Viol.rip.} g) e( g) e( g) e( g) e( g) e( g) 
 	\repeat tremolo 6 {e16 g}
 	\repeat tremolo 6 {f a}
-	f16( g) f( g) \repeat tremolo 4 {f16 a}
+	f16( g) f( g) \repeat tremolo 4 {d16 f}
 	\repeat tremolo 6 {e g} 
 % Bars 6 to 10
 	\repeat tremolo 6 {e g}

@@ -25,7 +25,7 @@ musicSoloViolinMvtII = \relative c''' {
 	s4.*3
 	
 	
-	s8 r16 g(_\crescmarkup^\arco^\violinesolobold aes bes)
+	s8 r16 g(_\crescmarkup-\offset X-offset -4 ^\arco-\offset X-offset -3 ^\violinesolobold aes bes)
 	c4( bes16 c)
 % Bars 26 to 30
 	des8( ees8. des16)
@@ -34,7 +34,7 @@ musicSoloViolinMvtII = \relative c''' {
 	ees,( bes'8. g16)
 	ees8( c'8. aes16)
 % Bars 31 to 35
-	ees64[(_\crescmarkup d ees f g aes bes c)] des!16(-. des-. des-. des-.) \mark \default
+	\beamOffset #'(1 . 1) ees64[(_\crescmarkup d ees f g aes bes c)] des!16(-. des-. des-. des-.) \mark \default
 	des8.\sf( f16_\dimmarkup ees des)
 	c4(\p bes16 c)
 	des4 \tuplet 3/2 16 {c32([ ees des)] des[( f ees])}
@@ -44,13 +44,13 @@ musicSoloViolinMvtII = \relative c''' {
 	c8.\p[ c16~] c32[ b64( c)] b[( c) b( c)]
 	ees8. des16( bes! g)
 	aes16\trill bes\trill c8\noBeam~ \tuplet 3/2 16 {c32[ a( bes]} ees32. g,64)
-	aes!8 s s
+	aes!8 \voiceOne r r \oneVoice 
 % Bars 41 to 45
 	s4.*3
 	
-	\markXoffset #-0.2 \mark \default
+	\mark \default
 	s4.
-	\tuplet 3/2 16 {g,32([^\violinesolobold g' fis] g[ b ais] b[ d cis] d[ g d])} f!(\< ees) d(-.\> c-.)
+	\tuplet 3/2 16 {g,32([-\tweak extra-offset #'(0 . -1) ^\violine-solobold g' fis] g[ b ais] b[ d cis] d[ g d])} f!(\< ees)\! d(-.\> c-.)\!
 % Bars 46 to 50
 	b8\p r g,16.( b32)
 	b8 r b16.( d32)

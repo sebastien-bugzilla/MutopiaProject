@@ -13,30 +13,28 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.20.0"
+\version "2.24.1"
 \include "./00-Common/TripleConcerto_Header.ily"
-\include "./00-Common/TripleConcerto_PaperParts.ily"
-\include "./00-Common/TripleConcerto_timeMvt.ily"
-\include "./00-Common/TripleConcerto_OptionParts.ily"
-\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartSoloVln.ily"
+\include "./00-Common/TripleConcerto_PaperParts.ily"
+\include "./00-Common/TripleConcerto_LayoutParts.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
+\include "./00-Common/TripleConcerto_Format_Part08_SoloVln.ily"
 \include "./01-Mvt1/m01_v13_music_SoloViolin.ily"
 \include "./02-Mvt2/m02_v13_music_SoloViolin.ily"
 \include "./03-Mvt3/m03_v13_music_SoloViolin.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-%\addQuote "cueVoiceSoloViolinMvtI" { \cueVoiceSoloViolinMvtI }
-%\addQuote "cueVoiceSoloViolinMvtII" { \cueVoiceSoloViolinMvtII }
-%\addQuote "cueVoiceSoloViolinMvtIII" { \cueVoiceSoloViolinMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
 			\center-column {
-				"Part for SoloVln"
+				"Part for Solo Violin"
 			}
 		}
 		subsubtitle = \markup { 
@@ -52,27 +50,22 @@
 				\formatSoloViolinMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameSoloViolinMvtI \musicSoloViolinMvtI
+				\keepWithTag #'(soloViolin) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameSoloViolinMvtI \cueVoiceSoloViolinMvtI
+				\InCueContext \cueVoiceSoloViolinMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameSoloViolinMvtI \musicSoloViolinMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -81,27 +74,22 @@
 				\formatSoloViolinMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameSoloViolinMvtII \musicSoloViolinMvtII
+				\keepWithTag #'(soloViolin) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameSoloViolinMvtII \cueVoiceSoloViolinMvtII
+				\InCueContext \cueVoiceSoloViolinMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameSoloViolinMvtII \musicSoloViolinMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -110,27 +98,22 @@
 				\formatSoloViolinMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameSoloViolinMvtIII \musicSoloViolinMvtIII
+				\keepWithTag #'(soloViolin) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameSoloViolinMvtIII \cueVoiceSoloViolinMvtIII
+				\InCueContext \cueVoiceSoloViolinMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameSoloViolinMvtIII \musicSoloViolinMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

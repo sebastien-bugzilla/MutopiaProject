@@ -504,7 +504,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	\tuplet 6/4 4 {c16\f( e d c\sf b a) g( c b a\sf g f) e( a g f\sf e d)}
 	c8 r r4 r
 	\tuplet 6/4 4 {c'16( e d c\sf b a) g( c b a\sf g f) e( a g f\sf e d)}
-	r16 c\ff-. d-. e-. f-. g-. a-. b-. c\ff-. e,-. f-. g-. 
+	r16 c\ff-. d-. e-. f-. g-. a-. b-. c\sf-. e,-. f-. g-. 
 	a_\sempreff b c d e g, a b c\sf d e f
 % Bars 471 to 475
 	g c, d e f g a b c\sf g a b

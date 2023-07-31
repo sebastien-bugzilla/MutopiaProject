@@ -75,6 +75,11 @@ tutti = \markup {\italic tutti}
 tutti = \markup {Tutti.}
 unobassoeviolonc = \markup {Uno Basso e Violonc.}
 violinesolobold=^\markup {\bold \abs-fontsize #10 {Violine solo}}
+violine-solobold=^\markup {\bold 
+	\abs-fontsize #10 {
+		\column { \lower #1.5 "Violine" "solo"}
+	}
+}
 violoncellosolobold=^\markup {\bold \abs-fontsize #10 {Violoncello solo}}
 
 
@@ -519,6 +524,7 @@ tempoEO = #(define-music-function
 	#}
 )
 
+tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -715,8 +721,6 @@ tempoEO = #(define-music-function
 %		\once \override TextScript.outside-staff-priority = #prio
 %	#}
 %)
-
-%tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
 %tempoExtraOffset = #(define-music-function
 %	(offset)

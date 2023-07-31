@@ -292,29 +292,17 @@ nameTimpaniMvtIII = {
 %###############################################################################
 nameSoloViolinMvtI = {
 	\set Staff.instrumentName = "Solo Violin"
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Solo-" "Vln"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"violin"
 }
 nameSoloViolinMvtII = {
 	\set Staff.instrumentName = "Solo Violin"
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Solo-" "Vln"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"violin"
 }
 nameSoloViolinMvtIII = {
 	\set Staff.instrumentName = "Solo Violin"
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Solo-" "Vln"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"violin"
 }
 %###############################################################################
