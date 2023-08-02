@@ -13,24 +13,22 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.20.0"
+\version "2.24.1"
 \include "./00-Common/TripleConcerto_Header.ily"
-\include "./00-Common/TripleConcerto_PaperParts.ily"
-\include "./00-Common/TripleConcerto_timeMvt.ily"
-\include "./00-Common/TripleConcerto_OptionParts.ily"
-\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartSoloVlc.ily"
+\include "./00-Common/TripleConcerto_PaperParts.ily"
+\include "./00-Common/TripleConcerto_LayoutParts.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
+\include "./00-Common/TripleConcerto_Format_Part09_SoloVlc.ily"
 \include "./01-Mvt1/m01_v14_music_SoloCello.ily"
 \include "./02-Mvt2/m02_v14_music_SoloCello.ily"
 \include "./03-Mvt3/m03_v14_music_SoloCello.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-%\addQuote "cueVoiceSoloCelloMvtI" { \cueVoiceSoloCelloMvtI }
-%\addQuote "cueVoiceSoloCelloMvtII" { \cueVoiceSoloCelloMvtII }
-%\addQuote "cueVoiceSoloCelloMvtIII" { \cueVoiceSoloCelloMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -52,27 +50,22 @@
 				\formatSoloCelloMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameSoloCelloMvtI \musicSoloCelloMvtI
+				\keepWithTag #'(soloCello) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameSoloCelloMvtI \cueVoiceSoloCelloMvtI
+				\InCueContext \cueVoiceSoloCelloMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameSoloCelloMvtI \musicSoloCelloMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -81,27 +74,22 @@
 				\formatSoloCelloMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameSoloCelloMvtII \musicSoloCelloMvtII
+				\keepWithTag #'(soloCello) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameSoloCelloMvtII \cueVoiceSoloCelloMvtII
+				\InCueContext \cueVoiceSoloCelloMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameSoloCelloMvtII \musicSoloCelloMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -110,27 +98,22 @@
 				\formatSoloCelloMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameSoloCelloMvtIII \musicSoloCelloMvtIII
+				\keepWithTag #'(soloCello) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameSoloCelloMvtIII \cueVoiceSoloCelloMvtIII
+				\InCueContext \cueVoiceSoloCelloMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameSoloCelloMvtIII \musicSoloCelloMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

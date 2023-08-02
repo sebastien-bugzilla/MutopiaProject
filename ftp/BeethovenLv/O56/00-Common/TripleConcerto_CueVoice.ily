@@ -2707,7 +2707,7 @@ cueVoiceSoloCelloMvtII = \relative c {
 	
 	s8 aes,16(\p^\tuttibold-. aes-. aes-. aes-.)
 % Bars 41 to 45
-	g32\f[ g g g] g[ g\> g g] g[ g g g]
+	g32\f[ g g g] g[ g\> g g] g[ g g g]\!
 	f16\p f f f f f
 	fis32\f[ fis' fis fis] fis[ fis\> fis fis] fis[ fis, fis fis]\!
 	s4.*10

@@ -143,8 +143,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 442.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(   
-		    soloCello piano violinI
+	\tag #'(piano violinI
 		violinII viola violoncello basso) {
 		\tempo "adagio"
 	}
@@ -155,6 +154,12 @@ tempiPartMvtIII = {
 	}
 	\tag #'(soloViolin) {
 		\tempoDown \tempoEO #'(0.5 . 2)
+		\tempo \markup {
+			\medium \italic "adagio"
+		}
+	}
+	\tag #'(soloCello) {
+		\tempoDown \tempoEO #'(-1.5 . 4)
 		\tempo \markup {
 			\medium \italic "adagio"
 		}

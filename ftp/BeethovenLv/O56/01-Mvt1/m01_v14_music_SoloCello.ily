@@ -99,7 +99,7 @@ musicSoloCelloMvtI = \relative c' {
 	d-. d-. \acciaccatura e8 d8.[( c16 d8. e16])
 % Bars 121 to 125
 	c2. \clef treble \acciaccatura c8 c'8.( b16)
-	b4( a~ a8) gis( a b)
+	\once \stemUp b4( a~ a8) gis( a b)
 	\acciaccatura b8 d4( c4~ c8) e( c a)
 	g2(~ g8 f e16 g f8)
 	e16\noBeam \clef bass e,( g e g e g e) c( e g e g e g e)
@@ -127,7 +127,7 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 146 to 150
 	R1
 	\tuplet 3/2 4 {r8 e,,(_\crescmarkup gis) gis( b) b( e) e( gis) gis( b) b(}
-	\tuplet 3/2 4 {e)\ff gis,-. b-. e,-. gis-. b,-. e-. gis,-. b-. e,-. gis-. b-. } \mark \default
+	\tuplet 3/2 4 {e)-\offset X-offset -0.5 \ff gis,-. b-. e,-. gis-. b,-. e-. gis,-. b-. e,-. gis-. b-. } \mark \default
 	e4 r^\tuttibold r2
 	R1
 % Bars 151 to 155
@@ -233,7 +233,7 @@ musicSoloCelloMvtI = \relative c' {
 	d2. e4(^\sharptrill
 	fis d b a)
 	gis2(\cresc b4.. a16)
-	\trillSpanCustom #6 #sharptrill \afterGrace fis1\startTrillSpan {e16[\stopTrillSpan gis fis]}
+	\trillSpanCustom #6 #sharptrill \afterGrace fis1\startTrillSpan {e16[ gis fis]\stopTrillSpan}
 % Bars 256 to 260
 	e1\p
 	dis~
@@ -241,7 +241,7 @@ musicSoloCelloMvtI = \relative c' {
 	d!8[ r16 b( d8. cis16)] b4 r
 	r8. cis16([ e8. d16]) cis8[ r16 e( a8. gis16)]
 % Bars 261 to 265
-	gis4\trill( b)\sfp~ \tuplet 3/2 4 {b8 a-. gis-. d'-.\sfp cis-. b-.}
+	gis4\trill( \once \stemUp b)\sfp~ \tuplet 3/2 4 {b8 a-. gis-. d'-.\sfp cis-. b-.}
 	\tuplet 3/2 4 {b a gis d'\sfp cis b b a gis d'\sfp cis b}
 	\tuplet 3/2 4 {b a gis gis fis e e d cis \clef bass cis b a}
 	\tuplet 3/2 4 {a gis fis fis e dis a' gis fis a gis fis}
@@ -286,7 +286,7 @@ musicSoloCelloMvtI = \relative c' {
 	c2. c,,4(
 	\tuplet 3/2 4 {f8) des' aes f' des aes'} r2
 	\tuplet 3/2 4 {fis,8 c' a! ees' c fis} r4 \tuplet 3/2 4 {fis,8 fis fis}
-	g4(_\cantabile g''2 f!4)
+	\shape #'((0 . -1.5)(0 . 0)(0 . 0)(0 . 0)) Slur g4(_\cantabile g''2 f!4)
 	f( ees2 d8. c16)
 % Bars 301 to 305
 	c4( b2 c8. d16)
@@ -341,7 +341,7 @@ musicSoloCelloMvtI = \relative c' {
 	
 	
 	
-	f,2._\cantabile \acciaccatura f8( f'8. e16)
+	f,2._\cantabile \acciaccatura f8 f'8.( e16)
 	e4( d~ d8) cis( d e)
 % Bars 361 to 365
 	\acciaccatura e8 g4( f~ f8) a( f d)
@@ -464,7 +464,7 @@ musicSoloCelloMvtI = \relative c' {
 	f2~ f16\stopTrillSpan b,-. c-. d-. e-. f-. g-. a-. 
 	b1\startTrillSpan\cresc~
 % Bars 461 to 465
-	\afterGrace b {a16[(\stopTrillSpan b)]} \markYoffset #4.0 \mark \default
+	\afterGrace b {a16[(\stopTrillSpan b)]} \mark \default
 	c4\ff r \clef bass s2
 	s1*7
 % Bars 466 to 470
@@ -498,7 +498,7 @@ musicSoloCelloMvtI = \relative c' {
 	f,4 r r16 f, a c f a c f
 	g,,8_\crescmarkup \clef treble e''4 g c e8
 % Bars 491 to 495
-	\trillSpanCustom #5 #trillglyph \afterGrace b1\startTrillSpan {a16[(\stopTrillSpan b)]} \mark \default
+	\afterGrace b1\startTrillSpan {a16[( b)\stopTrillSpan]} \mark \default
 	c16\ff \clef bass c,,, e g c e g c c,4 r
 	r16 f' c a f c a c f,4 r
 	s1*6
@@ -507,13 +507,13 @@ musicSoloCelloMvtI = \relative c' {
 	
 	
 	
-	\tuplet 3/2 4 {b8(\pp^\violoncellosolobold d c e d f e g f a g b}
+	\tuplet 3/2 4 {\stemDown b8(\pp^\violoncellosolobold d c \stemNeutral e d f e g f a g b}
 % Bars 501 to 505
 	\tuplet 3/2 4 {a c b d c e) d( f) f-. f f f}
 	f1(
 	d)
-	<< b_\crescmarkup {\trillSpanCustom #5 #trillglyph s4\startTrillSpan s s s\stopTrillSpan} >>
-	\trillSpanCustom #5 #trillglyph \afterGrace d1\startTrillSpan {c16[(\stopTrillSpan d)]}
+	b_\crescmarkup\startTrillSpan
+	\afterGrace d1\startTrillSpan {c16[( d)\stopTrillSpan]}
 % Bars 506 to 510
 	e4\p r r2 \clef tenor
 	g4.._\dolce( e16 c4 bes)
@@ -524,13 +524,13 @@ musicSoloCelloMvtI = \relative c' {
 	c2.( bes4)
 	a2~ a16 a b! c d e f g
 	b( a gis a b a g f e d f e g f e d)
-	\tempo "Più allegro." c4 s s2 
+	c4 s s2 
 	s1*4
 % Bars 516 to 520
 	
 	
-	\markXoffset #-0.2 \mark \default
-	\clef bass <g, g'>4\ff-\tweak X-offset #0.5 ^\solobold r r2
+	\mark \default
+	\clef bass <g, g'>4\ff^\solobold r r2
 	r16 c d e f g a b c4 r
 % Bars 521 to 525
 	R1
