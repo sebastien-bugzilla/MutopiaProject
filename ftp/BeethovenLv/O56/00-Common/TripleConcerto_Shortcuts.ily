@@ -536,6 +536,17 @@ scriptOsf = {
 	\once \override Voice.Script.outside-staff-priority = #700
 }
 
+omitMMRN = \omit MultiMeasureRestNumber
+
+noteESW = #(define-music-function
+	(extraSpacing)
+	(pair?)
+	#{
+		\once \override NoteHead.extra-spacing-width = #extraSpacing
+	#}
+)
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %aIIExtraOffset = #(define-music-function
@@ -652,8 +663,6 @@ scriptOsf = {
 %)
 
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
-
-%omitMMRN = \omit MultiMeasureRestNumber
 
 
 %mmrEO = #(define-music-function

@@ -178,7 +178,7 @@ musicPianoUpMvtII = \relative c' {
 		\tuplet 3/2 16 {r32 r d'' 
 		g[ b g] 
 		d[ b g] \change Staff = "down" 
-		d[ b g]} \change Staff = "up" \oneVoice 
+		d![ b! g]} \change Staff = "up" \oneVoice 
 	r8 
 		\tuplet 3/2 16 {r32 r g'' 
 		b[ d b] 

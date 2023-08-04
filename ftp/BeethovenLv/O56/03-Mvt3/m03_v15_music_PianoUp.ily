@@ -34,7 +34,7 @@ musicPianoUpMvtIII = \relative c {
 	<g b d g>8 r r4 r
 	\tuplet 6/4 4 {\tupletUp r16 f'!(_\crescmarkup e f e f) \tupletNeutral d( b' ais b ais b) f( d' cis d cis d)} \mark #4
 % Bars 31 to 35
-	\grace {cis16[ d e]} d2\fermata\f \acciaccatura fis,8 g\pp \acciaccatura fis g
+	\grace {cis16[ d e]} \dynEO #'(0 . 2) d2\fermata\f \acciaccatura fis,8 g\pp \acciaccatura fis g
 	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
 	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
 	\shape #'((0 . 1.7)(0 . 1.5)(0 . 1)(0 . 0)) Slur g4.-\tweak extra-offset #'(0 . -4.2) \startTrillSpan( a16\stopTrillSpan b c8 d)
@@ -61,7 +61,7 @@ musicPianoUpMvtIII = \relative c {
 	
 	
 	s4 s16 d'_\dolce(^\klaviersolobold e fis g a b c)
-	d(_\legato cis d ais b ais b fis g fis g dis
+	\shape #'(() ((0 . 0)(0 . 0)(0 . 1)(0 . -2))) Slur d(_\legato cis d ais b ais b fis g fis g dis
 % Bars 71 to 75
 	e dis e b' c b c gis a gis a eis
 	fis eis fis a g fis g fis e dis e g
@@ -83,7 +83,7 @@ musicPianoUpMvtIII = \relative c {
 % Bars 86 to 90
 	\tuplet 6/4 4 {g16\f fis e d e fis g fis e d e fis g fis g a g a
 	b a g fis g a b a g fis g a b a g fis g a
-	b a g f! e d c b a g a b} \tuplet 3/2 8 {c d e} f32 g a b
+	b a g f! e d c b a g a b} \tuplet 3/2 8 {\once \tupletUp c d e} f32 g a b
 	\tuplet 6/4 4 {c16\cresc b a g a b c b a g a b c b a g a b
 	c b a g a b c b a g a b } c8-. <bes, e g bes>-.\sf
 % Bars 91 to 95
@@ -105,11 +105,11 @@ musicPianoUpMvtIII = \relative c {
 	e(\dim d c b c d) e( d c b c d) e( d c b c d)
 	e( d c b c d) e( d c b c d) e( d c b c d)}
 % Bars 106 to 110
-	<g, e'>4\p r8 \textSpanner "rallentando" #'italic <e c'>_\startTextSpan(-. <g e'>-. <e c'>-.)
+	<g, e'>4\p r8 <e c'>(-. <g e'>-. <e c'>-.)
 	<g e'>4 r8 <e c'>-.( <g e'>-. <e c'>-.)
 	<g e'>-.( <e c'>-. <g e'>-. <e c'>-. <g e'>-. <e c'>-.)
-	<g e'>4 r8 <e c'>-.( <g e'>-. <e c'>-.)\stopTextSpan
-	<>^\atempo <g e'>\noBeam\pp c( e) r r e,(
+	<g e'>4 r8 <e c'>-.( <g e'>-. <e c'>-.)
+	<g e'>\noBeam\pp c( e) r r e,(
 % Bars 111 to 115
 	g) r r g,( c) r
 	r fis,( g) r r4
@@ -134,13 +134,13 @@ musicPianoUpMvtIII = \relative c {
 	d8-.) r r4 \acciaccatura e8 d16( cis) d-. d-.
 	g8 r r4 \acciaccatura d8 c!16( b c a
 	d8-.) r r4 \acciaccatura e8 d16( cis) d-. d-.
-	g8 r r4 \clef treble <a c d>8._\semprepp q16
+	g8 r r4 \clef treble <a c d>8.-\offset X-offset -0.5 _\semprepp q16
 	<g b d>8 r r4 <d' a' c d>8. q16
 % Bars 146 to 150
 	<d g b d>8 r r4 r
 	<g b d g>8 r r4 r
 	\tuplet 6/4 4 {r16_\crescmarkup f'!( e f e f) d( b' ais b ais b) f( d' cis d cis d)} \mark \default 
-	\grace {cis16[( d e]} d2)\fermata\f \acciaccatura fis,8 g\pp \acciaccatura fis g
+	\grace {cis16[( d e]} \dynEO #'(0 . 1) d2)\fermata\f \acciaccatura fis,8 g\pp \acciaccatura fis g
 	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
 % Bars 151 to 155
 	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
@@ -163,7 +163,7 @@ musicPianoUpMvtIII = \relative c {
 % Bars 176 to 180
 	s2.*2
 	
-	s8 e16(\f^\klaviersolobold dis e f d e c d b c) \markYoffset #4.5 \mark \default
+	s8 e16(-\offset X-offset -0.5 \f^\klaviersolobold dis e f d e c d b c) \mark \default
 	a4 s s
 	s2.*2
 % Bars 181 to 185
@@ -180,7 +180,7 @@ musicPianoUpMvtIII = \relative c {
 	d8 r r4 r
 % Bars 191 to 195
 	e,,8-.\f e'16( dis e8-.) e16( fis gis8-.) gis16( a
-	\ottava #1 b8-.)\< b16( c d!8-.) d16( e fis gis a b)\!
+	\ottava #1 b8-.)-\tweak rotation #'(3 -1 0) \< b16( c d!8-.) d16( e fis gis a b)\!
 	c2( \afterGrace b4)\trill {a16[ b]}
 	a8 \ottava #0 r r4 r
 	a,,,16\f-. a'-. a-. gis-. a-. a,-. a'-. b-. cis-. cis,-. cis'-. d-. 
@@ -211,7 +211,7 @@ musicPianoUpMvtIII = \relative c {
 % Bars 216 to 220
 	r a( c! d fis d c a fis' d c a)
 	r_\crescmarkup g( b d f! d b g f' d b g)
-	r g( c e g e c g g' e c g)
+	r \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur g( c e g e c g g' e c g)
 	r fis( g a b_\crescmarkup c d e g f! e d
 	e4) r r
 % Bars 221 to 225
@@ -230,7 +230,7 @@ musicPianoUpMvtIII = \relative c {
 	b,,_\crescmarkup\noBeam g'([ d]) b'([ g)] d'([ b)] g'([ d)]
 	b'[( g]) b[( g]) b[( g]) b[( g]) b(}
 	g2.)-\tweak X-offset #-1 \f\startTrillSpan~
-	g_\dimin~
+	g-\offset X-offset -2 _\dimin~
 	g\p~
 % Bars 236 to 240
 	g~ 
@@ -279,7 +279,7 @@ musicPianoUpMvtIII = \relative c {
 	\tuplet 6/4 4 {f16\cresc e d c d e f e d c d e f e d c d e
 	f e d c d e f e d c d e} f8-. <c, ees a c>-.\sf
 	<c e! g c>8-.\f r r4 r
-	\tuplet 6/4 4 {g16\< aes a bes b c cis d ees e f fis} \afterGrace g4\trill\! {fis!16[ g]} \markYoffset #4.5 \mark \default
+	\tuplet 6/4 4 {g16\< aes a bes b c \once \tupletUp cis d ees e f fis} \afterGrace g4\trill\! {fis!16[ g]} \mark \default
 % Bars 286 to 290
 	c,8\f s s4 s
 	s2.*4
@@ -293,12 +293,12 @@ musicPianoUpMvtIII = \relative c {
 	a g f e f g a g f e f g a g a bes a bes
 	c(\dim bes a g a bes) c( bes a g a bes) c( bes a g a bes)
 	c( bes a g a bes) c( bes a g a bes) c( bes a g a bes)}
-	c4\p r8 \textSpanner "rallentando" #'italic <f, a>-.(_\startTextSpan <a c>-. <f a>-.)
+	c4\p r8 <f, a>-.( <a c>-. <f a>-.)
 	<a c>4 r8 <f a>-.( <a c>-. <f a>-.)
 % Bars 301 to 305
 	<a c>-.( <f a>-. <a c>-. <f a>-. <a c>-. <f a>-.)
-	<a c>4 r8 <e a>-.( <a c>-. <e a>-.)\stopTextSpan
-	<>^\atempo <a c>8 r r fis( a) r
+	<a c>4 r8 <e a>-.( <a c>-. <e a>-.)
+	<a c>8 r r fis( a) r
 	r a,( c) r r4
 	r8 a([ c]) r r4
 % Bars 306 to 310
@@ -324,7 +324,7 @@ musicPianoUpMvtIII = \relative c {
 	\ni s2. \no
 	s16 fis(^\klaviersolobold g a b c d e g f! e d)
 	e( g, a b c d e f a g f e
-	d) fis,(_\crescmarkup g <fis a> <g b> <a c> <b d> <c e> <e g> <d f!> <c e> <b d> \markYoffset #6 \mark \default
+	d) fis,(_\crescmarkup g <fis a> <g b> <a c> <b d> <c e> <e g> <d f!> <c e> <b d> \markWhiteout \mark \default
 % Bars 326 to 330
 	<c e>\ff <e, g> <f a> <g b> <a c> <b d> <c e> <d f> <f a> <e g> <d f> <c e> 
 	<b d>8) s s4 s
@@ -336,7 +336,7 @@ musicPianoUpMvtIII = \relative c {
 	<< { \voiceTwo <d, aes'>4-\tweak X-offset #0.5 \p -\tweak extra-offset #'(0 . -1.5)^\fermata r r8 \breathe \tempo "Allegro." r } {\ni \dfermataCentered \no} >> \bar "||"
 	\time 2/4 \ni R2*3 \no
 % Bars 336 to 340
-	\oneVoice r4 r8 d'16(-\tweak X-offset #-0.5 \p^\klaviersolobold b
+	\oneVoice r4 r8 d'16(-\offset X-offset #-0.8 \p^\klaviersolobold b
 	c8) r s4
 	s2*10
 % Bars 341 to 345
@@ -349,9 +349,9 @@ musicPianoUpMvtIII = \relative c {
 	c b c b c e d c
 % Bars 351 to 355
 	b d c b a c b a
-	g\< a b c d\> b c a\!
+	g\< a b c\! d\> b c a\!
 	g4 r16 d e fis
-	g\< a b c d\> b c a\! 
+	g\< a b c\! d\> b c a\! 
 	g4\! r16 d e fis
 % Bars 356 to 360
 	g2_\crescmarkup\startTrillSpan~
@@ -374,13 +374,13 @@ musicPianoUpMvtIII = \relative c {
 % Bars 371 to 375
 	r16 gis'\p b a gis f e d
 	c a c b a g! f e
-	d8 r g'4-\tweak X-offset #-0.5 \f\startTrillSpan~
+	d8 r \dynEO #'(0 . 2) g'4\f\startTrillSpan~
 	g4.( a16\stopTrillSpan b)
 	d\p c b c d c b a
 % Bars 376 to 380
 	a g fis g a g fis g
 	g8 r r4
-	r16 a,\p c bes a g f ees
+	r16 \stemUp a,\p c bes \stemNeutral a g f ees
 	d8 r r4
 	r16 b'! d c b a g f
 % Bars 381 to 385
@@ -390,7 +390,7 @@ musicPianoUpMvtIII = \relative c {
 	b a g f e d c b
 	e\p g c e a,, c f a
 % Bars 386 to 390
-	g, c e g g, b d g \markYoffset #4.5 \mark \default
+	g, c e g g, b d g \mark \default
 	c,8 s s4
 	s2*14
 % Bars 391 to 395
@@ -401,7 +401,7 @@ musicPianoUpMvtIII = \relative c {
 	
 	\ni R2^\klaviersolobold
 	R \no
-	r4 \tuplet 3/2 4 {g8-\tweak X-offset #-2.3 \f a b
+	r4 \tuplet 3/2 4 {\dynEO #'(0 . -3) g8^\f a b
 	c b c a b c
 % Bars 406 to 410
 	d c d b c d
@@ -441,12 +441,12 @@ musicPianoUpMvtIII = \relative c {
 	f fis g gis a ais)}
 	b4\trill b,\trill
 	b,\trill b'\trill
-	g'2-\tweak extra-offset #'(0 . -5.7) \startTrillSpan~
-	g~ \markYoffset #6 \mark \default
+	g'2-\alterBroken extra-offset #'(() (0 . -1.7)) \startTrillSpan~
+	g~ \markWhiteout \mark \default
 % Bars 441 to 445
 	g~\<
-	\afterGrace g\>\fermata {fis16[\stopTrillSpan_\adagio g\!]} \bar "||"
-	\time 3/4 \tempo "Tempo I." g4.(_\dolce a16 b c8 d)
+	\afterGrace g\>\fermata {fis16[\stopTrillSpan g\!]} \bar "||"
+	\time 3/4 g4.(_\dolce a16 b c8 d)
 	\grace {c16[( d]} e4)(~\f e16 c g e c g e c)
 	s2.*4
 % Bars 446 to 450
@@ -462,7 +462,7 @@ musicPianoUpMvtIII = \relative c {
 	g d' f g f d g, d' f g f d g, d' f g f d}
 	c'4._\crescmarkup e32([ g16.-.]) g32([ e16.]-.) e32([ c16.-.])
 % Bars 456 to 460
-	c32[( b16.-.]) b4_\crescmarkup b32[( d16.-.)] d32[( b16.-.]) b32[( g16.-.])
+	c32[( b16.-.]) b4-\offset X-offset 0.6 _\crescmarkup b32[( d16.-.)] d32[( b16.-.]) b32[( g16.-.])
 	g32\f[( c16.-.]) s8 s4 s
 	s2. \mark \default
 	s

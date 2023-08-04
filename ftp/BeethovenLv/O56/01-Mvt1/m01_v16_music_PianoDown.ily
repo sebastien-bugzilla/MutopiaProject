@@ -63,10 +63,10 @@ musicPianoDownMvtI = \relative c' {
 	f2. g4\trill(
 	a f d c)
 	b2( d4.. c16)
-	\afterGrace a'2.\startTrillSpan( {gis16[\stopTrillSpan a]} c8. a16)
+	\afterGrace a'2.\startTrillSpan( {gis16[ a]\stopTrillSpan} c8. a16)
 	g!4-. e'4. e16 d c b a g
 % Bars 106 to 110
-	f4 \clef bass \afterGrace f,2\startTrillSpan {e16[\stopTrillSpan f]} a8. f16
+	f4 \clef bass \afterGrace f,2-\tweak extra-offset #'(0 . -0.5) \startTrillSpan( {e16[ f]\stopTrillSpan} a8. f16)
 	e4 r c16 d e f g a b c
 	f,4 r f16 g a b c d e f 
 	c\noBeam \clef treble c d dis e f fis g gis a bes b c cis d dis
@@ -150,8 +150,8 @@ musicPianoDownMvtI = \relative c' {
 		d,( f bes d)
 		c,!( f a c)
 		\clef bass c,,( e g c,)
-		\tuplet 3/2 4 {r8 cis e} g2.~
-		\once \override TupletNumber.Y-offset = #4 \tuplet 3/2 4 {g4 a8} d4~ \tuplet 3/2 4 {d8 gis, b} e4~
+		\tuplet 3/2 4 {\once \oneVoice r8 cis e} g2.~
+		\tupletOffset #4 \tuplet 3/2 4 {g4 a8} d4~ \tuplet 3/2 4 {d8 gis, b} e4~
 		\tuplet 3/2 4 {e8 \clef treble a, e'} a4~ \tuplet 3/2 4 {a8 d, fis} b4 
 	} \\ {
 		\omit TupletNumber d,1
@@ -318,7 +318,7 @@ musicPianoDownMvtI = \relative c' {
 	\mark #11
 	s2 s4 \tuplet 3/2 4 {a'8-. e'-. cis-.}
 	\tuplet 3/2 4 {a'-. e-. cis'-. \clef treble a-. e'-. cis-. a'-. e-. cis-. e-. cis-. a-. }
-	\clef bass \tuplet 3/2 4 {a, f' d a' f d' \clef treble a f' d a' f d} \clef bass
+	\clef bass \tuplet 3/2 4 {\once \tupletDown a, f' d a' f d' \clef treble a f' d a' f d} \clef bass
 % Bars 356 to 360
 	\tuplet 3/2 4 {f, d' bes \clef treble f' d bes' f d' bes f' d bes} \clef bass
 	\tuplet 3/2 4 {f, c' a \clef treble f' c a' f c' a f' c a}
@@ -357,7 +357,7 @@ musicPianoDownMvtI = \relative c' {
 % Bars 386 to 391
 	<g, g'>4 s s2
 	s1
-	\voiceTwo g4 r r2 \clef treble
+	\voiceTwo \stemOffset #-1 g4 r r2 \clef treble
 	\oneVoice r16 g'' b a g b d c b d f e d b' d c
 	<<{
 		b2 r8 e_( f cis)
@@ -389,7 +389,7 @@ musicPianoDownMvtI = \relative c' {
 		f,( aes des f) \clef bass
 		ees,,( aes c ees)
 		\shape #'((0 . -1)(0 . -1)(0 . -1)(0 . -1)) Slur ees,( g bes ees,)
-		\tuplet 3/2 4 {r8 e! g} bes2 c4~
+		\tuplet 3/2 4 {\once \oneVoice r8 e! g} bes2 c4~
 		\tuplet 3/2 4 {c8 f, c'} f4~ \tuplet 3/2 4 {f8\noBeam \clef treble b,! d!} g4~
 		\tuplet 3/2 4 {g8 c, g'} c4~ \tuplet 3/2 4 {c8 fis, a!} d4
 	} \\ {
@@ -398,8 +398,8 @@ musicPianoDownMvtI = \relative c' {
 		f
 		ees,
 		ees
-		\set tieWaitForNote = ##t \tuplet 3/2 4 {r8 e!4*1/2~ g8~ } <e g>2.
-		\tuplet 3/2 4 {r8 f4*1/2~ c'8~} <f, c'>4 \tuplet 3/2 4 {r8 b4*1/2~ d8~} <b d>4
+		\set tieWaitForNote = ##t \tuplet 3/2 4 {s8 e!4*1/2~ g8~ } <e g>2.
+		\tuplet 3/2 4 {\once \oneVoice r8 f4*1/2~ c'8~} <f, c'>4 \tuplet 3/2 4 {\once \oneVoice r8 b4*1/2~ d8~} <b d>4
 		\tuplet 3/2 4 {r8 c4*1/2~ g'8~} <c, g'>4 \tuplet 3/2 4 {r8 fis4*1/2~ a8~} <fis a>4 \unset tieWaitForNote
 	}>>
 	r8 <g c ees> q q q4 r
@@ -450,7 +450,7 @@ musicPianoDownMvtI = \relative c' {
 % Bars 456 to 460
 	\clef bass f,16(^\pp g a b \clef treble c d dis e f g a b c d dis e)
 	f1~\startTrillSpan
-	f2~ f16\stopTrillSpan b,,-. c-. d-. e-. f-. g-. a-. 
+	f2~ \beamGap #2 f16\stopTrillSpan b,,-. c-. d-. e-. f-. g-. a-. 
 	b\noBeam d,-. e-. f-. g-. a-. b-. c-. d-. d,-. e-. f-. g-. a-. b-. c-.
 	d1\startTrillSpan~
 % Bars 461 to 465
@@ -487,10 +487,10 @@ musicPianoDownMvtI = \relative c' {
 	r8. <g b! d f>16 q8 r r8. q16 q8 r \mark \default
 	r2 \clef bass r16 c, g e c g e c
 	f4 r r16 f, a c f a c a
-	\voiceTwo \tuplet 3/2 4 {f8( f, a c a c f c f a f a}
+	\voiceTwo \tuplet 3/2 4 {\beamOffset #'(1 . 1) f8( f, a c a c f c f a f a}
 	\oneVoice \tuplet 3/2 4 {c) a( c f c f a f a c a c}
 % Bars 496 to 500
-	\tuplet 3/2 4 {f c f \clef treble a f a c a c f c f}
+	\tuplet 3/2 4 {\clef treble f c f a f a c a c f c f}
 	\tuplet 3/2 4 {a c, f a c, f a c, f a g f}
 	\tuplet 3/2 4 {e g f e ees d cis c b bes a aes}
 	\tuplet 3/2 4 {g fis f e ees d cis c b bes a aes)} \clef bass
@@ -511,7 +511,7 @@ musicPianoDownMvtI = \relative c' {
 	r16 g fis g a g f e d c d e f g a bes
 	b!( c b c d c bes a) g8( f) f-. f-.
 	f2~ f16 f( a g b! a g f)
-	\tempo "Più allegro." e4 \clef bass s s2 
+	e4 \clef bass s s2 
 	s1*4
 % Bars 516 to 520
 	
@@ -521,7 +521,7 @@ musicPianoDownMvtI = \relative c' {
 	\voiceOne r16 \oneVoice c( d e f g a b) c4 s
 % Bars 521 to 525
 	s1
-	\voiceOne r16 \oneVoice e, f g a b c d e4 s
+	\voiceOne \tweak extra-offset #'(0 . -0.8) r16 \oneVoice e, f g a b c d e4 s
 	s1
 	\voiceOne r16 \oneVoice g, a b c d e f g2\startTrillSpan~
 	g1~

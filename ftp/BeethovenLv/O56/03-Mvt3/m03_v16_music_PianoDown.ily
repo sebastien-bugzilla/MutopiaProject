@@ -61,7 +61,7 @@ musicPianoDownMvtIII = \relative c, {
 	
 	
 	s4 s16 \clef treble b''( c d e fis g a)
-	b( ais b fis g fis g dis' e dis e b
+	\shape #'(((0 . -1.7)(0 . 0.3)(0 . 0)(0 . 0)) ()) Slur b( ais b fis g fis g dis' e dis e b
 % Bars 71 to 75
 	c b c gis a gis a eis' fis eis fis cis
 	d cis d c b ais b d c b c b
@@ -73,7 +73,7 @@ musicPianoDownMvtIII = \relative c, {
 	a' d, a' d, a' d,
 	fis d fis d fis d
 	g d g d g d \clef treble
-	\tuplet 6/4 4 {r16 b''( ais b ais b g d' cis d cis d b g' fis g fis g)}
+	\tuplet 6/4 4 {\tupletOffset #2 r16 b''( ais b ais b g d' cis d cis d b g' fis g fis g)}
 % Bars 81 to 85
 	\grace {fis16[( g a]} g4)( fis!8) r r4
 	\tuplet 6/4 4 {d16( fis eis fis eis fis d a' gis a gis a fis d' cis d cis d)}
@@ -83,7 +83,7 @@ musicPianoDownMvtIII = \relative c, {
 % Bars 86 to 90
 	g2 \tuplet 6/4 4 {b,16 c b a b a
 	g a b c b a g a b c b a g a b c b a
-	g a b c d e f! g a b a g} \tuplet 3/2 8 {f e d } c32 b a g
+	g a b c d e f! g a b a g} \tuplet 3/2 8 {\once \tupletDown f e d } c32 b a g
 	\tuplet 6/4 4 {c16 d e f e d c d e f e d c d e f e d
 	c d e f e d c d e f e d} c8-. <cis, cis'>-.
 % Bars 91 to 95
@@ -133,7 +133,7 @@ musicPianoDownMvtIII = \relative c, {
 	d8-.) r r4 \acciaccatura e8 d16( cis) d-. d-.
 	g8 r r4 \acciaccatura d8 c!16( b c a
 	d8-.) r r4 \acciaccatura e8 d16( cis) d-. d-.
-	g8 r r4 <d d'>8. q16
+	g8 r r4 \beamOffset #'(-0.5 . -0.5) <d d'>8. q16
 	<g d'>8 r r4 <d d'>8. q16
 % Bars 146 to 150
 	<g, g'>8 r r4 r
@@ -172,7 +172,7 @@ musicPianoDownMvtIII = \relative c, {
 	s2.*2
 	
 % Bars 186 to 190
-	s8 e16( dis \tuplet 6/4 4 {e f! e d e d cis d cis b cis b)}
+	s8 e16( dis \tuplet 6/4 4 {e f! e d e d \once \tupletDown cis d cis b cis b)}
 	a8\noBeam a'16( gis a8-.) a16( b \clef treble cis8-.) cis16( d
 	e8-.) e16( f g!8-.) g16( a b cis d e)
 	f2( \afterGrace e4\trill) {d16[ e]}
@@ -210,11 +210,11 @@ musicPianoDownMvtIII = \relative c, {
 % Bars 216 to 220
 	\stemNeutral r a( c! d fis d c a fis' d c a)
 	r g( b d f! d b g f' d b g)
-	r g( c e g e c g g' e c g)
+	r g( c e \beamOffset #'(-0.7 . 0) g e c g \beamOffset #'(-0.7 . 0) g' e c g)
 	\ni R2. \no
 	r16 g(^\f a b c d e f a g f e)
 % Bars 221 to 225
-	d( fis g a b \clef treble c d e g f! e d) \mark \default
+	d_( fis g a b \clef treble c d e g f! e d) \mark \default
 	e( g, a b c d e f a g f e
 	d8)\noBeam \clef bass \ottava #-1 \tuplet 3/2 4 {fis,,,16(^\ff g fis)} \tuplet 6/4 4 {g( fis g fis g fis) g( fis g fis g fis)
 	g fis g fis g fis g fis g fis g fis g fis g fis g fis
@@ -323,7 +323,7 @@ musicPianoDownMvtIII = \relative c, {
 	\ni s2. \no
 	s16 \clef treble fis( g a b c d e g f! e d)
 	e( g, a b c d e f a g f e
-	d) fis,( g a b c d e g f! e d \mark \default
+	d) fis,( g a b c d e g f! e d 
 % Bars 326 to 330
 	e g, a b c d e f a g f e
 	d8) s s4 s
@@ -476,9 +476,9 @@ musicPianoDownMvtIII = \relative c, {
 	g,,^\f g' r b, b' r c, c' r e, e' r g,, g' r b, b' r} \mark \default
 	<c, c'>8 s s4 s
 % Bars 466 to 470
-	\tuplet 6/4 4 {c'16( e d c b a) g( c b a g f) e( a g f e d)}
+	\tuplet 6/4 4 {\tupletDown c'16( e d c b a) g( c b a g f) e( a g f e d)}
 	c8 s s4 s
-	\tuplet 6/4 4 {c'16( e d c b a) g( c b a g f) e( a g f e d)}
+	\tuplet 6/4 4 {c'16( e d c b a) g( c b a g f) e( a g f e d) \tupletNeutral}
 	r c-. d-. e-. f-. g-. a-. b-. c-. e,-. f-. g-. 
 	a b c d e g, a b c d e f
 % Bars 471 to 475

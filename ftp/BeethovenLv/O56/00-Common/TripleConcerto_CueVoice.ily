@@ -2994,7 +2994,7 @@ cueVoicePianoUpMvtI = \relative c {
 	\mergeDifferentlyHeadedOn
 	\mergeDifferentlyDottedOn
 % Bars 1 to 5
-	\InCueContext \change Staff = "down" \voiceOne c2(^\pp^\markup {Vlc.u.B} b8[ c e8. d16])
+	\change Staff = "down" \voiceOne c2(^\pp^\markup {Vlc.u.B} b8[ c e8. d16])
 	d4 r r2
 	d2( cis8[ d f8. e16])
 	e4 r r8. e16[( g8. f16)]
@@ -3008,7 +3008,7 @@ cueVoicePianoUpMvtI = \relative c {
 % Bars 11 to 15
 	<a c f!>4-. r r2
 	\clef bass <g d'>1^\markup {Cor.}\f\>
-	c1-\tweak Y-offset #-1 \pp
+	c1\pp
 	\clef treble b8[( c d8. c16)] c4-. c-.
 	<c e>1_\crescpocoapoco
 % Bars 16 to 20
@@ -3108,7 +3108,7 @@ cueVoicePianoUpMvtI = \relative c {
 	a g fis a g fis a g fis a g fis}
 	a8(_\dolce g fis g c b ais b
 % Bars 96 to 100
-	e)[ d( g8. f16)] e8( d c b)
+	e)[ d( g8. \noteESW #'(0 . 0.8) f16)] e8( d c b)
 	s1*17
 % Bars 101 to 105
 	
@@ -3138,7 +3138,7 @@ cueVoicePianoUpMvtI = \relative c {
 	s4 e2( d4
 % Bars 131 to 135
 	g8) s s2.
-	s4 <<{\InCueContext e2( f!8. d16 g8)} \\ {\InCueContext c,2(-\tweak X-offset #-1 \f b4 c8)}>>
+	s4 <<{\InCueContext e2( f!8. d16 g8)} \\ {\InCueContext \shape #'((0.3 . 1)(0 . 1)(0 . 1)(0 . 1)) Slur c,2(-\tweak X-offset #-1 \f b4 c8)}>>
 	s8 s2. % bar begin in previous line
 	s1*7
 % Bars 136 to 140
@@ -3163,9 +3163,9 @@ cueVoicePianoUpMvtI = \relative c {
 	q-. r r q-.
 	<a e'>-. <a cis>-. <fis a b>-. <d gis b>-.
 	<cis e a>-. <e a>8 r <d e gis>^\tuttibold r <d e b'> r 
-	r8. <cis e>16-.[ <d fis>8.-. <b d gis>16-.] <a cis a'>2\sf~
+	r8. <cis e>16-.[ <d fis>8.-. <b d gis>16-.] <a cis a'>2-\offset X-offset -0.5 \sf~
 % Bars 166 to 170
-	q8.([ <cis cis'>16 <e e'>8. <cis cis'>16)] <a a'>8 r <e b' d>4\p(
+	q8.([ <cis cis'>16 <e e'>8. <cis cis'>16)] <a a'>8 r <e b' d>4-\offset X-offset -1 \p(
 	<e a cis>8) r <b'' d>4\pp( <a cis>8) s s4
 	s1*15
 % Bars 171 to 175
@@ -3349,7 +3349,7 @@ cueVoicePianoUpMvtI = \relative c {
 	<a c f> r r2
 	s1*2
 	
-	r4 <f' a>2(\f^\tuttibold <g bes>8. <e g>16)
+	r4 \shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur <f' a>2(\f^\tuttibold <g bes>8. <e g>16)
 % Bars 371 to 375
 	<f c'>8 s s4 s2
 	s1*7
@@ -3376,7 +3376,7 @@ cueVoicePianoUpMvtI = \relative c {
 % Bars 401 to 405
 	<c e c'>-. <g c g'>-. <g b g'>-. <g d' f g>-.^\tuttibold
 	r8. <e' g>16-.[ <f a>8. <d b'>16-.] <e c'>2\sf~
-	q8.[ <g c e>16( <g e' g>8. <g c e>16]) <e g c>8 r^\solobold <g, d' f>4(\p
+	q8.[ <g c e>16( <g e' g>8. <g c e>16]) <e g c>8 r^\solobold <g, d' f>4(-\offset X-offset -1 \p
 	<g c e>8) r <d'' f>4(\pp <c e>8) s s4
 	s1*14
 % Bars 406 to 410
@@ -3470,7 +3470,7 @@ cueVoicePianoUpMvtI = \relative c {
 }
 cueVoicePianoDownMvtI = \relative c {
 % Bars 1 to 5
-	\InCueContext \voiceTwo c,2( b8[ c e8. d16])
+	\voiceTwo c,2( b8[ c e8. d16])
 	d4 r r2
 	d2( cis8[ d f8. e16)]
 	e4 r r8. e16[( g8. f16])
@@ -3600,16 +3600,16 @@ cueVoicePianoDownMvtI = \relative c {
 		\InCueContext q \clef treble \tuplet 3/2 4 {b''8-.^\markup {Vlc.solo.} a-. g-. g-. f-. e-. e-. d-. c-.  
 		\clef bass c b a a g fis c' b a c b a
 		c b a c b a c b a c b a}
-		c_( b ais b \change Staff = "up" \voiceTwo e d cis d
+		\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 2)) Slur c_( b ais b \change Staff = "up" \voiceTwo e d cis d
 % Bars 96 to 100
 		g)[ f( b8. a16]) g8( f e d)
 	} \\ {
 		\InCueContext s4 r r2
-		R1
-		R
-		R
+		\omitMMRN R1
+		\omitMMRN R
+		\omitMMRN R
 % Bars 96 to 100
-		R
+		\omitMMRN R
 	} >>
 	s1*17
 	
@@ -3850,7 +3850,7 @@ cueVoicePianoDownMvtI = \relative c {
 	<f f'> r r2
 	s1*2
 	
-	\clef bass r4 \voiceOne a'8.( b!16 c4 g8. c16) \oneVoice
+	\clef bass r4 \voiceOne \shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur a'8.( b!16 c4 g8. c16) \oneVoice
 % Bars 371 to 375
 	s1*8
 % Bars 376 to 380
@@ -3958,7 +3958,7 @@ cueVoicePianoDownMvtI = \relative c {
 	dis( e dis e) g8.( f16) e( f e f) <a, a'>8.-. <g g'>16-.
 % Bars 516 to 520
 	<f f'>8.-.[ <e e'>16-. <d d'>8.-. <c c'>16-.] <b b'>8.-.[ <d d'>16-. <f f'>8.-. <e e'>16-.]
-	<d d'>8.-.[ <c c'>16-. <b b'>8.-. <a a'>16-.] \voiceTwo <b b'>8.[-. <g g'>16-. <c c'>8.-. <e, e'>16-.]
+	<d d'>8.-.[ <c c'>16-. <b b'>8.-. <a a'>16-.] \voiceTwo \beamOffset #'(0.5 . 0.5) <b b'>8.[-. <g g'>16-. <c c'>8.-. <e, e'>16-.]
 	<f f'>4-. r r2
 	s1
 	<c' c'>16 \oneVoice s8. s4 s <g g'>8 r
@@ -3976,7 +3976,7 @@ cueVoicePianoThirdMvtI = \relative c {
 	\InCueContext s1*12
 % Bars 11 to 15
 	
-	\change Staff = "up" \shiftOff e16 g \change Staff = "down" e g s2.
+	\change Staff = "up" \shiftOff \beamOffset #'(0.3 . 0.3) e16 g \change Staff = "down" e g s2.
 	s1*21
 % Bars 16 to 20
 	
@@ -4036,7 +4036,7 @@ cueVoicePianoThirdMvtI = \relative c {
 	
 % Bars 76 to 80
 	
-	\change Staff = "down" R1
+	\change Staff = "down" \omitMMRN R1
 	r4 b8 r b r b r
 	b4 r r2
 	r4 bes8 r bes r r4
@@ -4056,10 +4056,10 @@ cueVoicePianoThirdMvtI = \relative c {
 	e\rest <b d g> e\rest <d f g>
 	<d f g> e\rest e2\rest
 	\voiceTwo R1
-	R
-	R
+	\tweak extra-offset #'(1 . 0) R
+	\tweak extra-offset #'(-0.5 . 0) R
 % Bars 96 to 100
-	R 
+	\omitMMRN \tweak extra-offset #'(0.6 . 0) R 
 	s1*17
 % Bars 101 to 105
 	
@@ -4315,7 +4315,7 @@ cueVoicePianoUpMvtII = \relative c {
 	r16 <bes des>8\sf( <des f>16_\dimmarkup <c ees> <bes des>)
 	\voiceOne c4(\p bes16 c)
 	des4( c16 des) \oneVoice
-	<aes ees'>8-\tweak X-offset #0 \crescD <<{ <bes e>4 } {s16\f\> s s s\!}>>
+	<aes ees'>8-\tweak X-offset #0 \crescD <<{ <bes e>4 } {\hairpinShorten #'(-0.3 . -1) s16\f\> s s s\!}>>
 % Bars 16 to 20
 	<<{\InCueContext f'4(~ f16 des)} \\ {\InCueContext aes16-\tweak X-offset #-0.3 \p a_\crescmarkup bes c des bes}>>
 	<aes! c>32\p q q q  r <ees aes c> q q r q[ r <ees a c>]
@@ -4377,7 +4377,7 @@ cueVoicePianoDownMvtII = \relative c {
 	<ees, ees'> r ees r ees r
 	ees[ r ees] r ees32[ r e] r
 	f[ r d] r ees!16-\tweak extra-offset #'(0 . -2.5) ^\sf r ees^\p r
-	\voiceOne aes16 ees'~ ees32 s32 s8. \oneVoice
+	\voiceOne aes16 ees'_~ ees32 s32 s8. \oneVoice
 % Bars 21 to 25
 	s4.*19
 % Bars 26 to 30
@@ -4448,11 +4448,10 @@ cueVoicePianoThirdMvtII = \relative c {
 %    M V T  3
 %===============================================================================
 cueVoicePianoUpMvtIII = \relative c {
-	\InCueContext
 	\mergeDifferentlyHeadedOn
 	\mergeDifferentlyDottedOn
 % Bars 1 to 5
-	<c' e>16(-\tweak X-offset #-2 \pp g') <c, e>( g') <c, e>( g') <c, e>( g') <c, e>( g') <c, e>( g')
+	<c' e>16(-\tweak X-offset #-2.3 \pp g') <c, e>( g') <c, e>( g') <c, e>( g') <c, e>( g') <c, e>( g')
 	<c, e>( g') <c, e>( g') <c, e>( g') <c, e>( g') <c, e>( g') <c, e>( g') 
 	<c, f>( a') <c, f>( a') <c, f>( a') <c, f>( a') <c, f>( a') <c, f>( a') 
 	<d, f>( g) <d f>( g) <b, d>( f') <b, d>( f') <b, d>( f') <b, d>( f') 
@@ -4485,10 +4484,10 @@ cueVoicePianoUpMvtIII = \relative c {
 	
 	s2 \voiceOne \acciaccatura fis'8 g^\tuttibold-\tweak X-offset #-2.2 -\tweak Y-offset #-3 \ff g 
 	\oneVoice <c, e g>4. \voiceOne a'16( b c8 d)
-	\grace {c16_( d} e4) c4.(^\sf b8)
+	\grace {c16_( d} e4) c4.(-\offset X-offset -0.3 ^\sf b8)
 	a([ f')] b,( \oneVoice <g d' f g>4) q8
 % Bars 41 to 45
-	q4\sf( <e g c>8) r <g' b d g>4\sf
+	q4-\offset X-offset 0.5 \sf( <e g c>8) r <g' b d g>4\sf
 	<e c'>16\ff b' c d e d c b a gis a b
 	c b a g! f e f g a g f e
 	d cis d e f e d c b c d e
@@ -4536,7 +4535,7 @@ cueVoicePianoUpMvtIII = \relative c {
 	
 	s8 b[(-\tweak extra-offset #'(0 . -5)\trill^\tuttibold \grace {a16 b} g8) d'-\tweak extra-offset #'(0 . -2.2)\trill( \grace {c16 d} b8) \afterGrace g']\trill {fis16 g}
 	g4(\p^\solobold fis8) r r4
-	d8[\f^\tuttibold fis-\tweak extra-offset #'(0 . -2.2) \trill( \grace {e16 fis} d8) a'-\tweak extra-offset #'(0 . -2.2) \trill( \grace {g16 a} fis8) \afterGrace d'\trill] {cis16 d}
+	d8[-\offset X-offset -0.5 \f^\tuttibold fis-\tweak extra-offset #'(0 . -2.2) \trill( \grace {e16 fis} d8) a'-\tweak extra-offset #'(0 . -2.2) \trill( \grace {g16 a} fis8) \afterGrace d'\trill] {cis16 d}
 % Bars 96 to 100
 	c!4\p^\solobold( b8) r r4
 	<g,, b>8 <b d> <g b> <b d> <g b> <b d>
@@ -4585,12 +4584,12 @@ cueVoicePianoUpMvtIII = \relative c {
 	
 	
 	
-	s2 \voiceOne \acciaccatura fis'8 g^\tuttibold\ff g
+	s2 \voiceOne \acciaccatura fis'8 g\ff^\tuttibold g
 % Bars 156 to 160
 	\oneVoice <c, e g>4. \voiceOne a'16( b c8 d)
 	\grace {c16_( d} e4) c4.(^\sf b8)
 	a[( f')] b,( \oneVoice <g d' f g>4) q8
-	q4\sf( <c, e g c>8) r <g''_~ b g'>4(\sf
+	q4\sf( <c, e g c>8) r \dynEO #'(0 . 1) <g''_~ b g'>4(\sf
 	<g c>8) r <e, gis b d e>4(\sf <c e a>8) r
 % Bars 161 to 165
 	<e'_~ gis e'>4(\sf <e a>8) r <c, e g! bes c>4(\sf
@@ -4599,7 +4598,7 @@ cueVoicePianoUpMvtIII = \relative c {
 	<dis, dis'>8) r <a' a'>4.(\sf <dis, dis'>8)
 	<e e'>8\f <gis b e>16 q q8-.[ q-. <a c e>-. q-.]
 % Bars 166 to 170
-	<gis b e>\p\noBeam <e' gis b e>16 q q8-. q-. <e a c e>-. q-.
+	<gis b e>-\offset X-offset -0.5 \p\noBeam <e' gis b e>16 q q8-. q-. <e a c e>-. q-.
 	<e gis b e>\f\noBeam <gis, b e>16 q <a c e>8\sf q16 q <gis b e>8\sf q16 q
 	<a c e>8\sf q16 q <gis b e>8\sf q16 q <a c e>8\sf q16 q
 	<gis b e>4.\sf f'8-. e-. d-.
@@ -4708,7 +4707,7 @@ cueVoicePianoUpMvtIII = \relative c {
 	s2.*3
 % Bars 326 to 330
 	
-	s8 <g g'>16^\tuttibold\f q <b b'>8 q16 q <d d'>8 q16 q
+	s8 \dynEO #'(0 . 0.3) <g g'>16^\tuttibold\f q <b b'>8 q16 q <d d'>8 q16 q
 	<f b d f>8 r^\solobold r4 r
 	s2.
 	s2 <b, d f>8\p r
@@ -4826,10 +4825,9 @@ cueVoicePianoUpMvtIII = \relative c {
 	
 }
 cueVoicePianoDownMvtIII = \relative c {
-	\InCueContext 
 % Bars 1 to 5
-	\clef bass \ottavaBracket "8va" #'upright \voiceOne g'4.\startTextSpan-\tweak X-offset #2 ^\markup {Vcl.solo.} a16 b c8 d\stopTextSpan
-	\clef treble e'4( c4. b8)
+	\clef bass \voiceOne \ottava #1 g''4.-\tweak X-offset #2 ^\markup {Vcl.solo.} a16 b \beamOffset #'(-0.5 . -0.5) c8 d \ottava #0
+	\clef treble e4( c4. b8)
 	a( f'~ f) f16_( e) e_( d) d_( c) \clef bass
 	\oneVoice c,4 c c
 	c8 r r4 r
@@ -5205,9 +5203,8 @@ cueVoicePianoDownMvtIII = \relative c {
 	
 }
 cueVoicePianoThirdMvtIII = \relative c {
-	\InCueContext
 % Bars 1 to 5
-	\change Staff = "down" \voiceOne c,8 \voiceTwo r r4 r
+	\change Staff = "down" \voiceOne c8 \oneVoice r r4 r \voiceTwo 
 	\ni R2.
 	R \no
 	s2.*13
@@ -5217,7 +5214,7 @@ cueVoicePianoThirdMvtIII = \relative c {
 	
 % Bars 16 to 20
 	
-	s2 \change Staff = "up" g'''8.( b16
+	s2 \change Staff = "up" g''8.( b16
 	c8-.) s s4 c8.-. <c e>16-.
 	s2.*18
 % Bars 21 to 25
@@ -5365,7 +5362,7 @@ cueVoicePianoThirdMvtIII = \relative c {
 	c~
 % Bars 261 to 265
 	c~
-	c8 c c16 s8. s4
+	c8\noBeam c c16 s8. s4
 	s2.*23
 % Bars 266 to 270
 	

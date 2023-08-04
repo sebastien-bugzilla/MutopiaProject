@@ -32,7 +32,7 @@ musicPianoDownMvtII = \relative c {
 		ees[ c aes] 
 		g[ bes! ees] 
 		aes,[ c ees])}
-	\tuplet 3/2 16 {des!([ c ees] 
+	\tuplet 3/2 16 {\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur des!([ c ees] 
 		des[ a c] 
 		bes[ fis aes] 
 		g[ d f] 
@@ -44,7 +44,7 @@ musicPianoDownMvtII = \relative c {
 		c'[ a bes] 
 		c,[ bes' aes] 
 		des,[ c' bes])}
-	\tuplet 3/2 16 {bes,[_( aes' g] 
+	\tuplet 3/2 16 {\shape #'((0 . 2)(0 . 0)(0 . 0)(0 . 0)) Slur bes,[_( aes' g] 
 		bes[ g ees] \clef bass \voiceTwo 
 		bes[ g ees] 
 		bes[ g ees] 
@@ -53,9 +53,9 @@ musicPianoDownMvtII = \relative c {
 	\tuplet 3/2 16 {aes32[ aes' c] 
 		ees[ aes] \oneVoice r} 
 		r8 \voiceTwo 
-		\shape #'((0 . 0) (0 . 0) (3 . 9) (7 . 6)) Slur \tuplet 3/2 32 {des,,64[^( ees des')]} 
+		\shape #'((0 . 0) (1 . 4) (3 . 8) (7 . 6)) Slur \tuplet 3/2 32 {des,,64[^( ees des')]} 
 		r32
-		\shape #'((0 . 0) (0 . 0) (3 . 9) (7 . 6)) Slur \tuplet 3/2 32 {c,64[^( ees c'])} r32
+		\shape #'((0 . 0) (1 . 4) (3 . 8) (7 . 7)) Slur \tuplet 3/2 32 {c,64[^( ees c'])} r32
 % Bars 26 to 30
 	\tuplet 3/2 16 {g,32[ g' bes] 
 		des[ ees g] 
@@ -98,7 +98,7 @@ musicPianoDownMvtII = \relative c {
 		aes,64[ aes'] 
 		r32
 	\tuplet 3/2 16 {aes,32[ aes' c]} 
-		r16 \tuplet 3/2 16 {g,32-\tweak extra-offset #'(1 . 18.6) \sustainOn\sf[ g' bes] 
+		r16 \tuplet 3/2 16 {g,32-\tweak extra-offset #'(1 . 18.6) \sustainOn-\offset X-offset -1 \sf[ g' bes] 
 		c[ e g] \oneVoice 
 		bes r r} 
 		r16-\tweak extra-offset #'(3 . 8) \sustainOff \voiceTwo

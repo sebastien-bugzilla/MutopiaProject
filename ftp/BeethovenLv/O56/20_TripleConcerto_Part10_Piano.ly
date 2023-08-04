@@ -13,15 +13,16 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.20.0"
+\version "2.24.1"
 \include "./00-Common/TripleConcerto_Header.ily"
-\include "./00-Common/TripleConcerto_PaperParts.ily"
-\include "./00-Common/TripleConcerto_timeMvt.ily"
-\include "./00-Common/TripleConcerto_OptionParts.ily"
-\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartPiano.ily"
+\include "./00-Common/TripleConcerto_PaperParts.ily"
+\include "./00-Common/TripleConcerto_LayoutParts.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
+\include "./00-Common/TripleConcerto_Format_Part10_Piano.ily"
 \include "./01-Mvt1/m01_v15_music_PianoUp.ily"
 \include "./01-Mvt1/m01_v16_music_PianoDown.ily"
 \include "./02-Mvt2/m02_v15_music_PianoUp.ily"
@@ -51,30 +52,29 @@
 			\new Staff = "up" {
 				<<
 					\new Voice {
-						\formatPianoUpMvtI
+						\formatPianoMvtI
 					}
 					\new Voice {
-						\timeMvtI \generalOptions \partOptions
-						 \musicPianoUpMvtI
+						\keepWithTag #'(piano) \tempiPartMvtI
 					}
 					\new Voice {
-						\timeMvtI \generalOptions \partOptions
-						\cueVoicePianoUpMvtI
+						\InCueContext \cueVoicePianoUpMvtI
 					}
 					\new Voice {
-						\cueVoicePianoThirdMvtI
+						\InCueContext \cueVoicePianoThirdMvtI
+					}
+					\new Voice {
+						\timeMvtI \musicPianoUpMvtI
 					}
 				>>
 			}
 			\new Staff = "down" {
 				<<
 					\new Voice {
-						\timeMvtI \generalOptions \partOptions
-						\namePianoDownMvtI \musicPianoDownMvtI
+						\InCueContext \cueVoicePianoDownMvtI
 					}
 					\new Voice {
-						\clef bass \generalOptions \partOptions
-						\cueVoicePianoDownMvtI
+						\timeMvtI \namePianoDownMvtI \musicPianoDownMvtI
 					}
 				>>
 			}
@@ -82,16 +82,10 @@
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 			\context {
 				\PianoStaff
 				\consists #Span_stem_engraver
@@ -103,31 +97,29 @@
 			\new Staff = "up" {
 				<<
 					\new Voice {
-						\formatPianoUpMvtII
+						\formatPianoMvtII
 					}
 					\new Voice {
-						\timeMvtII \generalOptions \partOptions
-						\musicPianoUpMvtII
+						\keepWithTag #'(piano) \tempiPartMvtII
 					}
 					\new Voice {
-						\timeMvtII \generalOptions \partOptions
-						\cueVoicePianoUpMvtII
+						\InCueContext \cueVoicePianoUpMvtII
 					}
 					\new Voice {
-						\timeMvtII \generalOptions \partOptions
-						\cueVoicePianoThirdMvtII 
+						\InCueContext \cueVoicePianoThirdMvtII 
+					}
+					\new Voice {
+						\timeMvtII \musicPianoUpMvtII
 					}
 				>>
 			}
 			\new Staff = "down" {
 				<<
 					\new Voice {
-						\timeMvtII \generalOptions \partOptions
-						\namePianoDownMvtII \musicPianoDownMvtII
+						\InCueContext \cueVoicePianoDownMvtII
 					}
 					\new Voice {
-						\timeMvtII \generalOptions \partOptions
-						\cueVoicePianoDownMvtII
+						\timeMvtII \namePianoDownMvtII \musicPianoDownMvtII
 					}
 				>>
 			}
@@ -135,16 +127,10 @@
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 			\context {
 				\PianoStaff
 				\consists #Span_stem_engraver
@@ -156,31 +142,29 @@
 			\new Staff = "up" {
 				<<
 					\new Voice {
-						\formatPianoUpMvtIII
+						\formatPianoMvtIII
 					}
 					\new Voice {
-						\timeMvtIII \generalOptions \partOptions
-						\musicPianoUpMvtIII
+						\keepWithTag #'(piano) \tempiPartMvtIII
 					}
 					\new Voice {
-						\timeMvtIII \generalOptions \partOptions
-						\cueVoicePianoUpMvtIII
+						\InCueContext \cueVoicePianoUpMvtIII
 					}
 					\new Voice {
-						\timeMvtIII \generalOptions \partOptions
-						\cueVoicePianoThirdMvtIII
+						\InCueContext \cueVoicePianoThirdMvtIII
+					}
+					\new Voice {
+						\timeMvtIII \musicPianoUpMvtIII
 					}
 				>>
 			}
 			\new Staff = "down" {
 				<<
 					\new Voice {
-						\timeMvtIII \generalOptions \partOptions
-						\namePianoDownMvtIII \musicPianoDownMvtIII
+						\timeMvtIII \namePianoDownMvtIII \musicPianoDownMvtIII
 					}
 					\new Voice {
-						\timeMvtIII \generalOptions \partOptions
-						\cueVoicePianoDownMvtIII
+						\InCueContext \cueVoicePianoDownMvtIII
 					}
 				>>
 			}
@@ -188,16 +172,10 @@
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 			\context {
 				\PianoStaff
 				\consists #Span_stem_engraver
