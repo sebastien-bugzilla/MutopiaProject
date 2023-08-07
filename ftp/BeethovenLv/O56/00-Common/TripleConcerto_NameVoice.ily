@@ -373,17 +373,17 @@ namePianoDownMvtIII = {
 %###############################################################################
 nameViolinIMvtI = {
 	\set Staff.instrumentName = "Violino I"
-	\set Staff.shortInstrumentName = "Vln I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"violin"
 }
 nameViolinIMvtII = {
 	\set Staff.instrumentName = "Violino I"
-	\set Staff.shortInstrumentName = "Vln I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"violin"
 }
 nameViolinIMvtIII = {
 	\set Staff.instrumentName = "Violino I"
-	\set Staff.shortInstrumentName = "Vln I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"violin"
 }
 %###############################################################################

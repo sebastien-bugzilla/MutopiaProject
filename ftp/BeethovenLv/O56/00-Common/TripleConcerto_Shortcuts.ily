@@ -26,6 +26,12 @@ pespressivo = \markup {\dynamic p \italic espressivo}
 piuf = \markup {\italic {più} \dynamic f}
 plegato = \markup {\dynamic p \italic {legato}}
 ppcrescpocoapoco = \markup {\dynamic pp \italic {cresc. poco a poco}}
+ppcresc-pocoapoco = \markup {
+	\column { \lower #1
+		\line { \dynamic pp \italic cresc.}
+		\line { \italic "poco a poco"}
+	}
+}
 ppsempre = \markup {\dynamic pp \italic sempre}
 psottovoce = \markup {\dynamic p \italic {sotto voce}}
 pstacc = \markup {\dynamic p \italic stacc.}
