@@ -14,7 +14,7 @@ crescsottovoce = \markup {\italic {cresc. sotto voce}}
 decresc = \markup {\italic decresc.}
 dimin = \markup {\italic dimin.}
 dimmarkup = \markup {\italic dim.}
-farco=^\markup {\dynamic f \italic arco}
+farco = \markup {\dynamic f \italic arco}
 fcresc = \markup { \dynamic f \italic cresc.}
 fmarcato = \markup { \dynamic f \italic marcato}
 fpmoltopiano = \markup {\dynamic fp \italic {molto piano} }
@@ -65,28 +65,28 @@ senzasordino = \markup {\italic {senza sordino}}
 sottovoce = \markup {\italic {sotto voce}}
 staccato = \markup {\italic staccato}
 stacc = \markup {\italic stacc.}
-tenmarkup=^\markup {\italic ten.}
+tenmarkup = \markup {\italic ten.}
 
 
 
 % instrumentation
 
-basso=^\markup {Basso.}
-klavier_solobold=^\markup {\bold \abs-fontsize #10 \column {\lower #1 Klavier solo}}
-klaviersolobold=^\markup {\bold \abs-fontsize #10 {Klavier solo}}
-solobold=^\markup {\bold \abs-fontsize #10 Solo}
+basso = \markup {Basso.}
+klavier_solobold = \markup {\bold \abs-fontsize #10 \column {\lower #1 Klavier solo}}
+klaviersolobold = \markup {\bold \abs-fontsize #10 {Klavier solo}}
+solobold = \markup {\bold \abs-fontsize #10 Solo}
 solo = \markup {Solo.}
-tuttibold=^\markup {\bold \abs-fontsize #10 Tutti}
-tutti = \markup {\italic tutti}
+tuttibold = \markup {\bold \abs-fontsize #10 Tutti}
 tutti = \markup {Tutti.}
+tutticonsordino = \markup {Tutti. \italic "Con sordino"}
 unobassoeviolonc = \markup {Uno Basso e Violonc.}
-violinesolobold=^\markup {\bold \abs-fontsize #10 {Violine solo}}
-violine-solobold=^\markup {\bold 
+violinesolobold = \markup {\bold \abs-fontsize #10 {Violine solo}}
+violine-solobold = \markup {\bold 
 	\abs-fontsize #10 {
 		\column { \lower #1.5 "Violine" "solo"}
 	}
 }
-violoncellosolobold=^\markup {\bold \abs-fontsize #10 {Violoncello solo}}
+violoncellosolobold = \markup {\bold \abs-fontsize #10 {Violoncello solo}}
 
 
 % glyphs
@@ -94,16 +94,16 @@ violoncellosolobold=^\markup {\bold \abs-fontsize #10 {Violoncello solo}}
 natural = \markup {\tiny \natural} 
 flat = \markup { \tiny \flat}
 sharp = \markup {\tiny \sharp} 
-one=^\markup {\tiny \number 1}
-two=^\markup {\tiny \number 2}
-three=^\markup {\tiny \number 3}
-four=^\markup {\tiny \number 4}
-five=^\markup {\tiny \number 5}
-six=^\markup {\tiny \number 6}
-seven=^\markup {\tiny \number 7}
-eight=^\markup {\tiny \number 8}
-nine=^\markup {\tiny \number 9}
-ten=^\markup {\tiny \number 10}
+one = \markup {\tiny \number 1}
+two = \markup {\tiny \number 2}
+three = \markup {\tiny \number 3}
+four = \markup {\tiny \number 4}
+five = \markup {\tiny \number 5}
+six = \markup {\tiny \number 6}
+seven = \markup {\tiny \number 7}
+eight = \markup {\tiny \number 8}
+nine = \markup {\tiny \number 9}
+ten = \markup {\tiny \number 10}
 
 sharptrill = \markup { 
 	\general-align #X #CENTER 
