@@ -10,7 +10,7 @@ musicViolaMvtI = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*6
+	<>-\offset X-offset -5 ^\tutti R1*6
 % Bars 6 to 10
 	
 	g2\pp( c~
@@ -28,9 +28,9 @@ musicViolaMvtI = \relative c' {
 	\repeat tremolo 4 {c( g} \repeat tremolo 4 {c g)}
 	\repeat tremolo 4 {c( g} \repeat tremolo 4 {c g)}
 	\repeat tremolo 4 {e'( c} \repeat tremolo 4 {e c)}
-	\repeat tremolo 4 {g'( e} \repeat tremolo 4 {c' g)}
+	\repeat tremolo 4 {g'( e} \repeat tremolo 4 {c' g)\!}
 % Bars 21 to 25
-	a16\ff\noBeam c, c c c c c c c2:16
+	a16-\offset X-offset -1 \ff\noBeam c, c c c c c c c2:16
 	c: c:
 	c: c:
 	c: c:
@@ -62,7 +62,7 @@ musicViolaMvtI = \relative c' {
 % Bars 46 to 50
 	des_\crescmarkup
 	ees4\p( c) c-.( c-.)
-	bes1_\crescmarkup~
+	bes1-\offset X-offset -1.5 _\crescmarkup~
 	bes2.\sf\> g4
 	aes2\pp( g~
 % Bars 51 to 55
@@ -143,8 +143,8 @@ musicViolaMvtI = \relative c' {
 	b g f g b g f g b g f g b g f g
 % Bars 116 to 120
 	d' g, f g d' g, f g d' g, f g f g f g
-	e g e g e g e g e g e g e g e g \markXoffset #-0.3 \mark \default
-	e8\p-\tweak X-offset #1 ^\solo r r4 r2
+	e g e g e g e g e g e g e g e g \mark \default
+	e8\p^\solo r r4 r2
 	R1*6
 % Bars 121 to 125
 	
@@ -178,8 +178,8 @@ musicViolaMvtI = \relative c' {
 % Bars 146 to 150
 	b4 r r2
 	e4 r r2
-	r r4 r8 \tuplet 3/2 4 {b16[( cis dis)]} \markXoffset #-0.2 \mark \default
-	e2\ff-\tweak X-offset #1 ^\tutti b'4-. gis-.
+	r r4 r8 \tuplet 3/2 4 {b16[( cis dis)]} \mark \default
+	e2\ff^\tutti b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
 	e-.^\solo r r2
@@ -234,11 +234,9 @@ musicViolaMvtI = \relative c' {
 % Bars 196 to 200
 	
 % Bars 201 to 205
-	\cueDuring #"cueVoiceViolaMvtI" #UP {
-		\ni \clef treble R1
-		R
-		\mmrPos #-6 R \no \clef alto
-	}
+	\ni \clef treble \voiceTwo \tweak extra-offset #'(-0.5 . 0) R1
+	\tweak extra-offset #'(-0.5 . 0) R
+	\mmrPos #-6 R \no \clef alto \oneVoice 
 	e'1(\p
 	a,4\f) r r2
 % Bars 206 to 210
@@ -263,8 +261,8 @@ musicViolaMvtI = \relative c' {
 	gis4 gis r gis
 	r gis r gis
 	\crescText "cresc. poco a poco" d8\pp\< d d d  d d d d 
-	gis gis gis gis d d d d \markXoffset #-0.2 \mark \default
-	c16\ff-\tweak X-offset #0.5 ^\tutti a a a a4:16 a2:
+	gis gis gis gis d d d d \mark \default
+	c16\ff^\tutti a a a a4:16 a2:
 % Bars 226 to 230
 	c: c:
 	c: c:
@@ -456,17 +454,16 @@ musicViolaMvtI = \relative c' {
 	g-. g'-. d-. b-.
 	g-.^\solo r r2
 	R1*4
+	
 % Bars 391 to 395
 	
 	
-	\cueDuring #"cueVoiceViolaMvtI" #UP {
-		\ni \clef treble R1
-		R
-		R
+	\ni \clef treble \voiceTwo R1
+	\mmrPos #-6 R
+	R
 % Bars 396 to 400
-		R
-		R \clef alto \no
-	}
+	R
+	R \clef alto \no \oneVoice 
 	f'4^\pizz r f f 
 	f r r d 
 	g a, a g
@@ -512,11 +509,9 @@ musicViolaMvtI = \relative c' {
 % Bars 436 to 440
 	
 	
-	\cueDuring #"cueVoiceViolaMvtI" #UP {
-		\ni \clef treble R1
-		R
-		R \clef alto \no
-	}
+	\ni \clef treble \voiceTwo R1
+	R
+	\mmrPos #-6 R \clef alto \no \oneVoice 
 % Bars 441 to 445
 	e1\p
 	f4\f r r2
@@ -575,12 +570,11 @@ musicViolaMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceViolaMvtI" #UP {
-		\ni \clef treble R1
-		R
+	\ni \clef treble \voiceTwo R1
+	R
 % Bars 491 to 495
-		R \no \mark \default
-		r2 \clef alto } r8. <c, c'>16[\mf^\arco q8. q16]
+	R \no \mark \default \oneVoice 
+	r2 \clef alto r8. <c, c'>16[\mf^\arco q8. q16]
 	q8 r r4 r8. c'16[ c8. c16]
 	c1\p(
 	a
@@ -594,8 +588,8 @@ musicViolaMvtI = \relative c' {
 	d
 	f~
 	f
-	<d f>\<~
-	q\>
+	<< <d f>~ {\hairpinShorten #'(0 . -1) s4\< s s s\!} >>
+	<< q1 {\hairpinShorten #'(0 . -1) s4\> s s s\!} >>
 % Bars 506 to 510
 	<c e>8\! g'\pp g g  g g g g
 	bes2:8 bes:
@@ -606,7 +600,7 @@ musicViolaMvtI = \relative c' {
 	bes: bes:
 	a: a:
 	g: g:
-	\tempo "Più allegro." r2^\tutti cis,16(_\crescmarkup d cis d) f8.( e16)
+	r2^\tutti cis,16(_\crescmarkup d cis d) f8.( e16)
 	dis16( e dis e) g8.( f16) e( f e f) a8.-. g16-.
 % Bars 516 to 520
 	f8.\f[-. e'16-. d8.-. c16]-. b8.[-. d16-. f8.-. e16]-. 

@@ -13,24 +13,22 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.20.0"
+\version "2.24.1"
 \include "./00-Common/TripleConcerto_Header.ily"
-\include "./00-Common/TripleConcerto_PaperParts.ily"
-\include "./00-Common/TripleConcerto_timeMvt.ily"
-\include "./00-Common/TripleConcerto_OptionParts.ily"
-\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartBratsche.ily"
+\include "./00-Common/TripleConcerto_PaperParts.ily"
+\include "./00-Common/TripleConcerto_LayoutParts.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
+\include "./00-Common/TripleConcerto_Format_Part13_Bratsche.ily"
 \include "./01-Mvt1/m01_v19_music_Viola.ily"
 \include "./02-Mvt2/m02_v19_music_Viola.ily"
 \include "./03-Mvt3/m03_v19_music_Viola.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceViolaMvtI" { \cueVoiceViolaMvtI }
-\addQuote "cueVoiceViolaMvtII" { \cueVoiceViolaMvtII }
-\addQuote "cueVoiceViolaMvtIII" { \cueVoiceViolaMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -52,23 +50,22 @@
 				\formatViolaMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameViolaMvtI \musicViolaMvtI
+				\keepWithTag #'(viola) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolaMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameViolaMvtI \musicViolaMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -77,23 +74,22 @@
 				\formatViolaMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameViolaMvtII \musicViolaMvtII
+				\keepWithTag #'(viola) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolaMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameViolaMvtII \musicViolaMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.7 \bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -102,23 +98,22 @@
 				\formatViolaMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameViolaMvtIII \musicViolaMvtIII
+				\keepWithTag #'(viola) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolaMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameViolaMvtIII \musicViolaMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

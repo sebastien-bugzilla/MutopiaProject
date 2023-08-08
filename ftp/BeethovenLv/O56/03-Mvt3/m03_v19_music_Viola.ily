@@ -46,7 +46,7 @@ musicViolaMvtIII = \relative c' {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 <b d>\ff^\arco\fermata r
+	\grace {s8.} r4 <b d>\ff-\offset X-offset -1.3 ^\arco\fermata r
 	R2.*2
 	
 	c8(\pp-. c-. c-. c-. c-. c)-. 
@@ -95,12 +95,10 @@ musicViolaMvtIII = \relative c' {
 	R2.*2
 % Bars 71 to 75
 	
-	\cueDuring #"cueVoiceViolaMvtIII" #UP {
-		\ni \clef treble R2.
-		R
-		R
-		R \no \clef alto
-	}
+	\ni \clef treble \voiceTwo R2.
+	\mmrPos #-6 R
+	R
+	R \no \clef alto \oneVoice 
 % Bars 76 to 80
 	d4^\pizz r r
 	d r r
@@ -113,14 +111,12 @@ musicViolaMvtIII = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceViolaMvtIII" #UP {
-		\ni \clef treble R2.
-		R
+	\ni \clef treble \voiceOne R2.
+	\mmrPos #6 R
 % Bars 91 to 95
-		R
-		\mmrPos #-8 R \no \markXoffset #-0.2 \mark \default \clef alto
-	}
-	g16(\f-\tweak X-offset #1 ^\arco d g d g d g d g d g d)
+	\voiceTwo R
+	\mmrPos #-8 R \no \oneVoice \mark \default \clef alto
+	g16(\f^\arco d g d g d g d g d g d)
 	a'8\p d, a' d, a' d,
 	fis16(\f d fis d fis d fis d fis d fis d)
 % Bars 96 to 100d
@@ -136,23 +132,21 @@ musicViolaMvtIII = \relative c' {
 	g_\dimmarkup r g r g r
 	g r g r g r
 % Bars 106 to 110
-	g4\pp r8 r_\rallentando r4
+	g4\pp r8 r r4
 	R2.*3
 	
 	
-	<>^\atempo R2.*4
+	R2.*4
 % Bars 111 to 115
 	
 	
 	
-	\cueDuring #"cueVoiceViolaMvtIII" #UP {
-		\ni \clef treble \mmrPos #-8 R2.
-		\mmrPos #-8 R
+	\ni \clef treble \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 116 to 120
-		\mmrPos #-8 R
-		\mmrPos #-8 R
-		\mmrPos #-8 R \no \clef alto
-	}
+	\mmrPos #-8 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \clef alto
 	c2.\pp
 	c
 % Bars 121 to 125
@@ -189,7 +183,7 @@ musicViolaMvtIII = \relative c' {
 	
 	
 	\mark \default
-	\grace {s8.} r4 <b d>\ff^\arco\fermata r
+	\grace {s8.} r4 <b d>\ff-\offset X-offset -1.3 ^\arco\fermata r
 	R2.*2
 % Bars 151 to 155
 	
@@ -287,11 +281,10 @@ musicViolaMvtIII = \relative c' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	\cueDuring #"cueVoiceViolaMvtIII" #UP {
-		\ni \clef treble R2.
-		R
-		R \no 
-		r4 r \clef alto } e16\ff-.^\tutti g-. e-. g-.
+	\ni \clef treble \voiceTwo R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \oneVoice 
+	r4 r \clef alto e16\ff-.^\tutti g-. e-. g-.
 	e g e g e g e g e g f g
 % Bars 246 to 250
 	e g e g e d e f g e f g
@@ -328,11 +321,10 @@ musicViolaMvtIII = \relative c' {
 	
 % Bars 281 to 285
 	
-	\cueDuring #"cueVoiceViolaMvtIII" #UP {
-		\ni \clef treble R2.
-		R
-		R
-		r4 r \clef alto \no } r8 g^\arco \mark \default
+	\ni \clef treble \voiceTwo R2.
+	R
+	R
+	r4 r \oneVoice \clef alto \no r8 g^\arco \mark \default
 % Bars 286 to 290
 	g16\f-. g-. e-. g-. e g e g e g e g
 	g8\p r r4 r
@@ -349,12 +341,12 @@ musicViolaMvtIII = \relative c' {
 	c r r4 r8 g
 	f\dim r f r f r
 	f r f r f r
-	f\pp r r r_\rallentando r4
+	f\pp r r r r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*4
+	R2.*4
 % Bars 306 to 310
 	
 	gis4^\pizz gis r8 gis
@@ -387,13 +379,12 @@ musicViolaMvtIII = \relative c' {
 	g8 r r4 b8^\pizz\p r
 % Bars 331 to 335
 	b r r4 r
-	<<{\oneVoice \clef treble r4 r r8 \breathSign \breathe \tempo "Allegro." r} \\ {\ni \fermataCentered \no} \\ {\InCueContext s2 s8 g''16_\markup {Vln.conc.} g} >> \bar "||"
-	\time 2/4 \cueDuring #"cueVoiceViolaMvtIII" #UP {
-		\ni R2
-		R
-		R \no
+	<<{\oneVoice \clef treble r4 r r8 \breathSign \breathe r} \\ {\ni \fermataCentered \no} \\ {\InCueContext s2 s8 g''16_\markup {Vln.conc.} g} >> \bar "||"
+	\time 2/4 \ni \voiceTwo R2
+	R
+	R \no
 % Bars 336 to 340
-		r4 \clef alto } r8 d,^\arco_\semprepp
+	r4 \oneVoice \clef alto r8 d,^\arco_\semprepp
 	c c r c
 	c c r c
 	c c r d
@@ -473,16 +464,14 @@ musicViolaMvtIII = \relative c' {
 % Bars 401 to 405
 	R2*5
 % Bars 406 to 410
-	\cueDuring #"cueVoiceViolaMvtIII" #DOWN {
-		\ni \clef treble R2
-		R
-		R
-		\mmrPos #6 R
-		\mmrPos #-4 R
+	\ni \clef treble \voiceTwo R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R
 % Bars 411 to 415
-		\mmrPos #-4 R
-		\mmrPos #-4 R \no \clef alto \mark \default
-	}
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \oneVoice \clef alto \mark \default
 	fis,8\f r r4
 	R2*3
 	
@@ -507,19 +496,17 @@ musicViolaMvtIII = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceViolaMvtIII" #UP {
-		\ni \clef treble R2
+	\ni \clef treble \voiceTwo R2
 % Bars 436 to 440
-		R
-		R
-		R
-		R
-		R \mark \default
+	R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	R
+	R \markWhiteout \mark \default
 % Bars 441 to 445
-		b8-\tweak X-offset #-5 _\pizz r r4
-		R2_\fermataMarkup \bar "||"
-		\time 3/4 \tempo "Tempo I." R2. \no \clef alto
-	}
+	b8-\tweak X-offset #-5 _\pizz r r4
+	R2_\fermata \bar "||"
+	\time 3/4 R2. \oneVoice \no \clef alto
 	<c, c'>8\f^\arco r q r r4
 	R2.
 % Bars 446 to 450

@@ -409,17 +409,17 @@ nameViolinIIMvtIII = {
 %###############################################################################
 nameViolaMvtI = {
 	\set Staff.instrumentName = "Viola"
-	\set Staff.shortInstrumentName = "Vla"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"viola"
 }
 nameViolaMvtII = {
 	\set Staff.instrumentName = "Viola"
-	\set Staff.shortInstrumentName = "Vla"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"viola"
 }
 nameViolaMvtIII = {
 	\set Staff.instrumentName = "Viola"
-	\set Staff.shortInstrumentName = "Vla"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"viola"
 }
 %###############################################################################
