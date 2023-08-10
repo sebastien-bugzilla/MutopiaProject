@@ -93,20 +93,6 @@ unsetVlc = \set Staff.shortInstrumentName = ""
 
 % glyphs
 
-natural = \markup {\tiny \natural} 
-flat = \markup { \tiny \flat}
-sharp = \markup {\tiny \sharp} 
-one = \markup {\tiny \number 1}
-two = \markup {\tiny \number 2}
-three = \markup {\tiny \number 3}
-four = \markup {\tiny \number 4}
-five = \markup {\tiny \number 5}
-six = \markup {\tiny \number 6}
-seven = \markup {\tiny \number 7}
-eight = \markup {\tiny \number 8}
-nine = \markup {\tiny \number 9}
-ten = \markup {\tiny \number 10}
-
 sharptrill = \markup { 
 	\general-align #X #CENTER 
 	\line { 
@@ -129,20 +115,19 @@ trillglyph = \markup {
 	\musicglyph #"scripts.trill" 
 }
 
+% Shortcut and functions
 
 noFlag = \once \omit Flag
 omitBeam = \once \omit Beam
 
-
 attaccaMark = \mark \markup { 
 	\normalsize \italic attacca:
 }
+
 rightAlign = {
 	\once \override Score.RehearsalMark.self-alignment-X = 1
 	\once \override Score.RehearsalMark.direction = #DOWN
 }
-
-
 
 crescText = #(define-music-function
 	(cresctext)
@@ -152,6 +137,7 @@ crescText = #(define-music-function
 		\once \set crescendoSpanner = #'text
 	#}
 )
+
 dimText = #(define-music-function
 	(cresctext)
 	(markup?)
@@ -160,6 +146,7 @@ dimText = #(define-music-function
 		\once \set decrescendoSpanner = #'text
 	#}
 )
+
 fermataCentered  = {
 	\once \override Score.MultiMeasureRest.transparent = ##t 
 	R2.^\markup {\musicglyph "scripts.ufermata"}
@@ -168,68 +155,6 @@ fermataCentered  = {
 dfermataCentered  = {
 	\once \override Score.MultiMeasureRest.transparent = ##t 
 	R2._\markup {\musicglyph "scripts.dfermata"}
-}
-
-
-oneCentered  = {
-	\omit MultiMeasureRestNumber
-	\once \override Score.MultiMeasureRest.transparent = ##t 
-	R1^\markup {\tiny \number 1}
-	\undo \omit MultiMeasureRestNumber
-}
-twoCentered  = {
-	\omit MultiMeasureRestNumber
-	\once \override Score.MultiMeasureRest.transparent = ##t 
-	R1^\markup {\tiny \number 2}
-	\undo \omit MultiMeasureRestNumber
-}
-threeCentered  = {
-	\omit MultiMeasureRestNumber
-	\once \override Score.MultiMeasureRest.transparent = ##t 
-	R1^\markup {\tiny \number 3}
-	\undo \omit MultiMeasureRestNumber
-}
-fourCentered  = {
-	\omit MultiMeasureRestNumber
-	\once \override Score.MultiMeasureRest.transparent = ##t 
-	R1^\markup {\tiny \number 4}
-	\undo \omit MultiMeasureRestNumber
-}
-fiveCentered  = {
-	\omit MultiMeasureRestNumber
-	\once \override Score.MultiMeasureRest.transparent = ##t 
-	R1^\markup {\tiny \number 5}
-	\undo \omit MultiMeasureRestNumber
-}
-sixCentered  = {
-	\omit MultiMeasureRestNumber
-	\once \override Score.MultiMeasureRest.transparent = ##t 
-	R1^\markup {\tiny \number 6}
-	\undo \omit MultiMeasureRestNumber
-}
-sevenCentered  = {
-	\omit MultiMeasureRestNumber
-	\once \override Score.MultiMeasureRest.transparent = ##t 
-	R1^\markup {\tiny \number 7}
-	\undo \omit MultiMeasureRestNumber
-}
-eightCentered  = {
-	\omit MultiMeasureRestNumber
-	\once \override Score.MultiMeasureRest.transparent = ##t 
-	R1^\markup {\tiny \number 8}
-	\undo \omit MultiMeasureRestNumber
-}
-nineCentered  = {
-	\omit MultiMeasureRestNumber
-	\once \override Score.MultiMeasureRest.transparent = ##t 
-	R1^\markup {\tiny \number 9}
-	\undo \omit MultiMeasureRestNumber
-}
-tenCentered  = {
-	\omit MultiMeasureRestNumber
-	\once \override Score.MultiMeasureRest.transparent = ##t 
-	R1^\markup {\tiny \number 10}
-	\undo \omit MultiMeasureRestNumber
 }
 
 textSpanner = #(define-music-function
@@ -257,13 +182,11 @@ ottavaBracket = #(define-music-function
 
 no = {
 	\undo \omit MultiMeasureRestNumber
-%	\revert MultiMeasureRest.staff-position
 }
 
 
 ni = {
 	\omit MultiMeasureRestNumber
-%	\override MultiMeasureRest.staff-position = #-6
 }
 
 
@@ -294,27 +217,6 @@ markYoffset = #(define-music-function
 attacca = {
 	\once \override TextScript.self-alignment-X=1
 	s8_\markup {\italic attacca:}
-}
-
-
-InCueContext = {
-	\override Beam.beam-thickness = #0.35 % 0.30
-	\override StemTremolo.beam-thickness = #0.35 % 0.30
-	\override Beam.length-fraction = #0.63 % 0.8
-	\override Stem.length-fraction = #0.63 % 0.8
-%	\override Stem.length = #7
-%	\override Beam.length = #7
-	\set fontSize = #-4 %-4
-}
-
-OutCueContext = {
-	\revert Beam.beam-thickness
-	\revert StemTremolo.beam-thickness
-	\revert Beam.length-fraction
-	\revert Stem.length-fraction
-%	\override Stem.length = #7
-%	\override Beam.length = #7
-	\unset fontSize
 }
 
 breathSign = {
@@ -363,8 +265,6 @@ hairpinLength = #(define-music-function
 	#}
 )
 
-
-
 trillSpanCustom = #(define-music-function
 	(length markup)
 	(number? markup?)
@@ -408,7 +308,6 @@ stemOffset = #(define-music-function
 )
 
 aIIOmit = \once \omit Voice.CombineTextScript
-
 
 beamGap = #(define-music-function
 	(gap)
@@ -477,8 +376,6 @@ InCueContext = {
 	\override StemTremolo.beam-thickness = #0.35 % 0.30
 	\override Beam.length-fraction = #0.67 % 0.8
 	\override Stem.length-fraction = #0.8 % 0.8
-%	\override Stem.length = #7
-%	\override Beam.length = #7
 	\set fontSize = #-3 %-3
 }
 
@@ -487,11 +384,8 @@ OutCueContext = {
 	\revert StemTremolo.beam-thickness
 	\revert Beam.length-fraction
 	\revert Stem.length-fraction
-%	\override Stem.length = #7
-%	\override Beam.length = #7
 	\unset fontSize
 }
-
 
 mmrnDown = {
 	\once \override MultiMeasureRestNumber.direction = #-1 
@@ -553,299 +447,4 @@ noteESW = #(define-music-function
 		\once \override NoteHead.extra-spacing-width = #extraSpacing
 	#}
 )
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%aIIExtraOffset = #(define-music-function
-%	(extraoffset)
-%	(pair?)
-%	#{
-%		\once \override CombineTextScript.extra-offset = #extraoffset
-%	#}
-%)
-
-%arpeggioPadding = #(define-music-function
-%	(padding)
-%	(number?)
-%	#{
-%		\once \override Voice.Arpeggio.padding = #padding
-%	#}
-%)
-
-%beamLeftTwoRightOne = {
-%	\set stemLeftBeamCount = #2
-%	\set stemRightBeamCount = #1
-%}
-
-%beamLeftOneRightTwo = {
-%	\set stemLeftBeamCount = #1
-%	\set stemRightBeamCount = #2
-%}
-
-%setBeamTriple = { 
-%	\set subdivideBeams = ##t
-%	\set baseMoment = #(ly:make-moment 1/8)
-%	\set beatStructure = 2,2,2
-%}
-
-%crescText = #(define-music-function
-%	(cresctext)
-%	(markup?)
-%	#{
-%		\once \set crescendoText = \markup {\italic { #cresctext } }
-%		\once \set crescendoSpanner = #'text
-%	#}
-%)
-%dimText = #(define-music-function
-%	(cresctext)
-%	(markup?)
-%	#{
-%		\once \set decrescendoText = \markup {\italic { #cresctext } }
-%		\once \set decrescendoSpanner = #'text
-%	#}
-%)
-
-
-%dynSpanYoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override DynamicTextSpanner.bound-details.right.Y = #offset
-%	#}
-%)
-
-
-%hairpinEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.extra-offset = #offset
-%		\once \override Hairpin.whiteout = ##t
-%		\once \override Hairpin.whiteout-style = #'outline
-%	#}
-%)
-
-%InCueContext = {
-%	\override Beam.beam-thickness = #0.30 % 0.30
-%	\override StemTremolo.beam-thickness = #0.35 % 0.30
-%	\override Beam.length-fraction = #0.67 % 0.8
-%	\override Stem.length-fraction = #0.8 % 0.8
-%%	\override Stem.length = #7
-%%	\override Beam.length = #7
-%	\set fontSize = #-3 %-3
-%}
-
-%OutCueContext = {
-%	\revert Beam.beam-thickness
-%	\revert StemTremolo.beam-thickness
-%	\revert Beam.length-fraction
-%	\revert Stem.length-fraction
-%%	\override Stem.length = #7
-%%	\override Beam.length = #7
-%	\unset fontSize
-%}
-
-%mmrPos = #(define-music-function
-%	(position)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.staff-position = #(- position 2)
-%	#}
-%)
-
-%mmrLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.space-increment = #length
-%	#}
-%)
-
-%mmrMinLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.minimum-length = #length
-%	#}
-%)
-
-%mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
-
-
-%mmrEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override MultiMeasureRest.extra-offset = #offset
-%	#}
-%)
-
-
-%markXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
-%	#}
-%)
-
-%markYoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.Y-offset = #offset
-%	#}
-%)
-
-%no = {
-%	\undo \omit MultiMeasureRestNumber
-%}
-
-
-%ni = {
-%	\omit MultiMeasureRestNumber
-%}
-
-%ottavaShorten = #(define-music-function
-%	(value)
-%	(pair?)
-%	#{
-%		\once \override Staff.OttavaBracket.shorten-pair = #value
-%	#}
-%)
-
-%setSextolet = {
-%	\set subdivideBeams = ##t
-%	\set baseMoment = #(ly:make-moment 1/8)
-%	\set beatStructure = 2,2,2,2
-%	\override TupletNumber.Y-offset = #-3
-%	\override TupletNumber.avoid-slur = #'ignore
-%}
-%unsetSextolet = {
-%	\set subdivideBeams = ##f
-%	\revert TupletNumber.Y-offset
-%	\revert TupletNumber.avoid-slur
-%}
-
-
-%textInSlur = {
-%	%\once \override TextScript.outside-staff-priority = 0
-%	\once \override TextScript.slur-padding = #0
-%	\once \override TextScript.avoid-slur = #'around
-%}
-
-%textOsp = #(define-music-function
-%	(prio)
-%	(number?)
-%	#{
-%		\once \override TextScript.outside-staff-priority = #prio
-%	#}
-%)
-
-%tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-
-
-%tupletExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TupletNumber.extra-offset = #offset 
-%	#}
-%)
-
-%tupletAvoidSlur = \once \override TupletNumber.avoid-slur = #'ignore
-
-%omitTupletNumber = \once \omit Voice.TupletNumber
-
-
-%tremoloPosition = #(define-music-function
-%	(position)
-%	(number?)
-%	#{
-%		\once \override StemTremolo.Y-offset = #position
-%	#}
-%)
-
-%trillSpanCustom = #(define-music-function
-%	(length markup)
-%	(number? markup?)
-%	% function to create a trill spanner with :
-%	%	- specified length
-%	%	- specified markup
-%	#{
-%		\once \override TrillSpanner.minimum-length = #length
-%		\once \override TrillSpanner.springs-and-rods = #ly:spanner::set-spacing-rods
-%		\once \override Score.TrillSpanner.bound-details.left.text = #markup
-%	#}
-%)
-
-%trillSpanPadding = #(define-music-function
-%	(padding)
-%	(number?)
-%	% function to create a trill spanner with :
-%	%	- specified padding to avoid overlap
-%	#{
-%		\once \override TrillSpanner.bound-details.right.padding = #padding
-%	#}
-%)
-
-
-%naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \natural 
-%	}
-%}
-%flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
-%	}
-%}
-%sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \sharp  
-%	}
-%}
-
-%trillflat = \markup { 
-%	\general-align #X #CENTER 
-%	\concat { 
-%		\hspace #2.4 \musicglyph #"scripts.trill" 
-%		\translate #'(0.5 . 0.49) \tiny \flat 
-%	}
-%}
-
-
-
-%voltaShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Score.VoltaBracket.shorten-pair = #shortLength
-%	#}
-%)
-
-%whiteoutRehearsalMark = {
-%	\override Score.StaffSymbol.layer = #4
-%	\override Score.RehearsalMark.layer = #3
-%	\once \override Score.RehearsalMark.whiteout = ##t
-%	%\once \override Score.RehearsalMark.whiteout-style = #'outline
-%}
-
-
-%whiteoutDynamic = {
-%	\once \override DynamicText.whiteout = ##t
-%	\once \override DynamicText.whiteout-style = #'outline
-%}
-
-%whiteoutMetronomeMark = {
-%	\once \override Score.MetronomeMark.whiteout = ##t
-%	\once \override Score.MetronomeMark.whiteout-style = #'outline
-%}
 
