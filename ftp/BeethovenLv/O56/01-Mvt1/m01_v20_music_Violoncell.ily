@@ -10,7 +10,7 @@ musicVioloncellMvtI = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	c2\pp(^\tutti b8[ c e8. d16])
+	c2\pp(-\offset X-offset -5 ^\tutti b8[ c e8. d16])
 	d4 r r2
 	d2( cis8[ d f8. e16])
 	e4 r r8. e16([ g8. f16])
@@ -18,21 +18,21 @@ musicVioloncellMvtI = \relative c {
 % Bars 6 to 10
 	d4-. f-. d-. c-.
 	b2(\pp c)
-	\trillSpanCustom #5 #trillglyph \afterGrace a1\startTrillSpan_\crescmarkup {g16[\stopTrillSpan a]}
+	\trillSpanPadding #-2 \afterGrace a1\startTrillSpan_\crescmarkup {g16[ a]\stopTrillSpan}
 	g4-.\pp r g-. r
 	g-. r r2
 % Bars 11 to 15
 	a4-. r r r8 g16( a
 	b4\f) r r r8 \tuplet 3/2 4 {g16(_\dimmarkup a b)}
 	c8\pp c c c  c2:8
-	<< {c: c:} {\oneCentered}>>
-	<< {\crescText "cresc. poco a poco" c:\< c:} {\twoCentered}>>
+	\startMeasureCount c: c:
+	\crescText "cresc. poco a poco" c:\< c:
 % Bars 16 to 20
-	<< {c: c:} {\threeCentered}>>
-	<< {c: c:} {\fourCentered}>>
-	<< {c: c:} {\fiveCentered}>>
-	<< {c: c:} {\sixCentered}>>
-	<< {c: c:} {\sevenCentered}>>
+	c: c:
+	c: c:
+	c: c:
+	c: c:
+	c: c: \stopMeasureCount
 % Bars 21 to 25
 	a8-.\ff b16( c d e f g) a8-. b16( c d e f g)
 	a4-. r r2
@@ -46,8 +46,8 @@ musicVioloncellMvtI = \relative c {
 	e,,8-. f16( g a b cis d) e8-. f16( g a b cis d)
 	e8 e, e e   e e e e
 % Bars 31 to 35
-	d4-. f2\sf d8.-. c16-.
-	b4-. c2\sf a8.-. fis16-. \mark \default
+	d4-. f2\sf d8.-. c16-. \setVlc
+	b4-. c2\sf a8.-. fis16-. \mark \default 
 	\tuplet 3/2 4 {g8\p b d g d b g b d g, b d}
 	\tuplet 3/2 4 {g, b d g d b g b d e, b' e}
 	\tuplet 3/2 4 {a, c e e, b' e a, c e g, d' g}
@@ -74,11 +74,11 @@ musicVioloncellMvtI = \relative c {
 	g1)(
 	f'!
 	e
-	d
+	d \unsetVlc
 % Bars 56 to 60
 	c_\crescmarkup)
 	f
-	e2( ees) 
+	e2( ees)
 	g,8.\ff g'16 g4 g,8. g'16 g4
 	g,8.-.[ g'16-. g8.-. g16]-. g8.[-. g16-. g8.-. g16]-. 
 % Bars 61 to 65
@@ -108,14 +108,12 @@ musicVioloncellMvtI = \relative c {
 % Bars 91 to 95
 	
 	
-	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
-		\ni \clef tenor R1 
-		R
-		R
+	\ni \clef tenor \voiceTwo R1 
+	\mmrPos #-6 R
+	R
 % Bars 96 to 100
-		R \no \clef bass \markXoffset #-0.2 \mark \default
-	}
-	c4\p-\tweak X-offset #0.8 ^\unobassoeviolonc r r2
+	R \no \oneVoice \clef bass \mark \default
+	c4\p^\unobassoeviolonc r r2
 	r4 c8 r c r c r
 	c4 r r2
 	r4 c r2
@@ -139,8 +137,8 @@ musicVioloncellMvtI = \relative c {
 	d' g, d' g, d' g, d' g,
 % Bars 116 to 120
 	b g b g b g b g
-	c g c g c g c g \markXoffset #-0.2 \mark \default
-	c\p-\tweak X-offset #1 ^\solo r r4 r2
+	c g c g c g c g \mark \default
+	c\p^\solo r r4 r2
 	R1*6
 % Bars 121 to 125
 	
@@ -230,11 +228,9 @@ musicVioloncellMvtI = \relative c {
 % Bars 196 to 200
 	
 % Bars 201 to 205
-	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
-		\ni \clef treble R1
-		R
-		\mmrPos #-6 R \no \clef bass
-	}
+	\ni \clef treble \voiceTwo R1
+	R
+	\mmrPos #-7 R \no \clef bass \oneVoice 
 	g'1\p^\unobassoeviolonc(
 	fis4)\f r r2
 % Bars 206 to 210
@@ -259,8 +255,8 @@ musicVioloncellMvtI = \relative c {
 	e4 r e r
 	e r e r
 	\crescText "cresc. poco a poco" e8\pp\< e e e  e e e e
-	e e e e  e e e e \markXoffset #-0.3 \mark \default
-	f\ff-\tweak X-offset #0.7 ^\tutti c f c f c f c
+	e e e e  e e e e \mark \default
+	f\ff^\tutti c f c f c f c
 % Bars 226 to 230
 	g' c, g' c, g' c, g' c,
 	e c e c e c e c 
@@ -296,12 +292,11 @@ musicVioloncellMvtI = \relative c {
 	
 	
 	
-	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
-		\ni R1
-		R
+	\ni \voiceTwo \mmrPos #-6 R1
+	\mmrPos #-6 R
 % Bars 266 to 270
-		R \no
-		r2 r4 } e'(\p
+	R \no \oneVoice 
+	r2 r4 e'(\p
 	a,) r r2
 	r4 a8 r a r a r
 	a4 r r2
@@ -358,19 +353,19 @@ musicVioloncellMvtI = \relative c {
 	r2 g8 r g r
 	r4 g8 r r4 g8 r
 	r4 g8 r r4 g8 r
-	<<{ g r g r g r g r } {\oneCentered} >>
+	\startMeasureCount g r g r g r g r
 % Bars 316 to 320
-	<<{ g r g r g r g r } {\twoCentered} >>
-	<<{ g r g r g r g r } {\threeCentered} >>
-	<<{ g r g r g r g r } {\fourCentered} >>
-	<<{ g r g r g r g r } {\fiveCentered} >>
-	<<{ g r g r g r g r } {\sixCentered} >>
+	g r g r g r g r
+	g r g r g r g r
+	g r g r g r g r
+	g r g r g r g r
+	g r g r g r g r
 % Bars 321 to 325
-	<<{ g_\crescpocoapoco r g r g r g r } {\sevenCentered} >>
-	<<{ g r g r g r g r } {\eightCentered} >>
-	<<{ g r g r g r g r } {\nineCentered} >>
-	<<{ g r g r g r g r } {\tenCentered} >> \markXoffset #-0.3 \mark \default
-	c2\ff-\tweak X-offset #0.5 ^\tutti-\tweak X-offset #0.5 ^\arco( b8[ c e8. d16])
+	g_\crescpocoapoco r g r g r g r
+	g r g r g r g r
+	g r g r g r g r
+	g r g r g r g r \stopMeasureCount \mark \default
+	c2\ff^\tutti^\arco( b8[ c e8. d16])
 % Bars 326 to 330
 	d4 r r2
 	d2( cis8[ d f8. e16])
@@ -379,21 +374,21 @@ musicVioloncellMvtI = \relative c {
 	d4-. f-. d-. c-.
 % Bars 331 to 335
 	b2( c)
-	\trillSpanCustom #5 #trillglyph \afterGrace a1^\startTrillSpan {g16[\stopTrillSpan a]}
+	\afterGrace a1^\startTrillSpan {g16[ a]\stopTrillSpan}
 	g4 r g r
 	g r r2
 	a4\p r r r8 g16(\p a
 % Bars 336 to 340
 	b4)\f r r r8 \tuplet 3/2 4 {g16(_\dimmarkup a b)}
 	c8\pp c c c  c2:8
-	<< { c: c: } { \oneCentered } >>
-	<< { \crescText "cresc. poco a poco" c:\< c: } { \twoCentered } >>
-	<< { c: c: } { \threeCentered } >>
+	\startMeasureCount c: c:
+	c:_\crescpoco c:
+	\crescText "a poco" c:\< c:
 % Bars 341 to 345
-	<< { c: c: } { \fourCentered } >>
-	<< { c: c: } { \fiveCentered } >>
-	<< { c: c: } { \sixCentered } >>
-	<< { c: c: } { \sevenCentered } >>
+	c: c:
+	c: c:
+	c: c:
+	c: c: \stopMeasureCount
 	a8(\f b16 c d e f g) a4 r^\solo
 % Bars 346 to 350
 	R1
@@ -448,15 +443,13 @@ musicVioloncellMvtI = \relative c {
 % Bars 391 to 395
 	
 	
-	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
-		\ni \clef treble R1
-		R
-		R
+	\ni \clef treble \voiceTwo R1
+	\mmrPos #-6 R
+	R
 % Bars 396 to 400
-		R
-		R \no \clef bass
-	}
-	f'4^\pizz^\unobassoeviolonc r f f
+	R
+	R \no \clef bass \oneVoice 
+	f'4^\pizz-\offset X-offset #-5 ^\unobassoeviolonc r f f
 	f r r fis
 	g8 r a r f! r g4^\arco(~
 % Bars 401 to 405
@@ -476,7 +469,7 @@ musicVioloncellMvtI = \relative c {
 	e! r r2
 	R1*2
 	
-	r4 g\pp r2
+	\setVlc r4 g\pp r2
 % Bars 416 to 420
 	r4 g r2
 	r8 g g g  g g g g
@@ -485,7 +478,7 @@ musicVioloncellMvtI = \relative c {
 	c4 r r  r8. c16
 % Bars 421 to 425
 	g4 r r r8. g16
-	g4 r r r8. g16\p
+	g4 r r r8. g16\p \unsetVlc
 	c4 r8. c16\pp c4 r8. c16
 	c4 r8. c16 c4 r8. c16
 	g4 r8. g16 g4 r8. g16
@@ -501,11 +494,9 @@ musicVioloncellMvtI = \relative c {
 % Bars 436 to 440
 	
 	
-	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
-		\ni \clef treble R1
-		R
-		R \clef bass \no
-	}
+	\ni \clef treble \voiceTwo R1
+	R
+	\mmrPos #-6 R \clef bass \no \oneVoice 
 % Bars 441 to 445
 	bes1\p
 	a4\f r r2
@@ -539,7 +530,7 @@ musicVioloncellMvtI = \relative c {
 % Bars 466 to 470
 	aes4 r r8. aes16[-. aes8.-. aes16]-. 
 	g4 r r8. g,16[-. g8.-. g16]-. 
-	fis4.. fis16 fis4.. fis16
+	\setVlc fis4.. fis16 fis4.. fis16
 	fis8.[ fis16-. fis8.-. fis16]-. fis8.[-. fis16-. fis8.-. fis16]-. 
 	g'1\fp(^\solo
 % Bars 471 to 475
@@ -547,7 +538,7 @@ musicVioloncellMvtI = \relative c {
 	e!
 	d)
 	g,4^\pizz r g r
-	g r g r
+	g r g r \unsetVlc
 % Bars 476 to 480
 	g_\crescmarkup r g r
 	g r g r
@@ -564,27 +555,26 @@ musicVioloncellMvtI = \relative c {
 	
 	
 	
-	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
-		\ni \clef treble R1
-		R
+	\ni \clef treble \voiceTwo R1
+	R
 % Bars 491 to 495
-		R \no \mark \default
-		r2 \clef bass } r8. c16\mf[^\arco c8. c16]
+	R \no \mark \default \oneVoice 
+	r2 \clef bass r8. c16\mf[^\arco c8. c16]
 	f,8 r r4 r8. f16[ f8. f16]
 	f1\p~
 	f~
 % Bars 496 to 500
 	\dimText "dimin" f~\>
 	f
-	g\pp~^\one
-	g~^\two
-	g~^\three
+	\startMeasureCount g\pp~
+	g~
+	g~
 % Bars 501 to 505
-	g~^\four
-	g~^\five
-	g~^\six
-	g~\<^\seven
-	g\>^\eight
+	g~
+	g~
+	g~
+	<<g~ {\hairpinShorten #'(0 . -0.7) s4\< s s s\!}>>
+	<<g1 {\hairpinShorten #'(0 . -0.7) s4\> s s s\!}>> \stopMeasureCount
 % Bars 506 to 510
 	c2\pp^\unobassoeviolonc b8[( c e8. c16)]
 	r2 b8[( c g'8. c,16)]
@@ -595,13 +585,13 @@ musicVioloncellMvtI = \relative c {
 	r2 b16( c b c g'8 c,)
 	r2 r8 c( a' c,)
 	r2 r4 b16( c b c)
-	\tempo "Più allegro." b(^\tutti_\crescmarkup c b c) e8.( d16) cis16( d cis d) f8.( e16)
+	b(^\tutti_\crescmarkup c b c) e8.( d16) cis16( d cis d) f8.( e16)
 	dis16( e dis e) g8.( f16) e16( f e f) a8.-. g16-.
 % Bars 516 to 520
 	f8.\f[-. e16-. d8.-. c16]-. b8.[-. d16-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4-.\ff r r2 \markXoffset #-0.3 \mark \default
-	g4-.\ff-\tweak X-offset #0.5 ^\solo r r2
+	f4-.\ff r r2 \mark \default
+	g4-.\ff^\solo r r2
 	c4 r r g8 r
 % Bars 521 to 525
 	c r g r c r g r 

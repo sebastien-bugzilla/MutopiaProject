@@ -9,6 +9,7 @@
 % dynamics
 
 crescmarkup = \markup {\italic cresc.}
+crescpoco = \markup {\italic "cresc. poco"}
 crescpocoapoco = \markup {\italic {cresc. poco a poco}}
 crescsottovoce = \markup {\italic {cresc. sotto voce}}
 decresc = \markup {\italic decresc.}
@@ -87,7 +88,8 @@ violine-solobold = \markup {\bold
 	}
 }
 violoncellosolobold = \markup {\bold \abs-fontsize #10 {Violoncello solo}}
-
+setVlc = \set Staff.shortInstrumentName = "Vlc"
+unsetVlc = \set Staff.shortInstrumentName = ""
 
 % glyphs
 

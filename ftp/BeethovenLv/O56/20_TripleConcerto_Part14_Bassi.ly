@@ -13,15 +13,16 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.20.0"
+\version "2.24.1"
 \include "./00-Common/TripleConcerto_Header.ily"
-\include "./00-Common/TripleConcerto_PaperParts.ily"
-\include "./00-Common/TripleConcerto_timeMvt.ily"
-\include "./00-Common/TripleConcerto_OptionParts.ily"
-\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartBassi.ily"
+\include "./00-Common/TripleConcerto_PaperParts.ily"
+\include "./00-Common/TripleConcerto_LayoutParts.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
+\include "./00-Common/TripleConcerto_Tempi.ily"
+\include "./00-Common/TripleConcerto_Format_Part14_Bassi.ily"
 \include "./01-Mvt1/m01_v20_music_Violoncell.ily"
 \include "./01-Mvt1/m01_v21_music_Basso.ily"
 \include "./02-Mvt2/m02_v20_music_Violoncell.ily"
@@ -31,18 +32,15 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceVioloncellMvtI" { \cueVoiceVioloncellMvtI }
-\addQuote "cueVoiceVioloncellMvtII" { \cueVoiceVioloncellMvtII }
-\addQuote "cueVoiceVioloncellMvtIII" { \cueVoiceVioloncellMvtIII }
 \book {
 	\header {
-		subtitle = \markup { 
+		subtitle = \markup {
 			\abs-fontsize #12 \sans
 			\center-column {
 				"Part for Bassi"
 			}
 		}
-		subsubtitle = \markup { 
+		subsubtitle = \markup {
 			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 \"Triple Concerto\""
 		}
 		instrument = \markup {
@@ -53,103 +51,86 @@
 		\new GrandStaff <<
 			\new Staff <<
 				\new Voice {
-					\formatVioloncellMvtI
+					\formatBassiMvtI
 				}
 				\new Voice {
-					\timeMvtI \generalOptions \partOptions
-					\nameVioloncellMvtI \musicVioloncellMvtI
+					\keepWithTag #'(bassi) \tempiPartMvtI
+				}
+				\new Voice {
+					\InCueContext \cueVoiceBassiMvtI
+				}
+				\new Voice {
+					\timeMvtI \nameVioloncellMvtI \musicVioloncellMvtI
 				}
 			>>
 			\new Staff <<
 				\new Voice {
-					\timeMvtI \generalOptions \partOptions
-					\nameBassoMvtI \musicBassoMvtI
+					\timeMvtI \nameBassoMvtI \musicBassoMvtI
 				}
 			>>
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-			\context {
-				\Staff 
-				\RemoveAllEmptyStaves
-			}
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatVioloncellMvtII
+				\formatBassiMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameVioloncellMvtII \musicVioloncellMvtII
+				\keepWithTag #'(bassi) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceBassiMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameVioloncellMvtII \musicVioloncellMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2.8 \bold 2.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-			\context {
-				\Staff 
-				\RemoveAllEmptyStaves
-			}
 		}
 	}
 	\score {
 		\new GrandStaff <<
 			\new Staff <<
 				\new Voice {
-					\formatVioloncellMvtIII
+					\formatBassiMvtIII
 				}
 				\new Voice {
-					\timeMvtIII \generalOptions \partOptions
-					\nameVioloncellMvtIII \musicVioloncellMvtIII
+					\keepWithTag #'(bassi) \tempiPartMvtIII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceBassiMvtIII
+				}
+				\new Voice {
+					\timeMvtIII \nameVioloncellMvtIII \musicVioloncellMvtIII
 				}
 			>>
 			\new Staff <<
 				\new Voice {
-					\timeMvtIII \generalOptions \partOptions
-					\nameBassoMvtIII \musicBassoMvtIII
+					\timeMvtIII \nameBassoMvtIII \musicBassoMvtIII
 				}
 			>>
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-			\context {
-				\Staff 
-				\RemoveAllEmptyStaves
-			}
 		}
 	}
 }

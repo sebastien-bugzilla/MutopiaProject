@@ -10,7 +10,7 @@ musicVioloncellMvtII = \relative c {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	aes4\p^\tutti des16-. c-.
+	aes4\p-\offset X-offset -2 ^\tutti des16-. c-.
 	g8  r g
 	g8~ g16. ees32( aes16. des32)
 	<< {
@@ -27,28 +27,28 @@ musicVioloncellMvtII = \relative c {
 		ees8.\sf\noBeam ees16(\p f g)
 	} \\ {
 		ees'8. r16 r8
-		R4.
+		\ni R4.
 % Bars 6 to 10
 		R
 		R
 		R
-		R
-		R
+		\mmrPos #-7 R
+		\mmrPos #-6 R
 % Bars 11 to 15
-		R
+		R \no
 		r8 r16 ees,( f g)
 	} >>
 	aes4( des16 c)
 	bes8( ees8. des16)
-	c8-\tweak X-offset #-1 _\crescmarkup c4\f\>
+	c8-\tweak X-offset #-3 _\crescmarkup c4\f\>
 % Bars 16 to 20
 	des8.([-\tweak X-offset #0 _\pcrescD a16] bes des)
 	ees16\p[ r ees r ees] r
 	ees[_\crescmarkup r ees] r ees32[ r e] r
 	f[ r des] r ees!16\sf r ees\p r
-	aes,8. r16 r8 \markXoffset #-0.3 \mark \default
+	aes,8. r16 r8 \mark \default
 % Bars 21 to 25
-	aes8-\tweak X-offset #1 ^\pizz r des16 c
+	aes8-\offset X-offset 0.5 ^\pizz r des16 c
 	g8 r g 
 	g\noBeam g16. ees32 aes16. des32
 	ees8 r r
@@ -60,17 +60,15 @@ musicVioloncellMvtII = \relative c {
 	R4.*5
 % Bars 36 to 40
 	
-	\cueDuring #"cueVoiceVioloncellMvtII" #UP {
-		\ni \clef treble \mmrPos #6 R4.
-		R
-		R \no \clef bass
-	}
+	\ni \clef treble \voiceTwo \mmrPos #6 R4.
+	R
+	R \no \clef bass \oneVoice 
 	aes,16-.\pp(^\arco^\tutti aes-. aes-. aes-. aes-. aes-.)
 % Bars 41 to 45
-	g32\f[ g g g] g[ g\> g g] g[ g g g]
+	g32\f[ g g g] g[ g\> g g] g[ g g g]\!
 	f16\p f f f f f
-	fis32\f[ fis' fis fis] fis[ fis fis\> fis] fis[ fis, fis fis] \markXoffset #-0.2 \mark \default
-	g8\p-\tweak X-offset #1.2 ^\solo r16 g16\<(\noBeam \trillSpanCustom #4 #trillglyph \afterGrace aes8\>)\startTrillSpan {g16[\stopTrillSpan aes]\!}
+	fis32\f[ fis' fis fis] fis[ fis fis\> fis] fis[ fis, fis fis]\! \mark \default
+	g8\p^\solo r16 g16\<(\noBeam \trillSpanPadding #-2 \afterGrace aes8\>)\startTrillSpan {g16[ aes]\stopTrillSpan\!}
 	g8 r r
 % Bars 46 to 50
 	g^\pizz r r
@@ -79,10 +77,8 @@ musicVioloncellMvtII = \relative c {
 	g' d b
 	g r r
 % Bars 51 to 53
-	\cueDuring #"cueVoiceVioloncellMvtII" #UP {
-		\ni R4.
-		R \no
-		r8 r g16_\pizz r 
-	}
+	\ni \voiceTwo R4.
+	R \no
+	r8 r g16_\pizz r 
 	\key c \major \time 3/4 \bar "||" \attacca
 }

@@ -426,32 +426,44 @@ nameViolaMvtIII = {
 %#                     V O I C E   N A M E   :   B A S S I                     #
 %###############################################################################
 nameVioloncellMvtI = {
-	\set Staff.instrumentName = "Cello"
-	\set Staff.shortInstrumentName = "Vcl"
+	\set Staff.instrumentName = \markup {
+		\column { \lower #1
+			"Violoncello" "and Bass"
+		}
+	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"cello"
 }
 nameVioloncellMvtII = {
-	\set Staff.instrumentName = "Cello"
-	\set Staff.shortInstrumentName = "Vcl"
+	\set Staff.instrumentName = \markup {
+		\column { \lower #1
+			"Violoncello" "and Bass"
+		}
+	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"cello"
 }
 nameVioloncellMvtIII = {
-	\set Staff.instrumentName = "Cello"
-	\set Staff.shortInstrumentName = "Vcl"
+	\set Staff.instrumentName = \markup {
+		\column { \lower #1
+			"Violoncello" "and Bass"
+		}
+	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"cello"
 }
 nameBassoMvtI = {
-	\set Staff.instrumentName = "Basso"
-	\set Staff.shortInstrumentName = "Kb"
+	\set Staff.instrumentName = ""
+	\set Staff.shortInstrumentName = "Bass"
 	\set Staff.midiInstrument = #"contrabass"
 }
 nameBassoMvtII = {
-	\set Staff.instrumentName = "Basso"
-	\set Staff.shortInstrumentName = "Kb"
+	\set Staff.instrumentName = ""
+	\set Staff.shortInstrumentName = "Bass"
 	\set Staff.midiInstrument = #"contrabass"
 }
 nameBassoMvtIII = {
-	\set Staff.instrumentName = "Basso"
-	\set Staff.shortInstrumentName = "Kb"
+	\set Staff.instrumentName = ""
+	\set Staff.shortInstrumentName = "Bass"
 	\set Staff.midiInstrument = #"contrabass"
 }

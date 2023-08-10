@@ -1,7 +1,7 @@
 %  work        : Concerto for Violin Cello and Piano in C Major Op56 "Triple
 %                Concerto"
 %  typesetter  : Sébastien MANEN
-%  date        : Sunday 11 June 2023, 06:59
+%  date        : Monday 04 May 2020, 21:05
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -10,7 +10,7 @@ musicBassoMvtIII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*61
+	s2.*66
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -35,18 +35,17 @@ musicBassoMvtIII = \relative c {
 	
 % Bars 61 to 65
 	
-	c8\p r c r c r
-	c r e r g r
-	c r e, r g r
-	c r g r r4
-%% Bars 66 to 70
-	g,8 r g r g r
-	g r b r d r
+% Bars 66 to 70
+	
+	g8 r b r d r
 	g r b, r d r
 	g, r d' r  r4
-	R2.*263 \time 2/4 R2*56
+	R2.*2
 % Bars 71 to 75
 	
+	\ni R2.
+	R \no
+	s2.*259 \time 2/4 s2*55
 % Bars 76 to 80
 	
 % Bars 81 to 85
@@ -174,19 +173,18 @@ musicBassoMvtIII = \relative c {
 % Bars 386 to 390
 	
 	
-	
 	c2:16
 	c:
+	c:
 % Bars 391 to 395
-	c:\ff 
+	c:\ff
 	c8\sf[ c' c c]
 	aes,\sf[ aes' aes aes]
 	bes,\sf[ bes' bes bes]
 	bes,\sf[ bes' bes bes]
 % Bars 396 to 400
-	b,!\ff[ b'! b b]
-	R2*46 
-	R2.*33
+	s2*47 s2.*33
+	
 % Bars 401 to 405
 	
 % Bars 406 to 410

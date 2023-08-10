@@ -6034,239 +6034,238 @@ cueVoiceViolaMvtIII = \relative c {
 %###############################################################################
 %#                    C U E   V O I C E   F O R   B A S S I                    #
 %###############################################################################
-cueVoiceVioloncellMvtI = \relative c {
-	R1*92
+cueVoiceBassiMvtI = \relative c {
+	s1*92
 	% bar 93 - 96
 	\tuplet 3/2 4 {c'8^\markup {Vlc.conc.} b a a g fis c' b a c b a
 	c b_\crescmarkup a c b a c b a c b a }
 	c(_\dolce b ais b e d cis d
 	g)[ f( b8. a16)] g8( f e d)
-	R1*104
+	s1*104
 	% bar 201 - 203
 	f'8[^\markup {Pf.} r16 a,]( a'4~ a8)[ r16 a,]( a'4~
 	a8)[ r16 a,]( a'4~ a8)[ r16 a,]( a'4~
-	a16)-\tweak extra-offset #'(0 . 3) \ff a e cis a e' cis a e cis' a e cis a' e cis
-	R1*60
+	a16)\ff a e cis a e' cis a e cis' a e cis a' e cis
+	s1*60
 	% bar 264 - 267
-	\tuplet 3/2 4 {a8^\markup {Vlc.conc.} gis fis fis e dis a' gis fis a gis fis
-	a-\tweak extra-offset #'(0 . 2.5) _\crescmarkup gis fis a gis fis a gis fis a gis fis}
-	a(-\tweak extra-offset #'(0 . 2.5) _\dolce gis fisis gis cis b ais b)
+	\tuplet 3/2 4 {a8^\markup {Vlc.conc.} gis fis \once \tupletUp fis e dis a' gis fis a gis fis
+	a_\crescmarkup gis fis \once \tupletUp a gis fis a gis fis a gis fis}
+	a(_\dolce gis fisis gis cis b ais b)
 	e([ d gis8. fis16] e8[ d]) s4
-	R1*125
+	s1*125
 	% bar 393 - 397
 	r2 r8. g16[^\markup {Vlc.conc}_\dolce a8. b16]
 	c2(~ c8.[ e16 g8. e16])
 	c2. cis4(
 	d e f g)
 	a2(~ a8 f) c-. a-.
-	R1*40
+	s1*40
 	% bar 438 - 440
 	a'8[^\markup {Pf.} r16 c,]( c'4~ c8)[ r16 c,]( c'4~
 	c8)[ r16 c,]( c'4~ c8)[ r16 c,]( c'4~
-	c16) c g e c g' e c g e' c g e c' g e
-	R1*48
+	c16) c g e c g' e c \stemUp g e' c g \stemNeutral e c' g e
+	s1*48
 	% bar 489 - 492
-	s2 r8. f'16[^\markup {Ob.I} f8. f16]
+	r2 r8. f'16[^\markup {Ob.I} f8. f16]
 	e8 r r8. e16 e8 r r8. e16
 	f8 r r8. f16 f8 r r8. f16
-	e8.[ g16 g8. g16] s2
+	\voiceOne e8.[ g16 g8. g16] s2
 }
-cueVoiceVioloncellMvtII = \relative c {
-	R4.*36
+cueVoiceBassiMvtII = \relative c {
+	s4.*36
 	% bar 37 - 39
-	aes''16\p_(^\markup {Vlc.conc} ees8 c16 aes a)
+	aes''16\p(^\markup {Vlc.conc} ees8 c16 aes a)
 	bes des8 g bes16
-	aes\trill[ bes\trill] c8_~ \tuplet 3/2 4 {c32[ a_( bes]} ees32. g,64)
-	R4.*11
+	aes\trill[ bes\trill] c8~ \tuplet 3/2 4 {\stemUp c32[ a( bes]} ees32. g,64) \stemNeutral
+	s4.*11
 	% bar 51 - 53
-	\tuplet 3/2 16 {g,,32[_(^\markup {Vlc.conc.} b) d] g[ b d]} g g g g g8\noBeam
-	g32[ g g g] g[ g g g] \tuplet 3/2 16 {g[ g g] g[ g g]
-	g[-\tweak extra-offset #'(0 . 5.3) _\crescmarkup g g] g[ g g]} g64 g g g g g g g \tuplet 3/2 32 {g[ g g] g[ g g] g[ g g] g[ g g]}
+	\tuplet 3/2 16 {g,,32[(^\markup {Vlc.conc.} b) d] g[ b d]} g g g g g8\noBeam
+	g32[ g g g] g[ g g g] \tupletUp \tuplet 3/2 16 {g[ g g] g[ g g]
+	g[_\crescmarkup g g] g[ g g]} g64 g g g g g g g \tuplet 3/2 32 {g[ g g] g[ g g] g[ g g] g[ g g]}
 }
-cueVoiceVioloncellMvtIII = \relative c {
-	R2.*71
+cueVoiceBassiMvtIII = \relative c {
+	s2.*71
 	% bar 72 - 75
 	fis''16(-\tweak X-offset #-2 ^\markup {Pf.} eis fis a g fis g fis e dis e g
 	fis eis fis e d cis d f e dis e d
 	c! b c d e dis e d c b a g
 	fis a c b a g fis e d c b a)
-	R2.*13
+	s2.*13
 	% bar 89 - 92
-	\tuplet 6/4 4 {e16_\crescmarkup^\markup {Vlc.conc} f g a g f e f g a g f e f g a g f 
-	e f g a g f e f g a g f} e8 cis,\sf
+	\tuplet 6/4 4 {e16_\crescmarkup^\markup {Vlc.conc} f g a g f \once \tupletUp e f g a g f e f g a g f 
+	e f g a g f \once \tupletUp e f g a g f} e8 cis,\sf
 	d\f d''4 b8 g e
 	d[ b g e] d8.( e32 fis)
-	R2.*21
+	s2.*21
 	% bar 114 - 118
-	g''8[^\markup {Vlc.conc} r16 e]_( g8[) r16 fis]_( g8[) r16 fis]_(
-	g8)[ r16 fis]_( g8)[ r16 fis]_( g8)[ r16 fis]_(
-	\tuplet 6/4 4 {g16)_( fis g fis g fis) g_( fis g fis g fis) g_( fis g fis g fis)}
-	\grace {fis16_( g)} g2.\trill~
+	g''8[^\markup {Vlc.conc} r16 e]( g8[) r16 fis]( g8[) r16 fis](
+	g8)[ r16 fis]( g8)[ r16 fis]( g8)[ r16 fis](
+	\tuplet 6/4 4 {g16)( fis g fis g fis) g( fis g fis g fis) g( fis g fis g fis)}
+	\grace {fis16( g)} g2.\trill~
 	\afterGrace g {fis16}
-	R2.*122
+	s2.*122
 	% bar 241 - 244
 	g4.(_\crescmarkup^\markup {Vln.conc} a16 b c8 d)
 	\grace {c16 d} e4( c4. b8)
 	a([ f']) b,( g'4) g8
-	g4(-\tweak extra-offset #'(0 . 5) \f c,8) r s4
-	R2.*37
+	\voiceOne g4(-\tweak extra-offset #'(0 . 5) \f c,8) r \oneVoice s4
+	s2.*37
 	% bar 282 - 285
 	\tuplet 6/4 4 {a,16_\crescmarkup^\markup {Vlc.conc.} bes c d c bes a bes c d c bes a bes c d c bes
 	a bes c d c bes a bes c d c bes} a8 fis,\sf
-	g\f g''4-\tweak extra-offset #'(0 . 5) \sf e8[ c a]
-	g[ e c a] g8.( a32 b)
-	R2.*47
+	g\f \dynEO #'(0 . 2) g''4\sf e8[ c a]
+	\voiceOne g[ e c a] \oneVoice s4
+	s2.*47
 	% bar 333 - 336
 	g'''4.^\markup {Vl.conc.} g16 g
 	g4. g16 g
-	\tuplet 3/2 4 {g8 g g  g g g
-	g g g} g16 g g g
-	R2*69
+	\tuplet 3/2 4 {g8 g g  g g g}
+	s2*70
 	% bar 406 - 412
-	r4 \tuplet 3/2 4 {g,8\f^\markup {Vln.conc.} a b
+	r4 \tuplet 3/2 4 {\voiceOne g,8\f-\offset X-offset #-5 ^\markup {Vln.conc.} a b
 	c b c a b c
 	d c d b c d 
 	e d e c d e 
-	f e f g f g
+	\oneVoice f e f g f g
 	a g a b a b
 	c b c d c d }
-	R2*22
+	s2*22
 	% bar 435 - 443
-	\tuplet 3/2 4 {b,8_(\p^\markup {Pf.} c cis d ees e
+	\tuplet 3/2 4 {b,8(\p^\markup {Pf.} c cis d ees e
 	f fis g gis a ais)}
-	b4\trill b,\trill
-	b,\trill b'\trill
-	\tuplet 3/2 4 {g,8\p_( aes a bes b c
+	b4\trill \once \stemUp b,\trill
+	b,\trill \once \stemUp b'\trill
+	\tuplet 3/2 4 {g,8\p( aes a bes b c
 	cis d ees e f) f}
-	\trillSpanPadding #1.2 f2~\startTrillSpan
-	\afterGrace f\fermata^\stopTrillSpan {e16^\adagio f}
+	f2~-\tweak extra-offset #'(-0.5 . -0.8) \startTrillSpan
+	\afterGrace f\fermata {e16 f^\stopTrillSpan}
 	g4.(_\dolce a16 b c8 d)
 }
-cueVoiceBassoMvtI = \relative c {
-	R1*92
-	% bar 93 - 96
-	\tuplet 3/2 4 {c'8^\markup {Vlc.conc.} b a a g fis c' b a c b a
-	c b_\crescmarkup a c b a c b a c b a }
-	c_(_\dolce b ais b e d cis d
-	g)[ f_( b8. a16)] g8_( f e d)
-	R1*104
-	% bar 201 - 203
-	f'8[^\markup {Pf.} r16 a,]( a'4~ a8)[ r16 a,]( a'4~
-	a8)[ r16 a,]( a'4~ a8)[ r16 a,]( a'4~
-	a16)\ff a e cis a e' cis a e cis' a e cis a' e cis
-	R1*60
-	% bar 264 - 267
-	\tuplet 3/2 4 {a8^\markup {Vlc.conc.} gis fis fis e dis a' gis fis a gis fis
-	a_\crescmarkup gis fis a gis fis a gis fis a gis fis}
-	a(_\dolce gis fisis gis cis b ais b)
-	e([ d gis8. fis16] e8[ d]) s4
-	R1*125
-	% bar 393 - 397
-	r2 r8. g16[^\markup {Vlc.conc}_\dolce a8. b16]
-	c2(~ c8.[ e16 g8. e16])
-	c2. cis4(
-	d e f g)
-	a2(~ a8 f) c-. a-.
-	R1*40
-	% bar 438 - 440
-	a'8[^\markup {Pf.} r16 c,]( c'4~ c8)[ r16 c,]( c'4~
-	c8)[ r16 c,]( c'4~ c8)[ r16 c,]( c'4~
-	c16) c g e c g' e c g e' c g e c' g e
-	R1*48
-	% bar 489 - 492
-	s2 r8. f'16[^\markup {Ob.I} f8. f16]
-	e8 r r8. e16 e8 r r8. e16
-	f8 r r8. f16 f8 r r8. f16
-	e8.[ g16 g8. g16] s2
-}
-cueVoiceBassoMvtII = \relative c {
-	R4.*9
-	% bar 10 - 12
-	ees,8(^\markup {Vlc.} aes c)
-	ees,( bes' g)
-	ees8.\sf s
-	R4.*24
-	% bar 37 - 39
-	aes''16\p_(^\markup {Vlc.conc} ees8 c16 aes a)
-	bes des8 g bes16
-	aes\trill[ bes\trill] c8_~ \tuplet 3/2 4 {c32[ a_( bes]} ees32. g,64)
-	R4.*11
-	% bar 51 - 53
-	\tuplet 3/2 16 {g,,32[_(^\markup {Vlc.conc.} b) d] g[ b d]} g g g g g8\noBeam
-	g32[ g g g] g[ g g g] \tuplet 3/2 16 {g[ g g] g[ g g]
-	g[_\crescmarkup g g] g[ g g]} g64 g g g g g g g \tuplet 3/2 32 {g[ g g] g[ g g] g[ g g] g[ g g]}
-}
-cueVoiceBassoMvtIII = \relative c {
-	R2.*8
-	% bar 9 - 16
-	b''4._(^\markup {Vln.conc.} cis16 dis e8 fis)
-	gis4_( e4. dis8)
-	cis_( a'_~ a) a16_( gis) gis_( fis) fis_( e)
-	e_( dis) dis_( cis) cis_( b) ais_( b) ais_( b) ais_( b) 
-	b4._( cis16 dis e8 fis)
-	g4_( e4. d8)
-	cis_( a' d,4. c!8)
-	b8_(\p g' c,) r r4
-	R2.*55
-	% bar 72 - 75
-	fis16(^\markup {Pf.} eis fis a g fis g fis e dis e g
-	fis eis fis e d cis d f e dis e d
-	c! b c d e dis e d c b a g
-	fis a c b a g fis e d c b a)
-	R2.*13
-	% bar 89 - 92
-	\tuplet 6/4 4 {e16_\crescmarkup^\markup {Vlc.conc} f g a g f e f g a g f e f g a g f 
-	e f g a g f e f g a g f} e8 cis,\sf
-	d\f d''4 b8 g e
-	d[ b g e] d8.( e32 fis)
-	R2.*38
-	% bar 131 - 134
-	b''4._(^\markup {Vln.conc.} cis16 dis e8 fis)
-	g4_( e4. d!8)
-	cis_( a' d,4. c8)
-	b_(\p g' c,) r r4
-	R2.*106
-	% bar 241 - 244
-	g4.(_\crescmarkup^\markup {Vln.conc} a16 b c8 d)
-	\grace {c16 d} e4( c4. b8)
-	a([ f']) b,( g'4) g8
-	g4(\f c,8) r s4
-	R2.*37
-	% bar 282 - 285
-	\tuplet 6/4 4 {a,16_\crescmarkup^\markup {Vlc.conc.} bes c d c bes a bes c d c bes a bes c d c bes
-	a bes c d c bes a bes c d c bes} a8 fis,\sf
-	g\f g''4\sf e8[ c a]
-	g[ e c a] g8.( a32 b)
-	R2.*47
-	% bar 333 - 336
-	g'''4.^\markup {Vl.conc.} g16 g
-	g4. g16 g
-	\tuplet 3/2 4 {g8 g g  g g g
-	g g g} g16 g g g
-	R2*19
-	% bar 356 - 359
-	g,,16(^\markup {Vlc.conc.} fis g a b a g fis)
-	g( a b c d c b ais)
-	b( c d e f! e d c
-	b a g f e[ d]) s8
-	R2*46
-	% bar 406 - 412
-	r4 \tuplet 3/2 4 {g'8\f^\markup {Vln.conc.} a b
-	c b c a b c
-	d c d b c d 
-	e d e c d e 
-	f e f g f g
-	a g a b a b
-	c b c d c d }
-	R2*22
-	% bar 435 - 443
-	\tuplet 3/2 4 {b,8_(\p^\markup {Pf.} c cis d ees e
-	f fis g gis a ais)}
-	b4\trill b,\trill
-	b,\trill b'\trill
-	\tuplet 3/2 4 {g,8\p_( aes a bes b c
-	cis d ees e f) f}
-	f2~\startTrillSpan
-	\afterGrace f\fermata^\stopTrillSpan {e16^\adagio f}
-	g4.(_\dolce a16 b c8 d)
-}
+%cueVoiceBassoMvtI = \relative c {
+%	R1*92
+%	% bar 93 - 96
+%	\tuplet 3/2 4 {c'8^\markup {Vlc.conc.} b a a g fis c' b a c b a
+%	c b_\crescmarkup a c b a c b a c b a }
+%	c_(_\dolce b ais b e d cis d
+%	g)[ f_( b8. a16)] g8_( f e d)
+%	R1*104
+%	% bar 201 - 203
+%	f'8[^\markup {Pf.} r16 a,]( a'4~ a8)[ r16 a,]( a'4~
+%	a8)[ r16 a,]( a'4~ a8)[ r16 a,]( a'4~
+%	a16)\ff a e cis a e' cis a e cis' a e cis a' e cis
+%	R1*60
+%	% bar 264 - 267
+%	\tuplet 3/2 4 {a8^\markup {Vlc.conc.} gis fis fis e dis a' gis fis a gis fis
+%	a_\crescmarkup gis fis a gis fis a gis fis a gis fis}
+%	a(_\dolce gis fisis gis cis b ais b)
+%	e([ d gis8. fis16] e8[ d]) s4
+%	R1*125
+%	% bar 393 - 397
+%	r2 r8. g16[^\markup {Vlc.conc}_\dolce a8. b16]
+%	c2(~ c8.[ e16 g8. e16])
+%	c2. cis4(
+%	d e f g)
+%	a2(~ a8 f) c-. a-.
+%	R1*40
+%	% bar 438 - 440
+%	a'8[^\markup {Pf.} r16 c,]( c'4~ c8)[ r16 c,]( c'4~
+%	c8)[ r16 c,]( c'4~ c8)[ r16 c,]( c'4~
+%	c16) c g e c g' e c g e' c g e c' g e
+%	R1*48
+%	% bar 489 - 492
+%	s2 r8. f'16[^\markup {Ob.I} f8. f16]
+%	e8 r r8. e16 e8 r r8. e16
+%	f8 r r8. f16 f8 r r8. f16
+%	e8.[ g16 g8. g16] s2
+%}
+%cueVoiceBassoMvtII = \relative c {
+%	R4.*9
+%	% bar 10 - 12
+%	ees,8(^\markup {Vlc.} aes c)
+%	ees,( bes' g)
+%	ees8.\sf s
+%	R4.*24
+%	% bar 37 - 39
+%	aes''16\p_(^\markup {Vlc.conc} ees8 c16 aes a)
+%	bes des8 g bes16
+%	aes\trill[ bes\trill] c8_~ \tuplet 3/2 4 {c32[ a_( bes]} ees32. g,64)
+%	R4.*11
+%	% bar 51 - 53
+%	\tuplet 3/2 16 {g,,32[_(^\markup {Vlc.conc.} b) d] g[ b d]} g g g g g8\noBeam
+%	g32[ g g g] g[ g g g] \tuplet 3/2 16 {g[ g g] g[ g g]
+%	g[_\crescmarkup g g] g[ g g]} g64 g g g g g g g \tuplet 3/2 32 {g[ g g] g[ g g] g[ g g] g[ g g]}
+%}
+%cueVoiceBassoMvtIII = \relative c {
+%	R2.*8
+%	% bar 9 - 16
+%	b''4._(^\markup {Vln.conc.} cis16 dis e8 fis)
+%	gis4_( e4. dis8)
+%	cis_( a'_~ a) a16_( gis) gis_( fis) fis_( e)
+%	e_( dis) dis_( cis) cis_( b) ais_( b) ais_( b) ais_( b) 
+%	b4._( cis16 dis e8 fis)
+%	g4_( e4. d8)
+%	cis_( a' d,4. c!8)
+%	b8_(\p g' c,) r r4
+%	R2.*55
+%	% bar 72 - 75
+%	fis16(^\markup {Pf.} eis fis a g fis g fis e dis e g
+%	fis eis fis e d cis d f e dis e d
+%	c! b c d e dis e d c b a g
+%	fis a c b a g fis e d c b a)
+%	R2.*13
+%	% bar 89 - 92
+%	\tuplet 6/4 4 {e16_\crescmarkup^\markup {Vlc.conc} f g a g f e f g a g f e f g a g f 
+%	e f g a g f e f g a g f} e8 cis,\sf
+%	d\f d''4 b8 g e
+%	d[ b g e] d8.( e32 fis)
+%	R2.*38
+%	% bar 131 - 134
+%	b''4._(^\markup {Vln.conc.} cis16 dis e8 fis)
+%	g4_( e4. d!8)
+%	cis_( a' d,4. c8)
+%	b_(\p g' c,) r r4
+%	R2.*106
+%	% bar 241 - 244
+%	g4.(_\crescmarkup^\markup {Vln.conc} a16 b c8 d)
+%	\grace {c16 d} e4( c4. b8)
+%	a([ f']) b,( g'4) g8
+%	g4(\f c,8) r s4
+%	R2.*37
+%	% bar 282 - 285
+%	\tuplet 6/4 4 {a,16_\crescmarkup^\markup {Vlc.conc.} bes c d c bes a bes c d c bes a bes c d c bes
+%	a bes c d c bes a bes c d c bes} a8 fis,\sf
+%	g\f g''4\sf e8[ c a]
+%	g[ e c a] g8.( a32 b)
+%	R2.*47
+%	% bar 333 - 336
+%	g'''4.^\markup {Vl.conc.} g16 g
+%	g4. g16 g
+%	\tuplet 3/2 4 {g8 g g  g g g
+%	g g g} g16 g g g
+%	R2*19
+%	% bar 356 - 359
+%	g,,16(^\markup {Vlc.conc.} fis g a b a g fis)
+%	g( a b c d c b ais)
+%	b( c d e f! e d c
+%	b a g f e[ d]) s8
+%	R2*46
+%	% bar 406 - 412
+%	r4 \tuplet 3/2 4 {g'8\f^\markup {Vln.conc.} a b
+%	c b c a b c
+%	d c d b c d 
+%	e d e c d e 
+%	f e f g f g
+%	a g a b a b
+%	c b c d c d }
+%	R2*22
+%	% bar 435 - 443
+%	\tuplet 3/2 4 {b,8_(\p^\markup {Pf.} c cis d ees e
+%	f fis g gis a ais)}
+%	b4\trill b,\trill
+%	b,\trill b'\trill
+%	\tuplet 3/2 4 {g,8\p_( aes a bes b c
+%	cis d ees e f) f}
+%	f2~\startTrillSpan
+%	\afterGrace f\fermata^\stopTrillSpan {e16^\adagio f}
+%	g4.(_\dolce a16 b c8 d)
+%}

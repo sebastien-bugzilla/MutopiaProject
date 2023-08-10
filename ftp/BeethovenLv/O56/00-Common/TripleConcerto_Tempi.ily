@@ -44,7 +44,7 @@ tempiMvtIII = {
 tempiPartMvtI = {
 	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
 		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
-		violinII viola violoncello basso) {
+		violinII viola bassi) {
 		\tempo "Allegro."
 	}
 	s1*513
@@ -53,21 +53,21 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
 		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
-		violinII viola violoncello basso) {
+		violinII viola bassi) {
 		\tempo "Più Allegro."
 	}
 }
 tempiPartMvtII = {
 	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
 		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
-		violinII viola violoncello basso) {
+		violinII viola bassi) {
 		\tempo "Largo."
 	}
 }
 tempiPartMvtIII = {
 	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
 		cornoII trombeI trombeII timpani soloViolin soloCello piano violinI
-		violinII viola violoncello basso) {
+		violinII viola bassi) {
 		\tempo "Rondo alla Polacca."
 	}
 	s2.*105 s4.
@@ -76,12 +76,12 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
 		cornoII trombeI trombeII timpani soloViolin soloCello piano 
-		  violoncello basso) {
+		  ) {
 		\tempo \markup {
 			\medium \italic "rallentando"
 		}
 	}
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI violinII viola bassi) {
 		\tempoDown
 		\tempo \markup {
 			\medium \italic "rallentando"
@@ -93,7 +93,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flote oboeI oboeII      
 		    soloViolin soloCello piano violinI
-		  violoncello basso) {
+		  ) {
 		\tempo "a tempo"
 	}
 	\tag #'(clarinetI clarinetII) {
@@ -101,7 +101,7 @@ tempiPartMvtIII = {
 		\tempo "a tempo"
 	}
 	\tag #'(fagottoI fagottoII cornoI cornoII trombeI trombeII timpani violinII
-		viola) {
+		viola bassi) {
 		\tempoXoffset #-2
 		\tempo "a tempo"
 	}
@@ -110,13 +110,12 @@ tempiPartMvtIII = {
 	% bar 299.5
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
-		cornoII trombeI trombeII timpani soloViolin soloCello piano 
-		 violoncello basso) {
+		cornoII trombeI trombeII timpani soloViolin soloCello piano) {
 		\tempo \markup {
 			\medium \italic "rallentando"
 		}
 	}
-	\tag #'(violinI violinII viola) {
+	\tag #'(violinI violinII viola bassi) {
 		\tempoDown
 		\tempo \markup {
 			\medium \italic "rallentando"
@@ -128,7 +127,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flote oboeI oboeII  
 		    soloViolin soloCello piano violinI
-		  violoncello basso) {
+		  ) {
 		\tempo "a tempo"
 	}
 	\tag #'(clarinetI clarinetII) {
@@ -136,7 +135,7 @@ tempiPartMvtIII = {
 		\tempo "a tempo"
 	}
 	\tag #'(fagottoI fagottoII cornoI cornoII trombeI trombeII timpani violinII
-		viola) {
+		viola bassi) {
 		\tempoXoffset #-2
 		\tempo "a tempo"
 	}
@@ -146,7 +145,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flote oboeI oboeII  
 		    soloViolin soloCello piano violinI
-		violinII viola violoncello basso) {
+		violinII viola bassi) {
 		\tempo "Allegro."
 	}
 	\tag #'(clarinetI clarinetII fagottoI fagottoII cornoI cornoII trombeI trombeII timpani) {
@@ -157,10 +156,6 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 442.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(
-		  violoncello basso) {
-		\tempo "adagio"
-	}
 	\tag #'(fagottoI fagottoII cornoI cornoII trombeI trombeII timpani violinI
 	) {
 		\tempo \markup {
@@ -191,7 +186,7 @@ tempiPartMvtIII = {
 			\medium \italic "adagio"
 		}
 	}
-	\tag #'(viola) {
+	\tag #'(viola bassi) {
 		\tempoDown \tempoEO #'(-3 . 0)
 		\tempo \markup {
 			\medium \italic "adagio"
@@ -203,7 +198,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flote oboeI oboeII clarinetI clarinetII fagottoI fagottoII cornoI 
 		cornoII trombeI soloViolin soloCello piano violinI
-		violinII viola violoncello basso) {
+		violinII viola bassi) {
 		\tempo "Tempo I."
 	}
 	\tag #'(trombeII) {

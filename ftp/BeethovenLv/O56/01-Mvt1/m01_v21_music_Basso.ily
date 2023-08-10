@@ -10,7 +10,7 @@ musicBassoMvtI = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R1*32
+	s1*32
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -55,7 +55,7 @@ musicBassoMvtI = \relative c {
 	g_\crescmarkup
 	g
 	g
-	R1*356
+	s1*356
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -202,17 +202,16 @@ musicBassoMvtI = \relative c {
 	
 	
 	\ni R1
-%% Bars 416 to 420
+% Bars 416 to 420
 	R
 	R \no
 	r2 r4 r8. g16
 	c4 r r r8. c16
-	c4 r r  r8. c16
+	c4 r r r8. c16
 % Bars 421 to 425
 	g4 r r r8. g16
 	g4 r r r8. g16\p
-	R1*43
-	
+	s1*45
 % Bars 426 to 430
 	
 % Bars 431 to 435
@@ -230,18 +229,20 @@ musicBassoMvtI = \relative c {
 % Bars 461 to 465
 	
 % Bars 466 to 470
-	aes'4 r r8. aes16[-. aes8.-. aes16]-. 
-	g4 r r8. g,16[-. g8.-. g16]-. 
+	
+	
 	fis4.. fis16 fis4.. fis16
-	fis8.[ fis16-. fis8.-. fis16]-. fis8.[-. fis16-. fis8.-. fis16]-. 
+	fis8.[ fis16-. fis8.-. fis16-.] fis8.-.[ fis16-. fis8.-. fis16-.] 
 	g4\fp^\solo r r2
 % Bars 471 to 475
-	g4_\pizz r r2
+	g4^\pizz r r2
 	g4 r r2
 	g4 r r2
-	R1*58
+	g4 r g r
+	g r g r
 % Bars 476 to 480
-	
+	g r g r
+	s1*55
 % Bars 481 to 485
 	
 % Bars 486 to 490
