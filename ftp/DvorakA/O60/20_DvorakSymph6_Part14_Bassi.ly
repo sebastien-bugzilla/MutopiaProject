@@ -2,12 +2,12 @@
 %#                                 H E A D E R                                 #
 %###############################################################################
 %
-%  Composer           : Antonín Dvořák(1841 - 1904)
+%  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
 %  Source             : Berlin N. Simrock, 1888. Plate 8215.
 %  Type of score      : Score for Violoncell
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Sunday 29 November 2020, 11:27
+%  date of initiation : Thursday 10th August 2023, 10:40
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -18,7 +18,7 @@
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
-\include "./00-Common/DvorakSymph6_OptionParts.ily"
+\include "./00-Common/DvorakSymph6_LayoutParts.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Format_Part14_Bassi.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"

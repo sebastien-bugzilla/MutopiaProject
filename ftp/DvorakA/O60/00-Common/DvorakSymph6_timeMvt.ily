@@ -1,6 +1,6 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Sunday 29 November 2020, 11:27
+%  date        : Thursday 10th August 2023, 10:40
 %###############################################################################
 %#                 T I M E   A N D   T E M P O   S E C T I O N                 #
 %###############################################################################

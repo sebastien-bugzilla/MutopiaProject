@@ -2,12 +2,12 @@
 %#                                 H E A D E R                                 #
 %###############################################################################
 %
-%  Composer           : Antonín Dvořák(1841 - 1904)
+%  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
 %  Source             : Berlin N. Simrock, 1888. Plate 8215.
 %  Type of score      : Score conductor mvt III
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Sunday 29 November 2020, 11:27
+%  date of initiation : Thursday 10th August 2023, 10:40
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -16,7 +16,7 @@
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperConductors.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
-\include "./00-Common/DvorakSymph6_OptionConductors.ily"
+\include "./00-Common/DvorakSymph6_LayoutConductors.ily"
 \include "./00-Common/DvorakSymph6_NameStaff.ily"
 \include "./00-Common/DvorakSymph6_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"

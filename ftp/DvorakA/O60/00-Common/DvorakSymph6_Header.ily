@@ -1,6 +1,6 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Sunday 29 November 2020, 11:27
+%  date        : Thursday 10th August 2023, 10:40
 \header {
 	composer = \markup {
 		\abs-fontsize #24 \bold \sans
