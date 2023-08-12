@@ -41,12 +41,12 @@ musicHornIVMvtI = \relative c' {
 		
 		
 		
-		\aIIXoffset #-3.5 aes8-.\f r aes2\fz~
+		aes8\f r aes2\fz~
 		aes2.~
 % Bars 36 to 40
-		aes2 aes4-.
-		bes-. ees,-. r
-		aes8-. r aes2\fz~
+		aes2 aes4
+		bes ees, r
+		aes8 r aes2\fz~
 		aes2.~
 		aes8 r aes2
 % Bars 41 to 45
@@ -118,8 +118,8 @@ musicHornIVMvtI = \relative c' {
 		\mmrPos #-6 R2.
 		R2. \mark \default
 		d4(_\pespress\< a'2)\!
-		g4.( d8 bes4)\<
-		f'\( c'8\) r c4-.\>
+		g4. d8 bes4\<
+		f' c'8\! r c4\>
 % Bars 111 to 115
 		bes2\! r4 
 		R2.*14
@@ -131,7 +131,7 @@ musicHornIVMvtI = \relative c' {
 		r4 r d,\pp~
 		d r d~
 		d d--\< d--
-		d\>-- d-- fis--
+		d\!-- d--\> fis--\!
 		b,2.\pp~
 % Bars 131 to 135
 		b2 r4
@@ -183,7 +183,7 @@ musicHornIVMvtI = \relative c' {
 	\alternative {
 		{
 			R2.
-			g4\p\< g g
+			g4\p\< g g\!
 			f2.-\tweak X-offset #0.8 _\fpdimD~
 			f~
 % Bars 181 to 185
@@ -433,16 +433,16 @@ musicHornIVMvtI = \relative c' {
 	f'4 r r
 	R2.*4
 % Bars 471 to 475
-	d'2\f-^ c4
-	f8-. d-. ees-. f-. b,!4
-	ees-> f,-> bes->
+	d'2\f c4
+	f8 d ees f b,!4
+	ees f,-> bes->
 	ees,-> a-> d,->
 	aes' r r
 % Bars 476 to 480
 	R2.*3
 	
 	
-	bes2.\f-^~
+	bes2.\f~
 	bes~
 % Bars 481 to 485
 	bes4 r r
@@ -482,7 +482,7 @@ musicHornIVMvtI = \relative c' {
 	f2.\ff
 	f
 	bes,\>~
-	bes
+	bes\!
 % Bars 526 to 530
 	bes\p~
 	bes~

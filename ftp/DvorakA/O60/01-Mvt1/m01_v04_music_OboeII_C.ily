@@ -18,7 +18,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 6 to 10
 		r r fis
 		fis4. fis8\< fis4
-		fis( a d)
+		fis( a d)\!
 		fis2(\f\> e8 dis)\!
 		e2\p r4
 % Bars 11 to 15
@@ -28,9 +28,9 @@ musicOboeIIMvtI = \relative c' {
 		bes2 r4
 		R2.
 % Bars 16 to 20
-		r4 r a(\mf
+		r4 r a\mf
 		c2\< b4
-		c d c)
+		c d c\!
 		c2(\f b4
 		a b a)
 % Bars 21 to 25
@@ -120,22 +120,36 @@ musicOboeIIMvtI = \relative c' {
 		fis2\fz( g8 gis)
 		cis,8-. r r4 r
 		fis,8-. r r4 r
-		R2.*4
+		R2.*3
 % Bars 106 to 110
 		
-		\mark \default
-		R2.*18
+		R2. \mark \default
+		R
+		\mmrPos #-6 R
+		R
 % Bars 111 to 115
-		
+		R
+		R
+		R
+		R
+		\mmrPos #-6 R
 % Bars 116 to 120
-		
+		\mmrPos #-6 R
+		R
+		R
+		R
+		R
 % Bars 121 to 125
-		
+		R
+		R
+		R
+		R
+		R
 % Bars 126 to 130
 		fis2.\p~
 		fis
 		fis4-- fis--\< fis--
-		fis-- fis\>-- g--
+		fis--\! fis\>-- g--\!
 		aes\pp r r
 % Bars 131 to 135
 		R2.
@@ -157,7 +171,7 @@ musicOboeIIMvtI = \relative c' {
 		fis8 dis e fis e4
 % Bars 146 to 150
 		fis8 dis e fis b, cis
-		dis\> fis, ais b dis, e
+		dis\> fis, ais b dis, e\!
 		dis4\p r r
 		dis r r
 		e r r
@@ -318,7 +332,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 276 to 280
 	R2.*2
 	
-	g8-.\f d16(  e d8) g,-. g-. g'-.
+	g8\f d16(  e d8) g, g g'
 	c,2.\ff~
 	c~
 % Bars 281 to 285
@@ -369,10 +383,10 @@ musicOboeIIMvtI = \relative c' {
 	r4 r8 d-.\p d( c)
 	bes2 r4
 	R2.
-	r4 r \aIIXoffset #-3 a\(\p
+	r4 r a\p
 	\hairpinYoffset #0 #0.5 c2\< b4
 % Bars 331 to 335
-	c d c\)
+	c d c\!
 	c2(\f b4
 	a b a)
 	g2.-\tweak extra-offset #'(0.5 . 0.5) \p\>~
@@ -383,15 +397,15 @@ musicOboeIIMvtI = \relative c' {
 % Bars 341 to 345
 	
 	fis8-.\f g-. a-. a-. g-. fis-. 
-	g4-. b,-. r
+	g4-> b,-> r
 	fis'4 c'8 c b a 
-	b4-. d,-. r
+	b4-> d,-> r
 % Bars 346 to 350
-	c'4 b8-. f'-. e-. d-. 
+	c'4 b8 f' e d 
 	f!\fz r a,4-. d-.\fz
 	a-. f'-.\fz a,-.
 	d-.\fz d-. e-.\fz
-	c4 b8-. f'-. e-. d-. 
+	c4 b8 f' e d 
 % Bars 351 to 355
 	f\fz r a,4-. d-.\fz
 	a-. f'-.\fz a,-.
@@ -464,7 +478,7 @@ musicOboeIIMvtI = \relative c' {
 	a~
 % Bars 421 to 425
 	a~\<
-	a2\>( ais4)\!
+	a2\> ais4\!
 	b r r
 	R2.
 	r4 r gis(
@@ -512,10 +526,10 @@ musicOboeIIMvtI = \relative c' {
 	d8 fis g4 fis
 % Bars 461 to 465
 	e8 gis a4 gis
-	cis,2.->
-	e->
-	d->
-	d->
+	cis,2.
+	e
+	d
+	d
 % Bars 466 to 470
 	a4 r r
 	R2.*5
@@ -538,7 +552,7 @@ musicOboeIIMvtI = \relative c' {
 	e2 e4~
 	e e e 
 	fis4.\ff-^ e-^
-	d b-.
+	d b
 % Bars 491 to 495
 	b4-. a-. d-.
 	g,-. cis-. fis,-.

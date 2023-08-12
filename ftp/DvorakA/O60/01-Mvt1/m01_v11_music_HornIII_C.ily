@@ -41,18 +41,18 @@ musicHornIIIMvtI = \relative c' {
 		
 		
 		
-		\aIIXoffset #-3.5 aes8-.\f r aes2\fz~
+		\once \partCombineApart aes8-. r \partCombineApart aes2~
 		aes2.~
 % Bars 36 to 40
 		aes2 aes4-.
-		bes-. ees,-. r
-		aes8-. r aes2\fz~
+		bes-. ees,-. \once \partCombineAutomatic r
+		aes8-. \once \partCombineAutomatic r aes2~
 		aes2.~
-		aes8 r aes2
+		aes8 \once \partCombineAutomatic r aes2
 % Bars 41 to 45
-		g2\fz g4~\fz
-		g g2\fz
-		a!2\ff a4~
+		g2 g4~
+		g g2
+		\partCombineAutomatic a!2\ff a4~
 		a a2
 		a a4~
 % Bars 46 to 50
@@ -88,7 +88,7 @@ musicHornIIIMvtI = \relative c' {
 % Bars 81 to 85
 		
 		
-		r4 c,\pp r
+		r4 \once \stemUp c,\pp r
 		r bes r
 		\partCombineApart r r cis-.
 % Bars 86 to 90
@@ -117,11 +117,11 @@ musicHornIIIMvtI = \relative c' {
 % Bars 106 to 110
 		r fis r \partCombineAutomatic
 		R2. \mark \default
-		d4( a' c)\!
-		bes4.( a8 g4)\<
-		f\( ees'8\) r ees4-.\>
+		\partCombineApart d4( a' c)\!
+		bes4.( a8 g4)
+		f( ees'8) \once \partCombineAutomatic r ees4-.
 % Bars 111 to 115
-		d2\! r4 
+		d2 \partCombineAutomatic r4 
 		R2.*14
 % Bars 116 to 120
 	
@@ -131,7 +131,7 @@ musicHornIIIMvtI = \relative c' {
 		r4 r d\pp~
 		d r d~
 		d b--\< b--
-		b\>-- b-- b--
+		b\!-- b--\> b--\!
 		b2.\pp~
 % Bars 131 to 135
 		b2 r4
@@ -183,7 +183,7 @@ musicHornIIIMvtI = \relative c' {
 	\alternative {
 		{
 			g4 r r \partCombineAutomatic
-			d'\p\< d e
+			d'\p\< d e\!
 			f2.-\tweak X-offset #0.8 _\fpdimD~
 			f~
 % Bars 181 to 185
@@ -199,7 +199,7 @@ musicHornIIIMvtI = \relative c' {
 		}
 		{
 % Bars 177 to 180
-			\partCombineApart g4 r r \partCombineAutomatic
+			\partCombineApart g4\repeatTie r r \partCombineAutomatic
 			R2.*4
 % Bars 181 to 185
 			
@@ -433,19 +433,19 @@ musicHornIIIMvtI = \relative c' {
 	\once \partCombineApart f4 r r
 	R2.*4
 % Bars 471 to 475
-	d'2\f-^ c4
+	\partCombineApart d'2-^ c4
 	f8-. d-. ees-. f-. b,!4
-	ees-> a,-> d->
+	ees-> \partCombineAutomatic a,-> d->
 	g,-> c-> f,->
 	\once \partCombineApart aes-> r r
 % Bars 476 to 480
 	R2.*3
 	
 	
-	bes2.\f-^~
+	\partCombineApart bes2.-^~
 	bes~
 % Bars 481 to 485
-	bes4 r r
+	bes4 \partCombineAutomatic r r
 	R2.*5
 % Bars 486 to 490
 	
@@ -482,7 +482,7 @@ musicHornIIIMvtI = \relative c' {
 	\partCombineApart f2.->
 	f-> \partCombineAutomatic
 	f\>~
-	f
+	f\!
 % Bars 526 to 530
 	f\p~
 	f~-\tweak X-offset #6 _\dimmarkup

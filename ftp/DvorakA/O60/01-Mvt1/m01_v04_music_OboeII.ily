@@ -553,7 +553,7 @@ musicOboeIIMvtI = \relative c' {
 	e2 e4~
 	e e e 
 	fis4.\ff-^ e-^
-	d b-.
+	d b
 % Bars 491 to 495
 	b4-. a-. d-.
 	g,-. cis-. fis,-.

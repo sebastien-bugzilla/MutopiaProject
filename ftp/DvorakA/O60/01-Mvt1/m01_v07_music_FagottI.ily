@@ -158,7 +158,7 @@ musicFagottIMvtI = \relative c {
 		dis8( cis b2)
 		dis8( cis b2)
 		b4--\p\< b-- b--
-		b-- b-- bes--
+		b--\! b--\> bes--\!
 		c2\pp( des4
 % Bars 131 to 135
 		ees2.)~

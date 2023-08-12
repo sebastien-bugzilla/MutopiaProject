@@ -111,7 +111,7 @@ musicViolinIIMvtI = \relative c' {
 		ais r r
 		cis,\pp r r
 		cis r8 dis'\<-. e-. fis-.
-		g-. fis-. e-. d!-. cis-. fis-.
+		g-. fis-. e-. d!-. cis-. fis-.\!
 		b,-.\f r b,4.(\< b'8)\!
 % Bars 91 to 95
 		b2 fis4~

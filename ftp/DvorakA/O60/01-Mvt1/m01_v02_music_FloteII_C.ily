@@ -10,16 +10,16 @@ musicFloteIIMvtI = \relative c' {
 %	\transposition a
 % Bars 1 to 5
 	R2.
-	r4 r fis\p
+	r4 r fis\p(
 	\repeat volta 2 {
-		fis2 r4
-		r r fis(
+		fis2) r4
+		r r fis_(
 		fis) fis-. r
 % Bars 6 to 10
-		r r fis
-		fis4. fis8\< fis4
-		fis( a d)
-		fis2(\f\> e8 dis)
+		r r fis(
+		fis4.) fis8\< fis4
+		fis( a d)\!
+		fis2\f\> e8 dis
 		e2\p r4
 % Bars 11 to 15
 		r r8 g-.\p g( fis)
@@ -28,9 +28,9 @@ musicFloteIIMvtI = \relative c' {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-		r4 d(\p\> cis
+		\partCombineApart r4 d(\p\> cis
 		b cis b 
-		ais8)\pp r r4 r
+		ais8)\pp r r4 r \partCombineAutomatic
 		R2.*10
 % Bars 26 to 30
 	
@@ -55,12 +55,12 @@ musicFloteIIMvtI = \relative c' {
 % Bars 46 to 50
 		cis cis2~\<
 		cis2.~
-		cis \mark \default
-		d4-\tweak X-offset #-1 _\ffgrandiosoD r a-.
+		cis\! \mark \default
+		d4_\ffgrandioso r a
 		d2 r4
 % Bars 51 to 55
-		r r a-.
-		d-. d-. r
+		r r a
+		d d r
 		r r a
 		fis4. fis8 fis4\<
 		fis( a d)
@@ -101,13 +101,14 @@ musicFloteIIMvtI = \relative c' {
 % Bars 106 to 110
 		
 		\mark \default
-		R2.*30
+		R2.
+		R2.*12
 % Bars 111 to 115
 	
 % Bars 116 to 120
 		
 % Bars 121 to 125
-	
+		R2.*17
 % Bars 126 to 130
 	
 % Bars 131 to 135
@@ -126,9 +127,14 @@ musicFloteIIMvtI = \relative c' {
 		fis8)-. dis( e fis) e4->(
 % Bars 146 to 150
 		fis8) r r4 r
-		R2.*10
+		R2.
+		R2.*5
+		
+		
 % Bars 151 to 155
 		
+		
+		R2.*4
 % Bars 156 to 160
 		
 		r4 r a8([\f fis)
@@ -146,7 +152,7 @@ musicFloteIIMvtI = \relative c' {
 		\once \partCombineApart b r r
 		\once \partCombineApart b r r
 		\once \partCombineApart b r r
-		b r r
+		\once \partCombineApart b r r
 % Bars 171 to 175
 		R2.*2
 		
@@ -159,7 +165,8 @@ musicFloteIIMvtI = \relative c' {
 	\alternative {
 		{
 			fis4) r r
-			R2.*12
+			R2.
+			R2.*11
 % Bars 181 to 185
 			
 % Bars 186 to 190
@@ -177,19 +184,31 @@ musicFloteIIMvtI = \relative c' {
 			
 		}
 	}
-	R2.*33
+	R2.*8
 % Bars 186 to 190
 	
+	
+	
+	
+	R2.*12
 % Bars 191 to 195
 	
 % Bars 196 to 200
 	
 % Bars 201 to 205
 	
+	R2.*3
+	
+	
+	R2.
 % Bars 206 to 210
-	
+	R
+	R
+	R
+	R
+	R
 % Bars 211 to 215
-	
+	R2.*4
 	
 	
 	\mark \default
@@ -205,7 +224,7 @@ musicFloteIIMvtI = \relative c' {
 	
 	
 	
-	r4 g(\p f8 e)
+	r4 g\p f8 e
 % Bars 226 to 230
 	R2.*4
 	
@@ -243,15 +262,15 @@ musicFloteIIMvtI = \relative c' {
 	R2.
 % Bars 261 to 265
 	cis'4-- r8 a8-. b-. cis-.
-	fis,8( e) r cis-. e-. a-.
+	fis,8( e) r cis e a
 	d,8( cis) r4 r 
 	R2. \mark \default
 	R2.*6
 % Bars 266 to 270
 	
 % Bars 271 to 275
-	b'4\f r8 gis-. a-. b-.
-	e,2-> d'4-.
+	b'4\f r8 gis a b
+	e,2 d'4
 	cis r r
 	a-> b-> cis->
 	d-> r r 
@@ -309,10 +328,10 @@ musicFloteIIMvtI = \relative c' {
 	R2.*3
 	
 	
-	r4 r \aIIXoffset #-3 a,\p\(
+	r4 r a,\p
 	\hairpinYoffset #0 #0.5 c2\< b4
 % Bars 331 to 335
-	c d c\)
+	c d c\!
 	c2(\f b4
 	a b a)
 	g( \tweak X-offset #1 \p d'\> cis!
@@ -407,7 +426,7 @@ musicFloteIIMvtI = \relative c' {
 	
 % Bars 431 to 435
 	r4 gis8\mf-. a-. b4->
-	b8(\< cis d dis e d)
+	b8(\< cis d dis e d)\!
 	cis-.\f r r4 g'!->\(
 	a8\) r r4 g4->\(
 	a8\) r r4 bes\<-.

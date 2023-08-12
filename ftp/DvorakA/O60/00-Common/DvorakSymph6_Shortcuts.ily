@@ -49,12 +49,12 @@ sempreff = \markup {\italic sempre \dynamic ff}
 semprepp = \markup {\italic sempre \dynamic pp}
 
 fdimD = #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "dim." ))
-ffgrandiosoD=#(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "grandioso"))
+ffgrandiosoD = #(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "grandioso"))
 fpdimD = \tweak DynamicText.self-alignment-X #-0.6 #(make-dynamic-script (markup #:dynamic "fp" #:normal-text #:italic "dim." ))
 fzdimD = #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim." ))
-mfcrescD=#(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "cresc." ))
+mfcrescD = #(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "cresc." ))
 pdimD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim." ))
-pdolceD=#(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce" ))
+pdolceD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce" ))
 pespressD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "espress." ))
 
 
@@ -103,17 +103,17 @@ mmrPos = #(define-music-function
 	#}
 )
 
-mmrPosOver = #(define-music-function
-	(position)
-	(number?)
-	#{
-		\override Voice.MultiMeasureRest.staff-position = #(- position 2)
-	#}
-)
+%mmrPosOver = #(define-music-function
+%	(position)
+%	(number?)
+%	#{
+%		\override Voice.MultiMeasureRest.staff-position = #(- position 2)
+%	#}
+%)
 
-mmrPosRevert = {
-	\revert Voice.MultiMeasureRest.staff-position
-}
+%mmrPosRevert = {
+%	\revert Voice.MultiMeasureRest.staff-position
+%}
 
 no = {
 	\undo \omit MultiMeasureRestNumber
@@ -172,13 +172,9 @@ mmrLength = #(define-music-function
 	#}
 )
 
-mmrDown = #(define-music-function
-	()
-	()
-	#{
-		\once \override MultiMeasureRestNumber.direction = #-1
-	#}
-)
+mmrDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1
+}
 
 markXoffset = #(define-music-function
 	(offset)
@@ -199,21 +195,15 @@ markYoffset = #(define-music-function
 trillSpanPadding = #(define-music-function
 	(padding)
 	(number?)
-	% function to create a trill spanner with :
-	%	- specified padding to avoid overlap
 	#{
 		\once \override TrillSpanner.bound-details.right.padding = #padding
 	#}
 )
 
-textInSlur = #(define-music-function
-	()
-	()
-	#{
-		\once \override TextScript.outside-staff-priority = ##f
-		\once \override TextScript.avoid-slur = #'inside
-	#}
-)
+textInSlur = {
+	\once \override TextScript.outside-staff-priority = ##f
+	\once \override TextScript.avoid-slur = #'inside
+}
 
 aIIXoffset = #(define-music-function
 	(offset)
@@ -260,14 +250,14 @@ arpeggioPadding = #(define-music-function
 #(define my-script-alist
 	(
 		append `(
-			("marcato"
+			(marcato
 				(script-stencil . (feta . ("dmarcato" . "umarcato")))
 				(padding . 0.20)
 				(avoid-slur . outside)
 				;;(staff-padding . ())
 				(quantize-position . #t)
 				(side-relative-direction . ,DOWN))
-			("staccatissimo"
+			(staccatissimo
 				(avoid-slur . outside)
 				(quantize-position . #t)
 				(script-stencil . (feta . ("dstaccatissimo" . "ustaccatissimo")))
@@ -286,6 +276,9 @@ stopTremolo = #(define-music-function () ()
     (make-music 'TremoloSpanEvent
         'span-direction STOP))
 
+
+noFlag = \once \omit Flag
+omitBeam = \once \omit Beam
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

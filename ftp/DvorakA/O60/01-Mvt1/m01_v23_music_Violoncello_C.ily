@@ -115,7 +115,7 @@ musicVioloncelloMvtI = \relative c {
 		fis4) r r
 		fis,\pp r r
 		fis r8 dis'8-.\< e-. fis-.
-		g-. fis-. e-. d!-. cis-. fis-. 
+		g-. fis-. e-. d!-. cis-. fis-.\!
 		b,4\f r8 b'8( ais a)
 % Bars 91 to 95
 		a( gis) gis( g) fis( e)
@@ -485,7 +485,7 @@ musicVioloncelloMvtI = \relative c {
 	e4.\!) r8 r4
 	R2.*2
 	
-	a'4\pizz a, r
+	a'4^\pizz a, r
 % Bars 366 to 370
 	a' a, r
 	r a^\arco-. a-.

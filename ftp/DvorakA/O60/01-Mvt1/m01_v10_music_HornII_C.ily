@@ -19,10 +19,10 @@ musicHornIIMvtI = \relative c' {
 		c8 c4 c c8
 		c8 c4 c c8
 		c8\< c4 c c'8\!
-		cis cis4\f cis8(\> d e)
+		cis cis4\f cis8(\> d e)\!
 		d8\p\> d4 d d8
 % Bars 11 to 15
-		d d4\pp d d8
+		d\! d4\pp d d8
 		d d4 d d8 
 		c c4 c c8 
 		c c4 c c8 
@@ -30,7 +30,7 @@ musicHornIIMvtI = \relative c' {
 % Bars 16 to 20
 		g g4 g\! g8
 		c,\< c4 c c8\!
-		c2. \tweak X-offset #-2.5 \fz~
+		\once \stemUp c2.\fz~
 		c2~ c8 r
 		R2.*4
 % Bars 21 to 25
@@ -120,7 +120,7 @@ musicHornIIMvtI = \relative c' {
 		R2.*3
 % Bars 111 to 115
 		r4 r g8(\p e
-		f4\< bes d)
+		f4\< bes d)\!
 		a4.(\> g8 f4)\!
 		R2.*24
 % Bars 116 to 120
@@ -202,11 +202,11 @@ musicHornIIMvtI = \relative c' {
 	r4 r a''(-\tweak X-offset #-3 \pp
 	e'8) r e r r4
 	R2.
-	r4 r g-.\p
-	c2-> r4
+	r4 r g\p
+	c2 r4
 % Bars 191 to 195
-	r r g4(\<
-	c8)\! r c r r4
+	r r g4\<
+	c8\! r c r r4
 	R2.*5
 % Bars 196 to 200
 	
@@ -322,10 +322,10 @@ musicHornIIMvtI = \relative c' {
 	c
 	b\<~
 	<< b {s4 s s\!} >>
-	c,2.-\tweak X-offset #-2 \f~
+	\stemUp c,2.-\tweak X-offset #-2 \f~
 % Bars 331 to 335
 	c~
-	c2 r4
+	\stemDown c2 r4
 	R2.*4
 	
 	
@@ -408,7 +408,7 @@ musicHornIIMvtI = \relative c' {
 	R2.*5
 % Bars 421 to 425
 	c,8\pp\< c c4 c8 c
-	c4 c\> e\!
+	c4\! c\> e\!
 	a, r r
 	R2.*7
 % Bars 426 to 430
@@ -431,7 +431,7 @@ musicHornIIMvtI = \relative c' {
 % Bars 451 to 455
 	
 	c'8(\f aes) bes-. c-. d([ b)]
-	c-.\<[ d-.] c8( b c g)
+	c-.\<[ d-.] c8( b c g)\!
 	e'!2(\ff d4)
 	c2( g4)
 % Bars 456 to 460
@@ -439,9 +439,9 @@ musicHornIIMvtI = \relative c' {
 	c4( b2)
 	c2( b4)
 	c4( b2)
-	c8-. e-. f4 e
+	c8 e f4 e
 % Bars 461 to 465
-	d8-. fis-. g4 fis
+	d8 fis g4 fis
 	e2.
 	d->
 	c->
@@ -477,7 +477,7 @@ musicHornIIMvtI = \relative c' {
 	e4.\ff-^ d-^
 	c-^ c-^~
 % Bars 491 to 495
-	c4-. g-. c-.
+	c4 g-. c-.
 	f,-. b-. e,-.
 	c'4. r8 r4
 	c4. r8 r4 \mark #11
@@ -514,8 +514,8 @@ musicHornIIMvtI = \relative c' {
 	e~\p
 	e
 	e2( d8 c)
-	c2(\> g8) e
-	e2 g,4~\pp
+	c2(\> g8 e)
+	e2\! \once \stemUp g,4~\pp
 % Bars 531 to 535
 	g2.~
 	g~

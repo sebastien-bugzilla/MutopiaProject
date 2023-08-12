@@ -19,10 +19,10 @@ musicHornIMvtI = \relative c'' {
 		g8 g4 g g8
 		g8 g4 g g8
 		g8\< g4 g e'8\!
-		e e4\f e8(\> f g)
+		e e4\f e8(\> f g)\!
 		f8\p\> f4 f f8
 % Bars 11 to 15
-		f f4\pp f f8
+		f\! f4\pp f f8
 		f f4 f f8 
 		f f4 f f8 
 		f f4 f f8 
@@ -120,8 +120,8 @@ musicHornIMvtI = \relative c'' {
 		R2.*3
 % Bars 111 to 115
 		r4 r d8(\p c
-		bes4\< d f)
-		c4.(\> bes8 a4)\!
+		bes4\< d f)\!
+		\once \stemUp c4.(\> bes8 a4)\!
 		R2.*24
 % Bars 116 to 120
 	
@@ -202,11 +202,11 @@ musicHornIMvtI = \relative c'' {
 	r4 r a(-\tweak X-offset #-3 \pp
 	e'8) r e r r4
 	R2.
-	r4 r g,-.\p
-	c2-> r4
+	r4 r \partCombineApart g,-.
+	c2-> \partCombineAutomatic r4
 % Bars 191 to 195
-	r r g4(\<
-	c8)\! r c r r4
+	r r \partCombineApart g4(
+	c8) \once \partCombineAutomatic r c \partCombineAutomatic r r4
 	R2.*5
 % Bars 196 to 200
 	
@@ -382,8 +382,8 @@ musicHornIMvtI = \relative c'' {
 % Bars 396 to 400
 	d8-._\dimmarkup r r4 r
 	d8-.\p r r4 r
-	r r d--\p
-	r d-- r
+	r r \once \stemUp d--\p
+	r \once \stemUp d-- r
 	R2. \mark \default
 % Bars 401 to 405
 	g,4(_\pespress d' f)
@@ -427,7 +427,7 @@ musicHornIMvtI = \relative c'' {
 % Bars 451 to 455
 	
 	ees8(\f c) d-. ees-. f([ d)]
-	ees-.\<[ f-.] ees8( d ees d)
+	ees-.\<[ f-.] ees8( d ees d)\!
 	g2(\ff f4)
 	e!2( d4)
 % Bars 456 to 460
@@ -473,7 +473,7 @@ musicHornIMvtI = \relative c'' {
 	g4.\ff-^ g-^
 	g-^ f-^~
 % Bars 491 to 495
-	f4-. b,-. e-.
+	f4 b,-. e-.
 	a,-. d-. g,-.
 	ees'4. r8 r4
 	ees4. r8 r4 \mark #11
@@ -510,8 +510,8 @@ musicHornIMvtI = \relative c'' {
 	g~\p
 	g
 	g2(_\dimmarkup f8 e)
-	e2( d8 c)
-	c2 g4~
+	e2(\> d8 c)
+	c2\! g4~
 % Bars 531 to 535
 	g2.~
 	g4 r r

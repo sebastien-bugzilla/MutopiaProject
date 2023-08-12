@@ -477,7 +477,7 @@ musicHornIMvtI = \relative c'' {
 	g4.\ff-^ g-^
 	g-^ f-^~
 % Bars 491 to 495
-	f4-. b,-. e-.
+	f4 b,-. e-.
 	a,-. d-. g,-.
 	ees'4. r8 r4
 	ees4. r8 r4 \mark #11
@@ -515,7 +515,7 @@ musicHornIMvtI = \relative c'' {
 	g
 	g2(_\dimmarkup f8 e)
 	e2(\> d8 c)
-	c2 g4~\pp
+	c2\! g4~\pp
 % Bars 531 to 535
 	g2.~
 	g4 r r

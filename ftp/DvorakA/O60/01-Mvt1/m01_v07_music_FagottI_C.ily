@@ -25,10 +25,10 @@ musicFagottIMvtI = \relative c {
 		e2) \partCombineAutomatic r4 
 		r r \partCombineApart bes(
 		e2) \partCombineAutomatic r4
-		r r a,\(
-		e'2\< dis4
+		r r \partCombineApart a,\(
+		e'2 dis4
 % Bars 16 to 20
-		e2\)\! \partCombineChords g4~
+		e2\) \partCombineChords g4~
 		g(\> fis d~\!
 		<< d2.) {s4\< s s8 s\!} >> \partCombineApart
 		d2( g4) \partCombineChords
@@ -111,8 +111,8 @@ musicFagottIMvtI = \relative c {
 % Bars 86 to 90
 		fis4) r r \partCombineAutomatic
 		e\pp r r
-		e r8 dis\<-. e-. fis-. 
-		g-. fis-. e-. d!-. cis-. fis-.\!
+		e r8 \partCombineApart dis-. e-. fis-. 
+		g-. fis-. e-. d!-. cis-. fis-. \partCombineAutomatic
 		b,2.\f\>~
 % Bars 91 to 95
 		b~\!
@@ -151,14 +151,14 @@ musicFagottIMvtI = \relative c {
 % Bars 121 to 125
 		R2.*2
 		
-		fis8(\p ais fis'4 e)
+		\partCombineApart fis8(\p ais fis'4 e)
 		dis( b2)
 		fis8( ais fis'4 e)
 % Bars 126 to 130
 		dis8( cis b2)
 		dis8( cis b2)
 		\partCombineChords b4--\p\< b-- b--
-		b-- b-- bes--\!
+		b--\! b--\> bes--\!
 		\partCombineApart c2( des4
 % Bars 131 to 135
 		ees2.)~
@@ -176,12 +176,12 @@ musicFagottIMvtI = \relative c {
 		cis!8) r r4 b4(->
 		cis8) r r4 cis-.
 		r cis-. cis-.
-		b8-. dis\( e fis\) e4->\(
+		\partCombineApart b8-. dis\( e fis\) e4->\(
 		fis8-.\) dis\( e fis\) e4->\(
 % Bars 146 to 150
 		fis8-.\) dis\( e fis b, cis
-		dis\> fis, ais b dis, e\)
-		fis4\p r r
+		dis fis, ais b dis, e\)
+		fis4 \partCombineAutomatic r r
 		fis r r
 		g_\crescmarkup r r
 % Bars 151 to 155
@@ -210,7 +210,7 @@ musicFagottIMvtI = \relative c {
 		b r r
 % Bars 171 to 175
 		R2.
-		\aIIXoffset #-1 fis''2(\fp e4
+		\partCombineApart fis''2(\fp e4
 		d2 cis4)
 		b8( d fis4 e)
 		d2( cis4)
@@ -219,8 +219,8 @@ musicFagottIMvtI = \relative c {
 	}
 	\alternative {
 		{
-			d d\p\< d
 			d d d
+			d d d \partCombineAutomatic
 			fis2._\fpdimD~
 			fis~
 % Bars 181 to 185
@@ -259,7 +259,7 @@ musicFagottIMvtI = \relative c {
 	
 % Bars 201 to 205
 	
-	\clef tenor a2(\p\> g8 f)
+	\clef tenor a2(\p\> g8 f)\!
 	f2(\< e8 d)\!
 	d2 r4
 	r a'(\mf g8 f)
@@ -272,9 +272,9 @@ musicFagottIMvtI = \relative c {
 % Bars 211 to 215
 	b4( a8 g) g4~
 	g2( f8 e)
-	e4\pp( d e
-	d e d \mark \default
-	e) r r
+	\once \stemUp e4\pp( d \once \stemUp e
+	d \once \stemUp e d \mark \default
+	\once \stemUp e) r r
 % Bars 216 to 220
 	R2.*7
 % Bars 221 to 225
@@ -299,10 +299,10 @@ musicFagottIMvtI = \relative c {
 	r4 des( c8 bes)
 	bes4 r r
 	R2.
-	a2.\f->
+	\partCombineApart a2.->
 	gis->_\marc
 % Bars 241 to 245
-	a4-> r8 \partCombineApart a-! a-! e-!
+	a4-> \once \partCombineAutomatic r8 a-! a-! e-!
 	f-. d16( e d8) b-. b-. d-. \partCombineAutomatic
 	e2.(
 	fis_\dimmarkup
@@ -318,9 +318,9 @@ musicFagottIMvtI = \relative c {
 	R2.*2
 	
 	c2.\p
-	b2( a4)
+	\stemDown b2( a4)
 % Bars 256 to 260
-	b2( bis4)
+	\stemUp b2( bis4)
 	cis! r r
 	R2.*2
 	
@@ -338,14 +338,14 @@ musicFagottIMvtI = \relative c {
 	fis4 r r
 	R2.
 % Bars 271 to 275
-	\once \partCombineApart b4 r8 \partCombineApart gis-. a-. b-.
-	e,2-> d'4-.
+	\once \partCombineApart b4 r8 gis-. a-. b-.
+	\partCombineApart e,2-> d'4-.
 	cis \partCombineAutomatic r r
 	R2.*4
 % Bars 276 to 280
 	
 	
-	g'8-.\f d16\( e d8\) g,-. g-. g'-.
+	\partCombineApart g'8-. d16\( e d8\) g,-. g-. g'-. \partCombineAutomatic
 	c,2.\ff~
 	c~
 % Bars 281 to 285
@@ -385,23 +385,23 @@ musicFagottIMvtI = \relative c {
 % Bars 321 to 325
 	r4 r a,\p\<
 	b2.\fz\>(
-	b2)\! b,4\(\pp
-	e2\) r4
+	b2)\! \partCombineApart b,4\(
+	e2\) \partCombineAutomatic r4
 	r r \partCombineApart bes(
 % Bars 326 to 330
 	e2) \partCombineAutomatic r4 
-	r r \once \partCombineUnisono a,^(
-	\partCombineChords e'2 dis4
+	r r \partCombineApart a,(
+	e'2 dis4
 	e2 g4)~
 	g^( fis d~
 % Bars 331 to 335
 	d2.)
-	\partCombineApart d2( g4)
-	\partCombineChords b2.(_\dimmarkup
+	d2( g4)
+	\stemDown b2.(_\dimmarkup
 	b4)( fis' e 
 	d e d
 % Bars 336 to 340
-	ais8) \partCombineAutomatic r r4 r
+	\noFlag ais8) \partCombineAutomatic r r4 r
 	R2.*3
 	
 	
@@ -451,13 +451,13 @@ musicFagottIMvtI = \relative c {
 	bes\f r r
 % Bars 381 to 385
 	bes r r
-	\aIIXoffset #-5 bes8\<-. a-. g-. f-. e-. a-.\! 
-	d,4 r8 d'\(\f cis c\)
+	\partCombineApart \stemUp bes8-. a-. g-. f-. e-. a-. 
+	d,4 \once \partCombineAutomatic r8 d'\( cis c\)
 	c\( b\) b\( bes\) a\( g\)
-	fis4 r8 d'-.\< e-. fis-.
+	fis4 \once \partCombineAutomatic r8 d'-. e-. fis-.
 % Bars 386 to 390
-	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) PhrasingSlur g2\fz\( fis8 e
-	d4\) r r
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) PhrasingSlur g2\( fis8 e
+	d4\) \partCombineAutomatic r r
 	g,2.\fz(
 	bes4) r r
 	ees,2(-\tweak X-offset #-1.8 \fz g4)
@@ -474,27 +474,27 @@ musicFagottIMvtI = \relative c {
 	
 	\mark \default
 % Bars 401 to 405
-	cis,4-.\p a-. r
-	r d-.\< d-.
-	e-.\! r c-.
-	r f-.\> f-.
-	g2.\p\(
+	\partCombineApart cis,4-. a-. \partCombineAutomatic r
+	r \partCombineApart d-. d-.
+	e-. \once \partCombineAutomatic r c-.
+	\once \partCombineAutomatic r f-. f-.
+	g2.\(
 % Bars 406 to 410
-	bes\)_\dimmarkup
-	ees,\pp\(
-	a\)~
+	\stemDown bes\)_\dimmarkup
+	\stemUp ees,\(
+	\stemDown a\)~
 	a
-	f'4.( ees8 d4
+	\stemUp f'4.( ees8 d4
 % Bars 411 to 415
 	c d c
 	b d cis!)
-	\once \partCombineChords d\p r r
+	d \partCombineAutomatic r r
 	R2.*7
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	\partCombineChords a8\pp\< a a4 d8 d
-	fis4\> fis( e)\!
+	fis4\! fis(\> e)\!
 	\partCombineApart dis2(-\tweak extra-offset #'(-0.3 . -1) \p e4
 	fis2.)~
 	fis~
@@ -542,13 +542,13 @@ musicFagottIMvtI = \relative c {
 	fis8-. a-. b4-. a-.
 % Bars 461 to 465
 	gis8-. b-. cis4-. b-.
-	ais,8\( cis ais'4\) ais,8\( cis
-	ais'4\) ais,8\( cis ais'4\)
-	bes,8\( d bes'4\) bes,8\( d
-	bes'4\) bes,8\( d bes'4\)
+	\partCombineApart ais,8( cis ais'4) ais,8( cis
+	ais'4) ais,8( cis ais'4)
+	bes,8( d bes'4) bes,8( d
+	bes'4) bes,8( d bes'4)
 % Bars 466 to 470
-	a r r
-	d2\f-> cis4-.
+	a \partCombineAutomatic r r
+	\partCombineApart d2-> cis4-.
 	b8-. g-. a-. b-. e,4->~
 	e fis-> d->
 	e8-. fis-. g-. cis,-. d-. e-. 
@@ -556,7 +556,7 @@ musicFagottIMvtI = \relative c {
 	a,2.->~
 	a~
 	a~
-	a2 d4->~
+	a2 \partCombineAutomatic d4->~
 	d2.~
 % Bars 476 to 480
 	d~
@@ -565,7 +565,7 @@ musicFagottIMvtI = \relative c {
 	d~
 	d
 % Bars 481 to 485
-	d4.\ff-> bes8-. cis!-. d-.
+	\partCombineApart d4.\ff-> bes8-. cis!-. d-.
 	d4.-> bes8-. cis!-. d-.
 	d bes cis d g, a
 	bes e, fis g cis, d
@@ -574,7 +574,7 @@ musicFagottIMvtI = \relative c {
 	d~
 	d~
 	d4 d d
-	d''4.\ff-^ cis-^
+	\partCombineAutomatic d''4.\ff-^ cis-^
 	b8-. g-. a-. b-. e,4~
 % Bars 491 to 495
 	e cis'4-. fis-.

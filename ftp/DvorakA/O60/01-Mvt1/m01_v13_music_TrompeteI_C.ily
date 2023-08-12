@@ -27,22 +27,22 @@ musicTrompeteIMvtI = \relative c'' {
 		
 		
 		
-		\aIIXoffset #-3.5 c8-.\f r c2\fz~
+		\partCombineApart c8-. \once \partCombineAutomatic r c2~
 		c2.~
 % Bars 36 to 40
 		c2 d4-. 
-		c-. r r
-		c8-. r c2\fz~
+		c-. \partCombineAutomatic r r
+		\once \partCombineApart c8-. r \partCombineApart c2~
 		c2.~
 		c2 d4-.
 % Bars 41 to 45
-		d2\fz d4~\fz
-		d d2\fz
-		d\ff d4~
+		d2 d4~
+		d d2
+		d d4~
 		d d2
 		d d4~
 % Bars 46 to 50
-		d g2->~ \tweak extra-offset #'(0 . 1) \<
+		d \partCombineAutomatic g2->~ \tweak extra-offset #'(0 . 1) \<
 		g2.~
 		g \mark \default
 		e4-\tweak X-offset #-1 _\ffgrandiosoD r r
@@ -52,7 +52,7 @@ musicTrompeteIMvtI = \relative c'' {
 		r r g-.
 		c-. c-. r
 		c4. c8 c4\<
-		c( d e)
+		c( d e)\!
 % Bars 56 to 60
 		g2\fz( f8 e)
 		d2.
@@ -112,7 +112,7 @@ musicTrompeteIMvtI = \relative c'' {
 		
 		
 		r4 r e \tweak X-offset #-1 \f~
-		e\< e-> e->
+		e\< e-> e->\!
 % Bars 161 to 165
 		e2.\ff
 		e
@@ -231,12 +231,12 @@ musicTrompeteIMvtI = \relative c'' {
 	
 % Bars 306 to 310
 	
-	b2\ff fis4
+	\partCombineApart b2 fis4
 	b2 fis4
 	b b fis
 	b b fis
 % Bars 311 to 315
-	g8 r g'2-^~
+	g8 \partCombineAutomatic r g'2-^~
 	g2.~
 	g~
 	g2 g4-. \mark \default
@@ -255,22 +255,22 @@ musicTrompeteIMvtI = \relative c'' {
 	
 % Bars 346 to 350
 	
-	c8-.\f r c2->~
+	\once \partCombineApart c8-. r \partCombineApart c2->~
 	c2.~
 	c4 c-. d-.
-	c-. r r
+	c-. \partCombineAutomatic r r
 % Bars 351 to 355
-	c8-.\f r c2->~
+	\once \partCombineApart c8-. r \partCombineApart c2->~
 	c2.~
 	c4 c-. d-.
 	d2 d4~
 	d d2
 % Bars 356 to 360
-	d2\ff d4\fz~
-	d d2\fz
-	d2\fz d4\fz~
-	d g,2\fz \mark \default
-	g4-. r r
+	d2 d4\~
+	d d2
+	d2 d4~
+	d g,2 \mark \default
+	g4-. \partCombineAutomatic r r
 % Bars 361 to 365
 	R2.*21
 % Bars 366 to 370
@@ -281,8 +281,8 @@ musicTrompeteIMvtI = \relative c'' {
 	
 % Bars 381 to 385
 	
-	r4 r r8 g\f
-	c4 r r
+	r4 r r8 \partCombineApart g
+	c4 \partCombineAutomatic r r
 	R2.*17
 % Bars 386 to 390
 	
@@ -309,14 +309,14 @@ musicTrompeteIMvtI = \relative c'' {
 % Bars 431 to 435
 	
 	r4 r d-.-\tweak X-offset #-0.5 \f
-	g,-. r c-.
-	g-. r c-.
-	g-. r d'\<-.
+	\partCombineApart g,-. \once \partCombineAutomatic r c-.
+	g-. \once \partCombineAutomatic r c-.
+	g-. \once \partCombineAutomatic r d'-.
 % Bars 436 to 440
-	r d-. g,-.\!
-	c-. r r
-	c-. r r
-	c-. r r
+	\once \partCombineAutomatic r d-. g,-.
+	c-. \partCombineAutomatic r r
+	\once \partCombineApart c-. r r
+	\once \partCombineApart c-. r r
 	R2.*5
 % Bars 441 to 445
 	
@@ -328,9 +328,9 @@ musicTrompeteIMvtI = \relative c'' {
 	
 % Bars 451 to 455
 	
-	r4 r g\f~
-	g\< g-. g-.
-	e'2(\ff f4)
+	r4 r \partCombineApart g~
+	g g-. g-.
+	\partCombineAutomatic e'2(\ff f4)
 	e2( d4)
 % Bars 456 to 460
 	g2.~
@@ -340,30 +340,30 @@ musicTrompeteIMvtI = \relative c'' {
 	g4 r r
 % Bars 461 to 465
 	R2.
-	b,2.->
+	\partCombineApart b,2.->
 	b->
 	c->
 	d->
 % Bars 466 to 470
-	g,4 r r
-	r g-^ r
-	r g-^ r
-	r g-^ r
-	r g-^ r
+	g,4 \partCombineAutomatic r r
+	r \once \partCombineApart g-^ r
+	r \once \partCombineApart g-^ r
+	r \once \partCombineApart g-^ r
+	r \once \partCombineApart g-^ r
 % Bars 471 to 475
-	r g-^ r
-	r g-^ r
-	r g-^ r
-	r g-^ r
-	r c-^ r
+	r \once \partCombineApart g-^ r
+	r \once \partCombineApart g-^ r
+	r \once \partCombineApart g-^ r
+	r \once \partCombineApart g-^ r
+	r \once \partCombineApart c-^ r
 % Bars 476 to 480
-	r c-^ r
-	r c-^ r
-	r c-^ r
-	c,2.-^~
+	r \once \partCombineApart c-^ r
+	r \once \partCombineApart c-^ r
+	r \once \partCombineApart c-^ r
+	\partCombineApart c,2.-^~
 	c~
 % Bars 481 to 485
-	c4 r r
+	c4 \partCombineAutomatic r r
 	R2.*3
 	
 	

@@ -156,7 +156,7 @@ musicFagottIIMvtI = \relative c {
 		
 		
 		b4--\p\< b-- b--
-		b-- b-- ees--
+		b--\! b--\> ees--\!
 		aes,\pp r bes
 % Bars 131 to 135
 		c r des

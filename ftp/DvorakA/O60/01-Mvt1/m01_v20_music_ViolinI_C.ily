@@ -16,7 +16,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 6 to 10
 		r4 r a(\pp
 		d4.) d8 d4\<
-		d( e fis)
+		d( e fis)\!
 		a2\f\>( g8 fis)
 		e2\p r4
 % Bars 11 to 15
@@ -109,7 +109,7 @@ musicViolinIMvtI = \relative c'' {
 		cis r8 dis,-.\pp e-. fis-.
 		g4 r8 dis-. e-. fis-.
 		g4 r8 dis'-.\< e-. fis-.
-		g-. fis-. e-. d!-. cis-. fis-.
+		g-. fis-. e-. d!-. cis-. fis-.\!
 		b,4\f r8 b-. cis-. dis-.
 % Bars 91 to 95
 		e2( dis8 cis)

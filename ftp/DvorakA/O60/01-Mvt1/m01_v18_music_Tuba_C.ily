@@ -236,7 +236,7 @@ musicTubaMvtI = \relative c {
 	e'2-^ a,4-.
 	g'!-> e-> cis->
 	a8 r e'-. cis-. a4-. \mark \default
-	d-. r r
+	d r r
 % Bars 316 to 320
 	R2.*40
 % Bars 321 to 325

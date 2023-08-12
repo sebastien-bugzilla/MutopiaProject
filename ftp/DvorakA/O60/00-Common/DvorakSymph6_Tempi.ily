@@ -5,30 +5,31 @@
 %#                       T E M P I   C O N D U C T O R S                       #
 %###############################################################################
 tempiMvtI = {
-	s2.*2
-	\repeat volta 2 {
-		s2.*20
-		\tempo "un poco più animato." % bar 23
-		s2.*26
-		\tempo "Tempo I." % bar 49
-		s2.*11
-		\tempo "Un poco animato." % bar 60
-		s2.*60
-		\tempo "tranquillo." % bar 120
-		s2.*57
-	}
-	\alternative {
-		{
-			s2.*14
-		}
-		{
-			s2.*5
+	\tempo \markup {
+		\concat { 
+			"Allegro non tanto. (M.M. " 
+			\raise #0.4 \tiny \note-by-number #2 #0 #0.75 
+			" = 132.)"
 		}
 	}
-	s2.*133
+	s2.*22
+	\tempo \markup {  % bar 23
+		\concat {
+			"un poco più animato. ("
+			\raise #0.4 \tiny \note-by-number #2 #0 #0.75
+			" = 144.)"
+		}
+	}
+	s2.*26
+	\tempo "Tempo I." % bar 49
+	s2.*11
+	\tempo "Un poco animato." % bar 60
+	s2.*60
+	\tempo "tranquillo." % bar 120
+	s2.*209
 	\tempo "Più tranquillo." % bar 315
 	s2.*21 
-	\tempo "Poco animato" % 336
+	\tempo "Poco animato." % 336
 	s2.*77
 	\tempo "Poco tranquillo." % bar 413
 	s2.*47

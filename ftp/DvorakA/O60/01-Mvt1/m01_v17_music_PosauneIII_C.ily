@@ -187,7 +187,7 @@ musicPosauneIIIMvtI = \relative c' {
 	e2.~
 	e~
 	e
-	\partCombineAutomatic a4\f r r
+	a4 \partCombineAutomatic r r
 	R2.*25
 % Bars 241 to 245
 	
@@ -244,11 +244,11 @@ musicPosauneIIIMvtI = \relative c' {
 	eis-! gis-! cis-!
 	eis,-! gis-! cis-!
 % Bars 311 to 315
-	a!2.-^~
+	\partCombineApart a!2.-^~
 	a~
 	a~
 	a2 a4-. \mark \default
-	a-. r r
+	a-. \partCombineAutomatic r r
 % Bars 316 to 320
 	R2.*40
 % Bars 321 to 325

@@ -27,14 +27,14 @@ musicTrompeteIIMvtI = \relative c'' {
 		
 		
 		
-		\aIIXoffset #-3.5 c8-.\f r c2\fz~
+		c8\f r c2\fz~
 		c2.~
 % Bars 36 to 40
-		c2 d4-. 
-		c-. r r
-		c8-. r c2\fz~
+		c2 d4
+		c r r
+		c8 r c2\fz~
 		c2.~
-		c2 d4-.
+		c2 d4
 % Bars 41 to 45
 		d2\fz d4~\fz
 		d d2\fz
@@ -52,7 +52,7 @@ musicTrompeteIIMvtI = \relative c'' {
 		r r e-.
 		e-. e-. r
 		e4. e8 e4\<
-		e( g c)
+		e( g c)\!
 % Bars 56 to 60
 		e2\fz( d8 a)
 		f2.
@@ -112,7 +112,7 @@ musicTrompeteIIMvtI = \relative c'' {
 		
 		
 		r4 r e \tweak X-offset #-1 \f~
-		e\< e-> e->
+		e\< e-> e->\!
 % Bars 161 to 165
 		e2.\ff
 		e
@@ -216,7 +216,7 @@ musicTrompeteIIMvtI = \relative c'' {
 	r r f'
 	bes,-. bes-. r
 % Bars 286 to 290
-	r r e-.
+	r r e
 	bes2-> r4
 	r r ees
 	bes-. bes-. r
@@ -255,14 +255,14 @@ musicTrompeteIIMvtI = \relative c'' {
 	
 % Bars 346 to 350
 	
-	c8-.\f r c2->~
+	c8\f r c2->~
 	c2.~
-	c4 c-. d-.
-	c-. r r
+	c4 c d
+	c r r
 % Bars 351 to 355
-	c8-.\f r c2->~
+	c8\f r c2~
 	c2.~
-	c4 c-. d-.
+	c4 c d
 	d2 d4~
 	d d2
 % Bars 356 to 360
@@ -270,7 +270,7 @@ musicTrompeteIIMvtI = \relative c'' {
 	d d2\fz
 	d2\fz d4\fz~
 	d g,2\fz \mark \default
-	g4-. r r
+	g4 r r
 % Bars 361 to 365
 	R2.*21
 % Bars 366 to 370
@@ -309,14 +309,14 @@ musicTrompeteIIMvtI = \relative c'' {
 % Bars 431 to 435
 	
 	r4 r d,-.-\tweak X-offset #-0.5 \f
-	g-. r c-.
-	g-. r c-.
-	g-. r d'\<-.
+	g r c
+	g r c
+	g r d'\<
 % Bars 436 to 440
-	r d-. g,-.\!
-	c-. r r
-	c-. r r
-	c-. r r
+	r d g,\!
+	c r r
+	c r r
+	c r r
 	R2.*5
 % Bars 441 to 445
 	
@@ -329,7 +329,7 @@ musicTrompeteIIMvtI = \relative c'' {
 % Bars 451 to 455
 	
 	r4 r g\f~
-	g\< g-. g-.
+	g\< g g\!
 	c2(\ff d4)
 	c2( g4)
 % Bars 456 to 460
@@ -340,27 +340,27 @@ musicTrompeteIIMvtI = \relative c'' {
 	g4 r r
 % Bars 461 to 465
 	R2.
-	b2.->
-	b->
-	c->
-	d->
+	b2.
+	b
+	c
+	d
 % Bars 466 to 470
 	g,4 r r
-	r g-^ r
-	r g-^ r
-	r g-^ r
-	r g-^ r
+	r g r
+	r g r
+	r g r
+	r g r
 % Bars 471 to 475
-	r g-^ r
-	r g-^ r
-	r g-^ r
-	r g-^ r
-	r c-^ r
+	r g r
+	r g r
+	r g r
+	r g r
+	r c r
 % Bars 476 to 480
-	r c-^ r
-	r c-^ r
-	r c-^ r
-	c,2.-^~
+	r c r
+	r c r
+	r c r
+	c,2.~
 	c~
 % Bars 481 to 485
 	c4 r r

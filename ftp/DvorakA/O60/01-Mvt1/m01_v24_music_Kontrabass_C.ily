@@ -115,7 +115,7 @@ musicKontrabassMvtI = \relative c {
 		fis-. r r
 		fis\pp r r
 		fis r8 dis'8-.\< e-. fis-.
-		g-. fis-. e-. d!-. cis-. fis-. 
+		g-. fis-. e-. d!-. cis-. fis-.\!
 		b,2.\f~
 % Bars 91 to 95
 		b~

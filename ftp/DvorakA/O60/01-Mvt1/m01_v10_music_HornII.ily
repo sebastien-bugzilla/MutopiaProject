@@ -483,7 +483,7 @@ musicHornIIMvtI = \relative c' {
 	e4.\ff-^ d-^
 	c-^ c-^~
 % Bars 491 to 495
-	c4-. g-. c-.
+	c4 g-. c-.
 	f,-. b-. e,-.
 	c'4. r8 r4
 	c4. r8 r4 \mark #11
@@ -520,8 +520,8 @@ musicHornIIMvtI = \relative c' {
 	e~\p
 	e
 	e2(_\dimmarkup d8 c)
-	c2(\> g8) e
-	e2 g,4~\pp
+	c2(\> g8 e)
+	e2\! g,4~\pp
 % Bars 531 to 535
 	g2.~
 	g~

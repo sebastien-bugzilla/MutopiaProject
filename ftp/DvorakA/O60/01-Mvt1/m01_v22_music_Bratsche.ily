@@ -74,7 +74,7 @@ musicBratscheMvtI = \relative c {
 		cis8-. r d4(\fz dis)
 % Bars 26 to 30
 		gis8-! fis-! eis-! eis-! fis-! gis-! 
-		fis-.\f r g!4.( fis8)
+		fis-.\f r g!4.(\fz fis8)
 		e!-! fis-! g-! g-! fis-! e-! 
 		c r \repeat tremolo 4 {fis,16(\fz a)}
 		<g b>8 r \repeat tremolo 4 {e16(\fz g)}

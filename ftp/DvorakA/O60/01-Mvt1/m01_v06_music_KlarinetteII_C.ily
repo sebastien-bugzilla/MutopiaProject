@@ -18,7 +18,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 6 to 10
 		r r c
 		c4. c8\< c4
-		c2( c4)
+		c2( c4)\!
 		d2.\f\>(
 		bes2\p) r4
 % Bars 11 to 15
@@ -35,7 +35,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 31 to 35
 		
 		
-		ees,4\f\< d8-. aes'-. g-. f-. 
+		ees,4\f\< d8-. aes'-. g-. f-. \!
 		aes4-.\fz f-. aes\fz-.
 		f-. aes-.\fz f-.
 % Bars 36 to 40
@@ -57,7 +57,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		f4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		f2 r4
 % Bars 51 to 55
-		r r c-.
+		r r c
 		f-. f-. r
 		r r c
 		a4. a8 a4\<
@@ -67,11 +67,11 @@ musicKlarinetteIIMvtI = \relative c'' {
 		g2.
 		e2.\fz
 		f4 c( d8 ees
-		d2) g,8(\< a
+		d2) g,8\< a
 % Bars 61 to 65
-		bes2\!) g8(\< a
-		bes2\!) g8(\< a
-		bes2\!) g8( a
+		bes2\! g8\< a
+		bes2\! g8\< a
+		bes2\! g8( a
 		bes4-.) r r
 		R2.*4
 % Bars 66 to 70
@@ -110,7 +110,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		g'2(-^ f8 ees)
 		d4 r r
 		d2\fz( c8 bes)
-		a4 r8 c-. d-. e-.
+		a4 r8 c d e
 % Bars 101 to 105
 		a,2(\fz bes8 b)
 		a8-. r r4 r
@@ -135,7 +135,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		
 		
 		fis4--\p\< d'-- d--
-		d--\> d-- cis--
+		d--\! d--\> cis--\!
 		b-\tweak X-offset #-2 \pp r r 
 % Bars 131 to 135
 		R2.*6
@@ -149,11 +149,11 @@ musicKlarinetteIIMvtI = \relative c'' {
 		a8) r r4 bes(->
 		a8) r r4 cis-.
 		r e-. e-.
-		d8-. fis( g a) g4->(
-		a8-.) fis( g a) g4->(
+		d8 fis g a g4
+		a8 fis g a g4
 % Bars 146 to 150
-		a8-.) fis( g a d, e
-		fis\> a, cis d fis, g)
+		a8 fis g a d, e
+		fis\> a, cis d fis, g\!
 		fis4\p r r
 		fis r r
 		g r r
@@ -165,7 +165,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		R2.
 % Bars 156 to 160
 		g2. \tweak X-offset #-2 \fz
-		a2 \tweak X-offset #-2 \fz c8[( a)
+		a2\fz c8[( a)
 		bes-. c-.] bes2
 		d8( bes) c-. d-. e([ cis])
 		d-.[ e-.] d( cis d cis)
@@ -284,24 +284,24 @@ musicKlarinetteIIMvtI = \relative c'' {
 	
 	
 	
-	r4 r8 bes!-.\p c-. d-.
+	r4 r8 bes!\p c d
 	a4 r r
 % Bars 251 to 255
 	R2.
 	R2.
-	r4 r8 bes-.\p c-. d-.
+	r4 r8 bes\p c d
 	a4 r r 
 	R2.*3
 % Bars 256 to 260
 	
 	
 	R2.
-	r4 r8 c-.\pp d-. e-.
+	r4 r8 c\pp d e
 	R2.*2
 % Bars 261 to 265
 	
 	R2.
-	r4 r8 c-. d-. e-.
+	r4 r8 c d e
 	cis4 r r \mark \default
 	R2.
 % Bars 266 to 270
@@ -311,7 +311,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	fis4 r r
 	R2.
 % Bars 271 to 275
-	d'4\f r8 g,-. a-. b-.
+	d'4\f r8 g, a b
 	g2 f'!4
 	e r r
 	c-> d-> e->
@@ -355,10 +355,10 @@ musicKlarinetteIIMvtI = \relative c'' {
 	e2 e4-. \mark \default
 	f-. r r
 % Bars 316 to 320
-	r r c\pp--
+	r r c\pp
 	c2 r4
-	r r c4~
-	c c-. r
+	r r c4
+	c c r
 	c4. c8 c4
 % Bars 321 to 325
 	\hairpinYoffset #0 #0.8 c2\< c4
@@ -369,25 +369,25 @@ musicKlarinetteIIMvtI = \relative c'' {
 	
 	
 	
-	r4 r \hairpinYoffset #0 #1 \aIIXoffset #-3 c\( \tweak extra-offset #'(0.5 . 1) \p\<
-	c2 bes4
+	r4 r \hairpinYoffset #0 #1 c \tweak extra-offset #'(0.5 . 1) \p\< 
+	\hairpinYoffset #0 #0 c2 bes4
 % Bars 331 to 335
-	c d c\)
+	c d c\!
 	c2(\f bes4
 	a bes a)
-	bes\( \tweak extra-offset #'(0.5 . 1) \p\> f' e!
-	d e d\! \hairpinYoffset #0 #0
+	bes\p\> f' e!
+	d e d\!
 % Bars 336 to 340
-	cis8\)\pp r r4 r
+	cis8\pp r r4 r
 	R2.*9
 % Bars 341 to 345
 	
 % Bars 346 to 350
-	ees,4 d8-. aes'-. g-. f-. 
+	ees,4 d8 aes' g f 
 	aes4\fz-. f-. aes-.\fz
 	f-. aes\fz-. f-.
 	bes-.-\tweak extra-offset #'(1 . 1) \fz bes bes-.-\tweak extra-offset #'(1 . 1) \fz
-	ees,4 d8-. aes'-. g-. f-. 
+	ees,4 d8 aes' g f 
 % Bars 351 to 355
 	aes4\fz-. f-. aes-.\fz
 	f-. aes-.\fz f-.
@@ -422,10 +422,10 @@ musicKlarinetteIIMvtI = \relative c'' {
 	des\f r r
 % Bars 381 to 385
 	des r r 
-	\aIIXoffset #-5 des8\<-. c-. bes-. aes-. g-. c-.\!
+	des8\< c bes aes g c\!
 	f, r r4 r
 	R2.
-	r4 f4.\f-\tweak extra-offset #'(0 . 0.5) \<\( f'8\)\!
+	r4 f4.\f\< f'8\!
 % Bars 386 to 390
 	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f2( e4
 	f4) r r
@@ -458,7 +458,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	
 % Bars 421 to 425
 	a!8\pp\< a a4 c8 c
-	f4 f(\> e)\!
+	f4\! f(\> e)\!
 	d r r
 	R2.*6
 	
@@ -470,7 +470,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	R2.
 % Bars 431 to 435
 	r4 b,8\mf-. c-. d4->
-	d8(\< e f fis g f)
+	d8(\< e f fis g f)\!
 	e-.\f r r4 bes'!(->
 	c8) r r4 bes(->
 	c8) r r4 des-.\<
@@ -479,7 +479,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	f8 a, bes c bes4
 	a8 a bes c  bes4
 	a8 a bes c f,\> g
-	a c, e f a, bes
+	a c, e f a, bes\!
 % Bars 441 to 445
 	a4\p r r
 	a r_\crescmarkup r
@@ -587,9 +587,9 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 541 to 545
 	c--
 	c--
-	f2-^\f e4-.
-	c8-. a-. bes-. c-. g4
-	f8-. a-. c4 e->
+	f2\f e4
+	c8 a bes c g4
+	f8 a c4 e
 % Bar 546
-	f-> r r \bar "|."
+	f r r \bar "|."
 }

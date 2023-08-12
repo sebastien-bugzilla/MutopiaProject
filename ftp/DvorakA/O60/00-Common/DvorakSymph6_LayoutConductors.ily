@@ -4,23 +4,23 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 20) % 13
+#(set-global-staff-size 13) % 13
 \layout {
-	#(layout-set-staff-size 20) % 13
+	#(layout-set-staff-size 13) % 13
 	\set Score.alternativeNumberingStyle = #'numbers
-	\set Score.markFormatter = #format-mark-box-alphabet
+	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 	\set Staff.soloText = #"1."
 	\set Staff.soloIIText = #"2."
 	\set Staff.aDueText = #"a2."
 	\compressEmptyMeasures
-	\compressMMRests % to be commented in final version
 	\context {
 		\Score
-		\override Score.RehearsalMark #'font-size = #8
-		\override Score.RehearsalMark.extra-spacing-width = #'(-0.2 . 0.2)
-		\override Score.RehearsalMark.extra-spacing-height = #'(-inf.0 . +inf.0)
-		\override Score.RehearsalMark.outside-staff-priority = ##f
-		\override Score.BarNumber.font-size = #0.1
+		\override RehearsalMark.font-size = #8
+		\override RehearsalMark.extra-spacing-width = #'(-0.2 . 0.2)
+		\override RehearsalMark.extra-spacing-height = #'(-inf.0 . +inf.0)
+		\override RehearsalMark.outside-staff-priority = ##f
+		\override BarNumber.font-size = #2
+		\accidentalStyle modern-voice
 	}
 	\context {
 		\StaffGroup
@@ -28,7 +28,8 @@
 	}
 	\context {
 		\Staff
-		\RemoveAllEmptyStaves
+%		\RemoveAllEmptyStaves
+		\RemoveEmptyStaves
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 	}
 	\context {
@@ -44,23 +45,3 @@
 	}
 }
 
-%generalOptions = {
-%%	\version "2.22.0"
-%%	\set Score.doubleRepeatType = #":|.|:"
-%}
-%conductorOptions = {
-%	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-%		beam-event tuplet-span-event dynamic-event articulation-event
-%		dynamic-event slur-event text-script-event trill-span-event
-%		phrasing-slur-event beam-forbid-event tremolo-event crescendo-event 
-%		decrescendo-event )
-%	%\set Voice.restNumberThreshold = #0
-%%	\override Staff.Script.avoid-slur = #'ignore
-%}
-%\layout {
-%	%indent = 0\cm % to be removed
-%	\context {
-%		\Staff
-%		%\override VerticalAxisGroup.remove-first = ##t % to be removed
-%	}
-%}
