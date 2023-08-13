@@ -502,7 +502,7 @@ musicVioloncelloMvtI = \relative c {
 	\tuplet 3/2 4 {bes8(\< c bes} bes'2)\!
 	\tuplet 3/2 4 {bes,8(\fz\< c bes} bes'4)\! d,8-. e!-.
 	f4 r r
-	\tupletYOff #3 \tuplet 3/2 4 {f8(\fz \hairpinShorten #1 #-1 g\< f} f'4)\! g,8-. gis-.
+	\tupletYOff #3 \tuplet 3/2 4 {f8(\fz \hairpinShorten #'(1 . -1) g\< f} f'4)\! g,8-. gis-.
 	a-. r r4 r
 % Bars 396 to 400
 	a8-._\dimmarkup r r4 r
@@ -542,7 +542,7 @@ musicVioloncelloMvtI = \relative c {
 	b(\< fis dis fis) b,4~
 % Bars 426 to 430
 	b2.~
-	\hairpinShorten #0 #-4 b\!\>~
+	\hairpinShorten #'(0 . -4) b\!\>~
 	b\!
 	b'8-.\p d!-. fis4-.\< e-.
 	d8-. cis-. b4-> b8-. a-.

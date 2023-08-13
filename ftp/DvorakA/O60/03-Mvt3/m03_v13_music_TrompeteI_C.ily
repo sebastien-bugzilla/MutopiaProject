@@ -231,10 +231,10 @@ musicTrompeteIMvtIII = \relative c'' {
 	
 	
 	
-	r4 g'-.\f\< g-.
-	g2->\ff c4-.
+	r4 \partCombineApart g'-. g-.
+	g2-> c4-.
 % Bars 326 to 330
-	bes4-. g2->
+	bes4-. g2-> \partCombineAutomatic
 	R2.*74
 % Bars 331 to 335
 	

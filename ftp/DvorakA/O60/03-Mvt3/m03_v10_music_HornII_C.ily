@@ -26,12 +26,12 @@ musicHornIIMvtIII = \relative c'' {
 		a-.\fz g-. g-.
 		bes2 bes4~
 		bes2 a4
-		gis gis-. gis-.
+		gis \single \omitAccidental gis-. gis-.
 % Bars 16 to 20
 		a-. a-. a-.
 		bes2 bes4~
 		bes2 a4
-		gis gis-. gis-.
+		gis \single \omitAccidental gis-. gis-.
 		a-. a-. a-.
 % Bars 21 to 25
 		e' e, e
@@ -151,15 +151,15 @@ musicHornIIMvtIII = \relative c'' {
 % Bars 136 to 140
 		R2.*2
 		
-		b4-. gis-. b-.
-		c-. a-. c-.
+		b4 gis b
+		c a c
 		R2.*2
 % Bars 141 to 145
 		
-		b4-. gis-. b-.
-		c-. a-. c-.
-		e-. e,-. e-.
-		e-. e-. e-.
+		b4 gis b
+		c a c
+		e e,-. e-.
+		e-. e-. e-. 
 	}
 % Bars 146 to 150
 	\alternative {
@@ -273,12 +273,12 @@ musicHornIIMvtIII = \relative c'' {
 % Bars 296 to 300
 	bes2 bes4~
 	bes2 a4
-	gis gis-. gis-.
+	gis \single \omitAccidental gis-. gis-.
 	a-. a-. a-.
 	bes2 bes4~
 % Bars 301 to 305
 	bes2 a4
-	gis gis-. gis-.
+	gis \single \omitAccidental gis-. gis-.
 	a-. a-. a-.
 	e' e, e
 	a r r

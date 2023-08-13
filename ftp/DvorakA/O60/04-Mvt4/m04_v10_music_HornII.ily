@@ -284,7 +284,7 @@ musicHornIIMvtIV = \relative c' {
 	f-> f4-. c'-.
 	des-. c-. des-. c-.
 % Bars 286 to 290
-	<<f,1 {\hairpinShorten #0 #-2 s4\< s  s s\!}>>
+	<<f,1 {\hairpinShorten #'(0 . -2) s4\< s  s s\!}>>
 	g4 r f\ff r
 	R1
 	r2 r4 r8 f'-.\f

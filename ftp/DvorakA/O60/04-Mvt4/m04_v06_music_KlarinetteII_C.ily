@@ -395,7 +395,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	
 	
-	\hairpinShorten #0 #-2 g4(\p\< \hairpinShorten #-2 #0 d'\! ees\> c\!
+	\hairpinShorten #'(0 . -2) g4(\p\< \hairpinShorten #'(-2 . 0) d'\! ees\> c\!
 	d) r r2
 % Bars 376 to 380
 	R1*2

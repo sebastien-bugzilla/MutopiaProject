@@ -200,7 +200,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		bes\<
 		c
 		d2 c4)
-		bes2.\p~
+		bes2.\fp~
 		bes~\>
 % Bars 161 to 165
 		bes~

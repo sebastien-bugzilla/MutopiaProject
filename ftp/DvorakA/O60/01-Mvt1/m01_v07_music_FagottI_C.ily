@@ -401,7 +401,7 @@ musicFagottIMvtI = \relative c {
 	b4)( fis' e 
 	d e d
 % Bars 336 to 340
-	\noFlag ais8) \partCombineAutomatic r r4 r
+	\omitFlag ais8) \partCombineAutomatic r r4 r
 	R2.*3
 	
 	

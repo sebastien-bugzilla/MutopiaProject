@@ -122,7 +122,7 @@ musicBratscheMvtI = \relative c {
 			q:
 			q:
 			q:
-			\hairpinShorten #1.5 #0 q:\< \revert Stem.length
+			\hairpinShorten #'(1.5 . 0) q:\< \revert Stem.length
 % Bars 56 to 60
 			s2\fz s4
 			<g b>2.:16
@@ -360,7 +360,7 @@ musicBratscheMvtI = \relative c {
 	<g b>2.:32_\ppsubponticello
 	q:
 	q:
-	<< <d c'>: {\hairpinShorten #-3 #2 s8\< s s \hairpinShorten #-2 #-0.5  s\> s s\!} >>
+	<< <d c'>: {\hairpinShorten #'(-3 . 2) s8\< s s \hairpinShorten #'(-2 . -0.5)  s\> s s\!} >>
 % Bars 251 to 255
 	<g b>2.:32
 	q:
@@ -382,7 +382,7 @@ musicBratscheMvtI = \relative c {
 		a:\pp
 		a:
 		a:
-		<< \once \stemUp <e d'>: {\hairpinShorten #-3 #2 s8\< s s \hairpinShorten #-2 #-0.5 s\> s s\!} >> 
+		<< \once \stemUp <e d'>: {\hairpinShorten #'(-3 . 2) s8\< s s \hairpinShorten #'(-2 . -0.5) s\> s s\!} >> 
 		a2.:32
 		a:
 		a:

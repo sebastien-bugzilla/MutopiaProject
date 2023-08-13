@@ -279,7 +279,7 @@ musicFloteIIMvtIII = \relative c''' {
 	
 	
 	d,8(\p\< e f! g a bes
-	b4\!) cis-. d-.
+	b4\!) cis-.\f d-.
 	c!2->\ff bes4->~
 % Bars 346 to 350
 	bes a2->

@@ -7,7 +7,7 @@
 tempiMvtI = {
 	\tempo \markup {
 		\concat { 
-			"Allegro non tanto. (M.M. " 
+			"Allegro non tanto. (M.M. "
 			\raise #0.4 \tiny \note-by-number #2 #0 #0.75 
 			" = 132.)"
 		}
@@ -41,8 +41,21 @@ tempiMvtI = {
 	s2.*4
 }
 tempiMvtII = {
+	\tempo \markup {
+		\concat {
+			"Adagio. (M.M. "
+			\raise #0.4 \tiny \note-by-number #2 #0 #0.75
+			" = 42.)"
+		}
+	}
 	s2*28
-	\tempo "Poco più animato." % bar 29
+	\tempo \markup { % bar 29
+		\concat {
+			"Poco più animato. ("
+			\raise #0.4 \tiny \note-by-number #2 #0 #0.75
+			" = 56.)"
+		}
+	}
 	s2*6
 	\tempo "Tempo I." % bar 35
 	s2*60
@@ -58,6 +71,13 @@ tempiMvtII = {
 	s2*38
 }
 tempiMvtIII = {
+	\tempo \markup {
+		\concat {
+			"Presto. (M.M. "
+			\raise #0.4 \tiny \note-by-number #1 #1 #0.75
+			" = 96.)"
+		}
+	}
 	\repeat volta 2 {
 		s2.*23
 	}
@@ -74,7 +94,13 @@ tempiMvtIII = {
 	}
 	s2.*6
 	\repeat volta 2 {
-		\tempo "Poco meno mosso." % bar 153
+		\tempo \markup {  % bar 153
+			\concat {
+				"Poco meno mosso. (M.M. "
+				\raise #0.4 \tiny \note-by-number #1 #1 #0.75
+				" = 80.)"
+			}
+		}
 		s2.*6
 		\tempo "poco sosten." % bar 159
 		s2.*4
@@ -88,7 +114,9 @@ tempiMvtIII = {
 	\grace s8 s2.*80
 	\tempo "poco a poco string." % bar 281
 	s2.*7
-	\tempo "Tempo I." % bar 288
+	\tempo \markup { % bar 288
+		"Tempo I." \medium \italic "(Presto.)"
+	}
 	s2.*140
 	\tempo "poco a poco accelerando" % bar 428
 	s2.*11

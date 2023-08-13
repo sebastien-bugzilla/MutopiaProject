@@ -260,7 +260,7 @@ musicTrompeteIIMvtIV = \relative c'' {
 	g-> g4-. d'-.
 	g,-. d'-. g,-. d'-.
 % Bars 286 to 290
-	<<g,1 {\hairpinShorten #0 #-1 s4\< s s s\!}>>
+	<<g,1 {\hairpinShorten #'(0 . -1) s4\< s s s\!}>>
 	d4 r g2-^\ff~
 	g1~
 	g2. g4

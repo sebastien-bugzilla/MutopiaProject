@@ -151,7 +151,7 @@ musicViolinIIMvtIV = \relative c'' {
 	
 	r2 cis2\fz\>~
 	cis4 b8( cis b4 a)\!
-	\hairpinShorten #6 #0 a1\<~
+	\hairpinShorten #'(6 . 0) a1\<~
 	a4 a( fis\! <e gis>)
 % Bars 121 to 125
 	a16(\f\< b cis d e fis gis a) a2:16\ff

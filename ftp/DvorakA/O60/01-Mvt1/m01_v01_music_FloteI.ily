@@ -408,7 +408,7 @@ musicFloteIMvtI = \relative c'' {
 	bes8\<-. a-. g-. f-. e-. a-.\!
 	d,4 r r
 	R2.
-	r4 \hairpinShorten #0 #-2 d4.(\f\< d'8)\!
+	r4 \hairpinShorten #'(0 . -2) d4.(\f\< d'8)\!
 % Bars 386 to 390
 	d2.~->
 	d4 r r

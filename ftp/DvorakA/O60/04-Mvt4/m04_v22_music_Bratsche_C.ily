@@ -91,17 +91,17 @@ musicBratscheMvtIV = \relative c' {
 	e,8_\pdim d' cis b r2
 	R1
 	e,8(\pp d' cis b a gis fis' e) \mark \default
-	\hairpinYoffset #0 #-0.5 a,4(-\tweak extra-offset #'(0 . 3) _\pdolce\< e' \hairpinShorten #0 #-3 f\> d\! \hairpinYoffset #0 #0
+	\hairpinYoffset #0 #-0.5 a,4(-\tweak extra-offset #'(0 . 3) _\pdolce\< e' \hairpinShorten #'(0 . -3) f\> d\! \hairpinYoffset #0 #0
 	cis2 a_\dimmarkup)~
 % Bars 71 to 75
 	a1~
 	a4 r r2
-	e'4(\mf\< b' \hairpinShorten #0 #-3 c\> a)\!
+	e'4(\mf\< b' \hairpinShorten #'(0 . -3) c\> a)\!
 	gis \tuplet 3/2 4 {e8(-\tweak extra-offset #'(0 . 0.3) _\dimmarkup fis gis)} r4 \tuplet 3/2 4 {e8( fis gis)}
 	r4 \tuplet 3/2 4 {fis8(\p gis a)} r4 \tuplet 3/2 4 {fis8( gis a)}
 % Bars 76 to 80
 	e4 r r2
-	b4(\p\< fis' \hairpinShorten #0 #-3 g!\> e\!)
+	b4(\p\< fis' \hairpinShorten #'(0 . -3) g!\> e\!)
 	d \tuplet 3/2 4 {b8( cis d)} r4 \tuplet 3/2 4 {b8( cis d)}
 	r4 \tuplet 3/2 4 {cis8( d e)} r4 \tuplet 3/2 4 {cis8( d e)}
 	d4 r r2

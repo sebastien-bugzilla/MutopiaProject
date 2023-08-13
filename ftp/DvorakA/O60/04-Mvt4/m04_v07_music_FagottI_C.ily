@@ -88,7 +88,7 @@ musicFagottIMvtIV = \relative c' {
 	e,8(-\tweak X-offset #-0.3 _\pdim d' cis b) r2
 	R1*2
 	\mark \default
-	\partCombineApart a4_(_\p_\< e' \hairpinShorten #0 #-3 f_\> d\!
+	\partCombineApart a4_(_\p_\< e' \hairpinShorten #'(0 . -3) f_\> d\!
 	cis2 a4-.)_\dimmarkup e-.
 % Bars 71 to 75
 	a,-. r a'-. e-. 
@@ -96,7 +96,7 @@ musicFagottIMvtIV = \relative c' {
 	R1*4
 % Bars 76 to 80
 	
-	\partCombineApart b'4(_\p_\< fis' \hairpinShorten #0 #-3 g!_\> e\!
+	\partCombineApart b'4(_\p_\< fis' \hairpinShorten #'(0 . -3) g!_\> e\!
 	d) r r2 \partCombineAutomatic
 	R1*3
 % Bars 81 to 85

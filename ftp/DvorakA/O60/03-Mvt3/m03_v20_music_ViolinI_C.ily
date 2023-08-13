@@ -102,7 +102,7 @@ musicViolinIMvtIII = \relative c''' {
 		
 		
 % Bars 76 to 80
-		d2\p g4~\<
+		d2\p\< g4~
 		g a-. bes-.\!
 		d2->\f c4~
 		c bes8( a bes4)

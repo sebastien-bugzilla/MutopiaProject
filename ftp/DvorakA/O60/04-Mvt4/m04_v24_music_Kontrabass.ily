@@ -505,7 +505,7 @@ musicKontrabassMvtIV = \relative c' {
 	R1*3
 	
 	
-	\hairpinShorten #0 #-2 fis,2\mf\< a\!~
+	\hairpinShorten #'(0 . -2) fis,2\mf\< a\!~
 	a4 g8(_\crescmarkup a g4 fis)
 % Bars 416 to 420
 	fis( a) g2

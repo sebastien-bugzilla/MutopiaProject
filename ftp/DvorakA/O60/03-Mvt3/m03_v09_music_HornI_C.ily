@@ -151,14 +151,14 @@ musicHornIMvtIII = \relative c'' {
 % Bars 136 to 140
 		R2.*2
 		
-		b4-. gis-. b-.
-		c-. a-. c-.
+		\partCombineApart b4-. gis-. b-.
+		c-. a-. c-. \partCombineAutomatic
 		R2.*2
 % Bars 141 to 145
 		
-		b4-. gis-. b-.
+		\partCombineApart b4-. gis-. b-.
 		c-. a-. c-.
-		e-. e-. e-.
+		e-. \partCombineAutomatic e-. e-.
 		e-. e-. e-.
 	}
 % Bars 146 to 150
@@ -190,10 +190,10 @@ musicHornIMvtIII = \relative c'' {
 % Bars 176 to 180
 	
 % Bars 181 to 185
-		\partCombineApart f!2.~
+		\partCombineApart \stemDown f!2.~
 		f~
 		f~
-		f2( e4)
+		\stemUp f2( e4)
 		d2(\p cis4
 % Bars 186 to 190
 		b2 a4)
@@ -405,7 +405,7 @@ musicHornIMvtIII = \relative c'' {
 	b4-. gis-. b-.
 % Bars 426 to 430
 	c-. a-. c-.
-	e-. e-. e-.
+	\once \partCombineApart e-. e-. e-.
 	e-. e-. e-.
 	e-. e-. e-.
 	e-. e2->

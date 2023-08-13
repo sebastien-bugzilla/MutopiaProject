@@ -97,11 +97,11 @@ musicViolinIMvtI = \relative c'' {
 		g'[-> b, g b] a'[-> b,
 		g b] b'[-> b, g b]
 		cis'->[ b, g b] d'->[ b,]
-		dis'4-> r \hairpinShorten #2 #1  d(\p\<
+		dis'4-> r \hairpinShorten #'(2 . 1)  d(\p\<
 		dis2 a4\!
 % Bars 76 to 80
-		\hairpinShorten #-2 #2 gis2)\> e'4(\<
-		\hairpinShorten #2 #2 eis2\> b4
+		\hairpinShorten #'(-2 . 2) gis2)\> e'4(\<
+		\hairpinShorten #'(2 . 2) eis2\> b4
 		ais\!) r r
 		R2.*3
 		

@@ -67,9 +67,9 @@ musicFloteIIMvtIII = \relative c''' {
 		
 		R2.*2
 		
-		d,8(\p\< e f! g a bes
+		d,8\p\< e f! g a bes
 % Bars 61 to 65
-		b4)\! cis\f-. d-.
+		b4\! cis\f d
 		c!2\ff  bes4~
 		bes a2->
 		R2.*46
@@ -99,20 +99,20 @@ musicFloteIIMvtIII = \relative c''' {
 		
 		
 		r4 c!2
-		des4-.\f\< c-. c-. 
-		des-. c-. c-. 
+		des4\f\< c c
+		des c c
 % Bars 116 to 120
-		des-. c-. c-. 
-		des-. c-. c-.\!
-		cis!-. cis cis
-		cis-. cis-. cis-. 
-		cis-. cis-. cis-. 
+		des c c
+		des c c\!
+		cis! cis cis
+		cis cis cis 
+		cis cis cis 
 % Bars 121 to 125
-		cis-. cis-. cis-. 
-		cis-. cis-. cis-. 
-		c!-. c-. c-. 
-		c!(\ff des) c(
-		des) c( des)
+		cis cis cis 
+		cis cis cis 
+		c! c c
+		c!\ff des c
+		des c des
 % Bars 126 to 130
 		c( des) c(
 		des) c( cis)
@@ -277,10 +277,10 @@ musicFloteIIMvtIII = \relative c''' {
 	R2.*2
 	
 	d,8(\p\< e f! g a bes
-	b4\!) cis-. d-.
+	b4\!) cis-.\f d-.
 	c!2\ff bes4~
 % Bars 346 to 350
-	bes a2->
+	bes a2
 	R2.*46
 % Bars 351 to 355
 	

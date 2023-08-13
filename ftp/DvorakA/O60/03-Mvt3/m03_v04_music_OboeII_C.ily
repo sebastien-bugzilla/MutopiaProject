@@ -73,9 +73,9 @@ musicOboeIIMvtIII = \relative c'' {
 		a r a
 		r g r
 		g r g
-		f!8(\< g a bes c cis
+		f!8\< g a bes c cis
 % Bars 61 to 65
-		d4)\! e-.\f d-.
+		d4\! e-.\f d-.
 		f2\ff-> f4->_(
 		e) f2->
 		R2.*16
@@ -88,10 +88,10 @@ musicOboeIIMvtIII = \relative c'' {
 		
 		
 		
-		bes,4-.\p d-. c-.
+		bes,4\p d c
 % Bars 81 to 85
-		bes-. a-. g-.
-		f2  f4~ 
+		bes a g
+		f2 f4~ 
 		f f2
 		R2.*2
 		
@@ -240,24 +240,24 @@ musicOboeIIMvtIII = \relative c'' {
 	
 % Bars 206 to 210
 	
-	\mmrPosOver #-8 R2.*15
-	
-	
-	
+	\mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 211 to 215
-	
-	
-	
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R
 % Bars 216 to 220
-	
-	
-	
-	
-	
+	\mmrPos #-8 R
+	\mmrPos #-7 R
+	\mmrPos #-8 R
+	\mmrPos #-7 R
+	\mmrPos #-8 R
 % Bars 221 to 225
-	\mmrPosRevert
+	\mmrPos #-7 R
 	fis,4\pp g8 e fis4
 	R2.*6
 % Bars 226 to 230
@@ -371,8 +371,8 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 341 to 345
 	r g r
 	g r g
-	f!8( g a\< bes c cis
-	d4) e4-.\f d-.
+	f!8 g a\< bes c cis
+	d4\! e4-.\f d-.
 	f2->\ff f4->_(
 % Bars 346 to 350
 	e) f2->
@@ -384,8 +384,8 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 361 to 365
 	
 	
-	bes,4-.\p d-. c-.
-	bes-. a-. g-.
+	bes,4\p d c
+	bes a g
 	f2 f4~
 % Bars 366 to 370
 	f f2

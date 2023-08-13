@@ -219,7 +219,7 @@ musicPaukenMvtIV = \relative c {
 % Bars 281 to 285
 	
 % Bars 286 to 290
-	<< a1\startTrillSpan {\hairpinShorten #0 #-2 s4-\tweak X-offset #-1 \f\< s s s\!\stopTrillSpan}>>
+	<< a1\startTrillSpan {\hairpinShorten #'(0 . -2) s4-\tweak X-offset #-1 \f\< s s s\!\stopTrillSpan}>>
 	d4 r a2\ff\startTrillSpan
 	a1
 	a

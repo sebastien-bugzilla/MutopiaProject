@@ -66,12 +66,12 @@ musicFloteIMvtIII = \relative c''' {
 		R2.*2
 		
 		\partCombineApart a2.~
-		a \partCombineAutomatic
-		d,8(\p\< e f! g a bes
+		a
+		d,8( e f! g a bes
 % Bars 61 to 65
-		b4)\! cis\f-. d-.
+		b4) cis-. d-.
 		f4(-> a) d,(->
-		e) f2->
+		e) f2-> \partCombineAutomatic
 		R2.*46
 % Bars 66 to 70
 	
@@ -98,7 +98,7 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 111 to 115
 		r b8(_\crescmarkup ais b4)
 		r cis8( bis cis4)
-		\partCombineAutomatic r ees8( d ees4)
+		\once \partCombineAutomatic r ees8( d ees4)
 		f4-. ees8( d ees4)
 		f-. ees8( d ees4) 
 % Bars 116 to 120
@@ -111,10 +111,10 @@ musicFloteIMvtIII = \relative c''' {
 		g-. e8( dis e4)
 		g-. ees8( d ees4)
 		aes-. ees8( d ees4)
-		c!(\ff des) c(
+		c!( des) c(
 		des) c( des)
 % Bars 126 to 130
-		c( des) c(
+		\partCombineAutomatic c( des) c(
 		des) c( cis)
 		cis(-\tweak extra-offset #'(0 . 0.5) _\ffgrandioso d) cis(
 		d) cis( d)
@@ -146,7 +146,7 @@ musicFloteIMvtIII = \relative c''' {
 	\repeat volta 2 {
 		\trio R2.*3
 % Bars 156 to 160
-		e,4(\p fis8 dis e4)
+		\aIIOmit e,4(\p fis8 dis e4)
 		R2.*9
 % Bars 161 to 165
 	
@@ -160,7 +160,7 @@ musicFloteIMvtIII = \relative c''' {
 		R2.
 		d
 % Bars 176 to 180
-		d4-.\< e-. fis-.
+		d4-.\< e-. fis-.\!
 		g2.\fz
 		d4(\> cis! d)\!
 		g2.
@@ -339,10 +339,10 @@ musicFloteIMvtIII = \relative c''' {
 	\partCombineApart a2.~
 	a \partCombineAutomatic
 	d,8(\p\< e f! g a bes
-	b4\!) cis-. d-.
-	f->( a) d,->(
+	b4\!) cis-.\f d-.
+	\partCombineApart f->( a) d,->(
 % Bars 346 to 350
-	e) f2->
+	e) f2-> \partCombineAutomatic
 	R2.*46
 % Bars 351 to 355
 	
@@ -367,7 +367,7 @@ musicFloteIMvtIII = \relative c''' {
 	r b8(_\crescmarkup ais b4)
 	r cis8( bis cis4)
 % Bars 396 to 400
-	\partCombineAutomatic r ees8( d ees4)
+	r ees8( d ees4)
 	f-. ees8( d ees4) 
 	f-. ees8( d ees4) 
 	f-. ees8( d ees4) 
@@ -380,7 +380,7 @@ musicFloteIMvtIII = \relative c''' {
 	g-. ees8( d ees4)
 % Bars 406 to 410
 	aes4-. ees8( d ees4)
-	c!(\ff des) c(
+	\partCombineAutomatic c!(\ff des) c(
 	des) c( des)
 	c( des) c(
 	des) c( cis)

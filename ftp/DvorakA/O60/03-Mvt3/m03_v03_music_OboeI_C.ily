@@ -26,15 +26,15 @@ musicOboeIMvtIII = \relative c''' {
 		f-.\fz f-. f-.
 		fis( g8) r fis4(
 		g8) r fis4( g8) r
-		a4-. e8( dis e4)
+		\partCombineApart a4-. e8( dis e4)
 % Bars 16 to 20
 		f!-. d8( cis d4)
-		fis4( g8) r fis4(
+		\partCombineAutomatic fis4( g8) r fis4(
 		g8) r fis4( g8) r
-		a4-. e8( dis e4)
+		\partCombineApart a4-. e8( dis e4)
 		f-. d8( cis d4)
 % Bars 21 to 25
-		a'-. \partCombineApart a,8( gis a4)
+		a'-. a,8( gis a4)
 		d-. d,8( cis d4)
 		d \partCombineAutomatic r r
 	}
@@ -73,11 +73,11 @@ musicOboeIMvtIII = \relative c''' {
 		d r d
 		r a r
 		a r a
-		f!8(\< g a bes c cis
+		\partCombineApart f!8( g a bes c cis
 % Bars 61 to 65
-		d4)\! g-.\f f-.
-		a2\ff-> \partCombineChords bes4->~
-		bes \partCombineAutomatic a2->
+		d4)\! \partCombineAutomatic g-. f-.
+		a2\ff-> bes4->^(
+		bes) a2->
 		R2.*16
 % Bars 66 to 70
 	
@@ -88,11 +88,11 @@ musicOboeIMvtIII = \relative c''' {
 		
 		
 		
-		g4-.\p f-. ees-.
+		\partCombineApart g4-. f-. ees-.
 % Bars 81 to 85
 		d-. c-. bes-.
 		f'->-. f,-. a-.
-		c-. bes8( a bes4)
+		c-. bes8( a bes4) \partCombineAutomatic
 		R2.*2
 		
 % Bars 86 to 90
@@ -148,22 +148,22 @@ musicOboeIMvtIII = \relative c''' {
 		a2 a4~
 % Bars 131 to 135
 		a a2
-		gis4( a) gis(
+		\partCombineApart gis4( a) gis(
 		a) gis( a)
 		bes-. a8( gis a4)
 		bes-. a8( gis a4)
 % Bars 136 to 140
-		fis(\fz g!) fis(\fz
+		\partCombineAutomatic fis(\fz g!) fis(\fz
 		g) fis(\fz g)
-		a-. e8( dis e4)
+		\partCombineApart a-. e8( dis e4)
 		f!-. d!8( cis d4)
-		fis4(\fz g) fis(\fz
+		\partCombineAutomatic fis4(\fz g) fis(\fz
 % Bars 141 to 145
 		g) fis(\fz g)
-		a4-. e8( dis e4)
+		\partCombineApart a4-. e8( dis e4)
 		f-. d8( cis d4)
 		a'-. a,(-> b8 cis)
-		d4-. f-. d-.
+		\partCombineAutomatic d4-. f-. d-.
 	}
 % Bars 146 to 150
 	\alternative {
@@ -319,15 +319,15 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 296 to 300
 	fis( g8) r fis4(
 	g8) r fis4( g8) r
-	a4-. e8( dis e4)
+	\partCombineApart a4-. e8( dis e4)
 	f!-. d!8( cis d4)
-	fis4( g8) r fis4(
+	\partCombineAutomatic fis4( g8) r fis4(
 % Bars 301 to 305
 	g8) r fis4( g8) r
-	a4-. e8( dis e4)
+	\partCombineApart a4-. e8( dis e4)
 	f-. d8( cis d4)
-	a'-. \partCombineApart a,8( gis a4) \partCombineAutomatic
-	d-. \partCombineApart d,8( cis d4)
+	\partCombineApart a'-. a,8( gis a4)
+	d-. d,8( cis d4)
 % Bars 306 to 310
 	d \partCombineAutomatic r r \bar "||"
 	R2.*16
@@ -362,11 +362,11 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 341 to 345
 	r a r
 	a r a
-	f!8( g a\< bes c cis
-	d4) g4-.\f f-.
-	a2->\ff \partCombineChords bes4->~
+	\partCombineApart f!8( g a bes c cis
+	d4) \partCombineAutomatic g4-.\f f-.
+	a2->\ff bes4->^(
 % Bars 346 to 350
-	bes \partCombineAutomatic a2->
+	bes) a2->
 	R2.*16
 % Bars 351 to 355
 	
@@ -375,11 +375,11 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 361 to 365
 	
 	
-	g4-.\p f-. ees-.
+	\partCombineApart g4-. f-. ees-.
 	d-. c-. bes-.
 	f'->-. f,-. a-.
 % Bars 366 to 370
-	c-. bes8( a bes4)
+	c-. bes8( a bes4) \partCombineAutomatic
 	R2.*2
 	
 	f'4-. f,-. a-.
@@ -440,24 +440,24 @@ musicOboeIMvtIII = \relative c''' {
 	gis4( a) gis(
 % Bars 416 to 420
 	a) gis( a)
+	\partCombineApart bes-. a8( gis a4)
 	bes-. a8( gis a4)
-	bes-. a8( gis a4)
-	fis(\fz g!) fis(\fz
+	\partCombineAutomatic fis(\fz g!) fis(\fz
 	g) fis(\fz g)
 % Bars 421 to 425
-	a-. e8( dis e4)
+	\partCombineApart a-. e8( dis e4)
 	f!-. d!8( cis d4)
-	fis(\fz g) fis(\fz
+	\partCombineAutomatic fis(\fz g) fis(\fz
 	g) fis(\fz g)
-	a-. e8( dis e4)
+	\partCombineApart a-. e8( dis e4)
 % Bars 426 to 430
 	f-. d8( cis d4)
 	a'-. a,(-> b8 cis)
-	d4-. f-. d-.
+	\partCombineAutomatic d4-. f-. d-.
 	d-. f-. d-.
-	\once \partCombineApart a-. g'->( f8 e)
+	\partCombineApart a-. g'->( f8 e)
 % Bars 431 to 435
-	d4-. f-. d-.
+	\partCombineAutomatic d4-. f-. d-.
 	d-. f-. d-.
 	a'-. a-. a-.
 	f-. a-. f-.

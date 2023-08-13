@@ -9,7 +9,6 @@ timeMvtI = {
 }
 timeMvtII = {
 	\time 2/4
-	\tempo "Adagio"
 	\set Timing.baseMoment = #(ly:make-moment 1/2)
 	\set Timing.beamExceptions = 
 		\beamExceptions {
@@ -19,7 +18,6 @@ timeMvtII = {
 }
 timeMvtIII = {
 	\time 3/4
-	\tempo "Scherzo (Furiant). Presto"
 }
 timeMvtIV = {
 	\time 2/2

@@ -42,22 +42,22 @@ musicFagottIMvtIII = \relative c {
 		a''4(\p c) a(
 		c) a( c)~
 % Bars 26 to 30
-		\hairpinShorten #0 #2 c2.\<~
-		\hairpinShorten #0 #3 c\>
+		\hairpinShorten #'(0 . 2) c2.\<~
+		\hairpinShorten #'(0 . 3) c\>
 		a4(\! c) a(
 		c) a( c)~
-		\hairpinShorten #0 #2 c2.~\<
+		\hairpinShorten #'(0 . 2) c2.~\<
 % Bars 31 to 35
-		\hairpinShorten #0 #3 c\>
+		\hairpinShorten #'(0 . 3) c\>
 		f,4(\! a) f(
 		a) f( a)~
 		a2.\<
-		\hairpinShorten #0 #3 a\>
+		\hairpinShorten #'(0 . 3) a\>
 % Bars 36 to 40
 		fis4(\! a) fis(
 		a) fis( a)~
-		\hairpinShorten #0 #2 a2.\<~
-		\hairpinShorten #-1 #2 a\>
+		\hairpinShorten #'(0 . 2) a2.\<~
+		\hairpinShorten #'(-1 . 2) a\>
 		d,8(\< e f! g a bes!
 % Bars 41 to 45
 		b!4) cis-. d-.\!
@@ -348,23 +348,23 @@ musicFagottIMvtIII = \relative c {
 	d r r \bar "||"
 	a''4(\p c) a(
 	c) a( c)~
-	\hairpinShorten #0 #2 c2.\<~
-	\hairpinShorten #-1 #2 c\>
+	\hairpinShorten #'(0 . 2) c2.\<~
+	\hairpinShorten #'(-1 . 2) c\>
 % Bars 311 to 315
 	a4(\! c) a(
 	c) a( c)~
-	\hairpinShorten #0 #2 c2.\<~
+	\hairpinShorten #'(0 . 2) c2.\<~
 	c\>
 	f,4(\! a) f(
 % Bars 316 to 320
 	a) f( a)~
-	\hairpinShorten #0 #2 a2.\<~
-	\hairpinShorten #-1 #4 a\>
+	\hairpinShorten #'(0 . 2) a2.\<~
+	\hairpinShorten #'(-1 . 4) a\>
 	fis4(\! a) fis(
 	a) fis( a)~
 % Bars 321 to 325
-	\hairpinShorten #0 #2 a2.\<~
-	\hairpinShorten #-1 #2 a\>
+	\hairpinShorten #'(0 . 2) a2.\<~
+	\hairpinShorten #'(-1 . 2) a\>
 	d,8(\< e f! g a bes!
 	b4) cis-.\! d-.
 	a-.\ff a,-. bes!-.

@@ -453,7 +453,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 336 to 340
 	fis8\pp r r4 r
 	b2.\fz
-	ais8 r \hairpinShorten #0 #-2 b,4(\< bis)\!
+	ais8 r \hairpinShorten #'(0 . -2) b,4(\< bis)\!
 	cis2.\fz
 	fis8-.\f r g4.(\fz fis8)
 % Bars 341 to 345

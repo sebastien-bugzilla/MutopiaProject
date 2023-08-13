@@ -315,7 +315,7 @@ musicOboeIIMvtI = \relative c' {
 	a4) r r
 	R2.*2
 	
-	\hairpinShorten #1.5 #0 ais2.( \tweak extra-offset #'(0 . 0.5) \< \mark \default
+	\hairpinShorten #'(1.5 . 0) ais2.( \tweak extra-offset #'(0 . 0.5) \< \mark \default
 	b4)\f r r
 % Bars 266 to 270
 	R2.*4

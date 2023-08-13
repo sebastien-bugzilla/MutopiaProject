@@ -314,7 +314,7 @@ musicVioloncelloMvtIV = \relative c' {
 	a4-- fis8 d c4-- a8 c \mark \default
 	g1\pp
 	c
-	<<f, {\hairpinShorten #0 #-1.5 s4\< s s s\!}>>
+	<<f, {\hairpinShorten #'(0 . -1.5) s4\< s s s\!}>>
 % Bars 256 to 260
 	r2 r4 f''-.\f
 	d-. c-. bes-. r

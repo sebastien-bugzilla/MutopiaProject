@@ -103,22 +103,24 @@ mmrPos = #(define-music-function
 	#}
 )
 
-%mmrPosOver = #(define-music-function
-%	(position)
-%	(number?)
-%	#{
-%		\override Voice.MultiMeasureRest.staff-position = #(- position 2)
-%	#}
-%)
 
-%mmrPosRevert = {
-%	\revert Voice.MultiMeasureRest.staff-position
-%}
+% > to be deleted
+mmrPosOver = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\override Voice.MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)
+
+mmrPosRevert = {
+	\revert Voice.MultiMeasureRest.staff-position
+}
+% < to be deleted
 
 no = {
 	\undo \omit MultiMeasureRestNumber
 }
-
 
 ni = {
 	\omit MultiMeasureRestNumber
@@ -133,10 +135,10 @@ tupletYOff = #(define-music-function
 )
 
 hairpinShorten = #(define-music-function
-	(left right)
-	(number? number?)
+	(shortLength)
+	(pair?)
 	#{
-		\once \override Hairpin.shorten-pair = #(cons left right)
+		\once \override Hairpin.shorten-pair = #shortLength
 	#}
 )
 
@@ -277,8 +279,13 @@ stopTremolo = #(define-music-function () ()
         'span-direction STOP))
 
 
-noFlag = \once \omit Flag
+omitFlag = \once \omit Flag
 omitBeam = \once \omit Beam
+
+omitAccidental = {
+	\override Accidental.stencil = ##t
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -375,14 +382,6 @@ omitBeam = \once \omit Beam
 %		\once \override DynamicText.extra-offset = #offset
 %		\once \override DynamicText.whiteout = ##t
 %		\once \override DynamicText.whiteout-style = #'outline
-%	#}
-%)
-
-%hairpinShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.shorten-pair = #shortLength
 %	#}
 %)
 

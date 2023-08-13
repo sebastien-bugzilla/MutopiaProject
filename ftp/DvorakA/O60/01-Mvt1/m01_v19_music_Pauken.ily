@@ -19,7 +19,7 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 16 to 20
 		
-		\hairpinShorten #1 #1 d2.\pp\<\startTrillSpan
+		\hairpinShorten #'(1 . 1) d2.\pp\<\startTrillSpan
 		d\startTrillSpan
 		d2\>\startTrillSpan d8-.\stopTrillSpan\! r
 		R2.*23

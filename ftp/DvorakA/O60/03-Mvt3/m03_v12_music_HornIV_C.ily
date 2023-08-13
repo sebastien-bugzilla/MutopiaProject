@@ -46,8 +46,8 @@ musicHornIVMvtIII = \relative c' {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-		r4 b'!-.\f\< c-.
-		g2->\ff aes4-.
+		r4 b'!\f\< c
+		g2\ff aes4-.
 		bes-. ees,2->
 		r4 ees-.\p r
 		ees-. r ees-.
@@ -294,7 +294,7 @@ musicHornIVMvtIII = \relative c' {
 	
 	
 	r4 b'!\f\< c
-	g2\ff aes4-.
+	g2\ff aes4
 % Bars 326 to 330
 	bes-. ees,2->
 	r4 ees-.\p r
@@ -318,9 +318,9 @@ musicHornIVMvtIII = \relative c' {
 	g r g
 	R2.*2
 	
-	bes2->\ff aes4->~
+	bes2\ff aes4~
 % Bars 346 to 350
-	aes g2->
+	aes g2
 	g2\p c4~
 	c\< d-. ees-.\!
 	g2\f-> f4->~\>

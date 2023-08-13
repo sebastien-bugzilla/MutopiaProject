@@ -115,7 +115,7 @@ musicHornIVMvtI = \relative c' {
 % Bars 106 to 110
 		
 		R2. \mark \default
-		\hairpinShorten #3 #-4 d4(_\pespress\< a'2)\!
+		\hairpinShorten #'(3 . -4) d4(_\pespress\< a'2)\!
 		g4.( d8 bes4)\<
 		f'( c'8)\! r c4-.\>
 % Bars 111 to 115
@@ -319,7 +319,7 @@ musicHornIVMvtI = \relative c' {
 	d~
 % Bars 321 to 325
 	d\<
-	\hairpinShorten #0 #-2 d\fz\>
+	\hairpinShorten #'(0 . -2) d\fz\>
 	ees\pp~
 	ees
 	ees~

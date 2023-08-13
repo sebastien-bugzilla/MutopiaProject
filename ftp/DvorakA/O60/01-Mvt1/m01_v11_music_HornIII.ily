@@ -119,7 +119,7 @@ musicHornIIIMvtI = \relative c' {
 % Bars 106 to 110
 		r fis r
 		R2. \mark \default
-		d4(_\pespress \hairpinShorten #0 #-2 a'\< c)\!
+		d4(_\pespress \hairpinShorten #'(0 . -2) a'\< c)\!
 		bes4.( a8 g4)\<
 		f( ees'8) r ees4-.\>
 % Bars 111 to 115

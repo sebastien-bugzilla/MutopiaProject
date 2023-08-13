@@ -46,8 +46,8 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-		r4 b!-.\f\< c-.
-		g2->\ff c4-.
+		r4 \partCombineApart b!-. c-.
+		g2-> \partCombineAutomatic c4-.
 		d-. bes2->
 		r4 bes-.\p r
 		bes-. r bes-.
@@ -298,7 +298,7 @@ musicHornIIIMvtIII = \relative c'' {
 	
 	
 	r4 \partCombineApart b!-. c-.
-	g2-> \partCombineAutomatic c4-.
+	g2->  c4-. \partCombineAutomatic
 % Bars 326 to 330
 	d-. bes2->
 	r4 bes-.\p r
@@ -322,7 +322,7 @@ musicHornIIIMvtIII = \relative c'' {
 	\once \partCombineApart g r \once \partCombineApart g
 	R2.*2
 	
-	\partCombineChords ees'2->\ff ees4-.
+	\partCombineApart ees'2-> ees4-.
 % Bars 346 to 350
 	d-. bes2-> \partCombineAutomatic
 	g2\p c4~

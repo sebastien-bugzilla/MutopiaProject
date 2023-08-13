@@ -382,7 +382,7 @@ musicKlarinetteIMvtI = \relative c'' {
 	\partCombineApart \stemUp bes\( \stemDown a' g
 	f g f
 % Bars 336 to 340
-	\noFlag e8\) \partCombineAutomatic r r4 r
+	\omitFlag e8\) \partCombineAutomatic r r4 r
 	R2.*9
 % Bars 341 to 345
 	

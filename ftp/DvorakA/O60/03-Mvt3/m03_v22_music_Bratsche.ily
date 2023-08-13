@@ -14,7 +14,7 @@ musicBratscheMvtIII = \relative c {
 		a'8) r d,4( a'8) r
 		d,4( a'8) r d,4(
 		a'8) r d,4(\! a'8) r
-		d4(-> a'8) r d,4(->
+		d4(->\f a'8) r d,4(->
 % Bars 6 to 10
 		a'8) r d,4(-> a'8) r
 		c!4-.\fz a-. a-.
@@ -359,7 +359,7 @@ musicBratscheMvtIII = \relative c {
 % Bars 286 to 290
 	d2 a4~
 	a \tuplet 3/2 4 {d,8\f\<( f a d f a\!)} \bar "||" \key d \minor
-	d,4(-> a'8) r d,4(->
+	d,4(->\f a'8) r d,4(->
 	a'8) r d,4(-> a'8) r
 	c!4-.\fz a-. a-.
 % Bars 291 to 295

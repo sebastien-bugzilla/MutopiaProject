@@ -237,7 +237,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	\hairpinShorten #0 #-1 g'2(-\tweak X-offset #-1 \p\< \tuplet 3/2 2 { \hairpinShorten #1 #0 c,4\> d ees\!}
+	\hairpinShorten #'(0 . -1) g'2(-\tweak X-offset #-1 \p\< \tuplet 3/2 2 { \hairpinShorten #'(1 . 0) c,4\> d ees\!}
 	d4) r r2
 	R1*5
 % Bars 256 to 260

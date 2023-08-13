@@ -259,7 +259,7 @@ musicPosauneIIIMvtIV = \relative c {
 	f-> a4-. g-.
 	a-. g-. a-. g-.
 % Bars 286 to 290
-	<<f1 {\hairpinShorten #0 #-1 s4\< s s s\!}>>
+	<<f1 {\hairpinShorten #'(0 . -1) s4\< s s s\!}>>
 	e,4 r a\ff r
 	R1*5
 % Bars 291 to 295

@@ -415,7 +415,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 336 to 340
 	fis8)\pp r r4 r
 	d,2.\fz(
-	cis8) r \hairpinShorten #0 #-2 d4(\< dis)\!
+	cis8) r \hairpinShorten #'(0 . -2) d4(\< dis)\!
 	gis8-! fis-! eis-! eis-! fis-! gis-! 
 	fis\f r b2\fz
 % Bars 341 to 345
