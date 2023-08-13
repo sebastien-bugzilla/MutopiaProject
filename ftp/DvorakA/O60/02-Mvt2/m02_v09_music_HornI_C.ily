@@ -70,7 +70,7 @@ musicHornIMvtII = \relative c'' {
 	r4 r8. bes16\f
 	r8. bes16_\dimmarkup r8. bes16
 	\partCombineApart R2
-	c16(\p\< d f e d\> c bes a\!)
+	c16(\p\< d f e\! d\> c bes a\!)
 	\tuplet 3/2 4 {c8(-- bes-- a--} c[ bes])
 % Bars 71 to 75
 	a(-\dimmarkup g c4)~
@@ -111,13 +111,13 @@ musicHornIMvtII = \relative c'' {
 	r8 c-.-> g-.-> c->~
 % Bars 106 to 110
 	c( bes) r4
-	r8 c-.\ff-> f,-.-> f'->~
+	r8 \partCombineApart \stemDown c-.-> f,-.-> f'->~
 	f des-.-> ges,-.-> f'->(
 	e!) cis-.-> fis,-.-> fis'->~
 	fis cis-.-> fis,-.-> fis'->~
 % Bars 111 to 115
 	fis dis-.-> gis,-.-> fis'->\( \mark \default
-	fis\) r r4
+	\stemUp fis\) \partCombineAutomatic r r4
 	R2*4
 	
 	
@@ -174,7 +174,7 @@ musicHornIMvtII = \relative c'' {
 	a-- a--
 	a-- a--
 	a-- a--
-	\partCombineApart a-- b\<
+	\partCombineApart a b\<
 % Bars 161 to 165
 	c4. g8~\!
 	g4 a\>
@@ -188,11 +188,11 @@ musicHornIMvtII = \relative c'' {
 	a8\pp a4 a8~
 	a a(\< bes b\!
 % Bars 171 to 175
-	c) a4\pp a8~
+	\once \stemUp c) a4\pp a8~
 	a a(\< bes b\!
-	c) a4\p a8~
+	\once \stemUp c) a4\p a8~
 	a a(\< bes b\!
-	c) c4\mf\< c8\!~
+	\once \stemUp c) c4\mf\< c8\!~
 % Bars 176 to 180
 	c c4\f c8~
 	c r r4

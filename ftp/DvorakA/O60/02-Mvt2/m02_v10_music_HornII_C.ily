@@ -116,13 +116,13 @@ musicHornIIMvtII = \relative c'' {
 	r8 c-.-> g-.-> c->~
 % Bars 106 to 110
 	c( bes) r4
-	r8 c-.\ff-> f,-.-> f'->~
-	f des-.-> ges,-.-> f'->(
-	e!) cis-.-> fis,-.-> fis'->~
-	fis cis-.-> fis,-.-> fis'->~
+	r8 c\ff f, f'
+	f des ges, f'
+	e! cis fis, fis'^~
+	fis cis fis, fis'^~
 % Bars 111 to 115
-	fis dis-.-> gis,-.-> fis'->\( \mark \default
-	dis\) r r4
+	fis dis gis, fis' \mark \default
+	dis r r4
 	R2*4
 	
 	
@@ -179,7 +179,7 @@ musicHornIIMvtII = \relative c'' {
 	d-- d--
 	d-- d--
 	d-- d--
-	d-- r
+	\once \stemUp d-- r
 % Bars 161 to 165
 	R2
 	R2

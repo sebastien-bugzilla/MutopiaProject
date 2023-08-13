@@ -69,7 +69,7 @@ musicViolinIMvtII = \relative c'' {
 	
 	
 % Bars 51 to 55
-	r8 g'4(\p\< fis16 g)
+	r8 g'4(\p\< fis16 g)\!
 	a4.(\f\> e8
 	g)\p r r4
 	R2*4

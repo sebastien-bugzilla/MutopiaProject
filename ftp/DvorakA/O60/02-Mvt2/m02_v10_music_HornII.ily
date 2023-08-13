@@ -109,7 +109,7 @@ musicHornIIMvtII = \relative c'' {
 % Bars 101 to 105
 	r8 c'\f a des->~
 	des4_\dimmarkup( c
-	\hairpinShorten #0 #-2 bes\p\> g\!)
+	\hairpinShorten #'(0 . -2) bes\p\> g\!)
 	aes8\ff-. r r4
 	r8 c-.-> g-.-> c->~
 % Bars 106 to 110
@@ -191,7 +191,7 @@ musicHornIIMvtII = \relative c'' {
 	f f(\< g gis\!
 	a) f4\p f8~
 	f f(\< g gis\!
-	a) \hairpinShorten #0 #-2 c,4\mf\< c8\!~
+	a) \hairpinShorten #'(0 . -2) c,4\mf\< c8\!~
 % Bars 176 to 180
 	c c4\f c8~
 	c r r4

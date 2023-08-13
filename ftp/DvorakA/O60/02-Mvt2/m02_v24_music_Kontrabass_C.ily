@@ -106,7 +106,7 @@ musicKontrabassMvtII = \relative c {
 	
 	r8 c4\mf\<-\tweak X-offset #-4.5 ^\arco c8\!
 	f,2\f~
-	f4.( fis8
+	f4.(_\dimmarkup fis8
 % Bars 86 to 90
 	g8\p) r r4
 	R2*2

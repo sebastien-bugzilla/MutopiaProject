@@ -70,7 +70,7 @@ musicBratscheMvtII = \relative c {
 	
 % Bars 51 to 55
 	r8 <ees g>\p\< q q\!
-	<<{ <cis a'>2} {\hairpinShorten #0 #-2 s8-\tweak X-offset #1.5 \f\> s s s\!} >>
+	<<{ <cis a'>2} {\hairpinShorten #'(0 . -2) s8-\tweak X-offset #1.5 \f\> s s s\!} >>
 	<d bes'>8\p r r4
 	R2*5
 % Bars 56 to 60

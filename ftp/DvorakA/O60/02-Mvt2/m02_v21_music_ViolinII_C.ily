@@ -69,7 +69,7 @@ musicViolinIIMvtII = \relative c' {
 	
 	
 % Bars 51 to 55
-	r8 <g bes>\p\< q q 
+	r8 <g bes>\p\< q q\!
 	<e a>2\f\>
 	<g bes>8\p r r4
 	R2*4
@@ -170,9 +170,9 @@ musicViolinIIMvtII = \relative c' {
 % Bars 141 to 145
 	ees( c16. bes32 a8 d)
 	d4( ees\<
-	d4.) g8
+	d4.) g8\!
 	f4(\mf\< bes)~
-	bes8\> a( g f)
+	bes8\> a( g f)\!
 % Bars 146 to 150
 	f\p(~ f32 g f) ees-. ees4(
 	d)\pp r

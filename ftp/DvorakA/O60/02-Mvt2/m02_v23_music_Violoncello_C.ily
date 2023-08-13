@@ -197,7 +197,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 161 to 165
 	f4.\! c8)~
 	c4( d\>
-	ees4. bes8)~
+	ees4. bes8)~\!
 	bes4(\pp a)~
 	a8 r r4
 % Bars 166 to 170
@@ -225,7 +225,7 @@ musicVioloncelloMvtII = \relative c {
 	d2(~
 	d4\> e)\!
 % Bars 186 to 190
-	f(\< bes~
+	f(\< bes~\!
 	bes8\> a g f)\!
 	f r r4
 	R2*2

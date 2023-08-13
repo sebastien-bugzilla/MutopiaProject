@@ -9,17 +9,17 @@ musicOboeIMvtII = \relative c'' {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R2
+	\partCombineApart R2
 	r8 bes(-\tweak X-offset #-0.5 \p a4
 	bes2)~
 	bes8( d bes c
-	d) r r4
+	d) \partCombineAutomatic r r4
 % Bars 6 to 10
 	R2
 	\partCombineApart bes4(\< g8\! c
 	bes g\> d e)\!
 	f2~\p
-	f8\< f( g a)
+	f8\< f( g a)\!
 % Bars 11 to 15
 	bes4.\>( g16 a\!
 	bes8) r r4 \partCombineAutomatic
@@ -157,7 +157,7 @@ musicOboeIMvtII = \relative c'' {
 	a16\f fis-. d-. c'~ c a-. fis-. d'~
 	d a-. a-. a-. a-. a-. a-. a-.
 % Bars 131 to 135
-	a r fis4_\pp fis8~
+	\partCombineAutomatic a r \partCombineApart fis4_\pp fis8~
 	fis4. r8
 	r fis4 fis8~
 	fis4. r8
@@ -213,8 +213,8 @@ musicOboeIMvtII = \relative c'' {
 	f)\noBeam d(\f\< ees e\!
 	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes->-.\!
 	a8\ff r \partCombineApart g4-^~
-	g8_\> bes( a g~\!
-	g f4)_\p r8
+	g8_\> bes( a g)~\!
+	g( f4)_\p r8
 % Bars 181 to 185
 	R2*2
 	
@@ -230,9 +230,9 @@ musicOboeIMvtII = \relative c'' {
 % Bars 196 to 200
 	\partCombineApart r8 f(-\tweak X-offset #-2 \pp d g~
 	g4. f8)~
-	f\noBeam \partCombineAutomatic f\ff-! d-! g-!
+	f\noBeam \partCombineApart f-! d-! g-!
 	ees-! c-! a-! fis'-^
-	g-^ r f!4~
+	g-^ \once \partCombineAutomatic r f!4~
 % Bars 201 to 205
 	f2~
 	f8 r r4

@@ -69,25 +69,25 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 	
 % Bars 56 to 60
-	r8 a(\p gis4
-	a2)\<~
+	r8 \shape #'((0 . 0)(0 . 0.5)(0 . 0.6)(0 . 2)) Slur a(\p gis4
+	\stemUp a2)\<~
 	a4\fz r
 	a\p r
 	a r
 % Bars 61 to 65
 	a\pp r
 	a r
-	r8 d(\p b e
-	d)\< b4 b8\!~
+	r8 \stemDown d\p b e
+	d\< b4 b8\!~
 	b16\f b8 b b b16~
 % Bars 66 to 70
 	b8. r16 r4
 	R2*3
 	
 	
-	\mmrPos #-8 R2
+	\mmrPos #-6 R2
 % Bars 71 to 75
-	\mmrPos #-8 R
+	\mmrPos #-7 R
 	R \mark \default
 	R2
 	R2*6
@@ -98,7 +98,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 	c,4(-\tweak X-offset #0.5 \pp e)
 % Bars 81 to 85
-	f2\<
+	<<f2 {s8\< s s s\!}>>
 	e4\> d(\!
 	a8) r r4
 	R2*3
@@ -159,7 +159,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	r4 a(~\pp
 % Bars 136 to 140
 	a gis)
-	fis4 fis8(--\< a--)\!
+	fis4 fis8\< a\!
 	c!2\>
 	b2(\pp  \mark \default
 	c4) r
@@ -213,7 +213,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	cis2(_\fpdim
 	c!)~
 % Bars 186 to 190
-	\hairpinShorten #1.5 #0 c2-\tweak extra-offset #'(2.3 . 0.8) \pp\<(
+	\hairpinShorten #'(1.5 . 0) c2-\tweak extra-offset #'(2.3 . 0.8) \pp\<(
 	g\>)~
 	g8\! r r4
 	R2*8
@@ -222,9 +222,9 @@ musicKlarinetteIIMvtII = \relative c'' {
 % Bars 196 to 200
 	
 	b2-\tweak X-offset #0.8 \pp(
-	c8)\noBeam g'\ff-! e-! a-! 
-	f-! d-! b-! b-^
-	a-^ r c4\fp~
+	c8)\noBeam g'\ff e a 
+	f d b b
+	a r c4\fp~
 % Bars 201 to 205
 	c(\> b)\!
 	g2\pp~

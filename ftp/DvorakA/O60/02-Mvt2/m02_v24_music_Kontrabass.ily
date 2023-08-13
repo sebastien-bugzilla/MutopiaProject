@@ -25,7 +25,7 @@ musicKontrabassMvtII = \relative c {
 	bes\pp r
 	R2*2
 	
-	r4 \hairpinShorten #0 #-1 e,\<
+	r4 \hairpinShorten #'(0 . -1) e,\<
 % Bars 16 to 20
 	f2\f~
 	f4.(_\dimmarkup fis8
@@ -106,7 +106,7 @@ musicKontrabassMvtII = \relative c {
 	
 	r8 c4\mf\<^\arco c8
 	f,2\f~
-	f4.( fis8
+	f4.(_\dimmarkup fis8
 % Bars 86 to 90
 	g8\p) r r4
 	R2*2
@@ -167,7 +167,7 @@ musicKontrabassMvtII = \relative c {
 	g,2~
 	g4.\< c8\!
 	d(\mf\< f d bes)\!
-	ees2\>  % \hairpinMinLength #4 \hairpinShorten #-1 #0 
+	ees2\>  % \hairpinMinLength #4 \hairpinShorten #'(-1 . 0) 
 % Bars 146 to 150
 	d4(-\tweak X-offset #-0.5 _\pdimD  c)
 	bes4\pp r
