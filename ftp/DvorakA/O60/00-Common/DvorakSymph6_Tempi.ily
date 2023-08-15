@@ -8,7 +8,7 @@ tempiMvtI = {
 	\tempo \markup {
 		\concat { 
 			"Allegro non tanto. (M.M. "
-			\raise #0.4 \tiny \note-by-number #2 #0 #0.75 
+			\smaller \general-align #Y #DOWN \note {4} #0.75 
 			" = 132.)"
 		}
 	}
@@ -16,7 +16,7 @@ tempiMvtI = {
 	\tempo \markup {  % bar 23
 		\concat {
 			"un poco più animato. ("
-			\raise #0.4 \tiny \note-by-number #2 #0 #0.75
+			\smaller \general-align #Y #DOWN \note {4} #0.75
 			" = 144.)"
 		}
 	}
@@ -44,7 +44,7 @@ tempiMvtII = {
 	\tempo \markup {
 		\concat {
 			"Adagio. (M.M. "
-			\raise #0.4 \tiny \note-by-number #2 #0 #0.75
+			\smaller \general-align #Y #DOWN \note {4} #0.75
 			" = 42.)"
 		}
 	}
@@ -52,7 +52,7 @@ tempiMvtII = {
 	\tempo \markup { % bar 29
 		\concat {
 			"Poco più animato. ("
-			\raise #0.4 \tiny \note-by-number #2 #0 #0.75
+			\smaller \general-align #Y #DOWN \note {4} #0.75
 			" = 56.)"
 		}
 	}
@@ -74,7 +74,7 @@ tempiMvtIII = {
 	\tempo \markup {
 		\concat {
 			"Presto. (M.M. "
-			\raise #0.4 \tiny \note-by-number #1 #1 #0.75
+			\smaller \general-align #Y #DOWN \note {2.} #0.75
 			" = 96.)"
 		}
 	}
@@ -97,7 +97,7 @@ tempiMvtIII = {
 		\tempo \markup {  % bar 153
 			\concat {
 				"Poco meno mosso. (M.M. "
-				\raise #0.4 \tiny \note-by-number #1 #1 #0.75
+				\smaller \general-align #Y #DOWN \note {2.} #0.75
 				" = 80.)"
 			}
 		}
@@ -122,23 +122,68 @@ tempiMvtIII = {
 	s2.*11
 }
 tempiMvtIV = {
+	\tempo \markup {
+		\concat {
+			"Allegro con spirito. (M.M."
+			\smaller \general-align #Y #DOWN \note {2} #0.75
+			" = 84.)"
+		}
+	}
 	\partial 4 s4
-	s1*12
-	s2 \tempo "accelerando poco a poco" s2 % bar 13
-	s1*24
+	s1*12 s2 
+	\tempo "accelerando poco a poco" % bar 13.5
+	s2 s1*11
+	\tempo \markup { % bar 25
+		\concat {
+			"(M.M. "
+			\smaller \general-align #Y #DOWN \note {2} #0.75
+			" = 100.)"
+		}
+	}
+	s1*13
 	\tempo "Tempo I." % bar 38
 	s1*15
 	\tempo "accelerando poco a poco" % bar 53
-	s1*241
+	s1*16
+	\tempo \markup { % bar 69
+		\concat {
+			"(M.M. "
+			\smaller \general-align #Y #DOWN \note {2} #0.75
+			" = 100.)"
+		}
+	}
+	s1*225
 	\tempo "Poco sostenuto." % bar 294
 	s1*8 \grace {s8}
 	\tempo "ritard." % bar 302
 	s1*4
 	\tempo "in tempo" % bar 306
-	s1*28
+	s1*12
+	\tempo \markup { % bar 318
+		\concat {
+			"("
+			\smaller \general-align #Y #DOWN \note {2} #0.75
+			" = 84.)"
+		}
+	}
+	s1*16
 	\tempo "accelerando poco a poco" % bar 334
-	s1*106
-	\tempo "Presto." % bar 440
+	s1*10
+	\tempo \markup { % bar 344
+		\concat {
+			"("
+			\smaller \general-align #Y #DOWN \note {2} #0.75
+			" = 100.)"
+		}
+	}
+	s1*96
+	\tempo \markup { % bar 440
+		\concat {
+			"Presto. ("
+			\smaller \general-align #Y #DOWN \note {2} #0.75
+			" = 132.)"
+		}
+	}
 	s1*109
 	\tempo "ritard." % bar 549
 	s1*2

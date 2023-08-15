@@ -154,7 +154,7 @@ musicViolinIIMvtIV = \relative c'' {
 	\hairpinShorten #'(6 . 0) a1\<~
 	a4 a( fis\! <e gis>)
 % Bars 121 to 125
-	a16(\f\< b cis d e fis gis a) a2:16\ff
+	a16(\f\< b cis d e fis gis a)\! a2:16\ff
 	a1:
 	a:
 	a2: fis4: gis:
@@ -445,7 +445,7 @@ musicViolinIIMvtIV = \relative c'' {
 	
 	
 	
-	a,4(\p\< e' f\> d\!
+	a,4(\p\< e'\! f\> d\!
 % Bars 371 to 375
 	cis) \tuplet 3/2 4 {cis8(-\tweak X-offset #-1.5 \pp d e)} r4 \tuplet 3/2 4 {cis8( d e)}
 	r4 \tuplet 3/2 4 {d8( e f)} r4 \tuplet 3/2 4 {d8( e f)}
@@ -463,7 +463,7 @@ musicViolinIIMvtIV = \relative c'' {
 	fis4 r r2
 	fis'4->\mf \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2
-	fis'4-> \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	fis'4->\f \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}
 % Bars 386 to 390
 	d'4\ff \tuplet 3/2 4 {d8( c) b-. a( g) fis-. fis( e) d-.
 	c'( b) a-. a( g) fis-. fis( e) d-. c( b) a-.}

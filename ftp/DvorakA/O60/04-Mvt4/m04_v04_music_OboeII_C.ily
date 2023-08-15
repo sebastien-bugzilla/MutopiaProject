@@ -50,7 +50,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e-^\!~
 	e2. e4-. \mark \default
-	d\( e d a\)
+	d e d a
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
@@ -97,7 +97,7 @@ musicOboeIIMvtIV = \relative c'' {
 	
 % Bars 76 to 80
 	r4 e8^(\p\< fis gis a b cis)
-	d4\fp \tuplet 3/2 4 {d8( cis b)} b2~
+	d4\fp \tuplet 3/2 4 {d8 cis b} b2~
 	b4 r r2
 	R1*3
 	
@@ -185,8 +185,8 @@ musicOboeIIMvtIV = \relative c'' {
 	
 	
 	
-	r4 \aIIOmit d\(\p f e8 d\)
-	d4\(( c8 b) b4( a8 g)\)
+	r4 d\p f e8 d
+	d4 c8 b b4 a8 g
 % Bars 161 to 165
 	R1*6
 % Bars 166 to 170
@@ -196,10 +196,10 @@ musicOboeIIMvtIV = \relative c'' {
 	dis4\fz dis r2
 	dis4\fz dis r2
 % Bars 171 to 175
-	r2 r4 b-.-\tweak X-offset #-2.2 \ff
-	e2.-> r4
-	r2 r4 b-.
-	e2.-> r4
+	r2 r4 b-\tweak X-offset #-2.2 \ff
+	e2. r4
+	r2 r4 b
+	e2. r4
 	r2 r4 c-\tweak extra-offset #'(0.8 . 1) \fz~
 % Bars 176 to 180
 	c2. c4-\tweak X-offset #0.2 \fz~
@@ -429,7 +429,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 371 to 375
 	
 	R1
-	r4 a'8(\p\< b cis d e fis)
+	r4 a'8(\p\< b cis d e fis)\!
 	g4\mf \tuplet 3/2 4 {g8 fis e} e2~
 	e4 r  r2
 % Bars 376 to 380
@@ -451,7 +451,7 @@ musicOboeIIMvtIV = \relative c'' {
 	d2.-> e8\( fis\)
 	g2-> g->
 % Bars 391 to 395
-	g2. a8\( b\)
+	g2.-> a8( b)
 	d,4\fz d d\fz d-.
 	d\fz d cis\fz a
 	R1
@@ -477,7 +477,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 411 to 415
 	dis1)->~
 	dis2 e4( d)~
-	d4 d-. b( cis)
+	d4 d b( cis)
 	d4 r fis2\f(
 	c'4) b8( c b4 a)
 % Bars 416 to 420

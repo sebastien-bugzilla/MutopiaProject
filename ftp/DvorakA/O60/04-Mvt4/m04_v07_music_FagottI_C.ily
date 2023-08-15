@@ -11,7 +11,10 @@ musicFagottIMvtIV = \relative c' {
 	\partial 4 r4
 % Bars 1 to 5
 	R1
-	\partCombineApart \mmrPosOver #8 R1*4 \mmrPosRevert
+	\partCombineApart \mmrPos #7 R1
+	\mmrPos #7 R
+	\mmrPos #7 R
+	\mmrPos #7 R
 % Bars 6 to 10
 	r4 cis8(-\tweak X-offset #-1 \p b e4 a,)
 	b( gis a b)
@@ -29,7 +32,7 @@ musicFagottIMvtIV = \relative c' {
 	cis4. cis8 cis4( b)
 	a8( a' gis fis e fis d e)
 	cis4. cis8 cis4( b)
-	eis4.\mf eis8\< eis4-. fis-.
+	eis4.\mf eis8\< eis4-. fis-.\!
 % Bars 21 to 25
 	gis4.\f gis8 gis4-. a-.
 	bis4. bis8 bis4-.\< cis-.
@@ -69,12 +72,12 @@ musicFagottIMvtIV = \relative c' {
 % Bars 51 to 55
 	r4 b(-\tweak X-offset #-1.5 \fz cis! dis
 	cis8) r r4 r2
-	r4 \partCombineChords b2.~\f
-	b4 b2.\fz~
+	r4 b2.~
+	\once \stemDown \noteShift #1.4 b4 \partCombineAutomatic b2.\fz~
 	b4 b2.\fz~
 % Bars 56 to 60
-	b4 b2.\fz~
-	b4 e2.\fz~
+	b4 b2.\fz(
+	b4) e2.\fz~
 	e4 e2.\fz~
 	e4 e2.\fz~
 	e4 e2.\fz
@@ -118,7 +121,7 @@ musicFagottIMvtIV = \relative c' {
 	b(-> cis b a gis fis e d)
 	cis4-\tweak X-offset #0.5 \fz a'-. d\fz b-.
 % Bars 96 to 100
-	e\fz r e\fz r
+	e\fz r \once \partCombineApart e r
 	R1
 	\partCombineApart d'4_\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis)-.}
 	gis4 r r2
@@ -137,18 +140,18 @@ musicFagottIMvtIV = \relative c' {
 	b->( cis b a gis fis e d)
 % Bars 111 to 115
 	cis4\fz a'-. d\fz b-.
-	e\fz r e\fz r \mark \default
+	e\fz r \once \partCombineApart e r \mark \default
 	e r a2(
 	ais1)~-\tweak X-offset #0.7 \fz
 	ais2 b4( a)~
 % Bars 116 to 120
 	a2 fis4( gis)
-	e r a!2\fz\>~
+	\once \partCombineApart e r \partCombineApart a!2~
 	a1~
 	a2\! a~_\<
 	a fis!4(\! gis)
 % Bars 121 to 125
-	e8 r r4 g!2\ff~
+	\partCombineAutomatic e8 r r4 g!2\ff~
 	g1~
 	g2 fis4( f
 	e) e( dis d
@@ -168,8 +171,8 @@ musicFagottIMvtIV = \relative c' {
 % Bars 136 to 140
 	r e-. fis-. d-.
 	cis-. r b-. r
-	\aIIOmit a\(\< e'\! f\> d\)\!
-	cis-. e-. cis-. e-.
+	\partCombineApart a( \stemDown e' f d)
+	\partCombineAutomatic cis-. e-. cis-. e-.
 	r d-. b-. d-.
 % Bars 141 to 145
 	r e-. cis-. e-.
@@ -185,7 +188,7 @@ musicFagottIMvtIV = \relative c' {
 	d r
 % Bars 151 to 155
 	cis r 
-	\partCombineApart r r4 cis(-\tweak X-offset #-2 \pp
+	\partCombineApart \stemUp r r4 cis(-\tweak X-offset #-2 \pp
 	ais gis fis fis')~
 	fis1~
 	fis4 r r2 \partCombineAutomatic
@@ -199,10 +202,10 @@ musicFagottIMvtIV = \relative c' {
 	R1*2
 % Bars 166 to 170
 	
-	\aIIXoffset #-4.5 c4\fz c r2
-	c4\fz c r2
-	b4\fz b r2
-	b4\fz b r2
+	\partCombineApart c4 c \partCombineAutomatic r2
+	\partCombineApart c4 c \partCombineAutomatic r2
+	\partCombineApart b4 b \partCombineAutomatic r2
+	\partCombineApart b4 b \partCombineAutomatic r2
 % Bars 171 to 175
 	R1
 	r2 r4 b(\f
@@ -243,10 +246,10 @@ musicFagottIMvtIV = \relative c' {
 	
 	
 % Bars 206 to 210
-	r2 r4 \tuplet 3/2 4 {g,8(\f\< a b)}
-	c4-.\ff g-. c2->
-	g'4-> \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
-	e4-. \once \partCombineApart g,-. e'2->
+	r2 r4 \partCombineApart \tuplet 3/2 4 {g,8( a b)}
+	c4-. g-. c2->
+	\partCombineAutomatic g'4-> \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
+	\once \partCombineChords e4-. \once \partCombineApart g,-. e'2->
 	f4-. \once \partCombineApart g,-. f'2->
 % Bars 211 to 215
 	g4-. r r2
@@ -323,9 +326,9 @@ musicFagottIMvtIV = \relative c' {
 	r2 r4 r8 e'
 % Bars 276 to 280
 	cis b ais e ais4 r
-	r2 e'2->\f
+	r2 \partCombineApart e'2->
 	d-> cis->
-	b-> a'->
+	b-> \partCombineAutomatic a'->
 	g-> fis->
 % Bars 281 to 285
 	e-> d->
@@ -368,10 +371,11 @@ musicFagottIMvtIV = \relative c' {
 	
 	
 	
-	\partCombineApart \mmrPosOver #8 R1*4 \mmrPosRevert
+	\partCombineApart \mmrPos #7 R1
+	\mmrPos #7 R
 % Bars 321 to 325
-	
-	
+	\mmrPos #7 R
+	\mmrPos #7 R
 	r4 cis8(-\tweak X-offset #-1 \p b e4 a,
 	b gis a b
 	c b8 a d4 e8 c
@@ -401,7 +405,7 @@ musicFagottIMvtIV = \relative c' {
 	ais4 cis(-> d e
 % Bars 346 to 350
 	d) gis,2.->~
-	gis4 b4(-> c d
+	gis4 b4(-> c \once \stemUp d
 	c) fis,2.->~
 	fis4 f2.(->
 	e4) r r2

@@ -343,9 +343,9 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 341 to 345
 	cis'1\fp
 	d\fp
-	e\fp(
-	fis8)-. r cis4(\f d e
-	d) ais2.->~
+	e\fp^(
+	fis8)-. r cis4\f d e
+	d ais2.->~
 % Bars 346 to 350
 	ais4 b( c d
 	c) gis2.->~

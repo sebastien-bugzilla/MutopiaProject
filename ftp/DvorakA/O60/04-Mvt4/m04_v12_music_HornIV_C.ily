@@ -31,8 +31,8 @@ musicHornIVMvtIV = \relative c' {
 	\mmrPos #-8 R1
 % Bars 21 to 25
 	\mmrPos #-6 R1
-	fis'4.\f fis8 fis4 gis-.\< 
-	a4. a8 a4-. b!-.\!
+	fis'4.\f fis8 fis4 gis\< 
+	a4. a8 a4 b!\!
 	c!1\fz~
 	c4 r r2
 % Bars 26 to 30
@@ -321,7 +321,7 @@ musicHornIVMvtIV = \relative c' {
 % Bars 336 to 340
 	f2. r4
 	\mmrPos #-8 R1
-	\mmrPos #-8 R1
+	\mmrPos #-7 R1
 	R1*2
 	
 % Bars 341 to 345
@@ -427,10 +427,10 @@ musicHornIVMvtIV = \relative c' {
 	g1~
 	g2 c4-. c-.
 % Bars 426 to 430
-	g r bes'2->~
-	bes bes2->~
-	bes bes->~
-	bes des->
+	g r bes'2~
+	bes bes2~
+	bes bes~
+	bes des
 	d!1\ff~
 % Bars 431 to 435
 	d

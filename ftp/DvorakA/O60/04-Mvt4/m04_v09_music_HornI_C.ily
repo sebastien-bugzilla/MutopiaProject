@@ -130,7 +130,7 @@ musicHornIMvtIV = \relative c'' {
 	c4 bes8( c bes4 a)
 	a( c) bes2
 	a4-. c-. d( e!)
-	c-.( c-.) bes2
+	c-.( \once \stemUp c-.) bes2
 % Bars 126 to 130
 	a4-. c-. d( e!)
 	c( f) ees2->
@@ -264,7 +264,7 @@ musicHornIMvtIV = \relative c'' {
 	d2. r4 \partCombineAutomatic \mark \default
 	R1
 	\partCombineApart \tupletIgnoreSlur  \tuplet 6/4 1 {aes4(_\p c ees ges f ees)} \partCombineAutomatic
-	ees2(\< \tuplet 3/2 2 {aes,4 bes ces}
+	ees2(\< \tuplet 3/2 2 {aes,4 bes \once \stemUp ces\!}
 % Bars 256 to 260
 	bes\f) r r2
 	R1*11
@@ -408,7 +408,7 @@ musicHornIMvtIV = \relative c'' {
 	
 	r2 d->\f~
 % Bars 411 to 415
-	d4 ees8( f ees4 d)
+	d4 \stemUp ees8( f \stemNeutral ees4 d)
 	d( f ees2)
 	d4-. d-. c2->
 	f,4 r r2
@@ -473,8 +473,8 @@ musicHornIMvtIV = \relative c'' {
 	ees-> ees4-. \partCombineAutomatic f-.
 	f1~
 % Bars 486 to 490
-	f2. ees4
-	\partCombineApart ees2-> ees->
+	f2. \partCombineApart ees4
+	ees2-> ees->
 	ees-> ees4-. \partCombineAutomatic f-.
 	f1->~
 	f2. r4 

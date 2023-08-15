@@ -517,7 +517,7 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 416 to 420
 	fis( a) g2
 	fis4-. fis-. e2->
-	d16(\< e fis g a b cis d) dis2:16\ff
+	d16(\< e fis g a b cis d)\! dis2:16\ff
 	dis1:
 	dis2: e4( fis8 g)
 % Bars 421 to 425

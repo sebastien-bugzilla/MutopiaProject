@@ -444,7 +444,7 @@ musicOboeIMvtIV = \relative c'' {
 	d2.-> e8( fis)
 	g2-> g->
 % Bars 391 to 395
-	g2. a8( b)
+	g2.-> a8( b)
 	a4\fz d,-. b'\fz a-.
 	fis\fz d-. a'\fz a,-.
 	g'\p r r2

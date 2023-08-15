@@ -228,7 +228,7 @@ musicKontrabassMvtIV = \relative c' {
 % Bars 181 to 185
 	fis-. r r2
 	cis4-. r r2
-	fis4_\fpdim r r2
+	fis4 r r2
 	R1*7
 	
 % Bars 186 to 190
@@ -510,7 +510,7 @@ musicKontrabassMvtIV = \relative c' {
 % Bars 416 to 420
 	fis( a) g2
 	fis4-. fis-. e2->
-	d'16(\< e fis g a b cis d) dis2\ff~
+	d'16(\< e fis g a b cis d)\! dis2\ff~
 	dis1~
 	dis2 e4( fis8 g)
 % Bars 421 to 425

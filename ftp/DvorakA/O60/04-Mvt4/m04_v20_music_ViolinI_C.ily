@@ -154,7 +154,7 @@ musicViolinIMvtIV = \relative c''' {
 	cis( e) d2\<
 	cis4-. cis-. b2->\!
 % Bars 121 to 125
-	a16(\f\< b cis d e fis gis a) \acciaccatura a8 e'2\ff~
+	a16(\f\< b cis d e fis gis a)\! \acciaccatura a8 e'2\ff~
 	e4 d8( e) d4( cis)
 	cis( e) d2
 	cis4-. cis-. b2->
@@ -497,12 +497,12 @@ musicViolinIMvtIV = \relative c''' {
 	R1*3
 	
 	
-	d,16(\mf\< e fis g a b cis d) d2:16\f
+	d,16(\mf\< e fis g a b cis d)\! d2:16\f
 	dis1:->
 % Bars 416 to 420
 	dis2: e4: fis8:\< g:
 	a1:\!
-	d,16(\< e fis g a b cis d) c2:16\ff
+	d,16(\< e fis g a b cis d)\! c2:16\ff
 	c1:
 	c2: b:
 % Bars 421 to 425
@@ -613,7 +613,7 @@ musicViolinIMvtIV = \relative c''' {
 	\ottava #1 b a8( b a4 g)
 % Bars 516 to 520
 	cis! b8( cis b4 a)
-	d4:16 b: cis!: a:
+	d4:8 b: cis!: a:
 	b: g: a: fis:
 	d': b: cis: a:
 	b: g: a: fis: \ottava #0 \mark \default

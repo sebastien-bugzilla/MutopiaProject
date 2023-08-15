@@ -101,7 +101,7 @@ musicBratscheMvtIV = \relative c' {
 	r4 \tuplet 3/2 4 {fis8(\p gis a)} r4 \tuplet 3/2 4 {fis8( gis a)}
 % Bars 76 to 80
 	e4 r r2
-	b4(\p\< fis' \hairpinShorten #'(0 . -3) g!\> e\!)
+	b4(\p\< fis'\! \hairpinShorten #'(0 . -3) g!\> e\!)
 	d \tuplet 3/2 4 {b8( cis d)} r4 \tuplet 3/2 4 {b8( cis d)}
 	r4 \tuplet 3/2 4 {cis8( d e)} r4 \tuplet 3/2 4 {cis8( d e)}
 	d4 r r2
@@ -455,7 +455,7 @@ musicBratscheMvtIV = \relative c' {
 	R1
 	a,8(\pp g' fis e d cis b' a) \mark \default
 % Bars 366 to 370
-	d,4(\< a' bes\> g\!
+	d,4(\< a'\! bes\> g\!
 	fis2 d)~
 	d1~
 	d4 r r2
@@ -512,7 +512,7 @@ musicBratscheMvtIV = \relative c' {
 	R1*3
 	
 	
-	d,16(\mf\< e fis g a b cis d) d2:16\f
+	d,16(\mf\< e fis g a b cis d)\! d2:16\f
 	dis1:16->
 % Bars 416 to 420
 	dis2:16 e4: fis8: g:
@@ -624,7 +624,7 @@ musicBratscheMvtIV = \relative c' {
 	c b c b b ais b ais
 % Bars 506 to 510
 	a! ais b ais b c cis a
-	<d, fis>4:16 <e g>: <fis a>: <g b>:
+	<d, fis>4:8 <e g>: <fis a>: <g b>:
 	<a cis>: <b d>: <cis e>: <d fis>:
 	<g, b>: <a c>: <b d>: <c e>:
 	<d fis>: <e g>: <fis a>: <g b>:
@@ -636,7 +636,7 @@ musicBratscheMvtIV = \relative c' {
 	g b g b fis a e g
 % Bars 516 to 520
 	a cis! a cis g b fis a
-	d4:16 b: cis!: a:
+	d4:8 b: cis!: a:
 	b: g: a: fis:
 	d': b: cis: a:
 	b: g: a: fis:

@@ -116,9 +116,9 @@ musicPosauneIIMvtIV = \relative c' {
 	R1*2
 % Bars 141 to 145
 	
-	\aIIXoffset #-1 d1-\tweak X-offset #-3 \ff-^
-	c-^
-	bes-^~
+	d1-\tweak X-offset #-3 \ff
+	c
+	bes~
 	bes
 % Bars 146 to 150
 	b!4\f r r2
@@ -173,7 +173,7 @@ musicPosauneIIMvtIV = \relative c' {
 	
 % Bars 206 to 210
 	
-	c'4-.\f g-. c2->
+	c'4\f g-. c2
 	c4 r b r 
 	c r r2
 	R1*6
@@ -201,7 +201,7 @@ musicPosauneIIMvtIV = \relative c' {
 	c a! ges c
 % Bars 236 to 240
 	bes r  r f\f
-	des'-. c-. bes-. f-.
+	des' c bes f
 	f2 r4 a
 	f2 r4 f
 	f2 r4 bes
@@ -418,14 +418,14 @@ musicPosauneIIMvtIV = \relative c' {
 	cis-> d->
 	d-> cis->
 % Bars 501 to 505
-	d4 r c2\f-> 
-	b-> bes->
-	a4-. b!-. c-. cis-.
-	d r c2->
-	b-> bes->
+	d4 r c2\f 
+	b bes
+	a4 b! c cis
+	d r c2
+	b bes
 % Bars 506 to 510
-	a4-. b!-. c-. cis-.
-	d1\f-^~
+	a4 b! c cis
+	d1\f~
 	d
 	g,->\ff~
 	g

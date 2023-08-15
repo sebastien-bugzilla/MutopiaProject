@@ -42,11 +42,11 @@ musicTrompeteIMvtIV = \relative c''' {
 % Bars 51 to 55
 	
 	
-	r4 a\f r2
-	r4 a\fz r2
-	r4 a\fz r2
+	r4 \once \partCombineApart a r2
+	r4 \once \partCombineApart a r2
+	r4 \once \partCombineApart a r2
 % Bars 56 to 60
-	r4 a\fz r2
+	r4 \once \partCombineApart a r2
 	r4 d\fz r2
 	r4 d\fz r2
 	r4 d\fz r2
@@ -153,12 +153,12 @@ musicTrompeteIMvtIV = \relative c''' {
 	
 	
 	
-	r2 r4 \aIIXoffset #-4.5 b'-.-\tweak extra-offset #'(-0.8 . 0.5) \ff
-	b-. r c-. r
+	r2 r4 \partCombineApart b'-.
+	b-. \partCombineAutomatic r \once \partCombineApart c-. r
 % Bars 181 to 185
-	b-. r r2
-	b4-. r r2
-	b4-. r r2
+	\once \partCombineApart b-. r r2
+	\once \partCombineApart b4-. r r2
+	\once \partCombineApart b4-. r r2
 	R1*7
 % Bars 186 to 190
 	
@@ -348,20 +348,20 @@ musicTrompeteIMvtIV = \relative c''' {
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	r2 g\f~
+	r2 \partCombineApart g~
 	g1~
 	g2 c4-. c-.
 	g1~
 	g2 c4-. c-.
 % Bars 426 to 430
-	g r bes2->~
+	g \once \partCombineAutomatic r bes2->~
 	bes bes->~
 	bes bes->~
 	bes g->
-	d'1\ff~
+	d'1~
 % Bars 431 to 435
 	d
-	f!~
+	\partCombineAutomatic f!~
 	f4 r r2
 	R1*6
 % Bars 436 to 440
@@ -434,13 +434,13 @@ musicTrompeteIMvtIV = \relative c''' {
 	R1*2
 % Bars 506 to 510
 	
-	c,1\f-^~
+	\partCombineApart c,1-^~
 	c
-	f->\ff~
+	f->~
 	f
 % Bars 511 to 515
 	bes->~
-	bes
+	bes \partCombineAutomatic
 	R1*4
 % Bars 516 to 520
 	
@@ -475,11 +475,11 @@ musicTrompeteIMvtIV = \relative c''' {
 % Bars 541 to 545
 	a2.-> a4
 	a2-> b->
-	c1\fff~
+	\partCombineApart c1~
 	c~
 	c~
 % Bars 546 to 550
-	c4 r g'2->
+	c4 \partCombineAutomatic r g'2->
 	g-> g->
 	g-> e->
 	\partCombineApart c2.-> c4-.

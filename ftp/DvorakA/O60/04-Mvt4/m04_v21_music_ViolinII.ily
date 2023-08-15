@@ -468,7 +468,7 @@ musicViolinIIMvtIV = \relative c'' {
 	fis4 r r2
 	fis'4->\mf \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2
-	fis'4-> \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	fis'4->\f \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}
 % Bars 386 to 390
 	d'4\ff \tuplet 3/2 4 {d8( c) b-. a( g) fis-. fis( e) d-.
 	c'( b) a-. a( g) fis-. fis( e) d-. c( b) a-.}

@@ -31,10 +31,10 @@ musicHornIIIMvtIV = \relative c'' {
 	\partCombineApart dis4._\mf dis8 dis4-. g-.
 % Bars 21 to 25
 	fis4._\< fis8 fis4-. g-.\!
-	fis4. fis8 fis4-. \partCombineAutomatic b-.\<
-	cis4. cis8 cis4-. d-.\!
-	\partCombineApart c!1~
-	c4 \partCombineAutomatic r r2
+	fis4. fis8 fis4-. b-.
+	\stemDown cis4. \omitFlag cis8 cis4-. d-.
+	\partCombineApart \shiftOn c!1~
+	\stemUp c4 \partCombineAutomatic r r2
 % Bars 26 to 30
 	R1*10
 % Bars 31 to 35
@@ -427,14 +427,14 @@ musicHornIIIMvtIV = \relative c'' {
 	g1~
 	g2 c4-. c-.
 % Bars 426 to 430
-	g r bes2->~
+	g r \partCombineApart bes2->~
 	bes bes2->~
 	bes bes->~
 	bes des->
-	d!1\ff~
+	d!1~
 % Bars 431 to 435
 	d
-	d~
+	\partCombineAutomatic d~
 	d4 r r2
 	R1*5
 	

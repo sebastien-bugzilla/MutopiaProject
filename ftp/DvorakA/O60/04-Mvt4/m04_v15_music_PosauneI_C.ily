@@ -67,9 +67,9 @@ musicPosauneIMvtIV = \relative c'' {
 	d-. r r2
 	gis4-. r gis-. r
 	gis-. r r2
-	a4\fz r a\fz \once \partCombineApart r 
+	\partCombineApart a4 \once \partCombineAutomatic r a  r 
 % Bars 96 to 100
-	e\fz r e\fz r
+	e \once \partCombineAutomatic r e \partCombineAutomatic r
 	R1*8
 % Bars 101 to 105
 	
@@ -84,8 +84,8 @@ musicPosauneIMvtIV = \relative c'' {
 	gis4-. r gis-. r
 	gis-. r r2
 % Bars 111 to 115
-	a4\fz r a\fz \once \partCombineApart r
-	e-\tweak X-offset #0.2 \fz r e-\tweak X-offset #0.2 \fz r \mark \default
+	\partCombineApart a4 \once \partCombineAutomatic r a r
+	e \once  \partCombineAutomatic r e \partCombineAutomatic r \mark \default
 	cis r r2
 	R1*7
 % Bars 116 to 120
@@ -98,7 +98,7 @@ musicPosauneIMvtIV = \relative c'' {
 	a4( e') d2
 % Bars 126 to 130
 	cis4-. cis-. b2->
-	a4 \partCombineApart a8(\< b bis4 cis)\!
+	\partCombineApart a4 a8(\< b bis4 cis)\!
 	d a8(\< b! bis4 cis)\!
 	d r r2
 	r4 gis->\f eis-> cis->
@@ -116,12 +116,12 @@ musicPosauneIMvtIV = \relative c'' {
 	R1*2
 % Bars 141 to 145
 	
-	\aIIXoffset #-1 d1-\tweak X-offset #-3 \ff-^
+	\partCombineApart d1-^
 	c-^
 	bes-^~
 	bes
 % Bars 146 to 150
-	d4\f r r2
+	\partCombineAutomatic d4\f r r2
 	R1
 	d4-.\f r r2
 	d4-. r r2
@@ -173,8 +173,8 @@ musicPosauneIMvtIV = \relative c'' {
 	
 % Bars 206 to 210
 	
-	e4-.\f \once \partCombineApart r e2->
-	e4 r d r 
+	\partCombineApart e4-. r e2->
+	e4 \once \partCombineAutomatic r d \partCombineAutomatic r 
 	e r r2
 	R1*6
 % Bars 211 to 215
@@ -200,9 +200,9 @@ musicPosauneIMvtIV = \relative c'' {
 	ees'2. des4-.
 	c-. a!-. ges-. ees'-.
 % Bars 236 to 240
-	des-. \partCombineAutomatic r  r \once \partCombineChords f-.
-	\partCombineApart des-. c-. bes-. \partCombineChords f'-. 
-	\partCombineAutomatic des2 r4 c \partCombineAutomatic
+	des-. \partCombineAutomatic r  r  \partCombineApart f-.
+	des-. c-. bes-. f'-. 
+	\partCombineAutomatic des2 r4 \partCombineAutomatic c 
 	des2 r4 c
 	aes2 r4 c
 % Bars 241 to 245
@@ -345,7 +345,7 @@ musicPosauneIMvtIV = \relative c'' {
 	
 	r2 dis\f->~
 	dis1~
-	dis2 e4( fis8 g)
+	dis2 e4( \stemUp fis8 g) \stemNeutral
 % Bars 421 to 425
 	a4 r r2
 	R1*4
@@ -413,16 +413,16 @@ musicPosauneIMvtIV = \relative c'' {
 	ais-> b->
 	b-> a!->
 % Bars 501 to 505
-	fis4 r c2\f->
+	fis4 r \partCombineApart c2->
 	b-> bes->
 	a4-. b!-. c-. cis-.
-	d r c2->
+	d \once \partCombineAutomatic r c2->
 	b-> bes->
 % Bars 506 to 510
 	a4-. b!-. c-. cis-.
-	d1\f-^~
+	d1-^~
 	d
-	g->\ff~
+	\partCombineAutomatic g->\ff~
 	g
 % Bars 511 to 515
 	c->~

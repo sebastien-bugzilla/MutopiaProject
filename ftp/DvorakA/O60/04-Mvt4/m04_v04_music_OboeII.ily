@@ -423,7 +423,7 @@ musicOboeIIMvtIV = \relative c'' {
 	d2.-> e8( fis)
 	g2-> g->
 % Bars 391 to 395
-	g2. a8( b)
+	g2.-> a8( b)
 	d,4\fz d-. d\fz d-.
 	d\fz d-. cis\fz a-.
 	R1*4

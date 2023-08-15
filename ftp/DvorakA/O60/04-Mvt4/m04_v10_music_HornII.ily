@@ -471,8 +471,8 @@ musicHornIIMvtIV = \relative c' {
 	ees-> ees4-. a,-.
 	a1~
 % Bars 486 to 490
-	a2. a4
-	ees'2-> ees->
+	a2. ees'4
+	ees2-> ees->
 	ees-> ees4-. a,-.
 	a1->~
 	a2. r4 

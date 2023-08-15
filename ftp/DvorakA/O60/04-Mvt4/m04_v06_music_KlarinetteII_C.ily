@@ -44,7 +44,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e\!-^~
 	e2. e4-. \mark \default
-	\aIIOmit f8_\ffgrandioso\noBeam a,( c bes a g f e)
+	f8_\ffgrandioso\noBeam a,( c bes a g f e)
 	d( e f e d c bes c)
 	a r f'( g a bes c bes)
 % Bars 41 to 45
@@ -55,7 +55,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	ees8 f ees4 a d,
 % Bars 46 to 50
 	ees d8 c d4 ees
-	f8-. r r4 r2
+	f8 r r4 r2
 	R1*6
 % Bars 51 to 55
 	
@@ -154,7 +154,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 136 to 140
 	r c-. c-. c-.
 	c-. r b-. r
-	\aIIOmit c\(\< e\! f\> d\!\)
+	c\< e\! f\> d\!
 	c-. e-. c-. e-.
 	r d-. g,-. d'-.
 % Bars 141 to 145
@@ -270,8 +270,8 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	R1*2
-	
+	R1
+	R
 	\omitTupletNumber \tuplet 6/4 1 {r4 c\p\< ees ges f ees}
 % Bars 256 to 260
 	des\f r r2
@@ -521,10 +521,10 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	g2-> g->
 	g-> g4-. e-.
 	e1->~
-	e2. c4->
+	e2. c4
 % Bars 491 to 495
-	a'-. g-. f-. c->
-	a'-. g-. f-. c->
+	a' g f c
+	a' g f c
 	c2-> c->
 	c-> c->
 	c-> c->

@@ -286,6 +286,16 @@ omitAccidental = {
 	\override Accidental.stencil = ##t
 }
 
+omitStem = \once \omit Stem
+
+noteShift = #(define-music-function
+	(shift)
+	(number?)
+	#{
+		\once \override NoteColumn.force-hshift = #shift
+	#}
+)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -487,14 +497,6 @@ omitAccidental = {
 %	(number?)
 %	#{
 %		\once \override Score.RehearsalMark.Y-offset = #offset
-%	#}
-%)
-
-%noteShift = #(define-music-function
-%	(shift)
-%	(number?)
-%	#{
-%		\once \override NoteColumn.force-hshift = #shift
 %	#}
 %)
 

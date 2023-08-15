@@ -264,7 +264,7 @@ musicHornIIMvtIV = \relative c' {
 	\mark \default
 	R1
 	R1
-	c2(\p\< \tuplet 3/2 2 {f,4 ges aes}
+	c2(\p\< \tuplet 3/2 2 {f,4 ges aes\!}
 % Bars 256 to 260
 	ges\f) r r2
 	R1*11
@@ -473,8 +473,8 @@ musicHornIIMvtIV = \relative c' {
 	ees ees4 a,-.
 	a1~
 % Bars 486 to 490
-	a2. a4
-	ees'2 ees
+	a2. ees'4
+	ees2 ees
 	ees ees4 a,-.
 	a1->~
 	a2. r4 
@@ -547,7 +547,7 @@ musicHornIIMvtIV = \relative c' {
 	d c
 	bes f
 	bes2. bes4
-	bes2 bes->
+	bes2 \single \omitAccidental bes->
 % Bars 551 to 555
 	d1-^~
 	d~

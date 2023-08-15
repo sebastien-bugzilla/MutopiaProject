@@ -32,7 +32,7 @@ musicFagottIIMvtIV = \relative c {
 	cis4. cis8 cis4( b)
 	a8( a' gis fis e fis d e)
 	cis4. cis8 cis4( b)
-	cis4.\mf cis8\< cis4-. dis-.
+	cis4.\mf cis8\< cis4-. dis-.\!
 % Bars 21 to 25
 	e4.\f e8 e4-. fis-.
 	gis4. gis8 gis4-.\< ais-.
@@ -73,10 +73,10 @@ musicFagottIIMvtIV = \relative c {
 	f8) r r4 r2
 	r4 b,(-\tweak X-offset #-2.5 \fz cis dis
 	cis8) r a'2.~\f
-	a4 a2.\fz~
+	\noteShift #0.4 \omitStem a4 a2.\fz~
 	a4 a2.\fz~
 % Bars 56 to 60
-	a4 a2.\fz_(
+	a4 a2.\fz(
 	gis4) d'!2.\fz~
 	d4 d2.\fz~
 	d4 d2.\fz~
@@ -171,7 +171,7 @@ musicFagottIIMvtIV = \relative c {
 % Bars 136 to 140
 	r cis-. d-. a-.
 	a-. r gis-. r
-	\aIIOmit a\(\< cis\! d\> b\!\)
+	a\< cis\! d\> b\!
 	a-. cis-. a-. cis-.
 	r b-. e,-. b'-.
 % Bars 141 to 145
@@ -246,8 +246,8 @@ musicFagottIIMvtIV = \relative c {
 	
 	
 % Bars 206 to 210
-	r2 r4 \tuplet 3/2 4 {g'8(\f\< a b)}
-	c4-.\ff g-. c2->
+	r2 r4 \tuplet 3/2 4 {g'8\f\< a b\!}
+	c4\ff g c2
 	g4-> \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
 	c4-. g' c2->
 	d4-. g, d'2->
@@ -326,9 +326,9 @@ musicFagottIIMvtIV = \relative c {
 	r2 r4 r8 e'
 % Bars 276 to 280
 	cis b ais e ais4 r
-	r2 e'2->\f
-	d-> cis->
-	b-> a->
+	r2 e'2\f
+	d cis
+	b a->
 	g-> fis->
 % Bars 281 to 285
 	e-> d->

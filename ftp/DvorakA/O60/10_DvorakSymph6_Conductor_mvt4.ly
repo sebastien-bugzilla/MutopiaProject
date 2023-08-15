@@ -12,7 +12,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperConductors.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
@@ -20,8 +20,8 @@
 \include "./00-Common/DvorakSymph6_NameStaff.ily"
 \include "./00-Common/DvorakSymph6_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
-\include "./00-Common/DvorakSymph6_Format_Cond_Mvt04.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Cond_Mvt04.ily"
 \include "./04-Mvt4/m04_v01_music_FloteI_C.ily"
 \include "./04-Mvt4/m04_v02_music_FloteII_C.ily"
 \include "./04-Mvt4/m04_v03_music_OboeI_C.ily"
@@ -75,91 +75,70 @@
 						\tempiMvtIV
 					}
 					\new Voice {
-						\timeMvtIV \generalOptions \conductorOptions
-						\nameStaffIMvtIV
+						\timeMvtIV \nameStaffIMvtIV
 						\partCombine \musicFloteIMvtIV \musicFloteIIMvtIV
 					}
 				>>
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameStaffIIMvtIV
+					\timeMvtIV \nameStaffIIMvtIV
 					\partCombine \musicOboeIMvtIV \musicOboeIIMvtIV
 				}
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameStaffIIIMvtIV
+					\timeMvtIV \nameStaffIIIMvtIV
 					\partCombine \musicKlarinetteIMvtIV \musicKlarinetteIIMvtIV
 				}
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameStaffIVMvtIV
+					\timeMvtIV \nameStaffIVMvtIV
 					\partCombine \musicFagottIMvtIV \musicFagottIIMvtIV
 				}
 			>>
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
 					\new Staff {
-						\timeMvtIV \generalOptions \conductorOptions
-						\nameStaffVMvtIV
+						\timeMvtIV \nameStaffVMvtIV
 						\partCombine \musicHornIMvtIV \musicHornIIMvtIV
 					}
 					\new Staff {
-						\timeMvtIV \generalOptions \conductorOptions
-						\nameStaffVIMvtIV
+						\timeMvtIV \nameStaffVIMvtIV
 						\partCombine \musicHornIIIMvtIV \musicHornIVMvtIV
 					}
 				>>
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameStaffVIIMvtIV
+					\timeMvtIV \nameStaffVIIMvtIV
 					\partCombine \musicTrompeteIMvtIV \musicTrompeteIIMvtIV
 				}
 				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
 					\new Staff {
-						\timeMvtIV \generalOptions \conductorOptions
-						\nameStaffVIIIMvtIV
+						\timeMvtIV \nameStaffVIIIMvtIV
 						\partCombine \musicPosauneIMvtIV \musicPosauneIIMvtIV
 					}
 					\new Staff {
-						\timeMvtIV \generalOptions \conductorOptions
-						\nameStaffIXMvtIV
+						\timeMvtIV \nameStaffIXMvtIV
 						\partCombine \musicPosauneIIIMvtIV \musicTubaMvtIV
 					}
 				>>
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameStaffXMvtIV
-					\musicPaukenMvtIV
+					\timeMvtIV \nameStaffXMvtIV \musicPaukenMvtIV
 				}
 			>>
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIIIMvtIV } <<
 					\new Staff {
-						\timeMvtIV \generalOptions \conductorOptions
-						\nameStaffXIMvtIV
-						\musicViolinIMvtIV
+						\timeMvtIV \nameStaffXIMvtIV \musicViolinIMvtIV
 					}
 					\new Staff {
-						\timeMvtIV \generalOptions \conductorOptions
-						\nameStaffXIIMvtIV
-						\musicViolinIIMvtIV
+						\timeMvtIV \nameStaffXIIMvtIV \musicViolinIIMvtIV
 					}
 				>>
 				\new Staff {
-					\timeMvtIV \generalOptions \conductorOptions
-					\nameStaffXIIIMvtIV
-					\musicBratscheMvtIV
+					\timeMvtIV \nameStaffXIIIMvtIV \musicBratscheMvtIV
 				}
 				\new GrandStaff \with { \nameGrandStaffIVMvtIV } <<
 					\new Staff {
-						\timeMvtIV \generalOptions \conductorOptions
-						\nameStaffXIVMvtIV
-						\musicVioloncelloMvtIV
+						\timeMvtIV \nameStaffXIVMvtIV \musicVioloncelloMvtIV
 					}
 					\new Staff {
-						\timeMvtIV \generalOptions \conductorOptions
-						\nameStaffXVMvtIV
-						\musicKontrabassMvtIV
+						\timeMvtIV \nameStaffXVMvtIV \musicKontrabassMvtIV
 					}
 				>>
 			>>

@@ -44,7 +44,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 36 to 40
 	g\!-^~
 	g2. g4-. \mark \default
-	\aIIOmit f8_\ffgrandioso\noBeam c( e d c bes a g)
+	\once \partCombineApart f8\noBeam c( e d c bes a g)
 	f( g a g f e d e)
 	c r a'( bes c d e d)
 % Bars 41 to 45
@@ -55,7 +55,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	c4( g c f,)
 % Bars 46 to 50
 	g( f8 ees f4 g8 a)
-	bes8-. r r4 r2
+	\once \partCombineApart bes8-. r r4 r2
 	R1*6
 % Bars 51 to 55
 	
@@ -129,7 +129,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	cis2 d4( c!)~
 % Bars 116 to 120
 	c2 a!4( b)
-	c r r2
+	\once \partCombineApart c r r2
 	R1*3
 	
 	
@@ -154,8 +154,8 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 136 to 140
 	r g-. f-. f-.
 	e-. r d-. r
-	\aIIOmit c\(\< g'\! aes\> f\!\)
-	e-. g-. e-. g-.
+	\partCombineApart c( \stemDown g' aes f)
+	\partCombineAutomatic e-. g-. e-. g-.
 	r f-. d-. f-.
 % Bars 141 to 145
 	r g-. e-. g-.
@@ -171,7 +171,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	f r
 % Bars 151 to 155
 	e r
-	\partCombineApart r r4 e(-\tweak X-offset #-2 \pp
+	\partCombineApart r r4 \stemUp e(-\tweak X-offset #-2 \pp
 	cis b a a')~
 	a1~
 	a4 r r2 \partCombineAutomatic
@@ -270,8 +270,8 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 251 to 255
 	
 	\mark \default
-	\partCombineApart R1
-	\tupletIgnoreSlur \tuplet 6/4 1 {g,4(_\p bes des f ees des)}
+	R1
+	\partCombineApart \tupletIgnoreSlur \tuplet 6/4 1 {g,4(_\p bes des f ees des)}
 	\tupletIgnoreSlur \shape #'((0 . 2)(0 . -1)(0 . -1)(0 . 1)) Slur \tuplet 6/4 1 {c( ees ges bes aes ges}
 % Bars 256 to 260
 	f) \partCombineAutomatic r r2
@@ -303,9 +303,9 @@ musicKlarinetteIMvtIV = \relative c''' {
 	c-> c4-. bes-.
 	c-. bes-. c-. bes-.
 % Bars 286 to 290
-	c1
-	b4 r c\ff r8 \once \partCombineApart g-.
-	e-. d-. c-. g-. c4 r8 g'
+	\partCombineApart c1
+	b4 \once \partCombineAutomatic r c \once \partCombineAutomatic r8 g-.
+	\partCombineAutomatic e-. d-. c-. g-. c4 r8 g'
 	e d c g c4 r8 c'
 	aes g f c f4 r8 c'
 % Bars 291 to 295
@@ -327,7 +327,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	\partCombineApart \grace {s8} e!1~
 	e~
 % Bars 306 to 310
-	e4 r8 g(\mp e! d! c g
+	\once \stemDown e4 r8 g(\mp e! d! c g
 	c4) r8 g'( e d c g
 	c4) r r2 \partCombineAutomatic
 	R1*16
@@ -433,12 +433,12 @@ musicKlarinetteIMvtIV = \relative c''' {
 	bes2.-> r4
 	f4\fz \once \partCombineApart f-. f\fz \once \partCombineApart f-.
 	a\fz \once \partCombineApart f-. g\fz \once \partCombineApart c,-.
-	f r c2->~
+	f r \partCombineApart c2->~
 % Bars 411 to 415
 	c4 bes8( c bes4 a)
 	a( c bes2)
 	a4-. a-. g2->(
-	f4) r r2
+	f4) \partCombineAutomatic r r2
 	R1*3
 % Bars 416 to 420
 	
@@ -521,11 +521,11 @@ musicKlarinetteIMvtIV = \relative c''' {
 	bes2-> bes->
 	bes-> bes4-. g-.
 	g1->~
-	g2. c,4->
+	g2. \partCombineApart c,4->
 % Bars 491 to 495
 	a'-. g-. f-. c->
 	a'-. g-. f-. c->
-	a'2-> g->
+	\partCombineAutomatic a'2-> g->
 	f-> e->
 	f-> g->
 % Bars 496 to 500
@@ -535,22 +535,22 @@ musicKlarinetteIMvtIV = \relative c''' {
 	cis-> d->
 	d-> bes->
 % Bars 501 to 505
-	a4 r c,2->~
-	c4( bes8 c bes4 a)
+	a4 r \stemUp c,2->~
+	c4( \stemNeutral bes8 c bes4 a)
 	a( c bes2
-	a4) r c2~
-	c4( bes8 c bes4 a)
+	a4) r \stemUp c2~
+	c4( \stemNeutral bes8 c bes4 a)
 % Bars 506 to 510
 	a( c bes2
-	a4) r c2~->
-	c4( bes8 c bes4 a)
+	a4) r \stemUp c2~->
+	c4( \stemNeutral bes8 c bes4 a)
 	d r f2->~
 	f4( e8 f e4 d)
 % Bars 511 to 515
 	R1*2
 	
 	bes4(\f a8 bes a4 g)
-	c( bes8 c bes4 a)
+	\once \stemUp c( bes8 c bes4 a)
 	d( c8 d c4 bes)
 % Bars 516 to 520
 	e!( d8 e d4 c)

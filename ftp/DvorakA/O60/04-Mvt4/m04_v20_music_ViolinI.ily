@@ -619,7 +619,7 @@ musicViolinIMvtIV = \relative c''' {
 	\ottava #1 b a8( b a4 g)
 % Bars 516 to 520
 	cis! b8( cis b4 a)
-	d4:16 b: cis!: a:
+	d4:8 b: cis!: a:
 	b: g: a: fis:
 	d': b: cis: a:
 	b: g: a: fis: \ottava #0 \markXoffset #0.3 \mark \default

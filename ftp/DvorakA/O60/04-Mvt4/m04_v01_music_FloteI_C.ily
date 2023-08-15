@@ -245,11 +245,11 @@ musicFloteIMvtIV = \relative c''' {
 	bes4. bes8 bes4 c
 	d4. d8 d4( c8 bes)
 	a4 c4\rest c2\rest
-	\mmrPos #8 R1
+	\mmrPos #7 R1
 % Bars 251 to 255
-	\mmrPos #8 R
+	\mmrPos #7 R
 	\mmrPos #14 R \mark \default
-	\mmrPos #8 R1 \partCombineAutomatic
+	\mmrPos #9 R1 \partCombineAutomatic
 	R1
 	\tupletIgnoreSlur \tuplet 6/4 1 {a4( c ees g f ees}
 % Bars 256 to 260
@@ -341,17 +341,17 @@ musicFloteIMvtIV = \relative c''' {
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	cis1\fp
-	d\fp
-	e\fp(
-	fis8)-. r fis2.->~
+	\partCombineApart cis1
+	d
+	e
+	fis8-. \once \partCombineAutomatic r fis2.->~
 	fis1~
 % Bars 346 to 350
 	fis4 e2.->~
 	e1~
 	e4 dis2.->~
 	dis4 dis2.->(
-	e4) r r2
+	e4) \partCombineAutomatic r r2
 % Bars 351 to 355
 	R1
 	d4\f r r2
@@ -535,7 +535,7 @@ musicFloteIMvtIV = \relative c''' {
 	b4 a8( b a4 g)
 	b r d2->~
 	d4 cis8( d cis4 b)
-	\once \partCombineApart a r a'2~
+	\once \partCombineApart a r \partCombineApart a'2~
 % Bars 526 to 530
 	a4 g8( a g4) fis-.
 	fis-. e8( fis e4) d-.
@@ -544,7 +544,7 @@ musicFloteIMvtIV = \relative c''' {
 	g-> fis-. fis-> e-.
 % Bars 531 to 535
 	e-> d-. d-> cis-.
-	cis'-. b-. \once \partCombineApart a-. r
+	\partCombineAutomatic cis'-. b-. \once \partCombineApart a-. r
 	R1*10
 % Bars 536 to 540
 	

@@ -125,9 +125,9 @@ musicTubaMvtIV = \relative c, {
 	R1*2
 % Bars 141 to 145
 	
-	\aIIXoffset #-1 d1-\tweak extra-offset #'(0.4 . 0.5) \ff-^
-	c-^
-	bes-^~
+	d1-\tweak extra-offset #'(0.4 . 0.5) \ff
+	c
+	bes~
 	bes
 % Bars 146 to 150
 	gis4\f r r2
@@ -436,19 +436,19 @@ musicTubaMvtIV = \relative c, {
 	fis-> b->
 	g-> a->
 % Bars 501 to 505
-	d4 r c2->\f
-	b-> bes->
-	a4-. b!-. c-. cis-.
-	d r c2->
-	b-> bes->
+	d4 r c2\f
+	b bes
+	a4 b! c cis
+	d r c2
+	b bes
 % Bars 506 to 510
-	a4-. b!-. c-. cis-.
-	d r d,2->~
+	a4 b! c cis
+	d r \once \stemUp d,2~
 	d1
 	g-\tweak X-offset #-2 \ff~
 	g
 % Bars 511 to 515
-	c,->~
+	c,~
 	c
 	e4-. r r c-.
 	fis-. r r d-.

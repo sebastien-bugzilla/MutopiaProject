@@ -624,7 +624,7 @@ musicBratscheMvtIV = \relative c' {
 	c b c b b ais b ais
 % Bars 506 to 510
 	a! ais b ais b c cis a
-	<d, fis>4:16 <e g>: <fis a>: <g b>:
+	<d, fis>4:8 <e g>: <fis a>: <g b>:
 	<a cis>: <b d>: <cis e>: <d fis>:
 	<g, b>: <a c>: <b d>: <c! e>:
 	<d fis>: <e g>: <fis a>: <g b>:
@@ -636,7 +636,7 @@ musicBratscheMvtIV = \relative c' {
 	g b g b fis a e g
 % Bars 516 to 520
 	a cis! a cis g b fis a
-	d4:16 b: cis!: a:
+	d4:8 b: cis!: a:
 	b: g: a: fis:
 	d': b: cis: a:
 	b: g: a: fis: \mark \default
