@@ -12,7 +12,7 @@ musicHornIMvtII = \relative c'' {
 	R2*3
 	
 	
-	c4\fp\> bes(
+	\once \stemUp c4\fp\> bes(
 	a8)\pp r r4
 % Bars 6 to 10
 	R2*6
@@ -45,7 +45,7 @@ musicHornIMvtII = \relative c'' {
 	e e 
 	e e
 % Bars 41 to 45
-	\partCombineApart c'8(\p e4_\crescmarkup d16 c)~
+	\partCombineApart c'8(\p \after 8 <>_\crescmarkup e4 d16 c)~
 	c8( b16 a b4)
 	bes8( d4_\dimmarkup c16 bes)~
 	bes8( a16 g a4) \partCombineAutomatic
@@ -174,10 +174,10 @@ musicHornIMvtII = \relative c'' {
 	a-- a--
 	a-- a--
 	a-- a--
-	\partCombineApart a b\<
+	\partCombineApart a b_\<
 % Bars 161 to 165
 	c4. g8~\!
-	g4 a\>
+	g4 a_\>
 	bes4. f8~\!
 	f4_\pp e~
 	e8 r r4 \partCombineAutomatic
@@ -210,7 +210,7 @@ musicHornIMvtII = \relative c'' {
 % Bars 191 to 195
 	
 	
-	\partCombineApart g4.(_\pp_\< gis8_\>
+	\partCombineApart << {g4.( gis8 } {s4_\pp_\< s8_\> s\!}>>
 	a\!)\noBeam c(_\< a d)~\!
 	d4._\> c8_\pp~
 % Bars 196 to 200

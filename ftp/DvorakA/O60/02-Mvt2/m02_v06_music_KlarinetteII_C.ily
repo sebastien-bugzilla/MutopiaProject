@@ -79,13 +79,13 @@ musicKlarinetteIIMvtII = \relative c'' {
 	a r
 	r8 \stemDown d\p b e
 	d\< b4 b8\!~
-	b16\f b8 b b b16~
+	\beamOffset #'(0.5 . 0.5) b16\f b8 b b b16~
 % Bars 66 to 70
 	b8. r16 r4
 	R2*3
 	
 	
-	\mmrPos #-6 R2
+	\mmrPos #-7 R2
 % Bars 71 to 75
 	\mmrPos #-7 R
 	R \mark \default
@@ -176,7 +176,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	g~ g32( a g f-.) f4(
 	e8) c16(\< e a c b a)\!
 % Bars 151 to 155
-	g8( d'4\mf\> c8)
+	g8( d'4\mf-\tweak rotation #'(3 -1 0) \> c8)
 	b4.(\! d8\p
 	c) r r4
 	R2*3
@@ -202,7 +202,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	r8 c'(\mf\< d dis\!
 % Bars 176 to 180
 	e)\noBeam c(\f\< d dis\!
-	e16)\noBeam b\f-> cis!-> cis-> d->\< e-> d-> dis->\!
+	e16)\noBeam b\f\<-> cis!-> cis-> d-> e-> d-> dis->\!
 	b8\ff r cis-^ r
 	c!-^ r r4
 	R2*4
@@ -213,8 +213,8 @@ musicKlarinetteIIMvtII = \relative c'' {
 	cis2(_\fpdim
 	c!)~
 % Bars 186 to 190
-	\hairpinShorten #'(1.5 . 0) c2-\tweak extra-offset #'(2.3 . 0.8) \pp\<(
-	g\>)~
+	\hairpinShorten #'(1.5 . 1) c2-\tweak extra-offset #'(2.3 . 0.8) \pp\<(
+	\hairpinShorten #'(0.5 . 4) g\>)~
 	g8\! r r4
 	R2*8
 % Bars 191 to 195
@@ -226,7 +226,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	f d b b
 	a r c4\fp~
 % Bars 201 to 205
-	c(\> b)\!
+	<< {c( b)} {s4\> s8 s\!}>>
 	g2\pp~
 	g~
 	g8 r r4

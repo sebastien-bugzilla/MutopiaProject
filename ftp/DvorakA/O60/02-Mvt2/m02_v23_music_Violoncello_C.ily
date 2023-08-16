@@ -16,7 +16,7 @@ musicVioloncelloMvtII = \relative c {
 	bes2(\p
 % Bars 6 to 10
 	c4 \once \stemUp d)
-	g,2~\<
+	<< g,2~ {s4 s\<}>>
 	g4.(\> c8)\!
 	d8(\p\< f d bes)
 	ees2(\!
@@ -57,7 +57,7 @@ musicVioloncelloMvtII = \relative c {
 	a8) r r4
 	r8 <a f'!>4\pp( <g e'>16 <f! d'>)
 % Bars 41 to 45
-	a8( a'4_\crescmarkup g16 f)~
+	a8( \after 8 <>_\crescmarkup a'4 g16 f)~
 	f8( e16 d e8 c)~
 	c( g'4_\dimmarkup f16 ees!)~
 	ees8( d16 c d8 bes)
@@ -106,7 +106,7 @@ musicVioloncelloMvtII = \relative c {
 	
 	r8 c,16\mf\<( c') c,( c'8) c16-.\!
 	f,\f( f'8) f16-. f,( f'8) f16-.
-	f,( f'8) f16_\dimmarkup f,-. f'-. fis,-. fis'-.
+	\beamOffset #'(0 . -0.5) f,( f'8)_\dimmarkup f16 f,-. f'-. fis,-. fis'-.
 % Bars 86 to 90
 	g,8\p r r4
 	R2*2
@@ -118,7 +118,7 @@ musicVioloncelloMvtII = \relative c {
 	b d g, d')
 	c( c, g' c)_\crescmarkup
 	c,( g' c c,)
-	f'-.\mf f,-. r4
+	\beamOffset #'(-0.5 . 0) \dynEO #'(0 . 1) f'-.\mf f,-. r4
 % Bars 96 to 100
 	f'8-. f,-._\crescmarkup r4
 	f'8-. f,-. r4
@@ -187,7 +187,7 @@ musicVioloncelloMvtII = \relative c {
 	c(\> a f c f,8) fis\p
 	g \clef tenor a'(\pp\< bes c16 cis\!)
 	d4 f\fz~
-	f8 ees16(\> d \acciaccatura f8 ees8. d16)\!
+	f8 ees16(\> d \stemOffset #-1 \acciaccatura f8 ees8. d16)\!
 % Bars 156 to 160
 	d2\pp~
 	d~

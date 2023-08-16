@@ -59,7 +59,7 @@ musicBratscheMvtII = \relative c {
 % Bars 41 to 45
 	a) r g4\<~
 	g2\>~
-	g4\! a_\dimmarkup
+	\after 8 <>_\dimmarkup g4\! a
 	f2~
 	f4.\pp( ees16 c')
 % Bars 46 to 50
@@ -70,7 +70,7 @@ musicBratscheMvtII = \relative c {
 	
 % Bars 51 to 55
 	r8 <ees g>\p\< q q\!
-	<<{ <cis a'>2} {\hairpinShorten #'(0 . -2) s8-\tweak X-offset #1.5 \f\> s s s\!} >>
+	<<{ <cis a'>2} {s8-\tweak X-offset #1.5 \f\> s s s\!} >>
 	<d bes'>8\p r r4
 	R2*5
 % Bars 56 to 60
@@ -93,9 +93,9 @@ musicBratscheMvtII = \relative c {
 		f'4( d8 g)
 		ees8 c32( d c) bes-. a8( d)
 		d4( ees
-		d4.)\< g8\>
+		\after 4 \< d4.) g8\>
 		f4(\! bes)~
-		bes8 a(-- g-- f--)
+		bes8_\< a(-- g-- f--)\!
 		f8~ f32( g f) ees-. ees4(
 		d8)
 	} \\ {
@@ -104,7 +104,7 @@ musicBratscheMvtII = \relative c {
 		g2
 		bes
 		bes
-		c\<
+		c
 		bes4\> g8 a\!
 		bes\p
 	}>> r r4
@@ -118,7 +118,7 @@ musicBratscheMvtII = \relative c {
 		d8
 	} \\ {
 		bes4\f d~->
-		d8 c16-\tweak extra-offset #'(-1.5 . 0.3) _\dimmarkup bes d8 c
+		\beamOffset #'(0 . 0.5) d8 c16-\tweak extra-offset #'(-1.5 . 0.3) _\dimmarkup bes d8 c
 		bes\p
 	}>> r r4
 % Bars 87 to 90
@@ -203,7 +203,7 @@ musicBratscheMvtII = \relative c {
 	r <a c>8\> q16 r q8\! q16\p
 	<g bes>8 fis(\pp\< g \tuplet 3/2 4 {bes16 a g\!)}
 	f!4 d\fz~
-	d8(\> c4 a'8)(
+	d8(\> c4 a'8)(\!
 % Bars 156 to 160
 	d,)\pp r r4
 	R2*4
@@ -254,13 +254,13 @@ musicBratscheMvtII = \relative c {
 % Bars 191 to 195
 	e2\ppp(
 	f8) r r4
-	<<e2( {s8\< s s s\>}>>
-	f8)\! r r4
+	<<e2( {s4\< s8\> s\!}>>
+	f8) r r4
 	ees!2(\pp
 % Bars 196 to 200
 	d8) r r4
 	R2
-	r8 f'8:32\ff d: g:
+	r8 \beamOffset #'(0.3 . 0.3) f'8:32\ff d: g:
 	ees: c: a: d:
 	<d bes'>8 r q r
 % Bars 201 to 205

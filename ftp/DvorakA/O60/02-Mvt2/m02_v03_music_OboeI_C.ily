@@ -63,13 +63,13 @@ musicOboeIMvtII = \relative c'' {
 % Bars 46 to 50
 	
 	r4 \partCombineChords bes,-\tweak extra-offset #'(0 . 0.8) \pp\<(
-	aes2\>)(
-	bes8) bes---\tweak extra-offset #'(0 . 0.6) \pp bes-- bes--
+	<< aes2)( {s4\> s\! }>>
+	bes8) bes--\pp bes-- bes--
 	\partCombineAutomatic aes2->(
 % Bars 51 to 55
-	g8) bes\< bes bes
-	a!2\f\>
-	bes\p\>~
+	g8) bes\< bes bes\!
+	<< a!2\f {s8\> s s s\!}>>
+	bes2\p\>~
 	bes8\! r r4
 	R2*2
 % Bars 56 to 60
@@ -129,7 +129,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 106 to 110
 	f8( ees4.)
 	bes'2\fz
-	bes-\tweak X-offset #0.1 \fz
+	\dynEO #'(0 . 1) bes-\tweak X-offset #0.1 \fz
 	a-\tweak X-offset #0.1 \fz
 	gis-\tweak X-offset #0.1 \fz
 % Bars 111 to 115
@@ -179,7 +179,7 @@ musicOboeIMvtII = \relative c'' {
 	R2
 	R2*2
 	
-	r8 bes4(-\tweak X-offset #0.7 _\pcresc a16 g
+	r8 \shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur bes4(-\tweak X-offset #0.9 _\pcresc a16 g
 % Bars 151 to 155
 	f2)~
 	f8 r r4
@@ -196,7 +196,7 @@ musicOboeIMvtII = \relative c'' {
 	c,4.) c8
 	c( aes'4 g16 f
 	bes,4.) bes8
-	\shape #'((-0.5 . 2)(0 . -0.5)(0 . -0.5)(0 . 2)) Slur bes( ees4 d16 c~
+	\shape #'((-0.5 . 2)(0 . -1)(0 . -1)(0 . 2)) Slur bes( ees4 d16 c~
 	c8) r r4
 % Bars 166 to 170
 	R2*3
@@ -222,8 +222,8 @@ musicOboeIMvtII = \relative c'' {
 % Bars 186 to 190
 	
 	\partCombineApart r8 f(\p g a)
-	bes2~\<
-	bes8\>( aes ges f)\!
+	<< bes2~ {s8_\< s s s\!}>> 
+	bes8_\>( aes ges f)\!
 	f4 r \partCombineAutomatic
 % Bars 191 to 195
 	R2*5

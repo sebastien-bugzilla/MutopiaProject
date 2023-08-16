@@ -13,7 +13,7 @@ musicFloteIMvtII = \relative c'' {
 	\partCombineApart r8 bes(\p a d~
 	d4._\< e8
 	f2_\fp~
-	f8)_\pp r r4 \partCombineAutomatic
+	\dynEO #'(0 . 1) f8)_\pp r r4 \partCombineAutomatic
 % Bars 6 to 10
 	R2*12
 % Bars 11 to 15
@@ -78,7 +78,7 @@ musicFloteIMvtII = \relative c'' {
 	
 	
 	
-	\partCombineApart f4(\pp bes~
+	\partCombineApart f4(-\offset X-offset -1.5 \pp bes~
 % Bars 81 to 85
 	bes8 a g f)
 	f(~ f32 g f ees-.) ees4(
@@ -107,11 +107,11 @@ musicFloteIMvtII = \relative c'' {
 % Bars 106 to 110
 	f8( ees4.)
 	des2\fz
-	ces\fz
-	ces\fz
-	ces\fz
+	\dynEO #'(0 . 1) ces\fz
+	\dynEO #'(0 . 1) ces\fz
+	\dynEO #'(0 . 1) ces\fz
 % Bars 111 to 115
-	ces\fz \mark \default
+	\dynEO #'(0 . 1) ces\fz \mark \default
 	ces8 r r4
 	R2*8
 % Bars 116 to 120
@@ -140,13 +140,13 @@ musicFloteIMvtII = \relative c'' {
 	d4 r \partCombineAutomatic
 % Bars 141 to 145
 	R2
-	bes4(\pp g8\< c)
-	bes( g d e)
+	\partCombineApart bes4(\pp g8\< c)
+	bes( g d e)\!
 	\shape #'((0 . 1.7)(0 . 4)(0 . 4)(1.3 . 3)) Tie f2~\!
 	f8 f(-- g-- a--)
 % Bars 146 to 150
 	bes4(~ bes16^\dimmarkup c g a
-	bes4)-\tweak X-offset #-2 \pp r
+	bes4)-\tweak X-offset #-2 \pp r \partCombineAutomatic
 	R2*2
 	
 	r8 \partCombineApart bes4_\pcresc( a16 g

@@ -57,7 +57,7 @@ musicViolinIMvtII = \relative c'' {
 	r8 <a f'!>4(\pp <g e'>16 <f! d'>
 	a8) r r4
 % Bars 41 to 45
-	r8 f'4(_\crescmarkup e16 d)
+	r8 \after 8 <>_\crescmarkup f'4( e16 d)
 	g,4.( c8)
 	r8 ees!4(_\dimmarkup d16 c)
 	f,2~
@@ -70,7 +70,7 @@ musicViolinIMvtII = \relative c'' {
 	
 % Bars 51 to 55
 	r8 g'4(\p\< fis16 g)\!
-	a4.(\f\> e8
+	a4.(\f\> e8\!
 	g)\p r r4
 	R2*4
 % Bars 56 to 60
@@ -131,11 +131,11 @@ musicViolinIMvtII = \relative c'' {
 % Bars 106 to 110
 	r8 bes-.->\ff ees,-.-> ees'->
 	des2\fz
-	ces\fz
-	ces\fz
-	ces\fz
+	\dynEO #'(0 . 1) ces\fz
+	\dynEO #'(0 . 1) ces\fz
+	\dynEO #'(0 . 1) ces\fz
 % Bars 111 to 115
-	ces\fz \mark \default
+	\dynEO #'(0 . 1) ces\fz \mark \default
 	r16 aes,(\p f ces'~ ces_\dimmarkup aes f ces'~)
 	ces( aes f ces'~ ces aes f ces'~)
 	ces(\pp g f b~ b g f b)~
@@ -171,7 +171,7 @@ musicViolinIMvtII = \relative c'' {
 	ees( c16. bes32 a8 d)
 	d4( ees\<
 	d4.) g8\!
-	f4(\mf\< bes)~
+	<< {f4( bes)~ } {s8\mf\< s s s\!}>>
 	bes8\> a( g f)\!
 % Bars 146 to 150
 	f(_\pdim~ f32 g f) ees-. ees4(
@@ -222,7 +222,7 @@ musicViolinIMvtII = \relative c'' {
 % Bars 191 to 195
 	bes aes8 ges
 	f) r r4
-	c4.(\< cis8\>
+	<< {c4.( cis8} {s4\< s8\> s\!} >>
 	d)\! r r4
 	cis2\pp(
 % Bars 196 to 200

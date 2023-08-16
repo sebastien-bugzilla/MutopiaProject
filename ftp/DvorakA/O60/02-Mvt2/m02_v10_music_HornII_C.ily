@@ -58,7 +58,7 @@ musicHornIIMvtII = \relative c'' {
 	
 % Bars 51 to 55
 	r8 f'\p\< f f\!
-	e2\f\>
+	<< e2\f {s8\> s s s\!} >>
 	f4\p f~\>
 	f f8 f8~\!
 	f\pp r r4
@@ -165,12 +165,12 @@ musicHornIIMvtII = \relative c'' {
 % Bars 146 to 150
 	r c8_\pdim c16 r d8 c16
 	r c8-\tweak X-offset #-3 \pp c16 r4
-	R2*5
-	
-	
+	R2
+	R
+	\tweak extra-offset #'(-1 . 0) R
 % Bars 151 to 155
-	
-	
+	R
+	R
 	\mmrPos #-6 R2
 	R2*2
 	

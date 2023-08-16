@@ -36,7 +36,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	d8 cis b a)
 	a4 g\<(
 	fis8)\! r r4
-	\partCombineApart g'2-\tweak extra-offset #'(0 . 2) _\fp~
+	\partCombineApart \dynEO #'(0 . 2) g'2_\fp~
 	g~
 % Bars 31 to 35
 	g~
@@ -63,8 +63,8 @@ musicKlarinetteIMvtII = \relative c'' {
 	c8( a'4 g16 f)
 	des2->(
 % Bars 51 to 55
-	c8) f4_\< f8
-	fis4._\f_\> fis8
+	c8) f4_\< f8\!
+	fis4._\f_\> fis8\!
 	a(_\p e4) c8~
 	c(_\> a~ a16 b c d)\!
 	e8_\pp r r4 \partCombineAutomatic
@@ -100,13 +100,13 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 81 to 85
 	r8 g16(\pp\< a) a( b) b( d)\!
 	c4( a8 b
-	c) r r4 \partCombineAutomatic
+	c) \partCombineAutomatic r r4 
 	R2*3
 	
 % Bars 86 to 90
 	
 	\partCombineApart r16 g,(-\tweak extra-offset #'(1.5 . 2) _\f -\tweak extra-offset #'(1.2 . 2) _\< c e g c e g)~\!
-	\shape #'((0 . 0)(0 . -1)(0 . -1)(0 . 0)) Slur g8(_\> f16 e g f e d) \mark \default
+	\shape #'((0 . 0)(0 . -1)(0 . -1)(0 . 0)) Slur g8(_\> f16 e g f e d)\! \mark \default
 	g4._\pp r8 \partCombineAutomatic
 	R2
 % Bars 91 to 95
@@ -166,15 +166,15 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 141 to 145
 	R2*2
 	
-	\partCombineApart c2_\p_\<~
+	\partCombineApart <<c2~ {s8_\p_\< s s s\!}>>
 	c8_\mf_\< e( g e)\!
-	d2_\>(
+	<<d2( {s8_\> s s s\!}>>
 % Bars 146 to 150
 	c8)_\p r r4
 	R2*3
 	
 	
-	e,16-\tweak extra-offset #'(0 . -2) ^\p -\tweak extra-offset #'(1.8 . -3) ^\crescmarkup ( g c e a c b a)
+	e,16-\tweak extra-offset #'(0 . -2) ^\p -\tweak extra-offset #'(1.8 . -3) ^\crescmarkup ( g c e \beamOffset #'(-0.2 . -0.2) a c b a)
 % Bars 151 to 155
 	g2~
 	g8 r r4
@@ -202,7 +202,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	r8 e(\mf\< f fis\!
 % Bars 176 to 180
 	g)\noBeam e(\f\< f fis\!
-	g16)\noBeam d\f-> g-> g-> g->\< g-> g-> fis->\!
+	g16)\noBeam d\f\<-> g-> g-> g-> g-> g-> fis->\!
 	e8\ff r g-^ r
 	fis-^ r r4
 	\partCombineApart r8 g(->_\p e a

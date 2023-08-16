@@ -63,7 +63,7 @@ musicFagottIIMvtII = \relative c {
 	
 % Bars 51 to 55
 	r8 ees,\p\< ees ees\!
-	cis2-\tweak X-offset #1 \f\>
+	<< cis2 {s8-\tweak X-offset #1 \f\> s s s\!}>>
 	d4-\tweak X-offset #1 \p r
 	R2*2
 	
@@ -142,7 +142,7 @@ musicFagottIIMvtII = \relative c {
 % Bars 121 to 125
 	ees!\pp~
 	ees
-	c,,\p~
+	c,,-\tweak X-offset #-1.5 \p~
 	c\cresc
 	c~
 % Bars 126 to 130
@@ -192,10 +192,10 @@ musicFagottIIMvtII = \relative c {
 	R2*3
 	
 	\mark \default
-	bes,2\p~
+	bes,2-\offset X-offset 0.6 \p~
 	bes8 bes'4\< a16 g\!
 % Bars 171 to 175
-	f8 bes,4.\p~
+	f8 bes,4.-\offset X-offset 0.6 \p~
 	bes8 bes'4\< a16 g\!
 	f8 bes,4.\p~
 	bes8 bes'4(\< a16\! g
@@ -231,8 +231,8 @@ musicFagottIIMvtII = \relative c {
 	ees c a d,-^\noBeam
 	g-^ r f4\fp~\>
 % Bars 201 to 205
-	f2
-	bes\pp~
+	<<f2 {s4 s8 s\!} >>
+	bes2\pp~
 	bes~
 	bes8 r r4
 	R2

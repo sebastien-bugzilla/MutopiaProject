@@ -35,7 +35,7 @@ musicHornIIIMvtII = \relative c'' {
 % Bars 41 to 45
 	e4\pp^\ten e_\crescmarkup
 	d d
-	d_\dimmarkup b
+	\after 8 <>_\dimmarkup d b
 	c c 
 	R2*3
 % Bars 46 to 50

@@ -19,7 +19,7 @@ musicFagottIMvtII = \relative c' {
 % Bars 11 to 15
 	
 	
-	\partCombineApart c'2\p
+	\partCombineApart c'2-\offset X-offset -1.5 \p
 	bes4~ bes16( g a c)
 	f,4\< e\!
 % Bars 16 to 20
@@ -34,7 +34,7 @@ musicFagottIMvtII = \relative c' {
 % Bars 26 to 30
 	
 	
-	\partCombineApart r4 g-\tweak extra-offset #'(0 . 4.3) _\fz(
+	\partCombineApart r4 \dynEO #'(0 . 4.3) g_\fz(
 	f8) r ees4(->
 	d8) r ees4(_\crescmarkup
 % Bars 31 to 35
@@ -97,8 +97,8 @@ musicFagottIMvtII = \relative c' {
 % Bars 86 to 90
 	g_\p_\< e' e e\!
 	f2_\fz~
-	\shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . -0.5)) Slur f4._\>( ees!8 \mark \default
-	d4.)\pp r8
+	\shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . -0.5)) Slur f4._\>( ees!8\! \mark \default
+	d4.)_\pp r8
 	R2
 % Bars 91 to 95
 	g,2\pp~
@@ -137,7 +137,7 @@ musicFagottIMvtII = \relative c' {
 % Bars 121 to 125
 	g\pp~
 	g
-	c,,\p~
+	c,,-\tweak X-offset #-1.5 \p~
 	c\cresc
 	c~
 % Bars 126 to 130
@@ -226,8 +226,8 @@ musicFagottIMvtII = \relative c' {
 	ees-! c-! a-! \partCombineAutomatic d-^\noBeam
 	g-^ r f4\fp~\>
 % Bars 201 to 205
-	f2
-	f\pp~
+	<< f2 {s4 s8 s\!}>>
+	f2\pp~
 	f~
 	f8 r r4
 	R2

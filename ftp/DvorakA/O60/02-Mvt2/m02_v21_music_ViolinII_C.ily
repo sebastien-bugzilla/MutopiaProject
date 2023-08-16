@@ -70,7 +70,7 @@ musicViolinIIMvtII = \relative c' {
 	
 % Bars 51 to 55
 	r8 <g bes>\p\< q q\!
-	<e a>2\f\>
+	<< <e a>2\f {s8\> s s s\!}>>
 	<g bes>8\p r r4
 	R2*4
 	
@@ -102,7 +102,7 @@ musicViolinIIMvtII = \relative c' {
 	d16(\pp f8) f16-. c( c'8) c16-.
 	g,( g' bes a) a(\< g) g( e)\!
 	f8\f bes4.(\fz
-	bes-\tweak X-offset #0.4 _\dimmarkup a8
+	\after 8 <>_\dimmarkup bes a8
 % Bars 86 to 90
 	d,)\p r r4
 	R2*2
@@ -171,7 +171,7 @@ musicViolinIIMvtII = \relative c' {
 	ees( c16. bes32 a8 d)
 	d4( ees\<
 	d4.) g8\!
-	f4(\mf\< bes)~
+	<< {f4( bes)~} {s8\mf\< s s s\!}>>
 	bes8\> a( g f)\!
 % Bars 146 to 150
 	f\p(~ f32 g f) ees-. ees4(
