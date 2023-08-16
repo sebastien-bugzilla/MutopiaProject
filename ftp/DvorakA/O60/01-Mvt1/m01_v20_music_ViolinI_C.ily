@@ -42,7 +42,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 31 to 35
 		c'8-> d-> ees-> ees-> d-> c->
 		d4-.-> g,-.-> r
-		f'8\<-> g-> aes-> aes-> g-> f->
+		f'8\<-> g-> aes-> aes-> g-> f->\!
 		a!4\f-. f-. b-.\fz
 		f-. c'-.\fz f,-.
 % Bars 36 to 40
@@ -54,9 +54,9 @@ musicViolinIMvtI = \relative c'' {
 % Bars 41 to 45
 		g,-. e'-.\fz g,-.
 		e'-.\fz g,-. e'-.\fz
-		e2 \tweak extra-offset #'(0 . 2) \ff e4 \tweak extra-offset #'(0 . 2) \fz~
-		e fis2 \tweak extra-offset #'(0 . 2) \fz
-		g \tweak extra-offset #'(0 . 2) \fz gis4~ \tweak extra-offset #'(0 . 2) \fz
+		\dynEO #'(0 . 2) e2\ff \dynEO #'(0 . 2) e4\fz~
+		e \dynEO #'(0 . 2) fis2\fz
+		\dynEO #'(0 . 2) g\fz \dynEO #'(0 . 2) gis4~\fz
 % Bars 46 to 50
 		gis a8:16\< g!: e: cis:
 		a: e: cis: e: a: e:
@@ -90,7 +90,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 71 to 75
 		g'[-> b, g b] a'[-> b,
 		g b] b'[-> b, g b]
-		cis'->[ b, g b] d'->[ b,]
+		cis'->[ b, g b] \beamGap #4 d'->[ b,]
 		dis'4-> r d(\p\<
 		dis2 a4\!
 % Bars 76 to 80
@@ -139,13 +139,13 @@ musicViolinIMvtI = \relative c'' {
 		fis8-. fis16( g) a8-. a16( b) a8-. a16( d)
 		g,8-.\p g16( a) g8-. g16( a) g8-. g16( c)
 		b8-. b16( c) b8-._\dimmarkup b16( c) d8-. c16( d)
-		e8\pp\(( d) d( c) c( g)\)
+		\dynEO #'(0 . 1) e8\pp\(( d) d( c) c( g)\)
 		b( fis fis cis! fis b,)
 % Bars 116 to 120
 		fis'( fis, fis' fis, fis' fis,)
 		gis4( a\< b
 		c d dis
-		e\> eis fis)
+		e\! eis\> fis)\!
 		b\pp r r
 % Bars 121 to 125
 		R2.
@@ -352,11 +352,11 @@ musicViolinIMvtI = \relative c'' {
 	g'4.:16\fz ees8( f g)
 	ees[( f g)] ees,( f g)
 	ees,[( f g)] ees'( f g)
-	a'4.:16\fz fis!8( g a)
+	\dynEO #'(0 . 2) a'4.:16\fz fis!8( g a)
 % Bars 286 to 290
 	fis([ g a)] fis,( g a)
 	fis,[( g a)] fis'( g a)
-	aes'4.:16 \tweak extra-offset #'(0 . 0.5) \fz f8( g aes)
+	\dynEO #'(0 . 2) aes'4.:16\fz f8( g aes)
 	f([ g aes]) f,( g aes)
 	f,[( g aes]) f'( g aes)
 % Bars 291 to 295
@@ -504,7 +504,7 @@ musicViolinIMvtI = \relative c'' {
 	b4( c\< d
 % Bars 411 to 415
 	ees f fis
-	g\> gis a)
+	g\! gis\> a)\!
 	d\pp r r
 	R2.*3
 	
@@ -516,14 +516,14 @@ musicViolinIMvtI = \relative c'' {
 	a~
 % Bars 421 to 425
 	a~\<
-	a2\> ais4
+	<< {a2 ais4} {s4\! s\> s\!} >>
 	b2(-\tweak X-offset #0 \pdolceD ais4)
 	fis8( dis e fis cis4)
 	b8(\< dis fis4 e--
 % Bars 426 to 430
 	dis2 cis4)\!
 	b8( dis fis4\> e--
-	dis2 cis4)
+	dis2 cis4)\!
 	b8-.\p d!-. fis4-.\< gis8-. ais-.
 	b-. cis-. d!4-> d8-. dis-.
 % Bars 431 to 435

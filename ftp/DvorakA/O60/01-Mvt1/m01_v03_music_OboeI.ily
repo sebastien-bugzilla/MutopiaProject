@@ -99,7 +99,7 @@ musicOboeIMvtI = \relative c'' {
 	
 % Bars 81 to 85
 		g4-.\p g-. gis-.
-		ais-. r r
+		ais r r
 		R2.*4
 % Bars 86 to 90
 		

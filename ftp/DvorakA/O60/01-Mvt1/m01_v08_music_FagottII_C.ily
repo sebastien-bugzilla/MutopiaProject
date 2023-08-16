@@ -485,8 +485,8 @@ musicFagottIIMvtI = \relative c {
 	a
 	gis~\<
 % Bars 411 to 415
-	<< gis {s4 s s\!} >>
-	g!4(\> e a)\!
+	gis %<< gis {s4 s s\!} >>
+	g!4(\! e\> a)\!
 	d\p r r
 	R2.*7
 % Bars 416 to 420
@@ -564,7 +564,7 @@ musicFagottIIMvtI = \relative c {
 	d~
 	d
 % Bars 481 to 485
-	d'4. bes8 cis! d
+	d'4.\ff bes8 cis! d
 	d4. bes8 cis! d
 	d bes cis d g, a
 	bes e, fis g cis, d

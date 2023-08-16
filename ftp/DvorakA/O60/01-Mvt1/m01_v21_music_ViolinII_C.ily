@@ -32,7 +32,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 21 to 25
 		g(\p\> b d g, cis! g
 		b g cis g b g
-		ais)\pp r g!4.(\fz fis8)
+		ais)-\tweak extra-offset #'(0 . 0.5) \pp r g!4.(\fz fis8)
 		eis-! fis-! gis-! gis-! fis-! eis-! 
 		fis-. r g!4(\fz a)
 % Bars 26 to 30
@@ -44,7 +44,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 31 to 35
 		fis' c'8-> c-> b-> a->
 		b4->-. d,-.-> r
-		c'->\< \acciaccatura b8 f'-> f-> e-> d->
+		c'->\< \acciaccatura b8 f'-> f-> e-> d->\!
 		<c f>4-.\f <a c>-. <d f>-.\fz
 		<a c>-. <f' a>-.\fz <a, c>-.
 % Bars 36 to 40
@@ -92,7 +92,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 71 to 75
 		g'[-> b, g b] a'[-> b,
 		g b] b'[-> b, g b]
-		cis'->[ b, g b] d'->[ b,]
+		cis'->[ b, g b] \beamGap #4 d'->[ b,]
 		a'4-> r r
 		R2.
 % Bars 76 to 80
@@ -118,7 +118,7 @@ musicViolinIIMvtI = \relative c' {
 		fis8 r b4.(\< b'8)
 		b2.\>~
 		b4\! r r
-		<g,, e' c'>\f\arpeggio r r
+		<g,, e' c'>-\tweak extra-offset #'(0 . 0.6) \f\arpeggio r r
 % Bars 96 to 100
 		<g d' b'>\arpeggio r r
 		<g' c e>\arpeggio r r
@@ -261,7 +261,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 196 to 200
 	
 	
-	b,4.-\tweak X-offset #0.5 \pp( b8 b4~
+	b,4.-\tweak extra-offset #'(1 . 0.5) \pp( b8 b4~
 	b d fis!8 g
 	b4) r r
 % Bars 201 to 205

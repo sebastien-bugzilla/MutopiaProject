@@ -38,25 +38,25 @@ musicFloteIMvtI = \relative c'' {
 		
 		
 		
-		a!4\f-. f-. b-.\fz
-		f-. c'\fz-. f,-. 
+		\dynEO #'(0 . 1) a!4\f-. f-. \dynEO #'(0 . 1) b-.\fz
+		f-. \dynEO #'(0 . 1) c'\fz-. f,-. 
 % Bars 36 to 40
 		d'\fz-. g,-. e'-.\fz
 		f,8-. g-. aes-. aes-. g-. f-. 
-		a!4->-. \tweak extra-offset #'(0 . 0.5) \fz f-. b-.\fz
-		f-. c'-.\fz f,-.
-		d'-.\fz g,-. e'-.\fz
+		\dynEO #'(0 . 1) a!4->-.\fz f-. \dynEO #'(0 . 1) b-.\fz
+		f-. \dynEO #'(0 . 1) c'-.\fz f,-.
+		\dynEO #'(0 . 1) d'-.\fz g,-. \dynEO #'(0 . 1) e'-.\fz
 % Bars 41 to 45
-		g,-. e'-.\fz g,-.
-		e'-.\fz g,-. e'-.\fz
-		e2\ff e4~
+		g,-. \dynEO #'(0 . 1) e'-.\fz g,-.
+		\dynEO #'(0 . 1) e'-.\fz g,-. \dynEO #'(0 . 1) e'-.\fz
+		\dynEO #'(0 . 1) e2\ff e4~
 		e fis2
 		g2 gis4~
 % Bars 46 to 50
-		gis \hairpinShorten #'(0 . -8) a2~\<
+		gis \partCombineApart \stemDown a2~
 		a2.~
-		a\! \mark \default
-		\partCombineApart d,4 \once \partCombineAutomatic r a-.
+		a \mark \default
+		\stemUp d,4 \once \partCombineAutomatic r a-.
 		d2 \partCombineAutomatic r4
 % Bars 51 to 55
 		r r \partCombineApart a-.
@@ -102,7 +102,7 @@ musicFloteIMvtI = \relative c'' {
 		
 		\mark \default
 		R2.
-		\partCombineApart d,4(\p fis\< b
+		\partCombineApart d,4(\p\< fis b
 		a2.\!)~
 % Bars 111 to 115
 		a\>
@@ -137,11 +137,11 @@ musicFloteIMvtI = \relative c'' {
 % Bars 146 to 150
 		fis8) r r4 r
 		R2.
-		\partCombineApart r4 r cis'8-.\p dis-.
+		\partCombineApart r4 r cis'8-.-\offset X-offset -0.5 \p dis-.
 		b4 r cis8-. dis-.
 		b4_\crescmarkup r dis8-. e-.
 % Bars 151 to 155
-		b4 r e8-\tweak X-offset #-0.5 \f-. fis-.
+		b4 r e8-\offset X-offset -0.5 \f-. fis-.
 		dis4 r r \partCombineAutomatic
 		R2.*4
 % Bars 156 to 160
@@ -179,7 +179,7 @@ musicFloteIMvtI = \relative c'' {
 			a~
 % Bars 181 to 185
 			a~
-			a4.( fis8-\tweak extra-offset #'(0 . -3.3) ^\pp g a)
+			a4.( fis8-\tweak extra-offset #'(-1.5 . 8) _\pp g a)
 			e2.~
 			e~
 			e
@@ -307,11 +307,11 @@ musicFloteIMvtI = \relative c'' {
 % Bars 286 to 290
 	a~
 	a
-	aes~\fz
+	\dynEO #'(0 . 1) aes~\fz
 	aes~
 	aes
 % Bars 291 to 295
-	aes\fz~
+	\dynEO #'(0 . 1) aes\fz~
 	aes4 r r
 	R2.*14
 % Bars 296 to 300
@@ -396,7 +396,7 @@ musicFloteIMvtI = \relative c'' {
 	
 	
 	
-	\partCombineApart bes4_\f r r
+	\partCombineApart \dynEO #'(0 . 1) bes4_\f r r
 % Bars 381 to 385
 	bes r r
 	bes8_\<-. a-. g-. f-. e-. a-.\!
@@ -562,7 +562,7 @@ musicFloteIMvtI = \relative c'' {
 % Bars 536 to 540
 	
 	
-	\partCombineApart r4 cis4(\pp d8 e
+	\partCombineApart r4 cis4( -\offset X-offset -2 \pp d8 e
 	fis2.)~
 	fis~
 % Bars 541 to 545

@@ -28,7 +28,7 @@ musicOboeIIMvtI = \relative c' {
 		bes2 r4
 		R2.
 % Bars 16 to 20
-		r4 r a\mf
+		r4 r a-\offset X-offset 1.5 \mf
 		c2\< b4
 		c d c\!
 		c2(\f b4
@@ -99,7 +99,7 @@ musicOboeIIMvtI = \relative c' {
 	
 % Bars 81 to 85
 		r4 r eis'-.\p
-		fis-. r r
+		fis r r
 		R2.*4
 % Bars 86 to 90
 		
@@ -171,7 +171,7 @@ musicOboeIIMvtI = \relative c' {
 		fis8 dis e fis e4
 % Bars 146 to 150
 		fis8 dis e fis b, cis
-		dis\> fis, ais b dis, e\!
+		\beamOffset #'(0.3 . 0.3) dis-\tweak rotation #'(-3 0 1) \> fis, ais b dis, e\!
 		dis4\p r r
 		dis r r
 		e r r
@@ -389,7 +389,7 @@ musicOboeIIMvtI = \relative c' {
 	c d c\!
 	c2(\f b4
 	a b a)
-	g2.-\tweak extra-offset #'(0.5 . 0.5) \p\>~
+	g2.-\tweak extra-offset #'(0.5 . 1) \p -\tweak extra-offset #'(0 . 1) \>~
 	g\! \hairpinYoffset #0 #0
 % Bars 336 to 340
 	fis8\pp r r4 r
@@ -478,7 +478,7 @@ musicOboeIIMvtI = \relative c' {
 	a~
 % Bars 421 to 425
 	a~\<
-	a2\> ais4\!
+	<< { a2 ais4 } {s4\! s\> s\!}>>
 	b r r
 	R2.
 	r4 r gis(
@@ -490,7 +490,7 @@ musicOboeIIMvtI = \relative c' {
 	R2.
 % Bars 431 to 435
 	r4 gis8-.\mf a-. b4->
-	b8(\< cis d dis e d)
+	b8(\< cis d dis e d)\!
 	cis-.\f r r4 d(->
 	cis8) r r4 d(->
 	cis8) r r4 cis-.\<
@@ -498,7 +498,7 @@ musicOboeIIMvtI = \relative c' {
 	r e-. e-.\!
 	fis8 fis g a g4
 	fis8 fis g a g4
-	a8 fis g a d,\> e
+	a8 fis g a d,-\tweak rotation #'(-3 1 0) \> e
 	fis a, cis d fis, g\!
 % Bars 441 to 445
 	fis4\p r r

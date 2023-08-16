@@ -19,10 +19,10 @@ musicHornIIIMvtI = \relative c' {
 		d d4 d d8
 		d d4 d d8
 		d\< d4 d f8\!
-		g g4\f\> g8 g g
+		g g4\f\> g8 g g\!
 		g8_\p_\> g4 g g8
 % Bars 11 to 15
-		g g4_\pp g g8
+		g\! g4_\pp g g8
 		ees ees4 ees ees8
 		\partCombineAutomatic c' c4 c c8
 		c c4 c c8
@@ -285,7 +285,7 @@ musicHornIIIMvtI = \relative c' {
 	b\fz~
 	b~
 	b
-	bes~\fz
+	bes~-\tweak X-offset -1 \fz
 % Bars 286 to 290
 	bes~
 	bes

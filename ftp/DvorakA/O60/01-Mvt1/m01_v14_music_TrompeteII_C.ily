@@ -269,7 +269,7 @@ musicTrompeteIIMvtI = \relative c'' {
 	d2\ff d4\fz~
 	d d2\fz
 	d2\fz d4\fz~
-	d g,2\fz \mark \default
+	d g,2-\offset X-offset 0.5 \fz \mark \default
 	g4 r r
 % Bars 361 to 365
 	R2.*21

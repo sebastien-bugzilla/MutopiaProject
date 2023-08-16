@@ -19,8 +19,8 @@ musicHornIVMvtI = \relative c' {
 		\mmrPos #-8 R2.
 		\mmrPos #-8 R2.
 		\mmrPos #-8 R2.
-		\mmrPos #-8 R2.
-		\mmrPos #-8 R2.
+		\mmrPos #-6 R2.
+		\mmrPos #-6 R2.
 % Bars 11 to 15
 		\mmrPos #-8 R2.
 		\mmrPos #-8 R2.
@@ -41,17 +41,17 @@ musicHornIVMvtI = \relative c' {
 		
 		
 		
-		aes8\f r aes2\fz~
+		aes8\f r aes2-\offset X-offset 0.5 \fz~
 		aes2.~
 % Bars 36 to 40
 		aes2 aes4
 		bes ees, r
-		aes8 r aes2\fz~
+		aes8 r aes2-\offset X-offset 0.5 \fz~
 		aes2.~
 		aes8 r aes2
 % Bars 41 to 45
-		g2\fz g4~\fz
-		g g2\fz
+		g2-\offset X-offset 0.5 \fz g4~-\offset X-offset 0.7 \fz
+		g g2-\offset X-offset 0.5 \fz
 		fis2\ff fis4~
 		fis fis2
 		f! e4~
@@ -285,7 +285,7 @@ musicHornIVMvtI = \relative c' {
 	b\fz~
 	b~
 	b
-	bes~\fz
+	bes~-\tweak X-offset -1 \fz
 % Bars 286 to 290
 	bes~
 	bes

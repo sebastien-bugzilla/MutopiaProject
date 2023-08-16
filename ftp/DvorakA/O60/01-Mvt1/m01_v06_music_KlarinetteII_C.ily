@@ -19,7 +19,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		r r c
 		c4. c8\< c4
 		c2( c4)\!
-		d2.\f\>(
+		<<d2.\f( {s4\> s s8 s\!}>>
 		bes2\p) r4
 % Bars 11 to 15
 		R2.*10
@@ -96,7 +96,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		R2.*6
 % Bars 86 to 90
 		
-		cis,4\pp r r
+		cis,4-\tweak X-offset #0.3 \pp r r
 		cis r r
 		R2.*6
 % Bars 91 to 95
@@ -112,7 +112,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		d2\fz( c8 bes)
 		a4 r8 c d e
 % Bars 101 to 105
-		a,2(\fz bes8 b)
+		a,2(-\tweak X-offset #0.5 \fz bes8 b)
 		a8-. r r4 r
 		R2.*4
 % Bars 106 to 110
@@ -134,7 +134,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 126 to 130
 		
 		
-		fis4--\p\< d'-- d--
+		fis4--\p-\tweak extra-offset #'(0 . 1) \< d'-- d--
 		d--\! d--\> cis--\!
 		b-\tweak X-offset #-2 \pp r r 
 % Bars 131 to 135
@@ -153,7 +153,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		a8 fis g a g4
 % Bars 146 to 150
 		a8 fis g a d, e
-		fis\> a, cis d fis, g\!
+		\beamOffset #'(0.5 . 0.5) fis-\tweak rotation #'(-3 1 0) \> a, cis d fis, g\!
 		fis4\p r r
 		fis r r
 		g r r
@@ -188,7 +188,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	}
 	\alternative {
 		{
-			r4 a-\tweak X-offset #-1 \p\< a
+			r4 a-\tweak X-offset #-1 \p -\tweak rotation #'(2 -1 0) -\tweak extra-offset #'(0 . 0.5) \< a
 			d d d\!
 			f2._\fpdimD~
 			f~
@@ -375,7 +375,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	c d c\!
 	c2(\f bes4
 	a bes a)
-	bes\p\> f' e!
+	bes -\offset X-offset 1 \p\> f' e!
 	d e d\!
 % Bars 336 to 340
 	cis8\pp r r4 r
@@ -422,10 +422,10 @@ musicKlarinetteIIMvtI = \relative c'' {
 	des\f r r
 % Bars 381 to 385
 	des r r 
-	des8\< c bes aes g c\!
+	\beamOffset #'(0.5 . 0.5) des8\< c bes aes g c\!
 	f, r r4 r
 	R2.
-	r4 f4.\f\< f'8\!
+	r4 f4.\f-\tweak rotation #'(4 -1 0) \< f'8\!
 % Bars 386 to 390
 	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f2( e4
 	f4) r r
@@ -495,7 +495,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 451 to 455
 	des-. ees-. des2
 	R2.
-	f8[-.\f\< g-.] f( e f e)
+	f8[-.\f\< g-.] f( e f e)\!
 	f2\ff( g4)
 	f2( c4)
 % Bars 456 to 460

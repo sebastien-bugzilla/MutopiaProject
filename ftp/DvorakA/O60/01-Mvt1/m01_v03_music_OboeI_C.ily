@@ -34,7 +34,7 @@ musicOboeIMvtI = \relative c'' {
 		a2(\f g!4
 		fis_\dimmarkup g fis)
 % Bars 21 to 25
-		\stemUp e( fis e
+		\stemUp \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur e( fis e
 		d e d
 		cis8) r r4 r
 		R2.*3
@@ -99,7 +99,7 @@ musicOboeIMvtI = \relative c'' {
 	
 % Bars 81 to 85
 		\partCombineApart g4-. g-. gis-.
-		ais-. \partCombineAutomatic r r
+		ais \partCombineAutomatic r r
 		R2.*4
 % Bars 86 to 90
 		
@@ -179,7 +179,7 @@ musicOboeIMvtI = \relative c'' {
 		fis r r
 		g_\crescmarkup r r
 % Bars 151 to 155
-		\once \partCombineApart a r \partCombineApart e'8-.\f fis-.
+		\once \partCombineApart a r \partCombineApart e'8-.-\offset X-offset -0.5 \f fis-.
 		dis4 r r \partCombineAutomatic
 		R2.*2
 		
@@ -456,7 +456,7 @@ musicOboeIMvtI = \relative c'' {
 	bes\f r r
 % Bars 381 to 385
 	bes r r 
-	bes8\<-. a-. g-. f-. e-. a-.\!
+	\beamOffset #'(0.8 . 0.8) bes8\<-. a-. g-. f-. e-. a-.\!
 	d, r \partCombineApart d,4.( d'8)
 	d2->( cis4
 	d8) \partCombineAutomatic r r4 r
@@ -492,7 +492,7 @@ musicOboeIMvtI = \relative c'' {
 	b4(_\< c d
 % Bars 411 to 415
 	ees f fis
-	g\! gis_\> a)
+	g\! gis_\> a)\!
 	d2(_\p cis4)
 	a8( fis) g-. a-. e4
 	d8( fis a4) g--
@@ -516,7 +516,7 @@ musicOboeIMvtI = \relative c'' {
 	R2.
 % Bars 431 to 435
 	r4 e8-.\mf fis-. gis4->
-	gis8(\< a b bis cis b)
+	gis8(\< a b bis cis b)\!
 	a-.\f r r4 g!(->
 	a8) r r4 g(->
 	a8) r r4 e-.\<

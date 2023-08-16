@@ -296,6 +296,40 @@ noteShift = #(define-music-function
 	#}
 )
 
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = #1
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+beamGap = #(define-music-function
+	(gap)
+	(number?)
+	#{
+		\once \override Beam.auto-knee-gap = #gap
+	#}
+)
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+stemOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \offset length #offset Stem
+	#}
+)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -325,23 +359,6 @@ noteShift = #(define-music-function
 %		\once \override Voice.Arpeggio.padding = #padding
 %	#}
 %)
-
-%beamOffset = #(define-music-function
-%	(position)
-%	(pair?)
-%	#{
-%		\once \offset positions #position Beam
-%	#}
-%)
-
-%beamGap = #(define-music-function
-%	(gap)
-%	(number?)
-%	#{
-%		\once \override Beam.auto-knee-gap = #gap
-%	#}
-%)
-
 
 %beamLeftTwoRightOne = {
 %	\set stemLeftBeamCount = #2
@@ -382,16 +399,6 @@ noteShift = #(define-music-function
 %	(number?)
 %	#{
 %		\once \override DynamicTextSpanner.bound-details.right.Y = #offset
-%	#}
-%)
-
-%dynEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override DynamicText.extra-offset = #offset
-%		\once \override DynamicText.whiteout = ##t
-%		\once \override DynamicText.whiteout-style = #'outline
 %	#}
 %)
 
@@ -530,14 +537,6 @@ noteShift = #(define-music-function
 %	\revert TupletNumber.avoid-slur
 %}
 
-
-%stemOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \offset length #offset Stem
-%	#}
-%)
 
 %textInSlur = {
 %	%\once \override TextScript.outside-staff-priority = 0

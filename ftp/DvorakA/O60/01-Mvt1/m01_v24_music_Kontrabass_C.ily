@@ -66,7 +66,7 @@ musicKontrabassMvtI = \relative c {
 % Bars 46 to 50
 		gis \clef bass g,!8\<-. a-. cis-. e-.
 		a-. cis-. e-. g-. e-. cis-. 
-		a-. g-. e-. cis-. a-. a'-. \mark \default
+		a-. g-. e-. cis-. a-. a'-.\! \mark \default
 		d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r a-.
 % Bars 51 to 55
@@ -151,7 +151,7 @@ musicKontrabassMvtI = \relative c {
 		r fis fis
 		f r r
 		r r f'\<
-		e\> cis! fis!
+		e\! cis!\> fis!\!
 		b,\pp r r
 % Bars 121 to 125
 		r b b
@@ -410,8 +410,8 @@ musicKontrabassMvtI = \relative c {
 	e2) r4
 	r r a,(
 	e'2\< dis4)
-	e2( g4~\>
-	g) fis( d~\fp
+	e2( g4~\!
+	g)\> fis(\! d~\fp
 % Bars 331 to 335
 	d2.)\<
 	g,(\f
@@ -529,7 +529,7 @@ musicKontrabassMvtI = \relative c {
 % Bars 426 to 430
 	b r b\!
 	b r\> b
-	b r b
+	b r b\!
 	b'8-.\p-\tweak extra-offset #'(-1.3 . -1.5) ^\arco d!-. fis4-.\< e-.
 	d8-. cis-. b4-> b8-. a-.
 % Bars 431 to 435

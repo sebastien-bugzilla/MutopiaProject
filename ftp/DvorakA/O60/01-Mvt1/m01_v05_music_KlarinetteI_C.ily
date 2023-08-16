@@ -20,7 +20,7 @@ musicKlarinetteIMvtI = \relative c'' {
 		c4. c8 c4
 		c2( f4)
 		fis2( g8 a)
-		d,2 r4 \partCombineAutomatic
+		d,2 \partCombineAutomatic r4
 % Bars 11 to 15
 		R2.*10
 % Bars 16 to 20
@@ -67,10 +67,10 @@ musicKlarinetteIMvtI = \relative c'' {
 		bes2.
 		bes2( a8 g)
 		f2.
-		f2 \stemDown \omitBeam bes,8( c
+		f2 \stemDown \omitBeam \shape #'((0 . -2)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur bes,8( c
 % Bars 61 to 65
-		\stemUp f4 d) \stemDown \omitBeam bes8( c
-		\stemUp f4 d) \stemDown \omitBeam bes8( c
+		\stemUp f4 d) \stemDown \omitBeam \shape #'((0 . -2)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur bes8( c
+		\stemUp f4 d) \stemDown \omitBeam \shape #'((0 . -2)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur bes8( c
 		\stemUp f4 d) \stemNeutral bes8( c
 		f4-.) r r
 		R2.*4
@@ -96,7 +96,7 @@ musicKlarinetteIMvtI = \relative c'' {
 		R2.*6
 % Bars 86 to 90
 		
-		e,4\pp r r
+		e,4-\tweak X-offset #0.3 \pp r r
 		e r r
 		R2.*6
 % Bars 91 to 95
@@ -112,7 +112,7 @@ musicKlarinetteIMvtI = \relative c'' {
 		bes2\fz( a8 g)
 		f4 r8 \partCombineApart c-. d-. e-.
 % Bars 101 to 105
-		\partCombineAutomatic f2(\fz e8 d)
+		\partCombineAutomatic f2(-\tweak X-offset #0.5 \fz e8 d)
 		cis8-. r r4 r
 		R2.*4
 % Bars 106 to 110
@@ -154,10 +154,10 @@ musicKlarinetteIMvtI = \relative c'' {
 		cis8) r r4 e-.
 		r g-. g-.
 		\partCombineApart fis8-. fis( g a) g4->(
-		a8-.) fis( g a) g4->(
+		\beamOffset #'(-0.5 . -0.5) a8-.) fis( g a) g4->(
 % Bars 146 to 150
-		a8-.) fis( g a d, e
-		fis a, cis d fis, g) \partCombineAutomatic
+		\beamOffset #'(-0.5 . -1) a8-.) fis( g a d, e
+		\beamOffset #'(-0.5 . -0.5) fis a, cis d fis, g) \partCombineAutomatic
 		a4\p r r
 		a r r
 		bes_\crescmarkup r r
@@ -192,7 +192,7 @@ musicKlarinetteIMvtI = \relative c'' {
 	}
 	\alternative {
 		{
-			r4 \partCombineChords d-\tweak X-offset #-1 \p\< d
+			r4 \partCombineChords d-\tweak X-offset #-1 \p-\tweak rotation #'(2 -1 0) -\tweak extra-offset #'(0 . 0.5) \< d
 			f f f\!
 			\partCombineApart a2.~
 			a~
@@ -277,10 +277,10 @@ musicKlarinetteIMvtI = \relative c'' {
 	
 	
 	r4 d!(\< c8 b)
-	c4\f r r
+	\dynEO #'(0 . 1.5) c4\f r r
 	R2.
 % Bars 241 to 245
-	c,4->\f r r
+	\dynEO #'(1 . 1) c,4->\f r r
 	b-> r d->
 	c-> r r
 	R2.*5
@@ -366,7 +366,7 @@ musicKlarinetteIMvtI = \relative c'' {
 	c4. c8 c4
 % Bars 321 to 325
 	c4( e f)
-	fis2( g8 a)
+	\shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur fis2( \beamOffset #'(-0.3 . -0.3) g8 a)
 	d,2 \partCombineAutomatic r4 \hairpinYoffset #0 #0
 	R2.*5
 % Bars 326 to 330
@@ -387,7 +387,7 @@ musicKlarinetteIMvtI = \relative c'' {
 % Bars 341 to 345
 	
 % Bars 346 to 350
-	\stemUp aes,8_\fsempre-.[ bes-. ces-. ces-. bes-. aes-.]
+	\stemUp aes,8-\offset X-offset #-2 _\fsempre-.[ bes-. ces-. ces-. bes-. aes-.]
 	c!4\fz-. aes-. d-.\fz
 	aes-. ees'\fz-. aes,-.
 	f'-.-\tweak extra-offset #'(1 . 1) \fz \once \partCombineApart bes,-. g'-.-\tweak extra-offset #'(1 . 1) \fz
@@ -461,7 +461,7 @@ musicKlarinetteIMvtI = \relative c'' {
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	c8\pp\< c f4 f8 f
+	\stemUp c8\pp\< c \stemNeutral f4 f8 f
 	a4\! a(\> g)\!
 	fis2(-\tweak extra-offset #'(-0.3 . -1) \p g4
 	a2.)~
@@ -499,7 +499,7 @@ musicKlarinetteIMvtI = \relative c'' {
 % Bars 451 to 455
 	f-. ges-. f2
 	R2.
-	aes8[-.\f\< bes-.] aes( g aes g)
+	aes8[-.\f\< bes-.] aes( g aes g)\!
 	a!2\ff( bes4)
 	a2( g4)
 % Bars 456 to 460

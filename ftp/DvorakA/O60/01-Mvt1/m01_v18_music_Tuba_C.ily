@@ -48,10 +48,10 @@ musicTubaMvtI = \relative c {
 		c2-^( b8 a)
 		g2 r4
 % Bars 61 to 65
-		\mmrPos #-8 R2.
-		\mmrPos #-8 R2.
-		\mmrPos #-8 R2.
-		\mmrPos #-8 R2.
+		\mmrPos #-7 R2.
+		\mmrPos #-7 R2.
+		\mmrPos #-7 R2.
+		\mmrPos #-7 R2.
 		R2.*43
 % Bars 66 to 70
 	

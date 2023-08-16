@@ -31,7 +31,7 @@ musicHornIMvtI = \relative c'' {
 		g g4 g\! g8
 		c,\< c4 c c8\!
 		c2.~
-		<< c {s2\< s8 s\!} >>
+		<< c {\hairpinShorten #'(2 . 0) s2\< s8 s\!} >>
 		\partCombineApart cis4.\!->(_\dimmarkup d8 b cis)
 % Bars 21 to 25
 		d4_\p_\>( a2)~
@@ -166,7 +166,7 @@ musicHornIMvtI = \relative c'' {
 		e4 r a,8-. c!-.
 		e4 r a,8-. c-.
 % Bars 171 to 175
-		e2.\fp~
+		e2.-\offset X-offset -1 \fp~
 		e~
 		e4 r r
 		R2.*3

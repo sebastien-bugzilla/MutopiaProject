@@ -7,7 +7,7 @@
 #(set-global-staff-size 13) % 13
 \layout {
 	#(layout-set-staff-size 13) % 13
-	\set Score.alternativeNumberingStyle = #'numbers
+	\set Score.alternativeNumberingStyle = #'numbers % numbers
 	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 	\set Staff.soloText = #"1."
 	\set Staff.soloIIText = #"2."
@@ -17,10 +17,11 @@
 		\Score
 		\override RehearsalMark.font-size = #8
 		\override RehearsalMark.extra-spacing-width = #'(-0.2 . 0.2)
-		\override RehearsalMark.extra-spacing-height = #'(-inf.0 . +inf.0)
+		\override RehearsalMark.extra-spacing-height = #'(-10 . +10)
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override BarNumber.font-size = #2
 		\accidentalStyle modern-voice
+		\override MetronomeMark.font-size = #+2
 	}
 	\context {
 		\StaffGroup

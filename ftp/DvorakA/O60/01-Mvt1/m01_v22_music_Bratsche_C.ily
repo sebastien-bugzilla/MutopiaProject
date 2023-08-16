@@ -81,7 +81,7 @@ musicBratscheMvtI = \relative c {
 % Bars 31 to 35
 		<a c>8 r \repeat tremolo 4 {fis16(\fz a)}
 		<b d>8 r \repeat tremolo 4 {g16(\fz b)}
-		<d f>8 r \repeat tremolo 4 {b16(\< d)}
+		<d f>8 r \repeat tremolo 4 {\hairpinShorten #'(0 . -2.5) b16(\< d\!)}
 		<d f>8\f r q2:16->
 		q2.:
 % Bars 36 to 40
@@ -179,7 +179,7 @@ musicBratscheMvtI = \relative c {
 		g8 r \tuplet 3/2 4 {g(\fz a g)} d-. e-.
 		<d fis>-. <e g>-. <fis a>4 r
 % Bars 101 to 105
-		r \tuplet 3/2 4 {d8 \tweak X-offset #-1 \fz( e d)} g,-. gis-.
+		r \tuplet 3/2 4 {d8 \tweak X-offset #-2 \fz( e d)} g,-. gis-.
 		<ais cis>-.\f r r4 r
 		cis8-.\f r r4 r
 		<cis, fis>8-.\p r r4 r
@@ -200,7 +200,7 @@ musicBratscheMvtI = \relative c {
 		fis
 		f~ \tweak extra-offset #'(0 . 0.8) \<
 		f
-		e4(\> cis fis!)
+		e4(\! cis\> fis!)\!
 		b2 \tweak X-offset #-1.7 \pp( cis4
 % Bars 121 to 125
 		dis2 e4)
@@ -332,7 +332,7 @@ musicBratscheMvtI = \relative c {
 		gis2: fis8: eis:
 		eis2: gis4:
 	}>>
-	fis: a: c:
+	fis: a: \once \stemUp c:
 % Bars 231 to 235
 	fis,: g!: a:
 	<a c>2: <g! b>8: <fis a>:
@@ -378,11 +378,11 @@ musicBratscheMvtI = \relative c {
 		a:\pp
 		a:
 		a:
-		<< e: {s8\< s s s\> s s\!} >> 
+		<< e: {\hairpinShorten #'(1.3 . 0) s8\< s s s\> s s\!} >> 
 		a2.:32
 		a:
 		a:
-		<< ais: {s8\< s4 s s8\!} >>
+		<< ais: {\hairpinShorten #'(0 . -4) s8\< s4 s s8\!} >>
 	}>> \mark \default
 	b4\f r r 
 % Bars 266 to 270
@@ -570,7 +570,7 @@ musicBratscheMvtI = \relative c {
 	gis~\<
 % Bars 411 to 415
 	gis
-	g!4(\> e a)
+	g!4(\! e\> a)\!
 	d2(\pp e4
 	fis2 g8 a
 	fis2 b4

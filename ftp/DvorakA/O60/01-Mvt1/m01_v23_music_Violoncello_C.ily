@@ -34,7 +34,7 @@ musicVioloncelloMvtI = \relative c {
 		d2.\f
 		dis4.->_\dimmarkup( e8 cis dis)
 % Bars 21 to 25
-		e4\p( b2)\>~
+		e4\p\>( b2)~
 		b2.(
 		fis8)\pp r r4 r
 		b2.\fz
@@ -66,7 +66,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 46 to 50
 		gis \clef bass g,!8\<-. a-. cis-. e-.
 		a-. cis-. e-. g-. e-. cis-. 
-		a-. g-. e-. cis-. a-. a'-. \mark \default
+		a-. g-. e-. cis-. a-. a'-.\! \mark \default
 		d,4-\tweak X-offset #-1 _\ffgrandiosoD  r r
 		r r a-.
 % Bars 51 to 55
@@ -85,7 +85,7 @@ musicVioloncelloMvtI = \relative c {
 		b8-. a-. g4 c\fz
 		b8-. a-. g4 c\fz
 		b8-. a-. g4 c\fz
-		b8-. a-. g4 g'' \tweak extra-offset #'(-1.5 . 1.5) \ff-^~
+		b8-. a-. g4 \dynEO #'(-1.5 . 1.5) g''\ff-^~
 		g4. fis8-. e-. d-.
 % Bars 66 to 70
 		g-> fis e d e-> d
@@ -152,7 +152,7 @@ musicVioloncelloMvtI = \relative c {
 			ais( b cis)
 			d4.( c8 b4)
 			a( b a)
-			gis( b ais)
+			\shape #'((0 . -0.3)(0 . -0.6)(0 . -0.6)(0 . -0.3)) Slur gis( b ais)
 			b
 		} \\ {
 			fis4(_\pespressD\< cis'2)
@@ -168,7 +168,7 @@ musicVioloncelloMvtI = \relative c {
 			cis( d e)
 			f2.~\<
 			f
-			e4(\> cis fis!)
+			e4(\! cis\> fis!)\!
 			b,\pp
 		}>> r r
 % Bars 121 to 125
@@ -442,8 +442,8 @@ musicVioloncelloMvtI = \relative c {
 	e2) r4
 	r r a,(
 	e'2\< dis4)
-	e2( g4~\>
-	g) fis4.(\< d'8)
+	e2( g4~\!
+	g)\> fis4.(\< d'8)
 % Bars 331 to 335
 	\shape #'((0 . 0)(0 . -0.8)(0 . -0.8)(0 . 0)) Slur fis2.\fz(~
 	fis4 d g)
@@ -511,7 +511,7 @@ musicVioloncelloMvtI = \relative c {
 	c( b) b( bes) a( g)
 	fis4 r8 d'\<-. e-. fis-. 
 % Bars 386 to 390
-	g2-\tweak X-offset #-2 \fz( fis8 e)
+	\dynEO #'(0 . 1) g2\fz( fis8 e)
 	d4 r r
 	\tuplet 3/2 4 {g,,8(\f\< a g} g'2->\!)
 	\tuplet 3/2 4 {bes,8(\< c bes} bes'2->\!)
@@ -547,7 +547,7 @@ musicVioloncelloMvtI = \relative c {
 	} \\ {
 		gis,2.\<~
 		gis
-		\shape #'((0 . 0.5)(0 . 1)(0 . 1)(0 . 0.5)) Slur g!4(\> e a
+		\shape #'((0 . 0.5)(0 . 1)(0 . 1)(0 . 0.5)) Slur g!4(\! e\> a\!
 		d,)\pp
 	}>> r r
 	r \clef bass d^\pizz d
@@ -563,11 +563,11 @@ musicVioloncelloMvtI = \relative c {
 	r d'^\pizz fis
 	dis8-\tweak X-offset #-2.3 ^\arco(\pp fis b dis fis e
 	dis b cis dis gis, ais)
-	b(\< fis dis fis) b,4~
+	\hairpinShorten #'(0 . 4.5) b(\< fis dis fis) b,4~
 % Bars 426 to 430
 	b2.~
-	b\!\>~
-	b
+	\hairpinShorten #'(5.5 . 0) b\!\>~
+	<<b {s4 s s\!} >>
 	b'8-.-\tweak extra-offset #'(0 . 0.5) \p d!-. fis4-.\< e-.
 	d8-. cis-. b4-> b8-. a-.
 % Bars 431 to 435

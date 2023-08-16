@@ -19,7 +19,7 @@ musicFloteIIMvtI = \relative c' {
 		r r fis(
 		fis4.) fis8\< fis4
 		fis( a d)\!
-		fis2\f\> e8 dis
+		fis2\f\> e8 dis\!
 		e2\p r4
 % Bars 11 to 15
 		r r8 g-.\p g( fis)
@@ -28,7 +28,7 @@ musicFloteIIMvtI = \relative c' {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-		\partCombineApart r4 d(\p\> cis
+		\partCombineApart r4 \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur d(-\tweak extra-offset #'(0 . 0.5) \p\> cis
 		b cis b 
 		ais8)\pp r r4 r \partCombineAutomatic
 		R2.*10
@@ -55,8 +55,8 @@ musicFloteIIMvtI = \relative c' {
 % Bars 46 to 50
 		cis cis2~\<
 		cis2.~
-		cis\! \mark \default
-		d4_\ffgrandioso r a
+		cis \mark \default
+		d4-\tweak X-offset #-1 _\ffgrandiosoD r a
 		d2 r4
 % Bars 51 to 55
 		r r a
