@@ -10,7 +10,7 @@ musicTrompeteIIMvtIII = \relative c' {
 	\transposition d
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -47,7 +47,7 @@ musicTrompeteIIMvtIII = \relative c' {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-		r4 g'-.\f\< g-.
+		r4 g'-.-\tweak X-offset #-1 \f\< g-.\!
 		g2->\ff c4-.
 		bes-. g2->
 		R2.*74
@@ -131,9 +131,9 @@ musicTrompeteIIMvtIII = \relative c' {
 	c
 % Bars 151 to 155
 	c
-	c \bar "||" \key c \major
+	c \section \key c \major
 	\repeat volta 2 {
-		R2.*48
+		\trio R2.*48
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -178,7 +178,7 @@ musicTrompeteIIMvtIII = \relative c' {
 	r4 c\pp c
 	r c\< c
 	r c c
-	r c\! c
+	r c c\!
 	r c\mf c
 % Bars 261 to 265
 	r c c
@@ -198,7 +198,7 @@ musicTrompeteIIMvtIII = \relative c' {
 	
 % Bars 286 to 290
 	
-	\bar "||" \key a \minor
+	\section \key a \minor
 	c2->\f c4~->
 	c c2->
 	r4 c-. c-.
@@ -221,7 +221,7 @@ musicTrompeteIIMvtIII = \relative c' {
 	g-. g-. g-.
 	c-. c,-. c-.
 % Bars 306 to 310
-	c r r \bar "||"
+	c r r \section
 	R2.*17
 % Bars 311 to 315
 	
@@ -231,8 +231,8 @@ musicTrompeteIIMvtIII = \relative c' {
 	
 	
 	
-	r4 g'\f\< g
-	g2\ff c4
+	r4 g'-\offset X-offset -2 \f\< g\!
+	g2 -\offset X-offset 0.5 \ff c4
 % Bars 326 to 330
 	bes4 g2
 	R2.*74

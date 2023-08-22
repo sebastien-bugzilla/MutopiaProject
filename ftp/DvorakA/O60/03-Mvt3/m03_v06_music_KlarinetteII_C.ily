@@ -10,7 +10,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -42,13 +42,13 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		aes4(\p c) aes(
 		c) aes c
 % Bars 26 to 30
-		ees-. bes8(\< a bes c\!
-		des\> c ees des c bes)\!
+		ees-. \beamOffset #'(0.5 . 0.5) \shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur bes8(\< a bes c\!
+		\beamOffset #'(0.5 . 0.5) des c\> ees des c bes)\!
 		aes!4( c) aes(
 		c) aes c
 		ees-. bes8(\< a bes c\!
 % Bars 31 to 35
-		des\> c ees des c bes)\!
+		des c\> ees des c bes)\!
 		f4( aes) f(
 		aes) \once \stemUp f aes
 		c-. g8(\< fis g aes\!
@@ -101,7 +101,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		
 		
 		
-		f,2\p bes4~
+		f,2-\offset X-offset 0.8 \p bes4~
 % Bars 81 to 85
 		bes c des
 		aes2-> ges4->~
@@ -158,7 +158,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 126 to 130
 		dis( e) dis(
 		e) dis( e)
-		c2-\tweak extra-offset #'(0.8 . 0.8) \ff  c4~
+		\dynEO #'(0.8 . 1) c2\ff  c4~
 		c c2
 		c2  c4~
 % Bars 131 to 135
@@ -195,9 +195,9 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	c
 % Bars 151 to 155
 	c
-	c \bar "||" \key f \major
+	c \section \key f \major
 	\repeat volta 2 {
-		a
+		\trio a
 		R2.
 		a\p
 % Bars 156 to 160
@@ -326,7 +326,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	
 % Bars 286 to 290
 	
-	\bar "||" \key f \minor
+	\section \key f \minor
 	c2\f c4~
 	c c2
 	ees!4-.\fz c-. c-.
@@ -349,11 +349,11 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	c4-. c8 b c4
 	f-. f,8 e f4
 % Bars 306 to 310
-	f r r \bar "||"
+	f r r \section
 	aes(\p c) aes(
 	c) aes( c)
 	ees-.\< \once \override Beam.positions = #'(-2.5 . -2.5) \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur bes8( a bes c\!
-	\once \override Beam.positions = #'(-2.5 . -2.5) des\> c ees des c bes)\!
+	\once \override Beam.positions = #'(-2.5 . -2.5) des c\> ees des c bes)\!
 % Bars 311 to 315
 	aes!4(\! c) aes(
 	c) aes( c)
@@ -404,7 +404,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	
 	
 	
-	ees,2\p ees4~
+	ees,2-\offset X-offset #0.7 \p ees4~
 % Bars 356 to 360
 	ees aes g
 	bes2 aes4~
@@ -413,7 +413,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 361 to 365
 	
 	
-	f,2\p bes4~
+	f,2-\offset X-offset 0.5 \p bes4~
 	bes c des
 	aes2 ges4~
 % Bars 366 to 370

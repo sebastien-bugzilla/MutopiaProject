@@ -94,6 +94,7 @@ tempiMvtIII = {
 	}
 	s2.*6
 	\repeat volta 2 {
+		\once \override Score.MetronomeMark.break-align-symbols = #'(key-signature)
 		\tempo \markup {  % bar 153
 			\concat {
 				"Poco meno mosso. (M.M. "

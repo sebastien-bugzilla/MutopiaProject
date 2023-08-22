@@ -10,7 +10,7 @@ musicHornIIIMvtIII = \relative c'' {
 	\transposition d
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -156,9 +156,9 @@ musicHornIIIMvtIII = \relative c'' {
 	c_\dimmarkup
 % Bars 151 to 155
 	c
-	c \bar "||" \key c \major
+	c \section \key c \major
 	\repeat volta 2 {
-		R2.*2
+		\trio R2.*2
 		
 		\partCombineApart c2.~\p
 % Bars 156 to 160
@@ -170,7 +170,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 161 to 165
 		c~
 		c\pp
-		c->\p \partCombineAutomatic
+		c->_\p \partCombineAutomatic
 		R2.
 		\partCombineApart c2.~\p
 % Bars 166 to 170
@@ -242,8 +242,8 @@ musicHornIIIMvtIII = \relative c'' {
 	c2.\p~
 	c~-\tweak extra-offset #'(0 . 0.4) \<
 	c~
-	c~
-	c~\mf
+	<<c~ {s4 s s\!} >>
+	c2.~\mf
 % Bars 261 to 265
 	c~
 	c~
@@ -267,7 +267,7 @@ musicHornIIIMvtIII = \relative c'' {
 	c~_\crescmarkup
 % Bars 286 to 290
 	c~
-	c \clef treble \bar "||" \key a \minor
+	c \clef treble \section \key a \minor
 	g''2->\f g4->~
 	g g2->
 	r4 c-. c-.
@@ -287,7 +287,7 @@ musicHornIIIMvtIII = \relative c'' {
 	g-. g-. g-.
 	c-. c-. c-.
 % Bars 306 to 310
-	c r r \bar "||"
+	c r r \section
 	R2.*17
 % Bars 311 to 315
 	
@@ -339,7 +339,7 @@ musicHornIIIMvtIII = \relative c'' {
 	
 	
 	
-	\partCombineApart g,2\p g4~
+	\partCombineApart g,2_\p g4~
 	g aes2 \partCombineAutomatic
 % Bars 371 to 375
 	R2.*2

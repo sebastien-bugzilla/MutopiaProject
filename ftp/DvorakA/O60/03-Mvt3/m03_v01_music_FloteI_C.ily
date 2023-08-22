@@ -10,11 +10,11 @@ musicFloteIMvtIII = \relative c''' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
-		cis4(\f-> d8) r cis4(->
+		\aIIXoffset -5 cis4(\f-> d8) r cis4(->
 % Bars 6 to 10
 		d8) r cis4(-> d8) r
 		e4-.\fz d8( cis d4)
@@ -22,8 +22,8 @@ musicFloteIMvtIII = \relative c''' {
 		gis,(-> a8) r gis4(->
 		a8) r gis4(-> a8) r
 % Bars 11 to 15
-		bes!4-.\fz a8( gis a4)
-		bes-.\fz a8( gis a4)
+		\dynEO #'(0 . 1) bes!4-.\fz a8( gis a4)
+		\dynEO #'(0 . 1) bes-.\fz a8( gis a4)
 		R2.*11
 % Bars 16 to 20
 	
@@ -51,7 +51,7 @@ musicFloteIMvtIII = \relative c''' {
 		R2.*2
 		
 % Bars 46 to 50
-		\partCombineApart c2.\p~
+		\partCombineApart c2.-\offset X-offset -0.5 \p~
 		c \partCombineAutomatic
 		R2.*2
 		
@@ -104,7 +104,7 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 116 to 120
 		f-. ees8( d ees4) 
 		f-. ees8( d ees4)
-		f!-. e!8(_\semprecresc dis e4)
+		f!-._\semprecresc e!8( dis e4)
 		fis-. e8( dis e4)
 		fis-. e8( dis e4)
 % Bars 121 to 125
@@ -114,9 +114,9 @@ musicFloteIMvtIII = \relative c''' {
 		c!( des) c(
 		des) c( des)
 % Bars 126 to 130
-		\partCombineAutomatic c( des) c(
+		\partCombineAutomatic \aIIXoffset #-3 c( des) c(
 		des) c( cis)
-		cis(-\tweak extra-offset #'(0 . 0.5) _\ffgrandioso d) cis(
+		\markEO #'(0 . 1) cis(_\ffgrandioso d) cis(
 		d) cis( d)
 		e-. d8( cis d4)
 % Bars 131 to 135
@@ -142,7 +142,7 @@ musicFloteIMvtIII = \relative c''' {
 	R2.*6
 % Bars 151 to 155
 	
-	\bar "||" \key d \major
+	\section \key d \major
 	\repeat volta 2 {
 		\trio R2.*3
 % Bars 156 to 160
@@ -224,7 +224,7 @@ musicFloteIMvtIII = \relative c''' {
 	
 	
 	
-	fis,4(\p b d
+	\shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur fis,4(\p b d
 	fis b d~
 % Bars 231 to 235
 	d2 cis4
@@ -253,16 +253,16 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	a'4(\p d, fis
+	\shape #'((0 . -1.5)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur a'4(\p d, fis
 	a\< d fis~
 	fis e d~
 	d cis b)\!
-	a(\mf d, fis~
+	\shape #'((0 . -0.5)(0 . 0.2)(0 . 0.2)(0 . -0.5)) Slur a(\mf d, fis~
 % Bars 261 to 265
 	fis a d~
 	d cis b~
 	b a g)
-	fis( a d
+	\shape #'((0 . -1.5)(0 . 0.5)(0 . 0.5)(0 . -1.5)) Slur fis( a d
 	c2._\dimmarkup
 % Bars 266 to 270
 	b4 a g
@@ -290,8 +290,8 @@ musicFloteIMvtIII = \relative c''' {
 	d( e8 cis d4)
 % Bars 286 to 290
 	d( e8 cis d4)
-	d( e8 cis d4) \bar "||" \key d \minor
-	cis'4(\f-> d8) r cis4(->
+	d( e8 cis d4) \section \key d \minor
+	\aIIXoffset #-5 cis'4(\f-> d8) r cis4(->
 	d8) r cis4(-> d8) r
 	e4-.\f d8( cis d4)
 % Bars 291 to 295
@@ -305,7 +305,7 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 301 to 305
 	
 % Bars 306 to 310
-	\bar "||"
+	\section
 	R2.*16
 % Bars 311 to 315
 	
@@ -363,7 +363,7 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 391 to 395
 	
 	
-	\partCombineApart r4 a,8(-\tweak X-offset #-1.9 \mf gis a4)
+	r4 \partCombineApart a,8(-\tweak X-offset #-1.9 \mf gis a4)
 	r b8(_\crescmarkup ais b4)
 	r cis8( bis cis4)
 % Bars 396 to 400
@@ -380,7 +380,7 @@ musicFloteIMvtIII = \relative c''' {
 	g-. ees8( d ees4)
 % Bars 406 to 410
 	aes4-. ees8( d ees4)
-	\partCombineAutomatic c!(\ff des) c(
+	\partCombineAutomatic \aIIXoffset #-5 c!(\ff des) c(
 	des) c( des)
 	c( des) c(
 	des) c( cis)
@@ -399,7 +399,7 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 431 to 435
 	
 	
-	a'4-.-\tweak extra-offset #'(0.7 . 0.3) \ff a,(-> b8 cis)
+	\dynEO #'(0.5 . 2) a'4-.\ff a,(-> b8 cis)
 	d4-. f-. d-.
 	d-. f-. d-.
 % Bars 436 to 438

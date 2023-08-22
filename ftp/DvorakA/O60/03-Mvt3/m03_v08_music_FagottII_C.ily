@@ -10,7 +10,7 @@ musicFagottIIMvtIII = \relative c, {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -195,9 +195,9 @@ musicFagottIIMvtIII = \relative c, {
 	d
 % Bars 151 to 155
 	d
-	d \bar "||" \key d \major
+	d \section \key d \major
 	\repeat volta 2 {
-		R2.
+		\trio R2.
 		R2.*39
 % Bars 156 to 160
 	
@@ -305,7 +305,7 @@ musicFagottIIMvtIII = \relative c, {
 	d d d
 % Bars 286 to 290
 	d d d
-	d d d \bar "||" \key d \minor
+	d d d \section \key d \minor
 	d,2\f-> d4->~
 	d d2->
 	c4\fz-. d-. d-.
@@ -328,7 +328,7 @@ musicFagottIIMvtIII = \relative c, {
 	a'-. a a
 	d d, d
 % Bars 306 to 310
-	d r r \bar "||"
+	d r r \section
 	f'4(\p a) f(
 	a) f( a)
 	c-. g8(\< fis g a\!
@@ -362,7 +362,7 @@ musicFagottIIMvtIII = \relative c, {
 	
 	
 	
-	d4-.\p a'-. d-.
+	d4-.-\offset X-offset 0.8 \p a'-. d-.
 % Bars 336 to 340
 	d,-. a'-. d-.
 	cis,-. a'-. cis-.
@@ -373,7 +373,7 @@ musicFagottIIMvtIII = \relative c, {
 	cis,-. a'-. cis-.
 	cis,-. a'-. cis-.
 	a2\< d4~
-	d e-.\f f-.
+	d\! e-.\f f-.
 	c2->\ff c,4->~
 % Bars 346 to 350
 	c f2->
@@ -395,14 +395,14 @@ musicFagottIIMvtIII = \relative c, {
 % Bars 361 to 365
 	
 	
-	g'2.\p~
+	g'2.-\offset X-offset 0.5 \p~
 	g
 	f~
 % Bars 366 to 370
 	f4 bes,2
 	R2.*2
 	
-	f'2\p f4~
+	f'2-\offset X-offset 0.5 \p f4~
 	f bes2
 % Bars 371 to 375
 	R2.*2

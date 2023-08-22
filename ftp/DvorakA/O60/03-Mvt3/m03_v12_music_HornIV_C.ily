@@ -10,7 +10,7 @@ musicHornIVMvtIII = \relative c' {
 	\transposition d
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -46,8 +46,8 @@ musicHornIVMvtIII = \relative c' {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-		r4 b'!\f\< c
-		g2\ff aes4-.
+		r4 b'!-\offset X-offset -1.8 \f\< c\!
+		g2-\offset X-offset 0.5 \ff aes4-.
 		bes-. ees,2->
 		r4 ees-.\p r
 		ees-. r ees-.
@@ -156,9 +156,9 @@ musicHornIVMvtIII = \relative c' {
 	c
 % Bars 151 to 155
 	c
-	c \bar "||" \key c \major
+	c \section \key c \major
 	\repeat volta 2 {
-		R2.*2
+		\trio R2.*2
 		
 		R2.*9
 % Bars 156 to 160
@@ -238,8 +238,8 @@ musicHornIVMvtIII = \relative c' {
 	c2.\p~
 	c~-\tweak extra-offset #'(0 . 0.4) \<
 	c~
-	c~
-	c~\mf
+	<<c~ {s4 s s\!} >>
+	c2.~\mf
 % Bars 261 to 265
 	c~
 	c~
@@ -263,7 +263,7 @@ musicHornIVMvtIII = \relative c' {
 	c~
 % Bars 286 to 290
 	c~
-	c \clef treble \bar "||" \key a \minor
+	c \clef treble \section \key a \minor
 	c''2->\f c4->~
 	c c2->
 	r4 c-. c-.
@@ -283,7 +283,7 @@ musicHornIVMvtIII = \relative c' {
 	g-. g-. g-.
 	c-. c-. c-.
 % Bars 306 to 310
-	c r r \bar "||"
+	c r r \section
 	R2.*17
 % Bars 311 to 315
 	
@@ -293,8 +293,8 @@ musicHornIVMvtIII = \relative c' {
 	
 	
 	
-	r4 b'!\f\< c
-	g2\ff aes4
+	r4 b'!-\offset X-offset -2 \f\< c\!
+	g2 -\offset X-offset 0.5 \ff aes4
 % Bars 326 to 330
 	bes-. ees,2->
 	r4 ees-.\p r

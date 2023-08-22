@@ -10,7 +10,7 @@ musicHornIIMvtIII = \relative c'' {
 	\transposition f
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -101,7 +101,7 @@ musicHornIIMvtIII = \relative c'' {
 % Bars 91 to 95
 	
 % Bars 96 to 100
-		r4 aes-.\pp r
+		r4 aes-.-\tweak X-offset #-1.3 \pp r
 		aes-. r aes-.
 		aes-. aes-. aes-.
 		aes-. aes-. aes-.
@@ -176,9 +176,9 @@ musicHornIIMvtIII = \relative c'' {
 	e
 % Bars 151 to 155
 	e
-	e \bar "||" \key c \major
+	e \section \key c \major
 	\repeat volta 2 {
-		R2.*28
+		\trio R2.*28
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -260,7 +260,7 @@ musicHornIIMvtIII = \relative c'' {
 	
 % Bars 286 to 290
 	
-	\bar "||"
+	\section
 	c'2->\f c4~->
 	c c2->
 	b4-.\fz c-. c-.
@@ -283,7 +283,7 @@ musicHornIIMvtIII = \relative c'' {
 	e' e, e
 	a r r
 % Bars 306 to 310
-	R2. \bar "||"
+	R2. \section
 	R2.*16
 % Bars 311 to 315
 	
@@ -293,8 +293,8 @@ musicHornIIMvtIII = \relative c'' {
 	
 	
 	c2\p\< c4~
-	c\! d-. c-.
-	b2\ff-> d4->~
+	c d-.\! c-.
+	b2-\tweak X-offset #0.5 \ff-> d4->~
 % Bars 326 to 330
 	d c2->
 	g\p-> c4->~
@@ -317,12 +317,12 @@ musicHornIIMvtIII = \relative c'' {
 	b2-> e,4->~
 	e2.
 	e2 a4~\<
-	a b\f-. c-.
+	a\! b\f-. c-.
 	e2->\ff d4->~
 % Bars 346 to 350
 	d c2->
 	c,\p c4~
-	c\< f2
+	c\< << f2 {s4 s\!} >>
 	g2\f-> f4~\>->
 	f e2->\!
 % Bars 351 to 355

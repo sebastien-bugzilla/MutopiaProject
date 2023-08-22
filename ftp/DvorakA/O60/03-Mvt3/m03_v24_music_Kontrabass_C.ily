@@ -10,7 +10,7 @@ musicKontrabassMvtIII = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -111,7 +111,7 @@ musicKontrabassMvtIII = \relative c {
 		
 		
 		
-		f''4-.\p\< f,-. a-.
+		\hairpinShorten #'(0 . -1.5) f''4-.\p\< f,-. a-.
 		bes-.\! bes,8(\f a bes4)
 % Bars 86 to 90
 		R2.*2
@@ -201,9 +201,9 @@ musicKontrabassMvtIII = \relative c {
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \bar "||" \key d \major
+	q \section \key d \major
 	\repeat volta 2 {
-		d4\pp r r
+		\trio d4\pp r r
 		d4(\pp e8 cis d4)
 		R2.*9
 % Bars 156 to 160
@@ -308,7 +308,7 @@ musicKontrabassMvtIII = \relative c {
 	
 % Bars 286 to 290
 	
-	\bar "||" \key d \minor
+	\section \key d \minor
 	d2\f-> d4~->
 	d d2->
 	c!4-.\fz d-. d-.
@@ -331,7 +331,7 @@ musicKontrabassMvtIII = \relative c {
 	a'-. a,-. a-.
 	d'-. d,-. d-.
 % Bars 306 to 310
-	d r r \bar "||"
+	d r r \section
 	f,\p-\tweak extra-offset #'(0 . -0.5) ^\pizz r r
 	f' r r
 	e r r
@@ -352,7 +352,7 @@ musicKontrabassMvtIII = \relative c {
 	cis r r
 	r r a
 	d2.~\<^\arco
-	d\!
+	<<d {s4 s\! s}>>
 	a'4-.\ff a,-. bes!-.
 % Bars 326 to 330
 	c!-. f-. f,-.

@@ -10,7 +10,7 @@ musicFloteIIMvtIII = \relative c''' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -70,7 +70,7 @@ musicFloteIIMvtIII = \relative c''' {
 		d,8\p\< e f! g a bes
 % Bars 61 to 65
 		b4\! cis\f d
-		c!2\ff  bes4~
+		\dynEO #'(0 . 2) c!2\ff  bes4~
 		bes a2->
 		R2.*46
 % Bars 66 to 70
@@ -116,7 +116,7 @@ musicFloteIIMvtIII = \relative c''' {
 % Bars 126 to 130
 		c( des) c(
 		des) c( cis)
-		cis(-\tweak extra-offset #'(0 . 0.5) _\ffgrandioso d) cis(
+		cis(_\ffgrandioso d) cis(
 		d) cis( d)
 		e-. d8( cis d4)
 % Bars 131 to 135
@@ -142,9 +142,9 @@ musicFloteIIMvtIII = \relative c''' {
 	R2.*6
 % Bars 151 to 155
 	
-	\bar "||" \key d \major
+	\section \key d \major
 	\repeat volta 2 {
-		R2.*6
+		\trio R2.*6
 % Bars 156 to 160
 		
 		
@@ -228,7 +228,7 @@ musicFloteIIMvtIII = \relative c''' {
 	
 % Bars 286 to 290
 	
-	\bar "||" \key d \minor
+	\section \key d \minor
 	<>^\markup \bold {Flote} cis4(\f-> d8) r cis4(->
 	d8) r cis4(-> d8) r
 	e4-.\f d8( cis d4)
@@ -243,7 +243,7 @@ musicFloteIIMvtIII = \relative c''' {
 % Bars 301 to 305
 	
 % Bars 306 to 310
-	\bar "||"
+	\section
 	R2.*16
 % Bars 311 to 315
 	
@@ -278,7 +278,7 @@ musicFloteIIMvtIII = \relative c''' {
 	
 	d,8(\p\< e f! g a bes
 	b4\!) cis-.\f d-.
-	c!2\ff bes4~
+	\dynEO #'(0 . 2) c!2\ff bes4~
 % Bars 346 to 350
 	bes a2
 	R2.*46

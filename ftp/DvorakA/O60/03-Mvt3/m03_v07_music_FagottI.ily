@@ -51,7 +51,7 @@ musicFagottIMvtIII = \relative c {
 		\hairpinShorten #'(0 . 3) c\>
 		f,4(\! a) f(
 		a) f( a)~
-		a2.\<
+		a2.~\<
 		\hairpinShorten #'(0 . 3) a\>
 % Bars 36 to 40
 		fis4(\! a) fis(

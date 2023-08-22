@@ -10,7 +10,7 @@ musicFagottIMvtIII = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -51,7 +51,7 @@ musicFagottIMvtIII = \relative c {
 		c
 		\partCombineAutomatic f,4( a) f(
 		a) \partCombineApart \stemDown f( a)~
-		\stemUp a2.
+		\stemUp a2.~
 		a
 % Bars 36 to 40
 		\partCombineAutomatic fis4( a) fis(
@@ -199,9 +199,9 @@ musicFagottIMvtIII = \relative c {
 	d_\dimmarkup
 % Bars 151 to 155
 	d
-	d \bar "||" \key d \major
+	d \section \key d \major
 	\repeat volta 2 {
-		\partCombineApart d'_\fp \partCombineAutomatic
+		\trio \partCombineApart d'_\fp \partCombineAutomatic
 		R2.*39
 % Bars 156 to 160
 	
@@ -309,7 +309,7 @@ musicFagottIMvtIII = \relative c {
 	a a a
 % Bars 286 to 290
 	a a a
-	a a a \bar "||" \key d \minor
+	a a a \section \key d \minor
 	d,2\f-> d4->~
 	d d2->
 	c!4\fz-. d-. d-.
@@ -332,7 +332,7 @@ musicFagottIMvtIII = \relative c {
 	a'-. \partCombineApart a,-. a-.
 	d-. d,-. d-.
 % Bars 306 to 310
-	d \partCombineAutomatic r r \bar "||"
+	d \partCombineAutomatic r r \section
 	\partCombineApart a''4( c) a(
 	c) a( c)~
 	c2.~
@@ -373,7 +373,7 @@ musicFagottIMvtIII = \relative c {
 	
 	
 	\partCombineAutomatic a2\< d4~
-	d e-.\f f-.
+	d\! e-.\f f-.
 	c2->\ff c,4->~
 % Bars 346 to 350
 	c f2->
@@ -397,9 +397,9 @@ musicFagottIMvtIII = \relative c {
 	
 	d2 g4~
 	g a-. bes-.
-	d2-> c4~->
+	d2-\offset X-offset 0.5 -> c4~-\offset X-offset -0.3 ->
 % Bars 366 to 370
-	c bes2->
+	c bes2-\offset X-offset 0.5 ->
 	R2.*2
 	
 	\partCombineApart f2 f4~

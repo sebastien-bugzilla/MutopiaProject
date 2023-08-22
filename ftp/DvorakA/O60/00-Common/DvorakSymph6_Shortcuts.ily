@@ -76,10 +76,17 @@ ten = \markup {\italic ten.}
 tranquillo = \markup {\italic tranquillo}
 
 trio = {
-	\once \override Score.RehearsalMark.outside-staff-priority = #1500
-	\once \override Score.RehearsalMark.break-align-symbols = #'(time-signature)
-	\once \override Score.RehearsalMark.self-alignment-X = -1
-	\mark \markup {\normalsize \bold Trio.}
+	\once \override Score.SectionLabel.break-align-symbols = #'(key-signature)
+	\sectionLabel \markup {
+		\fontsize #+1 \bold "Trio."
+	}
+}
+
+scherzo = {
+	\once \override Score.SectionLabel.break-align-symbols = #'(time-signature)
+	\sectionLabel \markup {
+		\fontsize #+1 \bold "Scherzo."
+	}
 }
 
 piccolo = {
@@ -330,6 +337,17 @@ stemOffset = #(define-music-function
 	#}
 )
 
+markEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TextScript.layer = #3
+		\once \override TextScript.extra-offset = #offset
+		\once \override TextScript.whiteout = #1
+		\once \override TextScript.whiteout-style = #'outline
+	#}
+)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -431,17 +449,6 @@ stemOffset = #(define-music-function
 %%	\override Beam.length = #7
 %	\unset fontSize
 %}
-
-%markEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TextScript.layer = #3
-%		\once \override TextScript.extra-offset = #offset
-%		\once \override TextScript.whiteout = ##t
-%		\once \override TextScript.whiteout-style = #'outline
-%	#}
-%)
 
 %markWhiteout = {
 %	\once \override Score.RehearsalMark.layer = #3

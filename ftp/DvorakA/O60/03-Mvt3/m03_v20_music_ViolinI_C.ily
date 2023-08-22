@@ -10,7 +10,7 @@ musicViolinIMvtIII = \relative c''' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -22,8 +22,8 @@ musicViolinIMvtIII = \relative c''' {
 		gis,4(-> a8) r gis4(->
 		a8) r gis4(-> a8) r
 % Bars 11 to 15
-		bes4-.\fz a8( gis a4)
-		bes-.\fz a8( gis a4)
+		\dynEO #'(0 . 1) bes4-.\fz a8( gis a4)
+		\dynEO #'(0 . 1) bes-.\fz a8( gis a4)
 		fis4( g!8) r fis4(
 		g8) r fis4( g8) r
 		a4-. e8( dis e4)
@@ -61,7 +61,7 @@ musicViolinIMvtIII = \relative c''' {
 		a2 d4\<~
 % Bars 41 to 45
 		d e-. f-.\!
-		a2->\ff g4->~
+		\dynEO #'(0 . 2) a2->\ff g4->~
 		g f2->
 		gis,4(\p a) gis(
 		a) gis( a)
@@ -85,7 +85,7 @@ musicViolinIMvtIII = \relative c''' {
 		d,8(\< e f! g a bes
 % Bars 61 to 65
 		b!4)\! cis-.\f d-.
-		f->(\ff a) d,(->
+		\dynEO #'(0 . 1) f->(\ff a) d,(->
 		e) f2->
 		R2.*4
 		
@@ -164,7 +164,7 @@ musicViolinIMvtIII = \relative c''' {
 % Bars 126 to 130
 		cis'-. cis,8( bis cis4)
 		cis'-. cis,8( bis cis4)
-		cis4(_\ffgrandioso d) cis(
+		\markEO #'(0 . 1) cis4(_\ffgrandioso d) cis(
 		d) cis( d)
 		e-. d8( cis d4)
 % Bars 131 to 135
@@ -201,9 +201,9 @@ musicViolinIMvtIII = \relative c''' {
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \bar "||" \key d \major
+	q \section \key d \major
 	\repeat volta 2 {
-		d'4\pp r r
+		\trio d'4\pp r r
 		R2.*5
 		
 % Bars 156 to 160
@@ -344,16 +344,16 @@ musicViolinIMvtIII = \relative c''' {
 	d a2
 % Bars 286 to 290
 	d, a4~
-	a \tuplet 3/2 4 {d,8\f\<( f a d f a\!)} \bar "||" \key d \minor
+	a \tuplet 3/2 4 {d,8\f\<( f a d f a\!)} \section \key d \minor
 	cis4(\f-> d8) r cis4(->
 	d8) r cis4(-> d8) r
-	e4-.\fz d8( cis d4)
+	\dynEO #'(0 . 2) e4-.\fz d8( cis d4)
 % Bars 291 to 295
-	e4-.\fz d8( cis d4)
+	\dynEO #'(0 . 2) e4-.\fz d8( cis d4)
 	gis,(-> a8) r gis4(-> 
 	a8) r gis4(-> a8) r
-	bes4-.\fz a8( gis a4)
-	bes-.\fz a8( gis a4)
+	\dynEO #'(0 . 1) bes4-.\fz a8( gis a4)
+	\dynEO #'(0 . 1) bes-.\fz a8( gis a4)
 % Bars 296 to 300
 	fis( g!8) r fis4( 
 	g8) r fis4( g8) r
@@ -367,7 +367,7 @@ musicViolinIMvtIII = \relative c''' {
 	a'-. a,8( gis a4)
 	d-. d,8( cis d4)
 % Bars 306 to 310
-	d r r \bar "||"
+	d r r \section
 	c''2(_\pdolce f4~
 	f e f)
 	g2( c,4~
@@ -388,8 +388,8 @@ musicViolinIMvtIII = \relative c''' {
 	e2( a,4~
 	a2.)
 	a2\< d4~
-	d e-. f-.\!
-	a2\ff-> g4->~
+	d e-.\! f-.
+	\dynEO #'(0 . 2) a2\ff-> g4->~
 % Bars 326 to 330
 	g f2->
 	gis,4(\p a) gis(
@@ -412,8 +412,8 @@ musicViolinIMvtIII = \relative c''' {
 	dis( e!)\< dis(
 	e)\! e(\> a)\!
 	d,8( e f!\< g a bes
-	b!4)\! cis-.\f d-.
-	f(->\ff a) d,(->
+	b!4)\! \dynEO #'(0 . 2) cis-.\f d-.
+	\dynEO #'(0 . 2) f(->\ff a) d,(->
 % Bars 346 to 350
 	e) f2->
 	R2.*4
@@ -441,7 +441,7 @@ musicViolinIMvtIII = \relative c''' {
 % Bars 366 to 370
 	
 	d2\p\< c4~
-	c bes2\f
+	c\! bes2\f
 	R2.*2
 	
 % Bars 371 to 375

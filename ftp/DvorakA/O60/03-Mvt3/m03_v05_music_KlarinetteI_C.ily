@@ -10,7 +10,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -26,12 +26,12 @@ musicKlarinetteIMvtIII = \relative c'' {
 		f-.\fz ees-. ees-.
 		R2.*2
 		
-		\partCombineApart g4-. g8( fis g4)
+		\partCombineApart g4-. \beamOffset #'(-0.5 . -0.5) \shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur g8( fis g4)
 % Bars 16 to 20
 		aes-. f!8( e f4)
 		\partCombineAutomatic R2.*2
 		
-		\partCombineApart g4-. g8( fis g4)
+		\partCombineApart g4-. \beamOffset #'(-0.5 . -0.5) \shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur g8( fis \stemOffset #-0.5 g4)
 		aes-. f8( e f4)
 % Bars 21 to 25
 		\partCombineAutomatic c4-. c8( b c4)
@@ -58,7 +58,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 		c) a( \once \stemDown c)(
 		c2.)~
 		c
-		\partCombineChords c2 aes'4~
+		\partCombineChords \once \stemUp c2 aes'4~
 % Bars 41 to 45
 		aes g-. aes-.\! \partCombineAutomatic
 		g2\ff-> f4-.(
@@ -104,8 +104,8 @@ musicKlarinetteIMvtIII = \relative c'' {
 		\partCombineApart f,,2 bes4~
 % Bars 81 to 85
 		bes c-. des-.
-		\partCombineAutomatic c2-> aes4->~
-		aes aes2->
+		\partCombineAutomatic c2^> aes4^>~
+		aes aes2^>
 		R2.*6
 % Bars 86 to 90
 		
@@ -195,9 +195,9 @@ musicKlarinetteIMvtIII = \relative c'' {
 	f_\dimmarkup
 % Bars 151 to 155
 	f
-	f \bar "||" \key f \major
+	f \section \key f \major
 	\repeat volta 2 {
-		c-\tweak X-offset #-3 \fp
+		\trio c-\tweak X-offset #-3 \fp
 		R2.
 		c(
 % Bars 156 to 160
@@ -273,7 +273,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	
 	
 	
-	a,4(\p d f
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . -1.5)) Slur a,4(\p d f
 	a d f~
 % Bars 231 to 235
 	f2 e4
@@ -323,14 +323,14 @@ musicKlarinetteIMvtIII = \relative c'' {
 	
 	\partCombineApart f4(_\pp g8 e f4)
 % Bars 281 to 285
-	f( g8_\< e f4)
+	f( g8 e f4)_\<
 	f( g8 e f4)
 	f( g8 e f4)\!
 	f(_\f g8 e f4)
 	f( g8 e f4)
 % Bars 286 to 290
 	f( g8 e f4)
-	f( g8 e f4) \bar "||" \key f \minor 
+	f( g8 e f4) \section \key f \minor 
 	e(-> f8) r e4(->
 	f8) r e4(-> f8) r
 	g4-. f8( e f4)
@@ -353,7 +353,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	c4-. c8( b c4)
 	f-. f,8( e f4)
 % Bars 306 to 310
-	f \partCombineAutomatic r r \bar "||"
+	f \partCombineAutomatic r r \section
 	\partCombineApart c'( ees) c(
 	ees) c( ees)~
 	ees2.~
@@ -408,7 +408,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	
 	
 	
-	\partCombineApart g,2\p c4~
+	\partCombineApart g,2 c4~
 % Bars 356 to 360
 	c d-. ees-.
 	g2-> f4~
@@ -492,7 +492,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	c'-. c,->( d8 e)
 	f4-. aes-. f-.
 	f-. aes-. f-.
-	\once \partCombineApart c-. bes'4->( aes8 g)
+	\once \partCombineApart c-. bes'4-\offset X-offset 0.5 ->( aes8 g)
 % Bars 431 to 435
 	f4-. aes-. f-.
 	f-. aes-. f-.

@@ -451,7 +451,7 @@ musicOboeIIMvtIII = \relative c'' {
 	a-. a2->
 	f4-. a-. f-.
 	f-. a-. f-.
-	a-. a2->
+	a-. a2
 % Bars 431 to 435
 	a4-. a-. a-.
 	a-. a-. a-.

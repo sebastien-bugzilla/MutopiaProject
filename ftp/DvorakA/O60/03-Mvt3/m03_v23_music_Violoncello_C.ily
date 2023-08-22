@@ -10,7 +10,7 @@ musicVioloncelloMvtIII = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		d4(\p a'8) r d,4(\<
+		\scherzo d4(\p a'8) r d,4(\<
 		a'8) r d,4( a'8) r
 		d,4( a'8) r d,4(
 		a'8) r d,4(\! a'8) r
@@ -84,7 +84,7 @@ musicVioloncelloMvtIII = \relative c {
 		cis, a' cis
 		a'2^\arco\< d4~
 % Bars 61 to 65
-		d\! e-.\f f-.
+		d\! \dynEO #'(0 . 1) e-.\f f-.
 		c2->\ff bes4->~
 		bes a2->
 		R2.*4
@@ -111,7 +111,7 @@ musicVioloncelloMvtIII = \relative c {
 		
 		
 		
-		f''4-.\p\< f,-. a-.
+		\hairpinShorten #'(0 . -1.5) f''4-.\p\< f,-. a-.
 		bes-.\! bes,8(\f a bes4)
 % Bars 86 to 90
 		R2.*2
@@ -174,11 +174,11 @@ musicVioloncelloMvtIII = \relative c {
 		bes-> f-. f-.
 		bes-> f-. f-.
 % Bars 136 to 140
-		ees'2-> ees'4-\tweak extra-offset #'(0.5 . 0.5) \fz~
+		ees'2-> \dynEO #'(0.5 . 2) ees'4\fz~
 		ees2 d4-.
 		cis-. a-. cis-.
 		d-. f-. d-.
-		ees,2-> ees'4-\tweak extra-offset #'(0.5 . 0.5) \fz~
+		ees,2-> \dynEO #'(0.5 . 2) ees'4\fz~
 % Bars 141 to 145
 		ees2 d4-.
 		cis-. a-. cis-.
@@ -201,9 +201,9 @@ musicVioloncelloMvtIII = \relative c {
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \bar "||" \key d \major
+	q \section \key d \major
 	\repeat volta 2 {
-		d4\pp r r
+		\trio d4\pp r r
 		d4(\pp e8 cis d4)
 		R2.*4
 % Bars 156 to 160
@@ -337,14 +337,14 @@ musicVioloncelloMvtIII = \relative c {
 	d a2
 % Bars 286 to 290
 	d, a4~
-	a\! d,2\f \bar "||" \key d \minor
+	a\! d,2\f \section \key d \minor
 	d'4(->\f a'8) r d,4(->
 	a'8) r d,4(-> a'8) r
 	c,!4-.\fz d-. d-.
 % Bars 291 to 295
 	c-.\fz d-. d-.
-	f,4(-> c'8) r f,4(->
-	c'8) r f,4(-> c'8) r
+	f,4(^> c'8) r f,4(^>
+	c'8) r f,4(^> c'8) r
 	bes4-.\fz f'-. f-.
 	bes-.\fz f-. f-.
 % Bars 296 to 300
@@ -360,7 +360,7 @@ musicVioloncelloMvtIII = \relative c {
 	a'-. a,-. a-.
 	d'-. d,-. d-.
 % Bars 306 to 310
-	d r r \bar "||"
+	d r r \section
 	f,-\tweak extra-offset #'(0.8 . 0.5) \p-\tweak X-offset #-1 ^\pizz c' f
 	f, c' f
 	e, c' e
@@ -385,7 +385,7 @@ musicVioloncelloMvtIII = \relative c {
 	a-.\ff a,-. bes!-.
 % Bars 326 to 330
 	c-. f-. f,-.
-	f\p^\pizz c' f
+	\markEO #'(-1 . -1.5) f\p^\pizz c' f
 	f, c' f
 	e, c' e
 	e, c' e
@@ -405,8 +405,8 @@ musicVioloncelloMvtIII = \relative c {
 	cis, a' cis
 	cis, a' cis
 	a'2^\arco\< d4~
-	d e-.\f f-.
-	c2->\ff bes4~->
+	d\! \dynEO #'(0 . 1) e-.\f f-.
+	\dynEO #'(0 . 1) c2->\ff bes4~->
 % Bars 346 to 350
 	bes a2->
 	R2.*4
@@ -500,12 +500,12 @@ musicVioloncelloMvtIII = \relative c {
 	c') f,( c')
 	bes-.-> f-. f-.
 	bes-.-> f-. f-.
-	ees'2-> ees'4~\fz
+	ees'2-> \dynEO #'(0 . 2) ees'4~\fz
 	ees2 d4-.
 % Bars 421 to 425
 	cis-. a-. cis-.
 	d-. f-. d-.
-	ees,2-> ees'4~\fz
+	ees,2-> \dynEO #'(0 . 2) ees'4~\fz
 	ees2 d4-.
 	cis-. a-. cis-.
 % Bars 426 to 430

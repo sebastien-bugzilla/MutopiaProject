@@ -10,7 +10,7 @@ musicPiccoloMvtIII = \relative c''' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*23
+		\scherzo R2.*23
 % Bars 6 to 10
 		
 % Bars 11 to 15
@@ -81,9 +81,9 @@ musicPiccoloMvtIII = \relative c''' {
 	R2.*6
 % Bars 151 to 155
 	
-	\bar "||" \key d \major
+	\section \key d \major
 	\repeat volta 2 {
-		<>^\markup \bold {Piccolo} R2.*6
+		\trio <>^\markup \bold {Piccolo} R2.*6
 % Bars 156 to 160
 		
 		
@@ -100,7 +100,7 @@ musicPiccoloMvtIII = \relative c''' {
 		
 		
 		
-		d,,4\fp( a') d(\<
+		d,,4-\offset X-offset -0.5 \fp( a') d(\<
 		a') d(\! a)
 % Bars 171 to 175
 		fis-. a8(\> g fis g
@@ -167,7 +167,7 @@ musicPiccoloMvtIII = \relative c''' {
 	
 % Bars 286 to 290
 	
-	\bar "||" \key d \minor
+	\section \key d \minor
 	R2.*19
 % Bars 291 to 295
 	
@@ -176,7 +176,7 @@ musicPiccoloMvtIII = \relative c''' {
 % Bars 301 to 305
 	
 % Bars 306 to 310
-	\bar "||"
+	\section
 	R2.*132
 % Bars 311 to 315
 	

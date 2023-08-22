@@ -10,7 +10,7 @@ musicOboeIIMvtIII = \relative c'' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -26,12 +26,12 @@ musicOboeIIMvtIII = \relative c'' {
 		d-.\fz c-. c-.
 		a( bes8) r a4(
 		bes8) r a4( bes8) r
-		a4-. a-. a-.
+		a4-. \stemOffset #-0.5 a-. \stemOffset #-0.5 a-.
 % Bars 16 to 20
 		a-. a-. a-.
 		a4( bes8) r a4(
 		bes8) r a4( bes8) r
-		a4-. a-. a-.
+		a4-. \stemOffset #-0.5 a-. \stemOffset #-0.5 a-.
 		a-. a-. a-.
 % Bars 21 to 25
 		a-. a8 gis a4
@@ -52,7 +52,7 @@ musicOboeIIMvtIII = \relative c'' {
 		f'2\p\< f4~
 % Bars 41 to 45
 		f e-. d-.\!
-		c2->\ff bes4->~
+		c2->-\tweak X-offset 0.5 \ff bes4->~
 		bes a2->
 		r4 c-.\p r
 		c-. r c-.
@@ -96,11 +96,11 @@ musicOboeIIMvtIII = \relative c'' {
 		R2.*2
 		
 % Bars 86 to 90
-		f2\p f4~
+		f2-\offset X-offset 0.5 \p f4~
 		f f2
 		R2.*2
 		
-		d2.\p~
+		d2.-\offset X-offset 0.5 \p~
 % Bars 91 to 95
 		d
 		R2.*4
@@ -143,7 +143,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 126 to 130
 		e!2-> e4~->
 		e e2->
-		f!2_\ffgrandioso f4~
+		\markEO #'(0 . 1) f!2_\ffgrandioso f4~
 		f f2
 		f2 f4~
 % Bars 131 to 135
@@ -180,9 +180,9 @@ musicOboeIIMvtIII = \relative c'' {
 	d
 % Bars 151 to 155
 	d
-	d \bar "||" \key d \major
+	d \section \key d \major
 	\repeat volta 2 {
-		R2.
+		\trio R2.
 		R2.
 		R2.
 % Bars 156 to 160
@@ -247,29 +247,29 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 211 to 215
 	\mmrPos #-6 R
 	\mmrPos #-6 R
-	\mmrPos #-7 R
 	\mmrPos #-6 R
-	\mmrPos #-7 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 216 to 220
-	\mmrPos #-8 R
-	\mmrPos #-7 R
-	\mmrPos #-8 R
-	\mmrPos #-7 R
-	\mmrPos #-8 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 221 to 225
-	\mmrPos #-7 R
+	\mmrPos #-6 R
 	fis,4\pp g8 e fis4
 	R2.*6
 % Bars 226 to 230
 	
 	
 	
-	r4 \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0.5)) Slur b,(-\tweak X-offset #-1.6 \p d
+	r4 \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur b,^(-\tweak X-offset #-1.6 \p d
 	fis b d~
 % Bars 231 to 235
 	d2 cis4
 	b a g)
-	\shape #'((0 . 1)(0 . 1)(0 . 0.5)(0 . 0)) Slur fis( d b
+	\shape #'(() ((0.5 . 1.5)(0 . 1.5)(0 . 0)(0 . 0))) Slur fis^( d b
 	d fis b~
 	b2 a4
 % Bars 236 to 240
@@ -315,12 +315,12 @@ musicOboeIIMvtIII = \relative c'' {
 	f f f 
 % Bars 286 to 290
 	f f f 
-	f f f \bar "||" \key d \minor
+	f f f \section \key d \minor
 	f'2\f-> f4->~
 	f f2->
-	e4-.\fz d-. d-.
+	e4-.-\tweak X-offset #-1.7 \fz d-. d-.
 % Bars 291 to 295
-	e-.\fz d-. d-.
+	e-.-\tweak X-offset #-1.7 \fz d-. d-.
 	c2-> c4~->
 	c c2->
 	d4\fz-. c-. c-.
@@ -338,7 +338,7 @@ musicOboeIIMvtIII = \relative c'' {
 	a-. a8 gis a4
 	d,-. d8 cis d4 
 % Bars 306 to 310
-	d r r \bar "||"
+	d r r \section
 	R2.*16
 % Bars 311 to 315
 	
@@ -384,19 +384,19 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 361 to 365
 	
 	
-	bes,4\p d c
+	bes,4-\offset X-offset 0.5 \p d c
 	bes a g
 	f2 f4~
 % Bars 366 to 370
 	f f2
 	R2.*2
 	
-	f2\p f4~
+	f2-\offset X-offset 0.5 \p f4~
 	f f2
 % Bars 371 to 375
 	R2.*2
 	
-	d2.-\tweak X-offset #0.5 \p~
+	d2.-\offset X-offset 0.5 \p~
 	d
 	R2.*4
 % Bars 376 to 380
@@ -464,7 +464,7 @@ musicOboeIIMvtIII = \relative c'' {
 	a-. a2
 	f4-. a-. f-.
 	f-. a-. f-.
-	a-. a2->
+	a-. a2
 % Bars 431 to 435
 	a4-. a-. a-.
 	a-. a-. a-.

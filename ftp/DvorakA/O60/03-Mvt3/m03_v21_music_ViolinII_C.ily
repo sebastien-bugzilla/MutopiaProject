@@ -10,7 +10,7 @@ musicViolinIIMvtIII = \relative c' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		d4(\p a'8) r d,4(\<
+		\scherzo d4(\p a'8) r d,4(\<
 		a'8) r d,4( a'8) r
 		d,4( a'8) r d,4(
 		a'8) r d,4(\! a'8) r
@@ -133,7 +133,7 @@ musicViolinIIMvtIII = \relative c' {
 		ges2\ff ges4~
 % Bars 101 to 105
 		ges ges2
-		bes2\pp bes4~
+		bes2-\offset X-offset 1 \pp bes4~
 		bes bes2
 		d4-. d2
 		d4-. d2_\pocoapococrescendo
@@ -147,7 +147,7 @@ musicViolinIIMvtIII = \relative c' {
 		gis4-. gis2->
 		ais4-. ais2->
 		c!4-. c2->
-		des4-.\f c-.\< c-.
+		des4-.\f\< c-. c-.
 		des-. c-. c-.
 % Bars 116 to 120
 		des-. c-. c-.
@@ -201,9 +201,9 @@ musicViolinIIMvtIII = \relative c' {
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \bar "||" \key d \major
+	q \section \key d \major
 	\repeat volta 2 {
-		fis!4\pp r r
+		\trio fis!4\pp r r
 		R2.*15
 % Bars 156 to 160
 	
@@ -295,7 +295,7 @@ musicViolinIIMvtIII = \relative c' {
 	b r r
 	R2.
 % Bars 251 to 255
-	b'4(\pp cis8 ais b4)
+	b'4(-\offset X-offset #1.3 \pp cis8 ais b4)
 	R2.*4
 	
 	
@@ -329,12 +329,12 @@ musicViolinIIMvtIII = \relative c' {
 	d a2
 % Bars 286 to 290
 	d2 a4~
-	a d,2\f \bar "||" \key d \minor
+	a d,2\f \section \key d \minor
 	<a' f'>2->\f q4~->
 	q q2->
-	g'4-.\fz f8( e f4)
+	\dynEO #'(0 . 1) g'4-.\fz f8( e f4)
 % Bars 291 to 295
-	g-.\fz f8( e f4)
+	\dynEO #'(0 . 1) g-.\fz f8( e f4)
 	<c f>2-> q4->~
 	q q2->
 	d4-.\fz c-. c-.
@@ -352,8 +352,8 @@ musicViolinIIMvtIII = \relative c' {
 	a-. a,-. a-.
 	d-. d8( cis d4)
 % Bars 306 to 310
-	d r r \bar "||"
-	c'!2(_\pdolce f4~
+	d r r \section
+	c'!2(-\offset X-offset 0.5 _\pdolce f4~
 	f e f)
 	g2( c,4~
 	c2.)
@@ -373,11 +373,11 @@ musicViolinIIMvtIII = \relative c' {
 	e2( a,4~
 	a2.)
 	a2\< d4~
-	d e-. f-.\!
+	d e-.\! f-.
 	a2->\ff g4->~
 % Bars 326 to 330
 	g f2->
-	c2\p c4~
+	c2-\offset X-offset 0.5 \p c4~
 	c c2
 	a4( bes) a(\<
 	bes)\! bes(\> c)\!
@@ -398,7 +398,7 @@ musicViolinIIMvtIII = \relative c' {
 	g)\! g(\> a)\!
 	f!8( g a\< bes c cis
 	d4)\! g4-.\f f-.
-	a2->\ff f4(-> 
+	\dynEO #'(0 . 2) a2->\ff f4(-> 
 % Bars 346 to 350
 	g) f2->
 	R2.*4
@@ -408,8 +408,8 @@ musicViolinIIMvtIII = \relative c' {
 % Bars 351 to 355
 	c4->\f e-. d-.
 	c-. b-. a-.
-	<g, g'>2-> q4->~
-	q q2->
+	<g, g'>2^> q4^>~
+	q q2^>
 	R2.*4
 % Bars 356 to 360
 	
@@ -426,7 +426,7 @@ musicViolinIIMvtIII = \relative c' {
 % Bars 366 to 370
 	
 	f2\p\< ees4~
-	ees d2\f
+	ees\! d2\f
 	R2.*2
 	
 % Bars 371 to 375

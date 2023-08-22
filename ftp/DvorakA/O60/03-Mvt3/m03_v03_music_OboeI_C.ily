@@ -10,7 +10,7 @@ musicOboeIMvtIII = \relative c''' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -52,7 +52,7 @@ musicOboeIMvtIII = \relative c''' {
 		a''2\p\< a4~
 % Bars 41 to 45
 		a g-. f-.\!
-		a2->\ff g4->~
+		a2->-\tweak X-offset 0.5 \ff g4->~
 		g f2->
 		r4 f-.\p r
 		f-. r f-.
@@ -76,7 +76,7 @@ musicOboeIMvtIII = \relative c''' {
 		\partCombineApart f!8( g a bes c cis
 % Bars 61 to 65
 		d4)\! \partCombineAutomatic g-. f-.
-		a2\ff-> bes4->^(
+		\dynEO #'(0.5 . 2) a2\ff-> bes4->^(
 		bes) a2->
 		R2.*16
 % Bars 66 to 70
@@ -180,9 +180,9 @@ musicOboeIMvtIII = \relative c''' {
 	d_\dimmarkup
 % Bars 151 to 155
 	d
-	d \bar "||" \key d \major
+	d \section \key d \major
 	\repeat volta 2 {
-		\partCombineApart d4(-\tweak X-offset #-2 \fp e8 cis d4) \partCombineAutomatic
+		\trio \partCombineApart d4(-\tweak X-offset #-2 \fp e8 cis d4) \partCombineAutomatic
 		R2.
 		\partCombineApart d4(\p e8 cis d4) \partCombineAutomatic
 % Bars 156 to 160
@@ -247,7 +247,7 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 211 to 215
 	b4 a g
 	fis g e)
-	d2.(
+	\shape #'((0 . 3)(0 . 0)(0 . 0)(0 . 3)) Slur d2.(
 	g2 a4
 	d,2.
 % Bars 216 to 220
@@ -306,12 +306,12 @@ musicOboeIMvtIII = \relative c''' {
 	a a a
 % Bars 286 to 290
 	a a a
-	a a a \bar "||" \key d \minor
+	a a a \section \key d \minor
 	a'2\f-> a4->~
 	a a2->
-	g4-.\fz f-. f-.
+	g4-.-\tweak X-offset #-1.7 \fz f-. f-.
 % Bars 291 to 295
-	g-.\fz f-. f-.
+	g-.-\tweak X-offset #-1.7 \fz f-. f-.
 	f2-> f4~->
 	f f2->
 	f4\fz-. f-. f-.
@@ -329,7 +329,7 @@ musicOboeIMvtIII = \relative c''' {
 	\partCombineApart a'-. a,8( gis a4)
 	d-. d,8( cis d4)
 % Bars 306 to 310
-	d \partCombineAutomatic r r \bar "||"
+	d \partCombineAutomatic r r \section
 	R2.*16
 % Bars 311 to 315
 	
@@ -364,7 +364,7 @@ musicOboeIMvtIII = \relative c''' {
 	a r a
 	\partCombineApart f!8( g a bes c cis
 	d4) \partCombineAutomatic g4-.\f f-.
-	a2->\ff bes4->^(
+	\dynEO #'(0 . 2) a2->\ff bes4->^(
 % Bars 346 to 350
 	bes) a2->
 	R2.*16

@@ -10,7 +10,7 @@ musicPaukenMvtIII = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\scherzo R2.*4
 		
 		
 		
@@ -126,9 +126,9 @@ musicPaukenMvtIII = \relative c {
 	d4 r8 d_\dimmarkup d4
 % Bars 151 to 155
 	r8 d d4 r8 d
-	d4 r8 d d4 \bar "||" \key c \major
+	d4 r8 d d4 \section \key c \major
 	\repeat volta 2 {
-		d4\pp r r
+		\trio d4\pp r r
 		R2.*47
 % Bars 156 to 160
 	
@@ -206,7 +206,7 @@ musicPaukenMvtIII = \relative c {
 	d_\crescmarkup
 % Bars 286 to 290
 	d
-	d\stopTrillSpan \bar "||" \key a \minor
+	d\stopTrillSpan \section \key a \minor
 	d2\f d4~
 	d d2
 	r4 d-. d-.
@@ -229,7 +229,7 @@ musicPaukenMvtIII = \relative c {
 	a-. a-. a-.
 	d-. d-. d-.
 % Bars 306 to 310
-	d r r \bar "||"
+	d r r \section
 	R2.*16
 % Bars 311 to 315
 	
