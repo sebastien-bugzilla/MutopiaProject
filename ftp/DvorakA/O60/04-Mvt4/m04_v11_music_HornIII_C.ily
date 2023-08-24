@@ -8,7 +8,7 @@ musicHornIIIMvtIV = \relative c'' {
 	\clef treble
 	\key c \major
 	\transposition d
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*8
 % Bars 6 to 10
@@ -165,7 +165,7 @@ musicHornIIIMvtIV = \relative c'' {
 	bes2. bes4~
 	bes2. b4~
 	b2. b4~
-	b2. \partCombineAutomatic b4-.\ff
+	b2. \partCombineAutomatic b4-.-\tweak X-offset #-1.3 \ff
 	b-. r c-. r
 % Bars 181 to 185
 	b-. r r2
@@ -201,7 +201,7 @@ musicHornIIIMvtIV = \relative c'' {
 	d
 	g,\fz~
 	g
-	c-\tweak X-offset #-1 \fz~
+	c-\tweak X-offset #-1.5 \fz~
 % Bars 221 to 225
 	c
 	f,\fz~

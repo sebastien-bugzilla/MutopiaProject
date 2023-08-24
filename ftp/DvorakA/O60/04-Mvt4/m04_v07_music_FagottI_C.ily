@@ -8,18 +8,18 @@ musicFagottIMvtIV = \relative c' {
 	\clef bass
 	\key d \major
 %	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1
-	\partCombineApart \mmrPos #7 R1
+	\partCombineApart \mmrPos #4 R1
 	\mmrPos #7 R
 	\mmrPos #7 R
 	\mmrPos #7 R
 % Bars 6 to 10
-	r4 cis8(-\tweak X-offset #-1 \p b e4 a,)
+	r4 \beamOffset #'(-0.5 . -0.5) cis8(-\tweak X-offset #-1 \p b \stemOffset #-1 e4 \stemOffset #-1 a,)
 	b( gis a b)
 	cis( d8 cis b4 fis'8 e)
-	a,4 r r d(-\tweak X-offset # -1 \p
+	a,4 r r d(-\offset X-offset # -1.6 \p
 	cis) \partCombineAutomatic g'( fis f)
 % Bars 11 to 15
 	e cis2( b4)
@@ -142,7 +142,7 @@ musicFagottIMvtIV = \relative c' {
 	cis4\fz a'-. d\fz b-.
 	e\fz r \once \partCombineApart e r \mark \default
 	e r a2(
-	ais1)~-\tweak X-offset #0.7 \fz
+	ais1)~-\offset X-offset #1.5 \fz
 	ais2 b4( a)~
 % Bars 116 to 120
 	a2 fis4( gis)
@@ -211,7 +211,7 @@ musicFagottIMvtIV = \relative c' {
 	r2 r4 b(\f
 	g fis e) b--
 	e4. e8 e4 b'(
-	g fis e) \aIIXoffset #-2.5 e,(\fz
+	g fis e) \aIIXoffset #-2.2 e,(\fz
 % Bars 176 to 180
 	g c e) f,(\fz
 	aes c f) f,(\fz
@@ -272,7 +272,7 @@ musicFagottIMvtIV = \relative c' {
 % Bars 226 to 230
 	bes4-. f-. bes2->
 	R1
-	aes2.\ff r4
+	aes2.-\tweak X-offset 0.2 \ff r4
 	R1
 	aes2. r4
 % Bars 231 to 235
@@ -283,8 +283,8 @@ musicFagottIMvtIV = \relative c' {
 	r2 r4 a4-.
 % Bars 236 to 240
 	bes-. r r f'-.
-	des-._\marc c-. bes-. f-.
-	bes4.-> bes8 bes4 f
+	des-. c-. bes-. f-.
+	bes4.->_\marc bes8 bes4 f
 	bes4.-> bes8 bes4 aes
 	des,4.-> des8 des4 ees
 % Bars 241 to 245
@@ -361,7 +361,7 @@ musicFagottIMvtIV = \relative c' {
 	\partCombineApart \grace {s8} a1~
 	a~
 % Bars 306 to 310
-	a4 \once \partCombineAutomatic r r r8 e''(\mp
+	a4 \once \partCombineAutomatic r r r8 e''(-\offset X-offset -2 \mp
 	cis! b! a e a4) r8 e'(
 	cis b a e a4) r \partCombineAutomatic
 	R1*10
@@ -371,7 +371,7 @@ musicFagottIMvtIV = \relative c' {
 	
 	
 	
-	\partCombineApart \mmrPos #7 R1
+	\partCombineApart \mmrPos #4 R1
 	\mmrPos #7 R
 % Bars 321 to 325
 	\mmrPos #7 R

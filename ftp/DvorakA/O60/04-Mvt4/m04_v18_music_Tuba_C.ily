@@ -8,7 +8,7 @@ musicTubaMvtIV = \relative c, {
 	\clef bass
 	\key d \major
 %	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*24
 % Bars 6 to 10
@@ -125,7 +125,7 @@ musicTubaMvtIV = \relative c, {
 	R1*2
 % Bars 141 to 145
 	
-	d1-\tweak extra-offset #'(0.4 . 0.5) \ff
+	\dynEO #'(-1.7 . 1) d1\ff
 	c
 	bes~
 	bes
@@ -257,7 +257,7 @@ musicTubaMvtIV = \relative c, {
 	a-. c-. a-. c-.
 % Bars 286 to 290
 	<<f,1 {s4\< s s s\!}>>
-	e4 r a\ff r
+	e4 r a-\offset X-offset 0.5 \ff r
 	R1*5
 % Bars 291 to 295
 	

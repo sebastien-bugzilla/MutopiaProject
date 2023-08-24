@@ -8,7 +8,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	\clef treble
 	\key f \major
 	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*7
 % Bars 6 to 10
@@ -40,9 +40,9 @@ musicKlarinetteIMvtIV = \relative c''' {
 	g->~
 	g
 	bes\<~
-	bes
+	<<bes {s4 s s s\!}>>
 % Bars 36 to 40
-	g\!-^~
+	g1-^~
 	g2. g4-. \mark \default
 	\once \partCombineApart f8\noBeam c( e d c bes a g)
 	f( g a g f e d e)
@@ -83,7 +83,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	c4-. g-. c2_\dimmarkup~
 % Bars 71 to 75
 	c4 g-. c2~
-	c8( g_\< c b c d e f)
+	c8( g_\< c b c d e f)\!
 	<< g1~ {s4_\mf_\> s s s\!}>>
 	g4 r r2 \partCombineAutomatic
 	R1*6
@@ -125,7 +125,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	g4\fz r a\fz r
 	g\fz r g\fz r \mark \default
 	g r c,,2(
-	cis1)-\tweak extra-offset #'(1 . -3) \fz~
+	\dynEO #'(1 . -3) cis1)\fz~
 	cis2 d4( c!)~
 % Bars 116 to 120
 	c2 a!4( b)
@@ -164,7 +164,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	r aes-. f-. aes-.
 	r aes-. f-. aes-.
 % Bars 146 to 150
-	aes-\tweak extra-offset #'(0.5 . 0.5) \f r r2
+	\dynEO #'(0 . 1) aes\f r r2
 	R1
 	f2\f r
 	f r
@@ -200,7 +200,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	e4-. r r2
 	\partCombineApart e1~
 	e~
-	e4 e\rest e\rest b'(-\tweak X-offset #-4 \pp
+	e4 \once \partCombineAutomatic r r b'(-\tweak X-offset #-4 \pp
 % Bars 186 to 190
 	a e c a
 	bes!) r r bes'!(
@@ -219,7 +219,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	
 % Bars 206 to 210
 	
-	bes4(\ff aes8 g) aes4( g8 f)
+	\dynEO #'(0.5 . 1) bes4(\ff aes8 g) aes4( g8 f)
 	g4 r f r
 	g r r2
 	R1*6
@@ -239,7 +239,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	aes4-> f-> aes-> r
 	r2 r4 r8. des16
 	des4-> bes-> des-> r
-	ees4-.-\tweak extra-offset #'(0 . 0.5) \f bes-. ees2->
+	\dynEO #'(0 . 1) ees4-.\f bes-. ees2->
 	r2 r4 r8. des16
 % Bars 226 to 230
 	des4-. aes-. des2->
@@ -327,7 +327,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	\partCombineApart \grace {s8} e!1~
 	e~
 % Bars 306 to 310
-	\once \stemDown e4 r8 g(\mp e! d! c g
+	\once \stemDown e4 r8 g(-\offset X-offset -2 \mp e! d! c g
 	c4) r8 g'( e d c g
 	c4) r r2 \partCombineAutomatic
 	R1*16

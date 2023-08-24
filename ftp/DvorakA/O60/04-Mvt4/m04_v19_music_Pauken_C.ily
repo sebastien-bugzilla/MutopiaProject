@@ -8,7 +8,7 @@ musicPaukenMvtIV = \relative c {
 	\clef bass
 	\key c \major
 %	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*24
 % Bars 6 to 10
@@ -111,8 +111,8 @@ musicPaukenMvtIV = \relative c {
 % Bars 126 to 130
 	a
 	a
-	a\stopTrillSpan
-	d4 r r2
+	a
+	d4\stopTrillSpan r r2
 	R1*6
 % Bars 131 to 135
 	

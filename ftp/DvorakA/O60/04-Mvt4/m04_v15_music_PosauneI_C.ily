@@ -8,7 +8,7 @@ musicPosauneIMvtIV = \relative c'' {
 	\clef alto
 	\key d \major
 %	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*34
 % Bars 6 to 10
@@ -173,7 +173,7 @@ musicPosauneIMvtIV = \relative c'' {
 	
 % Bars 206 to 210
 	
-	\partCombineApart e4-. r e2->
+	\partCombineApart e4-. r e2-\offset X-offset 0.5 ->
 	e4 \once \partCombineAutomatic r d \partCombineAutomatic r 
 	e r r2
 	R1*6

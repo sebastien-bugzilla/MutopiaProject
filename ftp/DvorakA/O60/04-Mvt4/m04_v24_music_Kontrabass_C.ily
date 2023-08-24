@@ -8,7 +8,7 @@ musicKontrabassMvtIV = \relative c' {
 	\clef bass
 	\key d \major
 %	\transposition a
-	\partial 4 a4(\pp
+	\finale \partial 4 a4(\pp
 % Bars 1 to 5
 	fis e d cis)
 	b( a g e')
@@ -25,14 +25,14 @@ musicKontrabassMvtIV = \relative c' {
 	a'2. a4~
 	a g!( fis dis)
 	e8( a gis fis e fis d e)
-	a,4. a8_\pocoapococresc a4( b)
+	\after4 <>_\pocoapococresc a,4. a8 a4( b)
 	cis4. cis8 cis4( b)
 % Bars 16 to 20
 	a8( a' gis fis e fis d e)
 	cis4. cis8 cis4( b)
 	a8( a' gis fis e fis d e)
 	cis4. cis8 cis4( b)
-	cis4.\mf\< cis8 cis4-. dis-.\!
+	cis4.\mf\< cis8 cis4-. \once \stemUp dis-.\!
 % Bars 21 to 25
 	e r r2
 	gis4.\f\< gis8 gis4-. ais-.\!
@@ -206,7 +206,7 @@ musicKontrabassMvtIV = \relative c' {
 	g
 	c\p~
 	c~
-	c_\crescmarkup~
+	\after 4 <>_\crescmarkup c~
 % Bars 166 to 170
 	c
 	r2 c4\ff \tuplet 3/2 4 {c8( b! a)}
@@ -256,7 +256,7 @@ musicKontrabassMvtIV = \relative c' {
 	R1*2
 	
 % Bars 206 to 210
-	r2 r4 \tuplet 3/2 4 {g8(\f\< a b)}
+	r2 r4 \tuplet 3/2 4 {g8(-\offset X-offset #-1 \f\< a b\!)}
 	c4-.\ff g-. c2->
 	g'4-> \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
 	c4-. g-. c2->

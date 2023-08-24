@@ -8,7 +8,7 @@ musicViolinIMvtIV = \relative c''' {
 	\clef treble
 	\key d \major
 %	\transposition a
-	\partial 4 a\pp(
+	\finale \partial 4 a\pp(
 % Bars 1 to 5
 	fis e d a)
 	d4.( d8 d4 e)
@@ -73,14 +73,14 @@ musicViolinIMvtIV = \relative c''' {
 	c r dis'4(\fz e fis!
 	e8) r b,-. b-. cis(-> b) b-. b-.
 	b r dis'4(\fz e fis~
-	fis) fis(\fz gis a~
-	a) a(\fz b cis~
+	fis) \dynEO #'(0 . 1) fis(\fz gis a~
+	a) \dynEO #'(0.5 . 2) a(\fz b cis~
 % Bars 56 to 60
-	cis) cis(-\tweak extra-offset #'(-0.5 . 0.5) \fz b a 
-	gis) gis(-\tweak extra-offset #'(0 . 0.5) \fz a b~
-	b) b(-\tweak extra-offset #'(0.5 . 1) \fz cis d~
-	d) d(-\tweak extra-offset #'(0.5 . 1.2) \fz e fis~
-	fis) fis(-\tweak extra-offset #'(0.5 . 2) \fz e d~
+	cis) \dynEO #'(0.5 . 2) cis(\fz b a 
+	gis) \dynEO #'(0 . 0.5) gis(\fz a b~
+	b) \dynEO #'(0.5 . 1) b(\fz cis d~
+	d) \dynEO #'(0.5 . 1.2) d(\fz e fis~
+	fis) \dynEO #'(0.5 . 2) fis(\fz e d~
 % Bars 61 to 65
 	d8) d->( cis b~ b) fis'(-> e d~
 	d) d->( cis b~ b) b->(\< a gis~
@@ -113,12 +113,12 @@ musicViolinIMvtIV = \relative c''' {
 	\acciaccatura e,8 e'4-\tweak extra-offset #'(-2.3 . 1) _\fpcresc \tuplet 3/2 4 {e8( d cis-.)} cis4-> \tuplet 3/2 4 {cis8( b a-.)}
 % Bars 86 to 90
 	a4 r r2
-	\acciaccatura e8 e'4-\tweak extra-offset #'(-0.3 . 0.5) \fz \tuplet 3/2 4 {e8( d cis-.)} cis4-> \tuplet 3/2 4 {cis8( b a-.)}
+	\acciaccatura e8 \dynEO #'(0.3 . 1) e'4\fz \tuplet 3/2 4 {e8( d cis-.)} cis4-> \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
 	\acciaccatura a8 a'4\f \tuplet 3/2 4 {a8( g) fis-. e( d) cis-. cis( b) a-.
 	g( fis) e-. e( d) cis-. cis( b) a-. g( fis) e-.}
 % Bars 91 to 95
-	\acciaccatura a8 a'2->-\tweak extra-offset #'(0 . 0.5) \ff \acciaccatura a,8 a'2->
+	\acciaccatura a8 \dynEO #'(0 . 1) a'2->\ff \acciaccatura a,8 a'2->
 	\acciaccatura a,8 a'2.-> b8( cis)
 	d2-> d->
 	d2.-> e8( fis)
@@ -218,12 +218,12 @@ musicViolinIMvtIV = \relative c''' {
 	g fis e) b--
 	e4. e8 e4 b'(
 	g fis e) b--
-	e4. e8 e4 c'(-\tweak extra-offset #'(0.5 . 2) \fz
+	e4. e8 e4 \dynEO #'(0.5 . 2) c'(\fz
 % Bars 176 to 180
-	g f e) c'(-\tweak extra-offset #'(0.5 . 2) \fz
-	aes g f) des'(-\tweak extra-offset #'(0.5 . 2) \fz
-	aes ges f) cis'!(-\tweak extra-offset #'(0.5 . 2) \fz
-	a! gis fis!) cis'->-\tweak extra-offset #'(0 . 1.8) \ff
+	g f e) \dynEO #'(0.5 . 2) c'(\fz
+	aes g f) \dynEO #'(0.5 . 2) des'(\fz
+	aes ges f) \dynEO #'(0.5 . 2) cis'!(\fz
+	a! gis fis!) \dynEO #'(0 . 1.8) cis'->\ff
 	cis-> \tuplet 3/2 4 {cis8( b a)} b4-> \tuplet 3/2 4 {b8( a gis)}
 % Bars 181 to 185
 	fis4-. cis-. fis2->
@@ -254,7 +254,7 @@ musicViolinIMvtIV = \relative c''' {
 	b4 r r2
 	r r4 \tuplet 3/2 4 {b'8(\f\< cis dis\!}
 	e4) b-. e2\fz~
-	e8 r r4 r \tuplet 3/2 4 {b8(\f\< cis dis\!}
+	e8 r r4 r \tuplet 3/2 4 {\dynEO #'(0 . 1) \hairpinEO #'(0 . 1) b8(\f\< cis dis\!}
 % Bars 206 to 210
 	e4) b-. e2\fz
 	g4->\ff \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
@@ -282,7 +282,7 @@ musicViolinIMvtIV = \relative c''' {
 % Bars 226 to 230
 	bes2.) \tuplet 3/2 4 {bes8( c d}
 	ees2.) \tuplet 3/2 4 {ees8( f g}
-	aes4)-\tweak extra-offset #'(0 . 2) \ff ees-. aes2:16->
+	\dynEO #'(0 . 2) aes4)\ff ees-. aes2:16->
 	aes: aes:
 	aes4: ees: aes2:
 % Bars 231 to 235
@@ -315,7 +315,7 @@ musicViolinIMvtIV = \relative c''' {
 	d-. c-. bes-. r
 	r2 r4 a'-.\f
 	f-. e-. d-. r
-	r2 r4 f'-.\ff
+	r2 r4 \dynEO #'(0 . 1) f'-.\ff
 	d\fz c-. b!\fz a-.
 % Bars 261 to 265
 	gis\fz f-. e\fz d-.

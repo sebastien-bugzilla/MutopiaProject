@@ -8,7 +8,7 @@ musicHornIMvtIV = \relative c'' {
 	\clef treble
 	\key c \major
 	\transposition e
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*19
 % Bars 6 to 10
@@ -51,15 +51,15 @@ musicHornIMvtIV = \relative c'' {
 % Bars 51 to 55
 	
 	
-	r4 g,2.-\tweak X-offset #-2.0 \f~
-	g4 g2.-\tweak X-offset #-2.3 \fz~
-	g4 g2.-\tweak X-offset #-2.3 \fz~
+	r4 g,2.-\tweak X-offset #-2.3 \f~
+	g4 g2.-\tweak X-offset #-2.5 \fz~
+	g4 g2.-\tweak X-offset #-2.5 \fz~
 % Bars 56 to 60
-	g4 g2.-\tweak X-offset #-2.3 \fz
-	r4 c2.\fz~
-	c4 c2.\fz~
-	c4 c2.\fz~
-	c4 c2.\fz~
+	g4 g2.-\tweak X-offset #-2.5 \fz
+	r4 c2.-\tweak X-offset #-2.5 \fz~
+	c4 c2.-\tweak X-offset #-2.5 \fz~
+	c4 c2.-\tweak X-offset #-2.5 \fz~
+	c4 c2.-\tweak X-offset #-2.5 \fz~
 % Bars 61 to 65
 	c4 r e r
 	e r e r
@@ -100,17 +100,17 @@ musicHornIMvtIV = \relative c'' {
 	
 	\aIIXoffset #-3 c4\fz r d\fz r 
 % Bars 96 to 100
-	c\fz r c\fz r
+	c-\tweak X-offset 0.2 \fz r c-\tweak X-offset 0.2 \fz r
 	R1*4
 	
 	
 	
 % Bars 101 to 105
-	c4->-\tweak extra-offset #'(-1 . 1) _\fpcresc \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
+	\stemUp c4->_\fpcresc \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
 	c4-> \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
 	c4-> \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
 	c4-> \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
-	c4\f r r2
+	c4\f \stemNeutral r r2
 % Bars 106 to 110
 	R1*5
 % Bars 111 to 115
@@ -480,7 +480,7 @@ musicHornIMvtIV = \relative c'' {
 	f2. r4 
 % Bars 491 to 495
 	R1
-	r2 r4 f\ff
+	r2 r4 f-\tweak X-offset 0.3 \ff
 	f2-> f->
 	f-> f->
 	d-> f->

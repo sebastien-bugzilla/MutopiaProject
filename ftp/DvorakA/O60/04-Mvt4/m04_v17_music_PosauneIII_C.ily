@@ -8,7 +8,7 @@ musicPosauneIIIMvtIV = \relative c {
 	\clef bass
 	\key d \major
 %	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*24
 % Bars 6 to 10
@@ -436,7 +436,7 @@ musicPosauneIIIMvtIV = \relative c {
 	fis-> fis->
 	g-> e->
 % Bars 501 to 505
-	\once \partCombineApart d4 r \partCombineApart c2->\f
+	\once \partCombineApart d4 r \partCombineApart c2->
 	b-> bes->
 	a4-. b!-. c-. cis-.
 	d \once \partCombineAutomatic r c2->

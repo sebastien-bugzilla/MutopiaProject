@@ -8,7 +8,7 @@ musicPosauneIIMvtIV = \relative c' {
 	\clef alto
 	\key d \major
 %	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*34
 % Bars 6 to 10
@@ -69,7 +69,7 @@ musicPosauneIIMvtIV = \relative c' {
 	d-. r r2
 	e4\fz r d\fz b-.
 % Bars 96 to 100
-	cis\fz r b\fz r
+	cis-\offset X-offset 0.3 \fz r b-\offset X-offset 0.6 \fz r
 	R1*8
 % Bars 101 to 105
 	
@@ -84,7 +84,7 @@ musicPosauneIIMvtIV = \relative c' {
 	d4-. r d-. r
 	d-. r r2
 % Bars 111 to 115
-	e4\fz r d\fz b-.
+	e4\fz r d-\offset X-offset 0.5 \fz b-.
 	cis-\tweak X-offset #0.2 \fz r b-\tweak X-offset #0.2 \fz r \mark \default
 	a r r2
 	R1*7

@@ -8,12 +8,12 @@ musicFagottIIMvtIV = \relative c {
 	\clef bass
 	\key d \major
 %	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1
 	r2 r4 e(\p
 	d fis a g
-	fis e fis) g(
+	fis e fis) \shape #'((0 . -2.5)(0 . 0)(0 . 0)(0 . -2.5)) Slur g(
 	fis e fis g8 a
 % Bars 6 to 10
 	b4) r4 r2
@@ -140,7 +140,7 @@ musicFagottIIMvtIV = \relative c {
 	b->( cis b a gis fis e d)
 % Bars 111 to 115
 	cis4\fz a'-. d\fz b-.
-	e\fz r e,\fz r \mark \default
+	e\fz r e,-\offset X-offset 0.5 \fz r \mark \default
 	a r g'!2\fz~
 	g1~
 	g2 fis4( f)
@@ -211,7 +211,7 @@ musicFagottIIMvtIV = \relative c {
 	r2 r4 b,(\f
 	g fis e) b--
 	e4. e8 e4 b'(
-	g fis e) \aIIXoffset #-2.5 e(\fz
+	g fis e) \aIIXoffset #-2.2 e(\fz
 % Bars 176 to 180
 	g c e) f,(\fz
 	aes c f) f,(\fz
@@ -246,7 +246,7 @@ musicFagottIIMvtIV = \relative c {
 	
 	
 % Bars 206 to 210
-	r2 r4 \tuplet 3/2 4 {g'8\f\< a b\!}
+	r2 r4 \tuplet 3/2 4 {g'8-\offset X-offset -0.5 \f\< a b\!}
 	c4\ff g c2
 	g4-> \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
 	c4-. g' c2->
@@ -272,7 +272,7 @@ musicFagottIIMvtIV = \relative c {
 % Bars 226 to 230
 	bes4-. f-. bes2->
 	R1
-	aes,2.\ff r4
+	aes,2.-\tweak X-offset 0.2 \ff r4
 	R1
 	aes2. r4
 % Bars 231 to 235

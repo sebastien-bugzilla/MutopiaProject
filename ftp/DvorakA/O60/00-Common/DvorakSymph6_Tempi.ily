@@ -125,7 +125,7 @@ tempiMvtIII = {
 tempiMvtIV = {
 	\tempo \markup {
 		\concat {
-			"Allegro con spirito. (M.M."
+			"Allegro con spirito. (M.M. "
 			\smaller \general-align #Y #DOWN \note {2} #0.75
 			" = 84.)"
 		}
@@ -178,6 +178,7 @@ tempiMvtIV = {
 		}
 	}
 	s1*96
+	\tempoXoffset #2
 	\tempo \markup { % bar 440
 		\concat {
 			"Presto. ("

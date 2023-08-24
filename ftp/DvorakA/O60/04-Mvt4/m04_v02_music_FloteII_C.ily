@@ -8,7 +8,7 @@ musicFloteIIMvtIV = \relative c'' {
 	\clef treble
 	\key d \major
 %	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*7
 % Bars 6 to 10
@@ -34,9 +34,9 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	g1~\f\<
-	g\!
+	<<g {s4 s s s\!}>>
 % Bars 36 to 40
-	cis-^~
+	cis1-^~
 	cis2. cis4-. \mark \default
 	d e d a
 	d4. d8 d4-.( e-.)
@@ -56,7 +56,7 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 56 to 60
 	
 	
-	gis4-\tweak extra-offset #'(0.2 . 0.5) \f r r2
+	gis4\f r r2
 	b4 r r2
 	d4 r cis-. b-.
 % Bars 61 to 65
@@ -140,7 +140,7 @@ musicFloteIIMvtIV = \relative c'' {
 	d4-. f, d'2->
 	d4-. f,4 d'2->
 % Bars 146 to 150
-	d4-\tweak extra-offset #'(0 . 0.5) \f r r2
+	d4\f r r2
 	R1*20
 % Bars 151 to 155
 	
@@ -219,7 +219,7 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 226 to 230
 	bes4-. f-. bes2->
 	R1
-	c1-\tweak extra-offset #'(0 . 2) \ff~
+	c1\ff~
 	c~
 	c~
 % Bars 231 to 235
@@ -251,7 +251,7 @@ musicFloteIIMvtIV = \relative c'' {
 	\tupletYOff #5.5 \tuplet 6/4 1 {fis4( a c e d c)}\mark \default
 	b2 r
 	R1
-	\omitTupletNumber \tuplet 6/4 1 { r4 a\p\< c ees d c}
+	\omitTupletNumber \tuplet 6/4 1 { r4 a\p\< c ees d c\!}
 % Bars 256 to 260
 	bes4\f r r2
 	R1*8
@@ -262,10 +262,10 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	R1
 % Bars 266 to 270
-	d,1-\tweak extra-offset #'(-1 . 2.8) \fz~
-	d2.. d8\fz~
+	\dynEO #'(-1 . 2.8) d,1\fz~
+	d2.. \dynEO #'(1 . 1) d8\fz~
 	d1~
-	d2.. d8\fz~
+	d2.. \dynEO #'(1 . 1) d8\fz~
 	d1~
 % Bars 271 to 275
 	d2~ d4. r8
@@ -387,9 +387,9 @@ musicFloteIIMvtIV = \relative c'' {
 	cis'4-> \tuplet 3/2 4 {cis8( b a)-.} a4 \tuplet 3/2 4 {a8( e cis-.)}
 % Bars 381 to 385
 	cis4 r r2
-	fis'4->-\tweak extra-offset #'(0 . 1.8) \mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	fis'4->\mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2
-	fis'4->-\tweak extra-offset #'(0 . 1.8) \f \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	fis'4->\f \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2
 % Bars 386 to 390
 	d'4\f r r2
@@ -401,17 +401,17 @@ musicFloteIIMvtIV = \relative c'' {
 	g2.-> a8( b)
 	a4\fz r d,\fz d-.
 	d\fz d cis\fz a
-	cis4->-\tweak X-offset #-0.5 \p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
+	cis4->\p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
 % Bars 396 to 400
 	cis'4->\p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
-	fis'4->-\tweak extra-offset #'(0 . 1) \mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	fis'4->\mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2
-	fis'4->-\tweak extra-offset #'(0 . 1.8) \f \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	fis'4->\f \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
 % Bars 401 to 405
 	fis4 r r2
-	d'4\f r r2
+	\dynEO #'(0 . 2) d'4\f r r2
 	R1
 	\aIIXoffset #-4 d2->\f d->
 	d2.-> e8( fis)
@@ -525,7 +525,7 @@ musicFloteIIMvtIV = \relative c'' {
 	fis( e8 fis e4 d)
 	g( fis8 g fis4 e)
 % Bars 516 to 520
-	a( g8 a g4 fis)
+	\shape #'((0 . -3)(0 . 1)(0 . 1)(0 . -3)) Slur a( g8 a g4 fis)
 	d4 b-. cis!-> a-.
 	b-> g-. a-> fis-.
 	d' b-. cis-> a-.

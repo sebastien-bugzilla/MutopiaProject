@@ -8,7 +8,7 @@ musicBratscheMvtIV = \relative c' {
 	\clef alto
 	\key d \major
 %	\transposition a
-	\partial 4 a4\pp(~
+	\finale \partial 4 a4-\offset X-offset -0.5 \pp(~
 % Bars 1 to 5
 	a2. e4)
 	fis2( g4 b8 cis)
@@ -25,7 +25,7 @@ musicBratscheMvtIV = \relative c' {
 	
 	
 	r2 r4 e(\p
-	a1_\pocoapococresc)~
+	\after 4 <>_\pocoapococresc a1)~
 	a2. gis4(
 % Bars 16 to 20
 	a2.) a,4( 
@@ -37,7 +37,7 @@ musicBratscheMvtIV = \relative c' {
 	<gis b> r r2
 	<bis dis>4.\f\< q8 q4-. <e g!>-.\!
 	<dis fis> r r2
-	<fis a>4.\f\< q8 q4-. <g b>-.
+	<fis a>4.\f\< q8 q4-. <g b>-.\!
 	fis4-\tweak X-offset #-2 \ff-! d!-! b-! f'(
 % Bars 26 to 30
 	e) c-! ais-! e'(
@@ -101,7 +101,7 @@ musicBratscheMvtIV = \relative c' {
 	r4 \tuplet 3/2 4 {fis8(\p gis a)} r4 \tuplet 3/2 4 {fis8( gis a)}
 % Bars 76 to 80
 	e4 r r2
-	b4(\p\< fis'\! \hairpinShorten #'(0 . -3) g!\> e\!)
+	\hairpinShorten #'(0 . -3.5) b4(\p\< fis'\! \hairpinShorten #'(0 . -2.5) g!\> e\!)
 	d \tuplet 3/2 4 {b8( cis d)} r4 \tuplet 3/2 4 {b8( cis d)}
 	r4 \tuplet 3/2 4 {cis8( d e)} r4 \tuplet 3/2 4 {cis8( d e)}
 	d4 r r2
@@ -206,7 +206,7 @@ musicBratscheMvtIV = \relative c' {
 	g2 g4-. e-.
 	bes'2\p bes4-. g-.
 	bes2 bes4-. g-.
-	c2_\crescmarkup c4-. a-.
+	\after 4 <>_\crescmarkup c2 c4-. a-.
 % Bars 166 to 170
 	c2 c4-. a-.
 	r2 c4\ff-> \tuplet 3/2 4 {c8( b! a)}
@@ -257,7 +257,7 @@ musicBratscheMvtIV = \relative c' {
 	g r r4 r2
 % Bars 206 to 210
 	r4 g,8\f-! a-! b-! c-! a-! b-! 
-	c4-.\ff g-. c2->
+	c4-.-\offset X-offset 0.5 \ff g-. c2->
 	g'4-> \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
 	<c e>4-. g-. <c e>2->
 	<d f>4-. g,-. <d' f>2->
@@ -320,10 +320,10 @@ musicBratscheMvtIV = \relative c' {
 	\tuplet 3/2 2 {f f f f f f }
 	\tuplet 3/2 2 {f f f f f f}
 	\tuplet 3/2 2 {f f f f f r}
-	r2 f4-\tweak extra-offset #'(0.5 . 0.5) _\ffz d-.
+	r2 \dynEO #'(0.5 . 0.5) f4_\ffz d-.
 % Bars 261 to 265
 	b!\fz a-. gis\fz e-.
-	a r g'!-\tweak extra-offset #'(0.5 . 0.5) \fz e-.
+	a r \dynEO #'(0.5 . 0.5) g'!\fz e-.
 	cis!\fz bes-. a\fz g-.
 	fis! r ees'\fz d-.
 	c-.-\tweak X-offset #0.2 \fz a-. g\fz fis-.
@@ -464,7 +464,7 @@ musicBratscheMvtIV = \relative c' {
 	r4 \tuplet 3/2 4 {a8( b cis)} r4 \tuplet 3/2 4 {a8( b cis)}
 	r4 \tuplet 3/2 4 {b8( cis d)} r4 \tuplet 3/2 4 {b8( cis d)}
 	cis4 r r2
-	e,4(\p\< b' c\> a\!
+	\hairpinShorten #'(0 . 2) e,4(\p\< b' \hairpinShorten #'(-2 . 0) c\> a\!
 	g) \tuplet 3/2 4 {e8(-\tweak X-offset #-1.5 \pp fis g)} r4 \tuplet 3/2 4 {e8( fis g)}
 % Bars 376 to 380
 	r4 \tuplet 3/2 4 {fis8( g a)} r4 \tuplet 3/2 4 {fis8( g a)}

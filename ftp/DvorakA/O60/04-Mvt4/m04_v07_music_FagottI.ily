@@ -279,8 +279,8 @@ musicFagottIMvtIV = \relative c' {
 	r2 r4 a4-.
 % Bars 236 to 240
 	bes-. r r f'-.
-	des-._\marc c-. bes-. f-.
-	bes4.-> bes8 bes4 f
+	des-. c-. bes-. f-.
+	bes4.->_\marc bes8 bes4 f
 	bes4.-> bes8 bes4 aes
 	des,4.-> des8 des4 ees
 % Bars 241 to 245

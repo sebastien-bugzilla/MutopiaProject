@@ -1,6 +1,9 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
 %  date        : Thursday 10th August 2023, 10:40
+%###############################################################################
+%#                          P A P E R   S E C T I O N                          #
+%###############################################################################
 \paper {
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t

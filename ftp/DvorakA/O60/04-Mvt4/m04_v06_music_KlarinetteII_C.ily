@@ -8,7 +8,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	\clef treble
 	\key f \major
 	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*7
 % Bars 6 to 10
@@ -40,9 +40,9 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	bes->~
 	bes
 	g'\<~
-	g
+	<<g {s4 s s s\!} >>
 % Bars 36 to 40
-	e\!-^~
+	e1-^~
 	e2. e4-. \mark \default
 	f8_\ffgrandioso\noBeam a,( c bes a g f e)
 	d( e f e d c bes c)
@@ -164,7 +164,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	r f-. des-. f-.
 	r f-. des-. f-.
 % Bars 146 to 150
-	f-\tweak extra-offset #'(0.5 . 0.5) \f r r2
+	f\f r r2
 	R1
 	d2\f r
 	d r
@@ -239,7 +239,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	aes4-> f-> aes-> r
 	r2 r4 r8. des16
 	des4-> bes-> des-> r
-	ees4-.-\tweak extra-offset #'(0 . 0.5) \f bes-. ees2->
+	ees4-.\f bes-. ees2->
 	r2 r4 r8. des16
 % Bars 226 to 230
 	des4-. aes-. des2->
@@ -272,7 +272,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	\mark \default
 	R1
 	R
-	\omitTupletNumber \tuplet 6/4 1 {r4 c\p\< ees ges f ees}
+	\omitTupletNumber \tuplet 6/4 1 {r4 c\p\< ees ges f ees\!}
 % Bars 256 to 260
 	des\f r r2
 	R1*9

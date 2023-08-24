@@ -89,6 +89,13 @@ scherzo = {
 	}
 }
 
+finale = {
+	\once \override Score.SectionLabel.break-align-symbols = #'(time-signature)
+	\sectionLabel \markup {
+		\fontsize #+1 \bold "Finale."
+	}
+}
+
 piccolo = {
 	\once \override Score.TextScript.outside-staff-priority = #1500
 	<>^\markup {\bold Piccolo}
@@ -348,6 +355,17 @@ markEO = #(define-music-function
 	#}
 )
 
+hairpinEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Hairpin.extra-offset = #offset
+		\once \override Hairpin.whiteout = #1
+		\once \override Hairpin.whiteout-style = #'outline
+	#}
+)
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -417,16 +435,6 @@ markEO = #(define-music-function
 %	(number?)
 %	#{
 %		\once \override DynamicTextSpanner.bound-details.right.Y = #offset
-%	#}
-%)
-
-%hairpinEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.extra-offset = #offset
-%		\once \override Hairpin.whiteout = ##t
-%		\once \override Hairpin.whiteout-style = #'outline
 %	#}
 %)
 
@@ -669,8 +677,6 @@ markEO = #(define-music-function
 %		\translate #'(0.5 . 0.49) \tiny \flat 
 %	}
 %}
-
-
 
 %voltaShorten = #(define-music-function
 %	(shortLength)

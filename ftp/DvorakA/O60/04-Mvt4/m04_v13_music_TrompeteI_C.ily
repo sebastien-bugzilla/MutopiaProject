@@ -8,7 +8,7 @@ musicTrompeteIMvtIV = \relative c''' {
 	\clef treble
 	\key c \major
 	\transposition d
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*35
 % Bars 6 to 10
@@ -79,9 +79,9 @@ musicTrompeteIMvtIV = \relative c''' {
 	g-. r r2
 	c4-. r c-. r
 	c-. r r2
-	g4\fz r g\fz r
+	g4-\tweak X-offset -1.3 \fz r g-\tweak X-offset -1.3 \fz r
 % Bars 96 to 100
-	g\fz r d'\fz r
+	g-\tweak X-offset -1 \fz r d'-\tweak X-offset -1 \fz r
 	R1*8
 % Bars 101 to 105
 	
@@ -96,7 +96,7 @@ musicTrompeteIMvtIV = \relative c''' {
 	c4-. r c-. r
 	c-. r r2
 % Bars 111 to 115
-	g4\fz r g\fz r 
+	\dynEO #'(0 . 0.5) g4\fz r \dynEO #'(0 . 0.5) g\fz r 
 	g\fz r d'\fz r \mark \default
 	g, r r2
 	R1*7

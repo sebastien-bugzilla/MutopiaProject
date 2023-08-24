@@ -8,7 +8,7 @@ musicOboeIIMvtIV = \relative c'' {
 	\clef treble
 	\key d \major
 %	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*7
 % Bars 6 to 10
@@ -46,9 +46,9 @@ musicOboeIIMvtIV = \relative c'' {
 	e'->~
 	e
 	e\f\<~
-	e
+	<<e {s4 s s s\!}>>
 % Bars 36 to 40
-	e-^\!~
+	e1-^~
 	e2. e4-. \mark \default
 	d e d a
 	d4. d8 d4-.( e-.)
@@ -96,7 +96,7 @@ musicOboeIIMvtIV = \relative c'' {
 	
 	
 % Bars 76 to 80
-	r4 e8^(\p\< fis gis a b cis)
+	r4 e8^(\p\< fis gis a b cis)\!
 	d4\fp \tuplet 3/2 4 {d8 cis b} b2~
 	b4 r r2
 	R1*3
@@ -212,7 +212,7 @@ musicOboeIIMvtIV = \relative c'' {
 	cis4-. r r2
 	a1\fp\>~
 	a~
-	a\pp~
+	\dynEO #'(0 . 0.5) a\pp~
 % Bars 186 to 190
 	a~
 	a~
@@ -290,9 +290,9 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	\omitTupletNumber \tuplet 6/4 1 {r4 b\p\< d f e\> d\!}
+	\omitTupletNumber \tuplet 6/4 1 {r4 \hairpinShorten #'(0 . 2.8) b\p\< d f \hairpinShorten #'(-2.8 . 0) e\> d\!}
 	c2 r
-	R1
+	\tweak extra-offset #'(-1 . 0) R1
 % Bars 256 to 260
 	R1*4
 	
@@ -331,7 +331,7 @@ musicOboeIIMvtIV = \relative c'' {
 	f-. e-. f-. e-. 
 % Bars 286 to 290
 	c(\< cis d dis)\!
-	e4 r a,\ff r8 e'
+	e4 r a,-\offset X-offset 0.5 \ff r8 e'
 	cis-. b-. a-. e-. a4 r8 e'
 	cis b a e a4 r8 a'
 	f e d a d4 r8 a'
@@ -379,9 +379,9 @@ musicOboeIIMvtIV = \relative c'' {
 	R1*2
 	
 % Bars 331 to 335
-	g1(~\p
+	\shape #'((0 . 1)(0 . 0.5)(0 . 0)(0 . 0)) Slur g1(~\p
 	g2. fis4)
-	g1(~
+	\shape #'((0 . 1)(0 . 0.5)(0 . 0)(0 . 0)) Slur g1(~
 	g2._\crescmarkup fis4)
 	g1~
 % Bars 336 to 340
@@ -421,7 +421,7 @@ musicOboeIIMvtIV = \relative c'' {
 	
 	\mark \default
 % Bars 366 to 370
-	d,4-\tweak extra-offset #'(1.5 . 2.5) \p( a'-\tweak extra-offset #'(0 . 2.5) \< bes-\tweak extra-offset #'(0 . 2.5)\> g\!
+	\shape #'((0 . -1)(0 . -0.5)(0 . -0.5)(0 . -1)) Slur d,4-\tweak extra-offset #'(1.5 . 2.5) \p( \hairpinShorten #'(0 . 2) a'-\tweak extra-offset #'(0 . 2.5) \< \hairpinShorten #'(-2 . 0) bes-\tweak extra-offset #'(0 . 2.5)\> g\!
 	fis2 d)~
 	d1~
 	d4 r r2
@@ -482,7 +482,7 @@ musicOboeIIMvtIV = \relative c'' {
 	c'4) b8( c b4 a)
 % Bars 416 to 420
 	a( c b2)
-	<< a1~ {s4\< s s s\!}>>
+	<< a1~ {s4\< s s s8 s\!}>>
 	a4 r a2\f~
 	a4 g8( a g4 fis)
 	fis( a) g2

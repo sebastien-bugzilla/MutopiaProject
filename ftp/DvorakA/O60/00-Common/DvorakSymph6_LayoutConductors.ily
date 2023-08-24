@@ -17,7 +17,7 @@
 		\Score
 		\override RehearsalMark.font-size = #8
 		\override RehearsalMark.extra-spacing-width = #'(-0.2 . 0.2)
-		\override RehearsalMark.extra-spacing-height = #'(-10 . +10)
+		\override RehearsalMark.extra-spacing-height = #'(-30 . +30)
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override BarNumber.font-size = #2
 		\accidentalStyle modern-voice

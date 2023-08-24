@@ -8,7 +8,7 @@ musicOboeIMvtIV = \relative c'' {
 	\clef treble
 	\key d \major
 %	\transposition a
-	\partial 4 r4
+	\finale \partial 4 r4
 % Bars 1 to 5
 	R1*7
 % Bars 6 to 10
@@ -42,9 +42,9 @@ musicOboeIMvtIV = \relative c'' {
 	g->~
 	g
 	g\f\<~
-	g
+	<<g {s4 s s s\!}>>
 % Bars 36 to 40
-	g-^\!~
+	g1-^~
 	g2. g4-. \mark \default
 	\partCombineApart \once \stemDown fis(_\ffgrandioso e d a)
 	\partCombineAutomatic d4. d8 d4-.( e-.)
@@ -83,7 +83,7 @@ musicOboeIMvtIV = \relative c'' {
 	\once \partCombineApart e r
 	R1*2
 	\mark \default
-	cis4-.-\tweak X-offset #0.5 \p r b-. r
+	\once \stemUp cis4-.-\tweak X-offset #0.5 \p r b-. r
 	a-. r e(_\dimmarkup fis
 % Bars 71 to 75
 	e) r e( fis
@@ -231,7 +231,7 @@ musicOboeIMvtIV = \relative c'' {
 	R1*5
 % Bars 206 to 210
 	\partCombineApart r4 b,-. r e-. \partCombineAutomatic
-	g(\ff f8 e) f4( e8 d)
+	\dynEO #'(0.5 . 1) g(\ff f8 e) f4( e8 d)
 	e4 r g r
 	g r r2
 	R1*3
@@ -242,7 +242,7 @@ musicOboeIMvtIV = \relative c'' {
 	e4-. b-. e2->
 	fis4-. b,-. fis'2-> \mark \default
 % Bars 216 to 220
-	g4 r r r8. g'16\f
+	g4 r r r8. \dynEO #'(0 . 2) g'16\f
 	g4-> e-> g-> r
 	r2 r4 r8. c,16
 	c4-> a-> c-> r
@@ -275,7 +275,7 @@ musicOboeIMvtIV = \relative c'' {
 	f4.-> f8 f4_\dimin ges
 	f4.-> f8 f4 ges
 	f4.-> f8 f4 ges
-	f\p r \partCombineApart r f(\p
+	f\p r \partCombineApart r \single \omitAccidental f(\p
 	d! c! bes f)
 % Bars 246 to 250
 	bes4. bes8 bes4 c
@@ -294,7 +294,7 @@ musicOboeIMvtIV = \relative c'' {
 	
 	
 	
-	r2 f4-.\f r
+	r2 \dynEO #'(0.3 . 1) f4-.\f r
 % Bars 261 to 265
 	d-. r b-. r
 	cis!-. r g'!-. r
@@ -447,7 +447,7 @@ musicOboeIMvtIV = \relative c'' {
 	g2.-> a8( b)
 	a4\fz \once \partCombineApart d,-. b'\fz a-.
 	fis\fz \once \partCombineApart d-. a'\fz \once \partCombineApart a,-.
-	\partCombineApart g'_\p r r2 \partCombineAutomatic
+	\partCombineApart \dynEO #'(0 . 2) g'_\p r r2 \partCombineAutomatic
 	R1*3
 % Bars 396 to 400
 	
@@ -475,7 +475,7 @@ musicOboeIMvtIV = \relative c'' {
 	dis1)->~
 % Bars 416 to 420
 	dis2( e4 fis8 g)
-	<< a1~ {s4\< s s s\!}>>
+	<< a1~ {s4\< s s s8 s\!}>>
 	a4\! r a2\f~
 	a4 g8( a g4 fis)
 	fis( a) g2

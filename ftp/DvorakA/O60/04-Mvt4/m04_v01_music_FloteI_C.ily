@@ -8,7 +8,7 @@ musicFloteIMvtIV = \relative c''' {
 	\clef treble
 	\key d \major
 %	\transposition a
-	\partial 4 r4
+	\finale \finale \partial 4 r4
 % Bars 1 to 5
 	R1*7
 % Bars 6 to 10
@@ -34,9 +34,9 @@ musicFloteIMvtIV = \relative c''' {
 	
 	
 	e'1~\f\<
-	e\!
+	<<e {s4 s s s\!}>>
 % Bars 36 to 40
-	a-^~
+	a1-^~
 	a2. a4-. \mark \default
 	\partCombineApart fis(_\ffgrandioso e d a) \partCombineAutomatic
 	d4. d8 d4-.( e-.)
@@ -56,7 +56,7 @@ musicFloteIMvtIV = \relative c''' {
 % Bars 56 to 60
 	
 	
-	b4-\tweak extra-offset #'(0.2 . 0.5) \f r r2
+	\dynEO #'(0.2 . 2) b4\f r r2
 	d4 r r2
 	fis4 r e-. d-.
 % Bars 61 to 65
@@ -75,7 +75,7 @@ musicFloteIMvtIV = \relative c''' {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	d4\fp \tuplet 3/2 4 {d8( cis b)-.} b4-> \tuplet 3/2 4 {b8( a gis-.)}
+	\dynEO #'(0 . 2) d4\fp \tuplet 3/2 4 {d8( cis b)-.} b4-> \tuplet 3/2 4 {b8( a gis-.)}
 	gis4 r r2
 	d'4\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)}
 	gis4 r r2
@@ -90,7 +90,7 @@ musicFloteIMvtIV = \relative c''' {
 	e4\fz a-. fis\fz d-.
 % Bars 96 to 100
 	cis\fz a-. e'\fz gis,-.
-	d'\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis)-.}
+	\dynEO #'(0 . 1) d'\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis)-.}
 	gis4 r r2
 	d'4\fp \tuplet 3/2 4 {d8( cis b-.)} b4-. \tuplet 3/2 4 {b8( a gis-.)}
 	gis4 r r2
@@ -140,7 +140,7 @@ musicFloteIMvtIV = \relative c''' {
 	f4-. \once \partCombineApart f,-. f'2->
 	f4-. \once \partCombineApart f,4-. f'2->
 % Bars 146 to 150
-	f4-\tweak extra-offset #'(0 . 0.5) \f r r2
+	\dynEO #'(0 . 2) f4\f r r2
 	R1*20
 % Bars 151 to 155
 	
@@ -159,12 +159,12 @@ musicFloteIMvtIV = \relative c''' {
 	e2.-> r4
 	r2 r4 b4-.
 	e2.-> r4
-	r2 r4 c\fz~
+	r2 r4 \dynEO #'(0 . 2) c\fz~
 % Bars 176 to 180
-	c2. c4\fz~
-	c2. cis!4\fz~
-	cis2. cis4\fz~
-	cis2. cis4-.\ff
+	c2. \dynEO #'(0 . 2) c4\fz~
+	c2. \dynEO #'(0 . 2) cis!4\fz~
+	cis2. \dynEO #'(0 . 2) cis4\fz~
+	cis2. \dynEO #'(0 . 2) cis4-.\ff
 	cis-. r b-. r
 % Bars 181 to 185
 	a-. r r2
@@ -179,8 +179,8 @@ musicFloteIMvtIV = \relative c''' {
 	g~
 	g \mark \default
 % Bars 191 to 195
-	fis4(_\p_\< a bes_\> g)\!
-	fis1(
+	\hairpinShorten #'(0 . 2) fis4(_\p_\< a \hairpinShorten #'(-2 . 0) bes_\> g)\!
+	\shape #'((0 . -2.5)(0 . -0.5)(0 . 0)(0 . 0)) Slur fis1(
 	g
 	a2 d
 	cis4) r r2 \partCombineAutomatic
@@ -194,7 +194,7 @@ musicFloteIMvtIV = \relative c''' {
 	R1
 % Bars 206 to 210
 	\partCombineApart r4 b-. r e-. \partCombineAutomatic
-	g4(\ff f8 e) f4( e8 d)
+	\dynEO #'(0 . 2) g4(\ff f8 e) f4( e8 d)
 	\once \partCombineApart c4 r d r
 	e r r2
 	R1*6
@@ -205,7 +205,7 @@ musicFloteIMvtIV = \relative c''' {
 	
 	\mark \default
 % Bars 216 to 220
-	r2 r4 r8. g,16\f
+	r2 r4 r8. \dynEO #'(0 . 2) g,16\f
 	g4-> e-> g-> r
 	r2 r4 r8. c16
 	c4-> a-> c-> r
@@ -219,7 +219,7 @@ musicFloteIMvtIV = \relative c''' {
 % Bars 226 to 230
 	bes4-. f-. bes2->
 	R1
-	aes'1-\tweak extra-offset #'(0 . 2) \ff~
+	\dynEO #'(0 . 2) aes'1\ff~
 	aes~
 	aes~
 % Bars 231 to 235
@@ -260,7 +260,7 @@ musicFloteIMvtIV = \relative c''' {
 	
 	
 	
-	\partCombineApart r2 r4 r8 d-.-\tweak X-offset #-0.7 \f
+	\partCombineApart r2 r4 r8 d-.-\tweak X-offset #-1 \f
 % Bars 266 to 270
 	bes-. a-. g-. d-. g2->
 	a2-> bes4. d8
@@ -287,7 +287,7 @@ musicFloteIMvtIV = \relative c''' {
 	a-. g-. a-. g-.
 % Bars 286 to 290
 	a1
-	e4 r a\ff r8 e-.
+	e4 r \dynEO #'(0 . 2) a\ff r8 e-.
 	cis-. b-. a-. e-. a4 r8 e'
 	cis b a e a4 r8 a'
 	f e d a d4 r8 a'
@@ -387,9 +387,9 @@ musicFloteIMvtIV = \relative c''' {
 	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 % Bars 381 to 385
 	a4 r r2
-	a'4->-\tweak extra-offset #'(0 . 1.8) \mf \tuplet 3/2 4 {a8( g fis)-.} fis4 \tuplet 3/2 4 {fis8( e d-.)}
+	\dynEO #'(0 . 2) a'4->\mf \tuplet 3/2 4 {a8( g fis)-.} fis4 \tuplet 3/2 4 {fis8( e d-.)}
 	d4 r r2
-	a'4->-\tweak extra-offset #'(0 . 1.8) \f \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
+	\dynEO #'(0 . 2) a'4->\f \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
 	d4 r r2
 % Bars 386 to 390
 	\once \partCombineApart d4 r r2
@@ -401,19 +401,19 @@ musicFloteIMvtIV = \relative c''' {
 	g2.-> a8( b)
 	a4\fz r b\fz g-.
 	fis\fz \once \partCombineApart d-. a'\fz \once \partCombineApart a,-.
-	e'->-\tweak X-offset #-0.5 \p \tuplet 3/2 4 {e8( d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
+	\dynEO #'(0 . 2) e'->\p \tuplet 3/2 4 {e8( d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
 % Bars 396 to 400
 	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis)-.} cis4-. \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
-	a'4->-\tweak extra-offset #'(0 . 1) \mf \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)} 
+	\dynEO #'(0 . 2) a'4->\mf \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)} 
 	d4 r r2
-	a'4->-\tweak extra-offset #'(0 . 1.8) \f \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
+	\dynEO #'(0 . 2) a'4->\f \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
 % Bars 401 to 405
 	d4 r r2
 	\once \partCombineApart d4 r r2
 	R1
-	\aIIXoffset #-4 d2->\f d->
+	\aIIXoffset #-4 \dynEO #'(0 . 2) d2->\f d->
 	d2.-> e8( fis)
 % Bars 406 to 410
 	g2-> g->
