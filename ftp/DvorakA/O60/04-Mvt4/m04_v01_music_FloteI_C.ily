@@ -92,7 +92,7 @@ musicFloteIMvtIV = \relative c''' {
 	cis\fz a-. e'\fz gis,-.
 	\dynEO #'(0 . 1) d'\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis)-.}
 	gis4 r r2
-	d'4\fp \tuplet 3/2 4 {d8( cis b-.)} b4-. \tuplet 3/2 4 {b8( a gis-.)}
+	d'4\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)}
 	gis4 r r2
 % Bars 101 to 105
 	R1*6
@@ -263,7 +263,7 @@ musicFloteIMvtIV = \relative c''' {
 	\partCombineApart r2 r4 r8 d-.-\tweak X-offset #-1 \f
 % Bars 266 to 270
 	bes-. a-. g-. d-. g2->
-	a2-> bes4. d8
+	a2-> bes4. d8-.
 	a8-. g-. f-. d-. f2->
 	g-> a4. d8-.
 	b!-. a-. gis-. d-. gis2->
@@ -404,7 +404,7 @@ musicFloteIMvtIV = \relative c''' {
 	\dynEO #'(0 . 2) e'->\p \tuplet 3/2 4 {e8( d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
 % Bars 396 to 400
-	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis)-.} cis4-. \tuplet 3/2 4 {cis8( b a-.)}
+	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
 	\dynEO #'(0 . 2) a'4->\mf \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)} 
 	d4 r r2

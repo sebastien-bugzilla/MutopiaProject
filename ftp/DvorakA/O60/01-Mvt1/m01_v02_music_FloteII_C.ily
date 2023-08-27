@@ -139,8 +139,8 @@ musicFloteIIMvtI = \relative c' {
 		
 		r4 r a8([\f fis)
 		g-. a-.] g2
-		b8( g) a-. b-. cis( ais)
-		b-. cis-. d( cis d cis-.)
+		b8([ g) a-. b-.] cis( ais)
+		b-.[ cis-.] d( cis d cis)
 % Bars 161 to 165
 		fis2^(\ff e4)
 		b( cis8 dis ais4)
@@ -450,8 +450,8 @@ musicFloteIIMvtI = \relative c' {
 	a2 c8( a)
 % Bars 451 to 455
 	bes-. c-. bes2
-	d8( bes) c-. d-. e( cis)
-	d-. e-. f( e f e)
+	d8([ bes) c-. d-.] e( cis)
+	d-.[ e-.] f( e f e)
 	d2(\ff e4)
 	d2( a4)
 % Bars 456 to 460

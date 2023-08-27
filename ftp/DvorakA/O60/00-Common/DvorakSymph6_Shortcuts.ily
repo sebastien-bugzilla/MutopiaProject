@@ -81,6 +81,12 @@ trio = {
 		\fontsize #+1 \bold "Trio."
 	}
 }
+trioPart = {
+	\once \override Score.SectionLabel.break-align-symbols = #'(time-signature)
+	\sectionLabel \markup {
+		\fontsize #-1 \bold "Trio."
+	}
+}
 
 scherzo = {
 	\once \override Score.SectionLabel.break-align-symbols = #'(time-signature)
@@ -88,6 +94,14 @@ scherzo = {
 		\fontsize #+1 \bold "Scherzo."
 	}
 }
+
+scherzofuriantPart = {
+	\once \override Score.SectionLabel.break-align-symbols = #'(time-signature)
+	\sectionLabel \markup {
+		\fontsize #-1 \bold "Scherzo. (Furiant.)"
+	}
+}
+
 
 finale = {
 	\once \override Score.SectionLabel.break-align-symbols = #'(time-signature)
@@ -100,6 +114,7 @@ piccolo = {
 	\once \override Score.TextScript.outside-staff-priority = #1500
 	<>^\markup {\bold Piccolo}
 }
+
 flote = {
 	\once \override Score.TextScript.outside-staff-priority = #1500
 	<>^\markup {\bold Flote}
@@ -365,6 +380,36 @@ hairpinEO = #(define-music-function
 	#}
 )
 
+InCueContext = {
+	\override Beam.beam-thickness = #0.30 % 0.30
+	\override StemTremolo.beam-thickness = #0.35 % 0.30
+	\override Beam.length-fraction = #0.67 % 0.8
+	\override Stem.length-fraction = #0.8 % 0.8
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\set fontSize = #-3 %-3
+}
+
+OutCueContext = {
+	\revert Beam.beam-thickness
+	\revert StemTremolo.beam-thickness
+	\revert Beam.length-fraction
+	\revert Stem.length-fraction
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\unset fontSize
+}
+
+mmrnDown = \once \override MultiMeasureRestNumber.direction = #-1
+
+attaccatrio = {
+	\tweak break-align-symbols time-signature
+	%\tweak direction #DOWN
+	\textEndMark \markup { \italic {attacca Trio. } }
+}
+
+tempoDown = \once \override Score.MetronomeMark.direction = #-1 
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -438,26 +483,6 @@ hairpinEO = #(define-music-function
 %	#}
 %)
 
-%InCueContext = {
-%	\override Beam.beam-thickness = #0.30 % 0.30
-%	\override StemTremolo.beam-thickness = #0.35 % 0.30
-%	\override Beam.length-fraction = #0.67 % 0.8
-%	\override Stem.length-fraction = #0.8 % 0.8
-%%	\override Stem.length = #7
-%%	\override Beam.length = #7
-%	\set fontSize = #-3 %-3
-%}
-
-%OutCueContext = {
-%	\revert Beam.beam-thickness
-%	\revert StemTremolo.beam-thickness
-%	\revert Beam.length-fraction
-%	\revert Stem.length-fraction
-%%	\override Stem.length = #7
-%%	\override Beam.length = #7
-%	\unset fontSize
-%}
-
 %markWhiteout = {
 %	\once \override Score.RehearsalMark.layer = #3
 %	\once \override Score.RehearsalMark.whiteout = #0.75
@@ -471,10 +496,6 @@ hairpinEO = #(define-music-function
 %		\once \override MultiMeasureRest.staff-position = #(- position 2)
 %	#}
 %)
-
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
 
 %mmrLength = #(define-music-function
 %	(length)
@@ -566,8 +587,6 @@ hairpinEO = #(define-music-function
 %		\once \override TextScript.outside-staff-priority = #prio
 %	#}
 %)
-
-%tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
 %tempoXoffset = #(define-music-function
 %	(offset)

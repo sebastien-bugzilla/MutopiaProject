@@ -14,9 +14,8 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 6 to 10
 	
 	
-	\cueDuring #"cueVoiceFloteIIMvtIV" #UP {
-		\ni R1 \no
-	r2 r4 } d(\p
+	\ni \mmrPos #-4 R1 \no
+	r2 r4 d(\p
 	cis a'2 b4)
 % Bars 11 to 15
 	e,4.( e8 e4 d)
@@ -35,9 +34,9 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	g1~\f\<
-	g\!
+	<<g {s4 s s s\!}>>
 % Bars 36 to 40
-	cis-^~
+	cis1-^~
 	cis2. cis4-. \mark \default
 	d(_\ffgrandioso e d a)
 	d4. d8 d4-.( e-.)
@@ -93,7 +92,7 @@ musicFloteIIMvtIV = \relative c'' {
 	cis\fz a-. e'\fz gis,-.
 	b\fp \tuplet 3/2 4 {b8( a gis-.)} gis4-> \tuplet 3/2 4 {gis8( fis e)-.}
 	e4 r r2
-	b'4\fp \tuplet 3/2 4 {b8( a gis-.)} gis4-. \tuplet 3/2 4 {gis8( fis e-.)}
+	b'4\fp \tuplet 3/2 4 {b8( a gis-.)} gis4-> \tuplet 3/2 4 {gis8( fis e-.)}
 	e4 r r2
 % Bars 101 to 105
 	R1*6
@@ -242,13 +241,13 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	r2 r4^\solo a(\p
-	fis e d a)
+	fis! e d a)
 % Bars 251 to 255
 	d4.( d8 d4 e)
 	\tuplet 3/2 2 {fis4( a c e d c)} \mark \default
 	b2 r
 	R1
-	\tupletYOff #-2 \tuplet 3/2 2 { r4 a(\p\< c \tupletYOff #-2 ees d c}
+	\tupletYOff #-2 \tuplet 3/2 2 { r4 a(\p\< c \tupletYOff #-2 ees d c\!}
 % Bars 256 to 260
 	bes4\f) r r2
 	R1*8
@@ -257,9 +256,7 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceFloteIIMvtIV" #UP {
-		\ni R1 \no
-	}
+	\ni \mmrPos #-4 R1 \no
 % Bars 266 to 270
 	d,1\fz~
 	d2.. d8\fz~
@@ -326,10 +323,9 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceFloteIIMvtIV" #UP {
-		\ni R1 \no
+	\ni \mmrPos #-4 R1 \no
 % Bars 326 to 330
-	r2 r4 } c\p(
+	r2 r4 c\p(
 	b g'2 a4)
 	d,4.( d8 d4 c
 	b g2.)
@@ -347,7 +343,7 @@ musicFloteIIMvtIV = \relative c'' {
 	fis8)-. r cis4(\f-> d e
 	d) ais2.->~
 % Bars 346 to 350
-	ais4 b( c d
+	ais4 b(-> c d
 	c) gis2.->~
 	gis4 a(-> b c
 	b4) a(-> b c
@@ -574,6 +570,6 @@ musicFloteIIMvtIV = \relative c'' {
 	d r d r
 % Bars 561 to 563
 	d r r2
-	d4 r  r2
+	d4 r r2
 	d2\fermata r4 \bar "|."
 }

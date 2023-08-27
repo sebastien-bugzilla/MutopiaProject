@@ -12,35 +12,28 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part01_Floten.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part01_Floten.ily"
 \include "./01-Mvt1/m01_v01_music_FloteI.ily"
-\include "./01-Mvt1/m01_v02_music_FloteII.ily"
 \include "./02-Mvt2/m02_v01_music_FloteI.ily"
-\include "./02-Mvt2/m02_v02_music_FloteII.ily"
 \include "./03-Mvt3/m03_v01_music_FloteI.ily"
-\include "./03-Mvt3/m03_v02_music_FloteII.ily"
 \include "./04-Mvt4/m04_v01_music_FloteI.ily"
+\include "./01-Mvt1/m01_v02_music_FloteII.ily"
+\include "./02-Mvt2/m02_v02_music_FloteII.ily"
+\include "./03-Mvt3/m03_v02_music_FloteII.ily"
+\include "./03-Mvt3/m03_v02_music_Piccolo.ily"
 \include "./04-Mvt4/m04_v02_music_FloteII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceFloteIMvtI" { \cueVoiceFloteIMvtI }
-\addQuote "cueVoiceFloteIMvtII" { \cueVoiceFloteIMvtII }
-\addQuote "cueVoiceFloteIMvtIII" { \cueVoiceFloteIMvtIII }
-\addQuote "cueVoiceFloteIMvtIV" { \cueVoiceFloteIMvtIV }
-\addQuote "cueVoiceFloteIIMvtI" { \cueVoiceFloteIIMvtI }
-\addQuote "cueVoiceFloteIIMvtII" { \cueVoiceFloteIIMvtII }
-\addQuote "cueVoiceFloteIIMvtIII" { \cueVoiceFloteIIMvtIII }
-\addQuote "cueVoiceFloteIIMvtIV" { \cueVoiceFloteIIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -50,7 +43,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60"
+			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Floten"
 		}
 		instrument = \markup {
 			"Floten"
@@ -62,20 +55,19 @@
 				\formatFloteIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameFloteIMvtI \musicFloteIMvtI
+				\keepWithTag #'(floteI) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(floteI) \tempiPartMvtI
+				\InCueContext \cueVoiceFloteIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFloteIMvtI \musicFloteIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -87,20 +79,19 @@
 				\formatFloteIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameFloteIMvtII \musicFloteIMvtII
+				\keepWithTag #'(floteI) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'floteI \tempiPartMvtII
+				\InCueContext \cueVoiceFloteIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFloteIMvtII \musicFloteIMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #3.6 \bold 2.
 			}
 		}
 		\layout {
@@ -112,20 +103,19 @@
 				\formatFloteIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameFloteIMvtIII \musicFloteIMvtIII
+				\keepWithTag #'(floteI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'floteI \tempiPartMvtIII
+				\InCueContext \cueVoiceFloteIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFloteIMvtIII \musicFloteIMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold { 3. Scherzo. (Furiant.) }
 			}
 		}
 		\layout {
@@ -137,24 +127,22 @@
 				\formatFloteIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameFloteIMvtIV \musicFloteIMvtIV
+				\keepWithTag #'(floteI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'floteI \tempiPartMvtIV
+				\InCueContext \cueVoiceFloteIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFloteIMvtIV \musicFloteIMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold { 4. Finale. }
 			}
 		}
 		\layout {
-			%system-count = 46
 		}
 	}
 	\score {
@@ -163,20 +151,19 @@
 				\formatFloteIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameFloteIIMvtI \musicFloteIIMvtI
+				\keepWithTag #'(floteII) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'floteII \tempiPartMvtI
+				\InCueContext \cueVoiceFloteIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFloteIIMvtI \musicFloteIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -188,20 +175,19 @@
 				\formatFloteIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameFloteIIMvtII \musicFloteIIMvtII
+				\keepWithTag #'(floteII) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'floteII \tempiPartMvtII
+				\InCueContext \cueVoiceFloteIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFloteIIMvtII \musicFloteIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2.3 \bold 2.
 			}
 		}
 		\layout {
@@ -213,20 +199,22 @@
 				\formatFloteIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameFloteIIMvtIII \musicFloteIIMvtIII
+				\keepWithTag #'(floteII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'floteII \tempiPartMvtIII
+				\InCueContext \cueVoiceFloteIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFloteIIMvtIII \musicFloteIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFloteIIMvtIII \musicPiccoloMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2 \bold { 3. Scherzo. (Furiant.) }
 			}
 		}
 		\layout {
@@ -238,20 +226,19 @@
 				\formatFloteIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameFloteIIMvtIV \musicFloteIIMvtIV
+				\keepWithTag #'floteII \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'floteII \tempiPartMvtIV
+				\InCueContext \cueVoiceFloteIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFloteIIMvtIV \musicFloteIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #1.7 \bold {4. Finale.}
 			}
 		}
 		\layout {

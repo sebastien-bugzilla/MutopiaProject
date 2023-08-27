@@ -89,17 +89,16 @@ musicFloteIMvtIII = \relative c''' {
 	
 % Bars 101 to 105
 		
-		\cueDuring #"cueVoiceFloteIMvtIII" #UP {
-			\ni R2.
-			R
-			R
-			R
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 106 to 110
-			R
-			R
-			R
-			R \no
-		r4 } a,8(\mf gis a4)
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		r4 a,8(\mf gis a4)
 % Bars 111 to 115
 		r b8(_\crescmarkup ais b4)
 		r cis8( bis cis4)
@@ -144,31 +143,29 @@ musicFloteIMvtIII = \relative c''' {
 			R2.
 		}
 	}
-	R2.*6
+	R2.*6 \attaccatrio
 % Bars 151 to 155
 	
-	\bar "||" \key d \major
+	\bar "||" \key d \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio R2.*3
+		\time 3/4 \trioPart \mmrnDown R2.*3
 % Bars 156 to 160
 		e,4(\p fis8 dis e4)
 		R2.*2
 		
-		\mmrLength #14 R2.*4
+		R2.*4
 		
 % Bars 161 to 165
 		
 		
-		\mmrLength #14 R2.*2
+		R2.*2
 		
-		\cueDuring #"cueVoiceFloteIMvtIII" #UP {
-			\ni R2. \no
-		}
+		\ni \mmrPos #-4 R2. \no
 % Bars 166 to 170
 		fis4(\p\< g8 eis fis4)\!
 		R2.*2
 		
-		\mmrLength #12 R2.*4
+		R2.*4
 % Bars 171 to 175
 		
 		
@@ -176,7 +173,7 @@ musicFloteIMvtIII = \relative c''' {
 		R2.
 		d
 % Bars 176 to 180
-		d4-.\< e-. fis-.
+		d4-.\< e-. fis-.\!
 		g2.\fz
 		d4(\> cis! d)\!
 		g2.
@@ -240,7 +237,7 @@ musicFloteIMvtIII = \relative c''' {
 	
 	
 	
-	fis,4(\p b d
+	\shape #'((0 . -1.5)(0 . 0.6)(0 . 0.6)(0 . -1.5)) Slur fis,4(\p b d
 	fis b d~
 % Bars 231 to 235
 	d2 cis4
@@ -269,7 +266,7 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	a'4(\p d, fis
+	\shape #'((0 . -1.5)(0 . 0)(0 . 0)(0 . -1.5)) Slur a'4(\p d, fis
 	a\< d fis~
 	fis e d~
 	d cis b)\!
@@ -297,7 +294,7 @@ musicFloteIMvtIII = \relative c''' {
 	d~
 	d~
 	d \stopMeasureCount
-	\startMeasureCount d4(\pp e8 cis d4)
+	\startMeasureCount \dynEO #'(-0.5 . 1) d4(\pp e8 cis d4)
 % Bars 281 to 285
 	d( e8 cis d4)\<
 	d( e8 cis d4)
@@ -377,18 +374,17 @@ musicFloteIMvtIII = \relative c''' {
 	
 	
 	
-	\cueDuring #"cueVoiceFloteIMvtIII" #UP {
-		\ni R2.
+	\ni \mmrPos #-4 R2.
 % Bars 386 to 390
-		R
-		R
-		R
-		R
-		R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 391 to 395
-		R
-		R \no
-	r4 } a,8(\mf gis a4)
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	r4 a,8(\mf gis a4)
 	r b8(_\crescmarkup ais b4)
 	r cis8( bis cis4)
 % Bars 396 to 400
@@ -414,13 +410,15 @@ musicFloteIMvtIII = \relative c''' {
 	d) cis( d)
 	e-. d8( cis d4)
 	e-. d8( cis d4)
-	R2.*18
+	R2.*13
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	
 % Bars 426 to 430
 	
+	
+	\mmrLength #12 \mmrnDown R2.*5
 % Bars 431 to 435
 	
 	

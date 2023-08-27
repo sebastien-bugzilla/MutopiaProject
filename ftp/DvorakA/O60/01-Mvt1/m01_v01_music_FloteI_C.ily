@@ -148,8 +148,8 @@ musicFloteIMvtI = \relative c'' {
 		
 		r4 r c8([\f a)
 		b-. c-.] b2
-		d8(_\crescmarkup b) cis!-. d-. e( cis)
-		d-. e-. eis( fis eis e-.)
+		d8[(_\crescmarkup b) cis!-. d-.] e( cis)
+		d-.[ e-.] eis( fis eis e)
 % Bars 161 to 165
 		dis2 cis4
 		dis( e8 fis cis4)
@@ -478,8 +478,8 @@ musicFloteIMvtI = \relative c'' {
 	c2_\fcresc ees8( c)
 % Bars 451 to 455
 	d-. ees-. d2
-	f8( d) e-. f-. g( e)
-	f-. g-. gis( a gis g)
+	f8([ d) e-. f-.] g( e)
+	f-.[ g-.] gis( a gis g)
 	fis!2(\ff g4)
 	fis2( e4)
 % Bars 456 to 460

@@ -18,8 +18,7 @@ musicFloteIIMvtII = \relative c''' {
 % Bars 16 to 20
 	
 	
-	\cueDuring #"cueVoiceFloteIIMvtII" #UP {
-		r4 r8 } g\mf
+	\voiceTwo r4 r8 \oneVoice g\mf
 	f4 bes(\fz~
 	bes4_\dimmarkup a
 % Bars 21 to 25
@@ -32,13 +31,13 @@ musicFloteIIMvtII = \relative c''' {
 	e8 g f e)
 	e8( c~ c16\< b d b)\!
 	c8 r r4
-	\mmrLength #24 R2*6
+	\mmrLength #21 \mmrnDown R2*6
 % Bars 31 to 35
 	
 	
 	
 	\bar "||" \mark \default
-	\tempoXoffset #1.5 r4 d--\pp
+	r4 d--\pp
 % Bars 36 to 40
 	d-- d--
 	d d
@@ -54,10 +53,8 @@ musicFloteIIMvtII = \relative c''' {
 	
 % Bars 56 to 60
 	
-	\cueDuring #"cueVoiceFloteIIMvtII" #UP {
-		\ni R2
-		R \no
-	}
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	bes4\p r
 	bes_\dimmarkup r
 % Bars 61 to 65
@@ -80,12 +77,10 @@ musicFloteIIMvtII = \relative c''' {
 	
 	
 	
-	\cueDuring #"cueVoiceFloteIIMvtII" #UP {
-		\ni \clef bass \mmrPos #-6 R2
-		\mmrPos #-6 R \no \clef treble
-	}
+	\ni \clef bass \mmrPos #-7 R2
+	\mmrPos #-7 R \no \clef treble
 % Bars 86 to 90
-	r8 g'\p\< g g
+	r8 g'\p\< g g\!
 	bes2\f
 	a4\>~ a8 f\! \mark \default
 	aes4.\pp r8
@@ -95,7 +90,7 @@ musicFloteIIMvtII = \relative c''' {
 	f16 e( d) c( b) a( g) f(
 	e8) r r4
 	R2
-	\mmrLength #22 R2*7
+	R2*7
 % Bars 96 to 100
 	
 % Bars 101 to 105
@@ -125,7 +120,7 @@ musicFloteIIMvtII = \relative c''' {
 	
 	
 	r16 fis'-.\f d-. c'~ c a-. fis-. d'~
-	d\< d-. d-. d-. d-. d-. d-. d-.
+	d\< d-. d-. d-. d-. d-. d-. d-.\!
 % Bars 131 to 135
 	d\ff r a4\pp a8~
 	a4. r8
@@ -142,7 +137,7 @@ musicFloteIIMvtII = \relative c''' {
 	
 	
 	bes2~\p\<
-	bes8(\mf\< d f d)
+	bes8(\mf\< d f d)\!
 	c2(\> 
 % Bars 146 to 150
 	bes8\p) r r4 
@@ -166,7 +161,7 @@ musicFloteIIMvtII = \relative c''' {
 % Bars 166 to 170
 	
 	
-	\tempoXoffset #-3 R2 \mark \default
+	R2 \mark \default
 	R2*6
 	
 % Bars 171 to 175
@@ -177,7 +172,7 @@ musicFloteIIMvtII = \relative c''' {
 	r8 d(\mf\< ees e\!
 % Bars 176 to 180
 	f) r r4
-	r16 fis-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->
+	r16 fis-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
 	a8\ff r b-^ r
 	bes!8-^ r r4
 	r4 r8 ees!8\pp(
@@ -194,10 +189,10 @@ musicFloteIIMvtII = \relative c''' {
 	
 	r8 f''\ff-! d-! g-! 
 	ees-! c-! a-! a-^\noBeam
-	bes-^ r f4~\fp
+	bes-^ r f4~\fp\>
 % Bars 201 to 205
-	f2\>~
-	f8\! r r4
+	f2~
+	f8\pp r r4
 	R2*3
 	
 	

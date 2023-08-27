@@ -92,7 +92,7 @@ musicFloteIIMvtIV = \relative c'' {
 	cis\fz a-. e'\fz gis,-.
 	b\fp \tuplet 3/2 4 {b8( a gis-.)} gis4-> \tuplet 3/2 4 {gis8( fis e)-.}
 	e4 r r2
-	b'4\fp \tuplet 3/2 4 {b8( a gis-.)} gis4-. \tuplet 3/2 4 {gis8( fis e-.)}
+	b'4\fp \tuplet 3/2 4 {b8( a gis-.)} gis4-> \tuplet 3/2 4 {gis8( fis e-.)}
 	e4 r r2
 % Bars 101 to 105
 	R1*6

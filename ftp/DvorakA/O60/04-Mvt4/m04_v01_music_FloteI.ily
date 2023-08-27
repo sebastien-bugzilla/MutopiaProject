@@ -24,9 +24,13 @@ musicFloteIMvtIV = \relative c''' {
 	a1~
 	a4 r r2
 % Bars 16 to 20
-	R1*18
+	R1*9
 % Bars 21 to 25
 	
+	
+	
+	
+	\mmrLength #15 R1*9
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -69,7 +73,7 @@ musicFloteIMvtIV = \relative c''' {
 	
 	
 	\mark \default
-	R1*12
+	\mmrLength #18 R1*12
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -92,7 +96,7 @@ musicFloteIMvtIV = \relative c''' {
 	cis\fz a-. e'\fz gis,-.
 	d'\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis)-.}
 	gis4 r r2
-	d'4\fp \tuplet 3/2 4 {d8( cis b-.)} b4-. \tuplet 3/2 4 {b8( a gis-.)}
+	d'4\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)}
 	gis4 r r2
 % Bars 101 to 105
 	R1*6
@@ -149,9 +153,7 @@ musicFloteIMvtIV = \relative c''' {
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	\cueDuring #"cueVoiceFloteIMvtIV" #UP {
-		\ni \mmrPos #-6 R1 \no
-	}
+	\ni \mmrPos #-6 R1 \no
 	a,4\fz \tuplet 3/2 4 {a8( g fis!)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
@@ -172,8 +174,8 @@ musicFloteIMvtIV = \relative c''' {
 	a-. r r2
 	gis4-. r r2
 	a1\fp\>~
-	a~
-	a4\! r r2
+	<<a~ {s4 s s s\!}>>
+	a4 r r2
 % Bars 186 to 190
 	R1
 	r2 g!\pp~
@@ -181,7 +183,7 @@ musicFloteIMvtIV = \relative c''' {
 	g~
 	g \mark \default
 % Bars 191 to 195
-	fis4(\p\< a bes\> g)\!
+	fis4(\p\< a\! bes\> g)\!
 	fis1(
 	g
 	a2 d
@@ -253,7 +255,7 @@ musicFloteIMvtIV = \relative c''' {
 	\mark \default
 	R1*2
 	
-	\tupletYOff #-2 \tuplet 3/2 2 {a4(\p\< c ees \tupletYOff #-2 g f ees}
+	\tupletYOff #-2 \tuplet 3/2 2 {a4(\p\< c ees \tupletYOff #-2 g f ees\!}
 % Bars 256 to 260
 	d4\f) r r2
 	R1*8
@@ -265,9 +267,9 @@ musicFloteIMvtIV = \relative c''' {
 	r2 r4 r8^\solo d-.\f
 % Bars 266 to 270
 	bes-. a-. g-. d-. g2->
-	a2-> bes4. d8
+	a2-> bes4. d8-.\fz
 	a8-. g-. f-. d-. f2->
-	g-> a4. d8-.
+	g-> a4. d8-.\fz
 	b!-. a-. gis-. d-. gis2->
 % Bars 271 to 275
 	a2-> b4. r8
@@ -288,8 +290,8 @@ musicFloteIMvtIV = \relative c''' {
 	a-> a4-. g-.
 	a-. g-. a-. g-.
 % Bars 286 to 290
-	a1\<
-	e4\! r a\ff r8 e-.
+	<< a1 {s4\< s s s\!}>>
+	e4 r a\ff r8 e-.
 	cis-. b-. a-. e-. a4 r8 e'
 	cis b a e a4 r8 a'
 	f e d a d4 r8 a'
@@ -406,7 +408,7 @@ musicFloteIMvtIV = \relative c''' {
 	e'->\p \tuplet 3/2 4 {e8( d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
 % Bars 396 to 400
-	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis)-.} cis4-. \tuplet 3/2 4 {cis8( b a-.)}
+	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
 	a'4->\mf \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)} 
 	d4 r r2
@@ -466,12 +468,11 @@ musicFloteIMvtIV = \relative c''' {
 	
 	
 	
-	\cueDuring #"cueVoiceFloteIMvtIV" #UP {
-		\ni R1
+	\ni \voiceTwo  R1
 % Bars 461 to 465
-		R
-		R \no
-	r2 r4 } d-.\f
+	R
+	R \no
+	r2 r4 \oneVoice d-.\f
 	d-. r r d-.
 	d-. r r d-.
 % Bars 466 to 470

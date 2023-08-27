@@ -11,7 +11,7 @@ musicFloteIMvtII = \relative c'' {
 % Bars 1 to 5
 	R2
 	\partCombineApart r8 bes(\p a d~
-	d4._\< e8
+	d4._\< e8\!
 	f2_\fp~
 	\dynEO #'(0 . 1) f8)_\pp r r4 \partCombineAutomatic
 % Bars 6 to 10
