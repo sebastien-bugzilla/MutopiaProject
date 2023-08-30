@@ -18,8 +18,8 @@ musicOboeIIMvtI = \relative c' {
 % Bars 6 to 10
 		r r fis
 		fis4. fis8\< fis4
-		fis( a d)
-		fis2(\f\> e8 dis)
+		fis( a d)\!
+		fis2(\f\> e8 dis)\!
 		e2\p r4
 % Bars 11 to 15
 		R2.*2
@@ -30,7 +30,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 16 to 20
 		r4 r a(\mf\<
 		c2 b4
-		c d c)
+		c d c)\!
 		c2(\f b4
 		a_\dimmarkup b a)
 % Bars 21 to 25
@@ -48,7 +48,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 31 to 35
 		fis'4 c'8-. c-. b-. a-. 
 		b4-. d,-. r
-		c'4\< b8-. f'-. e-. d-.  
+		c'4\< b8-. f'-. e-. d-.\!
 		f\fz r a,4-. d-.\fz
 		a-. f'-.\fz a,-.
 % Bars 36 to 40
@@ -66,15 +66,15 @@ musicOboeIIMvtI = \relative c' {
 % Bars 46 to 50
 		e e2\<~
 		e2.~
-		e \mark \default
-		\tempoXoffset #1.5 fis4-\tweak X-offset #-1 _\ffgrandiosoD r a,-.
+		e\! \mark \default
+		fis4-\tweak X-offset #-1 _\ffgrandiosoD r a,-.
 		fis'2 r4
 % Bars 51 to 55
 		r r a,-.
 		fis'-. fis-. r
 		r r a,
 		a2.~
-		a2\< fis'4
+		a2\< fis'4\!
 % Bars 56 to 60
 		fis2(\fz e8 dis)
 		e2 e8( d!)
@@ -105,9 +105,9 @@ musicOboeIIMvtI = \relative c' {
 		
 % Bars 91 to 95
 		e,2(\f fis8 e)
-		dis8 r b'2(~
+		dis8 r \stemUp b'2(~
 		b ais4
-		b) r4 r
+		b) \stemNeutral r4 r
 		c2\f-^ g4~
 % Bars 96 to 100
 		g4 r r
@@ -130,17 +130,15 @@ musicOboeIIMvtI = \relative c' {
 		
 % Bars 121 to 125
 		
-		\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-			\ni R2.
-			R
-			R
-			R \no
-		}
+		\ni \voiceTwo R2.
+		R
+		R
+		R \no \oneVoice 
 % Bars 126 to 130
 		fis2.\p~
 		fis
 		fis4-- fis--\< fis--
-		fis-- fis\>-- g--
+		fis--\! fis\>-- g--\!
 		aes\pp r r
 % Bars 131 to 135
 		R2.
@@ -162,7 +160,7 @@ musicOboeIIMvtI = \relative c' {
 		fis8-.) dis( e fis) e4->(
 % Bars 146 to 150
 		fis8)-. dis( e fis b, cis
-		dis\> fis, ais b dis, e)
+		dis\> fis, ais b dis, e)\!
 		dis4\p r r
 		dis r r
 		e_\crescmarkup r r
@@ -199,13 +197,11 @@ musicOboeIIMvtI = \relative c' {
 		{
 			R2.*2
 			
-			\cueDuring #"cueVoiceOboeIIMvtI" #DOWN {
-				\ni \mmrPos #-2 R2.
-				\mmrPos #-2 R
+			\ni \mmrPos #-2 R2.
+			\mmrPos #-2 R
 % Bars 181 to 185
-				\mmrPos #-2 R
-				\mmrPos #-2 R \no
-			}
+			\mmrPos #-2 R
+			\mmrPos #-2 R \no
 			\override Score.MeasureCounter.outside-staff-priority = #100 \startMeasureCount a2.\pp~
 			a~
 			a~
@@ -236,10 +232,8 @@ musicOboeIIMvtI = \relative c' {
 % Bars 191 to 195
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R2.
-		R \no
-	}
+	\ni \voiceTwo R2.
+	R \oneVoice \no
 	a4\p\<( d f)
 % Bars 196 to 200
 	f2(\! e8 d)
@@ -311,7 +305,7 @@ musicOboeIIMvtI = \relative c' {
 	R2.*2
 	
 	ais2.(\< \mark \default
-	b4)\f r r
+	\once \stemUp b4)\f r r
 % Bars 266 to 270
 	R2.*4
 	
@@ -369,7 +363,7 @@ musicOboeIIMvtI = \relative c' {
 	fis fis-. r
 	fis4. fis8 fis4 
 % Bars 321 to 325
-	fis(\< a d)
+	fis(\< a d)\!
 	fis2\fz(\> e8 dis)\!
 	e2 r4
 	R2.*2
@@ -381,7 +375,7 @@ musicOboeIIMvtI = \relative c' {
 	r4 r a(\p
 	c2\< b4
 % Bars 331 to 335
-	c d c)
+	c d c)\!
 	c2(\f b4
 	a_\dimmarkup b a)
 	g2.\p\>~
@@ -397,12 +391,12 @@ musicOboeIIMvtI = \relative c' {
 	b4-. d,-. r
 % Bars 346 to 350
 	c'4->-._\fsempre b8-. f'-. e-. d-. 
-	f!\fz r a,4-. d-.\fz
+	f!-.\fz r a,4-. d-.\fz
 	a-. f'-.\fz a,-.
 	d-.\fz d-. e-.\fz
 	c4-. b8-. f'-. e-. d-. 
 % Bars 351 to 355
-	f\fz r a,4-. d-.\fz
+	f-.\fz r a,4-. d-.\fz
 	a-. f'-.\fz a,-.
 	d-.\fz d-. e-.\fz
 	e2\fz e4\fz~
@@ -466,13 +460,11 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R2.
+	\ni \voiceTwo R2.
 % Bars 416 to 420
-		R
-		R
-		R \no
-	}
+	R
+	R
+	R \no \oneVoice 
 	a2.~\pp
 	a~
 % Bars 421 to 425
@@ -482,14 +474,14 @@ musicOboeIIMvtI = \relative c' {
 	R2.
 	r4 r gis(\p\<
 % Bars 426 to 430
-	fis2 e4
+	fis2 e4\!
 	dis2)\> gis4(
-	fis2 e4
-	d!)\! r r
+	fis2 e4\!
+	d!) r r
 	R2.
 % Bars 431 to 435
 	r4 gis8-.\mf a-. b4->
-	b8(\< cis d dis e d)
+	b8(\< cis d dis e d)\!
 	cis-.\f r r4 d(->
 	cis8) r r4 d(->
 	cis8) r r4 cis-.\<
@@ -498,7 +490,7 @@ musicOboeIIMvtI = \relative c' {
 	fis8-. fis( g a) g4->(
 	fis8-.) fis( g a) g4->(
 	a8)-. fis( g a d,\> e
-	fis a, cis d fis, g)
+	fis a, cis d fis, g)\!
 % Bars 441 to 445
 	fis4\p r r
 	fis r_\crescmarkup r
@@ -538,10 +530,8 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\ni R2.
-		R \no
-	}
+	\ni \voiceTwo R2.
+	R \no \oneVoice 
 % Bars 481 to 485
 	g2.\f~->
 	g

@@ -12,8 +12,8 @@ musicOboeIIMvtII = \relative c' {
 	r8^\solo f(\p d g)~
 	g4.( fis8
 	g2)\<
-	bes4\fp( g8\> a
-	bes)\pp r r4
+	\stemUp bes4\fp( g8\> a
+	bes)\pp \stemNeutral r r4
 % Bars 6 to 10
 	R2*12
 	
@@ -44,7 +44,7 @@ musicOboeIIMvtII = \relative c' {
 	bes8 r r4
 	R2*2
 	\bar "||" \mark \default
-	\tempoXoffset #1.5 r4 d--\pp
+	r4 d--\pp
 % Bars 36 to 40
 	d-- d--
 	d d
@@ -60,11 +60,11 @@ musicOboeIIMvtII = \relative c' {
 % Bars 46 to 50
 	
 	r4 g,\pp\<(
-	f2\>)
-	g8 g--\pp g-- g--
+	f2\>)(
+	g8) g--\pp g-- g--
 	f2->(
 % Bars 51 to 55
-	ees8) g\< g g
+	ees8) g\< g g\!
 	e!2\f\>
 	g\p\>~
 	g8\! r r4
@@ -101,14 +101,12 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIIMvtII" #UP {
-		\ni \clef bass \mmrPos #-8 R2
-		\mmrPos #-8 R \no \clef treble
-	}
+	\ni \clef bass \mmrPos #-7 R2
+	\mmrPos #-7 R \no \clef treble
 % Bars 86 to 90
-	r8 bes16(\p\< a) a( g) g8
+	r8 bes16(\p\< a) a( g) g8\!
 	bes2\f
-	c4\> f,~ \mark \default
+	c4\> f,~\! \mark \default
 	f4.\pp r8
 	R2*5
 % Bars 91 to 95
@@ -158,7 +156,7 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	
-	r16\< c-. c-. c-.  c-. c-. c-. c-.\! 
+	r16 c\f\<-. c-. c-.  c-. c-. c-. c-.\! 
 % Bars 131 to 135
 	c\ff r r8 r4
 	R2*8
@@ -174,9 +172,9 @@ musicOboeIIMvtII = \relative c' {
 % Bars 141 to 145
 	
 	bes4\p\<( g8 c
-	bes g d e)
+	bes g d e)\!
 	f2\mf\<~
-	f8\> f(-- g-- a--)
+	f8\! f(--\> g-- a--)\!
 % Bars 146 to 150
 	\once \stemUp bes4_(-\tweak X-offset #-1 \pdimD~ bes16 c g a
 	bes4)\pp r
@@ -196,16 +194,16 @@ musicOboeIIMvtII = \relative c' {
 	
 	r8 d4(\p\< c16 bes!)~
 % Bars 161 to 165
-	bes8 a16( g a4)\>
-	aes8\p( c4 bes16\> aes~
-	aes8) g16(\! f g4)~
+	bes8 a16(\! g\> a4)
+	aes8\p( c4 bes16\> aes)~
+	aes8 g16(\! f g4)~
 	g8 ges4\pp( f16 ees)~
 	ees8  r r4
 % Bars 166 to 170
 	R2*3
 	
 	\mark \default
-	\tempoXoffset #1 f2~\p
+	f2~\p
 	f8 d(\< ees! e)\!
 % Bars 171 to 175
 	f2\p~
@@ -232,14 +230,13 @@ musicOboeIIMvtII = \relative c' {
 % Bars 191 to 195
 	
 % Bars 196 to 200
-	\cueDuring #"cueVoiceOboeIIMvtII" #UP {
-		\ni R2
-		R \no
-	r8 } f'\ff-! d-! g-!
+	\ni \voiceTwo R2
+	R \no \oneVoice 
+	r8 f'\ff-! d-! g-!
 	ees-! c-! a-! d-^
 	d-^ r f,4\fp\>(
 % Bars 201 to 205
-	g f8 ees)
+	g f8 ees)\!
 	d2\pp~
 	d~
 	d8 r r4

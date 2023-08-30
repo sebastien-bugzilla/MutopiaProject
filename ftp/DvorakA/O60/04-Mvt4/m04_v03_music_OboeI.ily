@@ -46,14 +46,14 @@ musicOboeIMvtIV = \relative c'' {
 % Bars 36 to 40
 	g-^\!~
 	g2. g4-. \mark \default
-	\tempoXoffset #1 fis(_\ffgrandioso e d a)
+	fis(_\ffgrandioso e d a)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
 	d4. d8 d4-.( e-.)
 	fis( a8 g fis4 e)
 	d( cis8 b e4 a,)
-	b( gis a b)
+	\once \stemUp b( gis a \once \stemUp b)
 	c( b8 a d4 g,)
 % Bars 46 to 50
 	a( fis g a)
@@ -207,14 +207,14 @@ musicOboeIMvtIV = \relative c'' {
 	a-. r r2
 	gis4-. r r2
 	\startMeasureCount cis,1\fp\>~
-	cis~
-	cis\pp~
+	<< cis~ {s4 s s s\!}>>
+	cis1\pp~
 % Bars 186 to 190
 	cis~
 	cis~
 	cis~
 	cis~
-	cis \stopMeasureCount \markXoffset #0.2 \mark \default
+	cis \stopMeasureCount \rehearsalESW #'(-2 . 0)  \mark \default
 % Bars 191 to 195
 	d4 r r2
 	R1*4
@@ -286,7 +286,7 @@ musicOboeIMvtIV = \relative c'' {
 % Bars 251 to 255
 	a~
 	a \mark \default
-	\tupletYOff #-3 \tuplet 3/2 2 {b,4(\p\< d f \tupletYOff #-2.5 a\> g f\!)}
+	\tupletYOff #-3 \tuplet 3/2 2 {b,4(\p\< d f\! \tupletYOff #-2.5 a\> g f\!)}
 	e2(~ \tuplet 3/2 2 {e4 f g)}
 	a2 r
 % Bars 256 to 260
@@ -548,7 +548,7 @@ musicOboeIMvtIV = \relative c'' {
 	b-> b-. b-> g-.
 % Bars 481 to 485
 	e-> r r g->
-	e-> r r g-._\marc
+	e-> r r g_\marc
 	g2-> g->
 	g-> g4-. a-.
 	a1~

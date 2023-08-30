@@ -153,13 +153,13 @@ musicOboeIIMvtIII = \relative c'' {
 		d4-. c-. c-.
 		d-. c-. c-.
 % Bars 136 to 140
-		a(\fz bes) a(\fz
+		\stemUp a(\fz bes) a(\fz
 		bes) a(\fz bes)
 		a-. a-. a-.
 		a-. a-. a-.
 		a4(\fz bes) a(\fz
 % Bars 141 to 145
-		bes) a(\fz bes)
+		bes) a(\fz bes) \stemNeutral
 		a-. a-. a-.
 		a-. a-. a-.
 		a-. a2->
@@ -180,26 +180,40 @@ musicOboeIIMvtIII = \relative c'' {
 	d_\dimmarkup
 % Bars 151 to 155
 	d
-	d \stopMeasureCount \bar "||" \key d \major
+	d \attaccatrio \stopMeasureCount \bar "||" \key d \major \break
 	\repeat volta 2 {
-		\trio \time 3/4
-		R2.*24
+		\trioPart \time 3/4
+		\mmrLength #28 \mmrnDown R2.*6
 % Bars 156 to 160
+		
+		
+		
+		\mmrLength #10 R2.*4
 		
 % Bars 161 to 165
 		
+		
+		\mmrLength #12 R2.*6
+		
+		
 % Bars 166 to 170
+		
+		
+		
+		\mmrLength #10 R2.*4
 		
 % Bars 171 to 175
 		
+		
+		\mmrLength #10 R2.*4
+		
+		
 % Bars 176 to 180
 		
-		\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-			\ni R2.
-			R
-			R
-			R \no
-		}
+		\ni \voiceTwo R2.
+		R
+		R
+		R \no \oneVoice 
 % Bars 181 to 185
 		d'2.\f\>~
 		d~
@@ -237,14 +251,12 @@ musicOboeIIMvtIII = \relative c'' {
 	
 % Bars 216 to 220
 	
-	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni \mmrPos #4 R2.
-		\mmrPos #4 R
-		\mmrPos #4 R
-		\mmrPos #4 R
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 221 to 225
-		\mmrPos #4 R \no
-	}
+	\mmrPos #4 R \no
 	fis,4(\pp g8 e fis4)
 	R2.*6
 % Bars 226 to 230

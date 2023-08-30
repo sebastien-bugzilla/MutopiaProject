@@ -402,12 +402,12 @@ musicOboeIIMvtI = \relative c' {
 	b4-> d,-> r
 % Bars 346 to 350
 	c'4 b8 f' e d 
-	f!\fz r a,4-. d-.\fz
+	f!-.\fz r a,4-. d-.\fz
 	a-. f'-.\fz a,-.
 	d-.\fz d-. e-.\fz
 	c4 b8 f' e d 
 % Bars 351 to 355
-	f\fz r a,4-. d-.\fz
+	f-.\fz r a,4-. d-.\fz
 	a-. f'-.\fz a,-.
 	d-.\fz d-. e-.\fz
 	e2\fz e4\fz~

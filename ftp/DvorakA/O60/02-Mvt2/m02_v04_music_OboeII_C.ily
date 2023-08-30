@@ -62,8 +62,8 @@ musicOboeIIMvtII = \relative c' {
 % Bars 46 to 50
 	
 	r4 g,-\tweak extra-offset #'(0 . 0.8) \pp\<(
-	<<f2) {s4\> s\!}>>
-	g8 g--\pp g-- g--
+	<<f2)( {s4\> s\!}>>
+	g8) g--\pp g-- g--
 	f2->(
 % Bars 51 to 55
 	ees8) g\< g g\!

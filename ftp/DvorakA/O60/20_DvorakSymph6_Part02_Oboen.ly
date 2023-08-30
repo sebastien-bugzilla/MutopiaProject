@@ -12,35 +12,27 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part02_Oboen.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part02_Oboen.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI.ily"
-\include "./01-Mvt1/m01_v04_music_OboeII.ily"
 \include "./02-Mvt2/m02_v03_music_OboeI.ily"
-\include "./02-Mvt2/m02_v04_music_OboeII.ily"
 \include "./03-Mvt3/m03_v03_music_OboeI.ily"
-\include "./03-Mvt3/m03_v04_music_OboeII.ily"
 \include "./04-Mvt4/m04_v03_music_OboeI.ily"
+\include "./01-Mvt1/m01_v04_music_OboeII.ily"
+\include "./02-Mvt2/m02_v04_music_OboeII.ily"
+\include "./03-Mvt3/m03_v04_music_OboeII.ily"
 \include "./04-Mvt4/m04_v04_music_OboeII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-%\addQuote "cueVoiceOboeIMvtI" { \cueVoiceOboeIMvtI }
-\addQuote "cueVoiceOboeIMvtII" { \cueVoiceOboeIMvtII }
-\addQuote "cueVoiceOboeIMvtIII" { \cueVoiceOboeIMvtIII }
-%\addQuote "cueVoiceOboeIMvtIV" { \cueVoiceOboeIMvtIV }
-\addQuote "cueVoiceOboeIIMvtI" { \cueVoiceOboeIIMvtI }
-\addQuote "cueVoiceOboeIIMvtII" { \cueVoiceOboeIIMvtII }
-\addQuote "cueVoiceOboeIIMvtIII" { \cueVoiceOboeIIMvtIII }
-%\addQuote "cueVoiceOboeIIMvtIV" { \cueVoiceOboeIIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -50,7 +42,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60"
+			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Oboen"
 		}
 		instrument = \markup {
 			"Oboen"
@@ -62,20 +54,19 @@
 				\formatOboeIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameOboeIMvtI \musicOboeIMvtI
+				\keepWithTag #'(oboeI) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtI
+				\InCueContext \cueVoiceOboeIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameOboeIMvtI \musicOboeIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -87,20 +78,19 @@
 				\formatOboeIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameOboeIMvtII \musicOboeIMvtII
+				\keepWithTag #'(oboeI) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtII
+				\InCueContext \cueVoiceOboeIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameOboeIMvtII \musicOboeIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -112,20 +102,19 @@
 				\formatOboeIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameOboeIMvtIII \musicOboeIMvtIII
+				\keepWithTag #'(oboeI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtIII
+				\InCueContext \cueVoiceOboeIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameOboeIMvtIII \musicOboeIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1.6 \bold { 3. Scherzo. (Furiant.) }
 			}
 		}
 		\layout {
@@ -137,20 +126,19 @@
 				\formatOboeIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameOboeIMvtIV \musicOboeIMvtIV
+				\keepWithTag #'(oboeI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtIV
+				\InCueContext \cueVoiceOboeIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameOboeIMvtIV \musicOboeIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold { 4. Finale. }
 			}
 		}
 		\layout {
@@ -162,20 +150,19 @@
 				\formatOboeIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameOboeIIMvtI \musicOboeIIMvtI
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\InCueContext \cueVoiceOboeIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameOboeIIMvtI \musicOboeIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -187,20 +174,19 @@
 				\formatOboeIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameOboeIIMvtII \musicOboeIIMvtII
+				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\InCueContext \cueVoiceOboeIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameOboeIIMvtII \musicOboeIIMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -212,20 +198,19 @@
 				\formatOboeIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameOboeIIMvtIII \musicOboeIIMvtIII
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\InCueContext \cueVoiceOboeIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameOboeIIMvtIII \musicOboeIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -237,20 +222,19 @@
 				\formatOboeIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameOboeIIMvtIV \musicOboeIIMvtIV
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\InCueContext \cueVoiceOboeIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameOboeIIMvtIV \musicOboeIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold { 4. Finale.}
 			}
 		}
 		\layout {

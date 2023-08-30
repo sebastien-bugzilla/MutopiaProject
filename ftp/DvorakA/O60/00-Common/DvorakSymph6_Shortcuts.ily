@@ -410,6 +410,36 @@ attaccatrio = {
 
 tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
+rehearsalESH = #(define-music-function
+	(ESW)
+	(pair?)
+	#{
+		\once \override Score.RehearsalMark.extra-spacing-height = #ESW
+	#}
+)
+
+rehearsalESW = #(define-music-function
+	(ESW)
+	(pair?)
+	#{
+		\once \override Score.RehearsalMark.extra-spacing-width = #ESW
+	#}
+)
+
+markWhiteout = {
+	\once \override Score.RehearsalMark.layer = #3
+	\once \override Score.RehearsalMark.whiteout = #1
+	\once \override Score.RehearsalMark.whiteout-style = #'outline
+}
+
+#(define (override-color-for-all-grobs color)
+  (lambda (context)
+   (let loop ((x all-grob-descriptions))
+    (if (not (null? x))
+     (let ((grob-name (caar x)))
+      (ly:context-pushpop-property context grob-name 'color color)
+      (loop (cdr x)))))))
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -482,12 +512,6 @@ tempoDown = \once \override Score.MetronomeMark.direction = #-1
 %		\once \override DynamicTextSpanner.bound-details.right.Y = #offset
 %	#}
 %)
-
-%markWhiteout = {
-%	\once \override Score.RehearsalMark.layer = #3
-%	\once \override Score.RehearsalMark.whiteout = #0.75
-%	\once \override Score.RehearsalMark.whiteout-style = #'outline
-%}
 
 %mmrPos = #(define-music-function
 %	(position)

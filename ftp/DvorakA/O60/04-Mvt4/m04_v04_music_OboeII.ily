@@ -10,13 +10,13 @@ musicOboeIIMvtIV = \relative c'' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*12
+	\mmrnDown R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
-	<<R1 {s2 \tempoXoffset #3 s}>>
+	R1
 	a1_\ppocoapococresc~
 	a2. gis4(
 % Bars 16 to 20
@@ -46,14 +46,14 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e-^\!~
 	e2. e4-. \mark \default
-	\tempoXoffset #1.5 d(_\ffgrandioso e d a)
+	d(_\ffgrandioso e d a)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
 	d4. d8 d4-.( e-.)
 	fis( a8 g fis4 e)
 	d( cis8 b e4 a,)
-	b( gis a b)
+	\stemUp b( gis a b) \stemNeutral
 	c( b8 a d4 g,)
 % Bars 46 to 50
 	a( fis g a)
@@ -92,7 +92,7 @@ musicOboeIIMvtIV = \relative c'' {
 	
 	
 % Bars 76 to 80
-	r4 e8(\p\< fis gis a b cis)
+	r4 e8(\p\< fis gis a b cis)\!
 	d4\fp \tuplet 3/2 4 {d8( cis b)} b2~
 	b4 r r2
 	R1*10
@@ -280,7 +280,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	\tupletYOff #-3 \tuplet 3/2 2 {r4 b(\p\< d \tupletYOff #-3  f e\> d\!)}
+	\tupletUp \tuplet 3/2 2 {r4 b(\p\< d f\> e d\!)} \tupletNeutral
 	c2 r
 	R1*5
 % Bars 256 to 260
@@ -397,7 +397,7 @@ musicOboeIIMvtIV = \relative c'' {
 	
 	\mark \default
 % Bars 366 to 370
-	d,4\p( a'\< bes\> g\!
+	d,4\p( a'-\tweak extra-offset #'(0 . 2.8) \< \once \stemUp bes-\tweak extra-offset #'(0 . 2.8) \> g\!
 	fis2 d)~
 	d1~
 	d4 r r2
@@ -531,7 +531,7 @@ musicOboeIIMvtIV = \relative c'' {
 	g-> fis-. e-> e-.
 % Bars 481 to 485
 	c-> r r e->
-	c-> r r g'-._\marc
+	c-> r r g'_\marc
 	e2-> e->
 	e-> e4-. cis!-.
 	cis1~
@@ -576,7 +576,7 @@ musicOboeIIMvtIV = \relative c'' {
 	\startMeasureCount d-> d-. d-> d-.
 	d-> d-. d-> d-.
 	d-> d-. d-> d-.
-	b-> d-. d-> d-. \stopMeasureCount \mark \default
+	d-> d-. d-> d-. \stopMeasureCount \mark \default
 % Bars 521 to 525
 	d r g2->~
 	g4 fis8( g fis4 e)

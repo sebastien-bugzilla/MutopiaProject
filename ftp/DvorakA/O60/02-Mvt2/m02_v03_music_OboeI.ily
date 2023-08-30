@@ -9,11 +9,9 @@ musicOboeIMvtII = \relative c'' {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	\cueDuring #"cueVoiceOboeIMvtII" #DOWN { 
-		\ni R2 \no 
-	}
-	r8 bes(\p a4
-	bes2)~\<
+	\ni \mmrPos #4 R2 \no 
+	r8 \stemUp bes(\p a4
+	bes2)~\< \stemNeutral
 	bes8\fp( d bes\> c
 	d)\pp r r4
 % Bars 6 to 10
@@ -21,16 +19,16 @@ musicOboeIMvtII = \relative c'' {
 	bes4(\< g8\! c
 	bes g\> d e)\!
 	f2~\p
-	f8\< f( g a)
+	f8\< f( g a)\!
 % Bars 11 to 15
-	bes4.\>( g16 a\!
-	bes8) r r4
+	\stemUp bes4.\>( g16 a\!
+	bes8) \stemNeutral r r4
 	R2*6
 % Bars 16 to 20
 	
 	
 	
-	f8(_\pcresc bes d f~
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f8(_\pcresc bes d f~
 	f_\dimmarkup ees d c
 % Bars 21 to 25
 	f4.)\pp r8
@@ -49,7 +47,7 @@ musicOboeIMvtII = \relative c'' {
 	d8 r r4
 	R2*2
 	\bar "||" \mark \default
-	\tempoXoffset #1.5 r4 fis--\pp
+	r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
 	fis fis
@@ -69,7 +67,7 @@ musicOboeIMvtII = \relative c'' {
 	bes8) bes--\pp bes-- bes--
 	aes2->(
 % Bars 51 to 55
-	g8) bes\< bes bes
+	g8) bes\< bes bes\!
 	a!2\f\>
 	bes\p\>~
 	bes8\! r r4
@@ -88,7 +86,7 @@ musicOboeIMvtII = \relative c'' {
 	R2
 % Bars 66 to 70
 	r4 r8. a,16\f
-	r8. a16^\dimmarkup r8. f16
+	r8. a16_\dimmarkup r8. f16
 	R2*5
 % Bars 71 to 75
 	
@@ -97,17 +95,17 @@ musicOboeIMvtII = \relative c'' {
 	
 	bes4\p( g8 c
 % Bars 76 to 80
-	bes\< g d\! e)\>
-	f2~\!
-	f~
+	bes\< g d e)\!
+	<<f2~ {s8\> s s s\! }>>
+	f2~
 	f8 r r4
 	R2*6
 % Bars 81 to 85
 	
 % Bars 86 to 90
-	r8 c'8\p\< c c
+	r8 c'8\p\< c c\!
 	d2\f
-	ees4(\> c8 a \mark \default
+	ees4(\> c8 a\! \mark \default
 	bes4.)\pp r8
 	R2*5
 % Bars 91 to 95
@@ -149,7 +147,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 121 to 125
 	bes!2\pp~
 	bes
-	R2
+	R2 
 	ges4(_\ppocoapococrescendo ees!8 aes
 	ges2)~
 % Bars 126 to 130
@@ -168,7 +166,7 @@ musicOboeIMvtII = \relative c'' {
 	e dis)
 	e g8(--\< g--)\!
 	f!2\>~
-	f~\pp \mark \default
+	f~\pp \markWhiteout \mark \default
 	f4.( g8~
 % Bars 141 to 145
 	g4 fis)
@@ -183,7 +181,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	r8 bes4(_\pcresc a16 g
 % Bars 151 to 155
-	\hairpinMinLength #8 f2)~\mf\>
+	f2)~\mf\>
 	f8\p r r4
 	R2*3
 	
@@ -193,9 +191,9 @@ musicOboeIMvtII = \relative c'' {
 	d8) r r4
 	R2*2
 	
-	r8 bes'!4(\p\< a16 g
+	r8 bes'!4(\p\< a16 g\!
 % Bars 161 to 165
-	c,4.)\> c8
+	c,4.)\> c8\!
 	\shape #'((0 . 0)(0 . 1.5)(0 . 0.5)(0 . -1)) Slur c\p( aes'4 g16\> f
 	bes,4.)\! bes8
 	bes( ees4\pp d16 c~
@@ -213,10 +211,10 @@ musicOboeIMvtII = \relative c'' {
 	f)\noBeam d(\mf\< ees e\!
 % Bars 176 to 180
 	f)\noBeam d(\f\< ees e\!
-	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes->-. 
+	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes->-.\!
 	a8\ff r g4-^~
 	g8\> bes( a g~\!
-	g f4)\p r8
+	g\p f4) r8
 % Bars 181 to 185
 	R2*6
 	

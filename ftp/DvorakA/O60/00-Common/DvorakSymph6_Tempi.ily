@@ -234,9 +234,9 @@ tempiPartMvtI = {
 		hornIII hornIV violinI violinII bratsche violoncello bassi) {
 		\tempo \markup {
 			\concat {
-				"un poco più animato. ("
-				\fontsize #-4 \general-align #Y #DOWN \note {4} #0.75
-				" = 144.)"
+				\medium \italic "un poco più animato. ("
+				\fontsize #-4 \general-align #Y #DOWN \note {4} #1
+				\medium \italic " = 144.)"
 			}
 		}
 	}
@@ -297,10 +297,17 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 413
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(floteI floteII oboeI oboeII fagottI  fagottII hornII hornIII hornIV
+	\tag #'(floteI floteII oboeII fagottI  fagottII hornII hornIII hornIV
 		trompeteI trompeteII posauneI posauneII posauneIII tuba violinII 
 		bratsche violoncello kontrabass bassi) {
 		\tempo "Poco tranquillo."
+	}
+	\tag #'(oboeI) {
+		\tempo \markup {
+			\column {
+				\lower #1.5 "Poco" "tranquillo."
+			}
+		}
 	}
 	\tag #'(klarinetteI klarinetteII pauken violinI) {
 		\tempo \markup {
@@ -330,12 +337,12 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 532
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(floteI floteII oboeI trompeteI trompeteII posauneI violinII) {
+	\tag #'(floteI floteII trompeteI trompeteII posauneI violinII) {
 		\tempo \markup { 
 			\medium \italic "poco sosten."
 		}
 	}
-	\tag #'(oboeII klarinetteI klarinetteII fagottI fagottII hornI hornII 
+	\tag #'(oboeI oboeII klarinetteI klarinetteII fagottI fagottII hornI hornII 
 		hornIIIhornIV pauken violinI bratsche violoncello kontrabass bassi) {
 		\tempo \markup {
 			\medium \italic "poco sostenuto"
@@ -439,6 +446,9 @@ tempiPartMvtII = {
 			}
 		}
 	}
+	\tag #'(oboeI) {
+		\tempo "Poco più animato."
+	}
 	\tag #'(trompeteI trompeteII pauken) {
 		\tempo \markup {
 			\medium \italic \center-column {
@@ -446,7 +456,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(oboeI oboeII klarinetteI klarinetteII fagottI fagottII hornI
+	\tag #'(oboeII klarinetteI klarinetteII fagottI fagottII hornI
 		hornII hornIII hornIV violinI violinII bratsche violoncello kontrabass 
 		bassi) {
 		\tempo \markup { 
@@ -544,7 +554,21 @@ tempiPartMvtIII = {
 			}
 		}
 	}
-	\tag #'( oboeII fagottI fagottII hornI hornII hornIII hornIV 
+	\tag #'(oboeII) {
+		\tempo \markup {
+			\column {
+				\lower #1.5 \line {
+					"Poco meno mosso."
+				}
+				\concat {
+					"(M.M. "
+					\fontsize #-4 \general-align #Y #DOWN \note {2.} #1
+					" = 80.)"
+				}
+			}
+		}
+	}
+	\tag #'(  fagottI fagottII hornI hornII hornIII hornIV 
 		trompeteI trompeteII pauken violinI violinII bratsche violoncello 
 		bassi) {
 		\tempo \markup {
@@ -571,7 +595,13 @@ tempiPartMvtIII = {
 			\medium \italic "poco sosten."
 		}
 	}
-	\tag #'(oboeII klarinetteI fagottI fagottII hornI hornII hornIV 
+	\tag #'(oboeII) {
+		\tempoXoffset #-1
+		\tempo \markup {
+			\medium \italic "poco sost."
+		}
+	}
+	\tag #'(klarinetteI fagottI fagottII hornI hornII hornIV 
 		trompeteI trompeteII pauken violinII bratsche) {
 		\tempo \markup {
 			\medium \italic "poco sost."
@@ -603,9 +633,15 @@ tempiPartMvtIII = {
 			\medium \italic "poco sost."
 		}
 	}
-	\tag #'(floteII oboeII klarinetteI fagottI fagottII hornI hornII 
+	\tag #'(floteII  klarinetteI fagottI fagottII hornI hornII 
 		hornIV trompeteI trompeteII pauken violinI violoncello kontrabass 
 		bassi) {
+		\tempo \markup {
+			\medium \italic "poco sost."
+		}
+	}
+	\tag #'(oboeII) {
+		\tempoXoffset #-1 
 		\tempo \markup {
 			\medium \italic "poco sost."
 		}
@@ -678,14 +714,21 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 428
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII fagottI 
+	\tag #'(   oboeII klarinetteI klarinetteII fagottI 
 		fagottII hornI hornII hornIII hornIV trompeteI trompeteII pauken violinI
 		violinII bratsche) {
 		\tempo \markup {
 			\medium \italic "poco a poco accelerando"
 		}
 	}
-	\tag #'(floteI floteII) {
+%	\tag #'() {
+%		\tempo \markup {
+%			\medium \italic \column {
+%				\lower #1.5 "poco a poco" "accelerando"
+%			}
+%		}
+%	}
+	\tag #'(floteI floteII oboeI) {
 		\tempoXoffset #-2 
 		\tempo \markup {
 			\medium \italic \column {
@@ -704,7 +747,7 @@ tempiPartMvtIII = {
 }
 %-------------------------------------------------------------------------------
 tempiPartMvtIV = {
-	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI 
+	\tag #'(floteI floteII oboeI klarinetteI klarinetteII fagottI 
 		fagottII hornI hornII hornIII hornIV trompeteI trompeteII posauneI 
 		posauneII posauneIII tuba pauken violinI violinII bratsche violoncello 
 		kontrabass bassi) {
@@ -716,19 +759,34 @@ tempiPartMvtIV = {
 			}
 		}
 	}
+	\tag #'(oboeII) {
+		\tempo \markup {
+			\column {
+				\lower #1.5 
+				\line { "Allegro con spirito." }
+				\line {
+					\concat {
+						"(M.M. "
+						\fontsize #-4 \general-align #Y #DOWN \note {2} #1
+						" = 84.)"
+					}
+				}
+			}
+		}
+	}
 	\partial 4 s4
 	s1*12 s2
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 13.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(floteI  oboeI oboeII klarinetteI klarinetteII fagottI fagottII hornI 
+	\tag #'(floteI   oboeII klarinetteI klarinetteII fagottI fagottII hornI 
 		hornII hornIII hornIV violinI violinII bratsche violoncello kontrabass
 		bassi) {
 		\tempo \markup {
 			\medium \italic "accelerando poco a poco"
 		}
 	}
-	\tag #'(floteII trompeteI trompeteII posauneI posauneII posauneIII tuba pauken) {
+	\tag #'(floteII oboeI trompeteI trompeteII posauneI posauneII posauneIII tuba pauken) {
 		\tempo \markup {
 			\medium \italic \center-column { 
 				\lower #1.5 "accelerando" "poco a poco"
@@ -780,14 +838,14 @@ tempiPartMvtIV = {
 			\medium \italic "accelerando"
 		}
 	}
-	\tag #'(floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII hornI
+	\tag #'(floteII oboeI  klarinetteI klarinetteII fagottI fagottII hornI
 		hornII hornIII hornIV trompeteI trompeteII posauneI posauneII posauneIII
 		tuba pauken violinI violinII bratsche violoncello) {
 		\tempo \markup {
 			\medium \italic "accelerando poco a poco"
 		}
 	}
-	\tag #'(kontrabass bassi) {
+	\tag #'(oboeII kontrabass bassi) {
 		\tempo \markup {
 			\medium \italic \column {
 				\lower #1 "accelerando" "poco a poco"

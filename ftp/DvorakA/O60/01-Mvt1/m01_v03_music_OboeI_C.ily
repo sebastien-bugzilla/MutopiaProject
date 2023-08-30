@@ -414,12 +414,12 @@ musicOboeIMvtI = \relative c'' {
 	d4-> g,-> r
 % Bars 346 to 350
 	f'8->-._\fsempre[ g-. aes-. aes-. g-. f-.]
-	a!\fz r c,4-. f-.\fz
+	a!-.\fz r c,4-. f-.\fz
 	c-. a'-.\fz c,-.
 	g'-.\fz g-. g-.\fz
 	f8-.[ g-. aes-. aes-. g-. f-.]
 % Bars 351 to 355
-	a\fz r c,4-. f-.\fz
+	a-.\fz r c,4-. f-.\fz
 	c-. a'-.\fz c,-.
 	g'-.\fz g-. g-.\fz
 	g2\fz g4\fz~

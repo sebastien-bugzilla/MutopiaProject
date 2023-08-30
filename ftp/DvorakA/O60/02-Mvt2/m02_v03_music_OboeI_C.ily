@@ -214,7 +214,7 @@ musicOboeIMvtII = \relative c'' {
 	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes->-.\!
 	a8\ff r \partCombineApart g4-^~
 	g8_\> bes( a g)~\!
-	g( f4)_\p r8
+	g(_\p f4) r8
 % Bars 181 to 185
 	R2*2
 	

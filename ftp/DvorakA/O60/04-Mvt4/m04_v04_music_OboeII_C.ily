@@ -604,7 +604,7 @@ musicOboeIIMvtIV = \relative c'' {
 	d-> d d d-.
 	d-> d-. d-> d-.
 	d d d d-.
-	b-> d-. d-> d-. \mark \default
+	d-> d-. d-> d-. \mark \default
 % Bars 521 to 525
 	d r g2->~
 	g4 fis8( g fis4 e)

@@ -180,9 +180,9 @@ musicOboeIMvtIII = \relative c''' {
 	d_\dimmarkup
 % Bars 151 to 155
 	d
-	d \stopMeasureCount \bar "||" \key d \major
+	d \stopMeasureCount \bar "||" \key d \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio d4(\fp e8 cis d4)
+		\time 3/4 \trioPart d4(\fp e8 cis d4)
 		R2.
 		d4(\p e8 cis d4)
 % Bars 156 to 160
@@ -282,13 +282,11 @@ musicOboeIMvtIII = \relative c''' {
 	
 	
 	
-	\cueDuring #"cueVoiceOboeIMvtIII" #UP {
-		\ni R2.
-		R
+	\ni \voiceTwo R2.
+	R
 % Bars 266 to 270
-		R
-		R \no
-	}
+	R
+	R \no \oneVoice 
 	d'2(\p a4
 	e2 fis4
 	g_\dimsempre a b
@@ -369,7 +367,7 @@ musicOboeIMvtIII = \relative c''' {
 	r a r
 	a r a
 	f!8( g a\< bes c cis
-	d4) g4-.\f f-.
+	d4)\! g4-.\f f-.
 	a2->\ff bes4->~
 % Bars 346 to 350
 	bes a2->
@@ -459,7 +457,7 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 426 to 430
 	f-. d8( cis d4)
 	a'-. a,(-> b8 cis)
-	\tempoXoffset #-3 d4-. f-. d-.
+	d4-. f-. d-.
 	d-. f-. d-.
 	a-. g'->( f8 e)
 % Bars 431 to 435
