@@ -9,11 +9,10 @@ musicKlarinetteIMvtII = \relative c'' {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	\cueDuring #"cueVoiceKlarinetteIMvtII" #DOWN {
-		\ni R2 \no
-	r8 } c(\p b e)~
+	\ni \voiceOne R2 \no 
+	r8 \oneVoice c(\p b e)~
 	e4.(\< fis8\!
-	\hairpinMinLength #7.5 g2)\fp~\>
+	g2)\fp~\>
 	g8\pp r e4(~
 % Bars 6 to 10
 	e16 d b16. a32 gis4
@@ -24,7 +23,7 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 16 to 20
 	
 	
-	r8 e'\p\<-- e-- d--
+	r8 e'\p\<-- e-- d--\!
 	e2-\tweak X-offset #0 _\fzdimD
 	c4( b
 % Bars 21 to 25
@@ -44,7 +43,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	g8 r r4
 	R2*2
 	\bar "||" \mark \default
-	\tempoXoffset #1.5 r4 b,\pp--
+	r4 b,\pp--
 % Bars 36 to 40
 	b-- b--
 	b b
@@ -59,15 +58,15 @@ musicKlarinetteIMvtII = \relative c'' {
 	R2*2
 % Bars 46 to 50
 	
-	c8(\pp\< a'4 g16 f)
-	<< des2 {\hairpinMinLength #5 s4\> s\!} >>
+	c8(\pp\< a'4 g16 f)\!
+	<< des2 {\hairpinShorten #'(0 . -2) s4\> s\!} >>
 	c8( a'4 g16 f)
 	des2->(
 % Bars 51 to 55
-	c8) f4\< f8
-	fis4.\f\> fis8
+	c8) f4\< f8\!
+	fis4.\f\> fis8\!
 	a(\p e4) c8~
-	c(\> a~ a16 b c d)
+	c(\> a~ a16 b c d)\!
 	e8\pp r r4
 % Bars 56 to 60
 	r8 a,(\p gis c)~
@@ -107,15 +106,15 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 86 to 90
 	
 	r16 g,(-\tweak X-offset #-2.5 \f c\< e g c e g)~\!
-	g8(\> f16 e g f e d) \mark \default
+	g8(\> f16 e g f e d)\! \mark \default
 	g4.\pp r8
 	R2
 % Bars 91 to 95
 	r4 r8 e(\p
 	cis\< g'\! e\> cis\!
 	d) r r4
-	R2*4
-	
+	R2
+	\mmrnDown R2*3
 % Bars 96 to 100
 	
 	
@@ -151,7 +150,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	d4 d
 	d d
 	d8\f d d d
-	d16\< gis gis gis  gis gis gis gis
+	d16\< gis gis gis  gis gis gis gis\!
 % Bars 131 to 135
 	gis\ff r r8 r4
 	R2*3
@@ -162,13 +161,13 @@ musicKlarinetteIMvtII = \relative c'' {
 	b!2)
 	a4 a8(--\< c!--)\!
 	e2\>
-	d4.(\pp e16 f! \mark \default
+	d4.(\pp e16 f! \markWhiteout \mark \default
 	e4) r
 % Bars 141 to 145
 	R2*2
 	
-	c2\p\<~
-	c8\mf\< e( g e)
+	\hairpinShorten #'(-0.5 . -0.5) c2\p\<~
+	c8\mf\< e( g e)\!
 	d2\>(
 % Bars 146 to 150
 	c8)\p r r4
@@ -215,7 +214,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	c! d)
 % Bars 186 to 190
 	e2(\pp\<
-	d\>
+	\hairpinShorten #'(0 . 1.5) d\>
 	c8\!) r r4
 	R2*8
 % Bars 191 to 195

@@ -14,9 +14,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 6 to 10
 	
 	
-	\cueDuring #"cueVoiceKlarinetteIIMvtIV" #UP {
-		\ni R1 \no
-	}
+	\ni \mmrPos #-4 R1 \no
 	g4(\p f e d)
 	e( g' fis f)
 % Bars 11 to 15
@@ -28,7 +26,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 21 to 25
 	b4.\f b8 b4-. e-.
 	dis r r2
-	fis4. fis8\< fis4-. bes!-.\!
+	fis4. fis8\< fis4-. \once \stemUp bes!-.\!
 	a r r2
 	R1*5
 % Bars 26 to 30
@@ -42,11 +40,11 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	bes->~
 	bes
 	g'\<~
-	g
+	g\!
 % Bars 36 to 40
 	e\!-^~
 	e2. e4-. \mark \default
-	\tempoXoffset #1 f8_\ffgrandioso\noBeam a,( c bes a g f e)
+	f8_\ffgrandioso\noBeam \stemUp a,( c bes \stemNeutral a g f e)
 	d( e f e d c bes c)
 	a r f'( g a bes c bes)
 % Bars 41 to 45
@@ -138,7 +136,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	c4-. c-. a( b)
 	c4( e) d2
 % Bars 126 to 130
-	c4-. c-. a( b)
+	c4-. c-. a( \once \stemUp b)
 	c4( a') g2->
 	f4( a) g2->~
 	g4 f2 e4~
@@ -277,7 +275,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 271 to 275
 	
 	
-	r2 d4\f r
+	r2 d!4\f r
 	R1
 	r2 e4\f r
 % Bars 276 to 280
@@ -294,7 +292,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	aes-. g-. aes-. g-.
 % Bars 286 to 290
 	ees(\< e f fis)\!
-	g r c,\ff r8 g'-.
+	g r c,-\offset X-offset 0.5 \ff r8 g'-.
 	e-. d-. c-. g-. c4 r8 g'
 	e d c g c4 r8 c
 	aes g f c f4 r8 c'
@@ -315,7 +313,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	ees1
 	ees2-> c-> \mark \default
 	c1\ff\>~
-	c~
+	c~\!
 % Bars 306 to 310
 	c4\p r4 r2
 	R1*19
@@ -329,7 +327,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 % Bars 326 to 330
 	f,4(\p ees d c)
-	d( f' e ees)
+	d( f' e! ees)
 	d8( bes' a! g f g ees f
 	d4) bes-. r2
 	R1*8
@@ -360,8 +358,8 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	e) c( d e)~
 	e e( f g)~
 % Bars 356 to 360
-	g g,( a bes)~
-	bes bes( a g 
+	g g,( a \stemUp bes)~
+	bes bes( \stemNeutral a g 
 	g') r e r
 	e r e r
 	e r r2
@@ -373,8 +371,8 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	\mark \default
 % Bars 366 to 370
 	a,4\p r g r
-	a r a( bes
-	a) r a( bes
+	a r a( \once \stemUp bes
+	a) r a( \once \stemUp bes
 	a) r r2
 	R1*4
 % Bars 371 to 375
@@ -454,7 +452,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	
 	r2 r4 bes,,!\f-. \mark \default \bar "||"
-	\tempoXoffset #0.5 a-.\f r  r bes-.
+	a-.\f r  r bes-.
 % Bars 441 to 445
 	a-. r r g-.
 	a-. r r bes-.
@@ -537,7 +535,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	g4(\f f8 g f4 ees)
 	a( g8 a g4 f)
-	bes( a8 bes a4 g)
+	\once \stemUp bes( a8 bes a4 g)
 % Bars 516 to 520
 	c( bes8 c bes4 a)
 	f'-> d-. e!-> c-.

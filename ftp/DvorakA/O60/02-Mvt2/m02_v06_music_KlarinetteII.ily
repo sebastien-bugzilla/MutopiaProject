@@ -17,13 +17,11 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceKlarinetteIIMvtII" #UP {
-		\ni \mmrPos #4 R2
+	\ni \mmrPos #4 R2
 % Bars 16 to 20
-		\mmrPos #4 R
-		\mmrPos #4 R \no
-	}
-	r8 b\p\<-- c-- c--
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	r8 b\p\<-- c-- c--\!
 	c2-\tweak X-offset #0 _\fzdimD
 	a4( g~
 % Bars 21 to 25
@@ -36,14 +34,14 @@ musicKlarinetteIIMvtII = \relative c'' {
 	fis8 a g fis)
 	fis4 e\<(
 	d8)\! r r4
-	\tempoXoffset #-2 \mmrLength #22 R2*6
+	\mmrLength #20 \mmrnDown R2*6
 	
 % Bars 31 to 35
 	
 	
 	
 	\bar "||" \mark \default
-	\tempoXoffset #1.5 r4 gis\pp--
+	r4 gis\pp--
 % Bars 36 to 40
 	gis-- gis--
 	gis gis
@@ -57,11 +55,9 @@ musicKlarinetteIIMvtII = \relative c'' {
 % Bars 51 to 55
 	
 	
-	\cueDuring #"cueVoiceKlarinetteIIMvtII" #UP {
-		\ni R2
-		R
-		R \no
-	}
+	\ni \voiceTwo R2
+	R
+	R \no \oneVoice 
 % Bars 56 to 60
 	r8 a(\p gis4
 	a2)\<~
@@ -72,10 +68,10 @@ musicKlarinetteIIMvtII = \relative c'' {
 	a\pp r
 	a r
 	r8^\solo d(\p b e
-	d)\< b4 b8\!~
+	d)\< \stemUp b4 b8\!~
 	b16\f b8 b b b16~
 % Bars 66 to 70
-	b8. r16 r4
+	b8. \stemNeutral r16 r4
 	R2*6
 	
 	
@@ -92,7 +88,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 	c,4(\pp e)
 % Bars 81 to 85
-	f2\<
+	\after 8*3 \! f2\<
 	e4\> d(\!
 	a8) r r4
 	R2*5
@@ -140,9 +136,9 @@ musicKlarinetteIIMvtII = \relative c'' {
 	gis4 gis
 	gis gis
 	gis8\f gis gis gis
-	gis16\< b b b b b b b
+	gis16\< b b b \stemUp b b b b\! 
 % Bars 131 to 135
-	b\ff r r8 r4
+	b\ff \stemNeutral r r8 r4
 	R2*3
 	
 	
@@ -178,7 +174,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	\tempoXoffset #1.5 r8 c'4(\p g16 e)
+	r8 c'4(\p g16 e)
 	e8 r r4
 % Bars 171 to 175
 	r8 c'4( g16 e)
@@ -200,7 +196,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	c!)~
 % Bars 186 to 190
 	c2\pp\<(
-	g\>)~
+	\after 8*3 \! g\>)~
 	g8\! r r4
 	R2*8
 % Bars 191 to 195

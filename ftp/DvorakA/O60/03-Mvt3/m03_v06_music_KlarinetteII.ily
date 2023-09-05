@@ -154,7 +154,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 126 to 130
 		dis( e) dis(
 		e) dis( e)
-		c2\ff  c4~
+		c2_\ffgrandioso c4~
 		c c2
 		c2  c4~
 % Bars 131 to 135
@@ -182,7 +182,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 			aes r r
 		}
 		{
-			\startMeasureCount c2.\f\>
+			\startMeasureCountAt #2 c2.\f\>
 		}
 	}
 	c
@@ -191,22 +191,22 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	c_\dimmarkup
 % Bars 151 to 155
 	c
-	c \stopMeasureCount \bar ".|:-||" \key f \major
+	c \attaccatrio \stopMeasureCount \bar ".|:-||" \key f \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio a
+		\time 3/4 \trioPart a
 		R2.
 		a(\p
 % Bars 156 to 160
 		bes\<
 		c
-		d2 c4)
+		d2 c4)\!
 		bes2.\fp~
 		bes~\>
 % Bars 161 to 165
 		bes~
 		bes\pp
 		bes->\p
-		R
+		\mmrnDown R
 		bes\p(
 % Bars 166 to 170
 		c\<
@@ -222,8 +222,8 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		c2.~\<
 % Bars 176 to 180
 		c\!
-		bes4-.\f\< c-. d-.
-		c2.\>
+		bes4-.\f\< c-. d-.\!
+		\after 8*5 \! c2.\>
 		bes4-.\< c-. d-.\!
 		c2.
 % Bars 181 to 185
@@ -264,13 +264,11 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceKlarinetteIIMvtIII" #DOWN {
-		\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-4 R2.
 % Bars 226 to 230
-		\mmrPos #-4 R
-		\mmrPos #-4 R
-		\mmrPos #-4 R \no
-	}
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	a,4(\p d f
 	a d f~
 % Bars 231 to 235
@@ -283,7 +281,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	bes a g)
 	f( a d
 	c2.)
-	bes4( a g
+	\once \stemUp bes4( a g
 	f g e)
 % Bars 241 to 245
 	d2.\pp~
@@ -317,7 +315,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	\tempoXoffset #-4 R2.*7
+	R2.*7
 % Bars 286 to 290
 	
 	\bar "||" \key f \minor
@@ -441,7 +439,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	e-. dis-. dis-.
 	e-. dis-. dis-.\!
 % Bars 401 to 405
-	\startMeasureCount e-.\fz e-. e-.
+	\startMeasureCountAt #1 e-.\fz e-. e-.
 	e-.\fz e-. e-.
 	e-.\fz e-. e-.
 	e-.\fz e-. e-.

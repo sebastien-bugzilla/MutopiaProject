@@ -18,7 +18,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 6 to 10
 		r r c
 		c4. c8\< c4
-		c2( c4)
+		c2( c4)\!
 		d2.\f\>(
 		bes2\p) r4
 % Bars 11 to 15
@@ -32,7 +32,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 31 to 35
 		
 		
-		ees,4\f\< d8-. aes'-. g-. f-. 
+		ees,4\f\< d8-. aes'-. g-. f-.\!
 		aes4-.\fz f-. aes\fz-.
 		f-. aes-.\fz f-.
 % Bars 36 to 40
@@ -50,7 +50,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 46 to 50
 		e e2\<~
 		e2.~
-		e \mark \default
+		e\! \mark \default
 		f4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		f2 r4
 % Bars 51 to 55
@@ -58,7 +58,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		f-. f-. r
 		r r c
 		a4. a8 a4\<
-		a( c f)
+		a( c f)\!
 % Bars 56 to 60
 		fis2(\fz g8 a)
 		g2.
@@ -66,10 +66,10 @@ musicKlarinetteIIMvtI = \relative c'' {
 		f4 c( d8 ees
 		d2) g,8(\< a
 % Bars 61 to 65
-		bes2\!) g8(\< a
+		\stemUp bes2\!) g8(\< a
 		bes2\!) g8(\< a
 		bes2\!) g8( a
-		bes4-.) r r
+		bes4-.) \stemNeutral r r
 		R2.*4
 % Bars 66 to 70
 		
@@ -131,8 +131,8 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 126 to 130
 		
 		
-		fis4--\p\< d'-- d--
-		d--\> d-- cis--
+		fis4--\p\< d'-- d--\!
+		d--\> d-- cis--\!
 		b\pp r r 
 % Bars 131 to 135
 		R2.*8
@@ -150,7 +150,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		a8-.) fis( g a) g4->(
 % Bars 146 to 150
 		a8-.) fis( g a d, e
-		fis\> a, cis d fis, g)
+		fis\> a, cis d fis, g)\!
 		fis4\p r r
 		fis r r
 		g_\crescmarkup r r
@@ -186,7 +186,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	\alternative {
 		{
 			r4 a\p\< a
-			d d d 
+			d d d\!
 			f2._\fpdimD~
 			f~
 % Bars 181 to 185
@@ -223,13 +223,11 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 196 to 200
 	
 	
-	\cueDuring #"cueVoiceKlarinetteIIMvtI" #DOWN {
-		\ni \mmrPos #-4 R2.
-		\mmrPos #-4 R \no
-	}
-	aes'2(_\mfp^\solo g8 f)
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	aes'2(-\offset X-offset -1.5 _\mfp^\solo g8 f)
 % Bars 201 to 205
-	f2(\> ees8 d)
+	f2(\> ees8 d)\!
 	d2\p( ees8 f)
 	f2\<( g8 aes)
 	aes2( g8 f)\!
@@ -253,14 +251,12 @@ musicKlarinetteIIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceKlarinetteIIMvtI" #UP {
-		\ni R2. \no
-	}
+	\ni \mmrPos #-4 R2. \no
 % Bars 226 to 230
 	r4 d'(\p c8 b)
 	R2.*2
 	
-	r4 b(\p a8 gis)
+	r4 \once \stemUp b(\p a8 gis)
 	R2.*3
 % Bars 231 to 235
 	
@@ -270,7 +266,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 236 to 240
 	
 	
-	r4 f(\< ees8 d)
+	r4 f(\< ees8 d)\!
 	e!4\f r r
 	R2.
 % Bars 241 to 245
@@ -359,7 +355,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	c c-. r
 	c4. c8 c4
 % Bars 321 to 325
-	c2\< c4
+	c2\< c4\!
 	d2.(\fz\> 
 	bes2)\! r4
 	R2.*5
@@ -370,14 +366,14 @@ musicKlarinetteIIMvtI = \relative c'' {
 	r4 r c(\p\<
 	c2 bes4
 % Bars 331 to 335
-	c d c)
+	c d c)\!
 	c2(\f bes4
 	a_\dimmarkup bes a)
 	bes(\p\> f' e!
 	d e d\!
 % Bars 336 to 340
 	cis8)\pp r r4 r
-	R2.*9
+	\mmrnDown R2.*9
 % Bars 341 to 345
 	
 % Bars 346 to 350
@@ -456,7 +452,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	
 % Bars 421 to 425
 	a!8\pp\< a a4 c8 c
-	f4 f(\> e)
+	f4\! f(\> e)
 	d\! r r
 	R2.*7
 	
@@ -464,7 +460,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	
 % Bars 431 to 435
 	r4 b,8\mf-. c-. d4->
-	d8(\< e f fis g f)
+	d8(\< e f fis g f)\!
 	e-.\f r r4 bes'!(->
 	c8) r r4 bes(->
 	c8) r r4 des-.\<
@@ -473,10 +469,10 @@ musicKlarinetteIIMvtI = \relative c'' {
 	f8-. a,( bes c) bes4->(
 	a8-.) a( bes c)  bes4->(
 	a8-.) a( bes c f,\> g
-	a c, e f a, bes)
+	a c, e f a, bes)\!
 % Bars 441 to 445
 	a4\p r r
-	a r_\crescmarkup r
+	a_\crescmarkup r r
 	bes r r 
 	c r r \mark \default
 	R2.*3
@@ -489,7 +485,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 451 to 455
 	des-. ees-. des2
 	R2.
-	f8[-.\f\< g-.] f( e f e)
+	f8[-.\f\< g-.] f( e f e)\!
 	f2\ff( g4)
 	f2( c4)
 % Bars 456 to 460
@@ -544,40 +540,41 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 506 to 510
 	
 	
+	
 	r4 r e-.\f
 	f-._\marc f-. e-.
-	f-. c-. e-.
 % Bars 511 to 515
+	f-. c-. e-.
 	f-. c-. e-.
 	f-. c-. e-.
 	a,4.\ff a8 a4
 	a( c f)
-	a2(\fz g8 f)
 % Bars 516 to 520
+	a2(\fz g8 f)
 	f2.
 	f4. f8 f4
 	a2(\fz g8 f)
 	f2 r4
-	a2\fz g8( f)
 % Bars 521 to 525
+	a2\fz g8( f)
 	a2\ff g8( f)
 	a2 g8( f)
 	a2(\> g8 f)
 	f2\! r4
-	a2(\p g8 f)
 % Bars 526 to 530
+	a2(\p g8 f)
 	f2( c8_\dimmarkup a)
 	a2 r4
-	R2.*9
+	R2.*3
+	
 % Bars 531 to 535
 	
+	\mmrLength #12 R2.*6
 % Bars 536 to 540
 	
 	
-	\cueDuring #"cueVoiceKlarinetteIIMvtI" #DOWN {
-		\ni \mmrPos #-4 R2.
-		\mmrPos #-4 R \no
-	}
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	c2.\pp--
 % Bars 541 to 545
 	c--

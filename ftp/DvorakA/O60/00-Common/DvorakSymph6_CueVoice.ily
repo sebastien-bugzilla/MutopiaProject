@@ -217,62 +217,62 @@ cueVoiceOboeIIMvtIV = \relative c {
 %###############################################################################
 cueVoiceKlarinetteIMvtI = \relative c {
 	\transposition a
-	R2.*238
+	s2.*238
 	% bar 225
 	r4 g'''4(^\markup {Fl.} f!8 e)
-	R2.*312
+	s2.*312
 	% bar 538 - 539
-	f4\rest c'^(^\markup {Fl.} d8 e
+	\once \voiceOne r4 c'^(-\offset X-offset -3 ^\markup {Fl.} d8 e
 	f2.)
 }
 cueVoiceKlarinetteIMvtII = \relative c {
 	\transposition bes
 	% bar 1 - 2
-	r8-\tweak X-offset #-2 _\markup {Hob.} g'' e a~
-	a4*1/2 r8 r4
+	\voiceTwo r8-\tweak X-offset #-2 _\markup {Hob.} g'' e a~
+	a4*1/2 s8 s4 \oneVoice  
 }
 cueVoiceKlarinetteIMvtIII = \relative c {
 	\transposition a
-	R2.*225
+	s2.*225
 	% bar 225 - 228
-	f''4^(^\markup {Viol.} g8 e f4
+	f''4^(-\offset X-offset #-3 ^\markup {Viol.} g8 e f4
 	a bes8 gis a4
 	d e8 c d4
 	d e8 c d4)
 }
-%cueVoiceKlarinetteIMvtIV = \relative c {
+cueVoiceKlarinetteIMvtIV = \relative c {
 %	no cue voice for Mvt IV
-%}
+}
 cueVoiceKlarinetteIIMvtI = \relative c {
 	\transposition a
-	R2.*211
+	s2.*211
 	% bar 198 - 199
 	<ees'' g>2^(\p^\markup {Hörner in D.} <d f>8 <c ees>)
 	<c ees>2^( <bes! d>8 <a c>)
-	R2.*25
+	s2.*25
 	% bar 225
 	r4^\markup {Fl.} g'( f8 e)
-	R2.*312
+	s2.*312
 	% bar 538 - 539
-	f4\rest^\markup {Fl.} c'^( d8 e
+	\once \voiceOne r4-\offset X-offset -2 ^\markup {Fl.} c'^( d8 e
 	f2.)
 }
 cueVoiceKlarinetteIIMvtII = \relative c {
 	\transposition bes
-	R2*14
+	s2*14
 	% bar 15 - 17
-	g''8\rest bes,_(^\markup {Viol.} c cis
-	d4) f_(
-	f8 e16 d \slashedGrace f8 e8. d16)
-	R2*35
+	r8 b'(^\markup {Viol.} c cis
+	d4) f(
+	f8 e16 d \slashedGrace { \stemOffset #-2 f8 } e8. d16)
+	s2*35
 	% bar 53 - 55
-	a''8_(-\tweak X-offset #-4 ^\markup {Clar.I} e4) c8_~
-	c a_~ a16 b c d
-	e8 r r4
+	\stemUp a''8(-\tweak X-offset #-4 ^\markup {Clar.I} e4) c8~
+	c a~ a16 b c d
+	e8 r r4 \stemNeutral
 }
 cueVoiceKlarinetteIIMvtIII = \relative c {
 	\transposition a
-	R2.*225
+	s2.*225
 	% bar 225 - 228
 	f''4^(^\markup {Viol.} g8 e f4
 	a bes8 gis a4
@@ -281,9 +281,9 @@ cueVoiceKlarinetteIIMvtIII = \relative c {
 }
 cueVoiceKlarinetteIIMvtIV = \relative c {
 	\transposition a
-	\partial 4 r4
-	R1*7
-	r2 r4-\tweak X-offset #-2 ^\markup {Clar.I} g'''
+	\partial 4 s4
+	s1*7
+	\voiceOne r2 r4-\tweak X-offset #-2 ^\markup {Clar.I} \oneVoice g'''
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   F A G O T T E                  #

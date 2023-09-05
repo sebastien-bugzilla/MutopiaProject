@@ -404,7 +404,11 @@ mmrnDown = \once \override MultiMeasureRestNumber.direction = #-1
 
 attaccatrio = {
 	\tweak break-align-symbols time-signature
-	%\tweak direction #DOWN
+	\textEndMark \markup { \italic {attacca Trio. } }
+}
+attaccatrioDown = {
+	\tweak break-align-symbols time-signature
+	\tweak direction #DOWN
 	\textEndMark \markup { \italic {attacca Trio. } }
 }
 
@@ -440,7 +444,25 @@ markWhiteout = {
       (ly:context-pushpop-property context grob-name 'color color)
       (loop (cdr x)))))))
 
+startMeasureCountAt = #(define-music-function
+	(start)
+	(integer?)
+	#{
+		\override Staff.MeasureCounter.count-from = #start
+		\startMeasureCount
+	#}
+)
 
+%barLineSpaceAlist = #(define-music-function
+%	(espace)
+%	(number?)
+%	#{
+%		\once \override Staff.BarLine.space-alist = #'(
+%			(next-note . (fixed-space . #espace))
+%			(right-edge . (extra-space . 0))
+%		)
+%	#}
+%)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

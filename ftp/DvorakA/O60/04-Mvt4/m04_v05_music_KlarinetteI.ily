@@ -44,7 +44,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 36 to 40
 	g\!-^~
 	g2. g4-. \mark \default
-	\tempoXoffset #1.5 f8_\ffgrandioso\noBeam c( e d c bes a g)
+	f8_\ffgrandioso\noBeam c( e d c bes a g)
 	f( g a g f e d e)
 	c r a'( bes c d e d)
 % Bars 41 to 45
@@ -79,7 +79,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	g\p r 
 	R1*2
 	\mark \default
-	g4->\p \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
+	g4->\p^\solo \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
 	c4-. g-. c2_\dimmarkup~
 % Bars 71 to 75
 	c4 g-. c2~
@@ -303,8 +303,8 @@ musicKlarinetteIMvtIV = \relative c''' {
 	c-> c4-. bes-.
 	c-. bes-. c-. bes-.
 % Bars 286 to 290
-	c1\<
-	b4\! r c\ff r8 g-.
+	\after 8*7 \! c1\<
+	b4 r c\ff r8 g-.
 	e-. d-. c-. g-. c4 r8 g'
 	e d c g c4 r8 c'
 	aes g f c f4 r8 c'
@@ -318,7 +318,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	f2.-> f4
 	f2-> g->
 	aes2. aes4
-	aes2 bes
+	aes2 bes!
 	c2. c4
 % Bars 301 to 305
 	c2 aes
@@ -372,7 +372,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	f4 r r2
 	r4 b(\< c d\!
 	g,) e( f g~
-	g) g( a bes~
+	g) g( a bes!~
 % Bars 356 to 360
 	bes) bes,( c d~
 	d) d( c bes 
@@ -464,7 +464,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	
 	
 	r2 r4 e,,\f-. \mark \default \bar "||"
-	\tempoXoffset #1 f-.\f r  r d-.
+	f-. r  r d-.
 % Bars 441 to 445
 	c-. r r bes-.
 	c-. r r d-.
@@ -545,7 +545,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 511 to 515
 	R1*2
 	
-	bes4(\f a8 bes a4 g)
+	\once \stemUp bes4(\f a8 bes a4 g)
 	c( bes8 c bes4 a)
 	d( c8 d c4 bes)
 % Bars 516 to 520

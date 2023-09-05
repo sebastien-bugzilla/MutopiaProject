@@ -12,35 +12,27 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part03_Klarinetten.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part03_Klarinetten.ily"
 \include "./01-Mvt1/m01_v05_music_KlarinetteI.ily"
-\include "./01-Mvt1/m01_v06_music_KlarinetteII.ily"
 \include "./02-Mvt2/m02_v05_music_KlarinetteI.ily"
-\include "./02-Mvt2/m02_v06_music_KlarinetteII.ily"
 \include "./03-Mvt3/m03_v05_music_KlarinetteI.ily"
-\include "./03-Mvt3/m03_v06_music_KlarinetteII.ily"
 \include "./04-Mvt4/m04_v05_music_KlarinetteI.ily"
+\include "./01-Mvt1/m01_v06_music_KlarinetteII.ily"
+\include "./02-Mvt2/m02_v06_music_KlarinetteII.ily"
+\include "./03-Mvt3/m03_v06_music_KlarinetteII.ily"
 \include "./04-Mvt4/m04_v06_music_KlarinetteII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceKlarinetteIMvtI" { \cueVoiceKlarinetteIMvtI }
-\addQuote "cueVoiceKlarinetteIMvtII" { \cueVoiceKlarinetteIMvtII }
-\addQuote "cueVoiceKlarinetteIMvtIII" { \cueVoiceKlarinetteIMvtIII }
-%\addQuote "cueVoiceKlarinetteIMvtIV" { \cueVoiceKlarinetteIMvtIV }
-\addQuote "cueVoiceKlarinetteIIMvtI" { \cueVoiceKlarinetteIIMvtI }
-\addQuote "cueVoiceKlarinetteIIMvtII" { \cueVoiceKlarinetteIIMvtII }
-\addQuote "cueVoiceKlarinetteIIMvtIII" { \cueVoiceKlarinetteIIMvtIII }
-\addQuote "cueVoiceKlarinetteIIMvtIV" { \cueVoiceKlarinetteIIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -50,7 +42,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60"
+			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Klarinetten"
 		}
 		instrument = \markup {
 			"Klarinetten"
@@ -62,20 +54,19 @@
 				\formatKlarinetteIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameKlarinetteIMvtI \musicKlarinetteIMvtI
+				\keepWithTag #'(klarinetteI) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(klarinetteI) \tempiPartMvtI
+				\InCueContext \cueVoiceKlarinetteIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameKlarinetteIMvtI \musicKlarinetteIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -87,20 +78,19 @@
 				\formatKlarinetteIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameKlarinetteIMvtII \musicKlarinetteIMvtII
+				\keepWithTag #'(klarinetteI) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(klarinetteI) \tempiPartMvtII
+				\InCueContext \cueVoiceKlarinetteIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameKlarinetteIMvtII \musicKlarinetteIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -112,20 +102,19 @@
 				\formatKlarinetteIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameKlarinetteIMvtIII \musicKlarinetteIMvtIII
+				\keepWithTag #'(klarinetteI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(klarinetteI) \tempiPartMvtIII
+				\InCueContext \cueVoiceKlarinetteIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameKlarinetteIMvtIII \musicKlarinetteIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold { 3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -137,20 +126,19 @@
 				\formatKlarinetteIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameKlarinetteIMvtIV \musicKlarinetteIMvtIV
+				\keepWithTag #'(klarinetteI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(klarinetteI) \tempiPartMvtIV
+				\InCueContext \cueVoiceKlarinetteIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameKlarinetteIMvtIV \musicKlarinetteIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold { 4. Finale }
 			}
 		}
 		\layout {
@@ -162,20 +150,19 @@
 				\formatKlarinetteIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameKlarinetteIIMvtI \musicKlarinetteIIMvtI
+				\keepWithTag #'(klarinetteII) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(klarinetteII) \tempiPartMvtI
+				\InCueContext \cueVoiceKlarinetteIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameKlarinetteIIMvtI \musicKlarinetteIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -187,20 +174,19 @@
 				\formatKlarinetteIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameKlarinetteIIMvtII \musicKlarinetteIIMvtII
+				\keepWithTag #'(klarinetteII) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(klarinetteII) \tempiPartMvtII
+				\InCueContext \cueVoiceKlarinetteIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameKlarinetteIIMvtII \musicKlarinetteIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -212,20 +198,19 @@
 				\formatKlarinetteIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameKlarinetteIIMvtIII \musicKlarinetteIIMvtIII
+				\keepWithTag #'(klarinetteII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(klarinetteII) \tempiPartMvtIII
+				\InCueContext \cueVoiceKlarinetteIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameKlarinetteIIMvtIII \musicKlarinetteIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold { 3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -237,20 +222,19 @@
 				\formatKlarinetteIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameKlarinetteIIMvtIV \musicKlarinetteIIMvtIV
+				\keepWithTag #'(klarinetteII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(klarinetteII) \tempiPartMvtIV
+				\InCueContext \cueVoiceKlarinetteIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameKlarinetteIIMvtIV \musicKlarinetteIIMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {

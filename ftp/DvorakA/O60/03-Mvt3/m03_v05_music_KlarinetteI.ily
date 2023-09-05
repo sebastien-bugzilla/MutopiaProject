@@ -42,23 +42,23 @@ musicKlarinetteIMvtIII = \relative c'' {
 		c'4(\p ees) c(
 		ees) c( ees)~
 % Bars 26 to 30
-		\hairpinShorten #'(0 . 2) ees2.\<~
-		\hairpinShorten #'(-1 . 3) ees\>
+		\after 8*5 \! ees2.\<~
+		\after 8*5 \! ees\>
 		c4(\! ees) c(
 		ees) c( ees)~
-		\hairpinShorten #'(0 . 2) ees2.\<~
+		\after 8*5 \! ees2.\<~
 % Bars 31 to 35
-		\hairpinShorten #'(-1 . 3) ees\>
+		\after 8*5 \! ees\>
 		aes,4\!( c) aes(
 		c) aes( c)~
-		c2.~\<
-		c\>
+		\after 8*5 \! c2.~\<
+		\after 8*5 \! c\>
 % Bars 36 to 40
 		a4(\! c) a(
 		c) a( c)~
-		c2.~\<
-		c\>
-		c2\< aes'4~
+		\after 8*5 \! c2.~\<
+		\after 8*5 \! c\>
+		c2\! aes'4~\<
 % Bars 41 to 45
 		aes g-. aes-.\!
 		g2\ff-> f4-.
@@ -138,7 +138,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 % Bars 116 to 120
 		gis-. fis-. fis-.
 		gis-. fis-. fis-.\!
-		aes!-._\semprecresc g!-. g-.
+		aes!-.-\offset X-offset #-3 _\semprecresc g!-. g-.
 		a-.\fz g-. g-.
 		a\fz g g
 % Bars 121 to 125
@@ -175,21 +175,24 @@ musicKlarinetteIMvtIII = \relative c'' {
 % Bars 146 to 150
 	\alternative {
 		{
-			f r r
+			f r r 
+			\once \override Staff.BarLine.space-alist = #'(
+				(next-note . (fixed-space . 3))
+				(right-edge . (extra-space . 0)))
 		}
 		{
-			\startMeasureCount f2.\f\>
+			\startMeasureCountAt 2 f2.\f\>
 		}
 	}
 	f
-	f
+	f\!
 	f\p
 	f_\dimmarkup
 % Bars 151 to 155
 	f
-	f \stopMeasureCount \bar ".|:-||" \key f \major
+	f \attaccatrioDown \stopMeasureCount \bar ".|:-||" \key f \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio c\fp
+		\time 3/4 \trioPart c\fp
 		R2.
 		c(\p
 % Bars 156 to 160
@@ -218,8 +221,8 @@ musicKlarinetteIMvtIII = \relative c'' {
 		ees2.~\<
 % Bars 176 to 180
 		ees\!
-		d4-.\f\< ees-. f-.
-		ees2.\>
+		d4-.\f\< ees-. f-.\!
+		<<ees2. {\hairpinShorten #'(0 . -1) s4\> s s\!}>>
 		d4-.\< ees-. f-.\!
 		ees2.
 % Bars 181 to 185
@@ -264,14 +267,12 @@ musicKlarinetteIMvtIII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceKlarinetteIMvtIII" #DOWN {
-		\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-4 R2.
 % Bars 226 to 230
-		\mmrPos #-4 R
-		\mmrPos #-4 R
-		\mmrPos #-4 R \no
-	}
-	\shape #'((0 . 0)(0 . 2)(0 . 1)(0 . -2)) Slur a,4(\p d f
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\shape #'((0.5 . -1.5)(3 . 0.5)(-3 . 0.5)(0 . -2.3)) Slur a,4(\p d f
 	a d f~
 % Bars 231 to 235
 	f2 e4
@@ -319,7 +320,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	
 	
 	
-	\startMeasureCount f4(\pp g8 e f4)
+	\startMeasureCountAt 1 f4(\pp g8 e f4)
 % Bars 281 to 285
 	f( g8\< e f4)
 	f( g8 e f4)
@@ -354,23 +355,23 @@ musicKlarinetteIMvtIII = \relative c'' {
 	f r r \bar "||"
 	c'(\p ees) c(
 	ees) c( ees)~
-	\hairpinShorten #'(0 . 2) ees2.\<~
-	\hairpinShorten #'(-1 . 3) ees\>
+	\after 8*5 \! ees2.\<~
+	\after 8*5 \! ees\>
 % Bars 311 to 315
 	c4(\! ees) c(
 	ees) c( ees)~
-	\hairpinShorten #'(0 . 2) ees2.\<~
-	\hairpinShorten #'(-1 . 3) ees\>
+	\after 8*5 \! ees2.\<~
+	\after 8*5 \! ees\>
 	aes,4\!( c) aes(
 % Bars 316 to 320
 	c) aes( c)~
-	\hairpinShorten #'(0 . 2) c2.\<
-	\hairpinShorten #'(-1 . 3) c\>
+	\after 8*5 \! c2.\<
+	\after 8*5 \! c\>
 	a4(\! c) a(
 	c) a( c)~
 % Bars 321 to 325
-	\hairpinShorten #'(0 . 2) c2.\<~
-	\hairpinShorten #'(-1 . 2) c\>
+	\after 8*5 \! c2.\<~
+	\after 8*5 \! c\>
 	c2\< aes'4~
 	aes g-.\! aes-.
 	g2->\ff f4-.
@@ -415,7 +416,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 % Bars 361 to 365
 	
 	
-	f,,2-\tweak X-offset #-1.7 \p bes4~
+	f,,2\p bes4~
 	bes c-. des-.
 	c2-> aes4~->
 % Bars 366 to 370
@@ -483,7 +484,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	g'4-. e-. e-.
 % Bars 426 to 430
 	aes-. f-. f-.
-	c'-. c,->( d8 e)
+	c'-. c,->( des8 e)
 	f4-. aes-. f-.
 	f-. aes-. f-.
 	c-. bes'4->( aes8 g)
