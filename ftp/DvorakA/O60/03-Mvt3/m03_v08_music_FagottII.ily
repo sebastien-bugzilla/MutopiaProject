@@ -69,7 +69,7 @@ musicFagottIIMvtIII = \relative c, {
 		
 % Bars 51 to 55
 		
-		d4-.\p a'-. d
+		d4-.\p a'-. d-.
 		d,-. a'-. d-.
 		cis,-. a'-. cis-.
 		cis,-. a'-. cis-.
@@ -84,7 +84,7 @@ musicFagottIIMvtIII = \relative c, {
 		c2->\ff c,4~->
 		c f2->
 		d'2\p\< d4~
-		d bes2
+		d bes2\!
 % Bars 66 to 70
 		a2\f bes4-.\>
 		c-. c,-. f-.\!
@@ -146,7 +146,7 @@ musicFagottIIMvtIII = \relative c, {
 % Bars 116 to 120
 		aes-. aes-. aes-.
 		aes-. aes-. aes-.\!
-		\startMeasureCount a!-._\semprecresc a-. a-.
+		\startMeasureCountAt #1 a!-._\semprecresc a-. a-.
 		a a a
 		a a a
 % Bars 121 to 125
@@ -158,7 +158,7 @@ musicFagottIIMvtIII = \relative c, {
 % Bars 126 to 130
 		a!2-> a4->~
 		a a2->
-		d2_\ffgrandioso d,4~
+		d!2_\ffgrandioso d,4~
 		d d2
 		d2 d4~
 % Bars 131 to 135
@@ -184,29 +184,47 @@ musicFagottIIMvtIII = \relative c, {
 	\alternative {
 		{
 			d r r
+			\once \override Staff.BarLine.space-alist = #'(
+				(next-note . (fixed-space . 3))
+				(right-edge . (extra-space . 0)))
 		}
 		{
-			\startMeasureCount d2.\f\>
+			\startMeasureCountAt #2 d2.\f\>
 		}
 	}
 	d
-	d
+	d\!
 	d\p
 	d_\dimmarkup
 % Bars 151 to 155
 	d
-	d \stopMeasureCount \bar ".|:-||" \key d \major
+	d \attaccatrio \stopMeasureCount \bar ".|:-||" \key d \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio R2.*48
+		\time 3/4 \trioPart \mmrLength #25 \mmrnDown R2.*6
+		
 		
 % Bars 156 to 160
-	
+		
+		
+		
+		\mmrLength #9 \mmrnDown R2.*4
+		
 % Bars 161 to 165
-	
+		
+		
+		\mmrLength #10 \mmrnDown R2.*6
+		
+		
 % Bars 166 to 170
-	
+		
+		
+		
+		\mmrLength #11 \mmrnDown R2.*4
+		
 % Bars 171 to 175
-	
+		
+		
+		\mmrnDown R2.*28
 % Bars 176 to 180
 	
 % Bars 181 to 185
@@ -235,13 +253,11 @@ musicFagottIIMvtIII = \relative c, {
 	
 	
 	
-	\cueDuring #"cueVoiceFagottIIMvtIII" #DOWN {
-		\ni \clef treble \mmrPos #-4 R2.
+	\ni \clef treble \mmrPos #-4 R2.
 % Bars 226 to 230
-		\mmrPos #-4 R
-		\mmrPos #-4 R
-		\mmrPos #-4 R \no \clef bass
-	}
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \clef bass
 	b2\p r4
 	R2.
 % Bars 231 to 235
@@ -287,7 +303,7 @@ musicFagottIIMvtIII = \relative c, {
 	
 	
 	
-	\startMeasureCount d,4--\pp d-- d--
+	\startMeasureCountAt #1 d,4--\pp d-- d--
 % Bars 281 to 285
 	d d d\<
 	d d d 
@@ -364,7 +380,7 @@ musicFagottIIMvtIII = \relative c, {
 	cis,-. a'-. cis-.
 	cis,-. a'-. cis-.
 	a2\< d4~
-	d e-.\f f-.
+	d\! e-.\f f-.
 	c2->\ff c,4->~
 % Bars 346 to 350
 	c f2->

@@ -289,16 +289,16 @@ cueVoiceKlarinetteIIMvtIV = \relative c {
 %#                  C U E   V O I C E   F O R   F A G O T T E                  #
 %###############################################################################
 cueVoiceFagottIMvtI = \relative c {
-	R2.*213
+	s2.*213
 	% bar 200 - 201
 	<f'' a>2(-\tweak X-offset #-3 ^\markup {Clar.} <e g>8 <d f>)
 	<d f>2( <c e>8 <b d>)
 }
-%cueVoiceFagottIMvtII = \relative c {
+cueVoiceFagottIMvtII = \relative c {
 %	no cue voice for Mvt II
-%}
+}
 cueVoiceFagottIMvtIII = \relative c {
-	R2.*185
+	s2.*185
 	% bar 185 - 192
 	g'''2(^\markup {Clar.} fis4
 	e2 d4
@@ -310,38 +310,38 @@ cueVoiceFagottIMvtIII = \relative c {
 	e2 fis4)
 }
 cueVoiceFagottIMvtIV = \relative c {
-	\partial 4 r4
-	R1*318
+	\partial 4 s4
+	s1*318
 	% bar 319 - 323
 	r2 r4^\markup {Fag.II} e(
 	d fis a g)
 	fis( e fis g
 	fis e fis g8 a)
-	b4 r r2
+	b4 s s2
 }
 cueVoiceFagottIIMvtI = \relative c {
-	R2.*213
+	s2.*213
 	% bar 200 - 201
 	<f'' a>2(^\markup {Clar.} <e g>8 <d f>)
 	<d f>2( <c e>8 <b d>)
 }
 cueVoiceFagottIIMvtII = \relative c {
-	R2*2
+	s2*2
 	% bar 3
-	r8^\markup {Fag.I} bes'( g c)
+	r8-\offset X-offset -3 ^\markup {Fag.I} bes'( g c)
 }
 cueVoiceFagottIIMvtIII = \relative c {
-	R2.*225
+	s2.*225
 	% bar 225 - 228
-	fis''4^(^\markup {Viol.} g8 e fis4
+	fis''4^(-\offset X-offset -3 ^\markup {Viol.} g8 e fis4
 	a b8 gis a4)
 	d^( e8 cis d4
 	d e8 cis d4)
 }
 cueVoiceFagottIIMvtIV = \relative c {
-	\partial 4 a'4(^\markup {Bässe}
-	fis e d cis)
-	R1*315
+	\voiceOne \partial 4 a'4(-\offset X-offset -4 ^\markup {Bässe}
+	fis e d cis) \oneVoice 
+	s1*315
 	% bar 317 - 318
 	r2 r4 a'(^\markup {C.B}
 	fis e d cis)

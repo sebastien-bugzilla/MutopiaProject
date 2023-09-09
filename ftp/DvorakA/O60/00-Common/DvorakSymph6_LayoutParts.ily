@@ -38,6 +38,16 @@
 		\override TrillSpanner.bound-details.right.padding = #1
 		\override MultiMeasureRest.space-increment = #0
 		\override Hairpin.height = #0.55
+		
+%		\override NoteHead.transparent = ##t
+%		\override Beam.transparent = ##t
+%		\override DynamicText.transparent = ##t
+%		\override Stem.transparent = ##t
+%		\override Accidental.transparent = ##t
+%		\override Slur.transparent = ##t
+%		\override Script.transparent = ##t
+%		\override Rest.transparent = ##t
+		
 	}
 }
 %layoutCueVoice = \with {

@@ -42,22 +42,22 @@ musicFagottIMvtIII = \relative c {
 		a''4(\p c) a(
 		c) a( c)~
 % Bars 26 to 30
-		\hairpinShorten #'(0 . 2) c2.\<~
-		\hairpinShorten #'(0 . 3) c\>
-		a4(\! c) a(
+		\after 8*5 \! c2.\<~
+		\after 8*5 \! c\>
+		a4( c) a(
 		c) a( c)~
-		\hairpinShorten #'(0 . 2) c2.~\<
+		\after 8*5 \! c2.~\<
 % Bars 31 to 35
-		\hairpinShorten #'(0 . 3) c\>
-		f,4(\! a) f(
+		\after 8*5 \! c\>
+		f,4( a) f(
 		a) f( a)~
-		a2.~\<
-		\hairpinShorten #'(0 . 3) a\>
+		\after 8*5 \! a2.~\<
+		\after 8*5 \! a\>
 % Bars 36 to 40
-		fis4(\! a) fis(
+		fis4( a) fis(
 		a) fis( a)~
-		\hairpinShorten #'(0 . 2) a2.\<~
-		\hairpinShorten #'(-1 . 2) a\>
+		\after 8*5 \! a2.\<~
+		\after 8*5 \! a\>
 		d,8(\< e f! g a bes!
 % Bars 41 to 45
 		b!4) cis-. d-.\!
@@ -88,7 +88,7 @@ musicFagottIMvtIII = \relative c {
 		c2->\ff c,4~->
 		c f2->
 		d2\p\< d4~
-		d f2
+		d f2\!
 % Bars 66 to 70
 		a4-.\f\> a,-. bes-.
 		c-. c,-. f-.\!
@@ -162,7 +162,7 @@ musicFagottIMvtIII = \relative c {
 % Bars 126 to 130
 		c( des) c(
 		des) c( cis)
-		d2_\ffgrandioso d,4~
+		d2-\offset X-offset -0.5 _\ffgrandioso d,4~
 		d d2
 		d2 d4~
 % Bars 131 to 135
@@ -190,7 +190,7 @@ musicFagottIMvtIII = \relative c {
 			d r r
 		}
 		{
-			\startMeasureCount d2.\f\>
+			\startMeasureCountAt #2 d2.\f\>
 		}
 	}
 	d
@@ -199,21 +199,32 @@ musicFagottIMvtIII = \relative c {
 	d_\dimmarkup
 % Bars 151 to 155
 	d
-	d \stopMeasureCount \bar ".|:-||" \key d \major
+	d \attaccatrioDown \stopMeasureCount \bar ".|:-||" \key d \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio d'\fp
+		\time 3/4 \trioPart d'\fp
 		R2.*5
 % Bars 156 to 160
 		
 		
 		
-		\tempoXoffset #-1.5 R2.*26
+		\mmrLength #11 R2.*4
+		
 % Bars 161 to 165
-	
+		
+		
+		\mmrLength #11 R2.*6
+		
+		
 % Bars 166 to 170
-	
+		
+		
+		
+		\mmrLength #11 R2.*4
+		
 % Bars 171 to 175
-	
+		
+		
+		R2.*12
 % Bars 176 to 180
 	
 % Bars 181 to 185
@@ -221,18 +232,16 @@ musicFagottIMvtIII = \relative c {
 		
 		
 		
-		\cueDuring #"cueVoiceFagottIMvtIII" #UP {
-			\ni \clef treble R2.
+		\ni \clef treble \voiceTwo R2.
 % Bars 186 to 190
-			R
-			R
-			R
-			R
-			R
+		R
+		R
+		R
+		R
+		R
 % Bars 191 to 195
-			R
-			R \no \clef bass
-		}
+		R
+		R \no \clef bass \oneVoice 
 		d2(\pp e4
 		cis2_\dimmarkup d4
 		b2 cis4
@@ -313,7 +322,7 @@ musicFagottIMvtIII = \relative c {
 	fis g e)
 	fis( g e
 	fis g e)
-	\startMeasureCount a4--\pp a-- a--
+	\startMeasureCountAt #1 a4--\pp a-- a--
 % Bars 281 to 285
 	a a a\<
 	a a a
@@ -348,23 +357,23 @@ musicFagottIMvtIII = \relative c {
 	d r r \bar "||"
 	a''4(\p c) a(
 	c) a( c)~
-	\hairpinShorten #'(0 . 2) c2.\<~
-	\hairpinShorten #'(-1 . 2) c\>
+	\after 8*5 \! c2.\<~
+	\after 8*5 \! c\>
 % Bars 311 to 315
-	a4(\! c) a(
+	a4( c) a(
 	c) a( c)~
-	\hairpinShorten #'(0 . 2) c2.\<~
-	c\>
-	f,4(\! a) f(
+	\after 8*5 \! c2.\<~
+	\after 8*5 \! c\>
+	f,4( a) f(
 % Bars 316 to 320
 	a) f( a)~
-	\hairpinShorten #'(0 . 2) a2.\<~
-	\hairpinShorten #'(-1 . 4) a\>
-	fis4(\! a) fis(
+	\after 8*5 \! a2.\<~
+	\after 8*5 \! a\>
+	fis4( a) fis(
 	a) fis( a)~
 % Bars 321 to 325
-	\hairpinShorten #'(0 . 2) a2.\<~
-	\hairpinShorten #'(-1 . 2) a\>
+	\after 8*5 \! a2.\<~
+	\after 8*5 \! a\>
 	d,8(\< e f! g a bes!
 	b4) cis-.\! d-.
 	a-.\ff a,-. bes!-.
@@ -386,7 +395,7 @@ musicFagottIMvtIII = \relative c {
 	
 	
 	a2\p\< d4~
-	d e-.\f f-.
+	d\! e-.\f f-.
 	c2->\ff c,4->~
 % Bars 346 to 350
 	c f2->

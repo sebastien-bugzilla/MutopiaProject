@@ -199,7 +199,7 @@ musicFagottIIMvtII = \relative c {
 	bes8 bes'4\< a16 g\!
 	f8 bes,4.\p~
 	bes8 bes'4(\< a16\! g
-	f8) bes4\mf( a16\! g
+	f8) bes4\mf\<( a16\! g
 % Bars 176 to 180
 	f8) bes4\f( a16 g
 	f) ees'\<-> d-> des-> c-> bes-> a-> g->\!

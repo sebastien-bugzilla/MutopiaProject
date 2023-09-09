@@ -39,6 +39,14 @@ ppespr = ^\markup {\dynamic pp \musicglyph "scripts.espr"}
 pplegg = \markup {\dynamic pp \italic legg.}
 ppocoapococrescendo = \markup {\dynamic p \italic {poco a poco crescendo}}
 ppocoapococresc = \markup {\dynamic p \italic {poco a poco cresc.}}
+ppocoa-pococresc = \markup {
+	\column {
+		\lower #1 \line {
+			\dynamic p \italic {"poco a"}
+		}
+		\line {\italic "poco cresc."}
+	}
+}
 ppsempre = \markup {\dynamic pp \italic sempre}
 ppsempremoltotranquillo = \markup {\dynamic pp \italic {sempre molto tranquillo}}
 ppsubponticello = \markup {\dynamic pp \italic {sub ponticello}}

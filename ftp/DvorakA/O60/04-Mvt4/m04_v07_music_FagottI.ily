@@ -28,7 +28,7 @@ musicFagottIMvtIV = \relative c' {
 	cis4. cis8 cis4( b)
 	a8( a' gis fis e fis d e)
 	cis4. cis8 cis4( b)
-	eis4.\mf eis8\< eis4-. fis-.
+	eis4.\mf eis8\< eis4-. fis-.\!
 % Bars 21 to 25
 	gis4.\f gis8 gis4-. a-.
 	bis4. bis8 bis4-.\< cis-.
@@ -50,7 +50,7 @@ musicFagottIMvtIV = \relative c' {
 % Bars 36 to 40
 	e-. cis-. a-. g-.
 	e-. cis-. a-. a-. \mark \default
-	\tempoXoffset #1 fis'8(_\ffgrandioso a cis b a g fis e)
+	fis'8(_\ffgrandioso a cis b a g fis e)
 	d( e fis e d cis b cis)
 	a r fis'( g a b cis b)
 % Bars 41 to 45
@@ -76,7 +76,7 @@ musicFagottIMvtIV = \relative c' {
 	b4 e2.\fz~
 	e4 e2.\fz~
 	e4 e2.\fz~
-	e4 e2.\fz
+	e4 \dynEO #'(0 . 2) e2.\fz
 % Bars 61 to 65
 	b4 r b r
 	b r b r
@@ -87,15 +87,15 @@ musicFagottIMvtIV = \relative c' {
 	e,8(_\pdim d' cis b) r2
 	R1*2
 	\mark \default
-	a4(\p\< e' f\> d\!
-	cis2 a4-.)^\dimmarkup e-.
+	\hairpinShorten #'(0 . 1) a4(\p\< e' \hairpinShorten #'(-1 . 0) f\> d\!
+	cis2 a4-.)_\dimmarkup e-.
 % Bars 71 to 75
 	a,-. r a'-. e-. 
 	a,2 r
 	R1*4
 % Bars 76 to 80
 	
-	b'4(\p\< fis' g!\> e\!
+	\hairpinShorten #'(0 . 1) b'4(\p\< fis' \hairpinShorten #'(-1 . 0) g!\> e\!
 	d) r r2
 	R1*3
 % Bars 81 to 85
@@ -115,7 +115,7 @@ musicFagottIMvtIV = \relative c' {
 	fis(-> e d e fis-> e d cis)
 	b(-> cis d cis b-> cis d cis)
 	b(-> cis b a gis fis e d)
-	cis4\fz a'-. d\fz b-.
+	cis4\fz a'-. \once \stemUp d\fz b-.
 % Bars 96 to 100
 	e\fz r e\fz r
 	R1
@@ -135,7 +135,7 @@ musicFagottIMvtIV = \relative c' {
 	b(-> cis d cis b-> cis d cis)
 	b->( cis b a gis fis e d)
 % Bars 111 to 115
-	cis4\fz a'-. d\fz b-.
+	cis4\fz a'-. \once \stemUp d\fz b-.
 	e\fz r e\fz r \mark \default
 	e r a2\fz(
 	ais1)~\fz
@@ -225,7 +225,7 @@ musicFagottIMvtIV = \relative c' {
 	g!) r r g'!(
 	e cis a g
 	a) r r g'( 
-	e cis a g \markYoffset #4.5 \mark \default
+	e cis a g \markWhiteout \mark \default
 % Bars 191 to 195
 	fis) r r2
 	R1*5
@@ -242,7 +242,7 @@ musicFagottIMvtIV = \relative c' {
 	
 	
 % Bars 206 to 210
-	r2 r4 \tuplet 3/2 4 {g,8(\f\< a b)}
+	r2 r4 \tuplet 3/2 4 {g,8(\f\< a b\!)}
 	c4-.\ff g-. c2->
 	g'4-> \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
 	e4-. g,-. e'2->
@@ -333,7 +333,7 @@ musicFagottIMvtIV = \relative c' {
 	f-> f4-. c-.
 	a-. c-. a-. c-.
 % Bars 286 to 290
-	<<f,1 {s4\< s s s\!}>>
+	<<f,1 {\hairpinShorten #'(0 . -1) s4\< s s s\!}>>
 	e4 r a'\ff r8 e'-.
 	cis-. b-. a-. e-. a4 r8 e'
 	cis b a e a4 r8 a'
@@ -367,13 +367,12 @@ musicFagottIMvtIV = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceFagottIMvtIV" #UP {
-		\ni R1
-		R
+	\ni \voiceTwo R1
+	R
 % Bars 321 to 325
-		R
-		R \no
-	r4 } cis8(\p b e4 a,
+	R
+	R \no \oneVoice 
+	r4 cis8(\p b e4 a,
 	b gis a b
 	c b8 a d4 e8 c
 % Bars 326 to 330
@@ -385,7 +384,7 @@ musicFagottIMvtIV = \relative c' {
 % Bars 331 to 335
 	g r r2
 	R1
-	g,8(\p g' fis e d e c d)
+	g,8(\p g' fis e \stemUp d e c d) \stemNeutral
 	b4._\crescmarkup b8 b4( a)
 	g8( g' fis e \stemUp d e c d) \stemNeutral
 % Bars 336 to 340
@@ -402,7 +401,7 @@ musicFagottIMvtIV = \relative c' {
 	ais4 cis(-> d e
 % Bars 346 to 350
 	d) gis,2.->~
-	gis4 b4(-> c d
+	gis4 b4(-> c \once \stemUp d
 	c) fis,2.->~
 	fis4 f2.(->
 	e4) r r2
@@ -603,7 +602,7 @@ musicFagottIMvtIV = \relative c' {
 	b-> d-. a-> cis-.
 	g-> b-. fis-> a-. \mark \default
 % Bars 521 to 525
-	g2-\tweak X-offset #1 ^\ten r
+	g2^\ten r
 	g^\ten r
 	e^\ten r
 	e^\ten r

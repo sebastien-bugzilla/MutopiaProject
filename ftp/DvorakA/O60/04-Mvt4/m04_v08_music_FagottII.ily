@@ -8,12 +8,10 @@ musicFagottIIMvtIV = \relative c {
 	\clef bass
 	\key d \major
 %	\transposition a
-	\cueDuring #"cueVoiceFagottIIMvtIV" #UP {
-		\partial 4 r4
+	\partial 4 r4
 % Bars 1 to 5
-		\ni R1 \no
-	}
-	r2 r4 e(\p
+	\ni \mmrPos #-4 R1 \no
+	r2 r4 e(-\offset X-offset #0.5 \p
 	d fis a g
 	fis e fis) g(
 	fis e fis g8 a
@@ -30,11 +28,11 @@ musicFagottIIMvtIV = \relative c {
 	cis r r2
 	R1
 % Bars 16 to 20
-	a8(_\ppocoapococresc a' gis fis e fis d e)
+	a8(-\offset X-offset -2 _\ppocoa-pococresc a' gis fis e fis d e)
 	cis4. cis8 cis4( b)
 	a8( a' gis fis e fis d e)
 	cis4. cis8 cis4( b)
-	cis4.\mf cis8\< cis4-. dis-.
+	cis4.\mf cis8\< cis4-. \once \stemUp dis-.\!
 % Bars 21 to 25
 	e4.\f e8 e4-. fis-.
 	gis4. gis8 gis4-.\< ais-.
@@ -45,18 +43,18 @@ musicFagottIIMvtIV = \relative c {
 	e) c-. ais-. e'(
 	d) b-. gis-. d'(
 	c) r d,,2~
-	d2. d'4(->
-	cis bes g) d'(->
+	d2. \once \stemUp d'4(->
+	cis bes g) \once \stemUp d'(->
 % Bars 31 to 35
-	cis bes g) e'(->
-	d cis bes) bes(->
-	a g e) d'(->
-	cis bes g) d'(->
+	cis bes g) \stemUp e'(->
+	d \stemNeutral cis bes) bes(->
+	a g e) \once \stemUp d'(->
+	cis bes g) \once \stemUp d'(->
 	cis bes g) g'-.
 % Bars 36 to 40
 	e-. cis-. a-. g-.
 	e-. cis-. a'-. a-. \mark \default
-	\tempoXoffset #1.5 d8(_\ffgrandioso fis a g fis e d cis)
+	d8(_\ffgrandioso fis a g fis e d cis)
 	b( cis d cis b a g a)
 	fis r d'( e fis g a g)
 % Bars 41 to 45
@@ -73,7 +71,7 @@ musicFagottIIMvtIV = \relative c {
 	r4 c,(\fz d e
 % Bars 51 to 55
 	f8) r r4 r2
-	r4 b,(\fz cis dis
+	r4 b,(\fz cis \once \stemUp dis
 	cis8) r a'2.~\f
 	a4 a2.\fz~
 	a4 a2.\fz~
@@ -104,11 +102,11 @@ musicFagottIIMvtIV = \relative c {
 	
 	
 	
-	g'!4->_\fpcresc \tuplet 3/2 4 { g8 g g} g4-> \tuplet 3/2 4 { g8 g g} 
+	\tupletUp g'!4->_\fpcresc \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 { g4.:8} 
 % Bars 86 to 90
-	g4-> \tuplet 3/2 4 { g8 g g} g4-> \tuplet 3/2 4 { g8 g g} 
-	g4-> \tuplet 3/2 4 { g8 g g} g4-> \tuplet 3/2 4 { g8 g g} 
-	g4-> \tuplet 3/2 4 { g8 g g} g4-> \tuplet 3/2 4 { g8 g g} 
+	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
+	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
+	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
 	g4\f r r2
 	R1
 % Bars 91 to 95
@@ -116,7 +114,7 @@ musicFagottIIMvtIV = \relative c {
 	fis(-> e d e fis-> e d cis)
 	b(-> cis d cis b-> cis d cis)
 	b(-> cis b a gis fis e d)
-	cis4\fz a'-. d\fz b-.
+	cis4\fz a'-. \once \stemUp d\fz b-.
 % Bars 96 to 100
 	e\fz r e,\fz r
 	R1*4
@@ -124,10 +122,10 @@ musicFagottIIMvtIV = \relative c {
 	
 	
 % Bars 101 to 105
-	g'!4->_\fpcresc \tuplet 3/2 4 { g8 g g} g4-> \tuplet 3/2 4 { g8 g g} 
-	g4-> \tuplet 3/2 4 { g8 g g} g4-> \tuplet 3/2 4 { g8 g g} 
-	g4-> \tuplet 3/2 4 { g8 g g} g4-> \tuplet 3/2 4 { g8 g g} 
-	g4-> \tuplet 3/2 4 { g8 g g} g4-> \tuplet 3/2 4 { g8 g g} 
+	g'!4->_\fpcresc \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
+	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
+	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
+	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} \tupletNeutral
 	g4\f r r2
 % Bars 106 to 110
 	R1
@@ -136,7 +134,7 @@ musicFagottIIMvtIV = \relative c {
 	b(-> cis d cis b-> cis d cis)
 	b->( cis b a gis fis e d)
 % Bars 111 to 115
-	cis4\fz a'-. d\fz b-.
+	cis4\fz a'-. \once \stemUp d\fz b-.
 	e\fz r e,\fz r \mark \default
 	a r g'!2\fz~
 	g1~
@@ -234,7 +232,7 @@ musicFagottIIMvtIV = \relative c {
 % Bars 201 to 205
 	
 % Bars 206 to 210
-	r2 r4 \tuplet 3/2 4 {g'8(\f\< a b)}
+	r2 r4 \tuplet 3/2 4 {g'8(\f\< a b)\!}
 	c4-.\ff g-. c2->
 	g4-> \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
 	c4-. g'-. c2->
@@ -325,7 +323,7 @@ musicFagottIIMvtIV = \relative c {
 	f-> f4-. c'-.
 	a-. c-. a-. c-.
 % Bars 286 to 290
-	<<f,1 {s4\< s s s\!}>>
+	\after 8*7 \! f,1\<
 	e4 r a\ff r8 e''-.
 	cis-. b-. a-. e-. a4 r8 e'
 	cis b a e a4 r8 a
@@ -355,10 +353,8 @@ musicFagottIIMvtIV = \relative c {
 	
 % Bars 316 to 320
 	
-	\cueDuring #"cueVoiceFagottIIMvtIV" #UP {
-		\ni R1
-		R \no
-	}
+	\ni \voiceTwo R1
+	\mmrPos #-6 R \no \oneVoice 
 	r2 r4 e'(_\pptranquillo
 	d fis a g
 % Bars 321 to 325
@@ -369,8 +365,8 @@ musicFagottIIMvtIV = \relative c {
 	
 % Bars 326 to 330
 	
-	r4 d(\p cis c
-	b) d,2( c4
+	r4 d(\p cis! c
+	b) \once \stemUp d,2( c4
 	b) r r2
 	d4.( d8 d4 c)
 % Bars 331 to 335
@@ -393,7 +389,7 @@ musicFagottIIMvtIV = \relative c {
 	ais4 cis(-> d e
 % Bars 346 to 350
 	d) gis,2.->~
-	gis4 b4(-> c d
+	gis4 b4(-> c \once \stemUp d
 	c) fis,2.->~
 	fis4 f2.(->
 	e4) r r2
@@ -496,7 +492,7 @@ musicFagottIIMvtIV = \relative c {
 	
 	
 	r2 r4 a-.\f \bar "||" \mark \default
-	\tempoXoffset #0.5 d-.\f r r g-.
+	d-. r r g-.
 % Bars 441 to 445
 	fis-. r r e-.
 	d-. r r g-.
@@ -594,7 +590,7 @@ musicFagottIIMvtIV = \relative c {
 	b-> d-. a-> cis-.
 	g-> b-. fis-> a-. \mark \default
 % Bars 521 to 525
-	g2-\tweak X-offset #1.4 ^\ten r
+	g2^\ten r
 	g^\ten r
 	e^\ten r
 	e^\ten r

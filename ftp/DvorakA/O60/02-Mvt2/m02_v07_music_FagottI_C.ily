@@ -194,7 +194,7 @@ musicFagottIMvtII = \relative c' {
 	bes8 bes4( a16 g
 	f8) \partCombineAutomatic bes4.\p~
 	bes8 bes'4(\< a16\! g
-	f8) bes4\mf( a16\! g
+	f8) bes4\mf\<( a16\! g
 % Bars 176 to 180
 	f8) bes4\f( a16 g
 	f) ees'\f\<-> d-> des-> c-> bes-> a-> g->\!

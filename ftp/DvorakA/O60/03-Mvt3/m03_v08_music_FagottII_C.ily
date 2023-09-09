@@ -69,7 +69,7 @@ musicFagottIIMvtIII = \relative c, {
 		
 % Bars 51 to 55
 		
-		d4-.\p a'-. d
+		d4-.\p a'-. d-.
 		d,-. a'-. d-.
 		cis,-. a'-. cis-.
 		cis,-. a'-. cis-.

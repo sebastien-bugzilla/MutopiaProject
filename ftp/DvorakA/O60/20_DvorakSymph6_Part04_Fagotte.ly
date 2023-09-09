@@ -12,35 +12,27 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part04_Fagotte.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part04_Fagotte.ily"
 \include "./01-Mvt1/m01_v07_music_FagottI.ily"
-\include "./01-Mvt1/m01_v08_music_FagottII.ily"
 \include "./02-Mvt2/m02_v07_music_FagottI.ily"
-\include "./02-Mvt2/m02_v08_music_FagottII.ily"
 \include "./03-Mvt3/m03_v07_music_FagottI.ily"
-\include "./03-Mvt3/m03_v08_music_FagottII.ily"
 \include "./04-Mvt4/m04_v07_music_FagottI.ily"
+\include "./01-Mvt1/m01_v08_music_FagottII.ily"
+\include "./02-Mvt2/m02_v08_music_FagottII.ily"
+\include "./03-Mvt3/m03_v08_music_FagottII.ily"
 \include "./04-Mvt4/m04_v08_music_FagottII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceFagottIMvtI" { \cueVoiceFagottIMvtI }
-%\addQuote "cueVoiceFagottIMvtII" { \cueVoiceFagottIMvtII }
-\addQuote "cueVoiceFagottIMvtIII" { \cueVoiceFagottIMvtIII }
-\addQuote "cueVoiceFagottIMvtIV" { \cueVoiceFagottIMvtIV }
-\addQuote "cueVoiceFagottIIMvtI" { \cueVoiceFagottIIMvtI }
-\addQuote "cueVoiceFagottIIMvtII" { \cueVoiceFagottIIMvtII }
-\addQuote "cueVoiceFagottIIMvtIII" { \cueVoiceFagottIIMvtIII }
-\addQuote "cueVoiceFagottIIMvtIV" { \cueVoiceFagottIIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -50,7 +42,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60"
+			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Fagotte"
 		}
 		instrument = \markup {
 			"Fagotte"
@@ -62,20 +54,19 @@
 				\formatFagottIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameFagottIMvtI \musicFagottIMvtI
+				\keepWithTag #'(fagottI) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(fagottI) \tempiPartMvtI
+				\InCueContext \cueVoiceFagottIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFagottIMvtI \musicFagottIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -87,20 +78,19 @@
 				\formatFagottIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameFagottIMvtII \musicFagottIMvtII
+				\keepWithTag #'(fagottI) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(fagottI) \tempiPartMvtII
+				\InCueContext \cueVoiceFagottIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFagottIMvtII \musicFagottIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2.6 \bold 2.
 			}
 		}
 		\layout {
@@ -112,20 +102,19 @@
 				\formatFagottIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameFagottIMvtIII \musicFagottIMvtIII
+				\keepWithTag #'(fagottI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(fagottI) \tempiPartMvtIII
+				\InCueContext \cueVoiceFagottIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFagottIMvtIII \musicFagottIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1.9 \bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -137,20 +126,19 @@
 				\formatFagottIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameFagottIMvtIV \musicFagottIMvtIV
+				\keepWithTag #'(fagottI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(fagottI) \tempiPartMvtIV
+				\InCueContext \cueVoiceFagottIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFagottIMvtIV \musicFagottIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {
@@ -162,20 +150,19 @@
 				\formatFagottIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameFagottIIMvtI \musicFagottIIMvtI
+				\keepWithTag #'(fagottII) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(fagottII) \tempiPartMvtI
+				\InCueContext \cueVoiceFagottIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFagottIIMvtI \musicFagottIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -187,20 +174,19 @@
 				\formatFagottIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameFagottIIMvtII \musicFagottIIMvtII
+				\keepWithTag #'(fagottII) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(fagottII) \tempiPartMvtII
+				\InCueContext \cueVoiceFagottIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFagottIIMvtII \musicFagottIIMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -212,20 +198,19 @@
 				\formatFagottIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameFagottIIMvtIII \musicFagottIIMvtIII
+				\keepWithTag #'(fagottII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(fagottII) \tempiPartMvtIII
+				\InCueContext \cueVoiceFagottIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFagottIIMvtIII \musicFagottIIMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -237,20 +222,19 @@
 				\formatFagottIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameFagottIIMvtIV \musicFagottIIMvtIV
+				\keepWithTag #'(fagottII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(fagottII) \tempiPartMvtIV
+				\InCueContext \cueVoiceFagottIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFagottIIMvtIV \musicFagottIIMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {

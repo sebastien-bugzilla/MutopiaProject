@@ -11,9 +11,7 @@ musicFagottIIMvtII = \relative c {
 % Bars 1 to 5
 	R2*2
 	
-	\cueDuring #"cueVoiceFagottIIMvtII" #UP {
-		\ni R2 \no
-	}
+	\ni \mmrPos #-4 R2 \no
 	f8\fp\>( f,4) f8(
 	bes8)\pp r r4
 % Bars 6 to 10
@@ -35,13 +33,13 @@ musicFagottIIMvtII = \relative c {
 % Bars 26 to 30
 	
 	
-	\tempoXoffset #-1 \mmrLength #12 R2*6
+	\mmrLength #28 \mmrnDown R2*6
 % Bars 31 to 35
 	
 	
 	
 	\bar "||" \mark \default
-	\tempoXoffset #1 r4 d'--\pp
+	r4 d'--\pp
 % Bars 36 to 40
 	d-- d--
 	d d
@@ -58,7 +56,7 @@ musicFagottIIMvtII = \relative c {
 	
 % Bars 51 to 55
 	r8 ees,\p\< ees ees\!
-	\hairpinMinLength #6.5 cis2-\tweak X-offset #1 \f\>
+	cis2\f\>
 	d4\p r
 	R2*9
 	
@@ -83,15 +81,15 @@ musicFagottIIMvtII = \relative c {
 	c4 d,)
 	g2~
 % Bars 76 to 80
-	g4.\< c8\>(
-	d f\! d bes)
-	ees4.\< ees8(
-	d4\> c
+	\hairpinShorten #'(1.5 . 0) g4.\< c8\>(
+	d\! f d bes)
+	ees4.\< ees8(\!
+	d4\> c\!
 	bes8\p) r r4
 % Bars 81 to 85
 	R2*2
 	
-	r8 c,4.\mf\<
+	r8 \hairpinShorten #'(-0.5 . -0.5) c,4.\mf\<
 	f8\f[ f'] f,[ f']
 	f,[ f']_\dimmarkup f,[ fis']
 % Bars 86 to 90
@@ -101,16 +99,16 @@ musicFagottIIMvtII = \relative c {
 	bes,2\pp~
 	bes
 % Bars 91 to 95
-	b2\pp(
+	b2(
 	g
 	c8) r r4
-	R2*4
-	
+	R2
+	\mmrLength #15 \mmrnDown R2*3
 % Bars 96 to 100
 	
 	
 	r8. f,16\f-. bes(\< f)\! d-. c-.
-	bes8-\tweak X-offset #-2 \ff-> a'-> g-> fis->
+	bes8-\offset X-offset #-3 \ff^> a'^> g^> fis^>
 	g4-> c,->
 % Bars 101 to 105
 	f8 r r4
@@ -166,9 +164,9 @@ musicFagottIIMvtII = \relative c {
 	
 	r4 e\mf
 % Bars 151 to 155
-	f2\<
+	\after 8*3 \! f2\<
 	f4~\> f8 fis(\!
-	g)\noBeam d'(\pp\< g, e)\!
+	g)\noBeam \hairpinShorten #'(-0.5 . -1) d'(\pp\< g, e)\!
 	f!2\fz~
 	f4.\>( fis8\!
 % Bars 156 to 160
@@ -194,13 +192,13 @@ musicFagottIIMvtII = \relative c {
 	bes8 bes'4(\< a16 g\!
 	f8) bes,4.\p~
 	bes8 bes'4(\< a16\! g
-	f8) bes4\mf( a16\! g
+	f8) bes4\mf\<( a16 g\!
 % Bars 176 to 180
 	f8) bes4\f( a16 g
 	f) ees'\<-> d-> des-> c-> bes-> a-> g->\!
 	fis8\ff r g-^ r
 	c,-^r r4
-	\hairpinMinLength #7 f2\p\>~
+	f2\p\>~
 % Bars 181 to 185
 	f\pp(
 	bes8) r r4
@@ -216,7 +214,7 @@ musicFagottIIMvtII = \relative c {
 % Bars 191 to 195
 	
 	
-	e2(_\ppespr
+	e2(-\offset X-offset -2 _\ppespr
 	f8) r r4
 	R2*2
 % Bars 196 to 200
@@ -226,7 +224,7 @@ musicFagottIIMvtII = \relative c {
 	ees-! c-! a-! d,-^\noBeam
 	g-^ r f4\fp~\>
 % Bars 201 to 205
-	f2
+	f2\!
 	bes\pp~
 	bes~
 	bes8 r r4
