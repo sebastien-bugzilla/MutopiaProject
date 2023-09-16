@@ -30,7 +30,7 @@ musicHornIIIMvtIV = \relative c'' {
 	g2. r4
 	dis4.\mf dis8 dis4-. g-.
 % Bars 21 to 25
-	fis4.\< fis8 fis4-. g-.
+	fis4.\< fis8 fis4-. g-.\!
 	fis4.\f fis8 fis4-.\< b-.
 	cis4. cis8 cis4-. d-.\!
 	c!1\fz~
@@ -42,7 +42,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	d1-^\ff~
 	d2. d4-. \mark \default
-	\markYoffset #4.5 e-. r r2
+	e-. r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -61,7 +61,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 66 to 70
 	d\p r
 	R1*2
-	\markYoffset #4.5 \mark \default
+	\mark \default
 	g4\p r g r
 	g r r2
 % Bars 71 to 75
@@ -222,14 +222,14 @@ musicHornIIIMvtIV = \relative c'' {
 	e2. e4-.
 % Bars 236 to 240
 	dis-. r r2
-	ees,2\f r
+	\startMeasureCount ees,2\f r
 	ees r
 	ees r
 	ees r
 % Bars 241 to 245
 	ees r
 	ees_\dimin r
-	ees r
+	ees r \stopMeasureCount 
 	ees4.\p ees8 ees4 r
 	R1*8
 % Bars 246 to 250
@@ -237,7 +237,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	\hairpinShorten #'(0 . -1) g'2(-\tweak X-offset #-1 \p\< \tuplet 3/2 2 { \hairpinShorten #'(1 . 0) c,4\> d ees\!}
+	\hairpinShorten #'(0 . -1) g'2(-\tweak X-offset #-1 \p\< \tuplet 3/2 2 { \tupletYOff #3 \hairpinShorten #'(1 . 0) c,4\> d ees\!}
 	d4) r r2
 	R1*5
 % Bars 256 to 260
@@ -369,15 +369,15 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 376 to 380
 	d~
 	d4 r r2
-	d4->\p \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	d4 \tuplet 3/2 4 {d8_\crescmarkup d d} d4 \tuplet 3/2 4 {d8 d d} 
+	d4->\p \tuplet 3/2 4 {d4.:8} d4 \tuplet 3/2 4 {d4.:8} 
+	d4 \tuplet 3/2 4 {d4.:8} d4 \tuplet 3/2 4 {d4.:8} 
+	d4 \tuplet 3/2 4 {d4.:8_\crescmarkup} d4 \tuplet 3/2 4 {d4.:8} 
 % Bars 381 to 385
-	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	c4\mf \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
-	c4 \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
-	c4 \tuplet 3/2 4 {c8_\crescmarkup c c} c4 \tuplet 3/2 4 {c8 c c} 
-	c4 \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
+	d4 \tuplet 3/2 4 {d4.:8} d4 \tuplet 3/2 4 {d4.:8} 
+	c4-\offset X-offset -0.5 \mf \tuplet 3/2 4 {c4.:8} c4 \tuplet 3/2 4 {c4.:8} 
+	c4 \tuplet 3/2 4 {c4.:8} c4 \tuplet 3/2 4 {c4.:8} 
+	c4 \tuplet 3/2 4 {c4.:8_\crescmarkup} c4 \tuplet 3/2 4 {c4.:8} 
+	c4 \tuplet 3/2 4 {c4.:8} c4 \tuplet 3/2 4 {c4.:8} 
 % Bars 386 to 390
 	c4\f r r2
 	R1
@@ -388,16 +388,16 @@ musicHornIIIMvtIV = \relative c'' {
 	f2.-> r4
 	c4\fz c-. f\fz c-.
 	e\fz c-. d\fz g,-.
-	d'4\p-> \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
+	d'4\p-> \tuplet 3/2 4 {d4.:8} d4 \tuplet 3/2 4 {d4.:8} 
+	d4 \tuplet 3/2 4 {d4.:8} d4 \tuplet 3/2 4 {d4.:8} 
 % Bars 396 to 400
-	d4 \tuplet 3/2 4 {d8_\crescmarkup d d} d4 \tuplet 3/2 4 {d8 d d} 
-	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	c4\mf \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
-	c4 \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
-	c4 \tuplet 3/2 4 {c8_\crescmarkup c c} c4 \tuplet 3/2 4 {c8 c c} 
+	d4 \tuplet 3/2 4 {d4.:8_\crescmarkup} d4 \tuplet 3/2 4 {d4.:8} 
+	d4 \tuplet 3/2 4 {d4.:8} d4 \tuplet 3/2 4 {d4.:8} 
+	c4-\offset X-offset -0.5 \mf \tuplet 3/2 4 {c4.:8} c4 \tuplet 3/2 4 {c4.:8} 
+	c4 \tuplet 3/2 4 {c4.:8} c4 \tuplet 3/2 4 {c4.:8} 
+	c4 \tuplet 3/2 4 {c4.:8_\crescmarkup} c4 \tuplet 3/2 4 {c4.:8} 
 % Bars 401 to 405
-	c4 \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
+	c4 \tuplet 3/2 4 {c4.:8} c4 \tuplet 3/2 4 {c4.:8} 
 	c4\f r r2
 	R1
 	c2->\f c->
@@ -443,7 +443,7 @@ musicHornIIIMvtIV = \relative c'' {
 	
 	
 	r2 r4 g-.\f \bar "||" \mark \default
-	e-.\f r r d-.
+	e-. r r d-.
 % Bars 441 to 445
 	c-. r r g-.
 	c-. r r c-.
@@ -515,7 +515,7 @@ musicHornIIIMvtIV = \relative c'' {
 	c4\ff c c c
 	c c c c
 	c c c c
-	c c c c
+	c c c c \mark \default
 % Bars 521 to 525
 	c r c2-> 
 	r c->
@@ -524,13 +524,13 @@ musicHornIIIMvtIV = \relative c'' {
 	b4-. r g2->\ff~
 % Bars 526 to 530
 	g2. g4-.
-	g-. g-. g-. g-.
+	\startMeasureCount g-. g-. g-. g-.
 	g g g g
 	g g g g
 	g g g g
 % Bars 531 to 535
 	g g g g
-	g-. g-. g-. g\ff
+	g-. g-. g-. g\ff \stopMeasureCount
 	c2->_\pesante g->
 	g-> d->
 	a'2.-> a4

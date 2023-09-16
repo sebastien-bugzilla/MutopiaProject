@@ -19,25 +19,25 @@ musicHornIMvtI = \relative c'' {
 		g8 g4 g g8
 		g8 g4 g g8 \stopMeasureCount
 		g8\< g4 g e'8\!
-		e e4\f e8(\> f g)
-		f8\p\> f4 f f8
+		e e4\f e8(\> f g)\!
+		\hairpinShorten #'(0 . 1) f8\p\> f4 f f8
 % Bars 11 to 15
-		f f4\pp f f8
+		f\! f4\pp f f8
 		f f4 f f8 
 		f f4 f f8 
 		f f4 f f8 
 		g g4\< g g8
 % Bars 16 to 20
 		g g4 g\! g8
-		c,\< c4 c c8
+		c,\< c4 c c8\!
 		c2.\fz~
-		c\<
-		cis4.\!->(_\dimmarkup d8 b cis)
+		\after 2.*7/8 \! c\<
+		cis4.->(_\dimmarkup d8 b cis)
 % Bars 21 to 25
 		d4\p\>( a2)~
 		a2.(
 		e'8\pp) r r4 r
-		R2.*10
+		\mmrnDown R2.*10
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -61,8 +61,8 @@ musicHornIMvtI = \relative c'' {
 % Bars 46 to 50
 		fis g2~\<
 		g2.~
-		g \mark \default
-		g4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		g\! \mark \default
+		g4-\offset X-offset 4 _\ffgrandiosoD r r
 		R2.
 % Bars 51 to 55
 		c,2.-^~
@@ -89,10 +89,8 @@ musicHornIMvtI = \relative c'' {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-		\cueDuring #"cueVoiceHornIMvtI" #DOWN {
-			\ni \mmrPos #-4 R2.
-			\mmrPos #-4 R \no
-		}
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 		r4 gis\pp r
 		r a r
 		R2.*10
@@ -114,7 +112,7 @@ musicHornIMvtI = \relative c'' {
 		r e\fz d8-. c-.
 		b-. r r4 r
 		b8-. r r4 r
-		b8-.\p r r4 r
+		b8-.-\offset X-offset 0.5 \p r r4 r
 		r r b\pp
 % Bars 106 to 110
 		r b r
@@ -122,7 +120,7 @@ musicHornIMvtI = \relative c'' {
 		R2.*3
 % Bars 111 to 115
 		r4 r d8(\p c
-		bes4\< d f)
+		bes4\< d f)\!
 		c4.(\> bes8 a4)\!
 		R2.*22
 % Bars 116 to 120
@@ -134,10 +132,8 @@ musicHornIMvtI = \relative c'' {
 % Bars 131 to 135
 	
 % Bars 136 to 140
-		\cueDuring #"cueVoiceHornIMvtI" #UP {
-			\ni \mmrPos #4 R2.
-			\mmrPos #4 R \no
-		}
+		\ni \mmrPos #6 \tweak extra-offset #'(1 . 0) R2.
+		\mmrPos #6 \tweak extra-offset #'(1 . 0) R \no
 		b2.\f-^~
 		b4 r ees\f \mark \default
 		e!8-. r r4 r
@@ -158,13 +154,13 @@ musicHornIMvtI = \relative c'' {
 		g2\fz r4
 		R2.*3
 % Bars 161 to 165
-		e4\ff \tuplet 3/2 4 {e8( fis e)} e4~
+		\startMeasureCount e4\ff \tuplet 3/2 4 {e8( fis e)} e4~
 		e4 \tuplet 3/2 4 {e8( fis e)} e4~
 		e4 \tuplet 3/2 4 {e8( fis e)} e4~
 		e4 \tuplet 3/2 4 {e8( fis e)} e4~
 		e4 \tuplet 3/2 4 {e8( fis e)} e4~
 % Bars 166 to 170
-		e4 \tuplet 3/2 4 {e8( fis e)} e4
+		e4 \tuplet 3/2 4 {e8( fis e)} e4 \stopMeasureCount 
 		e r a,8-. cis-.
 		e4 r a,8-. cis-.
 		e4 r a,8-. c!-.
@@ -238,10 +234,8 @@ musicHornIMvtI = \relative c'' {
 	
 % Bars 236 to 240
 	
-	\cueDuring #"cueVoiceHornIMvtI" #DOWN {
-		\ni \mmrPos #-4 R2.
-		\mmrPos #-4 R \no
-	}
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	d4\f r r
 	R2.*3
 % Bars 241 to 245
@@ -312,7 +306,7 @@ musicHornIMvtI = \relative c'' {
 	f2 f4-. \mark \default
 	e4-. r r
 % Bars 316 to 320
-	R2.*14
+	\mmrnDown R2.*14
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -326,7 +320,7 @@ musicHornIMvtI = \relative c'' {
 	c
 	cis(_\dimmarkup
 	d4)\p f2\>~
-	f2.
+	f2.\!
 % Bars 336 to 340
 	e8\pp r r4 r
 	R2.*10
@@ -359,10 +353,8 @@ musicHornIMvtI = \relative c'' {
 % Bars 376 to 380
 	
 	
-	\cueDuring #"cueVoiceHornIMvtI" #DOWN {
-		\ni \mmrPos #-4 R2.
-		\mmrPos #-4 R \no
-	}
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	d4\f r r
 % Bars 381 to 385
 	d r r
@@ -400,7 +392,7 @@ musicHornIMvtI = \relative c'' {
 % Bars 411 to 415
 	
 	
-	\tempoXoffset #-1 \mmrDown R2.*3
+	\mmrLength #13 \mmrnDown R2.*3
 % Bars 416 to 420
 	g8(\p^\solo b g'4 f)
 	e2( d4)
@@ -408,8 +400,8 @@ musicHornIMvtI = \relative c'' {
 	e8-. d-. c2
 	e8-. d-. c2
 % Bars 421 to 425
-	e8\pp\< e e4 e8 e
-	e4\! r r
+	e8\pp\< e e4 e8 e\!
+	e4 r r
 	R2.*8
 % Bars 426 to 430
 	
@@ -424,14 +416,14 @@ musicHornIMvtI = \relative c'' {
 	c2.\p~
 	c_\cresc
 	c
-	c\!
+	c\! \mark \default
 	R2.*7
 % Bars 446 to 450
 	
 % Bars 451 to 455
 	
 	ees8(\f c) d-. ees-. f([ d)]
-	ees-.\<[ f-.] ees8( d ees d)
+	ees-.\<[ f-.] ees8( d ees d)\!
 	g2(\ff f4)
 	e!2( d4)
 % Bars 456 to 460
@@ -509,7 +501,7 @@ musicHornIMvtI = \relative c'' {
 	g2\ff f8( e)
 	g2 f8( e)
 	g2.\>~
-	g~
+	g~\!
 % Bars 526 to 530
 	g~\p
 	g

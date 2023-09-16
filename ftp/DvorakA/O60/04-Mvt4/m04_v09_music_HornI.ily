@@ -10,22 +10,20 @@ musicHornIMvtIV = \relative c'' {
 	\transposition e
 	\partial 4 r4
 % Bars 1 to 5
-	R1*12
+	\mmrLength #13 \mmrnDown R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
-	\cueDuring #"cueVoiceHornIMvtIV" #DOWN {
-		\ni \mmrPos #-4 R1
-		\mmrPos #-4 R
-		\mmrPos #-4 R
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 16 to 20
-		\mmrPos #-4 R
-		\mmrPos #-4 R
-		\mmrPos #-4 R
-		\mmrPos #-4 R \no
-	}
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	a4.\mf a8 a4-. d-.
 % Bars 21 to 25
 	c4.\< c8 c4-. b-.\!
@@ -76,7 +74,7 @@ musicHornIMvtIV = \relative c'' {
 	c2\p r
 	R1*2
 	\mark \default
-	R1*5
+	\mmrnDown R1*5
 	
 % Bars 71 to 75
 	
@@ -249,14 +247,14 @@ musicHornIMvtIV = \relative c'' {
 	d2. d4-.
 % Bars 236 to 240
 	cis-. r r2
-	des2\f r
+	\startMeasureCount des2\f r
 	des r
 	des r
 	des r
 % Bars 241 to 245
 	des r
 	des_\dimin r
-	des r
+	des r \stopMeasureCount
 	des4.\p des8 des4 r
 	R1*4
 % Bars 246 to 250
@@ -338,13 +336,11 @@ musicHornIMvtIV = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceHornIMvtIV" #UP {
-		\ni R1
+	\ni \voiceTwo R1
 % Bars 331 to 335
-		R
-		R
-		R \no
-	}
+	R
+	R
+	R \no \oneVoice 
 	\mmrDown R1*3
 	
 % Bars 336 to 340
@@ -457,7 +453,7 @@ musicHornIMvtIV = \relative c'' {
 	
 	
 	\bar "||" \mark \default
-	R1*34
+	\mmrLength #27 R1*34
 % Bars 441 to 445
 	
 % Bars 446 to 450

@@ -48,11 +48,9 @@ musicHornIVMvtIII = \relative c' {
 		
 		
 		
-		\cueDuring #"cueVoiceHornIVMvtIII" #UP {
-			\ni R2. \no
-		}
+		\ni \mmrPos #-4 R2. \no
 % Bars 41 to 45
-		r4 b'!-.\f\< c-.
+		r4 \hairpinShorten #'(-0.5 . 0) b'!-.\f\< c-.
 		g2->\ff aes4-.
 		bes-. ees,2->
 		r4 ees-.\p r
@@ -160,27 +158,27 @@ musicHornIVMvtIII = \relative c' {
 	c_\dimmarkup
 % Bars 151 to 155
 	c
-	c \bar ".|:-||" \key c \major
+	c \attaccatrio \bar ".|:-||" \key c \major \break 
 	\repeat volta 2 {
-		\time 3/4 \trio R2.*6
+		\time 3/4 \trioPart \mmrLength #25 \mmrnDown R2.*6
 % Bars 156 to 160
 		
 		
 		
-		\mmrLength #6 \tempoXoffset #-1 R2.*4
+		\mmrLength #10.5 R2.*4
 % Bars 161 to 165
 		
 		
-		R2.*6
+		\mmrLength #10.5 R2.*6
 % Bars 166 to 170
 		
 		
 		
-		\tempoXoffset #-1 \mmrLength #8 R2.*4
+		\mmrLength #10.5 R2.*4
 % Bars 171 to 175
 		
 		
-		R2.*12
+		\mmrLength #10.5 R2.*12
 % Bars 176 to 180
 		
 % Bars 181 to 185
@@ -238,12 +236,10 @@ musicHornIVMvtIII = \relative c' {
 	
 % Bars 251 to 255
 	
-	\cueDuring #"cueVoiceHornIVMvtIII" #DOWN {
-		\ni \mmrPos #-2 \clef treble R2.
-		\mmrPos #-2 R
-		\mmrPos #-2 R
-		\mmrPos #-2 R \clef bass \no
-	}
+	\ni \mmrPos #-2 \clef treble R2.
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \clef bass \no
 % Bars 256 to 260
 	\startMeasureCount c2.\p~
 	c~\<
@@ -260,20 +256,20 @@ musicHornIVMvtIII = \relative c' {
 	c~
 	c~ \stopMeasureCount
 	c4 r r
-	R2.*15
+	R2.*12
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\mmrnDown R2.*3
 	
 	
 	c2.\p~
 	c~_\crescmarkup
 % Bars 286 to 290
 	c~
-	c \clef treble \bar "||" \key a \minor
+	c \clef treble \bar "||" \key a \minor \break
 	c''2->\f c4->~
 	c c2->
 	r4 c-. c-.
@@ -302,10 +298,8 @@ musicHornIVMvtIII = \relative c' {
 % Bars 321 to 325
 	
 	
-	\cueDuring #"cueVoiceHornIVMvtIII" #UP {
-		\ni R2. \no
-	}
-	r4 b'!-.\f\< c-.
+	\ni \mmrPos #-4 R2. \no
+	r4 \hairpinShorten #'(-0.5 . 0) b'!-.\f\< c-.
 	g2\ff-> aes4-.
 % Bars 326 to 330
 	bes-. ees,2->

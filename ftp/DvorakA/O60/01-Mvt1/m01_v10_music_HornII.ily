@@ -19,17 +19,17 @@ musicHornIIMvtI = \relative c' {
 		c8 c4 c c8
 		c8 c4 c c8 \stopMeasureCount
 		c8\< c4 c c'8\! 
-		cis cis4\f cis8(\> d e)
-		d8\p\> d4 d d8
+		cis cis4\f cis8(\> d e)\!
+		\hairpinShorten #'(0 . 1) d8\p\> d4 d d8
 % Bars 11 to 15
-		d d4\pp d d8
+		d\! d4\pp d d8
 		d d4 d d8 
 		c c4 c c8 
 		c c4 c c8 
 		g g4\< g g8
 % Bars 16 to 20
 		g g4 g\! g8
-		c,\< c4 c c8
+		c,\< c4 c c8\!
 		c2.\fz~
 		c2~ c8 r
 		R2.*14
@@ -58,8 +58,8 @@ musicHornIIMvtI = \relative c' {
 % Bars 46 to 50
 		d g,2~\<
 		g2.~
-		g \mark \default
-		\tempoXoffset #1.5 g4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		g\! \mark \default
+		g4-\offset X-offset 5 _\ffgrandiosoD r r
 		R2.
 % Bars 51 to 55
 		c,2.-^~
@@ -86,10 +86,8 @@ musicHornIIMvtI = \relative c' {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-		\cueDuring #"cueVoiceHornIIMvtI" #DOWN {
-			\ni \mmrPos #-2 R2.
-			\mmrPos #-2 R \no
-		}
+		\ni \mmrPos #-2 R2.
+		\mmrPos #-2 R \no
 		r4 e\pp r
 		r e r
 		R2.*10
@@ -119,7 +117,7 @@ musicHornIIMvtI = \relative c' {
 		R2.*3
 % Bars 111 to 115
 		r4 r g8(\p e
-		f4\< bes d)
+		f4\< bes d)\!
 		a4.(\> g8 f4)\!
 		R2.*24
 % Bars 116 to 120
@@ -179,13 +177,11 @@ musicHornIIMvtI = \relative c' {
 % Bars 181 to 185
 			
 			
-			\cueDuring #"cueVoiceHornIIMvtI" #DOWN {
-				\ni R2.
-				R
-				R
+			\ni \voiceOne R2.
+			R
+			R
 % Bars 186 to 190
-				R \no
-			}
+			R \no \oneVoice 
 			\clef bass c,,,2.\pp~
 			c~
 			c8 r r4 r
@@ -200,7 +196,7 @@ musicHornIIMvtI = \relative c' {
 	}
 	\clef treble R2.*4
 % Bars 186 to 190
-	r4 r a''(\pp^\solo
+	r4 r a''(-\offset X-offset -1 \pp^\solo
 	e'8) r e r r4
 	R2.
 	r4 r g-.\p
@@ -235,10 +231,8 @@ musicHornIIMvtI = \relative c' {
 	
 % Bars 236 to 240
 	
-	\cueDuring #"cueVoiceHornIIMvtI" #UP {
-		\ni R2.
-		R \no
-	}
+	\ni \voiceTwo R2.
+	R \no \oneVoice 
 	g4\f r r
 	R2.*3
 % Bars 241 to 245
@@ -305,7 +299,7 @@ musicHornIIMvtI = \relative c' {
 	g2.~
 	g~
 	g2 g4-. \mark \default
-	\tempoXoffset #1 \startMeasureCount g2.\fp\>~
+	\startMeasureCount g2.\fp\>~
 % Bars 316 to 320
 	g~\pp
 	g~
@@ -314,7 +308,7 @@ musicHornIIMvtI = \relative c' {
 	g~
 % Bars 321 to 325
 	g\<
-	\hairpinMinLength #8 g\fz\> \stopMeasureCount
+	\hairpinShorten #'(-0.5 . -0.5) g\fz\> \stopMeasureCount
 	a\pp~
 	a
 	c~
@@ -322,7 +316,7 @@ musicHornIIMvtI = \relative c' {
 	c~
 	c
 	b\<~
-	b
+	b\!
 	c,2.\f~
 % Bars 331 to 335
 	c~
@@ -395,7 +389,7 @@ musicHornIIMvtI = \relative c' {
 	r g-- r
 	R2. \mark \default
 % Bars 401 to 405
-	g2(_\pespress d'4)
+	g2(-\offset X-offset #-2 _\pespress d'4)
 	c4.(\< g8 ees4)
 	bes'( f'8)\! r f4-.
 	ees2\>( bes8 g\!)
@@ -413,8 +407,8 @@ musicHornIIMvtI = \relative c' {
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	c,8-\tweak X-offset #0.5 \pp\< c c4 c8 c
-	c4 c\> e\!
+	c,8\pp\< c c4 c8 c
+	c4\! c\> e\!
 	a, r r
 	R2.*7
 % Bars 426 to 430
@@ -437,7 +431,7 @@ musicHornIIMvtI = \relative c' {
 % Bars 451 to 455
 	
 	c'8(\f aes) bes-. c-. d([ b)]
-	c-.\<[ d-.] c8( b c g)
+	c-.\<[ d-.] c8( b c g)\!
 	e'!2(\ff d4)
 	c2( g4)
 % Bars 456 to 460

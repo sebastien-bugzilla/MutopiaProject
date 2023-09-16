@@ -11,9 +11,7 @@ musicHornIIMvtII = \relative c'' {
 % Bars 1 to 5
 	R2*2
 	
-	\cueDuring #"cueVoiceHornIIMvtII" #UP {
-		\ni \clef bass R2 \clef treble \no
-	}
+	\ni \clef bass \mmrPos #-4 R2 \clef treble \no
 	a4\fp\> g(
 	f8)\pp r r4
 % Bars 6 to 10
@@ -26,10 +24,8 @@ musicHornIIMvtII = \relative c'' {
 	
 % Bars 26 to 30
 	
-	\cueDuring #"cueVoiceHornIIMvtII" #UP {
-		\ni R2
-		R \no
-	}
+	\ni \voiceTwo R2
+	R \oneVoice \no
 	f16\fp f f f   g g g g 
 	f f f f g\< g g g
 % Bars 31 to 35
@@ -37,7 +33,7 @@ musicHornIIMvtII = \relative c'' {
 	f8 r r4
 	R2*2
 	\bar "||" \mark \default
-	\tempoXoffset #1.2 r4 e,-\tweak X-offset #-3 \pp--
+	r4 e,-\tweak X-offset #-3 \pp--
 % Bars 36 to 40
 	e-- e--
 	e e
@@ -61,11 +57,9 @@ musicHornIIMvtII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceHornIIMvtII" #UP {
-		\ni R2 \no
+	\ni \voiceTwo R2 \no
 % Bars 66 to 70
-		r4 r8. g16\f
-	}
+	r4 r8. g16\f \oneVoice  
 	r8. g16_\dimmarkup r8. g16
 	r4 c,8\pp r
 	R2*4
@@ -103,7 +97,7 @@ musicHornIIMvtII = \relative c'' {
 % Bars 96 to 100
 	c c c_\crescmarkup c   c c c c 
 	c c c c   c c c c
-	c8\noBeam a'16-.\f c-. f,-. c-. f-.\< g-.\!
+	c8\noBeam a'16-.\f c-. f,-. c-.\< f-. g-.\!
 	a8\ff-> a-> a-> a->
 	f4-> f-> 
 % Bars 101 to 105
@@ -119,7 +113,7 @@ musicHornIIMvtII = \relative c'' {
 	e!) cis-.-> fis,-.-> fis'->~
 	fis cis-.-> fis,-.-> fis'->~
 % Bars 111 to 115
-	fis dis-.-> gis,-.-> fis'->( \markYoffset #4.5 \mark \default
+	fis dis-.-> gis,-.-> fis'->( \markWhiteout \mark \default
 	dis) r r4
 	R2*10
 	
@@ -135,9 +129,9 @@ musicHornIIMvtII = \relative c'' {
 % Bars 126 to 130
 	cis2
 	cis4-> a8-. e'-.
-	cis4-> a8-. e'-.
+	cis4-> a8-. e'-.\!
 	cis\f a16 e' cis8 a16 e'
-	cis\< a e' cis a e' cis a
+	cis\< a e' cis a e' cis a\!
 % Bars 131 to 135
 	cis\ff r r8 r4
 	R2*8
@@ -148,7 +142,7 @@ musicHornIIMvtII = \relative c'' {
 	
 	
 	
-	\markYoffset #4.5 \mark \default
+	\mark \default
 	r16 c,8\pp c16 r c8 d16
 % Bars 141 to 145
 	r d8 d16 r e8 e16
@@ -184,7 +178,7 @@ musicHornIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	\tempoXoffset #1.2 f8\pp f4 f8~
+	f8\pp f4 f8~
 	f f(\< g gis\!
 % Bars 171 to 175
 	a) f4\pp f8~
@@ -201,8 +195,8 @@ musicHornIIMvtII = \relative c'' {
 % Bars 181 to 185
 	
 % Bars 186 to 190
-	c2\pp\<(
-	bes'\>
+	\hairpinShorten #'(0 . -0.7) c2\pp\<(
+	\hairpinShorten #'(0.7 . 0) bes'\>
 	a8)\! r r4
 	R2*10
 	

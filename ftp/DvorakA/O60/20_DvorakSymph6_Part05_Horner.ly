@@ -12,51 +12,35 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part05_Horner.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part05_Horner.ily"
 \include "./01-Mvt1/m01_v09_music_HornI.ily"
-\include "./01-Mvt1/m01_v10_music_HornII.ily"
-\include "./01-Mvt1/m01_v11_music_HornIII.ily"
-\include "./01-Mvt1/m01_v12_music_HornIV.ily"
 \include "./02-Mvt2/m02_v09_music_HornI.ily"
-\include "./02-Mvt2/m02_v10_music_HornII.ily"
-\include "./02-Mvt2/m02_v11_music_HornIII.ily"
-\include "./02-Mvt2/m02_v12_music_HornIV.ily"
 \include "./03-Mvt3/m03_v09_music_HornI.ily"
-\include "./03-Mvt3/m03_v10_music_HornII.ily"
-\include "./03-Mvt3/m03_v11_music_HornIII.ily"
-\include "./03-Mvt3/m03_v12_music_HornIV.ily"
 \include "./04-Mvt4/m04_v09_music_HornI.ily"
+\include "./01-Mvt1/m01_v10_music_HornII.ily"
+\include "./02-Mvt2/m02_v10_music_HornII.ily"
+\include "./03-Mvt3/m03_v10_music_HornII.ily"
 \include "./04-Mvt4/m04_v10_music_HornII.ily"
+\include "./01-Mvt1/m01_v11_music_HornIII.ily"
+\include "./02-Mvt2/m02_v11_music_HornIII.ily"
+\include "./03-Mvt3/m03_v11_music_HornIII.ily"
 \include "./04-Mvt4/m04_v11_music_HornIII.ily"
+\include "./01-Mvt1/m01_v12_music_HornIV.ily"
+\include "./02-Mvt2/m02_v12_music_HornIV.ily"
+\include "./03-Mvt3/m03_v12_music_HornIV.ily"
 \include "./04-Mvt4/m04_v12_music_HornIV.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceHornIMvtI" { \cueVoiceHornIMvtI }
-\addQuote "cueVoiceHornIMvtII" { \cueVoiceHornIMvtII }
-\addQuote "cueVoiceHornIMvtIII" { \cueVoiceHornIMvtIII }
-\addQuote "cueVoiceHornIMvtIV" { \cueVoiceHornIMvtIV }
-\addQuote "cueVoiceHornIIMvtI" { \cueVoiceHornIIMvtI }
-\addQuote "cueVoiceHornIIMvtII" { \cueVoiceHornIIMvtII }
-\addQuote "cueVoiceHornIIMvtIII" { \cueVoiceHornIIMvtIII }
-\addQuote "cueVoiceHornIIMvtIV" { \cueVoiceHornIIMvtIV }
-\addQuote "cueVoiceHornIIIMvtI" { \cueVoiceHornIIIMvtI }
-\addQuote "cueVoiceHornIIIMvtII" { \cueVoiceHornIIIMvtII }
-\addQuote "cueVoiceHornIIIMvtIII" { \cueVoiceHornIIIMvtIII }
-%\addQuote "cueVoiceHornIIIMvtIV" { \cueVoiceHornIIIMvtIV }
-\addQuote "cueVoiceHornIVMvtI" { \cueVoiceHornIVMvtI }
-\addQuote "cueVoiceHornIVMvtII" { \cueVoiceHornIVMvtII }
-\addQuote "cueVoiceHornIVMvtIII" { \cueVoiceHornIVMvtIII }
-%\addQuote "cueVoiceHornIVMvtIV" { \cueVoiceHornIVMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -66,7 +50,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60"
+			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Horner"
 		}
 		instrument = \markup {
 			"Horner"
@@ -78,20 +62,19 @@
 				\formatHornIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameHornIMvtI \musicHornIMvtI
+				\keepWithTag #'(hornI) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(hornI) \tempiPartMvtI
+				\InCueContext \cueVoiceHornIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameHornIMvtI \musicHornIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -103,20 +86,19 @@
 				\formatHornIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameHornIMvtII \musicHornIMvtII
+				\keepWithTag #'(hornI) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(hornI) \tempiPartMvtII
+				\InCueContext \cueVoiceHornIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameHornIMvtII \musicHornIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.3 \bold 2.
 			}
 		}
 		\layout {
@@ -128,24 +110,22 @@
 				\formatHornIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameHornIMvtIII \musicHornIMvtIII
+				\keepWithTag #'(hornI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(hornI) \tempiPartMvtIII
+				\InCueContext \cueVoiceHornIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameHornIMvtIII \musicHornIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #-2 \bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
-			system-count = #22
 		}
 	}
 	\score {
@@ -154,20 +134,19 @@
 				\formatHornIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameHornIMvtIV \musicHornIMvtIV
+				\keepWithTag #'(hornI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(hornI) \tempiPartMvtIV
+				\InCueContext \cueVoiceHornIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameHornIMvtIV \musicHornIMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #1.3 \bold {4. Finale.}
 			}
 		}
 		\layout {
@@ -179,20 +158,19 @@
 				\formatHornIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameHornIIMvtI \musicHornIIMvtI
+				\keepWithTag #'(hornII) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(hornII) \tempiPartMvtI
+				\InCueContext \cueVoiceHornIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameHornIIMvtI \musicHornIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -204,20 +182,19 @@
 				\formatHornIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameHornIIMvtII \musicHornIIMvtII
+				\keepWithTag #'(hornII) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(hornII) \tempiPartMvtII
+				\InCueContext \cueVoiceHornIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameHornIIMvtII \musicHornIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.2 \bold 2.
 			}
 		}
 		\layout {
@@ -229,20 +206,19 @@
 				\formatHornIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameHornIIMvtIII \musicHornIIMvtIII
+				\keepWithTag #'(hornII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(hornII) \tempiPartMvtIII
+				\InCueContext \cueVoiceHornIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameHornIIMvtIII \musicHornIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #0.9 \bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -254,20 +230,19 @@
 				\formatHornIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameHornIIMvtIV \musicHornIIMvtIV
+				\keepWithTag #'(hornII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(hornII) \tempiPartMvtIV
+				\InCueContext \cueVoiceHornIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameHornIIMvtIV \musicHornIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {
@@ -279,20 +254,19 @@
 				\formatHornIIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameHornIIIMvtI \musicHornIIIMvtI
+				\keepWithTag #'(hornIII) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(hornIII) \tempiPartMvtI
+				\InCueContext \cueVoiceHornIIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameHornIIIMvtI \musicHornIIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -304,20 +278,19 @@
 				\formatHornIIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameHornIIIMvtII \musicHornIIIMvtII
+				\keepWithTag #'(hornIII) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(hornIII) \tempiPartMvtII
+				\InCueContext \cueVoiceHornIIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameHornIIIMvtII \musicHornIIIMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2.5 \bold 2.
 			}
 		}
 		\layout {
@@ -329,20 +302,19 @@
 				\formatHornIIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameHornIIIMvtIII \musicHornIIIMvtIII
+				\keepWithTag #'(hornIII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(hornIII) \tempiPartMvtIII
+				\InCueContext \cueVoiceHornIIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameHornIIIMvtIII \musicHornIIIMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #3 \bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -354,20 +326,19 @@
 				\formatHornIIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameHornIIIMvtIV \musicHornIIIMvtIV
+				\keepWithTag #'(hornIII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(hornIII) \tempiPartMvtIV
+				\InCueContext \cueVoiceHornIIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameHornIIIMvtIV \musicHornIIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #1.5 \bold {4. Finale.}
 			}
 		}
 		\layout {
@@ -379,20 +350,19 @@
 				\formatHornIVMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameHornIVMvtI \musicHornIVMvtI
+				\keepWithTag #'(hornIV) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(hornIV) \tempiPartMvtI
+				\InCueContext \cueVoiceHornIVMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameHornIVMvtI \musicHornIVMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -404,20 +374,19 @@
 				\formatHornIVMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameHornIVMvtII \musicHornIVMvtII
+				\keepWithTag #'(hornIV) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(hornIV) \tempiPartMvtII
+				\InCueContext \cueVoiceHornIVMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameHornIVMvtII \musicHornIVMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2 \bold 2.
 			}
 		}
 		\layout {
@@ -429,20 +398,19 @@
 				\formatHornIVMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameHornIVMvtIII \musicHornIVMvtIII
+				\keepWithTag #'(hornIV) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(hornIV) \tempiPartMvtIII
+				\InCueContext \cueVoiceHornIVMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameHornIVMvtIII \musicHornIVMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2 \bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -454,20 +422,19 @@
 				\formatHornIVMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameHornIVMvtIV \musicHornIVMvtIV
+				\keepWithTag #'(hornIV) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(hornIV) \tempiPartMvtIV
+				\InCueContext \cueVoiceHornIVMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameHornIVMvtIV \musicHornIVMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #1 \bold {4. Finale.}
 			}
 		}
 		\layout {

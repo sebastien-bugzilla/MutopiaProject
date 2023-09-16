@@ -32,17 +32,17 @@ musicHornIVMvtIV = \relative c' {
 % Bars 21 to 25
 	
 	fis'4.\f fis8 fis4-.\< gis-.
-	a4. a8 a4-. b!-.\!
+	a4. a8 a4-. \once \stemUp b!-.\!
 	c!1\fz~
 	c4 r r2
 % Bars 26 to 30
-	R1*10
+	\mmrLength #15 R1*10
 % Bars 31 to 35
 	
 % Bars 36 to 40
 	g1-^\ff~
 	g2. g4-. \mark \default
-	\tempoXoffset #1.5 c-. r r2
+	c-. r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -62,7 +62,7 @@ musicHornIVMvtIV = \relative c' {
 	d\p r
 	R1*2
 	\mark \default
-	R1*16
+	\mmrLength #18 R1*16
 	
 % Bars 71 to 75
 	
@@ -222,14 +222,14 @@ musicHornIVMvtIV = \relative c' {
 	cis2. cis4-.
 % Bars 236 to 240
 	b-. r r2
-	ees,2\f r
+	\startMeasureCount ees,2\f r
 	ees r
 	ees r
 	ees r
 % Bars 241 to 245
 	ees r
 	ees_\dimin r
-	ees r
+	ees r \stopMeasureCount
 	ees4.\p ees8 ees4 r
 	R1*8 
 % Bars 246 to 250
@@ -237,7 +237,7 @@ musicHornIVMvtIV = \relative c' {
 % Bars 251 to 255
 	
 	\mark \default
-	ees'2(-\tweak X-offset #-1.5 \p\< \tupletYOff #3 \tuplet 3/2 2 {a,4\> bes c\!}
+	\hairpinShorten #'(-0.3 . -1.5) ees'2(\p\< \tupletYOff #2.8 \tuplet 3/2 2 {\hairpinShorten #'(1.5 . 0) a,4\> bes c\!}
 	bes4) r r2
 	R1*5
 % Bars 256 to 260
@@ -299,11 +299,13 @@ musicHornIVMvtIV = \relative c' {
 	d~
 % Bars 306 to 310
 	d4\p r r2
-	R1*19
+	R1*11
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
+	
+	\mmrnDown R1*8
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -320,7 +322,7 @@ musicHornIVMvtIV = \relative c' {
 	f1~
 % Bars 336 to 340
 	f2. r4
-	R1*4
+	\mmrnDown R1*4
 	
 	
 	
@@ -353,7 +355,7 @@ musicHornIVMvtIV = \relative c' {
 	
 	
 	
-	\markYoffset #4.5 \mark \default
+	\mark \default
 % Bars 366 to 370
 	R1*12
 % Bars 371 to 375
@@ -361,15 +363,15 @@ musicHornIVMvtIV = \relative c' {
 % Bars 376 to 380
 	
 	
-	g4->\p \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
-	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
-	g4 \tuplet 3/2 4 {g8_\crescmarkup g g} g4 \tuplet 3/2 4 {g8 g g} 
+	g4->\p \tuplet 3/2 4 {g4.:8} g4 \tuplet 3/2 4 {g4.:8} 
+	g4 \tuplet 3/2 4 {g4.:8} g4 \tuplet 3/2 4 {g4.:8} 
+	g4 \tuplet 3/2 4 {g4.:8_\crescmarkup} g4 \tuplet 3/2 4 {g4.:8} 
 % Bars 381 to 385
-	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
-	bes4\mf \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
-	bes4 \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
-	bes4 \tuplet 3/2 4 {bes8_\crescmarkup bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
-	bes4 \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
+	g4 \tuplet 3/2 4 {g4.:8} g4 \tuplet 3/2 4 {g4.:8} 
+	bes4\mf \tuplet 3/2 4 {bes4.:8} bes4 \tuplet 3/2 4 {bes4.:8} 
+	bes4 \tuplet 3/2 4 {bes4.:8} bes4 \tuplet 3/2 4 {bes4.:8} 
+	bes4 \tuplet 3/2 4 {bes4.:8_\crescmarkup} bes4 \tuplet 3/2 4 {bes4.:8} 
+	bes4 \tuplet 3/2 4 {bes4.:8} bes4 \tuplet 3/2 4 {bes4.:8} 
 % Bars 386 to 390
 	bes4\f r r2
 	R1
@@ -380,16 +382,16 @@ musicHornIVMvtIV = \relative c' {
 	f2.-> r4
 	g,4\fz c-. c\fz c-.
 	c\fz c-. b\fz g-.
-	g4->\p \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
-	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g}
+	g4->\p \tuplet 3/2 4 {g4.:8} g4 \tuplet 3/2 4 {g4.:8} 
+	g4 \tuplet 3/2 4 {g4.:8} g4 \tuplet 3/2 4 {g4.:8}
 % Bars 396 to 400
-	g4 \tuplet 3/2 4 {g8_\crescmarkup g g} g4 \tuplet 3/2 4 {g8 g g}
-	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
-	bes4\mf \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
-	bes4 \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
-	bes4 \tuplet 3/2 4 {bes8_\crescmarkup bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
+	g4 \tuplet 3/2 4 {g4.:8_\crescmarkup} g4 \tuplet 3/2 4 {g4.:8}
+	g4 \tuplet 3/2 4 {g4.:8} g4 \tuplet 3/2 4 {g4.:8} 
+	bes4\mf \tuplet 3/2 4 {bes4.:8} bes4 \tuplet 3/2 4 {bes4.:8} 
+	bes4 \tuplet 3/2 4 {bes4.:8} bes4 \tuplet 3/2 4 {bes4.:8} 
+	bes4 \tuplet 3/2 4 {bes4.:8_\crescmarkup} bes4 \tuplet 3/2 4 {bes4.:8} 
 % Bars 401 to 405
-	bes4 \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
+	bes4 \tuplet 3/2 4 {bes4.:8} bes4 \tuplet 3/2 4 {bes4.:8} 
 	bes4\f r r2
 	R1
 	c2->\f c->
@@ -470,7 +472,7 @@ musicHornIVMvtIV = \relative c' {
 	
 % Bars 481 to 485
 	
-	r2 r4 f'_\ffmarc
+	r2 r4 f'-\offset X-offset -2 _\ffmarc
 	d2-> d->
 	d-> d4-. g,-.
 	g1~
@@ -507,7 +509,7 @@ musicHornIVMvtIV = \relative c' {
 	c,4\ff c c c
 	c c c c
 	c c c c
-	c c c c
+	c c c c \mark \default
 % Bars 521 to 525
 	f r a2-> 
 	r a->
@@ -516,13 +518,13 @@ musicHornIVMvtIV = \relative c' {
 	g4-. r g2->\ff~
 % Bars 526 to 530
 	g2. g4-.
-	g-. g-. g-. g-.
+	\startMeasureCount g-. g-. g-. g-.
 	g g g g
 	g g g g
 	g g g g
 % Bars 531 to 535
 	g g g g
-	g-. g-. g-. g\ff
+	g-. g-. g-. g\ff \stopMeasureCount
 	c2->_\pesante g->
 	c,-> b->
 	e2.-> e4

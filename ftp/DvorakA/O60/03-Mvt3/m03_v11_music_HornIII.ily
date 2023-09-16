@@ -48,11 +48,9 @@ musicHornIIIMvtIII = \relative c'' {
 		
 		
 		
-		\cueDuring #"cueVoiceHornIIIMvtIII" #DOWN {
-			\ni \mmrPos #-4 R2. \no
-		}
+		\ni \mmrPos #-4 R2. \no
 % Bars 41 to 45
-		r4 b!-.-\tweak X-offset #-1 \f\< c-.
+		r4 \hairpinShorten #'(0 . -1.3) b!-.\f\< c-.\!
 		g2->\ff c4-.
 		d-. bes2->
 		r4 bes-.\p r
@@ -150,9 +148,12 @@ musicHornIIIMvtIII = \relative c'' {
 	\alternative {
 		{
 			c r r
+			\once \override Staff.BarLine.space-alist = #'(
+				(next-note . (fixed-space . 3))
+				(right-edge . (extra-space . 0)))
 		}
 		{
-			\startMeasureCount c2.\f\>
+			\startMeasureCountAt #2 c2.\f\>
 		}
 	}
 	c
@@ -161,9 +162,9 @@ musicHornIIIMvtIII = \relative c'' {
 	c_\dimmarkup
 % Bars 151 to 155
 	c
-	c \stopMeasureCount \bar ".|:-||" \key c \major
+	c \attaccatrioDown \stopMeasureCount \bar ".|:-||" \key c \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio R2.*2
+		\time 3/4 \trioPart \mmrnDown R2.*2
 		
 		c2.~\p
 % Bars 156 to 160
@@ -175,7 +176,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 161 to 165
 		c~
 		c\pp
-		\tempoXoffset #-0.5 c->\p
+		c->\p
 		R2.
 		c2.~\p
 % Bars 166 to 170
@@ -187,7 +188,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 171 to 175
 		c~
 		c\pp
-		\startMeasureCount c~\fp
+		\startMeasureCountAt #1 c~\fp
 		c~
 		c~\<
 % Bars 176 to 180
@@ -239,12 +240,10 @@ musicHornIIIMvtIII = \relative c'' {
 	
 % Bars 251 to 255
 	
-	\cueDuring #"cueVoiceHornIIIMvtIII" #DOWN {
-		\ni \mmrPos #-2 R2.
-		\mmrPos #-2 R
-		\mmrPos #-2 R
-		\mmrPos #-2 R \no
-	}
+	\ni \mmrPos #-2 R2.
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no
 % Bars 256 to 260
 	\startMeasureCount c2.\p~
 	c~\<
@@ -303,10 +302,8 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 321 to 325
 	
 	
-	\cueDuring #"cueVoiceHornIIIMvtIII" #DOWN {
-		\ni \mmrPos #-4 R2. \no
-	}
-	r4 \hairpinMinLength #6.5 b!-.\f\< c-.
+	\ni \mmrPos #-4 R2. \no
+	r4 \hairpinShorten #'(0 . -1.3) b!-.\f\< c-.\!
 	g2\ff-> c4-.
 % Bars 326 to 330
 	d-. bes2->

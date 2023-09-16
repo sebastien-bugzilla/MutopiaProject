@@ -420,7 +420,7 @@ musicHornIMvtI = \relative c'' {
 	c2.\p~
 	c_\cresc
 	c
-	c\!
+	c\! \mark \default
 	R2.*7
 % Bars 446 to 450
 	

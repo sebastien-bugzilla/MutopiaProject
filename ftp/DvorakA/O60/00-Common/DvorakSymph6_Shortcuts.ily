@@ -461,16 +461,25 @@ startMeasureCountAt = #(define-music-function
 	#}
 )
 
-%barLineSpaceAlist = #(define-music-function
-%	(espace)
-%	(number?)
-%	#{
-%		\once \override Staff.BarLine.space-alist = #'(
-%			(next-note . (fixed-space . #espace))
-%			(right-edge . (extra-space . 0))
-%		)
-%	#}
-%)
+countEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Staff.MeasureCounter.extra-offset = #offset
+		\once \override Staff.MeasureCounter.whiteout = #1
+		\once \override Staff.MeasureCounter.whiteout-style = #'outline
+	#}
+)
+
+tempoEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -647,21 +656,6 @@ startMeasureCountAt = #(define-music-function
 %	(number?)
 %	#{
 %		\once \override Score.MetronomeMark.X-offset = #offset
-%	#}
-%)
-
-%tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-%tempoEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
 %	#}
 %)
 

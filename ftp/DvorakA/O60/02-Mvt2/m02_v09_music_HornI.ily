@@ -11,16 +11,14 @@ musicHornIMvtII = \relative c'' {
 % Bars 1 to 5
 	R2*2
 	
-	\cueDuring #"cueVoiceHornIMvtII" #UP {
-		\ni \clef bass R2 \clef treble \no
-	}
-	\hairpinMinLength #10 c4\fp\> bes(
+	\ni \clef bass \mmrPos #-4 R2 \clef treble \no
+	c4-\offset X-offset 0.5 \fp\> \once \stemUp bes(
 	a8)\pp r r4
 % Bars 6 to 10
 	R2*6
 % Bars 11 to 15
 	
-	c4(\pp^\solo f~
+	\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur c4(\pp-\offset X-offset -2 ^\solo f~
 	f8 e d c)
 	c(~ c32 d c bes-.) bes4(
 	a8) r r4
@@ -33,13 +31,13 @@ musicHornIMvtII = \relative c'' {
 	r8 g4.~->\p
 	g8 b4\< b8\!
 	c\f r r4
-	\mmrDown R2*5
+	\mmrDown \mmrLength #12 R2*5
 % Bars 31 to 35
 	
 	
 	
 	\bar "||" \mark \default
-	\tempoXoffset #1 r4 e,\pp--
+	r4 e,\pp--
 % Bars 36 to 40
 	e-- e--
 	e e
@@ -54,7 +52,7 @@ musicHornIMvtII = \relative c'' {
 	R2*2
 % Bars 46 to 50
 	
-	r4 bes\fp\>~
+	r4 bes-\offset X-offset #0.5 \fp\>~
 	bes2~
 	bes8\! bes\pp-- bes-- bes--
 	bes2->~
@@ -71,14 +69,12 @@ musicHornIMvtII = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceHornIMvtII" #UP {
-		\ni R2 \no
+	\ni \voiceTwo  R2 \no
 % Bars 66 to 70
-		r4 r8. bes16\f
-	}
+	r4 r8. bes16\f \oneVoice 
 	r8. bes16-\tweak X-offset #-1 _\dimmarkup r8. bes16\p
 	R2
-	\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur c16(\p\< d f e d\> c bes a\!)
+	\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur c16(\p\< d f e\! d\> c bes a\!)
 	\tuplet 3/2 4 {c8(-- bes-- a--} c[ bes])
 % Bars 71 to 75
 	a(_\dimmarkup g c4)~
@@ -116,7 +112,7 @@ musicHornIMvtII = \relative c'' {
 	des4_\dimmarkup( c
 	bes\p\> g)
 	c8\ff-. r r4
-	r8 c-.-> g-.-> c->~
+	r8 \stemDown c-.-> g-.-> c->~ \stemNeutral
 % Bars 106 to 110
 	c( bes) r4
 	r8 c-.-\tweak X-offset #-3 \ff-> f,-.-> f'->~
@@ -124,7 +120,7 @@ musicHornIMvtII = \relative c'' {
 	e!) cis-.-> fis,-.-> fis'->~
 	fis cis-.-> fis,-.-> fis'->~
 % Bars 111 to 115
-	fis dis-.-> gis,-.-> fis'->~ \markYoffset #5 \mark \default
+	fis dis-.-> gis,-.-> fis'->~ \markWhiteout \mark \default
 	fis r r4
 	R2*4
 	
@@ -146,7 +142,7 @@ musicHornIMvtII = \relative c'' {
 	cis4-> a8-. e'-.
 	cis4-> a8-. e'-.
 	cis\f a16 e' cis8 a16 e'
-	cis\< a e' cis a e' cis a
+	cis\< a e' cis a e' cis a\!
 % Bars 131 to 135
 	e'\ff r r8 r4
 	R2*5
@@ -170,13 +166,13 @@ musicHornIMvtII = \relative c'' {
 	c4(\pp f)~
 	f8( e d c)
 	c~ c32( d c bes-.) bes4(
-	a) d8->\< e16-> f->
+	a) d8->\< e16-> f->\!
 % Bars 151 to 155
 	f8\f c a4-\tweak X-offset #-1 _\dimmarkup
 	g2\p
 	r8 e(\pp\< f g16 gis)\!
-	a4 c\fz~
-	c8(\> bes16 a \acciaccatura c8 bes8. a16)\!
+	a4 c-\offset X-offset 0.5 \fz~
+	\stemUp c8(\> bes16 a \stemNeutral \acciaccatura c8 bes8. a16)\!
 % Bars 156 to 160
 	a4\pp-- a--
 	a-- a--
@@ -193,7 +189,7 @@ musicHornIMvtII = \relative c'' {
 	R2*3
 	
 	\mark \default
-	\tempoXoffset #0.5 a8\pp a4 a8~
+	a8\pp a4 a8~
 	a a(\< bes b\!
 % Bars 171 to 175
 	c) a4\pp a8~
@@ -210,17 +206,17 @@ musicHornIMvtII = \relative c'' {
 % Bars 181 to 185
 	
 % Bars 186 to 190
-	c2\pp\<~
-	c~\>
+	\hairpinShorten #'(-0.3 . 0.5) c2\pp\<~
+	\hairpinShorten #'(-0.5 . 0) c~\>
 	c8\! r r4
 	R2*4
 	
 % Bars 191 to 195
 	
 	
-	\hairpinMinLength #7 g4.(-\tweak X-offset #-2 \pp\< gis8\>
+	g4.(-\tweak X-offset #-2 \pp\< gis8\>
 	a\!)\noBeam c(\< a d)~\!
-	\hairpinMinLength #4 d4.\> c8\pp~
+	\hairpinShorten #'(-0.8 . -0.3) d4.\> c8\pp~
 % Bars 196 to 200
 	c8 r r4
 	R2*2

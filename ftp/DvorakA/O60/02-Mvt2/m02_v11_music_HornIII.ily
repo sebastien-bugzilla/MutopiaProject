@@ -20,17 +20,15 @@ musicHornIIIMvtII = \relative c'' {
 	
 % Bars 26 to 30
 	
-	\cueDuring #"cueVoiceHornIIIMvtII" #UP {
-		\ni R2
-		R \no
-	}
+	\ni \voiceTwo R2
+	R \no \oneVoice 
 	e16\fp e e e f f f f
 	e e e e f\< f f f
 % Bars 31 to 35
 	e e e e f f f f\!
 	e8 r r4
 	R2*2
-	\bar "||" \markYoffset #4.5 \mark \default
+	\bar "||" \mark \default
 	R2*6
 % Bars 36 to 40
 	
@@ -61,9 +59,7 @@ musicHornIIIMvtII = \relative c'' {
 % Bars 61 to 65
 	
 % Bars 66 to 70
-	\cueDuring #"cueVoiceHornIIIMvtII" #UP {
-		r4 r8. g,16\f
-	}
+	\voiceTwo r4 r8. g,16\f \oneVoice 
 	r8. g16_\dimmarkup r8. g16
 	r4 f'8\pp r
 	r f r4
@@ -100,7 +96,7 @@ musicHornIIIMvtII = \relative c'' {
 % Bars 96 to 100
 	e e e_\crescmarkup e f f f f
 	e e e e f f f f
-	e8 r16 g-.\f\< c16( g) e-. d-.
+	e8 r16 g-.\f\< c16( g) e-. d-.\!
 	c8\ff-> e-> e-> e->
 	e4-> d->
 % Bars 101 to 105
@@ -146,7 +142,7 @@ musicHornIIIMvtII = \relative c'' {
 	r f8 f16 r e8 e16
 	r e8 e16 r f8 f16
 	r e8\< e16 r e8 fis16\!
-	r\mf\< g8 g16 r g8 g16\!
+	r g8\mf\< g16 r g8 g16\!
 	r g8\> g16 r g8 g16\!
 % Bars 146 to 150
 	r g8_\pdim g16 r g8 g16
@@ -159,7 +155,7 @@ musicHornIIIMvtII = \relative c'' {
 	r d8\p d16\> r d8 d16\!
 	R2
 	e4\fz c
-	<<b2 {s8\> s s s\!}>>
+	\after 2*7/8 \! b2\>
 % Bars 156 to 160
 	cis4--\pp cis--
 	cis-- cis--
@@ -172,20 +168,20 @@ musicHornIIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	\tempoXoffset #1.5 r8 g4\pp g8~
+	r8 g4\pp g8~
 	g g4\< g8\!~
 % Bars 171 to 175
 	g g4\pp g8~
 	g g4\< g8\!~
 	g g4\p g8~
 	g g'4\< g8\!~
-	g g4\mf\< g8\!~
+	g\! g4\mf\< g8~
 % Bars 176 to 180
 	g g4\f g8~
 	g16 r g\f\<-> g-> g-> g-> g-> c,->\!
 	e8\ff r e-^-. r
 	d-^-. r r4
-	\hairpinMinLength #6 e2\p\>(
+	\hairpinShorten #'(-0.6 . -0.3) e2\p\>(
 % Bars 181 to 185
 	f\pp
 	e8) r r4

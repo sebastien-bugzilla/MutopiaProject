@@ -216,11 +216,7 @@ nameHornIMvtI = {
 			\lower #1 "Horn I" "in D"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. I" "in D"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIMvtII = {
@@ -229,11 +225,7 @@ nameHornIMvtII = {
 			\lower #1 "Horn I" "in F"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. I" "in F"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIMvtIII = {
@@ -242,11 +234,7 @@ nameHornIMvtIII = {
 			\lower #1 "Horn I" "in F"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. I" "in F"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIMvtIV = {
@@ -255,11 +243,7 @@ nameHornIMvtIV = {
 			\lower #1 "Horn I" "in E"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. I" "in E"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIIMvtI = {
@@ -268,11 +252,7 @@ nameHornIIMvtI = {
 			\lower #1 "Horn II" "in D"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. II" "in D"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIIMvtII = {
@@ -281,11 +261,7 @@ nameHornIIMvtII = {
 			\lower #1 "Horn II" "in F"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. II" "in F"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIIMvtIII = {
@@ -294,11 +270,7 @@ nameHornIIMvtIII = {
 			\lower #1 "Horn II" "in F"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. II" "in F"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIIMvtIV = {
@@ -307,11 +279,7 @@ nameHornIIMvtIV = {
 			\lower #1 "Horn II" "in E"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. II" "in E"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIIIMvtI = {
@@ -320,11 +288,7 @@ nameHornIIIMvtI = {
 			\lower #1 "Horn III" "in E"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. III" "in E"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIIIMvtII = {
@@ -333,11 +297,7 @@ nameHornIIIMvtII = {
 			\lower #1 "Horn III" "in B"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. III" "in B"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIIIMvtIII = {
@@ -346,11 +306,7 @@ nameHornIIIMvtIII = {
 			\lower #1 "Horn III" "in D"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. III" "in D"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIIIMvtIV = {
@@ -359,11 +315,7 @@ nameHornIIIMvtIV = {
 			\lower #1 "Horn III" "in D"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. III" "in D"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIVMvtI = {
@@ -372,11 +324,7 @@ nameHornIVMvtI = {
 			\lower #1 "Horn IV" "in E"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. IV" "in E"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIVMvtII = {
@@ -385,11 +333,7 @@ nameHornIVMvtII = {
 			\lower #1 "Horn IV" "in B"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. IV" "in B"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIVMvtIII = {
@@ -398,11 +342,7 @@ nameHornIVMvtIII = {
 			\lower #1 "Horn IV" "in D"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. IV" "in D"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 nameHornIVMvtIV = {
@@ -411,11 +351,7 @@ nameHornIVMvtIV = {
 			\lower #1 "Horn IV" "in D"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Hn. IV" "in D"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"french horn"
 }
 %###############################################################################

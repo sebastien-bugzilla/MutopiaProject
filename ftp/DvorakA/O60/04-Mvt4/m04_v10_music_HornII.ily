@@ -10,22 +10,20 @@ musicHornIIMvtIV = \relative c' {
 	\transposition e
 	\partial 4 r4
 % Bars 1 to 5
-	R1*12
+	\mmrLength #21 R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
-	\cueDuring #"cueVoiceHornIIMvtIV" #UP {
-		\ni R1
-		R
-		R
+	\ni \voiceTwo R1
+	R
+	R
 % Bars 16 to 20
-		R
-		R
-		R
-		R \no
-	}
+	R
+	R
+	R
+	R \no \oneVoice 
 	e4.\mf e8 e4-. aes-.
 % Bars 21 to 25
 	g4.\< g8 g4-. a!-.\!
@@ -193,7 +191,7 @@ musicHornIIMvtIV = \relative c' {
 	
 	
 	
-	\markYoffset #4.5 \mark \default
+	\mark \default
 % Bars 191 to 195
 	R1*4
 	
@@ -321,14 +319,12 @@ musicHornIIMvtIV = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceHornIIMvtIV" #UP {
-		\ni R1
+	\ni \voiceTwo R1
 % Bars 331 to 335
-		R
-		R
-		R \no
-	}
-	\mmrDown \tempoXoffset #-1 R1*3
+	R
+	R
+	R \no \oneVoice 
+	\mmrDown R1*3
 % Bars 336 to 340
 	
 	d,4.\f d8 d4-. ges-.
@@ -439,7 +435,7 @@ musicHornIIMvtIV = \relative c' {
 	
 	
 	\bar "||" \mark \default
-	R1*34
+	\mmrLength #25 R1*34
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -518,13 +514,13 @@ musicHornIIMvtIV = \relative c' {
 	a4-. r f'2->\ff~
 % Bars 526 to 530
 	f2. f4-.
-	f-. f-. f-. f-.
+	\startMeasureCount f-. f-. f-. f-.
 	f f f f
 	f f f f
 	f f f f
 % Bars 531 to 535
 	f f f f
-	f-. f-. f-. f\ff
+	f-. f-. f-. f\ff \stopMeasureCount 
 	d2->_\pesante c->
 	bes-> f->
 	bes,2.-> bes4

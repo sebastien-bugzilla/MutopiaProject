@@ -20,10 +20,8 @@ musicHornIVMvtII = \relative c'' {
 	
 % Bars 26 to 30
 	
-	\cueDuring #"cueVoiceHornIVMvtII" #UP {
-		\ni R2
-		R \no
-	}
+	\ni \voiceTwo R2
+	R \no \oneVoice 
 	g16\fp g g g   g g g g 
 	g g g g  g\< g g g
 % Bars 31 to 35
@@ -31,7 +29,7 @@ musicHornIVMvtII = \relative c'' {
 	g8 r r4
 	R2*2
 	\bar "||" \mark \default
-	R2*6
+	\mmrLength #15 R2*6
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -141,7 +139,7 @@ musicHornIVMvtII = \relative c'' {
 	r b8 b16 r d8 d16
 	r c8 c16 r d8 d16
 	r c8\< c16 r c8 c16\!
-	r\mf\< c8 c16 r c8 c16\!
+	r c8\mf\< c16 r c8 c16\!
 	r d8\> d16 r d8 d16\!
 % Bars 146 to 150
 	r c8_\pdim c16 r c8 b16
@@ -154,7 +152,7 @@ musicHornIVMvtII = \relative c'' {
 	r b8\p b16\> r b8 b16\!
 	R2
 	c4\fz g
-	g4.\> r8\!
+	\hairpinShorten #'(0 . -1) g4.\> r8\!
 % Bars 156 to 160
 	e4--\pp e--
 	e-- e--
@@ -167,7 +165,7 @@ musicHornIVMvtII = \relative c'' {
 	
 	
 	\mark \default
-	\tempoXoffset #1.2 r8 c4\pp c8~
+	r8 c4\pp c8~
 	c g4\< g8\!~
 % Bars 171 to 175
 	g c4\pp c8~
@@ -180,7 +178,7 @@ musicHornIVMvtII = \relative c'' {
 	g16 r g\f\<-> g-> g-> g-> g-> c->\!
 	b8\ff r a-^-. r
 	a-^-. r r4
-	c2\p\>(
+	\hairpinShorten #'(-0.3 . -0.3) c2-\offset X-offset -1.5 \p\>(
 % Bars 181 to 185
 	d\pp
 	c8) r r4
