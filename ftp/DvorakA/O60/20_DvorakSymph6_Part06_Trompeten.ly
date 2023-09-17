@@ -12,16 +12,16 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
-\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part06_Trompeten.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part06_Trompeten.ily"
 \include "./01-Mvt1/m01_v13_music_TrompeteI.ily"
 \include "./01-Mvt1/m01_v14_music_TrompeteII.ily"
 \include "./02-Mvt2/m02_v13_music_TrompeteI.ily"
@@ -33,14 +33,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceTrompeteIMvtI" { \cueVoiceTrompeteIMvtI }
-\addQuote "cueVoiceTrompeteIMvtII" { \cueVoiceTrompeteIMvtII }
-\addQuote "cueVoiceTrompeteIMvtIII" { \cueVoiceTrompeteIMvtIII }
-\addQuote "cueVoiceTrompeteIMvtIV" { \cueVoiceTrompeteIMvtIV }
-\addQuote "cueVoiceTrompeteIIMvtI" { \cueVoiceTrompeteIIMvtI }
-\addQuote "cueVoiceTrompeteIIMvtII" { \cueVoiceTrompeteIIMvtII }
-\addQuote "cueVoiceTrompeteIIMvtIII" { \cueVoiceTrompeteIIMvtIII }
-\addQuote "cueVoiceTrompeteIIMvtIV" { \cueVoiceTrompeteIIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -50,7 +42,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60"
+			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Trompeten"
 		}
 		instrument = \markup {
 			"Trompeten"
@@ -62,20 +54,19 @@
 				\formatTrompeteIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTrompeteIMvtI \musicTrompeteIMvtI
+				\keepWithTag #'(trompeteI) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(trompeteI) \tempiPartMvtI
+				\InCueContext \cueVoiceTrompeteIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTrompeteIMvtI \musicTrompeteIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -87,20 +78,19 @@
 				\formatTrompeteIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameTrompeteIMvtII \musicTrompeteIMvtII
+				\keepWithTag #'(trompeteI) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(trompeteI) \tempiPartMvtII
+				\InCueContext \cueVoiceTrompeteIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTrompeteIMvtII \musicTrompeteIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2.6 \bold 2.
 			}
 		}
 		\layout {
@@ -112,20 +102,19 @@
 				\formatTrompeteIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTrompeteIMvtIII \musicTrompeteIMvtIII
+				\keepWithTag #'(trompeteI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(trompeteI) \tempiPartMvtIII
+				\InCueContext \cueVoiceTrompeteIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameTrompeteIMvtIII \musicTrompeteIMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Scherzo. (Furiant.) }
 			}
 		}
 		\layout {
@@ -137,20 +126,19 @@
 				\formatTrompeteIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameTrompeteIMvtIV \musicTrompeteIMvtIV
+				\keepWithTag #'(trompeteI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(trompeteI) \tempiPartMvtIV
+				\InCueContext \cueVoiceTrompeteIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameTrompeteIMvtIV \musicTrompeteIMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {
@@ -162,20 +150,19 @@
 				\formatTrompeteIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTrompeteIIMvtI \musicTrompeteIIMvtI
+				\keepWithTag #'(trompeteII) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(trompeteII) \tempiPartMvtI
+				\InCueContext \cueVoiceTrompeteIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTrompeteIIMvtI \musicTrompeteIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -187,20 +174,19 @@
 				\formatTrompeteIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameTrompeteIIMvtII \musicTrompeteIIMvtII
+				\keepWithTag #'(trompeteII) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(trompeteII) \tempiPartMvtII
+				\InCueContext \cueVoiceTrompeteIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTrompeteIIMvtII \musicTrompeteIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -212,20 +198,19 @@
 				\formatTrompeteIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTrompeteIIMvtIII \musicTrompeteIIMvtIII
+				\keepWithTag #'(trompeteII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(trompeteII) \tempiPartMvtIII
+				\InCueContext \cueVoiceTrompeteIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameTrompeteIIMvtIII \musicTrompeteIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -237,20 +222,19 @@
 				\formatTrompeteIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameTrompeteIIMvtIV \musicTrompeteIIMvtIV
+				\keepWithTag #'(trompeteII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(trompeteII) \tempiPartMvtIV
+				\InCueContext \cueVoiceTrompeteIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameTrompeteIIMvtIV \musicTrompeteIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #2.7 \bold {4. Finale.}
 			}
 		}
 		\layout {

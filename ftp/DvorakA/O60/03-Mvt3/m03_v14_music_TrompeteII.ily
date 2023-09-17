@@ -10,7 +10,7 @@ musicTrompeteIIMvtIII = \relative c' {
 	\transposition d
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\mmrnDown R2.*4
 		
 		
 		
@@ -81,13 +81,11 @@ musicTrompeteIIMvtIII = \relative c' {
 		
 		
 		
-		\cueDuring #"cueVoiceTrompeteIIMvtIII" #UP {
-			\ni R2.
-			R
+		\ni \voiceTwo R2.
+		R
 % Bars 116 to 120
-			R
-			R \no
-		}
+		R
+		R \no \oneVoice 
 		\startMeasureCount g4-._\fsemprecresc g-. g-.
 		g-. g-. g-.
 		g g g
@@ -126,9 +124,12 @@ musicTrompeteIIMvtIII = \relative c' {
 	\alternative {
 		{
 			c r r
+			\once \override Staff.BarLine.space-alist = #'(
+				(next-note . (fixed-space . 3))
+				(right-edge . (extra-space . 0)))
 		}
 		{
-			\startMeasureCount c2.\f\>
+			\startMeasureCountAt #2 c2.\f\>
 		}
 	}
 	c
@@ -137,27 +138,27 @@ musicTrompeteIIMvtIII = \relative c' {
 	c_\dimmarkup
 % Bars 151 to 155
 	c
-	c \stopMeasureCount \bar ".|:-||" \key c \major
+	c \attaccatrio \stopMeasureCount \bar ".|:-||" \key c \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio R2.*6
+		\time 3/4 \trioPart \mmrLength #24 \mmrnDown R2.*6
 % Bars 156 to 160
 		
 		
 		
-		\mmrLength #12 R2.*4
+		\mmrLength #10.5 \mmrnDown R2.*4
 % Bars 161 to 165
 		
 		
-		\mmrLength #14 R2.*6
+		\mmrLength #10.5 \mmrnDown R2.*6
 % Bars 166 to 170
 		
 		
 		
-		\mmrLength #14 R2.*4
+		\mmrLength #10.5 \mmrnDown R2.*4
 % Bars 171 to 175
 		
 		
-		R2.*28
+		\mmrLength #10.5 \mmrnDown R2.*28
 % Bars 176 to 180
 	
 % Bars 181 to 185
@@ -190,14 +191,12 @@ musicTrompeteIIMvtIII = \relative c' {
 	
 % Bars 251 to 255
 	
-	\cueDuring #"cueVoiceTrompeteIIMvtIII" #UP {
-		\ni R2.
-		R
-		R
-		R \no
-	}
+	\ni \voiceTwo R2.
+	R
+	R
+	R \no \oneVoice 
 % Bars 256 to 260
-	\startMeasureCount r4 c\pp c
+	\startMeasureCountAt #1 r4 c\pp c
 	r c\< c
 	r c c
 	r c\! c
@@ -211,13 +210,13 @@ musicTrompeteIIMvtIII = \relative c' {
 % Bars 266 to 270
 	r c c
 	r c c \stopMeasureCount
-	R2.*20
+	R2.*13
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\mmrLength #14 \mmrnDown R2.*7
 % Bars 286 to 290
 	
 	\bar "||" \key a \minor
@@ -286,12 +285,10 @@ musicTrompeteIIMvtIII = \relative c' {
 	
 % Bars 396 to 400
 	
-	\cueDuring #"cueVoiceTrompeteIIMvtIII" #UP {
-		\ni R2.
-		R
-		R
-		R \no
-	}
+	\ni \voiceTwo R2.
+	R
+	R
+	R \no \oneVoice 
 % Bars 401 to 405
 	g4-._\fsemprecresc g-. g-.
 	g g g

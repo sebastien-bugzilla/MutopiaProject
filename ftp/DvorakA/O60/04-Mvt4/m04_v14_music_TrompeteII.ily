@@ -10,36 +10,39 @@ musicTrompeteIIMvtIV = \relative c'' {
 	\transposition d
 	\partial 4 r4
 % Bars 1 to 5
-	\mmrLength #21 R1*13
+	\mmrLength #12 \mmrnDown R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	\mmrnDown R1
+	\mmrnDown R1*11
 	
-	\mmrLength #22 R1*16
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
+	
+	
+	
+	\mmrnDown R1*5
 % Bars 26 to 30
 	
 	
 	
 	
-	\cueDuring #"cueVoiceTrompeteIIMvtIV" #UP {
-		\ni R1
+	\ni \voiceTwo R1
 % Bars 31 to 35
-		R
-		R
-		R
-		R
-		R \no
-	}
+	\tweak extra-offset #'(-0.5 . 0) R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	R
+	R \no \oneVoice 
 % Bars 36 to 40
-	g1-^\ff~
+	g1^^\ff~
 	g2. g4-. \mark \default
-	\tempoXoffset #1.2 c-._\ffgrandioso r r g-.
+	c-._\ffgrandioso r r g-.
 	c-. r r2
 	r2 r4 g
 % Bars 41 to 45
@@ -61,8 +64,8 @@ musicTrompeteIIMvtIV = \relative c'' {
 % Bars 56 to 60
 	r4 a\fz r2
 	r4 d,\fz r2
-	r4 d\fz r2
-	r4 d\fz r2
+	r4 d-\offset X-offset #1 \fz r2
+	r4 d-\offset X-offset #1 \fz r2
 	r4 d\fz r2
 % Bars 61 to 65
 	d4\f r d r
@@ -178,7 +181,7 @@ musicTrompeteIIMvtIV = \relative c'' {
 	
 	
 	
-	\markYoffset #4.5 \mark \default
+	\mark \default
 % Bars 191 to 195
 	R1*25
 % Bars 196 to 200
@@ -299,11 +302,9 @@ musicTrompeteIIMvtIV = \relative c'' {
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	\cueDuring #"cueVoiceTrompeteIIMvtIV" #UP {
-		\ni R1
-		R
-		R \no
-	}
+	\ni \voiceTwo R1
+	R
+	R \no \oneVoice 
 	r4 e2.\f->~
 	e1~
 % Bars 346 to 350
@@ -408,7 +409,7 @@ musicTrompeteIIMvtIV = \relative c'' {
 % Bars 471 to 475
 	b-> r r b-.
 	c-> g c-> g
-	c-> g c-> a \markYoffset #4.5 \mark #11
+	c-> g c-> a \mark #11
 	e r r2
 	r2 r4 a\f
 % Bars 476 to 480
@@ -449,7 +450,7 @@ musicTrompeteIIMvtIV = \relative c'' {
 	R1*2
 % Bars 506 to 510
 	
-	c1\f-^~
+	c1\f^^~
 	c
 	f->\ff~
 	f
@@ -471,12 +472,12 @@ musicTrompeteIIMvtIV = \relative c'' {
 	g'4 r g2->\ff~
 % Bars 526 to 530
 	g2. g4-.
-	g-. g-. g-. g-.
+	\startMeasureCount g-. g-. g-. g-.
 	g g g g
 	g g g g
 	g g g g
 % Bars 531 to 535
-	g g g g
+	g g g g \stopMeasureCount
 	g-. g-. g-. r
 	R1
 	r2 g->_\ffpesante

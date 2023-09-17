@@ -81,19 +81,17 @@ musicTrompeteIMvtIII = \relative c'' {
 		
 		
 		
-		\cueDuring #"cueVoiceTrompeteIMvtIII" #UP {
-			\ni R2.
-			R
+		\ni \voiceTwo R2.
+		R
 % Bars 116 to 120
-			R
-			R \no
-		}
-		g4-._\fsemprecresc g-. g-.
+		R
+		R \no \oneVoice 
+		\startMeasureCount g4-._\fsemprecresc g-. g-.
 		g-. g-. g-.
 		g g g
 % Bars 121 to 125
 		g g g
-		g g g
+		g g g \stopMeasureCount 
 		bes-. bes-. bes-.
 		b!2->\ff b4->~
 		b b2->
@@ -137,17 +135,33 @@ musicTrompeteIMvtIII = \relative c'' {
 	c_\dimmarkup
 % Bars 151 to 155
 	c
-	c \bar ".|:-||" \key c \major
+	c \attaccatrio \bar ".|:-||" \key c \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio R2.*48
+		\time 3/4 \trioPart \mmrLength #24 \mmrnDown R2.*6
+		
+		
 % Bars 156 to 160
-	
+		
+		
+		
+		\mmrLength #10.5 R2.*4
+		
 % Bars 161 to 165
-	
+		
+		
+		\mmrLength #10.5 R2.*6
+		
+		
 % Bars 166 to 170
-	
+		
+		
+		
+		\mmrLength #10.5 R2.*4
+		
 % Bars 171 to 175
-	
+		
+		
+		\mmrLength #10.5 R2.*28
 % Bars 176 to 180
 	
 % Bars 181 to 185
@@ -180,14 +194,12 @@ musicTrompeteIMvtIII = \relative c'' {
 	
 % Bars 251 to 255
 	
-	\cueDuring #"cueVoiceTrompeteIMvtIII" #UP {
-		\ni R2.
-		R
-		R
-		R \no
-	}
+	\ni \voiceTwo R2.
+	R
+	R
+	R \no \oneVoice 
 % Bars 256 to 260
-	r4 c\pp c
+	\startMeasureCount r4 c\pp c
 	r c\< c
 	r c c
 	r c\! c
@@ -200,14 +212,14 @@ musicTrompeteIMvtIII = \relative c'' {
 	r c_\dimmarkup c
 % Bars 266 to 270
 	r c c
-	r c c
-	R2.*20
+	r c c \stopMeasureCount
+	R2.*13
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\mmrLength #14 \mmrnDown R2.*7
 % Bars 286 to 290
 	
 	\bar "||" \key a \minor
@@ -276,18 +288,16 @@ musicTrompeteIMvtIII = \relative c'' {
 	
 % Bars 396 to 400
 	
-	\cueDuring #"cueVoiceTrompeteIMvtIII" #UP {
-		\ni R2.
-		R
-		R
-		R \no
-	}
+	\ni \voiceTwo R2.
+	R
+	R
+	R \no \oneVoice 
 % Bars 401 to 405
-	g4-._\fsemprecresc g-. g-.
+	\startMeasureCount g4-._\fsemprecresc g-. g-.
 	g g g
 	g g g
 	g g g
-	g g g
+	g g g \stopMeasureCount
 % Bars 406 to 410
 	bes-. bes-. bes-. 
 	b!2->\ff b4~->

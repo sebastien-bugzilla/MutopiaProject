@@ -9,7 +9,7 @@ musicTrompeteIIMvtII = \relative c'' {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	R2*28
+	\mmrLength #20 \mmrnDown R2*28
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -22,13 +22,13 @@ musicTrompeteIIMvtII = \relative c'' {
 	
 	
 	
-	\mmrLength #14 R2*6
+	\mmrLength #22 \mmrnDown R2*6
 % Bars 31 to 35
 	
 	
 	
 	\bar "||" \mark \default
-	R2*38
+	\mmrLength #16 \mmrnDown R2*38
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -46,7 +46,7 @@ musicTrompeteIIMvtII = \relative c'' {
 % Bars 71 to 75
 	
 	\mark \default
-	R2*16
+	\mmrnDown R2*16
 % Bars 76 to 80
 	
 % Bars 81 to 85
@@ -55,23 +55,26 @@ musicTrompeteIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	R2*12
+	\mmrnDown R2*6
+	
 % Bars 91 to 95
 	
+	
+	
+	
+	\mmrnDown R2*6
 % Bars 96 to 100
 	
 % Bars 101 to 105
-	\cueDuring #"cueVoiceTrompeteIIMvtII" #UP {
-		\ni R2
-		R
-		R \no
-	}
+	\ni \voiceTwo R2
+	R
+	R \no \oneVoice 
 	c2->\ff
 	d->
 % Bars 106 to 110
 	c->
-	c\fz
-	c\fz
+	c-\offset X-offset 0.5 \fz
+	c-\offset X-offset 0.5 \fz
 	aes\fz
 	aes\fz
 % Bars 111 to 115
@@ -111,19 +114,17 @@ musicTrompeteIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	\cueDuring #"cueVoiceTrompeteIIMvtII" #UP {
-		\ni \tempoXoffset #1.2 R2
-		R
+	\ni \voiceTwo R2
+	\mmrPos #-6 R
 % Bars 171 to 175
-		R
-		R
-		R
-		R \no
-	}
+	R
+	\mmrPos #-6 R
+	R
+	\mmrPos #-6 R \no \oneVoice 
 	r8 g4\mf\< g8~
 % Bars 176 to 180
 	g g4\f g8~
-	g16 r g\f\<-> g->  g-> g-> g-> c->
+	g16 r g\f\<-> g->  g-> g-> g-> c->\!
 	e8->\ff r e-^-. r
 	c-.-^ r r4
 	R2*18

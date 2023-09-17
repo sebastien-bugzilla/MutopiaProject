@@ -24,7 +24,7 @@
 	}
 	\context {
 		\Staff
-		\RemoveAllEmptyStaves
+%		\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
 		\override Staff.MultiMeasureRest.space-increment = 1.5
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)

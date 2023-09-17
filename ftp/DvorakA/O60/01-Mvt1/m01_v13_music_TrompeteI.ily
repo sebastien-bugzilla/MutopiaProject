@@ -9,10 +9,10 @@ musicTrompeteIMvtI = \relative c'' {
 	\key c \major
 	\transposition d
 % Bars 1 to 5
-	R2.*2
+	\mmrnDown R2.*2
 	
 	\repeat volta 2 {
-		R2.*20
+		\mmrnDown R2.*20
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -22,7 +22,7 @@ musicTrompeteIMvtI = \relative c'' {
 % Bars 21 to 25
 		
 		
-		\mmrLength #15 \tempoXoffset #-2 R2.*11
+		\mmrnDown \mmrLength #15 R2.*11
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -46,15 +46,15 @@ musicTrompeteIMvtI = \relative c'' {
 % Bars 46 to 50
 		d g2->~\<
 		g2.~
-		g \mark \default
-		\tempoXoffset #1 e4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		g\! \mark \default
+		e4-\offset X-offset #5.5 _\ffgrandiosoD r r
 		r r g,-.\f
 % Bars 51 to 55
 		c2-^ r4
 		r r g-.
 		c-. c-. r
 		c4. c8 c4\<
-		c( d e)
+		c( d e)\!
 % Bars 56 to 60
 		g2\fz( f8 e)
 		d2.
@@ -113,25 +113,24 @@ musicTrompeteIMvtI = \relative c'' {
 	
 % Bars 151 to 155
 		
-		\cueDuring #"cueVoiceTrompeteIMvtI" #UP {
-			\ni R2.
-			R
-			R
-			R
+		\ni \voiceTwo R2.
+		R
+		R
+		R
 % Bars 156 to 160
-			R
-			R
-			R \no
-		r4 r } e\f~
-		e\< e-> e->
+		R
+		R
+		R \no \oneVoice 
+		r4 r e\f~
+		e\< e-> e->\!
 % Bars 161 to 165
-		e2.\ff
+		\startMeasureCount e2.\ff
 		e
 		e
 		e
 		e
 % Bars 166 to 170
-		e
+		e \stopMeasureCount
 		e4 r r
 		e r r
 		e r r
@@ -185,10 +184,8 @@ musicTrompeteIMvtI = \relative c'' {
 	
 % Bars 236 to 240
 	
-	\cueDuring #"cueVoiceTrompeteIMvtI" #UP {
-		\ni R2.
-		R \no
-	}
+	\ni \voiceTwo R2.
+	R \no \oneVoice 
 	g,4\f r r
 	R2.*25
 % Bars 241 to 245
@@ -206,11 +203,9 @@ musicTrompeteIMvtI = \relative c'' {
 	\mark \default
 	R2.
 % Bars 266 to 270
-	\cueDuring #"cueVoiceTrompeteIMvtI" #UP {
-		\ni R2.
-		R
-		R \no
-	}
+	\ni \voiceTwo R2.
+	R
+	R \no \oneVoice 
 	a2.\f
 	R2.
 % Bars 271 to 275
@@ -287,7 +282,7 @@ musicTrompeteIMvtI = \relative c'' {
 	d g,2\fz \mark \default
 	g4-. r r
 % Bars 361 to 365
-	R2.*17
+	\mmrLength #12 R2.*17
 % Bars 366 to 370
 	
 % Bars 371 to 375
@@ -295,13 +290,12 @@ musicTrompeteIMvtI = \relative c'' {
 % Bars 376 to 380
 	
 	
-	\cueDuring #"cueVoiceTrompeteIMvtI" #UP {
-		\ni R2.
-		R
-		R
+	\ni \voiceTwo R2.
+	R
+	R
 % Bars 381 to 385
-		R \no
-		r4 r r8 } g\f
+	R \no 
+	r4 r r8 \oneVoice g\f
 	c4 r r
 	R2.*17
 % Bars 386 to 390
@@ -328,13 +322,11 @@ musicTrompeteIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceTrompeteIMvtI" #UP {
-		\ni R2.
-		R
+	\ni \voiceTwo R2.
+	R
 % Bars 431 to 435
-		R \no
-		r4 r d-.\f
-	}
+	R \no
+	r4 r \oneVoice d-.\f
 	g,-. r c-.
 	g-. r c-.
 	g-. r d'\<-.
@@ -355,14 +347,14 @@ musicTrompeteIMvtI = \relative c'' {
 % Bars 451 to 455
 	
 	r4 r g\f~
-	g\< g-. g-.
+	g\< g-. g-.\!
 	e'2(\ff f4)
 	e2( d4)
 % Bars 456 to 460
 	g2.~
 	g~
 	g~
-	g~
+	g~ 
 	g4 r r
 % Bars 461 to 465
 	R2.
@@ -372,7 +364,7 @@ musicTrompeteIMvtI = \relative c'' {
 	d->
 % Bars 466 to 470
 	g,4 r r
-	r g-^ r
+	\startMeasureCount r g-^ r
 	r g-^ r
 	r g-^ r
 	r g-^ r
@@ -380,7 +372,7 @@ musicTrompeteIMvtI = \relative c'' {
 	r g-^ r
 	r g-^ r
 	r g-^ r
-	r g-^ r
+	r g-^ r \stopMeasureCount
 	r c-^ r
 % Bars 476 to 480
 	r c-^ r
@@ -442,16 +434,15 @@ musicTrompeteIMvtI = \relative c'' {
 	
 % Bars 531 to 535
 	
-	\mmrLength #14 R2.*11
+	\mmrLength #15 R2.*11
 % Bars 536 to 540
 	
 % Bars 541 to 545
 	
 	
-	\mmrLength #14 R2.*1
-	\cueDuring #"cueVoiceTrompeteIMvtI" #UP {
-		\ni R2. \no
-	r4 r } d->\f
+	\mmrLength #10 R2.*1
+	\ni \voiceTwo R2. \no
+	r4 r \oneVoice d->\f
 % Bar 546
 	c-> r r \bar "|."
 }
