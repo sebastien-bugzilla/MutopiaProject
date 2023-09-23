@@ -9,10 +9,10 @@ musicPosauneIIMvtI = \relative c' {
 	\key d \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*2
+	\mmrnDown R2.*2
 	
 	\repeat volta 2 {
-		R2.*43
+		\mmrLength #12 \mmrnDown R2.*20
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -21,6 +21,9 @@ musicPosauneIIMvtI = \relative c' {
 	
 % Bars 21 to 25
 	
+	
+	
+		\mmrLength #20 \mmrnDown R2.*23
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -30,11 +33,10 @@ musicPosauneIIMvtI = \relative c' {
 % Bars 41 to 45
 	
 % Bars 46 to 50
-		\cueDuring #"cueVoicePosauneIIMvtI" #UP {
-			\clef treble \ni R2.
-			R \no 
-		r4 r } \clef alto g-.\ff \mark \default
-		\tempoXoffset #1.5 fis-._\grandioso r r
+		\clef treble \ni \voiceTwo R2.
+		\mmrPos #-6 R \no \oneVoice 
+		r4 r \clef alto g-.\ff \mark \default
+		fis-._\grandioso r r
 		r r fis-.\f
 % Bars 51 to 55
 		a2-^ r4
@@ -73,7 +75,7 @@ musicPosauneIIMvtI = \relative c' {
 % Bars 106 to 110
 		
 		\mark \default
-		R2.*12
+		\mmrLength #10 R2.*12
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -104,10 +106,8 @@ musicPosauneIIMvtI = \relative c' {
 		
 		
 		
-		\cueDuring #"cueVoicePosauneIIMvtI" #UP {
-			\ni \clef treble R2.
-			R \no \clef alto
-		}
+		\ni \clef treble \voiceTwo R2.
+		\mmrPos #-7 R \no \clef alto \oneVoice 
 % Bars 161 to 165
 		b2(\ff ais4)
 		b2( cis4)
@@ -134,7 +134,7 @@ musicPosauneIIMvtI = \relative c' {
 		}
 		{
 % Bars 177 to 180
-			\startMeasureCount fis2.\pp~
+			\startMeasureCountAt #15 fis2.\pp~
 			fis~
 			fis~
 			fis~
@@ -174,13 +174,11 @@ musicPosauneIIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoicePosauneIIMvtI" #UP {
-		\ni R2.
-		R
+	\ni \voiceTwo R2.
+	R
 % Bars 221 to 225
-		R
-		R \no
-	}
+	R
+	R \no \oneVoice 
 	e4(\pp^\solo f g)
 	bes2( a8 g)
 	g2.
@@ -189,10 +187,10 @@ musicPosauneIIMvtI = \relative c' {
 	b2.~
 	b2( a8 gis)
 	gis4. gis8 gis4
-	fis4( a c)
+	fis4( a \stemUp c)
 % Bars 231 to 235
 	c2.~
-	c2( b8 a)
+	c2( \stemNeutral b8 a)
 	a4. a8 a4
 	g( bes des)
 	des2.~_\crescmarkup
@@ -217,11 +215,9 @@ musicPosauneIIMvtI = \relative c' {
 	\mark \default
 	R2.
 % Bars 266 to 270
-	\cueDuring #"cueVoicePosauneIIMvtI" #DOWN {
-		\ni \clef treble \mmrPos #-6 R2.
-		\mmrPos #-6 R
-		\mmrPos #-6 R \no \clef alto
-	}
+	\ni \clef treble \voiceTwo \mmrPos #-6 R2.
+	R
+	R \no \clef alto \oneVoice 
 	dis2.\f
 	R2.*9
 % Bars 271 to 275
@@ -261,11 +257,11 @@ musicPosauneIIMvtI = \relative c' {
 % Bars 311 to 315
 	e'!2-^ a,4-.
 	e'2-^ a,4-.
-	g'-> e-> cis->
+	g'!-> e-> cis->
 	a8-. g'-. e-. cis-. a-. g-. \mark \default
 	fis4-. r r
 % Bars 316 to 320
-	R2.*38
+	R2.*20
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -273,7 +269,7 @@ musicPosauneIIMvtI = \relative c' {
 % Bars 331 to 335
 	
 % Bars 336 to 340
-	
+	\mmrLength #13 R2.*18
 % Bars 341 to 345
 	
 % Bars 346 to 350
@@ -282,10 +278,8 @@ musicPosauneIIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoicePosauneIIMvtI" #DOWN {
-		\ni \clef treble \mmrPos #-4 R2.
-		\mmrPos #-4 R \clef alto \no
-	}
+	\ni \clef treble \voiceTwo R2.
+	R \clef alto \no \oneVoice 
 % Bars 356 to 360
 	cis'2\ff cis4\fz~
 	cis cis2\fz
@@ -326,18 +320,16 @@ musicPosauneIIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoicePosauneIIMvtI" #UP {
-		\ni \clef treble R2.
-		R
+	\ni \clef treble \voiceTwo R2.
+	R
 % Bars 431 to 435
-		R \no \clef alto
-	}
+	R \no \clef alto \oneVoice 
 	r4 r gis-.\f
 	a-. r bes-.
 	a-. r bes-.
 	a-. r cis\<-.
 % Bars 436 to 440
-	r b!-. cis-.\!
+	r b!-. \once \stemUp cis-.\!
 	d-. r r
 	d-. r r
 	d-. r r
@@ -405,9 +397,8 @@ musicPosauneIIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoicePosauneIIMvtI" #DOWN {
-		\ni \clef bass R2. \no
-	r4 r } \clef alto a\ff-^
+	\ni \clef bass \mmrPos #-4 R2. \no
+	\voiceOne r4 r \oneVoice \clef alto a\ff-^
 % Bars 511 to 515
 	d2-^_\marc r4
 	r r a-.
@@ -428,18 +419,18 @@ musicPosauneIIMvtI = \relative c' {
 	a~
 % Bars 526 to 530
 	a4\p r r
-	R2.*17
+	\mmrLength #10 R2.*5
 % Bars 531 to 535
 	
+	\mmrLength #13 R2.*11
 % Bars 536 to 540
 	
 % Bars 541 to 545
 	
 	
-	
-	\cueDuring #"cueVoicePosauneIIMvtI" #UP {
-		\ni \clef treble R2. \no
-	r4 r } \clef alto cis\f->
+	R2.
+	\ni \clef treble \voiceTwo R2. \no
+	r4 r \clef alto \oneVoice cis\f->
 % Bar 546
 	a-> r r \bar "|."
 }

@@ -10,43 +10,47 @@ musicPosauneIIMvtIV = \relative c' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	\mmrLength #22 R1*13
+	\mmrLength #14 \mmrnDown R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
-	
-	\mmrLength #22 R1*16
+	\mmrnDown R1
+	\mmrnDown R1*11
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
+	
+	
+	
+	\mmrLength #14 \mmrnDown R1*5
 % Bars 26 to 30
 	
 	
 	
 	
-	\cueDuring #"cueVoicePosauneIIMvtIV" #UP {
-		\ni \clef treble R1
+	\ni \clef treble \voiceTwo R1
 % Bars 31 to 35
-		R
-		R
-		R
-		R
-		R \no \clef alto
-	}
+	\tweak extra-offset #'(-0.5 . 0) R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	R
+	R \no \clef alto \oneVoice 
 % Bars 36 to 40
 	a1\f~
 	a2. a4-. \mark \default
-	\tempoXoffset #1 a-. r r2
-	R1*22
+	a-. r r2
+	R1*14
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
+	
+	\mmrnDown R1*8
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -102,7 +106,7 @@ musicPosauneIIMvtIV = \relative c' {
 % Bars 121 to 125
 	r2 cis\f-^~
 	cis4 b8( cis) b4( a)
-	a( cis) b2
+	a( \once \stemUp cis) b2
 	a4-. a-. fis( gis)
 	e4( cis') b2
 % Bars 126 to 130
@@ -284,21 +288,23 @@ musicPosauneIIMvtIV = \relative c' {
 % Bars 316 to 320
 	cis~
 	cis4 r r2
-	R1*23 
+	R1*16 
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
 % Bars 331 to 335
 	
+	
+	
+	\mmrnDown R1*7
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	\cueDuring #"cueVoicePosauneIIMvtIV" #UP {
-		\ni \clef bass R1
-		R
-		R \no
-	r4 } \clef alto ais'2.->\f~
+	\ni \clef bass \voiceTwo R1
+	R
+	R \no \oneVoice 
+	r4 \clef alto ais'2.->\f~
 	ais4 cis(-> d e
 % Bars 346 to 350
 	d) gis,2.->~
@@ -383,7 +389,7 @@ musicPosauneIIMvtIV = \relative c' {
 	
 	
 	\mark \default \bar "||"
-	R1*34
+	\mmrLength #30 \mmrnDown R1*35
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -452,7 +458,7 @@ musicPosauneIIMvtIV = \relative c' {
 	r d r cis
 	r b r a \mark \default
 % Bars 521 to 525
-	b2-\tweak X-offset #0.5 ^\ten r
+	b2^\ten r
 	b^\ten r
 	b^\ten r
 	b^\ten r 

@@ -10,14 +10,14 @@ musicPosauneIIIMvtIV = \relative c {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	\mmrLength #22 R1*13
+	\mmrLength #12 \mmrnDown R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
-	
-	\mmrLength #22 R1*11
+	\mmrnDown R1
+	\mmrLength #12 \mmrnDown R1*11
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -41,7 +41,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 36 to 40
 	e-. cis-. a-. g'-.
 	e-. cis-. a-. a'-. \mark \default
-	\tempoXoffset #1 d,-. r r2
+	d,-. r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -260,7 +260,7 @@ musicPosauneIIIMvtIV = \relative c {
 	a-. g-. a-. g-.
 % Bars 286 to 290
 	<<f1 {\hairpinShorten #'(0 . -1) s4\< s s s\!}>>
-	e,4 r a\ff r
+	e4 r a,\ff r
 	R1*5
 % Bars 291 to 295
 	
@@ -394,7 +394,7 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	
 	\mark \default \bar "||"
-	R1*34
+	\mmrLength #25 \mmrnDown R1*34
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -416,10 +416,9 @@ musicPosauneIIIMvtIV = \relative c {
 	
 % Bars 481 to 485
 	
-	\cueDuring #"cueVoicePosauneIIIMvtIV" #UP {
-		\ni R1
-		R \no
-	r2 r4 } e-.\ff
+	\ni \voiceTwo R1
+	R \no 
+	r2 r4 \oneVoice e-.\ff
 	e1~
 % Bars 486 to 490
 	e2. r4
@@ -464,7 +463,7 @@ musicPosauneIIIMvtIV = \relative c {
 	b r a r
 	g r fis r \mark \default
 % Bars 521 to 525
-	g2-\tweak X-offset #1 ^\ten r
+	g2^\ten r
 	g^\ten r
 	e^\ten r
 	e^\ten r

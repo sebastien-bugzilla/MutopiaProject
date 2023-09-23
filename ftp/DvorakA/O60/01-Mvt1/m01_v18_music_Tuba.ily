@@ -9,10 +9,10 @@ musicTubaMvtI = \relative c {
 	\key d \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*2
+	\mmrnDown R2.*2
 	
 	\repeat volta 2 {
-		R2.*43
+		\mmrLength #14 \mmrnDown R2.*20
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,7 +20,9 @@ musicTubaMvtI = \relative c {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	
+		
+		
+		\mmrLength #15 \mmrnDown R2.*23
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -30,11 +32,10 @@ musicTubaMvtI = \relative c {
 % Bars 41 to 45
 	
 % Bars 46 to 50
-		\cueDuring #"cueVoiceTubaMvtI" #UP {
-			\ni \clef treble R2.
-			R \no
-		r4 r } \clef bass a-.\ff \mark \default
-		\tempoXoffset #1.2 d-._\grandioso r r
+		\ni \clef treble \voiceTwo R2.
+		\mmrPos #-6 R \no
+		r4 r \oneVoice \clef bass a-.\ff \mark \default
+		d-.-\offset X-offset 0.5 _\grandioso r r
 		r r a-.
 % Bars 51 to 55
 		fis2-^ r4
@@ -104,10 +105,8 @@ musicTubaMvtI = \relative c {
 		
 		
 		
-		\cueDuring #"cueVoiceTubaMvtI" #UP {
-			\ni \clef treble R2.
-			\mmrPos #-6 R \no \clef bass
-		}
+		\ni \clef treble \voiceTwo R2.
+		\mmrPos #-7 R \no \clef bass \oneVoice 
 % Bars 161 to 165
 		b'2\ff( cis4)
 		dis2( e4)
@@ -174,13 +173,11 @@ musicTubaMvtI = \relative c {
 	
 	
 	
-	\cueDuring #"cueVoiceTubaMvtI" #UP {
-		\ni R2.
-		R
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 221 to 225
-		R
-		R \no
-	}
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	R2.*16
 % Bars 226 to 230
 	
@@ -207,11 +204,9 @@ musicTubaMvtI = \relative c {
 	\mark \default
 	R2.
 % Bars 266 to 270
-	\cueDuring #"cueVoiceTubaMvtI" #UP {
-		\ni \clef treble R2.
-		R
-		R \no \clef bass
-	}
+	\ni \clef treble \voiceTwo \mmrPos #-7 R2.
+	R
+	R \no \clef bass \oneVoice 
 	b2.\f
 	R2.*9
 % Bars 271 to 275
@@ -263,7 +258,7 @@ musicTubaMvtI = \relative c {
 % Bars 331 to 335
 	
 % Bars 336 to 340
-	\mmrLength #15 R2.*18
+	R2.*18
 % Bars 341 to 345
 	
 % Bars 346 to 350
@@ -272,10 +267,8 @@ musicTubaMvtI = \relative c {
 	
 	
 	
-	\cueDuring #"cueVoiceTubaMvtI" #UP {
-		\ni \clef treble R2.
-		R \no \clef bass
-	}
+	\ni \clef treble \voiceTwo R2.
+	R \no \clef bass \oneVoice 
 % Bars 356 to 360
 	ais2\ff ais4~\fz
 	ais a2\fz
@@ -316,12 +309,10 @@ musicTubaMvtI = \relative c {
 	
 	
 	
-	\cueDuring #"cueVoiceTubaMvtI" #UP {
-		\ni \clef treble R2.
-		R
+	\ni \clef treble \voiceTwo R2.
+	R
 % Bars 431 to 435
-		R \no \clef bass
-	}
+	R \no \clef bass \oneVoice 
 	r4 r e-.\f
 	a-. r bes-.
 	a-. r bes-.
@@ -397,10 +388,8 @@ musicTubaMvtI = \relative c {
 	
 % Bars 506 to 510
 	
-	\cueDuring #"cueVoiceTubaMvtI" #UP {
-		\ni \clef treble R2.
-		R \no \clef bass
-	}
+	\ni \clef treble \voiceTwo R2.
+	R \no \clef bass \oneVoice 
 	r4 r e-.\ff
 	d_\marc-. fis,-. a-.
 % Bars 511 to 515
@@ -423,18 +412,21 @@ musicTubaMvtI = \relative c {
 	d~
 % Bars 526 to 530
 	d4\p r r
-	R2.*18
+	R2.*5
 % Bars 531 to 535
 	
+	
+	
+	
+	\mmrLength #12 R2.*11
 % Bars 536 to 540
 	
 % Bars 541 to 545
 	
 	
+	R2.*2
 	
-	
-	\cueDuring #"cueVoiceTubaMvtI" #UP {
-		\clef treble r4 r } \clef bass a'->\f
+	\clef treble \voiceTwo r4 r \oneVoice \clef bass a'->\f
 % Bar 546
 	d,-> r r \bar "|."
 }

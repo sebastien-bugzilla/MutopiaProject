@@ -257,7 +257,7 @@ musicPosauneIIIMvtIV = \relative c {
 	a-. g-. a-. g-.
 % Bars 286 to 290
 	<<f1 {s4\< s s s\!}>>
-	\once \partCombineApart e,4 r \once \partCombineApart a r
+	e4 r \once \partCombineApart a, r
 	R1*5
 % Bars 291 to 295
 	

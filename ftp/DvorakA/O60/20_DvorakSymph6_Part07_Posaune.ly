@@ -12,35 +12,27 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
-\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part07_Posaune.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part07_Posaune.ily"
 \include "./01-Mvt1/m01_v15_music_PosauneI.ily"
-\include "./01-Mvt1/m01_v16_music_PosauneII.ily"
-\include "./01-Mvt1/m01_v17_music_PosauneIII.ily"
-\include "./01-Mvt1/m01_v18_music_Tuba.ily"
 \include "./04-Mvt4/m04_v15_music_PosauneI.ily"
+\include "./01-Mvt1/m01_v16_music_PosauneII.ily"
 \include "./04-Mvt4/m04_v16_music_PosauneII.ily"
+\include "./01-Mvt1/m01_v17_music_PosauneIII.ily"
 \include "./04-Mvt4/m04_v17_music_PosauneIII.ily"
+\include "./01-Mvt1/m01_v18_music_Tuba.ily"
 \include "./04-Mvt4/m04_v18_music_Tuba.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoicePosauneIMvtI" { \cueVoicePosauneIMvtI }
-\addQuote "cueVoicePosauneIMvtIV" { \cueVoicePosauneIMvtIV }
-\addQuote "cueVoicePosauneIIMvtI" { \cueVoicePosauneIIMvtI }
-\addQuote "cueVoicePosauneIIMvtIV" { \cueVoicePosauneIIMvtIV }
-\addQuote "cueVoicePosauneIIIMvtI" { \cueVoicePosauneIIIMvtI }
-\addQuote "cueVoicePosauneIIIMvtIV" { \cueVoicePosauneIIIMvtIV }
-\addQuote "cueVoiceTubaMvtI" { \cueVoiceTubaMvtI }
-\addQuote "cueVoiceTubaMvtIV" { \cueVoiceTubaMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -62,20 +54,19 @@
 				\formatPosauneIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\namePosauneIMvtI \musicPosauneIMvtI
+				\keepWithTag #'(posauneI) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(posauneI) \tempiPartMvtI
+				\InCueContext \cueVoicePosauneIMvtI
+			}
+			\new Voice {
+				\timeMvtI \namePosauneIMvtI \musicPosauneIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -87,20 +78,19 @@
 				\formatPosauneIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\namePosauneIMvtIV \musicPosauneIMvtIV
+				\keepWithTag #'(posauneI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(posauneI) \tempiPartMvtIV
+				\InCueContext \cueVoicePosauneIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \namePosauneIMvtIV \musicPosauneIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #2.4 \bold {4. Finale. }
 			}
 		}
 		\layout {
@@ -112,20 +102,19 @@
 				\formatPosauneIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\namePosauneIIMvtI \musicPosauneIIMvtI
+				\keepWithTag #'(posauneII) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(posauneII) \tempiPartMvtI
+				\InCueContext \cueVoicePosauneIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \namePosauneIIMvtI \musicPosauneIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -137,20 +126,19 @@
 				\formatPosauneIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\namePosauneIIMvtIV \musicPosauneIIMvtIV
+				\keepWithTag #'(posauneII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(posauneII) \tempiPartMvtIV
+				\InCueContext \cueVoicePosauneIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \namePosauneIIMvtIV \musicPosauneIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #2.3 \bold {4. Finale.}
 			}
 		}
 		\layout {
@@ -162,20 +150,19 @@
 				\formatPosauneIIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\namePosauneIIIMvtI \musicPosauneIIIMvtI
+				\keepWithTag #'(posauneIII) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(posauneIII) \tempiPartMvtI
+				\InCueContext \cueVoicePosauneIIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \namePosauneIIIMvtI \musicPosauneIIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -187,20 +174,19 @@
 				\formatPosauneIIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\namePosauneIIIMvtIV \musicPosauneIIIMvtIV
+				\keepWithTag #'(posauneIII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(posauneIII) \tempiPartMvtIV
+				\InCueContext \cueVoicePosauneIIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \namePosauneIIIMvtIV \musicPosauneIIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #2.3 \bold {4. Finale.}
 			}
 		}
 		\layout {
@@ -212,20 +198,19 @@
 				\formatTubaMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTubaMvtI \musicTubaMvtI
+				\keepWithTag #'(tuba) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(tuba) \tempiPartMvtI
+				\InCueContext \cueVoiceTubaMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTubaMvtI \musicTubaMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -237,20 +222,19 @@
 				\formatTubaMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameTubaMvtIV \musicTubaMvtIV
+				\keepWithTag #'(tuba) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(tuba) \tempiPartMvtIV
+				\InCueContext \cueVoiceTubaMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameTubaMvtIV \musicTubaMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #2.4 \bold {4. Finale.}
 			}
 		}
 		\layout {

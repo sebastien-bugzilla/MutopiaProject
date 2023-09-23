@@ -10,14 +10,14 @@ musicTubaMvtIV = \relative c, {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	\mmrLength #22 R1*13
+	\mmrLength #11 \mmrnDown R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
-	
-	\mmrLength #22 R1*11
+	\mmrnDown R1
+	\mmrLength #11 \mmrnDown R1*11
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -25,7 +25,7 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	
-	d1->\ff~
+	d1^>\ff~
 % Bars 26 to 30
 	d~
 	d~
@@ -37,14 +37,16 @@ musicTubaMvtIV = \relative c, {
 % Bars 36 to 40
 	
 	r2 r4 a'\f-. \mark \default
-	\tempoXoffset #1 d-. r r2
-	R1*22
+	d-. r r2
+	R1*14
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
+	
+	\mmrnDown R1*8
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -57,7 +59,7 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	\mark \default
-	R1*20
+	\mmrLength #15 R1*20
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -75,7 +77,7 @@ musicTubaMvtIV = \relative c, {
 	fis-. r r2
 	b4-. r b-. r
 	b-. r r2
-	cis4\fz a-. d\fz b-.
+	cis4\fz a-. \once \stemUp d\fz b-.
 % Bars 96 to 100
 	e\fz r e\fz r
 	R1*8
@@ -92,7 +94,7 @@ musicTubaMvtIV = \relative c, {
 	b4-. r b-. r
 	b-. r r2
 % Bars 111 to 115
-	cis4\fz a-. d\fz b-.
+	cis4\fz a-. \once \stemUp d\fz b-.
 	e\fz r e\fz r \mark \default
 	a, r r2
 	R1*7
@@ -284,19 +286,25 @@ musicTubaMvtIV = \relative c, {
 % Bars 316 to 320
 	a~
 	a4 r r2
-	R1*40
+	R1*2
+	
+	R1*14
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
 % Bars 331 to 335
 	
-% Bars 336 to 340
 	
+	
+	\mmrnDown R1*2
+	
+% Bars 336 to 340
+	\mmrLength #12 R1*10
 % Bars 341 to 345
 	
 % Bars 346 to 350
-	
+	R1*12
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -378,7 +386,7 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	\mark \default \bar "||"
-	R1*34
+	\mmrLength #25 \mmrnDown R1*34
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -400,10 +408,9 @@ musicTubaMvtIV = \relative c, {
 	
 % Bars 481 to 485
 	
-	\cueDuring #"cueVoiceTubaMvtIV" #UP {
-		\ni R1
-		R \no
-	r2 r4 } a-.\ff
+	\ni \voiceTwo R1
+	R \no \oneVoice 
+	r2 r4 a-.\ff
 	a1~
 % Bars 486 to 490
 	a2. r4
@@ -448,7 +455,7 @@ musicTubaMvtIV = \relative c, {
 	b r a r
 	g r fis r \mark \default
 % Bars 521 to 525
-	g2-\tweak X-offset #1 ^\ten r
+	g2^\ten r
 	g^\ten r
 	e^\ten r
 	e^\ten r
