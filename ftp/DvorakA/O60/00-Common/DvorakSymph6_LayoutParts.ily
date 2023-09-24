@@ -35,7 +35,7 @@
 		\override TupletBracket.bracket-visibility = ##f
 		\override TupletNumber.avoid-slur = #'ignore
 		\override Hairpin.to-barline = ##f
-		\override TrillSpanner.bound-details.right.padding = #1
+		\override TrillSpanner.to-barline = ##f
 		\override MultiMeasureRest.space-increment = #0
 		\override Hairpin.height = #0.55
 		

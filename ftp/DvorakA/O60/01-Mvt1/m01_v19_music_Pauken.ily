@@ -19,12 +19,14 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 16 to 20
 		
-		\hairpinShorten #'(1 . 1) d2.\pp\<\startTrillSpan
-		d\startTrillSpan
-		d2\>\startTrillSpan d8-.\stopTrillSpan\! r
-		R2.*23
+		\hairpinShorten #'(3 . 2) d2.\<\pp\trill
+		d\trill
+		\hairpinShorten #'(-2 . 0) d2\>\trill d8\! r
+		R2.*3
 % Bars 21 to 25
-	
+		
+		
+		\mmrLength #15 \mmrnDown R2.*20
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -34,15 +36,14 @@ musicPaukenMvtI = \relative c {
 % Bars 41 to 45
 		
 		
-		\cueDuring #"cueVoicePaukenMvtI" #DOWN {
-			\ni \clef treble \mmrPos #-4 R2.
-			\mmrPos #-4 R
-			\mmrPos #-4 R \no
+		\ni \clef treble \voiceTwo R2.
+		R
+		R \no
 % Bars 46 to 50
-		c'4\rest } \clef bass a,2\ff\startTrillSpan
+		r4 \oneVoice \clef bass a2\ff\startTrillSpan
 		a2.
 		<< a2. {s4 s s\stopTrillSpan}>> \mark \default
-		\tempoXoffset #1.3 d4-. r r
+		d4-. r r
 		R2.*8
 % Bars 51 to 55
 	
@@ -84,7 +85,7 @@ musicPaukenMvtI = \relative c {
 		
 		
 		
-		\mmrLength #16 R2.*20
+		\mmrLength #16 \mmrnDown R2.*20
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -110,21 +111,17 @@ musicPaukenMvtI = \relative c {
 % Bars 166 to 170
 	
 % Bars 171 to 175
-		\cueDuring #"cueVoicePaukenMvtI" #UP {
-			\ni \clef treble R2.
-			R
-			R
-			R
-			R
+		\ni \clef treble \voiceTwo R2.
+		R
+		\mmrPos #-6 R
+		R
+		\mmrPos #-6 R
 % Bars 176 to 180
-			R
-		}
+		R
 	}
 	\alternative {
 		{
-			\cueDuring #"cueVoicePaukenMvtI" #UP {
-				R2. \no
-			}
+			R2. \no \oneVoice 
 			R2. \clef bass
 			\startMeasureCount a2.\pp\startTrillSpan
 			a
@@ -208,15 +205,13 @@ musicPaukenMvtI = \relative c {
 	
 	
 	
-	\cueDuring #"cueVoicePaukenMvtI" #UP {
-		\ni \mmrPos #6 R2.
-		\mmrPos #6 R
+	\ni \mmrPos #7 R2.
+	\mmrPos #7 R
 % Bars 281 to 285
-		\mmrPos #6 R
-		\mmrPos #6 R
-		\mmrPos #6 R
-		\mmrPos #6 R \no
-	}
+	\mmrPos #7 R
+	\mmrPos #7 R
+	\mmrPos #7 R
+	\mmrPos #7 R \no
 	d2.\ff\startTrillSpan
 % Bars 286 to 290
 	d
@@ -234,12 +229,10 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 306 to 310
 	
-	\cueDuring #"cueVoicePaukenMvtI" #UP {
-		\ni \mmrPos #4 R2.
-		\mmrPos #4 R
-		\mmrPos #4 R
-		\mmrPos #4 R \no
-	}
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 311 to 315
 	a2.\ff\startTrillSpan
 	a
@@ -247,7 +240,7 @@ musicPaukenMvtI = \relative c {
 	<< a {s4 s s\stopTrillSpan}>> \mark \default
 	d4 r r
 % Bars 316 to 320
-	R2.
+	\mmrnDown R2.
 	r4 r a\pp 
 	d-. d-. r
 	R2.*11
@@ -258,13 +251,13 @@ musicPaukenMvtI = \relative c {
 	
 	
 	
-	d2.\p\<\startTrillSpan
+	\hairpinShorten #'(-0.5 . -1) \after 2.*7/8 \! d2.\p\<\startTrillSpan
 % Bars 331 to 335
-	d\>
+	\after 2.*7/8 \! d\>
 	d4\!\stopTrillSpan r r
-	R2.*27
+	R2.*3
 % Bars 336 to 340
-	
+	\mmrLength #22 \mmrnDown R2.*24
 % Bars 341 to 345
 	
 % Bars 346 to 350
@@ -286,15 +279,12 @@ musicPaukenMvtI = \relative c {
 % Bars 376 to 380
 	
 	
-	\cueDuring #"cueVoicePaukenMvtI" #DOWN {
-		\ni \mmrPos #-4 \clef treble R2.
-		\mmrPos #-4 R
-		\mmrPos #-4 R
+	\ni \mmrPos #-4 \clef treble R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 381 to 385
-		\mmrPos #-4 R \no
-	}
-	\cueDuring #"cueVoicePaukenMvtI" #UP {
-		r4 r r8 } \clef bass a\f
+	\mmrPos #-4 R \no
+	r4 r r8 \clef bass a\f
 	d2.\startTrillSpan
 	d
 	d
@@ -354,34 +344,34 @@ musicPaukenMvtI = \relative c {
 	d_\crescmarkup
 	d2 a4\startTrillSpan
 	a2.
-	\startMeasureCount d\ff\startTrillSpan
-	d
+	\startMeasureCount \countEO #'(1 . -3.7) d-\offset X-offset 0.5 \ff\startTrillSpan
+	\countEO #'(0 . -3.7) d
 % Bars 456 to 460
-	d
-	d
-	d
-	<< d {s4 s s\stopTrillSpan}>> \stopMeasureCount
+	\countEO #'(0 . -3.7) d
+	\countEO #'(0 . -3.7) d
+	\countEO #'(0 . -3.7) d
+	\countEO #'(0 . -3.7) \after 2.*7/8 \stopTrillSpan d \stopMeasureCount
 	d4 r r
 % Bars 461 to 465
 	R2.*5
 % Bars 466 to 470
-	\startMeasureCount a2.\f\startTrillSpan
-	a
-	a
-	a
-	a
+	\startMeasureCount \countEO #'(0 . -3.7) a2.\f\startTrillSpan
+	\countEO #'(0 . -3.7) a
+	\countEO #'(0 . -3.7) a
+	\countEO #'(0 . -3.7) a
+	\countEO #'(0 . -3.7) a
 % Bars 471 to 475
-	a
-	a
-	a \stopMeasureCount
+	\countEO #'(0 . -3.7) a
+	\countEO #'(0 . -3.7) a
+	\countEO #'(0 . -3.7) a \stopMeasureCount
 	a2 d4\startTrillSpan
-	\startMeasureCount d2.
+	\startMeasureCount \countEO #'(0 . -3.7) d2.
 % Bars 476 to 480
-	d
-	d
-	d
-	d
-	<<d {s4 s s\stopTrillSpan}>> \stopMeasureCount
+	\countEO #'(0 . -3.7) d
+	\countEO #'(0 . -3.7) d
+	\countEO #'(0 . -3.7) d
+	\countEO #'(0 . -3.7) d
+	\countEO #'(0 . -3.7) \after 2.*7/8 \stopTrillSpan d \stopMeasureCount
 % Bars 481 to 485
 	d4 r r
 	R2.*5
@@ -414,36 +404,35 @@ musicPaukenMvtI = \relative c {
 	d r r
 	R2.
 % Bars 516 to 520
-	r4 r r8 d16\f d
+	r4 r r8 \stemUp d16\f d
 	d4 r r
 	r4 r r8 d16\f d
 	d4 r r
 	r4 r r8 d16\f d
 % Bars 521 to 525
-	d4 r r
-	\startMeasureCount d2.\startTrillSpan
-	d
-	d\>
-	d
+	d4 \stemNeutral r r
+	\startMeasureCount \countEO #'(0 . -3.7) d2.\startTrillSpan
+	\countEO #'(0 . -3.7) d
+	\countEO #'(0 . -3.7) d\>
+	\countEO #'(0 . -3.7) d
 % Bars 526 to 530
-	d\p
-	d_\dimmarkup
-	d\pp
-	d
-	d
+	\countEO #'(0 . -3.7) d\p
+	\countEO #'(0 . -3.7) d_\dimmarkup
+	\countEO #'(0 . -3.7) d\pp
+	\countEO #'(0 . -3.7) d
+	\countEO #'(0 . -3.7) d
 % Bars 531 to 535
-	<< d {s4 s s\stopTrillSpan}>> \stopMeasureCount
+	\countEO #'(0 . -3.7) \after 2.*7/8 \stopTrillSpan d \stopMeasureCount
 	d4 r r
-	\mmrLength #17 R2.*10
+	R2.*10
 % Bars 536 to 540
 	
 % Bars 541 to 545
 	
 	
-	\cueDuring #"cueVoicePaukenMvtI" #UP {
-		\ni R2.
-		R \no
-	r4 r } a->\f
+	\ni \voiceTwo R2.
+	R \no
+	r4 r \oneVoice a->\f
 % Bar 546
 	d-> r r \bar "|."
 }

@@ -21,7 +21,7 @@ musicPaukenMvtI = \relative c {
 		
 		d2.\pp\<\startTrillSpan
 		d\startTrillSpan
-		d2\>\startTrillSpan d8-.\stopTrillSpan\! r
+		d2\>\startTrillSpan d8\stopTrillSpan\! r
 		R2.*26
 % Bars 21 to 25
 	

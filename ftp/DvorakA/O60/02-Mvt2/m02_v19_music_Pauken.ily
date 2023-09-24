@@ -9,7 +9,7 @@ musicPaukenMvtII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2*28
+	\mmrLength #20 \mmrnDown R2*28
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -22,13 +22,13 @@ musicPaukenMvtII = \relative c {
 	
 	
 	
-	\mmrLength #15 R2*6
+	\mmrLength #23 \mmrnDown R2*6
 % Bars 31 to 35
 	
 	
 	
 	\bar "||" \mark \default
-	R2*38
+	\mmrLength #16 \mmrnDown R2*38
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -55,27 +55,30 @@ musicPaukenMvtII = \relative c {
 	
 	
 	\mark \default
-	R2*12
+	R2*6
+	
 % Bars 91 to 95
 	
+	
+	
+	
+	\mmrnDown R2*6
 % Bars 96 to 100
 	
 % Bars 101 to 105
-	\cueDuring #"cueVoicePaukenMvtII" #UP {
-		\ni \clef treble R2
-		R
-		R \no \clef bass
-	}
-	b2\ff\startTrillSpan
-	f'\startTrillSpan
+	\ni \clef treble \voiceTwo \mmrPos #-7 R2
+	\tweak extra-offset #'(-0.5 . 0) R
+	R \no \clef bass \oneVoice 
+	b2\ff\trill
+	f'\trill
 % Bars 106 to 110
-	\startMeasureCount b,\fz\startTrillSpan
-	b\fz\startTrillSpan
-	b\fz\startTrillSpan
-	b\fz\startTrillSpan
-	b\fz\startTrillSpan
+	\startMeasureCount \countEO #'(0.8 . -4) b,\fz\startTrillSpan
+	\countEO #'(0.8 . -4) b\fz\startTrillSpan
+	\countEO #'(0.8 . -4) b\fz\startTrillSpan
+	\countEO #'(0.8 . -4) b\fz\startTrillSpan
+	\countEO #'(0.8 . -4) b\fz\startTrillSpan
 % Bars 111 to 115
-	b\fz\startTrillSpan \stopMeasureCount \mark \default
+	\trillSpanPadding #5 \countEO #'(0.8 . -4.65) b\fz\startTrillSpan \stopMeasureCount \mark \default
 	f'8\stopTrillSpan r r4
 	R2*27
 % Bars 116 to 120
@@ -104,15 +107,13 @@ musicPaukenMvtII = \relative c {
 	
 	
 	
-	\cueDuring #"cueVoicePaukenMvtII" #UP {
-		\ni \clef treble R2
-		R
+	\ni \clef treble \voiceTwo R2
+	R
 % Bars 166 to 170
-		R
-		\mmrPos #-6 R
-		\mmrPos #-9 R \no \clef bass \mark \default
-	}
-	\tempoXoffset #1.1 b,8\pp-\tweak X-offset #1.1 ^\solo f'16-. f-. f8-. f-.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \clef bass \oneVoice \mark \default
+	b,8\pp^\solo f'16-. f-. f8-. f-.
 	b, f'16-.\< f-. f8-. f-.\!
 % Bars 171 to 175
 	b, f'16\pp f f8 f
@@ -133,13 +134,11 @@ musicPaukenMvtII = \relative c {
 % Bars 191 to 195
 	
 % Bars 196 to 200
-	\cueDuring #"cueVoicePaukenMvtII" #UP {
-		\ni \clef treble R2
-		R \no \clef bass
-	}
-	r8 f'\ff f f
-	f f f b,
-	b r f' r
+	\ni \clef treble \voiceTwo R2
+	R \no \clef bass \oneVoice 
+	r8 f'\ff-. f-. f-.
+	f-. f-. f-. b,-.
+	b-. r f'-. r
 % Bars 201 to 205
 	R2*5
 % Bar 206

@@ -12,16 +12,16 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
-\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part08_Pauken.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part08_Pauken.ily"
 \include "./01-Mvt1/m01_v19_music_Pauken.ily"
 \include "./02-Mvt2/m02_v19_music_Pauken.ily"
 \include "./03-Mvt3/m03_v19_music_Pauken.ily"
@@ -29,10 +29,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoicePaukenMvtI" { \cueVoicePaukenMvtI }
-\addQuote "cueVoicePaukenMvtII" { \cueVoicePaukenMvtII }
-\addQuote "cueVoicePaukenMvtIII" { \cueVoicePaukenMvtIII }
-\addQuote "cueVoicePaukenMvtIV" { \cueVoicePaukenMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -42,7 +38,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60"
+			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Pauken"
 		}
 		instrument = \markup {
 			"Pauken"
@@ -54,20 +50,19 @@
 				\formatPaukenMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\namePaukenMvtI \musicPaukenMvtI
+				\keepWithTag #'(pauken) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(pauken) \tempiPartMvtI
+				\InCueContext \cueVoicePaukenMvtI
+			}
+			\new Voice {
+				\timeMvtI \namePaukenMvtI \musicPaukenMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -79,20 +74,19 @@
 				\formatPaukenMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\namePaukenMvtII \musicPaukenMvtII
+				\keepWithTag #'(pauken) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(pauken) \tempiPartMvtII
+				\InCueContext \cueVoicePaukenMvtII
+			}
+			\new Voice {
+				\timeMvtII \namePaukenMvtII \musicPaukenMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.7 \bold 2.
 			}
 		}
 		\layout {
@@ -104,20 +98,19 @@
 				\formatPaukenMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\namePaukenMvtIII \musicPaukenMvtIII
+				\keepWithTag #'(pauken) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(pauken) \tempiPartMvtIII
+				\InCueContext \cueVoicePaukenMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \namePaukenMvtIII \musicPaukenMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -129,20 +122,19 @@
 				\formatPaukenMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\namePaukenMvtIV \musicPaukenMvtIV
+				\keepWithTag #'(pauken) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(pauken) \tempiPartMvtIV
+				\InCueContext \cueVoicePaukenMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \namePaukenMvtIV \musicPaukenMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #2.1 \bold {4. Finale.}
 			}
 		}
 		\layout {

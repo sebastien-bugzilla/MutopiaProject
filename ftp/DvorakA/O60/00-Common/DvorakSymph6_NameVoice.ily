@@ -481,11 +481,7 @@ namePaukenMvtI = {
 			\lower #1 "Pauken" "in D. A."
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Pk." "in D. A."
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
 namePaukenMvtII = {
@@ -494,11 +490,7 @@ namePaukenMvtII = {
 			\lower #1 "Pauken" "in B. F."
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Pk." "in B. F."
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
 namePaukenMvtIII = {
@@ -507,11 +499,7 @@ namePaukenMvtIII = {
 			\lower #1 "Pauken" "in D. A."
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Pk." "in D. A."
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
 namePaukenMvtIV = {
@@ -520,11 +508,7 @@ namePaukenMvtIV = {
 			\lower #1 "Pauken" "in D. A."
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Pk." "in D. A."
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
 %###############################################################################

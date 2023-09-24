@@ -124,9 +124,9 @@ musicPaukenMvtII = \relative c {
 % Bars 196 to 200
 	
 	
-	r8 f'\ff f f
-	f f f b,
-	b r f' r
+	r8 f'\ff-. f-. f-. 
+	f-. f-. f-. b,-. 
+	b-. r f'-. r
 % Bars 201 to 205
 	R2*5
 % Bar 206

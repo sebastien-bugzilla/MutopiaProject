@@ -10,14 +10,14 @@ musicPaukenMvtIV = \relative c {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	\mmrLength #22 R1*13
+	\mmrLength #12 \mmrnDown R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
-	
-	\mmrLength #22 R1*11
+	\mmrnDown R1
+	\mmrLength #12 \mmrnDown R1*11
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -25,23 +25,23 @@ musicPaukenMvtIV = \relative c {
 	
 	
 	
-	\startMeasureCount d1\ff\startTrillSpan
+	\startMeasureCount \countDown \countEO #'(0.5 . 8.5) d1\ff\startTrillSpan
 % Bars 26 to 30
-	d
-	d
-	d
-	d
-	d
+	\countEO #'(0.5 . 5.3) d
+	\countEO #'(0.5 . 5.3) d
+	\countEO #'(0.5 . 5.3) d
+	\countEO #'(0.5 . 5.3) d
+	\countEO #'(0.5 . 5.3) d
 % Bars 31 to 35
-	d
-	d
-	d
-	d
-	d \stopMeasureCount
+	\countEO #'(0.5 . 5.3) d
+	\countEO #'(0.5 . 5.3) d
+	\countEO #'(0.5 . 5.3) d
+	\countEO #'(0.5 . 5.3) d
+	\countEO #'(0.5 . 5.3) d \stopMeasureCount \countUp
 % Bars 36 to 40
 	a\startTrillSpan
 	a\stopTrillSpan \mark \default
-	\tempoXoffset #1.2 d4\ff r r a-.
+	d4_\ffgrandioso r r a-.
 	d-. r r2
 	r2 r4 a
 % Bars 41 to 45
@@ -53,15 +53,17 @@ musicPaukenMvtIV = \relative c {
 % Bars 46 to 50
 	d4 d2 d4
 	d r r2
-	R1*9
+	R1*5
 % Bars 51 to 55
 	
+	
+	\mmrLength #15 \mmrnDown R1*4
 % Bars 56 to 60
 	
 	<< d1\p\startTrillSpan {s2 s_\crescmarkup}>>
 	d1
 	d
-	d\stopTrillSpan
+	\after 1*7/8 \stopTrillSpan d
 % Bars 61 to 65
 	d4\f r d r
 	d r d r
@@ -72,7 +74,7 @@ musicPaukenMvtIV = \relative c {
 	d4\p r r2
 	R1*2
 	\mark \default
-	R1*22
+	\mmrnDown R1*22
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -107,14 +109,14 @@ musicPaukenMvtIV = \relative c {
 	
 % Bars 121 to 125
 	r2 a2\f\startTrillSpan
-	\startMeasureCount a1
-	a
-	a
-	a
+	\startMeasureCount \countEO #'(0 . -4) a1
+	\countEO #'(0 . -4) a
+	\countEO #'(0 . -4) a
+	\countEO #'(0 . -4) a
 % Bars 126 to 130
-	a
-	a
-	a \stopMeasureCount
+	\countEO #'(0 . -4) a
+	\countEO #'(0 . -4) a
+	\countEO #'(0 . -4) a \stopMeasureCount
 	d4\stopTrillSpan r r2
 	R1*6
 % Bars 131 to 135
@@ -153,12 +155,12 @@ musicPaukenMvtIV = \relative c {
 	
 % Bars 186 to 190
 	
-	\trillSpanPadding #3 a1\pp\startTrillSpan
+	a1\pp\startTrillSpan
 	a
 	a
-	a \mark \default
+	\after 1*2/3 \stopTrillSpan a \mark \default
 % Bars 191 to 195
-	d4-.\stopTrillSpan r d-. r
+	d4-. r d-. r
 	d-. r d-. r
 	d-. r d-. r
 	d-. r r2
@@ -197,9 +199,8 @@ musicPaukenMvtIV = \relative c {
 	
 	
 	
-	\cueDuring #"cueVoicePaukenMvtIV" #UP {
-		\ni \clef treble R1 \no
-	r2 r4 } \clef bass d\f
+	\ni \clef treble \voiceTwo R1 \no
+	r2 r4 \oneVoice \clef bass d\f
 % Bars 261 to 265
 	d r r d
 	a r r a
@@ -219,27 +220,27 @@ musicPaukenMvtIV = \relative c {
 % Bars 281 to 285
 	
 % Bars 286 to 290
-	<< a1\startTrillSpan {\hairpinShorten #'(0 . -2) s4-\tweak X-offset #-1 \f\< s s s\!\stopTrillSpan}>>
-	d4 r a2\ff\startTrillSpan
+	<< a1\trill {\hairpinShorten #'(0 . -2) s4-\tweak X-offset #-1 \f\< s s s\!}>>
+	\once \stemUp d4 r a2\ff\startTrillSpan
 	a1
 	a
 	a
 % Bars 291 to 295
-	a2\stopTrillSpan a4 r8 a
+	\after 2*7/8 \stopTrillSpan a2 a4 r8 a
 	d4 a d r8 a
 	d4 a d r8 a
-	\startMeasureCount a1\ff\startTrillSpan
-	a
+	\startMeasureCount \countDown \countEO #'(0 . 7.5) a1\ff\startTrillSpan
+	\countEO #'(0 . 4.25) a
 % Bars 296 to 300
-	a
-	a
-	a
-	a
-	a \stopMeasureCount
+	\countEO #'(0 . 4.25) a
+	\countEO #'(0 . 4.25) a
+	\countEO #'(0 . 4.25) a
+	\countEO #'(0 . 4.25) a
+	\countEO #'(0 . 4.25) a \stopMeasureCount \countUp 
 % Bars 301 to 305
-	a2\stopTrillSpan d\trill
+	\after 2*7/8 \stopTrillSpan a2 d\trill
 	a1\trill
-	a2-> a-> \markXoffset #-0.3 \mark \default
+	a2-> a-> \mark \default
 	a1\ff-\tweak X-offset #3 _\dimin\startTrillSpan
 	a
 % Bars 306 to 310
@@ -257,17 +258,23 @@ musicPaukenMvtIV = \relative c {
 % Bars 316 to 320
 	a
 	a2 a4\stopTrillSpan r
-	R1*30
+	\mmrnDown R1*16
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
 % Bars 331 to 335
 	
+	
+	
+	\mmrLength #14 \mmrnDown R1*10
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
+	
+	
+	\mmrnDown R1*4
 % Bars 346 to 350
 	
 	
@@ -436,7 +443,7 @@ musicPaukenMvtIV = \relative c {
 	
 	d1\fff\startTrillSpan
 	d
-	d\stopTrillSpan
+	\after 1*7/8 \stopTrillSpan d
 % Bars 546 to 550
 	d4 r r2
 	R1*4

@@ -479,7 +479,8 @@ tempoEO = #(define-music-function
 	#}
 )
 
-
+countDown = \override Staff.MeasureCounter.direction = #-1
+countUp = \revert Staff.MeasureCounter.direction
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -686,14 +687,6 @@ tempoEO = #(define-music-function
 %	(number?)
 %	#{
 %		\once \override StemTremolo.Y-offset = #position
-%	#}
-%)
-
-%trillSpanPadding = #(define-music-function
-%	(padding)
-%	(number?)
-%	#{
-%		\once \override TrillSpanner.bound-details.right.padding = #padding
 %	#}
 %)
 
