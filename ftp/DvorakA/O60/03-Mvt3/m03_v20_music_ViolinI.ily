@@ -67,7 +67,7 @@ musicViolinIMvtIII = \relative c''' {
 		a) gis( a)
 % Bars 46 to 50
 		fis( g!) fis(\<
-		g) g(\> c)\!
+		g)\! g(\> c)\!
 		gis( a) gis(
 		a) gis( a)
 		fis( g!)\< fis(\!
@@ -190,20 +190,23 @@ musicViolinIMvtIII = \relative c''' {
 	\alternative {
 		{
 			<d d'> r r
+			\once \override Staff.BarLine.space-alist = #'(
+				(next-note . (fixed-space . 3))
+				(right-edge . (extra-space . 0)))
 		}
 		{
-			\startMeasureCount q2.\f\>
+			\startMeasureCountAt #2 q2.\f\>
 		}
 	}
 	q
-	q
+	q\!
 	q\p
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \stopMeasureCount \bar ".|:-||" \key d \major
+	q \stopMeasureCount \attaccatrioDown \bar ".|:-||" \key d \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio d'4\pp r r
+		\time 3/4 \trioPart d'4\pp r r
 		R2.*5
 		
 % Bars 156 to 160
@@ -215,19 +218,26 @@ musicViolinIMvtIII = \relative c''' {
 % Bars 161 to 165
 		q r r 
 		q\pp r r
-		R2.*19
+		\mmrLength #11 R2.*6
+		
+		
 % Bars 166 to 170
-	
+		
+		
+		
+		\mmrLength #11 R2.*4
+		
 % Bars 171 to 175
-	
+		
+		
+		\mmrLength #11 R2.*9
 % Bars 176 to 180
 	
 % Bars 181 to 185
 		
-		\cueDuring #"cueVoiceViolinIMvtIII" #DOWN {
-			\ni \clef bass R2.
-			\clef alto R \no
-		\clef treble r4 r } a''8(\p^\arco a,
+		\ni \clef bass \voiceTwo R2.
+		\clef alto R \no 
+		\clef treble \voiceOne r4 r \oneVoice a''8(\p^\arco a,
 		g' fis g a, fis' a,
 % Bars 186 to 190
 		e' dis e a, d a)
@@ -258,7 +268,7 @@ musicViolinIMvtIII = \relative c''' {
 	a2 fis4)
 	e2( g4
 	b2 e4)
-	\startMeasureCount d2.\pp~
+	\startMeasureCountAt #1 d2.\pp~
 	d~
 % Bars 211 to 215
 	d~
@@ -338,7 +348,7 @@ musicViolinIMvtIII = \relative c''' {
 	d~ \stopMeasureCount
 	d4 r r
 % Bars 281 to 285
-	\mmrLength #14 R2.*3
+	\mmrLength #14 \mmrnDown R2.*3
 	
 	
 	\acciaccatura a'8( a'2)\p d,4~_\crescmarkup
@@ -442,7 +452,7 @@ musicViolinIMvtIII = \relative c''' {
 % Bars 366 to 370
 	
 	d2\p\< c4~
-	c bes2\f
+	c\! bes2\f
 	R2.*2
 	
 % Bars 371 to 375

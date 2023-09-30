@@ -1065,11 +1065,11 @@ cueVoiceViolinIMvtI = \relative c {
 	q8 q4 q q8
 	q q4 q q8
 	q q4 q q8
-	R2.*206
+	s2.*206
 	% bar 198 - 199
 	b'4.\pp^\markup {Viol.II} b8 b4~
 	b( d fis!8 g)
-	R2.*59
+	s2.*59
 	% bar 259 - 265
 	r4^\markup {Clar.} r8 cis-. d-. e-.
 	e4.( fis8 e4)
@@ -1080,35 +1080,35 @@ cueVoiceViolinIMvtI = \relative c {
 	fis r r
 }
 cueVoiceViolinIMvtII = \relative c {
-	R2*72
+	s2*72
 	% bar 73 - 74
-	f'4-\tweak extra-offset #'(0 . 5.5) _\markup {Br.} d8 g
+	f'4^\markup {Br.} d8 g
 	ees c32 d c bes a8 d
-	R2*94
+	s2*94
 	% bar 169 - 170
-	r8_\markup {Clar.} d'4( c16 bes)
-	bes8 r r4
+	\voiceOne r8_\markup {Clar.} d'4( c16 bes)
+	bes8 \oneVoice s s4
 }
 cueVoiceViolinIMvtIII = \relative c {
-	R2.*182
+	s2.*182
 	% bar 182 - 184
-	bes4^\pizz^\markup {Vcell.} e g
-	bes^\markup {Br.} d e
-	g^\markup {Viol.II} bes r
+	bes4^\pizz^\markup {Vcell.} \once \stemUp e g
+	bes^\markup {Br.} \once \stemUp d e
+	\voiceTwo g-\offset X-offset -1 _\markup {Viol.II} bes \oneVoice s
 }
 cueVoiceViolinIMvtIV = \relative c {
-	\partial 4 r4
-	R1*252
+	\partial 4 s4
+	s1*252
 	% bar 253 - 255
-	f'2-\tweak X-offset #0.8 _\markup {Viol.II} r4 f
+	f'2^\markup {Viol.II} r4 f
 	e2 r4 e
-	ees2 r
-	R1*58
+	ees2 s
+	s1*58
 	% bar 314 - 317
-	f'2\rest f4\rest^\markup {Fl.} g'^(
+	r2 r4-\offset X-offset -2 ^\markup {Fl.} g''^(
 	e d cis b
 	e a, b fis
-	g e a) r
+	g e a) s
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   V I O L I N I I                 #
@@ -1155,10 +1155,10 @@ cueVoiceViolinIIMvtIV = \relative c {
 	\partial 4 r4 
 	R1*313
 	% bar 314 - 317
-	r2 r4 g''''(-\tweak X-offset #-2 ^\markup {Fl.}
+	r2 r4 g''''(-\tweak X-offset #-3 ^\markup {Fl.}
 	e d cis b
 	e a, b fis 
-	g e a) r
+	g e a) s
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   B R A T S C H E                 #
@@ -1169,9 +1169,9 @@ cueVoiceBratscheMvtI = \relative c {
 	r4 r a''8(^\markup {V.II.} fis
 	g a) r4 r
 }
-%cueVoiceBratscheMvtII = \relative c {
+cueVoiceBratscheMvtII = \relative c {
 %	no cue voice for mvt II
-%}
+}
 cueVoiceBratscheMvtIII = \relative c {
 	R2.*182
 	% bar 182
@@ -1181,9 +1181,9 @@ cueVoiceBratscheMvtIII = \relative c {
 	e4(^\markup {Vcell.} fis g
 	fis cis e)
 }
-%cueVoiceBratscheMvtIV = \relative c {
+cueVoiceBratscheMvtIV = \relative c {
 %	no cue voice for mvtIV
-%}
+}
 %###############################################################################
 %#               C U E   V O I C E   F O R   V I O L O N C E L L               #
 %###############################################################################

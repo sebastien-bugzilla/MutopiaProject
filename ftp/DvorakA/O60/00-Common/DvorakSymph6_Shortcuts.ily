@@ -482,6 +482,16 @@ tempoEO = #(define-music-function
 countDown = \override Staff.MeasureCounter.direction = #-1
 countUp = \revert Staff.MeasureCounter.direction
 
+tremoloPosition = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override StemTremolo.Y-offset = #position
+	#}
+)
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -681,14 +691,6 @@ countUp = \revert Staff.MeasureCounter.direction
 
 %omitTupletNumber = \once \omit Voice.TupletNumber
 
-
-%tremoloPosition = #(define-music-function
-%	(position)
-%	(number?)
-%	#{
-%		\once \override StemTremolo.Y-offset = #position
-%	#}
-%)
 
 %trillSpanCustom = #(define-music-function
 %	(length markup)

@@ -12,16 +12,16 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
-\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part09_ViolinI.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part09_ViolinI.ily"
 \include "./01-Mvt1/m01_v20_music_ViolinI.ily"
 \include "./02-Mvt2/m02_v20_music_ViolinI.ily"
 \include "./03-Mvt3/m03_v20_music_ViolinI.ily"
@@ -29,10 +29,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceViolinIMvtI" { \cueVoiceViolinIMvtI }
-\addQuote "cueVoiceViolinIMvtII" { \cueVoiceViolinIMvtII }
-\addQuote "cueVoiceViolinIMvtIII" { \cueVoiceViolinIMvtIII }
-\addQuote "cueVoiceViolinIMvtIV" { \cueVoiceViolinIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -54,20 +50,19 @@
 				\formatViolinIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameViolinIMvtI \musicViolinIMvtI
+				\keepWithTag #'(violinI) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtI
+				\InCueContext \cueVoiceViolinIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameViolinIMvtI \musicViolinIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -79,20 +74,19 @@
 				\formatViolinIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameViolinIMvtII \musicViolinIMvtII
+				\keepWithTag #'(violinI) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtII
+				\InCueContext \cueVoiceViolinIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameViolinIMvtII \musicViolinIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1 \bold 2.
 			}
 		}
 		\layout {
@@ -104,20 +98,19 @@
 				\formatViolinIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameViolinIMvtIII \musicViolinIMvtIII
+				\keepWithTag #'(violinI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtIII
+				\InCueContext \cueVoiceViolinIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameViolinIMvtIII \musicViolinIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2.4 \bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -129,20 +122,19 @@
 				\formatViolinIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameViolinIMvtIV \musicViolinIMvtIV
+				\keepWithTag #'(violinI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtIV
+				\InCueContext \cueVoiceViolinIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameViolinIMvtIV \musicViolinIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {

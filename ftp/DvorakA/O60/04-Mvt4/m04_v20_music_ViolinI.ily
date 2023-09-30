@@ -17,7 +17,7 @@ musicViolinIMvtIV = \relative c''' {
 	fis4( a8 g fis4 e)
 % Bars 6 to 10
 	d( cis8 b e4 a,)
-	b( gis a b)
+	\stemUp b( gis a b) \stemNeutral
 	cis( d8 cis b4 fis'8 gis)
 	e1\pp~
 	e4 r r2
@@ -91,7 +91,7 @@ musicViolinIMvtIV = \relative c''' {
 	e,8_\pdim d' cis b r2
 	e8(\pp d' cis b) r2
 	R1 \mark \default
-	R1*4
+	\mmrLength #25 R1*4
 	
 % Bars 71 to 75
 	
@@ -100,7 +100,7 @@ musicViolinIMvtIV = \relative c''' {
 	e4-. b-._\dimmarkup e2->
 	fis4\p-. c-. fis2->
 % Bars 76 to 80
-	gis4 gis8(\< a b a\> gis g)\!
+	gis4 gis8(\< a b\! a\> gis g)\!
 	\acciaccatura fis8 b1\p~
 	b~_\dimmarkup
 	b~
@@ -236,7 +236,7 @@ musicViolinIMvtIV = \relative c''' {
 	a4 g!-. a2~
 	a1~
 	a4 g-. a2~
-	a1~ \markYoffset #5 \mark \default
+	a1~ \markWhiteout \mark \default
 % Bars 191 to 195
 	a4 r r2
 	r2 r8 fis'(\pp e d
@@ -308,10 +308,9 @@ musicViolinIMvtIV = \relative c''' {
 % Bars 251 to 255
 	
 	\mark \default
-	\cueDuring #"cueVoiceViolinIMvtIV" #DOWN {
-		\ni R1
-		R \no
-	r2 } r4 f-.\f
+	\ni \voiceOne R1
+	R \no 
+	r2 \oneVoice r4 f-.\f
 % Bars 256 to 260
 	d-. c-. bes-. r
 	r2 r4 a'-.\f
@@ -351,13 +350,13 @@ musicViolinIMvtIV = \relative c''' {
 % Bars 286 to 290
 	c\< c c  cis cis cis d d d dis dis dis\!}
 	e4 r <a, a'>2:16\ff
-	\startMeasureCount q1:
-	q:
-	q:
+	\startMeasureCount \tremoloPosition #1 q1:
+	\tremoloPosition #1 q:
+	\tremoloPosition #1 q:
 % Bars 291 to 295
-	q:
-	q:
-	q: \stopMeasureCount
+	\tremoloPosition #1 q:
+	\tremoloPosition #1 q:
+	\tremoloPosition #1 q: \stopMeasureCount
 	f'2->_\ffpesante e->
 	d-> a->
 % Bars 296 to 300
@@ -368,9 +367,9 @@ musicViolinIMvtIV = \relative c''' {
 	c2. c4
 % Bars 301 to 305
 	c2 d
-	\acciaccatura f,,8 <c' a'>1
+	\slashedGrace f,,8 <c' a'>1
 	<e, c' g'>2-> <d a' f'>-> \mark \default
-	\acciaccatura <a e'>8 <cis'! e>1\ff\>~
+	\slashedGrace <a e'>8 <cis'! e>1\ff\>~
 	q~
 % Bars 306 to 310
 	q4\p r r2
@@ -382,12 +381,11 @@ musicViolinIMvtIV = \relative c''' {
 	R1*3
 	
 	
-	\cueDuring #"cueVoiceViolinIMvtIV" #DOWN {
-		\ni \mmrPos #-4 R1
-		\mmrPos #-4 R
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 316 to 320
-		\mmrPos #-4 R \no
-	e2\rest e4\rest } a'(_\pptranquillo
+	\mmrPos #-4 R \no
+	r2 r4 a''(_\pptranquillo
 	fis e d a)
 	d4.( d8 d4 e
 	fis4. fis8 fis4 e)
@@ -396,7 +394,7 @@ musicViolinIMvtIV = \relative c''' {
 	fis4 a8 g fis4 e)
 	d4( cis8 b e4 a,
 	b gis a b)
-	c( b8 a d4 e8 fis
+	c( \stemDown b8 a \stemNeutral d4 e8 fis
 % Bars 326 to 330
 	d1~
 	d4) r r2
@@ -432,9 +430,9 @@ musicViolinIMvtIV = \relative c''' {
 	d d(\fz\< e fis)\!~
 	fis fis(\fz e d 
 	cis) cis(\fz d e)~
-	e e(\fz fis g!)~
+	e e(\fz fis g!~
 % Bars 356 to 360
-	g g(\fz a b)~
+	g) g(\fz a b)~
 	b b(\fz a g)~
 	g8 g( fis e)~ e b'( a g)~
 	g g( fis e)~ e e( d cis)~
@@ -454,7 +452,7 @@ musicViolinIMvtIV = \relative c''' {
 % Bars 371 to 375
 	a4-. e-. a2->
 	b4-. f-. b2->
-	cis4 cis8(\< d e d\> cis c)\!
+	cis4 cis8(\< d e\! d\> cis c)\!
 	\acciaccatura b8 e1\p~
 	e~
 % Bars 376 to 380
@@ -503,17 +501,17 @@ musicViolinIMvtIV = \relative c''' {
 	R1*3
 	
 	
-	d,16(-\tweak X-offset #-3 \mf\< e fis g \stemUp a b cis d) \stemNeutral d2:16\f
+	d,16(-\tweak X-offset #-3 \mf\< e fis g \stemUp a b cis d)\! \stemNeutral d2:16\f
 	dis1:->
 % Bars 416 to 420
 	dis2: e4: fis8:\< g:
 	a1:\!
-	d,16(\< e fis g a b cis d) c2:16\ff
+	d,16(\< e fis g a b cis d)\! c2:16\ff
 	c1:
 	c2: b:
 % Bars 421 to 425
 	a2:\< a'8( g fis e)\!
-	dis1:16->
+	\tremoloPosition #2 dis1:16->
 	dis2: e8: fis: g: gis:
 	a4 dis,2.:16->
 	dis2: e8: fis: g: gis:
@@ -522,9 +520,9 @@ musicViolinIMvtIV = \relative c''' {
 	dis2: e:
 	e: f:
 	f: fis:
-	gis1:\ff
+	\tremoloPosition #2 gis1:\ff
 % Bars 431 to 435
-	gis:
+	\tremoloPosition #2 gis:
 	a,4: a': g!2:
 	g8: e: cis: a: g: e: e':-> cis:
 	a: g: e: cis: cis':-> a: g: e:
@@ -534,9 +532,9 @@ musicViolinIMvtIV = \relative c''' {
 	g: e: cis: a: a':-> g: e: cis:
 	a: a':-> g: e: cis: a: a':-> g:
 	e: cis: a: a':-> g: e: cis: a: \mark \default \bar "||"
-	\tempoXoffset #0.5 d4\f r r2
+	d4\f r r2
 % Bars 441 to 445
-	R1*10
+	\mmrnDown R1*10
 % Bars 446 to 450
 	
 % Bars 451 to 455
@@ -622,7 +620,7 @@ musicViolinIMvtIV = \relative c''' {
 	d4:8 b: cis!: a:
 	b: g: a: fis:
 	d': b: cis: a:
-	b: g: a: fis: \ottava #0 \markXoffset #0.3 \mark \default
+	b: g: a: fis: \ottava #0 \mark \default
 % Bars 521 to 525
 	e4 r <e,, b' e>2^\ten
 	r q^\ten
@@ -640,7 +638,7 @@ musicViolinIMvtIV = \relative c''' {
 	cis-. b-. a-. a''4:16\ff
 	a1:
 	a:
-	\ottava #1 b:
+	\ottava #1 \startMeasureCount b:
 % Bars 536 to 540
 	b:
 	b:
@@ -648,11 +646,11 @@ musicViolinIMvtIV = \relative c''' {
 	b:
 	b:
 % Bars 541 to 545
-	b:
+	b: \stopMeasureCount 
 	b2: cis:
-	d1:\fff
-	d:
-	d:
+	\tremoloPosition #2 d1:\fff
+	\tremoloPosition #2 d:
+	\tremoloPosition #2 d:
 % Bars 546 to 550
 	d4 \ottava #0 r a2->
 	fis-> e->
@@ -660,9 +658,9 @@ musicViolinIMvtIV = \relative c''' {
 	d2.-> d4-.
 	d2-> g->
 % Bars 551 to 555
-	a1:16-^
-	a:
-	a:
+	\tremoloPosition #2 a1:16-^
+	\tremoloPosition #2 a:
+	\tremoloPosition #2 a:
 	a2.: a4-.
 	fis-. e-. d-. a'-.
 % Bars 556 to 560

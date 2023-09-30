@@ -9,33 +9,29 @@ musicViolinIMvtI = \relative c'' {
 	\key d \major
 %	\transposition a
 % Bars 1 to 5
-	\cueDuring #"cueVoiceViolinIMvtI" #DOWN {
-		\ni \clef alto R2.
-		R
-	}
+	\ni \clef alto \voiceOne R2.
+	R
 	\repeat volta 2 {
-		\cueDuring #"cueVoiceViolinIMvtI" #DOWN {
-			R2.
-			R
-			R \no
-		}
+		R2.
+		R
+		R \no \oneVoice 
 % Bars 6 to 10
 		r4 r \clef treble a(\pp
 		d4.) d8 d4\<
-		d( e fis)
-		a2\f\>( g8 fis)
+		d( e fis)\!
+		a2\f\>( g8 fis)\!
 		e2\p r4
 % Bars 11 to 15
 		R2.*5
 % Bars 16 to 20
 		r4 r a,(\mf
 		a'2\< gis4
-		a b a)
+		a b a)\!
 		a2(\f g4
 		fis_\dimmarkup g fis)
 % Bars 21 to 25
 		e(\p\> fis e
-		d e d
+		d e d\!
 		cis8)\pp r r4 r
 		d2.\fz
 		fis8-. r g!4.\fz fis8
@@ -48,7 +44,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 31 to 35
 		c'8-> d-> ees-> ees-> d-> c->
 		d4-.-> g,-.-> r
-		f'8\<-> g-> aes-> aes-> g-> f->
+		f'8\<-> g-> aes-> aes-> g-> f->\!
 		a!4\f-. f-. b-.\fz
 		f-. c'-.\fz f,-.
 % Bars 36 to 40
@@ -67,14 +63,14 @@ musicViolinIMvtI = \relative c'' {
 		gis a8:16\< g!: e: cis:
 		a: e: cis: e: a: e:
 		cis': a: e': cis a': a,:\! \mark \default
-		 <d,, d' d'>4-\tweak X-offset #0.5 _\ffgrandioso\arpeggio r <a' a'>-.
+		 <d,, d' d'>4-\offset X-offset 0.5 _\ffgrandioso\arpeggio r <a' a'>-.
 		\acciaccatura d,8 <fis' d'>2 r4
 % Bars 51 to 55
 		r r <a, a'>-.
 		\acciaccatura d,8 <fis' d'>4 \acciaccatura d,8 <fis' d'>4 r
 		r r a
 		d4. d8 d4\<
-		d( e fis)
+		d( e fis)\! 
 % Bars 56 to 60
 		a2(\fz g8 fis)
 		e2( g4)
@@ -97,11 +93,11 @@ musicViolinIMvtI = \relative c'' {
 		g'[-> b, g b] a'[-> b,
 		g b] b'[-> b, g b]
 		cis'->[ b, g b] d'->[ b,]
-		dis'4-> r \hairpinShorten #'(2 . 1)  d(\p\<
-		dis2 a4\!
+		dis'4-> r d(\p\<
+		\after 2*1/2 \! dis2 a4\>
 % Bars 76 to 80
-		\hairpinShorten #'(-2 . 2) gis2)\> e'4(\<
-		\hairpinShorten #'(2 . 2) eis2\> b4
+		\after 2*1/2 \! gis2) e'4(\<
+		eis2\! b4\>
 		ais\!) r r
 		R2.*3
 		
@@ -115,18 +111,18 @@ musicViolinIMvtI = \relative c'' {
 		cis r8 dis,-.\pp e-. fis-.
 		g4 r8 dis-. e-. fis-.
 		g4 r8 dis'-.\< e-. fis-.
-		g-. fis-. e-. d!-. cis-. fis-.
+		g-. fis-. e-. d!-. cis-. fis-.\!
 		b,4\f r8 b-. cis-. dis-.
 % Bars 91 to 95
 		e2( dis8 cis)
 		b4 r8 b'( ais a)
 		a( gis) gis( g) fis( e)
-		dis4 r8 b-.\< cis-. dis-.
+		dis4 r8 b-.\< cis-. dis-.\!
 		<g, c e>4\f\arpeggio r r
 % Bars 96 to 100
 		<b, g' d'>\arpeggio r8 d'-. e-. fis-.
 		<e, c' g'>4\arpeggio r r
-		<b g' d'>\arpeggio r8 fis''-.\< g-. a-.
+		<b g' d'>\arpeggio r8 fis''-.\< g-. a-.\!
 		b2\fz a8-.( g-.)
 		fis4 r8 a-. b-. cis-.
 % Bars 101 to 105
@@ -137,7 +133,7 @@ musicViolinIMvtI = \relative c'' {
 		
 % Bars 106 to 110
 		
-		\mark \default
+		\mark \default 
 		fis8-._\pplegg fis16( gis) ais8-. ais16( b) cis8-. cis16( d)
 		b8-. b16( cis) d8-. d16( e) fis8-. fis16( g)
 		e8-. e16( fis) g8-. g16( fis) g8-. g16( a)
@@ -145,13 +141,13 @@ musicViolinIMvtI = \relative c'' {
 		fis8-. fis16( g) a8-. a16( b) a8-. a16( d)
 		g,8-.\p g16( a) g8-. g16( a) g8-. g16( c)
 		b8-. b16( c) b8-._\dimmarkup b16( c) d8-. c16( d)
-		e8\pp\(( d) d( c) c( g)\)
+		\shape #'((0 . 0.3)(0 . 0.6)(0 . 0.6)(0 . 0.3)) PhrasingSlur e8\pp\(( d) d( c) c( g)\)
 		b( fis fis cis! fis b,)
 % Bars 116 to 120
 		fis'( fis, fis' fis, fis' fis,)
 		gis4( a\< b
 		c d dis
-		e\> eis fis)
+		e\! eis\> fis)\!
 		b\pp r r
 % Bars 121 to 125
 		R2.
@@ -176,7 +172,7 @@ musicViolinIMvtI = \relative c'' {
 		aes-. bes-. ces4\!-. ces8-. c-.
 		des2.:16_\mfcresc
 		cis!: \mark \default
-		fis!8-.\f ais,,( b cis) b4->
+		fis!8-.\f\noBeam ais,,( b cis) b4->
 % Bars 141 to 145
 		fis'8-. ais,( b cis) b4->
 		fis'8 ais,( cis fis) g-.[\< ais,(
@@ -191,7 +187,7 @@ musicViolinIMvtI = \relative c'' {
 		g'8( e) fis-. g-. b,4
 % Bars 151 to 155
 		a'8( fis) g-. a-. b,4
-		c'4-^_\ffmarc c-^ a8-^ b-^
+		\markEO #'(0 . 2) c'4-^_\ffmarc c-^ a8-^ b-^
 		c2.-^
 		c4-^ c-^ a8-^ b-^
 		c2.:16-^
@@ -218,7 +214,7 @@ musicViolinIMvtI = \relative c'' {
 		
 		
 		
-		r4 r \tuplet 3/2 4 {b8(\pp cis b}
+		r4 r \tuplet 3/2 4 {b8(-\offset X-offset -1 \pp cis b}
 % Bars 176 to 180
 		b'2.)~
 	}
@@ -248,7 +244,7 @@ musicViolinIMvtI = \relative c'' {
 	fis2.~
 	fis~
 	fis8 cis fis4 cis8 fis,)
-	b( fis' b2~
+	\shape #'((0 . -2.5)(-0.5 . 1)(0 . 0.6)(0 . 0)) Slur b( fis' b2~
 % Bars 186 to 190
 	b2.~
 	b~
@@ -264,10 +260,8 @@ musicViolinIMvtI = \relative c'' {
 % Bars 196 to 200
 	
 	
-	\cueDuring #"cueVoiceViolinIMvtI" #DOWN {
-		\ni R2.
-		R \no
-	}
+	\ni \voiceOne R2.
+	R \no \oneVoice 
 	b,4.(\pp b8 b4~
 % Bars 201 to 205
 	b d fis!8 g)
@@ -333,16 +327,14 @@ musicViolinIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceViolinIMvtI" #UP {
-		\ni R2.
-		R
+	\ni \voiceTwo \mmrPos #-6 R2.
+	R
 % Bars 261 to 265
-		R
-		R
-		R
-		R \mark \default
-		R2. \no
-	}
+	R
+	R
+	\mmrPos #-6 R 
+	R \mark \default
+	R2. \no \oneVoice
 % Bars 266 to 270
 	b'8-.\f fis16( g fis8) b,-. b-. b'-.
 	b4 r r
@@ -375,9 +367,9 @@ musicViolinIMvtI = \relative c'' {
 	f,[( g aes]) f'( g aes)
 % Bars 291 to 295
 	aes'4.:16\fz f8:16_\sempreff g: aes:
-	f: g: aes: f,: g: aes:
-	f: g: aes: f,: g: aes:
-	f: g: aes: f: g: aes:
+	f:[ g: aes:] f,: g: aes:
+	f:[ g: aes:] f,: g: aes:
+	f:[ g: aes:] f: g: aes:
 	f: g: aes8\noBeam r r4
 % Bars 296 to 300
 	r f->-._\ffrinforz^\pesante g->-.
@@ -410,8 +402,8 @@ musicViolinIMvtI = \relative c'' {
 	r4 r a'(\pp
 	d4.) d8-- d4--
 % Bars 321 to 325
-	d(\< e fis)
-	a2(\fz\> g8 fis)
+	d(\< e fis)\!
+	a2(\fz\> g8 fis)\!
 	e2\! r4 
 	R2.*6
 % Bars 326 to 330
@@ -422,12 +414,12 @@ musicViolinIMvtI = \relative c'' {
 	r4 r d(\pp 
 % Bars 331 to 335
 	d'2.)~\<
-	d
+	d\!
 	dis\fdimD
 	e4( g2~\p\>
 	g2.
 % Bars 336 to 340
-	\tempoXoffset #2.5 fis8)\pp r r4 r
+	fis8)\pp r r4 r
 	d,2.\fz(
 	cis8) r d4(\< dis)\!
 	gis8-! fis-! eis-! eis-! fis-! gis-! 
@@ -457,7 +449,7 @@ musicViolinIMvtI = \relative c'' {
 	a a2\fz \mark \default
 	a4-. r d,,(\p\<
 % Bars 361 to 365
-	dis2\> a4
+	dis2\! a4\>
 	gis4.\!) r8 r4
 	R2.
 	r4 r8 fis'-.\pp g-. a-.
@@ -469,7 +461,7 @@ musicViolinIMvtI = \relative c'' {
 	g,2.\pp(
 	f
 % Bars 371 to 375
-	bes
+	\once \stemUp bes
 	a)
 	d(
 	cis!4 a8) cis(-. d-. e-.)
@@ -495,7 +487,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 391 to 395
 	<d, bes' f'>\arpeggio r8 a''-. bes-. c-.
 	d2\f-^ c8( bes)
-	a4 r8 c-.\< d-. e-.
+	a4 r8 c-.\< d-. e-.\!
 	f2\fz e8( d)
 	cis!-. a16( b! a8) e-. e-. d-.
 % Bars 396 to 400
@@ -518,7 +510,7 @@ musicViolinIMvtI = \relative c'' {
 	b4( c\< d
 % Bars 411 to 415
 	ees f fis
-	g\> gis a)
+	g\! gis\> a)\!
 	d\pp r r
 	R2.*3
 	
@@ -537,12 +529,12 @@ musicViolinIMvtI = \relative c'' {
 % Bars 426 to 430
 	dis2 cis4)\!
 	b8( dis fis4\> e--
-	dis2 cis4)
+	dis2 cis4)\!
 	b8-.\p d!-. fis4-.\< gis8-. ais-.
-	b-. cis-. d!4-> d8-. dis-.
+	b-. cis-. d!4-> d8-. dis-.\!
 % Bars 431 to 435
 	e2.:16\mf\<
-	e:
+	e:\!
 	a8-.\f cis,,( d e) d4->
 	a'8-. cis,( d e) d4->
 	a'8-^ cis,(\< e a) bes-^([ cis, 
@@ -575,7 +567,7 @@ musicViolinIMvtI = \relative c'' {
 	fis2( e4)
 	d8( fis a4 g)
 	fis2( e4)
-	\tempoOSP #100 d8( fis g4 fis)
+	d8( fis g4 fis)
 % Bars 461 to 465
 	e8( gis a4 gis)
 	cis2.:16
@@ -653,7 +645,7 @@ musicViolinIMvtI = \relative c'' {
 	a2: g8: fis:
 	a2: g8: fis:
 	a2(\> g8 fis)
-	fis2( e8 d)
+	fis2( e8 d)\!
 % Bars 526 to 530
 	d2\p a4~
 	a2.~_\dimmarkup
@@ -662,9 +654,9 @@ musicViolinIMvtI = \relative c'' {
 	
 % Bars 531 to 535
 	
-	r4 cis,,4(\pp d8 e
+	r4 cis,,4(-\offset X-offset -2 \pp d8 e
 	fis2~ fis8) r
-	r4 cis(_\dimmarkup d8 e
+	r4 cis(-\offset X-offset -2 _\dimmarkup d8 e
 	fis2~ fis8) r
 % Bars 536 to 540
 	r4 cis( d8 e
@@ -675,7 +667,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 541 to 545
 	R2.*2
 	
-	\tempoXoffset #1.5 d''2\ff-^ cis4-.
+	d''2\ff-^ cis4-.
 	a8-. fis-. g-. a-. e4
 	d8-. fis-. a4 <a, e' cis'>->
 % Bar 546
