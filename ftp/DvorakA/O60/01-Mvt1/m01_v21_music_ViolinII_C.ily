@@ -168,7 +168,7 @@ musicViolinIIMvtI = \relative c' {
 		c( ees aes ees f aes
 		ees g ees g des ees)
 % Bars 136 to 140
-		c16\pp\< ees ees ees ees4:16 ees':
+		ces16\pp\< ees ees ees ees4:16 ees':
 		ees2.:
 		des:-\tweak X-offset #-1.5 _\mfcrescD
 		cis!: \mark \default
@@ -428,7 +428,7 @@ musicViolinIIMvtI = \relative c' {
 	d( cis!8 b a g)
 	fis-> g-. a-. a-. g-. fis-.
 	g4->-. b,-.-> r
-	f'-. c'8-. c-. b-. a-.
+	fis'-. c'8-. c-. b-. a-.
 	b4-.-> d,-.-> r
 % Bars 346 to 350
 	c'4_\fsempre-> \acciaccatura b8 f' f-. e-. d-.

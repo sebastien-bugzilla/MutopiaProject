@@ -36,7 +36,7 @@ musicViolinIIMvtII = \relative c' {
 	r16 <aes d>8\pp q16 r q8 q16
 	r q8\< q16\! r q8 q16
 	r <g d'>8\p q16_\dimmarkup r q8 q16
-	r b8\pp b16 r b8 b16
+	r b8-\offset X-offset 0.5 \pp b16 r b8 b16
 	r c8 c16 r c8 c16
 % Bars 26 to 30
 	r4  r16 c(\pp e g
@@ -69,8 +69,8 @@ musicViolinIIMvtII = \relative c' {
 	
 	
 % Bars 51 to 55
-	r8 <g bes>\p\< q q 
-	\hairpinMinLength #6.5 <e a>2\f\>
+	r8 <g bes>\p\< q q\!
+	\hairpinShorten #'(-0.4 . -0.3) \after 2*7/8 \! <e a>2\f\>
 	<g bes>8\p r r4
 	R2*4
 	
@@ -94,21 +94,19 @@ musicViolinIIMvtII = \relative c' {
 % Bars 76 to 80
 	
 	
-	\cueDuring #"cueVoiceViolinIIMvtII" #UP {
-		\ni R2
-		R \no
-	}
-	bes,16(-\tweak X-offset #1 \p f'8) f16-. d(\pp f8) f16~
+	\ni \voiceTwo R2
+	R \no \oneVoice 
+	bes,16(\p f'8) f16-. d(\pp f8) f16~
 % Bars 81 to 85
 	f8 r r4
 	d16(\pp f8) f16-. c( c'8) c16-.
 	g,( g' bes a) a(\< g) g( e)\!
-	f8\f bes4.(\fz
-	bes_\dimmarkup a8
+	f8\f \stemUp bes4.~\fz
+	bes(_\dimmarkup \stemNeutral a8
 % Bars 86 to 90
 	d,)\p r r4
 	R2*2
-	\markXoffset #-0.6 \mark \default
+	\mark \default
 	r16 <bes d>8\pp q16 r q8 q16
 	r q8 q16 r q8 q16
 % Bars 91 to 95
@@ -116,10 +114,10 @@ musicViolinIIMvtII = \relative c' {
 	r q8 q16 r q8 q16
 	r <g e'>8 q16 r q8 q16
 	r q8 q16 r q8 q16
-	<bes f'>\mf <bes d> q q <c ees> q q q
+	<bes f'>\mf <bes d> q q <c ees>4:16
 % Bars 96 to 100
-	<bes d> q q_\crescmarkup q <c ees> q q q
-	<bes d> q q q <c ees> q q q
+	<bes d>4:16_\crescmarkup <c ees>:
+	<bes d>: <c ees>: 
 	<bes d>8\f r16 f'-. bes-. f\<-. bes-. c-.\!
 	d8\ff-> c-> bes-> a->
 	bes r <g bes> r
@@ -127,9 +125,8 @@ musicViolinIIMvtII = \relative c' {
 	<f d'> r r4
 	<c ees a>8 r r4
 	R2
-	\cueDuring #"cueVoiceViolinIIMvtII" #UP {
-		\ni R2 \no
-	r8 f-.->-\tweak X-offset #-3.3 \ff_[ } c-.-> f]->~
+	\ni \voiceTwo R2 \no
+	r8 \voiceOne f_._>-\tweak X-offset #-3.3 \ff[ c_._> f]_>~ \oneVoice 
 % Bars 106 to 110
 	f( ees) r4
 	r8 f'->-. bes,->-. bes'->~
@@ -137,7 +134,7 @@ musicViolinIIMvtII = \relative c' {
 	a!) fis-.-> b,->-. b'->~
 	b fis-.-> b,-.-> b'->~
 % Bars 111 to 115
-	b gis-.-> cis,-.-> b'->~ \markYoffset #5 \mark \default
+	b gis-.-> cis,-.-> b'->~ \markWhiteout \mark \default
 	b r r4
 	R2
 	r8 f,4\pp f8~
@@ -149,7 +146,7 @@ musicViolinIIMvtII = \relative c' {
 	fis8) r r4
 	R2
 % Bars 121 to 125
-	des16(\pp bes! g! des'~ des bes ees,! bes'~
+	\stemUp des16(\pp bes! g! des'~ \stemNeutral des bes ees,! bes'~
 	bes des, bes des~ des bes g ees')
 	R2*5
 % Bars 126 to 130
@@ -157,7 +154,7 @@ musicViolinIIMvtII = \relative c' {
 	
 	r4 r8. a16\f~
 	a fis-. d-. c'( <d, c')> q-. q-. q~
-	q32\<[ q q q]   q[ q q q]  q[ q q q]  q[ q q q]\!
+	q32\<[ q q q]   q8:32 q: q:\!
 % Bars 131 to 135
 	q16\ff r r8 r4 
 	r8 a'4.\pp~
@@ -173,18 +170,18 @@ musicViolinIIMvtII = \relative c' {
 % Bars 141 to 145
 	ees( c16. bes32 a8 d)
 	d4( ees\<
-	d4.) g8
-	f4(\mf\< bes)~
-	bes8\> a( g f)
+	d4.) g8\!
+	\hairpinShorten #'(-0.5 . -1) f4(\mf\< bes)~\!
+	bes8\> a( g f)\!
 % Bars 146 to 150
 	f\p(~ f32 g f) ees-. ees4(
 	d)\pp r
 	R2*2
 	
-	r8 bes(\p\< c cis)
+	r8 \hairpinShorten #'(0 . 0.5) bes(\p\< c cis)
 % Bars 151 to 155
-	d4\!( f)_\mfz~
-	f8\> \shape #'((-0.5 . -1.2)(0 . 0)(0 . 0)(0.5 . -1.2)) Slur ees16( d \acciaccatura f8 ees8. d16)\p
+	d4\!( f)-\offset X-offset -1 _\mfz~
+	\hairpinShorten #'(0.5 . 0) f8\> \shape #'((-0.5 . -1.2)(0 . 0)(0 . 0)(0.5 . -1.2)) Slur ees16( d \acciaccatura f8 ees8. d16)\p
 	d8 r r4
 	bes,2\fp(
 	a4.)\> c8(\!
@@ -200,16 +197,16 @@ musicViolinIIMvtII = \relative c' {
 	
 	
 	\mark \default
-	\tempoXoffset #0.5 R2
+	R2
 	r8 bes(\p\< c cis\!
 % Bars 171 to 175
 	d)\f r r4
 	r8 bes(\p\< c cis\!
 	d\f) r r4
 	r8 bes'(\p\< c cis\!
-	d) d(\mf\< ees e\!
+	d)\noBeam d(\mf\< ees e\!
 % Bars 176 to 180
-	f) bes,16\f bes( c) c( cis) cis(
+	f)\noBeam bes,16\f bes( c) c( cis) cis(
 	d) c!->\< b-> b-> c-> d-> ees-> e->\!
 	<a, a'>8-.\ff r <d, b' g'>-.-^ r
 	<g bes! e>-.-^ r r4

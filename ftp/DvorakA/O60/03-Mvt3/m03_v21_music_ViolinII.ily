@@ -24,13 +24,13 @@ musicViolinIIMvtIII = \relative c' {
 % Bars 11 to 15
 		d4-.\fz c-. c-.
 		d-.\fz c-. c-.
-		a4( bes8) r a4( 
-		bes8) r a4( bes8) r
+		\stemUp a4( bes8) r a4( 
+		bes8) r a4( bes8) r \stemNeutral
 		a4-. cis-. cis-.
 % Bars 16 to 20
 		d-. f,-. f-.
-		a4( bes8) r a4( 
-		bes8) r a4( bes8) r
+		\stemUp a4( bes8) r a4( 
+		bes8) r a4( bes8) r \stemNeutral
 		a4-. cis-. cis-.
 		d-. f,-. f-.
 % Bars 21 to 25
@@ -67,7 +67,7 @@ musicViolinIIMvtIII = \relative c' {
 		c c2
 % Bars 46 to 50
 		a4( bes) a(\<
-		bes)\! bes(\> c)\!
+		bes)\! bes(\> c)\! 
 		c2 c4~
 		c c2
 		a4( bes)\< a(\!
@@ -174,13 +174,13 @@ musicViolinIIMvtIII = \relative c' {
 		<d f>4-> <c f>-. q-. 
 		<d f>4-> <c f>-. q-. 
 % Bars 136 to 140
-		a4(\fz bes) a(\fz
-		bes) a(\fz bes)
+		\stemUp a4(\fz bes) a(\fz
+		bes) a(\fz bes) \stemNeutral
 		a-. cis-. a-.
 		a-. a-. a-.
-		a(\fz bes) a(\fz
+		\stemUp a(\fz bes) a(\fz
 % Bars 141 to 145
-		bes) a(\fz bes)
+		bes) a(\fz bes) \stemNeutral
 		a-. cis-. a-.
 		a-. a-. a-.
 		a-. a2->
@@ -201,29 +201,27 @@ musicViolinIIMvtIII = \relative c' {
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \stopMeasureCount \bar ".|:-||" \key d \major
+	q \stopMeasureCount \attaccatrioDown \bar ".|:-||" \key d \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio fis!4\pp r r
+		\time 3/4 \trioPart fis!4\pp r r
 		R2.*5
 % Bars 156 to 160
 		
 		
 		
-		\mmrLength #12 R2.*4
+		\mmrLength #11 R2.*4
 		
 % Bars 161 to 165
 		
 		
-		\mmrLength #12 R2.*4
+		\mmrLength #11 R2.*4
 		
 		
 % Bars 166 to 170
 		
-		\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
-			\ni R2.
-			R \no
-		}
-		<a, fis' d'>4^\pizz\fz\arpeggio r r
+		\ni \voiceTwo R2.
+		R \no \oneVoice 
+		<a, fis' d'>4-\offset X-offset -5 ^\pizz\fz\arpeggio r r
 		q\arpeggio\> r r
 % Bars 171 to 175
 		q\!\arpeggio r r
@@ -233,10 +231,8 @@ musicViolinIIMvtIII = \relative c' {
 	
 % Bars 181 to 185
 		
-		\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
-			\ni \clef bass R2.
-			\clef alto R \no \clef treble
-		}
+		\ni \clef bass \mmrPos #-6 R2.
+		\clef alto \mmrPos #-6 R \no \clef treble
 		g'4\p^\pizz bes a
 		g r fis!
 % Bars 186 to 190
@@ -279,13 +275,11 @@ musicViolinIIMvtIII = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
-		\ni R2.
+	\ni \voiceTwo R2.
 % Bars 226 to 230
-		R
-		R
-		R \no
-	}
+	R
+	R
+	R \no \oneVoice 
 	fis2.\pp(~
 	fis
 % Bars 231 to 235
@@ -331,7 +325,7 @@ musicViolinIIMvtIII = \relative c' {
 	e d( a
 	e2_\dimmarkup fis4)
 % Bars 266 to 270
-	g( a b 
+	g( a \once \stemUp b 
 	a e g)
 	fis\pp r r
 	R2.*15
@@ -358,13 +352,13 @@ musicViolinIIMvtIII = \relative c' {
 	d4-.\fz c-. c-.
 	d-.\fz c-. c-.
 % Bars 296 to 300
-	a4( bes8) r a4(
-	bes8) r a4( bes8) r
+	\stemUp a4( bes8) r a4(
+	bes8) r a4( bes8) r \stemNeutral
 	a4-. cis-. cis-.
 	d-. f,-. f-.
-	a4( bes8) r a4(
+	\stemUp a4( bes8) r a4(
 % Bars 301 to 305
-	bes8) r a4( bes8) r
+	bes8) r a4( bes8) r \stemNeutral
 	a4-. cis-. cis-.
 	d-. f,-. f-.
 	a-. a,-. a-.
@@ -505,13 +499,13 @@ musicViolinIIMvtIII = \relative c' {
 	q q2
 	<d f>4-> <c f>-. q-.
 	<d f>4-> <c f>-. q-.
-	a4(\fz bes) a(\fz
-	bes) a(\fz bes)
+	\stemUp a4(\fz bes) a(\fz
+	bes) a(\fz bes) \stemNeutral
 % Bars 421 to 425
 	a-. cis-. a-.
 	a-. a-. a-.
-	a(\fz bes) a(\fz
-	bes) a(\fz bes)
+	\stemUp a(\fz bes) a(\fz
+	bes) a(\fz bes) \stemNeutral
 	a-. cis-. a-.
 % Bars 426 to 430
 	a-. a-. a-.

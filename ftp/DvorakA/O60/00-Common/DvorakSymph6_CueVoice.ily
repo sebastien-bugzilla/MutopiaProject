@@ -1117,34 +1117,34 @@ cueVoiceViolinIIMvtI = \relative c {
 	% bar 1 - 2
 	<d fis a>8^\markup {Br.}\pp q4 q q8
 	q8 q4 q q8
-	R2.*176
+	s2.*176
 	% bar 179_1 - 180_1
-	d'''2(-\tweak X-offset #-4 ^\markup {Viol.I.} cis4
-	a8[ fis g a]) r4
-	R2.*10
+	d'''2(-\tweak X-offset #-5 ^\markup {Viol.I.} cis4
+	a8[ fis g a]) s4
+	s2.*10
 	% bar 177_2
-	b,8(_\markup {Viol.I.} d fis2)
+	b,8(_\markup {Viol.I.} d fis2)\laissezVibrer
 }
 cueVoiceViolinIIMvtII = \relative c {
-	R2*77
+	s2*77
 	% bar 78 - 79
-	f''8-\tweak X-offset #-4 ^\markup {Viol.I} f16_( g) g_( a) a_( c)
-	bes4_( c)
-	R2*24
+	f''8-\tweak X-offset #-4 ^\markup {Viol.I} f16( g) g( a) a( c)
+	bes4( c)
+	s2*24
 	% bar 104 - 105
-	r8 f,-\tweak X-offset #-4 ^\markup {Viol.I} des ges~
-	ges f r4
+	\voiceOne r8 f,-\tweak X-offset #-4 ^\markup {Viol.I} des ges~
+	ges f \oneVoice s4
 }
 cueVoiceViolinIIMvtIII = \relative c {
-	R2.*167
+	s2.*167
 	% bar 167 - 168
 	g'''4(^\markup {Hoboe} a8 fis g4
 	b2 a4)
-	R2.*13
+	s2.*13
 	% bar 182 - 183
 	bes,,,4^\markup {Vcll.}^\pizz e g
 	bes^\markup {Bratsche} d e
-	R2.*41
+	s2.*41
 	% bar 225 - 228
 	fis'4(^\markup {Viol.I} g8 e fis4
 	a b8 gis a4
@@ -1152,8 +1152,8 @@ cueVoiceViolinIIMvtIII = \relative c {
 	d e8 cis d4)
 }
 cueVoiceViolinIIMvtIV = \relative c {
-	\partial 4 r4 
-	R1*313
+	\partial 4 s4 
+	s1*313
 	% bar 314 - 317
 	r2 r4 g''''(-\tweak X-offset #-3 ^\markup {Fl.}
 	e d cis b
