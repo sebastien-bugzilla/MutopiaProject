@@ -287,14 +287,14 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(floteI floteII oboeI oboeII klarinetteI  fagottI 
 		fagottII hornII  hornIV trompeteI trompeteII posauneI 
-		   pauken  violinII bratsche violoncello 
+		   pauken  violinII  violoncello 
 		kontrabass bassi) {
 		\tempo \markup { \medium \italic "un poco animato." }
 	}
 	\tag #'(hornIII) {
 		\tempo "Un poco animato."
 	}
-	\tag #'(klarinetteII hornI posauneII posauneIII tuba) {
+	\tag #'(klarinetteII hornI posauneII posauneIII tuba bratsche) {
 		\tempo \markup { 
 			\medium \italic \column {
 				\lower #1.5 "un poco" "animato."
@@ -588,7 +588,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(oboeI hornI hornIII hornIV violinII) {
+	\tag #'(oboeI hornI hornIII hornIV violinII bratsche) {
 		\tempo "Poco più animato."
 	}
 	\tag #'(trompeteI  pauken fagottII ) {
@@ -599,7 +599,7 @@ tempiPartMvtII = {
 		}
 	}
 	\tag #'(oboeII klarinetteI klarinetteII fagottI 
-		hornII   violinI  bratsche violoncello kontrabass 
+		hornII   violinI   violoncello kontrabass 
 		bassi) {
 		\tempo \markup { 
 			\medium \italic "poco più animato"
@@ -697,7 +697,7 @@ tempiPartMvtIII = {
 		}
 	}
 	\tag #'(oboeII fagottI fagottII hornI hornII hornIV trompeteI trompeteII 
-		pauken violinI violinII) {
+		pauken violinI violinII bratsche) {
 		\tempo \markup {
 			\column {
 				\lower #1.5 \line {
@@ -711,7 +711,7 @@ tempiPartMvtIII = {
 			}
 		}
 	}
-	\tag #'(hornIII    bratsche violoncello bassi) {
+	\tag #'(hornIII     violoncello bassi) {
 		\tempo \markup {
 			\concat {
 					"Poco meno mosso. (M.M. "
@@ -828,7 +828,7 @@ tempiPartMvtIII = {
 		}
 	}
 	\tag #'(oboeI oboeII klarinetteI fagottI fagottII hornIV  violinII 
-		bratsche) { 
+		) { 
 		\tempo \markup {
 			\medium \italic "poco a poco stringendo"
 		}
@@ -839,6 +839,14 @@ tempiPartMvtIII = {
 		}
 	}
 	\tag #'(hornI trompeteI trompeteII violinI violoncello kontrabass bassi) {
+		\tempo \markup {
+			\medium \italic \column {
+				\lower #1 "poco a poco" "stringendo"
+			}
+		}
+	}
+	\tag #'(bratsche) {
+		\tempoXoffset #-2
 		\tempo \markup {
 			\medium \italic \column {
 				\lower #1 "poco a poco" "stringendo"

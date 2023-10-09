@@ -49,33 +49,18 @@ musicBratscheMvtIII = \relative c {
 % Bars 26 to 30
 		c-. g8(\< fis g a\!
 		bes a c\> bes a g)\!
-		<<{
-			a4( c) a(
-			c) a( c)
-		} \\ {
-			f,!( a) f(
-			a) f( a)
-		}>>
+		<f a>4( <a c>) <f a>(
+		<a c>) <f a>( <a c>)
 		c4-. g8(\< fis g a\!
 % Bars 31 to 35
 		bes a c\> bes a g)\!
-		<<{
-			f!4( a) f(
-			a) f( a)
-		} \\ {
-			d,( f) d(
-			f) d( f)
-		}>>
+		<d f>4( <f a>) <d f>(
+		<f a>) <d f>( <f a>) 
 		a4-. e8(\< dis e f\!
 		g fis a\> g f e)\!
 % Bars 36 to 40
-		<<{
-			fis4( a) fis(
-			a) fis!( a)
-		} \\ {
-			d,( fis!) d(
-			fis) d( fis)
-		}>>
+		<d fis>4( <fis! a>) <d fis>(
+		<fis a>) <d fis!>( <fis a>)
 		a4-. e8(\< dis e fis\!
 		g fis a\>  g fis e)\!
 		d( e f! g a bes!
@@ -216,30 +201,30 @@ musicBratscheMvtIII = \relative c {
 		}
 	}
 	<d, a'>
-	q
+	q\!
 	q\p
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \bar ".|:-||" \key d \major
+	q \attaccatrio \bar ".|:-||" \key d \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio d'4\pp r r
+		\time 3/4 \trioPart d'4\pp r r
 		R2.*5
 % Bars 156 to 160
 		
 		
 		
-		\mmrLength #12 R2.*4
+		\mmrLength #11 R2.*4
 		
 % Bars 161 to 165
 		
 		
-		\mmrLength #12 R2.*6
+		\mmrLength #11 R2.*6
 % Bars 166 to 170
 		
 		
 		
-		<d, a' fis'>4\fz\arpeggio^\pizz r r
+		<d, a' fis'>4\fz\arpeggio-\offset X-offset -4.5 ^\pizz r r
 		q\>\arpeggio r r
 % Bars 171 to 175
 		q\arpeggio\! r r
@@ -249,21 +234,19 @@ musicBratscheMvtIII = \relative c {
 	
 % Bars 181 to 185
 		
-		\cueDuring #"cueVoiceBratscheMvtIII" #UP {
-			\ni \clef bass R2. \no \clef alto
-		}
+		\ni \clef bass \voiceTwo R2. \no \oneVoice \clef alto
 		bes'4^\pizz d e
 		R2.
-		\startMeasureCount a8\p^\arco a a a a a
+		\startMeasureCount a8\p-\offset X-offset -0.5 ^\arco a a a a a
 % Bars 186 to 190
-		a a a a a a 
-		a a a a a a 
-		a a a a a a 
-		a_\dimmarkup a a a a a 
-		a a a a a a 
+		a2.:8
+		a:
+		a:
+		a:_\dimmarkup 
+		a: 
 % Bars 191 to 195
-		a a a a a a 
-		a a a a a a  \stopMeasureCount
+		a:
+		a: \stopMeasureCount
 		a4\pp r r
 		R2.*4
 		
@@ -302,10 +285,8 @@ musicBratscheMvtIII = \relative c {
 	
 	
 	
-	\cueDuring #"cueVoiceBratscheMvtIII" #UP {
-		\ni \clef bass R2.
-		R \no \clef alto
-	}
+	\ni \clef bass \voiceTwo R2.
+	R \no \oneVoice \clef alto
 % Bars 241 to 245
 	d,4(\pp fis b
 	a2.
@@ -351,14 +332,14 @@ musicBratscheMvtIII = \relative c {
 	r8 d d4 r8 d
 	d4 r r
 % Bars 281 to 285
-	R2.*3
+	\mmrLength #11 \mmrnDown R2.*3
 	
 	
-	\acciaccatura a'8( a'2\p) d,4_\crescmarkup~
+	\acciaccatura a'8( a'2\p) d,4-\offset X-offset -1.5 _\crescmarkup~
 	d\< a2
 % Bars 286 to 290
 	d2 a4~
-	a \tuplet 3/2 4 {d,8\f\<( f a d f a\!)} \bar "||" \key d \minor
+	a\! \tuplet 3/2 4 {d,8\f\<( f a d f a\!)} \bar "||" \key d \minor
 	d,4(->\f a'8) r d,4(->
 	a'8) r d,4(-> a'8) r
 	c!4-.\fz a-. a-.
@@ -391,33 +372,18 @@ musicBratscheMvtIII = \relative c {
 	}>>
 	c-. g8(\< fis g a\!
 	bes a c\> bes a g)\!
-% Bars 311 to 314
-	<<{
-		a4( c) a(
-		c) a( c)
-	} \\ {
-		f,!( a) f(
-		a) f( a)
-	}>>
+% Bars 311 to 315
+	<f a>4( <a c>) <f a>( 
+	<a c>) <f a>( <a c>) 
 	c4-. g8(\< fis g a\!
 	bes a c\> bes a g)\!
-% Bars 315 to 320
-	<<{
-		f!4( a) f(
-		a) f( a)
-	} \\ {
-		d,( f) d(
-		f) d( f)
-	}>>
+	<d f!>4( <f a>) <d f>( 
+% Bars 316 to 320
+	<f a>) <d f>( <f a>) 
 	a4-. e8(\< dis e f\!
 	g fis a\> g f e)\!
-	<<{
-		fis4( a) fis(
-		a) fis!( a)
-	} \\ {
-		d,( fis!) d(
-		fis) d( fis)
-	}>>
+	<d fis>4( <fis! a>) <d fis>( 
+	<fis a>) <d fis!>( <fis a>) 
 % Bars 321 to 325
 	a4-. e8(\< dis e fis\!
 	g fis a\>  g fis e)\!

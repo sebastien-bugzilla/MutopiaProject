@@ -53,7 +53,7 @@ musicBratscheMvtIV = \relative c' {
 	cis bes g) g'8-> g
 % Bars 36 to 40
 	e-> e cis-> cis a-> a g-> g
-	e-> e cis-> cis a-> a a'-> a \mark \default
+	e-> e cis-> cis a-> a a'-> a \mark \default 
 	a_\ffgrandioso a, cis b a g' fis e
 	d e fis e d cis b cis
 	a g fis g a b cis b
@@ -91,7 +91,7 @@ musicBratscheMvtIV = \relative c' {
 	e,8_\pdim d' cis b r2
 	R1
 	e,8(\pp d' cis b a gis fis' e) \mark \default
-	a,4(_\pdolce\< e' f\> d\!
+	a,4(_\pdolce\< e'\! f\> d\!
 	cis2 a_\dimmarkup)~
 % Bars 71 to 75
 	a1~
@@ -101,12 +101,12 @@ musicBratscheMvtIV = \relative c' {
 	r4 \tuplet 3/2 4 {fis8(\p gis a)} r4 \tuplet 3/2 4 {fis8( gis a)}
 % Bars 76 to 80
 	e4 r r2
-	b4(\p\< fis' g!\> e\!)
+	b4(\p\< fis'\! g!\> e\!)
 	d \tuplet 3/2 4 {b8( cis d)} r4 \tuplet 3/2 4 {b8( cis d)}
 	r4 \tuplet 3/2 4 {cis8( d e)} r4 \tuplet 3/2 4 {cis8( d e)}
 	d4 r r2
 % Bars 81 to 85
-	<e, gis>4\fp \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	<e, gis>4\fp \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
@@ -125,7 +125,7 @@ musicBratscheMvtIV = \relative c' {
 	e4\fz a-. fis\fz d-.
 % Bars 96 to 100
 	cis\fz a-. e'\fz gis,-.
-	<e gis>4\fp \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	<e gis>4\fp \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
@@ -175,7 +175,7 @@ musicBratscheMvtIV = \relative c' {
 	r e-. d-. b-. \clef alto
 	<e, cis'>4-. r <d b'>-. r
 	a2:16\fz a:\fz
-	a: cis4: a:
+	a: \once \stemUp cis4: a:
 	gis2: b4: gis:
 % Bars 141 to 145
 	cis2: a:
@@ -190,7 +190,7 @@ musicBratscheMvtIV = \relative c' {
 	<d fis!>4 r r2
 	<b g'>4 r r2
 % Bars 151 to 155
-	<ais fis'>4 r r cis(\p
+	<ais fis'>4 r r \once \stemUp cis(\p
 	\tuplet 3/2 4 {ais8 gis fis)} r4 r2
 	R1
 	b2(\pp cis)
@@ -198,7 +198,7 @@ musicBratscheMvtIV = \relative c' {
 % Bars 156 to 160
 	d2( e4 d8 cis)
 	d4\(( b) f'(\pp e8 d)\)
-	d4\(( c8 b) b4( a8 g)\)
+	\shape #'((0 . 1)(0 . -1.3)(0 . -1.3)(0 . 0)) PhrasingSlur d4\(( c8 b) b4( a8 g)\)
 	d1(~
 	d2 f)
 % Bars 161 to 165
@@ -236,7 +236,7 @@ musicBratscheMvtIV = \relative c' {
 	cis~
 	cis~
 	cis~
-	cis \stopMeasureCount \mark \default
+	cis \stopMeasureCount \markXoffset #0.2 \mark \default
 % Bars 191 to 195
 	d4-.\pp <fis a>-. d-. <g bes>-.
 	r <fis a>-. r q-.
@@ -455,7 +455,7 @@ musicBratscheMvtIV = \relative c' {
 	R1
 	a,8(\pp g' fis e d cis b' a) \mark \default
 % Bars 366 to 370
-	d,4(\< a' bes\> g\!
+	d,4(\< a'\! bes\> g\!
 	fis2 d)~
 	d1~
 	d4 r r2
@@ -464,7 +464,7 @@ musicBratscheMvtIV = \relative c' {
 	r4 \tuplet 3/2 4 {a8( b cis)} r4 \tuplet 3/2 4 {a8( b cis)}
 	r4 \tuplet 3/2 4 {b8( cis d)} r4 \tuplet 3/2 4 {b8( cis d)}
 	cis4 r r2
-	e,4(\p\< b' c\> a\!
+	e,4(\p\< b'\! c\> a\!
 	g) \tuplet 3/2 4 {e8(\pp fis g)} r4 \tuplet 3/2 4 {e8( fis g)}
 % Bars 376 to 380
 	r4 \tuplet 3/2 4 {fis8( g a)} r4 \tuplet 3/2 4 {fis8( g a)}
@@ -474,7 +474,7 @@ musicBratscheMvtIV = \relative c' {
 	q4 \tuplet 3/2 4 {q4.:8_\crescmarkup} q4 \tuplet 3/2 4 {q4.:8} 
 % Bars 381 to 385
 	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
-	<c d>4\mf \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
+	<c d>4-\offset X-offset -1 \mf \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
 	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
 	q4 \tuplet 3/2 4 {q4.:8-\tweak X-offset #0.9 _\crescmarkup} q4 \tuplet 3/2 4 {q4.:8} 
 	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8}
@@ -493,7 +493,7 @@ musicBratscheMvtIV = \relative c' {
 % Bars 396 to 400
 	q4 \tuplet 3/2 4 {q4.:8_\crescmarkup} q4 \tuplet 3/2 4 {q4.:8} 
 	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
-	<c d>4\mf \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
+	<c d>4-\offset X-offset -1 \mf \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
 	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
 	q4 \tuplet 3/2 4 {q4.:8-\tweak X-offset #0.9 _\crescmarkup} q4 \tuplet 3/2 4 {q4.:8} 
 % Bars 401 to 405
@@ -512,7 +512,7 @@ musicBratscheMvtIV = \relative c' {
 	R1*3
 	
 	
-	d,16(\mf\< e fis g a b cis d) d2:16\f
+	d,16(\mf\< e fis g a b cis d)\! d2:16\f
 	dis1:16->
 % Bars 416 to 420
 	dis2:16 e4: fis8: g:
@@ -657,7 +657,7 @@ musicBratscheMvtIV = \relative c' {
 	a-. a,-. a-. a'4:16\ff
 	a1:
 	a:
-	b:
+	\startMeasureCount b:
 % Bars 536 to 540
 	b:
 	b:
@@ -665,7 +665,7 @@ musicBratscheMvtIV = \relative c' {
 	b:
 	b:
 % Bars 541 to 545
-	b:
+	b: \stopMeasureCount
 	b2: cis:
 	<fis, a>1:\fff
 	q:

@@ -1164,19 +1164,19 @@ cueVoiceViolinIIMvtIV = \relative c {
 %#                 C U E   V O I C E   F O R   B R A T S C H E                 #
 %###############################################################################
 cueVoiceBratscheMvtI = \relative c {
-	R2.*179
+	s2.*179
 	% bar 180_1 - 181_1
-	r4 r a''8(^\markup {V.II.} fis
-	g a) r4 r
+	\voiceTwo r4 r a''8(^\markup {V.II.} fis
+	g a) s4 s \oneVoice 
 }
 cueVoiceBratscheMvtII = \relative c {
 %	no cue voice for mvt II
 }
 cueVoiceBratscheMvtIII = \relative c {
-	R2.*182
+	s2.*182
 	% bar 182
-	bes4^\pizz^\markup {Vcll.} e g
-	R2.*56
+	\voiceOne bes4^\pizz-\offset X-offset -3.5 ^\markup {Vcll.} e g \oneVoice 
+	s2.*56
 	% bar 239 - 240
 	e4(^\markup {Vcell.} fis g
 	fis cis e)

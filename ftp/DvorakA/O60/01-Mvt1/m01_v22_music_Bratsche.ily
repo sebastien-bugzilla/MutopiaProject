@@ -42,7 +42,7 @@ musicBratscheMvtI = \relative c {
 % Bars 21 to 25
 			b2.~
 			b
-			\tempoXoffset #2 fis'8
+			fis'8
 		} \\ {
 			d,8 d4 d d8
 			d d4 d d8
@@ -62,12 +62,12 @@ musicBratscheMvtI = \relative c {
 % Bars 16 to 20
 			q8 q4 q\! q8
 			a a4 a8 fis4\<~
-			fis2.
+			\after 2.*7/8 \! fis2.
 			a2\f g4
 			a2._\dimmarkup
 % Bars 21 to 25
 			g2.\p\>~
-			g
+			\after 2.*7/8 \! g
 			fis8\pp
 		}>> r r4 r
 		b2.\fz
@@ -111,11 +111,11 @@ musicBratscheMvtI = \relative c {
 			q:
 % Bars 56 to 60
 			<fis dis'>2: <g e'>8: <b fis'>:
-			e2.:
+			\once \shiftOnn <g e'>2.:
 			cis2: cis4:
-			d: fis2:
+			<fis, d'>: s2
 		} \\ {
-			<fis, a>2.:16_\ffgrandioso
+			<fis a>2.:16_\ffgrandioso
 			q:
 % Bars 51 to 55
 			\override Stem.length = #9.5 q:
@@ -125,9 +125,9 @@ musicBratscheMvtI = \relative c {
 			\hairpinShorten #'(1.5 . 0) q:\< \revert Stem.length
 % Bars 56 to 60
 			s2\fz s4
-			<g b>2.:16
+			\stemOffset #2 b2.:16
 			b2:\fz a8: g:
-			fis4: d'2:
+			s4 <d' fis>2:16
 		}>>
 		g8:16[ b,: d: g,:] g'8\<( a)
 % Bars 61 to 65
@@ -146,7 +146,7 @@ musicBratscheMvtI = \relative c {
 		g'[-> b, g b] a[-> b
 		g b] b[-> b g b]
 		cis->[ b g b] d->[ g,]
-		<<{dis'4} \\ {a->}>> r r
+		<<{dis'4->} \\ {a}>> r r
 		r b\p\<( c
 % Bars 76 to 80
 		d2.)\!
@@ -164,7 +164,7 @@ musicBratscheMvtI = \relative c {
 		fis r r
 		<<{ais,} \\ {e\pp}>> r r
 		<<{ais} \\ {e}>> r8 dis'-.\< e-. fis-.
-		g-. fis-. e-. d!-. cis-. fis-. 
+		g-. fis-. e-. d!-. cis-. fis-.\!
 		b,4\f r8 b( ais a)
 % Bars 91 to 95
 		a( gis) gis( g) fis( e)
@@ -179,7 +179,7 @@ musicBratscheMvtI = \relative c {
 		g8 r \tuplet 3/2 4 {g(\fz a g)} d-. e-.
 		<d fis>-. <e g>-. <fis a>4 r
 % Bars 101 to 105
-		r \tuplet 3/2 4 {d8\fz( e d)} g,-. gis-.
+		r \tuplet 3/2 4 {d8-\offset X-offset -0.5 \fz( e d)} g,-. gis-.
 		<ais cis>-.\f r r4 r
 		cis8-.\f r r4 r
 		<cis, fis>8-.\p r r4 r
@@ -192,15 +192,15 @@ musicBratscheMvtI = \relative c {
 		a~
 % Bars 111 to 115
 		a
-		g!2(\p c4
+		g!2(\p \once \stemUp c4
 		b g2)_\dimmarkup
 		c,2.\pp
 		fis~
 % Bars 116 to 120
 		fis
 		f~\<
-		f
-		e4(\> cis fis!)
+		f\!
+		e4(\> cis fis!)\!
 		b2\pp( cis4
 % Bars 121 to 125
 		dis2 e4)
@@ -213,10 +213,10 @@ musicBratscheMvtI = \relative c {
 		dis8( cis b2)~
 		b4 r r
 		R2.
-		aes8(\pp ees aes ees bes' ees,
+		aes8(\pp ees aes ees bes'[ ees,]
 % Bars 131 to 135
-		aes ees aes ees bes' ees,)
-		aes( ees aes ees aes_\crescmarkup f
+		aes ees aes ees bes'[ ees,)]
+		aes( ees aes ees aes[_\crescmarkup f]
 		g ees g ees g ees)
 		aes( ees c ees aes f
 		g ees g ees g ees)
@@ -228,8 +228,8 @@ musicBratscheMvtI = \relative c {
 		cis8-.\f ais( b cis) b4->
 % Bars 141 to 145
 		cis8-. ais( b cis) b4-.->
-		cis8-. ais( cis fis) g-.\<[ ais,(]
-		cis g') gis[-. cis,( e ais)]\!
+		cis8-. ais( cis fis) g-.\<[ ais,(
+		cis g')] gis[-. cis,( e ais)]\!
 		b-. r r4 e,(\fz
 		dis8) r r4 e(\fz
 % Bars 146 to 150
@@ -272,10 +272,9 @@ musicBratscheMvtI = \relative c {
 			R2.*3
 			
 			
-			\cueDuring #"cueVoiceBratscheMvtI" #DOWN {
-				\ni << R2. {s4 \clef treble s  s} >> \no
+			\ni \voiceOne << \tweak extra-offset #'(-1.5 . 0) R2. {s4 s \clef treble s} >> \no
 % Bars 181 to 185
-			r4 } \clef alto a8(\pp fis g a)
+			r4 \oneVoice \clef alto a8(\pp fis g a)
 			R2.*9
 % Bars 186 to 190
 		}
@@ -334,7 +333,7 @@ musicBratscheMvtI = \relative c {
 		gis2: b4:
 	} \\ {
 		gis2: fis8: eis:
-		eis2: gis4:
+		eis2: gis!4:
 	}>>
 	fis: a: c:
 % Bars 231 to 235
@@ -344,9 +343,9 @@ musicBratscheMvtI = \relative c {
 	g: bes: des:
 	g,: aes: bes:_\crescmarkup
 % Bars 236 to 240
-	<bes des>2: <aes c>8: <g bes>:
-	q2: <bes des>4:
-	<e,! gis>: <gis b!>: <b d!>:
+	<bes des>2: <aes c>8: <g bes!>:
+	q2: <bes! des>4:
+	<e,! gis>: <gis! b!>: <b! d!>:
 	<cis! e>4\f r8 cis-!_\marc d-! e-! 
 	gis,2-> f'4-.
 % Bars 241 to 245
@@ -431,11 +430,11 @@ musicBratscheMvtI = \relative c {
 		q:\fz
 		q4
 	}>> r r
-	r r8 f8:16_\sempreff g: aes:
+	r r8 f8:16-\offset X-offset -2 _\sempreff g: aes:
 	f: g: aes: f: g: aes:
 	f: g: aes8\noBeam r r4
 % Bars 296 to 300
-	r f->-._\ffrinforz g->-.
+	r f^>-.-\offset X-offset -3 _\ffrinforz g^>-.
 	aes->-. ces->-. bes->-.
 	aes->-. ces->-. bes->-.
 	aes->-. des->-. des->-.
@@ -457,7 +456,7 @@ musicBratscheMvtI = \relative c {
 	cis2.:
 	cis:
 	cis8: g!: e: cis: a: a': \mark \default
-	\tempoXoffset #1.1 \repeat tremolo 6 {fis,16(\fp\> a}
+	\repeat tremolo 6 {fis,16(\fp\> a}
 % Bars 316 to 320
 	\repeat tremolo 6 {fis\pp a}
 	\repeat tremolo 6 {fis a}
@@ -474,14 +473,14 @@ musicBratscheMvtI = \relative c {
 	\repeat tremolo 6 {g, d'}
 	\repeat tremolo 6 {g, d')}
 	\repeat tremolo 6 {g,(\< a}
-	\repeat tremolo 6 {g a)}
+	\repeat tremolo 6 {g a\!)}
 	\repeat tremolo 4 {a(\> c\!} fis,8 d')
 % Bars 331 to 335
 	c(\< d c d c d
 	c d c d c d)
 	a(_\fdimD b a b a b)
 	g(\p\> b d g, cis! g
-	b g cis g b g)
+	b g cis g b g)\!
 % Bars 336 to 340
 	ais\pp r r4 r
 	d2.\fz
@@ -514,7 +513,7 @@ musicBratscheMvtI = \relative c {
 	<a, dis>4-. r r
 % Bars 361 to 365
 	r b(\p\< c
-	d2\> b4)
+	d2\> b4)\!
 	bes2.\pp(
 	a)~
 	a~
@@ -573,7 +572,7 @@ musicBratscheMvtI = \relative c {
 	a
 	gis~\<
 % Bars 411 to 415
-	gis
+	gis\!
 	g!4(\> e a)
 	d2(\pp e4
 	fis2 g8 a
@@ -669,7 +668,7 @@ musicBratscheMvtI = \relative c {
 	g4: cis,: fis:
 	b,: e: a,:
 	<gis eis'>4. r8 r4
-	q4. r8 r4 \markXoffset #-0.3 \mark #11
+	q4. r8 r4 \mark #11
 	R2.
 % Bars 496 to 500
 	r4 d'8-.\ff b-. cis-. d-.
@@ -679,7 +678,7 @@ musicBratscheMvtI = \relative c {
 	d-.-> g-.-> g-.->
 % Bars 501 to 505
 	a-.-> fis-.-> a-.->
-	a-._\marcatosempre d,-. e-.
+	a-.^\marcatosempre d,-. e-.
 	fis-. d'-. g-.
 	fis-. d-. e-.
 	a,-. fis'-. a-.
@@ -706,10 +705,10 @@ musicBratscheMvtI = \relative c {
 	<fis a>2: <e g>8: <d fis>:
 	<fis a>2: <e g>8: <d fis>:
 	q16\> a a a <d, a'>2:16
-	q2.:
+	q2.:\!
 % Bars 526 to 530
 	q:\p
-	q:_\dimmarkup
+	q:^\dimmarkup
 	q:
 	q:
 	q4\pp r <e g>8( <d fis>)

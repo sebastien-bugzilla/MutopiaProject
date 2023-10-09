@@ -160,7 +160,7 @@ musicBratscheMvtII = \relative c {
 	r8 d4.
 	c16 r r e[( c']) r r g([
 	e']) r r c[( g')] r r e([
-	dis]) r r fis,[( d']) r r b[(\<
+	dis]) r r fis,[( dis']) r r b[(\<
 	fis']) r r dis[( a'])\! r r fis[(
 % Bars 121 to 125
 	g])\pp r r8 r4

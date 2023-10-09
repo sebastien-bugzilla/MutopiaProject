@@ -12,16 +12,16 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
-\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part11_Bratsche.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part11_Bratsche.ily"
 \include "./01-Mvt1/m01_v22_music_Bratsche.ily"
 \include "./02-Mvt2/m02_v22_music_Bratsche.ily"
 \include "./03-Mvt3/m03_v22_music_Bratsche.ily"
@@ -29,10 +29,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceBratscheMvtI" { \cueVoiceBratscheMvtI }
-%\addQuote "cueVoiceBratscheMvtII" { \cueVoiceBratscheMvtII }
-\addQuote "cueVoiceBratscheMvtIII" { \cueVoiceBratscheMvtIII }
-%\addQuote "cueVoiceBratscheMvtIV" { \cueVoiceBratscheMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -42,7 +38,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60"
+			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Bratsche"
 		}
 		instrument = \markup {
 			"Bratsche"
@@ -54,20 +50,19 @@
 				\formatBratscheMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameBratscheMvtI \musicBratscheMvtI
+				\keepWithTag #'(bratsche) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(bratsche) \tempiPartMvtI
+				\InCueContext \cueVoiceBratscheMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameBratscheMvtI \musicBratscheMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -79,20 +74,19 @@
 				\formatBratscheMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameBratscheMvtII \musicBratscheMvtII
+				\keepWithTag #'(bratsche) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(bratsche) \tempiPartMvtII
+				\InCueContext \cueVoiceBratscheMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameBratscheMvtII \musicBratscheMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -104,20 +98,19 @@
 				\formatBratscheMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameBratscheMvtIII \musicBratscheMvtIII
+				\keepWithTag #'(bratsche) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(bratsche) \tempiPartMvtIII
+				\InCueContext \cueVoiceBratscheMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameBratscheMvtIII \musicBratscheMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -129,20 +122,19 @@
 				\formatBratscheMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameBratscheMvtIV \musicBratscheMvtIV
+				\keepWithTag #'(bratsche) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(bratsche) \tempiPartMvtIV
+				\InCueContext \cueVoiceBratscheMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameBratscheMvtIV \musicBratscheMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #2.5 \bold {4. Finale.}
 			}
 		}
 		\layout {

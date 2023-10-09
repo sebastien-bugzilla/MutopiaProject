@@ -48,7 +48,7 @@ musicBratscheMvtII = \relative c {
 	f8 r r4
 	f8->\ff f->_\pesante g-> f16-. ees-.
 	d8-> d-> d-> d->
-	\acciaccatura d,8 <g d'>4-> \acciaccatura d8 <bes' g'>4-> \bar "||" \mark \default
+	\slashedGrace d,8 <g d'>4-> \slashedGrace d8 <bes' g'>4-> \bar "||" \mark \default
 	<d, a' fis'>4->\arpeggio r
 % Bars 36 to 40
 	R2*2
@@ -70,7 +70,7 @@ musicBratscheMvtII = \relative c {
 	
 % Bars 51 to 55
 	r8 <ees g>\p\< q q\!
-	<cis a'>2\f\>
+	\hairpinShorten #'(-0.3 . -0.3) \after 2*7/8 \! <cis a'>2\f\>
 	<d bes'>8\p r r4
 	R2*5
 % Bars 56 to 60
@@ -104,7 +104,7 @@ musicBratscheMvtII = \relative c {
 		g2
 		bes
 		bes
-		c\<
+		\after 2*7/8 \! c\<
 		bes4\> g8( a\!
 		bes)\p
 	}>> r r4
@@ -159,8 +159,8 @@ musicBratscheMvtII = \relative c {
 % Bars 116 to 120
 	r8 d4.
 	c16 r r e[( c']) r r g([
-	e']) r r c[( g')] r r e([
-	dis]) r r fis,[( d']) r r b[(\<
+	e']) r r c[( g')] r r e!([
+	dis]) r r fis,[( dis']) r r b[(\<
 	fis']) r r dis[( a'])\! r r fis[(
 % Bars 121 to 125
 	g])\pp r r8 r4
@@ -201,7 +201,7 @@ musicBratscheMvtII = \relative c {
 % Bars 151 to 155
 	r <f bes>8 q\! q q16
 	r <a c>8\> q16 r q8\! q16\p
-	<g bes>8 fis(\pp\< g \tuplet 3/2 4 {bes16 a g\!)}
+	<g bes>8 fis[(\pp\< g \tuplet 3/2 4 {bes16 a g\!)]}
 	f!4 d\fz~
 	d8(\> c4 a'8)(
 % Bars 156 to 160
@@ -211,7 +211,7 @@ musicBratscheMvtII = \relative c {
 	
 	
 % Bars 161 to 165
-	c'4.(\p\< a16 f~)\!
+	\once \stemUp c'4.(\p\< a16 f~)\!
 	f8 r r4
 	bes4.(_\dimmarkup g16 ees)~
 	ees8 r r4
@@ -243,7 +243,7 @@ musicBratscheMvtII = \relative c {
 % Bars 186 to 190
 	
 	
-	r4 <<{f4(^\arco
+	r4 <<{\shape #'((0 . 2)(0 . 0)(0 . 0)(0 . 2)) Slur f4(^\arco
 		ges aes8 a
 		bes)
 	} \\ {
