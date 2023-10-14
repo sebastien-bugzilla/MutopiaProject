@@ -83,8 +83,11 @@ musicVioloncelloMvtIdiv = \relative c {
 		r b^\pizz b
 		b r r 
 		r fis fis
-		R2.*53
+		b r r
+		r fis fis
 % Bars 126 to 130
+		b b'8(^\arco fis b,4)\laissezVibrer
+		R2.*50
 		
 % Bars 131 to 135
 		
@@ -211,12 +214,12 @@ musicVioloncelloMvtIdiv = \relative c {
 % Bars 396 to 400
 	
 	
-	\tag #'(celli) {
-		d'8-. cis-. cis-. b16( cis b8) a-.
-		a-. b16( cis b8) a-. a-. r
-		R2.
+	\tag #'() {
+%		d'8-. cis-. cis-. b16( cis b8) a-.
+%		a-. b16( cis b8) a-. a-. r
+%		R2.
 	}
-	\tag #'(bassi) {
+	\tag #'(bassi celli) {
 		R2.*3
 	}
 % Bars 401 to 405
@@ -246,7 +249,9 @@ musicVioloncelloMvtIdiv = \relative c {
 		d d'8( a d,4)
 	}
 	\tag #'(celli) {
-		R2.*6
+		d' r r
+		r a a
+		R2.*4
 	}
 % Bars 421 to 425
 	R2.*126

@@ -106,7 +106,7 @@ musicVioloncelloMvtII = \relative c {
 	
 	r8 c,16\mf\<( c') c,( c'8) c16-.\!
 	f,\f( f'8) f16-. f,( f'8) f16-.
-	\beamOffset #'(0 . -0.5) f,( f'8)_\dimmarkup f16 f,-. f'-. fis,-. fis'-.
+	\beamOffset #'(0 . -0.5) f,( f'8)_\dimmarkup f16-. f,-. f'-. fis,-. fis'-.
 % Bars 86 to 90
 	g,8\p r r4
 	R2*2

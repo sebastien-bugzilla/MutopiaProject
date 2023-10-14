@@ -12,16 +12,16 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
-\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part12_Violoncell.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part12_Violoncell.ily"
 \include "./01-Mvt1/m01_v23_music_Violoncello.ily"
 \include "./01-Mvt1/m01_v23_music_Violoncello_div.ily"
 \include "./02-Mvt2/m02_v23_music_Violoncello.ily"
@@ -30,10 +30,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-%\addQuote "cueVoiceVioloncelloMvtI" { \cueVoiceVioloncelloMvtI }
-%\addQuote "cueVoiceVioloncelloMvtII" { \cueVoiceVioloncelloMvtII }
-\addQuote "cueVoiceVioloncelloMvtIII" { \cueVoiceVioloncelloMvtIII }
-%\addQuote "cueVoiceVioloncelloMvtIV" { \cueVoiceVioloncelloMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -43,7 +39,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60"
+			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Violoncell"
 		}
 		instrument = \markup {
 			"Violoncell"
@@ -56,17 +52,19 @@
 					\formatVioloncelloMvtI
 				}
 				\new Voice {
-					\timeMvtI \generalOptions \partOptions
-					\nameVioloncelloMvtI \musicVioloncelloMvtI
+					\keepWithTag #'(violoncello) \tempiPartMvtI
 				}
 				\new Voice {
-					\keepWithTag #'(violoncello) \tempiPartMvtI
+					\InCueContext \cueVoiceVioloncelloMvtI
+				}
+				\new Voice {
+					\timeMvtI \nameVioloncelloMvtI \musicVioloncelloMvtI
 				}
 			>>
 			\new Staff <<
 				\new Voice {
-					\timeMvtI \generalOptions \partOptions
-					\nameVioloncelloMvtI \keepWithTag #'(celli) \musicVioloncelloMvtIdiv
+					\timeMvtI \nameVioloncelloMvtI 
+					\keepWithTag #'(celli) \musicVioloncelloMvtIdiv
 				}
 			>>
 		>>
@@ -74,14 +72,10 @@
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			%system-count = #59
 			\context {
 				\Staff \RemoveAllEmptyStaves
 			}
@@ -93,24 +87,22 @@
 				\formatVioloncelloMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions 
-				\nameVioloncelloMvtII \musicVioloncelloMvtII
+				\keepWithTag #'(violoncello) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(violoncello) \tempiPartMvtII
+				\InCueContext \cueVoiceVioloncelloMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2.5 \bold 2.
 			}
 		}
 		\layout {
-			%system-count = #20
 		}
 	}
 	\score {
@@ -119,20 +111,19 @@
 				\formatVioloncelloMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVioloncelloMvtIII \musicVioloncelloMvtIII
+				\keepWithTag #'(violoncello) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(violoncello) \tempiPartMvtIII
+				\InCueContext \cueVoiceVioloncelloMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameVioloncelloMvtIII \musicVioloncelloMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1 \bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -144,24 +135,22 @@
 				\formatVioloncelloMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameVioloncelloMvtIV \musicVioloncelloMvtIV
+				\keepWithTag #'(violoncello) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(violoncello) \tempiPartMvtIV
+				\InCueContext \cueVoiceVioloncelloMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameVioloncelloMvtIV \musicVioloncelloMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\null \translate #'(0 . 3) \bold {4. Finale.}
 			}
 		}
 		\layout {
-			system-count = #64
 		}
 	}
 }

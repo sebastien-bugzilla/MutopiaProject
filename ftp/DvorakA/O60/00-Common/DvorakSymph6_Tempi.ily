@@ -697,7 +697,7 @@ tempiPartMvtIII = {
 		}
 	}
 	\tag #'(oboeII fagottI fagottII hornI hornII hornIV trompeteI trompeteII 
-		pauken violinI violinII bratsche) {
+		pauken violinI violinII bratsche violoncello) {
 		\tempo \markup {
 			\column {
 				\lower #1.5 \line {
@@ -711,7 +711,7 @@ tempiPartMvtIII = {
 			}
 		}
 	}
-	\tag #'(hornIII     violoncello bassi) {
+	\tag #'(hornIII      bassi) {
 		\tempo \markup {
 			\concat {
 					"Poco meno mosso. (M.M. "
