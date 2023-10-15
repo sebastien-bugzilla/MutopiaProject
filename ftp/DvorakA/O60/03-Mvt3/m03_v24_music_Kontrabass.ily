@@ -62,7 +62,7 @@ musicKontrabassMvtIII = \relative c {
 % Bars 41 to 45
 		d\! 
 		a'4-.\ff a,-. bes!-.
-		c-. f-. f,-.
+		c!-. f-. f,-.
 		f'\p r r
 		f^\pizz r r
 % Bars 46 to 50
@@ -140,8 +140,8 @@ musicKontrabassMvtIII = \relative c {
 % Bars 106 to 110
 		c-. c8( b c4)
 		c-. c8( b c4)
-		c4( des) c(
-		des) c( cis)
+		c4( \once \stemUp des) c(
+		\once \stemUp des) c( cis)
 		d( ees) ees(
 % Bars 111 to 115
 		e!) e( f)
@@ -195,36 +195,34 @@ musicKontrabassMvtIII = \relative c {
 			d2.\f\>
 		}
 	}
-	<d a'>
+	\startMeasureCount <d a'>
 	q
 	q\p
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \bar ".|:-||" \key d \major
+	q \stopMeasureCount \attaccatrioDown \bar ".|:-||" \key d \major \break
 	\repeat volta 2 {
-		\time 3/4 \trio d4\pp r r
+		\time 3/4 \trioPart d4\pp r r
 		d4(\pp e8 cis d4)
 		R2.*4
 % Bars 156 to 160
 		
 		
 		
-		\cueDuring #"cueVoiceKontrabassMvtIII" #UP {
-			\ni R2.
-			R
+		\ni \voiceTwo R2.
+		R
 % Bars 161 to 165
-			R
-			R \no
-		}
+		R
+		R \no \oneVoice 
 		R2.
 		d4(\pp e8 cis d4)
-		\mmrLength #12 R2.*4
+		R2.*4
 % Bars 166 to 170
 		
 		
 		
-		\mmrLength #12 R2.*4
+		\mmrLength #15.5 R2.*4
 		
 % Bars 171 to 175
 		
@@ -239,13 +237,11 @@ musicKontrabassMvtIII = \relative c {
 % Bars 191 to 195
 		
 		
-		\cueDuring #"cueVoiceKontrabassMvtIII" #DOWN {
-			\ni \mmrPos #-4 R2.
-			\mmrPos #-4 R
-			\mmrPos #-4 R
+		\ni \voiceTwo R2.
+		R
+		R
 % Bars 196 to 200
-			\mmrPos #-4 R \no
-		}
+		R \no \oneVoice 
 		a2.~\ppp
 		a~
 		a~
@@ -313,13 +309,13 @@ musicKontrabassMvtIII = \relative c {
 	d, r d'
 	d, r d' \stopMeasureCount
 	d,\pp r r
-	R2.*19
+	R2.*12
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\mmrnDown R2.*7
 % Bars 286 to 290
 	
 	\bar "||" \key d \minor
@@ -447,8 +443,8 @@ musicKontrabassMvtIII = \relative c {
 	c-. c8( b c4)
 	c-. c8( b c4)
 % Bars 391 to 395
-	c( des) c(
-	des) c( cis)
+	c( \once \stemUp des) c(
+	\once \stemUp des) c( cis)
 	d( ees) ees(
 	e!) e( f)
 	fis( g) g(

@@ -12,16 +12,16 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
-\include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part13_Kontrabass.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part13_Kontrabass.ily"
 \include "./01-Mvt1/m01_v24_music_Kontrabass.ily"
 \include "./02-Mvt2/m02_v24_music_Kontrabass.ily"
 \include "./03-Mvt3/m03_v24_music_Kontrabass.ily"
@@ -29,10 +29,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-%\addQuote "cueVoiceKontrabassMvtI" { \cueVoiceKontrabassMvtI }
-%\addQuote "cueVoiceKontrabassMvtII" { \cueVoiceKontrabassMvtII }
-\addQuote "cueVoiceKontrabassMvtIII" { \cueVoiceKontrabassMvtIII }
-%\addQuote "cueVoiceKontrabassMvtIV" { \cueVoiceKontrabassMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -42,7 +38,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60"
+			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Kontrabass"
 		}
 		instrument = \markup {
 			"Kontrabass"
@@ -54,20 +50,19 @@
 				\formatKontrabassMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameKontrabassMvtI \musicKontrabassMvtI
+				\keepWithTag #'(kontrabass) \tempiPartMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(kontrabass) \tempiPartMvtI
+				\InCueContext \cueVoiceKontrabassMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameKontrabassMvtI \musicKontrabassMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -79,20 +74,19 @@
 				\formatKontrabassMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameKontrabassMvtII \musicKontrabassMvtII
+				\keepWithTag #'(kontrabass) \tempiPartMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(kontrabass) \tempiPartMvtII
+				\InCueContext \cueVoiceKontrabassMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameKontrabassMvtII \musicKontrabassMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #3.1 \bold 2.
 			}
 		}
 		\layout {
@@ -104,20 +98,19 @@
 				\formatKontrabassMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameKontrabassMvtIII \musicKontrabassMvtIII
+				\keepWithTag #'(kontrabass) \tempiPartMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(kontrabass) \tempiPartMvtIII
+				\InCueContext \cueVoiceKontrabassMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameKontrabassMvtIII \musicKontrabassMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2 \bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -129,20 +122,19 @@
 				\formatKontrabassMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalOptions \partOptions
-				\nameKontrabassMvtIV \musicKontrabassMvtIV
+				\keepWithTag #'(kontrabass) \tempiPartMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(kontrabass) \tempiPartMvtIV
+				\InCueContext \cueVoiceKontrabassMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameKontrabassMvtIV \musicKontrabassMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\vspace #1.2 \bold {4. Finale.}
 			}
 		}
 		\layout {

@@ -608,21 +608,21 @@ nameVioloncelloMvtIV = {
 %###############################################################################
 nameKontrabassMvtI = {
 	\set Staff.instrumentName = "Kontrabass."
-	\set Staff.shortInstrumentName = "K.B."
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"contrabass"
 }
 nameKontrabassMvtII = {
 	\set Staff.instrumentName = "Kontrabass."
-	\set Staff.shortInstrumentName = "K.B."
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"contrabass"
 }
 nameKontrabassMvtIII = {
 	\set Staff.instrumentName = "Kontrabass."
-	\set Staff.shortInstrumentName = "K.B."
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"contrabass"
 }
 nameKontrabassMvtIV = {
 	\set Staff.instrumentName = "Kontrabass."
-	\set Staff.shortInstrumentName = "K.B."
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"contrabass"
 }

@@ -25,7 +25,7 @@ musicKontrabassMvtII = \relative c {
 	bes\pp r
 	R2*2
 	
-	r4 \hairpinShorten #'(0 . -1) e,\<
+	r4 \hairpinShorten #'(0 . -0.5) e,\<
 % Bars 16 to 20
 	f2\f~
 	f4.(_\dimmarkup fis8
@@ -49,7 +49,7 @@ musicKontrabassMvtII = \relative c {
 	f'16->\ff f,-. bes_\pesante-. d-. f-. ees-. d-. c-.
 	bes8-> a-> g-> fis->
 	g4-> g-> \bar "||" \mark \default
-	\tempoXoffset #1. a-> r
+	a-> r
 % Bars 36 to 40
 	R2*5
 	
@@ -69,8 +69,8 @@ musicKontrabassMvtII = \relative c {
 	
 	
 % Bars 51 to 55
-	r8 ees\p\<-- ees-- ees--
-	\hairpinMinLength #7 cis2\f\>
+	r8 ees\p\<-- ees-- ees--\!
+	\hairpinShorten #'(-0.3 . -1) \after 2*7/8 \! cis2\f\>
 	d8\p r r4
 	R2*5
 	
@@ -92,7 +92,7 @@ musicKontrabassMvtII = \relative c {
 % Bars 71 to 75
 	
 	\mark \default
-	bes8-\tweak X-offset #1.5 ^\pizz\pp r r4
+	bes8^\pizz\pp r r4
 	c8 r d r
 	g, r  r4
 % Bars 76 to 80
@@ -104,21 +104,21 @@ musicKontrabassMvtII = \relative c {
 % Bars 81 to 85
 	R2*2
 	
-	r8 c4\mf\<^\arco c8
+	r8 \hairpinShorten #'(-0.3 . -2) c4\mf\<^\arco c8\!
 	f,2\f~
 	f4.(_\dimmarkup fis8
 % Bars 86 to 90
 	g8\p) r r4
 	R2*2
 	\mark \default
-	bes8\pp-\tweak X-offset #1.5 ^\pizz r r  bes
+	bes8\pp^\pizz r r  bes
 	bes r r bes
 % Bars 91 to 95
 	b r r b
 	g r r g
 	c r r c_\crescmarkup
 	c r r c
-	f-.\mf^\arco f,-. r4
+	f-.\mf-\offset X-offset -5 -\tweak extra-offset #'(2.5 . -7.1) ^\arco f,-. r4
 % Bars 96 to 100
 	f'8-. f,-._\crescmarkup r4
 	f'8-. f,-. r4
@@ -152,7 +152,7 @@ musicKontrabassMvtII = \relative c {
 	
 	
 	r16 d-.\f d-. d-.  d-. d-. d-. d-.
-	d32[(\< d') d-. d-.] d[ d d d] d[ d d d] d[ d d d]
+	d32[(\< d') d-. d-.] d[ d d d] d[ d d d] d[ d d d]\!
 % Bars 131 to 135
 	d,16\ff r r8 r4
 	R2*8
@@ -163,11 +163,11 @@ musicKontrabassMvtII = \relative c {
 	\mark \default
 	bes2(\pp 
 % Bars 141 to 145
-	c4 d)
+	c4 \once \stemUp d)
 	g,2~
 	g4.\< c8\!
 	d(\mf\< f d bes)\!
-	ees2\>  % \hairpinMinLength #4 \hairpinShorten #'(-1 . 0) 
+	\after 2*7/8 \! ees2\> 
 % Bars 146 to 150
 	d4(-\tweak X-offset #-0.5 _\pdimD  c)
 	bes4\pp r
@@ -196,7 +196,7 @@ musicKontrabassMvtII = \relative c {
 	R2*3
 	
 	\mark \default
-	\tempoXoffset #1.2 bes8\p-\tweak X-offset #1.2 ^\arco r r4
+	bes8\p^\arco r r4
 	r8 bes4(\< a16 g\!)
 % Bars 171 to 175
 	f8(\p bes) r4
@@ -207,7 +207,7 @@ musicKontrabassMvtII = \relative c {
 % Bars 176 to 180
 	f8 bes4-^\f a16( g)
 	f-. ees->\< d-> des-> c-> bes-> a-> g->\!
-	fis8-.\ff r g-.-^ r
+	fis8-.-\offset X-offset 0.5 \ff r g-.-^ r
 	c-.-^ r r4
 	R2*2
 % Bars 181 to 185
@@ -225,7 +225,7 @@ musicKontrabassMvtII = \relative c {
 % Bars 191 to 195
 	ges,2(\ppp^\arco
 	bes8) r r4 
-	<< e,2( {s8\< s s\> s} >>
+	<< e,2( {\hairpinShorten #'(0 . -1) s8\< s \hairpinShorten #'(1 . 0) s\> s} >>
 	f)\! r r4
 	R2*3
 % Bars 196 to 200

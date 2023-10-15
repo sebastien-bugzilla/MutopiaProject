@@ -44,7 +44,7 @@ musicKontrabassMvtIV = \relative c' {
 	d~
 	d~
 	d2. d4->(
-	c bes g) d'->(
+	cis bes g) d'->(
 % Bars 31 to 35
 	cis bes g) e'(->
 	d cis bes) bes'(->
