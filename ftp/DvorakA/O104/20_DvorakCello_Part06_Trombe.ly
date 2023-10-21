@@ -7,12 +7,12 @@
 %  Source             : Berlin N. Simrock, 1896. Plate 10548.
 %  Type of score      : Score for Trombe
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Thursday 19 August 2021, 13:55
+%  date of initiation : Saturday 21st October 2023, 18:11
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakCello_Header.ily"
 \include "./00-Common/DvorakCello_PaperParts.ily"
 \include "./00-Common/DvorakCello_timeMvt.ily"
