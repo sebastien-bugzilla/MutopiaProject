@@ -49,6 +49,14 @@ ppocoa-pococresc = \markup {
 }
 ppsempre = \markup {\dynamic pp \italic sempre}
 ppsempremoltotranquillo = \markup {\dynamic pp \italic {sempre molto tranquillo}}
+ppsempre-moltotranquillo = \markup {
+	\column {
+		\lower #1.5 \line {
+			\dynamic pp \italic {sempre} 
+		}
+		\line { \italic "molto tranquillo"}
+	}
+}
 ppsubponticello = \markup {\dynamic pp \italic {sub ponticello}}
 pptranquillo = \markup {\dynamic pp \italic tranquillo}
 rf = \markup {\dynamic rf}

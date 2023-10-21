@@ -402,8 +402,8 @@ musicKontrabassMvtI = \relative c {
 	r4 d r
 % Bars 321 to 325
 	r r d
-	b2.->\fz->(
-	e2)\! b4(\pp
+	\after 2.*7/8 \! b2.\fz\>(
+	e2) b4(\pp
 	e2) r4
 	r r bes(
 % Bars 326 to 330
@@ -464,7 +464,7 @@ musicKontrabassMvtI = \relative c {
 	
 	
 	
-	a8-. b-. cis2
+	a8-.\pp b-. cis2
 	b8-. cis-. d2
 % Bars 376 to 380
 	cis8-._\crescmarkup d-. e2

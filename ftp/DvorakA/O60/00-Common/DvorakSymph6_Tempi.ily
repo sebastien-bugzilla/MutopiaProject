@@ -588,7 +588,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(oboeI hornI hornIII hornIV violinII bratsche kontrabass) {
+	\tag #'(oboeI hornI hornIII hornIV violinII bratsche kontrabass bassi) {
 		\tempo "Poco più animato."
 	}
 	\tag #'(trompeteI  pauken fagottII ) {
@@ -600,7 +600,7 @@ tempiPartMvtII = {
 	}
 	\tag #'(oboeII klarinetteI klarinetteII fagottI 
 		hornII   violinI   violoncello  
-		bassi) {
+		) {
 		\tempo \markup { 
 			\medium \italic "poco più animato"
 		}
@@ -697,7 +697,7 @@ tempiPartMvtIII = {
 		}
 	}
 	\tag #'(oboeII fagottI fagottII hornI hornII hornIV trompeteI trompeteII 
-		pauken violinI violinII bratsche violoncello) {
+		pauken violinI violinII bratsche violoncello bassi) {
 		\tempo \markup {
 			\column {
 				\lower #1.5 \line {
@@ -711,7 +711,7 @@ tempiPartMvtIII = {
 			}
 		}
 	}
-	\tag #'(hornIII      bassi) {
+	\tag #'(hornIII      ) {
 		\tempo \markup {
 			\concat {
 					"Poco meno mosso. (M.M. "

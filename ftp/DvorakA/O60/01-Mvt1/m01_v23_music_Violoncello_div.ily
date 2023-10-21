@@ -55,30 +55,54 @@ musicVioloncelloMvtIdiv = \relative c {
 		
 		
 		
+		
 		\tag #'(bassi) {
-			b8-. ais-. ais-. gis16( ais gis8) fis-.
+			R2.*3 %b8-. ais-. ais-. gis16( ais gis8) fis-.
 % Bars 106 to 110
-			fis\pp gis16( ais gis8) fis-. fis-. r
-			R2.
-		}
-		\tag #'(celli) {
-			R2.*3
-		}
-		fis'4( cis'2)
-		b4.( fis8 d4)
-		a'4( e'8) r e4
+			%fis\pp gis16( ais gis8) fis-. fis-. r
+			%R2.
+			fis4(_\pespress cis'2)
+			b4.( fis8\< d4)
+			a'4( e'8)\! r e4-.\>
 % Bars 111 to 115
-		d2( a8 fis)
-		g4( c! e)
-		b4.( a8 g4)
-		e( fis g)
-		fis4.( e8 d4)
+			d2( a8 fis)\!
+			g4(\p c! e)
+			b4.(\> a8 g4)\!
+			e(\pp fis g)
+			fis4.( e8 d4)
 % Bars 116 to 120
-		cis( d e)
-		f2.~
-		f
-		e4( cis fis!)
-		b, r r
+			cis( d e)
+			f2.~\<
+			\after 2.*7/8 \! f
+			e4( cis\> fis!)
+			b,\pp r r
+		}
+% Bars 101 to 105
+		
+		
+		
+		
+		\tag #'(celli) {
+			R2.
+% Bars 106 to 110
+			R2.*2
+			
+			fis'4( cis'2)
+			b4.( fis8 d4)
+			a'4( e'8) r e4-.
+% Bars 111 to 115
+			d2( a8 fis)
+			g4( c! e)
+			b4.( a8 g4)
+			e( fis g)
+			fis4.( e8 d4)
+% Bars 116 to 120
+			cis( d e)
+			f2.~
+			f
+			e4( cis fis!)
+			b, r r
+		}
 % Bars 121 to 125
 		r b^\pizz b
 		b r r 
@@ -223,33 +247,55 @@ musicVioloncelloMvtIdiv = \relative c {
 		R2.*3
 	}
 % Bars 401 to 405
-	\clef tenor a'4( e' e)
-	d4.( a8 f4)
-	c'4( g'8) r g r 
-	f2( c8 a)
-	bes4( ees g)
+	\tag #'(celli) {
+		\clef tenor a'4( e' e)
+		d4.( a8 f4)
+		c'4( g'8) r g r 
+		f2( c8 a)
+		bes4( ees g)
 % Bars 406 to 410
-	d4.( c8 bes4)
-	g( a bes)
-	a4.( g8 f4)
-	e( f g)
-	gis2.~
+		d4.( c8 bes4)
+		g( a bes)
+		a4.( g8 f4)
+		e( f g)
+		gis2.~
 % Bars 411 to 415
-	gis
-	g!4( e a
-	d,) r r
-	r4 \clef bass d^\pizz d
+		gis
+		g!4( e a
+		d,) r r
+		r4 \clef bass d^\pizz d
+	}
+% Bars 401 to 405
+	\tag #'(bassi) {
+		\clef tenor a'4(_\pespress e' e)
+		d4.( \once \stemUp a8\< f4)
+		c'4( g'8)\! r g r 
+		f2(\> c8 a)\!
+		bes4(\p ees g)
+% Bars 406 to 410
+		d4.(_\dimmarkup c8 bes4)
+		g(\pp a bes)
+		\once \stemUp a4.( g8 f4)
+		e( f g)
+		gis2.~
+% Bars 411 to 415
+		gis\<
+		g!4(\! e\> \once \stemUp a\!
+		d,)\pp r r
+		r4 \clef bass d^\pizz d
+	}
 	\tag #'(bassi) {
 		d4 r r
 % Bars 416 to 420
 		r a a 
 		d r r 
 		r a a
-		d, d'8(^\arco a d,4~)
-		d d'8( a d,4)
+		R2.*2
+		%d, d'8(^\arco a d,4~)
+		%d d'8( a d,4)
 	}
 	\tag #'(celli) {
-		d' r r
+		d'4 r r
 		r a a
 		R2.*4
 	}

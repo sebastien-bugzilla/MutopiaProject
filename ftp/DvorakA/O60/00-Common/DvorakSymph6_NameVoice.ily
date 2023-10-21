@@ -626,3 +626,42 @@ nameKontrabassMvtIV = {
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"contrabass"
 }
+%###############################################################################
+%#                     V O I C E   N A M E   :   B A S S I                     #
+%###############################################################################
+nameBassiMvtI = {
+	\set Staff.instrumentName = \markup {
+		\column {
+			\lower #1.5 "Violoncell. u." "Kontrabass."
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"contrabass"
+}
+nameBassiMvtII = {
+	\set Staff.instrumentName = \markup {
+		\column {
+			\lower #1.5 "Violoncell. u." "Kontrabass."
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"contrabass"
+}
+nameBassiMvtIII = {
+	\set Staff.instrumentName = \markup {
+		\column {
+			\lower #1.5 "Violoncell. u." "Kontrabass."
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"contrabass"
+}
+nameBassiMvtIV = {
+	\set Staff.instrumentName = \markup {
+		\column {
+			\lower #1.5 "Violoncell. u." "Kontrabass."
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"contrabass"
+}

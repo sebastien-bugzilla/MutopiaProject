@@ -49,7 +49,7 @@ musicVioloncelloMvtII = \relative c {
 	f'16->\ff f,-. bes_\pesante-. d-. f-. ees-. d-. c-.
 	bes8-> a-> g-> fis->
 	<g d' bes'>4->\arpeggio <g d' bes'>->\arpeggio \bar "||" \mark \default
-	<g d' a'>->\arpeggio r
+	<a d a'>->\arpeggio r
 % Bars 36 to 40
 	R2*2
 	

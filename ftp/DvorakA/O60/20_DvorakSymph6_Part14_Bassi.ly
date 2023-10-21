@@ -12,16 +12,16 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.22.0"
+\version "2.24.1"
 \include "./00-Common/DvorakSymph6_Header.ily"
-\include "./00-Common/DvorakSymph6_PaperBassi.ily"
-\include "./00-Common/DvorakSymph6_timeMvt.ily"
-\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_LayoutParts.ily"
+\include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part14_Bassi.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part14_Bassi.ily"
 \include "./01-Mvt1/m01_v23_music_Violoncello_Bassi.ily"
 \include "./01-Mvt1/m01_v23_music_Violoncello_div.ily"
 \include "./01-Mvt1/m01_v24_music_Kontrabass_Bassi.ily"
@@ -34,11 +34,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-%\addQuote "cueVoiceVioloncelloMvtI" { \cueVoiceVioloncelloMvtI }
-%\addQuote "cueVoiceVioloncelloMvtII" { \cueVoiceVioloncelloMvtII }
-\addQuote "cueVoiceVioloncelloMvtIII" { \cueVoiceVioloncelloMvtIII }
-\addQuote "cueVoiceKontrabassMvtIII" { \cueVoiceKontrabassMvtIII }
-%\addQuote "cueVoiceVioloncelloMvtIV" { \cueVoiceVioloncelloMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -52,6 +47,16 @@
 		}
 		instrument = \markup {
 			"Bassi"
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #24 
+		\abs-fontsize #20
+		\fill-line {
+			\center-column {
+				\line { "Page left blank to improve layout" }
+			}
 		}
 	}
 	\score {
@@ -68,33 +73,31 @@
 					\formatBassiMvtI
 				}
 				\new Voice {
-					\timeMvtI \generalOptions \partOptions
-					\nameVioloncelloMvtI \musicVioloncelloMvtI
-				}
-				\new Voice {
 					\keepWithTag #'(bassi) \tempiPartMvtI
 				}
-			>>
-			\new Staff <<
 				\new Voice {
-					\timeMvtI \generalOptions \partOptions
-					\nameVioloncelloMvtI \keepWithTag #'(bassi) \musicVioloncelloMvtIdiv
+					\InCueContext \cueVoiceBassiMvtI
+				}
+				\new Voice {
+					\timeMvtI \nameBassiMvtI \musicVioloncelloMvtI
 				}
 			>>
 			\new Staff <<
 				\new Voice {
-					\timeMvtI \generalOptions \partOptions
-					\nameKontrabassMvtI \musicKontrabassMvtI
+					\timeMvtI \nameBassiMvtI 
+					\keepWithTag #'(bassi) \musicVioloncelloMvtIdiv
+				}
+			>>
+			\new Staff <<
+				\new Voice {
+					\timeMvtI \nameBassiMvtI \musicKontrabassMvtI
 				}
 			>>
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -117,30 +120,48 @@
 					\formatBassiMvtII
 				}
 				\new Voice {
-					\timeMvtII \generalOptions \partOptions 
-					\nameVioloncelloMvtII \musicVioloncelloMvtII
+					\keepWithTag #'(bassi) \tempiPartMvtII
 				}
 				\new Voice {
-					\keepWithTag #'(bassi) \tempiPartMvtII
+					\InCueContext \cueVoiceBassiMvtII
+				}
+				\new Voice {
+					\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
 				}
 			>>
 			\new Staff <<
 				\new Voice {
-					\timeMvtII \generalOptions \partOptions 
-					\nameKontrabassMvtII \musicKontrabassMvtII
+					\timeMvtII \nameKontrabassMvtII \musicKontrabassMvtII
 				}
 			>>
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #24 
+		\abs-fontsize #20
+		\fill-line {
+			\center-column {
+				\line { "Page left blank to improve layout" }
+			}
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #24 
+		\abs-fontsize #20
+		\fill-line {
+			\center-column {
+				\line { "Page left blank to improve layout" }
+			}
 		}
 	}
 	\score {
@@ -157,27 +178,25 @@
 					\formatBassiMvtIII
 				}
 				\new Voice {
-					\timeMvtIII \generalOptions \partOptions
-					\nameVioloncelloMvtIII \musicVioloncelloMvtIII
+					\keepWithTag #'(bassi) \tempiPartMvtIII
 				}
 				\new Voice {
-					\keepWithTag #'(bassi) \tempiPartMvtIII
+					\InCueContext \cueVoiceBassiMvtIII
+				}
+				\new Voice {
+					\timeMvtIII \nameVioloncelloMvtIII \musicVioloncelloMvtIII
 				}
 			>>
 			\new Staff <<
 				\new Voice {
-					\timeMvtIII \generalOptions \partOptions
-					\nameKontrabassMvtIII \musicKontrabassMvtIII
+					\timeMvtIII \nameKontrabassMvtIII \musicKontrabassMvtIII
 				}
 			>>
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -200,27 +219,25 @@
 					\formatBassiMvtIV
 				}
 				\new Voice {
-					\timeMvtIV \generalOptions \partOptions
-					\nameVioloncelloMvtIV \musicVioloncelloMvtIV
+					\keepWithTag #'(bassi) \tempiPartMvtIV
 				}
 				\new Voice {
-					\keepWithTag #'(bassi) \tempiPartMvtIV
+					\InCueContext \cueVoiceBassiMvtIV
+				}
+				\new Voice {
+					\timeMvtIV \nameVioloncelloMvtIV \musicVioloncelloMvtIV
 				}
 			>>
 			\new Staff <<
 				\new Voice {
-					\timeMvtIV \generalOptions \partOptions
-					\nameKontrabassMvtIV \musicKontrabassMvtIV
+					\timeMvtIV \nameKontrabassMvtIV \musicKontrabassMvtIV
 				}
 			>>
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {

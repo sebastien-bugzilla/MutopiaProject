@@ -416,8 +416,8 @@ musicVioloncelloMvtI = \relative c {
 	r4 d r
 % Bars 321 to 325
 	r r d
-	b2.->\fz->(
-	e2)\! b4(\pp
+	\after 2.*7/8 \! b2.\fz\>(
+	e2) b4(\pp
 	e2) r4
 	r r bes(
 % Bars 326 to 330

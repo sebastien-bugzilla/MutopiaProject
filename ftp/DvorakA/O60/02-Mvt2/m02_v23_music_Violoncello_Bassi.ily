@@ -25,7 +25,7 @@ musicVioloncelloMvtII = \relative c {
 	bes(\pp d
 	ees2
 	d4 c
-	bes8) bes'4(\< a16 g)
+	bes8) bes'4(\< a16 g)\!
 % Bars 16 to 20
 	f8(\f bes d, f)
 	f,4.(_\dimmarkup fis8
@@ -34,10 +34,10 @@ musicVioloncelloMvtII = \relative c {
 	R2
 % Bars 21 to 25
 	bes,4(\pp f'
-	d8\< bes  f\! bes)
+	d8\< bes  f bes)\!
 	\hairpinShorten #'(0 . -2) b4(\p\> g\!)
 	f'8(_\dimmarkup d b g)
-	c,(-\tweak X-offset #-3 \pp c'4) c8-.
+	c,(\pp c'4) c8-.
 % Bars 26 to 30
 	c,( c'4) c8-.
 	c r r4
@@ -49,7 +49,7 @@ musicVioloncelloMvtII = \relative c {
 	f'16->\ff f,-. bes_\pesante-. d-. f-. ees-. d-. c-.
 	bes8-> a-> g-> fis->
 	<g d' bes'>4->\arpeggio <g d' bes'>->\arpeggio \bar "||" \mark \default
-	<g d' a'>->\arpeggio r
+	<a d a'>->\arpeggio r
 % Bars 36 to 40
 	R2*2
 	
@@ -91,12 +91,12 @@ musicVioloncelloMvtII = \relative c {
 	R2*5
 % Bars 71 to 75
 	
-	r4 c'8(\pp f, \mark \default
+	r4 c'8(\pp f, \markWhiteout \mark \default
 	bes16) f'8_\semprepp f16 bes, g'8 g16
 	c,16 g'8 g16 d, d'8 d16
 	g, d'8 d16 g, c8 c16
 % Bars 76 to 80
-	g d'8 d16 g,\< d' c,\> c'
+	g d'8 d16 g,\< d' \hairpinShorten #'(0 . 1) c,\> c'
 	d\! f8 f16 d bes8 bes16
 	ees f8\< f16 ees f8 f16\!
 	d f8\> f16 c f8 f16\!
@@ -104,9 +104,9 @@ musicVioloncelloMvtII = \relative c {
 % Bars 81 to 85
 	R2*2
 	
-	r8 c,16\mf\<( c') c,( c'8) c16-.\!
+	r8-\offset X-offset -0.8 \mf c,16\<( c') c,( c'8) c16-.\!
 	f,\f( f'8) f16-. f,( f'8) f16-.
-	f,( f'8) f16_\dimmarkup f,-. f'-. fis,-. fis'-.
+	f,( f'8) f16-._\dimmarkup f,-. f'-. fis,-. fis'-.
 % Bars 86 to 90
 	g,8\p r r4
 	R2*2
@@ -117,8 +117,8 @@ musicVioloncelloMvtII = \relative c {
 	g,( b d g,
 	b d g, d')
 	c( c, g' c)_\crescmarkup
-	c,( g' c c,)
-	f'-.\mf f,-. r4
+	\shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur c,( g' c c,)
+	f'-.-\offset X-offset -0.7 \mf f,-. r4
 % Bars 96 to 100
 	f'8-. f,-._\crescmarkup r4
 	f'8-. f,-. r4
@@ -185,9 +185,9 @@ musicVioloncelloMvtII = \relative c {
 % Bars 151 to 155
 	f16(\< bes d f\! bes d f d)
 	c(\> a f c f,8) fis\p
-	g a'(\pp\< bes c16 cis\!)
+	g\noBeam a'(\pp\< bes c16 cis\!)
 	d4 f\fz~
-	f8 ees16(\> d \acciaccatura f8 ees8. d16)\!
+	f8 ees16(\> d \slashedGrace { \once \stemDown f8 } ees8. d16)\!
 % Bars 156 to 160
 	d2\pp~
 	d~
@@ -197,7 +197,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 161 to 165
 	f4.\! c8)~
 	c4( d\>
-	ees4. bes8)~
+	ees4. bes8)~\!
 	bes4(\pp a)~
 	a8 r r4
 % Bars 166 to 170
@@ -225,7 +225,7 @@ musicVioloncelloMvtII = \relative c {
 	d2(~
 	d4\> e)\!
 % Bars 186 to 190
-	f(\< bes~
+	\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur f(\< bes\!~
 	bes8\> a g f)\!
 	f r r4
 	R2*2
@@ -239,7 +239,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 196 to 200
 	bes8) r r4
 	R2
-	r8 f'\ff-! d-! g-!
+	r8 f'-\offset X-offset -2 \ff-! d-! g-!
 	ees-! c-! a-! d-! 
 	g, r f r
 % Bars 201 to 205

@@ -1229,3 +1229,23 @@ cueVoiceKontrabassMvtIII = \relative c {
 cueVoiceKontrabassMvtIV = \relative c {
 %	no cue voice for mvtIV
 }
+%###############################################################################
+%#                    C U E   V O I C E   F O R   B A S S I                    #
+%###############################################################################
+cueVoiceBassiMvtI = \relative c {
+%	no cue voice for mvtI
+}
+cueVoiceBassiMvtII = \relative c {
+%	no cue voice for mvtII
+}
+cueVoiceBassiMvtIII = \relative c {
+	s2.*180
+	% bar 180 - 181
+	d'''4^(-\tweak X-offset #-2.5 ^\markup {Fl.} e8 cis d4)
+	g2.
+	
+}
+cueVoiceBassiMvtIV = \relative c {
+%	no cue voice for mvt IV
+}
+

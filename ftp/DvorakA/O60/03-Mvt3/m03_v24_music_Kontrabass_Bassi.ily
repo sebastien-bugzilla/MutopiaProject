@@ -136,18 +136,19 @@ musicKontrabassMvtIII = \relative c {
 		ces ces2
 		bes4-.\pp bes8( a bes4)
 		bes-. bes8( a bes4)
-		bes( ces) bes(
-		ces) bes(_\pocoapococrescendo b)
-% Bars 106 to 110
-		c-. c8( b c4)
-		c-. c8( b c4)
-		c4( des) c(
-		des) c( cis)
-		d( ees) ees(
-% Bars 111 to 115
-		e!) e( f)
-		fis( g) g(
-		aes) aes2->
+		R2.*9
+%		bes( ces) bes(
+%		ces) bes(_\pocoapococrescendo b)
+%% Bars 106 to 110
+%		c-. c8( b c4)
+%		c-. c8( b c4)
+%		c4( \once \stemUp des) c(
+%		\once \stemUp des) c( cis)
+%		d( ees) ees(
+%% Bars 111 to 115
+%		e!) e( f)
+%		fis( g) g(
+		aes'4\repeatTie aes2->
 		aes4-.\f\< aes-. aes-.
 		aes-. aes-. aes-.
 % Bars 116 to 120
@@ -184,32 +185,28 @@ musicKontrabassMvtIII = \relative c {
 		ees2 d4-.
 		cis-. a-. cis-.
 		d-. f-. d-.
-		R2.*2
-%		a,-. g'->( f8 e)
-%		d4-. d-. d-.
+		a,-. g'->( f8 e)
+		d4-. d-. d-.
 	}
 % Bars 146 to 150
 	\alternative {
 		{
-			R2.
-			%d r r
+			d r r
 		}
 		{
-			R2.
-			%d2.\f\>
+			d2.\f\>
 		}
 	}
-	R2.*6
-%	<d a'>
-%	q
-%	q\p
-%	q_\dimmarkup
-%% Bars 151 to 155
-%	q
-%	q 
+	<d a'>
+	q
+	q\p
+	q_\dimmarkup
+% Bars 151 to 155
+	q
+	q 
 	\bar ".|:-||" \key d \major
 	\repeat volta 2 {
-		\time 3/4 \trio d,4\pp r r
+		\time 3/4 d4\pp r r
 		d4(\pp e8 cis d4)
 		R2.*4
 % Bars 156 to 160
@@ -267,7 +264,7 @@ musicKontrabassMvtIII = \relative c {
 	}
 % Bars 201 to 205
 	d4 r r
-	\ni R2.*8 \no
+	\ni << R2.*8 {\hideNotes d2.*8 \unHideNotes}>> \no
 	
 	
 	
@@ -276,11 +273,11 @@ musicKontrabassMvtIII = \relative c {
 	
 	
 	
-	R2.*3
+	<< R2.*3  {\hideNotes d2.*3 \unHideNotes}>>
 % Bars 211 to 215
 	
 	
-	\ni R2.*9 \no
+	<< \ni R2.*9  {\hideNotes d2.*9 \unHideNotes}>> \no
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -305,7 +302,7 @@ musicKontrabassMvtIII = \relative c {
 	b r r
 	r b b
 % Bars 241 to 245
-	\startMeasureCount b2.~\pp^\arco
+	b2.~\pp^\arco
 	b~
 	b~
 	b~
@@ -313,13 +310,13 @@ musicKontrabassMvtIII = \relative c {
 % Bars 246 to 250
 	b~
 	b~
-	b~ \stopMeasureCount 
+	b~  
 	b4 r r
 	b(\pp cis8 ais b4)
 % Bars 251 to 255
 	R2.*5
 % Bars 256 to 260
-	\startMeasureCount d4-\tweak X-offset #-2.5 ^\pizz\p r d'
+	d4^\pizz\p r d'
 	d,\< r d'
 	d, r d'
 	d, r d'\!
@@ -332,15 +329,15 @@ musicKontrabassMvtIII = \relative c {
 	d,_\dimmarkup r d'
 % Bars 266 to 270
 	d, r d'
-	d, r d' \stopMeasureCount
+	d, r d'
 	d,\pp r r
-	R2.*15
+	R2.*12
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\mmrnDown R2.*3
 	
 	
 	\ni R2.*4 \no
@@ -391,7 +388,7 @@ musicKontrabassMvtIII = \relative c {
 	cis r r
 	r r a
 	d2.~\<^\arco
-	d\!
+	\after 2.*1/2 \! d
 	a'4-.\ff a,-. bes!-.
 % Bars 326 to 330
 	c!-. f-. f,-.
@@ -403,7 +400,7 @@ musicKontrabassMvtIII = \relative c {
 	f r r
 	f r r
 	e r r
-	R2.
+	\ni R2. \no
 	d4 r r
 % Bars 336 to 340
 	d r r
@@ -443,26 +440,27 @@ musicKontrabassMvtIII = \relative c {
 	
 % Bars 366 to 370
 	
-	f''4-.\p\< f,-. a-.
-	bes-.\! bes,8(\f a bes4)
-	R2.*2
-	
-% Bars 371 to 375
-	d'4-.\f d,-. fis-.
-	g-. g,8( fis g4)
-	R2.*2
-	
-	ees'2\p ees4~
-% Bars 376 to 380
-	ees ees2
-	aes4-._\dimmarkup ees-. ees-.
-	aes-. ees-. ees-.
-	R2.*4
-	
-% Bars 381 to 385
-	
-	
-	ces2\ff ces4~
+	f''4-.\p\< f,-. a-.\!
+	R2.*15
+%	bes-.\! bes,8(\f a bes4)
+%	R2.*2
+%	
+%% Bars 371 to 375
+%	d'4-.\f d,-. fis-.
+%	g-. g,8( fis g4)
+%	R2.*2
+%	
+%	ees2\p ees4~
+%% Bars 376 to 380
+%	ees ees2
+%	aes4-._\dimmarkup ees-. ees-.
+%	aes-. ees-. ees-.
+%	R2.*4
+%	
+%% Bars 381 to 385
+%	
+%	
+	ces,2\ff ces4~
 	ces ces2
 	bes4-.\pp bes8( a bes4)
 % Bars 386 to 390
@@ -470,22 +468,22 @@ musicKontrabassMvtIII = \relative c {
 	bes( ces) bes(
 	ces) bes(_\pocoapococresc b)
 	c-. c8( b c4)
+	c-. c8( b c4)
+% Bars 391 to 395
+	c( \once \stemUp des) c\laissezVibrer
 	R2.*9
-%	c-. c8( b c4)
-%% Bars 391 to 395
-%	c( des) c(
 %	des) c( cis)
 %	d( ees) ees(
 %	e!) e( f)
 %	fis( g) g(
 %% Bars 396 to 400
-%	aes) aes2->
+%	aes4) aes2->
 %	aes4-.\f\< aes-. aes-.
 %	aes-. aes-. aes-.
-	aes'4-. aes-. aes-.
-	aes-. aes-. aes-.\!
+%	aes4-. aes-. aes-.
+%	aes-. aes-. aes-.\!
 % Bars 401 to 405
-	a!4-._\semprecresc a-. a-.
+	a'!4-._\semprecresc a-. a-.
 	a a a
 	a a a
 	a a a
@@ -506,10 +504,10 @@ musicKontrabassMvtIII = \relative c {
 	f f2
 	bes4-.-> f-. f-.
 	bes-.-> f-. f-.
-	R2.*20
-%	ees2-> ees'4~\fz
-%	ees2 d4-.
-%% Bars 421 to 425
+	ees2-> ees'4~\fz
+	ees2 d4-.
+% Bars 421 to 425
+	R2.*18
 %	cis-. a-. cis-.
 %	d-. f-. d-.
 %	ees,2-> ees'4~\fz
