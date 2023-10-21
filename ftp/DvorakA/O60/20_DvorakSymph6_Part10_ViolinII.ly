@@ -46,12 +46,11 @@
 	}
 	\pageBreak
 	\markup {
-		\vspace #24
+		\vspace #24 
 		\abs-fontsize #20
 		\fill-line {
 			\center-column {
-				\line { "The first movement is formatted" }
-				\line { "to begin  on the right page." }
+				\line { "Page left blank to improve layout" }
 			}
 		}
 	}
