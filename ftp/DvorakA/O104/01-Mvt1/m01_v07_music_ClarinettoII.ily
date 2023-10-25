@@ -130,7 +130,7 @@ musicClarinettoIIMvtI = \relative c' {
 	\ni \mmrPos #-4 R1
 	\mmrPos #-6 R
 	\mmrPos #-4 R \no
-	r8. d16_\fcresc( ees8)[ r16 a,]( c8)[ r16 g]( a8)[ r16 d,](
+	r8. d16_\fcresc( e8)[ r16 a,]( c8)[ r16 g]( a8)[ r16 d,](
 % Bars 126 to 130
 	g8\f) r r4 r2
 	r8 \shape #'((0 . 0)(0 . 1)(0 . 1)(0 . -2)) Slur cis,16(\f\< d dis e f fis g gis a bes b c cis\!) r \mark \default

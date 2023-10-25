@@ -478,6 +478,46 @@ textSpannerRightPadding = #(define-music-function
 )
 
 
+omitFlag = \once \omit Flag
+omitBeam = \once \omit Beam
+omitDots = \once \omit Dots
+
+
+% DEFAULT SCRIPT POSITION
+% from http://lilypond.1069038.n5.nabble.com/Articulation-mark-amp-slur-placement-td237907.html#a237941
+%
+#(define my-script-alist
+	(
+		append `(
+			(marcato
+				(script-stencil . (feta . ("dmarcato" . "umarcato")))
+				(padding . 0.20)
+				(avoid-slur . outside)
+				;;(staff-padding . ())
+				(quantize-position . #t)
+				(side-relative-direction . ,DOWN))
+			(staccatissimo
+				(avoid-slur . outside)
+				(quantize-position . #t)
+				(script-stencil . (feta . ("dstaccatissimo" . "ustaccatissimo")))
+				(padding . 0.20)
+				(skyline-horizontal-padding . 0.10)
+				(side-relative-direction . ,DOWN)
+				(toward-stem-shift . 1.0)
+				(toward-stem-shift-in-column . 0.0))
+		)
+		default-script-alist)
+)
+
+beamStructure = {
+	\set Timing.beamExceptions = #'()
+	\set Timing.baseMoment = #(ly:make-moment 1/4)
+	\set Timing.beatStructure = 1,1,1,1
+}
+
+
+
+
 % footnotes:
 footnotePageII = \markup {
 	"(*) Orig." \hspace #2

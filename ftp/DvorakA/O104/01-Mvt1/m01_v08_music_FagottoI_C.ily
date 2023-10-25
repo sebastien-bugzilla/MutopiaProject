@@ -11,7 +11,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 1 to 5
 	R1*2
 	
-	b8.--\mp\< cis16-. d8.-- cis16-. b4-- a--\!
+	b8.--\mp\<[ cis16-. d8.-- cis16-.] b4-- a--\!
 	g-- fis\>-- e-- d--\!
 	fis1\p\>~
 % Bars 6 to 10
@@ -110,10 +110,10 @@ musicFagottoIMvtI = \relative c {
 	
 	
 	\mark \default
-	b8\fz r d,\p-. fis-. d-. fis-. d-. fis-.
+	b8\fz r d,\p-. fis-. d-.[ fis-.] d-. fis-.
 % Bars 111 to 115
 	d-. r d-. fis-. d-. fis-. d-.\noBeam r
-	g-. r g-. b-. g-. b-. g-. b-.
+	g-. r g-. b-. g-.[ b-.] g-. b-.
 	g-. r g-. b-. g-. b-. g-.\noBeam r
 	R1*10
 % Bars 116 to 120
@@ -211,7 +211,7 @@ musicFagottoIMvtI = \relative c {
 	
 	\mark \default
 	R1
-	\partCombineApart f8-._\p aes16-. aes-. aes8-. b!-. b-. d-. d-. f-.
+	\partCombineApart f8-._\p aes16-. aes-. aes8-. b!-. b-.[ d-.] d-. f-.
 % Bars 211 to 215
 	ees r r4 r2 \partCombineAutomatic
 	R1*2
@@ -257,7 +257,7 @@ musicFagottoIMvtI = \relative c {
 	\clef bass \mark \default
 % Bars 261 to 265
 	r8 cis,\mf( d! cis) b'( ais gis ais)
-	r ais(\< gis ais) d!\( cis \aIIExtraOffset #'(-3 . -3) d cis\)\!
+	r \partCombineApart \stemDown \omitBeam ais( gis ais) \stemUp d!\([ cis] d cis\) \partCombineAutomatic
 	r fis(\f\< eis fis)\! r fis(\< eis fis)\!
 	d8->(\fz cis16) r d8->( cis16) r d8->( cis16) r d8->( cis16) r 
 	cis8\brack\f r r4 r2
@@ -280,17 +280,17 @@ musicFagottoIMvtI = \relative c {
 % Bars 286 to 290
 	cis4(\< \hairpinShorten #'(0 . 16) ais2.->\fz\>)
 	cis4(\! dis cis dis)
-	cis(\< ais2._\fzmarkup->)
+	cis(\< ais!2._\fzmarkup->)
 	e'4(\mf fis e fis)
 	cis( dis_\dimD\> cis dis)\!
 % Bars 291 to 295
 	b( cis_\dimD_\> b cis)\!
-	b( cis d! ees)
+	b( cis! d! ees)
 	\tuplet 3/2 4 {bes8\pp bes bes  bes bes bes  bes bes bes  bes bes bes 
 	bes bes bes bes bes bes bes bes bes bes bes bes }
 	ees4( d_\dimmarkup c d)
 % Bars 296 to 300
-	g,( f ees f)
+	g,( f ees! f)
 	ais16-.\p ais-. ais-. ais-. r8. ais16-. b!\<-. b-. b-. b-.\! r8. b16-.
 	c16-._\crescmarkup c-. c-. c-. r8. c16-.\< cis!-. cis-. cis-. cis-.\! r4
 	fis,8\fz r \tuplet 3/2 4 {fis8\p-. fis-. fis-.} fis r \tuplet 3/2 4 {fis-. fis-. fis-.}

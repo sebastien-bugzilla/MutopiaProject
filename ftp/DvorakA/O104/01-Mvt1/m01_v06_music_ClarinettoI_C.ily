@@ -146,7 +146,7 @@ musicClarinettoIMvtI = \relative c' {
 	d8 r16 \partCombineAutomatic f_\fcresc( bes8)[ r16 d,]( g8)[ r16 bes,]( e8)[ r16 g,](
 % Bars 126 to 130
 	cis8\f) r r4 r2
-	r8 cis,16(\f\< d dis e f fis g gis a bes b c cis\!\noBeam) r \mark \default
+	r8 cis,16(\f\< d dis e f fis g gis a bes b c! cis\!\noBeam) r \mark \default
 	\partCombineApart f1\startTrillSpan_\f
 	f\startTrillSpan
 	f\startTrillSpan
@@ -186,9 +186,9 @@ musicClarinettoIMvtI = \relative c' {
 	aes_(_\pdim g ges f!)
 % Bars 166 to 170
 	e!2_(_\p a!4 e8. fis16)
-	cis8._( a16 e'2.) \partCombineAutomatic
-	a,4\(\pp gis fis gis
-	e\) r r2
+	cis8._( a16 e'2.) 
+	a,4\( gis fis gis
+	e\) \partCombineAutomatic r r2
 	R1*2
 % Bars 171 to 175
 	
@@ -233,7 +233,7 @@ musicClarinettoIMvtI = \relative c' {
 	
 	aes,1\p~ \mark \default
 	aes8 r r4 r2
-	d8-.-\tweak X-offset #-1 \p f16-. f-. f8-. aes-. aes-. ces-. ces-. d!-.
+	d8-.-\tweak X-offset #-1 \p f16-. f-. f8-. aes-. aes-.[ ces-.] ces-. d!-.
 % Bars 211 to 215
 	ees r r4 r2
 	R1*2
@@ -281,7 +281,7 @@ musicClarinettoIMvtI = \relative c' {
 	\mark \default
 % Bars 261 to 265
 	r2 gis,,8(-\tweak X-offset #-3 \mf a d cis)
-	r e\(\< d cis\) gis'\( a b cis\)\!
+	r \partCombineApart e d cis gis'\([ a] b cis\) \partCombineAutomatic
 	r e(\f\< f! e)\! r e(\< f e)\!
 	f,!8(-\tweak X-offset #-1 \fz^> e16) r f8->( e16) r f8->( e16) r f8->( e16) r 
 	cis'8\brack\f r r4 r2 
@@ -314,8 +314,8 @@ musicClarinettoIMvtI = \relative c' {
 % Bars 291 to 295
 	f!_( e_\dimD_\> f e)\!
 	f( e_\> ees d!8\! a) \partCombineAutomatic
-	bes4(\pp aes ges aes)
-	bes( aes ges aes)
+	bes4(\pp aes ges! aes)
+	bes( aes ges! aes)
 	\once \partCombineApart des,8 r r4 r2
 % Bars 296 to 300
 	R1*3

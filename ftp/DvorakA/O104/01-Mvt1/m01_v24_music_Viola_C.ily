@@ -34,7 +34,7 @@ musicViolaMvtI = \relative c {
 	q: q:
 % Bars 21 to 25
 	q8 r cis8:16\fz ais: g: fis: e: d:
-	cis: b': ais: g':-> fis:\< e: d: cis: \mark \default
+	cis: b': ais:[ g':->] fis:\< e: d: cis: \mark \default
 	\grace {s8} <b d>2.:16\ff <g e'>4:
 	<fis d'>: <e cis'>: <fis d'>2:
 	<b d>: q:
@@ -72,7 +72,7 @@ musicViolaMvtI = \relative c {
 	d(\pp e d e)
 % Bars 56 to 60
 	<c fis>(\ppp <cis g'!> <c fis> <cis g'>)
-	<d fis>2(\pp d)~
+	<d~ fis>2^(\pp d)~
 	d1
 	cis2( d)\<
 	e4(\> g2 cis,4)\!
@@ -96,13 +96,13 @@ musicViolaMvtI = \relative c {
 	<a, d>4\ff-> <fis' a>8-. q-. <g b>-. <fis a>-. q-. r
 % Bars 76 to 80
 	<a, d>4-> <fis' a>8-. q-. bes-. a-. a-. r
-	fis-. a-. cis-. d-. d,-. a'-. a,-. r
-	fis'-. a-. cis-. d-. d,-. a'-. a,-. r
+	fis-.[ a-.] cis-. d-. d,-. a'-. a,-. r
+	fis'-.[ a-.] cis-. d-. d,-. a'-. a,-. r
 	<a d>4 d8 d <a d>4 d8 d 
 	<a d>4_\dimD\> g'8-. fis-. <a, fis'>4 g'8-. fis-.\!
 % Bars 81 to 85
-	d-._\psemprepiudim fis,-. d'-. d,-. d'-. fis,-. d'-. d,-. 
-	a'-. fis-. g\>-. fis-. a-. fis-. g-. fis-.\!
+	d-.[_\psemprepiudim fis,-.] d'-. d,-. d'-.[ fis,-.] d'-. d,-. 
+	a'-.[ fis-.] g\>-. fis-. a-.[ fis-.] g-. fis-.\!
 	fis-. r g\pp-. fis-. fis-. r g-. fis-. 
 	fis-. r g4( fis g
 	fis_\ppp g fis e)
@@ -155,7 +155,7 @@ musicViolaMvtI = \relative c {
 	<b d>8\fz r r4 r2
 	q8\fz r r4 r2
 % Bars 126 to 130
-	r4 e,8(\p\< g ais d) cis( e)\!
+	r4 e,8(\p\< g ais[ d)] cis( e)\!
 	<cis e>8\fz r r4 r2 \mark \default
 	R1*4
 	
@@ -193,7 +193,7 @@ musicViolaMvtI = \relative c {
 % Bars 156 to 160
 	\hairpinShorten #'(0 . 2) <a d>2:_\dimD\> <b d>4:\! <cis e>: \mark \default
 	d8\p r r4 r2
-	cis8\pp^\pizz e d fis cis e d fis
+	\beamStructure cis8\pp^\pizz e d fis cis e d fis
 	cis e ais, cis ais cis ais cis
 	cis e d fis cis e d fis
 % Bars 161 to 165
@@ -263,7 +263,7 @@ musicViolaMvtI = \relative c {
 	<< <g bes>~ {s2 s\<} >>
 	<< q1 {s2 s4 s16 s s s\!} >>
 % Bars 216 to 220
-	bes,16(\f des bes des  g, des' g, des'  g, des' g, des'  g, des' g, des')
+	\stemUp bes,16(\f des bes des \stemNeutral g, des' g, des'  g, des' g, des'  g, des' g, des')
 	ces(\> aes ces aes  ces aes ces aes  ces aes ces aes  ces aes ces aes)\!
 	g( bes g bes  g des' g, des'  g, des' g, des'  g, des' g, des')
 	ces(\> aes ces aes  ces aes ces aes  ces aes ces aes  ces aes ces aes)\!
@@ -296,7 +296,7 @@ musicViolaMvtI = \relative c {
 	fisis)
 	gis(
 	e)
-	<dis b'>(
+	<dis~ b'>^(
 	<dis fisis>)
 % Bars 246 to 250
 	gis~

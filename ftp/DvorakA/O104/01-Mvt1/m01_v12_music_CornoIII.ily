@@ -257,7 +257,7 @@ musicCornoIIIMvtI = \relative c'' {
 	
 	
 	
-	r4 \tuplet 3/2 4 {ais8-.\p^\solo b-. ais-.} ais-. r \tuplet 3/2 4 {ais-. b-. ais-.}
+	r4 \tuplet 3/2 4 {ais8-.\p^\solo b-. ais-.} ais r \tuplet 3/2 4 {ais-. b-. ais-.}
 	b\f r \tuplet 3/2 4 {b-. c!-. b-.} b r \tuplet 3/2 4 {b-. c-. b-.}
 % Bars 301 to 305
 	c\f r c-> b-. c-> b-. c-> b-. 

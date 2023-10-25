@@ -30,7 +30,7 @@ musicViolinoIMvtI = \relative c' {
 	b: ais: e':\fz d: cis: ais: fis: a:
 % Bars 21 to 25
 	g: fis: cis':\fz ais: g: fis: e: d:
-	cis: b: ais: g':-> fis:\< e: d: cis: \mark \default
+	cis: b: ais: g':-> fis:\< e: d: cis:\! \mark \default
 	\acciaccatura b8 b'4.\ff cis16 d b2
 	b4. a!16 fis b2
 	b8.[ d16 fis8. e16] d4.. cis16
@@ -114,7 +114,7 @@ musicViolinoIMvtI = \relative c' {
 	
 	
 	aes2.:32\p\< e'!4:
-	d: c: <b d>: g':
+	d: c: <b d>: g':\!
 	<g, g'>4\f r r r8 g'\p^\pizz
 % Bars 96 to 100
 	g4\brack\fz r r r8 g\brack\p
@@ -132,12 +132,12 @@ musicViolinoIMvtI = \relative c' {
 	r q r q r q r q
 	r <g, e'> r q r q r q
 	r q r q r q r q
-	c(\pp d c d c d c d)
+	c(\pp d c[ d] c[ d] c d)
 	c( d e4 f2)
 % Bars 116 to 120
-	c8( d c d c d c d)
+	c8( d c[ d] c[ d] c d)
 	c( d e4 f2)
-	b,8( cis! b cis b cis b cis)
+	b,8( cis! b[ cis] b[ cis] b cis)
 	b( cis dis4 e2)
 	ais,4(\p cis~ cis8_\crescmarkup b fis'4)
 % Bars 121 to 125
@@ -147,7 +147,7 @@ musicViolinoIMvtI = \relative c' {
 	<d b'>8\fz r r4 r2
 	<fis d'>8\fz r  r4 r2
 % Bars 126 to 130
-	r4 ais,8(\p\< cis e ais) e(  g)\!
+	r4 ais,8(\p\< cis e[ ais)] e(  g)\!
 	ais\fz r r4 r2 \mark \default
 	b8-.\f b,-. r4 r2
 	g'8-.\f g,-. r4 r2
@@ -180,7 +180,7 @@ musicViolinoIMvtI = \relative c' {
 	a2\startTrillSpan~ a8\stopTrillSpan) r r4
 	r2 r4 e(\pp
 	a2\startTrillSpan~ a8\stopTrillSpan) r r4
-	r a(\mf\< cis d)
+	r a(\mf\< cis d)\!
 	d2(\> e4 fis)\!
 % Bars 156 to 160
 	fis2(_\dimD\> g4 cis,)\! \mark \default
@@ -275,7 +275,7 @@ musicViolinoIMvtI = \relative c' {
 	q: q:
 	cisis16(\pp dis e dis cisis dis e dis cisis dis e dis cisis dis e dis)
 % Bars 241 to 245
-	bis( cis dis cis bis cis dis cis bis cis dis cis bis cis dis cis)
+	bis( cis! dis cis bis cis dis cis bis cis dis cis bis cis dis cis)
 	cisis( dis e dis cisis dis e dis cisis dis e dis cisis dis e dis)
 	bis( cis! dis cis bis cis dis cis bis cis dis cis bis cis dis cis)
 	cisis( dis cisis dis cisis dis cisis dis cisis dis cisis dis cisis dis cisis dis)
@@ -360,12 +360,12 @@ musicViolinoIMvtI = \relative c' {
 	ais4. gis16 fis b2
 % Bars 321 to 325
 	b8.(-> ais32 b) cis8.(-> bis32 cis) dis8.->( cisis32 dis) e8.->(\< dis32 e)
-	fis8.(-> eis32 fis)\! a!8(\fz gis) fis( e!) dis( cis) \mark \default
+	fis8.(-> eis32 fis)\! a!8(\fz gis) fis([ e!)] dis( cis) \mark \default
 	b r r4 r2
 	R1
 	r8 gis,\p^\pizz r ais r b r cis
 % Bars 326 to 330
-	r8 dis\< b b' b, b' b, b'\!
+	r8 dis\<\noBeam b b' b,[ b'] b, b'\!
 	gis\fz r r4 r2
 	<d,! d'!>8-\tweak extra-offset #'(1.5 . 0.9) \p^\pizz r r4 r r8 eis\f
 	fis r r4 r2

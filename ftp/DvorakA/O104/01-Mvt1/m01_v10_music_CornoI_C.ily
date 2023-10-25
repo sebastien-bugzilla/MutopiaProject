@@ -82,7 +82,7 @@ musicCornoIMvtI = \relative c'' {
 % Bars 71 to 75
 	R1
 	d'1\p
-	d2. d4
+	\stemDown d2. d4 \stemNeutral
 	ees1_\crescmarkup \mark \default
 	f4\ff r8 f g-. f-. f-. r
 % Bars 76 to 80
@@ -97,7 +97,7 @@ musicCornoIMvtI = \relative c'' {
 	
 % Bars 91 to 95
 	
-	\partCombineApart r4 g,(_\pp a bes~
+	\partCombineApart r4 \stemUp g,(_\pp a bes~
 	bes) des8.(_\< c16 fes2~
 	fes2._\f_\> ees4~
 	ees)\! r r2 \partCombineAutomatic
@@ -152,7 +152,7 @@ musicCornoIMvtI = \relative c'' {
 	f-. f-. f-. f-.\! r8. f16_\< f-. f-. f-. f-.\! r4
 	f8_\f r \tuplet 3/2 4 {b,_\p c b} b r \tuplet 3/2 4 {b c b}
 	c_\f r \tuplet 3/2 4 {c_\brack_\p_\< des c} c r \tuplet 3/2 4 {c des c\!}
-	des_\f r \partCombineAutomatic e!\f\<-. dis-. e-. dis-. e-. dis-.\!
+	des_\f r \partCombineAutomatic e!\f\<-. dis-. e-.[ dis-.] e-. dis-.\!
 	e->-\tweak X-offset #0.2 \fz r r4 r2 \mark \default
 % Bars 176 to 180
 	\tuplet 3/2 4 {f8-^-\tweak X-offset #-1 \mf\< d, d d f f f bes bes bes  d d\! }
@@ -272,13 +272,13 @@ musicCornoIMvtI = \relative c'' {
 	f8\f r r4 r2
 	ees8\f r r4 r2
 % Bars 301 to 305
-	des8\f r des-> c-. des-> c-. des-> c-. 
+	des8\f r des-> c-. des->[ c-.] des-> c-. 
 	des\fz r r4 r2 \mark \default
 	\tupletYoffset #1.5 \tuplet 3/2 4 {r8 b,\f b b\< d d d g g g b b\!}
-	b2\>( fis)\!
+	b2\>( fis!)\!
 	\tuplet 3/2 4 {g8\brack\p\noBeam b, b b\< d d d g g g b b\!}
 % Bars 306 to 310
-	b2\fz\>( fis)\!
+	b2\fz\>( fis!)\!
 	\partCombineApart b4(_\fp c) b(_\fp c)
 	a(_\fp b) a(_\fp b)
 	b( c_\crescmarkup cis d) \partCombineAutomatic
@@ -315,7 +315,7 @@ musicCornoIMvtI = \relative c'' {
 % Bars 336 to 340
 	R1*5
 % Bars 341 to 345
-	r4 r8 c,!\f-. cis-. d-. ees-. c-.
+	r4 r8 c,!\f-. cis-. d-. ees-. c!-.
 	d1\ff-^
 	d-^
 	d-^

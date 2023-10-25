@@ -147,7 +147,7 @@ musicFlautoIMvtI = \relative c'' {
 	
 	
 	
-	r8 b,,(\p d-. e-. b'-.) r r4
+	r8 b,,(-.\p d-. e-. b'-.) r r4
 	R1
 % Bars 151 to 155
 	r8 a,(-. cis-. e-. a-.) r r4

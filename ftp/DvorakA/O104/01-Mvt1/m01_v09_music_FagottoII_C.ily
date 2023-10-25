@@ -11,7 +11,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 1 to 5
 	R1*2
 	
-	b8.--\mp\< cis16-. d8.-- cis16-. b4-- a--\!
+	b8.--\mp\<[ cis16-. d8.-- cis16-.] b4-- a--\!
 	g-- fis\>-- e-- d--\!
 	fis1\p\>~
 % Bars 6 to 10
@@ -110,10 +110,10 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	\mark \default
-	b,8\fz r b\p-. d-. b-. d-. b-. d-.
+	b,8\fz r b\p-. d-. b-.[ d-.] b-. d-.
 % Bars 111 to 115
 	b-. r b-. d-. b-. d-. b-.\noBeam r
-	e-. r e-. g-. e-. g-. e-. g-.
+	e-. r e-. g-. e-.[ g-.] e-. g-.
 	e-. r e-. g-. e-. g-. e-.\noBeam r
 	R1*10
 % Bars 116 to 120
@@ -257,7 +257,7 @@ musicFagottoIIMvtI = \relative c {
 	\clef bass \mark \default
 % Bars 261 to 265
 	r8 ais,\mf( b ais) d!( cis eis fis)
-	r fis(\< eis fis) b\( ais d cis\)\!
+	r fis\< eis fis b\([ ais] d cis\)\!
 	r fis(\f\< eis fis)\! r fis(\< eis fis)\!
 	b,8->(\fz ais16) r b8->( ais16) r b8->( ais16) r b8->( ais16) r 
 	fis8\brack\f r r4 r2
@@ -273,7 +273,7 @@ musicFagottoIIMvtI = \relative c {
 	
 % Bars 281 to 285
 	dis,1\mf
-	eis2.(\< gis4)\!
+	eis2.(\< gis!4)\!
 	b2(\> gis4 ais)\! \mark \default
 	b2.\p\> b4\!
 	ais(\pp b ais b)

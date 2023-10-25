@@ -1,6 +1,6 @@
 %  work        : Cello Concerto n°2 in B minor Op. 104
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 19 August 2021, 13:55
+%  date        : Saturday 21st October 2023, 18:11
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -87,9 +87,9 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 	
-	r2 r16 g'\p\<-. g-. g-. g8-. g16-. g-.
+	r2 r16 g'\p\<-. g-. g-. g8-. g16-. g-.\!
 % Bars 96 to 100
-	g8\fz r r4 r16 g-.\p\< g-. g-. g8-. g16-. g-.
+	g8\fz r r4 r16 g-.\p\< g-. g-. g8-. g16-. g-.\!
 	g8\fz r r4 r2
 	R1*3
 	

@@ -30,8 +30,8 @@ musicTromboneIMvtI = \relative c' {
 	R1
 % Bars 31 to 35
 	\partCombineApart e2->_\f d->
-	c-> b-> \partCombineAutomatic
-	cis!8\f r r4 r2
+	c-> b-> 
+	cis!8 \partCombineAutomatic r r4 r2
 	R1*11
 % Bars 36 to 40
 	
@@ -233,6 +233,6 @@ musicTromboneIMvtI = \relative c' {
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {dis8 dis dis} dis4 dis
 	dis2 dis4. dis8
-	dis1\<
-	b4\f r r2 \bar "|."
+	\partCombineApart dis1
+	b4 \partCombineAutomatic r r2 \bar "|."
 }

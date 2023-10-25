@@ -137,7 +137,7 @@ musicClarinettoIIMvtI = \relative c' {
 	R1*3
 	
 	
-	r8. d16( ees8)[ r16 a,]( c8)[ r16 g]( a8)[ r16 d,](
+	r8. d16( e8)[ r16 a,]( c8)[ r16 g]( a8)[ r16 d,](
 % Bars 126 to 130
 	g8\f) r r4 r2
 	r8 cis,16(\f\< d dis e f fis g gis a bes b c cis\!\noBeam) r \mark \default
@@ -223,7 +223,7 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	aes,1\p~ \mark \default
 	aes8 r r4 r2
-	b8-.-\tweak X-offset #-1 \p d16-. d-. d8-. f-. f-. aes-. aes-. ces-.
+	b8-.-\tweak X-offset #-1 \p d16-. d-. d8-. f-. f-.[ aes-.] aes-. ces!-.
 % Bars 211 to 215
 	bes! r r4 r2
 	R1*2
@@ -282,7 +282,7 @@ musicClarinettoIIMvtI = \relative c' {
 	\mark \default
 % Bars 261 to 265
 	r2 gis,8(-\tweak X-offset #-3 \mf a d cis)
-	r e\(\< d cis\) gis'\( a gis a\)\!
+	r \stemUp \omitBeam e\(\< d cis\) \stemDown gis'\([ a] gis a\)\!
 	r cis(\f\< d cis)\! r cis(\< d cis)\!
 	d,8(-\tweak X-offset #-1 \fz^> cis16) r d8->( cis16) r d8->( cis16) r d8->( cis16) r 
 	g'8\brack\f r r4 r2 
@@ -297,9 +297,9 @@ musicClarinettoIIMvtI = \relative c' {
 % Bars 276 to 280
 	r8 b-.\p b-. d-. d-. r r4
 	R1
-	r8 a-. a-. a-. cis-. r r4
+	r8 a-. a-. a-. cis!-. r r4
 	r8 b-. b-. d-. d-. r r4
-	r8 a-. a-. a-. cis-. r r4
+	r8 a-. a-. a-. cis!-. r r4
 % Bars 281 to 285
 	R1*3
 	
@@ -334,7 +334,7 @@ musicClarinettoIIMvtI = \relative c' {
 	e2.\f^^ r4
 % Bars 311 to 315
 	r2 r4 \tuplet 3/2 4 {bes'8\f\< d f}
-	bes,2\! ees4-. ees-.
+	bes,2\! ees!4-. ees-.
 	cis8 r r4 r2
 	r8 cis\fz r4 r2
 	r8 cis\fz r4 r2
@@ -352,7 +352,7 @@ musicClarinettoIIMvtI = \relative c' {
 	
 % Bars 326 to 330
 	
-	r4 g,,2\fp( b4)
+	r4 g,,2\fp( b!4)
 	b4.( cis8 d2)
 	\tuplet 3/2 4 {d8\mf a' a} a4 \tuplet 3/2 4 {a8 a a} a4
 	\tuplet 3/2 4 {a8 a a} a4 \tuplet 3/2 4 {a8 a a} a4

@@ -163,15 +163,15 @@ musicOboeIIMvtI = \relative c' {
 % Bars 156 to 160
 	a1 \mark \default
 	a2.( ais4)
-	b fis g fis
-	g \hairpinShorten #'(1 . 0) dis2-\tweak rotation #'(-1 1 0) \> e4\!
+	b \stemUp fis g fis
+	g \hairpinShorten #'(1 . 0) dis2-\tweak rotation #'(-1 1 0) \> e4\! \stemNeutral
 	g4( fis g fis)
 % Bars 161 to 165
 	g4(\< dis2^>\> e4\!)
 	b'(\crescD\< a b a)\!
 	g(\mf fis g fis)
 	f( e f e)
-	\shape #'((0 . 0.5)(0 . 0.5)(0 . 0)(0 . 0)) Slur d4( e f fis)
+	\shape #'((0 . 0.5)(0 . 0.5)(0 . 0)(0 . 0)) Slur \voiceTwo d4( e f fis)
 % Bars 166 to 170
 	fis4(\pp eis dis eis)
 	fis( eis dis eis)
@@ -273,7 +273,7 @@ musicOboeIIMvtI = \relative c' {
 	\mark \default
 % Bars 261 to 265
 	R1
-	r4 d8\(\mf cis\< g'! fis eis\! fis\)
+	r4 d8\mf cis\< g'![ fis] eis\! fis
 	r ais(\f\< b ais)\! r ais(\< b ais)\!
 	eis8\fz^>\( fis16\) r eis8->\( fis16\) r eis8\(-> fis16\) r eis8->\( fis16\) r
 	ais8-\tweak X-offset #0.2 \brack\f r r4 r2
@@ -336,7 +336,7 @@ musicOboeIIMvtI = \relative c' {
 	b2\ff b
 	ais b
 % Bars 321 to 325
-	b8 r cis r dis r e r
+	b8 r cis r dis! r e r
 	fis2 e4-. e-. \mark \default
 	dis8 r r4 dis,2\p~
 	dis dis2~
@@ -348,7 +348,7 @@ musicOboeIIMvtI = \relative c' {
 	\tuplet 3/2 4 {dis'8\mf dis dis} dis4 \tuplet 3/2 4 {dis8 dis dis} dis4 
 	\tuplet 3/2 4 {dis8 dis dis} dis4 \tuplet 3/2 4 {dis8 dis dis} dis4 
 % Bars 331 to 335
-	b8( cis16 dis b8 cis16 dis b8 cis16 dis b8 cis16 dis)
+	b8( cis16 dis! b8 cis16 dis b8 cis16 dis b8 cis16 dis)
 	b8 r r4 r2
 	R1
 	\naturaltrill f'1\startTrillSpan\<

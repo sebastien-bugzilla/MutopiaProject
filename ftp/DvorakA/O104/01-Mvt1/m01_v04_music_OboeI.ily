@@ -270,7 +270,7 @@ musicOboeIMvtI = \relative c'' {
 	gis4 r  r r8 gis\p \mark \default
 	gis2.( ais8 b)
 	b4( ais2) ais4
-	b2.(_\crescmarkup cis8 d)
+	b2.(_\crescmarkup cis8 d!)
 % Bars 251 to 255
 	d4(\< cis2) cis4
 	d2.( e8 fis)\!

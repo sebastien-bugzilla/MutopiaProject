@@ -1,6 +1,6 @@
 %  work        : Cello Concerto n°2 in B minor Op. 104
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 19 August 2021, 13:55
+%  date        : Saturday 21st October 2023, 18:11
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -19,7 +19,7 @@ musicFlautoIMvtI = \relative c'' {
 	
 % Bars 16 to 20
 	r4 g8.->\f-\tweak extra-offset #'(0 . 0.7) \< fis16-. b8.-> ais16-. d8.-> cis16-.\!
-	e8 r g,8(->\ff fis16) r g8(-> fis16) r g8(-> fis16) r 
+	\once \partCombineApart e8 r g,8(->\ff fis16) r g8(-> fis16) r g8(-> fis16) r 
 	g8(-> fis16) r g8(-> fis16) r g8(-> fis16) r g8(-> fis16) r 
 	e'1\f~
 	e~
@@ -92,9 +92,9 @@ musicFlautoIMvtI = \relative c'' {
 	
 	
 	
-	r2 r16 g'\p\<-. g-. g-. g8-. g16-. g-.
+	r2 r16 g'\p\<-. g-. g-. g8-. g16-. g-.\!
 % Bars 96 to 100
-	g8\fz r r4 r16 g-.\p\< g-. g-. g8-. g16-. g-.
+	g8\fz r r4 r16 g-.\p\< g-. g-. g8-. g16-. g-.\!
 	g8\fz r r4 r2
 	R1*3
 	
@@ -143,7 +143,7 @@ musicFlautoIMvtI = \relative c'' {
 	
 	
 	
-	\partCombineApart r8 b,,(_\p d-. e-. b'-.) r r4 \partCombineAutomatic
+	\partCombineApart r8 b,,(-._\p d-. e-. b'-.) r r4 \partCombineAutomatic
 	R1
 % Bars 151 to 155
 	\partCombineApart r8 a,(-. cis-. e-. a-.) r r4
@@ -216,7 +216,7 @@ musicFlautoIMvtI = \relative c'' {
 	d~
 	d8 r r4 r2 \mark \default
 	R1
-	\partCombineApart d8_\p-. f16-. f-. f8-. aes-. aes-. b!-. b-. d-.
+	\partCombineApart d8_\p-. f16-. f-. f8-. aes-. aes-.[ b!-.] b-. d-.
 % Bars 211 to 215
 	c r r4 r2 \partCombineAutomatic
 	R1
@@ -342,7 +342,7 @@ musicFlautoIMvtI = \relative c'' {
 	b4.\ff cis16 dis b2
 	ais4. gis16 fis b2
 % Bars 321 to 325
-	b8 r cis r dis r e r
+	\once \partCombineApart b8 r cis r dis r e r
 	fis2 e4-. \once \partCombineApart ais,-. \mark \default
 	\once \partCombineApart b8 r r4 r2
 	R1*2

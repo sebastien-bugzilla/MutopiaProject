@@ -253,7 +253,7 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 261 to 265
 	r8 <ais fis'>16-.\ff q( <b g'!>\fz) q( <ais fis'>) q( <d! b'>\fz) q( <cis ais'>) q( <eis d'>)\fz q( <fis cis'>) q-.
 	r8 <fis ais>16-. q( <b d>)\fz q( <ais cis>) q( \clef treble <b g'!>)\fz q( <ais fis'>) q( <d! b'>)\fz q( <cis ais'>) q-.
-	r8 <cis ais'>16-. q( <b' d>)\fz q( <ais cis>) q-. r8 <cis, ais'>16 q( <b' d>)\fz q( <ais cis>) q-.
+	r8 <cis ais'>16-. q( <b' d!>)\fz q( <ais cis>) q-. r8 <cis, ais'>16 q( <b' d>)\fz q( <ais cis>) q-.
 	<g g'>\ff <g g'>( <fis fis'>) q( <g g'>) <g g'>( <fis fis'>) q( <g g'>) <g g'>( <fis fis'>) q( <g g'>) <g g'>( <fis fis'>) q( 
 	<g g'>) q( <fis fis'>) q( <e e'>) q( <cis cis'>) q( \clef tenor <ais ais'>) q( <fis fis'>) q( <e e'>) q( <e cis'>) q
 % Bars 266 to 270
@@ -311,7 +311,7 @@ musicSoloCelloMvtI = \relative c' {
 	a'16( gis a gis) fis8( e) \clef treble b'16( ais b ais) gis8( fis)
 	cis'16 b( cis) b( cis) b( cis) b( cis) b( cis)\< b( cis) b( cis) b(\!
 % Bars 311 to 315
-	d4)_\ffz r r2
+	d!4)_\ffz r r2
 	R1 \clef bass
 	r4 \tupletYoffset #3 \tuplet 3/2 4 {fis,,,8\f\<\upbow-. ais-. cis-. fis-. ais-. cis-.\! } cis8.\upbow(\fz dis32 e)
 	<ais,, fis' cis'>8 r \tupletYoffset #4 \tuplet 3/2 4 {ais8\upbow-. cis-. e-. e-. ais-. cis-. } e8.(\upbow\fz fis32 g)

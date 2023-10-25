@@ -7,8 +7,8 @@
 tempiMvtI = {
 	\tempo \markup { 
 		"Allegro M.M." 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
-		\medium { =116 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
+		\medium {=116} 
 	}
 	s1*22
 	\tempoXoffset #2 \tempo "Grandioso" % bar 23
@@ -17,13 +17,17 @@ tempiMvtI = {
 	s1
 	\tempo "Un poco sostenuto" % bar 57
 	s1*18
-	\tempo "Tempo I." % bar 75
+	\tempo \markup { % bar 75
+		"Tempo I."
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
+		\medium {=116}
+	}
 	s1*12
 	\tempo "Quasi improvisando" % bar 87
 	s1*23
 	\tempo \markup { % bar 110
 		"Tempo I." 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =116 }
 	} 
 	s1*28
@@ -31,7 +35,7 @@ tempiMvtI = {
 	s1*2
 	\tempo \markup { % bar 140
 		"in tempo"
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =100 }
 	}
 	s1*14
@@ -41,7 +45,7 @@ tempiMvtI = {
 	s1
 	\tempo \markup { % bar 158
 		"Tempo I." 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =116 }
 	}
 	s1*33
@@ -53,7 +57,7 @@ tempiMvtI = {
 	s1*2
 	\tempoXoffset #2 \tempo \markup { % bar 224 (source facsimile)
 		"In tempo" 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =100 }
 	} 
 	s1*16
@@ -61,7 +65,7 @@ tempiMvtI = {
 	s1*31
 	\tempo \markup { % bar 271
 		"Molto espressivo e sostenuto"
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =100 }
 	}
 	s1*10
@@ -71,7 +75,7 @@ tempiMvtI = {
 	s1
 	\tempo \markup { % bar 285
 		"Tempo I." 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =116 }
 	} 
 	s1*33
@@ -81,7 +85,7 @@ tempiMvtI = {
 	s1*10
 	\tempo \markup { % bar 329
 		"Più mosso" 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =132 }
 	}
 	s1*12
@@ -89,7 +93,7 @@ tempiMvtI = {
 	s1
 	\tempo \markup { % bar 342
 		"Tempo I." 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =116 }
 	}
 }

@@ -23,8 +23,8 @@ musicOboeIMvtI = \relative c'' {
 	fis8.([ ais16 cis8. b16] ais4 g) \partCombineAutomatic
 	fis8.\mf\< ais16 cis8. b16 ais8. cis16 e8. d16\!
 % Bars 16 to 20
-	cis8._\f-\tweak extra-offset #'(0 . 0.7) _\< e16 g8.-> fis16-. b8.-> ais16-. d8.-> cis16-.\!
-	cis8 r \aIIXoffset #-3 g8->-\ff( fis16) r g8(-> fis16) r g8(-> fis16) r 
+	\oneVoice \omitBeam \omitDots cis8._\f-\tweak extra-offset #'(0 . 0.7) _\< e16 \voiceOne g8.-> fis16-. b8.-> ais16-. d8.-> cis16-.\!
+	\once \partCombineApart cis8 r \aIIXoffset #-3 g8->-\ff( fis16) r g8(-> fis16) r g8(-> fis16) r 
 	g8(-> fis16) r g8(-> fis16) r g8(-> fis16) r g8(-> fis16) r 
 	ais1\f~
 	ais~
@@ -82,7 +82,7 @@ musicOboeIMvtI = \relative c'' {
 	b2 fis4(~ fis8. d'16)
 	d4( fis8 d a2)~
 	a1 \partCombineAutomatic \mark \default
-	a'4 r8 a b-. a-. a-. r
+	\once \stemDown a'4 r8 a b-. a-. a-. r
 % Bars 76 to 80
 	a4 r8 a bes-. a-. a-. r
 	a4-> g8 fis fis e e r
@@ -163,7 +163,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 156 to 160
 	fis2_\dimD_\>( g4 cis,) \mark \default
 	\hairpinShorten #'(0 . -7) e4(_\pdimD\> d2 cis4)\!
-	b(-\tweak X-offset #0.5 _\pp ais b ais
+	b_(-\tweak X-offset #0.5 _\pp ais b ais
 	b fis2-> g4)
 	b4( ais b ais)
 % Bars 161 to 165
@@ -222,7 +222,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	\mark \default
 	R1
-	\partCombineApart d8_\p-. f16-. f-. f8-. aes-. aes-. b!-. b-. d-.
+	\partCombineApart d8_\p-. f16-. f-. f8-. aes-. aes-.[ b!-.] b-. d-.
 % Bars 211 to 215
 	c r r4 r2 \partCombineAutomatic
 	R1
@@ -230,7 +230,7 @@ musicOboeIMvtI = \relative c'' {
 	g8( a16 bes g4. d8 g4)
 	g8( a16 bes g4. des8 g4) \partCombineAutomatic
 % Bars 216 to 220
-	g1\f
+	g1\f 
 	ees4( ces2.)
 	ees4(_\< ces'2 bes4)\!
 	\partCombineApart aes(_\dimD_\> ges8. fes16 fes4 d!\!
@@ -261,7 +261,7 @@ musicOboeIMvtI = \relative c'' {
 	gis4 r  r r8 gis_\p \mark \default
 	gis2.( ais8 b)
 	b4( ais2) ais4
-	b2.(_\crescmarkup cis8 d)
+	b2.(_\crescmarkup cis8 d!)
 % Bars 251 to 255
 	d4(_\< cis2) cis4
 	d2.( e8 fis)\!
@@ -276,7 +276,7 @@ musicOboeIMvtI = \relative c'' {
 	\mark \default
 % Bars 261 to 265
 	R1
-	r4 d,8\(\mf cis\< g'! fis b\! ais\)
+	r4 \partCombineApart d,8\( cis g'![ fis] b ais\) \partCombineAutomatic
 	r cis(\f\< d! cis)\! r cis(\< d cis)\!
 	eis,8\fz^>\( fis16\) r eis8->\( fis16\) r eis8\(-> fis16\) r eis8->\( fis16\) r
 	cis'8-\tweak X-offset #0.2 \brack\f r r4 r2
@@ -294,8 +294,8 @@ musicOboeIMvtI = \relative c'' {
 	\partCombineApart fis,1_\mf
 	b2(_\< cis4 dis)\!
 	dis2( e4 ais,) \mark \default
-	cis\( b2 ais4\) \partCombineAutomatic
-	gis\(\pp fisis gis fisis\)
+	cis\( b2 ais4\) 
+	gis\( fisis gis fisis\) \partCombineAutomatic
 % Bars 286 to 290
 	gis(\< dis2^>\fz\> e4\!)
 	gis( fisis gis fisis)

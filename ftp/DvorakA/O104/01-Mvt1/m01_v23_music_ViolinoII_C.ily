@@ -26,7 +26,7 @@ musicViolinoIIMvtI = \relative c' {
 	b: ais: e':\fz d: cis: ais: fis: a:
 % Bars 21 to 25
 	g: fis: cis':\fz ais: g: fis: e: d:
-	cis: b: ais: g':-> fis:\< e: d: cis: \mark \default
+	cis: b: ais: g':-> fis:\< e: d: cis:\! \mark \default
 	\acciaccatura b8 b'4.\ff cis16 d b2
 	b4. a!16 fis b2
 	b8.[ d16 fis8. e16] d4.. cis16
@@ -93,8 +93,8 @@ musicViolinoIIMvtI = \relative c' {
 	fis16( a) a,( d) g8-. fis-. a,16( d) fis,( a) b8-. a-.
 	a16(_\dimmarkup d) fis,( d) b'8-.\> a-. fis16( a) a,( d) d8-. d-.\!
 % Bars 81 to 85
-	fis-._\psemprepiudim a,-. b-. a-. fis'-. a,-. b-. a-.
-	d-. a-. b-.\> a-. d-. a-. b-. a-.\!
+	fis-.[_\psemprepiudim a,-.] b-. a-. fis'-.[ a,-.] b-. a-.
+	d-.[ a-.] b-.\> a-. d-.[ a-.] b-. a-.\!
 	a-. r b-.\pp a-. a-. r b-. a-.
 	a-. r b4( a b
 	a\ppp b a ais)
@@ -364,7 +364,7 @@ musicViolinoIIMvtI = \relative c' {
 	ais4. gis16 fis b2
 % Bars 321 to 325
 	b8.(-> ais32 b) cis8.(-> bis32 cis) dis8.->( cisis32 dis) e8.(->\< dis32 e)
-	fis8.(-> eis32 fis)\! a!8(\fz gis) fis( e) dis( cis)
+	fis8.(-> eis32 fis)\! a!8(\fz gis) fis([ e)] dis( cis)
 	\setSextolet dis,16(_\fpp fis) \tuplet 3/2 4 {fis fis dis} dis16( fis) \tuplet 3/2 4 {fis fis dis} dis16( fis) \tuplet 3/2 4 {fis fis dis} dis16( fis) \tuplet 3/2 4 {fis fis dis} 
 	dis16( fis) \tuplet 3/2 4 {fis fis dis} dis16( fis) \tuplet 3/2 4 {fis fis dis} dis( gis) \tuplet 3/2 4 {gis gis dis} dis( gis) \tuplet 3/2 4 {gis gis dis} 
 	dis( gis) \tuplet 3/2 4 {gis gis dis} fis( ais) \tuplet 3/2 4 {ais ais fis} fis(_\crescmarkup b) \tuplet 3/2 4 {b b fis} gis( cis) \tuplet 3/2 4 {cis cis gis}

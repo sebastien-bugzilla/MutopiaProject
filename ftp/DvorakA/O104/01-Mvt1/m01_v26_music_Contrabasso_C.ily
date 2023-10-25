@@ -34,7 +34,7 @@ musicContrabassoMvtI = \relative c' {
 	fis fis fis fis  fis fis fis fis
 % Bars 21 to 25
 	fis r r4 r2
-	r4 r8 g-.\f\< fis-. e-. d-. cis-. \mark \default
+	r4 r8 g-.\f\< fis-. e-. d-. cis-.\! \mark \default
 	\grace {s8} b2\ff b->
 	b2.\fz b4
 	b2.\fz b4-.
@@ -96,14 +96,14 @@ musicContrabassoMvtI = \relative c' {
 	d4->\ff d'8-. d-. d,-. d'-. d-. r
 % Bars 76 to 80
 	d,4-> d'8-. d-. d,-. d'-. d-. r
-	fis,-. fis'-. e-. d-. d-. a-. a-. r
-	fis-. fis'-. e-. d-. d-. a-. a-. r 
-	d,-. d-. d-. r d'-. d,-. d-. r 
-	d'_\dimD\> d, d r d' d, d\! r
+	fis,-.[ fis'-.] e-. d-. d-. a-. a-. r
+	fis-.[ fis'-.] e-. d-. d-. a-. a-. r 
+	d,-. d-. d-.\noBeam r d'-. d,-. d-.\noBeam r 
+	d'_\dimD\> d, d\noBeam r d' d, d\!\noBeam r
 % Bars 81 to 85
-	d_\psemprepiudim d d r d d d r
-	d d d\> r d d d\! r 
-	d\pp-. d-. d-. r d-. d-. d-. r
+	d_\psemprepiudim d d\noBeam r d d d\noBeam r
+	d d d\>\noBeam r d d d\!\noBeam r 
+	d\pp-. d-. d-.\noBeam r d-. d-. d-.\noBeam r
 	d1
 	c\brack\ppp
 % Bars 86 to 90
@@ -116,7 +116,7 @@ musicContrabassoMvtI = \relative c' {
 	gis2 r
 	r4 gis8-. gis-. r2
 	g!1\fp
-	r4 g2\< g'8-. f-.
+	r4 g2\< g'8-. f-.\!
 	e4\f r r r8 g^\pizz\p
 % Bars 96 to 100
 	e4\fz r r r8 g\brack\p
@@ -130,7 +130,7 @@ musicContrabassoMvtI = \relative c' {
 	
 	
 	
-	\mark \default  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\mark \default  
 	b8\pp^\pizz r d r b r d r
 % Bars 111 to 115
 	b r d r b r d r
@@ -332,9 +332,9 @@ musicContrabassoMvtI = \relative c' {
 	fis r r4 r2
 % Bars 306 to 310
 	fis8 r fis' r r4 fis,8 fis
-	r bis cis cis' r bis, cis cis'
-	r ais, b! b' r ais, b b'
-	r bis,\< cis cis'\! r cisis, dis dis'
+	r bis\noBeam cis cis' r bis,\noBeam cis cis'
+	r ais,\noBeam b! b' r ais,\noBeam b b'
+	r bis,\<\noBeam cis cis'\! r cisis,\noBeam dis dis'
 	e,\f^\arco r r4 r2
 % Bars 311 to 315
 	r4 f2\f\< f'4\!

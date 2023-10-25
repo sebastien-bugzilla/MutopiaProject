@@ -4,9 +4,9 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 19) % 12
+#(set-global-staff-size 12) % 12
 \layout {
-	#(layout-set-staff-size 19) % 12
+	#(layout-set-staff-size 12) % 12
 %	\context {
 %		\CueVoice
 %		fontSize = #-3
@@ -20,12 +20,11 @@
 	\compressEmptyMeasures
 	\context {
 		\Score
-		\override MetronomeMark.font-size = #2
+%		\override MetronomeMark.font-size = #2
 		\override RehearsalMark.font-size = #4 % 8
 		\override RehearsalMark.extra-spacing-width = #'(-0.2 . 0.2)
 		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
 		\override RehearsalMark.outside-staff-priority = ##f
-		\override MetronomeMark.font-size = #+2
 		\override BarNumber.font-size = #2 % 3
 	}
 	\context {
