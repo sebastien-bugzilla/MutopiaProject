@@ -114,7 +114,7 @@ musicFlautoIIMvtII = \relative c'' {
 	g8(\mf c16 b fis4) g8( c16 b
 % Bars 121 to 125
 	fis4) fis8( b16 a e4)
-	e8(\< a16 g d8 e fis g)\!
+	e8(\< a16 g d8[ e] fis g)\!
 	g2.\f
 	g2.~
 	g~

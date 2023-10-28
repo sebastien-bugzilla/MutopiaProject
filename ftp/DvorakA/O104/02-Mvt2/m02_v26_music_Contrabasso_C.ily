@@ -44,7 +44,7 @@ musicContrabassoMvtII = \relative c' {
 	eis_\dimmarkup r fis! r g r
 	c\pp r r4 c,8 r
 	d!_\dimD\> r r4 d8\! r
-	d'2.(\ppp-\tweak X-offset #-5 ^\arco  \mark \default
+	d'2.(\ppp\fermata-\tweak X-offset #-5 ^\arco  \mark \default
 	g,4) r r
 % Bars 36 to 40
 	R2.*3
@@ -91,14 +91,14 @@ musicContrabassoMvtII = \relative c' {
 	a, r a' r r a,^\arco
 	d2.\p\>
 % Bars 76 to 80
-	d8\pp r d'^\pizz d d r
-	d d d r d d
-	d r d d d r
-	d d d r d d
-	d r d d d r
+	d8\pp r d'^\pizz d d\noBeam r
+	d d d\noBeam r d d
+	d r d d d\noBeam r
+	d d d\noBeam r d d
+	d r d d d\noBeam r
 % Bars 81 to 85
-	bes bes bes r b b
-	c\< r c, c c\! r \mark \default
+	bes bes bes\noBeam r b b
+	c\< r c, c c\!\noBeam r \mark \default
 	\grace {s8} <<f,2.-\tweak X-offset #-3 ^\arco {s4\mf\< s s16\> s s s\!}>>
 	f2._\pdim
 	<<f2. {s4\< s s16\> s s s\!}>>
@@ -116,12 +116,12 @@ musicContrabassoMvtII = \relative c' {
 	g,8\pp r16 \tuplet 3/2 4 {g32^\arco g g} g8 r c^\pizz e
 % Bars 96 to 100
 	g r16 \tuplet 3/2 4 {g,32^\arco g g } g8 r r d'^\pizz
-	g dis e r a,[ r16 a]
+	g dis e\noBeam r a,[ r16 a]
 	d!8 r r r16 \tuplet 3/2 4 {dis32^\arco dis dis} e8 r
-	c8-\tweak X-offset #-1 ^\pizz c' b b, a a'
+	c8-\tweak X-offset #-1 ^\pizz c' b[ b,] a a'
 	g r16 \tuplet 3/2 4 {g,32^\arco g g} g4 r8 g^\pizz\<
 % Bars 101 to 105
-	c c' \tuplet 3/2 4 {b b, b} e, e'\!
+	c c' \tuplet 3/2 4 {\once \tupletUp b b, b} e, e'\!
 	fis,\f-^ r16 \tuplet 3/2 4 {fis32^\arco fis fis} fis8 r r fis^\pizz_\dimmarkup
 	g r a r16 a32\p^\arco a a8 r
 	b4^\pizz r8 b_\dimmarkup\noBeam c r16 c32^\arco c
@@ -176,7 +176,7 @@ musicContrabassoMvtII = \relative c' {
 	g\pp~
 	g
 	g_\morendo
-	\acciaccatura g8 g2.
+	\slashedGrace g8 g2.
 % Bar 166
 	g2.\ppp\fermata \bar "|."
 }

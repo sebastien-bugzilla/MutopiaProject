@@ -9,12 +9,12 @@ musicOboeIMvtII = \relative c'' {
 	\key g \major
 %	\transposition a
 % Bars 1 to 5
-	\partCombineApart R2.*6 \partCombineAutomatic
+	\partCombineApart R2.*6 
 % Bars 6 to 10
 	
 	cis2.
 	c!2( b8 a
-	b4)\! r r
+	b4)\! \partCombineAutomatic r r 
 	R2.*4
 % Bars 11 to 15
 	
@@ -58,7 +58,7 @@ musicOboeIMvtII = \relative c'' {
 	f2.
 	bes,4.(_\< ees4 e8)\!
 % Bars 56 to 60
-	f4( ges8_\> f f ees
+	f4( ges8_\>[ f] f ees!
 	des4)\! r r \partCombineAutomatic
 	ges(\fz\> ees2
 	f4\p) r r \partCombineApart
@@ -79,13 +79,13 @@ musicOboeIMvtII = \relative c'' {
 	
 	r4 r fis8.(\brack\p e16
 	d4.)\< g'8(\! fis e)
-	\shape #'((0 . -1.5)(0 . -0.5)(0 . 0)(0 . -0.5)) Slur fis4( \tuplet 3/2 4 {b8 a fis)} g16( fis) fis( e)
-	e4(-\tweak X-offset #0.5 _\dimmarkup d8 a~_\> a4)
+	\shape #'((0 . -1.5)(0 . -0.5)(0 . 0)(0 . -0.5)) Slur fis4( \tuplet 3/2 4 {b8 a fis)} \stemDown \omitBeam g16( fis) fis( e)
+	\stemUp e4(-\tweak X-offset #0.5 _\dimmarkup d8 a~_\> a4)
 % Bars 76 to 80
 	fis'4.(\p e8 d cis
 	b2) a8( g
 	g4. fis8 e g)
-	\acciaccatura {fis32 g} a2 \partCombineApart a4(
+	\partCombineApart \acciaccatura {fis32 g} a2 a4(
 	a'4._\< g16 a f a e a)\!
 % Bars 81 to 85
 	d,4.( g4_\crescmarkup gis!8)

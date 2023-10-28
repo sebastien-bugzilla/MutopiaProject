@@ -139,7 +139,7 @@ musicViolinoIIMvtII = \relative c' {
 	
 	r4 g,2^\((\p\<
 % Bars 161 to 165
-	aes\fz\>) a4\)
+	aes\fz\>) a4\)\!
 	b2.\pp~
 	b
 	b2_\morendo b4~

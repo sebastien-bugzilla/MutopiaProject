@@ -53,8 +53,8 @@ musicCornoIMvtII = \relative c'' {
 	
 % Bars 46 to 50
 	
-	\partCombineApart r4 r8 d(_\p_\< c bes)
-	a( c\! \hairpinShorten #'(0 . -8) f_\dimD_\> c) d16( c8.)\!
+	\partCombineApart r4 r8 d(_\p_\<\noBeam c bes)
+	a([ c\!] \hairpinShorten #'(0 . -8) f_\dimD_\> c) d16( c8.)\!
 	c4. r8 r4 \mark \default
 	c2-\tweak X-offset #-2 \pp r4
 % Bars 51 to 55
@@ -64,7 +64,7 @@ musicCornoIMvtII = \relative c'' {
 	aes2( c4_\<
 	f2 bes,8 b)\!
 % Bars 56 to 60
-	c4( des8_\> c ees des
+	c4( des8_\>[ c] ees des
 	c4)\! r^\mutaine r \transposition e \partCombineAutomatic
 	R2.*7
 % Bars 61 to 65
@@ -110,7 +110,7 @@ musicCornoIMvtII = \relative c'' {
 % Bars 96 to 100
 	a4 r8 a(--\< d-- a--)\!
 	fis4 \tuplet 3/2 4 {\hairpinShorten #'(0 . -15) fis8\> fis fis\!} a( g)
-	fis4. e8 \partCombineAutomatic d4
+	fis4. e8 d4 \partCombineAutomatic 
 	\hairpinShorten #'(0 . -10) e\p\< fis g\!
 	a2.->
 % Bars 101 to 105

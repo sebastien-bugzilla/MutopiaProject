@@ -177,7 +177,7 @@ musicClarinettoIMvtII = \relative c'' {
 % Bars 151 to 155
 	
 	
-	bes'8--\pp(~ bes32 c bes a) bes8--(~ bes32 c bes a) \tuplet 5/4 4 {bes16(-- c-- d-- c-- bes)-- }
+	bes'8\pp(~ bes32 c bes a) bes8(~ bes32 c bes a) \tuplet 5/4 4 {bes16(-- c-- d-- c-- bes)-- }
 	bes4( \acciaccatura {a16 g} f4) d8.( ees16)
 	f4( d c)
 % Bars 156 to 160

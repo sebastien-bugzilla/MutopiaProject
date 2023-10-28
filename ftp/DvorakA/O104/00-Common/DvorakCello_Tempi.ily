@@ -103,7 +103,7 @@ tempiMvtI = {
 tempiMvtII = {
 	\tempo \markup { 
 		"Agagio, ma non troppo M.M." 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #3 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {8} #1 } 
 		\medium { =108 }
 	}
 	s2.*28
@@ -119,11 +119,11 @@ tempiMvtII = {
 	s2.*6
 	\tempo "poco a poco ritard." % bar 63
 	s2.*2 
-	\tempoXoffset #1 \tempo "Meno Tempo I." \grace {s8} % bar 65 
+	\tempoXoffset #1 \tempo "Meno. Tempo I." \grace {s8} % bar 65 
 	s2.*18
 	\grace {s8} \tempo "Un poco più animato" % bar 83
 	s2.*12
-	\tempoXoffset #0.7 \tempo "Meno Tempo I." % bar 95
+	\tempoXoffset #0.7 \tempo "Meno. Tempo I." % bar 95
 	s2.*25
 	\tempo "[poco a poco string.]" % bar 120 (not in facsimile)
 	s2.*4

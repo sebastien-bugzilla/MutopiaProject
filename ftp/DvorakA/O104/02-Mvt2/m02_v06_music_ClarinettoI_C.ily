@@ -22,9 +22,9 @@ musicClarinettoIMvtII = \relative c'' {
 	d2.)
 % Bars 11 to 15
 	bes(
-	bes4 f d) \partCombineAutomatic
-	ees2.\fp\> \mark \default
-	d16\noBeam\! \partCombineApart f,(\p bes c d f bes c d8. f16)
+	bes4 f d)
+	ees2. \mark \default
+	d16\noBeam f,(\p bes c d f bes c d8. f16)
 	f4( bes a) \partCombineAutomatic
 % Bars 16 to 20
 	a16( g) g8~ g2
@@ -41,7 +41,7 @@ musicClarinettoIMvtII = \relative c'' {
 % Bars 26 to 30
 	g2.\fz\<
 	aes2(\! c8-\tweak rotation #'(9 -1 0) \< f\!)
-	f2\(^^-\tweak extra-offset #'(-1.4 . 0.5) _\fzdim g8\)\p r
+	\partCombineApart f2\(^^-\tweak extra-offset #'(-1.4 . 0.5) _\fzdim g8\) \partCombineAutomatic r
 	R2.*5
 	
 % Bars 31 to 35
@@ -59,13 +59,13 @@ musicClarinettoIMvtII = \relative c'' {
 % Bars 41 to 45
 	f4-> des-> c->
 	des4. r8 r4
-	des4.\mp c16.( aes32 bes16. ges32 aes16. f32)
+	des4.\mp c16.( aes32 bes16.[ ges32] aes16. f32)
 	ges2\< ges'8.(\! f16)
 	ges32( ees c8.\>~ c8) aes16( f~ f c ees aes,)\!
 % Bars 46 to 50
 	des2.\p
-	\partCombineApart des8(_\< ges bes des) f\!( ees) \partCombineAutomatic
-	des4( \tupletYoffset #1.2 \tuplet 3/2 4 {bes'8 aes f)} ges16\(( f) f( ees)\)
+	\partCombineApart des8(_\< ges bes[ des]) f\!( ees) 
+	des4( \tupletYoffset #1.2 \tuplet 3/2 4 {bes'8 aes f)} ges16\(( f) f( ees)\) \partCombineAutomatic
 	des4. r8 r4 \mark \default
 	des,16(\p f aes f des aes' f des~ des f aes f)
 % Bars 51 to 55
@@ -89,14 +89,14 @@ musicClarinettoIMvtII = \relative c'' {
 % Bars 66 to 70
 	R2.*2
 	
-	r4 r a\p\(
-	a'4.\)( g8 f e)
+	r4 r \partCombineApart a\(
+	\stemDown a'4.\)( \omitBeam g8 f e) \partCombineAutomatic
 	d4 d\< \once \tupletUp \tuplet 3/2 4 {d8( e f}
 % Bars 71 to 75
-	g4.)\! e8( c bes)\>
+	g4.)\! e!8( c bes)\>
 	a4 a\! f'8.( e16
 	d4.\<) d'8(\! c bes)
-	a(\mf\< c f c)\! c4_\dimD\>~
+	a([\mf\< c] f c)\! c4_\dimD\>~
 	c~ c8\! r r4
 % Bars 76 to 80
 	R2.*7
@@ -110,10 +110,10 @@ musicClarinettoIMvtII = \relative c'' {
 	
 	c2.-\tweak extra-offset #'(-0.5 . 0.3) \mp
 	\partCombineChords << ces {s4_\dimD_\> s s\!} >> \partCombineAutomatic
-	\shape #'(((0 . 0) (0 . -1.5) (0 . -1.5) (0 . -0.9)) ((0 . -0.5) (0 . -1.5) (0 . 0) (0 . 0))) Slur a!2(_\p_\> g!4
+	\shape #'(((0 . 0) (0 . -1.5) (0 . -1.5) (0 . -0.9)) ((0 . -0.5) (0 . -1.5) (0 . 0) (0 . 0))) Slur \stemUp a!2(_\p_\> g!4
 	fis2_\pp f4)
 % Bars 91 to 95
-	d ees!8_( f) f_( ges)
+	d ees!8_([ f]) f_( ges)
 	ges4( f ees)
 	d( cis d)
 	cis( d4. c8 \mark \default
@@ -136,7 +136,7 @@ musicClarinettoIMvtII = \relative c'' {
 	
 % Bars 121 to 125
 	
-	r4 r r8 d
+	r4 r r8 \once \stemDown \omitFlag d
 	f( ees g2)
 	g4.( f16 ees) g4(~
 	g8 f16 ees) g4(~ g8 f16 ees
@@ -173,8 +173,8 @@ musicClarinettoIMvtII = \relative c'' {
 % Bars 151 to 155
 	
 	
-	bes'8--(~ bes32 c bes a) bes8--(~ bes32 c bes a) \tuplet 5/4 4 {bes16(-- c-- d-- c-- bes)-- }
-	\partCombineChords bes4( \acciaccatura {a16 g} f4) d8.( ees16) \partCombineAutomatic
+	bes'8(~ bes32 c bes a) bes8(~ bes32 c bes a) \tuplet 5/4 4 {bes16(-- c-- d-- c-- bes)-- }
+	\partCombineChords bes4( \acciaccatura {\once \slurUp a16 g} f4) d8.( ees16) \partCombineAutomatic
 	f4( d c)
 % Bars 156 to 160
 	d2.~

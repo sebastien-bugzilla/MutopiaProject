@@ -22,9 +22,9 @@ musicClarinettoIIMvtII = \relative c'' {
 	bes
 % Bars 11 to 15
 	f2( g4
-	f\< d bes\!)
-	a2.\fp\> \mark \default
-	bes16\noBeam\! r8. r4 r
+	\stemUp f\< d bes\!)
+	\after 2.*7/8 \! a2.\fp\> \mark \default
+	\stemDown bes16\noBeam\! r16 r8 r4 r
 	d'2(\pp f4)
 % Bars 16 to 20
 	f16( ees) ees8~ ees2
@@ -41,7 +41,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 26 to 30
 	e2.\fz\<
 	f2(\! aes8-\tweak rotation #'(9 -1 0) \< c\!)
-	d2\(^^ g8\)\p r
+	\once \stemUp d2\( g8\)\p r
 	R2.*5
 	
 % Bars 31 to 35
@@ -59,7 +59,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 41 to 45
 	des4-> bes-> a->
 	bes4. r8 r4
-	des4.\mp c16.( aes32 bes16. ges32 aes16. f32)
+	des4.\mp c16.( aes32 bes16.[ ges32] aes16. f32)
 	ges2\< ges'8.(\! f16)
 	ges32( ees c8.\>~ c8) aes16( f~ f c ees aes,)\!
 % Bars 46 to 50
@@ -90,13 +90,13 @@ musicClarinettoIIMvtII = \relative c'' {
 	R2.*2
 	
 	r4 r a'\p\(
-	f'4.\)( e8 d c)
+	f'4.\) e8 d c
 	bes4 bes\< \tuplet 3/2 4 {bes8( c d}
 % Bars 71 to 75
 	e4.)\! c8( a g)\>
 	f4 f\! f8.( e16
 	d4.\<) d'8(\! c bes)
-	a(\mf\< c f c)\! c4_\dimD\>~
+	a([\mf\< c] f c)\! c4_\dimD\>~
 	c~ c8\! r r4
 % Bars 76 to 80
 	R2.*7

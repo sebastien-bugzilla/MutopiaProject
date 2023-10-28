@@ -16,7 +16,7 @@
 \include "./00-Common/DvorakCello_Header.ily"
 \include "./00-Common/DvorakCello_PaperConductors.ily"
 \include "./00-Common/DvorakCello_timeMvt.ily"
-\include "./00-Common/DvorakCello_OptionConductors.ily"
+\include "./00-Common/DvorakCello_LayoutConductors.ily"
 \include "./00-Common/DvorakCello_NameStaff.ily"
 \include "./00-Common/DvorakCello_NameGrandStaff.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
@@ -68,103 +68,79 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-					\new Voice {
-						\formatConductorMvtII
-					}
+%					\new Voice {
+%						\formatConductorMvtII
+%					}
 					\new Voice {
 						\tempiMvtII
 					}
 					\new Voice {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameStaffIMvtII
+						\timeMvtII \nameStaffIMvtII
 						\partCombine \musicFlautoIMvtII \musicFlautoIIMvtII
 					}
 				>>
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameStaffIIMvtII
+					\timeMvtII \nameStaffIIMvtII
 					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
 				}
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameStaffIIIMvtII
+					\timeMvtII \nameStaffIIIMvtII
 					\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
 				}
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameStaffIVMvtII
+					\timeMvtII \nameStaffIVMvtII
 					\partCombine #'(0 . 11) \musicFagottoIMvtII \musicFagottoIIMvtII
 				}
 			>>
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
 					\new Staff {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameStaffVMvtII
+						\timeMvtII \nameStaffVMvtII
 						\partCombine \musicCornoIMvtII \musicCornoIIMvtII
 					}
 					\new Staff {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameStaffVIMvtII
-						\musicCornoIIIMvtII
+						\timeMvtII \nameStaffVIMvtII \musicCornoIIIMvtII
 					}
 				>>
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameStaffVIIMvtII
+					\timeMvtII \nameStaffVIIMvtII
 					\partCombine \musicTrombaIMvtII \musicTrombaIIMvtII
 				}
 				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
 					\new Staff {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameStaffVIIIMvtII
+						\timeMvtII \nameStaffVIIIMvtII
 						\partCombine \musicTromboneIMvtII \musicTromboneIIMvtII
 					}
 					\new Staff {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameStaffIXMvtII
+						\timeMvtII \nameStaffIXMvtII
 						\partCombine \musicTromboneIIIMvtII \musicTubaMvtII
 					}
 				>>
 			>>
 			\new Staff {
-				\timeMvtII \generalOptions \conductorOptions
-				\nameStaffXMvtII
-				\musicTimpaniMvtII
+				\timeMvtII \nameStaffXMvtII \musicTimpaniMvtII
 			}
 			\new Staff {
-				\timeMvtII \generalOptions \conductorOptions
-				\nameStaffXIMvtII
-				\musicSoloCelloMvtII
+				\timeMvtII \nameStaffXIMvtII \musicSoloCelloMvtII
 			}
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
 					\new Staff {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameStaffXIIMvtII
-						\musicViolinoIMvtII
+						\timeMvtII \nameStaffXIIMvtII \musicViolinoIMvtII
 					}
 					\new Staff {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameStaffXIIIMvtII
-						\musicViolinoIIMvtII
+						\timeMvtII \nameStaffXIIIMvtII \musicViolinoIIMvtII
 					}
 				>>
 				\new Staff {
-					\timeMvtII \generalOptions \conductorOptions
-					\nameStaffXIVMvtII
-					\musicViolaMvtII
+					\timeMvtII \nameStaffXIVMvtII \musicViolaMvtII
 				}
 				\new GrandStaff \with { \nameGrandStaffIVMvtII } <<
 					\new Staff {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameStaffXVMvtII
-						\musicVioloncelloMvtII
+						\timeMvtII \nameStaffXVMvtII \musicVioloncelloMvtII
 					}
 					\new Staff {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameStaffXVIMvtII
-						\musicContrabassoMvtII
+						\timeMvtII \nameStaffXVIMvtII \musicContrabassoMvtII
 					}
 				>>
 			>>
@@ -173,6 +149,10 @@
 			breakbefore = ##t
 		}
 		\layout {
+			\context {
+				\Score
+				scriptDefinitions = #my-script-alist
+			}
 		}
 	}
 }

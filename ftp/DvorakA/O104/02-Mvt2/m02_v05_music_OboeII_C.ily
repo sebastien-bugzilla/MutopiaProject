@@ -83,7 +83,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 	r4 r fis8.(\brack\p e16
 	d4.)\< g8(\! fis e)
-	fis(\mf-\tweak rotation #'(4 -2 0) \< d' \tuplet 3/2 4 {g8\! fis\> d)} b16( a) a( g)\!
+	fis(\mf-\tweak rotation #'(4 -2 0) \< d' \tuplet 3/2 4 {g8\! fis\> d)} b16 a a g\!
 	g4( a8) r r4
 % Bars 76 to 80
 	R2.*2

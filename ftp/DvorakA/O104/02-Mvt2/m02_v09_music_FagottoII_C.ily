@@ -67,7 +67,7 @@ musicFagottoIIMvtII = \relative c' {
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	aes'2\p\> aes4(
+	aes'2\p\> aes4_(
 	aes)\! r r
 	ees'4\fz\>( c2
 	des4\p) r r

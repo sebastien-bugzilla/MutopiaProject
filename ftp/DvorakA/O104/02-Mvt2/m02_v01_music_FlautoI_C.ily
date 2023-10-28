@@ -59,7 +59,7 @@ musicFlautoIMvtII = \relative c'' {
 	f'4. ees16 f des f c f)
 	bes,4.(_\< ees4 e8)\!
 % Bars 56 to 60
-	f4( ges8_\> f f ees!
+	f4( ges8_\>[ f] f ees!
 	des4)\! r r \partCombineAutomatic
 	c(\fz\> beses ges
 	f)\p r r
@@ -76,7 +76,7 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	
-	\partCombineApart r4 r8 a'-\tweak X-offset #-1 ^\p a( cis)
+	\partCombineApart r4 r8 a'\noBeam-\tweak X-offset #-1 ^\p a( cis)
 	e4(_\dimD d8 a16_\> g fis8 e16 d)\! \partCombineAutomatic
 % Bars 76 to 80
 	R2.*7
@@ -89,11 +89,11 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 86 to 90
 	des4\(-\tweak extra-offset #'(0 . 0.5) \p\< bes16 a g a bes4\)\!
 	a2.\fz 
-	aes
+	\once \stemDown aes
 	fis!2( e!4
 	dis2 d4)
 % Bars 91 to 95
-	\hairpinShorten #'(1 . 0) b!_\< c!8( d) d( ees)\!
+	\hairpinShorten #'(1 . 0) b!_\< c!8([ d)] d( ees)\!
 	\hairpinShorten #'(2 . 0) ees4(_\> d c)\!
 	b(_\dimmarkup ais b)
 	ais( b4. a8 \mark \default
@@ -113,12 +113,12 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 116 to 120
 	c2._\fz\startTrillSpan
 	e32(\stopTrillSpan_\f c a e e'8\prall d32 b g d d'8\prall c32 a fis c c'8\prall)
-	b32(_\fz a g a  g_\< a g a  g a g a  g a g a  g a g a  g a g a)\!
+	b32[(_\fz a g a]  g_\< a g a  g a g a  g a g a  g a g a  g a g a)\!
 	g4(_\< e8 c e d16 c)\! \partCombineAutomatic
 	b8(\mf e16 d a4)_\dimmarkup b8( e16 d
 % Bars 121 to 125
 	a4) a8( d16 c g4)
-	g8(\< c16 b fis8 g a b)\!
+	g8(\< c16 b fis8[ g] a b)\!
 	d( c e2)
 	e4.( d16 c) e4(~_\alterBroken shorten-pair #'(() (3 . 0)) \>
 	e8 d16 c) e4(~ e8 d16 c
@@ -146,7 +146,7 @@ musicFlautoIMvtII = \relative c'' {
 	
 	R2.\fermata \mark \default
 	\partCombineApart g'8(~--_\p g32 a g fis) g8--(~ g32 a g fis) \tuplet 5/4 4 {g16(_\<-- a-- b-- a-- g)-- }
-	g4( \acciaccatura {fis16 e} d4)\! b8._\< c16\!
+	g4( \acciaccatura {\once \slurDown fis16 e } d4)\! b8._\< c16\!
 % Bars 151 to 155
 	d4( b_\> a
 	g)\! r r \partCombineAutomatic

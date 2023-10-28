@@ -57,21 +57,21 @@ musicVioloncelloMvtII = \relative c {
 	g,16-^ bes-^ a-^ g-^ g4 r
 	g8\pp-\tweak X-offset #-6.5 ^\pizz d' g r g, g'
 	c, g' c r c, c'
-	f,, c' f r f, f'
+	f,, c' f\noBeam r f, f'
 % Bars 46 to 50
-	g, d' g r g, g'
-	ees, bes' ees_\crescD\< r c c'\!
-	f,, f' bes_\dimD\> r f, f'\!
+	g, d' g\noBeam r g, g'
+	ees, bes' ees\noBeam_\crescD\< r c c'\!
+	f,, f' bes\noBeam_\dimD\> r f, f'\!
 	bes, r bes' r r4 \mark \default
-	bes8\pp r bes bes bes r
+	bes8\pp r bes bes bes\noBeam r
 % Bars 51 to 55
-	bes bes bes r bes bes 
-	bes r bes bes bes r
-	bes bes bes r bes bes
-	bes r bes bes bes r
-	ges ges ges r g g
+	bes bes bes\noBeam r bes bes 
+	bes r bes bes bes\noBeam r
+	bes bes bes\noBeam r bes bes
+	bes r bes bes bes\noBeam r
+	ges ges ges\noBeam r g g
 % Bars 56 to 60
-	aes r aes aes aes r
+	aes r aes aes aes\noBeam r
 	des,2.\mf\<-\tweak X-offset #-6 ^\arco
 	des-\tweak X-offset #0.5 \fp\>
 	des\p\<
@@ -94,7 +94,7 @@ musicVioloncelloMvtII = \relative c {
 	g, d'16 g, g'8 r \tuplet 3/2 4 {e, e' e}
 	a, fis'16 d a'8 r \tuplet 3/2 4 {a, a' a,}
 	d r r4 r
-% Bars 76 to 81
+% Bars 76 to 82
 	<<{
 		fis2.-\tweak X-offset #-5 ^\arco
 		g
@@ -102,16 +102,17 @@ musicVioloncelloMvtII = \relative c {
 		fis
 		f
 		f
+		\once \stemDown g2( c,4) \mark \default
 	} \\ {
-		d\pp
+		d2.\pp
 		d
 		d
 		d
 		d
 		<bes d>2( <b d>4)
+		c2~\< c4\!
 	}>>
-% Bars 82 to 85
-	<c g'>2(\< c4)\! \mark \default
+% Bars 83 to 85
 	\grace {s8} <<f,2. {s4-\tweak X-offset #0.5 \mf\< s s16\> s s s\!}>>
 	f2._\pdim
 	<<f2. {s4\< s s16\> s s s\!}>>
@@ -129,9 +130,9 @@ musicVioloncelloMvtII = \relative c {
 	g8\pp r16 \tuplet 3/2 4 {g32^\arco g g} g8 r c^\pizz e
 % Bars 96 to 100
 	g r16 \tuplet 3/2 4 {g,32^\arco g g } g8 r r d'^\pizz
-	g dis e r a,[ r16 a]
+	g dis e\noBeam r a,[ r16 a]
 	d!8 r r r16 \tuplet 3/2 4 {dis32^\arco dis dis} e8 r
-	c8^\pizz c' b b, a a'
+	c8^\pizz[ c'] b[ b,] a a'
 	g r16 \tuplet 3/2 4 {g,32^\arco g g} g4 r8 g^\pizz\<
 % Bars 101 to 105
 	c c' \once \tupletUp \tuplet 3/2 4 {b b, b} e, e'\!
@@ -153,7 +154,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 126 to 130
 	
 	d'2.(-\tweak X-offset #0.5 \pp\>~
-	d4 c2\fermata) \mark \default
+	d4 c2\fermata)\! \mark \default
 	b16-.\ppp([ r b-.] r b-.[ r b-.] r b-.[ r b-.]) r 
 	c-.[( r c-.] r c-.[ r c-.] r c-.[ r c-.]) r 
 % Bars 131 to 135

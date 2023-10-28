@@ -132,9 +132,9 @@ musicTromboneIIIMvtII = \relative c {
 	g2\ppp g4~
 	g b2~
 	b r4
-	r \aIIXoffset #-3.5 e2\(\p\<
+	r \partCombineApart e2\(
 % Bars 161 to 165
-	ees2.\)_\fzdimD
+	\stemDown ees2.\) \partCombineAutomatic
 	d\pp\>~
 	d4\! r r 
 	R2.*2

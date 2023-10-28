@@ -44,7 +44,7 @@ musicContrabassoMvtII = \relative c' {
 	eis_\dimmarkup r fis! r g r
 	c\pp r r4 c,8 r
 	d!_\dimD\> r r4 d8 r
-	d'2.(\ppp-\tweak X-offset #-2 ^\arco \markYoffset #4 \mark \default
+	d'2.(\ppp\fermata-\tweak X-offset #-2 ^\arco \markYoffset #4 \mark \default
 	g,4) r r
 % Bars 36 to 40
 	R2.*2
