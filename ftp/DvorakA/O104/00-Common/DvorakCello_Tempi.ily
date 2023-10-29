@@ -141,8 +141,9 @@ tempiMvtII = {
 tempiMvtIII = {
 	\tempo \markup { 
 		"Allegro moderato M.M." 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
-		\medium { =104 } }
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
+		\medium { =104 }
+	}
 	s2*134
 	s4 \tempo "accel." s % bar 135
 	s2*4
@@ -150,7 +151,7 @@ tempiMvtIII = {
 	s2*3
 	\tempoXoffset #1 \tempo \markup { % bar 143
 		"Poco meno mosso M.M." 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =92 }
 	} 
 	s2*14
@@ -166,7 +167,7 @@ tempiMvtIII = {
 	s2*5
 	\tempo \markup { % bar 177
 		"Tempo I." 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =104 }
 	} 
 	s2*26
@@ -178,7 +179,7 @@ tempiMvtIII = {
 	s2*3
 	\tempo \markup { % bar 246
 		"in tempo" 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =104 }
 	}
 	s2*27
@@ -190,7 +191,7 @@ tempiMvtIII = {
 	s2*2
 	\tempoXoffset #1.5 \tempo \markup { % bar 281
 		"Moderato cantabile" 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =84 }
 	} 
 	s2*16
@@ -200,7 +201,7 @@ tempiMvtIII = {
 	s2*2
 	\tempo \markup { % bar 303
 		"Tempo I." 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =104 }
 	}
 	s2*11
@@ -208,13 +209,13 @@ tempiMvtIII = {
 	s2
 	\tempo \markup { % bar 315
 		"in tempo" 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =104 }
 	} 
 	s2*16
 	\tempo \markup { % bar 331 
 		"Meno mosso" 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =84 }
 	}
 	s2*14
@@ -222,7 +223,7 @@ tempiMvtIII = {
 	s2*2
 	\tempo \markup { % bar 347
 		"Tempo I." 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =104 }
 	} 
 	s2*16
@@ -238,7 +239,7 @@ tempiMvtIII = {
 	s2*16
 	\tempo \markup { % bar 437
 		"Meno mosso" 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =84 }
 	} 
 	s2*7
@@ -246,7 +247,7 @@ tempiMvtIII = {
 	s2*5
 	\tempoXoffset #2.5 \tempo \markup { % bar 449
 		"Andante" 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =76 }
 	} 
 	s2*43
@@ -258,7 +259,7 @@ tempiMvtIII = {
 	s2*3
 	\tempo \markup { % bar 509
 		"Allegro vivo" 
-		\teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } 
+		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =132 }
 	} 
 }

@@ -468,14 +468,14 @@ musicViolinoIIMvtIII = \relative c'' {
 	<<{
 		b4( e
 		dis e
-		dis) e(
-		<b_~ e)~>2
+		dis) e~
+		<b_~ e~>2
 		q4
 	}\\{
 		b2
 		b_\dimmarkup
-		b
-		s2\ppp
+		b(
+		s2)\ppp
 		s4
 	}>> <b gis'>~
 	q2~

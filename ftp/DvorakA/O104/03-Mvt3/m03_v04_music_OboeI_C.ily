@@ -45,7 +45,7 @@ musicOboeIMvtIII = \relative c' {
 	ais4 a
 	g8-. a-. b-._\< ais-.
 	b-. cis-. fis,-. ais-.\!
-	b(_\mf g b) r \partCombineAutomatic
+	b[(_\mf g b)] r \partCombineAutomatic
 % Bars 41 to 45
 	R2*8
 % Bars 46 to 50
@@ -57,7 +57,7 @@ musicOboeIMvtIII = \relative c' {
 % Bars 51 to 55
 	fis4( d8 e)
 	fis4 \tuplet 3/2 4 {fis8-.\< fis-. a-.\!}
-	fis'4\fp d8-. d-.
+	\once \partCombineApart fis'4 d8-. d-.
 	d4-> a8( b16 a)
 	fis4( d8 e)
 % Bars 56 to 60
@@ -127,7 +127,7 @@ musicOboeIMvtIII = \relative c' {
 	
 	
 	
-	b16-.\p\< b-. d-. fis-. b8-.\fz fis-.
+	b16-.\p\< b-. d-. fis-.\! b8-.\fz fis-.
 % Bars 116 to 120
 	R2*4
 	
@@ -247,7 +247,7 @@ musicOboeIMvtIII = \relative c' {
 % Bars 231 to 235
 	fis8-. cis'-. cis8.-> fis,16-.
 	eis8( cis'~ cis16 d e! d)
-	cis8( b ais cis)
+	cis8[( b ais cis)]
 	cis8.(_\> b16 a!8 g!)
 	fis2_\p~
 % Bars 236 to 240
@@ -476,14 +476,14 @@ musicOboeIMvtIII = \relative c' {
 	
 % Bars 496 to 500
 	\mark \default
-	dis,2\(\p\<
+	\partCombineApart dis,2\(
 	fis4 b
-	dis fis~
-	fis b\)\!
+	\stemDown dis fis~
+	fis b\) \partCombineAutomatic
 % Bars 501 to 505
 	fis2\ff-^~
 	fis
-	a-^~
+	\stemUp a-^~
 	a4~ a8 g16( a)
 	fis2-^
 % Bars 506 to 510
@@ -493,8 +493,8 @@ musicOboeIMvtIII = \relative c' {
 	fis8[\ff r16 fis fis8 r16 fis]
 	fis8[ r16 fis fis8 r16 fis]
 % Bars 511 to 515
-	cis8-. b-. cis-. b-. 
-	e-. d-. g-. fis-. 
+	cis8-.[ b-. cis-. b-.] 
+	e-.[ d-. g-. fis-.]
 	fis-. r r4
 	fis8 r fis r
 	fis b,,4-^ b8-.

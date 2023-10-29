@@ -118,8 +118,8 @@ musicFlautoIMvtIII = \relative c''' {
 	R2*3
 	
 	
-	r4 fis,16\p\<-. fis-. a-. cis-. 
-	fis-. fis-. a-. cis-. fis8\fz-. cis-. 
+	r4 \partCombineApart fis,16-. fis-. a-. cis-. 
+	fis-. fis-. a-. cis-. fis8-. cis-. \partCombineAutomatic
 % Bars 121 to 125
 	r4 d8\mf-. cis-. 
 	r4 d8-. cis-. 
@@ -425,8 +425,8 @@ musicFlautoIMvtIII = \relative c''' {
 	fis8[\ff r16 fis fis8 r16 fis]
 	fis8[ r16 fis fis8 r16 fis]
 % Bars 511 to 515
-	cis8-. b-. cis-. b-. 
-	e-. d-. g-. fis-. 
+	cis8-.[ b-. cis-. b-.] 
+	e-.[ d-. g-. fis-.] 
 	fis-. r r4
 	dis!8 r dis r
 	dis r r4

@@ -119,7 +119,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	fis,16-.\p\< fis-. b-. d-. fis8-.\fz d-.
+	fis,16-.\p\< fis-. b-. d-.\! fis8-.\fz d-.
 % Bars 116 to 120
 	R2*4
 	
@@ -165,7 +165,7 @@ musicOboeIIMvtIII = \relative c'' {
 	\hairpinShorten #'(0 . -6) e,4^(-\offset X-offset #0.5 \p\> fis\!
 	g8 e fis4)
 % Bars 161 to 165
-	g8^( e g fis
+	g8^([ e g fis]
 	e dis e4)
 	e^(-\offset X-offset #1.3 \pp fis)
 	g8^( e fis4)
@@ -465,10 +465,10 @@ musicOboeIIMvtIII = \relative c'' {
 	
 % Bars 496 to 500
 	\mark \default
-	dis2\(\p\<
-	dis4 fis
-	b dis~
-	dis fis\)\!
+	dis2-\offset X-offset 0.5 \p\<
+	\stemUp dis4 fis
+	\stemDown b dis~
+	dis fis\!
 % Bars 501 to 505
 	dis2\ff-^~
 	dis
@@ -482,8 +482,8 @@ musicOboeIIMvtIII = \relative c'' {
 	dis8[\ff r16 dis dis8 r16 dis]
 	dis8[ r16 dis dis8 r16 dis]
 % Bars 511 to 515
-	cis8-. b-. cis-. b-. 
-	e-. d-. g-. fis-. 
+	cis8-.[ b-. cis-. b-.] 
+	e-.[ d-. g-. fis-.] 
 	dis!-. r r4
 	dis8 r dis r
 	dis b,4-^ b8-.

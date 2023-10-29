@@ -34,14 +34,14 @@ musicTimpaniMvtIII = \relative c, {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	r8 b\f b b
-	r b b b
-	r b b b
-	r fis fis fis
-	r fis b b
+	r8 b\f[ b b]
+	r b[ b b]
+	r b[ b b]
+	r fis[ fis fis]
+	r fis[ b b]
 % Bars 46 to 50
-	r b b b
-	r b fis fis
+	r b[ b b]
+	r b[ fis fis]
 	b b16 b b8 r \mark \default
 	R2*31
 % Bars 51 to 55
@@ -59,15 +59,15 @@ musicTimpaniMvtIII = \relative c, {
 	
 	
 	
-	r8 b\f b b
+	r8 b\f[ b b]
 % Bars 81 to 85
-	r b b b
-	r b b b
-	r fis fis fis
-	r fis b b
-	r b b b
+	r b[ b b]
+	r b[ b b]
+	r fis[ fis fis]
+	r fis[ b b]
+	r b[ b b]
 % Bars 86 to 90
-	r b fis fis \mark \default
+	r b[ fis fis] \mark \default
 	b\f r b r
 	b r b r
 	b r r4
@@ -334,8 +334,8 @@ musicTimpaniMvtIII = \relative c, {
 	R2
 	<<b2 {s8\startTrillSpan s s s\stopTrillSpan}>>
 	R2
-	b8 b b b
-	b b b b
+	b8[ b b b]
+	b[ b b b]
 % Bars 511 to 515
 	b r r4
 	b8 r b r

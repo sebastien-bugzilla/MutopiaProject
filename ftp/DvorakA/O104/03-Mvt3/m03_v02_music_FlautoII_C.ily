@@ -401,8 +401,8 @@ musicFlautoIIMvtIII = \relative c''' {
 	dis8[\ff r16 dis dis8 r16 dis]
 	dis8[ r16 dis dis8 r16 dis]
 % Bars 511 to 515
-	cis8-. b-. cis-. b-. 
-	e-. d-. g-. fis-. 
+	cis8-.[ b-. cis-. b-.] 
+	e-.[ d-. g-. fis-.] 
 	dis!-. r r4
 	b8 r b r
 	b r r4

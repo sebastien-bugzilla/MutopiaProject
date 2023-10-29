@@ -45,7 +45,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	e4 fis
 	d g8-.\< e-.
 	\once \offset Beam.positions #'(0.4 . 0.3) d g d-. e-.\!
-	g\mf( e f) r
+	g\mf([ e f)] r
 % Bars 41 to 45
 	R2*8
 % Bars 46 to 50
@@ -250,9 +250,9 @@ musicClarinettoIIMvtIII = \relative c' {
 	\bar "||" \mark \default
 % Bars 281 to 285
 	bes2-\offset X-offset #0.5 \p~
-	bes8 a( bes c)
-	d8( g f ees)
-	d( g f ees)
+	bes8[ a( bes c)]
+	d8([ g f ees)]
+	d([ g f ees)]
 	d8.( ees16 d8 c)
 % Bars 286 to 290
 	bes4( c8 d
@@ -273,8 +273,8 @@ musicClarinettoIIMvtIII = \relative c' {
 	d'4\p( \tuplet 3/2 4 {ees8 d c)}
 	d4( \tuplet 3/2 4 {ees8 d c)}
 % Bars 301 to 305
-	d4( ees~
-	ees8) r r4
+	d4 ees~
+	ees8 r r4
 	R2*2
 	
 	bes8\p\<( d~ d8 bes16 ees)
@@ -331,7 +331,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	cis(
 	c4 b)
 % Bars 361 to 365
-	cis8( c b4)
+	cis!8( c b4)
 	cis!2
 	\tuplet 3/2 4 {fis8 fis fis  fis fis fis
 	fis\< fis fis  fis fis fis\!
@@ -379,11 +379,11 @@ musicClarinettoIIMvtIII = \relative c' {
 	eis(
 	e!)
 % Bars 401 to 405
-	a,-\offset X-offset #0.5 \fz\>~
-	a\!~
-	a~
-	a~
-	a~
+	\stemUp \stemOffset #2 a,-\offset X-offset #0.5 \fz\>~
+	\stemOffset #2 a\!~
+	\stemOffset #2 a~
+	\stemOffset #2 a~
+	\stemDown a~
 % Bars 406 to 410
 	a~
 	a
@@ -438,12 +438,12 @@ musicClarinettoIIMvtIII = \relative c' {
 % Bars 466 to 470
 	R2*2
 	
-	r4 a8.\p\<\( fis'16\)
-	fis4.\fz\>( e8
-	d4. cis8)\!
+	r4 a8.\p\<\( fis'16\)\!
+	fis4.\fz\> e8
+	d4. cis8\!
 % Bars 471 to 475
 	b2\p\>~
-	b\!(
+	b\!_(
 	a4.) r8
 	R2*3
 	
@@ -479,8 +479,8 @@ musicClarinettoIIMvtIII = \relative c' {
 	d8[\ff r16 d d8 r16 d]
 	d8[ r16 d d8 r16 d]
 % Bars 511 to 515
-	e8-. d-. e-. d-.
-	g-. f-. bes-. a-.
+	e8-.[ d-. e-. d-.]
+	g-.[ f-. bes-. a-.]
 	fis!-. r r4
 	d8 r d r
 	d d,4-^ d8-.

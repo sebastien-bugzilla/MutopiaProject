@@ -124,7 +124,7 @@ musicCornoIMvtIII = \relative c' {
 	c4 r \partCombineAutomatic \mark \default
 	R2*2
 	
-	\partCombineApart r8 c(_\p_\< bes a)\!
+	\partCombineApart r8 c([_\p_\< bes a)]\!
 	bes(_\> c ees d)\!
 % Bars 171 to 175
 	c4(_\< a8 d~\!
@@ -409,7 +409,7 @@ musicCornoIMvtIII = \relative c' {
 	d8[ r16 d d8 r16 d]
 % Bars 511 to 515
 	d8 r f! r
-	g r ees r
+	g r ees! r
 	d r r4
 	d8 r d r
 	d g,4-^ g8-.

@@ -208,8 +208,8 @@ musicViolaMvtIII = \relative c'' {
 	} \\ {
 		g,!4\p( a
 		g a)
-		g(\< fis8 e)
-		fis(\! g \hairpinShorten #'(0 . -4) b\> a)\!
+		\stemUp g\< \omitBeam fis8 e
+		\omitBeam fis(\! g \stemDown \hairpinShorten #'(0 . -4) b\> a)\!
 	}>>
 % Bars 171 to 175
 	\tuplet 3/2 4 {<a cis>8 q q   q q q
@@ -337,9 +337,9 @@ musicViolaMvtIII = \relative c'' {
 	a\ppp\<~
 	a\!(
 	d)~\>
-	\set doubleSlurs = ##t d(\! \bar "||" \mark \default
+	<< {d~\! \bar "||" \mark \default \stemUp d4 } 
 % Bars 281 to 285
-	<g, d'>4) r \set doubleSlurs = ##f
+	\new Voice {\shape #'((-5.3 . 2)(-4.3 . 1)(-2 . 0)(0 . 0.5)) Slur s2_( \unHideNotes \voiceTwo  g,4)} >> \oneVoice r
 	R2*15
 % Bars 286 to 290
 	
@@ -352,7 +352,7 @@ musicViolaMvtIII = \relative c'' {
 	g~
 	g~
 % Bars 301 to 305
-	g4\! g(
+	g4\! g_(^~
 	<e g>2)\>
 	\tuplet 3/2 4 {d8\p d d  d d d 
 	d d d  d d d 
@@ -368,7 +368,7 @@ musicViolaMvtIII = \relative c'' {
 	d d d  d d d 
 	d\mf d d} d r
 	R2 \mark \default
-	g4-.\pp r8 fis
+	g4-.\pp r8 fis-.
 % Bars 316 to 320
 	g4-. r8 fis-.
 	g-. r a-. r
@@ -397,16 +397,16 @@ musicViolaMvtIII = \relative c'' {
 	gis cis gis cis gis cis   gis cis gis cis gis cis)}
 	\tuplet 12/8 2 {<eis, gis>2.:16
 	q:}
-	\tuplet 6/4 4 {<f bes>16( <bes d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d> 
-	<f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d>)}
+	\tuplet 6/4 4 {<f bes>16( <bes! d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d> 
+	<f bes>16 <bes! d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d> <f bes>16 <bes d>)}
 % Bars 341 to 345
 	\tuplet 12/8 2 {<bes d>2.:16
 	q:}
-	\tuplet 6/4 4 {<f bes>16( <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> 
-	<f bes> <bes d>_\crescmarkup <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d>)
-	<f bes>(\< <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> 
+	\tuplet 6/4 4 {<f bes>16( <bes! d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> 
+	<f bes> <bes! d>_\crescmarkup <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d>)
+	<f bes>(\< <bes! d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> 
 % Bars 346 to 350
-	<f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d>)\!} \bar "||" \key b \major
+	<f bes> <bes! d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d> <f bes> <bes d>)\!} \bar "||" \key b \major
 	\grace {s8} fis16\p( b fis b dis b fis b)
 	fis( b fis b dis b fis b)
 	fis( b fis b e b fis b)
@@ -574,8 +574,8 @@ musicViolaMvtIII = \relative c'' {
 	R2
 	q2:32-\offset X-offset #1 \ff
 	R2
-	<b dis>8-. q-. q-. q-.
-	q-. q-. q-. q-.
+	<b dis>8-.[ q-. q-. q-.]
+	q-.[ q-. q-. q-.]
 % Bars 511 to 515
 	q r <cis e>16 q r8
 	<b g'>16 q r8 q16 q r8

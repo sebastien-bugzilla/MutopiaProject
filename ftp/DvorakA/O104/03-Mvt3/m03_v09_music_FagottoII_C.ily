@@ -19,7 +19,7 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 21 to 25
 	fis4->\ff cis8 ais
 	ais'4-> fis8 cis
-	cis'8 ais16 fis e'8\< cis16 ais
+	cis'8 ais16 fis e'8\< cis16 ais\!
 	g'!8\fz r r4
 	R2*2
 % Bars 26 to 30
@@ -272,7 +272,7 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 286 to 290
 	g
 	d2~
-	d8 fis-- a-- d--
+	d8[ fis-- a-- d--]
 	d4 d,
 	d'8-- a' a,4--
 % Bars 291 to 295
@@ -382,7 +382,7 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 396 to 400
 	R2
 	b'2\p(
-	a)
+	\once \omit Stem a)
 	gis!(
 	g)
 % Bars 401 to 405
@@ -392,8 +392,8 @@ musicFagottoIIMvtIII = \relative c, {
 	fis
 	bis4(\mf cis)
 % Bars 406 to 410
-	ais(\< b!)
-	gis2\fz
+	ais(\< b!)\!
+	gis!2\fz
 	g\fz~
 	g8 r r4
 	R2*3
@@ -424,9 +424,9 @@ musicFagottoIIMvtIII = \relative c, {
 	
 % Bars 461 to 465
 	fis2\pp\<~
-	fis
+	fis\!
 	fis\>~
-	fis(
+	fis_(\!
 	b,4.)\pp r8
 % Bars 466 to 470
 	R2*13
@@ -461,11 +461,11 @@ musicFagottoIIMvtIII = \relative c, {
 	R2
 	b-^\ff
 	R
-	b8-.\ff b-. b-. b-.
-	b-. b-. b-. b-.
+	b8-.[\ff b-. b-. b-.]
+	b-.[ b-. b-. b-.]
 % Bars 511 to 515
 	b r cis''-. b-.
-	e-. d-. g-. fis-.
+	e-.[ d-. g-. fis-.]
 	b,8-. r r4
 	b,,8 r b r
 	b b'4-^ b8-.

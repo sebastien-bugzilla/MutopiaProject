@@ -177,9 +177,9 @@ musicContrabassoMvtIII = \relative c, {
 	a\< r8 a\!
 	a4\> r8 a\!
 % Bars 151 to 155
-	a\pp a' a, r
-	a a' a, r
-	a\< a' a, r\!
+	a\pp[ a' a,] r
+	a[ a' a,] r
+	a[\< a' a,] r\!
 	a\> a' d, d'\!
 	d,\pp r g, g'
 % Bars 156 to 160
@@ -553,8 +553,8 @@ musicContrabassoMvtIII = \relative c, {
 	R2
 	b2:32\ff
 	R2
-	b8-. b-. b-. b-.
-	b-. b-. b-. b-.
+	b8-.[ b-. b-. b-.]
+	b-.[ b-. b-. b-.]
 % Bars 511 to 515
 	b8 r a'16 a r8
 	g16 g r8 e16 e r8

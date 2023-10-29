@@ -32,7 +32,7 @@ musicTromboneIIIMvtIII = \relative c {
 	fis4 fis
 % Bars 46 to 50
 	e cis
-	fis fis,8-. fis-. 
+	fis \partCombineApart fis,8-. fis-. \partCombineAutomatic
 	b4. r8 \mark \default
 	R2*31
 % Bars 51 to 55

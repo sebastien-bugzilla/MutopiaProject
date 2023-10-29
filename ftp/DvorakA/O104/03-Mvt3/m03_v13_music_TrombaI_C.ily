@@ -286,9 +286,9 @@ musicTrombaIMvtIII = \relative c'' {
 	g \tuplet 3/2 4 {a8(-- b-- a--)}
 	g4 \tuplet 3/2 4 {a8(-- b-- a--)}
 	g4 \tuplet 3/2 4 {a8(-- b-- a--)} \partCombineAutomatic
-	g8(-- a-- b-- g--)
+	g8[(-- a-- b-- g--)]
 % Bars 456 to 460
-	a(-- b-- g-- a--)
+	a[(-- b-- g-- a--)]
 	b2\ppp~
 	b~
 	b8 r r4
@@ -317,9 +317,9 @@ musicTrombaIMvtIII = \relative c'' {
 	f4-^ f8 ees16-.-^ f-.-^
 	g4 d'
 % Bars 506 to 510
-	c8-. b!-. a-. g-.
+	c8-.[ b!-. a-. g-.]
 	g4 d'
-	c8-. b-. a-. g-.
+	c8-.[ b-. a-. g-.]
 	g8[\ff r16 g g8 r16 g]
 	g8[ r16 g g8 r16 g]
 % Bars 511 to 515

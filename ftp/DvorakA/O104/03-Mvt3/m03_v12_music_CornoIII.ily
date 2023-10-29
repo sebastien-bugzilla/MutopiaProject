@@ -165,7 +165,7 @@ musicCornoIIIMvtIII = \relative c' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no \cueClefUnset
-	g4\ff g
+	g4\f g
 	g4. g8
 % Bars 256 to 260
 	g4 g8 g

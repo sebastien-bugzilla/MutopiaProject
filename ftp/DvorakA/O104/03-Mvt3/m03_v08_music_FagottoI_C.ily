@@ -19,7 +19,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 21 to 25
 	fis4->\ff cis8 ais
 	ais'4-> fis8 cis
-	cis'8 ais16 fis e'8\< cis16 ais
+	cis'8 ais16 fis e'8\< cis16 ais\!
 	g'!8\fz r r4
 	R2*2
 % Bars 26 to 30
@@ -110,11 +110,11 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart r8 d'-._\p cis-. r
+	\partCombineApart r8 d'-._\p[ cis-.] r
 % Bars 126 to 130
-	r d-. cis-._\dimmarkup r
-	r d-. cis-. r
-	r d-. cis-. r \partCombineAutomatic
+	r d-.[ cis-.]_\dimmarkup r
+	r d-.[ cis-.] r
+	r d-.[ cis-.] r \partCombineAutomatic
 	R2*2
 	
 % Bars 131 to 135
@@ -376,7 +376,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 396 to 400
 	R2
 	\partCombineApart b'2(
-	b) \partCombineAutomatic
+	\noteShift #1.0 \once \stemDown b) \partCombineAutomatic
 	b(
 	b)
 % Bars 401 to 405
@@ -386,10 +386,10 @@ musicFagottoIMvtIII = \relative c {
 	\mmrPos #6 R
 	\partCombineAutomatic dis4(\mf e)
 % Bars 406 to 410
-	\partCombineChords cis(\< dis)
-	b2\fz~
-	b\fz~
-	b8 \partCombineAutomatic r r4
+	\partCombineChords cis(\< dis)\!
+	\partCombineApart b2~
+	b~
+	\once \stemDown \omitFlag b8 \partCombineAutomatic r r4
 	R2*3
 % Bars 411 to 415
 	
@@ -418,9 +418,9 @@ musicFagottoIMvtIII = \relative c {
 	
 % Bars 461 to 465
 	\hairpinShorten #'(0 . 2.5) b2\pp\<~
-	b
+	b\!
 	b\>~
-	b(
+	b^(\!
 	b4.)\pp r8
 % Bars 466 to 470
 	R2*13
@@ -455,11 +455,11 @@ musicFagottoIMvtIII = \relative c {
 	R2
 	b-^\ff
 	R
-	b8-.\ff b-. b-. b-.
-	b-. b-. b-. b-.
+	b8-.[\ff b-. b-. b-.]
+	b-.[ b-. b-. b-.]
 % Bars 511 to 515
 	b r cis'-. b-.
-	e-. d-. g-. fis-.
+	e-.[ d-. g-. fis-.]
 	b,8-. r r4
 	b,8 r b r
 	b b4-^ b8-.

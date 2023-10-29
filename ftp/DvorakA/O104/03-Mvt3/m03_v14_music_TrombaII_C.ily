@@ -286,9 +286,9 @@ musicTrombaIIMvtIII = \relative c'' {
 	g, d'8-. d-.
 	g,4 d'8-. d-.
 	b4 d8-. d-.
-	b8(-- d-- g-- b,--)
+	b8[(-- d-- g-- b,--)]
 % Bars 456 to 460
-	d(-- g-- b,-- d--)
+	d[(-- g-- b,-- d--)]
 	g2\ppp~
 	g~
 	g8 r r4
@@ -317,9 +317,9 @@ musicTrombaIIMvtIII = \relative c'' {
 	f4-^ f8 ees16-.-^ f-.-^
 	g4 d'
 % Bars 506 to 510
-	c8-. b!-. a-. g-.
+	c8-.[ b!-. a-. g-.]
 	g4 d'
-	c8-. b-. a-. g-.
+	c8-.[ b-. a-. g-.]
 	g8[\ff r16 g g8 r16 g]
 	g8[ r16 g g8 r16 g]
 % Bars 511 to 515

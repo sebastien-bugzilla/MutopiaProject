@@ -45,7 +45,7 @@ musicClarinettoIMvtIII = \relative c' {
 	a4 a
 	g! \partCombineChords bes8-.\< g-.
 	\partCombineApart f bes16 g  \partCombineChords f8-. g-.\!
-	\partCombineAutomatic bes\mf( g a) r
+	\partCombineAutomatic bes\mf([ g a)] r
 % Bars 41 to 45
 	R2*8
 % Bars 46 to 50
@@ -111,11 +111,11 @@ musicClarinettoIMvtIII = \relative c' {
 	
 	
 	
-	\partCombineApart r8 f-\offset X-offset #-0.5 _\p-. e-. r
+	\partCombineApart r8 f-\offset X-offset #-0.5 _\p-.[ e-.] r
 % Bars 126 to 130
-	r f-. e-._\dimmarkup r
-	r f-. e-. r
-	r f-. e-. r \partCombineAutomatic
+	r f-.[ e-.]_\dimmarkup r
+	r f-.[ e-.] r
+	r f-.[ e-.] r \partCombineAutomatic
 	R2*2
 	
 % Bars 131 to 135
@@ -271,8 +271,8 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 281 to 285
 	d2(
 	f)
-	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f8( bes a g)
-	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f( bes a g)
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f8([ bes a g)]
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f([ bes a g)]
 	f8.( g16 f8 ees)
 % Bars 286 to 290
 	d4( ees8 f
@@ -293,9 +293,9 @@ musicClarinettoIMvtIII = \relative c' {
 	f'4\p( \tuplet 3/2 4 {g8 f ees)}
 	f4( \tuplet 3/2 4 {g8 f ees)}
 % Bars 301 to 305
-	f4(_\< g~
-	g\!_\> f8 ees)\!
-	\partCombineApart d2_\p~
+	\partCombineApart \stemDown f4(_\< g~
+	g\!_\> \stemUp f8 ees)\!
+	d2_\p~
 	d8 c( f8. ees16)
 	d8( f~ f16 bes d, g)
 % Bars 306 to 310
@@ -361,7 +361,7 @@ musicClarinettoIMvtIII = \relative c' {
 	a a a b\f b b}
 	b8( d cis b
 	a8) r r4
-	R2
+	R2 
 % Bars 371 to 375
 	a'4(~ a16 d fis, b)
 	a4(~ a16 g fis e)
@@ -458,12 +458,12 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 466 to 470
 	R2*2
 	
-	r4 a,8.\p\<\( a'16\)
-	a4.\fz\>( g8
-	fis4. e8)\!
+	r4 \partCombineApart a,8.\( a'16\)
+	\stemDown a4.( \omitFlag g8
+	fis4. \omitFlag e8) \partCombineAutomatic
 % Bars 471 to 475
 	g2\p\>~
-	g\!(
+	g\!^(
 	fis4.) r8
 	R2*3
 	
@@ -499,8 +499,8 @@ musicClarinettoIMvtIII = \relative c' {
 	fis,8[\ff r16 fis fis8 r16 fis]
 	fis8[ r16 fis fis8 r16 fis]
 % Bars 511 to 515
-	e8-. d-. e-. d-.
-	g-. f-. bes-. a-.
+	e8-.[ d-. e-. d-.]
+	g-.[ f-. bes-. a-.]
 	a-. r r4
 	fis8 r fis r
 	fis d,4-^ d8-.

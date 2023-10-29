@@ -96,7 +96,7 @@ musicViolinoIMvtIII = \relative c'' {
 	cis4-> dis->
 	e8( fis) a16( g fis e)
 % Bars 86 to 90
-	d( e) \tuplet 3/2 4 {g( fis e)} d8-. cis-. \mark \default
+	d([ e)] \tuplet 3/2 4 {g( fis e)} d8-. cis-. \mark \default
 	<b, b'>8\ff r q r
 	q r q r 
 	q\noBeam b,32(\< cis d e\! fis8) fis16-. e-.
@@ -263,14 +263,14 @@ musicViolinoIMvtIII = \relative c'' {
 	R2*3
 	
 	
-	b8(\pp d fis e)
+	b8([\pp d fis e])
 	d4( cis
 % Bars 271 to 275
 	b a 
 	g fis~
 	fis) eis(
 	e!) d(~_\dimmarkup
-	d8 c\> e g
+	d8[ c\> e g]
 % Bars 276 to 280
 	b4 a)\!
 	g2\ppp\<~
@@ -425,7 +425,7 @@ musicViolinoIMvtIII = \relative c'' {
 	
 % Bars 476 to 480
 	
-	b,4-\offset X-offset #0.8 \fz^\pizz r
+	b,4-\offset X-offset #0.8 \fz^\pizz^\tutti r
 	R2
 	b4\mp r
 	R2

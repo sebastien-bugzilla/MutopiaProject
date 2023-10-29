@@ -107,7 +107,7 @@ musicSoloCelloMvtIII = \relative c {
 	<<\mmrPos #6 R {s4 \clef bass s} >> \no \mark \default
 % Bars 111 to 115
 	<b, d b'>8.(\f fis'16-.) fis4
-	<d, b' g'>8.( fis'16-.) d'4\fz~
+	<d, b' g'>8. fis'16-. d'4\fz~
 	d16\< cis( e d cis8 b)\!
 	fis'2_\ffz~
 	fis
@@ -148,7 +148,7 @@ musicSoloCelloMvtIII = \relative c {
 	r8 e( fis16 a g fis)
 	r8 \clef bass e(\< cis d)
 % Bars 146 to 150
-	b\(( cis) cis(\> \acciaccatura e d)\)\!
+	b\(( cis) cis(\> \slashedGrace e d)\)\!
 	r8 e(\p fis16 a\< g fis)
 	r8 e( fis16 a\! g fis)
 	r8 e( g fis)
@@ -157,7 +157,7 @@ musicSoloCelloMvtIII = \relative c {
 	r e'(\< fis16 a g fis)\!
 	r8 e(\< fis16 a g fis)\!
 	r8 e(\< cis d)\!
-	b(\> cis) cis( \acciaccatura e d)\!
+	b(\> cis) cis( \slashedGrace e d)\!
 	r a(\pp\> bes16 d c bes)
 % Bars 156 to 160
 	r8 a( bes16 d c bes)\!

@@ -212,8 +212,8 @@ musicViolaMvtIII = \relative c'' {
 	} \\ {
 		g,!4\p( a
 		g a)
-		g(\< fis8 e)
-		fis(\! g b\> a)\!
+		\stemUp g\< \omitBeam fis8 e
+		\omitBeam fis(\! \stemDown g b\> a)\!
 	}>>
 % Bars 171 to 175
 	\tuplet 3/2 4 {<a cis>4.:8 q: 
@@ -374,7 +374,7 @@ musicViolaMvtIII = \relative c'' {
 	d: d: \stopMeasureCount
 	d:\mf } d8 r
 	R2 \mark \default
-	\tempoXoffset #2 g4-.\pp r8 fis
+	\tempoXoffset #2 g4-.\pp r8 fis-.
 % Bars 316 to 320
 	g4-. r8 fis-.
 	g-. r a-. r

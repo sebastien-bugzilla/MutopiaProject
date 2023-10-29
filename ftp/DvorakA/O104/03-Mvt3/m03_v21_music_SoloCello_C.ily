@@ -95,7 +95,7 @@ musicSoloCelloMvtIII = \relative c {
 	\mark \default
 % Bars 111 to 115
 	<b, d b'>8.(\f fis'16-.) fis4
-	<d, b' g'>8.( fis'16-.) d'4\fz~
+	<d, b' g'>8. fis'16-. d'4\fz~
 	d16\< cis( e d cis8 b)\!
 	fis'2_\ffz~
 	fis
@@ -134,33 +134,33 @@ musicSoloCelloMvtIII = \relative c {
 	b, cis8 d!)\! \mark \default
 	r8 e_\pdolce( fis16 a g fis)
 	r8 e( fis16 a g fis)
-	r8 \clef bass e(\< cis d)
+	r8 \clef bass e[(\< cis d)]
 % Bars 146 to 150
-	b\(( cis) cis(\> \acciaccatura e d)\)\!
+	b\(( cis)\! cis(\> \slashedGrace e d)\)\!
 	r8 e(\p fis16 a\< g fis)
 	r8 e( fis16 a\! g fis)
-	r8 e( g fis)
+	r8 e([ g fis)]
 	e(\> d b\prall a)\!
 % Bars 151 to 155
 	r e'(\< fis16 a g fis)\!
 	r8 e(\< fis16 a g fis)\!
-	r8 e(\< cis d)\!
-	b(\> cis) cis( \acciaccatura e d)\!
+	r8 e[(\< cis d)]\!
+	b(\> cis) cis( \slashedGrace e d)\!
 	r a(\pp\> bes16 d c bes)
 % Bars 156 to 160
 	r8 a( bes16 d c bes)\!
-	r8 a( cis! fis!)
+	r8 a([ cis! fis!)]
 	e( d4) r8
 	r \hairpinShorten #'(0 . -2) e(-\offset X-offset #-1 \mf\< fis4)\!
 	r8 e(\< fis4)\!
 % Bars 161 to 165
-	r8 e(\< g fis)\!
+	r8 e[(\< g fis)]\!
 	e(\prall\> dis e4)\!
 	r8 e(\< fis4)\!
 	r8 e(\< fis4)\! \clef treble
-	r8 g(\< a b)
+	r8 g([\< a b])
 % Bars 166 to 170
-	cis!( \tuplet 3/2 8 {b16 cis b} a8\> g16 fis)\! \mark \default
+	cis!( \tuplet 3/2 8 {\once \tupletUp b16 cis b\!} a8\> g16 fis)\! \mark \default
 	r8 e!(\p\< \tuplet 5/4 4 {eis16 fis a g fis)\!}
 	r8 e!(\< \tuplet 5/4 4 {eis16 fis a g fis)\!}
 	r8 \tuplet 3/2 8 {e!16\<([ fis e] d[ e d] cis[ d cis])
@@ -240,7 +240,7 @@ musicSoloCelloMvtIII = \relative c {
 % Bars 241 to 245
 	e(\> a! g fis g e)
 	bes'( a g fis g dis)\!}
-	e( b'! g fis
+	e([ b'! g fis]
 	eis2
 	fis)
 % Bars 246 to 250
@@ -274,7 +274,7 @@ musicSoloCelloMvtIII = \relative c {
 	\mark \default \bar "||"
 % Bars 281 to 285
 	b4_\mpdolcecantabile(-- b~--
-	b8) a( b c)
+	b8)[ a( b c)]
 	d4( g)
 	d( g)
 	d4.( c16 d)
@@ -298,7 +298,7 @@ musicSoloCelloMvtIII = \relative c {
 	d( g) \clef treble
 % Bars 301 to 305
 	g\f\upbow c-^~
-	c8 g( fis e)
+	c8[ g( fis e)]
 	d4^^(~ d16 g b, e)
 	d4(~ d16 c b a)
 	d4 r 
@@ -493,7 +493,7 @@ musicSoloCelloMvtIII = \relative c {
 	fis~
 	fis~
 	fis~
-	fis8 dis'(\< cis b) \clef treble
+	fis8[ dis'(\< cis b)] \clef treble
 % Bars 466 to 470
 	fis'16( e dis b' gis fis dis' b)\!
 	fis2\fp~
@@ -504,7 +504,7 @@ musicSoloCelloMvtIII = \relative c {
 	fis~
 	fis~
 	\tuplet 3/2 4 {fis8( b gis\> fis dis' cis)}
-	b( fis' e dis)\!
+	b([ fis' e dis)]\!
 	b'2\<\startTrillSpan
 % Bars 476 to 480
 	b\startTrillSpan\!

@@ -327,11 +327,11 @@ musicTromboneIMvtIII = \relative c' {
 	b-^
 	cis-^~
 	\tuplet 3/2 2 {cis4 dis-^ cis-^}
-	dis2-^
+	\partCombineApart dis2-^
 % Bars 506 to 510
 	b4-^ fis-^
 	dis'2-^
-	b4-^ fis-^
+	b4-^ fis-^ \partCombineAutomatic
 	dis'8 r dis r
 	dis r dis r
 % Bars 511 to 515
