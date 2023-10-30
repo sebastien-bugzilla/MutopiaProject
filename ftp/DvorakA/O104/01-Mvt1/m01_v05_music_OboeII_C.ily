@@ -81,7 +81,7 @@ musicOboeIIMvtI = \relative c' {
 	
 	fis1\brack\p\<
 	fis2.\f fis4(
-	g1)\< \mark \default
+	\after 1*7/8 \! g1)\< \mark \default
 	fis'4\ff r8 fis g-. fis-. fis-. r
 % Bars 76 to 80
 	fis4 r8 fis g-. fis-. fis-. r
@@ -273,15 +273,15 @@ musicOboeIIMvtI = \relative c' {
 	\mark \default
 % Bars 261 to 265
 	R1
-	r4 d8\mf cis\< g'![ fis] eis\! fis
-	r ais(\f\< b ais)\! r ais(\< b ais)\!
+	r4 \beamOffset #'(0.5 . 0.5) d8\mf cis\< g'![ fis] eis\! fis
+	r ais[(\f\< b ais])\! r ais[(\< b ais])\!
 	eis8\fz^>\( fis16\) r eis8->\( fis16\) r eis8\(-> fis16\) r eis8->\( fis16\) r
 	ais8-\tweak X-offset #0.2 \brack\f r r4 r2
 % Bars 266 to 270
 	R1
-	dis2\ff~ dis8 cis\( b gis\)
+	dis2\ff~ dis8[ cis\( b gis\)]
 	b2\( fis4\) b
-	cis cis dis8\( fis dis b\)
+	cis cis dis8\([ fis dis b\)]
 	ais2.\> r4\!
 % Bars 271 to 275
 	R1*10
@@ -314,7 +314,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 301 to 305
 	d!8\f r r4 r2
 	R1 \mark \default
-	b8\brack\f r r4 r2
+	b8-\tweak X-offset 0.3 \brack\f r r4 r2
 	R1*6
 	
 % Bars 306 to 310

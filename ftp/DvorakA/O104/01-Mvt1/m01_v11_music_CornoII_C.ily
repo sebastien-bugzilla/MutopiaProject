@@ -276,7 +276,7 @@ musicCornoIIMvtI = \relative c' {
 	fes\fz r r4 r2 \mark \default
 	\tuplet 3/2 4 {r8 g,\f g g\< b b b d d d g g\!}
 	fis2\>( d)\!
-	\tuplet 3/2 4 {d8\brack\p\noBeam g, g g\< b b b d d d g g\!}
+	\tuplet 3/2 4 {d8-\tweak X-offset -1.5 \brack\p\noBeam g, g g\< b b b d d d g g\!}
 % Bars 306 to 310
 	fis2\fz\>( d)\!
 	R1*3

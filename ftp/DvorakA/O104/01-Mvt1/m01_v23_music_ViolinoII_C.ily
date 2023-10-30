@@ -325,7 +325,7 @@ musicViolinoIIMvtI = \relative c' {
 % Bars 281 to 285
 	ais2.:-\tweak X-offset #0 \mf b4:
 	b: dis: cis: dis:
-	<b dis>2:\> e: \mark \default
+	<b dis>2:\> \after 2*3/4 \! e: \mark \default
 	dis8\p r r4 r2
 	R1*14
 % Bars 286 to 290

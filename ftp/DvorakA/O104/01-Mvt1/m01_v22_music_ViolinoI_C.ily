@@ -25,8 +25,8 @@ musicViolinoIMvtI = \relative c' {
 % Bars 16 to 20
 	cis8.(-> e16-.)\! g8.->(\fz fis16-.) b8.(->\fz ais16-.) d8.(->\fz cis16-.)
 	g'(\f fis g fis g fis g fis g fis g fis g fis g fis)
-	g(_\ffz fis g fis  g fis g fis  g fis g fis  g fis g fis)
-	fis8:16 g: a!:\fz g: fis: e: d: cis:
+	\markEO #'(0 . 1) g(_\ffz fis g fis  g fis g fis  g fis g fis  g fis g fis)
+	fis8:16 g: \dynEO #'(0 . 1) a!:\fz g: fis: e: d: cis:
 	b: ais: e':\fz d: cis: ais: fis: a:
 % Bars 21 to 25
 	g: fis: cis':\fz ais: g: fis: e: d:
@@ -306,16 +306,16 @@ musicViolinoIMvtI = \relative c' {
 	<e cis'>4\f r r2
 % Bars 266 to 270
 	r2 r4 fis'8.\<( dis'16)\!
-	dis2\ff~ dis8 cis( b gis)
+	dis2\ff~ dis8[ cis( b gis)]
 	b2( fis4) b
-	cis-> cis-> dis8(-^ fis-^ dis-^ b-^)
+	cis-> cis-> dis8[(-^ fis-^ dis-^ b-^)]
 	cis2.\> r4\!
 % Bars 271 to 275
 	R1*6
 % Bars 276 to 280
 	
 	r2 r4 cis,(\pp
-	\sharptrill fis2\startTrillSpan~ fis8)\stopTrillSpan r r4
+	\sharptrill fis2\startTrillSpan~ fis8) r\stopTrillSpan r4
 	r2 r4 cis(
 	\sharptrill fis2\startTrillSpan~ fis8) r\stopTrillSpan r4
 % Bars 281 to 285

@@ -129,7 +129,7 @@ musicSoloCelloOssiaMvtI = \relative c'' {
 % Bars 266 to 270
 	ais4 \tuplet 19/12 1 {e'16( eis fis g! gis a! \clef treble ais! b bis cis d! dis e! eis fis g! gis a! ais)}
 	% <b, b'>4-^ r r2
-	s1*60
+	s1*59
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -153,7 +153,7 @@ musicSoloCelloOssiaMvtI = \relative c'' {
 % Bars 321 to 325
 	
 % Bars 326 to 330
-	
+	\acciaccatura fis,8 fis'4\fz \acciaccatura fisis,8 fisis'4\fz \acciaccatura gis,8 gis'4\fz \acciaccatura a,!8 a'!4\fz
 	ais8( cis) \setSextolet \tuplet 3/2 8 { b16( cis b ais b ais) gis( ais gis fis gis fis) e( fis e dis e dis)
 	d!( e d cis d cis) b( cis b ais b ais) \clef tenor a( b a  gis a gis) g( a g fis g fis)} \unsetSextolet 
 	s1*4

@@ -65,7 +65,7 @@ musicPiccoloMvtI = \relative c''' {
 % Bars 126 to 130
 	fis'8\f r r4 r2
 	r8 fis,16(\f-\tweak extra-offset #'(0 . 0.3) \< g gis a ais b \offset Beam.positions #'(1 . 1) cis d dis e eis fis g! fis)\!
-	b8-\tweak extra-offset #'(-1.5 . 1) \f r^\mutainflautoII r4 r2
+	\dynEO #'(-1.5 . 1) b8\f r^\mutainflautoII r4 r2
 	R1*226
 % Bars 131 to 135
 	

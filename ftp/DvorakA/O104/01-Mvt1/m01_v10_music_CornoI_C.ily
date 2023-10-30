@@ -98,7 +98,7 @@ musicCornoIMvtI = \relative c'' {
 % Bars 91 to 95
 	
 	\partCombineApart r4 \stemUp g,(_\pp a bes~
-	bes) des8.(_\< c16 fes2~
+	bes) \shape #'(() ((0 . 1.5)(0 . 0.5)(0 . -0.5)(0 . -0.5)) ) Slur des8.(_\< c16 fes2~
 	fes2._\f_\> ees4~
 	ees)\! r r2 \partCombineAutomatic
 % Bars 96 to 100
@@ -230,8 +230,8 @@ musicCornoIMvtI = \relative c'' {
 % Bars 251 to 255
 	
 	
-	\partCombineApart ees1_\pcresc
-	d
+	\partCombineApart \after 4 <>_\crescmarkup ees1_\p 
+	d1
 	\hairpinShorten #'(0 . 8) ees_\<
 % Bars 256 to 260
 	c8_\fz r r4 r2 \partCombineAutomatic
@@ -276,7 +276,7 @@ musicCornoIMvtI = \relative c'' {
 	des\fz r r4 r2 \mark \default
 	\tupletYoffset #1.5 \tuplet 3/2 4 {r8 b,\f b b\< d d d g g g b b\!}
 	b2\>( fis!)\!
-	\tuplet 3/2 4 {g8\brack\p\noBeam b, b b\< d d d g g g b b\!}
+	\tuplet 3/2 4 {g8-\tweak X-offset -1.5 \brack\p\noBeam b, b b\< d d d g g g b b\!}
 % Bars 306 to 310
 	b2\fz\>( fis!)\!
 	\partCombineApart b4(_\fp c) b(_\fp c)

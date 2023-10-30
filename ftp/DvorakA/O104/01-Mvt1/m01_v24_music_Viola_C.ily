@@ -21,7 +21,7 @@ musicViolaMvtI = \relative c {
 	fis'4.(\mf gis16 a! fis2)
 	fis4.( e16 cis fis2)
 % Bars 11 to 15
-	r4 cis,16(\pp e cis e  cis e cis e  cis e cis e
+	r4 cis,16(-\offset X-offset -2 \pp e cis e  cis e cis e  cis e cis e
 	cis8) r cis16( e cis e  cis e cis e  cis e cis e)
 	cis( e cis e  cis e cis e  cis-\tweak extra-offset #'(0.9 . 2.2) _\crescmarkup e cis e  cis e cis e)
 	cis( e cis e  cis e cis e  cis e cis e  cis e cis e
@@ -193,15 +193,15 @@ musicViolaMvtI = \relative c {
 % Bars 156 to 160
 	\hairpinShorten #'(0 . 2) <a d>2:_\dimD\> <b d>4:\! <cis e>: \mark \default
 	d8\p r r4 r2
-	\beamStructure cis8\pp^\pizz e d fis cis e d fis
-	cis e ais, cis ais cis ais cis
-	cis e d fis cis e d fis
+	cis8[\pp^\pizz e] d[ fis] cis[ e] d[ fis]
+	cis[ e] ais,[ cis] ais[ cis] ais[ cis]
+	cis[ e] d[ fis] cis[ e] d[ fis]
 % Bars 161 to 165
-	cis e ais,\< cis ais cis ais cis\!
-	e_\crescmarkup g fis a! e g fis a
-	cis,\mf e d\> fis cis e d fis\!
-	b,_\dimmarkup d c e b d c e
-	b\p\> d c e c f c fis\!
+	cis[ e] ais,[\< cis] ais[ cis] ais[ cis]\!
+	e[_\crescmarkup g] fis[ a!] e[ g] fis[ a]
+	cis,[\mf e] d[\> fis] cis[ e] d[ fis]\!
+	b,[_\dimmarkup d] c[ e] b[ d] c[ e]
+	b[\p\> d] c[ e] c[ f] c[ fis]\!
 % Bars 166 to 170
 	cis!\brack\pp r r4 r2
 	R1
@@ -278,7 +278,7 @@ musicViolaMvtI = \relative c {
 	gis2.: <dis fis>4:
 	gis2: gis:
 	eis1:\<
-	e!:\!
+	\after 2 \! e!:
 	<< dis:\fz  {s2 s_\dimmarkup} >>
 % Bars 231 to 235
 	dis2:\> fisis:
@@ -343,7 +343,7 @@ musicViolaMvtI = \relative c {
 % Bars 281 to 285
 	<dis fis>2.:\mf q4:
 	<eis gis>2: <<{ais4: b:} \\ {eis,2:}>>
-	<fis b>2:\> <gis b>4: <ais cis>: \mark \default
+	<fis b>2:\> <gis b>4: \after 8 \! <ais cis>: \mark \default
 	b8\p r r4 r2
 	ais8\pp^\pizz cis b dis ais cis b dis
 % Bars 286 to 290

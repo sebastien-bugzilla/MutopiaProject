@@ -281,16 +281,16 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	\mark \default
 % Bars 261 to 265
-	r2 gis,8(-\tweak X-offset #-3 \mf a d cis)
-	r \stemUp \omitBeam e\(\< d cis\) \stemDown gis'\([ a] gis a\)\!
-	r cis(\f\< d cis)\! r cis(\< d cis)\!
+	r2 gis,8[(-\tweak X-offset #-3 \mf a d cis)]
+	r \stemUp \omitFlag e\(\< \omitBeam d cis\) \stemDown gis'\([ a] gis a\)\!
+	r cis([\f\< d cis])\! r cis([\< d cis)]\!
 	d,8(-\tweak X-offset #-1 \fz^> cis16) r d8->( cis16) r d8->( cis16) r d8->( cis16) r 
 	g'8\brack\f r r4 r2 
 % Bars 266 to 270
 	R1
-	fis'2~\ff fis8 e\( d b\)
+	fis'2~\ff fis8[ e\( d b\)]
 	d2\( a4\) d
-	e e fis8\( a fis d\)
+	e e fis8\([ a fis d\)]
 	cis2.\> r4\!
 % Bars 271 to 275
 	R1*5 
@@ -330,7 +330,7 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	c,4\(\fp b\) c\(\fp b\)
 	bes!\(-\tweak X-offset #-1.3 \fp a\) bes\(-\tweak X-offset #-1.3 \fp a\)
-	c\( b-\tweak extra-offset #'(1.3 . 2) _\crescmarkup d cis\)
+	c\( b-\tweak extra-offset #'(1.3 . 2.3) _\crescmarkup d cis\)
 	e2.\f^^ r4
 % Bars 311 to 315
 	r2 r4 \tuplet 3/2 4 {bes'8\f\< d f}

@@ -71,7 +71,7 @@ musicFagottoIMvtI = \relative c {
 	a2( ais4 b)
 	b1\<
 	d2.\fz\< d4\!
-	d2(\< e) \mark \default
+	d2(\< << e) {s4 s8 s\!}>> \mark \default
 	d,4\ff r8 d d-. d-. d-. r
 % Bars 76 to 80
 	d4 r8 d d-. d-. d-. r
@@ -242,9 +242,9 @@ musicFagottoIMvtI = \relative c {
 	\mark \default
 	b1\p(
 	cis)
-	d!(_\crescmarkup 
+	<<d!( {s4 s_\crescmarkup s2}>> 
 % Bars 251 to 255
-	\hairpinShorten #'(0 . 7) e)\<
+	\hairpinShorten #'(0 . 7) e1)\<
 	fis
 	e\!-\tweak X-offset #10.5 _\crescmarkup \clef tenor
 	fis
@@ -256,16 +256,16 @@ musicFagottoIMvtI = \relative c {
 	
 	\clef bass \mark \default
 % Bars 261 to 265
-	r8 cis,\mf( d! cis) b'( ais gis ais)
-	r \partCombineApart \stemDown \omitBeam ais( gis ais) \stemUp d!\([ cis] d cis\) \partCombineAutomatic
-	r fis(\f\< eis fis)\! r fis(\< eis fis)\!
+	r8 cis,[\mf( d! cis)] b'([ ais gis ais)]
+	r \partCombineApart \stemDown \omitFlag ais([ \omitBeam gis ais)] \stemUp d!\([ cis] d cis\) \partCombineAutomatic
+	r fis[(\f\< eis fis)]\! r fis[(\< eis fis)]\!
 	d8->(\fz cis16) r d8->( cis16) r d8->( cis16) r d8->( cis16) r 
 	cis8\brack\f r r4 r2
 % Bars 266 to 270
 	R1
-	\aIIXoffset #-4.5 dis2\ff~ dis8 cis( b gis)
+	\aIIXoffset #-4.5 dis2\ff~ dis8[ cis( b gis)]
 	b2( fis4) b
-	cis cis dis8( fis dis b)
+	cis cis dis8([ fis dis b)]
 	cis2.\> r4\!
 % Bars 271 to 275
 	R1*10
@@ -280,7 +280,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 286 to 290
 	cis4(\< \hairpinShorten #'(0 . 16) ais2.->\fz\>)
 	cis4(\! dis cis dis)
-	cis(\< ais!2._\fzmarkup->)
+	cis(\< \markEO #'(0 . 1.5) ais!2._\fzmarkup->)
 	e'4(\mf fis e fis)
 	cis( dis_\dimD\> cis dis)\!
 % Bars 291 to 295

@@ -6,94 +6,117 @@
 %###############################################################################
 
 % dynamics 
+ffz = \markup {\hspace #-1.13 \dynamic ffz}
+ffzB = \markup {\dynamic ffz}
+piuf = \markup {\italic più \dynamic f}
 
-dimmarkup=^\markup {\italic dim.}
-crescmarkup=^\markup {\italic cresc.}
-pdim=^\markup {\dynamic p \italic dim.}
-fzmarkup=^\markup {\dynamic fz}
-fzmarkupbrack=^\markup {
+pdim = \markup {\hspace #-0.05 \dynamic p \italic dim.}
+pcresc = \markup {\hspace #-0.05 \dynamic p \italic cresc.}
+psempre = \markup {\hspace #-0.05 \dynamic p \italic sempre}
+perit = \markup {\hspace #-0.05 \dynamic p \italic {e rit.}}
+pspiccato = \markup {\hspace #-0.05 \dynamic p \italic spiccato}
+pdolceedanimato = \markup {\hspace #-0.05 \dynamic p \italic {dolce ed animato}}
+psemprepiudim = \markup {\hspace #-0.05 \dynamic p \italic {sempre più dim.}}
+psemplice = \markup {\hspace #-0.05 \dynamic p \italic semplice}
+pdolce = \markup {\hspace #-0.05 \dynamic p \italic dolce}
+pmorendo = \markup {\hspace #-0.05 \dynamic p \italic morendo}
+pconsord = \markup {\hspace #-0.05 \dynamic p \italic {con sord.}}
+pmarcato = \markup {\hspace #-0.05 \dynamic p \italic marcato}
+psolo = \markup {\hspace #-0.05 \dynamic p \lower #0.5 Solo.}
+ptranquilloemoltoespressivo = \markup {
+	\hspace #-0.05 \dynamic p \italic {tranquillo e molto espressivo}
+}
+pespressivoecantabile = \markup {
+	\hspace #-0.05 \dynamic p \italic {espressivo e cantabile}
+}
+ppocomarcato = \markup {\hspace #-0.05 \dynamic p \italic {poco marcato}}
+
+fcresc = \markup {\dynamic f \italic cresc.}
+frisoluto = \markup {\dynamic f \italic risoluto}
+
+mfleggieroecantabile = \markup {
+	\hspace #-0.8 \dynamic mf \italic {leggiero e cantabile}
+}
+mfcantabile = \markup {\hspace #-0.8 \dynamic mf \italic cantabile}
+mfrisoluto = \markup {\hspace #-0.8 \dynamic mf \italic risoluto}
+mfdolce = \markup {\hspace #-0.8 \dynamic mf \italic dolce}
+mfdim = \markup {\hspace #-0.8 \dynamic mf \italic dim.}
+mfmarkup = \markup {\hspace #-0.8 \dynamic mf}
+
+fzconforza = \markup {\hspace #-0.53 \dynamic fz \italic {con forza}}
+fzdim = \markup {\hspace #-0.53 \dynamic fz \italic dim.}
+fzmarkup = \markup {\hspace #-0.53 \dynamic fz}
+
+ffcolottavaadlib = \markup {
+	\hspace #-0.52 \dynamic ff \italic {col \concat { 8 \super va } ad lib.}
+}
+ffmoltoespressivo = \markup {
+	\hspace #-0.52 \dynamic ff \italic {molto espressivo}
+}
+ffconforza = \markup {\hspace #-0.52 \dynamic ff \italic {con forza}}
+ffdim = \markup {\hspace #-0.52 \dynamic ff \italic dim.}
+
+fpspiccato = \markup {\hspace #-0.7 \dynamic fp \italic spiccato}
+
+ppdim = \markup {\hspace #-0.81 \dynamic pp \italic dim.}
+ppleggiero = \markup {\hspace #-0.81 \dynamic pp \italic leggiero}
+ppmoltocresc = \markup {\hspace #-0.81 \dynamic pp \italic {molto cresc.}}
+
+mpdolcecantabile = \markup {
+	\hspace #-1.08 \dynamic mp \italic {dolce cantabile}
+}
+fpp = \markup {\hspace #-1.5 \dynamic fpp}
+
+
+dimmarkup = \markup {\italic dim.}
+crescmarkup = \markup {\italic cresc.}
+fzmarkupbrack = \markup {
 	\concat {
 		\translate #'(-1.5 . 0) \normal-text \italic \fontsize #2 [
 		\dynamic fz 
 		\normal-text \italic \fontsize #2 ]
 	}
 }
-fcresc=^\markup {\dynamic f \italic cresc.}
-piuf=^\markup {\italic più \dynamic f}
-pcresc=^\markup {\dynamic p \italic cresc.}
-ffz=^\markup {\hspace #-0.8 \dynamic ffz}
-ffzB=^\markup {\dynamic ffz}
-psempre=^\markup {\dynamic p \italic sempre}
-frisoluto=^\markup {\dynamic f \italic risoluto}
-pspiccato=^\markup {\dynamic p \italic spiccato}
-perit=^\markup {\dynamic p \italic {e rit.}}
-mfleggieroecantabile=^\markup {\dynamic mf \italic {leggiero e cantabile}}
-fzconforza=^\markup {\dynamic fz \italic {con forza}}
-pdolceedanimato=^\markup {\dynamic p \italic {dolce ed animato}}
-crescpocoapoco=^\markup {\italic {cresc. poco a poco}}
-mfcantabile=^\markup {\dynamic mf \italic cantabile}
-ffcolottavaadlib=^\markup {\dynamic ff \italic {col \concat { 8 \super va } ad lib.}}
-fpspiccato=^\markup {\dynamic fp \italic spiccato}
-mfmarkup=^\markup {\dynamic mf}
-psemprepiudim=^\markup {\dynamic p \italic {sempre più dim.}}
-ppdim=^\markup {\dynamic pp \italic dim.}
-fpp=^\markup {\hspace #-1.5 \dynamic fpp}
-pococresc=^\markup {\italic {poco cresc.}}
-fzdim=^\markup {\dynamic fz \italic dim.}
-psemplice=^\markup {\dynamic p \italic semplice}
-pdolce=^\markup {\dynamic p \italic dolce}
-espr = \markup { "<" ">"}
-pmorendo=^\markup {\dynamic p \italic morendo}
-ppleggiero=^\markup {\dynamic pp \italic leggiero}
-pconsord=^\markup {\dynamic p \italic {con sord.}}
-moltocresc=^\markup {\italic {molto cresc.}}
-mfrisoluto=^\markup {\dynamic mf \italic risoluto}
-mfdolce=^\markup {\dynamic mf \italic dolce}
-mpdolcecantabile=^\markup {\dynamic mp \italic {dolce cantabile}}
-ffmoltoespressivo=^\markup {\dynamic ff \italic {molto espressivo}}
-fpspiccato=^\markup {\dynamic fp \italic spiccato}
-ppmoltocresc=^\markup {\dynamic pp \italic {molto cresc.}}
-ritemoltocresc=^\markup {\italic {rit. e molto cresc.}}
-pmarcato=^\markup {\dynamic p \italic marcato}
-ptranquilloemoltoespressivo=^\markup {\dynamic p \italic {tranquillo e molto espressivo}}
-ffconforza=^\markup {\hspace #-0.7 \dynamic ff \italic {con forza}}
-ffdim=^\markup {\dynamic ff \italic dim.}
-psolo=^\markup {\dynamic p \lower #0.5 Solo.}
-mfdim=^\markup {\dynamic mf \italic dim.}
-pespressivoecantabile=^\markup {\dynamic p \italic {espressivo e cantabile}}
 
-
-crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
-dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
-pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
-pcrescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cresc."))
-fanimatoD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "animato"))
-ppdolceD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dolce"))
-psempredimD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "sempre dim."))
+crescD = \tweak DynamicText.self-alignment-X #-0.77 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
+dimD = \tweak DynamicText.self-alignment-X #-0.71 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
+pdimD = \tweak DynamicText.self-alignment-X #-0.79 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
+pcrescD = \tweak DynamicText.self-alignment-X #-0.82 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cresc."))
+fanimatoD = \tweak DynamicText.self-alignment-X #-0.875 #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "animato"))
+ppdolceD = \tweak DynamicText.self-alignment-X #-0.66 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dolce"))
+psempredimD = \tweak DynamicText.self-alignment-X #-0.9 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "sempre dim."))
 ffzD = \tweak DynamicText.self-alignment-X #0 #(make-dynamic-script (markup #:dynamic "ffz"))
-ppdimD = \tweak DynamicText.self-alignment-X #-0.78 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dim."))
-fzdimD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim."))
+ppdimD = \tweak DynamicText.self-alignment-X #-0.64 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dim."))
+fzdimD = \tweak DynamicText.self-alignment-X #-0.68 #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim."))
+
+crescpocoapoco = \markup {\italic {cresc. poco a poco}}
+pococresc = \markup {\italic {poco cresc.}}
+espr = \markup { "<" ">"}
+moltocresc = \markup {\italic {molto cresc.}}
+ritemoltocresc = \markup {\italic {rit. e molto cresc.}}
+
+
 
 % expression & indications
 
-IImutainflautopicc=^\markup { \smaller { [II. muta in Flauto picc.] } }
-mutainflautoII=^\markup { \smaller { [muta in Flauto II.] } }
-mutainflauto=^\markup { \smaller { \column { \lower #1 "[muta in" "Flauto.]" } } }
-moltoespressivo=^\markup {\italic {molto espressivo}}
-mutaind=^\markup {\italic {muta in D}}
-mutaine=^\markup {\italic {muta in E}}
-pesante=^\markup {\italic pesante}
-vivo=^\markup {\italic vivo}
-dolceemoltosostenuto=^\markup {\italic {dolce e molto sostenuto}}
-portamento=^\markup {\italic portamento}
-moltoespressivoesostenuto=^\markup {\italic {molto espressivo e sostenuto}}
-moltoespressesostenuto=^\markup {\italic {molto espress. e sostenuto}}
-moltoappassionato=^\markup {\italic {molto appassionato}}
-pizz=^\markup {pizz.}
-arco=^\markup {arco}
-arcobrack=^\markup {[arco]}
-lunga=^\markup {\italic lunga}
-lungafermata=^\markup {
+IImutainflautopicc = \markup { \smaller { [II. muta in Flauto picc.] } }
+mutainflautoII = \markup { \smaller { [muta in Flauto II.] } }
+mutainflauto = \markup { \smaller { \column { \lower #1 "[muta in" "Flauto.]" } } }
+moltoespressivo = \markup {\italic {molto espressivo}}
+mutaind = \markup {\italic {muta in D}}
+mutaine = \markup {\italic {muta in E}}
+pesante = \markup {\italic pesante}
+vivo = \markup {\italic vivo}
+dolceemoltosostenuto = \markup {\italic {dolce e molto sostenuto}}
+portamento = \markup {\italic portamento}
+moltoespressivoesostenuto = \markup {\italic {molto espressivo e sostenuto}}
+moltoespressesostenuto = \markup {\italic {molto espress. e sostenuto}}
+moltoappassionato = \markup {\italic {molto appassionato}}
+pizz = \markup {pizz.}
+arco = \markup {arco}
+arcobrack = \markup {[arco]}
+lunga = \markup {\italic lunga}
+lungafermata = \markup {
 	\halign #-0.2 \center-column {
 		\lower #1.1 \italic "lunga"
 		\musicglyph #"scripts.ufermata"
@@ -106,27 +129,26 @@ lungatrillfermata=\markup {
 		\musicglyph #"scripts.ufermata"
 	}
 }
-morendo=^\markup {\italic morendo}
-mutainf=^\markup {\italic {muta in F}}
-ten=^\markup {\italic ten.}
-dolce=^\markup {\italic dolce}
-quasicadenza=^\markup {\italic {quasi Cadenza}}
-tranquillo=^\markup {\italic tranquillo}
-div=^\markup {div.}
-IImutainflautopiccolo=^\markup { \smaller { [II. muta in Flauto piccolo] } }
-mutainflautopiccolo=^\markup { \smaller { \column {\lower #1 "[muta in" "Flauto Piccolo]"} } }
-espressivoecantabile=^\markup {\italic {espressivo e cantabile}}
-ppocomarcato=^\markup {\dynamic p \italic {poco marcato}}
-senzasord=^\markup {\italic {senza sord.}}
-solo=^\markup {Solo}
-soleconsord=^\markup {Sole con sord.}
-senzaottava=^\markup {\italic {senza \concat { 8 \super va}}}
-appassionato=^\markup {\italic appassionato}
-arcoconsord=^\markup {arco con sord.}
-%senzasord=^\markup {senza sord.}
-tutti=^\markup {Tutti}
-sulgespressivo=^\markup {sul G \italic espressivo}
-trem=^\markup {\italic trem.}
+morendo = \markup {\italic morendo}
+mutainf = \markup {\italic {muta in F}}
+ten = \markup {\italic ten.}
+dolce = \markup {\italic dolce}
+quasicadenza = \markup {\italic {quasi Cadenza}}
+tranquillo = \markup {\italic tranquillo}
+div = \markup {div.}
+IImutainflautopiccolo = \markup { \smaller { [II. muta in Flauto piccolo] } }
+mutainflautopiccolo = \markup { \smaller { \column {\lower #1 "[muta in" "Flauto Piccolo]"} } }
+espressivoecantabile = \markup {\italic {espressivo e cantabile}}
+senzasord = \markup {\italic {senza sord.}}
+solo = \markup {Solo}
+soleconsord = \markup {Sole con sord.}
+senzaottava = \markup {\italic {senza \concat { 8 \super va}}}
+appassionato = \markup {\italic appassionato}
+arcoconsord = \markup {arco con sord.}
+%senzasord = \markup {senza sord.}
+tutti = \markup {Tutti}
+sulgespressivo = \markup {sul G \italic espressivo}
+trem = \markup {\italic trem.}
 
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
@@ -230,7 +252,7 @@ mmrPos = #(define-music-function
 
 ffcolottava = {
 	\once \override TextSpanner.bound-details.left.text = \markup {
-		\dynamic ff 
+		\hspace #-0.52 \dynamic ff 
 		\italic {
 			col \concat { 8 \super va } bassa ad libitum
 		}
@@ -327,9 +349,9 @@ brack = #(define-event-function
 	(make-dynamic-script
 	#{ 
 		\markup \concat {
-			\translate #'(0 . -0.4) \normal-text \italic \fontsize #2 [
-			\pad-x #0.0 #(ly:music-property dyn 'text)
-			\translate #'(0 . -0.4) \normal-text \italic \fontsize #2 ]
+			\general-align #Y #CENTER \normal-text \italic \fontsize #3.5 [
+			\general-align #Y #CENTER \pad-x #0.0 #(ly:music-property dyn 'text)
+			\general-align #Y #CENTER \normal-text \italic \fontsize #3.5 ]
 		}
 	#}
 	)
@@ -509,11 +531,11 @@ omitDots = \once \omit Dots
 		default-script-alist)
 )
 
-beamStructure = {
-	\set Timing.beamExceptions = #'()
-	\set Timing.baseMoment = #(ly:make-moment 1/4)
-	\set Timing.beatStructure = 1,1,1,1
-}
+%beamStructure = {
+%	\set Timing.beamExceptions = #'()
+%	\set Timing.baseMoment = #(ly:make-moment 1/4)
+%	\set Timing.beatStructure = 1,1,1,1
+%}
 
 
 stemOffset = #(define-music-function
@@ -529,6 +551,43 @@ noteShift = #(define-music-function
 	(number?)
 	#{
 		\once \override NoteColumn.force-hshift = #shift
+	#}
+)
+
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = #1
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+markEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TextScript.layer = #3
+		\once \override TextScript.extra-offset = #offset
+		\once \override TextScript.whiteout = #1
+		\once \override TextScript.whiteout-style = #'outline
+	#}
+)
+
+updateShortName = #(define-music-function
+	(name)
+	(markup?)
+	#{
+		\set Staff.shortInstrumentName = #name
+	#}
+)
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
 	#}
 )
 
@@ -689,14 +748,6 @@ footnotePageX = \markup {
 %	#}
 %)
 
-%beamOffset = #(define-music-function
-%	(position)
-%	(pair?)
-%	#{
-%		\once \offset positions #position Beam
-%	#}
-%)
-
 %beamGap = #(define-music-function
 %	(gap)
 %	(number?)
@@ -748,16 +799,6 @@ footnotePageX = \markup {
 %	#}
 %)
 
-%dynEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override DynamicText.extra-offset = #offset
-%		\once \override DynamicText.whiteout = ##t
-%		\once \override DynamicText.whiteout-style = #'outline
-%	#}
-%)
-
 %hairpinShorten = #(define-music-function
 %	(shortLength)
 %	(pair?)
@@ -795,17 +836,6 @@ footnotePageX = \markup {
 %%	\override Beam.length = #7
 %	\unset fontSize
 %}
-
-%markEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TextScript.layer = #3
-%		\once \override TextScript.extra-offset = #offset
-%		\once \override TextScript.whiteout = ##t
-%		\once \override TextScript.whiteout-style = #'outline
-%	#}
-%)
 
 %markWhiteout = {
 %	\once \override Score.RehearsalMark.layer = #3

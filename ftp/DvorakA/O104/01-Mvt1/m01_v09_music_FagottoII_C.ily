@@ -71,7 +71,7 @@ musicFagottoIIMvtI = \relative c {
 	\hairpinShorten #'(0 . -10) fis4(\p\< d g2)\!
 	gis1\<
 	a2.\fz\< a4\!
-	b2(\< cis) \mark \default
+	b2(\< << cis) {s4 s8 s\!} >> \mark \default
 	d,,4\ff r8 d d-. d-. d-. r
 % Bars 76 to 80
 	d4 r8 d d-. d-. d-. r
@@ -242,9 +242,9 @@ musicFagottoIIMvtI = \relative c {
 	\mark \default
 	gis1\p(
 	fisis)
-	b( 
+	<<b( {s4 s_\crescmarkup s2 }>> 
 % Bars 251 to 255
-	ais)\<
+	ais1)\<
 	d!
 	cis\! \clef tenor
 	d
@@ -256,16 +256,16 @@ musicFagottoIIMvtI = \relative c {
 	
 	\clef bass \mark \default
 % Bars 261 to 265
-	r8 ais,\mf( b ais) d!( cis eis fis)
-	r fis\< eis fis b\([ ais] d cis\)\!
-	r fis(\f\< eis fis)\! r fis(\< eis fis)\!
+	r8 ais,\mf([ b ais)] d!([ cis eis fis)]
+	r fis[\< eis fis] b\([ ais] d cis\)\!
+	r fis[(\f\< eis fis])\! r fis[(\< eis fis)]\!
 	b,8->(\fz ais16) r b8->( ais16) r b8->( ais16) r b8->( ais16) r 
 	fis8\brack\f r r4 r2
 % Bars 266 to 270
 	R1
-	dis'2\ff~ dis8 cis( b gis)
+	dis'2\ff~ dis8[ cis( b gis)]
 	b2( fis4) b
-	cis cis dis8( fis dis b)
+	cis cis dis8([ fis dis b)]
 	ais2.\> r4\!
 % Bars 271 to 275
 	R1*10

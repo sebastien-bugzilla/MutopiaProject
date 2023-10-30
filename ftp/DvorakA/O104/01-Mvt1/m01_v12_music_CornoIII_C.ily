@@ -232,11 +232,11 @@ musicCornoIIIMvtI = \relative c'' {
 	r4 \tuplet 3/2 4 {ais8-.\p b-. ais-.} ais r \tuplet 3/2 4 {ais-. b-. ais-.}
 	b\f r \tuplet 3/2 4 {b-. c!-. b-.} b r \tuplet 3/2 4 {b-. c-. b-.}
 % Bars 301 to 305
-	c\f r c-> b-. c-> b-. c-> b-. 
+	c\f r c-> b-. c->[ b-.] c-> b-. 
 	c\fz r r4 r2 \mark \default
 	r4 \tupletYoffset #1.5 \tuplet 3/2 4 {r8 a,\f\< a a cis cis cis e e\!}
 	e2(\> d\!)
-	cis8\brack\p r \tupletYoffset #2 \tuplet 3/2 4 {r8 a\< a a cis! cis cis e e\!}
+	cis8-\offset X-offset 0.6 \brack\p r \tupletYoffset #2 \tuplet 3/2 4 {r8 a\< a a cis! cis cis e e\!}
 % Bars 306 to 310
 	e2(\fz\> d)\!
 	R1*3

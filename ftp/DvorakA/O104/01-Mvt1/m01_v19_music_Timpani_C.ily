@@ -194,8 +194,8 @@ musicTimpaniMvtI = \relative c, {
 % Bars 261 to 265
 	fis:_\psempre
 	fis:
-	fis:\<
-	fis8\! r r4 r2
+	\after 1*7/8 \! fis:\<
+	fis8 r r4 r2
 	R1*2
 % Bars 266 to 270
 	

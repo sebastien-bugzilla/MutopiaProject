@@ -74,7 +74,7 @@ musicFlautoIMvtI = \relative c'' {
 	d)_\< fis(~ fis8 e d b)
 	d2(\! fis,8) r fis'8.( d'16)
 	d4(_\f fis8 d a4 fis)
-	a(_\< g e4. d8) \mark \default
+	a(_\< g e4. d8)\! \mark \default
 	d'4_\ff r8 d d-. d-. d-. r
 % Bars 76 to 80
 	d4 r8 d d-. d-. d-. r
@@ -101,14 +101,14 @@ musicFlautoIMvtI = \relative c'' {
 	
 % Bars 101 to 105
 	r16 e,\p\<-. e-. dis-. e8-. a-. \tuplet 3/2 4 {a-. a-. c-. } c16-. c-. c-. e-.\!
-	dis8\fz r_\IImutainflautopicc r4 r2
+	dis8\fz r_\IImutainflautopicc r4 r2 \updateShortName "Fl.I"
 	a'4.(\p b16 c a2)
 	d4( c8 b d2)
 	b4.( cis!16 d b2)
 % Bars 106 to 110
 	e4( d8 cis e2~
 	e8)\< fis( g fis e d cis b)\!
-	b( cis d ais b-\tweak extra-offset #'(0 . 2) \f d a'! g~
+	b( cis d ais \dynEO #'(0 . 2) b\f d a'! g~
 	g)\> fis( e d) d4(~ \tuplet 3/2 4 {d8 cis fis)\!} \mark \default
 	b,8\fz r r4 r2
 % Bars 111 to 115
@@ -118,7 +118,7 @@ musicFlautoIMvtI = \relative c'' {
 	
 	
 	
-	r8 g'16-\tweak X-offset #-2 \mf g g8 r r fis16 fis fis8 r
+	r8 \dynEO #'(0 . 2) g'16\mf g g8 r r fis16 fis fis8 r
 % Bars 121 to 125
 	r g16_\crescmarkup g g8 r r fis16 fis fis8 r 
 	R1*2
@@ -128,13 +128,13 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 126 to 130
 	fis8\f r r4 r2
 	r8 fis,16(\f-\tweak extra-offset #'(0 . 0.3) \< g gis a ais b \offset Beam.positions #'(1 . 1) cis d dis e eis fis g! fis)\! \mark \default
-	d'1-\tweak extra-offset #'(0 . 0.5) \f\startTrillSpan
-	d\startTrillSpan
-	d\startTrillSpan
+	d'1-\tweak extra-offset #'(0 . 0.5) \f\startTrillSpan \updateShortName "Fl."
+	<<d {s4\startTrillSpan s s s8 s16 s\stopTrillSpan}>>
+	\partCombineApart d1\startTrillSpan
 % Bars 131 to 135
 	d\startTrillSpan
-	g4\stopTrillSpan\f r r2
-	R1*16
+	g4\stopTrillSpan\f r r2 \partCombineAutomatic
+	R1*16 
 % Bars 136 to 140
 	
 % Bars 141 to 145
@@ -177,9 +177,9 @@ musicFlautoIMvtI = \relative c'' {
 	R1 \mark \default
 % Bars 176 to 180
 	R1
-	\partCombineApart r8 \hairpinShorten #'(0 . -7) a,(_\mf_\< a') a-. a4.\! a8
+	\partCombineApart r8 \hairpinShorten #'(0 . -7) a,([_\mf_\< a') a-.] a4.\! a8
 	b( a) a4 r2
-	r8 \hairpinShorten #'(0 . -7) a,(_\< a') a-. a4.\! a8
+	r8 \hairpinShorten #'(0 . -7) a,[(_\< a') a-.] a4.\! a8
 	a8.(_\f g16 b,4) a'8.( g16 b,4)
 % Bars 181 to 185
 	g'8.( fis16 a,4) g'8.( fis16 a,4)
@@ -203,10 +203,10 @@ musicFlautoIMvtI = \relative c'' {
 	d-. r r2
 	R1*2
 	
-	\partCombineApart bes8(-\tweak extra-offset #'(0 . 5) _\f g e cis bes_\dimmarkup g e cis)
-	bes'( g e cis bes' g e cis)
+	\partCombineApart \dynEO #'(0 . 5) bes8[(_\f g e cis] bes[_\dimmarkup g e cis])
+	bes'[( g e cis] bes'[ g e cis])
 % Bars 201 to 205
-	a'_\p_\>( g e cis a' g e cis)\!
+	a'[_\p_\>( g e cis] a'[ g e cis])\!
 	a'16(_\pp g a g  a g a g  a g a g  a g a g
 	a g a g  a g a g  a g a g  a g b a) \partCombineAutomatic
 	d,1\pp~
@@ -220,12 +220,12 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 211 to 215
 	c r r4 r2 \partCombineAutomatic
 	R1
-	\partCombineApart d8-._\p_\< g16-. g-. g8-. bes-. bes-. d-. d-.\! g-.
-	g(-\tweak extra-offset #'(0 . 0.3) _\mf a16 bes g4. d8 g4)
+	\partCombineApart d8-._\p_\< g16-. g-. g8-. bes-. bes-.[ d-. d-.\! g-.]
+	\dynEO #'(0 . 2) g(_\mf a16 bes g4. d8 g4)
 	g8(_\crescmarkup a16 bes g4. des8 g4) \partCombineAutomatic
 % Bars 216 to 220
 	g1\f
-	ees4( ces2.)
+	ees4( ces!2.)
 	bes4 r r2
 	R1*5
 	
@@ -239,11 +239,11 @@ musicFlautoIMvtI = \relative c'' {
 	
 	
 	
-	\partCombineApart gis2(_\p_\< ais4 b
-	dis2~_\fz dis8_\> fis e8. dis16\!
+	\partCombineApart \shape #'((0 . -1.5)(0 . -0.5)(0 . 0)(0 . -0.5)) Slur gis2(_\p_\< ais4 b
+	dis2~_\fz dis8[_\> fis e8. dis16]\!
 % Bars 231 to 235
 	cis4)_\p \acciaccatura e8 dis4.( cis8) \tuplet 3/2 4 {cis8( b ais)}
-	\shape #'((0 . 1)(0 . 0)(0 . 0)(0 . 0)) Slur cis4( b8. cis32 b gis4.) r8
+	\shape #'((0 . 1)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur cis4( b8. cis32 b gis4.) r8
 	r4 gis4(_\pp ais8 b gis4)
 	r \shape #'((0 . -1)(0 . 0)(0 . 0)(0 . -1)) Slur gis( ais b 
 	gis_\< gis'\! b,_\> cis\!)
@@ -264,7 +264,7 @@ musicFlautoIMvtI = \relative c'' {
 	r2 r4 r8 gis'_\p \mark \default
 	gis2.( ais8 b)
 	b4( ais2) ais4
-	b2.(_\crescmarkup cis8 d!)
+	\after 4 <>_\crescmarkup b2.( cis8 d!)
 % Bars 251 to 255
 	d4(_\< cis2) cis4
 	d2.( e8 fis)\!
@@ -281,9 +281,9 @@ musicFlautoIMvtI = \relative c'' {
 	R1*6
 % Bars 266 to 270
 	
-	\aIIXoffset #-4.5 dis2\ff~ dis8 cis( b gis)
+	\aIIXoffset #-4.5 dis2\ff~ dis8[ cis( b gis)]
 	b2( fis4) b
-	cis cis dis8( fis dis b)
+	cis cis dis8([ fis dis b)]
 	\once \partCombineChords cis2.\> r4\!
 % Bars 271 to 275
 	R1*5

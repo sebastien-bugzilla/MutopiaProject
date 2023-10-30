@@ -123,9 +123,9 @@ musicFlautoIIMvtI = \relative c'' {
 % Bars 126 to 130
 	
 	\mark \default
-	R1*5
+	R1*2
 	
-	
+	R1*3
 % Bars 131 to 135
 	
 	
@@ -260,9 +260,9 @@ musicFlautoIIMvtI = \relative c'' {
 	R1*6
 % Bars 266 to 270
 	
-	dis''2\ff~ dis8 cis( b gis)
+	dis''2\ff~ dis8[ cis( b gis)]
 	b2( fis4) b
-	cis cis dis8( fis dis b)
+	cis cis dis8([ fis dis b)]
 	ais2.\> r4\!
 % Bars 271 to 275
 	R1*5

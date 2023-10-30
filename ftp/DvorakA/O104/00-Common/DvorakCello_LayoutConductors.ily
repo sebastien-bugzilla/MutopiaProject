@@ -26,6 +26,9 @@
 		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override BarNumber.font-size = #3 % 3
+%		\override StaffGrouper.staff-staff-spacing = #'(
+%			(padding . 0)
+%			(basic-distance . 0))
 	}
 	\context {
 		\StaffGroup
@@ -34,22 +37,33 @@
 	\context {
 		\Staff
 		\RemoveEmptyStaves
+%		\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
+%		\override VerticalAxisGroup.default-staff-staff-spacing = #'(
+%			(padding . 0)
+%			(basic-distance . 0))
+%		\override VerticalAxisGroup.staff-staff-spacing = #'(
+%			(padding . 0)
+%			(basic-distance . 0))
 	}
-%	\context {
-%		\RhythmicStaff
-%		\RemoveEmptyStaves
-%	}
+	\context {
+		\RhythmicStaff
+		\RemoveEmptyStaves
+	}
 	\context {
 		\Voice
 		\override TupletBracket.bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
 		\override TupletNumber.avoid-slur = #'ignore
-		\override TrillSpanner.bound-details.right.padding = #1.5  % 1.8
+		\override TrillSpanner.bound-details.right.padding = #1  % 1.8
 		\override TrillSpanner.bound-details.right.end-on-accidental = ##f
+		\override TrillSpanner.bound-details.right.adjust-on-neighbor = ##f
+		\override TrillSpanner.to-barline = ##f
 		\override Hairpin.height = #0.55
-		\override DynamicTextSpanner.font-size = #0
+		\override DynamicTextSpanner.font-size = #1
+%		\override DynamicText.font-size = #1
+		\override TextScript.font-size = #1
 	}
 }
 

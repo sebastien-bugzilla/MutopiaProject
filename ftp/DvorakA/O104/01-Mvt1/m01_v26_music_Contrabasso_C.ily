@@ -23,7 +23,7 @@ musicContrabassoMvtI = \relative c' {
 % Bars 11 to 15
 	fis,,1\pp
 	fis
-	fis2. fis'4-\tweak X-offset #-12 _\crescmarkup
+	fis2. fis'4-\tweak X-offset #-9 _\crescmarkup
 	fis,2. fis'4->(
 	fis,8)\< r fis'4(-> fis,8) r fis'4->~
 % Bars 16 to 20
@@ -52,7 +52,7 @@ musicContrabassoMvtI = \relative c' {
 	
 % Bars 36 to 40
 	
-	r2 r8 fis\f\<^\arco-. gis-. ais-. 
+	r2 r8 fis\f\<-\offset X-offset -5 ^\arco-. gis-. ais-. 
 	b-. ais-. b-. cis-. d-. cis-. d-. e-. 
 	fis( gis)\! gis4->\ff~ gis8 ais-. ais4\>~
 	ais_\dimD b( eis,2\p)
@@ -70,8 +70,8 @@ musicContrabassoMvtI = \relative c' {
 	R1
 % Bars 51 to 55
 	a1\p\<
-	<< a'\> {s2 s_\dimmarkup} >>
-	a,4\! r r2
+	<< a'\> {s2 s4_\dimmarkup s8 s\!} >>
+	a,4 r r2
 	R1*11
 	
 % Bars 56 to 60
@@ -98,7 +98,7 @@ musicContrabassoMvtI = \relative c' {
 	d,4-> d'8-. d-. d,-. d'-. d-. r
 	fis,-.[ fis'-.] e-. d-. d-. a-. a-. r
 	fis-.[ fis'-.] e-. d-. d-. a-. a-. r 
-	d,-. d-. d-.\noBeam r d'-. d,-. d-.\noBeam r 
+	d,-. d-. d-. r d'-. d,-. d-. r 
 	d'_\dimD\> d, d\noBeam r d' d, d\!\noBeam r
 % Bars 81 to 85
 	d_\psemprepiudim d d\noBeam r d d d\noBeam r

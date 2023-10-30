@@ -60,7 +60,7 @@ musicClarinettoIMvtI = \relative c' {
 	e r r4 \partCombineApart r8 a,-._\mf b-. cis-.
 	\acciaccatura e d_\< cis-. d-. e-. \acciaccatura g f e-. f-. g-.
 	a( b) b4.->( cis8) cis4~\!
-	cis8( d e f) gis,4.(_\> a8) \mark \default
+	cis8( d e f) gis,4.(_\> a8)\! \mark \default
 	a4.(_\mf b16 cis a2)
 % Bars 46 to 50
 	a4.( g!16 e a2)
@@ -142,7 +142,7 @@ musicClarinettoIMvtI = \relative c' {
 	
 	\partCombineApart r8 ees''16_\mf ees ees8 ees \acciaccatura f ees4. r8
 	r8 d16 d d8 d \acciaccatura e! d4. r8
-	r4 bes'8-\tweak extra-offset #'(0 . 2) _\f[ r16 a]( g8)[ r16 f]( e8)[ r16 d]
+	r4 \dynEO #'(0 . 2) bes'8_\f[ r16 a]( g8)[ r16 f]( e8)[ r16 d]
 	d8 r16 \partCombineAutomatic f_\fcresc( bes8)[ r16 d,]( g8)[ r16 bes,]( e8)[ r16 g,](
 % Bars 126 to 130
 	cis8\f) r r4 r2
@@ -266,7 +266,7 @@ musicClarinettoIMvtI = \relative c' {
 	\mark \default
 	d''1_\p(
 	e)
-	f!(_\crescmarkup
+	\after 4 <>_\crescmarkup f!(
 % Bars 251 to 255
 	\hairpinShorten #'(0 . 7) g)_\<
 	a(
@@ -280,16 +280,16 @@ musicClarinettoIMvtI = \relative c' {
 	
 	\mark \default
 % Bars 261 to 265
-	r2 gis,,8(-\tweak X-offset #-3 \mf a d cis)
-	r \partCombineApart e d cis gis'\([ a] b cis\) \partCombineAutomatic
-	r e(\f\< f! e)\! r e(\< f e)\!
+	r2 gis,,8([-\tweak X-offset #-3 \mf a d cis])
+	r \partCombineApart e[ d cis] gis'\([ a] b cis\) \partCombineAutomatic
+	r e([\f\< f! e)]\! r e([\< f e])\!
 	f,!8(-\tweak X-offset #-1 \fz^> e16) r f8->( e16) r f8->( e16) r f8->( e16) r 
 	cis'8\brack\f r r4 r2 
 % Bars 266 to 270
 	R1
-	\aIIXoffset #-4.5 fis2~\ff fis8 e\( d b\)
+	\aIIXoffset #-4.5 fis2~\ff fis8[ e\( d b\)]
 	d2\( a4\) d
-	e e fis8\( a fis d\)
+	e e fis8\([ a fis d\)]
 	e2.\> r4\!
 % Bars 271 to 275
 	R1*5
@@ -308,7 +308,7 @@ musicClarinettoIMvtI = \relative c' {
 % Bars 286 to 290
 	g_(_\< dis2->_\fz_\> e4)\!
 	g4_( fis g fis)
-	g_(_\< dis2->-\tweak X-offset #-1 _\fzmarkup e4)
+	g_(_\< \markEO #'(0 . 2) dis2->_\fzmarkup e4)
 	b'_(_\mf a b a)
 	g_( fis_\dimD_\> g fis)\!
 % Bars 291 to 295
@@ -333,7 +333,7 @@ musicClarinettoIMvtI = \relative c' {
 	
 	c,4\(\fp b\) c\(\fp b\)
 	bes!\(-\tweak X-offset #-1.3 \fp a\) bes\(-\tweak X-offset #-1.3 \fp a\)
-	c\( b-\tweak extra-offset #'(1.3 . 2) _\crescmarkup d cis\)
+	c\( b-\tweak extra-offset #'(1.3 . 2.3) _\crescmarkup d cis\)
 	e2.\f^^ r4
 % Bars 311 to 315
 	r2 r4 \tuplet 3/2 4 {bes'8\f-\tweak rotation #'(4.5 -1 0) \< d f}
