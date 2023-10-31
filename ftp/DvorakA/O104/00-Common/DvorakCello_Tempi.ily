@@ -122,7 +122,9 @@ tempiMvtII = {
 	\tempoXoffset #1 \tempo "Meno. Tempo I." \grace {s8} % bar 65 
 	s2.*18
 	\grace {s8} \tempo "Un poco più animato" % bar 83
-	s2.*12
+	s2.*11
+	\tempo "[rit.]" % bar 94 (not in facsimile)
+	s2.
 	\tempoXoffset #0.7 \tempo "Meno. Tempo I." % bar 95
 	s2.*25
 	\tempo "[poco a poco string.]" % bar 120 (not in facsimile)
@@ -130,9 +132,9 @@ tempiMvtII = {
 	\tempo "[poco a poco rit.]" % bar 124 (not in facsimile)
 	s2.*5
 	\tempoXoffset #0.7 \tempo "[Tempo I.]" % bar 129 (not in facsimile)
-	s2.*30
-	\tempo "rit." % bar 159
-	s2.
+	s2.*30 s4.
+	\tempo "rit." % bar 159.5
+	s4.
 	\tempo "a tempo" % bar 160
 }
 %--------------------------------------

@@ -38,10 +38,10 @@ musicSoloCelloMvtII = \relative c' {
 	bes4\fz\<~ bes8. bes,32( cis) \tuplet 6/4 4 {cis16( e) e( g) g( bes)\!} \clef treble
 	d2\f \tuplet 3/2 4 {d8(\< e f)\!}
 	f2\fz\>-> e8.( d16)\!
-	d8(->_\soufflet c16) r d8->(_\soufflet c16) r c8(->_\soufflet b16) r
-	b8(->_\soufflet bes16) r bes8(->_\soufflet a16) r a8(->_\soufflet gis16) r \clef tenor
+	<< {d8(-> c16) r d8->( c16) r c8(-> b16) r } {s16\< s\> s\! s s16\< s\> s\! s s16\< s\> s\! s } >>
+	<< {b8(-> bes16) r bes8(-> a16) r a8(-> gis16) r \clef tenor } {s16\< s\> s\! s s16\< s\> s\! s s16\< s\> s\! s }>>
 % Bars 31 to 35
-	aes8(_\pdim-\tweak outside-staff-priority #0 _\soufflet g!16) r g8(_\soufflet fis!16) r fis8(_\soufflet f16) r 
+	<< {aes8(_\pdim g!16) r g8( fis!16) r fis8( f16) r } {\hairpinShorten #'(0 . -0.5) s16\< \hairpinShorten #'(0.5 . 0) s\> s\! s \hairpinShorten #'(0 . -0.5) s16\< \hairpinShorten #'(0.5 . 0) s\> s\! s \hairpinShorten #'(0 . -0.5) s16\< \hairpinShorten #'(0.5 . 0) s\> s\! s }>> 
 	f8(\pp ees16) r f8( ees16) r d8( c16) r
 	c8( b!16) r c8( b16) r \clef bass \tuplet 3/2 4 {d8( c b)}
 	e2(\ppp d4\fermata \mark \default
@@ -75,7 +75,7 @@ musicSoloCelloMvtII = \relative c' {
 	des4 r r \clef bass
 	\tuplet 5/4 4 {ees,16\mf\<( f ges a! c)} \clef treble ees( f ges aes)\! beses8.(\> aes16)
 	aes4\p r r \clef bass
-	\tuplet 5/4 4 {ees,16\mf\<( f ges a! c)} \clef treble ees( f ges aes)\! beses8.\>(-\tweak X-offset #-3 _\moltoappassionato aes16)\!
+	\tuplet 5/4 4 {ees,16\mf\<( f ges a! c)} \clef treble ees( f ges aes)\! beses8.\>(_\molto_appassionato aes16)\!
 % Bars 61 to 65
 	beses8.(\f\> aes16)\! beses8.(\> aes16)\! beses8.(\> aes16)\! \clef tenor
 	aes8.(\> g!16)\! aes8.(\>_\dimmarkup g16)\! aes8.(\> g16)\!
@@ -92,7 +92,7 @@ musicSoloCelloMvtII = \relative c' {
 	\shape #'((0 . -1)(0 . 0.5)(0 . 0)(0 . 0)) Slur cis32[(---\tweak extra-offset #'(-1 . -0.7) ^\ten e a e] a[ e cis e]) cis[(-- e a e] a,--[ cis fis cis]) fis,--[( a cis a] e[-- g cis g])
 	d[(-- fis b fis] b[ fis d fis]) d[(-- fis b fis] d[ fis b fis]) d[(-- fis b fis] fis[ b d b])
 	g[( b d b] b[ d g d]) \clef treble d[( g b g] b[ g b g]) a[( fis a fis] g[ e g e])
-	\tuplet 3/2 8 {a16([ fis d\>] \clef bass a[ fis d])} \tuplet 6/4 4 { a( d fis a fis d)} a4~\!
+	\tuplet 3/2 8 {a16([ fis d\>] \clef bass a[ fis d])} \tuplet 6/4 4 { a( d fis a fis d)} \after 4*3/4 \! a4~
 	a16\p d( a g fis8._\dimD\> e16 d4~
 % Bars 76 to 80
 	d8)\! r r4 fis''4\p\((
@@ -178,7 +178,7 @@ musicSoloCelloMvtII = \relative c' {
 	r16 c,,(\< e fis g c e fis)\! \clef tenor \tuplet 5/4 4 {g( c\> g fis e)}
 	g4. r8\! r4 \clef bass
 	r16 c,,(\< e fis g c e g)\! gis4\fz \clef tenor
-	a8->\< b-> c2->\ffzD\>\lungafermata(~
+	a8->\< b-> c2->\ffzD\>^\lungafermata(~
 % Bars 136 to 140
 	c4\pp a) \tuplet 3/2 4 {fis8( gis a)}
 	bes4( g!) \tuplet 3/2 4 {e8( fis! g)}
@@ -194,7 +194,7 @@ musicSoloCelloMvtII = \relative c' {
 % Bars 146 to 150
 	<b, d>4(\< <g e'> <g b>8-- <a c>--
 	<b d>--)[ <g e'>--] <a fis'>-- <b g'>-- \tuplet 3/2 4 {\once \tupletUp <c a'>(-- <d b'>-- <e c'>--\!)}
-	<<{\afterGrace d'2.^\lungatrillfermata\>( {cis16 d)\!}} \\ {fis,8\fz r r4 r_\fermata}>> \mark \default
+	<<{\afterGrace 11/12 d'2.^\lungatrillfermata\>( {cis16 d)\!}} \\ {fis,8\fz r r4 r_\fermata}>> \mark \default
 	g'2.\pp~ \clef treble
 	g8[ a(] b\< c d4~\!
 % Bars 151 to 155

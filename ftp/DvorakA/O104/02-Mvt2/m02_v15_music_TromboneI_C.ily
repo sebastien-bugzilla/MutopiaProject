@@ -81,7 +81,7 @@ musicTromboneIMvtII = \relative c' {
 	des2._\>)(
 	c8)\! r r4 c(_\p_\<
 % Bars 86 to 90
-	des2.)(_\>
+	\after 2.*11/12 \! des2.)(_\>
 	c8\!) r r4 r \partCombineAutomatic
 	R2.*7
 % Bars 91 to 95

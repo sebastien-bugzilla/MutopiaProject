@@ -29,7 +29,7 @@ musicFlautoIIMvtII = \relative c'' {
 	r4 r8 e(\p f8. f16)
 	fis!2(_\dimmarkup b4)
 % Bars 31 to 35
-	b4.(\> d8~ d4)
+	b4.(\> d8~ d4)\!
 	d4.\pp( ees8 f ees)
 	g4.( d8) \tuplet 3/2 4 {b!(\prall a g)}
 	c(\trill e,!16) r g!8(\trill c,16) r b8.(\fermata a16 \mark \default
@@ -83,9 +83,9 @@ musicFlautoIIMvtII = \relative c'' {
 	des''4\(\p\< bes16-- a-- g-- a-- bes4\!
 	a8\) r r4 r
 % Bars 86 to 90
-	des4\(-\tweak extra-offset #'(0 . 0.5) \p\< bes16 a g a bes4\)\!
+	\dynEO #'(0 . 0.5) des4\(\p\< bes16 a g a bes4\)\!
 	f2.\fz 
-	f-\tweak extra-offset #'(0 . 0.6) _\dimD-\tweak extra-offset #'(0 . 0.6) \>
+	\after 2.*11/12 \! f-\tweak extra-offset #'(0 . 0.6) _\dimD-\tweak extra-offset #'(0 . 0.6) \>
 	dis!2(\p\> b!4)~
 	b2.\pp
 % Bars 91 to 95

@@ -112,6 +112,9 @@ portamento = \markup {\italic portamento}
 moltoespressivoesostenuto = \markup {\italic {molto espressivo e sostenuto}}
 moltoespressesostenuto = \markup {\italic {molto espress. e sostenuto}}
 moltoappassionato = \markup {\italic {molto appassionato}}
+molto_appassionato = \markup {
+	\italic { \column {\lower #1.5 "molto" "appassionato"} }
+}
 pizz = \markup {pizz.}
 arco = \markup {arco}
 arcobrack = \markup {[arco]}
@@ -591,7 +594,23 @@ beamOffset = #(define-music-function
 	#}
 )
 
+CorInF = \markup {
+	\center-column {
+		\lower #1 "Cor. I. II." "in F"
+	}
+}
 
+TrbeInE = \markup {
+	\center-column {
+		\lower #1 "Trbe I." "II. in E"
+	}
+}
+
+CorInE = \markup {
+	\center-column {
+		\lower #1 "Cor. I. II." "in E"
+	}
+}
 
 % footnotes:
 footnotePageII = \markup {

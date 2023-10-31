@@ -37,9 +37,9 @@ musicClarinettoIMvtII = \relative c'' {
 	ees,2.\p(
 	des)_\dimmarkup
 	b
-	c2\< aes4
+	<< {c2 aes4} {s4\< s s8 s16 s\!}>>
 % Bars 26 to 30
-	g2.\fz\<
+	<< g2.\fz {s4\< s s8 s16 s\!}>>
 	aes2(\! c8-\tweak rotation #'(9 -1 0) \< f\!)
 	\partCombineApart f2\(^^-\tweak extra-offset #'(-1.4 . 0.5) _\fzdim g8\) \partCombineAutomatic r
 	R2.*5
@@ -49,7 +49,7 @@ musicClarinettoIMvtII = \relative c'' {
 	
 	
 	R2.\fermata \mark \default
-	\partCombineApart f'2(_\pp g8 ees)
+	\partCombineApart \shape #'((0 . -1)(0 . -0.5)(0 . 0)(0 . 0)) Slur f'2(_\pp g8 ees)
 % Bars 36 to 40
 	f4 r8 f(_\< bes f\!
 	d4_\> d \acciaccatura f8 ees4)\!
@@ -96,7 +96,7 @@ musicClarinettoIMvtII = \relative c'' {
 	g4.)\! e!8( c bes)\>
 	a4 a\! f'8.( e16
 	d4.\<) d'8(\! c bes)
-	a([\mf\< c] f c)\! c4_\dimD\>~
+	a([\mf-\tweak rotation #'(3 -1 0) \< c] f c)\! c4_\dimD\>~
 	c~ c8\! r r4
 % Bars 76 to 80
 	R2.*7
@@ -167,7 +167,7 @@ musicClarinettoIMvtII = \relative c'' {
 % Bars 146 to 150
 	R2.*2
 	
-	ees!2.-\tweak X-offset #0.5 \lungafermata \mark \default
+	ees!2.-\tweak X-offset #0.5 ^\lungafermata \mark \default
 	d8\pp r r4 r
 	R2.*3
 % Bars 151 to 155

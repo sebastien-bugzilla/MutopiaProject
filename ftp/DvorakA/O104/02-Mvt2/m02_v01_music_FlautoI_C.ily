@@ -29,7 +29,7 @@ musicFlautoIMvtII = \relative c'' {
 	r4 r8 e(\p f8. f16)
 	fis!2(_\dimmarkup b4)
 % Bars 31 to 35
-	b4.(\> d8~ d4)
+	b4.(\> d8~ d4)\!
 	d4.\pp( ees8 f ees)
 	g4.( d8) \tuplet 3/2 4 {b!(\prall a g)}
 	c(\trill e,!16) r g!8(\trill c,16) r b8.(\fermata a16 \mark \default
@@ -87,9 +87,9 @@ musicFlautoIMvtII = \relative c'' {
 	des'4\(\p\< bes16-- a-- g-- a-- bes4\!
 	a8\) r r4 r
 % Bars 86 to 90
-	des4\(-\tweak extra-offset #'(0 . 0.5) \p\< bes16 a g a bes4\)\!
+	\dynEO #'(0 . 0.5) des4\(\p\< bes16 a g a bes4\)\!
 	a2.\fz 
-	\once \stemDown aes
+	\partCombineApart \once \stemDown aes
 	fis!2( e!4
 	dis2 d4)
 % Bars 91 to 95
@@ -97,7 +97,7 @@ musicFlautoIMvtII = \relative c'' {
 	\hairpinShorten #'(2 . 0) ees4(_\> d c)\!
 	b(_\dimmarkup ais b)
 	ais( b4. a8 \mark \default
-	g8) r r4 r
+	g8) \partCombineAutomatic r r4 r
 % Bars 96 to 100
 	R2.*16
 % Bars 101 to 105
@@ -121,7 +121,7 @@ musicFlautoIMvtII = \relative c'' {
 	g8(\< c16 b fis8[ g] a b)\!
 	d( c e2)
 	e4.( d16 c) e4(~_\alterBroken shorten-pair #'(() (3 . 0)) \>
-	e8 d16 c) e4(~ e8 d16 c
+	e8 d16 c) e4(~ e8 d16 c\!
 % Bars 126 to 130
 	e8)-\tweak X-offset #0.5 _\p r r4 r
 	R2.

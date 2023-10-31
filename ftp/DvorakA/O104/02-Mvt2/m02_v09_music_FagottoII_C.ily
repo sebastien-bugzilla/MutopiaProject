@@ -33,9 +33,9 @@ musicFagottoIIMvtII = \relative c' {
 	
 	
 	
-	a,2.\p\<
+	<< a,2.\p {s4\< s s8 s16 s\!}>>
 % Bars 26 to 30
-	<<g {s4\fz\< s s\!} >>
+	<<g2. {s4\fz\< s s8 s16 s\!} >>
 	f2.
 	<<e( {\hairpinShorten #'(0 . -12) s4\fz\> s s\!}>>
 	a8) r r4 r
@@ -57,7 +57,7 @@ musicFagottoIIMvtII = \relative c' {
 	g16-^ bes-^ a-^ g-^ g4 r
 	g2.\p
 	c,
-	f\>
+	\after 2.*11/12 \! f\>
 % Bars 46 to 50
 	g\p
 	ees'2\p\<( c4)\!
@@ -99,7 +99,7 @@ musicFagottoIIMvtII = \relative c' {
 	f2.~\<
 	f8\! r r4 f\p~
 % Bars 86 to 90
-	f2.~\<
+	<< f2.~ {s4\< s s8 s16 s\!}>>
 	f8\! r r4 r
 	R2.*4
 	
@@ -130,7 +130,7 @@ musicFagottoIIMvtII = \relative c' {
 	g(\< a8 e'16 d c8 b)\!
 	a2.\f
 	a2.\>~
-	a_\dimD\>~
+	<< a~ {s4_\dimD\> s s8 s16 s\!} >>
 % Bars 126 to 130
 	a8\p r r4 r
 	R2.

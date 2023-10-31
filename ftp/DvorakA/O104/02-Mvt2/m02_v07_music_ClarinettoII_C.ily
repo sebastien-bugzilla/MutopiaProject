@@ -37,9 +37,9 @@ musicClarinettoIIMvtII = \relative c'' {
 	c2.\p(
 	bes)
 	gis
-	aes2\< f4
+	<< { aes2 f4 } {s4\< s s8 s16 s\!}>>
 % Bars 26 to 30
-	e2.\fz\<
+	<< e2.\fz {s4\< s s8 s16 s\!}>>
 	f2(\! aes8-\tweak rotation #'(9 -1 0) \< c\!)
 	\once \stemUp d2\( g8\)\p r
 	R2.*5
@@ -96,7 +96,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	e4.)\! c8( a g)\>
 	f4 f\! f8.( e16
 	d4.\<) d'8(\! c bes)
-	a([\mf\< c] f c)\! c4_\dimD\>~
+	a([\mf-\tweak rotation #'(3 -1 0) \< c] f c)\! c4_\dimD\>~
 	c~ c8\! r r4
 % Bars 76 to 80
 	R2.*7
@@ -113,8 +113,8 @@ musicClarinettoIIMvtII = \relative c'' {
 	fis2( d!4)~
 	d2.
 % Bars 91 to 95
-	\hairpinShorten #'(0.8 . 0.8) bes2.\< 
-	\hairpinShorten #'(0.8 . 0.8) a!\>
+	\after 2.*5/6 \! bes2.\< 
+	\hairpinShorten #'(1 . 0) \after 2.*5/6 \! a!\>
 	ees!-\tweak X-offset #0.5 _\dimD
 	ees!(\>  \mark \default
 	d8)\! r r4 r
@@ -139,7 +139,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	r4 r r8 bes'\<
 	bes2.\f
 	\hairpinShorten #'(1 . 0) bes\>~
-	bes_\dimD\>~
+	\after 2.*11/12 \! bes_\dimD\>~
 % Bars 126 to 130
 	bes8\p r r4 r 
 	R2.
@@ -167,7 +167,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 146 to 150
 	R2.*2
 	
-	\afterGrace a2.-\tweak extra-offset #'(1.3 . 7) \sf-\tweak extra-offset #'(1.3 . 7) -\tweak shorten-pair #'(0 . 5) \>\fermata\trill( {gis16 a\!)} \mark \default
+	\afterGrace 11/12 a2.-\tweak extra-offset #'(1.3 . 7) \sf-\tweak extra-offset #'(1.3 . 7) -\tweak shorten-pair #'(0 . 5) \>\fermata\trill( {gis16 a\!)} \mark \default
 	bes8\pp r r4 r
 	R2.*3
 % Bars 151 to 155

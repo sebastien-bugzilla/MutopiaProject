@@ -68,9 +68,9 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtII
-%					}
+					\new Voice {
+						\formatConductorMvtII
+					}
 					\new Voice {
 						\tempiMvtII
 					}

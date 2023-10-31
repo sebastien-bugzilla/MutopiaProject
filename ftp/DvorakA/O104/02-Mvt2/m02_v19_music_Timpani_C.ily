@@ -90,15 +90,15 @@ musicTimpaniMvtII = \relative c {
 	d2.\ppp\startTrillSpan
 % Bars 121 to 125
 	d\startTrillSpan
-	d\startTrillSpan\<
-	d4\stopTrillSpan\! r r
+	\after 2.*11/12 \! d\startTrillSpan\<
+	d4\stopTrillSpan r r
 	R2.*3
 	
 % Bars 126 to 130
 	
 	d2.\pp\>\startTrillSpan
-	\fermatatrill d\startTrillSpan \mark \default
-	d4\stopTrillSpan\! r r
+	\fermatatrill \after 2.*5/6 \! d\startTrillSpan \mark \default
+	d4\stopTrillSpan r r
 	R2.*5
 % Bars 131 to 135
 	

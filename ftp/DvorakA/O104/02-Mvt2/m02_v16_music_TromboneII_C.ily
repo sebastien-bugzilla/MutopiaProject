@@ -55,10 +55,10 @@ musicTromboneIIMvtII = \relative c {
 	
 % Bars 56 to 60
 	
-	aes2.\pp\<(
-	beses)\>
-	aes^(\pp\<
-	beses\>
+	\after 2.*11/12 \! aes2.\pp\<(
+	\after 2.*11/12 \! beses)\>
+	\after 2.*11/12 \! aes^(\pp\<
+	\after 2.*11/12 \! beses\>
 % Bars 61 to 65
 	aes8-\tweak X-offset #0.7 \pp) r r4 r
 	R2.*3

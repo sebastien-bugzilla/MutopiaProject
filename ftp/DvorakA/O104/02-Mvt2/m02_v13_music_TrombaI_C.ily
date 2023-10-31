@@ -37,7 +37,7 @@ musicTrombaIMvtII = \relative c'' {
 	g r d'8. d16
 % Bars 41 to 45
 	d4 d c
-	d4. r8^\mutaine r4 \transposition e
+	d4. r8^\mutaine r4 \transposition e \updateShortName \TrbeInE
 	R2.*7
 % Bars 46 to 50
 	

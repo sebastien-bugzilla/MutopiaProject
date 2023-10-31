@@ -30,12 +30,12 @@ musicContrabassoMvtII = \relative c' {
 	<<{c} \\ {c,}>> r e
 % Bars 21 to 25
 	a4 r r 
-	ees'2(\pp-\tweak X-offset #-6 ^\arco d4)
+	ees'2(\pp-\tweak X-offset #-6.5 ^\arco d4)
 	des2(_\dimmarkup c4)
 	ces2\pp bes4
-	a!2.\<
+	\after 2.*11/12 \! a!2.\<
 % Bars 26 to 30
-	g\fz\<
+	\after 2.*11/12 \! g\fz\<
 	f2\fz\< f,4\!
 	<<e2. {\hairpinShorten #'(0 . -12) s4\fz\> s s\!}>>
 	a8^\pizz\p r a r d r
@@ -68,16 +68,16 @@ musicContrabassoMvtII = \relative c' {
 	
 % Bars 56 to 60
 	
-	des,2.\mf\<-\tweak X-offset #-6 ^\arco
-	des\fp\>
-	des\p\<
-	des\fp\>
+	\after 2.*11/12 \! des,2.\mf\<-\tweak X-offset #-6 ^\arco
+	\after 2.*11/12 \! des\fp\>
+	\after 2.*11/12 \! des\p\<
+	\after 2.*11/12 \! des\fp\>
 % Bars 61 to 65
-	des8\p-\tweak X-offset #-5.5 ^\pizz r des r des r
+	des8\p-\tweak X-offset #-6 ^\pizz r des r des r
 	ais r ais r ais r
 	b r b r e! r
 	fis r fis r fis r \bar "||" \key g \major \mark \default \grace {s8}
-	b,2\ff-\tweak X-offset #-5.5 ^\arco b'4
+	b,2\ff-\tweak X-offset #-6 ^\arco b'4
 % Bars 66 to 70
 	b,16-^ d-^ cis-^ b-^ b4 b'8. b16
 	fis4-> fis16-^ a-^ g-^ fis-^ fis4->
@@ -99,9 +99,9 @@ musicContrabassoMvtII = \relative c' {
 % Bars 81 to 85
 	bes bes bes\noBeam r b b
 	c\< r c, c c\!\noBeam r \mark \default
-	\grace {s8} <<f,2.-\tweak X-offset #-3 ^\arco {s4\mf\< s s16\> s s s\!}>>
+	\grace {s8} <<f,2.-\tweak X-offset #-3 ^\arco {s4\mf\< s8 s\! s16\> s s s\!}>>
 	f2._\pdim
-	<<f2. {s4\< s s16\> s s s\!}>>
+	<<f2. {s4\< s8 s16 s\! s16\> s s s\!}>>
 % Bars 86 to 90
 	f2.\p 
 	f'8\mf-\tweak X-offset #-6.5 ^\pizz r f r f r
@@ -140,7 +140,7 @@ musicContrabassoMvtII = \relative c' {
 % Bars 126 to 130
 	
 	d''2.(\pp\>
-	d,2.\fermata) \mark \default
+	\after 2.*5/6 \! d,2.\fermata) \mark \default
 	g,2.\ppp(
 	c)
 % Bars 131 to 135

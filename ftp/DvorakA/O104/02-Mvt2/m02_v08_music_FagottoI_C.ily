@@ -33,9 +33,9 @@ musicFagottoIMvtII = \relative c' {
 	
 	
 	
-	\partCombineChords d,2.\p\<
+	\partCombineChords << d,2.\p {s4\< s s8 s16 s\!} >>
 % Bars 26 to 30
-	<<bes' {\hairpinShorten #'(0 . -18) s4\fz\< s s\!}>>
+	<<bes'2. {s4\fz\< s s8 s16 s\!}>>
 	\partCombineApart a2 \once \tupletDown \tupletYoffset #2 \tuplet 3/2 4 {d8_(_\< e f\!)}
 	f2 e8.( d16)
 	d8(\p c16) r d8( c16) r c8( b16) r
@@ -71,7 +71,7 @@ musicFagottoIMvtII = \relative c' {
 	des)\! r r
 	ges4\fz\>( ees2
 	f4\p) r r
-	\partCombineChords \hairpinShorten #'(0 . -14) ges4\fz\>( << ees2) {s4 s\!}>>
+	\partCombineChords \hairpinShorten #'(0 . -10) ges4\fz\>( << ees2) {s4 s\!}>>
 % Bars 61 to 65
 	\partCombineApart des2.(
 	bes)
@@ -103,7 +103,7 @@ musicFagottoIMvtII = \relative c' {
 	f2.~\<
 	f8\! r r4 f\p~
 % Bars 86 to 90
-	f2.~\<
+	<< f2.~ {s4\< s s8 s16 s\! }>>
 	f8\! r r4 r
 	R2.*4
 	
@@ -134,7 +134,7 @@ musicFagottoIMvtII = \relative c' {
 	b(\< c8 g'16 fis e8 d)\!
 	e4( c2)
 	c2.\>~
-	c_\dimD\>~
+	<< c~ { s4_\dimD\> s s8 s16 s\!}>>
 % Bars 126 to 130
 	c8\p r r4 r
 	R2.

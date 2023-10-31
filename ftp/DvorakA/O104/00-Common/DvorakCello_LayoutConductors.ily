@@ -62,7 +62,7 @@
 		\override TrillSpanner.to-barline = ##f
 		\override Hairpin.height = #0.55
 		\override DynamicTextSpanner.font-size = #1
-%		\override DynamicText.font-size = #1
+		\override DynamicText.font-size = #1
 		\override TextScript.font-size = #1
 	}
 }

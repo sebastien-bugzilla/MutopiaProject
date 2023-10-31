@@ -96,10 +96,10 @@ musicCornoIIIMvtII = \relative c' {
 	d2.\mf-\tweak X-offset #9 _\dimmarkup~
 % Bars 121 to 125
 	d
-	d\<
-	d\f\>~
+	\after 2.*11/12 \! d\<
+	\after 2.*11/12 \! d\f\>~
 	d_\dimD\>~
-	d~\>
+	\after 2.*11/12 \! d~\>
 % Bars 126 to 130
 	d4\p r r
 	R2.

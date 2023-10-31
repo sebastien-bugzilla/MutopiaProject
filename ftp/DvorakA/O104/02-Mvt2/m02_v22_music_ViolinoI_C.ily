@@ -24,10 +24,10 @@ musicViolinoIMvtII = \relative c' {
 	
 	
 	
-	f2.\pp\<
+	\after 2.*11/12 \! f2.\pp\<
 % Bars 26 to 30
-	<bes, e>-\tweak X-offset #1 \fz\<
-	a'2\fz\< a8( d)
+	\after 2.*11/12 \! <bes, e>-\tweak X-offset #1 \fz\<
+	a'2\fz\< a8( d)\!
 	d2\fz\> c8.( b16)\!
 	b8(\p a16) r b8( a16) r gis8( f16) r
 	fis!8( c16) r fis8( c16)_\dimmarkup r d!8( b16) r
@@ -83,7 +83,7 @@ musicViolinoIMvtII = \relative c' {
 	\mark \default
 	\grace {s8} f8(\mf\< g a bes)\! b16(\> c g' f)\!
 	e4\p r r
-	a,!8(\< bes b16 c d c) \tuplet 3/2 4 {bes'8(\f\> a f)\!}
+	a,!8(\< bes b16 c d c\!) \tuplet 3/2 4 {bes'8(\f\> a f)\!}
 % Bars 86 to 90
 	e4\p r r
 	R2.*8

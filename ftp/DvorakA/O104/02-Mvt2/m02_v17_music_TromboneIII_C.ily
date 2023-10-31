@@ -55,10 +55,10 @@ musicTromboneIIIMvtII = \relative c {
 	
 % Bars 56 to 60
 	
-	\partCombineApart aes2._\pp_\<(
-	beses)_\>
-	aes_\pp_\<(
-	beses_\>
+	\partCombineApart \after 2.*11/12 \! aes2._\pp_\<(
+	\after 2.*11/12 \! beses)_\>
+	\after 2.*11/12 \! aes_\pp_\<(
+	\after 2.*11/12 \! beses_\>
 % Bars 61 to 65
 	aes8_\pp) r r4 r \partCombineAutomatic
 	R2.*3
@@ -81,7 +81,7 @@ musicTromboneIIIMvtII = \relative c {
 	des2.)(_\>
 	c8)\! r r4 c_\p_\<(
 % Bars 86 to 90
-	des2.)(_\>
+	\after 2.*11/12 \! des2.)(_\>
 	c8\!) r r4 r \partCombineAutomatic
 	R2.*7
 	

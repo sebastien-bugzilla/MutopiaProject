@@ -19,7 +19,7 @@ musicCornoIMvtII = \relative c'' {
 % Bars 11 to 15
 	
 	r4 r c-\tweak X-offset #-1.5 \pp\<~
-	c2.\fp\> \mark \default
+	<< c2.\fp {s4\> s s8 s\!}>> \mark \default
 	c2\pp~ c8 r
 	R2.*5
 % Bars 16 to 20
@@ -29,7 +29,7 @@ musicCornoIMvtII = \relative c'' {
 	
 	\partCombineApart r4 c2_\p~
 % Bars 21 to 25
-	c4 r r^\mutainf \transposition f \partCombineAutomatic
+	c4 r r^\mutainf \transposition f \partCombineAutomatic \updateShortName \CorInF
 	R2.*12
 % Bars 26 to 30
 	
@@ -65,7 +65,7 @@ musicCornoIMvtII = \relative c'' {
 	f2 bes,8 b)\!
 % Bars 56 to 60
 	c4( des8_\>[ c] ees des
-	c4)\! r^\mutaine r \transposition e \partCombineAutomatic
+	c4)\! r^\mutaine r \transposition e \partCombineAutomatic \updateShortName \CorInE
 	R2.*7
 % Bars 61 to 65
 	
@@ -86,7 +86,7 @@ musicCornoIMvtII = \relative c'' {
 	d'4\mf\< \tuplet 3/2 4 {g8( f d)\!} ees16(\> d) d( c)
 	c4( f,2)~
 % Bars 76 to 80
-	f8\! r^\mutainf \transposition f r4 r
+	f8\! r^\mutainf \transposition f r4 r \updateShortName \CorInF
 	R2.*4
 	
 	

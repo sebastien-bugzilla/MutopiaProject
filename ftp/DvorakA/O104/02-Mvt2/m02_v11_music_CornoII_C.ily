@@ -19,7 +19,7 @@ musicCornoIIMvtII = \relative c' {
 % Bars 11 to 15
 	
 	r4 r c-\tweak X-offset #-1.5 \pp\<~
-	c2.\fp\> \mark \default
+	<<c2.\fp {s4\> s s8 s\!}>> \mark \default
 	c2\pp~ c8 r^\mutainf \transposition f
 	R2.*5
 % Bars 16 to 20
