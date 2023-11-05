@@ -72,12 +72,14 @@ dimmarkup = \markup {\italic dim.}
 crescmarkup = \markup {\italic cresc.}
 fzmarkupbrack = \markup {
 	\concat {
-		\translate #'(-1.5 . 0) \normal-text \italic \fontsize #2 [
-		\dynamic fz 
-		\normal-text \italic \fontsize #2 ]
+		\hspace #-1.93
+		\general-align #Y #CENTER {
+			\normal-text \italic \fontsize #3.5 [
+			\dynamic fz 
+			\normal-text \italic \fontsize #3.5 ]
+		}
 	}
 }
-
 crescD = \tweak DynamicText.self-alignment-X #-0.77 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.71 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.79 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
@@ -609,6 +611,13 @@ TrbeInE = \markup {
 CorInE = \markup {
 	\center-column {
 		\lower #1 "Cor. I. II." "in E"
+	}
+}
+
+
+CorIIIInD = \markup {
+	\center-column {
+		\lower #1 "Cor. III." "in D"
 	}
 }
 

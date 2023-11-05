@@ -142,7 +142,7 @@ musicCornoIMvtIII = \relative c' {
 	
 	
 	\partCombineApart des2_\pp~
-	des_\<
+	<< des {s4_\< s8 s16 s\!} >>
 	c8_\fz r r4 \partCombineAutomatic
 % Bars 186 to 190
 	R2*11
@@ -342,8 +342,8 @@ musicCornoIMvtIII = \relative c' {
 	e->_\fz~
 	e
 	d_\fz_\>~
-	d~_\dimD
-	d_\pp~
+	<<d~ {s4 s_\dimD}>>
+	d2_\pp~
 % Bars 436 to 440
 	d4. r8 \partCombineAutomatic
 	R2*12

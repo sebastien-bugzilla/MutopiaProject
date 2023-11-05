@@ -119,7 +119,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	fis,16-.\p\< fis-. b-. d-.\! fis8-.\fz d-.
+	fis,16-.\p-\tweak rotation #'(6 -1 0) \< fis-. b-. d-.\! fis8-.\fz d-.
 % Bars 116 to 120
 	R2*4
 	
@@ -167,7 +167,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 161 to 165
 	g8^([ e g fis]
 	e dis e4)
-	e^(-\offset X-offset #1.3 \pp fis)
+	e^(-\offset X-offset #1.6 \pp fis)
 	g8^( e fis4)
 	R2*2
 % Bars 166 to 170
@@ -185,7 +185,7 @@ musicOboeIIMvtIII = \relative c'' {
 	r8 f,( d'4)
 	r8 f,( d'4)
 	c2\pp~
-	c\<
+	<< c {s4\< s8 s16 s\!}>>
 	cis!8\fz r r4
 % Bars 186 to 190
 	R2*7
@@ -407,8 +407,8 @@ musicOboeIIMvtIII = \relative c'' {
 	cis\fz~
 	cis
 	dis\fz\>~
-	dis~
-	dis~\pp
+	<<dis~ {s4 s8 s16 s\!} >>
+	dis2~\pp
 % Bars 436 to 440
 	dis4. r8
 	R2*7
@@ -443,9 +443,9 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	fis2\fz\>~
-	fis~
+	<<fis~ {s4 s8 s\!}>>
 % Bars 471 to 475
-	fis_\pdimD~
+	fis2_\pdimD~
 	fis~
 	fis4. r8
 	R2*3

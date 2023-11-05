@@ -72,9 +72,9 @@
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtIII
-%						}
+						\new Voice {
+							\formatConductorMvtIII
+						}
 						\new Voice {
 							\tempiMvtIII
 						}

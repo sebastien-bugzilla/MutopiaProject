@@ -277,7 +277,7 @@ musicTromboneIMvtIII = \relative c' {
 	dis->
 	gis->~
 	gis
-	fis->-\offset X-offset #-3.5 _\fzdimD\>~
+	fis->-\offset X-offset #-2.7 _\fzdimD\>~
 % Bars 426 to 430
 	fis~
 	fis\pp~

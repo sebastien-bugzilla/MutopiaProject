@@ -137,7 +137,7 @@ musicContrabassoMvtIII = \relative c, {
 	
 	\mark \default
 % Bars 111 to 115
-	b4-\offset X-offset #-5.5 ^\pizz\pp r
+	b4-\offset X-offset #-6 ^\pizz\pp r
 	R2*4
 	
 	
@@ -149,7 +149,7 @@ musicContrabassoMvtIII = \relative c, {
 	
 	
 % Bars 121 to 125
-	g!2(\mp^\arco
+	g!2(\mp-\offset X-offset -6 ^\arco
 	fis)
 	g( 
 	fis)
@@ -204,7 +204,7 @@ musicContrabassoMvtIII = \relative c, {
 	ais r b d
 % Bars 176 to 180
 	a! cis g! b
-	gis,2\pp~-\offset X-offset #-5.4 ^\arco
+	gis,2\pp~-\offset X-offset #-6 ^\arco
 	gis
 	a~
 	a
@@ -319,13 +319,13 @@ musicContrabassoMvtIII = \relative c, {
 	
 % Bars 296 to 300
 	
-	g'4\pp-\offset X-offset #-6 ^\pizz r
+	g'4\pp-\offset X-offset #-6.5 ^\pizz r
 	f4\< r
 	f r8 f
 	f4 r8 f
 % Bars 301 to 305
 	f4\! e 
-	a,\> r
+	a,\> \after 4*2/3 \! r
 	d\brack\p r
 	r d
 	d r
@@ -439,7 +439,7 @@ musicContrabassoMvtIII = \relative c, {
 	fis-. r fis'-. r
 % Bars 396 to 400
 	R2
-	b4\p-\offset X-offset #-5 ^\pizz r4
+	b4\p-\offset X-offset #-5.5 ^\pizz r4
 	a r
 	gis r
 	g r
@@ -452,7 +452,7 @@ musicContrabassoMvtIII = \relative c, {
 % Bars 406 to 410
 	fis\<~
 	fis~
-	fis
+	\after 2*7/8 \! fis
 	f8\fz r r4
 	R2*3
 % Bars 411 to 415
@@ -463,7 +463,7 @@ musicContrabassoMvtIII = \relative c, {
 	dis:\<
 % Bars 416 to 420
 	cis:
-	bis:\!
+	\after 2*3/4 \! bis:
 	cis4: e:
 	fis4\f r
 	fis8-. fis-. r4

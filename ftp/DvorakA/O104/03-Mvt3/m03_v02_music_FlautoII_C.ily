@@ -149,7 +149,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	r8 f,( d'4)
 	r8 f,( d'4)
 	f2\pp~
-	f\<
+	<<f {s4\< s8 s16 s\!}>>
 	g8\fz r r4
 % Bars 186 to 190
 	R2*11
@@ -332,8 +332,8 @@ musicFlautoIIMvtIII = \relative c''' {
 	cis\fz
 	dis4 cis
 	fis2\f\>~
-	fis~
-	fis\pp~
+	<<fis~ {s4 s8 s16 s\!}>>
+	fis2\pp~
 % Bars 436 to 440
 	fis4. r8
 	R2*12
@@ -343,7 +343,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	\tuplet 3/2 4 {b,,8-\tweak X-offset #-1 \pp( cis b} ais b)
+	\tuplet 3/2 4 {b,,8-\tweak X-offset #-1.4 \pp( cis b} ais b)
 	\tuplet 3/2 4 {b( cis b} ais8. cis16)
 % Bars 451 to 455
 	\tuplet 3/2 4 {b8( cis b} ais b)

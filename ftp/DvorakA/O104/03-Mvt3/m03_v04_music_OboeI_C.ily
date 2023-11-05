@@ -127,7 +127,7 @@ musicOboeIMvtIII = \relative c' {
 	
 	
 	
-	b16-.\p\< b-. d-. fis-.\! b8-.\fz fis-.
+	\hairpinShorten #'(-0.5 . 0.5) b16-.\p-\tweak rotation #'(6 -1 0) \< b-. d-. fis-.\! b8-.\fz fis-.
 % Bars 116 to 120
 	R2*4
 	
@@ -193,7 +193,7 @@ musicOboeIMvtIII = \relative c' {
 	r8 bes,( f'4)
 	r8 bes,( f'4)
 	c'2\pp~
-	c\<
+	<< c {s4\< s8 s16 s\!}>>
 	a8\fz r r4
 % Bars 186 to 190
 	R2*7
@@ -248,7 +248,7 @@ musicOboeIMvtIII = \relative c' {
 	fis8-. cis'-. cis8.-> fis,16-.
 	eis8( cis'~ cis16 d e! d)
 	cis8[( b ais cis)]
-	cis8.(_\> b16 a!8 g!)
+	cis8.(_\> b16 a!8 g!)\!
 	fis2_\p~
 % Bars 236 to 240
 	fis~
@@ -300,7 +300,7 @@ musicOboeIMvtIII = \relative c' {
 	g g g g g g
 	g g g g g g
 % Bars 301 to 305
-	g g g g-\tweak rotation #'(-3 -1 0) \< g g
+	g g g g\< g g
 	g g g fis fis e\!}
 	\partCombineApart g4 a'\rest
 	R2
@@ -419,8 +419,8 @@ musicOboeIMvtIII = \relative c' {
 	gis\fz~
 	gis
 	b\fz\>~
-	b~
-	b~\pp
+	<< b~ {s4 s8 s16 s\!}>>
+	b2~\pp
 % Bars 436 to 440
 	b4. r8
 	R2*7
@@ -454,9 +454,9 @@ musicOboeIMvtIII = \relative c' {
 	
 	
 	b2\fz\>~
-	b~
+	<<b~ {s4 s8 s\!}>>
 % Bars 471 to 475
-	b_\pdimD~
+	b2_\pdimD~
 	b~
 	b4. r8
 	R2*3

@@ -25,7 +25,7 @@ musicTrombaIIMvtIII = \relative c'' {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	g8\f g16 g g8 r
+	g8-\tweak X-offset #-0.5 \f g16 g g8 r
 	g g16 g g8 r
 	g g16 g g8 r
 	d d16 d d8 r

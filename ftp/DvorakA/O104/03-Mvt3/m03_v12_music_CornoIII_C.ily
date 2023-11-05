@@ -266,10 +266,10 @@ musicCornoIIIMvtIII = \relative c' {
 	c\fz->~
 	c
 	g\fz\>~
-	g~\dimD
-	g~\pp
+	<<g~ {s4 s\dimD}>>
+	g2~\pp
 % Bars 436 to 440
-	g4.^\mutaind \transposition d r8
+	g4.^\mutaind \transposition d r8 \updateShortName \CorIIIInD
 	R2*12
 % Bars 441 to 445
 	

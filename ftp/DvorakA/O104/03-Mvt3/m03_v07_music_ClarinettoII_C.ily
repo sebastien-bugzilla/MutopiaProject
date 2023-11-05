@@ -161,9 +161,9 @@ musicClarinettoIIMvtIII = \relative c' {
 % Bars 181 to 185
 	
 	
-	aes''2\pp~
-	aes\<
-	c,8-\tweak X-offset #-1.2 \fz r r4
+	aes''2-\tweak X-offset -2 \pp~
+	<< aes {s4\< s8 s16 s\!} >>
+	c,8-\tweak X-offset 0 \fz r r4
 % Bars 186 to 190
 	R2*11
 % Bars 191 to 195
@@ -249,7 +249,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 	\bar "||" \mark \default
 % Bars 281 to 285
-	bes2-\offset X-offset #0.5 \p~
+	bes2-\offset X-offset #0.8 \p~
 	bes8[ a( bes c)]
 	d8([ g f ees)]
 	d([ g f ees)]
@@ -323,7 +323,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	d
 	d4( cis)
 	cis2
-	cis2(\brack\p
+	cis2(-\offset X-offset -1 \brack\p
 % Bars 356 to 360
 	c4 b)
 	cis8( c b4)
@@ -359,9 +359,9 @@ musicClarinettoIIMvtIII = \relative c' {
 	d2
 	d
 	d
-	d8 r a,4\brack\p\<(
+	d8 r a,4\brack\p(
 % Bars 386 to 390
-	g fis)\!
+	g\< fis)\!
 	g( fis)
 	g( fis)
 	\tuplet 3/2 4 {r8\< dis'! dis r e e
@@ -408,8 +408,8 @@ musicClarinettoIIMvtIII = \relative c' {
 	b\fz~
 	b
 	d\fz\>~
-	d~
-	d\pp~
+	<<d~ {s4 s8 s16 s\!} >>
+	d2\pp~
 % Bars 436 to 440
 	d4. r8
 	R2*12

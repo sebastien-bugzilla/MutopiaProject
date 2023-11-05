@@ -175,7 +175,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	\partCombineApart f'2_\pp~
-	f_\<
+	<< f {s4_\< s8 s16 s\! }>>
 	e8_\fz r r4 \partCombineAutomatic
 % Bars 186 to 190
 	R2*7

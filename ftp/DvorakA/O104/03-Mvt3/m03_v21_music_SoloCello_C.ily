@@ -187,7 +187,7 @@ musicSoloCelloMvtIII = \relative c {
 	a( cis a  g bes g  e g e  cis e cis) \unseparateSextolet \setSextolet
 	a(\< ais b  bis cis d \tupletUp dis e eis  fis g gis) \tupletNeutral
 	a( ais b  bis cis d  \clef tenor dis e eis  fis g gis)\! } \unsetSextolet
-	\flattrill a2_\ffz\startTrillSpan
+	\markEO #'(0 . 2) \flattrill a2_\ffz\startTrillSpan
 	\trillPadding #3 \flattrill a2\startTrillSpan 
 % Bars 191 to 195
 	a16(\stopTrillSpan\< bes gis a bes gis a bes)
@@ -412,7 +412,7 @@ musicSoloCelloMvtIII = \relative c {
 	dis!( cis) cis( b) fis'( e) e( cis)
 % Bars 396 to 400
 	cis( ais) ais( fis) fis e cis fis
-	\acciaccatura fis,8 fis'4-^ \acciaccatura b,8 b'4-^
+	\acciaccatura fis,8 fis'4^^ \acciaccatura b,8 b'4-^
 	\acciaccatura cis,8 cis'( dis16 cis) \acciaccatura b,8 b'4
 	\acciaccatura cis,8 cis'( dis16 cis) \acciaccatura b,8 b'4
 	\acciaccatura cis,8 cis'( dis16 cis) \acciaccatura b,8 b'4
@@ -473,7 +473,7 @@ musicSoloCelloMvtIII = \relative c {
 % Bars 446 to 450
 	ais b ais gis ais\> gis)
 	fis( gis fis e fis e
-	dis e dis \once \stemDown cis dis cis)} \mark \default
+	dis e dis \once \stemDown cis dis cis)\!} \mark \default
 	b4(\p fis~
 	fis8 b_\dimmarkup fis4~
 % Bars 451 to 455

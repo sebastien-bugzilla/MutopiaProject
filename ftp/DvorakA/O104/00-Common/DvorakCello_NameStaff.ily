@@ -354,7 +354,9 @@ nameStaffVIIIMvtIII = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffIXMvtIII = {
-	\set Staff.instrumentName = "I. II."
+	\set Staff.instrumentName = \markup {
+		\hspace #4 "I. II."
+	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
 			\lower #1 "Trbni" "I. II."
@@ -391,12 +393,16 @@ nameStaffXIIIMvtIII = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffXIVMvtIII = {
-	\set Staff.instrumentName = "I."
+	\set Staff.instrumentName = \markup {
+		\hspace #8 "I."
+	}
 	\set Staff.shortInstrumentName = "Vln. I."
 	\set Staff.midiInstrument = #""
 }
 nameStaffXVMvtIII = {
-	\set Staff.instrumentName = "II."
+	\set Staff.instrumentName = \markup {
+		\hspace #8 "II."
+	}
 	\set Staff.shortInstrumentName = "Vln. II."
 	\set Staff.midiInstrument = #""
 }

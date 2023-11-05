@@ -17,14 +17,14 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	cis2\ff~
+	\dynEO #'(0 . 1.5) cis2\ff~
 	cis~
 	cis8 r r4
 	R2*3
 	
 % Bars 26 to 30
 	
-	fis8\ff fis16 fis fis8 fis16 fis
+	\dynEO #'(0 . 1.5) fis8\ff fis16 fis fis8 fis16 fis
 	fis8 fis16 fis fis8 fis16 fis
 	fis8 r r4
 	R2*19
@@ -43,7 +43,7 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 51 to 55
 	b'( g8 a)
 	fis4 \tuplet 3/2 4 {fis8_\<-. a-. d-.\!}
-	d4_\fp( fis,)
+	\dynEO #'(0 . 1) d4_\fp( fis,)
 	a( d,)
 	b'( g8 a)
 % Bars 56 to 60
@@ -60,7 +60,7 @@ musicFlautoIMvtIII = \relative c''' {
 	cis4( e
 % Bars 66 to 70
 	cis e)
-	cis8 r fis_\f r \partCombineAutomatic
+	cis8 r \dynEO #'(0 . 1) fis_\f r \partCombineAutomatic
 	R2*5
 	
 	
@@ -161,7 +161,7 @@ musicFlautoIMvtIII = \relative c''' {
 	r8 bes,( f'4)
 	r8 bes,( f'4)
 	a2\pp~
-	a\<
+	<< a {s4\< s8 s16 s\!}>>
 	a8\fz r r4
 % Bars 186 to 190
 	R2*11
@@ -199,7 +199,7 @@ musicFlautoIMvtIII = \relative c''' {
 	d->
 % Bars 221 to 225
 	dis4 e8 eis \mark \default
-	fis r^\IImutainflautopiccolo r4
+	fis r^\IImutainflautopiccolo r4 \updateShortName "Fl.I"
 	R2*3
 	
 	
@@ -207,7 +207,7 @@ musicFlautoIMvtIII = \relative c''' {
 	r8 cis\mp cis8.-> eis,16-.
 	fis8-. cis'-. cis8.-> fis,16-.
 	eis8 cis'(~ cis16 d e! d
-	cis8 b ais cis)
+	cis8 b ais cis) \updateShortName "Fl."
 	R2*23
 % Bars 231 to 235
 	
@@ -313,9 +313,9 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	
-	\mark \default
+	\markYoffset #5.5 \mark \default
 % Bars 381 to 385
-	fis,4\f b
+	\aIIExtraOffset #'(0 . -7.5) fis,4\f b
 	cis8( dis16 cis) b4->
 	cis8( dis16 cis) b4->
 	cis8( dis16 cis) b4->
@@ -356,8 +356,8 @@ musicFlautoIMvtIII = \relative c''' {
 	cis\fz
 	dis4 cis
 	fis2\f\>~
-	fis~
-	fis\pp~
+	<< fis~ {s4 s8 s16 s\!}>>
+	fis2\pp~
 % Bars 436 to 440
 	fis4. r8
 	R2*12
@@ -367,7 +367,7 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	\tuplet 3/2 4 {dis,8-\tweak X-offset #-1 \pp( e dis} cis dis)
+	\tuplet 3/2 4 {dis,8-\tweak X-offset #-1.4 \pp( e dis} cis dis)
 	\tuplet 3/2 4 {dis( e dis} cis8. e16)
 % Bars 451 to 455
 	\tuplet 3/2 4 {dis8( e dis} cis dis)

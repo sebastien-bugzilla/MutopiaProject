@@ -223,7 +223,7 @@ tempiMvtIII = {
 	s2*14
 	\tempo "string." % bar 345
 	s2*2
-	\tempo \markup { % bar 347
+	\tempo \markup { % bar 347 (according to manuscrit)
 		"Tempo I." 
 		\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 } 
 		\medium { =104 }

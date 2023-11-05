@@ -21,9 +21,9 @@ musicViolinoIIMvtIII = \relative c'' {
 % Bars 16 to 20
 	a4. r8
 	\slashedGrace b8 b4->\brack\fz g8-.\< e-.
-	\slashedGrace e'8 e4-\tweak extra-offset #'(0.3 . 3.8) _\fzmarkupbrack-> c8-. g-.
-	\slashedGrace e'8 e4->-\tweak extra-offset #'(0.3 . 4.3) _\fzmarkupbrack c8-. g-.
-	\slashedGrace g'8 g4->-\tweak extra-offset #'(0.3 . 4.8) _\fzmarkupbrack e8-. c-.\!
+	\slashedGrace e'8 \markEO #'(0.3 . 3.8) e4_\fzmarkupbrack-> c8-. g-.
+	\slashedGrace e'8 \markEO #'(0.3 . 4.1) e4->_\fzmarkupbrack c8-. g-.
+	\slashedGrace g'8 \markEO #'(0.3 . 4.4) g4->_\fzmarkupbrack e8-. c-.\!
 % Bars 21 to 25
 	<cis! ais'>2:16\ff
 	q:
@@ -110,8 +110,8 @@ musicViolinoIIMvtIII = \relative c'' {
 	g'2\fz-^~
 	g
 % Bars 101 to 105
-	\tuplet 3/2 4 {c,8\fz c g d'\fz d g,
-	e'\fz e g, fis'\fz fis g,}
+	\tuplet 3/2 4 {c,8\fz c g d'-\offset X-offset -0.5 \fz d g,
+	e'-\offset X-offset -0.5 \fz e g, fis'-\offset X-offset -0.5 \fz fis g,}
 	g'2-^\fz~
 	g
 	g8.\fz fis16 fis4
@@ -256,8 +256,8 @@ musicViolinoIIMvtIII = \relative c'' {
 	\tuplet 5/4 4 {b16( d fis eis e)} d8-.( cis-.)\!
 	b2:32\fp\>
 % Bars 266 to 270
-	b:
-	b8\! r r4
+	\after 2*3/4 \! b:
+	b8 r r4
 	R2*2
 	
 	fis'2\pp~
@@ -333,8 +333,8 @@ musicViolinoIIMvtIII = \relative c'' {
 % Bars 341 to 345
 	\tuplet 12/8 2 {f2.:16
 	f:}
-	\tuplet 6/4 4 {d16( f d f d f  d f d f d f
-	d f-\tweak extra-offset #'(0 . 1.9) _\crescmarkup d f d f   d f d f d f)
+	\tuplet 6/4 4 {\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur d16( f d f d f  d f d f d f
+	d f-\tweak extra-offset #'(0 . 2.1) _\crescmarkup d f d f   d f d f d f)
 	d(\< f d f d f   d f d f d f
 % Bars 346 to 350
 	d f d f d f  d f d f d f)\!} \bar "||" \key b \major
@@ -362,7 +362,7 @@ musicViolinoIIMvtIII = \relative c'' {
 	fis4( b)_\crescmarkup
 % Bars 366 to 370
 	fis( b)
-	fis( b-^~\brack\f
+	fis( \dynEO #'(0 . 1) b-^~\brack\f
 	b8) gis(-^ fis-^ e)-^ 
 	dis4 dis
 	dis8.( cis16 fis8. e16)
@@ -411,7 +411,7 @@ musicViolinoIIMvtIII = \relative c'' {
 	b:\<
 % Bars 416 to 420
 	ais:
-	a!:\!
+	\after 2*3/4 \! a!:
 	gis4: gis':
 	<dis b'>4\f r
 	<e ais>8-. q-. r4
@@ -429,7 +429,7 @@ musicViolinoIIMvtIII = \relative c'' {
 	<b dis> <b e>
 	<b dis> <b e>\!
 % Bars 441 to 450
-	<<{b4} \\ {b2*1/2-\offset X-offset #-2.2 \pp}>> e4)
+	<<{b4} \\ {b2*1/2-\offset X-offset #-2.5 \pp}>> e4)
 	<<{
 		b4( e
 		dis e

@@ -21,11 +21,11 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 16 to 20
 	b4. r8
 	\slashedGrace e8 e4\brack\fz-> b8-.\< g-.
-	\slashedGrace g'8 g4->-\tweak extra-offset #'(0.3 . 4) _\fzmarkupbrack e8-. c-.
-	\slashedGrace g'8 g4->-\tweak extra-offset #'(0.3 . 4.5) _\fzmarkupbrack e8-. c-.
-	\slashedGrace c'8 c4->-\tweak extra-offset #'(0.3 . 5) _\fzmarkupbrack g8-. e-.\!
+	\slashedGrace g'8 \markEO #'(0.3 . 2.5) g4->_\fzmarkupbrack e8-. c-.
+	\slashedGrace g'8 \markEO #'(0.3 . 3) g4->_\fzmarkupbrack e8-. c-.
+	\slashedGrace c'8 \markEO #'(0.3 . 3.5) c4->_\fzmarkupbrack g8-. e-.\!
 % Bars 21 to 25
-	fis'2:32-\tweak X-offset #0.1 \ff
+	\dynEO #'(0 . 1) fis'2:32\ff
 	fis:
 	fis8\noBeam ais,,16 fis e'8-> cis16 ais
 	g'8-> e16 cis ais'8-> g!16 fis
@@ -47,7 +47,7 @@ musicViolinoIMvtIII = \relative c'' {
 	
 	
 	
-	r4 \tupletYoffset #2 \tuplet 5/4 4 {fis16(-\tweak X-offset #-1.8 \f -\tweak rotation #'(4 -1 0) \< b cis d fis)\!}
+	r4 \tupletYoffset #2 \tuplet 5/4 4 {fis16(-\tweak X-offset #-2 \f -\tweak rotation #'(4 -1 0) \< b cis d fis)\!}
 % Bars 41 to 45
 	fis4-\offset X-offset #-0.3 \ff-> b->
 	cis8( d16 cis) b4
@@ -63,7 +63,7 @@ musicViolinoIMvtIII = \relative c'' {
 	
 % Bars 56 to 60
 	
-	r8 a,,-\offset X-offset #-1 _\pmarcato^\pizz r d
+	r8 a,,-\offset X-offset #-1.5 _\pmarcato^\pizz r d
 	r fis r a
 	r c r f
 	r dis r b
@@ -314,7 +314,7 @@ musicViolinoIMvtIII = \relative c'' {
 	
 % Bars 346 to 350
 	\bar "||" \key b \major
-	\grace {s8} dis'4_\ptranquilloemoltoespressivo-\offset X-offset #-3 ^\solo--( dis~--
+	\grace {s8} dis'4_\ptranquilloemoltoespressivo-\offset X-offset #-5 ^\solo--( dis~--
 	dis8 e dis e)
 	fis4( b
 	fis b)
@@ -338,7 +338,7 @@ musicViolinoIMvtIII = \relative c'' {
 	fis4( b)_\crescmarkup
 % Bars 366 to 370
 	fis( b)
-	fis( b~-^\brack\f
+	fis( \dynEO #'(0 . 2) b~-^\brack\f
 	b8) gis(-^ fis-^ e)-^ 
 	dis4 dis
 	dis8.( cis16 fis8. e16)
@@ -392,8 +392,8 @@ musicViolinoIMvtIII = \relative c'' {
 	fis b\!
 % Bars 441 to 445
 	fis\pp b)
-	fis( b
-	fis_\dimmarkup b
+	fis( \once \stemUp b
+	fis_\dimmarkup \once \stemUp b
 	fis) b(~
 	b2\ppp~
 % Bars 446 to 450
@@ -414,12 +414,12 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 466 to 470
 	
 	
-	r4^\solo fis8.(\p\< fis'16)\!
+	r4-\offset X-offset -1 ^\solo fis8.(\p\< fis'16)\!
 	fis4.(\fz e8)
 	dis4.(\> cis8)\!
 % Bars 471 to 475
-	cis8.( b16 b4_\dimmarkup~
-	b8\> ais) ais8.(\prall gis16)\!
+	cis8.( b16 b4_\dimD\>~
+	b8 ais) ais8.(\prall gis16)\!
 	fis4. r8
 	R2*3
 	

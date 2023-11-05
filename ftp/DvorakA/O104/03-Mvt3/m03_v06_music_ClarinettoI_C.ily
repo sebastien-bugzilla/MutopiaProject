@@ -135,7 +135,7 @@ musicClarinettoIMvtIII = \relative c' {
 	\mark \default
 	\partCombineApart g'4(_\pespressivoecantabile e
 	g e)
-	g8.(_\< e16 c4~
+	g8.(_\< e16 c4~\!
 % Bars 146 to 150
 	c8_\> bes4 a8)\!
 	g8_\p( f' e4)
@@ -181,9 +181,9 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 181 to 185
 	
 	
-	c'2\pp~
-	c\<
-	bes8-\tweak X-offset #-1.2 \fz r r4
+	c'2-\tweak X-offset -2 \pp~
+	<<c {s4\< s8 s16 s\!} >>
+	bes8-\tweak X-offset 0 \fz r r4
 % Bars 186 to 190
 	R2*11
 % Bars 191 to 195
@@ -379,9 +379,9 @@ musicClarinettoIMvtIII = \relative c' {
 	fis2
 	e
 	e
-	fis8 r c,4\brack\p\<(
+	fis8 r c,4\brack\p(
 % Bars 386 to 390
-	bes a)\!
+	\hairpinShorten #'(-11 . 0) bes\< a)\!
 	bes( a)
 	bes( a)
 	\tuplet 3/2 4 {r8\< fis'! fis r g g
@@ -428,8 +428,8 @@ musicClarinettoIMvtIII = \relative c' {
 	d\fz~
 	d
 	fis\fz\>~
-	fis~
-	fis\pp~
+	<< fis~ {s4 s8 s16 s\!} >>
+	fis2\pp~
 % Bars 436 to 440
 	fis4. r8
 	R2*12

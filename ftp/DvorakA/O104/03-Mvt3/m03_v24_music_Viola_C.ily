@@ -21,9 +21,9 @@ musicViolaMvtIII = \relative c'' {
 % Bars 16 to 20
 	dis4. r8
 	\slashedGrace g8 g4->\brack\fz e8-.\< b-.
-	\slashedGrace c'8 c4->-\tweak extra-offset #'(0.3 . 4) _\fzmarkupbrack g8-. e-.
-	\slashedGrace c'8 c4->-\tweak extra-offset #'(0.3 . 4.5) _\fzmarkupbrack g8-. e-.
-	\slashedGrace e'8 e4->-\tweak extra-offset #'(0.3 . 5) _\fzmarkupbrack c8-. g-.\!
+	\slashedGrace c'8 \markEO #'(0.3 . 4) c4->_\fzmarkupbrack g8-. e-.
+	\slashedGrace c'8 \markEO #'(0.3 . 4.3) c4->_\fzmarkupbrack g8-. e-.
+	\slashedGrace e'8 \markEO #'(0.3 . 4.6) e4->_\fzmarkupbrack c8-. g-.\!
 % Bars 21 to 25
 	fis2:32\ff
 	fis:
@@ -187,7 +187,7 @@ musicViolaMvtIII = \relative c'' {
 		g(\p a
 		g a)
 		\hairpinShorten #'(0 . -2) g(\< fis\!
-		\hairpinShorten #'(0 . -4) e\> fis)\!
+		\hairpinShorten #'(0 . -3.5) e\> fis)\!
 		fis(\pp g
 % Bars 156 to 160
 		fis g)
@@ -321,7 +321,7 @@ musicViolaMvtIII = \relative c'' {
 	q8 r r4\!
 	<d, fis>2:32\fp\>
 % Bars 266 to 270
-	q:\!
+	\after 2*3/4 \! q:
 	q:\pp
 	q:
 	q8 r r4
@@ -353,7 +353,7 @@ musicViolaMvtIII = \relative c'' {
 	g~
 % Bars 301 to 305
 	g4\! g_(^~
-	<e g>2)\>
+	\after 2*5/6 \! <e g>2)\>
 	\tuplet 3/2 4 {d8\p d d  d d d 
 	d d d  d d d 
 	d d d  d d d 
@@ -458,7 +458,7 @@ musicViolaMvtIII = \relative c'' {
 	e(-> fis g fis e dis-> e fis e dis)
 	e(-> fis g fis e dis-> e fis e dis)
 	dis'(-> cis bis cis dis e-> dis cis dis e)
-	cis(->_\crescmarkup b! ais b cis dis-> cis b cis dis)
+	cis(->_\crescmarkup b! ais b cis \stemUp dis-> cis b cis dis) \stemNeutral
 % Bars 391 to 395
 	b(^>\< ais gis ais b b^> ais gis ais b)
 	b(^> a g a b b^> a g a b)\!}
@@ -488,7 +488,7 @@ musicViolaMvtIII = \relative c'' {
 	fis:\<
 % Bars 416 to 420
 	e:
-	dis:\!
+	\after 2*3/4 \! dis:
 	e4: gis:
 	<b dis>4\f r
 	cis8-. cis-. r4
@@ -508,7 +508,7 @@ musicViolaMvtIII = \relative c'' {
 % Bars 441 to 445
 	<dis fis>\pp <e gis>)
 	<dis fis>( <e gis>
-	<dis fis>-\tweak extra-offset #'(0.5 . 2.5) _\dimmarkup <e gis>
+	<dis fis>-\tweak extra-offset #'(0.8 . 2.9) _\dimmarkup <e gis>
 	<dis fis>) <e gis>~
 	q2\ppp~
 % Bars 446 to 450
@@ -536,7 +536,7 @@ musicViolaMvtIII = \relative c'' {
 	
 % Bars 476 to 480
 	
-	e'4\pizz\fz r
+	e'4^\pizz\fz r
 	R2
 	<cis e>4\mp r
 	R2
