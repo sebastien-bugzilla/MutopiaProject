@@ -19,14 +19,14 @@ musicFlautoIIMvtI = \relative c'' {
 	
 % Bars 16 to 20
 	r4 g'8.->\f\< fis16-. b8.-> ais16-. d8.-> cis16-.\!
-	cis8 r g8(->\ff fis16) r g8(-> fis16) r g8(-> fis16) r 
+	cis8 r \dynEO #'(0 . 1) g8(->\ff fis16) r g8(-> fis16) r g8(-> fis16) r 
 	g8(-> fis16) r g8(-> fis16) r g8(-> fis16) r g8(-> fis16) r 
 	cis'1\f~
 	cis~
 % Bars 21 to 25
 	cis8 r r4 r2
 	R1 \mark \default
-	r2 b4.\ff cis16 d
+	\tempoXoffset #1 r2 b4.\ff cis16 d
 	b4 r b4. cis16 d
 	b4 r r2
 % Bars 26 to 30
@@ -56,8 +56,8 @@ musicFlautoIIMvtI = \relative c'' {
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	\tempoXoffset #1 R1
-	\mmrLength #3 R1*18
+	R1
+	\mmrLength #26 \mmrnDown \tempoXoffset #-3 R1*18
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -76,24 +76,25 @@ musicFlautoIIMvtI = \relative c'' {
 	fis r e(_\dimmarkup\prall d) d r g,(\prall fis)
 % Bars 81 to 85
 	fis r r4 r2
-	R1*10
+	R1*5
 % Bars 86 to 90
 	
+	\mmrLength #13 \mmrnDown R1*5
 % Bars 91 to 95
 	
 	\ni \mmrPos #-2 R1
 	\mmrPos #-2 R
 	\mmrPos #-2 R \no
-	r2 r16 g'\p\<-. g-. g-. g8-. g16-. g-.
+	r2 r16 g'\p\<-. g-. g-. g8-. g16-. g-.\!
 % Bars 96 to 100
-	g8\fz r r4 r16 g-.\p\< g-. g-. g8-. g16-. g-.
+	g8\fz r r4 r16 g-.\p\< g-. g-. g8-. g16-. g-.\!
 	g8\fz r r4 r2
 	R1*3
 	
 	
 % Bars 101 to 105
 	r16 c,,\p\<-. c-. b-. c8-. e-. \tuplet 3/2 4 {e-. e-. a-. } a16-. a-. a-. c-.\!
-	c8\fz r r4-\tweak X-offset #-3 ^\mutainflautopiccolo r2
+	c8\fz r r4-\tweak X-offset #-4 ^\mutainflautopiccolo r2
 	R1*7 
 	
 	
@@ -101,8 +102,8 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 	
-	\mark \default
-	\mmrLength #2.3 R1*10
+	\markXoffset -0.3 \mark \default
+	\mmrLength #23 R1*10
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -139,11 +140,11 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 	
-	\tempoXoffset #-1 \mmrLength #2.5 R1*3
+	\mmrLength #13 R1*3
 % Bars 156 to 160
-	\mark \default
+	\markXoffset #-0.3 \mark \default
 	R1*1 
-	\mmrLength #2.2 \tempoXoffset #-2 R1*10
+	\mmrLength #18 \tempoXoffset #-2 R1*10
 	
 	
 % Bars 161 to 165
@@ -216,9 +217,9 @@ musicFlautoIIMvtI = \relative c'' {
 	
 % Bars 221 to 225
 	
-	\mmrLength #4 \tempoXoffset #-1 R1*2
+	\mmrLength #11 \tempoXoffset #-1 R1*2
 	\mark \default
-	R1*12
+	\mmrLength #21 R1*12
 	
 % Bars 226 to 230
 	
@@ -267,7 +268,7 @@ musicFlautoIIMvtI = \relative c'' {
 	cis cis dis8( fis dis b)
 	ais2.\> r4\!
 % Bars 271 to 275
-	\tempoXoffset #-2 \mmrLength #2.5 R1*10
+	\tempoXoffset #-2 \mmrLength #16 R1*10
 % Bars 276 to 280
 	
 	
@@ -275,11 +276,11 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 % Bars 281 to 285
-	\tempoXoffset #-1.5 \mmrLength #2.5 R1*3
+	\tempoXoffset #-1.5 \mmrLength #14 R1*3
 	
 	\mark \default
 	\tempoXoffset #1 R1*1
-	\tempoXoffset #-3 \mmrLength #2 R1*10
+	\tempoXoffset #-3 \mmrLength #13 R1*10
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -310,7 +311,7 @@ musicFlautoIIMvtI = \relative c'' {
 	r8 ais\fz r4 r2
 % Bars 316 to 320
 	r8 ais\fz r4 r8 ais\fz r4
-	ais8\fz r r4 r2
+	\dynEO #'(0 . 1) ais8\fz r r4 r2
 	r2 r4 r8\fermata ais8
 	b4.\ff cis16 dis b2
 	ais4. gis16 fis b2
@@ -345,7 +346,7 @@ musicFlautoIIMvtI = \relative c'' {
 	r b-. b-. b-.
 	b-. r b-. r
 	b-. r b-. r
-	b r r2
+	b-. r r2
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {b8\f b b} b4 b
 	b2 r

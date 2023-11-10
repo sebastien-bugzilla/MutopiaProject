@@ -37,7 +37,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 % Bars 31 to 35
 	
-	\mmrMinLength #14 R2.*2
+	\mmrLength #14 R2.*2
 	
 	\ni \mmrPos #-6 R2._\fermata \no \mark \default
 	g2.\pp~

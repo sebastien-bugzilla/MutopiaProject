@@ -6,42 +6,42 @@
 %###############################################################################
 nameFlautoIMvtI = {
 	\set Staff.instrumentName = "Flauto I"
-	\set Staff.shortInstrumentName = "Fl. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }
 nameFlautoIMvtII = {
 	\set Staff.instrumentName = "Flauto I"
-	\set Staff.shortInstrumentName = "Fl. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }
 nameFlautoIMvtIII = {
 	\set Staff.instrumentName = "Flauto I"
-	\set Staff.shortInstrumentName = "Fl. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }
 nameFlautoIIMvtI = {
 	\set Staff.instrumentName = "Flauto II"
-	\set Staff.shortInstrumentName = "Fl. II"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }
 nameFlautoIIMvtII = {
 	\set Staff.instrumentName = "Flauto II"
-	\set Staff.shortInstrumentName = "Fl. II"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }
 nameFlautoIIMvtIII = {
 	\set Staff.instrumentName = "Flauto II"
-	\set Staff.shortInstrumentName = "Fl. II"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }
 namePiccoloMvtI = {
 	\set Staff.instrumentName = "Piccolo"
-	\set Staff.shortInstrumentName = "Picc."
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }
 namePiccoloMvtIII = {
 	\set Staff.instrumentName = "Piccolo"
-	\set Staff.shortInstrumentName = "Picc."
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }
 %###############################################################################

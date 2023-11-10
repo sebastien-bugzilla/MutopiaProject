@@ -342,7 +342,7 @@ musicFlautoIIMvtI = \relative c'' {
 	r b-. b-. b-.
 	b-. r b-. r
 	b-. r b-. r
-	b r r2
+	b-. r r2
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {b8\f b b} b4 b
 	b2 r

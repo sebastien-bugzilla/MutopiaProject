@@ -21,7 +21,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	\mmrPos #-2 R
 	\mmrPos #-2 R \no
 % Bars 21 to 25
-	ais2\ff~
+	\dynEO #'(0 . 2) ais2\ff~
 	ais~
 	ais8 r r4
 	R2*3
@@ -63,7 +63,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R
 % Bars 86 to 90
-	\mmrPos #-4 R \no \markYoffset #5 \mark \default
+	\mmrPos #-4 R \no \mark \default
 	d,8\ff[ r16 d] d8 r
 	e8[ r16 d] d8 r
 	d r r4
@@ -123,7 +123,7 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 141 to 145
 	
 	\mark \default
-	\mmrnDown R2*14
+	\mmrnDown \mmrLength #23 R2*14
 	
 	
 % Bars 146 to 150
@@ -134,7 +134,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	R2*2
 	
-	R2*7
+	\mmrLength #12 R2*7
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -164,8 +164,8 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 % Bars 196 to 200
 	
-	r8 a,(\p\< bes4)\!
-	r8 a(\p\< bes4)\!
+	r8 \hairpinShorten #'(-0.5 . -1) a,(\p\< bes4)\!
+	r8 \hairpinShorten #'(-0.5 . -1) a(\p\< bes4)\!
 	bes8-.\fz a-. r4
 	R2*3
 % Bars 201 to 205
@@ -248,7 +248,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	R2*2
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*16
+	\mmrLength #22 R2*16
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -269,7 +269,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	R2 \mark \default
-	\tempoXoffset #1 R2*16
+	\tempoXoffset #0.5 \mmrLength #15 R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -343,7 +343,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 % Bars 411 to 415
 	
-	\mark \default
+	\markXoffset #-0.1 \mark \default
 	R2*12
 % Bars 416 to 420
 	
@@ -367,7 +367,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	fis\pp~
 % Bars 436 to 440
 	fis4. r8
-	\mmrLength #2.2 R2*7
+	\mmrLength #15 \tempoXoffset #-2 R2*7
 % Bars 441 to 445
 	
 	
@@ -397,8 +397,8 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 471 to 475
 	
 	
-	\ni \mmrPos #-6 R2
-	\mmrPos #-4 R
+	\ni \mmrPos #-7 R2
+	\mmrPos #-6 R
 	\mmrPos #-4 R
 % Bars 476 to 480
 	\mmrPos #-4 R \no
@@ -423,7 +423,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	dis2-^\ff~
 	dis
 	cis-^~
-	cis-^
+	cis
 	dis2-^
 % Bars 506 to 510
 	R2

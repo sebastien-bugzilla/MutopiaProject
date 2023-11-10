@@ -149,8 +149,8 @@ musicFlautoIMvtI = \relative c'' {
 	\partCombineApart r8 a,(-. cis-. e-. a-.) r r4
 	r8 b,(-. d-. e-. b'-.) r r4
 	r8 a,(-. cis-. e-. a-.) r r4
-	a1
-	d2( e4 fis)
+	<<a1 {s4 s s s_\< } >>
+	d2( e4 fis)\!
 % Bars 156 to 160
 	fis2(_\dimD_\> g4 cis,) \mark \default
 	e(_\pdimD_\> d2) \tuplet 3/2 4 {cis8( ais fis)\!}
@@ -372,7 +372,7 @@ musicFlautoIMvtI = \relative c'' {
 	r dis-. dis-. e-.
 	dis-. r dis-. r
 	dis-. r dis-. r
-	dis r r2
+	dis-. r r2
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {b8\f b b} b4 b
 	b2 r

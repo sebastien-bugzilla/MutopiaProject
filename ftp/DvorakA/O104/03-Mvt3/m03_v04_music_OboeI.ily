@@ -161,7 +161,7 @@ musicOboeIMvtIII = \relative c' {
 % Bars 141 to 145
 	
 	\mark \default
-	\mmrMinLength #22 \mmrnDown R2*14
+	\mmrLength #22 \mmrnDown R2*14
 % Bars 146 to 150
 	
 % Bars 151 to 155

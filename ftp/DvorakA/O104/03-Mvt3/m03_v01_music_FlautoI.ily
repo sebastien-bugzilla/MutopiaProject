@@ -21,7 +21,7 @@ musicFlautoIMvtIII = \relative c''' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 % Bars 21 to 25
-	cis2\ff~
+	cis!2\ff~
 	cis~
 	cis8 r r4
 	R2*3
@@ -120,14 +120,14 @@ musicFlautoIMvtIII = \relative c''' {
 	R2*3
 	
 	
-	r4 d,,16-.\p\< d-. fis-. b-. 
-	d-. d-. fis-. b-. d8-.\fz b-. 
+	r4 \hairpinShorten #'(0 . 1) d,,16-.\p\< d-. fis-. b-. 
+	d-. d-. fis-. b-.\! d8-.\fz b-. 
 % Bars 116 to 120
 	R2*3
 	
 	
 	r4 fis,16\p\<-. fis-. a-. cis-. 
-	fis-. fis-. a-. cis-. fis8\fz-. cis-. 
+	fis-. fis-. a-. cis-.\! fis8\fz-. cis-. 
 % Bars 121 to 125
 	r4 d8\mf-. cis-. 
 	r4 d8-. cis-. 
@@ -147,11 +147,11 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	
-	\mmrLength #3 \tempoXoffset #-1 R2*3
+	\mmrLength #13 \tempoXoffset #-1 R2*3
 % Bars 141 to 145
 	
 	\mark \default
-	R2*24
+	\mmrLength #18 R2*14
 	
 	
 % Bars 146 to 150
@@ -160,14 +160,18 @@ musicFlautoIMvtIII = \relative c''' {
 	
 % Bars 156 to 160
 	
+	R2*2
+	
+	\mmrLength #12 R2*7
+	
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	\mark \default
+	R2 \mark \default
 	R2*5
 % Bars 171 to 175
 	
-	\ni \mmrPos #-4 R2
+	\ni \tempoXoffset #0.5 \mmrPos #-4 R2
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R
@@ -181,7 +185,7 @@ musicFlautoIMvtIII = \relative c''' {
 	r8 bes,( f'4)
 	r8 bes,( f'4)
 	a2\pp~
-	a\<
+	\after 2*3/4 \! a\<
 	a8\fz r r4
 % Bars 186 to 190
 	R2*11
@@ -189,8 +193,8 @@ musicFlautoIMvtIII = \relative c''' {
 	
 % Bars 196 to 200
 	
-	r8 cis,(\p\< d4)\!
-	r8 cis(\p\< d4)\!
+	r8 \hairpinShorten #'(-0.5 . -1) cis,(\p\< d4)\!
+	r8 \hairpinShorten #'(-0.5 . -1) cis(\p\< d4)\!
 	d8-.\fz cis-. r4
 	R2*3
 % Bars 201 to 205
@@ -254,8 +258,8 @@ musicFlautoIMvtIII = \relative c''' {
 	e8(\< fis) a16(\! g fis e)
 	\tuplet 5/4 4 {d!16( e g fis e)} d8-. cis-. \mark \default
 % Bars 261 to 265
-	b8\ff r r4
-	b8 r r4
+	d8\ff r r4
+	d8 r r4
 	R2*10
 % Bars 266 to 270
 	
@@ -272,7 +276,7 @@ musicFlautoIMvtIII = \relative c''' {
 	\tempoXoffset #1 R2*2
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*16
+	\mmrLength #20 \mmrnDown R2*16
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -294,7 +298,7 @@ musicFlautoIMvtIII = \relative c''' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-6 R \no \cueClefUnset \mark \default
-	g8(\p b16 a g8 d)
+	g,8(\p b16 a g8 d)
 % Bars 316 to 320
 	g8( b16 a g8 d)
 	g(\> d4.)\!
@@ -374,7 +378,7 @@ musicFlautoIMvtIII = \relative c''' {
 	fis(\< e \tuplet 3/2 4 {dis cis b)}
 	e8( d \tuplet 3/2 4 {d cis b)}
 	e16( d cis b e d cis b)\!
-	g'8\fz r r4
+	\dynEO #'(0 . 1) g'8\fz r r4
 	R2*3
 % Bars 411 to 415
 	
@@ -405,7 +409,7 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	\tempoXoffset #2 \tuplet 3/2 4 {dis,8\pp( e dis} cis dis)
+	\tempoXoffset #2 \tuplet 3/2 4 {dis,8-\offset X-offset -1 \pp( e dis} cis dis)
 	\tuplet 3/2 4 {dis( e dis} cis8. e16)
 % Bars 451 to 455
 	\tuplet 3/2 4 {dis8( e dis} cis dis)
@@ -422,8 +426,8 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 466 to 470
 	
 	
-	r4 fis8.\p\<( dis'16)
-	dis4.(\fz\> cis8
+	r4 \hairpinShorten #'(-0.5 . -0.5) fis8.\p-\tweak extra-offset #'(0 . 0.4) \<( dis'16)
+	\dynEO #'(0 . 0.5) dis4.(\fz-\tweak extra-offset #'(0 . 0.4) \> cis8
 	b4. ais8)\!
 % Bars 471 to 475
 	ais8.( gis16) gis4_\dimmarkup(~
@@ -433,8 +437,8 @@ musicFlautoIMvtIII = \relative c''' {
 	
 % Bars 476 to 480
 	
-	g2\fp\>~
-	g\!~
+	\dynEO #'(0 . 1) g2\fp-\alterBroken shorten-pair #'((-0.5 . -0.5) ()) -\alterBroken extra-offset #'((0 . 0.5) ()) \>~
+	\after 2*3/7 \! g~
 	g\>~
 	g~\!
 % Bars 481 to 485
@@ -445,8 +449,8 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 491 to 495
 	
 % Bars 496 to 500
-	\markXoffset #-0.3 \mark \default
-	\tempoXoffset #1 dis,2\p\<(
+	\mark \default
+	\tempoXoffset #1.5 dis,2-\offset X-offset 1 \p\<(
 	fis4 b
 	dis fis
 	b dis)\!
@@ -463,8 +467,8 @@ musicFlautoIMvtIII = \relative c''' {
 	fis8[\ff r16 fis fis8 r16 fis]
 	fis8[ r16 fis fis8 r16 fis]
 % Bars 511 to 515
-	cis8-. b-. cis-. b-. 
-	e-. d-. g-. fis-. 
+	cis8-.[ b-. cis-. b-.] 
+	e-.[ d-. g-. fis-.] 
 	fis-. r r4
 	dis!8 r dis r
 	dis r r4

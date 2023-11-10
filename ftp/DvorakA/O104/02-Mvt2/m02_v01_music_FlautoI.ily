@@ -59,24 +59,24 @@ musicFlautoIMvtII = \relative c'' {
 	f'4. ees16 f des f c f)
 	bes,4.(\< ees4 e8)\!
 % Bars 56 to 60
-	f4( ges8\> f f ees!
+	f4( ges8\>[ f] f ees!
 	des4)\! r r
-	c(\fz\> beses ges
+	c(\fz\> beses ges\!
 	f)\p r r
-	c'(\f\> beses ges
+	c'(\f\> beses ges\!
 % Bars 61 to 65
 	f2.\p)
 	e2.(
-	\tempoXoffset #-1 d2 c!4)
-	b(\> fis2)\! \bar "||" \key g \major \markXoffset #0.5 \mark \default
+	\tempoXoffset #-1.5 d2 c!4)
+	\once \stemUp b(\> fis2)\! \bar "||" \key g \major \mark \default
 	b4\ff r r
 % Bars 66 to 70
-	R2.*8
+	\mmrnDown R2.*8
 % Bars 71 to 75
 	
 	
 	
-	r4 r8 a'\p a( cis)
+	r4 r8 a'\p\noBeam a( cis)
 	e4(_\dimD\> d8 a16 g fis8 e16 d)\!
 % Bars 76 to 80
 	R2.*7
@@ -90,13 +90,13 @@ musicFlautoIMvtII = \relative c'' {
 	des4(\p\< bes16 a g a bes4)\!
 	a2.\fz 
 	aes_\dimD
-	fis!2(\p\> e!4
+	fis!2(\p\> e!4\!
 	dis2\pp d4)
 % Bars 91 to 95
-	b!\< c!8( d) d( ees)\!
+	b!\< c!8([ d)] d( ees)\!
 	ees4(\> d c)\!
-	b(_\dimmarkup ais b)
-	ais(\> b4. a8 \mark \default
+	\stemUp b(_\dimmarkup ais b)
+	ais(\> b4. a8 \mark \default \stemNeutral
 	\tempoXoffset #1.3 g8)\! r r4 r
 % Bars 96 to 100
 	R2.*10
@@ -107,16 +107,16 @@ musicFlautoIMvtII = \relative c'' {
 	R2.*3
 	
 	
-	\ni \clef bass \mmrPos #8 R2.
+	\ni \clef bass \mmrPos #7 R2.
 % Bars 111 to 115
 	\mmrPos #4 R \no \clef treble
 	r4 b2(\p~
 	b4 d4. g8)
-	g2.\<\trill
-	g16(\! e fis g)\! fis8(\< e) fis16( e fis g)\!
+	\hairpinShorten #'(0 . -1) \after 2.*5/6 \! g2.\<\trill
+	g16( e fis g)\! fis8(\< e) fis16( e fis g)\!
 % Bars 116 to 120
-	c2.\fz\trill
-	e32(\f c a e e'8\prall d32 b g d d'8\prall c32 a fis c c'8\prall)
+	c!2.\fz\trill
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e32(\f c a e e'8\prall d32 b g d d'8\prall c32 a fis c c'8\prall)
 	b32(\fz a g a  g\< a g a  g a g a  g a g a  g a g a  g a g a)\!
 	g4(\< e8 c e d16 c)\!
 	b8(\mf e16 d a4)_\dimmarkup b8( e16 d
@@ -125,7 +125,7 @@ musicFlautoIMvtII = \relative c'' {
 	g8(\< c16 b fis8 g a b)\!
 	d(\f c e2)
 	e4.( d16 c) e4(~\>
-	e8 d16 c) e4(~ e8 d16 c
+	e8 d16 c) e4(~ e8 d16 c\!
 % Bars 126 to 130
 	e8)\p r r4 r
 	R2.
@@ -136,14 +136,14 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	
-	\once \ni R2.\fermata^\lunga
+	\once \ni R2.\fermata_\lunga
 % Bars 136 to 140
 	R2.*5
 % Bars 141 to 145
-	\ni \clef bass \mmrPos #-2 R2.
-	\mmrPos #-2 R \no \clef treble
+	\ni \clef bass \mmrPos #-4 R2.
+	\mmrPos #-4 R \no \clef treble
 	d8(\p^\solo e b4) d8(\> e
-	b4) d8(\pp e d e
+	b4)\! d8(\pp e d e
 	b2) r4
 % Bars 146 to 150
 	R2.*2

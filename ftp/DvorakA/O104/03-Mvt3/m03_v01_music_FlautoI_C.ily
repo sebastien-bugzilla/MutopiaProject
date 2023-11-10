@@ -230,8 +230,8 @@ musicFlautoIMvtIII = \relative c''' {
 	e8(\< fis) a16(\! g fis e)
 	\tuplet 5/4 4 {d!16( e g fis e)} d8-. cis-. \mark \default
 % Bars 261 to 265
-	b8\ff r r4
-	b8 r r4
+	d8\ff r r4
+	d8 r r4
 	R2*18
 % Bars 266 to 270
 	
@@ -260,7 +260,7 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	\partCombineApart g8(_\p b16 a g8 d)
+	\partCombineApart g,8(_\p b16 a g8 d)
 % Bars 316 to 320
 	g8( b16 a g8 d)
 	g(_\> d4.)\!

@@ -325,10 +325,10 @@ ni = {
 }
 
 InCueContext = {
-	\override Beam.beam-thickness = #0.30 % 0.30
+	\override Beam.beam-thickness = #0.35 % 0.30
 	\override StemTremolo.beam-thickness = #0.35 % 0.30
 	\override Beam.length-fraction = #0.67 % 0.8
-	\override Stem.length-fraction = #0.85 % 0.8
+	\override Stem.length-fraction = #0.67 % 0.8
 %	\override Stem.length = #7
 %	\override Beam.length = #7
 	\set fontSize = #-3 %-3
@@ -422,15 +422,15 @@ textOsp = #(define-music-function
 	#}
 )
 
-mmrLength = #(define-music-function
-	(length)
-	(number?)
-	#{
-		\once \override MultiMeasureRest.space-increment = #length
-	#}
-)
+%mmrLength = #(define-music-function
+%	(length)
+%	(number?)
+%	#{
+%		\once \override MultiMeasureRest.space-increment = #length
+%	#}
+%)
 
-mmrMinLength = #(define-music-function
+mmrLength = #(define-music-function
 	(length)
 	(number?)
 	#{
@@ -620,6 +620,15 @@ CorIIIInD = \markup {
 		\lower #1 "Cor. III." "in D"
 	}
 }
+
+tempoEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
 
 % footnotes:
 footnotePageII = \markup {
@@ -891,7 +900,7 @@ footnotePageX = \markup {
 %	#}
 %)
 
-%mmrMinLength = #(define-music-function
+%mmrLength = #(define-music-function
 %	(length)
 %	(number?)
 %	#{
@@ -985,13 +994,6 @@ footnotePageX = \markup {
 %)
 
 %tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-%tempoEO = #(define-music-function
 %	(offset)
 %	(pair?)
 %	#{

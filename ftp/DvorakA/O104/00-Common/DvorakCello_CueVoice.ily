@@ -9,36 +9,36 @@ cueVoiceFlautoIMvtI = \relative c {
 	% bar 64 - 66
 	\transpose c a' {
 		\relative {
-			\voiceOne r2 r4 c8(-\tweak extra-offset #'(-1.5 . 2.5) \p^\markup {Clar.} cis)
-			d2(~ d8 c! bes a)
+			\voiceOne r2 r4 \dynEO #'(-1.5 . 2.5) c8_(\p^\markup {Clar.} cis)
+			d2_(_~ d8 c! bes a)
 			g2( d4 d')
 		}
 	}
 	s1*25
 	% bar 92 - 95
-	r4 b''(-\tweak extra-offset #'(-0.5 . 2) \p^\markup {Ob.I.} cis! d~
+	r4 \dynEO #'(-0.5 . 2) b''(\p-\offset X-offset #-3 ^\markup {Ob.I.} cis! d~
 	d) f8.( e16 aes2)~
 	aes2.( g4)(
 	\hideNotes g) s2. \unHideNotes
 	s1*166
 	% bar 262 - 265
-	r4 d,8(^\markup {Ob.} cis g' fis b ais)
+	\oneVoice r4 \stemUp d,8^(^\markup {Ob.} cis g'[ fis] b ais)
 	r8 cis( d cis) r cis( d cis)
-	eis,8(-> fis16) r eis8(-> fis16) r eis8(-> fis16) r eis8(-> fis16) r 
+	eis,8(^> fis16) r eis8(^> fis16) r eis8(^> fis16) r eis8(^> fis16) r 
 	cis'8 r r4 r2
 }
 cueVoiceFlautoIMvtII = \relative c {
 	s2.*26
 	% bar 27 - 28
-	\voiceOne d''2-\tweak X-offset #-4 ^\markup {Vcello Solo.} \tuplet 3/2 4 {d8( e f)}
-	f2-> e8.( d16)
+	\stemUp d''2-\tweak X-offset #-4 ^\markup {Vcello Solo.} \tuplet 3/2 4 {d8( e f)}
+	f2^> e8.( d16)
 	s2.*81
 	% bar 110 - 111
 	\oneVoice <d,, b'>8[(^\markup {Vcello Solo.} g]) <b, g'>([ d)] <b d>([ g)]
 	<<{\InCueContext b2( a4)} \\ {\InCueContext r8 d,( dis2)}>>
 	s2.*29
 	% bar 141 - 142
-	\voiceOne d'2.^\markup {Timpani}\startTrillSpan
+	\voiceOne d'2.\mf^\markup {Timpani}\startTrillSpan
 	d\stopTrillSpan
 }
 cueVoiceFlautoIMvtIII = \relative c {
@@ -50,13 +50,13 @@ cueVoiceFlautoIMvtIII = \relative c {
 	\slashedGrace c'8 c4 g8 e
 	s2*24
 	% bar 45 - 48
-	c'4->^\markup {Viol.I.} dis->
+	cis'4->^\markup {Viol.I.} dis->
 	e8( fis) a16( g fis e)
 	\tuplet 5/4 4 {d( e g fis e)} d8-. cis-.
 	b4. r8
 	s2*123
 	% bar 172 - 176
-	d4^\markup {Viol.I.} d8.( b16)
+	d4-\offset X-offset -5 ^\markup {Viol.I.} d8.( b16)
 	cis8.( a16 b8. g16)
 	a8( c b d)
 	cis!4( d8. b16)
@@ -82,7 +82,7 @@ cueVoiceFlautoIMvtIII = \relative c {
 cueVoiceFlautoIIMvtI = \relative c {
 	s1*74
 	% bar 75 - 78
-	d'''4^\markup {Fl.I.} r8 d d d d r
+	\markEO #'(0 . 2) d'''4_\markup {Fl.I.} r8 d d d d r
 	d4 r8 d d d d r
 	cis4 cis8 d d cis cis r
 	cis4 cis8 d d cis cis r
@@ -93,8 +93,8 @@ cueVoiceFlautoIIMvtI = \relative c {
 	aes2.)( g4) \oneVoice
 	s1*25
 	% bar 120 - 121
-	g8\rest g'16^\markup {Fl.I.} g g8 g,\rest g\rest fis'16 fis fis8 g,\rest
-	g\rest g'16 g g8 g,\rest g\rest fis'16 fis fis8 g,\rest
+	\voiceOne \stemDown r8 g'16-\offset X-offset -4 ^\markup {Fl.I.} g g8 r r fis16 fis fis8 r
+	r g16 g g8 r r fis16 fis fis8 r \oneVoice \stemNeutral
 	s1*46
 	% bar 168 - 169
 	cis2(^\markup {Fl.I. Solo.} fis4 cis8. dis16)
@@ -107,12 +107,12 @@ cueVoiceFlautoIIMvtI = \relative c {
 	s1*20
 	% bar 236 - 239
 	b,8(^\markup {Fl.I.} ais16 b gis2 fis!8 e)
-	dis4( \slashedGrace fis8 e4 dis fisis,)
+	\shape #'((0 . -1)(0 . -0.2)(0 . -0.2)(0 . -1.5)) Slur dis4( \stemOffset #-1.3 \slashedGrace { fis8 } e4 dis fisis,)
 	gis4.^( ais16 b gis4. fis!16 dis
 	gis2) r
 	s1*22
 	% bar 262 - 265
-	r4 d8(^\markup {Ob.} cis g' fis b ais)
+	r4 d8(^\markup {Ob.} cis g'[ fis] b ais)
 	\stemUp r cis( d cis) r cis( d cis) \stemNeutral
 	eis,( fis16) r eis8( fis16) r eis8( fis16) r eis8( fis16) r 
 	\once \stemUp cis'!8 r r4 r2
@@ -134,7 +134,7 @@ cueVoiceFlautoIIMvtII = \relative c {
 	g'2 g16-. bes-. a-. g-. 
 	s2.*17
 	% bar 57
-	des8(^\markup {Vl.I.} ees f ges) g16( aes ees' des)
+	des8(^\markup {Vl.I.} ees f[ ges]) g16( aes ees' des)
 	s2.*61
 	% bar 119
 	g,4(^\markup {Fl.I.} e8 c e d16 c)
@@ -148,9 +148,9 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	\slashedGrace c'8 c4 g8 e \oneVoice
 	s2*63
 	% bar 84 - 86
-	\once \override Staff.OttavaBracket.outside-staff-priority = ##f \ottava #1 cis'4-\tweak X-offset #-4.5 ^\markup {Vl.I.} dis 
+	\once \override Staff.OttavaBracket.outside-staff-priority = ##f cis'4-\tweak X-offset #-4.5 ^\markup {Vl.I.} dis 
 	e8( fis) a16( g fis e)
-	\tuplet 5/4 4 {d( e g fis e)} d8-. cis-. \ottava #0
+	\tuplet 5/4 4 {d( e g fis e)} d8-. cis-. 
 	s2*85
 	% bar 172 - 176
 	d4-\tweak X-offset #-4 ^\markup {Vl.I.} d8.( b16)
@@ -166,7 +166,7 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	s2*82
 	% bar 335 - 337
 	eis'4^\markup {Ob.} eis~->
-	eis8( fis eis fis)
+	eis8([ fis eis fis)]
 	gis4. r8
 	s2*41
 	% bar 379 - 380
@@ -175,13 +175,13 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	s2*44
 	% bar 425 - 428
 	r4 fis,,,^\markup {Vcello Solo.}
-	b \tuplet 3/2 4 {cis8( dis cis)}
+	b \tuplet 3/2 4 {cis8^( dis cis)}
 	\voiceOne b8( dis <dis b'> <fis cis'>)
 	\tuplet 3/2 4 {<b dis>( <cis e> <b dis>} <fis cis'> <b dis>) \oneVoice
 	s2*44
 	% bar 473 - 476
 	\tuplet 3/2 4 {fis'8(-\tweak X-offset #-1 ^\markup {Vcello Solo.} b gis fis dis' cis)}
-	b( fis' e dis)
+	b([ fis' e dis)]
 	b'2\trill
 	b\trill
 }

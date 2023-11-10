@@ -139,7 +139,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	\tempoXoffset #-2 \mmrMinLength #12 R2*3
+	\tempoXoffset #-2 \mmrLength #12 R2*3
 % Bars 141 to 145
 	
 	\mark \default

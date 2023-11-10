@@ -18,7 +18,7 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part01_Flauti.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
@@ -42,7 +42,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Flauti"
 		}
 		instrument = \markup {
 			"Flauti"
@@ -60,17 +60,13 @@
 				\InCueContext \cueVoiceFlautoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameFlautoIMvtI \musicFlautoIMvtI
+				\timeMvtI \nameFlautoIMvtI \musicFlautoIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -88,17 +84,13 @@
 				\InCueContext \cueVoiceFlautoIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameFlautoIMvtII \musicFlautoIMvtII
+				\timeMvtII \nameFlautoIMvtII \musicFlautoIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -116,17 +108,13 @@
 				\InCueContext \cueVoiceFlautoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameFlautoIMvtIII \musicFlautoIMvtIII
+				\timeMvtIII \nameFlautoIMvtIII \musicFlautoIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -144,21 +132,16 @@
 				\InCueContext \cueVoiceFlautoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameFlautoIIMvtI \musicFlautoIIMvtI
+				\timeMvtI \nameFlautoIIMvtI \musicFlautoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\musicPiccoloMvtI
+				\timeMvtI \musicPiccoloMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -176,17 +159,13 @@
 				\InCueContext \cueVoiceFlautoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameFlautoIIMvtII \musicFlautoIIMvtII
+				\timeMvtII \nameFlautoIIMvtII \musicFlautoIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -204,21 +183,16 @@
 				\InCueContext \cueVoiceFlautoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameFlautoIIMvtIII \musicFlautoIIMvtIII
+				\timeMvtIII \nameFlautoIIMvtIII \musicFlautoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\musicPiccoloMvtIII
+				\timeMvtIII \musicPiccoloMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {

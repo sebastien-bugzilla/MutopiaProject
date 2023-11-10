@@ -295,7 +295,7 @@ musicClarinettoIMvtI = \relative c' {
 	e e fis8( a fis d)
 	e2.\> r4\!
 % Bars 271 to 275
-	\mmrMinLength #15 \tempoXoffset #-2 \mmrnDown R1*5
+	\mmrLength #15 \tempoXoffset #-2 \mmrnDown R1*5
 % Bars 276 to 280
 	r8 d-.\p d-. e-. e-. r r4
 	R1

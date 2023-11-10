@@ -55,21 +55,22 @@ musicFlautoIMvtI = \relative c'' {
 	\trillAccidental #sharptrillmark fis^\trill
 	b\trill_\dimmarkup
 	b\trill
-	cis4.\p\<( d16 e cis4 b)
-	a(\f\> b a8 fis4-> e8
+	cis4.\p\<( d16 e cis4 b)\!
+	a(\f\> b a8 fis4-> e8\!
 % Bars 51 to 55
-	e4\!) r r2
-	R1*12
+	e4) r r2
+	R1*4
 % Bars 56 to 60
-	
+	R1
+	\mmrnDown R1*7
 % Bars 61 to 65
 	
 	
 	
 	\ni \mmrPos #-4 R1
-	\mmrPos #-4 R
+	\mmrPos #-7 R
 % Bars 66 to 70
-	\mmrPos #-9 R \no
+	\mmrPos #6 R \no
 	R1*3
 	
 	
@@ -78,7 +79,7 @@ musicFlautoIMvtI = \relative c'' {
 	d) fis(~ fis8 e d b)
 	d2(\! fis,8) r fis'8.( d'16)
 	d4(\f fis8 d a4 fis)
-	a(\< g e4. d8) \mark \default
+	a(\< g e4. d8)\! \mark \default
 	d'4\ff r8 d d-. d-. d-. r
 % Bars 76 to 80
 	d4 r8 d d-. d-. d-. r
@@ -88,23 +89,24 @@ musicFlautoIMvtI = \relative c'' {
 	fis r e(_\dimmarkup\prall d) d r b(\prall a)
 % Bars 81 to 85
 	a r r4 r2
-	R1*10
+	R1*5
 % Bars 86 to 90
 	
+	\mmrLength #14 \mmrnDown R1*5
 % Bars 91 to 95
 	
 	\ni \mmrPos #-2 R1
 	\mmrPos #-2 R
 	\mmrPos #-2 R \no
-	r2 r16 g'\p\<-. g-. g-. g8-. g16-. g-.
+	r2 r16 g'\p\<-. g-. g-. g8-. g16-. g-.\!
 % Bars 96 to 100
-	g8\fz r r4 r16 g-.\p\< g-. g-. g8-. g16-. g-.
+	g8\fz r r4 r16 g-.\p\< g-. g-. g8-. g16-. g-.\!
 	g8\fz r r4 r2
 	R1*3
 	
 	
 % Bars 101 to 105
-	r16 e,\p\<-. e-. dis-. e8-. a-. \tuplet 3/2 4 {a-. a-. c-. } c16-. c-. c-. e-.\!
+	r16 e,\p-\tweak rotation #'(1 -1 0) \<-. e-. dis-. e8-. a-. \tuplet 3/2 4 {a-. a-. c-. } c16-. c-. c-. e-.\!
 	dis8\fz r r4 r2
 	a'4.(\p b16 c a2)
 	d4( c8 b d2)
@@ -153,10 +155,10 @@ musicFlautoIMvtI = \relative c'' {
 	r8 a,(-. cis-. e-. a-.) r r4
 	r8 b,(-. d-. e-. b'-.) r r4
 	r8 a,(-. cis-. e-. a-.) r r4
-	\tempoXoffset #-2 a1
-	d2( e4 fis)
+	<< \tempoXoffset #-2 a1 {s4 s s s\<} >>
+	d2( e4 fis)\!
 % Bars 156 to 160
-	fis2(\dimD\> g4 cis,) \mark \default
+	\hairpinShorten #'(0 . -1) fis2(\dimD\> g4 cis,)\! \mark \default
 	e(\pdimD\> d2) \tuplet 3/2 4 {cis8( ais fis)\!}
 	g4\pp( fis g fis
 	g dis2->\> e4)\!
@@ -211,8 +213,8 @@ musicFlautoIMvtI = \relative c'' {
 	bes'( g e cis bes' g e cis)
 % Bars 201 to 205
 	a'\p\>( g e cis a' g e cis)\!
-	a'16(\pp g a g  a g a g  a g a g  a g a g
-	a g a g  a g a g  a g a g  a g b a)
+	\repeat tremolo 4 {a'16(\pp g} \repeat tremolo 4 {a g}
+	\repeat tremolo 6 {a g}  a16 g b a)
 	d,1\pp~
 	d~
 % Bars 206 to 210
@@ -220,11 +222,11 @@ musicFlautoIMvtI = \relative c'' {
 	d~
 	d8 r r4 r2 \mark \default
 	R1
-	d8\p-. f16-. f-. f8-. aes-. aes-. b!-. b-. d-.
+	d8-\offset X-offset -1.5 \p-. f16-. f-. f8-. aes-. aes-.[ b!-.] b-. d-.
 % Bars 211 to 215
 	c r r4 r2
 	R1
-	d8-.\p\< g16-. g-. g8-. bes-. bes-. d-. d-.\! g-.
+	d8-.\p\< g16-. g-. g8-. bes-. bes-. d-. d-. g-.\!
 	g(\mf a16 bes g4. d8 g4)
 	g8(_\crescmarkup a16 bes g4. des8 g4)
 % Bars 216 to 220
@@ -235,16 +237,16 @@ musicFlautoIMvtI = \relative c'' {
 	
 % Bars 221 to 225
 	
-	\mmrLength #1 R1*2
-	\mark \default
-	\tempoXoffset #1 \mmrLength #3 R1*5
+	R1*2
+	\markXoffset #-0.3 \mark \default
+	\tempoXoffset #1 \mmrLength #18 R1*5
 	
 % Bars 226 to 230
 	
 	
 	
-	gis2(\p\< ais4 b
-	dis2~\fz dis8\> fis e8. dis16\!
+	gis2(\p\< ais4 b\!
+	dis2~\fz dis8\>[ fis e8. dis16]\!
 % Bars 231 to 235
 	cis4)\p \acciaccatura e8 dis4.( cis8) \tuplet 3/2 4 {cis8( b ais)}
 	cis4( b8. cis32 b gis4.) r8
@@ -281,7 +283,7 @@ musicFlautoIMvtI = \relative c'' {
 	R1
 	\ni \mmrPos #-6 R1
 	\mmrPos #-4 R
-	\mmrPos #-6 R
+	\mmrPos #-7 R
 	\mmrPos #-4 R \no
 % Bars 266 to 270
 	R1
@@ -298,20 +300,20 @@ musicFlautoIMvtI = \relative c'' {
 	r8 cis-. cis-. e-. gis-. r r4
 	r8 ais,-. ais-. cis-. fis-. r r4
 % Bars 281 to 285
-	\tempoXoffset #-2 fis1\mf
+	\tempoXoffset #-2 fis1\mf 
 	b2(\< cis4 dis)\!
 	dis2(\> e4 ais,)\! \mark \default
 	cis(\p\> b2 \tuplet 3/2 4 {ais8\! fisis dis)}
 	e4(\pp dis e dis)
 % Bars 286 to 290
-	e(\< bis2->\fz\> cis4)\!
+	\hairpinShorten #'(0 . -0.5) e(\< \hairpinShorten #'(-0.3 . -0.8) bis2->-\offset X-offset 0.5 \fz\> cis4)\!
 	e( dis e dis)
-	e(\< bis2->_\fzmarkup cis4)
+	e(\< \markEO #'(0.5 . 2.3) bis2->_\fzmarkup cis4)\!
 	gis'(\mf fis gis fis)
 	e(_\dimD\> dis e dis)\!
 % Bars 291 to 295
 	d!(_\dimD\> cis d cis)\!
-	d( cis\> c b)\!
+	d( cis!\> c b)\!
 	bes2\pp r
 	R1
 	bes'2(\p ees4 bes8. c16)
@@ -352,16 +354,16 @@ musicFlautoIMvtI = \relative c'' {
 	R1*2
 	
 % Bars 326 to 330
-	r8 b~\<\startTrillSpan b2.
+	r8 b~\<\startTrillSpan \after 2.*5/6 \! b2.
 	gis8\f\stopTrillSpan r r4 r2
 	R1
-	b16\mf b cis dis b4-> ais16 ais gis fis ais4->
+	\dynEO #'(0 . 2) b16\mf b cis dis b4-> ais16 ais gis fis ais4->
 	b16 b cis dis b4-> ais16 ais gis fis ais4->
 % Bars 331 to 335
-	dis8. b16 dis8. b16 dis8. b16 dis8. b16
+	dis8.[ b16 dis8. b16] dis8.[ b16 dis8. b16]
 	dis8 r b4(\p bis cis)
 	dis(\< e eis g!)\!
-	\trillAccidental #sharptrillmark gis1\<\trill
+	\trillAccidental #sharptrillmark \after 1*7/8 \! gis1\<\trill
 	gis8\! r r4 r2
 % Bars 336 to 340
 	R1*5
@@ -376,7 +378,7 @@ musicFlautoIMvtI = \relative c'' {
 	r dis-. dis-. e-.
 	dis-. r dis-. r
 	dis-. r dis-. r
-	dis r r2
+	dis-. r r2
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {b8\f b b} b4 b
 	b2 r
