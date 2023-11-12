@@ -15,7 +15,7 @@ musicOboeIIMvtII = \relative c'' {
 	fis2( d4)
 	g2.
 % Bars 6 to 10
-	\tuplet 5/4 4 {g16( a c b a)} b4 b
+	\tuplet 5/4 4 {g16( a c b a)} b4 b\<
 	ais2.\fz
 	a!4(\> fis2
 	g4)\! r r
@@ -33,7 +33,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 	
 	
-	\tempoXoffset #-1 R2.*3
+	\tempoXoffset #-1 \mmrLength #10 R2.*3
 	
 % Bars 31 to 35
 	
@@ -70,7 +70,7 @@ musicOboeIIMvtII = \relative c'' {
 	
 	ees4(\fz\> c2
 	des4\p) r r
-	ees4(\fz c4.\> a!8)
+	ees4(\fz\> c4. a!8)\!
 % Bars 61 to 65
 	a8.\p( gis16) r8 a16( gis) r8 a16( gis)
 	r8 aes16( g!) r8 aes16( g) r8 aes16( g)
@@ -85,14 +85,14 @@ musicOboeIIMvtII = \relative c'' {
 	
 % Bars 71 to 75
 	
-	r4 r fis8.(\brack\p e16
+	r4 r fis8.(-\offset X-offset -2 \brack\p e16
 	d4.)\< g8(\! fis e)
 	fis(\mf\< d' \tuplet 3/2 4 {g8 fis\> d)} b16( a) a( g)\!
 	g4(_\dimmarkup a8) r r4
 % Bars 76 to 80
 	R2.*2
 	
-	r4 cis,2\pp
+	r4 cis,2-\offset X-offset 0.5 \pp
 	\acciaccatura {d32 e} fis2 r4
 	R2.*3
 % Bars 81 to 85
@@ -104,14 +104,14 @@ musicOboeIIMvtII = \relative c'' {
 % Bars 86 to 90
 	e'4\p\<( des e,)\!
 	f8 r r4 r
-	R2.*7
+	R2.*6
 	
 	
 % Bars 91 to 95
 	
 	
 	
-	\mark \default
+	\mmrLength #10 R2. \mark \default
 	R2.*11
 % Bars 96 to 100
 	
@@ -119,18 +119,26 @@ musicOboeIIMvtII = \relative c'' {
 	
 % Bars 106 to 110
 	\once \ni R2.\fermata
-	R2.*21
+	R2.*13
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
+	
+	
+	
+	\mmrnDown \tempoXoffset #-1 R2.*4
 % Bars 121 to 125
+	
+	
+	
+	\mmrnDown \tempoXoffset #-1 R2.*4
 	
 % Bars 126 to 130
 	
 	
 	\once \ni R2.\fermata \mark \default
-	\ni \mmrPos #-4 R2.
+	\ni \tempoXoffset #0.5 \mmrPos #-4 R2.
 	\mmrPos #-4 R \no
 % Bars 131 to 135
 	b2(\p d4)

@@ -147,7 +147,7 @@ musicOboeIMvtIII = \relative c' {
 	\partCombineApart g,16_\p( a b a g8_\> e
 	cis fis4.)\!
 % Bars 131 to 135
-	eis2(
+	eis2(_\p
 	fis)~
 	fis~_\>
 	fis\!

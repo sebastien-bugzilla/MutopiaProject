@@ -341,19 +341,19 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 87
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'(  oboeI  clarinettoI clarinettoII fagottoI 
 	fagottoII cornoI cornoII tromboneI tromboneII tromboneIII timpani 
 	triangolo solocello violinoI violinoII viola violoncello contrabasso) {
 		\tempo \markup { \medium \italic "quasi improvisando" }
 	}
-	\tag #'(cornoIII trombaI trombaII tuba) {
+	\tag #'(oboeII cornoIII trombaI trombaII tuba) {
 		\tempo \markup {
 			\medium \italic \center-column {
 				\lower #1 "quasi" "improvisando"
 			}
 		}
 	}
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII ) {
 		\tempo \markup {
 			\medium \italic \center-column {
 				\lower #1 "quasi im-" "provisando"
@@ -761,12 +761,12 @@ tempiPartMvtII = {
 	\tag #'(flautoI flautoII) {
 		\tempo "Un poco più animato."
 	}
-	\tag #'(oboeI oboeII clarinettoI clarinettoII fagottoI fagottoII cornoI 
+	\tag #'( oboeII clarinettoI clarinettoII fagottoI fagottoII cornoI 
 	trombaI trombaII tromboneII tromboneIII triangolo solocello violinoI 
 	violinoII viola violoncello contrabasso) {
 		\tempo \markup { \medium \italic "un poco più animato"}
 	}
-	\tag #'(cornoII cornoIII tromboneI tuba timpani) {
+	\tag #'(oboeI cornoII cornoIII tromboneI tuba timpani) {
 		\tempo \markup {
 			\medium \italic \center-column {
 				\lower #1 "un poco più" "animato"
@@ -809,7 +809,7 @@ tempiPartMvtII = {
 	\tag #'(flautoI) {
 		\tempo "Un poco più animato."
 	}
-	\tag #'(oboeI oboeII clarinettoI fagottoI fagottoII cornoI cornoII cornoIII 
+	\tag #'( oboeII clarinettoI fagottoI fagottoII cornoI cornoII cornoIII 
 	tromboneI tromboneIII timpani triangolo solocello violinoI violinoII viola 
 	violoncello contrabasso) {
 		\tempo \markup { \medium \italic "un poco più animato" }
@@ -824,7 +824,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(trombaI trombaII tromboneII tuba) {
+	\tag #'(oboeI trombaI trombaII tromboneII tuba) {
 		\tempo \markup {
 			\medium \italic \center-column {
 				\lower #1 "un poco più" "animato"
@@ -1015,11 +1015,11 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 172
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI fagottoI fagottoII cornoI 
+	\tag #'(flautoI flautoII oboeI  clarinettoI fagottoI fagottoII cornoI 
 	solocello violinoII viola violoncello contrabasso) {
 		\tempo \markup { \medium \italic "poco a poco accel." }
 	}
-	\tag #'(clarinettoII cornoII cornoIII trombaI trombaII tromboneI tromboneII 
+	\tag #'(oboeII clarinettoII cornoII cornoIII trombaI trombaII tromboneI tromboneII 
 	tromboneIII tuba timpani triangolo violinoI) {
 		\tempo \markup { 
 			\medium \italic \center-column { 
@@ -1479,12 +1479,12 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 506
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII clarinettoII fagottoI fagottoII cornoI 
+	\tag #'(  oboeI  clarinettoII fagottoI fagottoII cornoI 
 	cornoII cornoIII trombaI trombaII tromboneI tromboneII tromboneIII tuba 
 	timpani triangolo solocello violinoII viola violoncello contrabasso) {
 		\tempo \markup { \medium \italic "molto accel." }
 	}
-	\tag #'(flautoI flautoII clarinettoI violinoI) {
+	\tag #'(flautoI flautoII oboeII clarinettoI violinoI ) {
 		\tempo \markup { \medium \italic 
 			\column { \lower #1 "molto" "accel." }
 		}

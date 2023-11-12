@@ -54,6 +54,9 @@
 		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
 		\override FootnoteItem.annotation-line = ##f
+		
+%		\override MetronomeMark.transparent = ##t
+
 	}
 }
 

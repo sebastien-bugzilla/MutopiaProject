@@ -629,6 +629,13 @@ tempoEO = #(define-music-function
 	#}
 )
 
+markWhiteout = {
+	\once \override Score.RehearsalMark.layer = #3
+	\once \override Score.RehearsalMark.whiteout = #0.75
+	\once \override Score.RehearsalMark.whiteout-style = #'outline
+}
+
+
 
 % footnotes:
 footnotePageII = \markup {
@@ -872,12 +879,6 @@ footnotePageX = \markup {
 %%	\override Stem.length = #7
 %%	\override Beam.length = #7
 %	\unset fontSize
-%}
-
-%markWhiteout = {
-%	\once \override Score.RehearsalMark.layer = #3
-%	\once \override Score.RehearsalMark.whiteout = #0.75
-%	\once \override Score.RehearsalMark.whiteout-style = #'outline
 %}
 
 %mmrPos = #(define-music-function

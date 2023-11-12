@@ -226,7 +226,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 211 to 215
 	c r r4 r2 \partCombineAutomatic
 	R1
-	\partCombineApart r4 r8 d-._\p d-.[ bes'-. bes-.] r
+	\partCombineApart r4 r8 d-._\p_\< d-.[ bes'-. bes-.]\! r
 	g8( a16 bes g4. d8 g4)
 	g8( a16 bes g4. des8 g4) \partCombineAutomatic
 % Bars 216 to 220

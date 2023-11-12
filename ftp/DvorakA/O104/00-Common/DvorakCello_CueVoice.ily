@@ -216,8 +216,8 @@ cueVoiceOboeIMvtI = \relative c {
 	}
 	s1*82
 	% bar 236 - 239
-	b'''8(^\markup {Fl.I.} ais16 b gis2 fis8 e)
-	dis4( \acciaccatura fis8 e4 dis fisis,)
+	b'''8(-\offset X-offset -4 ^\markup {Fl.I.} ais16 b gis2 fis8 e)
+	\shape #'((0 . -1)(0 . -0.2)(0 . -0.2)(0 . -1.5)) Slur dis4( \acciaccatura fis8 e4 dis fisis,)
 	gis4.^( ais16 b gis4. fis!16 dis
 	gis2) r
 	s1*37
@@ -235,10 +235,10 @@ cueVoiceOboeIMvtII = \relative c {
 	g4.( fis8 e4)
 	d8( dis e f fis4)
 	s2.*90
-	% bar 129 - 130
+	% bar 129 - 130 (no need to transpose for thus cue)
 	<<{
-		\InCueContext d'4(_\markup {Clar.} g f)
-		f16( e e8~ e2)
+		\InCueContext d'4(_\markup {Clar.} g fis)
+		fis16( e e8~ e2)
 	} \\ {
 		\InCueContext b2( d4)
 		d16( c c8~ c2)
@@ -256,8 +256,8 @@ cueVoiceOboeIMvtIII = \relative c {
 	% bar 273 - 276
 	fis,4\repeatTie^\markup {Viol.I.} eis(
 	e!) d~
-	d8( c e g)
-	b4( a)
+	d8([ c e g)]
+	\once \stemUp b4( a)
 	s2*42
 	% bar 319 - 322
 	b'8(-\tweak X-offset #-3.5 ^\markup {Fl.I.} d16 cis b8 fis)
@@ -289,11 +289,11 @@ cueVoiceOboeIIMvtI = \relative c {
 	r8 a, cis e a r r4
 	s1*56
 	% bar 210 - 211
-	d,,8^\markup {Ob.I.} f16 f f8 aes \stemUp aes b b d \stemNeutral
+	d,,8^\markup {Ob.I.} f16 f f8 aes aes[ b] b d
 	c r r4 r2
 	s1
 	% bar 213
-	r4 r8 d d aes' aes r
+	r4 r8 d d bes' bes r
 	s1*40
 	% bar 254 - 256
 	\once \stemDown a,4(^\markup {Ob.I.} d2 e8 fis)
@@ -310,11 +310,11 @@ cueVoiceOboeIIMvtI = \relative c {
 cueVoiceOboeIIMvtII = \relative c {
 	s2.*33
 	% bar 34
-	c'''8(\trill-\tweak X-offset #-2.3 ^\markup {Fl.} e,!16) r g!8(\trill c,16) r b8.(\fermata a16)
+	c'''8(\trill-\tweak X-offset #-3 ^\markup {Fl.} e,!16) r g!8(\trill c,16) r b8.(\fermata a16)
 	s2.*94
 	% bar 129 - 130
 	<<{
-		\InCueContext d4(^\markup {Clar.} g fis)
+		\InCueContext d4(_\markup {Clar.} g fis)
 		fis16( e e8)~ e2
 	} \\ {
 		\InCueContext b2( d4)
@@ -343,7 +343,7 @@ cueVoiceOboeIIMvtIII = \relative c {
 	% bar 155 - 158
 	r8-\tweak X-offset #-6 ^\markup {Vcello Solo.} a,,8( bes16 d c bes)
 	r8 a( bes16 d c bes)
-	r8 a( cis! fis!)
+	r8 a([ cis! fis!)]
 	e( d4) r8
 	s2*91
 	% bar 250 - 252

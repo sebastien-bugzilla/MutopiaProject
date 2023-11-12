@@ -49,32 +49,32 @@ namePiccoloMvtIII = {
 %###############################################################################
 nameOboeIMvtI = {
 	\set Staff.instrumentName = "Oboe I"
-	\set Staff.shortInstrumentName = "Ob. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"oboe"
 }
 nameOboeIMvtII = {
 	\set Staff.instrumentName = "Oboe I"
-	\set Staff.shortInstrumentName = "Ob. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"oboe"
 }
 nameOboeIMvtIII = {
 	\set Staff.instrumentName = "Oboe I"
-	\set Staff.shortInstrumentName = "Ob. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"oboe"
 }
 nameOboeIIMvtI = {
 	\set Staff.instrumentName = "Oboe II"
-	\set Staff.shortInstrumentName = "Ob. II"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"oboe"
 }
 nameOboeIIMvtII = {
 	\set Staff.instrumentName = "Oboe II"
-	\set Staff.shortInstrumentName = "Ob. II"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"oboe"
 }
 nameOboeIIMvtIII = {
 	\set Staff.instrumentName = "Oboe II"
-	\set Staff.shortInstrumentName = "Ob. II"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"oboe"
 }
 %###############################################################################

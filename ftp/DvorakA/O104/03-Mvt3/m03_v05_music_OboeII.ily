@@ -113,13 +113,13 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	fis,16-.\p\< fis-. b-. d-. fis8-.\fz d-.
+	fis,16-.\p\< fis-. b-. d-.\! fis8-.\fz d-.
 % Bars 116 to 120
 	R2*4
 	
 	
 	
-	a16-.\p\< a-. cis-. fis-. a8-.\fz fis-.
+	\hairpinShorten #'(0 . 0.5) a16-.\p\< a-. cis-. fis-.\! a8-.\fz fis-.
 % Bars 121 to 125
 	R2*14
 	
@@ -159,7 +159,7 @@ musicOboeIIMvtIII = \relative c'' {
 	e,4(\p\> fis\!
 	g8 e fis4)
 % Bars 161 to 165
-	g8( e g fis
+	g8([ e g fis]
 	e dis e4)
 	e(\pp fis)
 	g8( e fis4)
@@ -169,11 +169,11 @@ musicOboeIIMvtIII = \relative c'' {
 	R2*5
 % Bars 171 to 175
 	
-	\tempoXoffset #-3 R2*5
+	\tempoXoffset #-3 \mmrLength #17 R2*5
 % Bars 176 to 180
 	
-	\tempoOsp r8 d(\pp b'4)
-	r8 d,( b'4)
+	\tempoOsp r8 d(\pp \once \stemUp b'4)
+	r8 d,( \once \stemUp b'4)
 	r8 fis( d'4)
 	r8 fis,( d'4)
 % Bars 181 to 185
@@ -187,8 +187,8 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 191 to 195
 	
 	
-	r8 \hairpinLength #6 a-\tweak X-offset #-1 \p\<( bes4)->-\tweak X-offset #1 \fz
-	r8 a(\< bes4)\fz->
+	r8 a-\tweak X-offset #-1 \p\<( \once \stemUp bes4)->-\tweak X-offset #1 \fz
+	r8 a(\< \once \stemUp bes4)\fz->
 	a8 r r4
 % Bars 196 to 200
 	R2*4
@@ -281,12 +281,12 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 296 to 300
 	\mmrPos #-4 R \no \cueClefUnset
 	\tuplet 3/2 4 {d,8\p d d d d d
-	d d d d d d
-	g g g g g g
-	g g g g g g
+	d4.:8 d:
+	g: g:
+	g: g:
 % Bars 301 to 305
-	g g g g\< g g
-	g g g fis fis e}
+	g: g:\< 
+	g: fis8 fis e\!}
 	g2(\p
 	fis)
 	g(
@@ -333,7 +333,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 346 to 350
 	d4) bes16( c d bes)\! \bar "||" \key b \major
 	\tempoXoffset #-4.3 dis!4 r
-	R2*17
+	\mmrnDown R2*15
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -341,7 +341,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 361 to 365
 	
 	
-	
+	R2*2
 	
 	dis4(\mp \tuplet 3/2 4 {e8 dis cis_\crescmarkup)}
 % Bars 366 to 370
@@ -400,7 +400,7 @@ musicOboeIIMvtIII = \relative c'' {
 	dis~\pp
 % Bars 436 to 440
 	dis4. r8
-	\tempoXoffset #-2.5 R2*7
+	\tempoXoffset #-2.5 \mmrLength #22 R2*7
 % Bars 441 to 445
 	
 	
@@ -423,7 +423,7 @@ musicOboeIIMvtIII = \relative c'' {
 	\mmrPos #-4 R \cueClefUnset \no
 % Bars 461 to 465
 	dis,2\pp\<~
-	dis
+	dis\!
 	e\>~
 	e(
 	dis4.)\pp r8
@@ -466,14 +466,14 @@ musicOboeIIMvtIII = \relative c'' {
 	cis
 	dis2-^
 % Bars 506 to 510
-	R2
+	\mmrnDown R2
 	dis-^\ff
 	R2
 	dis8[\ff r16 dis dis8 r16 dis]
 	dis8[ r16 dis dis8 r16 dis]
 % Bars 511 to 515
-	cis8-. b-. cis-. b-. 
-	e-. d-. g-. fis-. 
+	cis8-.[ b-. cis-. b-.] 
+	e-.[ d-. g-. fis-.] 
 	dis!-. r r4
 	dis8 r dis r
 	dis b,4-^ b8-.

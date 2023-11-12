@@ -77,13 +77,13 @@ musicOboeIMvtI = \relative c'' {
 	\mmrPos #-4 R
 % Bars 66 to 70
 	\mmrPos #4 R \no
-	r2 r4 e(\mp\<
-	a e\> cis b~\!
+	r2 r4 \hairpinShorten #'(-0.5 . -0.5) e(\mp\<
+	a\! e\> cis b~\!
 	b) r r e(\<
 	a\! e cis a)
 % Bars 71 to 75
-	a2( ais4 b)
-	b2\< fis4(~ fis8. d'16)\!
+	a2( ais4 \stemUp b)
+	b2\< \stemNeutral fis4(~ fis8. d'16)\!
 	d4(\f fis8 d a2)~
 	a1\< \mark \default
 	a'4\ff r8 a b-. a-. a-. r
@@ -101,8 +101,8 @@ musicOboeIMvtI = \relative c'' {
 	R1*4
 % Bars 91 to 95
 	
-	r4 b'(\p cis d~
-	d) f8.(\< e16 aes2~
+	r4 b'(\p cis! d~
+	d) f8.(\< e16 aes2~\!
 	aes2.\f\> g4~
 	g)\! r r2
 % Bars 96 to 100
@@ -126,20 +126,20 @@ musicOboeIMvtI = \relative c'' {
 	r4 r8 c'16\f\< c c8 c c4\fz->\>~
 	c8\! r r4 r2
 % Bars 116 to 120
-	r4 r8 c16\f\< c c8 c c4->\>~
+	r4 r8 c16\f\< c c8 c\! c4->\>~
 	c8\! r r4 r2
-	r4 r8 b16\f\< b b8 b b4->\>~
-	b8\! r r4 r2
+	r4 r8 b16\f\< b b8 b\! b4->-\alterBroken shorten-pair #'(()(0 . 1.5)) \>~
+	b8 r\! r4 r2
 	r8 g16\mf g g8 r r fis16 fis fis8 r
 % Bars 121 to 125
 	r8 g16_\crescmarkup g g8 r r fis16 fis fis8 r
 	R1*2
 	
-	r8. b16(\f cis8)[ r16 fis,]( a8)[ r16 e]( fis8)[ r16 b,](
+	r8. b16(\f cis8)[ r16 fis,]( a!8)[ r16 e]( fis8)[ r16 b,](
 	d8) r r4 r2
 % Bars 126 to 130
 	fis8\f r r4 r2
-	r8 fis,16(\f\< g gis a ais b cis d dis e eis fis g! fis)\! \mark \default
+	r8 fis,16(\f\< g! gis a ais b cis d dis e eis fis g! fis)\! \mark \default
 	g8\f->( fis16) r g8(\brack\p fis16) r g8( fis16) r g8( fis16) r 
 	a8->\f( g16) r a8(\brack\p g16) r a8( g16) r a8( g16) r 
 	g8\f( fis16) r g8(\brack\p fis16) r g8( fis16) r g8( fis16) r 
@@ -148,7 +148,7 @@ musicOboeIMvtI = \relative c'' {
 	b!4\f r r2
 	R1
 	g4.(\fp^\solo a16 b g4\> fis)
-	e( d b a)
+	e( d b a)\!
 % Bars 136 to 140
 	g\pp r r2
 	R1
@@ -168,10 +168,10 @@ musicOboeIMvtI = \relative c'' {
 	\mmrPos #-6 R
 	\mmrPos #-4 R \no
 	a1\p
-	d2( e4 fis)
+	d2(\< e4 fis)\!
 % Bars 156 to 160
-	fis2_\dimD\>( g4 cis,) \mark \default
-	\tempoXoffset #1 e4(_\pdimD\> d2 cis4)
+	fis2_\dimD\>( g4 cis,)\! \mark \default
+	\tempoXoffset #1 e4(_\pdimD\> d2 cis4)\!
 	b(\pp ais b ais
 	b fis2->\> g4)\!
 	b4( ais b ais)
@@ -186,7 +186,7 @@ musicOboeIMvtI = \relative c'' {
 	ais( gis fis gis)
 	R1*2
 	
-	e'!16-.\p e-. e-. e-. r8. e16-.\< fis-. fis-. fis-. fis-.\! r8. fis16-.\<
+	e'16-.\p e-. e-. e-. r8. e16-.\< fis-. fis-. fis-. fis-.\! r8. fis16-.\<
 % Bars 171 to 175
 	fis-. fis-. fis-. fis-.\! r8. fis16\< g!-. g-. g-. g-.\! r4
 	a8\f r r4 r2
@@ -220,7 +220,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 196 to 200
 	d-^
 	dis-^
-	e4._\dimmarkup fis16\> gis e2(
+	e4._\dimD\> fis16 gis e2(
 	bes'8\fz g! e cis bes_\dimmarkup g e cis)
 	bes'( g e cis bes' g e cis)
 % Bars 201 to 205
@@ -231,24 +231,24 @@ musicOboeIMvtI = \relative c'' {
 	
 	\mark \default
 	R1
-	d8\p-. f16-. f-. f8-. aes-. aes-. b!-. b-. d-.
+	d8\p-. f16-. f-. f8-. aes-. aes-.[ b!-.] b-. d-.
 % Bars 211 to 215
 	c r r4 r2
 	R1
-	r4 r8 d-.\p d-. bes'-. bes-. r
-	g8( a16 bes g4. d8 g4)
-	g8(^\crescmarkup a16 bes g4. des8 g4)
+	r4 r8 d-.\p\< d-. bes'-. bes-.\! r
+	g8(\mf a16 bes g4. d8 g4)
+	g8(_\crescmarkup a16 bes g4. des8 g4)
 % Bars 216 to 220
 	g1\f
 	ees4( ces2.)
 	ees4(\< ces'2 bes4)\!
-	aes(-\dimmarkup ges8.\> fes16 fes4 d!\!
+	aes(_\dimD\> ges8. fes16 fes4 d!\!
 	ees) r r2
 % Bars 221 to 225
 	R1
-	\tempoXoffset #-2 \mmrLength #2.5 R1*2
+	\tempoXoffset #-1 \mmrLength #11 R1*2
 	\mark \default
-	\mmrLength #2.7 \tempoXoffset #0.5 R1*12
+	\mmrLength #20 \tempoXoffset #0.5 R1*12
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -269,7 +269,7 @@ musicOboeIMvtI = \relative c'' {
 	gis1~
 	gis4 r  r r8 gis\p \mark \default
 	gis2.( ais8 b)
-	b4( ais2) ais4
+	\once \stemUp b4( ais2) ais4
 	b2.(_\crescmarkup cis8 d!)
 % Bars 251 to 255
 	d4(\< cis2) cis4
@@ -285,7 +285,7 @@ musicOboeIMvtI = \relative c'' {
 	\mark \default
 % Bars 261 to 265
 	R1
-	r4 d,8(\mf cis\< g'! fis b\! ais)
+	r4 d,!8(\mf cis\< g'![ fis] b\! ais)
 	r cis(\f\< d! cis)\! r cis(\< d cis)\!
 	eis,8\fz->( fis16) r eis8->( fis16) r eis8(-> fis16) r eis8->( fis16) r
 	cis'8\brack\f r r4 r2
@@ -310,13 +310,13 @@ musicOboeIMvtI = \relative c'' {
 	\tempoXoffset #2 cis(\p\> b2 ais4)\!
 	\tempoXoffset #1 gis(\pp fisis gis fisis)
 % Bars 286 to 290
-	gis(\< dis2->\fz\> e4\!)
+	gis(\< dis2^>\fz\> e4\!)
 	gis( fisis gis fisis)
 	gis^(\< dis2^>_\fzmarkup e4)\!
-	b'(\mf ais b ais)
+	\stemUp b'(\mf ais b ais) \stemNeutral
 	gis(_\dimD\> fisis gis fisis)\!
 % Bars 291 to 295
-	fis(_\dimD\> eis fis eis)\!
+	fis!(_\dimD\> eis fis eis)\!
 	fis1\>
 	bes2\pp(^\solo ees4 bes8. c16)
 	g8.( ees16 \once \stemUp bes'2.)
@@ -325,7 +325,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	cis!16-.\p cis-. cis-. cis-. r8. cis16-. dis\<-. dis-. dis-. dis-.\! r8. dis16-.
 	dis-._\crescmarkup dis-. dis-. dis-. r8. dis16-.\< e-. e-. e-. e-.\! r4
-	a8\fz r r4 r2
+	a!8\fz r r4 r2
 	g!8\fz r r4 r2
 % Bars 301 to 305
 	gis8\f r r4 r2
@@ -340,7 +340,7 @@ musicOboeIMvtI = \relative c'' {
 	fis'8.( e16 gis,4)_\crescmarkup gis'8.( fis16 ais,4)
 	g'!8\f r r4 r2
 % Bars 311 to 315
-	r2 r4 \tuplet 3/2 4 {g,!8\f\< b d}
+	r2 r4 \tuplet 3/2 4 {g,!8-\offset X-offset -1.5 \f\< b d}
 	g2\! gis4-. a-.
 	ais8 r r4 r2
 	r8 ais\fz r4 r2
@@ -361,14 +361,14 @@ musicOboeIMvtI = \relative c'' {
 	dis1)\<
 	e8\f r r4 r2
 	R1
-	\tuplet 3/2 4 {fis8\mf fis fis} fis4 \tuplet 3/2 4 {fis8 fis fis} fis4 
+	\tuplet 3/2 4 {\once \tupletUp fis8\mf fis fis} fis4 \tuplet 3/2 4 {fis8 fis fis} fis4 
 	\tuplet 3/2 4 {fis8 fis fis} fis4 \tuplet 3/2 4 {fis8 fis fis} fis4 
 % Bars 331 to 335
 	dis8( e16 fis dis8 e16 fis dis8 e16 fis dis8 e16 fis)
 	dis8 r fis2(\p e4)
 	a!(\< g! b! bes)\!
-	\trillAccidental \naturaltrillmark f1\trill\<
-	f8\! r r4 r2
+	\trillAccidental \naturaltrillmark \after 1*7/8 \! f1\trill\<
+	f8 r r4 r2
 % Bars 336 to 340
 	R1*5
 % Bars 341 to 345
@@ -386,6 +386,6 @@ musicOboeIMvtI = \relative c'' {
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {b8\f b b } b4 b
 	b2 dis,,4. dis8
-	dis1\<
+	\after 1*7/8 \! dis1\<
 	b4\ff r r2 \markupfermata \bar "|."
 }

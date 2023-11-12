@@ -15,7 +15,7 @@ musicOboeIIMvtII = \relative c'' {
 	fis2( d4)
 	g2.
 % Bars 6 to 10
-	\tuplet 5/4 4 {g16^( a c b a)} b4 b
+	\tuplet 5/4 4 {g16^( a c b a)} b4 \hairpinShorten #'(0.5 . 0) \after 4*7/8 \! b\<
 	ais2.-\tweak X-offset #0.3 \fz
 	\shape #'((0 . 1)(0 . 1)(0 . 1)(0 . 1)) Slur a!4(^\> fis2
 	g4)\! r r

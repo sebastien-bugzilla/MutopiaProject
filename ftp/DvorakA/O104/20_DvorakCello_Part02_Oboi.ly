@@ -18,7 +18,7 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part02_Oboi.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
@@ -40,7 +40,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Oboi"
 		}
 		instrument = \markup {
 			"Oboi"
@@ -58,17 +58,13 @@
 				\InCueContext \cueVoiceOboeIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameOboeIMvtI \musicOboeIMvtI
+				\timeMvtI \nameOboeIMvtI \musicOboeIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -86,17 +82,13 @@
 				\InCueContext \cueVoiceOboeIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameOboeIMvtII \musicOboeIMvtII
+				\timeMvtII \nameOboeIMvtII \musicOboeIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -114,17 +106,13 @@
 				\InCueContext \cueVoiceOboeIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameOboeIMvtIII \musicOboeIMvtIII
+				\timeMvtIII \nameOboeIMvtIII \musicOboeIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Finale.}
 			}
 		}
 		\layout {
@@ -142,17 +130,13 @@
 				\InCueContext \cueVoiceOboeIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameOboeIIMvtI \musicOboeIIMvtI
+				\timeMvtI \nameOboeIIMvtI \musicOboeIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -170,17 +154,13 @@
 				\InCueContext \cueVoiceOboeIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameOboeIIMvtII \musicOboeIIMvtII
+				\timeMvtII \nameOboeIIMvtII \musicOboeIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2 \bold 2.
 			}
 		}
 		\layout {
@@ -198,17 +178,13 @@
 				\InCueContext \cueVoiceOboeIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameOboeIIMvtIII \musicOboeIIMvtIII
+				\timeMvtIII \nameOboeIIMvtIII \musicOboeIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Finale.}
 			}
 		}
 		\layout {

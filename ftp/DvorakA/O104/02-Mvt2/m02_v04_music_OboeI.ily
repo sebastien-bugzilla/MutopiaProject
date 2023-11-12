@@ -29,11 +29,11 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	
-	\tempoXoffset #-1 R2.*3
+	\tempoXoffset #-1 \mmrLength #12 R2.*3
 	
 % Bars 31 to 35
 	
-	\tempoXoffset #-1 R2.*2
+	\tempoXoffset #-1 \mmrLength #10 R2.*2
 	
 	\once \ni R2.\fermata \mark \default
 	\ni \mmrPos #4 R2.
@@ -62,7 +62,7 @@ musicOboeIMvtII = \relative c'' {
 	f2.
 	bes,4.(\< ees4 e8)\!
 % Bars 56 to 60
-	f4( ges8\> f f ees
+	f4( ges8\>[ f] f ees
 	des4)\! r r 
 	ges(\fz\> ees2
 	f4\p) r r
@@ -70,7 +70,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 61 to 65
 	f4\p r r
 	R2.
-	\tempoXoffset #-1 R2.*2
+	\tempoXoffset #-1 \mmrLength #11 R2.*2
 	\bar "||" \key g \major \mark \default
 	b,2\ff b16-^ d-^ cis-^ b-^
 % Bars 66 to 70
@@ -83,7 +83,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	r4 r fis8.(\brack\p e16
 	d4.)\< g'8(\! fis e)
-	fis4(-\tweak X-offset #-3 \mf\< \tuplet 3/2 4 {b8 a\> fis)} g16( fis) fis( e)\!
+	fis4(-\tweak X-offset #-3 \mf\< \tuplet 3/2 4 {b8 a fis\!)} g16(\> fis) fis( e)\!
 	e4(_\dimD\> d8 a~ a4)
 % Bars 76 to 80
 	fis'4.(\p e8 d cis
@@ -93,8 +93,8 @@ musicOboeIMvtII = \relative c'' {
 	a'4.\< g16 a f a e a)\!
 % Bars 81 to 85
 	d,4.( g4_\crescmarkup gis!8)
-	a4(\< bes)\! a8.( g!16 \markYoffset #5 \mark \default
-	f8) r r4 r
+	a4(\< bes)\! a8.( g!16 \markWhiteout \mark \default
+	\tempoEO #'(0 . -0.5) f8) r r4 r
 	bes4\p\<( e,! g,\!
 	a8) r r4 r
 % Bars 86 to 90
@@ -105,9 +105,9 @@ musicOboeIMvtII = \relative c'' {
 	r8 gis16(\pp fis!) r8 gis16( fis) r8 g16( fis)
 % Bars 91 to 95
 	r8 fis16(\< e) r8 e16( d) r8 d16( c)\!
-	R2.*3
+	R2.*2
 	
-	\mark \default
+	\mmrLength #10 R2. \mark \default
 	R2.*11
 % Bars 96 to 100
 	
@@ -115,19 +115,27 @@ musicOboeIMvtII = \relative c'' {
 	
 % Bars 106 to 110
 	\once \ni R2.\fermata
-	R2.*21
+	R2.*13
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
+	
+	
+	
+	\mmrnDown R2.*4
 % Bars 121 to 125
+	
+	
+	
+	\mmrnDown R2.*4
 	
 % Bars 126 to 130
 	
 	
 	\once \ni R2.\fermata \mark \default
-	\ni \mmrPos #-4 R2.
-	\mmrPos #-8 R \no
+	\tempoXoffset #0.5 \ni \mmrPos #-4 R2.
+	\mmrPos #-7 R \no
 % Bars 131 to 135
 	d'4(\p g fis)
 	fis16( e) e8~ e2(
