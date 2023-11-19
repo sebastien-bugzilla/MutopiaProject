@@ -393,7 +393,7 @@ cueVoiceClarinettoIMvtI = \relative c {
 	% bar 245 - 247
 	\transpose a c {
 		\relative {
-			dis'''4.(-\tweak X-offset #-4 ^\markup {Ob.I.} fis16 e dis4 fisis,)
+			dis'''4.(-\tweak X-offset #-5 ^\markup {Ob.I.} fis16 e dis4 fisis,)
 			gis1^~
 			gis4 r r2
 		}
@@ -446,17 +446,25 @@ cueVoiceClarinettoIIMvtII = \relative c {
 	% bar 120 - 121
 	\transpose a c {
 		\relative {
-			d''4~-\tweak X-offset #-5 ^\markup {\center-column { \lower #1.5 "Vcello" "Solo."} } d16 d( e d d,4)~
+			d''4~-\tweak X-offset #-4.5 ^\markup {\center-column { \lower #1.5 "Vcello" "Solo."} } d16 d( e d d,4)~
 			d16 d( e d d,4)~ d16 d'( e d)
 		}
 	}
 }
 cueVoiceClarinettoIIMvtIII = \relative c {
-	s2*83
+	s2*64
+	% bar 65 - 66
+	\transpose a c {
+		\relative {
+			cis'''8^\markup {Viol.I.} fis, e' cis
+			cis fis, e' cis
+		}
+	}
+	s2*17
 	% bar 84 - 86
 	\transpose a c {
 		\relative {
-			\once \override Staff.OttavaBracket.shorten-pair = #'(0 . 0.2) \ottava #1 cis''''4^\markup {Viol.I.} d
+			\ottava #1 cis''''4^\markup {Viol.I.} d
 			e8( fis) a16( g fis e)
 			\tuplet 5/4 4 {d16( e g fis e)} d8 cis \ottava #0
 		}

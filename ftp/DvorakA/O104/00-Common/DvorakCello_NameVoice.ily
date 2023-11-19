@@ -86,11 +86,7 @@ nameClarinettoIMvtI = {
 			\lower #1 "Clarinetto I" "in A"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cl. I" "in A"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"clarinet"
 }
 nameClarinettoIMvtII = {
@@ -99,11 +95,7 @@ nameClarinettoIMvtII = {
 			\lower #1 "Clarinetto I" "in A"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cl. I" "in A"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"clarinet"
 }
 nameClarinettoIMvtIII = {
@@ -112,11 +104,7 @@ nameClarinettoIMvtIII = {
 			\lower #1 "Clarinetto I" "in A"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cl. I" "in A"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"clarinet"
 }
 nameClarinettoIIMvtI = {
@@ -125,11 +113,7 @@ nameClarinettoIIMvtI = {
 			\lower #1 "Clarinetto II" "in A"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cl. II" "in A"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"clarinet"
 }
 nameClarinettoIIMvtII = {
@@ -138,11 +122,7 @@ nameClarinettoIIMvtII = {
 			\lower #1 "Clarinetto II" "in A"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cl. II" "in A"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"clarinet"
 }
 nameClarinettoIIMvtIII = {
@@ -151,11 +131,7 @@ nameClarinettoIIMvtIII = {
 			\lower #1 "Clarinetto II" "in A"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Cl. II" "in A"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"clarinet"
 }
 %###############################################################################

@@ -18,10 +18,9 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part03_Clarinetti.ily"
-%\include "./00-Common/DvorakCello_Format_temp.ly"
 \include "./00-Common/DvorakCello_CueVoice.ily"
 \include "./01-Mvt1/m01_v06_music_ClarinettoI.ily"
 \include "./01-Mvt1/m01_v07_music_ClarinettoII.ily"
@@ -41,7 +40,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Clarinetti"
 		}
 		instrument = \markup {
 			"Clarinetti"
@@ -59,17 +58,13 @@
 				\InCueContext \cueVoiceClarinettoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameClarinettoIMvtI \musicClarinettoIMvtI
+				\timeMvtI \nameClarinettoIMvtI \musicClarinettoIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -84,17 +79,16 @@
 				\keepWithTag #'(clarinettoI) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameClarinettoIMvtII \musicClarinettoIMvtII
+				\InCueContext \cueVoiceClarinettoIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameClarinettoIMvtII \musicClarinettoIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1 \bold 2.
 			}
 		}
 		\layout {
@@ -112,17 +106,13 @@
 				\InCueContext \cueVoiceClarinettoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameClarinettoIMvtIII \musicClarinettoIMvtIII
+				\timeMvtIII \nameClarinettoIMvtIII \musicClarinettoIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #0.9 \bold {3. Finale.}
 			}
 		}
 		\layout {
@@ -140,21 +130,16 @@
 				\InCueContext \cueVoiceClarinettoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameClarinettoIIMvtI \musicClarinettoIIMvtI
+				\timeMvtI \nameClarinettoIIMvtI \musicClarinettoIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			system-count = 32
 		}
 	}
 	\score {
@@ -169,21 +154,16 @@
 				\InCueContext \cueVoiceClarinettoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameClarinettoIIMvtII \musicClarinettoIIMvtII
+				\timeMvtII \nameClarinettoIIMvtII \musicClarinettoIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #5 \bold 2.
 			}
 		}
 		\layout {
-			system-count = 13
 		}
 	}
 	\score {
@@ -198,21 +178,16 @@
 				\InCueContext \cueVoiceClarinettoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameClarinettoIIMvtIII \musicClarinettoIIMvtIII
+				\timeMvtIII \nameClarinettoIIMvtIII \musicClarinettoIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2.5 \bold {3. Finale.}
 			}
 		}
 		\layout {
-			system-count = 27
 		}
 	}
 }

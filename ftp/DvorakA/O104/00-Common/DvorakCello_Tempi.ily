@@ -341,7 +341,7 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 87
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI  clarinettoI clarinettoII fagottoI 
+	\tag #'(  oboeI  clarinettoI  fagottoI 
 	fagottoII cornoI cornoII tromboneI tromboneII tromboneIII timpani 
 	triangolo solocello violinoI violinoII viola violoncello contrabasso) {
 		\tempo \markup { \medium \italic "quasi improvisando" }
@@ -353,7 +353,7 @@ tempiPartMvtI = {
 			}
 		}
 	}
-	\tag #'(flautoI flautoII ) {
+	\tag #'(flautoI flautoII clarinettoII) {
 		\tempo \markup {
 			\medium \italic \center-column {
 				\lower #1 "quasi im-" "provisando"
@@ -802,6 +802,11 @@ tempiPartMvtII = {
 	violoncello contrabasso) {
 		\tempo "Meno. Tempo I."
 	}
+%	\tag #'() {
+%		\tempo \markup {
+%			\column { \lower #1 "Meno." "Tempo I." }
+%		}
+%	}
 	s2.*18
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 83

@@ -17,7 +17,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	bes8\mp r c r
 	\tuplet 3/2 4 {d d d} c r
 % Bars 11 to 15
-	g'4->\fz d8-. bes-.
+	g'4^>\fz d8-. bes-.
 	e4 r
 	R2*8
 % Bars 16 to 20
@@ -45,22 +45,26 @@ musicClarinettoIIMvtIII = \relative c' {
 	e4 fis
 	d g8-.\< e-.
 	d g d-. e-.\!
-	g\mf( e f) r
+	g\mf([ e f)] r
 % Bars 41 to 45
 	R2*8
 % Bars 46 to 50
 	
 	
 	\mark \default
-	R2*18
+	R2*16
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
 % Bars 61 to 65
 	
-% Bars 66 to 70
 	
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 66 to 70
+	\mmrPos #-4 R \no
 	r4 e'8\f r
 	R2*16
 % Bars 71 to 75
@@ -96,15 +100,15 @@ musicClarinettoIIMvtIII = \relative c' {
 	\mark \default
 % Bars 111 to 115
 	\ni \cueClef bass \mmrPos #-6 R2
-	\mmrPos #-10 R
+	\mmrPos #-9 R
 	\mmrPos #-4 R \no \cueClefUnset
-	r4 a,16-.\p\< a-. d-. f-.
+	r4 a,16-.\p\< a-. d-. f-.\!
 	a8\fz r r4
 % Bars 116 to 120
 	R2*3
 	
 	
-	r4 c,16-.\p\< c-. e-. a-. 
+	r4 c,16-.\p\< c-. e-. a-.\! 
 	c8\fz r r4
 % Bars 121 to 125
 	R2*8
@@ -123,17 +127,17 @@ musicClarinettoIIMvtIII = \relative c' {
 	cis)~
 	cis\>(
 	c!)\!
-	\tuplet 3/2 4 {c8 c c\<  c c c 
+	\tuplet 6/4 2 {c2.:8\<  
 % Bars 136 to 140
-	c c c  c c c\!
-	bes! bes bes  bes bes bes
-	bes\> bes bes   bes bes bes\!}
-	bes2_\dimmarkup~
+	c:\!
+	bes!: 
+	bes:\> }
+	bes2_\dimD~
 	bes4 r
 % Bars 141 to 145
 	R2*2
-	\mark \default
-	\mmrnDown R2*24
+	\markXoffset #-0.2 \mark \default
+	\mmrnDown \mmrLength #23 R2*14
 	
 	
 % Bars 146 to 150
@@ -142,18 +146,22 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 % Bars 156 to 160
 	
+	R2*2
+	
+	\tempoXoffset #-1 R2*7
+	
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	\mark \default
-	R2*5
+	R2 \mark \default
+	\mmrLength #11 R2*5
 	
 	
 	
 % Bars 171 to 175
 	
 	
-	\mmrLength #2 R2*5
+	\mmrLength #11 \tempoXoffset #-1 R2*5
 % Bars 176 to 180
 	
 	\ni \mmrPos #-4 R2
@@ -164,7 +172,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 	aes''2\pp~
-	aes\<
+	\after 2*3/4 \! aes\<
 	c,8\fz r r4
 % Bars 186 to 190
 	R2*11
@@ -180,7 +188,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	f,,8-.\p e-. r4
 	R2
 	r4 r8 g''\ff \mark \default
-	\tempoXoffset #0.7 f8. f16 f8 r
+	\tempoXoffset #1 f8. f16 f8 r
 	f8. f16 f8 r
 % Bars 206 to 210
 	R2*8
@@ -237,8 +245,8 @@ musicClarinettoIIMvtIII = \relative c' {
 % Bars 261 to 265
 	d\ff r r4
 	d8 r r4
-	d8\dimD\> r r4\!
-	d8 r r4
+	d8\dimD\> r r4
+	d8\! r r4
 	f,,2\fp\>~
 % Bars 266 to 270
 	f~\!
@@ -254,15 +262,15 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 % Bars 276 to 280
 	
-	\mmrLength #4 R2*2
+	\mmrLength #10 R2*2
 	
 	R2*2
 	\bar "||" \mark \default
 % Bars 281 to 285
 	\tempoXoffset #0.5 bes2\p~
-	bes8 a( bes c)
-	d8( g f ees)
-	d( g f ees)
+	bes8[ a( bes c)]
+	d8([ g f ees)]
+	d([ g f ees)]
 	d8.( ees16 d8 c)
 % Bars 286 to 290
 	bes4( c8 d
@@ -289,17 +297,17 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 	bes8\p\<( d~ d8 bes16 ees)
 % Bars 306 to 310
-	d4(~\!  d16\> c f,8)\!
+	d4(~\! \stemDown d16\> c f,8)\! \stemNeutral
 	f2~
 	f
 	bes8( d~ d bes16 ees)
-	d4(~ d16 c f,8)
+	d4(~ \stemDown d16 c f,8) \stemNeutral
 % Bars 311 to 315
 	f4 r
 	R2*3
 	
 	\mark \default
-	\mmrLength #2.8 R2*16
+	\mmrLength #23 R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -312,12 +320,12 @@ musicClarinettoIIMvtIII = \relative c' {
 	\mark \default 
 % Bars 331 to 335
 	\tempoXoffset #2 c'8\p r c4(~
-	c8 d c d)
+	c8[ d c d)]
 	e4. r8
 	R2
 	e,4\mp( e~->
 % Bars 336 to 340
-	e8 fis e fis)
+	e8[ fis e fis)]
 	gis4. r8
 	R2*9
 % Bars 341 to 345
@@ -336,12 +344,12 @@ musicClarinettoIIMvtIII = \relative c' {
 	cis2(\brack\p
 % Bars 356 to 360
 	c4 b)
-	cis8( c b4)
+	cis!8( c b4)
 	cis!2
 	cis(
 	c4 b)
 % Bars 361 to 365
-	cis8( c b4)
+	cis!8( c b4)
 	cis!2
 	\tuplet 3/2 4 {fis8 fis fis  fis fis fis
 	fis\< fis fis  fis fis fis\!
@@ -349,7 +357,7 @@ musicClarinettoIIMvtIII = \relative c' {
 % Bars 366 to 370
 	fis fis fis  g( fis e)
 	fis fis fis g\f g g}
-	g8( b a g
+	g8[( b a g]
 	fis8) r r4
 	R2
 % Bars 371 to 375
@@ -377,7 +385,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	\tuplet 3/2 4 {r8 dis'!\< dis r e e
 	r cis cis r d! d
 % Bars 391 to 395
-	r b! b r b b
+	r b b r b b
 	r bes bes r bes bes\! }
 	d\f r r4
 	r r8 d\f
@@ -403,11 +411,13 @@ musicClarinettoIIMvtIII = \relative c' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*16
+	R2*5
 % Bars 416 to 420
 	
-% Bars 421 to 425
 	
+	\mmrLength #10 R2*3
+% Bars 421 to 425
+	R2*8
 % Bars 426 to 430
 	
 	
@@ -422,19 +432,19 @@ musicClarinettoIIMvtIII = \relative c' {
 	d\pp~
 % Bars 436 to 440
 	d4. r8
-	\tempoXoffset #-2 R2*7
+	\tempoXoffset #-2 \mmrLength #15 R2*7
 	
 	
 	
 % Bars 441 to 445
 	
 	
-	\tempoXoffset #1 R2*5
+	\tempoXoffset #1 \mmrLength #10 R2*5
 % Bars 446 to 450
 	
 	
-	\markXoffset #-0.2 \markYoffset #4 \mark \default
-	\tuplet 3/2 4 {d8-\tweak X-offset #-2 \pp( e d} cis d)
+	\markXoffset #-0.2 \mark \default
+	\tempoXoffset #1.5 \tuplet 3/2 4 {d8-\tweak X-offset #-2 \pp( e d} cis d)
 	\tuplet 3/2 4 {d( e d } cis8. e16)
 % Bars 451 to 455
 	\tuplet 3/2 4 {d8( e d} cis d)
@@ -475,10 +485,10 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 % Bars 491 to 495
 	
-	\tempoXoffset #-1 R2*5
+	R2*5
 % Bars 496 to 500
 	\mark \default
-	a,2\p\<(
+	\tempoXoffset #1.5 a,2\p\<(
 	d4 fis
 	a d
 	fis2)\!
@@ -495,8 +505,8 @@ musicClarinettoIIMvtIII = \relative c' {
 	d8[\ff r16 d d8 r16 d]
 	d8[ r16 d d8 r16 d]
 % Bars 511 to 515
-	e8-. d-. e-. d-.
-	g-. f-. bes-. a-.
+	e8-.[ d-. e-. d-.]
+	g-.[ f-. bes-. a-.]
 	fis!-. r r4
 	d8 r d r
 	d d,4-^ d8-.

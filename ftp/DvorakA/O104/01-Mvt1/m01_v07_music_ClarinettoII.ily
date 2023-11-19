@@ -10,7 +10,7 @@ musicClarinettoIIMvtI = \relative c' {
 	\transposition a
 % Bars 1 to 5
 	d4.(\mp e16 f d2)
-	d4.( c16 a d2)
+	d4.( c!16 a d2)
 	d8.--[ e16-. f8.--\< e16-.] d4-- c--\!
 	bes!-- a--\> g-- f--\!
 	a1\p\>~
@@ -47,17 +47,17 @@ musicClarinettoIIMvtI = \relative c' {
 % Bars 31 to 35
 	
 	
-	r4 a,\mp\prall r bes\prall
+	r4 a,\mp\prall r bes!\prall
 	r a\prall_\dimmarkup r e\prall
 	r a,\prall\mp r bes\prall_\dimmarkup
 % Bars 36 to 40
-	r a\prall\> r e\prall\p
-	a8 r r4 \tuplet 3/2 4 {g'8\f g g g g g
-	g\< g g g g g  f f f f f f
-	f f f f\f f f  e\> e e e e e
-	e_\dimmarkup e e e e e  d d d d d d\! }
+	r a\prall\> \after 4*3/4 \p r e\prall
+	a8 r r4 \tuplet 3/2 4 {g'8\f g g  g g g 
+	g\< g g  g g g  f f f  f f f 
+	f f f\! f\f f f  e\> e e   e e e
+	e_\dimmarkup e e  e e e  d d d  d d d\! }
 % Bars 41 to 45
-	cis r r4 r2
+	cis8 r r4 r2
 	R1*3
 	
 	\mark \default
@@ -65,14 +65,14 @@ musicClarinettoIIMvtI = \relative c' {
 % Bars 46 to 50
 	
 % Bars 51 to 55
-	g2(\p\< gis)\fz
+	\hairpinShorten #'(-0.3 . -0.3) g2(-\offset X-offset -1 \p\< gis)-\offset X-offset 0.5 \fz
 	a4(\> bes!2.)\!
 	R1*3
 	
 	
 % Bars 56 to 60
 	\tempoXoffset #-1.5 R1
-	R1*16
+	\mmrLength #23 \mmrnDown \tempoXoffset #-2  R1*16
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -106,7 +106,7 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	
 	
-	r2 r16 ees''-.\p\< ees-. d-. ees8-. d16-. d-.\!
+	r2 r16 ees''-.\p\<^\solo ees-. d-. ees8-. d16-. d-.\!
 % Bars 96 to 100
 	ees8\fz r r4 r16 ees-.\p\< ees-. d-. ees8-. d16-. d-.\!
 	ees8\fz r r4 r2
@@ -119,8 +119,8 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	
 	
-	\mark \default
-	R1*12
+	\markXoffset #-0.2 \mark \default
+	\mmrLength #25 R1*12
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -133,7 +133,7 @@ musicClarinettoIIMvtI = \relative c' {
 	r8. d16_\fcresc( e8)[ r16 a,]( c8)[ r16 g]( a8)[ r16 d,](
 % Bars 126 to 130
 	g8\f) r r4 r2
-	r8 \shape #'((0 . 0)(0 . 1)(0 . 1)(0 . -2)) Slur cis,16(\f\< d dis e f fis g gis a bes b c cis\!) r \mark \default
+	r8 \shape #'((0 . 0)(0 . 1)(0 . 1)(0 . -2)) Slur cis,16(\f\< d dis e f fis g gis a bes! b c! cis\!) r \mark \default
 	R1*4
 	
 	
@@ -141,7 +141,7 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	d4\f r r2
 	R1
-	d2.\fp\> r4\!
+	\hairpinShorten #'(-0.5 . -0.3) d2.\fp\> r4\!
 	R1*14
 % Bars 136 to 140
 	
@@ -157,7 +157,7 @@ musicClarinettoIIMvtI = \relative c' {
 	r8 c-.( c-. c-. e-.) r r4
 	r8 g,-.( d'-. d-. f-.) r r4
 	r8 e,-.( g-. c-. e-.) r r4
-	\tempoXoffset #-2.5 R1*3
+	\tempoXoffset #-2.5 \mmrLength #17 R1*3
 	
 % Bars 156 to 160
 	\mark \default
@@ -216,13 +216,13 @@ musicClarinettoIIMvtI = \relative c' {
 	
 	aes,1\p~ \mark \default
 	aes8 r r4 r2
-	b8-.\p d16-. d-. d8-. f-. f-. aes-. aes-. ces-.
+	b8-.\p d16-. d-. d8-. f-. f-.[ aes-.] aes-. ces-.
 % Bars 211 to 215
 	bes! r r4 r2
 	R1*2
 	
-	\once \tupletUp \tuplet 3/2 4 {des8\mf des des des des des   des des des des des des
-	\once \tupletUp cis_\crescmarkup cis cis cis cis cis   cis cis cis cis cis cis }
+	\tuplet 3/2 4 {\once \tupletUp des8\mf des des  des des des  des des des  des des des
+	\once \tupletUp cis_\crescmarkup cis cis  cis cis cis   cis cis cis  cis cis cis }
 % Bars 216 to 220
 	ais4\f( d2 cis4)
 	\once \stemUp b( a!8. g!16 g4 eis)
@@ -233,7 +233,7 @@ musicClarinettoIIMvtI = \relative c' {
 	fis~
 	fis4\p r r2
 	R1 \mark \default
-	\tempoXoffset #1 R1*3
+	\tempoXoffset #1 \markXoffset #-0.2 R1*3
 	
 % Bars 226 to 230
 	
@@ -258,9 +258,9 @@ musicClarinettoIIMvtI = \relative c' {
 	b(
 	g)
 	fis\>~
-	fis
+	fis\!
 % Bars 246 to 250
-	b\!~
+	b~
 	b \mark \default
 	R1*8
 	
@@ -286,7 +286,7 @@ musicClarinettoIIMvtI = \relative c' {
 	e e fis8( a fis d)
 	cis2.\> r4\!
 % Bars 271 to 275
-	\mmrnDown R1*5 
+	\mmrnDown \mmrLength #16 R1*5 
 % Bars 276 to 280
 	r8 b-.\p b-. d-. d-. r r4
 	R1
@@ -294,11 +294,11 @@ musicClarinettoIIMvtI = \relative c' {
 	r8 b-. b-. d-. d-. r r4
 	r8 a-. a-. a-. cis-. r r4
 % Bars 281 to 285
-	R1*3
+	\mmrLength #16 R1*3
 	
 	\markLengthOn \mark \default
-	R1*9
-	
+	R1
+	R1*8
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -315,7 +315,7 @@ musicClarinettoIIMvtI = \relative c' {
 	e8\fz r r4 r2
 % Bars 301 to 305
 	d!8\fz r r4 r2
-	R1 \mark \default
+	R1 \markXoffset #0.1 \mark \default
 	a8\brack\f r r4 r2
 	R1*3
 	
@@ -352,7 +352,7 @@ musicClarinettoIIMvtI = \relative c' {
 % Bars 331 to 335
 	a8 r r4 r2
 	r4 d4(\p c b4)
-	a(\< e! b' g!)\!
+	a(\< e! \once \stemUp b' g!)\!
 	f!1\trill\<
 	f8\! r r4 r2
 % Bars 336 to 340
@@ -372,6 +372,6 @@ musicClarinettoIIMvtI = \relative c' {
 % Bars 351 to 354
 	r4 \once \tupletUp \tuplet 3/2 4 {d8\f d d} d4 d
 	d2 a,4. a8
-	a1\<
+	\after 1*7/8 \! a1\<
 	a4\ff r r2 \markupfermata \bar "|."
 }

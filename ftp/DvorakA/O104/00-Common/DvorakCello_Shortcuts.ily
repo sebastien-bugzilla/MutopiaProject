@@ -29,6 +29,12 @@ ptranquilloemoltoespressivo = \markup {
 pespressivoecantabile = \markup {
 	\hspace #-0.05 \dynamic p \italic {espressivo e cantabile}
 }
+pespressivo_ecantabile = \markup {
+	\column {
+		\lower #1 \line { \dynamic p \italic espressivo} 
+		\line { \italic "e cantabile"}
+	}
+}
 ppocomarcato = \markup {\hspace #-0.05 \dynamic p \italic {poco marcato}}
 
 fcresc = \markup {\dynamic f \italic cresc.}
@@ -635,6 +641,13 @@ markWhiteout = {
 	\once \override Score.RehearsalMark.whiteout-style = #'outline
 }
 
+textScriptOSp = #(define-music-function
+	(priority)
+	(number?)
+	#{
+		\once \override Voice.TextScript.outside-staff-priority = #priority
+	#}
+)
 
 
 % footnotes:

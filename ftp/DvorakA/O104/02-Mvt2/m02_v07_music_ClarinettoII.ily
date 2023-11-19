@@ -29,7 +29,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 16 to 20
 	f16( ees) ees8~ ees2
 	d2(\< f4)\!
-	f16( ees) ees8~ ees2\>
+	f16( ees) ees8~ \after 2*15/16 \! ees2\>
 	d2(\< f4)\!
 	f8.( ees16 ees8._\dimmarkup d16) d4
 % Bars 21 to 25
@@ -37,7 +37,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	c2.\p(
 	bes)-\tweak X-offset #0.5 _\dimmarkup
 	gis
-	aes2\< f4
+	aes2\< f4\!
 % Bars 26 to 30
 	e2.\fz\<
 	f2(\! aes8\< c\!)
@@ -54,12 +54,12 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 	
 	\mmrnDown R2. \bar "||" \key bes \minor \markLengthOff
-	des'2\ff des4
+	des'!2\ff des4
 	des2 bes8. c16
 % Bars 41 to 45
 	des4-> bes-> a->
 	bes4. r8 r4
-	des4.\mp \once \stemUp c16.( aes32 bes16. ges32 aes16. f32)
+	des4.\mp \once \stemUp c16.( aes32 bes16.[ ges32] aes16. f32)
 	ges2\< ges'8.(\! f16)
 	ges32( ees c8.\>~ c8) aes16( f~ f c ees aes,)\!
 % Bars 46 to 50
@@ -69,15 +69,15 @@ musicClarinettoIIMvtII = \relative c'' {
 	f4. r8 r4 \mark \default
 	des16(\p f aes f des aes' f des~ des f aes f)
 % Bars 51 to 55
-	des( ges bes ges des bes' ges des~ des ges bes ges)
+	des( ges! bes ges des bes' ges des~ des ges bes ges)
 	des( ees ges ees des ges ees des~ des ees ges ees)
 	des( f aes f des aes' f des~ des f aes f)
 	des( fes aes fes des aes' fes des~ des fes aes fes)
 	a,(^\< cis e cis a e' cis a ais cis e cis)\!
 % Bars 56 to 60
-	b( e gis e^\> b e gis e b dis a' dis,
-	e4)\! r r
-	R2.*3
+	b( e gis e^\> b e gis e b dis a' dis,\!
+	e4) r r
+	\mmrnDown R2.*3
 	
 	
 % Bars 61 to 65
@@ -85,38 +85,38 @@ musicClarinettoIIMvtII = \relative c'' {
 	e~
 	e4( d bes!4)
 	a( a,2\pp)\>~ \bar "||" \key bes \major \mark \default
-	\tempoXoffset #-5.5 a4\ff r r
+	\tempoXoffset #-6 a4\ff r r
 % Bars 66 to 70
 	R2.*2
 	
-	r4 r a'\p(
+	r4 r a'!\p(
 	f'4.)( e8 d c)
-	bes4 bes\< \tuplet 3/2 4 {bes8( c d}
+	bes!4 bes\< \tuplet 3/2 4 {bes8( c d}
 % Bars 71 to 75
 	e4.)\! c8( a g)\>
 	f4 f\! f8.( e16
 	d4.\<) d'8(\! c bes)
-	a(\mf\< c f c)\! c4_\dimD\>~
+	a[(\mf\< c] f c)\! \hairpinShorten #'(-0.5 . -0.3) c4_\dimD\>~
 	c~ c8\! r r4
 % Bars 76 to 80
 	R2.*7
 % Bars 81 to 85
 	
 	\mark \default
-	\mmrLength #3 R2.*4
+	\tempoXoffset #0.5 R2.*4
 	
 	
 % Bars 86 to 90
 	
 	aes'2.\mp
-	aes_\dimD\>
+	\hairpinShorten #'(-0.5 . -0.3) aes-\offset X-offset -1 _\dimD\>
 	fis2(\p\> d!4)~
 	d2.\pp
 % Bars 91 to 95
 	bes2.\< 
 	a!\>
 	ees!_\dimD
-	ees!(\>  \mark \default
+	\tempoXoffset #-1.5 ees!(\>  \mark \default
 	\tempoXoffset #1 d8)\! r r4 r
 % Bars 96 to 100
 	R2.*10 
@@ -124,7 +124,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 % Bars 106 to 110
 	\once \ni R2.\fermata
-	R2.*13
+	\mmrLength #10 R2.*13
 	
 	
 	
@@ -145,14 +145,14 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 126 to 130
 	bes8\p r r4 r 
 	R2.
-	\once \ni R2.\fermata \mark \default
-	\tempoXoffset #1 d2(\p\< f4)
+	\once \ni R2.\fermata \markXoffset #-0.5 \mark \default
+	\textScriptOSp #2000 d2(^\solo\p\< f4)\!
 	f16(\> ees) ees8~ ees2(
 % Bars 131 to 135
 	d8\!) r r4 r
 	R2.
 	d2(-\tweak X-offset #0.5 \p f4)\<
-	f16\(( ees) ees8~ ees4. d8\)
+	f16\(( ees) ees8~ ees4. d8\)\!
 	\hairpinLength #8 c(--\brack\mf\> g-- ees4--)\! r4\fermata
 % Bars 136 to 140
 	R2.*3
@@ -163,13 +163,13 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 141 to 145
 	bes2.\f^^~
 	bes\>~
-	bes\p\>~
+	\hairpinShorten #'(-0.5 . -0.3) bes\p\>~
 	bes\pp~
 	bes4 r r
 % Bars 146 to 150
 	R2.*2
 	
-	\scriptStencil \lungatrillfermata \afterGrace a2.\sf\>-\tweak extra-offset #'(0 . 1) \fermata( {gis16 a)} \mark \default
+	\scriptStencil \lungatrillfermata \afterGrace a2.\sf\>-\tweak extra-offset #'(0 . 0.5) \fermata( {gis16 a)\!} \mark \default
 	bes8\pp r r4 r
 	R2.*3
 % Bars 151 to 155
@@ -189,7 +189,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	R2.
 	r4 r r8 bes16(\p d~
 	d^\morendo c32 bes d16 c bes\> d c bes d c bes d\!
-	c8\pp bes) d( c bes d
+	c8[\pp bes)] d( c bes d
 % Bar 166
 	c4 bes2)\fermata \bar "|."
 }
