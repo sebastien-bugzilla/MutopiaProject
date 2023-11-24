@@ -43,7 +43,7 @@ musicFagottoIMvtII = \relative c' {
 % Bars 31 to 35
 	aes8( g!16) r g8( fis!16) r b!8(\pp b,
 	c2.)
-	d4( g8 b d4)~
+	d4( g8 b! d4)~
 	d2(~ d8 c\fermata) \mark \default
 	b2(\pp c4)
 % Bars 36 to 40
@@ -98,7 +98,7 @@ musicFagottoIMvtII = \relative c' {
 	d f a f d a' f d~ d f a f
 % Bars 81 to 85
 	bes, d f d bes f' d bes( b) f' d b
-	c4(\p\< f bes\! \mark \default
+	c4(\p\< f bes\! \markWhiteout \mark \default
 	\tempoXoffset #1 a8) r r4 f\p~
 	f2.~\<
 	f8\! r r4 f\p~

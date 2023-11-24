@@ -60,7 +60,7 @@ musicFagottoIIMvtII = \relative c' {
 	f\>
 % Bars 46 to 50
 	g\p
-	ees'2\p\<( c4)\!
+	ees'2\<( c4)\!
 	f,2._\dimD\>
 	bes4.\! r8 r4 \mark \default
 	R2.*6
@@ -71,7 +71,7 @@ musicFagottoIIMvtII = \relative c' {
 	aes\! r r
 	ees'4\fz\>( c2
 	des4\p) r r
-	ees4\fz\>( << c2) {s4 s\!}>>
+	ees4\fz\>( << c2) {s4 s8 s16 s\!}>>
 % Bars 61 to 65
 	des4\pp r r
 	R2.
@@ -94,21 +94,21 @@ musicFagottoIIMvtII = \relative c' {
 	
 % Bars 81 to 85
 	
-	c2.\p\<~  \mark \default
+	c!2.\p\<~  \mark \default
 	\tempoXoffset #1 c8\! r r4 f,\p~
 	f2.~\<
 	f8\! r r4 f\p~
 % Bars 86 to 90
 	f2.~\<
 	f8\! r r4 r
-	R2.*7
+	R2.*6
 	
 	
 % Bars 91 to 95
 	
 	
 	
-	\mark \default
+	\mmrLength #9 R2. \mark \default
 	R2.*11
 % Bars 96 to 100
 	

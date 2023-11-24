@@ -18,7 +18,7 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part04_Fagotti.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
@@ -40,7 +40,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Fagotti"
 		}
 		instrument = \markup {
 			"Fagotti"
@@ -58,17 +58,13 @@
 				\InCueContext \cueVoiceFagottoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameFagottoIMvtI \musicFagottoIMvtI
+				\timeMvtI \nameFagottoIMvtI \musicFagottoIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -86,17 +82,13 @@
 				\InCueContext \cueVoiceFagottoIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameFagottoIMvtII \musicFagottoIMvtII
+				\timeMvtII \nameFagottoIMvtII \musicFagottoIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.7 \bold 2.
 			}
 		}
 		\layout {
@@ -114,17 +106,13 @@
 				\InCueContext \cueVoiceFagottoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameFagottoIMvtIII \musicFagottoIMvtIII
+				\timeMvtIII \nameFagottoIMvtIII \musicFagottoIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Finale.}
 			}
 		}
 		\layout {
@@ -142,17 +130,13 @@
 				\InCueContext \cueVoiceFagottoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameFagottoIIMvtI \musicFagottoIIMvtI
+				\timeMvtI \nameFagottoIIMvtI \musicFagottoIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -170,17 +154,13 @@
 				\InCueContext \cueVoiceFagottoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameFagottoIIMvtII \musicFagottoIIMvtII
+				\timeMvtII \nameFagottoIIMvtII \musicFagottoIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2.5 \bold 2.
 			}
 		}
 		\layout {
@@ -198,17 +178,13 @@
 				\InCueContext \cueVoiceFagottoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameFagottoIIMvtIII \musicFagottoIIMvtIII
+				\timeMvtIII \nameFagottoIIMvtIII \musicFagottoIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #4.4 \bold {3. Finale. }
 			}
 		}
 		\layout {

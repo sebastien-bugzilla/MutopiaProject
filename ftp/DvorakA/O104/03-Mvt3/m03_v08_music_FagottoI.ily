@@ -107,11 +107,11 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	r8 d'-.\p cis-. r
+	r8 d'-.\p[ cis-.] r
 % Bars 126 to 130
-	r d-. cis-._\dimmarkup r
-	r d-. cis-. r
-	r d-. cis-. r
+	r d-.[ cis-.]_\dimmarkup r
+	r d-.[ cis-.] r
+	r d-.[ cis-.] r
 	R2*6
 	
 % Bars 131 to 135
@@ -119,13 +119,13 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	R2*5
+	\mmrLength #10 R2*5
 % Bars 136 to 140
 	
 	
 	
 	
-	\mmrLength #2 \tempoXoffset #-2 R2*3
+	\mmrLength #12 \tempoXoffset #-2 R2*3
 % Bars 141 to 145
 	
 	\mark \default
@@ -142,7 +142,7 @@ musicFagottoIMvtIII = \relative c {
 	b8( cis! c4)
 % Bars 161 to 165
 	b8( cis! c4)
-	b8( a b g)
+	b8([ a b g])
 	cis!4(\pp c)
 	b8( cis! c4)
 	b2(
@@ -150,7 +150,7 @@ musicFagottoIMvtIII = \relative c {
 	g4 cis!) \mark \default
 	b8-.\brack\p b( cis) cis(
 	b) b( cis) cis(
-	b)\< b( a g)\!
+	b)[\< b( a g)]\!
 	a(\> b d4)\!
 % Bars 171 to 175
 	cis2\<
@@ -211,7 +211,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 221 to 225
 	a4 gis8 g \mark \default
 	fis8 r r4
-	R2*30
+	R2*19
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -220,8 +220,9 @@ musicFagottoIMvtIII = \relative c {
 	
 % Bars 241 to 245
 	
+	\mmrLength #11 R2*4
 % Bars 246 to 250
-	
+	R2*7
 % Bars 251 to 255
 	
 	
@@ -249,9 +250,9 @@ musicFagottoIMvtIII = \relative c {
 	\ni \cueClef treble \mmrPos #-6 R2
 	\mmrPos #-6 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \cueClefUnset \mark \default \bar "||"
+	\mmrPos #-4 R \no \cueClefUnset \markXoffset #-0.2 \mark \default \bar "||" \break
 % Bars 281 to 285
-	\tempoXoffset #1 d'2\p~
+	d'2\p~
 	d
 	g4( d
 	g d)
@@ -270,23 +271,23 @@ musicFagottoIMvtIII = \relative c {
 	d e
 % Bars 296 to 300
 	d r
-	\tuplet 3/2 4 {b'8\p b b  b b b
-	b g g  g g g
-	g g g  g g g
-	g g g  g g g
+	\tuplet 3/2 4 {b'4.:8\p  b: 
+	b8 g g  g4.:8 
+	g: g:
+	g: g:
 % Bars 301 to 305
-	g g g  g\< g g
-	g g g  g g g\!}
+	g: g: 
+	g:\< g:\!}
 	d4 r
-	R2*11
+	\mmrLength #12 R2*10
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 	
 	
-	\mark \default
-	\mmrLength #2.8 R2*16
+	\mmrLength #9 R2 \mark \default
+	\mmrLength #22 R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -296,10 +297,10 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	\mark \default
+	\mark \default \break
 % Bars 331 to 335
 	cis'8\p r cis4(~
-	cis8 d cis d)
+	cis8[ d cis d)]
 	e4. r8
 	R2*9
 % Bars 336 to 340
@@ -307,11 +308,11 @@ musicFagottoIMvtIII = \relative c {
 % Bars 341 to 345
 	
 	
-	\ni \cueClef treble \mmrPos #-6 R2
-	\mmrPos #-6 R
-	\mmrPos #-6 R
+	\ni \cueClef treble \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 346 to 350
-	\mmrPos #-6 R \no \cueClefUnset \bar "||" \key b \major
+	\mmrPos #-4 R \no \cueClefUnset \bar "||" \key b \major
 	fis,2\p~
 	fis~
 	fis~
@@ -331,13 +332,13 @@ musicFagottoIMvtIII = \relative c {
 % Bars 361 to 365
 	ais!8( a gis4)
 	ais!2
-	\tuplet 3/2 4 {b8 b b  b b b
-	b\< b b  b b b\!
-	b b b   b b b_\crescmarkup
+	\tuplet 6/4 2 {b2.:8 
+	b:\< 
+	b:
 % Bars 366 to 370
-	b b b  b b b
-	b b b  b\f b b
-	e e e  e e e}
+	b:
+	b:\f
+	e:}
 	dis2(\mf
 	e)
 % Bars 371 to 375
@@ -399,14 +400,14 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 % Bars 421 to 425
-	R2*16
+	\mmrLength #15 R2*16
 % Bars 426 to 430
 	
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
-	\mmrLength #2.5 R2*7
+	\mmrLength #18 R2*7
 % Bars 441 to 445
 	
 	
@@ -451,7 +452,7 @@ musicFagottoIMvtIII = \relative c {
 	
 % Bars 496 to 500
 	\mark \default
-	b,2\p\<~
+	\tempoXoffset #1 b,2\p\<~
 	b~
 	b~
 	b\!
@@ -462,14 +463,14 @@ musicFagottoIMvtIII = \relative c {
 	b
 	b-^
 % Bars 506 to 510
-	R2
+	\mmrnDown R2
 	b^^\ff
 	R
-	b8-.\ff b-. b-. b-.
-	b-. b-. b-. b-.
+	b8-.[\ff b-. b-. b-.]
+	b-.[ b-. b-. b-.]
 % Bars 511 to 515
 	b r cis'-. b-.
-	e-. d-. g-. fis-.
+	e-.[ d-. g-. fis-.]
 	b,8-. r r4
 	b,8 r b r
 	b b4-^ b8-.

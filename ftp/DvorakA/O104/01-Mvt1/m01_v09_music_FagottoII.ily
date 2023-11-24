@@ -11,7 +11,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 1 to 5
 	R1*2
 	
-	b8.--\mp\< cis16-. d8.-- cis16-. b4-- a--\!
+	b8.--\mp\<[ cis16-. d8.-- cis16-.] b4-- a--\!
 	g-- fis\>-- e-- d--\!
 	fis1\p\>~
 % Bars 6 to 10
@@ -64,9 +64,10 @@ musicFagottoIIMvtI = \relative c {
 	a~\f\>
 % Bars 51 to 55
 	a4\! r r2
-	R1*15
+	R1*4
 % Bars 56 to 60
-	
+	R1
+	\mmrnDown R1*10
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -79,7 +80,7 @@ musicFagottoIIMvtI = \relative c {
 	fis4(\p\< d g2)\!
 	gis1\<
 	a2.\fz\< a4\!
-	b2(\< cis) \mark \default
+	b2(\< \after 2*3/4 \! cis) \mark \default
 	\tempoXoffset #1 d,,4\ff r8 d d-. d-. d-. r
 % Bars 76 to 80
 	d4 r8 d d-. d-. d-. r
@@ -118,10 +119,10 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	\mark \default
-	\tempoXoffset #1 b,8\fz r b\p-. d-. b-. d-. b-. d-.
+	\tempoXoffset #1 b,8\fz r b\p-. d-. b-.[ d-.] b-. d-.
 % Bars 111 to 115
 	b-. r b-. d-. b-. d-. b-.\noBeam r
-	e-. r e-. g-. e-. g-. e-. g-.
+	e-. r e-. g-. e-.[ g-.] e-. g-.
 	e-. r e-. g-. e-. g-. e-.\noBeam r
 	R1*8
 % Bars 116 to 120
@@ -159,8 +160,8 @@ musicFagottoIIMvtI = \relative c {
 	fis'1\fz
 	gis2.\<( b4)\! \clef tenor
 % Bars 156 to 160
-	d2(_\dimD\> b4 cis\!) \mark \default
-	\tempoXoffset #0.7 \hairpinShorten #'(0 . -2) d2._\pdimD\> d4(\!
+	d2(_\dimD\> b4 cis\!) \markXoffset #-0.2 \mark \default
+	\tempoXoffset #0.7 \hairpinShorten #'(-0.5 . -2) d2.-\offset X-offset -1.5 _\pdimD\> d4(\!
 	cis)\pp d( cis d
 	cis ais2.->)\>
 	cis4\!( d cis d)
@@ -178,7 +179,7 @@ musicFagottoIIMvtI = \relative c {
 	cis16\p-. cis-. cis-. cis-. r8. cis16-.\< d!-. d-. d-. d-.\! r8. d16-.
 % Bars 171 to 175
 	dis16-.\< dis-. dis-. dis-.\! r8. dis16\< e-. e-. e-. e-.\! r4
-	fis,8\f r \tuplet 3/2 4 {fis'8\p g fis} fis r \tuplet 3/2 4 {fis g fis}
+	fis,8\f r \tuplet 3/2 4 {fis'8\p g! fis} fis r \tuplet 3/2 4 {fis g fis}
 	g\brack\f r \tuplet 3/2 4 {g\brack\p\< aes g} g r \tuplet 3/2 4 {g aes g\!}
 	gis\f r r4 r2
 	R1 \mark \default
@@ -209,7 +210,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 196 to 200
 	d-^
 	d-^
-	d_\dimD\>~
+	d^\dimmarkup\>~
 	d8\fz r r4 e'2\p\>~
 	e1~
 % Bars 201 to 205
@@ -240,7 +241,7 @@ musicFagottoIIMvtI = \relative c {
 	g( aes)\!
 	g8\p r r4 r2
 	R1 \mark \default
-	\mmrLength #3 R1*16
+	\mmrLength #18 R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -249,7 +250,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	
-	R1*4
+	\mmrLength #15 R1*4
 	
 % Bars 241 to 245
 	
@@ -298,16 +299,16 @@ musicFagottoIIMvtI = \relative c {
 	b2.\p\> b4\!
 	ais(\pp b ais b)
 % Bars 286 to 290
-	ais4(\< fisis2.->\fz\>)
-	ais4(\! b ais b)
-	ais(\< fisis2._\fzmarkup->)
+	ais4(\< \hairpinShorten #'(-0.3 . -1) \after 2.*5/6 \! fisis2.->\fz\>)
+	ais4( b ais b)
+	ais(\< \markEO #'(0.7 . 4) fisis2._\fzmarkup->)
 	cis'4(\mf dis cis dis)
 	ais(_\dimD\> b ais b)\!
 % Bars 291 to 295
 	gis(_\dimD\> a! gis a)\!
 	<< { gis( a2.) } {s4 s\> s s\!} >>
-	\tuplet 3/2 4 {bes8\pp bes bes  bes bes bes  bes bes bes  bes bes bes 
-	bes bes bes bes bes bes bes bes bes bes bes bes }
+	\tuplet 3/2 4 {bes4.:8\pp bes: } \tuplet 6/4 2 { bes2.:  
+	bes: bes: }
 	g4( f_\dimmarkup ees f)
 % Bars 296 to 300
 	ees( d c d)
@@ -328,10 +329,10 @@ musicFagottoIIMvtI = \relative c {
 	bis( cis_\crescmarkup cisis \once \stemUp dis)
 	e!2.-^\f r4
 % Bars 311 to 315
-	r2 r4 \tuplet 3/2 4 {g8\f\< b d}
+	r2 r4 \tuplet 3/2 4 {g8\f\< b! d}
 	ees,2\! ees4-. d-.
-	cis8 r r4 r2
-	r8 cis!\fz r4 r2
+	cis!8 r r4 r2
+	r8 cis\fz r4 r2
 	r8 cis\fz r4 r2
 % Bars 316 to 320
 	r8 cis\fz r4 r8 cis\fz r4
@@ -374,6 +375,6 @@ musicFagottoIIMvtI = \relative c {
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {b''8-\tweak X-offset #-0.5 \f b b} b4 b
 	b2 b,,4. b8
-	b1\<
+	\after 1*7/8 \! b1\<
 	b4\ff r r2 \markupfermata \bar "|."
 }

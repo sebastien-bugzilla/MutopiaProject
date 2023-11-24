@@ -11,7 +11,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 1 to 5
 	R1*2
 	
-	b8.--\mp\< cis16-. d8.-- cis16-. b4-- a--\!
+	b8.--\mp\<[ cis16-. d8.-- cis16-.] b4-- a--\!
 	g-- fis\>-- e-- d--\!
 	fis1\p\>~
 % Bars 6 to 10
@@ -46,7 +46,7 @@ musicFagottoIMvtI = \relative c {
 	
 % Bars 36 to 40
 	
-	\ni \mmrPos #-8 R1
+	\ni \mmrPos #-7 R1
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
@@ -74,7 +74,7 @@ musicFagottoIMvtI = \relative c {
 	\ni \cueClef treble \mmrPos #-4 R1
 	\mmrPos #-4 R
 % Bars 66 to 70
-	\mmrPos #-10 R
+	\mmrPos #-9 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R
@@ -83,7 +83,7 @@ musicFagottoIMvtI = \relative c {
 	a2\p\<( ais4 b\!)
 	b1\<
 	d2.\fz\< d4\!
-	d2(\< e) \mark \default
+	d2(\< e)\! \mark \default
 	\tempoXoffset #1 d,4\ff r8 d d-. d-. d-. r
 % Bars 76 to 80
 	d4 r8 d d-. d-. d-. r
@@ -108,7 +108,7 @@ musicFagottoIMvtI = \relative c {
 	R1*3
 	
 	
-	r2 r16 g-.\p\< g-. g-. e8-. g16-. g-.
+	r2 r16 g-.\p\< g-. g-. e8-. g16-. g-.\!
 % Bars 96 to 100
 	e8\fz r r4 r16 g\p\<-. g-. g-. e8-. g16-. g-.\!
 	e8\fz r r4 r2
@@ -122,10 +122,10 @@ musicFagottoIMvtI = \relative c {
 	
 	
 	\mark \default
-	b8\fz r d,\p-. fis-. d-. fis-. d-. fis-.
+	b8\fz r d,\p-. fis-. d-.[ fis-.] d-. fis-.
 % Bars 111 to 115
 	d-. r d-. fis-. d-. fis-. d-.\noBeam r
-	g-. r g-. b-. g-. b-. g-. b-.
+	g-. r g-. b-. g-.[ b-.] g-. b-.
 	g-. r g-. b-. g-. b-. g-.\noBeam r
 	R1*8
 % Bars 116 to 120
@@ -227,7 +227,7 @@ musicFagottoIMvtI = \relative c {
 	
 	\mark \default
 	R1
-	f8-.\p aes16-. aes-. aes8-. b!-. b-. d-. d-. f-.
+	f8-.\p aes16-. aes-. aes8-. b!-. b-.[ d-.] d-. f-.
 % Bars 211 to 215
 	ees r r4 r2
 	R1*2
@@ -244,13 +244,17 @@ musicFagottoIMvtI = \relative c {
 	bes( ces)\!
 	bes8\p r r4 r2
 	R1 \mark \default
-	\mmrLength #3 \tempoXoffset #0.5 R1*20
+	\mmrLength #19 \tempoXoffset #0.5 R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
+	
+	
+	
+	R1*4
 % Bars 241 to 245
 	
 	
@@ -288,7 +292,7 @@ musicFagottoIMvtI = \relative c {
 	cis cis dis8( fis dis b)
 	cis2.\> r4\!
 % Bars 271 to 275
-	\mmrLength #2.8 R1*10 
+	\mmrLength #18 \mmrnDown \tempoXoffset #-2 R1*10 
 % Bars 276 to 280
 	
 % Bars 281 to 285
@@ -306,8 +310,8 @@ musicFagottoIMvtI = \relative c {
 % Bars 291 to 295
 	b(_\dimD\> cis b cis)\!
 	b( cis\> d! ees)\!
-	\tuplet 3/2 4 {bes8\pp bes bes  bes bes bes  bes bes bes  bes bes bes 
-	bes bes bes bes bes bes bes bes bes bes bes bes }
+	\tuplet 6/4 2 {bes2.:8\pp bes:  
+	bes: bes:  }
 	ees4( d_\dimmarkup c d)
 % Bars 296 to 300
 	g,( f ees f)
@@ -318,7 +322,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 301 to 305
 	gis\f r r4 r2
 	R1 \mark \default
-	fis'8\brack\f r r4 r2
+	fis'!8\brack\f r r4 r2
 	R1*3
 	
 % Bars 306 to 310
@@ -330,7 +334,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 311 to 315
 	r2 r4 \tuplet 3/2 4 {g8\f\< b d}
 	ees2\! ees4-. d-.
-	cis8 r r4 r2
+	cis!8 r r4 r2
 	r8 cis\fz r4 r2
 	r8 cis\fz r4 r2
 % Bars 316 to 320

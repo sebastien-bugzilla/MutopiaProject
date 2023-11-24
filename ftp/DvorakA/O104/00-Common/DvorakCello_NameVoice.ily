@@ -139,32 +139,32 @@ nameClarinettoIIMvtIII = {
 %###############################################################################
 nameFagottoIMvtI = {
 	\set Staff.instrumentName = "Fagotto I"
-	\set Staff.shortInstrumentName = "Fag. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"bassoon"
 }
 nameFagottoIMvtII = {
 	\set Staff.instrumentName = "Fagotto I"
-	\set Staff.shortInstrumentName = "Fag. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"bassoon"
 }
 nameFagottoIMvtIII = {
 	\set Staff.instrumentName = "Fagotto I"
-	\set Staff.shortInstrumentName = "Fag. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"bassoon"
 }
 nameFagottoIIMvtI = {
 	\set Staff.instrumentName = "Fagotto II"
-	\set Staff.shortInstrumentName = "Fag. II"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"bassoon"
 }
 nameFagottoIIMvtII = {
 	\set Staff.instrumentName = "Fagotto II"
-	\set Staff.shortInstrumentName = "Fag. II"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"bassoon"
 }
 nameFagottoIIMvtIII = {
 	\set Staff.instrumentName = "Fagotto II"
-	\set Staff.shortInstrumentName = "Fag. II"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"bassoon"
 }
 %###############################################################################
