@@ -18,9 +18,9 @@ musicCornoIMvtII = \relative c'' {
 	R2.*2
 % Bars 11 to 15
 	
-	r4 r c\pp\<~
-	c2.\fp\> \mark \default
-	c2\pp~ c8 r
+	r4 r \hairpinShorten #'(-0.5 . -0.3) c-\offset X-offset -1 \pp\<~
+	\hairpinShorten #'(-0.5 . -0.3) c2.-\offset X-offset 0.3 \fp\> \mark \default
+	c2-\offset X-offset 1 \pp~ c8 r
 	R2.*5
 % Bars 16 to 20
 	
@@ -38,11 +38,11 @@ musicCornoIMvtII = \relative c'' {
 	
 	
 	
-	\mmrLength #2 R2.*3
+	\mmrLength #15 R2.*3
 	
 % Bars 31 to 35
 	
-	\mmrLength #4 R2.*2
+	\mmrLength #11 R2.*2
 	
 	\once \ni R2.\fermata \mark \default
 	R2.*4
@@ -60,8 +60,8 @@ musicCornoIMvtII = \relative c'' {
 	
 % Bars 46 to 50
 	
-	r4 r8 d(\p\< c bes)
-	a( c\! f_\dimD\> c) d16( c8.)\!
+	r4 r8 d(\noBeam\p\< c bes)
+	a([ c\!] f_\dimD\> c) d16( c8.)\!
 	c4. r8 r4 \mark \default
 	c2\pp r4
 % Bars 51 to 55
@@ -71,7 +71,7 @@ musicCornoIMvtII = \relative c'' {
 	aes2( c4\<
 	f2 bes,8 b)\!
 % Bars 56 to 60
-	c4( des8\> c ees des
+	c4( des8\>[ c] ees des!
 	c4)\! r^\mutaine r \transposition e
 	\mmrnDown R2.*5
 % Bars 61 to 65
@@ -98,31 +98,31 @@ musicCornoIMvtII = \relative c'' {
 % Bars 81 to 85
 	r4 d'4.(\p\< dis8)
 	e4( f)\! e8.( d!16 \mark \default
-	\tempoXoffset #0.8 c8) r r4 r
+	\tempoXoffset #1 c8) r r4 r
 	r d16(\p\<-- e-- f-- e--)\! d4(\>
 	c8)\! r r4 r
 % Bars 86 to 90
 	r d16(\<-- e-- f-- e--)\! d4(\>
 	c8)\! r r4 r
-	R2.*7
+	R2.*6
 % Bars 91 to 95
 	
 	
 	
-	\mark \default
+	\mmrLength #9 R2. \mark \default
 	\tempoXoffset #1 a2_\psolo b8 g
 % Bars 96 to 100
 	a4 r8 a(--\< d-- a--)\!
-	fis4 \tuplet 3/2 4 {fis8\> fis fis} a( g)
+	fis4 \tuplet 3/2 4 {fis8\> fis fis} a( g)\!
 	fis4._\dimD e8 d4
 	e\p\< fis g
 	a2.->\!
 % Bars 101 to 105
 	b4\<-> cis-> d->\!
-	fis2-^\ff\> e4\!
+	\hairpinShorten #'(-0.3 . -0.5) fis2-^\ff\> e4\!
 	d( cis_\dimmarkup b)
 	b(-\tweak X-offset #0.4 \p\> a4. g8)\!
-	fis4\> fis fis
+	fis4\> fis fis\!
 % Bars 106 to 110
 	fis2\pp\fermata e4
 	d r r 

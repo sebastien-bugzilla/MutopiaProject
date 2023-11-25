@@ -61,12 +61,13 @@ musicCornoIIMvtI = \relative c' {
 	d4(\> ees2.)~
 % Bars 51 to 55
 	ees4\pp r r2
-	R1*15
+	R1*4
 	
 	
 	
 % Bars 56 to 60
-	
+	R1
+	\mmrLength #15 \tempoXoffset -1 \mmrnDown R1*10
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -77,7 +78,7 @@ musicCornoIIMvtI = \relative c' {
 	\mmrPos #-4 R \no
 % Bars 71 to 75
 	bes1\p~
-	bes1\<
+	\after 1*7/8 \! bes1\<
 	bes2.\fz\< bes4\!
 	g2_\crescmarkup a-> \mark \default
 	\tempoXoffset #1 d4\ff r8 d ees-. d-. d-. r
@@ -141,7 +142,7 @@ musicCornoIIMvtI = \relative c' {
 	
 	
 	
-	\mmrLength #2.5 \tempoXoffset #-1 R1*3
+	\mmrLength #16 \tempoXoffset #-1 R1*3
 	
 % Bars 156 to 160
 	\mark \default
@@ -162,17 +163,17 @@ musicCornoIIMvtI = \relative c' {
 	
 	
 	
-	r4 g8\f\<-. fis-. g-. fis-. g-. fis-.\!
+	r4 g8\f\<-. fis-. g-.[ fis-.] g-. fis-.\!
 	g->\fz r r4 r2 \mark \default
 % Bars 176 to 180
 	\tuplet 3/2 4 {d'8-^\mf-\tweak rotation #'(3 -1 0) \< bes, bes bes d d d f f f bes bes\! }
-	\hairpinShorten #'(-0.5 . -0.5) \hairpinLength #6 a2\fz\> f\p
+	\hairpinShorten #'(-0.5 . -0.5) a2\fz\> f\p
 	\tuplet 3/2 4 {f8 bes, bes bes-\tweak rotation #'(2 -1 0) \< d d d f f f bes bes\!}
-	\hairpinShorten #'(-0.5 . -0.5) \hairpinLength #6 a2\fz\> f\p
+	\hairpinShorten #'(-0.5 . -0.5) a2\fz\> f\p
 	aes4(\fp g) aes(\fz g)
 % Bars 181 to 185
 	ges(\fz f) ges(\fz f)
-	aes(\< g!) bes( a)\!
+	aes(\< g!) \once \stemUp bes( a)\!
 	c2\fz r
 	r4 fis,,2.-\tweak X-offset #1 \f
 	b2 b4-. b-.
@@ -210,11 +211,11 @@ musicCornoIIMvtI = \relative c' {
 	
 	
 	ees'2-^\p\< d!4-. des-.\!
-	\tuplet 3/2 4 {\once \tupletUp c8\mf c c c c c  c c c c c c 
-	\once \tupletUp c_\crescmarkup c c c c c   c c c c c c }
+	\tuplet 6/4 2 {\once \tupletUp c2.:8\mf c: 
+	c:^\crescmarkup c: }
 % Bars 216 to 220
 	a!1\f
-	g^>\fz
+	g!^>\fz
 	fis4 r r2
 	R1*3
 	
@@ -222,7 +223,7 @@ musicCornoIIMvtI = \relative c' {
 	
 	R1*2
 	\mark \default
-	\mmrLength #3 \tempoXoffset #0.3 R1*16
+	\mmrLength #18 \tempoXoffset #0.3 R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -262,7 +263,7 @@ musicCornoIIMvtI = \relative c' {
 	a a b2
 	a2.\> r4\!
 % Bars 271 to 275
-	\tempoXoffset #-1 \mmrLength #2 \mmrnDown R1*10
+	\tempoXoffset #-2 \mmrLength #16 \mmrnDown R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
@@ -270,7 +271,7 @@ musicCornoIIMvtI = \relative c' {
 	
 	d,1\p\> \mark \default
 	\tempoXoffset #2 g2.\! r4
-	\mmrLength #2.5 \mmrnDown R1*12
+	\mmrLength #19 \mmrnDown R1*12
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -282,11 +283,11 @@ musicCornoIIMvtI = \relative c' {
 	d'8\f r r4 r2
 	c8\f r r4 r2
 % Bars 301 to 305
-	bes8\f r fes-> ees-. fes-> ees-. fes-> ees-. 
+	bes8\f r fes-> ees-. fes->[ ees-.] fes-> ees-. 
 	fes\fz r r4 r2 \mark \default
-	\tuplet 3/2 4 {r8 g,\f g g-\tweak rotation #'(3 -1 0) \< b b b d d d g g\!}
+	\tuplet 3/2 4 {r8 g,!\f g g-\tweak rotation #'(3 -1 0) \< b! b b d! d d g g\!}
 	fis2\>( d)\!
-	\tuplet 3/2 4 {d8\brack\p\noBeam g, g g-\tweak rotation #'(3 -1 0) \< b b b d d d g g\!}
+	\tuplet 3/2 4 {d8\brack\p g, g g-\tweak rotation #'(3 -1 0) \< b b b d d d g g\!}
 % Bars 306 to 310
 	\hairpinShorten #'(0 . -1) fis2\fz\>( d)\!
 	R1*3
@@ -321,7 +322,7 @@ musicCornoIIMvtI = \relative c' {
 	R1*2
 	
 % Bars 341 to 345
-	\cueClefUnset r4 r8 a\f-. ais-. b-. c!-. a-.
+	\cueClefUnset r4 r8 a!\f-. ais-. b-. c!-. a-.
 	b1\ff-^
 	b-^
 	b-^

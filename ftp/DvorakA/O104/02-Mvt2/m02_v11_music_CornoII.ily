@@ -18,8 +18,8 @@ musicCornoIIMvtII = \relative c' {
 	R2.*2
 % Bars 11 to 15
 	
-	r4 r \hairpinLength #6 \hairpinShorten #'(-0.5 . -0.5) c\pp\<~
-	\hairpinLength #6 \hairpinShorten #'(-0.5 . -0.5) c2.\fp\> \mark \default
+	r4 r \hairpinShorten #'(-0.5 . -0.5) c\pp\<~
+	\hairpinShorten #'(-0.5 . -0.5) c2.\fp\> \mark \default
 	c2\pp~ c8 r^\mutainf \transposition f
 	R2.*19
 % Bars 16 to 20
@@ -56,11 +56,11 @@ musicCornoIIMvtII = \relative c' {
 	
 % Bars 56 to 60
 	
-	R2.*6
+	\mmrLength #18 R2.*6
 % Bars 61 to 65
 	
 	
-	\tempoXoffset #-2 R2.*2
+	\tempoXoffset #-2 \mmrLength #12 R2.*2
 	\bar "||" \key c \major \mark \default
 	\tempoXoffset #1 g,2\f g4
 % Bars 66 to 70
@@ -73,7 +73,7 @@ musicCornoIIMvtII = \relative c' {
 	
 	
 	
-	bes4\mf\< \tuplet 3/2 4 {ees8( d bes)\!} g16(\> f) f( ees)
+	bes4\mf\< \tuplet 3/2 4 { \once \tupletUp ees8( d bes)\!} g16(\> f) f( ees)
 	ees4( f,2)~
 % Bars 76 to 80
 	f8\! r^\mutainf \transposition f r4 r
@@ -93,11 +93,11 @@ musicCornoIIMvtII = \relative c' {
 	
 	\ni \mmrPos #4 R2.
 	\mmrPos #4 R
-	\mmrPos #4 R \no \mark \default
+	\tempoXoffset -1 \mmrPos #4 R \no \mark \default
 	fis'2\p g8 d
 % Bars 96 to 100
 	fis4 r8 fis(--\< a-- fis--)\!
-	d4 \tuplet 3/2 4 {d8\> d d} d4
+	d4 \tuplet 3/2 4 {d8\> d d} d4\!
 	cis2_\dimD b4
 	b\p\< dis e
 	g4\! fis8 e fis4
@@ -131,7 +131,7 @@ musicCornoIIMvtII = \relative c' {
 	
 	\ni \cueClef bass \mmrPos #-4 R2. 
 	\mmrPos #-4 R2._\fermata \no \cueClefUnset \mark \default
-	\tempoXoffset #1 d2.~\pp
+	d2.~\pp
 	d~
 % Bars 131 to 135
 	d~

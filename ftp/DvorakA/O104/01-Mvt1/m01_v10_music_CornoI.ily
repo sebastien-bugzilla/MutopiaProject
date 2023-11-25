@@ -23,7 +23,7 @@ musicCornoIMvtI = \relative c'' {
 	
 	r4 fis8.\p\< g16 c8 r fis,8. g16\!
 % Bars 16 to 20
-	ees'8\mf r c8.\<-> bes16-. ees8.-> d16-. g8.-> fis16-.\!
+	ees'8\mf r c8.\<-> bes16-. ees!8.-> d16-. g8.-> fis16-.\!
 	fis4.(_\piuf g16 a fis2)
 	fis4.(-> ees16 d fis2)
 	ees1\f~
@@ -69,7 +69,7 @@ musicCornoIMvtI = \relative c'' {
 	c2.(\pp^\solo cis4)
 	d2(~_\moltoespressivo d8 c! bes g)
 	bes2( f4) bes(\<
-	c d f\> d8 bes)\!
+	c d\! f\> d8 bes)\!
 	c2.(_\dimmarkup cis4)
 % Bars 61 to 65
 	d2\pp(~ d8 c! bes g)
@@ -101,7 +101,7 @@ musicCornoIMvtI = \relative c'' {
 	\ni \mmrPos #-6 R1
 % Bars 91 to 95
 	\mmrPos #-4 R \no
-	r4 g,(\pp a bes~
+	r4 g,(\pp a! bes~
 	bes) des8.(\< c16 fes2~
 	fes2.\f\> ees4~
 	ees)\! r r2
@@ -113,10 +113,10 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	c1\fz
-	d2_\dimD\> ees8( d4.)\! \mark \default
+	\hairpinShorten #'(-0.5 . -1) d2_\dimD\> ees8( d4.)\! \mark \default
 	\tempoXoffset #1 d8\fz r r4 r2
 % Bars 111 to 115
-	R1*13
+	\mmrLength #12 R1*13
 % Bars 116 to 120
 	
 % Bars 121 to 125
@@ -132,17 +132,17 @@ musicCornoIMvtI = \relative c'' {
 	c-^\fp
 	bes-^\fp
 % Bars 131 to 135
-	c-^\fp
+	\dynEO #'(0 . 1) c-^\fp
 	ees4\fz r r2
 	R1
 	\hairpinShorten #'(-0.5 . -0.5) c2.\fp\> r4\!
-	\mmrLength #0.1 R1*3
+	R1*3
 % Bars 136 to 140
 	
 	
-	\mmrLength #0.1 R1*2
+	R1*2
 	
-	R1*14
+	\mmrLength #10 R1*14
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -151,12 +151,12 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	
-	\mmrLength #2 \tempoXoffset #-1 R1*3
+	\mmrLength #14 R1*3
 	
 % Bars 156 to 160
 	\mark \default
-	R1*1
-	\mmrLength #2.5 \tempoXoffset #-3 R1*10
+	\tempoXoffset #1 R1*1
+	\mmrLength #18 \tempoXoffset #-3 R1*10
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -168,12 +168,12 @@ musicCornoIMvtI = \relative c'' {
 % Bars 171 to 175
 	f-. f-. f-. f-.\! r8. f16\< f-. f-. f-. f-.\! r4
 	f8\f r \tuplet 3/2 4 {b,\p c b} b r \tuplet 3/2 4 {b c b}
-	c\f r \tuplet 3/2 4 {c\brack\p\< des c} c r \tuplet 3/2 4 {c des c\!}
-	des\f r e!\f\<-. dis-. e-. dis-. e-. dis-.\!
+	c\f r \tuplet 3/2 4 {c-\offset X-offset -1 \brack\p\< des c} c r \tuplet 3/2 4 {c des c\!}
+	des\f r e!\f\<-. dis-. e-.[ dis-.] e-. dis-.\!
 	e->\fz r r4 r2 \mark \default
 % Bars 176 to 180
 	\tuplet 3/2 4 {f8-^-\tweak X-offset #-2 \mf\< d, d d f f f bes bes \once \tupletUp bes  d d\! }
-	\hairpinLength #5 \hairpinShorten #'(-0.5 . -0.5) d2\fz\> a\p
+	\hairpinShorten #'(-0.5 . -0.5) d2\fz\> a\p
 	\tuplet 3/2 4 {bes8 d, d d\< f f f bes bes \once \tupletUp bes d d\!}
 	\hairpinLength #5 \hairpinShorten #'(-0.5 . -0.5) d2\fz\> a\p
 	d4(\fp ees) d(\fz ees)
@@ -200,7 +200,7 @@ musicCornoIMvtI = \relative c'' {
 	f\fz
 	e!\fz\>
 	ees8\fz r r4 r2
-	\mmrLength #0.1 R1*9
+	R1*9
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -213,8 +213,8 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	ees2-^\p\< d!4-. des-.\!
-	\tupletUp \tuplet 3/2 4 {c4.:8\mf c: c: c: 
-	c:_\crescmarkup c: c: c: } \tupletNeutral
+	\tupletUp \tuplet 6/4 2 {c2.:8\mf c:  
+	c:_\crescmarkup c: } \tupletNeutral
 % Bars 216 to 220
 	ees1\f
 	e!->\fz
@@ -225,7 +225,7 @@ musicCornoIMvtI = \relative c'' {
 	R1*3
 	
 	\mark \default
-	\mmrLength #3 \tempoXoffset #0.5 R1*16
+	\mmrLength #21 \tempoXoffset #0.5 \mmrnDown R1*16
 	
 % Bars 226 to 230
 	
@@ -236,7 +236,7 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	
-	R1*7
+	\mmrnDown R1*7
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -250,7 +250,7 @@ musicCornoIMvtI = \relative c'' {
 	\mmrPos #-4 R \no
 	ees1_\pcresc
 	d
-	ees\<
+	\after 1*7/8 \! ees\<
 % Bars 256 to 260
 	c8\fz r r4 r2
 	R1*4
@@ -270,14 +270,14 @@ musicCornoIMvtI = \relative c'' {
 	d d d2
 	d2.\> r4\!
 % Bars 271 to 275
-	\tempoXoffset #-3 \mmrnDown \mmrLength #1.8 R1*10
+	\tempoXoffset #-3 \mmrnDown \mmrLength #15 R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
 	R1*2
 	
 	\ni \mmrPos #4 R1 \mark \default
-	\tempoXoffset #2 \mmrPos #4 R1 \no
+	\mmrPos #4 \mmrLength #10 \tempoXoffset #2 R1 \no
 	R1*12
 % Bars 286 to 290
 	
@@ -290,20 +290,20 @@ musicCornoIMvtI = \relative c'' {
 	f8\f r r4 r2
 	ees8\f r r4 r2
 % Bars 301 to 305
-	des8\f r des-> c-. des-> c-. des-> c-. 
+	des8\f r des-> c-. des->[ c-.] des-> c-. 
 	des\fz r r4 r2 \mark \default
-	\tuplet 3/2 4 {r8 b,\f b b\< d d d g g g b b\!}
+	\tuplet 3/2 4 {r8 b,!\f b b\< d! d d g g g b b\!}
 	b2\>( fis)\!
-	\tuplet 3/2 4 {g8\brack\p\noBeam b, b b\< d d d g g g b b\!}
+	\tuplet 3/2 4 {g8-\offset X-offset -1 \brack\p b, b b\< d d d g g g b b\!}
 % Bars 306 to 310
 	b2\fz\>( fis)\!
 	b4(\fp c) b(\fp c)
-	a(\fp b) a(\fp b)
+	\stemUp a(\fp b) a(\fp b) \stemNeutral
 	b( c_\crescmarkup cis d)
 	ees2.\f-^ r4
 % Bars 311 to 315
 	R1
-	ees2\f e4-. f-.
+	ees2\f e4-. f!-.
 	fis8 r r4 r2
 	r8 d\fz r4 r2
 	r8 d\fz r4 r2

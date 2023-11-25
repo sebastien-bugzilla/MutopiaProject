@@ -47,9 +47,9 @@ musicCornoIMvtIII = \relative c' {
 % Bars 56 to 60
 	
 % Bars 61 to 65
-	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
-	\mmrPos #-4 R
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 	\mmrPos #-4 R \no
 	d4(\p ees
 % Bars 66 to 70
@@ -107,11 +107,11 @@ musicCornoIMvtIII = \relative c' {
 	
 	
 	
-	\tempoXoffset #-2 \mmrLength #2 R2*3
+	\mmrLength #14 R2*3
 % Bars 141 to 145
 	
 	\mark \default
-	\ni \tempoXoffset #0.5 \mmrPos #-4 R2
+	\ni \tempoXoffset #1 \mmrPos #-4 R2
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 % Bars 146 to 150
@@ -141,13 +141,13 @@ musicCornoIMvtIII = \relative c' {
 	c4 r \mark \default
 	R2*2
 	
-	r8 c(\p\< bes a)
-	bes(\> c ees d)\!
+	r8 c[(\p\< bes a)]\!
+	bes[(\> c ees d)]\!
 % Bars 171 to 175
 	c4(\< a8 d~\!
 	d4) \acciaccatura d8 ees4(\mf
 	\acciaccatura cis8 d4 \acciaccatura b!8 c4)
-	bes8(\< b c cis)
+	bes8[(\< b c cis)]
 	d4\! \acciaccatura d8 ees4(
 % Bars 176 to 180
 	\acciaccatura cis8 d4 \acciaccatura b!8 c4
@@ -159,7 +159,7 @@ musicCornoIMvtIII = \relative c' {
 	
 	
 	des2\pp~
-	des\<
+	\after 2*3/4 \! des\<
 	c8\fz r r4
 % Bars 186 to 190
 	R2*7
@@ -198,7 +198,7 @@ musicCornoIMvtIII = \relative c' {
 % Bars 221 to 225
 	d4\brack\fz c8 cis \mark \default
 	d r r4
-	R2*30
+	R2*19
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -207,8 +207,9 @@ musicCornoIMvtIII = \relative c' {
 	
 % Bars 241 to 245
 	
+	\mmrLength #16 R2*4
 % Bars 246 to 250
-	
+	R2*7
 % Bars 251 to 255
 	
 	
@@ -237,23 +238,23 @@ musicCornoIMvtIII = \relative c' {
 	
 % Bars 276 to 280
 	
-	\mmrLength #3 \tempoXoffset #-0.5 R2*2
+	\mmrLength #10 \tempoXoffset #-0.5 R2*2
 	
 	R2*2
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*16
+	\mmrLength #18 \mmrnDown R2*16
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
-	\tempoOsp \mmrnDown R2*4
+	\mmrnDown R2*4
 % Bars 301 to 305
-	\tempoOsp \mmrnDown R2*2
+	\mmrnDown R2*2
 	
-	\tempoXoffset #-3 R2*11
+	\tempoXoffset #-3 \mmrLength #12 R2*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -279,11 +280,11 @@ musicCornoIMvtIII = \relative c' {
 % Bars 341 to 345
 	
 	
-	\ni \mmrPos #6 R2
-	\mmrPos #8 R
-	\tempoXoffset #-2 \mmrPos #8 R
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\tempoXoffset #-2 \mmrPos #-6 R
 % Bars 346 to 350
-	\mmrPos #8 R \no \bar "||" \key c \major
+	\mmrPos #-6 R \no \bar "||" \key c \major
 	d'2\p
 	d
 	d4( e)
@@ -361,7 +362,7 @@ musicCornoIMvtIII = \relative c' {
 % Bars 416 to 420
 	
 	
-	\mmrnDown R2*3
+	\mmrnDown \tempoXoffset -1.5  R2*3
 % Bars 421 to 425
 	b,2->\f
 	e->
@@ -382,12 +383,12 @@ musicCornoIMvtIII = \relative c' {
 	d\pp~
 % Bars 436 to 440
 	d4. r8
-	\mmrLength #1.7 \tempoXoffset #-2.5 R2*7
+	\mmrLength #14 \tempoXoffset #-2.5 R2*7
 % Bars 441 to 445
 	
 	
 	
-	\mmrnDown \tempoXoffset #1 R2*5
+	\mmrnDown R2*5
 	
 % Bars 446 to 450
 	
@@ -431,7 +432,7 @@ musicCornoIMvtIII = \relative c' {
 	
 % Bars 496 to 500
 	\mark \default
-	R2*4
+	\tempoXoffset #1 R2*4
 	
 	
 	

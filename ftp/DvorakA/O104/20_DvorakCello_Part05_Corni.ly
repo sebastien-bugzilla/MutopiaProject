@@ -18,7 +18,7 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part05_Corni.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
@@ -43,7 +43,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Corni"
 		}
 		instrument = \markup {
 			"Corni"
@@ -61,17 +61,13 @@
 				\InCueContext \cueVoiceCornoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameCornoIMvtI \musicCornoIMvtI
+				\timeMvtI \nameCornoIMvtI \musicCornoIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -86,17 +82,16 @@
 				\keepWithTag #'(cornoI) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameCornoIMvtII \musicCornoIMvtII
+				\InCueContext \cueVoiceCornoIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameCornoIMvtII \musicCornoIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2.9 \bold 2.
 			}
 		}
 		\layout {
@@ -114,17 +109,13 @@
 				\InCueContext \cueVoiceCornoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameCornoIMvtIII \musicCornoIMvtIII
+				\timeMvtIII \nameCornoIMvtIII \musicCornoIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1.2 \bold {3. Finale.}
 			}
 		}
 		\layout {
@@ -142,17 +133,13 @@
 				\InCueContext \cueVoiceCornoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameCornoIIMvtI \musicCornoIIMvtI
+				\timeMvtI \nameCornoIIMvtI \musicCornoIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -170,17 +157,13 @@
 				\InCueContext \cueVoiceCornoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameCornoIIMvtII \musicCornoIIMvtII
+				\timeMvtII \nameCornoIIMvtII \musicCornoIIMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2 \bold 2.
 			}
 		}
 		\layout {
@@ -198,17 +181,13 @@
 				\InCueContext \cueVoiceCornoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameCornoIIMvtIII \musicCornoIIMvtIII
+				\timeMvtIII \nameCornoIIMvtIII \musicCornoIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1.2 \bold {3. Finale.}
 			}
 		}
 		\layout {
@@ -226,17 +205,13 @@
 				\InCueContext \cueVoiceCornoIIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameCornoIIIMvtI \musicCornoIIIMvtI
+				\timeMvtI \nameCornoIIIMvtI \musicCornoIIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -254,17 +229,13 @@
 				\InCueContext \cueVoiceCornoIIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameCornoIIIMvtII \musicCornoIIIMvtII
+				\timeMvtII \nameCornoIIIMvtII \musicCornoIIIMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.7 \bold 2.
 			}
 		}
 		\layout {
@@ -282,17 +253,13 @@
 				\InCueContext \cueVoiceCornoIIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameCornoIIIMvtIII \musicCornoIIIMvtIII
+				\timeMvtIII \nameCornoIIIMvtIII \musicCornoIIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1.1 \bold {3. Finale.}
 			}
 		}
 		\layout {

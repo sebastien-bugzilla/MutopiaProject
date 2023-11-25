@@ -97,13 +97,13 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	R2*5
+	\mmrLength #10 R2*5
 % Bars 136 to 140
 	
 	
 	
 	
-	\tempoXoffset #-2 \mmrLength #2 R2*3
+	\tempoXoffset #-2 \mmrLength #12 R2*3
 % Bars 141 to 145
 	
 	\mark \default
@@ -120,19 +120,19 @@ musicCornoIIMvtIII = \relative c' {
 	bes
 	f~
 	f8 r r4
-	R2*8
+	\mmrLength #12 \tempoXoffset #-1 R2*7
 	
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	\mark \default
-	R2*5
+	R2 \mark \default
+	\mmrLength #12 R2*5
 	
 	
 	
 % Bars 171 to 175
 	
-	\tempoXoffset #-1 \mmrLength #1.5 R2*5
+	\tempoXoffset #-1 \mmrLength #12 R2*5
 % Bars 176 to 180
 	
 	R2*20
@@ -180,9 +180,9 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 241 to 245
 	
-	\mmrLength #2 \tempoXoffset #-1 R2*4
+	\mmrLength #10 \tempoXoffset #-1 \mmrnDown R2*4
 % Bars 246 to 250
-	\mmrLength #2 R2*4
+	\mmrLength #15 \mmrnDown R2*4
 	
 	
 	
@@ -213,10 +213,10 @@ musicCornoIIMvtIII = \relative c' {
 	R2*4
 % Bars 276 to 280
 	
-	\mmrLength #4.5 R2*2
+	\mmrLength #15 R2*2
 	
 	R2*2
-	\bar "||" \mark \default
+	\bar "||" \markXoffset #-0.2 \mark \default
 % Bars 281 to 285
 	R2*16
 % Bars 286 to 290
@@ -232,7 +232,7 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 301 to 305
 	\tempoXoffset #1 r4 \tuplet 3/2 4 {aes8\p\< aes aes 
 	aes aes aes  aes aes aes\!}
-	bes2\p~
+	\startMeasureCount bes2\p~
 	bes~
 	bes~
 % Bars 306 to 310
@@ -243,10 +243,10 @@ musicCornoIIMvtIII = \relative c' {
 	bes
 % Bars 311 to 315
 	bes-^
-	bes-^
+	bes-^ \stopMeasureCount 
 	bes4. r8
 	R2 \mark \default
-	\tempoXoffset #1 R2*16
+	\tempoXoffset #3 \mmrLength #20 R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -258,7 +258,7 @@ musicCornoIIMvtIII = \relative c' {
 	
 	\mark \default
 % Bars 331 to 335
-	\tempoXoffset #0.5 \mmrLength #2.8 R2*14
+	\tempoXoffset #0.5 \mmrLength #17 R2*14
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -269,7 +269,7 @@ musicCornoIIMvtIII = \relative c' {
 	R2*2
 % Bars 346 to 350
 	\bar "||" \key c \major
-	\mmrLength #3 R2*16
+	\mmrLength #16 \tempoXoffset #-2 R2*16
 	
 	
 	
@@ -287,7 +287,7 @@ musicCornoIIMvtIII = \relative c' {
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no
-	\tuplet 3/2 4 {d,8\mf d d  d d d
+	\tuplet 3/2 4 {\startMeasureCount d,8\mf d d  d d d
 	d4.:8 d:
 % Bars 371 to 375
 	d: d:
@@ -298,7 +298,7 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 376 to 380
 	d: d:
 	d: d:
-	d: d:
+	d: d: \stopMeasureCount
 	d: } d8 r
 	R2 \mark \default
 % Bars 381 to 385
@@ -332,9 +332,11 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*8
+	R2*5
 % Bars 416 to 420
 	
+	
+	\tempoXoffset -2 R2*3
 % Bars 421 to 425
 	b2->\f
 	e->
@@ -375,7 +377,7 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	\ni \mmrPos #-8 R2
-	\mmrPos #-6 R
+	\mmrPos #-7 R
 	\mmrPos #-2 R
 % Bars 476 to 480
 	\mmrPos #-2 R \no

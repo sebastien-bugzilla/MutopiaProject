@@ -25,7 +25,7 @@ musicCornoIIIMvtII = \relative c' {
 	
 	
 	
-	\mmrLength #2.5 \tempoOsp R2.*3
+	\mmrLength #12 \tempoOsp R2.*3
 	
 % Bars 31 to 35
 	
@@ -37,7 +37,7 @@ musicCornoIIIMvtII = \relative c' {
 	
 	
 	\bar "||" \key a \minor
-	\mmrLength #1.5 \tempoXoffset #-2.8 R2.*11
+	\mmrLength #13 \tempoXoffset #-2 R2.*11
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -50,13 +50,13 @@ musicCornoIIIMvtII = \relative c' {
 	
 % Bars 56 to 60
 	
-	\mmrnDown \tempoXoffset #-1 R2.*6
+	\mmrnDown \tempoXoffset #-1 \mmrLength #15 R2.*6
 % Bars 61 to 65
 	
 	
-	\mmrnDown \mmrLength #7 \tempoXoffset #0.5 R2.*2
+	\mmrnDown \mmrLength #13 \tempoXoffset #0.5 R2.*2
 	\bar "||" \key c \major \mark \default
-	\mmrLength #2.8 \tempoXoffset #-1 R2.*18
+	\mmrLength #23 \tempoXoffset #-1 R2.*18
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -66,7 +66,7 @@ musicCornoIIIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*4
+	\mmrLength #15 R2.*4
 % Bars 86 to 90
 	
 	\ni \mmrPos #-4 R2.
@@ -78,10 +78,10 @@ musicCornoIIIMvtII = \relative c' {
 	d2.\p~
 	d_\dimmarkup~
 	d\> \mark \default
-	\tempoXoffset #0.5 g2\p g8 e
+	\tempoXoffset #1 g2\p g8 e
 % Bars 96 to 100
 	g4 r8 g(--\< b-- g--)\!
-	d4 \tuplet 3/2 4 {e8\> e e} e4
+	d4 \tuplet 3/2 4 {e8\> e e} e4\!
 	d_\dimD c b
 	c\p\< d e
 	f!2.\!
@@ -89,7 +89,7 @@ musicCornoIIIMvtII = \relative c' {
 	g4->\< b-> b->\!
 	c2-^\ff\> c4\!
 	\once \stemUp b( a_\dimmarkup fis)
-	g2(\p\> ees4)
+	g2(\p\> ees4)\!
 	d2_\dimD( cis4
 % Bars 106 to 110
 	d\pp c!2\fermata)
