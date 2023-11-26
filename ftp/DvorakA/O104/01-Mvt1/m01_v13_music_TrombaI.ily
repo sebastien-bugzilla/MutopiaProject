@@ -41,13 +41,14 @@ musicTrombaIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*26
+	R1*11
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	
+	R1
+	\mmrLength #20 \mmrnDown R1*14
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -69,7 +70,7 @@ musicTrombaIMvtI = \relative c'' {
 	R1*5
 % Bars 86 to 90
 	
-	\mmrLength #2.5 R1*23
+	\mmrLength #18 R1*23
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -81,7 +82,7 @@ musicTrombaIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*18
+	\mmrLength #14 R1*18
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -108,12 +109,12 @@ musicTrombaIMvtI = \relative c'' {
 	
 	
 	
-	\mmrLength #3 R1*3
+	\mmrLength #15 R1*3
 	
 % Bars 156 to 160
 	\mark \default
 	\tempoXoffset #1 R1*1
-	\mmrLength #3 \tempoXoffset #-3 R1*18
+	\mmrLength #24 \tempoXoffset #-2 R1*18
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -159,9 +160,9 @@ musicTrombaIMvtI = \relative c'' {
 	
 % Bars 221 to 225
 	
-	\mmrLength #6 R1*2
+	\mmrLength #13 R1*2
 	\mark \default
-	\mmrLength #3.2 \tempoXoffset #0.5 R1*16
+	\mmrLength #20 \mmrnDown \tempoXoffset #0.5 R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -169,7 +170,7 @@ musicTrombaIMvtI = \relative c'' {
 	
 	
 	
-	\mmrLength #2 R1*8
+	\mmrLength #15 R1*8
 % Bars 236 to 240
 	
 % Bars 241 to 245
@@ -199,15 +200,15 @@ musicTrombaIMvtI = \relative c'' {
 	d'8. d,16 d4. b8-. d-. g-.
 	d4\> d8. d16 d4\! r
 % Bars 271 to 275
-	R1*10
+	\mmrLength #18 \mmrnDown R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	\mmrLength #2 R1*3
+	\mmrLength #15 R1*3
 	
 	\mark \default
-	R1*1
-	\mmrLength #3.5 R1*18
+	\mmrLength #12 \tempoXoffset #1 R1*1
+	\mmrLength #25 R1*18
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -225,7 +226,7 @@ musicTrombaIMvtI = \relative c'' {
 % Bars 316 to 320
 	
 	\ni \mmrPos #-4 R1
-	\mmrPos #-9 R_\fermata \no
+	\mmrPos #-8 R_\fermata \no
 	g2.\ff g8. g16
 	d2 \tuplet 3/2 2 {e4-^ fis-^ g-^}
 % Bars 321 to 325
@@ -238,14 +239,14 @@ musicTrombaIMvtI = \relative c'' {
 	
 	
 	
-	\mmrLength #4 R1*12
+	\mmrLength #20 R1*12
 	
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	R1
+	\mmrLength #12 R1
 	\ni \mmrPos #-6 R1
 	\mmrPos #-9 R
 	\mmrPos #-8 R

@@ -1162,8 +1162,8 @@ cueVoiceTrombaIMvtII = \relative c {
 		\relative c'' {
 			f2(-\tweak X-offset #1 ^\markup {Clar.} g8 ees)
 			f4 r8 f( bes f)
-			d4 d( \acciaccatura f8 ees4)
-			d2~ d8 c
+			\stemUp d4 d( \acciaccatura f8 ees4)
+			d2~ \stemNeutral d8 c
 		}
 	}
 	s2.*22
@@ -1229,7 +1229,7 @@ cueVoiceTrombaIMvtIII = \relative c {
 	% bar 417 - 420
 	\transpose e c {
 		\relative c'' {
-			\cueClef tenor gis4^\markup {Vcello Solo.} a!8( gis)
+			\cueClef tenor gis4-\offset X-offset -1 ^\markup {Vcello Solo.} a!8( gis)
 			fis( e) dis( cis)
 			fis4-> b->
 			cis\trill dis8-^ cis-^ \cueClefUnset
@@ -1271,7 +1271,7 @@ cueVoiceTrombaIIMvtI = \relative c {
 	% bar 71 - 73
 	\transpose d c {
 		\relative c''' {
-			a2(^\markup {Viol.I.} ais4 b)
+			a2(-\offset X-offset -5 ^\markup {Viol.I.} ais4 b)
 			b( cis d4. fis8--)
 			fis4( a2.)
 		}
@@ -1320,7 +1320,7 @@ cueVoiceTrombaIIMvtII = \relative c {
 			f2(-\tweak X-offset #1 ^\markup {Clar.} g8 ees)
 			f4 r8 f( bes f)
 			d4 d( \acciaccatura f8 ees4)
-			d2~ d8 c
+			\once \stemUp d2~ d8 c
 		}
 	}
 	s2.*22
@@ -1390,7 +1390,7 @@ cueVoiceTrombaIIMvtIII = \relative c {
 		\relative c' {
 			fis16(^\markup {Vcello Solo.} b dis, gis) fis4
 			fis16( b dis, gis) fis4
-			fis16( b) dis, gis fis8 fis16 gis
+			fis16( b) dis, gis fis8 fis16( gis)
 			ais-. b-. cis-. dis-. e-. fis-. gis-. ais-. 
 		}
 	}

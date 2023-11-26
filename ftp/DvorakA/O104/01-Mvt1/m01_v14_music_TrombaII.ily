@@ -28,7 +28,7 @@ musicTrombaIIMvtI = \relative c'' {
 	g4 r r2
 % Bars 26 to 30
 	R1
-	r2 g,4.-\tweak X-offset #-2 \f g16 g
+	r2 g,4.\f g16 g
 	g4 r g4. g16 g
 	g8 r^\mutaind r4 r2 \transposition d
 	R1*15
@@ -41,13 +41,14 @@ musicTrombaIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*26
+	R1*11
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	
+	R1
+	\mmrLength #20 \tempoXoffset #-1  \mmrnDown R1*14
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -69,7 +70,7 @@ musicTrombaIIMvtI = \relative c'' {
 	\mmrCondens R1*5
 % Bars 86 to 90
 	
-	\mmrLength #2.5 R1*23
+	\mmrLength #22 R1*23
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -81,7 +82,7 @@ musicTrombaIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*18
+	\mmrLength #15 R1*18
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -108,12 +109,12 @@ musicTrombaIIMvtI = \relative c'' {
 	
 	
 	
-	\mmrLength #2.7 R1*3
+	\mmrLength #15 R1*3
 	
 % Bars 156 to 160
 	\mark \default
 	R1*1
-	\mmrLength #3.2 R1*18
+	\mmrLength #20 \tempoXoffset #-2 R1*18
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -141,7 +142,7 @@ musicTrombaIIMvtI = \relative c'' {
 	c4-> e!8 g c,8. c16 c'4-^~
 	c2 r4 f,
 % Bars 196 to 200
-	d8.->\brack\f f16 f2 r4
+	d8.^>\brack\f f16 f2 r4
 	d8.-> f16 f2 r4
 	e!8.-> g16 c2.->\>~
 	c8\! r r4 r2
@@ -159,9 +160,9 @@ musicTrombaIIMvtI = \relative c'' {
 	
 % Bars 221 to 225
 	
-	\tempoXoffset #-1 \mmrLength #4 \mmrnDown R1*2
+	\tempoXoffset #-1 \mmrLength #12 \mmrnDown R1*2
 	\mark \default
-	\mmrLength #1.8 \tempoXoffset #1 \mmrnDown R1*16
+	\mmrLength #14 \tempoXoffset #1 \mmrnDown R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -171,7 +172,7 @@ musicTrombaIIMvtI = \relative c'' {
 	
 	
 	
-	\mmrLength #3 \mmrnDown R1*8
+	\mmrLength #13 \mmrnDown R1*8
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -199,15 +200,15 @@ musicTrombaIIMvtI = \relative c'' {
 	d'8. d,16 d4. b8-. d-. g-.
 	d4\> d8. d16 d4\! r
 % Bars 271 to 275
-	\mmrLength #3 R1*10
+	\mmrLength #20 \mmrnDown R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	\tempoXoffset #-1.5 \mmrLength #3 R1*3
+	\mmrLength #15 R1*3
 	
 	\mark \default
-	\markLengthOn R1*1 \markLengthOff
-	\mmrLength #3.5 R1*18
+	\mmrLength #20 \tempoXoffset #3 R1*1
+	\mmrLength #22 R1*18
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -225,7 +226,7 @@ musicTrombaIIMvtI = \relative c'' {
 % Bars 316 to 320
 	
 	\ni \mmrPos #-4 R1
-	\mmrPos #-8 R1_\fermata \no
+	\mmrPos #6 R1\fermata \no
 	g2.\ff g8. g16
 	d2 \tuplet 3/2 2 {e4-^ fis-^ g-^}
 % Bars 321 to 325
@@ -237,16 +238,16 @@ musicTrombaIIMvtI = \relative c'' {
 	
 	
 	
-	\mmrLength #2.5 R1*12
+	\mmrLength #20 R1*12
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	\tempoXoffset #-2 R1*1
+	\tempoXoffset #-2 \mmrLength #12 R1*1
 	\ni \mmrPos #-6 R1
-	\mmrPos #6 R
-	\mmrPos #6 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 	\mmrPos #6 R \no
 % Bars 346 to 350
 	g4.\ff a16 b g2

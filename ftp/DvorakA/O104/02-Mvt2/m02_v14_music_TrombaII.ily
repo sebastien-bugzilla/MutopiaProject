@@ -25,18 +25,18 @@ musicTrombaIIMvtII = \relative c'' {
 	
 	
 	
-	\tempoOsp \mmrLength #2 R2.*3
+	\tempoOsp \mmrLength #12 R2.*3
 	
 % Bars 31 to 35
 	
 	\tempoOsp \mmrLength #2 R2.*2
 	
 	\once \ni R2.\fermata \mark \default
-	\ni \mmrPos #-6 R2.
+	\ni \mmrPos #-4 R2.
 % Bars 36 to 40
+	\mmrPos #-4 R
 	\mmrPos #-6 R
-	\mmrPos #-6 R
-	\mmrPos #-6 R \no \bar "||" \key a \minor
+	\mmrPos #-4 R \no \bar "||" \key a \minor
 	g2\ff g4
 	g r d8. d16
 % Bars 41 to 45
@@ -58,7 +58,7 @@ musicTrombaIIMvtII = \relative c'' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-6 R \no \bar "||" \key c \major \mark \default
-	\tempoXoffset #1 d2\f d4
+	\tempoXoffset #1 d2-\offset X-offset 1 \f d4
 % Bars 66 to 70
 	d2 d8. d16 
 	d4 d d 
@@ -71,14 +71,14 @@ musicTrombaIIMvtII = \relative c'' {
 % Bars 81 to 85
 	
 	\mark \default
-	\mmrLength #2 R2.*12
+	\mmrLength #14 \mmrnDown R2.*11
 % Bars 86 to 90
 	
 % Bars 91 to 95
 	
 	
 	
-	\mark \default
+	\mmrLength #10 R2. \mark \default
 	R2.*11
 % Bars 96 to 100
 	
@@ -94,12 +94,12 @@ musicTrombaIIMvtII = \relative c'' {
 	
 	
 	
-	R2.*4
+	\mmrLength #15 R2.*4
 % Bars 121 to 125
 	
 	
 	
-	\tempoXoffset #-2 R2.*4
+	\tempoXoffset #-2 \mmrLength #12 R2.*4
 	
 % Bars 126 to 130
 	

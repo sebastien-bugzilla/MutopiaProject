@@ -18,7 +18,7 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part06_Trombe.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
@@ -58,17 +58,13 @@
 				\InCueContext \cueVoiceTrombaIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTrombaIMvtI \musicTrombaIMvtI
+				\timeMvtI \nameTrombaIMvtI \musicTrombaIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -86,17 +82,13 @@
 				\InCueContext \cueVoiceTrombaIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameTrombaIMvtII \musicTrombaIMvtII
+				\timeMvtII \nameTrombaIMvtII \musicTrombaIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.5 \bold 2.
 			}
 		}
 		\layout {
@@ -114,17 +106,13 @@
 				\InCueContext \cueVoiceTrombaIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTrombaIMvtIII \musicTrombaIMvtIII
+				\timeMvtIII \nameTrombaIMvtIII \musicTrombaIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #0.9 \bold {3. Finale.}
 			}
 		}
 		\layout {
@@ -142,21 +130,16 @@
 				\InCueContext \cueVoiceTrombaIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTrombaIIMvtI \musicTrombaIIMvtI
+				\timeMvtI \nameTrombaIIMvtI \musicTrombaIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			system-count = 14
 		}
 	}
 	\score {
@@ -171,21 +154,16 @@
 				\InCueContext \cueVoiceTrombaIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameTrombaIIMvtII \musicTrombaIIMvtII
+				\timeMvtII \nameTrombaIIMvtII \musicTrombaIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1 \bold 2.
 			}
 		}
 		\layout {
-			system-count = 5
 		}
 	}
 	\score {
@@ -200,21 +178,16 @@
 				\InCueContext \cueVoiceTrombaIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTrombaIIMvtIII \musicTrombaIIMvtIII
+				\timeMvtIII \nameTrombaIIMvtIII \musicTrombaIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2 \bold {3. Finale.}
 			}
 		}
 		\layout {
-			system-count = 16
 		}
 	}
 }

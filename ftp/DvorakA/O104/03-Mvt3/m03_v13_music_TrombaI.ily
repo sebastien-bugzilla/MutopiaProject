@@ -101,7 +101,7 @@ musicTrombaIMvtIII = \relative c'' {
 % Bars 141 to 145
 	
 	\mark \default
-	R2*14
+	\mmrLength #18 \mmrnDown R2*14
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -110,17 +110,19 @@ musicTrombaIMvtIII = \relative c'' {
 	
 	\tempoOsp \mmrnDown R2*2
 	
-	\tempoOsp \mmrnDown R2*7
+	\tempoOsp \mmrnDown \mmrLength #12 R2*7
 	
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	\mmrnDown R2 \mark \default
-	R2*32
+	\mmrLength #12 R2*5
 % Bars 171 to 175
 	
+	\mmrLength #14 R2*5
 % Bars 176 to 180
 	
+	R2*22
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -165,9 +167,9 @@ musicTrombaIMvtIII = \relative c'' {
 	
 % Bars 241 to 245
 	
-	\mmrLength #3 R2*4
+	\mmrLength #12 R2*4
 % Bars 246 to 250
-	\mmrLength #4 \tempoXoffset #-1.5 R2*4
+	\mmrLength #12 \tempoXoffset #-1.5 R2*4
 	
 	
 	
@@ -198,12 +200,12 @@ musicTrombaIMvtIII = \relative c'' {
 	R2*4
 % Bars 276 to 280
 	
-	\mmrLength #4 R2*2
+	\mmrLength #11 R2*2
 	
 	R2*2
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*16
+	\mmrLength #20 \tempoXoffset #-1 \mmrnDown R2*16
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -214,7 +216,7 @@ musicTrombaIMvtIII = \relative c'' {
 % Bars 301 to 305
 	R2*2
 	
-	\mmrLength #2 R2*11
+	\mmrLength #12 R2*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -222,7 +224,7 @@ musicTrombaIMvtIII = \relative c'' {
 	
 	
 	R2 \mark \default
-	\tempoXoffset #0.5 R2*16
+	\tempoXoffset #0.5 \mmrLength #15 R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -245,15 +247,20 @@ musicTrombaIMvtIII = \relative c'' {
 	\mmrnDown \tempoOsp R2*2
 % Bars 346 to 350
 	\bar "||" \key c \major
-	R2*30
+	\mmrLength #12 R2*16
 % Bars 351 to 355
 	
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
+	
+	R2*4
 % Bars 366 to 370
 	
+	\mmrLength #12 R2*2
+	
+	\mmrLength #12 R2*8
 % Bars 371 to 375
 	
 % Bars 376 to 380
@@ -303,7 +310,7 @@ musicTrombaIMvtIII = \relative c'' {
 	
 % Bars 436 to 440
 	
-	\mmrLength #2 \tempoXoffset #-1 R2*7
+	\mmrLength #15 \tempoXoffset #-2 R2*7
 % Bars 441 to 445
 	
 	
@@ -314,16 +321,16 @@ musicTrombaIMvtIII = \relative c'' {
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no \mark \default
-	\tempoXoffset #2.5 r4 d,^\soleconsord\pp
+	\tempoXoffset #3 r4 d,^\soleconsord\pp
 	g \once \tupletDown \tuplet 3/2 4 {a8--( b-- a--)}
 % Bars 451 to 455
 	g4 d
 	g \tuplet 3/2 4 {a8(-- b-- a--)}
 	g4 \tuplet 3/2 4 {a8(-- b-- a--)}
 	g4 \tuplet 3/2 4 {a8(-- b-- a--)}
-	g8(-- a-- b-- g--)
+	g8([-- a-- b-- g--])
 % Bars 456 to 460
-	a(-- b-- g-- a--)
+	a[(-- b-- g-- a--)]
 	b2\ppp~
 	b~
 	b8 r r4
@@ -355,9 +362,9 @@ musicTrombaIMvtIII = \relative c'' {
 	f4-^ f8 ees16-.-^ f-.-^
 	g4 d'
 % Bars 506 to 510
-	c8-. b!-. a-. g-.
+	c8-.[ b!-. a-. g-.]
 	g4 d'
-	c8-. b-. a-. g-.
+	c8-.[ b-. a-. g-.]
 	g8[\ff r16 g g8 r16 g]
 	g8[ r16 g g8 r16 g]
 % Bars 511 to 515
