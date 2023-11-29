@@ -26,12 +26,16 @@ musicTromboneIIIMvtII = \relative c {
 	c2( e4)
 % Bars 21 to 25
 	a,2 r4
-	R2.*12
+	R2.*7
 % Bars 26 to 30
+	
+	
+	
+	\mmrLength #12 R2.*3
 	
 % Bars 31 to 35
 	
-	
+	R2.*2
 	
 	\once \ni R2.\fermata \mark \default
 	\ni \mmrPos #-6 R2.
@@ -39,7 +43,7 @@ musicTromboneIIIMvtII = \relative c {
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no \bar "||" \key g \minor
-	g2\ff g4~
+	g2-\offset X-offset -3 \ff g4~
 	g8 r g4 g
 % Bars 41 to 45
 	d' d16-> f-> ees-> d-> d4
@@ -56,13 +60,13 @@ musicTromboneIIIMvtII = \relative c {
 % Bars 56 to 60
 	
 	aes2.\pp\<(
-	beses)\>
-	aes\pp\<(
+	\hairpinShorten #'(0 . -1) \after 2.*5/6 \! beses)\>
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur aes\pp\<(
 	beses\>
 % Bars 61 to 65
 	aes8\pp) r r4 r
 	R2.
-	\mmrLength #5.5 \mmrnDown R2.*2
+	\mmrLength #12 \mmrnDown R2.*2
 	\bar "||" \key g \major \mark \default
 	b2\f b4
 % Bars 66 to 70
@@ -78,19 +82,19 @@ musicTromboneIIIMvtII = \relative c {
 	
 	\mark \default
 	\tempoXoffset #1.5 r4 c2\p\<(
-	des2.)(\>
+	\once \stemUp des2.)(\>
 	c8)\! r r4 c\p\<(
 % Bars 86 to 90
-	des2.)(\>
+	\once \stemUp des2.)(\>
 	c8\!) r r4 r
-	\mmrCondens R2.*7
+	\mmrCondens R2.*6
 	
 	
 % Bars 91 to 95
 	
 	
 	
-	\mark \default
+	\mmrLength #10 R2. \mark \default
 	R2.*11
 % Bars 96 to 100
 	

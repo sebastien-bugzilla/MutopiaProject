@@ -9,7 +9,7 @@ musicTubaMvtIII = \relative c, {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*36
+	\mmrLength #43 R2*36
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -110,11 +110,11 @@ musicTubaMvtIII = \relative c, {
 	
 	
 	
-	\tempoXoffset #-3 R2*3
+	\mmrLength #14 R2*3
 % Bars 141 to 145
 	
 	\mark \default
-	R2*14
+	\mmrLength #20 \mmrnDown R2*14
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -128,11 +128,13 @@ musicTubaMvtIII = \relative c, {
 	
 % Bars 166 to 170
 	\tempoOsp \mmrnDown R2*1 \mark \default
-	R2*32
+	\mmrLength #10 R2*5
 % Bars 171 to 175
 	
+	\mmrLength #11 R2*5
 % Bars 176 to 180
 	
+	R2*22
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -161,7 +163,7 @@ musicTubaMvtIII = \relative c, {
 	
 	
 	
-	e8.\f e16 e8 r
+	e8.-\offset X-offset -2 \f e16 e8 r
 	g8. e16 e8 r
 % Bars 216 to 220
 	e8 r r4
@@ -185,13 +187,13 @@ musicTubaMvtIII = \relative c, {
 	\mmrPos #-6 R \no
 % Bars 241 to 245
 	c'2\pp~
-	c
+	\tempoXoffset #-2 c
 	e,(
 	cis!
 	fis
 % Bars 246 to 250
 	b,4) r
-	R2*7
+	\mmrnDown R2*7
 	
 	
 	
@@ -223,7 +225,7 @@ musicTubaMvtIII = \relative c, {
 	
 % Bars 276 to 280
 	
-	\mmrLength #4 R2*2
+	\mmrLength #12 R2*2
 	
 	R2*2
 	\bar "||" \mark \default
@@ -239,15 +241,15 @@ musicTubaMvtIII = \relative c, {
 % Bars 301 to 305
 	\tempoOsp \mmrnDown R2*2
 	
-	\mmrLength #3 R2*11
+	\mmrLength #18 \mmrnDown R2*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 	
 	
-	R2*1 \mark \default
-	\tempoXoffset #3 R2*16
+	\tempoXoffset #-0.5 \mmrnDown R2*1 \mark \default
+	R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -270,7 +272,7 @@ musicTubaMvtIII = \relative c, {
 	\tempoOsp \mmrnDown R2*2
 % Bars 346 to 350
 	\bar "||" \key b \major
-	\mmrLength #2 \tempoXoffset #-4 R2*16
+	\mmrLength #21 \tempoXoffset #-4 R2*16
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -319,11 +321,11 @@ musicTubaMvtIII = \relative c, {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 % Bars 421 to 425
-	b2\f->
+	b2-\offset X-offset #1 \f^>
 	gis'->
 	e->~
 	e
-	b->_\fzdimD\>~
+	b^>_\fzdimD\>~
 % Bars 426 to 430
 	b~
 	b~\pp
@@ -333,18 +335,18 @@ musicTubaMvtIII = \relative c, {
 	
 % Bars 436 to 440
 	
-	\tempoXoffset #-2 R2*7
+	\tempoXoffset #-2 \mmrLength #15 R2*7
 % Bars 441 to 445
 	
 	
 	
-	\mmrLength #2 R2*5
+	\mmrLength #14 \tempoXoffset #0 R2*5
 	
 % Bars 446 to 450
 	
 	
 	\mark \default
-	\mmrLength #2.5 R2*28
+	\tempoXoffset #1 \mmrLength #12 \mmrnDown R2*28
 % Bars 451 to 455
 	
 % Bars 456 to 460

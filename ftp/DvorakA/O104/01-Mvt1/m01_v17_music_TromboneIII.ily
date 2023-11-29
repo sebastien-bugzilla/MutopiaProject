@@ -9,7 +9,7 @@ musicTromboneIIIMvtI = \relative c' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*18
+	\mmrLength #30 R1*18
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -44,13 +44,14 @@ musicTromboneIIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R1*26
+	R1*11
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	
+	R1
+	\mmrLength #18 \mmrnDown R1*14
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -88,7 +89,7 @@ musicTromboneIIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R1*18
+	\mmrLength #15 R1*18
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -106,7 +107,7 @@ musicTromboneIIIMvtI = \relative c' {
 	
 	R1*2
 	
-	\mmrLength #1.5 R1*14
+	\mmrLength #12 R1*14
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -115,12 +116,12 @@ musicTromboneIIIMvtI = \relative c' {
 	
 	
 	
-	R1*3
+	\mmrLength #15 R1*3
 	
 % Bars 156 to 160
-	\markXoffset #-0.2 \mark \default
+	\mark \default
 	R1*1
-	\mmrLength #3.2 \tempoXoffset #-3 R1*18
+	\mmrLength #26 \tempoXoffset #-3 R1*18
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -162,16 +163,16 @@ musicTromboneIIIMvtI = \relative c' {
 	
 	aes1\pp~ \mark \default
 	aes8 r r4 r2
-	R1*14
+	R1*12
 % Bars 211 to 215
 	
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
-	
+	R1*2
 	\mark \default
-	\mmrLength #3 R1*16
+	\mmrLength #18 \mmrnDown R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -181,7 +182,7 @@ musicTromboneIIIMvtI = \relative c' {
 	
 	
 	
-	\mmrLength #2 R1*8
+	\mmrLength #15 \mmrnDown R1*8
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -209,15 +210,15 @@ musicTromboneIIIMvtI = \relative c' {
 	fis'2 b,4 dis
 	fis2.\> r4\!
 % Bars 271 to 275
-	\tempoXoffset #-4 R1*10
+	\tempoXoffset #-2 \mmrLength #18 \mmrnDown R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	\mmrLength #2 \tempoXoffset #-2.5 \tempoOsp R1*3
+	\mmrLength #14 \tempoXoffset #-1.5 \tempoOsp R1*3
 	
 	\mark \default
-	R1*1
-	\mmrLength #3 \tempoXoffset #-2 R1*18
+	\mmrLength #10 \tempoXoffset #1 \mmrnDown R1*1
+	\mmrLength #20 \tempoXoffset #-2 R1*18
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -255,10 +256,10 @@ musicTromboneIIIMvtI = \relative c' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 	r8 cis4\pp r8 r4 fis,
-	R1*3
+	R1*2
 	
 % Bars 341 to 345
-	
+	\mmrLength #15 R1
 	b4\ff r8. dis16 b2
 	ais4 r8. fis16 ais2
 	gis4 r8. b16 gis4-. fis-.
@@ -272,6 +273,6 @@ musicTromboneIIIMvtI = \relative c' {
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {b8 b b} b4 b
 	b2 b4. b8
-	b1\<
+	\after 1*7/8 \! b1\<
 	b4\f r r2 \markupfermata \bar "|."
 }

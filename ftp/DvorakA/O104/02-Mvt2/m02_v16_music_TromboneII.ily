@@ -31,7 +31,7 @@ musicTromboneIIMvtII = \relative c {
 	
 	
 	
-	\tempoXoffset #-1 R2.*3
+	\tempoXoffset #-1 \mmrLength #12 R2.*3
 	
 % Bars 31 to 35
 	
@@ -66,7 +66,7 @@ musicTromboneIIMvtII = \relative c {
 % Bars 61 to 65
 	aes8\pp) r r4 r
 	R2.
-	\tempoXoffset #-1.5 \mmrnDown R2.*2
+	\tempoXoffset #-1.5 \mmrLength #11 \mmrnDown R2.*2
 	\bar "||" \key g \major \mark \default
 	fis2\f fis4
 % Bars 66 to 70
@@ -80,8 +80,8 @@ musicTromboneIIMvtII = \relative c {
 	
 % Bars 81 to 85
 	
-	\mark \default
-	\mmrLength #2 \mmrnDown R2.*12
+	\markXoffset #-0.2 \mark \default
+	\mmrLength #19 \mmrnDown R2.*11
 	
 	
 % Bars 86 to 90
@@ -90,7 +90,7 @@ musicTromboneIIMvtII = \relative c {
 	
 	
 	
-	\mark \default
+	\mmrLength #10 R2. \mark \default
 	R2.*11
 % Bars 96 to 100
 	

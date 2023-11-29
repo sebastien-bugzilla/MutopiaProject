@@ -110,18 +110,18 @@ musicTromboneIMvtIII = \relative c' {
 	
 	
 	
-	\tempoXoffset #-1 R2*3
+	\tempoXoffset #-3 R2*3
 % Bars 141 to 145
 	
 	\mark \default
-	R2*14
+	\mmrLength #15 \mmrnDown R2*14
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
 	\tempoOsp \mmrnDown R2*2
 	
-	\tempoOsp \mmrnDown R2*7
+	\tempoOsp \mmrnDown \mmrLength #12 R2*7
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -131,10 +131,10 @@ musicTromboneIMvtIII = \relative c' {
 	R2*5
 % Bars 171 to 175
 	
-	\tempoXoffset #-1 R2*5
+	\mmrLength #12 \tempoXoffset #-1 R2*5
 % Bars 176 to 180
 	
-	\mmrLength #1.8 R2*22
+	\mmrLength #18 R2*22
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -220,12 +220,12 @@ musicTromboneIMvtIII = \relative c' {
 	R2*4
 % Bars 276 to 280
 	
-	\mmrLength #4 R2*2
+	\mmrLength #4 \tempoXoffset #-2 R2*2
 	
 	R2*2
 	\bar "||" \mark \default
 % Bars 281 to 285
-	R2*16
+	\mmrLength #20 \mmrnDown R2*16
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -236,7 +236,7 @@ musicTromboneIMvtIII = \relative c' {
 % Bars 301 to 305
 	\tempoXoffset #-1 \mmrnDown R2*2
 	
-	\mmrLength #1.5 \tempoXoffset #-1 R2*11
+	\mmrLength #12 \tempoXoffset #-1 R2*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -244,7 +244,7 @@ musicTromboneIMvtIII = \relative c' {
 	
 	
 	\tempoXoffset #-0.2 R2*1 \mark \default
-	R2*16
+	\mmrLength #14 R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -267,7 +267,7 @@ musicTromboneIMvtIII = \relative c' {
 	\tempoOsp \mmrnDown R2*2
 % Bars 346 to 350
 	\bar "||" \key b \major
-	\tempoXoffset #-6 \mmrLength #1.5 R2*16
+	\tempoXoffset #-6 \mmrLength #19 R2*16
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -278,7 +278,7 @@ musicTromboneIMvtIII = \relative c' {
 	R2*4
 % Bars 366 to 370
 	
-	\tempoXoffset #-2 R2*2
+	\mmrLength #15 R2*2
 	
 	R2*8
 % Bars 371 to 375
@@ -320,7 +320,7 @@ musicTromboneIMvtIII = \relative c' {
 	dis->
 	gis->~
 	gis
-	fis->_\fzdim~
+	fis->-\offset X-offset #-1 _\fzdim~
 % Bars 426 to 430
 	fis~\>
 	fis\pp~
@@ -330,18 +330,18 @@ musicTromboneIMvtIII = \relative c' {
 	
 % Bars 436 to 440
 	
-	\mmrLength #2 \tempoXoffset #-2 R2*7
+	\mmrLength #16 \tempoXoffset #-2 R2*7
 % Bars 441 to 445
 	
 	
 	
-	\tempoXoffset #-1 \mmrLength #1.7 R2*5
+	\tempoXoffset #-1 \mmrLength #13 R2*5
 	
 % Bars 446 to 450
 	
 	
 	\mark \default
-	\tempoXoffset #1 R2*28
+	\mmrLength #12 \tempoXoffset #1 R2*28
 % Bars 451 to 455
 	
 % Bars 456 to 460

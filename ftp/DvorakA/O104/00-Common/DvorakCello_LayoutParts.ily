@@ -30,14 +30,14 @@
 %		\override Rest.transparent = ##t
 %		\override StaffSymbol.transparent = ##t
 	}
-%	\context {
-%		\CueVoice
-%		fontSize = #-3
-%		\override Stem.length-fraction = #0.85
-%		\override TupletBracket.bracket-visibility = ##f
-%		\override StemTremolo.beam-thickness = #0.35 
-%		%\override Font.font-size = #+5
-%	}
+	\context {
+		\CueVoice
+		fontSize = #-3
+		\override Stem.length-fraction = #0.85
+		\override TupletBracket.bracket-visibility = ##f
+		\override StemTremolo.beam-thickness = #0.35 
+		%\override Font.font-size = #+5
+	}
 	\context {
 		\Staff
 		\consists #Measure_counter_engraver

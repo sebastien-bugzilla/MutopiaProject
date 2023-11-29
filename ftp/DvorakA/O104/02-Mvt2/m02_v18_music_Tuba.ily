@@ -26,10 +26,10 @@ musicTubaMvtII = \relative c, {
 	
 	
 	
-	\tempoOsp \mmrnDown \tempoXoffset #-1 R2.*3
+	\tempoOsp \mmrnDown \tempoXoffset #-2 R2.*3
 % Bars 31 to 35
 	
-	\tempoOsp \mmrnDown \mmrLength #3 R2.*2
+	\tempoOsp \mmrnDown \mmrLength #12 R2.*2
 	
 	\once \ni R2.\fermata \mark \default
 	\ni \mmrPos #-4 R2.
@@ -37,7 +37,7 @@ musicTubaMvtII = \relative c, {
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no \bar "||" \key g \minor
-	g2\ff g4~
+	g2-\offset X-offset 2 \ff g4~
 	g8 r g4 g
 % Bars 41 to 45
 	d' d16-> f-> ees-> d-> d4
@@ -53,12 +53,12 @@ musicTubaMvtII = \relative c, {
 	
 % Bars 56 to 60
 	
-	\mmrLength #3 \mmrnDown R2.*6
+	\mmrLength #12 \mmrnDown R2.*6
 % Bars 61 to 65
 	
 	
-	\mmrLength #3 \mmrnDown R2.*2
-	\bar "||" \key g \major \mark \default
+	\mmrLength #12 \mmrnDown R2.*2
+	\bar "||" \key g \major \markXoffset #-0.2 \mark \default
 	\tempoXoffset #1 b2\f b4
 % Bars 66 to 70
 	b16-^ d-^ cis-^ b-^ b4 b
@@ -72,7 +72,7 @@ musicTubaMvtII = \relative c, {
 % Bars 81 to 85
 	
 	\mark \default
-	\mmrLength #2 \mmrnDown R2.*12
+	\mmrLength #14 \mmrnDown \tempoXoffset #-0.5 R2.*11
 	
 	
 % Bars 86 to 90
@@ -81,8 +81,8 @@ musicTubaMvtII = \relative c, {
 	
 	
 	
-	\mark \default
-	R2.*11
+	\tempoXoffset #-1.5 R2. \mark \default
+	\mmrLength #12 R2.*11
 % Bars 96 to 100
 	
 % Bars 101 to 105

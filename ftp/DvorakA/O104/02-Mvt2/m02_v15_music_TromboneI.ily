@@ -55,11 +55,11 @@ musicTromboneIMvtII = \relative c' {
 	
 % Bars 56 to 60
 	
-	\mmrLength #2 \tempoXoffset #-2 R2.*6
+	\mmrLength #18 \tempoXoffset #-2 R2.*6
 % Bars 61 to 65
 	
 	
-	\mmrLength #3 \tempoXoffset #-2 R2.*2
+	\mmrLength #12 R2.*2
 	\bar "||" \key g \major \mark \default
 	d'2\f d4
 % Bars 66 to 70
@@ -80,12 +80,12 @@ musicTromboneIMvtII = \relative c' {
 % Bars 86 to 90
 	des2.)(\>
 	c8\!) r r4 r
-	\mmrCondens R2.*7
+	\mmrCondens R2.*6
 % Bars 91 to 95
 	
 	
 	
-	\mark \default
+	\mmrLength #9 R2. \mark \default
 	R2.*11
 % Bars 96 to 100
 	
@@ -129,8 +129,8 @@ musicTromboneIMvtII = \relative c' {
 	\mmrPos #-7 R \no
 	r4 \hairpinShorten #'(-0.7 . -0.7) b2(\p\<
 % Bars 161 to 165
-	\hairpinShorten #'(-0.7 . -0.7) c2.)\fz\>
-	\hairpinLength #6 b2.-\tweak X-offset #1 \pp\>~
+	\hairpinShorten #'(-0.7 . -0.3) \once \stemUp c2.)\fz\>
+	\hairpinShorten #'(-0.3 . -0.5) b2.-\tweak X-offset #1 \pp\>~
 	b4\! r r
 	R2.*2
 	

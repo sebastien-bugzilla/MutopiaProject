@@ -9,7 +9,7 @@ musicTubaMvtI = \relative c, {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*18
+	\mmrLength #28 R1*18
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -48,7 +48,7 @@ musicTubaMvtI = \relative c, {
 	
 % Bars 56 to 60
 	\mmrCondens \mmrnDown R1
-	\mmrnDown R1*14
+	\mmrnDown \mmrLength #22 R1*14
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -64,7 +64,7 @@ musicTubaMvtI = \relative c, {
 	r4 r8 d' d a a r
 	r4 r8 d d a a r
 	d,4 r d r
-	d_\dimD\> r d r
+	\hairpinShorten #'(0 . -1) d_\dimD\> r d r\!
 % Bars 81 to 85
 	d\p r r2
 	R1*4
@@ -72,7 +72,7 @@ musicTubaMvtI = \relative c, {
 	
 	
 % Bars 86 to 90
-	b1-\tweak extra-offset #'(0 . -5) ^\pp~
+	\dynEO #'(0 . -5) b1^\pp~
 	\tempoXoffset #-2 b4 r r2
 	R1*22
 % Bars 91 to 95
@@ -104,7 +104,7 @@ musicTubaMvtI = \relative c, {
 	
 	R1*2
 	
-	R1*14
+	\mmrLength #13 R1*14
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -113,12 +113,12 @@ musicTubaMvtI = \relative c, {
 	
 	
 	
-	\mmrLength #2 \tempoXoffset #-1.5 R1*3
+	\mmrLength #13 \tempoXoffset #-1.5 R1*3
 	
 % Bars 156 to 160
 	\mark \default
 	R1*1
-	\mmrLength #3 \tempoXoffset #-3 R1*18
+	\mmrLength #20 \tempoXoffset #-3 R1*18
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -158,7 +158,7 @@ musicTubaMvtI = \relative c, {
 % Bars 206 to 210
 	
 	
-	aes1-\tweak extra-offset #'(0 . -4) ^\pp~ \mark \default
+	\dynEO #'(0 . -8) aes1^\pp~ \mark \default
 	aes8 r r4 r2
 	R1*12
 % Bars 211 to 215
@@ -169,7 +169,7 @@ musicTubaMvtI = \relative c, {
 	
 	\mmrnDown R1*2
 	\mark \default
-	\mmrLength #1.7 \tempoXoffset #0.5 \mmrnDown R1*16
+	\mmrLength #12 \tempoXoffset #0.5 \mmrnDown R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -179,7 +179,7 @@ musicTubaMvtI = \relative c, {
 	
 	
 	
-	\mmrLength #1.7 \tempoXoffset #-0.5 \mmrnDown R1*8
+	\mmrLength #14 \tempoXoffset #-0.5 \mmrnDown R1*8
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -207,15 +207,15 @@ musicTubaMvtI = \relative c, {
 	fis'2 b,4 dis
 	fis2.\> r4\!
 % Bars 271 to 275
-	\mmrnDown \tempoXoffset #-5 R1*10
+	\mmrnDown \tempoXoffset #-6 \mmrLength #17 R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	\mmrnDown \tempoXoffset #-2.5 \tempoOsp \mmrLength #2 R1*3
+	\mmrnDown \tempoXoffset #-2.5 \tempoOsp \mmrLength #13 R1*3
 	
 	\mark \default
 	\mmrnDown \tempoXoffset #1 R1*1
-	\mmrnDown \tempoXoffset #-2 R1*18
+	\mmrnDown \tempoXoffset #-2 \mmrLength #12 R1*18
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -233,7 +233,7 @@ musicTubaMvtI = \relative c, {
 % Bars 316 to 320
 	
 	\ni \mmrPos #-4 R1
-	\mmrPos #-6 R_\fermata \no
+	\mmrPos #7 R\fermata \no
 	b,2-\tweak X-offset #-3.3 \ff b4 cis
 	dis2 gis
 % Bars 321 to 325
@@ -257,10 +257,10 @@ musicTubaMvtI = \relative c, {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 	r8 fis'4\pp r8 r4 fis
-	R1*3
+	R1*2
 	
 % Bars 341 to 345
-	
+	\mmrnDown R1
 	b4\ff r8. dis16 b2
 	ais4 r8. fis16 ais2
 	gis4 r8. b16 gis4-. fis-.
@@ -274,6 +274,6 @@ musicTubaMvtI = \relative c, {
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {b'8 b b} b4 b
 	b2 b4. b8
-	b1\<
+	\after 1*7/8 \! b1\<
 	b,4\f r r2 \markupfermata \bar "|."
 }

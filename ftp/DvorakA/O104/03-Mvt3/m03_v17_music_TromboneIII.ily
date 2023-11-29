@@ -110,11 +110,11 @@ musicTromboneIIIMvtIII = \relative c {
 	
 	
 	
-	\tempoXoffset #-2.5 R2*3
+	\tempoXoffset #-2.5 \mmrLength #11 R2*3
 % Bars 141 to 145
 	
 	\mark \default
-	R2*14
+	\mmrLength #18 \mmrnDown R2*14
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -123,16 +123,16 @@ musicTromboneIIIMvtIII = \relative c {
 	
 	\tempoOsp \mmrnDown R2*2
 	
-	\tempoOsp \mmrnDown R2*7
+	\tempoOsp \mmrnDown \mmrLength #12 R2*7
 	
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	\tempoOsp \mmrnDown R2 \mark \default
-	\mmrLength #1.8 R2*5
+	\mmrLength #12 R2*5
 % Bars 171 to 175
 	
-	\tempoXoffset #-2 \mmrLength #1.8 R2*5
+	\tempoXoffset #-2 \mmrLength #12 R2*5
 % Bars 176 to 180
 	
 	R2*22
@@ -193,7 +193,7 @@ musicTromboneIIIMvtIII = \relative c {
 	cis!
 	cis
 % Bars 246 to 250
-	d4) r
+	\once \stemUp d4) r
 	R2*7
 	
 	
@@ -226,12 +226,12 @@ musicTromboneIIIMvtIII = \relative c {
 	
 % Bars 276 to 280
 	
-	\mmrLength #4 R2*2
+	\mmrLength #10 R2*2
 	
 	R2*2
-	\bar "||" \mark \default
+	\bar "||" \markXoffset #-0.2 \mark \default
 % Bars 281 to 285
-	R2*16
+	\mmrLength #25 \mmrnDown R2*16
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -242,7 +242,7 @@ musicTromboneIIIMvtIII = \relative c {
 % Bars 301 to 305
 	\mmrnDown R2*2
 	
-	\mmrLength #2 R2*11
+	\mmrLength #18 R2*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -250,7 +250,7 @@ musicTromboneIIIMvtIII = \relative c {
 	
 	
 	\tempoXoffset #-0.2 R2 \mark \default
-	R2*16
+	\mmrLength #15 R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -262,7 +262,7 @@ musicTromboneIIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 331 to 335
-	\tempoXoffset #1 R2*14
+	\mmrLength #12 \tempoXoffset 0.5 R2*14
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -273,7 +273,7 @@ musicTromboneIIIMvtIII = \relative c {
 	\tempoOsp \mmrnDown R2*2
 % Bars 346 to 350
 	\bar "||" \key b \major
-	R2*16
+	\mmrLength #23 \tempoXoffset #-5 R2*16
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -284,7 +284,7 @@ musicTromboneIIIMvtIII = \relative c {
 	R2*4
 % Bars 366 to 370
 	
-	\mmrLength #4 \tempoXoffset #-1  R2*2
+	\mmrLength #12 \tempoXoffset #-1  R2*2
 	
 	R2*8
 % Bars 371 to 375
@@ -336,12 +336,12 @@ musicTromboneIIIMvtIII = \relative c {
 	
 % Bars 436 to 440
 	
-	\tempoXoffset #-3 R2*7
+	\tempoXoffset #-3 \mmrLength #14 R2*7
 % Bars 441 to 445
 	
 	
 	
-	\mmrLength #2 R2*5
+	\mmrLength #2 \mmrLength #14 R2*5
 % Bars 446 to 450
 	
 	

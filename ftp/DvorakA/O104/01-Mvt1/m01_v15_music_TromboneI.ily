@@ -9,7 +9,7 @@ musicTromboneIMvtI = \relative c' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*18
+	\mmrLength #28 R1*18
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -44,11 +44,12 @@ musicTromboneIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R1*26
+	R1*11
 % Bars 46 to 50
 	
 % Bars 51 to 55
-	
+	R1
+	\mmrLength #15 \mmrnDown R1*14
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -72,7 +73,7 @@ musicTromboneIMvtI = \relative c' {
 % Bars 86 to 90
 	fis,1\pp~
 	fis4 r r2
-	R1*22
+	\mmrLength #12 R1*22
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -84,7 +85,7 @@ musicTromboneIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R1*18
+	\mmrLength #23 R1*18
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -111,12 +112,12 @@ musicTromboneIMvtI = \relative c' {
 	
 	
 	
-	\mmrLength #2.5 \tempoXoffset #-1 R1*3
+	\mmrLength #14 \tempoXoffset #-2 R1*3
 	
 % Bars 156 to 160
 	\mark \default
 	R1*1
-	\mmrLength #3.5 \tempoXoffset #-1 R1*18
+	\mmrLength #22 \mmrnDown \tempoXoffset #-1 R1*18
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -159,10 +160,10 @@ musicTromboneIMvtI = \relative c' {
 % Bars 216 to 220
 	
 % Bars 221 to 225
-	\mmrnDown \mmrLength #4 \tempoXoffset #-0.5 R1*2
+	\mmrnDown \mmrLength #11 \tempoXoffset #-0.5 R1*2
 	
 	\mark \default
-	\mmrnDown \mmrLength #2 \tempoXoffset #1 R1*16
+	\mmrnDown \mmrLength #12 \tempoXoffset #1 R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -172,7 +173,7 @@ musicTromboneIMvtI = \relative c' {
 	
 	
 	
-	\mmrnDown \mmrLength #1.8 R1*8
+	\mmrnDown \mmrLength #14 R1*8
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -200,15 +201,15 @@ musicTromboneIMvtI = \relative c' {
 	cis2 dis
 	cis2.\> r4\!
 % Bars 271 to 275
-	\mmrLength #2 \tempoXoffset #-2.5 R1*10
+	\mmrLength #18 \mmrnDown \tempoXoffset #-2.5 R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	\tempoXoffset #-2.5 \mmrLength #2 R1*3
+	\tempoXoffset #-2.5 \mmrLength #12 R1*3
 	
 	\mark \default
 	\mmrnDown \tempoXoffset #1 R1*1
-	\mmrLength #3 \mmrnDown \tempoXoffset #-2 R1*18
+	\mmrLength #20 \mmrnDown \tempoXoffset #-2 R1*18
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -226,7 +227,7 @@ musicTromboneIMvtI = \relative c' {
 % Bars 316 to 320
 	
 	\ni \mmrPos #-4 R1
-	\mmrPos #-7 R_\fermata \no
+	\mmrPos #6 R\fermata \no
 	dis2\ff b4 cis
 	dis2 dis
 % Bars 321 to 325
@@ -263,6 +264,6 @@ musicTromboneIMvtI = \relative c' {
 % Bars 351 to 354
 	r4 \tuplet 3/2 4 {dis8 dis dis} dis4 dis
 	dis2 dis4. dis8
-	dis1\<
+	\after 1*7/8 \! dis1\<
 	b4\f r r2 \markupfermata \bar "|."
 }

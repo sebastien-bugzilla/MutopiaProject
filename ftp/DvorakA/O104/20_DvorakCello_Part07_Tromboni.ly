@@ -18,7 +18,7 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part07_Tromboni.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
@@ -46,7 +46,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Tromboni"
 		}
 		instrument = \markup {
 			"Tromboni"
@@ -64,17 +64,13 @@
 				\InCueContext \cueVoiceTromboneIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTromboneIMvtI \musicTromboneIMvtI
+				\timeMvtI \nameTromboneIMvtI \musicTromboneIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -92,17 +88,13 @@
 				\InCueContext \cueVoiceTromboneIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameTromboneIMvtII \musicTromboneIMvtII
+				\timeMvtII \nameTromboneIMvtII \musicTromboneIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.9 \bold 2.
 			}
 		}
 		\layout {
@@ -120,17 +112,13 @@
 				\InCueContext \cueVoiceTromboneIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTromboneIMvtIII \musicTromboneIMvtIII
+				\timeMvtIII \nameTromboneIMvtIII \musicTromboneIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1 \bold {3. Finale.}
 			}
 		}
 		\layout {
@@ -148,17 +136,13 @@
 				\InCueContext \cueVoiceTromboneIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTromboneIIMvtI \musicTromboneIIMvtI
+				\timeMvtI \nameTromboneIIMvtI \musicTromboneIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -176,17 +160,13 @@
 				\InCueContext \cueVoiceTromboneIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameTromboneIIMvtII \musicTromboneIIMvtII
+				\timeMvtII \nameTromboneIIMvtII \musicTromboneIIMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.3 \bold 2.
 			}
 		}
 		\layout {
@@ -204,17 +184,13 @@
 				\InCueContext \cueVoiceTromboneIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTromboneIIMvtIII \musicTromboneIIMvtIII
+				\timeMvtIII \nameTromboneIIMvtIII \musicTromboneIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1.2 \bold {3. Finale.}
 			}
 		}
 		\layout {
@@ -232,17 +208,13 @@
 				\InCueContext \cueVoiceTromboneIIIMvtI 
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTromboneIIIMvtI \musicTromboneIIIMvtI
+				\timeMvtI \nameTromboneIIIMvtI \musicTromboneIIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -260,17 +232,13 @@
 				\InCueContext \cueVoiceTromboneIIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameTromboneIIIMvtII \musicTromboneIIIMvtII
+				\timeMvtII \nameTromboneIIIMvtII \musicTromboneIIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.7 \bold 2.
 			}
 		}
 		\layout {
@@ -288,17 +256,13 @@
 				\InCueContext \cueVoiceTromboneIIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTromboneIIIMvtIII \musicTromboneIIIMvtIII
+				\timeMvtIII \nameTromboneIIIMvtIII \musicTromboneIIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Finale.}
 			}
 		}
 		\layout {
@@ -316,21 +280,16 @@
 				\InCueContext \cueVoiceTubaMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTubaMvtI \musicTubaMvtI
+				\timeMvtI \nameTubaMvtI \musicTubaMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
-			system-count = 12
 		}
 	}
 	\score {
@@ -345,17 +304,13 @@
 				\InCueContext \cueVoiceTubaMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameTubaMvtII \musicTubaMvtII
+				\timeMvtII \nameTubaMvtII \musicTubaMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -373,17 +328,13 @@
 				\InCueContext \cueVoiceTubaMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTubaMvtIII \musicTubaMvtIII
+				\timeMvtIII \nameTubaMvtIII \musicTubaMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #3.8 \bold {3. Finale.}
 			}
 		}
 		\layout {
