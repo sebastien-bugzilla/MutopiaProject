@@ -9,14 +9,14 @@ musicTimpaniMvtII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	\mmrLength #1.7 R2.*13
+	\mmrLength #19 R2.*13
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
 	\mark \default
-	\mmrLength #1.7 R2.*15
+	\mmrLength #15 R2.*15
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -52,13 +52,13 @@ musicTimpaniMvtII = \relative c {
 	
 % Bars 56 to 60
 	
-	\mmrLength #2 \mmrnDown R2.*6 
+	\mmrLength #12 \mmrnDown R2.*6 
 % Bars 61 to 65
 	
 	
-	\mmrLength #6 \mmrnDown R2.*2
-	\bar "||" \mark \default
-	\mmrLength #2.7 \tempoXoffset #-0.8 R2.*18
+	\mmrLength #12 \mmrnDown R2.*2
+	\bar "||" \markXoffset #-0.1 \mark \default
+	\mmrLength #25 R2.*18
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -79,8 +79,8 @@ musicTimpaniMvtII = \relative c {
 	\mmrPos #-4 R \no
 	d'2.:32-\tweak extra-offset #'(-1 . -8) ^\pp
 	d:
-	d: \markXoffset #-0.1 \mark \default
-	d8 r r4 r
+	\tempoXoffset #-2.5 d: \mark \default
+	\tempoXoffset #1 d8 r r4 r
 % Bars 96 to 100
 	\mmrCondens R2.*9
 % Bars 101 to 105

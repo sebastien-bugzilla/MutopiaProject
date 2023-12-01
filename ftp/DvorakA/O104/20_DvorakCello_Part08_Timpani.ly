@@ -18,7 +18,7 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part08_Timpani.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
@@ -34,11 +34,11 @@
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
 			\center-column {
-				"Part for Timpani"
+				"Part for Timpani and Triangolo"
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Timpani and Triangolo"
 		}
 		instrument = \markup {
 			"Timpani"
@@ -56,17 +56,13 @@
 				\InCueContext \cueVoiceTimpaniMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameTimpaniMvtI \musicTimpaniMvtI
+				\timeMvtI \nameTimpaniMvtI \musicTimpaniMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -84,17 +80,13 @@
 				\InCueContext \cueVoiceTimpaniMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameTimpaniMvtII \musicTimpaniMvtII
+				\timeMvtII \nameTimpaniMvtII \musicTimpaniMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #2 \bold 2.
 			}
 		}
 		\layout {
@@ -112,17 +104,13 @@
 				\InCueContext \cueVoiceTimpaniMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTimpaniMvtIII \musicTimpaniMvtIII
+				\timeMvtIII \nameTimpaniMvtIII \musicTimpaniMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #0.7 \bold {3. Finale.}
 			}
 		}
 		\layout {
@@ -140,17 +128,13 @@
 				\InCueContext \cueVoiceTriangoloMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameTriangoloMvtIII \musicTriangoloMvtIII
+				\timeMvtIII \nameTriangoloMvtIII \musicTriangoloMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Finale.}
 			}
 		}
 		\layout {

@@ -1865,7 +1865,7 @@ cueVoiceTimpaniMvtIII = \relative c {
 	d,4(^\markup {Vcello Solo.} g)
 	d( g)
 	\cueClef treble \stemUp g c~
-	c8 g( fis e) \cueClefUnset \stemNeutral
+	c8[ g( fis e)] \cueClefUnset \stemNeutral
 	s2*74
 	% bar 377 - 380
 	\cueClef treble fis16(^\markup {Vcello Solo.} b dis, gis) fis4

@@ -444,6 +444,14 @@ mmrLength = #(define-music-function
 	#}
 )
 
+mmrSpaceIncrement = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\override Staff.MultiMeasureRest.space-increment = #length 
+	#}
+)
+
 mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 mmrnDown = {

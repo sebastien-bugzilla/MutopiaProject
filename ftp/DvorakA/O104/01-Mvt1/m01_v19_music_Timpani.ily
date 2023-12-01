@@ -60,7 +60,7 @@ musicTimpaniMvtI = \relative c, {
 	
 % Bars 56 to 60
 	\mmrnDown R1*1
-	R1*14
+	\mmrLength #15 \mmrnDown R1*14
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -98,7 +98,7 @@ musicTimpaniMvtI = \relative c, {
 	
 	
 	\mark \default
-	R1*18
+	\mmrLength #15 R1*18
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -127,12 +127,12 @@ musicTimpaniMvtI = \relative c, {
 	
 	
 	
-	\mmrLength #3 R1*3
+	\mmrLength #15 R1*3
 	
 % Bars 156 to 160
 	\mark \default
 	R1*1
-	\mmrLength #3.5 \tempoXoffset #-0.5  R1*18
+	\mmrLength #25 \mmrnDown \tempoXoffset #-0.5  R1*18
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -183,8 +183,8 @@ musicTimpaniMvtI = \relative c, {
 % Bars 221 to 225
 	
 	
-	\mark \default
-	\mmrLength #3 \mmrnDown \tempoXoffset #0.5 R1*16
+	\markXoffset #-0.1 \mark \default
+	\mmrLength #20 \mmrnDown \tempoXoffset #0.5 R1*16
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -194,7 +194,7 @@ musicTimpaniMvtI = \relative c, {
 	
 	
 	
-	\mmrnDown R1*8
+	\mmrLength #18 \mmrnDown R1*8
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -226,11 +226,11 @@ musicTimpaniMvtI = \relative c, {
 	fis:
 	fis2:\> fis4\! r
 % Bars 271 to 275
-	\mmrnDown \mmrLength #4 R1*4
+	\mmrnDown \mmrLength #14 R1*4
 	
 	
 	
-	r4 e'8[\pp r16 e] e4 r
+	r4 e'8[\pp^\solo r16 e] e4 r
 % Bars 276 to 280
 	r4 e8[ r16 e] e4 r
 	r4 e8[ r16 e] e4 r
@@ -238,11 +238,11 @@ musicTimpaniMvtI = \relative c, {
 	r4 e8[ r16 e] e4 r
 	r4 e8[ r16 e] e4 r
 % Bars 281 to 285
-	\mmrLength #3 \tempoXoffset #-1 \mmrnDown R1*3
+	\mmrLength #15 \tempoXoffset #-1 \mmrnDown R1*3
 	
-	\mark \default
+	\markXoffset #-0.1 \mark \default
 	\tempoXoffset #1.5 \mmrnDown R1*1
-	\tempoXoffset #-2.2 \mmrnDown R1*18
+	\mmrLength #15 \tempoXoffset #-2.2 \mmrnDown R1*18
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -261,7 +261,7 @@ musicTimpaniMvtI = \relative c, {
 	
 	
 	r2 r4 r8\fermata r
-	\mmrLength #4 \tempoXoffset #-1 R1*4
+	\mmrLength #18 \tempoXoffset #-1 R1*4
 % Bars 321 to 325
 	
 	

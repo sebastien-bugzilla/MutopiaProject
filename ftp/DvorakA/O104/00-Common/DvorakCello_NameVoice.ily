@@ -375,23 +375,41 @@ nameTubaMvtIII = {
 %#                   V O I C E   N A M E   :   T I M P A N I                   #
 %###############################################################################
 nameTimpaniMvtI = {
-	\set Staff.instrumentName = "Timpani"
-	\set Staff.shortInstrumentName = "Timp."
+	\set Staff.instrumentName = \markup {
+		\center-column { 
+			\lower #1 "Timpani" 
+			\concat {
+				"in F" \lower #-0.8 \fontsize #-4 \sharp "/B"
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
 nameTimpaniMvtII = {
-	\set Staff.instrumentName = "Timpani"
-	\set Staff.shortInstrumentName = "Timp."
+	\set Staff.instrumentName = \markup {
+		\center-column { 
+			\lower #1 "Timpani" "in D/G"
+		}
+	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
 nameTimpaniMvtIII = {
-	\set Staff.instrumentName = "Timpani"
-	\set Staff.shortInstrumentName = "Timp."
+	\set Staff.instrumentName = \markup {
+		\center-column { 
+			\lower #1 "Timpani" 
+			\concat {
+				"in F" \lower #-0.8 \fontsize #-4 \sharp "/B"
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
 nameTriangoloMvtIII = {
 	\set Staff.instrumentName = "Triangolo"
-	\set Staff.shortInstrumentName = "Trgl."
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
 %###############################################################################
