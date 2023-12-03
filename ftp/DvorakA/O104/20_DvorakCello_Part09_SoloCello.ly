@@ -18,7 +18,7 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part09_SoloCello.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
@@ -35,11 +35,11 @@
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
 			\center-column {
-				"Part for SoloCello"
+				"Part for Cello Solist"
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Violoncello Solo"
 		}
 		instrument = \markup {
 			"Violoncello Solo"
@@ -58,8 +58,7 @@
 					\InCueContext \cueVoiceSoloCelloMvtI
 				}
 				\new Voice {
-					\timeMvtI \generalOptions \partOptions
-					\nameSoloCelloMvtI \musicSoloCelloMvtI
+					\timeMvtI \nameSoloCelloMvtI \musicSoloCelloMvtI
 				}
 			>>
 			\new Staff = "ossia" \with {
@@ -73,10 +72,7 @@
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -94,17 +90,13 @@
 				\InCueContext \cueVoiceSoloCelloMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameSoloCelloMvtII \musicSoloCelloMvtII
+				\timeMvtII \nameSoloCelloMvtII \musicSoloCelloMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -123,8 +115,7 @@
 					\InCueContext \cueVoiceSoloCelloMvtIII
 				}
 				\new Voice {
-					\timeMvtIII \generalOptions \partOptions
-					\nameSoloCelloMvtIII \musicSoloCelloMvtIII
+					\timeMvtIII \nameSoloCelloMvtIII \musicSoloCelloMvtIII
 				}
 			>>
 			\new Staff = "ossia" \with {
@@ -138,10 +129,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1.7 \bold {3. Finale.}
 			}
 		}
 		\layout {

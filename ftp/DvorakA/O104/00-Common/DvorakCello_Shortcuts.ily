@@ -272,7 +272,7 @@ ffcolottava = {
 }
 
 fzconottavabassaadlibitum = {
-	\once \override TextSpanner.Y-extent = #'(0 . 0.5)
+	%\once \override TextSpanner.Y-extent = #'(0 . 0.5)
 	\once \override TextSpanner.bound-details.left.text = \markup {
 		\dynamic fz 
 		\italic {
@@ -284,6 +284,7 @@ fzconottavabassaadlibitum = {
 		\italic { senza \concat {8 \super va} }
 	}
 	\once \override TextSpanner.bound-details.right-broken.text = ""
+	\once \override TextSpanner.dash-period = #-1
 }
 
 setSextolet = {
@@ -295,6 +296,9 @@ unsetSextolet = {
 	\set subdivideBeams = ##f
 }
 
+LIIRI = { \set stemLeftBeamCount = #2 \set stemRightBeamCount = #1 }
+LIRII = { \set stemLeftBeamCount = #1 \set stemRightBeamCount = #2 }
+
 separateSextolet = {
 	\set Voice.beamExceptions = #'()
 	\set Voice.baseMoment = #(ly:make-moment 1/8)
@@ -305,6 +309,7 @@ unseparateSextolet = {
 	\unset Voice.baseMoment 
 	\unset Voice.beatStructure
 }
+
 
 souffletps = #"
 0.1 setlinewidth
@@ -657,6 +662,24 @@ textScriptOSp = #(define-music-function
 	#}
 )
 
+rehearsalESH = \once \override Score.RehearsalMark.extra-spacing-height = #'(-inf.0 . +inf.0)
+%rehearsalESH = #(define-music-function
+%	(ESW)
+%	(pair?)
+%	#{
+%		\once \override Score.RehearsalMark.extra-spacing-height = #ESW
+%	#}
+%)
+
+beamGap = #(define-music-function
+	(gap)
+	(number?)
+	#{
+		\once \override Beam.auto-knee-gap = #gap
+	#}
+)
+
+
 
 % footnotes:
 footnotePageII = \markup {
@@ -812,15 +835,6 @@ footnotePageX = \markup {
 %		\once \override Voice.Arpeggio.padding = #padding
 %	#}
 %)
-
-%beamGap = #(define-music-function
-%	(gap)
-%	(number?)
-%	#{
-%		\once \override Beam.auto-knee-gap = #gap
-%	#}
-%)
-
 
 %beamLeftTwoRightOne = {
 %	\set stemLeftBeamCount = #2

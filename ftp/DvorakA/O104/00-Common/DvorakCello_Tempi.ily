@@ -425,7 +425,7 @@ tempiPartMvtI = {
 		\tempo \markup { \medium \italic "ritard." }
 	}
 	\tag #'(clarinettoII fagottoI fagottoII cornoI cornoII cornoIII trombaI 
-	trombaII tromboneI tromboneII tromboneIII tuba timpani triangolo solocello 
+	trombaII tromboneI tromboneII tromboneIII tuba timpani triangolo 
 	violinoI violinoII viola violoncello contrabasso) {
 		\tempo \markup { \medium \italic "rit." }
 	}
@@ -548,7 +548,7 @@ tempiPartMvtI = {
 	% bar 240
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
-	fagottoII triangolo solocello violinoI violinoII viola violoncello ) {
+	fagottoII triangolo violinoI violinoII viola violoncello ) {
 		\tempo \markup { \medium \italic "dolce e animato" }
 	}
 	\tag #'(flautoI cornoI cornoII cornoIII trombaI trombaII tromboneI tromboneII 

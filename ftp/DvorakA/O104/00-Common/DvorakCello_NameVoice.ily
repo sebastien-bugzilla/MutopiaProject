@@ -421,11 +421,7 @@ nameSoloCelloMvtI = {
 			\lower #1 "Violoncello" "Solo"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Vlc." "Solo"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"cello"
 }
 nameSoloCelloMvtII = {
@@ -434,11 +430,7 @@ nameSoloCelloMvtII = {
 			\lower #1 "Violoncello" "Solo"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Vlc." "Solo"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"cello"
 }
 nameSoloCelloMvtIII = {
@@ -447,11 +439,7 @@ nameSoloCelloMvtIII = {
 			\lower #1 "Violoncello" "Solo"
 		}
 	}
-	\set Staff.shortInstrumentName = \markup {
-		\center-column {
-			\lower #1 "Vlc." "Solo"
-		}
-	}
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"cello"
 }
 %###############################################################################

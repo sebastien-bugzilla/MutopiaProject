@@ -53,7 +53,7 @@
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
-		\override FootnoteItem.annotation-line = ##f
+		\override Footnote.annotation-line = ##f
 		
 %		\override MetronomeMark.transparent = ##t
 

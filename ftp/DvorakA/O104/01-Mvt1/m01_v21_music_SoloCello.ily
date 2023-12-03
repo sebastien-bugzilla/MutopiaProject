@@ -47,7 +47,7 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 56 to 60
 	
 	\mmrnDown R1*1
-	\mmrnDown R1*18
+	\mmrnDown \mmrLength #15 R1*18
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -86,7 +86,7 @@ musicSoloCelloMvtI = \relative c' {
 	fis1_\ffdim~
 	fis8 a(\< c b a c dis g!)\!
 % Bars 101 to 105
-	fis!1\fz\>~
+	fis!1-\offset X-offset -1.5 \fz\>~
 	\tuplet 3/2 4 {fis8\! a(\< c b c b) a( c e dis e g)\!}
 	fis!1\fz\>\trill \clef tenor
 	\trillAccidental \flattrillmark g\p\trill
@@ -108,22 +108,22 @@ musicSoloCelloMvtI = \relative c' {
 	e8(\brack\p\< f g c)\! c(\> a f e)\!
 	dis16-.\< dis-. e-. fis-. dis-. dis-. e-. fis-. dis-. dis-. e-. fis-. dis-. dis-. e-. fis-.\!
 	dis8(\brack\p\< e fis b~ b) gis( fis e)\!
-	d'(\f-> cis) b( ais) cis( b) ais( b)
+	d'(\f-> cis) b([ ais)] cis([ b)] ais( b)
 % Bars 121 to 125
-	d(-> cis) b( ais) cis( b) ais( b)
+	d(-> cis) b([ ais)] cis([ b)] ais( b)
 	c16(\fz b c b) a!8( g16) r c16( b c b) a8( g16) r \clef treble
 	e'16(\f d e d) cis!8( b16) r e16( d e d) cis8( b16) r
 	fis'16(->\ff eis fis eis) e(-> d e d) cis(-> b cis b) a!(-> gis a g) \clef tenor
 	fis->( eis fis eis) e(-> d e d) cis(-> b cis b) a->( gis a g) \clef bass
 % Bars 126 to 130
 	fis8-^\< eis16( fis) g( fis) b( ais) d( cis) g'( fis) \clef tenor b( ais) d( cis)\! \clef treble
-	\acciaccatura g'8 \afterGrace fis1_\ffz\trill {eis16[( fis])} \mark \default
+	\acciaccatura g'8 \afterGrace fis1_\ffz\trill {eis16[( fis])} \break \mark \default
 	\textSpannerDown \ffcolottava b,4.\downbow\startTextSpan cis16 d b2\upbow
 	bes4.\downbow a16 g bes2\upbow
 	b!4.\downbow cis16 d b2\upbow
 % Bars 131 to 135
 	bes4.\downbow a16 g bes2\upbow\stopTextSpan
-	\hairpinLength #5 \hairpinShorten #'(-0.8 . -0.5) b!4(\ff\< g'2\fz) e8.->( fis32 e)
+	\hairpinShorten #'(-0.8 . -0.5) b!4(-\offset X-offset -1.5 \ff\< g'2-\offset X-offset 1 \fz) e8.->( fis32 e)
 	d8.(-> e32 d) b8.(-> cis!32 b) g8.(-\tweak extra-offset #'(-0.5 . -8) ^\dimmarkup a32 g) d'8.( cis16
 	g4) r r2
 	R1 \clef bass
@@ -153,7 +153,7 @@ musicSoloCelloMvtI = \relative c' {
 	fis( d) cis( b)
 % Bars 156 to 160
 	d( a)_\dimmarkup \acciaccatura fis'8 e4.( d8) \mark \default
-	\tempoXoffset #1 d16(_\perit fis a fis a fis a gis) a( fis a fis ais fis ais fis) \clef treble
+	d16(_\perit fis a fis a fis a gis) a( fis a fis ais fis ais fis) \clef treble
 	\setSextolet \tuplet 3/2 8 { \tupletDown b(-. g-. cis,)-. cis(-. g'-. b)-. \tupletNeutral ais(-. fis-. d)-. d(-. fis-. ais)-. b(-. g-. cis,)-. cis(-. g'-. b)-. ais(-. fis-. d)-. d(-. fis-. ais)-. 
 	b(-. g-. cis,)-. cis(-. g'-. b)-. fis(-. dis-. ais)-. ais(-. dis-. fis)-. fis(-. dis-. ais)-. ais(-. dis-. fis)-. g(-. e-. ais,)-. ais(-. e'-. g)-. 
 	b(-. g-. cis,)-. cis(-. g'-. b)-. ais(-. fis-. d)-. d(-. fis-. ais)-. b(-. g-. cis,)-. cis(-. g'-. b)-. ais(-. fis-. d)-. d(-. fis-. ais)-. 
@@ -162,27 +162,27 @@ musicSoloCelloMvtI = \relative c' {
 	d'!(-. g,-. e)-. e(-. g-. d')-. cis(-. a!-. fis)-. fis(-. a-. cis)-. d(-. g,-. e)-. e(-. g-. d')-. cis(-. a-. fis)-. fis(-. a-. cis)\!-. 
 	b(\f-. g-. cis,)-. cis(-. g'-. b)-. ais(-. fis-. d!)-. d(-. fis-. ais)-. b(-. g-. cis,)-. cis(-. g'-. b)-. ais(-. fis-. d)-. d(-. fis-. ais)-. 
 	a!(-\tweak X-offset #-3 _\dimmarkup-. f-. b,)-. b(-. f'-. a)-. gis(-. e!-. c)-. c(-. e-. gis)-. a(-. f-. b,)-. b(-. f'-. a)-. gis(-. e-. c)-. c(-. e-. gis)-. 
-	a(\>-. f-. b,)-. b(-. f'-. a)-. a(-. e-. c)-. c(-. e-. a)-. a(-. f-. c)-. c(-. f-. a)-. a(-.-\tweak extra-offset #'(19 . 2.1) ^\portamento fis-. c)-. c(-. fis-. a)\!-. } \unsetSextolet \clef tenor
+	a(\>-. f-. b,)-. b(-. f'-. a)-. a(-. e-. c)-. c(-. e-. a)-. a(-. f-. c)-. c(-. f-. a)-. a(-. fis-. c)-. c(-. fis-. a)\!-. } \unsetSextolet \clef tenor
 % Bars 166 to 170
-	ais8--(-\tweak X-offset #-1 _\mfleggieroecantabile fis16 ais \tuplet 3/2 4 {gis8-- eis-- gis--) } fis8--( dis16 fis \tuplet 3/2 4 {gis8-- eis-- gis--) }
+	\shape #'((0 . -0.2)(0 . -0.6)(0 . -0.6)(0 . -0.2)) Slur ais8--(-\tweak X-offset #-1 _\mfleggieroecantabile-\tweak extra-offset #'(0 . -0.5) ^\portamento fis16 ais \tuplet 3/2 4 {gis8-- eis-- gis--) } fis8--( dis16 fis \tuplet 3/2 4 {gis8-- eis-- gis--) }
 	fis8.( ais16 cis,2.)\>
 	fis8--_\ppdolceD( ais,16 fis' \tuplet 3/2 4 {eis8 gis, eis'} dis8-- fis,16 dis' eis8-- gis,16 eis')
 	fis8.( ais,16 cis2.) \clef bass
 	<cis, bes' e!>8.-^\arpeggio(_\fzconforza cis'16-.) bes!( a g e') <d,! b' fis'>8.-^\fz\arpeggio( e'16-.) d( cis b fis')
 % Bars 171 to 175
 	<dis, a'! fis'>8.\fz( d'!16-.) c( b a fis') <cis,! a' g'>8.(\fz e'16-.) d( cis! a a') \clef treble
-	a-.\f b(\< c) b( c4) a16-. b( c) b( c4)\!
+	a-.-\offset X-offset -1.8 \f b(\< c) b( c4) a16-. b( c) b( c4)\!
 	bes16-.\< cis!( d) cis( d4) bes16-. cis( d) cis( d4)\!
 	r16 cis(\ff\< d) cis( d) cis( d) cis( d) cis( d) cis( d) cis( d) cis(\!
 	d) cis( d) cis( d) cis( d) cis( e8 d) cis( b) \mark \default
 % Bars 176 to 180
 	a2 r \clef bass
-	\tuplet 3/2 4 {r8 a,\f\< a  a( a') a-.} a( g) fis( e)\!
+	\tuplet 3/2 4 {r8 a,\f\< a  a( a') a-.} a[( g]) fis( e)\!
 	g(\> fis) fis4\! r2
-	\tuplet 3/2 4 {r8 a,\f\< a  a( a') a-.} a( g) fis( e)\! \clef tenor
-	c'(\ff b) a( g) c16(\fz b c b) a8( g)
+	\tuplet 3/2 4 {r8 a,\f\< a  a( a') a-.} a[( g]) fis( e)\! \clef tenor
+	c'([\ff b)] a( g) c16(\fz b c b) a8( g)
 % Bars 181 to 185
-	bes(\fz a)  g( fis) bes16(\fz a bes a) g8( fis)
+	bes([\fz a)]  g( fis) bes16(\fz a bes a) g8( fis)
 	c'16(\fz b! c b) a8( g) d'16(\fz cis d cis) b8( a) \clef treble
 	e'16\fz d( e) d( e)\fz d( e) d( e)\fz d( e) d( e)\fz d( e) d(
 	f4)_\ffz r r2
@@ -190,7 +190,7 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 186 to 190
 	r4 \once \tupletDown \tuplet 3/2 4 {a,,,8\f\upbow cis! e a cis e} e8.\fz(\upbow fis32 g)
 	<cis,, a' e'>4\downbow\arpeggio \tuplet 3/2 4 {cis8 e g g cis e} \clef tenor g8.(\fz\upbow a32 bes)
-	<e,, cis' g'>4\arpeggio \clef bass \tuplet 3/2 4 {e8 g cis \clef tenor cis e g} \clef treble cis8.(-\tweak extra-offset #'(-1.3 . -7.8) ^\fz d32 e)
+	<e,, cis' g'>4\arpeggio \clef bass \tuplet 3/2 4 {e8 g cis \clef tenor cis e g} \clef treble \dynEO #'(-0.5 . -0.8) cis8.(^\fz d32 e)
 	cis4 cis8.(\fz d32 e) cis4 cis8.(\fz d32 e)
 	cis8.(-> d32 e) g,8.(-> a32 bes) \clef bass e,8.(-> fis32 g) cis,8.(-> d32 e)
 % Bars 191 to 195
@@ -200,26 +200,26 @@ musicSoloCelloMvtI = \relative c' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 % Bars 196 to 200
-	\mmrPos #6 R
-	\mmrPos #6 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 	\mmrPos #-4 R
 	\mmrPos #6 R
-	\mmrPos #-6 R
+	\mmrPos #-4 R
 % Bars 201 to 205
-	\mmrPos #-6 R
+	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-6 R
-	\mmrPos #-6 R
-	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-7 R
 % Bars 206 to 210
 	\mmrPos #-7 R
 	\mmrPos #4 R
 	\mmrPos #-4 R1 \mark \default
-	\mmrPos #6 R1
+	\mmrPos #4 R1
 	\mmrPos #6 R
 % Bars 211 to 215
-	\mmrPos #-6 R
-	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R
@@ -227,18 +227,18 @@ musicSoloCelloMvtI = \relative c' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 \clef treble R1
-	\mmrPos #-6 R
+	\mmrPos #-4 R
 	\mmrPos #-6 R
 % Bars 221 to 225
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no
-	\oneVoice f'''2\rest b,4\rest \clef tenor ees,\mf \mark \default
+	\oneVoice f'''2\rest b,4\rest \clef tenor ees,\mf-\offset X-offset #-4 ^\solo \mark \default
 	aes2.(_\moltoespressivoesostenuto bes8 ces)
 	aes2. aes4
 % Bars 226 to 230
 	aes2. ges8( ees)
 	aes2. aes4\<
-	gis2 ais4( b)
+	gis2 ais4( b)\!
 	b2\f ais4( gis)
 	gisis( ais) b4.(\> ais8)
 % Bars 231 to 235
@@ -261,7 +261,7 @@ musicSoloCelloMvtI = \relative c' {
 	gisis( ais) fisis'( ais,) gisis( ais) fisis'( ais,) gisis( ais) fisis'( ais,) gisis( ais) fisis'( ais,) 
 % Bars 246 to 250
 	ais( b) gis'( b,) ais( b) gis'( cisis,) cisis( dis) b'( dis,) cisis( dis) b'( dis,)
-	cisis(\< dis) dis( fis) fis( e) e( dis)\! dis(\> fis) fis( e) e( dis) cisis( dis)\! \mark \default
+	cisis(\< dis) dis( fis!) fis( e) e( dis)\! dis(\> fis) fis( e) e( dis) cisis( dis)\! \mark \default
 	cisis(\p dis) b'( dis,) cisis( dis) b'( dis,) cisis( dis) b'( dis,) cisis( dis) b'( dis,) 
 	dis( e) cis'( e,) dis( e) cis'( e,) dis( e) cis'( e,) dis( e) cis'( e,) \clef treble
 	eis( fis) d'!( fis,) eis(_\crescmarkup fis) d'( fis,) eis( fis) d'( fis,) eis( fis) d'( fis,) 
@@ -270,7 +270,7 @@ musicSoloCelloMvtI = \relative c' {
 	gis( a) fis'( a,) gis( a) fis'( a,) gis( a) fis'( a,) gis( a) fis'( a,)\!
 	a( bes) g'!( bes,) a( bes) g'( bes,) a( bes) g'( bes,) a( bes) g'( bes,) 
 	gis(\< a) fis'( a,) gis( a) fis'( a,) gis( a) fis'( a,) gis( a) fis'( a,) 
-	a( bes) g'( bes,) a( bes) g'( bes,) a( bes) g'( bes,) a( bes) g'( bes,) 
+	a( bes) g'( bes,) a( bes) g'( bes,) a( bes) g'( bes,) a( bes) g'( bes,)\!
 % Bars 256 to 260
 	gisis(\ff ais) gis'( ais,) gisis( ais) gis'( ais,) gisis( ais) gis'( ais,) gisis( ais) gis'( ais,) 
 	<<{
@@ -313,7 +313,7 @@ musicSoloCelloMvtI = \relative c' {
 	dis( b) \clef tenor ais( gis)
 	b(\> fis) cis'4.( b8)\! \mark \default
 	b8( b,16_\dimmarkup dis fis dis fis eis) fis( dis fis dis fisis dis fisis dis)
-	\setSextolet \tuplet 3/2 8 {gis16(\brack\mp-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. gis(-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. 
+	\setSextolet \tuplet 3/2 8 {gis16(-\offset X-offset -2 \brack\mp-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. gis(-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. 
 % Bars 286 to 290
 	gis(\<-. e-. ais,)-. ais(-. e'-. gis)-. dis(-. bis-. fisis)-. fisis(-. bis-. dis)\!-. dis(\>-. bis-. fisis)-. fisis(-. bis-. dis)-. e(-. cis-. fisis,)-. fisis(-. cis'-. e)\!-. \clef treble
 	gis(-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. gis(-. e-. ais,)-. ais(-. e'-. gis)-. fisis(-. dis-. b)-. b(-. dis-. fisis)-. 
@@ -324,7 +324,7 @@ musicSoloCelloMvtI = \relative c' {
 	fis!(-. d-. gis,)-. gis(-. d'-. fis)-. eis(-. cis-. a!)-. a(-. cis-. eis)-. fis(-. d-. gis,)-. gis(-. d'-. fis)\!-. eis(-. cis-. a)-. a(-. cis-. eis)-. 
 	fis(-. d!-. gis,)-. gis(-. d'-. fis)-. fis(-. cis-. a)-. a(-. cis-. fis)-. fis(-. d-. a)-. a(-. d-. fis)-. fis(-. dis-. a)-. a(-. dis-. fis)-. } \clef tenor \unsetSextolet
 	g!8(\espressivo_\mfcantabile ees16 g \tuplet 3/2 4 {f8-- d-- f--)} ees!(\espressivo c16 ees \tuplet 3/2 4 {f8-- d-- f--)}
-	ees8.(\< g16 bes,2.\>) \clef bass
+	ees8.(\< g16 \after 2.*5/6 \! bes,2.\>) \clef bass
 	ees8(_\ppdolceD\espressivo( g,16 ees' \tuplet 3/2 4 {d8-- f,-- d'--)} c\espressivo( ees,16 c' \tuplet 3/2 4 {d8-- f,-- d'--)}
 % Bars 296 to 300
 	ees8.( g,16 bes2.)
@@ -336,48 +336,48 @@ musicSoloCelloMvtI = \relative c' {
 	\footnote "(**)" #'(0 . 4) "" r16 ais(\ff b) ais( b) ais( b) ais( b) ais( b)\< ais( b) ais( b) ais( 
 	b) ais( b) ais( b) ais( b) ais(\! cis8 b) ais( gis) \mark \default
 	fis2 r \clef bass
-	\once \tupletUp \tuplet 3/2 4 {r8 fis,\f\< fis fis( fis') fis-.} fis( e)\! dis( cis)
+	\once \tupletUp \tuplet 3/2 4 {r8 fis,\f\< fis fis( fis') fis-.} fis([ e)]\! dis( cis)
 	e( dis) dis4 r2
 % Bars 306 to 310
-	\tuplet 3/2 4 {r8 fis,\< fis fis( fis') fis-.} fis( e)\! dis( cis) \clef tenor
-	a'!(\fz gis) fis( e) a16(\fz gis a gis) fis8( e)
-	g!(\fz fis) e( dis) g16(\fz fis g fis) e8( dis)
+	\tuplet 3/2 4 {r8 fis,\< fis fis( fis') fis-.} fis([ e])\! dis( cis) \clef tenor
+	a'![(\fz gis)] fis( e) a16(\fz gis a gis) fis8( e)
+	g!([\fz fis)] e( dis) g16(\fz fis g fis) e8( dis)
 	a'16( gis a gis) fis8( e) \clef treble b'16( ais b ais) gis8( fis)
 	cis'16 b( cis) b( cis) b( cis) b( cis) b( cis)\< b( cis) b( cis) b(\!
 % Bars 311 to 315
 	d4)_\ffz r r2
 	R1 \clef bass
-	r4 \once \tupletDown \tuplet 3/2 4 {fis,,,8\f\<\upbow-. ais-. cis-. fis-. ais-. cis-.\! } cis8.\upbow(\fz dis32 e)
-	<ais,, fis' cis'>8 r \once \tupletDown \tuplet 3/2 4 {ais8\upbow-. cis-. e-. e-. ais-. cis-. } \footnote "(*)" #'(-0.5 . 1) \footnotePageVII e8.(\upbow\fz fis32 g)
+	r4 \tupletYoffset #3 \hairpinShorten #'(0 . 1) \tuplet 3/2 4 {fis,,,8-\offset X-offset #-2 \f\<\upbow-. ais-. cis-. fis-. ais-. cis-.\! } cis8.\upbow(\fz dis32 e)
+	<ais,, fis' cis'>8 r \once \tupletDown \tuplet 3/2 4 {ais8\upbow-. cis-. e-. e-. ais-. cis-. } \footnote "(*)" #'(-0.5 . 0.2) \footnotePageVII e8.(\fz fis32 g)
 	<cis,, ais' e'>4\arpeggio \tuplet 3/2 4 {cis8 e ais ais cis e} \clef tenor ais8.(\fz b32 cis)
 % Bars 316 to 320
 	ais4 ais8.\fz( b32 cis) ais4 ais8.(\fz b32 cis)
-	ais8.(\fz b32 cis) e,8.(\fz fis32 g!) \clef bass cis,8.(\fz d32 e) ais,8.(\fz b32 cis)
-	\tuplet 3/2 4 {e,8-\tweak X-offset #-3.2 \ff-> fis-> g!-> cis,-> dis-> e-> ais,-> b-> cis-> } g!\fermata fis
-	\tempoXoffset #-1 b4 r r2 \clef treble
+	ais8.(\fz b32 cis) e,8.(\fz fis32 g!) \clef bass cis,8.(\fz d32 e) \dynEO #'(0 . -8.5) ais,8.(^\fz b32 cis)
+	\tuplet 3/2 4 {\beamOffset #'(0.5 . 0.5) e,8-\tweak X-offset #-1.5 \ff-> fis-> g!-> cis,-> dis-> e-> ais,-> b-> cis-> } g!\fermata fis
+	\tempoXoffset #-2 b4 r r2 \clef treble
 	\ni \mmrPos #-6 R1
 % Bars 321 to 325
 	\mmrPos #-6 R
-	\mmrPos #-6 R \no \mark \default
-	b''4.-^-\tweak X-offset #2 ^\moltoappassionato_\ffcolottavaadlib cis16 dis b2
+	\mmrPos #-4 R \no \rehearsalESH \mark \default
+	b''4.-^^\moltoappassionato_\ffcolottavaadlib cis16 dis b2
 	ais4.-^ gis16 fis b2
 	\acciaccatura b,8 b'4_\fzmarkup-\tweak rotation #'(4 1 0) ^\< \acciaccatura cis,8 cis'4_\fzmarkup \acciaccatura  dis,8 dis'4_\fzmarkup \acciaccatura e,8 e'4_\fzmarkup
 % Bars 326 to 330
 	\acciaccatura fis,8 fis'4_\fzmarkup \acciaccatura  fisis,8 fisis'4_\fzmarkup \acciaccatura  gis,8 gis'4_\fzmarkup \acciaccatura a,!8 a'!4_\fzmarkup\!
 	<ais, ais'>8( <cis cis'>) <<{
-		<b b'>8( <ais ais'>) <gis gis'>( <fis fis'>) <e e'>( <dis dis'>)
-		<d! d'!>( <cis cis'>) <b b'>( <ais ais'>) \clef tenor <a! a'!>( <gis gis'>) <g! g'!>( <eis eis'>)
+		<b b'>8( <ais ais'>) \beamOffset #'(-0.5 . -0.5) <gis gis'>( <fis fis'>) <e e'>( <dis dis'>)
+		<d! d'!>( <cis cis'>) <b b'>( <ais ais'>) \clef tenor \beamOffset #'(-0.8 . -0.8) <a! a'!>( <gis gis'>) <g! g'!>( <eis eis'>)
 	} \\ {
 		\setSextolet \tupletUp \tuplet 3/2 8 {b''16( cis b ais b ais) gis( ais gis fis gis fis) e( fis e dis e dis)
 		d!( e d cis d cis) b( cis b ais b ais) a( b a gis a gis) g( a g eis fis eis)} \tupletNeutral
 	}>>
-	\trillAccidental \sharptrillaccentmark <fis fis'>2\trill q->\trill
+	\tempoDown \tempoEO #'(0 . 13) \trillAccidental \sharptrillaccentmark <fis fis'>2\trill q->\trill
 	\trillAccidental \sharptrillaccentmark fis'\trill fis->\trill \clef treble
 % Bars 331 to 335
 	b16_\fpspiccato\stopTrillSpan-. b-. cis-. dis-. b-. b-. cis-. dis-. b-. b-. cis-. dis-. b-. b-. cis-. dis-. 
 	b-. b-. cis-. dis-. b b a! fis \clef tenor a a fis dis gis gis e cis 
 	fis\< fis dis bis e e cis ais \clef bass d d b! gis cis cis ais g\!
-	<eis d'>\ff-. q-. <eis b'>-. <eis d'>-. \clef tenor <gis f'>-. q-. <gis d'>-. <gis f'>-. <b gis'>-. <b gis'>-. <b f'>-. <b gis'>-. <d b'>-. <d b'>-. <d gis>-. <d b'>-. \clef treble
+	\beamOffset #'(0.8 . 0.8) <eis d'>\ff-. q-. <eis b'>-. <eis d'>-. \clef tenor <gis f'>-. q-. <gis d'>-. <gis f'>-. <b gis'>-. <b gis'>-. <b f'>-. <b gis'>-. <d b'>-. <d b'>-. <d gis>-. <d b'>-. \clef treble
 	<f d'>-. <f d'>-. <f b>-. <f d'>-. <gis f'>-. <gis f'>-. <gis d'>-. <gis f'>-. <b gis'>-. <b gis'>-. <b f'>-. <b gis'>-. <d b'>8-. r \clef bass
 % Bars 336 to 340
 	R1

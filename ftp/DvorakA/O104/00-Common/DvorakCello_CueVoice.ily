@@ -1917,7 +1917,7 @@ cueVoiceSoloCelloMvtI = \relative c {
 	% bar 1 - 4
 	b'4.\mp(-\tweak X-offset #-4 ^\markup {Clar.} cis16 d b2)
 	b4.( a16 fis b2)
-	b8.--\< cis16 d8.-- cis16 b4-- a--\!
+	b8.--\<[ cis16 d8.-- cis16] b4-- a--\!
 	g-- fis-- e--\> d--\!
 	s1*18
 	% bar 23 - 24
@@ -1926,7 +1926,7 @@ cueVoiceSoloCelloMvtI = \relative c {
 	s1*20
 	% bar 45 - 46
 	fis,4.(-\tweak X-offset #1 ^\markup {Clar.} gis16 ais fis2)
-	fis4.( e16 cis fis2)
+	fis4.( e!16 cis fis2)
 	s1*28
 	% bar 75 - 76
 	d'4->^\markup {Viol.} a'16( fis d a) g'8-. fis-. fis-. r
@@ -1983,13 +1983,13 @@ cueVoiceSoloCelloMvtI = \relative c {
 	cis2. s4
 	s1*49
 	% bar 320 - 322
-	\ottavaShorten #'(0 . 1) \ottava #1 ais4.-\tweak X-offset #-5.5 ^\markup {Viol.I.} gis16 fis b2
+	\ottava #1 \markEO #'(1 . 7.5) ais4._\markup {Viol.I.} gis16 fis b2
 	b8.(-> ais32 b) cis8.(-> bis32 cis) dis8.(-> cisis32 dis) e8.(->\< dis32 e)
-	fis8.(-> eis32 fis)\! a!8(\fz gis) fis( e) dis( cis) \ottava #0
+	fis8.(-> eis32 fis)\! a!8(\fz gis) fis([ e)] dis( cis) \ottava #0
 }
 cueVoiceSoloCelloMvtII = \relative c {
 	% bar 1 - 8
-	\voiceOne d''2\p(-\tweak X-offset #-3.5 ^\markup {Orch.} e8. c16)
+	d''2\p(-\tweak X-offset #-3.5 ^\markup {Orch.} e8. c16)
 	d4 r8 d(\< g d\!
 	b4\> b \acciaccatura d8 c4)\!
 	b4.( a8 g4)
@@ -2013,7 +2013,7 @@ cueVoiceSoloCelloMvtII = \relative c {
 	\voiceOne b \oneVoice s s
 	s2.*26
 	% bar 95 - 104
-	\voiceOne d,2-\tweak X-offset #1.5 ^\markup {Orch.Cor.}  e8 c \oneVoice
+	\voiceOne d,2-\tweak X-offset #1.5 ^\markup {Orch.Cor.} \oneVoice  e8 c \oneVoice
 	d4 r8 d(--\< g-- d--)\!
 	b4 \once \tupletUp \tuplet 3/2 4 {b8\> b b } d( c)\!
 	b4._\dimmarkup a8 g4
@@ -2033,7 +2033,7 @@ cueVoiceSoloCelloMvtIII = \relative c {
 	g8-> fis16 eis g8-> fis16 eis
 	fis8\ff fis16 fis fis8 fis16 fis
 	fis8 fis16 fis fis8 fis16 fis
-	\once \override Beam.auto-knee-gap = #3 fis8 fis,,16 fis fis8 fis16 fis
+	\beamGap #3 \beamOffset #'(-1 . 0) fis8 fis,,16 fis fis8 fis16 fis
 	fis8 fis16 fis fis8 fis16 fis
 	fis8\fz fis16 fis r4
 	fis8\fz fis16 fis r4
@@ -2105,7 +2105,7 @@ cueVoiceSoloCelloMvtIII = \relative c {
 	<cis e>4 s \stemNeutral
 	s2*48
 	% bar 382 - 384
-	cis'8(^\markup {Viol.I.} dis16 cis) b4->
+	cis'8(-\offset X-offset #-5 ^\markup {Viol.I.} dis16 cis) b4->
 	cis8( dis16 cis) b4->
 	cis8( dis16 cis) b4->
 	s2*37

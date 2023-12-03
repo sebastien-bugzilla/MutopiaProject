@@ -172,7 +172,7 @@ musicSoloCelloMvtII = \relative c' {
 	d(_\dimmarkup cis) c
 	b2(\pp a4\fermata \mark \default
 	g) r r 
-	r16\p\< c,( e fis g c e fis) g( a g e)\!
+	r16\pp\< c,( e fis g c e fis) g( a g e)\!
 % Bars 131 to 135
 	g4.\> r8\! r4
 	r16 c,,(\< e fis g c e fis)\! \clef tenor \tuplet 5/4 4 {g( c\> g fis e)}
