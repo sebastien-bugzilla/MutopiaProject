@@ -18,7 +18,7 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part10_ViolinoI.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
@@ -37,10 +37,10 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Violino I"
 		}
 		instrument = \markup {
-			"ViolinoI"
+			"Violino I"
 		}
 	}
 	\score {
@@ -55,17 +55,13 @@
 				\InCueContext \cueVoiceViolinoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameViolinoIMvtI \musicViolinoIMvtI
+				\timeMvtI \nameViolinoIMvtI \musicViolinoIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -83,17 +79,13 @@
 				\InCueContext \cueVoiceViolinoIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameViolinoIMvtII \musicViolinoIMvtII
+				\timeMvtII \nameViolinoIMvtII \musicViolinoIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #1.8 \bold 2.
 			}
 		}
 		\layout {
@@ -111,17 +103,13 @@
 				\InCueContext \cueVoiceViolinoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameViolinoIMvtIII \musicViolinoIMvtIII
+				\timeMvtIII \nameViolinoIMvtIII \musicViolinoIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2.6 \bold {3. Finale.}
 			}
 		}
 		\layout {

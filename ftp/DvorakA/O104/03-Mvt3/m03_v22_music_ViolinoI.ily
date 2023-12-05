@@ -25,9 +25,9 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 16 to 20
 	b4. r8
 	\slashedGrace e8 e4\brack\fz-> b8-.\< g-.
-	\slashedGrace g'8 g4->-\tweak extra-offset #'(0.5 . 4) _\fzmarkupbrack e8-. c-.
-	\slashedGrace g'8 g4->-\tweak extra-offset #'(0.5 . 4.5) _\fzmarkupbrack e8-. c-.
-	\slashedGrace c'8 c4->-\tweak extra-offset #'(0.5 . 5) _\fzmarkupbrack g8-. e-.\!
+	\slashedGrace g'8 \markEO #'(0.5 . 4) g4->_\fzmarkupbrack e8-. c-.
+	\slashedGrace g'8 \markEO #'(0.5 . 4.5) g4->_\fzmarkupbrack e8-. c-.
+	\slashedGrace c'8 \markEO #'(0.5 . 5) c4->_\fzmarkupbrack g8-. e-.\!
 % Bars 21 to 25
 	fis'2:32\ff
 	fis:
@@ -38,7 +38,7 @@ musicViolinoIMvtIII = \relative c'' {
 	g8-> fis16 eis g8-> fis16 eis
 	fis8 r fis r
 	fis r fis r
-	fis fis,,16 fis fis8\ff fis16 fis
+	\beamGap #3 fis fis,,16 fis fis8\ff fis16 fis
 	fis8 fis16 fis fis8 fis16 fis
 % Bars 31 to 35
 	fis8\fz^^ fis16 fis r4
@@ -67,7 +67,7 @@ musicViolinoIMvtIII = \relative c'' {
 	
 % Bars 56 to 60
 	
-	r8 a,,_\pmarcato^\pizz r d
+	r8 a,,-\offset X-offset -1 _\pmarcato^\pizz r d
 	r fis r a
 	r c r f
 	r dis r b
@@ -100,7 +100,7 @@ musicViolinoIMvtIII = \relative c'' {
 	cis4-> dis->
 	e8( fis) a16( g fis e)
 % Bars 86 to 90
-	d( e) \tuplet 3/2 4 {g( fis e)} d8-. cis-. \mark \default
+	d([ e)] \tuplet 3/2 4 {g( fis e)} d8-. cis-. \mark \default
 	<b, b'>8\ff r q r
 	q r q r 
 	q\noBeam b,32(\< cis d e\! fis8) fis16-. e-.
@@ -115,11 +115,11 @@ musicViolinoIMvtIII = \relative c'' {
 	<c, a'>8.\fz g'16 g8 r
 	c\fz g d'\fz g,
 	e'\fz g, fis'!\fz g,
-	g'2\fz-^~
+	\dynEO #'(0 . 2) g'2\fz-^~
 	g
 % Bars 101 to 105
 	\tuplet 3/2 4 {c,8\fz c g d'\fz d g,
-	e'\fz e g, fis'\fz fis g,}
+	e'\fz e g, fis'!\fz fis g,}
 	g'2\fz-^~
 	g
 	g8.\fz fis16 fis4
@@ -207,8 +207,8 @@ musicViolinoIMvtIII = \relative c'' {
 	r8 bes\p-. bes-.[ r16 a-.]
 	a8-.\fz r r4
 	R2
-	r8 a(\p\< bes4)\!
-	r8 a(\< bes4\!
+	r8 a(\p\< \once \stemUp bes4)\!
+	r8 a(\< \once \stemUp bes4\!
 % Bars 191 to 195
 	a8\p) r r4
 	R2*7 
@@ -268,7 +268,7 @@ musicViolinoIMvtIII = \relative c'' {
 	
 % Bars 241 to 245
 	
-	\mmrLength #3 R2*4
+	\tempoXoffset #-2 R2*4
 % Bars 246 to 250
 	R2*7
 % Bars 251 to 255
@@ -293,14 +293,14 @@ musicViolinoIMvtIII = \relative c'' {
 	R2*3
 	
 	
-	b8(\pp d fis e)
+	b8[(\pp d fis e])
 	d4( cis
 % Bars 271 to 275
 	b a 
 	g fis~
 	fis) eis(
 	e!) d(~_\dimmarkup
-	d8 c\> e g
+	d8[ c e\> g]
 % Bars 276 to 280
 	b4 a)
 	g2\ppp\<~
@@ -320,7 +320,7 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 301 to 305
 	\mmrLength #7 \tempoXoffset #-1 R2*2
 	
-	\mmrLength #2 R2*11
+	\tempoXoffset #-2 R2*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -328,7 +328,7 @@ musicViolinoIMvtIII = \relative c'' {
 	
 	
 	R2*1 \mark \default
-	\tempoXoffset #1 R2*16
+	\tempoXoffset #1 \mmrLength #16 R2*16
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -351,7 +351,7 @@ musicViolinoIMvtIII = \relative c'' {
 	\mmrPos #-8 R
 % Bars 346 to 350
 	\mmrPos #-8 R \no \bar "||" \key b \major
-	dis'4_\ptranquilloemoltoespressivo-\tweak X-offset #-5 ^\solo--( dis~--
+	dis'4_\ptranquilloemoltoespressivo-\tweak X-offset #-5 ^\solo--( dis~-- 
 	dis8 e dis e)
 	fis4( b
 	fis b)
@@ -375,7 +375,7 @@ musicViolinoIMvtIII = \relative c'' {
 	fis4( b)_\crescmarkup
 % Bars 366 to 370
 	fis( b)
-	\shape #'((0 . -2)(0 . 0.5)(0 . 0)(0 . 0)) Slur fis( b~-^\brack\f
+	fis( b~-^\brack\f
 	b8) gis(-^ fis-^ e)-^ 
 	dis4 dis
 	dis8.( cis16 fis8. e16)
@@ -442,7 +442,7 @@ musicViolinoIMvtIII = \relative c'' {
 % Bars 446 to 450
 	b4) <e, cis'>4~
 	q2~
-	q \mark \default
+	q \markXoffset #-0.2 \mark \default
 	\tempoXoffset #1 fis'\ppp~
 	fis~
 % Bars 451 to 455
@@ -496,7 +496,7 @@ musicViolinoIMvtIII = \relative c'' {
 	<b d>8 r r4
 % Bars 496 to 500
 	R2-\tweak X-offset #-3 _\senzasord \mark \default
-	\tempoXoffset #1 \repeat tremolo 8 {cisis32(\pp\<-\tweak X-offset #1 ^\arco-\tweak X-offset #1 ^\moltocresc dis)}
+	\tempoXoffset #1 \repeat tremolo 8 {cisis32(\pp-\tweak rotation #'(2.5 -1 0) \<-\tweak X-offset #1 ^\arco-\tweak X-offset #1 ^\moltocresc dis)}
 	\repeat tremolo 4 {eis( fis)} \repeat tremolo 4 {ais( b)}
 	\repeat tremolo 4 {cisis( dis)} \repeat tremolo 4 {eis( fis)}
 	\repeat tremolo 4 {ais( b)} \repeat tremolo 4 {cisis( dis)\!}

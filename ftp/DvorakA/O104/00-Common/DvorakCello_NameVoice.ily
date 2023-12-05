@@ -447,17 +447,17 @@ nameSoloCelloMvtIII = {
 %###############################################################################
 nameViolinoIMvtI = {
 	\set Staff.instrumentName = "Violino I"
-	\set Staff.shortInstrumentName = "Viol. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"violin"
 }
 nameViolinoIMvtII = {
 	\set Staff.instrumentName = "Violino I"
-	\set Staff.shortInstrumentName = "Viol. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"violin"
 }
 nameViolinoIMvtIII = {
 	\set Staff.instrumentName = "Violino I"
-	\set Staff.shortInstrumentName = "Viol. I"
+	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"violin"
 }
 %###############################################################################

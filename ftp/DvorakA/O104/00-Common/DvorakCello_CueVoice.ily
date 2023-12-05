@@ -2121,7 +2121,7 @@ cueVoiceSoloCelloMvtIII = \relative c {
 cueVoiceViolinoIMvtI = \relative c {
 	s1*167
 	% bar 168 - 169
-	cis'''2(^\markup {Flauto.} fis4 cis8. dis16)
+	cis'''2(-\offset X-offset #-5 ^\markup {Flauto.} fis4 cis8. dis16)
 	ais( fis ais cis) cis2.
 	s1*125
 	% bar 295 - 296
@@ -2136,7 +2136,7 @@ cueVoiceViolinoIMvtII = \relative c {
 	ees2( f8 d) \cueClefUnset
 	s2.*56
 	% bar 81 - 82
-	\cueClef bass a''8^\markup {Vcello Solo.} g( f e) \tuplet 3/2 4 {f( e d)}
+	\cueClef bass a''8[^\markup {Vcello Solo.} g(] f e) \tuplet 3/2 4 {f( e d)}
 	c( cis d des) c8.( e,16) \cueClefUnset
 	s2.*75
 	% bar 158 - 159
@@ -2160,9 +2160,9 @@ cueVoiceViolinoIMvtIII = \relative c {
 	fis fis a cis fis8 cis
 	s2*44
 	% bar 165 - 168
-	\stemUp r8^\markup {Vcello Solo.} g,( a b)
-	cis( \tuplet 3/2 8 {b16 cis b)} a8( g16 fis)
-	e'4(-\tweak extra-offset #'(-0.5 . 2) _\markup {Clar.} cis)
+	\stemUp r8^\markup {Vcello Solo.} g,[( a b)]
+	cis!( \tuplet 3/2 8 {b16 cis b)} a8( g16 fis!)
+	\markEO #'(-0.5 . 2) e'4(_\markup {Clar.} cis)
 	e( cis) \stemNeutral
 	s2*30
 	% bar 199 - 201
@@ -2171,10 +2171,10 @@ cueVoiceViolinoIMvtIII = \relative c {
 	g'8^\markup {Bassi.} a, r4 \cueClefUnset \stemNeutral
 	s2*141
 	% bar 343 - 346
-	bes'16(^\markup {Vcello Solo.} d) \tuplet 3/2 4 {d( f bes)} bes4\trill
-	bes,16( d) \tuplet 3/2 4 {d( f bes)} bes4\trill
-	bes,16( d) \tuplet 3/2 4 {d( f bes)} bes4\trill
-	bes,16( d) \tuplet 3/2 4 {d( f bes)} bes4\trill
+	bes'16(^\markup {Vcello Solo.} \LIIRI d) \LIRII \tuplet 3/2 4 {d( f bes)} bes4\trill
+	bes,16( \LIIRI d) \LIRII \tuplet 3/2 4 {d( f bes)} bes4\trill
+	bes,16( \LIIRI d) \LIRII \tuplet 3/2 4 {d( f bes)} bes4\trill
+	bes,16( \LIIRI d) \LIRII \tuplet 3/2 4 {d( f bes)} bes4\trill
 	s2*84
 	% bar 431 - 436
 	\stemUp gis4^\markup {Vcello Solo.} ais
@@ -2185,7 +2185,7 @@ cueVoiceViolinoIMvtIII = \relative c {
 	\tuplet 3/2 4 {<b dis>( <cis e> <b dis>} <fis cis'> dis') \cueClefUnset \stemNeutral
 	s2*28
 	% bar 465 - 467
-	\stemUp \cueClef bass fis,8\repeatTie-\tweak X-offset #-4 ^\markup {\center-column { \lower #1.5 "Vcello" "Solo" } } dis'( cis b) \cueClefUnset
+	\stemUp \cueClef bass fis,8[\repeatTie-\tweak X-offset #-4 ^\markup {\center-column { \lower #1.5 "Vcello" "Solo" } } dis'( cis b)] \cueClefUnset
 	fis'16( e dis b' gis fis dis' b)
 	fis2 \stemNeutral
 }

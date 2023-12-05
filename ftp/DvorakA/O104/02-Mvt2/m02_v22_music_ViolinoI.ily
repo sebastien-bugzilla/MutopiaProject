@@ -24,10 +24,10 @@ musicViolinoIMvtII = \relative c' {
 	\ni \mmrPos #6 R2.
 	\mmrPos #4 R
 	\mmrPos #4 R \no
-	f2.\pp\<
+	\after 2.*5/6 \! f2.\pp\<
 % Bars 26 to 30
-	<bes, e>\fz\<
-	a'2\fz\< a8( d)
+	\after 2.*5/6 \! <bes, e>\fz\<
+	a'2\fz\< a8( d)\!
 	d2\fz\> c8.( b16)\!
 	b8(\p a16) r b8( a16) r gis8( f16) r
 	fis!8( c16) r fis8( c16)^\dimmarkup r d!8( b16) r
@@ -51,9 +51,9 @@ musicViolinoIMvtII = \relative c' {
 	a[ ees c a] a[ c ees a] a[ ees c a] f'[ d a f] d'[ a f d] c'[ a ees c]
 % Bars 46 to 50
 	bes'[ g d bes] bes[ d g bes] bes[ g d bes] bes[ d g bes] bes[ g d bes] bes[ d g bes]
-	bes[ g ees bes] bes[ ees g bes] ees[_\crescD\< bes g ees] ees[ g bes ees] g[ ees g, g'] g[ c, g g']\!
+	bes[ g ees bes] bes[ ees g bes] ees[_\crescmarkup bes g ees] ees[\< g bes ees] g[ ees g, g'] g[ c, g g']\!
 	bes[ f d bes] bes[ d f bes] d[_\dimD\> bes f d] d[ f bes d] f[( f,) f( f')] f([ f,) f( f')]\!
-	d4. r8 r4 \mark \default
+	f4. r8 r4 \mark \default % f according to manuscrit
 	R2.*7
 % Bars 51 to 55
 	
@@ -61,12 +61,12 @@ musicViolinoIMvtII = \relative c' {
 	
 	\tempoXoffset #-2 des,8(\mf\< ees f ges) g16( aes ees' des\!
 	c4\f) r r
-	f,8\p\<( ges g16 aes bes aes) \tuplet 3/2 4 {ges'8(\f f des}
+	f,8\p\<( ges g16 aes bes aes) \tuplet 3/2 4 {ges'8(\f f des}\!
 	c4) r r
 % Bars 61 to 65
 	R2.*2
 	
-	\mmrLength #6 R2.*2
+	\tempoXoffset #-2 R2.*2
 	\bar "||" \key g \major \mark \default
 	\acciaccatura <d,, b'>8 <b' b'>2\ff b'16-^ d-^ cis-^ b-^ 
 % Bars 66 to 70
@@ -143,7 +143,7 @@ musicViolinoIMvtII = \relative c' {
 	\mmrPos #-8 R \no
 	r4 e,2(\p\<
 % Bars 161 to 165
-	ees2.\fz\>)
+	\after 2.*7/8 \! ees2.\fz\>)
 	d\pp~
 	d
 	d2_\morendo d4~

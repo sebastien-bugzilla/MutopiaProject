@@ -23,28 +23,28 @@ musicViolinoIMvtI = \relative c' {
 	fis8.([ ais16 cis8. b16-.)] ais4( g)
 	fis8.--^>\<( ais16-.) cis8.(---> b16-.) ais8.(-> cis16-.) e8.(-> d16-.)
 % Bars 16 to 20
-	cis8.(-> e16-.) g8.->(\fz fis16-.) b8.(->\fz ais16-.) d8.(->\fz cis16-.)
-	g'(\f fis g fis g fis g fis g fis g fis g fis g fis)
-	g(_\ffz fis g fis  g fis g fis  g fis g fis  g fis g fis)
+	cis8.(-> e16-.) g8.->(\fz fis16-.) b8.(->\fz ais16-.) d!8.(->\fz cis16-.)
+	\repeat tremolo 4 {g'16(\f fis} \repeat tremolo 4 {g fis)}
+	\repeat tremolo 4 {g_\ffz( fis} \repeat tremolo 4 {g fis)} 
 	fis8:16 g: a!:\fz g: fis: e: d: cis:
 	b: ais: e':\fz d: cis: ais: fis: a:
 % Bars 21 to 25
 	g: fis: cis':\fz ais: g: fis: e: d:
-	cis: b: ais: g':-> fis:\< e: d: cis: \mark \default
+	cis: b: ais: g':-> fis:\< e: d: cis:\! \mark \default
 	\acciaccatura b8 \tempoXoffset #-1 b'4.\ff cis16 d b2
 	b4. a!16 fis b2
 	b8.[ d16 fis8. e16] d4.. cis16
 % Bars 26 to 30
 	b4-^ a-^ g-^ fis-^
 	e'4.\ff fis16 g e2
-	e4. d16 b e2
+	e4. d!16 b e2
 	e8.[ fis16 g8. fis16] e4 d
 	e8.[ fis16 g8. fis16] e4 d
 % Bars 31 to 35
 	e8. fis16 g8. fis16 e8. fis16 g8. fis16
 	e8. fis16 g8. fis16 e8. fis16 g8. e16
-	eis(\fp fis eis fis eis fis eis fis bis,\fp cis bis cis bis cis bis cis)
-	gisis(\fp ais gisis ais gisis ais gisis ais fis\fp g fis g fis g fis g)
+	\repeat tremolo 4 {eis16(\fp fis } \repeat tremolo 4 { bis,\fp cis)}
+	\repeat tremolo 4 {gisis(\fp ais } \repeat tremolo 4 {fis\fp g)}
 	fis8 r fis,\fp^\pizz fis r4 g8_\dimmarkup g
 % Bars 36 to 40
 	r4 fis8\p\> fis r4 cis8 cis\!
@@ -64,7 +64,7 @@ musicViolinoIMvtI = \relative c' {
 	R1
 % Bars 51 to 55
 	cis4.(\p\< d16 e cis4 b)\!
-	a(\> b a8_\dimmarkup fis4 e8)\!
+	a(\> \once \stemUp b a8_\dimmarkup fis4 e8)\!
 	a4(\p\> e a e
 	g d g d)\!
 	fis(\pp cis fis cis)
@@ -99,7 +99,7 @@ musicViolinoIMvtI = \relative c' {
 	d16( a fis d) b'8-. a-. a16( fis d a) g'8-. fis-.
 	fis16(_\dimmarkup d a fis)  e'8-.\> d-. d16( a fis d) b'8-. a-.\!
 % Bars 81 to 85
-	a16(_\psemprepiudim fis d a) g'8-. fis-. a16( fis d a) g'8-. fis-.
+	a16(^\psemprepiudim fis d a) g'8-. fis-. a16( fis d a) g'8-. fis-.
 	fis16( d\> a d) e8-. d-. fis16( d a d) e8-. d-.\!
 	d-. r e-.\pp d-. d-. r e-. d-.
 	d-. r e4( d e 
@@ -127,7 +127,7 @@ musicViolinoIMvtI = \relative c' {
 	
 	
 	\mark \default
-	\tempoXoffset #1 r8 <d fis>-\tweak extra-offset #'(-3.5 . 8.5) _\arco\pp r q r q r q
+	\tempoXoffset #1 r8 \markEO #'(-3.5 . 8.5) <d fis>_\arco\pp r q r q r q
 % Bars 111 to 115
 	r q r q r q r q
 	r <g, e'> r q r q r q
@@ -147,7 +147,7 @@ musicViolinoIMvtI = \relative c' {
 	<d b'>8\fz r r4 r2
 	<fis d'>8\fz r  r4 r2
 % Bars 126 to 130
-	r4 ais,8(\p\< cis e ais) e(  g)\!
+	r4 ais,8(\p\< cis e[ ais)] e(  g!)\!
 	ais\fz r r4 r2 \mark \default
 	b8-.\f b,-. r4 r2
 	g'8-.\f g,-. r4 r2
@@ -180,7 +180,7 @@ musicViolinoIMvtI = \relative c' {
 	a2)\trill~ a8 r r4
 	r2 r4 e(\pp
 	a2)\trill~ a8 r r4
-	r a(\mf\< cis d)
+	r a(\mf\< cis d)\!
 	d2(\> e4 fis)\!
 % Bars 156 to 160
 	fis2(_\dimD\> g4 cis,)\! \mark \default
@@ -245,7 +245,7 @@ musicViolinoIMvtI = \relative c' {
 % Bars 211 to 215
 	c'8(\pp d16 ees c8 aes16 g) c8( d16 ees c8 aes16 g)
 	ees'1
-	bes16( d bes d bes d bes d bes d bes d bes d bes d)
+	\repeat tremolo 4 {bes16( d} \repeat tremolo 4 {bes d)}
 	bes( d bes d bes8) r bes16(\< d bes d bes8) r
 	bes16( des bes des bes8) r bes16( des bes des des bes' bes g')\!
 % Bars 216 to 220
@@ -267,7 +267,7 @@ musicViolinoIMvtI = \relative c' {
 	d:\!
 	cis1:_\fzdimD\>
 % Bars 231 to 235
-	cis1:32
+	\after 1*7/8 \! cis1:32
 	dis:_\psempredimD
 	dis:
 	dis2:\> cis:
@@ -279,7 +279,7 @@ musicViolinoIMvtI = \relative c' {
 	q:
 	cisis16(\pp dis e dis cisis dis e dis cisis dis e dis cisis dis e dis)
 % Bars 241 to 245
-	bis( cis dis cis bis cis dis cis bis cis dis cis bis cis dis cis)
+	bis( cis! dis cis bis cis dis cis bis cis dis cis bis cis dis cis)
 	cisis( dis e dis cisis dis e dis cisis dis e dis cisis dis e dis)
 	bis( cis! dis cis bis cis dis cis bis cis dis cis bis cis dis cis)
 	cisis( dis cisis dis cisis dis cisis dis cisis dis cisis dis cisis dis cisis dis)
@@ -323,11 +323,11 @@ musicViolinoIMvtI = \relative c' {
 	r2 r4 cis(
 	\scriptStencil #sharptrillmark fis2\trill~ fis8) r r4
 % Bars 281 to 285
-	\mmrLength #1.5 \tempoXoffset #-0.5 \mmrnDown R1*3
+	\mmrLength #14 \tempoXoffset #-1.3 \mmrnDown R1*3
 	
 	\mark \default
 	\mmrnDown \tempoXoffset #1  R1*1
-	\mmrLength #2.8 \mmrnDown R1*10
+	\mmrLength #20 \mmrnDown R1*10
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -353,7 +353,7 @@ musicViolinoIMvtI = \relative c' {
 	
 	
 	
-	<b g'!>8\f r r4 r2
+	<b g'!>8-\offset X-offset -2 \f r r4 r2
 % Bars 311 to 315
 	r8 g!~ \tuplet 3/2 4 {g\< b d g b d\!} g4\trill
 	g2-> gis4-> a->
@@ -362,18 +362,18 @@ musicViolinoIMvtI = \relative c' {
 	
 % Bars 316 to 320
 	
-	<g,! e' cis'>8-\tweak X-offset #0.5 \fz r r4 r2
+	<g,! e' cis'>8-\offset X-offset 0.8 \fz r r4 r2
 	r2 r4 r8\fermata ais'
 	b4.\ff cis16 dis b2
 	ais4. gis16 fis b2
 % Bars 321 to 325
 	b8.(-> ais32 b) cis8.(-> bis32 cis) dis8.->( cisis32 dis) e8.->(\< dis32 e)
-	fis8.(-> eis32 fis)\! a!8(\fz gis) fis( e!) dis( cis) \mark \default
+	fis8.(-> eis32 fis)\! a!8(\fz gis) fis([ e!)] dis( cis) \mark \default
 	b r r4 r2
 	R1
 	r8 gis,\p^\pizz r ais r b r cis
 % Bars 326 to 330
-	r8 dis\< b b' b, b' b, b'\!
+	r8 dis\< b[ b'] b,[ b'] b, b'\!
 	gis\fz r r4 r2
 	<d,! d'!>8\p^\pizz r r4 r r8 eis\f
 	\tempoXoffset #-1.5 fis r r4 r2
@@ -385,14 +385,14 @@ musicViolinoIMvtI = \relative c' {
 	
 	r2 r4 r8 eis32_(\f\<^\arco fis gis ais
 % Bars 336 to 340
-	b8)\f d!16( cis b8-.) gis'16( fis eis8-.) b'16( ais gis8-.) \tuplet 3/2 4 {d'!16( cis b}
+	b8)\f d!16( cis b8-.) gis'16( fis eis8-.) b'16( ais gis!8-.) \tuplet 3/2 4 {d'!16( cis b}
 	ais8) r r4 r2
 	R1*3
 	
 	
 % Bars 341 to 345
 	r2 r4 r8 fis-.\f
-	\tempoXoffset #-2 \tremoloPosition #2 b1:16\ff
+	\tremoloPosition #2 b1:16\ff
 	\tremoloPosition #2 dis:
 	\tremoloPosition #2 fis:
 	\tremoloPosition #2 b:
@@ -403,8 +403,8 @@ musicViolinoIMvtI = \relative c' {
 	fis-. r fis-. r
 	fis-. r r2
 % Bars 351 to 354
-	r4 \tuplet 3/2 4 {<dis, b'>8\f q q} q4 q
+	r4 \tuplet 3/2 4 {<dis, b'>8-\offset X-offset -1 \f q q} q4 q
 	q2 dis,4. dis8
-	dis1:32\<
+	\after 1*7/8 \! dis1:32\<
 	b4_\ffzD r r2 \markupfermata \bar "|."
 }

@@ -53,7 +53,7 @@ musicViolinoIMvtII = \relative c' {
 	bes'[ g d bes] bes[ d g bes] bes[ g d bes] bes[ d g bes] bes[ g d bes] bes[ d g bes]
 	bes[ g ees bes] bes[ ees g bes] ees[_\crescD\< bes g ees] ees[ g bes ees] g[ ees g, g'] g[ c, g g']\!
 	bes[ f d bes] bes[ d f bes] d[_\dimD\> bes f d] d[ f bes d] f[( f,) f( f')] f([ f,) f( f')]\!
-	d4. r8 r4 \mark \default
+	f4. r8 r4 \mark \default % f according to manuscrit
 	R2.*7
 % Bars 51 to 55
 	
