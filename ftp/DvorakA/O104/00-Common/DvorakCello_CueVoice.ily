@@ -2214,7 +2214,7 @@ cueVoiceViolinoIIMvtIII = \relative c {
 	% bar 9 - 12
 	e'8^\markup {Ob.} r fis r
 	\tuplet 3/2 4 {g a g} fis r
-	b4 g8 e
+	\once \stemUp b4 g8 e
 	ais4 r
 	s2*101
 	% bar 114 - 115
@@ -2226,7 +2226,7 @@ cueVoiceViolinoIIMvtIII = \relative c {
 	fis fis a cis fis8 cis
 	s2*44
 	% bar 165 - 168
-	\stemUp r8^\markup {Vcello Solo.} g,( a b)
+	\stemUp r8^\markup {Vcello Solo.} g,[( a b)]
 	cis( \tuplet 3/2 8 {b16 cis b)} a8( g16 fis)
 	\stemDown e'4(-\tweak X-offset #1.5 ^\markup {Clar.} cis)
 	e( cis) \stemNeutral

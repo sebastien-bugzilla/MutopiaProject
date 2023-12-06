@@ -299,7 +299,7 @@ musicViolinoIIMvtIII = \relative c'' {
 	b4( c8. a16\!)
 	b4\mf( c8) r
 	R2 \mark \default
-	b4-.\pp r8 ais
+	b4-.\pp r8 ais-.
 % Bars 316 to 320
 	b4-. r8 ais-.
 	b-. r c-. r

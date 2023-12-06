@@ -18,9 +18,10 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
-\include "./00-Common/DvorakCello_Format_Part11_ViolinoII.ily"
+%\include "./00-Common/DvorakCello_Format_Part11_ViolinoII.ily"
+\include "./00-Common/DvorakCello_Format_temp.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
 \include "./01-Mvt1/m01_v23_music_ViolinoII.ily"
 \include "./02-Mvt2/m02_v23_music_ViolinoII.ily"
@@ -37,14 +38,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Violino II"
 		}
 		instrument = \markup {
-			"ViolinoII"
+			"Violino II"
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatViolinoIIMvtI
 			}
@@ -55,24 +59,24 @@
 				\InCueContext \cueVoiceViolinoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameViolinoIIMvtI \musicViolinoIIMvtI
+				\timeMvtI \nameViolinoIIMvtI \musicViolinoIIMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
+%			system-count = 20
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatViolinoIIMvtII
 			}
@@ -83,17 +87,13 @@
 				\InCueContext \cueVoiceViolinoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameViolinoIIMvtII \musicViolinoIIMvtII
+				\timeMvtII \nameViolinoIIMvtII \musicViolinoIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\vspace #4.5 \bold 2.
 			}
 		}
 		\layout {
@@ -111,17 +111,13 @@
 				\InCueContext \cueVoiceViolinoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameViolinoIIMvtIII \musicViolinoIIMvtIII
+				\timeMvtIII \nameViolinoIIMvtIII \musicViolinoIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #1.5 \bold {3. Finale.}
 			}
 		}
 		\layout {
