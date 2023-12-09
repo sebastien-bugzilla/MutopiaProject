@@ -305,7 +305,7 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoII fagottoI fagottoII cornoI 
 	cornoII cornoIII trombaI trombaII tromboneI tromboneII tromboneIII timpani 
-	triangolo solocello violinoI violinoII viola violoncello contrabasso) {
+	triangolo solocello violinoI violinoII viola  contrabasso) {
 		\tempo \markup { \medium \italic {
 			\column { \lower #1 "un poco sostenuto" "in tempo"} }
 		}
@@ -318,7 +318,7 @@ tempiPartMvtI = {
 			}
 		}
 	}
-	\tag #'(tuba) {
+	\tag #'(tuba violoncello) {
 		\tempo \markup { \medium \italic {
 			\column { \lower #1 "in tempo" "poco sostenuto"} }
 		}

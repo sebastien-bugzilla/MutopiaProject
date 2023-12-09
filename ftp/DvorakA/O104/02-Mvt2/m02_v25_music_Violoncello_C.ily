@@ -38,7 +38,7 @@ musicVioloncelloMvtII = \relative c {
 	\after 2.*11/12 \! g\fz\<
 	f2\fz\< f,4\!
 	<<e2. {\hairpinShorten #'(0 . -12) s4\fz\> s s\!}>>
-	a16^\pizz e' a r a, e' a r d, f d' r
+	a16^\pizz-\offset X-offset -2 \p e' a r a, e' a r d, f d' r
 	dis, fis! c' r dis, fis c'_\dimmarkup r e, b' d! r
 % Bars 31 to 35
 	eis,8_\dimmarkup r fis! r g r

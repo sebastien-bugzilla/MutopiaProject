@@ -18,12 +18,13 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part13_Violoncello.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
 \include "./01-Mvt1/m01_v25_music_Violoncello.ily"
 \include "./02-Mvt2/m02_v25_music_Violoncello.ily"
+\include "./02-Mvt2/m02_v25_music_VioloncelloDiv.ily"
 \include "./03-Mvt3/m03_v25_music_Violoncello.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
@@ -37,7 +38,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Violoncello"
 		}
 		instrument = \markup {
 			"Violoncello"
@@ -52,45 +53,45 @@
 				\keepWithTag #'(violoncello) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVioloncelloMvtI \musicVioloncelloMvtI
+				\InCueContext \cueVoiceVioloncelloMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameVioloncelloMvtI \musicVioloncelloMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(violoncello) \tempiPartMvtII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceVioloncelloMvtII
-			}
-			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameVioloncelloMvtII \musicVioloncelloMvtII
+		\new GrandStaff <<
+			\new Staff <<
+				\new Voice {
+					\formatVioloncelloMvtII
+				}
+				\new Voice {
+					\keepWithTag #'(violoncello) \tempiPartMvtII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceVioloncelloMvtII
+				}
+				\new Voice {
+					\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
+				}
+			>>
+			\new Staff \with { \RemoveAllEmptyStaves } {
+				\timeMvtII \musicVioloncelloDivMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -108,17 +109,13 @@
 				\InCueContext \cueVoiceVioloncelloMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVioloncelloMvtIII \musicVioloncelloMvtIII
+				\timeMvtIII \nameVioloncelloMvtIII \musicVioloncelloMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\vspace #2 \bold {3. Finale.}
 			}
 		}
 		\layout {
