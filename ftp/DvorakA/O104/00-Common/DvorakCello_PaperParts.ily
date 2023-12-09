@@ -39,7 +39,6 @@
 			\null
 			\center-column {
 				\smaller \fromproperty #'header:subsubtitle
-%				\fromproperty #'header:instrument
 				\vspace #1
 			}
 			\fromproperty #'page:page-number-string
@@ -50,7 +49,6 @@
 			\fromproperty #'page:page-number-string
 			\center-column {
 				\smaller \fromproperty #'header:subsubtitle
-%				\fromproperty #'header:instrument
 				\vspace #1
 			}
 			\null

@@ -4,17 +4,9 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 12) % 12
+#(set-global-staff-size 12) 
 \layout {
-	#(layout-set-staff-size 12) % 12
-%	\context {
-%		\CueVoice
-%		fontSize = #-3
-%		\override Stem.length-fraction = #0.85
-%		\override TupletBracket #'bracket-visibility = ##f
-%		\override StemTremolo.beam-thickness = #0.35 
-%		\override Font.font-size = #+5
-%	}
+	#(layout-set-staff-size 12) 
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.rehearsalMarkFormatter = #format-mark-box-numbers
 	\compressEmptyMeasures
@@ -26,9 +18,6 @@
 		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override BarNumber.font-size = #3 % 3
-%		\override StaffGrouper.staff-staff-spacing = #'(
-%			(padding . 0)
-%			(basic-distance . 0))
 	}
 	\context {
 		\StaffGroup
@@ -40,12 +29,6 @@
 %		\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
-%		\override VerticalAxisGroup.default-staff-staff-spacing = #'(
-%			(padding . 0)
-%			(basic-distance . 0))
-%		\override VerticalAxisGroup.staff-staff-spacing = #'(
-%			(padding . 0)
-%			(basic-distance . 0))
 	}
 	\context {
 		\RhythmicStaff
@@ -66,21 +49,3 @@
 		\override TextScript.font-size = #1
 	}
 }
-
-%generalOptions = {
-%%	\compressMMRests
-%%	\override Staff.MultiMeasureRest.space-increment = 1.5
-%}
-%conductorOptions = {
-%%	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
-%%		beam-event tuplet-span-event dynamic-event articulation-event
-%%		dynamic-event slur-event text-script-event trill-span-event
-%%		phrasing-slur-event beam-forbid-event tremolo-event crescendo-event 
-%%		decrescendo-event multi-measure-rest-event tremolo-span-event 
-%%		tremolo-event)
-%	%\set Voice.restNumberThreshold = #0
-%	\override Score.MeasureCounter.outside-staff-priority = #390
-%	\override StaffGroup.SystemStartBracket.collapse-height = #4
-%	\override Score.SystemStartBar.collapse-height = #4
-%}
-

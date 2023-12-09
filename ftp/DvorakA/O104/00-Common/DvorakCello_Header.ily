@@ -1,6 +1,9 @@
 %  work        : Cello Concerto n°2 in B minor Op. 104
 %  typesetter  : Sébastien MANEN
 %  date        : Saturday 21st October 2023, 18:11
+%###############################################################################
+%#                         H E A D E R   S E C T I O N                         #
+%###############################################################################
 \header {
 	composer = \markup {
 		\abs-fontsize #24 \bold \sans

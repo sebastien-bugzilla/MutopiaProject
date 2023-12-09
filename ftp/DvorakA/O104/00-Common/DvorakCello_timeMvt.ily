@@ -6,13 +6,10 @@
 %###############################################################################
 timeMvtI = {
 	\time 4/4
-	%\tempo "Allegro" 4 = 116
 }
 timeMvtII = {
 	\time 3/4
-	%\tempo "Adagio ma non troppo"
 }
 timeMvtIII = {
 	\time 2/4
-	%\tempo "Allegro moderato"
 }
