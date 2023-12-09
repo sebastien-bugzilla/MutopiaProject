@@ -30,11 +30,11 @@ musicContrabassoMvtI = \relative c' {
 	fis8 r\! fis'2.\fz~
 	fis8 r r4 r2
 	R1
-	fis,8\f fis fis fis  fis fis fis fis
-	fis fis fis fis  fis fis fis fis
+	fis,2:8\f fis: 
+	fis: fis: 
 % Bars 21 to 25
-	fis r r4 r2
-	r4 r8 g-.\f\< fis-. e-. d-. cis-. \mark \default
+	fis8 r r4 r2
+	r4 r8 g-.\f\< fis-. e-. d-. cis-.\! \mark \default
 	\tempoXoffset #1 b2\ff b->
 	b2.\fz b4
 	b2.\fz b4-.
@@ -52,8 +52,8 @@ musicContrabassoMvtI = \relative c' {
 	
 % Bars 36 to 40
 	
-	r2 r8 fis\f\<-. gis-. ais-. 
-	b-. ais-. b-. cis-. d-. cis-. d-. e-. 
+	r2 r8 fis\f-. gis-.\< ais-. 
+	b-. ais-. b-. cis-. \stemUp d-. cis-. d-. e-. \stemNeutral 
 	fis( gis)\! gis4->\ff~ gis8 ais-. ais4\>~
 	ais_\dimD b( eis,2\p)
 % Bars 41 to 45
@@ -76,7 +76,7 @@ musicContrabassoMvtI = \relative c' {
 	
 % Bars 56 to 60
 	R1*1
-	\mmrnDown R1*8
+	\mmrnDown  \mmrLength #12 R1*8
 % Bars 61 to 65
 	
 	
@@ -90,21 +90,21 @@ musicContrabassoMvtI = \relative c' {
 	r4 g r2
 	r4 g r2
 % Bars 71 to 75
-	fis4\< d g g
+	fis4\< d g g\!
 	gis\fz r gis r
 	a4\brack\mf r a r
 	a\<^\arco a, a' a,\! \mark \default
 	d4->\ff d'8-. d-. d,-. d'-. d-. r
 % Bars 76 to 80
 	d,4-> d'8-. d-. d,-. d'-. d-. r
-	fis,-. fis'-. e-. d-. d-. a-. a-. r
-	fis-. fis'-. e-. d-. d-. a-. a-. r 
+	fis,-.[ fis'-.] e-. d-. d-. a-. a-. r
+	fis-.[ fis'-.] e-. d-. d-. a-. a-. r 
 	d,-. d-. d-. r d'-. d,-. d-. r 
-	d'_\dimD\> d, d r d' d, d\! r
+	d'_\dimD\> d, d\noBeam r d' d, d\!\noBeam r
 % Bars 81 to 85
-	d_\psemprepiudim d d r d d d r
-	d d d\> r d d d\! r 
-	d\pp-. d-. d-. r d-. d-. d-. r
+	d_\psemprepiudim d d\noBeam r d d d\noBeam r
+	d d d\>\noBeam r d d d\!\noBeam r 
+	d\pp-. d-. d-.\noBeam r d-. d-. d-.\noBeam r
 	d1
 	c\brack\ppp
 % Bars 86 to 90
@@ -117,7 +117,7 @@ musicContrabassoMvtI = \relative c' {
 	gis2 r
 	r4 gis8-. gis-. r2
 	g!1\fp
-	r4 g2\< g'8-. f-.
+	r4 g2\< g'8-. f-.\!
 	e4\f r r r8 g^\pizz\p
 % Bars 96 to 100
 	e4\fz r r r8 g\brack\p
@@ -131,8 +131,8 @@ musicContrabassoMvtI = \relative c' {
 	
 	
 	
-	\markXoffset #-0.2 \mark \default 
-	b8\pp r d r b r d r
+	\mark \default 
+	\tempoXoffset #1 b8\pp r d r b r d r
 % Bars 111 to 115
 	b r d r b r d r
 	b r e r b r e r
@@ -173,7 +173,7 @@ musicContrabassoMvtI = \relative c' {
 	fis1)
 	a2( b)
 	cis4( b a2)
-	d2( g,)
+	\once \stemUp d2( g,)
 	fis( f
 % Bars 146 to 150
 	e1)
@@ -255,13 +255,13 @@ musicContrabassoMvtI = \relative c' {
 	ees'1\f
 	ees\>
 	ees\fz~
-	ees1\>
+	\after 1*7/8 \! ees1\>
 	ees2\mf aes,4(\> ces)
 % Bars 221 to 225
 	ees2 aes4( ces)\!
 	ees1_\pdim~
 	ees4 r r2 \mark \default
-	\mmrLength #3 R1*16
+	\mmrLength #19 R1*16
 	
 % Bars 226 to 230
 	
@@ -272,7 +272,7 @@ musicContrabassoMvtI = \relative c' {
 	
 	
 	
-	\mmrLength #2 R1*8
+	\mmrLength #14 \mmrnDown R1*8
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -318,7 +318,7 @@ musicContrabassoMvtI = \relative c' {
 	e~
 	e
 % Bars 281 to 285
-	r8 dis,^\pizz\mf fis ais dis,4 r8 dis
+	r8 dis,-\offset X-offset -1.5 ^\pizz\mf fis ais dis,4 r8 dis
 	r8 eis gis b eis,4 r8 eis
 	r fis\> b dis fis,4 r8 fis\! \mark \default
 	\tempoXoffset #2 b,4\p r r2
@@ -341,13 +341,13 @@ musicContrabassoMvtI = \relative c' {
 	fis r r4 r2
 % Bars 306 to 310
 	fis8 r fis' r r4 fis,8 fis
-	r bis cis cis' r bis, cis cis'
-	r ais, b! b' r ais, b b'
-	r bis,\< cis cis'\! r cisis, dis dis'
+	r bis\noBeam cis cis' r bis,\noBeam cis cis'
+	r ais,\noBeam b! b' r ais,\noBeam b b'
+	r bis,\noBeam\< cis cis'\! r cisis,\noBeam dis dis'
 	e,\f^\arco r r4 r2
 % Bars 311 to 315
 	r4 f2\f\< f'4
-	\hairpinShorten #'(0 . -3) ees2->\fz\< ees4-. d-.\!
+	ees2->\fz\< ees4-. d-.\!
 	cis!8-._\ffz cis-. r4 r2
 	R1*3
 	
@@ -382,7 +382,7 @@ musicContrabassoMvtI = \relative c' {
 	
 	
 % Bars 341 to 345
-	r2 r4 r8 fis-.\f
+	\tempoXoffset #-2 r2 r4 r8 fis-.\f
 	b4.\ff cis16 dis b2
 	ais4. gis16 fis ais2
 	gis4. ais16 b gis4-. fis-.
@@ -396,6 +396,6 @@ musicContrabassoMvtI = \relative c' {
 % Bars 351 to 354
 	r4 \once \tupletUp \tuplet 3/2 4 {b'8\f b b} b4 b
 	b2 b,4. b8
-	b1:32\<
+	\after 1*7/8 \! b1:32\<
 	b4_\ffzD r r2 \markupfermata \bar "|."
 }

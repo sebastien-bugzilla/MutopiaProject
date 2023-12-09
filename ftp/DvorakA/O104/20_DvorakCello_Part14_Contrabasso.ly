@@ -18,7 +18,7 @@
 \include "./00-Common/DvorakCello_timeMvt.ily"
 \include "./00-Common/DvorakCello_Shortcuts.ily"
 \include "./00-Common/DvorakCello_Tempi.ily"
-\include "./00-Common/DvorakCello_OptionParts.ily"
+\include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
 \include "./00-Common/DvorakCello_Format_Part14_Contrabasso.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
@@ -37,7 +37,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104"
+			"Antonín Dvořák — Cello Concerto n°2 in B minor Op. 104 — Contrabasso"
 		}
 		instrument = \markup {
 			"Contrabasso"
@@ -55,17 +55,13 @@
 				\InCueContext \cueVoiceContrabassoMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameContrabassoMvtI \musicContrabassoMvtI
+				\timeMvtI \nameContrabassoMvtI \musicContrabassoMvtI
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -83,17 +79,13 @@
 				\InCueContext \cueVoiceContrabassoMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameContrabassoMvtII \musicContrabassoMvtII
+				\timeMvtII \nameContrabassoMvtII \musicContrabassoMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -111,17 +103,13 @@
 				\InCueContext \cueVoiceContrabassoMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameContrabassoMvtIII \musicContrabassoMvtIII
+				\timeMvtIII \nameContrabassoMvtIII \musicContrabassoMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold {3. Finale.}
 			}
 		}
 		\layout {

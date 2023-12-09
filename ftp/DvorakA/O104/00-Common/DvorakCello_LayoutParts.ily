@@ -19,16 +19,6 @@
 		\override Hairpin.height = 0.55
 		\override TrillSpanner.bound-details.right.padding = #1
 		\override Arpeggio.padding = #0.25
-
-%		\override NoteHead.transparent = ##t
-%		\override Beam.transparent = ##t
-%		\override DynamicText.transparent = ##t
-%		\override Stem.transparent = ##t
-%		\override Accidental.transparent = ##t
-%		\override Slur.transparent = ##t
-%		\override Script.transparent = ##t
-%		\override Rest.transparent = ##t
-%		\override StaffSymbol.transparent = ##t
 	}
 	\context {
 		\CueVoice
@@ -36,7 +26,6 @@
 		\override Stem.length-fraction = #0.85
 		\override TupletBracket.bracket-visibility = ##f
 		\override StemTremolo.beam-thickness = #0.35 
-		%\override Font.font-size = #+5
 	}
 	\context {
 		\Staff
@@ -54,9 +43,6 @@
 		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
-		
-%		\override MetronomeMark.transparent = ##t
-
 	}
 }
 

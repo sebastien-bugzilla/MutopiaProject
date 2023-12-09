@@ -2298,7 +2298,7 @@ cueVoiceVioloncelloMvtIII = \relative c {
 cueVoiceContrabassoMvtI = \relative c {
 	s1*251 
 	% bar 252 - 255
-	\cueClef treble d'''2.(^\markup {Fl.} e8 fis)
+	\cueClef treble d'''2.(-\offset X-offset -2.3 ^\markup {Fl.} e8 fis)
 	fis4( e bes e)
 	a,( d2 e8 fis)
 	fis4( e bes e) \cueClefUnset 
@@ -2314,7 +2314,7 @@ cueVoiceContrabassoMvtII = \relative c {
 cueVoiceContrabassoMvtIII = \relative c {
 	s2*198
 	% bar 199 - 200
-	\cueClef alto \stemUp g''8^\markup {Viola.} a, r4 \cueClefUnset 
+	\cueClef alto \stemUp g''8-\offset X-offset -4 ^\markup {Viola.} a, r4 \cueClefUnset 
 	g8^\markup {Vcello} a, r4 \stemNeutral
 	s2*92
 	% bar 293 - 296

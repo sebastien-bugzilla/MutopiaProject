@@ -62,7 +62,7 @@ musicContrabassoMvtIII = \relative c, {
 	e-> b' cis,-> cis'
 	fis, fis fis,-. fis-.
 	b\< d16 fis\! b8 r \markXoffset #-0.2 \mark \default
-	\startMeasureCount a8^\pizz\pp r a r
+	\startMeasureCount a8-\offset X-offset #1 ^\pizz\pp r a r
 	a r a r
 % Bars 51 to 55
 	a r a r
@@ -171,7 +171,7 @@ musicContrabassoMvtIII = \relative c, {
 	
 	
 	
-	\mmrLength #3 \tempoXoffset #-1 R2*3
+	\mmrLength #12.9 \tempoXoffset #-1 R2*3
 % Bars 141 to 145
 	
 	\mark \default
@@ -185,9 +185,9 @@ musicContrabassoMvtIII = \relative c, {
 	a\< r8 a\!
 	a4\> r8 a\!
 % Bars 151 to 155
-	a\pp a' a, r
-	a a' a, r
-	a\< a' a, r\!
+	a\pp[ a' a,] r
+	a[ a' a,] r
+	a[\< a' a,] r\!
 	a\> a' d, d'\!
 	d,\pp r g, g'
 % Bars 156 to 160
@@ -239,7 +239,7 @@ musicContrabassoMvtIII = \relative c, {
 % Bars 201 to 205
 	g8^\pizz\p a, r4
 	R2
-	r4 r8 a'\ff-\tweak X-offset #-5.5 _\arco \mark \default
+	r4 r8 a'\ff-\tweak X-offset #-5.5 ^\arco \mark \default
 	\tempoXoffset #0.8 d,8. d16 d8 r
 	fis8. d16 d8 r
 % Bars 206 to 210
@@ -286,7 +286,7 @@ musicContrabassoMvtIII = \relative c, {
 	
 % Bars 241 to 245
 	
-	\mmrLength #2 \tempoXoffset #-2 R2*4
+	\mmrLength #10 \tempoXoffset #-2 R2*4
 % Bars 246 to 250
 	b4\pp r
 	e r 
@@ -313,8 +313,8 @@ musicContrabassoMvtIII = \relative c, {
 	b8\p r r4
 % Bars 266 to 270
 	b8 r r4
-	b16(\p\> d fis e d8 cis)
-	b16( d fis e d8 cis)\!
+	\stemUp b16(\p\> d fis e d8 cis)
+	b16( d fis e d8 cis)\! \stemNeutral
 	b8 r r4
 	\mmrCondens R2*3
 % Bars 271 to 275
@@ -323,7 +323,7 @@ musicContrabassoMvtIII = \relative c, {
 	R2*4
 % Bars 276 to 280
 	
-	\mmrLength #4 \tempoXoffset #-1 R2*2
+	\mmrLength #10 \tempoXoffset #-1 R2*2
 	
 	R2*2
 	\bar "||" \mark \default
@@ -359,8 +359,8 @@ musicContrabassoMvtIII = \relative c, {
 	d\< r8 d
 	d4 r8 d
 	d8\mf r d r
-	\tempoXoffset #-1 R2 \mark \default
-	\tempoXoffset #1.8 g,4-.\pp-\tweak X-offset #1.8 ^\arco r8 g-.
+	\tempoXoffset #-1 R2 \markXoffset #-0.2 \mark \default
+	g,4-.\pp^\arco r8 g-.
 % Bars 316 to 320
 	g4 r8 g
 	g4 r8 g
@@ -378,16 +378,16 @@ musicContrabassoMvtIII = \relative c, {
 	ges~
 	ges
 	f~
-	f \markXoffset #-0.2 \mark \default
+	f \mark \default
 % Bars 331 to 335
-	e!\pp
+	\tempoXoffset #1 e!\pp
 	R
 	cis8^\pizz r e r
 	cis r e r
 	cis4 r
 % Bars 336 to 340
 	R2
-	b!8 r cis r
+	b!8 r cis! r
 	b r cis b
 	bes r r4
 	R2
@@ -509,7 +509,7 @@ musicContrabassoMvtIII = \relative c, {
 % Bars 446 to 450
 	b4 b~
 	b2~
-	b \markXoffset #-0.3 \mark \default
+	b \markXoffset #-0.3 \mark \default \break
 	\tempoXoffset #0.5 \startMeasureCount b,\ppp~
 	b~
 % Bars 451 to 455
@@ -555,7 +555,7 @@ musicContrabassoMvtIII = \relative c, {
 	
 	
 	b'4^\pizz r
-	d,8_\morendo d r4 
+	d,8^\morendo d r4 
 	g,8 r r4
 % Bars 496 to 500
 	R2-\tweak X-offset #-3 _\senzasord \mark \default
@@ -570,7 +570,7 @@ musicContrabassoMvtIII = \relative c, {
 	b:
 	b:
 % Bars 506 to 510
-	R2
+	\mmrnDown R2
 	b2:32\ff
 	R2
 	b8-. b-. b-. b-.
