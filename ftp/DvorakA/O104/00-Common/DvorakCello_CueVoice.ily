@@ -2249,7 +2249,7 @@ cueVoiceViolaMvtII = \relative c {
 	\cueClef tenor a8(-> b-> c2->) \cueClefUnset
 	s2.*100
 	% bar 122 - 126
-	\cueClef bass \grace {d,,16( e} d4)-\tweak X-offset #-2 ^\markup {\center-column { \lower #1.5 "Vcello" "Solo."}} \grace {d'16( e} d4) \cueClef treble \grace {d'16( e} d4)~
+	\cueClef bass \grace {d,,16( e} d4)-\tweak X-offset #-2 -\tweak extra-offset #'(0 . 9) _\markup {\center-column { \lower #1.5 "Vcello" "Solo."}} \grace {d'16( e} d4) \cueClef treble \grace {d'16( e} d4)~
 	d16( e) e( d) d( c) c( g) g( fis) fis( e)
 	e( g fis e) e4 e16( g fis e)
 	e4 e16( g fis e) e4~

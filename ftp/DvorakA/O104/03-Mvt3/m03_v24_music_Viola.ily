@@ -9,7 +9,7 @@ musicViolaMvtIII = \relative c'' {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*8
+	\mmrnDown R2*8
 % Bars 6 to 10
 	
 	
@@ -25,9 +25,9 @@ musicViolaMvtIII = \relative c'' {
 % Bars 16 to 20
 	dis4. r8
 	\slashedGrace g8 g4->\brack\fz e8-.\< b-.
-	\slashedGrace c'8 c4->-\tweak extra-offset #'(-0.5 . 4) _\fzmarkupbrack g8-. e-.
-	\slashedGrace c'8 c4->-\tweak extra-offset #'(-0.5 . 4.2) _\fzmarkupbrack g8-. e-.
-	\slashedGrace e'8 e4->-\tweak extra-offset #'(0 . 4.5) _\fzmarkupbrack c8-. g-.\!
+	\slashedGrace c'8 \markEO #'(-0.5 . 4) c4->_\fzmarkupbrack g8-. e-.
+	\slashedGrace c'8 \markEO #'(-0.5 . 4.2) c4->_\fzmarkupbrack g8-. e-.
+	\slashedGrace e'8 \markEO #'(0 . 4.5) e4->_\fzmarkupbrack c8-. g-.\!
 % Bars 21 to 25
 	fis2:32\ff
 	fis:
@@ -38,11 +38,11 @@ musicViolaMvtIII = \relative c'' {
 	g8-> fis16 eis g8-> fis16 eis
 	fis8 r fis r
 	fis r fis r
-	fis r fis,8\ff fis16 fis
+	fis r fis,8-\offset X-offset -3 \ff fis16 fis
 	fis4 fis
 % Bars 31 to 35
-	fis8\fz-^ fis16 fis r4
-	fis8\fz-^ fis16 fis r4
+	fis8\fz^^ fis16 fis r4
+	fis8\fz^^ fis16 fis r4
 	R2*8
 % Bars 36 to 40
 	
@@ -68,8 +68,8 @@ musicViolaMvtIII = \relative c'' {
 % Bars 61 to 65
 	\repeat tremolo 6 {gis( b) } 
 	\repeat tremolo 6 {gis( b) } 
-	\repeat tremolo 6 {b( d_\crescD\<)}
-	\repeat tremolo 6 {cis( eis)} }
+	\repeat tremolo 6 {b( d!_\crescD\<)}
+	\repeat tremolo 6 {cis!( eis)} }
 	\tuplet 6/4 4 {ais,( cis ais cis ais cis   ais cis ais b\! cis b)
 % Bars 66 to 70
 	ais( cis ais cis ais cis   ais cis ais b cis b)}
@@ -148,91 +148,61 @@ musicViolaMvtIII = \relative c'' {
 	eis
 	fis)\!
 	g(\pp
-	cis)
+	\once \stemUp cis)
 % Bars 131 to 135
 	R2*12
 % Bars 136 to 140
 	
 % Bars 141 to 145
 	
-	\mark \default
-	<<{
-		\tempoXoffset #1 b4( cis
-		b cis)
-		b( a
+	\mark \default \break
+	\tempoXoffset #1 \stemUp b4(\pp cis
+	b cis) \stemNeutral
+	b( a
 % Bars 146 to 150
-		g a)
-		b( cis
-		b cis)
-		b( d8 cis
-		b a g fis)
+	g a)
+	\stemUp b(\< cis
+	b cis)\! \stemNeutral
+	b( d8 cis\>
+	b a g fis)\!
 % Bars 151 to 155
-		b4( cis
-		b cis)
-		b( a
-		g a)
-		a( bes
+	\stemUp b4(\p cis
+	b cis) \stemNeutral
+	b(\< a\!
+	g\> a)\!
+	a(\pp bes
 % Bars 156 to 159
-		a bes)
-		cis! cis(
-		a2)~
-		a8
-	} \\ {
-		g4(-\tweak X-offset #-3 \pp a
-		g a)
-		g( fis
-% Bars 146 to 150
-		e fis)
-		g(\< a 
-		g a)\!
-		g( b8 a\>
-		g fis d4)
-% Bars 151 to 155
-		g(\p a
-		g a)
-		g(\< fis\!
-		e\> fis)\!
-		fis(\pp g
-% Bars 156 to 160
-		fis g)
-		a( g
-		fis f
-		e8)
-	}>> r r4
+	a bes)
+	cis! cis(
+	a2)~
+	a8 r r4
 	R2*6
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	\mmrnDown R2 \markXoffset #-0.2 \mark \default
-	<<{
-		b'4( cis
-		b cis)
-		b( a8 g)
-		a( b d4)
-	} \\ {
-		g,!4\p( a
-		g a)
-		\stemUp g\< \omitBeam fis8 e
-		\omitBeam fis(\! \stemDown g b\> a)\!
-	}>>
+	\stemUp b4( cis
+	b cis) \stemNeutral
+	b(\< a8 g)
+	a(\! b\> d4)\!
 % Bars 171 to 175
-	\tuplet 3/2 4 {<a cis>4.:8 q: 
-	\tempoDown \tempoXoffset #2 \stemUp <b d>:\p q: \stemNeutral
-	<a cis>: <g b>:
-	<fis a>:  <gis b>:
-	<ais cis>: } <b d>16 q q <g! b>
+	\tuplet 3/2 4 {cis4.:8 cis: 
+	d:-\offset X-offset #1 \p d:
+	cis: b:
+	a: b:
+	cis: } d16 d d b
 % Bars 176 to 180
-	<a! cis> q q <fis a> <g! b> q q <e g>
-	<d fis>2\pp~
-	q
-	q~
-	q
+	cis cis cis a b b b g
+	fis2\pp~
+	fis
+	fis~
+	fis
 % Bars 181 to 185
-	<d f>~
-	q
-	<c a'>\p~
-	q\<
-	<cis! g'>8\fz r r4
+	f~
+	f
+	a\p~
+	\after 2*3/4 \! a\<
+	g8\fz r r4
 % Bars 186 to 190
 	r8 d'-.\p d-.[ r16 cis-.]
 	cis8\fz-. r r4
@@ -284,7 +254,7 @@ musicViolaMvtIII = \relative c'' {
 % Bars 226 to 230
 	\repeat tremolo 4 {eis16(\fp cis} 
 	\repeat tremolo 4 {fis cis)}
-	\repeat tremolo 4 {eis( cis_\dimmarkup} 
+	\repeat tremolo 4 {eis( cis-\offset X-offset #-1 _\dimmarkup} 
 	\repeat tremolo 4 {fis\> cis)} 
 	\repeat tremolo 4 {eis(\pp cis }
 % Bars 231 to 235
@@ -301,9 +271,9 @@ musicViolaMvtIII = \relative c'' {
 	
 % Bars 241 to 245
 	
-	\mmrLength #2.5 \tempoXoffset #-1  R2*4
+	\mmrLength #10 \tempoXoffset #-1  R2*4
 % Bars 246 to 250
-	fis4\pp^\pizz r8 b
+	fis4\pp r8 b_\pizz
 	b4 r
 	b b8 fis
 	ais4 r
@@ -336,8 +306,8 @@ musicViolaMvtIII = \relative c'' {
 	fis4 c')
 	ais( b
 	fis gis
-	g!) fis(_\dimD\>
-	e g8 e
+	g!) fis(_\dimmarkup
+	e\> g8 e
 % Bars 276 to 280
 	fis2)\!
 	a\ppp\<~
@@ -400,20 +370,20 @@ musicViolaMvtIII = \relative c'' {
 	a:}
 	\tuplet 12/8 2 {\repeat tremolo 6 {gis16( cis }
 % Bars 336 to 340
-	\repeat tremolo 6 {gis cis)}}
-	\tuplet 12/8 2 {<eis, gis>2.:16
-	q:}
-	\tuplet 12/8 2 {\repeat tremolo 6 {<f bes>16( <bes d>} 
-	\repeat tremolo 6 {<f bes>16 <bes d>)}}
+	\repeat tremolo 6 {gis cis)}} \break
+	\tuplet 12/8 2 {gis2.:16
+	gis:}
+	\tuplet 12/8 2 {\stemUp \repeat tremolo 6 {bes16( d} 
+	\repeat tremolo 6 {bes16 d)}} \stemNeutral
 % Bars 341 to 345
-	\tuplet 12/8 2 {<bes d>2.:16
-	q:}
-	\tuplet 12/8 2 {\repeat tremolo 6 {<f bes>16( <bes d>}  
-	\repeat tremolo 6 {<f bes>_\crescmarkup <bes d>)}
-	\repeat tremolo 6 {<f bes>(\< <bes d>} 
+	\tuplet 12/8 2 { \tupletUp d2.:16
+	d: \tupletNeutral }
+	\tuplet 12/8 2 {\stemUp \repeat tremolo 6 {bes16( d}  
+	\repeat tremolo 6 {bes_\crescmarkup d)}
+	\repeat tremolo 6 {bes(\< d} 
 % Bars 346 to 350
-	\repeat tremolo 6 {<f bes> <bes d>)\!} } \bar "||" \key b \major
-	fis16\p( b fis b dis b fis b)
+	\repeat tremolo 6 {bes d)\!} } \stemNeutral \bar "||" \key b \major
+	fis,16\p( b fis b dis b fis b)
 	fis( b fis b dis b fis b)
 	fis( b fis b e b fis b)
 	fis( b fis b e b fis b)
@@ -507,7 +477,7 @@ musicViolaMvtIII = \relative c'' {
 	
 % Bars 436 to 440
 	
-	<dis fis>4(\p <e gis>
+	<dis fis>4(-\offset X-offset -1 \p <e gis>
 	<dis fis>\> <e gis>
 	<dis fis> <e gis>
 	<dis fis> <e gis>\!
@@ -542,7 +512,7 @@ musicViolaMvtIII = \relative c'' {
 	
 % Bars 476 to 480
 	
-	e'4\pizz\fz r
+	e'4^\pizz\fz r
 	R2
 	<cis e>4\mp r
 	R2

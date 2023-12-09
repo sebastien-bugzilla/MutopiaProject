@@ -20,8 +20,7 @@
 \include "./00-Common/DvorakCello_Tempi.ily"
 \include "./00-Common/DvorakCello_LayoutParts.ily"
 \include "./00-Common/DvorakCello_NameVoice.ily"
-%\include "./00-Common/DvorakCello_Format_Part11_ViolinoII.ily"
-\include "./00-Common/DvorakCello_Format_temp.ily"
+\include "./00-Common/DvorakCello_Format_Part11_ViolinoII.ily"
 \include "./00-Common/DvorakCello_CueVoice.ily"
 \include "./01-Mvt1/m01_v23_music_ViolinoII.ily"
 \include "./02-Mvt2/m02_v23_music_ViolinoII.ily"
@@ -46,9 +45,6 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatViolinoIIMvtI
 			}
@@ -69,14 +65,10 @@
 			}
 		}
 		\layout {
-%			system-count = 20
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatViolinoIIMvtII
 			}

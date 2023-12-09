@@ -28,18 +28,18 @@ musicViolaMvtII = \relative c' {
 	g2(\pp a8 fis)
 	f2_\dimmarkup( g8 e)
 	ees2\pp( f8 d)
-	\repeat tremolo 12 {d32(\< f)}
+	\repeat tremolo 12 {d32(\< f)\!}
 % Bars 26 to 30
-	\repeat tremolo 12 {cis(\fz\< e)}
-	\repeat tremolo 8 {d(\fz\< f)} \repeat tremolo 4 {f( a)\!}
-	\repeat tremolo 8 {b(\fz\> d)} e,32( gis e gis e gis b e)\!
+	\repeat tremolo 12 {cis(\fz\< e)\!}
+	\repeat tremolo 8 {d(\fz f\<)} \repeat tremolo 4 {f( a)\!}
+	\repeat tremolo 8 {\stemUp b(\fz\> d) \stemNeutral} e,32( gis e gis e gis b e)\!
 	f8(\p e16) r f8( e16) r d8( d,)
 	dis2( e4)_\dimmarkup
 % Bars 31 to 35
 	eis( fis! g)
 	aes2(\pp a4)
-	\hairpinShorten #'(0 . 0.5) <g b>2\dimD\>( <b d>4)
-	c2.\ppp(\fermata \mark \default
+	\hairpinShorten #'(0 . 0.5) <g b>2\dimD\>( \once \stemUp <b d>4)
+	\once \stemUp c2.\ppp(\fermata \mark \default
 	b4) r r
 % Bars 36 to 40
 	R2.*3
@@ -61,7 +61,7 @@ musicViolaMvtII = \relative c' {
 	<bes d>2.\pp
 % Bars 51 to 55
 	<bes ees>
-	<<{<c ees>} \\ {bes}>>
+	<<{<c ees>} \\ {bes}>> % based on manuscript
 	<bes d>
 	<bes des>
 	<<{<bes des>} \\ {ges2( g4)}>>
@@ -74,7 +74,7 @@ musicViolaMvtII = \relative c' {
 % Bars 61 to 65
 	R2.*2
 	
-	\mmrLength #6 \mmrnDown R2.*2
+	\mmrLength #12 \mmrnDown R2.*2
 	\bar "||" \key g \major \mark \default
 	<b d>2\ff q4
 % Bars 66 to 70
@@ -93,12 +93,12 @@ musicViolaMvtII = \relative c' {
 % Bars 81 to 85
 	d( f d' f, d' f, d' f, d f d' f, d' f, d' f, d f d' f, d' f, d' f,)
 	\tuplet 6/4 4 {c16\< f f~ f f f~   f f f~ f\! f f(~\>} f d ees e)\! \mark \default
-	\acciaccatura f!8 << a2.( {s4-\tweak X-offset #-3 \mf\< s s16 s\> s s} >>
+	\acciaccatura f!8 << a2.( {s4-\tweak X-offset #-2 \mf s\< s16 s\> s s} >>
 	bes4\p) r r
 	<< a2.( {s4\< s \hairpinShorten #'(0 . -1) s16\> s s s\!}>>
 % Bars 86 to 90
 	bes4)\p r r
-	R2.*8
+	R2.*7
 	
 	
 	
@@ -106,8 +106,8 @@ musicViolaMvtII = \relative c' {
 	
 	
 	
-	\mark \default
-	R2.*11
+	\tempoXoffset #-1 R2. \markXoffset #-0.2 \mark \default
+	\tempoDown \tempoEO #'(0 . 9.3) R2.*11
 % Bars 96 to 100
 	
 % Bars 101 to 105
@@ -122,7 +122,7 @@ musicViolaMvtII = \relative c' {
 	
 	
 	
-	\mmrnDown R2.*2
+	\mmrnDown \tempoDown \tempoXoffset #-7 \tempoEO #'(7 . 9.2)  R2.*2
 % Bars 121 to 125
 	
 	\ni \mmrPos #-6 R2.
@@ -138,9 +138,9 @@ musicViolaMvtII = \relative c' {
 % Bars 131 to 135
 	<d g>-.([ r q-.] r q-.[ r q-.] r q-.[ r q-.]) r
 	<e g>-.([ r q-.] r q-.[ r q-.] r q-.[ r q-.]) r
-	<d g>-.([ r q-.] r_\crescmarkup q-.[ r q-.] r q-.[ r q-.]) r
+	<d g>-.([ r q-.] r^\crescmarkup q-.[ r q-.] r q-.[ r q-.]) r
 	<e g>-.([ r q-.] r q-.[ r q-.] r <e gis>-.[ r q-.]) r
-	<e a>2\mf r4\fermata-\tweak X-offset #-2 ^\lunga
+	<e a>2\mf r4_\fermata-\tweak X-offset #-2 ^\lunga
 % Bars 136 to 140
 	R2.*12
 % Bars 141 to 145
@@ -162,10 +162,10 @@ musicViolaMvtII = \relative c' {
 	
 	r4^\arco g,2(\p\< 
 % Bars 161 to 165
-	<c, ees>2.)\fz\>
+	\hairpinShorten #'(-0.5 . -1) \after 2.*5/6 \! <c, ees>2.)\fz\>
 	<d g>2.\pp~
 	q
-	q2_\morendo q4~
+	q2^\morendo q4~
 	q q2
 % Bar 166
 	q2.\ppp^\fermata \bar "|."

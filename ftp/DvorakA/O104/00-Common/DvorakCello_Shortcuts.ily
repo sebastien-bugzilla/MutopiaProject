@@ -17,6 +17,7 @@ perit = \markup {\hspace #-0.05 \dynamic p \italic {e rit.}}
 pspiccato = \markup {\hspace #-0.05 \dynamic p \italic spiccato}
 pdolceedanimato = \markup {\hspace #-0.05 \dynamic p \italic {dolce ed animato}}
 psemprepiudim = \markup {\hspace #-0.05 \dynamic p \italic {sempre più dim.}}
+psempredim = \markup {\hspace #-0.05 \dynamic p \italic {sempre dim.}}
 psemplice = \markup {\hspace #-0.05 \dynamic p \italic semplice}
 pdolce = \markup {\hspace #-0.05 \dynamic p \italic dolce}
 pmorendo = \markup {\hspace #-0.05 \dynamic p \italic morendo}
