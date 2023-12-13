@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.1"
 \include "./00-Common/TchaikovskySymph5_Header.ily"
 \include "./00-Common/TchaikovskySymph5_PaperConductors.ily"
 \include "./00-Common/TchaikovskySymph5_timeMvt.ily"
@@ -21,9 +22,11 @@
 \include "./00-Common/TchaikovskySymph5_NameGrandStaff.ily"
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_Cond_Mvt01.ily"
-\include "./01-Mvt1/m01_v01_music_FloteI.ily"
-\include "./01-Mvt1/m01_v02_music_FloteII.ily"
-\include "./01-Mvt1/m01_v03_music_Piccolo.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
+\include "./01-Mvt1/m01_v01_music_FloteI_C.ily"
+\include "./01-Mvt1/m01_v02_music_FloteIIStaffI_C.ily"
+\include "./01-Mvt1/m01_v02_music_FloteIIStaffII_C.ily"
+\include "./01-Mvt1/m01_v03_music_FloteIII_C.ily"
 \include "./01-Mvt1/m01_v04_music_OboeI.ily"
 \include "./01-Mvt1/m01_v05_music_OboeII.ily"
 \include "./01-Mvt1/m01_v06_music_KlarinetteI.ily"
@@ -67,21 +70,36 @@
 	\score {
 %		<<
 %			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
-%					\new Staff <<
-%%						\new Voice {
-%%							\formatConductorMvtI
-%%						}
+				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
+					\new Staff <<
+%						\new Voice {
+%							\formatConductorMvtI
+%						}
+						\new Voice {
+							\tempiMvtI
+						}
 						\new Voice {
 							\timeMvtI \nameStaffIMvtI
-%							\partCombine \musicFloteIMvtI \musicFloteIIMvtI
-							\musicFloteIMvtI 
+							\partCombine \musicFloteIMvtI \musicFloteIIMvtI
+%							\musicFloteIMvtI
 						}
-%					>>
+					>>
+					\new Staff {
+						\timeMvtI \nameStaffIIMvtI 
+						\partCombine \musicFloteIIStaffIIMvtI \musicFloteIIIMvtI
+					}
 %					\new Staff {
-%						\timeMvtI \nameStaffIIMvtI \musicPiccoloMvtI
+%						\timeMvtI \nameStaffIIMvtI \musicFloteIIIMvtI
 %					}
-%				>>
+%					\new Staff {
+%						\timeMvtI \nameStaffIIMvtI 
+%						\partCombine \musicFloteIMvtI \musicFloteIIMvtI
+%					}
+%					\new Staff {
+%						\timeMvtI \nameStaffIIMvtI 
+%						\partCombine \musicFloteIIMvtI \musicFloteIIIMvtI
+%					}
+				>>
 %				\new Staff {
 %					\timeMvtI \nameStaffIIIMvtI
 %					\partCombine \musicOboeIMvtI \musicOboeIIMvtI

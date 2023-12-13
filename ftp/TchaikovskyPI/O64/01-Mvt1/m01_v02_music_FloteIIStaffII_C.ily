@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFloteIIMvtI = \relative c' {
+musicFloteIIStaffIIMvtI = \relative c' {
 	\clef treble
 	\key e \minor
 %	\transposition a
@@ -35,16 +35,20 @@ musicFloteIIMvtI = \relative c' {
 	
 % Bars 46 to 50
 	
+	
+	
+	
+	
 % Bars 51 to 55
 	
 	
-	r4 r8 r4 g'8\pp(
-	c8)[ r16 c c8]~ c b( a
-	b)_\pococresc d,( e~ e) fis( g
+	R2.*4
+	
+	
 % Bars 56 to 60
-	a4 e8) ais4( e8) \mark \default
-	b'4.\mp\>~ b8\p r r
-	b\p r r c r r
+	\mark \default
+	R2.
+	b'8\p r r c r r
 	e r r c r r
 	e r r e r r
 % Bars 61 to 65
@@ -52,25 +56,26 @@ musicFloteIIMvtI = \relative c' {
 	b\p r r a r r
 	e r r c r r
 	e r r e r r
-	b' r r r g,(\mf gis \mark \default
+	b' r r r4 r8 \mark \default % r g,(\mf gis 
 % Bars 66 to 70
-	a)\noBeam d16(\f e fis g a8) r r
-	r8 fis,16(\mp g a b c8) r r
-	r4 d16(\ff cis c b a gis g fis)
-	e( fis g a g fis e8) g(\mf gis
-	a) d16(\f e fis g a8) r r
+	R2.*14
+%	a)\noBeam d16(\f e fis g a8) r r
+%	r8 fis,16(\mp g a b c8) r r
+%	r4 d16(\ff cis c b a gis g fis)
+%	e( fis g a g fis e8) g(\mf gis
+%	a) d16(\f e fis g a8) r r
 % Bars 71 to 75
-	r fis,16(\mp g a b c8) r r 
-	r4 g16(\ff a b a g a b ais)
-	b( cis d e eis fis fis,8) g( gis
-	a) d16(\f e fis g a8) r r
-	r fis,16(\mp g a b c8) r r
+%	r fis,16(\mp g a b c8) r r 
+%	r4 g16(\ff a b a g a b ais)
+%	b( cis d e eis fis fis,8) g( gis
+%	a) d16(\f e fis g a8) r r
+%	r fis,16(\mp g a b c8) r r
 % Bars 76 to 80
-	r4 d16(\ff cis c b a gis g fis)
-	e( fis g a g fis e8) g( gis
-	a) d16(\f e fis g a8) r r
-	r fis,16(\mp g a b c8) r r
-	r4 g16(\ff a b a g a b ais)
+%	r4 d16(\ff cis c b a gis g fis)
+%	e( fis g a g fis e8) g( gis
+%	a) d16(\f e fis g a8) r r
+%	r fis,16(\mp g a b c8) r r
+	r4 g,16(\ff a b a g a b ais)
 % Bars 81 to 85
 	b( cis d fis g fis g fis) g( fis g fis
 	e cis d fis e cis d) fis( g fis g fis 

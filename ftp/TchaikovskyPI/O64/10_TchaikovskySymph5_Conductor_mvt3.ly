@@ -23,7 +23,7 @@
 \include "./00-Common/TchaikovskySymph5_Format_Cond_Mvt03.ily"
 \include "./03-Mvt3/m03_v01_music_FloteI.ily"
 \include "./03-Mvt3/m03_v02_music_FloteII.ily"
-\include "./03-Mvt3/m03_v03_music_Piccolo.ily"
+\include "./03-Mvt3/m03_v03_music_FloteIII.ily"
 \include "./03-Mvt3/m03_v04_music_OboeI.ily"
 \include "./03-Mvt3/m03_v05_music_OboeII.ily"
 \include "./03-Mvt3/m03_v06_music_KlarinetteI.ily"
@@ -74,7 +74,7 @@
 						}
 					>>
 					\new Staff {
-						\timeMvtIII \nameStaffIIMvtIII \musicPiccoloMvtIII
+						\timeMvtIII \nameStaffIIMvtIII \musicFloteIIIMvtIII
 					}
 				>>
 				\new Staff {

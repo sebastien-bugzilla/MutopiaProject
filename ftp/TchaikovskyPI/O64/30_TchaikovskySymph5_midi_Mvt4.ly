@@ -18,7 +18,7 @@
 \include "./00-Common/TchaikovskySymph5_NameVoice.ily"
 \include "./04-Mvt4/m04_v01_music_FloteI.ily"
 \include "./04-Mvt4/m04_v02_music_FloteII.ily"
-\include "./04-Mvt4/m04_v03_music_Piccolo.ily"
+\include "./04-Mvt4/m04_v03_music_FloteIII.ily"
 \include "./04-Mvt4/m04_v04_music_OboeI.ily"
 \include "./04-Mvt4/m04_v05_music_OboeII.ily"
 \include "./04-Mvt4/m04_v06_music_KlarinetteI.ily"
@@ -51,7 +51,7 @@
 			\new StaffGroup <<
 				\new Staff { \timeMvtIV \musicFloteIMvtIV }
 				\new Staff { \timeMvtIV \musicFloteIIMvtIV }
-				\new Staff { \timeMvtIV \musicPiccoloMvtIV }
+				\new Staff { \timeMvtIV \musicFloteIIIMvtIV }
 				\new Staff { \timeMvtIV \musicOboeIMvtIV }
 				\new Staff { \timeMvtIV \musicOboeIIMvtIV }
 				\new Staff { \timeMvtIV \musicKlarinetteIMvtIV }

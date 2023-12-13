@@ -36,19 +36,19 @@ formatFloteIIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
-formatPiccoloMvtI = {
+formatFloteIIIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
-formatPiccoloMvtII = {
+formatFloteIIIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
-formatPiccoloMvtIII = {
+formatFloteIIIMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
-formatPiccoloMvtIV = {
+formatFloteIIIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }

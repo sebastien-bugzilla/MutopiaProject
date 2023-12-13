@@ -6,17 +6,17 @@
 %###############################################################################
 timeMvtI = {
 	\time 4/4
-	\tempo "Andante"
+%	\tempo "Andante"
 }
 timeMvtII = {
 	\time 12/8
-	\tempo "Andante cantabile con alcuna licenza"
+%	\tempo "Andante cantabile con alcuna licenza"
 }
 timeMvtIII = {
 	\time 3/4
-	\tempo "Allegro moderato"
+%	\tempo "Allegro moderato"
 }
 timeMvtIV = {
 	\time 4/4
-	\tempo "Andante maestoso"
+%	\tempo "Andante maestoso"
 }

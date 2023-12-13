@@ -28,16 +28,16 @@ cueVoiceFloteIIMvtIII = \relative c {
 cueVoiceFloteIIMvtIV = \relative c {
 	
 }
-cueVoicePiccoloMvtI = \relative c {
+cueVoiceFloteIIIMvtI = \relative c {
 	
 }
-cueVoicePiccoloMvtII = \relative c {
+cueVoiceFloteIIIMvtII = \relative c {
 	
 }
-cueVoicePiccoloMvtIII = \relative c {
+cueVoiceFloteIIIMvtIII = \relative c {
 	
 }
-cueVoicePiccoloMvtIV = \relative c {
+cueVoiceFloteIIIMvtIV = \relative c {
 	
 }
 %###############################################################################

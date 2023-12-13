@@ -35,6 +35,10 @@ musicFloteIIMvtI = \relative c' {
 	
 % Bars 46 to 50
 	
+	
+	
+	
+	
 % Bars 51 to 55
 	
 	
@@ -70,12 +74,12 @@ musicFloteIIMvtI = \relative c' {
 	e( fis g a g fis e8) g( gis
 	a) d16(\f e fis g a8) r r
 	r fis,16(\mp g a b c8) r r
-	r4 g16(\ff a b a g a b ais)
+	R2.*4 % r4 g16(\ff a b a g a b ais)
 % Bars 81 to 85
-	b( cis d fis g fis g fis) g( fis g fis
-	e cis d fis e cis d) fis( g fis g fis 
-	g fis g fis g fis g) g,( a ais b ais) \mark \default
-	fis'8.\ff fis16 fis8 r4 r8
+	%b( cis d fis g fis g fis) g( fis g fis
+	%e cis d fis e cis d) fis( g fis g fis 
+	 \mark \default %g fis g fis g fis g) g,( a ais b ais) \mark \default
+	r4. r4 r8 %fis'8.\ff fis16 fis8 r4 r8
 	e,16( fis g a b8) r b16( cis d e)
 % Bars 86 to 90
 	fis8.\ff fis16 fis8 r4 r8

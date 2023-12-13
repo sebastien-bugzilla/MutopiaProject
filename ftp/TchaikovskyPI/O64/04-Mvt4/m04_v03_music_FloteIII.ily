@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicPiccoloMvtIV = \relative c {
+musicFloteIIIMvtIV = \relative c {
 	\clef treble
 	\key e \major
 %	\transposition a

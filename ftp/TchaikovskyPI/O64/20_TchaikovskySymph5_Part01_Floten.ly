@@ -23,16 +23,16 @@
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v01_music_FloteI.ily"
 \include "./01-Mvt1/m01_v02_music_FloteII.ily"
-\include "./01-Mvt1/m01_v03_music_Piccolo.ily"
+\include "./01-Mvt1/m01_v03_music_FloteIII.ily"
 \include "./02-Mvt2/m02_v01_music_FloteI.ily"
 \include "./02-Mvt2/m02_v02_music_FloteII.ily"
-\include "./02-Mvt2/m02_v03_music_Piccolo.ily"
+\include "./02-Mvt2/m02_v03_music_FloteIII.ily"
 \include "./03-Mvt3/m03_v01_music_FloteI.ily"
 \include "./03-Mvt3/m03_v02_music_FloteII.ily"
-\include "./03-Mvt3/m03_v03_music_Piccolo.ily"
+\include "./03-Mvt3/m03_v03_music_FloteIII.ily"
 \include "./04-Mvt4/m04_v01_music_FloteI.ily"
 \include "./04-Mvt4/m04_v02_music_FloteII.ily"
-\include "./04-Mvt4/m04_v03_music_Piccolo.ily"
+\include "./04-Mvt4/m04_v03_music_FloteIII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -44,10 +44,10 @@
 \addQuote "cueVoiceFloteIIMvtII" { \cueVoiceFloteIIMvtII }
 \addQuote "cueVoiceFloteIIMvtIII" { \cueVoiceFloteIIMvtIII }
 \addQuote "cueVoiceFloteIIMvtIV" { \cueVoiceFloteIIMvtIV }
-\addQuote "cueVoicePiccoloMvtI" { \cueVoicePiccoloMvtI }
-\addQuote "cueVoicePiccoloMvtII" { \cueVoicePiccoloMvtII }
-\addQuote "cueVoicePiccoloMvtIII" { \cueVoicePiccoloMvtIII }
-\addQuote "cueVoicePiccoloMvtIV" { \cueVoicePiccoloMvtIV }
+\addQuote "cueVoiceFloteIIIMvtI" { \cueVoiceFloteIIIMvtI }
+\addQuote "cueVoiceFloteIIIMvtII" { \cueVoiceFloteIIIMvtII }
+\addQuote "cueVoiceFloteIIIMvtIII" { \cueVoiceFloteIIIMvtIII }
+\addQuote "cueVoiceFloteIIIMvtIV" { \cueVoiceFloteIIIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -242,11 +242,11 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatPiccoloMvtI
+				\formatFloteIIIMvtI
 			}
 			\new Voice {
 				\timeMvtI \generalLayouts \partLayouts
-				\namePiccoloMvtI \musicPiccoloMvtI
+				\nameFloteIIIMvtI \musicFloteIIIMvtI
 			}
 		>>
 		\header {
@@ -264,11 +264,11 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatPiccoloMvtII
+				\formatFloteIIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \generalLayouts \partLayouts
-				\namePiccoloMvtII \musicPiccoloMvtII
+				\nameFloteIIIMvtII \musicFloteIIIMvtII
 			}
 		>>
 		\header {
@@ -286,11 +286,11 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatPiccoloMvtIII
+				\formatFloteIIIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \generalLayouts \partLayouts
-				\namePiccoloMvtIII \musicPiccoloMvtIII
+				\nameFloteIIIMvtIII \musicFloteIIIMvtIII
 			}
 		>>
 		\header {
@@ -308,11 +308,11 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatPiccoloMvtIV
+				\formatFloteIIIMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \generalLayouts \partLayouts
-				\namePiccoloMvtIV \musicPiccoloMvtIV
+				\nameFloteIIIMvtIV \musicFloteIIIMvtIV
 			}
 		>>
 		\header {

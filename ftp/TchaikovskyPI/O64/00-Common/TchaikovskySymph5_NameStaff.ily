@@ -29,7 +29,7 @@ nameStaffIIMvtI = {
 			\lower #1 "Flöte III" "(Piccolo)"
 		}
 	}
-	\set Staff.shortInstrumentName = "Picc."
+	\set Staff.shortInstrumentName = "Fl.III"
 	\set Staff.midiInstrument = #""
 }
 nameStaffIIIMvtI = {
@@ -234,7 +234,7 @@ nameStaffIIMvtII = {
 			\lower #1 "Flöte III" "(Piccolo)"
 		}
 	}
-	\set Staff.shortInstrumentName = "Picc."
+	\set Staff.shortInstrumentName = "Fl.III"
 	\set Staff.midiInstrument = #""
 }
 nameStaffIIIMvtII = {
@@ -439,7 +439,7 @@ nameStaffIIMvtIII = {
 			\lower #1 "Flöte III" "(Piccolo)"
 		}
 	}
-	\set Staff.shortInstrumentName = "Picc."
+	\set Staff.shortInstrumentName = "Fl.III"
 	\set Staff.midiInstrument = #""
 }
 nameStaffIIIMvtIII = {
@@ -612,7 +612,7 @@ nameStaffIIMvtIV = {
 			\lower #1 "Flöte III" "(Piccolo)"
 		}
 	}
-	\set Staff.shortInstrumentName = "Picc."
+	\set Staff.shortInstrumentName = "Fl.III"
 	\set Staff.midiInstrument = #""
 }
 nameStaffIIIMvtIV = {
