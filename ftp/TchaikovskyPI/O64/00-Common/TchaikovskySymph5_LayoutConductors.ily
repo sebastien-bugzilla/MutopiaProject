@@ -9,6 +9,9 @@
 	#(layout-set-staff-size 19) 
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.rehearsalMarkFormatter = #format-mark-alphabet
+	\set Staff.soloText = #"I"
+	\set Staff.soloIIText = #"II"
+	\set Staff.aDueText = #"a2"
 	\compressEmptyMeasures
 	\context {
 		\Score

@@ -27,8 +27,8 @@
 \include "./01-Mvt1/m01_v02_music_FloteIIStaffI_C.ily"
 \include "./01-Mvt1/m01_v02_music_FloteIIStaffII_C.ily"
 \include "./01-Mvt1/m01_v03_music_FloteIII_C.ily"
-\include "./01-Mvt1/m01_v04_music_OboeI.ily"
-\include "./01-Mvt1/m01_v05_music_OboeII.ily"
+\include "./01-Mvt1/m01_v04_music_OboeI_C.ily"
+\include "./01-Mvt1/m01_v05_music_OboeII_C.ily"
 \include "./01-Mvt1/m01_v06_music_KlarinetteI.ily"
 \include "./01-Mvt1/m01_v07_music_KlarinetteII.ily"
 \include "./01-Mvt1/m01_v08_music_FagotteI.ily"
@@ -68,7 +68,7 @@
 		}
 	}
 	\score {
-%		<<
+		<<
 %			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
 					\new Staff <<
@@ -88,22 +88,12 @@
 						\timeMvtI \nameStaffIIMvtI 
 						\partCombine \musicFloteIIStaffIIMvtI \musicFloteIIIMvtI
 					}
-%					\new Staff {
-%						\timeMvtI \nameStaffIIMvtI \musicFloteIIIMvtI
-%					}
-%					\new Staff {
-%						\timeMvtI \nameStaffIIMvtI 
-%						\partCombine \musicFloteIMvtI \musicFloteIIMvtI
-%					}
-%					\new Staff {
-%						\timeMvtI \nameStaffIIMvtI 
-%						\partCombine \musicFloteIIMvtI \musicFloteIIIMvtI
-%					}
 				>>
-%				\new Staff {
-%					\timeMvtI \nameStaffIIIMvtI
-%					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
-%				}
+				\new Staff {
+					\timeMvtI \nameStaffIIIMvtI
+					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
+%					\musicOboeIIMvtI 
+				}
 %				\new Staff {
 %					\timeMvtI \nameStaffIVMvtI
 %					\partCombine \musicKlarinetteIMvtI \musicKlarinetteIIMvtI
@@ -161,7 +151,7 @@
 %					\timeMvtI \nameStaffXVIMvtI \musicKontrabassMvtI
 %				}
 %			>>
-%		>>
+		>>
 		\header {
 			breakbefore = ##t
 		}

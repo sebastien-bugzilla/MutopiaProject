@@ -15,8 +15,8 @@ menof = \markup {\italic {meno} \dynamic f}
 pcrescmolto = \markup {\dynamic p \italic {cresc. molto}}
 fcresc = \markup {\dynamic f \italic {cresc.}}
 crescmarkup = \markup {\italic {cresc.}}
-
-
+dimmarkup = \markup {\italic {dim.}}
+ffdim = \markup {\dynamic ff \italic {dim.}}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
@@ -39,6 +39,22 @@ noteShift = #(define-music-function
 		\once \override NoteColumn.force-hshift = #shift
 	#}
 )
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+
+
+% shortcuts
+omitFlag = \once \omit Flag
+omitBeam = \once \omit Beam
+omitDots = \once \omit Dots
+
 
 
 
@@ -66,14 +82,6 @@ noteShift = #(define-music-function
 %	(number?)
 %	#{
 %		\once \override Voice.Arpeggio.padding = #padding
-%	#}
-%)
-
-%beamOffset = #(define-music-function
-%	(position)
-%	(pair?)
-%	#{
-%		\once \offset positions #position Beam
 %	#}
 %)
 
