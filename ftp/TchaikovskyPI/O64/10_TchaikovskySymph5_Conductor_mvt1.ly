@@ -29,8 +29,8 @@
 \include "./01-Mvt1/m01_v03_music_FloteIII_C.ily"
 \include "./01-Mvt1/m01_v04_music_OboeI_C.ily"
 \include "./01-Mvt1/m01_v05_music_OboeII_C.ily"
-\include "./01-Mvt1/m01_v06_music_KlarinetteI.ily"
-\include "./01-Mvt1/m01_v07_music_KlarinetteII.ily"
+\include "./01-Mvt1/m01_v06_music_KlarinetteI_C.ily"
+\include "./01-Mvt1/m01_v07_music_KlarinetteII_C.ily"
 \include "./01-Mvt1/m01_v08_music_FagotteI.ily"
 \include "./01-Mvt1/m01_v09_music_FagotteII.ily"
 \include "./01-Mvt1/m01_v10_music_HornI.ily"
@@ -70,34 +70,35 @@
 	\score {
 		<<
 %			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
-					\new Staff <<
+%				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
+%					\new Staff <<
+%%						\new Voice {
+%%							\formatConductorMvtI
+%%						}
 %						\new Voice {
-%							\formatConductorMvtI
+%							\tempiMvtI
 %						}
-						\new Voice {
-							\tempiMvtI
-						}
-						\new Voice {
-							\timeMvtI \nameStaffIMvtI
-							\partCombine \musicFloteIMvtI \musicFloteIIMvtI
-%							\musicFloteIMvtI
-						}
-					>>
-					\new Staff {
-						\timeMvtI \nameStaffIIMvtI 
-						\partCombine \musicFloteIIStaffIIMvtI \musicFloteIIIMvtI
-					}
-				>>
-				\new Staff {
-					\timeMvtI \nameStaffIIIMvtI
-					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
-%					\musicOboeIIMvtI 
-				}
+%						\new Voice {
+%							\timeMvtI \nameStaffIMvtI
+%							\partCombine \musicFloteIMvtI \musicFloteIIMvtI
+%%							\musicFloteIMvtI
+%						}
+%					>>
+%					\new Staff {
+%						\timeMvtI \nameStaffIIMvtI 
+%						\partCombine \musicFloteIIStaffIIMvtI \musicFloteIIIMvtI
+%					}
+%				>>
 %				\new Staff {
-%					\timeMvtI \nameStaffIVMvtI
-%					\partCombine \musicKlarinetteIMvtI \musicKlarinetteIIMvtI
+%					\timeMvtI \nameStaffIIIMvtI
+%					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
+%%					\musicOboeIIMvtI 
 %				}
+				\new Staff {
+					\timeMvtI \nameStaffIVMvtI
+					\partCombine #'(0 . 16) \musicKlarinetteIMvtI \musicKlarinetteIIMvtI
+%					\musicKlarinetteIIMvtI
+				}
 %				\new Staff {
 %					\timeMvtI \nameStaffVMvtI
 %					\partCombine \musicFagotteIMvtI \musicFagotteIIMvtI

@@ -4,7 +4,7 @@
 %###############################################################################
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
-ppgrasiosoeleggiero = \markup { \dynamic pp \italic { gracioso e leggiero }}
+ppgraziosoeleggiero = \markup { \dynamic pp \italic { grazioso e leggiero }}
 pococresc = \markup {\italic {poco cresc.}}
 sempreff = \markup {\italic sempre \dynamic ff}
 mfcresc = \markup {\dynamic mf \italic {cresc.}}
@@ -17,6 +17,8 @@ fcresc = \markup {\dynamic f \italic {cresc.}}
 crescmarkup = \markup {\italic {cresc.}}
 dimmarkup = \markup {\italic {dim.}}
 ffdim = \markup {\dynamic ff \italic {dim.}}
+piuf = \markup {\italic {più} \dynamic f}
+graziosoeleggiero = \markup { \italic { grazioso e leggiero }}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}

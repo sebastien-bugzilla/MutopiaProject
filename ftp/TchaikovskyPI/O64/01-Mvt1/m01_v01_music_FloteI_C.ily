@@ -37,7 +37,7 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	
-	r4 r8 r16 e(_\ppgrasiosoeleggiero fis g a b
+	r4 r8 r16 e(_\ppgraziosoeleggiero fis g a b
 	c8)[ r16 c c8~] c b( a
 % Bars 51 to 55
 	b)\< d,( e~ e) fis( g\!
