@@ -19,6 +19,8 @@ dimmarkup = \markup {\italic {dim.}}
 ffdim = \markup {\dynamic ff \italic {dim.}}
 piuf = \markup {\italic {più} \dynamic f}
 graziosoeleggiero = \markup { \italic { grazioso e leggiero }}
+mpcresc = \markup {\dynamic mp \italic {cresc.}}
+soli = \markup {Soli}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
