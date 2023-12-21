@@ -60,7 +60,7 @@ musicTrompetenIIMvtI = \relative c {
 % Bars 86 to 90
 	a8.\ff a16 a8 r4 r8
 	R2.
-	a8._\sempreff a16 a8 r4 r8
+	a8. a16 a8 r4 r8
 	r4 r8 a8. a16 a8
 	d8. d16 d8 r4 r8
 % Bars 91 to 95
@@ -131,10 +131,10 @@ musicTrompetenIIMvtI = \relative c {
 	R2.*3
 	
 	
-	f4._\mfcresc f8 f f
+	f4. f8 f f
 % Bars 191 to 195
 	f4. c8 c4
-	c4_\fcresc c8~ c c c 
+	c4 c8~ c c c 
 	f4 f8~ f f'4
 	c8\fff r r r4 r8
 	R2.
@@ -328,9 +328,9 @@ musicTrompetenIIMvtI = \relative c {
 	
 % Bars 446 to 450
 	
-	g4._\mfcresc g8 g g
+	g4. g8 g g
 	g4. d8 d4
-	d4_\fcresc d8~ d d d
+	d4 d8~ d d d
 	g4 g8~ g g'4
 % Bars 451 to 455
 	d8\fff r r r4 r8
@@ -373,12 +373,12 @@ musicTrompetenIIMvtI = \relative c {
 	bes r r b r r
 	c r r bes r r
 	c r r a r r
-	g_\crescmarkup  r r c r r
+	g  r r c r r
 % Bars 496 to 500
 	c r r d r r
 	c r r bes r r
 	ees r r ees r r
-	d_\fcresc r r cis r r
+	d r r cis r r
 	d r r d r r
 % Bars 501 to 505
 	bes r r bes r r

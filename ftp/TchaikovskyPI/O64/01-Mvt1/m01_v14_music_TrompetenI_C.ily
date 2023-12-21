@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrompetenIIMvtI = \relative c {
+musicTrompetenIMvtI = \relative c {
 	\clef treble
 	\key a \minor
 	\transposition a
@@ -55,44 +55,44 @@ musicTrompetenIIMvtI = \relative c {
 	
 	
 	\mark \default
-	a''8.\ff a16 a8 r4 r8
+	d''8.\ff d16 d8 r4 r8
 	R2.
 % Bars 86 to 90
-	a8.\ff a16 a8 r4 r8
+	d8.\ff d16 d8 r4 r8
 	R2.
-	a8._\sempreff a16 a8 r4 r8
-	r4 r8 a8. a16 a8
-	d8. d16 d8 r4 r8
+	d8._\sempreff d16 d8 r4 r8
+	r4 r8 a'8. a16 a8
+	g8. g16 g8 r4 r8
 % Bars 91 to 95
 	R2.
-	d8. d16 d8 r4 r8
+	g8. g16 g8 r4 r8
 	R2.
-	d8. d16 d8 r4 r8
-	r4 r8 d,8. d16 d8
+	g8. g16 g8 r4 r8
+	\partCombineApart g8. g16 g8 \partCombineAutomatic d8. d16 d8
 % Bars 96 to 100
-	g8. g16 g8 r4 r8
-	g8. g16 g8 r4 r8
-	g g r r g g 
-	r g r g r g \mark \default
-	r4 r8 r r d\ff
+	c8. c16 c8 r4 r8
+	c8. c16 c8 r4 r8
+	c c r r c c 
+	r c r c r c \mark \default
+	r4 r8 \partCombineApart r g\ff g \partCombineAutomatic
 % Bars 101 to 105
-	ees4.~ ees8 r r
-	r4 r8 r r f
 	g4.~ g8 r r
-	g8. g16 g8~ g4.
+	r4 r8 r \partCombineApart bes bes \partCombineAutomatic
+	bes4.~ bes8 r r
+	g'8. g16 g8~ g4.
 	g8. g16 g8~ g4.
 % Bars 106 to 110
 	g8. g16 g8~ g8. g16 g8~
 	g d d  d d d
 	g4.\fff g
-	g g4 g8
-	ees'4. d
+	g g4 d8
+	g4. fis
 % Bars 111 to 115
-	d c4 c8
-	g4. g
+	\partCombineApart d ees4 c8 \partCombineAutomatic
+	g'4. g
 	g g
-	g4 g8 g4 g8 \mark \default
-	a4 f'8 e r r
+	g4 c,8 cis4 cis8 \mark \default
+	d4 bes'8 a r r
 % Bars 116 to 120
 	R2.*24
 % Bars 121 to 125
@@ -127,7 +127,7 @@ musicTrompetenIIMvtI = \relative c {
 	\mark \default
 	R2.*4
 % Bars 186 to 190
-	f,8\f r r r4 r8
+	f8\f r r r4 r8
 	R2.*3
 	
 	
@@ -135,30 +135,30 @@ musicTrompetenIIMvtI = \relative c {
 % Bars 191 to 195
 	f4. c8 c4
 	c4_\fcresc c8~ c c c 
-	f4 f8~ f f'4
-	c8\fff r r r4 r8
+	f4 f8~ f g4
+	f8\fff r r r4 r8
 	R2.
 % Bars 196 to 200
 	g8[\fff r16 g g8] g a bes
 	c bes a g a bes
-	f'8[ r16 f f8] f f f
-	f f f  f f f
+	a8[\fff r16 a a8] a a a
+	a a a  a a a
 	R2. 
 % Bars 201 to 205
-	R2. \mark \default
-	a,8[\fff r16 f' f8] f f f
-	f f f  f f f
+	r4 r8 << f4. {s8\f\< s s\!}>> \mark \default
+	f8[\fff r16 a a8] a a a
+	a a a  a a a
 	R2.*2
 	
 % Bars 206 to 210
-	a,8[\fff r16 f' f8] f f f
+	f8[\fff r16 a a8] a a a
 	R2.
-	a,8[\ff r16 a a8] a a a
+	f8[\ff r16 f f8] f f f
 	R2.
-	a8[\f r16 f f8] f f f
+	c8[\f r16 c c8] c c c
 % Bars 211 to 215
-	f r r r4 r8
-	R2.
+	c r r r4 r8
+	a r r r4 r8
 	R2. \mark #11
 	R2.*26
 % Bars 216 to 220
@@ -183,22 +183,22 @@ musicTrompetenIIMvtI = \relative c {
 	
 	
 	
-	\after 2.*5/6 \! f2.\p\< \mark \default
-	g8[\ff r16 g g8] r4 r8
+	R2. \mark \default
+	g'8[\ff r16 g g8] r4 r8
 % Bars 256 to 260
 	R2.
 	g8[\ff r16 g g8] r4 r8
 	R2.
 	g8[ r16 g g8] r4 r8
-	ges8[ r16 ges ges8] r4 r8
+	aes8[ r16 aes aes8] r4 r8
 % Bars 261 to 265
-	f8[ r16 f f8] r4 r8
-	R2.
-	f'8[ r16 f f8] r4 r8
-	R2.
-	f8[ r16 f f8] r4 r8
+	aes8[ r16 aes aes8] r4 r8
+	\partCombineApart r4 r8 r4 b,8 \partCombineAutomatic
+	b'8[ r16 b b8] r4 r8
+	\partCombineApart r4 r8 r4 b,8 \partCombineAutomatic
+	b'8[ r16 b b8] r4 r8
 % Bars 266 to 270
-	f8[ r16 f f8] r4 r8
+	b8[ r16 b b8] r4 r8
 	R2.*2
 	\mark \default
 	R2.*24
@@ -213,30 +213,30 @@ musicTrompetenIIMvtI = \relative c {
 % Bars 291 to 295
 	
 	\mark \default
-	r4 r8 bes,\ff r r 
-	r4 r8 aes r r 
-	r4 r8 bes r r
+	r4 r8 f\ff r r 
+	r4 r8 f r r 
+	r4 r8 f r r
 % Bars 296 to 300
-	r4 r8 aes r r
-	r c4\fff c c8
+	r4 r8 f r r
+	r f4\fff f f8
+	r aes4 aes aes8
 	r f4 f f8
-	r des4 des des8
-	r g4 g g8
+	r bes4 bes bes8
 % Bars 301 to 305
 	R2.
-	r8 g4 g g8
+	r8 bes4 bes bes8
 	R2.
-	r8 g4 g g8
+	r8 bes4 bes bes8
 	R2.
 % Bars 306 to 310
-	f8[ r16 f f8]~ f f f
+	bes8[ r16 bes bes8]~ bes bes bes
 	R2.
-	f8[ r16 f f8]~ f f f \mark \default
-	r4 r8 bes,4\ff bes8
-	r4 r8 bes4 bes8
-% Bars 311 to 315
-	r4 r8 g4\f g8
+	bes8[ r16 bes bes8]~ bes bes bes \mark \default
+	r4 r8 g4\ff g8
 	r4 r8 g4 g8
+% Bars 311 to 315
+	r4 r8 bes,4\f bes8
+	r4 r8 bes4 bes8
 	R2.*7
 % Bars 316 to 320
 	
@@ -267,17 +267,17 @@ musicTrompetenIIMvtI = \relative c {
 	
 	
 	
-	r4 r8 r d'4\ff \mark \default
-	c4. a
+	r4 r8 r e4\ff \mark \default
+	e4. a
 % Bars 366 to 370
-	a a4 a8
-	f'4. e
-	e d4 d8
-	a4. a
+	a a4 e8
+	a4. gis
+	\partCombineApart e f4 d8 \partCombineAutomatic
+	a'4. a
 	a a 
 % Bars 371 to 375
-	a4 a8 a4 a8
-	b4 c8 b r r
+	a4 d,8 dis4 dis8
+	e4 e8 dis r r
 	R2.*18
 % Bars 376 to 380
 	
@@ -286,22 +286,22 @@ musicTrompetenIIMvtI = \relative c {
 % Bars 386 to 390
 	
 % Bars 391 to 395
-	e,4.\mp\> e\!
-	dis8\pp r r r4 r8
+	e4.\mp\> e\!
+	fis,8\pp r r r4 r8
 	R2.*2
 	
-	e4.\mf\> e\!
+	e'4.\mf\> e\!
 % Bars 396 to 400
-	dis8\pp r r r4 r8 \mark \default
-	e4.\p->(~ e4 d!8)
-	c8 r r r4 r8
-	d4.(~\pp-> d4 c8)
-	b r r r4 r8
+	fis,8\pp r r r4 r8 \mark \default
+	e'4.\p->~ e8 d(-. e-.)
+	\after 2.*5/6 \! a,2.\>
+	d4.~\pp-> d8 c-.( d-.)
+	g,2.
 % Bars 401 to 405
-	g'4.\ppp r4 r8
-	fis4. r4 r8
-	e4. r4 r8
-	d4. r4 r8
+	c4.\ppp r4 r8
+	b4. r4 r8
+	a4. r4 r8
+	g4. r4 r8
 	R2.*34
 % Bars 406 to 410
 	
@@ -323,7 +323,7 @@ musicTrompetenIIMvtI = \relative c {
 % Bars 441 to 445
 	
 	
-	g8\f r r r4 r8
+	g'8\f r r r4 r8
 	R2.*3
 	
 % Bars 446 to 450
@@ -331,30 +331,30 @@ musicTrompetenIIMvtI = \relative c {
 	g4._\mfcresc g8 g g
 	g4. d8 d4
 	d4_\fcresc d8~ d d d
-	g4 g8~ g g'4
+	g4 g8~ g a4
 % Bars 451 to 455
-	d8\fff r r r4 r8
+	g8\fff r r r4 r8
 	R2.
-	a8[\fff r16 a a8] a b c
+	a,8[\fff r16 a a8] a b c
 	d c b a b c
-	b8[\fff r16 b b8] b b b
+	g'8[\fff r16 g g8] g g g
 % Bars 456 to 460
-	b b b  b b b
+	g g g  g g g
 	R2.
-	R2. \mark \default
-	b8[\fff r16 b b8] b b b
-	b b b  b b b
+	\partCombineApart r4 r8 << g4. {s8\f\< s s\!}>> \partCombineAutomatic \mark \default
+	g8[\fff r16 g g8] g g g
+	g g g  g g g
 % Bars 461 to 465
 	R2.*2
 	
-	b8[\fff r16 b b8] b b b
+	g8[\fff r16 g g8] g g g
 	R2.
-	b8[\ff r16 b b8] b b b
+	g8[\ff r16 g g8] g g g
 % Bars 466 to 470
 	R2.
-	b8[\f r16 g g8] g g g
-	g r r r4 r8
-	R2.
+	d8[\f r16 d d8] d d d
+	d r r r4 r8
+	b r r r4 r8
 	R2. \mark \default
 % Bars 471 to 475
 	R2.*16
@@ -364,37 +364,37 @@ musicTrompetenIIMvtI = \relative c {
 	
 % Bars 486 to 490
 	\mark \default
-	d8\ff r r d\p r r
-	d r r d r r
-	g r r bes r r
-	c r r a r r
-% Bars 491 to 495
-	d\p r r c r r
-	bes r r b r r
-	c r r bes r r
-	c r r a r r
-	g_\crescmarkup  r r c r r
-% Bars 496 to 500
+	f8\ff r r bes\p r r
+	b! r r b r r
 	c r r d r r
-	c r r bes r r
-	ees r r ees r r
-	d_\fcresc r r cis r r
-	d r r d r r
+	ees r r c r r
+% Bars 491 to 495
+	g'\p r r fis r r
+	g r r g r r
+	g r r g r r
+	g r r c, r r
+	g'_\crescmarkup  r r f r r
+% Bars 496 to 500
+	a r r g r r
+	ees r r f r r
+	g r r bes r r
+	g_\fcresc r r bes r r
+	bes r r g r r
 % Bars 501 to 505
-	bes r r bes r r
-	a r r c r r \mark \default
-	g'[\fff r16 g g8]~ g a, g~
-	g f ees d g g
-	g'8[ r16 g g8]~ g g g~
+	d r r d r r
+	c r r ees r r \mark \default
+	bes'[\fff r16 c bes8]~ bes a g~
+	g f ees d c bes
+	a'8[ r16 a a8]~ a a a~
 % Bars 506 to 510
-	g d d~ d c c
-	bes r r bes\ff r r
-	g r r c r r 
-	bes r r bes r r
-	g r r c r r
+	a fis fis~ fis d d
+	d r r d\ff r r
+	g r r d r r 
+	d r r d r r
+	g r r d r r
 % Bars 511 to 515
-	bes r r r4 r8
-	r4 r8 d,\f r d16 d
+	d r r r4 r8
+	r4 r8 d\f r d16 d
 	d8 r r r4 r8
 	r4 r8 d r d16 d \mark \default
 	d8 r r r4 r8
@@ -403,7 +403,7 @@ musicTrompetenIIMvtI = \relative c {
 	
 	
 	
-	r4 r8 d[\p r d16 d]
+	r4 r8 d,[\p r d16 d]
 % Bars 521 to 525
 	d8 r r r4 r8
 	r4 r8 d[\pp r d16 d] \mark \default

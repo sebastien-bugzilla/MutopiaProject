@@ -37,8 +37,8 @@
 \include "./01-Mvt1/m01_v11_music_HornII_C.ily"
 \include "./01-Mvt1/m01_v12_music_HornIII_C.ily"
 \include "./01-Mvt1/m01_v13_music_HornIV_C.ily"
-\include "./01-Mvt1/m01_v14_music_TrompetenI.ily"
-\include "./01-Mvt1/m01_v15_music_TrompetenII.ily"
+\include "./01-Mvt1/m01_v14_music_TrompetenI_C.ily"
+\include "./01-Mvt1/m01_v15_music_TrompetenII_C.ily"
 \include "./01-Mvt1/m01_v16_music_PosauneI.ily"
 \include "./01-Mvt1/m01_v17_music_PosauneII.ily"
 \include "./01-Mvt1/m01_v18_music_PosauneIII.ily"
@@ -112,16 +112,17 @@
 %						\partCombine #'(0 . 12) \musicHornIMvtI \musicHornIIMvtI
 %%						\musicHornIIMvtI
 %					}
-					\new Staff \with { \layoutHorn } { 
-						\timeMvtI \nameStaffVIIMvtI
-						\partCombine #'(0 . 16) \musicHornIIIMvtI \musicHornIVMvtI
-%						\musicHornIVMvtI
-					}
+%					\new Staff \with { \layoutHorn } { 
+%						\timeMvtI \nameStaffVIIMvtI
+%						\partCombine #'(0 . 16) \musicHornIIIMvtI \musicHornIVMvtI
+%%						\musicHornIVMvtI
+%					}
 %				>>
-%				\new Staff {
-%					\timeMvtI \nameStaffVIIIMvtI
-%					\partCombine \musicTrompetenIMvtI \musicTrompetenIIMvtI
-%				}
+				\new Staff {
+					\timeMvtI \nameStaffVIIIMvtI
+					\partCombine #'(0 . 12) \musicTrompetenIMvtI \musicTrompetenIIMvtI
+%					\musicTrompetenIIMvtI
+				}
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtI } <<
 %					\new Staff {
 %						\timeMvtI \nameStaffIXMvtI

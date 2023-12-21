@@ -157,7 +157,7 @@ musicHornIIIMvtI = \relative c {
 	
 % Bars 181 to 185
 	\mark \default
-	r8 \partCombineApart e4~_\pcresc e8 e,( e')
+	r8 \partCombineApart e4~ e8 e,( e')
 	\once \partCombineAutomatic r8 e4~ e8 e,( e')
 	\once \partCombineAutomatic r e,( e')~ e e,( e')
 	\once \partCombineAutomatic r b( b,) b'( b, b')
