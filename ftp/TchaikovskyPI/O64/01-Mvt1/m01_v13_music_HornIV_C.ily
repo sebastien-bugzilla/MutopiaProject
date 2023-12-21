@@ -75,7 +75,7 @@ musicHornIVMvtI = \relative c {
 % Bars 86 to 90
 	R2.
 	R2.
-	r4 r8 cis8._\sempreff cis16 cis8
+	r4 r8 cis8. cis16 cis8
 	fis8. fis16 fis8 cis8. cis16 cis8
 	R2.*4
 % Bars 91 to 95
@@ -119,7 +119,7 @@ musicHornIVMvtI = \relative c {
 	
 	
 	fis4.\mf\> fis\!
-	\after 2.*5/6 \! cis2.\p\<
+	<< cis2. {s8\p\< s s  s s s\!}>>
 % Bars 136 to 140
 	R2.*2
 	
@@ -175,12 +175,12 @@ musicHornIVMvtI = \relative c {
 % Bars 186 to 190
 	cis4 cis8~ cis cis4
 	cis cis8~ cis cis4
-	d4_\pcrescmolto d8~ d a'4
+	d4 d8~ d a'4
 	gis4 gis8~ gis gis4
-	e_\mfcresc e8 d d4
+	e e8 d d4
 % Bars 191 to 195
 	dis dis8 d d4
-	cis4_\fcresc cis8~ cis cis cis
+	cis4 cis8~ cis cis cis
 	d4 d8~ d a'4
 	cis,8[\fff r16 cis cis8] cis e a
 	b a e cis e a
@@ -206,7 +206,7 @@ musicHornIVMvtI = \relative c {
 	cis r r r4 r8
 	a r r r4 r8
 	a r r r4 r8 \mark #11
-	cis4\f^\soli cis8 cis4 cis8
+	cis4\f cis8 cis4 cis8
 	cis4 cis8 cis4 cis8
 % Bars 216 to 220
 	R2.*2
@@ -249,9 +249,9 @@ musicHornIVMvtI = \relative c {
 	a\f \mark \default
 	b8[\ff r16 b b8] r gis' r 
 % Bars 256 to 260
-	e r e( a) a a
+	e r e_( a) a a
 	b8[\ff r16 b b8] r gis r
-	e r e( a) a a
+	e r e_( a) a a
 	b8[ r16 b b8] b,8. b16 b8
 	c'8[ r16 c c8] c,8. c16 c8
 % Bars 261 to 265
@@ -262,7 +262,7 @@ musicHornIVMvtI = \relative c {
 	a8[ r16 a a8] c,8. c16 c8
 % Bars 266 to 270
 	a'8[ r16 a a8] c,8. c16 c8
-	f,8._\ffdim f16 f8 f8. f16 f8
+	f,8. f16 f8 f8. f16 f8
 	f8.\> f16 f8 f8. f16 f8\! \mark \default
 	f8.\mf f16 f8 f8. f16 f8
 	f8. f16 f8 f8. f16 f8
@@ -317,7 +317,7 @@ musicHornIVMvtI = \relative c {
 	gis8. gis16 gis8~ gis4.
 	g!8.\mf g16 g8~ g4.
 	g8. g16 g8~ g4.
-	g4._\dimmarkup g
+	g4. g
 % Bars 316 to 320
 	g g
 	R2.*2
@@ -384,12 +384,12 @@ musicHornIVMvtI = \relative c {
 	
 % Bars 391 to 395
 	
-	\after 2.*5/6 \! g'2.\p\<
+	<< g'2. {s8\p\< s s  s s s\!}>>
 	R2.*3
 	
 	
 % Bars 396 to 400
-	\after 2.*5/6 \! g2.\mf\> \mark \default
+	<< g2. {s8\mf\> s s  s s s\!}>> \mark \default
 	R2.*14
 % Bars 401 to 405
 	
@@ -432,12 +432,12 @@ musicHornIVMvtI = \relative c {
 	r cis(\f cis') cis,( cis' cis,)
 	dis4\f dis8~ dis dis4
 	dis dis8~ dis dis4
-	e4_\pcrescmolto e8~ e b'4
+	e4 e8~ e b'4
 % Bars 446 to 450
 	bes bes8~ bes bes4
 	fis fis8 e e4
 	f! f8 e e4
-	dis_\fcresc dis8~ dis dis dis
+	dis dis8~ dis dis dis
 	e4 e8~ e b'4
 % Bars 451 to 455
 	dis,8[\fff r16 dis dis8] dis fis b
@@ -492,12 +492,12 @@ musicHornIVMvtI = \relative c {
 	fis r r fis r r
 	b, r r fis' r b,
 	b r r fis' r r
-	b,_\crescmarkup r r e r r
+	b, r r e r r
 % Bars 496 to 500
 	e r r fis r r
 	e r r d r r
 	g r r g r r
-	b_\fcresc r r g r r
+	b r r g r r
 	b r r b r r
 % Bars 501 to 505
 	d, r r d r r
@@ -518,7 +518,7 @@ musicHornIVMvtI = \relative c {
 	cis r r cis r r \mark \default
 	b r r d,\mf r r
 % Bars 516 to 520
-	b_\dimmarkup r r e r r
+	b r r e r r
 	d r r d r r
 	b r r e r r
 	d r r r4 r8
