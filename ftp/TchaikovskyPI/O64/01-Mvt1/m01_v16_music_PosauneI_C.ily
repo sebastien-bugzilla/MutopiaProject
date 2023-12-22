@@ -68,25 +68,25 @@ musicPosauneIMvtI = \relative c {
 	
 	\mark \default
 	b8.\ff b16 b8 r4 r8
-	b2.\f
+	\once \stemUp b2.\f
 % Bars 86 to 90
 	b8.\ff b16 b8 r4 r8
-	b2.\f
-	b8.\ff b16 b8 b cis d
-	e d cis b r r
+	\once \stemUp b2.\f
+	b8.\ff b16 b8 \partCombineApart b cis d
+	e d cis b r r \partCombineAutomatic
 	e8. e16 e8 r4 r8
 % Bars 91 to 95
 	e2.\f
 	e8.\ff e16 e8 r4 r8
 	e2.\f
-	e8._\sempreff e16 e8 e fis g
-	a g fis e r r
+	\partCombineApart e8. e16 e8 e fis g
+	a g fis e r r \partCombineAutomatic
 % Bars 96 to 100
 	c8. c16 c8 r4 r8
 	c8. c16 c8 r4 r8
 	c c r r c c
 	r c r c r c \mark \default
-	b\ff b b~ b a g
+	\partCombineApart b b b~ b a g \partCombineAutomatic
 % Bars 101 to 105
 	a4.~ a8 r r
 	d d d~ d c b
@@ -100,7 +100,7 @@ musicPosauneIMvtI = \relative c {
 	a b4 e8
 	e4. dis
 % Bars 111 to 115
-	b c4 a8
+	\partCombineApart b c4 a8 \partCombineAutomatic
 	b4. b
 	a b
 	c4 c8 cis4 cis8 \mark \default
@@ -195,16 +195,16 @@ musicPosauneIMvtI = \relative c {
 	a2.\p\< \mark \default
 	a8[\ff r16 a a8] r4 r8
 % Bars 256 to 260
-	r4 r8 r a\ff a
+	r4 r8 \partCombineApart r a\ff a \partCombineAutomatic
 	a8[ r16 a a8] r4 r8
-	r4 r8 r a a
+	r4 r8 \partCombineApart r a a \partCombineAutomatic
 	a8[ r16 a a8] r4 r8
 	a8[ r16 a a8] r4 r8
 % Bars 261 to 265
 	aes8[ r16 aes aes8] r4 r8
-	r4 r8 r aes aes
+	r4 r8 \partCombineApart r aes aes \partCombineAutomatic
 	aes8[ r16 aes aes8] r4 r8
-	r4 r8 r aes aes
+	r4 r8 \partCombineApart r aes aes \partCombineAutomatic
 	aes8[ r16 aes aes8] r4 r8
 % Bars 266 to 270
 	aes8[ r16 aes aes8] r4 r8
@@ -235,8 +235,8 @@ musicPosauneIMvtI = \relative c {
 	d4 d8 d r r
 % Bars 296 to 300
 	d4 d8 d r r
-	R2.*2
-	
+	\partCombineApart \mmrPos #7 R2.
+	\mmrPos #7 R \partCombineAutomatic
 	r8 d4\fff d d8
 	r g,4 g g8
 % Bars 301 to 305
@@ -301,7 +301,7 @@ musicPosauneIMvtI = \relative c {
 % Bars 366 to 370
 	d cis
 	bis b
-	cis d4 b8
+	\partCombineApart cis d4 b8 \partCombineAutomatic
 	cis4. cis
 	b cis
 % Bars 371 to 375
@@ -422,9 +422,9 @@ musicPosauneIMvtI = \relative c {
 % Bars 511 to 515
 	b r r b\f r r 
 	a r r a r r
-	g! r r b r r
+	\once \partCombineApart g! r r b r r
 	a r r a r r \mark \default
-	g! r r r4 r8
+	\once \partCombineApart g! r r r4 r8
 % Bars 516 to 520
 	R2.*7
 % Bars 521 to 525

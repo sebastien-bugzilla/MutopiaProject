@@ -195,16 +195,16 @@ musicPosauneIIMvtI = \relative c {
 	fis2.\p\< \mark \default
 	e8[\ff r16 e e8] r4 r8
 % Bars 256 to 260
-	r4 r8 r r fis\ff
+	r4 r8 r4 fis8\ff
 	e8[ r16 e e8] r4 r8
-	r4 r8 r r fis
+	r4 r8 r4 fis8
 	e8[ r16 e e8] r4 r8
 	f8[ r16 f f8] r4 r8
 % Bars 261 to 265
 	f8[ r16 f f8] r4 r8
-	r4 r8 r r f
+	r4 r8 r4 f8
 	f8[ r16 f f8] r4 r8
-	r4 r8 r r f
+	r4 r8 r4 f8
 	f8[ r16 f f8] r4 r8
 % Bars 266 to 270
 	f8[ r16 f f8] r4 r8
@@ -256,7 +256,7 @@ musicPosauneIIMvtI = \relative c {
 	r4 r8 e4 e8
 	r4 r8 e4.\mf
 	r4 r8 e4.
-	r4 e8_\dimmarkup r4 e8
+	r4 e8 r4 e8
 % Bars 316 to 320
 	r4 e8 r4 e8
 	R2.*3
@@ -400,12 +400,12 @@ musicPosauneIIMvtI = \relative c {
 	g r r gis r r
 	a r r g! r r
 	a r r fis r r
-	e_\crescmarkup  r r a r r
+	e  r r a r r
 % Bars 496 to 500
 	a r r b r r
 	a r r g r r
 	c r r c r r
-	b_\fcresc r r ais r r
+	b r r ais r r
 	b r r b r r
 % Bars 501 to 505
 	g r r g r r
