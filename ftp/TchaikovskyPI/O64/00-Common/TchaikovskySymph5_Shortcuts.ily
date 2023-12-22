@@ -21,11 +21,16 @@ piuf = \markup {\italic {più} \dynamic f}
 graziosoeleggiero = \markup { \italic { grazioso e leggiero }}
 mpcresc = \markup {\dynamic mp \italic {cresc.}}
 soli = \markup {Soli}
+ppocoapococresc = \markup {\dynamic p \italic {poco a poco cresc.}}
+pocoapococresc = \markup {\italic {poco a poco cresc.}}
+
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
 mutainfliii = \markup {"muta in Fl.III"}
-
+mutagina = \markup {"Muta G in A"}
+mutaaingdinbeind = \markup { "muta A in G, D in B, E in D"}
+mutabinhdine = \markup { "muta B in H, D in E" }
 
 % fonctions :
 mmrPos = #(define-music-function
