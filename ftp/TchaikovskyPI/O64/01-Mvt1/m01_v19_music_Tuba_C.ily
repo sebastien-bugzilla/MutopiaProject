@@ -72,14 +72,14 @@ musicTubaMvtI = \relative c {
 % Bars 86 to 90
 	d8.\ff d16 d8 r4 r8
 	R2.
-	d8._\sempreff d16 d8 r4 r8
+	d8. d16 d8 r4 r8
 	g fis e d cis b
 	g'8. g16 g8 r4 r8
 % Bars 91 to 95
 	R2.
 	g8.\ff g16 g8 r4 r8
 	R2.
-	g8._\sempreff g16 g8 r4 r8
+	g8. g16 g8 r4 r8
 	r4 r8 g fis e
 % Bars 96 to 100
 	r4 r8 g8. g16 g8
@@ -145,12 +145,12 @@ musicTubaMvtI = \relative c {
 % Bars 186 to 190
 	d'2.\fp 
 	c!\fp
-	b4._\pcresc bes
+	b4. bes
 	a g
-	fis_\mfcresc f
+	fis f
 % Bars 191 to 195
 	e ees
-	d4_\fcresc d8 c c4
+	d4 d8 c c4
 	b4 b8 bes4.
 	a2.\fff~
 	a
@@ -278,7 +278,7 @@ musicTubaMvtI = \relative c {
 	r4 r8 bes4 bes8
 	r4 r8 bes4.\mf
 	r4 r8 bes4.
-	r4 bes8_\dimmarkup r4 bes8
+	r4 bes8 r4 bes8
 % Bars 316 to 320
 	r4 bes8 r4 bes8
 	R2.*3
@@ -378,12 +378,12 @@ musicTubaMvtI = \relative c {
 	
 	e'2.\fp
 	d\fp
-	cis4._\pcrescmolto c
+	cis4. c
 % Bars 446 to 450
 	b a 
 	gis g
 	fis f
-	e4_\fcresc e8 d8 d4
+	e4 e8 d8 d4
 	cis4 cis8 c4.
 % Bars 451 to 455
 	b2.\fff~
@@ -430,12 +430,12 @@ musicTubaMvtI = \relative c {
 	e r  r d r r
 	c r r b r r
 	a r r b r r
-	c_\crescmarkup r r d r r
+	c r r d r r
 % Bars 496 to 500
 	dis r r e r r
 	fis r r g r r
 	a r r ais r r
-	b_\fcresc r r c r r
+	b r r c r r
 	b r r g r r
 % Bars 501 to 505
 	e r r d r r
@@ -456,7 +456,7 @@ musicTubaMvtI = \relative c {
 	c r r b r r \mark \default
 	e r r d\mf r r 
 % Bars 516 to 520
-	c_\dimmarkup r r b r r
+	c r r b r r
 	e r r d r r
 	c r r b r r
 	e r r r4 r8

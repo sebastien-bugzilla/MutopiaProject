@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTubaMvtI = \relative c {
+musicPosauneIIIMvtI = \relative c {
 	\clef bass
 	\key e \minor
 %	\transposition a
@@ -47,56 +47,56 @@ musicTubaMvtI = \relative c {
 	\mark \default
 % Bars 66 to 70
 	R2.
-	R2.*2
-	
+	r4 r8 r a~\p a
+	g r r r4 r8
 	R2.*2
 	
 % Bars 71 to 75
+	r4 r8 r a~\p a
+	g r r r4 r8
 	R2.*2
 	
-	R2.*2
-	
-	R2.*2
+	r4 r8 r a\p~ a
 % Bars 76 to 80
-	
+	g r r r4 r8
 	R2.*2
 	
-	R2.*2
-	
+	r4 r8 r a~\p a
+	g r r r4 r8
 % Bars 81 to 85
 	R2.*2
 	
-	r4 r8 r fis,\f\< e\! \mark \default
+	r4 r8 r fis'\f\< e\! \mark \default
 	d8.\ff d16 d8 r4 r8
-	R2.
+	\once \partCombineApart e2.\f
 % Bars 86 to 90
 	d8.\ff d16 d8 r4 r8
-	R2.
-	d8._\sempreff d16 d8 r4 r8
-	g fis e d cis b
+	\once \partCombineApart e2.\f
+	d8._\sempreff d16 d8 \partCombineApart d cis b \partCombineAutomatic
+	g' fis e d cis b
 	g'8. g16 g8 r4 r8
 % Bars 91 to 95
-	R2.
+	\once \partCombineApart a2.\f
 	g8.\ff g16 g8 r4 r8
-	R2.
-	g8._\sempreff g16 g8 r4 r8
-	r4 r8 g fis e
+	\partCombineApart a2.\f
+	g8._\sempreff g16 g8 g fis e
+	c b a r4 r8
 % Bars 96 to 100
-	r4 r8 g8. g16 g8
-	r4 r8 g8. g16 g8
-	r r g g r r
-	g r g r g r \mark \default
-	g\ff fis e d c b
+	c8. c16 c8 r4 r8
+	c8. c16 c8 r4 r8
+	c c r r c c
+	r c r c r c \partCombineAutomatic \mark \default
+	g'\ff fis e d c b
 % Bars 101 to 105
 	a r r r4 r8
 	b' a g f e d
 	c r r r4 r8
-	R2.*3
-	
+	\partCombineApart c2._\sff
+	c_\sff 
 % Bars 106 to 110
-	
-	g'8 fis e dis cis b
-	e\fff r r d'!4.
+	c4._\sff~ c8 b a \partCombineAutomatic
+	g' fis e dis cis b
+	\partCombineApart e4. \partCombineAutomatic d'!
 	c b
 	ais a
 % Bars 111 to 115
@@ -114,14 +114,14 @@ musicTubaMvtI = \relative c {
 % Bars 131 to 135
 	
 	
-	R2.*7 
-	
-	
+	r4 r8 d4\pp\< cis8\!
+	b4.\mp\> e
+	fis8\pp r r r4 r8
 % Bars 136 to 140
-	
-	
-	
-	\mark \default
+	R2.
+	r4 r8 d4\p\< cis8\!
+	b4.\mf\> e
+	fis8\pp r r r4 r8 \mark \default
 	R2.*42
 % Bars 141 to 145
 	
@@ -143,9 +143,9 @@ musicTubaMvtI = \relative c {
 	\mark \default
 	R2.*4
 % Bars 186 to 190
-	d'2.\fp 
-	c!\fp
-	b4._\pcresc bes
+	\partCombineApart d8 r r r4 r8
+	R2. \partCombineAutomatic
+	b'4._\pcresc bes
 	a g
 	fis_\mfcresc f
 % Bars 191 to 195
@@ -171,11 +171,11 @@ musicTubaMvtI = \relative c {
 	R2.
 	d8[\ff r16 d d8] d d d
 	R2.
-	d8[\f r16 d d8] d d d
+	a8[\f r16 a a8] a a a
 % Bars 211 to 215
-	d r r r4 r8
-	d r r r4 r8
-	d r r r4 r8 \mark #11
+	a r r r4 r8
+	a r r r4 r8
+	a r r r4 r8 \mark #11
 	R2.*26
 % Bars 216 to 220
 	
@@ -195,14 +195,14 @@ musicTubaMvtI = \relative c {
 	
 	
 	
-	fes4.\p~ fes8 r r
 	R2.
+	R
 % Bars 246 to 250
-	e!4.\p~ e8 r r
-	R2.
-	g4.~\p g8 r r
-	R2.
-	g4.~\p g8 r r
+	R
+	R
+	R
+	R
+	R
 % Bars 251 to 255
 	R2.*3
 	
@@ -224,25 +224,25 @@ musicTubaMvtI = \relative c {
 % Bars 266 to 270
 	bes8[ r16 bes bes8] r4 r8
 	R2.
-	f''4\mf( bes,8) f'4( bes,8) \mark \default
+	R \mark \default
 	R2.*3
 	
 % Bars 271 to 275
 	
-	f'4(\mf bes,8) f'4( bes,8)
+	R2.
 	R2.*3
 	
 	
 % Bars 276 to 280
-	f'4( bes,8) f'4( bes,8)
-	ges r r r4 r8
+	R2.*2
+	
 	R2.*7
 % Bars 281 to 285
 	
 	
 	
 	
-	bes,4\ff bes8 bes4 bes8
+	bes4\ff bes8 bes4 bes8
 % Bars 286 to 290
 	R2.
 	f'4 f8 f4 f8
@@ -257,9 +257,9 @@ musicTubaMvtI = \relative c {
 	bes,4 bes8 r4 r8
 % Bars 296 to 300
 	f'4 f8 r4 r8
-	R2.*2
-	
-	g4\fff f8~ f e4
+	\partCombineApart f4\fff e8~ e d4
+	c bes8~ bes a4 \partCombineAutomatic
+	g'\fff f8~ f e4
 	d c8~ c bes4
 % Bars 301 to 305
 	R2.
@@ -297,32 +297,32 @@ musicTubaMvtI = \relative c {
 % Bars 341 to 345
 	
 % Bars 346 to 350
+	r4 r8 r a~\p a
+	g r r r4 r8
 	R2.*2
 	
-	R2.*2
-	
-	R2.*2
+	r4 r8 r a~\p a
 % Bars 351 to 355
-	
+	g r r r4 r8
 	R2. \mark \default
 	R
-	R2.*2
-	
+	r4 r8 r a\p~ a
+	g r r r4 r8
 % Bars 356 to 360
 	R2.
-	r4 r8 r fis'--\p fis--
-	fis4.-> e8 r r
-	r4 r8 r ais\p-- ais--
-	b!4.~-> b8 r r
+	r4 r8 r d'--\p d--
+	dis4.-> e8 r r
+	r4 r8 r fis\p-- fis--
+	d!4.~-> d8 r r
 % Bars 361 to 365
-	r4 r8 r cis,--\mf cis--
-	cis4.-> b8 r r
-	R2.*2
-	\mark \default
-	fis''4.\ff e
+	r4 r8 r a--\mf a--
+	ais4.-> b8 r r
+	\partCombineApart r4 r8 r b\f a!
+	gis d' cis b a'_\ff gis \partCombineAutomatic \mark \default
+	a4.\ff a
 % Bars 366 to 370
-	d cis
-	bis4. b
+	gis fis4 a8
+	d4. cis
 	a gis
 	fis e
 	d cis
@@ -339,24 +339,28 @@ musicTubaMvtI = \relative c {
 	
 	
 	
-	R2.*3
+	r4 r8 e4\p\< dis8\!
 % Bars 391 to 395
-	
-	
+	cis4.\> fis
+	gis8\pp r r r4 r8
 	R2.
-	R2.*3
-	
+	r4 r8 e4\p\< dis8\!
+	cis4.\mf\> fis!
 % Bars 396 to 400
-	\mark \default
-	R2.*9
-	
-	
-	
+	gis8\pp r r r4 r8 \mark \default
+	dis4.->\p eis
+	\after 2.*5/6 \! fis2.\>
+	cis4.->\pp dis
+	e2.
 % Bars 401 to 405
-	
+	cis4.\ppp r4 r8
+	b4. r4 r8
+	a4. r4 r8
+	gis4. r4 r8
+	fis2.\pp
 % Bars 406 to 410
 	R2.
-	e2.\p
+	cis'\p
 	R2.*31
 % Bars 411 to 415
 	
@@ -376,9 +380,9 @@ musicTubaMvtI = \relative c {
 % Bars 441 to 445
 	
 	
-	e'2.\fp
-	d\fp
-	cis4._\pcrescmolto c
+	\partCombineApart e8\f r r r4 r8
+	R2. \partCombineAutomatic
+	cis'4._\pcrescmolto c
 % Bars 446 to 450
 	b a 
 	gis g
@@ -405,10 +409,10 @@ musicTubaMvtI = \relative c {
 	e8[\ff r16 e e8] e e e
 % Bars 466 to 470
 	R2.
-	e8[ r16 e e8] e e e
-	e r r r4 r8
-	e r r r4 r8
-	e r r r4 r8 \mark \default
+	b8[\f r16 b b8] b b b
+	b r r r4 r8
+	b r r r4 r8
+	b r r r4 r8 \mark \default
 % Bars 471 to 475
 	R2.*14
 % Bars 476 to 480
@@ -418,7 +422,7 @@ musicTubaMvtI = \relative c {
 	
 	
 	
-	g,8\f r r g r r
+	g8\f r r g r r
 % Bars 486 to 490
 	g r r g r r \mark \default
 	g\ff r r f'\p r r
@@ -459,12 +463,12 @@ musicTubaMvtI = \relative c {
 	c_\dimmarkup r r b r r
 	e r r d r r
 	c r r b r r
-	e r r r4 r8
-	R2.
+	e r r \partCombineApart d\p r r
+	c r r b r r
 % Bars 521 to 525
-	e8\p r r r4 r8
-	R2. \mark \default
-	e8 r r r4 r8
+	e r r d r r
+	c r r b r r \mark \default
+	e \partCombineAutomatic r r r4 r8
 	R2.*18
 % Bars 526 to 530
 	

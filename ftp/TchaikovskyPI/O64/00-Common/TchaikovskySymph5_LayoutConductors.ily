@@ -57,3 +57,8 @@ layoutHorn = {
 	\set Staff.soloIIText = #"IV"
 	\set Staff.aDueText = #"a2"
 }
+layoutPosaune = {
+	\set Staff.soloText = #"III"
+	\set Staff.soloIIText = #"Tuba"
+	\set Staff.aDueText = #"a2"
+}
