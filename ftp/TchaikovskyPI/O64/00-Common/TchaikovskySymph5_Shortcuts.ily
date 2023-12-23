@@ -23,7 +23,14 @@ mpcresc = \markup {\dynamic mp \italic {cresc.}}
 soli = \markup {Soli}
 ppocoapococresc = \markup {\dynamic p \italic {poco a poco cresc.}}
 pocoapococresc = \markup {\italic {poco a poco cresc.}}
-
+sempreppp = \markup {\italic {sempre} \dynamic ppp}
+mfmarkup = \markup {\dynamic mf}
+moltoespr = \markup {\italic {molto espr.}}
+pizz = \markup {\italic pizz.}
+arco = \markup {\italic {arco}}
+moltocantabileedespr = \markup {\italic {molto cantabile ed espr.}}
+fflargamente = \markup {\dynamic ff \italic {largamente}}
+pmoltocantabileedespr = \markup {\dynamic p \italic {molto cantabile ed espr.}}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
