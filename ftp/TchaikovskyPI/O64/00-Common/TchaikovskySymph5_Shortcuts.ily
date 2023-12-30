@@ -34,6 +34,8 @@ pmoltocantabileedespr = \markup {\dynamic p \italic {molto cantabile ed espr.}}
 tenuto = \markup {\italic {tenuto}}
 div = \markup {div.}
 unis = \markup {unis.}
+pesanteetenutosempre = \markup {\italic {pesante e tenuto sempre}}
+
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
