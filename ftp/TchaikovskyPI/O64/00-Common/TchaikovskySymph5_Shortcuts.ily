@@ -31,6 +31,9 @@ arco = \markup {\italic {arco}}
 moltocantabileedespr = \markup {\italic {molto cantabile ed espr.}}
 fflargamente = \markup {\dynamic ff \italic {largamente}}
 pmoltocantabileedespr = \markup {\dynamic p \italic {molto cantabile ed espr.}}
+tenuto = \markup {\italic {tenuto}}
+div = \markup {div.}
+unis = \markup {unis.}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
