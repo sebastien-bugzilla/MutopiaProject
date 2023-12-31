@@ -148,12 +148,12 @@
 %						\timeMvtI \nameStaffXIIIMvtI \musicViolineIIMvtI
 %					}
 %				>>
-				\new Staff {
-					\timeMvtI \nameStaffXIVMvtI \musicViolaMvtI
-				}
 %				\new Staff {
-%					\timeMvtI \nameStaffXVMvtI \musicVioloncellMvtI
+%					\timeMvtI \nameStaffXIVMvtI \musicViolaMvtI
 %				}
+				\new Staff {
+					\timeMvtI \nameStaffXVMvtI \musicVioloncellMvtI
+				}
 %				\new Staff {
 %					\timeMvtI \nameStaffXVIMvtI \musicKontrabassMvtI
 %				}
