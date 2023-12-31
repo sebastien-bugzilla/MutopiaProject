@@ -36,6 +36,7 @@ div = \markup {div.}
 unis = \markup {unis.}
 pesanteetenutosempre = \markup {\italic {pesante e tenuto sempre}}
 sffp = \markup {\dynamic sffp}
+semprepizz = \markup {sempre pizz.}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}

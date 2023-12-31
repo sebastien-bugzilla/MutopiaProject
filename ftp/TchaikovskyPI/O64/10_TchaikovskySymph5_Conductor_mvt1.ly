@@ -151,12 +151,12 @@
 %				\new Staff {
 %					\timeMvtI \nameStaffXIVMvtI \musicViolaMvtI
 %				}
-				\new Staff {
-					\timeMvtI \nameStaffXVMvtI \musicVioloncellMvtI
-				}
 %				\new Staff {
-%					\timeMvtI \nameStaffXVIMvtI \musicKontrabassMvtI
+%					\timeMvtI \nameStaffXVMvtI \musicVioloncellMvtI
 %				}
+				\new Staff {
+					\timeMvtI \nameStaffXVIMvtI \musicKontrabassMvtI
+				}
 %			>>
 		>>
 		\header {
