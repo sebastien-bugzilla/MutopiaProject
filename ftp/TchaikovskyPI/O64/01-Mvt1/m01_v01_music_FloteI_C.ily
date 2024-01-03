@@ -54,30 +54,30 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	
-	r4 r8 r e( d \mark \default
+	\changeStaffName \flI r4 r8 r e( d \mark \default
 % Bars 66 to 70
 	\noteShift #1 d,)\noBeam d'16(\f e fis g a8) r r
 	r8 fis,16(\mp g a b c8) r r
 	r4 d16(\ff cis c b a gis g fis)
 	e( fis g a g fis e8) e'( d
-	\noteShift #1 d,) d'16(\f e fis g a8) r r
+	d,)\noBeam d'16(\f e fis g a8) r r
 % Bars 71 to 75
 	r fis,16(\mp g a b c8) r r 
 	r4 g16(\ff a b a g a b ais)
 	b( cis d e eis fis fis,8) e'( d
-	\noteShift #1 d,) d'16(\f e fis g a8) r r
+	d,)\noBeam d'16(\f e fis g a8) r r
 	r fis,16(\mp g a b c8) r r
 % Bars 76 to 80
 	r4 d16(\ff cis c b a gis g fis)
 	e( fis g a g fis e8) e'( d
-	\noteShift #1 d,) d'16(\f e fis g a8) r r
+	d,)\noBeam d'16(\f e fis g a8) r r
 	r fis,16(\mp g a b c8) r r
 	r4 g16(\ff a b a g a b ais)
 % Bars 81 to 85
 	b( cis d fis g fis g fis) cis'8( d
 	e d cis b) cis( d 
 	e d cis b) a( g) \mark \default
-	fis8.\ff fis16 fis8 r4 r8
+	\changeStaffName \flI-II-III fis8.\ff fis16 fis8 r4 r8
 	e,16( fis g a b8) r b16( cis d e)
 % Bars 86 to 90
 	fis8.\ff fis16 fis8 r4 r8
@@ -119,7 +119,7 @@ musicFloteIMvtI = \relative c' {
 	R2.*3
 	
 	
-	r8 fis\p( fis,) r4 r8
+	\changeStaffName \flI-II r8 fis\p( fis,) r4 r8
 	R2.*3
 % Bars 121 to 125
 	
@@ -133,15 +133,15 @@ musicFloteIMvtI = \relative c' {
 	R2.*4
 % Bars 131 to 135
 	
-	fis,4.\mf~\> fis4\p gis8(\<
+	\partCombineApart fis,4.~ fis4 \partCombineAutomatic gis8(\<
 	ais4.) b4( cis8)\!
-	d4.\f\> cis4.(
-	fis,8)\! r r r4 r8
+	\partCombineApart d4. cis4.(
+	fis,8) \partCombineAutomatic r r r4 r8
 % Bars 136 to 140
-	fis4._\mfcresc^\espr~ fis4 gis8( 
+	\partCombineApart fis4.~ fis4 \partCombineAutomatic gis8( 
 	ais4.) b4( cis8)
-	e4.\ff\> d8( cis b
-	fis)\! r r r4 r8 \mark \default
+	\partCombineApart e4. d8( cis b
+	fis) \partCombineAutomatic r r r4 r8 \mark \default
 	R2.*30
 % Bars 141 to 145
 	
@@ -158,7 +158,7 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	
-	r8 a(\p b) cis4( d8)
+	\changeStaffName \flI r8 a(\p b) cis4( d8)
 % Bars 171 to 175
 	r8 a( b) cis4.
 	r4 d8~\< d fis4\!
@@ -179,13 +179,13 @@ musicFloteIMvtI = \relative c' {
 	b,4 bis8~ bis cis4(
 % Bars 186 to 190
 	d8) r r r4 r8
-	R2.
+	R2. \changeStaffName \flI-II
 	r8 e4_\pcrescmolto fis g8~
 	g g4 gis a8~_\mfcresc
 	a a4 ais b8~
 % Bars 191 to 195
 	b b4 c4( cis8)
-	r d4_\fcresc dis( e8)
+	\changeStaffName \flI-II-III r d4_\fcresc dis( e8)
 	r e4 fis( g8)
 	r a4\fff gis a8~
 	a a4 gis a8~
@@ -200,7 +200,7 @@ musicFloteIMvtI = \relative c' {
 	a'4\fff d,8 a'4 d,8
 	a'4 d,8 a'4 d,8
 	R2.
-	a8(\ff\< gis g) fis( e d)\!
+	a8(\ff\<^\I-IIadue gis g) fis( e d)\!
 % Bars 206 to 210
 	fis'4\fff a,8 fis'4 a,8
 	r4 r8 a(\ff gis g)
@@ -225,7 +225,7 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	\mark \default
-	ees''4->(\f aes,8) ees'4->( aes,8)
+	ees''4->(\f^\I-IIadue aes,8) ees'4->( aes,8)
 % Bars 241 to 245
 	R2.*13
 % Bars 246 to 250
@@ -234,7 +234,7 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	
-	fis2.\ff \mark \default
+	\changeStaffName \flI-II fis2.\ff \mark \default
 	e'8[\fff r16 e e8] r a,,16( ais b cis
 % Bars 256 to 260
 	d8) r d16( e fis gis a8) r
@@ -281,25 +281,25 @@ musicFloteIMvtI = \relative c' {
 	g4 d8 bes16( cis d e f g)
 % Bars 296 to 300
 	a4 d,8 gis16( a bes b c cis)
-	d8\fff[ r16 d d8]~ d e( f
+	\partCombineApart \stemDown d8[ r16 d d8]~ d e( f
 	d)[ r16 d d8]~ d a( d
-	g-.)[ r16 g g8]~ g a( bes)
-	bes8[ r16 bes bes8]~ bes cis,( d)
+	g-.)[ r16 g g8]~ \stemUp g a( bes)
+	\stemDown bes8[ r16 bes bes8]~ \stemUp bes cis,( d)
 % Bars 301 to 305
-	R2.
-	bes'8[ r16 bes bes8]~ bes cis,8( d)
-	R2.
-	bes'8[ r16 bes bes8]~ bes cis,8( d)
-	R2.
+	\once \partCombineAutomatic R2.
+	\stemDown bes'8[ r16 bes bes8]~ \stemUp bes cis,8( d)
+	\once \partCombineAutomatic R2.
+	\stemDown bes'8[ r16 bes bes8]~ \stemUp bes cis,8( d)
+	\partCombineAutomatic R2.
 % Bars 306 to 310
 	g8[ r16 g g8]~ g g g
 	R2.
 	g8[ r16 g g8]~ g g g \mark \default
 	r4 r8 g4\ff g8
-	r4 r8 e4 e8
+	r4 r8 \partCombineApart e4 e8 \partCombineAutomatic
 % Bars 311 to 315
 	r4 r8 g,4\f g8
-	r4 r8 e4 e8
+	r4 r8 \partCombineApart e4 e8 \partCombineAutomatic
 	R2.*7
 	
 	
@@ -308,14 +308,18 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*12
+	R2.*10
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
+	
+	
+	
+	\partCombineApart R2.*2
 % Bars 331 to 335
 	
-	r8 b16(\p c) d-. e-. fis( g) fis( g) a-. b-.
+	r8 b16(\p c) d-. e-. fis( g) fis( g) a-. b-. \partCombineAutomatic
 	c8. c16 c8(~ c b-.) ais(
 	b) d,( e~ e) fis( g)
 	a4->( e8) ais4->( fis8)
@@ -329,18 +333,18 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	
-	r4 r8 r e,(\mf d
+	\changeStaffName \flI r4 r8 r e,(\mf d
 	d,)\noBeam d'16(\f e fis g a8) r r
 % Bars 346 to 350
 	r fis,16(\mp g a b c8) r r
 	r4 d16(\ff cis c b a gis g fis)
 	e( fis g a g fis e8) e'(\mf d
-	d,) d'16(\f e fis g a8) r r
+	d,)\noBeam d'16(\f e fis g a8) r r
 	r fis,16(\mp g a b c8) r r
 % Bars 351 to 355
 	r r g16(\ff a b a g a b ais)
 	b( cis d e eis fis fis,8) e'(\mf d \mark \default
-	d,) d'16(\f e! fis g a8) r r
+	d,)\noBeam d'16(\f e! fis g a8) r r
 	r fis,16(\mp g a b c8) r r
 	r4 d16(\ff cis c b a gis g fis)
 % Bars 356 to 360
@@ -353,7 +357,7 @@ musicFloteIMvtI = \relative c' {
 	
 	r4 r8 r gis'--\ff fis--
 	cis4.->~ cis8 r r
-	r4 r8 r d16(\fff dis e eis \mark \default
+	\changeStaffName \flI-II-III r4 r8 r d16(\fff dis e eis \mark \default
 	fis8)[ r16 fis fis8]~ fis gis a
 % Bars 366 to 370
 	b(-> a) gis fis4 cis8(
@@ -363,7 +367,7 @@ musicFloteIMvtI = \relative c' {
 	b( a) gis cis( b) a
 % Bars 371 to 375
 	d( cis) b dis( cis) bis
-	e( dis) cis gis' r r
+	e( dis) cis gis' r r \changeStaffName \flI-II
 	R2.*3
 	
 	
@@ -383,16 +387,16 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	
-	gis,4.\mf\>~ gis4\p\< ais8(
-	bis4.) cis4( dis8)\!
+	\partCombineApart gis,4.~ gis4 ais8
+	bis4. cis4 dis8 
 % Bars 391 to 395
-	e4.\f\> dis4.(\!
-	gis,8) r r r4 r8
-	gis4._\mfcresc~ gis4 ais8(
+	e4. dis4.(
+	gis,8) \partCombineAutomatic r r r4 r8
+	\partCombineApart gis4.~ gis4 \partCombineAutomatic ais8(
 	bis4.) cis4( dis8)
-	fis4.\ff\> e8( dis cis\!
+	\partCombineApart fis4. e8 dis cis
 % Bars 396 to 400
-	gis) r r r4 r8 \mark \default
+	gis \partCombineAutomatic r r r4 r8 \mark \default
 	R2.*30
 % Bars 401 to 405
 	
@@ -406,14 +410,14 @@ musicFloteIMvtI = \relative c' {
 	
 % Bars 426 to 430
 	
-	r8 b(\p cis) dis4( e8)
+	\changeStaffName \flI r8 b(\p cis) dis4( e8)
 	r b( cis) dis4.
 	r8 r e~\< e gis4
 	cis,\! cisis8~\> cisis dis4\!(
 % Bars 431 to 435
 	e8) b(\p cis) dis4( e8)
 	r b( cis) dis4.
-	r8 r e(~_\pcresc e dis cis)
+	\changeStaffName \flI-II r8 r e(~_\pcresc e dis cis)
 	a'4\mf\< ais8~ ais b4\!
 	b4\f\< bis8~ bis cis4\!
 % Bars 436 to 440
@@ -430,7 +434,7 @@ musicFloteIMvtI = \relative c' {
 	r8 fis4_\pcrescmolto gis a8~
 % Bars 446 to 450
 	a a4 ais b8~
-	b_\mfcresc b4 bis cis8~
+	b_\mfcresc \changeStaffName \flI-II-III b4 bis cis8~
 	cis cis4 d( dis8)
 	r8 e4_\fcresc eis( fis8)
 	r8 fis4 gis( a8)
@@ -448,7 +452,7 @@ musicFloteIMvtI = \relative c' {
 	b'4 e,8 b'4 e,8
 % Bars 461 to 465
 	R2.
-	b8\ff\<( ais a) gis( fis e)\!
+	b8\ff\<(^\I-IIadue ais a) gis( fis e)\!
 	gis'4\fff b,8 gis'4 b,8
 	r4 r8 b(\ff ais a)
 	e'4 gis,8 e'4 gis,8

@@ -48,32 +48,34 @@ musicFloteIIMvtI = \relative c' {
 % Bars 56 to 60
 	a4 e8) ais4( e8) \mark \default
 	b'4.\mp\>~ b8\p r r
-	b\p r r c r r
-	e r r c r r
-	e r r e r r
-% Bars 61 to 65
-	b' r r c r r
-	b\p r r a r r
-	e r r c r r
-	e r r e r r
-	b' r r r g,(\mf gis \mark \default
-% Bars 66 to 70
-	a)\noBeam d16(\f e fis g a8) r r
-	r8 fis,16(\mp g a b c8) r r
-	r4 d16(\ff cis c b a gis g fis)
-	e( fis g a g fis e8) g(\mf gis
-	a) d16(\f e fis g a8) r r
-% Bars 71 to 75
-	r fis,16(\mp g a b c8) r r 
-	r4 g16(\ff a b a g a b ais)
-	b( cis d e eis fis fis,8) g( gis
-	a) d16(\f e fis g a8) r r
-	r fis,16(\mp g a b c8) r r
-% Bars 76 to 80
-	r4 d16(\ff cis c b a gis g fis)
-	e( fis g a g fis e8) g( gis
-	a) d16(\f e fis g a8) r r
-	r fis,16(\mp g a b c8) r r
+	R2.*7
+%	b\p r r c r r
+%	e r r c r r
+%	e r r e r r
+%% Bars 61 to 65
+%	b' r r c r r
+%	b\p r r a r r
+%	e r r c r r
+%	e r r e r r
+	R2.*15
+%	b8 r r r g,(\mf gis \mark \default
+%% Bars 66 to 70
+%	a)\noBeam d16(\f e fis g a8) r r
+%	r8 fis,16(\mp g a b c8) r r
+%	r4 d16(\ff cis c b a gis g fis)
+%	e( fis g a g fis e8) g(\mf gis
+%	a) d16(\f e fis g a8) r r
+%% Bars 71 to 75
+%	r fis,16(\mp g a b c8) r r 
+%	r4 g16(\ff a b a g a b ais)
+%	b( cis d e eis fis fis,8) g( gis
+%	a) d16(\f e fis g a8) r r
+%	r fis,16(\mp g a b c8) r r
+%% Bars 76 to 80
+%	r4 d16(\ff cis c b a gis g fis)
+%	e( fis g a g fis e8) g( gis
+%	a) d16(\f e fis g a8) r r
+%	r fis,16(\mp g a b c8) r r
 	R2.*4 % r4 g16(\ff a b a g a b ais)
 % Bars 81 to 85
 	%b( cis d fis g fis g fis) g( fis g fis
@@ -137,12 +139,12 @@ musicFloteIIMvtI = \relative c' {
 	
 	fis,4.\mf~\> fis4\p eis8(\<
 	e!4.) fis4( cis8)\!
-	d4.\f\> cis4.(
-	fis8)\! r r r4 r8
+	\stemUp d4.\f\> cis4.(
+	\stemDown fis8)\! r r r4 r8
 % Bars 136 to 140
 	fis4._\mfcresc^\espr~ fis4 eis8( 
 	e!4.) fis4( cis8)
-	e4.\ff\> d8( cis' b
+	\stemUp e4.\ff\> \stemDown d8( cis' b
 	fis)\! r r r4 r8 \mark \default
 	R2.*30
 % Bars 141 to 145
@@ -164,22 +166,23 @@ musicFloteIIMvtI = \relative c' {
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	r4 d'8(~_\pcresc d cis b)
-	g4\mf\< gis8~ gis a4\!
-	a\f\< ais8~ ais b4\!
-	r4 e8(~_\fdim e d cis)
-	r4 d8(~_\menof d cis b)
-% Bars 181 to 185
-	r4 bis8(~\mp bis cis4) \mark \default
-	r8 a(_\pcresc b!) cis4( d8)
-	r8 a( b) cis4.
-	d4 d8\f~ d fis4
-	b,4 bis8~ bis cis4(
-% Bars 186 to 190
-	d8) r r r4 r8
+	R2.*11
+%	r4 d'8(~_\pcresc d cis b)
+%	g4\mf\< gis8~ gis a4\!
+%	a\f\< ais8~ ais b4\!
+%	r4 e8(~_\fdim e d cis)
+%	r4 d8(~_\menof d cis b)
+%% Bars 181 to 185
+%	r4 bis8(~\mp bis cis4) \mark \default
+%	r8 a(_\pcresc b!) cis4( d8)
+%	r8 a( b) cis4.
+%	d4 d8\f~ d fis4
+%	b,4 bis8~ bis cis4(
+%% Bars 186 to 190
+%	d8) r r r4 r8
 	R2.
-	r8 e,4_\pcrescmolto fis g8~
-	g g4 gis a8~_\mfcresc
+	r8 e4 fis g8~
+	g g4 gis a8~
 	a a'4 ais b8~
 % Bars 191 to 195
 	b b4 c4( cis8)
@@ -198,9 +201,9 @@ musicFloteIIMvtI = \relative c' {
 	a'4\fff d,8 a'4 d,8
 	a'4 d,8 a'4 d,8
 	R2.
-	a8(\ff\< gis g) fis( e d)\!
+	a,8(\ff\<_\III gis g) fis( e d)\! % <= Fl III
 % Bars 206 to 210
-	fis'4\fff a,8 fis'4 a,8
+	fis''4\fff a,8 fis'4 a,8
 	r4 r8 a(\ff gis g)
 	d'4 fis,8 d'4 fis,8
 	R2.
@@ -223,16 +226,17 @@ musicFloteIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	ees''4->(\f aes,8) ees'4->( aes,8)
+	ees'4->(\f_\III aes,8) ees'4->( aes,8) % <= Fl III
 % Bars 241 to 245
-	R2.*13
+	ees'4->(^\III aes,8) ees'4(-> aes,8) % <= Fl III
+	R2.*12
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 	
 	
-	d,2.\ff \mark \default
+	d2.\ff \mark \default
 	e'8[\fff r16 e e8] r a,,16( ais b cis
 % Bars 256 to 260
 	d8) r d16( e fis gis a8) r
@@ -279,15 +283,15 @@ musicFloteIIMvtI = \relative c' {
 	g4 d8 bes16( cis d e f g)
 % Bars 296 to 300
 	a4 d,8 gis16( a bes b c cis)
-	d8\fff[ r16 d d8]~ d e( f
-	d)[ r16 d d8]~ d a( d
-	g-.)[ r16 g g8]~ g a,( bes)
-	bes8[ r16 bes bes8]~ bes cis( d)
+	d8\fff[ s16 d d8]~ d e( f
+	d)[ s16 d d8]~ d a( d
+	g-.)[ s16 g g8]~ g a,( bes)
+	bes8[ s16 bes bes8]~ bes cis( d)
 % Bars 301 to 305
 	R2.
-	bes8[ r16 bes bes8]~ bes cis8( d)
+	bes8[ s16 bes bes8]~ bes cis8( d)
 	R2.
-	bes8[ r16 bes bes8]~ bes cis8( d)
+	bes8[ s16 bes bes8]~ bes cis8( d)
 	R2.
 % Bars 306 to 310
 	g8[ r16 g g8]~ g g g
@@ -323,37 +327,40 @@ musicFloteIIMvtI = \relative c' {
 	
 % Bars 336 to 340
 	\mark \default
-	b8\p r r c r r
-	e r r c r r
-	e r r e r r
-	b' r r c r r
-% Bars 341 to 345
-	b\p r r a r r
-	e r r c r r
-	e r r e r r
-	b' r r r g,(\mf gis
-	a)\noBeam d16(\f e fis g a8) r r
-% Bars 346 to 350
-	r fis,16(\mp g a b c8) r r
-	r4 d16(\ff cis c b a gis g fis)
-	e( fis g a g fis e8) g(\mf gis
-	a) d16(\f e fis g a8) r r
-	r fis,16(\mp g a b c8) r r
-% Bars 351 to 355
-	r r g16(\ff a b a g a b ais)
-	b( cis d e eis fis fis,8) g(\mf gis \mark \default
-	a) d16(\f e! fis g a8) r r
-	r fis,16(\mp g a b c8) r r
-	r4 d16(\ff cis c b a gis g fis)
-% Bars 356 to 360
-	e( fis g a g fis e8) g\mf gis
-	a4.->~ a8 r r
+	R2.*7
+%	b8\p r r c r r
+%	e r r c r r
+%	e r r e r r
+%	b' r r c r r
+%% Bars 341 to 345
+%	b\p r r a r r
+%	e r r c r r
+%	e r r e r r
+	R2.*9
+%	b8 r r r g,(\mf gis
+%	a)\noBeam d16(\f e fis g a8) r r
+%% Bars 346 to 350
+%	r fis,16(\mp g a b c8) r r
+%	r4 d16(\ff cis c b a gis g fis)
+%	e( fis g a g fis e8) g(\mf gis
+%	a) d16(\f e fis g a8) r r
+%	r fis,16(\mp g a b c8) r r
+%% Bars 351 to 355
+%	r r g16(\ff a b a g a b ais)
+	\mark \default % b( cis d e eis fis fis,8) g(\mf gis \mark \default
+	R2.*5
+%	a) d16(\f e! fis g a8) r r
+%	r fis,16(\mp g a b c8) r r
+%	r4 d16(\ff cis c b a gis g fis)
+%% Bars 356 to 360
+%	e( fis g a g fis e8) g\mf gis
+%	a4.->~ a8 r r
 	R2.*4
 	
 	
 % Bars 361 to 365
 	
-	r4 r8 r d--\ff d--
+	r4 r8 r d'--\ff d--
 	gis,4.->~ gis8 r r
 	r4 r8 r d'16(\fff dis e eis \mark \default
 	fis8)[ r16 fis fis8]~ fis gis a
@@ -385,16 +392,16 @@ musicFloteIIMvtI = \relative c' {
 	
 	
 	
-	gis,4.\mf\>~ gis4\p\< fisis8(
-	fis!4.) gis4( dis8)\!
+	gis,4.\mf\>~ gis4\p\< \stemUp \omitFlag fisis8(
+	fis!4.) gis4( \omitFlag dis8)\!
 % Bars 391 to 395
 	e4.\f\> dis4.(\!
-	gis8) r r r4 r8
+	\stemDown gis8) r r r4 r8
 	gis4._\mfcresc~ gis4 fisis8(
 	fis!4.) gis4( dis8)
-	fis4.\ff\> e8( dis cis\!
+	\stemUp fis4.\ff\> \omitBeam e8( dis cis\!
 % Bars 396 to 400
-	gis') r r r4 r8 \mark \default
+	\stemDown gis') r r r4 r8 \mark \default
 	R2.*30
 % Bars 401 to 405
 	
@@ -429,10 +436,10 @@ musicFloteIIMvtI = \relative c' {
 	cis,4 cisis8~ cisis dis4(
 	e8) r r r4 r8
 	R2.
-	r8 fis,4_\pcrescmolto gis a8~
+	r8 fis,4 gis a8~
 % Bars 446 to 450
 	a a4 ais b8~
-	b_\mfcresc b'4 bis cis8~
+	b \changeStaffName \flI-II-III b'4 bis cis8~
 	cis cis4 d( dis8)
 	r8 e4_\fcresc eis( fis8)
 	r8 fis4 gis( a8)
@@ -450,8 +457,8 @@ musicFloteIIMvtI = \relative c' {
 	b'4 e,8 b'4 e,8
 % Bars 461 to 465
 	R2.
-	b8\ff\<( ais a) gis( fis e)\!
-	gis'4\fff b,8 gis'4 b,8
+	b,8\ff\<(_\III ais a) gis( fis e)\! % <= Fl III
+	gis''4\fff b,8 gis'4 b,8
 	r4 r8 b(\ff ais a)
 	e'4 gis,8 e'4 gis,8
 % Bars 466 to 470

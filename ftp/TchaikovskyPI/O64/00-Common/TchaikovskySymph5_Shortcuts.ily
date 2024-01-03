@@ -70,6 +70,51 @@ beamOffset = #(define-music-function
 	#}
 )
 
+changeStaffName = #(define-music-function
+	(staffName)
+	(markup?)
+	#{
+		\set Staff.shortInstrumentName = #staffName
+	#}
+)
+
+flI = \markup {
+	"Fl. I"
+}
+flII = \markup {
+	"Fl. II"
+}
+flIII = \markup {
+	"Fl. III"
+}
+flI-II = \markup {
+	\line {
+		\hspace #5 \lower #1.5 "Fl."
+		\center-column {
+			"I" "II"
+		}
+	}
+}
+flII-III = \markup {
+	\line {
+		\hspace #5 \lower #1.5 "Fl."
+		\center-column {
+			"II" "III"
+		}
+	}
+}
+flI-II-III = \markup {
+	\line {
+		\hspace #5 \lower #1.5 "Fl."
+		\center-column {
+			"I II" "III"
+		}
+	}
+}
+picc = \markup {"Picc."}
+
+I-IIadue = \markup {\bold "I II a 2"}
+III = \markup {\bold "III"}
 
 
 % shortcuts
