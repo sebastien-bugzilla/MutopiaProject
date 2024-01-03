@@ -54,12 +54,12 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	
-	\changeStaffName \flI r4 r8 r e( d \mark \default
+	\changeStaffName \flI r4 r8 r e(\mf d \mark \default
 % Bars 66 to 70
 	\noteShift #1 d,)\noBeam d'16(\f e fis g a8) r r
 	r8 fis,16(\mp g a b c8) r r
 	r4 d16(\ff cis c b a gis g fis)
-	e( fis g a g fis e8) e'( d
+	e( fis g a g fis e8) e'(\mf d
 	d,)\noBeam d'16(\f e fis g a8) r r
 % Bars 71 to 75
 	r fis,16(\mp g a b c8) r r 
@@ -161,7 +161,7 @@ musicFloteIMvtI = \relative c' {
 	\changeStaffName \flI r8 a(\p b) cis4( d8)
 % Bars 171 to 175
 	r8 a( b) cis4.
-	r4 d8~\< d fis4\!
+	r4 d8~\< d fis4
 	b,\> bis8~ bis cis4(\!
 	d8) a\p( b!) cis4( d8)
 	r8 a( b) cis4.

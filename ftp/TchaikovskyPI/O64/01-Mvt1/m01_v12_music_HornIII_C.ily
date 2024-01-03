@@ -107,7 +107,7 @@ musicHornIIIMvtI = \relative c {
 	
 	
 	
-	fis4.\mf\> fis\!
+	fis4.\mf\> <<fis {s8 s s\!}>>
 	<< gis,2. {s8\p\< s s s s s\!} >>
 % Bars 136 to 140
 	R2.*2

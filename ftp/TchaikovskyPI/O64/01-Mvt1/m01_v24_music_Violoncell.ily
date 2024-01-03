@@ -407,7 +407,7 @@ musicVioloncellMvtI = \relative c {
 	q r r a r r
 	q r r a r r
 	q r r r e'(-.\mf eis-.)
-	fis4.->~ fis8 e!4\mf~
+	fis4.->~ fis8 e!4\mf\>~
 % Bars 346 to 350
 	e8 d4~ d8\p r r
 	g(\f fis f e) ees(\< d\!
@@ -419,7 +419,7 @@ musicVioloncellMvtI = \relative c {
 	g\ff\> fis ais\! b) e,(\mf-. eis-.) \mark \default
 	fis4.->~ fis8 e!4\mf\>~
 	e8 d4~ d8\p r r
-	g(\f fis f e) ees(\< d\!
+	g(\f fis f e) ees(\< d
 % Bars 356 to 360
 	c\ff\> d dis e!)\! r r
 	R2.*3
@@ -434,7 +434,7 @@ musicVioloncellMvtI = \relative c {
 		b8--\f b--
 		b4.->~ b8 cis16\ff d dis e
 	}>>
-	eis16\<^\unis fis gis a ais b \clef tenor bis cis d! dis e! eis \mark \default
+	eis16\<^\unis fis gis a ais b \clef tenor bis cis d! dis e! eis\! \mark \default
 	fis8[\fff r16 fis fis8]~ fis gis a
 % Bars 366 to 370
 	b->( a) gis fis4 cis8(
@@ -452,7 +452,7 @@ musicVioloncellMvtI = \relative c {
 	\after 2.*5/6 \! gis2.\p\<
 	gis'4._\mfcresc~ gis4 fisis8(
 	fis!4.) e4( dis8)
-	cis4.\ff\> fis,\!
+	cis4.\ff\> \after 4.*2/3 \! fis,
 	\after 2.*5/6 \! gis2.\mp\<
 % Bars 381 to 385
 	e4.\sff\>~ e4 <fis a>8\!
@@ -509,10 +509,10 @@ musicVioloncellMvtI = \relative c {
 	
 	r8 gis'(\mf\< g) fis( e dis)
 % Bars 426 to 430
-	d!( cis b)\! cis4(\sff\> dis8)
+	d!( cis b)\! cis4(\sff\> dis8)\!
 	e,(\p b e) r r gis(
 	fis b, fis') r r a(
-	gis4.)\< e(\!
+	gis4.)\< \after 4.*2/3 \! e(
 	dis8) r r b\p r r
 % Bars 431 to 435
 	e(\p b e) r r gis(

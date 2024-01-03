@@ -306,7 +306,7 @@ musicFagotteIMvtI = \relative c {
 	bes[ r16 bes bes8] bes8. bes16 bes8
 	f'8._\ffdim f16 f8 f8. f16 f8
 	f8.\> f16 f8 f8. f16 f8\! \mark \default
-	f8. f16 f8 f8. f16 ges8
+	f8.\mf f16 f8 f8. f16 ges8
 	f8. f16 f8 ees8. ees16 d8
 % Bars 271 to 275
 	ees8. ees16 ees8 ees8. ees16 ees8
@@ -394,7 +394,7 @@ musicFagotteIMvtI = \relative c {
 	r4 r8 a16( g fis e d! c!
 	b cis dis e fis g a) r r8 r
 	r4 r8 a16( g fis e d! c!
-	b cis dis e fis g) a( ais b8) b(
+	b cis dis e fis g) a( ais b8)\mf b(
 	a!) r r r4 r8
 % Bars 346 to 350
 	R2.

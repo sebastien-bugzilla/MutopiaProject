@@ -31,10 +31,10 @@ musicFagotteIIMvtI = \relative c {
 	g-- a--\> b-- b--\!
 	c2.\sf\> fis,4\mf--
 	g-- a--\> b-- b--\!
-	\after 1*7/8 \! c1\sf\>
+	<<c1 {s4\sf\> s s s\!}>>
 % Bars 31 to 35
-	\after 1*7/8 \! c\p\<
-	\after 1*7/8 \! b\>
+	<<c1 {s4\p\< s s s8 s\!}>>
+	<<b1 {s4\> s s s\!}>>
 	r2 c\p\<
 	b\>~ b4~ b8\! r
 	r2 c\pp
@@ -296,7 +296,7 @@ musicFagotteIIMvtI = \relative c {
 	bes,[ r16 bes bes8] bes'8. bes16 bes8
 	bes8. bes16 bes8 bes8. bes16 bes8
 	bes8.\> bes16 bes8 bes8. bes16 bes8\! \mark \default
-	bes8. bes16 bes8 bes8. bes16 bes8
+	bes8.\mf bes16 bes8 bes8. bes16 bes8
 	bes8. bes16 bes8 bes8. bes16 bes8
 % Bars 271 to 275
 	bes8. bes16 bes8 bes8. bes16 bes8

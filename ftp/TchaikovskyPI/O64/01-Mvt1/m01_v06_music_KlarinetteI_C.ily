@@ -34,19 +34,19 @@ musicKlarinetteIMvtI = \relative c {
 	a2~ a8) r r4\fermata \mark \default
 % Bars 21 to 25
 	bes4.\pp bes16 bes c4.( bes16-.) a-.
-	bes4( \after 2.*5/6 \! g2.)\<
+	bes4( << g2.) {s4\< s s\!} >>
 	bes4._\mfcresc bes16 bes c4.( bes16-.) a-.
-	bes4(\f\> \after 2.*5/6 \! g2.)
+	bes4(\f\> g2.)\!
 	bes4.\mf bes16_\dimmarkup bes c4.( bes16-.) a-.
 % Bars 26 to 30
 	bes4(\< g2)\! ees'4--\mf
 	d-- c--\> bes-- a--\!
-	g2.\sf\> ees'4--\mf
+	<< g2. {s4\sf\> s s\!}>> ees'4--\mf
 	d-- c--\> bes-- a--\!
-	\after 1*7/8 \! g1\sf\>
+	<<g1 {s4\sf\> s s s\!}>>
 % Bars 31 to 35
 	c2\p\<~ c4. d8--\!
-	\after 1*7/8 \! d1\>
+	<<d1 {s4\> s s s\!} >>
 	r2 c\p\<
 	d\>~ d4~ d8\! r
 	r2 c\pp
@@ -168,7 +168,7 @@ musicKlarinetteIMvtI = \relative c {
 	c,8(\ff\> d e f g gis)\!
 	\partCombineApart a4.~ a4 b8(
 	cis4.) d4( e8) \partCombineAutomatic
-	f4.\f\> e
+	f4.\f\> << e {s8 s s\!}>>
 	<< a,2. {s8\p\< s s s s s\!}>>
 % Bars 136 to 140
 	\partCombineApart a4.~_\mfcresc^\espr a4 b8

@@ -118,8 +118,8 @@ musicHornIMvtI = \relative c {
 	
 	\partCombineApart r4 r8 r r a,\p(
 	gis4.) cis4 cis8 \partCombineAutomatic
-	cis4.\mf\> d\! 
-	cis2. 
+	cis4. d4.
+	cis2.
 % Bars 136 to 140
 	\partCombineApart r4 r8 r r a(^\mpcresc
 	gis4.) cis4 cis8 \partCombineAutomatic

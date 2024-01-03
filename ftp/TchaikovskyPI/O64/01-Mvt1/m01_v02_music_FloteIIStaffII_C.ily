@@ -344,12 +344,12 @@ musicFloteIIStaffIIMvtI = \relative c' {
 % Bars 346 to 350
 	r fis,16(\mp g a b c8) r r
 	r4 d16(\ff cis c b a gis g fis)
-	e( fis g a g fis e8) \partCombineApart g( gis
+	e( fis g a g fis e8) \partCombineApart g(_\mf gis
 	a) \partCombineAutomatic d16(\f e fis g a8) r r
 	r fis,16(\mp g a b c8) r r
 % Bars 351 to 355
 	r r g16(\ff a b a g a b ais)
-	b( cis d e eis fis fis,8) \partCombineApart g( gis \mark \default
+	b( cis d e eis fis fis,8) \partCombineApart g(_\mf gis \mark \default
 	a) \partCombineAutomatic d16(\f e! fis g a8) r r
 	r fis,16(\mp g a b c8) r r
 	r4 d16(\ff cis c b a gis g fis)

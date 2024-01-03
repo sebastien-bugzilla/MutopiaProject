@@ -85,22 +85,22 @@ musicViolaMvtI = \relative c {
 	e8[-.) r16 e e8](~ e fis)\<-. g\!-. 
 	a(\> g) fis\!( e4) c8(\<
 	g'8[-.)\! r16 g g8]~ g8[\> r16 fis fis8]\!~
-	fis8[ r16 e e8] r b'~\mf-. b-. \mark \default
+	fis8[ r16 e e8] r b'(\mf-. b-.) \mark \default
 % Bars 66 to 70
 	a4.->~ a8 a4\mf\>~
 	a8 a4~ a8\p\noBeam cis16(\< d e fis\!
 	g8[-.)\f r16 g, g8]~ g a(\< b\!
-	c\ff\> b a\! g)\f b-.~\mf b-.
+	c\ff\> b a\! g)\f b-.(\mf b-.)
 	a4.->~ a8 a4\mf\>~
 % Bars 71 to 75
 	a8 a4~ a8\p\noBeam cis16(\< d e fis\!
 	g8)\f r r r cis,(\< d\!
-	e\ff\> d cis\! b\f) b-.~\mf b-.
+	e\ff\> d cis\! b\f) b-.(\mf b-.)
 	a4.->~ a8 a4\mf\>~
 	a8 a4~ a8\p\noBeam cis16(\< d e fis\!
 % Bars 76 to 80
 	g8[-.)\f r16 g, g8]~ g a(\< b\!
-	c\ff\> b a\! g)\f b-.~\mf b-.
+	c\ff\> b a\! g)\f b-.(\mf b-.)
 	a4.->~ a8 a4\mf~
 	a8\> a4~ a8\p\noBeam cis16(\< d e fis\!
 	g8)\f r r r cis,(\< d\!
@@ -378,7 +378,7 @@ musicViolaMvtI = \relative c {
 	<d, d'>8[ r16 q q8]~ q q q
 	R2.
 	<bes d>8[ r16 q q8]~ q q q \mark \default
-	r4 r8 <d g'>4 q8
+	r4 r8 <d g'>4\ff q8
 	r4 r8 <g, e'>4 q8
 % Bars 311 to 315
 	r4 r8 <e g>4\f q8
@@ -420,12 +420,12 @@ musicViolaMvtI = \relative c {
 % Bars 346 to 350
 	a8 a4~ a8\p\noBeam cis16(\< d e fis\!
 	g8[-.)\f r16 g, g8]~ g a(\< b\!
-	c\ff\> b a\! g) b-.\mf~ b-.
+	c\ff\> b a\! g) b-.\mf( b-.)
 	a4.->~ a8 a4\mf\>~
 	a8 a4~ a8\p\< cis16( d e fis\!
 % Bars 351 to 355
-	g8)\f r r r cis,8(\< d\!
-	e\ff\> d cis\! b) b-.\mf~ b-. \mark \default
+	g8)\f r r r cis,8(\< d
+	e\ff\> d cis\! b) b-.\mf( b-.) \mark \default
 	a4.->~ a8 a4\mf\>~
 	a8 a4~ a8\p\< cis16( d e fis\!
 	g8[-.)\f r16 g, g8]~ g a(\< b
@@ -447,7 +447,7 @@ musicViolaMvtI = \relative c {
 % Bars 371 to 375
 	d: cis: b: dis: cis: bis: 
 	e: dis: cis: gis8 bis,16 cis d! dis
-	gis4.~\sfp\< gis4^\mfmarkup_\moltoespr fisis8(
+	gis4.~\sfp\< gis4_\moltoespr fisis8(^\mfmarkup
 	fis!4.) e4( gis8)\!
 	gis4.\f\> cis,\!
 % Bars 376 to 380

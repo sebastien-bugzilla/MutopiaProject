@@ -268,7 +268,7 @@ musicViolineIIMvtI = \relative c {
 	f\p\< r r <e bes'>\! r r
 % Bars 231 to 235
 	aes4.\mf f4( c8)
-	c4. aes4~-. aes8-. 
+	c4. aes4(-. aes8-.) 
 	R2.*2
 	
 	des8\mf r r ees r r
@@ -347,7 +347,7 @@ musicViolineIIMvtI = \relative c {
 		\noteShift #1.1 <d, d'>4 \noteShift #1.1 <d a'>8 gis16( a bes b c cis)
 	} \\ {
 		a,16( b! cis d e f)
-		<g, g'>4 q8 bes16( cis d e f g)
+		<g, g'>4\ff q8 bes16( cis d e f g)
 		<d d'>4 <d a'>8 a16( b! cis d e f!)
 		<g, g'>4 q8 bes16( cis d e f g)
 		<d d'>4 <d a'>8 gis16( a bes b c cis)
@@ -408,7 +408,7 @@ musicViolineIIMvtI = \relative c {
 	a4.->~ a8 c,4\mf\>~
 % Bars 346 to 350
 	c8 <c d>4~ q8\p r r 
-	g8[-.\f r16 g' g8]~ g a(\< b
+	g8[-.\f r16 g' g8]~ g a(\< b\!
 	c\ff\> b a\! g) g(\mf-. gis)-. 
 	a4.->~ a8 c,4\mf\>~
 	c8 <c d>4~ q8\p r r
@@ -439,14 +439,14 @@ musicViolineIIMvtI = \relative c {
 % Bars 371 to 375
 	d: cis: b: dis: cis: bis: 
 	e: dis: cis: gis8 r r
-	gis,4.\sfp\<~ gis4^\mfmarkup_\moltoespr ais8(
+	gis,4.\sfp\<~ gis4_\moltoespr ais8(^\mfmarkup
 	a!4.) gis4( bis8)\!
 	cis4.\f\> <dis, a'>\!
 % Bars 376 to 380
 	\after 2.*5/6 \! dis2.\p\<
 	gis4._\mfcresc~ gis4 ais8(
 	a!4.) gis4( bis8)
-	cis4.\ff\> <cis, a'>\!
+	cis4.\ff\> \after 4.*2/3 \! <cis, a'> 
 	\after 2.*5/6 \! bis2.\mp\<
 % Bars 381 to 385
 	<cis gis'>4.\sff\>~ q4 <fis a>8\!
@@ -548,7 +548,7 @@ musicViolineIIMvtI = \relative c {
 	r e,8:16\f\< fis: gis: a: ais: 
 	b: cis: dis: e: fis: fisis:\!
 	gis4\fff b,8 gis'4 b,8
-	r gis8:16 a: b: cis: dis: 
+	r gis8:16\ff a: b: cis: dis: 
 	<b e>8[ r16 q q8] q q q
 % Bars 466 to 470
 	r e,8:16\f fis: gis: a: ais: 

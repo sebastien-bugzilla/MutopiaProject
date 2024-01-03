@@ -302,7 +302,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 311 to 315
 	r4 r8 g,4\f g8
 	r4 r8 g4 g8
-	r4 r8 e4.
+	r4 r8 e4.\mf
 	R2.
 	R2.*5
 % Bars 316 to 320

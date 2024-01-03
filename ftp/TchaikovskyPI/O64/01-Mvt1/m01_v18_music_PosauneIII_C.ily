@@ -341,11 +341,11 @@ musicPosauneIIIMvtI = \relative c {
 	
 	r4 r8 e4\p\< dis8\!
 % Bars 391 to 395
-	cis4.\> fis
+	cis4.\> \after 4.*2/3 \! fis
 	gis8\pp r r r4 r8
 	R2.
 	r4 r8 e4\p\< dis8\!
-	cis4.\mf\> fis!
+	cis4.\mf\> \after 4.*2/3 \! fis!
 % Bars 396 to 400
 	gis8\pp r r r4 r8 \mark \default
 	dis4.->\p eis

@@ -302,7 +302,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 311 to 315
 	r4 r8 g,4\f g8
 	r4 r8 g4 g8
-	r4 r8 e4.
+	r4 r8 e4.\mf
 	R2.
 	R2.*5
 % Bars 316 to 320
@@ -375,10 +375,10 @@ musicOboeIIMvtI = \relative c {
 	
 	
 	
-	gis4.\mf\>~ gis4\p \stemUp \omitFlag fisis8\<(
+	gis4.\mf\>~ gis4\p\< \stemUp \omitFlag fisis8(
 	fis!4.) cis4( \omitFlag dis8)\!
 % Bars 391 to 395
-	e4.\f\> dis
+	e4.\f\> \after 4.*2/3 \! dis
 	<< \stemDown dis2. {s8\p\< s s s s s\!}>>
 	gis4._\mfcresc~ gis4 fisis8(
 	fis!4.) cis4( dis8)

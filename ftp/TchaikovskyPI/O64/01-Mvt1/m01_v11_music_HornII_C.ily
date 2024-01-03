@@ -118,8 +118,8 @@ musicHornIIMvtI = \relative c {
 	
 	R2.
 	\stemUp d4.\p\< cis4 \omitFlag cis8\!
-	cis4.\mf\> d\!
-	<< f!2. {s8\p\< s s s s s\!} >>
+	cis4.\mf\> << d4. {s8 s s\!} >>
+	<< f!2. {s8\p\< s s  s s s\!} >>
 % Bars 136 to 140
 	R2.
 	d4._\mpcresc cis4 \omitFlag cis8

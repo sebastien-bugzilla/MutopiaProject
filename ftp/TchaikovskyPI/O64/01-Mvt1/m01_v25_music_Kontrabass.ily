@@ -402,16 +402,16 @@ musicKontrabassMvtI = \relative c {
 	R2.*2
 % Bars 346 to 350
 	
-	g'8(\f fis f e) ees(\< d
+	g'8(\f fis f e) ees(\< d\!
 	c\ff\> d dis\! e!) r r
 	R2.*2
 	
 % Bars 351 to 355
-	g8(\f fis e d) e(\< fis\!
+	g8(\f fis e d) e(\< fis
 	g\ff\> fis ais\! b) r r \mark \default
 	R2.*2
 	
-	g8(\f fis f e) ees(\< d\!
+	g8(\f fis f e) ees(\< d
 % Bars 356 to 360
 	c\ff\> d dis e!)\! r r
 	R2.*3
@@ -604,9 +604,9 @@ musicKontrabassMvtI = \relative c {
 	e r r d r r
 % Bars 526 to 530
 	c r r b r r
-	e4.(\pp\< d\!
-	c\> b)\!
-	e(\< d\!
+	e4.(\pp\< \after 4.*2/3 \! d
+	c\> \after 4.*2/3 \! b)
+	e(\< \after 4.*2/3 \! d
 	c\> b)\!
 % Bars 531 to 535
 	e(\pp d

@@ -296,7 +296,7 @@ musicFagotteIIMvtI = \relative c {
 	bes,[ r16 bes bes8] bes'8. bes16 bes8
 	bes8._\ffdim bes16 bes8 bes8. bes16 bes8
 	bes8.\> bes16 bes8 bes8. bes16 bes8\! \mark \default
-	bes8. bes16 bes8 bes8. bes16 bes8
+	bes8.\mf bes16 bes8 bes8. bes16 bes8
 	bes8. bes16 bes8 bes8. bes16 bes8
 % Bars 271 to 275
 	bes8. bes16 bes8 bes8. bes16 bes8

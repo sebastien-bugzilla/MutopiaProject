@@ -395,7 +395,7 @@ musicFloteIIMvtI = \relative c' {
 	gis,4.\mf\>~ gis4\p\< \stemUp \omitFlag fisis8(
 	fis!4.) gis4( \omitFlag dis8)\!
 % Bars 391 to 395
-	e4.\f\> dis4.(\!
+	e4.\f\> \after 4.*2/3 \! dis4.(
 	\stemDown gis8) r r r4 r8
 	gis4._\mfcresc~ gis4 fisis8(
 	fis!4.) gis4( dis8)

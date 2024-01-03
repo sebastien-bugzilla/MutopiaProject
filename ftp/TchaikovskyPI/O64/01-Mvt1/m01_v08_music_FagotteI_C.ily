@@ -31,10 +31,10 @@ musicFagotteIMvtI = \relative c {
 	g-- a--\> b-- b--\!
 	c2.\sf\> fis,4\mf--
 	g-- a--\> b-- b--\!
-	\after 1*7/8 \! c1\sf\>
+	<< c1 {s4\sf\> s s s\!}>>
 % Bars 31 to 35
-	\after 1*7/8 \! c\p\<
-	\after 1*7/8 \! b\>
+	<<c1 {s4\p\< s s s8 s\!}>>
+	<<b1 {s4\> s s s\!}>>
 	r2 c\p\<
 	b\>~ b4~ b8\! r
 	r2 c\pp
@@ -306,7 +306,7 @@ musicFagotteIMvtI = \relative c {
 	bes[ r16 bes bes8] \partCombineApart bes8. bes16 bes8 \partCombineAutomatic
 	f'8._\ffdim f16 f8 f8. f16 f8
 	f8.\> f16 f8 f8. f16 f8\! \mark \default
-	f8. f16 f8 f8. f16 ges8
+	f8.\mf f16 f8 f8. f16 ges8
 	f8. f16 f8 ees8. ees16 d8
 % Bars 271 to 275
 	ees8. ees16 ees8 ees8. ees16 ees8
@@ -394,7 +394,7 @@ musicFagotteIMvtI = \relative c {
 	r4 r8 a16( g fis e d! c!
 	b cis dis e fis g a) r r8 r
 	r4 r8 a16( g fis e d! c!
-	b cis dis e fis g) \partCombineApart a( ais b8) b(
+	b cis dis e fis g) \partCombineApart a( ais b8)\mf b(
 	a!) r r r4 r8 \partCombineAutomatic
 % Bars 346 to 350
 	R2.
