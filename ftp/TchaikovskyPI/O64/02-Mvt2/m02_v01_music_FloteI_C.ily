@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFloteIIIMvtII = \relative c {
+musicFloteIMvtII = \relative c {
 	\clef treble
 	\key b \minor
 %	\transposition a
@@ -19,7 +19,7 @@ musicFloteIIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 16 to 20
-	R1.*20
+	R1.*20 \changeStaffName \flI-II-III
 % Bars 21 to 25
 	
 % Bars 26 to 30
@@ -28,33 +28,37 @@ musicFloteIIIMvtII = \relative c {
 	
 % Bars 36 to 40
 	
-	r4 r8 r fis'(\f a d fis a\> d fis a)\!
-	r4 r8 e,4(~\mp e16 e,)\< \tuplet 2/3 4. {e8( a) cis-- e--\!}
-	a4->(~\f a16 a,) a4.(~ a8 b cis d) r r 
+	r4 r8 r fis'(\f a d fis a\> d fis a)\! 
+	R1.*2 
+	
 	R1.*6
 % Bars 41 to 45
 	
 	
 	
-	\mark \default
-	R1.*6
+	\mark \default 
+	r2. g,,4.(\pp\< fis4 e8
 % Bars 46 to 50
-	
+	d)\! r r r4 r8 \tuplet 2/3 4. {\partCombineApart fis8 gis a fis}
+	b \partCombineAutomatic r r r4 r8 \tuplet 2/3 4. {gis8\ff( ais} b) r r
+	\tuplet 2/3 4. {e,!->\f fis->} g!4.-> r2.
+	r2. g4.\pp(\< fis4 e8
+	d)\! r r r4 r8 \tuplet 2/3 4. {\partCombineApart fis8 gis a fis}
 % Bars 51 to 55
-	r2. \tuplet 2/3 4. {gis,8(\mf ais b d)} \mark \default
-	fis,4.(_\crescpocoapoco g!4) g8 g4.( gis4) gis8
+	b8 \partCombineAutomatic r r r4 r8 \tuplet 2/3 4. {gis(\mf ais b d)} \mark \default
+	fis4.(_\crescpocoapoco g!4) g8 g4.( gis4) gis8
 	\tuplet 2/3 4. {gis8( a) a-- a-- a( ais) ais-- ais--}
 	ais4.( b4) b8 b4.( c4) c8
 	\tuplet 2/3 4. {c( cis) cis-- cis-- cis( d) d-- d--}
 % Bars 56 to 60
-	d4.\fff fis,4( b8) cis8\> cis cis d d e\!
-	b8 r r r4 r8 r2.
-	R1.*5
-	
-	
+	d4.\fff fis,4( b8) \partCombineApart a2.(
+	b4.) d,4( g8) fis2.
+	g4.(\f b,8) r r \partCombineAutomatic r2. 
+	r4 r8 \omitAdue a4.\p\< gis\> g\!
+	fis\< a gis\> g\!
 % Bars 61 to 65
-	
-	
+	fis8\p fis fis  fis fis fis  fis r r r4 r8
+	fis fis fis  fis fis fis  fis r r r4 r8
 	R1.*3
 	
 	\bar "||" \time 4/4
@@ -65,31 +69,31 @@ musicFloteIIIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1*2
+	R1*3
 % Bars 76 to 80
 	
-	r2 cis8\mf cis4 cis8(
-	gis) gis(\< bis cis gis'\! fis) e--\> dis--\!
-	R1
-	cis8\mf cis4 cis8( bis) bis4 bis8~
+	
+	dis''4.\mf\< e8( gis\! fis)\> e8-- dis--\!
+	R1*3
+	
 % Bars 81 to 85
-	bis bis( cis) cis( dis) dis4 dis8(
-	ais) ais(\< cisis dis\! ais' gis) fis\>-- eis--\! \mark \default
+	
+	f4.\mf\< ges8( bes\! aes) ges--\> f--\! \mark \default
 	R1*2
 	
-	R1*2
+	ees,4.\f\< aes8( ees'\! d!) ces--\> bes--\!
 % Bars 86 to 90
-	
+	ees,4-- \tuplet 3/2 4 {aes8( ces ees)} ges(-> f) d-- bes--
 	R1
-	bes'4.\mf\< ces8( ees\! des) ces\>-- bes--\!
+	\omitAdue bes4.\mf\<^\athree ces8( ees\! des) ces\>-- bes--\!
 	R1
 	dis4.\f\< e8( gis\! fis) e\>-- dis--\! \mark \default
 % Bars 91 to 95
 	R1*2
 	
-	r2 dis,,4\f( gis8) r
-	r2 dis4( gis8) r 
-	gis4._\fcresc dis'8( fis e dis cis)
+	r2 gis,,4\f( gis'
+	fis8) r r4 gis,( gis') \changeStaffName \flI-II-III
+	\omitAdue gis,4._\fcresc^\athree dis'8( fis e dis cis)
 % Bars 96 to 100
 	b'( a gis fis) e'( dis cis bis)
 	a'(\fff gis fis e) dis( cis b! a)
@@ -97,15 +101,15 @@ musicFloteIIIMvtII = \relative c {
 	a4.\fff a16 a b4. a16 gis
 	a8 a r4 r2
 % Bars 101 to 105
-	a4. a16 a b4. a16 gis
-	a8 a r4 r e
-	e e e e
-	e8 e r4 r e
-	e e e e
+	a4. a16 a b4. a16 gis \changeStaffName \flI
+	a8 a r4 r d
+	cis b a g
+	a8 a r4 r d
+	cis b a g
 % Bars 106 to 110
-	e8 e r4 r e8 r
-	r4 e8 r r4 e8 r\fermata \bar "||"
-	\timeTwelveEightC R1.*8
+	a8 a r4 r a8 r
+	r4 a8 r r4 a8 r\fermata \bar "||"
+	\timeTwelveEightC R1.*8 \changeStaffName \flI-II-III
 % Bars 111 to 115
 	
 	
@@ -118,7 +122,7 @@ musicFloteIIIMvtII = \relative c {
 	
 	
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		b'16(\mf cis) dis--\< e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b,\mf(
+		\omitAdue b16(\mf cis) dis--\< e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b,\mf(
 % Bars 121 to 125
 		a b) cis\<-- d!-- e-- f-- fis-- g--\! g( fis eis g fis8) r
 		r16 gis(\f a gis) r a( b a) r b( cis b) r cis( d cis)
@@ -136,8 +140,8 @@ musicFloteIIIMvtII = \relative c {
 	\tuplet 2/3 4. {g8( fis) b\ff-- a--} g(_\dimmarkup fis) e-- d-- cis-- b-- 
 	d4.->(\f cis2.) a8(\< b) cis--\!
 	e4.(\> d2.)\< d8-- e-- fis--\!
-	fis4.\f fis fis d8-- e-- fis-- 
-	fis4. fis fis gis8--\ff a-- b-- 
+	\partCombineApart gis4.^\I-IIadue gis4 gis8 gis4. d8-- e-- fis-- 
+	gis4. gis4 gis8 gis4. \partCombineAutomatic \omitAdue gis8--\ff^\athree a-- b-- 
 % Bars 136 to 140
 	b4. b4 b8 b4. gis8-- a-- b-- 
 	b4. b4 b8 b b4 b b8~ \mark \default
@@ -146,36 +150,36 @@ musicFloteIIIMvtII = \relative c {
 	b g4 e d8~ d cis4 b a8(
 % Bars 141 to 145
 	ais) b cis d dis e fis g a! ais b cis
-	d8\fff r^\mutainflpicc r r4 r8 r2. \changeStaffName \picc
-	R1.*5 
-	
-	
+	d4.\fff fis,4( b8) a4.~ a4 a8 \changeStaffName \flI-II
+	\tuplet 2/3 4. {b8 cis d b} fis'4.~ fis8 r r
+	\tuplet 2/3 4. {b,8 cis d b} fis'4. \tuplet 2/3 4. {e8( d)}
+	d4. \tuplet 2/3 4. {cis8( b)} e,( g) b-- b4( a8)
 % Bars 146 to 150
-	
-	
-	r2. fis,4.\ff fis4 fis8
+	d4. fis,4( b8) a4.~ a4 a8
+	\tuplet 2/3 4. {b cis d b} fis'4.~ fis8 r r 
+	\tuplet 2/3 4. {b, cis d b} fis'4.\ff fis4 fis8
 	fis4.\fff( g4) g8 g4.( gis4) gis8
 	\tuplet 2/3 4. {gis( a) a a a( ais) ais ais} \mark #11
 % Bars 151 to 155
-	ais4._\crescmarkup( b4) b8 b4.( c4) c8
+	ais,4._\crescmarkup( b4) b8 b4.( c4) c8
 	\tuplet 2/3 4. {c8( cis) cis cis cis( d) d d}
 	\timeSignature 4/4 \scaleDurations 3/2 { 
-		d4\ffff fis,8( b) \after 2*3/4 \! a2\>
-		b4\ff d,8( g) \after 2*3/4 \! fis2\>
-		g8\f r^\mutainfliii r4 r2
+		d4\ffff fis8( b) << a2 {s8\> s s s\!}>>
+		b4\ff d,8( g) << fis2 {s8\> s s s\!}>>
 	}
+	\timeSignature 12/8 g4.\f b,4( cis8) \partCombineApart \stemDown \omitDots d2.~
 % Bars 156 to 160
-	\timeSignature 12/8 R1.*2
-	\bar "||"
-	\unSetTimeSignature \time 4/4 e8(\fff d) r4 r2
+	\omitDots d4. \stemUp a, gis g
+	fis a gis g \bar "||" 
+	\unSetTimeSignature \time 4/4 \noteShift #0.8 f8 \partCombineAutomatic r r4 r2
 	R1*4
 	
 % Bars 161 to 165
 	
 	
-	r4 r8 f,( b[ f']) f( b)
-	\tuplet 3/2 4 {bes8\fff bes bes  bes bes bes} bes8->[ bes->] bes-> bes->
-	e,-> e-> r4 r2
+	r8 f'( b d) f,( b d f)
+	\tuplet 3/2 4 {e8\fff e e  e e e} e8->[ e->] e-> e->
+	e,-> e-> r4 r2 \changeStaffName \flI-II-III
 % Bars 166 to 170
 	R1*4
 	
@@ -184,13 +188,13 @@ musicFloteIIIMvtII = \relative c {
 	\time 12/8 R1.*3
 % Bars 171 to 175
 	
-	
-	r2. cis,8\pp\< cis cis   cis cis cis\!
-	d\> d d\! r4 r8 cis\< cis cis   cis cis cis
-	d\! r r r4 r8 cis8\< cis cis   cis cis cis\!
+	% from here, all flute parts are gathered in one voice.
+	r2. \omitAdue <cis, bes' cis>8\pp\< q q   q q q\!
+	<d a' d>8\> q  q\! r4 r8 <cis bes'>8\<^\II-III q q  q q q
+	<d a'>\! r r r4 r8 <cis bes' cis>8\< q q   q q q\!
 % Bars 176 to 180
-	d\> d d\! r4 r8 cis\< cis cis   cis cis cis
-	d\! r r r4 r8 cis4.(\pp e
+	<d a' d>\> q q\! r4 r8 <cis bes'>8\<^\II-III q q  q q q
+	<d a'>\! r r r4 r8 cis4.(\pp^\III e
 	fis8) r r r4 r8 cis4.( e
 	d8) r r r4 r8 r2.
 	R1.*4

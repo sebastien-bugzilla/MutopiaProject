@@ -37,6 +37,8 @@ unis = \markup {unis.}
 pesanteetenutosempre = \markup {\italic {pesante e tenuto sempre}}
 sffp = \markup {\dynamic sffp}
 semprepizz = \markup {sempre pizz.}
+crescpocoapoco = \markup {\italic {cresc. poco a poco}}
+fcantabile = \markup {\dynamic f \italic {cantabile}}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
@@ -44,6 +46,22 @@ mutainfliii = \markup {"muta in Fl.III"}
 mutagina = \markup {"Muta G in A"}
 mutaaingdinbeind = \markup { "muta A in G, D in B, E in D"}
 mutabinhdine = \markup { "muta B in H, D in E" }
+
+twelveEightC = \markup {
+	\concat { 
+		\compound-meter #'(12 . 8)
+		\parenthesize \musicglyph "timesig.C44" 
+	}
+}
+
+timeTwelveEightC = {
+	\once \override Staff.TimeSignature.stencil = #ly:text-interface::print
+	\once \override Staff.TimeSignature.text = \markup #twelveEightC
+	\time 12/8
+}
+
+timeSignature = \set Staff.timeSignatureFraction = \etc
+unSetTimeSignature = \unset Staff.timeSignatureFraction
 
 % fonctions :
 mmrPos = #(define-music-function
@@ -78,15 +96,10 @@ changeStaffName = #(define-music-function
 	#}
 )
 
-flI = \markup {
-	"Fl. I"
-}
-flII = \markup {
-	"Fl. II"
-}
-flIII = \markup {
-	"Fl. III"
-}
+flI = \markup {"Fl. I"}
+flII = \markup {"Fl. II"}
+flIII = \markup {"Fl. III"}
+picc = \markup {"Picc."}
 flI-II = \markup {
 	\line {
 		\hspace #5 \lower #1.5 "Fl."
@@ -111,19 +124,19 @@ flI-II-III = \markup {
 		}
 	}
 }
-picc = \markup {"Picc."}
 
-I-IIadue = \markup {\bold "I II a 2"}
-III = \markup {\bold "III"}
-
+I-IIadue = \markup {\fontsize #-1 \bold "I II a2"}
+III = \markup {\fontsize #-1 \bold "III"}
+athree = \markup {\fontsize #-1 \bold "a3"}
+II-III = \markup {\fontsize #-1 \bold "II III"}
 
 % shortcuts
 omitFlag = \once \omit Flag
 omitBeam = \once \omit Beam
 omitDots = \once \omit Dots
-
-
-
+omitTuplet = \once \omit TupletNumber
+omitAdue = \once \omit CombineTextScript
+omitDots = \once \omit Dots
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %aIIXoffset = #(define-music-function
