@@ -179,7 +179,7 @@ musicFloteIIStaffIIMvtII = \relative c {
 	R1.*2
 %	d4.\mf\< d,, d\> a'\!
 	\bar "||" % a\p d,\< d\> a'\! \bar "||"
-	\unSetTimeSignature \time 4/4 R1 % b8\fff r r4 r2
+	\unsetTimeSignature \time 4/4 R1 % b8\fff r r4 r2
 	R1*4
 	
 % Bars 161 to 165

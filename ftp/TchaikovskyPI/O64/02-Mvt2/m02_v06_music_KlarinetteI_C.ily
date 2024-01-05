@@ -61,7 +61,7 @@ musicKlarinetteIMvtII = \relative c {
 	
 	r2. e8\mp e e  e e e
 % Bars 51 to 55
-	d r r r4 r8 f\mf f f  f f f \mark \default
+	\partCombineApart d r r r4 r8 f f f  f f f \partCombineAutomatic \mark \default
 	g_\crescpocoapoco g g  g g g  gis gis gis  gis gis gis
 	a a a  a a a  a a a  a a a
 	a a a  a a a  d d d  cis cis cis
@@ -92,13 +92,13 @@ musicKlarinetteIMvtII = \relative c {
 	R1*2
 % Bars 76 to 80
 	
-	r2 e8\mf e4 e8(
-	b)[ b(\<] dis e)\! r fis,(\mf\noBeam a) a
+	\partCombineApart r2 e8\mf e4 e8(
+	b)[ b(\<] dis e)\! \once \partCombineAutomatic r fis,(\noBeam a) a \partCombineAutomatic
 	R1
-	e'8\mf e4 e8( dis) dis4 dis8~
+	\partCombineApart e'8\mf e4 e8( dis) dis4 dis8~
 % Bars 81 to 85
 	dis dis( e) e( fis) fis4 fis8(
-	cis) cis( eis fis) r gis,(\mf b) b \mark \default
+	cis) cis( eis fis) \once \partCombineAutomatic r gis,( b) b  \partCombineAutomatic \mark \default
 	R1
 	b4.\f\< fis'8( a\! gis) fis\>-- eis--\!
 	e!4-> \tuplet 9/8 4 {d32( e d e d e d e d} cis8) r fis( eis)
@@ -113,9 +113,9 @@ musicKlarinetteIMvtII = \relative c {
 	
 	c,2->(\f b)
 	c( b)
-	b4._\fcresc fis'8( a g fis e)
+	\partCombineApart b4. fis'8( a g fis e)
 % Bars 96 to 100
-	d'( c b a) cis,( dis e fis)
+	d'( c b a) \partCombineAutomatic cis,( dis e fis)
 	g(\fff gis a b) c( cis d! e)
 	d( c! b! a) g( d c b)
 	c4.\fff c16 c d4. c16 b
@@ -140,9 +140,9 @@ musicKlarinetteIMvtII = \relative c {
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		bes16(\mf a bes g) g'4~ g16(\< a bes b c4~
 		c16) cis( d e f4~ f16)\! g\f-- a-- bes-- c( b bes a)
-		a4( gis8) d f4(-> e~
+		a4( gis8) d \partCombineApart \stemDown f4(-> e~
 	}
-	\timeSignature 12/8 e8) r r dis(\f f e) \after 4.*2/3 \! e4.\> r4 r8
+	\timeSignature 12/8 \stemUp e8) r r \partCombineAutomatic dis(\f f e) << e4. {s8\> s s\!}>> r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		d,16\mf( e) fis--\< g-- a-- bes-- b-- c--\! c( bes a c bes8) r16 d,\mf(
 % Bars 121 to 125
@@ -165,11 +165,11 @@ musicKlarinetteIMvtII = \relative c {
 	b,4.\f b4 b8 b4. f'8-- g-- a--
 	b,4. b4 b8 b4. b'8\ff-- c-- d--
 % Bars 136 to 140
-	f,4. f f b8-- c-- d--
-	f,4. f f8 d4 d d8~ \mark \default
+	f,4. \partCombineApart f f \partCombineAutomatic b8-- c-- d--
+	f,4. \partCombineApart f f8 \partCombineAutomatic d4 d d8~ \mark \default
 	d d4 d d8~ d d4 d d8~
-	d d4 d d8~ d d4 d d8~
-	d bes'4 g f8~ f e4 d c8
+	d d4 d d8~ d d4 d \partCombineApart d8~
+	d bes'4 g f8~ f e4 d c8 \partCombineAutomatic
 % Bars 141 to 145
 	cis, d e f fis g a bes c! cis d e
 	\timeSignature 4/4 \scaleDurations 3/2 {
@@ -188,8 +188,8 @@ musicKlarinetteIMvtII = \relative c {
 	cis4.(_\crescmarkup d4) d8 d4.( ees4) ees8
 	\tuplet 2/3 4. {ees8( e) e e e( f) f f}
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		f4\ffff a,8( d) \after 2*3/4 \! c2\>
-		d4\ff f,8( bes) \after 2*3/4 \! a2\>
+		f4\ffff a,8( d) << c2 {s8\> s s s\!}>>
+		d4\ff f,8( bes) << a2 {s8\> s s s\!}>>
 		bes16\f g' g g \tuplet 3/2 4 {d4( e8)} f2~\>
 % Bars 156 to 160
 		f4\mf r r2
@@ -217,8 +217,8 @@ musicKlarinetteIMvtII = \relative c {
 	f\> f f  c c c\!  des\< des des   des des des\!
 	c\> c c  c c c\!  e\< e e  e e e\!
 % Bars 176 to 180
-	f\> f f  c c c\!  des\< des des  des des des\!
-	c\! r r r4 r8 bes,2.\pp(
+	f\> f f  c c c\! \partCombineApart \stemDown \omitBeam des des des \omitBeam des des des
+	\stemUp c \partCombineAutomatic r r r4 r8 bes,2.\pp(
 	c8) r r r4 r8 bes2.(
 	c8) r r r4 r8 r2.
 	R1.*2

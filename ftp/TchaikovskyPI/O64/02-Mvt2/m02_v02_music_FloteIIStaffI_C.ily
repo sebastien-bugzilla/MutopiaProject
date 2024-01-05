@@ -174,7 +174,7 @@ musicFloteIIMvtII = \relative c {
 % Bars 156 to 160
 	d4.\mf d,,\< d\> a'\!
 	a\p d,\< d\> a'\! \bar "||"
-	\unSetTimeSignature \time 4/4 b8\fff r r4 r2
+	\unsetTimeSignature \time 4/4 b8\fff r r4 r2
 	R1*4
 	
 % Bars 161 to 165

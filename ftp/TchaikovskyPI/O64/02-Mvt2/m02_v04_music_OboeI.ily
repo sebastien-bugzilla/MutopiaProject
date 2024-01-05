@@ -185,7 +185,7 @@ musicOboeIMvtII = \relative c {
 		a4\mf r r2
 		R1 \bar "||"
 	} 
-	\unSetTimeSignature \time 4/4 e'8(\fff d) r4 r2
+	\unsetTimeSignature \time 4/4 e'8(\fff d) r4 r2
 	r4 \tuplet 3/2 4 {b8 b b} b4 b
 	R1
 % Bars 161 to 165

@@ -171,7 +171,7 @@ musicFloteIMvtII = \relative c {
 % Bars 156 to 160
 	d4.\mf\< a, gis\> g\!
 	fis\p a\< gis\> g\! \bar "||"
-	\unSetTimeSignature \time 4/4 f8\fff r r4 r2
+	\unsetTimeSignature \time 4/4 f8\fff r r4 r2
 	R1*4
 	
 % Bars 161 to 165

@@ -171,7 +171,7 @@ musicFloteIMvtII = \relative c {
 % Bars 156 to 160
 	\omitDots d4. \stemUp a, gis g
 	fis a gis g \bar "||" 
-	\unSetTimeSignature \time 4/4 \noteShift #0.8 f8 \partCombineAutomatic r r4 r2
+	\unsetTimeSignature \time 4/4 \noteShift #0.8 f8 \partCombineAutomatic r r4 r2
 	R1*4
 	
 % Bars 161 to 165

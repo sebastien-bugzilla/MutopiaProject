@@ -43,6 +43,7 @@ dolceespr = \markup {\italic {dolce espr.}}
 mpespress = \markup {\dynamic mp \italic {espress.}}
 mfmoltoespr = \markup {\dynamic mf \italic {molto espr.}}
 solo = \markup {"Solo"}
+mfespress = \markup {\dynamic mf \italic {espress.}}
 
 
 % instrument transition
@@ -66,7 +67,7 @@ timeTwelveEightC = {
 }
 
 timeSignature = \set Staff.timeSignatureFraction = \etc
-unSetTimeSignature = \unset Staff.timeSignatureFraction
+unsetTimeSignature = \unset Staff.timeSignatureFraction
 
 
 flI = \markup {"Fl. I"}
