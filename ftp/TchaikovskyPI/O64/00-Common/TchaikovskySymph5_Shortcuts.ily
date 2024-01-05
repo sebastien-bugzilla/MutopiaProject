@@ -44,6 +44,8 @@ mpespress = \markup {\dynamic mp \italic {espress.}}
 mfmoltoespr = \markup {\dynamic mf \italic {molto espr.}}
 solo = \markup {"Solo"}
 mfespress = \markup {\dynamic mf \italic {espress.}}
+ten = \markup {\italic {ten.}}
+simile = \markup {\italic {simile}}
 
 
 % instrument transition
