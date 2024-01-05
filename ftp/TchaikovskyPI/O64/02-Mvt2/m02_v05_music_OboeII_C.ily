@@ -54,7 +54,7 @@ musicOboeIIMvtII = \relative c {
 	
 % Bars 51 to 55
 	r2. d''8\mf r r r b b \mark \default
-	b_\crescpocoapoco b b  b b b  b b b  b b b 
+	b b b  b b b  b b b  b b b 
 	cis cis cis  cis cis cis  d d d  d d d 
 	dis dis dis  dis dis dis  e e e  e e e
 	e e e  e e e  g g g  g g g
@@ -95,11 +95,11 @@ musicOboeIIMvtII = \relative c {
 	fis!\f fis fis fis  fis fis fis fis
 	dis4.\< e8( gis\! fis) e--\> dis--\! \mark \default
 % Bars 91 to 95
-	dis2\mf\< dis'8(->\! e) bis--\> cis--\!
+	\after 2*3/4 \! dis2\mf\< dis'8(-> e) bis--\> cis--\!
 	cis,2->( \after 2*3/4 \! bis2)\<
 	cis2->\f  bis4( dis8) r
 	cis2-> bis4( dis8) r
-	gis4._\fcresc dis8( fis e dis cis)
+	gis4. dis8( fis e dis cis)
 % Bars 96 to 100
 	b'( a gis fis) e'( dis cis bis)
 	a'(\fff gis fis e) dis( cis b! a)
@@ -128,24 +128,24 @@ musicOboeIIMvtII = \relative c {
 	R1.
 	R1.*2
 	
-	r4 r8 fis4.\f~-> \after 4.*2/3 \! fis\> r4 r8
+	r4 r8 fis4.\f~-> << fis {s8\> s s\!}>> r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		b,16\mf( cis) dis\<-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b\mf(
 % Bars 121 to 125
-		a b,) cis--\< d!-- e-- f-- fis-- g--\! g( fis eis g fis8) r
+		a b,) cis--\< d!-- e f fis g\! g( fis eis g fis8) r
 		r16 gis(\f a gis) r a( b a) r b( cis b) r cis( d cis)
 		r d( e d~ d) cis b bes a(\> g) fis e d r r8\! \mark \default
 		b16(\mf\< cis) d-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b\mf(
-		a b,) c--\< d-- e-- f-- fis-- g--\! g( fis eis g fis8) r
+		a b,) c--\< d-- e f fis g\! g( fis eis g fis8) r
 % Bars 126 to 130
-		r16 gis(_\mfcresc a gis) r a( b a) r b( cis b) r cis( d cis)
-		r d(\f e d) r d( e d) r d,( b cis) \tuplet 3/2 4 {d8(_\fcantabile cis) b--} \timeSignature 12/8
+		r16 gis( a gis) r a( b a) r b( cis b) r cis( d cis)
+		r d(\f e d) r d( e d) r d,( b cis) \tuplet 3/2 4 {d8( cis) b--} \timeSignature 12/8
 	}
 	d4.->( cis2.) a'8(\< b,) cis--\!
 	e4.(\> d2.)\< d8-- e-- fis--\!
-	g4._\fcresc g4 g8 g4.~ g4 g8
+	g4. g4 g8 g4.~ g4 g8
 % Bars 131 to 135
-	\tuplet 2/3 4. {g( fis) b--\ff a--} g(_\dimmarkup fis) e-- d-- cis-- b--
+	\tuplet 2/3 4. {g( fis) b--\ff a--} g( fis) e-- d-- cis-- b--
 	d4.\f->( cis2.) a'8(\< b,) cis--\!
 	e4.(\> d2.)\< d8-- e-- fis--\!
 	fis'4.\f fis fis d,8-- e-- fis--
@@ -160,22 +160,22 @@ musicOboeIIMvtII = \relative c {
 	ais) b cis d, dis e fis g a! ais b cis \timeSignature 4/4
 	\scaleDurations 3/2 {
 		fis16\ff a,! a a  a a a a  g g g g   fis fis e e
-		fis fis fis fis  fis fis fis fis  fis_\crescmarkup fis fis fis  fis fis fis fis
+		fis fis fis fis  fis fis fis fis  fis fis fis fis  fis fis fis fis
 		d' d b b  b b d d  b\ff b d d  fis, fis fis fis
 		b b b b  b b b b  b b b b  e e e e
 % Bars 146 to 150
 		a,\ff a a a   a a a a   g g g g   fis fis e e 
-		fis fis fis fis   fis fis fis fis  fis_\crescmarkup fis fis fis  fis fis fis fis
+		fis fis fis fis   fis fis fis fis  fis fis fis fis  fis fis fis fis
 		d' d b b   b b d d   b b b b   b b b b
 	} 
-	\timeSignature 12/8 fis4.(\fff g4) g8 g4.( gis4) gis8
+	\timeSignature 12/8 fis4.(\fff g4) g8 g4._( gis4) gis8
 	\tuplet 2/3 4. {gis8( a) a a a( ais) ais ais} \mark #11
 % Bars 151 to 155
-	ais4.(_\crescmarkup b4) b8 b4.( c4) c8
+	ais4.( b4) b8 b4.( c4) c8
 	\tuplet 2/3 4. {c( cis) cis cis cis( d) d d} \timeSignature 4/4
 	\scaleDurations 3/2 {
-		d4\ffff fis,8( b) \after 2*3/4 \! a2\>
-		b4\ff d,8( g) \after 2*3/4 \! fis2\>
+		d4\ffff fis,8( b) << a2 {s8\> s s s\!}>>
+		b4\ff d,8( g) << fis2 {s8\> s s s\!}>>
 		g16\f b b b  e, e e e  e4\> eis\!
 % Bars 156 to 160
 		fis4\mf r r2
@@ -187,7 +187,7 @@ musicOboeIIMvtII = \relative c {
 % Bars 161 to 165
 	r4 \tuplet 3/2 4 {d8 d d} d4 d
 	r4 \tuplet 3/2 4 {f8 f f} f4 d8 r
-	r4 \tuplet 3/2 4 {f8 f f} f4 d'8( f)
+	r4 \tuplet 3/2 4 {f8 f f} f4 d'8( f!)
 	\tuplet 3/2 4 {e e e  e e e} e->[ e->] e-> e->
 	bes-> bes-> r4 r2
 % Bars 166 to 170

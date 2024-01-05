@@ -39,6 +39,11 @@ sffp = \markup {\dynamic sffp}
 semprepizz = \markup {sempre pizz.}
 crescpocoapoco = \markup {\italic {cresc. poco a poco}}
 fcantabile = \markup {\dynamic f \italic {cantabile}}
+dolceespr = \markup {\italic {dolce espr.}}
+mpespress = \markup {\dynamic mp \italic {espress.}}
+mfmoltoespr = \markup {\dynamic mf \italic {molto espr.}}
+solo = \markup {"Solo"}
+
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
@@ -63,38 +68,6 @@ timeTwelveEightC = {
 timeSignature = \set Staff.timeSignatureFraction = \etc
 unSetTimeSignature = \unset Staff.timeSignatureFraction
 
-% fonctions :
-mmrPos = #(define-music-function
-	(position)
-	(number?)
-	#{
-		\once \override MultiMeasureRest.staff-position = #(- position 2)
-	#}
-)
-
-noteShift = #(define-music-function
-	(shift)
-	(number?)
-	#{
-		\once \override NoteColumn.force-hshift = #shift
-	#}
-)
-
-beamOffset = #(define-music-function
-	(position)
-	(pair?)
-	#{
-		\once \offset positions #position Beam
-	#}
-)
-
-changeStaffName = #(define-music-function
-	(staffName)
-	(markup?)
-	#{
-		\set Staff.shortInstrumentName = #staffName
-	#}
-)
 
 flI = \markup {"Fl. I"}
 flII = \markup {"Fl. II"}
@@ -137,6 +110,51 @@ omitDots = \once \omit Dots
 omitTuplet = \once \omit TupletNumber
 omitAdue = \once \omit CombineTextScript
 omitDots = \once \omit Dots
+
+lirii = {
+	\set stemLeftBeamCount = #1
+	\set stemRightBeamCount = #2
+}
+liiri = {
+	\set stemLeftBeamCount = #2
+	\set stemRightBeamCount = #1
+}
+
+% fonctions :
+mmrPos = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)
+
+noteShift = #(define-music-function
+	(shift)
+	(number?)
+	#{
+		\once \override NoteColumn.force-hshift = #shift
+	#}
+)
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+changeStaffName = #(define-music-function
+	(staffName)
+	(markup?)
+	#{
+		\set Staff.shortInstrumentName = #staffName
+	#}
+)
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %aIIXoffset = #(define-music-function

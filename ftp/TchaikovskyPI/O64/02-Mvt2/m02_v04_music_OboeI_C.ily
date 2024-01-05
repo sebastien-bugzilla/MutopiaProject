@@ -57,8 +57,8 @@ musicOboeIMvtII = \relative c {
 	r g4.(\pp\< fis4 e8
 	d)\! r r r4 r8 \tuplet 2/3 4. {fis8(\mp\< gis a fis}
 % Bars 51 to 55
-	eis)\! r r r4 r8 \tuplet 2/3 4. {gis8\mf( ais b d)} \mark \default
-	e_\crescpocoapoco e e  e e e  eis eis eis  eis eis eis
+	eis)\! r r r4 r8 \partCombineApart \tuplet 2/3 4. {\noteShift #0.7 gis8( ais b d)} \mark \default
+	\partCombineAutomatic e_\crescpocoapoco e e  e e e  eis eis eis  eis eis eis
 	fis fis fis  fis fis fis  fis fis fis  fis fis fis
 	fis fis fis  fis fis fis  b b b  ais ais ais
 	ais ais ais  ais ais ais  b b b  b b b
@@ -99,11 +99,11 @@ musicOboeIMvtII = \relative c {
 	a!\f a a a  gis gis gis gis
 	dis'4.\< e8( gis\! fis) e--\> dis--\! \mark \default
 % Bars 91 to 95
-	gis,4.\mf\< dis'8\!( fis e) dis--\> cis--\!
-	b4-> \tuplet 9/8 4 {a32( b a b a b a b a} \after 2*3/4 \! gis2)\<
-	fis4->(~\f fis16 gis a cis) gis2
+	\partCombineApart gis,4. dis'8( fis e) dis-- cis--
+	b4-> \tuplet 9/8 4 {a32( b a b a b a b a} gis2)
 	fis4->(~ fis16 gis a cis) gis2
-	gis4._\fcresc dis'8( fis e dis cis)
+	fis4->(~ fis16 gis a cis) gis2
+	gis4._\fcresc \partCombineAutomatic dis'8( fis e dis cis)
 % Bars 96 to 100
 	b'( a gis fis) e( dis cis bis)
 	a'(\fff gis fis e) dis( cis b! a)
@@ -132,32 +132,32 @@ musicOboeIMvtII = \relative c {
 	R1.
 	r2. a,2.(\mf\<
 	gis8\!) r r r4 r8 r2.
-	r4 r8 fis'4.\f~-> \after 4.*2/3 \! fis\> r4 r8
+	r4 r8 fis'4.\f~-> << fis {s8\> s s\!}>> r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		b,16\mf( cis) dis\<-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b,\mf(
+		b,16\mf( cis) dis\<-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 \partCombineApart b,(
 % Bars 121 to 125
-		a b) cis--\< d!-- e-- f-- fis-- g--\! g( fis eis g fis8) r
+		a b) cis-- d!-- \stemDown \omitBeam e-- f-- fis-- g-- \partCombineAutomatic g( fis eis g fis8) r
 		r16 gis,(\f a gis) r a( b a) r b( cis b) r cis( d cis)
-		r d( e d~ d) cis b bes a(\> g') fis e d( cis) b! a\! \mark \default
-		b(\mf\< cis) d-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b,\mf(
-		a b) c--\< d-- e-- f-- fis-- g--\! g( fis eis g fis8) r
+		r d( e d~ d) cis b bes \partCombineApart \stemUp a( g') fis e d( cis) b! a \mark \default
+		\partCombineAutomatic b(\mf\< cis) d-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 \partCombineApart b,(
+		a b) c-- d-- \stemDown \omitBeam e-- f-- fis-- g-- \partCombineAutomatic g( fis eis g fis8) r
 % Bars 126 to 130
 		r16 gis(_\mfcresc a gis) r a( b a) r b( cis b) r cis( d cis)
 		r d(\f e d) r d( e d) r d,( b cis) \tuplet 3/2 4 {d8(_\fcantabile cis) b--} \timeSignature 12/8
 	}
-	d4.->( cis2.) a8(\< b) cis--\!
+	d4.->( cis2.) \partCombineApart \stemUp a8( b) cis-- \partCombineAutomatic
 	e4.(\> d2.)\< d8-- e-- fis--\!
 	g4._\fcresc g4 g8 g4.~ g4 g8
 % Bars 131 to 135
 	\tuplet 2/3 4. {g( fis) b--\ff a--} g(_\dimmarkup fis) e-- d-- cis-- b--
-	d4.\f->( cis2.) a8(\< b) cis--\!
+	d4.\f->( cis2.) \partCombineApart a8( b) cis-- \partCombineAutomatic
 	e4.(\> d2.)\< d8-- e-- fis--\!
-	gis4.\f gis4 gis8 gis4. d8-- e-- fis--
-	gis4. gis4 gis8 gis4. gis8--\ff a-- b--
+	\partCombineApart gis4. gis4 gis8 gis4. \partCombineAutomatic d8-- e-- fis--
+	\partCombineApart gis4. gis4 gis8 gis4. \partCombineAutomatic gis8--\ff a-- b--
 % Bars 136 to 140
-	b4. b4 b8 b4. gis8-- a-- b--
-	b4. b4 b8 b b4 b b8~ \mark \default
-	b b4 b b8~ b b4 b b8~
+	\partCombineApart b4. b4 b8 b4. \partCombineAutomatic gis8-- a-- b--
+	\partCombineApart b4. b4 b8 b b4 b b8~ \mark \default
+	\once \stemDown \omitFlag b \partCombineAutomatic b4 b b8~ b b4 b b8~
 	b b4 b b8~ b b4 b b8~
 	b g4 e d8~ d cis4 b a8(
 % Bars 141 to 145
@@ -172,14 +172,14 @@ musicOboeIMvtII = \relative c {
 		d d b b  b b d d  cis_\crescmarkup cis cis cis  cis cis cis cis
 		eis eis eis eis  eis eis eis eis  d d d d  d d d d
 	} 
-	\timeSignature 12/8 fis4.(\fff g4) g8 g4.( gis4) gis8
+	\timeSignature 12/8 fis4.(\fff g4) g8 g4.^( gis4) gis8
 	\tuplet 2/3 4. {gis8( a) a a a( ais) ais ais} \mark #11
 % Bars 151 to 155
 	ais4.(_\crescmarkup b4) b8 b4.( c4) c8
 	\tuplet 2/3 4. {c( cis) cis cis cis( d) d d} \timeSignature 4/4
 	\scaleDurations 3/2 {
-		d4\ffff fis,8( b) \after 2*3/4 \! a2\>
-		b4\ff d,8( g) \after 2*3/4 \! fis2\>
+		d4\ffff fis,8( b) << a2 {s8\> s s s\!}>>
+		b4\ff d,8( g) << fis2 {s8\> s s s\!}>>
 		g16\f e e e g, g g g g4\> gis\!
 % Bars 156 to 160
 		a4\mf r r2
