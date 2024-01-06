@@ -42,14 +42,14 @@ musicHornIIMvtII = \relative c {
 	r4 r8 d2.\p\> d4. \mark \default
 	cis8\pp cis cis  cis cis cis  b\< b b  cis cis d\!
 % Bars 46 to 50
-	cis_\pcresc cis cis  cis cis cis  gis' gis gis  gis gis gis
+	cis cis cis  cis cis cis  gis' gis gis  gis gis gis
 	a\mf\< a a  a a a\! a\f\> a a\! fis\mf fis fis
 	fis\> fis fis  fis fis fis  d d d  d d d\!
 	cis\pp cis cis  cis cis cis  b\< b b  b cis d\!
-	cis\p\< cis cis  cis cis cis   gis' gis gis   gis gis gis\!
+	\stemUp \omitBeam cis\p\< cis cis  \omitBeam cis cis cis  \stemDown gis' gis gis   gis gis gis\!
 % Bars 51 to 55
 	a\mf a a  a a a  fis r r   r fis fis \mark \default
-	fis_\mfcrescpocoapoco fis fis   fis fis fis  c! c c  c c c
+	fis fis fis   fis fis fis  c! c c  c c c
 	cis cis cis  cis cis cis   cis cis cis   cis cis cis
 	cis cis cis   cis cis cis  b' b b  b b b
 	b b b  b b b  d d d   d d d
@@ -98,8 +98,8 @@ musicHornIIMvtII = \relative c {
 	
 	r2 dis\f
 % Bars 96 to 100
-	gis, \after 2*3/4 \! dis'\<
-	gis\ff b
+	gis, << dis' {s8\< s s s\!}>>
+	gis2\ff b
 	gis dis4 b
 	gis'1\ff
 	gis8 gis~ gis2.
@@ -120,10 +120,10 @@ musicHornIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.*3
+	R1.*2
 	
-	
-	r4 r8 e4.->\mf~ \after 4.*2/3 \! e\> r4 r8
+	r4 r8 s4. s2.
+	r4 r8 e4.->\mf~ << e {s8\> s s\!}>> r4 r8
 	e4.~\p e8 r r b'4.->~ b8 r r
 % Bars 121 to 125
 	d,4.\p~ d8 r r a'4.->~ a8 r r
@@ -132,16 +132,16 @@ musicHornIIMvtII = \relative c {
 	cis4.\p~ cis8 r r r2.
 	b4.~ b8 r r r2.
 % Bars 126 to 130
-	a4._\mfcresc a a e'
+	a4. a a e'
 	e\f dis d\> \tuplet 2/3 4. {cis8\mf a}
 	d2. d8( cis d) d4.
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		e8( cis~ cis4) c8( cis~ cis4)
 		a8\< d4 fis8 fis4( e)\!
 % Bars 131 to 135
-		e\f cis \after 2*3/4 \! e2\>
-		d\mf \tuplet 3/2 4 {d8( cis d)} d4
-		e8(_\crescmarkup cis~ cis4) c8( cis~ cis4)
+		e\f cis << e2 {s8\> s s s\!}>>
+		d2\mf \tuplet 3/2 4 {d8( cis d)} d4
+		e8( cis~ cis4) c8( cis~ cis4)
 	}
 	\timeSignature 12/8 dis4.\f dis4 dis8 dis4. r4 r8
 	dis4. dis4 dis8 dis4. r4 r8
@@ -155,23 +155,23 @@ musicHornIIMvtII = \relative c {
 	e d4 cis b8~ b r r r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		cis'16\ff e,\f e e  e e e e  d d d d  cis cis b b
-		cis cis cis cis  cis cis cis cis  cis_\crescmarkup cis cis cis   cis cis cis cis
+		cis cis cis cis  cis cis cis cis  cis cis cis cis   cis cis cis cis
 		a' a fis fis   fis fis a a  fis\ff fis a a  fis fis fis fis
 		fis fis fis fis   fis fis fis fis  fis fis fis fis  d d d d
 % Bars 146 to 150
 		e\fff e\f e e  e e e e  d d d d   cis cis b b
-		cis cis cis cis   cis cis cis cis   cis_\crescmarkup cis cis cis   cis cis cis cis
+		cis cis cis cis   cis cis cis cis   cis cis cis cis   cis cis cis cis
 		a' a fis fis  fis fis a a  fis fis fis fis   fis fis fis fis
 		fis\ff fis fis fis  fis fis fis fis  fis fis fis fis  fis fis fis fis
 		gis gis gis gis  gis gis gis gis  a a a a   a a a a \mark #11
 % Bars 151 to 155
-		bes_\crescmarkup bes bes bes   bes bes bes bes   b b b b   b b b b
+		bes bes bes bes   bes bes bes bes   b b b b   b b b b
 		b b b b  b b b b  d d d d   d d d d 
 		cis\ffff cis cis cis   fis, fis a a   gis\> gis gis gis  a a b b\!
 		a\ff a d, d   d d fis! fis  f\> f f f  fis fis gis gis\!
 		fis\f fis fis fis  d d d d d4\> dis\!
 % Bars 156 to 160
-		e4\mf\< e^\ten fis^\ten\> e^\simile\!
+		e4\mf\< e fis\> e\!
 		e\p e\< fis\> e\! \bar "||"
 	}
 	\unsetTimeSignature \time 4/4 fis4\fff c!2.~
@@ -198,8 +198,8 @@ musicHornIIMvtII = \relative c {
 % Bars 176 to 180
 	e\> e e  e e e\!   fis\< fis fis  fis fis fis\!
 	a,\> a a  a a a\!  b2.\pp(
-	cis8) cis cis  a a a  b2.(
-	cis8) cis\pp cis  cis r r   cis cis cis  cis r r
+	\stemUp \omitBeam cis8) cis cis  a a a  \stemDown b2.(
+	\stemUp \omitBeam cis8) cis\pp cis  cis r r   cis cis cis  cis r r
 	cis\ppp cis cis  r4 r8  cis cis cis  r4 r8
 % Bars 181 to 184
 	cis4. r4 r8 cis4. r4 r8

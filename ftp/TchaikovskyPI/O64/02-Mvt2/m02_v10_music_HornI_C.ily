@@ -50,13 +50,13 @@ musicHornIMvtII = \relative c {
 	r4 r8 d2.\p\> d4. \mark \default
 	cis8\pp cis cis  cis cis cis  b\< b b  cis cis d\!
 % Bars 46 to 50
-	cis_\pcresc cis cis  cis cis cis r4 r8 r4 r8
+	cis_\pcresc cis cis  cis cis cis \partCombineApart r4 r8 r4 r8 \partCombineAutomatic
 	fis8\mf\< fis fis  fis fis fis\! fis\f\> cis cis\! fis\mf fis fis
 	fis\> fis fis  fis fis fis  b, b d  d d d\!
 	cis\pp cis cis  cis cis cis  b\< b b  b cis d\!
-	cis\p\< cis cis  cis cis cis\! r2.
+	\partCombineApart cis cis cis  cis cis cis r2. \partCombineAutomatic
 % Bars 51 to 55
-	fis8\mf fis fis  fis fis fis  a, a a   a a a \mark \default
+	fis8\mf fis fis  fis fis fis \partCombineApart a, a a   a a a \partCombineAutomatic \mark \default
 	b_\mfcrescpocoapoco b b   b b b  c! c c  c c c
 	cis cis cis  cis cis cis   cis cis cis   cis cis cis
 	cis cis cis   cis cis cis  fis fis fis  f f f
@@ -80,23 +80,23 @@ musicHornIMvtII = \relative c {
 	
 	
 	\mark \default
-	fis,8\mf fis4 fis8( gis) gis r4
+	\partCombineApart fis,8 fis4 fis8( gis) gis r4
 % Bars 76 to 80
 	fis'8 fis4 fis8( eis) eis4 eis8~
 	eis[ eis(] fis) fis r2
-	r r8 bes,(\noBeam des) des
-	aes8\mf aes4 aes8( bes) bes r4
+	r \once \partCombineAutomatic r8 bes,(\noBeam des) des
+	aes8 aes4 aes8( bes) bes r4
 	R1*2
 % Bars 81 to 85
 	
-	r2 r8 c(\mf\noBeam ees) ees \mark \default
-	R1
+	r2 \once \partCombineAutomatic r8 c(\noBeam ees) ees \mark \default
+	R1 \partCombineAutomatic
 	R1*3
 	
 % Bars 86 to 90
 	
 	b!2:8\mf bes:
-	R1
+	\partCombineApart R1 \partCombineAutomatic
 	e!2:8 ees:
 	des: des: \mark \default
 % Bars 91 to 95
@@ -106,8 +106,8 @@ musicHornIMvtII = \relative c {
 	
 	r2 dis\f
 % Bars 96 to 100
-	gis, \after 2*3/4 \! dis'\<
-	gis,\ff b
+	gis, << dis' {s8\< s s s\!}>>
+	gis,2\ff b
 	gis dis4 b
 	b'1\ff
 	b8 b~ b2.
@@ -130,8 +130,8 @@ musicHornIMvtII = \relative c {
 % Bars 116 to 120
 	r4 r8 fis,(_\mfespr e) d-- fis4.(-> e)
 	r4 r8 e(\< fis) a--\! d4.(\> cis8)\! r r
-	r4 r8 fis,--\mf gis-- a-- cis4.->( bis
-	cis8) r r e4.->\mf~ \after 4.*2/3 \! e\> r4 r8
+	r4 r8 fis,--\mf gis-- a-- \partCombineApart \stemDown cis4.->( bis
+	\stemUp cis8) r r \partCombineAutomatic e4.->\mf~ << e {s8\> s s\!}>> r4 r8
 	cis4.~\p cis8 r r fis4.->~ fis8 r r
 % Bars 121 to 125
 	b,4.\p~ b8 r r e4.->~ e8 r r
@@ -147,8 +147,8 @@ musicHornIMvtII = \relative c {
 		e8( cis~ cis4) c8( cis~ cis4)
 		a8\< d4 fis8 fis4( e)\!
 % Bars 131 to 135
-		e\f cis \after 2*3/4 \! e2\>
-		d\mf \tuplet 3/2 4 {d8( cis d)} d4
+		e\f cis << e2 {s8\> s s s\!}>>
+		d2\mf \tuplet 3/2 4 {d8( cis d)} d4
 		e8(_\crescmarkup cis~ cis4) c8( cis~ cis4)
 	}
 	\timeSignature 12/8 dis4.\f dis4 dis8 dis4. r4 r8
@@ -158,7 +158,7 @@ musicHornIMvtII = \relative c {
 	fis4. fis4 fis8 fis r r r4 r8 \mark \default
 	cis4.~ cis8 r r d4.~ d8 r r
 	dis4.~ dis8 r r gis4.~ gis8 r r
-	r d!4\ff b a8~ a r r  r r e'~
+	r \partCombineApart d!4 b a8~ a \partCombineAutomatic r r  r r e'~
 % Bars 141 to 145
 	e d4 cis b8~ b r r r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
@@ -205,9 +205,9 @@ musicHornIMvtII = \relative c {
 	e\> e e  e e e\!  f\< f f  f f f\!
 % Bars 176 to 180
 	e\> e e  e e e\!   d\< d d  d d d\!
-	a\> a a  a a a\!  gis4.(\pp b
-	cis8) cis cis  a a a  gis4.( b
-	a8) a\pp a  a r r   a a a  a r r
+	a\> a a  a a a\! \partCombineApart gis4.( b
+	cis8) cis cis \partCombineAutomatic  a a a \partCombineApart gis4.( b
+	a8) a a  \partCombineAutomatic a r r   a a a  a r r
 	a\ppp a a  r4 r8  e8 e e  r4 r8
 % Bars 181 to 184
 	R1.*2
