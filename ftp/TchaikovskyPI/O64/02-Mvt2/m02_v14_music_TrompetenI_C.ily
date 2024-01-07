@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrompetenIIMvtII = \relative c {
+musicTrompetenIMvtII = \relative c {
 	\clef treble
 	\key a \minor
 	\transposition a
@@ -43,7 +43,7 @@ musicTrompetenIIMvtII = \relative c {
 	
 	
 % Bars 56 to 60
-	f'4.\ff\>~ f8\! r r r2.
+	\partCombineApart f''4. r4 r8 \partCombineAutomatic r2.
 	R1.*9
 % Bars 61 to 65
 	
@@ -74,20 +74,20 @@ musicTrompetenIIMvtII = \relative c {
 % Bars 91 to 95
 	R1*5
 % Bars 96 to 100
-	R1
-	e'2\ff g
+	\partCombineApart e,2\f \after 2*3/4 \! b'\<
+	e g \partCombineAutomatic
 	e b4 g
-	c,4.\ff c16 c d4. c16 b
+	c4.\ff c16 c d4. c16 b
 	c8-> c-> r4 r2
 % Bars 101 to 105
 	c4. c16 c d4. c16 b
-	c8-> c-> r4 r d'
-	c bes g g
-	g8 g r4 r d'
-	c bes g g
+	c8-> c-> r4 r f
+	e d c bes
+	c8 c r4 r f
+	e d c bes
 % Bars 106 to 110
-	g8 g r4 r g8 r
-	r4 g8 r r4 g8 r\fermata \bar "||"
+	c8 c r4 r c8 r
+	r4 c8 r r4 c8 r\fermata \bar "||"
 	\timeTwelveEightC R1.*8
 % Bars 111 to 115
 	
@@ -114,34 +114,34 @@ musicTrompetenIIMvtII = \relative c {
 	
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		f8\ff r r4 r2
-		R1*3
-		
-		
+		r2 a,8->\f[ b->] c-> a->
+		d-> r r4 b8->\f cis-> d4->
+		g,8-> a-> bes2-> g4
 % Bars 146 to 150
-		f'8\ff r r4 r2
-		R1*2
-		
-		d16\ff d\f d d  d d d d   d d d d  d d d d
-		e e e e  e e e e  f f f f   f f f f  \mark #11
+		\noteShift #0.6 a8 r r4 r2
+		r2 a8\f->[ b->] c-> a->
+		d-> r r4 b8\f\<->[ cis->] d-> f->\!
+		g16\ff g\f g g  g g g g  aes aes aes aes  aes aes aes aes
+		a! a a a   a a a a   a a a a  a a a a \mark #11
 % Bars 151 to 155
-		fis\< fis fis fis   fis fis fis fis\!  g\ff g, g g   g g g g 
+		a\< a a a   a a a a\! \partCombineApart g g g g  \partCombineAutomatic  g g g g 
 		g g g g   g g g g  bes bes bes bes   bes bes bes bes
-		a\ffff a a a   d d f f  e\> e e e   f f g g\!
-		f\ff f bes, bes  bes bes d d  cis\> cis cis cis   d d e e\!
-		d8\mf r r4 r2
+		a\ffff a a a  f f aes aes  bes\> bes bes bes  bes bes bes bes\!
+		bes\ff bes f f  d d f f  g\> g g g   g g g g\!
+		g8\mf r r4 r2
 % Bars 156 to 160
 		R1*2
 		\bar "||"
 	}
-	\unsetTimeSignature \time 4/4 aes8\fff r r4 r2
-	r4 \tuplet 3/2 4 {d,8 d d} d4 d
+	\unsetTimeSignature \time 4/4 d8\fff r r4 r2
+	r4 \tuplet 3/2 4 {d8 d d} d4 d
 	R1
 % Bars 161 to 165
 	r4 \tuplet 3/2 4 {f8 f f} f4 f
 	r \tuplet 3/2 4 {aes8 aes aes} aes4 f8 r
 	r4 \tuplet 3/2 4 {aes8 aes aes} aes4 f8 r
-	\tuplet 3/2 4 {f'8\fff f f   f f f} f->[ f->] f-> f->
-	f-> f-> r4 r2
+	\tuplet 3/2 4 {g8\fff g g  g g g} g->[ g->] g-> g->
+	g-> g-> r4 r2
 % Bars 166 to 170
 	R1*4
 	
