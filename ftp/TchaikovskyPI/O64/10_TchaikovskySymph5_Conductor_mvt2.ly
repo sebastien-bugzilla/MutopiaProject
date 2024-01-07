@@ -41,8 +41,8 @@
 \include "./02-Mvt2/m02_v15_music_TrompetenII_C.ily"
 \include "./02-Mvt2/m02_v16_music_PosauneI_C.ily"
 \include "./02-Mvt2/m02_v17_music_PosauneII_C.ily"
-\include "./02-Mvt2/m02_v18_music_PosauneIII.ily"
-\include "./02-Mvt2/m02_v19_music_Tuba.ily"
+\include "./02-Mvt2/m02_v18_music_PosauneIII_C.ily"
+\include "./02-Mvt2/m02_v19_music_Tuba_C.ily"
 \include "./02-Mvt2/m02_v20_music_Pauken.ily"
 \include "./02-Mvt2/m02_v21_music_ViolineI.ily"
 \include "./02-Mvt2/m02_v22_music_ViolineII.ily"
@@ -124,15 +124,16 @@
 %%					\musicTrompetenIIMvtII
 %				}
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
-					\new Staff {
-						\timeMvtII \nameStaffIXMvtII
-						\partCombine \musicPosauneIMvtII \musicPosauneIIMvtII
-%						\musicPosauneIIMvtII
-					}
 %					\new Staff {
-%						\timeMvtII \nameStaffXMvtII
-%						\partCombine \musicPosauneIIIMvtII \musicTubaMvtII
+%						\timeMvtII \nameStaffIXMvtII
+%						\partCombine \musicPosauneIMvtII \musicPosauneIIMvtII
+%%						\musicPosauneIIMvtII
 %					}
+					\new Staff \with { \layoutPosaune }{
+						\timeMvtII \nameStaffXMvtII
+						\partCombine \musicPosauneIIIMvtII \musicTubaMvtII
+%						\musicTubaMvtII
+					}
 %				>>
 %			>>
 %			\new Staff {

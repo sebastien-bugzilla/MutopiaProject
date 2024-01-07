@@ -50,6 +50,8 @@ dolceconmoltoespress = \markup {\italic {dolce con molto espress.}}
 dolce = \markup {\italic {dolce}}
 mfcrescpocoapoco = \markup {\dynamic mf \italic {cresc. poco a poco}}
 mfespr = \markup {\dynamic mf \italic {espr.}}
+sfppcresc = \markup {\dynamic {sf pp} \italic {cresc.}}
+pcrescpocoapoco = \markup {\dynamic p \italic {cresc. poco a poco}}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}

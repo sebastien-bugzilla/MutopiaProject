@@ -38,13 +38,13 @@ musicTubaMvtII = \relative c {
 	
 % Bars 51 to 55
 	\mark \default
-	R1.*6 
+	R1.*5 
 	
 	
 	
 % Bars 56 to 60
 	
-	
+	R1.
 	b2.~\mp\> b4. bes\!
 	a8\p r r r4 r8 r2.
 	R1.
@@ -83,7 +83,7 @@ musicTubaMvtII = \relative c {
 % Bars 96 to 100
 	gis2 gis~
 	gis1~
-	\after 1*7/8 \! gis\<
+	<< gis {s4\< s s s8 s\!}>>
 	g!1~\ff
 	g
 % Bars 101 to 105
@@ -132,15 +132,15 @@ musicTubaMvtII = \relative c {
 	r2. r8 b~\ff b g4 e8
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		d8\ff r r4 r2
-		R1
-		R1
+		\mmrPos #-6 R1
+		\mmrPos #-6 R1
 		r2 d4\f cis
 % Bars 146 to 150
 		d8\ff r r4 r2
-		R1
-		R
+		\mmrPos #-6 R1
+		\mmrPos #-6 R
 		e2\ff\> d\f
-		cis_\crescmarkup c
+		cis c
 % Bars 151 to 155
 		b4 a gis\ff g
 		fis2 eis

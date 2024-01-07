@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTubaMvtII = \relative c {
+musicPosauneIIIMvtII = \relative c {
 	\clef bass
 	\key b \minor
 %	\transposition a
@@ -38,20 +38,20 @@ musicTubaMvtII = \relative c {
 	
 % Bars 51 to 55
 	\mark \default
-	R1.*6 
-	
-	
-	
+	e2._\pcrescpocoapoco d
+	cis c
+	b4. a gis g
+	fis fis' eis, eis'
 % Bars 56 to 60
+	fis,\ff\>~ fis4\! gis8 a4.\f\> b4 cis8\!
+	\partCombineApart d4.~\mf\> d8\! r r r4 r8 r4 r8
+	R1.*2 \partCombineAutomatic
 	
-	
-	b2.~\mp\> b4. bes\!
-	a8\p r r r4 r8 r2.
 	R1.
 % Bars 61 to 65
-	d,4.\pp~ d8 r r  r2.
-	d4.~ d8 r r r2.
-	d4.(\ppp fis8) r r r2. 
+	a4.\pp~ a8 r r  r2.
+	b4.~ b8 r r r2.
+	\partCombineApart R1. \partCombineAutomatic
 	R1.*2
 	\bar "||"
 % Bars 66 to 70
@@ -81,20 +81,20 @@ musicTubaMvtII = \relative c {
 	
 	gis1_\sfppcresc~
 % Bars 96 to 100
-	gis2 gis~
+	gis2 \partCombineSoloI \omitAdue gis~
 	gis1~
-	\after 1*7/8 \! gis\<
-	g!1~\ff
-	g
+	<<gis {s4\< s s s8 s\!}>> 
+	\partCombineApart g!2~ g8 r r4
+	r4 \tuplet 3/2 4 {a8 a a} a4 a
 % Bars 101 to 105
-	g1~
-	g
-	g~
-	g
-	g~
+	a4~ a8 r r2
+	r4 \tuplet 3/2 4 {a8 a a} a4 g
+	a b cis d
+	cis8-> cis-> \tuplet 3/2 4 {a8 a a} a4 g
+	a b cis d
 % Bars 106 to 110
-	g
-	g2.~ g8 r\fermata \bar "||"
+	cis8-> cis-> r4 r cis8 r
+	r4 cis8 r r4 cis8 \partCombineAutomatic r\fermata \bar "||"
 	\timeTwelveEightC R1.*8
 % Bars 111 to 115
 	
@@ -106,13 +106,13 @@ musicTubaMvtII = \relative c {
 	R1.*6
 % Bars 121 to 125
 	
-	b4.\pp\< a gis g\!
-	fis4.\mp\>~ fis8\! r r r2. \mark \default
+	R1.*2
+	\mark \default
 	R1.*2
 	
 % Bars 126 to 130
-	R1.*2
-	
+	b4.\p\< a gis g\!
+	fis\mf f \tuplet 2/3 4. {e8\> e'} d\p r r
 	R1.*6
 	
 	
@@ -120,26 +120,26 @@ musicTubaMvtII = \relative c {
 	
 	
 	
-	b4.\mp cis d r4 r8
-	b4. cis d r4 r8
+	R1.*4
+	
 % Bars 136 to 140
-	eis,4. fis gis r4 r8
-	eis4. fis gis r4 r8 \mark \default
-	fis4.\f~ fis8 r r f4.~ f8 r r
-	e4.~ e8 r r a4.~ a8 r r
-	R1.
+	
+	\mark \default
+	R1.*3
+	
+	
 % Bars 141 to 145
-	r2. r8 b~\ff b g4 e8
+	r2. r8 \partCombineApart b~\ff b g4 e8
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		d8\ff r r4 r2
-		R1
-		R1
-		r2 d4\f cis
+		d'2\ff\> cis\mf
+		b a\<
+		gis4 g\! fis2\f
+		e2 \partCombineAutomatic d'4\f cis
 % Bars 146 to 150
-		d8\ff r r4 r2
-		R1
-		R
-		e2\ff\> d\f
+		\partCombineApart d2\ff\> cis\mf
+		b a\<
+		gis4 g\! \after 2*3/4 \! fis2\f\< \partCombineAutomatic
+		e'2\ff\> d\f
 		cis_\crescmarkup c
 % Bars 151 to 155
 		b4 a gis\ff g
@@ -151,20 +151,20 @@ musicTubaMvtII = \relative c {
 		a4~\mp\> a8\p r r2
 		R1 \bar "||"
 	}
-	\unsetTimeSignature \time 4/4 gis'1\fff~
-	gis
-	gis~
+	\unsetTimeSignature \time 4/4 \partCombineApart b4. b16 b cis4. b16 ais
+	b8 b r4 r2
+	d4. d16 d e4. d16 cis
 % Bars 161 to 165
-	gis
-	gis~
-	gis
-	\tuplet 3/2 4 {g!8\fff g g  g g g} g->[ g]-> g-> g->
+	d8 d r4 r r8 f
+	e  d cis b d4. f8
+	e d cis b d2 \partCombineAutomatic
+	\tuplet 3/2 4 {d8\fff d d  d d d} d->[ d]-> d-> d->
 	g-> g-> r4 r2
 % Bars 166 to 170
-	R1*2
-	
+	g,2\mf r
+	g\p r
 	R1
-	R \bar "||"
+	g4\pp g r2 \bar "||"
 	\time 12/8 R1.*14
 % Bars 171 to 175
 	
