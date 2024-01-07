@@ -59,6 +59,8 @@ mutainfliii = \markup {"muta in Fl.III"}
 mutagina = \markup {"Muta G in A"}
 mutaaingdinbeind = \markup { "muta A in G, D in B, E in D"}
 mutabinhdine = \markup { "muta B in H, D in E" }
+mutafising = \markup {"muta Fis in G"}
+mutaginfis = \markup {"muta G in Fis"}
 
 twelveEightC = \markup {
 	\concat { 

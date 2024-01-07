@@ -129,16 +129,16 @@
 %						\partCombine \musicPosauneIMvtII \musicPosauneIIMvtII
 %%						\musicPosauneIIMvtII
 %					}
-					\new Staff \with { \layoutPosaune }{
-						\timeMvtII \nameStaffXMvtII
-						\partCombine \musicPosauneIIIMvtII \musicTubaMvtII
-%						\musicTubaMvtII
-					}
+%					\new Staff \with { \layoutPosaune }{
+%						\timeMvtII \nameStaffXMvtII
+%						\partCombine \musicPosauneIIIMvtII \musicTubaMvtII
+%%						\musicTubaMvtII
+%					}
 %				>>
 %			>>
-%			\new Staff {
-%				\timeMvtII \nameStaffXIMvtII \musicPaukenMvtII
-%			}
+			\new Staff {
+				\timeMvtII \nameStaffXIMvtII \musicPaukenMvtII
+			}
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIVMvtII } <<
 %					\new Staff {
