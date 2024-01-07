@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicPosauneIIMvtII = \relative c {
+musicPosauneIMvtII = \relative c {
 	\clef tenor
 	\key b \minor
 %	\transposition a
@@ -40,17 +40,17 @@ musicPosauneIIMvtII = \relative c {
 	\mark \default
 	R1.*2
 	
-	r2. e4.\mf\< e
-	fis2. g\!
+	r2. b'4.\mf\< ais
+	ais2. b\!
 % Bars 56 to 60
-	fis4.\ff\>~ fis8\! r r r2.
+	b4.\ff\>~ b8\! r r r2.
 	R1.*4
 	
 	
 	
 % Bars 61 to 65
-	d4.\pp~ d8 r r r2.
-	d4.~ d8 r r r2.
+	R1.*2
+	
 	R1.*3
 	
 	\bar "||"
@@ -80,17 +80,17 @@ musicPosauneIIMvtII = \relative c {
 	
 	
 	
-	cis1\ff
-	cis8 cis~ cis2.
+	e,1\ff
+	e8 e~ e2.
 % Bars 101 to 105
-	cis1
-	cis8 cis~ cis2 b4
-	cis e e g
-	e8 e r4 r b 
-	cis e e g
+	e1
+	e8 e~ e2 e4
+	e g a b
+	a8 a r4 r e 
+	e g a b
 % Bars 106 to 110
-	e8 e r4 r e8 r
-	r4 e8 r r4 e8 r\fermata \bar "||"
+	a8 a r4 r a8 r
+	r4 a8 r r4 a8 r\fermata \bar "||"
 	\timeTwelveEightC R1.*8
 	
 	
@@ -118,23 +118,23 @@ musicPosauneIIMvtII = \relative c {
 	
 	
 % Bars 141 to 145
-	r8 g\ff~ g fis4 e8~ e b'4 g e8
+	r8 g'\ff~ g fis4 e8~ e \partCombineApart b4 g e8 \partCombineAutomatic
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		fis8\ff r r4 r2
-		b2\mf a\<
-		gis4 g\! fis2\f
-		e r
+		a8\ff r r4 r2
+		\partCombineApart R1
+		r2 gis8-> ais-> b4->
+		e,8-> fis-> g!2-> e4
 % Bars 146 to 150
-		d'8\ff r r4 r2
-		b2\mf a\<
-		gis4 g\! \after 2*3/4 \! fis2\f\<
-		b8\ff r  r4 r2
-		fis1_\fcresc~ \mark #11
+		\noteShift #0.7 fis8 \partCombineAutomatic r r4 r2
+		\partCombineApart R1
+		r2 gis8[-> ais->] b-> d-> \partCombineAutomatic
+		e\ff r  r4 r2
+		\partCombineApart R1 \mark #11
 % Bars 151 to 155
-		fis2 e\ff
-		e g
-		fis4\fff~ fis8 f e4\> d8 e\!
-		g8\f r r4 r2
+		r2 b4 ais \partCombineAutomatic
+		ais2 b
+		\partCombineApart b4~ b8 r g2 
+		b8 \partCombineAutomatic r r4 r2
 		R1*3
 % Bars 156 to 160
 		
@@ -147,13 +147,13 @@ musicPosauneIIMvtII = \relative c {
 	d8 d r4 r r8 f
 	e d cis b d4. f8
 	e d cis b d2
-	\tuplet 3/2 4 {bes8\fff bes bes  bes bes bes} bes->[ bes->] bes-> bes->
-	d-> d-> r4 r2
+	\tuplet 3/2 4 {d8\fff d d  d d d} d->[ d->] d-> d->
+	e-> e-> r4 r2
 % Bars 166 to 170
-	R1*2
-	
+	g,2\mf r
+	bes\p r
 	R1
-	R1 \bar "||"
+	bes4\pp bes r2 \bar "||"
 	\time 12/8 R1.*14
 % Bars 171 to 175
 	
