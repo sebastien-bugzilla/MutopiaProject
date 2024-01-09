@@ -141,12 +141,12 @@
 %			}
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIVMvtII } <<
-					\new Staff {
-						\timeMvtII \nameStaffXIIMvtII \musicViolineIMvtII
-					}
 %					\new Staff {
-%						\timeMvtII \nameStaffXIIIMvtII \musicViolineIIMvtII
+%						\timeMvtII \nameStaffXIIMvtII \musicViolineIMvtII
 %					}
+					\new Staff {
+						\timeMvtII \nameStaffXIIIMvtII \musicViolineIIMvtII
+					}
 %				>>
 %				\new Staff {
 %					\timeMvtII \nameStaffXIVMvtII \musicViolaMvtII
