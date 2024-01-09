@@ -52,6 +52,14 @@ mfcrescpocoapoco = \markup {\dynamic mf \italic {cresc. poco a poco}}
 mfespr = \markup {\dynamic mf \italic {espr.}}
 sfppcresc = \markup {\dynamic {sf pp} \italic {cresc.}}
 pcrescpocoapoco = \markup {\dynamic p \italic {cresc. poco a poco}}
+connoblessa = \markup {\italic {con noblessa}}
+condesiderio = \markup {\italic {con desiderio}}
+semprep = \markup {\italic {sempre} \dynamic p}
+sulg = \markup {sul G.}
+fffconanima = \markup {\dynamic fff \italic {con anima}}
+condesiderioepassione = \markup {\italic {con desiderio e passione}}
+contuttaforza = \markup {\italic {con tutta forza}}
+dolciss = \markup {\italic {dolciss.}}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
