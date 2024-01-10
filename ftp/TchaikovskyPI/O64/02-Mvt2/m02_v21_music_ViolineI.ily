@@ -53,7 +53,7 @@ musicViolineIMvtII = \relative c {
 	<b d>4. q <b gis'>2.
 	<b g'!> <a g'>
 	R1. \mark \default
-	d'4.\p^\connoblessa fis,4( b8) a4.~ a4\! a8(\mp
+	d'4.\p^\connoblezza fis,4( b8) a4.~ a4\! a8(\mp
 % Bars 46 to 50
 	\tuplet 2/3 4. {b8_\crescmarkup\< cis d b)} fis'4.~ fis8 r r
 	\tuplet 2/3 4. {b,8( cis d b)\!} fis'4.\f \tuplet 2/3 4. {e8--( d--)}
