@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicOboeIMvtIII = \relative c {
+musicOboeIIMvtIII = \relative c {
 	\clef treble
 	\key a \major
 %	\transposition a
@@ -16,24 +16,20 @@ musicOboeIMvtIII = \relative c {
 % Bars 11 to 15
 	\mark \default
 	R2.
-	a''2\p~ a8 gis
-	\after 2.*5/6 \! fis2.\<
-	fis4(-> e2)
+	R2.*3
+	
+	
 % Bars 16 to 20
-	r4 r fis'8(\p eis)
+	fis'8(\p gis a gis fis eis)
 	eis4(-> fis2)
-	a,2 cis8( b)
-	e,\p\<^\solo fis gis a b cis\!
-	d4.\> cis8( b ais)\!
+	fis2 a8( b)
+	\noteShift #-0.5 b r r4 r
+	R2.*8
 % Bars 21 to 25
-	cis4( b2)
-	d4.-> cis8( b ais)
-	cis4.\< b8( cis d)
-	fis4. e8( fis gis)\!
-	a(\mf gis fis e) dis-. cis-.
+	
 % Bars 26 to 30
-	dis(\> cis b a) gis-. fis-.
-	cis'( b a gis) fis-. e-.\!
+	
+	
 	R2.*9
 % Bars 31 to 35
 	
@@ -44,7 +40,7 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	r4 r dis8(\mf e) \mark \default
+	r4 r dis,8(\mf e) \mark \default
 	cis'4. b8( a gis)
 % Bars 46 to 50
 	fis4( e2)
@@ -54,12 +50,12 @@ musicOboeIMvtIII = \relative c {
 	a4( gis2)
 % Bars 51 to 55
 	cis4. b8( ais b)
-	e4. e8( gis b) 
-	e,4.\f dis8( cis b)
+	e,4. e8( gis b) 
+	e4.\f dis8( cis b)
 	a4( gis2) \mark \default
-	cis4. b8( ais b
+	cis4. b8\( ais b
 % Bars 56 to 60
-	e4~ e8) r r4
+	e,4~ e8\) r r4
 	R2.*18
 % Bars 61 to 65
 	
@@ -70,31 +66,31 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	r4 d\mp\< eis\!
+	gis4\p\< gis gis\!
 % Bars 76 to 80
-	fis\mf r r 
+	a\mf r r 
 	R2.*2
 	
-	r4 d\mp\< eis\!
-	fis\mf r r \mark \default
+	gis4\p\< gis gis\!
+	a\mf r r \mark \default
 % Bars 81 to 85
 	R2.*2
 	
-	r4 b,8\p\< r dis\! r
-	\after 2*3/4 \! e2\mf\> r4
+	r4 d,8\p\< r dis\! r
+	<< e2 {s8\mf\> s s s\!}>> r4
 	R2.*2
 % Bars 86 to 90
 	
-	r4 b8\p\< r dis\! r
-	\after 2*3/4 \! e2\mf\> r4
+	r4 d8\p\< r dis\! r
+	<< e2 {s8\mf\> s s s\!}>> r4
 	R2.
-	b4~->\p b8 r r4
+	a4~->\p a8 r r4
 % Bars 91 to 95
-	r4 e,\p->( gis8) r
+	R2.
 	R2.*2
 	
-	b4\p->~ b8 r r4
-	r e,4(-> gis8) r \mark \default
+	a4\p->~ a8 r r4
+	\mmrPos #-6 R2. \mark \default
 % Bars 96 to 100
 	R2.*8
 % Bars 101 to 105
@@ -102,82 +98,79 @@ musicOboeIMvtIII = \relative c {
 	
 	\mark \default
 	R2.
-	r4 r ais(\mf->
+	r4 r cis,(\mf->
 % Bars 106 to 110
 	b8) r r4 r
-	r r ais(->\mf
+	r r cis(->\mf
 	b8) r r4 r
 	R2.*5
+	
 % Bars 111 to 115
 	
 	
 	
-	fisis8\p-. fisis-. gis-.\noBeam r cis\mf-. cis-. 
-	b-. r r4 cis8-.\p cis-. 
+	e8\p-. e-. dis-.\noBeam r ais'\mf-. ais-. 
+	gis-. r r4 fisis8-.\p fisis-. 
 % Bars 116 to 120
-	b-. r dis\mp-. dis-. dis-.\noBeam r
-	fisis-. fisis-. gis-.\noBeam r ais-. ais-. \mark \default
-	gis-. r r4 r8 d'\mf-.
-	cis-. a-. a-.\noBeam r gis4->(
+	gis-. r ais\mp-. ais-. gis-.\noBeam r
+	cis-. cis-. b-.\noBeam r ais-. ais-. \mark \default
+	b-. r r4 r8 d\mf-.
+	cis-. a-. a-.\noBeam r b4->(
 	a8) r r4 r8 d-.
 % Bars 121 to 125
-	cis-. a-. a-.\noBeam r gis4->(
+	cis-. a-. a-.\noBeam r b4->(
 	a8) r r4 r8 b-.
-	a-. fis-. fis-.\noBeam r eis4->(
+	a-. fis-. fis-.\noBeam r gis4->(
 	fis8) r r4 r8 b-.
-	a-. fis-. fis-.\noBeam r eis4->(
+	a-. fis-. fis-.\noBeam r gis4->(
 % Bars 126 to 130
 	fis8) r r4 r
 	R2.*2
 	
-	r4 d\mf\< eis\!
-	fis\f r r
+	gis4\mf\< gis gis\!
+	a\f r r
 % Bars 131 to 135
 	R2.*2
 	
-	r4 d\mf\< eis\!
-	fis\f r r
+	gis4\mf\< gis gis\!
+	a\f r r
 	R2.*2
 % Bars 136 to 140
 	
-	r4 b,8\mf\< r dis r\!
-	\after 2*3/4 \! e2\f\> r4
+	r4 d,8\mf\< r dis r\!
+	<< e2 {s8\f\> s s s\!}>> r4
 	R2.*2
 	
 % Bars 141 to 145
-	r4 b8\mf\< r dis r\! \mark \default
+	r4 d8\mf\< r dis r\! \mark \default
 	e\f r r4 r
 	R2.*2
 	
-	cis4._\dolce b8( a gis)
+	cis'4._\dolce b8\( a gis\)
 % Bars 146 to 150
-	fis4( e2)
-	fis4. gis8( a fis)
+	fis4\( e2\)
+	fis4. gis8\( a fis\)
 	b2.
-	dis,4. e8( fis gis)
-	b4( a2)
+	dis,4. e8\( fis gis\)
+	b4\( a2\)
 % Bars 151 to 155
-	cis,4.\< dis8( e fis)\!
-	a4.\> gis8( fis e)\! \mark #11
+	cis,4.\< dis8\( e fis\)\!
+	a4.\> gis8\( fis e\)\! \mark #11
 	R2.
-	a2\p~ a8 gis
-	\after 2.*5/6 \! fis2.\<
+	R2.*3
+	
 % Bars 156 to 160
-	fis4->( e2)
-	r4 r fis'8(\p eis)
+	
+	fis8\p( gis a gis fis eis)
 	eis4(-> fis2)
-	a,2 cis8( b)
-	e,\p\<(^\solo fis gis a b cis)\!
+	fis2 a8( b)
+	\noteShift #-0.5 b r r4 r
 % Bars 161 to 165
-	d4.\> cis8( b ais)\!
-	cis4( b2)
-	d4.-> cis8( b ais)
-	cis4.\< b8( cis d)
-	fis4. e8( fis gis)\!
+	R2.*8
 % Bars 166 to 170
-	a(\mf gis fis e) dis-. cis-. 
-	dis(\> cis b a) gis-. fis-.
-	cis'( b a gis) fis-. e-.\!
+	
+	
+	
 	R2.*9
 % Bars 171 to 175
 	
@@ -190,22 +183,22 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	r4 r dis8(\mf e) \mark \default
+	r4 r dis,8\(\mf e\) \mark \default
 % Bars 186 to 190
-	cis'4. b8( a gis)
-	fis4( e2)
-	fis4. gis8( a fis)
+	cis'4. b8\( a gis\)
+	fis4\( e2\)
+	fis4. gis8\( a fis\)
 	\after 2.*5/6 \! b2.\<
-	e4.\f dis8( cis b)
+	e4.\f dis8\( cis b\)
 % Bars 191 to 195
-	a4( gis2)
-	cis4. b8( ais b)
-	e4. e8( gis b)
-	e,4.\f dis8( cis b)
-	a4( gis2) \mark \default
+	a4\( gis2\)
+	cis4. b8\( ais b\)
+	e,4. e8\( gis b\)
+	e4.\f dis8\( cis b\)
+	a4\( gis2\) \mark \default
 % Bars 196 to 200
-	cis4. b8( ais b
-	e4~ e8) r r4
+	cis4. b8\( ais b
+	e,4~ e8\) r r4
 	R2.*21
 % Bars 201 to 205
 	
@@ -218,9 +211,9 @@ musicOboeIMvtIII = \relative c {
 	
 	\mark \default
 	r4 c\f c
-	c c_\pesante c
+	c c c
 % Bars 221 to 225
-	c c_\crescmarkup c
+	c c c
 	c c c
 	c8 r r4 r
 	R2.*9
@@ -230,8 +223,8 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	r4 c\f c
-	c c_\pesante c
-	c c_\crescmarkup c
+	c c c
+	c c c
 % Bars 236 to 240
 	c c c 
 	c8 r r4 r
@@ -254,8 +247,8 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	r4 a'\ff a
-	a a a
+	r4 f\ff e
+	f e f
 % Bar 266
-	a r r\fermata \bar "|."
+	e r r\fermata \bar "|."
 }
