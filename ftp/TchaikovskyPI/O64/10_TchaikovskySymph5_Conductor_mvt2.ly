@@ -43,12 +43,12 @@
 \include "./02-Mvt2/m02_v17_music_PosauneII_C.ily"
 \include "./02-Mvt2/m02_v18_music_PosauneIII_C.ily"
 \include "./02-Mvt2/m02_v19_music_Tuba_C.ily"
-\include "./02-Mvt2/m02_v20_music_Pauken.ily"
-\include "./02-Mvt2/m02_v21_music_ViolineI.ily"
-\include "./02-Mvt2/m02_v22_music_ViolineII.ily"
-\include "./02-Mvt2/m02_v23_music_Viola.ily"
-\include "./02-Mvt2/m02_v24_music_Violoncell.ily"
-\include "./02-Mvt2/m02_v25_music_Kontrabass.ily"
+\include "./02-Mvt2/m02_v20_music_Pauken_C.ily"
+\include "./02-Mvt2/m02_v21_music_ViolineI_C.ily"
+\include "./02-Mvt2/m02_v22_music_ViolineII_C.ily"
+\include "./02-Mvt2/m02_v23_music_Viola_C.ily"
+\include "./02-Mvt2/m02_v24_music_Violoncell_C.ily"
+\include "./02-Mvt2/m02_v25_music_Kontrabass_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################

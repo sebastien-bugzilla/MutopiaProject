@@ -61,6 +61,8 @@ condesiderioepassione = \markup {\italic {con desiderio e passione}}
 contuttaforza = \markup {\italic {con tutta forza}}
 dolciss = \markup {\italic {dolciss.}}
 moltoespress = \markup {\italic {molto espress.}}
+pesante = \markup {\italic {pesante}}
+
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
@@ -70,6 +72,8 @@ mutaaingdinbeind = \markup { "muta A in G, D in B, E in D"}
 mutabinhdine = \markup { "muta B in H, D in E" }
 mutafising = \markup {"muta Fis in G"}
 mutaginfis = \markup {"muta G in Fis"}
+iiimutainpicc = \markup {\column { \lower #1 "III muta" "in Picc." }}
+mutaingrfl = \markup {"muta in Gr.Fl."}
 
 twelveEightC = \markup {
 	\concat { 

@@ -147,7 +147,7 @@ tempiMvtII = {
 	\tempo "ritenuto molto" % bar 183
 }
 tempiMvtIII = {
-	\tempo "Allegro moderato"
+	\tempo "Allegro moderato" 4 = 138
 }
 tempiMvtIV = {
 	\tempo "Andante maestoso"

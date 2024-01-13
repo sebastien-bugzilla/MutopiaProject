@@ -21,6 +21,7 @@
 \include "./00-Common/TchaikovskySymph5_NameGrandStaff.ily"
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_Cond_Mvt04.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./04-Mvt4/m04_v01_music_FloteI.ily"
 \include "./04-Mvt4/m04_v02_music_FloteII.ily"
 \include "./04-Mvt4/m04_v03_music_FloteIII.ily"
