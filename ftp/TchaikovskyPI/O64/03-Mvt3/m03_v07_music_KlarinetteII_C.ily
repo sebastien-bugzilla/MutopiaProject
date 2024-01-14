@@ -17,13 +17,13 @@ musicKlarinetteIIMvtIII = \relative c {
 	\mark \default
 	R2.*2
 	
-	R2.*2
-	
+	\mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 16 to 20
 	e'2\p e8( f)
 	f4->( e2)
-	a, c8( d)
-	d r r4 r
+	a, \partCombineApart c8( d) 
+	d \partCombineAutomatic r r4 r
 	R2.*8
 % Bars 21 to 25
 	
@@ -92,20 +92,20 @@ musicKlarinetteIIMvtIII = \relative c {
 	e~\mf\> \mark \default
 % Bars 81 to 85
 	e8\p r r4 r
-	r4 r d~\p
-	d8 r d\< r d'\! r
-	\after 2*3/4 \! b2\mf\> r4
+	r4 r d(\p
+	d8) r \once \stemUp \omitFlag d\< r d'\! r
+	<< b2 {s8\mf\> s s s\!}>> r4
 	R2.
 % Bars 86 to 90
-	r4 r d,~\p
-	d8 r d\< r d'\! r
+	r4 r d,(\p
+	d8) r \once \stemUp \omitFlag d\< r d'\! r
 	b2\mf\> g,4\p~
-	g8 r c4->~ c8 r
+	g8 r c4->_( c8) r
 	d4->( a'8) r r4
 % Bars 91 to 95
 	r4 ais,->\p( b8) r
 	r4 r g->\p~
-	g8 r c4->~ c8 r
+	g8 r c4->_( c8) r
 	d4->\p( a'8) r r4
 	r4 ais,4->( b8) r \mark \default
 % Bars 96 to 100
@@ -118,16 +118,16 @@ musicKlarinetteIIMvtIII = \relative c {
 	R2.
 	eis''16(\p fis eis fis g fis dis b a8) r
 	r4 eis16( fis eis fis g\< fis dis b\! \mark \default
-	g8)\mf r r4 a4->\mf~
-	a8 r r4 r 
+	g8)\mf r r4 a4->\mf_(
+	a8) r r4 r 
 % Bars 106 to 110
-	r8 a-.\mf\noBeam a-. fis-. a4~->
-	a8 r r4 r
-	r8 a-.\noBeam a-. fis-. fis4->~
-	fis8 r r4 r
-	r r fis4~->\mf
+	r8 a-.\mf\noBeam a-. fis-. a4_(->
+	a8) r r4 r
+	r8 a-.\noBeam a-. fis-. fis4->_(
+	fis8) r r4 r
+	r r fis4->\mf_(
 % Bars 111 to 115
-	fis8 r r4 r
+	fis8) r r4 r
 	r r eis'16\pp-. fis-. eis-. fis-. 
 	g( fis) e!-. d-. r4 r
 	bis'16\p-. cis-. bis-. cis-. e( d) cis-. b-. r4
@@ -157,13 +157,13 @@ musicKlarinetteIIMvtIII = \relative c {
 	<< e~ {s4\f\> s s8 s\!}>>
 	e8 r r4 r
 % Bars 136 to 140
-	r4 r d~\mf
-	d8 r d\< r d' r\!
+	r4 r d_(\mf
+	d8) r \once \stemUp \omitFlag d\< r d' r\!
 	\after 2*3/4 \! b2\f\> r4
 	R2.
-	r4 r d,4~\mf
+	r4 r d,4_(\mf
 % Bars 141 to 145
-	d8 r d\< r d' r\! \mark \default
+	d8) r \once \stemUp \omitFlag d\< r d'\! r \mark \default
 	b\f r r d, r e 
 	r c r d\noBeam b-.\ff c-.
 	d-.\> e-. f-. g-. a-. b-.\!
@@ -247,9 +247,9 @@ musicKlarinetteIIMvtIII = \relative c {
 	r8 f16(\ff e d c b a g8) r
 	R2. \mark \default
 	r4 aes'\f aes
-	aes g_\pesante g
+	aes g g
 % Bars 221 to 225
-	aes g_\crescmarkup g
+	aes g g
 	a g g
 	aes8 r c,4\ff( d)
 	ees( e f
@@ -264,8 +264,8 @@ musicKlarinetteIIMvtIII = \relative c {
 	r8 f16(\ff e d c b a g8) r
 	R2.
 	r4 aes'4\f aes
-	aes g_\pesante g
-	aes g_\crescmarkup g
+	aes g g
+	aes g g
 % Bars 236 to 240
 	a g g
 	aes8 r c,4(\ff d)
@@ -289,7 +289,7 @@ musicKlarinetteIIMvtIII = \relative c {
 	g4\pp c2->\mf
 	b2->_\dimmarkup a4->~
 	a aes2->
-	\after 2.*5/6 \! g2.\pp\> \mark \default
+	<< g2. {s4\pp\> s s\!}>> \mark \default
 % Bars 256 to 260
 	R2.*8
 % Bars 261 to 265
