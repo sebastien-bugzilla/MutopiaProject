@@ -10,15 +10,15 @@ musicFagotteIIMvtIII = \relative c {
 %	\transposition a
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	r4 r a\p^\ten
-	r r a^\ten
-	r r a^\ten
-	r r gis^\ten
-	r r cis^\ten
+	r4 r a\p
+	r r a
+	r r a
+	r r gis
+	r r cis
 % Bars 6 to 10
-	r r fis,^\ten
-	r r b^\ten
-	r r gis'^\ten
+	r r fis,
+	r r b
+	r r gis'
 	R2.*3
 	
 % Bars 11 to 15
@@ -67,15 +67,15 @@ musicFagotteIIMvtIII = \relative c {
 	b
 % Bars 56 to 60
 	e,4( e'8) r r4
-	R2.*7
+	R2.*6
 	
 	
 	
 % Bars 61 to 65
 	
 	
-	
-	\clef tenor r4 r8 b'(_\pcresc d cis)
+	s8 s s2
+	\clef tenor r4 r8 b'( d cis)
 	ais4.-> b8( d cis)
 % Bars 66 to 70
 	ais4.-> b8( d cis)
@@ -86,14 +86,14 @@ musicFagotteIIMvtIII = \relative c {
 % Bars 71 to 75
 	fis) d'4\( gis,! cis8(
 	a)\) r r4 r \clef bass
-	R2.*3
-	
-	
+	R2.
+	s2.
+	R2.
 % Bars 76 to 80
 	r4 cis,8([\mf-> fis,)] cis\p-. fis-.
-	R2.*3
-	
-	
+	R2.
+	s
+	R
 	r4 cis'8([\mf-> fis,)] cis\p-. fis-. \mark \default
 % Bars 81 to 85
 	R2.*2
@@ -151,14 +151,14 @@ musicFagotteIIMvtIII = \relative c {
 	R2.
 % Bars 126 to 130
 	r8 cis-. cis-. a-. r4 \clef bass
-	R2.*3 
-	
-	
-	r4 cis,8[(\f\> fis,]) cis-.\mf fis-.
+	R2.
+	s
+	R
+	r4 cis,8[(\f-> fis,]) cis-.\mf fis-.
 % Bars 131 to 135
-	R2.*3
-	
-	
+	R2.
+	s
+	R
 	r4 cis'8([->\f fis,]) cis-.\mf fis-.
 	R2.*2
 % Bars 136 to 140
@@ -231,15 +231,15 @@ musicFagotteIIMvtIII = \relative c {
 % Bars 196 to 200
 	b
 	e,4( e'8) r r4
-	R2.*7
+	R2.*6
 	
 	
 % Bars 201 to 205
 	
 	
 	
-	
-	\clef tenor r4 r8 b'(_\pcresc d cis)
+	s8 s s2
+	\clef tenor r4 r8 b'( d cis)
 % Bars 206 to 210
 	ais4.-> b8( d cis)
 	ais4.-> b8( d cis)
@@ -257,9 +257,9 @@ musicFagotteIIMvtIII = \relative c {
 	r4 r e,16(\ff d cis b
 	a8) r r4 r \mark \default
 	r f'\f f
-	f e_\pesante e
+	f e e
 % Bars 221 to 225
-	f e_\crescmarkup e
+	f e e
 	f e e
 	f8 r f,2\ff~
 	f2.~
@@ -274,8 +274,8 @@ musicFagotteIIMvtIII = \relative c {
 	r4 r e,16(\ff d cis b
 	a8) r r4 r
 	r f'\f f
-	f e_\pesante e
-	f e_\crescmarkup e
+	f e e
+	f e e
 % Bars 236 to 240
 	f e e 
 	f8 r f,2\ff~
@@ -299,7 +299,7 @@ musicFagotteIIMvtIII = \relative c {
 	e4\pp a2->\mf
 	gis2->_\dimmarkup fis4->~
 	fis f2->
-	\after 2.*5/6 \! e2.\pp\> \mark \default
+	<< e2. {s4\pp\> s s8 s\!}>> \mark \default
 % Bars 256 to 260
 	R2.*8
 % Bars 261 to 265
