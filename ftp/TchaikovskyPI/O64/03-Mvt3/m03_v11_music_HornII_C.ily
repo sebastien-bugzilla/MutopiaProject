@@ -4,45 +4,41 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicHornIMvtIII = \relative c {
+musicHornIIMvtIII = \relative c {
 	\clef treble
 	\key c \major
 	\transposition f
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	r4 r b''\p^\ten
-	R2.
-	r4 r bes^\ten
-	r r b!^\ten
-	r r b^\ten
+	R2.*5
 % Bars 6 to 10
-	r r cis\p^\ten
-	r r fis,^\ten
-	r r fis^\ten
+	r4 r gis''\p
+	r r cis,
+	r r b
 	R2.*3
 	
 % Bars 11 to 15
 	\mark \default
-	r4 b\p b
-	r b b
-	fis(\< ais cis)\!
-	fis2\> fis4\p
+	r4 e\p gis
+	r e e
+	r cis\< cis\!
+	r dis\> dis\!
 % Bars 16 to 20
-	R2.*2
-	
-	e,2\p r4
-	r b'8 r r4
+	gis,\p gis r
+	r gis( gis')
+	cis,2\p r4
+	r dis8 r r4
 	R2.*8
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
 	
-	\sonsbouchesgestopft fis2\p\startTextSpan r4
-	b2 r4
-	fis2 r4
+	\sonsbouchesgestopft eis2\p\startTextSpan r4
+	dis2 r4
+	eis2 r4
 % Bars 31 to 35
-	b2\stopTextSpan r4
+	dis2\stopTextSpan r4
 	R2.*5
 	
 	
@@ -54,10 +50,10 @@ musicHornIMvtIII = \relative c {
 	
 	
 % Bars 41 to 45
-	R2.*4
-	
-	
-	\mark \default
+	dis2.\p
+	gis,
+	\after 2.*5/6 \! e'\<
+	fis4\mf~ fis8 r r4\mark \default
 	R2.*6
 % Bars 46 to 50
 	
@@ -76,34 +72,34 @@ musicHornIMvtIII = \relative c {
 	
 % Bars 71 to 75
 	
-	r4 e8\f r r4
+	r4 gis8\f r r4
 	R2.
-	R
-	c2.\p\<
+	r4 fis2~
+	\stemUp fis2.\p\<
 % Bars 76 to 80
-	\after 2.*5/6 \p cis\mf\>
+	\after 2.*5/6 \p e\mf\> \stemNeutral
 	R2.
-	R
-	c2.\p\<
-	cis\mf\>~ \mark \default
+	r4 \stemDown fis2\p~
+	\stemUp fis2.\p\<
+	e\mf\>~ \mark \default
 % Bars 81 to 85
-	cis8\p r r4 r
-	R2.
-	r4 r fis,8\mp r
-	fis2\mf\> r4\!
+	\omitFlag e8\p r r4 r
+	r4 r \stemDown cis~\p
+	cis8 r dis\< r e\! r
+	<< \once \stemUp dis2 {s8\mf\> s s s\!}>> r4
 	R2.
 % Bars 86 to 90
-	R
-	r4 r fis8\mp r
-	fis2\mf\> r4\!
+	r4 r cis~\p
+	cis8 r dis\< r e8\! r
+	<< \once \stemUp dis2 {s8\mf\> s s s\!}>> r4
 	R2.
-	r4 r fis->\p(
+	r4 r bes'->\p~
 % Bars 91 to 95
-	fis'8) r r4 r
+	bes8 r r4 r
 	R2.*2
 	
-	r4 r fis,\p->(
-	fis'8) r r4 r \mark \default
+	r4 r bes\p->~
+	bes8 r r4 r \mark \default
 % Bars 96 to 100
 	R2.*8
 % Bars 101 to 105
@@ -111,84 +107,84 @@ musicHornIMvtIII = \relative c {
 	
 	\mark \default
 	R2.
-	r8 cis-.\mp\noBeam cis-. cis-. r4
+	r8 cis,-.\mp\noBeam cis-. bes'-. r4
 % Bars 106 to 110
 	R2.
-	r8 cis-.\noBeam cis-. cis-. r4
+	r8 cis,-.\noBeam cis-. bes'-. r4
 	R2.
-	R2.*3
-	
+	r4 r gis->\mf(
+	fis8) r r4 r
 % Bars 111 to 115
-	
-	r4 r gis8-.\pp gis-.
-	fis-. r gis-. gis-. fis-.\noBeam r
-	r4 r bes8-.\mp bes-.
+	r r \once \stemUp gis->\mp(
+	fis8) r r4 bes,8-.\pp bes-.
 	bes-. r r4 r
+	r4 r ees8-.\mp ees-.
+	ees-. r r4 r
 % Bars 116 to 120
 	R2.*2
 	\mark \default
-	r4 r dis4->\mp(
+	r4 r fis4->\mp(
 	e8) r r4 r
-	r4 r dis(->
+	r4 r fis(->
 % Bars 121 to 125
 	e8) r r4 r
-	R2.*4
-	
-	
-	
+	r4 r dis(->\mf
+	cis8) r r4 r
+	r r dis->(
+	cis8) r r4 r
 % Bars 126 to 130
 	R2.*2
 	
-	R2.
-	c\mf\<
-	\after 2.*5/6 \! cis\f\>
+	r4 fis2\mf~
+	fis2.\<
+	\once \stemUp \after 2.*5/6 \! e\f\>
 % Bars 131 to 135
 	R2.
-	R
-	c\mf\<
-	\after 2.*5/6 \! cis\f\>~
-	cis8 r r4 r
+	r4 fis2\mf~
+	fis2.\<
+	\once \stemUp \after 2.*5/6 \! e\f\>~
+	\once \stemUp \omitFlag e8 r r4 r
 % Bars 136 to 140
+	r4 r cis~\mf
+	cis8 r dis\< r e8\! r
+	<< dis2 {s8\f\> s s s\!}>> r4
 	R2.
-	r4 r fis,8\mf r
-	fis2\f\> r4\!
-	R2.
-	R
+	r4 r cis~\mf
 % Bars 141 to 145
-	r4 r fis8\mf r \mark \default
-	fis\f r r4 r
+	cis8 r dis\< r e\! r \mark \default
+	dis\f r r4 r
 	R2.
-	r4 r b4->\p~
-	b8\pp r r4 r
+	b4->\mf\> fis'-> \stemUp b,4->\p~
+	\omitFlag b8\pp \stemNeutral r r4 r
 % Bars 146 to 150
 	R2.
-	R2.*2
-	
+	g'!\p(
+	b8) r r4 r
 	R2.*4
 	
 % Bars 151 to 155
 	
 	\mark #11
-	r4 b\p b
-	r b b
-	fis(\< ais cis)\!
+	r4 e,\p gis
+	r e e
+	r \stemDown cis\< cis\!
 % Bars 156 to 160
-	fis,2\> fis4\p
-	R2.*2
-	
-	e2\p r4
-	r b'8 r r4
+	r dis\> dis\!
+	gis,\p gis r
+	r gis( gis')
+	cis,2\p r4
+	r dis8 r r4
 % Bars 161 to 165
 	R2.*8
 % Bars 166 to 170
 	
 	
 	
-	\sonsbouchesgestopft fis2\p\startTextSpan r4
-	b2 r4
+	\sonsbouchesgestopft e2\p\startTextSpan r4
+	dis2 r4
 % Bars 171 to 175
-	fis2 r4
-	b2\stopTextSpan r4
+	e2 r4
+	dis2\stopTextSpan r4
 	R2.*5
 	
 	
@@ -200,10 +196,10 @@ musicHornIMvtIII = \relative c {
 	
 % Bars 181 to 185
 	
-	R2.*4
-	
-	
-	\mark \default
+	\sonsbouchesgestopft dis2.\p\startTextSpan
+	gis,
+	e'
+	fis4~ fis8\stopTextSpan r r4 \mark \default
 % Bars 186 to 190
 	R2.*6
 % Bars 191 to 195
@@ -229,35 +225,35 @@ musicHornIMvtIII = \relative c {
 % Bars 216 to 220
 	d!\<
 	dis
-	\after 2.*5/6 \! e\mf\<~ \mark \default
+	<< e~ {s4\mf\< s s8 s\!}>> \mark \default
 	e8 r e4\f e
-	e f_\pesante f
+	e f f
 % Bars 221 to 225
-	e f_\crescmarkup f
+	e f f
 	e f f
 	e8 r r4 r
 	R2.*2
 	
 % Bars 226 to 230
-	e2\p dis4
-	e r r
+	gis2\p a4
+	gis r r
 	d2.\p
 	dis
 	d!\<
 % Bars 231 to 235
 	dis
-	\after 2.*5/6 \! e\mf\<~
+	<< e~ {s4\mf\< s s8 s\!}>>
 	e8 r e4\f e
-	e f_\pesante f
-	e f_\crescmarkup f
+	e f f
+	e f f
 % Bars 236 to 240
 	e f f
 	e8 r r4 r
 	R2.*2
 	
-	e2\p dis4 \mark \default
+	gis2\p a4 \mark \default
 % Bars 241 to 245
-	e4\pp r r
+	gis4\pp r r
 	R2.*14
 % Bars 246 to 250
 	

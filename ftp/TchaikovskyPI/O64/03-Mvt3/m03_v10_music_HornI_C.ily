@@ -25,11 +25,11 @@ musicHornIMvtIII = \relative c {
 	\mark \default
 	r4 b\p b
 	r b b
-	fis(\< ais cis)\!
+	\partCombineApart fis(\< ais cis)\!
 	fis2\> fis4\p
 % Bars 16 to 20
 	R2.*2
-	
+	\partCombineAutomatic
 	e,2\p r4
 	r b'8 r r4
 	R2.*8
@@ -78,32 +78,32 @@ musicHornIMvtIII = \relative c {
 	
 	r4 e8\f r r4
 	R2.
-	R
-	c2.\p\<
+	\partCombineApart R
+	c2.\p
 % Bars 76 to 80
-	\after 2.*5/6 \p cis\mf\>
+	cis \partCombineAutomatic
 	R2.
-	R
+	\partCombineApart R
 	c2.\p\<
-	cis\mf\>~ \mark \default
+	cis\!~ \mark \default
 % Bars 81 to 85
-	cis8\p r r4 r
-	R2.
-	r4 r fis,8\mp r
-	fis2\mf\> r4\!
+	cis8 \partCombineAutomatic r r4 r
+	\partCombineApart R2.
+	r4 r fis,8\mp \once \partCombineAutomatic r
+	fis2 \partCombineAutomatic r4 
 	R2.
 % Bars 86 to 90
-	R
-	r4 r fis8\mp r
-	fis2\mf\> r4\!
+	\partCombineApart R
+	r4 r fis8\mp \once \partCombineAutomatic r
+	fis2 \partCombineAutomatic r4
 	R2.
-	r4 r fis->\p(
+	r4 r \partCombineApart fis->(
 % Bars 91 to 95
-	fis'8) r r4 r
+	fis'8) \partCombineAutomatic r r4 r
 	R2.*2
 	
-	r4 r fis,\p->(
-	fis'8) r r4 r \mark \default
+	r4 r \partCombineApart fis,->(
+	fis'8) \partCombineAutomatic r r4 r \mark \default
 % Bars 96 to 100
 	R2.*8
 % Bars 101 to 105
@@ -116,12 +116,12 @@ musicHornIMvtIII = \relative c {
 	R2.
 	r8 cis-.\noBeam cis-. cis-. r4
 	R2.
-	R2.*3
+	R2.*2
 	
 % Bars 111 to 115
-	
-	r4 r gis8-.\pp gis-.
-	fis-. r gis-. gis-. fis-.\noBeam r
+	r4 r \partCombineApart s4
+	r4 \partCombineAutomatic r gis8-.\pp gis-.
+	fis-. r \partCombineApart gis-. gis-. fis-.\noBeam r \partCombineAutomatic
 	r4 r bes8-.\mp bes-.
 	bes-. r r4 r
 % Bars 116 to 120
@@ -139,27 +139,27 @@ musicHornIMvtIII = \relative c {
 % Bars 126 to 130
 	R2.*2
 	
-	R2.
-	c\mf\<
-	\after 2.*5/6 \! cis\f\>
+	\partCombineApart R2.
+	<< c {s4\mf\< s s8 s\!}>>
+	cis2. \partCombineAutomatic
 % Bars 131 to 135
-	R2.
-	R
-	c\mf\<
-	\after 2.*5/6 \! cis\f\>~
-	cis8 r r4 r
+	R2. 
+	\partCombineApart R
+	<< c {s4\mf\< s s8 s\!}>>
+	cis2.~
+	cis8 \partCombineAutomatic r r4 r
 % Bars 136 to 140
+	\partCombineApart R2.
+	r4 r fis,8\mf \partCombineAutomatic r
+	\partCombineChords << fis2 {s8\f\> s s s\!}>> r4 \partCombineAutomatic
 	R2.
-	r4 r fis,8\mf r
-	fis2\f\> r4\!
-	R2.
-	R
+	\partCombineApart R
 % Bars 141 to 145
-	r4 r fis8\mf r \mark \default
+	r4 r fis8\mf \partCombineAutomatic r \mark \default
 	fis\f r r4 r
 	R2.
-	r4 r b4->\p~
-	b8\pp r r4 r
+	\partCombineApart r4 r b4~
+	b8 \partCombineAutomatic r r4 r
 % Bars 146 to 150
 	R2.
 	R2.*2
@@ -171,10 +171,10 @@ musicHornIMvtIII = \relative c {
 	\mark #11
 	r4 b\p b
 	r b b
-	fis(\< ais cis)\!
+	\partCombineApart fis(\< ais cis)\!
 % Bars 156 to 160
 	fis,2\> fis4\p
-	R2.*2
+	R2.*2 \partCombineAutomatic
 	
 	e2\p r4
 	r b'8 r r4
@@ -229,7 +229,7 @@ musicHornIMvtIII = \relative c {
 % Bars 216 to 220
 	d!\<
 	dis
-	\after 2.*5/6 \! e\mf\<~ \mark \default
+	<< e~ {s4\mf\< s s8 s\!}>> \mark \default
 	e8 r e4\f e
 	e f_\pesante f
 % Bars 221 to 225
@@ -246,7 +246,7 @@ musicHornIMvtIII = \relative c {
 	d!\<
 % Bars 231 to 235
 	dis
-	\after 2.*5/6 \! e\mf\<~
+	<< e~ {s4\mf\< s s8 s\!}>>
 	e8 r e4\f e
 	e f_\pesante f
 	e f_\crescmarkup f
