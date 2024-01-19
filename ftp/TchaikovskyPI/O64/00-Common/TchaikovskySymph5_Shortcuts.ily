@@ -176,7 +176,11 @@ changeStaffName = #(define-music-function
 	#}
 )
 
-sonsbouchesgestopft = \once \override TextSpanner.bound-details.left.text = \markup {"sons bouchés/gestopft"}
+sonsbouchesgestopft = {
+	\once \override TextSpanner.bound-details.left.text = 
+		\markup {"sons bouchés/gestopft"}
+	\once \override TextSpanner.bound-details.left-broken.text = ""
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -4,45 +4,44 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicHornIIIMvtIII = \relative c {
+musicHornIVMvtIII = \relative c {
 	\clef treble
 	\key c \major
 	\transposition f
-	\section \sectionLabel Valse
 % Bars 1 to 5
-	r4 r gis''\p^\ten
-	r r gis^\ten
-	r r g!^\ten
-	r r fis^\ten
-	r r dis^\ten
+	r4 r b'\p
+	r r b
+	r r bes
+	r r b!
+	r r b
 % Bars 6 to 10
-	r r e^\ten
+	r r gis
 	R2.*5
 	
 	
 	
 % Bars 11 to 15
 	\mark \default
-	r4 gis\p gis
-	r gis gis
-	R2.*2
-	
+	r4 b(\p b')
+	r b,( e)
+	r bes(\< e)\!
+	r b!(\> fis'\!)
 % Bars 16 to 20
 	R2.
-	R
-	r4 fis\p r
-	fis8 r fis r r4
+	cis4\p cis cis
+	r4 fis,\p r
+	fis8 r b r r4
 	R2.*8
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
 	
-	\sonsbouchesgestopft fis2\p\startTextSpan r4
-	b2 r4
-	fis2 r4
+	\sonsbouchesgestopft e2\p\startTextSpan r4
+	dis2 r4
+	e2 r4
 % Bars 31 to 35
-	b2\stopTextSpan r4
+	dis2\stopTextSpan r4
 	R2.*5
 	
 	
@@ -54,10 +53,10 @@ musicHornIIIMvtIII = \relative c {
 	
 	
 % Bars 41 to 45
-	R2.*4
-	
-	
-	\mark \default
+	\sonsbouchesgestopft dis2.\p\startTextSpan
+	gis,
+	\after 2.*5/6 \! e'\<
+	b4\mf~ b8\stopTextSpan r r4 \mark \default
 	R2.*6
 % Bars 46 to 50
 	
@@ -76,7 +75,7 @@ musicHornIIIMvtIII = \relative c {
 	
 % Bars 71 to 75
 	
-	r4 b,8\f r r4
+	r4 e8\f r r4
 	R2.*8
 % Bars 76 to 80
 	
@@ -91,13 +90,13 @@ musicHornIIIMvtIII = \relative c {
 	
 	
 	
-	r4 r fis->\p~
+	r4 r e->\p~
 % Bars 91 to 95
-	fis8 r r4 r
+	e8 r r4 r
 	R2.*2
 	
-	r4 r fis->\p~
-	fis8 r r4 r \mark \default
+	r4 r e->\p~
+	e8 r r4 r \mark \default
 % Bars 96 to 100
 	R2.*8
 % Bars 101 to 105
@@ -105,31 +104,31 @@ musicHornIIIMvtIII = \relative c {
 	
 	\mark \default
 	R2.
-	r4 r b(->\mp
+	R2.*4
 % Bars 106 to 110
-	bes8) r r4 r
-	r r b!(\mp->
-	bes8) r r4 r
-	r8 bes-.\noBeam\mp bes-. bes-. r4
+	
+	
+	
+	r8 bes-.\noBeam\mp bes-. ges'-. r4
 	R2.
 % Bars 111 to 115
-	r8 bes-.\noBeam bes-. bes-. r4
-	r4 r f8\pp-. f-.
-	ees-. r bes'-.\pp bes-. bes-.\noBeam r
+	r8 bes,-.\noBeam bes-. ges'-. r4
+	R2.
+	r4 bes,8-.\pp bes-. bes-.\noBeam r
 	R2.*4
 	
 % Bars 116 to 120
 	
 	\mark \default
-	r4 r b->\mp~
-	b8 r r4 r
-	r r b->~
+	R2.*4
+	
+	
 % Bars 121 to 125
-	b8 r r4 r
-	r r b(\mf->
-	cis8) r r4 r
-	r r bis(->
-	cis8) r r4 r
+	
+	r4 r gis'\mf->(
+	gis8) r r4 r
+	r r gis->(
+	gis8) r r4 r
 % Bars 126 to 130
 	R2.*16
 % Bars 131 to 135
@@ -144,26 +143,26 @@ musicHornIIIMvtIII = \relative c {
 % Bars 151 to 155
 	
 	\mark #11
-	r4 gis\p gis
-	r gis gis
-	R2.*2
+	r4 b,(\p b')
+	r b,( e)
+	r4 bes(\< e)\!
 % Bars 156 to 160
-	
+	r b!(\> fis')\!
 	R2.
-	R
-	r4 fis\p r
-	fis8 r fis r r4
+	cis4\p cis cis
+	r4 fis,\p r
+	fis8 r b r r4
 % Bars 161 to 165
 	R2.*8
 % Bars 166 to 170
 	
 	
 	
-	\sonsbouchesgestopft fis2\p\startTextSpan r4
-	b2 r4
+	\sonsbouchesgestopft e2\p\startTextSpan r4
+	dis2 r4
 % Bars 171 to 175
-	fis2 r4
-	b2\stopTextSpan r4
+	e2 r4
+	dis2\stopTextSpan r4
 	R2.*5
 	
 	
@@ -171,12 +170,14 @@ musicHornIIIMvtIII = \relative c {
 	
 	\mark \default
 	R2.*4
+	
+	
 % Bars 181 to 185
 	
-	R2.*4
-	
-	
-	\mark \default
+	\sonsbouchesgestopft dis2.\p\startTextSpan
+	gis,
+	e'
+	b4~ b8\stopTextSpan r r4 \mark \default
 % Bars 186 to 190
 	R2.*6
 % Bars 191 to 195
@@ -200,16 +201,16 @@ musicHornIIIMvtIII = \relative c {
 	
 	\mark \default
 	r4 c\f c
-	c b_\pesante b
+	c b b
 % Bars 221 to 225
-	c b_\crescmarkup b
+	c b b
 	c b b
 	c8 r r4 r
 	R2.*2
 	
 % Bars 226 to 230
-	b2\p b4
-	b r r
+	e2\p dis4
+	e r r
 	R2.*5
 	
 	
@@ -217,16 +218,16 @@ musicHornIIIMvtIII = \relative c {
 	
 	
 	r4 c\f c
-	c b_\pesante b
-	c b_\crescmarkup b
+	c b b
+	c b b
 % Bars 236 to 240
 	c b b
 	c8 r r4 r
 	R2.*2
 	
-	b2\p b4 \mark \default
+	e2\p dis4 \mark \default
 % Bars 241 to 245
-	b\pp r r
+	e\pp r r
 	R2.*14
 % Bars 246 to 250
 	
@@ -242,8 +243,8 @@ musicHornIIIMvtIII = \relative c {
 	
 	
 	
-	r4 c\ff b
-	c b c
+	r4 fis\ff gis
+	fis gis fis
 % Bar 266
-	b r r\fermata \bar "|."
+	gis r r\fermata \bar "|."
 }

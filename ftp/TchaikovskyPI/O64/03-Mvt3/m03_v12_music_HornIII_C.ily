@@ -23,13 +23,13 @@ musicHornIIIMvtIII = \relative c {
 	
 % Bars 11 to 15
 	\mark \default
-	r4 gis\p gis
-	r gis gis
-	R2.*2
+	r4 \partCombineApart gis gis
+	\once \partCombineAutomatic r gis gis
+	R2.*2 \partCombineAutomatic
 	
 % Bars 16 to 20
 	R2.
-	R
+	\partCombineApart R \partCombineAutomatic
 	r4 fis\p r
 	fis8 r fis r r4
 	R2.*8
@@ -114,8 +114,8 @@ musicHornIIIMvtIII = \relative c {
 	R2.
 % Bars 111 to 115
 	r8 bes-.\noBeam bes-. bes-. r4
-	r4 r f8\pp-. f-.
-	ees-. r bes'-.\pp bes-. bes-.\noBeam r
+	\partCombineApart r4 r f8\pp-. f-.
+	ees-. r \partCombineAutomatic bes'-.\pp bes-. bes-.\noBeam r
 	R2.*4
 	
 % Bars 116 to 120
@@ -144,13 +144,13 @@ musicHornIIIMvtIII = \relative c {
 % Bars 151 to 155
 	
 	\mark #11
-	r4 gis\p gis
+	r4 gis gis
 	r gis gis
-	R2.*2
+	\partCombineApart R2.*2
 % Bars 156 to 160
-	
+	\partCombineAutomatic
 	R2.
-	R
+	\partCombineApart R \partCombineAutomatic
 	r4 fis\p r
 	fis8 r fis r r4
 % Bars 161 to 165
