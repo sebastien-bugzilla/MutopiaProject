@@ -114,15 +114,15 @@
 %%						\musicHornIVMvtIII
 %					}
 %				>>
-				\new Staff {
-					\timeMvtIII \nameStaffVIIIMvtIII
-					\partCombine \musicTrompetenIMvtIII \musicTrompetenIIMvtIII
-%					\musicTrompetenIIMvtIII
-				}
+%				\new Staff {
+%					\timeMvtIII \nameStaffVIIIMvtIII
+%					\partCombine \musicTrompetenIMvtIII \musicTrompetenIIMvtIII
+%%					\musicTrompetenIIMvtIII
+%				}
 %			>>
-%			\new Staff {
-%				\timeMvtIII \nameStaffIXMvtIII \musicPaukenMvtIII
-%			}
+			\new Staff {
+				\timeMvtIII \nameStaffIXMvtIII \musicPaukenMvtIII
+			}
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
 %					\new Staff {
