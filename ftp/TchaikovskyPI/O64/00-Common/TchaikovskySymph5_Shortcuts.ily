@@ -62,7 +62,8 @@ contuttaforza = \markup {\italic {con tutta forza}}
 dolciss = \markup {\italic {dolciss.}}
 moltoespress = \markup {\italic {molto espress.}}
 pesante = \markup {\italic {pesante}}
-
+dolcecongrazia = \markup {\italic {dolce con grazia}}
+pspiccatoassai = \markup {\dynamic p \italic {spiccato assai}}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
