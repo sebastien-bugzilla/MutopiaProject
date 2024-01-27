@@ -150,7 +150,25 @@ tempiMvtIII = {
 	\tempo "Allegro moderato" 4 = 138
 }
 tempiMvtIV = {
-	\tempo "Andante maestoso"
+	\tempo "Andante maestoso" 4 = 80
+	s1*57
+	\tempo "Allegro vivace (alla breve)" 2 = 120  % bar 58
+	s1*238
+	\tempo "Poco più animato" % bar 296
+	s1*16
+	\tempo "Tempo I" % bar 312
+	s1*114
+	\tempo "Poco meno mosso" % bar 426
+	s1*10
+	\tempo "Molto vivace" % bar 436
+	s1*32
+	\tempo "riten. molto" % bar 468
+	s1*4
+	\tempo "Moderato assai e molto maestoso" % bar 472
+	s1*32
+	\tempo "Presto" 2 = 144 % bar 504
+	s1*42
+	\tempo "Molto meno mosso" 2. = 96 % bar 546
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #

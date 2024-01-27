@@ -64,6 +64,12 @@ moltoespress = \markup {\italic {molto espress.}}
 pesante = \markup {\italic {pesante}}
 dolcecongrazia = \markup {\italic {dolce con grazia}}
 pspiccatoassai = \markup {\dynamic p \italic {spiccato assai}}
+pmamarcato = \markup {\dynamic p \italic {ma marcato}}
+unpocodim = \markup {\italic {un poco dim.}}
+semprefff = \markup {\italic {sempre} \dynamic fff}
+
+
+sfff = #(make-dynamic-script (markup #:dynamic "sfff"))
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
