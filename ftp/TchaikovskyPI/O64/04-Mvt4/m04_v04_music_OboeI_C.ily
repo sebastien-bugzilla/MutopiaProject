@@ -61,8 +61,8 @@ musicOboeIMvtIV = \relative c {
 	r4 << b,,2.~ {s8\p\< s s s s\> s }>>
 	b8\! r r4 r2
 	r4 << b2.~ {s8\pp\< s s s s\> s}>>
-	b8\! r e4(\< dis e~\!
-	e\>~ e8\!) r r2
+	b8\! r \partCombineApart e4( dis e~
+	e~ e8) \partCombineAutomatic r r2
 % Bars 56 to 60
 	R1*2
 	\bar "||"
@@ -113,8 +113,8 @@ musicOboeIMvtIV = \relative c {
 	R1*2
 % Bars 96 to 100
 	
-	<< b1\sf~ {s2 s4\> s8 s\!}>> \mark \default
-	b8\p r r4 r2
+	<< b1\sf( {s2 s4\> s8 s\!}>> \mark \default
+	b8)\p r r4 r2
 	R1*7
 % Bars 101 to 105
 	
@@ -135,26 +135,26 @@ musicOboeIMvtIV = \relative c {
 	fis\< g a b
 	cis dis\! e\fff e
 	r e r b
-	r e, r2
+	\partCombineApart r e, r2 \partCombineAutomatic
 % Bars 121 to 125
 	R1*7
 % Bars 126 to 130
 	
 	\mark \default
-	e'1_\mfespr~
+	\partCombineApart e'1_\mfespr~
 	e2 d8( cis b a)
 	e'2->( d~
 % Bars 131 to 135
-	d) d\<
-	g g\!
-	g->(\f fis)
-	fis2.->\mf( e4)
+	d) d
+	g g
+	g->( fis)
+	fis2.->( e4)
 	d( cis b a)
 % Bars 136 to 140
-	e'1\<~
-	e2 d8( cis b a)\!
-	e'2\f( d~
-	d4) r d2\mf
+	e'1~
+	e2 d8( cis b a)
+	e'2( d~
+	d4) \once \partCombineAutomatic r d2
 	cis cis
 % Bars 141 to 145
 	cis1
@@ -163,7 +163,7 @@ musicOboeIMvtIV = \relative c {
 	e2 e
 	fis fis
 % Bars 146 to 150
-	gis4(\ff a fis d)
+	gis4( a fis d) \partCombineAutomatic
 	cis2( b4) r \mark \default
 	R1
 	g!1\mf\<~
@@ -196,7 +196,7 @@ musicOboeIMvtIV = \relative c {
 	g\ff d
 	r2 c8\ff r r4
 	r2 c8 r r4
-	r8 e( fis! f e d c d)
+	r8 \partCombineApart e( fis! f e d c d) \partCombineAutomatic
 	e( d c b) a( g fis! f
 % Bars 176 to 180
 	e) r r4 e'8 r r4
@@ -215,13 +215,13 @@ musicOboeIMvtIV = \relative c {
 	g( a b4) b8( cis dis e)
 	r2 c,8\ff r r4
 	r2 c8 r r4
-	r8 e( fis! f e d c d)
+	r8 \partCombineApart e( fis! f e d c d) \partCombineAutomatic
 % Bars 191 to 195
 	e( d c b) a( g fis! f
 	e) r r4 e'8 r r4
 	r2 f8 r g, f
 	g r c( d c b bes a)
-	g( fis f e) e'2
+	\partCombineApart g( fis f e) \partCombineAutomatic e'2
 % Bars 196 to 200
 	d c
 	b a
@@ -235,11 +235,11 @@ musicOboeIMvtIV = \relative c {
 	e c' b c
 	b a g fis
 % Bars 206 to 210
-	e e,8\ff e a a fis fis
+	e \partCombineApart e,8 e a a fis fis
 	g g e e fis fis d d
 	e4 e8 e a a fis fis 
 	g g e e fis fis d d \mark \default
-	e4 c'\fff c c
+	e4 \partCombineAutomatic c'\fff c c
 % Bars 211 to 215
 	b c c c
 	e c c c
@@ -257,16 +257,16 @@ musicOboeIMvtIV = \relative c {
 	R1*2
 	
 	r4 bes'\ff a bes
-	g e dis e
+	g \partCombineApart e dis e \partCombineAutomatic
 % Bars 226 to 230
 	r bes'\fff bes bes
 	g d' d d
 	cis g' g g
 	f bes bes bes \mark \default
-	e,2 dis4 e
+	\partCombineApart e,2 dis4 e
 % Bars 231 to 235
-	e2 e
-	e ais,
+	e2 \partCombineAutomatic e
+	e ais,!
 	e r
 	R1*8
 % Bars 236 to 240
@@ -301,17 +301,17 @@ musicOboeIMvtIV = \relative c {
 	bes->\ff aes~
 	aes1_\dimmarkup~
 	aes~
-	\after 1*7/8 \! aes\>
+	<< aes {s4\> s s s8 s\!}>>
 	r2 gis\mf
 % Bars 271 to 275
 	gis gis
 	gis g
 	g g
-	\after 1*4/8 <>_\dimmarkup g1~\sf
+	\partCombineChords \after 1*4/8 <>_\dimmarkup g1~\sf
 	g~
 % Bars 276 to 280
 	g~
-	\after 1*7/8 \! g\>
+	<< g {s4\> s s s8 s\!}>> \partCombineAutomatic
 	r2 g\p
 	g g
 	g fis
@@ -326,9 +326,9 @@ musicOboeIMvtIV = \relative c {
 	e d
 	d1->(
 	c)
-	r2 c\pp
+	r2 \stemUp c\pp 
 % Bars 291 to 295
-	c b
+	c \stemNeutral b
 	b1->\((
 	a)~
 	a~
@@ -385,8 +385,8 @@ musicOboeIMvtIV = \relative c {
 	fis4->) r r2
 	R1*2
 	
-	\after 1*7/8 \! b1\mf\>~ \mark \default
-	b8\p r r4 r2
+	\after 1*7/8 \! b1\mf\>( \mark \default
+	b8)\p r r4 r2
 % Bars 341 to 345
 	R1*7
 % Bars 346 to 350
@@ -404,40 +404,40 @@ musicOboeIMvtIV = \relative c {
 % Bars 356 to 360
 	a, r b,4\ff cis d!
 	e fis g a
-	b4. a'8( g4.) fis8(
+	\once \partCombineApart b4. a'8( g4.) fis8(
 	e4.) dis8( c!4.) b8
 	e r cis,4\ff dis e
 % Bars 361 to 365
 	fis g a b
-	cis4. b'8( a4.) gis8(
+	\once \partCombineApart cis4. b'8( a4.) gis8(
 	fis4.) eis8( d!4.) cis8
-	fis r dis,4 eis fis
+	fis r \partCombineApart dis,4 eis fis
 	gis a b cis
 % Bars 366 to 370
-	dis4. cis'8( b4.) ais8(
+	dis4. \partCombineAutomatic cis'8( b4.) ais8(
 	gis4.) fisis8( e!4.) dis8 \mark \default
-	gis r dis'2\fff dis4~
+	gis r dis'2\fff dis!4~
 	dis gis,2 dis4~
-	dis gis, r dis
+	dis gis, r \once \partCombineApart dis!
 % Bars 371 to 375
 	R1*7
 % Bars 376 to 380
 	
 	
-	gis'1~\mf
-	gis2 fis8( eis dis cis)
+	\partCombineApart gis'1~
+	gis2 fis8( eis dis cis!)
 	gis'2->( fis~
 % Bars 381 to 385
-	fis) fis\<
-	b b\!
-	b(\f-> ais)
-	ais2.(->\mf gis4)
-	fis4( eis dis cis)
+	fis) fis
+	b b
+	b(-> ais)
+	ais2.(-> gis4)
+	fis4( eis dis cis!)
 % Bars 386 to 390
-	gis'1\<~
-	gis2 fis8( eis dis cis)\!
+	gis'1~
+	gis2 fis8( eis dis cis!)
 	gis'2( fis~
-	fis4) r fis2\mf \mark \default
+	fis4) \once \partCombineAutomatic r fis2 \mark \default
 	f f
 % Bars 391 to 395
 	f1
@@ -446,8 +446,8 @@ musicOboeIMvtIV = \relative c {
 	aes2 aes
 	bes bes
 % Bars 396 to 400
-	c4\ff( des bes ges)
-	f2( ees4) r \mark \default
+	c4( des bes ges)
+	f2( ees4) \partCombineAutomatic r \mark \default
 	R1
 	b!~\mf\<
 	b2 cis8( b ais b)\!
@@ -484,11 +484,11 @@ musicOboeIMvtIV = \relative c {
 % Bars 426 to 430
 	e2\ff b
 	e a,
-	g2. g8 g
+	\partCombineApart g2. g8 g \partCombineAutomatic
 	a2. a8 a
-	g8 r r4 r2
+	\partCombineApart g8 r r4 r2
 % Bars 431 to 435
-	R1
+	R1 \partCombineAutomatic
 	b'2.\ff b8 b
 	c2. c8 c 
 	b2. b4
@@ -552,21 +552,21 @@ musicOboeIMvtIV = \relative c {
 	gis2. ais4
 % Bars 486 to 490
 	b gis fis e
-	dis2. gis4
+	\partCombineApart dis2. gis4
 	fis, gis dis' e
-	dis8 r r4 r2 \mark \default
+	dis8 \partCombineAutomatic r r4 r2 \mark \default
 	gis,4.\fff gis16 gis a4. gis16 fis
 % Bars 491 to 495
 	gis4 e2.
 	b'4. b16 b cis4. b16 a
-	b4 gis2 e'4
+	b4 gis2 \partCombineApart e'4
 	dis cis b b8. ais16
 	gis2. e'4
 % Bars 496 to 500
 	dis cis b b8. ais16
 	gis8^\marcatissimo e' dis cis b4. ais8
 	gis e' dis cis b4. ais8 \mark \default
-	gis dis'' cis cis b a gis! fis
+	gis dis'' cis cis \partCombineAutomatic b a gis! fis
 	e gis fis ais b bis cis dis
 % Bars 501 to 505
 	cis4 cis b a
@@ -594,7 +594,7 @@ musicOboeIMvtIV = \relative c {
 	g2 f8( e d c)
 % Bars 521 to 525
 	g'4 f2 a4
-	g g,8( a bes c d dis
+	g g,!8( a bes c d dis
 	e4) e,8( fis gis! a b! bis
 	cis4) cis,8( d dis eis fisis gis
 	a4) a8( b cis dis e! eis \mark \default

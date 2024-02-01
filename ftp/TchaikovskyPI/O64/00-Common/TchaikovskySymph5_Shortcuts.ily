@@ -67,7 +67,7 @@ pspiccatoassai = \markup {\dynamic p \italic {spiccato assai}}
 pmamarcato = \markup {\dynamic p \italic {ma marcato}}
 unpocodim = \markup {\italic {un poco dim.}}
 semprefff = \markup {\italic {sempre} \dynamic fff}
-
+marcatissimo = \markup {\italic {marcatissimo}}
 
 sfff = #(make-dynamic-script (markup #:dynamic "sfff"))
 
