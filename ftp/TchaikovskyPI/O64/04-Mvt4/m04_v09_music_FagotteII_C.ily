@@ -29,7 +29,7 @@ musicFagotteIIMvtIV = \relative c {
 	fis r e r dis r e r \mark \default
 % Bars 16 to 20
 	dis-. b-.\p cis-. dis-. e-. cis-. dis-. e-. 
-	fis_\pocoapococresc-. dis-. e-. fis-. g-. e-. fis-. g-. 
+	fis-. dis-. e-. fis-. g!-. e-. fis-. g-. 
 	a-. fis-. g-. a-. b-. g-. a-. b-. 
 	cis e dis cis b a g fis
 	e,2\sfp g
@@ -37,29 +37,29 @@ musicFagotteIIMvtIV = \relative c {
 	e\pp g
 	R1*2
 	
-	b2_\pmamarcato e~
+	b2 e~
 	e8 r cis4-- b-- a--
 % Bars 26 to 30
-	gis--_\piuf e2.~
+	gis-- e2.~
 	e8 r b'2\< ais4--\f
 	fis'-- gis-- dis--\> e--\!
-	b\<^\simile cis dis\! gis,8.\ff ais16
+	b\< cis dis\! gis,8.\ff ais16
 	fis'4 gis dis ais
 % Bars 31 to 35
 	b4\>~ b8. cis16 dis8. e16 dis8. b16\! \mark \default
-	cis2\p dis_\crescmarkup
+	cis2\p dis
 	e b8. cis16 dis8. e16
 	a2 a,
 	gis' gis,8.\f fisis16 gis8. ais16
 % Bars 36 to 40
 	fis'!4-- gis-- dis-- e--
-	b_\simile cis dis gis,8.\ff ais16
+	b cis dis gis,8.\ff ais16
 	fis'4-> gis-> dis-> fis->
 	\tuplet 3/2 4 {b,8\ff b b a( g fis) e( cis dis) e( fis g)
 	a( g fis) g( fis e) fis( e dis) e( dis cis)
 % Bars 41 to 45
 	b r r } r4 r2
-	r2 \tuplet 3/2 4 { r8 r fis''( g fis e)}
+	r2 \tuplet 3/2 4 { r8 r fis''( g! fis e)}
 	e,2\ff g
 	e g
 	c c4 c \mark \default
@@ -136,15 +136,15 @@ musicFagotteIIMvtIV = \relative c {
 	e~\<
 	\after 1*7/8 \! e(
 % Bars 106 to 110
-	a8)\mf r r4 r2
-	r4 fis'(\mf e fis)
+	\once \stemUp a8)\mf d\rest d4\rest d2\rest
+	r4 fis(\mf e fis)
 	b,2\<( cis)
 	d4( dis fis e)\!
 	b'4.(\sff\> a8 cis,4)\! r
 % Bars 111 to 115
 	r fis(\mf e fis)
-	b,2(\< cis)
-	d4( dis fis e\!) \mark \default
+	b,2\< cis
+	d4 dis fis e\! \mark \default
 	a,1\ff~
 	a~
 % Bars 116 to 120
@@ -171,11 +171,11 @@ musicFagotteIIMvtIV = \relative c {
 	
 	
 	
-	cis1\mf~
+	cis1\mf(
 % Bars 141 to 145
-	cis
-	d_\crescmarkup~
-	d
+	cis)
+	d(
+	d)
 	e
 	fis
 % Bars 146 to 150
@@ -201,11 +201,11 @@ musicFagotteIIMvtIV = \relative c {
 	a' d, a'\p a
 	f\< a g b\! \mark #11
 	g8\f r r4 r2
-	r4 cis,8(\f d e f g a
+	r4 cis,8(\f d e f! g a
 % Bars 166 to 170
 	d,) r r4 r2
 	r4 dis!8( e fis! g a b) \clef tenor
-	e,(_\crescmarkup f fis g) g( fis f e)
+	e,( f fis g) g( fis f e)
 	fis!( g gis a) a( gis g fis)
 	g( a ais b) b( bes a g)
 % Bars 171 to 175
@@ -246,7 +246,7 @@ musicFagotteIIMvtIV = \relative c {
 	b, c
 % Bars 201 to 205
 	d dis \mark \default
-	e4 c''\ff d c
+	e4 c''\ff d! c
 	d c b a
 	g c d c
 	d c b a
@@ -308,7 +308,7 @@ musicFagotteIIMvtIV = \relative c {
 	f2 ees8( d) c-. bes-.
 	bes2 ees~
 	ees ees
-	aes_\dimmarkup aes
+	aes aes
 	aes ges
 % Bars 256 to 260
 	ges2. f4
@@ -326,7 +326,7 @@ musicFagotteIIMvtIV = \relative c {
 	bes->\ff aes~
 	aes1_\dimmarkup~
 	aes~
-	\after 1*7/8 \! aes\>
+	<< aes {s4\> s s s8 s\!}>>
 	r2 gis\mf
 % Bars 271 to 275
 	gis gis 
@@ -336,7 +336,7 @@ musicFagotteIIMvtIV = \relative c {
 	g~
 % Bars 276 to 280
 	g~
-	\after 1*7/8 \! g\>
+	\after 1*7/8 \! g\!
 	R1*4
 	
 	
@@ -354,8 +354,8 @@ musicFagotteIIMvtIV = \relative c {
 	r2 a\pp
 % Bars 291 to 295
 	a c,
-	c1->\(~
-	c~
+	c1->\(_(
+	c)~
 	c~
 	c\)
 % Bars 296 to 300
@@ -393,9 +393,9 @@ musicFagotteIIMvtIV = \relative c {
 	e8 r c''4 g e
 	b g e b \mark \default
 	e8 r r4 r2
-	R1*2
+	s1
 % Bars 326 to 330
-	
+	s
 	R1 \clef tenor
 	R1*4
 	
@@ -421,15 +421,15 @@ musicFagotteIIMvtIV = \relative c {
 % Bars 346 to 350
 	e~\<
 	\after 1*7/8 \! e(
-	a8)\mf r r4 r2
-	r4 fis'(\mf e fis)
+	\once \stemUp a8)\mf d\rest d4\rest d2\rest
+	r4 fis(\mf e fis)
 	b,2(\< cis)
 % Bars 351 to 355
 	d4( dis fis e)\!
 	b'4.(\sff\> a8 cis,4)\! r
 	r fis(\mf e fis)
 	b,2( cis)
-	d4( dis fis e) \mark \default
+	d4 dis fis e \mark \default
 % Bars 356 to 360
 	a,1\ff~
 	a2~ a8 r a'\ff a
@@ -441,7 +441,7 @@ musicFagotteIIMvtIV = \relative c {
 	gis gis gis gis b b b b
 	b b b b fis fis gis gis
 	fis a a a  gis gis fis fis
-	b b a a cis cis cis cis
+	b b a a cis! cis cis cis
 % Bars 366 to 370
 	ais ais ais ais cis cis cis cis
 	cis cis cis cis gis gis ais ais \mark \default
@@ -451,7 +451,7 @@ musicFagotteIIMvtIV = \relative c {
 % Bars 371 to 375
 	b cis b cis
 	b cis b cis
-	b_\dimmarkup cis b cis
+	b cis b cis
 	b cis b cis
 	b\mf\> cis b cis\!
 % Bars 376 to 380
@@ -474,7 +474,7 @@ musicFagotteIIMvtIV = \relative c {
 	ees c!
 % Bars 391 to 395
 	ees( des)
-	f2_\crescmarkup des
+	f2 des
 	f( ees)
 	ges4( ees) ges( f)
 	aes( f) aes( ges)
@@ -501,10 +501,10 @@ musicFagotteIIMvtIV = \relative c {
 	cis' fis, cis'\p cis,
 	a'\< cis, b' dis,\! \mark \default
 	b'8\f r r4 r2
-	r4 eis,8( fis gis a b cis
+	r4 eis,8( fis gis! a b cis!
 % Bars 416 to 420
 	fis,) r r4 r2
-	r4 \clef tenor fisis8( gis ais b cis dis)
+	r4 \clef tenor fisis8( gis ais! b cis! dis!)
 	dis2_\crescmarkup cis
 	eis dis
 	fis dis \clef bass
@@ -527,7 +527,7 @@ musicFagotteIIMvtIV = \relative c {
 	b,,1\fff~
 	b1
 % Bars 436 to 440
-	b8_\semprefff r b4 cis dis
+	b8 r b4 cis dis
 	e cis dis e
 	fis dis e fis
 	g e fis g
@@ -600,7 +600,7 @@ musicFagotteIIMvtIV = \relative c {
 	gis ais b cis
 % Bars 496 to 500
 	dis e fis fisis,
-	gis8^\marcatissimo cis, dis e fis!4 fisis
+	gis8 cis, dis e fis!4 fisis
 	gis8 cis, dis e fis!4 fisis \mark \default
 	gis8 gis a ais b cis, d! dis
 	e eis fis fisis gis a ais bis
@@ -649,7 +649,7 @@ musicFagotteIIMvtIV = \relative c {
 % Bars 536 to 540
 	gis, r b r
 	b r e dis
-	gis,_\semprefff e, r2
+	gis, e, r2
 	e4 e r2
 	e4 e r2
 % Bars 541 to 545
