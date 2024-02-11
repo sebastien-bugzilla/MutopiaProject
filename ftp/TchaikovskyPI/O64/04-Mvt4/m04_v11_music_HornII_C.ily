@@ -4,67 +4,67 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicHornIVMvtIV = \relative c {
+musicHornIIMvtIV = \relative c {
 	\clef treble
 	\key c \major
 	\transposition f
 	\section \sectionLabel Finale
 % Bars 1 to 5
+	R1*15
+% Bars 6 to 10
+	
+% Bars 11 to 15
+	
+	
+	
+	
+	\mark \default
+% Bars 16 to 20
+	fis'4.\sf\> fis16\pp fis fis4. fis16 fis
+	fis8 r fis2.
+	fis4. fis16 fis fis4. fis16 fis 
+	fis8 r fis2.
+	g2\sfp a
+% Bars 21 to 25
+	g\pp a
 	R1*2
 	
-	fis4\mf~ fis8 r b4~ b8 r
-	fis4~ fis8 r r4 gis8 r
-	ais r8 b r ais\> r gis\! r
-% Bars 6 to 10
-	fis2\<~ fis8\! r d'\mf r
-	dis r b r cis r b r
-	ais2\>~ ais8\! r r4
-	cis4\p~ cis8 r cis4~ cis8 r
-	dis2~ dis8 r r4
-% Bars 11 to 15
-	e4\mf~ e8 r e4~ e8 r
-	dis2~ dis8 r gis,\f r
-	ais r b r ais\> r gis\! r
-	fis\< r gis r ais\! r b\f r
-	cis8 r b r ais r b r \mark \default
-% Bars 16 to 20
-	ais r r4 r2
-	R1*3
-	
-	
-	d2\sfp d
-% Bars 21 to 25
-	d\pp d
-	cis\p\< d4 e
-	cis2\mf r
-	R1*8
+	fis,2 b~
+	b8 r gis4-- fis-- e--
 % Bars 26 to 30
-	
+	dis-- b'2.~
+	b8 r fis2 f4--\mf
+	cis'-- dis-- ais--\> b--\!
+	fis\< gis ais\! dis,8.\f eis16
+	cis'4 dis ais eis
 % Bars 31 to 35
-	\mark \default
-	R1*7
+	fis4\>~ fis8. gis16 ais8. b16 ais8. fis16\! \mark \default
+	gis2\pp ais
+	b fis8. gis16 ais8. b16
+	e2 e,
+	dis' dis,8.\f d16 dis8. eis16
 % Bars 36 to 40
-	
-	
-	
+	cis'4-- dis-- ais-- b--
+	fis gis ais dis,8.\ff eis16
+	cis'4-> dis-> ais-> cis->
 	fis,4.\f fis16 fis fis4. fis16 fis
 	fis8 r fis2.
 % Bars 41 to 45
 	cis'8 r r4 r2
 	R1
-	d2\ff d'
-	d, d'
+	g'2\ff r
+	g r
 	cis, d4 e \mark \default
 % Bars 46 to 50
 	d1\>~
 	d2~ d8\! r r4
-	cis2\f d4 e
-	d2.\>~ d8\! r
-	cis2\mf d4 e
+	g2\f g4 g
+	fis2.\>~ fis8\! r
+	g2\mf g4 g
 % Bars 51 to 55
-	d4\>~ d8\!r r2
-	r4 cis\p\< d e\!
-	d~\> d8\! r r2
+	fis4\>~ fis8\! r r2
+	r4 g\p\< g g\!
+	fis~\> fis8\! r r2
 	R1*4
 	
 % Bars 56 to 60
@@ -82,74 +82,88 @@ musicHornIVMvtIV = \relative c {
 % Bars 66 to 70
 	d8\ff r b r cis r d r
 	fis r e r fis r g r
-	b r b, r cis r d r
+	d' r b, r cis r d r
 	fis r e r fis r g r \mark \default
-	b r d,4(\sf cis)\mf e(\sf
+	d' r d,4(\sf cis\mf) e(\sf 
 % Bars 71 to 75
-	b)\mf d(\sf a)\mf cis(\sf
-	g)\mf d'(\sf cis)\mf e(\sf
-	b)\mf d(\sf a)\mf cis(\sf
-	g8)\mf r d'4\ff d d
+	b\mf) d(\sf a)\mf cis(\sf
+	g)\mf d'(\sf cis\mf) e(\sf
+	b)\mf d(\sf a\mf) cis(\sf
+	g8\mf) r d'4\ff d d
 	d g fis g
 % Bars 76 to 80
-	d r r2
-	r4 g fis g
-	d8 r r4 r b'\ff
+	fis r r2
+	r4 e' d g,
+	fis8 r r4 r b\ff
 	fis r r2
 	r4 g d r
 % Bars 81 to 85
 	r2 fis4 fis \mark \default
 	fis8 r r4 r2
-	R1*15
+	R1*5
+	
+	
 % Bars 86 to 90
 	
-% Bars 91 to 95
 	
+	R1*3
+	
+	
+% Bars 91 to 95
+	R1*7
 % Bars 96 to 100
 	
 	\mark \default
-	a8\p r r4 r2
-	R1*7
+	a8\p a a a  a a a a
+	a a a a  a a a a
+	gis\< gis gis gis  a a a a
 % Bars 101 to 105
-	
+	gis gis gis gis\! a\mf a a a
+	a\> a a a  a a a a\!
+	a\p a a a   a a a a
+	a\< a a a   a a a a 
+	gis gis gis gis\! a\mf a a a
 % Bars 106 to 110
-	d,8\mf d d d   d d d d
-	d d d d   d d d d
-	cis cis cis cis  d\< d d d
-	cis cis cis cis\! d\> d d d
-	d d d d\! d\mf d d d
+	e e e e  e e e e
+	e e e e  e e e e
+	e e e e  e\< e e e
+	g g g g\! fis\> fis d d
+	d d d d\! d\mf e e e
 % Bars 111 to 115
-	d d d d  d d d d
-	cis cis cis cis  d_\crescmarkup d d d
-	cis cis cis cis  d d d d  \mark \default
-	d\ff[ d'] cis cis  b b a a
-	gis gis g g  fis fis fis fis
+	e e e e   e e e e
+	e e e e   e e e e
+	g g g g  fis fis fis fis \mark \default
+	e\ff[ d'] cis cis  b b a a
+	gis gis g g fis fis fis fis
 % Bars 116 to 120
-	e' e d d    cis cis b b
+	e' e d d cis cis b b
 	ais\< ais gis gis   fis fis fis fis
-	fis fis fis fis\! b4\fff b,
-	r b r b
-	r b r fis
+	fis fis fis fis\! fis4\fff fis 
+	r fis r fis
+	r fis r b,
 % Bars 121 to 125
 	r fis r2
 	R1*6
 % Bars 126 to 130
 	
 	\mark \default
-	R1*8
-% Bars 131 to 135
-	
-% Bars 136 to 140
 	r2 e\p\<
 	gis b\!
-	e1->~\mf
-	e2 r
-	R1*7
+	e1\mf->~
+% Bars 131 to 135
+	e~
+	e~
+	e~
+	e
+	b2\> gis
+% Bars 136 to 140
+	e\p r
+	R1*10
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
-	r2 b4\mf cis \mark \default
+	r2 b'4\mf cis \mark \default
 	d b d b
 	d b d b
 	fis' fis, fis' fis,
@@ -165,75 +179,76 @@ musicHornIVMvtIV = \relative c {
 	
 	
 	\mark #11
-	R1*4
+	R1
+	r4 e,2.\f~
 % Bars 166 to 170
-	
-	
-	fis,2_\mfcresc e
+	e8 r r4 r2
+	r4 fis2.
+	fis2_\mfcresc e
 	gis fis
 	a\f\< fis\!
 % Bars 171 to 175
-	d2\ff a
-	r g8\ff r r4
-	r2 c8 r c8 c
-	g8 r r4 g8 r r4
+	d\ff a
+	r2 d8\ff r r4
+	r2 g8 r c, c
+	g r r4 g8 r r4
 	R1
 % Bars 176 to 180
-	R
-	g2. g8 g
-	g r r4 b8 r r4
-	r2 e \mark \default
-	d b
-% Bars 181 to 185
-	d cis
-	b4~ b8 r r2
-	r e
-	d b
-	d cis
-% Bars 186 to 190
-	b4~ b8 r r2
 	R1
-	r2 g8\ff r r4
-	r2 c8 r c8 c
-	g8 r r4 g8 r r4
+	g2. g8 g
+	g r r4 d'8 r r4
+	r2 e \mark \default
+	d e
+% Bars 181 to 185
+	fis e
+	d4~ d8 r r2
+	r e
+	d e
+	fis e
+% Bars 186 to 190
+	d4~ d8 r r2
+	R1 
+	r2 d8\ff r r4
+	r2 g8 r c, c
+	g r r4 g8 r r4
 % Bars 191 to 195
 	R1
 	R
 	g2. g8 g
-	g8 r r4 b8 r r4
+	g r r4 d'8 r r4
 	r2 cis
 % Bars 196 to 200
 	d b
 	a' e
-	d4~ d8 r r2
+	fis4~ fis8 r r2
 	r cis
 	d b
 % Bars 201 to 205
 	a' e \mark \default
-	d4 cis\ff d cis
+	fis4 cis\ff d cis
 	d b a' e
-	d cis d cis
+	fis cis d cis
 	d b a' e
 % Bars 206 to 210
-	d r a8\f r r4
+	fis r a,8\f r r4
 	b8 r r4 e8 r r4
 	g8 r r4 a,8 r r4
 	b8 r r4 e8 r r4 \mark \default
-	g8 r d4\ff d d
+	g8 r g4\ff g g 
 % Bars 211 to 215
-	d d d d
+	fis d g g
 	g g g g
 	b b b b
-	g r r2
-	R1
+	g g d' g,
+	b b, g' g,
 % Bars 216 to 220
-	g'1\ff
-	d4 g, g g,
+	b b b' b,
+	d' g, g g,
 	g'8 r r4 r2
-	R1
-	g,8\f r r4 r2
+	g1\f
+	d'
 % Bars 221 to 225
-	b'2. g4
+	b2. g4 
 	d r r2
 	R1*3
 	
@@ -262,45 +277,42 @@ musicHornIVMvtIV = \relative c {
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	fis,1\f->~
-	fis~_\dimmarkup
+	fis,1->\f~
 	fis~
-	\after 1*7/8 \! fis\>
+	fis~
+	<< fis {s4\> s s s8 s\!}>>
 	r2 fis\mf
 % Bars 271 to 275
 	fis fis
-	fis g 
+	fis g
 	g g
-	\after 1*3/8 <>_\dimmarkup g1\sf~
+	g1\sf~
 	g~
 % Bars 276 to 280
 	g~
-	\after 1*7/8 \! g\>
-	R1*2
+	<< g {s4\> s s s8 s\!}>>
+	R1*4
 	
-	r2 e\p
+	
 % Bars 281 to 285
-	e e \mark \default
-	\after 1*3/8 <>_\dimmarkup e1->~
-	e~
-	e~
-	e
+	\mark \default
+	R1*14
 % Bars 286 to 290
-	R1*10
+	
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	fis4\ff r d2\f
-	d2. fis4
+	d2. fis!4
 	fis cis d2~
 	d4 e fis fis
 	d r d2
 % Bars 301 to 305
-	fis fis 
+	fis fis
 	d2.\sff d4
-	d2 r 
+	d2 r
 	r d\fff
-	d2. fis4
+	d2. fis!4
 % Bars 306 to 310
 	fis g d'2
 	d,4 e fis g
@@ -309,82 +321,104 @@ musicHornIVMvtIV = \relative c {
 	dis1
 % Bars 311 to 315
 	dis4 fis fis dis
-	e8 r d4(\sf cis)\mf e(\sf
+	e8 r d4\sf( cis\mf) e(\sf
 	b)\mf d(\sf a)\mf cis(\sf
 	g)\mf d'(\sf cis)\mf e(\sf
 	b)\mf d(\sf a)\mf cis(\sf
 % Bars 316 to 320
 	g8)\mf r d'4\ff d d
 	d g fis g
-	d r r2
-	r4 g fis g
-	d8 r r4 r b'\ff
+	fis r r2
+	r4 e' d g,
+	fis8 r r4 r b\ff
 % Bars 321 to 325
 	fis r r2
 	r4 g d r
 	r2 fis4 fis \mark \default
 	fis8 r r4 r2
-	R1*15
+	R1*5
 % Bars 326 to 330
 	
+	
+	
+	
+	R1*3
 % Bars 331 to 335
 	
+	
+	R1*7
 % Bars 336 to 340
 	
 	
 	
 	\mark \default
-	a8\p r r4 r2
+	a8\p a a a   a a a a
 % Bars 341 to 345
-	R1*7
+	a a a a   a a a a
+	gis\< gis gis gis  a a a a
+	gis gis gis gis\! a\mf a a a
+	a\> a a a    a a a a\!
+	a\p a a a   a a a a
 % Bars 346 to 350
-	
-	
-	d,8\mf d d d  d d d d
-	d d d d  d d d d
-	cis\< cis cis cis  d d d d
+	a\< a a a    a a a a
+	gis gis gis gis\! a\mf a a a
+	e e e e  e e e e
+	e e e e   e e e e
+	e\< e e e  e e e e
 % Bars 351 to 355
-	cis cis cis cis\! d\> d d d
-	d d d d  d d d d\!
-	d d d d  d d d d
-	cis cis cis cis  d_\crescmarkup d d d
-	cis cis cis cis  d d d d \mark \default
+	g g g g\! fis\> fis d d 
+	d d d d   d e e e\!
+	e e e e  e e e e
+	e e e e e e e e
+	g g g g fis fis fis fis \mark \default
 % Bars 356 to 360
-	d[\ff d'] cis cis   b b a a
-	gis gis g g  fis fis e e
-	cis cis cis cis  e e e e
+	e\ff d' cis[ cis] b b a a
+	gis gis g g fis fis e e
+	cis cis cis cis  e e e e 
 	e e e e   b b b ais
-	b d\ff d d    cis cis b b
+	b d'\ff d d   cis cis b b
 % Bars 361 to 365
-	e e d d   cis cis cis cis
+	bes[ bes] \stemUp \omitBeam d, d fis! fis fis fis
 	dis dis dis dis   fis fis fis fis
-	fis fis fis fis   cis cis dis dis
-	cis e e e   dis dis cis cis
-	fis fis e e   dis dis dis dis
+	fis fis fis fis  cis cis dis dis
+	cis gis'! gis gis  gis gis gis gis
+	gis gis e e   dis dis dis dis
 % Bars 366 to 370
-	f! f f f  aes aes aes aes
+	f! f f f   aes aes aes aes
 	aes aes aes aes  ees ees f f \mark \default
 	ees r ees2\fff ees4~
 	ees ees2 ees4~
-	ees ees r bes
+	ees ees r ees
 % Bars 371 to 375
-	r bes r2
-	R1*14
+	r bes r2 
+	R1*6
 % Bars 376 to 380
 	
-% Bars 381 to 385
 	
-% Bars 386 to 390
 	r2 aes\p\<
 	c ees\!
-	aes1\mf\>~
-	aes4\! r r2 \mark \default
-	R1*7
+	aes1->\mf~
+% Bars 381 to 385
+	aes~
+	aes~
+	aes~
+	aes
+	ees2\> c\!
+% Bars 386 to 390
+	aes\p r
+	R1*3
+	
+	\mark \default
+	c1_(\mf
 % Bars 391 to 395
-	
+	c)
+	des~
+	des
+	ees
+	f
 % Bars 396 to 400
-	
-	r2 ees4\mf f \mark \default
+	\stemDown es2\f f(
+	\once \stemUp ees8) r r4 ees\mf f \mark \default
 	ges ees ges ees
 	ges ees ges ees
 	bes' bes, bes' bes,
@@ -400,40 +434,43 @@ musicHornIVMvtIV = \relative c {
 	
 	
 	\mark \default
-	R1*4
-	
+	R1
+	r4 gis2.\f~
 % Bars 416 to 420
+	gis8 r r4 r2
+	r4 ais2.
+	R1*3
 	
 	
-	bes'2_\mfcresc aes
-	c bes
-	des\f\< bes\!
 % Bars 421 to 425
 	R1*4
 	
 	
 	
-	b8\ff-> r e,4->~ e cis->
+	b'8\ff r e,4->~ e cis->
 % Bars 426 to 430
 	b1~\f
 	b2. cis4
 	d2.\ff d8 d
-	cis2. cis8 cis
+	e2. e8 e
 	d2 fis\f~
 % Bars 431 to 435
 	fis8 r r4 r2
-	fis2.\ff fis8 fis
+	fis'2.\ff fis8 fis
 	e2. e8 e
-	fis2.\fff fis8 fis
+	fis2.\fff fis,8 fis
 	g4 fis fis fis
 % Bars 436 to 440
-	cis'8 r r4 r2
-	R1*7
+	fis2. fis8 fis
+	fis2. fis8 fis
+	fis2 fis~
+	fis fis
+	fis2. fis8 fis
 % Bars 441 to 445
-	
-	
-	
-	fis,2._\semprefff fis8 fis
+	fis2. fis8 fis
+	fis2 fis~
+	fis fis
+	fis2. fis8 fis
 	fis2. fis8 fis
 % Bars 446 to 450
 	fis4 fis2 fis4~
@@ -442,20 +479,20 @@ musicHornIVMvtIV = \relative c {
 	fis2. fis8 fis
 	fis4 fis2 fis4~
 % Bars 451 to 455
-	\tuplet 3/2 2 {fis fis fis  fis fis fis} \mark \default
-	d2\fff fis~
-	fis8 r r4 r2
-	d fis~
-	fis8 r r4 r2
+	\tuplet 3/2 2 {fis fis fis fis fis fis} \mark \default
+	g2\fff a~
+	a8 r r4 r2
+	g2 a~
+	a8 r r4 r2
 % Bars 456 to 460
 	g4 r a r
-	b r d r
-	cis, r g' r
-	cis, r g' r
-	cis, r g' r
+	b r b r
+	g r g r
+	e r b' r
+	e, r g r
 % Bars 461 to 465
-	cis, r d' r
-	e, r f r
+	g r b r
+	b r f r
 	fis r r2
 	r fis4 r
 	R1
@@ -467,86 +504,86 @@ musicHornIVMvtIV = \relative c {
 	fis1~
 % Bars 471 to 475
 	fis8 r r4 r2\fermata \bar "||"
-	\time 4/4 fis8\f r b, r fis' r b, r
-	fis' r b, r fis' r b, r
-	fis'4\f b, b'2->~
+	\time 4/4 fis8\f r dis r fis r dis r
+	fis r dis r fis r dis r
+	fis4\f b, b'2->~
 	b8. ais16 gis8. g16 fis8. gis16 e8. fis16
 % Bars 476 to 480
-	dis4 b~ b8 b b'4->~
-	b8 r b,4\f~ b8 r b4
+	dis4 b~ b8 b b'4^>~
+	b8 r b4\f~ b8 r b,4
 	cis dis cis b
 	ais2( dis8) r dis4(
 	fis) gis, ais eis'(
 % Bars 481 to 485
 	fis8) r r4 r2 \mark \default
-	b,2\ff bes
-	b!1
-	b2 bes
-	b!2. cis4
+	b,2\ff cis
+	dis1
+	e2 e
+	dis2. eis4
 % Bars 486 to 490
-	cis fis ais gis
+	fis fis ais gis
 	fis gis ais dis,8. eis16
 	fis4 b cis, eis
 	cis8 r r4 r2 \mark \default
 	fis,4\fff fis b b
 % Bars 491 to 495
 	fis fis fis fis
-	fis' fis gis gis
+	fis' fis gis gis 
 	fis fis fis gis
-	fis gis fis d!
-	dis dis dis gis
+	fis gis ais gis
+	fis gis ais gis
 % Bars 496 to 500
-	fis gis fis d!
-	dis8^\marcatissimo gis fis gis fis4 d!
-	dis8 gis fis gis fis4 d! \mark \default
-	dis8 ais' gis gis fis e dis e
-	dis dis e d dis e f! g!
+	fis gis ais gis
+	fis8 gis fis gis ais4 gis
+	fis8 gis fis gis ais4 gis \mark \default
+	fis8 ais gis gis fis e dis e
+	fis a! gis eis fis g gis ais
 % Bars 501 to 505
-	gis4 gis fis b,
-	b8. gis'16 fis4~ fis8 fis fis dis
-	cis2\sfff fis\sfff \bar "||"
-	\time 2/2 b,4 r fis'\p r
+	b4 b b b,
+	b8. gis'16 fis4~ fis8 fis fis fis
+	eis2\sfff fis\sfff \bar "||" 
+	\time 2/2 dis4 r fis\p r
 	fis r dis r
 % Bars 506 to 510
-	cis_\crescmarkup r fis r
-	e r gis r
+	cis r fis r
+	e r gis! r
 	fis r e r
 	dis2\f b\ff
-	fis'4\fff r gis r
+	fis'4\fff r r2
 % Bars 511 to 515
-	dis r e r \mark \default
-	dis r fis\p r
+	r2 fis4 r \mark \default
+	fis r fis\p r
 	fis r dis r
-	cis_\crescmarkup r fis r
-	e r gis r
+	cis r fis r
+	e r gis! r
 % Bars 516 to 520
 	fis r e r
 	dis2\f b\ff
-	b4\fff d!2.
+	b4\fff d2.
 	g,4 c2 g4
 	b d2.
 % Bars 521 to 525
 	g,4 c2 g4
-	d' g r d
-	dis dis r b
-	c c r c
-	cis cis r cis \mark \default
+	d' d r g
+	fis fis r dis
+	dis dis r gis
+	gis gis r cis, \mark \default
 % Bars 526 to 530
-	cis r fis2~
-	fis g~
-	g dis~
-	dis d~
-	d fis
+	cis r ais'2~
+	ais b~
+	b fis~
+	fis fis~
+	fis fis
 % Bars 531 to 535
 	fis fis
 	fis fis
-	e e
+	e e 
 	fis4 r r2
-	r2 r4 e
+	r r4 e
 % Bars 536 to 540
 	fis r r2
 	r r4 e
-	fis_\semprefff fis r2
+	fis fis r2
 	fis4 fis r2
 	fis4 fis r2
 % Bars 541 to 545
@@ -556,27 +593,27 @@ musicHornIVMvtIV = \relative c {
 	fis4 fis r2
 	fis4 fis r2 \bar "||"
 % Bars 546 to 550
-	\time 6/4 dis'4 r r e, r r
-	fis r r e r r
-	b'4. b8 b4 b cis dis
+	\time 6/4 dis'4 r r gis, r r
+	b r r gis r r
+	b4. b8 b4 b cis dis
 	e dis cis b ais gis
-	dis' r r e, r r
+	dis' r r gis, r r
 % Bars 551 to 555
-	fis r r e r r
-	fis r r e r r
-	fis r r e r r \mark \default
-	fis r r r2.
+	b r r gis r r
+	b r r gis r r
+	b r r gis r r \mark \default
+	b r r r2.
 	fis4 r r r2.
 % Bars 556 to 560
 	dis4 r r r2.
-	b4 r r r2.
-	b4 r r b r r
-	dis r r dis r r
-	fis r r dis r r
+	b'4 r r r2.
+	dis,4 r r dis r r
+	fis r r fis r r
+	fis r r fis r r
 % Bars 561 to 565
 	fis r r r2.
-	b,1.
-	b~
-	b2. b4 b b
-	b r r r2. \bar "|."
+	dis1.
+	dis1.~
+	dis2. dis4 dis dis
+	dis r r r2. \bar "|."
 }
