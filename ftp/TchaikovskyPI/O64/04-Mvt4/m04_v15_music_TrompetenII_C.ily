@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrompetenIMvtIV = \relative c {
+musicTrompetenIIMvtIV = \relative c {
 	\clef treble
 	\key c \major
 	\transposition a
@@ -20,15 +20,15 @@ musicTrompetenIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 16 to 20
-	d''4.\sf\> d16\pp d d4. d16 d
-	d8_\pocoapococresc r d2.
+	d'4.\sf\> d16\pp d d4. d16 d
+	d8 r d2.
 	d4. d16 d d4. d16 d
 	d8 r d2.
-	ees2\sfp d
+	ees2\sfp f
 % Bars 21 to 25
-	ees\pp d
-	c\p\< bes4 a\!
-	d2\mf r
+	ees\pp f
+	g\p\< g4 g\!
+	fis2\mf r
 	R1*8
 % Bars 26 to 30
 	
@@ -46,10 +46,10 @@ musicTrompetenIMvtIV = \relative c {
 	d8 r d2.
 	ees2\ff d
 	ees d
-	g g4 g \mark \default
+	c' bes4 a \mark \default
 % Bars 46 to 50
-	f1\>~
-	f2~ f8\! r r4
+	d1\>~
+	d2~ d8\! r r4
 	R1*10
 % Bars 51 to 55
 	
@@ -60,26 +60,26 @@ musicTrompetenIMvtIV = \relative c {
 % Bars 61 to 65
 	
 % Bars 66 to 70
-	r4 d8\f r d r d r
-	g r g r g r g r
-	g r d r d r d r
-	g r g r g r g r \mark \default
-	g r r4 r2
+	r4 d,8\f r d r d r
+	g r c r d r ees r
+	d r d, r d r d r
+	g r c r d r ees r \mark \default
+	d r r4 r2
 % Bars 71 to 75
 	R1*3
 	
 	
-	r4 g\ff f g
-	d a' g g
+	r4 ees\ff bes ees
+	bes ees d ees
 % Bars 76 to 80
-	g g f g
+	d ees d c
 	d r r2
-	r4 g\ff f r
+	r4 ees\ff bes r
 	R1
 	r4 g g bes
 % Bars 81 to 85
-	bes bes bes fis \mark \default
-	g8 r r4 r2
+	bes bes bes a \mark \default
+	bes8 r r4 r2
 	R1*15
 % Bars 86 to 90
 	
@@ -92,20 +92,20 @@ musicTrompetenIMvtIV = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	c,8\mf r r4 r2
+	bes8\mf r r4 r2
 	R1*7
 % Bars 111 to 115
 	
 	
 	\mark \default
-	c,8\f r r4 r2
-	R1*3
+	d4.\f c8 bes4. a8
+	bes bes a a  g g g g
 % Bars 116 to 120
-	
-	
-	r2 g''4\ff d
-	r g r d
-	r g, r2
+	e'4. d8 c4. bes8
+	c\< c bes bes  a a a a
+	a a a a\! g4\ff g
+	r g r g
+	R1
 % Bars 121 to 125
 	R1*7
 % Bars 126 to 130
@@ -135,48 +135,48 @@ musicTrompetenIMvtIV = \relative c {
 	
 % Bars 171 to 175
 	
-	g2.\ff g8 g
-	aes2. g8 f
-	g8 r r4 ees8 r r4
+	ees2.\ff ees8 ees
+	ees2. ees8 ees
+	ees8 r r4 ees8 r r4
 	R1
 % Bars 176 to 180
-	bes'2. bes8 bes
-	c2. bes8 aes
-	bes r r4 g8 r r4
-	r2 ees' \mark \default
-	d c
+	g2. g8 g
+	aes2. bes8 aes
+	bes r r4 ees,8 r r4
+	r2 g \mark \default
+	f ees
 % Bars 181 to 185
+	f ees
+	g4~ g8 r r2
+	r g
+	f ees
+	f ees
+% Bars 186 to 190
+	g4~ g8 r r2
+	R1
+	ees2.\ff ees8 ees
+	ees2. ees8 ees
+	ees8 r r4 ees8 r r4
+% Bars 191 to 195
+	R1
+	g2. g8 g
+	aes2. bes8 aes
+	bes r r4 ees,8 r r4
+	r2 ees'
+% Bars 196 to 200
+	d c
 	bes a
 	g4~ g8 r r2
 	r ees'
 	d c
-	bes a
-% Bars 186 to 190
-	g4~ g8 r r2
-	R1
-	g2.\ff g8 g
-	aes2. g8 f
-	g8 r r4 ees8 r r4
-% Bars 191 to 195
-	R1
-	bes'2. bes8 bes
-	c2. bes8 aes
-	bes r r4 g8 r r4
-	r2 g'
-% Bars 196 to 200
-	f ees
-	d c
-	bes4~ bes8 r r2
-	r g'
-	f ees
 % Bars 201 to 205
-	d c \mark \default
-	bes4 g'\ff f g
-	f ees d c
-	bes g' f g
-	f ees d c
+	bes a \mark \default
+	g4 ees'\ff d ees
+	d c bes a
+	g ees' d ees
+	d c bes a
 % Bars 206 to 210
-	bes r r2
+	g r r2
 	R1*3
 	
 	\mark \default
@@ -190,7 +190,7 @@ musicTrompetenIMvtIV = \relative c {
 % Bars 216 to 220
 	ees
 	g
-	bes8 r r4 r2
+	g8 r r4 r2
 	R1*4
 	
 % Bars 221 to 225
@@ -201,10 +201,10 @@ musicTrompetenIMvtIV = \relative c {
 	des2. bes4
 % Bars 226 to 230
 	g8 r r4 r2
-	R1
-	e'!
-	aes \mark \default
-	g8\ff r r4 r2
+	des'1\ff
+	bes
+	des \mark \default
+	e!8\ff r r4 r2
 % Bars 231 to 235
 	R1*27
 % Bars 236 to 240
@@ -235,40 +235,40 @@ musicTrompetenIMvtIV = \relative c {
 % Bars 291 to 295
 	
 % Bars 296 to 300
-	g4\ff r d2\f
-	d2. g4
+	bes4\ff r bes2\f
+	bes2. g4
 	g ees d2~
 	d4 g g g
-	g r d2
+	g r bes2
 % Bars 301 to 305
 	g g
-	d2.\sff d4
-	d2 r
-	r d\ff
-	d2. g4
+	bes2.\sff bes4
+	bes2 r
+	r bes\ff
+	bes2. g4
 % Bars 306 to 310
 	g a bes2
-	g4 g g g
-	g2 d
-	d d
-	d1
+	bes4 g g g
+	g'2 bes,
+	bes bes
+	b!1
 % Bars 311 to 315
-	g4 f g d
+	b4 d d b
 	c8 r r4 r2
 	R1*3
 	
 	
 % Bars 316 to 320
-	r4 g'\ff f g
-	d a' g g
-	g g f g
+	r4 ees\ff bes ees
+	bes ees d ees
+	d ees d c
 	d r r2
-	r4 g\ff f r
+	r4 ees\ff bes r
 % Bars 321 to 325
 	R1
 	r4 g g bes
-	bes bes bes fis \mark \default
-	g8 r r4 r2
+	bes bes bes a \mark \default
+	bes8 r r4 r2
 	R1*15
 % Bars 326 to 330
 	
@@ -285,7 +285,7 @@ musicTrompetenIMvtIV = \relative c {
 % Bars 346 to 350
 	
 	
-	c,8\mf r r4 r2
+	bes8\mf r r4 r2
 	R1*7
 % Bars 351 to 355
 	
@@ -294,57 +294,49 @@ musicTrompetenIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 356 to 360
-	c,8\f r r4 r2
-	r r4 g''8\f g
-	fis fis fis fis d d d d
-	d d d d bes bes bes a
-	d\ff r r4 r2
+	d4.\f c8 bes4. a8
+	bes bes a a   g g g g
+	fis fis fis fis c' c c c
+	c c c c   g g g fis
+	g\ff r r d'\f c4. bes8
 % Bars 361 to 365
-	d8\f d d d a' a a a
-	gis gis gis gis  e e e e 
-	e e e e a,\f a b b
-	a\f e' e e   e e e e
-	e\f e e e  b' b b b
+	c8\f c bes bes  a a a a
+	b! b b b  d d d d
+	d d d d   c4\ff-> d->
+	e8-> r r e\ff d4. c8
+	d\f d c c  e e e e
 % Bars 366 to 370
-	ais ais ais ais  fis fis fis fis
-	fis fis cis4\< d e\! \mark \default
-	fis8 r fis2\fff fis4~
-	fis fis2 fis4~
-	fis r r2
+	cis cis cis cis   e e e e
+	e e cis4\< d e\! \mark \default
+	b8 r b2\fff b4~
+	b b2 b4~
+	b b r2
 % Bars 371 to 375
 	R1*7
 % Bars 376 to 380
 	
 	
+	R1*8
+	
+	
+% Bars 381 to 385
+	
+% Bars 386 to 390
 	r2 e,\pp\<
 	gis b\!
-	e1->\mp\>~
-% Bars 381 to 385
-	e\p~
-	e~
-	e~
-	e
-	b2\> gis
-% Bars 386 to 390
-	e\! r
-	R1*3
-	
-	\mark \default
+	e1~\mp\>
+	e4\! r r2 \mark \default
 	R1*7
 % Bars 391 to 395
 	
 % Bars 396 to 400
 	
-	r2 b'4\mp cis \mark \default
-	d b d b
-	d b d b
-	fis' fis, fis' fis,
+	R1 \mark \default
+	R1*8
+	
+	
 % Bars 401 to 405
-	d' d, d' d,
-	d' b d b
-	d b d b
-	fis' fis, fis' fis,
-	d' d, d' d,
+	
 % Bars 406 to 410
 	R1*8
 % Bars 411 to 415
@@ -359,21 +351,21 @@ musicTrompetenIMvtIV = \relative c {
 	
 	
 	
-	g'8\ff-> r c,4->~ c a->
+	R1
 % Bars 426 to 430
-	d8\ff r r4 r2
+	g,8\ff r r4 r2
 	R1
-	R1*2
-	
-	g2.\ff g8 g
+	g1\mf
+	\after 1*7/8 \! f\mf\<
+	g'2.\ff g8 g
 % Bars 431 to 435
-	a2. a8 a
-	g2\> r\!
+	fis2. fis8 fis
+	<< g2 { s8\> s s s\!} >> r2
 	R1
-	g2.\fff g8 g
-	fis4 g d d
+	bes,2.\fff bes8 bes
+	a4 g fis g
 % Bars 436 to 440
-	d2._\semprefff d8 d
+	d2. d8 d
 	d2. d8 d
 	d2 d~
 	d d
@@ -392,52 +384,52 @@ musicTrompetenIMvtIV = \relative c {
 	d4 d2 d4~
 % Bars 451 to 455
 	\tuplet 3/2 2 {d4 d d  d d d} \mark \default
-	ees2\fff d~
-	d8 r r4 r2
-	ees d~
-	d8 r r4 r2
+	ees2\fff f~
+	f8 r r4 r2
+	ees f~
+	f8 r r4 r2
 % Bars 456 to 460
-	bes'4 r bes r
-	c r bes r
-	a r g r
-	f r ees r
-	f r g r
+	bes4 r bes r
+	g' r g r
+	ees r ees r
+	c r c r
+	c r ees r
 % Bars 461 to 465
-	a r bes r
-	g r a r
-	a r r2
-	r fis4 r
+	ees r g r
+	c, r g' r
+	fis r r2
+	r a,4 r
 	R1
 % Bars 466 to 470
-	r2 fis4 r
+	r2 a4 r
 	R1*2
 	
-	fis2.. fis8
-	fis1~
+	a2.. a8
+	a1~
 % Bars 471 to 475
-	fis8 r r4 r2\fermata \bar "||"
+	a8 r r4 r2\fermata \bar "||"
 	\time 4/4 R1*2
 	
-	d4\f g, g'2->~
-	g8. fis16 e8. ees16 d8. e16 c8. d16
+	R1*4 
+	
 % Bars 476 to 480
-	b4 g~ g8 g g'4->~
-	g8 r g4~ g8 r r4
+	
+	
 	R1*3
 	
 	
 % Bars 481 to 485
 	r4 c,\f e g8 fis \mark \default
 	e r r4 r2
-	r4 r8 \tuplet 3/2 4 {g,16\ff g g} d'8 g,~ g\noBeam r
 	R1
-	r4 r8 \tuplet 3/2 4 {g16 g g } d'8 g, r4
+	R1
+	R
 % Bars 486 to 490
 	R1*4
 	
 	
 	\mark \default
-	b4.\fff^\marcialeenergicocontuttaforza b16 b c4. b16 a
+	b'4.\fff^\marcialeenergicocontuttaforza b16 b c4. b16 a
 % Bars 491 to 495
 	b4 g2.
 	d'4. d16 d e4. d16 c
@@ -448,82 +440,82 @@ musicTrompetenIMvtIV = \relative c {
 	fis e d d8. cis16
 	b8^\marcatissimo g' fis e d4. cis8
 	b g' fis e d4. cis8 \mark \default
-	b b' a g fis e d c
-	b d c e d fis e a
+	b fis' e e   d c! b c
+	b b c cis d dis e fis!
 % Bars 501 to 505
-	g4 g g g
-	g8. g16 b4~ b8 g d b
-	b2\sfff d\sfff \bar "||"
-	\time 2/2 g,4 r g'\p r
-	gis r e r
+	e4 e d c
+	d8. e16 g4~ g8 d b g
+	g2\sfff fis\sfff \bar "||"
+	\time 2/2 g4 r g\p r
+	gis r b r
 % Bars 506 to 510
-	e_\crescmarkup r e r
-	e r a r
-	a r a r
+	a r d r
+	c r e r
+	d r c r
 	b2\f g\ff
-	g4\fff r g r
+	g'4\fff r e r
 % Bars 511 to 515
-	g r d r \mark \default
-	d r g\p r
-	gis r e r
-	e_\crescmarkup r e r
-	e r a r
+	b r c r \mark \default
+	b r g\p r
+	gis r b r
+	a r d r
+	c r e r
 % Bars 516 to 520
-	a r a r
+	d r c r
 	b2\f g\ff
-	ees4\fff f ees g
+	ees'4\fff f ees g
 	ees f ees aes
 	ees f ees g
 % Bars 521 to 525
 	ees f ees aes
-	g g r ees
-	d d r b
-	b b r e
-	e e r e \mark \default
+	ees ees r bes
+	b! b r g
+	gis gis r gis
+	a a r c \mark \default
 % Bars 526 to 530
-	fis r d2~
-	d ees~
-	ees e~
-	e f~
-	f fis
+	c r c2~
+	c bes~
+	bes d~
+	d d~
+	d a
 % Bars 531 to 535
-	g a
-	g gis
-	a a
-	g4 r a r
-	gis r a a
+	b c
+	bes b
+	g'! fis
+	b,4 r d r
+	d r g fis
 % Bars 536 to 540
-	g r a r
-	gis r a a
-	g_\semprefff g r2
-	g4 g r2
-	g4 g r2
+	b, r d r
+	d r g fis
+	b, b r2
+	b4 b r2
+	b4 b r2
 % Bars 541 to 545
-	g4 g r2
-	g4 g r2
-	g4 g r2
-	g4 g r2
-	g4 g r2 \bar "||"
+	b4 b r2
+	b4 b r2
+	b4 b r2
+	b4 b r2
+	b4 b r2 \bar "||"
 % Bars 546 to 550
 	\time 6/4 g4.\ffff g8 g4 g a b
 	c b a g fis e
-	d r r e r r
-	g r r e r r
+	b' r r c r r
+	d r r c r r
 	g4. g8 g4 g a b
 % Bars 551 to 555
 	c b a g a b
 	c b a g a b
 	c b a g a b \mark \default
 	c b a g r r
-	b r r r2.
+	d' r r r2.
 % Bars 556 to 560
-	g4 r r r2.
+	b4 r r r2.
 	d4 r r r2.
-	b4 r r g r r
-	d' r r b r r
-	g' r r d r r
+	g,4 r r g r r
+	b r r g r r
+	b r r b r r
 % Bars 561 to 565
-	b' r r r2.
+	g' r r r2.
 	g,1.
 	g~
 	g2. g4 g g

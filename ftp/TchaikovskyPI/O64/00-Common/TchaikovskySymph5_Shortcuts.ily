@@ -68,6 +68,8 @@ pmamarcato = \markup {\dynamic p \italic {ma marcato}}
 unpocodim = \markup {\italic {un poco dim.}}
 semprefff = \markup {\italic {sempre} \dynamic fff}
 marcatissimo = \markup {\italic {marcatissimo}}
+marcialeenergicocontuttaforza = \markup {\italic {marciale, energico, con tutta forza}}
+
 
 sfff = #(make-dynamic-script (markup #:dynamic "sfff"))
 
