@@ -39,8 +39,8 @@
 \include "./04-Mvt4/m04_v13_music_HornIV_C.ily"
 \include "./04-Mvt4/m04_v14_music_TrompetenI_C.ily"
 \include "./04-Mvt4/m04_v15_music_TrompetenII_C.ily"
-\include "./04-Mvt4/m04_v16_music_PosauneI.ily"
-\include "./04-Mvt4/m04_v17_music_PosauneII.ily"
+\include "./04-Mvt4/m04_v16_music_PosauneI_C.ily"
+\include "./04-Mvt4/m04_v17_music_PosauneII_C.ily"
 \include "./04-Mvt4/m04_v18_music_PosauneIII.ily"
 \include "./04-Mvt4/m04_v19_music_Tuba.ily"
 \include "./04-Mvt4/m04_v20_music_Pauken.ily"
@@ -118,16 +118,17 @@
 %%						\musicHornIVMvtIV 
 %					}
 %				>>
-				\new Staff {
-					\timeMvtIV \nameStaffVIIIMvtIV
-					\partCombine \musicTrompetenIMvtIV \musicTrompetenIIMvtIV
-%					\musicTrompetenIIMvtIV
-				}
+%				\new Staff {
+%					\timeMvtIV \nameStaffVIIIMvtIV
+%					\partCombine \musicTrompetenIMvtIV \musicTrompetenIIMvtIV
+%%					\musicTrompetenIIMvtIV
+%				}
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtIV } <<
-%					\new Staff {
-%						\timeMvtIV \nameStaffIXMvtIV
-%						\partCombine \musicPosauneIMvtIV \musicPosauneIIMvtIV
-%					}
+					\new Staff {
+						\timeMvtIV \nameStaffIXMvtIV
+						\partCombine \musicPosauneIMvtIV \musicPosauneIIMvtIV
+%						\musicPosauneIIMvtIV
+					}
 %					\new Staff {
 %						\timeMvtIV \nameStaffXMvtIV
 %						\partCombine \musicPosauneIIIMvtIV \musicTubaMvtIV

@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicPosauneIMvtIV = \relative c {
+musicPosauneIIMvtIV = \relative c {
 	\clef tenor
 	\key e \major
 %	\transposition a
@@ -24,11 +24,11 @@ musicPosauneIMvtIV = \relative c {
 	
 	
 	
-	g''2\sfp g
+	g'2\sfp b
 % Bars 21 to 25
-	g\pp g
-	a,\p\< g4 fis\!
-	b2\mf r
+	g\pp b
+	e,\p\< e4 e\!
+	dis2\mf r
 	R1*8
 % Bars 26 to 30
 	
@@ -38,22 +38,22 @@ musicPosauneIMvtIV = \relative c {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	b4.\f b16 b b4. b16 b
-	b8 r b2.
-	g'2\ff d
+	R1*2
+	
+	g2\ff d
 	g d
-	e e4 e \mark \default
+	a' g4 fis \mark \default
 % Bars 46 to 50
-	d1\>~
-	d2~ d8\! r r4
+	b1\>~
+	b2~ b8\! r r4
 	R1*3
 	
 	
 % Bars 51 to 55
-	r4 b\p\< a\! g4~\> 
-	g8\! r r4 r2
-	r4 b\pp\< a\! g4~\>
-	g8\! r r4 r2
+	r4 g\p\< fis\! e4~\> 
+	e8\! r r4 r2
+	r4 g\pp\< fis\! e4~\>
+	e8\! r r4 r2
 	R1*3
 % Bars 56 to 60
 	
@@ -63,25 +63,25 @@ musicPosauneIMvtIV = \relative c {
 	
 % Bars 66 to 70
 	
-	r2 r4 a'8\f r
-	g r r4 r2
-	r2 r4 a8 r \mark \default
-	g r r4 r2
+	r4 c'8\f r e r a,8\f r
+	e' r r4 r2
+	r4 c8 r e r a, r \mark \default
+	e' r r4 r2
 % Bars 71 to 75
 	R1*3
 	
 	
-	r4 e\ff d e
-	d fis e e
+	r4 c\ff g c
+	b a g a
 % Bars 76 to 80
-	e fis g g
-	g fis e e 
-	e8 r r4 r2
-	r4 a,\ff g r
-	R1
+	b c d e
+	d c b a
+	b8 r r4 r2
+	r4 fis\ff c r
+	r2 r4 e'
 % Bars 81 to 85
-	r4 dis' e dis \mark \default
-	e8 r r4 r2
+	b b g fis \mark \default
+	g8 r r4 r2
 	R1*15
 % Bars 86 to 90
 	
@@ -94,30 +94,30 @@ musicPosauneIMvtIV = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	cis8\mf r r4 r2
+	a8\mf r r4 r2
 	R1*7
 % Bars 111 to 115
 	
 	
 	\mark \default
-	g8\f r r4 r2
-	e'4.\f dis8 cis4. b8
+	b4.\f a8 g4. fis8
+	e4.\f dis8 cis4. b8
 % Bars 116 to 120
-	R1
-	fis'4.\f\< e8 dis4. cis8
-	b4. a8\! b4\ff b
-	r b r b
-	r b r b
+	cis'4.\f b8 a4. g8
+	fis4.\f\< e8 \stemUp dis4. \omitFlag cis8\!
+	\stemDown b r r4 e4\ff e
+	r e r e
+	r e r e
 % Bars 121 to 125
-	r e, r b
+	r e r b
 	r2 b\ff\>~
 	\after 1*7/8 \! b1
 	r2 b2\mf\>~
 	\after 1*7/8 \! b1
 % Bars 126 to 130
-	e1\pp\<
-	b'\mp\>( \mark \default
-	a8)\pp r r4 r2
+	b1\pp\<
+	e\mp\>_( \mark \default
+	e8)\pp r r4 r2
 	R1*19
 % Bars 131 to 135
 	
@@ -141,49 +141,49 @@ musicPosauneIMvtIV = \relative c {
 % Bars 166 to 170
 	
 % Bars 171 to 175
-	R1*2
-	
-	f2.\ff a8 a
-	g8 r r4 g8 r r4
+	r4 g\f b d
+	g,2.\ff g8 g
+	c,2. c8 c
+	e8 r r4 e8 r r4
 	R1
 % Bars 176 to 180
-	g2. g8 g
-	a2. g8 a
-	g r r4 g8 r r4
-	r2 c \mark \default
-	b a
+	e2. e8 e
+	f2. g8 f
+	g r r4 e8 r r4
+	r2 e \mark \default
+	d e
 % Bars 181 to 185
-	b a
-	b4~ b8 r r2
-	r c
-	b a
-	b a
+	g fis
+	g4~ g8 r r2
+	r e
+	d e
+	g fis
 % Bars 186 to 190
-	b4~ b8 r r2
+	g4~ g8 r r2
 	R1
-	R1
-	f2.\ff a8 a
-	g r r4 g8 r r4
+	g2.\ff g8 g
+	c,2. c8 c
+	e r r4 e8 r r4
 % Bars 191 to 195
 	R1
-	g2. g8 g
-	a2. g8 a
-	g r r4 g8 r r4
-	r2 e'
+	e2. e8 e
+	f2. g8 f
+	g r r4 e8 r r4
+	r2 c'
 % Bars 196 to 200
-	d c
-	b c
-	b4~ b8 r r2
-	r e
-	d c
+	b a
+	g fis
+	g4~ g8 r r2
+	r c
+	b a
 % Bars 201 to 205
-	b c \mark \default
-	b4 e\ff d e
-	d c b c
-	b e d e
-	d c b c
+	g fis \mark \default
+	g4 c\ff b c
+	b a g fis
+	g c b c
+	b a g fis
 % Bars 206 to 210
-	b r r2
+	g r r2
 	R1*3
 	
 	\mark \default
@@ -192,21 +192,21 @@ musicPosauneIMvtIV = \relative c {
 	e
 	g
 	c
-	e
-	g
+	R1*2
+	
 % Bars 216 to 220
 	R1*2
 	
-	g8 r r4 r2
+	e8 r r4 r2
 	R1*7
 % Bars 221 to 225
 	
 % Bars 226 to 230
-	bes,1\ff
-	d
-	des
-	f \mark \default
-	e8 r r4 r2
+	e,1\ff
+	bes'
+	g
+	bes \mark \default
+	cis8 r r4 r2
 % Bars 231 to 235
 	R1*27
 % Bars 236 to 240
@@ -237,7 +237,7 @@ musicPosauneIMvtIV = \relative c {
 % Bars 291 to 295
 	
 % Bars 296 to 300
-	e4\ff r r2
+	g4\ff r r2
 	R1*7
 % Bars 301 to 305
 	
@@ -258,16 +258,16 @@ musicPosauneIMvtIV = \relative c {
 	
 	
 % Bars 316 to 320
-	r4 e\ff d e
-	d fis e e
-	e fis g g
-	g fis e e
-	e8 r r4 r2
+	r4 c\ff g c
+	b a g a
+	b c d e
+	d c b a
+	b8 r r4 r2
 % Bars 321 to 325
-	r4 a,\ff g r
-	R1
-	r4 dis' e dis \mark \default
-	e8 r r4 r2
+	r4 fis\ff c r
+	r2 r4 e'
+	b b g fis \mark \default
+	g8 r r4 r2
 	R1*15
 % Bars 326 to 330
 	
@@ -284,7 +284,7 @@ musicPosauneIMvtIV = \relative c {
 % Bars 346 to 350
 	
 	
-	cis8\mf r r4 r2
+	a8\mf r r4 r2
 	R1*7
 % Bars 351 to 355
 	
@@ -293,33 +293,33 @@ musicPosauneIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 356 to 360
-	g8\f r r4 r2
-	e'4.\f dis8 d4. c8
+	b4.\f a8 g4. fis8
+	e4. dis8 d4. c8
 	b4 b cis dis
 	e\> fis g a\!
-	b,8\ff r r4 r2
+	e8\ff r r b'\f a4. g8
 % Bars 361 to 365
-	fis'4.\f e8 dis4. d8
+	fis4.\f e8 dis4. d8
 	cis4 cis dis eis
-	fis\< gis a, b\!
-	cis8\ff r r4 r2
-	gis'4.\ff fis8 eis4. e8
+	fis\< gis a b\!
+	fis8\ff r r cis'\ff b4. a8
+	gis4. fis8 eis4. e8
 % Bars 366 to 370
 	dis4 dis eis fisis
-	gis ais,\< b cis\! \mark \default
-	dis8 r dis2\fff dis4~
-	dis dis2 dis4~
-	dis dis r dis
+	gis ais\< b cis\! \mark \default
+	gis8 r gis2\fff gis4~
+	gis gis2 gis4~
+	gis gis r gis
 % Bars 371 to 375
-	r gis, r dis
+	r gis r dis
 	r dis2.\ff\>~
 	\after 1*7/8 \! dis1
 	r2 dis2\mf\>~
 	\after 1*7/8 \! dis1
 % Bars 376 to 380
-	gis\pp\<
-	dis'\mp\>(
-	cis8)\pp r r4 r2
+	dis\pp\<
+	gis\mp\>~
+	gis8\pp r r4 r2
 	R1*11
 % Bars 381 to 385
 	
@@ -344,30 +344,33 @@ musicPosauneIMvtIV = \relative c {
 	
 	\mark \default
 	R1
-	R
+	r4 cis,\mf eis cis
 % Bars 416 to 420
-	R
-	R1*4
+	R1
+	r4 dis fisis dis
+	r2 gis4_\crescmarkup cis
+	r2 ais4 dis
+	r2 b4 dis
 % Bars 421 to 425
-	r2 dis4\f fis
-	r2 e4 gis
-	r2 c,4 e
-	r2 a,4 c
-	r2 e,4 a
+	R1*5
+	
+	
+	
+	
 % Bars 426 to 430
 	b2.\ff b8 b
-	c2. c8 c
+	a2. a8 a
 	b4~ b8 r r2
 	R1
 	e2.\ff e8 e
 % Bars 431 to 435
-	fis2. fis8 fis
-	e2\> g~
-	g8\mf r r4 r2
-	e2.\fff e8 e
-	dis4 e a, g
+	dis2. dis8 dis
+	e8 r r4 r2
+	R1
+	e4\fff d cis b
+	a g fis e
 % Bars 436 to 440
-	dis'8 r r4 r2
+	fis8 r r4 r2
 	R1*15
 % Bars 441 to 445
 	
@@ -375,133 +378,133 @@ musicPosauneIMvtIV = \relative c {
 	
 % Bars 451 to 455
 	\mark \default
-	g2\fff g~
-	g8 r r4 r2
-	g2 g~
-	g8 r r4 r2
+	g2\fff b~
+	b8 r r4 r2
+	g2 b~
+	b8 r r4 r2
 % Bars 456 to 460
-	g,4 r b r
-	a r b r
-	c r e r
-	d r e r
-	d r e r
+	c,4 r d r
+	e r g r
+	fis r g r
+	a r c r
+	a r g r
 % Bars 461 to 465
-	c r b r
-	e r fis r
-	fis r r2
-	r dis4 r
+	fis r g r
+	a r e' r
+	dis r r2
+	r fis,4 r
 	R1
 % Bars 466 to 470
-	r2 dis4 r
+	r2 fis4 r
 	R1*2
 	
-	dis2.. dis8
-	dis1~
+	fis2.. fis8
+	fis1~
 % Bars 471 to 475
-	dis8 r r4 r2\fermata \bar "||"
-	\key e \major \time 4/4 gis,8\f r gis r gis r gis r
-	gis r gis r gis r gis r
-	gis r r4 r2
+	fis8 r r4 r2\fermata \bar "||"
+	\key e \major \time 4/4 e8\f r e r e r e r
+	e r e r e r e r
+	e r r4 r2
 	R1*6
 % Bars 476 to 480
 	
 % Bars 481 to 485
-	r8 a'\f fis[ cis] a r r4 \mark \default
+	r8 a\f fis[ cis] b r r4 \mark \default
 	R1*8
 % Bars 486 to 490
 	
 	
 	
 	\mark \default
-	e'4\fff e e e
+	gis'4\fff gis cis cis
 % Bars 491 to 495
-	e e e e
-	e e e e
-	e e e e
-	fis e dis e
-	dis cis dis e
+	gis gis gis gis
+	gis gis a a
+	gis gis gis gis
+	fis gis b cis
+	b gis gis gis
 % Bars 496 to 500
-	fis e dis e
-	dis8^\marcatissimo e fis e dis4 e
-	dis8 e fis e dis4 e \mark \default
-	dis8 gis fis e dis cis b b
-	b d cis e e fis g fis
+	fis gis b cis
+	b8^\marcatissimo gis fis gis b4 cis
+	b8 gis fis gis b4 cis \mark \default
+	b8 b a g fis e eis fis
+	gis! gis a ais b bis cis dis
 % Bars 501 to 505
-	e4 fis gis e
-	e8. e16 gis4~ gis8 e e b
-	ais2\sfff a\sfff \bar "||"
-	\time 2/2 gis4 e'\p d e
-	cis d b cis
+	gis4 cis, b a
+	b8. gis16 e'4~ e8 gis, gis gis
+	fis2\sfff fis\sfff \bar "||"
+	\time 2/2 b4 r4 r2
+	R1
 % Bars 506 to 510
-	a r r2
-	R1*2
-	
+	r4 b\p gis_\crescmarkup a
+	fis gis e fis
+	dis\mf r r2
 	R1
-	e'4\fff r e r
+	e4\fff r cis' r 
 % Bars 511 to 515
-	e r b r \mark \default
-	b e\p d e
-	cis d b cis
-	a r r2
-	R1*2
-% Bars 516 to 520
-	
+	gis r a r \mark \default
+	gis r4 r2
 	R1
-	c4 d\fff c e
-	c d c f
-	c d c e
+	r4 b_\pcresc gis a
+	fis gis e fis
+% Bars 516 to 520
+	dis\mf r r2
+	R1
+	r4 bes'\fff r bes
+	r a r a
+	r bes r bes
 % Bars 521 to 525
-	c d c f
-	e e r c
-	b b r gis
-	gis gis r cis
-	cis cis r cis \mark \default
+	r a r a
+	c c r g
+	gis! gis r e
+	eis eis r eis
+	fis fis r a \mark \default
 % Bars 526 to 530
-	dis r dis2~
-	dis e~
-	e eis~
-	eis eis~
-	eis dis!
+	a r b2~
+	b c~
+	c b~
+	b b~
+	b fis
 % Bars 531 to 535
-	e fis
-	e eis
-	fis fis
-	e4 r fis r
-	eis r fis fis
+	gis a
+	g gis
+	e'! dis
+	gis,4 r b r
+	b r e dis
 % Bars 536 to 540
-	e r fis r
-	eis r fis fis
-	e_\semprefff e r2
-	e4 e r2
-	e4 e r2
+	gis, r b r
+	b r e dis
+	gis, gis r2
+	gis4 gis r2
+	gis4 gis r2
 % Bars 541 to 545
-	e4 e r2
-	e4 e r2
-	e4 e r2
-	e4 e r2
-	e4 e r2 \bar "||" 
+	gis4 gis r2
+	gis4 gis r2
+	gis4 gis r2
+	gis4 gis r2
+	gis4 gis r2 \bar "||" 
 % Bars 546 to 550
-	\time 6/4 b4 r r cis r r
-	e r r cis r r
-	b r r cis r r
-	e r r cis r r
-	b r r cis r r
+	\time 6/4 gis4 r r a r r
+	b r r a r r
+	gis r r a r r
+	b r r a r r
+	gis r r a r r
 % Bars 551 to 555
-	e r r cis r r
-	e r r cis r r
-	e r r cis r r \mark \default
-	e r r r2.
-	gis4 r r r2.
+	b r r a r r
+	b r r a r r
+	b r r a r r \mark \default
+	b r r r2.
+	b4 r r r2.
 % Bars 556 to 560
-	e4 r r r2.
-	e4 r r r2.
-	gis,4 r r b r r
-	e r r b r r
-	e r r b r r
+	gis4 r r r2.
+	b4 r r r2.
+	e,4 r r gis r r
+	gis r r gis r r
+	gis r r gis r r
 % Bars 561 to 565
-	gis' r r r2.
-	b,1.
-	b~
-	b2. b4 b b
-	b r r r2. \bar "|."
+	e' r r r2.
+	gis,1.
+	gis~
+	gis2. gis4 gis gis
+	gis r r r2. \bar "|."
 }
