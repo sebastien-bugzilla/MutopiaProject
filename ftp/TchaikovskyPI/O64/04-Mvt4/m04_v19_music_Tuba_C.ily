@@ -159,8 +159,8 @@ musicTubaMvtIV = \relative c {
 	b4 r r2\!
 % Bars 171 to 175
 	d,4\f r r2
-	R1*2
-	
+	R1
+	\mmrPos #-6 R
 	c8\ff r r4 c8 r r4
 	R1
 % Bars 176 to 180
@@ -178,8 +178,8 @@ musicTubaMvtIV = \relative c {
 % Bars 186 to 190
 	e4~ e8 r r2
 	R1
-	R1*2
-	
+	R1
+	\mmrPos #-6 R
 	c8\ff r r4 c8 r r4
 % Bars 191 to 195
 	R1
@@ -453,7 +453,7 @@ musicTubaMvtIV = \relative c {
 	gis ais b cis8. cis,16
 % Bars 496 to 500
 	dis4 e fis fisis
-	gis8^\marcatissimo cis, dis e fis4 fisis
+	gis8 cis, dis e fis4 fisis
 	gis8 cis, dis e fis4 fisis \mark \default
 	gis8 gis, a ais b cis d dis
 	e eis fis fisis gis a ais bis
@@ -502,7 +502,7 @@ musicTubaMvtIV = \relative c {
 % Bars 536 to 540
 	e r d r
 	cis! r c b
-	e_\semprefff e r2
+	e e r2
 	e4 e r2
 	e4 e r2
 % Bars 541 to 545

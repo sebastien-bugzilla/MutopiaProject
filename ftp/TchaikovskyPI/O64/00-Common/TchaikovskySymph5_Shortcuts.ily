@@ -69,9 +69,10 @@ unpocodim = \markup {\italic {un poco dim.}}
 semprefff = \markup {\italic {sempre} \dynamic fff}
 marcatissimo = \markup {\italic {marcatissimo}}
 marcialeenergicocontuttaforza = \markup {\italic {marciale, energico, con tutta forza}}
-
+pppococresc = \markup {\dynamic pp \italic {poco cresc.}}
 
 sfff = #(make-dynamic-script (markup #:dynamic "sfff"))
+mfp = #(make-dynamic-script (markup #:dynamic "mfp"))
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
