@@ -86,6 +86,10 @@ iiimutainpicc = \markup {\column { \lower #1 "III muta" "in Picc." }}
 mutaingrfl = \markup {"muta in Gr.Fl."}
 mutafisinfcisinc = \markup {"muta Fis in F, Cis in C"}
 mutafinacind = \markup {"muta F in A, C in D"}
+mutacina = \markup {"muta C in A"}
+mutaainc = \markup {"muta A in C"}
+mutaginacinheincis = \markup {"muta G in A, C in H, E in Cis"}
+mutaainfiscisine = \markup {"muta A in Fis, Cis in E"}
 
 twelveEightC = \markup {
 	\concat { 
