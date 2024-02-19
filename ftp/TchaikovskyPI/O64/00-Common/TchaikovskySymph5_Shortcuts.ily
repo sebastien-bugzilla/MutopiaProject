@@ -70,6 +70,12 @@ semprefff = \markup {\italic {sempre} \dynamic fff}
 marcatissimo = \markup {\italic {marcatissimo}}
 marcialeenergicocontuttaforza = \markup {\italic {marciale, energico, con tutta forza}}
 pppococresc = \markup {\dynamic pp \italic {poco cresc.}}
+feroce = \markup {\italic {feroce}}
+ffmarcatissimolargamente = \markup {\dynamic ff \italic {marcatissimo largamente}}
+ffmarcatissimo = \markup {\dynamic ff \italic {marcatissimo}}
+semprepp = \markup {\italic {sempre} \dynamic pp}
+semprecontuttaforza = \markup {\italic {sempre con tutta forza}}
+largamente = \markup {\italic {largamente}}
 
 sfff = #(make-dynamic-script (markup #:dynamic "sfff"))
 mfp = #(make-dynamic-script (markup #:dynamic "mfp"))
