@@ -284,7 +284,7 @@ musicViolineIMvtIV = \relative c {
 	cis fis eis fis
 	r4  ais,->\ff ais-> ais->
 	ais8( gis ais b) gis( ais b ais)
-	dis(_\simile cis b ais) b( cis dis e)
+	dis( cis b ais) b( cis dis e)
 	fis( g! gis ais) b( cis dis e)
 % Bars 246 to 250
 	fis( gis) ais,( b cis dis e fis,)

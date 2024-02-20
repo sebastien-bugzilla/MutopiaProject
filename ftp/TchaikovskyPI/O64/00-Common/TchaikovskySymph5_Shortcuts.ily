@@ -76,6 +76,7 @@ ffmarcatissimo = \markup {\dynamic ff \italic {marcatissimo}}
 semprepp = \markup {\italic {sempre} \dynamic pp}
 semprecontuttaforza = \markup {\italic {sempre con tutta forza}}
 largamente = \markup {\italic {largamente}}
+legatissimo = \markup {\italic {legatissimo}}
 
 sfff = #(make-dynamic-script (markup #:dynamic "sfff"))
 mfp = #(make-dynamic-script (markup #:dynamic "mfp"))
@@ -162,6 +163,14 @@ lirii = {
 }
 liiri = {
 	\set stemLeftBeamCount = #2
+	\set stemRightBeamCount = #1
+}
+liriii = {
+	\set stemLeftBeamCount = #1
+	\set stemRightBeamCount = #3
+}
+liiiri = {
+	\set stemLeftBeamCount = #3
 	\set stemRightBeamCount = #1
 }
 
