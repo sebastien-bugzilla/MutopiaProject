@@ -144,13 +144,13 @@
 %					\new Staff {
 %						\timeMvtIV \nameStaffXIIMvtIV \musicViolineIMvtIV
 %					}
-					\new Staff {
-						\timeMvtIV \nameStaffXIIIMvtIV \musicViolineIIMvtIV
-					}
+%					\new Staff {
+%						\timeMvtIV \nameStaffXIIIMvtIV \musicViolineIIMvtIV
+%					}
 %				>>
-%				\new Staff {
-%					\timeMvtIV \nameStaffXIVMvtIV \musicViolaMvtIV
-%				}
+				\new Staff {
+					\timeMvtIV \nameStaffXIVMvtIV \musicViolaMvtIV
+				}
 %				\new Staff {
 %					\timeMvtIV \nameStaffXVMvtIV \musicVioloncellMvtIV
 %				}
