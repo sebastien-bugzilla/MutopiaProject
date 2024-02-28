@@ -77,6 +77,8 @@ semprepp = \markup {\italic {sempre} \dynamic pp}
 semprecontuttaforza = \markup {\italic {sempre con tutta forza}}
 largamente = \markup {\italic {largamente}}
 legatissimo = \markup {\italic {legatissimo}}
+ppcresc = \markup {\dynamic pp \italic {cresc.}}
+divisi = \markup {\italic {divisi}}
 
 sfff = #(make-dynamic-script (markup #:dynamic "sfff"))
 mfp = #(make-dynamic-script (markup #:dynamic "mfp"))
