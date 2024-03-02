@@ -185,7 +185,7 @@ musicFagotteIIMvtII = \relative c {
 	b8 b r4 r2
 	d4. d16 d e4. d16 cis
 % Bars 161 to 165
-	d8 r r4 r r8 f
+	d8 d r4 r r8 f
 	e d cis b d4. f8
 	e d cis b d([ f] b f)
 	\tuplet 3/2 4 {g,8\fff g g  g g g} g8->[ g->] g-> g->

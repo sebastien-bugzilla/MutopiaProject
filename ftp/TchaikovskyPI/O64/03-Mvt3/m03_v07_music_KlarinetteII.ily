@@ -250,7 +250,7 @@ musicKlarinetteIIMvtIII = \relative c {
 	aes g_\pesante g
 % Bars 221 to 225
 	aes g_\crescmarkup g
-	a g g
+	aes g g
 	aes8 r c,4\ff( d)
 	ees( e f
 	fis8) r r4 r
@@ -267,7 +267,7 @@ musicKlarinetteIIMvtIII = \relative c {
 	aes g_\pesante g
 	aes g_\crescmarkup g
 % Bars 236 to 240
-	a g g
+	aes g g
 	aes8 r c,4(\ff d)
 	ees( e f
 	fis8) r r4 r

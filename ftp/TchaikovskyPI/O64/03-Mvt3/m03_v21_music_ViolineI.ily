@@ -163,7 +163,7 @@ musicViolineIMvtIII = \relative c {
 	b\<-. a-. gis-. fis-. eis-. fis-. gis-. a-. b-. cis-. d-. b\!-. 
 	cis8->(\f fis,) r4 fis'16\mf\<-. gis-. fis-. gis\!-. 
 % Bars 131 to 135
-	a\>-. gis-. fis-. e\!-. dis\<-. e-. dis-. e\!-. fis\>-. e-. dis-. cis\!-. 
+	a\>-. gis-. fis-. e\!-. d\<-. e-. d-. e\!-. fis\>-. e-. d-. cis\!-. 
 	b\<-. cis-. b-. cis\!-. d\>-. cis-. b-. a\!-. gis-. a-. gis-. a-.
 	b\<-. a-. gis-. fis-. eis-. fis-. gis-. a-. b-. cis-. d-. b\!-.
 	cis8(-> fis,) r4 r

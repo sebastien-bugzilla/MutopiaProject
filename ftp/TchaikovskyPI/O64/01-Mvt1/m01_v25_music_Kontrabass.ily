@@ -461,16 +461,16 @@ musicKontrabassMvtI = \relative c {
 	
 	
 % Bars 401 to 405
-	r4 r8 cis,4.\ppp^\arco
-	r4 r8 b4.
-	r4 r8 a4.
-	r4 r8 gis4.
+	R2.*4
+	
+	
+	
 	R2.
 % Bars 406 to 410
-	fis\pp
+	R
 	R2.*2
 	
-	r4 r8 dis\ff^\pizz dis' r
+	r4 r8 dis,\ff^\pizz dis' r
 	R2.
 % Bars 411 to 415
 	e,8 r r r4 r8

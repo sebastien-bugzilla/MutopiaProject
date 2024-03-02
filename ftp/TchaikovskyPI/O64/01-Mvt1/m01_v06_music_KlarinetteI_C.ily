@@ -550,7 +550,7 @@ musicKlarinetteIMvtI = \relative c {
 	
 	
 	
-	e'4\p g,8 e'4 g,8
+	ees'4\p g,8 ees'4 g,8
 	R2.
 % Bars 481 to 485
 	\partCombineApart g'4 c,8 g'4 c,8 \partCombineAutomatic

@@ -97,7 +97,7 @@ musicKontrabassMvtII = \relative c {
 	cis4.^\arco\p\< fis8( a\! gis) eis--\> cis--\!
 	r4 d'8^\pizz r cis r cis, r
 	r4 d'8 r cis r cis, r \mark \default
-	b'2(\mf ais)
+	b'2(\mf^\arco ais)
 % Bars 76 to 80
 	gis4 g fis e
 	d2( cis)

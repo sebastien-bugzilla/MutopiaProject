@@ -33,7 +33,7 @@ musicViolineIMvtII = \relative c {
 	e r4 r8 r4 r8 d4.
 	d\< d\! d\> cis\!
 	<fis ais>8(\pp-. q-. q-.  q-. q-. q-.) <eis b'>(-. q-. q-. <gis b>-. q-. q-.)
-	<fis a>-.( q-. q-. q-. q-. q-.) <eis b'>(-. q-. q-. <gis b>-. q-. q-.)
+	<fis ais>-.( q-. q-. q-. q-. q-.) <eis b'>(-. q-. q-. <gis b>-. q-. q-.)
 % Bars 26 to 30
 	<fis cis'>(-.\< q-. q-. q-. q-. q-.) <b fis'>(-. q-. q-. q-. q-. q-.)\!
 	q-.(\mp q-. q-. cis-. cis-. cis-.) <d, d'>-.( q-. q-. q-. q-. q-.)

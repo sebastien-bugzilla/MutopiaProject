@@ -483,7 +483,7 @@ musicViolineIIMvtI = \relative c {
 	R2.
 	q\p
 	r4 r8 <fis fis'>8\ff^\pizz r r
-	r dis fis b dis f
+	r dis fis b dis fis
 % Bars 411 to 415
 	<b, e> r r r4 r8
 	R2.

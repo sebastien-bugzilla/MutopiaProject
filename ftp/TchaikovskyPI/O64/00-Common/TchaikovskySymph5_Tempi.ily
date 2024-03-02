@@ -6,7 +6,9 @@
 %###############################################################################
 tempiMvtI = {
 	\tempo "Andante" 4 = 80
-	s1*37 s2.*90
+	s1*37 
+	\tempo "Allegro con anima" 4. = 104
+	s2.*90
 	\tempo "Poco meno animato" % bar 128
 	s2.*3
 	\tempo "string." % bar 131

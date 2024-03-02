@@ -177,7 +177,7 @@ musicVioloncellMvtII = \relative c {
 	}
 	\timeSignature 12/8 fis4.~ fis8 r r f4.~ f8 r r
 	e4.~ e8 r r a4.~ a8 a,\ff b
-	cis dis e fis g, bes b d e g gis a
+	cis dis e fis g, bes b dis e g gis a
 % Bars 141 to 145
 	ais b cis d dis e fis g a, ais b cis
 	<d, d'>4._\fffconanima fis4( b8) a4.~ a4 a8

@@ -367,7 +367,7 @@ musicFagotteIMvtI = \relative c {
 	\mark \default
 	r4 r8 r4 c8\pp(
 % Bars 321 to 325
-	ees8-.[) r16 ees ees8](~\< ees fis-.) g-.\!
+	e8-.[) r16 e e8](~\< e fis-.) g-.\!
 	a(\> g) fis( e4\!) c8(\<
 	g'8)[\! r16 g g8]~ g[\> r16 fis fis8]\!~
 	fis[ r16 e e8]~ e4 c8(

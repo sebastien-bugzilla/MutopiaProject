@@ -59,7 +59,7 @@ musicFagotteIMvtII = \relative c {
 	fis fis fis  fis fis fis \clef bass b,4.( c4) c8
 	\tuplet 2/3 4. {c( cis) cis-- cis-- cis( d) d-- d--}
 % Bars 56 to 60
-	d r r d d fis \clef tenor \partCombineApart \stemDown \omitBeam g g g \stemUp d d e \partCombineAutomatic
+	d r r d d f \clef tenor \partCombineApart \stemDown \omitBeam g g g \stemUp d d e \partCombineAutomatic
 	g\ff\> g g  b, b d  e e e  e e e\!
 	e\f e e  g, g g  g4.\> gis
 	a\! a\p\< b\> a\!
@@ -185,7 +185,7 @@ musicFagotteIMvtII = \relative c {
 	b8 b r4 r2
 	d4. d16 d e4. d16 cis
 % Bars 161 to 165
-	d8 r r4 r r8 f
+	d8 d r4 r r8 f
 	e d cis b d4. f8
 	e d cis b \partCombineApart d([ b'] f' b,) \partCombineAutomatic
 	\tuplet 3/2 4 {d,8\fff d d   d d d} d8->[ d->] d-> d->

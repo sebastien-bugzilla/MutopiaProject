@@ -232,7 +232,7 @@ musicOboeIMvtI = \relative c {
 % Bars 246 to 250
 	
 % Bars 251 to 255
-	aes2.\mf
+	a2.\mf
 	d_\crescmarkup
 	cis\f\<
 	fis\ff \mark \default
