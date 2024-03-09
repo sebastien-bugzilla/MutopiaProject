@@ -55,10 +55,10 @@ musicTrompetenIIMvtI = \relative c {
 	
 	
 	\mark \default
-	a''8.\ff a16 a8 r4 r8
+	a''8.-\tweak X-offset -2 \ff a16 a8 r4 r8
 	R2.
 % Bars 86 to 90
-	a8.\ff a16 a8 r4 r8
+	a8.-\tweak X-offset -2 \ff a16 a8 r4 r8
 	R2.
 	a8. a16 a8 r4 r8
 	r4 r8 a8. a16 a8
@@ -74,7 +74,7 @@ musicTrompetenIIMvtI = \relative c {
 	g8. g16 g8 r4 r8
 	g g r r g g 
 	r g r g r g \mark \default
-	r4 r8 r r d\ff
+	r4 r8 r r \dynEO #'(1.5 . 2) d\ff
 % Bars 101 to 105
 	ees4.~ ees8 r r
 	r4 r8 r r f
@@ -183,11 +183,11 @@ musicTrompetenIIMvtI = \relative c {
 	
 	
 	
-	\after 2.*5/6 \! f2.\p\< \mark \default
-	g8[\ff r16 g g8] r4 r8
+	\aIIXoffset 1.5 \after 2.*5/6 \! f2.\p\< \mark \default
+	g8[-\tweak X-offset -2 \ff r16 g g8] r4 r8
 % Bars 256 to 260
 	R2.
-	g8[\ff r16 g g8] r4 r8
+	g8[-\tweak X-offset -2 \ff r16 g g8] r4 r8
 	R2.
 	g8[ r16 g g8] r4 r8
 	ges8[ r16 ges ges8] r4 r8
@@ -293,9 +293,9 @@ musicTrompetenIIMvtI = \relative c {
 	e4.\mf\> e\!
 % Bars 396 to 400
 	dis8\pp r r r4 r8 \mark \default
-	e4.\p->(~ e4 d!8)
+	e4.-\offset X-offset -2 \p->(~ e4 d!8)
 	c8 r r r4 r8
-	d4.(~\pp-> d4 c8)
+	d4.(~-\offset X-offset -3 \pp-> d4 c8)
 	b r r r4 r8
 % Bars 401 to 405
 	g'4.\ppp r4 r8
@@ -352,7 +352,7 @@ musicTrompetenIIMvtI = \relative c {
 	b8[\ff r16 b b8] b b b
 % Bars 466 to 470
 	R2.
-	b8[\f r16 g g8] g g g
+	b8[-\tweak X-offset -1 \f r16 g g8] g g g
 	g r r r4 r8
 	R2.
 	R2. \mark \default
@@ -396,7 +396,7 @@ musicTrompetenIIMvtI = \relative c {
 	bes r r r4 r8
 	r4 r8 d,\f r d16 d
 	d8 r r r4 r8
-	r4 r8 d r d16 d \mark \default
+	r4 r8 d r d16 d \mark \markAa
 	d8 r r r4 r8
 % Bars 516 to 520
 	R2.*4
@@ -406,7 +406,7 @@ musicTrompetenIIMvtI = \relative c {
 	r4 r8 d[\p r d16 d]
 % Bars 521 to 525
 	d8 r r r4 r8
-	r4 r8 d[\pp r d16 d] \mark \default
+	r4 r8 d[\pp r d16 d] \mark \markBb
 	d8 r r r4 r8
 	R2.*18
 % Bars 526 to 530

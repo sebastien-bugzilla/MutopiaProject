@@ -47,12 +47,12 @@ musicPosauneIIMvtI = \relative c {
 	\mark \default
 % Bars 66 to 70
 	R2.
-	r4 r8 r fis\p~ fis
+	r4 r8 r fis-\tweak X-offset -2 \p~ fis
 	g r r r4 r8
 	R2.*2
 	
 % Bars 71 to 75
-	r4 r8 r fis\p~ fis
+	r4 r8 r fis-\tweak X-offset -2 \p~ fis
 	g r r r4 r8
 	R2.*2
 	
@@ -77,7 +77,7 @@ musicPosauneIIMvtI = \relative c {
 	b8. b16 b8 r4 r8
 % Bars 91 to 95
 	c2.\f
-	b8.\ff b16 b8 r4 r8
+	b8.-\tweak X-offset -2 \ff b16 b8 r4 r8
 	c2.\f
 	b8._\sempreff b16 b8 r4 r8
 	c b a g fis e
@@ -86,7 +86,7 @@ musicPosauneIIMvtI = \relative c {
 	a8. a16 a8 r4 r8
 	a a r r a a 
 	r a r a r a \mark \default
-	b\ff a g~ g fis e
+	b-\offset X-offset -1 \ff a g~ g fis e
 % Bars 101 to 105
 	e4.~ e8 r r
 	g a b~ b a g
@@ -162,7 +162,7 @@ musicPosauneIIMvtI = \relative c {
 % Bars 206 to 210
 	fis,8[\fff r16 d' d8] d d d
 	R2.
-	fis,8[\ff r16 fis fis8] fis fis fis
+	fis,8[-\tweak X-offset -2 \ff r16 fis fis8] fis fis fis
 	R2.
 	fis8[\f r16 d d8] d d d
 % Bars 211 to 215
@@ -192,10 +192,10 @@ musicPosauneIIMvtI = \relative c {
 	
 	
 	
-	fis2.\p\< \mark \default
+	<< fis2. {s4\p\< s s8 s\!}>> \mark \default
 	e8[\ff r16 e e8] r4 r8
 % Bars 256 to 260
-	r4 r8 r4 fis8\ff
+	r4 r8 r4 fis8-\tweak X-offset 0.5 \ff
 	e8[ r16 e e8] r4 r8
 	r4 r8 r4 fis8
 	e8[ r16 e e8] r4 r8
@@ -275,16 +275,16 @@ musicPosauneIIMvtI = \relative c {
 % Bars 341 to 345
 	
 % Bars 346 to 350
-	r4 r8 r fis~\p fis
+	r4 r8 r fis~-\tweak X-offset -2 \p fis
 	g r r r4 r8
 	R2.*2
 	
-	r4 r8 r fis~\p fis
+	r4 r8 r fis~-\tweak X-offset -2 \p fis
 % Bars 351 to 355
 	g r r r4 r8
 	R2. \mark \default
 	R
-	r4 r8 r fis~\p fis
+	r4 r8 r fis~-\tweak X-offset -2 \p fis
 	g8 r r r4 r8
 % Bars 356 to 360
 	R2.
@@ -319,7 +319,7 @@ musicPosauneIIMvtI = \relative c {
 % Bars 396 to 400
 	\mark \default
 	a4.->\p gis
-	\after 2.*5/6 \! a2.\>
+	<< a2. {s4.\> s8 s s\!}>>
 	gis4.->\pp fis
 	gis2.
 % Bars 401 to 405
@@ -351,7 +351,7 @@ musicPosauneIIMvtI = \relative c {
 % Bars 441 to 445
 	
 	
-	gis8\f r r r4 r8
+	gis8-\tweak X-offset 0.5 \f r r r4 r8
 	R2.*7
 % Bars 446 to 450
 	
@@ -372,7 +372,7 @@ musicPosauneIIMvtI = \relative c {
 	
 	gis8[\fff r16 gis gis8] gis gis gis
 	R2.
-	gis8[\ff r16 gis gis8] gis gis gis
+	gis8[-\tweak X-offset -1.5 \ff r16 gis gis8] gis gis gis
 % Bars 466 to 470
 	R2.
 	gis8[\f r16 e e8] e e e
@@ -423,13 +423,13 @@ musicPosauneIIMvtI = \relative c {
 	g r r gis\f r r 
 	fis r r fis r r
 	g! r r gis r r
-	fis r r fis r r \mark \default
+	fis r r fis r r \mark \markAa
 	g! r r r4 r8
 % Bars 516 to 520
 	R2.*7
 % Bars 521 to 525
 	
-	\mark \default
+	\mark \markBb
 	R2.*19
 % Bars 526 to 530
 	

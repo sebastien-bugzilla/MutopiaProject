@@ -81,7 +81,7 @@ musicViolineIMvtI = \relative c {
 	q8\> <fis a>4~ q8\p r r
 	b'8[-.\f r16 b b8]~ b cis(\< d\!
 % Bars 81 to 85
-	e\ff\> d) cis\!( b)\f cis(\< d\! 
+	e\ff d) cis\>( b)\f cis(\< d\! 
 	e\ff d) cis(\> b)\! cis(\< d\!
 	e\ff d) cis(\ff b a g) \mark \default
 	fis8[\ff r16 fis fis8] r4 r8
@@ -123,9 +123,9 @@ musicViolineIMvtI = \relative c {
 	c: b: a: cis: b: ais: \mark \default
 	d: cis: b: fis'8 r r
 % Bars 116 to 120
-	fis,,4.~_\moltoespr\sfp\< fis4^\mfmarkup gis8(
+	fis,,4.~\sfp\< \markEO #'(0 . 0.5) fis4_\moltoespr gis8(^\mfmarkup
 	ais4.) b4( cis8)\!
-	d4.\f\> cis
+	d4.\f\> cis\!
 	\after 2.*5/6 \! fis,2.\p\<
 	fis4._\mfcresc~ fis4 gis8(
 % Bars 121 to 125
@@ -166,7 +166,7 @@ musicViolineIMvtI = \relative c {
 	R2.
 % Bars 151 to 155
 	e4.(~\p e8 dis e)
-	r4 r8 <a, a'>8\ff^\pizz r r
+	r4 r8 <a, a'>8-\offset X-offset 1 \ff^\pizz r r
 	r4 r8 a cis e
 	<a, a'> r r r4 r8
 	R2.
@@ -204,7 +204,7 @@ musicViolineIMvtI = \relative c {
 	b fis4 a( g8) \mark \default
 	r8 fis4_\pcresc e( d8)
 	r g4 fis( e8)
-	r a4\f cis b8~
+	r \dynEO #'(0 . 2) a4\f cis b8~
 	b a4 gis( g8)
 % Bars 186 to 190
 	r fis4\f e d8~
@@ -214,7 +214,7 @@ musicViolineIMvtI = \relative c {
 	a a4 ais b8~
 % Bars 191 to 195
 	b b4 c( cis8)
-	r d4_\fcresc dis( e8)
+	r \markEO #'(0 . 2) d4_\fcresc dis( e8)
 	r e4 fis( g8)
 	r a4\fff gis a8~
 	a a4 gis a8~
@@ -239,7 +239,7 @@ musicViolineIMvtI = \relative c {
 % Bars 211 to 215
 	<a fis'>4 <fis a>8 <a fis'>4 <fis a>8
 	<d d'>4 fis8 <d d'>4 fis8
-	<d a'>4 d8 <d a'>4 d8 \mark #11
+	<d a'>4 d8 <d a'>4 d8 \mark #11 
 	R2.*3
 	
 % Bars 216 to 220
@@ -384,7 +384,7 @@ musicViolineIMvtI = \relative c {
 	e8[-.) r16 e e8](~ e\< fis)-. g-.\!
 	a(\> g) fis(\! e4) c8(\<
 	g'8[-.)\! r16 g g8]~ g8.\> fis16 fis8~\!
-	fis8. e16 e8 r e(\mf-. d)-. 
+	fis8. e16 e8-. r e(\mf-. d)-. 
 	d,4.->~ d8 <e a>4\mf\>~
 % Bars 346 to 350
 	q8 <fis a>4~ q8\p r r 
@@ -406,7 +406,7 @@ musicViolineIMvtI = \relative c {
 	R2.
 % Bars 361 to 365
 	r8 a16(\f b cis d e8) r r
-	r gis,,,16(\f ais b cis d8) r r
+	r gis,,,16(-\offset X-offset -1 \f ais b cis d8) r r
 	r cis'16(\ff dis eis fis gis8) cis,,16 d! dis e!
 	eis\< fis gis a ais b bis cis d! dis e! eis\! \mark \default
 	fis8[\fff r16 fis fis8]~ fis gis a
@@ -419,8 +419,8 @@ musicViolineIMvtI = \relative c {
 % Bars 371 to 375
 	d: cis: b: dis: cis: bis:
 	e: dis: cis: gis'8 r r
-	gis,,4.~\sfp\<_\moltoespr gis4 ais8(^\mfmarkup
-	bis4.) cis4( dis8)\!
+	gis,,4.~\sfp\< \markEO #'(0 . 3) gis4_\moltoespr ais8(-\offset X-offset -1 ^\mfmarkup
+	\once \stemUp bis4.) cis4( dis8)\!
 	e4.\f\> dis\!
 % Bars 376 to 380
 	\after 2.*5/6 \! gis,2.\p\<
@@ -442,7 +442,7 @@ musicViolineIMvtI = \relative c {
 	
 % Bars 391 to 395
 	
-	r8 gis'^\pizz\p gis, r4 r8
+	r8 gis'-\offset X-offset 0.5 ^\pizz\p gis, r4 r8
 	R2.*3
 	
 	
@@ -472,16 +472,16 @@ musicViolineIMvtI = \relative c {
 	R2.*2
 % Bars 416 to 420
 	
-	r8 b,(\mf\< cis) dis( e fis)
+	r8 b,(-\offset X-offset -1 \mf-\tweak extra-offset #'(0 . 1) \< cis) dis( e fis)
 	gis( a gis)\! fis4(\sff\> b,8)\!
 	R2.*2
 	
 % Bars 421 to 425
-	r8 b(\mf\< cis) dis( e fis)
+	r8 b(-\offset X-offset -1 \mf-\tweak extra-offset #'(0 . 1) \< cis) dis( e fis)
 	gis( a b)\! gis4(\sff\> fis8)\!
 	R2.*2
 	
-	r8 b,(\mf\< cis) dis( e fis)
+	r8 b,(-\offset X-offset -1 \mf-\tweak extra-offset #'(0 . 1) \< cis) dis( e fis)
 % Bars 426 to 430
 	gis( a gis)\! fis4(\sff\> b,8)\!
 	r8 gis'4_\pmoltocantabileedespr fis( e8)
@@ -493,15 +493,15 @@ musicViolineIMvtI = \relative c {
 	r a4 gis4( fis8)
 	r b4_\pcresc bis cis8~
 	cis fis4 e dis8~
-	dis gis4\f fis e8~
+	dis \dynEO #'(0 . 2) gis4\f fis e8~
 % Bars 436 to 440
 	e_\dimmarkup dis4 cis dis8~
 	dis cis4 b cis8~
 	cis gis4 b( a8) \mark \default
-	r8 gis4_\pcresc fis( e8)
+	r8 \markEO #'(0 . 1) gis4_\pcresc fis( e8)
 	r a4 gis( fis8)
 % Bars 441 to 445
-	r b4\f dis cis8~
+	r \dynEO #'(0 . 2) b4\f dis cis8~
 	cis b4 ais( a8)
 	r gis4\f fis e8~
 	e e4 fis( gis8)
@@ -510,7 +510,7 @@ musicViolineIMvtI = \relative c {
 	a a4 ais b8~
 	b b4 bis cis8~
 	cis cis4 d( dis8)
-	r e4_\fcresc eis( fis8)
+	r \markEO #'(0 . 2) e4_\fcresc eis( fis8)
 	r fis4 gis( a8)
 % Bars 451 to 455
 	r b4\fff ais b8~
@@ -588,7 +588,7 @@ musicViolineIMvtI = \relative c {
 	e8[) r16 e\f e8]~ e8[ r16 e e8]~
 	e8[ r16 e e8]~ e e( dis
 	e8[) r16 e e8]~ e8[ r16 e e8]~
-	e8[ r16 e e8]~ e e( dis \mark \default
+	e8[ r16 e e8]~ e e( dis \mark \markAa
 	e) r r r4 r8
 % Bars 516 to 520
 	R2.*3
@@ -598,7 +598,7 @@ musicViolineIMvtI = \relative c {
 	e8[ r16 e e8]~ e e( dis
 % Bars 521 to 525
 	e8[) r16 e e8]~ e8[ r16 e e8]~
-	e8[ r16 e e8]~ e e( dis \mark \default
+	e8[ r16 e e8]~ e e( dis \mark \markBb
 	e) r r r4 r8
 	R2.*18
 % Bars 526 to 530

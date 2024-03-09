@@ -48,20 +48,20 @@ musicFloteIIStaffIIMvtI = \relative c' {
 % Bars 56 to 60
 	\mark \default
 	R2. \changeStaffName \flII-III
-	b'8\p r r c r r
-	e r r c r r
+	R
+	e'8 r r c r r
 	e r r e r r
 % Bars 61 to 65
 	b' r r c r r
 	b\p r r a r r
 	e r r c r r
 	e r r e r r
-	b' r r \partCombineApart r g,(\mf gis \mark \default % 
+	b' r r \partCombineApart r g,(_\mf gis \mark \default % 
 % Bars 66 to 70
 	a)\noBeam \partCombineAutomatic d16(\f e fis g a8) r r
 	r8 fis,16(\mp g a b c8) r r
 	r4 d16(\ff cis c b a gis g fis)
-	e( fis g a g fis e8) \partCombineApart g(\mf gis
+	e( fis g a g fis e8) \partCombineApart g(_\mf gis
 	a) \partCombineAutomatic d16(\f e fis g a8) r r
 % Bars 71 to 75
 	r fis,16(\mp g a b c8) r r 
@@ -78,13 +78,13 @@ musicFloteIIStaffIIMvtI = \relative c' {
 % Bars 81 to 85
 	b( cis d fis g fis g fis) g( fis g fis
 	e cis d fis e cis d) fis( g fis g fis 
-	g fis g fis g fis g) g,( a ais b ais) \mark \default
-	R2.*32
-%	fis'8.\ff fis16 fis8 r4 r8
-%	e,16( fis g a b8) r b16( cis d e)
-%% Bars 86 to 90
-%	fis8.\ff fis16 fis8 r4 r8
-%	e,16( fis g a b8) r b16( cis d e)
+	g fis g fis g fis g) g,( a ais b ais) \mark \default 
+	fis'8.\ff fis16 fis8 r4 r8
+	e,16( fis g a b8) r b16( cis d e)
+% Bars 86 to 90
+	fis8.\ff fis16 fis8 r4 r8
+	e,16( fis g a b8) r b16( cis d e)
+	\changeStaffName \flIII R2.*28
 %	fis8._\sempreff fis16 fis8 r4 r8
 %	r4 g8(\ff gis ais b)
 %	b8. b16 b8 r4 r8
@@ -122,7 +122,7 @@ musicFloteIIStaffIIMvtI = \relative c' {
 	R2.*3
 	
 	
-	\changeStaffName \flIII R2. % r8 fis\p( fis,) r4 r8
+	R2. % r8 fis\p( fis,) r4 r8
 	R2.*3
 % Bars 121 to 125
 	
@@ -147,7 +147,7 @@ musicFloteIIStaffIIMvtI = \relative c' {
 %	e4.\ff\> d8( cis' b
 %	fis)\! r r r4 r8
 	\mark \default
-	R2.*30
+	\changeStaffName \flII R2.*30
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -167,7 +167,7 @@ musicFloteIIStaffIIMvtI = \relative c' {
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	r4 d8(~_\pcresc d cis b)
+	\changeStaffName \flII-III r4 \omitAdue d8(~_\pcresc d cis b) 
 	g4\mf\< gis8~ gis a4\!
 	a\f\< ais8~ ais b4\!
 	r4 e8(~_\fdim e d cis)
@@ -181,13 +181,13 @@ musicFloteIIStaffIIMvtI = \relative c' {
 % Bars 186 to 190
 	d8) r r r4 r8
 	R2.
-	R2.*26
-%	r8 e,4_\pcrescmolto fis g8~
-%	g g4 gis a8~_\mfcresc
-%	a a'4 ais b8~
-%% Bars 191 to 195
-%	b b4 c4( cis8)
-%	r d4_\fcresc dis( e8)
+	r8 \omitAdue e,4_\pcrescmolto^\II fis g8~
+	g g4 gis a8~_\mfcresc
+	a a'4 ais b8~
+% Bars 191 to 195
+	b b4 c4( cis8)
+	r d4_\fcresc dis( e8)
+	R2.*21
 %	r e4 fis( g8)
 %	r a4\fff gis a8~
 %	a a4 gis a8~
@@ -229,14 +229,14 @@ musicFloteIIStaffIIMvtI = \relative c' {
 	\mark \default
 	R2. %ees''4->(\f aes,8) ees'4->( aes,8)
 % Bars 241 to 245
-	R2.*13
+	\changeStaffName \flIII R2.*13
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 	
 	
-	\changeStaffName \flIII R2.*13 
+	R2.*13 
 %	d,2.\ff \mark \default
 %	e'8[\fff r16 e e8] r a,,16( ais b cis
 %% Bars 256 to 260
@@ -321,17 +321,17 @@ musicFloteIIStaffIIMvtI = \relative c' {
 	
 	
 	
-	R2.*3
+	R2.*3 \changeStaffName \flII-III
 %	r4 r8 d,4.\p
 %% Bars 331 to 335
 %	e d8( e fis)
 %	g4 r8 r4 r8
-	R2.*4 \changeStaffName \flII-III
+	R2.*4
 	
 	
 % Bars 336 to 340
 	\mark \default
-	b8\p r r c r r
+	b,8\p r r c r r
 	e r r c r r
 	e r r e r r
 	b' r r c r r
@@ -339,7 +339,7 @@ musicFloteIIStaffIIMvtI = \relative c' {
 	b\p r r a r r
 	e r r c r r
 	e r r e r r \changeStaffName \flII-III
-	b' r r \partCombineApart r g,(\mf gis
+	b' r r \partCombineApart r g,(_\mf gis
 	a)\noBeam \partCombineAutomatic d16(\f e fis g a8) r r
 % Bars 346 to 350
 	r fis,16(\mp g a b c8) r r
@@ -352,9 +352,9 @@ musicFloteIIStaffIIMvtI = \relative c' {
 	b( cis d e eis fis fis,8) \partCombineApart g(_\mf gis \mark \default
 	a) \partCombineAutomatic d16(\f e! fis g a8) r r
 	r fis,16(\mp g a b c8) r r
-	r4 d16(\ff cis c b a gis g fis)
+	r4 d16(-\tweak X-offset -2 \ff cis c b a gis g fis)
 % Bars 356 to 360
-	e( fis g a g fis e8) \partCombineApart g\mf gis
+	e( fis g a g fis e8) \partCombineApart g_\mf gis
 	a4.->~ a8 r r \partCombineAutomatic
 	R2.*4
 	
@@ -519,13 +519,13 @@ musicFloteIIStaffIIMvtI = \relative c' {
 %	e)[ r16 e\f e8]~ e[ r16 e e8]~
 %	e[ r16 e e8]~ e e( dis
 %	e)[ r16 e e8]~ e[ r16 e e8]~
-%	e[ r16 e e8]~ e e( dis \mark \default
+%	e[ r16 e e8]~ e e( dis \mark \markAa
 %	e) r r r4 r8
 % Bars 516 to 520
 	R2.*7
 % Bars 521 to 525
 	
-	\mark \default
+	\mark \markBb
 	R2.*19
 % Bars 526 to 530
 	

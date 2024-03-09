@@ -147,14 +147,14 @@ musicVioloncellMvtI = \relative c {
 	c: b: a: cis: b: ais: \mark \default
 	d: cis: d: cis8 ais16 b bis cis
 % Bars 116 to 120
-	fis4.\sfp\<~ fis4_\moltoespr eis8_\mfmarkup(
+	fis4.\sfp\<~ \markEO #'(0 . 0.5) fis4_\moltoespr \markEO #'(0 . 7) eis8_\mfmarkup(
 	e!4.) d4( cis8)\!
 	b4.\f\> e,\!
 	\after 2.*5/6 \! fis2.\p\<
 	fis'4._\mfcresc~ fis4 eis8(
 % Bars 121 to 125
 	e!4.) d4( cis8)
-	b4.\ff\> eis,\!
+	\hairpinShorten #'(0 . -7) b4.\ff\> eis,\!
 	\after 2.*5/6 \! fis2.\p\<
 	<d d'>4.\sff\>~ q4 e8\!
 	\after 2.*5/6 \! fis2.\mp\<
@@ -190,18 +190,18 @@ musicVioloncellMvtI = \relative c {
 	R
 % Bars 151 to 155
 	<d b'>\p
-	r4 r8 <e a>8\ff^\pizz cis e
+	r4 r8 <e a>8\ff-\offset X-offset -6 ^\pizz cis e
 	a r r r4 r8
 	<a, d> r r r4 r8
 	R2.
 % Bars 156 to 160
-	r8 fis''(\mf\<^\arco f) e( d cis)
+	r8 fis''(\mf\<-\offset X-offset -6 ^\arco f) e( d cis)
 	c!( b a)\! b(\sff\> bes a)\!
 	R2.*2
 	
 	r8 fis'(\mf\< f) e( d cis)
 % Bars 161 to 165
-	c!( b a)\! b4(_\sffp cis8)
+	c!( b a)\! b4(\sffp cis8)
 	R2.*2
 	
 	r8 fis(\mf\< f) e( d cis)
@@ -210,7 +210,7 @@ musicVioloncellMvtI = \relative c {
 	R2.*2
 	
 	r8 fis'(\mf\< f) e( d cis)
-	c!( b a)\! b4(_\sffp cis8)
+	c!( b a)\! \dynEO #'(0.5 . 2) b4(\sffp cis8)
 	d,8(\p a d) r4 fis8(
 % Bars 171 to 175
 	e a, e') r4 g8(
@@ -337,7 +337,7 @@ musicVioloncellMvtI = \relative c {
 	e\f g4 b8
 % Bars 281 to 285
 	e4.\mf d
-	c a\<
+	c \hairpinShorten #'(0 . -8) a\<
 	f' e\!
 	d\f\< c\!
 	bes4\ff bes8 bes4 bes8
@@ -425,7 +425,7 @@ musicVioloncellMvtI = \relative c {
 	R2.*3
 	
 	
-	r8 b16(\mf cis d e fis8) r r
+	r8 b16(-\offset X-offset -1 \mf cis d e fis8) r r
 % Bars 361 to 365
 	R2.
 	r4 r8^\div r <<{fis-- fis--
@@ -445,7 +445,7 @@ musicVioloncellMvtI = \relative c {
 % Bars 371 to 375
 	d: cis: b: dis: cis: bis: 
 	e: dis: cis: gis8 bis16 cis d! dis
-	gis4.~\sfp\< gis4_\moltoespr fisis8_\mfmarkup(
+	gis4.~\sfp\< \markEO #'(0 . 3.5) gis4_\moltoespr \markEO #'(0 . 2.5) fisis8_\mfmarkup(
 	fis!4.) e4( dis8)\!
 	cis4.\f\> fis,\!
 % Bars 376 to 380
@@ -459,7 +459,7 @@ musicVioloncellMvtI = \relative c {
 	\after 2.*5/6 \! gis2.\mp\<
 	e4.\sff\>~ e4 <fis a>8\!
 	\after 2.*5/6 \! gis2.\mp\< \clef tenor
-	gis'4._\fflargamente gis4 gis8
+	\markEO #'(0 . 1) gis'4._\fflargamente gis4 gis8
 % Bars 386 to 390
 	gis4.~ gis8 fis( e)
 	gis4.~ gis8 fis( e)
@@ -479,7 +479,7 @@ musicVioloncellMvtI = \relative c {
 	
 	
 % Bars 401 to 405
-	r4 r8 cis'4.\ppp^\arco
+	r4 r8 cis'4.\ppp-\offset X-offset -7 ^\arco
 	r4 r8 b4.
 	r4 r8 a4.
 	r4 r8 gis4.
@@ -488,12 +488,12 @@ musicVioloncellMvtI = \relative c {
 	fis\pp
 	R
 	<e a>\p
-	r4 r8 dis8\ff^\pizz dis fis
+	r4 r8 dis8-\offset X-offset -0.5 \ff-\offset X-offset -6 ^\pizz dis fis
 	b r r r4 r8
 % Bars 411 to 415
 	<e,, b' gis' e'> r r r4 r8
 	R2.
-	r8 gis''\mf\<(^\arco g) fis( e dis)
+	r8 \markEO #'(-7 . -2.5) gis''\mf\<(^\arco g) fis( e dis)
 	d!( cis b)\! cis(\sff\> c b)\!
 	R2.*2
 % Bars 416 to 420
@@ -606,7 +606,7 @@ musicVioloncellMvtI = \relative c {
 	e r r d\f r r
 	c r r b r r
 	e r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markAa
 	e r r d\mf r r
 % Bars 516 to 520
 	c_\dimmarkup r r b r r
@@ -616,7 +616,7 @@ musicVioloncellMvtI = \relative c {
 	fis r r fis r r
 % Bars 521 to 525
 	e r r gis r r
-	fis r r fis r r \mark \default
+	fis r r fis r r \mark \markBb
 	e\p r r d r r
 	c r r b r r
 	e r r d r r

@@ -191,7 +191,7 @@ musicPaukenMvtI = \relative c {
 	
 	
 	
-	d2.:32\pp\< \mark \default
+	\after 2.*5/6 \! d2.:32\pp\< \mark \default
 	a8[\ff r16 a a8] r4 r8
 % Bars 256 to 260
 	r4 r8 r4 d8\ff
@@ -206,7 +206,7 @@ musicPaukenMvtI = \relative c {
 	r4 r8 r4 d8
 	d8[ r16 d d8] r4 r8
 % Bars 266 to 270
-	d8[ r16 d d8] r4^\mutaaingdinbeind r8
+	d8[ r16 d d8] r4^\mutaaing_dinbeind r8
 	R2.*2
 	\mark \default
 	R2.*16
@@ -400,7 +400,7 @@ musicPaukenMvtI = \relative c {
 	e r r e\f r r
 	e r r b r r 
 	e r r e r r
-	e r r b r r \mark \default
+	e r r b r r \mark \markAa
 	e r r r4 r8
 % Bars 516 to 520
 	r4 r8 b\mp r r
@@ -410,7 +410,7 @@ musicPaukenMvtI = \relative c {
 	r4 r8 b\pp r r
 % Bars 521 to 525
 	e r r r4 r8
-	r4 r8 b r r \mark \default
+	r4 r8 b r r \mark \markBb
 	e r r r4 r8
 	r4 r8 b\pp r r
 	e r r r4 r8

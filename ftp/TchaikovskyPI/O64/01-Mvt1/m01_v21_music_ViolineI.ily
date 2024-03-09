@@ -384,7 +384,7 @@ musicViolineIMvtI = \relative c {
 	e8[-.) r16 e e8](~ e\< fis)-. g-.\!
 	a(\> g) fis(\! e4) c8(\<
 	g'8[-.)\! r16 g g8]~ g8.\> fis16 fis8~\!
-	fis8. e16 e8 r e(\mf-. d)-. 
+	fis8. e16 e8-. r e(\mf-. d)-. 
 	d,4.->~ d8 <e a>4\mf\>~
 % Bars 346 to 350
 	q8 <fis a>4~ q8\p r r 

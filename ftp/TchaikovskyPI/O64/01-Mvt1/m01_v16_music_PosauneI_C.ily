@@ -47,12 +47,12 @@ musicPosauneIMvtI = \relative c {
 	\mark \default
 % Bars 66 to 70
 	R2.
-	r4 r8 r c'\p~ c
+	r4 r8 r c'-\tweak X-offset -2 \p~ c
 	b r r r4 r8
 	R2.*2
 	
 % Bars 71 to 75
-	r4 r8 r c\p~ c
+	r4 r8 r c-\tweak X-offset -2 \p~ c
 	b r r r4 r8
 	R2.*2
 	
@@ -77,7 +77,7 @@ musicPosauneIMvtI = \relative c {
 	e8. e16 e8 r4 r8
 % Bars 91 to 95
 	e2.\f
-	e8.\ff e16 e8 r4 r8
+	e8.-\tweak X-offset -2 \ff e16 e8 r4 r8
 	e2.\f
 	\partCombineApart e8. e16 e8 e fis g
 	a g fis e r r \partCombineAutomatic
@@ -162,7 +162,7 @@ musicPosauneIMvtI = \relative c {
 % Bars 206 to 210
 	d8[\fff r16 fis fis8] fis fis fis
 	R2.
-	d8[\ff r16 d d8] d d d 
+	d8[-\tweak X-offset -2 \ff r16 d d8] d d d 
 	R2.
 	a8[\f r16 a a8] a a a
 % Bars 211 to 215
@@ -192,7 +192,7 @@ musicPosauneIMvtI = \relative c {
 	
 	
 	
-	a2.\p\< \mark \default
+	<<a2.  {s4\p\< s s8 s\!}>> \mark \default
 	a8[\ff r16 a a8] r4 r8
 % Bars 256 to 260
 	r4 r8 \partCombineApart r a\ff a \partCombineAutomatic
@@ -275,16 +275,16 @@ musicPosauneIMvtI = \relative c {
 % Bars 341 to 345
 	
 % Bars 346 to 350
-	r4 r8 r c~\p c
+	r4 r8 r c~-\tweak X-offset -2 \p c
 	b r r r4 r8
 	R2.*2
 	
-	r4 r8 r c~\p c
+	r4 r8 r c~-\tweak X-offset -2 \p c
 % Bars 351 to 355
 	b r r r4 r8
 	R2. \mark \default
 	R
-	r4 r8 r c~\p c
+	r4 r8 r c~-\tweak X-offset -2 \p c
 	b8 r r r4 r8
 % Bars 356 to 360
 	R2.
@@ -319,7 +319,7 @@ musicPosauneIMvtI = \relative c {
 % Bars 396 to 400
 	\mark \default
 	fis4.->\p gis
-	\after 2.*5/6 \! cis,2.\>
+	<< cis,2. {s4.\> s8 s s\!}>>
 	e4.->\pp fis
 	b,2.
 % Bars 401 to 405
@@ -351,7 +351,7 @@ musicPosauneIMvtI = \relative c {
 % Bars 441 to 445
 	
 	
-	b8\f r r r4 r8
+	b8-\tweak X-offset 0.5 \f r r r4 r8
 	R2.*7
 % Bars 446 to 450
 	
@@ -372,7 +372,7 @@ musicPosauneIMvtI = \relative c {
 	
 	e8[\fff r16 e e8] e e e
 	R2.
-	e8[\ff r16 e e8] e e e
+	e8[-\tweak X-offset -1.5 \ff r16 e e8] e e e
 % Bars 466 to 470
 	R2.
 	b8[\f r16 b b8] b b b
@@ -423,13 +423,13 @@ musicPosauneIMvtI = \relative c {
 	b r r b\f r r 
 	a r r a r r
 	\once \partCombineApart g! r r b r r
-	a r r a r r \mark \default
+	a r r a r r \mark \markAa
 	\once \partCombineApart g! r r r4 r8
 % Bars 516 to 520
 	R2.*7
 % Bars 521 to 525
 	
-	\mark \default
+	\mark \markBb
 	R2.*19
 % Bars 526 to 530
 	

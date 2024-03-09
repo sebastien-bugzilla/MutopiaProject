@@ -10,7 +10,7 @@ nameGrandStaffIMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffIIMvtI = {
-	\set Staff.instrumentName = ""
+	\set Staff.instrumentName = "Hörner in F"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #""
 }
@@ -33,7 +33,7 @@ nameGrandStaffIMvtII = {
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffIIMvtII = {
-	\set Staff.instrumentName = ""
+	\set Staff.instrumentName = "Hörner in F"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #""
 }
@@ -56,7 +56,7 @@ nameGrandStaffIMvtIII = {
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffIIMvtIII = {
-	\set Staff.instrumentName = ""
+	\set Staff.instrumentName = "Hörner in F"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #""
 }
@@ -74,7 +74,7 @@ nameGrandStaffIMvtIV = {
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffIIMvtIV = {
-	\set Staff.instrumentName = ""
+	\set Staff.instrumentName = "Hörner in F"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #""
 }

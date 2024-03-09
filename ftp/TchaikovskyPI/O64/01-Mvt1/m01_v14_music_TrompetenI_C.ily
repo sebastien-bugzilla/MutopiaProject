@@ -55,10 +55,10 @@ musicTrompetenIMvtI = \relative c {
 	
 	
 	\mark \default
-	d''8.\ff d16 d8 r4 r8
+	d''8.-\tweak X-offset -2 \ff d16 d8 r4 r8
 	R2.
 % Bars 86 to 90
-	d8.\ff d16 d8 r4 r8
+	d8.-\tweak X-offset -2 \ff d16 d8 r4 r8
 	R2.
 	d8._\sempreff d16 d8 r4 r8
 	r4 r8 a'8. a16 a8
@@ -184,10 +184,10 @@ musicTrompetenIMvtI = \relative c {
 	
 	
 	R2. \mark \default
-	g'8[\ff r16 g g8] r4 r8
+	g'8[-\tweak X-offset -2 \ff r16 g g8] r4 r8
 % Bars 256 to 260
 	R2.
-	g8[\ff r16 g g8] r4 r8
+	g8[-\tweak X-offset -2 \ff r16 g g8] r4 r8
 	R2.
 	g8[ r16 g g8] r4 r8
 	aes8[ r16 aes aes8] r4 r8
@@ -293,9 +293,9 @@ musicTrompetenIMvtI = \relative c {
 	e'4.\mf\> e\!
 % Bars 396 to 400
 	fis,8\pp r r r4 r8 \mark \default
-	e'4.\p->~ e8 d(-. e-.)
+	e'4.-\offset X-offset -2 \p->~ e8 d(-. e-.)
 	\after 2.*5/6 \! a,2.\>
-	d4.~\pp-> d8 c-.( d-.)
+	d4.~-\offset X-offset -3 \pp-> d8 c-.( d-.)
 	g,2.
 % Bars 401 to 405
 	c4.\ppp r4 r8
@@ -341,7 +341,7 @@ musicTrompetenIMvtI = \relative c {
 % Bars 456 to 460
 	g g g  g g g
 	R2.
-	\partCombineApart r4 r8 << g4. {s8\f\< s s\!}>> \partCombineAutomatic \mark \default
+	\partCombineApart r4 r8 << g4. {s8_\f_\< s s\!}>> \partCombineAutomatic \mark \default
 	g8[\fff r16 g g8] g g g
 	g g g  g g g
 % Bars 461 to 465
@@ -352,7 +352,7 @@ musicTrompetenIMvtI = \relative c {
 	g8[\ff r16 g g8] g g g
 % Bars 466 to 470
 	R2.
-	d8[\f r16 d d8] d d d
+	d8[-\tweak X-offset -1 \f r16 d d8] d d d
 	d r r r4 r8
 	b r r r4 r8
 	R2. \mark \default
@@ -396,7 +396,7 @@ musicTrompetenIMvtI = \relative c {
 	d r r r4 r8
 	r4 r8 d\f r d16 d
 	d8 r r r4 r8
-	r4 r8 d r d16 d \mark \default
+	r4 r8 d r d16 d \mark \markAa
 	d8 r r r4 r8
 % Bars 516 to 520
 	R2.*4
@@ -406,7 +406,7 @@ musicTrompetenIMvtI = \relative c {
 	r4 r8 d,[\p r d16 d]
 % Bars 521 to 525
 	d8 r r r4 r8
-	r4 r8 d[\pp r d16 d] \mark \default
+	r4 r8 d[\pp r d16 d] \mark \markBb
 	d8 r r r4 r8
 	R2.*18
 % Bars 526 to 530

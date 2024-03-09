@@ -5,9 +5,21 @@
 %#                       T E M P I   C O N D U C T O R S                       #
 %###############################################################################
 tempiMvtI = {
-	\tempo "Andante" 4 = 80
+	\tempo \markup {
+		\concat {
+			"Andante ("
+			\fontsize #-4 \general-align #Y #DOWN {\note {4} #1 } 
+			" = 80)"
+		}
+	}
 	s1*37 
-	\tempo "Allegro con anima" 4. = 104
+	\tempo \markup { % bar 38
+		\concat {
+			"Allegro con anima (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 104)"
+		}
+	}
 	s2.*90
 	\tempo "Poco meno animato" % bar 128
 	s2.*3
@@ -15,13 +27,27 @@ tempiMvtI = {
 	s2.
 	\tempo "Tempo I" % bar 132
 	s2.*20
-	\tempo "Un pochettino più animato" % bar 152
+	\tempo \markup { % bar 152
+		\column { \lower #1 "Un pochettino" "più animato" }
+	}
 	s2.*18
-	\tempo "Molto più tranquillo" 4. = 92 % bar 170
+	\tempo \markup {  % bar 170
+		\concat {
+			"Molto più tranquillo ("
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 92)"
+		}
+	}
 	s2.*18
 	\tempo "stringendo" % bar 188
 	s2.*6
-	\tempo "Tempo I" 4. = 104 % bar 194
+	\tempo \markup { % bar 194
+		\concat {
+			"Tempo I ("
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 104)"
+		}
+	}
 	s2.*191
 	\tempo "Poco meno animato" % bar 385
 	s2.*3

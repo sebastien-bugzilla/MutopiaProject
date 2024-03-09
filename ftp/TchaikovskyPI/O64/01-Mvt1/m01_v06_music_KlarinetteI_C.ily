@@ -57,7 +57,7 @@ musicKlarinetteIMvtI = \relative c {
 	
 	
 % Bars 41 to 45
-	r4 r8 r4 ees8\pp(
+	r4 r8 r4 ees8-\offset X-offset -1.5 \pp(
 	g)[ r16 g g8]~ g a-.(\< bes)-.\!
 	c(\> bes) a(\! g4) ees8(\<
 	bes')[\! r16 bes bes8]~ bes[\> r16 a a8]\!~
@@ -78,7 +78,7 @@ musicKlarinetteIMvtI = \relative c {
 	c4 g8) cis4( g8) \mark \default
 	d'4.->\mp\>~ d16 d(\p e fis g a
 	bes a g f! ees! d c) r r8 r
-	r4 r8 c16(\p d ees f g a
+	r4 r8 c16(-\tweak X-offset -2.5 \p d ees f g a
 	bes a g f ees d c) r r8 r
 % Bars 61 to 65
 	r4 r8 c16( d ees f g a
@@ -108,10 +108,10 @@ musicKlarinetteIMvtI = \relative c {
 	d( e f a bes a bes a) bes( a bes a
 	g e f a g e f) a( bes a bes a
 	bes a bes a bes a bes) bes,( c cis d cis) \mark \default
-	a'8.\ff a16 a8 r e,16( f g a
+	a'8.-\tweak X-offset -2 \ff a16 a8 r e,16( f g a
 	bes8) r bes16( c d e f8) r
 % Bars 86 to 90
-	a8.\ff a16 a8 r8 e,16( f g a
+	a8.-\tweak X-offset -2 \ff a16 a8 r8 e,16( f g a
 	bes8) r bes16( c d e f8) r
 	a8._\sempreff a16 a8 r4 r8
 	r4 \partCombineApart bes,8( b cis d) \partCombineAutomatic
@@ -150,12 +150,12 @@ musicKlarinetteIMvtI = \relative c {
 	R2.*3
 	
 	
-	\partCombineApart r8 r a[(\p a,)] r r \partCombineAutomatic
+	\partCombineApart r8 r a[(-\offset X-offset -1.5 \p a,)] r r \partCombineAutomatic
 	R2.*3
 % Bars 121 to 125
 	
 	
-	\partCombineApart r8 r a'(\p[ a,]) r r \partCombineAutomatic 
+	\partCombineApart r8 r a'(-\offset X-offset -2 \p[ a,]) r r \partCombineAutomatic 
 	R2.
 	\partCombineApart r8 r a'([ a,]) r r \partCombineAutomatic
 % Bars 126 to 130
@@ -165,15 +165,15 @@ musicKlarinetteIMvtI = \relative c {
 	
 	
 % Bars 131 to 135
-	c,8(\ff\> d e f g gis)\!
+	c,8(\ff-\tweak rotation #'(6 -1 0) \> d e f g gis)\!
 	\partCombineApart a4.~ a4 b8(
 	cis4.) d4( e8) \partCombineAutomatic
 	f4.\f\> << e {s8 s s\!}>>
 	<< a,2. {s8\p\< s s s s s\!}>>
 % Bars 136 to 140
-	\partCombineApart a4.~_\mfcresc^\espr a4 b8
+	\partCombineApart a4.~_\mfcresc-\offset X-offset -4.5 ^\espr a4 b8
 	cis4. \partCombineAutomatic d4( e8)
-	g4.\ff\> f8( e d)\!
+	g4.-\tweak X-offset 0.1 \ff\> f8( e d)\!
 	a2. \mark \default
 	R2.*14
 % Bars 141 to 145
@@ -203,7 +203,7 @@ musicKlarinetteIMvtI = \relative c {
 	c'4 f,8 c'4 f,8
 	R2.*2
 	
-	r8 c,\p( d) e4( f8)
+	r8 c,-\offset X-offset -1 \p( d) e4( f8)
 % Bars 171 to 175
 	r c( d) e4.
 	r4 f8~\< f a4
@@ -211,14 +211,14 @@ musicKlarinetteIMvtI = \relative c {
 	f8) c(\p d!) e4( f8)
 	r8 c( d) e4.
 % Bars 176 to 180
-	r4 f8(~_\pcresc f e d)
+	r4 \markEO #'(-6 . 1.3) f8(~_\pcresc f e d)
 	bes!4\mf\< b8~ b c4\!
 	c\f\< cis8~ cis d4\!
 	r4 g8(~_\fdim g f e)
 	r4 f8_\menof(~ f e d)
 % Bars 181 to 185
 	r4 dis8\mp(~ dis e4) \mark \default
-	r8 c(_\pcresc d!) e4( f8)
+	r8 c(-\offset X-offset -1.5 \p d!) e4(-\offset X-offset -0.5 _\crescmarkup f8)
 	r8 c( d) e4.
 	f4 f8\f~ f a4
 	d, dis8~ dis e4
@@ -242,7 +242,7 @@ musicKlarinetteIMvtI = \relative c {
 	r4 r8 a,(_\fcresc aes g)
 % Bars 201 to 205
 	f( e d) c( bes gis) \mark \default
-	\partCombineApart a8[ \once \partCombineAutomatic r16 c'' c8] \partCombineAutomatic c c c
+	\partCombineApart \beamOffset #'(0.5 . -0.5) a8[ \once \partCombineAutomatic r16 c'' c8] \partCombineAutomatic c c c
 	c c c c c c
 	r4 r8 \partCombineApart \stemDown f,4._\fcresc(
 	\stemUp f,8) b bes \partCombineAutomatic a( g f)
@@ -261,7 +261,7 @@ musicKlarinetteIMvtI = \relative c {
 	
 % Bars 221 to 225
 	
-	aes''4\p c,8 aes'4 c,8
+	aes''4-\tweak X-offset 0.5 \p c,8 aes'4 c,8
 	aes'4 c,8 aes'4 c,8
 	R2.*5
 	
@@ -282,7 +282,7 @@ musicKlarinetteIMvtI = \relative c {
 	
 	des''4(->\mf ges,8) des'4(-> ges,8)
 	ces r r r4 r8 \mark \default
-	ges4(->\f ces,8) ges'4->( ces,8)
+	\aIIXoffset -3 ges4(->\f ces,8) ges'4->( ces,8)
 % Bars 241 to 245
 	R2.
 	ges4(->\f ces,8) ges'4(-> ces,8)
@@ -296,7 +296,7 @@ musicKlarinetteIMvtI = \relative c {
 	
 	
 % Bars 251 to 255
-	c!2.\mf
+	c!2.-\tweak X-offset 0.5 \mf
 	d'_\crescmarkup
 	c\f\<
 	f\ff \mark \default
@@ -394,7 +394,7 @@ musicKlarinetteIMvtI = \relative c {
 	f) r r r4 r8
 	\partCombineApart \stemUp ees!4. e
 % Bars 336 to 340
-	d8-. d-. fis,-. fis16( d e fis g a)  \partCombineAutomatic \mark \default
+	\beamOffset #'(-0.3 . -0.3) d8-. d-. fis,-. fis16( d e fis g a)  \partCombineAutomatic \mark \default
 	bes(\p a g f! ees! d c) r r8 r
 	r4 r8 c16( d ees f g a
 	bes a g f ees d c) r r8 r
@@ -403,7 +403,7 @@ musicKlarinetteIMvtI = \relative c {
 	bes a g f ees d c) r r8 r 
 	r4 r8 c16( d ees f g a
 	bes a g f ees d c) r r8 r
-	r4 r8 r g(\mf gis
+	r4 r8 r g(-\offset X-offset -3.5 \mf gis
 	a) r r r4 r8
 % Bars 346 to 350
 	R2.
@@ -418,14 +418,14 @@ musicKlarinetteIMvtI = \relative c {
 	
 	r4 f'16(\ff e ees d c b bes a)
 % Bars 356 to 360
-	g( a bes c bes a g8) d\mf d
+	g( a bes c bes a g8) d-\tweak X-offset -1.5 \mf d
 	c4.->~ c8 r r
 	r4 r8 r bes''\mf-- bes--
 	e,4.->~ e8 r r
 	r4 r8 r d--\f c--
 % Bars 361 to 365
-	c,4.->_~ c8 r r
-	r4 r8 r f'\ff-- f--
+	c,4.->_~ \noteShift #0.7 c8 r r
+	r4 r8 r f'-\tweak X-offset #-3.5 \ff-- f--
 	b,4.->~ b8 r r
 	r b,4\ff~ b8 f'16( fis g! gis \mark \default
 	a8)[\fff r16 a a8]~ a b c
@@ -442,7 +442,7 @@ musicKlarinetteIMvtI = \relative c {
 	
 	
 % Bars 376 to 380
-	\partCombineApart r8 r b[(\p b,]) r r \partCombineAutomatic
+	\partCombineApart r8 r b[(-\offset X-offset -0.5 _\p b,]) r r \partCombineAutomatic
 	R2.*3
 	
 	
@@ -456,7 +456,7 @@ musicKlarinetteIMvtI = \relative c {
 % Bars 386 to 390
 	
 	
-	d,8\(\ff\> e fis g a ais\)\!
+	d,8\(\ff-\tweak rotation #'(5 -1 0) \> e fis g a ais\)\!
 	\partCombineApart b4.~ b4 \stemDown \omitFlag cis8(
 	dis4.) \once \stemUp e4( \omitFlag fis8) \partCombineAutomatic
 % Bars 391 to 395
@@ -492,14 +492,14 @@ musicKlarinetteIMvtI = \relative c {
 	R2.*2
 % Bars 426 to 430
 	
-	r8 d,(\p e) fis4( g8)
+	r8 d,(-\offset X-offset -1.5 \p e) fis4( g8)
 	r d( e) fis4.
 	r8 r g~\< g b4
 	e,\! f8~\> f fis4\!(
 % Bars 431 to 435
 	g8) d(\p e) fis4( g8)
 	r d( e) fis4.
-	\partCombineApart r8 r g(~^\crescmarkup g fis e) \partCombineAutomatic
+	\partCombineApart r8 r g(~-\offset X-offset -3 _\crescmarkup g fis e) \partCombineAutomatic
 	c4\mf\< cis8~ cis d4\!
 	d\f\< ees!8~ ees e4\!
 % Bars 436 to 440
@@ -530,7 +530,7 @@ musicKlarinetteIMvtI = \relative c {
 	g g g g g g
 	r4 r8 b,\(_\fcresc bes a\)
 	g\( fis e\) d\( c ais\) \mark \default
-	\partCombineApart b[ \once \partCombineAutomatic r16 g'' g8] \partCombineAutomatic g g g
+	\partCombineApart \beamOffset #'(0 . -0.5) b[ \once \partCombineAutomatic r16 g'' g8] \partCombineAutomatic g g g
 	g g g g g g
 % Bars 461 to 465
 	r4 r8 \partCombineApart g4.~
@@ -557,10 +557,10 @@ musicKlarinetteIMvtI = \relative c {
 	R2.
 	bes'4\f ees,8 r4 r8
 	c'4\ff g8 r4 r8
-	cis4\ff g8 cis4 g8
+	cis4-\tweak X-offset #0.5 \ff g8 cis4 g8
 % Bars 486 to 490
 	cis4 g8 cis4 g8 \mark \default
-	d8-.\ff[ r16 d\p d8] d\(\< ees\) f-.\!
+	\aIIXoffset -4 d8-.\ff[ r16 d\p d8] d\(\< ees\) f-.\!
 	g\(\> f\) ees-.\! d-. c-. b-.
 	c->\( bes!\) a-. g-. fis-. f-. 
 	ees r r r4 r8
@@ -592,17 +592,17 @@ musicKlarinetteIMvtI = \relative c {
 	g)[ r16 g\f g8]~ g[ r16 g g8]~
 	g[ r16 g g8]~ g g( fis
 	g)[ r16 g g8]~ g8[ r16 g g8]~
-	g[ r16 g g8]~ g8 g( fis \mark \default
+	g[ r16 g g8]~ g8 g( fis \mark \markAa
 	g) r r d\mf r r
 % Bars 516 to 520
-	g_\dimmarkup r r d r r
+	g-\offset X-offset 2 _\dimmarkup r r d r r
 	d r r d r r
 	g r r d r r 
 	\partCombineApart d[ \once \partCombineAutomatic r16 g g8]~ g[ \once \partCombineAutomatic r16 g g8]~
 	g[ \once \partCombineAutomatic r16 g g8]~ g g fis
 % Bars 521 to 525
 	g[ \once \partCombineAutomatic r16 g g8]~ g[ \once \partCombineAutomatic r16 g g8]~
-	g[ \once \partCombineAutomatic r16 g g8]~ g g( fis \mark \default
+	g[ \once \partCombineAutomatic r16 g g8]~ g g( fis \mark \markBb
 	g[) r16 g,\p g8]~ g a-. bes-.
 	c(-> bes) a~ a4.
 	g8[ r16 g g8]~ g a-. bes-.

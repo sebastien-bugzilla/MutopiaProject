@@ -201,7 +201,7 @@ musicVioloncellMvtI = \relative c {
 	
 	r8 fis'(\mf\< f) e( d cis)
 % Bars 161 to 165
-	c!( b a)\! b4(_\sffp cis8)
+	c!( b a)\! b4(\sffp cis8)
 	R2.*2
 	
 	r8 fis(\mf\< f) e( d cis)
@@ -210,7 +210,7 @@ musicVioloncellMvtI = \relative c {
 	R2.*2
 	
 	r8 fis'(\mf\< f) e( d cis)
-	c!( b a)\! b4(_\sffp cis8)
+	c!( b a)\! b4(\sffp cis8)
 	d,8(\p a d) r4 fis8(
 % Bars 171 to 175
 	e a, e') r4 g8(

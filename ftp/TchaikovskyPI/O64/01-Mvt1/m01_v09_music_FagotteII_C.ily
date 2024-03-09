@@ -365,7 +365,7 @@ musicFagotteIIMvtI = \relative c {
 	r4 r8 d'4.\p
 	g8 r r r4 r8
 % Bars 331 to 335
-	r8 a(\p g) fis( e d)
+	r8 a(-\offset X-offset 0.5 \p g) fis( e d)
 	g4 r8 r4 r8
 	R2.*3
 	
@@ -437,11 +437,11 @@ musicFagotteIIMvtI = \relative c {
 	gis) r r r4 \clef bass r8
 	a,4.\p\< gis4 gis8\!
 % Bars 391 to 395
-	gis4.\f\> a\!
+	gis4.\f\> << a {s8 s s\!}>>
 	\after 2.*5/6 \! gis2.\p\<
 	R2.
 	a4._\mfcresc gis4 gis8
-	gis4.\ff\> a\!
+	gis4.\ff\> <<a {s8 s s\!}>>
 % Bars 396 to 400
 	<< gis2. {s8\mf\> s s s s s\!}>> \mark \default
 	R2.*14
@@ -475,9 +475,9 @@ musicFagotteIIMvtI = \relative c {
 	
 	gis'4._\pcresc a 
 	fis4.\mf\< b,\!
-	gis\f\< cis\!
+	gis\f\< << cis {s8 s4\!}>>
 % Bars 436 to 440
-	gis'_\fdim a
+	gis'4._\fdim a
 	fisis gis
 	eis fis!4( b,8) \mark \default
 	e,! r r r r gis(
@@ -513,7 +513,7 @@ musicFagotteIIMvtI = \relative c {
 	r4 r8 b'''(\ff ais a)
 	gis[ r16 e,, e8] e e e
 % Bars 466 to 470
-	r4 r8 e'(\f cis c)
+	r4 r8 e'\f cis c
 	b[\f r16 e, e8] e e e
 	e'[ r16 e e8] e e e
 	e,[ r16 e e8] e e e
@@ -562,7 +562,7 @@ musicFagotteIIMvtI = \relative c {
 	e r r d\f r r
 	c r r b r r
 	e r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markAa
 	e[ r16 e'\mf e8]~ e fis g
 % Bars 516 to 520
 	a( g) fis~ fis e( dis
@@ -572,7 +572,7 @@ musicFagotteIIMvtI = \relative c {
 	c r r b r r
 % Bars 521 to 525
 	e r r d r r 
-	c r r b r r \mark \default
+	c r r b r r \mark \markBb
 	e'2.\p~
 	e4.~-> e8 cis( dis)
 	e2.~

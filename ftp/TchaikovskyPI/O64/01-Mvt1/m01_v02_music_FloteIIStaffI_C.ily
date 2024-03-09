@@ -30,7 +30,7 @@ musicFloteIIMvtI = \relative c' {
 % Bars 36 to 40
 	
 	\bar "||"
-	\time 6/8 R2.*15
+	\time 6/8 \changeStaffName \flI R2.*15
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -48,7 +48,8 @@ musicFloteIIMvtI = \relative c' {
 % Bars 56 to 60
 	a4 e8) ais4( e8) \mark \default
 	b'4.\mp\>~ b8\p r r
-	R2.*7
+	g\p r r a r r
+	R2.*6
 %	b\p r r c r r
 %	e r r c r r
 %	e r r e r r
@@ -81,12 +82,12 @@ musicFloteIIMvtI = \relative c' {
 	%b( cis d fis g fis g fis) g( fis g fis
 	%e cis d fis e cis d) fis( g fis g fis 
 	 \mark \default %g fis g fis g fis g) g,( a ais b ais) \mark \default
-	r4. r4 r8 %fis'8.\ff fis16 fis8 r4 r8
-	e,16( fis g a b8) r b16( cis d e)
+	R2.*4 %fis'8.\ff fis16 fis8 r4 r8
+%	e,16( fis g a b8) r b16( cis d e)
 % Bars 86 to 90
-	fis8.\ff fis16 fis8 r4 r8
-	e,16( fis g a b8) r b16( cis d e)
-	fis8._\sempreff fis16 fis8 r4 r8
+%	fis8.\ff fis16 fis8 r4 r8
+%	e,16( fis g a b8) r b16( cis d e)
+	fis'8._\sempreff fis16 fis8 r4 r8
 	r4 g8(\ff gis ais b)
 	b8. b16 b8 r4 r8
 % Bars 91 to 95
@@ -123,12 +124,12 @@ musicFloteIIMvtI = \relative c' {
 	R2.*3
 	
 	
-	r8 fis\p( fis,) r4 r8
+	r8-\offset X-offset -1.5 _\III r fis,-\offset X-offset -1.5 \p([ fis,)] r r8
 	R2.*3
 % Bars 121 to 125
 	
 	
-	r8 fis'\p( fis,) r4 r8
+	r8 fis''\p( fis,) r4 r8
 	R2.
 	r8 fis'( fis,) r4 r8
 % Bars 126 to 130
@@ -166,7 +167,7 @@ musicFloteIIMvtI = \relative c' {
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	R2.*11
+	R2.*17
 %	r4 d'8(~_\pcresc d cis b)
 %	g4\mf\< gis8~ gis a4\!
 %	a\f\< ais8~ ais b4\!
@@ -180,14 +181,14 @@ musicFloteIIMvtI = \relative c' {
 %	b,4 bis8~ bis cis4(
 %% Bars 186 to 190
 %	d8) r r r4 r8
-	R2.
-	r8 e4 fis g8~
-	g g4 gis a8~
-	a a'4 ais b8~
-% Bars 191 to 195
-	b b4 c4( cis8)
-	r d4_\fcresc dis( e8)
-	r e4 fis( g8)
+%	R2.
+%	r8 e4 fis g8~
+%	g g4 gis a8~
+%	a a'4 ais b8~
+%% Bars 191 to 195
+%	b b4 c4( cis8)
+%	r d4_\fcresc dis( e8)
+	r8 e''4 fis( g8)
 	r a4\fff gis a8~
 	a a4 gis a8~
 % Bars 196 to 200
@@ -201,10 +202,10 @@ musicFloteIIMvtI = \relative c' {
 	a'4\fff d,8 a'4 d,8
 	a'4 d,8 a'4 d,8
 	R2.
-	a,8(\ff\<_\III gis g) fis( e d)\! % <= Fl III
+	a,8(\ff\<-\tweak extra-offset #'(-3 . 5) _\III gis g) fis( e d)\! % <= Fl III
 % Bars 206 to 210
 	fis''4\fff a,8 fis'4 a,8
-	r4 r8 a(\ff gis g)
+	r4 r8 a(-\tweak X-offset -2 \ff gis g)
 	d'4 fis,8 d'4 fis,8
 	R2.
 	a4 d,8 a'4 d,8
@@ -226,10 +227,10 @@ musicFloteIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	ees'4->(\f_\III aes,8) ees'4->( aes,8) % <= Fl III
+	ees'4->(\f-\tweak extra-offset #'(-3 . 4) _\III aes,8) ees'4->( aes,8) % <= Fl III
 % Bars 241 to 245
-	ees'4->(^\III aes,8) ees'4(-> aes,8) % <= Fl III
-	R2.*12
+	\omitAdue ees'4->(^\III aes,8) ees'4(-> aes,8) % <= Fl III
+	\changeStaffName \flI-II R2.*12
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -318,7 +319,7 @@ musicFloteIIMvtI = \relative c' {
 	
 	
 	
-	r4 r8 d,4.\p
+	r4 r8 d,4.-\offset X-offset 0.8 \p
 % Bars 331 to 335
 	e d8( e fis)
 	g4 r8 r4 r8
@@ -422,7 +423,7 @@ musicFloteIIMvtI = \relative c' {
 % Bars 431 to 435
 	
 	
-	r8 r e'(~_\pcresc e dis cis)
+	r8 r e'(~-\tweak X-offset -2 _\pcresc e dis cis)
 	a4\mf\< ais8~ ais b4\!
 	b4\f\< bis8~ bis cis4\!
 % Bars 436 to 440
@@ -457,9 +458,9 @@ musicFloteIIMvtI = \relative c' {
 	b'4 e,8 b'4 e,8
 % Bars 461 to 465
 	R2.
-	b,8\ff\<(_\III ais a) gis( fis e)\! % <= Fl III
+	b,8\ff-\tweak rotation #'(-2 1 0) \<(-\tweak extra-offset #'(-3.5 . 5) _\III ais a) gis( fis e)\! % <= Fl III
 	gis''4\fff b,8 gis'4 b,8
-	r4 r8 b(\ff ais a)
+	r4 r8 b(-\tweak X-offset -2 \ff ais a)
 	e'4 gis,8 e'4 gis,8
 % Bars 466 to 470
 	R2.
@@ -511,13 +512,13 @@ musicFloteIIMvtI = \relative c' {
 	e)[ r16 e\f e8]~ e[ r16 e e8]~
 	e[ r16 e e8]~ e e( dis
 	e)[ r16 e e8]~ e[ r16 e e8]~
-	e[ r16 e e8]~ e e( dis \mark \default
+	e[ r16 e e8]~ e e( dis \mark \markAa
 	e) r r r4 r8
 % Bars 516 to 520
 	R2.*7
 % Bars 521 to 525
 	
-	\mark \default
+	\mark \markBb
 	R2.*19
 % Bars 526 to 530
 	

@@ -8,15 +8,17 @@
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
 	left-margin = 18 \mm
+%	indent = 0
 %	annotate-spacing = ##t
+%	max-systems-per-page = 1
 %	first-page-number = 0
-%	slashSeparator = \markup {
-%		\center-align \hspace #-6
-%		\vcenter \combine
-%		\beam #3.3 #0.5 #0.54
-%		\raise #1.24 \beam #3.3 #0.5 #0.54
-%	}
-%	system-separator-markup = \slashSeparator
+	slashSeparator = \markup {
+		\center-align \hspace #-6
+		\vcenter \combine
+		\beam #3.3 #0.5 #0.54
+		\raise #1.24 \beam #3.3 #0.5 #0.54
+	}
+	system-separator-markup = \slashSeparator
 	bookTitleMarkup = \markup {
 		\column {
 			\vspace #15
@@ -37,7 +39,7 @@
 		\unless \on-first-page \fill-line {
 			\null
 			\center-column {
-				\smaller \fromproperty #'header:subsubtitle
+				\fromproperty #'header:subsubtitle
 				\fromproperty #'header:instrument
 				\vspace #1
 			}
@@ -48,7 +50,7 @@
 		\unless \on-first-page \fill-line {
 			\fromproperty #'page:page-number-string
 			\center-column {
-				\smaller \fromproperty #'header:subsubtitle
+				\fromproperty #'header:subsubtitle
 				\fromproperty #'header:instrument
 				\vspace #1
 			}

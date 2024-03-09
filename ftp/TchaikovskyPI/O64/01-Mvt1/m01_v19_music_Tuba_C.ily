@@ -207,7 +207,7 @@ musicTubaMvtI = \relative c {
 	R2.*3
 	
 	
-	d2.\p\< \mark \default
+	<< d2. {s4\p\< s s8 s\!}>> \mark \default
 	cis8[\ff r16 cis cis8] r4 r8
 % Bars 256 to 260
 	r4 r8 r fis\ff d
@@ -224,7 +224,7 @@ musicTubaMvtI = \relative c {
 % Bars 266 to 270
 	bes8[ r16 bes bes8] r4 r8
 	R2.
-	f''4\mf( bes,8) f'4( bes,8) \mark \default
+	\aIIXoffset -7 f''4\mf( bes,8) f'4( bes,8) \mark \default
 	R2.*3
 	
 % Bars 271 to 275
@@ -453,7 +453,7 @@ musicTubaMvtI = \relative c {
 	e r r d\f r r
 	c r r b r r
 	e r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markAa
 	e r r d\mf r r 
 % Bars 516 to 520
 	c r r b r r
@@ -463,7 +463,7 @@ musicTubaMvtI = \relative c {
 	R2.
 % Bars 521 to 525
 	e8\p r r r4 r8
-	R2. \mark \default
+	R2. \mark \markBb
 	e8 r r r4 r8
 	R2.*18
 % Bars 526 to 530

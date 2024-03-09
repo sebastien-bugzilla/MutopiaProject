@@ -4,90 +4,104 @@
 %###############################################################################
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
-ppgraziosoeleggiero = \markup { \dynamic pp \italic { grazioso e leggiero }}
-pococresc = \markup {\italic {poco cresc.}}
+sempreppp = \markup {\italic {sempre} \dynamic ppp}
+semprepp = \markup {\italic {sempre} \dynamic pp}
+semprep = \markup {\italic {sempre} \dynamic p}
 sempreff = \markup {\italic sempre \dynamic ff}
-mfcresc = \markup {\dynamic mf \italic {cresc.}}
+semprefff = \markup {\italic {sempre} \dynamic fff}
+
+ppgraziosoeleggiero = \markup {\hspace #-0.78 \dynamic pp \italic { grazioso e leggiero }}
+pppococresc = \markup {\hspace #-0.78 \dynamic pp \italic {poco cresc.}}
+ppcresc = \markup {\hspace #-0.78 \dynamic pp \italic {cresc.}}
+
+pcresc = \markup {\hspace #-0.05 \dynamic p \italic {cresc.}}
+pcrescmolto = \markup {\hspace #-0.05 \dynamic p \italic {cresc. molto}}
+pcrescpocoapoco = \markup {\hspace #-0.05 \dynamic p \italic {cresc. poco a poco}}
+ppocoapococresc = \markup {\hspace #-0.05 \dynamic p \italic {poco a poco cresc.}}
+pmoltocantabileedespr = \markup {\hspace #-0.05 \dynamic p \italic {molto cantabile ed espr.}}
+pspiccatoassai = \markup {\hspace #-0.05 \dynamic p \italic {spiccato assai}}
+pmamarcato = \markup {\hspace #-0.05 \dynamic p \italic {ma marcato}}
+
+mpcresc = \markup {\hspace #-1.05 \dynamic mp \italic {cresc.}}
+mpespress = \markup {\hspace #-1.05 \dynamic mp \italic {espress.}}
+
+mfcresc = \markup {\hspace #-0.76 \dynamic mf \italic {cresc.}}
+mfmarkup = \markup {\hspace #-0.76 \dynamic mf}
+mfmoltoespr = \markup {\hspace #-0.76 \dynamic mf \italic {molto espr.}}
+mfespress = \markup {\hspace #-0.76 \dynamic mf \italic {espress.}}
+mfcrescpocoapoco = \markup {\hspace #-0.76 \dynamic mf \italic {cresc. poco a poco}}
+mfespr = \markup {\hspace #-0.76 \dynamic mf \italic {espr.}}
+
+fdim = \markup {\hspace #0.06 \dynamic f \italic {dim.}}
+fcresc = \markup {\hspace #0.06 \dynamic f \italic {cresc.}}
+fcantabile = \markup {\hspace #0.06 \dynamic f \italic {cantabile}}
+menof = \markup {\hspace #-5.9 \italic {meno} \dynamic f}
+piuf = \markup {\italic {più} \dynamic f}
+
+ffdim = \markup {\hspace #-0.52 \dynamic ff \italic {dim.}}
+fflargamente = \markup {\hspace #-0.52 \dynamic ff \italic {largamente}}
+ffmarcatissimolargamente = \markup {\hspace #-0.52 \dynamic ff \italic {marcatissimo largamente}}
+ffmarcatissimo = \markup {\hspace #-0.52 \dynamic ff \italic {marcatissimo}}
+
+fffconanima = \markup {\hspace #-1.08 \dynamic fff \italic {con anima}}
+
+sffp = #(make-dynamic-script (markup #:dynamic "sffp"))
+sfppcresc = \markup {\hspace #-0.37 \dynamic {sf pp} \italic {cresc.}}
+sfff = #(make-dynamic-script (markup #:dynamic "sfff"))
+mfp = #(make-dynamic-script (markup #:dynamic "mfp"))
+
+
+
+pococresc = \markup {\italic {poco cresc.}}
 espr = \markup {\italic {espr.}}
-pcresc = \markup {\dynamic p \italic {cresc.}}
-fdim = \markup {\dynamic f \italic {dim.}}
-menof = \markup {\italic {meno} \dynamic f}
-pcrescmolto = \markup {\dynamic p \italic {cresc. molto}}
-fcresc = \markup {\dynamic f \italic {cresc.}}
 crescmarkup = \markup {\italic {cresc.}}
 dimmarkup = \markup {\italic {dim.}}
-ffdim = \markup {\dynamic ff \italic {dim.}}
-piuf = \markup {\italic {più} \dynamic f}
 graziosoeleggiero = \markup { \italic { grazioso e leggiero }}
-mpcresc = \markup {\dynamic mp \italic {cresc.}}
 soli = \markup {Soli}
-ppocoapococresc = \markup {\dynamic p \italic {poco a poco cresc.}}
 pocoapococresc = \markup {\italic {poco a poco cresc.}}
-sempreppp = \markup {\italic {sempre} \dynamic ppp}
-mfmarkup = \markup {\dynamic mf}
 moltoespr = \markup {\italic {molto espr.}}
 pizz = \markup {\italic pizz.}
 arco = \markup {\italic {arco}}
 moltocantabileedespr = \markup {\italic {molto cantabile ed espr.}}
-fflargamente = \markup {\dynamic ff \italic {largamente}}
-pmoltocantabileedespr = \markup {\dynamic p \italic {molto cantabile ed espr.}}
 tenuto = \markup {\italic {tenuto}}
 div = \markup {div.}
 unis = \markup {unis.}
 pesanteetenutosempre = \markup {\italic {pesante e tenuto sempre}}
-sffp = \markup {\dynamic sffp}
 semprepizz = \markup {sempre pizz.}
 crescpocoapoco = \markup {\italic {cresc. poco a poco}}
-fcantabile = \markup {\dynamic f \italic {cantabile}}
 dolceespr = \markup {\italic {dolce espr.}}
-mpespress = \markup {\dynamic mp \italic {espress.}}
-mfmoltoespr = \markup {\dynamic mf \italic {molto espr.}}
 solo = \markup {"Solo"}
-mfespress = \markup {\dynamic mf \italic {espress.}}
 ten = \markup {\italic {ten.}}
 simile = \markup {\italic {simile}}
 dolceconmoltoespress = \markup {\italic {dolce con molto espress.}}
 dolce = \markup {\italic {dolce}}
-mfcrescpocoapoco = \markup {\dynamic mf \italic {cresc. poco a poco}}
-mfespr = \markup {\dynamic mf \italic {espr.}}
-sfppcresc = \markup {\dynamic {sf pp} \italic {cresc.}}
-pcrescpocoapoco = \markup {\dynamic p \italic {cresc. poco a poco}}
 connoblezza = \markup {\italic {con noblezza}}
 condesiderio = \markup {\italic {con desiderio}}
-semprep = \markup {\italic {sempre} \dynamic p}
 sulg = \markup {sul G.}
-fffconanima = \markup {\dynamic fff \italic {con anima}}
 condesiderioepassione = \markup {\italic {con desiderio e passione}}
 contuttaforza = \markup {\italic {con tutta forza}}
 dolciss = \markup {\italic {dolciss.}}
 moltoespress = \markup {\italic {molto espress.}}
 pesante = \markup {\italic {pesante}}
 dolcecongrazia = \markup {\italic {dolce con grazia}}
-pspiccatoassai = \markup {\dynamic p \italic {spiccato assai}}
-pmamarcato = \markup {\dynamic p \italic {ma marcato}}
 unpocodim = \markup {\italic {un poco dim.}}
-semprefff = \markup {\italic {sempre} \dynamic fff}
 marcatissimo = \markup {\italic {marcatissimo}}
 marcialeenergicocontuttaforza = \markup {\italic {marciale, energico, con tutta forza}}
-pppococresc = \markup {\dynamic pp \italic {poco cresc.}}
 feroce = \markup {\italic {feroce}}
-ffmarcatissimolargamente = \markup {\dynamic ff \italic {marcatissimo largamente}}
-ffmarcatissimo = \markup {\dynamic ff \italic {marcatissimo}}
-semprepp = \markup {\italic {sempre} \dynamic pp}
 semprecontuttaforza = \markup {\italic {sempre con tutta forza}}
 largamente = \markup {\italic {largamente}}
 legatissimo = \markup {\italic {legatissimo}}
-ppcresc = \markup {\dynamic pp \italic {cresc.}}
 divisi = \markup {\italic {divisi}}
 
-sfff = #(make-dynamic-script (markup #:dynamic "sfff"))
-mfp = #(make-dynamic-script (markup #:dynamic "mfp"))
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
 mutainfliii = \markup {"muta in Fl.III"}
 mutagina = \markup {"Muta G in A"}
 mutaaingdinbeind = \markup { "muta A in G, D in B, E in D"}
+mutaaing_dinbeind = \markup { 
+	\column { \lower #1.5 "muta A in G," "D in B, E in D"}
+}
 mutabinhdine = \markup { "muta B in H, D in E" }
 mutafising = \markup {"muta Fis in G"}
 mutaginfis = \markup {"muta G in Fis"}
@@ -147,6 +161,8 @@ flI-II-III = \markup {
 }
 
 I-IIadue = \markup {\fontsize #-1 \bold "I II a2"}
+I-II = \markup {\fontsize #-1 \bold "I II"}
+II = \markup {\fontsize #-1 \bold "II"}
 III = \markup {\fontsize #-1 \bold "III"}
 athree = \markup {\fontsize #-1 \bold "a3"}
 II-III = \markup {\fontsize #-1 \bold "II III"}
@@ -175,6 +191,10 @@ liiiri = {
 	\set stemLeftBeamCount = #3
 	\set stemRightBeamCount = #1
 }
+
+markAa = \markup { \fontsize #0.6 \bold "Aa" }
+markBb = \markup { \fontsize #0.6 \bold "Bb" }
+
 
 % fonctions :
 mmrPos = #(define-music-function
@@ -215,15 +235,54 @@ sonsbouchesgestopft = {
 	\once \override TextSpanner.bound-details.left-broken.text = ""
 }
 
+aIIXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override CombineTextScript.X-offset = #offset
+	#}
+)
+
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = ##t
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+markEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TextScript.layer = #3
+		\once \override TextScript.extra-offset = #offset
+		\once \override TextScript.whiteout = #1
+		\once \override TextScript.whiteout-style = #'outline
+	#}
+)
+
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
+
+markXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%aIIXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override CombineTextScript.X-offset = #offset
-%	#}
-%)
 
 %aIIOmit = \once \omit Voice.CombineTextScript
 
@@ -294,24 +353,6 @@ sonsbouchesgestopft = {
 %	#}
 %)
 
-%dynEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override DynamicText.extra-offset = #offset
-%		\once \override DynamicText.whiteout = ##t
-%		\once \override DynamicText.whiteout-style = #'outline
-%	#}
-%)
-
-%hairpinShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.shorten-pair = #shortLength
-%	#}
-%)
-
 %hairpinEO = #(define-music-function
 %	(offset)
 %	(pair?)
@@ -341,17 +382,6 @@ sonsbouchesgestopft = {
 %%	\override Beam.length = #7
 %	\unset fontSize
 %}
-
-%markEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TextScript.layer = #3
-%		\once \override TextScript.extra-offset = #offset
-%		\once \override TextScript.whiteout = ##t
-%		\once \override TextScript.whiteout-style = #'outline
-%	#}
-%)
 
 %markWhiteout = {
 %	\once \override Score.RehearsalMark.layer = #3
@@ -392,14 +422,6 @@ sonsbouchesgestopft = {
 %	#}
 %)
 
-
-%markXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
-%	#}
-%)
 
 %markYoffset = #(define-music-function
 %	(offset)

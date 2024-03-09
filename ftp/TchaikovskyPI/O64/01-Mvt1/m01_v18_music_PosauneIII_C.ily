@@ -68,17 +68,17 @@ musicPosauneIIIMvtI = \relative c {
 	
 	r4 r8 r fis'\f\< e\! \mark \default
 	d8.\ff d16 d8 r4 r8
-	\once \partCombineApart e2.\f
+	\once \partCombineApart e2._\f
 % Bars 86 to 90
 	d8.\ff d16 d8 r4 r8
-	\once \partCombineApart e2.\f
+	\once \partCombineApart e2._\f
 	d8._\sempreff d16 d8 \partCombineApart d cis b \partCombineAutomatic
 	g' fis e d cis b
 	g'8. g16 g8 r4 r8
 % Bars 91 to 95
-	\once \partCombineApart a2.\f
+	\once \partCombineApart a2._\f
 	g8.\ff g16 g8 r4 r8
-	\partCombineApart a2.\f
+	\partCombineApart a2._\f
 	g8._\sempreff g16 g8 g fis e
 	c b a r4 r8
 % Bars 96 to 100
@@ -207,7 +207,7 @@ musicPosauneIIIMvtI = \relative c {
 	R2.*3
 	
 	
-	d2.\p\< \mark \default
+	<< d2. {s4\p\< s s8 s\!}>> \mark \default
 	cis8[\ff r16 cis cis8] r4 r8
 % Bars 256 to 260
 	r4 r8 r fis\ff d
@@ -257,7 +257,7 @@ musicPosauneIIIMvtI = \relative c {
 	bes,4 bes8 r4 r8
 % Bars 296 to 300
 	f'4 f8 r4 r8
-	\partCombineApart f4\fff e8~ e d4
+	\partCombineApart f4_\fff e8~ e d4
 	c bes8~ bes a4 \partCombineAutomatic
 	g'\fff f8~ f e4
 	d c8~ c bes4
@@ -317,7 +317,7 @@ musicPosauneIIIMvtI = \relative c {
 % Bars 361 to 365
 	r4 r8 r a--\mf a--
 	ais4.-> b8 r r
-	\partCombineApart r4 r8 r b\f a!
+	\partCombineApart r4 r8 r b_\f a!
 	gis d' cis b a'_\ff gis \partCombineAutomatic \mark \default
 	a4.\ff a
 % Bars 366 to 370
@@ -380,7 +380,7 @@ musicPosauneIIIMvtI = \relative c {
 % Bars 441 to 445
 	
 	
-	\partCombineApart e8\f r r r4 r8
+	\partCombineApart \dynEO #'(0 . -2) e8-\offset X-offset -1.5 \f r r r4 r8
 	R2. \partCombineAutomatic
 	cis'4._\pcrescmolto c
 % Bars 446 to 450
@@ -457,7 +457,7 @@ musicPosauneIIIMvtI = \relative c {
 	e r r d\f r r
 	c r r b r r
 	e r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markAa
 	e r r d\mf r r 
 % Bars 516 to 520
 	c_\dimmarkup r r b r r
@@ -467,7 +467,7 @@ musicPosauneIIIMvtI = \relative c {
 	c r r b r r
 % Bars 521 to 525
 	e r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markBb
 	e \partCombineAutomatic r r r4 r8
 	R2.*18
 % Bars 526 to 530

@@ -72,16 +72,18 @@
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtI
-%						}
+						\new Voice {
+							\displayFilterVoice
+						}
+						\new Voice {
+							\formatConductorMvtI
+						}
 						\new Voice {
 							\tempiMvtI
 						}
 						\new Voice {
 							\timeMvtI \nameStaffIMvtI
 							\partCombine \musicFloteIMvtI \musicFloteIIMvtI
-%							\musicFloteIMvtI
 						}
 					>>
 					\new Staff {
@@ -92,17 +94,14 @@
 				\new Staff {
 					\timeMvtI \nameStaffIIIMvtI
 					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
-%					\musicOboeIIMvtI 
 				}
 				\new Staff {
 					\timeMvtI \nameStaffIVMvtI
 					\partCombine #'(0 . 16) \musicKlarinetteIMvtI \musicKlarinetteIIMvtI
-%					\musicKlarinetteIIMvtI
 				}
 				\new Staff {
 					\timeMvtI \nameStaffVMvtI
 					\partCombine #'(0 . 16) \musicFagotteIMvtI \musicFagotteIIMvtI
-%					\musicFagotteIIMvtI
 				}
 			>>
 			\new StaffGroup <<
@@ -110,29 +109,24 @@
 					\new Staff {
 						\timeMvtI \nameStaffVIMvtI
 						\partCombine #'(0 . 12) \musicHornIMvtI \musicHornIIMvtI
-%						\musicHornIIMvtI
 					}
 					\new Staff \with { \layoutHorn } { 
 						\timeMvtI \nameStaffVIIMvtI
 						\partCombine #'(0 . 16) \musicHornIIIMvtI \musicHornIVMvtI
-%						\musicHornIVMvtI
 					}
 				>>
 				\new Staff {
 					\timeMvtI \nameStaffVIIIMvtI
 					\partCombine #'(0 . 12) \musicTrompetenIMvtI \musicTrompetenIIMvtI
-%					\musicTrompetenIIMvtI
 				}
 				\new GrandStaff \with { \nameGrandStaffIIIMvtI } <<
 					\new Staff {
 						\timeMvtI \nameStaffIXMvtI
 						\partCombine \musicPosauneIMvtI \musicPosauneIIMvtI
-%						\musicPosauneIIMvtI
 					}
 					\new Staff \with { \layoutPosaune } {
 						\timeMvtI \nameStaffXMvtI
 						\partCombine #'(0 . 10) \musicPosauneIIIMvtI \musicTubaMvtI
-%						\musicTubaMvtI 
 					}
 				>>
 			>>
