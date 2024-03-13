@@ -27,7 +27,7 @@ musicViolineIMvtII = \relative c {
 	fis4. r4 r8 r4 r8 e4.\pp~
 	e r4 r8 r4 r8 d4.
 	d\< d d cis\!
-	d r4 r8 r4 r8 c4.\pp
+	d r4 r8 r4 r8 c4.-\offset X-offset 1 \pp
 % Bars 21 to 25
 	b r4 r8 r4 r8 e4.~
 	e r4 r8 r4 r8 d4.
@@ -67,11 +67,11 @@ musicViolineIMvtII = \relative c {
 	ais4.( b4) b8 b4.( c4) c8
 	\tuplet 2/3 4. {c( cis) cis-- cis-- cis( d) d-- d--}
 % Bars 56 to 60
-	d4.\fff fis,4( b8) \after 2.*5/6 \! <a, a'>2.\>
-	b'4.\ff\> d,4( g8) fis2.\!
+	\dynEO #'(0 . 2) d4.\fff fis,4( b8) \after 2.*5/6 \! <a, a'>2.\>
+	b'4.-\offset X-offset -1 \ff\> d,4( g8) fis2.\!
 	g4.\f b,4( cis8) <d, d'>2.\>~
-	q4.\! a'4(\p\< b8)\! d4.(~\> d4 cis8)\! 
-	d4. a4(\< b8)\! d4.(~\> d4 cis8)\!
+	q4.\! a'4(-\offset X-offset -1 \p\< \once \stemUp b8)\! d4.(~\> d4 cis8)\! 
+	d4. a4(\< \once \stemUp b8)\! d4.(~\> d4 cis8)\!
 % Bars 61 to 65
 	e4.(->\p d~ d8) r r d4( cis8)
 	e4.(-> d~ d8) r r d4( cis8)
@@ -100,7 +100,7 @@ musicViolineIMvtII = \relative c {
 	gis'4.\mf\< ais8( cis\! b) ais--\> gis--\!
 	bes8.(-> f16) f8( ees) ees4->( d) \mark \default
 	R1
-	r2 <d, d'>4(\mf <f bes>)
+	r2 <d, d'>4(-\offset X-offset -1 \mf <f bes>)
 	<aes, ees'>2 <aes f'>
 % Bars 86 to 90
 	<aes ees'> <aes d>
@@ -128,21 +128,21 @@ musicViolineIMvtII = \relative c {
 	<e cis'> <g, e' b'> <a e' a> <b g'>
 % Bars 106 to 110
 	<a e' a>8-> q-> r4 r q8-> r
-	r4 q8-> r r4 q8-> r\fermata \bar "||" 
+	r4 q8-> r r4 q8-> r\fermata \bar "||"
 	\timeTwelveEightC R1.*3
 	
 	
 % Bars 111 to 115
-	r2. r4 r8 d\((\mf_\moltoespr^\sulg cis) b--\)
+	r2. r4 r8 d\((_\mfmoltoespr^\sulg cis) b--\)
 	d4.->( cis2.) a8\((\< b) cis--\)\!
 	e4.( d2.)\> d8\((\! e) fis--\)
 	g4.\< g4 g8 g4.~ g4 g8\!
-	g4.(\> \after 2.*5/6 \! fis2.) d8\((\mf cis) b--\) \mark \default
+	g4.(\> \after 2.*5/6 \! fis2.) d8\((-\offset X-offset -2 \mf cis) b--\) \mark \default
 % Bars 116 to 120
 	d4.->( cis2.) a8\((\< b) cis--\)\!
 	e4.(\> d2.)\< d8(-- e-- fis--)\!
 	gis4.\f gis4 gis8\< gis4.~ gis4 gis8\!
-	gis8(\f b a) \after 2.*5/6 \! a2.\> fis8--(\mf g-- a--)
+	gis8(\f b a) \after 2.*5/6 \! a2.\> fis8--(-\offset X-offset -1.5 \mf g-- a--)
 	a4.(\> b,2.)\! e8(--\< fis-- g--)\!
 % Bars 121 to 125
 	g4.(\> a,2.)\! d8(--\< e-- fis--)\!
@@ -200,13 +200,13 @@ musicViolineIMvtII = \relative c {
 	
 	b,8:16 f': b: d: f,: b: f': b: 
 	b,: f': b: d: f,: b: d: f: 
-	\tuplet 3/2 4 {<e, e'>8\fff q q q q q} q8->[ q->] q-> q->
+	\tuplet 3/2 4 {<e, e'>8-\tweak X-offset -2 \fff q q q q q} q8->[ q->] q-> q->
 	<d e>-> q-> r4 r2
 % Bars 166 to 170
 	R1*4
 	
 	
-	\bar "||"
+	\bar "||" 
 	\time 12/8 fis,8\pp^\pizz r r r4 r8 r2.
 % Bars 171 to 175
 	d'4.^\arco_\dolciss fis,4( b8) a2.

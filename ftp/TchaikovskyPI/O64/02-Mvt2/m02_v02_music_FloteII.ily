@@ -157,8 +157,8 @@ musicFloteIIMvtII = \relative c {
 % Bars 146 to 150
 	d4. fis,4( b8) a4.~ a4 a8
 	\tuplet 2/3 4. {b cis d b} fis'4.~ fis8 r r 
-	\tuplet 2/3 4. {b, cis d b} fis'4.\ff fis4 fis8
-	fis,4.\fff( g4) g8 g4.( gis4) gis8
+	\tuplet 2/3 4. {b, cis d b} fis'4. fis4 fis8
+	fis,4.( g4) g8 g4.( gis4) gis8
 	\tuplet 2/3 4. {gis( a) a a a( ais) ais ais} \mark #11
 % Bars 151 to 155
 	ais4._\crescmarkup( b4) b8 b4.( c4) c8

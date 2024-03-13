@@ -37,31 +37,31 @@ musicHornIIIMvtII = \relative c {
 	R1.*2
 	
 % Bars 41 to 45
-	\partCombineApart a,4.\f a a \partCombineAutomatic r4 r8
+	\partCombineApart a,4._\f a a \partCombineAutomatic r4 r8
 	\partCombineApart a4. a \partCombineAutomatic a2.
 	a gis
 	r4 r8 \partCombineApart gis2. gis4. \mark \default
 	e8 e e  e e e  e r r r4 r8 \partCombineAutomatic
 % Bars 46 to 50
 	fis'8_\pcresc fis fis  fis fis fis  cis cis cis  cis cis cis
-	c!\mf\< c c  c c c\!  cis r r  \partCombineApart cis\mf cis cis \partCombineAutomatic
+	c!\mf\< c c  c c c\!  cis r r  \partCombineApart cis_\mf cis cis \partCombineAutomatic
 	d\mf\> d d   b b b   fis fis b  b b b\!
 	\partCombineApart e, e e  e e e  e r r  r4 r8 \partCombineAutomatic
 	fis'\p\< fis fis  fis fis fis  cis cis cis  cis cis cis\!
 % Bars 51 to 55
 	c!\mf c c   c c c  \partCombineApart fis r r   r a, a \partCombineAutomatic \mark \default
-	b_\mfcrescpocoapoco b b   b b b   fis fis fis   fis fis fis
+	b\mf b_\crescpocoapoco b   b b b   fis fis fis   fis fis fis
 	gis gis gis   gis gis gis  a a a  a a a
 	bes bes bes   bes bes bes  b fis' fis  f f f
 	f f f  f f f  fis fis fis  fis fis fis
 % Bars 56 to 60
-	fis\fff fis fis   fis,\> fis a\!   gis\ff\> gis gis  a a b\!
+	fis-\tweak X-offset -1.5 \fff fis fis   fis,\> fis a\!   gis\ff\> gis gis  a a b\!
 	\partCombineApart a a a   fis fis fis  b b b   b b b
 	d, d d  \partCombineAutomatic d' d d  d4.\> dis
 	e\! a,\p\< a\> e'\!
 	e\p\< a, a\> e'\!
 % Bars 61 to 65
-	e8\p e e  e e e  e8 r r  r4 r8
+	e8-\tweak X-offset -1.8 \p e e  e e e  e8 r r  r4 r8
 	fis fis fis   fis fis fis   fis r r r4 r8
 	R1.
 	R1.*2
@@ -75,11 +75,11 @@ musicHornIIIMvtII = \relative c {
 	\mark \default
 	\partCombineApart R1
 % Bars 76 to 80
-	c8\mf c4 c8( cis) cis4 cis8~
+	c8_\mf c4 c8( cis) cis4 cis8~
 	cis cis4 cis8~ cis cis4 cis8~
 	cis[ cis]~ cis b \once \partCombineAutomatic r2
 	R1
-	d8\mf d4 d8( ees) ees4 ees8~
+	d8_\mf d4 d8( ees) ees4 ees8~
 % Bars 81 to 85
 	ees ees4 ees8~ ees ees4 ees8~
 	ees ees~ ees des \partCombineAutomatic r2 \mark \default
@@ -99,8 +99,8 @@ musicHornIIIMvtII = \relative c {
 	
 	r2 dis2\f
 % Bars 96 to 100
-	gis, \after 2*3/4 \! dis\<
-	gis\ff b
+	gis, << dis {s8\< s s s\!}>>
+	gis2-\tweak X-offset -1 \ff b
 	gis dis4 b
 	b'1\ff
 	b8 b~ b2.
@@ -182,7 +182,7 @@ musicHornIIIMvtII = \relative c {
 	c4 c2.
 	c4. a8 c4. a8
 	c4. a8 c2
-	\tuplet 3/2 4 {f8\fff f f  f f f } f->[ f->] f-> f->
+	\tuplet 3/2 4 {f8-\tweak X-offset -2 \fff f f  f f f } f->[ f->] f-> f->
 	f-> f-> r4 r2
 % Bars 166 to 170
 	a,2\mf r

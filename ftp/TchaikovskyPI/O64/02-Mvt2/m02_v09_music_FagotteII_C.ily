@@ -75,7 +75,7 @@ musicFagotteIIMvtII = \relative c {
 % Bars 71 to 75
 	R1*2
 	\clef bass
-	r2 cis,4\mf(~-> cis16 eis gis cis
+	r2 \shape #'((0 . -2)(0 . 0)(0 . 0)(0 . -1)) Slur cis,4-\offset X-offset -3 \mf(~-> cis16 eis gis cis
 	d) r d, r r4 cis->(~ cis16 eis gis cis) \mark \default
 	R1*2
 % Bars 76 to 80
@@ -95,7 +95,7 @@ musicFagotteIIMvtII = \relative c {
 	aes2\mf g
 	fes\mf ees
 	des\f c
-	a' gis \mark \default
+	<< {a' gis } {s4\< s s8\! s s\> s\!} >> \mark \default
 % Bars 91 to 95
 	gis'8\mf gis4 gis gis gis8~
 	gis gis4 gis8~ gis gis4 gis8~
@@ -164,7 +164,7 @@ musicFagotteIIMvtII = \relative c {
 		gis4 g fis2\ff
 		e d4 cis
 % Bars 146 to 150
-		d16\ff fis' fis fis  fis fis fis fis cis2\fff
+		d16-\tweak X-offset -3.5 \ff fis' fis fis  fis fis fis fis cis2\fff
 		b a
 		gis4 g fis fis'
 		e,2\fff d

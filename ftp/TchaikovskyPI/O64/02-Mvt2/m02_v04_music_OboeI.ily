@@ -192,7 +192,7 @@ musicOboeIMvtII = \relative c {
 	r4 \tuplet 3/2 4 {d8 d d} d4 d
 	r4 \tuplet 3/2 4 {f8 f f} f4 d8 r
 	r4 \tuplet 3/2 4 {f8 f f} f4 f8( b)
-	\tuplet 3/2 4 {bes bes bes bes bes bes} bes->[ bes->] bes-> bes->
+	\tuplet 3/2 4 {bes\fff bes bes bes bes bes} bes->[ bes->] bes-> bes->
 	e,-> e-> r4 r2
 % Bars 166 to 170
 	R1*4

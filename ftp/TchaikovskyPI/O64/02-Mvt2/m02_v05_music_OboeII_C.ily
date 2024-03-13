@@ -53,7 +53,7 @@ musicOboeIIMvtII = \relative c {
 % Bars 46 to 50
 	
 % Bars 51 to 55
-	r2. d''8\mf r r r b b \mark \default
+	r2. d''8-\offset X-offset -1 \mf r r r b b \mark \default
 	b b b  b b b  b b b  b b b 
 	cis cis cis  cis cis cis  d d d  d d d 
 	dis dis dis  dis dis dis  e e e  e e e
@@ -97,7 +97,7 @@ musicOboeIIMvtII = \relative c {
 % Bars 91 to 95
 	\after 2*3/4 \! dis2\mf\< dis'8(-> e) bis--\> cis--\!
 	cis,2->( \after 2*3/4 \! bis2)\<
-	cis2->\f  bis4( dis8) r
+	cis2->-\offset X-offset -2.5 \f  bis4( dis8) r
 	cis2-> bis4( dis8) r
 	gis4. dis8( fis e dis cis)
 % Bars 96 to 100
@@ -130,26 +130,26 @@ musicOboeIIMvtII = \relative c {
 	
 	r4 r8 fis4.\f~-> << fis {s8\> s s\!}>> r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		b,16\mf( cis) dis\<-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b\mf(
+		b,16-\tweak X-offset -4 \mf( cis) dis\<-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 \shape #'((0 . 1.5)(0 . 0)(0 . 0)(0 . 0)) Slur b-\offset X-offset -2 \mf(
 % Bars 121 to 125
 		a b,) cis--\< d!-- e f fis g\! g( fis eis g fis8) r
 		r16 gis(\f a gis) r a( b a) r b( cis b) r cis( d cis)
 		r d( e d~ d) cis b bes a(\> g) fis e d r r8\! \mark \default
-		b16(\mf\< cis) d-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b\mf(
+		b16(\mf\< cis) d-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 \shape #'((0 . 1.5)(0 . 0)(0 . 0)(0 . 0)) Slur b-\offset X-offset -2 \mf(
 		a b,) c--\< d-- e f fis g\! g( fis eis g fis8) r
 % Bars 126 to 130
 		r16 gis( a gis) r a( b a) r b( cis b) r cis( d cis)
-		r d(\f e d) r d( e d) r d,( b cis) \tuplet 3/2 4 {d8( cis) b--} \timeSignature 12/8
+		r d(\f e d) r d( e d) r d,( b cis) \tuplet 3/2 4 {d8( cis) b--}
 	}
-	d4.->( cis2.) a'8(\< b,) cis--\!
+	\timeSignature 12/8 d4.->( cis2.) \beamOffset #'(0.5 . 0.5) a'8(\< b,) cis--\!
 	e4.(\> d2.)\< d8-- e-- fis--\!
 	g4. g4 g8 g4.~ g4 g8
 % Bars 131 to 135
-	\tuplet 2/3 4. {g( fis) b--\ff a--} g( fis) e-- d-- cis-- b--
+	\tuplet 2/3 4. {g( fis) b---\tweak X-offset -2 \ff a--} g( fis) e-- d-- cis-- b--
 	d4.\f->( cis2.) a'8(\< b,) cis--\!
 	e4.(\> d2.)\< d8-- e-- fis--\!
 	fis'4.\f fis fis d,8-- e-- fis--
-	fis'4. fis fis gis,8--\ff a-- b--
+	fis'4. fis fis gis,8---\tweak X-offset -3.5 \ff a-- b--
 % Bars 136 to 140
 	d4. d d gis,8-- a-- b--
 	d4. d d8 b4 b b8~ \mark \default
@@ -159,16 +159,16 @@ musicOboeIIMvtII = \relative c {
 % Bars 141 to 145
 	ais) b cis d, dis e fis g a! ais b cis \timeSignature 4/4
 	\scaleDurations 3/2 {
-		fis16\ff a,! a a  a a a a  g g g g   fis fis e e
+		fis16-\tweak X-offset -3.5 \ff a,! a a  a a a a  g g g g   fis fis e e
 		fis fis fis fis  fis fis fis fis  fis fis fis fis  fis fis fis fis
 		d' d b b  b b d d  b\ff b d d  fis, fis fis fis
 		b b b b  b b b b  b b b b  e e e e
 % Bars 146 to 150
-		a,\ff a a a   a a a a   g g g g   fis fis e e 
+		a,-\tweak X-offset -3.5 \ff a a a   a a a a   g g g g   fis fis e e 
 		fis fis fis fis   fis fis fis fis  fis fis fis fis  fis fis fis fis
 		d' d b b   b b d d   b b b b   b b b b
 	} 
-	\timeSignature 12/8 fis4.(\fff g4) g8 g4._( gis4) gis8
+	\timeSignature 12/8 fis4.(-\tweak X-offset 0.5 \fff g4) g8 g4._( gis4) gis8
 	\tuplet 2/3 4. {gis8( a) a a a( ais) ais ais} \mark #11
 % Bars 151 to 155
 	ais4.( b4) b8 b4.( c4) c8
@@ -176,19 +176,19 @@ musicOboeIIMvtII = \relative c {
 	\scaleDurations 3/2 {
 		d4\ffff fis,8( b) << a2 {s8\> s s s\!}>>
 		b4\ff d,8( g) << fis2 {s8\> s s s\!}>>
-		g16\f b b b  e, e e e  e4\> eis\!
+		g16-\tweak X-offset -1.5 \f b b b  e, e e e  e4\> eis\!
 % Bars 156 to 160
 		fis4\mf r r2
 		R1 \bar "||"
 	} 
-	\unsetTimeSignature \time 4/4 e8(\fff d) r4 r2
+	\unsetTimeSignature \time 4/4 e8(-\tweak X-offset -3 \fff d) r4 r2
 	r4 \tuplet 3/2 4 {b8 b b} b4 b
 	R1
 % Bars 161 to 165
 	r4 \tuplet 3/2 4 {d8 d d} d4 d
 	r4 \tuplet 3/2 4 {f8 f f} f4 d8 r
 	r4 \tuplet 3/2 4 {f8 f f} f4 d'8( f!)
-	\tuplet 3/2 4 {e e e  e e e} e->[ e->] e-> e->
+	\tuplet 3/2 4 {e-\tweak X-offset -2 \fff e e  e e e} e->[ e->] e-> e->
 	bes-> bes-> r4 r2
 % Bars 166 to 170
 	R1*4

@@ -78,7 +78,7 @@ musicKontrabassMvtII = \relative c {
 	fis,4.~\fff fis4 gis8 a4.\> b4 cis8\!
 	d4.~\ff\> d4 e8 fis4. gis4 ais8\!
 	b2.\f b,4.\> bes
-	<< a1.~ {s2. s\p}>>
+	<< a1.~ {s4. s4 s8\p s2.}>>
 	a1.
 % Bars 61 to 65
 	d2.\p~ d8 r r r4 r8
@@ -97,7 +97,7 @@ musicKontrabassMvtII = \relative c {
 	cis4.^\arco\p\< fis8( a\! gis) eis--\> cis--\!
 	r4 d'8^\pizz r cis r cis, r
 	r4 d'8 r cis r cis, r \mark \default
-	b'2(\mf^\arco ais)
+	b'2(\mf-\offset X-offset -6 ^\arco ais)
 % Bars 76 to 80
 	gis4 g fis e
 	d2( cis)
@@ -137,7 +137,7 @@ musicKontrabassMvtII = \relative c {
 % Bars 106 to 110
 	g: g:
 	g: g4: g8 r\fermata \bar "||"
-	\timeTwelveEightC r4 r8 g'4^\pizz\mf r8 g,4 r8 g'4 r8
+	\timeTwelveEightC r4 r8 g'4-\offset X-offset -6 ^\pizz\mf r8 g,4 r8 g'4 r8
 	r4 r8 g4 r8 g,4 r8 g'4 r8
 	r4 r8 fis4 r8 fis,4 r8 fis'4 r8
 % Bars 111 to 115

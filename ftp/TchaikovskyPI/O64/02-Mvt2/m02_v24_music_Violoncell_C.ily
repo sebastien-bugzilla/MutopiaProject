@@ -28,7 +28,7 @@ musicVioloncellMvtII = \relative c {
 	<b d>\< d4. cis\! \mark \default
 % Bars 16 to 20
 	cis2.\> <a d>\!
-	<b fis'>4.\pp b~ b2.
+	<b fis'>4.-\offset X-offset 1.5 \pp b~ b2.
 	a a
 	b4.\< a gis g\!
 	fis a2.\> a4.\pp
@@ -61,7 +61,7 @@ musicVioloncellMvtII = \relative c {
 	b4. b4 b8 b4. b4 b8
 	b4 b8~ b b4 b b8(~ b4 a8) \clef bass
 	R1. \mark \default
-	d,,2.\pp cis
+	d,,2.-\offset X-offset 1.3 \pp cis
 % Bars 46 to 50
 	b\< a
 	gis4.( g)\! fis'2.\f
@@ -78,7 +78,7 @@ musicVioloncellMvtII = \relative c {
 	d4.\fff fis,4( b8) \after 2.*5/6 \! <g a>2.\>
 	b4.\ff\> d,4 e8 fis4. gis4 ais8\!
 	b2.\f b,4.\> bes
-	<< a1.~ {s2. s\p} >>
+	<< a1.~ {s4. s4 s8\p s2.} >>
 	a1.
 % Bars 61 to 65
 	<a d>2.\p~ q8 r r r4 r8
@@ -102,7 +102,7 @@ musicVioloncellMvtII = \relative c {
 	b2( ais) \clef tenor
 	fis'4.\mf\< gis8( b\! a) gis--\> fis--\!
 	gis8.(-> dis16) dis8( cis) cis4->( bis)
-	dis4.\mf e8( gis fis) e-- dis--
+	dis4.-\offset X-offset -1 \mf e8( gis fis) e-- dis--
 	cis2( bis)
 % Bars 81 to 85
 	gis'4.\< ais8( cis\! b) ais--\> gis--\!
@@ -127,7 +127,7 @@ musicVioloncellMvtII = \relative c {
 	e!:\fff eis: fis: gis: a!: ais: b!: cis: 
 	b: a!: gis: fis: e: dis: cis: bis:}
 	cis8 r \tuplet 6/4 4 {g16\fff g g g g g g4.:16 g:}
-	\tuplet 12/8 2 {g2.:16 g:
+	\tuplet 12/8 2 {\once \tupletDown g2.:16 g:
 % Bars 101 to 105
 	g: g: 
 	g: g: 
@@ -208,22 +208,22 @@ musicVioloncellMvtII = \relative c {
 	f': b,: f': b: f': b,: f: b,: 
 	f': b,: f'4: b8: f: b: d: 
 	f,:[ b:] \clef tenor f': b: b,: f': f: d: \clef bass
-	\tuplet 3/2 4 {<g,, d' bes'>8\fff <g d'> q q q q} q->[ q->] q-> q->
+	\tuplet 3/2 4 {<g,, d' bes'>8-\tweak X-offset -2 \fff <g d'> q q q q} q->[ q->] q-> q->
 	g'-> g-> r4 r2
 % Bars 166 to 170
 	R1*4
 	
 	
 	\bar "||"
-	\time 12/8 d8\pp^\pizz r r r4 r8 r2.
+	\time 12/8 d8-\offset X-offset 1.3 \pp^\pizz r r r4 r8 r2.
 % Bars 171 to 175
 	r2. e4.^\arco_\dolciss b4( cis8)
 	d4.~ d8 r r e4. b4( cis8)
 	d4. r4 r8 r2.
-	\tuplet 2/3 4. {a8(\< b cis d) fis( e dis e)\!}
+	\tuplet 2/3 4. {\tupletUp a8(\< b cis d) fis( e dis e)\!}
 	g4.(\> fis)\! r2.
 % Bars 176 to 180
-	\tuplet 2/3 4. {a,8(\< b cis d) fis( e dis e)\!}
+	\tuplet 2/3 4. {a,8(\< b cis d) fis( e dis e)\! \tupletNeutral}
 	g4.(\> fis)\! e4.\pp b4( cis8)
 	d4.~ d8 r fis( e4.) b4( cis8)
 	<a fis'>8\pp^\pizz r r r4 r8 q8 r r r4 r8

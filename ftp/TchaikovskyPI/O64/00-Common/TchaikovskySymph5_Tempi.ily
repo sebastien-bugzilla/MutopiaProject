@@ -62,7 +62,13 @@ tempiMvtI = {
 	\tempo "Tempo I" % bar 451
 }
 tempiMvtII = {
-	\tempo "Andante cantabile con alcuna licenza" 4. = 54
+	\tempo \markup {
+		\concat {
+			"Andante cantabile con alcuna licenza (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 54)"
+		}
+	}
 	s1.*12
 	\tempo "animando" % bar 13
 	s1.*2 s2.
@@ -74,13 +80,31 @@ tempiMvtII = {
 	s1.
 	\tempo "sostenuto" % bar 20
 	s1.*4
-	\tempo "Con moto" 4. = 60 % bar 24
+	\tempo \markup { % bar 24
+		\concat {
+			"Con moto (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 60)"
+		}
+	}
 	s1. s2.
 	\tempo "animato" % bar 25.5
 	s2. s1.*2
-	\tempo "sostenuto" 4. = 50 % bar 28
+	\tempo \markup { % bar 28
+		\concat {
+			"sostenuto (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 50)"
+		}
+	}
 	s1.*5
-	\tempo "Tempo I" 4. = 54 % bar 33
+	\tempo \markup { % bar 33
+		\concat {
+			"Tempo I (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 54)"
+		}
+	}
 	s1.*2
 	\tempo "animando"  % bar 35
 	s1. s2
@@ -92,35 +116,86 @@ tempiMvtII = {
 	s1.*4
 	\tempo "riten." % bar 43
 	s1.
-	\tempo "Tempo I" 4. = 54 % bar 44
+	\tempo \markup { % bar 44
+		\column {
+			"Tempo I"
+			\concat {
+				"(" 
+				\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+				" = 54)"
+			}
+		}
+	}
 	s1.*2
 	\tempo "animando" % bar 46
 	s1.*2
 	\tempo "riten." % bar 48
 	s1.
-	\tempo 4. = 54 % bar 49
+	\tempo \markup { % bar 49
+		\concat {
+			"("
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 54)"
+		}
+	}
 	s1.
 	\tempo "animando" % bar 50
 	s1.*2
-	\tempo "Poco più mosso" 4. = 69 % bar 52
+	\tempo \markup { % bar 52
+		\concat {
+			"Poco più mosso ("
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 69)"
+		}
+	}
 	s1.*4
-	\tempo "Tempo I" 4. = 54 % bar 56
+	\tempo \markup { % bar 56
+		\concat {
+			"Tempo I ("
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 54)"
+		}
+	}
 	s1.
 	\tempo "animando" % bar 57
 	s1. s2.
 	\tempo "riten." % bar 58.5
 	s2.
-	\tempo "Più animato" 4. = 72 % bar 59
+	\tempo \markup { % bar 59
+		\concat {
+			"Più animato (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 72)"
+		}
+	}
 	s1. s2.
 	\tempo "riten." % bar 60.5
 	s2.
-	\tempo "Poco meno" 4. = 60 % bar 61
+	\tempo \markup { % bar 61
+		\concat {
+			"Poco meno (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 60)"
+		}
+	}
 	s1.*5
-	\tempo "Moderato con anima" 4 = 100 % bar 66
+	\tempo \markup { % bar 66
+		\concat {
+			"Moderato con anima (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4} #1 } 
+			" = 100)"
+		}
+	}
 	s1*30
 	\tempo "Stringendo" % bar 96
 	s1*3
-	\tempo "Tempo precedente" 4 = 100 % bar 99
+	\tempo \markup { % bar 99
+		\concat {
+			"Tempo precedente (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4} #1 } 
+			" = 100)"
+		}
+	}
 	s1*9
 	\tempo "Tempo I" % bar 108
 	s1.*8
@@ -138,23 +213,53 @@ tempiMvtII = {
 	s1. s2.
 	\tempo "riten." % bar 127.5
 	s2.
-	\tempo "Più mosso" 4. = 72 % bar 128
+	\tempo \markup { % bar 128
+		\concat {
+			"Più mosso (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 72)"
+		}
+	}
 	s1.*6
-	\tempo "Un poco più animato" 4. = 80 %  bar 134
+	\tempo \markup { %  bar 134
+		\concat {
+			"Un poco più animato ("
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 80)"
+		}
+	}
 	s1.*6
 	\tempo "ritenuto" % bar 140
 	s1.*2
-	\tempo "Andante mosso" 4. = 66 % bar 142
+	\tempo \markup { % bar 142
+		\concat {
+			"Andante mosso (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 66)"
+		}
+	}
 	s1.*2
 	\tempo "animando" % bar 144
 	s1. s2.
 	\tempo "riten." % bar 145.5
 	s2.
-	\tempo 4. = 66 % bar 146
+	\tempo \markup { % bar 146
+		\concat {
+			"("
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 66)"
+		}
+	}
 	s1.
 	\tempo "animando un poco" % bar 147
 	s1.*2
-	\tempo 4. = 69 % bar 149
+	\tempo \markup { % bar 149
+		\concat {
+			"("
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			" = 69)"
+		}
+	}
 	s1.*4
 	\tempo "Molto più andante" % bar 153
 	s1.
@@ -170,7 +275,13 @@ tempiMvtII = {
 	s1*8
 	\tempo "ritenuto" % bar 166
 	s1*4
-	\tempo "Tempo I" 4. = 54 % bar 170
+	\tempo \markup { % bar 170
+		\concat {
+			"Tempo I (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
+			"= 54)"
+		}
+	}
 	s1.*13
 	\tempo "ritenuto molto" % bar 183
 }

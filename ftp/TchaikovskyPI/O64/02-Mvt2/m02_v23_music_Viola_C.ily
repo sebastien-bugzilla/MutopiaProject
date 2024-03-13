@@ -28,7 +28,7 @@ musicViolaMvtII = \relative c {
 	fis\< fis4. gis\! \mark \default
 % Bars 16 to 20
 	<< fis1. {s2.\> s\!}>>
-	dis2.\pp e
+	dis2.-\offset X-offset 0.8 \pp e
 	cis d!
 	fis4.\< fis e2.\!
 	d4. fis2.\> e4.\pp
@@ -43,7 +43,7 @@ musicViolaMvtII = \relative c {
 	cis(\mp-. cis-. cis-. ais-. ais-. ais)-. b(-. b-. b-. b-. b-. b)-. 
 	<b gis'>-.(\> q-. q)-. <cis ais'>(-. q-. q)-.\! r2.
 	b8(\p-. b-. b-. ais-. ais-. ais)-. r2.
-	eis8(\pp-. eis-. eis-. fis)-. r r r2.
+	eis8(-\offset X-offset -1.5 \pp-. eis-. eis-. fis)-. r r r2.
 % Bars 31 to 35
 	r2. r4 r8 r4 g8(\mf
 	fis4) d8( cis4)\> g'8( fis4.)\! r4 r8
@@ -64,18 +64,18 @@ musicViolaMvtII = \relative c {
 	d'4.\p^\connoblezza fis,4( b8) a4.~\< a4\! a8\mp(
 % Bars 46 to 50
 	\tuplet 2/3 4. {b8_\crescmarkup cis \stemUp d b) \stemNeutral} fis'4.~ fis8 r r
-	\tuplet 2/3 4. {b,8( cis \stemUp d b) \stemNeutral} fis'4.\f \tuplet 2/3 4. {e8(-- d--)}
+	\tuplet 2/3 4. {\tupletDown b,8( cis \stemUp d b) \stemNeutral \tupletNeutral} fis'4.\f \tuplet 2/3 4. {e8(-- d--)}
 	d4.\> \tuplet 2/3 4. {cis8(-- b--)} e,( g b) b4( a8)\!
 	<d a'>4.\pp fis,4(\p b8) a4.~ a4 a8(
 	\tuplet 2/3 4. {b cis \stemUp d b) \stemNeutral} fis'4.~ fis8 r fis,(\mf
 % Bars 51 to 55
-	\tuplet 2/3 4. {b-- cis--) d(-- b--)} fis'4.^\condesiderio_\crescpocoapoco fis4 fis8 \mark \default
+	\tuplet 2/3 4. {\once \tupletDown b-- cis--) d(-- b--)} fis'4.^\condesiderio_\crescpocoapoco fis4 fis8 \mark \default
 	fis4.( g4) g8 g4.( gis4) gis8
 	\tuplet 2/3 4. {gis( a) a-- a-- a( ais) ais-- ais--}
 	ais4.( b4) b8 b4.( c4) c8
 	\tuplet 2/3 4. {c8( cis) cis-- cis-- cis( d) d-- d--}
 % Bars 56 to 60
-	d4.\fff fis,4( b8) <<{\noteShift #1 <g a>2.^\div} \\ {\after 2.*5/6 \! <g, g'>\>}>>
+	d4.\fff fis,4( b8) <<{\noteShift #1 <g a>2.-\offset X-offset -3 ^\div} \\ {\after 2.*5/6 \! <g, g'>\>}>>
 	<<{
 		b'4. d,4( g,8) fis2.
 		<e g>4. b'4( cis8) d2.~
@@ -83,7 +83,7 @@ musicViolaMvtII = \relative c {
 	} \\ {
 		b4.\ff\> d4( g,8) fis2.\!
 		\noteShift #1.2 <e g>4.\f b'4( cis8) d2.~\>
-		d4.\! a4(\p\< b8)\! s2.
+		d4.\! a4(-\offset X-offset -1 \p\< b8)\! s2.
 	}>>
 	d4. a4(\< b8)\! d4.(~\> d4 cis8)\!
 % Bars 61 to 65
@@ -105,7 +105,7 @@ musicViolaMvtII = \relative c {
 	fis) fis~ fis fis( eis) eis~ eis eis-. \mark \default
 	R1
 % Bars 76 to 80
-	cis'4.\mf\< d8( fis\! e) d--\> cis--\!
+	cis'4.-\offset X-offset -1 \mf\< d8( fis\! e) d--\> cis--\!
 	cis4(-> b8) r r fis( gis a)
 	gis4( a) r8 gis4 gis8
 	R1
@@ -133,7 +133,7 @@ musicViolaMvtII = \relative c {
 	e!:\fff eis: fis: gis: a!: ais: b!: cis: 
 	b: a!: gis: fis: e: dis: cis: bis:}
 	cis8 r r4 r2
-	<cis, e>8->\fff^\div q-> r4 r2
+	<cis, e>8->\fff-\offset X-offset -6 ^\div q-> r4 r2
 % Bars 101 to 105
 	R1
 	q8-> q-> r4 r^\unis <e b'>4
@@ -143,7 +143,7 @@ musicViolaMvtII = \relative c {
 % Bars 106 to 110
 	<cis a' e' a>8-> q-> r4 r q8-> r
 	r4 q8-> r r4 q8-> r\fermata \bar "||"
-	\timeTwelveEightC r4 r8 <cis g'>4^\pizz\mf r8 cis4 r8 <cis g'>4 r8
+	\timeTwelveEightC r4 r8 <cis g'>4-\offset X-offset -6 ^\pizz\mf r8 cis4 r8 <cis g'>4 r8
 	r4 r8 q4 r8 cis4 r8 q4 r8
 	r4 r8 fis4 r8 d4 r8 fis4 r8
 % Bars 111 to 115
@@ -161,14 +161,14 @@ musicViolaMvtII = \relative c {
 % Bars 121 to 125
 	cis,\< e'\! d,\> <d' a'>\!
 	fis,\< fis fis(~ fis4 e8)\!
-	<fis fis'>4.\f\> r4\! r8 r2. \mark \default
+	\hairpinShorten #'(0 . -1.3) <fis fis'>4.\f\> r4\! r8 r2. \mark \default
 	<fis b>2.\mp\< \after 2.*5/6 \! <b e>\>
 	<e, a>\< \after 2.*5/6 \! a'\>
 % Bars 126 to 130
 	fis,2._\mfcresc(~ fis4.~ fis4 e8)
 	b'2.(\f~ b4\> a8~ a\!) r r
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		r16^\div <a a'>16(\mf <b b'> <a a'>~ q) <a a'>16( <b b'> <a a'>~ q) <a a'>16( <b b'> <a a'>~ q) <a a'>16( <b b'> <a a'>~ 
+		r16-\offset X-offset -3 ^\div <a a'>16(\mf <b b'> <a a'>~ q) <a a'>16( <b b'> <a a'>~ q) <a a'>16( <b b'> <a a'>~ q) <a a'>16( <b b'> <a a'>~ 
 		q) <a a'>16( <b b'> <a a'>~ q) <a a'>16( <b b'> <a a'>~ q) <a a'>16( <b b'> <a a'>~ q) <a a'>16( <b b'> <a a'> 
 		<d d'>) <d d'>(_\crescmarkup <e e'> <d d'>~ q) <d d'>( <e e'> <d d'> <cis cis'>) <cis cis'>( <d d'> <cis cis'>~ q) <cis cis'>( <d d'> <cis cis'>
 % Bars 131 to 135
@@ -207,14 +207,14 @@ musicViolaMvtII = \relative c {
 % Bars 156 to 160
 	d4. a4(\mf\< b8)\! d4.(~\> d4 cis8)\!
 	d4.\p r4 r8 r2. \bar "||"
-	\unsetTimeSignature \time 4/4 f16\fff f f, f f8:16 d': f: d: f,: d: 
+	\unsetTimeSignature \time 4/4 f16-\offset X-offset -2 \fff f f, f f8:16 d': f: d: f,: d: 
 	f: d: f: d': f: d: f,: d: 
 	b': f: b: f': b: f: b,: f: 
 % Bars 161 to 165
 	b: f: b: f': b: f: b,: f: 
 	f4: b8: d: b4: f'8: b: 
 	b,: f': b: d: f,: b: f': b,: 
-	\tuplet 3/2 4 {<d, bes'>8\fff q q  q q q} q8->[ q->] q-> q->
+	\tuplet 3/2 4 {<d, bes'>8-\tweak X-offset -2 \fff q q  q q q} q8->[ q->] q-> q->
 	q-> q-> r4 r2
 % Bars 166 to 170
 	R1*4
@@ -227,7 +227,7 @@ musicViolaMvtII = \relative c {
 	d4. fis,4( b8) a2.
 	\tuplet 2/3 4. {a8(\< b cis d) fis( e dis e)\!}
 	g4.(\> fis)\! r2.
-	\tuplet 2/3 4. {a,8(\< b cis d) fis( e dis e)\!}
+	\tuplet 2/3 4. {\tupletUp a,8(\< b cis d) fis( e dis e)\! \tupletNeutral}
 % Bars 176 to 180
 	g4.(\> fis)\! r2.
 	d4. fis,4( b8) a2.

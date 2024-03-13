@@ -43,7 +43,7 @@ musicTrompetenIIMvtII = \relative c {
 	
 	
 % Bars 56 to 60
-	f'4.\ff\>~ f8\! r r r2.
+	f'4.-\offset X-offset -1 \ff\>~ f8\! r r r2.
 	R1.*9
 % Bars 61 to 65
 	
@@ -113,7 +113,7 @@ musicTrompetenIIMvtII = \relative c {
 % Bars 141 to 145
 	
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		f8\ff r r4 r2
+		f8-\tweak X-offset 0.5 \ff r r4 r2
 		R1*3
 		
 		
@@ -124,7 +124,7 @@ musicTrompetenIIMvtII = \relative c {
 		d16\ff d\f d d  d d d d   d d d d  d d d d
 		e e e e  e e e e  f f f f   f f f f  \mark #11
 % Bars 151 to 155
-		fis\< fis fis fis   fis fis fis fis\!  g\ff g, g g   g g g g 
+		fis\< fis fis fis   fis fis fis fis\!  g-\offset X-offset -1.5 \ff g, g g   g g g g 
 		g g g g   g g g g  bes bes bes bes   bes bes bes bes
 		a\ffff a a a   d d f f  e\> e e e   f f g g\!
 		f\ff f bes, bes  bes bes d d  cis\> cis cis cis   d d e e\!
@@ -140,7 +140,7 @@ musicTrompetenIIMvtII = \relative c {
 	r4 \tuplet 3/2 4 {f8 f f} f4 f
 	r \tuplet 3/2 4 {aes8 aes aes} aes4 f8 r
 	r4 \tuplet 3/2 4 {aes8 aes aes} aes4 f8 r
-	\tuplet 3/2 4 {f'8\fff f f   f f f} f->[ f->] f-> f->
+	\tuplet 3/2 4 {f'8-\tweak X-offset -2 \fff f f   f f f} f->[ f->] f-> f->
 	f-> f-> r4 r2
 % Bars 166 to 170
 	R1*4

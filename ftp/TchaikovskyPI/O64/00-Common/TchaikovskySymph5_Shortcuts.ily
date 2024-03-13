@@ -166,6 +166,7 @@ II = \markup {\fontsize #-1 \bold "II"}
 III = \markup {\fontsize #-1 \bold "III"}
 athree = \markup {\fontsize #-1 \bold "a3"}
 II-III = \markup {\fontsize #-1 \bold "II III"}
+II-IIIadue = \markup {\fontsize #-1 \bold "II III a2"}
 
 % shortcuts
 omitFlag = \once \omit Flag
@@ -277,6 +278,14 @@ markXoffset = #(define-music-function
 	(number?)
 	#{
 		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
+
+tempoXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.X-offset = #offset
 	#}
 )
 
@@ -493,14 +502,6 @@ markXoffset = #(define-music-function
 %)
 
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
-
-%tempoXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.MetronomeMark.X-offset = #offset
-%	#}
-%)
 
 %tempoExtraOffset = #(define-music-function
 %	(offset)

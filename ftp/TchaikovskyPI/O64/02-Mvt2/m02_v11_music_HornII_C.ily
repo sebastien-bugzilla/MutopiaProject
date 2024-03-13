@@ -48,7 +48,7 @@ musicHornIIMvtII = \relative c {
 	cis\pp cis cis  cis cis cis  b\< b b  b cis d\!
 	\stemUp \omitBeam cis\p\< cis cis  \omitBeam cis cis cis  \stemDown gis' gis gis   gis gis gis\!
 % Bars 51 to 55
-	a\mf a a  a a a  fis r r   r fis fis \mark \default
+	a-\tweak X-offset -2 \mf a a  a a a  fis r r   r fis fis \mark \default
 	fis fis fis   fis fis fis  c! c c  c c c
 	cis cis cis  cis cis cis   cis cis cis   cis cis cis
 	cis cis cis   cis cis cis  b' b b  b b b
@@ -58,9 +58,9 @@ musicHornIIMvtII = \relative c {
 	d\f\> d d   d d d  f! f f  fis fis gis\!
 	b,\mf b b  b b b  b4.\> c!
 	cis\! e\p\< fis\> e\!
-	e\p\< e fis\> e\!
+	e-\tweak X-offset -1 \p\< e fis\> e\!
 % Bars 61 to 65
-	e8\p e e   e e e  e r r r4 r8
+	e8-\tweak X-offset -1.5 \p e e   e e e  e r r r4 r8
 	fis fis fis  fis fis fis  fis r r r4 r8
 	fis4.\<~ fis8 r r fis4.~ fis8\! r r
 	R1.*2
@@ -81,7 +81,7 @@ musicHornIIMvtII = \relative c {
 	d d4 d8( ees) ees4 ees8~
 % Bars 81 to 85
 	ees ees4 ees8~ ees ees4 ees8~
-	ees ees~ ees des r c\mf\noBeam( ees) ees \mark \default
+	ees ees~ ees des r c-\offset X-offset 1.5 \mf\noBeam( ees) ees \mark \default
 	ees2(\mf des)
 	R1*3
 	
@@ -146,7 +146,7 @@ musicHornIIMvtII = \relative c {
 	\timeSignature 12/8 dis4.\f dis4 dis8 dis4. r4 r8
 	dis4. dis4 dis8 dis4. r4 r8
 % Bars 136 to 140
-	fis4.\ff fis4 fis8 fis4. r4 r8
+	fis4.-\tweak X-offset 0.5 \ff fis4 fis8 fis4. r4 r8
 	fis4. fis4 fis8 fis r r r4 r8 \mark \default
 	a4.~ a8 r r d,4.~ d8 r r
 	dis4.~ dis8 r r gis4.~ gis8 r r
@@ -159,7 +159,7 @@ musicHornIIMvtII = \relative c {
 		a' a fis fis   fis fis a a  fis\ff fis a a  fis fis fis fis
 		fis fis fis fis   fis fis fis fis  fis fis fis fis  d d d d
 % Bars 146 to 150
-		e\fff e\f e e  e e e e  d d d d   cis cis b b
+		e-\tweak X-offset -3.5 \fff e\f e e  e e e e  d d d d   cis cis b b
 		cis cis cis cis   cis cis cis cis   cis cis cis cis   cis cis cis cis
 		a' a fis fis  fis fis a a  fis fis fis fis   fis fis fis fis
 		fis\ff fis fis fis  fis fis fis fis  fis fis fis fis  fis fis fis fis
@@ -174,14 +174,14 @@ musicHornIIMvtII = \relative c {
 		e4\mf\< e fis\> e\!
 		e\p e\< fis\> e\! \bar "||"
 	}
-	\unsetTimeSignature \time 4/4 fis4\fff c!2.~
+	\unsetTimeSignature \time 4/4 fis4-\tweak X-offset 0.5 \fff c!2.~
 	c4 c2.
 	fis1~
 % Bars 161 to 165
 	fis4 fis2.
 	fis4. c8 fis4. fis8
 	fis4. c8 fis2
-	\tuplet 3/2 4 {b8\fff b b  b b b} b->[ b->] b-> b->
+	\tuplet 3/2 4 {b8-\tweak X-offset -2 \fff b b  b b b} b->[ b->] b-> b->
 	f-> f-> r4 r2
 % Bars 166 to 170
 	b,2\mf r
@@ -197,7 +197,7 @@ musicHornIIMvtII = \relative c {
 	e\> e e  e e e\!  gis\< gis gis   gis gis gis\!
 % Bars 176 to 180
 	e\> e e  e e e\!   fis\< fis fis  fis fis fis\!
-	a,\> a a  a a a\!  b2.\pp(
+	a,\> a a  a a a\!  b2.-\offset X-offset 1 \pp(
 	\stemUp \omitBeam cis8) cis cis  a a a  \stemDown b2.(
 	\stemUp \omitBeam cis8) cis\pp cis  cis r r   cis cis cis  cis r r
 	cis\ppp cis cis  r4 r8  cis cis cis  r4 r8

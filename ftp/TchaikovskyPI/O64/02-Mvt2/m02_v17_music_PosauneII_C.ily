@@ -118,7 +118,7 @@ musicPosauneIIMvtII = \relative c {
 	
 	
 % Bars 141 to 145
-	r8 g\ff~ g fis4 e8~ e b'4 g e8
+	r8 g-\tweak X-offset -3.5 \ff~ g fis4 e8~ e b'4 g e8
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		fis8\ff r r4 r2
 		b2\mf a\<
@@ -131,7 +131,7 @@ musicPosauneIIMvtII = \relative c {
 		b8\ff r  r4 r2
 		fis1_\fcresc~ \mark #11
 % Bars 151 to 155
-		fis2 e\ff
+		fis2 e-\offset X-offset 1 \ff
 		e g
 		fis4\fff~ fis8 f e4\> d8 e\!
 		g8\f r r4 r2
@@ -140,14 +140,14 @@ musicPosauneIIMvtII = \relative c {
 		
 		\bar "||"
 	}
-	\unsetTimeSignature \time 4/4 b4.\fff b16 b cis4. b16 ais
+	\unsetTimeSignature \time 4/4 \aIIXoffset #-5 b4.\fff b16 b cis4. b16 ais
 	b8 b r4 r2
 	d4. d16 d e4. d16 cis
 % Bars 161 to 165
 	d8 d r4 r r8 f
 	e d cis b d4. f8
 	e d cis b d2
-	\tuplet 3/2 4 {bes8\fff bes bes  bes bes bes} bes->[ bes->] bes-> bes->
+	\tuplet 3/2 4 {bes8-\tweak X-offset -2 \fff bes bes  bes bes bes} bes->[ bes->] bes-> bes->
 	d-> d-> r4 r2
 % Bars 166 to 170
 	R1*2

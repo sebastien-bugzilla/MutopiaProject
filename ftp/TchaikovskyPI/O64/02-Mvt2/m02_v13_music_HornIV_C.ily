@@ -40,13 +40,13 @@ musicHornIVMvtII = \relative c {
 	r2. dis'4.\f r4 r8
 	r2. dis
 	d! d
-	r4 r8 \stemUp e,2.\p\> e4.~ \mark \default
-	\stemDown e8\pp r r r4 r8 r2.
+	r4 r8 \stemUp \hairpinShorten #'(0 . -4) e,2.\p\> e4.~\! \mark \default
+	\stemDown e8-\offset X-offset 1.5 \pp r r r4 r8 r2.
 % Bars 46 to 50
 	a'8 a a   a a a  cis, cis cis  cis cis cis
 	fis\mf\< fis fis  fis fis fis\!  fis r r   r4 r8
 	d\mf\> d d   b b b   b b b  b b b\!
-	a\pp r r r4 r8 r2.
+	a-\offset X-offset 1.6 \pp r r r4 r8 r2.
 	a'8\p\< a a   a a a  cis, cis cis  cis cis cis\!
 % Bars 51 to 55
 	fis\mf fis fis  fis fis fis  a a a  a fis fis \mark \default
@@ -55,13 +55,13 @@ musicHornIVMvtII = \relative c {
 	cis cis cis  cis cis cis  b b' b  b b b
 	b b b   b b b   d d d   d d d 
 % Bars 56 to 60
-	cis\fff cis cis   cis,\> cis c\!   b\ff\> b b  a a b\!
+	cis-\tweak X-offset -1.5 \fff cis cis   cis,\> cis c\!   b\ff\> b b  a a b\!
 	\stemUp \omitBeam d\f\> d d  \stemDown a4 b8  cis4. dis4 eis8\!
 	fis\mf fis fis  d d d  d4.\> dis
 	e\! cis\p\< c\> b\!
 	a\p\< cis c\> b\!
 % Bars 61 to 65
-	cis8\p cis cis  cis cis cis  cis8 r r  r4 r8
+	cis8-\tweak X-offset -1.8 \p cis cis  cis cis cis  cis8 r r  r4 r8
 	cis cis cis  cis cis cis  cis r r r4 r8
 	cis4.~\< cis8 r r cis4.~ cis8\! r r
 	R1.*2
@@ -99,8 +99,8 @@ musicHornIVMvtII = \relative c {
 	
 	r2 dis2\f
 % Bars 96 to 100
-	gis, \after 2*3/4 \! dis'\<
-	gis\ff b
+	gis, << dis' {s8\< s s s\!}>>
+	gis2-\tweak X-offset -1 \ff b
 	gis dis4 b
 	gis'1\ff
 	gis8 gis~ gis2.
@@ -124,12 +124,12 @@ musicHornIVMvtII = \relative c {
 	R1.*3
 	
 	
-	r4 r8 cis4.->\mf~ \after 4.*2/3 \! cis\> r4 r8
+	r4 r8 \aIIXoffset #-4 cis4.->\mf~ \after 4.*2/3 \! cis\> r4 r8
 	ais4.\p~ ais8 r r b4.->~ b8 r r
 % Bars 121 to 125
 	gis4.\p~ gis8 r r a!4.->~ a8 r r
 	a4.\<~ a8 r r cis4.(~ cis4 b8)\!
-	\after 4.*2/3 \! a4.\mf\> r4 r8 r2. \mark \default
+	\hairpinShorten #'(0 . -1.5) a4.\mf\> r4\! r8 r2. \mark \default
 	a4.\p( ais  b8) r r r4 r8
 	g!4.( gis a8) r r r4 r8
 % Bars 126 to 130
@@ -151,7 +151,7 @@ musicHornIVMvtII = \relative c {
 	c!4. cis dis8 r r r4 r8 \mark \default
 	cis4.~ cis8 r r c4.~ c8 r r
 	b4.~ b8 r r e4.~ e8 r r
-	r2. r8 gis4\ff fis e8~
+	r2. r8 gis4-\offset X-offset 0.8 \ff fis e8~
 % Bars 141 to 145
 	e d4 cis b8~ b r r r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
@@ -182,7 +182,7 @@ musicHornIVMvtII = \relative c {
 	c4 c2.
 	c4. c8 c4. fis8
 	c4. c8 c2
-	\tuplet 3/2 4 {b'8\fff b b  b b b} b->[ b->] b-> b->
+	\tuplet 3/2 4 {b'8-\tweak X-offset -2 \fff b b  b b b} b->[ b->] b-> b->
 	f-> f-> r4 r2
 % Bars 166 to 170
 	a,2\mf r

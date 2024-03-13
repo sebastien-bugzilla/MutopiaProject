@@ -123,7 +123,7 @@ musicTubaMvtII = \relative c {
 	b4.\mp cis d r4 r8
 	b4. cis d r4 r8
 % Bars 136 to 140
-	eis,4. fis gis r4 r8
+	eis,4.\mf fis gis r4 r8
 	eis4. fis gis r4 r8 \mark \default
 	fis4.\f~ fis8 r r f4.~ f8 r r
 	e4.~ e8 r r a4.~ a8 r r

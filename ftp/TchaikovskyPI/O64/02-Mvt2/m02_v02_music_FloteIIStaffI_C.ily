@@ -27,17 +27,16 @@ musicFloteIIMvtII = \relative c {
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	
 	r4 r8 r fis'(\f a d fis a\> d fis a)\! \changeStaffName \flII-III
-	r4 r8 e,4(~\mp e16 e,)\< \tuplet 2/3 4. {e8( a) cis-- e--\!}
-	a4->(~\f a16 a,) a4.(~ a8 b cis d) r r \changeStaffName \flI-II
+	r4 r8 \omitAdue e,4(~\mp-\offset X-offset -6 ^\II-IIIadue e16 e,)\< \tuplet 2/3 4. {e8( a) \once \tupletUp cis-- e--\!}
+	\dynEO #'(0 . 2) a4->(~\f a16 a,) a4.(~ a8 b cis d) r r \changeStaffName \flI-II
 	R1.*6
 % Bars 41 to 45
 	
 	
 	
 	\mark \default \changeStaffName \flI-II
-	r2. g,4.(\pp\< fis4 e8
+	r2. g,4.(\pp \hairpinShorten #'(-3 . 0) fis4\< e8
 % Bars 46 to 50
 	d)\! r r r4 r8 \tuplet 2/3 4. {\stemUp \omitTuplet fis8\mf( gis \omitTuplet a fis}
 	\stemDown eis) r r r4 r8 \tuplet 2/3 4. {gis8\ff( ais} b) r r
@@ -79,7 +78,7 @@ musicFloteIIMvtII = \relative c {
 	
 % Bars 81 to 85
 	
-	f4.\mf\< ges8( bes\! aes) ges--\> f--\! \mark \default
+	f4.\mf\< ges8( bes\! aes) ges--\> f--\! \mark \default \changeStaffName \flI-II-III
 	R1*2
 	
 	R1*2
@@ -92,18 +91,18 @@ musicFloteIIMvtII = \relative c {
 % Bars 91 to 95
 	R1*2
 	
-	R1*2
+	R1*9
 %	r2 dis,2\f(
 %	fis8) r r4 dis2
-	gis,,4._\fcresc dis'8( fis e dis cis)
-% Bars 96 to 100
-	b'( a gis fis) e'( dis cis bis)
-	a'(\fff gis fis e) dis( cis b! a)
-	gis( fis e dis) cis( b a gis)
-	a4.\fff a16 a b4. a16 gis
-	a8 a r4 r2
-% Bars 101 to 105
-	a4. a16 a b4. a16 gis
+%	gis,,4._\fcresc dis'8( fis e dis cis)
+%% Bars 96 to 100
+%	b'( a gis fis) e'( dis cis bis)
+%	a'(\fff gis fis e) dis( cis b! a)
+%	gis,8( fis e dis) cis( b a gis)
+%	a4.\fff a16 a b4. a16 gis
+%	a8 a r4 r2
+%% Bars 101 to 105
+%	a4. a16 a b4. a16 gis
 	R1*6
 %	a8 a r4 r b
 %	a g a g
@@ -125,7 +124,7 @@ musicFloteIIMvtII = \relative c {
 	
 	
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		b16(\mf cis) dis--\< e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b,\mf(
+		b,16(-\tweak X-offset -1.5 \mf cis) dis--\< e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b,-\tweak X-offset -1 \mf(
 % Bars 121 to 125
 		a b) cis\<-- d!-- e-- f-- fis-- g--\! g( fis eis g fis8) r
 		r16 gis(\f a gis) r a( b a) r b( cis b) r cis( d cis)
@@ -143,7 +142,7 @@ musicFloteIIMvtII = \relative c {
 	\tuplet 2/3 4. {g8( fis) b\ff-- a--} g(_\dimmarkup fis) e-- d-- cis-- b-- 
 	d4.->(\f cis2.) a8(\< b) cis--\!
 	e4.(\> d2.)\< d8-- e-- fis--\!
-	fis4.\f_\III fis fis d8-- e-- fis-- % <= Fl III
+	fis4.\f-\tweak extra-offset #'(-3.5 . 3.5) _\III fis fis d8-- e-- fis-- % <= Fl III
 	fis4. fis fis gis8--\ff a-- b-- % <= Fl III
 % Bars 136 to 140
 	b4. b4 b8 b4. gis8-- a-- b-- 
@@ -160,8 +159,8 @@ musicFloteIIMvtII = \relative c {
 % Bars 146 to 150
 	d4. fis,4( b8) a4.~ a4 a8
 	\tuplet 2/3 4. {b cis d b} fis'4.~ fis8 r r 
-	\tuplet 2/3 4. {b, cis d b} fis'4.\ff fis4 fis8
-	fis,4.\fff( g4) g8 g4.( gis4) gis8
+	\tuplet 2/3 4. {b, cis d b} fis'4. fis4 fis8
+	fis,4.( g4) g8 g4.( gis4) gis8
 	\tuplet 2/3 4. {gis( a) a a a( ais) ais ais} \mark #11
 % Bars 151 to 155
 	ais4._\crescmarkup( b4) b8 b4.( c4) c8
@@ -181,7 +180,7 @@ musicFloteIIMvtII = \relative c {
 	
 	
 	r8 b( f' b) b,( f' b d)
-	\tuplet 3/2 4 {d8\fff d d  d d d} d8->[ d->] d-> d->
+	\tuplet 3/2 4 {\dynEO #'(0 . 2) d8\fff d d  d d d} d8->[ d->] d-> d->
 	e,-> e-> r4 r2
 % Bars 166 to 170
 	R1*4

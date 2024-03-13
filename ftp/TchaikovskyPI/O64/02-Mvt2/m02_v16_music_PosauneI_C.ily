@@ -118,7 +118,7 @@ musicPosauneIMvtII = \relative c {
 	
 	
 % Bars 141 to 145
-	r8 g'\ff~ g fis4 e8~ e \partCombineApart b4 g e8 \partCombineAutomatic
+	r8 g'-\tweak X-offset -3.5 \ff~ g fis4 e8~ e \partCombineApart b4 g e8 \partCombineAutomatic
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		a8\ff r r4 r2
 		\partCombineApart R1
@@ -140,14 +140,14 @@ musicPosauneIMvtII = \relative c {
 		
 		\bar "||"
 	}
-	\unsetTimeSignature \time 4/4 b4.\fff b16 b cis4. b16 ais
+	\unsetTimeSignature \time 4/4 \aIIXoffset #-5 b4.\fff b16 b cis4. b16 ais
 	b8 b r4 r2
 	d4. d16 d e4. d16 cis
 % Bars 161 to 165
 	d8 d r4 r r8 f
 	e d cis b d4. f8
 	e d cis b d2
-	\tuplet 3/2 4 {d8\fff d d  d d d} d->[ d->] d-> d->
+	\tuplet 3/2 4 {d8-\tweak X-offset -2 \fff d d  d d d} d->[ d->] d-> d->
 	e-> e-> r4 r2
 % Bars 166 to 170
 	g,2\mf r

@@ -21,7 +21,7 @@
 \include "./00-Common/TchaikovskySymph5_NameStaff.ily"
 \include "./00-Common/TchaikovskySymph5_NameGrandStaff.ily"
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
-%\include "./00-Common/TchaikovskySymph5_Format_Cond_Mvt02.ily"
+\include "./00-Common/TchaikovskySymph5_Format_Cond_Mvt02.ily"
 \include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./02-Mvt2/m02_v01_music_FloteI_C.ily"
 \include "./02-Mvt2/m02_v02_music_FloteIIStaffI_C.ily"
@@ -72,16 +72,15 @@
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtII
-%						}
+						\new Voice {
+							\formatConductorMvtII
+						}
 						\new Voice {
 							\tempiMvtII
 						}
 						\new Voice {
 							\timeMvtII \nameStaffIMvtII
 							\partCombine \musicFloteIMvtII \musicFloteIIMvtII
-%							\musicFloteIIIMvtII
 						}
 					>>
 					\new Staff {
@@ -92,17 +91,14 @@
 				\new Staff {
 					\timeMvtII \nameStaffIIIMvtII
 					\partCombine #'(0 . 10) \musicOboeIMvtII \musicOboeIIMvtII
-%					\musicOboeIIMvtII
 				}
 				\new Staff {
 					\timeMvtII \nameStaffIVMvtII
 					\partCombine #'(0 . 10) \musicKlarinetteIMvtII \musicKlarinetteIIMvtII
-%					\musicKlarinetteIIMvtII
 				}
 				\new Staff {
 					\timeMvtII \nameStaffVMvtII
 					\partCombine \musicFagotteIMvtII \musicFagotteIIMvtII
-%					\musicFagotteIIMvtII
 				}
 			>>
 			\new StaffGroup <<
@@ -110,29 +106,24 @@
 					\new Staff {
 						\timeMvtII \nameStaffVIMvtII
 						\partCombine #'(0 . 10) \musicHornIMvtII \musicHornIIMvtII
-%						\musicHornIIMvtII
 					}
 					\new Staff \with { \layoutHorn } {
 						\timeMvtII \nameStaffVIIMvtII
 						\partCombine #'(0 . 12) \musicHornIIIMvtII \musicHornIVMvtII
-%						\musicHornIVMvtII
 					}
 				>>
 				\new Staff {
 					\timeMvtII \nameStaffVIIIMvtII
 					\partCombine \musicTrompetenIMvtII \musicTrompetenIIMvtII
-%					\musicTrompetenIIMvtII
 				}
 				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
 					\new Staff {
 						\timeMvtII \nameStaffIXMvtII
 						\partCombine \musicPosauneIMvtII \musicPosauneIIMvtII
-%						\musicPosauneIIMvtII
 					}
 					\new Staff \with { \layoutPosaune }{
 						\timeMvtII \nameStaffXMvtII
 						\partCombine \musicPosauneIIIMvtII \musicTubaMvtII
-%						\musicTubaMvtII
 					}
 				>>
 			>>

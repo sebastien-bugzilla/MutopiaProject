@@ -74,7 +74,7 @@ musicTrompetenIMvtII = \relative c {
 % Bars 91 to 95
 	R1*5
 % Bars 96 to 100
-	\partCombineApart e,2\f \after 2*3/4 \! b'\<
+	\partCombineApart e,2_\f \after 2*3/4 \! b'_\<
 	e g \partCombineAutomatic
 	e b4 g
 	c4.\ff c16 c d4. c16 b
@@ -113,14 +113,14 @@ musicTrompetenIMvtII = \relative c {
 % Bars 141 to 145
 	
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		f8\ff r r4 r2
+		f8-\tweak X-offset 0.5 \ff r r4 r2
 		r2 a,8->\f[ b->] c-> a->
-		d-> r r4 b8->\f cis-> d4->
+		d-> r r4 b8->-\offset X-offset -1.5 \f cis-> d4->
 		g,8-> a-> bes2-> g4
 % Bars 146 to 150
 		\noteShift #0.6 a8 r r4 r2
 		r2 a8\f->[ b->] c-> a->
-		d-> r r4 b8\f\<->[ cis->] d-> f->\!
+		d-> r r4 b8-\offset X-offset -2 \f\<->[ cis->] d-> f->\!
 		g16\ff g\f g g  g g g g  aes aes aes aes  aes aes aes aes
 		a! a a a   a a a a   a a a a  a a a a \mark #11
 % Bars 151 to 155
@@ -140,7 +140,7 @@ musicTrompetenIMvtII = \relative c {
 	r4 \tuplet 3/2 4 {f8 f f} f4 f
 	r \tuplet 3/2 4 {aes8 aes aes} aes4 f8 r
 	r4 \tuplet 3/2 4 {aes8 aes aes} aes4 f8 r
-	\tuplet 3/2 4 {g8\fff g g  g g g} g->[ g->] g-> g->
+	\tuplet 3/2 4 {g8-\tweak X-offset -2 \fff g g  g g g} g->[ g->] g-> g->
 	g-> g-> r4 r2
 % Bars 166 to 170
 	R1*4

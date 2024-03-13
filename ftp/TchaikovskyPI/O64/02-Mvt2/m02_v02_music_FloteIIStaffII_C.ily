@@ -27,7 +27,6 @@ musicFloteIIStaffIIMvtII = \relative c {
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	
 	R1.*3
 %	r4 r8 r fis'(\f a d fis a\> d fis a)\!
 %	r4 r8 e,4(~\mp e16 e,)\< \tuplet 2/3 4. {e8( a) cis-- e--\!}
@@ -89,23 +88,22 @@ musicFloteIIStaffIIMvtII = \relative c {
 	
 	R1
 	R1 % bes'4.\mf\< ces8( ees\! des) ces\>-- bes--\!
-	R1
+	R1 \changeStaffName \flII-III 
 	R1 \mark \default % dis4.\f\< e8( gis\! fis) e\>-- dis--\! \mark \default
 % Bars 91 to 95
 	R1*2
 	
-	\changeStaffName \flII-III r2 dis2\f(
+	r2 dis2\f(
 	fis8) r r4 dis2
-	R1*7 
-%	gis,4._\fcresc dis'8( fis e dis cis)
-%% Bars 96 to 100
-%	b'( a gis fis) e'( dis cis bis)
-%	a'(\fff gis fis e) dis( cis b! a)
-%	gis( fis e dis) cis( b a gis)
-%	a4.\fff a16 a b4. a16 gis
-%	a8 a r4 r2
-%% Bars 101 to 105
-%	a4. a16 a b4. a16 gis
+	gis,4._\fcresc dis'8( fis e dis cis)
+% Bars 96 to 100
+	b'( a gis fis) e'( dis cis bis)
+	\dynEO #'(0 . 2) a'(\fff gis fis e) dis( cis b! a)
+	gis( fis e dis) cis( b a gis)
+	a4.\fff a16 a b4. a16 gis
+	a8 a r4 r2
+% Bars 101 to 105
+	a4. a16 a b4. a16 gis
 	a8 a r4 r b
 	a g a g
 	a8 a r4 r b

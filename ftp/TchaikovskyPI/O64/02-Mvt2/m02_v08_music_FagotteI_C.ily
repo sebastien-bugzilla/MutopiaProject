@@ -73,7 +73,7 @@ musicFagotteIMvtII = \relative c {
 % Bars 66 to 70
 	\time 4/4 R1*5 \clef tenor
 % Bars 71 to 75
-	\partCombineApart cis'4.\mf^\solo\< gis'8( b\! a) gis--\> fis\!--
+	\partCombineApart cis'4._\mf_\<^\solo gis'8( b\! a) gis--_\> fis\!--
 	e4-> \tuplet 9/8 4 {d32( e d e d e d e d)} cis4( gis) \clef bass
 	b4->(~ b16 cis d fis) cis2
 	b4->(~ b16 cis d gis) cis,2 \partCombineAutomatic \mark \default
@@ -95,7 +95,7 @@ musicFagotteIMvtII = \relative c {
 	aes\mf g
 	fes\mf ees
 	des\f c
-	\partCombineApart dis'4.\< e8( gis\! fis) e--\> dis--\! \mark \default
+	\partCombineApart dis'4. e8( gis fis) e-- dis-- \mark \default
 % Bars 91 to 95
 	bis4( gis') gis2(
 	gis,8) r r4 \after 2*3/4 \! dis'2\<
@@ -103,7 +103,7 @@ musicFagotteIMvtII = \relative c {
 	fis(-> dis)
 	gis,4_\fcresc ais,8( b bis cis dis e)
 % Bars 96 to 100
-	eis\( fis gis a\) ais\( bis, cis dis\) \partCombineAutomatic
+	\shape #'((0 . 0)(0 . -0.4)(0 . -0.4)(0 . 0)) PhrasingSlur eis\( fis gis a\) ais\( bis, cis dis\) \partCombineAutomatic
 	e\(\fff eis fis gis\) a\( ais b! cis\)
 	b\( a! gis fis\) e\( dis cis bis\)
 	e1\fff
@@ -155,7 +155,7 @@ musicFagotteIMvtII = \relative c {
 	\partCombineApart d,4. d d8 \partCombineAutomatic b4 b b8~ \mark \default
 	b b4 b b8~ b b4 b b8~
 	b b4 b b8~ b b4 b \partCombineApart \stemDown \omitFlag b8~
-	\stemUp b \clef bass dis, e fis g bes b dis, e \stemDown \omitBeam g gis a~
+	\stemUp \beamOffset #'(-0.1 . -0.1) b \clef bass dis, e \beamOffset #'(-0.3 . -0.3) fis g bes b dis, e \stemDown \omitBeam g gis a~
 % Bars 141 to 145
 	a \partCombineAutomatic g'!4 fis e8~ e b4 g e8 
 	\timeSignature 4/4 \scaleDurations 3/2 {
@@ -181,7 +181,7 @@ musicFagotteIMvtII = \relative c {
 		a\mf a\<^\ten b\>^\ten a\!^\simile
 		a\p a\< b\> a\! \bar "||"
 	} 
-	\unsetTimeSignature \time 4/4 b,4.\fff b16 b cis4. b16 ais
+	\unsetTimeSignature \time 4/4 \aIIXoffset #-5 b,4.\fff b16 b cis4. b16 ais
 	b8 b r4 r2
 	d4. d16 d e4. d16 cis
 % Bars 161 to 165
@@ -189,7 +189,7 @@ musicFagotteIMvtII = \relative c {
 	e d cis b d4. f8
 	e d cis b \partCombineApart d([ b'] f' b,) \partCombineAutomatic
 	\tuplet 3/2 4 {d,8\fff d d   d d d} d8->[ d->] d-> d->
-	g-> g-> r4 r d'4\mf\(
+	g-> g-> r4 r \aIIXoffset -3  d'4\mf\(
 % Bars 166 to 170
 	c-> bes\) r bes\(\p
 	a-> g\) r d\(\pp\<

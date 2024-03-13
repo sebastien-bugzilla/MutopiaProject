@@ -36,7 +36,7 @@ musicHornIMvtII = \relative c {
 	cis4.~ cis8 r r dis4. ais4( bis8)
 % Bars 26 to 30
 	cis4.~ cis8 r r r2.
-	\tuplet 2/3 4. {gis8--\mp\< ais-- bis-- cis-- eis( dis) d-- dis--\!}
+	\tuplet 2/3 4. {\tupletUp gis8--\mp\< ais-- bis-- cis-- eis( dis) d-- dis--\! \tupletNeutral}
 	fis4.(\> eis)\! r2.
 	R1.*12
 % Bars 31 to 35
@@ -56,7 +56,7 @@ musicHornIMvtII = \relative c {
 	cis\pp cis cis  cis cis cis  b\< b b  b cis d\!
 	\partCombineApart cis cis cis  cis cis cis r2. \partCombineAutomatic
 % Bars 51 to 55
-	fis8\mf fis fis  fis fis fis \partCombineApart a, a a   a a a \partCombineAutomatic \mark \default
+	fis8-\tweak X-offset -2 \mf fis fis  fis fis fis \partCombineApart a, a a   a a a \partCombineAutomatic \mark \default
 	b_\mfcrescpocoapoco b b   b b b  c! c c  c c c
 	cis cis cis  cis cis cis   cis cis cis   cis cis cis
 	cis cis cis   cis cis cis  fis fis fis  f f f
@@ -66,9 +66,9 @@ musicHornIMvtII = \relative c {
 	d\f\> d d   a a a  cis cis cis  cis cis cis\!
 	b\mf b b  b b b  b4.\> c!
 	cis\! e\p\< dis\> d\!
-	cis\p\< e dis\> d\!
+	cis-\tweak X-offset -1 \p\< e dis\> d\!
 % Bars 61 to 65
-	cis8\p cis cis  cis cis cis  cis r r r4 r8
+	cis8-\tweak X-offset -1.5 \p cis cis  cis cis cis  cis r r r4 r8
 	cis cis cis   cis cis cis  cis r r r4 r8
 	R1.*3
 	
@@ -135,7 +135,7 @@ musicHornIMvtII = \relative c {
 	cis4.~\p cis8 r r fis4.->~ fis8 r r
 % Bars 121 to 125
 	b,4.\p~ b8 r r e4.->~ e8 r r
-	r2. r4 r8 e4.\mf
+	r2. r4 r8 e4.-\offset X-offset -1.5 \mf
 	cis4.\mf\>~ cis8\! r r r2. \mark \default
 	cis4.\p~ cis8 r r r2.
 	b4.~ b8 r r r2.
@@ -154,7 +154,7 @@ musicHornIMvtII = \relative c {
 	\timeSignature 12/8 dis4.\f dis4 dis8 dis4. r4 r8
 	dis4. dis4 dis8 dis4. r4 r8
 % Bars 136 to 140
-	fis4.\ff fis4 fis8 fis4. r4 r8
+	fis4.-\tweak X-offset 0.5 \ff fis4 fis8 fis4. r4 r8
 	fis4. fis4 fis8 fis r r r4 r8 \mark \default
 	cis4.~ cis8 r r d4.~ d8 r r
 	dis4.~ dis8 r r gis4.~ gis8 r r
@@ -167,7 +167,7 @@ musicHornIMvtII = \relative c {
 		c! c c c   c c c c  a\ff a cis cis   cis cis cis cis
 		d d cis cis  b b b b  b b b b  d d d d
 % Bars 146 to 150
-		e\fff cis\f cis cis   cis cis cis cis  b b b b   cis cis d d
+		e-\tweak X-offset -3.5 \fff cis\f cis cis   cis cis cis cis  b b b b   cis cis d d
 		a a fis fis  fis fis a a  gis_\crescmarkup gis gis gis  gis gis gis gis
 		c! c c c   c c c c   a a a a   a a a a
 		b\ff b b b  b b b b  c c c c  c c c c
@@ -182,14 +182,14 @@ musicHornIMvtII = \relative c {
 		e4\mf\< e^\ten dis^\ten\> d^\simile\!
 		cis\p e\< dis\> d\! \bar "||"
 	}
-	\unsetTimeSignature \time 4/4 fis4\fff c!2.~
+	\unsetTimeSignature \time 4/4 fis4-\tweak X-offset 0.5 \fff c!2.~
 	c4 c2.
 	fis1~
 % Bars 161 to 165
 	fis4 fis2.
 	fis4. a,8 fis'4. a,8
 	fis'4. a,8 fis'2
-	\tuplet 3/2 4 {f!8\fff f f  f f f} f->[ f->] f-> f->
+	\tuplet 3/2 4 {f!8-\tweak X-offset -2 \fff f f  f f f} f->[ f->] f-> f->
 	f-> f-> r4 r2
 % Bars 166 to 170
 	b,2\mf r

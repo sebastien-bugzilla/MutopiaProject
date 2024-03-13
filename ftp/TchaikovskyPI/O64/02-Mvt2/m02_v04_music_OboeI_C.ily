@@ -24,7 +24,7 @@ musicOboeIMvtII = \relative c {
 	
 	
 	
-	fis''4._\dolceespr^\solo ais,4( dis8) cis2.
+	\aIIXoffset #-7 fis''4._\dolceespr-\offset X-offset -7 ^\solo ais,4( dis8) cis2.
 	fis4. ais,4( dis8) \after 2.*5/6 \! cis2.\<
 % Bars 26 to 30
 	\tuplet 2/3 4. {cis8--\< dis-- eis-- fis-- ais( gis) fisis-- gis--\! }
@@ -40,7 +40,7 @@ musicOboeIMvtII = \relative c {
 	g(\< a) b-- cis-- d-- dis-- e( fis) g-- a-- b-- cis--\!
 % Bars 36 to 40
 	d4(~\f d16 d,) d4.~ d8 r r r4 r8
-	r4 r8 e4(~\mp e16 e,\<) \tuplet 2/3 4. {e8( a) cis-- e--\!}
+	r4 r8 e4(~\mp e16 e,\<) \tuplet 2/3 4. {e8( a) \once \tupletUp cis-- e--\!}
 	a4->\f(~ a16 a,) a4.(~ a8 b cis d) r r
 	R1.*6
 	
@@ -51,7 +51,7 @@ musicOboeIMvtII = \relative c {
 	\mark \default
 	r2. g,4.\pp\< fis4( e8
 % Bars 46 to 50
-	d)\! r r r4 r8 \tuplet 2/3 4. {fis8\mf( gis a fis}
+	d)\! r r r4 r8 \tuplet 2/3 4. {fis8-\offset X-offset -2 \mf( gis a fis}
 	eis) r r r4 r8 \tuplet 2/3 4. {gis8(\ff ais} b8) r r
 	\tuplet 2/3 4. {e,!->\f fis->} g!4.-> r2.
 	r g4.(\pp\< fis4 e8
@@ -129,12 +129,12 @@ musicOboeIMvtII = \relative c {
 	d4.~\< \tuplet 3/2 8 {d16 e( \liiri d} \lirii cis d e d)\! d4.(\> cis)\!
 	r8 a\f b~ \tuplet 4/6 4. {b16 cis-- d-- e--} fis8( g a) r4 r8 \mark \default
 % Bars 116 to 120
-	R1.
+	\tempoXoffset #3 R1.
 	r2. a,2.(\mf\<
 	gis8\!) r r r4 r8 r2.
 	r4 r8 fis'4.\f~-> << fis {s8\> s s\!}>> r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		b,16\mf( cis) dis\<-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 \partCombineApart b,(
+		b,16-\tweak X-offset -4 \mf( cis) dis\<-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 \partCombineApart b,(
 % Bars 121 to 125
 		a b) cis-- d!-- \stemDown \omitBeam e-- f-- fis-- g-- \partCombineAutomatic g( fis eis g fis8) r
 		r16 gis,(\f a gis) r a( b a) r b( cis b) r cis( d cis)
@@ -149,11 +149,11 @@ musicOboeIMvtII = \relative c {
 	e4.(\> d2.)\< d8-- e-- fis--\!
 	g4._\fcresc g4 g8 g4.~ g4 g8
 % Bars 131 to 135
-	\tuplet 2/3 4. {g( fis) b--\ff a--} g(_\dimmarkup fis) e-- d-- cis-- b--
+	\tuplet 2/3 4. {g( fis) b---\tweak X-offset -2 \ff a--} g(_\dimmarkup fis) e-- d-- cis-- b--
 	d4.\f->( cis2.) \partCombineApart a8( b) cis-- \partCombineAutomatic
 	e4.(\> d2.)\< d8-- e-- fis--\!
 	\partCombineApart gis4. gis4 gis8 gis4. \partCombineAutomatic d8-- e-- fis--
-	\partCombineApart gis4. gis4 gis8 gis4. \partCombineAutomatic gis8--\ff a-- b--
+	\partCombineApart gis4. gis4 gis8 gis4. \partCombineAutomatic gis8---\tweak X-offset -3.5 \ff a-- b--
 % Bars 136 to 140
 	\partCombineApart b4. b4 b8 b4. \partCombineAutomatic gis8-- a-- b--
 	\partCombineApart b4. b4 b8 b b4 b b8~ \mark \default
@@ -163,16 +163,16 @@ musicOboeIMvtII = \relative c {
 % Bars 141 to 145
 	ais) b cis d dis e fis g a! ais b cis \timeSignature 4/4
 	\scaleDurations 3/2 {
-		a!16\ff fis fis fis  fis fis fis fis  e e e e  fis fis g g
+		a!16-\tweak X-offset -3.5 \ff fis fis fis  fis fis fis fis  e e e e  fis fis g g
 		d d b b  b b d d  cis_\crescmarkup cis cis cis  cis cis cis cis
 		eis eis eis eis  eis eis eis eis  d\ff d fis fis  fis fis fis fis
 		g g fis fis  e! e e e   e e e e   g g g g
 % Bars 146 to 150
-		fis\ff fis fis fis  fis fis fis fis  e e e e  fis fis g g
+		fis-\tweak X-offset -3.5 \ff fis fis fis  fis fis fis fis  e e e e  fis fis g g
 		d d b b  b b d d  cis_\crescmarkup cis cis cis  cis cis cis cis
 		eis eis eis eis  eis eis eis eis  d d d d  d d d d
 	} 
-	\timeSignature 12/8 fis4.(\fff g4) g8 g4.^( gis4) gis8
+	\timeSignature 12/8 fis4.(-\tweak X-offset 0.5 \fff g4) g8 g4.^( gis4) gis8
 	\tuplet 2/3 4. {gis8( a) a a a( ais) ais ais} \mark #11
 % Bars 151 to 155
 	ais4.(_\crescmarkup b4) b8 b4.( c4) c8
@@ -180,19 +180,19 @@ musicOboeIMvtII = \relative c {
 	\scaleDurations 3/2 {
 		d4\ffff fis,8( b) << a2 {s8\> s s s\!}>>
 		b4\ff d,8( g) << fis2 {s8\> s s s\!}>>
-		g16\f e e e g, g g g g4\> gis\!
+		g16-\tweak X-offset -1.5 \f e e e g, g g g g4\> gis\!
 % Bars 156 to 160
 		a4\mf r r2
 		R1 \bar "||"
 	} 
-	\unsetTimeSignature \time 4/4 e'8(\fff d) r4 r2
+	\unsetTimeSignature \time 4/4 e'8(-\tweak X-offset -3 \fff d) r4 r2
 	r4 \tuplet 3/2 4 {b8 b b} b4 b
 	R1
 % Bars 161 to 165
 	r4 \tuplet 3/2 4 {d8 d d} d4 d
 	r4 \tuplet 3/2 4 {f8 f f} f4 d8 r
 	r4 \tuplet 3/2 4 {f8 f f} f4 f8( b)
-	\tuplet 3/2 4 {bes bes bes bes bes bes} bes->[ bes->] bes-> bes->
+	\tuplet 3/2 4 {bes-\tweak X-offset -2 \fff bes bes bes bes bes} bes->[ bes->] bes-> bes->
 	e,-> e-> r4 r2
 % Bars 166 to 170
 	R1*4

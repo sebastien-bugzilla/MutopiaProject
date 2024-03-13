@@ -111,7 +111,7 @@ musicPosauneIIIMvtII = \relative c {
 	R1.*2
 	
 % Bars 126 to 130
-	b4.\p\< a gis g\!
+	\aIIXoffset #-3 b4.\p\< a gis g\!
 	fis\mf f \tuplet 2/3 4. {e8\> e'} d\p r r
 	R1.*6
 	
@@ -131,24 +131,24 @@ musicPosauneIIIMvtII = \relative c {
 % Bars 141 to 145
 	r2. r8 \partCombineApart b~\ff b g4 e8
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		d'2\ff\> cis\mf
-		b a\<
-		gis4 g\! fis2\f
+		d'2-\offset X-offset 1 _\ff_\> cis_\mf
+		b a_\<
+		gis4 g\! fis2_\f
 		e2 \partCombineAutomatic d'4\f cis
 % Bars 146 to 150
-		\partCombineApart d2\ff\> cis\mf
-		b a\<
-		gis4 g\! \after 2*3/4 \! fis2\f\< \partCombineAutomatic
+		\partCombineApart d2-\offset X-offset 0.5 _\ff_\> cis_\mf
+		b a_\<
+		gis4 g\! \after 2*3/4 \! fis2_\f_\< \partCombineAutomatic
 		e'2\ff\> d\f
 		cis_\crescmarkup c
 % Bars 151 to 155
-		b4 a gis\ff g
+		b4 a gis-\tweak X-offset 0.8 \ff g
 		fis2 eis
 		fis4~\fff fis8 gis a4\> b8 cis\!
 		d4\f~ d8 e fis4\> gis8 ais\!
 		b2\mf b,4\> bes\!
 % Bars 156 to 160
-		a4~\mp\> a8\p r r2
+		a4~-\tweak X-offset -2.5 \mp\> a8-\tweak X-offset 1 \p r r2
 		R1 \bar "||"
 	}
 	\unsetTimeSignature \time 4/4 \partCombineApart b4. b16 b cis4. b16 ais
