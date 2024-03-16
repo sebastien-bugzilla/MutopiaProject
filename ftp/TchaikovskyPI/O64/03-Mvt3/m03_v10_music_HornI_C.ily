@@ -10,7 +10,7 @@ musicHornIMvtIII = \relative c {
 	\transposition f
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	r4 r b''\p^\ten
+	r4 r b''-\offset X-offset 0.5 \p^\ten
 	R2.
 	r4 r bes^\ten
 	r r b!^\ten
@@ -66,7 +66,7 @@ musicHornIMvtIII = \relative c {
 	fis4->~ fis8 r r4
 	R2.*2
 	\mark \default
-	e2.\mf
+	e2.-\tweak X-offset -1.5 \mf
 % Bars 56 to 60
 	fis4->~ fis8 r r4
 	R2.*15
@@ -84,8 +84,8 @@ musicHornIMvtIII = \relative c {
 	cis \partCombineAutomatic
 	R2.
 	\partCombineApart R
-	c2.\p\<
-	cis\!~ \mark \default
+	c2.
+	cis~ \mark \default
 % Bars 81 to 85
 	cis8 \partCombineAutomatic r r4 r
 	\partCombineApart R2.
@@ -120,7 +120,7 @@ musicHornIMvtIII = \relative c {
 	
 % Bars 111 to 115
 	r4 r \partCombineApart s4
-	r4 \partCombineAutomatic r gis8-.\pp gis-.
+	r4 \partCombineAutomatic r gis8-.-\tweak X-offset -2 \pp gis-.
 	fis-. r \partCombineApart gis-. gis-. fis-.\noBeam r \partCombineAutomatic
 	r4 r bes8-.\mp bes-.
 	bes-. r r4 r
@@ -140,12 +140,12 @@ musicHornIMvtIII = \relative c {
 	R2.*2
 	
 	\partCombineApart R2.
-	<< c {s4\mf\< s s8 s\!}>>
+	c-\offset X-offset -1 \mf
 	cis2. \partCombineAutomatic
 % Bars 131 to 135
 	R2. 
 	\partCombineApart R
-	<< c {s4\mf\< s s8 s\!}>>
+	c-\offset X-offset -1 \mf
 	cis2.~
 	cis8 \partCombineAutomatic r r4 r
 % Bars 136 to 140
@@ -228,8 +228,8 @@ musicHornIMvtIII = \relative c {
 	dis
 % Bars 216 to 220
 	d!\<
-	dis
-	<< e~ {s4\mf\< s s8 s\!}>> \mark \default
+	<< dis {s4 s s8 s\!}>>
+	<< e2.~ {s4\mf\< s s8 s\!}>> \mark \default
 	e8 r e4\f e
 	e f_\pesante f
 % Bars 221 to 225
@@ -239,7 +239,7 @@ musicHornIMvtIII = \relative c {
 	R2.*2
 	
 % Bars 226 to 230
-	e2\p dis4
+	e2-\tweak X-offset 0.5 \p dis4
 	e r r
 	d2.\p
 	dis

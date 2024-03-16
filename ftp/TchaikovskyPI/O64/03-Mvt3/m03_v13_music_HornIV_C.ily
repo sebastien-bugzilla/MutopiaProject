@@ -22,13 +22,13 @@ musicHornIVMvtIII = \relative c {
 	
 % Bars 11 to 15
 	\mark \default
-	r4 b(\p b')
+	r4 b(-\offset X-offset 0.5 \p b')
 	r b,( e)
 	r bes(\< e)\!
 	r b!(\> fis'\!)
 % Bars 16 to 20
 	R2.
-	cis4\p cis cis
+	cis4-\offset X-offset 0.5 \p cis cis
 	r4 fis,\p r
 	fis8 r b r r4
 	R2.*8
@@ -53,7 +53,7 @@ musicHornIVMvtIII = \relative c {
 	
 	
 % Bars 41 to 45
-	\sonsbouchesgestopft dis2.\p\startTextSpan
+	\aIIXoffset #-3 \sonsbouchesgestopft dis2.\p\startTextSpan
 	gis,
 	\after 2.*5/6 \! e'\<
 	b4\mf~ b8\stopTextSpan r r4 \mark \default
@@ -109,7 +109,7 @@ musicHornIVMvtIII = \relative c {
 	
 	
 	
-	r8 bes-.\noBeam\mp bes-. ges'-. r4
+	r8 bes-.\noBeam-\tweak X-offset -6 \mp bes-. ges'-. r4
 	R2.
 % Bars 111 to 115
 	r8 bes,-.\noBeam bes-. ges'-. r4
@@ -143,13 +143,13 @@ musicHornIVMvtIII = \relative c {
 % Bars 151 to 155
 	
 	\mark #11
-	r4 b,(\p b')
+	r4 b,(-\offset X-offset 1 \p b')
 	r b,( e)
 	r4 bes(\< e)\!
 % Bars 156 to 160
 	r b!(\> fis')\!
 	R2.
-	cis4\p cis cis
+	cis4-\offset X-offset 1 \p cis cis
 	r4 fis,\p r
 	fis8 r b r r4
 % Bars 161 to 165
@@ -174,7 +174,7 @@ musicHornIVMvtIII = \relative c {
 	
 % Bars 181 to 185
 	
-	\sonsbouchesgestopft dis2.\p\startTextSpan
+	\aIIXoffset #-4 \sonsbouchesgestopft dis2.\p\startTextSpan
 	gis,
 	e'
 	b4~ b8\stopTextSpan r r4 \mark \default

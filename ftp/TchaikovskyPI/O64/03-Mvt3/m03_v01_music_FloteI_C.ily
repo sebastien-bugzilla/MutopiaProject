@@ -38,12 +38,12 @@ musicFloteIMvtIII = \relative c {
 	
 	
 	
-	r4 r dis8(\mf^\athree e) \mark \default
+	r4 r \omitAdue dis8(\mf^\athree e) \mark \default
 	cis'4. b8( a gis)
 % Bars 46 to 50
 	fis4( e2)
 	fis4. gis8( a fis)
-	\after 2.*5/6 \! b2.\<
+	<< b2. {s4\< s s8 s\!}>>
 	e4.\f dis8( cis b)
 	a4( gis2)
 % Bars 51 to 55
@@ -88,21 +88,21 @@ musicFloteIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 96 to 100
-	ais16\mf-. b-. ais-. b-. cis-. b-. a-. gis-. \partCombineApart r4
+	\dynEO #'(0 . 2) ais16\mf-. b-. ais-. b-. cis-. b-. a-. gis-. \partCombineApart r4
 	\mmrPos #7 R2.
-	cisis16\p( dis cisis dis e dis bis gis fis8) r
+	cisis16-\offset X-offset -1 \p( dis cisis dis e dis bis gis fis8) r
 	r4 cisis16( dis cisis dis e\< dis bis gis\!
 	e8)\mf r r4 r
 % Bars 101 to 105
 	\mmrPos #7 R2.
-	cisis''16(\p dis cisis dis e dis bis gis fis8) r \partCombineAutomatic
+	cisis''16(-\offset X-offset -1.5 \p dis cisis dis e dis bis gis fis8) r \partCombineAutomatic
 	\changeStaffName \flI r4 cisis16( dis cisis dis e\< dis bis gis\! \mark \default
 	e8)\mf r r4 r
 	R2.*3
 % Bars 106 to 110
 	
 	
-	r4 r cisis'16\mf\<-. dis-. cisis-. dis-.\!
+	r4 r \omitAdue cisis'16\mf\<-. dis-. cisis-. dis-.\!
 	e\>-. dis-. cis!-. b-.\! cis-. b-. ais-. gis-. r4
 	r r cisis16\<-. dis-. cisis-. dis-.\!
 % Bars 111 to 115
@@ -113,7 +113,7 @@ musicFloteIMvtIII = \relative c {
 	R2.
 % Bars 116 to 120
 	r4 fis'16\mp-. g-. fis-. g-. gis( fis) e-. dis-.
-	r4 r cisis'16\f-. dis-. cisis-. dis-. \mark \default
+	r4 r \dynEO #'(0 . 2) cisis'16\f-. dis-. cisis-. dis-. \mark \default
 	e( dis) cis!-. b-. cis-. b-. ais-. gis-. r4 \changeStaffName \flI-II
 	R2.*23
 % Bars 121 to 125
@@ -137,7 +137,7 @@ musicFloteIMvtIII = \relative c {
 	\partCombineApart b,4(\p\< dis, fis\!
 % Bars 156 to 160
 	b8) r r4 r
-	r r fis'8(\p eis)
+	r r fis'8(-\offset X-offset -1 \p eis)
 	eis4(-> fis2)
 	a,2 \partCombineAutomatic a8( b)
 	b r r4 r \changeStaffName \flI-II-III
@@ -161,13 +161,13 @@ musicFloteIMvtIII = \relative c {
 	cis'4. b8( a gis)
 	fis4( e2)
 	fis4. gis8( a fis)
-	\after 2.*5/6 \! b2.\<
+	<< b2. {s4\< s s8 s\!}>>
 	e4.\f dis8( cis b)
 % Bars 191 to 195
 	a4( gis2)
 	cis4. b8( ais b)
 	e,4. e8( gis b)
-	e4.\f dis8( cis b)
+	\dynEO #'(0 . 2) e4.\f dis8( cis b)
 	a4( gis2) \mark \default
 % Bars 196 to 200
 	cis4. b8( ais b
@@ -183,7 +183,7 @@ musicFloteIMvtIII = \relative c {
 	ais4.-> b8( d cis)
 	ais4.-> b8( d cis)
 	ais4.-> b8( cis d)
-	fis(\f e4) a( b,8~
+	\dynEO #'(0 . 2) fis(\f e4) a( b,8~
 	b gis'4 a,) fis'8~(
 % Bars 211 to 215
 	fis g,4 e' fis,8~
@@ -232,7 +232,7 @@ musicFloteIMvtIII = \relative c {
 	
 	
 	
-	r4 \omitAdue a\ff^\athree a
+	r4 \omitAdue \dynEO #'(0 . 2) a\ff^\athree a
 	a a a
 % Bar 266
 	a r r\fermata \bar "|."

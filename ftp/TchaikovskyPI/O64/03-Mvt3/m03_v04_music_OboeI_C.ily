@@ -23,7 +23,7 @@ musicOboeIMvtIII = \relative c {
 	\partCombineApart r4 r fis'8(\p eis) \partCombineAutomatic
 	eis4(-> fis2)
 	a,2 \partCombineApart cis8( b) 
-	e,_\p\<^\solo fis gis a b cis\! \partCombineAutomatic
+	e,_\p\<-\tweak extra-offset #'(-1.5 . -2.7) ^\solo fis gis a b cis\! \partCombineAutomatic
 	d4.\> cis8( b ais)\!
 % Bars 21 to 25
 	cis4( b2)
@@ -49,7 +49,7 @@ musicOboeIMvtIII = \relative c {
 % Bars 46 to 50
 	fis4( e2)
 	fis4. gis8( a fis)
-	\after 2.*5/6 \! b2.\<
+	<< b2. {s4\< s s8 s\!}>>
 	e4.\f dis8( cis b)
 	a4( gis2)
 % Bars 51 to 55
@@ -72,7 +72,7 @@ musicOboeIMvtIII = \relative c {
 	
 	r4 d\mp\< eis\!
 % Bars 76 to 80
-	fis\mf r r 
+	fis-\tweak X-offset 0.5 \mf r r 
 	R2.*2
 	
 	r4 d\mp\< eis\!
@@ -85,12 +85,12 @@ musicOboeIMvtIII = \relative c {
 	R2.*2
 % Bars 86 to 90
 	
-	r4 b8\p\< r dis\! r
+	r4 b8-\tweak X-offset -1 \p\< r dis\! r
 	<< e2 {s8\mf\> s s s\!}>> r4
 	R2.
 	b4~->\p b8 r r4
 % Bars 91 to 95
-	r4 e,\p->( gis8) r
+	r4 e,-\offset X-offset -2 \p->( gis8) r
 	R2.*2
 	
 	b4\p->~ b8 r r4 
@@ -102,20 +102,20 @@ musicOboeIMvtIII = \relative c {
 	
 	\mark \default
 	R2.
-	r4 r ais(\mf->
+	r4 r ais(-\tweak X-offset -4 \mf->
 % Bars 106 to 110
 	b8) r r4 r
-	r r ais(->\mf
+	r r ais(->-\tweak X-offset -4 \mf
 	b8) r r4 r
 	R2.*5
 % Bars 111 to 115
 	
 	
 	
-	fisis8\p-. fisis-. gis-.\noBeam r cis\mf-. cis-. 
+	fisis8\p-. fisis-. gis-.\noBeam r cis-\tweak X-offset -2.5 \mf-. cis-. 
 	b-. r r4 cis8-.\p cis-. 
 % Bars 116 to 120
-	b-. r dis\mp-. dis-. dis-.\noBeam r
+	b-. r dis-\tweak X-offset #-2 \mp-. dis-. dis-.\noBeam r
 	fisis-. fisis-. gis-.\noBeam r ais-. ais-. \mark \default
 	gis-. r r4 r8 d'\mf-.
 	cis-. a-. a-.\noBeam r gis4->(
@@ -164,10 +164,10 @@ musicOboeIMvtIII = \relative c {
 	\after 2.*5/6 \! fis2.\<
 % Bars 156 to 160
 	fis4->( e2)
-	\partCombineApart r4 r fis'8(\p eis) \partCombineAutomatic
+	\partCombineApart r4 r fis'8(-\offset X-offset -1 \p eis) \partCombineAutomatic
 	eis4(-> fis2)
 	a,2 \partCombineApart cis8( b) 
-	e,\p(^\solo fis\< gis a b cis)\! \partCombineAutomatic
+	\markEO #'(-3 . -2.3) \dynEO #'(-1 . -1)  e,\p(^\solo fis\< gis a b cis)\! \partCombineAutomatic
 % Bars 161 to 165
 	d4.\> cis8( b ais)\!
 	cis4( b2)
@@ -190,12 +190,12 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	r4 r dis8\(\mf e\) \mark \default
+	r4 r \aIIXoffset #-3 dis8\(\mf e\) \mark \default
 % Bars 186 to 190
 	cis'4. b8\( a gis\)
 	fis4\( e2\)
 	fis4. gis8\( a fis\)
-	\after 2.*5/6 \! b2.\<
+	<< b2. {s4\< s s8 s\!}>>
 	e4.\f dis8\( cis b\)
 % Bars 191 to 195
 	a4\( gis2\)
@@ -254,7 +254,7 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	r4 a'\ff a
+	r4 a'-\tweak X-offset -3.5 \ff a
 	a a a
 % Bar 266
 	a r r\fermata \bar "|."

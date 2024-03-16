@@ -20,7 +20,7 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 % Bars 16 to 20
-	fis'8(\p gis a gis fis eis)
+	fis'8(-\offset X-offset -2 \p gis a gis fis eis)
 	eis4(-> fis2)
 	fis2 a8( b)
 	\noteShift #-0.5 b r r4 r
@@ -45,7 +45,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 46 to 50
 	fis4( e2)
 	fis4. gis8( a fis)
-	\after 2.*5/6 \! b2.\<
+	<< b2. {s4\< s s8 s\!}>>
 	e4.\f dis8( cis b)
 	a4( gis2)
 % Bars 51 to 55
@@ -68,7 +68,7 @@ musicOboeIIMvtIII = \relative c {
 	
 	gis4\p\< gis gis\!
 % Bars 76 to 80
-	a\mf r r 
+	a-\tweak X-offset 0.5 \mf r r 
 	R2.*2
 	
 	gis4\p\< gis gis\!
@@ -81,7 +81,7 @@ musicOboeIIMvtIII = \relative c {
 	R2.*2
 % Bars 86 to 90
 	
-	r4 d8\p\< r dis\! r
+	r4 d8-\tweak X-offset -1 \p\< r dis\! r
 	<< e2 {s8\mf\> s s s\!}>> r4
 	R2.
 	a4~->\p a8 r r4
@@ -98,10 +98,10 @@ musicOboeIIMvtIII = \relative c {
 	
 	\mark \default
 	R2.
-	r4 r cis,(\mf->
+	r4 r cis,(-\tweak X-offset -4 \mf->
 % Bars 106 to 110
 	b8) r r4 r
-	r r cis(->\mf
+	r r cis(->-\tweak X-offset -4 \mf
 	b8) r r4 r
 	R2.*5
 	
@@ -109,10 +109,10 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	e8\p-. e-. dis-.\noBeam r ais'\mf-. ais-. 
+	e8\p-. e-. dis-.\noBeam r ais'-\tweak X-offset -2.5 \mf-. ais-. 
 	gis-. r r4 fisis8-.\p fisis-. 
 % Bars 116 to 120
-	gis-. r ais\mp-. ais-. gis-.\noBeam r
+	gis-. r ais-\tweak X-offset #-2 \mp-. ais-. gis-.\noBeam r
 	cis-. cis-. b-.\noBeam r ais-. ais-. \mark \default
 	b-. r r4 r8 d\mf-.
 	cis-. a-. a-.\noBeam r b4->(
@@ -161,7 +161,7 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 156 to 160
 	
-	fis8\p( gis a gis fis eis)
+	\beamOffset #'(0.5 . 0.5) fis8-\offset X-offset -2 \p( gis a gis fis eis)
 	eis4(-> fis2)
 	fis2 a8( b)
 	\noteShift #-0.5 b r r4 r
@@ -188,7 +188,7 @@ musicOboeIIMvtIII = \relative c {
 	cis'4. b8\( a gis\)
 	fis4\( e2\)
 	fis4. gis8\( a fis\)
-	\after 2.*5/6 \! b2.\<
+	<< b2. {s4\< s s8 s\!}>>
 	e4.\f dis8\( cis b\)
 % Bars 191 to 195
 	a4\( gis2\)
@@ -247,7 +247,7 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	r4 f\ff e
+	r4 f-\tweak X-offset -3.5 \ff e
 	f e f
 % Bar 266
 	e r r\fermata \bar "|."

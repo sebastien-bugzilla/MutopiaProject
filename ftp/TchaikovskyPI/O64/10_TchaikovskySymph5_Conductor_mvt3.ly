@@ -21,7 +21,7 @@
 \include "./00-Common/TchaikovskySymph5_NameStaff.ily"
 \include "./00-Common/TchaikovskySymph5_NameGrandStaff.ily"
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
-%\include "./00-Common/TchaikovskySymph5_Format_Cond_Mvt03.ily"
+\include "./00-Common/TchaikovskySymph5_Format_Cond_Mvt03.ily"
 \include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./03-Mvt3/m03_v01_music_FloteI_C.ily"
 \include "./03-Mvt3/m03_v02_music_FloteIIStaffI_C.ily"
@@ -39,12 +39,12 @@
 \include "./03-Mvt3/m03_v13_music_HornIV_C.ily"
 \include "./03-Mvt3/m03_v14_music_TrompetenI_C.ily"
 \include "./03-Mvt3/m03_v15_music_TrompetenII_C.ily"
-\include "./03-Mvt3/m03_v20_music_Pauken.ily"
-\include "./03-Mvt3/m03_v21_music_ViolineI.ily"
-\include "./03-Mvt3/m03_v22_music_ViolineII.ily"
-\include "./03-Mvt3/m03_v23_music_Viola.ily"
-\include "./03-Mvt3/m03_v24_music_Violoncell.ily"
-\include "./03-Mvt3/m03_v25_music_Kontrabass.ily"
+\include "./03-Mvt3/m03_v20_music_Pauken_C.ily"
+\include "./03-Mvt3/m03_v21_music_ViolineI_C.ily"
+\include "./03-Mvt3/m03_v22_music_ViolineII_C.ily"
+\include "./03-Mvt3/m03_v23_music_Viola_C.ily"
+\include "./03-Mvt3/m03_v24_music_Violoncell_C.ily"
+\include "./03-Mvt3/m03_v25_music_Kontrabass_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -68,16 +68,15 @@
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtIII
-%						}
+						\new Voice {
+							\formatConductorMvtIII
+						}
 						\new Voice {
 							\tempiMvtIII
 						}
 						\new Voice {
 							\timeMvtIII \nameStaffIMvtIII
 							\partCombine \musicFloteIMvtIII \musicFloteIIMvtIII
-%							\musicFloteIIMvtIII
 						}
 					>>
 					\new Staff {
@@ -88,17 +87,14 @@
 				\new Staff {
 					\timeMvtIII \nameStaffIIIMvtIII
 					\partCombine #'(0 . 10) \musicOboeIMvtIII \musicOboeIIMvtIII
-%					\musicOboeIIMvtIII 
 				}
 				\new Staff {
 					\timeMvtIII \nameStaffIVMvtIII
 					\partCombine #'(0 . 15) \musicKlarinetteIMvtIII \musicKlarinetteIIMvtIII
-%					\musicKlarinetteIIMvtIII
 				}
 				\new Staff {
 					\timeMvtIII \nameStaffVMvtIII
 					\partCombine #'(0 . 10) \musicFagotteIMvtIII \musicFagotteIIMvtIII
-%					\musicFagotteIIMvtIII
 				}
 			>>
 			\new StaffGroup <<
@@ -106,18 +102,15 @@
 					\new Staff {
 						\timeMvtIII \nameStaffVIMvtIII
 						\partCombine \musicHornIMvtIII \musicHornIIMvtIII
-%						\musicHornIIMvtIII
 					}
 					\new Staff \with { \layoutHorn } {
 						\timeMvtIII \nameStaffVIIMvtIII
 						\partCombine \musicHornIIIMvtIII \musicHornIVMvtIII
-%						\musicHornIVMvtIII
 					}
 				>>
 				\new Staff {
 					\timeMvtIII \nameStaffVIIIMvtIII
 					\partCombine \musicTrompetenIMvtIII \musicTrompetenIIMvtIII
-%					\musicTrompetenIIMvtIII
 				}
 			>>
 			\new Staff {

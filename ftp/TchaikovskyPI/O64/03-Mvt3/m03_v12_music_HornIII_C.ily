@@ -110,18 +110,18 @@ musicHornIIIMvtIII = \relative c {
 	bes8) r r4 r
 	r r b!(\mp->
 	bes8) r r4 r
-	r8 bes-.\noBeam\mp bes-. bes-. r4
+	r8 bes-.\noBeam-\tweak X-offset -6 \mp bes-. bes-. r4
 	R2.
 % Bars 111 to 115
 	r8 bes-.\noBeam bes-. bes-. r4
-	\partCombineApart r4 r f8\pp-. f-.
+	\partCombineApart r4 r f8_\pp-. f-.
 	ees-. r \partCombineAutomatic bes'-.\pp bes-. bes-.\noBeam r
 	R2.*4
 	
 % Bars 116 to 120
 	
 	\mark \default
-	r4 r b->\mp~
+	r4 r \aIIXoffset #-4 b->\mp~
 	b8 r r4 r
 	r r b->~
 % Bars 121 to 125

@@ -130,7 +130,7 @@ musicFloteIIIMvtIII = \relative c {
 	
 	\mark #11
 	R2.
-	\omitAdue a2\p~ a8 gis
+	\omitAdue a2-\offset X-offset -1 \p~ a8 gis
 	\after 2.*5/6 \! fis2.\<
 % Bars 156 to 160
 	fis4(-> e2)

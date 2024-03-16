@@ -10,7 +10,7 @@ musicFagotteIIMvtIII = \relative c {
 %	\transposition a
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	r4 r a\p
+	r4 r a-\tweak X-offset 0.5 \p
 	r r a
 	r r a
 	r r gis
@@ -28,7 +28,7 @@ musicFagotteIIMvtIII = \relative c {
 	a,2(\< a'4)\!
 	gis,2(\> gis'4)\!
 % Bars 16 to 20
-	cis,,8\p r r4 r
+	cis,,8-\offset X-offset 0.5 \p r r4 r
 	fis2 r4
 	b( b') a8( b)
 	e,, r r4 r
@@ -187,7 +187,7 @@ musicFagotteIIMvtIII = \relative c {
 	a,2(\< a'4)\!
 % Bars 156 to 160
 	gis,2(\> gis'4)\!
-	cis,,8\p r r4 r
+	cis,,8-\offset X-offset 1.5 \p r r4 r
 	fis2 r4
 	b( b') a8( b)
 	e,, r r4 r

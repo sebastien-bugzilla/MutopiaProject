@@ -20,7 +20,7 @@ musicFloteIIMvtIII = \relative c {
 	\after 2.*5/6 \! fis2.\<
 	fis4(-> e2)
 % Bars 16 to 20
-	fis8(\p gis a gis fis eis)
+	fis8(-\offset X-offset -1 \p gis a gis fis eis)
 	eis4->( fis2)
 	fis2 a8( b) \changeStaffName \flI-II-III
 	b r r4 r
@@ -38,12 +38,12 @@ musicFloteIIMvtIII = \relative c {
 	
 	
 	
-	r4 r dis8(\mf e) \mark \default
+	r4 r \omitAdue dis8(\mf^\athree e) \mark \default
 	cis'4. b8( a gis)
 % Bars 46 to 50
 	fis4( e2)
 	fis4. gis8( a fis)
-	\after 2.*5/6 \! b2.\<
+	<< b2. {s4\< s s8 s\!}>>
 	e4.\f dis8( cis b)
 	a4( gis2)
 % Bars 51 to 55
@@ -88,7 +88,7 @@ musicFloteIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 96 to 100
-	ais16\mf-. b-. ais-. b-. cis-. b-. a-. gis-. fisis(\p gis fisis gis
+	\dynEO #'(0 . 2) ais16\mf-. b-. ais-. b-. cis-. b-. a-. gis-. fisis(\p gis fisis gis
 	a gis fis! e) dis( e dis e fis e dis cis
 	bis8) r r4 r 
 	R2.
@@ -97,8 +97,8 @@ musicFloteIIMvtIII = \relative c {
 	a gis fis! e) dis( e dis e fis e dis cis
 	bis8) r r4 r
 	R2. \mark \default
-	R2.*4
-%	r4 r eis16\mf\<-. fis-. eis-. fis-.\!
+	r4 r eis16\mf\<-. fis-. eis-. fis-.\!
+	R2.*3
 %	gis\>-. fis-. e!-. dis\!-. e-. dis-. cis-. b-. r4
 %% Bars 106 to 110
 %	r r eis16\<-. fis-. eis-. fis\!-. 
@@ -135,7 +135,7 @@ musicFloteIIMvtIII = \relative c {
 	
 	\mark #11
 	R2.
-	a2\p~ a8 gis
+	a,2\p~ a8 gis
 	\after 2.*5/6 \! fis2.\<
 % Bars 156 to 160
 	fis4(-> e2)
@@ -163,13 +163,13 @@ musicFloteIIMvtIII = \relative c {
 	cis'4. b8( a gis)
 	fis4( e2)
 	fis4. gis8( a fis)
-	\after 2.*5/6 \! b2.\<
+	<< b2. {s4\< s s8 s\!}>>
 	e4.\f dis8( cis b)
 % Bars 191 to 195
 	a4( gis2)
 	cis4. b8( ais b)
 	e,4. e8( gis b)
-	e4.\f dis8( cis b)
+	\dynEO #'(0 . 2) e4.\f dis8( cis b)
 	a4( gis2) \mark \default
 % Bars 196 to 200
 	cis4. b8( ais b
@@ -185,7 +185,7 @@ musicFloteIIMvtIII = \relative c {
 	ais4.-> b8( d cis)
 	ais4.-> b8( d cis)
 	ais4.-> b8( cis d)
-	fis(\f e4) a( b,8~
+	\dynEO #'(0 . 2) fis(\f e4) a( b,8~
 	b gis'4 a,) fis'8~(
 % Bars 211 to 215
 	fis g,4 e' fis,8~
@@ -234,7 +234,7 @@ musicFloteIIMvtIII = \relative c {
 	
 	
 	
-	r4 \omitAdue a'\ff^\athree a
+	r4 \omitAdue \dynEO #'(0 . 2) a'\ff^\athree a
 	a a a
 % Bar 266
 	a r r\fermata \bar "|."

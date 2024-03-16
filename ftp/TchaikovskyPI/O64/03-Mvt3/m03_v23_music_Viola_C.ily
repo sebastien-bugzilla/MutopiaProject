@@ -10,7 +10,7 @@ musicViolaMvtIII = \relative c {
 %	\transposition a
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	r4 <e cis'>\p^\pizz r
+	r4 <e cis'>\p-\offset X-offset -6 ^\pizz r
 	r q r
 	r <dis c'> r
 	r <e b'> r
@@ -71,12 +71,12 @@ musicViolaMvtIII = \relative c {
 	e
 % Bars 51 to 55
 	fis4( e dis)
-	e(\f~ e8 e' b gis)
+	e(-\offset X-offset -1.5 \f~ e8 e' b gis)
 	e2._\mfcresc~
 	e \mark \default
 	fis4( e dis)
 % Bars 56 to 60
-	e4\f~ e8 r r4
+	e4-\offset X-offset -1.5 \f~ e8 r r4
 	gis\p^\pizz\< g r
 	g fis r
 	fis f e\!
@@ -96,7 +96,7 @@ musicViolaMvtIII = \relative c {
 % Bars 71 to 75
 	e gis d'
 	cis <cis a' e'>\ff r
-	a\p^\arco( b2~
+	a\p-\offset X-offset -6 ^\arco( b2~
 	b4) r r
 	R2.*2
 % Bars 76 to 80
@@ -124,11 +124,11 @@ musicViolaMvtIII = \relative c {
 	r4 r eis16\p-. fis-. eis-. fis-. 
 	gis-. fis-. e!-. dis-.  r4 r \mark \default
 % Bars 96 to 100
-	e4\mf\>~ e8\! r dis4(\pp
+	e4\mf\>~ e8\! r dis4(-\offset X-offset -1 \pp
 	cis8) r r4 r
 	R2.*2
 	
-	<cis' e>8\mf^\div^\pizz <cis, e> <cis' e>\noBeam r r4
+	<cis' e>8\mf^\div-\offset X-offset -5 ^\pizz <cis, e> <cis' e>\noBeam r r4
 % Bars 101 to 105
 	R2.*3
 	
@@ -161,12 +161,12 @@ musicViolaMvtIII = \relative c {
 	r r <bis bis'>16-.\< <cis cis'>-. <bis bis'>-. <cis cis'>-.\!
 % Bars 126 to 130
 	<d d'>-.\> <cis cis'>-. <b! b'!>-. <a a'>-.\! <b b'>-. <a a'>-. <gis gis'>-. <fis fis'>-. r4
-	a\mf^\unis( b2~
+	a\mf-\offset X-offset -7 ^\unis( b2~
 	b4) r r
 	R2.*2
 	
 % Bars 131 to 135
-	a4\mf( b2~
+	a4-\offset X-offset -2 \mf( b2~
 	b4) r r
 	R2.
 	r4 r fis'16-.\mf\< gis-. fis-. gis-.\!
@@ -196,7 +196,7 @@ musicViolaMvtIII = \relative c {
 	bis4( cis2)
 	dis8(\< cis b! bis) cis-. d-.\!
 % Bars 156 to 160
-	dis4(\> e2)\!
+	\shape #'((0 . -0.3)(0 . -0.5)(0 . -0.5)(0 . -0.3)) Slur dis4(\> e2)\!
 	a,8(\p\< gis fis gis) a-. b-.\!
 	gis4(\> a2\!)
 	a8(\p ais b bis) cis( dis
@@ -222,7 +222,7 @@ musicViolaMvtIII = \relative c {
 % Bars 176 to 180
 	e, b'\! r
 	R2. \mark \default
-	r4 e,\p(^\arco a8) r
+	r4 e,\p(-\offset X-offset -6 ^\arco a8) r
 	r4 e( a8) r
 	r4 a( fis8) r
 % Bars 181 to 185
@@ -239,13 +239,13 @@ musicViolaMvtIII = \relative c {
 	e,2._\mfcresc~
 % Bars 191 to 195
 	e
-	fis4( e dis)
-	e\f(~ e8 e' b gis)
+	\shape #'((0 . 0.3)(0 . 0.5)(0 . 0.5)(0 . 0.3)) Slur fis4( e dis)
+	e-\offset X-offset -2 \f(~ e8 e' b gis)
 	e2._\mfcresc~
 	e \mark \default
 % Bars 196 to 200
-	fis4( e dis)
-	e\f~ e8 r r4
+	\shape #'((0 . 0.3)(0 . 0.5)(0 . 0.5)(0 . 0.3)) Slur fis4( e dis)
+	e-\offset X-offset -2 \f~ e8 r r4
 	gis\p\<^\pizz g r
 	g fis r
 	fis f e\!
@@ -264,14 +264,14 @@ musicViolaMvtIII = \relative c {
 % Bars 211 to 215
 	e e fis
 	e gis d'
-	r8 e,\p^\arco-. e'-. e-. e,-. e-. 
+	r8 e,-\offset X-offset 0.5 \p^\arco-. e'-. e-. e,-. e-. 
 	e'-. e-. e,-. e-. e'-. e-. 
 	e,-. e-. e'-. e-. e,-. e-. 
 % Bars 216 to 220
 	e'\<-. e-. e,-. e-. e'-. e-. 
 	e,-. e-. e'-. e-. e,-. e\!-. 
 	fis'\mf\<-. fis-. fis,-. fis-. fis'-. fis\!-. \mark \default
-	e, r f2\f~
+	e, r f2-\offset X-offset -1 \f~
 	f4 <g g'>-- <g g'>--
 % Bars 221 to 225
 	f-- <g g'>--_\crescmarkup <g g'>--
@@ -288,7 +288,7 @@ musicViolaMvtIII = \relative c {
 % Bars 231 to 235
 	e,-. e-. e'-. e-. e,-. e-.\!
 	fis'\mf\<-. fis-. fis,-. fis-. fis'-. fis\!-.
-	e, r f2\f~
+	e, r f2-\offset X-offset -1 \f~
 	f4 <g g'>-- <g g'>--
 	f-- <g g'>--_\crescmarkup <g g'>--
 % Bars 236 to 240
@@ -325,7 +325,7 @@ musicViolaMvtIII = \relative c {
 	a8\pp r a2->
 	a4 a-> a
 	a-> a a->
-	a <a f' a>\ff <a e' a>
+	a <a f' a>-\offset X-offset 0.5 \ff <a e' a>
 	<a f' a> <a e' a> <a f' a>
 % Bar 266
 	<a e' a> r r\fermata \bar "|."

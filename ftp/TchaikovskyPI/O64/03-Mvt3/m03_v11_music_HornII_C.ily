@@ -24,7 +24,7 @@ musicHornIIMvtIII = \relative c {
 	r cis\< cis\!
 	r dis\> dis\!
 % Bars 16 to 20
-	gis,\p gis r
+	gis,-\offset X-offset 1 \p gis r
 	r gis( gis')
 	cis,2\p r4
 	r dis8 r r4
@@ -62,7 +62,7 @@ musicHornIIMvtIII = \relative c {
 	fis4->~ fis8 r r4
 	R2.*2
 	\mark \default
-	e2.\mf
+	e2.-\tweak X-offset -1.5 \mf
 % Bars 56 to 60
 	fis4->~ fis8 r r4
 	R2.*15
@@ -116,7 +116,7 @@ musicHornIIMvtIII = \relative c {
 	fis8) r r4 r
 % Bars 111 to 115
 	r r \once \stemUp gis->\mp(
-	fis8) r r4 bes,8-.\pp bes-.
+	fis8) r r4 bes,8-.-\tweak X-offset -2 \pp bes-.
 	bes-. r r4 r
 	r4 r ees8-.\mp ees-.
 	ees-. r r4 r
@@ -128,7 +128,7 @@ musicHornIIMvtIII = \relative c {
 	r4 r fis(->
 % Bars 121 to 125
 	e8) r r4 r
-	r4 r dis(->\mf
+	r4 r dis(->-\offset X-offset -0.8 \mf
 	cis8) r r4 r
 	r r dis->(
 	cis8) r r4 r
@@ -136,12 +136,12 @@ musicHornIIMvtIII = \relative c {
 	R2.*2
 	
 	r4 fis2\mf~
-	fis2.\<
+	\after 2.*5/6 \! fis2.\<
 	\once \stemUp \after 2.*5/6 \! e\f\>
 % Bars 131 to 135
 	R2.
 	r4 fis2\mf~
-	fis2.\<
+	\after 2.*5/6 \! fis2.\<
 	\once \stemUp \after 2.*5/6 \! e\f\>~
 	\once \stemUp \omitFlag e8 r r4 r
 % Bars 136 to 140
@@ -170,7 +170,7 @@ musicHornIIMvtIII = \relative c {
 	r \stemDown cis\< cis\!
 % Bars 156 to 160
 	r dis\> dis\!
-	gis,\p gis r
+	gis,-\offset X-offset 1 \p gis r
 	r gis( gis')
 	cis,2\p r4
 	r dis8 r r4
@@ -196,7 +196,7 @@ musicHornIIMvtIII = \relative c {
 	
 % Bars 181 to 185
 	
-	\sonsbouchesgestopft dis2.\p\startTextSpan
+	\aIIXoffset #-4 \sonsbouchesgestopft dis2.\p\startTextSpan
 	gis,
 	e'
 	fis4~ fis8\stopTextSpan r r4 \mark \default
@@ -224,8 +224,8 @@ musicHornIIMvtIII = \relative c {
 	dis
 % Bars 216 to 220
 	d!\<
-	dis
-	<< e~ {s4\mf\< s s8 s\!}>> \mark \default
+	<< dis {s4 s s8 s\!}>>
+	<< e2.~ {s4\mf\< s s8 s\!}>> \mark \default
 	e8 r e4\f e
 	e f f
 % Bars 221 to 225
@@ -235,7 +235,7 @@ musicHornIIMvtIII = \relative c {
 	R2.*2
 	
 % Bars 226 to 230
-	gis2\p a4
+	gis2-\tweak X-offset 0.5 \p a4
 	gis r r
 	d2.\p
 	dis

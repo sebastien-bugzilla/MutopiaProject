@@ -101,8 +101,9 @@ musicFloteIIStaffIIMvtIII = \relative c {
 %	a gis fis! e) dis( e dis e fis e dis cis
 %	bis8) r r4 r
 	R2. \mark \default
-	r4 r \omitAdue eis16\mf\<-. fis-. eis-. fis-.\!
-	gis\>-. fis-. e!-. dis\!-. e-. dis-. cis-. b-. r4
+	R
+%	r4 r \omitAdue eis16\mf\<-. fis-. eis-. fis-.\!
+	\omitAdue gis'16\>-. fis-. e!-. dis\!-. e-. dis-. cis-. b-. r4
 % Bars 106 to 110
 	r r eis16\<-. fis-. eis-. fis\!-. 
 	gis\>-. fis-. e!-. dis\!-. e-. dis-. cis-. b-. r4

@@ -279,14 +279,20 @@ tempiMvtII = {
 		\concat {
 			"Tempo I (" 
 			\fontsize #-4 \general-align #Y #DOWN {\note {4.} #1 } 
-			"= 54)"
+			" = 54)"
 		}
 	}
 	s1.*13
 	\tempo "ritenuto molto" % bar 183
 }
 tempiMvtIII = {
-	\tempo "Allegro moderato" 4 = 138
+	\tempo \markup {
+		\concat {
+			"Allegro moderato ("
+			\fontsize #-4 \general-align #Y #DOWN {\note {4} #1 } 
+			" = 138)"
+		}
+	}
 }
 tempiMvtIV = {
 	\tempo "Andante maestoso" 4 = 80
