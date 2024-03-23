@@ -42,9 +42,9 @@ musicTrompetenIIMvtIV = \relative c {
 	d4.\f d16 d d4. d16 d
 	d8 r d2.
 % Bars 41 to 45
-	d4.\ff d16 d d4. d16 d
+	d4.-\tweak X-offset 1 \ff d16 d d4. d16 d
 	d8 r d2.
-	ees2\ff d
+	ees2-\tweak X-offset 0.5 \ff d
 	ees d
 	c' bes4 a \mark \default
 % Bars 46 to 50
@@ -99,7 +99,7 @@ musicTrompetenIIMvtIV = \relative c {
 	
 	\mark \default
 	d4.\f c8 bes4. a8
-	bes bes a a  g g g g
+	\aIIXoffset #-1.5 bes bes a a  g g g g
 % Bars 116 to 120
 	e'4. d8 c4. bes8
 	c\< c bes bes  a a a a
@@ -235,7 +235,7 @@ musicTrompetenIIMvtIV = \relative c {
 % Bars 291 to 295
 	
 % Bars 296 to 300
-	bes4\ff r bes2\f
+	bes4-\tweak X-offset 0.5 \ff r bes2\f
 	bes2. g4
 	g ees d2~
 	d4 g g g
@@ -244,7 +244,7 @@ musicTrompetenIIMvtIV = \relative c {
 	g g
 	bes2.\sff bes4
 	bes2 r
-	r bes\ff
+	r bes-\tweak X-offset 0.5 \ff
 	bes2. g4
 % Bars 306 to 310
 	g a bes2
@@ -298,7 +298,7 @@ musicTrompetenIIMvtIV = \relative c {
 	bes bes a a   g g g g
 	fis fis fis fis c' c c c
 	c c c c   g g g fis
-	g\ff r r d'\f c4. bes8
+	g-\offset X-offset 0.4 \ff r r d'\f c4. bes8
 % Bars 361 to 365
 	c8\f c bes bes  a a a a
 	b! b b b  d d d d
@@ -322,7 +322,7 @@ musicTrompetenIIMvtIV = \relative c {
 % Bars 381 to 385
 	
 % Bars 386 to 390
-	r2 e,\pp\<
+	r2 \aIIXoffset #-3.5 e,\pp\<
 	gis b\!
 	e1~\mp\>
 	e4\! r r2 \mark \default
@@ -428,7 +428,7 @@ musicTrompetenIIMvtIV = \relative c {
 	R1*4
 	
 	
-	\mark \default
+	\mark \markAa
 	b'4.\fff^\marcialeenergicocontuttaforza b16 b c4. b16 a
 % Bars 491 to 495
 	b4 g2.
@@ -439,14 +439,14 @@ musicTrompetenIIMvtIV = \relative c {
 % Bars 496 to 500
 	fis e d d8. cis16
 	b8^\marcatissimo g' fis e d4. cis8
-	b g' fis e d4. cis8 \mark \default
+	b g' fis e d4. cis8 \mark \markBb
 	b fis' e e   d c! b c
 	b b c cis d dis e fis!
 % Bars 501 to 505
 	e4 e d c
 	d8. e16 g4~ g8 d b g
 	g2\sfff fis\sfff \bar "||"
-	\time 2/2 g4 r g\p r
+	\time 2/2 g4 r g-\tweak X-offset 0.5 \p r
 	gis r b r
 % Bars 506 to 510
 	a r d r
@@ -455,7 +455,7 @@ musicTrompetenIIMvtIV = \relative c {
 	b2\f g\ff
 	g'4\fff r e r
 % Bars 511 to 515
-	b r c r \mark \default
+	b r c r \mark \markCc
 	b r g\p r
 	gis r b r
 	a r d r
@@ -471,7 +471,7 @@ musicTrompetenIIMvtIV = \relative c {
 	ees ees r bes
 	b! b r g
 	gis gis r gis
-	a a r c \mark \default
+	a a r c \mark \markDd
 % Bars 526 to 530
 	c r c2~
 	c bes~
@@ -505,7 +505,7 @@ musicTrompetenIIMvtIV = \relative c {
 % Bars 551 to 555
 	c b a g a b
 	c b a g a b
-	c b a g a b \mark \default
+	c b a g a b \mark \markEe
 	c b a g r r
 	d' r r r2.
 % Bars 556 to 560

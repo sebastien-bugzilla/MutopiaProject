@@ -43,12 +43,12 @@
 \include "./04-Mvt4/m04_v17_music_PosauneII_C.ily"
 \include "./04-Mvt4/m04_v18_music_PosauneIII_C.ily"
 \include "./04-Mvt4/m04_v19_music_Tuba_C.ily"
-\include "./04-Mvt4/m04_v20_music_Pauken.ily"
-\include "./04-Mvt4/m04_v21_music_ViolineI.ily"
-\include "./04-Mvt4/m04_v22_music_ViolineII.ily"
-\include "./04-Mvt4/m04_v23_music_Viola.ily"
-\include "./04-Mvt4/m04_v24_music_Violoncell.ily"
-\include "./04-Mvt4/m04_v25_music_Kontrabass.ily"
+\include "./04-Mvt4/m04_v20_music_Pauken_C.ily"
+\include "./04-Mvt4/m04_v21_music_ViolineI_C.ily"
+\include "./04-Mvt4/m04_v22_music_ViolineII_C.ily"
+\include "./04-Mvt4/m04_v23_music_Viola_C.ily"
+\include "./04-Mvt4/m04_v24_music_Violoncell_C.ily"
+\include "./04-Mvt4/m04_v25_music_Kontrabass_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -72,16 +72,12 @@
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtIV
-%						}
 						\new Voice {
 							\tempiMvtIV
 						}
 						\new Voice {
 							\timeMvtIV \nameStaffIMvtIV
 							\partCombine \musicFloteIMvtIV \musicFloteIIMvtIV
-%							\musicFloteIIMvtIV
 						}
 					>>
 					\new Staff {
@@ -92,17 +88,14 @@
 				\new Staff {
 					\timeMvtIV \nameStaffIIIMvtIV
 					\partCombine #'(0 . 10) \musicOboeIMvtIV \musicOboeIIMvtIV
-%					\musicOboeIIMvtIV
 				}
 				\new Staff {
 					\timeMvtIV \nameStaffIVMvtIV
 					\partCombine #'(0 . 16) \musicKlarinetteIMvtIV \musicKlarinetteIIMvtIV
-%					\musicKlarinetteIIMvtIV
 				}
 				\new Staff {
 					\timeMvtIV \nameStaffVMvtIV
 					\partCombine #'(0 . 15) \musicFagotteIMvtIV \musicFagotteIIMvtIV
-%					\musicFagotteIIMvtIV
 				}
 			>>
 			\new StaffGroup <<
@@ -110,29 +103,24 @@
 					\new Staff {
 						\timeMvtIV \nameStaffVIMvtIV
 						\partCombine #'(0 . 10) \musicHornIMvtIV \musicHornIIMvtIV
-%						\musicHornIIMvtIV 
 					}
 					\new Staff \with { \layoutHorn } {
 						\timeMvtIV \nameStaffVIIMvtIV
 						\partCombine #'(0 . 10) \musicHornIIIMvtIV \musicHornIVMvtIV
-%						\musicHornIVMvtIV 
 					}
 				>>
 				\new Staff {
 					\timeMvtIV \nameStaffVIIIMvtIV
 					\partCombine \musicTrompetenIMvtIV \musicTrompetenIIMvtIV
-%					\musicTrompetenIIMvtIV
 				}
 				\new GrandStaff \with { \nameGrandStaffIIIMvtIV } <<
 					\new Staff {
 						\timeMvtIV \nameStaffIXMvtIV
 						\partCombine \musicPosauneIMvtIV \musicPosauneIIMvtIV
-%						\musicPosauneIIMvtIV
 					}
 					\new Staff \with { \layoutPosaune } {
 						\timeMvtIV \nameStaffXMvtIV
 						\partCombine \musicPosauneIIIMvtIV \musicTubaMvtIV
-%						\musicTubaMvtIV
 					}
 				>>
 			>>

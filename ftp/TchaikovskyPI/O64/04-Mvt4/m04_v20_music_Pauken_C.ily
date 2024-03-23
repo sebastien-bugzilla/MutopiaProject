@@ -265,7 +265,7 @@ musicPaukenMvtIV = \relative c {
 	
 	e'8\ff r r4 r2
 	R1 \mark \default
-	e8\ff r^\mutaginacinheincis r4 r2
+	e8\ff r^\mutagina_cinheincis r4 r2
 	R1*15
 % Bars 326 to 330
 	
@@ -317,7 +317,7 @@ musicPaukenMvtIV = \relative c {
 % Bars 376 to 380
 	b\pp\< cis b cis
 	b cis b cis\!
-	b8\mf r r4 r2^\mutaainfiscisine
+	b8\mf r r4 r2^\mutaainfis_cisine
 	R1*11
 % Bars 381 to 385
 	
@@ -405,7 +405,7 @@ musicPaukenMvtIV = \relative c {
 	
 	
 	
-	\mark \default
+	\mark \markAa
 	e4\fff e e e
 % Bars 491 to 495
 	e e e e
@@ -416,7 +416,7 @@ musicPaukenMvtIV = \relative c {
 % Bars 496 to 500
 	b e fis, e'
 	b8 e b e fis,4 r
-	b8 e b e fis,4 r \mark \default
+	b8 e b e fis,4 r \mark \markBb
 	b8 b fis e' b e b b
 	e r r4 r2
 % Bars 501 to 505
@@ -432,7 +432,7 @@ musicPaukenMvtIV = \relative c {
 	
 	e1:32\fff
 % Bars 511 to 515
-	b4 r r2 \mark \default
+	b4 r r2 \mark \markCc
 	e4 r r2
 	R1*10
 % Bars 516 to 520
@@ -442,7 +442,7 @@ musicPaukenMvtIV = \relative c {
 	
 	b4\fff r r b
 	b r r b
-	b r r b \mark \default
+	b r r b \mark \markDd
 % Bars 526 to 530
 	b r r2
 	R1*3

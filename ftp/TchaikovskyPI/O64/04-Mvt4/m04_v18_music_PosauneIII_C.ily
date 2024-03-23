@@ -88,7 +88,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	\partCombineApart g8\mf r r4 r2
+	\partCombineApart g8 r r4 r2
 	R1*7
 % Bars 111 to 115
 	
@@ -99,7 +99,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 116 to 120
 	
 	
-	b,4.\< a8\! \partCombineAutomatic g4\ff a
+	\hairpinShorten #'(1.3 . 0) b,4._\< a8\! \partCombineAutomatic g4\ff a
 	g a g a
 	g8 r r4 \partCombineApart r b \partCombineAutomatic
 % Bars 121 to 125
@@ -139,12 +139,12 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 166 to 170
 	R1
 	r4 b dis b
-	r4 b_\crescmarkup e a
+	r4 b-\offset X-offset 0.5 _\crescmarkup e a
 	r cis, fis b
 	r d, g b
 % Bars 171 to 175
 	d,\f g, b d
-	c2.\ff c8 c
+	c2._\ff c8 c
 	a2. f8 f \partCombineAutomatic
 	g\ff r r4 g8 r r4
 	R1
@@ -163,7 +163,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 186 to 190
 	e4~ e8 r r2
 	R1
-	\partCombineApart c2.\ff c8 c
+	\partCombineApart c2._\ff c8 c
 	a2. f8 f \partCombineAutomatic
 	g\ff r r4 g8 r r4
 % Bars 191 to 195
@@ -200,12 +200,12 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	
 	\after 1*7/8 \! bes,1\f\>~ 
-	bes~\mf
+	bes~_\mf
 	bes~
 % Bars 221 to 225
 	bes
-	b!~\sf\>
-	b\mf
+	b!~_\sf_\>
+	b_\mf
 	c~\<
 	\after 1*7/8 \! c \partCombineAutomatic
 % Bars 226 to 230
@@ -301,7 +301,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 346 to 350
 	
 	
-	\partCombineApart g8\mf r r4 r2
+	\partCombineApart g8-\offset X-offset -2 \mf r r4 r2
 	R1*7
 	
 % Bars 351 to 355
@@ -311,7 +311,7 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 356 to 360
-	a,8\f r r4 r2
+	a,8 r r4 r2
 	r a2\mf\<~
 	a1~
 	\after 1*7/8 \! a \partCombineAutomatic
@@ -324,7 +324,7 @@ musicPosauneIIIMvtIV = \relative c {
 	cis1~
 % Bars 366 to 370
 	cis~
-	\after 1*7/8 \! cis \mark \default
+	<< cis {s4 s s s8 s\!}>> \mark \default
 	b4\fff cis b cis
 	b cis b cis
 	b8 r r4 \partCombineApart r dis \partCombineAutomatic
@@ -387,7 +387,7 @@ musicPosauneIIIMvtIV = \relative c {
 	fis2. fis8 fis
 	e2\> \after 2*3/4 \! g(
 	b,8)\mf r r4 r2
-	e4\fff d cis b
+	e4 d cis b
 	a g fis e \partCombineAutomatic
 % Bars 436 to 440
 	b'8 r r4 r2
@@ -440,7 +440,7 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	
 	
-	\mark \default
+	\mark \markAa
 	e'4\fff e a a
 % Bars 491 to 495
 	e e e e
@@ -451,7 +451,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 496 to 500
 	dis4 e fis fisis
 	gis8^\marcatissimo cis, dis e fis4 fisis
-	gis8 cis, dis e fis4 fisis \mark \default
+	gis8 cis, dis e fis4 fisis \mark \markBb
 	gis8 gis, a ais b cis d dis
 	e eis fis fisis gis a ais bis
 % Bars 501 to 505
@@ -463,19 +463,19 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 506 to 510
 	
 	
-	\partCombineApart r4 e\mf\< cis dis
+	\partCombineApart r4 e_\mf_\< cis dis
 	bis cis b c\!
-	g\fff gis a ais \partCombineAutomatic
+	g_\fff gis a ais \partCombineAutomatic
 % Bars 511 to 515
-	b bis cis dis \mark \default
+	b bis cis dis \mark \markCc
 	e r r2
 	R1*3
 	
 	
 % Bars 516 to 520
-	\partCombineApart r4 e\mf\< cis dis
+	\partCombineApart r4 e_\mf_\< cis dis
 	bis cis b c\!
-	bes\fff bes bes bes
+	bes bes bes bes
 	a a a a
 	bes bes bes bes
 % Bars 521 to 525
@@ -483,7 +483,7 @@ musicPosauneIIIMvtIV = \relative c {
 	bes bes \once \partCombineAutomatic r bes
 	b! b \once \partCombineAutomatic r b
 	b b \once \partCombineAutomatic r b
-	b b \once \partCombineAutomatic r b \partCombineAutomatic \mark \default
+	b b \once \partCombineAutomatic r b \partCombineAutomatic \mark \markDd
 % Bars 526 to 530
 	b r b'2~
 	b bes~
@@ -517,7 +517,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 551 to 555
 	e r r e r r
 	e r r e r r 
-	e r r e r r \mark \default
+	e r r e r r \mark \markEe
 	e r r r2.
 	e4 r r r2.
 % Bars 556 to 560

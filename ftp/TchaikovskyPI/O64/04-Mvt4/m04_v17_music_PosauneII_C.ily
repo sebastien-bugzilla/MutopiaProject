@@ -40,7 +40,7 @@ musicPosauneIIMvtIV = \relative c {
 % Bars 41 to 45
 	R1*2
 	
-	g2\ff d
+	g2-\tweak X-offset 0.5 \ff d
 	g d
 	a' g4 fis \mark \default
 % Bars 46 to 50
@@ -94,7 +94,7 @@ musicPosauneIIMvtIV = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	a8\mf r r4 r2
+	a8-\tweak X-offset 0.5 \mf r r4 r2
 	R1*7
 % Bars 111 to 115
 	
@@ -142,7 +142,7 @@ musicPosauneIIMvtIV = \relative c {
 	
 % Bars 171 to 175
 	r4 g\f b d
-	g,2.\ff g8 g
+	g,2.-\offset X-offset 0.5 \ff g8 g
 	c,2. c8 c
 	e8 r r4 e8 r r4
 	R1
@@ -237,7 +237,7 @@ musicPosauneIIMvtIV = \relative c {
 % Bars 291 to 295
 	
 % Bars 296 to 300
-	g4\ff r r2
+	g4-\tweak X-offset 0.5 \ff r r2
 	R1*7
 % Bars 301 to 305
 	
@@ -284,7 +284,7 @@ musicPosauneIIMvtIV = \relative c {
 % Bars 346 to 350
 	
 	
-	a8\mf r r4 r2
+	a8-\tweak X-offset 0.5 \mf r r4 r2
 	R1*7
 % Bars 351 to 355
 	
@@ -297,7 +297,7 @@ musicPosauneIIMvtIV = \relative c {
 	e4. dis8 d4. c8
 	b4 b cis dis
 	e\> fis g a\!
-	e8\ff r r b'\f a4. g8
+	e8-\offset X-offset 0.4 \ff r r b'\f a4. g8
 % Bars 361 to 365
 	fis4.\f e8 dis4. d8
 	cis4 cis dis eis
@@ -344,7 +344,7 @@ musicPosauneIIMvtIV = \relative c {
 	
 	\mark \default
 	R1
-	r4 cis,\mf eis cis
+	r4 \aIIXoffset -3 cis,\mf eis cis
 % Bars 416 to 420
 	R1
 	r4 dis fisis dis
@@ -378,7 +378,7 @@ musicPosauneIIMvtIV = \relative c {
 	
 % Bars 451 to 455
 	\mark \default
-	g2\fff b~
+	g2-\tweak X-offset 0.5 \fff b~
 	b8 r r4 r2
 	g2 b~
 	b8 r r4 r2
@@ -415,7 +415,7 @@ musicPosauneIIMvtIV = \relative c {
 	
 	
 	
-	\mark \default
+	\mark \markAa
 	gis'4\fff gis cis cis
 % Bars 491 to 495
 	gis gis gis gis
@@ -426,7 +426,7 @@ musicPosauneIIMvtIV = \relative c {
 % Bars 496 to 500
 	fis gis b cis
 	b8^\marcatissimo gis fis gis b4 cis
-	b8 gis fis gis b4 cis \mark \default
+	b8 gis fis gis b4 cis \mark \markBb
 	b8 b a g fis e eis fis
 	gis! gis a ais b bis cis dis
 % Bars 501 to 505
@@ -440,9 +440,9 @@ musicPosauneIIMvtIV = \relative c {
 	fis gis e fis
 	dis\mf r r2
 	R1
-	e4\fff r cis' r 
+	e4-\tweak X-offset 0.5 \fff r cis' r 
 % Bars 511 to 515
-	gis r a r \mark \default
+	gis r a r \mark \markCc
 	gis r4 r2
 	R1
 	r4 b_\pcresc gis a
@@ -458,7 +458,7 @@ musicPosauneIIMvtIV = \relative c {
 	c c r g
 	gis! gis r e
 	eis eis r eis
-	fis fis r a \mark \default
+	fis fis r a \mark \markDd
 % Bars 526 to 530
 	a r b2~
 	b c~
@@ -492,7 +492,7 @@ musicPosauneIIMvtIV = \relative c {
 % Bars 551 to 555
 	b r r a r r
 	b r r a r r
-	b r r a r r \mark \default
+	b r r a r r \mark \markEe
 	b r r r2.
 	b4 r r r2.
 % Bars 556 to 560

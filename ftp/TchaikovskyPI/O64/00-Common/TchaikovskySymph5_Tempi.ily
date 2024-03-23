@@ -295,9 +295,21 @@ tempiMvtIII = {
 	}
 }
 tempiMvtIV = {
-	\tempo "Andante maestoso" 4 = 80
+	\tempo \markup {
+		\concat {
+			"Andante maestoso ("
+			\fontsize #-4 \general-align #Y #DOWN {\note {4} #1 } 
+			" = 80)"
+		}
+	}
 	s1*57
-	\tempo "Allegro vivace (alla breve)" 2 = 120  % bar 58
+	\tempo \markup {  % bar 58
+		\concat {
+			"Allegro vivace (alla breve) ("
+			\fontsize #-4 \general-align #Y #DOWN {\note {2} #1 } 
+			" = 120)"
+		}
+	}
 	s1*238
 	\tempo "Poco più animato" % bar 296
 	s1*16
@@ -311,9 +323,21 @@ tempiMvtIV = {
 	s1*4
 	\tempo "Moderato assai e molto maestoso" % bar 472
 	s1*32
-	\tempo "Presto" 2 = 144 % bar 504
+	\tempo \markup { % bar 504
+		\concat {
+			"Presto ("
+			\fontsize #-4 \general-align #Y #DOWN {\note {2} #1 } 
+			" = 144)"
+		}
+	}
 	s1*42
-	\tempo "Molto meno mosso" 2. = 96 % bar 546
+	\tempo \markup { % bar 546
+		\concat {
+			"Molto meno mosso (" 
+			\fontsize #-4 \general-align #Y #DOWN {\note {2.} #1 } 
+			" = 96)"
+		}
+	}
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #

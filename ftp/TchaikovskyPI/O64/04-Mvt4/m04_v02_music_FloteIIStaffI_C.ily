@@ -34,7 +34,7 @@ musicFloteIIMvtIV = \relative c {
 	gis2.\< e'4--\ff
 	dis-- cis-- b-- dis8.( cis16)
 % Bars 31 to 35
-	\after 1*7/8 \! b1\> \mark \default
+	<< b1 {s4\> s s s8. s16\!}>> \mark \default
 	cis4.\p cis16_\crescmarkup cis cis4. cis16 cis
 	cis8 r b2.->
 	cis4. cis16 cis cis4. cis16 cis
@@ -95,7 +95,7 @@ musicFloteIIMvtIV = \relative c {
 	g a b c
 % Bars 81 to 85
 	d dis e fis \mark \default
-	g8 r r4 r2
+	g8 r r4 r2 \changeStaffName \flI
 	R1*3 
 	
 	
@@ -147,14 +147,14 @@ musicFloteIIMvtIV = \relative c {
 % Bars 131 to 135
 	d8) r r4 a2\<
 	b cis\!
-	d1\f
-	cis\mf
+	\dynEO #'(0 . 2) d1\f
+	\dynEO #'(0 . 2) cis\mf
 	a2( e)
 % Bars 136 to 140
 	cis'1\<(
 	\after 1*7/8 \! a)
 	cis2\f( d~
-	d) a2\mf
+	d) \dynEO #'(0 . 2) a2\mf
 	b gis
 % Bars 141 to 145
 	b( a)
@@ -163,17 +163,17 @@ musicFloteIIMvtIV = \relative c {
 	d4( b) d( cis)
 	e( cis) e( cis)
 % Bars 146 to 150
-	e2(\ff b)
+	\dynEO #'(0 . 2) e2(\ff b)
 	a2( gis4) r \mark \default
 	R1*3
 	
 	
 % Bars 151 to 155
-	d,2->\ff e8( d cis d
+	d,2->-\tweak X-offset -3.5 \ff e8( d cis d
 	g) r r4 r2
 	R1*2
 	
-	d2\ff-> e8( d cis d
+	d2-\tweak X-offset -3.5 \ff-> e8( d cis d
 % Bars 156 to 160
 	g) r r4 r2
 	R1*7
@@ -250,13 +250,13 @@ musicFloteIIMvtIV = \relative c {
 	g g c a
 	b g a e 
 	g8 r r4 r2
-	R1*5
+	R1*5 \changeStaffName \flI-II
 	
 % Bars 221 to 225
 	
 	
 	
-	r4 bes,\fff a bes
+	r4 \omitAdue \stemUp bes,\fff a bes \stemNeutral
 	g r r2
 % Bars 226 to 230
 	r4 e'\fff dis e
@@ -274,7 +274,7 @@ musicFloteIIMvtIV = \relative c {
 	
 % Bars 241 to 245
 	
-	cis'1\fff~
+	cis'1\fff~^\athree
 	cis2 b8( ais) gis-. fis-.
 	fis2 b~
 	b b
@@ -293,7 +293,7 @@ musicFloteIIMvtIV = \relative c {
 % Bars 256 to 260
 	bes( a! bes c!) d!( ees f ges)
 	aes( a bes b) c( cis d ees \mark \default
-	f)\f r r4 r2
+	\dynEO #'(0 . 2) f)\f r r4 r2
 	R1*23
 % Bars 261 to 265
 	
@@ -311,7 +311,7 @@ musicFloteIIMvtIV = \relative c {
 % Bars 291 to 295
 	
 % Bars 296 to 300
-	e,4\ff r b2
+	e,4\ff^\athree r b2
 	e2. fis4
 	g a b2~
 	b4 c b a
@@ -344,8 +344,8 @@ musicFloteIIMvtIV = \relative c {
 	d dis e fis
 	g a b c
 	d dis e fis \mark \default
-	g8 r r4 r2 \changeStaffName \flI-II
-	R1*3
+	g8 r r4 r2 \changeStaffName \flI
+	R1*3 \changeStaffName \flI-II
 % Bars 326 to 330
 	
 	
@@ -373,13 +373,13 @@ musicFloteIIMvtIV = \relative c {
 	g g g g\! g\mf g g g
 	g g g g   g g g g
 	fis fis fis fis  g g g g
-	fis fis fis fis  g g g g \mark \default
+	fis fis fis fis  g g g g \mark \default 
 % Bars 356 to 360
-	g r \omitAdue b4\ff^\athree cis d \changeStaffName \flI-II-III
+	g r b4-\tweak X-offset #0.5 \ff cis d \changeStaffName \flI-II-III
 	e fis g a
-	b4. a8( g4.) fis8(
+	b4.^\athree a8( g4.) fis8(
 	e4.) dis8( c!4.) b8
-	e r cis4\ff dis e
+	e r cis4\ff dis e \changeStaffName \flI-II
 % Bars 361 to 365
 	fis g a b
 	cis4. b8( a4.) gis8(
@@ -391,7 +391,7 @@ musicFloteIIMvtIV = \relative c {
 	gis4.) fisis8( e!4.) dis8 \mark \default \changeStaffName \flI-II
 	gis r gis'2\fff dis4~
 	dis gis,2 dis4~
-	dis r r2
+	dis r r2 \changeStaffName \flI
 % Bars 371 to 375
 	R1*7
 % Bars 376 to 380
@@ -511,15 +511,15 @@ musicFloteIIMvtIV = \relative c {
 	\key e \major \time 4/4 \tuplet 3/2 4 {e,8( dis cis b ais b) e( dis cis b ais b)
 	e( dis cis b ais b) e( dis cis b ais b)
 	e( dis cis b ais b) cis( dis cis bis cis bis)
-	b!( cis b a! b a) gis( a gis fis gis fis)
+	b!( cis b a! b a) gis( a gis fis gis fis) \changeStaffName \flI-II
 % Bars 476 to 480
 	e( dis e gis fisis gis) a( fis gis a b cis)
 	gis( a ais b cis dis) e( fis fisis gis a! ais)
-	b( ais a gis fis e) dis( e dis cis dis cis)
+	b(^\adue ais a gis fis e) dis( e dis cis dis cis)
 	b( cis b cis dis cis) dis( e dis e fis e)
 	fis( gis fis gis ais gis) fis( gis fis e fis e
 % Bars 481 to 485
-	dis) b bis cis dis e fis g! gis a ais b! } \mark \default \changeStaffName \flI-II
+	dis) b bis cis dis e fis g! gis a ais b! } \mark \default 
 	cis4.\ff cis16 cis cis4. cis16 cis
 	cis4 b2.
 	cis4. cis16 cis cis4. cis16 cis
@@ -528,7 +528,7 @@ musicFloteIIMvtIV = \relative c {
 	dis cis b b8. ais16
 	gis2. e'4
 	dis cis b dis8. cis16
-	b8 r r4 r16 cis,( dis e fis gis a ais) \mark \default
+	b8 r r4 r16 cis,( dis e fis gis a ais) \mark \markAa
 	b(\fff a! gis fis e fis gis b) cis( a e dis cis dis e fis)
 % Bars 491 to 495
 	gis( b, cis dis e fis gis a) b( bis cis dis e b cis dis)
@@ -539,7 +539,7 @@ musicFloteIIMvtIV = \relative c {
 % Bars 496 to 500
 	b( ais gis fis gis e dis cis) fis( dis cis b e cis b ais
 	gis8) e'-> dis-> cis-> b16( fis dis b) cis( dis e ais
-	gis8) e'-> dis-> cis-> b16( fis dis b) cis( dis e ais \mark \default
+	gis8) e'-> dis-> cis-> b16( fis dis b) cis( dis e ais \mark \markBb
 	gis8) gis' fis e dis cis b a!
 	gis b a cis b dis cis fis
 % Bars 501 to 505
@@ -547,7 +547,7 @@ musicFloteIIMvtIV = \relative c {
 	e8. e16 gis4~ gis16 e b gis e b gis e 
 	e2\sfff fis\sfff \bar "||" \time 2/2 \changeStaffName \flI-II-III
 	e4 r8 b'(\p e4) r8 fis(
-	gis4) r8 fis( eis4) r8 gis(
+	gis4)^\athree r8 fis( eis4) r8 gis(
 % Bars 506 to 510
 	cis,4)_\crescmarkup r8 d( dis4) r8 eis(
 	fis4) r8 gis( a4) r8 ais(
@@ -555,7 +555,7 @@ musicFloteIIMvtIV = \relative c {
 	e4) r8 fis( gis4) r8 a(
 	b4)\fff r8 gis( e4) r8 cis(
 % Bars 511 to 515
-	b4) r8 gis( fis4) r8 gis( \mark \default
+	b4) r8 gis( fis4) r8 gis( \mark \markCc
 	e4) r8 b\p( e4) r8 fis(
 	gis4) r8 fis( eis4) r8 gis(
 	cis,4)_\crescmarkup r8 d( dis4) r8 eis(
@@ -571,7 +571,7 @@ musicFloteIIMvtIV = \relative c {
 	g g,8( a bes c d dis
 	e4) e,8( fis gis! a b! bis
 	cis4) cis,8( d dis eis fisis gis
-	a4) a,8( b cis dis e! eis \mark \default
+	a4) a,8( b cis dis e! eis \mark \markDd
 % Bars 526 to 530
 	fis) fis, gis a b cis dis e!
 	fis fis, ais b c d e f
@@ -605,7 +605,7 @@ musicFloteIIMvtIV = \relative c {
 % Bars 551 to 555
 	b r r cis r r
 	b r r cis r r
-	b r r cis r r \mark \default
+	b r r cis r r \mark \markEe
 	b r r r2.
 	gis4 r r r2.
 % Bars 556 to 560

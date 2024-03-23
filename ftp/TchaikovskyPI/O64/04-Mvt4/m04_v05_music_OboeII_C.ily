@@ -34,7 +34,7 @@ musicOboeIIMvtIV = \relative c {
 	gis2.\< e'4--\ff
 	dis-- cis-- b-- dis8.( cis16)
 % Bars 31 to 35
-	\after 1*7/8 \! b1\> \mark \default
+	<< b1 {s4\> s s s8. s16\!}>> \mark \default
 	cis4.\p cis16_\crescmarkup cis cis4. cis16 cis
 	cis8 r b2.->
 	cis4. cis16 cis cis4. cis16 cis
@@ -48,7 +48,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 41 to 45
 	b4.\fff b16 b b4. b16 b
 	b8 r b2.
-	c2\ff d
+	c2-\tweak X-offset 0.5 \ff d
 	c d
 	a g4 fis \mark \default
 % Bars 46 to 50
@@ -58,9 +58,9 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 % Bars 51 to 55
-	r4 << b,2.~ {s8\p\< s s s s\> s }>>
+	r4 << b,2.~ {s8-\tweak X-offset -1 \p\< s s\! s s\> s\!}>>
 	b8\! r r4 r2
-	r4 << b2.~ {s8\pp\< s s s s\> s}>>
+	r4 << b2.~ {s8\pp\< s s\! s s\> s}>>
 	b8\! r \after 2.*5/6 \! b2.(\<
 	\stemUp b4\>~ \omitFlag b8\!) r r2
 % Bars 56 to 60
@@ -113,7 +113,7 @@ musicOboeIIMvtIV = \relative c {
 	R1*2
 % Bars 96 to 100
 	
-	<< fis,1\sf( {s2 s4\> s8 s\!}>> \mark \default
+	<< fis,1-\tweak X-offset -3 \sf( {s2 s4\> s8 s\!}>> \mark \default
 	e8)\p r r4 r2
 	R1*7
 % Bars 101 to 105
@@ -122,7 +122,7 @@ musicOboeIIMvtIV = \relative c {
 	r4 fis(\mf e fis)
 	b,2(\< cis)
 	d4( dis fis e)\!
-	b'4.\sff\>( a8) dis,4.(\mf e8)
+	b'4.\sff\>( a8)\! dis,4.(-\tweak X-offset -2 \mf e8)
 	r4 fis( e fis)
 % Bars 111 to 115
 	b,2(\< cis)
@@ -143,12 +143,12 @@ musicOboeIIMvtIV = \relative c {
 	\mark \default
 	\stemDown cis'1(
 	a1)
-	cis2->( d~
+	cis2( d~
 % Bars 131 to 135
 	d8) r r4 a2\<
 	b cis\!
-	d1\f
-	cis\mf
+	\dynEO #'(0 . 1) d1\f
+	\dynEO #'(0 . 1) cis\mf
 	a2( e)
 % Bars 136 to 140
 	cis'1\<(
@@ -169,7 +169,7 @@ musicOboeIIMvtIV = \relative c {
 	g!1\mf\<~
 	g2 a8( g fis g)\!
 % Bars 151 to 155
-	c2(->\f b)
+	c2(->-\tweak X-offset -2.5 \f b)
 	R1
 	g1~\mf\<
 	g2 a8( g fis g)\!
@@ -235,7 +235,7 @@ musicOboeIIMvtIV = \relative c {
 	b fis' g fis
 	g e d c
 % Bars 206 to 210
-	b e,8\ff e fis fis fis fis
+	b \beamOffset #'(0.3 . 0.3) e,8\ff e fis fis fis fis
 	e e e e d d d d
 	e4 e8 e fis fis fis fis 
 	e e e e d d d d \mark \default
@@ -385,7 +385,7 @@ musicOboeIIMvtIV = \relative c {
 	
 	R1*2
 	
-	\after 1*7/8 \! fis,1\mf\>( \mark \default
+	<< fis,1(\mf {s4\> s s s\!}>> \mark \default
 	e8)\p r r4 r2
 % Bars 341 to 345
 	R1*7
@@ -430,8 +430,8 @@ musicOboeIIMvtIV = \relative c {
 % Bars 381 to 385
 	fis8) r r4 cis2\<
 	dis eis\!
-	fis1\f
-	eis\mf
+	\dynEO #'(0 . 1) fis1\f
+	\dynEO #'(0 . 1) eis\mf
 	cis2( gis)
 % Bars 386 to 390
 	eis'1\<(
@@ -446,7 +446,7 @@ musicOboeIIMvtIV = \relative c {
 	ges4( ees) ges( f)
 	aes( f) aes( ges)
 % Bars 396 to 400
-	aes2\ff( ees)
+	\dynEO #'(0 . 2) aes2\ff( ees)
 	des2( c4) r \mark \default
 	R1
 	b!~\mf\<
@@ -482,7 +482,7 @@ musicOboeIIMvtIV = \relative c {
 	e1
 	c
 % Bars 426 to 430
-	b2\ff g
+	b2-\tweak X-offset -1 \ff g
 	c fis,
 	g2. g8 g
 	fis2. fis8 fis
@@ -510,7 +510,7 @@ musicOboeIIMvtIV = \relative c {
 	b4 b2 b4~
 % Bars 451 to 455
 	\tuplet 3/2 2 {b b b  b b b} \mark \default
-	c,2\fff d~
+	c,2-\tweak X-offset 0.5 \fff d~
 	d8 r r4 r2
 	c2 d~
 	d8 r r4 r2
@@ -554,7 +554,7 @@ musicOboeIIMvtIV = \relative c {
 	fis b, dis cis
 	b cis dis gis,8. ais16
 	b4 e fis, ais
-	fis8 r r4 r2 \mark \default
+	fis8 r r4 r2 \mark \markAa
 	gis4.\fff gis16 gis a4. gis16 fis
 % Bars 491 to 495
 	gis4 e2.
@@ -565,7 +565,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 496 to 500
 	b cis b b8. ais16
 	gis8 cis b cis b4. ais8
-	gis cis b cis b4. ais8 \mark \default
+	gis cis b cis b4. ais8 \mark \markBb
 	gis b' a! g fis e eis b
 	b d cis e! e fis g a!
 % Bars 501 to 505
@@ -581,7 +581,7 @@ musicOboeIIMvtIV = \relative c {
 	e4) r8 fis( gis4) r8 a(
 	b4)\fff r8 gis( e4) r8 cis(
 % Bars 511 to 515
-	b4) r8 gis( fis4) r8 gis( \mark \default
+	b4) r8 gis( fis4) r8 gis( \mark \markCc
 	e4) r e\p r
 	eis r gis r
 	fis r b r
@@ -597,7 +597,7 @@ musicOboeIIMvtIV = \relative c {
 	g g8( a bes c d dis
 	e4) e,8( fis gis! a b! bis
 	cis4) cis,8( d dis eis fisis gis
-	a4) a8( b cis dis e! eis \mark \default
+	a4) a8( b cis dis e! eis \mark \markDd
 % Bars 526 to 530
 	fis4) r d,2~
 	d e~
@@ -631,7 +631,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 551 to 555
 	a gis fis e fis gis
 	a gis fis e fis gis
-	a gis fis e fis gis \mark \default
+	a gis fis e fis gis \mark \markEe
 	a gis fis e r r
 	b' r r r2.
 % Bars 556 to 560

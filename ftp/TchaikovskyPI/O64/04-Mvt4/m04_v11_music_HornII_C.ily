@@ -24,9 +24,9 @@ musicHornIIMvtIV = \relative c {
 	fis8 r fis2.
 	fis4. fis16 fis fis4. fis16 fis 
 	fis8 r fis2.
-	g2\sfp a
+	g2-\tweak X-offset 0.5 \sfp a
 % Bars 21 to 25
-	g\pp a
+	g-\tweak X-offset 0.5 \pp a
 	R1*2
 	
 	fis,2 b~
@@ -52,7 +52,7 @@ musicHornIIMvtIV = \relative c {
 % Bars 41 to 45
 	cis'8 r r4 r2
 	R1
-	g'2\ff r
+	g'2-\tweak X-offset -2 \ff r
 	g r
 	cis, d4 e \mark \default
 % Bars 46 to 50
@@ -84,12 +84,12 @@ musicHornIIMvtIV = \relative c {
 	fis r e r fis r g r
 	d' r b, r cis r d r
 	fis r e r fis r g r \mark \default
-	d' r d,4(\sf cis\mf) e(\sf 
+	d' r d,4(-\tweak X-offset -1 \sf cis-\tweak X-offset -1 \mf) e(-\tweak X-offset -1 \sf 
 % Bars 71 to 75
-	b\mf) d(\sf a)\mf cis(\sf
-	g)\mf d'(\sf cis\mf) e(\sf
-	b)\mf d(\sf a\mf) cis(\sf
-	g8\mf) r d'4\ff d d
+	b-\tweak X-offset -1 \mf) d(-\tweak X-offset -1 \sf a)-\tweak X-offset -1 \mf cis(-\tweak X-offset -1 \sf
+	g)-\tweak X-offset -1 \mf d'(-\tweak X-offset -1 \sf cis-\tweak X-offset -1 \mf) e(-\tweak X-offset -1 \sf
+	b)-\tweak X-offset -1 \mf d(-\tweak X-offset -1 \sf a-\tweak X-offset -1 \mf) cis(-\tweak X-offset -1 \sf
+	g8-\tweak X-offset -1 \mf) r d'4\ff d d
 	d g fis g
 % Bars 76 to 80
 	fis r r2
@@ -163,7 +163,7 @@ musicHornIIMvtIV = \relative c {
 	
 % Bars 146 to 150
 	
-	r2 b'4\mf cis \mark \default
+	r2 b'4-\tweak X-offset -4 \mf cis \mark \default
 	d b d b
 	d b d b
 	fis' fis, fis' fis,
@@ -188,7 +188,7 @@ musicHornIIMvtIV = \relative c {
 	gis fis
 	a\f\< fis\!
 % Bars 171 to 175
-	d\ff a
+	d-\tweak X-offset -1 \ff a
 	r2 d8\ff r r4
 	r2 g8 r c, c
 	g r r4 g8 r r4
@@ -234,7 +234,7 @@ musicHornIIMvtIV = \relative c {
 	b8 r r4 e8 r r4
 	g8 r r4 a,8 r r4
 	b8 r r4 e8 r r4 \mark \default
-	g8 r g4\ff g g 
+	g8 r g4-\tweak X-offset 0.5 \ff g g 
 % Bars 211 to 215
 	fis d g g
 	g g g g
@@ -302,7 +302,7 @@ musicHornIIMvtIV = \relative c {
 % Bars 291 to 295
 	
 % Bars 296 to 300
-	fis4\ff r d2\f
+	fis4-\tweak X-offset 0.5 \ff r d2\f
 	d2. fis!4
 	fis cis d2~
 	d4 e fis fis
@@ -321,12 +321,12 @@ musicHornIIMvtIV = \relative c {
 	dis1
 % Bars 311 to 315
 	dis4 fis fis dis
-	e8 r d4\sf( cis\mf) e(\sf
-	b)\mf d(\sf a)\mf cis(\sf
-	g)\mf d'(\sf cis)\mf e(\sf
-	b)\mf d(\sf a)\mf cis(\sf
+	e8 r d4-\tweak X-offset -2 \sf( cis\mf) e(-\tweak X-offset -2 \sf
+	b)\mf d(-\tweak X-offset -2 \sf a)\mf cis(-\tweak X-offset -2 \sf
+	g)\mf d'(-\tweak X-offset -2 \sf cis)\mf e(-\tweak X-offset -2 \sf
+	b)\mf d(-\tweak X-offset -2 \sf a)\mf cis(-\tweak X-offset -2 \sf
 % Bars 316 to 320
-	g8)\mf r d'4\ff d d
+	g8)\mf r d'4-\tweak X-offset -1 \ff d d
 	d g fis g
 	fis r r2
 	r4 e' d g,
@@ -372,7 +372,7 @@ musicHornIIMvtIV = \relative c {
 	e e e e e e e e
 	g g g g fis fis fis fis \mark \default
 % Bars 356 to 360
-	e\ff d' cis[ cis] b b a a
+	e-\tweak X-offset #-1 \ff d' cis[ cis] b b a a
 	gis gis g g fis fis e e
 	cis cis cis cis  e e e e 
 	e e e e   b b b ais
@@ -409,7 +409,7 @@ musicHornIIMvtIV = \relative c {
 	R1*3
 	
 	\mark \default
-	c1_(\mf
+	c1_(-\tweak X-offset -2 \mf
 % Bars 391 to 395
 	c)
 	des~
@@ -447,7 +447,7 @@ musicHornIIMvtIV = \relative c {
 	
 	
 	
-	b'8\ff r e,4->~ e cis->
+	b'8->\ff r e,4->~ e cis->
 % Bars 426 to 430
 	b1~\f
 	b2. cis4
@@ -480,7 +480,7 @@ musicHornIIMvtIV = \relative c {
 	fis4 fis2 fis4~
 % Bars 451 to 455
 	\tuplet 3/2 2 {fis fis fis fis fis fis} \mark \default
-	g2\fff a~
+	g2-\tweak X-offset 0.5 \fff a~
 	a8 r r4 r2
 	g2 a~
 	a8 r r4 r2
@@ -504,9 +504,9 @@ musicHornIIMvtIV = \relative c {
 	fis1~
 % Bars 471 to 475
 	fis8 r r4 r2\fermata \bar "||"
-	\time 4/4 fis8\f r dis r fis r dis r
+	\time 4/4 fis8-\tweak X-offset 0.5 \f r dis r fis r dis r
 	fis r dis r fis r dis r
-	fis4\f b, b'2->~
+	fis4-\offset X-offset -1 \f b, b'2->~
 	b8. ais16 gis8. g16 fis8. gis16 e8. fis16
 % Bars 476 to 480
 	dis4 b~ b8 b b'4^>~
@@ -516,7 +516,7 @@ musicHornIIMvtIV = \relative c {
 	fis) gis, ais eis'(
 % Bars 481 to 485
 	fis8) r r4 r2 \mark \default
-	b,2\ff cis
+	b,2-\tweak X-offset -1.5 \ff cis
 	dis1
 	e2 e
 	dis2. eis4
@@ -524,7 +524,7 @@ musicHornIIMvtIV = \relative c {
 	fis fis ais gis
 	fis gis ais dis,8. eis16
 	fis4 b cis, eis
-	cis8 r r4 r2 \mark \default
+	cis8 r r4 r2 \mark \markAa
 	fis,4\fff fis b b
 % Bars 491 to 495
 	fis fis fis fis
@@ -535,7 +535,7 @@ musicHornIIMvtIV = \relative c {
 % Bars 496 to 500
 	fis gis ais gis
 	fis8 gis fis gis ais4 gis
-	fis8 gis fis gis ais4 gis \mark \default
+	fis8 gis fis gis ais4 gis \mark \markBb
 	fis8 ais gis gis fis e dis e
 	fis a! gis eis fis g gis ais
 % Bars 501 to 505
@@ -548,10 +548,10 @@ musicHornIIMvtIV = \relative c {
 	cis r fis r
 	e r gis! r
 	fis r e r
-	dis2\f b\ff
-	fis'4\fff r r2
+	dis2\f b-\tweak X-offset -1 \ff
+	fis'4-\tweak X-offset 0.5 \fff r r2
 % Bars 511 to 515
-	r2 fis4 r \mark \default
+	r2 fis4 r \mark \markCc
 	fis r fis\p r
 	fis r dis r
 	cis r fis r
@@ -559,7 +559,7 @@ musicHornIIMvtIV = \relative c {
 % Bars 516 to 520
 	fis r e r
 	dis2\f b\ff
-	b4\fff d2.
+	b4-\offset X-offset 1 \fff d2.
 	g,4 c2 g4
 	b d2.
 % Bars 521 to 525
@@ -567,7 +567,7 @@ musicHornIIMvtIV = \relative c {
 	d' d r g
 	fis fis r dis
 	dis dis r gis
-	gis gis r cis, \mark \default
+	gis gis r cis, \mark \markDd
 % Bars 526 to 530
 	cis r ais'2~
 	ais b~
@@ -601,7 +601,7 @@ musicHornIIMvtIV = \relative c {
 % Bars 551 to 555
 	b r r gis r r
 	b r r gis r r
-	b r r gis r r \mark \default
+	b r r gis r r \mark \markEe
 	b r r r2.
 	fis4 r r r2.
 % Bars 556 to 560

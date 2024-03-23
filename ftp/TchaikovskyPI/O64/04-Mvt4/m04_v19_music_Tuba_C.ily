@@ -204,7 +204,7 @@ musicTubaMvtIV = \relative c {
 	c8 r r4 c8 r r4
 	c8 r r4 c8 r r4
 	c8 r r4 c8 r r4 \mark \default
-	c8\ff r r4 g r
+	c8-\offset X-offset 0.5 \ff r r4 g r
 % Bars 211 to 215
 	c r g r
 	c r g r
@@ -339,7 +339,7 @@ musicTubaMvtIV = \relative c {
 	cis1~
 % Bars 366 to 370
 	cis~
-	\after 1*7/8 \! cis \mark \default
+	<< cis {s4 s s s8 s\!}>> \mark \default
 	b4\fff cis b cis
 	b cis b cis
 	b8 r r4 r2
@@ -390,7 +390,7 @@ musicTubaMvtIV = \relative c {
 	dis2. dis8 dis
 	e r r4 b,2\f~
 	b1
-	b->~
+	b->~\fff
 	b
 % Bars 436 to 440
 	b8 r r4 r2
@@ -443,7 +443,7 @@ musicTubaMvtIV = \relative c {
 	
 	
 	
-	\mark \default
+	\mark \markAa
 	e'4\fff e a a
 % Bars 491 to 495
 	e e e e
@@ -454,7 +454,7 @@ musicTubaMvtIV = \relative c {
 % Bars 496 to 500
 	dis4 e fis fisis
 	gis8 cis, dis e fis4 fisis
-	gis8 cis, dis e fis4 fisis \mark \default
+	gis8 cis, dis e fis4 fisis \mark \markBb
 	gis8 gis, a ais b cis d dis
 	e eis fis fisis gis a ais bis
 % Bars 501 to 505
@@ -470,15 +470,15 @@ musicTubaMvtIV = \relative c {
 	
 	
 % Bars 511 to 515
-	b4 bis cis dis \mark \default
+	b4 bis cis dis \mark \markCc
 	e r r2
 	R1*3
 	
 	
 % Bars 516 to 520
-	R1*2 
-	
-	bes4\fff r bes r
+	\mmrPos #-6 R1 
+	\mmrPos #-6 R
+	bes4-\offset X-offset 1 \fff r bes r
 	a r a r
 	bes r bes r
 % Bars 521 to 525
@@ -486,7 +486,7 @@ musicTubaMvtIV = \relative c {
 	bes bes' r bes,
 	b! b'! r b,
 	b b' r b,
-	b b' r b, \mark \default
+	b b' r b, \mark \markDd
 % Bars 526 to 530
 	b r b'2~
 	b bes~
@@ -520,7 +520,7 @@ musicTubaMvtIV = \relative c {
 % Bars 551 to 555
 	e r r a r r
 	e r r a r r 
-	e r r a r r \mark \default
+	e r r a r r \mark \markEe
 	e r r r2.
 	e4 r r r2.
 % Bars 556 to 560

@@ -12,7 +12,7 @@ musicHornIIIMvtIV = \relative c {
 % Bars 1 to 5
 	R1*2
 	
-	dis'4\mf~ dis8 r e4~ e8 r
+	dis'4-\tweak X-offset -2.5 \mf~ dis8 r e4~ e8 r
 	dis4~ dis8 r r4 dis8 r
 	\partCombineApart cis r8 r4 r2 \partCombineAutomatic
 % Bars 6 to 10
@@ -43,12 +43,12 @@ musicHornIIIMvtIV = \relative c {
 	
 	
 	
-	fis,4.\f fis16 fis fis4. fis16 fis
+	fis,4.-\tweak X-offset -1 \f fis16 fis fis4. fis16 fis
 	fis8 r fis2.
 % Bars 41 to 45
 	cis'8 r r4 r2
 	R1
-	d2\ff \once \partCombineApart d
+	d2-\tweak X-offset -2 \ff \once \partCombineApart d
 	d \once \partCombineApart d
 	cis d4 e \mark \default
 % Bars 46 to 50
@@ -170,7 +170,7 @@ musicHornIIIMvtIV = \relative c {
 	
 % Bars 171 to 175
 	d'2\ff a
-	r g8\ff r r4
+	r g8-\tweak X-offset 0.5 \ff r r4
 	r2 c8 r \partCombineApart r4 \partCombineAutomatic
 	b,8 r r4 b8 r r4
 	R1
@@ -189,7 +189,7 @@ musicHornIIIMvtIV = \relative c {
 % Bars 186 to 190
 	fis4~ fis8 r r2
 	R1
-	r2 g8\ff r r4
+	r2 g8-\tweak X-offset 0.5 \ff r r4
 	r2 c8 r \partCombineApart r4 \partCombineAutomatic
 	b,8 r r4 b8 r r4
 % Bars 191 to 195
@@ -226,7 +226,7 @@ musicHornIIIMvtIV = \relative c {
 	\partCombineApart g1 \partCombineAutomatic
 	fis4 d e b
 	g'8 r r4 r2
-	\partCombineApart g,1\f
+	\partCombineApart g,1_\f
 	d' \partCombineAutomatic
 % Bars 221 to 225
 	b2. g4
@@ -286,7 +286,7 @@ musicHornIIIMvtIV = \relative c {
 % Bars 291 to 295
 	
 % Bars 296 to 300
-	fis4\ff r fis,!2\f
+	fis4-\tweak X-offset 0.5 \ff r fis,!2\f
 	fis2. fis'4
 	fis cis d2~
 	d4 e fis fis
@@ -305,10 +305,10 @@ musicHornIIIMvtIV = \relative c {
 	fis1
 % Bars 311 to 315
 	b4 a b fis!
-	\once \partCombineApart e8 r d'4(\sf cis)\mf e(\sf
-	b)\mf d(\sf a)\mf cis(\sf
-	g)\mf d'(\sf cis)\mf e(\sf
-	b)\mf d(\sf a)\mf cis(\sf
+	\once \partCombineApart e8 r d'4(-\tweak X-offset -2 \sf cis)\mf e(-\tweak X-offset -2 \sf
+	b)\mf d(-\tweak X-offset -2 \sf a)\mf cis(-\tweak X-offset -2 \sf
+	g)\mf d'(-\tweak X-offset -2 \sf cis)\mf e(-\tweak X-offset -2 \sf
+	b)\mf d(-\tweak X-offset -2 \sf a)\mf cis(-\tweak X-offset -2 \sf
 % Bars 316 to 320
 	g8)\mf r d'4\ff d d
 	d e d e
@@ -399,13 +399,13 @@ musicHornIIIMvtIV = \relative c {
 	
 	
 % Bars 421 to 425
-	fis'2\ff cis
+	\aIIXoffset #-5 fis'2\ff cis
 	fis b,
 	e b
 	b1
 	\partCombineApart g
 % Bars 426 to 430
-	b2\f d,
+	b2 d,
 	b' cis \partCombineAutomatic
 	d2.\ff d8 d
 	cis2. cis8 cis
@@ -423,7 +423,7 @@ musicHornIIIMvtIV = \relative c {
 	
 	
 	
-	fis'2._\semprefff fis8 fis
+	fis'2.-\offset X-offset 0.5 _\semprefff fis8 fis
 	fis2. fis8 fis
 % Bars 446 to 450
 	fis4 fis2 fis4~
@@ -463,13 +463,13 @@ musicHornIIIMvtIV = \relative c {
 	
 % Bars 476 to 480
 	s2. \partCombineApart s4
-	r4 \partCombineAutomatic fis\f~ fis8 r b4
+	r4 \partCombineAutomatic fis-\tweak X-offset -1.5 \f~ fis8 r b4
 	cis dis cis b
 	ais2( dis8) r dis4(
 	fis) gis, ais eis'(
 % Bars 481 to 485
 	fis8) r r4 r2 \mark \default
-	b,2\ff bes
+	b,2-\tweak X-offset -2 \ff bes
 	b!1
 	b2 bes
 	b!2. cis4
@@ -477,7 +477,7 @@ musicHornIIIMvtIV = \relative c {
 	cis dis cis b
 	\partCombineApart ais2. dis4
 	cis, dis ais' b
-	ais8 \partCombineAutomatic r r4 r2 \mark \default
+	ais8 \partCombineAutomatic r r4 r2 \mark \markAa
 	fis4\fff fis gis gis
 % Bars 491 to 495
 	fis fis fis fis
@@ -488,7 +488,7 @@ musicHornIIIMvtIV = \relative c {
 % Bars 496 to 500
 	fis dis cis b
 	ais8^\marcatissimo dis fis dis cis4 b
-	ais8 dis fis dis cis4 b \mark \default
+	ais8 dis fis dis cis4 b \mark \markBb
 	ais8 fis' e d! cis b bis cis
 	b! dis cis b b cis d! e
 % Bars 501 to 505
@@ -502,9 +502,9 @@ musicHornIIIMvtIV = \relative c {
 	gis r cis r
 	cis r cis r
 	dis2\f b\ff
-	fis'4\fff r b, r
+	fis'4-\tweak X-offset 0.5 \fff r b, r
 % Bars 511 to 515
-	b r e r \mark \default
+	b r e r \mark \markCc
 	dis r dis\p r
 	fis r gis, r
 	gis_\crescmarkup r gis r
@@ -512,15 +512,15 @@ musicHornIIIMvtIV = \relative c {
 % Bars 516 to 520
 	cis r cis r
 	dis2\f b\ff
-	g4\fff a g b
+	\partCombineApart g4 a g b
 	g a g c
 	g a g b
 % Bars 521 to 525
-	g a g c
+	g a g c \partCombineAutomatic
 	g b r d
 	dis dis r b
 	c c r c
-	cis cis r cis \mark \default
+	cis cis r cis \mark \markDd
 % Bars 526 to 530
 	cis r e2~
 	e d~
@@ -554,7 +554,7 @@ musicHornIIIMvtIV = \relative c {
 % Bars 551 to 555
 	fis r r e r r
 	fis r r e r r
-	fis r r e r r \mark \default
+	fis r r e r r \mark \markEe
 	fis r r r2.
 	dis4 r r r2.
 % Bars 556 to 560

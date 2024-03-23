@@ -56,7 +56,7 @@ musicFagotteIMvtIV = \relative c {
 	b_\simile cis dis gis,8.\ff ais16
 	fis'4-> gis-> dis-> fis->
 	\tuplet 3/2 4 {\partCombineApart b,8[ r cis,] \partCombineAutomatic b( cis dis) e( g fis) e( dis cis)
-	b( cis dis) cis( dis e) dis( e fis) e( dis cis)
+	b( cis dis) cis( dis e) \once \tupletDown dis( e fis) e( dis cis)
 % Bars 41 to 45
 	\partCombineApart b[ r b'] a( g fis) e( cis dis e fis g)
 	a( g fis) g( fis e) a( g a) b( a g)} \partCombineAutomatic
@@ -78,7 +78,7 @@ musicFagotteIMvtIV = \relative c {
 % Bars 56 to 60
 	a\! g2.\>~
 	g8)\pp r r4 r2 \bar "||"
-	\key e \minor \time 2/2 r4 \partCombineApart g'\f fis e \partCombineAutomatic
+	\key e \minor \time 2/2 r4 \partCombineApart g' fis e \partCombineAutomatic
 	g8 r r4 r2
 	r4 \partCombineApart g fis e \partCombineAutomatic
 % Bars 61 to 65
@@ -121,7 +121,7 @@ musicFagotteIMvtIV = \relative c {
 	cis-> d) b( cis
 	a) r r2
 	R1
-	r4 fis''--\mf e-- fis(
+	r4 \aIIXoffset #-1 fis''--\mf e-- fis(
 	d\sf e)\> cis( d
 % Bars 96 to 100
 	b8)\! r d4--\mf cis-- d(
@@ -142,10 +142,10 @@ musicFagotteIMvtIV = \relative c {
 	\partCombineApart \stemDown b,2( cis)
 	d4( dis fis e \mark \default
 	\stemUp a,8) r r4 r2
-	g'8\ff g fis fis e e e e
+	g'8-\offset X-offset -1.5 \ff g fis fis e e e e
 % Bars 116 to 120
 	b' r r4 r2
-	a8 a g g fis fis fis fis
+	\beamOffset #'(-0.5 . -0.5) a8 a g g fis fis fis fis
 	fis fis fis fis e4 a,, \partCombineAutomatic
 	g a g a
 	g a g a
@@ -213,17 +213,17 @@ musicFagotteIMvtIV = \relative c {
 % Bars 176 to 180
 	c) r r4 c,8 r r4
 	r2 f8 r e d
-	e r r4 c8( aes' g f)
+	e r r4 \shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur c8( aes' g f)
 	e( ees d c) a2 \mark \default
 	b c
 % Bars 181 to 185
 	d dis
-	e8 r r fis'( e dis cis b)
+	e8 r r \aIIXoffset #-3 fis'( e dis cis b)
 	a( g fis e) a,2
 	b c
 	d dis
 % Bars 186 to 190
-	e8 r r fis'( e dis cis b)
+	e8 r r \aIIXoffset #-3 fis'( e dis cis b)
 	a( g fis e) a( g fis e)
 	r2 g,8\ff r r4
 	r2 f'8 r c c
@@ -232,12 +232,12 @@ musicFagotteIMvtIV = \relative c {
 	c( d' e f) \partCombineAutomatic fis( g a b 
 	c) r r4 c,8 r r4
 	r2 f8 r e d
-	e r r4 c8( aes' g f)
+	e r r4 \shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur c8( aes' g f)
 	\partCombineApart e( ees d c) a2 \partCombineAutomatic
 % Bars 196 to 200
 	b c
 	d dis
-	e8 r r fis'( e dis cis b)
+	e8 r r \aIIXoffset #-3  fis'( e dis cis b)
 	a( g fis e) a,2
 	b c
 % Bars 201 to 205
@@ -261,14 +261,14 @@ musicFagotteIMvtIV = \relative c {
 % Bars 216 to 220
 	e e e' e,
 	g' g a e
-	\partCombineApart bes,8 r g'4\ff g g
+	\partCombineApart bes,8 r g'4-\offset X-offset -0.5 \ff g g
 	e c c c
 	g g' g g
 % Bars 221 to 225
 	e c c c
 	g b' b b
 	g e e e
-	bes e'\ff e e
+	bes e'-\offset X-offset -2 \ff e e
 	\once \stemDown bes \partCombineAutomatic bes bes bes
 % Bars 226 to 230
 	g bes\fff dis e
@@ -388,12 +388,12 @@ musicFagotteIMvtIV = \relative c {
 	d \partCombineAutomatic a g c,
 	b8 r e'4 e e
 	b g e b \mark \default
-	e8 r \partCombineApart e4\mf-- d-- e(
+	e8 r \partCombineApart e4_\mf-- d-- e(
 	cis_>_\< \once \stemDown d) b_( cis\!
 % Bars 326 to 330
 	a) d4\rest d2\rest \partCombineAutomatic
 	R1 \clef tenor
-	r4 fis'--\mf\< e-- fis(\!
+	r4 \aIIXoffset #-3 fis'--\mf\< e-- fis(\!
 	d\sf\> e) cis( d\!
 	b8) r r4 r2 \clef bass
 % Bars 331 to 335
@@ -403,7 +403,7 @@ musicFagotteIMvtIV = \relative c {
 	a) r r2
 	R1
 % Bars 336 to 340
-	r4 fis''--\mf e-- fis(
+	r4 \aIIXoffset #-2.5 fis''--\mf e-- fis(
 	d\sf e)\> cis( d
 	b8)\! r d4--\mf cis-- d(
 	b\sf cis) \partCombineApart \stemDown a(_\> b\! \mark \default
@@ -424,7 +424,7 @@ musicFagotteIMvtIV = \relative c {
 	\partCombineApart d4( dis fis e \mark \default
 % Bars 356 to 360
 	\stemUp a,8) r r4 r2
-	g'8\ff g fis fis e e e e \partCombineAutomatic
+	g'8-\offset X-offset -2 \ff g fis fis e e e e \partCombineAutomatic
 	fis fis fis fis  a a a a
 	a a a a g, g g fis
 	b\ff b b b  b b b b
@@ -447,7 +447,7 @@ musicFagotteIMvtIV = \relative c {
 	b cis b cis
 	b\mf\> cis b cis\!
 % Bars 376 to 380
-	b\p\< cis b cis
+	b\p cis_\< b cis
 	b cis b cis\! \clef tenor
 	\partCombineApart gis''1~
 	gis2 fis8( eis dis cis)
@@ -561,8 +561,8 @@ musicFagotteIMvtIV = \relative c {
 	b2.. b8
 	b1~
 % Bars 471 to 475
-	b8 r r4 r2\fermata \bar "||"  %%%%%%%%%%%%%%%%%%%%%%%%
-	\key e \major \time 4/4 \tuplet 3/2 4 {e'8(\ff dis cis b ais b) e( dis cis b ais b) 
+	b8 r r4 r2\fermata \bar "||"
+	\key e \major \time 4/4 \tuplet 3/2 4 {\aIIXoffset #-3 e'8(\ff dis cis b ais b) e( dis cis b ais b) 
 	e( dis cis b ais b) e( dis cis b ais b) 
 	e( dis cis b ais b) cis( dis cis bis cis bis)
 	b!( cis b a! b a) gis( a gis fis gis fis)
@@ -582,7 +582,7 @@ musicFagotteIMvtIV = \relative c {
 	dis cis b b8. ais16
 	gis2. e'4
 	dis cis b dis8. cis16 \partCombineAutomatic
-	b( cis, dis e fis gis a ais) \partCombineApart b( cis, dis e fis gis a! ais \mark \default
+	b( cis, dis e fis gis a ais) \partCombineApart b( cis, dis e fis gis a! ais \mark \markAa
 	b8) \partCombineAutomatic r gis4\fff a a
 % Bars 491 to 495
 	gis gis gis gis
@@ -593,7 +593,7 @@ musicFagotteIMvtIV = \relative c {
 % Bars 496 to 500
 	b cis b fisis
 	gis8^\marcatissimo cis, dis e fis!4 fisis
-	gis8 cis, dis e fis!4 fisis \mark \default
+	gis8 cis, dis e fis!4 fisis \mark \markBb
 	gis8 b a g fis! cis d! dis
 	e eis fis fisis gis a ais bis
 % Bars 501 to 505
@@ -609,7 +609,7 @@ musicFagotteIMvtIV = \relative c {
 	bis cis b c
 	g'\fff gis a ais
 % Bars 511 to 515
-	b bis cis dis \mark \default
+	b bis cis dis \mark \markCc
 	e e\p d e
 	cis d b cis
 	a_\crescmarkup b gis a
@@ -625,7 +625,7 @@ musicFagotteIMvtIV = \relative c {
 	\partCombineAutomatic bes g' r bes,
 	b! e r b
 	b cis r b
-	b a' r b, \mark \default
+	b a' r b, \mark \markDd
 % Bars 526 to 530
 	b r b'2~
 	b bes~
@@ -659,7 +659,7 @@ musicFagotteIMvtIV = \relative c {
 % Bars 551 to 555
 	e r r e r r
 	e r r e r r
-	e r r e r r \mark \default
+	e r r e r r \mark \markEe
 	e r r r2.
 	e4 r r r2.
 % Bars 556 to 560

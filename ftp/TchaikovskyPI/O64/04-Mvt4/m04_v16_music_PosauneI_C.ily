@@ -38,9 +38,9 @@ musicPosauneIMvtIV = \relative c {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	b4.\f b16 b b4. b16 b
+	\aIIXoffset -1 b4.\f b16 b b4. b16 b
 	b8 r b2.
-	g'2\ff d
+	g'2-\tweak X-offset 0.5 \ff d
 	g d
 	e e4 e \mark \default
 % Bars 46 to 50
@@ -50,9 +50,9 @@ musicPosauneIMvtIV = \relative c {
 	
 	
 % Bars 51 to 55
-	r4 b\p\< a\! g!4~\> 
+	r4 \once \stemUp b\p\< a\! g!4~\> 
 	g8\! r r4 r2
-	r4 b\pp\< a\! g!4~\>
+	r4 \once \stemUp b\pp\< a\! g!4~\>
 	g8\! r r4 r2
 	R1*3
 % Bars 56 to 60
@@ -94,18 +94,18 @@ musicPosauneIMvtIV = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	cis8\mf r r4 r2
+	cis8-\tweak X-offset 0.5 \mf r r4 r2
 	R1*7
 % Bars 111 to 115
 	
 	
 	\mark \default
-	\partCombineApart g8\f r r4 r2 \partCombineAutomatic
+	\partCombineApart g8 r r4 r2 \partCombineAutomatic
 	e'4.\f dis8 cis4. b8
 % Bars 116 to 120
 	\partCombineApart \mmrPos #6 R1 
-	\stemDown fis'4.\< \omitFlag e8 \stemUp dis4. cis8
-	b4. a8\! \partCombineAutomatic b4\ff b
+	\stemDown fis'4. \omitFlag e8 \stemUp dis4. cis8
+	b4. a8 \partCombineAutomatic b4\ff b
 	r b r b
 	r b r b
 % Bars 121 to 125
@@ -192,7 +192,7 @@ musicPosauneIMvtIV = \relative c {
 	e
 	g
 	c
-	e
+	\aIIXoffset #-3 e
 	g
 % Bars 216 to 220
 	R1*2
@@ -237,7 +237,7 @@ musicPosauneIMvtIV = \relative c {
 % Bars 291 to 295
 	
 % Bars 296 to 300
-	e4\ff r r2
+	e4-\tweak X-offset 0.5 \ff r r2
 	R1*7
 % Bars 301 to 305
 	
@@ -284,7 +284,7 @@ musicPosauneIMvtIV = \relative c {
 % Bars 346 to 350
 	
 	
-	cis8\mf r r4 r2
+	cis8-\tweak X-offset 0.5 \mf r r4 r2
 	R1*7
 % Bars 351 to 355
 	
@@ -303,7 +303,7 @@ musicPosauneIMvtIV = \relative c {
 	cis4 cis dis eis
 	\partCombineApart \stemDown fis gis \stemUp a, b 
 	cis8 r r4 r2 \partCombineAutomatic
-	gis'4.^\ff fis8 eis4. e8
+	gis'4.\ff fis8 eis4. e8
 % Bars 366 to 370
 	dis4 dis eis fisis
 	gis \partCombineApart ais, b cis \partCombineAutomatic \mark \default
@@ -363,8 +363,8 @@ musicPosauneIMvtIV = \relative c {
 % Bars 431 to 435
 	fis2. fis8 fis
 	\partCombineApart \stemUp e2\> g~
-	g8\mf r r4 r2
-	e2.\fff e8 e \partCombineAutomatic
+	g8-\offset X-offset -2 \mf r r4 r2
+	e2. e8 e \partCombineAutomatic
 	dis4 e a, g
 % Bars 436 to 440
 	dis'8 r r4 r2
@@ -375,7 +375,7 @@ musicPosauneIMvtIV = \relative c {
 	
 % Bars 451 to 455
 	\mark \default
-	g2\fff g~
+	g2-\tweak X-offset 0.5 \fff g~
 	g8 r r4 r2
 	g2 g~
 	g8 r r4 r2
@@ -412,7 +412,7 @@ musicPosauneIMvtIV = \relative c {
 	
 	
 	
-	\mark \default
+	\mark \markAa
 	e'4\fff e e e
 % Bars 491 to 495
 	e e e e
@@ -423,7 +423,7 @@ musicPosauneIMvtIV = \relative c {
 % Bars 496 to 500
 	fis e dis e
 	dis8 e fis e dis4 e
-	dis8 e fis e dis4 e \mark \default
+	dis8 e fis e dis4 e \mark \markBb
 	dis8 gis fis e dis cis b b
 	b d cis e e fis g fis
 % Bars 501 to 505
@@ -437,9 +437,9 @@ musicPosauneIMvtIV = \relative c {
 	R1*2
 	\partCombineAutomatic
 	R1
-	e'4\fff r e r
+	e'4-\tweak X-offset 0.5 \fff r e r
 % Bars 511 to 515
-	e r b r \mark \default
+	e r b r \mark \markCc
 	b \partCombineApart e\p d e
 	cis d b cis
 	a r r2
@@ -455,7 +455,7 @@ musicPosauneIMvtIV = \relative c {
 	e e r c
 	b b r gis
 	gis gis r cis
-	cis cis r cis \mark \default
+	cis cis r cis \mark \markDd
 % Bars 526 to 530
 	dis r dis2~
 	dis e~
@@ -489,7 +489,7 @@ musicPosauneIMvtIV = \relative c {
 % Bars 551 to 555
 	e r r cis r r
 	e r r cis r r
-	e r r cis r r \mark \default
+	e r r cis r r \mark \markEe
 	e r r r2.
 	gis4 r r r2.
 % Bars 556 to 560

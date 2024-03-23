@@ -26,7 +26,7 @@ musicKlarinetteIMvtIV = \relative c {
 	
 	r2 d\p
 % Bars 21 to 25
-	r d\pp
+	r d-\tweak X-offset 0.5 \pp
 	\partCombineApart a'\p r \partCombineAutomatic
 	a\mf r
 	b,4._\pmamarcato b16 b c4. b16 a
@@ -38,7 +38,7 @@ musicKlarinetteIMvtIV = \relative c {
 	b2.\< g'4--\ff
 	fis-- e-- d-- fis8.( e16)
 % Bars 31 to 35
-	\after 1*7/8 \! d1\> \mark \default
+	<< d1 {s4\> s s s8. s16\!}>> \mark \default
 	e4.\p e16_\crescmarkup e e4. e16 e
 	e8 r d2.->
 	e4. e16 e e4. e16 e
@@ -47,7 +47,7 @@ musicKlarinetteIMvtIV = \relative c {
 	fis-- e-- d-- d8.( cis16)
 	b2.\< g'4--\ff
 	fis-- e-- d-- fis8.( e16
-	\tuplet 3/2 4 {d8) r r fis,(\ff g a) bes( d c bes a g)
+	\tuplet 3/2 4 {d8) r r fis,(-\offset X-offset -3 \ff g a) bes( d c bes a g)
 	fis( g a) g( a bes) a( bes c) bes( c cis)
 % Bars 41 to 45
 	d( d e) fis( g a) bes( d c bes a g)
@@ -84,7 +84,7 @@ musicKlarinetteIMvtIV = \relative c {
 	d, r c r \once \partCombineApart bes r \once \partCombineApart a r
 	d r g r a r bes r
 	d, r c r \once \partCombineApart bes r \once \partCombineApart a r \mark \default
-	d r g\ff g c c a a
+	d r g-\tweak X-offset -2 \ff g c c a a
 % Bars 71 to 75
 	bes4 g a f
 	g g8 g c c a a
@@ -107,14 +107,14 @@ musicKlarinetteIMvtIV = \relative c {
 	r4 a''--\mf\< g-- a(\!
 	f\sf\> g) e( f\!
 	d8) r r4 r2
-	r4 e(\mf\< fis a\!
-	d8) r g,,4--\mf f!-- g(
+	r4 e(\mf-\tweak extra-offset #'(0 . 0.5) \< fis a\!
+	d8) r \aIIXoffset #-1.5 g,,4--\mf f!-- g(
 % Bars 91 to 95
 	e-> f) d( e
 	c) r r2
 	R1
-	r4 a''--\mf g-- a(
-	f\sf g)\> e( f
+	r4 a''---\tweak X-offset 0.2 \mf g-- a(
+	f-\tweak X-offset 0.5 \sf g)\> e( f
 % Bars 96 to 100
 	d8)\! r f4--\mf e-- f(
 	d\sf e) c(\> d\! \mark \default
@@ -137,7 +137,7 @@ musicKlarinetteIMvtIV = \relative c {
 	c c c c   c c c c
 	c c c c   c_\crescmarkup c c c
 	ees ees ees ees  d d d d \mark \default
-	c\ff c' c[ c]  c c c c
+	c-\tweak X-offset -1.5 \ff c' c[ c]  c c c c
 	c c c c  d d d d
 % Bars 116 to 120
 	d d d d   d d d d
@@ -149,7 +149,7 @@ musicKlarinetteIMvtIV = \relative c {
 	R1*6
 % Bars 126 to 130
 	
-	d2\mf\<~ d8\! r r4 \mark \default
+	<< {d2~ d8} {s8-\tweak X-offset -4 \mf s\< s4 s8\!} >> r r4 \mark \default
 	\partCombineApart g1_\mfespr~
 	g2 f8( e d c)
 	g'2->( f~
@@ -167,7 +167,7 @@ musicKlarinetteIMvtIV = \relative c {
 	e e
 % Bars 141 to 145
 	e1
-	f2_\crescmarkup f
+	f2-\offset X-offset 2 _\crescmarkup f
 	f1
 	g2 g
 	a2 a
@@ -178,11 +178,11 @@ musicKlarinetteIMvtIV = \relative c {
 	
 	
 % Bars 151 to 155
-	f,2\f-> g8( f e f
+	f,2-\tweak X-offset -2.5 \f^> g8( f e f
 	bes) r r4 r2
 	R1*2
 	
-	f2->\f g8( f e f)
+	f2^>-\tweak X-offset -2.5 \f g8( f e f)
 % Bars 156 to 160
 	bes'4\mf g bes g
 	ees'_\dimmarkup aes, e' e,!
@@ -258,7 +258,7 @@ musicKlarinetteIMvtIV = \relative c {
 % Bars 216 to 220
 	g g g' g,
 	\once \partCombineApart g'1->
-	g8 r g,4\ff fis g
+	g8 r g,4-\tweak X-offset -2 \ff fis g
 	ees c bes c
 	\once \partCombineApart g g' fis g
 % Bars 221 to 225
@@ -268,7 +268,7 @@ musicKlarinetteIMvtIV = \relative c {
 	bes bes'\ff bes bes
 	g des des des
 % Bars 226 to 230
-	des g\fff fis g
+	des g-\tweak X-offset 0.2 \fff fis g
 	bes f'! f f
 	e bes' bes bes
 	aes des des des \mark \default
@@ -321,12 +321,12 @@ musicKlarinetteIMvtIV = \relative c {
 	b b
 	b bes
 	bes bes
-	\partCombineChords \after 1*4/8 <>_\dimmarkup bes1\sf~
+	\partCombineChords \after 1*3/8 <>_\dimmarkup bes1\sf~
 	bes~
 % Bars 276 to 280
 	bes~
 	\after 1*7/8 \! bes\> \partCombineAutomatic
-	r2 ees,\p
+	r2 ees,-\tweak X-offset -1 \p
 	ees ees
 	ees ees
 % Bars 281 to 285
@@ -344,7 +344,7 @@ musicKlarinetteIMvtIV = \relative c {
 % Bars 291 to 295
 	
 % Bars 296 to 300
-	g,4\ff g' fis g
+	g,4-\tweak X-offset -3.8 \ff g' fis g
 	d c bes a
 	g g' fis g
 	d c bes a
@@ -386,13 +386,13 @@ musicKlarinetteIMvtIV = \relative c {
 	f\sf\> g) e( f\!
 	d8) r r4 r2
 % Bars 331 to 335
-	r4 e(\mf\< fis a\!
-	d8) r g,,4--\mf f-- g(
+	r4 e(\mf-\tweak extra-offset #'(0 . 0.5) \< fis a\!
+	d8) r \aIIXoffset #-1.5  g,,4--\mf f-- g(
 	e-> f) d( e
 	c) r r2
 	R1
 % Bars 336 to 340
-	r4 a''\mf-- g-- a(
+	r4 a''-\tweak X-offset #0.5 \mf-- g-- a(
 	f\sf g)\> e( f
 	d8)\! r f4--\mf e-- f(
 	d\sf e) c(\> d\! \mark \default
@@ -411,7 +411,7 @@ musicKlarinetteIMvtIV = \relative c {
 	c c c c  c\< c c c
 % Bars 351 to 355
 	ees ees ees ees\! d\> d d' d
-	e e e e\! c\mf c, c c
+	e e e e\! c-\tweak X-offset #-1.5 \mf c, c c
 	c c c c  c c c c
 	c c c c  c_\crescmarkup c c c
 	ees ees ees ees   d d d d \mark \default
@@ -466,11 +466,11 @@ musicKlarinetteIMvtIV = \relative c {
 	
 	
 % Bars 401 to 405
-	a,2->\ff b8( a gis a
+	a,2->-\tweak X-offset -3.5 \ff b8( a gis a
 	d) r r4 r2
 	R1*2
 	
-	a2\ff b8( a gis a)
+	a2-\tweak X-offset -3.5 \ff b8( a gis a)
 % Bars 406 to 410
 	d'4\mf b d b
 	g'_\dimmarkup c, gis' gis,
@@ -478,7 +478,7 @@ musicKlarinetteIMvtIV = \relative c {
 	c'\< e, d' fis,\!
 	d'\mf b d b
 % Bars 411 to 415
-	g'_\dimmarkup c, gis' gis,
+	g'_\dimmarkup c, gis' gis,!
 	e' a, e'\p e,!
 	c'\< e, d' fis,\! \mark \default
 	d'1\f~
@@ -496,7 +496,7 @@ musicKlarinetteIMvtIV = \relative c {
 	g( f ees d) ees( d c bes)
 	a( g fis g a bes b c)
 % Bars 426 to 430
-	d2\ff d
+	d2 d
 	g c,
 	bes2. bes8 bes
 	a2. a8 a
@@ -527,7 +527,7 @@ musicKlarinetteIMvtIV = \relative c {
 	c bes a g
 % Bars 451 to 455
 	fis ees d c \mark \default
-	bes''2\fff bes~
+	bes''2-\tweak X-offset -1 \fff bes~
 	bes8 r r4 r2
 	bes2 bes~
 	bes8 r r4 r2
@@ -551,19 +551,19 @@ musicKlarinetteIMvtIV = \relative c {
 	a1~
 % Bars 471 to 475
 	a8 r r4 r2\fermata \bar "||"
-	\key g \major \time 4/4 \tuplet 3/2 4 {g,8\ff( fis e d cis d) g( fis e d cis d)
+	\key g \major \time 4/4 \tuplet 3/2 4 {g,8-\tweak X-offset -2 \ff( fis e d cis d) g( fis e d cis d)
 	g( fis e d cis d) g( fis e d cis d)
 	g( fis e d cis d) e( fis e dis e dis)
 	d!( e d c! d c) b( c b a b a)
 % Bars 476 to 480
 	g( fis g b ais b) c( a! b c d e)
-	b( c cis d e fis) g( a ais b c cis)
+	b( c cis d e fis) \once \tupletDown g( a ais b c cis)
 	d( cis c b a g) fis( g fis e fis e)
 	d( e d e fis e) fis( g fis g a g)
 	a( b a b cis b) a( b a g a g }
 % Bars 481 to 485
 	fis) r c'4 e g8 fis \mark \default
-	g2\ff a
+	g2-\tweak X-offset 0.5 \ff a
 	b1
 	c2 c
 	b2. cis4
@@ -571,7 +571,7 @@ musicKlarinetteIMvtIV = \relative c {
 	d b a g
 	\partCombineApart fis2. b4
 	a, b fis' g
-	fis16( e, fis g a b c cis) d( e fis g a b c! cis \mark \default
+	fis16( e, fis g a b c cis) d( e fis g a b c! cis \mark \markAa
 	d8) \partCombineAutomatic r g,,4\fff g g
 % Bars 491 to 495
 	g g g g
@@ -582,7 +582,7 @@ musicKlarinetteIMvtIV = \relative c {
 % Bars 496 to 500
 	d b a g
 	fis8^\marcatissimo e' d b a4 g
-	fis8 e' d b a4 g \mark \default
+	fis8 e' d b a4 g \mark \markBb
 	fis8 d'' c bes a g gis a
 	g! f a g g a bes c
 % Bars 501 to 505
@@ -598,15 +598,15 @@ musicKlarinetteIMvtIV = \relative c {
 	g4) r8 a( b4) r8 c(
 	d4)\fff r8 b( g4) r8 e(
 % Bars 511 to 515
-	d4) r8 b( a4) r8 b( \mark \default
-	g4) r8 d'(\p g4) r8 a(
+	d4) r8 b( a4) r8 b( \mark \markCc
+	g4) r8 d'(-\tweak X-offset -2 \p g4) r8 a(
 	b4) r8 a( gis4) r8 b(
 	e,4)_\crescmarkup r8 f( fis4) r8 gis(
 	a4) r8 b,( c4) r8 cis(
 % Bars 516 to 520
 	d4) r8 dis( e4) r8 fis(
 	g4) r8 a( b4) r8 c(
-	bes2)\fff aes'8( g f ees)
+	bes2)-\tweak X-offset 0.5 \fff aes'8( g f ees)
 	bes'4 aes2 c4
 	bes2 aes8( g f ees)
 % Bars 521 to 525
@@ -614,7 +614,7 @@ musicKlarinetteIMvtIV = \relative c {
 	bes bes,,8( c des ees f fis
 	g4) g,8( a b! c d! dis
 	e4) e,8( f fis gis ais b
-	c4) c8( d e fis g gis \mark \default
+	c4) c8( d e fis g gis \mark \markDd
 % Bars 526 to 530
 	a4) r c2~
 	c bes~
@@ -648,7 +648,7 @@ musicKlarinetteIMvtIV = \relative c {
 % Bars 551 to 555
 	g r r e r r
 	g r r e r r
-	g r r e r r \mark \default
+	g r r e r r \mark \markEe
 	g r r r2.
 	b4 r r r2.
 % Bars 556 to 560

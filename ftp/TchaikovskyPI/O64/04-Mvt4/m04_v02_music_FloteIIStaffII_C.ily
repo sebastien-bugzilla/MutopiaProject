@@ -419,14 +419,14 @@ musicFloteIIStaffIIMvtIV = \relative c {
 % Bars 376 to 380
 	
 	
-	eis''1\mf(
+	\omitAdue eis''1\mf(^\II
 	cis)
 	eis2->( fis~
 % Bars 381 to 385
 	fis8) r r4 cis2\<
 	dis eis\!
-	fis1\f
-	eis\mf
+	\dynEO #'(0 . 2) fis1\f
+	\dynEO #'(0 . 2) eis\mf
 	cis2( gis)
 % Bars 386 to 390
 	eis'1(\<
@@ -441,7 +441,7 @@ musicFloteIIStaffIIMvtIV = \relative c {
 	ges4( ees) ges( f)
 	aes( f) aes( ges)
 % Bars 396 to 400
-	aes2(\ff ees)
+	aes2(-\offset X-offset -2 \ff ees)
 	des( c4) r \mark \default \changeStaffName \flIII
 	R1*3
 	

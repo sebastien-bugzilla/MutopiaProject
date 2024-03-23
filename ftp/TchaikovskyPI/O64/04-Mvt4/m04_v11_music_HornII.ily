@@ -447,7 +447,7 @@ musicHornIIMvtIV = \relative c {
 	
 	
 	
-	b'8\ff r e,4->~ e cis->
+	b'8->\ff r e,4->~ e cis->
 % Bars 426 to 430
 	b1~\f
 	b2. cis4

@@ -58,7 +58,7 @@ musicFagotteIIMvtIV = \relative c {
 	\tuplet 3/2 4 {b,8\ff b b a( g fis) e( cis dis) e( fis g)
 	a( g fis) g( fis e) fis( e dis) e( dis cis)
 % Bars 41 to 45
-	b r r } r4 r2
+	\omitTuplet b r r } r4 r2
 	r2 \tuplet 3/2 4 { r8 r fis''( g! fis e)}
 	e,2\ff g
 	e g
@@ -415,8 +415,8 @@ musicFagotteIIMvtIV = \relative c {
 % Bars 341 to 345
 	e~
 	e~\<
-	e~\!
-	e~\>
+	\after 1*3/8 \! e~
+	\after 1*7/8 \! e~\>
 	e~\p
 % Bars 346 to 350
 	e~\<
@@ -522,7 +522,7 @@ musicFagotteIIMvtIV = \relative c {
 	b~
 % Bars 431 to 435
 	b~
-	b2.\ff~ b8 r
+	b2.-\offset X-offset 1 \ff~ b8 r
 	a''2. a8 a
 	b,,1\fff~
 	b1
@@ -590,7 +590,7 @@ musicFagotteIIMvtIV = \relative c {
 	b cis b e fis e fis gis fis fisis gis fisis
 	gis ais gis ais b ais b cis b cis, dis cis
 	dis e dis e fis e fis gis fis fis, gis fis}
-	b16( cis, dis e fis gis a ais) b( cis dis e fis gis a! ais \mark \default
+	b16( cis, dis e fis gis a ais) b( cis dis e fis gis a! ais \mark \markAa
 	b8) r e,4\fff a, a
 % Bars 491 to 495
 	e' e e e 
@@ -601,7 +601,7 @@ musicFagotteIIMvtIV = \relative c {
 % Bars 496 to 500
 	dis e fis fisis,
 	gis8 cis, dis e fis!4 fisis
-	gis8 cis, dis e fis!4 fisis \mark \default
+	gis8 cis, dis e fis!4 fisis \mark \markBb
 	gis8 gis a ais b cis, d! dis
 	e eis fis fisis gis a ais bis
 % Bars 501 to 505
@@ -617,7 +617,7 @@ musicFagotteIIMvtIV = \relative c {
 	bis cis b c
 	g'\fff gis a ais,
 % Bars 511 to 515
-	b bis cis dis \mark \default
+	b bis cis dis \mark \markCc
 	e e'\p d e
 	cis d b cis
 	a_\crescmarkup b gis a
@@ -633,7 +633,7 @@ musicFagotteIIMvtIV = \relative c {
 	bes,, bes' r bes,
 	b! b'! r b,
 	b b' r b,
-	b b' r b, \mark \default
+	b b' r b, \mark \markDd
 % Bars 526 to 530
 	b r b'2~
 	b bes~
@@ -667,7 +667,7 @@ musicFagotteIIMvtIV = \relative c {
 % Bars 551 to 555
 	e r r a r r
 	e r r a r r
-	e r r a r r \mark \default
+	e r r a r r \mark \markEe
 	e r r r2.
 	e4 r r r2.
 % Bars 556 to 560

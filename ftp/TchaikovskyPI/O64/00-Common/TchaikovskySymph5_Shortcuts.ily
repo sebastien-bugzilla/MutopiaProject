@@ -112,7 +112,17 @@ mutafinacind = \markup {"muta F in A, C in D"}
 mutacina = \markup {"muta C in A"}
 mutaainc = \markup {"muta A in C"}
 mutaginacinheincis = \markup {"muta G in A, C in H, E in Cis"}
+mutagina_cinheincis = \markup {
+	\column {
+		\lower #1.5 "muta G in A," "C in H, E in Cis"
+	}
+}
 mutaainfiscisine = \markup {"muta A in Fis, Cis in E"}
+mutaainfis_cisine = \markup {
+	\column {
+		\lower #1.5 "muta A in Fis," "Cis in E"
+	}
+}
 
 twelveEightC = \markup {
 	\concat { 
@@ -160,6 +170,7 @@ flI-II-III = \markup {
 	}
 }
 
+adue = \markup {\fontsize #-1 \bold "a2" }
 I-IIadue = \markup {\fontsize #-1 \bold "I II a2"}
 I-II = \markup {\fontsize #-1 \bold "I II"}
 II = \markup {\fontsize #-1 \bold "II"}
@@ -195,6 +206,9 @@ liiiri = {
 
 markAa = \markup { \fontsize #0.6 \bold "Aa" }
 markBb = \markup { \fontsize #0.6 \bold "Bb" }
+markCc = \markup { \fontsize #0.6 \bold "Cc" }
+markDd = \markup { \fontsize #0.6 \bold "Dd" }
+markEe = \markup { \fontsize #0.6 \bold "Ee" }
 
 
 % fonctions :
