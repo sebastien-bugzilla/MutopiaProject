@@ -9,7 +9,7 @@ musicFloteIMvtI = \relative c' {
 	\key e \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*20
+	R1*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -19,8 +19,8 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	
-	\mark \default
-	R1*17
+	\ni R1\fermata \no \mark \default
+	R1*16
 % Bars 21 to 25
 	
 % Bars 26 to 30
@@ -29,15 +29,19 @@ musicFloteIMvtI = \relative c' {
 	
 % Bars 36 to 40
 	
-	\bar "||"
-	\time 6/8 R2.*11
+	\ni R1\fermata \no \bar "||"
+	\time 6/8 R2.*7
 % Bars 41 to 45
 	
+	
+	
+	
+	\ni R2.
 % Bars 46 to 50
-	
-	
-	
-	r4 r8 r16 e(_\ppgrasiosoeleggiero fis g a b
+	R
+	R
+	R \no
+	\voiceOne r4 r8 r16 \oneVoice e(_\ppgraziosoeleggiero fis g a b
 	c8)[ r16 c c8~] c b( a
 % Bars 51 to 55
 	b)\< d,( e~ e) fis( g\!
@@ -48,12 +52,14 @@ musicFloteIMvtI = \relative c' {
 % Bars 56 to 60
 	a4 e8) ais4( e8) \mark \default
 	b'4.\mp\>~ b8\p r r
-	R2.*7
+	R2.*5
+	
+	
 % Bars 61 to 65
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	r4 r8 r e(\mf d \mark \default
 % Bars 66 to 70
 	d,)\noBeam d'16(\f e fis g a8) r r
@@ -142,12 +148,16 @@ musicFloteIMvtI = \relative c' {
 	ais4.) b4( cis8)
 	e4.\ff\> d8( cis b
 	fis)\! r r r4 r8 \mark \default
-	R2.*30
+	R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
+	
+	R2.*16
+	
+	
 	
 % Bars 156 to 160
 	
@@ -156,8 +166,8 @@ musicFloteIMvtI = \relative c' {
 % Bars 166 to 170
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	r8 a(\p b) cis4( d8)
 % Bars 171 to 175
 	r8 a( b) cis4.
@@ -211,7 +221,7 @@ musicFloteIMvtI = \relative c' {
 	fis4 a,8 fis'4 a,8
 	d4 fis,8 d'4 fis,8
 	a4 d,8 a'4 d,8 \mark #11
-	R2.*26
+	R2.*22
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -221,19 +231,19 @@ musicFloteIMvtI = \relative c' {
 % Bars 231 to 235
 	
 % Bars 236 to 240
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no \mark \default
 	ees''4->(\f aes,8) ees'4->( aes,8)
 % Bars 241 to 245
-	R2.*13
+	R2.*10
 % Bars 246 to 250
 	
 % Bars 251 to 255
-	
-	
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #6 R
+	\mmrPos #4 R \no
 	fis2.\ff \mark \default
 	e'8[\fff r16 e e8] r a,,16( ais b cis
 % Bars 256 to 260
@@ -252,14 +262,14 @@ musicFloteIMvtI = \relative c' {
 	f8[ r16 f f8] r4 r8
 	R2.*2
 	\mark \default
-	R2.*11
+	R2.*10
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 	
 	
-	
+	\ni \mmrPos #-4 R2. \no
 	e,8\ff[ r16 e e8(]~ e fis-.) g-.
 % Bars 281 to 285
 	R2.*3
@@ -308,14 +318,18 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*12
+	R2.*8
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
-% Bars 331 to 335
 	
-	r8 b16(\p c) d-. e-. fis( g) fis( g) a-. b-.
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-7 R
+% Bars 331 to 335
+	\mmrPos #-7 R \no
+	\once \voiceOne r8 b16(\p c) d-. e-. fis( g) fis( g) a-. b-.
 	c8. c16 c8(~ c b-.) ais(
 	b) d,( e~ e) fis( g)
 	a4->( e8) ais4->( fis8)
@@ -393,19 +407,25 @@ musicFloteIMvtI = \relative c' {
 	fis4.\ff\> e8( dis cis\!
 % Bars 396 to 400
 	gis) r r r4 r8 \mark \default
-	R2.*30
+	R2.*14
 % Bars 401 to 405
 	
 % Bars 406 to 410
 	
 % Bars 411 to 415
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	R2.*12
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	
-% Bars 426 to 430
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 426 to 430
+	\mmrPos #-4 R \no
 	r8 b(\p cis) dis4( e8)
 	r b( cis) dis4.
 	r8 r e~\< e gis4
@@ -459,14 +479,14 @@ musicFloteIMvtI = \relative c' {
 	e4 gis,8 e'4 gis,8
 	b4 e,8 b'4 e,8 \mark \default
 % Bars 471 to 475
-	R2.*14
+	R2.*11
 % Bars 476 to 480
 	
 % Bars 481 to 485
 	
-	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ais'4\ff e8 ais4 e8
 % Bars 486 to 490
 	ais4 e8 ais4 e8 \mark \default
@@ -502,13 +522,13 @@ musicFloteIMvtI = \relative c' {
 	e)[ r16 e\f e8]~ e[ r16 e e8]~
 	e[ r16 e e8]~ e e( dis
 	e)[ r16 e e8]~ e[ r16 e e8]~
-	e[ r16 e e8]~ e e( dis \mark \default
+	e[ r16 e e8]~ e e( dis \mark \markAaBox
 	e) r r r4 r8
 % Bars 516 to 520
 	R2.*7
 % Bars 521 to 525
 	
-	\mark \default
+	\mark \markBbBox
 	R2.*19
 % Bars 526 to 530
 	
@@ -518,5 +538,5 @@ musicFloteIMvtI = \relative c' {
 	
 % Bars 541 and 542
 	
-	R2.\fermata \bar "|."
+	\ni R2.\fermata \bar "|."
 }

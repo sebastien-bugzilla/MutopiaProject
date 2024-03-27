@@ -20,11 +20,15 @@ musicFloteIIIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 16 to 20
-	R1*8
+	R1*4
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 21 to 25
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	gis''4._\pmamarcato gis16 gis a4. gis16 fis
 	gis8 r e2.->
 % Bars 26 to 30
@@ -119,11 +123,11 @@ musicFloteIIIMvtIV = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	R1*8
+	R1*6
 % Bars 111 to 115
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no \mark \default
 	r4 b\ff cis d
 	e fis g a
 % Bars 116 to 120
@@ -149,9 +153,9 @@ musicFloteIIIMvtIV = \relative c {
 % Bars 146 to 150
 	
 	\mark \default
-	R1*3
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 151 to 155
 	d,2->\ff e8( d cis d
 	c!) r r4 r2
@@ -168,11 +172,11 @@ musicFloteIIIMvtIV = \relative c {
 	
 	
 	\mark #11
-	R1*4
+	R1*2
 	
 % Bars 166 to 170
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	e'4(_\crescmarkup dis d cis)
 	fis( f e dis)
 	g( f e d!)
@@ -289,11 +293,19 @@ musicFloteIIIMvtIV = \relative c {
 	
 % Bars 281 to 285
 	\mark \default
-	R1*14
+	R1*8
 % Bars 286 to 290
 	
-% Bars 291 to 295
 	
+	
+	
+	\ni \mmrPos #-4 R1 
+% Bars 291 to 295
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 296 to 300
 	e,4\ff r b2
 	e2. fis4
@@ -353,15 +365,15 @@ musicFloteIIIMvtIV = \relative c {
 % Bars 346 to 350
 	
 	
-	R1*8
+	R1*6
 	
 	
 % Bars 351 to 355
 	
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no \mark \default
 % Bars 356 to 360
 	r4 b4\ff cis d
 	e fis g a
@@ -401,9 +413,9 @@ musicFloteIIIMvtIV = \relative c {
 % Bars 396 to 400
 	
 	\mark \default
-	R1*3
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 401 to 405
 	fis,2\ff gis8( fis eis fis
 	b) r r4 r2
@@ -507,7 +519,7 @@ musicFloteIIIMvtIV = \relative c {
 	dis cis b b8. ais16
 	gis2. e'4
 	dis cis b dis8. cis16
-	b8 r r4 r16 cis( dis e fis gis a ais) \mark \default
+	b8 r r4 r16 cis( dis e fis gis a ais) \mark \markAaBox
 	b(\fff a! gis fis e fis gis b) cis( a e dis cis dis e fis)
 % Bars 491 to 495
 	gis( b, cis dis e fis gis a) b( bis cis dis e b cis dis)
@@ -518,7 +530,7 @@ musicFloteIIIMvtIV = \relative c {
 % Bars 496 to 500
 	b( ais gis fis gis e dis cis) fis( dis cis b e cis b ais
 	gis8) e'-> dis-> cis-> b16( fis dis b) cis( dis e ais
-	gis8) e'-> dis-> cis-> b16( fis dis b) cis( dis e ais \mark \default
+	gis8) e'-> dis-> cis-> b16( fis dis b) cis( dis e ais \mark \markBbBox
 	gis8) dis' cis cis b a! gis a
 	gis gis a ais b bis cis dis
 % Bars 501 to 505
@@ -534,7 +546,7 @@ musicFloteIIIMvtIV = \relative c {
 	e4) r8 fis( gis4) r8 a(
 	b4)\fff r8 gis( e4) r8 cis(
 % Bars 511 to 515
-	b4) r8 gis( fis4) r8 gis( \mark \default
+	b4) r8 gis( fis4) r8 gis( \mark \markCcBox
 	e4) r8 b\p( e4) r8 fis(
 	gis4) r8 fis( eis4) r8 gis(
 	cis,4)_\crescmarkup r8 d( dis4) r8 eis(
@@ -550,7 +562,7 @@ musicFloteIIIMvtIV = \relative c {
 	g g,8( a bes c d dis
 	e4) e,8( fis gis! a b! bis
 	cis4) cis,8( d dis eis fisis gis
-	a4) a,8( b cis dis e! eis \mark \default
+	a4) a,8( b cis dis e! eis \mark \markDdBox
 % Bars 526 to 530
 	fis) fis, gis a b cis dis e!
 	fis fis, ais b c d e f
@@ -584,7 +596,7 @@ musicFloteIIIMvtIV = \relative c {
 % Bars 551 to 555
 	b r r a r r
 	b r r a r r
-	b r r a r r \mark \default
+	b r r a r r \mark \markEeBox
 	b r r r2.
 	gis4 r r r2.
 % Bars 556 to 560

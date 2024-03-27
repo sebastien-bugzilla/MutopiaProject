@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.1"
 \include "./00-Common/TchaikovskySymph5_Header.ily"
 \include "./00-Common/TchaikovskySymph5_PaperParts.ily"
 \include "./00-Common/TchaikovskySymph5_timeMvt.ily"
@@ -21,6 +22,7 @@
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_PartFloten.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_FloteI.ily"
 \include "./01-Mvt1/m01_v02_music_FloteII.ily"
 \include "./01-Mvt1/m01_v03_music_FloteIII.ily"
@@ -36,18 +38,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceFloteIMvtI" { \cueVoiceFloteIMvtI }
-\addQuote "cueVoiceFloteIMvtII" { \cueVoiceFloteIMvtII }
-\addQuote "cueVoiceFloteIMvtIII" { \cueVoiceFloteIMvtIII }
-\addQuote "cueVoiceFloteIMvtIV" { \cueVoiceFloteIMvtIV }
-\addQuote "cueVoiceFloteIIMvtI" { \cueVoiceFloteIIMvtI }
-\addQuote "cueVoiceFloteIIMvtII" { \cueVoiceFloteIIMvtII }
-\addQuote "cueVoiceFloteIIMvtIII" { \cueVoiceFloteIIMvtIII }
-\addQuote "cueVoiceFloteIIMvtIV" { \cueVoiceFloteIIMvtIV }
-\addQuote "cueVoiceFloteIIIMvtI" { \cueVoiceFloteIIIMvtI }
-\addQuote "cueVoiceFloteIIIMvtII" { \cueVoiceFloteIIIMvtII }
-\addQuote "cueVoiceFloteIIIMvtIII" { \cueVoiceFloteIIIMvtIII }
-\addQuote "cueVoiceFloteIIIMvtIV" { \cueVoiceFloteIIIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -65,21 +55,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIMvtI
+%			}
 			\new Voice {
-				\formatFloteIMvtI
+				\keepWithTag #'(floteI) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameFloteIMvtI \musicFloteIMvtI
+				\InCueContext \cueVoiceFloteIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFloteIMvtI \musicFloteIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -87,21 +79,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIMvtII
+%			}
 			\new Voice {
-				\formatFloteIMvtII
+				\keepWithTag #'(floteI) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameFloteIMvtII \musicFloteIMvtII
+				\InCueContext \cueVoiceFloteIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFloteIMvtII \musicFloteIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -109,21 +103,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIMvtIII
+%			}
 			\new Voice {
-				\formatFloteIMvtIII
+				\keepWithTag #'(floteI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameFloteIMvtIII \musicFloteIMvtIII
+				\InCueContext \cueVoiceFloteIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFloteIMvtIII \musicFloteIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -131,21 +127,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIMvtIV
+%			}
 			\new Voice {
-				\formatFloteIMvtIV
+				\keepWithTag #'(floteI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameFloteIMvtIV \musicFloteIMvtIV
+				\InCueContext \cueVoiceFloteIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFloteIMvtIV \musicFloteIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
@@ -153,21 +151,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIIMvtI
+%			}
 			\new Voice {
-				\formatFloteIIMvtI
+				\keepWithTag #'(floteII) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameFloteIIMvtI \musicFloteIIMvtI
+				\InCueContext \cueVoiceFloteIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFloteIIMvtI \musicFloteIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -175,21 +175,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIIMvtII
+%			}
 			\new Voice {
-				\formatFloteIIMvtII
+				\keepWithTag #'(floteII) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameFloteIIMvtII \musicFloteIIMvtII
+				\InCueContext \cueVoiceFloteIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFloteIIMvtII \musicFloteIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -197,21 +199,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIIMvtIII
+%			}
 			\new Voice {
-				\formatFloteIIMvtIII
+				\keepWithTag #'(floteII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameFloteIIMvtIII \musicFloteIIMvtIII
+				\InCueContext \cueVoiceFloteIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFloteIIMvtIII \musicFloteIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -219,21 +223,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIIMvtIV
+%			}
 			\new Voice {
-				\formatFloteIIMvtIV
+				\keepWithTag #'(floteII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameFloteIIMvtIV \musicFloteIIMvtIV
+				\InCueContext \cueVoiceFloteIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFloteIIMvtIV \musicFloteIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
@@ -241,21 +247,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIIIMvtI
+%			}
 			\new Voice {
-				\formatFloteIIIMvtI
+				\keepWithTag #'(floteIII) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameFloteIIIMvtI \musicFloteIIIMvtI
+				\InCueContext \cueVoiceFloteIIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFloteIIIMvtI \musicFloteIIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -263,21 +271,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIIIMvtII
+%			}
 			\new Voice {
-				\formatFloteIIIMvtII
+				\keepWithTag #'(floteIII) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameFloteIIIMvtII \musicFloteIIIMvtII
+				\InCueContext \cueVoiceFloteIIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFloteIIIMvtII \musicFloteIIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -285,21 +295,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIIIMvtIII
+%			}
 			\new Voice {
-				\formatFloteIIIMvtIII
+				\keepWithTag #'(floteIII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameFloteIIIMvtIII \musicFloteIIIMvtIII
+				\InCueContext \cueVoiceFloteIIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFloteIIIMvtIII \musicFloteIIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -307,21 +319,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFloteIIIMvtIV
+%			}
 			\new Voice {
-				\formatFloteIIIMvtIV
+				\keepWithTag #'(floteIII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameFloteIIIMvtIV \musicFloteIIIMvtIV
+				\InCueContext \cueVoiceFloteIIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFloteIIIMvtIV \musicFloteIIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {

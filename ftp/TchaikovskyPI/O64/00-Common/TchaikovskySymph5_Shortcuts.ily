@@ -210,6 +210,12 @@ markCc = \markup { \fontsize #0.6 \bold "Cc" }
 markDd = \markup { \fontsize #0.6 \bold "Dd" }
 markEe = \markup { \fontsize #0.6 \bold "Ee" }
 
+markAaBox = \markup { \box \bold "Aa" }
+markBbBox = \markup { \box \bold "Bb" }
+markCcBox = \markup { \box \bold "Cc" }
+markDdBox = \markup { \box \bold "Dd" }
+markEeBox = \markup { \box \bold "Ee" }
+
 
 % fonctions :
 mmrPos = #(define-music-function
@@ -303,7 +309,38 @@ tempoXoffset = #(define-music-function
 	#}
 )
 
+no = {
+	\undo \omit MultiMeasureRestNumber
+}
 
+ni = {
+	\omit MultiMeasureRestNumber
+}
+
+InCueContext = {
+	\override Beam.beam-thickness = #0.35 % 0.30
+	\override StemTremolo.beam-thickness = #0.35 % 0.30
+	\override Beam.length-fraction = #0.8 % 0.8
+	\override Stem.length-fraction = #0.8 % 0.8
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\set fontSize = #-3 %-3
+	\override TupletNumber.avoid-slur = #'ignore
+	\override Script.staff-padding = ##f
+}
+
+OutCueContext = {
+	\revert Beam.beam-thickness
+	\revert StemTremolo.beam-thickness
+	\revert Beam.length-fraction
+	\revert Stem.length-fraction
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\unset fontSize
+	\revert TupletNumber.avoid-slur
+	\revert Script.staff-padding
+	
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

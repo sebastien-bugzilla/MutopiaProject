@@ -19,15 +19,18 @@ musicFloteIIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 16 to 20
-	R1.*20
+	R1.*16
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #6 R \no
 % Bars 36 to 40
-	
 	r4 r8 r fis'(\f a d fis a\> d fis a)\!
 	r4 r8 e,4(~\mp e16 e,)\< \tuplet 2/3 4. {e8( a) cis-- e--\!}
 	a4->(~\f a16 a,) a4.(~ a8 b cis d) r r 
@@ -37,11 +40,15 @@ musicFloteIIIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1.*6
+	R1.*4
 % Bars 46 to 50
 	
+	
+	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R \no
 % Bars 51 to 55
-	r2. \tuplet 2/3 4. {gis,8(\mf ais b d)} \mark \default
+	\once \voiceOne r2. \tuplet 2/3 4. {gis,8(\mf ais b d)} \mark \default
 	fis,4.(_\crescpocoapoco g!4) g8 g4.( gis4) gis8
 	\tuplet 2/3 4. {gis8( a) a-- a-- a( ais) ais-- ais--}
 	ais4.( b4) b8 b4.( c4) c8
@@ -65,10 +72,10 @@ musicFloteIIIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1*2
+	\ni \mmrPos #4 R1
 % Bars 76 to 80
-	
-	r2 cis8\mf cis4 cis8(
+	\mmrPos #-4 R \no
+	\once \voiceTwo r2 cis8\mf cis4 cis8(
 	gis) gis(\< bis cis gis'\! fis) e--\> dis--\!
 	R1
 	cis8\mf cis4 cis8( bis) bis4 bis8~
@@ -113,10 +120,10 @@ musicFloteIIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.*4
-	
-	
-	
+	R1.
+	\ni \mmrPos #-9 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		b'16(\mf cis) dis--\< e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b,\mf(
 % Bars 121 to 125
@@ -147,12 +154,12 @@ musicFloteIIIMvtII = \relative c {
 % Bars 141 to 145
 	ais) b cis d dis e fis g a! ais b cis
 	d8\fff r^\mutainflpicc r r4 r8 r2. \changeStaffName \picc
-	R1.*5 
+	R1.*3 
 	
 	
 % Bars 146 to 150
-	
-	
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no
 	r2. fis,4.\ff fis4 fis8
 	fis4.\fff( g4) g8 g4.( gis4) gis8
 	\tuplet 2/3 4. {gis( a) a a a( ais) ais ais} \mark #11
@@ -181,10 +188,10 @@ musicFloteIIIMvtII = \relative c {
 	
 	
 	\bar "||"
-	\time 12/8 R1.*3
+	\time 12/8 R1.
 % Bars 171 to 175
-	
-	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R \no
 	r2. cis,8\pp\< cis cis   cis cis cis\!
 	d\> d d\! r4 r8 cis\< cis cis   cis cis cis
 	d\! r r r4 r8 cis8\< cis cis   cis cis cis\!
@@ -198,5 +205,5 @@ musicFloteIIIMvtII = \relative c {
 	
 	
 	
-	R1.\fermata \bar "|."
+	\ni R1.\fermata \bar "|."
 }

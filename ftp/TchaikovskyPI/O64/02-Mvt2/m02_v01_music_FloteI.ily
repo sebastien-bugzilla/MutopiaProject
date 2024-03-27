@@ -19,25 +19,29 @@ musicFloteIMvtII = \relative c {
 	
 	\mark \default
 % Bars 16 to 20
-	R1.*20
+	R1.*16
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #-4 R \no
 % Bars 36 to 40
-	
 	r4 r8 r fis'(\f a d fis a\> d fis a)\!
 	R1.*2
 	
-	R1.*6
+	R1.*5
+	
 % Bars 41 to 45
 	
 	
 	
-	\mark \default
-	r2. g,,4.(\pp\< fis4 e8
+	\ni \mmrPos #4 R1. \no \mark \default
+	\once \voiceOne r2. g,,4.(\pp\< fis4 e8
 % Bars 46 to 50
 	d)\! r r r4 r8 \tuplet 2/3 4. {fis8\mf( gis a fis}
 	b) r r r4 r8 \tuplet 2/3 4. {gis8\ff( ais} b) r r
@@ -69,10 +73,10 @@ musicFloteIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1*3
+	\ni \mmrPos #4 R1
 % Bars 76 to 80
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	dis''4.\mf\< e8( gis\! fis)\> e8-- dis--\!
 	R1*3
 	
@@ -117,10 +121,10 @@ musicFloteIMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.*4
-	
-	
-	
+	R1.
+	\ni \mmrPos #4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		b16(\mf cis) dis--\< e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b,\mf(
 % Bars 121 to 125
@@ -185,11 +189,11 @@ musicFloteIMvtII = \relative c {
 	
 	
 	\bar "||"
-	\time 12/8 R1.*3
+	\time 12/8 R1.
 % Bars 171 to 175
-	
-	
-	r2. cis8\pp\< cis cis  cis cis cis\!
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R \no
+	\once \voiceOne r2. cis8\pp\< cis cis  cis cis cis\!
 	d\> d  d\! r4 r8 r2.
 	r2. cis8\< cis cis   cis cis cis\!
 % Bars 176 to 180
@@ -202,5 +206,5 @@ musicFloteIMvtII = \relative c {
 	
 	
 	
-	R1.\fermata \bar "|."
+	\ni R1.\fermata \bar "|."
 }

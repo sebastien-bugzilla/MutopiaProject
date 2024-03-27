@@ -15,7 +15,7 @@ musicFloteIIIMvtIII = \relative c {
 	
 % Bars 11 to 15
 	\mark \default
-	R2.
+	\ni \mmrPos #-4 R2. \no
 	a''2\p~ a8 gis
 	\after 2.*5/6 \! fis2.\<
 	fis4(-> e2)
@@ -33,11 +33,11 @@ musicFloteIIIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	\mark \default
-	R2.*7
+	R2.*4
 % Bars 41 to 45
-	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r4 r dis8(\mf e) \mark \default
 	cis'4. b8( a gis)
 % Bars 46 to 50
@@ -74,11 +74,15 @@ musicFloteIIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 81 to 85
-	R2.*11
+	R2.*9
 % Bars 86 to 90
 	
-% Bars 91 to 95
 	
+	
+	
+	\ni \mmrPos #4 R2.
+% Bars 91 to 95
+	\mmrPos #4 R \no
 	ais16\mf-. b-. ais-. b-. cis-. b-. a-. gis-. r4
 	R2.*3
 	
@@ -122,13 +126,13 @@ musicFloteIIIMvtIII = \relative c {
 	
 % Bars 141 to 145
 	\mark \default
-	R2.*11
+	R2.*10
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	\mark #11
-	R2.
+	\ni \mmrPos #-4 R2. \mark #11
+	\mmrPos #-4 R2. \no
 	a2\p~ a8 gis
 	\after 2.*5/6 \! fis2.\<
 % Bars 156 to 160
@@ -146,13 +150,13 @@ musicFloteIIIMvtIII = \relative c {
 % Bars 176 to 180
 	
 	\mark \default
-	R2.*7
+	R2.*4
 % Bars 181 to 185
 	
-	
-	
-	
-	r4 r dis8(\mf e) \mark \default
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\voiceTwo r4 r \oneVoice dis8(\mf e) \mark \default
 % Bars 186 to 190
 	cis'4. b8( a gis)
 	fis4( e2)
@@ -181,12 +185,12 @@ musicFloteIIIMvtIII = \relative c {
 	
 	
 	
-	R2.*5
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 216 to 220
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	r4 f,2\f~
 	f4 g_\pesante g
 % Bars 221 to 225
@@ -220,12 +224,12 @@ musicFloteIIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 256 to 260
-	R2.*8
+	R2.*6
 % Bars 261 to 265
 	
-	
-	
-	r4 a'\ff a
+	\ni R2.
+	R \no
+	\once \voiceOne r4 a'\ff a
 	a a a
 % Bar 266
 	a r r\fermata \bar "|."

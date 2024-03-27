@@ -8,7 +8,7 @@
 \layout {
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatBarType = #":|.|:"
-	\set Score.rehearsalMarkFormatter = #format-mark-box-numbers
+	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 	\set Voice.restNumberThreshold = #0
 	\compressMMRests
 	\compressEmptyMeasures
@@ -19,6 +19,7 @@
 		\override Hairpin.height = 0.55
 		\override TrillSpanner.bound-details.right.padding = #1
 		\override Arpeggio.padding = #0.25
+		\override TupletNumber.avoid-slur = #'ignore
 	}
 	\context {
 		\CueVoice
@@ -36,10 +37,11 @@
 	}
 	\context {
 		\Score
-		scriptDefinitions = #my-script-alist
+%		scriptDefinitions = #my-script-alist
 		\override RehearsalMark.font-size = #4
 		\override RehearsalMark.extra-spacing-width = #'(-0.5 . 0.5)
 		\override RehearsalMark.outside-staff-priority = ##f
+		\override RehearsalMark.font-family = #'sans
 		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
