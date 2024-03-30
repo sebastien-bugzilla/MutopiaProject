@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.1"
 \include "./00-Common/TchaikovskySymph5_Header.ily"
 \include "./00-Common/TchaikovskySymph5_PaperParts.ily"
 \include "./00-Common/TchaikovskySymph5_timeMvt.ily"
@@ -21,6 +22,7 @@
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_PartOboen.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v04_music_OboeI.ily"
 \include "./01-Mvt1/m01_v05_music_OboeII.ily"
 \include "./02-Mvt2/m02_v04_music_OboeI.ily"
@@ -32,14 +34,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceOboeIMvtI" { \cueVoiceOboeIMvtI }
-\addQuote "cueVoiceOboeIMvtII" { \cueVoiceOboeIMvtII }
-\addQuote "cueVoiceOboeIMvtIII" { \cueVoiceOboeIMvtIII }
-\addQuote "cueVoiceOboeIMvtIV" { \cueVoiceOboeIMvtIV }
-\addQuote "cueVoiceOboeIIMvtI" { \cueVoiceOboeIIMvtI }
-\addQuote "cueVoiceOboeIIMvtII" { \cueVoiceOboeIIMvtII }
-\addQuote "cueVoiceOboeIIMvtIII" { \cueVoiceOboeIIMvtIII }
-\addQuote "cueVoiceOboeIIMvtIV" { \cueVoiceOboeIIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -57,21 +51,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatOboeIMvtI
+%			}
 			\new Voice {
-				\formatOboeIMvtI
+				\keepWithTag #'(oboeI) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameOboeIMvtI \musicOboeIMvtI
+				\InCueContext \cueVoiceOboeIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameOboeIMvtI \musicOboeIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -79,21 +75,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatOboeIMvtII
+%			}
 			\new Voice {
-				\formatOboeIMvtII
+				\keepWithTag #'(oboeI) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameOboeIMvtII \musicOboeIMvtII
+				\InCueContext \cueVoiceOboeIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameOboeIMvtII \musicOboeIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -101,21 +99,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatOboeIMvtIII
+%			}
 			\new Voice {
-				\formatOboeIMvtIII
+				\keepWithTag #'(oboeI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameOboeIMvtIII \musicOboeIMvtIII
+				\InCueContext \cueVoiceOboeIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameOboeIMvtIII \musicOboeIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -123,21 +123,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatOboeIMvtIV
+%			}
 			\new Voice {
-				\formatOboeIMvtIV
+				\keepWithTag #'(oboeI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameOboeIMvtIV \musicOboeIMvtIV
+				\InCueContext \cueVoiceOboeIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameOboeIMvtIV \musicOboeIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
@@ -145,21 +147,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatOboeIIMvtI
+%			}
 			\new Voice {
-				\formatOboeIIMvtI
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameOboeIIMvtI \musicOboeIIMvtI
+				\InCueContext \cueVoiceOboeIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameOboeIIMvtI \musicOboeIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -167,21 +171,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatOboeIIMvtII
+%			}
 			\new Voice {
-				\formatOboeIIMvtII
+				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameOboeIIMvtII \musicOboeIIMvtII
+				\InCueContext \cueVoiceOboeIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameOboeIIMvtII \musicOboeIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -189,21 +195,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatOboeIIMvtIII
+%			}
 			\new Voice {
-				\formatOboeIIMvtIII
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameOboeIIMvtIII \musicOboeIIMvtIII
+				\InCueContext \cueVoiceOboeIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameOboeIIMvtIII \musicOboeIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -211,21 +219,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatOboeIIMvtIV
+%			}
 			\new Voice {
-				\formatOboeIIMvtIV
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameOboeIIMvtIV \musicOboeIIMvtIV
+				\InCueContext \cueVoiceOboeIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameOboeIIMvtIV \musicOboeIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {

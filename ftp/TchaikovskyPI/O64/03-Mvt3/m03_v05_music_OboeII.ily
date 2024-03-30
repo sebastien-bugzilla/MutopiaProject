@@ -16,9 +16,9 @@ musicOboeIIMvtIII = \relative c {
 % Bars 11 to 15
 	\mark \default
 	R2.
-	R2.*3
-	
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 16 to 20
 	fis'8(\p gis a gis fis eis)
 	eis4(-> fis2)
@@ -35,12 +35,12 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	\mark \default
-	R2.*7
+	R2.*4
 % Bars 41 to 45
-	
-	
-	
-	r4 r dis,8(\mf e) \mark \default
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
+	\voiceTwo r4 r \oneVoice dis,8(\mf e) \mark \default
 	cis'4. b8( a gis)
 % Bars 46 to 50
 	fis4( e2)
@@ -56,16 +56,16 @@ musicOboeIIMvtIII = \relative c {
 	cis4. b8( ais b
 % Bars 56 to 60
 	e,4~ e8) r r4
-	R2.*18
+	R2.*15
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
-	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-7 R \no
 	gis4\p\< gis gis\!
 % Bars 76 to 80
 	a\mf r r 
@@ -97,8 +97,8 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	\mark \default
-	R2.
-	r4 r cis,(\mf->
+	\ni \mmrPos #-4 R2. \no
+	\voiceTwo r4 r \oneVoice cis,(\mf->
 % Bars 106 to 110
 	b8) r r4 r
 	r r cis(->\mf
@@ -177,13 +177,13 @@ musicOboeIIMvtIII = \relative c {
 % Bars 176 to 180
 	
 	\mark \default
-	R2.*7
+	R2.*4
 % Bars 181 to 185
 	
-	
-	
-	
-	r4 r dis,8(\mf e) \mark \default
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
+	\voiceTwo r4 r \oneVoice dis,8(\mf e) \mark \default
 % Bars 186 to 190
 	cis'4. b8( a gis)
 	fis4( e2)
@@ -199,7 +199,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 196 to 200
 	cis4. b8( ais b
 	e,4~ e8) r r4
-	R2.*21
+	R2.*18
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -207,10 +207,10 @@ musicOboeIIMvtIII = \relative c {
 % Bars 211 to 215
 	
 % Bars 216 to 220
-	
-	
-	\mark \default
-	r4 c\f c
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
+	\once \voiceTwo r4 c\f c
 	c c_\pesante c
 % Bars 221 to 225
 	c c_\crescmarkup c
@@ -242,12 +242,12 @@ musicOboeIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 256 to 260
-	R2.*8
+	R2.*6
 % Bars 261 to 265
 	
-	
-	
-	r4 f\ff e
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R \no
+	\once \voiceOne r4 f\ff e
 	f e f
 % Bar 266
 	e r r\fermata \bar "|."

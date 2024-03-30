@@ -452,28 +452,287 @@ cueVoiceFloteIIIMvtIV = \relative c {
 %#                    C U E   V O I C E   F O R   O B O E N                    #
 %###############################################################################
 cueVoiceOboeIMvtI = \relative c {
-	
+	s1*37 s2.*11
+	% bar 49 - 52
+	r4^\markup {Fl.I} r8 r16 e'( fis g a b
+	c8[) r16 c c8]~ c b( a 
+	b) d,( e~ e) fis( g
+	a4 e8) a4( d,8)
+	s2.*4
+	% bar 57
+	b4.~^\markup {Klar.} b16 b( cis dis e fis)
+	s2.*70
+	% bar 128 - 131
+	fis'4.^\markup {Viol.I} fis4 fis8
+	fis4.~ fis8 e( d)
+	fis4.~ fis8 e( d)
+	<<{\InCueContext fis4.~ fis8 r r} \\ {\InCueContext a,,8(_\markup {Klar.,Fag.} b cis d e eis)}>>
+	s2.*20
+	% bar 152 - 153
+	r4^\markup {Viol.I}^\pizz r8 a'8\noBeam cis,,,_\markup {Br.} e 
+	a cis e a^\markup {Viol.I} cis e
+	s2.*72
+	% bar 226
+	d,8[^\markup {Br.} r16 d d8](~ d ees-. f-.)
+	s2.*22
+	% bar 249 - 250
+	\cueClef bass fis,4(->^\markup {Fag.} b,8) fis'4(-> b,8)
+	g4.~^\markup {Tuba} g8 r r \cueClefUnset
+	s2.*77
+	% bar 328 - 332
+	r4 d''16(^\markup {Klar.I} e) fis( g fis g a b)
+	c8. c16 c8~( c b-.) ais(
+	b) d,( e~ e) fis( g)
+	a4(-> e8) a4->( d,8)
+	\voiceTwo b' r r \oneVoice s4.
+	s2.*52
+	% bar 385 - 388
+	gis'4.^\markup {Viol.I} gis4 gis8
+	gis4.~ gis8 fis( e)
+	gis4.~ gis8 fis( e)
+	<<{\InCueContext gis4.~ gis8 r r} \\ {\InCueContext b,,8(_\markup {Klar.,Fag.} cis dis e fis fisis)}>>
+	s2.*20
+	% bar 409 - 410
+	r4^\markup {Viol.I}^\pizz r8 \once \stemUp <b b'>8 r fis,_\markup {Br.}
+	b dis fis b\noBeam dis^\markup {Viol.I} fis
+	s2.*69
+	% bar 480 - 482
+	r8^\markup {Viol.II} fis,-. g-. \stemUp a( b c \stemNeutral
+	e4)^\markup {Klar.I} a,8 e'4 a,8
+	r^\markup {Viol.I} a-. b-. c( dis e)
 }
 cueVoiceOboeIMvtII = \relative c {
-	
+	s1.*20
+	% bar 21 - 23
+	a''4.(^\markup {Hr.I} b,2.) e8(-- fis-- g--)
+	g4.( a,2.) d8--( e-- fis--)
+	fis4. fis4 fis8 fis4.~ fis4 e8
+	s1.*8
+	% bar 32 - 34
+	s4.*3 d8\((^\markup {Vcll.} cis) b--\)
+	d4.( cis2.) a8\(( b) cis\)--
+	\once \voiceTwo e4. s4.*3
+	s1.*9
+	% bar 44 - 45
+	r4^\markup {Klar.} r8 a2. a4.
+	d_\markup {Viol.I} fis,4( b8) s2.
+	s1.*20 s1*1
+	% bar 67
+	<>_\markup {(Klar.)}
+	s1*8
+	% bar 75 - 77
+	cis,4.^\markup {Vcll.} d8( fis e) d-- cis--
+	cis'4.^\markup {Viol.II} d8( fis e) d-- cis--
+	fis4.^\markup {Viol.I} gis8( b a) gis-- fis--
+	s1*30 s1.*3
+	% bar 111 - 112
+	s4.*3 d,8\((^\markup {Viol.I} cis) b--\)
+	\once \voiceTwo d4-> s8 s4.*3
 }
 cueVoiceOboeIMvtIII = \relative c {
-	
+	s2.*11
+	% bar 12
+	cis'''4.^\markup {Viol.I} b8( a gis)
+	s2.*28
+	% bar 41 - 44
+	\cueClef bass dis,,4.^\markup {\column {\lower #1.5 "Klar." "Fag.I"}} e8( fis gis)
+	b4( a2)
+	cis,4. dis8( e fis)
+	\voiceOne a4. gis8 \oneVoice \cueClefUnset s4
+	s2.*27
+	% bar 72 - 75
+	s2 fis''16-.^\markup {Viol.I} gis-. fis-. gis-. 
+	a-. gis-. fis-. e-. d-. e-. d-. e-. fis-. e-. d-. cis-. 
+	b-. cis-. b-. cis-. d-. cis-. b-. a-. g-. a-. g-. a-. 
+	\once \voiceTwo gis4 s2
+	s2.*28
+	% bar 104 - 105
+	r4 r eis'16-.^\markup {\column {\lower #1.5 "Fl.II" "Viol.I"}} fis-. eis-. fis-.
+	\voiceOne gis-. fis-. e!-. dis-. e-. dis-. cis-. b-. \oneVoice s4
+	s2.*76
+	% bar 182 - 185
+	\cueClef bass dis,,4.^\markup {\column {\lower #1.5 "Klar." "Fag.I"}} e8( fis gis)
+	b4( a2)
+	cis,4. dis8( e fis)
+	\voiceOne a4. gis8 \oneVoice \cueClefUnset s4
+	s2.*30
+	% bar 216 - 219
+	cis'4.^\markup {Viol.I} d8( cis e)
+	d2.
+	dis4. e8( dis fis
+	\voiceOne e) r \oneVoice s2
+	s2.*42
+	% bar 262 - 264
+	e,4^\markup {Viol.I} d-> e
+	d-> e d->
+	\once \voiceTwo e s2
 }
 cueVoiceOboeIMvtIV = \relative c {
-	
+	s1*19
+	% bar 20 - 23
+	c''2^\markup {Trp.I} b
+	c b
+	a g4 fis
+	b2 r
 }
 cueVoiceOboeIIMvtI = \relative c {
-	
+	s1*37 s2.*11
+	% bar 49 - 52
+	r4^\markup {Fl.I} r8 r16 e'( fis g a b
+	c8[) r16 c c8]~ c b( a 
+	b) d,( e~ e) fis( g
+	a4 e8) a4( d,8)
+	s2.*4
+	% bar 57
+	b4.~^\markup {Klar.} b16 b( cis dis e fis)
+	s2.*16
+	% bar 74 - 75
+	r4 r8^\markup {Ob.I} r a16( b c d
+	e8) r r r4 r8
+	s2.*52
+	% bar 128 - 131
+	fis4.^\markup {Viol.I} fis4 fis8
+	fis4.~ fis8 e( d)
+	fis4.~ fis8 e( d)
+	<<{\InCueContext fis4.~ fis8 r r} \\ {\InCueContext a,,8(-\offset X-offset -4 _\markup {\column {\lower #1.5 "Klar." "Fag."}} b cis d e eis)}>>
+	s2.*20
+	% bar 152 - 153
+	r4^\markup {Viol.I}^\pizz r8 a'8\noBeam cis,,,_\markup {Br.} e 
+	a cis e a^\markup {Viol.I} cis e
+	s2.*20
+	% bar 174 - 176
+	d8\repeatTie^\markup {Ob.I} a( b) cis4( d8)
+	r a( b) cis4.
+	r4 d8(~ d cis b)
+	s2.*53
+	% bar 230
+	c8-.[^\markup {Viol.I} r16 c c8]~( c d-.) e-.
+	s2.*14
+	% bar 245 - 246
+	\cueClef bass ees,,8(^\markup {Vcll.} des ces bes) aes( ges)
+	e!2.
+	s2.*2
+	% bar 249 - 250
+	fis'8(-> e! d! cis) b!( a!)
+	g2. \cueClefUnset
+	s2.*81
+	% bar 332 - 333
+	r4^\markup {Ob.I} r8 d'''4.
+	\voiceOne e8( dis e) \oneVoice s4.
+	s2.*51
+	% bar 385 - 388
+	gis4.^\markup {Viol.I} gis4 gis8
+	gis4.~ gis8 fis( e)
+	gis4.~ gis8 fis( e)
+	gis4.~ gis8 r r
+	s2.*20
+	% bar 409 - 410
+	r4^\markup {Viol.I}^\pizz r8 \once \stemUp <b, b'>8 r fis,_\markup {Br.}
+	b dis fis b\noBeam dis^\markup {Viol.I} fis
+	s2.*20
+	% bar 431 - 433
+	e8\repeatTie^\markup {Ob.I} b( cis) dis4( e8)
+	r8 b( cis) dis4.
+	r8 r e(~ e dis cis)
+	s2.*49
+	% bar 483
+	c4^\markup {Ob.I} c8 r4 r8
 }
 cueVoiceOboeIIMvtII = \relative c {
-	
+	s1.*15
+	% bar 16
+	<>_\markup {(Klar.)}
+	s1.*8
+	% bar 24
+	<>_\markup {(Ob.I)}
+	s1.*7
+	% bar 31 - 33
+	s4.*3 d'8\((_\markup {Vcll.} cis) b--\)
+	d4.( cis2.) a8\(( b) cis--\)
+	e4. d2. d8\(( e) fis--\)
+	s1.*11
+	% bar 45
+	d'4.^\markup {Viol.I} fis,4( b8) a4.~ a4 a8
+	s1.*3
+	% bar 49 - 51
+	d4.^\markup {Viol.I} fis,4( b8) a4.~ a4 a8(
+	\tuplet 2/3 4. {b cis d b)} fis'4.~ fis8 r fis,^(
+	\voiceOne \tuplet 2/3 4. {b-- cis--) d(-- b--)} \oneVoice s2.
+	s1.*14 s1*9
+	% bar 75 - 77
+	cis,4.^\markup {Vcll.} d8( fis e) d-- cis--
+	cis'4.^\markup {Viol.II} d8( fis e) d-- cis--
+	fis4.^\markup {Viol.I} gis8( b a) gis-- fis--
+	s1*30 s1.*8
+	% bar 116 - 119
+	d,4.(->^\markup {Viol.I} cis2.) a8\(( b) cis--\)
+	e4.( d2.) d8(-- e-- fis--)
+	gis4. gis4 gis8 gis4.~ gis4 gis8
+	\voiceTwo gis( b a) \oneVoice s4.*3
 }
 cueVoiceOboeIIMvtIII = \relative c {
-	
+	s2.*12
+	% bar 13 - 15
+	a''2~^\markup {Ob.I} a8 g
+	fis2.
+	fis4->( e2)
+	s2.*25
+	% bar 41 - 44
+	\cueClef bass dis,4.^\markup {\column {\lower #1.5 "Klar." "Fag.I"}} e8( fis gis)
+	b4( a2)
+	cis,4. dis8( e fis)
+	\voiceOne a4. gis8 \oneVoice \cueClefUnset s4
+	s2.*27
+	% bar 72 - 74
+	s2 fis''16-.^\markup {Viol.I} gis-. fis-. gis-. 
+	a-. gis-. fis-. e-. d-. e-. d-. e-. fis-. e-. d-. cis-. 
+	b-. cis-. b-. cis-. d-. cis-. b-. a-. g-. a-. g-. a-. 
+	s2.*29
+	% bar 104 - 105
+	r4 r eis'16-.^\markup {\column {\lower #1.5 "Fl.II" "Viol.I"}} fis-. eis-. fis-.
+	\voiceOne gis-. fis-. e!-. dis-. e-. dis-. cis-. b-. \oneVoice s4
+	s2.*76
+	% bar 182 - 185
+	\cueClef bass dis,,4.^\markup {\column {\lower #1.5 "Klar." "Fag.I"}} e8( fis gis)
+	b4( a2)
+	cis,4. dis8( e fis)
+	\voiceOne a4. gis8 \oneVoice \cueClefUnset s4
+	s2.*30
+	% bar 216 - 219
+	cis'4.^\markup {Viol.I} d8( cis e)
+	d2.
+	dis4. e8( dis fis
+	\voiceOne e) r \oneVoice s2
+	s2.*42
+	% bar 262 - 264
+	e,4^\markup {Viol.I} d-> e
+	d-> e d->
+	\once \voiceTwo e s2
 }
 cueVoiceOboeIIMvtIV = \relative c {
-	
+	s1*19
+	% bar 20 - 23
+	c''2\pp^\markup {Trp.I} b
+	c b
+	a g4 fis
+	b2 r
+	s1*70
+	% bar 94 - 96
+	r4^\markup {Fl.I} fis''-- e-- fis(
+	d e) cis( d
+	b8) r d4-- cis-- d\laissezVibrer
+	s1*145
+	% bar 242
+	<>_\markup {(Ob.I)}
+	s1*14
+	% bar 256 - 257
+	\stemUp bes,8(^\markup {Fl.} a! bes c!) \stemNeutral d!( ees f ges)
+	aes( a bes b) c( cis d ees)
+	s1*78
+	% bar 336 - 338
+	r4^\markup {Fl.} fis-- e-- fis(
+	d\sf e) cis( d
+	b8) r d4-- cis-- d\laissezVibrer
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   K L A R I N E T T E N              #

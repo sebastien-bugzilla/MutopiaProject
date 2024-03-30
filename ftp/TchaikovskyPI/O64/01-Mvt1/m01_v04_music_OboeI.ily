@@ -19,7 +19,7 @@ musicOboeIMvtI = \relative c {
 	
 	
 	
-	R1\fermata \mark \default
+	\ni R1\fermata \no \mark \default
 % Bars 21 to 25
 	R1*16
 % Bars 26 to 30
@@ -28,17 +28,25 @@ musicOboeIMvtI = \relative c {
 	
 % Bars 36 to 40
 	
-	R1\fermata \bar "||"
-	\time 6/8 R2.*19
+	\ni R1\fermata \no \bar "||"
+	\time 6/8 R2.*11
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
+	
+	
+	\ni \mmrPos #6 R2.
+	\mmrPos #6 R
 % Bars 51 to 55
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	R2.*4
+	
 	
 % Bars 56 to 60
 	\mark \default
-	R2.
+	\ni \mmrPos #4 R2. \no
 	b''8\p r r c r r
 	e r r c r r
 	e r r e r r
@@ -109,13 +117,17 @@ musicOboeIMvtI = \relative c {
 	c( b) a cis( b) ais \mark \default
 	d( cis) b fis r r
 % Bars 116 to 120
-	R2.*16
+	R2.*12
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
-% Bars 131 to 135
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 131 to 135
+	\mmrPos #0 R \no
 	fis,4.\mf\>~ fis4\p gis8(\< 
 	ais4.) b4( cis8)\!
 	d4.\f\> cis
@@ -125,15 +137,15 @@ musicOboeIMvtI = \relative c {
 	ais4.) b4( cis8)
 	e4.\ff\> d8( cis b)\!
 	\after 2.*5/6 \! fis2.\mf\> \mark \default
-	R2.*14
+	R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #4 R \no
 	d'4\f d8 d4 d8
 	d4 d8 d4 d8
 % Bars 156 to 160
@@ -206,13 +218,13 @@ musicOboeIMvtI = \relative c {
 	a[ r16 a a8] a a a
 	fis[ r16 fis fis8] fis fis fis
 	d[ r16 d d8] d d d \mark #11
-	R2.*13
+	R2.*12
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
 % Bars 226 to 230
-	
+	\ni \mmrPos #4 R2. \no
 	d'4(\p-> g,8) d'4(-> g,8)
 	c r r r4 r8
 	R2.*2
@@ -228,9 +240,13 @@ musicOboeIMvtI = \relative c {
 	ces'8\f r r r4 r8
 % Bars 241 to 245
 	ees4->( aes,8) ees'4->( aes,8)
-	R2.*9
+	R2.*7
 % Bars 246 to 250
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #4 R \no
 % Bars 251 to 255
 	a2.\mf
 	d_\crescmarkup
@@ -247,7 +263,7 @@ musicOboeIMvtI = \relative c {
 	aes[ r16 aes aes8] r8 d,16( e f g
 	aes8)[ r aes16( bes] b cis d8) f,
 	aes[ r16 aes aes8] r d,16( e f g
-	aes8)[ r aes16 bes] b cis d8) f,
+	aes8)[ r aes16( bes] b cis d8) f,
 	aes8[ r16 aes aes8] r4 r8
 % Bars 266 to 270
 	aes8[ r16 aes aes8] r4 r8
@@ -314,14 +330,18 @@ musicOboeIMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*12
+	R2.*8
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
-% Bars 331 to 335
 	
-	r4 r8 d'4.\p
+	\ni \mmrPos #6 R2.
+	\mmrPos #8 R
+	\mmrPos #4 R
+% Bars 331 to 335
+	\mmrPos #4 R \no
+	\voiceOne r4 r8 \oneVoice d'4.\p
 	e8( dis e) fis4.(
 	g8) r r d4.
 	e e4( fis8)
@@ -370,15 +390,19 @@ musicOboeIMvtI = \relative c {
 % Bars 371 to 375
 	fis4 b,8 bis4 bis8
 	cis4 cis8 bis r r
-	R2.*16
+	R2.*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 386 to 390
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #0 R \no
 	gis4.\mf\>~ gis4\p ais8\<(
 	bis4.) cis4( dis8)\!
 % Bars 391 to 395
@@ -389,11 +413,15 @@ musicOboeIMvtI = \relative c {
 	fis4.\ff\> e8( dis cis)\!
 % Bars 396 to 400
 	gis4.~\mf\> gis8 r r\! \mark \default
-	R2.*14
+	R2.*12
 % Bars 401 to 405
 	
 % Bars 406 to 410
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #4 R \no
 % Bars 411 to 415
 	e'4\f e8 e4 e8
 	e4 e8 e4 e8
@@ -467,12 +495,16 @@ musicOboeIMvtI = \relative c {
 	gis[ r16 gis gis8] gis gis gis
 	e8[ r16 e e8] e e e \mark \default
 % Bars 471 to 475
-	R2.*12
+	R2.*9
 % Bars 476 to 480
 	
+	
+	
+	
+	\ni \mmrPos #-6 R2.
 % Bars 481 to 485
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	c'4\f c8 r4 r8
 	e4\ff e8 r4 r8
 	e4\ff e8 e4 e8
@@ -510,7 +542,7 @@ musicOboeIMvtI = \relative c {
 	e) r r b\f r r
 	a r r a r r
 	b r r b r r
-	a r r a r r \mark \default
+	a r r a r r \mark \markAaBox
 	b[ r16 e,\mf e8]~ e_\dimmarkup fis-. g-. 
 % Bars 516 to 520
 	a( g) fis~ fis e( dis
@@ -520,7 +552,7 @@ musicOboeIMvtI = \relative c {
 	R2.*3
 % Bars 521 to 525
 	
-	\mark \default
+	\mark \markBbBox
 	R2.*19
 % Bars 526 to 530
 	
@@ -530,5 +562,5 @@ musicOboeIMvtI = \relative c {
 	
 % Bars 541 and 542
 	
-	R2.\fermata \bar "|."
+	\ni R2.\fermata \bar "|."
 }

@@ -20,11 +20,15 @@ musicOboeIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 16 to 20
-	R1*8
+	R1*4
+	
+	
+	
+	\ni \mmrPos #4 R1 
 % Bars 21 to 25
-	
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	gis''4._\pmamarcato gis16 gis a4. gis16 fis
 	gis8 r e2.->
 % Bars 26 to 30
@@ -554,7 +558,7 @@ musicOboeIMvtIV = \relative c {
 	b gis fis e
 	dis2. gis4
 	fis, gis dis' e
-	dis8 r r4 r2 \mark \default
+	dis8 r r4 r2 \mark \markAaBox
 	gis,4.\fff gis16 gis a4. gis16 fis
 % Bars 491 to 495
 	gis4 e2.
@@ -565,7 +569,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 496 to 500
 	dis cis b b8. ais16
 	gis8^\marcatissimo e' dis cis b4. ais8
-	gis e' dis cis b4. ais8 \mark \default
+	gis e' dis cis b4. ais8 \mark \markBbBox
 	gis dis'' cis cis b a gis! fis
 	e gis fis ais b bis cis dis
 % Bars 501 to 505
@@ -581,7 +585,7 @@ musicOboeIMvtIV = \relative c {
 	e4) r8 fis( gis4) r8 a(
 	b4)\fff r8 gis( e4) r8 cis(
 % Bars 511 to 515
-	b4) r8 gis( fis4) r8 gis( \mark \default
+	b4) r8 gis( fis4) r8 gis( \mark \markCcBox
 	e4) r e'\p r
 	eis r cis r
 	cis_\crescmarkup r cis r
@@ -597,7 +601,7 @@ musicOboeIMvtIV = \relative c {
 	g g,8( a bes c d dis
 	e4) e,8( fis gis! a b! bis
 	cis4) cis,8( d dis eis fisis gis
-	a4) a8( b cis dis e! eis \mark \default
+	a4) a8( b cis dis e! eis \mark \markDdBox
 % Bars 526 to 530
 	fis4) r b,2~
 	b c~
@@ -631,7 +635,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 551 to 555
 	a gis fis e fis gis
 	a gis fis e fis gis
-	a gis fis e fis gis \mark \default
+	a gis fis e fis gis \mark \markEeBox
 	a gis fis e r r
 	gis r r r2.
 % Bars 556 to 560

@@ -29,13 +29,13 @@ musicOboeIIMvtII = \relative c {
 % Bars 26 to 30
 	
 	
-	R1.*6
+	R1.*3
 	
 	
 % Bars 31 to 35
-	
-	
-	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	R1.*5
 	
 % Bars 36 to 40
@@ -49,11 +49,15 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1.*6
+	\ni \mmrPos #4 R1. \no
 % Bars 46 to 50
+	R1.*3
 	
+	
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no
 % Bars 51 to 55
-	r2. d''8\mf r r r b b \mark \default
+	\once \voiceTwo r2. d''8\mf r r r b b \mark \default
 	b_\crescpocoapoco b b  b b b  b b b  b b b 
 	cis cis cis  cis cis cis  d d d  d d d 
 	dis dis dis  dis dis dis  e e e  e e e
@@ -76,10 +80,10 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1*3
+	\ni \mmrPos #4 R1
 % Bars 76 to 80
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	dis4.\mf\< e8( gis\! fis) e--\> dis\!--
 	R1*3
 % Bars 81 to 85
@@ -125,10 +129,10 @@ musicOboeIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.
-	R1.*2
-	
-	r4 r8 fis4.\f~-> \after 4.*2/3 \! fis\> r4 r8
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R1.
+	\mmrPos #6 R \no
+	\voiceOne r4 r8 \oneVoice fis4.\f~-> \after 4.*2/3 \! fis\> r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		b,16\mf( cis) dis\<-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b\mf(
 % Bars 121 to 125
@@ -204,5 +208,5 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	
-	R1.\fermata \bar "|."
+	\ni R1.\fermata \no \bar "|."
 }

@@ -20,11 +20,15 @@ musicOboeIIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 16 to 20
-	R1*8
+	R1*4
+	
+	
+	
+	\ni \mmrPos #4 R1
 % Bars 21 to 25
-	
-	
-	
+	\mmrPos #4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	gis''4._\pmamarcato gis16 gis a4. gis16 fis
 	gis8 r e2.->
 % Bars 26 to 30
@@ -104,15 +108,15 @@ musicOboeIIMvtIV = \relative c {
 	R1*3
 	
 	
-	R1*5
+	R1*4
 % Bars 91 to 95
 	
 	
 	
-	
-	R1*2
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 96 to 100
-	
+	\mmrPos #-4 R \no
 	<< fis,1\sf( {s2 s4\> s8 s\!}>> \mark \default
 	e8)\p r r4 r2
 	R1*7
@@ -282,12 +286,12 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 	
-	R1*8
+	R1*6
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	
-	\mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R1 \no \mark \default
 	f'1\mf~
 	f2 ees8( d ces bes)
 	bes2 ees~
@@ -377,14 +381,14 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 331 to 335
 	
-	R1*5
+	R1*4
 	
 	
 	
 % Bars 336 to 340
-	
-	R1*2
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	\after 1*7/8 \! fis,1\mf\>( \mark \default
 	e8)\p r r4 r2
 % Bars 341 to 345
@@ -554,7 +558,7 @@ musicOboeIIMvtIV = \relative c {
 	fis b, dis cis
 	b cis dis gis,8. ais16
 	b4 e fis, ais
-	fis8 r r4 r2 \mark \default
+	fis8 r r4 r2 \mark \markAaBox
 	gis4.\fff gis16 gis a4. gis16 fis
 % Bars 491 to 495
 	gis4 e2.
@@ -565,7 +569,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 496 to 500
 	b cis b b8. ais16
 	gis8^\marcatissimo cis b cis b4. ais8
-	gis cis b cis b4. ais8 \mark \default
+	gis cis b cis b4. ais8 \mark \markBbBox
 	gis b' a! g fis e eis b
 	b d cis e! e fis g a!
 % Bars 501 to 505
@@ -581,7 +585,7 @@ musicOboeIIMvtIV = \relative c {
 	e4) r8 fis( gis4) r8 a(
 	b4)\fff r8 gis( e4) r8 cis(
 % Bars 511 to 515
-	b4) r8 gis( fis4) r8 gis( \mark \default
+	b4) r8 gis( fis4) r8 gis( \mark \markCcBox
 	e4) r e\p r
 	eis r gis r
 	fis_\crescmarkup r b r
@@ -597,7 +601,7 @@ musicOboeIIMvtIV = \relative c {
 	g g8( a bes c d dis
 	e4) e,8( fis gis! a b! bis
 	cis4) cis,8( d dis eis fisis gis
-	a4) a8( b cis dis e! eis \mark \default
+	a4) a8( b cis dis e! eis \mark \markDdBox
 % Bars 526 to 530
 	fis4) r d,2~
 	d e~
@@ -631,7 +635,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 551 to 555
 	a gis fis e fis gis
 	a gis fis e fis gis
-	a gis fis e fis gis \mark \default
+	a gis fis e fis gis \mark \markEeBox
 	a gis fis e r r
 	b' r r r2.
 % Bars 556 to 560

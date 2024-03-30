@@ -19,37 +19,37 @@ musicOboeIMvtII = \relative c {
 	
 	\mark \default
 % Bars 16 to 20
-	R1.*8
+	R1.*5
 % Bars 21 to 25
-	
-	
-	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	fis''4._\dolceespr^\solo ais,4( dis8) cis2.
 	fis4. ais,4( dis8) \after 2.*5/6 \! cis2.\<
 % Bars 26 to 30
 	\tuplet 2/3 4. {cis8--\< dis-- eis-- fis-- ais( gis) fisis-- gis--\! }
 	b4.(\f\> ais)\! r2.
-	R1.*6
+	R1.*4
 	
 	
 % Bars 31 to 35
 	
-	
-	
-	r4 r8 fis4.~_\mpespress fis8 e-- d-- a4( d,8)
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R \no
+	\voiceOne r4 r8 \oneVoice fis4.~_\mpespress fis8 e-- d-- a4( d,8)
 	g(\< a) b-- cis-- d-- dis-- e( fis) g-- a-- b-- cis--\!
 % Bars 36 to 40
 	d4(~\f d16 d,) d4.~ d8 r r r4 r8
 	r4 r8 e4(~\mp e16 e,\<) \tuplet 2/3 4. {e8( a) cis-- e--\!}
 	a4->\f(~ a16 a,) a4.(~ a8 b cis d) r r
-	R1.*6
+	R1.*5
 	
 % Bars 41 to 45
 	
 	
 	
-	\mark \default
-	r2. g,4.\pp\< fis4( e8
+	\ni \mmrPos #-4 R1. \no \mark \default
+	\once \voiceOne r2. g,4.\pp\< fis4( e8
 % Bars 46 to 50
 	d)\! r r r4 r8 \tuplet 2/3 4. {fis8\mf( gis a fis}
 	eis) r r r4 r8 \tuplet 2/3 4. {gis8(\ff ais} b8) r r
@@ -80,10 +80,10 @@ musicOboeIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1*3
+	\ni \mmrPos #4 R1
 % Bars 76 to 80
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	dis4.\mf\< e8( gis\! fis) e--\> dis\!--
 	R1*3
 % Bars 81 to 85
@@ -119,12 +119,12 @@ musicOboeIMvtII = \relative c {
 % Bars 106 to 110
 	a8 a r4 r a8 r
 	r4 a8 r r4 a8 r\fermata \bar "||"
-	\timeTwelveEightC R1.*4
+	\timeTwelveEightC R1.*3
 	
 	
 % Bars 111 to 115
-	
-	r8 r a_\mfmoltoespr~ a cis-- d-- e4(-> a,8) r4 r8
+	\ni \mmrPos #4 R1. \no
+	\voiceOne r8 r \oneVoice a_\mfmoltoespr~ a cis-- d-- e4(-> a,8) r4 r8
 	r8 r a~\< a d-- e--\! fis( g fis)~ fis\> e-- d--\!
 	d4.~\< \tuplet 3/2 8 {d16 e( \liiri d} \lirii cis d e d)\! d4.(\> cis)\!
 	r8 a\f b~ \tuplet 4/6 4. {b16 cis-- d-- e--} fis8( g a) r4 r8 \mark \default
@@ -208,5 +208,5 @@ musicOboeIMvtII = \relative c {
 	
 	
 	
-	R1.\fermata \bar "|."
+	\ni R1.\fermata \bar "|."
 }

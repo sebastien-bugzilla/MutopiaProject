@@ -19,7 +19,7 @@ musicOboeIIMvtI = \relative c {
 	
 	
 	
-	R1\fermata \mark \default
+	\ni R1\fermata \no \mark \default
 % Bars 21 to 25
 	R1*16
 % Bars 26 to 30
@@ -28,17 +28,25 @@ musicOboeIIMvtI = \relative c {
 	
 % Bars 36 to 40
 	
-	R1\fermata \bar "||"
-	\time 6/8 R2.*19
+	\ni R1\fermata \no \bar "||"
+	\time 6/8 R2.*11
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
+	
+	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 51 to 55
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	R2.*4
+	
 	
 % Bars 56 to 60
 	\mark \default
-	R2.
+	\ni \mmrPos #4 R2. \no
 	g''8\p r r a r r
 	b r r a r r
 	b r r c r r
@@ -58,8 +66,8 @@ musicOboeIIMvtI = \relative c {
 	
 	d8(\ff dis e fis e d)
 	cis( b cis d) r r
-	R2.*2
-	
+	\ni \mmrPos #-4 \tweak extra-offset #'(-1 . 0) R2.
+	\mmrPos #-4 R \no
 % Bars 76 to 80
 	g,8(\ff a b c cis d)
 	e( d c! b) r r
@@ -109,13 +117,17 @@ musicOboeIIMvtI = \relative c {
 	c( b) a cis( b) ais \mark \default
 	d( cis) b ais r r
 % Bars 116 to 120
-	R2.*16
+	R2.*12
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
-% Bars 131 to 135
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 131 to 135
+	\mmrPos #0 R \no
 	fis4.\mf\>~ fis4\p eis8(\< 
 	e!4.) b4( cis8)\!
 	d4.\f\> cis
@@ -125,15 +137,15 @@ musicOboeIIMvtI = \relative c {
 	e!4.) b4( cis8)
 	e4.\ff\> d8( cis b)\!
 	\after 2.*5/6 \! cis2.\mf\> \mark \default
-	R2.*14
+	R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #4 R \no
 	d4\f d8 d4 d8
 	d4 d8 d4 d8
 % Bars 156 to 160
@@ -153,11 +165,15 @@ musicOboeIIMvtI = \relative c {
 	d4 d8 d4 d8
 	R2.*2
 	
-	R2.*7 
+	R2.*4 
 % Bars 171 to 175
 	
-% Bars 176 to 180
 	
+	
+	\ni \mmrPos #6 R2.
+	\mmrPos #-4 R
+% Bars 176 to 180
+	\mmrPos #-4 R \no
 	g4\mf\< gis8~ gis a4\!
 	a4\f\< ais8~ ais b4\!
 	r4 e,8(~_\fdim e d cis)
@@ -211,8 +227,8 @@ musicOboeIIMvtI = \relative c {
 	
 	R2.*2
 	
-	R2.*2
-	
+	R2.
+	\ni \mmrPos #-6 R2. \no
 % Bars 231 to 235
 	c'4->(\mf f,8) c'4->( f,8)
 	R2.*4
@@ -224,9 +240,16 @@ musicOboeIIMvtI = \relative c {
 	R2.*2
 % Bars 241 to 245
 	
-	R2.*9
-% Bars 246 to 250
+	R2.*3
 	
+	
+	\ni \mmrPos #4 R2.
+% Bars 246 to 250
+	\mmrPos #4 R \no
+	R2.*2
+	
+	\ni \mmrPos #6 R2.
+	\mmrPos #4 R \no
 % Bars 251 to 255
 	d2.\mf
 	fis_\crescmarkup
@@ -317,8 +340,8 @@ musicOboeIIMvtI = \relative c {
 	
 % Bars 331 to 335
 	
-	R2.
-	r4 r8 d4.\p(
+	\ni \mmrPos #-4 R2. \no
+	\voiceTwo r4 r8 \oneVoice d4.\p(
 	g8) r r b4.
 	a ais
 % Bars 336 to 340
@@ -366,15 +389,19 @@ musicOboeIIMvtI = \relative c {
 % Bars 371 to 375
 	fis4 fis8 fis4 fis8
 	gis4 a8 gis r r
-	R2.*16
+	R2.*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 386 to 390
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	gis4.\mf\>~ gis4\p fisis8\<(
 	fis!4.) cis4( dis8)\!
 % Bars 391 to 395
@@ -385,11 +412,15 @@ musicOboeIIMvtI = \relative c {
 	fis4.\ff\> e8( dis cis)\!
 % Bars 396 to 400
 	\after 2.*5/6 \! dis2.\mf\> \mark \default
-	R2.*14
+	R2.*12
 % Bars 401 to 405
 	
 % Bars 406 to 410
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #4 R \no
 % Bars 411 to 415
 	e4\f e8 e4 e8
 	e4 e8 e4 e8
@@ -410,14 +441,14 @@ musicOboeIIMvtI = \relative c {
 	R2.*2
 % Bars 426 to 430
 	
-	R2.*6
+	R2.*4
 	
 	
 	
 % Bars 431 to 435
-	
-	
-	R2.
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R2. \no
 	a4\mf\< ais8~ ais b4\!
 	b4\f\< bis8~ bis cis4\!
 % Bars 436 to 440
@@ -469,7 +500,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 481 to 485
 	
 	
-	R2.
+	\ni \mmrPos #-4 R2. \no
 	fis4\ff fis8 r4 r8
 	e4\ff e8 e4 e8
 % Bars 486 to 490
@@ -506,7 +537,7 @@ musicOboeIIMvtI = \relative c {
 	e) r r gis\f r r
 	fis r r fis r r
 	b, r r g'! r r
-	fis r r fis r r \mark \default
+	fis r r fis r r \mark \markAaBox
 	b,[ r16 e\mf e8]~ e_\dimmarkup fis-. g-. 
 % Bars 516 to 520
 	a( g) fis~ fis e( dis
@@ -516,7 +547,7 @@ musicOboeIIMvtI = \relative c {
 	R2.*3
 % Bars 521 to 525
 	
-	\mark \default
+	\mark \markBbBox
 	R2.*19
 % Bars 526 to 530
 	
@@ -526,5 +557,5 @@ musicOboeIIMvtI = \relative c {
 	
 % Bars 541 and 542
 	
-	R2.\fermata \bar "|."
+	\ni R2.\fermata \no \bar "|."
 }
