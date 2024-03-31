@@ -9,15 +9,15 @@ musicKlarinetteIMvtII = \relative c {
 	\key d \minor
 	\transposition a
 % Bars 1 to 5
-	R1.*15
+	R1.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 % Bars 16 to 20
 	a'8(\p\<^\solo b) c-- c( d) e--\! e4.(\> ees
 	d)\! a8(\p\<-- bes!-- c--)\! c4.\>( bes)\!
@@ -33,13 +33,13 @@ musicKlarinetteIMvtII = \relative c {
 % Bars 26 to 30
 	
 	
-	r2. a'4._\mfespress cis,4( fis8)
+	\once \voiceTwo r2. a'4._\mfespress cis,4( fis8)
 	f!4.(\> e\!) r2.
 	R1.*3
 % Bars 31 to 35
 	
 	
-	r2. r4 r8 g4.\p(
+	\once \voiceTwo r2. r4 r8 g4.\p(
 	c,4) d8( c4->) d8( c4->) d8( c4.->)
 	R1.
 % Bars 36 to 40
@@ -57,9 +57,9 @@ musicKlarinetteIMvtII = \relative c {
 % Bars 46 to 50
 	r e8\mf e e  e e e
 	d r r r4 r8 r2.
-	R1.*2
-	
-	r2. e8\mp e e  e e e
+	R1.
+	\ni \mmrPos #4 R \no
+	\once \voiceOne r2. e8\mp e e  e e e
 % Bars 51 to 55
 	d r r r4 r8 f\mf f f  f f f \mark \default
 	g_\crescpocoapoco g g  g g g  gis gis gis  gis gis gis
@@ -79,7 +79,7 @@ musicKlarinetteIMvtII = \relative c {
 	
 	\bar "||" \time 4/4
 % Bars 66 to 70
-	R1
+	\ni \mmrPos #-4 R1 \no
 	e4.^\solo\mf\< b'8(\! d c)\> b-- a--\!
 	g4-> \tuplet 9/8 4 {f32( g f g f g f g f} e2)
 	d4(~-> d16 e f a) e2
@@ -129,13 +129,13 @@ musicKlarinetteIMvtII = \relative c {
 % Bars 106 to 110
 	c8 c r4 r c8 r
 	r4 c8 r r4 c8 r\fermata \bar "||"
-	\timeTwelveEightC R1.*8
+	\timeTwelveEightC R1.*6
 % Bars 111 to 115
 	
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R \no \mark \default
 % Bars 116 to 120
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		bes16(\mf a bes g) g'4~ g16(\< a bes b c4~

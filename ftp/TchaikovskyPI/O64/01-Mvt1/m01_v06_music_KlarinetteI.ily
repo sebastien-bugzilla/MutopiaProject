@@ -175,15 +175,15 @@ musicKlarinetteIMvtI = \relative c {
 	cis4.) d4( e8)
 	g4.\ff\> f8( e d)\!
 	\after 2.*5/6 \! a2.\mf\> \mark \default
-	R2.*14
+	R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #4 R \no
 	c'4\f f,8 c'4 f,8
 	c'4 f,8 c'4 f,8
 % Bars 156 to 160
@@ -378,13 +378,17 @@ musicKlarinetteIMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*8
+	R2.*4
 % Bars 321 to 325
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 326 to 330
-	
-	
-	r4 f'16(\p g) a( bes a bes c d)
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\once \voiceTwo r4 f'16(\p g) a( bes a bes c d)
 	ees8. ees16 ees8(~ ees d-.) cis(
 	d) f,( g~ g) a( bes)
 % Bars 331 to 335
@@ -467,11 +471,15 @@ musicKlarinetteIMvtI = \relative c {
 	a4.\ff\> g8( fis e)\!
 % Bars 396 to 400
 	fis,\mf r r r4 r8 \mark \default
-	R2.*14
+	R2.*12
 % Bars 401 to 405
 	
 % Bars 406 to 410
 	
+	
+	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R \no 
 % Bars 411 to 415
 	d''4\f g,8 d'4 g,8
 	d'4 g,8 d'4 g,8
@@ -592,7 +600,7 @@ musicKlarinetteIMvtI = \relative c {
 	g)[ r16 g\f g8]~ g[ r16 g g8]~
 	g[ r16 g g8]~ g g( fis
 	g)[ r16 g g8]~ g8[ r16 g g8]~
-	g[ r16 g g8]~ g8 g( fis \mark \default
+	g[ r16 g g8]~ g8 g( fis \mark \markAaBox
 	g) r r d\mf r r
 % Bars 516 to 520
 	g_\dimmarkup r r d r r
@@ -602,7 +610,7 @@ musicKlarinetteIMvtI = \relative c {
 	g[ r16 g g8]~ g g( fis
 % Bars 521 to 525
 	g)[ r16 g g8]~ g[ r16 g g8]~
-	g[ r16 g g8]~ g g( fis \mark \default
+	g[ r16 g g8]~ g g( fis \mark \markBbBox
 	g[) r16 g,\p g8]~ g a-. bes-.
 	c(-> bes) a~ a4.
 	g8[ r16 g g8]~ g a-. bes-.
@@ -616,5 +624,5 @@ musicKlarinetteIMvtI = \relative c {
 	
 % Bars 541 and 542
 	
-	R2.\fermata \bar "|."
+	\ni R2.\fermata \no \bar "|."
 }

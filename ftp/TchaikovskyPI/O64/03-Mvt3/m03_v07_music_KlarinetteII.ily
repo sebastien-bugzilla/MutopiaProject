@@ -17,8 +17,8 @@ musicKlarinetteIIMvtIII = \relative c {
 	\mark \default
 	R2.*2
 	
-	R2.*2
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R \no
 % Bars 16 to 20
 	e'2\p e8( f)
 	f4->( e2)
@@ -175,9 +175,9 @@ musicKlarinetteIIMvtIII = \relative c {
 	\mark #11
 	R2.*2
 	
-	R2.
+	\ni \mmrPos #4 R2.
 % Bars 156 to 160
-	R
+	\mmrPos #4 R \no
 	e,2\p e8( f)
 	f4->( e2)
 	a, c8( d)

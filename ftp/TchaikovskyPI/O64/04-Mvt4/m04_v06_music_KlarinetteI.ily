@@ -10,14 +10,22 @@ musicKlarinetteIMvtIV = \relative c {
 	\transposition a
 	\section \sectionLabel Finale
 % Bars 1 to 5
-	R1*13
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 6 to 10
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 11 to 15
-	
-	
-	
-	r2 r4 e'8\ff r
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	\voiceOne r2 r4 \oneVoice e'8\ff r
 	d r e r d r cis r \mark \default
 % Bars 16 to 20
 	c! r r4 r2
@@ -508,11 +516,11 @@ musicKlarinetteIMvtIV = \relative c {
 	d'2. d4
 	ees d c bes
 % Bars 436 to 440
-	a8 r r4 r2
-	R1*3
-	
-	
-	r4 c,,_\semprefff d e
+	a8 r \voiceOne r4 r2 \oneVoice 
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	\once \voiceOne r4 c,,_\semprefff d e!
 % Bars 441 to 445
 	fis d e fis
 	g e fis g
@@ -571,7 +579,7 @@ musicKlarinetteIMvtIV = \relative c {
 	d b a g
 	fis2. b4
 	a, b fis' g
-	fis16( e, fis g a b c cis) d( e fis g a b c! cis \mark \default
+	fis16( e, fis g a b c cis) d( e fis g a b c! cis \mark \markAaBox
 	d8) r g,,4\fff g g
 % Bars 491 to 495
 	g g g g
@@ -582,7 +590,7 @@ musicKlarinetteIMvtIV = \relative c {
 % Bars 496 to 500
 	d b a g
 	fis8^\marcatissimo e' d b a4 g
-	fis8 e' d b a4 g \mark \default
+	fis8 e' d b a4 g \mark \markBbBox
 	fis8 d'' c bes a g gis a
 	g! f a g g a bes c
 % Bars 501 to 505
@@ -598,7 +606,7 @@ musicKlarinetteIMvtIV = \relative c {
 	g4) r8 a( b4) r8 c(
 	d4)\fff r8 b( g4) r8 e(
 % Bars 511 to 515
-	d4) r8 b( a4) r8 b( \mark \default
+	d4) r8 b( a4) r8 b( \mark \markCcBox
 	g4) r8 d'(\p g4) r8 a(
 	b4) r8 a( gis4) r8 b(
 	e,4)_\crescmarkup r8 f( fis4) r8 gis(
@@ -614,7 +622,7 @@ musicKlarinetteIMvtIV = \relative c {
 	bes bes,,8( c des ees f fis
 	g4) g,8( a b! c d! dis
 	e4) e,8( f fis gis ais b
-	c4) c8( d e fis g gis \mark \default
+	c4) c8( d e fis g gis \mark \markDdBox
 % Bars 526 to 530
 	a4) r c2~
 	c bes~
@@ -648,7 +656,7 @@ musicKlarinetteIMvtIV = \relative c {
 % Bars 551 to 555
 	g r r e r r
 	g r r e r r
-	g r r e r r \mark \default
+	g r r e r r \mark \markEeBox
 	g r r r2.
 	b4 r r r2.
 % Bars 556 to 560

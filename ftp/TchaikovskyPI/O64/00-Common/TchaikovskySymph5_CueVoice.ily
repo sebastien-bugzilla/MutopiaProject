@@ -738,28 +738,167 @@ cueVoiceOboeIIMvtIV = \relative c {
 %#              C U E   V O I C E   F O R   K L A R I N E T T E N              #
 %###############################################################################
 cueVoiceKlarinetteIMvtI = \relative c {
-	
+	s1*37 s2.*114
+	% bar 152 - 153
+	r4 r8 <c'' c'>\noBeam^\markup {Viol.I}^\pizz ees,,_\markup {Br.} g
+	c ees g c^\markup {Viol.I} ees g
+	s2.*170
+	% bar 324 - 328
+	s4. s4 \cueClef bass ees,,8(^\markup {Fag.I}
+	g8[) r16 g g8](~ g a-.) bes-.
+	c( bes) a( g4) d8(
+	bes'8[) r16 bes bes8]~ bes8[ r16 a a8]~
+	\voiceOne a8[ r16 a] \oneVoice \cueClefUnset s8 s4.
+	s2.*80
+	% bar 409 - 410
+	r4^\markup {Viol.I} r8 <d' d'>\noBeam fis,,_\markup {Vcll.}_\pizz a
+	d\noBeam fis_\markup {Viol.II} a d\noBeam fis^\markup {Viol.I} a
 }
 cueVoiceKlarinetteIMvtII = \relative c {
-	
+	s1.*11
+	% bar 12 - 15
+	s4.*3 f'8(^\markup {Hr.} e) d--
+	f4.(-> e2.) c8( d) e--
+	g4.( f2.) f8(-- g-- a--)
+	b4. b4 b8 b4.~ b4 b8
+	s1.*8
+	% bar 24
+	<>_\markup {(Oboe)}
+	s1.*4
+	% bar 28
+	\voiceOne d4.(_\markup {Hr.} cis) \oneVoice s2.
+	s1.*4
+	% bar 33
+	\voiceOne r4_\markup {Hr.} d8( c4->) d8( c4->) d8 \oneVoice s4.
+	s1.*15
+	% bar 49 - 50
+	r2. \voiceTwo bes4.(^\markup {Ob.} a4 g8
+	f) r r r4 r8 \oneVoice s2.
+	s1.*15
+	% bar 66
+	c'2(^\markup {Viol.I} bes)
+	s1*10
+	% bar 77
+	\voiceOne a'4.^\markup {Viol.I} b8 \oneVoice s2
+	s1*30 s1.*6
+	% bar 114 - 115
+	bes,4.^\markup {Viol.I} bes4 bes8 bes4.~ bes4 bes8
+	bes4.( a2.) f8\(( e) d--\)
 }
 cueVoiceKlarinetteIMvtIII = \relative c {
-	
+	s2.*11
+	% bar 12 - 13
+	e'''4.^\markup {Viol.I} d8( c b)
+	a4( g2)
+	s2.*139
+	% bar 153 - 154
+	e'4.^\markup {Viol.I} d8( c b)
+	a4( g2)
 }
 cueVoiceKlarinetteIMvtIV = \relative c {
-	
+	% bar 1 - 14
+	g'4~^\markup {Klar.II} g8 r g4~ g8 r
+	g r g2~ g8 r
+	g4~ g8 r g4~ g8 r
+	g4~ g8 r g4 e'8 r
+	d r b r a r g r
+	fis2~ fis8 r e' r
+	fis r b, r d r cis r
+	a2~ a8 r r4
+	e4~ e8 r fis4~ fis8 r
+	g2~ g8 r r4
+	g4~ g8 r fis4~ fis8 r
+	g2~ g8 r e' r
+	d r b r a r g r
+	fis2~ fis8 r s4
+	s1*421
+	% bar 436 - 440
+	s4 fis_\markup {Klar.II} g a
+	bes g a bes
+	c a bes c
+	d bes c d
+	\once \voiceTwo e s2.
 }
 cueVoiceKlarinetteIIMvtI = \relative c {
-	
+	s1*37 s2.*9
+	% bar 47 - 49
+	s4. s4 ees'8(^\markup {Klar.I}
+	\stemUp bes'8[) r16 bes bes8]~ \stemNeutral bes8[ r16 a a8]~
+	a8[ r16 g g8]~ g16 s s4
+	s2.*102
+	% bar 152 - 153
+	r4 r8 <c c'>\noBeam^\markup {Viol.I}^\pizz ees,,_\markup {Br.} g
+	c ees g c^\markup {Viol.I} ees g
+	s2.*20
+	% bar 174 - 176
+	f,8\repeatTie^\markup {Klar.I} c( d!) e4( f8)
+	r c( d) e4.
+	r4 f8(~ f e d)
+	s2.*147
+	% bar 324 - 328
+	s4. s4 \cueClef bass ees,8(^\markup {Fag.}
+	g8[) r16 g g8](~ g a-.) bes-.
+	c( bes) a( g4) d8(
+	bes'8[) r16 bes bes8]~ bes8[ r16 a a8]~
+	\voiceOne a8[ r16 a] \oneVoice \cueClefUnset s8 s4.
+	s2.*80
+	% bar 409 - 410
+	r4^\markup {Viol.I}_\pizz r8 <d' d'>\noBeam fis,,_\markup {Vcll.} a
+	d\noBeam fis^\markup {Viol.II} a d\noBeam fis^\markup {Viol.I} a
+	s2.*20
+	% bar 431 - 433
+	g,8\repeatTie^\markup {Klar.I} d( e) fis4( g8)
+	r d( e) fis4.
+	r4 g8(~ g fis e)
+	s2.*45
+	% bar 479 - 480
+	ees'4^\markup {Klar.I} g,8 ees'4 g,8
+	r^\markup {Viol.II} a-. bes-. c( d ees)
 }
 cueVoiceKlarinetteIIMvtII = \relative c {
-	
+	s1.*15
+	% bar 16
+	<>_\markup {(Klar.I)}
+	s1.*8
+	% bar 24
+	<>_\markup {(Oboe)}
+	s1.*4
+	% bar 28 - 30
+	\voiceTwo r2._\markup {Klar.I} a''4. cis,4( fis8)
+	f!4.( e) \cueClef bass a,^\markup {Fag.I} cis,4( fis8)
+	\oneVoice f!4.( e) r2. \cueClefUnset 
+	s1.*2
+	% bar 33
+	\voiceOne r4_\markup {Hr.} d''8( c4->) d8( c4->) d8 \oneVoice s4.
+	s1.*32 s1*9
+	% bar 75 - 78
+	e,4.^\markup {Vcll.} f8( a g) f-- e--
+	e'4.^\markup {Viol.II} f8( a g) f-- e--
+	a4.^\markup {Viol.I Klar.I} bes8 e,8 e4 e8(
+	\voiceOne b[) b]( dis e) r \oneVoice s s4
+	s1*29 s1.*8
+	% bar 116
+	<>_\markup {(Klar.I)}
+	s1.*2
+	% bar 118 - 119
+	\scaleDurations 3/2 { a4(_\markup {Klar.I} gis8) d f4->( e~ }
+	\voiceOne e8) r r \oneVoice s4.*3
 }
 cueVoiceKlarinetteIIMvtIII = \relative c {
-	
+	s2.*13
+	% bar 14 - 15
+	\voiceOne d''4_(^\markup {Klar.I} fis, a,)
+	d2.
+	s2.*139
+	% bar 155 - 156
+	d'4_(^\markup {Klar.I} fis, a,)
+	d2.
 }
 cueVoiceKlarinetteIIMvtIV = \relative c {
-	
+	s1*255
+	% bar 256 - 257
+	des''8(^\markup {Fl.} c des ees) f( ges aes bes)
+	\ottava #1 ces( c des d) ees( e f ges) \ottava #0
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   F A G O T T E                  #

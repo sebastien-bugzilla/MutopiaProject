@@ -72,7 +72,7 @@ tempiMvtII = {
 	s1.*12
 	\tempo "animando" % bar 13
 	s1.*2 s2.
-	\tempo "riten" % bar 15.5
+	\tempo "riten." % bar 15.5
 	s2.
 	\tempo "sostenuto" % bar 16
 	s1.*3
@@ -547,7 +547,7 @@ tempiPartMvtII = {
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
-		\tempo "riten"
+		\tempo "riten."
 	}
 	s2.
 	%%%%%%%%%%%%%%%%%%%%%%

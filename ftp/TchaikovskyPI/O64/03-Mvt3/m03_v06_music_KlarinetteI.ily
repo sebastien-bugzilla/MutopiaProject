@@ -15,8 +15,8 @@ musicKlarinetteIMvtIII = \relative c {
 	
 % Bars 11 to 15
 	\mark \default
-	R2.*2
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	d''4(\p\< fis, a,)\!
 	\after 2.*5/6 \! d2.\>
 % Bars 16 to 20
@@ -173,8 +173,8 @@ musicKlarinetteIMvtIII = \relative c {
 % Bars 151 to 155
 	
 	\mark #11
-	R2.*2
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	d4(\p\< fis, a,)\!
 % Bars 156 to 160
 	\after 2.*5/6 \! d2.\>

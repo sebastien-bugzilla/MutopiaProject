@@ -33,13 +33,13 @@ musicKlarinetteIIMvtII = \relative c {
 % Bars 26 to 30
 	
 	
+	\ni \mmrPos #4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+% Bars 31 to 35
 	R1.*2
 	
-	R1.*3
-% Bars 31 to 35
-	
-	
-	r2. r4 r8 g''4.\p(
+	\voiceTwo r2. r4 r8 \oneVoice g''4.\p(
 	c,4) d8( c4->) d8( c4->) d8( c4.->)
 	R1.
 % Bars 36 to 40
@@ -89,11 +89,11 @@ musicKlarinetteIIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1*2
+	\ni \mmrPos #6 R1
 % Bars 76 to 80
-	
-	R1
-	r2 r8 fis,(\mf\noBeam a) a
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\voiceTwo r2 r8 \oneVoice fis,(\mf\noBeam a) a
 	R1
 	R1*2
 % Bars 81 to 85
@@ -138,11 +138,11 @@ musicKlarinetteIIMvtII = \relative c {
 	\mark \default
 % Bars 116 to 120
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		R1*3
+		R1*2
 		
-		
+		\ni \mmrPos #-4 R1 \no
 	}
-	\timeSignature 12/8 r4 r8 f'(\f dis e) \after 4.*2/3 \! e4.\> r4 r8
+	\timeSignature 12/8 \voiceTwo r4 r8 \oneVoice f'(\f dis e) \after 4.*2/3 \! e4.\> r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		d16\mf( e) fis--\< g-- a-- bes-- b-- c--\! c( bes a c bes8) r16 d,\mf(
 % Bars 121 to 125
