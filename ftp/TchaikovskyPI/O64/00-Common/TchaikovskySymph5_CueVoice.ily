@@ -904,28 +904,152 @@ cueVoiceKlarinetteIIMvtIV = \relative c {
 %#                  C U E   V O I C E   F O R   F A G O T T E                  #
 %###############################################################################
 cueVoiceFagotteIMvtI = \relative c {
-	
+	s1*17
+	% bar 18 - 20
+	s2. c'4^\markup {Klar.}
+	b2~ b4. a16( g
+	fis2~ fis8) r r4\fermata
+	s1*17 s2.*371
+	% bar 409 - 410
+	\voiceOne r4^\markup {Vcll.} r8 dis^\pizz dis fis
+	b\noBeam \cueClef treble dis^\markup {Viol.II} fis b dis fis \cueClefUnset \oneVoice 
+	s2.*71
+	% bar 482 - 484
+	\cueClef treble r8^\markup {Viol.I} a,-. b-. c( dis e
+	g) r r e( fis g
+	a) r r fis( g a) \cueClefUnset
 }
 cueVoiceFagotteIMvtII = \relative c {
-	
+	s1.*15
+	% bar 16
+	<>_\markup {(Klar.I)}
+	s1.*8
+	% bar 24
+	\cueClef treble fis''4.^\markup {Ob.I} ais,4( dis8) cis2. \cueClefUnset
+	s1.*3
+	% bar 28 - 29
+	r2.^\markup {Klar.I} fis,4. ais,4( dis8)
+	\voiceOne d!4.( cis) \oneVoice s2.
+	s1.*36 s1*3
+	% bar 69 - 70
+	b'4(->~^\markup {Klar.I} b16 cis d fis) cis2
+	b4->(~ b16 cis d gis) cis,2
+	s1*37 s1.*6
+	% bar 114 - 115
+	\cueClef treble g4.^\markup {Viol.I} g4 g8 g4.~ g4 g8
+	g4.( fis2.) d8\(( cis) b--\) \cueClefUnset
 }
 cueVoiceFagotteIMvtIII = \relative c {
-	
+	s2.*35
+	% bar 36
+	\voiceTwo dis8(^\markup {Klar.} e fis gis a b)
+	s2.*140
+	% bar 177
+	dis,8(^\markup {Klar.} e fis gis a b) \oneVoice 
 }
 cueVoiceFagotteIMvtIV = \relative c {
-	
+	s1*135
+	% bar 136 - 139
+	\voiceOne r2^\markup {Hr.III IV} <a a'>^\p
+	<cis cis'> <e e'> \oneVoice 
+	<a a'>1->~
+	q2 r
 }
 cueVoiceFagotteIIMvtI = \relative c {
-	
+	s1*17
+	% bar 18 - 20
+	s2. c'4^\markup {Klar.}
+	b2~ b4. a16( g
+	fis2~ fis8) r r4\fermata
+	s1*17 s2.*15
+	% bar 53 - 56
+	s4. s4 g8(_\markup {Klar.}
+	c8[) r16 c c8]~ c b( a
+	b) d,( e~ e) fis( g
+	a4 e8) ais4( e8)
+	s2.*91
+	% bar 148 - 149
+	cis'4.~^\markup {Hr.I} cis8 b-.( cis-.)
+	\cueClef treble cis'4.(~^\markup {Viol.I} cis8 b cis) \cueClefUnset
+	s2.*24
+	% bar 174 - 175
+	d,8\repeatTie^\markup {Fag.I} a( b!) cis4( d8)
+	r a( b) cis4.
+	s2.*51
+	% bar 227 - 229
+	\cueClef treble d'4(->^\markup {Ob.I} g,8) d'4(-> g,8)
+	g4(->^\markup {Hr.I} g,8) g'4(-> g,8)
+	<g' g'>4->(^\markup {Klar.} <c, c'>8) <g' g'>4(-> <c, c'>8) \cueClefUnset
+	s2.*90
+	% bar 320 - 321
+	r4 r8^\markup {Fag.I} r4 c,8(
+	e8[-.) r16 e e8](~ e fis-.) g-.
+	s2.*4
+	% bar 326 - 329
+	s4. s4 b,8(
+	g'8[)^\markup {Fag.I} r16 g g8]~ g8[ r16 fis fis8]
+	fis8[ r16 g g8] d'4.
+	e8( dis e) s4.
+	s2.*79
+	% bar 409 - 410
+	\voiceOne r4^\markup {Vcll.} r8 dis,^\pizz dis fis
+	b\noBeam \cueClef treble dis^\markup {Viol.II} fis b dis fis \cueClefUnset \oneVoice 
+	s2.*71
+	% bar 482 - 484
+	\cueClef treble r8^\markup {Viol.I} a,-. b-. c( dis e
+	g) r r e( fis g
+	a) r r fis( g a) \cueClefUnset
 }
 cueVoiceFagotteIIMvtII = \relative c {
-	
+	s1.*15
+	% bar 16
+	<>_\markup {(Klar.I)}
+	s1.*8
+	% bar 24
+	\cueClef treble fis''4.^\markup {Ob.I} ais,4( dis8) cis2. \cueClefUnset
+	s1.*4
+	% bar 29 - 30
+	r2. fis,,4.^\markup {Fag.I} ais,4( dis8)
+	\once \stemUp d!4.( cis) r2.
+	s1.*32
+	% bar 63 - 64
+	b4.~^\markup {Fag.I} b8 r r b4.( d8) r r
+	cis4.~ cis8 r r r2.
+	s1.*1 s1*5
+	% bar 71 - 73
+	cis'4.^\markup {Fag.I} gis'8( b a) gis-- fis--
+	e4-> \tuplet 9/8 4 {d32( e d e d e d e d)} cis4( gis)
+	b4->(~ b16 cis d fis) s2
+	s1*34 s1.*7
+	% bar 115 - 119
+	s4.*3 d8\((^\markup {Viol.I} cis) b--\)
+	d4.(-> cis2.) a8\(( b) cis--\)
+	e4.( d2.) d8--( e-- fis--)
+	gis4. gis4 gis8 gis4.~ gis4 gis8
+	\voiceTwo gis( b a) a2.*1/2 \oneVoice s2.
 }
 cueVoiceFagotteIIMvtIII = \relative c {
-	
+	s2.*42
+	% bar 43 - 44
+	cis4.^\markup {Fag.I} dis8( e fis)
+	a4. gis8( fis e)
+	s2.*62
+	% bar 107 - 109
+	s2 eis'16-.^\markup {Br.} fis-. eis-. fis-.
+	gis-. fis-. e!-. dis-. e-. dis-. cis-. b-. cisis'-.^\markup {\column {\lower #1.5 "Fl.I" "Viol.I"}} dis-. cisis-. dis-. 
+	\voiceOne e-. dis-. cis!-. b-. cis-. b-. ais-. gis-. \oneVoice s4
+	s2.*74
+	% bar 184 - 185
+	cis,,4.^\markup {Fag.I} dis8( e fis)
+	a4. gis8( fis e)
 }
 cueVoiceFagotteIIMvtIV = \relative c {
-	
+	s1*135
+	% bar 136 - 139
+	\voiceOne r2^\markup {Hr.III IV} <a a'>^\p
+	<cis cis'> <e e'> \oneVoice 
+	<a a'>1->~
+	q2 r
 }
 %###############################################################################
 %#                   C U E   V O I C E   F O R   H O R N E R                   #

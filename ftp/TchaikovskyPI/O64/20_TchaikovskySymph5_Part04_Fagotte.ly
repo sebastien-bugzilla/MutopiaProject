@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.1"
 \include "./00-Common/TchaikovskySymph5_Header.ily"
 \include "./00-Common/TchaikovskySymph5_PaperParts.ily"
 \include "./00-Common/TchaikovskySymph5_timeMvt.ily"
@@ -21,6 +22,7 @@
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_PartFagotte.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v08_music_FagotteI.ily"
 \include "./01-Mvt1/m01_v09_music_FagotteII.ily"
 \include "./02-Mvt2/m02_v08_music_FagotteI.ily"
@@ -32,14 +34,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceFagotteIMvtI" { \cueVoiceFagotteIMvtI }
-\addQuote "cueVoiceFagotteIMvtII" { \cueVoiceFagotteIMvtII }
-\addQuote "cueVoiceFagotteIMvtIII" { \cueVoiceFagotteIMvtIII }
-\addQuote "cueVoiceFagotteIMvtIV" { \cueVoiceFagotteIMvtIV }
-\addQuote "cueVoiceFagotteIIMvtI" { \cueVoiceFagotteIIMvtI }
-\addQuote "cueVoiceFagotteIIMvtII" { \cueVoiceFagotteIIMvtII }
-\addQuote "cueVoiceFagotteIIMvtIII" { \cueVoiceFagotteIIMvtIII }
-\addQuote "cueVoiceFagotteIIMvtIV" { \cueVoiceFagotteIIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -57,21 +51,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFagotteIMvtI
+%			}
 			\new Voice {
-				\formatFagotteIMvtI
+				\keepWithTag #'(fagotteI) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameFagotteIMvtI \musicFagotteIMvtI
+				\InCueContext \cueVoiceFagotteIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFagotteIMvtI \musicFagotteIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -79,21 +75,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFagotteIMvtII
+%			}
 			\new Voice {
-				\formatFagotteIMvtII
+				\keepWithTag #'(fagotteI) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameFagotteIMvtII \musicFagotteIMvtII
+				\InCueContext \cueVoiceFagotteIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFagotteIMvtII \musicFagotteIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -101,21 +99,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFagotteIMvtIII
+%			}
 			\new Voice {
-				\formatFagotteIMvtIII
+				\keepWithTag #'(fagotteI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameFagotteIMvtIII \musicFagotteIMvtIII
+				\InCueContext \cueVoiceFagotteIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFagotteIMvtIII \musicFagotteIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -123,21 +123,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFagotteIMvtIV
+%			}
 			\new Voice {
-				\formatFagotteIMvtIV
+				\keepWithTag #'(fagotteI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameFagotteIMvtIV \musicFagotteIMvtIV
+				\InCueContext \cueVoiceFagotteIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFagotteIMvtIV \musicFagotteIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
@@ -145,21 +147,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFagotteIIMvtI
+%			}
 			\new Voice {
-				\formatFagotteIIMvtI
+				\keepWithTag #'(fagotteII) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameFagotteIIMvtI \musicFagotteIIMvtI
+				\InCueContext \cueVoiceFagotteIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFagotteIIMvtI \musicFagotteIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -167,21 +171,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFagotteIIMvtII
+%			}
 			\new Voice {
-				\formatFagotteIIMvtII
+				\keepWithTag #'(fagotteII) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameFagotteIIMvtII \musicFagotteIIMvtII
+				\InCueContext \cueVoiceFagotteIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFagotteIIMvtII \musicFagotteIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -189,21 +195,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFagotteIIMvtIII
+%			}
 			\new Voice {
-				\formatFagotteIIMvtIII
+				\keepWithTag #'(fagotteII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameFagotteIIMvtIII \musicFagotteIIMvtIII
+				\InCueContext \cueVoiceFagotteIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFagotteIIMvtIII \musicFagotteIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -211,21 +219,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatFagotteIIMvtIV
+%			}
 			\new Voice {
-				\formatFagotteIIMvtIV
+				\keepWithTag #'(fagotteII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameFagotteIIMvtIV \musicFagotteIIMvtIV
+				\InCueContext \cueVoiceFagotteIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFagotteIIMvtIV \musicFagotteIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {

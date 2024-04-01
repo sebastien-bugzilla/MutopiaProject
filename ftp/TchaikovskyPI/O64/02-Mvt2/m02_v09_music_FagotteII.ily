@@ -19,15 +19,19 @@ musicFagotteIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 16 to 20
-	R1.*13
+	R1.*8
 % Bars 21 to 25
 	
+	
+	
+	\ni \mmrPos #-4 R1. \no
+	R1.*4
 % Bars 26 to 30
 	
 	
 	
-	R1.*2 
-	
+	\ni \mmrPos #-6 R1. 
+	\mmrPos #-4 R \no
 % Bars 31 to 35
 	R1.*2
 	
@@ -67,16 +71,16 @@ musicFagotteIIMvtII = \relative c {
 % Bars 61 to 65
 	fis8\p fis fis  fis fis fis  fis r r r4 r8
 	fis fis fis  fis fis fis  fis r r   r4 r8 \clef bass
-	R1.*2
-	
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no 
 	R1. \bar "||"
 % Bars 66 to 70
 	\time 4/4 R1*5 \clef tenor
 % Bars 71 to 75
-	R1*2
-	\clef bass
-	r2 cis,4\mf(~-> cis16 eis gis cis
-	d) r d, r r4 cis->(~ cis16 eis gis cis) \mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #-6 R \no \clef bass
+	r2 cis,4\mf_(~-> cis16 eis gis cis
+	\once \stemUp d) r d, r r4 cis->(~ cis16 eis gis cis) \mark \default
 	R1*2
 % Bars 76 to 80
 	
@@ -117,18 +121,18 @@ musicFagotteIIMvtII = \relative c {
 % Bars 106 to 110
 	cis8 cis r4 r cis8 r
 	r4 cis8 r r4 cis8 r\fermata \bar "||"
-	\timeTwelveEightC R1.*8
+	\timeTwelveEightC R1.*7
 % Bars 111 to 115
 	
 	
 	
 	
-	\mark \default
+	\ni \mmrPos #6 \clef treble R1. \mark \default
 % Bars 116 to 120
-	R1.*2
-	
-	R1.
-	r2. r4 r8 \clef tenor fis'8(\f\<-- g-- a--)\!
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #6 R \no
+	\voiceOne r2. \oneVoice r4 r8 \clef tenor fis'8(\f\<-- g-- a--)\!
 	a4.(\> b,2.)\! e8(--\< fis-- g--)\!
 % Bars 121 to 125
 	g4.(\> a,2.)\! d8(\<-- e-- fis--)\!
@@ -212,5 +216,5 @@ musicFagotteIIMvtII = \relative c {
 	d4. r4 r8 d4. r4 r8
 	d4.~ d8 r r r2.
 	R1.
-	R1.\fermata \bar "|."
+	\ni R1.\fermata \no \bar "|."
 }

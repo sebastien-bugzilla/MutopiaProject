@@ -43,15 +43,15 @@ musicFagotteIIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	\mark \default
-	R2.*8
+	R2.*6
 	
 	
 	
 % Bars 41 to 45
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \no \mark \default
 	a2.\mf~
 % Bars 46 to 50
 	a
@@ -122,14 +122,14 @@ musicFagotteIIMvtIII = \relative c {
 % Bars 101 to 105
 	R2.
 	R2.*2
-	\clef bass \mark \default
-	R2.*5 
+	\mark \default
+	R2.*3 
 	
 % Bars 106 to 110
 	
-	
-	
-	r4 r4 \clef tenor ais\mf->(
+	\ni << \mmrPos #4 R2. {s2 \clef treble s4} >>
+	\mmrPos #4 R2. \no
+	\voiceTwo r4 r4 \oneVoice \clef tenor ais\mf->(
 	gis8)[ dis-.] \clef bass dis-. b-. r4
 % Bars 111 to 115
 	r r4 \clef tenor ais'->\mf(
@@ -207,15 +207,15 @@ musicFagotteIIMvtIII = \relative c {
 % Bars 176 to 180
 	
 	\mark \default
-	R2.*8
+	R2.*6
 	
 	
 % Bars 181 to 185
 	
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \no \mark \default
 % Bars 186 to 190
 	a2.\mf~
 	a

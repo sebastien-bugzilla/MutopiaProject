@@ -39,11 +39,11 @@ musicFagotteIMvtIII = \relative c {
 % Bars 26 to 30
 	dis(\> cis b a) gis-. fis-. 
 	cis'( b a gis) fis-. e-.\!
-	R2.*9
+	R2.*8
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	\mark \default
+	\ni \mmrPos #4 R2. \no \mark \default
 	cis'4._\dolce b8( a gis) \clef bass
 	fis4( e2)
 	fis4. gis8( a fis)
@@ -200,12 +200,12 @@ musicFagotteIMvtIII = \relative c {
 	a(\mf gis fis e) dis-. cis-.
 	dis(\> cis b a) gis-. fis-. 
 	cis'( b a gis) fis-. e-.\!
-	R2.*9
+	R2.*8
 % Bars 171 to 175
 	
 % Bars 176 to 180
 	
-	\mark \default
+	\ni \mmrPos #4 R2. \no \mark \default
 	cis'4._\dolce b8( a gis) \clef bass
 	fis4( e2)
 	fis4. gis8( a fis)

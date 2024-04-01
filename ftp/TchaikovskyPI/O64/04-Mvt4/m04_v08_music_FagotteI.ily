@@ -157,14 +157,14 @@ musicFagotteIMvtIV = \relative c {
 % Bars 126 to 130
 	g8 r r4 r2
 	R1 \mark \default
-	R1*12
+	R1*8
 % Bars 131 to 135
 	
 % Bars 136 to 140
-	
-	
-	
-	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	gis'1\mf(
 % Bars 141 to 145
 	fis)

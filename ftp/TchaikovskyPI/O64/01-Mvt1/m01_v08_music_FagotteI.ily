@@ -9,7 +9,7 @@ musicFagotteIMvtI = \relative c {
 	\key e \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*19
+	R1*17
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -17,9 +17,9 @@ musicFagotteIMvtI = \relative c {
 % Bars 16 to 20
 	
 	
-	
-	
-	R1\fermata \mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R_\fermata \no \mark \default
 % Bars 21 to 25
 	b4\pp r c r
 	b r r2
@@ -458,11 +458,15 @@ musicFagotteIMvtI = \relative c {
 	gis4.\ff\> a\!
 % Bars 396 to 400
 	\after 2.*5/6 \! gis2.\mf\> \mark \default
-	R2.*14
+	R2.*12
 % Bars 401 to 405
 	
 % Bars 406 to 410
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-6 R \no
 % Bars 411 to 415
 	b,,4\f b8 b4 b8
 	b4 b8 b4 b8
@@ -536,14 +540,14 @@ musicFagotteIMvtI = \relative c {
 	e,[ r16 e e8] e e e
 	b[ r16 b b8] b b b \mark \default
 % Bars 471 to 475
-	R2.*14
+	R2.*11
 % Bars 476 to 480
 	
 % Bars 481 to 485
 	
-	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	e'4\ff ais,8 e'4 ais,8
 % Bars 486 to 490
 	e'4 ais,8 e'4 ais,8 \mark \default
@@ -579,7 +583,7 @@ musicFagotteIMvtI = \relative c {
 	e r r d\f r r
 	c r r b r r
 	e r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markAaBox
 	e[ r16 e\mf e8]~ e_\dimmarkup fis-. g-.
 % Bars 516 to 520
 	a( g) fis~ fis e( dis
@@ -589,7 +593,7 @@ musicFagotteIMvtI = \relative c {
 	c r r b r r
 % Bars 521 to 525
 	e r r d r r 
-	c r r b r r \mark \default
+	c r r b r r \mark \markBbBox
 	e[\p r16 e e8]~ e fis-. g-. 
 	a(-> g) fis~ fis4.
 	e8[ r16 e e8]~ e fis-. g-. 

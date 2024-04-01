@@ -574,7 +574,7 @@ musicFagotteIIMvtI = \relative c {
 	e r r d r r 
 	c r r b r r \mark \markBb
 	e'2.\p~
-	e4.~-> e8 cis( dis)
+	e4.~ e8 cis( dis)
 	e2.~
 % Bars 526 to 530
 	e4.~ e8 cis( dis

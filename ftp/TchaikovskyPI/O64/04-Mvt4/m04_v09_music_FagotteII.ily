@@ -163,14 +163,14 @@ musicFagotteIIMvtIV = \relative c {
 	g\p\< a g a
 	g a g a\! \mark \default
 	g8\mf r r4 r2
-	R1*11
+	R1*7
 % Bars 131 to 135
 	
 % Bars 136 to 140
-	
-	
-	
-	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	cis1\mf~
 % Bars 141 to 145
 	cis
