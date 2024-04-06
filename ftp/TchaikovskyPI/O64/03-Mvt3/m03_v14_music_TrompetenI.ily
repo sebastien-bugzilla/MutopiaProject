@@ -66,12 +66,16 @@ musicTrompetenIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 96 to 100
-	R2.*8
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	R2.*2
+	
+	\ni \mmrPos #-4 R2.
 % Bars 101 to 105
-	
-	
-	\mark \default
-	r4 r r8 g'''-.\mp
+	\mmrPos #-4 R \no
+	R2.
+	\ni \mmrPos #-4 R2. \no \mark \default
+	\voiceOne r4 r \oneVoice r8 g'''-.\mp
 	fis-. d-. d-.\noBeam r r4
 % Bars 106 to 110
 	r4 r r8 g-.\mp
@@ -165,12 +169,16 @@ musicTrompetenIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 256 to 260
-	R2.*8
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 261 to 265
-	
-	
-	
-	r4 aes'\ff g
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	\once \voiceOne  r4 aes'\ff g
 	aes g aes
 % Bar 266
 	g r r\fermata \bar "|."

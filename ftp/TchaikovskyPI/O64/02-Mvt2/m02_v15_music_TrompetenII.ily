@@ -38,10 +38,10 @@ musicTrompetenIIMvtII = \relative c {
 	
 % Bars 51 to 55
 	\mark \default
-	R1.*4
-	
-	
-	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 56 to 60
 	f'4.\ff\>~ f8\! r r r2.
 	R1.*9
@@ -72,9 +72,13 @@ musicTrompetenIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 91 to 95
-	R1*5
+	\ni \mmrPos #-4 R1 \no
+	R1*3
+	
+	
+	\ni \mmrPos #-4 R1 
 % Bars 96 to 100
-	R1
+	\mmrPos #-4 R1 \no
 	e'2\ff g
 	e b4 g
 	c,4.\ff c16 c d4. c16 b
@@ -109,9 +113,11 @@ musicTrompetenIIMvtII = \relative c {
 % Bars 136 to 140
 	
 	\mark \default
-	R1.*4
-% Bars 141 to 145
+	R1.*2
 	
+	\ni \mmrPos #-4 R1.
+% Bars 141 to 145
+	\mmrPos #-6 R \no
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		f8\ff r r4 r2
 		R1*3
@@ -156,5 +162,5 @@ musicTrompetenIIMvtII = \relative c {
 	
 	
 	
-	R1.\fermata \bar "|."
+	\ni R1.\fermata \no \bar "|."
 }

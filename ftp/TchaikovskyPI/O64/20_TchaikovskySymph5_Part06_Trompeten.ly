@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.1"
 \include "./00-Common/TchaikovskySymph5_Header.ily"
 \include "./00-Common/TchaikovskySymph5_PaperParts.ily"
 \include "./00-Common/TchaikovskySymph5_timeMvt.ily"
@@ -21,6 +22,7 @@
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_PartTrompeten.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v14_music_TrompetenI.ily"
 \include "./01-Mvt1/m01_v15_music_TrompetenII.ily"
 \include "./02-Mvt2/m02_v14_music_TrompetenI.ily"
@@ -32,14 +34,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceTrompetenIMvtI" { \cueVoiceTrompetenIMvtI }
-\addQuote "cueVoiceTrompetenIMvtII" { \cueVoiceTrompetenIMvtII }
-\addQuote "cueVoiceTrompetenIMvtIII" { \cueVoiceTrompetenIMvtIII }
-\addQuote "cueVoiceTrompetenIMvtIV" { \cueVoiceTrompetenIMvtIV }
-\addQuote "cueVoiceTrompetenIIMvtI" { \cueVoiceTrompetenIIMvtI }
-\addQuote "cueVoiceTrompetenIIMvtII" { \cueVoiceTrompetenIIMvtII }
-\addQuote "cueVoiceTrompetenIIMvtIII" { \cueVoiceTrompetenIIMvtIII }
-\addQuote "cueVoiceTrompetenIIMvtIV" { \cueVoiceTrompetenIIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -57,21 +51,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatTrompetenIMvtI
+%			}
 			\new Voice {
-				\formatTrompetenIMvtI
+				\keepWithTag #'(trompetenI) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameTrompetenIMvtI \musicTrompetenIMvtI
+				\InCueContext \cueVoiceTrompetenIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTrompetenIMvtI \musicTrompetenIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -79,21 +75,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatTrompetenIMvtII
+%			}
 			\new Voice {
-				\formatTrompetenIMvtII
+				\keepWithTag #'(trompetenI) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameTrompetenIMvtII \musicTrompetenIMvtII
+				\InCueContext \cueVoiceTrompetenIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTrompetenIMvtII \musicTrompetenIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -101,21 +99,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatTrompetenIMvtIII
+%			}
 			\new Voice {
-				\formatTrompetenIMvtIII
+				\keepWithTag #'(trompetenI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameTrompetenIMvtIII \musicTrompetenIMvtIII
+				\InCueContext \cueVoiceTrompetenIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameTrompetenIMvtIII \musicTrompetenIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -123,21 +123,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatTrompetenIMvtIV
+%			}
 			\new Voice {
-				\formatTrompetenIMvtIV
+				\keepWithTag #'(trompetenI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameTrompetenIMvtIV \musicTrompetenIMvtIV
+				\InCueContext \cueVoiceTrompetenIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameTrompetenIMvtIV \musicTrompetenIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
@@ -145,21 +147,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatTrompetenIIMvtI
+%			}
 			\new Voice {
-				\formatTrompetenIIMvtI
+				\keepWithTag #'(trompetenII) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameTrompetenIIMvtI \musicTrompetenIIMvtI
+				\InCueContext \cueVoiceTrompetenIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTrompetenIIMvtI \musicTrompetenIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -167,21 +171,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatTrompetenIIMvtII
+%			}
 			\new Voice {
-				\formatTrompetenIIMvtII
+				\keepWithTag #'(trompetenII) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameTrompetenIIMvtII \musicTrompetenIIMvtII
+				\InCueContext \cueVoiceTrompetenIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTrompetenIIMvtII \musicTrompetenIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -189,21 +195,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatTrompetenIIMvtIII
+%			}
 			\new Voice {
-				\formatTrompetenIIMvtIII
+				\keepWithTag #'(trompetenII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameTrompetenIIMvtIII \musicTrompetenIIMvtIII
+				\InCueContext \cueVoiceTrompetenIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameTrompetenIIMvtIII \musicTrompetenIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -211,21 +219,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatTrompetenIIMvtIV
+%			}
 			\new Voice {
-				\formatTrompetenIIMvtIV
+				\keepWithTag #'(trompetenII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameTrompetenIIMvtIV \musicTrompetenIIMvtIV
+				\InCueContext \cueVoiceTrompetenIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameTrompetenIIMvtIV \musicTrompetenIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
