@@ -10,15 +10,15 @@ musicHornIMvtIV = \relative c {
 	\transposition f
 	\section \sectionLabel Finale
 % Bars 1 to 5
-	R1*15
+	R1*10
 % Bars 6 to 10
 	
 % Bars 11 to 15
-	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #6 R1
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 % Bars 16 to 20
 	fis''4.\sf\> fis16\pp fis fis4. fis16 fis
 	fis8_\pocoapococresc r fis2.
@@ -110,9 +110,13 @@ musicHornIMvtIV = \relative c {
 	fis2\> fis,\!~
 	fis8 r r4 r2
 % Bars 91 to 95
-	R1*7
-% Bars 96 to 100
+	R1*3
 	
+	
+	\ni \mmrPos #6 R1
+	\mmrPos #6 R \no
+% Bars 96 to 100
+	R1*2
 	\mark \default
 	b8\p b b b  b b b b
 	b b b b  b b b b
@@ -158,11 +162,15 @@ musicHornIMvtIV = \relative c {
 	b2\> gis
 % Bars 136 to 140
 	e\p r
-	R1*10
+	R1*8
 % Bars 141 to 145
 	
-% Bars 146 to 150
 	
+	
+	
+	\ni \mmrPos #-4 R1
+% Bars 146 to 150
+	\mmrPos #-4 R \no
 	r2 b'4\mf cis \mark \default
 	d b d b
 	d b d b
@@ -179,7 +187,7 @@ musicHornIMvtIV = \relative c {
 	
 	
 	\mark #11
-	R1
+	\ni \mmrPos #-4 R1 \no
 	r4 e'2.\f~
 % Bars 166 to 170
 	e8 r r4 r2
@@ -273,9 +281,13 @@ musicHornIMvtIV = \relative c {
 % Bars 256 to 260
 	
 	\mark \default
-	R1*8
+	R1*4
 % Bars 261 to 265
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 266 to 270
 	fis1->\f~
 	fis_\dimmarkup~
@@ -296,11 +308,19 @@ musicHornIMvtIV = \relative c {
 	
 % Bars 281 to 285
 	\mark \default
-	R1*14
+	R1*8
 % Bars 286 to 290
 	
-% Bars 291 to 295
 	
+	
+	
+	\ni \mmrPos #-4 R1
+% Bars 291 to 295
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 296 to 300
 	fis4\ff r fis,2\f
 	fis2. fis'4
@@ -395,14 +415,14 @@ musicHornIMvtIV = \relative c {
 % Bars 376 to 380
 	
 	
-	R1*9
+	R1*8
 % Bars 381 to 385
 	
 % Bars 386 to 390
-	
-	R1*3
-	
-	\mark \default
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	g1(\mf
 % Bars 391 to 395
 	f)
@@ -422,7 +442,7 @@ musicHornIMvtIV = \relative c {
 	
 	
 	\mark \default
-	R1
+	\ni \mmrPos #-4 R1 \no
 	r4 gis2.\f~
 % Bars 416 to 420
 	gis8 r r4 r2
@@ -512,7 +532,7 @@ musicHornIMvtIV = \relative c {
 	fis dis cis b
 	ais2. dis4
 	cis, dis ais' b
-	ais8 r r4 r2 \mark \default
+	ais8 r r4 r2 \mark \markAaBox
 	fis4\fff fis b b
 % Bars 491 to 495
 	fis fis fis fis
@@ -523,7 +543,7 @@ musicHornIMvtIV = \relative c {
 % Bars 496 to 500
 	fis dis cis fis8. eis16
 	dis8^\marcatissimo dis fis dis fis4. eis8
-	dis dis fis dis fis4. eis8 \mark \default
+	dis dis fis dis fis4. eis8 \mark \markBbBox
 	dis fis e! d! cis b bis cis
 	b! fis' cis eis fis r r e!
 % Bars 501 to 505
@@ -539,7 +559,7 @@ musicHornIMvtIV = \relative c {
 	dis2\f b\ff
 	fis'4\fff r r2
 % Bars 511 to 515
-	r2 fis4 r \mark \default
+	r2 fis4 r \mark \markCcBox
 	fis r dis\p r
 	fis r gis, r
 	gis_\crescmarkup r gis r
@@ -555,7 +575,7 @@ musicHornIMvtIV = \relative c {
 	b d r g
 	fis fis r dis
 	dis dis r gis
-	gis gis r cis, \mark \default
+	gis gis r cis, \mark \markDdBox
 % Bars 526 to 530
 	cis r fis2~
 	fis g!~
@@ -589,7 +609,7 @@ musicHornIMvtIV = \relative c {
 % Bars 551 to 555
 	fis r r e r r
 	fis r r e r r
-	fis r r e r r \mark \default
+	fis r r e r r \mark \markEeBox
 	fis r r r2.
 	dis4 r r r2.
 % Bars 556 to 560

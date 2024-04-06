@@ -10,9 +10,13 @@ musicHornIIMvtIII = \relative c {
 	\transposition f
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	R2.*5
+	R2.*4
+	
+	
+	
+	\ni \mmrPos #-4 R2. \no
 % Bars 6 to 10
-	r4 r gis''\p^\ten
+	\voiceTwo r4 r \oneVoice gis''\p^\ten
 	r r cis,^\ten
 	r r b^\ten
 	R2.*3
@@ -45,10 +49,10 @@ musicHornIIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	\mark \default
-	R2.*4
+	R2.*2
 	
-	
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R \no
 % Bars 41 to 45
 	dis2.\p
 	gis,
@@ -65,14 +69,18 @@ musicHornIIMvtIII = \relative c {
 	e2.\mf
 % Bars 56 to 60
 	fis4->~ fis8 r r4
-	R2.*15
+	R2.*11
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
-% Bars 71 to 75
 	
-	r4 gis8\f r r4
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-6 R
+	\mmrPos #-7 R
+% Bars 71 to 75
+	\mmrPos #4 R \no
+	\once \voiceOne r4 gis8\f r r4
 	R2.
 	r4 fis2~
 	fis2.\p\<
@@ -211,15 +219,19 @@ musicHornIIMvtIII = \relative c {
 % Bars 196 to 200
 	e2.\mf
 	fis4->~ fis8 r r4
-	R2.*16
+	R2.*11
 % Bars 201 to 205
 	
 % Bars 206 to 210
 	
+	
+	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 211 to 215
-	
-	
-	
+	\mmrPos #-7 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
 	d2.\p
 	dis
 % Bars 216 to 220
@@ -264,12 +276,12 @@ musicHornIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 256 to 260
-	R2.*8
+	R2.*6
 % Bars 261 to 265
 	
-	
-	
-	r4 e\ff e
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R \no
+	\once \voiceOne r4 e\ff e
 	e e e
 % Bar 266
 	e r r\fermata \bar "|."

@@ -68,14 +68,18 @@ musicHornIVMvtIII = \relative c {
 	e2.\mf
 % Bars 56 to 60
 	fis4->~ fis8 r r4
-	R2.*15
+	R2.*11
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
-% Bars 71 to 75
 	
-	r4 e8\f r r4
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-8 R
+% Bars 71 to 75
+	\mmrPos #-8 R \no
+	\once \voiceOne r4 e8\f r r4
 	R2.*8
 % Bars 76 to 80
 	
@@ -84,13 +88,13 @@ musicHornIVMvtIII = \relative c {
 	
 	\mark \default
 % Bars 81 to 85
-	R2.*9
+	R2.*7
 % Bars 86 to 90
 	
 	
-	
-	
-	r4 r e->\p~
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	\voiceTwo r4 r \oneVoice e->\p~
 % Bars 91 to 95
 	e8 r r4 r
 	R2.*2
@@ -104,11 +108,11 @@ musicHornIVMvtIII = \relative c {
 	
 	\mark \default
 	R2.
-	R2.*4
+	\ni \mmrPos #-4 R2.
 % Bars 106 to 110
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 bes-.\noBeam\mp bes-. ges'-. r4
 	R2.
 % Bars 111 to 115
@@ -137,12 +141,12 @@ musicHornIVMvtIII = \relative c {
 	
 % Bars 141 to 145
 	\mark \default
-	R2.*11
+	R2.*9
 % Bars 146 to 150
 	
 % Bars 151 to 155
-	
-	\mark #11
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \no \mark #11
 	r4 b,(\p b')
 	r b,( e)
 	r4 bes(\< e)\!
@@ -189,17 +193,21 @@ musicHornIVMvtIII = \relative c {
 % Bars 196 to 200
 	e2.\mf
 	fis4->~ fis8 r r4
-	R2.*21
+	R2.*16
 % Bars 201 to 205
 	
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 216 to 220
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	r4 c\f c
 	c b_\pesante b
 % Bars 221 to 225
@@ -238,12 +246,12 @@ musicHornIVMvtIII = \relative c {
 	
 	\mark \default
 % Bars 256 to 260
-	R2.*8
+	R2.*6
 % Bars 261 to 265
 	
-	
-	
-	r4 fis\ff gis
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	\once \voiceTwo r4 fis\ff gis
 	fis gis fis
 % Bar 266
 	gis r r\fermata \bar "|."

@@ -26,11 +26,11 @@ musicHornIMvtIII = \relative c {
 	r4 b\p b
 	r b b
 	\partCombineApart fis(\< ais cis)\!
-	fis2\> fis4\p
+	fis,2\> fis4\p
 % Bars 16 to 20
 	R2.*2
 	\partCombineAutomatic
-	e,2\p r4
+	e2\p r4
 	r b'8 r r4
 	R2.*8
 % Bars 21 to 25

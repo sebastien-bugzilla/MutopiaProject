@@ -126,7 +126,7 @@ musicHornIIIMvtIII = \relative c {
 	r r b->~
 % Bars 121 to 125
 	b8 r r4 r
-	r r b(\mf->
+	r r bis(\mf->
 	cis8) r r4 r
 	r r bis(->
 	cis8) r r4 r

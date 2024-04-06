@@ -19,7 +19,7 @@ musicHornIIIMvtI = \relative c {
 	
 	
 	
-	R1\fermata \mark \default
+	\ni R1\fermata \no \mark \default
 % Bars 21 to 25
 	R1*16
 % Bars 26 to 30
@@ -28,17 +28,21 @@ musicHornIIIMvtI = \relative c {
 	
 % Bars 36 to 40
 	
-	R1\fermata \bar "||" \time 6/8
-	R2.*19
+	\ni R1\fermata \no \bar "||" \time 6/8
+	R2.*15
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-7 R
 % Bars 56 to 60
-	\mark \default
-	R2.
+	\mmrPos #-6 R \mark \default
+	\mmrPos #4 R2. \no
 	d'8\p r r e r r
 	b' r r e, r r
 	b' r r e r r
@@ -49,14 +53,18 @@ musicHornIIIMvtI = \relative c {
 	b' r r e r r
 	d r r r r4 \mark \default
 % Bars 66 to 70
-	R2.*15
+	R2.*14
 	
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
+	
+	
+	
+	\ni \mmrPos #4 R2. \no
 % Bars 81 to 85
-	r4 r8 r f!\ff( fis)
+	\once \voiceOne r4 r8 r f!\ff( fis)
 	fis4.~ fis8 f fis
 	b,( a gis fis) a b \mark \default
 	cis r r r4 r8
@@ -98,15 +106,15 @@ musicHornIIIMvtI = \relative c {
 	g4 b,8 b4 b8 \mark \default
 	cis4 fis8 f r r
 % Bars 116 to 120
-	R2.*18
+	R2.*15
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	fis4.\mf\> fis\!
 	\after 2.*5/6 \! gis,2.\p\<
 % Bars 136 to 140
@@ -228,12 +236,12 @@ musicHornIIIMvtI = \relative c {
 % Bars 241 to 245
 	R2.*2
 	
-	R2.*10
+	R2.*8
 % Bars 246 to 250
 	
 % Bars 251 to 255
-	
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R \no
 	e2.\mf\<
 	e\f \mark \default
 	e'8[\ff r16 e e8] r b r
@@ -312,7 +320,7 @@ musicHornIIIMvtI = \relative c {
 	R2.*2
 	g2.\pp~ \mark \default
 	g
-	R2.*16
+	R2.*15
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -320,7 +328,7 @@ musicHornIIIMvtI = \relative c {
 % Bars 331 to 335
 	
 % Bars 336 to 340
-	\mark \default
+	\ni \mmrPos #-7 R2. \no \mark \default
 	d8\p r r e r r
 	b' r r e, r r
 	b' r r e r r
@@ -336,13 +344,13 @@ musicHornIIIMvtI = \relative c {
 % Bars 351 to 355
 	
 	\mark \default
-	R2.*3
-	
-	
-% Bars 356 to 360
 	R2.*2
 	
-	r4 r8 r fis,\mf-- fis--
+	\ni \mmrPos #-6 R2.
+% Bars 356 to 360
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\voiceOne r4 r8 r \oneVoice fis,\mf-- fis--
 	f!4.->~ f8 r r
 	R2.*2
 % Bars 361 to 365
@@ -360,26 +368,34 @@ musicHornIIIMvtI = \relative c {
 % Bars 371 to 375
 	cis4 fis,8 e4 e8
 	dis4 d8 dis r r
-	R2.*19
+	R2.*16
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
 % Bars 386 to 390
 	
-% Bars 391 to 395
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+% Bars 391 to 395
+	\mmrPos #-4 R \no
 	\after 2.*5/6 \! bes'2.\p\<
 	R2.*3
 	
 	
 % Bars 396 to 400
 	\after 2.*5/6 \! bes2.\mf\> \mark \default
-	R2.*14
+	R2.*12
 % Bars 401 to 405
 	
 % Bars 406 to 410
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 % Bars 411 to 415
 	fis8\f fis4 fis8 fis4
 	fis8 fis4 fis8 fis4
@@ -500,7 +516,7 @@ musicHornIIIMvtI = \relative c {
 	d r r fis\f r r
 	e r r e r r
 	d! r r fis r r
-	e r r e r r \mark \default
+	e r r e r r \mark \markAaBox
 	d! r r fis,\mf r r
 % Bars 516 to 520
 	b_\dimmarkup r r fis r r
@@ -510,7 +526,7 @@ musicHornIIIMvtI = \relative c {
 	R2.*3
 % Bars 521 to 525
 	
-	\mark \default
+	\mark \markBbBox
 	R2.*19
 % Bars 526 to 530
 	
@@ -520,5 +536,5 @@ musicHornIIIMvtI = \relative c {
 	
 % Bars 541 and 542
 	
-	R2.\fermata \bar "|."
+	\ni R2.\fermata \no \bar "|."
 }

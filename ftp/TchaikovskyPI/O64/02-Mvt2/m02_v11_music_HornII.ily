@@ -30,11 +30,15 @@ musicHornIIMvtII = \relative c {
 	
 	
 	
-	R1.*12
+	R1.*9
 % Bars 31 to 35
 	
 % Bars 36 to 40
 	
+	
+	\ni \mmrPos #-6 R1.
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 41 to 45
 	fis'4.\f fis fis r4 r8
 	fis4. fis fis2.
@@ -66,12 +70,12 @@ musicHornIIMvtII = \relative c {
 	R1.*2
 	\bar "||"
 % Bars 66 to 70
-	\time 4/4 R1*9
+	\time 4/4 R1*7
 % Bars 71 to 75
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-7 R1
+	\mmrPos #-7 R \no \mark \default
 	d8\mf d4 d8( cis) cis4 cis8
 % Bars 76 to 80
 	c!8 c4 c8( cis) cis4 cis8~
@@ -120,10 +124,10 @@ musicHornIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.*3
-	
-	
-	r4 r8 e4.->\mf~ \after 4.*2/3 \! e\> r4 r8
+	\ni \mmrPos #4 R1.
+	\mmrPos #6 R
+	\mmrPos #6 R \no
+	\voiceTwo r4 r8 \oneVoice e4.->\mf~ \after 4.*2/3 \! e\> r4 r8
 	e4.~\p e8 r r b'4.->~ b8 r r
 % Bars 121 to 125
 	d,4.\p~ d8 r r a'4.->~ a8 r r
@@ -205,5 +209,5 @@ musicHornIIMvtII = \relative c {
 	cis4. r4 r8 cis4. r4 r8
 	cis4.~ cis8 r r r2.
 	R1.
-	R\fermata \bar "|."
+	\ni R\fermata \no \bar "|."
 }

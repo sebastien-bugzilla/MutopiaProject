@@ -9,11 +9,11 @@ musicHornIMvtII = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R1.*7
+	R1.*5
 % Bars 6 to 10
-	
-	
-	r2. r4 r8 a''(_\dolceconmoltoespress^\solo gis) fis--
+	\ni R1.
+	R \no
+	\voiceOne r2. r4 r8 \oneVoice a''(_\dolceconmoltoespress^\solo gis) fis--
 	a4.->( gis2.) e8(\< fis) gis--\!
 	b4.( a2.)\> a8(\! b) cis--
 % Bars 11 to 15
@@ -38,11 +38,15 @@ musicHornIMvtII = \relative c {
 	cis4.~ cis8 r r r2.
 	\tuplet 2/3 4. {gis8--\mp\< ais-- bis-- cis-- eis( dis) d-- dis--\!}
 	fis4.(\> eis)\! r2.
-	R1.*12
+	R1.*9
 % Bars 31 to 35
 	
 % Bars 36 to 40
 	
+	
+	\ni \mmrPos #-6 R1.
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 41 to 45
 	c!4.\f cis dis r4 r8
 	c!4. cis dis2.
@@ -74,12 +78,12 @@ musicHornIMvtII = \relative c {
 	
 	\bar "||"
 % Bars 66 to 70
-	\time 4/4 R1*9
+	\time 4/4 R1*7
 % Bars 71 to 75
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-6 R1
+	\mmrPos #-6 R \no \mark \default
 	fis,8\mf fis4 fis8( gis) gis r4
 % Bars 76 to 80
 	fis'8 fis4 fis8( eis) eis4 eis8~
@@ -213,5 +217,5 @@ musicHornIMvtII = \relative c {
 	R1.*2
 	
 	R1.
-	R\fermata \bar "|."
+	\ni R\fermata \no \bar "|."
 }

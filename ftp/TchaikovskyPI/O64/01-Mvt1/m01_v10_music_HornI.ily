@@ -19,7 +19,7 @@ musicHornIMvtI = \relative c {
 	
 	
 	
-	R1\fermata \mark \default
+	\ni R1\fermata \no \mark \default
 % Bars 21 to 25
 	R1*16
 % Bars 26 to 30
@@ -28,17 +28,21 @@ musicHornIMvtI = \relative c {
 	
 % Bars 36 to 40
 	
-	R1\fermata \bar "||" \time 6/8
-	R2.*19
+	\ni R1\fermata \no \bar "||" \time 6/8
+	R2.*15
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #7 R
 % Bars 56 to 60
-	\mark \default
-	R2.
+	\mmrPos #7 R \mark \default
+	\mmrPos #4 R2. \no
 	fis'8\p r r g r r
 	fis r r g r r
 	fis r r b r r
@@ -109,14 +113,14 @@ musicHornIMvtI = \relative c {
 	g4 e8 f!4 f8 \mark \default
 	fis4 fis8 f8 r r
 % Bars 116 to 120
-	R2.*16
+	R2.*15
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	
-	r4 r8 r r a,\p(
+	\ni \mmrPos #-4 R2. \no
+	\voiceTwo r4 r8 r4 \oneVoice a,8\p(
 	gis4.)\< cis4 cis8\!
 	cis4.\mf\> d\!
 	\after 2.*5/6 \! cis2.\p\<
@@ -329,7 +333,7 @@ musicHornIMvtI = \relative c {
 	g2.\p
 	g
 	R \mark \default
-	R2.*17
+	R2.*16
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -337,7 +341,7 @@ musicHornIMvtI = \relative c {
 % Bars 331 to 335
 	
 % Bars 336 to 340
-	\mark \default
+	\ni \mmrPos #4 R2. \no \mark \default
 	fis8\p r r g r r
 	fis r r g r r
 	fis r r b r r
@@ -381,7 +385,7 @@ musicHornIMvtI = \relative c {
 % Bars 371 to 375
 	a4 a8 bes4 bes8
 	b!4 b8 bes r r
-	R2.*16
+	R2.*15
 % Bars 376 to 380
 	
 % Bars 381 to 385
@@ -389,8 +393,8 @@ musicHornIMvtI = \relative c {
 % Bars 386 to 390
 	
 	
-	
-	r4 r8 r r b\p(
+	\ni \mmrPos #-4 R2. \no
+	\voiceTwo r4 r8 r4 \oneVoice b8\p(
 	bes4.)\< ees4 ees8\!
 % Bars 391 to 395
 	ees4.\mf\> e\!
@@ -531,7 +535,7 @@ musicHornIMvtI = \relative c {
 	fis r r fis\f r r
 	e r r e r r
 	d! r r fis r r
-	e r r e r r \mark \default
+	e r r e r r \mark \markAaBox
 	d! r r fis,\mf r r
 % Bars 516 to 520
 	b_\dimmarkup r r fis r r
@@ -541,7 +545,7 @@ musicHornIMvtI = \relative c {
 	e r r e r r
 % Bars 521 to 525
 	d! r r fis r r
-	e r r e r r \mark \default
+	e r r e r r \mark \markBbBox
 	d! r r r4 r8
 	R2.*18
 % Bars 526 to 530
@@ -552,5 +556,5 @@ musicHornIMvtI = \relative c {
 	
 % Bars 541 and 542
 	
-	R2.\fermata \bar "|."
+	\ni R2.\fermata \bar "|."
 }

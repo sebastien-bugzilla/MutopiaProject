@@ -58,9 +58,13 @@ musicHornIIIMvtIII = \relative c {
 	
 	
 	\mark \default
-	R2.*6
+	R2.*2
 % Bars 46 to 50
 	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 51 to 55
 	e2.\mf
 	fis4->~ fis8 r r4
@@ -69,13 +73,17 @@ musicHornIIIMvtIII = \relative c {
 	e2.\mf
 % Bars 56 to 60
 	fis4->~ fis8 r r4
-	R2.*15
+	R2.*11
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
-% Bars 71 to 75
 	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-7 R
+% Bars 71 to 75
+	\mmrPos #4 R \no
 	r4 b,8\f r r4
 	R2.*8
 % Bars 76 to 80
@@ -85,13 +93,13 @@ musicHornIIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 81 to 85
-	R2.*9
+	R2.*7
 % Bars 86 to 90
 	
 	
-	
-	
-	r4 r fis->\p~
+	\ni \mmrPos #-7 R2.
+	\mmrPos #-6 R \no
+	\voiceOne r4 r \oneVoice fis!->\p~
 % Bars 91 to 95
 	fis8 r r4 r
 	R2.*2
@@ -105,7 +113,7 @@ musicHornIIIMvtIII = \relative c {
 	
 	\mark \default
 	R2.
-	r4 r b(->\mp
+	\voiceTwo r4 r \oneVoice b(->\mp
 % Bars 106 to 110
 	bes8) r r4 r
 	r r b!(\mp->
@@ -126,7 +134,7 @@ musicHornIIIMvtIII = \relative c {
 	r r b->~
 % Bars 121 to 125
 	b8 r r4 r
-	r r b(\mf->
+	r r bis(\mf->
 	cis8) r r4 r
 	r r bis(->
 	cis8) r r4 r
@@ -138,12 +146,12 @@ musicHornIIIMvtIII = \relative c {
 	
 % Bars 141 to 145
 	\mark \default
-	R2.*11
+	R2.*9
 % Bars 146 to 150
 	
 % Bars 151 to 155
-	
-	\mark #11
+	\ni \mmrPos #-7 R2.
+	\mmrPos #-6 R \no \mark #11
 	r4 gis\p gis
 	r gis gis
 	R2.*2
@@ -178,9 +186,13 @@ musicHornIIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 186 to 190
-	R2.*6
-% Bars 191 to 195
+	R2.*4
 	
+	
+	
+	\ni \mmrPos #6 R2.
+% Bars 191 to 195
+	\mmrPos #4 R \no
 	e2.\mf
 	fis4->~ fis8 r r4
 	R2.*2
@@ -188,18 +200,22 @@ musicHornIIIMvtIII = \relative c {
 % Bars 196 to 200
 	e2.\mf
 	fis4->~ fis8 r r4
-	R2.*21
+	R2.*16
 % Bars 201 to 205
 	
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 216 to 220
-	
-	
-	\mark \default
-	r4 c\f c
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\voiceTwo \mmrPos #-4 R \no \mark \default
+	r4 \oneVoice c\f c
 	c b_\pesante b
 % Bars 221 to 225
 	c b_\crescmarkup b
@@ -237,11 +253,11 @@ musicHornIIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 256 to 260
-	R2.*8
+	R2.*6
 % Bars 261 to 265
 	
-	
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R \no
 	r4 c\ff b
 	c b c
 % Bar 266

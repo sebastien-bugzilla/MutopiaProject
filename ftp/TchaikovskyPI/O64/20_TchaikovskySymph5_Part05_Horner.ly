@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.1"
 \include "./00-Common/TchaikovskySymph5_Header.ily"
 \include "./00-Common/TchaikovskySymph5_PaperParts.ily"
 \include "./00-Common/TchaikovskySymph5_timeMvt.ily"
@@ -21,6 +22,7 @@
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_PartHorner.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v10_music_HornI.ily"
 \include "./01-Mvt1/m01_v11_music_HornII.ily"
 \include "./01-Mvt1/m01_v12_music_HornIII.ily"
@@ -40,22 +42,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceHornIMvtI" { \cueVoiceHornIMvtI }
-\addQuote "cueVoiceHornIMvtII" { \cueVoiceHornIMvtII }
-\addQuote "cueVoiceHornIMvtIII" { \cueVoiceHornIMvtIII }
-\addQuote "cueVoiceHornIMvtIV" { \cueVoiceHornIMvtIV }
-\addQuote "cueVoiceHornIIMvtI" { \cueVoiceHornIIMvtI }
-\addQuote "cueVoiceHornIIMvtII" { \cueVoiceHornIIMvtII }
-\addQuote "cueVoiceHornIIMvtIII" { \cueVoiceHornIIMvtIII }
-\addQuote "cueVoiceHornIIMvtIV" { \cueVoiceHornIIMvtIV }
-\addQuote "cueVoiceHornIIIMvtI" { \cueVoiceHornIIIMvtI }
-\addQuote "cueVoiceHornIIIMvtII" { \cueVoiceHornIIIMvtII }
-\addQuote "cueVoiceHornIIIMvtIII" { \cueVoiceHornIIIMvtIII }
-\addQuote "cueVoiceHornIIIMvtIV" { \cueVoiceHornIIIMvtIV }
-\addQuote "cueVoiceHornIVMvtI" { \cueVoiceHornIVMvtI }
-\addQuote "cueVoiceHornIVMvtII" { \cueVoiceHornIVMvtII }
-\addQuote "cueVoiceHornIVMvtIII" { \cueVoiceHornIVMvtIII }
-\addQuote "cueVoiceHornIVMvtIV" { \cueVoiceHornIVMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -73,21 +59,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIMvtI
+%			}
 			\new Voice {
-				\formatHornIMvtI
+				\keepWithTag #'(hornI) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameHornIMvtI \musicHornIMvtI
+				\InCueContext \cueVoiceHornIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameHornIMvtI \musicHornIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -95,21 +83,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIMvtII
+%			}
 			\new Voice {
-				\formatHornIMvtII
+				\keepWithTag #'(hornI) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameHornIMvtII \musicHornIMvtII
+				\InCueContext \cueVoiceHornIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameHornIMvtII \musicHornIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -117,21 +107,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIMvtIII
+%			}
 			\new Voice {
-				\formatHornIMvtIII
+				\keepWithTag #'(hornI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameHornIMvtIII \musicHornIMvtIII
+				\InCueContext \cueVoiceHornIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameHornIMvtIII \musicHornIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -139,21 +131,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIMvtIV
+%			}
 			\new Voice {
-				\formatHornIMvtIV
+				\keepWithTag #'(hornI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameHornIMvtIV \musicHornIMvtIV
+				\InCueContext \cueVoiceHornIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameHornIMvtIV \musicHornIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
@@ -161,21 +155,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIIMvtI
+%			}
 			\new Voice {
-				\formatHornIIMvtI
+				\keepWithTag #'(hornII) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameHornIIMvtI \musicHornIIMvtI
+				\InCueContext \cueVoiceHornIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameHornIIMvtI \musicHornIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -183,21 +179,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIIMvtII
+%			}
 			\new Voice {
-				\formatHornIIMvtII
+				\keepWithTag #'(hornII) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameHornIIMvtII \musicHornIIMvtII
+				\InCueContext \cueVoiceHornIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameHornIIMvtII \musicHornIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -205,21 +203,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIIMvtIII
+%			}
 			\new Voice {
-				\formatHornIIMvtIII
+				\keepWithTag #'(hornII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameHornIIMvtIII \musicHornIIMvtIII
+				\InCueContext \cueVoiceHornIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameHornIIMvtIII \musicHornIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -227,21 +227,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIIMvtIV
+%			}
 			\new Voice {
-				\formatHornIIMvtIV
+				\keepWithTag #'(hornII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameHornIIMvtIV \musicHornIIMvtIV
+				\InCueContext \cueVoiceHornIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameHornIIMvtIV \musicHornIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
@@ -249,21 +251,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIIIMvtI
+%			}
 			\new Voice {
-				\formatHornIIIMvtI
+				\keepWithTag #'(hornIII) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameHornIIIMvtI \musicHornIIIMvtI
+				\InCueContext \cueVoiceHornIIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameHornIIIMvtI \musicHornIIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -271,21 +275,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIIIMvtII
+%			}
 			\new Voice {
-				\formatHornIIIMvtII
+				\keepWithTag #'(hornIII) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameHornIIIMvtII \musicHornIIIMvtII
+				\InCueContext \cueVoiceHornIIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameHornIIIMvtII \musicHornIIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -293,21 +299,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIIIMvtIII
+%			}
 			\new Voice {
-				\formatHornIIIMvtIII
+				\keepWithTag #'(hornIII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameHornIIIMvtIII \musicHornIIIMvtIII
+				\InCueContext \cueVoiceHornIIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameHornIIIMvtIII \musicHornIIIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -315,21 +323,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIIIMvtIV
+%			}
 			\new Voice {
-				\formatHornIIIMvtIV
+				\keepWithTag #'(hornIII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameHornIIIMvtIV \musicHornIIIMvtIV
+				\InCueContext \cueVoiceHornIIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameHornIIIMvtIV \musicHornIIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
@@ -337,21 +347,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIVMvtI
+%			}
 			\new Voice {
-				\formatHornIVMvtI
+				\keepWithTag #'(hornIV) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameHornIVMvtI \musicHornIVMvtI
+				\InCueContext \cueVoiceHornIVMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameHornIVMvtI \musicHornIVMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -359,21 +371,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIVMvtII
+%			}
 			\new Voice {
-				\formatHornIVMvtII
+				\keepWithTag #'(hornIV) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameHornIVMvtII \musicHornIVMvtII
+				\InCueContext \cueVoiceHornIVMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameHornIVMvtII \musicHornIVMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -381,21 +395,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIVMvtIII
+%			}
 			\new Voice {
-				\formatHornIVMvtIII
+				\keepWithTag #'(hornIV) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameHornIVMvtIII \musicHornIVMvtIII
+				\InCueContext \cueVoiceHornIVMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameHornIVMvtIII \musicHornIVMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -403,21 +419,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatHornIVMvtIV
+%			}
 			\new Voice {
-				\formatHornIVMvtIV
+				\keepWithTag #'(hornIV) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameHornIVMvtIV \musicHornIVMvtIV
+				\InCueContext \cueVoiceHornIVMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameHornIVMvtIV \musicHornIVMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {

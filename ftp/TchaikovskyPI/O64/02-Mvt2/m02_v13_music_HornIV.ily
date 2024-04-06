@@ -19,10 +19,14 @@ musicHornIVMvtII = \relative c {
 	
 	\mark \default
 % Bars 16 to 20
-	R1.*17
+	R1.*12
 % Bars 21 to 25
 	
 % Bars 26 to 30
+	
+	
+	\ni \mmrPos #-4 R1. \no
+	R1.*4
 	
 % Bars 31 to 35
 	
@@ -32,10 +36,10 @@ musicHornIVMvtII = \relative c {
 	R1.*2
 % Bars 36 to 40
 	
-	R1.*2
-	
-	R1.*2
-	
+	R1.
+	\ni \mmrPos #4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 41 to 45
 	r2. dis'4.\f r4 r8
 	r2. dis
@@ -67,12 +71,12 @@ musicHornIVMvtII = \relative c {
 	R1.*2
 	\bar "||" 
 % Bars 66 to 70
-	\time 4/4 R1*9
+	\time 4/4 R1*7
 % Bars 71 to 75
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-6 R1
+	\mmrPos #-6 R \no \mark \default
 	b8\mf b4 b8~ b b4 b8
 % Bars 76 to 80
 	r2 gis'8 gis( b,4)(
@@ -121,10 +125,10 @@ musicHornIVMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.*3
+	R1.*2
 	
-	
-	r4 r8 cis4.->\mf~ \after 4.*2/3 \! cis\> r4 r8
+	\ni \mmrPos #4 R1. \no
+	\voiceTwo r4 r8 \oneVoice cis4.->\mf~ \after 4.*2/3 \! cis\> r4 r8
 	ais4.\p~ ais8 r r b4.->~ b8 r r
 % Bars 121 to 125
 	gis4.\p~ gis8 r r a!4.->~ a8 r r
@@ -206,5 +210,5 @@ musicHornIVMvtII = \relative c {
 	a4. r4 r8 a4. r4 r8
 	a4.~ a8 r r r2.
 	R1.
-	R\fermata \bar "|."
+	\ni R\fermata \no \bar "|."
 }

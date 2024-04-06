@@ -52,10 +52,12 @@ tempiMvtI = {
 	\tempo "Poco meno animato" % bar 385
 	s2.*3
 	\tempo "string." % bar 388
-	s2.*21
+	s2.
+	\tempo "Tempo I" % bar 389
+	s2.*20
 	\tempo "Un pochettino più mosso" % bar 409
 	s2.*18
-	\tempo "Molto più tranquillo como sopra" % bar 427
+	\tempo "Molto più tranquillo come sopra" % bar 427
 	s2.*18
 	\tempo "stringendo" % bar 445
 	s2.*6
@@ -475,7 +477,17 @@ tempiPartMvtI = {
 		violoncell kontrabass) {
 		\tempo "string."
 	}
-	s2.*21
+	s2.
+	%%%%%%%%%%%%%%%%%%%%%%
+	% bar 389
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(floteI floteII floteIII oboeI oboeII klarinetteI klarinetteII 
+		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
+		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
+		violoncell kontrabass) {
+		\tempo "Tempo I"
+	}
+	s2.*20
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 409
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -493,7 +505,7 @@ tempiPartMvtI = {
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
-		\tempo "Molto più tranquillo como sopra"
+		\tempo "Molto più tranquillo come sopra"
 	}
 	s2.*18
 	%%%%%%%%%%%%%%%%%%%%%%
