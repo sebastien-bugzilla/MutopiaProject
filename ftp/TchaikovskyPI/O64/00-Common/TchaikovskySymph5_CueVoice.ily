@@ -2494,16 +2494,190 @@ cueVoiceTubaMvtIV = \relative c {
 %#                   C U E   V O I C E   F O R   P A U K E N                   #
 %###############################################################################
 cueVoicePaukenMvtI = \relative c {
-	
+	s1*37 s2.*20
+	% bar 58 - 61
+	\cueClef treble e''8-.[^\markup {Viol.I} r16 e e8](~ e fis-.) g-.
+	a( g) fis( e4) c8(
+	g'8-.)[ r16 g g8]~ g8[ r16 fis fis8]~
+	fis8[ r16 e e8]~ e4 c8
+	s2.*4
+	% bar 66 - 67
+	d,8\noBeam^\markup {Fl.} d'16( e fis g a8)\noBeam a,16(^\markup {Ob.} b c d
+	e8)\noBeam fis,16(^\markup {Fl.} g a b c8) r r \cueClefUnset
+	s2.*102
+	% bar 170 - 171
+	\cueClef treble r8^\markup {Hlzbl.} a( b) cis4( d8)
+	r a( b) cis4.
+	s2.*10
+	% bar 182 - 185
+	r8^\markup {\column {\lower #3 "Fl." \lower #1.5 "Ob.I" "Klar."}} a8( b) cis4( d8)
+	r a( b) cis4.
+	d4 d8~ d fis4
+	b, bis8~ bis cis4 \cueClefUnset
+	s2.*65
+	% bar 251 - 253
+	\cueClef treble a2.^\markup {Ob.I}
+	d
+	cis \cueClefUnset
+	s2.*30
+	% bar 284
+	\cueClef treble d8[^\markup {Fl.} r16 d d8](~ d e-.) f-. \cueClefUnset
+	s2.*52
+	% bar 337 - 340
+	\cueClef treble e8-.[^\markup {Viol.I} r16 e e8](~ e fis-.) g-.
+	a( g) fis( e4) c8(
+	g'8[) r16 g g8]~ g8. fis16 fis8~
+	fis8. e16 e8~ e4 c8\laissezVibrer
+	s2.*4
+	% bar 345 - 346
+	d,8\noBeam^\markup {Fl.} d'16( e fis g a8)\noBeam a,16(^\markup {Ob.} b c d
+	e8)\noBeam fis,16(^\markup {Fl.} g a b c8)\noBeam r r \cueClefUnset
+	s2.*80
+	% bar 427 - 428
+	\cueClef treble r8^\markup {Hlzbl.} b8( cis) dis4( e8)
+	r b( cis) dis4.
+	s2.*10
+	% bar 439 - 442
+	r8 b(^\markup {Fl. Ob. Klar.} cis) dis4( e8)
+	r b( cis) dis4.
+	e4 e8~ e gis4
+	cis, cisis8~ cisis dis4 \cueClefUnset
+	s2.*39
+	% bar 482 - 484
+	\cueClef treble r8 a-.^\markup {Viol.I} b-. c( dis e
+	g) r r e( fis g
+	a) r r fis( g a) \cueClefUnset
 }
 cueVoicePaukenMvtII = \relative c {
-	
+	s1.*15
+	% bar 16
+	<>_\markup {(Klar.)}
+	s1.*8
+	% bar 24
+	<>_\markup {(Ob.)}
+	s1.*28
+	% bar 52 - 55
+	e2.^\markup {Pos.III} d
+	cis c
+	b4. a gis g
+	fis fis' eis, eis'
+	s1.*10 s1*25
+	% bar 91 - 94
+	\cueClef treble gis'4.^\markup {Ob.I} dis'8( fis-> e) dis-- cis--
+	b4->( \tuplet 9/8 4 {a32 b a b a b a b a} gis2)
+	fis4->(~ fis16 gis a cis) gis2
+	fis4(->~ fis16 gis a cis) gis2 \cueClefUnset
+	s1*13 s1.*30
+	% bar 138 - 141
+	fis,4.~^\markup {\column {\lower #1.5 "Kb." "Vcll."}} fis8 r r f4.~ f8 r r
+	e4.~ e8 r r a,4.~ a8 a b
+	cis dis e fis g bes b!\noBeam \cueClef treble dis^\markup {Viol.I} e g gis a
+	ais b cis d dis e fis g a! ais b cis \cueClefUnset
 }
 cueVoicePaukenMvtIII = \relative c {
-	
+	s2.*55
+	% bar 56 - 59
+	e4~^\markup {Fag.I} e8 b'( d cis)
+	ais4.-> b8( d cis)
+	ais4.-> b8( d cis)
+	ais4.-> b8( d cis)
+	s2.*12
+	% bar 72 - 76
+	\cueClef treble cis'4^\markup {Viol.I} r fis16-. gis-. fis-. gis-. 
+	a-. gis-. fis-. e-. d-. e-. d-. e-. fis-. e-. d-. cis-. 
+	b-. cis-. b-. cis-. d-. cis-. b-. a-. gis-. a-. gis-. a-. 
+	b-. a-. gis-. fis-. eis-. fis-. gis-. a-. b-. cis-. d-. b-. 
+	\voiceOne cis8(-> fis,) \oneVoice \cueClefUnset s2
+	s2.*49
+	% bar 126 - 130
+	\cueClef treble r4 r^\markup {Viol.I} fis'16-. gis-. fis-. gis-. 
+	a-. gis-. fis-. e-. d-. e-. d-. e-. fis-. e-. d-. cis-. 
+	b-. cis-. b-. cis-. d-. cis-. b-. a-. gis-. a-. gis-. a-. 
+	b-. a-. gis-. fis-. eis-. fis-. gis-. a-. b-. c-. d-. c-. 
+	\voiceOne cis8(-> fis,) \oneVoice \cueClefUnset s2
+	s2.*83
+	% bar 214 - 219
+	\cueClef treble cis'4.^\markup {Viol.} d8( cis e
+	d-.) r b2->
+	cis4. d8( cis e)
+	d2.
+	dis4. e8( dis fis
+	\voiceOne e) r \oneVoice \cueClefUnset s2
+	s2.*42
+	% bar 262 - 264
+	\cueClef treble e,4^\markup {Viol.I} d-> e
+	d-> e d->
+	\once \voiceTwo e \cueClefUnset s2
 }
 cueVoicePaukenMvtIV = \relative c {
-	
+	s1*38
+	% bar 39 - 44
+	\voiceOne \cueClef treble b''4.\f^\markup {Trpt.I} b16 b b4. b16 b
+	b8 r b2.
+	b4. b16 b b4. b16 b 
+	b8 r b2.
+	c2 b
+	c b \oneVoice \cueClefUnset
+	s1*53
+	% bar 98 - 99
+	\voiceOne \cueClef treble r4^\markup {Viol.} cis( b cis)
+	fis,2( gis)
+	s1*4
+	% bar 104 - 105
+	a4( ais cis b)
+	fis'4.(\sf e8) ais,4.( b8) \oneVoice \cueClefUnset
+	s1*62
+	% bar 168 - 171
+	\cueClef treble b'2^\markup {Ob.} a
+	cis b
+	d b
+	g d \cueClefUnset
+	s1*55
+	% bar 227 - 229
+	\cueClef treble bes4^\markup {Fl.} g' fis g
+	cis, bes' a bes
+	f des' c! des \cueClefUnset
+	s1*60
+	% bar 290 - 295
+	r2^\markup {Fag.I} c,,
+	c b
+	b1->\((
+	a)~
+	a~
+	a\)
+	s1*44
+	% bar 340 - 341
+	\voiceOne \cueClef treble r4^\markup {Viol.} cis'( b cis)
+	fis,2( gis)
+	s1*4
+	% bar 346 - 347
+	a4( ais cis b)
+	fis'4.(\sf e8) ais,4.( b8) \cueClefUnset \oneVoice 
+	s1*73
+	% bar 421 - 424
+	\voiceTwo \cueClef treble b2^\markup {Hr.I III} fis
+	b e,
+	a e
+	e1 \cueClefUnset \oneVoice 
+	s1*23
+	% bar 448 - 451
+	\voiceTwo \cueClef treble <b b'>2.^\markup {Trpt.} \tuplet 3/2 4 {q8 q q}
+	q2. \tuplet 3/2 4 {q8 q q}
+	q4 q2 q4~
+	\tuplet 3/2 2 {q q q  q q q} \cueClefUnset \oneVoice 
+	s1*34
+	% bar 486 - 489
+	\cueClef treble dis''4^\markup {Fl.} cis^\markup {Viol.} b b8. ais16
+	gis2. e'4
+	dis cis b dis8. cis16
+	b8 r r4 r16 cis,( dis e fis gis a ais) \cueClefUnset
+	s1*28
+	% bar 518 - 522
+	\voiceOne \cueClef treble c,4^\markup {Trpt.} d c e
+	c d c f
+	c d c e
+	c d c f
+	e e r c \oneVoice \cueClefUnset
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #

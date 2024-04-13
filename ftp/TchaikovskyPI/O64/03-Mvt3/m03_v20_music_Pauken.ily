@@ -40,17 +40,25 @@ musicPaukenMvtIII = \relative c {
 	
 	
 	\mark \default
-	R2.*21
+	R2.
 % Bars 56 to 60
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*12
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-6 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R \no
 % Bars 76 to 80
-	r4 r cis8-.\p fis,-.
+	\once \voiceTwo r4 r cis8-.\p fis,-.
 	R2.*3
 	
 	
@@ -83,15 +91,15 @@ musicPaukenMvtIII = \relative c {
 % Bars 116 to 120
 	
 	\mark \default
-	R2.*12
+	R2.*8
 % Bars 121 to 125
 	
 % Bars 126 to 130
-	
-	
-	
-	
-	r4 r cis'8-.\mf fis,-.
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R \no
+	\once \voiceTwo r4 r cis'8-.\mf fis,-.
 % Bars 131 to 135
 	R2.*3
 	
@@ -140,18 +148,22 @@ musicPaukenMvtIII = \relative c {
 	
 	\mark \default
 % Bars 196 to 200
-	R2.*23
+	R2.*18
 % Bars 201 to 205
 	
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
+	
+	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 216 to 220
-	
-	
-	\mark \default
-	r4 c'\mf c
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \mark \default
+	\once \voiceTwo r4 c'!\mf c
 	c c c
 % Bars 221 to 225
 	c c_\crescmarkup c
@@ -183,12 +195,12 @@ musicPaukenMvtIII = \relative c {
 	
 	\mark \default
 % Bars 256 to 260
-	R2.*8
+	R2.*6
 % Bars 261 to 265
 	
-	
-	
-	r4 d'\ff a
+	\ni \mmrPos #4 R2. 
+	\mmrPos #4 R \no
+	\once \voiceOne r4 d'\ff a
 	d a d
 % Bar 266
 	a r r\fermata \bar "|."

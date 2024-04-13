@@ -19,7 +19,7 @@ musicPaukenMvtI = \relative c {
 	
 	
 	
-	R1\fermata \mark \default
+	\ni R1\fermata \no \mark \default
 % Bars 21 to 25
 	R1*16 
 % Bars 26 to 30
@@ -28,7 +28,7 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 36 to 40
 	
-	R1\fermata \bar "||" \time 6/8
+	\ni R1\fermata \no \bar "||" \time 6/8
 	R2.*19
 % Bars 41 to 45
 	
@@ -38,16 +38,19 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 56 to 60
 	\mark \default
-	R2.*9
+	R2.
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 61 to 65
-	
-	
+	\mmrPos #-4 R \no
+	R2.*4
 	
 	
 	\mark \default
 % Bars 66 to 70
-	R2.*2
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	g8\f r r r4 r8
 	R2.*3
 % Bars 71 to 75
@@ -117,7 +120,7 @@ musicPaukenMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*42
+	R2.*30
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -130,13 +133,21 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 166 to 170
 	
-% Bars 171 to 175
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 171 to 175
+	\mmrPos #-4 R \no
+	R2.*10
 % Bars 176 to 180
 	
 % Bars 181 to 185
 	\mark \default
-	R2.*4
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-7 R \no
 % Bars 186 to 190
 	d8\f r r r4 r8
 	R2.*7
@@ -182,15 +193,15 @@ musicPaukenMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*14
+	R2.*11
 % Bars 241 to 245
 	
 % Bars 246 to 250
 	
 % Bars 251 to 255
-	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	d2.:32\pp\< \mark \default
 	a8[\ff r16 a a8] r4 r8
 % Bars 256 to 260
@@ -209,7 +220,7 @@ musicPaukenMvtI = \relative c {
 	d8[ r16 d d8] r4^\mutaaingdinbeind r8
 	R2.*2
 	\mark \default
-	R2.*16
+	R2.*15
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -218,7 +229,7 @@ musicPaukenMvtI = \relative c {
 	
 	
 	
-	
+	\ni \mmrPos #-6 R2. \no
 	d8\ff r r r4 r8
 % Bars 286 to 290
 	R2.
@@ -268,11 +279,18 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 336 to 340
 	\mark \default
-	R2.*10
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 341 to 345
+	R2.*4
 	
+	
+	
+	\ni \mmrPos #-4 R2. 
 % Bars 346 to 350
-	
+	\mmrPos #-4 R \no
 	g8\f r r r4 r8
 	R2.*3
 	
@@ -305,7 +323,7 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 396 to 400
 	\mark \default
-	R2.*42
+	R2.*30
 % Bars 401 to 405
 	
 % Bars 406 to 410
@@ -318,16 +336,20 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 426 to 430
 	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \no
+	R2.*10
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
 	
 	\mark \default
-	R2.*4
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 441 to 445
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
 	e'8\f r r r4 r8
 	R2.*7
 % Bars 446 to 450
@@ -357,14 +379,14 @@ musicPaukenMvtI = \relative c {
 	e r r r4 r8
 	e r r r4 r8 \mark \default
 % Bars 471 to 475
-	R2.*14
+	R2.*11
 % Bars 476 to 480
 	
 % Bars 481 to 485
 	
-	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g,8\f r r g r r
 % Bars 486 to 490
 	g r r g r r \mark \default
@@ -400,7 +422,7 @@ musicPaukenMvtI = \relative c {
 	e r r e\f r r
 	e r r b r r 
 	e r r e r r
-	e r r b r r \mark \default
+	e r r b r r \mark \markAaBox
 	e r r r4 r8
 % Bars 516 to 520
 	r4 r8 b\mp r r
@@ -410,7 +432,7 @@ musicPaukenMvtI = \relative c {
 	r4 r8 b\pp r r
 % Bars 521 to 525
 	e r r r4 r8
-	r4 r8 b r r \mark \default
+	r4 r8 b r r \mark \markBbBox
 	e r r r4 r8
 	r4 r8 b\pp r r
 	e r r r4 r8

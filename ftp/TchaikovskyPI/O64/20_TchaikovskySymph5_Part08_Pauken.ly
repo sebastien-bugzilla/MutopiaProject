@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.1"
 \include "./00-Common/TchaikovskySymph5_Header.ily"
 \include "./00-Common/TchaikovskySymph5_PaperParts.ily"
 \include "./00-Common/TchaikovskySymph5_timeMvt.ily"
@@ -21,6 +22,7 @@
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_PartPauken.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v20_music_Pauken.ily"
 \include "./02-Mvt2/m02_v20_music_Pauken.ily"
 \include "./03-Mvt3/m03_v20_music_Pauken.ily"
@@ -28,10 +30,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoicePaukenMvtI" { \cueVoicePaukenMvtI }
-\addQuote "cueVoicePaukenMvtII" { \cueVoicePaukenMvtII }
-\addQuote "cueVoicePaukenMvtIII" { \cueVoicePaukenMvtIII }
-\addQuote "cueVoicePaukenMvtIV" { \cueVoicePaukenMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -49,21 +47,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPaukenMvtI
+%			}
 			\new Voice {
-				\formatPaukenMvtI
+				\keepWithTag #'(pauken) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\namePaukenMvtI \musicPaukenMvtI
+				\InCueContext \cueVoicePaukenMvtI
+			}
+			\new Voice {
+				\timeMvtI \namePaukenMvtI \musicPaukenMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -71,21 +71,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPaukenMvtII
+%			}
 			\new Voice {
-				\formatPaukenMvtII
+				\keepWithTag #'(pauken) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\namePaukenMvtII \musicPaukenMvtII
+				\InCueContext \cueVoicePaukenMvtII
+			}
+			\new Voice {
+				\timeMvtII \namePaukenMvtII \musicPaukenMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -93,21 +95,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPaukenMvtIII
+%			}
 			\new Voice {
-				\formatPaukenMvtIII
+				\keepWithTag #'(pauken) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\namePaukenMvtIII \musicPaukenMvtIII
+				\InCueContext \cueVoicePaukenMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \namePaukenMvtIII \musicPaukenMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -115,21 +119,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPaukenMvtIV
+%			}
 			\new Voice {
-				\formatPaukenMvtIV
+				\keepWithTag #'(pauken) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\namePaukenMvtIV \musicPaukenMvtIV
+				\InCueContext \cueVoicePaukenMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \namePaukenMvtIV \musicPaukenMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {

@@ -38,7 +38,10 @@ musicPaukenMvtII = \relative c {
 	
 % Bars 51 to 55
 	\mark \default
-	R1.*4
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 56 to 60
 	fis,4.:32\fff\> fis8\! r^\mutafising r r2.
 	R1.*9
@@ -69,10 +72,10 @@ musicPaukenMvtII = \relative c {
 	
 	\mark \default
 % Bars 91 to 95
-	R1*4
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	<< gis1:32  {s8\f\> s s s\p\< s s s s\!}>>
 % Bars 96 to 100
 	\after 1*7/8 \! gis1:32\mf\<
@@ -110,11 +113,11 @@ musicPaukenMvtII = \relative c {
 % Bars 136 to 140
 	
 	\mark \default
-	R1.*4
-	
-	
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-6 R
+	\mmrPos #-4 R
 % Bars 141 to 145
-	
+	\mmrPos #-4 R \no
 	d'8\ff r r r4 r8 r2.
 	R1.*3
 	
@@ -157,5 +160,5 @@ musicPaukenMvtII = \relative c {
 	
 	
 	
-	R1.\fermata \bar "|."
+	\ni R1.\fermata \no \bar "|."
 }
