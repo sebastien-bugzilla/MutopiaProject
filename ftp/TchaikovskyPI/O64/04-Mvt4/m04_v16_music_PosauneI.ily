@@ -20,10 +20,10 @@ musicPosauneIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 16 to 20
-	R1*4
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g''2\sfp g
 % Bars 21 to 25
 	g\pp g
@@ -34,9 +34,13 @@ musicPosauneIMvtIV = \relative c {
 	
 % Bars 31 to 35
 	\mark \default
-	R1*9
+	R1*7
 % Bars 36 to 40
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 % Bars 41 to 45
 	b4.\f b16 b b4. b16 b
 	b8 r b2.
@@ -58,12 +62,12 @@ musicPosauneIMvtIV = \relative c {
 % Bars 56 to 60
 	
 	\bar "||"
-	\key e \minor \time 2/2 R1*9
+	\key e \minor \time 2/2 R1*8
 % Bars 61 to 65
 	
 % Bars 66 to 70
-	
-	r2 r4 a'8\f r
+	\ni \mmrPos #-4 R1 \no
+	\voiceTwo r2 r4 \oneVoice a'8\f r
 	g r r4 r2
 	r2 r4 a8 r \mark \default
 	g r r4 r2
@@ -90,9 +94,13 @@ musicPosauneIMvtIV = \relative c {
 % Bars 96 to 100
 	
 	\mark \default
-	R1*8
+	R1*5
 % Bars 101 to 105
 	
+	
+	\ni \mmrPos #-7 R1
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 % Bars 106 to 110
 	cis8\mf r r4 r2
 	R1*7
@@ -141,8 +149,8 @@ musicPosauneIMvtIV = \relative c {
 % Bars 166 to 170
 	
 % Bars 171 to 175
-	R1*2
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	f2.\ff a8 a
 	g8 r r4 g8 r r4
 	R1
@@ -231,11 +239,19 @@ musicPosauneIMvtIV = \relative c {
 	
 % Bars 281 to 285
 	\mark \default
-	R1*14
+	R1*8
 % Bars 286 to 290
 	
-% Bars 291 to 295
 	
+	
+	
+	\ni \mmrPos #-4 R1
+% Bars 291 to 295
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 296 to 300
 	e4\ff r r2
 	R1*7
@@ -278,12 +294,16 @@ musicPosauneIMvtIV = \relative c {
 	
 	
 	\mark \default
-	R1*8
+	\ni \mmrPos #-6 R1
 % Bars 341 to 345
+	\mmrPos #-7 R \no
+	R1*4
+	
+	
 	
 % Bars 346 to 350
-	
-	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-4 R \no
 	cis8\mf r r4 r2
 	R1*7
 % Bars 351 to 355
@@ -347,9 +367,12 @@ musicPosauneIMvtIV = \relative c {
 	R
 % Bars 416 to 420
 	R
-	R1*4
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 421 to 425
-	r2 dis4\f fis
+	\once \voiceTwo r2 dis4\f fis
 	r2 e4 gis
 	r2 c,4 e
 	r2 a,4 c
@@ -368,13 +391,17 @@ musicPosauneIMvtIV = \relative c {
 	dis4 e a, g
 % Bars 436 to 440
 	dis'8 r r4 r2
-	R1*15
+	R1*11
 % Bars 441 to 445
 	
 % Bars 446 to 450
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 451 to 455
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	g2\fff g~
 	g8 r r4 r2
 	g2 g~
@@ -412,7 +439,7 @@ musicPosauneIMvtIV = \relative c {
 	
 	
 	
-	\mark \default
+	\mark \markAaBox
 	e'4\fff e e e
 % Bars 491 to 495
 	e e e e
@@ -423,7 +450,7 @@ musicPosauneIMvtIV = \relative c {
 % Bars 496 to 500
 	fis e dis e
 	dis8^\marcatissimo e fis e dis4 e
-	dis8 e fis e dis4 e \mark \default
+	dis8 e fis e dis4 e \mark \markBbBox
 	dis8 gis fis e dis cis b b
 	b d cis e e fis g fis
 % Bars 501 to 505
@@ -439,7 +466,7 @@ musicPosauneIMvtIV = \relative c {
 	R1
 	e'4\fff r e r
 % Bars 511 to 515
-	e r b r \mark \default
+	e r b r \mark \markCcBox
 	b e\p d e
 	cis d b cis
 	a r r2
@@ -455,7 +482,7 @@ musicPosauneIMvtIV = \relative c {
 	e e r c
 	b b r gis
 	gis gis r cis
-	cis cis r cis \mark \default
+	cis cis r cis \mark \markDdBox
 % Bars 526 to 530
 	dis r dis2~
 	dis e~
@@ -489,7 +516,7 @@ musicPosauneIMvtIV = \relative c {
 % Bars 551 to 555
 	e r r cis r r
 	e r r cis r r
-	e r r cis r r \mark \default
+	e r r cis r r \mark \markEeBox
 	e r r r2.
 	gis4 r r r2.
 % Bars 556 to 560

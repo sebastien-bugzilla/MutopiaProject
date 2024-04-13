@@ -33,11 +33,15 @@ musicPosauneIIIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1.*7
+	\ni \mmrPos #-4 R1.
 % Bars 46 to 50
+	\mmrPos #-4 R \no
+	R1.*2
 	
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
 % Bars 51 to 55
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	e2._\pcrescpocoapoco d
 	cis c
 	b4. a gis g
@@ -75,10 +79,10 @@ musicPosauneIIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 91 to 95
-	R1*4
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-7 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R \no
 	gis1_\sfppcresc~
 % Bars 96 to 100
 	gis2 gis~
@@ -108,8 +112,8 @@ musicPosauneIIIMvtII = \relative c {
 	
 	R1.*2
 	\mark \default
-	R1.*2
-	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R \no
 % Bars 126 to 130
 	b4.\p\< a gis g\!
 	fis\mf f \tuplet 2/3 4. {e8\> e'} d\p r r
@@ -125,11 +129,11 @@ musicPosauneIIIMvtII = \relative c {
 % Bars 136 to 140
 	
 	\mark \default
-	R1.*3
-	
-	
+	\ni \mmrPos #7 R1.
+	\mmrPos #7 R
+	\mmrPos #-4 R \no
 % Bars 141 to 145
-	r2. r8 b~\ff b g4 e8
+	\once \voiceTwo r2. r8 b~\ff b g4 e8
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		d'2\ff\> cis\mf
 		b a\<
@@ -174,5 +178,5 @@ musicPosauneIIIMvtII = \relative c {
 	
 	
 	
-	R1.\fermata \bar "|."
+	\ni R1.\fermata \no \bar "|."
 }

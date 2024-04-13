@@ -19,7 +19,7 @@ musicPosauneIIIMvtI = \relative c {
 	
 	
 	
-	R1\fermata \mark \default
+	\ni R1\fermata \no \mark \default
 % Bars 21 to 25
 	R1*16
 % Bars 26 to 30
@@ -28,7 +28,7 @@ musicPosauneIIIMvtI = \relative c {
 	
 % Bars 36 to 40
 	
-	R1\fermata \bar "||" \time 6/8
+	\ni R1\fermata \no \bar "||" \time 6/8
 	R2.*19
 % Bars 41 to 45
 	
@@ -38,16 +38,16 @@ musicPosauneIIIMvtI = \relative c {
 	
 % Bars 56 to 60
 	\mark \default
-	R2.*9
+	R2.*7
 % Bars 61 to 65
 	
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \mark \default
 % Bars 66 to 70
-	R2.
-	r4 r8 r a~\p a
+	\mmrPos #4 R \no
+	\voiceOne r4 r8 r \oneVoice a~\p a
 	g r r r4 r8
 	R2.*2
 	
@@ -106,15 +106,15 @@ musicPosauneIIIMvtI = \relative c {
 	a4 a'8 g4 g8 \mark \default
 	fis4 eis8 fis r r
 % Bars 116 to 120
-	R2.*17
+	R2.*15
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	
-	
-	r4 r8 d4\pp\< cis8\!
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	\voiceTwo r4 r8 \oneVoice d4\pp\< cis8\!
 	b4.\mp\> e
 	fis8\pp r r r4 r8
 % Bars 136 to 140
@@ -141,7 +141,10 @@ musicPosauneIIIMvtI = \relative c {
 	
 % Bars 181 to 185
 	\mark \default
-	R2.*4
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R \no
 % Bars 186 to 190
 	d8\fp r r r4 r8
 	R2.
@@ -190,11 +193,11 @@ musicPosauneIIIMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*4
+	R2.
 % Bars 241 to 245
-	
-	
-	
+	\ni \mmrPos #6 R2.
+	\mmrPos #4 R
+	\mmrPos #-6 R \no
 	R2.
 	R
 % Bars 246 to 250
@@ -204,9 +207,9 @@ musicPosauneIIIMvtI = \relative c {
 	R
 	R
 % Bars 251 to 255
-	R2.*3
-	
-	
+	\ni \mmrPos #6 R2.
+	\mmrPos #8 R
+	\mmrPos #6 R \no
 	d2.\p\< \mark \default
 	cis8[\ff r16 cis cis8] r4 r8
 % Bars 256 to 260
@@ -236,12 +239,12 @@ musicPosauneIIIMvtI = \relative c {
 % Bars 276 to 280
 	R2.*2
 	
-	R2.*7
+	R2.*6
 % Bars 281 to 285
 	
 	
 	
-	
+	\ni \mmrPos #-7 R2. \no
 	bes4\ff bes8 bes4 bes8
 % Bars 286 to 290
 	R2.
@@ -293,11 +296,15 @@ musicPosauneIIIMvtI = \relative c {
 	
 % Bars 336 to 340
 	\mark \default
-	R2.*9
+	R2.*6
 % Bars 341 to 345
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #4 R \no
 % Bars 346 to 350
-	r4 r8 r a~\p a
+	\voiceOne r4 r8 r \oneVoice a~\p a
 	g r r r4 r8
 	R2.*2
 	
@@ -329,7 +336,7 @@ musicPosauneIIIMvtI = \relative c {
 % Bars 371 to 375
 	b4 b'8 a4 a8
 	gis4 fisis8 gis8 r r
-	R2.*17
+	R2.*15
 % Bars 376 to 380
 	
 % Bars 381 to 385
@@ -337,9 +344,9 @@ musicPosauneIIIMvtI = \relative c {
 % Bars 386 to 390
 	
 	
-	
-	
-	r4 r8 e4\p\< dis8\!
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	\voiceTwo r4 r8 \oneVoice e4\p\< dis8\!
 % Bars 391 to 395
 	cis4.\> fis
 	gis8\pp r r r4 r8
@@ -376,10 +383,11 @@ musicPosauneIIIMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*4
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 441 to 445
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
 	e8\f r r r4 r8
 	R2.
 	cis'4._\pcrescmolto c
@@ -414,14 +422,14 @@ musicPosauneIIIMvtI = \relative c {
 	b r r r4 r8
 	b r r r4 r8 \mark \default
 % Bars 471 to 475
-	R2.*14
+	R2.*11
 % Bars 476 to 480
 	
 % Bars 481 to 485
 	
-	
-	
-	
+	\ni \mmrPos #-5 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g8\f r r g r r
 % Bars 486 to 490
 	g r r g r r \mark \default
@@ -457,7 +465,7 @@ musicPosauneIIIMvtI = \relative c {
 	e r r d\f r r
 	c r r b r r
 	e r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markAaBox
 	e r r d\mf r r 
 % Bars 516 to 520
 	c_\dimmarkup r r b r r
@@ -467,7 +475,7 @@ musicPosauneIIIMvtI = \relative c {
 	c r r b r r
 % Bars 521 to 525
 	e\p r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markBbBox
 	e r r r4 r8
 	R2.*18
 % Bars 526 to 530
@@ -478,5 +486,5 @@ musicPosauneIIIMvtI = \relative c {
 	
 % Bars 541 and 542
 	
-	R2.\fermata \bar "|."
+	\ni R2.\fermata \no \bar "|."
 }

@@ -38,9 +38,9 @@ musicPosauneIIMvtII = \relative c {
 	
 % Bars 51 to 55
 	\mark \default
-	R1.*2
-	
-	r2. e4.\mf\< e
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R \no
+	\once \voiceOne r2. e4.\mf\< e
 	fis2. g\!
 % Bars 56 to 60
 	fis4.\ff\>~ fis8\! r r r2.
@@ -75,11 +75,11 @@ musicPosauneIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 91 to 95
-	R1*8
+	R1*5
 % Bars 96 to 100
-	
-	
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #6 R
+	\mmrPos #4 R \no
 	cis1\ff
 	cis8 cis~ cis2.
 % Bars 101 to 105
@@ -106,17 +106,20 @@ musicPosauneIIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1.*14
-% Bars 126 to 130
+	R1.*2
 	
+% Bars 126 to 130
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R \no
+	R1.*10
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
 	\mark \default
-	R1.*3
-	
-	
+	\ni \mmrPos #7 R1.
+	\mmrPos #7 R
+	\mmrPos #-4 R \no
 % Bars 141 to 145
 	r8 g\ff~ g fis4 e8~ e b'4 g e8
 	\timeSignature 4/4 \scaleDurations 3/2 {
@@ -163,5 +166,5 @@ musicPosauneIIMvtII = \relative c {
 	
 	
 	
-	R1.\fermata \bar "|."
+	\ni R1.\fermata \no \bar "|."
 }

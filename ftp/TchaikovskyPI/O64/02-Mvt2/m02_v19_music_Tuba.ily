@@ -38,13 +38,13 @@ musicTubaMvtII = \relative c {
 	
 % Bars 51 to 55
 	\mark \default
-	R1.*6 
-	
-	
-	
+	\ni \mmrPos #4 R1. 
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 56 to 60
-	
-	
+	\mmrPos #4 R
+	\mmrPos #6 R \no
 	b2.~\mp\> b4. bes\!
 	a8\p r r r4 r8 r2.
 	R1.
@@ -75,10 +75,10 @@ musicTubaMvtII = \relative c {
 	
 	\mark \default
 % Bars 91 to 95
-	R1*4
-	
-	
-	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R \no
 	gis1_\sfppcresc~
 % Bars 96 to 100
 	gis2 gis~
@@ -103,9 +103,13 @@ musicTubaMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.*6
-% Bars 121 to 125
+	R1.*3
 	
+	
+	\ni \mmrPos #6 R1.
+	\mmrPos #4 R
+% Bars 121 to 125
+	\mmrPos #4 R \no
 	b4.\pp\< a gis g\!
 	fis4.\mp\>~ fis8\! r r r2. \mark \default
 	R1.*2
@@ -113,13 +117,13 @@ musicTubaMvtII = \relative c {
 % Bars 126 to 130
 	R1.*2
 	
-	R1.*6
+	R1.*4
 	
 	
 % Bars 131 to 135
 	
-	
-	
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no
 	b4.\mp cis d r4 r8
 	b4. cis d r4 r8
 % Bars 136 to 140
@@ -131,10 +135,10 @@ musicTubaMvtII = \relative c {
 % Bars 141 to 145
 	r2. r8 b~\ff b g4 e8
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		d8\ff r r4 r2
-		R1
-		R1
-		r2 d4\f cis
+		d8\ff r r4 \once \voiceOne r2
+		\ni \mmrPos #4 R1
+		\mmrPos #4 R1 \no
+		\once \voiceOne r2 d4\f cis
 % Bars 146 to 150
 		d8\ff r r4 r2
 		R1
@@ -174,5 +178,5 @@ musicTubaMvtII = \relative c {
 	
 	
 	
-	R1.\fermata \bar "|."
+	\ni R1.\fermata \no \bar "|."
 }

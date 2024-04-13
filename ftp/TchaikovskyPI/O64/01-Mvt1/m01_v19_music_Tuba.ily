@@ -19,7 +19,7 @@ musicTubaMvtI = \relative c {
 	
 	
 	
-	R1\fermata \mark \default
+	\ni R1\fermata \no \mark \default
 % Bars 21 to 25
 	R1*16
 % Bars 26 to 30
@@ -28,7 +28,7 @@ musicTubaMvtI = \relative c {
 	
 % Bars 36 to 40
 	
-	R1\fermata \bar "||" \time 6/8
+	\ni R1\fermata \no \bar "||" \time 6/8
 	R2.*19
 % Bars 41 to 45
 	
@@ -61,11 +61,11 @@ musicTubaMvtI = \relative c {
 	
 	R2.*2
 	
-	R2.*2
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
 % Bars 81 to 85
-	R2.*2
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r4 r8 r fis,\f\< e\! \mark \default
 	d8.\ff d16 d8 r4 r8
 	R2.
@@ -122,9 +122,12 @@ musicTubaMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*42
+	\ni \mmrPos #-6 R2.
 % Bars 141 to 145
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R \no
+	R2.*26
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -135,13 +138,21 @@ musicTubaMvtI = \relative c {
 	
 % Bars 166 to 170
 	
-% Bars 171 to 175
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 171 to 175
+	\mmrPos #-4 R \no
+	R2.*10
 % Bars 176 to 180
 	
 % Bars 181 to 185
 	\mark \default
-	R2.*4
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 186 to 190
 	d'2.\fp 
 	c!\fp
@@ -190,11 +201,11 @@ musicTubaMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*4
+	\ni \mmrPos #-4 R2.
 % Bars 241 to 245
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #4 R
+	\mmrPos #-6 R \no
 	fes4.\p~ fes8 r r
 	R2.
 % Bars 246 to 250
@@ -306,11 +317,11 @@ musicTubaMvtI = \relative c {
 	
 	R2. \mark \default
 	R
-	R2.*2
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #-4 R
 % Bars 356 to 360
-	R2.
-	r4 r8 r fis'--\p fis--
+	\mmrPos #-4 R \no
+	\voiceTwo r4 r8 r \oneVoice fis'--\p fis--
 	fis4.-> e8 r r
 	r4 r8 r ais\p-- ais--
 	b!4.~-> b8 r r
@@ -348,16 +359,20 @@ musicTubaMvtI = \relative c {
 	
 % Bars 396 to 400
 	\mark \default
-	R2.*9
-	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 401 to 405
+	R2.*4
 	
+	
+	
+	\ni \mmrPos #4 R2.
 % Bars 406 to 410
-	R2.
+	\mmrPos #-6 R2. \no
 	e2.\p
-	R2.*31
+	R2.*19
 % Bars 411 to 415
 	
 % Bars 416 to 420
@@ -366,16 +381,20 @@ musicTubaMvtI = \relative c {
 	
 % Bars 426 to 430
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-6 R \no
+	R2.*10
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
 	
 	\mark \default
-	R2.*4
+	\ni \mmrPos #-5 R2.
+	\mmrPos #-6 R
 % Bars 441 to 445
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
 	e'2.\fp
 	d\fp
 	cis4._\pcrescmolto c
@@ -410,14 +429,14 @@ musicTubaMvtI = \relative c {
 	e r r r4 r8
 	e r r r4 r8 \mark \default
 % Bars 471 to 475
-	R2.*14
+	R2.*11
 % Bars 476 to 480
 	
 % Bars 481 to 485
 	
-	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g,8\f r r g r r
 % Bars 486 to 490
 	g r r g r r \mark \default
@@ -453,7 +472,7 @@ musicTubaMvtI = \relative c {
 	e r r d\f r r
 	c r r b r r
 	e r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markAaBox
 	e r r d\mf r r 
 % Bars 516 to 520
 	c_\dimmarkup r r b r r
@@ -463,7 +482,7 @@ musicTubaMvtI = \relative c {
 	R2.
 % Bars 521 to 525
 	e8\p r r r4 r8
-	R2. \mark \default
+	R2. \mark \markBbBox
 	e8 r r r4 r8
 	R2.*18
 % Bars 526 to 530
@@ -474,5 +493,5 @@ musicTubaMvtI = \relative c {
 	
 % Bars 541 and 542
 	
-	R2.\fermata \bar "|."
+	\ni R2.\fermata \no \bar "|."
 }

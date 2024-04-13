@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.1"
 \include "./00-Common/TchaikovskySymph5_Header.ily"
 \include "./00-Common/TchaikovskySymph5_PaperParts.ily"
 \include "./00-Common/TchaikovskySymph5_timeMvt.ily"
@@ -21,6 +22,7 @@
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_PartPosaunen.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v16_music_PosauneI.ily"
 \include "./01-Mvt1/m01_v17_music_PosauneII.ily"
 \include "./01-Mvt1/m01_v18_music_PosauneIII.ily"
@@ -36,18 +38,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoicePosauneIMvtI" { \cueVoicePosauneIMvtI }
-\addQuote "cueVoicePosauneIMvtII" { \cueVoicePosauneIMvtII }
-\addQuote "cueVoicePosauneIMvtIV" { \cueVoicePosauneIMvtIV }
-\addQuote "cueVoicePosauneIIMvtI" { \cueVoicePosauneIIMvtI }
-\addQuote "cueVoicePosauneIIMvtII" { \cueVoicePosauneIIMvtII }
-\addQuote "cueVoicePosauneIIMvtIV" { \cueVoicePosauneIIMvtIV }
-\addQuote "cueVoicePosauneIIIMvtI" { \cueVoicePosauneIIIMvtI }
-\addQuote "cueVoicePosauneIIIMvtII" { \cueVoicePosauneIIIMvtII }
-\addQuote "cueVoicePosauneIIIMvtIV" { \cueVoicePosauneIIIMvtIV }
-\addQuote "cueVoiceTubaMvtI" { \cueVoiceTubaMvtI }
-\addQuote "cueVoiceTubaMvtII" { \cueVoiceTubaMvtII }
-\addQuote "cueVoiceTubaMvtIV" { \cueVoiceTubaMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -65,21 +55,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPosauneIMvtI
+%			}
 			\new Voice {
-				\formatPosauneIMvtI
+				\keepWithTag #'(posauneI) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\namePosauneIMvtI \musicPosauneIMvtI
+				\InCueContext \cueVoicePosauneIMvtI
+			}
+			\new Voice {
+				\timeMvtI \namePosauneIMvtI \musicPosauneIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -87,21 +79,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPosauneIMvtII
+%			}
 			\new Voice {
-				\formatPosauneIMvtII
+				\keepWithTag #'(posauneI) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\namePosauneIMvtII \musicPosauneIMvtII
+				\InCueContext \cueVoicePosauneIMvtII
+			}
+			\new Voice {
+				\timeMvtII \namePosauneIMvtII \musicPosauneIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -109,21 +103,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPosauneIMvtIV
+%			}
 			\new Voice {
-				\formatPosauneIMvtIV
+				\keepWithTag #'(posauneI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\namePosauneIMvtIV \musicPosauneIMvtIV
+				\InCueContext \cueVoicePosauneIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \namePosauneIMvtIV \musicPosauneIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
@@ -131,21 +127,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPosauneIIMvtI
+%			}
 			\new Voice {
-				\formatPosauneIIMvtI
+				\keepWithTag #'(posauneII) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\namePosauneIIMvtI \musicPosauneIIMvtI
+				\InCueContext \cueVoicePosauneIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \namePosauneIIMvtI \musicPosauneIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -153,21 +151,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPosauneIIMvtII
+%			}
 			\new Voice {
-				\formatPosauneIIMvtII
+				\keepWithTag #'(posauneII) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\namePosauneIIMvtII \musicPosauneIIMvtII
+				\InCueContext \cueVoicePosauneIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \namePosauneIIMvtII \musicPosauneIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -175,21 +175,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPosauneIIMvtIV
+%			}
 			\new Voice {
-				\formatPosauneIIMvtIV
+				\keepWithTag #'(posauneII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\namePosauneIIMvtIV \musicPosauneIIMvtIV
+				\InCueContext \cueVoicePosauneIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \namePosauneIIMvtIV \musicPosauneIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
@@ -197,21 +199,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPosauneIIIMvtI
+%			}
 			\new Voice {
-				\formatPosauneIIIMvtI
+				\keepWithTag #'(posauneIII) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\namePosauneIIIMvtI \musicPosauneIIIMvtI
+				\InCueContext \cueVoicePosauneIIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \namePosauneIIIMvtI \musicPosauneIIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -219,21 +223,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPosauneIIIMvtII
+%			}
 			\new Voice {
-				\formatPosauneIIIMvtII
+				\keepWithTag #'(posauneIII) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\namePosauneIIIMvtII \musicPosauneIIIMvtII
+				\InCueContext \cueVoicePosauneIIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \namePosauneIIIMvtII \musicPosauneIIIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -241,21 +247,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatPosauneIIIMvtIV
+%			}
 			\new Voice {
-				\formatPosauneIIIMvtIV
+				\keepWithTag #'(posauneIII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\namePosauneIIIMvtIV \musicPosauneIIIMvtIV
+				\InCueContext \cueVoicePosauneIIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \namePosauneIIIMvtIV \musicPosauneIIIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
@@ -263,21 +271,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatTubaMvtI
+%			}
 			\new Voice {
-				\formatTubaMvtI
+				\keepWithTag #'(tuba) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameTubaMvtI \musicTubaMvtI
+				\InCueContext \cueVoiceTubaMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTubaMvtI \musicTubaMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -285,21 +295,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatTubaMvtII
+%			}
 			\new Voice {
-				\formatTubaMvtII
+				\keepWithTag #'(tuba) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameTubaMvtII \musicTubaMvtII
+				\InCueContext \cueVoiceTubaMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTubaMvtII \musicTubaMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -307,21 +319,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatTubaMvtIV
+%			}
 			\new Voice {
-				\formatTubaMvtIV
+				\keepWithTag #'(tuba) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameTubaMvtIV \musicTubaMvtIV
+				\InCueContext \cueVoiceTubaMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameTubaMvtIV \musicTubaMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {
