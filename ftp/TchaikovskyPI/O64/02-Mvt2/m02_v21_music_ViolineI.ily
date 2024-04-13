@@ -9,13 +9,13 @@ musicViolineIMvtII = \relative c {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1.*9
+	R1.*7
 % Bars 6 to 10
 	
 	
-	
-	
-	r2. d'\pp
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R \no
+	\once \voiceOne r2. d'\pp
 % Bars 11 to 15
 	d(~ d4.\< cis\!)
 	\after 2.*5/6 \! d2.\> r
@@ -39,11 +39,11 @@ musicViolineIMvtII = \relative c {
 	q-.(\mp q-. q-. cis-. cis-. cis-.) <d, d'>-.( q-. q-. q-. q-. q-.)
 	q-.(\> q-. q-.) cis'(-. cis-. cis-.)\! r2.
 	gis8(-.\p gis-. gis-. fis-. fis-. fis-.) r2.
-	R1.*7
+	R1.*6
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	
+	\ni \mmrPos #-4 R1. \no
 	r8 b(\p\< a~ a a g~ g) fis( e~ e d cis~\!
 	cis)\mf b( a~ a b d) fis4.~ fis8 r r
 	<gis, fis'>4.\f q q r4 r8

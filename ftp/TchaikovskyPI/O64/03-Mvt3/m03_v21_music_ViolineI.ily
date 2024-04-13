@@ -143,10 +143,10 @@ musicViolineIMvtIII = \relative c {
 	r r <cisis cisis'>16-.\< <dis dis'>-. <cisis cisis'>-. <dis dis'>-.\!
 % Bars 111 to 115
 	<e e'>-.\> <dis dis'>-. <cis! cis'!>-. <b b'>-.\! <cis cis'>-. <b b'>-. <ais ais'>-. <gis gis'>-. r4
-	R2.*6
+	R2.*5
 % Bars 116 to 120
 	
-	\mark \default
+	\ni \mmrPos #-4 R2. \no \mark \default
 	r4 r <dis'' dis'>16-.\mf\< <e e'>-. <dis dis'>-. <e e'>-.\!
 	<fis fis'>-.\> <e e'>-. <d! d'!>-. <cis cis'>-.\! <d d'>-. <cis cis'>-. <b b'>-. <a a'>-. r4
 	r r <dis dis'>16-.\< <e e'>-. <dis dis'>-. <e e'>-.\!

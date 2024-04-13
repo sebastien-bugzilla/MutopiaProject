@@ -39,9 +39,13 @@ musicViolineIMvtIV = \relative c {
 	
 % Bars 31 to 35
 	\mark \default
-	R1*9
+	R1*7
 % Bars 36 to 40
 	
+	
+	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no
 % Bars 41 to 45
 	\tuplet 3/2 4 {r8 b,:16^\arco cis: dis: e: fis: g: b: a: g: fis: e:
 	dis: e: fis: e: fis: g: fis: g: a: g: a: b:}
@@ -56,11 +60,11 @@ musicViolineIMvtIV = \relative c {
 		<g,, d'>4 r r2
 		s1
 	}>>
-	R1*3
-	
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 51 to 55
-	r4 e'4\p\<( dis\! e\>~ 
+	\once \voiceOne r4 e'4\p\<( dis!\! e\>~ 
 	e8)\! r r4 r2
 	r4 e(\pp\< dis\! e\>~
 	e8)\! r e4(\< dis\! e\>~
@@ -386,12 +390,13 @@ musicViolineIMvtIV = \relative c {
 	
 	r4 a,,\mf^\pizz e' a
 	d r r2
-	R1*6
+	R1*3
+	
 % Bars 331 to 335
 	
-	
-	
-	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
 	r4 a,\mf e' a
 % Bars 336 to 340
 	d r r2
@@ -436,9 +441,9 @@ musicViolineIMvtIV = \relative c {
 	dis <dis, gis>2 <gis, dis'>4~
 	q gis r2
 % Bars 371 to 375
-	R1*6
+	R1*5
 % Bars 376 to 380
-	
+	\ni \mmrPos #4 R1 \no
 	\tuplet 3/2 2 {r4 gis(\mp\< dis') r dis( gis)\!
 	r cis,(\mf gis)} r2
 	\tuplet 3/2 2 {r4 cis( gis)} r2 
@@ -468,11 +473,11 @@ musicViolineIMvtIV = \relative c {
 	e2\< fis8( e dis e)\!
 	gis2(-> fis)
 % Bars 401 to 405
-	R1
+	\ni \mmrPos #4 R1 \no
 	e1\mf~
 	e2\< fis8( e dis e)\!
 	gis2(-> fis)
-	R1
+	\ni \mmrPos #4 R1 \no
 % Bars 406 to 410
 	e2(\mf dis)
 	dis4(_\dimmarkup cis2) b4~
@@ -511,12 +516,15 @@ musicViolineIMvtIV = \relative c {
 	fis[ fis fis]  e e e  dis[ dis dis]  e e e }
 % Bars 436 to 440
 	b' r r4 r2
-	R1*7
+	R1*5
+	
+	
+	
 % Bars 441 to 445
 	
-	
-	
-	r4 e,,,8_\semprefff e fis fis g g
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no
+	\once \voiceOne r4 e,,,8_\semprefff e fis fis g g
 	a4:8 fis: g: a:
 % Bars 446 to 450
 	b: g: cis: a:
@@ -555,8 +563,8 @@ musicViolineIMvtIV = \relative c {
 	}>>
 % Bars 471 to 475
 	r8 r4 r2\fermata \bar "||" % incomplete bar
-	\key e \major \time 4/4 R1*2
-	
+	\key e \major \time 4/4 \ni \mmrPos #-4 R1 \no
+	R1
 	gis''4.\ff^\largamente gis16 gis a4. gis16 fis
 	gis4 e2.
 % Bars 476 to 480
@@ -575,7 +583,7 @@ musicViolineIMvtIV = \relative c {
 	dis cis b b8. ais16 
 	gis2. e'4
 	dis cis b dis8. cis16
-	b8 r r4 r16 cis,16:32 dis: e: fis: gis: a!: ais: \mark \default
+	b8 r r4 r16 cis,16:32 dis: e: fis: gis: a!: ais: \mark \markAaBox
 	b:\fff a!: gis: fis: e: fis: gis: b: cis: a: e: dis: cis: dis: e: fis: 
 % Bars 491 to 495
 	gis: b,: cis: dis: e: fis: gis: a: b: bis: cis: dis: e: b: cis: dis: 
@@ -586,7 +594,7 @@ musicViolineIMvtIV = \relative c {
 % Bars 496 to 500
 	b: ais: gis: fis: gis: e: dis: cis: fis: dis: cis: b: e: cis: b: ais: 
 	gis8: e': dis: cis: b16: fis: dis: b: cis: dis: e: ais: 
-	gis8: e': dis: cis: b16: fis: dis: b: cis: dis: e: ais: \mark \default
+	gis8: e': dis: cis: b16: fis: dis: b: cis: dis: e: ais: \mark \markBbBox
 	gis8: gis': fis: e: dis: cis: b: <a,! a'!>:
 	<b gis'>: <d b'>: <cis a'>: <e cis'>: <e b'>: <fis dis'!>: cis': fis:
 % Bars 501 to 505
@@ -602,7 +610,7 @@ musicViolineIMvtIV = \relative c {
 	e4) r8 fis( gis4) r8 a(
 	b4)\fff r8 gis( e4) r8 cis(
 % Bars 511 to 515
-	b4) r8 gis( fis4) r8 gis( \mark \default
+	b4) r8 gis( fis4) r8 gis( \mark \markCcBox
 	e4) r8 b(\p e4) r8 fis(
 	gis4) r8 fis( eis4) r8 gis(
 	cis,4)_\crescmarkup r8 d( dis4) r8 eis(
@@ -618,7 +626,7 @@ musicViolineIMvtIV = \relative c {
 	g g,8 a bes c d dis
 	e4 e,8 fis gis! a b! bis
 	cis4 cis,8 d dis eis fisis gis
-	a4 a,8 b cis dis e! eis \mark \default
+	a4 a,8 b cis dis e! eis \mark \markDdBox
 % Bars 526 to 530
 	fis fis, gis a b cis dis e!
 	fis fis, ais b c d e f
@@ -652,7 +660,7 @@ musicViolineIMvtIV = \relative c {
 % Bars 551 to 555
 	<e b' b'> r r <a e' cis'> r r
 	<e b' b'> r r <a e' cis'> r r
-	<e b' b'> r r <a e' cis'> r r \mark \default
+	<e b' b'> r r <a e' cis'> r r \mark \markEeBox
 	<e b' b'> r r e'4:8 cis: b: 
 	fis': e: cis: b: a: gis: 
 % Bars 556 to 560

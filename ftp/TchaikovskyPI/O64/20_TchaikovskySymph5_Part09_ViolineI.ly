@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.1"
 \include "./00-Common/TchaikovskySymph5_Header.ily"
 \include "./00-Common/TchaikovskySymph5_PaperParts.ily"
 \include "./00-Common/TchaikovskySymph5_timeMvt.ily"
@@ -21,6 +22,7 @@
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_PartViolineI.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v21_music_ViolineI.ily"
 \include "./02-Mvt2/m02_v21_music_ViolineI.ily"
 \include "./03-Mvt3/m03_v21_music_ViolineI.ily"
@@ -28,10 +30,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceViolineIMvtI" { \cueVoiceViolineIMvtI }
-\addQuote "cueVoiceViolineIMvtII" { \cueVoiceViolineIMvtII }
-\addQuote "cueVoiceViolineIMvtIII" { \cueVoiceViolineIMvtIII }
-\addQuote "cueVoiceViolineIMvtIV" { \cueVoiceViolineIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -49,21 +47,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatViolineIMvtI
+%			}
 			\new Voice {
-				\formatViolineIMvtI
+				\keepWithTag #'(violineI) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameViolineIMvtI \musicViolineIMvtI
+				\InCueContext \cueVoiceViolineIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameViolineIMvtI \musicViolineIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -71,21 +71,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatViolineIMvtII
+%			}
 			\new Voice {
-				\formatViolineIMvtII
+				\keepWithTag #'(violineI) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameViolineIMvtII \musicViolineIMvtII
+				\InCueContext \cueVoiceViolineIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameViolineIMvtII \musicViolineIMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -93,21 +95,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatViolineIMvtIII
+%			}
 			\new Voice {
-				\formatViolineIMvtIII
+				\keepWithTag #'(violineI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameViolineIMvtIII \musicViolineIMvtIII
+				\InCueContext \cueVoiceViolineIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameViolineIMvtIII \musicViolineIMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -115,21 +119,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatViolineIMvtIV
+%			}
 			\new Voice {
-				\formatViolineIMvtIV
+				\keepWithTag #'(violineI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameViolineIMvtIV \musicViolineIMvtIV
+				\InCueContext \cueVoiceViolineIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameViolineIMvtIV \musicViolineIMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {

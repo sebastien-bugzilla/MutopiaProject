@@ -19,16 +19,20 @@ musicViolineIMvtI = \relative c {
 	
 	
 	
-	R1\fermata \mark \default
+	\ni R1\fermata \no \mark \default
 % Bars 21 to 25
-	R1*16
+	R1*12
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
-% Bars 36 to 40
 	
-	R1\fermata \bar "||" \time 6/8
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R
+% Bars 36 to 40
+	\mmrPos #4 R
+	\mmrPos #4 R1\fermata \no \bar "||" \time 6/8
 	b'8\ppp r r c r r
 	b r r c r r
 	b r r c r r
@@ -367,13 +371,17 @@ musicViolineIMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*16
+	R2.*15
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
 % Bars 331 to 335
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2. \no
 % Bars 336 to 340
 	r4 r8 r4 c'8\p( \mark \default
 	e8[-.) r16 e e8](~ e\< fis)-. g-.\!
@@ -588,7 +596,7 @@ musicViolineIMvtI = \relative c {
 	e8[) r16 e\f e8]~ e8[ r16 e e8]~
 	e8[ r16 e e8]~ e e( dis
 	e8[) r16 e e8]~ e8[ r16 e e8]~
-	e8[ r16 e e8]~ e e( dis \mark \default
+	e8[ r16 e e8]~ e e( dis \mark \markAaBox
 	e) r r r4 r8
 % Bars 516 to 520
 	R2.*3
@@ -598,7 +606,7 @@ musicViolineIMvtI = \relative c {
 	e8[ r16 e e8]~ e e( dis
 % Bars 521 to 525
 	e8[) r16 e e8]~ e8[ r16 e e8]~
-	e8[ r16 e e8]~ e e( dis \mark \default
+	e8[ r16 e e8]~ e e( dis \mark \markBbBox
 	e) r r r4 r8
 	R2.*18
 % Bars 526 to 530
@@ -609,5 +617,5 @@ musicViolineIMvtI = \relative c {
 	
 % Bars 541 and 542
 	
-	R2.\fermata \bar "|."
+	\ni R2.\fermata \no \bar "|."
 }

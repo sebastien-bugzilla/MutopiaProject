@@ -2683,16 +2683,68 @@ cueVoicePaukenMvtIV = \relative c {
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #
 %###############################################################################
 cueVoiceViolineIMvtI = \relative c {
-	
+	s1*32
+	% bar 33 - 37
+	r2^\markup {Klar.} a'
+	b2~ b4~ b8 r
+	r2 a
+	b1~
+	b4 \voiceTwo r r2\fermata \oneVoice 
+	s2.*297
+	% bar 335 - 336
+	a''4(->^\markup {Fl.I} e8) ais4(-> fis8)
+	\once \stemUp b4 s8 s4.
 }
 cueVoiceViolineIMvtII = \relative c {
-	
+	s1.*7
+	% bar 8 - 10
+	s2. s4. d'8( cis) b--
+	d4.->( cis2.) a8( b) cis--
+	\voiceTwo e4.( d) \oneVoice s2.
+	s1.*25
+	% bar 36
+	d''4(~^\markup {Ob.I} d16 d, d8)\noBeam fis,(^\markup {Fl.} a d fis a d fis a)
 }
 cueVoiceViolineIMvtIII = \relative c {
-	
+	s2.*116
+	% bar 117 - 118
+	a'''16-.^\markup {Fl.II} ais-. a-. ais-. cis( b) ais-. gis-. cisis-.^\markup {Fl.I} dis-. cisis-. dis-. 
+	\voiceOne e( dis) cis-. b-. cis-. b-. ais-. gis-. \oneVoice s4
 }
 cueVoiceViolineIMvtIV = \relative c {
-	
+	s1*38
+	% bar 39 - 40
+	\voiceTwo <b' b'>4.^\markup {Hr.u.Trp.} q16 q q4. q16 q
+	q8 r q2. \oneVoice 
+	s1*7
+	% bar 48 - 51
+	\voiceTwo a'2^\markup {Klar.} g4 fis
+	b2.~ b8 r
+	a2 gis4 fis
+	b \oneVoice s2.
+	s1*280
+	% bar 332 - 335
+	r4^\markup {\column {\lower #1.5 "Fl.II" "Ob.I"}} r8 b( e4.) fis8(
+	g4.) fis8( e4.) fis8(
+	cis4.)-> d8( b4.->) cis8(
+	a4)-> s2.
+	s1*40
+	% bar 376
+	\tuplet 3/2 2 {r4^\markup {Br.} gis,( dis') r^\markup {Viol.II} dis( gis)}
+	s1*24
+	% bar 401
+	fis2^\markup {Fl.} gis8( fis eis fis)
+	s1*3
+	% bar 405
+	fis2^\markup {Fl.} gis8( fis eis fis)
+	s1*36
+	% bar 442 - 444
+	e4:8^\markup {Viol.II} cis: dis: e:
+	fis: dis: e: fis:
+	\once \voiceTwo g: s2.
+	s1*27
+	% bar 472
+	\tuplet 3/2 4 {e'8(^\markup {Hbl.} dis cis b ais b) e( dis cis b ais b)}
 }
 %###############################################################################
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #
