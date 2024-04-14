@@ -576,7 +576,7 @@ musicViolaMvtIV = \relative c {
 	r8 r4 r2\fermata \bar "||"
 	\key e \major \time 4/4 e8\f r e r e r e r
 	e r e r e r e r^\div
-	<gis gis'>4.^\largamente q16 q <a a'>4. <gis gis'>16 <fis fis'>
+	<gis gis'>4.^\largamente\ff q16 q <a a'>4. <gis gis'>16 <fis fis'>
 	<gis gis'>4 <e e'>2.
 % Bars 476 to 480
 	<b' b'>4. q16 q <cis cis'>4. <b b'>16 <a a'>
@@ -594,7 +594,7 @@ musicViolaMvtIV = \relative c {
 	dis cis b b8. ais16
 	gis2. e'4
 	dis cis b dis8. cis16
-	b32 b cis, \liiiri cis \liriii dis dis e e fis16:32 gis: a: ais: b: cis: dis: e: fis: gis: a!: ais:  \mark \default
+	b32 b cis, \liiiri cis \liriii dis dis e e fis16:32 gis: a: ais: b: cis: dis: e: fis: gis: a!: ais:  \mark \markAaBox
 	b,:\fff a!: gis: fis: e: fis: gis: b: cis: a: e': dis: cis: dis: e: fis,: 
 % Bars 491 to 495
 	gis: b: cis: dis: e: fis,: gis: a: b: bis: cis: dis: e: b: cis: dis:
@@ -605,7 +605,7 @@ musicViolaMvtIV = \relative c {
 % Bars 496 to 500
 	b: ais: gis: fis: gis: e: dis: cis: fis: dis: cis: b: e: cis: b: ais: 
 	gis8: gis'': fis: gis: b,16: b: fis: dis: cis: dis: e: ais:
-	gis8: gis': fis: gis: b,16: b: fis: dis: cis: dis: e: ais: \mark \default
+	gis8: gis': fis: gis: b,16: b: fis: dis: cis: dis: e: ais: \mark \markBbBox
 	gis8: \clef treble b': a!: g: fis: e: eis: fis: \clef alto
 	<b,, gis'!>8: <gis d'>: <a fis'>: <ais e'>: <b e>: <dis bis'>: <cis cis'>: <dis a'!>:
 % Bars 501 to 505
@@ -621,7 +621,7 @@ musicViolaMvtIV = \relative c {
 	e4) r8 fis( gis4) r8 a(
 	b4)\fff r8 gis( e4) r8 cis(
 % Bars 511 to 515
-	b4) r8 gis( fis4) r8 gis( \mark \default
+	b4) r8 gis( fis4) r8 gis( \mark \markCcBox
 	e4) e'\p d e
 	cis d b cis
 	a_\crescmarkup b gis a
@@ -637,7 +637,7 @@ musicViolaMvtIV = \relative c {
 	g g,8 a bes c d dis
 	e4 e,8 fis gis! a b! bis
 	cis4 cis,8 d dis eis fisis gis
-	a4 a8 b cis dis e! eis \mark \default
+	a4 a8 b cis dis e! eis \mark \markDdBox
 % Bars 526 to 530
 	fis fis gis a b r r4
 	r8 fis ais b c r r4
@@ -671,7 +671,7 @@ musicViolaMvtIV = \relative c {
 % Bars 551 to 555
 	<b e> r r <cis e a> r r
 	<b e> r r <cis e a> r r
-	<b e> r r <cis e a> r r \mark \default
+	<b e> r r <cis e a> r r \mark \markEeBox
 	<b e> r r e4:8 cis: b:
 	fis': e: cis: b: a: gis: 
 % Bars 556 to 560

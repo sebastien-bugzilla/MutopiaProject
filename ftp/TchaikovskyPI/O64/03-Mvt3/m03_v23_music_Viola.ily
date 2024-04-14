@@ -150,8 +150,8 @@ musicViolaMvtIII = \relative c {
 % Bars 116 to 120
 	
 	\mark \default
-	R2.
-	r4 r \clef treble <dis' dis'>16\mf\<-.^\div <e e'>-. <dis dis'>-. <e e'>-.\!
+	<< \ni \mmrPos #-4 R2. {s2 \clef treble s4} >>
+	\voiceTwo r4 r \oneVoice <dis' dis'>16\mf\<-.^\div <e e'>-. <dis dis'>-. <e e'>-.\!
 	<fis fis'>-.\> <e e'>-. <d! d'!>-. <cis cis'>-.\! <d d'>-. <cis cis'>-. <b b'>-. <a a'>-. r4
 % Bars 121 to 125
 	r r <dis dis'>16-.\< <e e'>-. <dis dis'>-. <e e'>-.\!

@@ -2780,16 +2780,21 @@ cueVoiceViolineIIMvtIV = \relative c {
 %#                    C U E   V O I C E   F O R   V I O L A                    #
 %###############################################################################
 cueVoiceViolaMvtI = \relative c {
-	
+	s1*37 s2.*441
+	% bar 479
+	d'4^\markup {Klar.} fis,8 d'4 fis,8
 }
 cueVoiceViolaMvtII = \relative c {
-	
+	% no CueVoice for viola mvt II
 }
 cueVoiceViolaMvtIII = \relative c {
-	
+	s2.*117
+	% bar 118 - 119
+	\voiceOne r4 r^\markup {Viol.I} <dis'' dis'>16-. <e e'>-. <dis dis'>-. <e e'>-.
+	<fis fis'>-. <e e'>-. <d! d'!>-. <cis cis'>-. <d d'>-. <cis cis'>-. <b b'>-. <a a'>-. \oneVoice s4
 }
 cueVoiceViolaMvtIV = \relative c {
-	
+	% no CueVoice for viola mvt IV
 }
 %###############################################################################
 %#               C U E   V O I C E   F O R   V I O L O N C E L L               #

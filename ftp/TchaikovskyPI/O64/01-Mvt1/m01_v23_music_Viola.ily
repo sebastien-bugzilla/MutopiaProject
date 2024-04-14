@@ -565,12 +565,12 @@ musicViolaMvtI = \relative c {
 	<gis e'>8[ r16 q q8] q q q
 	<e b'>8[ r16 q q8] q q q \mark \default
 % Bars 471 to 475
-	R2.*9
+	R2.*8
 % Bars 476 to 480
 	
 	
 	
-	
+	\ni \mmrPos #4 R2. \no
 	r8 fis-.\p\< g-. a( b c\!
 % Bars 481 to 485
 	e\mf) r r r4 r8
@@ -612,7 +612,7 @@ musicViolaMvtI = \relative c {
 	e8[) r16 e\f e8]~ e8[ r16 e e8]~
 	e8[ r16 e e8]~ e e( dis
 	e8[) r16 e e8]~ e8[ r16 e e8]~
-	e8[ r16 e e8]~ e e( dis \mark \default
+	e8[ r16 e e8]~ e e( dis \mark \markAaBox
 	e8[) r16 e\mf e8]~ e fis-. g-.
 % Bars 516 to 520
 	a(_\dimmarkup g) fis~ fis e( dis
@@ -622,7 +622,7 @@ musicViolaMvtI = \relative c {
 	e8[ r16 e e8]~ e e( dis
 % Bars 521 to 525
 	e8[) r16 e e8]~ e8[ r16 e e8]~
-	e8[ r16 e e8]~ e e( dis \mark \default
+	e8[ r16 e e8]~ e e( dis \mark \markBbBox
 	e) r r r4 r8
 	R2.*18
 % Bars 526 to 530
@@ -633,5 +633,5 @@ musicViolaMvtI = \relative c {
 	
 % Bars 541 and 542
 	
-	R2.\fermata \bar "|."
+	\ni R2.\fermata \no \bar "|."
 }

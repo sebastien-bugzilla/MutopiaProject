@@ -576,7 +576,7 @@ musicViolaMvtIV = \relative c {
 	r8 r4 r2\fermata \bar "||"
 	\key e \major \time 4/4 e8\f r e r e r e r
 	e r e r e r e r^\div
-	<gis gis'>4.^\largamente q16 q <a a'>4. <gis gis'>16 <fis fis'>
+	<gis gis'>4.^\largamente-\offset X-offset 1 \ff q16 q <a a'>4. <gis gis'>16 <fis fis'>
 	<gis gis'>4 <e e'>2.
 % Bars 476 to 480
 	<b' b'>4. q16 q <cis cis'>4. <b b'>16 <a a'>
