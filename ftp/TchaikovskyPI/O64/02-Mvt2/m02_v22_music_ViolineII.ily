@@ -9,7 +9,11 @@ musicViolineIIMvtII = \relative c {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1.*5
+	R1.*3
+	
+	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R \no
 % Bars 6 to 10
 	a'2.\p\< b
 	a\! a\>

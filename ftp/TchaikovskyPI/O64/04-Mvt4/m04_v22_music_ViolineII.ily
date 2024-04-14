@@ -612,7 +612,7 @@ musicViolineIIMvtIV = \relative c {
 	dis cis b b8. ais16
 	gis2. e'4
 	dis cis b dis8. cis16
-	b32 b cis, \liiiri cis \liriii dis dis e e fis16:32 gis: a: ais: b: cis: dis: e: fis: gis: a!: ais: \mark \default
+	b32 b cis, \liiiri cis \liriii dis dis e e fis16:32 gis: a: ais: b: cis: dis: e: fis: gis: a!: ais: \mark \markAaBox
 	b,:\fff a!: gis: fis: e: fis: gis: b: cis: a: e: dis: cis: dis: e: fis: 
 % Bars 491 to 495
 	gis: b,: cis: dis: e: fis: gis: a: b: bis: cis: dis: e: b: cis: dis: 
@@ -623,7 +623,7 @@ musicViolineIIMvtIV = \relative c {
 % Bars 496 to 500
 	b: ais: gis: fis: gis: e: dis: cis: fis: dis: cis: b: e: cis: b: ais: 
 	gis8: <e' cis'>: <dis b'>: <cis e>: dis16: dis: b: fis: cis': dis: e: ais: 
-	gis8: <e cis'>: <dis b'>: <cis e>: dis16: dis: b: fis: cis': dis: e: ais: \mark \default
+	gis8: <e cis'>: <dis b'>: <cis e>: dis16: dis: b: fis: cis': dis: e: ais: \mark \markBbBox
 	gis8: dis': cis: <e, cis'>: <dis b'>: <a! a'!>: <b gis'>: <b fis'>:
 	<b e>: <b gis'>: <a fis'>: <cis ais'>: <b e>: fis': g: <a,! a'>:
 % Bars 501 to 505
@@ -639,7 +639,7 @@ musicViolineIIMvtIV = \relative c {
 	e4) r8 fis( gis4) r8 a(
 	b4)\fff r8 gis( e4) r8 cis(
 % Bars 511 to 515
-	b4) r8 gis( fis4) r8 gis( \mark \default
+	b4) r8 gis( fis4) r8 gis( \mark \markCcBox
 	e4) r8 b(\p e4) r8 fis(
 	gis4) r8 fis( eis4) r8 gis(
 	cis,4)_\crescmarkup r8 d( dis4) r8 eis(
@@ -655,7 +655,7 @@ musicViolineIIMvtIV = \relative c {
 	g g,8 a bes c d dis
 	e4 e,8 fis gis! a b! bis
 	cis4 cis,8 d dis eis fisis gis
-	a4 a8 b cis dis e! eis \mark \default
+	a4 a8 b cis dis e! eis \mark \markDdBox
 % Bars 526 to 530
 	fis fis,gis a b cis dis e!
 	fis fis, ais b c d e f
@@ -689,7 +689,7 @@ musicViolineIIMvtIV = \relative c {
 % Bars 551 to 555
 	<e' b' e> r r <a, e' cis' a'> r r
 	<e' b' e> r r <a, e' cis' a'> r r
-	<e' b' e> r r <a, e' cis' a'> r r \mark \default
+	<e' b' e> r r <a, e' cis' a'> r r \mark \markEeBox
 	<e' b' e> r r e'4:8 cis: b: 
 	fis': e: cis: b: a: gis: 
 % Bars 556 to 560

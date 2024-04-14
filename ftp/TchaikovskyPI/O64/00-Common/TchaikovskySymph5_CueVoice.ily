@@ -2750,16 +2750,31 @@ cueVoiceViolineIMvtIV = \relative c {
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #
 %###############################################################################
 cueVoiceViolineIIMvtI = \relative c {
-	
+	s1*2
+	% bar 3 - 4
+	b'4.^\markup {Klar.} b16 b c4.( b16-.) a-.
+	\voiceTwo b4( g2) \oneVoice s4
+	s1*30
+	% bar 35 - 37
+	r2^\markup {Klar.} a 
+	b1~
+	b4 \voiceTwo r r2\fermata \oneVoice 
+	s2.*184
+	% bar 222 - 223
+	f''4^\markup {Klar.I} a,8 f'4 a,8
+	f'4 a,8 f'4 a,8
 }
 cueVoiceViolineIIMvtII = \relative c {
-	
+	s1.*3
+	% bar 4 - 5
+	\cueClef alto d2.^\markup {Br.} e
+	fis g \cueClefUnset
 }
 cueVoiceViolineIIMvtIII = \relative c {
-	
+	% no CueVoice for violin II mvt III
 }
 cueVoiceViolineIIMvtIV = \relative c {
-	
+	% no CueVoice for violin II mvt IV
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   V I O L A                    #

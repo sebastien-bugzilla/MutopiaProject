@@ -9,10 +9,10 @@ musicViolineIIMvtI = \relative c {
 	\key e \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*3
+	R1*2
 	
-	
-	r2 r4 c'\mf^\tenuto
+	\ni \mmrPos #4 R1 \no
+	\voiceOne r2 r4 \oneVoice c'\mf^\tenuto
 	b a\> g\! r
 % Bars 6 to 10
 	r2 r4 c\mf
@@ -29,16 +29,20 @@ musicViolineIIMvtI = \relative c {
 	b a\> g\! r
 	R1*2
 	
-	R1\fermata \mark \default
+	\ni R1\fermata \no \mark \default
 % Bars 21 to 25
-	R1*16
+	R1*14
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
-% Bars 36 to 40
 	
-	R1\fermata \bar "||" \time 6/8
+	
+	
+	\ni \mmrPos #4 R1
+% Bars 36 to 40
+	\mmrPos #4 R 
+	\mmrPos #4 R\fermata \no \bar "||" \time 6/8
 	g8\ppp r r a r r
 	g r r a r r 
 	g r r a r r
@@ -250,14 +254,14 @@ musicViolineIIMvtI = \relative c {
 	q8[ r16 q q8] q q q
 	<a, fis'>8[ r16 q q8] q q q
 	<a d>8[ r16 q q8] q q q \mark #11
-	R2.*10
+	R2.*8
 	
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	r8 f'\p-. g-. a( bes b
 	c) r r r4 r8
 % Bars 226 to 230
@@ -608,7 +612,7 @@ musicViolineIIMvtI = \relative c {
 	e8[) r16 e\f e8]~ e8[ r16 e e8]~
 	e8[ r16 e e8]~ e e( dis
 	e8[) r16 e e8]~ e8[ r16 e e8]~
-	e8[ r16 e e8]~ e e( dis \mark \default
+	e8[ r16 e e8]~ e e( dis \mark \markAaBox
 	e8[) r16 e\mf e8]~ e fis-. g-. 
 % Bars 516 to 520
 	a(_\dimmarkup g) fis~ fis e( dis
@@ -618,7 +622,7 @@ musicViolineIIMvtI = \relative c {
 	a r r a r r
 % Bars 521 to 525
 	g r r b r r
-	a r r a r r \mark \default
+	a r r a r r \mark \markBbBox
 	g r r r4 r8 
 	R2.*18
 % Bars 526 to 530
@@ -629,5 +633,5 @@ musicViolineIIMvtI = \relative c {
 	
 % Bars 541 and 542
 	
-	R2.\fermata \bar "|."
+	\ni R2.\fermata \no \bar "|."
 }
