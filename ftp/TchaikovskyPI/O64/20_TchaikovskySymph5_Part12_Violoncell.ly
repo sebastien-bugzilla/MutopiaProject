@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.1"
 \include "./00-Common/TchaikovskySymph5_Header.ily"
 \include "./00-Common/TchaikovskySymph5_PaperParts.ily"
 \include "./00-Common/TchaikovskySymph5_timeMvt.ily"
@@ -21,6 +22,7 @@
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_PartVioloncell.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v24_music_Violoncell.ily"
 \include "./02-Mvt2/m02_v24_music_Violoncell.ily"
 \include "./03-Mvt3/m03_v24_music_Violoncell.ily"
@@ -28,10 +30,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceVioloncellMvtI" { \cueVoiceVioloncellMvtI }
-\addQuote "cueVoiceVioloncellMvtII" { \cueVoiceVioloncellMvtII }
-\addQuote "cueVoiceVioloncellMvtIII" { \cueVoiceVioloncellMvtIII }
-\addQuote "cueVoiceVioloncellMvtIV" { \cueVoiceVioloncellMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -49,21 +47,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatVioloncellMvtI
+%			}
 			\new Voice {
-				\formatVioloncellMvtI
+				\keepWithTag #'(violoncell) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameVioloncellMvtI \musicVioloncellMvtI
+				\InCueContext \cueVoiceVioloncellMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameVioloncellMvtI \musicVioloncellMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -71,21 +71,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatVioloncellMvtII
+%			}
 			\new Voice {
-				\formatVioloncellMvtII
+				\keepWithTag #'(violoncell) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameVioloncellMvtII \musicVioloncellMvtII
+				\InCueContext \cueVoiceVioloncellMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameVioloncellMvtII \musicVioloncellMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -93,21 +95,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatVioloncellMvtIII
+%			}
 			\new Voice {
-				\formatVioloncellMvtIII
+				\keepWithTag #'(violoncell) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameVioloncellMvtIII \musicVioloncellMvtIII
+				\InCueContext \cueVoiceVioloncellMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameVioloncellMvtIII \musicVioloncellMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -115,21 +119,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatVioloncellMvtIV
+%			}
 			\new Voice {
-				\formatVioloncellMvtIV
+				\keepWithTag #'(violoncell) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameVioloncellMvtIV \musicVioloncellMvtIV
+				\InCueContext \cueVoiceVioloncellMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameVioloncellMvtIV \musicVioloncellMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {

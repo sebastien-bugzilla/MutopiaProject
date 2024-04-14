@@ -621,7 +621,7 @@ musicVioloncellMvtIV = \relative c {
 	b cis b e fis e fis gis fis fisis gis fisis
 	gis ais gis ais b ais b cis b cis, dis cis
 	dis e dis e fis e fis gis fis fis, gis fis}
-	b16:32 cis: dis: e: fis: gis: a: ais: b: cis,: dis: e: fis: gis: a: ais: \mark \default
+	b16:32 cis: dis: e: fis: gis: a: ais: b: cis,: dis: e: fis: gis: a: ais: \mark \markAaBox
 	b8 r <e,, b' gis' e'>4\fff <a e' a> q
 % Bars 491 to 495
 	<e b' gis' e'> q q q
@@ -632,7 +632,7 @@ musicVioloncellMvtIV = \relative c {
 % Bars 496 to 500
 	<dis b' fis'> <e cis'> <fis dis'> fisis
 	gis8 <gis e'> <fis! dis'> <e cis'> fis4 fisis
-	gis8 <gis e'> <fis! dis'> <e cis'> fis4 fisis \mark \default
+	gis8 <gis e'> <fis! dis'> <e cis'> fis4 fisis \mark \markBbBox
 	gis8 gis, a ais b cis d dis
 	e eis fis fisis gis a ais bis
 % Bars 501 to 505
@@ -648,7 +648,7 @@ musicVioloncellMvtIV = \relative c {
 	bis cis b c
 	g\fff gis a ais
 % Bars 511 to 515
-	b bis cis dis \mark \default
+	b bis cis dis \mark \markCcBox
 	e e'\p d e
 	cis d b cis
 	a_\crescmarkup b gis a
@@ -664,7 +664,7 @@ musicVioloncellMvtIV = \relative c {
 	bes, g'8 a bes c d dis
 	e4 e,8 fis gis! a b! bis
 	cis4 cis,8 d dis eis fisis gis
-	a4 a8 b cis dis e eis \mark \default
+	a4 a8 b cis dis e eis \mark \markDdBox
 % Bars 526 to 530
 	fis4 r b,2~
 	b bes~
@@ -698,7 +698,7 @@ musicVioloncellMvtIV = \relative c {
 % Bars 551 to 555
 	<e' e'> r r <a, e' a> r r
 	<e' e'> r r <a, e' a> r r
-	<e' e'> r r <a, e' a> r r \mark \default
+	<e' e'> r r <a, e' a> r r \mark \markEeBox
 	<e' e'> r r e'4:8 cis: b: 
 	fis': e: cis: b: a: gis: 
 % Bars 556 to 560

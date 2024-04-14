@@ -2800,16 +2800,24 @@ cueVoiceViolaMvtIV = \relative c {
 %#               C U E   V O I C E   F O R   V I O L O N C E L L               #
 %###############################################################################
 cueVoiceVioloncellMvtI = \relative c {
-	
+	s1*37 s2.*186
+	% bar 224 - 225
+	\cueClef treble r8 f'8-.^\markup {Viol.II} g-. a( bes b
+	c)\noBeam a-.^\markup {Viol.I} bes-. c( d ees) \cueClefUnset
+	s2.*256
+	% bar 482 - 484
+	\cueClef treble r8 a,-.^\markup {Viol.I} b-. c( dis e
+	g) r r e( fis g
+	a) r r fis( g a) \cueClefUnset
 }
 cueVoiceVioloncellMvtII = \relative c {
-	
+	% no CueVoice for violoncell mvt II
 }
 cueVoiceVioloncellMvtIII = \relative c {
-	
+	% no CueVoice for violoncell mvt III
 }
 cueVoiceVioloncellMvtIV = \relative c {
-	
+	% no CueVoice for violoncell mvt IV
 }
 %###############################################################################
 %#               C U E   V O I C E   F O R   K O N T R A B A S S               #

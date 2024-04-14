@@ -264,11 +264,15 @@ musicVioloncellMvtI = \relative c {
 	q8[ r16 q q8] q q q
 	q8[ r16 q q8] q q q
 	q8[ r16 q q8] q q q \mark #11
-	R2.*12
+	R2.*10
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
+	
+	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \no
 % Bars 226 to 230
 	bes'8\p r r aes r r
 	g r r f r r
@@ -563,14 +567,14 @@ musicVioloncellMvtI = \relative c {
 	<b e>8[ r16 q q8] q q q
 	q8[ r16 q q8] q q q \mark \default
 % Bars 471 to 475
-	R2.*14
+	R2.*11
 % Bars 476 to 480
 	
 % Bars 481 to 485
 	
-	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g8\ff g16 g c c e e g g c c
 % Bars 486 to 490
 	e e g, g c c e e g, g c c \mark \default
@@ -606,7 +610,7 @@ musicVioloncellMvtI = \relative c {
 	e r r d\f r r
 	c r r b r r
 	e r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markAaBox
 	e r r d\mf r r
 % Bars 516 to 520
 	c_\dimmarkup r r b r r
@@ -616,7 +620,7 @@ musicVioloncellMvtI = \relative c {
 	fis r r fis r r
 % Bars 521 to 525
 	e r r gis r r
-	fis r r fis r r \mark \default
+	fis r r fis r r \mark \markBbBox
 	e\p r r d r r
 	c r r b r r
 	e r r d r r
