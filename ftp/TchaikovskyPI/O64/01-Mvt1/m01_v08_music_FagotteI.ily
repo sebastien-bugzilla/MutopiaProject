@@ -67,7 +67,7 @@ musicFagotteIMvtI = \relative c {
 	r4 r8 a16( g fis e d! c!
 	b cis dis e fis g a) r r8 r
 	r4 r8 a16( g fis e d! c!
-	b cis dis e fis g) a( ais b8) b( \mark \default
+	b cis dis e fis g) a( ais b8) b(\mf \mark \default
 % Bars 66 to 70
 	a!) r r r4 r8
 	R2.
@@ -556,7 +556,7 @@ musicFagotteIMvtI = \relative c {
 	a->( g!) fis-. e-. dis-. d-. 
 	c r r r4 r8
 % Bars 491 to 495
-	b'-.[\f r16 b b8] b(\< cis) dis-.\!
+	b'-.[\p r16 b b8] b(\< cis) dis-.\!
 	e(\> d!) c!\!-. b-. a-. gis-. 
 	a(-> g!) fis-. e-. dis-. d-. 
 	c-. g'( fis e cisis dis)

@@ -453,7 +453,7 @@ musicHornIIIMvtI = \relative c {
 	b4 b8 b4 b8
 	R2.*2
 	
-	b4\f b8 b4 b8
+	b4\mf b8 b4 b8
 % Bars 476 to 480
 	b4 b8 b4 b8
 	R2.*2

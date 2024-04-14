@@ -181,7 +181,7 @@ musicHornIVMvtI = \relative c {
 	r e'( e,)~ e\f e'( e,)
 	r b( b') b,( b' b,)
 % Bars 186 to 190
-	cis4 cis8~ cis cis4
+	cis4\f cis8~ cis cis4
 	cis cis8~ cis cis4
 	d4_\pcrescmolto d8~ d a'4
 	gis4 gis8~ gis gis4
@@ -484,7 +484,7 @@ musicHornIVMvtI = \relative c {
 	dis4 dis8 dis4 dis8
 	R2.*2
 	
-	d!4\f d8 d4 d8
+	d!4\mf d8 d4 d8
 % Bars 476 to 480
 	d4 d8 d4 d8
 	R2.*2

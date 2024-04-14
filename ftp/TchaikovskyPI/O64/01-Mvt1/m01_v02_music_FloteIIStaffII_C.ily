@@ -168,7 +168,7 @@ musicFloteIIStaffIIMvtI = \relative c' {
 	
 % Bars 176 to 180
 	\changeStaffName \flII-III r4 \omitAdue d8(~_\pcresc d cis b) 
-	g4\mf\< gis8~ gis a4\!
+	\aIIXoffset #-3 g4\mf\< gis8~ gis a4\!
 	a\f\< ais8~ ais b4\!
 	r4 e8(~_\fdim e d cis)
 	r4 d8(~_\menof d cis b)

@@ -184,7 +184,7 @@ musicVioloncellMvtIV = \relative c {
 	eis cis' eis, cis'
 % Bars 141 to 145
 	fis, cis' fis, cis'
-	fis,_\crescmarkup d' fis, d'
+	fis,_\pococresc d' fis, d'
 	g, d' g, d'
 	gis, e' a, e'
 	ais, fis' b, fis'
@@ -622,7 +622,7 @@ musicVioloncellMvtIV = \relative c {
 	gis ais gis ais b ais b cis b cis, dis cis
 	dis e dis e fis e fis gis fis fis, gis fis}
 	b16:32 cis: dis: e: fis: gis: a: ais: b: cis,: dis: e: fis: gis: a: ais: \mark \markAa
-	b8 r <e,, b' gis' e'>4\fff <a e' a> q
+	b8 r <e,, b' gis' e'>4-\offset X-offset 1.5 \fff <a e' a> q
 % Bars 491 to 495
 	<e b' gis' e'> q q q
 	q q <a e' a> q

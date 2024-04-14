@@ -407,7 +407,7 @@ musicFagotteIMvtIV = \relative c {
 	d\sf e)\> cis( d
 	b8)\! r d4--\mf cis-- d(
 	b\sf cis) \partCombineApart \stemDown a(_\> b\! \mark \default
-	\once \stemUp gis8)\p r r4 r2
+	\once \stemUp gis8) r r4 r2
 % Bars 341 to 345
 	s1*8 \partCombineAutomatic
 % Bars 346 to 350

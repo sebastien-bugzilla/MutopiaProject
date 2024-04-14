@@ -43,7 +43,7 @@ musicViolineIMvtIV = \relative c {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	\tuplet 3/2 4 {r8 b,:16^\arco cis: dis: e: fis: g: b: a: g: fis: e:
+	\tuplet 3/2 4 {r8 b,:16^\arco-\offset X-offset -3 \ff cis: dis: e: fis: g: b: a: g: fis: e:
 	dis: e: fis: e: fis: g: fis: g: a: g: a: b:}
 	r4 <c c'>\ff r <d b'>
 	r <c c'> r <d b'>
@@ -596,7 +596,7 @@ musicViolineIMvtIV = \relative c {
 	\time 2/2 e4 r8 b,(\p e4) r8 fis(
 	gis4) r8 fis( eis4) r8 gis(
 % Bars 506 to 510
-	cis,4) r8 d( dis4) r8 eis(
+	cis,4)_\crescmarkup r8 d( dis4) r8 eis(
 	fis4) r8 gis( a4) r8 ais(
 	b4) r8 bis( cis4) r8 dis(
 	e4) r8 fis( gis4) r8 a(

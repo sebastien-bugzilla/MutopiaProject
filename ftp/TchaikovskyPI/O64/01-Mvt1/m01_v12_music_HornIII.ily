@@ -170,7 +170,7 @@ musicHornIIIMvtI = \relative c {
 	r e,( e')~ e\f e,( e')
 	r b( b,) b'( b, b')
 % Bars 186 to 190
-	cis r r r4 r8
+	cis\f r r r4 r8
 	R2.
 	a4_\pcrescmolto a8~ a b4
 	b4 b8~ b b4
@@ -469,7 +469,7 @@ musicHornIIIMvtI = \relative c {
 	b4 b8 b4 b8
 	R2.*2
 	
-	b4\f b8 b4 b8
+	b4\mf b8 b4 b8
 % Bars 476 to 480
 	b4 b8 b4 b8
 	R2.*2

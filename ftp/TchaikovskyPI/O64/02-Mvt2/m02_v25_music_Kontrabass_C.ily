@@ -57,7 +57,7 @@ musicKontrabassMvtII = \relative c {
 	d4.\f cis b r4 r8
 	d4. cis b r4 r8
 % Bars 41 to 45
-	gis'4. fis eis r4 r8
+	gis'4.\ff fis eis r4 r8
 	gis4. fis f2.
 	e2.~ e4. ees
 	R1. \mark \default
@@ -156,7 +156,7 @@ musicKontrabassMvtII = \relative c {
 	cis,\< cis'\! d,!\> d'!\!
 	b,\< a gis g\!
 	fis(\f\> fis'8)\! r r r2. \mark \default
-	d4.(\mp dis) \after 2.*5/6 \! e2.\>
+	d4.(\mp\< dis) \after 2.*5/6 \! e2.\>
 	bis4.(\< cis) \after 2.*5/6 \! d!2.\>
 % Bars 126 to 130
 	b!4._\mfcresc a gis g

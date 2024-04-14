@@ -212,7 +212,7 @@ musicKlarinetteIMvtI = \relative c {
 	r8 c( d) e4.
 % Bars 176 to 180
 	r4 \markEO #'(-6 . 1.3) f8(~_\pcresc f e d)
-	bes!4\mf\< b8~ b c4\!
+	\aIIXoffset #-3 bes!4\mf\< b8~ b c4\!
 	c\f\< cis8~ cis d4\!
 	r4 g8(~_\fdim g f e)
 	r4 f8_\menof(~ f e d)

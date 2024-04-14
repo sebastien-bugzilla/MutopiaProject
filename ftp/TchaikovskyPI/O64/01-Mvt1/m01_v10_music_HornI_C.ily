@@ -44,7 +44,7 @@ musicHornIMvtI = \relative c {
 	fis r r b r r
 % Bars 61 to 65
 	fis'  r r g r r
-	fis\p r r e r r
+	fis-\tweak X-offset #-3 \p r r e r r
 	b r r g r r
 	fis r r b r r
 	fis' r r r fis-\tweak X-offset #-3 \mf fis \mark \default

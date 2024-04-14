@@ -385,7 +385,7 @@ musicKlarinetteIMvtIV = \relative c {
 	bes fis g a
 	bes c d ees
 	f! d' d d \mark \default
-	d8 r g,,4-- f-- g(
+	d8 r g,,4--\mf f-- g(
 	e->\< f) d( e\!
 % Bars 326 to 330
 	c) r r2

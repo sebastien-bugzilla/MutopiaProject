@@ -141,7 +141,7 @@ musicFloteIIMvtIII = \relative c {
 	\after 2.*5/6 \! fis2.\<
 % Bars 156 to 160
 	fis4(-> e2)
-	fis8( gis a gis fis eis)
+	fis8(\p gis a gis fis eis)
 	eis4(-> fis2)
 	fis a8( b)
 	b r r4 r

@@ -245,7 +245,7 @@ musicViolaMvtI = \relative c {
 % Bars 196 to 200
 	a a4 gis a8~
 	a a4 gis( a8)
-	<fis a>8[ r16 q q8] q q q
+	<fis a>8[\fff r16 q q8] q q q
 	q q q  q q q
 	r d'8:16_\fcresc b: a: gis: g: 
 % Bars 201 to 205

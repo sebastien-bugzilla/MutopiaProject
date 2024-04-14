@@ -184,7 +184,7 @@ musicVioloncellMvtIV = \relative c {
 	eis cis' eis, cis'
 % Bars 141 to 145
 	fis, cis' fis, cis'
-	fis,_\crescmarkup d' fis, d'
+	fis,_\pococresc d' fis, d'
 	g, d' g, d'
 	gis, e' a, e'
 	ais, fis' b, fis'

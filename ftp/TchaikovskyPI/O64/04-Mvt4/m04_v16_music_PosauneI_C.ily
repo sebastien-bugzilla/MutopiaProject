@@ -355,7 +355,7 @@ musicPosauneIMvtIV = \relative c {
 	r2 a,4 c
 	r2 e,4 a
 % Bars 426 to 430
-	\partCombineApart b2. b8 b \partCombineAutomatic
+	\partCombineApart \stemUp b2. b8 b \partCombineAutomatic
 	c2. c8 c
 	b4~ b8 r r2
 	R1

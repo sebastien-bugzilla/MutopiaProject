@@ -499,7 +499,7 @@ musicFloteIIIMvtIV = \relative c {
 	b1~
 % Bars 471 to 475
 	b8 r r4 r2\fermata \bar "||"
-	\key e \major \time 4/4 \tuplet 3/2 4 {e,8( dis cis b ais b) e( dis cis b ais b)
+	\key e \major \time 4/4 \tuplet 3/2 4 {e,8(\ff dis cis b ais b) e( dis cis b ais b)
 	e( dis cis b ais b) e( dis cis b ais b)
 	e( dis cis b ais b) cis( dis cis bis cis bis)
 	b!( cis b a! b a) gis( a gis fis gis fis)

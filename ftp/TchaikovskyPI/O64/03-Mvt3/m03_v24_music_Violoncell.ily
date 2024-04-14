@@ -32,7 +32,7 @@ musicVioloncellMvtIII = \relative c {
 	gis4(\> a2)\!
 	a8(\p ais b bis) cis( dis
 	gis,) r r4 r
-	f,^\pizz f' f
+	f,^\pizz\p f' f
 % Bars 21 to 25
 	e, e' e
 	f, f' f

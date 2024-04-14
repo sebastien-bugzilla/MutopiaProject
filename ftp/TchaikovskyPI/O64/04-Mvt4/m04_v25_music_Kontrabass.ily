@@ -44,7 +44,7 @@ musicKontrabassMvtIV = \relative c {
 	gis[(\< a gis]) e( fis e)\!} r4 \tuplet 3/2 4 {cis'8(\mf dis cis)
 	b8([ cis b)] e,( fis e) fis[(\> gis fis)] fisis( gis fisis)\!
 	gis([\< ais gis)] ais( b ais) b( cis b)\! cis(\f bis cis)
-	b!8([\f cis b]) } r4 r \tuplet 3/2 4 {fis8( gis fis)
+	b!8([ cis b]) } r4 r \tuplet 3/2 4 {fis8( gis fis)
 % Bars 31 to 35
 	b([\> cis b]) } r4 \tuplet 3/2 4 {b8([ cis b])\!} r4 \mark \default
 	\tuplet 3/2 4 {a8[(\p b a])} r4 \tuplet 3/2 4 {a8( b a)} r4
@@ -54,7 +54,7 @@ musicKontrabassMvtIV = \relative c {
 % Bars 36 to 40
 	b[( cis b]) e,( fis e) fis([\> gis fis]) fisis( gis fisis)\!
 	gis([\< ais gis]) ais( b ais) b[( cis b)]\! cis(\ff bis cis)
-	b!(\ff cis b)} r4 r2
+	b!( cis b)} r4 r2
 	\tuplet 3/2 4 {r8 r b'16\f b a8:16 g: fis: e: cis: dis: e: fis: g:
 	a: g: fis: g: fis: e: fis: e: dis: e: dis: cis: }
 % Bars 41 to 45
@@ -179,7 +179,7 @@ musicKontrabassMvtIV = \relative c {
 	eis cis' eis, cis'
 % Bars 141 to 145
 	fis, cis' fis, cis'
-	fis,_\crescmarkup d' fis, d'
+	fis,_\pococresc d' fis, d'
 	g, d' g, d'
 	gis, e' a, e'
 	ais, fis' b, fis'
@@ -356,7 +356,7 @@ musicKontrabassMvtIV = \relative c {
 % Bars 291 to 295
 	
 % Bars 296 to 300
-	e4 e' dis e
+	e4\ff e' dis e
 	b a g fis
 	e e' dis e
 	b a g fis
@@ -497,7 +497,7 @@ musicKontrabassMvtIV = \relative c {
 	a_\dimmarkup e' cis gis'
 	fis cis'\p a, a'
 	cis,\< fis b, fis'\! \mark \default
-	gis,4 b gis b
+	gis,4\f b gis b
 	gis cis eis cis
 % Bars 416 to 420
 	a cis a cis

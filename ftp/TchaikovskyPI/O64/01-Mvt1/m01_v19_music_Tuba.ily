@@ -245,7 +245,7 @@ musicTubaMvtI = \relative c {
 	
 	
 % Bars 276 to 280
-	f'4( bes,8) f'4( bes,8)
+	f'4(\mf bes,8) f'4( bes,8)
 	ges r r r4 r8
 	R2.*7
 % Bars 281 to 285

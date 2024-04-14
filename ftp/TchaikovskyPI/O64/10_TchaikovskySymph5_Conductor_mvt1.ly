@@ -73,9 +73,6 @@
 				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
 					\new Staff <<
 						\new Voice {
-							\displayFilterVoice
-						}
-						\new Voice {
 							\formatConductorMvtI
 						}
 						\new Voice {

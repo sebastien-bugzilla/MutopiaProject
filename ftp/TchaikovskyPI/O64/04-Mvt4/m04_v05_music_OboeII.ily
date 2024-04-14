@@ -538,7 +538,7 @@ musicOboeIIMvtIV = \relative c {
 	fis1~
 % Bars 471 to 475
 	fis8 r r4 r2\fermata \bar "||"
-	\key e \major \time 4/4 \tuplet 3/2 4 {e8( dis cis b ais b) e( dis cis b ais b)
+	\key e \major \time 4/4 \tuplet 3/2 4 {e8(\ff dis cis b ais b) e( dis cis b ais b)
 	e( dis cis b ais b) e( dis cis b ais b)
 	e( dis cis b ais b) cis( dis cis bis cis bis)
 	b!( cis b a! b a) gis( a gis fis gis fis)
@@ -550,7 +550,7 @@ musicOboeIIMvtIV = \relative c {
 	fis( gis fis gis ais gis) fis( gis fis e fis e }
 % Bars 481 to 485
 	dis) r r4 r2 \mark \default
-	e2\f dis'
+	e2\ff dis'
 	e1
 	e2 dis
 	e2. fis4

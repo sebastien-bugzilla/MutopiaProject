@@ -23,7 +23,7 @@ musicKontrabassMvtIII = \relative c {
 	
 % Bars 11 to 15
 	\mark \default
-	a,4 a' r 
+	a,4\p a' r 
 	a, a' r
 	a,\< a'\! r
 	gis,\> gis'\! r
@@ -32,7 +32,7 @@ musicKontrabassMvtIII = \relative c {
 	fis,,\> fis'\! r
 	b,\p b' r
 	e, e' r
-	f,, f' r
+	f,,\p f' r
 % Bars 21 to 25
 	e, e' r
 	f, f' r

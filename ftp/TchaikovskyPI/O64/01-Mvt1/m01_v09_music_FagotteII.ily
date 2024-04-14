@@ -551,7 +551,7 @@ musicFagotteIIMvtI = \relative c {
 	a->( g!) fis-. e-. dis-. d-. 
 	c r r r4 r8
 % Bars 491 to 495
-	b'-.[\f r16 b b8] b(\< cis) dis-.\!
+	b'-.[\p r16 b b8] b(\< cis) dis-.\!
 	e(\> d!) c!\!-. b-. a-. gis-. 
 	a(-> g!) fis-. e-. dis-. d-. 
 	c-. g'( fis e cisis dis)

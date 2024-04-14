@@ -73,6 +73,9 @@
 				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
 					\new Staff <<
 						\new Voice {
+							\formatConductorMvtIV
+						}
+						\new Voice {
 							\tempiMvtIV
 						}
 						\new Voice {

@@ -384,7 +384,7 @@ musicViolaMvtIV = \relative c {
 	c c2 c4~
 	c c2 c4~
 % Bars 316 to 320
-	c8 r <e' c'>4 <g, g'> <e' c'>
+	c8 r <e' c'>4\ff <g, g'> <e' c'>
 	<b g'> <c fis> <b g'> <c e a>
 	<b e> <c fis> <d g> <e a>
 	g <fis a> <b, g'> <a e'>
@@ -512,7 +512,7 @@ musicViolaMvtIV = \relative c {
 	b( a) g( fis)
 	a( g) fis( e)
 % Bars 426 to 430
-	\tuplet 3/2 4 {a8[ a a]  g g g  fis[ fis fis]  e e e
+	\tuplet 3/2 4 {a8[\fff a a]  g g g  fis[ fis fis]  e e e
 	g[ g g]  fis fis fis   e[ e e]   dis dis dis
 	e[_\semprecontuttaforza e e]  d! d d  c[ c c]   b b b
 	d[ d d]  c c c  b[ b b]  a a a

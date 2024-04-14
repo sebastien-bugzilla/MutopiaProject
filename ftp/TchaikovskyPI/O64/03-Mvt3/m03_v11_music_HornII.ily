@@ -120,7 +120,7 @@ musicHornIIMvtIII = \relative c {
 	R2.
 	r8 cis,-.\noBeam cis-. bes'-. r4
 	R2.
-	r4 r gis->\mf(
+	r4 r gis->\mp(
 	fis8) r r4 r
 % Bars 111 to 115
 	r r gis->\mp(

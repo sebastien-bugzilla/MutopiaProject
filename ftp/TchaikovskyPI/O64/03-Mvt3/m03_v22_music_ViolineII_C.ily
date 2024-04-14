@@ -139,7 +139,7 @@ musicViolineIIMvtIII = \relative c {
 	r4 r <<{
 		cis'8( e)
 		fis4->~ fis8 r r4
-		r gis,->~ gis8 \oneVoice r \mark \default
+		r gis,~->-\offset X-offset -3 ^\pp gis8 \oneVoice r \mark \default
 	} \\ {
 		cis,(-\offset X-offset -2.5 \pp e
 		gis16) r r8 r4 bis->\pp~
@@ -286,7 +286,7 @@ musicViolineIIMvtIII = \relative c {
 	e-.)\! r f2\f~
 	f4 <g, g'>-- c--
 % Bars 221 to 225
-	f-- <g, g'>-- c--
+	f-- <g, g'>--_\crescmarkup c--
 	f-- <g, g'>-- c--
 	f8 r a,2~-\offset X-offset -0.5 \ff
 	a2.~
@@ -302,7 +302,7 @@ musicViolineIIMvtIII = \relative c {
 	dis4.-\offset X-offset -1 \mf\< e8( dis fis\!
 	e-.) r f2\f~
 	f4 <g, g'>-- c--
-	f-- <g, g'>-- c--
+	f-- <g, g'>--_\crescmarkup c--
 % Bars 236 to 240
 	f-- <g, g'>-- c--
 	f8 r a,2-\offset X-offset -1 \ff~

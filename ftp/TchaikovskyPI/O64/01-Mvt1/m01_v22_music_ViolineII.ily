@@ -147,7 +147,7 @@ musicViolineIIMvtI = \relative c {
 	b4.\ff\> b,8( cis d)\!
 	\after 2.*5/6 \! cis2.\p\<
 	<b fis'>4.\sff\>~ q4 <b g'>8\!
-	\after 2.*5/6 \! <ais fis'>2.\mf\<
+	\after 2.*5/6 \! <ais fis'>2.\mp\<
 % Bars 126 to 130
 	<b fis'>4.\sff\>~ q4 <b g'>8\!
 	\after 2.*5/6 \! <ais fis'>2.\mp\<
@@ -337,7 +337,7 @@ musicViolineIIMvtI = \relative c {
 	<a' f'>\f r r <d, d'>\< r q\!
 	<g, g'>4\ff q8 q4 q8
 % Bars 286 to 290
-	r4 r8 <<{bes'16( cis d e f g)
+	r4 r8^\div <<{bes'16( cis d e f g)
 	\noteShift #1.1 <d, d'>4 \noteShift #1.1 <d a'>8 \noteShift #1.1 <d d'>4 \noteShift #1.1 <d a'>8} \\ {bes16( cis d e f g) <d d'>4 <d a'>8 <d d'>4 <d a'>8}>>
 	r4 r8 <<{a'16( b! cis d e f)
 	\noteShift #1.1 <g,, g'>4 \noteShift #1.1 q8 \noteShift #1.1 q4 \noteShift #1.1 q8} \\ {a16( b! cis d e f) <g, g'>4 q8 q4 q8}>>
@@ -599,7 +599,7 @@ musicViolineIIMvtI = \relative c {
 % Bars 501 to 505
 	e: dis: e: e: dis: e: 
 	e: dis: e: e: dis: e: \mark \default
-	b'8[\ff r16 a g8]~ g fis e~
+	b'8[\fff r16 a g8]~ g fis e~
 	e d c b a g
 	e'[ r16 d' c8]~ c b a~
 % Bars 506 to 510

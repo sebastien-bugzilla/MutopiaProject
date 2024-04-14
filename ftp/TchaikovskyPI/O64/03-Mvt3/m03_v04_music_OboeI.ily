@@ -116,7 +116,7 @@ musicOboeIMvtIII = \relative c {
 	b-. r r4 cis8-.\p cis-. 
 % Bars 116 to 120
 	b-. r dis\mp-. dis-. dis-.\noBeam r
-	fisis-. fisis-. gis-.\noBeam r ais-. ais-. \mark \default
+	fisis-.\mf fisis-. gis-.\noBeam r ais-.\f ais-. \mark \default
 	gis-. r r4 r8 d'\mf-.
 	cis-. a-. a-.\noBeam r gis4->(
 	a8) r r4 r8 d-.

@@ -94,7 +94,7 @@ musicHornIVMvtII = \relative c {
 	
 	aes2:8\mf aes:
 	aes: aes:
-	des,: des:
+	des,:\f des:
 	des: des: \mark \default
 % Bars 91 to 95
 	R1*4

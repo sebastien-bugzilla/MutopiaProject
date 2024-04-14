@@ -124,7 +124,7 @@ musicViolineIIMvtII = \relative c {
 % Bars 91 to 95
 	R1*2
 	
-	r4 dis'16(^\unis e cis dis bis8) r b'!16( bis b bis
+	r4 dis'16(^\unis\mf e cis dis bis8) r b'!16( bis b bis
 	cis8) r dis,16( e cis dis bis8) r b'!16( bis b bis)
 	gis,4._\fcresc dis'8 \tuplet 3/2 8 {fis16 fis \liiri fis \lirii e e e dis dis \liiri dis \lirii cis cis cis}
 % Bars 96 to 100
@@ -199,7 +199,7 @@ musicViolineIIMvtII = \relative c {
 	ais4.( b4) b8 b4.( c4) c8
 	\tuplet 2/3 4. {c( cis) cis cis cis( d) d d}
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		d4\fff fis,8( b) \after 2*3/4 \! a2\>
+		d4\ffff fis,8( b) \after 2*3/4 \! a2\>
 		b4\ff d,8( g) \after 2*3/4 \! fis2\>
 	}
 	\timeSignature 12/8 g4.\f b,4( cis8) \after 2.*5/6 \! <d, d'>2.~\>

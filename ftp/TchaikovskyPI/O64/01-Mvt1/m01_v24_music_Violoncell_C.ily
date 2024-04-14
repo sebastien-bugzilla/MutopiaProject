@@ -178,9 +178,9 @@ musicVioloncellMvtI = \relative c {
 	R2.*2
 % Bars 141 to 145
 	
-	b'8\pp r r cis r r
+	b8\pp r r cis r r
 	d r r r4 r8
-	r4 r8 b4.\pp^\arco
+	r4 r8 b'4.\pp^\arco
 	r4 r8 a4.
 % Bars 146 to 150
 	r4 r8 <g a>4.

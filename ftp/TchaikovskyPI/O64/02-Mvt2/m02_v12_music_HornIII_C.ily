@@ -90,7 +90,7 @@ musicHornIIIMvtII = \relative c {
 	
 	b!2:8\mf bes:
 	\partCombineApart R1 \partCombineAutomatic
-	des2:8 des:
+	des2:8\f des:
 	des: des: \mark \default
 % Bars 91 to 95
 	R1*4

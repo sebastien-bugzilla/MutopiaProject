@@ -159,7 +159,7 @@ musicKlarinetteIMvtII = \relative c {
 	g4.(\> f2.)\< f8-- g-- a--\!
 	bes4._\fcresc bes4 bes8 bes4.~ bes4 bes8
 % Bars 131 to 135
-	\tuplet 2/3 4. {bes( a) d-- c--} bes(_\dimmarkup a) g-- f-- e-- d--
+	\tuplet 2/3 4. {bes( a) d--\ff c--} bes(_\dimmarkup a) g-- f-- e-- d--
 	f4.->(\f e2.) c8(\< d) e--\!
 	g4.(\> f2.)\< f8-- g-- a--\!
 	b,4.\f b4 b8 b4. f'8-- g-- a--

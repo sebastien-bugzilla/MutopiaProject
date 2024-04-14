@@ -90,7 +90,7 @@ musicViolineIMvtIII = \relative c {
 % Bars 66 to 70
 	
 	
-	<b, d>8 r cis4 r
+	<b, d>8\f r cis4 r
 	fis r a
 	r ais r
 % Bars 71 to 75
@@ -166,7 +166,7 @@ musicViolineIMvtIII = \relative c {
 	a\>-. gis-. fis-. e\!-. d\<-. e-. d-. e\!-. fis\>-. e-. d-. cis\!-. 
 	b\<-. cis-. b-. cis\!-. d\>-. cis-. b-. a\!-. gis-. a-. gis-. a-.
 	b\<-. a-. gis-. fis-. eis-. fis-. gis-. a-. b-. cis-. d-. b\!-.
-	cis8(-> fis,) r4 r
+	cis8(->\f fis,) r4 r
 	cis--\mf b2~
 % Bars 136 to 140
 	b r4

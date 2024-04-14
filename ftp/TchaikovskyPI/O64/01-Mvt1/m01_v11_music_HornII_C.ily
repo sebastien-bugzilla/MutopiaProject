@@ -44,7 +44,7 @@ musicHornIIMvtI = \relative c {
 	b r r g' r r
 % Bars 61 to 65
 	fis  r r g r r
-	fis\p r r g r r
+	fis-\tweak X-offset #-3 \p r r g r r
 	fis r r b, r r
 	b r r g' r r
 	fis r r r b-\tweak X-offset #-3 \mf a \mark \default
@@ -446,7 +446,7 @@ musicHornIIMvtI = \relative c {
 % Bars 441 to 445
 	r fis4~ fis8 fis'( fis,)
 	r cis(-\offset X-offset -1.5 \f cis') cis,( cis' cis,)
-	fis4 fis8~ fis fis4
+	fis4\f fis8~ fis fis4
 	fis fis8~ fis fis4
 	e4 e8~ e b'4
 % Bars 446 to 450

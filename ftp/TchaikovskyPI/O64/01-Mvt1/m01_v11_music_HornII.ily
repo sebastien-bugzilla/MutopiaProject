@@ -454,7 +454,7 @@ musicHornIIMvtI = \relative c {
 % Bars 441 to 445
 	r fis4~ fis8 fis'( fis,)
 	r cis(\f cis') cis,( cis' cis,)
-	fis4 fis8~ fis fis4
+	fis4\f fis8~ fis fis4
 	fis fis8~ fis fis4
 	e4_\pcrescmolto e8~ e b'4
 % Bars 446 to 450
