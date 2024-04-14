@@ -583,7 +583,7 @@ musicKontrabassMvtIV = \relative c {
 	b cis b e fis e fis gis fis fisis gis fisis
 	gis ais gis ais b ais b cis b cis, dis cis
 	dis e dis e fis e fis gis fis fis, gis fis}
-	b16 cis dis e fis gis a ais b8 r r4 \mark \default
+	b16 cis dis e fis gis a ais b8 r r4 \mark \markAaBox
 	e,\fff e a a
 % Bars 491 to 495
 	e e e e
@@ -594,7 +594,7 @@ musicKontrabassMvtIV = \relative c {
 % Bars 496 to 500
 	dis4 e fis fisis
 	gis8 cis, dis e fis!4 fisis
-	gis8 cis, dis e fis!4 fisis \mark \default
+	gis8 cis, dis e fis!4 fisis \mark \markBbBox
 	gis8 gis, a ais b cis d dis
 	e eis fis fisis gis a ais bis
 % Bars 501 to 505
@@ -610,7 +610,7 @@ musicKontrabassMvtIV = \relative c {
 	bis cis b c
 	g\fff gis a ais
 % Bars 511 to 515
-	b bis cis dis \mark \default
+	b bis cis dis \mark \markCcBox
 	e e'\p d e
 	cis d b cis
 	a_\crescmarkup b gis a
@@ -626,7 +626,7 @@ musicKontrabassMvtIV = \relative c {
 	bes, bes' r bes,
 	b! b'! r b,
 	b b' r b,
-	b b' r b, \mark \default
+	b b' r b, \mark \markDdBox
 % Bars 526 to 530
 	b r b'2~
 	b bes~
@@ -660,7 +660,7 @@ musicKontrabassMvtIV = \relative c {
 % Bars 551 to 555
 	e4 r r a r r
 	e4 r r a r r
-	e4 r r a r r \mark \default
+	e4 r r a r r \mark \markEeBox
 	e4 r r r2.
 	e4 r r r2.
 % Bars 556 to 560

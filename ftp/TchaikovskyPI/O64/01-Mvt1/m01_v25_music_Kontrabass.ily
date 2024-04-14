@@ -147,12 +147,16 @@ musicKontrabassMvtI = \relative c {
 	a4 a'8 g4 g8 \mark \default
 	fis4 eis8 fis r r
 % Bars 116 to 120
-	R2.*12
+	R2.*8
 % Bars 121 to 125
 	
+	
+	
+	\ni \mmrPos #-7 R2.
+	\mmrPos #-4 R
 % Bars 126 to 130
-	
-	
+	\mmrPos #-7 R
+	\mmrPos #-4 R \no
 	d'2.\ff
 	g
 	d4. g
@@ -256,11 +260,15 @@ musicKontrabassMvtI = \relative c {
 	d8[ r16 d d8] d d d
 	d8[ r16 d d8] d d d
 	d8[ r16 d d8] d d d \mark #11
-	R2.*12
+	R2.*10
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 % Bars 226 to 230
 	bes'8\p r r aes r r
 	g r r f r r
@@ -433,14 +441,14 @@ musicKontrabassMvtI = \relative c {
 % Bars 371 to 375
 	b4 b'8 a4 a8
 	gis4 fisis8 gis8 r r
-	R2.*12
+	R2.*8
 % Bars 376 to 380
 	
 % Bars 381 to 385
-	
-	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-7 R
+	\mmrPos #-4 R \no
 	e'2.\ff
 % Bars 386 to 390
 	a
@@ -468,8 +476,8 @@ musicKontrabassMvtI = \relative c {
 	R2.
 % Bars 406 to 410
 	R
-	R2.*2
-	
+	R2.
+	\ni \mmrPos #-4 R2. \no
 	r4 r8 dis,\ff^\pizz dis' r
 	R2.
 % Bars 411 to 415
@@ -545,14 +553,14 @@ musicKontrabassMvtI = \relative c {
 	e8[ r16 e e8] e e e
 	e8[ r16 e e8] e e e \mark \default
 % Bars 471 to 475
-	R2.*14
+	R2.*11
 % Bars 476 to 480
 	
 % Bars 481 to 485
 	
-	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g,8\ff r r g r r
 % Bars 486 to 490
 	g r r g r r \mark \default
@@ -588,7 +596,7 @@ musicKontrabassMvtI = \relative c {
 	e r r d\f r r
 	c r r b r r
 	e r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markAaBox
 	e r r d\mf r r
 % Bars 516 to 520
 	c_\dimmarkup r r b r r
@@ -598,7 +606,7 @@ musicKontrabassMvtI = \relative c {
 	c r r b r r
 % Bars 521 to 525
 	e r r d r r
-	c r r b r r \mark \default
+	c r r b r r \mark \markBbBox
 	e\p r r d r r
 	c r r b r r
 	e r r d r r

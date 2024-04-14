@@ -37,12 +37,12 @@ musicKontrabassMvtII = \relative c {
 	cis d!
 	b4.\< a\! gis\> g\!
 	fis8\pp r r r4 r8 r2.
-	R1.*5
+	R1.*4
 % Bars 26 to 30
 	
 	
 	
-	
+	\ni \mmrPos #-6 R1. \no
 	fis'8(-.\pp fis-. fis-. fis-. fis-. fis)-. fis4. ais,4( d8)
 % Bars 31 to 35
 	cis4\< b8( ais4) b'8( ais4) fis8( e4)\! r8

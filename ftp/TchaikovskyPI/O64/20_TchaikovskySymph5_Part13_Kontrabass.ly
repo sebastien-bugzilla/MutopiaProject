@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.1"
 \include "./00-Common/TchaikovskySymph5_Header.ily"
 \include "./00-Common/TchaikovskySymph5_PaperParts.ily"
 \include "./00-Common/TchaikovskySymph5_timeMvt.ily"
@@ -21,6 +22,7 @@
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
 \include "./00-Common/TchaikovskySymph5_Format_PartKontrabass.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
+\include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v25_music_Kontrabass.ily"
 \include "./02-Mvt2/m02_v25_music_Kontrabass.ily"
 \include "./03-Mvt3/m03_v25_music_Kontrabass.ily"
@@ -28,10 +30,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceKontrabassMvtI" { \cueVoiceKontrabassMvtI }
-\addQuote "cueVoiceKontrabassMvtII" { \cueVoiceKontrabassMvtII }
-\addQuote "cueVoiceKontrabassMvtIII" { \cueVoiceKontrabassMvtIII }
-\addQuote "cueVoiceKontrabassMvtIV" { \cueVoiceKontrabassMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -49,21 +47,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatKontrabassMvtI
+%			}
 			\new Voice {
-				\formatKontrabassMvtI
+				\keepWithTag #'(kontrabass) \tempiPartMvtI
 			}
 			\new Voice {
-				\timeMvtI \generalLayouts \partLayouts
-				\nameKontrabassMvtI \musicKontrabassMvtI
+				\InCueContext \cueVoiceKontrabassMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameKontrabassMvtI \musicKontrabassMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -71,21 +71,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatKontrabassMvtII
+%			}
 			\new Voice {
-				\formatKontrabassMvtII
+				\keepWithTag #'(kontrabass) \tempiPartMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalLayouts \partLayouts
-				\nameKontrabassMvtII \musicKontrabassMvtII
+				\InCueContext \cueVoiceKontrabassMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameKontrabassMvtII \musicKontrabassMvtII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
+				\bold 2.
 			}
 		}
 		\layout {
@@ -93,21 +95,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatKontrabassMvtIII
+%			}
 			\new Voice {
-				\formatKontrabassMvtIII
+				\keepWithTag #'(kontrabass) \tempiPartMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \generalLayouts \partLayouts
-				\nameKontrabassMvtIII \musicKontrabassMvtIII
+				\InCueContext \cueVoiceKontrabassMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameKontrabassMvtIII \musicKontrabassMvtIII
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
+				\bold 3.
 			}
 		}
 		\layout {
@@ -115,21 +119,23 @@
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\formatKontrabassMvtIV
+%			}
 			\new Voice {
-				\formatKontrabassMvtIV
+				\keepWithTag #'(kontrabass) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \generalLayouts \partLayouts
-				\nameKontrabassMvtIV \musicKontrabassMvtIV
+				\InCueContext \cueVoiceKontrabassMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameKontrabassMvtIV \musicKontrabassMvtIV
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					IV
-				}
+				\bold 4.
 			}
 		}
 		\layout {

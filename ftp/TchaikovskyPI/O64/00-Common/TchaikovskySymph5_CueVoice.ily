@@ -2823,14 +2823,39 @@ cueVoiceVioloncellMvtIV = \relative c {
 %#               C U E   V O I C E   F O R   K O N T R A B A S S               #
 %###############################################################################
 cueVoiceKontrabassMvtI = \relative c {
-	
+	s1*37 s2.*86
+	% bar 124 - 127
+	<d d'>4.~\sff^\markup {Vcll.} q4 e8
+	fis2.
+	q4.\sff~ q4 e8
+	fis2.
+	s2.*96
+	% bar 224 - 225
+	\cueClef treble r8^\markup {Viol.II} f'-. g-. a( bes b
+	c)\noBeam a-.^\markup {Viol.I} bes-. c( d ees) \cueClefUnset
+	s2.*155
+	% bar 381 - 384
+	e,,4.~\sff^\markup {Vcll.} e4 <fis a>8
+	gis2.
+	e4.\sff~ e4 <fis a>8
+	gis2.
+	s2.*23
+	% bar 408
+	\cueClef treble fis''4.(~^\markup {Viol.I} fis8 eis fis) \cueClefUnset
+	s2.*73
+	% bar 482 - 484
+	\cueClef treble r8^\markup {Viol.I} a,-.\mf b-. c( dis e
+	g) r r e(\f fis g
+	a) r r fis(\ff g a) \cueClefUnset
 }
 cueVoiceKontrabassMvtII = \relative c {
-	
+	s1.*28
+	% bar 29
+	r2.^\markup {Fag.I} fis4. ais,4( dis8)
 }
 cueVoiceKontrabassMvtIII = \relative c {
-	
+	% no CueVoice for kontrabass mvt III
 }
 cueVoiceKontrabassMvtIV = \relative c {
-	
+	% no CueVoice for kontrabass mvt IV
 }
