@@ -20,7 +20,7 @@
 \include "./00-Common/TchaikovskySymph5_LayoutParts.ily"
 \include "./00-Common/TchaikovskySymph5_NameVoice.ily"
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
-\include "./00-Common/TchaikovskySymph5_Format_PartKlarinetten.ily"
+\include "./00-Common/TchaikovskySymph5_Format_Part03_Klarinetten.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
 \include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v06_music_KlarinetteI.ily"

@@ -20,7 +20,7 @@
 \include "./00-Common/TchaikovskySymph5_LayoutParts.ily"
 \include "./00-Common/TchaikovskySymph5_NameVoice.ily"
 \include "./00-Common/TchaikovskySymph5_Shortcuts.ily"
-\include "./00-Common/TchaikovskySymph5_Format_PartPosaunen.ily"
+\include "./00-Common/TchaikovskySymph5_Format_Part07_Posaunen.ily"
 \include "./00-Common/TchaikovskySymph5_CueVoice.ily"
 \include "./00-Common/TchaikovskySymph5_Tempi.ily"
 \include "./01-Mvt1/m01_v16_music_PosauneI.ily"
