@@ -9,19 +9,27 @@ musicFloteIIMvtII = \relative c {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1.*15
+	\mmrLength #36 \mmrnDown R1.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	R1.*2
 	
-	
-	\mark \default
+	<< \mmrLength #12 R1. { s2. \tempoXoffset #-3 s }>> \mark \default
 % Bars 16 to 20
-	R1.*16
+	R1.*3
+	
+	
+	\tempoXoffset #-1 R1.
+	R1.*4
 % Bars 21 to 25
 	
+	
+	
+	\mmrnDown R1.
+	R1.*7
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -34,11 +42,12 @@ musicFloteIIMvtII = \relative c {
 	r4 r8 r fis'(\f a d fis a\> d fis a)\!
 	r4 r8 e,4(~\mp e16 e,)\< \tuplet 2/3 4. {e8( a) cis-- e--\!}
 	a4->(~\f a16 a,) a4.(~ a8 b cis d) r r 
-	R1.*5
+	\mmrLength #12 R1.*4
+	
 % Bars 41 to 45
 	
 	
-	
+	R1.
 	\ni \mmrPos #4 R1. \no \mark \default
 	\once \voiceOne r2. g,4.(\pp\< fis4 e8
 % Bars 46 to 50
@@ -48,7 +57,7 @@ musicFloteIIMvtII = \relative c {
 	r2. g4.\pp(\< fis4 e8
 	d)\! r r r4 r8 \tuplet 2/3 4. {fis8\mp\<( gis a fis}
 % Bars 51 to 55
-	eis8)\! r r r4 r8 \tuplet 2/3 4. {gis(\mf ais b d)} \mark \default
+	eis8)\! r r r4 r8 \tuplet 2/3 4. {gis(\mf ais \once \tupletUp b d)} \mark \default
 	fis4.(_\crescpocoapoco g!4) g8 g4.( gis4) gis8
 	\tuplet 2/3 4. {gis8( a) a-- a-- a( ais) ais-- ais--}
 	ais4.( b4) b8 b4.( c4) c8
@@ -66,7 +75,7 @@ musicFloteIIMvtII = \relative c {
 	
 	\bar "||" \time 4/4
 % Bars 66 to 70
-	R1*9
+	\mmrLength #25 \mmrnDown R1*9
 % Bars 71 to 75
 	
 	
@@ -82,12 +91,12 @@ musicFloteIIMvtII = \relative c {
 % Bars 81 to 85
 	
 	f4.\mf\< ges8( bes\! aes) ges--\> f--\! \mark \default
-	R1*2
+	R1*5
 	
-	R1*2
+	
 % Bars 86 to 90
 	
-	R1
+	
 	bes,4.\mf\< ces8( ees\! des) ces\>-- bes--\!
 	R1
 	dis4.\f\< e8( gis\! fis) e\>-- dis--\! \mark \default
@@ -120,7 +129,7 @@ musicFloteIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.
+	\tempoXoffset #1 R1.
 	\ni \mmrPos #4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
@@ -147,7 +156,7 @@ musicFloteIIMvtII = \relative c {
 	gis4. gis4 gis8 gis4. gis8--\ff a-- b-- 
 % Bars 136 to 140
 	b4. b4 b8 b4. gis8-- a-- b-- 
-	b4. b4 b8 b b4 b b8~ \mark \default
+	b4. b4 b8 b b4 b b8~ \markWhiteout \mark \default
 	b b4 b b8~ b b4 b b8~
 	b b4 b b8~ b b4 b b8~
 	b g4 e d8~ d cis4 b a8(
@@ -198,9 +207,9 @@ musicFloteIIMvtII = \relative c {
 % Bars 176 to 180
 	a\> a a\! r4 r8 bes\< bes bes  bes bes bes
 	a\! r r r4 r8 r2.
-	R1.*2
+	R1.*6
 	
-	R1.*4
+	
 % Bars 181 to 184
 	
 	

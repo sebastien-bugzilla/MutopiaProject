@@ -51,7 +51,7 @@ musicFloteIMvtI = \relative c' {
 	b)_\pococresc d,( e~ e) fis( g
 % Bars 56 to 60
 	a4 e8) ais4( e8) \mark \default
-	b'4.\mp\>~ b8\p r r
+	b'4.-\offset X-offset -1 \mp\>~ b8-\offset X-offset 1 \p r r
 	R2.*5
 	
 	
@@ -76,7 +76,7 @@ musicFloteIMvtI = \relative c' {
 % Bars 76 to 80
 	r4 d16(\ff cis c b a gis g fis)
 	e( fis g a g fis e8) e'( d
-	d,) d'16(\f e fis g a8) r r
+	d,)\noBeam d'16(\f e fis g a8) r r
 	r fis,16(\mp g a b c8) r r
 	r4 g16(\ff a b a g a b ais)
 % Bars 81 to 85
@@ -126,7 +126,7 @@ musicFloteIMvtI = \relative c' {
 	
 	
 	r8 fis\p( fis,) r4 r8
-	R2.*3
+	\mmrnDown R2.*3
 % Bars 121 to 125
 	
 	
@@ -139,7 +139,7 @@ musicFloteIMvtI = \relative c' {
 	R2.*4
 % Bars 131 to 135
 	
-	fis,4.\mf~\> fis4\p gis8(\<
+	\hairpinShorten #'(-0.5 . -0.5) fis,4.\mf~\> fis4\p gis8(\<
 	ais4.) b4( cis8)\!
 	d4.\f\> cis4.(
 	fis,8)\! r r r4 r8
@@ -148,17 +148,14 @@ musicFloteIMvtI = \relative c' {
 	ais4.) b4( cis8)
 	e4.\ff\> d8( cis b
 	fis)\! r r r4 r8 \mark \default
-	R2.*12
+	\mmrLength #10 R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	R2.*16
-	
-	
-	
+	\mmrLength #18 \mmrnDown R2.*16
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -231,7 +228,7 @@ musicFloteIMvtI = \relative c' {
 % Bars 231 to 235
 	
 % Bars 236 to 240
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-6 R \no \mark \default
@@ -367,7 +364,7 @@ musicFloteIMvtI = \relative c' {
 	
 	r4 r8 r gis'--\ff fis--
 	cis4.->~ cis8 r r
-	r4 r8 r d16(\fff dis e eis \mark \default
+	r4 r8 r d16(\fff dis e eis \markWhiteout \mark \default
 	fis8)[ r16 fis fis8]~ fis gis a
 % Bars 366 to 370
 	b(-> a) gis fis4 cis8(
@@ -392,13 +389,13 @@ musicFloteIMvtI = \relative c' {
 	r8 gis'( gis,) r4 r8
 	R2.
 	r8 gis'( gis,) r4 r8
-	R2.*4
+	\mmrLength #13 R2.*3
 % Bars 386 to 390
 	
 	
-	
-	gis,4.\mf\>~ gis4\p\< ais8(
-	bis4.) cis4( dis8)\!
+	R2.
+	\hairpinShorten #'(-0.5 . -0.5) gis,4.-\offset X-offset -0.5 \mf\>~ gis4-\offset X-offset 0.5 \p\< ais8(
+	\once \stemUp bis4.) cis4( dis8)\!
 % Bars 391 to 395
 	e4.\f\> dis4.(\!
 	gis,8) r r r4 r8
@@ -522,10 +519,10 @@ musicFloteIMvtI = \relative c' {
 	e)[ r16 e\f e8]~ e[ r16 e e8]~
 	e[ r16 e e8]~ e e( dis
 	e)[ r16 e e8]~ e[ r16 e e8]~
-	e[ r16 e e8]~ e e( dis \mark \markAaBox
+	e[ r16 e e8]~ e e( dis \markWhiteout \mark \markAaBox
 	e) r r r4 r8
 % Bars 516 to 520
-	R2.*7
+	\mmrCondens R2.*7
 % Bars 521 to 525
 	
 	\mark \markBbBox

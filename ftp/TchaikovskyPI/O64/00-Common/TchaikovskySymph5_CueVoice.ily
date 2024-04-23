@@ -23,7 +23,7 @@ cueVoiceFloteIMvtI = \relative c {
 	fis( g fis)\! e4(\sff\> a,8)\! \oneVoice 
 	s2.*66
 	% bar 236 - 239
-	\voiceOne f'4(->^\markup {Ob.I} bes,8) f'4(-> bes,8)
+	f'4(->^\markup {Ob.I} bes,8) f'4(-> bes,8)
 	ees r r r4 r8
 	bes'4(->^\markup {Klar.I} ees,8) bes'4->( ees,8)
 	ees4(->^\markup {Ob.I} ees,8) ees'4(-> ees,8)
@@ -49,7 +49,7 @@ cueVoiceFloteIMvtI = \relative c {
 	s2.*12
 	% bar 425 - 426
 	r8^\markup {Viol.I} b(\< cis) dis( e fis)
-	gis( a gis)\! fis4(\sff\> b,8)\!
+	gis( a gis)\! \hairpinShorten #'(-0.3 . -1) fis4(\sff\> b,8)\!
 	s2.*55
 	% bar 482 - 484
 	r8^\markup {Viol.I} a-. b-. c( dis e
@@ -105,8 +105,8 @@ cueVoiceFloteIMvtIII = \relative c {
 	a4. gis8 \cueClefUnset s4 
 	s2.*45
 	% bar 90 - 91
-	\oneVoice s2 \cueClef bass eis16-.^\markup {Br.} fis-. eis-. fis-. 
-	gis-. fis-. e!-. dis-. \cueClef treble ais'-.^\markup {Viol.I} b-. ais-. b-. cis-. b-. a-. gis-. \cueClefUnset
+	\oneVoice s2 eis16-.^\markup {Br.} fis-. eis-. fis-. 
+	gis-. fis-. e!-. dis-. ais'-.^\markup {Viol.I} b-. ais-. b-. cis-. b-. a-. gis-.
 	s2.*61
 	% bar 153 - 154
 	cis''4.^\markup {Viol.I} b8( a gis)
@@ -197,7 +197,7 @@ cueVoiceFloteIIMvtII = \relative c {
 	<>_\markup {(Klar.)}
 	s1.*8
 	% bar 24
-	<>_\markup {(Ob.)}
+	<>-\offset X-offset -1 _\markup {(Ob.)}
 	s1.*8
 	% bar 32 - 35
 	s4.*3 d'8\((^\markup {Vcll.} cis) b\)--
@@ -335,7 +335,7 @@ cueVoiceFloteIIIMvtI = \relative c {
 cueVoiceFloteIIIMvtII = \relative c {
 	s1.*23
 	% bar 24
-	<>_\markup {(Ob.)}
+	<>-\offset X-offset -1 _\markup {(Ob.)}
 	s1.*8
 	% bar 32 - 35
 	s4.*3 d'8\((^\markup {Vcll.} cis) b--\)
@@ -362,7 +362,7 @@ cueVoiceFloteIIIMvtII = \relative c {
 	gis( b) a a2. fis8(-- g-- a--)
 	s1.*26
 	% bar 146 - 148
-	d'4.^\markup {Fl.I} fis,4( b8) a4.~ a4 a8
+	d'4.-\offset X-offset -4 ^\markup {Fl.I} fis,4( b8) a4.~ a4 a8
 	\tuplet 2/3 4. {b cis d b} fis'4.~ fis8 r r
 	\tuplet 2/3 4. {b, cis d b} s2.
 	s1.*9 s1*12 s1.*1

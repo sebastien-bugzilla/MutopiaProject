@@ -10,13 +10,13 @@ musicFloteIIIMvtIII = \relative c {
 %	\transposition a
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #41 \mmrnDown R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	\mark \default
 	\ni \mmrPos #-4 R2. \no
-	a''2\p~ a8 gis
+	a''2\p~^\grfl a8 gis
 	\after 2.*5/6 \! fis2.\<
 	fis4(-> e2)
 % Bars 16 to 20
@@ -53,20 +53,14 @@ musicFloteIIIMvtIII = \relative c {
 	a4( gis2) \mark \default
 	cis4. b8( ais b
 % Bars 56 to 60
-	e,4~ e8) r^\iiimutainpicc r4 \changeStaffName \picc
-	R2.*7
+	e,4~ e8) r^\mutainflpicc r4
+	R2.*24
 % Bars 61 to 65
-	
-	
-	
-	R2.*9
 	
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
-	
-	R2.*8
 % Bars 76 to 80
 	
 	
@@ -80,10 +74,10 @@ musicFloteIIIMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #4 R2.
+	\ni \mmrPos #6 R2.
 % Bars 91 to 95
 	\mmrPos #4 R \no
-	ais16\mf-. b-. ais-. b-. cis-. b-. a-. gis-. r4
+	ais16\mf-.^\klfl b-. ais-. b-. cis-. b-. a-. gis-. r4
 	R2.*3
 	
 	\mark \default
@@ -97,25 +91,17 @@ musicFloteIIIMvtIII = \relative c {
 	a gis fis! e) dis( e dis e fis e dis cis
 	bis8) r^\mutaingrfl r4 r
 	R2. \mark \default
-	R2.*4 
+	R2.*14 
 	
 % Bars 106 to 110
 	
-	
-	R2.*4
-	
-	
 % Bars 111 to 115
 	
-	R2.*3
-	
-	
-	R2.*3
 % Bars 116 to 120
 	
 	\mark \default
-	R2.
-	R2.*23
+	R2.*24
+	
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -133,7 +119,7 @@ musicFloteIIIMvtIII = \relative c {
 	
 	\ni \mmrPos #-4 R2. \mark #11
 	\mmrPos #-4 R2. \no
-	a2\p~ a8 gis
+	a2\p~^\grfl a8 gis
 	\after 2.*5/6 \! fis2.\<
 % Bars 156 to 160
 	fis4(-> e2)
@@ -172,13 +158,9 @@ musicFloteIIIMvtIII = \relative c {
 % Bars 196 to 200
 	cis4. b8( ais b
 	e,4~ e8) r r4
-	R2.*7
+	\mmrLength #20 R2.*16
 % Bars 201 to 205
 	
-	
-	
-	
-	R2.*9
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -190,7 +172,7 @@ musicFloteIIIMvtIII = \relative c {
 % Bars 216 to 220
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-4 R \no \markWhiteout \mark \default
 	r4 f,2\f~
 	f4 g_\pesante g
 % Bars 221 to 225

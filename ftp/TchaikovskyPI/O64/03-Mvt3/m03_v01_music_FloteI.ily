@@ -10,7 +10,7 @@ musicFloteIMvtIII = \relative c {
 %	\transposition a
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #41 R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -84,9 +84,9 @@ musicFloteIMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #6 R2.
+	\ni \clef bass \mmrPos #6 R2.
 % Bars 91 to 95
-	\mmrPos #6 R \no
+	\mmrPos #4 << R {s4 \clef treble s2 }>> \no
 	ais16\mf-. b-. ais-. b-. cis-. b-. a-. gis-. r4
 	R2.*3
 	

@@ -10,7 +10,7 @@ musicFloteIIMvtIII = \relative c {
 %	\transposition a
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #41 R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -86,7 +86,7 @@ musicFloteIIMvtIII = \relative c {
 	
 	\ni \mmrPos #6 R2.
 % Bars 91 to 95
-	\mmrPos #6 R \no
+	\mmrPos #4 R \no
 	ais16\mf-. b-. ais-. b-. cis-. b-. a-. gis-. r4
 	R2.*3
 	
@@ -106,12 +106,12 @@ musicFloteIIMvtIII = \relative c {
 % Bars 106 to 110
 	r r eis16\<-. fis-. eis-. fis\!-. 
 	gis\>-. fis-. e!-. dis\!-. e-. dis-. cis-. b-. r4
-	R2.*4
+	R2.*7
 	
 	
 % Bars 111 to 115
 	
-	R2.*3
+	
 	
 	
 	r4 r cisis16\p-. dis-. cisis-. dis-. 
@@ -157,9 +157,9 @@ musicFloteIIMvtIII = \relative c {
 	R2.*4
 % Bars 181 to 185
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 	r4 r dis8(\mf e) \mark \default
 % Bars 186 to 190
 	cis'4. b8( a gis)

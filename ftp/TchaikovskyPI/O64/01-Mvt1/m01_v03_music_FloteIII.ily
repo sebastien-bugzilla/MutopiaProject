@@ -43,7 +43,7 @@ musicFloteIIIMvtI = \relative c' {
 	\mmrPos #6 R
 % Bars 56 to 60
 	\mmrPos #4 R \no \mark \default
-	b'4.\mp\>~ b8\p r r
+	\hairpinShorten #'(-0.5 . -0.5) b'4.-\offset X-offset -1 \mp\>~^\grfl b8-\offset X-offset 1 \p r r
 	g\p r r a r r
 	b r r a r r
 	b r r c r r
@@ -122,15 +122,17 @@ musicFloteIIIMvtI = \relative c' {
 % Bars 121 to 125
 	
 	
-	r8 r fis'\p[( fis,)] r8 r
+	r8 r fis'-\offset X-offset -1 \p[( fis,)] r8 r
 	R2.
 	r8 r fis'([ fis,)] r8 r8
 % Bars 126 to 130
 	R2.
 	r8 r fis'([ fis,)] r8 r8
-	R2.*4
-% Bars 131 to 135
+	\mmrLength #14 \mmrnDown R2.*3
 	
+	
+% Bars 131 to 135
+	R2.
 	R2.*8 
 	
 	
@@ -140,13 +142,14 @@ musicFloteIIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*30
+	R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	\mmrLength #19 \mmrnDown R2.*18
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -178,7 +181,7 @@ musicFloteIIIMvtI = \relative c' {
 % Bars 186 to 190
 	d8) r r r4 r8
 	R2.
-	R2.*2
+	\mmrnDown R2.*2
 	
 	r8 a'4 ais b8~
 % Bars 191 to 195
@@ -274,13 +277,13 @@ musicFloteIIIMvtI = \relative c' {
 	r e,16( fis! g a g8) r r
 % Bars 291 to 295
 	a'4 d,8 a'4 d,8
-	r a( gis16 g f8) r^\mutainflpicc r \mark \default
+	r a( gis16 g f8) r_\mutainflpiccL r \mark \default
 	R2.*4
 	
 	
 % Bars 296 to 300
 	
-	d'8\fff[ r16 d d8]~ d e( f
+	d'8\fff[^\klfl r16 d d8]~ d e( f
 	d)[ r16 d d8]~ d a( d
 	g-.)[ r16 g g8]~ g a( bes)
 	bes8[ r16 bes bes8]~ bes cis( d)
@@ -297,9 +300,9 @@ musicFloteIIIMvtI = \relative c' {
 	r4 r8 g4\ff g8
 	r4 r8 e4 e8
 % Bars 311 to 315
-	R2.*2^\mutainfliii
+	R2.*9_\mutaingrfl
 	
-	R2.*7
+	
 	
 	
 % Bars 316 to 320
@@ -307,15 +310,11 @@ musicFloteIIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*10
+	R2.*13
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
-	
-	
-	
-	R2.*3
 % Bars 331 to 335
 	
 	
@@ -324,7 +323,7 @@ musicFloteIIIMvtI = \relative c' {
 	\mmrPos #-4 R
 % Bars 336 to 340
 	\mmrPos #-4 R \no \mark \default
-	g,8\p r r a r r
+	g,8\p^\grfl r r a r r
 	b r r a r r
 	b r r c r r
 	g' r r a r r
@@ -348,15 +347,15 @@ musicFloteIIIMvtI = \relative c' {
 	r4 d16(\ff cis c b a gis g fis)
 % Bars 356 to 360
 	e( fis g a g fis e8) r r 
-	R2.
-	R2.*4
+	R2.*7
+	
 	
 	
 % Bars 361 to 365
 	
-	R2.*2
 	
-	r4 r8 r d'16(\fff dis e eis \mark \default
+	
+	r4 r8 r d'16(\fff dis e eis \markWhiteout \mark \default
 	fis8)[ r16 fis fis8]~ fis gis a
 % Bars 366 to 370
 	b(-> a) gis fis4 cis8(
@@ -381,22 +380,25 @@ musicFloteIIIMvtI = \relative c' {
 	r8 r gis'([ gis,)] r r8
 	R2.
 	r8 r gis'([ gis,)] r r8
-	R2.*4
+	\mmrLength #13 \mmrnDown R2.*3
 % Bars 386 to 390
 	
 	
-	
-	R2.*8
+	R2.
+	\mmrLength #14 R2.*8
 	
 % Bars 391 to 395
 	
 % Bars 396 to 400
 	\mark \default
-	R2.*30
+	R2.*12
 % Bars 401 to 405
 	
 % Bars 406 to 410
 	
+	
+	
+	\mmrLength #20 \mmrnDown R2.*18
 % Bars 411 to 415
 	
 % Bars 416 to 420
@@ -406,7 +408,7 @@ musicFloteIIIMvtI = \relative c' {
 % Bars 426 to 430
 	
 	\ni \mmrPos #-4 R2.
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 	R2.*2
 	
 % Bars 431 to 435
@@ -426,7 +428,7 @@ musicFloteIIIMvtI = \relative c' {
 	cis,4 cisis8~ cisis dis4(
 	e8) r r r4 r8
 	R2.
-	R2.*2
+	\mmrnDown R2.*2
 % Bars 446 to 450
 	
 	r8 b'4 bis cis8~
@@ -501,7 +503,7 @@ musicFloteIIIMvtI = \relative c' {
 	e)[ r16 e\f e8]~ e[ r16 e e8]~
 	e[ r16 e e8]~ e e( dis
 	e)[ r16 e e8]~ e[ r16 e e8]~
-	e[ r16 e e8]~ e e( dis \mark \markAaBox
+	e[ r16 e e8]~ e e( dis \markWhiteout \mark \markAaBox
 	e) r r r4 r8
 % Bars 516 to 520
 	R2.*7

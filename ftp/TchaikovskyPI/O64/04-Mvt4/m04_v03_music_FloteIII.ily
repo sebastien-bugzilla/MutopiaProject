@@ -10,7 +10,7 @@ musicFloteIIIMvtIV = \relative c {
 %	\transposition a
 	\section \sectionLabel Finale
 % Bars 1 to 5
-	R1*15
+	\mmrLength #42 R1*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,7 +29,7 @@ musicFloteIIIMvtIV = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	gis''4._\pmamarcato gis16 gis a4. gis16 fis
+	gis''4._\pmamarcato^\grfl gis16 gis a4. gis16 fis
 	gis8 r e2.->
 % Bars 26 to 30
 	b'4._\piuf b16 b cis4. b16 a
@@ -70,7 +70,7 @@ musicFloteIIIMvtIV = \relative c {
 % Bars 56 to 60
 	
 	\bar "||"
-	\key e \minor \time 2/2 R1*4
+	\key e \minor \time 2/2 \mmrnDown R1*4
 	
 	
 % Bars 61 to 65
@@ -100,34 +100,34 @@ musicFloteIIIMvtIV = \relative c {
 % Bars 81 to 85
 	d dis e fis \mark \default
 	g8 r r4 r2
-	R1*3 
+	R1*7
 	
 	
 % Bars 86 to 90
-	R1*3
 	
 	
-	R1
+	
+	
 	r4 r8 b,,(\mf\< e4.) fis8(\!
 % Bars 91 to 95
-	g4.)\f\> fis8(\mf e4.) fis8(
+	\hairpinShorten #'(-0.3 . -0.3) g4.)-\offset X-offset #-1 \f\> fis8(-\offset X-offset 0.5 \mf e4.) fis8(
 	cis4.)-> d8( b4.)-> cis8(
 	a4.->) b8( g4.)-> a8(
 	fis4)-> fis'--\mf e-- fis(
 	d\sf e)\> cis( d
 % Bars 96 to 100
 	b8)\! r d4--\mf cis-- d(
-	b\sf cis) a(\> b\! \mark \default
+	b\sf cis) a(\> \once \stemUp b\! \mark \default
 	gis8)\p r r4 r2
-	R1*7
+	R1*13
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	R1*6
+	
 % Bars 111 to 115
 	
 	\ni \mmrPos #-4 R1
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-6 R \no \mark \default
 	r4 b\ff cis d
 	e fis g a
 % Bars 116 to 120
@@ -177,7 +177,7 @@ musicFloteIIIMvtIV = \relative c {
 % Bars 166 to 170
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R \no
-	e'4(_\crescmarkup dis d cis)
+	e'4(_\crescmarkup^\klfl dis d cis)
 	fis( f e dis)
 	g( f e d!)
 % Bars 171 to 175
@@ -238,16 +238,12 @@ musicFloteIIIMvtIV = \relative c {
 	g g c a
 	b g a e 
 	g8 r^\mutainfliii r4 r2
-	R1*5
+	R1*7
 	
 % Bars 221 to 225
 	
-	
-	
-	R1*2
-	
 % Bars 226 to 230
-	r4 e'\fff dis e
+	r4 e'\fff^\grfl dis e
 	bes g' fis g
 	cis, bes' a bes
 	f des' c! des \mark \default
@@ -341,17 +337,13 @@ musicFloteIIIMvtIV = \relative c {
 	g a b c
 	d dis e fis \mark \default
 	g8 r r4 r2
-	R1*3
+	R1*7
 % Bars 326 to 330
 	
-	
-	R1*3
-	
-	
 % Bars 331 to 335
-	R1
+	
 	r4 r8 b,,(\mf\< e4.) fis8(\!
-	g4.\f\>) fis8(\mf e4.) fis8(
+	\hairpinShorten #'(-0.3 . -0.3) g4.-\offset X-offset -0.5 \f\>) fis8(-\offset X-offset 0.5 \mf e4.) fis8(
 	cis4.->) d8( b4.->) cis8(
 	a4.->) b8( g4.->) a8(
 % Bars 336 to 340
@@ -361,12 +353,8 @@ musicFloteIIIMvtIV = \relative c {
 	b\sf cis) a(\> b\! \mark \default
 	gis8)\p r r4 r2
 % Bars 341 to 345
-	R1*7
+	R1*13
 % Bars 346 to 350
-	
-	
-	R1*6
-	
 	
 % Bars 351 to 355
 	
@@ -393,12 +381,8 @@ musicFloteIIIMvtIV = \relative c {
 	dis gis,2 dis4~
 	dis r r2
 % Bars 371 to 375
-	R1*7
+	R1*19
 % Bars 376 to 380
-	
-	
-	R1*12
-	
 	
 % Bars 381 to 385
 	
@@ -530,13 +514,13 @@ musicFloteIIIMvtIV = \relative c {
 % Bars 496 to 500
 	b( ais gis fis gis e dis cis) fis( dis cis b e cis b ais
 	gis8) e'-> dis-> cis-> b16( fis dis b) cis( dis e ais
-	gis8) e'-> dis-> cis-> b16( fis dis b) cis( dis e ais \mark \markBbBox
+	gis8) e'-> dis-> cis-> b16( fis dis b) cis( dis e ais \markWhiteout \mark \markBbBox
 	gis8) dis' cis cis b a! gis a
 	gis gis a ais b bis cis dis
 % Bars 501 to 505
 	cis4 e e e
 	e8. cis16 e4~ e16 e b gis e b gis e
-	gis2\sfff dis\sfff \bar "||" \time 2/2
+	gis2-\offset X-offset -1 \sfff dis-\offset X-offset 0.5 \sfff \bar "||" \time 2/2
 	e4 r8 b'(\p e4) r8 fis(
 	gis4) r8 fis( eis4) r8 gis(
 % Bars 506 to 510
@@ -546,7 +530,7 @@ musicFloteIIIMvtIV = \relative c {
 	e4) r8 fis( gis4) r8 a(
 	b4)\fff r8 gis( e4) r8 cis(
 % Bars 511 to 515
-	b4) r8 gis( fis4) r8 gis( \mark \markCcBox
+	b4) r8 gis( fis4) r8 gis( \markWhiteout \mark \markCcBox
 	e4) r8 b\p( e4) r8 fis(
 	gis4) r8 fis( eis4) r8 gis(
 	cis,4)_\crescmarkup r8 d( dis4) r8 eis(
@@ -562,7 +546,7 @@ musicFloteIIIMvtIV = \relative c {
 	g g,8( a bes c d dis
 	e4) e,8( fis gis! a b! bis
 	cis4) cis,8( d dis eis fisis gis
-	a4) a,8( b cis dis e! eis \mark \markDdBox
+	a4) a,8( b cis dis e! eis \markWhiteout \mark \markDdBox
 % Bars 526 to 530
 	fis) fis, gis a b cis dis e!
 	fis fis, ais b c d e f

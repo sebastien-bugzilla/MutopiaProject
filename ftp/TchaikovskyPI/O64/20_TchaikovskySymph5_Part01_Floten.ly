@@ -47,7 +47,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64"
+			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64 — Flotten"
 		}
 		instrument = \markup {
 			"Floten"
@@ -55,9 +55,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIMvtI
-%			}
+			\new Voice {
+				\formatFloteIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(floteI) \tempiPartMvtI
 			}
@@ -79,9 +79,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIMvtII
-%			}
+			\new Voice {
+				\formatFloteIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(floteI) \tempiPartMvtII
 			}
@@ -93,7 +93,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -103,9 +103,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIMvtIII
-%			}
+			\new Voice {
+				\formatFloteIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(floteI) \tempiPartMvtIII
 			}
@@ -117,7 +117,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -127,9 +127,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIMvtIV
-%			}
+			\new Voice {
+				\formatFloteIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(floteI) \tempiPartMvtIV
 			}
@@ -143,7 +143,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.5 \bold 4.
 			}
 		}
 		\layout {
@@ -151,9 +151,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIIMvtI
-%			}
+			\new Voice {
+				\formatFloteIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(floteII) \tempiPartMvtI
 			}
@@ -175,9 +175,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIIMvtII
-%			}
+			\new Voice {
+				\formatFloteIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(floteII) \tempiPartMvtII
 			}
@@ -189,7 +189,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -199,9 +199,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIIMvtIII
-%			}
+			\new Voice {
+				\formatFloteIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(floteII) \tempiPartMvtIII
 			}
@@ -213,7 +213,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -223,9 +223,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIIMvtIV
-%			}
+			\new Voice {
+				\formatFloteIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(floteII) \tempiPartMvtIV
 			}
@@ -239,7 +239,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.5 \bold 4.
 			}
 		}
 		\layout {
@@ -247,9 +247,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIIIMvtI
-%			}
+			\new Voice {
+				\formatFloteIIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(floteIII) \tempiPartMvtI
 			}
@@ -271,9 +271,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIIIMvtII
-%			}
+			\new Voice {
+				\formatFloteIIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(floteIII) \tempiPartMvtII
 			}
@@ -285,7 +285,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -295,9 +295,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIIIMvtIII
-%			}
+			\new Voice {
+				\formatFloteIIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(floteIII) \tempiPartMvtIII
 			}
@@ -309,7 +309,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -319,9 +319,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteIIIMvtIV
-%			}
+			\new Voice {
+				\formatFloteIIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(floteIII) \tempiPartMvtIV
 			}
@@ -335,7 +335,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2 \bold 4.
 			}
 		}
 		\layout {

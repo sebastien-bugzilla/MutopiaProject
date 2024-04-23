@@ -96,7 +96,9 @@ divisi = \markup {\italic {divisi}}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
+mutainflpiccL = \markup {"muta in Fl. picc."}
 mutainfliii = \markup {"muta in Fl.III"}
+mutaingrfl = \markup {"muta in Gr. Fl."}
 mutagina = \markup {"Muta G in A"}
 mutaaingdinbeind = \markup { "muta A in G, D in B, E in D"}
 mutaaing_dinbeind = \markup { 
@@ -106,7 +108,6 @@ mutabinhdine = \markup { "muta B in H, D in E" }
 mutafising = \markup {"muta Fis in G"}
 mutaginfis = \markup {"muta G in Fis"}
 iiimutainpicc = \markup {\column { \lower #1 "III muta" "in Picc." }}
-mutaingrfl = \markup {"muta in Gr.Fl."}
 mutafisinfcisinc = \markup {"muta Fis in F, Cis in C"}
 mutafinacind = \markup {"muta F in A, C in D"}
 mutacina = \markup {"muta C in A"}
@@ -169,6 +170,8 @@ flI-II-III = \markup {
 		}
 	}
 }
+grfl = \markup {"Gr. Fl."}
+klfl = \markup {"Kl. Fl."}
 
 adue = \markup {\fontsize #-1 \bold "a2" }
 I-IIadue = \markup {\fontsize #-1 \bold "I II a2"}
@@ -342,6 +345,29 @@ OutCueContext = {
 	
 }
 
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.minimum-length = #length
+	#}
+)
+
+markWhiteout = {
+	\once \override Score.RehearsalMark.layer = #3
+	\once \override Score.RehearsalMark.whiteout = #0.75
+	\once \override Score.RehearsalMark.whiteout-style = #'outline
+}
+
+mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
+
+measureCountPosition = \override Staff.MeasureCounter.direction = \etc
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %aIIOmit = \once \omit Voice.CombineTextScript
@@ -442,34 +468,6 @@ OutCueContext = {
 %%	\override Beam.length = #7
 %	\unset fontSize
 %}
-
-%markWhiteout = {
-%	\once \override Score.RehearsalMark.layer = #3
-%	\once \override Score.RehearsalMark.whiteout = #0.75
-%	\once \override Score.RehearsalMark.whiteout-style = #'outline
-%}
-
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
-
-%mmrLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.space-increment = #length
-%	#}
-%)
-
-%mmrMinLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.minimum-length = #length
-%	#}
-%)
-
-%mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 %omitMMRN = \omit MultiMeasureRestNumber
 

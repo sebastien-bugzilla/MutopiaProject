@@ -43,7 +43,7 @@ musicFloteIIMvtI = \relative c' {
 	b)_\pococresc d,( e~ e) fis( g
 % Bars 56 to 60
 	a4 e8) ais4( e8) \mark \default
-	b'4.\mp\>~ b8\p r r
+	\hairpinShorten #'(-0.5 . -0.3) b'4.-\offset X-offset -1 \mp\>~ b8-\offset X-offset 1 \p r r
 	b\p r r c r r
 	e r r c r r
 	e r r e r r
@@ -128,10 +128,10 @@ musicFloteIIMvtI = \relative c' {
 % Bars 126 to 130
 	R2.
 	r8 fis'( fis,) r4 r8
-	R2.*4
+	\mmrLength #14 R2.*3
 % Bars 131 to 135
-	
-	fis,4.\mf~\> fis4\p eis8(\<
+	R2.
+	\hairpinShorten #'(-0.5 . -0.3) fis,4.-\offset X-offset -0.5 \mf~\> fis4-\offset X-offset 0.5 \p eis8(\<
 	e!4.) fis4( cis8)\!
 	d4.\f\> cis4.(
 	fis8)\! r r r4 r8
@@ -140,13 +140,13 @@ musicFloteIIMvtI = \relative c' {
 	e!4.) fis4( cis8)
 	e4.\ff\> d8( cis' b
 	fis)\! r r r4 r8 \mark \default
-	R2.*30
+	R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
-	
+	\mmrnDown R2.*18
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -355,7 +355,7 @@ musicFloteIIMvtI = \relative c' {
 	
 	r4 r8 r d--\ff d--
 	gis,4.->~ gis8 r r
-	r4 r8 r d'16(\fff dis e eis \mark \default
+	r4 r8 r d'16(\fff dis e eis \markWhiteout \mark \default
 	fis8)[ r16 fis fis8]~ fis gis a
 % Bars 366 to 370
 	b(-> a) gis fis4 cis8(
@@ -380,12 +380,12 @@ musicFloteIIMvtI = \relative c' {
 	r8 gis'( gis,) r4 r8
 	R2.
 	r8 gis'( gis,) r4 r8
-	R2.*4
+	R2.*3
 % Bars 386 to 390
 	
 	
-	
-	gis,4.\mf\>~ gis4\p\< fisis8(
+	R2.
+	\hairpinShorten #'(-0.3 . -0.3) gis,4.-\offset X-offset -0.5 \mf\>~ gis4-\offset X-offset 0.5 \p fisis8(\<
 	fis!4.) gis4( dis8)\!
 % Bars 391 to 395
 	e4.\f\> dis4.(\!
@@ -395,11 +395,14 @@ musicFloteIIMvtI = \relative c' {
 	fis4.\ff\> e8( dis cis\!
 % Bars 396 to 400
 	gis') r r r4 r8 \mark \default
-	R2.*30
+	R2.*12
 % Bars 401 to 405
 	
 % Bars 406 to 410
 	
+	
+	
+	\mmrLength #19 \mmrnDown R2.*18
 % Bars 411 to 415
 	
 % Bars 416 to 420
@@ -504,7 +507,7 @@ musicFloteIIMvtI = \relative c' {
 	e)[ r16 e\f e8]~ e[ r16 e e8]~
 	e[ r16 e e8]~ e e( dis
 	e)[ r16 e e8]~ e[ r16 e e8]~
-	e[ r16 e e8]~ e e( dis \mark \markAaBox
+	e[ r16 e e8]~ e e( dis \markWhiteout \mark \markAaBox
 	e) r r r4 r8
 % Bars 516 to 520
 	R2.*7
