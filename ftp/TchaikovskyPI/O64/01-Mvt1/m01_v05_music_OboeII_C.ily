@@ -187,7 +187,7 @@ musicOboeIIMvtI = \relative c {
 	d d d d d d 
 	r4 r8 fis(_\fcresc f e)
 % Bars 201 to 205
-	d( cis b) a( g eis)
+	d( cis b) a( g eis) \mark \default
 	\beamOffset #'(0.5 . -0.5) fis[-\offset X-offset -2 \fff r16 d' d8] d d d
 	d d d d d d 
 	r4 r8 d4._\fcresc~

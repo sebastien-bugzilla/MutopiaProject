@@ -9,21 +9,25 @@ musicOboeIMvtII = \relative c {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1.*15
+	\mmrnDown \mmrLength #38 R1.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	\tempoXoffset #-1 R1.*2
 	
-	
-	\mark \default
+	<< R1. {s2. \tempoXoffset #-4 s}>> \mark \default
 % Bars 16 to 20
-	R1.*5
+	\mmrLength #13 R1.*3
+	
+	
+	\tempoXoffset #-2 R1.
+	R
 % Bars 21 to 25
 	\ni \mmrPos #4 R1.
 	\mmrPos #4 R
-	\mmrPos #4 R \no
+	\mmrPos #6 R \no
 	fis''4._\dolceespr^\solo ais,4( dis8) cis2.
 	fis4. ais,4( dis8) \after 2.*5/6 \! cis2.\<
 % Bars 26 to 30
@@ -40,14 +44,14 @@ musicOboeIMvtII = \relative c {
 	g(\< a) b-- cis-- d-- dis-- e( fis) g-- a-- b-- cis--\!
 % Bars 36 to 40
 	d4(~\f d16 d,) d4.~ d8 r r r4 r8
-	r4 r8 e4(~\mp e16 e,\<) \tuplet 2/3 4. {e8( a) cis-- e--\!}
+	r4 r8 e4(~\mp \stemDown e16 e,\<) \stemNeutral \tuplet 2/3 4. {e8( a) cis-- e--\!}
 	a4->\f(~ a16 a,) a4.(~ a8 b cis d) r r
-	R1.*5
+	\mmrLength #12 \mmrnDown R1.*4
 	
 % Bars 41 to 45
 	
 	
-	
+	R1.
 	\ni \mmrPos #-4 R1. \no \mark \default
 	\once \voiceOne r2. g,4.\pp\< fis4( e8
 % Bars 46 to 50
@@ -66,15 +70,17 @@ musicOboeIMvtII = \relative c {
 	b\fff b b  d, d f  g\> g g  g g g\!
 	g\ff\> g g b, b d  e e e  e e e\!
 	e\f e e r4 r8 r2.
-	R1.*7
+	\mmrnDown R1.
+	R
 % Bars 61 to 65
-	
+	\mmrLength #15 \mmrnDown R1.*5
 	
 	
 	
 	\bar "||" \time 4/4
 % Bars 66 to 70
-	R1*9
+	\mmrnDown R1
+	\mmrnDown \mmrLength #14 R1*8
 % Bars 71 to 75
 	
 	
@@ -124,10 +130,10 @@ musicOboeIMvtII = \relative c {
 	
 % Bars 111 to 115
 	\ni \mmrPos #4 R1. \no
-	\voiceOne r8 r \oneVoice a_\mfmoltoespr~ a cis-- d-- e4(-> a,8) r4 r8
+	\voiceOne r8^\solo r \oneVoice a_\mfmoltoespr~ a cis-- d-- e4(-> a,8) r4 r8
 	r8 r a~\< a d-- e--\! fis( g fis)~ fis\> e-- d--\!
 	d4.~\< \tuplet 3/2 8 {d16 e( \liiri d} \lirii cis d e d)\! d4.(\> cis)\!
-	r8 a\f b~ \tuplet 4/6 4. {b16 cis-- d-- e--} fis8( g a) r4 r8 \mark \default
+	r8 a\f b~ \tuplet 4/6 4. {b16 cis-- d-- e--} fis8( g a) r4 r8 \markXoffset #-0.2 \mark \default
 % Bars 116 to 120
 	R1.
 	r2. a,2.(\mf\<
@@ -143,7 +149,7 @@ musicOboeIMvtII = \relative c {
 		a b) c--\< d-- e-- f-- fis-- g--\! g( fis eis g fis8) r
 % Bars 126 to 130
 		r16 gis(_\mfcresc a gis) r a( b a) r b( cis b) r cis( d cis)
-		r d(\f e d) r d( e d) r d,( b cis) \tuplet 3/2 4 {d8(_\fcantabile cis) b--} \timeSignature 12/8
+		r d(\f e d) r d( e d) r d,( b cis) \tuplet 3/2 4 {d8(-\offset X-offset -1 _\fcantabile cis) b--} \timeSignature 12/8
 	}
 	d4.->( cis2.) a8(\< b) cis--\!
 	e4.(\> d2.)\< d8-- e-- fis--\!
@@ -156,21 +162,21 @@ musicOboeIMvtII = \relative c {
 	gis4. gis4 gis8 gis4. gis8--\ff a-- b--
 % Bars 136 to 140
 	b4. b4 b8 b4. gis8-- a-- b--
-	b4. b4 b8 b b4 b b8~ \mark \default
+	b4. b4 b8 b b4 b b8~ \markWhiteout \mark \default
 	b b4 b b8~ b b4 b b8~
 	b b4 b b8~ b b4 b b8~
 	b g4 e d8~ d cis4 b a8(
 % Bars 141 to 145
 	ais) b cis d dis e fis g a! ais b cis \timeSignature 4/4
 	\scaleDurations 3/2 {
-		a!16\ff fis fis fis  fis fis fis fis  e e e e  fis fis g g
-		d d b b  b b d d  cis_\crescmarkup cis cis cis  cis cis cis cis
-		eis eis eis eis  eis eis eis eis  d\ff d fis fis  fis fis fis fis
-		g g fis fis  e! e e e   e e e e   g g g g
+		a!16\ff fis fis fis  fis4:16  e:  fis16 fis g g
+		d d b b  b b d d  cis_\crescmarkup cis cis cis  cis4:16
+		eis16 eis eis eis  eis4:16  d16\ff d fis fis  fis4:16
+		g16 g fis fis  e! e e e   e4:16   g16 g g g
 % Bars 146 to 150
-		fis\ff fis fis fis  fis fis fis fis  e e e e  fis fis g g
-		d d b b  b b d d  cis_\crescmarkup cis cis cis  cis cis cis cis
-		eis eis eis eis  eis eis eis eis  d d d d  d d d d
+		fis\ff fis fis fis  fis4:16  e16 e e e  fis fis g g
+		d d b b  b b d d  cis_\crescmarkup cis cis cis  cis4:16
+		eis16 eis eis eis  eis4:16  d16 d d d  d4:16
 	} 
 	\timeSignature 12/8 fis4.(\fff g4) g8 g4.( gis4) gis8
 	\tuplet 2/3 4. {gis8( a) a a a( ais) ais ais} \mark #11
@@ -178,8 +184,8 @@ musicOboeIMvtII = \relative c {
 	ais4.(_\crescmarkup b4) b8 b4.( c4) c8
 	\tuplet 2/3 4. {c( cis) cis cis cis( d) d d} \timeSignature 4/4
 	\scaleDurations 3/2 {
-		d4\ffff fis,8( b) \after 2*3/4 \! a2\>
-		b4\ff d,8( g) \after 2*3/4 \! fis2\>
+		\noteHeadEsw #'(-1.45 . 1.45) d4\ffff fis,8( b) a2\>
+		\revertNoteHeadEsw b4\ff d,8( g) fis2\>
 		g16\f e e e g, g g g g4\> gis\!
 % Bars 156 to 160
 		a4\mf r r2

@@ -10,7 +10,7 @@ musicOboeIMvtIV = \relative c {
 %	\transposition a
 	\section \sectionLabel Finale
 % Bars 1 to 5
-	R1*15
+	\mmrLength #41 \mmrnDown R1*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -27,7 +27,7 @@ musicOboeIMvtIV = \relative c {
 	\ni \mmrPos #4 R1 
 % Bars 21 to 25
 	\mmrPos #4 R
-	\mmrPos #4 R
+	\mmrPos #6 R
 	\mmrPos #4 R \no
 	gis''4._\pmamarcato gis16 gis a4. gis16 fis
 	gis8 r e2.->
@@ -62,15 +62,15 @@ musicOboeIMvtIV = \relative c {
 	
 	
 % Bars 51 to 55
-	r4 << b,,2.~ {s8\p\< s s s s\> s }>>
+	r4 << \hairpinShorten #'(-0.5 . 0) b,,2.~ {s8-\offset X-offset -1.5 \p\< s s s s s\> }>>
 	b8\! r r4 r2
-	r4 << b2.~ {s8\pp\< s s s s\> s}>>
+	r4 << b2.~ {\hairpinShorten #'(-0.5 . 0) s8-\offset X-offset -1.5 \pp\< s s s s s\>}>>
 	b8\! r e4(\< dis e~\!
 	e\>~ e8\!) r r2
 % Bars 56 to 60
 	R1*2
 	\bar "||"
-	\key e \minor \time 2/2 R1
+	\key e \minor \time 2/2 \mmrnDown R1
 	e1\f~
 	e8 r r4 r2
 % Bars 61 to 65
@@ -100,7 +100,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 81 to 85
 	g b b b \mark \default
 	b8 r r b,(\mf\<^\solo e4.) fis8(\!
-	g4.\f\>) fis8(\mf e4.) fis8(
+	\hairpinShorten #'(-0.5 . -0.5) g4.-\offset X-offset -1 \f\>) fis8(-\offset X-offset 1 \mf e4.) fis8(
 	cis4.)-> d8( b4.->) cis8(
 	a4.)-> b8( g4.)-> a8(
 % Bars 86 to 90
@@ -110,14 +110,14 @@ musicOboeIMvtIV = \relative c {
 	
 	r4 r8 b(\mf\< e4.) fis8(\!
 % Bars 91 to 95
-	g4.)\f\> fis8(\mf e4.) fis8(
+	\hairpinShorten #'(-0.5 . -0.5) g4.)-\offset X-offset -1 \f\> fis8(-\offset X-offset 1 \mf e4.) fis8(
 	cis4.->) d8( b4.->) cis8(
 	a4.->) b8( g4.)-> a8(
 	fis4->) r4 r2
 	R1*2
 % Bars 96 to 100
 	
-	<< b1\sf~ {s2 s4\> s8 s\!}>> \mark \default
+	b1\sf\>~ \mark \default
 	b8\p r r4 r2
 	R1*7
 % Bars 101 to 105
@@ -126,12 +126,12 @@ musicOboeIMvtIV = \relative c {
 	r4 fis'(\mf e fis)
 	b,2(\< cis)
 	d4( dis fis e)\!
-	b'4.\sff\>( a8) dis,4.(\mf e8)
+	\hairpinShorten #'(-0.5 . -0.5) b'4.\sff\>( a8) dis,4.(\mf e8)
 	r4 fis( e fis)
 % Bars 111 to 115
 	b,2(\< cis)
 	d4( dis fis e)\!
-	b'4.(\sf\> a8)\! dis,4.(\mf e8) \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) b'4.(\sf\> a8)\! dis,4.(\mf e8) \mark \default
 	a, r b,4\ff cis d
 	e fis g a
 % Bars 116 to 120
@@ -254,7 +254,7 @@ musicOboeIMvtIV = \relative c {
 	g g c a
 	g c, c c,
 	g''8 r r4 r2
-	c,,1\f
+	c,,1-\offset X-offset -2.5 \f
 	g'
 % Bars 221 to 225
 	e2.( c4)
@@ -372,7 +372,7 @@ musicOboeIMvtIV = \relative c {
 	r4 e' e g
 	g b b b \mark \default
 	b8 r r b,(\mf\<^\solo e4.) fis8(\!
-	g4.)\f\> fis8(\mf e4.) fis8(
+	\hairpinShorten #'(-0.5 . -0.5) g4.)-\offset X-offset -1 \f\> fis8(-\offset X-offset 1 \mf e4.) fis8(
 % Bars 326 to 330
 	cis4.)-> d8( b4.)-> cis8(
 	a4.->) b8( g4.)-> a8(
@@ -382,14 +382,14 @@ musicOboeIMvtIV = \relative c {
 % Bars 331 to 335
 	
 	r4 r8 b(\mf\< e4.) fis8(\!
-	g4.)\f\> fis8(\mf e4.) fis8(
+	\hairpinShorten #'(-0.5 . -0.5) g4.)-\offset X-offset -1 \f\> fis8(-\offset X-offset 1 \mf e4.) fis8(
 	cis4.)-> d8( b4.->) cis8(
 	a4.->) b8( g4.)-> a8(
 % Bars 336 to 340
 	fis4->) r r2
 	R1*2
 	
-	\after 1*7/8 \! b1\mf\>~ \mark \default
+	b1\mf\>~ \mark \default
 	b8\p r r4 r2
 % Bars 341 to 345
 	R1*7
@@ -404,7 +404,7 @@ musicOboeIMvtIV = \relative c {
 	r4 fis( e fis)
 	b,2(\< cis)
 	d4( dis fis_\crescmarkup e)\!
-	b'4.(\sf a8)\! dis,4.(\mf e8) \mark \default
+	b'4.(\sf\> a8)\! dis,4.(\mf e8) \mark \default
 % Bars 356 to 360
 	a, r b,4\ff cis d!
 	e fis g a
@@ -575,7 +575,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 501 to 505
 	cis4 cis b a
 	b8. cis16 e4~ e8 e, b gis
-	gis2\sfff b\sfff \bar "||"
+	gis2\sfff \once \stemUp b\sfff \bar "||"
 	\time 2/2 e,4 r e'\p r
 	eis r cis r
 % Bars 506 to 510
@@ -601,7 +601,7 @@ musicOboeIMvtIV = \relative c {
 	g g,8( a bes c d dis
 	e4) e,8( fis gis! a b! bis
 	cis4) cis,8( d dis eis fisis gis
-	a4) a8( b cis dis e! eis \mark \markDdBox
+	a4) \stemDown a8( b \stemNeutral cis dis e! eis \markWhiteout \mark \markDdBox
 % Bars 526 to 530
 	fis4) r b,2~
 	b c~
@@ -617,15 +617,15 @@ musicOboeIMvtIV = \relative c {
 % Bars 536 to 540
 	b, r fis' r
 	eis r fis fis
-	b,_\semprefff e r2
-	e4 e r2
+	b,_\semprefff e! r2
+	\startMeasureCount e4 e r2
 	e4 e r2
 % Bars 541 to 545
 	e4 e r2
 	e4 e r2
 	e4 e r2
 	e4 e r2
-	e4 e r2 \bar "||"
+	e4 e r2 \stopMeasureCount \bar "||"
 % Bars 546 to 550
 	\time 6/4 e4.\ffff e8 e4 e fis gis
 	a gis fis e dis cis

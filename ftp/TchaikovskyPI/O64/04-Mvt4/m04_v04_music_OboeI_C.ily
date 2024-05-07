@@ -135,7 +135,7 @@ musicOboeIMvtIV = \relative c {
 	fis\< g a b
 	cis dis\! e\fff e
 	r e r b
-	\partCombineApart r e, r2 \partCombineAutomatic
+	r \once \partCombineApart e, r2
 % Bars 121 to 125
 	R1*7
 % Bars 126 to 130
@@ -400,7 +400,7 @@ musicOboeIMvtIV = \relative c {
 	r4 fis( \once \stemDown e fis)
 	b,2(\< cis)
 	d4( dis fis-\tweak extra-offset #'(0.5 . 3.5) _\crescmarkup e)\!
-	b'4.(\sf a8)\! dis,4.(\mf e8) \mark \default
+	b'4.(\sf\> a8)\! dis,4.(\mf e8) \mark \default
 % Bars 356 to 360
 	a, r b,4\ff cis d!
 	e fis g a

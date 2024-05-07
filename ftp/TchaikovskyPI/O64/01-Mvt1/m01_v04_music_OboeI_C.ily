@@ -191,7 +191,7 @@ musicOboeIMvtI = \relative c {
 	a a a a a a
 	r4 r8 fis(_\fcresc f e)
 % Bars 201 to 205
-	d( cis b) a( g eis)
+	d( cis b) a( g eis) \mark \default
 	\partCombineApart fis[ \once \partCombineAutomatic r16 a' a8] \partCombineAutomatic a a a
 	a a a a a a 
 	r4 r8 d,4._\fcresc~

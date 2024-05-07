@@ -10,7 +10,7 @@ musicOboeIIMvtIII = \relative c {
 %	\transposition a
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #42 \mmrnDown R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -24,13 +24,11 @@ musicOboeIIMvtIII = \relative c {
 	eis4(-> fis2)
 	fis2 a8( b)
 	b r r4 r
-	R2.*8
+	R2.*17
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
-	
-	R2.*9
 % Bars 31 to 35
 	
 % Bars 36 to 40
@@ -77,17 +75,17 @@ musicOboeIIMvtIII = \relative c {
 	R2.*2
 	
 	r4 d,8\p\< r dis\! r
-	\after 2*3/4 \! e2\mf\> r4
+	\hairpinShorten #'(-0.5 . 0) e2\mf\> r4\!
 	R2.*2
 % Bars 86 to 90
 	
-	r4 d8\p\< r dis\! r
-	\after 2*3/4 \! e2\mf\> r4
+	r4 d!8\p\< r dis\! r
+	\hairpinShorten #'(-0.5 . 0) e2\mf\> r4\!
 	R2.
 	a4~->\p a8 r r4
 % Bars 91 to 95
-	R2.
-	R2.*2
+	R2.*3
+	
 	
 	a4\p->~ a8 r r4
 	R2. \mark \default
@@ -137,12 +135,12 @@ musicOboeIIMvtIII = \relative c {
 	R2.*2
 % Bars 136 to 140
 	
-	r4 d,8\mf\< r dis r\!
+	r4 d,!8\mf\< r dis r\!
 	\after 2*3/4 \! e2\f\> r4
 	R2.*2
 	
 % Bars 141 to 145
-	r4 d8\mf\< r dis r\! \mark \default
+	r4 d!8\mf\< r dis r\! \mark \default
 	e\f r r4 r
 	R2.*2
 	
@@ -156,8 +154,8 @@ musicOboeIIMvtIII = \relative c {
 % Bars 151 to 155
 	cis,4.\< dis8( e fis)\!
 	a4.\> gis8( fis e)\! \mark #11
-	R2.
-	R2.*3
+	R2.*4
+	
 	
 % Bars 156 to 160
 	
@@ -166,12 +164,9 @@ musicOboeIIMvtIII = \relative c {
 	fis2 a8( b)
 	b\p r r4 r
 % Bars 161 to 165
-	R2.*8
+	R2.*17
 % Bars 166 to 170
 	
-	
-	
-	R2.*9
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -209,7 +204,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 216 to 220
 	\ni \mmrPos #-6 R2.
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-4 R \no \markWhiteout \mark \default
 	\once \voiceTwo r4 c\f c
 	c c_\pesante c
 % Bars 221 to 225

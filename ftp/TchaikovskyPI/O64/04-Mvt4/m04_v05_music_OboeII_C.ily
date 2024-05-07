@@ -135,13 +135,13 @@ musicOboeIIMvtIV = \relative c {
 	fis\< g a b
 	cis dis\! e,\fff e
 	r e r e
-	\mmrPos #-6 R1
+	r \stemDown e r2
 % Bars 121 to 125
 	R1*7
 % Bars 126 to 130
 	
 	\mark \default
-	\stemDown cis'1(
+	cis'1(
 	a1)
 	cis2( d~
 % Bars 131 to 135
@@ -400,7 +400,7 @@ musicOboeIIMvtIV = \relative c {
 	r4 fis( e fis)
 	b,2(\< cis)
 	d4( dis fis e)\!
-	b'4.(\sf a8)\! dis,4.(\mf e8) \mark \default
+	b'4.(\sf\> a8)\! dis,4.(\mf e8) \mark \default
 % Bars 356 to 360
 	g8 r b,4\ff cis d!
 	e fis g a
@@ -599,8 +599,8 @@ musicOboeIIMvtIV = \relative c {
 	cis4) cis,8( d dis eis fisis gis
 	a4) a8( b cis dis e! eis \mark \markDd
 % Bars 526 to 530
-	fis4) r d,2~
-	d e~
+	fis4) r dis,2~
+	dis e~
 	e b'~
 	b b~
 	b b

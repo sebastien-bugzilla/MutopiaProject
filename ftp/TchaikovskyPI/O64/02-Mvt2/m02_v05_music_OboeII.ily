@@ -9,25 +9,29 @@ musicOboeIIMvtII = \relative c {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1.*15
+	\mmrLength #38 \mmrnDown R1.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	\mmrLength #10 R1.*2
 	
-	
-	\mark \default
+	<< R1. {s2. \tempoXoffset #-3 s } >> \mark \default
 % Bars 16 to 20
-	R1.*8
+	R1.*3
+	
+	
+	\mmrLength #12 R1.
+	R1.*4
 % Bars 21 to 25
 	
 	
 	
-	R1.*4
-	
+	\mmrnDown R1.
+	R
 % Bars 26 to 30
-	
+	R1.*2
 	
 	R1.*3
 	
@@ -42,19 +46,19 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	
-	R1.*6
+	\mmrLength #13 \mmrnDown R1.*4
 	
 % Bars 41 to 45
 	
 	
-	
-	\mark \default
+	R1.
+	\mmrLength #15 \mmrnDown R \mark \default
 	\ni \mmrPos #4 R1. \no
 % Bars 46 to 50
-	R1.*3
+	\mmrLength #12 R1.*2
 	
-	
-	\ni \mmrPos #-4 R1.
+	R1.
+	\ni \mmrPos #-6 R1.
 	\mmrPos #-4 R \no
 % Bars 51 to 55
 	\once \voiceTwo r2. d''8\mf r r r b b \mark \default
@@ -65,16 +69,17 @@ musicOboeIIMvtII = \relative c {
 % Bars 56 to 60
 	fis\fff fis fis  b, b d  cis\> cis cis d d e\!
 	d\ff\> d d  g, g b  ais ais ais  b b cis\!
-	b\f b b r4 r8 r2.
-	R1.*7
+	b-\offset X-offset -1 \f b b r4 r8 r2.
+	\mmrLength #13 \mmrnDown R1.
+	R
 % Bars 61 to 65
-	
+	\mmrLength #15 \mmrnDown R1.*5
 	
 	
 	
 	\bar "||" \time 4/4
 % Bars 66 to 70
-	R1*9
+	\mmrLength #25 \mmrnDown R1*9
 % Bars 71 to 75
 	
 	
@@ -89,12 +94,12 @@ musicOboeIIMvtII = \relative c {
 % Bars 81 to 85
 	
 	f4.\mf\< ges8( bes\! aes) ges\>-- f--\! \mark \default
-	R1*2
+	R1*5
 	
-	R1*2
+	
 % Bars 86 to 90
 	
-	R1
+	
 	bes,4.\mf\< ces8( ees\! des) ces--\> bes--\!
 	fis!\f fis fis fis  fis fis fis fis
 	dis4.\< e8( gis\! fis) e--\> dis--\! \mark \default
@@ -119,12 +124,12 @@ musicOboeIIMvtII = \relative c {
 % Bars 106 to 110
 	e8 e r4 r e8 r
 	r4 e8 r r4 e8 r\fermata \bar "||"
-	\timeTwelveEightC R1.*4
+	\timeTwelveEightC R1.*8
 	
 	
 % Bars 111 to 115
 	
-	R1.*4
+	
 	
 	
 	\mark \default
@@ -132,7 +137,7 @@ musicOboeIIMvtII = \relative c {
 	\ni \mmrPos #4 R1.
 	\mmrPos #4 R1.
 	\mmrPos #6 R \no
-	\voiceOne r4 r8 \oneVoice fis4.\f~-> \after 4.*2/3 \! fis\> r4 r8
+	\voiceOne r4 r8 \oneVoice fis4.\f~-> fis\> r4\! r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		b,16\mf( cis) dis\<-- e-- fis-- g-- gis-- a--\! a( g fis a g8) r16 b\mf(
 % Bars 121 to 125
@@ -146,12 +151,12 @@ musicOboeIIMvtII = \relative c {
 		r d(\f e d) r d( e d) r d,( b cis) \tuplet 3/2 4 {d8(_\fcantabile cis) b--} \timeSignature 12/8
 	}
 	d4.->( cis2.) a'8(\< b,) cis--\!
-	e4.(\> d2.)\< d8-- e-- fis--\!
+	e4.(\> d2.)\! d8--\< e-- fis--\!
 	g4._\fcresc g4 g8 g4.~ g4 g8
 % Bars 131 to 135
 	\tuplet 2/3 4. {g( fis) b--\ff a--} g(_\dimmarkup fis) e-- d-- cis-- b--
-	d4.\f->( cis2.) a'8(\< b,) cis--\!
-	e4.(\> d2.)\< d8-- e-- fis--\!
+	d4.-\offset X-offset -2 \f^>( cis2.) a'8(\< b,) cis--\!
+	e4.(\> d2.)\! d8--\< e-- fis--\!
 	fis'4.\f fis fis d,8-- e-- fis--
 	fis'4. fis fis gis,8--\ff a-- b--
 % Bars 136 to 140
@@ -178,8 +183,8 @@ musicOboeIIMvtII = \relative c {
 	ais4.(_\crescmarkup b4) b8 b4.( c4) c8
 	\tuplet 2/3 4. {c( cis) cis cis cis( d) d d} \timeSignature 4/4
 	\scaleDurations 3/2 {
-		d4\ffff fis,8( b) \after 2*3/4 \! a2\>
-		b4\ff d,8( g) \after 2*3/4 \! fis2\>
+		\noteHeadEsw #'(-1.20 . 1.2) d4\ffff fis,8( b) \after 2*3/4 \! a2\>
+		\revertNoteHeadEsw b4\ff d,8( g) \after 2*3/4 \! fis2\>
 		g16\f b b b  e, e e e  e4\> eis\!
 % Bars 156 to 160
 		fis4\mf r r2
@@ -199,7 +204,7 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	\bar "||"
-	\time 12/8 R1.*14
+	\time 12/8 \mmrLength #19 R1.*13
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -207,6 +212,6 @@ musicOboeIIMvtII = \relative c {
 % Bars 181 to 184
 	
 	
-	
+	R1.
 	\ni R1.\fermata \no \bar "|."
 }

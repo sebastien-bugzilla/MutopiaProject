@@ -10,7 +10,7 @@ musicOboeIIMvtIV = \relative c {
 %	\transposition a
 	\section \sectionLabel Finale
 % Bars 1 to 5
-	R1*15
+	\mmrLength #42 R1*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -62,15 +62,15 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 % Bars 51 to 55
-	r4 << b,2.~ {s8\p\< s s s s\> s }>>
+	r4 << b,2.~ {\hairpinShorten #'(0 . -1.3) s8\p\< s s s \hairpinShorten #'(1.3 . 0) s\> s }>>
 	b8\! r r4 r2
-	r4 << b2.~ {s8\pp\< s s s s\> s}>>
+	r4 << b2.~ {\hairpinShorten #'(0 . -1.6) s8\pp\< s s s \hairpinShorten #'(1.6 . 0) s\> s}>>
 	b8\! r \after 2.*5/6 \! b2.(\<
 	b4\>~ b8\!) r r2
 % Bars 56 to 60
 	R1*2
 	\bar "||"
-	\key e \minor \time 2/2 R1
+	\key e \minor \time 2/2 \mmrnDown R1
 	e1\f~
 	e8 r r4 r2
 % Bars 61 to 65
@@ -100,15 +100,11 @@ musicOboeIIMvtIV = \relative c {
 % Bars 81 to 85
 	g dis' e fis \mark \default
 	g8 r r4 r2
-	R1*4
+	R1*11
 	
 	
 % Bars 86 to 90
 	
-	R1*3
-	
-	
-	R1*4
 % Bars 91 to 95
 	
 	
@@ -117,7 +113,7 @@ musicOboeIIMvtIV = \relative c {
 	\mmrPos #-4 R
 % Bars 96 to 100
 	\mmrPos #-4 R \no
-	<< fis,1\sf( {s2 s4\> s8 s\!}>> \mark \default
+	fis,1\sf\>( \mark \default
 	e8)\p r r4 r2
 	R1*7
 % Bars 101 to 105
@@ -139,7 +135,7 @@ musicOboeIIMvtIV = \relative c {
 	fis\< g a b
 	cis dis\! e,\fff e
 	r e r e
-	R1
+	r e r2
 % Bars 121 to 125
 	R1*7
 % Bars 126 to 130
@@ -239,10 +235,10 @@ musicOboeIIMvtIV = \relative c {
 	b fis' g fis
 	g e d c
 % Bars 206 to 210
-	b e,8\ff e fis fis fis fis
-	e e e e d d d d
-	e4 e8 e fis fis fis fis 
-	e e e e d d d d \mark \default
+	b e,8\ff e fis2:8
+	e: d:
+	e4 e8 e fis2:8 
+	e: d: \mark \default
 	e4 g\fff g g 
 % Bars 211 to 215
 	g g g g
@@ -272,21 +268,13 @@ musicOboeIIMvtIV = \relative c {
 	bis4( cis) cis2
 	ais e
 	cis r
-	R1*8
+	R1*22
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
-	R1*8
-	
-	
-	
 % Bars 246 to 250
 	
-	
-	
-	
-	R1*6
 % Bars 251 to 255
 	
 % Bars 256 to 260
@@ -372,24 +360,16 @@ musicOboeIIMvtIV = \relative c {
 	r4 c' g g
 	g dis' e fis \mark \default
 	g8 r r4 r2 
-	R1*4
+	R1*11
 % Bars 326 to 330
 	
-	
-	
-	R1*3
-	
 % Bars 331 to 335
-	
-	R1*4
-	
-	
 	
 % Bars 336 to 340
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	\after 1*7/8 \! fis,1\mf\>( \mark \default
+	fis,1\mf\>( \mark \default
 	e8)\p r r4 r2
 % Bars 341 to 345
 	R1*7
@@ -404,7 +384,7 @@ musicOboeIIMvtIV = \relative c {
 	r4 fis( e fis)
 	b,2(\< cis)
 	d4( dis fis_\crescmarkup e)\!
-	b'4.(\sf a8)\! dis,4.(\mf e8) \mark \default
+	b'4.(\sf\> a8)\! dis,4.(\mf e8) \mark \default
 % Bars 356 to 360
 	g8 r b,4\ff cis d!
 	e fis g a
@@ -442,7 +422,7 @@ musicOboeIIMvtIV = \relative c {
 	\after 1*7/8 \! cis) 
 	eis2( fis~
 	fis4) r cis2\mf \mark \default 
-	ees c
+	ees c!
 % Bars 391 to 395
 	ees( des)
 	f_\crescmarkup des
@@ -601,10 +581,10 @@ musicOboeIIMvtIV = \relative c {
 	g g8( a bes c d dis
 	e4) e,8( fis gis! a b! bis
 	cis4) cis,8( d dis eis fisis gis
-	a4) a8( b cis dis e! eis \mark \markDdBox
+	a4) a8( b cis dis e! eis \markWhiteout \mark \markDdBox
 % Bars 526 to 530
-	fis4) r d,2~
-	d e~
+	fis4) r dis,2~
+	dis e~
 	e b'~
 	b b~
 	b b
@@ -617,7 +597,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 536 to 540
 	gis, r b r
 	b r e! dis
-	gis,_\semprefff gis r2
+	\startMeasureCount gis,_\semprefff gis r2
 	gis4 gis r2
 	gis4 gis r2
 % Bars 541 to 545
@@ -625,7 +605,7 @@ musicOboeIIMvtIV = \relative c {
 	gis4 gis r2
 	gis4 gis r2
 	gis4 gis r2
-	gis4 gis r2 \bar "||"
+	gis4 gis r2 \bar "||" \stopMeasureCount
 % Bars 546 to 550
 	\time 6/4 e4.\ffff e8 e4 e fis gis
 	a gis fis e dis cis

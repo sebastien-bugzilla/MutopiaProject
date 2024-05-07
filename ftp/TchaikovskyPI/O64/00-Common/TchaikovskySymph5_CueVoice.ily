@@ -466,10 +466,10 @@ cueVoiceOboeIMvtI = \relative c {
 	fis'4.^\markup {Viol.I} fis4 fis8
 	fis4.~ fis8 e( d)
 	fis4.~ fis8 e( d)
-	<<{\InCueContext fis4.~ fis8 r r} \\ {\InCueContext a,,8(_\markup {Klar.,Fag.} b cis d e eis)}>>
+	<<{\InCueContext fis4.~ fis8 r r} \\ {\InCueContext \beamOffset #'(0.5 . 0.5) \shape #'((0 . 0.1)(0 . 0.5)(0 . 0.5)(0 . 0.1)) Slur a,,8(-\offset X-offset -8 _\markup {Klar.,Fag.} b cis \beamOffset #'(0.5 . 0.5) d e eis)}>>
 	s2.*20
 	% bar 152 - 153
-	r4^\markup {Viol.I}^\pizz r8 a'8\noBeam cis,,,_\markup {Br.} e 
+	r4-\offset X-offset -6 ^\markup {Viol.I}-\offset X-offset -1 ^\pizz r8 a'8\noBeam cis,,,_\markup {Br.} e 
 	a cis e a^\markup {Viol.I} cis e
 	s2.*72
 	% bar 226
@@ -480,20 +480,20 @@ cueVoiceOboeIMvtI = \relative c {
 	g4.~^\markup {Tuba} g8 r r \cueClefUnset
 	s2.*77
 	% bar 328 - 332
-	r4 d''16(^\markup {Klar.I} e) fis( g fis g a b)
+	r4 d''16(-\offset X-offset -2 ^\markup {Klar.I} e) fis( g fis g a b)
 	c8. c16 c8~( c b-.) ais(
 	b) d,( e~ e) fis( g)
 	a4(-> e8) a4->( d,8)
 	\voiceTwo b' r r \oneVoice s4.
 	s2.*52
 	% bar 385 - 388
-	gis'4.^\markup {Viol.I} gis4 gis8
+	gis'4.-\offset X-offset -5 ^\markup {Viol.I} gis4 gis8
 	gis4.~ gis8 fis( e)
 	gis4.~ gis8 fis( e)
-	<<{\InCueContext gis4.~ gis8 r r} \\ {\InCueContext b,,8(_\markup {Klar.,Fag.} cis dis e fis fisis)}>>
+	<<{\InCueContext gis4.~ gis8 r r} \\ {\InCueContext \markEO #'(-1.5 . 7.5) b,,8(_\markup {Klar.,Fag.} cis dis e fis fisis)}>>
 	s2.*20
 	% bar 409 - 410
-	r4^\markup {Viol.I}^\pizz r8 \once \stemUp <b b'>8 r fis,_\markup {Br.}
+	r4-\offset X-offset -2.5 ^\markup {Viol.I}-\offset X-offset 2^\pizz r8 <b b'>8 r fis,^\markup {Br.}
 	b dis fis b\noBeam dis^\markup {Viol.I} fis
 	s2.*69
 	% bar 480 - 482
@@ -514,11 +514,11 @@ cueVoiceOboeIMvtII = \relative c {
 	\once \voiceTwo e4. s4.*3
 	s1.*9
 	% bar 44 - 45
-	r4^\markup {Klar.} r8 a2. a4.
+	r4_\markup {Klar.} r8 a2. a4.
 	d_\markup {Viol.I} fis,4( b8) s2.
 	s1.*20 s1*1
 	% bar 67
-	<>_\markup {(Klar.)}
+	<>-\offset X-offset -2 _\markup {(Klar.)}
 	s1*8
 	% bar 75 - 77
 	cis,4.^\markup {Vcll.} d8( fis e) d-- cis--
@@ -594,14 +594,14 @@ cueVoiceOboeIIMvtI = \relative c {
 	fis4.^\markup {Viol.I} fis4 fis8
 	fis4.~ fis8 e( d)
 	fis4.~ fis8 e( d)
-	<<{\InCueContext fis4.~ fis8 r r} \\ {\InCueContext a,,8(-\offset X-offset -4 _\markup {\column {\lower #1.5 "Klar." "Fag."}} b cis d e eis)}>>
+	<<{\InCueContext fis4.~ fis8 r r} \\ {\InCueContext \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur \beamOffset #'(0.5 . 0.5) a,,8(-\offset X-offset -4.5 _\markup {\column {\lower #1.5 "Klar." "Fag."}} b cis d e eis)}>>
 	s2.*20
 	% bar 152 - 153
-	r4^\markup {Viol.I}^\pizz r8 a'8\noBeam cis,,,_\markup {Br.} e 
+	r4^\markup {Viol.I}_\pizz r8 a'8\noBeam cis,,,_\markup {Br.} e 
 	a cis e a^\markup {Viol.I} cis e
 	s2.*20
 	% bar 174 - 176
-	d8\repeatTie^\markup {Ob.I} a( b) cis4( d8)
+	d8\repeatTie-\offset X-offset -1 ^\markup {Ob.I} a( b) cis4( d8)
 	r a( b) cis4.
 	r4 d8(~ d cis b)
 	s2.*53
@@ -621,13 +621,13 @@ cueVoiceOboeIIMvtI = \relative c {
 	\voiceOne e8( dis e) \oneVoice s4.
 	s2.*51
 	% bar 385 - 388
-	gis4.^\markup {Viol.I} gis4 gis8
+	gis4.-\offset X-offset -5 ^\markup {Viol.I} gis4 gis8
 	gis4.~ gis8 fis( e)
 	gis4.~ gis8 fis( e)
 	gis4.~ gis8 r r
 	s2.*20
 	% bar 409 - 410
-	r4^\markup {Viol.I}^\pizz r8 \once \stemUp <b, b'>8 r fis,_\markup {Br.}
+	r4_\pizz r8 <b, b'>8-\offset X-offset -5 ^\markup {Viol.I} r fis,_\markup {Br.}
 	b dis fis b\noBeam dis^\markup {Viol.I} fis
 	s2.*20
 	% bar 431 - 433
@@ -644,10 +644,10 @@ cueVoiceOboeIIMvtII = \relative c {
 	<>_\markup {(Klar.)}
 	s1.*8
 	% bar 24
-	<>_\markup {(Ob.I)}
+	<>-\offset X-offset -3 _\markup {(Ob.I)}
 	s1.*7
 	% bar 31 - 33
-	s4.*3 d'8\((_\markup {Vcll.} cis) b--\)
+	s4.*3 d'8\((^\markup {Vcll.} cis) b--\)
 	d4.( cis2.) a8\(( b) cis--\)
 	e4. d2. d8\(( e) fis--\)
 	s1.*11
@@ -718,7 +718,7 @@ cueVoiceOboeIIMvtIV = \relative c {
 	b2 r
 	s1*70
 	% bar 94 - 96
-	r4^\markup {Fl.I} fis''-- e-- fis(
+	r4-\offset X-offset -2 ^\markup {Fl.I} fis''-- e-- fis(
 	d e) cis( d
 	b8) r d4-- cis-- d\laissezVibrer
 	s1*145
@@ -730,7 +730,7 @@ cueVoiceOboeIIMvtIV = \relative c {
 	aes( a bes b) c( cis d ees)
 	s1*78
 	% bar 336 - 338
-	r4^\markup {Fl.} fis-- e-- fis(
+	r4-\offset X-offset -1 ^\markup {Fl.} fis-- e-- fis(
 	d\sf e) cis( d
 	b8) r d4-- cis-- d\laissezVibrer
 }

@@ -367,6 +367,15 @@ mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::se
 
 measureCountPosition = \override Staff.MeasureCounter.direction = \etc
 
+noteHeadEsw = #(define-music-function
+	(spacing)
+	(pair?)
+	#{
+		\override NoteHead.extra-spacing-width = #spacing
+	#}
+)
+
+revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

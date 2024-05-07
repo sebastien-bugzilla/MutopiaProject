@@ -394,13 +394,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 131
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "string." 
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "string."
 		}
@@ -419,13 +419,16 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 152
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(floteI floteII floteIII oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(floteI floteII floteIII  klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo \markup { 
 			\column { \lower #1 "Un pochettino" "più animato" }
 		}
+	}
+	\tag #'(oboeI oboeII) {
+		\tempo "Un pochettino più animato" 
 	}
 	s2.*18
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -447,13 +450,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 188
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "stringendo"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "stringendo"
 		}
@@ -478,13 +481,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 385
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( oboeI oboeII klarinetteI klarinetteII 
+	\tag #'( oboeI  klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "Poco meno animato"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeII) {
 		\tempo \markup {
 			\column {
 				\lower #1.5 "Poco meno" "animato"
@@ -495,13 +498,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 388
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(   klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "string."
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "string."
 		}
@@ -526,7 +529,7 @@ tempiPartMvtI = {
 		violoncell kontrabass) {
 		\tempo "Un pochettino più mosso"
 	}
-	\tag #'(floteII floteIII) {
+	\tag #'(floteII floteIII ) {
 		\tempo \markup {
 			\column {
 				\lower #1.5 "Un pochettino" "più mosso"
@@ -547,13 +550,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 445
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "stringendo"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "stringendo"
 		}
@@ -573,7 +576,7 @@ tempiPartMvtI = {
 %                            M O V E M E N T   I I                             %
 %==============================================================================%
 tempiPartMvtII = {
-	\tag #'( oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(   klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
@@ -585,7 +588,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\overlay {
 				\line { "Andante cantabile," }
@@ -602,13 +605,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 13
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(   oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(     klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animando"
 		}
@@ -617,13 +620,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 15.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten."
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten."
 		}
@@ -632,13 +635,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 16
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "sostenuto"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "sostenuto"
 		}
@@ -647,13 +650,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 19
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animando"
 		}
@@ -662,13 +665,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 20
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "sostenuto"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "sostenuto"
 		}
@@ -677,7 +680,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 24
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(floteI oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(floteI oboeI  klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
@@ -689,7 +692,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(floteII floteIII) {
+	\tag #'(floteII floteIII oboeII) {
 		\tempo \markup {
 			\overlay {
 				\line { "Con moto" }
@@ -705,13 +708,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 25.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(   klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animato"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animato"
 		}
@@ -720,7 +723,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 28
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
@@ -732,7 +735,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\concat {
 				\medium \italic "sostenuto (" 
@@ -773,13 +776,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 35
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando" 
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animando"
 		}
@@ -788,13 +791,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 36.33
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten."
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten."
 		}
@@ -803,13 +806,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 37
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "sostenuto"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "sostenuto"
 		}
@@ -818,13 +821,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 39
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "Poco più animato"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\column {
 				\lower #1.5 "Poco più" "animato"
@@ -835,13 +838,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 43
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten."
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten."
 		}
@@ -850,7 +853,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 44
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
@@ -865,7 +868,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup { 
 			\overlay {
 				\line { "Tempo I" }
@@ -881,13 +884,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 46
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animando"
 		}
@@ -896,13 +899,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 48
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten."
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten."
 		}
@@ -911,7 +914,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 49
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(   oboeII klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
@@ -923,7 +926,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI) {
 		\tempo \markup {
 			\concat {
 				\medium \italic "("
@@ -936,13 +939,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 50
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(   oboeII klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI) {
 		\tempo \markup {
 			\medium \italic "animando"
 		}
@@ -1006,13 +1009,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 57
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animando"
 		}
@@ -1021,13 +1024,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 58.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten."
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten."
 		}
@@ -1036,7 +1039,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 59
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(floteI floteII  klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
@@ -1048,7 +1051,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(floteIII) {
+	\tag #'(floteIII oboeI oboeII) {
 		\tempo \markup {
 			\overlay {
 				\line {"Più animato"}
@@ -1064,13 +1067,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 60.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten."
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten."
 		}
@@ -1079,7 +1082,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 61
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(floteI floteII   klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
@@ -1091,7 +1094,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(floteIII) {
+	\tag #'(floteIII oboeI oboeII) {
 		\tempo \markup {
 			\overlay {
 				\line {"Poco meno"}
@@ -1106,7 +1109,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 66
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
@@ -1118,7 +1121,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\overlay {
 				\line { "Moderato" }
@@ -1135,13 +1138,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 96
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "stringendo" 
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "stringendo"
 		}
@@ -1176,13 +1179,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 116
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animando"
 		}
@@ -1191,13 +1194,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 118.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten."
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten."
 		}
@@ -1206,13 +1209,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 119
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "sostenuto"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "sostenuto"
 		}
@@ -1221,13 +1224,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 122
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animando"
 		}
@@ -1236,13 +1239,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 123
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "sostenuto"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "sostenuto"
 		}
@@ -1251,13 +1254,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 126
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animando"
 		}
@@ -1266,13 +1269,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 127.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten."
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten."
 		}
@@ -1313,13 +1316,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 140
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "ritenuto"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "ritenuto"
 		}
@@ -1344,13 +1347,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 144
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animando"
 		}
@@ -1359,13 +1362,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 145.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten."
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten."
 		}
@@ -1374,7 +1377,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 146
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
@@ -1386,7 +1389,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\concat {
 				\medium \italic "("
@@ -1399,13 +1402,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 147
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando un poco"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animando un poco"
 		}
@@ -1414,7 +1417,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 149
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
@@ -1426,7 +1429,7 @@ tempiPartMvtII = {
 			}
 		}
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\concat {
 				\medium \italic "("
@@ -1449,13 +1452,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 154
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "animando"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "animando"
 		}
@@ -1464,13 +1467,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 155.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten." 
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten."
 		}
@@ -1489,13 +1492,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 157.5
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten."
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten."
 		}
@@ -1514,13 +1517,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 166
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(  oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(    klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "ritenuto"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "ritenuto"
 		}
@@ -1545,13 +1548,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 183
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(  klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "ritenuto molto"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten. molto"
 		}
@@ -1656,13 +1659,13 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 468
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'( oboeI oboeII klarinetteI klarinetteII 
+	\tag #'(   klarinetteI klarinetteII 
 		fagotteI fagotteII hornI hornII hornIII hornIV trompetenI trompetenII 
 		posauneI posauneII posauneIII tuba pauken violineI violineII viola 
 		violoncell kontrabass) {
 		\tempo "riten. molto"
 	}
-	\tag #'(floteI floteII floteIII) {
+	\tag #'(floteI floteII floteIII oboeI oboeII) {
 		\tempo \markup {
 			\medium \italic "riten. molto"
 		}
