@@ -43,7 +43,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64"
+			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64 — Klarinetten"
 		}
 		instrument = \markup {
 			"Klarinetten"
@@ -51,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKlarinetteIMvtI
-%			}
+			\new Voice {
+				\formatKlarinetteIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(klarinetteI) \tempiPartMvtI
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKlarinetteIMvtII
-%			}
+			\new Voice {
+				\formatKlarinetteIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(klarinetteI) \tempiPartMvtII
 			}
@@ -91,7 +91,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.5 \bold 2.
 			}
 		}
 		\layout {
@@ -99,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKlarinetteIMvtIII
-%			}
+			\new Voice {
+				\formatKlarinetteIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(klarinetteI) \tempiPartMvtIII
 			}
@@ -115,7 +115,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.3 \bold 3.
 			}
 		}
 		\layout {
@@ -123,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKlarinetteIMvtIV
-%			}
+			\new Voice {
+				\formatKlarinetteIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(klarinetteI) \tempiPartMvtIV
 			}
@@ -139,7 +139,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.1 \bold 4.
 			}
 		}
 		\layout {
@@ -147,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKlarinetteIIMvtI
-%			}
+			\new Voice {
+				\formatKlarinetteIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(klarinetteII) \tempiPartMvtI
 			}
@@ -171,9 +171,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKlarinetteIIMvtII
-%			}
+			\new Voice {
+				\formatKlarinetteIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(klarinetteII) \tempiPartMvtII
 			}
@@ -185,7 +185,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -195,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKlarinetteIIMvtIII
-%			}
+			\new Voice {
+				\formatKlarinetteIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(klarinetteII) \tempiPartMvtIII
 			}
@@ -211,7 +211,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.9 \bold 3.
 			}
 		}
 		\layout {
@@ -219,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKlarinetteIIMvtIV
-%			}
+			\new Voice {
+				\formatKlarinetteIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(klarinetteII) \tempiPartMvtIV
 			}
@@ -235,7 +235,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.6 \bold 4.
 			}
 		}
 		\layout {

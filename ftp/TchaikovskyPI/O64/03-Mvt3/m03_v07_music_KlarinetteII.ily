@@ -10,14 +10,14 @@ musicKlarinetteIIMvtIII = \relative c {
 	\transposition a
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #40 \mmrnDown R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	\mark \default
 	R2.*2
 	
-	\ni \mmrPos #4 R2.
+	\ni \mmrPos #4 \mmrPos #6 R2.
 	\mmrPos #4 R \no
 % Bars 16 to 20
 	e'2\p e8( f)
@@ -85,7 +85,7 @@ musicKlarinetteIIMvtIII = \relative c {
 	r4 r f,\p~
 	f2.\<
 % Bars 76 to 80
-	<< e {s4\mf\> s s8 s\p}>> 
+	<< e {\hairpinShorten #'(-0.5 . -0.5) s4\mf\> s s8 s\p}>> 
 	R2.
 	r4 r f\p~
 	f2.\<
@@ -94,12 +94,12 @@ musicKlarinetteIIMvtIII = \relative c {
 	e8\p r r4 r
 	r4 r d~\p
 	d8 r d\< r d'\! r
-	\after 2*3/4 \! b2\mf\> r4
+	\hairpinShorten #'(-0.5 . -1) \after 2*3/4 \! b2\mf\> r4
 	R2.
 % Bars 86 to 90
 	r4 r d,~\p
 	d8 r d\< r d'\! r
-	b2\mf\> g,4\p~
+	\hairpinShorten #'(-0.5 . -0.5) \after 2*3/4 \! b2\mf\> g,4->\p~
 	g8 r c4->~ c8 r
 	d4->( a'8) r r4
 % Bars 91 to 95
@@ -145,8 +145,8 @@ musicKlarinetteIIMvtIII = \relative c {
 	R2.
 	r8 e,-.\noBeam e-. c'-. r4
 % Bars 126 to 130
-	R2.
-	R2.
+	R2.*2
+	
 	r4 r f,\mf~
 	f2.\<
 	<< e {s4\f\> s s8 s\!}>>
@@ -159,7 +159,7 @@ musicKlarinetteIIMvtIII = \relative c {
 % Bars 136 to 140
 	r4 r d~\mf
 	d8 r d\< r d' r\!
-	\after 2*3/4 \! b2\f\> r4
+	\hairpinShorten #'(-0.5 . -0.5) \after 2*3/4 \! b2\f\> r4
 	R2.
 	r4 r d,4~\mf
 % Bars 141 to 145
@@ -175,7 +175,7 @@ musicKlarinetteIIMvtIII = \relative c {
 	\mark #11
 	R2.*2
 	
-	\ni \mmrPos #4 R2.
+	\ni \mmrPos #6 R2.
 % Bars 156 to 160
 	\mmrPos #4 R \no
 	e,2\p e8( f)
@@ -198,7 +198,7 @@ musicKlarinetteIIMvtIII = \relative c {
 	fis(\> e d c) b-. a-.
 % Bars 176 to 180
 	e'( d c b) a-. g-.\!
-	fis(\p g a b c d) \mark \default
+	fis(-\offset X-offset -1 \p g a b c d) \mark \default
 	e4._\dolce d8( c b)
 	a4( g2)
 	a4. b8( c a)
@@ -289,7 +289,7 @@ musicKlarinetteIIMvtIII = \relative c {
 	g4\pp c2->\mf
 	b2->_\dimmarkup a4->~
 	a aes2->
-	\after 2.*5/6 \! g2.\pp\> \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! g2.-\offset X-offset -1 \pp\> \mark \default
 % Bars 256 to 260
 	R2.*8
 % Bars 261 to 265

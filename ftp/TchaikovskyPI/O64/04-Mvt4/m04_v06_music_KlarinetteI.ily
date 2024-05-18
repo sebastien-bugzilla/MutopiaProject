@@ -55,7 +55,7 @@ musicKlarinetteIMvtIV = \relative c {
 	fis-- e-- d-- d8.( cis16)
 	b2.\< g'4--\ff
 	fis-- e-- d-- fis8.( e16
-	\tuplet 3/2 4 {d8) r r fis,(\ff g a) bes( d c bes a g)
+	\tuplet 3/2 4 {d8) r r fis,(-\offset X-offset -2 \ff g a) bes( d c bes a g)
 	fis( g a) g( a bes) a( bes c) bes( c cis)
 % Bars 41 to 45
 	d( d e) fis( g a) bes( d c bes a g)
@@ -128,12 +128,12 @@ musicKlarinetteIMvtIV = \relative c {
 	d\sf e) c(\> d\! \mark \default
 	b8)\p g g g   g g g g
 	g g g g   g g g g
-	g\< g g g  g g g g
+	\hairpinShorten #'(0 . 1) g\< g g g  g g g g
 % Bars 101 to 105
 	bes bes bes bes\! a\mf a a a
 	b\> b b b  g g g g\!
 	g\p g g g   g g g g
-	g\< g g g   g g g g
+	\hairpinShorten #'(0 . 1) g\< g g g   g g g g
 	bes bes bes bes\! a\mf a a a
 % Bars 106 to 110
 	c c, c c   c c c c
@@ -149,7 +149,7 @@ musicKlarinetteIMvtIV = \relative c {
 	c c c c  d d d d
 % Bars 116 to 120
 	d d d d   d d d d
-	d\< d d d   d d d d
+	\hairpinShorten #'(0 . 1) d\< d d d   d d d d
 	d d d d\!   d4\fff d
 	r4 d r d,
 	r d r d
@@ -157,7 +157,7 @@ musicKlarinetteIMvtIV = \relative c {
 	R1*6
 % Bars 126 to 130
 	
-	d2\mf\<~ d8\! r r4 \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) d2-\offset X-offset -0.5 \mf\<~ d8\! r r4 \mark \default
 	g1_\mfespr~
 	g2 f8( e d c)
 	g'2->( f~
@@ -190,7 +190,7 @@ musicKlarinetteIMvtIV = \relative c {
 	bes) r r4 r2
 	R1*2
 	
-	f2->\f g8( f e f)
+	f2->\f \shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur g8( f e f)
 % Bars 156 to 160
 	bes'4\mf g bes g
 	ees'_\dimmarkup aes, e' e,
@@ -407,12 +407,12 @@ musicKlarinetteIMvtIV = \relative c {
 	b8)\p g g g  g g g g
 % Bars 341 to 345
 	g g g g  g g g g
-	g\< g g g   g g g g
+	\hairpinShorten #'(0 . 1) g\< g g g   g g g g
 	bes bes bes bes\! a\mf a a a
 	b\> b b b  g g g g\!
 	g\p g g g   g g g g
 % Bars 346 to 350
-	g\< g g g   g g g g
+	g-\alterBroken shorten-pair #'(() (0 . 1)) \< g g g   g g g g
 	bes bes bes bes\! a\mf a a a
 	c c, c c   c c c c
 	c c c c  c c c c
@@ -579,7 +579,7 @@ musicKlarinetteIMvtIV = \relative c {
 	d b a g
 	fis2. b4
 	a, b fis' g
-	fis16( e, fis g a b c cis) d( e fis g a b c! cis \mark \markAaBox
+	fis16( e, fis g a b c cis) d( e fis g a b c! cis \markWhiteout \mark \markAaBox
 	d8) r g,,4\fff g g
 % Bars 491 to 495
 	g g g g
@@ -596,7 +596,7 @@ musicKlarinetteIMvtIV = \relative c {
 % Bars 501 to 505
 	b!4 e d c
 	d8. b16 d4~ d8 g, d b
-	e,2\sfff a\sfff \bar "||"
+	e,2-\offset X-offset -0.5 \sfff a-\offset X-offset 0.5 \sfff \bar "||"
 	\time 2/2 d,4 r8 d(\p g4) r8 a(
 	b4) r8 a( gis4) r8 b(
 % Bars 506 to 510

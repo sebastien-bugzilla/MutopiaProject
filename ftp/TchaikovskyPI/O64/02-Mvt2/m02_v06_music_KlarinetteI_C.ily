@@ -105,14 +105,14 @@ musicKlarinetteIMvtII = \relative c {
 % Bars 86 to 90
 	e!4-> \tuplet 9/8 4 {d32( e d e d e d e d} cis4) eis8( gis)
 	R1
-	cis,,4.\mf d8( fis\! e) d--\> cis--\!
+	cis,,4.\mf\< d8( fis\! e) d--\> cis--\!
 	c!\f c c c  b b b b
 	fis''4.\< g8( b\! a) g--\> fis--\! \mark \default
 % Bars 91 to 95
 	R1*2
 	
 	\aIIXoffset #-2 c,2^>(-\offset X-offset -2.5 \f b)
-	c( b)
+	c->( b)
 	\partCombineApart b4. fis'8( a g fis e)
 % Bars 96 to 100
 	d'( c b a) \partCombineAutomatic cis,( dis e fis)

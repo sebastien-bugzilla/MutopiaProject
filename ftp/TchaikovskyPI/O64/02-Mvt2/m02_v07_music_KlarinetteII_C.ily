@@ -105,7 +105,7 @@ musicKlarinetteIIMvtII = \relative c {
 % Bars 86 to 90
 	e!4-> \tuplet 9/8 4 {d32( e d e d e d e d} cis4) eis8( gis)
 	R1
-	cis,4.\mf d8( fis\! e) d--\> cis--\!
+	cis,4.\mf\< d8( fis\! e) d--\> cis--\!
 	a\f a a a  a a a a
 	fis'4.\< g8( b\! a) g--\> fis--\! \mark \default
 % Bars 91 to 95

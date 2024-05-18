@@ -10,7 +10,7 @@ musicKlarinetteIMvtIII = \relative c {
 	\transposition a
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #38 \mmrnDown R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -40,7 +40,7 @@ musicKlarinetteIMvtIII = \relative c {
 	fis(\> e d c) b-. a-.
 	e'( d c b) a-. g-.\!
 % Bars 36 to 40
-	fis(\p g a b c d) \mark \default
+	fis(-\tweak extra-offset #'(0.5 . -11.5) ^\p g a b c d) \mark \default
 	e4._\dolce d8( c b)
 	a4( g2)
 	a4. b8( c a)
@@ -81,13 +81,13 @@ musicKlarinetteIMvtIII = \relative c {
 % Bars 71 to 75
 	a) f'4\( b,! e8(
 	c)\) r r4 r
-	R2.
-	R2.
+	R2.*2
+	
 	d4\p\< d f\!
 % Bars 76 to 80
 	e\mf r r 
-	R2.
-	R
+	R2.*2
+	
 	d4\p\< d f\!
 	e\mf r r \mark \default
 % Bars 81 to 85
@@ -99,7 +99,7 @@ musicKlarinetteIMvtIII = \relative c {
 % Bars 86 to 90
 	r4 r fis,(\p
 	a8) r b\< r c\! r
-	d2\mf\> g,4\p~
+	d2\mf\> g,4->\p~
 	g8 r fis4->( g8) r
 	a4->( a'8) r r4
 % Bars 91 to 95
@@ -125,7 +125,7 @@ musicKlarinetteIMvtIII = \relative c {
 	d8) r r4 r
 	r8 d-.\noBeam d-. a-. ais4->(
 	b8) r r4 r
-	r r ais4(->\mf
+	r r ais4(^>-\offset X-offset -2 \mf
 % Bars 111 to 115
 	b8) r r4 r
 	R2.
@@ -136,7 +136,7 @@ musicKlarinetteIMvtIII = \relative c {
 	b-. r e\mp-. e-. d-.\noBeam r
 	g-.\mf g-. fis-.\noBeam r fis-.\f fis-. \mark \default
 	fis-. r r4 r
-	r8 g-.\mf\noBeam g-. g-. f4->(
+	r8 g-.\mf\noBeam g-. g-. f!4->(
 	e8) r r4 r
 % Bars 121 to 125
 	r8 g-.\noBeam g-. g-. f4->(
@@ -146,20 +146,20 @@ musicKlarinetteIMvtIII = \relative c {
 	r8 e-.\noBeam e-. e-. d4->(
 % Bars 126 to 130
 	c8) r r4 r
-	R2.
-	R
+	R2.*2
+	
 	d4\mf\< d f\!
 	e\f r r
 % Bars 131 to 135
-	R2.
-	R
+	R2.*2
+	
 	d4\mf\< d f\!
 	e\f r r 
 	R2.
 % Bars 136 to 140
 	r4 r fis,(\mf
 	a8) r b\< r c r\!
-	\after 2*3/4 \! d2\f\> r4
+	d2\f\> r4\!
 	R2.
 	r4 r fis,4(\mf
 % Bars 141 to 145
@@ -198,7 +198,7 @@ musicKlarinetteIMvtIII = \relative c {
 	fis(\> e d c) b-. a-.
 % Bars 176 to 180
 	e'( d c b) a-. g-.\!
-	fis(\p g a b c d) \mark \default
+	fis(-\tweak extra-offset #'(-2 . -11) ^\p g a b c d) \mark \default
 	e4._\dolce d8( c b)
 	a4( g2)
 	a4. b8( c a)
@@ -251,7 +251,7 @@ musicKlarinetteIMvtIII = \relative c {
 % Bars 221 to 225
 	c des_\crescmarkup des
 	c des des
-	c8 r c,4\ff( d)
+	c8 r c,4\ff( d!)
 	ees( e f
 	fis8) r r4 r
 % Bars 226 to 230
@@ -268,16 +268,16 @@ musicKlarinetteIMvtIII = \relative c {
 	c des_\crescmarkup des
 % Bars 236 to 240
 	c des des
-	c8 r c,4(\ff d)
+	c8 r c,4(\ff d!)
 	ees( e f
 	fis8) r r4 r
-	R2. \mark \default
+	\mmrLength #12 R2. \mark \default
 % Bars 241 to 245
 	g,2\pp g8 g
 	aes2 g8 f
 	g r e2->~
 	e2.
-	g2\pp g8 g
+	g2-\offset X-offset 1 \pp g8 g
 % Bars 246 to 250
 	aes2 g8 fis
 	g r e2->~
@@ -289,9 +289,9 @@ musicKlarinetteIMvtIII = \relative c {
 	g4\pp c2->\mf
 	b2->_\dimmarkup a4->~
 	a aes2->
-	\after 2.*5/6 \! g2.\pp\> \mark \default
+	\hairpinShorten #'(-0.5 . -1) \after 2.*5/6 \! g2.\pp\> \mark \default
 % Bars 256 to 260
-	R2.*8
+	\mmrLength #12 R2.*8
 % Bars 261 to 265
 	
 	

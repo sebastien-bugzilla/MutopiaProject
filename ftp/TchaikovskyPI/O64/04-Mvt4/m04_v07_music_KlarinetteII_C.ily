@@ -463,8 +463,8 @@ musicKlarinetteIIMvtIV = \relative c {
 	fis dis
 % Bars 391 to 395
 	fis( e)
-	g_\crescmarkup e
-	g( fis)
+	gis_\crescmarkup e
+	gis( fis)
 	a4( fis) a( gis)
 	b( gis) b( a)
 % Bars 396 to 400

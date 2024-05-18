@@ -41,9 +41,9 @@ musicKlarinetteIIMvtI = \relative c {
 % Bars 26 to 30
 	bes4(\< g2)\! ees'4--\mf
 	d-- c--\> bes-- a--\!
-	g2.\sf\> ees'4--\mf
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! g2.\sf\> ees'4--\mf
 	d-- c--\> bes-- a--\!
-	\after 1*7/8 \! g1\sf\>
+	\hairpinShorten #'(-0.5 . -0.5) \after 1*7/8 \! g1-\offset X-offset 0.5 \sf\>
 % Bars 31 to 35
 	c2\p\<~ c4. d8--\!
 	\after 1*7/8 \! d1\>
@@ -53,15 +53,14 @@ musicKlarinetteIIMvtI = \relative c {
 % Bars 36 to 40
 	d1~
 	d4 r r2\fermata \bar "||" \time 6/8
-	R2.*3
+	\mmrLength #35 \mmrnDown R2.*9
 	
 	
 % Bars 41 to 45
-	R2.*6
 	
 % Bars 46 to 50
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #4 R2.
 	\mmrPos #-4 R \no
 	r4 r8 r16 g,(^\graziosoeleggiero a bes c d
 	ees8)[ r16 ees ees8]~ ees d( c
@@ -72,8 +71,8 @@ musicKlarinetteIIMvtI = \relative c {
 	ees)[ r16 ees ees8]~ ees d( c
 	d)_\pococresc f,( g~ g) a( bes
 % Bars 56 to 60
-	c4 g8) cis4( g8) \mark \default
-	d'4.->\mp\>~ d16 d(\p e fis g a
+	c4 g8) cis4( g8) \markXoffset -0.3 \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) d'4.->\mp\>~ d16 d(\p e fis g a
 	bes a g f! ees! d c) r r8 r
 	r4 r8 c16(\p d ees f g a
 	bes a g f ees d c) r r8 r
@@ -112,7 +111,7 @@ musicKlarinetteIIMvtI = \relative c {
 	bes8) r bes16( c d e f8) r
 	a,8._\sempreff a16 a8 r4 r8
 	r4 bes8( b cis d)
-	d8. d16 d8 r8 a16( bes c d
+	d8. d16 d8 r8 a16( bes! c! d
 % Bars 91 to 95
 	ees8) r ees16( f g a bes8) r
 	d,8. d16 d8 r a16( bes c d
@@ -136,7 +135,7 @@ musicKlarinetteIIMvtI = \relative c {
 	d c' bes a g fis
 	g\fff[ r16 g g8]~ g a bes
 	c->( bes) a g4 d8(
-	bes'8-.)[ r16 bes bes8]~ bes8. a16 a8~
+	\stemUp bes'8-.)[ r16 bes bes8]~ \stemNeutral bes8. a16 a8~
 % Bars 111 to 115
 	a8. g16 g8~ g4 c,8(
 	g-.)[ r16 g g8]~ g a bes
@@ -147,7 +146,7 @@ musicKlarinetteIIMvtI = \relative c {
 	R2.*3
 	
 	
-	r4 r8 a,[(\p a,)] r
+	r4 r8 a,[(-\offset X-offset -1.5 \p a,)] r
 	R2.*3
 % Bars 121 to 125
 	
@@ -158,20 +157,20 @@ musicKlarinetteIIMvtI = \relative c {
 % Bars 126 to 130
 	R2.
 	r4 r8 a'([ a,]) r
-	R2.*3
+	\mmrLength #18 \mmrnDown \tempoXoffset #-2 R2.*3
 	
 	
 % Bars 131 to 135
-	c8(\ff\> d e f g gis)\!
-	a4.~\mf\> a4\p gis8(\<
+	c8(-\offset X-offset -2 \ff\> d e f g gis)\!
+	\hairpinShorten #'(-0.5 . -0.5) a4.~-\offset X-offset -0.5 \mf\> a4-\offset X-offset 0.5 \p gis8(\<
 	g!4.) d4( e8)\!
-	f4.\f\> e
-	\after 2.*5/6 \! cis2.\p\<
+	f4.\f\> e\!
+	\hairpinShorten #'(-0.5 . -0.3) \after 2.*5/6 \! cis2.\p\<
 % Bars 136 to 140
-	a'4.~_\mfcresc^\espr a4 gis8(
+	a'4.~-\offset X-offset 0.3 _\mfcresc^\espr a4 gis8(
 	g!4.) d4( e8)
 	g4.\ff\> f8( e d)\!
-	\after 2.*5/6 \! cis2.\mf\> \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! cis2.\mf\> \mark \default
 	R2.*12
 % Bars 141 to 145
 	
@@ -179,7 +178,7 @@ musicKlarinetteIIMvtI = \relative c {
 	
 % Bars 151 to 155
 	
-	\ni \mmrPos #-6 R2.
+	\ni \mmrPos #-6 \tweak extra-offset #'(-0.5 . 0) R2.
 	\mmrPos #-6 R \no
 	a'4\f a8 a4 a8
 	a4 a8 a4 a8
@@ -198,9 +197,9 @@ musicKlarinetteIIMvtI = \relative c {
 % Bars 166 to 170
 	a4\f a8 a4 a8
 	a4 a8 a4 a8
-	R2.*2
+	R2.*6
 	
-	R2.*4
+	
 % Bars 171 to 175
 	
 	
@@ -235,19 +234,19 @@ musicKlarinetteIIMvtI = \relative c {
 	c c4 b c8~
 	c c4 b( c8)
 	a'8[\fff r16 a a8] a a a
-	a a a a a a 
+	a2.:8 
 	r4 r8 a,(_\fcresc aes g)
 % Bars 201 to 205
 	f( e d) c( bes gis) \mark \default
 	a8[\fff r16 a'' a8] a a a
-	a a a a a a
+	a2.:8
 	r4 r8 f,4._\fcresc~
 	f8 b( bes) a( g f)
 % Bars 206 to 210
 	a'\fff[ r16 a a8] a a a
 	r4 r8 f4\ff( c8)
 	c[ r16 c c8] c c c
-	r4 r8 f,,\f( g gis)
+	r4 r8 f,,-\offset X-offset -1 \f( g gis)
 	a[ r16 f' f8] f f f
 % Bars 211 to 215
 	a,[ r16 a a8] a a a
@@ -270,18 +269,18 @@ musicKlarinetteIIMvtI = \relative c {
 	aes r r r4 r8
 % Bars 231 to 235
 	aes8\mf r r r4 r8
-	R2.
-	R2.
-	R2.*4
+	R2.*6
+	
+	
 	
 % Bars 236 to 240
 	
 	
 	des4(->\mf ges,8) des'4(-> ges,8)
 	ces r r r4 r8 \mark \default
-	R2.
+	R2.*2
 % Bars 241 to 245
-	R2.
+	
 	ges4(->\f ces,8) ges'4(-> ces,8)
 	R2.*8
 	
@@ -305,9 +304,9 @@ musicKlarinetteIIMvtI = \relative c {
 	g[ r16 g g8] r4 r8
 	ges[ r16 ges ges8] r4 r8
 % Bars 261 to 265
-	f8[ r16 f f8] r f,16( g aes bes
+	f8[ r16 f f8] r f,16( g aes bes!
 	b8)[ r b16( cis] d e f8) d
-	aes[ r16 aes aes8] r f16( g aes bes!
+	aes[ r16 aes aes8] r f16( g aes! bes!
 	b8)[ r b16( cis] d e f8) d
 	aes[ r16 aes aes8] r4 r8
 % Bars 266 to 270
@@ -325,7 +324,7 @@ musicKlarinetteIIMvtI = \relative c {
 % Bars 276 to 280
 	aes8. aes16 aes8 ces8. ces16 ces8
 	des8 r r r4 r8
-	d![\f r16 d d8](~ d e-.) f-.
+	d![\f r16 d d8](~ d e-.) f!-.
 	g(_\crescmarkup f) e-. d( cis) c-.
 	bes[ r16 g'\ff g8](~ g a-.) bes-.
 % Bars 281 to 285
@@ -407,7 +406,7 @@ musicKlarinetteIIMvtI = \relative c {
 	R2.*2
 	
 % Bars 346 to 350
-	r4 r8 r f,(\p f)
+	r4 r8 r f,(-\offset X-offset -1.5 \p f)
 	f8 r f''16(\ff e ees d c b bes a)
 	g( a bes c bes a g8) r r
 	R2.
@@ -453,12 +452,12 @@ musicKlarinetteIIMvtI = \relative c {
 	r4 r8 b'[( b,]) r
 	R2. 
 	r4 r8 b'[( b,]) r
-	R2.*3
+	\mmrLength #15 \mmrnDown R2.*3
 % Bars 386 to 390
 	
 	
-	d8(\ff\> e fis g a ais)\!
-	b4.\mf\>~ b4\p\< ais8(
+	d8(-\offset X-offset -2 \ff\> e fis g a ais)\!
+	\stemUp \hairpinShorten #'(-0.5 . -0.5) b4.-\offset X-offset -0.5 \mf\>~ b4-\offset X-offset 0.5 \p \stemNeutral ais8(\<
 	a!4.) e4( fis8)\!
 % Bars 391 to 395
 	g4.\f\> \after 4.*2/3 \! fis
@@ -467,7 +466,7 @@ musicKlarinetteIIMvtI = \relative c {
 	a!4.) e4( fis8)
 	a4.\ff\> g8( fis e)\!
 % Bars 396 to 400
-	\after 2.*5/6 \! dis2.\mf\>  \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! dis2.\mf\>  \mark \default
 	R2.*12
 % Bars 401 to 405
 	
@@ -475,7 +474,7 @@ musicKlarinetteIIMvtI = \relative c {
 	
 	
 	
-	\ni \mmrPos #-6 R2.
+	\tempoEO #'(0 . -0.5) \ni \mmrPos #-6 \tweak extra-offset #'(-0.5 . 0) R2.
 	\mmrPos #-6 R \no
 % Bars 411 to 415
 	b'4\f b8 b4 b8
@@ -494,12 +493,8 @@ musicKlarinetteIIMvtI = \relative c {
 	
 	b4\f b8 b4 b8
 	b4 b8 b4 b8
-	R2.*2
+	R2.*6
 % Bars 426 to 430
-	
-	R2.*4
-	
-	
 	
 % Bars 431 to 435
 	\ni \mmrPos #4 R2.
@@ -544,7 +539,7 @@ musicKlarinetteIIMvtI = \relative c {
 	r4 r8 g'4(\ff d8)
 	b8[ r16 b b8] b b b
 % Bars 466 to 470
-	r4 r8 g,(\f a ais)
+	r4 r8 g,(-\offset X-offset -1.8 \f a ais)
 	b[\f r16 g' g8] g g g
 	b,[ r16 b b8] b b b
 	b[ r16 b b8]  b b b
@@ -560,7 +555,7 @@ musicKlarinetteIIMvtI = \relative c {
 % Bars 481 to 485
 	c'4\mf c8 c4 c8
 	R2.
-	bes4\f bes8 r4 r8
+	bes!4\f bes8 r4 r8
 	c4\ff c8 r4 r8
 	cis4\ff cis8 cis4 cis8
 % Bars 486 to 490

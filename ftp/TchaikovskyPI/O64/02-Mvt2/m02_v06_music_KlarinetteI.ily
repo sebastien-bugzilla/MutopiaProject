@@ -9,7 +9,7 @@ musicKlarinetteIMvtII = \relative c {
 	\key d \minor
 	\transposition a
 % Bars 1 to 5
-	R1.*11
+	\mmrLength #35 \mmrnDown R1.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -25,15 +25,15 @@ musicKlarinetteIMvtII = \relative c {
 	a8)\! r r r4 r8 r2.
 	R1.
 % Bars 21 to 25
-	a4. a8(--\< bes-- c--\!) c4.\>( bes)\!
-	g g8(--\< a-- bes--)\! bes4.(\> a)~
+	a4. \hairpinShorten #'(0 . 0.5) a8(--\< bes-- c--\!) c4.\>( bes)\!
+	g g8(--\< a-- bes--)\! bes4.(-\tweak extra-offset #'(0 . -9.5) ^\> a)~
 	a8\! r r r4 r8 r2.
-	R1.*4
-	
+	\tempoXoffset -2 \mmrLength #20 \mmrnDown R1.
+	\mmrnDown R
 % Bars 26 to 30
+	R1.*2
 	
-	
-	\once \voiceTwo r2. a'4._\mfespress cis,4( fis8)
+	\tempoXoffset #1 \once \voiceTwo r2. a'4._\mfespress cis,4( fis8)
 	f!4.(\> e\!) r2.
 	R1.*3
 % Bars 31 to 35
@@ -41,9 +41,9 @@ musicKlarinetteIMvtII = \relative c {
 	
 	\once \voiceTwo r2. r4 r8 g4.\p(
 	c,4) d8( c4->) d8( c4->) d8( c4.->)
-	R1.
+	\mmrnDown R1.
 % Bars 36 to 40
-	f,8(\f a c f) r r r4 r8 f(_\mfespress e) d--
+	f,8(-\offset X-offset -2 \f a c f) r r r4 r8 f(_\mfespress e) d--
 	f4.( e2.) c8(\< d) e--\!
 	g4.(\> f2.)\< f8--\f g-- a--
 	b4. b4 b8 b4. f8-- g-- a--
@@ -52,7 +52,7 @@ musicKlarinetteIMvtII = \relative c {
 	d4. d4 d8 d4. b8-- c-- d--
 	d4. d4 d8 d4. d4 d8
 	d4 d8~ d d4 d d8(~ d4 c8)
-	r4 r8 c2.\p\> c4.~ \mark \default
+	\tempoXoffset #-4.5 r4 r8 c2.\p\> c4.~ \mark \default
 	c8\pp r r r4 r8 r2.
 % Bars 46 to 50
 	r e8\mf e e  e e e
@@ -61,26 +61,26 @@ musicKlarinetteIMvtII = \relative c {
 	\ni \mmrPos #4 R \no
 	\once \voiceOne r2. e8\mp e e  e e e
 % Bars 51 to 55
-	d r r r4 r8 f\mf f f  f f f \mark \default
+	d8 r r r4 r8 f\mf f f  f f f \mark \default
 	g_\crescpocoapoco g g  g g g  gis gis gis  gis gis gis
 	a a a  a a a  a a a  a a a
 	a a a  a a a  d d d  cis cis cis
 	cis cis cis  cis cis cis  d d d  d d d
 % Bars 56 to 60
-	d\fff d d   f, f aes  bes\> bes bes   bes bes bes\!
-	bes\ff\> bes bes  d, d f  g g g  g g g\!
-	g\f g g  bes, bes bes  bes4.\> b
+	d8\fff d d   f, f aes  bes\> bes bes  bes bes bes\!
+	bes8\ff\> bes bes  d, d f  g g g  g g g\!
+	g8\f g g  bes, bes bes  bes4.\> b
 	c\! r4 r8 r2.
-	R1.*6
+	R1.
 % Bars 61 to 65
-	
+	\mmrLength #15 \mmrnDown R1.*5
 	
 	
 	
 	\bar "||" \time 4/4
 % Bars 66 to 70
 	\ni \mmrPos #-4 R1 \no
-	e4.^\solo\mf\< b'8(\! d c)\> b-- a--\!
+	e4.-\offset X-offset -2 ^\solo\mf\< b'8(\! d c)\> b-- a--\!
 	g4-> \tuplet 9/8 4 {f32( g f g f g f g f} e2)
 	d4(~-> d16 e f a) e2
 	d4(~-> d16 e f b) e,2
@@ -105,14 +105,14 @@ musicKlarinetteIMvtII = \relative c {
 % Bars 86 to 90
 	e!4-> \tuplet 9/8 4 {d32( e d e d e d e d} cis4) eis8( gis)
 	R1
-	cis,,4.\mf d8( fis\! e) d--\> cis--\!
+	cis,,4.\mf\< d8( fis\! e) d--\> cis--\!
 	c!\f c c c  b b b b
 	fis''4.\< g8( b\! a) g--\> fis--\! \mark \default
 % Bars 91 to 95
 	R1*2
 	
-	c,2->(\f b)
-	c( b)
+	c,2^>(-\offset X-offset -1.5 \f b)
+	c->( b)
 	b4._\fcresc fis'8( a g fis e)
 % Bars 96 to 100
 	d'( c b a) cis,( dis e fis)
@@ -138,18 +138,18 @@ musicKlarinetteIMvtII = \relative c {
 	\mmrPos #4 R \no \mark \default
 % Bars 116 to 120
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		bes16(\mf a bes g) g'4~ g16(\< a bes b c4~
+		\tempoXoffset #2.5 bes16(\mf a bes g) g'4~ g16(\< a bes b c4~
 		c16) cis( d e f4~ f16)\! g\f-- a-- bes-- c( b bes a)
 		a4( gis8) d f4(-> e~
 	}
 	\timeSignature 12/8 e8) r r dis(\f f e) \after 4.*2/3 \! e4.\> r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		d,16\mf( e) fis--\< g-- a-- bes-- b-- c--\! c( bes a c bes8) r16 d,\mf(
+		d,16\mf( e) fis--\< g-- a-- bes-- b-- c--\! c( bes a c bes8) r16 d,-\offset X-offset -1.5 \mf(
 % Bars 121 to 125
 		c d) e--\< f!-- g-- aes-- a-- bes--\! bes( a gis bes a8) r
 		r16 b,(\f c b) r c( d c) r d( e d) r e( f e)
 		r f( g f~ f) e d des c(\> bes') a g f( e) d! c\! \mark \default
-		d(\mf\< e) f-- g-- a-- bes-- b-- c--\! c( bes a c bes8) r16 d,\mf(
+		d(\mf\< e) f-- g-- a-- bes-- b-- c--\! c( bes a c bes8) r16 d,-\offset X-offset -1.5 \mf(
 		c d) ees--\< f-- g-- aes-- a-- bes--\! bes( a gis bes a8) r
 % Bars 126 to 130
 		r16 b(_\mfcresc c b) r c( d c) r d( e d) r e( f e)
@@ -173,14 +173,14 @@ musicKlarinetteIMvtII = \relative c {
 % Bars 141 to 145
 	cis, d e f fis g a bes c! cis d e
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		c'16\ff a a a   a a a a   g g g g  a a bes bes
-		f f d d  d d f f  e_\crescmarkup e e e  e e e e
-		gis gis gis gis   gis gis gis gis   f\ff f a a   a a a a
-		bes bes a a  g! g g g  g g g g   bes bes bes bes
+		c'16\ff a a a  a a a a   g g g g  a a bes bes %a4:16 g: a8: bes: 
+		f f d d  d d f f  e_\crescmarkup e e e  e e e e % f: d: d: f: e2:_\crescmarkup 
+		gis gis gis gis   gis gis gis gis   f\ff f a a   a a a a %gis4: gis: f8:\ff a: a4: 
+		bes bes a a  g! g g g  g g g g   bes bes bes bes % b8: a: g4: g: bes: 
 % Bars 146 to 150
-		a\ff a a a   a a a a  g g g g  a a bes bes
-		f f d d   d d f f  e_\crescmarkup e e e   e e e e
-		gis gis gis gis   gis gis gis gis  f f f f  f f f f
+		a\ff a a a   a a a a  g g g g  a a bes bes % a:\ff a: g: a8: bes: 
+		f f d d   d d f f  e_\crescmarkup e e e   e e e e % f: d: d: f: e4:_\crescmarkup e: 
+		gis gis gis gis   gis gis gis gis  f f f f  f f f f % gis2: f: 
 	}
 	\timeSignature 12/8 a,4.\fff( bes4) bes8 bes4.( b4) b8
 	\tuplet 2/3 4. {b8( c) c c c( cis) cis cis} \mark #11
@@ -213,12 +213,12 @@ musicKlarinetteIMvtII = \relative c {
 % Bars 171 to 175
 	R1.*2
 	
-	c8\pp c c  c c c  e\< e e  e e e\!
-	f\> f f  c c c\!  des\< des des   des des des\!
-	c\> c c  c c c\!  e\< e e  e e e\!
+	c8\pp c c  c c c  e\< e e  e e e\! % c4.:8\pp c: e:\< e:\! 
+	f\> f f  c c c\!  des\< des des   des des des\! % f:\> c:\! des:\< des:\!
+	c\> c c  c c c\!  e\< e e  e e e\! %c:\> c\! e:\< e:\! 
 % Bars 176 to 180
-	f\> f f  c c c\!  des\< des des  des des des\!
-	c\! r r r4 r8 bes,2.\pp(
+	f\> f f  c c c\!  des\< des des  des des des\! % f:\> c:\! des:\<  des:\! 
+	c8 r r r4 r8 bes,2.\pp(
 	c8) r r r4 r8 bes2.(
 	c8) r r r4 r8 r2.
 	R1.*2

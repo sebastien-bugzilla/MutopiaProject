@@ -99,7 +99,7 @@ musicKlarinetteIIMvtIII = \relative c {
 % Bars 86 to 90
 	r4 r d,(-\tweak X-offset -2 \p
 	d8) r \once \stemUp \omitFlag d\< r d'\! r
-	<< b2 {s8\mf\> s s s\!}>> g,4-\tweak X-offset -2 \p~
+	<< b2 {s8\mf\> s s s\!}>> g,4->-\tweak X-offset -2 \p~
 	g8 r c4->_( c8) r
 	d4->( a'8) r r4
 % Bars 91 to 95

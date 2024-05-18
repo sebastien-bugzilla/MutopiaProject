@@ -9,27 +9,27 @@ musicKlarinetteIIMvtII = \relative c {
 	\key d \minor
 	\transposition a
 % Bars 1 to 5
-	R1.*15
+	\mmrLength #37 \mmrnDown R1.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	\tempoXoffset #-2 R1.*2
 	
-	
-	\mark \default
+	<< R1. {s2. \tempoXoffset #-3.5 s } >> \mark \default
 % Bars 16 to 20
-	R1.*4
+	R1.*3
 	
 	
-	
+	\mmrLength #12 R1.
 	R1.
 % Bars 21 to 25
 	R1.*3 
 	
 	
-	R1.*4
-	
+	\mmrnDown R1.
+	R1.*3
 % Bars 26 to 30
 	
 	
@@ -55,7 +55,7 @@ musicKlarinetteIIMvtII = \relative c {
 	r4 r8 c,2.\p\> c4.~ \mark \default
 	c8\pp r r r4 r8 r2.
 % Bars 46 to 50
-	R1.*2 
+	\mmrLength #12 R1.*2 
 	
 	R1.*2
 	
@@ -71,21 +71,21 @@ musicKlarinetteIIMvtII = \relative c {
 	f\ff\> f f  bes, bes d  cis cis cis  d d e\!
 	d\f d d   g, g g  g4.\> gis
 	a\! r4 r8 r2.
-	R1.*6
+	R1.
 % Bars 61 to 65
-	
+	\mmrLength #15 \mmrnDown R1.*5
 	
 	
 	
 	\bar "||" \time 4/4
 % Bars 66 to 70
-	R1
-	R1*4 
+	\mmrLength #25 \mmrnDown R1*9
+	
 	
 	
 	
 % Bars 71 to 75
-	R1*4
+	
 	
 	
 	\mark \default
@@ -94,8 +94,8 @@ musicKlarinetteIIMvtII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 	\voiceTwo r2 r8 \oneVoice fis,(\mf\noBeam a) a
-	R1
-	R1*2
+	R1*3
+	
 % Bars 81 to 85
 	
 	r2 r8 gis(\mf b) b \mark \default
@@ -105,13 +105,13 @@ musicKlarinetteIIMvtII = \relative c {
 % Bars 86 to 90
 	e!4-> \tuplet 9/8 4 {d32( e d e d e d e d} cis4) eis8( gis)
 	R1
-	cis,4.\mf d8( fis\! e) d--\> cis--\!
+	cis,4.\mf\< d8( fis\! e) d--\> cis--\!
 	a\f a a a  a a a a
 	fis'4.\< g8( b\! a) g--\> fis--\! \mark \default
 % Bars 91 to 95
-	R1*2
+	R1*4
 	
-	R1*2 
+	
 	
 	b,4._\fcresc fis'8( a g fis e)
 % Bars 96 to 100
@@ -123,7 +123,7 @@ musicKlarinetteIIMvtII = \relative c {
 % Bars 101 to 105
 	c4. c16 c d4. c16 b
 	c8 c r4 r d
-	c d g, bes
+	c d g, bes!
 	g8 g r4 r d'
 	c d g, bes
 % Bars 106 to 110
@@ -135,16 +135,16 @@ musicKlarinetteIIMvtII = \relative c {
 	
 	
 	
-	\mark \default
+	\markXoffset #-0.3 \mark \default
 % Bars 116 to 120
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		R1*2
+		\tempoXoffset 8 R1*2
 		
 		\ni \mmrPos #-4 R1 \no
 	}
 	\timeSignature 12/8 \voiceTwo r4 r8 \oneVoice f'(\f dis e) \after 4.*2/3 \! e4.\> r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		d16\mf( e) fis--\< g-- a-- bes-- b-- c--\! c( bes a c bes8) r16 d,\mf(
+		d16\mf( e) fis--\< g-- a-- bes-- b-- c--\! c( bes a c bes8) r16 d,-\offset X-offset -1 \mf(
 % Bars 121 to 125
 		c d) e--\< f!-- g-- aes-- a-- bes--\! bes( a gis bes a8) r
 		r16 b,(\f c b) r c( d c) r d( e d) r e( f e)
@@ -156,12 +156,12 @@ musicKlarinetteIIMvtII = \relative c {
 		r f(\f g f) r f( g f) r f( d e) \tuplet 3/2 4 {f8(_\fcantabile e) d--}
 	}
 	\timeSignature 12/8 f4.(-> e2.) c8(\< d) e--\!
-	g4.(\> f2.)\< f8-- g-- a--\!
+	g4.(\> f2.)\! f8--\< g-- a--\!
 	bes4._\fcresc bes4 bes8 bes4.~ bes4 bes8
 % Bars 131 to 135
-	\tuplet 2/3 4. {bes( a) d--\ff c--} bes(_\dimmarkup a) g-- f-- e-- d--
+	\tuplet 2/3 4. {bes( a) d---\offset X-offset -1.5 \ff c--} bes(_\dimmarkup a) g-- f-- e-- d--
 	f4.->(\f e2.) c8(\< d) e--\!
-	g4.(\> f2.)\< f8-- g-- a--\!
+	g4.(\> f2.)\! f8--\< g-- a--\!
 	b,4.\f b4 b8 b4. f'8-- g-- a--
 	b,4. b4 b8 b4. b'8\ff-- c-- d--
 % Bars 136 to 140
@@ -182,7 +182,7 @@ musicKlarinetteIIMvtII = \relative c {
 		a a a a   a a a a   a_\crescmarkup a a a   a a a a
 		f' f d d  d d f f   d d d d   d d d d
 	}
-	\timeSignature 12/8 a,4.\fff( bes4) bes8 bes4.( b4) b8
+	\timeSignature 12/8 a,4.-\offset X-offset -2 \fff( bes4) bes8 bes4.( b4) b8
 	\tuplet 2/3 4. {b8( c) c c c( cis) cis cis} \mark #11
 % Bars 151 to 155
 	cis4.(_\crescmarkup d4) d8 d4.( ees4) ees8
@@ -209,7 +209,7 @@ musicKlarinetteIIMvtII = \relative c {
 	c-> bes) r f(\pp\<
 	g a\!) c(\> bes~
 	bes2.)\! des4--\pp \bar "||"
-	\time 12/8 des4.->~ des4~ des16 c c4.\pp\>~ c8\! r r
+	\time 12/8 des4.->~ des4~ des16 c \hairpinShorten #'(-0.5 . -0.5) c4.\pp\>~ c8\! r r
 % Bars 171 to 175
 	R1.*2
 	
@@ -227,6 +227,6 @@ musicKlarinetteIIMvtII = \relative c {
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		r4 r8 f(\ppp\< a[ c f a])\!
 	}
-	\timeSignature 12/8 g4.\>~ g4~ g16 f\! f2.\pp~\>
+	\timeSignature 12/8 g4.\>~ g4~ g16 f f2.\pp~\>
 	f~ f8\ppp r r r4 r8\fermata \bar "|."
 }

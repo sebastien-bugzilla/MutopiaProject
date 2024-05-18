@@ -377,6 +377,24 @@ noteHeadEsw = #(define-music-function
 
 revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
 
+tempoEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
+ottavaShorten = #(define-music-function
+	(value)
+	(pair?)
+	#{
+		\once \override Staff.OttavaBracket.shorten-pair = #value
+	#}
+)
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %aIIOmit = \once \omit Voice.CombineTextScript
@@ -515,14 +533,6 @@ revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
 %	\omit MultiMeasureRestNumber
 %}
 
-%ottavaShorten = #(define-music-function
-%	(value)
-%	(pair?)
-%	#{
-%		\once \override Staff.OttavaBracket.shorten-pair = #value
-%	#}
-%)
-
 %setSextolet = {
 %	\set subdivideBeams = ##t
 %	\set baseMoment = #(ly:make-moment 1/8)
@@ -562,13 +572,6 @@ revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
 %tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-%tempoEO = #(define-music-function
 %	(offset)
 %	(pair?)
 %	#{
