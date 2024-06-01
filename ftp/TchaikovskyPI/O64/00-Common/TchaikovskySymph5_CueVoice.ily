@@ -911,8 +911,8 @@ cueVoiceFagotteIMvtI = \relative c {
 	fis2~ fis8) r r4\fermata
 	s1*17 s2.*371
 	% bar 409 - 410
-	\voiceOne r4^\markup {Vcll.} r8 dis^\pizz dis fis
-	b\noBeam \cueClef treble dis^\markup {Viol.II} fis b dis fis \cueClefUnset \oneVoice 
+	r4^\markup {Vcll.} r8 dis^\pizz dis fis
+	b\noBeam \cueClef treble dis^\markup {Viol.II} fis b dis fis \cueClefUnset
 	s2.*71
 	% bar 482 - 484
 	\cueClef treble r8^\markup {Viol.I} a,-. b-. c( dis e
@@ -925,7 +925,7 @@ cueVoiceFagotteIMvtII = \relative c {
 	<>_\markup {(Klar.I)}
 	s1.*8
 	% bar 24
-	\cueClef treble fis''4.^\markup {Ob.I} ais,4( dis8) cis2. \cueClefUnset
+	\cueClef treble fis''4.-\offset X-offset -4 ^\markup {Ob.I} ais,4( dis8) cis2. \cueClefUnset
 	s1.*3
 	% bar 28 - 29
 	r2.^\markup {Klar.I} fis,4. ais,4( dis8)
@@ -950,7 +950,7 @@ cueVoiceFagotteIMvtIII = \relative c {
 cueVoiceFagotteIMvtIV = \relative c {
 	s1*135
 	% bar 136 - 139
-	\voiceOne r2^\markup {Hr.III IV} <a a'>^\p
+	\voiceOne r2^\markup {Hr.III IV} <a a'>-\offset X-offset -1 ^\p
 	<cis cis'> <e e'> \oneVoice 
 	<a a'>1->~
 	q2 r
@@ -973,7 +973,7 @@ cueVoiceFagotteIIMvtI = \relative c {
 	\cueClef treble cis'4.(~^\markup {Viol.I} cis8 b cis) \cueClefUnset
 	s2.*24
 	% bar 174 - 175
-	d,8\repeatTie^\markup {Fag.I} a( b!) cis4( d8)
+	d,8\repeatTie-\offset X-offset -6 ^\markup {Fag.I} a( b!) cis4( d8)
 	r a( b) cis4.
 	s2.*51
 	% bar 227 - 229
@@ -992,8 +992,8 @@ cueVoiceFagotteIIMvtI = \relative c {
 	e8( dis e) s4.
 	s2.*79
 	% bar 409 - 410
-	\voiceOne r4^\markup {Vcll.} r8 dis,^\pizz dis fis
-	b\noBeam \cueClef treble dis^\markup {Viol.II} fis b dis fis \cueClefUnset \oneVoice 
+	r4^\markup {Vcll.} r8 dis,^\pizz dis fis
+	b\noBeam \cueClef treble dis^\markup {Viol.II} fis b dis fis \cueClefUnset 
 	s2.*71
 	% bar 482 - 484
 	\cueClef treble r8^\markup {Viol.I} a,-. b-. c( dis e
@@ -1006,7 +1006,7 @@ cueVoiceFagotteIIMvtII = \relative c {
 	<>_\markup {(Klar.I)}
 	s1.*8
 	% bar 24
-	\cueClef treble fis''4.^\markup {Ob.I} ais,4( dis8) cis2. \cueClefUnset
+	\cueClef treble fis''4.-\offset X-offset -4 ^\markup {Ob.I} ais,4( dis8) cis2. \cueClefUnset
 	s1.*4
 	% bar 29 - 30
 	r2. fis,,4.^\markup {Fag.I} ais,4( dis8)
@@ -1046,7 +1046,7 @@ cueVoiceFagotteIIMvtIII = \relative c {
 cueVoiceFagotteIIMvtIV = \relative c {
 	s1*135
 	% bar 136 - 139
-	\voiceOne r2^\markup {Hr.III IV} <a a'>^\p
+	\voiceOne r2-\offset X-offset -3 ^\markup {Hr.III IV} <a a'>^\p
 	<cis cis'> <e e'> \oneVoice 
 	<a a'>1->~
 	q2 r

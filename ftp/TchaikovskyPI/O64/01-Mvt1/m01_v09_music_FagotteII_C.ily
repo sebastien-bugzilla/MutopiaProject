@@ -23,7 +23,7 @@ musicFagotteIIMvtI = \relative c {
 % Bars 21 to 25
 	b4\pp r c r
 	b r r2
-	c4\mf r b\! r
+	c4\mf\< r b\! r
 	bes\f r r2
 	a4\mf\> r d\! r
 % Bars 26 to 30
@@ -285,7 +285,7 @@ musicFagotteIIMvtI = \relative c {
 	cis[\fff r16 cis cis8] r \clef tenor a'' g
 	fis r \clef bass d a fis d
 	cis[ r16 cis cis8] cis'8. cis16 cis8
-	c,!8. c16 c8 c'8. c16 c8
+	c,!8[ r16 c c8] c'8. c16 c8
 % Bars 261 to 265
 	b,[ r16 b b8] r aes'' f
 	d r b aes f d

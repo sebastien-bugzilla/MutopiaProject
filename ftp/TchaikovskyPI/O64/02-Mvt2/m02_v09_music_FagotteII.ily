@@ -9,15 +9,15 @@ musicFagotteIIMvtII = \relative c {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1.*15
+	\mmrLength #37 \mmrnDown R1.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	R1.*2
 	
-	
-	\mark \default
+	<< R1. {s2. \tempoXoffset #-2 s } >> \mark \default
 % Bars 16 to 20
 	R1.*8
 % Bars 21 to 25
@@ -48,13 +48,13 @@ musicFagotteIIMvtII = \relative c {
 	gis4.\ff fis eis r4 r8
 	gis4. fis f2.
 	e~ e4. ees
-	r4 r8 ees2.\p\> ees4.( \mark \default
-	d8)\pp r r r4 r8 g'4.\pp\< fis4( e!8
+	\tempoXoffset #-3 r4 r8 ees2.\p\> ees4.( \mark \default
+	d8)-\offset X-offset -0.5 \pp r r r4 r8 g'4.\pp\< fis4( e!8
 % Bars 46 to 50
 	d)\! r r r4 r8 \tuplet 2/3 4. {fis8\mf( gis a fis}
 	b) r r r4 r8 \tuplet 2/3 4. {gis8(\ff ais} b) r r
-	\tuplet 2/3 4. {e,->\f fis->} g!4.-> r2.
-	r g4.(\pp\< fis4 e8
+	\tuplet 2/3 4. {e,->-\offset X-offset -2 \f fis->} g!4.-> r2.
+	\tempoXoffset #0.5 r g4.(\pp\< fis4 e8
 	d)\! r r r4 r8 \tuplet 2/3 4. {fis(\mp\< gis a fis}
 % Bars 51 to 55
 	b)\! r r r4 r8 \tuplet 2/3 4. {gis\mf( ais b b)} \mark \default
@@ -69,16 +69,16 @@ musicFagotteIIMvtII = \relative c {
 	fis\! fis\p\< f\> e\!
 	d\p\<  fis! f\> e\!
 % Bars 61 to 65
-	fis8\p fis fis  fis fis fis  fis r r r4 r8
+	fis!8\p fis fis  fis fis fis  fis r r r4 r8
 	fis fis fis  fis fis fis  fis r r   r4 r8 \clef bass
 	\ni \mmrPos #-4 R1.
 	\mmrPos #-4 R \no 
 	R1. \bar "||"
 % Bars 66 to 70
-	\time 4/4 R1*5 \clef tenor
+	\time 4/4 \mmrLength #20 \mmrnDown R1*5 \clef tenor
 % Bars 71 to 75
 	\ni \mmrPos #-4 R1
-	\mmrPos #-6 R \no \clef bass
+	\mmrPos #-7 R \no \clef bass
 	r2 cis,4\mf_(~-> cis16 eis gis cis
 	\once \stemUp d) r d, r r4 cis->(~ cis16 eis gis cis) \mark \default
 	R1*2
@@ -127,7 +127,7 @@ musicFagotteIIMvtII = \relative c {
 	
 	
 	
-	\ni \mmrPos #6 \clef treble R1. \mark \default
+	\ni \mmrPos #4 \clef treble R1. \mark \default
 % Bars 116 to 120
 	\mmrPos #4 R
 	\mmrPos #4 R
@@ -137,22 +137,22 @@ musicFagotteIIMvtII = \relative c {
 % Bars 121 to 125
 	g4.(\> a,2.)\! d8(\<-- e-- fis--)\!
 	fis4.\f\< fis4 fis8 fis4.(~ fis4 e8)\!
-	b'4(\ff\> a8~ a)\mf a,(-- b--) cis( d) e-- fis(--\< g-- a--)\! \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) b'4(\ff\> a8~\! a)\mf a,(-- b--) cis( d) e-- fis(--\< g-- a--)\! \mark \default
 	a4.(\> b,2.)\! e8(--\< fis-- g--)\!
-	g4.(\> a,2.)\! d8(--\< e-- fis--)\! \clef bass
+	g4.(\> \once \stemUp a,2.)\! d8(--\< e-- fis--)\! \clef bass
 % Bars 126 to 130
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		fis,16_\mfcresc gis( a gis) r a( b a) r b( cis b) r cis( d cis)
-		r d(\f e d) r d( e d) r d( b cis) \tuplet 3/2 4 {d8(_\fcantabile cis) b--}
+		r d(\f e d) r d( e d) \tempoXoffset 2 r d( b cis) \tuplet 3/2 4 {d8(_\fcantabile cis) b--}
 	} 
-	\timeSignature 12/8 d4.(-> cis2.) a8(\< b) cis--\!
-	e4.(\> d2.)\< d8-- e-- fis--\!
-	g4._\fcresc g4 g8 g4.~ g4 g8 \clef tenor
+	\clef tenor \timeSignature 12/8 d4.(-> cis2.) a8(\< b) cis--\!
+	e4.(\> d2.)\! d8--\< e-- fis--\!
+	g4._\fcresc g4 g8 g4.~ g4 g8 
 % Bars 131 to 135
 	\tuplet 2/3 4. {g8( fis) b--\ff a--} g(_\dimmarkup fis) e-- d-- cis-- b--
 	d4.->\f( cis2.) a8(\< b) cis--\!
-	e4.(\> d2.)\< d8-- e-- fis--\!
-	fis,4.\f fis fis d'8-- e-- fis--
+	e4.(\> d2.)\! d8--\< e-- fis--\!
+	\tempoXoffset #-1 fis,4.\f fis fis d'8-- e-- fis--
 	fis,4. fis fis gis'8\ff-- a-- b--
 % Bars 136 to 140
 	b,4. b4 b8 b4. gis'8-- a-- b--
@@ -175,14 +175,14 @@ musicFagotteIIMvtII = \relative c {
 		cis c \mark #11
 	}
 % Bars 151 to 155
-	\timeSignature 12/8 b4._\crescmarkup a'! gis g
+	\timeSignature 12/8 b4.-\tweak extra-offset #'(2.5 . -8) ^\crescmarkup a'! gis g
 	fis2. eis
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		fis4~\ffff fis8 gis a4\> b8 cis\!
 		d4\ff~ d8 e fis4\> gis8 ais\!
 		b16\f b b b g! g g g e4\> eis\!
 % Bars 156 to 160
-		fis\mf fis\<^\ten f\>^\ten e\!^\simile
+		fis\mf fis\<-\offset X-offset #-1 ^\ten f\>^\ten e\!^\simile
 		d\p fis!\< f\> e\! \bar "||"
 	} 
 	\unsetTimeSignature \time 4/4 b4.\fff b16 b cis4. b16 ais
@@ -192,14 +192,14 @@ musicFagotteIIMvtII = \relative c {
 	d8 d r4 r r8 f
 	e d cis b d4. f8
 	e d cis b d([ f] b f)
-	\tuplet 3/2 4 {g,8\fff g g  g g g} g8->[ g->] g-> g->
+	\tuplet 3/2 4 {g,8-\offset X-offset -1 \fff g g  g g g} g8->[ g->] g-> g->
 	g-> g-> r4 r d''4\mf(
 % Bars 166 to 170
 	c-> bes) r bes(\p
 	a-> g) r d(\pp\<
 	e fis)\! a(\> g~
 	g2.)\! bes4\pp \bar "||"
-	\time 12/8 bes4.->~ bes4~ bes16 a a4.\pp\>~ a8\! r r
+	\tempoXoffset #2 \time 12/8 bes4.->~ bes4~ bes16 a a4.\pp\>~ a8\! r r
 % Bars 171 to 175
 	d,,\pp d d   d d d   d d d   d d d
 	d d d  d d d   d d d  d d d
@@ -215,6 +215,6 @@ musicFagotteIIMvtII = \relative c {
 % Bars 181 to 184
 	d4. r4 r8 d4. r4 r8
 	d4.~ d8 r r r2.
-	R1.
+	\mmrnDown R1.
 	\ni R1.\fermata \no \bar "|."
 }

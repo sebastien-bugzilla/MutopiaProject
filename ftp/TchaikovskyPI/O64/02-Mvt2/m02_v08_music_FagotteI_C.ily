@@ -89,7 +89,7 @@ musicFagotteIMvtII = \relative c {
 	d!4 ces bes2 \clef tenor \mark \default
 	bes'4.\f\< f'8( aes\! ges) f--\> ees--\!
 	des4 \tuplet 9/8 4 {ces32( des ces des ces des ces des ces)} bes2
-	aes4\ff(~ aes16 bes ces ees) bes4(~ \tuplet 9/8 4 {bes32 ces bes ces bes ces bes a! bes)}
+	aes4\ff(->~ aes16 bes ces ees) bes4(~ \tuplet 9/8 4 {bes32 ces bes ces bes ces bes a! bes)}
 % Bars 86 to 90
 	aes4(~-> aes16 bes ces f) bes,2 \clef bass
 	aes\mf g

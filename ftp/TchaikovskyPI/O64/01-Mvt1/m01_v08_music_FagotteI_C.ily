@@ -23,7 +23,7 @@ musicFagotteIMvtI = \relative c {
 % Bars 21 to 25
 	b4\pp r c r
 	b r r2
-	c4\mf r b\! r
+	c4\mf\< r b\! r
 	bes\f r r2
 	a4\mf\> r d\! r
 % Bars 26 to 30
@@ -295,7 +295,7 @@ musicFagotteIMvtI = \relative c {
 	cis[\fff r16 cis cis8] r \clef tenor a'' g
 	fis r \clef bass d a fis d
 	cis[ r16 cis cis8] \partCombineApart cis8. cis16 cis8 \partCombineAutomatic
-	c!8. c16 c8 \partCombineApart c8. c16 c8 \partCombineAutomatic
+	c!8[ r16 c c8] \partCombineApart c8. c16 c8 \partCombineAutomatic
 % Bars 261 to 265
 	b[ r16 b b8] r aes'' f
 	d r b aes f d
@@ -394,7 +394,7 @@ musicFagotteIMvtI = \relative c {
 	r4 r8 a16( g fis e d! c!
 	b cis dis e fis g a) r r8 r
 	r4 r8 a16( g fis e d! c!
-	b cis dis e fis g) \partCombineApart a( ais b8)_\mf b(
+	b cis dis e fis g) \partCombineApart a( ais b8) b(_\mf
 	a!) r r r4 r8 \partCombineAutomatic
 % Bars 346 to 350
 	R2.

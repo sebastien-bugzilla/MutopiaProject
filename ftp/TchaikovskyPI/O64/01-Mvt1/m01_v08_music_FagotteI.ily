@@ -9,7 +9,7 @@ musicFagotteIMvtI = \relative c {
 	\key e \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*17
+	\mmrLength #20 \mmrnDown R1*17
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -23,27 +23,29 @@ musicFagotteIMvtI = \relative c {
 % Bars 21 to 25
 	b4\pp r c r
 	b r r2
-	c4\mf r b\! r
+	c4\mf\< r b\! r
 	bes\f r r2
 	a4\mf\> r d\! r
 % Bars 26 to 30
 	g,\p~ g8 r r4 fis--\mf
 	g-- a--\> b-- b--\!
-	c2.\sf\> fis,4\mf--
+	\hairpinShorten #'(-0.5 . -0.3) \after 2.*5/6 \! c2.-\offset X-offset -0.5 \sf\> fis,4-\offset X-offset 0.5 \mf--
 	g-- a--\> b-- b--\!
-	\after 1*7/8 \! c1\sf\>
+	\hairpinShorten #'(-0.5 . -0.5) \after 1*7/8 \! c1\sf\>
 % Bars 31 to 35
-	\after 1*7/8 \! c\p\<
+	\hairpinShorten #'(-0.5 . -0.5) \after 1*7/8 \! c\p\<
 	\after 1*7/8 \! b\>
-	r2 c\p\<
+	r2 \hairpinShorten #'(-0.5 . -0.5) c\p\<
 	b\>~ b4~ b8\! r
 	r2 c\pp
 % Bars 36 to 40
 	b1~
 	b4 r r2\fermata \bar "||" \time 6/8
-	R2.*3
+	\mmrLength #18 \mmrnDown R2.*3
+	
+	
 % Bars 41 to 45
-	r4 r8 r4 c8(\pp 
+	r4 r8 r4^\solo c8(\pp 
 	e)[ r16 e e8]~ e fis(\<-. g)\!-. 
 	a(\> g) fis\!( e4) c8(\<
 	g'[)\! r16 g g8]~ g[\> r16 fis fis8]\!~
@@ -58,7 +60,7 @@ musicFagotteIMvtI = \relative c {
 	
 % Bars 56 to 60
 	\mark \default
-	b16(\mp\> cis dis e fis g a\p) r r8 r
+	b16(\mp-\tweak rotation #'(5 -1 0) \> cis dis e fis g\! a\p) r r8 r
 	r4 r8 a16(\p g fis e d! c!
 	b cis dis e fis g a) r r8 r
 	r4 r8 a16( g fis e d! c!
@@ -67,7 +69,7 @@ musicFagotteIMvtI = \relative c {
 	r4 r8 a16( g fis e d! c!
 	b cis dis e fis g a) r r8 r
 	r4 r8 a16( g fis e d! c!
-	b cis dis e fis g) a( ais b8) b(\mf \mark \default
+	b cis dis e fis g) a( ais b8) b(\mf \markWhiteout \mark \default
 % Bars 66 to 70
 	a!) r r r4 r8
 	R2.
@@ -132,7 +134,7 @@ musicFagotteIMvtI = \relative c {
 	R2.*3
 	
 	
-	r4 r8 r fis(\p fis,)
+	r4 r8 r fis(-\offset X-offset -1 \p fis,)
 	R2.*3
 % Bars 121 to 125
 	
@@ -143,7 +145,7 @@ musicFagotteIMvtI = \relative c {
 % Bars 126 to 130
 	R2.
 	r4 r8 r fis'( fis,)
-	R2.*3
+	\mmrLength #15 \mmrnDown R2.*3
 	
 	
 % Bars 131 to 135
@@ -151,9 +153,9 @@ musicFagotteIMvtI = \relative c {
 	fis)\mf r r r4 d8(\p\<
 	cis4.) fis4 fis8\!
 	fis4.\f\> \after 4.*2/3 \! g
-	\after 2.*5/6 \! fis2.\p\<
+	\hairpinShorten #'(-0.5 . -1) \after 2.*5/6 \! fis2.\p\<
 % Bars 136 to 140
-	r4 r8 r r d(^\mfcresc
+	r4 r8 r4 d8(-\offset X-offset -2 _\mfcresc
 	cis4.) fis4 fis8
 	fis4.\ff\> g
 	fis2.\mf\> \mark \default
@@ -171,28 +173,28 @@ musicFagotteIMvtI = \relative c {
 	R2.
 	e'\p
 % Bars 151 to 155
-	R2.*3
-	
+	R2.
+	\mmrnDown R2.*2
 	
 	a,4\f a8 a4 a8
 	a4 a8 a4 a8
 % Bars 156 to 160
 	R2.
-	r4 r8 e'4(\ff\> a8)\!
+	r4 r8 \hairpinShorten #'(-0.5 . -0.5) e'4(\ff\> a8)\!
 	a,4\f a8 a4 a8
 	a4 a8 a4 a8
 	R2.
 % Bars 161 to 165
-	r4 r8 e'4(\ff\> a8)\!
+	r4 r8 \hairpinShorten #'(-0.5 . -0.5) e'4(\ff\> a8)\!
 	a,4\f a8 a4 a8
 	a4 a8 a4 a8
 	R2.
-	r4 r8 e'4(\ff\> a8)\!
+	r4 r8 \hairpinShorten #'(-0.5 . -0.5) e'4(\ff\> a8)\!
 % Bars 166 to 170
 	a,4\f a8 a4 a8
 	a4 a8 a4 a8
 	R2.
-	r4 r8 e'4(\ff\> a8)\!
+	r4 r8 \hairpinShorten #'(-0.5 . -0.5) e'4(\ff\> a8)\!
 	r a(\p b) cis4( d8)
 % Bars 171 to 175
 	r a( b) cis4.
@@ -253,24 +255,20 @@ musicFagotteIMvtI = \relative c {
 	
 	f''!4\p f8 f4 f8
 	f4 f8 f4 f8
-	R2.*6
+	R2.*7
 % Bars 226 to 230
 	
-	
-	
-	
-	R2.
 % Bars 231 to 235
 	c,8\mf r r r4 r8
 	R2.*2
 	
 	c4->\mf( f,!8) c'4(-> f,8)
-	R2.*4
+	R2.*5
 % Bars 236 to 240
 	
 	
 	
-	R2. \mark \default
+	\mark \default
 	ees'8\f r r r4 r8
 % Bars 241 to 245
 	R2.*2
@@ -286,21 +284,21 @@ musicFagotteIMvtI = \relative c {
 	R2.*2
 % Bars 251 to 255
 	
-	b'2._\mfcresc
-	fis\f\<
-	fis\ff \mark \default
+	b'2.-\offset X-offset -4 _\mfcresc
+	\hairpinShorten #'(-0.5 . -0.5) fis\f\<
+	fis\ff \mark \default 
 	cis8\fff[ r16 cis cis8] r \clef tenor a'' g \clef bass
 % Bars 256 to 260
 	fis r d a fis d
-	cis[\fff r16 cis fis8] r \clef tenor a' g
+	\dynEO #'(0 . 0.5) cis[\fff r16 cis cis8] r \clef tenor a'' g
 	fis r \clef bass d a fis d
 	cis[ r16 cis cis8] cis8. cis16 cis8
-	c!8. c16 c8 c8. c16 c8
+	c!8[ r16 c c8] c8. c16 c8
 % Bars 261 to 265
 	b[ r16 b b8] r aes'' f
-	d r b aes f d
+	d[ r b] aes f d
 	b[ r16 b b8] r aes'' f
-	d r b aes f d
+	d[ r b] aes f d
 	b[ r16 b b8] b8. b16 b8
 % Bars 266 to 270
 	bes[ r16 bes bes8] bes8. bes16 bes8
@@ -334,7 +332,7 @@ musicFagotteIMvtI = \relative c {
 	r g16( a bes c! d8) r r
 % Bars 291 to 295
 	f,4 f8 f4 f8
-	r \clef tenor a16( bes b cis d8) r r \clef bass \mark \default
+	r \clef tenor a16( bes b cis d8) r r \clef bass \mark \default 
 	g,4\ff g8 d' r r
 	f,4 f8 d' r r
 	g,4 g8 d' r r
@@ -365,7 +363,7 @@ musicFagotteIMvtI = \relative c {
 	
 	
 	\mark \default
-	r4 r8 r4 c8\pp(
+	r4 r8 r4 c8\pp(^\solo
 % Bars 321 to 325
 	e8-.[) r16 e e8](~\< e fis-.) g-.\!
 	a(\> g) fis( e4\!) c8(\<
@@ -376,7 +374,7 @@ musicFagotteIMvtI = \relative c {
 	a(\> g) fis( e4)\! b8(\<
 	g')[\! r16 g g8]~ g[\> r16 fis fis8]\!~
 	fis[\< r16 g g8-.]\! d'4.
-	e8( dis e) fis4.\p
+	e8( dis e) fis4.
 	g8 r r b,4.\p
 % Bars 331 to 335
 	a a 
@@ -394,7 +392,7 @@ musicFagotteIMvtI = \relative c {
 	r4 r8 a16( g fis e d! c!
 	b cis dis e fis g a) r r8 r
 	r4 r8 a16( g fis e d! c!
-	b cis dis e fis g) a( ais b8)\mf b(
+	b cis dis e fis g) a( ais b8) b(\mf
 	a!) r r r4 r8
 % Bars 346 to 350
 	R2.
@@ -433,7 +431,7 @@ musicFagotteIMvtI = \relative c {
 	
 	
 % Bars 376 to 380
-	r4 r8 r gis(\p gis,)
+	r4 r8 r gis(-\offset X-offset -1.5 \p gis,)
 	R2.*3
 	
 	
@@ -443,21 +441,21 @@ musicFagotteIMvtI = \relative c {
 	r4 r8 r gis'( gis,)
 	R2. 
 	r4 r8 r gis'( gis,)
-	R2.*3
+	\mmrLength #12 \mmrnDown R2.*3
 % Bars 386 to 390
 	
 	
-	\clef tenor b'8(\ff\> cis dis e fis fisis\!
+	\clef tenor b'8(-\offset X-offset -1 \ff cis\> dis e fis fisis\!
 	gis) r r r4 \clef bass e8\p(
 	dis4.)\< gis4 gis8\!
 % Bars 391 to 395
 	gis4.\f\> a\!
-	\after 2.*5/6 \! gis2.\p\<
-	r4 r8 r r e(_\mfcresc
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! gis2.\p\<
+	r4 r8 r4 e8(_\mfcresc
 	dis4.) gis4 gis8
-	gis4.\ff\> a\!
+	\hairpinShorten #'(-0.5 . -1) gis4.\ff\> a\!
 % Bars 396 to 400
-	\after 2.*5/6 \! gis2.\mf\> \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! gis2.\mf\> \mark \default
 	R2.*12
 % Bars 401 to 405
 	
@@ -465,38 +463,38 @@ musicFagotteIMvtI = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 	\mmrPos #-6 R \no
 % Bars 411 to 415
 	b,,4\f b8 b4 b8
 	b4 b8 b4 b8
 	R2.
-	r4 r8 fis'4(\ff\> b8)\!
+	r4 r8 fis'4(\ff\> b8)
 	b,4\f b8 b4 b8
 % Bars 416 to 420
 	b4 b8 b4 b8
 	R2.
-	r4 r8 fis'4(\ff\> b8)\!
+	r4 r8 fis'4(\ff\> b8)
 	b,4\f b8  b4 b8
 	b4 b8 b4 b8
 % Bars 421 to 425
 	R2.
-	r4 r8 fis'4(\ff\> b8)\!
+	r4 r8 fis'4(\ff\> b8)
 	b,4\f b8 b4 b8
 	b4 b8 b4 b8
 	R2.
 % Bars 426 to 430
 	r4 r8 fis'4(\ff\> b8)\!
-	r b(\p cis) dis4( e8)
+	\tempoXoffset -1 r \clef tenor b(\p cis) dis4( e8)
 	r b( cis) dis4.
-	r8 r \clef tenor e~\< e gis4
+	r4 e8~\< e gis4
 	cis,\! cisis8~\> cisis dis4\!(
 % Bars 431 to 435
 	e8) b(\p cis) dis4( e8)
 	r b( cis) dis4.
-	r8_\crescmarkup r e(~ e dis cis) \clef bass
-	fis,4.\mf\< b,\!
-	gis\f\< cis\!
+	r4_\crescmarkup e8(~ e dis cis) \clef bass
+	\hairpinShorten #'(-0.5 . -0.5) fis,4.\mf\< b,\!
+	gis-\offset X-offset 0.5 \f\< cis\!
 % Bars 436 to 440
 	gis'_\fdim a
 	fisis gis

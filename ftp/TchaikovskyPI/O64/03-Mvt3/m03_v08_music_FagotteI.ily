@@ -67,7 +67,7 @@ musicFagotteIMvtIII = \relative c {
 	a4( gis2) \mark \default
 	cis4. b8( ais b
 % Bars 56 to 60
-	e,4~ e8) b'(\p^\solo d cis)
+	e,4~ e8)\noBeam b'(\p^\solo d cis)
 	ais4.->_\crescmarkup b8( d cis)
 	ais4.-> b8( d cis)
 	ais4.-> b8( cis d) \clef tenor
@@ -75,8 +75,8 @@ musicFagotteIMvtIII = \relative c {
 % Bars 61 to 65
 	b gis'4 a,) fis'8(~
 	fis g,4 e' fis,8~
-	fis) d'4( f, cis'8~
-	cis b e,) b'(_\pcresc d cis)
+	fis) d'4( f, cis'!8~
+	cis b e,)\noBeam b'(_\pcresc d cis)
 	ais4.-> b8( d cis)
 % Bars 66 to 70
 	ais4.-> b8( d cis)
@@ -104,7 +104,7 @@ musicFagotteIMvtIII = \relative c {
 	fis4\p( b dis)
 % Bars 86 to 90
 	fis( b fis
-	dis8) r d\p\< r dis\! r
+	dis8) r \stemUp d\p\< r dis\! r \stemNeutral
 	e\mf r r4 ais\p->(
 	b8) r cis4->~ cis8 r
 	R2.
@@ -146,12 +146,12 @@ musicFagotteIMvtIII = \relative c {
 	r8 \clef tenor a'\mf\noBeam-. a-. e-. r4
 % Bars 121 to 125
 	R2.
-	r8 a-. a-. e-. r4
+	r8 a-.\noBeam a-. e-. r4
 	R2.
 	r8 fis\noBeam-. fis-. cis-. r4
 	R2.
 % Bars 126 to 130
-	r8 fis-. fis-. cis-. r4 \clef bass
+	r8 fis-.\noBeam fis-. cis-. r4 \clef bass
 	fis,,4\mf( b d)
 	fis2.~
 	fis\<
@@ -160,7 +160,7 @@ musicFagotteIMvtIII = \relative c {
 	fis,4\mf( b d)
 	fis2.~
 	fis\<
-	fis\f\>
+	\hairpinShorten #'(-0.5 . -0.5) fis\f\>
 	fis,4\mf( b dis)
 % Bars 136 to 140
 	fis( b fis
@@ -229,7 +229,7 @@ musicFagotteIMvtIII = \relative c {
 	a4( gis2) \mark \default
 % Bars 196 to 200
 	cis4. b8( ais b
-	e,4~ e8) b'(\p^\solo d cis)
+	e,4~ e8)\noBeam b'(\p^\solo d cis)
 	ais4.->_\crescmarkup b8( d cis)
 	ais4.-> b8( d cis)
 	ais4.-> b8( cis d) \clef tenor
@@ -237,8 +237,8 @@ musicFagotteIMvtIII = \relative c {
 	fis8(\f e4) a( b,8~
 	b gis'4 a,) fis'8(~
 	fis g,!4 e' fis,8~
-	fis) d'4( f, cis'8~
-	cis b e,) b'(_\pcresc d cis)
+	fis) d'4( f, cis'!8~
+	cis b e,)\noBeam b'(_\pcresc d cis)
 % Bars 206 to 210
 	ais4.-> b8( d cis)
 	ais4.-> b8( d cis)
@@ -295,10 +295,10 @@ musicFagotteIMvtIII = \relative c {
 	fis f2->
 % Bars 251 to 255
 	e2.->~
-	e4\pp a2->\mf
+	e4-\offset X-offset -1 \pp a2->\mf
 	gis2->_\dimmarkup fis4->~
 	fis f2->
-	\after 2.*5/6 \! e2.\pp\> \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! e2.\pp\> \mark \default
 % Bars 256 to 260
 	R2.*8
 % Bars 261 to 265

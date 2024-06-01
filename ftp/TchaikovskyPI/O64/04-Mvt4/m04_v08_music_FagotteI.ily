@@ -14,7 +14,7 @@ musicFagotteIMvtIV = \relative c {
 	b8 r r4 r2
 	gis'4~ gis8 r a4~ a8 r
 	gis4~ gis8 r r4 gis8\f r
-	fis r e r dis\> r cis\! r 
+	fis r e r \once \stemUp dis\> r cis\! r 
 % Bars 6 to 10
 	b2\<~ b8\! r fisis'\f r
 	gis r e r fis! r e r
@@ -40,7 +40,7 @@ musicFagotteIMvtIV = \relative c {
 	b2_\pmamarcato e~
 	e8 r cis4-- b-- a--
 % Bars 26 to 30
-	gis--_\piuf e,2.~
+	gis---\offset X-offset -4.5 _\piuf e,2.~
 	e8 r b''2\< ais4--\f
 	fis'-- gis-- dis--\> e--\!
 	b\<^\simile cis dis\! gis,8.\ff ais16
@@ -55,7 +55,7 @@ musicFagotteIMvtIV = \relative c {
 	fis'!4-- gis-- dis-- e--
 	b_\simile cis dis gis,8.\ff ais16
 	fis'4-> gis-> dis-> fis->
-	\tuplet 3/2 4 {b,8\ff[ r cis,] b( cis dis) e( g fis) e( dis cis)
+	\tuplet 3/2 4 {b,8-\offset X-offset -1.5 \ff[ r cis,] b( cis dis) e( g fis) e( dis cis)
 	b( cis dis) cis( dis e) dis( e fis) e( dis cis)
 % Bars 41 to 45
 	b[ r b'] a( g fis) e( cis dis e fis g)
@@ -74,7 +74,7 @@ musicFagotteIMvtIV = \relative c {
 	r4 e\p\< e e\!
 	e\>~ e8\! r r2
 	R1
-	r2 r4 \clef bass b\pp\<(
+	r2 r4 \hairpinShorten #'(-0.5 . -0.5) b\pp\<(
 % Bars 56 to 60
 	a\! g2.\>~
 	g8)\pp r r4 r2 \bar "||"
@@ -83,7 +83,7 @@ musicFagotteIMvtIV = \relative c {
 	r4 g fis e
 % Bars 61 to 65
 	g8 r r4 r2
-	r4 b,\ff c c
+	\clef bass r4 b,\ff c c
 	b8 r r4 r2
 	r4 b c c
 	b8 r r4 r2
@@ -125,7 +125,7 @@ musicFagotteIMvtIV = \relative c {
 	d\sf e)\> cis( d
 % Bars 96 to 100
 	b8)\! r d4--\mf cis-- d(
-	b\sf cis) a(\> b \mark \default
+	b\sf cis) a(\> b \markWhiteout \mark \default
 	gis8)\! r r4 r2
 	R1*8
 % Bars 101 to 105
@@ -139,21 +139,21 @@ musicFagotteIMvtIV = \relative c {
 % Bars 111 to 115
 	r fis(\mf e fis)
 	b,2(\< cis)
-	d4( dis fis e\! \mark \default
+	d4( dis fis e\! \markWhiteout \mark \default
 	a,8) r r4 r2
 	g'8\ff g fis fis e e e e
 % Bars 116 to 120
 	b' r r4 r2
 	a8\< a g g fis fis fis fis
 	fis fis fis fis  e4\fff a,,
-	g a g a
+	\startMeasureCount g a g a
 	g a g a
 % Bars 121 to 125
 	g a g a
 	g a g a
 	g_\dimmarkup a g a
 	g a g a
-	g\mf\> a g a\!
+	g\mf\> a g a\! \stopMeasureCount
 % Bars 126 to 130
 	g8 r r4 r2
 	R1 \mark \default
@@ -203,8 +203,8 @@ musicFagotteIMvtIV = \relative c {
 	fis!( g gis a) a( gis g fis)
 	g( a ais b) b( bes a g)
 % Bars 171 to 175
-	f(\ff e ees d) d( cis c b) \clef bass
-	r2 g,8\ff r r4
+	f(\ff e ees d) d( cis c b)
+	r2 \clef bass g,8\ff r r4
 	r2 f'8 r c c
 	g r r4 g8( f e d)
 	c( d' e f) fis( g a b
@@ -326,7 +326,7 @@ musicFagotteIMvtIV = \relative c {
 	gis gis 
 	gis g
 	g g
-	\after 1*3/8 <>_\dimmarkup g1\sf~
+	\after 1*3/8 <>-\offset X-offset 1 _\dimmarkup g1\sf~
 	g~
 % Bars 276 to 280
 	g~
@@ -390,12 +390,12 @@ musicFagotteIMvtIV = \relative c {
 	cis->\< d) b( cis\!
 % Bars 326 to 330
 	a) r r2
-	R1 \clef tenor
-	r4 fis''--\mf\< e-- fis(\!
+	R1 
+	r4 \clef tenor fis''--\mf\< e-- fis(\!
 	d\sf\> e) cis( d\!
-	b8) r r4 r2 \clef bass
+	b8) r r4 r2 
 % Bars 331 to 335
-	r4 cis(\mf\< dis fis\!
+	r4 \clef bass cis(\mf\< dis fis\!
 	b8) r e,,4--\mf d!-- e(
 	cis-> d) b( cis
 	a) r r2
@@ -404,7 +404,7 @@ musicFagotteIMvtIV = \relative c {
 	r4 fis''--\mf e-- fis(
 	d\sf e)\> cis( d
 	b8)\! r d4--\mf cis-- d(
-	b\sf cis) a(\> b\! \mark \default
+	b\sf cis) a(\> b\! \markWhiteout \mark \default
 	gis8)\p r r4 r2
 % Bars 341 to 345
 	R1*8
@@ -419,7 +419,7 @@ musicFagotteIMvtIV = \relative c {
 	b'4.(\sff\> a8 cis,4)\! r
 	r fis(\mf e fis)
 	b,2( cis)
-	d4( dis fis e \mark \default
+	d4( dis fis e \markWhiteout \mark \default
 % Bars 356 to 360
 	a,8) r r4 r2
 	g'8\ff g fis fis e e e e 
@@ -436,7 +436,7 @@ musicFagotteIMvtIV = \relative c {
 	fisis fisis fisis fisis dis dis dis dis
 	dis dis dis dis gis gis fisis fisis \mark \default
 	gis r cis,,4\fff b cis
-	b cis b cis
+	\startMeasureCount b cis b cis
 	b cis b cis
 % Bars 371 to 375
 	b cis b cis
@@ -446,7 +446,7 @@ musicFagotteIMvtIV = \relative c {
 	b\mf\> cis b cis\!
 % Bars 376 to 380
 	b\p\< cis b cis
-	b cis b cis\! \clef tenor
+	b cis b cis\! \stopMeasureCount \clef tenor
 	gis''1\mf~
 	gis2 fis8( eis dis cis)
 	gis'2->( fis~
@@ -500,7 +500,7 @@ musicFagotteIMvtIV = \relative c {
 	fis dis \clef bass
 % Bars 421 to 425
 	fis,4\ff b dis, fis
-	gis b e, gis
+	gis b e, gis!
 	e a c, e
 	c e a, c
 	a c e a
@@ -580,7 +580,7 @@ musicFagotteIMvtIV = \relative c {
 	dis cis b b8. ais16
 	gis2. e'4
 	dis cis b dis8. cis16
-	b( cis, dis e fis gis a ais) b( cis, dis e fis gis a! ais \mark \default
+	b( cis, dis e fis gis a ais) b( cis, dis e fis gis a! ais \markXoffset -0.3 \markWhiteout \mark \markAaBox
 	b8) r gis4\fff a a
 % Bars 491 to 495
 	gis gis gis gis
@@ -591,13 +591,13 @@ musicFagotteIMvtIV = \relative c {
 % Bars 496 to 500
 	b cis b fisis
 	gis8^\marcatissimo cis, dis e fis!4 fisis
-	gis8 cis, dis e fis!4 fisis \mark \default
+	gis8 cis, dis e fis!4 fisis \mark \markBbBox
 	gis8 b a g fis! cis d! dis
 	e eis fis fisis gis a ais bis
 % Bars 501 to 505
 	cis4 a e cis
 	gis8. cis16 b4~ b8 b b b
-	fis'2\sfff fis\sfff \bar "||"
+	fis'2-\offset X-offset -1 \sfff fis\sfff \bar "||"
 	\time 2/2 gis4 e\p d e
 	cis d b cis
 % Bars 506 to 510
@@ -607,7 +607,7 @@ musicFagotteIMvtIV = \relative c {
 	bis cis b c
 	g'\fff gis a ais
 % Bars 511 to 515
-	b bis cis dis \mark \default
+	b bis cis dis \markXoffset -0.3 \mark \markCcBox
 	e e\p d e
 	cis d b cis
 	a_\crescmarkup b gis a
@@ -623,7 +623,7 @@ musicFagotteIMvtIV = \relative c {
 	bes g' r bes,
 	b! e r b
 	b cis r b
-	b a' r b, \mark \default
+	b a' r b, \mark \markDdBox
 % Bars 526 to 530
 	b r b'2~
 	b bes~
@@ -649,7 +649,7 @@ musicFagotteIMvtIV = \relative c {
 	e4 e r2
 	e4 e r2 \bar "||" 
 % Bars 546 to 550
-	\time 6/4 e4 r r e r r
+	\time 6/4 \startMeasureCount e4 r r e r r
 	e r r e r r
 	e r r e r r
 	e r r e r r
@@ -657,7 +657,7 @@ musicFagotteIMvtIV = \relative c {
 % Bars 551 to 555
 	e r r e r r
 	e r r e r r
-	e r r e r r \mark \default
+	e r r e r r \stopMeasureCount \mark \markEeBox
 	e r r r2.
 	e4 r r r2.
 % Bars 556 to 560

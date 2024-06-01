@@ -43,7 +43,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64"
+			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64 — Fagotte"
 		}
 		instrument = \markup {
 			"Fagotte"
@@ -51,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagotteIMvtI
-%			}
+			\new Voice {
+				\formatFagotteIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(fagotteI) \tempiPartMvtI
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagotteIMvtII
-%			}
+			\new Voice {
+				\formatFagotteIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(fagotteI) \tempiPartMvtII
 			}
@@ -91,7 +91,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.5 \bold 2.
 			}
 		}
 		\layout {
@@ -99,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagotteIMvtIII
-%			}
+			\new Voice {
+				\formatFagotteIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(fagotteI) \tempiPartMvtIII
 			}
@@ -113,7 +113,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -123,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagotteIMvtIV
-%			}
+			\new Voice {
+				\formatFagotteIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(fagotteI) \tempiPartMvtIV
 			}
@@ -137,7 +137,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 4.
 			}
@@ -147,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagotteIIMvtI
-%			}
+			\new Voice {
+				\formatFagotteIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(fagotteII) \tempiPartMvtI
 			}
@@ -168,12 +168,13 @@
 		}
 		\layout {
 		}
+		
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagotteIIMvtII
-%			}
+			\new Voice {
+				\formatFagotteIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(fagotteII) \tempiPartMvtII
 			}
@@ -187,7 +188,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.7 \bold 2.
 			}
 		}
 		\layout {
@@ -195,9 +196,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagotteIIMvtIII
-%			}
+			\new Voice {
+				\formatFagotteIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(fagotteII) \tempiPartMvtIII
 			}
@@ -209,7 +210,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -219,9 +220,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagotteIIMvtIV
-%			}
+			\new Voice {
+				\formatFagotteIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(fagotteII) \tempiPartMvtIV
 			}
@@ -235,7 +236,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2 \bold 4.
 			}
 		}
 		\layout {

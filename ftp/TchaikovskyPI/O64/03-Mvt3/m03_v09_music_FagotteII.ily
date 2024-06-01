@@ -32,13 +32,11 @@ musicFagotteIIMvtIII = \relative c {
 	fis2 r4
 	b( b') a8( b)
 	e,, r r4 r
-	R2.*8
+	R2.*17
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
-	
-	R2.*9
 % Bars 31 to 35
 	
 % Bars 36 to 40
@@ -94,7 +92,7 @@ musicFagotteIIMvtIII = \relative c {
 	R2.*3
 	
 	
-	r4 cis'8([\mf-> fis,)] cis\p-. fis-. \mark \default
+	r4 cis'8([\mf-> fis,)] cis\p-. fis-. \markXoffset #-0.5 \mark \default
 % Bars 81 to 85
 	R2.*2
 	
@@ -112,37 +110,37 @@ musicFagotteIIMvtIII = \relative c {
 	r4 r fisis(->\p 
 	gis8) r e4->~ e8 r
 	R2.
-	r4 cis->( e8) r \mark \default
+	r4 cis->( e8) r \markXoffset #-0.2 \mark \default
 % Bars 96 to 100
-	R2.*2
+	\mmrLength #13.5 R2.*8
 	
-	R2.*3
+	
 	
 	
 % Bars 101 to 105
-	R2.
-	R2.*2
+	
+	
 	\mark \default
 	R2.*3 
 	
 % Bars 106 to 110
 	
-	\ni << \mmrPos #4 R2. {s2 \clef treble s4} >>
+	\ni << \mmrPos #4 \tweak extra-offset #'(0.5 . 0) R2. {s2 \clef treble s4} >>
 	\mmrPos #4 R2. \no
-	\voiceTwo r4 r4 \oneVoice \clef tenor ais\mf->(
-	gis8)[ dis-.] \clef bass dis-. b-. r4
+	\voiceTwo r4 r4 \oneVoice \clef bass ais\mf->(
+	gis8)[ dis-.] dis-. b-. r4
 % Bars 111 to 115
-	r r4 \clef tenor ais'->\mf(
-	gis8)[ dis-.] \clef bass dis-. b-. gis\pp[-. gis]-. 
+	r r4 ais'->\mf(
+	gis8)[ dis-.] dis-. b-. gis\pp[-. gis]-. 
 	gis-. r gis-. gis-. gis\noBeam-. r
 	gis'\p-. gis-. gis\noBeam-. r r4
-	R2.*2
+	R2.*3
 % Bars 116 to 120
 	
-	R2. \mark \default
+	\mark \default
 	R2.*2
 	
-	r8 \clef tenor e'\mf\noBeam-. e-. cis-. r4
+	r8 e'\mf\noBeam-. e-. cis-. r4
 % Bars 121 to 125
 	R2.
 	r8 e-. e-. cis-. r4
@@ -150,11 +148,11 @@ musicFagotteIIMvtIII = \relative c {
 	r8 cis\noBeam-. cis-. a-. r4
 	R2.
 % Bars 126 to 130
-	r8 cis-. cis-. a-. r4 \clef bass
+	r8 cis-. cis-. a-. r4
 	R2.*3 
 	
 	
-	r4 cis,8[(\f\> fis,]) cis-.\mf fis-.
+	r4 cis,8[(\f-> fis,]) cis-.\mf fis-.
 % Bars 131 to 135
 	R2.*3
 	
@@ -192,16 +190,13 @@ musicFagotteIIMvtIII = \relative c {
 	b( b') a8( b)
 	e,, r r4 r
 % Bars 161 to 165
-	R2.*8
+	R2.*17
 	
 	
 	
 	
 % Bars 166 to 170
 	
-	
-	
-	R2.*9
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -255,7 +250,7 @@ musicFagotteIIMvtIII = \relative c {
 % Bars 216 to 220
 	
 	r4 r e,16(\ff d cis b
-	a8) r r4 r \mark \default
+	a8) r r4 r \markXoffset #-0.3 \mark \default
 	r f'\f f
 	f e_\pesante e
 % Bars 221 to 225
@@ -299,7 +294,7 @@ musicFagotteIIMvtIII = \relative c {
 	e4\pp a2->\mf
 	gis2->_\dimmarkup fis4->~
 	fis f2->
-	\after 2.*5/6 \! e2.\pp\> \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! e2.\pp\> \mark \default
 % Bars 256 to 260
 	R2.*8
 % Bars 261 to 265
