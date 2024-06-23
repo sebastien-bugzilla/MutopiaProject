@@ -259,6 +259,23 @@ sonsbouchesgestopft = {
 	\once \override TextSpanner.bound-details.left-broken.text = ""
 }
 
+sonsbouchesgestopftColumn = {
+	\once \override TextSpanner.bound-details.left.stencil-align-dir-y = #CENTER
+	\once \override TextSpanner.dash-fraction = 0.5
+	\once \override TextSpanner.dash-period = 1
+	\once \override TextSpanner.bound-details.left.text = \markup {
+		\column {
+			\lower #1.5 "sons bouchés" "gestopft"
+		}
+	}
+	\once \override TextSpanner.bound-details.left-broken.text = ""
+	\once \override TextSpanner.bound-details.right-broken.text = ""
+	\once \override TextSpanner.bound-details.right.text = \markup {
+		\draw-line #'(0 . -1)
+	}
+}
+
+
 aIIXoffset = #(define-music-function
 	(offset)
 	(number?)
@@ -400,6 +417,13 @@ stemOffset = #(define-music-function
 		\once \offset length #offset Stem
 	#}
 )
+
+clefSpace = \once \override Staff.Clef.space-alist.time-signature = \etc 
+
+
+resetMarkSpace = \once \revert Score.RehearsalMark.extra-spacing-width
+
+tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
 
 
@@ -568,8 +592,6 @@ stemOffset = #(define-music-function
 %		\once \override TextScript.outside-staff-priority = #prio
 %	#}
 %)
-
-%tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
 %tempoExtraOffset = #(define-music-function
 %	(offset)

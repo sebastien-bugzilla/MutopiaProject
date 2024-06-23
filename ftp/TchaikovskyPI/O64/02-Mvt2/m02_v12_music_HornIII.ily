@@ -9,21 +9,29 @@ musicHornIIIMvtII = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R1.*15
+	\mmrLength #35 \mmrnDown R1.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	R1.*2
 	
-	
-	\mark \default
+	<< R1. {s2. \tempoXoffset #-3 s2. }>> \mark \default
 % Bars 16 to 20
-	R1.*12
+	R1.*3
+	
+	
+	R1.
+	R1.*4
 % Bars 21 to 25
 	
-% Bars 26 to 30
 	
+	
+	\mmrnDown R1.
+	R
+% Bars 26 to 30
+	R1.*2
 	
 	\ni \mmrPos #4 R1.
 	\mmrPos #-4 R
@@ -62,16 +70,16 @@ musicHornIIIMvtII = \relative c {
 	fis\fff fis fis   fis,\> fis a\!   gis\ff\> gis gis  a a b\!
 	a\f\> a a   fis fis fis  b b b   b b b\!
 	d,\mf d d   d' d d  d4.\> dis
-	e\! a,\p\< a\> e'\!
-	e\p\< a, a\> e'\!
+	e\! \hairpinShorten #'(-0.5 . -0.5) a,\p\< \hairpinShorten #'(0.5 . 0) a\> e'\!
+	e\p a,\< a\> e'\!
 % Bars 61 to 65
 	e8\p e e  e e e  e8 r r  r4 r8
 	fis fis fis   fis fis fis   fis r r r4 r8
-	R1.
-	R1.*2
+	R1.*3
+	
 	\bar "||" 
 % Bars 66 to 70
-	\time 4/4 R1*9
+	\time 4/4 \mmrnDown R1*9
 % Bars 71 to 75
 	
 	
@@ -79,7 +87,7 @@ musicHornIIIMvtII = \relative c {
 	\mark \default
 	\ni \mmrPos #4 R1 \no
 % Bars 76 to 80
-	c8\mf c4 c8( cis) cis4 cis8~
+	c!8\mf c4 c8( cis) cis4 cis8~
 	cis cis4 cis8~ cis cis4 cis8~
 	cis[ cis]~ cis b r2
 	R1
@@ -125,7 +133,7 @@ musicHornIIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.*2
+	\tempoXoffset #0.5 R1.*2
 	
 	\ni \mmrPos #6 R1.
 	\mmrPos #4 R1. \no
@@ -138,7 +146,7 @@ musicHornIIIMvtII = \relative c {
 	e4.~ e8 r r r2.
 % Bars 126 to 130
 	a4._\mfcresc a a e'
-	e\f dis d\> \tuplet 2/3 4. {cis8\mf a}
+	e\f dis d\> \tuplet 2/3 4. {\once \tupletUp cis8\mf a}
 	d2. d8( cis d) d4.
 	\timeSignature 4/4 \scaleDurations 3/2 {
 		e8( cis8~ cis4) c8( cis~ cis4)
@@ -159,25 +167,25 @@ musicHornIIIMvtII = \relative c {
 % Bars 141 to 145
 	e d4 cis b8~ b r r r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		e16\ff cis\f cis cis   cis cis cis cis  b b b b   cis cis d d
-		a a fis fis   fis fis a a   gis_\crescmarkup gis gis gis  gis gis gis gis
-		c! c c c   c c c c  a\ff a cis cis   cis cis cis cis
-		d d cis cis  b b b b  b b b b  d d d d
+		e16\ff cis\f cis cis  cis4:16 b: cis8: d:
+		a: fis: fis: a: gis4:_\crescmarkup gis:
+		c!: c: a8:\ff cis: cis4: 
+		d8: cis: b4: b: d: 
 % Bars 146 to 150
-		e\fff cis\f cis cis  cis cis cis cis  b b b b  cis cis d d
-		a a fis fis  fis fis a a gis_\crescmarkup gis gis gis   gis gis gis gis
-		c! c c c  c c c c  a a a a  a a a a
-		b\ff b b b  b b b b   c c c c  c c c c 
-		cis cis cis cis   cis cis cis cis   cis cis cis cis   cis cis cis cis \mark #11
+		\beamOffset #'(0.5 . 0.5) e16\fff cis\f cis cis cis4:16 b: cis8: d:
+		a: fis: fis: a: gis4:_\crescmarkup gis:
+		c!: c: a: a:
+		b:\ff b: c: c: 
+		cis: cis: cis: cis: \mark #11
 % Bars 151 to 155
-		cis_\crescmarkup cis cis cis  cis cis cis cis  b fis' fis fis  f f f f
-		f f f f   f f f f  fis fis fis fis  fis fis fis fis
-		fis\ffff fis fis fis   a, a c c  d\> d d d  d d d d\!
-		d\ff d a a  fis fis a a  b\> b b b   b b b b\!
-		b\f b b b   b b b b  b4\> c!\!
+		cis:_\crescmarkup cis: b!16 fis' fis fis f4:16 
+		f: f: fis: fis: 
+		\noteHeadEsw #'(-1.45 . 1.45) fis:\ffff a,8: c!: d4:\> d:\! 
+		\revertNoteHeadEsw d8:\ff a: fis: a: b4:\> b:\! 
+		b:\f b: b4\> c!\!
 % Bars 156 to 160
-		cis\mf\< a^\ten a\>^\ten e'^\simile\!
-		e\p\< a, a\> e'\! \bar "||"
+		cis\mf a^\ten\<  a\>^\ten e'^\simile\!
+		e\p a,\< a\> e'\! \bar "||"
 	}
 	\unsetTimeSignature \time 4/4 c4\fff a2.~
 	a4 a2.
@@ -193,16 +201,16 @@ musicHornIIIMvtII = \relative c {
 	a\p r
 	R1
 	a4\pp a r2 \bar "||"
-	\time 12/8 a8\pp a a  a a a  a a a  a a a 
+	\time 12/8 a4.:8\pp a: a: a: 
 % Bars 171 to 175
-	a\pp a a  a a a  gis gis gis  b b b
-	a a a  a a a   gis gis gis  b b b
-	a a a  a a a  d\< d d   d d d\!
-	a\> a a  cis cis cis\!  gis\< gis gis   gis gis gis\!
-	a\> a a   a a a\! d\< d d  d d d\!
+	a: a: gis: b: 
+	a: a: gis: b:
+	a: a: d:\< d:\! 
+	a:\> cis:\! gis:\< gis:\!
+	a:\> a:\! d:\< d:\!
 % Bars 176 to 180
-	a\> a a  cis cis cis\!  gis\< gis gis  gis gis gis\!
-	e\> e e  e e e\! d2.\pp(
+	a:\> cis:\! gis:\< gis:\!
+	e8\> e e  e e e\! d2.\pp(
 	e8) e e  e e e d2.(
 	e8) e\pp e  e r r  e e e  e r r
 	e\ppp e e r4 r8 r2.

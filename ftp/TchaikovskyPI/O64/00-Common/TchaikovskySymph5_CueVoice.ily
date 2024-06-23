@@ -1057,7 +1057,7 @@ cueVoiceFagotteIIMvtIV = \relative c {
 cueVoiceHornIMvtI = \relative c {
 	s1*37 s2.*15
 	% bar 53 - 57
-	s4. s4 d''8(^\markup {\column {\lower #1.5 "Fl." "Klar." }}
+	s4. s4 d''8(-\offset X-offset -4 ^\markup {\column {\lower #1.5 "Fl." "Klar." }}
 	g8[) r16 g g8]~ g fis( e
 	fis) a,( b~ b) cis( d
 	e4 b8) eis4( b8)
@@ -1101,7 +1101,7 @@ cueVoiceHornIMvtIII = \relative c {
 	% bar 68 - 72
 	cis8(^\markup {Hlzbl.} b4) e( fis,8~
 	fis dis'4 e,) cis'8(~
-	cis d,4 b' cis,8~
+	cis d,!4 b' cis,8~
 	cis) a'4_\( dis, gis8_(
 	\voiceTwo e)\) r \oneVoice s2
 	s2.*117
@@ -1128,7 +1128,7 @@ cueVoiceHornIMvtIV = \relative c {
 	gis8 r fis2 b4--
 	ais-- gis-- fis-- fis8.( eis16)
 	dis2. b'4--
-	ais-- gis-- fis-- a8.( gis16)
+	ais-- gis-- fis-- ais8.( gis16)
 	s1*78
 	% bar 94 - 95
 	r4^\markup {Hlzbl.} cis-- b-- cis(
@@ -1169,7 +1169,7 @@ cueVoiceHornIMvtIV = \relative c {
 cueVoiceHornIIMvtI = \relative c {
 	s1*37 s2.*15
 	% bar 53 - 57
-	s4. s4 d''8(^\markup {\column {\lower #1.5 "Fl." "Klar." }}
+	s4. s4 d''8(-\offset X-offset -1.5 ^\markup {\column {\lower #1.5 "Fl." "Klar." }}
 	g8[) r16 g g8]~ g fis( e
 	fis) a,( b~ b) cis( d
 	e4 b8) eis4( b8)
@@ -1177,7 +1177,7 @@ cueVoiceHornIIMvtI = \relative c {
 	s2.*73
 	% bar 131 - 132
 	e'8(^\markup {Klar.,Fag.} fis gis a b c)
-	\voiceOne cis4.~ cis4 \oneVoice s8
+	\voiceOne cis4.~ cis4 \oneVoice a8-\offset X-offset -1.5 _\markup {Hr.I}
 	s2.*43
 	% bar 176 - 178
 	r4^\markup {Klar.I} a8(~ a gis fis)
@@ -1198,7 +1198,7 @@ cueVoiceHornIIMvtI = \relative c {
 	\voiceOne dis4.~ dis4 b8^\markup {Hr.I} \oneVoice
 	s2.*44
 	% bar 434 - 436
-	e4_\markup {\column {\lower #3 "Fl." \lower #1.5 "Ob." "Klar."}} f8~ f fis4
+	e4^\markup {\overlay { "Fl." \translate #'(0 . -1.5) "Ob." \translate #'(0 . -3) "Klar."}} f8~ f fis4
 	fis g8~ g gis4
 	g,!4.^\markup {Hr.I} gis
 }
@@ -1208,7 +1208,7 @@ cueVoiceHornIIMvtII = \relative c {
 	<>_\markup {(Klar.)}
 	s1.*8
 	% bar 24
-	<>_\markup {(Oboe)}
+	<>-\offset X-offset -2 _\markup {(Oboe)}
 	s1.*14
 	% bar 38 - 40
 	s4.*3 a''8--^\markup {Klar.} b-- cis--
@@ -1238,12 +1238,12 @@ cueVoiceHornIIMvtIII = \relative c {
 	% bar 68 - 72
 	cis'8(^\markup {Hlzbl.} b4) e( fis,8~
 	fis dis'4 e,) cis'8(~
-	cis d,4 b' cis,8~
+	cis d,!4 b' cis,8~
 	cis) a'4_\( dis, gis8_(
 	\voiceTwo e)\) r \oneVoice s2
 	s2.*136
 	% bar 209 - 213
-	cis'8(^\markup {Hlzbl.} b4) e( fis,8
+	cis'8(^\markup {Hlzbl.} b4) e( fis,8~
 	fis dis'4 e,) cis'8(~
 	cis d,!4 b' cis,8~
 	cis) a'4\( dis, gis8(
@@ -1259,8 +1259,8 @@ cueVoiceHornIIMvtIV = \relative c {
 	% bar 12 - 15
 	s2. b''4--^\markup {Viol.I}
 	ais-- gis-- fis-- fis8.( eis16)
-	dis2. b'4--
-	ais-- gis-- fis-- a8.( gis16)
+	dis2.\< b'4--\ff
+	ais-- gis-- fis-- ais8.( gis16)
 	s1*78
 	% bar 94 - 97
 	r4^\markup {Hlzbl.} cis-- b-- cis(
@@ -1307,7 +1307,7 @@ cueVoiceHornIIMvtIV = \relative c {
 cueVoiceHornIIIMvtI = \relative c {
 	s1*37 s2.*15
 	% bar 53 - 57
-	s4. s4 d''8(^\markup {\column {\lower #1.5 "Fl." "Klar." }}
+	s4. s4 d''8(-\offset X-offset -4 ^\markup {\column {\lower #1.5 "Fl." "Klar." }}
 	g8[) r16 g g8]~ g fis( e
 	fis) a,( b~ b) cis( d
 	e4 b8) eis4( b8)
@@ -1318,7 +1318,7 @@ cueVoiceHornIIIMvtI = \relative c {
 	fis8 r \oneVoice s s4.
 	s2.*49
 	% bar 131 - 133
-	e8(^\markup {\column {\lower #1.5 "Klar." "Fag."}} fis gis a b c)
+	e8(_\markup {\column {\lower #1.5 "Klar." "Fag."}} fis gis a b c)
 	cis4.~ cis4 a8(_\markup {Hr.I}
 	gis4.) cis4 cis8
 	s2.*117
@@ -1332,7 +1332,7 @@ cueVoiceHornIIIMvtI = \relative c {
 	% bar 355 - 358
 	d8[^\markup {\column {\lower #1.5 "Viol." "Br."}} r16 d d8]~ d e( fis
 	g fis e d) r r
-	r4 r8 r a--^\markup {Pos.I} g
+	r4 r8 r a--^\markup {Pos.I} g--
 	\voiceTwo fis4.-> fis8 \oneVoice s4
 	s2.*30
 	% bar 389 - 391
@@ -1350,7 +1350,7 @@ cueVoiceHornIIIMvtII = \relative c {
 	<>_\markup {(Klar.)}
 	s1.*8
 	% bar 24
-	<>_\markup {(Oboe)}
+	<>-\offset X-offset -2 _\markup {(Oboe)}
 	s1.*4
 	% bar 28 - 33
 	r2._\markup {Klar.I} cis''4. eis,4( ais8)
@@ -1378,12 +1378,12 @@ cueVoiceHornIIIMvtIII = \relative c {
 	% bar 68 - 72
 	cis8(^\markup {Hlzbl.} b4) e( fis,8~
 	fis dis'4 e,) cis'8(~
-	cis d,4 b' cis,8~
+	cis d,!4 b' cis,8~
 	cis) a'4_\( dis, gis8_(
 	\voiceTwo e)\) r \oneVoice s2
 	s2.*15
 	% bar 88 - 90
-	r4 r \ottava #1 b''16-.^\markup {Viol.I} cis-. b-. cis-.
+	r4 r \ottava #1 b''16-.-\offset X-offset -6 ^\markup {Viol.I} cis-. b-. cis-.
 	dis-. cis-. b-. ais-. \ottava #0 e-.^\markup {Viol.II} fis-. e-. fis-. gis-. fis-. e-. dis-. 
 	\voiceTwo gisis,-._\markup {Viol.I} ais-. gisis-. ais-. b-. ais-. gis-. fis-. \oneVoice s4
 	s2.*14
@@ -1451,18 +1451,18 @@ cueVoiceHornIIIMvtIV = \relative c {
 cueVoiceHornIVMvtI = \relative c {
 	s1*37 s2.*15
 	% bar 53 - 56
-	s4. s4 d''8(^\markup {\column {\lower #1.5 "Fl." "Klar." }}
+	s4. s4 d''8(-\offset X-offset -7 ^\markup {"Fl. Klar." }
 	g8[) r16 g g8]~ g fis( e
 	fis) a,( b~ b) cis( d
 	e4 b8) eis4( b8)
 	s2.*74
 	% bar 131 - 133
-	e,8(^\markup {"Klar. Fag."} fis gis a b c)
+	e,8(_\markup {"Klar. Fag."} fis gis a b c)
 	cis4.~ cis4 a8(_\markup {Hr.I}
 	gis4.) cis4 cis8
 	s2.*40
 	% bar 174 - 176
-	a8\repeatTie^\markup {Hlzbl.} e( fis) gis4( a8)
+	a8\repeatTie-\offset X-offset -3 _\markup {Hlzbl.} e( fis) gis4( a8)
 	r e( fis) gis4.
 	r4 a8(~ a gis fis)
 	s2.*74
@@ -1477,7 +1477,7 @@ cueVoiceHornIVMvtI = \relative c {
 	e4^\markup {Hr.I} e8 r4 r8
 	s2.*39
 	% bar 336
-	fis,,16(^\markup {Fag.} gis ais b cis d) ais'(^\markup {Klar.} fis gis ais b cis)
+	fis,,16(^\markup {Fag.} gis ais b cis d) ais'(_\markup {Klar.} fis gis ais b cis)
 	s2.*52
 	% bar 389 - 391
 	r4^\markup {Hr.I} r8 r4 b8(
@@ -1485,8 +1485,8 @@ cueVoiceHornIVMvtI = \relative c {
 	ees4. e
 	s2.*17
 	% bar 409 - 410
-	r4^\markup {Viol.I} r8_\pizz fis\noBeam ais,,_\markup {Vcll.} cis
-	fis\noBeam ais_\markup {Viol.II} cis fis\noBeam ais^\markup {Viol.I} cis
+	r4^\markup {Viol.I} r8-\offset X-offset -1.5 _\pizz fis\noBeam ais,,_\markup {Vcll.} cis
+	fis\noBeam ais_\markup {Viol.II} cis fis\noBeam ais_\markup {Viol.I} cis
 }
 cueVoiceHornIVMvtII = \relative c {
 	s1.*15
@@ -1497,7 +1497,7 @@ cueVoiceHornIVMvtII = \relative c {
 	<>_\markup {(Ob.I)}
 	s1.*4
 	% bar 28
-	fis''4.(^\markup {Hr.I} eis) r2.
+	fis''4.(-\offset X-offset -4 ^\markup {Hr.I} eis) r2.
 	s1.*9
 	% bar 38 - 41
 	s2. s4. a,8--^\markup {Klar.} b-- cis--
@@ -1518,7 +1518,7 @@ cueVoiceHornIVMvtIII = \relative c {
 	% bar 68 - 72
 	cis''8(^\markup {Hlzbl.} b4) e( fis,8~
 	fis dis'4 e,) cis'8(~
-	cis d,4 b' cis,8~
+	cis d,!4 b' cis,8~
 	cis) a'4_\( dis, gis8_(
 	\voiceTwo e)\) r \oneVoice s2
 	s2.*15
@@ -1555,7 +1555,7 @@ cueVoiceHornIVMvtIV = \relative c {
 	% bar 35 - 38
 	dis''2^\markup {Hr.I} dis,8. d16 dis8. eis16
 	cis'4-- dis-- ais-- b--
-	fis4 gis ais dis,8. eis16
+	fis4 gis ais dis,8.\ff eis16
 	cis'4-> dis-> ais-> cis->
 	s1*55
 	% bar 94 - 97
@@ -1570,7 +1570,7 @@ cueVoiceHornIVMvtIV = \relative c {
 	s1*29
 	% bar 166 - 167
 	a'2(^\markup {Fl.Viol.} gis)
-	g4( fis cis fis)
+	g!4( fis cis fis)
 	s1*94
 	% bar 262 - 265
 	ees2^\markup {Klar.} ees
@@ -1586,7 +1586,7 @@ cueVoiceHornIVMvtIV = \relative c {
 	s1*44
 	% bar 384 - 385
 	eis'2.->(^\markup {Klar.I} dis4)
-	cis( b ais gis)
+	cis( c ais gis)
 	s1*30
 	% bar 416 - 417
 	cis'2(^\markup {Fl.Viol.} c)

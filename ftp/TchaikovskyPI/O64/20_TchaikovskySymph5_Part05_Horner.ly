@@ -51,7 +51,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64"
+			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64 — Horner"
 		}
 		instrument = \markup {
 			"Horner"
@@ -59,9 +59,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIMvtI
-%			}
+			\new Voice {
+				\formatHornIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(hornI) \tempiPartMvtI
 			}
@@ -83,9 +83,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIMvtII
-%			}
+			\new Voice {
+				\formatHornIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(hornI) \tempiPartMvtII
 			}
@@ -99,7 +99,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.8 \bold 2.
 			}
 		}
 		\layout {
@@ -107,9 +107,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIMvtIII
-%			}
+			\new Voice {
+				\formatHornIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(hornI) \tempiPartMvtIII
 			}
@@ -121,7 +121,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -131,9 +131,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIMvtIV
-%			}
+			\new Voice {
+				\formatHornIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(hornI) \tempiPartMvtIV
 			}
@@ -147,7 +147,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2 \bold 4.
 			}
 		}
 		\layout {
@@ -155,9 +155,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIIMvtI
-%			}
+			\new Voice {
+				\formatHornIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(hornII) \tempiPartMvtI
 			}
@@ -179,9 +179,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIIMvtII
-%			}
+			\new Voice {
+				\formatHornIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(hornII) \tempiPartMvtII
 			}
@@ -193,7 +193,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -203,9 +203,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIIMvtIII
-%			}
+			\new Voice {
+				\formatHornIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(hornII) \tempiPartMvtIII
 			}
@@ -227,9 +227,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIIMvtIV
-%			}
+			\new Voice {
+				\formatHornIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(hornII) \tempiPartMvtIV
 			}
@@ -243,7 +243,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #4 \bold 4.
 			}
 		}
 		\layout {
@@ -251,9 +251,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIIIMvtI
-%			}
+			\new Voice {
+				\formatHornIIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(hornIII) \tempiPartMvtI
 			}
@@ -275,9 +275,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIIIMvtII
-%			}
+			\new Voice {
+				\formatHornIIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(hornIII) \tempiPartMvtII
 			}
@@ -291,7 +291,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.5 \bold 2.
 			}
 		}
 		\layout {
@@ -299,9 +299,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIIIMvtIII
-%			}
+			\new Voice {
+				\formatHornIIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(hornIII) \tempiPartMvtIII
 			}
@@ -313,7 +313,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -323,9 +323,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIIIMvtIV
-%			}
+			\new Voice {
+				\formatHornIIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(hornIII) \tempiPartMvtIV
 			}
@@ -337,7 +337,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 4.
 			}
@@ -347,9 +347,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIVMvtI
-%			}
+			\new Voice {
+				\formatHornIVMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(hornIV) \tempiPartMvtI
 			}
@@ -371,9 +371,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIVMvtII
-%			}
+			\new Voice {
+				\formatHornIVMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(hornIV) \tempiPartMvtII
 			}
@@ -387,7 +387,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.5 \bold 2.
 			}
 		}
 		\layout {
@@ -395,9 +395,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIVMvtIII
-%			}
+			\new Voice {
+				\formatHornIVMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(hornIV) \tempiPartMvtIII
 			}
@@ -411,7 +411,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.1 \bold 3.
 			}
 		}
 		\layout {
@@ -419,9 +419,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatHornIVMvtIV
-%			}
+			\new Voice {
+				\formatHornIVMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(hornIV) \tempiPartMvtIV
 			}
@@ -435,7 +435,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1 \bold 4.
 			}
 		}
 		\layout {

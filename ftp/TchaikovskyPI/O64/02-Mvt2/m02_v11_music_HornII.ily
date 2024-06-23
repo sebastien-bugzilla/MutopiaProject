@@ -9,33 +9,40 @@ musicHornIIMvtII = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R1.*7
+	\mmrLength #33 \mmrnDown R1.*12
 % Bars 6 to 10
-	
-	
-	R1.*8
-	
 	
 % Bars 11 to 15
 	
 	
+	R1.*2
 	
-	
-	\mark \default
+	<< R1. {s2. \tempoXoffset #-3 s }>> \mark \default
 % Bars 16 to 20
-	R1.*13
+	R1.*3
+	
+	
+	R1.
+	R1.*4
 % Bars 21 to 25
 	
+	
+	
+	\mmrnDown R1.
+	R
 % Bars 26 to 30
+	R1.*2
 	
-	
-	
-	R1.*9
+	\mmrnDown \mmrLength #12 R1.*5
 % Bars 31 to 35
 	
+	
+	\mmrnDown \mmrLength #11 R1.*2
+	
+	R1.
 % Bars 36 to 40
-	
-	
+	R
+	R
 	\ni \mmrPos #-6 R1.
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no
@@ -43,7 +50,7 @@ musicHornIIMvtII = \relative c {
 	fis'4.\f fis fis r4 r8
 	fis4. fis fis2.
 	fis! e
-	r4 r8 d2.\p\> d4. \mark \default
+	r4 r8 \hairpinShorten #'(0 . -4) d2.\p\> d4.\! \mark \default
 	cis8\pp cis cis  cis cis cis  b\< b b  cis cis d\!
 % Bars 46 to 50
 	cis_\pcresc cis cis  cis cis cis  gis' gis gis  gis gis gis
@@ -61,8 +68,8 @@ musicHornIIMvtII = \relative c {
 	cis\fff cis cis  cis,\> cis c\!  b\ff\> b b   b b b\!
 	d\f\> d d   d d d  f! f f  fis fis gis\!
 	b,\mf b b  b b b  b4.\> c!
-	cis\! e\p\< fis\> e\!
-	e\p\< e fis\> e\!
+	cis\! \hairpinShorten #'(-0.5 . -0.5) e\p\< \hairpinShorten #'(0.5 . 0) fis\> e\!
+	e\p e\< fis\> e\!
 % Bars 61 to 65
 	e8\p e e   e e e  e r r r4 r8
 	fis fis fis  fis fis fis  fis r r r4 r8
@@ -127,7 +134,7 @@ musicHornIIMvtII = \relative c {
 	\ni \mmrPos #4 R1.
 	\mmrPos #6 R
 	\mmrPos #6 R \no
-	\voiceTwo r4 r8 \oneVoice e4.->\mf~ \after 4.*2/3 \! e\> r4 r8
+	\voiceTwo r4 r8 \oneVoice e4.->\mf\>~ \after 4.*2/3 \! e r4 r8
 	e4.~\p e8 r r b'4.->~ b8 r r
 % Bars 121 to 125
 	d,4.\p~ d8 r r a'4.->~ a8 r r
@@ -154,39 +161,39 @@ musicHornIIMvtII = \relative c {
 	fis4. fis4 fis8 fis r r r4 r8 \mark \default
 	a4.~ a8 r r d,4.~ d8 r r
 	dis4.~ dis8 r r gis4.~ gis8 r r
-	r d'!4\ff b a8~ a r r  r r e~
+	r d'!4\ff b a8~ a r r  r4 e8~
 % Bars 141 to 145
 	e d4 cis b8~ b r r r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		cis'16\ff e,\f e e  e e e e  d d d d  cis cis b b
-		cis cis cis cis  cis cis cis cis  cis_\crescmarkup cis cis cis   cis cis cis cis
-		a' a fis fis   fis fis a a  fis\ff fis a a  fis fis fis fis
-		fis fis fis fis   fis fis fis fis  fis fis fis fis  d d d d
+		cis'16-\offset X-offset -1 \ff e,\f e e  e4:16 d: cis8: b:
+		cis4: cis: cis:_\crescmarkup cis:
+		a'8: fis: fis: a: fis:\ff a: fis4:
+		fis: fis: fis: d:
 % Bars 146 to 150
-		e\fff e\f e e  e e e e  d d d d   cis cis b b
-		cis cis cis cis   cis cis cis cis   cis_\crescmarkup cis cis cis   cis cis cis cis
-		a' a fis fis  fis fis a a  fis fis fis fis   fis fis fis fis
-		fis\ff fis fis fis  fis fis fis fis  fis fis fis fis  fis fis fis fis
-		gis gis gis gis  gis gis gis gis  a a a a   a a a a \mark #11
+		e16-\offset X-offset -1 \fff e\f e e e4:16 d: cis8: b: 
+		cis4: cis: cis:_\crescmarkup cis: 
+		a'8: fis: fis: a: fis4: fis: 
+		fis:\ff fis: fis: fis: 
+		gis: gis: a: a: \mark #11
 % Bars 151 to 155
-		bes_\crescmarkup bes bes bes   bes bes bes bes   b b b b   b b b b
-		b b b b  b b b b  d d d d   d d d d 
-		cis\ffff cis cis cis   fis, fis a a   gis\> gis gis gis  a a b b\!
-		a\ff a d, d   d d fis! fis  f\> f f f  fis fis gis gis\!
-		fis\f fis fis fis  d d d d d4\> dis\!
+		bes:_\crescmarkup bes: b!: b: 
+		b: b: d: d: 
+		cis:\ffff fis,8: a: gis4:\> a8: b:\! 
+		a:\ff d,: d: fis: f4:\> fis8: gis:\! 
+		fis4:\f d: d4\> dis\! 
 % Bars 156 to 160
-		e4\mf\< e^\ten fis^\ten\> e^\simile\!
+		e4\mf e^\ten\< fis^\ten\> e^\simile\!
 		e\p e\< fis\> e\! \bar "||"
 	}
-	\unsetTimeSignature \time 4/4 fis4\fff c!2.~
+	\unsetTimeSignature \time 4/4 fis4-\offset X-offset -1 \fff c!2.~
 	c4 c2.
 	fis1~
 % Bars 161 to 165
 	fis4 fis2.
-	fis4. c8 fis4. fis8
+	fis4. c!8 fis4. fis8
 	fis4. c8 fis2
-	\tuplet 3/2 4 {b8\fff b b  b b b} b->[ b->] b-> b->
-	f-> f-> r4 r2
+	\tuplet 3/2 4 {\once \tupletUp b8\fff b b  b b b} b->[ b->] b-> b->
+	f!-> f-> r4 r2
 % Bars 166 to 170
 	b,2\mf r
 	b\p r
@@ -200,7 +207,7 @@ musicHornIIMvtII = \relative c {
 	e\> e e  e e e\!  f\< f f   f f f\!
 	e\> e e  e e e\!  gis\< gis gis   gis gis gis\!
 % Bars 176 to 180
-	e\> e e  e e e\!   fis\< fis fis  fis fis fis\!
+	e\> e e  e e e\!   f\< f f  f f f\!
 	a,\> a a  a a a\!  b2.\pp(
 	cis8) cis cis  a a a  b2.(
 	cis8) cis\pp cis  cis r r   cis cis cis  cis r r

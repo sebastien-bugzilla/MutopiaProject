@@ -10,7 +10,7 @@ musicHornIIIMvtIV = \relative c {
 	\transposition f
 	\section \sectionLabel Finale
 % Bars 1 to 5
-	R1*2
+	\mmrnDown R1*2
 	
 	dis'4\mf~ dis8 r e4~ e8 r
 	dis4~ dis8 r r4 dis8 r
@@ -106,7 +106,7 @@ musicHornIIIMvtIV = \relative c {
 	\ni \mmrPos #6 R1
 	\mmrPos #6 R
 % Bars 96 to 100
-	\mmrPos #6 R
+	\mmrPos #7 R
 	\mmrPos #6 R \no \mark \default
 	b,8\p r r4 r2
 	R1*7
@@ -117,7 +117,7 @@ musicHornIIIMvtIV = \relative c {
 	d d d d   d d d d
 	cis cis cis cis  d\< d d d
 	cis cis cis cis\! d\> d fis, fis
-	gis gis gis gis\! e\mf d' d d
+	gis gis gis gis e\mf d' d d
 % Bars 111 to 115
 	d d d d  d d d d
 	cis cis cis cis  d_\crescmarkup d d d
@@ -127,7 +127,7 @@ musicHornIIIMvtIV = \relative c {
 % Bars 116 to 120
 	fis fis fis fis   fis fis fis fis
 	fis\< fis fis fis   fis fis fis fis
-	fis fis fis fis\! fis4\fff b,
+	fis fis fis fis fis4-\offset X-offset -1 \fff b,
 	r b r b
 	r fis r b, 
 % Bars 121 to 125
@@ -279,7 +279,7 @@ musicHornIIIMvtIV = \relative c {
 	fis fis
 	fis g 
 	g g
-	\after 1*3/8 <>_\dimmarkup g1\sf~
+	\after 1*3/8 <>-\offset X-offset 0.5 _\dimmarkup g1\sf~
 	g~
 % Bars 276 to 280
 	g~
@@ -377,27 +377,27 @@ musicHornIIIMvtIV = \relative c {
 	bes bes r ees,
 % Bars 371 to 375
 	r ees r2
-	R1*14
+	R1*18
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
 % Bars 386 to 390
-	R1*4
+	
 	
 	
 	\mark \default
-	R1*7
+	R1*8
 % Bars 391 to 395
 	
 % Bars 396 to 400
 	
-	R1 \mark \default
-	R1*8
+	\mark \default
+	R1*16
 % Bars 401 to 405
 	
 % Bars 406 to 410
-	R1*8
+	
 % Bars 411 to 415
 	
 	
@@ -524,7 +524,7 @@ musicHornIIIMvtIV = \relative c {
 % Bars 516 to 520
 	cis r cis r
 	dis2\f b\ff
-	g4\fff a g b
+	g!4\fff a g b
 	g a g c
 	g a g b
 % Bars 521 to 525
@@ -548,7 +548,7 @@ musicHornIIIMvtIV = \relative c {
 % Bars 536 to 540
 	fis r r2
 	r r4 e
-	fis_\semprefff fis r2
+	\startMeasureCount fis_\semprefff fis r2
 	fis4 fis r2
 	fis4 fis r2
 % Bars 541 to 545
@@ -556,7 +556,7 @@ musicHornIIIMvtIV = \relative c {
 	fis4 fis r2
 	fis4 fis r2
 	fis4 fis r2
-	fis4 fis r2 \bar "||"
+	fis4 fis r2 \stopMeasureCount \bar "||"
 % Bars 546 to 550
 	\time 6/4 fis4 r r e r r
 	fis r r e r r

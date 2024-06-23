@@ -5,9 +5,10 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicHornIVMvtIII = \relative c {
-	\clef treble
+	\clefSpace #'(extra-space . 4) \clef treble
 	\key c \major
 	\transposition f
+	\section \sectionLabel Valse
 % Bars 1 to 5
 	r4 r b'\p^\ten
 	r r b^\ten
@@ -29,7 +30,7 @@ musicHornIVMvtIII = \relative c {
 % Bars 16 to 20
 	R2.
 	cis4\p cis cis
-	r4 fis,\p r
+	r4 fis,-\offset X-offset 0.5 \p r
 	fis8 r b r r4
 	R2.*8
 % Bars 21 to 25
@@ -37,7 +38,7 @@ musicHornIVMvtIII = \relative c {
 % Bars 26 to 30
 	
 	
-	\sonsbouchesgestopft e2\p\startTextSpan r4
+	\sonsbouchesgestopftColumn e2\p\startTextSpan r4
 	dis2 r4
 	e2 r4
 % Bars 31 to 35
@@ -53,7 +54,7 @@ musicHornIVMvtIII = \relative c {
 	
 	
 % Bars 41 to 45
-	\sonsbouchesgestopft dis2.\p\startTextSpan
+	\sonsbouchesgestopftColumn dis2.\p\startTextSpan
 	gis,
 	\after 2.*5/6 \! e'\<
 	b4\mf~ b8\stopTextSpan r r4 \mark \default
@@ -162,7 +163,7 @@ musicHornIVMvtIII = \relative c {
 	
 	
 	
-	\sonsbouchesgestopft e2\p\startTextSpan r4
+	\sonsbouchesgestopftColumn e2\p\startTextSpan r4
 	dis2 r4
 % Bars 171 to 175
 	e2 r4
@@ -178,7 +179,7 @@ musicHornIVMvtIII = \relative c {
 	
 % Bars 181 to 185
 	
-	\sonsbouchesgestopft dis2.\p\startTextSpan
+	\sonsbouchesgestopftColumn dis2.\p\startTextSpan
 	gis,
 	e'
 	b4~ b8\stopTextSpan r r4 \mark \default
@@ -207,8 +208,8 @@ musicHornIVMvtIII = \relative c {
 % Bars 216 to 220
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \mark \default
-	r4 c\f c
+	\mmrPos #-4 R \no \resetMarkSpace \mark \default
+	r4 c!\f c
 	c b_\pesante b
 % Bars 221 to 225
 	c b_\crescmarkup b

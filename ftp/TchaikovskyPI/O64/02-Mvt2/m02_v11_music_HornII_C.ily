@@ -196,7 +196,7 @@ musicHornIIMvtII = \relative c {
 	e\> e e  e e e\!  f\< f f   f f f\!
 	e\> e e  e e e\!  gis\< gis gis   gis gis gis\!
 % Bars 176 to 180
-	e\> e e  e e e\!   fis\< fis fis  fis fis fis\!
+	e\> e e  e e e\!   f\< f f  f f f\!
 	a,\> a a  a a a\!  b2.-\offset X-offset 1 \pp(
 	\stemUp \omitBeam cis8) cis cis  a a a  \stemDown b2.(
 	\stemUp \omitBeam cis8) cis\pp cis  cis r r   cis cis cis  cis r r

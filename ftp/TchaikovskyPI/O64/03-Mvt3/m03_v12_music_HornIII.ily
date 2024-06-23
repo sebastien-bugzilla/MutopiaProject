@@ -5,7 +5,7 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicHornIIIMvtIII = \relative c {
-	\clef treble
+	\clefSpace #'(extra-space . 4) \clef treble
 	\key c \major
 	\transposition f
 	\section \sectionLabel Valse
@@ -25,11 +25,11 @@ musicHornIIIMvtIII = \relative c {
 	\mark \default
 	r4 gis\p gis
 	r gis gis
-	R2.*2
+	R2.*4
 	
 % Bars 16 to 20
-	R2.
-	R
+	
+	
 	r4 fis\p r
 	fis8 r fis r r4
 	R2.*8
@@ -38,7 +38,7 @@ musicHornIIIMvtIII = \relative c {
 % Bars 26 to 30
 	
 	
-	\sonsbouchesgestopft fis2\p\startTextSpan r4
+	\sonsbouchesgestopftColumn fis2\p\startTextSpan r4
 	b2 r4
 	fis2 r4
 % Bars 31 to 35
@@ -49,12 +49,12 @@ musicHornIIIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	\mark \default
-	R2.*4
+	R2.*8
 	
 	
 	
 % Bars 41 to 45
-	R2.*4
+	
 	
 	
 	\mark \default
@@ -64,7 +64,7 @@ musicHornIIIMvtIII = \relative c {
 	\ni \mmrPos #-6 R2.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 % Bars 51 to 55
 	e2.\mf
 	fis4->~ fis8 r r4
@@ -84,7 +84,7 @@ musicHornIIIMvtIII = \relative c {
 	\mmrPos #-7 R
 % Bars 71 to 75
 	\mmrPos #4 R \no
-	r4 b,8\f r r4
+	\voiceOne r4 \oneVoice b,8\f r r4
 	R2.*8
 % Bars 76 to 80
 	
@@ -154,11 +154,11 @@ musicHornIIIMvtIII = \relative c {
 	\mmrPos #-6 R \no \mark #11
 	r4 gis\p gis
 	r gis gis
-	R2.*2
+	R2.*4
 % Bars 156 to 160
 	
-	R2.
-	R
+	
+	
 	r4 fis\p r
 	fis8 r fis r r4
 % Bars 161 to 165
@@ -167,7 +167,7 @@ musicHornIIIMvtIII = \relative c {
 	
 	
 	
-	\sonsbouchesgestopft fis2\p\startTextSpan r4
+	\sonsbouchesgestopftColumn fis2\p\startTextSpan r4
 	b2 r4
 % Bars 171 to 175
 	fis2 r4
@@ -178,10 +178,10 @@ musicHornIIIMvtIII = \relative c {
 % Bars 176 to 180
 	
 	\mark \default
-	R2.*4
+	R2.*8
 % Bars 181 to 185
 	
-	R2.*4
+	
 	
 	
 	\mark \default
@@ -215,7 +215,7 @@ musicHornIIIMvtIII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\voiceTwo \mmrPos #-4 R \no \mark \default
-	r4 \oneVoice c\f c
+	r4 \oneVoice c!\f c
 	c b_\pesante b
 % Bars 221 to 225
 	c b_\crescmarkup b

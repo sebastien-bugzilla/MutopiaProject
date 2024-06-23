@@ -9,7 +9,7 @@ musicHornIVMvtI = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R1*19
+	\mmrLength #19 \mmrnDown R1*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,7 +29,7 @@ musicHornIVMvtI = \relative c {
 % Bars 36 to 40
 	
 	\ni R1\fermata \no \bar "||" \time 6/8
-	R2.*15
+	\mmrnDown R2.*15
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -42,7 +42,7 @@ musicHornIVMvtI = \relative c {
 	\mmrPos #-7 R
 % Bars 56 to 60
 	\mmrPos #-4 R \no \mark \default
-	fis4.~->\mp\> fis8\! r r
+	\hairpinShorten #'(-0.5 . -0.5) fis4.~->\mp\> fis8\! r r
 	fis8\p r r r4 r8
 	fis r r r4 r8
 	fis r r b r r
@@ -51,7 +51,7 @@ musicHornIVMvtI = \relative c {
 	d\p r r b r r
 	b r r r4 r8
 	r4 r8 b r r
-	d r r r d\mf dis \mark \default 
+	d r r r d\mf dis \markXoffset #-0 \mark \default 
 % Bars 66 to 70
 	e8 r r r4 r8
 	r4 r8 r a,(\p a)
@@ -75,11 +75,11 @@ musicHornIVMvtI = \relative c {
 	b( cis b a) gis fis
 	f!( fis gis a) e d \mark \default
 	cis r r r4 r8
-	R2.
+	R2.*3
 % Bars 86 to 90
-	R2.
-	R2.
-	r4 r8 cis8._\sempreff cis16 cis8
+	
+	
+	r4 r8 cis8.-\offset X-offset -3 _\sempreff cis16 cis8
 	fis8. fis16 fis8 cis8. cis16 cis8
 	R2.*4
 % Bars 91 to 95
@@ -113,23 +113,25 @@ musicHornIVMvtI = \relative c {
 	e4 e,8 f!4 f8 \mark \default
 	fis4 a8 gis r r
 % Bars 116 to 120
-	R2.*15
+	R2.*12
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
+	
+	\mmrLength #15 \mmrnDown R2.*3
 % Bars 131 to 135
 	\ni \mmrPos #-6 R2.
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no
-	fis4.\mf\> fis\!
-	\after 2.*5/6 \! cis2.\p\<
+	\hairpinShorten #'(-0.5 . -1) fis4.\mf\> fis\!
+	\hairpinShorten #'(-0.5 . -1) \after 2.*5/6 \! cis2.\p\<
 % Bars 136 to 140
 	R2.*2
 	
 	fis4.\f\> fis\!
-	\after 2.*5/6 \! cis2.\mf\> \mark \default
-	d4.\p-> cis
+	cis2.-\offset X-offset 0.5 \mf\> \mark \default
+	d4.\p^> cis
 % Bars 141 to 145
 	b2.\>
 	cis4.->\pp b
@@ -139,37 +141,30 @@ musicHornIVMvtI = \relative c {
 % Bars 146 to 150
 	fis4. r4 r8
 	e4. r4 r8
-	fis2.\pp
+	fis2.-\tweak extra-offset #'(-3.7 . -8.5) ^\pp
 	R2.
 	fis\p
 % Bars 151 to 155
-	R2.*6
+	R2.
+	\mmrLength #22 \mmrnDown R2.*18
 % Bars 156 to 160
 	
-	R2.
-	R2.*3
-	
-	
 % Bars 161 to 165
-	R2.
-	R2.*3
 	
-	
-	R2.
 % Bars 166 to 170
-	R2.*3
 	
 	
-	R2.
-	R2.*4
+	
+	
+	\mmrnDown R2.*4
 % Bars 171 to 175
 	
 	
 	
-	\ni \mmrPos #6 R2.
-	\mmrPos #6 R
+	\ni \mmrPos #-8 R2.
+	\mmrPos #-8 R
 % Bars 176 to 180
-	\mmrPos #6 R \no
+	\mmrPos #-8 R \no
 	b2.\p\<
 	cis\f
 	R2.*3
@@ -183,12 +178,12 @@ musicHornIVMvtI = \relative c {
 % Bars 186 to 190
 	cis4\f cis8~ cis cis4
 	cis cis8~ cis cis4
-	d4_\pcrescmolto d8~ d a'4
+	\tempoXoffset #-2 d4_\pcrescmolto d8~ d a'4
 	gis4 gis8~ gis gis4
 	e_\mfcresc e8 d d4
 % Bars 191 to 195
 	dis dis8 d d4
-	cis4_\fcresc cis8~ cis cis cis
+	cis4-\tweak extra-offset #'(0 . -8.8) ^\fcresc cis8~ cis cis cis
 	d4 d8~ d a'4
 	cis,8[\fff r16 cis cis8] cis e a
 	b a e cis e a
@@ -203,7 +198,7 @@ musicHornIVMvtI = \relative c {
 	e'8[\fff r16 e e8] e e e
 	e e e  e e e
 	R2.
-	r4 e8~\f\< e4 dis8\!
+	r4 e8~-\offset X-offset -1.5 \f\< e4 dis8\!
 % Bars 206 to 210
 	e8[\fff r16 e e8] e e e
 	r4 r8 r4 e8\ff
@@ -226,16 +221,12 @@ musicHornIVMvtI = \relative c {
 	
 	g4\p g8 g4 g8
 	g4 g8 g4 g8
-	R2.*6
+	R2.*7
 % Bars 226 to 230
 	
-	
-	
-	
-	R2.
 % Bars 231 to 235
 	c8\mf r r r4 r8
-	r4 r8 r4 c8\mf
+	r4 r8 r4 c8-\offset X-offset -3 \mf
 	c4.~ c8 r r
 	R2.*5
 % Bars 236 to 240
@@ -270,9 +261,9 @@ musicHornIVMvtI = \relative c {
 	a8[ r16 a a8] c,8. c16 c8
 % Bars 266 to 270
 	a'8[ r16 a a8] c,8. c16 c8
-	f,8._\ffdim f16 f8 f8. f16 f8
+	\startMeasureCount f,!8.\ff f16_\dimmarkup f8 f8. f16 f8
 	f8.\> f16 f8 f8. f16 f8\! \mark \default
-	f8.\mf f16 f8 f8. f16 f8
+	f8.-\offset X-offset -1 \mf f16 f8 f8. f16 f8
 	f8. f16 f8 f8. f16 f8
 % Bars 271 to 275
 	f8. f16 f8 f8. f16 f8
@@ -281,21 +272,13 @@ musicHornIVMvtI = \relative c {
 	f8. f16 f8 f8. f16 f8
 	f8. f16 f8 f8. f16 f8
 % Bars 276 to 280
-	f8. f16 f8 f8. f16 f8
+	f8. f16 f8 f8. f16 f8 \stopMeasureCount
 	des'8 r r r4 r8
-	R2.*6
+	R2.*15
 % Bars 281 to 285
 	
-	
-	
-	R2.*2
-	
 % Bars 286 to 290
-	R2.*3
 	
-	
-	R2.
-	R2.*3
 % Bars 291 to 295
 	
 	\mark \default
@@ -339,7 +322,7 @@ musicHornIVMvtI = \relative c {
 % Bars 331 to 335
 	
 % Bars 336 to 340
-	\ni \mmrPos #4 R2. \no \mark \default
+	\ni \mmrPos #4 R2. \no \markXoffset #-0.1 \mark \default
 	fis8\p r r r4 r8
 	fis r r r4 r8
 	fis r r b r r
@@ -383,25 +366,29 @@ musicHornIVMvtI = \relative c {
 % Bars 371 to 375
 	fis4 fis8 e4 e8
 	dis4 d8 dis r r
-	R2.*16
+	\mmrnDown R2.*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
+	
+	
+	
+	\mmrLength #15 \mmrnDown R2.*3
 % Bars 386 to 390
 	
 	
-	
+	\mmrnDown R2.
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R
 % Bars 391 to 395
 	\mmrPos #-4 R \no
-	\after 2.*5/6 \! g'2.\p\<
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! g'2.\p\<
 	R2.*3
 	
 	
 % Bars 396 to 400
-	\after 2.*5/6 \! g2.\mf\> \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! g2.\mf\> \mark \default
 	R2.*12
 % Bars 401 to 405
 	
@@ -416,21 +403,22 @@ musicHornIVMvtI = \relative c {
 	b8 b4 b8 b4
 	R2.*2
 	
-	b8\f b4 b8 b4
+	b8-\offset X-offset -2 \f b4 b8 b4
 % Bars 416 to 420
 	b8 b4 b8 b4
 	R2.*2
 	
-	b8\f b4 b8 b4
+	b8-\offset X-offset -2 \f b4 b8 b4
 	b8 b4 b8 b4
 % Bars 421 to 425
 	R2.*2
 	
 	b8\f b4 b8 b4
 	b8 b4 b8 b4 
-	R2.*9
+	R2.*2
 % Bars 426 to 430
 	
+	\mmrLength #14 R2.*7
 % Bars 431 to 435
 	
 	
@@ -438,7 +426,7 @@ musicHornIVMvtI = \relative c {
 	cis2.\p\<
 	dis\f
 % Bars 436 to 440
-	R2.*3
+	\mmrLength #13 R2.*3
 	
 	\mark \default
 	r8 fis4_\pcresc~ fis8 fis'( fis,)
@@ -531,7 +519,7 @@ musicHornIVMvtI = \relative c {
 	d r r dis'\f r r
 	cis r r cis r r
 	b r r dis r r
-	cis r r cis r r \mark \markAaBox
+	cis r r cis r r \resetMarkSpace \mark \markAaBox
 	b r r d,\mf r r
 % Bars 516 to 520
 	b_\dimmarkup r r e r r

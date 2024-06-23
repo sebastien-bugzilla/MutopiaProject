@@ -10,7 +10,7 @@ musicHornIVMvtIV = \relative c {
 	\transposition f
 	\section \sectionLabel Finale
 % Bars 1 to 5
-	R1*2
+	\mmrnDown R1*2
 	
 	fis4\mf~ fis8 r b4~ b8 r
 	fis4~ fis8 r r4 gis8 r
@@ -25,7 +25,7 @@ musicHornIVMvtIV = \relative c {
 	e4\mf~ e8 r e4~ e8 r
 	dis2~ dis8 r gis,\f r
 	ais r b r ais\> r gis\! r
-	fis\< r gis r ais\! r b\f r
+	fis-\tweak extra-offset #'(0 . 0.5) \< r gis r ais\! r b\f r
 	cis8 r b r ais r b r \mark \default
 % Bars 16 to 20
 	ais r r4 r2
@@ -73,7 +73,7 @@ musicHornIVMvtIV = \relative c {
 % Bars 56 to 60
 	
 	\bar "||"
-	\time 2/2 R1*2
+	\time 2/2 \mmrnDown R1*2
 	
 	d8\f r r4 r2
 % Bars 61 to 65
@@ -120,21 +120,21 @@ musicHornIVMvtIV = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	d,8\mf d d d   d d d d
-	d d d d   d d d d
-	cis cis cis cis  d\< d d d
-	cis cis cis cis\! d\> d d d
-	d d d d\! d\mf d d d
+	d,2:8\mf d: 
+	d: d: 
+	cis: d:\< 
+	cis:\! d:\> 
+	d:\! d:\mf 
 % Bars 111 to 115
-	d d d d  d d d d
-	cis cis cis cis  d_\crescmarkup d d d
-	cis cis cis cis  d d d d  \mark \default
-	d\ff[ d'] cis cis  b b a a
-	gis gis g g  fis fis fis fis
+	d: d: 
+	cis: d:_\crescmarkup 
+	cis: d: \mark \default
+	d8-\offset X-offset -1.5 \ff[ d'] cis4:8 b: a:
+	gis: g! fis2:
 % Bars 116 to 120
-	e' e d d    cis cis b b
-	ais\< ais gis gis   fis fis fis fis
-	fis fis fis fis\! b4\fff b,
+	e'4: d: cis: b:
+	ais:\< gis: fis2: 
+	fis:\! b4-\offset X-offset -1 \fff b,
 	r b r b
 	r b r fis
 % Bars 121 to 125
@@ -189,9 +189,9 @@ musicHornIVMvtIV = \relative c {
 	r g8\ff r r4
 	r2 c8 r c8 c
 	g8 r r4 g8 r r4
-	R1
+	R1*2
 % Bars 176 to 180
-	R
+	
 	g2. g8 g
 	g r r4 b8 r r4
 	r2 e \mark \default
@@ -209,8 +209,8 @@ musicHornIVMvtIV = \relative c {
 	r2 c8 r c8 c
 	g8 r r4 g8 r r4
 % Bars 191 to 195
-	R1
-	R
+	R1*2
+	
 	g2. g8 g
 	g8 r r4 b8 r r4
 	r2 cis
@@ -243,7 +243,7 @@ musicHornIVMvtIV = \relative c {
 	d4 g, g g,
 	g'8 r r4 r2
 	R1
-	g,8\f r r4 r2
+	g,8-\offset X-offset -2 \f r r4 r2
 % Bars 221 to 225
 	b'2. g4
 	d r r2
@@ -287,7 +287,7 @@ musicHornIVMvtIV = \relative c {
 	fis fis
 	fis g 
 	g g
-	\after 1*3/8 <>_\dimmarkup g1\sf~
+	\after 1*3/8 <>-\offset X-offset 1 _\dimmarkup g1\sf~
 	g~
 % Bars 276 to 280
 	g~
@@ -328,13 +328,13 @@ musicHornIVMvtIV = \relative c {
 	e8 r d4(\sf cis)\mf e(\sf
 	b)\mf d(\sf a)\mf cis(\sf
 	g)\mf d'(\sf cis)\mf e(\sf
-	b)\mf d(\sf a)\mf cis(\sf
+	b)\mf d(\sf a)-\tweak extra-offset #'(0.3 . 0.6) \mf cis(\sf
 % Bars 316 to 320
 	g8)\mf r d'4\ff d d
 	d g fis g
 	d r r2
 	r4 g fis g
-	d8 r r4 r b'\ff
+	d8 r r4 r b'-\offset X-offset 0.5 \ff
 % Bars 321 to 325
 	fis r r2
 	r4 g d r
@@ -356,31 +356,31 @@ musicHornIVMvtIV = \relative c {
 % Bars 346 to 350
 	
 	
-	d,8\mf d d d  d d d d
-	d d d d  d d d d
-	cis\< cis cis cis  d d d d
+	d,2:8\mf d:
+	d: d:
+	cis:\< d: 
 % Bars 351 to 355
-	cis cis cis cis\! d\> d d d
-	d d d d  d d d d\!
-	d d d d  d d d d
-	cis cis cis cis  d_\crescmarkup d d d
-	cis cis cis cis  d d d d \mark \default
+	cis:\! d:\>
+	d: d:\! 
+	d: d:
+	cis: d:_\crescmarkup
+	cis: d: \mark \default
 % Bars 356 to 360
-	d[\ff d'] cis cis   b b a a
-	gis gis g g  fis fis e e
-	cis cis cis cis  e e e e
-	e e e e   b b b ais
-	b d\ff d d    cis cis b b
+	d8[\ff d'] cis4:8 b: a: 
+	gis: g: fis: e: 
+	cis2: e: 
+	e: b8 b b ais 
+	b d\ff d d cis4:8 b: 
 % Bars 361 to 365
-	e e d d   cis cis cis cis
-	dis dis dis dis   fis fis fis fis
-	fis fis fis fis   cis cis dis dis
-	cis e e e   dis dis cis cis
-	fis fis e e   dis dis dis dis
+	e: d: cis2:
+	dis: fis: 
+	fis: cis4: dis: 
+	cis8 e e e dis4:8 cis: 
+	fis: e: dis2: 
 % Bars 366 to 370
-	f! f f f  aes aes aes aes
-	aes aes aes aes  ees ees f f \mark \default
-	ees r ees2\fff ees4~
+	f!: aes: 
+	aes: ees4: f: \mark \default 
+	ees8 r ees2\fff ees4~
 	ees ees2 ees4~
 	ees ees r bes
 % Bars 371 to 375
@@ -507,7 +507,7 @@ musicHornIVMvtIV = \relative c {
 	cis fis ais gis
 	fis gis ais dis,8. eis16
 	fis4 b cis, eis
-	cis8 r r4 r2 \mark \markAaBox
+	cis8 r r4 r2 \resetMarkSpace \mark \markAaBox
 	fis,4\fff fis b b
 % Bars 491 to 495
 	fis fis fis fis
@@ -517,14 +517,14 @@ musicHornIVMvtIV = \relative c {
 	dis dis dis gis
 % Bars 496 to 500
 	fis gis fis d!
-	dis8^\marcatissimo gis fis gis fis4 d!
-	dis8 gis fis gis fis4 d! \mark \markBbBox
+	dis8-\offset X-offset -2 ^\marcatissimo gis fis gis fis4 d!
+	dis8 gis fis gis fis4 d! \resetMarkSpace \mark \markBbBox
 	dis8 ais' gis gis fis e dis e
 	dis dis e d dis e f! g!
 % Bars 501 to 505
 	gis4 gis fis b,
 	b8. gis'16 fis4~ fis8 fis fis dis
-	cis2\sfff fis\sfff \bar "||"
+	\noteHeadEsw #'(1.8 . 1.8) cis2-\tweak extra-offset #'(-1 . 0) \sfff fis\sfff \bar "||" \revertNoteHeadEsw
 	\time 2/2 b,4 r fis'\p r
 	fis r dis r
 % Bars 506 to 510
@@ -534,14 +534,14 @@ musicHornIVMvtIV = \relative c {
 	dis2\f b\ff
 	fis'4\fff r gis r
 % Bars 511 to 515
-	dis r e r \mark \markCcBox
+	dis r e r \resetMarkSpace \mark \markCcBox
 	dis r fis\p r
 	fis r dis r
 	cis_\crescmarkup r fis r
 	e r gis r
 % Bars 516 to 520
 	fis r e r
-	dis2\f b\ff
+	dis2-\tweak extra-offset #'(0 . 0.3) \f b-\tweak extra-offset #'(0.5 . 0.3) \ff
 	b4\fff d!2.
 	g,4 c2 g4
 	b d2.
@@ -550,7 +550,7 @@ musicHornIVMvtIV = \relative c {
 	d' g r d
 	dis dis r b
 	c c r c
-	cis cis r cis \mark \markDdBox
+	cis cis r cis \resetMarkSpace \mark \markDdBox
 % Bars 526 to 530
 	cis r fis2~
 	fis g~
@@ -566,7 +566,7 @@ musicHornIVMvtIV = \relative c {
 % Bars 536 to 540
 	fis r r2
 	r r4 e
-	fis_\semprefff fis r2
+	\startMeasureCount fis_\semprefff fis r2
 	fis4 fis r2
 	fis4 fis r2
 % Bars 541 to 545
@@ -574,7 +574,7 @@ musicHornIVMvtIV = \relative c {
 	fis4 fis r2
 	fis4 fis r2
 	fis4 fis r2
-	fis4 fis r2 \bar "||"
+	fis4 fis r2 \stopMeasureCount \bar "||"
 % Bars 546 to 550
 	\time 6/4 dis'4 r r e, r r
 	fis r r e r r
@@ -584,7 +584,7 @@ musicHornIVMvtIV = \relative c {
 % Bars 551 to 555
 	fis r r e r r
 	fis r r e r r
-	fis r r e r r \mark \markEeBox
+	fis r r e r r \resetMarkSpace \mark \markEeBox
 	fis r r r2.
 	fis4 r r r2.
 % Bars 556 to 560

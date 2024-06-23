@@ -5,6 +5,7 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicHornIMvtIII = \relative c {
+	\clefSpace #'(extra-space . 4)
 	\clef treble
 	\key c \major
 	\transposition f
@@ -38,7 +39,7 @@ musicHornIMvtIII = \relative c {
 % Bars 26 to 30
 	
 	
-	\sonsbouchesgestopft fis2\p\startTextSpan r4
+	\sonsbouchesgestopftColumn fis2\p\startTextSpan r4
 	b2 r4
 	fis2 r4
 % Bars 31 to 35
@@ -49,12 +50,12 @@ musicHornIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	\mark \default
-	R2.*4
+	R2.*8
 	
 	
 	
 % Bars 41 to 45
-	R2.*4
+	
 	
 	
 	\mark \default
@@ -64,7 +65,7 @@ musicHornIMvtIII = \relative c {
 	\ni \mmrPos #-6 R2.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 % Bars 51 to 55
 	e2.\mf
 	fis4->~ fis8 r r4
@@ -85,25 +86,25 @@ musicHornIMvtIII = \relative c {
 % Bars 71 to 75
 	\mmrPos #4 R \no
 	\once \voiceOne r4 e8\f r r4
-	R2.
-	R
+	R2.*2
+	
 	c2.\p\<
 % Bars 76 to 80
-	\after 2.*5/6 \p cis\mf\>
-	R2.
-	R
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \p cis-\offset X-offset -1 \mf\>
+	R2.*2
+	
 	c2.\p\<
 	cis\mf\>~ \mark \default
 % Bars 81 to 85
 	cis8\p r r4 r
 	R2.
 	r4 r fis,8\mp r
-	fis2\mf\> r4\!
-	R2.
+	\hairpinShorten #'(-0.5 . -0.5) fis2\mf\> r4\!
+	R2.*2
 % Bars 86 to 90
-	R
+	
 	r4 r fis8\mp r
-	fis2\mf\> r4\!
+	\hairpinShorten #'(-0.5 . -0.5) fis2\mf\> r4\!
 	R2.
 	r4 r fis->\p(
 % Bars 91 to 95
@@ -123,8 +124,8 @@ musicHornIMvtIII = \relative c {
 % Bars 106 to 110
 	R2.
 	r8 cis-.\noBeam cis-. cis-. r4
-	R2.
-	R2.*3
+	R2.*4
+	
 	
 % Bars 111 to 115
 	
@@ -140,28 +141,28 @@ musicHornIMvtIII = \relative c {
 	r4 r dis(->
 % Bars 121 to 125
 	e8) r r4 r
-	R2.*4
+	R2.*7
 	
 	
 	
 % Bars 126 to 130
-	R2.*2
 	
-	R2.
-	c\mf\<
+	
+	
+	c2.\mf\<
 	\after 2.*5/6 \! cis\f\>
 % Bars 131 to 135
-	R2.
-	R
-	c\mf\<
+	R2.*2
+	
+	c2.\mf\<
 	\after 2.*5/6 \! cis\f\>~
 	cis8 r r4 r
 % Bars 136 to 140
 	R2.
 	r4 r fis,8\mf r
 	fis2\f\> r4\!
-	R2.
-	R
+	R2.*2
+	
 % Bars 141 to 145
 	r4 r fis8\mf r \mark \default
 	fis\f r r4 r
@@ -169,15 +170,15 @@ musicHornIMvtIII = \relative c {
 	r4 r b4->\p~
 	b8\pp r r4 r
 % Bars 146 to 150
-	R2.
-	R2.*2
+	R2.*7
 	
-	R2.*4
+	
+	
 	
 % Bars 151 to 155
 	
 	\mark #11
-	r4 b\p b
+	r4 b-\offset X-offset 0.6 \p b
 	r b b
 	fis(\< ais cis)\!
 % Bars 156 to 160
@@ -192,7 +193,7 @@ musicHornIMvtIII = \relative c {
 	
 	
 	
-	\sonsbouchesgestopft fis2\p\startTextSpan r4
+	\sonsbouchesgestopftColumn fis2\p\startTextSpan r4
 	b2 r4
 % Bars 171 to 175
 	fis2 r4
@@ -203,12 +204,12 @@ musicHornIMvtIII = \relative c {
 % Bars 176 to 180
 	
 	\mark \default
-	R2.*4
+	R2.*8
 	
 	
 % Bars 181 to 185
 	
-	R2.*4
+	
 	
 	
 	\mark \default
@@ -245,8 +246,8 @@ musicHornIMvtIII = \relative c {
 % Bars 216 to 220
 	d!\<
 	dis
-	\after 2.*5/6 \! e\mf\<~ \mark \default
-	e8 r e4\f e
+	e\mf\<~ \mark \default
+	e8\! r e4\f e
 	e f_\pesante f
 % Bars 221 to 225
 	e f_\crescmarkup f
@@ -262,8 +263,8 @@ musicHornIMvtIII = \relative c {
 	d!\<
 % Bars 231 to 235
 	dis
-	\after 2.*5/6 \! e\mf\<~
-	e8 r e4\f e
+	e\mf\<~
+	e8\! r e4\f e
 	e f_\pesante f
 	e f_\crescmarkup f
 % Bars 236 to 240

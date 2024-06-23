@@ -9,15 +9,15 @@ musicHornIVMvtII = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R1.*15
+	\mmrLength #34 \mmrnDown R1.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	R1.*2
 	
-	
-	\mark \default
+	<< R1. { s2. \tempoXoffset #-2 s} >> \mark \default
 % Bars 16 to 20
 	R1.*12
 % Bars 21 to 25
@@ -37,9 +37,9 @@ musicHornIVMvtII = \relative c {
 % Bars 36 to 40
 	
 	R1.
-	\ni \mmrPos #4 R1.
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\ni \mmrPos #-7 R1.
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 41 to 45
 	r2. dis'4.\f r4 r8
 	r2. dis
@@ -50,7 +50,7 @@ musicHornIVMvtII = \relative c {
 	a'8_\pcresc a a   a a a  cis, cis cis  cis cis cis
 	fis\mf\< fis fis  fis fis fis\!  fis r r   r4 r8
 	d\mf\> d d   b b b   b b b  b b b\!
-	a\pp r r r4 r8 r2.
+	a-\offset X-offset -2.5 \pp r r r4 r8 r2.
 	a'8\p\< a a   a a a  cis, cis cis  cis cis cis\!
 % Bars 51 to 55
 	fis\mf fis fis  fis fis fis  a a a  a fis fis \mark \default
@@ -62,8 +62,8 @@ musicHornIVMvtII = \relative c {
 	cis\fff cis cis   cis,\> cis c\!   b\ff\> b b  a a b\!
 	d\f\> d d   a4 b8  cis4. dis4 eis8\!
 	fis\mf fis fis  d d d  d4.\> dis
-	e\! cis\p\< c\> b\!
-	a\p\< cis c\> b\!
+	e\! \hairpinShorten #'(-0.5 . -0.5) cis\p\< \hairpinShorten #'(0.5 . 0) c\> b\!
+	a\p cis\< c\> b\!
 % Bars 61 to 65
 	cis8\p cis cis  cis cis cis  cis8 r r  r4 r8
 	cis cis cis  cis cis cis  cis r r r4 r8
@@ -71,7 +71,7 @@ musicHornIVMvtII = \relative c {
 	R1.*2
 	\bar "||" 
 % Bars 66 to 70
-	\time 4/4 R1*7
+	\time 4/4 \mmrnDown R1*7
 % Bars 71 to 75
 	
 	
@@ -80,12 +80,12 @@ musicHornIVMvtII = \relative c {
 	b8\mf b4 b8~ b b4 b8
 % Bars 76 to 80
 	r2 gis'8 gis( b,4)(
-	f'8)\mf[ f]( fis) fis( gis) gis4 gis8(
+	f'!8)\mf[ f]( fis) fis( gis) gis4 gis8(
 	dis)[ dis]( g! gis) r2
 	cis,8\mf cis4 cis8~ cis cis4 cis8
 	r2 bes'8 bes des,4(
 % Bars 81 to 85
-	g8)[ g]( aes) aes( bes) bes4 bes8(
+	g!8)[ g]( aes) aes( bes) bes4 bes8(
 	f) f( a! bes) r2 \mark \default
 	R1*4
 	
@@ -123,17 +123,17 @@ musicHornIVMvtII = \relative c {
 	
 	
 	
-	\mark \default
+	\markXoffset #-0.1 \mark \default
 % Bars 116 to 120
-	R1.*2
+	\mmrLength #20 R1.*2
 	
 	\ni \mmrPos #4 R1. \no
-	\voiceTwo r4 r8 \oneVoice cis4.->\mf~ \after 4.*2/3 \! cis\> r4 r8
+	\voiceTwo r4 r8 \oneVoice cis4.->\mf~ cis\> r4\! r8
 	ais4.\p~ ais8 r r b4.->~ b8 r r
 % Bars 121 to 125
 	gis4.\p~ gis8 r r a!4.->~ a8 r r
 	a4.\<~ a8 r r cis4.(~ cis4 b8)\!
-	\after 4.*2/3 \! a4.\mf\> r4 r8 r2. \mark \default
+	\hairpinShorten #'(-0.5 . -1.5) \after 4.*2/3 \! a4.\mf\> r4 r8 r2. \mark \default
 	a4.\p( ais  b8) r r r4 r8
 	g!4.( gis a8) r r r4 r8
 % Bars 126 to 130
@@ -146,7 +146,7 @@ musicHornIVMvtII = \relative c {
 % Bars 131 to 135
 		e\f cis \after 2*3/4 \! e2\>
 		d2\mf \tuplet 3/2 4 {d8( cis d)} d4
-		e8(_\crescmarkup cis~ cis4) c8( cis~ cis4)
+		e8(-\offset X-offset 3 _\crescmarkup cis~ cis4) c8( cis~ cis4)
 	}
 	\timeSignature 12/8 cis4.\f cis cis r4 r8
 	cis4. cis cis r4 r8
@@ -159,25 +159,25 @@ musicHornIVMvtII = \relative c {
 % Bars 141 to 145
 	e d4 cis b8~ b r r r4 r8
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		cis'16\ff cis,\f cis cis   cis cis cis cis  d d d d   cis cis b b
-		cis cis cis cis  cis cis cis cis  cis_\crescmarkup cis cis cis   cis cis cis cis
-		a' a fis fis   fis fis a a   fis\ff fis a a  cis, cis cis cis
-		fis fis fis fis   fis fis fis fis   fis fis fis fis  d d d d
+		cis'16-\offset X-offset -2 \ff cis,\f cis cis cis4:16 d: cis8: b:
+		cis4: cis: cis:_\crescmarkup cis:
+		a'8: fis: fis: a: fis:\ff a: cis,4:
+		fis: fis: fis: d:
 % Bars 146 to 150
-		e\fff cis\f cis cis  cis cis cis cis  d d d d  cis cis b b
-		cis cis cis cis  cis cis cis cis  cis_\crescmarkup cis cis cis   cis cis cis cis
-		a' a fis fis   fis fis a a  fis fis fis fis   fis fis fis fis
-		fis\ff fis fis fis  fis fis fis fis  fis fis fis fis  fis fis fis fis
-		gis gis gis gis  gis gis gis gis  a a a a   a a a a \mark #11
+		e16-\offset X-offset -1.5 \fff cis\f cis cis cis4:16 d: cis8: b:
+		cis4: cis: cis: cis:
+		a'8: fis: fis: a: fis4: fis:
+		fis:\ff fis: fis: fis:
+		gis: gis: a: a: \mark #11
 % Bars 151 to 155
-		bes_\crescmarkup bes bes bes   bes bes bes bes  b fis fis fis  f f f f
-		f f f f   f f f f  fis fis fis fis  fis fis fis fis
-		fis\ffff fis fis fis   fis fis a a  gis\> gis gis gis  a a b b\!
-		a\ff a d, d  d d fis fis  f\> f f f   fis fis gis gis\!
-		b,\f b b b   b b b b  b4\> c!\!
+		bes:_\crescmarkup bes: b16 fis fis fis f4:16
+		f: f: fis: fis:
+		fis:\ffff fis8: a: gis4:\> a8: b:\!
+		a:\ff d,: d: fis: f4:\> fis8: gis:\!
+		b,4:\f b: b4\> c!\!
 % Bars 156 to 160
-		cis\mf\< cis^\ten c\>^\ten b^\simile\!
-		a\p\< cis c\> b\! \bar "||"
+		\hairpinShorten #'(-0.5 . 1) cis\mf\< cis^\ten \hairpinShorten #'(-1 . 0) c\>^\ten b^\simile\!
+		a\p cis\< c\> b\! \bar "||"
 	}
 	\unsetTimeSignature \time 4/4 c4\fff a2.~
 	a4 a2.
@@ -187,22 +187,22 @@ musicHornIVMvtII = \relative c {
 	c4. c8 c4. fis8
 	c4. c8 c2
 	\tuplet 3/2 4 {b'8\fff b b  b b b} b->[ b->] b-> b->
-	f-> f-> r4 r2
+	f!-> f-> r4 r2
 % Bars 166 to 170
 	a,2\mf r
 	a\p r
 	R1
 	a4\pp a r2 \bar "||"
-	\time 12/8 a8\pp a a  a a a  a a a  a a a 
+	\time 12/8 a4.:8\pp a: a: a:
 % Bars 171 to 175
-	a\pp a a  a a a  b b b  b b b
-	a a a  a a a   b b b  b b b
-	a a a  a a a  f'\< f f  f f f\!
-	a,\> a a  cis cis cis\!  d\< d d   d d d\!
-	a\> a a   a a a\! f'\< f f  f f f\!
+	a:\pp a: b: b:
+	a: a: b: b:
+	a: a: f':\< f:\!
+	a,:\> cis:\! d:\< d:\!
+	a:\> a:\! f':\< f:\!
 % Bars 176 to 180
-	a,\> a a  cis cis cis\!  d\< d d   d d d\!
-	e,\> e e  e e e\! e2.\pp(
+	a,:\> cis:\! d:\< d:\!
+	e,:\> e:\! e2.\pp(
 	e8) e e  e e e e2.(
 	e8) a\pp a  a r r  a a a  a r r
 	a\ppp a a r4 r8  a a a r4 r8

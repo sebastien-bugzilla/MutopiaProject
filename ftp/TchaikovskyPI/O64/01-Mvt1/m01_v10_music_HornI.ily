@@ -9,7 +9,7 @@ musicHornIMvtI = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R1*19
+	\mmrLength #20 \mmrnDown R1*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,7 +29,7 @@ musicHornIMvtI = \relative c {
 % Bars 36 to 40
 	
 	\ni R1\fermata \no \bar "||" \time 6/8
-	R2.*15
+	\mmrLength #32 \mmrnDown R2.*15
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -39,9 +39,9 @@ musicHornIMvtI = \relative c {
 	
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R
-	\mmrPos #7 R
+	\mmrPos #-7 R
 % Bars 56 to 60
-	\mmrPos #7 R \mark \default
+	\mmrPos #-6 R \mark \default
 	\mmrPos #4 R2. \no
 	fis'8\p r r g r r
 	fis r r g r r
@@ -59,8 +59,8 @@ musicHornIMvtI = \relative c {
 	r4 r8 r fis\mf fis 
 	e r r r4 r8
 % Bars 71 to 75
-	R2.
-	R2.
+	R2.*2
+	
 	r4 r8 r fis\mf fis
 	e r r r4 r8
 	R2.*2
@@ -68,11 +68,11 @@ musicHornIMvtI = \relative c {
 	
 	r4 r8 r fis\mf fis 
 	e r r r4 r8
-	R2.
-	R2.*2
+	R2.*4
+	
 % Bars 81 to 85
 	
-	R2.
+	
 	b8(\ff a gis fis) a b \mark \default
 	fis' r r r4 r8
 	r4 r8 fis4.\ff
@@ -113,25 +113,29 @@ musicHornIMvtI = \relative c {
 	g4 e8 f!4 f8 \mark \default
 	fis4 fis8 f8 r r
 % Bars 116 to 120
-	R2.*15
+	R2.*12
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
+	
+	\mmrLength #18 \mmrnDown R2.*3
+	
+	
 % Bars 131 to 135
-	\ni \mmrPos #-4 R2. \no
+	\ni \mmrPos #-5 R2. \no
 	\voiceTwo r4 r8 r4 \oneVoice a,8\p(
 	gis4.)\< cis4 cis8\!
 	cis4.\mf\> d\!
 	\after 2.*5/6 \! cis2.\p\<
 % Bars 136 to 140
-	r4 r8 r r a(_\mpcresc
+	r4 r8 r4 a8(_\mpcresc
 	gis4.) cis4 cis8
 	cis4.\f\> d\!
 	cis2.\mf\> \mark \default
 	fis4.~\p-> fis8 e-.( fis)-.
 % Bars 141 to 145
-	b,2.\>
+	\once \stemUp b,2.\>
 	e4.->~\pp e8 d(-. e-.)
 	a,2.
 	d4.\pp r4 r8
@@ -141,7 +145,7 @@ musicHornIMvtI = \relative c {
 	a4. r4 r8
 	gis4.\pp~ gis8 fis-.( gis-.)
 	R2.
-	b4.\p~ b8 ais(-. b-.)
+	b4.\p^~ b8 ais(-. b-.)
 % Bars 151 to 155
 	R2.*3
 	
@@ -151,7 +155,7 @@ musicHornIMvtI = \relative c {
 % Bars 156 to 160
 	R2.*2
 	
-	e8\mf e4 e8 e4
+	e8-\offset X-offset -1 \mf e4 e8 e4
 	e8 e4 e8 e4
 	R2.*2
 % Bars 161 to 165
@@ -170,22 +174,18 @@ musicHornIMvtI = \relative c {
 	
 	a4.\p\< cis\!
 	\after 2.*5/6 \! b2.\>
-	R2.*5
+	R2.*8
 	
 % Bars 176 to 180
 	
-	
-	
-	R2.*2
-	
 % Bars 181 to 185
-	R2. \mark \default
+	\mark \default
 	r8 e4~_\pcresc e8 e,( e')
 	r e4~ e8 e,( e')
 	r e,( e')~ e\f e,( e')
 	r b( b,) b'( b, b')
 % Bars 186 to 190
-	e r r r4 r8
+	e\f r r r4 r8
 	R2.
 	a,4_\pcrescmolto a8~ a b4
 	b b8~ b b4
@@ -256,9 +256,9 @@ musicHornIMvtI = \relative c {
 	
 % Bars 251 to 255
 	cis2.\p
-	R
-	R
-	cis\f \mark \default
+	R2.*2
+	
+	cis2.\f \mark \default
 	e8[\ff r16 e e8] r8 b r
 % Bars 256 to 260
 	e r e~ e e cis
@@ -289,7 +289,7 @@ musicHornIMvtI = \relative c {
 	f8 r r r4 r8
 	R2.*2
 	
-	b,8[\f r16 b b8](~ b8 cis-.) d-.
+	b,!8[\f r16 b b8](~ b8 cis-.) d-.
 % Bars 281 to 285
 	R2.*6
 % Bars 286 to 290
@@ -357,9 +357,9 @@ musicHornIMvtI = \relative c {
 	
 	r4 r8 r fis\mf fis
 	e r r r4 r8
-	R2.
+	R2.*2
 % Bars 351 to 355
-	R
+	
 	r4 r8 r8 fis\mf fis \mark \default
 	e r r r4 r8
 	R2.*4
@@ -385,32 +385,36 @@ musicHornIMvtI = \relative c {
 % Bars 371 to 375
 	a4 a8 bes4 bes8
 	b!4 b8 bes r r
-	R2.*15
+	R2.*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
+	
+	
+	
+	\mmrLength #15 \mmrnDown R2.*3
 % Bars 386 to 390
 	
 	
 	\ni \mmrPos #-4 R2. \no
-	\voiceTwo r4 r8 r4 \oneVoice b8\p(
+	\voiceTwo r4 r8 r4 \oneVoice b!8\p(
 	bes4.)\< ees4 ees8\!
 % Bars 391 to 395
 	ees4.\mf\> e\!
-	\after 2.*5/6 \! ees2.\p\<
-	r4 r8 r r b(_\mpcresc
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! ees2.\p\<
+	r4 r8 r r b!(_\mpcresc
 	bes4.) ees4 ees8
 	ees4.\f\> e\!
 % Bars 396 to 400
-	\after 2.*5/6 \! ees2.\mf\> \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! ees2.\mf\> \mark \default
 	R2.*8
 % Bars 401 to 405
 	
 	
 	
 	
-	bes4.\pp~ bes8 aes-.( bes-.)
+	bes4.\pp^~ bes8 aes-.( bes-.)
 % Bars 406 to 410
 	R2.
 	cis4.\p~ cis8 bis(-. cis-.)
@@ -419,7 +423,7 @@ musicHornIMvtI = \relative c {
 	
 	
 	
-	b4.\mf\<(~ b4\> bes8)\!
+	\hairpinShorten #'(-0.5 . -0.8) b4.\mf\<(~ \hairpinShorten #'(0.8 . 0) b4\> bes8)\!
 	R2.*3
 % Bars 416 to 420
 	
@@ -429,22 +433,22 @@ musicHornIMvtI = \relative c {
 	
 % Bars 421 to 425
 	
-	b4.(~\mf\< b4\> bes8)\!
+	\hairpinShorten #'(-0.5 . -0.8) b4.(~\mf\< \hairpinShorten #'(0.8 . 0) b4\> bes8)\!
 	R2.*3
 	
 	
 % Bars 426 to 430
-	b4.(\mf\< \after 4.*2/3 \! cis\>)
+	b!4.(\mf\< \after 4.*2/3 \! cis\>)
 	R2.*2
 	
-	b4.\p\< dis
+	b4.\p\< dis\!
 	\after 2.*5/6 \! cis2.\>
 % Bars 431 to 435
 	R2.*5
 % Bars 436 to 440
-	g4.\f\> gis\!
-	R2.
-	R \mark \default
+	g!4.\f\> gis\!
+	R2.*2
+	\mark \default
 	r8 fis'4~_\pcresc fis8 fis,( fis')
 	r fis4~ fis8 fis,( fis')
 % Bars 441 to 445
@@ -460,7 +464,7 @@ musicHornIMvtI = \relative c {
 	dis_\fcresc dis8~ dis dis dis
 	e4 e8~ e cis4
 % Bars 451 to 455
-	b8[\fff r16 b b8] b cis dis
+	\stemUp b8[\fff r16 b b8] \stemNeutral b cis dis
 	e dis cis b cis dis
 	b2.
 	bes
@@ -500,10 +504,10 @@ musicHornIMvtI = \relative c {
 	R2.
 	b4\f b8 r4 r8
 	b4\f b8 r4 r8
-	f'4\ff f8 f4 f8
+	f'!4\ff f8 f4 f8
 % Bars 486 to 490
 	f4 f8 f4 f8 \mark \default
-	fis r r d\p r r
+	fis r r d!\p r r
 	dis r r dis r r
 	e r r fis r b,
 	b r r e r r

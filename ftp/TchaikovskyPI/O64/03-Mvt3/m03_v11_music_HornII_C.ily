@@ -34,9 +34,9 @@ musicHornIIMvtIII = \relative c {
 % Bars 26 to 30
 	
 	
-	\sonsbouchesgestopft eis2\p\startTextSpan r4
+	\sonsbouchesgestopft e2\p\startTextSpan r4
 	dis2 r4
-	eis2 r4
+	e2 r4
 % Bars 31 to 35
 	dis2\stopTextSpan r4
 	R2.*5
@@ -50,10 +50,10 @@ musicHornIIMvtIII = \relative c {
 	
 	
 % Bars 41 to 45
-	dis2.\p
+	\aIIXoffset #-3 \sonsbouchesgestopft dis2.\p\startTextSpan
 	gis,
 	\after 2.*5/6 \! e'\<
-	fis4\mf~ fis8 r r4\mark \default
+	fis4\mf~ fis8\stopTextSpan r r4\mark \default
 	R2.*6
 % Bars 46 to 50
 	

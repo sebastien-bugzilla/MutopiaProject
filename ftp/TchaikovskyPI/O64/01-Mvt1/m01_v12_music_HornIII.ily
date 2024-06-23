@@ -9,7 +9,7 @@ musicHornIIIMvtI = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R1*19
+	\mmrLength #22 \mmrnDown R1*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,7 +29,7 @@ musicHornIIIMvtI = \relative c {
 % Bars 36 to 40
 	
 	\ni R1\fermata \no \bar "||" \time 6/8
-	R2.*15
+	\mmrLength #30 \mmrnDown R2.*15
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -53,7 +53,7 @@ musicHornIIIMvtI = \relative c {
 	b' r r e r r
 	d r r r r4 \mark \default
 % Bars 66 to 70
-	R2.*14
+	\mmrLength #25 R2.*14
 	
 % Bars 71 to 75
 	
@@ -106,10 +106,14 @@ musicHornIIIMvtI = \relative c {
 	g4 b,8 b4 b8 \mark \default
 	cis4 fis8 f r r
 % Bars 116 to 120
-	R2.*15
+	\mmrLength #20 R2.*12
 % Bars 121 to 125
 	
 % Bars 126 to 130
+	
+	
+	\mmrLength #15 \mmrnDown R2.*3
+	
 	
 % Bars 131 to 135
 	\ni \mmrPos #-6 R2.
@@ -136,25 +140,26 @@ musicHornIIIMvtI = \relative c {
 	R2.
 	fis\p
 % Bars 151 to 155
-	R2.*6
+	R2.
+	\mmrnDown \mmrLength #16 R2.*5
 % Bars 156 to 160
 	
-	a4.\mf\<(~ a4\> gis8)\!
+	\hairpinShorten #'(-0.5 . -0.5) a4.\mf\<(~ \hairpinShorten #'(0.5 . 0) a4\> gis8)\!
 	R2.*3
 	
 	
 % Bars 161 to 165
-	a4.(\mf\< \after 4.*2/3 \! b)\>
+	\hairpinShorten #'(-0.5 . 0) a4.(\mf\< \once \stemUp \hairpinShorten #'(0 . -0.5) \after 4.*2/3 \! b)\>
 	R2.*3
 	
 	
-	a4.(~\mf\< a4\> gis8)\!
+	\hairpinShorten #'(-0.5 . -0.5) a4.(~\mf\< \hairpinShorten #'(0.5 . 0) a4\> gis8)\!
 % Bars 166 to 170
 	R2.*3
 	
 	
-	a4.(\mf\< \after4.*2/3 \! b\>)
-	R2.*7
+	\hairpinShorten #'(-0.5 . 0) a4.(\mf\< \once \stemUp \hairpinShorten #'(0 . -0.5) \after 4.*2/3 \! b\>)
+	\mmrLength #22 \mmrnDown R2.*7
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -195,7 +200,7 @@ musicHornIIIMvtI = \relative c {
 	r4 e8~\f\< e4 dis8\!
 % Bars 206 to 210
 	e8[\fff r16 e e8] e e e
-	r4 r8 r4 e8\ff
+	r4 r8 r4 e8-\offset X-offset -1 \ff
 	e8[ r16 e e8] e e e
 	r4 r8 e(\f a,) a
 	a8[ r16 cis cis8] cis cis cis
@@ -224,25 +229,23 @@ musicHornIIIMvtI = \relative c {
 	g'4->(\p g,8) g'4(-> g,8)
 % Bars 231 to 235
 	c\mf r r r4 r8
-	R2.*2
+	R2.*8
 	
-	R2.*5
+	
 % Bars 236 to 240
 	
 	
 	
-	R2. \mark \default
+	\mark \default
 	ees,8\f r r r4 r8
 % Bars 241 to 245
-	R2.*2
-	
-	R2.*8
+	R2.*10
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	\ni \mmrPos #4 R2.
 	\mmrPos #4 R \no
-	e2.\mf\<
+	e!2.\mf\<
 	e\f \mark \default
 	e'8[\ff r16 e e8] r b r
 % Bars 256 to 260
@@ -253,7 +256,7 @@ musicHornIIIMvtI = \relative c {
 	e8[ r16 e e8] bes8. bes16 bes8
 % Bars 261 to 265
 	ees8[ r16 ees ees8] r fis r
-	fis r c8~ c c c
+	fis r c!8~ c c c
 	ees8[ r16 ees ees8] r fis r
 	fis r c~ c c c
 	ees8[ r16 ees ees8] fis,8. fis16 fis8
@@ -350,7 +353,7 @@ musicHornIIIMvtI = \relative c {
 % Bars 356 to 360
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	\voiceOne r4 r8 r \oneVoice fis,\mf-- fis--
+	\voiceOne r4 r8 r \oneVoice fis,!\mf-- fis--
 	f!4.->~ f8 r r
 	R2.*2
 % Bars 361 to 365
@@ -368,15 +371,19 @@ musicHornIIIMvtI = \relative c {
 % Bars 371 to 375
 	cis4 fis,8 e4 e8
 	dis4 d8 dis r r
-	R2.*16
+	R2.*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
+	
+	
+	
+	\mmrLength #15 \mmrnDown R2.*3
 % Bars 386 to 390
 	
 	
-	
+	R2.
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R
 % Bars 391 to 395
@@ -413,9 +420,10 @@ musicHornIIIMvtI = \relative c {
 	
 	fis8\f fis4 fis8 fis4
 	fis8 fis4 fis8 fis4
-	R2.*9
+	R2.*2
 % Bars 426 to 430
 	
+	\mmrLength #20 R2.*7
 % Bars 431 to 435
 	
 	
@@ -423,7 +431,7 @@ musicHornIIIMvtI = \relative c {
 	cis'2.\p\<
 	dis\f
 % Bars 436 to 440
-	R2.*3
+	\mmrLength #11 R2.*3
 	
 	\mark \default
 	r8 fis4_\pcresc~ fis8 fis,( fis')
@@ -441,7 +449,7 @@ musicHornIIIMvtI = \relative c {
 	dis_\fcresc dis8~ dis dis dis
 	e4 e8~ e cis4
 % Bars 451 to 455
-	b8[\fff r16 b b8] b cis dis
+	\stemUp b8[\fff r16 b b8] \stemNeutral b cis dis
 	e dis cis! b cis dis
 	b2.
 	bes
@@ -456,7 +464,7 @@ musicHornIIIMvtI = \relative c {
 	R2.
 	r8 r fis\f\<~ fis4 f8\!
 	fis8[\fff r16 fis fis8] fis fis fis
-	r4 r8 r r fis\ff
+	r4 r8 r4 fis8\ff
 	fis8[ r16 fis fis8] fis fis fis
 % Bars 466 to 470
 	r4 r8 fis(\f b,) b
@@ -486,7 +494,7 @@ musicHornIIIMvtI = \relative c {
 	b4 b8 b4 b8 \mark \default
 	d r r a\p r r
 	b r r b r r
-	b r r d r b
+	b r r d[ r b]
 	b r r cis r r
 % Bars 491 to 495
 	b\p r r bes r r
