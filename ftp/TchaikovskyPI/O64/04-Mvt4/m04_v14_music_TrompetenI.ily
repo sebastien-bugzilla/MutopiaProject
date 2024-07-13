@@ -10,7 +10,7 @@ musicTrompetenIMvtIV = \relative c {
 	\transposition a
 	\section \sectionLabel Finale
 % Bars 1 to 5
-	R1*12
+	\mmrnDown R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,7 +20,7 @@ musicTrompetenIMvtIV = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R \no \mark \default
 % Bars 16 to 20
-	d''4.\sf\> d16\pp d d4. d16 d
+	\hairpinShorten #'(-0.5 . -0.5) d''4.-\offset X-offset -1 \sf\> d16-\offset X-offset 0.5 \pp d d4. d16 d
 	d8_\pocoapococresc r d2.
 	d4. d16 d d4. d16 d
 	d8 r d2.
@@ -56,7 +56,7 @@ musicTrompetenIMvtIV = \relative c {
 % Bars 56 to 60
 	
 	\bar "||"
-	\time 2/2 R1*4
+	\time 2/2 \mmrnDown R1*4
 % Bars 61 to 65
 	
 	\ni \mmrPos #-4 R1
@@ -102,7 +102,7 @@ musicTrompetenIMvtIV = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-6 R \no
 % Bars 106 to 110
-	c,8\mf r r4 r2
+	c,!8\mf r r4 r2
 	R1*7
 % Bars 111 to 115
 	
@@ -249,9 +249,9 @@ musicTrompetenIMvtIV = \relative c {
 	
 	
 	
-	\ni \mmrPos #-8 R1
+	\ni \mmrPos #-6 R1
 % Bars 291 to 295
-	\mmrPos #-8 R
+	\mmrPos #-6 R
 	\mmrPos #-8 R
 	\mmrPos #-8 R
 	\mmrPos #-8 R
@@ -307,7 +307,7 @@ musicTrompetenIMvtIV = \relative c {
 % Bars 346 to 350
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R \no
-	c,8\mf r r4 r2
+	c,!8\mf r r4 r2
 	R1*7
 % Bars 351 to 355
 	
@@ -318,18 +318,18 @@ musicTrompetenIMvtIV = \relative c {
 % Bars 356 to 360
 	c,8\f r r4 r2
 	r r4 g''8\f g
-	fis fis fis fis d d d d
-	d d d d bes bes bes a
+	fis2:8 d: 
+	d: bes8 bes bes a 
 	d\ff r r4 r2
 % Bars 361 to 365
-	d8\f d d d a' a a a
-	gis gis gis gis  e e e e 
-	e e e e a,\f a b b
-	a\f e' e e   e e e e
-	e\f e e e  b' b b b
+	d2:8\f a':
+	gis: e:
+	e: a,4:\f \once \stemUp b: 
+	a8\f e' e e e2:8 
+	e:\f b': 
 % Bars 366 to 370
-	ais ais ais ais  fis fis fis fis
-	fis fis cis4\< d e\! \mark \default
+	ais: fis: 
+	fis8 fis cis4\< d e\! \mark \default
 	fis8 r fis2\fff fis4~
 	fis fis2 fis4~
 	fis r r2
@@ -384,8 +384,8 @@ musicTrompetenIMvtIV = \relative c {
 	g'8\ff-> r c,4->~ c a->
 % Bars 426 to 430
 	d8\ff r r4 r2
-	R1
-	R1*2
+	R1*3
+	
 	
 	g2.\ff g8 g
 % Bars 431 to 435
@@ -459,7 +459,7 @@ musicTrompetenIMvtIV = \relative c {
 	
 	
 	\mark \markAaBox
-	b4.\fff^\marcialeenergicocontuttaforza b16 b c4. b16 a
+	\stemUp b4.\fff^\marcialeenergicocontuttaforza b16 b \stemNeutral c4. b16 a
 % Bars 491 to 495
 	b4 g2.
 	d'4. d16 d e4. d16 c
@@ -469,13 +469,13 @@ musicTrompetenIMvtIV = \relative c {
 % Bars 496 to 500
 	fis e d d8. cis16
 	b8^\marcatissimo g' fis e d4. cis8
-	b g' fis e d4. cis8 \mark \markBbBox
+	b g' fis e d4. cis8 \resetMarkSpace \mark \markBbBox
 	b b' a g fis e d c
 	b d c e d fis e a
 % Bars 501 to 505
 	g4 g g g
 	g8. g16 b4~ b8 g d b
-	b2\sfff d\sfff \bar "||"
+	b2-\offset X-offset -1 \sfff \noteHeadEsw #'(-2.5 . 1) d\sfff \revertNoteHeadEsw \bar "||"
 	\time 2/2 g,4 r g'\p r
 	gis r e r
 % Bars 506 to 510
@@ -485,7 +485,7 @@ musicTrompetenIMvtIV = \relative c {
 	b2\f g\ff
 	g4\fff r g r
 % Bars 511 to 515
-	g r d r \mark \markCcBox
+	g r d r \resetMarkSpace \mark \markCcBox
 	d r g\p r
 	gis r e r
 	e_\crescmarkup r e r
@@ -501,7 +501,7 @@ musicTrompetenIMvtIV = \relative c {
 	g g r ees
 	d d r b
 	b b r e
-	e e r e \mark \markDdBox
+	e e r e \resetMarkSpace \mark \markDdBox
 % Bars 526 to 530
 	fis r d2~
 	d ees~
@@ -517,7 +517,7 @@ musicTrompetenIMvtIV = \relative c {
 % Bars 536 to 540
 	g r a r
 	gis r a a
-	g_\semprefff g r2
+	\startMeasureCount g_\semprefff g r2
 	g4 g r2
 	g4 g r2
 % Bars 541 to 545
@@ -525,7 +525,7 @@ musicTrompetenIMvtIV = \relative c {
 	g4 g r2
 	g4 g r2
 	g4 g r2
-	g4 g r2 \bar "||"
+	g4 g r2 \stopMeasureCount \bar "||"
 % Bars 546 to 550
 	\time 6/4 g4.\ffff g8 g4 g a b
 	c b a g fis e

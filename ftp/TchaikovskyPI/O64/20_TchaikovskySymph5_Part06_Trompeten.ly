@@ -43,7 +43,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64"
+			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64 — Trompeten"
 		}
 		instrument = \markup {
 			"Trompeten"
@@ -51,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrompetenIMvtI
-%			}
+			\new Voice {
+				\formatTrompetenIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(trompetenI) \tempiPartMvtI
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrompetenIMvtII
-%			}
+			\new Voice {
+				\formatTrompetenIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(trompetenI) \tempiPartMvtII
 			}
@@ -89,7 +89,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -99,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrompetenIMvtIII
-%			}
+			\new Voice {
+				\formatTrompetenIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(trompetenI) \tempiPartMvtIII
 			}
@@ -113,7 +113,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -123,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrompetenIMvtIV
-%			}
+			\new Voice {
+				\formatTrompetenIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(trompetenI) \tempiPartMvtIV
 			}
@@ -139,7 +139,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.1 \bold 4.
 			}
 		}
 		\layout {
@@ -147,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrompetenIIMvtI
-%			}
+			\new Voice {
+				\formatTrompetenIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(trompetenII) \tempiPartMvtI
 			}
@@ -171,9 +171,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrompetenIIMvtII
-%			}
+			\new Voice {
+				\formatTrompetenIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(trompetenII) \tempiPartMvtII
 			}
@@ -185,7 +185,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -195,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrompetenIIMvtIII
-%			}
+			\new Voice {
+				\formatTrompetenIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(trompetenII) \tempiPartMvtIII
 			}
@@ -209,7 +209,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -219,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrompetenIIMvtIV
-%			}
+			\new Voice {
+				\formatTrompetenIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(trompetenII) \tempiPartMvtIV
 			}
@@ -235,7 +235,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1 \bold 4.
 			}
 		}
 		\layout {

@@ -1608,7 +1608,7 @@ cueVoiceTrompetenIMvtI = \relative c {
 	r c( d) e4.
 	s2.*10
 	% bar 182 - 185
-	r8^\markup {\column {\lower #1.5 "Fl." \lower #1.5 "Ob." "Klar."}} c( d) e4( f8)
+	r8 c(^\markup {\overlay {"Fl." \translate #'(0 . -1.5) "Ob." \translate #'(0 . -3) "Klar."}} d) e4( f8)
 	r c( d) e4.
 	f4 f8~ f a4
 	d, dis8~ dis e4\laissezVibrer
@@ -1630,9 +1630,9 @@ cueVoiceTrompetenIMvtI = \relative c {
 	r8 c16( des d e f8) r r
 	s2.*69
 	% bar 362 - 364
-	s4. s8 b--^\markup {\column {\lower #1.5 "Fl." "Ob."}} a--
-	e4.->~ e8\noBeam d,_\markup {\column {\lower #1.5 "Fag.I" "Pos.I"}} c
-	\voiceTwo b( f' e) d \oneVoice s4
+	s4. s8 b---\offset X-offset -3 ^\markup {\column {\lower #1.5 "Fl." "Ob."}} a--
+	e4.->~ e8\noBeam d,^\markup {\column {\lower #1.5 "Fag.I" "Pos.I"}} c
+	b( f' e) d \oneVoice s4
 	s2.*23
 	% bar 388 - 390
 	d8(_\markup {Klar.} e fis g a ais)
@@ -1640,19 +1640,19 @@ cueVoiceTrompetenIMvtI = \relative c {
 	dis4.) e4( fis8)
 	s2.*48
 	% bar 439 - 442
-	r8^\markup {\column {\lower #1.5 "Fl." "Ob."} "Klar."} d( e) fis4( g8)
+	r8 d(^\markup {\overlay {"Fl." \translate #'(0 . -1.5) "Ob." \translate #'(4 . -0.75) "Klar."}} e) fis4( g8)
 	r d( e) fis4.
 	g4 g8~ g b4
 	e, f!8~ f fis4
 	s2.*42
 	% bar 485 - 486
-	cis'4^\markup {\column {\lower #1.5 "Fl.I" "Klar.I"}} g8 cis4 g8
+	cis'4-\offset X-offset -6 ^\markup {\column {\lower #1.5 "Fl.I" "Klar.I"}} g8 cis4 g8
 	cis4 g8 cis4 g8
 }
 cueVoiceTrompetenIMvtII = \relative c {
 	s1.*51
 	% bar 52 - 55
-	a''4.(^\markup {\column {\lower #6 "Fl." \lower #3 "Viol." \lower #1.5 "Br." "Vcll."}} bes4) bes8 bes4.( b4) b8
+	a''4.(_\markup {\overlay {"Fl. Viol." \translate #'(0 . -1.5) "Br. Vcll."}} bes4) bes8 bes4.( b4) b8
 	\tuplet 2/3 4. {b( c) c-- c-- c( cis) cis-- cis--}
 	cis4.( d4) d8 d4.( ees4) ees8
 	\tuplet 2/3 4. {ees( e) e-- e-- e( f) f-- f--}
@@ -1661,25 +1661,25 @@ cueVoiceTrompetenIMvtII = \relative c {
 	b,4.^\markup {Ob.I} fis'8( a g) fis-- e--
 	s1*3
 	% bar 95
-	b4.^\markup {\column {\lower #3 "Fl." \lower #1.5 "Ob." "Klar."}} fis'8( a g fis e)
+	b4.-\offset X-offset -1 ^\markup {\overlay {"Fl." \translate #'(0 . -1.5) "Ob." \translate #'(0 . -3) "Klar."}} fis'8( a g fis e)
 	s1*12 s1.*32
 	% bar 140 - 141
-	d'8^\markup {\column {\lower #1.5 \line {"Fl. Ob."} \line {"Klar."} }} b4 g f8~ f e4 d c8
+	d'8-\offset X-offset -6 ^\markup {\column {\lower #1.5 \line {"Fl. Ob."} \line {"Klar."} }} b4 g f8~ f e4 d c8
 	cis, d e f fis g a b c! cis d e
 }
 cueVoiceTrompetenIMvtIII = \relative c {
 	s2.*95
 	% bar 96 - 97
-	cis'''16-.^\markup {Kl.Fl.} d-. cis-. d-. e-. d-. c-. b-. ais( b ais b
+	cis'''16-.^\markup {kl.Fl.} d-. cis-. d-. e-. d-. c-. b-. ais( b ais b
 	c b a! g) fis( g fis g a g fis e)
 	s2.*2
 	% bar 100 - 101
-	r4 r ais16(^\markup {Kl.Fl.} b ais b
+	r4 r ais16(^\markup {kl.Fl.} b ais b
 	c b a! g) fis( g fis g a g fis e)
 	s2.*1
 	% bar 103 - 104
 	r4 eis16(^\markup {Fl.I} fis eis fis g fis dis b)
-	\voiceTwo ais(_\markup {Klar.} b ais b c b g e) \oneVoice s4
+	\voiceTwo ais(^\markup {Klar.I} b ais b c b g e) \oneVoice s4
 	s2.*151
 	% bar 256 - 264
 	\voiceTwo f4.(^\markup {Viol.I} g8) f( g)
@@ -1705,7 +1705,7 @@ cueVoiceTrompetenIMvtIV = \relative c {
 	fis-- e-- d-- fis8.( e16)
 	s1*23
 	% bar 62 - 65
-	\voiceOne r4^\markup {Fl.I} g,4 c a
+	\voiceOne r4 g,4^\markup {Fl.I} c a
 	b8 r r4 r2
 	r4 g c a
 	b8 r r4 r2 \oneVoice 
@@ -1722,10 +1722,10 @@ cueVoiceTrompetenIMvtIV = \relative c {
 	bes' f
 	s1*118
 	% bar 290 - 295
-	r2 <c' ees>
+	r2^\markup {Ob.} <c' ees>
 	q <ees, d'>
 	q1^>^\((
-	<ees c'>)~
+	\once \omit Staff.Accidental <ees c'>)~
 	q~
 	q\)
 	s1*50
@@ -1773,9 +1773,9 @@ cueVoiceTrompetenIIMvtI = \relative c {
 	r8 c16( des d e f8) r r
 	s2.*69
 	% bar 362 - 364
-	s4. s8 b--^\markup {\column {\lower #1.5 "Fl." "Ob."}} a--
-	e4.->~ e8\noBeam d,_\markup {\column {\lower #1.5 "Fag.I" "Pos.I"}} c
-	\voiceTwo b( f' e) d \oneVoice s4
+	s4. s8 b--^\markup {\column {\lower #1.5 "Fl.I" "Ob."}} a--
+	e4.->~ e8\noBeam d,^\markup {\column {\lower #1.5 "Fag.I" "Pos.I"}} c
+	\beamOffset #'(0.5 . 0.5) \voiceTwo b( f' e) d \oneVoice s4
 	s2.*23
 	% bar 388 - 390
 	d8(_\markup {Klar.} e fis g a ais)
@@ -1786,7 +1786,7 @@ cueVoiceTrompetenIIMvtI = \relative c {
 	\voiceOne e4.~^\markup {Tr.I} e8 d-.( e-.) \oneVoice 
 	s2.*41
 	% bar 439 - 442
-	r8^\markup {\column {\lower #1.5 "Fl." "Ob."} "Klar."} d( e) fis4( g8)
+	r8^\markup {\overlay {"Fl." \translate #'(0 . -1.5) "Ob. Klar."}} d( e) fis4( g8)
 	r d( e) fis4.
 	g4 g8~ g b4
 	e, f!8~ f fis4
@@ -1798,7 +1798,7 @@ cueVoiceTrompetenIIMvtI = \relative c {
 cueVoiceTrompetenIIMvtII = \relative c {
 	s1.*51
 	% bar 52 - 55
-	a''4.(^\markup {\column {\lower #1.5 "Fl. Viol." "Br. Vcll."}} bes4) bes8 bes4.( b4) b8
+	a''4.(_\markup {\column {\lower #1.5 "Fl. Viol." "Br. Vcll."}} \once \stemUp bes4) bes8 bes4.( b4) b8
 	\tuplet 2/3 4. {b( c) c-- c-- c( cis) cis-- cis--}
 	cis4.( d4) d8 d4.( ees4) ees8
 	\tuplet 2/3 4. {ees( e) e-- e-- e( f) f-- f--}
@@ -1807,11 +1807,11 @@ cueVoiceTrompetenIIMvtII = \relative c {
 	b,4.^\markup {Ob.I} fis'8( a g) fis-- e--
 	s1*3
 	% bar 95 - 96
-	b4.^\markup {\column {\lower #3 "Fl." \lower #1.5 "Ob." "Klar."}} fis'8( a g fis e)
+	b4.-\offset X-offset -1 ^\markup {\column {\lower #3 "Fl." \lower #1.5 "Ob." "Klar."}} fis'8( a g fis e)
 	e,2^\markup {Trpt.I} \once \stemUp b'
 	s1*11 s1.*32
 	% bar 140 - 141
-	d'8\repeatTie^\markup {\column {\lower #1.5 \line {"Fl. Ob."} \line {"Klar."} }} b4 g f8~ f e4 d c8
+	d'8\repeatTie-\offset X-offset -6 ^\markup {\column {\lower #1.5 \line {"Fl. Ob."} \line {"Klar."} }} b4 g f8~ f e4 d c8
 	cis, d e f fis g a b c! cis d e
 }
 cueVoiceTrompetenIIMvtIII = \relative c {
@@ -1826,7 +1826,7 @@ cueVoiceTrompetenIIMvtIII = \relative c {
 	s2.*1
 	% bar 103 - 104
 	r4 eis16(^\markup {Fl.I} fis eis fis g fis dis b)
-	\voiceTwo ais(_\markup {Klar.} b ais b c b g e) \oneVoice s4
+	\voiceTwo ais(^\markup {Klar.} b ais b c b g e) \oneVoice s4
 	s2.*151
 	% bar 256 - 264
 	\voiceTwo f4.(^\markup {Viol.I} g8) f( g)
@@ -1852,7 +1852,7 @@ cueVoiceTrompetenIIMvtIV = \relative c {
 	fis-- e-- d-- fis8.( e16)
 	s1*23
 	% bar 62 - 65
-	\voiceOne r4^\markup {Fl.I} g,4 c a
+	\voiceOne r4 g,4^\markup {Fl.I} c a
 	b8 r r4 r2
 	r4 g c a
 	b8 r r4 r2 \oneVoice 
@@ -1860,7 +1860,7 @@ cueVoiceTrompetenIIMvtIV = \relative c {
 	% bar 103 - 105
 	a2(^\markup {Viol.I} \once \stemUp b)
 	c4( cis e d)
-	a'4.( g8) cis,4.( d8)
+	a'4.(\sf g8) cis,4.( d8)
 	s1*62
 	% bar 168 - 171
 	d,2^\markup {Hr.II,IV} c
@@ -1869,12 +1869,12 @@ cueVoiceTrompetenIIMvtIV = \relative c {
 	bes' f
 	s1*118
 	% bar 290 - 295
-	r2 <c' ees>
+	r2^\markup {Ob.} <c' ees>
 	q <ees, d'>
 	q1^>^\((
-	<ees c'>)~
+	\once \omit Staff.Accidental <ees c'>)\)~
 	q~
-	q\)
+	q
 	s1*50
 	% bar 346 - 347
 	c'4(^\markup {Viol.} cis e d)

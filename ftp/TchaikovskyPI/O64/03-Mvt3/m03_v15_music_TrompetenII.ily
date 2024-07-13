@@ -5,12 +5,12 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicTrompetenIIMvtIII = \relative c {
-	\clef treble
+	\clefSpace #'(extra-space . 4) \clef treble
 	\key c \major
 	\transposition a
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #39 \mmrnDown R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15

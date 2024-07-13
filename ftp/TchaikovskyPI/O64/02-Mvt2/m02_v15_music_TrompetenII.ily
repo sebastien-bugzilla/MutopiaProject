@@ -9,33 +9,57 @@ musicTrompetenIIMvtII = \relative c {
 	\key a \minor
 	\transposition a
 % Bars 1 to 5
-	R1.*15
+	\mmrLength #35 \mmrnDown R1.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	R1.*2
 	
-	
-	\mark \default
+	<< R1. {s2. \tempoXoffset #-3 s } >> \mark \default
 % Bars 16 to 20
-	R1.*29
+	R1.*3
+	
+	
+	R1.
+	R1.*4
 % Bars 21 to 25
 	
+	
+	
+	\mmrnDown R1.
+	R
 % Bars 26 to 30
+	R1.*2
+	
+	\mmrnDown R1.*5
+	
 	
 % Bars 31 to 35
 	
+	
+	\mmrnDown R1.*2
+	
+	R1.
 % Bars 36 to 40
+	R
+	R1.*2
+	
+	\mmrLength #12 \mmrnDown R1.*4
 	
 % Bars 41 to 45
 	
 	
-	
-	\mark \default
-	R1.*7
+	R1.
+	\mmrnDown R \mark \default
+	R1.
 % Bars 46 to 50
+	\mmrLength #12 R1.*2
 	
+	R1.
+	R
+	\mmrLength #15 R1.*2
 % Bars 51 to 55
 	\mark \default
 	\ni \mmrPos #4 R1.
@@ -44,13 +68,16 @@ musicTrompetenIIMvtII = \relative c {
 	\mmrPos #-4 R \no
 % Bars 56 to 60
 	f'4.\ff\>~ f8\! r r r2.
-	R1.*9
+	R1.
+	R
+	\mmrLength #13 \mmrnDown R
+	R
 % Bars 61 to 65
+	\mmrLength #18 \mmrnDown R1.*5
 	
 	
 	
-	
-	\bar "||" \time 4/4 R1*9
+	\bar "||" \time 4/4 \mmrLength #25 \mmrnDown R1*9
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -100,15 +127,28 @@ musicTrompetenIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.*8
+	\tempoXoffset 0.5 R1.*2
+	
+	R1.
+	R1.*3
+	
 % Bars 121 to 125
 	
+	R1.
+	\mmrLength #16 \tempoXoffset #2 R \mark \default
+	R1.*2
 	
-	\mark \default
-	R1.*14
 % Bars 126 to 130
+	R1.
+	R
+	\mmrLength #14 \mmrnDown R1.*6
+	
 	
 % Bars 131 to 135
+	
+	
+	
+	\mmrLength #20 \mmrnDown R1.*4
 	
 % Bars 136 to 140
 	
@@ -125,15 +165,15 @@ musicTrompetenIIMvtII = \relative c {
 		
 % Bars 146 to 150
 		f'8\ff r r4 r2
-		R1*2
+		\mmrLength #12 \mmrnDown R1*2
 		
-		d16\ff d\f d d  d d d d   d d d d  d d d d
-		e e e e  e e e e  f f f f   f f f f  \mark #11
+		d16\ff d\f d d  d4:16 d: d: 
+		e: e: f: f: \mark #11
 % Bars 151 to 155
-		fis\< fis fis fis   fis fis fis fis\!  g\ff g, g g   g g g g 
-		g g g g   g g g g  bes bes bes bes   bes bes bes bes
-		a\ffff a a a   d d f f  e\> e e e   f f g g\!
-		f\ff f bes, bes  bes bes d d  cis\> cis cis cis   d d e e\!
+		fis:\< fis:\! g16-\offset X-offset -2.5 \ff g, g g g4:16
+		g: g: bes: bes: 
+		a:\ffff d8: f: e4:\> f8: g:\!
+		f:\ff bes,: bes: d: cis4:\> d8: e:\!
 		d8\mf r r4 r2
 % Bars 156 to 160
 		R1*2

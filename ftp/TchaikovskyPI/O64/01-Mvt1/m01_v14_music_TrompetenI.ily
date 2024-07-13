@@ -9,7 +9,7 @@ musicTrompetenIMvtI = \relative c {
 	\key a \minor
 	\transposition a
 % Bars 1 to 5
-	R1*19
+	\mmrLength #20 \mmrnDown R1*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,7 +29,7 @@ musicTrompetenIMvtI = \relative c {
 % Bars 36 to 40
 	
 	\ni R1\fermata \no \bar "||" \time 6/8
-	R2.*19
+	\mmrLength #21 \mmrnDown R2.*19
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -88,7 +88,7 @@ musicTrompetenIMvtI = \relative c {
 % Bars 106 to 110
 	g8. g16 g8~ g8. g16 g8~
 	g d d  d d d
-	g4.\fff g
+	g4.-\offset X-offset -1 \fff g
 	g g4 d8
 	g4. fis
 % Bars 111 to 115
@@ -98,19 +98,24 @@ musicTrompetenIMvtI = \relative c {
 	g4 c,8 cis4 cis8 \mark \default
 	d4 bes'8 a r r
 % Bars 116 to 120
-	R2.*24
+	R2.*12
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
-% Bars 131 to 135
 	
+	\mmrLength #18 \mmrnDown R2.*3
+	
+	
+% Bars 131 to 135
+	R2.
+	\mmrLength #14 \mmrnDown R2.*8
 % Bars 136 to 140
 	
 	
 	
 	\mark \default
-	R2.*30
+	R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -119,6 +124,8 @@ musicTrompetenIMvtI = \relative c {
 	
 % Bars 156 to 160
 	
+	
+	\mmrLength #19 \mmrnDown R2.*18
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -126,22 +133,22 @@ musicTrompetenIMvtI = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 % Bars 171 to 175
 	\mmrPos #-6 R \no 
-	R2.*10
+	\mmrLength #16 R2.*10
 % Bars 176 to 180
 	
 % Bars 181 to 185
 	\mark \default
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 	\mmrPos #-6 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 % Bars 186 to 190
 	f8\f r r r4 r8
-	R2.*3
-	
+	R2.
+	\mmrnDown R2.*2
 	
 	f4._\mfcresc f8 f f
 % Bars 191 to 195
@@ -157,13 +164,13 @@ musicTrompetenIMvtI = \relative c {
 	a a a  a a a
 	R2. 
 % Bars 201 to 205
-	r4 r8 f4.\f\< \mark \default
+	r4 r8 \hairpinShorten #'(-0.5 . -0.5) f4.\f\< \mark \default
 	f8[\fff r16 a a8] a a a
 	a a a  a a a
 	R2.*2
 	
 % Bars 206 to 210
-	f8[\fff r16 a a8] a a a
+	f8[-\offset X-offset 1 \fff r16 a a8] a a a
 	R2.
 	f8[\ff r16 f f8] f f f
 	R2.
@@ -298,25 +305,29 @@ musicTrompetenIMvtI = \relative c {
 % Bars 371 to 375
 	a4 d,8 dis4 dis8
 	e4 e8 dis r r
-	R2.*15
+	R2.*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
+	
+	
+	
+	\mmrLength #14 \mmrnDown R2.*3
 % Bars 386 to 390
 	
 	
-	\ni \mmrPos #4 R2.
-	\mmrPos #6 R
-	\mmrPos #7 R \no
+	\ni \mmrPos #-8.3 R2.
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 % Bars 391 to 395
-	e4.\mp\> e\!
+	e4.\mp\> e
 	fis,8\pp r r r4 r8
 	R2.*2
 	
-	e'4.\mf\> e\!
+	e'4.\mf\> e
 % Bars 396 to 400
-	fis,8\pp r r r4 r8 \mark \default
+	fis,8-\offset X-offset 0.5 \pp r r r4 r8 \mark \default
 	e'4.\p->~ e8 d(-. e-.)
 	\after 2.*5/6 \! a,2.\>
 	d4.~\pp-> d8 c-.( d-.)
@@ -326,9 +337,12 @@ musicTrompetenIMvtI = \relative c {
 	b4. r4 r8
 	a4. r4 r8
 	g4. r4 r8
-	R2.*34
+	R2.*4
 % Bars 406 to 410
 	
+	
+	
+	\mmrLength #20 \mmrnDown R2.*18
 % Bars 411 to 415
 	
 % Bars 416 to 420
@@ -337,6 +351,7 @@ musicTrompetenIMvtI = \relative c {
 	
 % Bars 426 to 430
 	
+	\mmrLength #31 \mmrnDown R2.*12
 % Bars 431 to 435
 	
 % Bars 436 to 440
@@ -402,7 +417,7 @@ musicTrompetenIMvtI = \relative c {
 	g r r g r r
 	g r r g r r
 	g r r c, r r
-	g'_\crescmarkup  r r f r r
+	g'_\crescmarkup  r r f! r r
 % Bars 496 to 500
 	a r r g r r
 	ees r r f r r
@@ -425,7 +440,7 @@ musicTrompetenIMvtI = \relative c {
 	d r r r4 r8
 	r4 r8 d\f r d16 d
 	d8 r r r4 r8
-	r4 r8 d r d16 d \mark \markAaBox
+	r4 r8 d r d16 d \resetMarkSpace \mark \markAaBox
 	d8 r r r4 r8
 % Bars 516 to 520
 	R2.*4
@@ -435,7 +450,7 @@ musicTrompetenIMvtI = \relative c {
 	r4 r8 d,[\p r d16 d]
 % Bars 521 to 525
 	d8 r r r4 r8
-	r4 r8 d[\pp r d16 d] \mark \markBbBox
+	r4 r8 d[\pp r d16 d] \resetMarkSpace \mark \markBbBox
 	d8 r r r4 r8
 	R2.*18
 % Bars 526 to 530

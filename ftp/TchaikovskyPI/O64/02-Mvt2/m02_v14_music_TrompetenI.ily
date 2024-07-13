@@ -9,33 +9,57 @@ musicTrompetenIMvtII = \relative c {
 	\key a \minor
 	\transposition a
 % Bars 1 to 5
-	R1.*15
+	\mmrLength #35 \mmrnDown R1.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	R1.*2
 	
-	
-	\mark \default
+	<< R1. {s2. \tempoXoffset #-3 s }>> \mark \default
 % Bars 16 to 20
-	R1.*29
+	R1.*3
+	
+	
+	R1.
+	R1.*4
 % Bars 21 to 25
 	
+	
+	
+	\mmrnDown R1.
+	R1.
 % Bars 26 to 30
+	R1.*2
+	
+	\mmrnDown R1.*5
+	
 	
 % Bars 31 to 35
 	
+	
+	\mmrnDown R1.*2
+	
+	R1.
 % Bars 36 to 40
+	R
+	R1.*2
+	
+	\mmrnDown R1.*4
 	
 % Bars 41 to 45
 	
 	
-	
-	\mark \default
-	R1.*7
+	\tempoXoffset #1 R1.
+	\mmrLength #17 \mmrnDown R \mark \default
+	R1.
 % Bars 46 to 50
+	\mmrLength #12 R1.*2
 	
+	R1.
+	R
+	\mmrLength #15 R1.*2
 % Bars 51 to 55
 	\mark \default
 	\ni \mmrPos #-6 R1.
@@ -43,14 +67,17 @@ musicTrompetenIMvtII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 % Bars 56 to 60
-	\after 4.*2/3 \! f''4.\ff\> r4 r8 r2.
-	R1.*9
+	\hairpinShorten #'(-0.5 . -1.5) \after 4.*2/3 \! f''4.\ff\> r4 r8 r2.
+	\mmrnDown R1.
+	\mmrnDown R
+	\mmrLength #12 \mmrnDown R
+	R
 % Bars 61 to 65
+	\mmrLength #18 \mmrnDown R1.*5
 	
 	
 	
-	
-	\bar "||" \time 4/4 R1*9
+	\bar "||" \time 4/4 \mmrLength #25 \mmrnDown R1*9
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -100,15 +127,28 @@ musicTrompetenIMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.*8
+	\tempoXoffset #2 R1.*2
+	
+	R1.
+	R1.*3
+	
 % Bars 121 to 125
 	
+	\mmrLength #14 R1.
+	\mmrLength #14 \tempoXoffset #-2 R \mark \default
+	R1.*2
 	
-	\mark \default
-	R1.*14
 % Bars 126 to 130
+	R1.
+	R
+	\mmrLength #14 \mmrnDown R1.*6
+	
 	
 % Bars 131 to 135
+	
+	
+	
+	\mmrLength #25 \tempoXoffset -1 \mmrnDown R1.*4
 	
 % Bars 136 to 140
 	
@@ -125,19 +165,19 @@ musicTrompetenIMvtII = \relative c {
 		g,8-> a-> bes2-> g4
 % Bars 146 to 150
 		a8\ff r r4 r2
-		r2 a8\f->[ b->] c-> a->
+		r2 a8\f^>[ b!^>] c-> a->
 		d-> r r4 b8\f\<->[ cis->] d-> f->\!
-		g16\ff g\f g g  g g g g  aes aes aes aes  aes aes aes aes
-		a! a a a   a a a a   a a a a  a a a a \mark #11
+		g16-\offset X-offset -1 \ff g\f g g g4:16 aes: aes:
+		a!: a: a: a: \mark #11
 % Bars 151 to 155
-		a\< a a a   a a a a\!  g\ff g g g   g g g g 
-		g g g g   g g g g  bes bes bes bes   bes bes bes bes
-		a\ffff a a a  f f aes aes  bes\> bes bes bes  bes bes bes bes\!
-		bes\ff bes f f  d d f f  g\> g g g   g g g g\!
+		a:\< a: g:\ff g:
+		g: g: bes: bes: 
+		\tempoEO #'(0.7 . -1) \noteHeadEsw #'(-1.5 . 1.5) a:\ffff f8: aes: bes4:\> bes:  \revertNoteHeadEsw
+		bes8:\ff f: d: f: g4:\> g:
 		g8\mf r r4 r2
 % Bars 156 to 160
-		R1*2
-		\bar "||"
+		\mmrLength #12 R1
+		R \bar "||"
 	}
 	\unsetTimeSignature \time 4/4 d8\fff r r4 r2
 	r4 \tuplet 3/2 4 {d8 d d} d4 d
@@ -149,11 +189,11 @@ musicTrompetenIMvtII = \relative c {
 	\tuplet 3/2 4 {g8\fff g g  g g g} g->[ g->] g-> g->
 	g-> g-> r4 r2
 % Bars 166 to 170
-	R1*4
+	\mmrnDown R1*4
 	
 	
 	\bar "||"
-	\time 12/8 R1.*14
+	\time 12/8 \mmrLength #19 \mmrnDown R1.*13
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -161,6 +201,6 @@ musicTrompetenIMvtII = \relative c {
 % Bars 181 to 184
 	
 	
-	
+	\mmrnDown R1.
 	\ni R1.\fermata \no \bar "|."
 }
