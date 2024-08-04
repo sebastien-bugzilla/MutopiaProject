@@ -409,7 +409,7 @@ musicPosauneIIMvtIV = \relative c {
 % Bars 476 to 480
 	
 % Bars 481 to 485
-	r8 a\f fis[ cis] b r r4 \mark \default
+	r8 a\f fis[ cis] a r r4 \mark \default
 	R1*8
 % Bars 486 to 490
 	

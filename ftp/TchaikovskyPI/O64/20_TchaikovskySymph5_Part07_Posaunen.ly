@@ -31,6 +31,10 @@
 \include "./02-Mvt2/m02_v17_music_PosauneII.ily"
 \include "./02-Mvt2/m02_v18_music_PosauneIII.ily"
 \include "./02-Mvt2/m02_v19_music_Tuba.ily"
+\include "./03-Mvt3/m03_v16_music_PosauneI.ily"
+\include "./03-Mvt3/m03_v17_music_PosauneII.ily"
+\include "./03-Mvt3/m03_v18_music_PosauneIII.ily"
+\include "./03-Mvt3/m03_v19_music_Tuba.ily"
 \include "./04-Mvt4/m04_v16_music_PosauneI.ily"
 \include "./04-Mvt4/m04_v17_music_PosauneII.ily"
 \include "./04-Mvt4/m04_v18_music_PosauneIII.ily"
@@ -47,7 +51,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64"
+			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64 — Posaunen"
 		}
 		instrument = \markup {
 			"Posaunen"
@@ -55,9 +59,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPosauneIMvtI
-%			}
+			\new Voice {
+				\formatPosauneIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(posauneI) \tempiPartMvtI
 			}
@@ -79,9 +83,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPosauneIMvtII
-%			}
+			\new Voice {
+				\formatPosauneIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(posauneI) \tempiPartMvtII
 			}
@@ -95,7 +99,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.5 \bold 2.
 			}
 		}
 		\layout {
@@ -103,9 +107,31 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPosauneIMvtIV
-%			}
+			\new Voice {
+				\formatPosauneIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(posauneI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \namePosauneIMvtIII \musicPosauneIMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #1.6 \bold 3.
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPosauneIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(posauneI) \tempiPartMvtIV
 			}
@@ -119,7 +145,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1 \bold 4.
 			}
 		}
 		\layout {
@@ -127,9 +153,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPosauneIIMvtI
-%			}
+			\new Voice {
+				\formatPosauneIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(posauneII) \tempiPartMvtI
 			}
@@ -151,9 +177,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPosauneIIMvtII
-%			}
+			\new Voice {
+				\formatPosauneIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(posauneII) \tempiPartMvtII
 			}
@@ -167,7 +193,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.5 \bold 2.
 			}
 		}
 		\layout {
@@ -175,9 +201,31 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPosauneIIMvtIV
-%			}
+			\new Voice {
+				\formatPosauneIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(posauneII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \namePosauneIIMvtIII \musicPosauneIIMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #2.7 \bold 3.
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPosauneIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(posauneII) \tempiPartMvtIV
 			}
@@ -191,7 +239,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.1 \bold 4.
 			}
 		}
 		\layout {
@@ -199,9 +247,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPosauneIIIMvtI
-%			}
+			\new Voice {
+				\formatPosauneIIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(posauneIII) \tempiPartMvtI
 			}
@@ -223,9 +271,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPosauneIIIMvtII
-%			}
+			\new Voice {
+				\formatPosauneIIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(posauneIII) \tempiPartMvtII
 			}
@@ -239,7 +287,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.6 \bold 2.
 			}
 		}
 		\layout {
@@ -247,9 +295,31 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPosauneIIIMvtIV
-%			}
+			\new Voice {
+				\formatPosauneIIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(posauneIII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \namePosauneIIIMvtIII \musicPosauneIIIMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #2 \bold 3.
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPosauneIIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(posauneIII) \tempiPartMvtIV
 			}
@@ -263,7 +333,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.7 \bold 4.
 			}
 		}
 		\layout {
@@ -271,9 +341,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTubaMvtI
-%			}
+			\new Voice {
+				\formatTubaMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(tuba) \tempiPartMvtI
 			}
@@ -295,9 +365,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTubaMvtII
-%			}
+			\new Voice {
+				\formatTubaMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(tuba) \tempiPartMvtII
 			}
@@ -311,7 +381,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.6 \bold 2.
 			}
 		}
 		\layout {
@@ -319,9 +389,31 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTubaMvtIV
-%			}
+			\new Voice {
+				\formatTubaMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(tuba) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameTubaMvtIII \musicTubaMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #1.2 \bold 3.
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTubaMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(tuba) \tempiPartMvtIV
 			}
@@ -335,7 +427,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.6 \bold 4.
 			}
 		}
 		\layout {

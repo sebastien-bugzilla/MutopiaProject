@@ -10,7 +10,7 @@ musicPosauneIIMvtIV = \relative c {
 %	\transposition a
 	\section \sectionLabel Finale
 % Bars 1 to 5
-	R1*15
+	\mmrLength #39 \mmrnDown R1*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -54,9 +54,9 @@ musicPosauneIIMvtIV = \relative c {
 	
 	
 % Bars 51 to 55
-	r4 g\p\< fis\! e4~\> 
+	r4 g\p\< fis e4~\> 
 	e8\! r r4 r2
-	r4 g\pp\< fis\! e4~\>
+	r4 g\pp\< fis e4~\>
 	e8\! r r4 r2
 	R1*3
 % Bars 56 to 60
@@ -67,7 +67,7 @@ musicPosauneIIMvtIV = \relative c {
 	
 % Bars 66 to 70
 	\ni \mmrPos #-4 R1 \no
-	\once \voiceTwo r4 c'8\f r e r a,8\f r
+	\once \voiceTwo r4 c'8\f r e r a,8 r
 	e' r r4 r2
 	r4 c8 r e r a, r \mark \default
 	e' r r4 r2
@@ -109,10 +109,10 @@ musicPosauneIIMvtIV = \relative c {
 	
 	\mark \default
 	b4.\f a8 g4. fis8
-	e4.\f dis8 cis4. b8
+	e4. dis8 cis4. b8
 % Bars 116 to 120
 	cis'4.\f b8 a4. g8
-	fis4.\f\< e8 dis4. cis8\!
+	fis4.\< e8 dis4. cis8\!
 	b r r4 e4\ff e
 	r e r e
 	r e r e
@@ -123,8 +123,8 @@ musicPosauneIIMvtIV = \relative c {
 	r2 b2\mf\>~
 	\after 1*7/8 \! b1
 % Bars 126 to 130
-	b1\pp\<
-	e\mp\>~ \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) b1\pp\<
+	\hairpinShorten #'(-0.5 . -0.5) e\mp\>~ \mark \default
 	e8\pp r r4 r2
 	R1*19
 % Bars 131 to 135
@@ -205,10 +205,10 @@ musicPosauneIIMvtIV = \relative c {
 	e
 	g
 	c
-	R1*2
+	R1*4
 	
 % Bars 216 to 220
-	R1*2
+	
 	
 	e8 r r4 r2
 	R1*7
@@ -221,7 +221,7 @@ musicPosauneIIMvtIV = \relative c {
 	bes \mark \default
 	cis8 r r4 r2
 % Bars 231 to 235
-	R1*27
+	\mmrLength #14 R1*27
 % Bars 236 to 240
 	
 % Bars 241 to 245
@@ -321,7 +321,7 @@ musicPosauneIIMvtIV = \relative c {
 	e\> fis g a\!
 	e8\ff r r b'\f a4. g8
 % Bars 361 to 365
-	fis4.\f e8 dis4. d8
+	fis4. e8 dis4. d8
 	cis4 cis dis eis
 	fis\< gis a b\!
 	fis8\ff r r cis'\ff b4. a8
@@ -339,8 +339,8 @@ musicPosauneIIMvtIV = \relative c {
 	r2 dis2\mf\>~
 	\after 1*7/8 \! dis1
 % Bars 376 to 380
-	dis\pp\<
-	gis\mp\>~
+	\hairpinShorten #'(-0.5 . -0.5) dis\pp\<
+	\hairpinShorten #'(-0.5 . -0.5) gis\mp\>~
 	gis8\pp r r4 r2
 	R1*11
 % Bars 381 to 385
@@ -393,7 +393,7 @@ musicPosauneIIMvtIV = \relative c {
 	a g fis e
 % Bars 436 to 440
 	fis8 r r4 r2
-	R1*11
+	\mmrnDown R1*11
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -435,13 +435,13 @@ musicPosauneIIMvtIV = \relative c {
 % Bars 476 to 480
 	
 % Bars 481 to 485
-	r8 a\f fis[ cis] b r r4 \mark \default
+	r8 a\f fis[ cis] a r r4 \mark \default
 	R1*8
 % Bars 486 to 490
 	
 	
 	
-	\mark \markAaBox
+	\resetMarkSpace \mark \markAaBox
 	gis'4\fff gis cis cis
 % Bars 491 to 495
 	gis gis gis gis
@@ -452,13 +452,13 @@ musicPosauneIIMvtIV = \relative c {
 % Bars 496 to 500
 	fis gis b cis
 	b8^\marcatissimo gis fis gis b4 cis
-	b8 gis fis gis b4 cis \mark \markBbBox
+	b8 gis fis gis b4 cis \resetMarkSpace \mark \markBbBox
 	b8 b a g fis e eis fis
-	gis gis a ais b bis cis dis
+	gis! gis a ais b bis cis dis
 % Bars 501 to 505
 	gis4 cis, b a
 	b8. gis16 e'4~ e8 gis, gis gis
-	fis2\sfff fis\sfff \bar "||"
+	fis2\sfff \noteHeadEsw #'(-2.7 . 1) fis\sfff \revertNoteHeadEsw \bar "||"
 	\time 2/2 b4 r4 r2
 	R1
 % Bars 506 to 510
@@ -468,7 +468,7 @@ musicPosauneIIMvtIV = \relative c {
 	R1
 	e4\fff r cis' r 
 % Bars 511 to 515
-	gis r a r \mark \markCcBox
+	gis r a r \resetMarkSpace \mark \markCcBox
 	gis r4 r2
 	R1
 	r4 b_\pcresc gis a
@@ -484,7 +484,7 @@ musicPosauneIIMvtIV = \relative c {
 	c c r g
 	gis! gis r e
 	eis eis r eis
-	fis fis r a \mark \markDdBox
+	fis fis r a \resetMarkSpace \mark \markDdBox
 % Bars 526 to 530
 	a r b2~
 	b c~
@@ -496,11 +496,11 @@ musicPosauneIIMvtIV = \relative c {
 	g gis
 	e'! dis
 	gis,4 r b r
-	b r e dis
+	b r e! dis
 % Bars 536 to 540
 	gis, r b r
-	b r e dis
-	gis,_\semprefff gis r2
+	b r e! dis
+	\startMeasureCount gis,_\semprefff gis r2
 	gis4 gis r2
 	gis4 gis r2
 % Bars 541 to 545
@@ -508,7 +508,7 @@ musicPosauneIIMvtIV = \relative c {
 	gis4 gis r2
 	gis4 gis r2
 	gis4 gis r2
-	gis4 gis r2 \bar "||" 
+	gis4 gis r2 \stopMeasureCount \bar "||" 
 % Bars 546 to 550
 	\time 6/4 gis4 r r a r r
 	b r r a r r
@@ -518,7 +518,7 @@ musicPosauneIIMvtIV = \relative c {
 % Bars 551 to 555
 	b r r a r r
 	b r r a r r
-	b r r a r r \mark \markEeBox
+	b r r a r r \resetMarkSpace \mark \markEeBox
 	b r r r2.
 	b4 r r r2.
 % Bars 556 to 560

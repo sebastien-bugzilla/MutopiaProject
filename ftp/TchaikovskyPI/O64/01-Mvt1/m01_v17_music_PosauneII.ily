@@ -9,7 +9,7 @@ musicPosauneIIMvtI = \relative c {
 	\key e \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*19
+	\mmrLength #21 \mmrnDown R1*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,7 +29,7 @@ musicPosauneIIMvtI = \relative c {
 % Bars 36 to 40
 	
 	\ni R1\fermata \no \bar "||" \time 6/8
-	R2.*19
+	\mmrLength #21 \mmrnDown R2.*19
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -106,31 +106,44 @@ musicPosauneIIMvtI = \relative c {
 	a4 a8 ais4 ais8 \mark \default
 	b4 b8 ais r r
 % Bars 116 to 120
-	R2.*24
+	R2.*12
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
+	
+	\mmrLength #14 \mmrnDown R2.*3
+	
+	
 % Bars 131 to 135
+	R2.
+	\mmrLength #18 \tempoXoffset #-1.5 R2.*8
+	
+	
 	
 % Bars 136 to 140
 	
 	
 	
 	\mark \default
-	R2.*42
+	R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	\mmrLength #19 \mmrnDown R2.*18
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	
+	
+	
+	
+	\mmrLength #23.5 \mmrnDown R2.*12
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -172,7 +185,7 @@ musicPosauneIIMvtI = \relative c {
 	d r r r4 r8
 	fis r r r4 r8
 	fis r r r4 r8 \mark #11
-	R2.*26
+	\mmrLength #18 R2.*26
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -198,16 +211,16 @@ musicPosauneIIMvtI = \relative c {
 	fis2.\p\< \mark \default
 	e8[\ff r16 e e8] r4 r8
 % Bars 256 to 260
-	r4 r8 r r fis\ff
+	r4 r8 r4 fis8\ff
 	e8[ r16 e e8] r4 r8
-	r4 r8 r r fis
+	r4 r8 r4 fis8
 	e8[ r16 e e8] r4 r8
 	f8[ r16 f f8] r4 r8
 % Bars 261 to 265
 	f8[ r16 f f8] r4 r8
-	r4 r8 r r f
+	r4 r8 r4 f8
 	f8[ r16 f f8] r4 r8
-	r4 r8 r r f
+	r4 r8 r4 f8
 	f8[ r16 f f8] r4 r8
 % Bars 266 to 270
 	f8[ r16 f f8] r4 r8
@@ -259,9 +272,9 @@ musicPosauneIIMvtI = \relative c {
 	r4 r8 e4 e8
 	r4 r8 e4.\mf
 	r4 r8 e4.
-	r4 e8_\dimmarkup r4 e8
+	r8 r e8_\dimmarkup r r e8
 % Bars 316 to 320
-	r4 e8 r4 e8
+	r r e8 r r e8
 	R2.*3
 	
 	\mark \default
@@ -314,12 +327,20 @@ musicPosauneIIMvtI = \relative c {
 % Bars 371 to 375
 	b4 b8 bis4 bis8
 	cis4 cis8 bis r r
-	R2.*20
+	R2.*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
+	
+	
+	
+	\mmrLength #15 \mmrnDown R2.*3
 % Bars 386 to 390
+	
+	
+	R2.
+	R2.*4
 	
 % Bars 391 to 395
 	
@@ -330,8 +351,8 @@ musicPosauneIIMvtI = \relative c {
 % Bars 396 to 400
 	\mmrPos #-4 R \no \mark \default
 	a4.->\p gis
-	\after 2.*5/6 \! a2.\>
-	gis4.->\pp fis
+	\hairpinShorten #'(1 . 0) a2.\>
+	gis4.^>\pp fis
 	gis2.
 % Bars 401 to 405
 	e4.\ppp r4 r8
@@ -342,7 +363,9 @@ musicPosauneIIMvtI = \relative c {
 % Bars 406 to 410
 	R2.
 	a'\p
-	R2.*31
+	R2.
+	\mmrLength #19 \mmrnDown R2.*18
+	
 % Bars 411 to 415
 	
 % Bars 416 to 420
@@ -351,6 +374,7 @@ musicPosauneIIMvtI = \relative c {
 	
 % Bars 426 to 430
 	
+	\mmrLength #27 \mmrnDown R2.*12
 % Bars 431 to 435
 	
 % Bars 436 to 440
@@ -434,7 +458,7 @@ musicPosauneIIMvtI = \relative c {
 	g r r gis\f r r 
 	fis r r fis r r
 	g! r r gis r r
-	fis r r fis r r \mark \markAaBox
+	fis r r fis r r \resetMarkSpace \mark \markAaBox
 	g! r r r4 r8
 % Bars 516 to 520
 	R2.*7

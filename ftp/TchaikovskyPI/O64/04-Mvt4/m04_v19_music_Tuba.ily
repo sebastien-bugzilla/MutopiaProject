@@ -47,11 +47,11 @@ musicTubaMvtIV = \relative c {
 	
 	
 	
-	\ni \mmrPos #8 R1
-	\mmrPos #8 R
+	\ni \mmrPos #-9 R1
+	\mmrPos #-9 R
 % Bars 41 to 45
-	\mmrPos #8 R
-	\mmrPos #8 R \no
+	\mmrPos #-9 R
+	\mmrPos #-9 R \no
 	e,2\ff g
 	e g
 	c2 c4 c \mark \default
@@ -81,7 +81,7 @@ musicTubaMvtIV = \relative c {
 	
 	
 	
-	r4 a,\ff b c
+	r4 a,-\offset X-offset -3 \ff b c
 	d dis e fis
 % Bars 76 to 80
 	g a b c
@@ -119,7 +119,7 @@ musicTubaMvtIV = \relative c {
 	a~
 	a~
 	a \mark \default
-	\after 1*7/8 \! a,~\f\>
+	\hairpinShorten #'(-0.5 . -1) \after 1*7/8 \! a,~\f\>
 	a~_\crescmarkup
 % Bars 116 to 120
 	a~
@@ -140,7 +140,7 @@ musicTubaMvtIV = \relative c {
 % Bars 131 to 135
 	
 % Bars 136 to 140
-	\ni \mmrPos #-6 R1
+	\ni \mmrPos #-8.5 R1
 	\mmrPos #-6 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
@@ -180,9 +180,9 @@ musicTubaMvtIV = \relative c {
 	R1*2
 	
 	c8\ff r r4 c8 r r4
-	R1
+	R1*2
 % Bars 176 to 180
-	R1
+	
 	r2 r4 e8 d
 	e r r4 c8 r r4
 	r2 a \mark \default
@@ -195,13 +195,13 @@ musicTubaMvtIV = \relative c {
 	d dis
 % Bars 186 to 190
 	e4~ e8 r r2
-	R1
+	R1*3
+	
+	
+	c8-\offset X-offset -1.5 \ff r r4 c8 r r4
+% Bars 191 to 195
 	R1*2
 	
-	c8\ff r r4 c8 r r4
-% Bars 191 to 195
-	R1
-	R1
 	r2 r4 e8 d
 	e r r4 c8 r r4
 	r2 a
@@ -224,14 +224,14 @@ musicTubaMvtIV = \relative c {
 	c8 r r4 c8 r r4 \mark \default
 	c8\ff r r4 g r
 % Bars 211 to 215
-	c r g r
+	\startMeasureCount c r g r
 	c r g r
 	c r g r
 	c r g r
 	c r g r
 % Bars 216 to 220
 	c r g r
-	c r g r
+	c r g r \stopMeasureCount
 	bes8 r r4 r2
 	R1*6
 	
@@ -240,7 +240,7 @@ musicTubaMvtIV = \relative c {
 	
 	
 	
-	\after 1*7/8 \! c1\f\<
+	c1\f\<
 % Bars 226 to 230
 	cis\ff
 	d
@@ -261,7 +261,7 @@ musicTubaMvtIV = \relative c {
 	
 	\mark \default
 	\ni \mmrPos #-4 R1
-	\mmrPos #-5 R
+	\mmrPos #-6 R
 	\mmrPos #-4 R
 % Bars 261 to 265
 	\mmrPos #-4 R
@@ -270,7 +270,7 @@ musicTubaMvtIV = \relative c {
 	aes
 	\after 1*7/8 \! ges\<
 % Bars 266 to 270
-	fes2\>~ fes8\! r r4
+	fes2\f\>~ fes8\! r r4
 	R1*15
 % Bars 271 to 275
 	
@@ -356,7 +356,7 @@ musicTubaMvtIV = \relative c {
 	a~
 	a \mark \default
 % Bars 356 to 360
-	\after 1*7/8 \! a,\f\>~
+	\after 1*7/8 \! a,-\offset X-offset -2 \f\>~
 	a_\mfcresc~
 	a1~
 	a
@@ -404,11 +404,11 @@ musicTubaMvtIV = \relative c {
 	
 	
 	\mark \default
-	\ni \mmrPos #6 R1
-	\mmrPos #6 R
+	\ni \mmrPos #-6 R1
+	\mmrPos #-6 R
 % Bars 416 to 420
-	\mmrPos #6 R
-	\mmrPos #6 R \no
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	R1*7
 	
 	
@@ -419,10 +419,10 @@ musicTubaMvtIV = \relative c {
 	
 	\ni \mmrPos #6 R1 \no
 % Bars 426 to 430
-	b,8\ff r r4 r2
+	b,8-\offset X-offset -2.5 \ff r r4 r2
 	a''2.\ff a8 a
 	e1\mf
-	\after 1*7/8 \! d\mf\<
+	\hairpinShorten #'(0 . -1.5) \after 1*7/8 \! d\mf\<
 	e2.\ff e8 e
 % Bars 431 to 435
 	dis2. dis8 dis
@@ -485,7 +485,7 @@ musicTubaMvtIV = \relative c {
 	
 	
 	
-	\mark \markAaBox
+	\resetMarkSpace \mark \markAaBox
 	e'4\fff e a a
 % Bars 491 to 495
 	e e e e
@@ -495,8 +495,8 @@ musicTubaMvtIV = \relative c {
 	gis ais b cis8. cis,16
 % Bars 496 to 500
 	dis4 e fis fisis
-	gis8^\marcatissimo cis, dis e fis4 fisis
-	gis8 cis, dis e fis4 fisis \mark \markBbBox
+	gis8^\marcatissimo cis, dis e fis!4 fisis
+	gis8 cis, dis e fis4 fisis \resetMarkSpace \mark \markBbBox
 	gis8 gis, a ais b cis d dis
 	e eis fis fisis gis a ais bis
 % Bars 501 to 505
@@ -504,21 +504,17 @@ musicTubaMvtIV = \relative c {
 	gis8. cis16 b4~ b8 b b b
 	fis'2\sfff b,\sfff \bar "||" 
 	\time 2/2 e4 r r2
-	R1*3
+	R1*6
 % Bars 506 to 510
 	
-	
-	R1*3
-	
-	
 % Bars 511 to 515
-	b4 bis cis dis \mark \markCcBox
+	b4 bis cis dis \resetMarkSpace \mark \markCcBox
 	e r r2
-	R1*3
+	R1*5
 	
 	
 % Bars 516 to 520
-	R1*2 
+	
 	
 	bes4\fff r bes r
 	a r a r
@@ -528,7 +524,7 @@ musicTubaMvtIV = \relative c {
 	bes bes' r bes,
 	b! b'! r b,
 	b b' r b,
-	b b' r b, \mark \markDdBox
+	b b' r b, \resetMarkSpace \mark \markDdBox
 % Bars 526 to 530
 	b r b'2~
 	b bes~
@@ -562,7 +558,7 @@ musicTubaMvtIV = \relative c {
 % Bars 551 to 555
 	e r r a r r
 	e r r a r r 
-	e r r a r r \mark \markEeBox
+	e r r a r r \resetMarkSpace \mark \markEeBox
 	e r r r2.
 	e4 r r r2.
 % Bars 556 to 560

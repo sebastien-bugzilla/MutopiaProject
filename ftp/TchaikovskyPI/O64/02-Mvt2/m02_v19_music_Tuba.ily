@@ -9,33 +9,57 @@ musicTubaMvtII = \relative c {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1.*15
+	\mmrLength #34 \mmrnDown R1.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	R1.*2
 	
-	
-	\mark \default
+	<< R1. { s2. \tempoXoffset #-3 s2.} >> \mark \default
 % Bars 16 to 20
-	R1.*29
+	R1.*3
+	
+	
+	R1.
+	R1.*4
 % Bars 21 to 25
 	
+	
+	
+	\mmrnDown R1.
+	R
 % Bars 26 to 30
+	R1.*2
+	
+	\mmrnDown R1.*5
+	
 	
 % Bars 31 to 35
 	
+	
+	\mmrnDown R1.*2
+	
+	R1.
 % Bars 36 to 40
+	R
+	R1.*2
+	
+	\mmrnDown \mmrLength #12 R1.*4
 	
 % Bars 41 to 45
 	
 	
-	
-	\mark \default
-	R1.*7
+	R1.
+	\mmrnDown R1. \resetMarkSpace \mark \default
+	R1.
 % Bars 46 to 50
+	\mmrLength #13 R1.*2
 	
+	R1.
+	R
+	\mmrLength #15 R1.*2
 % Bars 51 to 55
 	\mark \default
 	\ni \mmrPos #4 R1. 
@@ -44,18 +68,18 @@ musicTubaMvtII = \relative c {
 	\mmrPos #4 R
 % Bars 56 to 60
 	\mmrPos #4 R
-	\mmrPos #6 R \no
+	\mmrPos #-6 R \no
 	b2.~\mp\> b4. bes\!
 	a8\p r r r4 r8 r2.
 	R1.
 % Bars 61 to 65
-	d,4.\pp~ d8 r r  r2.
+	d,4.-\offset X-offset -2.5 \pp~ d8 r r  r2.
 	d4.~ d8 r r r2.
 	d4.(\ppp fis8) r r r2. 
 	R1.*2
 	\bar "||"
 % Bars 66 to 70
-	\time 4/4 R1*9
+	\time 4/4 \mmrLength #25 \mmrnDown R1*9
 % Bars 71 to 75
 	
 	
@@ -84,7 +108,7 @@ musicTubaMvtII = \relative c {
 	gis2 gis~
 	gis1~
 	\after 1*7/8 \! gis\<
-	g!1~\ff
+	g!1~-\offset X-offset -2 \ff
 	g
 % Bars 101 to 105
 	g1~
@@ -103,21 +127,21 @@ musicTubaMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.*3
+	\tempoXoffset #0.5 R1.*2
 	
-	
+	R1.
 	\ni \mmrPos #6 R1.
 	\mmrPos #4 R
 % Bars 121 to 125
 	\mmrPos #4 R \no
 	b4.\pp\< a gis g\!
-	fis4.\mp\>~ fis8\! r r r2. \mark \default
+	\hairpinShorten #'(-0.5 . -1.5) fis4.\mp\>~ fis8\! r r r2. \mark \default
 	R1.*2
 	
 % Bars 126 to 130
 	R1.*2
 	
-	R1.*4
+	\mmrnDown R1.*4
 	
 	
 % Bars 131 to 135
@@ -127,7 +151,7 @@ musicTubaMvtII = \relative c {
 	b4.\mp cis d r4 r8
 	b4. cis d r4 r8
 % Bars 136 to 140
-	eis,4.\mf fis gis r4 r8
+	eis,4.-\offset X-offset 0.5 \mf fis gis r4 r8
 	eis4. fis gis r4 r8 \mark \default
 	fis4.\f~ fis8 r r f4.~ f8 r r
 	e4.~ e8 r r a4.~ a8 r r
@@ -141,9 +165,9 @@ musicTubaMvtII = \relative c {
 		\once \voiceOne r2 d4\f cis
 % Bars 146 to 150
 		d8\ff r r4 r2
-		R1
-		R
-		e2\ff\> d\f
+		\mmrLength #12 \mmrnDown R1*2
+		
+		\hairpinShorten #'(-0.5 . -0.5) e2\ff\> d\f
 		cis_\crescmarkup c
 % Bars 151 to 155
 		b4 a gis\ff g
@@ -152,8 +176,8 @@ musicTubaMvtII = \relative c {
 		d4\f~ d8 e fis4\> gis8 ais\!
 		b2\mf b,4\> bes\!
 % Bars 156 to 160
-		a4~\mp\> a8\p r r2
-		R1 \bar "||"
+		\hairpinShorten #'(-0.5 . -0.5) a4~-\offset X-offset -0.5 \mp\> a8-\offset X-offset 0.5 \p r r2
+		\mmrLength #12 R1 \bar "||"
 	}
 	\unsetTimeSignature \time 4/4 gis'1\fff~
 	gis
@@ -165,11 +189,11 @@ musicTubaMvtII = \relative c {
 	\tuplet 3/2 4 {g!8\fff g g  g g g} g->[ g]-> g-> g->
 	g-> g-> r4 r2
 % Bars 166 to 170
-	R1*2
+	R1*4
 	
-	R1
-	R \bar "||"
-	\time 12/8 R1.*14
+	
+	\bar "||"
+	\time 12/8 \mmrLength #20 \mmrnDown R1.*13
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -177,6 +201,6 @@ musicTubaMvtII = \relative c {
 % Bars 181 to 184
 	
 	
-	
+	R1.
 	\ni R1.\fermata \no \bar "|."
 }

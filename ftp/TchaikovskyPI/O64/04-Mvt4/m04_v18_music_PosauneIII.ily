@@ -10,7 +10,7 @@ musicPosauneIIIMvtIV = \relative c {
 %	\transposition a
 	\section \sectionLabel Finale
 % Bars 1 to 5
-	R1*15
+	\mmrLength #39 \mmrnDown R1*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -94,7 +94,7 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	\ni \mmrPos #-7 R1
 	\mmrPos #-6 R
-	\mmrPos #-6 R \no
+	\mmrPos #-5 R \no
 % Bars 106 to 110
 	g8\mf r r4 r2
 	R1*7
@@ -118,16 +118,12 @@ musicPosauneIIIMvtIV = \relative c {
 	\after 1*7/8 \! e1
 % Bars 126 to 130
 	e'2\pp~ e8 r r4
-	R1 \mark \default
-	R1*12
+	\mmrLength #18 R1 \mark \default
+	R1*20
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
-	
-	
-	
-	R1*8
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -173,7 +169,7 @@ musicPosauneIIIMvtIV = \relative c {
 	R1
 	c2.\ff c8 c
 	a2. f8 f
-	g\ff r r4 g8 r r4
+	g r r4 g8 r r4
 % Bars 191 to 195
 	R1
 	c2. c8 c
@@ -235,18 +231,13 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 256 to 260
 	
 	\mark \default
-	R1*5
+	R1*24
 	
 	
 % Bars 261 to 265
 	
-	
-	R1*4
-	
-	
 % Bars 266 to 270
 	
-	R1*15
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -320,7 +311,7 @@ musicPosauneIIIMvtIV = \relative c {
 	
 % Bars 346 to 350
 	\ni \mmrPos #-6 R1
-	\mmrPos #-6 R \no
+	\mmrPos #-4 R \no
 	g8\mf r r4 r2
 	R1*7
 	
@@ -335,9 +326,9 @@ musicPosauneIIIMvtIV = \relative c {
 	r a2\mf\<~
 	a1~
 	\after 1*7/8 \! a
-	g8\ff r r4 b2\mf~
+	g8\ff r r4 b2\mf\<~
 % Bars 361 to 365
-	b1~\<
+	b1~
 	b~
 	\after 1*7/8 \! b
 	a8\ff r r4 cis2\mf\<~
@@ -400,7 +391,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 426 to 430
 	b8\ff r r4 r2
 	c'2.\ff c8 c
-	b4~\mf b8 r r2
+	b4~ b8 r r2
 	R1
 	e,2.\ff e8 e
 % Bars 431 to 435
@@ -464,7 +455,7 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	
 	
-	\mark \markAaBox
+	\resetMarkSpace \mark \markAaBox
 	e'4\fff e a a
 % Bars 491 to 495
 	e e e e
@@ -474,14 +465,14 @@ musicPosauneIIIMvtIV = \relative c {
 	gis ais, b cis8. cis16
 % Bars 496 to 500
 	dis4 e fis fisis
-	gis8^\marcatissimo cis, dis e fis4 fisis
-	gis8 cis, dis e fis4 fisis \mark \markBbBox
+	gis8^\marcatissimo cis, dis e fis!4 fisis
+	gis8 cis, dis e fis!4 fisis \mark \markBbBox
 	gis8 gis, a ais b cis d dis
 	e eis fis fisis gis a ais bis
 % Bars 501 to 505
 	cis4 a e cis
 	gis8. cis16 b4~ b8 b b b
-	fis2\sfff b\sfff \bar "||" 
+	fis2\sfff \noteHeadEsw #'(-3.5 . 1) b\sfff \revertNoteHeadEsw \bar "||" 
 	\time 2/2 e4 r r2
 	R1*3
 % Bars 506 to 510
@@ -491,7 +482,7 @@ musicPosauneIIIMvtIV = \relative c {
 	bis cis b c\!
 	g\fff gis a ais
 % Bars 511 to 515
-	b bis cis dis \mark \markCcBox
+	b bis cis dis \resetMarkSpace \mark \markCcBox
 	e r r2
 	R1*3
 	
@@ -507,7 +498,7 @@ musicPosauneIIIMvtIV = \relative c {
 	bes bes r bes
 	b! b r b
 	b b r b
-	b b r b \mark \markDdBox
+	b b r b \resetMarkSpace \mark \markDdBox
 % Bars 526 to 530
 	b r b'2~
 	b bes~
@@ -523,7 +514,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 536 to 540
 	e r d r
 	cis! r c b
-	e_\semprefff e r2
+	\startMeasureCount e_\semprefff e r2
 	e4 e r2
 	e4 e r2
 % Bars 541 to 545
@@ -531,9 +522,9 @@ musicPosauneIIIMvtIV = \relative c {
 	e4 e r2
 	e4 e r2
 	e4 e r2
-	e4 e r2 \bar "||"
+	e4 e r2 \stopMeasureCount \bar "||"
 % Bars 546 to 550
-	\time 6/4 e4 r r e r r
+	\time 6/4 \startMeasureCount e4 r r e r r
 	e r r e r r
 	e r r e r r
 	e r r e r r
@@ -541,7 +532,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 551 to 555
 	e r r e r r
 	e r r e r r 
-	e r r e r r \mark \markEeBox
+	e r r e r r \stopMeasureCount \resetMarkSpace \mark \markEeBox
 	e r r r2.
 	e4 r r r2.
 % Bars 556 to 560

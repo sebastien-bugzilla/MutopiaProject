@@ -1953,7 +1953,7 @@ cueVoicePosauneIMvtII = \relative c {
 	<>_\markup {(Klar.)}
 	s1.*8
 	% bar 24
-	<>_\markup {(Ob.)}
+	<>-\offset X-offset -1 _\markup {(Ob.)}
 	s1.*28
 	% bar 52 - 54
 	\cueClef bass e2.^\markup {Pos.III} d
@@ -1962,16 +1962,16 @@ cueVoicePosauneIMvtII = \relative c {
 	s1.*11 s1*30
 	% bar 96 - 98
 	\cueClef treble cis'!2_\markup {Trpt.I} gis'
-	cis e
-	cis gis4 e \cueClefUnset
+	cis! e
+	cis! gis4 e \cueClefUnset
 	s1*9 s1.*18
 	% bar 126 - 127
 	\cueClef bass b,4._\markup {Pos.III} a gis g
 	fis f \tuplet 2/3 4. {\stemDown e8 e'} \stemNeutral d r r \cueClefUnset
 	s1.*10
 	% bar 138 - 140
-	\cueClef bass <fis, fis'>4.~^\markup {Vcll.}_\markup {\column {\lower #1.5 "Kb." "Tuba"}} q8 r r <f f'>4.~ q8 r r
-	<e e'>4.~ q8 r r <a a'>4.~ q8 a_\markup {\column {\lower #1.5 "Vcll." "Kb."}} b
+	\cueClef bass <fis, fis'>4.~^\markup {Vcll.}-\offset X-offset #-2 _\markup {\column {\lower #1.5 "Kb." "Tuba"}} q8 r r <f f'>4.~ q8 r r
+	<e e'>4.~ q8 r r <a a'>4.~ q8 a^\markup {\column {\lower #1.5 "Vcll." "Kb."}} b
 	cis dis e fis g bes b\noBeam \cueClefUnset dis_\markup {Viol.} e g gis a
 }
 cueVoicePosauneIMvtIV = \relative c {
@@ -2078,7 +2078,7 @@ cueVoicePosauneIIMvtII = \relative c {
 	<>_\markup {(Klar.)}
 	s1.*8
 	% bar 24
-	<>_\markup {(Ob.)}
+	<>-\offset X-offset -2 _\markup {(Ob.)}
 	s1.*28
 	% bar 52 - 54
 	\cueClef bass e2.^\markup {Pos.III} d
@@ -2087,28 +2087,31 @@ cueVoicePosauneIIMvtII = \relative c {
 	s1.*11 s1*30
 	% bar 96 - 98
 	\cueClef treble cis'!2_\markup {Trpt.I} gis'
-	cis e
-	cis gis4 e \cueClefUnset
-	s1*9 s1.*18
+	cis! e
+	cis! gis4 e \cueClefUnset
+	s1*9 s1.*8
+	% bar 116
+	<>_\markup {Viol. Horn I}
+	s1.*10
 	% bar 126 - 127
 	\cueClef bass b,4._\markup {Pos.III} a gis g
 	fis f \tuplet 2/3 4. {\stemDown e8 e'} \stemNeutral d r r \cueClefUnset
 	s1.*10
 	% bar 138 - 140
-	\cueClef bass <fis, fis'>4.~^\markup {Vcll.}_\markup {\column {\lower #1.5 "Kb." "Tuba"}} q8 r r <f f'>4.~ q8 r r
-	<e e'>4.~ q8 r r <a a'>4.~ q8 a_\markup {\column {\lower #1.5 "Vcll." "Kb."}} b
-	cis dis e fis g bes b\noBeam \cueClefUnset dis_\markup {Viol.} e g gis a
+	\cueClef bass <fis, fis'>4.~^\markup {Vcll.}-\offset X-offset -3 _\markup {\column {\lower #1.5 "Kb." "Tuba"}} q8 r r <f f'>4.~ q8 r r
+	<e e'>4.~ q8 r r <a a'>4.~ q8 a^\markup {\column {\lower #1.5 "Vcll." "Kb."}} b
+	cis dis e fis g bes b\noBeam \cueClefUnset dis^\markup {Viol.} e g gis a
 }
 cueVoicePosauneIIMvtIV = \relative c {
 	s1*15
 	% bar 16 - 19
-	\cueClef treble \stemUp b''4.^\markup {Trpt.I} b16 b b4. b16 b
+	\cueClef treble \stemUp \hairpinShorten #'(-0.5 . -0.5) b''4.-\offset X-offset -0.5 \sf\>^\markup {Trpt.I} b16-\offset X-offset 0.5 \pp b b4. b16 b
 	b8 r b2.
 	b4. b16 b b4. b16 b
 	b8 r b2. \cueClefUnset
 	s1*19
 	% bar 39 - 42
-	\cueClef treble b4.^\markup {Trpt.I} b16 b b4. b16 b
+	\cueClef treble b4.\f^\markup {Trpt.I} b16 b b4. b16 b
 	b8 r b2. \cueClefUnset \stemNeutral
 	b,4.\f^\markup {Pos.I} b16 b b4. b16 b
 	b8 r b2.
@@ -2127,17 +2130,17 @@ cueVoicePosauneIIMvtIV = \relative c {
 	e a^\markup {Pos.III} cis a
 	s1*2
 	% bar 168 - 170
-	g4^\markup {Tuba} b^\markup {Pos.III} e a
-	a,^\markup {Tuba} cis^\markup {Pos.III} fis b
-	b,^\markup {Tuba} d^\markup {Pos.III} g b \cueClefUnset
+	g4^\markup {Tuba} b_\markup {Pos.III} e a
+	a,^\markup {Tuba} cis_\markup {Pos.III} fis b
+	b,^\markup {Tuba} d_\markup {Pos.III} g b \cueClefUnset
 	s1*119
 	% bar 290 - 295
 	\cueClef bass r2^\markup {Fag.I} c
 	c b
 	b1->(
-	a)~
 	a~
-	a \cueClefUnset
+	a~
+	a) \cueClefUnset
 	s1*44
 	% bar 340 - 341
 	\cueClef treble r4^\markup {Viol.} cis'( b cis)
@@ -2166,9 +2169,9 @@ cueVoicePosauneIIIMvtI = \relative c {
 	a8 a4~ a8 \oneVoice \cueClefUnset s4
 	s2.*63
 	% bar 131 - 133
-	a,8(^\markup {Fag.} b cis d e eis)
-	fis^\markup {\line {\column {\lower #1.5 "Vla." "Vcll."} "pizz" }} eis e d cis b
-	\voiceOne g fis e \oneVoice s4.
+	\cueClef tenor a,8(^\markup {Fag.} b cis d e eis)
+	fis_\markup {"Vla. Vcll."}-\tweak extra-offset #'(0 . 3.9) _\pizz eis e d cis b
+	\voiceOne g fis e \cueClefUnset \oneVoice s4.
 	s2.*48
 	% bar 182 - 185
 	\cueClef treble r8^\markup {\column {\lower #1.5 "Fl. Ob." "Klar."}} a'( b) cis4( d8)
@@ -2187,7 +2190,7 @@ cueVoicePosauneIIIMvtI = \relative c {
 	cis(^\markup {Vcll.} b a gis) fis-. e-. \cueClefUnset
 	s2.*30
 	% bar 284
-	\cueClef treble <d'' d'>8[^\markup {\column {\lower #1.5 "Fl. Klar." "Hr.III"}} r16 q q8]^(~ q <e e'>-.) <f f'>-. \cueClefUnset
+	\cueClef treble <d'' d'>8[^\markup {"Fl. Klar."}-\offset X-offset -1 _\markup {Hr.III} r16 q q8]^(~ q <e e'>-.) <f f'>-. \cueClefUnset
 	s2.*58
 	% bar 343 - 346
 	\cueClef treble g'8-.[^\markup {Viol.I} r16 g g8]~ g8[ r16 fis fis8]~
@@ -2196,9 +2199,9 @@ cueVoicePosauneIIIMvtI = \relative c {
 	\voiceTwo a8 a4~ a8 \oneVoice \cueClefUnset s4
 	s2.*41
 	% bar 388 - 390
-	b,8(^\markup {\column {\lower #1.5 "Klar." "Fag." }} cis dis e fis fisis)
-	gis^\markup {\line{ \column {\lower #1.5 "Br." "Vlc."} "pizz"}} fisis fis e dis cis
-	\voiceOne a gis fis \oneVoice s4.
+	\cueClef tenor b,8(-\offset X-offset -4 ^\markup {\column { \lower #1.5 "Klar." "Fag."}} cis dis e fis fisis)
+	gis^\markup {"Br. Vlc."}_\pizz fisis fis e dis cis
+	\voiceOne a gis fis \cueClefUnset \oneVoice s4.
 	s2.*48
 	% bar 439 - 442
 	\cueClef treble r8^\markup {\column {\lower #1.5 "Fl. Ob." "Klar."}} b'( cis) dis4( e8)
@@ -2217,14 +2220,14 @@ cueVoicePosauneIIIMvtII = \relative c {
 	<>_\markup {(Klar.)}
 	s1.*8
 	% bar 24
-	<>_\markup {(Ob.)}
+	<>-\offset X-offset -1 _\markup {(Ob.)}
 	s1.*21
 	% bar 45 - 46
 	d'4.^\markup {\column {\lower #1.5 "Viol." "Br."}} fis,4( b8) a4.~ a4 a8(
 	\tuplet 2/3 4. {b cis d b)} fis'4.~ fis8 r r
 	s1.*2
 	% bar 49 - 51
-	d4.^\markup {\column {\lower #1.5 "Viol." "Br."}} fis,4( b8) a4.~ a4 a8(
+	d4.-\offset X-offset -3 ^\markup {\column {\lower #1.5 "Viol." "Br."}} fis,4( b8) a4.~ a4 a8(
 	\tuplet 2/3 4. {b cis d b)} fis'4.~ fis8 r fis,(
 	\tuplet 2/3 4. {b-- cis--) d( b)} fis'4. fis4 fis8
 	s1.*14 s1*25
@@ -2235,12 +2238,12 @@ cueVoicePosauneIIIMvtII = \relative c {
 	fis4(~-> fis16 gis a cis) gis2 \cueClefUnset
 	s1*13 s1.*16
 	% bar 124 - 125
-	\cueClef treble a4.(^\markup {Viol.I}_\markup {Fag.} b,2.) e8(-- fis-- g--)
+	\cueClef treble a4.(^\markup {Viol.I}-\offset X-offset -2.5 _\markup {Fag.} b,2.) e8(-- fis-- g--)
 	g4.( a,2.) d8(-- e-- fis--) \cueClefUnset
 	s1.*12
 	% bar 138 - 141
-	<fis,, fis'>4.~^\markup {Vcll.}_\markup {\column {\lower #1.5 "Kb." "Tuba"}} q8 r r <f f'>4.~ q8 r r
-	<e e'>4.~ q8 r r <a a'>4.~ q8 a_\markup {\column {\lower #1.5 "Vcll." "Kb."}} b
+	<fis,, fis'>4.~^\markup {Vcll.}_\markup {"Kb. Tuba"} q8 r r <f f'>4.~ q8 r r
+	<e e'>4.~ q8 r r <a a'>4.~ q8 a-\offset X-offset -1 ^\markup { "Vcll. Kb."} b
 	cis dis e fis g bes b\noBeam \cueClefUnset dis_\markup {Viol.} e g gis a
 	\voiceOne r8 g,~^\markup {Pos.II} g fis4 e8 \oneVoice s2.
 }
@@ -2329,16 +2332,16 @@ cueVoiceTubaMvtI = \relative c {
 	r a( b) cis4.
 	s2.*10
 	% bar 182 - 185
-	r8^\markup {\column {\lower #1.5 "Fl." "Ob.I" "Klar."}} a( b) cis4( d8)
+	r8^\markup {\overlay {"Fl." \translate #'(0 . -1.5) "Ob.I" \translate #'(0 . -3) "Klar."}} a( b) cis4( d8)
 	r a( b) cis4.
 	d4 d8~ d fis4
 	b, bis8~ bis cis4 \cueClefUnset
 	s2.*54
 	% bar 240 - 243
-	\cueClef treble ees'4->(^\markup {Fl.} aes,8) ees'4(-> aes,8)
-	ees4(->^\markup {\column {\lower #1.5 "Fl.III" "Ob.I"}} aes,8) ees'4(-> aes,8)
+	\cueClef treble ees'4->(-\tweak extra-offset #'(-2 . 10.8) _\markup {Fl.} aes,8) ees'4(-> aes,8)
+	ees4(->-\tweak extra-offset #'(-1.2 . 9.5) _\markup {\column {\lower #1.5 "Fl.III" "Ob.I"}} aes,8) ees'4(-> aes,8)
 	ees4(->^\markup {Klar.} aes,8) ees'4(-> aes,8)
-	\cueClef bass ees4(->^\markup {Fag.} aes,8) ees'4(-> aes,8)
+	\cueClefUnset ees4(->^\markup {Fag.} aes,8) ees'4(-> aes,8)
 	s2.*93
 	% bar 337
 	<>_\markup {(Viol.)}
@@ -2380,7 +2383,7 @@ cueVoiceTubaMvtII = \relative c {
 	<>_\markup {(Klar.)}
 	s1.*8
 	% bar 24
-	<>_\markup {(Ob.)}
+	<>-\offset X-offset -1 _\markup {(Ob.)}
 	s1.*28
 	% bar 52 - 57
 	e2.^\markup {Pos.III} d
@@ -2397,7 +2400,7 @@ cueVoiceTubaMvtII = \relative c {
 	fis4(~-> fis16 gis a cis) gis2 \cueClefUnset
 	s1*13 s1.*11
 	% bar 119 - 121
-	r2. r4^\markup {Fag. Viol.I} r8 \cueClef treble fis8(-- g-- a--)
+	r2. r4r8 \cueClef treble fis8(--^\markup {Fag. Viol.I}  g-- a--)
 	a4.( b,2.) e8(-- fis-- g--)
 	g4.( a,2.) d8(-- e-- fis--) \cueClefUnset
 	s1.*4
@@ -2410,7 +2413,7 @@ cueVoiceTubaMvtII = \relative c {
 	s1.*8
 	% bar 142 - 145
 	\scaleDurations 3/2 {
-		s2 \once \voiceTwo cis,,^\markup {Pos.III}
+		s2 \once \voiceTwo cis,,_\markup {Pos.III}
 		b a
 		gis4 g fis2
 		\once \voiceTwo e s
@@ -2439,7 +2442,7 @@ cueVoiceTubaMvtIV = \relative c {
 	fis'4.(\sf e8) ais,4.( b8) \oneVoice \cueClefUnset
 	s1*30
 	% bar 136 - 139
-	<a,, a'>2^\markup {\column {\lower #1.5 "Hr." "I II"}} q^\markup {\column {\lower #1.5 "Hr." "III IV"}}
+	<a,, a'>2^\markup {\column {\lower #1.5 "Hr." "I II"}} q-\offset X-offset -0.5 ^\markup {\column {\lower #1.5 "Hr." "III IV"}}
 	<cis cis'> <e e'>
 	<a a'>1~->
 	q2 r
@@ -2462,10 +2465,10 @@ cueVoiceTubaMvtIV = \relative c {
 	% bar 290 - 295
 	r2^\markup {Fag.I} c,,
 	c b
-	b1->(
+	b1->\((
+	a)~
 	a~
-	a
-	a)
+	a\)
 	s1*44
 	% bar 340 - 341
 	\cueClef treble \voiceOne r4^\markup {Viol.} cis'( b cis)

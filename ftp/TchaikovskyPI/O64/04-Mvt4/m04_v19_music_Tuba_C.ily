@@ -252,7 +252,7 @@ musicTubaMvtIV = \relative c {
 	aes
 	\after 1*7/8 \! ges\<
 % Bars 266 to 270
-	fes2\>~ fes8\! r r4
+	fes2\f\>~ fes8\! r r4
 	R1*15
 % Bars 271 to 275
 	

@@ -9,7 +9,7 @@ musicPosauneIMvtI = \relative c {
 	\key e \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*19
+	\mmrLength #22 \mmrnDown R1*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,7 +29,7 @@ musicPosauneIMvtI = \relative c {
 % Bars 36 to 40
 	
 	\ni R1\fermata \no \bar "||" \time 6/8
-	R2.*19
+	\mmrLength #21 \mmrnDown R2.*19
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -96,7 +96,7 @@ musicPosauneIMvtI = \relative c {
 % Bars 106 to 110
 	fis g a ais b! c
 	cis dis e fis g a
-	b,4.\fff b
+	b,4.-\offset X-offset 0.5 \fff b
 	a b4 e8
 	e4. dis
 % Bars 111 to 115
@@ -106,31 +106,41 @@ musicPosauneIMvtI = \relative c {
 	c4 c8 cis4 cis8 \mark \default
 	d4 g8 fis r r
 % Bars 116 to 120
-	R2.*24
+	R2.*12
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
-% Bars 131 to 135
 	
+	\mmrLength #15 \tempoXoffset #-2 \mmrnDown R2.*3
+	
+	
+% Bars 131 to 135
+	R2.
+	\mmrLength #14 \tempoXoffset #-3 \mmrnDown R2.*8
 % Bars 136 to 140
 	
 	
 	
 	\mark \default
-	R2.*42
+	R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	\mmrLength #20 \mmrnDown R2.*18
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	
+	
+	
+	
+	\mmrLength #24 \mmrnDown R2.*12
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -222,7 +232,7 @@ musicPosauneIMvtI = \relative c {
 	
 	
 	
-	\ni \mmrPos #-9 R2. \no
+	\ni \mmrPos #-8 R2. \no
 	d4\ff d8 d4 d8
 % Bars 286 to 290
 	R2.
@@ -314,13 +324,20 @@ musicPosauneIMvtI = \relative c {
 % Bars 371 to 375
 	d4 d8 dis4 dis8
 	e4 e8 dis r r
-	R2.*20
+	R2.*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
+	
+	
+	
+	\mmrLength #14 \mmrnDown R2.*3
 % Bars 386 to 390
 	
+	
+	R2.
+	R2.*4
 % Bars 391 to 395
 	
 	
@@ -342,7 +359,8 @@ musicPosauneIMvtI = \relative c {
 % Bars 406 to 410
 	R2.
 	cis\p
-	R2.*31
+	R2.
+	\mmrLength #17 \mmrnDown R2.*18
 % Bars 411 to 415
 	
 % Bars 416 to 420
@@ -351,6 +369,7 @@ musicPosauneIMvtI = \relative c {
 	
 % Bars 426 to 430
 	
+	\mmrLength #24 \mmrnDown R2.*12
 % Bars 431 to 435
 	
 % Bars 436 to 440
@@ -426,7 +445,7 @@ musicPosauneIMvtI = \relative c {
 	e'8[ r16 e e8]~ e fis fis~
 % Bars 506 to 510
 	fis dis dis~ dis b b
-	b r r b\ff r r
+	b r r b-\offset X-offset 0.5 \ff r r
 	e r r b r r
 	b r r b r r
 	e r r b r r

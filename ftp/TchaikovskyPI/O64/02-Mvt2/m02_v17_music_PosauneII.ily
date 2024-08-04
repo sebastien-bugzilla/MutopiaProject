@@ -9,33 +9,57 @@ musicPosauneIIMvtII = \relative c {
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	R1.*15
+	\mmrLength #36 \mmrnDown R1.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
+	R1.*2
 	
-	
-	\mark \default
+	<<R1. {s2. \tempoXoffset #-3.5 s }>> \mark \default
 % Bars 16 to 20
-	R1.*29
+	R1.*3
+	
+	
+	R1.
+	\mmrLength #13 R1.*4
 % Bars 21 to 25
 	
+	
+	
+	\mmrnDown R1.
+	R
 % Bars 26 to 30
+	R1.*2
+	
+	\mmrLength #10 \mmrnDown R1.*5
+	
 	
 % Bars 31 to 35
 	
+	
+	\mmrLength #10 \mmrnDown R1.*2
+	
+	R1.
 % Bars 36 to 40
+	R
+	R1.*2
+	
+	\mmrLength #11 \mmrnDown R1.*4
 	
 % Bars 41 to 45
 	
 	
-	
-	\mark \default
-	R1.*7
+	R1.
+	\tempoXoffset #-2.5 \mmrnDown R \mark \default
+	R1.
 % Bars 46 to 50
+	\mmrLength #12 R1.*2
 	
+	R1.
+	R
+	\mmrLength #12 R1.*2
 % Bars 51 to 55
 	\mark \default
 	\ni \mmrPos #4 R1.
@@ -44,10 +68,10 @@ musicPosauneIIMvtII = \relative c {
 	fis2. g\!
 % Bars 56 to 60
 	fis4.\ff\>~ fis8\! r r r2.
-	R1.*4
-	
-	
-	
+	R1.
+	R
+	\mmrnDown R
+	\mmrLength #12 R
 % Bars 61 to 65
 	d4.\pp~ d8 r r r2.
 	d4.~ d8 r r r2.
@@ -55,7 +79,7 @@ musicPosauneIIMvtII = \relative c {
 	
 	\bar "||"
 % Bars 66 to 70
-	\time 4/4 R1*9
+	\time 4/4 \mmrLength #25 \mmrnDown R1*9
 % Bars 71 to 75
 	
 	
@@ -101,19 +125,28 @@ musicPosauneIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 116 to 120
-	R1.*8
+	\tempoXoffset #1 R1.*2
+	
+	R1.
+	R1.*3
+	
 % Bars 121 to 125
 	
-	
-	\mark \default
+	\mmrLength #12 R1.
+	\mmrLength #14 R \mark \default
 	R1.*2
 	
 % Bars 126 to 130
 	\ni \mmrPos #4 R1.
 	\mmrPos #4 R \no
-	R1.*10
+	\mmrLength #16 \mmrnDown R1.*6
+	
+	
 % Bars 131 to 135
 	
+	
+	
+	\mmrLength #20 \mmrnDown R1.*4
 % Bars 136 to 140
 	
 	\mark \default
@@ -130,7 +163,7 @@ musicPosauneIIMvtII = \relative c {
 % Bars 146 to 150
 		d'8\ff r r4 r2
 		b2\mf a\<
-		gis4 g\! \after 2*3/4 \! fis2\f\<
+		gis4 g\! \hairpinShorten #'(-0.5 . -0.5) fis2\f\<
 		b8\ff r  r4 r2
 		fis1_\fcresc~ \mark #11
 % Bars 151 to 155
@@ -138,10 +171,10 @@ musicPosauneIIMvtII = \relative c {
 		e g
 		fis4\fff~ fis8 f e4\> d8 e\!
 		g8\f r r4 r2
-		R1*3
+		\mmrnDown R1
 % Bars 156 to 160
-		
-		\bar "||"
+		\mmrnDown \mmrLength #12 R
+		\mmrLength #11 R \bar "||"
 	}
 	\unsetTimeSignature \time 4/4 b4.\fff b16 b cis4. b16 ais
 	b8 b r4 r2
@@ -157,7 +190,7 @@ musicPosauneIIMvtII = \relative c {
 	
 	R1
 	R1 \bar "||"
-	\time 12/8 R1.*14
+	\time 12/8 \mmrLength #18 R1.*13
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -165,6 +198,6 @@ musicPosauneIIMvtII = \relative c {
 % Bars 181 to 184
 	
 	
-	
+	R1.
 	\ni R1.\fermata \no \bar "|."
 }

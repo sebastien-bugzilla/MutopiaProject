@@ -9,7 +9,7 @@ musicTubaMvtI = \relative c {
 	\key e \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*19
+	\mmrLength #21 \mmrnDown R1*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,7 +29,7 @@ musicTubaMvtI = \relative c {
 % Bars 36 to 40
 	
 	\ni R1\fermata \no \bar "||" \time 6/8
-	R2.*19
+	\mmrLength #21.5 \mmrnDown R2.*19
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -46,27 +46,23 @@ musicTubaMvtI = \relative c {
 	
 	\mark \default
 % Bars 66 to 70
-	R2.
-	R2.*2
+	R2.*13
 	
-	R2.*2
+	
+	
 	
 % Bars 71 to 75
-	R2.*2
 	
-	R2.*2
-	
-	R2.*2
 % Bars 76 to 80
 	
-	R2.*2
+	
 	
 	\ni \mmrPos #4 R2.
 	\mmrPos #4 R
 % Bars 81 to 85
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	r4 r8 r fis,\f\< e\! \mark \default
+	r4 r8 r \hairpinShorten #'(0 . -3) fis,\f\< e\! \mark \default
 	d8.\ff d16 d8 r4 r8
 	R2.
 % Bars 86 to 90
@@ -84,7 +80,7 @@ musicTubaMvtI = \relative c {
 % Bars 96 to 100
 	r4 r8 g8. g16 g8
 	r4 r8 g8. g16 g8
-	r r g g r r
+	r4 g8 g r r
 	g r g r g r \mark \default
 	g\ff fis e d c b
 % Bars 101 to 105
@@ -96,8 +92,8 @@ musicTubaMvtI = \relative c {
 % Bars 106 to 110
 	
 	g'8 fis e dis cis b
-	e\fff r r d'!4.
-	c b
+	e-\tweak extra-offset #'(0 . 0.3) \fff r r d'!4.
+	c! b
 	ais a
 % Bars 111 to 115
 	g fis 
@@ -106,17 +102,18 @@ musicTubaMvtI = \relative c {
 	a4 a'8 g4 g8 \mark \default
 	fis4 eis8 fis r r
 % Bars 116 to 120
-	R2.*17
+	R2.*12
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
+	
+	\mmrLength #15 \mmrnDown R2.*3
+	
+	
 % Bars 131 to 135
-	
-	
-	R2.*7 
-	
-	
+	R2.
+	\mmrLength #12 R2.*8
 % Bars 136 to 140
 	
 	
@@ -127,11 +124,12 @@ musicTubaMvtI = \relative c {
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-7 R \no
-	R2.*26
+	R2.*8
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	\mmrLength #16 \mmrnDown R2.*18
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -144,7 +142,7 @@ musicTubaMvtI = \relative c {
 	\ni \mmrPos #-4 R2.
 % Bars 171 to 175
 	\mmrPos #-4 R \no
-	R2.*10
+	\mmrLength #15 R2.*10
 % Bars 176 to 180
 	
 % Bars 181 to 185
@@ -169,12 +167,12 @@ musicTubaMvtI = \relative c {
 	a~
 	a
 	d8[\fff r16 d d8] d d d
-	d d d  d d d
+	d2.:8 %d d d  d d d
 	R2.*2
 % Bars 201 to 205
 	\mark \default
 	d8[\fff r16 d d8] d d d
-	d d d  d d d
+	d2.:8 %d d d  d d d
 	R2.*2
 	
 % Bars 206 to 210
@@ -187,7 +185,7 @@ musicTubaMvtI = \relative c {
 	d r r r4 r8
 	d r r r4 r8
 	d r r r4 r8 \mark #11
-	R2.*26
+	\mmrLength #15 R2.*26
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -247,7 +245,7 @@ musicTubaMvtI = \relative c {
 % Bars 276 to 280
 	f'4(\mf bes,8) f'4( bes,8)
 	ges r r r4 r8
-	R2.*7
+	\mmrCondens R2.*7
 % Bars 281 to 285
 	
 	
@@ -282,7 +280,7 @@ musicTubaMvtI = \relative c {
 	bes8[ r16 bes bes8]~ bes bes bes
 	R2.
 	bes8[ r16 bes bes8]~ bes bes bes \mark \default
-	r4 r8 bes4\ff bes8
+	r4 r8 bes4-\offset X-offset -2 \ff bes8
 	r4 r8 bes4 bes8
 % Bars 311 to 315
 	r4 r8 bes4\f bes8
@@ -304,19 +302,15 @@ musicTubaMvtI = \relative c {
 	
 % Bars 336 to 340
 	\mark \default
-	R2.*9
+	R2.*16
 % Bars 341 to 345
 	
 % Bars 346 to 350
-	R2.*2
 	
-	R2.*2
-	
-	R2.*2
 % Bars 351 to 355
 	
-	R2. \mark \default
-	R
+	\mark \default
+	R2.
 	\ni \mmrPos #4 R2.
 	\mmrPos #-4 R
 % Bars 356 to 360
@@ -324,7 +318,7 @@ musicTubaMvtI = \relative c {
 	\voiceTwo r4 r8 r \oneVoice fis'--\p fis--
 	fis4.-> e8 r r
 	r4 r8 r ais\p-- ais--
-	b!4.~-> b8 r r
+	b4.~-> b8 r r
 % Bars 361 to 365
 	r4 r8 r cis,--\mf cis--
 	cis4.-> b8 r r
@@ -340,22 +334,22 @@ musicTubaMvtI = \relative c {
 % Bars 371 to 375
 	b4 b'8 a4 a8
 	gis4 fisis8 gis8 r r
-	R2.*17
+	R2.*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
+	
+	
+	
+	\mmrLength #14 \mmrnDown R2.*3
 % Bars 386 to 390
 	
 	
-	
-	
-	R2.*3
-% Bars 391 to 395
-	
-	
 	R2.
-	R2.*3
+	\mmrLength #14 R2.*8
+	
+% Bars 391 to 395
 	
 % Bars 396 to 400
 	\mark \default
@@ -372,7 +366,8 @@ musicTubaMvtI = \relative c {
 % Bars 406 to 410
 	\mmrPos #-6 R2. \no
 	e2.\p
-	R2.*19
+	R2.
+	\mmrnDown \mmrLength #16 R2.*18
 % Bars 411 to 415
 	
 % Bars 416 to 420
@@ -411,20 +406,20 @@ musicTubaMvtI = \relative c {
 	b
 	e8[\fff r16 e e8] e e e
 % Bars 456 to 460
-	e e e  e e e
+	e2.:8 % e e e  e e e
 	R2.*2
 	\mark \default
 	e8[\fff r16 e e8] e e e
-	e e e  e e e
+	e2.:8 %e e e  e e e
 % Bars 461 to 465
 	R2.*2
 	
-	e8[\fff r16 e e8] e e e
+	e8[-\offset X-offset -3 \fff r16 e e8] e e e
 	R2.
 	e8[\ff r16 e e8] e e e
 % Bars 466 to 470
 	R2.
-	e8[ r16 e e8] e e e
+	e8[\f r16 e e8] e e e
 	e r r r4 r8
 	e r r r4 r8
 	e r r r4 r8 \mark \default
@@ -458,7 +453,7 @@ musicTubaMvtI = \relative c {
 	b r r g r r
 % Bars 501 to 505
 	e r r d r r
-	c r r a r r \mark \default
+	c r r a r r \resetMarkSpace \mark \default
 	b8[\fff r16 b b8]~ b b b~
 	b b b  b b b
 	b8[ r16 b b8]~ b b b~
@@ -472,7 +467,7 @@ musicTubaMvtI = \relative c {
 	e r r d\f r r
 	c r r b r r
 	e r r d r r
-	c r r b r r \mark \markAaBox
+	c r r b r r \resetMarkSpace \mark \markAaBox
 	e r r d\mf r r 
 % Bars 516 to 520
 	c_\dimmarkup r r b r r
@@ -482,7 +477,7 @@ musicTubaMvtI = \relative c {
 	R2.
 % Bars 521 to 525
 	e8\p r r r4 r8
-	R2. \mark \markBbBox
+	R2. \resetMarkSpace \mark \markBbBox
 	e8 r r r4 r8
 	R2.*18
 % Bars 526 to 530
