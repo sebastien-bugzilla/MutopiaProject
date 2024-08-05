@@ -99,32 +99,80 @@ mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}
 mutainflpiccL = \markup {"muta in Fl. picc."}
 mutainfliii = \markup {"muta in Fl.III"}
 mutaingrfl = \markup {"muta in Gr. Fl."}
+iiimutainpicc = \markup {\column { \lower #1 "III muta" "in Picc." }}
+
 mutagina = \markup {"Muta G in A"}
-mutaaingdinbeind = \markup { "muta A in G, D in B, E in D"}
+mutaginapart = \markup {
+	\bold \column { 
+		\lower #1.5 "(Muta G" "in A)"
+	}
+}
 mutaaing_dinbeind = \markup { 
 	\column { \lower #1.5 "muta A in G," "D in B, E in D"}
 }
+mutaaingdinbeindpart = \markup {
+	\bold \column {
+		\lower #1.5 "(Muta A in G," "D in B, E in D)"
+	}
+}
 mutabinhdine = \markup { "muta B in H, D in E" }
+mutabinhdinepart = \markup { 
+	\bold \column {
+		\lower #1.5 "(Muta B in" "H, D in E)"
+	}
+}
 mutafising = \markup {"muta Fis in G"}
+mutafisingpart = \markup {\bold "(Muta Fis in G)"}
 mutaginfis = \markup {"muta G in Fis"}
-iiimutainpicc = \markup {\column { \lower #1 "III muta" "in Picc." }}
+mutaginfispart = \markup {\bold "(Muta G in Fis)"}
 mutafisinfcisinc = \markup {"muta Fis in F, Cis in C"}
+mutafisinfcisincpart = \markup {
+	\bold \column {
+		\lower #1.5 "(Muta Fis in" "F, Cis in C)"
+	}
+}
 mutafinacind = \markup {"muta F in A, C in D"}
+mutafinacindpart = \markup {
+	\bold \column {
+		\lower #1.5 "(Muta F in" "A, C in D)"
+	}
+}
 mutacina = \markup {"muta C in A"}
+mutacinapart = \markup {\bold "(Muta C in A)"}
 mutaainc = \markup {"muta A in C"}
-mutaginacinheincis = \markup {"muta G in A, C in H, E in Cis"}
+mutaaincpart = \markup {\bold "(Muta A in C)"}
+%mutaginacinheincis = \markup {"muta G in A, C in H, E in Cis"}
+mutaginacinheincispart = \markup {
+	\bold \column {
+		\lower #1.5 "(muta G in A," "C in H, E in Cis)"
+	}
+}
 mutagina_cinheincis = \markup {
 	\column {
 		\lower #1.5 "muta G in A," "C in H, E in Cis"
 	}
 }
-mutaainfiscisine = \markup {"muta A in Fis, Cis in E"}
+%mutaainfiscisine = \markup {"muta A in Fis, Cis in E"}
+mutaainfiscisinepart = \markup {
+	\bold \column {
+		\lower #1.5 "(Muta A in Fis," "Cis in E)"
+	}
+}
 mutaainfis_cisine = \markup {
 	\column {
 		\lower #1.5 "muta A in Fis," "Cis in E"
 	}
 }
 
+inadue = \markup {\bold "(in A, D u. E)"}
+ingaue = \markup {\bold "(in G, A u. E)"}
+ingcue = \markup {\bold "(in G, C u. E)"}
+inahucis = \markup {\bold "(in A, H u. Cis)"}
+inhfisue = \markup {
+	\bold \column {
+		\lower #1.5 "(in H," "Fis u. E)"
+	}
+}
 twelveEightC = \markup {
 	\concat { 
 		\compound-meter #'(12 . 8)

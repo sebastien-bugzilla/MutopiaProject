@@ -39,7 +39,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64"
+			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64 — Pauken"
 		}
 		instrument = \markup {
 			"Pauken"
@@ -47,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPaukenMvtI
-%			}
+			\new Voice {
+				\formatPaukenMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(pauken) \tempiPartMvtI
 			}
@@ -71,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPaukenMvtII
-%			}
+			\new Voice {
+				\formatPaukenMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(pauken) \tempiPartMvtII
 			}
@@ -87,7 +87,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.9 \bold 2.
 			}
 		}
 		\layout {
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPaukenMvtIII
-%			}
+			\new Voice {
+				\formatPaukenMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(pauken) \tempiPartMvtIII
 			}
@@ -111,7 +111,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.8 \bold 3.
 			}
 		}
 		\layout {
@@ -119,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPaukenMvtIV
-%			}
+			\new Voice {
+				\formatPaukenMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(pauken) \tempiPartMvtIV
 			}
@@ -135,7 +135,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.7 \bold 4.
 			}
 		}
 		\layout {

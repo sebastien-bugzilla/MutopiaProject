@@ -10,7 +10,7 @@ musicPaukenMvtIII = \relative c {
 %	\transposition a
 	\section \sectionLabel Valse
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #37 R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -99,18 +99,18 @@ musicPaukenMvtIII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-7 R
 	\mmrPos #-7 R \no
-	\once \voiceTwo r4 r cis'8-.\mf fis,-.
+	\once \voiceTwo r4 r cis'8-.-\offset X-offset -0.5 \mf fis,-.
 % Bars 131 to 135
 	R2.*3
 	
 	
-	r4 r cis'8-.\mf fis,-.
+	r4 r cis'8-.-\offset X-offset -0.5 \mf fis,-.
 	R2.*3
 % Bars 136 to 140
 	
 	
-	r4 r cis'8-.\mf fis,-.
-	<>^\mutafisinfcisinc R2.*3
+	r4 r cis'8-.-\offset X-offset -0.8 \mf fis,-.
+	<>^\mutafisinfcisincpart \mmrLength #19 \mmrnDown R2.*3
 	
 % Bars 141 to 145
 	\mark \default
@@ -162,13 +162,13 @@ musicPaukenMvtIII = \relative c {
 % Bars 216 to 220
 	\mmrPos #-6 R
 	\mmrPos #-6 R
-	\mmrPos #-6 R \no \mark \default
+	\mmrPos #-6 R \no \markWhiteout \mark \default
 	\once \voiceTwo r4 c'!\mf c
 	c c c
 % Bars 221 to 225
 	c c_\crescmarkup c
 	c c c 
-	f,8 r r4 r
+	f,!8 r r4 r
 	R2.*9
 % Bars 226 to 230
 	
@@ -180,7 +180,7 @@ musicPaukenMvtIII = \relative c {
 	c c_\crescmarkup c
 % Bars 236 to 240
 	c c c 
-	f,8 r^\mutafinacind r4 r
+	f,8 r^\mutafinacindpart r4 r
 	R2.*3
 	
 	\mark \default

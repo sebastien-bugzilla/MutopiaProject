@@ -9,7 +9,7 @@ musicPaukenMvtI = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R1*19
+	\mmrLength #19 \mmrnDown R1*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,7 +29,7 @@ musicPaukenMvtI = \relative c {
 % Bars 36 to 40
 	
 	\ni R1\fermata \no \bar "||" \time 6/8
-	R2.*19
+	\mmrLength #21 \mmrnDown R2.*19
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -104,29 +104,38 @@ musicPaukenMvtI = \relative c {
 % Bars 111 to 115
 	
 	e2.:32\p\<
-	e4.: e8\ff r r
-	R2.^\mutagina \mark \default
-	R2.*25
+	e4.: e8\ff r^\mutaginapart r
+	R2. \mark \default
+	R2.*13
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
+	
+	\mmrLength #14 \mmrnDown R2.*3
+	
+	
 % Bars 131 to 135
+	R2.
+	\mmrLength #14 R2.*8
+	
+	
 	
 % Bars 136 to 140
 	
 	
 	
 	\mark \default
-	R2.*30
+	R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	\mmrLength #17 \mmrnDown R2.*18
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -146,10 +155,10 @@ musicPaukenMvtI = \relative c {
 	\mark \default
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R
-	\mmrPos #-4 R
+	\mmrPos #-6 R
 	\mmrPos #-7 R \no
 % Bars 186 to 190
-	d8\f r r r4 r8
+	d8\f^\inadue r r r4 r8
 	R2.*7
 % Bars 191 to 195
 	
@@ -172,14 +181,14 @@ musicPaukenMvtI = \relative c {
 % Bars 206 to 210
 	d8[\fff r16 d d8] d d d
 	R2.
-	d8[\ff r16 d d8] d d d
+	d8[-\offset X-offset -1 \ff r16 d d8] d d d
 	R2.
 	d8[\f r16 d d8] d d d
 % Bars 211 to 215
 	d r r r4 r8
 	d r r r4 r8
 	d r r r4 r8 \mark #11
-	R2.*26
+	\mmrLength #18 R2.*26
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -217,8 +226,8 @@ musicPaukenMvtI = \relative c {
 	r4 r8 r4 d8
 	d8[ r16 d d8] r4 r8
 % Bars 266 to 270
-	d8[ r16 d d8] r4^\mutaaingdinbeind r8
-	R2.*2
+	d8[ r16 d d8] r4^\mutaaingdinbeindpart r8
+	\mmrLength #13 \mmrnDown R2.*2
 	\mark \default
 	R2.*15
 % Bars 271 to 275
@@ -256,15 +265,15 @@ musicPaukenMvtI = \relative c {
 	d8 r r r4 r8
 	R2.
 % Bars 306 to 310
-	bes8[ r16 bes bes32 bes bes bes] bes[ bes bes bes bes8 bes]
+	bes8[ r16 \liiri bes \liriii bes32 bes bes bes] bes[ bes bes bes bes8 bes]
 	R2.
-	bes8[ r16 bes bes32 bes bes bes] bes[ bes bes bes bes8 bes] \mark \default
+	bes8[ r16 \liiri bes \liriii bes32 bes bes bes] bes[ bes bes bes bes8 bes] \mark \default
 	r4 r8 bes4\ff bes8
 	r4 r8 bes4 bes8
 % Bars 311 to 315
 	r4 r8 bes4\f bes8
-	r4^\mutabinhdine r8 bes4 bes8
-	R2.*7
+	r4 r8 bes4 bes8
+	\mmrLength #18 \mmrnDown R2.*7^\mutabinhdinepart
 % Bars 316 to 320
 	
 	
@@ -308,7 +317,7 @@ musicPaukenMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*32
+	R2.*20
 % Bars 366 to 370
 	
 % Bars 371 to 375
@@ -317,17 +326,31 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 381 to 385
 	
+	
+	
+	
+	\mmrLength #14 \mmrnDown R2.*3
 % Bars 386 to 390
+	
+	
+	R2.
+	R2.*8
 	
 % Bars 391 to 395
 	
 % Bars 396 to 400
 	\mark \default
-	R2.*30
+	R2.*12
+	
+	
+	
 % Bars 401 to 405
 	
 % Bars 406 to 410
 	
+	
+	
+	\mmrLength #17 \mmrnDown R2.*18
 % Bars 411 to 415
 	
 % Bars 416 to 420
@@ -389,7 +412,7 @@ musicPaukenMvtI = \relative c {
 	\mmrPos #-4 R \no
 	g,8\f r r g r r
 % Bars 486 to 490
-	g r r g r r \mark \default
+	g r r g r r \resetMarkSpace \mark \default
 	g\ff r r g\pp r r
 	e' r r e r r
 	e r r e r r
@@ -408,12 +431,12 @@ musicPaukenMvtI = \relative c {
 	b r r g r r
 % Bars 501 to 505
 	e' r r e r r
-	e r r e r r \mark \default
-	b4.:32\fff b32 b b b b8 b32 b b b
-	b b b b b8 b  b b b
-	b4.:32 b32 b b b b8 b32 b b b
+	e r r e r r \resetMarkSpace \mark \default
+	b4.:32\fff b8:32 b8 b8:32 
+	\beamOffset #'(0 . 0.8) b8:32[ b8 b]  b b b 
+	b4.:32 b8:32 b8 b8:32 
 % Bars 506 to 510
-	b32 b b b b8 b32 b b b    b b b b b8 b
+	b8:32 b8 b8:32 \beamOffset #'(0 . 0.8) b:[ b8 b]
 	e r r e\ff r r
 	e r r b r r
 	e r r e r r
@@ -422,7 +445,7 @@ musicPaukenMvtI = \relative c {
 	e r r e\f r r
 	e r r b r r 
 	e r r e r r
-	e r r b r r \mark \markAaBox
+	e r r b r r \resetMarkSpace \mark \markAaBox
 	e r r r4 r8
 % Bars 516 to 520
 	r4 r8 b\mp r r
@@ -432,7 +455,7 @@ musicPaukenMvtI = \relative c {
 	r4 r8 b\pp r r
 % Bars 521 to 525
 	e r r r4 r8
-	r4 r8 b r r \mark \markBbBox
+	r4 r8 b r r \resetMarkSpace \mark \markBbBox
 	e r r r4 r8
 	r4 r8 b\pp r r
 	e r r r4 r8

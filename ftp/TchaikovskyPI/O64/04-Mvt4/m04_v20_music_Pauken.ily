@@ -10,7 +10,7 @@ musicPaukenMvtIV = \relative c {
 %	\transposition a
 	\section \sectionLabel Finale
 % Bars 1 to 5
-	R1*15
+	\mmrLength #36 \mmrnDown R1*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -41,7 +41,7 @@ musicPaukenMvtIV = \relative c {
 	\mmrPos #-4 R \no
 	c2:32\ff c8 r c r \mark \default
 % Bars 46 to 50
-	g1:32\>
+	\startMeasureCount g1:32\>
 	\after 1*3/4 \! g:
 	g:\mf
 	g:\>
@@ -54,8 +54,8 @@ musicPaukenMvtIV = \relative c {
 	g:
 % Bars 56 to 60
 	g:
-	g:_\crescmarkup \bar "||"
-	\time 2/2 g:\mf
+	g:_\crescmarkup \stopMeasureCount \bar "||"
+	\time 2/2 \startMeasureCount g:\mf
 	g:
 	g:
 % Bars 61 to 65
@@ -63,7 +63,7 @@ musicPaukenMvtIV = \relative c {
 	g:_\piuf
 	g:
 	g:
-	\after 1*7/8 \! g:\<
+	\after 1*7/8 \! g:\< \stopMeasureCount
 % Bars 66 to 70
 	g8\f r r4 r2
 	R1*3
@@ -84,7 +84,7 @@ musicPaukenMvtIV = \relative c {
 	e'8\ff r r4 r2
 % Bars 81 to 85
 	R1 \mark \default
-	e8^\mutacina r r4 r2
+	e8^\mutacinapart r r4 r2
 	R1*15
 % Bars 86 to 90
 	
@@ -103,7 +103,7 @@ musicPaukenMvtIV = \relative c {
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R \no
 % Bars 106 to 110
-	a,8\mf r r4 r2
+	a,8\mf^\ingaue r r4 r2
 	R1*7
 % Bars 111 to 115
 	
@@ -115,7 +115,7 @@ musicPaukenMvtIV = \relative c {
 	a:
 	a:
 	a2: g4\fff a
-	g a g a
+	\startMeasureCount g a g a
 	g a g a
 % Bars 121 to 125
 	g a g a
@@ -125,8 +125,8 @@ musicPaukenMvtIV = \relative c {
 	g a g a\!
 % Bars 126 to 130
 	g\pp\< a g a
-	g a g a\! \mark \default
-	g8^\mutaainc r r4 r2
+	g a g a\! \stopMeasureCount \mark \default
+	g8^\mutaaincpart r r4 r2
 	R1*19
 % Bars 131 to 135
 	
@@ -156,7 +156,7 @@ musicPaukenMvtIV = \relative c {
 	\mmrPos #-4 R
 % Bars 171 to 175
 	\mmrPos #-4 R \no
-	r2 c8\ff r r4
+	r2^\ingcue c8\ff r r4
 	r2 c8 r r4
 	c8 r r4 c8 r r4
 	R1
@@ -288,8 +288,8 @@ musicPaukenMvtIV = \relative c {
 	
 	e'8\ff r r4 r2
 	R1 \mark \default
-	e8\ff r^\mutaginacinheincis r4 r2
-	R1*15
+	e8\ff r^\mutaginacinheincispart r4 r2
+	\mmrnDown R1*15
 % Bars 326 to 330
 	
 % Bars 331 to 335
@@ -309,8 +309,8 @@ musicPaukenMvtIV = \relative c {
 % Bars 346 to 350
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R \no
-	a,8\mf r r4 r2
-	R1*7
+	a,8\mf^\inahucis r r4 r2
+	\mmrLength #14 R1*7
 % Bars 351 to 355
 	
 	
@@ -332,7 +332,7 @@ musicPaukenMvtIV = \relative c {
 % Bars 366 to 370
 	cis:
 	\after 1*7/8 \! cis: \mark \default
-	b4\fff cis b cis
+	\startMeasureCount b4\fff cis b cis
 	b cis b cis
 	b cis b cis
 % Bars 371 to 375
@@ -343,9 +343,9 @@ musicPaukenMvtIV = \relative c {
 	b cis b cis\!
 % Bars 376 to 380
 	b\pp\< cis b cis
-	b cis b cis\!
-	b8\mf r r4 r2^\mutaainfiscisine
-	R1*11
+	b cis b cis\! \stopMeasureCount
+	b8\mf r r4 r2^\mutaainfiscisinepart
+	\mmrLength #15 \mmrnDown R1*11
 % Bars 381 to 385
 	
 % Bars 386 to 390
@@ -376,9 +376,9 @@ musicPaukenMvtIV = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R
 	\mmrPos #4 R \no
-	fis1:32\mf\<
+	fis1:32-\offset X-offset -3 ^\inhfisue\mf\<
 % Bars 426 to 430
-	b:\ff\>
+	\startMeasureCount b:\ff\>
 	b:\mf
 	b:
 	b:
@@ -388,7 +388,7 @@ musicPaukenMvtIV = \relative c {
 	b:
 	b:
 	b:_\crescmarkup
-	b:\<
+	b:\< \stopMeasureCount
 % Bars 436 to 440
 	b8\ff r r4 r2
 	R1*11
@@ -412,7 +412,7 @@ musicPaukenMvtIV = \relative c {
 % Bars 461 to 465
 	
 	r2 fis,4\fff r
-	b1:32
+	\startMeasureCount b1:32
 	b:
 	b:
 % Bars 466 to 470
@@ -420,7 +420,7 @@ musicPaukenMvtIV = \relative c {
 	b:
 	b:
 	b:
-	b:
+	b: \stopMeasureCount 
 % Bars 471 to 475
 	b8 r r4 r2\fermata \bar "||"
 	\time 4/4 e8\f r e r e r e r
@@ -436,7 +436,7 @@ musicPaukenMvtIV = \relative c {
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-6 R \no \mark \markAaBox
+	\mmrPos #-6 R \no \resetMarkSpace \mark \markAaBox
 	e4\fff e e e
 % Bars 491 to 495
 	e e e e
@@ -447,13 +447,13 @@ musicPaukenMvtIV = \relative c {
 % Bars 496 to 500
 	b e fis, e'
 	b8 e b e fis,4 r
-	b8 e b e fis,4 r \mark \markBbBox
+	b8 e b e fis,4 r \resetMarkSpace \mark \markBbBox
 	b8 b fis e' b e b b
 	e r r4 r2
 % Bars 501 to 505
 	r4 e e e
 	b8[ r16 e] b4:32 b32 b b b b8 b b
-	fis2:32\sfff b:\sfff \bar "||"
+	fis2:32\sfff \noteHeadEsw #'(-2.8 . 1) b:\sfff \revertNoteHeadEsw \bar "||"
 	\time 2/2 e4 r r2
 	R1*5
 % Bars 506 to 510
@@ -463,7 +463,7 @@ musicPaukenMvtIV = \relative c {
 	
 	e1:32\fff
 % Bars 511 to 515
-	b4 r r2 \mark \markCcBox
+	b4 r r2 \resetMarkSpace \mark \markCcBox
 	e4 r r2
 	R1*5
 % Bars 516 to 520
@@ -477,7 +477,7 @@ musicPaukenMvtIV = \relative c {
 	\mmrPos #-4 R \no 
 	b4\fff r r b
 	b r r b
-	b r r b \mark \markDdBox
+	b r r b \resetMarkSpace \mark \markDdBox
 % Bars 526 to 530
 	b r r2
 	R1*3
@@ -493,7 +493,7 @@ musicPaukenMvtIV = \relative c {
 % Bars 536 to 540
 	e r fis, r
 	b r e b
-	e_\semprefff e r2
+	\startMeasureCount e_\semprefff e r2
 	e4 e r2
 	e4 e r2
 % Bars 541 to 545
@@ -501,9 +501,9 @@ musicPaukenMvtIV = \relative c {
 	e4 e r2
 	e4 e r2
 	e4 e r2
-	e4 e r2 \bar "||"
+	e4 e r2 \stopMeasureCount \bar "||"
 % Bars 546 to 550
-	\time 6/4 e4 r r e r r
+	\time 6/4 \startMeasureCount e4 r r e r r
 	e r r e r r
 	e r r e r r
 	e r r e r r
@@ -511,7 +511,7 @@ musicPaukenMvtIV = \relative c {
 % Bars 551 to 555
 	e r r e r r
 	e r r e r r
-	e r r e r r \mark \markEeBox
+	e r r e r r \stopMeasureCount \resetMarkSpace \mark \markEeBox
 	e r r r2.
 	e4 r r r2.
 % Bars 556 to 560

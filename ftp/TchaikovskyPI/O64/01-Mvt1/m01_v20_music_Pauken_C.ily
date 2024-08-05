@@ -252,8 +252,8 @@ musicPaukenMvtI = \relative c {
 	r4 r8 bes4 bes8
 % Bars 311 to 315
 	r4 r8 bes4\f bes8
-	r4^\mutabinhdine r8 bes4 bes8
-	R2.*7
+	r4 r8 bes4 bes8
+	R2.*7^\mutabinhdine
 % Bars 316 to 320
 	
 	

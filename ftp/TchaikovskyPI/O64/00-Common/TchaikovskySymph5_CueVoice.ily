@@ -2513,7 +2513,7 @@ cueVoicePaukenMvtI = \relative c {
 	r a( b) cis4.
 	s2.*10
 	% bar 182 - 185
-	r8^\markup {\column {\lower #3 "Fl." \lower #1.5 "Ob.I" "Klar."}} a8( b) cis4( d8)
+	r8^\markup {\overlay { "Fl." \translate #'(0 . -1.5) "Ob.I" \translate #'(0 . -3) "Klar."}} a8( b) cis4( d8)
 	r a( b) cis4.
 	d4 d8~ d fis4
 	b, bis8~ bis cis4 \cueClefUnset
@@ -2557,7 +2557,7 @@ cueVoicePaukenMvtII = \relative c {
 	<>_\markup {(Klar.)}
 	s1.*8
 	% bar 24
-	<>_\markup {(Ob.)}
+	<>-\offset X-offset #-1.5 _\markup {(Ob.)}
 	s1.*28
 	% bar 52 - 55
 	e2.^\markup {Pos.III} d
