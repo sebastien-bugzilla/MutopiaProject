@@ -84,7 +84,7 @@ musicViolineIMvtI = \relative c {
 	e\ff d) cis\>( b)\f cis(\< d\! 
 	e\ff d) cis(\> b)\! cis(\< d\!
 	e\ff d) cis(\ff b a g) \mark \default
-	fis8[\ff r16 fis fis8] r4 r8
+	fis8.\ff fis16 fis8 r4 r8
 	e,16(\ff fis g a b8) r b16( cis d e)
 % Bars 86 to 90
 	fis8.\ff fis16 fis8 r4 r8

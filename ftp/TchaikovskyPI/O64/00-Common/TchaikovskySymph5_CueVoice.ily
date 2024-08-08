@@ -2701,18 +2701,18 @@ cueVoiceViolineIMvtI = \relative c {
 cueVoiceViolineIMvtII = \relative c {
 	s1.*7
 	% bar 8 - 10
-	s2. s4. d'8( cis) b--
-	d4.->( cis2.) a8( b) cis--
+	s2. s4.-\offset X-offset -2 _\markup {Hr.I} d'8( cis) b--
+	d4.->( cis!2.) a8( b) cis--
 	\voiceTwo e4.( d) \oneVoice s2.
 	s1.*25
 	% bar 36
-	d''4(~^\markup {Ob.I} d16 d, d8)\noBeam fis,(^\markup {Fl.} a d fis a d fis a)
+	d''4(~^\markup {Ob.I} d16 d, d8)\noBeam fis,(^\markup {Fl.} a d fis a \ottava #1 d fis a) \ottava #0
 }
 cueVoiceViolineIMvtIII = \relative c {
 	s2.*116
 	% bar 117 - 118
-	a'''16-.^\markup {Fl.II} ais-. a-. ais-. cis( b) ais-. gis-. cisis-.^\markup {Fl.I} dis-. cisis-. dis-. 
-	\voiceOne e( dis) cis-. b-. cis-. b-. ais-. gis-. \oneVoice s4
+	a'''16-._\markup {Fl.II} ais-. a-. ais-. cis( b) ais-. gis-. cisis-.^\markup {Fl.I} dis-. cisis-. dis-. 
+	e( dis) cis-. b-. cis-. b-. ais-. gis-. s4
 }
 cueVoiceViolineIMvtIV = \relative c {
 	s1*38
@@ -2747,7 +2747,7 @@ cueVoiceViolineIMvtIV = \relative c {
 	\once \voiceTwo g: s2.
 	s1*27
 	% bar 472
-	\tuplet 3/2 4 {e'8(^\markup {Hbl.} dis cis b ais b) e( dis cis b ais b)}
+	\tuplet 3/2 4 {e'8(-\offset X-offset -4 ^\markup {Hbl.} dis cis b ais b) e( dis cis b ais b)}
 }
 %###############################################################################
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #

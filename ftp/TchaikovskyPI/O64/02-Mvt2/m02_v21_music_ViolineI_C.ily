@@ -167,9 +167,9 @@ musicViolineIMvtII = \relative c {
 		gis'16-.\ff gis( a gis fis) fis( gis fis eis) eis( fis eis) r4
 		gis16-. gis( a gis fis) fis( gis fis eis) eis( fis eis) r4 \mark \default
 	}
-	\timeSignature 12/8 fis4.~ fis8 r r g!4.~ g8 r r
-	gis4.~ gis8 r r g4.~ g8 r r
-	r2. r8 dis,\ff e g gis a
+	\timeSignature 12/8 <fis, fis'>4.~ q8 r r <g! g'!>4.~ q8 r r
+	<gis gis'>4.~ q8 r r <g! g'!>4.~ q8 r r
+	r2. r8 dis\ff e g gis a
 % Bars 141 to 145
 	ais b cis d dis e fis g a! ais b cis
 	d4._\fffconanima fis,4( b8) a4.~ a4 a8

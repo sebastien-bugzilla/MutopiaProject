@@ -77,6 +77,7 @@ dolceconmoltoespress = \markup {\italic {dolce con molto espress.}}
 dolce = \markup {\italic {dolce}}
 connoblezza = \markup {\italic {con noblezza}}
 condesiderio = \markup {\italic {con desiderio}}
+con_desiderio = \markup {\italic \column {\lower #1.5 "con" "desiderio"}}
 sulg = \markup {sul G.}
 condesiderioepassione = \markup {\italic {con desiderio e passione}}
 contuttaforza = \markup {\italic {con tutta forza}}
@@ -86,6 +87,7 @@ pesante = \markup {\italic {pesante}}
 dolcecongrazia = \markup {\italic {dolce con grazia}}
 unpocodim = \markup {\italic {un poco dim.}}
 marcatissimo = \markup {\italic {marcatissimo}}
+marcatissimolargamente = \markup {\italic {marcatissimo largamente}}
 marcialeenergicocontuttaforza = \markup {\italic {marciale, energico, con tutta forza}}
 feroce = \markup {\italic {feroce}}
 semprecontuttaforza = \markup {\italic {sempre con tutta forza}}
@@ -473,6 +475,22 @@ resetMarkSpace = \once \revert Score.RehearsalMark.extra-spacing-width
 
 tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
+tupletOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override TupletNumber.Y-offset = #offset 
+	#}
+)
+
+markYoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.Y-offset = #offset
+	#}
+)
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -588,14 +606,6 @@ tempoDown = \once \override Score.MetronomeMark.direction = #-1
 %)
 
 
-%markYoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.Y-offset = #offset
-%	#}
-%)
-
 %noteShift = #(define-music-function
 %	(shift)
 %	(number?)
@@ -649,14 +659,6 @@ tempoDown = \once \override Score.MetronomeMark.direction = #-1
 %	#}
 %)
 
-
-%tupletOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override TupletNumber.Y-offset = #offset 
-%	#}
-%)
 
 %tupletExtraOffset = #(define-music-function
 %	(offset)

@@ -26,7 +26,7 @@ musicViolineIMvtIV = \relative c {
 	cis8 r b2\< e4--\ff
 	dis-- cis-- b--\> b8.( ais16)\!
 	gis2.\< e'4--\ff
-	dis-- cis-- b-- dis8.( cis16 \mark \default
+	dis-- cis-- b-- dis8.( cis16 \resetMarkSpace \mark \default
 % Bars 16 to 20
 	b8)\noBeam dis\p^\pizz e fis g e fis g
 	a_\pocoapococresc fis g a b g a b
@@ -66,13 +66,13 @@ musicViolineIMvtIV = \relative c {
 % Bars 51 to 55
 	\once \voiceOne r4 e'4\p\<( dis!\! e\>~ 
 	e8)\! r r4 r2
-	r4 e(\pp\< dis\! e\>~
+	r4 \hairpinShorten #'(-0.5 . -0.5) e(-\offset X-offset -1.5 \pp\< dis\! e\>~
 	e8)\! r e4(\< dis\! e\>~
 	e2.)\! e4(\<
 % Bars 56 to 60
 	dis\! e2.~\>
 	e2\pp~ e8) r r4 \bar "||"
-	\key e \minor \time 2/2 r4 <g b e>\f\downbow <b dis>\downbow <g b e>\downbow
+	\tempoXoffset #-0 \tempoEO #'(-1 . -1.2) \key e \minor \time 2/2 r4 <g b e>\f\downbow <b dis>\downbow <g b e>\downbow
 	<e b'>\downbow <e a>8 q <b g'> q <a fis'> q
 	<g e'> r <g' b e>4\downbow <b dis>\downbow <g b e>\downbow
 % Bars 61 to 65
@@ -86,7 +86,7 @@ musicViolineIMvtIV = \relative c {
 	b r a r g r fis r
 	<b, e> r e' r dis r e r
 	b r a r g r fis r \mark \default
-	<b, e> r \tuplet 3/2 4 {c8\f( d c) d([ e d)] d( e d)
+	<b, e> r \tuplet 3/2 4 {c8-\offset X-offset -1 \f( d c) d([ e d)] d( e d)
 % Bars 71 to 75
 	c([ d c)] c( d c) a([ b a)] a( b a)
 	g([ a b)] c( d c) d([ e d)] d( e d)
@@ -96,7 +96,7 @@ musicViolineIMvtIV = \relative c {
 % Bars 76 to 80
 	<e b' e> <fis' e'> <g d'> <g e'>
 	<d b'> <c a'> <b g'> <a a'>
-	<b e>8 r \tuplet 3/2 4 {a4.:8\fff b: c:
+	<b e>8 r \tuplet 3/2 4 {a4.:8-\offset X-offset -0.5 \fff b: c:
 	d: dis: e: fis:
 	g: a: b: c:
 % Bars 81 to 85
@@ -121,22 +121,22 @@ musicViolineIMvtIV = \relative c {
 	fis,2(\< gis)
 	a4( ais cis b)\!
 % Bars 101 to 105
-	fis'4.(\sf\> e8)\! ais,4.(\mf b8)
+	\hairpinShorten #'(-0.5 . -0.5) fis'4.(\sf\> e8)\! ais,4.(\mf b8)
 	r4 cis(\p b cis)
 	fis,2(\< gis)
 	a4( ais cis b)\!
-	fis'4.(\sf\> e8)\! ais,4.(\mf b8)
+	\hairpinShorten #'(-0.5 . -0.5) fis'4.(\sf\> e8)\! ais,4.(\mf b8)
 % Bars 106 to 110
 	r4 fis'(\mf e fis)
 	b,2(\< cis)
 	d4( dis fis e)\!
-	b'4.(\sff\> a8)\! dis,4.(\mf e8)
+	\hairpinShorten #'(-0.5 . -0.5) b'4.(\sff\> a8)\! dis,4.(\mf e8)
 	r4 fis( e fis)
 % Bars 111 to 115
 	b,2(\< cis)
 	d4( dis fis e)\!
-	b'4.(\sff\> a8)\! dis,4.(\mf e8 \mark \default
-	a,8) r b4\ff cis d
+	\hairpinShorten #'(-0.5 . -0.5) b'4.(\sff\> a8)\! dis,4.(\mf e8 \resetMarkSpace \mark \default
+	a,8) r b4-\offset X-offset #0.5 \ff cis d!
 	e fis g a
 % Bars 116 to 120
 	b cis, dis e
@@ -148,7 +148,7 @@ musicViolineIMvtIV = \relative c {
 	R1*6
 % Bars 126 to 130
 	
-	\tuplet 3/2 2 {r4 e(\mp\< b') r b( e)\! \mark \default
+	\tuplet 3/2 2 {r4 e(\mp\< b') \once \tupletUp r b( e)\! \mark \default
 	r a,(\mf e)} r2
 	\tuplet 3/2 2 {r4 a( e)} r2
 	\tuplet 3/2 2 {r4 a( e)} r2
@@ -166,12 +166,12 @@ musicViolineIMvtIV = \relative c {
 	\tuplet 3/2 2 {r4 gis( cis,)} r2
 % Bars 141 to 145
 	\tuplet 3/2 2 {r4 fis( cis)} r2
-	\tuplet 3/2 2 {r4_\pococresc a'( d,)} r2
+	\tuplet 3/2 2 {r4-\offset X-offset 1.5 _\pococresc a'( d,)} r2
 	\tuplet 3/2 2 {r4 g( d)} r2
 	\tuplet 3/2 2 {r4 b'( e,) r a( e)
 	r cis'( fis,) r b( fis)
 % Bars 146 to 150
-	r e'(\f a,) r b( fis)
+	\once \tupletUp r e'(\f a,) r b( fis)
 	r cis'(\> a) } \after 2*3/4 \! r2 \mark \default
 	c'!1\mf~
 	c2\< d8( c b c)\!
@@ -202,7 +202,7 @@ musicViolineIMvtIV = \relative c {
 	g( f e d!)
 % Bars 171 to 175
 	c(\ff b a g)
-	r2 <g,, g' c e>8\ff r r4
+	r2 <g,, g' c e>8-\offset X-offset -2.8 \ff r r4
 	r2 <f' c' f>8 r r4
 	r8 g'( a b c d e f)
 	g( f e d) c( b a aes
@@ -210,7 +210,7 @@ musicViolineIMvtIV = \relative c {
 	g) r r4 <g,, e' c' g'>8 r r4
 	r2 <f' c' a'>8 r r4
 	r8 g'( a b c d e f)
-	g( a b c) r2 \mark \default
+	\ottava #1 g( a b c) \ottava #0 r2 \mark \default
 	R1*2
 % Bars 181 to 185
 	
@@ -221,7 +221,7 @@ musicViolineIMvtIV = \relative c {
 % Bars 186 to 190
 	r8 b,( cis dis e fis g a)
 	b( cis dis e) dis( e fis g)
-	r2 <g,,, g' c e>8\ff r r4
+	r2 <g,,, g' c! e>8-\offset X-offset -3 \ff r r4
 	r2 <f' c' f>8 r r4
 	r8 g'( a b c d e f)
 % Bars 191 to 195
@@ -229,7 +229,7 @@ musicViolineIMvtIV = \relative c {
 	g) r r4 <g,, e' c' g'>8 r r4
 	r2 <f' c' a'>8 r r4
 	r8 g'( a b c d e f)
-	g( a b c) r2
+	\ottava #1 g( a b c) \ottava #0 r2
 % Bars 196 to 200
 	r <e,,, a>
 	<d b'> <fis a>
@@ -276,7 +276,7 @@ musicViolineIMvtIV = \relative c {
 	bis bis cis cis a a ais ais
 	eis eis fis fis bis, bis cis cis
 	a! a ais ais eis eis fis fis
-	r4 fis_\ffmarcatissimolargamente eis fis
+	r4 fis\ff^\marcatissimolargamente eis fis
 	ais, fis' eis fis
 % Bars 236 to 240
 	dis fis eis fis
@@ -312,7 +312,7 @@ musicViolineIMvtIV = \relative c {
 	bes( aes ges f) ees( f ges g)
 	aes( bes ces ees) aes( ges f aes)
 	bes2\>~ bes8\! r r4
-	d,,8\f\<( ees f ges) aes( bes ces d!)\!
+	d,,8-\offset X-offset -1.5 \f\<( ees f ges) aes( bes ces d!)\!
 	ees(\ff f ges aes) bes(\> ges ees bes\!
 % Bars 266 to 270
 	ces) r fes4(\ff ees fes~
@@ -370,7 +370,7 @@ musicViolineIMvtIV = \relative c {
 	e e' dis e
 % Bars 311 to 315
 	b a gis f
-	e8 r \tuplet 3/2 4 {c8(\f d c) d([ e d)] d( e d)
+	e8 r \tuplet 3/2 4 {c8(-\offset X-offset -1 \f d c) d([ e d)] d( e d)
 	c([ d c)] c( d c) a([ b a)] a( b a)
 	g([ a b)] c( d c) d([ e d)] d( e d)
 	c([ d c)] c( d c) a([ b a)] a( b a }
@@ -379,7 +379,7 @@ musicViolineIMvtIV = \relative c {
 	<g,, d' d' b'> <c' a'> <b g'> <a a'>
 	<e b' e> <fis' e'> <g d'> <g e'>
 	<d b'> <c a'> <b g'> <a a'>
-	<b e>8 r \tuplet 3/2 4 {a4.:8\fff b: c:
+	<b e>8 r \tuplet 3/2 4 {a4.:8-\offset X-offset -1 \fff b: c:
 % Bars 321 to 325
 	d: dis: e: fis:
 	g: a: b: c:
@@ -407,21 +407,21 @@ musicViolineIMvtIV = \relative c {
 % Bars 341 to 345
 	fis,2(\< gis)
 	a4( ais cis b)\!
-	fis'4.(\sf\> e8)\! ais,4.(\mf b8)
+	\hairpinShorten #'(-0.5 . -0.5) fis'4.(\sf\> e8)\! ais,4.(\mf b8)
 	r4 cis(\p b cis)
 	fis,2(\< gis)
 % Bars 346 to 350
 	a4( ais cis b)\!
-	fis'4.(\sf\> e8)\! ais,4.(\mf b8)
+	\hairpinShorten #'(-0.5 . -0.5) fis'4.(\sf\> e8)\! ais,4.(\mf b8)
 	r4 fis'(\mf e fis)
 	b,2(\< cis)
 	d4( dis fis e)\!
 % Bars 351 to 355
-	b'4.(\sff\> a8) dis,4.(\mf e8)
+	\hairpinShorten #'(-0.5 . -0.5) b'4.(\sff\> a8) dis,4.(\mf e8)
 	r4 fis( e fis)
 	b,2(\< cis)
 	d4( dis fis e)\!
-	b'4.(\sff\> a8)\! dis,4.(\mf e8 \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) b'4.(\sff\> a8)\! dis,4.(\mf e8 \mark \default
 % Bars 356 to 360
 	a,8) r b4\ff cis d!
 	e fis g a
@@ -467,17 +467,17 @@ musicViolineIMvtIV = \relative c {
 	\tuplet 3/2 2 {r4 ees'( aes,) r des( aes)
 	r f'( bes,) r ees( bes)
 % Bars 396 to 400
-	r aes'(\f des,) r ees( bes)
+	\once \tupletUp \tupletOffset -1.8 r aes'(\f des,) r ees( bes)
 	r f'( des)} r2 \mark \default
-	e'!1\mf~
-	e2\< fis8( e dis e)\!
-	gis2(-> fis)
+	\ottava #1 e'!1\mf~
+	e2\< fis!8( e dis e)\!
+	gis2(-> fis) \ottava #0
 % Bars 401 to 405
-	\ni \mmrPos #4 R1 \no
-	e1\mf~
+	\ni \mmrPos #6 R1 \no
+	\ottava #1 e1\mf~
 	e2\< fis8( e dis e)\!
-	gis2(-> fis)
-	\ni \mmrPos #4 R1 \no
+	gis2(-> fis) \ottava #0
+	\ni \mmrPos #6 R1 \no
 % Bars 406 to 410
 	e2(\mf dis)
 	dis4(_\dimmarkup cis2) b4~
@@ -493,9 +493,9 @@ musicViolineIMvtIV = \relative c {
 % Bars 416 to 420
 	fis2( eis)
 	e!4( dis ais dis)
-	gis(_\crescmarkup fisis fis eis)
+	\ottava #1 gis(_\crescmarkup fisis fis eis)
 	ais( a gis fisis)
-	b( a gis fis!)
+	b( a gis fis!) \ottava #0
 % Bars 421 to 425
 	e(\ff dis cis b)
 	e( d!) c!( b)
@@ -503,19 +503,19 @@ musicViolineIMvtIV = \relative c {
 	b( a) g( fis)
 	a( g) fis( e)
 % Bars 426 to 430
-	\tuplet 3/2 4 {a8\fff[ a a]  g g g  fis[ fis fis] e e e
-	g[ g g] fis fis fis e[ e e] dis dis dis
-	e[_\semprecontuttaforza e e] d! d d c[ c c] b b b
-	d[ d d] c c c b[ b b] a a a
-	c[ c c] b b b a[ a a] g g g
+	\tuplet 3/2 4 {a4.:8\fff g: fis: e: 
+	g: fis: e: dis: 
+	e:^\semprecontuttaforza d!: c: b: 
+	d: c: b: a: 
+	c: b: a: g: 
 % Bars 431 to 435
-	b[ b b] ais ais ais a[ a a] fis fis fis
-	a[ a a] g g g fis[ fis fis] e e e
-	g[ g g] fis fis fis} e r r4
-	\tuplet 3/2 4 {g''8[\fff g g]   g g g  g[ g g]  g g g
-	fis[ fis fis]  e e e  dis[ dis dis]  e e e }
+	b: ais: a: fis:
+	a: g: fis: e:
+	g: fis:} e8 r r4 
+	\tuplet 3/2 4 {\ottava #1 g''4.:8\fff g: g: g:
+	fis: e: dis: e: }
 % Bars 436 to 440
-	b' r r4 r2
+	b'8 \ottava #0 r r4 r2
 	R1*5
 	
 	
@@ -534,7 +534,7 @@ musicViolineIMvtIV = \relative c {
 	a: g: fis: e:
 % Bars 451 to 455
 	dis: cis: b: a: \mark \default
-	c''!2\fff <<{\stemUp <d, b'>2~ \stemDown <d b'>8} \\ {<g,, d'>4 r s8}>>
+	c''!2-\offset X-offset -0.5 \fff <<{\stemUp <d,! b'>2~ \stemDown <d b'>8} \\ {<g,, d'!>4 r s8}>>
 	r8 r4 \tuplet 3/2 4 {d''8([ e fis] g a b)} % incomplete bar
 	c2 <<{\stemUp <d, b'>2~ \stemDown q8} \\ {<g,, d'>4 r s8}>>
 	r8 \tuplet 3/2 4 {b'8( c cis) d([ e fis] g a b} % incomplete bar
@@ -552,8 +552,8 @@ musicViolineIMvtIV = \relative c {
 	R1
 % Bars 466 to 470
 	r2 q4 r
-	R1*2
-	
+	R1
+	\mmrnDown R
 	<<{
 		<dis' b'>2.. q8
 		\oneVoice q1~ q8
@@ -583,7 +583,7 @@ musicViolineIMvtIV = \relative c {
 	dis cis b b8. ais16 
 	gis2. e'4
 	dis cis b dis8. cis16
-	b8 r r4 r16 cis,16:32 dis: e: fis: gis: a!: ais: \mark \markAaBox
+	b8 r r4 r16 cis,16:32 dis: e: fis: gis: a: ais: \mark \markAaBox
 	b:\fff a!: gis: fis: e: fis: gis: b: cis: a: e: dis: cis: dis: e: fis: 
 % Bars 491 to 495
 	gis: b,: cis: dis: e: fis: gis: a: b: bis: cis: dis: e: b: cis: dis: 
@@ -599,7 +599,7 @@ musicViolineIMvtIV = \relative c {
 	<b gis'>: <d b'>: <cis a'>: <e cis'>: <e b'>: <fis dis'!>: cis': fis:
 % Bars 501 to 505
 	e4: <fis, fis'>: <gis gis'>: <a a'>:
-	<b b'>32 q q q  q q e e gis4:32 gis16:32 e: b: gis: e: b: gis: e: 
+	<b b'>32 q q \liiiri q \liriii q q e e gis4:32 gis16:32 e: b: gis: e: b: gis: e: 
 	gis: e: cis: e: gis: cis: e: gis: b: fis: dis: b: dis: fis: b: dis: \bar "||"
 	\time 2/2 e4 r8 b,(\p e4) r8 fis(
 	gis4) r8 fis( eis4) r8 gis(
@@ -610,7 +610,7 @@ musicViolineIMvtIV = \relative c {
 	e4) r8 fis( gis4) r8 a(
 	b4)\fff r8 gis( e4) r8 cis(
 % Bars 511 to 515
-	b4) r8 gis( fis4) r8 gis( \mark \markCcBox
+	b4) r8 gis( fis4) r8 gis( \resetMarkSpace \markWhiteout \markYoffset #4.3 \mark \markCcBox
 	e4) r8 b(\p e4) r8 fis(
 	gis4) r8 fis( eis4) r8 gis(
 	cis,4)_\crescmarkup r8 d( dis4) r8 eis(
@@ -626,11 +626,11 @@ musicViolineIMvtIV = \relative c {
 	g g,8 a bes c d dis
 	e4 e,8 fis gis! a b! bis
 	cis4 cis,8 d dis eis fisis gis
-	a4 a,8 b cis dis e! eis \mark \markDdBox
+	a4 a,8 b cis dis e! eis \resetMarkSpace \mark \markDdBox
 % Bars 526 to 530
 	fis fis, gis a b cis dis e!
 	fis fis, ais b c d e f
-	g g, b c cis dis! eis fis
+	g g, b c cis dis! eis fis!
 	gis! gis,! bis cis d e! f fis
 	g a b cis! dis!2:8
 % Bars 531 to 535
