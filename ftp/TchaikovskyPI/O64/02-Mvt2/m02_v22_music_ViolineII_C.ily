@@ -21,7 +21,7 @@ musicViolineIIMvtII = \relative c {
 	\after 1*6/12 \! a1.\>
 	a\pp
 	a
-	a2.\< b4. cis\! \mark \default
+	b2.\< b4. cis\! \mark \default
 % Bars 16 to 20
 	cis2.\> a\!~
 	a4. r4 r8 r4 r8 b4.-\offset X-offset -1.5 \pp(
@@ -65,7 +65,7 @@ musicViolineIIMvtII = \relative c {
 	d2.\pp cis
 	b-\tweak rotation #'(-2 1 0) \< a
 % Bars 51 to 55
-	gis4. g\! <fis' fis'>_\mfcrescpocoapoco^\condesiderio q4 q8 \mark \default
+	gis4.( g)\! <fis' fis'>_\mfcrescpocoapoco^\condesiderio q4 q8 \mark \default
 	q4.( <g g'>4) q8 q4.( <gis gis'>4) q8
 	\tuplet 2/3 4. {q8( <a a'>) q-- q-- q( <ais ais'>) q-- q--}
 	q4.( <b b'>4) q8 q4.( <c c'>4) q8
@@ -232,7 +232,7 @@ musicViolineIIMvtII = \relative c {
 	g4.(\> fis\!) e\pp b4( cis8
 	d) r r r4 fis8( e4.) b4( cis8)
 	<a d>8\pp^\pizz r r r4 r8 q8 r r r4 r8
-	q r r a4(^\arco e'8) d4. r4 r8
+	q\ppp r r a4(^\arco e'8) d4. r4 r8
 % Bars 181 to 184
 	R1.*2
 	

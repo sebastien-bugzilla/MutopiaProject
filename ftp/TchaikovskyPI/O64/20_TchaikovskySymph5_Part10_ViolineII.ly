@@ -39,17 +39,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64"
+			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64 — Violine II"
 		}
 		instrument = \markup {
-			"ViolineII"
+			"Violine II"
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolineIIMvtI
-%			}
+			\new Voice {
+				\formatViolineIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(violineII) \tempiPartMvtI
 			}
@@ -71,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolineIIMvtII
-%			}
+			\new Voice {
+				\formatViolineIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(violineII) \tempiPartMvtII
 			}
@@ -87,7 +87,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.7 \bold 2.
 			}
 		}
 		\layout {
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolineIIMvtIII
-%			}
+			\new Voice {
+				\formatViolineIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(violineII) \tempiPartMvtIII
 			}
@@ -109,7 +109,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -119,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolineIIMvtIV
-%			}
+			\new Voice {
+				\formatViolineIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(violineII) \tempiPartMvtIV
 			}
@@ -135,7 +135,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2.2 \bold 4.
 			}
 		}
 		\layout {

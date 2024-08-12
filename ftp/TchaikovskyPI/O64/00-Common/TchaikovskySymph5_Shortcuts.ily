@@ -26,6 +26,7 @@ mpcresc = \markup {\hspace #-1.05 \dynamic mp \italic {cresc.}}
 mpespress = \markup {\hspace #-1.05 \dynamic mp \italic {espress.}}
 
 mfcresc = \markup {\hspace #-0.76 \dynamic mf \italic {cresc.}}
+mfcrescpoco = \markup {\hspace #-0.76 \dynamic mf \italic {cresc. poco}}
 mfmarkup = \markup {\hspace #-0.76 \dynamic mf}
 mfmoltoespr = \markup {\hspace #-0.76 \dynamic mf \italic {molto espr.}}
 mfespress = \markup {\hspace #-0.76 \dynamic mf \italic {espress.}}
@@ -94,7 +95,8 @@ semprecontuttaforza = \markup {\italic {sempre con tutta forza}}
 largamente = \markup {\italic {largamente}}
 legatissimo = \markup {\italic {legatissimo}}
 divisi = \markup {\italic {divisi}}
-
+apoco = \markup {\italic {a poco}}
+conanima = \markup {\italic {con anima}}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}

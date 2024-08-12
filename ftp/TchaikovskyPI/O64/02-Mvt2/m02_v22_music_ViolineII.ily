@@ -22,10 +22,10 @@ musicViolineIIMvtII = \relative c {
 	a
 % Bars 11 to 15
 	g2. \after 2.*5/6 \! a\<
-	\after 1*6/12 \! a1.\>
+	a1.\>
 	a\pp
 	a
-	a2.\< b4. cis\! \mark \default
+	b2.\< b4. cis\! \mark \default
 % Bars 16 to 20
 	cis2.\> a\!~
 	a4. r4 r8 r4 r8 b4.\pp(
@@ -46,13 +46,13 @@ musicViolineIIMvtII = \relative c {
 	R1.*2
 % Bars 31 to 35
 	
-	r4 b,8(\mf bes4.~ bes4)\> a8( a4.~
+	r4 b,8(-\offset X-offset -2 \mf bes4.~ bes4)\> a8( a4.~
 	a8)\! r r r4 r8 r2.
 	R1.
 	d4.\pp\< cis2.(~ cis4 a8)\!
 % Bars 36 to 40
-	\after 1.*11/12 \! d1.\mf\>
-	a\p\<~
+	<< {\hairpinShorten #'(-0.3 . -1) \after 1.*11/12 \! d1.\mf\> } {s2 \tempoXoffset #-1  s1} >>
+	a1.\p\<~
 	a2.~ a4.~\mf a8 r r
 	b4.\f cis d r4 r8
 	b4. cis d r4 r8
@@ -60,43 +60,43 @@ musicViolineIIMvtII = \relative c {
 	eis4.\ff fis <gis, d'> r4 r8
 	eis'4. fis q2.
 	<g,! d'> cis
-	R1. \mark \default
+	\tempoEO #'(-1.5 . 0) \mmrLength #9 \mmrnDown R1. \mark \default
 	d2.\pp cis
 % Bars 46 to 50
-	b a
-	gis4.( g) <b d>8\f r r r4 r8
+	b\< a
+	gis4.( g)\! <b d>8\f r r r4 r8
 	R1.
 	d2.\pp cis
-	b\< a
+	\hairpinShorten #'(0 . 2) b\< a
 % Bars 51 to 55
-	gis4. g\! <fis' fis'>_\mfcrescpocoapoco^\condesiderio q4 q8 \mark \default
-	q4.( <g g'>4) q8 q4.( <gis gis'>4) q8
+	gis4.( g)\! <fis' fis'>_\mfcrescpoco^\condesiderio q4 q8 \mark \default
+	\set doubleSlurs = ##t q4.(_\apoco <g g'>4) q8 q4.( <gis gis'>4) q8
 	\tuplet 2/3 4. {q8( <a a'>) q-- q-- q( <ais ais'>) q-- q--}
 	q4.( <b b'>4) q8 q4.( <c c'>4) q8
 	\tuplet 2/3 4. {q( <cis cis'>) q-- q-- q( <d d'>) q-- q--}
 % Bars 56 to 62
-	q4.\fff <fis, fis'>4( <b b'>8) \after 2.*5/6 \! <g a a'>2.\>
+	q4.\fff <fis, fis'>4( <b b'>8) \after 2.*5/6 \! <g a a'>2.\> \set doubleSlurs = ##f
 	<<{
-		b'4. d,4( g,8) fis2.
+		\tempoXoffset #1.8 b'4. d,4( g,8) fis2.
 		<g, g'>4. b'4( cis8) <d, d'>2.~
 		q4. a'4( b8) d4.(~ d4 cis8)
 		d4. a4( b8) d4.(~ d4 cis8)
-		e4.->( d4.~ d8) r r d4( cis8)
+		e4.->( d4.~ d8) \oneVoice r r \voiceOne d4( cis8)
 		e4.->( d~ d8)
 	} \\ {
 		b4.\ff\> d,4( g8) fis2.\!
 		\noteShift #1.4 <g, g'>4.\f b4( cis8) \noteShift #1.4 <d d'>2.~\>
-		\noteShift #1.4 q4.\! a4(\p\< b8)\! d4.(~\> d4 cis8)\!
+		\noteShift #1.4 q4.\! \hairpinShorten #'(-0.5 . 0) a4(\p\< b8)\! d4.(~\> d4 cis8)\!
 		d4. a4(\< b8)\! d4.(~\> d4 cis8)\!
 		e4.->\p( d4.~ d8) s s d4( cis8)
 		e4.->( d4.~ d8)
 	}>>  r r d4(^\unis cis8)
 % Bars 63 to 65
 	e4.\< d4( cis8) cis4. b4( a8)\!
-	a4.\mf\> gis2.\< b4(\mf a8)
+	a4.-\offset X-offset -0.5 \mf\> gis2.\< b4(\mf a8)
 	a4.-> gis2.\> b4(\p a8) \bar "||"
 % Bars 66 to 70
-	\time 4/4 a2(_\semprep gis~
+	\time 4/4 \shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur a2(_\semprep gis~
 	gis) a~
 	a <gis eis'>
 	<b fis'> <gis eis'>
@@ -121,10 +121,10 @@ musicViolineIIMvtII = \relative c {
 	aes'2 aes
 % Bars 86 to 90
 	aes aes
-	<bes, bes'>4.\mf\<^\div <ces ces'>8(\! <ees ees'> <des des'>) <ces ces'>--\> <bes bes'>--\!
+	\set doubleSlurs = ##t <bes, bes'>4.\mf\<^\div <ces ces'>8(\! <ees ees'> <des des'>) <ces ces'>--\> <bes bes'>--\!
 	<aes aes'>2->( <g g'>)
 	<dis' dis'>4.\f\< <e e'>8\!( <gis gis'> <fis fis'>) <e e'>--\> <dis dis'>--\!
-	<cis cis'>2->( <bis bis'>) \mark \default
+	<cis cis'>2->( <bis bis'>) \set doubleSlurs = ##f \mark \default
 % Bars 91 to 95
 	R1*2
 	
@@ -165,8 +165,8 @@ musicViolineIIMvtII = \relative c {
 	<g, e'>\< a'\! d,\> d'\!
 	d,\< d d <a a'>\!
 	b4(\f\> a8~ a)\! r r r2. \mark \default
-	<fis' b>2.\mp\< \after 2.*5/6 \! <b e>\>
-	<e, a>\< \after 2.*5/6 \! <d d'>\>
+	\hairpinShorten #'(-0.5 . 0) <fis' b>2.\mp\< \after 2.*5/6 \! <b e>\>
+	\hairpinShorten #'(0 . 1) <e, a>\< \hairpinShorten #'(-1 . 0) \after 2.*5/6 \! <d d'>\>
 % Bars 126 to 130
 	fis4.^\sulg_\fcresc fis4 fis8 fis4.(~ fis4 e8)
 	b'4.\ff b4 b8 b4(\> a8~ \tuplet 4/6 4. {a16)\! a,(\mf b a~} 
@@ -185,17 +185,17 @@ musicViolineIIMvtII = \relative c {
 		gis16-. gis( a gis fis) fis( gis fis eis) eis( fis eis) r4 \mark \default
 	}
 	\timeSignature 12/8 <d d'>4.~ q8 r r q4.~ q8 r r
-	q4.~ q8 r r <cis' g'!>4.~ q8 r r
-	r4 r8 r g,\ff bes b dis e g gis a
+	q4.~ q8 r r <cis' g'>4.~ q8 r r
+	r4 r8 r g,-\offset X-offset -3 \ff bes b dis e g gis a
 % Bars 141 to 145
 	ais b cis d dis e fis g a! ais b cis
-	d4._\fffconanima <fis,, fis'>4^\div( <b b'>8) <a a'>4.~ q4 q8
+	\set doubleSlurs = ##t d4.\fff-\offset X-offset 3.5 _\conanima_\div <fis,, fis'>4( <b b'>8) <a a'>4.~ q4 q8 \set doubleSlurs = ##f
 	\tuplet 2/3 4. {<b b'>8 <cis cis'> <d d'> <b b'>} <fis' fis'>4.~ q8 r r
 	\tuplet 2/3 4. {<b, b'>8 <cis cis'> <d d'> <b b'>} <fis' fis'>4.  \tuplet 2/3 4. {<e e'>8( <d d'>)}
 	q4. \tuplet 2/3 4. {<cis cis'>8( <b b'>)} <e, e'>( <g g'>) <b b'>-- q4( <a a'>8)
 % Bars 146 to 150
 	<d d'>4._\condesiderioepassione <fis, fis'>4( <b b'>8) <a a'>4.~ q4 q8
-	\tuplet 2/3 4. {<b b'> <cis cis'> <d d'> <b b'>} <fis' fis'>4.~ q8 r r
+	\tupletUp \tuplet 2/3 4. {<b b'> <cis cis'> <d d'> <b b'>} \tupletNeutral <fis' fis'>4.~ q8 r r
 	\tuplet 2/3 4. {<b, b'>8 <cis cis'> <d d'> <b b'>} <fis' fis'>4. <<{fis4 fis8} \\ {fis4 fis8}>>
 	fis4.^\unis_\contuttaforza( g4) g8 g4.( gis4) gis8
 	\tuplet 2/3 4. {gis8( a) a a a( ais) ais ais} \mark #11
@@ -203,28 +203,28 @@ musicViolineIIMvtII = \relative c {
 	ais4.( b4) b8 b4.( c4) c8
 	\tuplet 2/3 4. {c( cis) cis cis cis( d) d d}
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		d4\ffff fis,8( b) \after 2*3/4 \! a2\>
+		\noteHeadEsw #'(-1.6 . 1.6) d4\ffff fis,8( b) \after 2*3/4 \! a2\> \revertNoteHeadEsw
 		b4\ff d,8( g) \after 2*3/4 \! fis2\>
 	}
 	\timeSignature 12/8 g4.\f b,4( cis8) \after 2.*5/6 \! <d, d'>2.~\>
 % Bars 156 to 160
-	q4. <a a'>4(\mf\<^\div <b b'>8)\! <d d'>4.(~\> q4 <cis cis'>8)\!
+	q4. <a a'>4(-\offset X-offset -2 \mf\<^\div <b b'>8)\! <d d'>4.(~\> q4 <cis cis'>8)\!
 	<d d'>4.\p a4(\<^\unis b8)\! d4.(\>~ d4 cis8)\! \bar "||"
-	\unsetTimeSignature \time 4/4 e8(\fff d) r4 r2
+	\unsetTimeSignature \time 4/4 e8(-\offset X-offset -3 \fff d) r4 r2
 	R1*3
 	
 % Bars 161 to 165
 	
 	b4:16 f': f: b8: d:
 	f,: b: f': b: b,: f': b: d:
-	\tuplet 3/2 4 {<d, d'>8\fff q q  q q q} q8->[ q->] q-> q->
+	\ottava #1 \tuplet 3/2 4 {\tupletDown <d, d'>8-\offset X-offset -1.5 \fff q q  q q q \tupletNeutral } q8->[ q->] q-> q-> \ottava #0
 	<d e>-> q-> r4 r2 
 % Bars 166 to 170
 	R1*4
 	
 	
 	\bar "||"
-	\time 12/8 d,8\pp^\pizz r r r4 r8 r2.
+	\time 12/8 d,8\pp_\pizz r r r4 r8 r2.
 % Bars 171 to 175
 	r2. e4.^\arco_\dolciss b4( cis8)
 	d4.~ d8 r r e4. b4( cis8)
@@ -236,7 +236,7 @@ musicViolineIIMvtII = \relative c {
 	g4.(\> fis\!) e\pp b4( cis8
 	d) r r r4 fis8( e4.) b4( cis8)
 	<a d>8\pp^\pizz r r r4 r8 q8 r r r4 r8
-	q r r a4(^\arco e'8) d4. r4 r8
+	q\ppp r r a4(^\arco e'8) d4. r4 r8
 % Bars 181 to 184
 	R1.*2
 	

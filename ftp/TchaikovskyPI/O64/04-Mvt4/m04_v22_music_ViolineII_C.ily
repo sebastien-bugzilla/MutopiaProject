@@ -41,7 +41,7 @@ musicViolineIIMvtIV = \relative c {
 	b r r4 r2
 % Bars 26 to 30
 	R1
-	r2 \tuplet 3/2 4 {e8(\mf fis e) cis( dis cis)
+	r2 \tuplet 3/2 4 {e8(\mf dis e) cis( dis cis)
 	b( cis b) } r4 r2
 	r4 \tuplet 3/2 4 {ais8(\< b ais) b( cis b)\! cis(\f bis cis)
 	b!( cis b) e( fis e) fis( gis fis)} r4
@@ -397,7 +397,7 @@ musicViolineIIMvtIV = \relative c {
 		b a' gis f
 		e8
 	}>>
-	r \tuplet 3/2 4 {c,8(-\offset X-offset -1 \f d c) d([ e d]) d( e d)
+	r \tuplet 3/2 4 {c,8(-\offset X-offset -1 \f^\unis d c) d([ e d]) d( e d)
 	c([ d c]) c( d c) a[( b a)] a( b a)
 	g[( a b]) c( d c) d([ e d]) d( e d)
 	c[( d c]) c( d c) a[( b a]) a( b a }

@@ -297,7 +297,7 @@ musicViolineIIMvtI = \relative c {
 	fis'8:16\f\< gis: a: b: cis: d:\! \mark \default
 	<a a'>8[\ff r16 q q8] r4 r8
 % Bars 256 to 260
-	<b, b'>16^\div <cis cis'> <d d'> <e e'> <fis fis'>8 r << {fis'16( gis a b
+	<b, b'>16(^\div <cis cis'> <d d'> <e e'> <fis fis'>8) r << {fis'16( gis a b
 	<a, a'>8[) b16\rest q q8]} \\ {fis16( gis a b \noteShift #1.3 <a a'>8)[ s16 \noteShift #1.3 q \noteShift #1.3 q8]}>> r4 r8
 	<b, b'>16( <cis cis'> <d d'> <e e'> <fis fis'>8) r <fis fis'>16( <gis gis'> <a a'> <b b'>
 	<a a'>8[) r16 q^\unis q8] r4 r8
@@ -340,7 +340,7 @@ musicViolineIIMvtI = \relative c {
 	r4 r8 <<{bes'16( cis d e f g)
 % Bars 291 to 296
 	\noteShift #1.1 <d, d'>4 \noteShift #1.1 <d a'>8 \noteShift #1.1 <d d'>4 \noteShift #1.1 <d a'>8} \\ {bes16( cis d e f g) <d d'>4 <d a'>8 <d d'>4 <d a'>8}>>
-	r4 r8 <<{a'16( b cis d e f) \mark \default
+	r4 r8 <<{a'16( b! cis d e f) \mark \default
 		\noteShift #1.1 <g,, g'>4 \noteShift #1.1 q8 bes'16( cis d e f g)
 		\noteShift #1.1 <d, d'>4 \noteShift #1.1 <d a'>8 a'16( b! cis d e f)
 		\noteShift #1.1 <g,, g'>4 \noteShift #1.1 q8 bes'16( cis d e f g)
@@ -492,8 +492,8 @@ musicViolineIIMvtI = \relative c {
 	R2.*2
 % Bars 416 to 420
 	
-	r8 b(\mf\< ais) a( b fis)
-	e'( e, e')\! e(-\offset X-offset -1 \sff-> ais, a)\!
+	r8 \hairpinShorten #'(0 . 1) b(\mf\< ais) a( b fis)
+	e'( e, e')\! \beamOffset #'(0.3 . 0.7) e(-\offset X-offset -1 \sff\> ais, a)\!
 	R2.*2
 	
 % Bars 421 to 425
