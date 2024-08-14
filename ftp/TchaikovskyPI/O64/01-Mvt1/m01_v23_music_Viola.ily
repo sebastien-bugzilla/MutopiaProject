@@ -39,13 +39,13 @@ musicViolaMvtI = \relative c {
 	e\f r r2
 	e4\mf\> r fis\! r
 % Bars 26 to 30
-	d\p\< c2\! <c a'>4\mf
+	d\p\< c2 <c a'>4\mf
 	g' e\> d dis(\!
 	e8) r r4 r <c a'>\mf
 	g' e\> d! dis(
 	e8)\! r r4 r2
 % Bars 31 to 35
-	\after 1*7/8 \! e1\p\<
+	\hairpinShorten #'(0 . -1) \after 1*7/8 \! e1\p\<
 	e2(\> dis)\!
 	r e\p\<
 	e(\> dis4~ dis8)\! r
@@ -132,22 +132,22 @@ musicViolaMvtI = \relative c {
 	a8[\fff r16 a a8]~ a b c
 	d->( c) b~ b r r
 	e8[ r16 e e8]~ e16 e fis fis g g
-	a8:16 g: fis: e: fis: g: 
-	a: g: fis: e: fis: g: 
+	a a g g fis fis e e fis fis g g 
+	a a g g fis fis e e fis fis g g 
 % Bars 106 to 110
-	a: g: fis: e: d: c: 
-	b: a': g: fis: e: dis: 
+	a a g g fis fis e e  d d c c 
+	b b a' a g g fis fis e e dis dis
 	e8[\fff r16 e e8]~ e fis g
 	a->( g) fis e4 b8(
 	g'8[-.) r16 g g8]~ g8. fis16 fis8~
 % Bars 111 to 115
 	fis8. e16 e8~ e4 a,8(
 	e8[-.) r16 e e8]~ e16 e fis fis g g
-	a8:16 g: fis: b: a: g: 
-	c: b: a: cis: b: ais: \mark \default
-	d: cis: g': fis8 ais,16 b bis cis
+	a a g g fis fis b b a a g g 
+	c c b b a a cis cis b b ais ais \mark \default
+	d d cis cis g' g fis8 ais,16 b bis cis 
 % Bars 116 to 120
-	fis4.~\sfp\< fis4_\moltoespr^\mfmarkup eis8(
+	fis4.~\sfp-\tweak extra-offset #'(0 . -0.7) \<^\moltoespr fis4 \markEO #'(-1 . 2.9) eis8(_\mfmarkup
 	e!4.) d4( fis8)\!
 	fis4.\f\> <b, g'>\!
 	\after 2.*5/6 \! ais2.\p\<
@@ -157,16 +157,16 @@ musicViolaMvtI = \relative c {
 	fis4.\ff\> <b, g'>\!
 	\after 2.*5/6 \! ais2.\p\<
 	fis4.\sff\>~ fis4 <g e'>8\!
-	\after 2.*5/6 \! <cis ais'>2.\mp\<
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! <cis ais'>2.-\offset X-offset -1 \mp\<
 % Bars 126 to 130
 	fis,4.\sff\>~ fis4 <g e'>8\!
-	\after 2.*5/6 \! <cis ais'>2.\mp\<
-	<a d>2.\ff
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! <cis ais'>2.-\offset X-offset -1 \mp\<
+	<a! d>2.\ff
 	<bes d>
 	<a d>4. <bes d>
 % Bars 131 to 135
 	<a d>\>~ q8\! r r
-	fis'\p^\pizz eis e d cis b
+	fis'\p-\offset X-offset -5 ^\pizz eis e d cis b
 	g\< fis e d\mf r r
 	r d\mf\> fis b e\p g
 	fis r r fis\p fis, r
@@ -201,7 +201,7 @@ musicViolaMvtI = \relative c {
 	
 	r8 fis(\mf\< gis) a( fis a)
 % Bars 161 to 165
-	a( g! a)\! gis(\sff\> d' a)\p
+	a( g! a) \hairpinShorten #'(-0.5 . -0.5) gis(-\offset X-offset #-1 \sff\> d' a)\p
 	R2.*2
 	
 	r8 fis(\mf\< gis) a( fis a)
@@ -210,7 +210,7 @@ musicViolaMvtI = \relative c {
 	R2.*2
 	
 	r8 fis(\mf\< gis) a( fis a)
-	a( g! a)\! gis(\sff\> d' a)\p
+	a( g! a) \hairpinShorten #'(-0.5 . -0.5) gis(-\offset X-offset #-1 \sff\> d' a)\p
 	r4 r8 a,(\p a' a,)
 % Bars 171 to 175
 	r4 r8 a( a' a,)
@@ -233,14 +233,14 @@ musicViolaMvtI = \relative c {
 % Bars 186 to 190
 	r fis4\f e d8~
 	d d4 e( fis8)
-	\set doubleSlurs = ##t r8 <e e'>4^\div_\pcrescmolto <fis fis'> <g g'>8~
+	\set doubleSlurs = ##t r8 <e e'>4-\offset X-offset -3 ^\div_\pcrescmolto <fis fis'> <g g'>8~
 	q q4 <gis gis'> <a a'>8_\mfcresc~
 	q q4 <ais ais'> <b b'>8~
 % Bars 191 to 195
 	q q4 <c c'>( <cis cis'>8)
 	r <d d'>4_\fcresc <dis dis'>( <e e'>8)
 	r q4 <fis fis'>( <g g'>8) \set doubleSlurs = ##f
-	r a4^\unis\fff gis a8~
+	r a4\fff gis_\unis a8~
 	a a4 gis a8~
 % Bars 196 to 200
 	a a4 gis a8~
@@ -300,19 +300,19 @@ musicViolaMvtI = \relative c {
 	ces4. aes4( ees8)
 	ees2.\f~
 	ees
-	\after 2.*5/6 \! fes\p\<
+	\hairpinShorten #'(-0.5 . -1) \after 2.*5/6 \! fes\p\<
 	ees\f
 % Bars 246 to 250
-	\after 2.*5/6 \! e!\p\<
+	\hairpinShorten #'(-0.5 . -1) \after 2.*5/6 \! e!\p\<
 	fis!\f
-	\after 2.*5/6 \! g\p\<
+	\hairpinShorten #'(-0.5 . -1) \after 2.*5/6 \! g\p\<
 	fis\f
-	\after 2.*5/6 \! g\p\<
+	\hairpinShorten #'(-0.5 . -1) \after 2.*5/6 \! g\p\<
 % Bars 251 to 255
 	R2.
 	b8(\mf\< a g fis) e-. d-.\!
 	cis8-.\f r r r4 r8
-	fis8:16\f\< gis: a: b: cis: d:\! \mark \default
+	fis8:16\f\< gis: a: \stemUp b: cis: d:\! \stemNeutral \mark \default
 	e8[\ff r16 e' e8] r4 r8
 % Bars 256 to 260
 	b,16( cis d e fis8) r fis16( gis a b
@@ -340,7 +340,7 @@ musicViolaMvtI = \relative c {
 	bes4.\mf~ bes4 c8\<(
 % Bars 276 to 280
 	d4.) ees4( f8\!
-	fis!) r r fis\mf r fis,!
+	fis) r r fis\mf r fis,!
 	fis r r <fis b> r q\<
 	<e b'> r r a r <fis b>\!
 	<b g'>\f r r <g e'> r e'
@@ -385,9 +385,9 @@ musicViolaMvtI = \relative c {
 	r4 r8 q4 q8
 	r4 r8 q4.\mf
 	r4 r8 q4.
-	r4 q8_\dimmarkup r4 q8
+	r8 r q_\dimmarkup r r q8
 % Bars 316 to 320
-	r4 q8 r4 q8
+	r r q8 r r q8
 	r4 r8 q4.\p
 	r4 r8 q4.
 	r4 r8 q4.\pp \mark \default
@@ -406,8 +406,8 @@ musicViolaMvtI = \relative c {
 % Bars 331 to 335
 	
 % Bars 336 to 340
-	r4 r8 r4 c8(\p \mark \default
-	e8[)-. r16 e e8](~ e\< fis-.) g\!
+	r4 r8 r r c8(\p \mark \default
+	e8[)-. r16 e e8](~ e\< fis-.) g-.\!
 	a(\> g) fis(\! e4) c8(\<
 	g'8[-.)\! r16 g g8]~ g8.\> fis16 fis8\!
 	fis8. e16 e8~ e4 c8(\p
@@ -419,7 +419,7 @@ musicViolaMvtI = \relative c {
 	a4.->~ a8 a4\mf\>~
 % Bars 346 to 350
 	a8 a4~ a8\p\noBeam cis16(\< d e fis\!
-	g8[-.)\f r16 g, g8]~ g a(\< b\!
+	\beamOffset #'(0.5 . 1) g8[-.)-\offset X-offset -1.5 \f r16 g, g8]~ g a(\< b\!
 	c\ff\> b a\! g) b-.\mf( b-.)
 	a4.->~ a8 a4\mf\>~
 	a8 a4~ a8\p\< cis16( d e fis\!
@@ -434,9 +434,9 @@ musicViolaMvtI = \relative c {
 	R2.*5
 % Bars 361 to 365
 	
-	r4 r8 r^\div <<{b-- b--
-	gis4.->~ gis8 cis,16 d dis e} \\ {d8--\f d-- cis4.->~ cis8 cis!16\ff d dis e}>>
-	eis\<^\unis fis gis a ais b bis cis d! dis e! eis\! \mark \default
+	r4 r8 r\offset X-offset -1 ^\div <<{b-- b--
+	gis4.->~ gis8 cis,16 d dis e} \\ {d8---\offset X-offset -2 \f d-- cis4.->~ \beamOffset #'(0.3 . 0.3) cis8 cis!16\ff d dis e}>>
+	eis\<^\unis fis gis a ais b bis cis d! dis e! eis\! \resetMarkSpace \mark \default
 	fis8[\fff r16 fis fis8]~ fis gis a
 % Bars 366 to 370
 	b(-> a) gis fis4 cis8(
@@ -447,27 +447,27 @@ musicViolaMvtI = \relative c {
 % Bars 371 to 375
 	d: cis: b: dis: cis: bis: 
 	e: dis: cis: gis8 bis,16 cis d! dis
-	gis4.~\sfp\< gis4_\moltoespr fisis8(^\mfmarkup
+	gis4.~\sfp-\tweak extra-offset #'(0 . -0.7) \<^\moltoespr gis4 \markEO #'(-1 . 2.9) fisis8(_\mfmarkup
 	fis!4.) e4( gis8)\!
 	gis4.\f\> cis,\!
 % Bars 376 to 380
-	\after 2.*5/6 \! bis2.\p\<
+	\hairpinShorten #'(0 . -1.5) \after 2.*5/6 \! bis2.\p\<
 	gis'4._\mfcresc~ gis4 fisis8(
 	fis!4.) e4( gis8)
 	gis4.\ff\> cis,8( dis e)\!
-	\after 2.*5/6 \! dis2.\mp\<
+	\hairpinShorten #'(-0.5 . -0.5) dis2.\mp\<
 % Bars 381 to 385
 	<gis, e'>4.\sff\>~ q4 cis8\!
-	\after 2.*5/6 \! <bis gis'>2.\mp\<
+	\hairpinShorten #'(-0.5 . -0.5) <bis gis'>2.\mp\<
 	<gis e'>4.\sff\>~ q4 cis8\!
-	\after 2.*5/6 \! <bis gis'>2.\mp\<
-	<b! e>\ff
+	\hairpinShorten #'(-0.5 . -0.5) <bis gis'>2.\mp\<
+	\tempoXoffset #-1.5 <b! e>\ff
 % Bars 386 to 390
 	<c! e>
 	<b e>4. <c e>
 	<b e>\>~ q8\! r r
-	gis'8\p^\pizz fisis fis e dis cis
-	a\< gis fis\! e\mf cis bis
+	gis'8\p-\offset X-offset -6 ^\pizz fisis fis e dis cis
+	a\< gis fis\! e-\offset X-offset -1 \mf cis bis
 % Bars 391 to 395
 	cis\> e gis\! cis\p fis a
 	gis r r gis\p gis, r
@@ -475,7 +475,7 @@ musicViolaMvtI = \relative c {
 	a\< gis fis e\! cis\f bis
 	cis r r cis'\mf\> dis e\!
 % Bars 396 to 400
-	gis,\p r r gis' gis, r \mark \default
+	gis,\p r r gis' gis, r \markXoffset #0 \mark \default
 	R2.
 	fis8\p r r r4 r8
 	R2.
@@ -490,7 +490,7 @@ musicViolaMvtI = \relative c {
 	cis2.\pp
 	R2.
 	<cis cis'>\p
-	r4 r8 <fis, b>^\pizz\ff r fis
+	r4 r8 <fis, b>-\offset X-offset -5 ^\pizz\ff r fis
 	b dis fis b r r
 % Bars 411 to 415
 	<b, gis'> r r r4 r8
@@ -533,7 +533,7 @@ musicViolaMvtI = \relative c {
 	cis b4 ais( a8)
 	r gis4\f fis e8~
 	e e4 fis( gis8)
-	r \set doubleSlurs = ##t <fis fis'>4_\pcrescmolto^\div <gis gis'> <a a'>8~
+	r \set doubleSlurs = ##t <fis fis'>4_\pcrescmolto-\offset X-offset -3 ^\div <gis gis'> <a a'>8~
 % Bars 446 to 450
 	q q4 <ais ais'> <b b'>8~
 	q q4 <bis bis'> <cis cis'>8~
@@ -541,7 +541,7 @@ musicViolaMvtI = \relative c {
 	r <e e'>4_\fcresc <eis eis'>( <fis fis'>8)
 	r q4 <gis gis'>( <a a'>8) \set doubleSlurs = ##f
 % Bars 451 to 455
-	r^\unis b4\fff ais b8~
+	r b4\fff ais_\unis b8~
 	b b4 ais b8~
 	b b4 ais b8~
 	b b4 ais( b8)
@@ -549,13 +549,13 @@ musicViolaMvtI = \relative c {
 % Bars 456 to 460
 	q q q  q q q
 	r e'8:16_\fcresc cis: b: ais: a: 
-	gis: fis: e: d: cis: c: \mark \default
+	gis: fis: e: d: cis: c: \resetMarkSpace \mark \default
 	b8[\fff r16 <gis' b> q8] q q q
 	q q q  q q q
 % Bars 461 to 465
 	r e8:16\f\< dis: d: cis: c: 
 	b: e: fis: gis: a: fisis:\!
-	<b, gis'>8[\fff r16 q q8] q q q
+	<b, gis'>8[-\offset X-offset -1.5 \fff r16 q q8] q q q
 	r b'8:16\ff a: gis: g!: fis: 
 	<b, gis'>8[ r16 q q8] q q q
 % Bars 466 to 470
@@ -577,9 +577,9 @@ musicViolaMvtI = \relative c {
 	R2.
 	r4 r8 e,(\f fis g
 	a) r r fis(\ff g a
-	ais) e16 e fis fis g g e' e fis fis
+	ais) e8:16 fis: g: e': fis: % ais) e16 e fis fis g g e' e fis fis
 % Bars 486 to 490
-	g g e e fis fis g g e e fis fis \mark \default
+	g: e: fis: g: e: fis: \resetMarkSpace \mark \default % g g e e fis fis g g e e fis fis \mark \default
 	g8 r r r4 r8
 	R2.
 	e,8[-.\p r16 e e8]~ e16\< e fis8:16 gis:\!
@@ -612,17 +612,17 @@ musicViolaMvtI = \relative c {
 	e8[) r16 e\f e8]~ e8[ r16 e e8]~
 	e8[ r16 e e8]~ e e( dis
 	e8[) r16 e e8]~ e8[ r16 e e8]~
-	e8[ r16 e e8]~ e e( dis \mark \markAaBox
+	e8[ r16 e e8]~ e e( dis \resetMarkSpace \mark \markAaBox
 	e8[) r16 e\mf e8]~ e fis-. g-.
 % Bars 516 to 520
-	a(_\dimmarkup g) fis~ fis e( dis
+	a(-\tweak extra-offset #'(0 . -7.5) ^\dimmarkup g) fis~ fis e( dis
 	e8[) r16 e e8]~ e fis-. g-.
 	a( g) fis~ fis e( dis
 	e8[) r16 e\p e8]~ e8[ r16 e e8]~
 	e8[ r16 e e8]~ e e( dis
 % Bars 521 to 525
 	e8[) r16 e e8]~ e8[ r16 e e8]~
-	e8[ r16 e e8]~ e e( dis \mark \markBbBox
+	e8[ r16 e e8]~ e e( dis \resetMarkSpace \mark \markBbBox
 	e) r r r4 r8
 	R2.*18
 % Bars 526 to 530

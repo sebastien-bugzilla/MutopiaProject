@@ -16,10 +16,10 @@ musicViolaMvtIV = \relative c {
 	e4~ e8 r r4 cis'8\f r
 	b r gis r fis\> r e\! r
 % Bars 6 to 10
-	e2\<~ e8\! r cis'\f r
+	dis2\<~ dis8\! r cis'\f r
 	b r gis r fis r ais r
 	fis2~\> fis8\! r r4
-	cis4\p~ cis8 r dis4~ dis8 r
+	cis4-\offset X-offset -1.5 \p~ cis8 r dis4~ dis8 r
 	e2~ e8 r r4
 % Bars 11 to 15
 	e4\mf~ e8 r dis4~ dis8 r
@@ -38,10 +38,10 @@ musicViolaMvtIV = \relative c {
 	
 	
 	
-	\tuplet 3/2 4 {r8 cis(\p\<^\arco b) a(^\legatissimo b a) gis[( a gis]) fis( gis fis)\!
+	\tuplet 3/2 4 {r8 cis(\p\<-\offset X-offset -4.5 ^\arco b) a(-\tweak extra-offset #'(0 . 11.5) _\legatissimo b a) gis[( a gis]) fis( gis fis)\!
 % Bars 26 to 30
 	e[(_\piuf fis e)] gis( a gis) a[( b a)] fis( gis fis)
-	gis[(\< a gis]) e( fis e)\! e([\mf dis e)] cis[( dis cis])}
+	gis[(\< a gis]) e( fis e) e([\mf dis e)] cis[( dis cis])}
 	r4 \tuplet 3/2 4 {e8( fis e) fis[(\> gis fis]) fisis( gis fisis)\!
 	gis( ais gis)} r4 r \tuplet 3/2 4 {cis,8(\f bis cis)}
 	r4 \tuplet 3/2 4 {e8( fis e) fis[( gis fis]) fis( gis fis)
@@ -53,7 +53,7 @@ musicViolaMvtIV = \relative c {
 	e[( fis e]) e( fis e) e([ fis e])} r4
 % Bars 36 to 40
 	r \tuplet 3/2 4 {e8(\f fis e) fis[(\> gis fis]) fisis( gis fisis)\!
-	gis( ais gis)} r4 r \tuplet 3/2 4 {cis,8(\ff bis cis)}
+	gis( ais gis)} r4 r \tuplet 3/2 4 {cis,8(-\offset X-offset -2 \ff bis cis)}
 	r4 \tuplet 3/2 4 {e8( fis e) fis[( gis fis]) gis( a ais
 	b) r r dis,8:16\f e: fis: g: b: a: g: fis: e:
 	dis: e: fis: e: fis: g: fis: g: fis: g: fis: e:
@@ -70,9 +70,9 @@ musicViolaMvtIV = \relative c {
 	
 	
 % Bars 51 to 55
-	r4 b(\p\< a\! g~\>
+	r4 b(\p\< a g~\>
 	g8)\! r r4 r2
-	r4 b(\pp\< a\! g~\>
+	r4 \hairpinShorten #'(0 . -0.5) b(-\offset X-offset -0.5 \pp\< a\! \hairpinShorten #'(-0.5 . 0) g~\>
 	g8)\! r b4(\< a\! g\>~
 	g2.)\! b4(\< 
 % Bars 56 to 60
@@ -107,26 +107,26 @@ musicViolaMvtIV = \relative c {
 	g: a: b: c: 
 % Bars 81 to 85
 	d: dis: e: fis: } \mark \default
-	g8 b\p b b  b b b b
-	b\< b b b  b b b b\!
-	b\mf b b b e, e e e
-	cis cis cis cis  cis cis cis cis
+	g8 b\p b b  b2:8
+	b:\< b:\!
+	b:\mf e,:
+	cis: cis:
 % Bars 86 to 90
-	d\< d d d   d d d d\!
-	e\> e e e  fis, fis fis fis\!
-	fis\mf fis fis fis  dis' dis dis dis
-	e e e e  dis dis dis dis
-	b' b b b   b b b b
+	d:\< d:\!
+	e:\> fis,:\!
+	fis:\mf dis': 
+	e: dis:
+	b': b: 
 % Bars 91 to 95
-	b b b b  b b b b 
-	b b b b  e, e e e
-	cis cis cis cis  cis cis cis cis
-	d\< d d d  d d d d\!
-	e\> e e e  fis, fis fis fis\!
+	b: b:
+	b: e,: 
+	cis: cis: 
+	d:\< d:\!
+	e:\> fis,:\! 
 % Bars 96 to 100
-	fis\< fis fis fis  fis fis fis fis\!
-	fis\> fis fis fis  fis fis fis fis\! \mark \default
-	e\p r r4 r2
+	fis:\< fis:\!
+	fis:\> fis:\! \mark \default
+	e8\p r r4 r2
 	r4 cis'(\p b cis)
 	fis,2(\< gis)
 % Bars 101 to 105
@@ -230,7 +230,7 @@ musicViolaMvtIV = \relative c {
 % Bars 186 to 190
 	b8 e( g a g fis e dis)
 	cis( b a g) cis( b a g)
-	r2 <c, g' e'>8\ff r r4
+	r2 <c,! g' e'>8\ff r r4
 	r2 <f c'>8 r r4
 	r8 e''( ees d c b c)\noBeam r
 % Bars 191 to 195
@@ -279,7 +279,7 @@ musicViolaMvtIV = \relative c {
 	<e g> q <g e'>\fff q <g dis'> q <g e'> q
 	<bes d!> q g g  fis fis g g
 	bes bes bes bes  a a bes bes
-	des des des des  c c des des \mark \default
+	des des des des  c c des des \resetMarkSpace \mark \default
 	bes bes e' e dis dis e e
 % Bars 231 to 235
 	e e e e cis cis cis cis
@@ -324,7 +324,7 @@ musicViolaMvtIV = \relative c {
 	f f f f\!
 	ges\f\< ges ges ges\!
 % Bars 266 to 270
-	fes8\ff r fes4( ees fes~
+	fes8\ff r fes4(\ff ees fes~
 	fes) fes(_\dimmarkup ees fes~
 	fes) fes( ees fes~
 	fes) fes( ees fes)(
@@ -477,9 +477,9 @@ musicViolaMvtIV = \relative c {
 	r f'( bes,) r ees( bes)\!
 % Bars 396 to 400
 	r aes(\f f) r bes( ges)
-	r des'(\> bes) r ees( c')\! } \mark \default
+	r des'(\> bes) r ees( c')\! } \mark \default 
 	e,!1\mf~
-	e2\< fis8( e dis e)\!
+	e2\< fis!8( e dis e)\!
 	gis2(-> fis)
 % Bars 401 to 405
 	R1
@@ -514,7 +514,7 @@ musicViolaMvtIV = \relative c {
 % Bars 426 to 430
 	\tuplet 3/2 4 {a8[\fff a a]  g g g  fis[ fis fis]  e e e
 	g[ g g]  fis fis fis   e[ e e]   dis dis dis
-	e[_\semprecontuttaforza e e]  d! d d  c[ c c]   b b b
+	e[^\semprecontuttaforza e e]  d! d d  c[ c c]   b b b
 	d[ d d]  c c c  b[ b b]  a a a
 	c[ c c]  b b b  a[ a a]  g g g
 % Bars 431 to 435
@@ -621,7 +621,7 @@ musicViolaMvtIV = \relative c {
 	e4) r8 fis( gis4) r8 a(
 	b4)\fff r8 gis( e4) r8 cis(
 % Bars 511 to 515
-	b4) r8 gis( fis4) r8 gis( \mark \markCcBox
+	b4) r8 gis( fis4) r8 gis( \resetMarkSpace \mark \markCcBox
 	e4) e'\p d e
 	cis d b cis
 	a_\crescmarkup b gis a
@@ -637,17 +637,17 @@ musicViolaMvtIV = \relative c {
 	g g,8 a bes c d dis
 	e4 e,8 fis gis! a b! bis
 	cis4 cis,8 d dis eis fisis gis
-	a4 a8 b cis dis e! eis \mark \markDdBox
+	a4 a8 b cis dis e! eis \resetMarkSpace \mark \markDdBox
 % Bars 526 to 530
 	fis fis gis a b r r4
 	r8 fis ais b c r r4
 	r8 g b c cis r r4
 	r8 gis! bis cis d r r4
-	g,8 a b cis! <fis, b>2:8
+	g,8 a b cis! <fis, b>8 q q q % <fis, b>2:8
 % Bars 531 to 535
-	<b, gis'!>: <fis' b>:
-	<g e'>: <gis eis'>:
-	<fis fis'>: q:
+	<b, gis'> q q q  <fis' b> q q q %<b, gis'!>: <fis' b>:
+	<g e'> q q q  <gis eis'> q q q % <g e'>: <gis eis'>:
+	<fis fis'> q q q   q q q q % <fis fis'>: q:
 	<gis e'>4 fis2 gis4~
 	gis a2 b4(
 % Bars 536 to 540
@@ -671,15 +671,15 @@ musicViolaMvtIV = \relative c {
 % Bars 551 to 555
 	<b e> r r <cis e a> r r
 	<b e> r r <cis e a> r r
-	<b e> r r <cis e a> r r \mark \markEeBox
-	<b e> r r e4:8 cis: b:
-	fis': e: cis: b: a: gis: 
+	<b e> r r <cis e a> r r \resetMarkSpace \mark \markEeBox
+	<b e> r r e8 e cis cis b b % e4:8 cis: b:
+	fis' fis e e cis cis b b a a gis gis % fis': e: cis: b: a: gis: 
 % Bars 556 to 560
-	cis: b: a: gis: fis: e: 
-	a: gis: fis: e: cis': b:
-	cis: b: gis: e: gis: ais: 
-	b: dis,: e: gis: b: dis,: 
-	e: gis: ais: b: dis: e: 
+	cis cis b b a a gis gis fis fis e e  %cis: b: a: gis: fis: e: 
+	a a gis gis fis fis e e cis' cis b b  % a: gis: fis: e: cis': b:
+	cis cis b b gis gis e e gis gis ais ais % cis: b: gis: e: gis: ais: 
+	b b dis, dis e e gis gis b b dis, dis % b: dis,: e: gis: b: dis,: 
+	e e gis gis ais ais b b dis dis e e % e: gis: ais: b: dis: e: 
 % Bars 561 to 565
 	gis4 r r r2.
 	<e, b'>1.

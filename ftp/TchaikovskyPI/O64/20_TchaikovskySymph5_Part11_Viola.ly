@@ -39,7 +39,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64"
+			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64 — Viola"
 		}
 		instrument = \markup {
 			"Viola"
@@ -47,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtI
-%			}
+			\new Voice {
+				\formatViolaMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtI
 			}
@@ -71,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtII
-%			}
+			\new Voice {
+				\formatViolaMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtII
 			}
@@ -87,7 +87,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #3.1 \bold 2.
 			}
 		}
 		\layout {
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIII
-%			}
+			\new Voice {
+				\formatViolaMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIII
 			}
@@ -111,7 +111,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.8 \bold 3.
 			}
 		}
 		\layout {
@@ -119,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIV
-%			}
+			\new Voice {
+				\formatViolaMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIV
 			}
@@ -135,7 +135,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2 \bold 4.
 			}
 		}
 		\layout {

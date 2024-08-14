@@ -109,7 +109,7 @@ musicViolaMvtIII = \relative c {
 	a\>-. gis-. fis-. e\!-. dis\<-. e-. dis-. e\!-. fis\>-. e-. dis-. cis\!-. 
 	b\<-. cis-. b-. cis\!-. dis\>-. cis-. b-. a\!-. gis-. a-. gis-. a-. 
 	b\<-. a-. gis-. fis-. eis-. fis-. eis-. fis-. gis-. fis-. e-. dis\!-. 
-	cis'8->\mf( b) r4 fis'16\p\<-. gis-. fis-. gis-. 
+	cis'8->\mf( b) r4 fis'16\p\<-. gis-. fis-. gis-.\!
 	a\>-. gis-. fis-. e\!-. dis\<-. e-. dis-. e\!-. fis\>-. e-. dis-. cis\!-. 
 % Bars 86 to 90
 	b\<-. cis-. b-. cis\!-. dis\>-. cis-. b-. a\!-. gis-. a-. gis-. a-. 

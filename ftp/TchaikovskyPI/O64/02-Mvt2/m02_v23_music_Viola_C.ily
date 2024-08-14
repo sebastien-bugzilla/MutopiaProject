@@ -138,7 +138,7 @@ musicViolaMvtII = \relative c {
 	R1
 	q8-> q-> r4 r^\unis <e b'>4
 	<cis a' e' a> <e g> <cis a' e' a> <d g> 
-	<cis a' e' a>8-> q r4 r <e b'>
+	<cis a' e' a>8-> q-> r4 r <e b'>
 	<cis a' e' a> <e g> <cis a' e' a> <d g>
 % Bars 106 to 110
 	<cis a' e' a>8-> q-> r4 r q8-> r

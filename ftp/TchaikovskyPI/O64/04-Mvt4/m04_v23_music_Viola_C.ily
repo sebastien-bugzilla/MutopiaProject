@@ -16,7 +16,7 @@ musicViolaMvtIV = \relative c {
 	e4~ e8 r r4 cis'8\f r
 	b r gis r fis\> r e\! r
 % Bars 6 to 10
-	e2\<~ e8\! r cis'\f r
+	dis2\<~ dis8\! r cis'\f r
 	b r gis r fis r ais r
 	fis2~\> fis8\! r r4
 	cis4\p~ cis8 r dis4~ dis8 r
@@ -324,7 +324,7 @@ musicViolaMvtIV = \relative c {
 	f f f f\!
 	ges\f\< ges ges ges\!
 % Bars 266 to 270
-	fes8\ff r fes4( ees fes~
+	fes8\ff r fes4(\ff ees fes~
 	fes) fes(_\dimmarkup ees fes~
 	fes) fes( ees fes~
 	fes) fes( ees fes)(

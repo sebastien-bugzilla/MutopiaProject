@@ -407,7 +407,7 @@ musicViolaMvtI = \relative c {
 	
 % Bars 336 to 340
 	r4 r8 r4 c8(\p \mark \default
-	e8[)-. r16 e e8](~ e\< fis-.) g\!
+	e8[)-. r16 e e8](~ e\< fis-.) g-.\!
 	a(\> g) fis(\! e4) c8(\<
 	g'8[-.)\! r16 g g8]~ g8.\> fis16 fis8\!
 	fis8. e16 e8~ e4 c8(\p
