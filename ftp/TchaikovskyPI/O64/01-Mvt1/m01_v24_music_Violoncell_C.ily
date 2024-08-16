@@ -636,7 +636,7 @@ musicVioloncellMvtI = \relative c {
 	e
 	e~
 	e
-	<e g>\<~
+	<e g>^\nondivisi\<~
 	q\!~
 % Bars 541 and 542
 	q~\>

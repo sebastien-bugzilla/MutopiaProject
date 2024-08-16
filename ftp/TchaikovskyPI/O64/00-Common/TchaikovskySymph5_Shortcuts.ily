@@ -81,6 +81,7 @@ condesiderio = \markup {\italic {con desiderio}}
 con_desiderio = \markup {\italic \column {\lower #1.5 "con" "desiderio"}}
 sulg = \markup {sul G.}
 condesiderioepassione = \markup {\italic {con desiderio e passione}}
+condesiderio_epassione = \markup {\italic \column { \lower #1.5 "con desiderio" "e passione"}}
 contuttaforza = \markup {\italic {con tutta forza}}
 dolciss = \markup {\italic {dolciss.}}
 moltoespress = \markup {\italic {molto espress.}}
@@ -97,6 +98,8 @@ legatissimo = \markup {\italic {legatissimo}}
 divisi = \markup {\italic {divisi}}
 apoco = \markup {\italic {a poco}}
 conanima = \markup {\italic {con anima}}
+nondivisi = \markup {\italic {non divisi}}
+sempre = \markup {\italic {sempre}}
 
 % instrument transition
 mutainflpicc = \markup {\column {\lower #1 "muta in" "Fl. picc."}}

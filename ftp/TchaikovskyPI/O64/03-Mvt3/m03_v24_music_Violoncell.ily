@@ -22,7 +22,7 @@ musicVioloncellMvtIII = \relative c {
 	R2.*2
 	
 % Bars 11 to 15
-	r4 r8 gis'(^\arco\p e d) \mark \default
+	r4 r8 gis'(^\arco\p e d) \resetMarkSpace \mark \default
 	dis( e fis gis) a-. b-.
 	bis4( cis2)
 	dis8(\< cis b! bis) cis-. d-.\!
@@ -95,7 +95,7 @@ musicVioloncellMvtIII = \relative c {
 	cis, cis' d,
 % Bars 71 to 75
 	d' e, e
-	<a, e' a> q\ff r
+	<a, e' a> q-\offset X-offset 0.8 \ff r
 	fis''2.\p^\arco~
 	fis8 r r4 r
 	R2.*2
@@ -119,21 +119,21 @@ musicVioloncellMvtIII = \relative c {
 	
 % Bars 91 to 95
 	r4 ais,16\p\<-. b-. ais-. b-. cis-. b-. a!-. gis\!-.
-	fisis4(\mf\> gis8)\! r r4
+	\hairpinShorten #'(-0.5 . -1) fisis4(\mf\> gis8)\! r r4
 	R2.*2
 	
 	r4 ais16\p\<-. b-. ais-. b-. cis-. b-. a-. gis\!-. \mark \default
 % Bars 96 to 100
-	fisis4\mf\>( gis8)\! r bis4(\pp
-	cis8) r <gis gis'>^\div^\pizz <cis cis'> <gis' gis'>\noBeam r
+	\hairpinShorten #'(-0.5 . -1) fisis4-\offset X-offset -2 \mf\>( gis8)\! r bis4(\pp
+	cis8) r <gis gis'>-\offset X-offset -4 _\div-\offset X-offset -1.5 ^\pizz <cis cis'> <gis' gis'>\noBeam r
 	R2.*2
 	
-	<cis, e>8\mf <cis, e> <cis' e>\noBeam r r4
+	<cis, e>8-\offset X-offset -1.5 \mf <cis, e> <cis' e>\noBeam r r4
 % Bars 101 to 105
 	<cis, cis'>8\pp r <gis' gis'> <cis cis'> <gis' gis'>\noBeam r
 	R2.*2
 	\mark \default
-	<cis, e>8\mf <cis, e> <cis' e>\noBeam r r fis,^\unis\mf
+	<cis, e>8-\offset X-offset -1.5 \mf <cis, e> <cis' e>\noBeam r r fis,^\unis\mf
 	b[ fis'] b, fis' r fis
 % Bars 106 to 110
 	b[ fis] b fis' r fis,,
@@ -179,7 +179,7 @@ musicVioloncellMvtIII = \relative c {
 	fis8 r r4 r
 % Bars 141 to 145
 	R2. \mark \default
-	<e, b' gis' e'>8\f^\pizz r r4 r
+	<e, b' gis' e'>8\f-\offset X-offset 0.5 ^\pizz r r4 r
 	R2.
 	r4 r e'16\p^\arco-. d-. cis-. b-. 
 	a-. b-. cis-. d-. dis-. e-. dis-. e-. fis-. gis-. a-. b-. 
@@ -191,7 +191,7 @@ musicVioloncellMvtIII = \relative c {
 	fis8-. r r4 r
 % Bars 151 to 155
 	fis,16-. gis-. fis-. gis-. a-. b-. a-. b-. cis-. dis-. cis-. dis-. 
-	e8-. r r4 r \mark #11
+	e8-. r r4 r \resetMarkSpace \mark #11
 	dis8(\p e fis gis) a-. b-.
 	bis4( cis2)
 	dis8(\< cis b! bis) cis-. d-.\!
@@ -270,7 +270,7 @@ musicVioloncellMvtIII = \relative c {
 % Bars 216 to 220
 	ais\< ais' ais,
 	b e b\!
-	bis\mf\< bis' bis,\! \mark \default
+	bis\mf\< bis' bis,\! \resetMarkSpace \mark \default
 	cis8 r <c, c'>4^\arco\f-- q--
 	q-- q-- q--
 % Bars 221 to 225
@@ -296,7 +296,7 @@ musicVioloncellMvtIII = \relative c {
 	<f' a>8 r q2\ff~
 	q2.~
 	q8 r r4 r
-	e4^\pizz\p e' e, \mark \default
+	e4^\pizz\p e' e, \resetMarkSpace \mark \default
 % Bars 241 to 245
 	a,\pp a a
 	r a a

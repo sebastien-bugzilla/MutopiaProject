@@ -39,17 +39,25 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64"
+			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor Op. 64 — Violoncell"
 		}
 		instrument = \markup {
 			"Violoncell"
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncellMvtI
-%			}
+			\new Voice {
+				\formatVioloncellMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(violoncell) \tempiPartMvtI
 			}
@@ -71,9 +79,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncellMvtII
-%			}
+			\new Voice {
+				\formatVioloncellMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(violoncell) \tempiPartMvtII
 			}
@@ -87,7 +95,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.3 \bold 2.
 			}
 		}
 		\layout {
@@ -95,9 +103,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncellMvtIII
-%			}
+			\new Voice {
+				\formatVioloncellMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(violoncell) \tempiPartMvtIII
 			}
@@ -111,7 +119,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.3 \bold 3.
 			}
 		}
 		\layout {
@@ -119,9 +127,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncellMvtIV
-%			}
+			\new Voice {
+				\formatVioloncellMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(violoncell) \tempiPartMvtIV
 			}
@@ -135,7 +143,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.9 \bold 4.
 			}
 		}
 		\layout {

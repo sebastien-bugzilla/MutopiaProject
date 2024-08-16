@@ -27,7 +27,7 @@ musicVioloncellMvtII = \relative c {
 	a2. <a d>
 	<b d>\< d4. cis\! \mark \default
 % Bars 16 to 20
-	cis2.\> <a d>\!
+	cis2.\> <a e'>\!
 	<b fis'>4.-\offset X-offset 1.5 \pp b~ b2.
 	a a
 	b4.\< a gis g\!
@@ -121,7 +121,7 @@ musicVioloncellMvtII = \relative c {
 	
 	r2 r4 b'!16(\mf bis b bis)
 	r2 r4 b!16( bis b bis)
-	\tuplet 3/2 8 {gis16\f gis \liiri gis \lirii gis, gis gis ais ais \liiri ais \lirii b b b bis bis \liiri bis \lirii cis cis cis dis dis \liiri dis \lirii e e e
+	\tuplet 3/2 8 {gis16\f gis \liiri gis \lirii gis,_\crescmarkup gis gis ais ais \liiri ais \lirii b b b bis bis \liiri bis \lirii cis cis cis dis dis \liiri dis \lirii e e e
 % Bars 96 to 100
 	eis8.:16 fis: gis: a,: ais: bis: cis: dis: 
 	e!:\fff eis: fis: gis: a!: ais: b!: cis: 
@@ -149,7 +149,7 @@ musicVioloncellMvtII = \relative c {
 % Bars 116 to 120
 	e,4 r8 <a e'>4 r8 <g e'>4 r8 e'4 r8
 	fis,4\< r8 <d' a'>4 r8 a4\! r8 a'4 r8
-	<d, a'>4 r8 gis4 r8 cis,4 r8 gis'4 r8
+	<d, b'>4 r8 gis4 r8 cis,4 r8 gis'4 r8
 	fis4\f r8 r4 r8 r4 r8 <e c'>4.\mp^\arco
 	<dis b'>\< a'\! b,\> b'\!
 % Bars 121 to 125

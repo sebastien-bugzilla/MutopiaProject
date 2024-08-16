@@ -25,7 +25,7 @@ musicVioloncellMvtIV = \relative c {
 	cis4.\mf cis16 cis cis4. cis16 cis
 	cis8 r b2\< e4--\ff
 	dis-- cis-- b--\> b8.( ais16)\!
-	gis2. e'4--\ff
+	\after 2.*5/6 \! gis2.\< e'4--\ff
 	dis-- cis-- b-- dis8.( cis16 \mark \default
 % Bars 16 to 20
 	b8)\noBeam \clef bass b,\p^\pizz cis dis e cis dis e
@@ -253,7 +253,7 @@ musicVioloncellMvtIV = \relative c {
 	<d b'> <dis a'>
 	e4~ e8 fis'( e dis cis b)
 	a( g fis e) <a, fis'>2
-	<b g'> <e b'>
+	<b g'> <e a>
 % Bars 201 to 205
 	<d b'> <dis a'> \mark \default
 	e4 a,\ff b a
