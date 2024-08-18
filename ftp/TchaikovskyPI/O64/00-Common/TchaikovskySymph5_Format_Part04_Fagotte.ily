@@ -792,15 +792,15 @@ formatFagotteIIMvtI = {
 	)
 	s2.*10 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 34.9)
+		(Y-offset . 34.89)
 	)
 	s2.*17 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 47.73)
+		(Y-offset . 47.72)
 	)
 	s2.*11 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 61.04)
+		(Y-offset . 61.03)
 	)
 	s2.*12 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -808,11 +808,11 @@ formatFagotteIIMvtI = {
 	)
 	s2.*8 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 88.83)
+		(Y-offset . 88.82)
 	)
 	s2.*7 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 103.87)
+		(Y-offset . 102.98)
 	)
 	s2.*9 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(

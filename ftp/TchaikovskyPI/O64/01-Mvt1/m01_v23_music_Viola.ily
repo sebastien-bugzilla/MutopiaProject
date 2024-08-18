@@ -577,9 +577,9 @@ musicViolaMvtI = \relative c {
 	R2.
 	r4 r8 e,(\f fis g
 	a) r r fis(\ff g a
-	ais) e8:16 fis: g: e': fis: % ais) e16 e fis fis g g e' e fis fis
+	ais) e8:16 fis: g: e': fis:
 % Bars 486 to 490
-	g: e: fis: g: e: fis: \resetMarkSpace \mark \default % g g e e fis fis g g e e fis fis \mark \default
+	g: e: fis: g: e: fis: \resetMarkSpace \mark \default
 	g8 r r r4 r8
 	R2.
 	e,8[-.\p r16 e e8]~ e16\< e fis8:16 gis:\!

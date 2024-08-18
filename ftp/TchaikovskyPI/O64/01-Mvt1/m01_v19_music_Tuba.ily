@@ -167,12 +167,12 @@ musicTubaMvtI = \relative c {
 	a~
 	a
 	d8[\fff r16 d d8] d d d
-	d2.:8 %d d d  d d d
+	d2.:8
 	R2.*2
 % Bars 201 to 205
 	\mark \default
 	d8[\fff r16 d d8] d d d
-	d2.:8 %d d d  d d d
+	d2.:8
 	R2.*2
 	
 % Bars 206 to 210
@@ -406,11 +406,11 @@ musicTubaMvtI = \relative c {
 	b
 	e8[\fff r16 e e8] e e e
 % Bars 456 to 460
-	e2.:8 % e e e  e e e
+	e2.:8
 	R2.*2
 	\mark \default
 	e8[\fff r16 e e8] e e e
-	e2.:8 %e e e  e e e
+	e2.:8
 % Bars 461 to 465
 	R2.*2
 	

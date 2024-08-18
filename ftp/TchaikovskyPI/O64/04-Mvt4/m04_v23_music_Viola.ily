@@ -643,11 +643,11 @@ musicViolaMvtIV = \relative c {
 	r8 fis ais b c r r4
 	r8 g b c cis r r4
 	r8 gis! bis cis d r r4
-	g,8 a b cis! <fis, b>8 q q q % <fis, b>2:8
+	g,8 a b cis! <fis, b>8 q q q 
 % Bars 531 to 535
-	<b, gis'> q q q  <fis' b> q q q %<b, gis'!>: <fis' b>:
-	<g e'> q q q  <gis eis'> q q q % <g e'>: <gis eis'>:
-	<fis fis'> q q q   q q q q % <fis fis'>: q:
+	<b, gis'> q q q  <fis' b> q q q
+	<g e'> q q q  <gis eis'> q q q
+	<fis fis'> q q q   q q q q
 	<gis e'>4 fis2 gis4~
 	gis a2 b4(
 % Bars 536 to 540
@@ -672,14 +672,14 @@ musicViolaMvtIV = \relative c {
 	<b e> r r <cis e a> r r
 	<b e> r r <cis e a> r r
 	<b e> r r <cis e a> r r \resetMarkSpace \mark \markEeBox
-	<b e> r r e8 e cis cis b b % e4:8 cis: b:
-	fis' fis e e cis cis b b a a gis gis % fis': e: cis: b: a: gis: 
+	<b e> r r e8 e cis cis b b 
+	fis' fis e e cis cis b b a a gis gis
 % Bars 556 to 560
-	cis cis b b a a gis gis fis fis e e  %cis: b: a: gis: fis: e: 
-	a a gis gis fis fis e e cis' cis b b  % a: gis: fis: e: cis': b:
-	cis cis b b gis gis e e gis gis ais ais % cis: b: gis: e: gis: ais: 
-	b b dis, dis e e gis gis b b dis, dis % b: dis,: e: gis: b: dis,: 
-	e e gis gis ais ais b b dis dis e e % e: gis: ais: b: dis: e: 
+	cis cis b b a a gis gis fis fis e e 
+	a a gis gis fis fis e e cis' cis b b 
+	cis cis b b gis gis e e gis gis ais ais
+	b b dis, dis e e gis gis b b dis, dis 
+	e e gis gis ais ais b b dis dis e e 
 % Bars 561 to 565
 	gis4 r r r2.
 	<e, b'>1.

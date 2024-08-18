@@ -173,14 +173,14 @@ musicKlarinetteIMvtII = \relative c {
 % Bars 141 to 145
 	cis, d e f fis g a bes c! cis d e
 	\timeSignature 4/4 \scaleDurations 3/2 {
-		c'16\ff a a a  a a a a   g g g g  a a bes bes %a4:16 g: a8: bes: 
-		f f d d  d d f f  e_\crescmarkup e e e  e e e e % f: d: d: f: e2:_\crescmarkup 
-		gis gis gis gis   gis gis gis gis   f\ff f a a   a a a a %gis4: gis: f8:\ff a: a4: 
-		bes bes a a  g! g g g  g g g g   bes bes bes bes % b8: a: g4: g: bes: 
+		c'16\ff a a a  a a a a   g g g g  a a bes bes
+		f f d d  d d f f  e_\crescmarkup e e e  e e e e
+		gis gis gis gis   gis gis gis gis   f\ff f a a   a a a a
+		bes bes a a  g! g g g  g g g g   bes bes bes bes 
 % Bars 146 to 150
-		a\ff a a a   a a a a  g g g g  a a bes bes % a:\ff a: g: a8: bes: 
-		f f d d   d d f f  e_\crescmarkup e e e   e e e e % f: d: d: f: e4:_\crescmarkup e: 
-		gis gis gis gis   gis gis gis gis  f f f f  f f f f % gis2: f: 
+		a\ff a a a   a a a a  g g g g  a a bes bes 
+		f f d d   d d f f  e_\crescmarkup e e e   e e e e 
+		gis gis gis gis   gis gis gis gis  f f f f  f f f f 
 	}
 	\timeSignature 12/8 a,4.\fff( bes4) bes8 bes4.( b4) b8
 	\tuplet 2/3 4. {b8( c) c c c( cis) cis cis} \mark #11
@@ -213,11 +213,11 @@ musicKlarinetteIMvtII = \relative c {
 % Bars 171 to 175
 	R1.*2
 	
-	c8\pp c c  c c c  e\< e e  e e e\! % c4.:8\pp c: e:\< e:\! 
-	f\> f f  c c c\!  des\< des des   des des des\! % f:\> c:\! des:\< des:\!
-	c\> c c  c c c\!  e\< e e  e e e\! %c:\> c\! e:\< e:\! 
+	c8\pp c c  c c c  e\< e e  e e e\! 
+	f\> f f  c c c\!  des\< des des   des des des\! 
+	c\> c c  c c c\!  e\< e e  e e e\! 
 % Bars 176 to 180
-	f\> f f  c c c\!  des\< des des  des des des\! % f:\> c:\! des:\<  des:\! 
+	f\> f f  c c c\!  des\< des des  des des des\! 
 	c8 r r r4 r8 bes,2.\pp(
 	c8) r r r4 r8 bes2.(
 	c8) r r r4 r8 r2.

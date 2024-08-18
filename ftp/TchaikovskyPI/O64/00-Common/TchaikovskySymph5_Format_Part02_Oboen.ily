@@ -840,7 +840,7 @@ formatOboeIIMvtII = {
 	)
 	s1.*14 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 48.38)
+		(Y-offset . 48.37)
 	)
 	s1.*5 \break
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
