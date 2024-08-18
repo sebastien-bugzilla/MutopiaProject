@@ -35,11 +35,11 @@
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
 			\center-column {
-				"Part for Kontrabass"
+				"Part for Kontrabaß"
 			}
 		}
 		subsubtitle = \markup { 
-			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64"
+			"Pyotr Ilyich Tchaikovsky — Symphony No. 5 in E Minor  Op. 64 — Kontrabaß"
 		}
 		instrument = \markup {
 			"Kontrabass"
@@ -47,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKontrabassMvtI
-%			}
+			\new Voice {
+				\formatKontrabassMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(kontrabass) \tempiPartMvtI
 			}
@@ -71,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKontrabassMvtII
-%			}
+			\new Voice {
+				\formatKontrabassMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(kontrabass) \tempiPartMvtII
 			}
@@ -87,7 +87,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.4 \bold 2.
 			}
 		}
 		\layout {
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKontrabassMvtIII
-%			}
+			\new Voice {
+				\formatKontrabassMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(kontrabass) \tempiPartMvtIII
 			}
@@ -111,7 +111,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1 \bold 3.
 			}
 		}
 		\layout {
@@ -119,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatKontrabassMvtIV
-%			}
+			\new Voice {
+				\formatKontrabassMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(kontrabass) \tempiPartMvtIV
 			}

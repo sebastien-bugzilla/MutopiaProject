@@ -41,7 +41,7 @@ musicKontrabassMvtI = \relative c {
 % Bars 26 to 30
 	g,\p\< c2\! fis,4\mf
 	g a\> b b\!
-	c2.\sf\> fis,4\mf
+	\hairpinShorten #'(-0.5 . -0.5) c2.\sf\> fis,4\mf
 	g a\> b b\!
 	\after 1*7/8 \! c1\sf\>
 % Bars 31 to 35
@@ -53,7 +53,7 @@ musicKontrabassMvtI = \relative c {
 % Bars 36 to 40
 	b1~
 	b4 r r2\fermata \bar "||" \time 6/8
-	e8\ppp r r a r r
+	\startMeasureCount e8\ppp r r a r r
 	e r r a r r
 	e r r a r r
 % Bars 41 to 45
@@ -65,7 +65,7 @@ musicKontrabassMvtI = \relative c {
 % Bars 46 to 50
 	e r r a r r
 	e r r a r r
-	e r r a r r
+	e r r a r r \stopMeasureCount
 	e r r r4 r8
 	R2.
 % Bars 51 to 55
@@ -77,14 +77,14 @@ musicKontrabassMvtI = \relative c {
 % Bars 56 to 60
 	a r r g\! r r \mark \default
 	fis4.~\> fis8\! r r
-	e\p r r a r r
+	\startMeasureCount e\p r r a r r
 	e r r a r r
 	e r r a r r 
 % Bars 61 to 65
 	e r r a r r
 	e\p r r a r r
 	e r r a r r
-	e r r a r r
+	e r r a r r \stopMeasureCount
 	e r r r4 r8 \mark \default
 % Bars 66 to 70
 	R2.*2
@@ -105,8 +105,8 @@ musicKontrabassMvtI = \relative c {
 	
 	g8(\f fis e d) e(\< fis\!
 % Bars 81 to 85
-	g\ff fis) e'(\> d\f) cis(\< b\!
-	g\ff fis) g'(\> fis)\f e(\< d\!
+	g\ff fis) \hairpinShorten #'(-1.5 . 0) e'(\> d\f) cis(\< b\!
+	g\ff fis) \hairpinShorten #'(-1.5 . 0) g'(\> fis)\f e(\< d\!
 	cis\ff b) a(\ff g fis e) \mark \default
 	d8.\ff d16 d8 r4 r8
 	R2.
@@ -165,12 +165,12 @@ musicKontrabassMvtI = \relative c {
 	R2.
 	r4 r8 r b\mf^\pizz ais
 	b\> r r e\p r r
-	fis\pp r r r r fis,\pp
+	fis\pp r r r4 fis,8\pp
 % Bars 136 to 140
 	R2.
 	r4 r8 r b\f ais
 	b\> r r e\p r r
-	fis\ff r r r r fis,\pp \mark \default
+	fis\ff r r r4 fis,8\pp \mark \default
 	R2.*4
 % Bars 141 to 145
 	
@@ -291,14 +291,14 @@ musicKontrabassMvtI = \relative c {
 	R2.
 	ces'\f~
 	ces
-	\after 2.*5/6 \! ces\p\<
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! ces\p\<
 	ces\f
 % Bars 246 to 250
-	\after 2.*5/6 \! b!\p\<
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! b!\p\<
 	d\f
-	\after 2.*5/6 \! d\p\<
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! d\p\<
 	d\f
-	\after 2.*5/6 \! d\p\<
+	\hairpinShorten #'(-0.5 . -0.5) \after 2.*5/6 \! d\p\<
 % Bars 251 to 255
 	R2.*4
 	
@@ -398,14 +398,14 @@ musicKontrabassMvtI = \relative c {
 	
 % Bars 336 to 340
 	\mark \default
-	e8\p r r a r r
+	\startMeasureCount e8\p r r a r r
 	e r r a r r
 	e r r a r r
 	e r r a r r
 % Bars 341 to 345
 	e\p r r a r r
 	e r r a r r
-	e r r a r r
+	e r r a r r \stopMeasureCount
 	e r r r4 r8
 	R2.*2
 % Bars 346 to 350
@@ -458,33 +458,29 @@ musicKontrabassMvtI = \relative c {
 	
 % Bars 391 to 395
 	
-	r4 r8 r r gis\pp^\pizz
+	r4 r8 r r gis\pp-\offset X-offset -6.5 ^\pizz
 	R2.*3
 	
 	
 % Bars 396 to 400
 	r4 r8 r r gis\pp \mark \default
-	R2.*4
+	R2.*11
 	
 	
 	
 % Bars 401 to 405
-	R2.*4
 	
-	
-	
-	R2.
 % Bars 406 to 410
-	R
-	R2.
+	
+	
 	\ni \mmrPos #-4 R2. \no
-	r4 r8 dis,\ff^\pizz dis' r
+	r4 r8 dis,\ff-\offset X-offset -6 ^\pizz dis' r
 	R2.
 % Bars 411 to 415
 	e,8 r r r4 r8
 	R2.*2
 	
-	r4 r8 fis'\f^\semprepizz r r
+	r4 r8 fis'\f-\offset X-offset -4 ^\semprepizz r r
 	R2.*3
 % Bars 416 to 420
 	
@@ -500,13 +496,13 @@ musicKontrabassMvtI = \relative c {
 	
 % Bars 426 to 430
 	r4 r8 fis\f r r
-	e,\p r r r r gis
-	fis r r r r a
+	e,\p r r r4 gis8
+	fis r r r4 a8
 	gis\< r r e r r\!
 	dis r r b\p r r
 % Bars 431 to 435
-	e\p r r r r gis
-	fis r r r r a
+	e\p r r r4 gis8
+	fis r r r4 a8
 	gis_\crescmarkup r r a r r
 	fis r r b, r r
 	gis\f r r cis r r
@@ -514,8 +510,8 @@ musicKontrabassMvtI = \relative c {
 	gis'_\dimmarkup r r a r r
 	fisis r r gis r r
 	eis r r fis! r b, \mark \default
-	e!_\pcresc r r r r gis(^\arco
-	fis) r r r r a(
+	e!_\pcresc r r r4 gis8(^\arco
+	fis) r r r4 a8(
 % Bars 441 to 445
 	gis) r r e\f r r
 	dis r r b r r
@@ -563,7 +559,7 @@ musicKontrabassMvtI = \relative c {
 	\mmrPos #-4 R \no
 	g,8\ff r r g r r
 % Bars 486 to 490
-	g r r g r r \mark \default
+	g r r g r r \resetMarkSpace \mark \default
 	g r r f'\p r r
 	e r r d r r
 	c r r b r r
@@ -588,7 +584,7 @@ musicKontrabassMvtI = \relative c {
 	b8[ r16 b b8]~ b b b~
 % Bars 506 to 510
 	b b b~ b b b
-	e r r d\ff r r
+	e r r d-\offset X-offset 0.5 \ff r r
 	c r r b r r 
 	e r r d r r
 	c r r b r r
@@ -596,7 +592,7 @@ musicKontrabassMvtI = \relative c {
 	e r r d\f r r
 	c r r b r r
 	e r r d r r
-	c r r b r r \mark \markAaBox
+	c r r b r r \resetMarkSpace \mark \markAaBox
 	e r r d\mf r r
 % Bars 516 to 520
 	c_\dimmarkup r r b r r
@@ -606,7 +602,7 @@ musicKontrabassMvtI = \relative c {
 	c r r b r r
 % Bars 521 to 525
 	e r r d r r
-	c r r b r r \mark \markBbBox
+	c r r b r r \resetMarkSpace \mark \markBbBox
 	e\p r r d r r
 	c r r b r r
 	e r r d r r

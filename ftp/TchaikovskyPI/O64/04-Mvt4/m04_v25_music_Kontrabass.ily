@@ -36,24 +36,24 @@ musicKontrabassMvtIV = \relative c {
 % Bars 21 to 25
 	R1*2
 	
-	\tuplet 3/2 4 {b'8([^\arco^\legatissimo\mf\> cis b)] a( b a) gis[( a gis]) fis( gis fis)\!
+	\tuplet 3/2 4 {b'8([-\offset X-offset -5 ^\arco^\legatissimo\mf\> cis b)] a( b a) gis[( a gis]) fis( gis fis)\!
 	e([ fis e]) dis( e dis) cis[( dis cis]) c( d c)
 	b([\< cis! b]) a( b a) gis([ a gis)] fis( gis fis)\!
 % Bars 26 to 30
 	e([_\piuf fis e)] gis( a gis) a([ b a]) fis( gis fis)
 	gis[(\< a gis]) e( fis e)\!} r4 \tuplet 3/2 4 {cis'8(\mf dis cis)
 	b8([ cis b)] e,( fis e) fis[(\> gis fis)] fisis( gis fisis)\!
-	gis([\< ais gis)] ais( b ais) b( cis b)\! cis(\f bis cis)
+	\hairpinShorten #'(0 . 0.5) gis([\< ais gis)] ais( b ais) b( cis b)\! cis(\f bis cis)
 	b!8([ cis b]) } r4 r \tuplet 3/2 4 {fis8( gis fis)
 % Bars 31 to 35
-	b([\> cis b]) } r4 \tuplet 3/2 4 {b8([ cis b])\!} r4 \mark \default
+	b([\> cis b]) } r4 \tuplet 3/2 4 {b8([ cis b])\!} r4 \markXoffset #0 \mark \default
 	\tuplet 3/2 4 {a8[(\p b a])} r4 \tuplet 3/2 4 {a8( b a)} r4
 	\tuplet 3/2 4 {gis8(_\crescmarkup a gis)} r4 \tuplet 3/2 4 {gis8( a gis)} r4
 	\tuplet 3/2 4 {fis8( gis fis)} r4 \tuplet 3/2 4 {fis8( gis fis)} r4
 	\tuplet 3/2 4 {e8( fis e)} r4 \tuplet 3/2 4 {e8( fis e) cis'(\f dis cis)
 % Bars 36 to 40
 	b[( cis b]) e,( fis e) fis([\> gis fis]) fisis( gis fisis)\!
-	gis([\< ais gis]) ais( b ais) b[( cis b)]\! cis(\ff bis cis)
+	\hairpinShorten #'(0 . 0.8) gis([\< ais gis]) ais( b ais) b[( cis b)]\! cis(\ff bis cis)
 	b!( cis b)} r4 r2
 	\tuplet 3/2 4 {r8 r b'16\f b a8:16 g: fis: e: cis: dis: e: fis: g:
 	a: g: fis: g: fis: e: fis: e: dis: e: dis: cis: }
@@ -66,7 +66,7 @@ musicKontrabassMvtIV = \relative c {
 % Bars 46 to 50
 	g1\>~
 	g2~ g8\! r r4
-	g,1\mf~
+	\startMeasureCount g,1\mf~
 	g~
 	g~\p
 % Bars 51 to 55
@@ -77,8 +77,8 @@ musicKontrabassMvtIV = \relative c {
 	g~
 % Bars 56 to 60
 	g~
-	g~_\ppcresc \bar "||"
-	\key e \minor \time 2/2 g~\mf\<
+	g~_\ppcresc \stopMeasureCount \bar "||"
+	\key e \minor \time 2/2 \startMeasureCount g~\mf\<
 	g~
 	g~
 % Bars 61 to 65
@@ -86,7 +86,7 @@ musicKontrabassMvtIV = \relative c {
 	g~\ff
 	g~
 	g~
-	g~
+	g~ \stopMeasureCount
 % Bars 66 to 70
 	g8 r g\ff r b r e r
 	g r c r e r r4
@@ -126,7 +126,7 @@ musicKontrabassMvtIV = \relative c {
 % Bars 96 to 100
 	d4)\! r8 fis,(\mf\< b4.) cis8(\!
 	d4.)\sf b8(\> dis4.) b8(\! \mark \default
-	e1)\p~ 
+	\startMeasureCount e1)\p~ 
 	e~
 	e~\<
 % Bars 101 to 105
@@ -134,7 +134,7 @@ musicKontrabassMvtIV = \relative c {
 	e~\>
 	e~\p
 	e~\<
-	\after 1*7/8 \! e
+	\after 1*7/8 \! e \stopMeasureCount 
 % Bars 106 to 110
 	a,~\mf
 	a~
@@ -150,8 +150,8 @@ musicKontrabassMvtIV = \relative c {
 % Bars 116 to 120
 	q~
 	q~\<
-	q2\! g4\fff a
-	g^\unis a g a
+	q2\! <<{g4 a} \\ {g\fff a}>>
+	\startMeasureCount g-\offset X-offset -1.5 ^\unis a g a
 	g a g a
 % Bars 121 to 125
 	g a g a
@@ -163,7 +163,7 @@ musicKontrabassMvtIV = \relative c {
 	g\p\< a g a
 	g a g a\! \mark \default
 	g\mf a g a
-	g a g a
+	g a g a \stopMeasureCount
 	fis a fis a
 % Bars 131 to 135
 	fis a fis\< a
@@ -260,7 +260,7 @@ musicKontrabassMvtIV = \relative c {
 	c r c r
 	c r c r
 	c r c r \mark \default
-	c\fff r g r
+	\startMeasureCount c\fff r g r
 % Bars 211 to 215
 	c r g r
 	c r g r
@@ -269,7 +269,7 @@ musicKontrabassMvtIV = \relative c {
 	c r g r
 % Bars 216 to 220
 	c r g r
-	c r g r
+	c r g r \stopMeasureCount
 	bes8\ff bes bes bes   bes bes bes bes
 	bes bes bes bes bes bes bes bes
 	bes bes bes bes bes bes bes bes
@@ -326,7 +326,7 @@ musicKontrabassMvtIV = \relative c {
 	ces
 	bes\mf\<
 	\after 1*7/8 \! aes
-	\after 1*7/8 \! ges\f\<
+	ges\f\<
 % Bars 266 to 270
 	fes1\ff~
 	fes~_\dimmarkup~
@@ -337,7 +337,7 @@ musicKontrabassMvtIV = \relative c {
 	e e
 	e g
 	g g
-	\after 1*3/4 <>_\dimmarkup g1\sf~
+	\after 1*3/4 <>_\dimmarkup g1-\offset X-offset -2 \sf~
 	g~
 % Bars 276 to 280
 	g~
@@ -356,7 +356,7 @@ musicKontrabassMvtIV = \relative c {
 % Bars 291 to 295
 	
 % Bars 296 to 300
-	e4\ff e' dis e
+	\tempoEO #'(0.1 . -0.5) e4\ff e' dis e
 	b a g fis
 	e e' dis e
 	b a g fis
@@ -407,8 +407,8 @@ musicKontrabassMvtIV = \relative c {
 	r4 r8 a,(\mf\< d4.) e8(\!
 	fis4.)\sf g8(\> e4.) fis8(
 	d4)\! r8 fis,(\mf b4.)\< cis8(\!
-	d4.)\sf b8(\> dis4.) b8(\! \mark \default
-	e1)~\p 
+	d4.)\sf b8(\> dis4.) b8(\! \resetMarkSpace \mark \default
+	\startMeasureCount e1)~\p 
 % Bars 341 to 345
 	e~
 	e\<~
@@ -417,7 +417,7 @@ musicKontrabassMvtIV = \relative c {
 	e\p~
 % Bars 346 to 350
 	e~\<
-	\after 1*7/8 \! e
+	\after 1*7/8 \! e \stopMeasureCount
 	a,\mf~
 	a~
 	a~\<
@@ -442,8 +442,8 @@ musicKontrabassMvtIV = \relative c {
 % Bars 366 to 370
 	q~
 	q \mark \default
-	<b b'>4\fff cis^\unis b cis
-	b cis b cis
+	<b b'>4-\offset X-offset 0.6 \fff cis^\unis b cis
+	\startMeasureCount b cis b cis
 	b cis b cis
 % Bars 371 to 375
 	b cis b cis
@@ -455,7 +455,7 @@ musicKontrabassMvtIV = \relative c {
 	b\p\< cis b cis
 	b cis b cis\!
 	b\mf cis b cis
-	b cis b cis
+	b cis b cis \stopMeasureCount
 	ais cis ais cis
 % Bars 381 to 385
 	ais cis ais\< cis
@@ -467,7 +467,7 @@ musicKontrabassMvtIV = \relative c {
 	b cis b cis
 	b\< cis b cis
 	ais cis\! ais\> cis
-	ais cis\! ais\mf cis \mark \default
+	ais cis\! ais\mf cis \resetMarkSpace \mark \default
 	a! f' a, f'
 % Bars 391 to 395
 	bes, f' bes, f'
@@ -477,7 +477,7 @@ musicKontrabassMvtIV = \relative c {
 	d,! bes' ees, bes'
 % Bars 396 to 400
 	f\f ces' ges bes
-	aes\> bes aes\! r \mark \default
+	aes\> bes aes\! r \resetMarkSpace \mark \default
 	gis,\mf b! gis b
 	gis\< b gis b
 	a b a b\!
@@ -496,7 +496,7 @@ musicKontrabassMvtIV = \relative c {
 % Bars 411 to 415
 	a_\dimmarkup e' cis gis'
 	fis cis'\p a, a'
-	cis,\< fis b, fis'\! \mark \default
+	cis,\< fis b, fis'\! \resetMarkSpace \mark \default
 	gis,4\f b gis b
 	gis cis eis cis
 % Bars 416 to 420
@@ -512,13 +512,13 @@ musicKontrabassMvtIV = \relative c {
 	c, e a c
 	a, c e a
 % Bars 426 to 430
-	b,1\fff~
+	\startMeasureCount b,1\fff~
 	b~
 	b~
 	b~
 	b~
 % Bars 431 to 435
-	b~
+	b~ \stopMeasureCount
 	b2~ b8 r r4
 	g''8[\fff g] fis fis e[ e] dis dis
 	e[\fff e] d! d cis[ cis] b b
@@ -538,7 +538,7 @@ musicKontrabassMvtIV = \relative c {
 % Bars 446 to 450
 	
 % Bars 451 to 455
-	r2 g,4:8\fff fis: \mark \default
+	r2 g,4:8\fff fis: \resetMarkSpace \mark \default
 	e2\fff g~
 	g8 r r4 r2
 	e2 g~
@@ -574,7 +574,7 @@ musicKontrabassMvtIV = \relative c {
 	gis8 r ais r b r cis r 
 	dis r e r fis r fis, r
 % Bars 481 to 485
-	b r r4 r8 e\noBeam cis b \mark \default
+	b r r4 r8 e\noBeam cis b \resetMarkSpace \mark \default
 	\tuplet 3/2 4 {a!8\ff cis e a gis a a, dis fis a gis a
 	gis, b e gis fis gis gis, b e gis fis gis
 	fis, a cis fis e fis fis, a dis fis e fis
@@ -583,8 +583,8 @@ musicKontrabassMvtIV = \relative c {
 	b cis b e fis e fis gis fis fisis gis fisis
 	gis ais gis ais b ais b cis b cis, dis cis
 	dis e dis e fis e fis gis fis fis, gis fis}
-	b16 cis dis e fis gis a ais b8 r r4 \mark \markAaBox
-	e,\fff e a a
+	b16 cis dis e fis gis a ais b8 r r4 \resetMarkSpace \mark \markAaBox
+	e,\fff e a! a
 % Bars 491 to 495
 	e e e e
 	e e a a 
@@ -594,13 +594,13 @@ musicKontrabassMvtIV = \relative c {
 % Bars 496 to 500
 	dis4 e fis fisis
 	gis8 cis, dis e fis!4 fisis
-	gis8 cis, dis e fis!4 fisis \mark \markBbBox
+	gis8 cis, dis e fis!4 fisis \resetMarkSpace \markXoffset #0 \mark \markBbBox
 	gis8 gis, a ais b cis d dis
 	e eis fis fisis gis a ais bis
 % Bars 501 to 505
-	cis4 a e cis
+	cis4 a! e cis
 	gis8. cis16 b4~ b8 b b b
-	fis2\sfff b\sfff \bar "||"
+	fis2\sfff \noteHeadEsw #'(-3.5 . 0) b\sfff \revertNoteHeadEsw \bar "||"
 	\time 2/2 e4 e'\p d e
 	cis d b cis
 % Bars 506 to 510
@@ -610,7 +610,7 @@ musicKontrabassMvtIV = \relative c {
 	bis cis b c
 	g\fff gis a ais
 % Bars 511 to 515
-	b bis cis dis \mark \markCcBox
+	b bis cis dis \resetMarkSpace \mark \markCcBox
 	e e'\p d e
 	cis d b cis
 	a_\crescmarkup b gis a
@@ -626,7 +626,7 @@ musicKontrabassMvtIV = \relative c {
 	bes, bes' r bes,
 	b! b'! r b,
 	b b' r b,
-	b b' r b, \mark \markDdBox
+	b b' r b, \resetMarkSpace \mark \markDdBox
 % Bars 526 to 530
 	b r b'2~
 	b bes~
@@ -642,7 +642,7 @@ musicKontrabassMvtIV = \relative c {
 % Bars 536 to 540
 	e r d r
 	cis! r c b
-	e_\semprefff e r2
+	\startMeasureCount e_\semprefff e r2
 	e4 e r2
 	e4 e r2
 % Bars 541 to 545
@@ -650,9 +650,9 @@ musicKontrabassMvtIV = \relative c {
 	e4 e r2
 	e4 e r2
 	e4 e r2
-	e4 e r2 \bar "||"
+	e4 e r2 \stopMeasureCount \bar "||"
 % Bars 546 to 550
-	\time 6/4 e4 r r a r r
+	\time 6/4 \startMeasureCount \once \measureCountPosition #DOWN e4 r r a r r
 	e4 r r a r r
 	e4 r r a r r
 	e4 r r a r r
@@ -660,7 +660,7 @@ musicKontrabassMvtIV = \relative c {
 % Bars 551 to 555
 	e4 r r a r r
 	e4 r r a r r
-	e4 r r a r r \mark \markEeBox
+	e4 r r a r r \stopMeasureCount \resetMarkSpace \mark \markEeBox
 	e4 r r r2.
 	e4 r r r2.
 % Bars 556 to 560

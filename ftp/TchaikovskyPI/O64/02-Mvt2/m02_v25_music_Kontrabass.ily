@@ -60,13 +60,13 @@ musicKontrabassMvtII = \relative c {
 	gis'4.\ff fis eis r4 r8
 	gis4. fis f2.
 	e2.~ e4. ees
-	R1. \mark \default
+	\mmrLength #22 R1. \mark \default
 	d8\pp^\pizz r r d' r r cis r r r4 r8
 % Bars 46 to 50
 	b8\< r r r4 r8 a8 r r r4 r8
 	gis r r g r r\! fis2.\f^\arco
 	e2.\> d4. cis(
-	d8)\pp r r d'^\pizz r r cis r r r4 r8
+	\tempoXoffset -1.5 d8)\pp r r d'^\pizz r r cis r r r4 r8
 	b8\< r r r4 r8 a8 r r r4 r8
 % Bars 51 to 55
 	gis r r g\! r r fis2.^\arco_\crescpocoapoco \mark \default
@@ -78,8 +78,8 @@ musicKontrabassMvtII = \relative c {
 	fis,4.~\fff fis4 gis8 a4.\> b4 cis8\!
 	d4.~\ff\> d4 e8 fis4. gis4 ais8\!
 	b2.\f b,4.\> bes
-	<< a1.~ {s2. s\p}>>
-	a1.
+	\tempoXoffset -1 << a1.~ {s2. s\p}>>
+	<< a1. {s2. \tempoXoffset -0.5  s2.}>>
 % Bars 61 to 65
 	d2.\p~ d8 r r r4 r8
 	d2.~ d8 r r r4 r8
@@ -87,7 +87,7 @@ musicKontrabassMvtII = \relative c {
 	cis2.\mf\> \after 2.*5/6 \! d\<
 	cis2.\> d\p \bar "||"
 % Bars 66 to 70
-	\time 4/4 cis,8\p^\pizz r r4 r2
+	\time 4/4 cis,8\p-\offset X-offset -5 ^\pizz r r4 r2
 	R1*4
 	
 	
@@ -119,7 +119,7 @@ musicKontrabassMvtII = \relative c {
 % Bars 91 to 95
 	R1*2
 	
-	gis''8\mf r r4 r2
+	gis''8\mf-\offset X-offset -6.5 ^\pizz r r4 r2
 	gis8 r r4 r2
 	gis,,16\f^\arco gis gis_\crescmarkup gis gis gis gis gis gis2:16
 % Bars 96 to 100
@@ -127,7 +127,7 @@ musicKontrabassMvtII = \relative c {
 	gis:\fff gis:
 	gis: gis:
 	g!16\fff g g g  g g g g  g2:16
-	g: g:
+	\startMeasureCount g: g:
 % Bars 101 to 105
 	g: g:
 	g: g:
@@ -135,7 +135,7 @@ musicKontrabassMvtII = \relative c {
 	g: g:
 	g: g:
 % Bars 106 to 110
-	g: g:
+	g: g: \stopMeasureCount
 	g: g4: g8 r\fermata \bar "||"
 	\timeTwelveEightC r4 r8 g'4^\pizz\mf r8 g,4 r8 g'4 r8
 	r4 r8 g4 r8 g,4 r8 g'4 r8
@@ -156,8 +156,8 @@ musicKontrabassMvtII = \relative c {
 	cis,\< cis'\! d,!\> d'!\!
 	b,\< a gis g\!
 	fis(\f\> fis'8)\! r r r2. \mark \default
-	d4.(\mp\< dis) \after 2.*5/6 \! e2.\>
-	bis4.(\< cis) \after 2.*5/6 \! d!2.\>
+	\hairpinShorten #'(0 . 1.2) d4.(\mp\< dis) \hairpinShorten #'(-1.2 . 0) \after 2.*5/6 \! e2.\>
+	\hairpinShorten #'(0 . 2.2) bis4.(\< cis) \hairpinShorten #'(-2.2 . 0) \after 2.*5/6 \! d!2.\>
 % Bars 126 to 130
 	b!4._\mfcresc a gis g
 	fis\f f \tuplet 2/3 4. {e8\> e' d fis,\mf}
@@ -173,7 +173,7 @@ musicKontrabassMvtII = \relative c {
 		b cis d r
 % Bars 136 to 140
 		eis\ff fis gis r
-		eis fis gis r
+		eis fis gis r \mark \default
 	}
 	\timeSignature 12/8 fis4.~ fis8 r r f4.~ f8 r r
 	e4.~ e8 r r a,4.~ a8 a\ff b
@@ -201,13 +201,13 @@ musicKontrabassMvtII = \relative c {
 % Bars 156 to 160
 	a1.\mf\>~
 	a\p \bar "||"
-	\unsetTimeSignature \time 4/4 gis2:16\fff gis: 
+	\unsetTimeSignature \time 4/4 \startMeasureCount gis2:16\fff gis: 
 	gis: gis:
 	gis: gis:
 % Bars 161 to 165
 	gis: gis:
 	gis: gis:
-	gis: gis:
+	gis: gis: \stopMeasureCount
 	\tuplet 3/2 4 {g!8\fff g g  g g g} g->[ g->] g-> g->
 	g'-> g-> r4 r2
 % Bars 166 to 170
@@ -217,20 +217,20 @@ musicKontrabassMvtII = \relative c {
 	\bar "||"
 	\time 12/8 d8\pp^\pizz r r r4 r8 r2.
 % Bars 171 to 175
-	<d a'>8\pp^\pizz^\div r r r4 r8 r2.
-	q8 r r r4 r8 r2.
-	q8 r r r4 r8 <<{d'8} \\ {d}>> r r r4 r8
-	<d, a'>8 r r r4 r8 <<{d'} \\ {d}>> r r r4 r8
-	<d, a'> r r r4 r8 r2.
+	<<{a'8-\offset X-offset -4 ^\div^\pizz} \\ {d,\pp}>> r r r4 r8 r2.
+	<<{a'8} \\ {d,}>> r r r4 r8 r2. 
+	<<{a'8} \\ {d,}>> r r r4 r8 <<{d'8} \\ {d}>> r r r4 r8 
+	<<{a8} \\ {d,}>> r r r4 r8 <<{d'} \\ {d}>> r r r4 r8 
+	<<{a8} \\ {d,}>> r r r4 r8 r2. 
 % Bars 176 to 180
-	q8 r r r4 r8 r2.
-	q8 r r r4^\unis r8 d2.^\arco~
+	<<{a'8} \\ {d,}>> r r r4 r8 r2. 
+	<<{a'8} \\ {d,}>> r r r4^\unis r8 d2.^\arco~ 
 	d8 r r r4 r8 d2.
 	d8^\pizz\pp r r r4 r8 d r r r4 r8
 	d\ppp r r r4 r8 d8 r r r4 r8
 % Bars 181 to 184
 	d r r r4 r8 d r r r4 r8
-	<d a'>^\div r r r4 r8 r2.
-	d1.~\p\>^\arco^\unis
+	<<{a'-\offset X-offset -4 ^\div} \\ {d,}>> r r r4 r8 r2. 
+	d1.~\p\>^\arco-\offset X-offset -6 ^\unis
 	d2.~ d8\ppp r r r4 r8\fermata \bar "|."
 }

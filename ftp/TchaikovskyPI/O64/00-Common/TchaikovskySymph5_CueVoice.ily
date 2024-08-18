@@ -2828,7 +2828,7 @@ cueVoiceVioloncellMvtIV = \relative c {
 cueVoiceKontrabassMvtI = \relative c {
 	s1*37 s2.*86
 	% bar 124 - 127
-	<d d'>4.~\sff^\markup {Vcll.} q4 e8
+	<d d'>4.~\sff-\offset X-offset -3 ^\markup {Vcll.} q4 e8
 	fis2.
 	q4.\sff~ q4 e8
 	fis2.

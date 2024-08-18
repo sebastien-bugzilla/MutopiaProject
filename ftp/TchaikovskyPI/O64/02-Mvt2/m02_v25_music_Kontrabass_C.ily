@@ -119,7 +119,7 @@ musicKontrabassMvtII = \relative c {
 % Bars 91 to 95
 	R1*2
 	
-	gis''8\mf r r4 r2
+	gis''8\mf-\offset X-offset -7 ^\pizz r r4 r2
 	gis8 r r4 r2
 	gis,,16\f^\arco gis gis_\crescmarkup gis gis gis gis gis gis2:16
 % Bars 96 to 100
@@ -173,7 +173,7 @@ musicKontrabassMvtII = \relative c {
 		b cis d r
 % Bars 136 to 140
 		eis\ff fis gis r
-		eis fis gis r
+		eis fis gis r \mark \default
 	}
 	\timeSignature 12/8 fis4.~ fis8 r r f4.~ f8 r r
 	e4.~ e8 r r a,4.~ a8 a\ff b

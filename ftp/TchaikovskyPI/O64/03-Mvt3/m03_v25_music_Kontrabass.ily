@@ -28,7 +28,7 @@ musicKontrabassMvtIII = \relative c {
 	a,\< a'\! r
 	gis,\> gis'\! r
 % Bars 16 to 20
-	cis,\p\< cis'\! r
+	\hairpinShorten #'(0 . -1) cis,\p\< cis'\! r
 	fis,,\> fis'\! r
 	b,\p b' r
 	e, e' r
@@ -106,33 +106,33 @@ musicKontrabassMvtIII = \relative c {
 	R2.*2
 	\mark \default
 % Bars 81 to 85
-	R2.*2
+	R2.*3
 	
-	R2.
+	
 	r4 b,8->(\mf e,) r4
-	R2.*2
+	R2.*3
 % Bars 86 to 90
 	
-	R2.
+	
 	r4 b'8->(\mf e,) r4
-	R2.*2
+	R2.*3
 	
 % Bars 91 to 95
-	R2.
-	e4\mf\>~ e8\! r r4
-	R2.*2
 	
-	R2. \mark \default
+	\hairpinShorten #'(-0.5 . -1) e4\mf\>~ e8\! r r4
+	R2.*3
+	
+	\mark \default
 % Bars 96 to 100
-	e4\mf\>~ e8\! r dis4(\pp
+	\hairpinShorten #'(-0.5 . -1) e4\mf\>~ e8 r dis4(\pp
 	cis8) r r4 r
-	R2.*2
+	R2.*6
 	
-	R2.*2
+	
 % Bars 101 to 105
 	
-	R2.*2
-	\mark \default
+	
+	\markXoffset #0 \mark \default
 	r4 r r8 fis,\mf^\pizz
 	b[ fis'] r4 r8 fis
 % Bars 106 to 110
@@ -144,7 +144,7 @@ musicKontrabassMvtIII = \relative c {
 % Bars 111 to 115
 	gis, dis' r4 r8 dis
 	gis r8 r4 r
-	R2.*5
+	\mmrLength #21 R2.*5
 	
 	
 % Bars 116 to 120
@@ -168,17 +168,17 @@ musicKontrabassMvtIII = \relative c {
 % Bars 131 to 135
 	fis2.\mf~
 	fis8 r r4 r
-	R2.*2
+	R2.*5
 	
-	R2.*2
+	
 % Bars 136 to 140
 	
-	R2.
+	
 	r4 b,8->\f( e,) r4
-	R2.*2
+	R2.*3
 	
 % Bars 141 to 145
-	R2. \mark \default
+	\mark \default
 	e8\f r r4 r
 	R2.*2
 	
