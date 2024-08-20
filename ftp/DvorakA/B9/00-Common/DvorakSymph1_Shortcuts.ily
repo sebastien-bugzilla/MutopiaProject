@@ -4,15 +4,32 @@
 %###############################################################################
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
+pococrescendo = \markup {\italic {poco crescendo}}
+crescmarkup = \markup {\italic {cresc.}}
+legato = \markup {\italic {legato}}
+crescendo = \markup {\italic {crescendo}}
+diminuendo = \markup {\italic {diminuendo}}
+pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
+dimmarkup = \markup {\italic {dim.}}
+dimin = \markup {\italic {dimin.}}
+dolce = \markup {\italic {dolce}}
+marcato = \markup {\italic {marcato}}
+fdiminuendo = \markup {\dynamic f \italic {diminuendo}}
+
+plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
+ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
 
 
-
-
-
-
-
-
-
+brack = #(define-event-function 
+	(dyn) (ly:event?)
+	(make-dynamic-script
+	#{ 
+		\markup {
+			\bracket \with-true-dimensions #(ly:music-property dyn 'text)
+		}
+	#}
+	)
+)
 
 
 %aIIXoffset = #(define-music-function

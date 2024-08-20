@@ -4,10 +4,10 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 13) % 13
+#(set-global-staff-size 19) % 13
 \layout {
-	#(layout-set-staff-size 13) 
-	\set Score.alternativeNumberingStyle = #'numbers
+	#(layout-set-staff-size 19) % 13
+%	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.rehearsalMarkFormatter = #format-mark-alphabet
 	\set Staff.soloText = #"I"
 	\set Staff.soloIIText = #"II"
@@ -16,11 +16,11 @@
 	\context {
 		\Score
 		\override MetronomeMark.font-size = #2
-		\override RehearsalMark.font-size = #8 % 8
-		\override RehearsalMark.extra-spacing-width = #'(-0.2 . 0.2)
-		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
-		\override RehearsalMark.outside-staff-priority = ##f
-		\override BarNumber.font-size = #3 % 3
+%		\override RehearsalMark.font-size = #8 % 8
+%		\override RehearsalMark.extra-spacing-width = #'(-0.2 . 0.2)
+%		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
+%		\override RehearsalMark.outside-staff-priority = ##f
+		\override BarNumber.font-size = #1 % 3
 	}
 	\context {
 		\StaffGroup

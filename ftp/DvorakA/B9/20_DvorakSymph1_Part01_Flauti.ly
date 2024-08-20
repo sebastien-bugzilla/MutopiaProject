@@ -14,6 +14,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.3"
 \include "./00-Common/DvorakSymph1_Header.ily"
 \include "./00-Common/DvorakSymph1_PaperParts.ily"
 \include "./00-Common/DvorakSymph1_timeMvt.ily"

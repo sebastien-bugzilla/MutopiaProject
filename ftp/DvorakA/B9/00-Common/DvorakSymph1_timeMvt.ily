@@ -6,17 +6,17 @@
 %###############################################################################
 timeMvtI = {
 	\time 2/2
-	\tempo "Maestoso"
+%	\tempo "Maestoso"
 }
 timeMvtII = {
 	\time 2/4
-	\tempo "Adagio di molto"
+%	\tempo "Adagio di molto"
 }
 timeMvtIII = {
 	\time 2/4
-	\tempo "Allegretto"
+%	\tempo "Allegretto"
 }
 timeMvtIV = {
 	\time 2/4
-	\tempo "Allegro animato"
+%	\tempo "Allegro animato"
 }
