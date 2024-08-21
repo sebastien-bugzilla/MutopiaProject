@@ -30,6 +30,7 @@ brack = #(define-event-function
 	#}
 	)
 )
+omitBeam = \once \omit Beam
 
 
 %aIIXoffset = #(define-music-function
@@ -214,7 +215,6 @@ brack = #(define-event-function
 
 %omitMMRN = \omit MultiMeasureRestNumber
 %omitFlag = \once \omit Flag
-%omitBeam = \once \omit Beam
 %omitDots = \once \omit Dots
 
 

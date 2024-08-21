@@ -64,7 +64,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 51 to 55
 		ees-. ees-. ees-. 
 		ees-. ees-. ees-. 
-		ees4._\pococrescendo ees8 ees4
+		ees4. ees8 ees4
 		ees4. ees8 ees4
 		ees4. ees8 ees4
 % Bars 56 to 60
@@ -74,12 +74,12 @@ musicOboeIIMvtI = \relative c {
 		ees4. ees8 ees ees
 		ees4. ees8 ees ees
 % Bars 61 to 65
-		ees2->_\crescmarkup ees4->~
+		ees2-> ees4->~
 		ees ees2->
 		ees2-> ees4->~
 		ees ees2->
 		ees2.\f~
-% Bars 66 to 70
+% Bars 66 to 70 
 		ees4 r r8. g,16
 		ees'2.~
 		ees4 r r8. g,16
@@ -93,7 +93,7 @@ musicOboeIIMvtI = \relative c {
 		des2 des8. des16
 % Bars 76 to 80
 		des2 des8. des16
-		b4-._\crescmarkup d!-. c-.
+		b4-. d!-. c-.
 		b-. a-. g-. 
 		b-. d-. c-.
 		b-. a-. g-.
@@ -116,10 +116,10 @@ musicOboeIIMvtI = \relative c {
 		d)
 		c~
 % Bars 96 to 100
-		c_\crescmarkup
+		c
 		g8. g'16 g4. g8
-		g8. g16 g2~\<
-		g8. g16 g2~\!
+		g8. g16 g2~
+		g8. g16 g2~
 		g8. g16 g2
 % Bars 101 to 105
 		ees8\brack\mf ees ees ees ees ees
@@ -147,7 +147,7 @@ musicOboeIIMvtI = \relative c {
 		
 		
 		
-		r4 d,\brack\f( ees_\legato
+		r4 d,\brack\f( ees
 % Bars 126 to 130
 		f g des'
 		c) r r
@@ -219,11 +219,11 @@ musicOboeIIMvtI = \relative c {
 		bes2( c,4)
 		bes( d ees
 		f2.)
-		f\f~
-		f~
+		\hide Dots f\f
+		f
 % Bars 191 to 195
-		f~
-		f~
+		f
+		f~ \undo \hide Dots
 		f~
 		f~
 		f~
@@ -247,7 +247,7 @@ musicOboeIIMvtI = \relative c {
 		r des2\p\<
 % Bars 211 to 215
 		e2.\pp~
-		e~_\crescendo
+		e~
 		e~
 		e
 		r4 g-.\f g-.
@@ -260,9 +260,9 @@ musicOboeIIMvtI = \relative c {
 % Bars 221 to 225
 		r f-. f-.
 		r f-. f-.
-		des2.\fz->~
+		des2.\fz~
 		des~
-		des->~\fz_\pocoapococrescendo
+		des~\fz
 % Bars 226 to 230
 		des
 		d!4 r r
@@ -306,14 +306,14 @@ musicOboeIIMvtI = \relative c {
 		g2.\f~
 		g~
 % Bars 261 to 265
-		g_\dimmarkup~
+		g~
 		g 
 		c,2\brack\pp des4~
 		des c2
 		des4 r r
 % Bars 266 to 270
 		R2.
-		c2_\crescmarkup des4~
+		c2 des4~
 		des\< c2
 		des4\! r r
 		R2.
@@ -322,11 +322,11 @@ musicOboeIIMvtI = \relative c {
 		ees d c)
 		d2( ees4
 		f\> g f)\!
-		c2.\p~
+		c2.\p(
 % Bars 276 to 280
-		c
+		c)
 		c~
-		c_\dimin
+		c
 		g'2.(
 		c,)
 % Bars 281 to 285
@@ -385,7 +385,7 @@ musicOboeIIMvtI = \relative c {
 	des( b c
 	a c ees)\!
 % Bars 321 to 325
-	d g,2->_\crescmarkup~
+	d g,2->~
 	<< g2. {s8\< s s s s s\!}>>
 	r4 c2->\f
 	r4 ees2->
@@ -424,7 +424,7 @@ musicOboeIIMvtI = \relative c {
 	ees
 	ees~
 	ees
-	ees8_\crescendo ees ees ees ees ees
+	ees8 ees ees ees ees ees
 	ees ees ees ees ees ees
 % Bars 356 to 360
 	ees\< ees ees ees ees ees
@@ -436,7 +436,7 @@ musicOboeIIMvtI = \relative c {
 	bes8 r r4 r
 	r bes2->\brack\fz
 	r4 d2->\brack\fz
-	r4 f2->\fz
+	r4 f2\fz
 	r4 c2->\fz
 % Bars 366 to 370
 	r4 ees2->\fz
@@ -453,11 +453,11 @@ musicOboeIIMvtI = \relative c {
 % Bars 376 to 380
 	c'8 r r4 r8. c,16
 	c8 r r4 r
-	e2_\diminuendo( g4)
+	e2( g4)
 	c2( d4)
-	e4( d c
+	e4 d c
 % Bars 381 to 385
-	d8 e d c\p g' f)
+	d8 e d c\p g' f
 	e4 c,2\brack\pp~
 	c2.~
 	c~
@@ -527,7 +527,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 441 to 445
 	aes~
 	aes
-	c~_\crescendo
+	c~
 	c~
 	c~
 % Bars 446 to 450
@@ -543,7 +543,7 @@ musicOboeIIMvtI = \relative c {
 	
 	
 	bes2.\pp~
-	bes_\crescmarkup
+	bes
 % Bars 466 to 470
 	bes~
 	bes
@@ -552,9 +552,9 @@ musicOboeIIMvtI = \relative c {
 	des2.~
 % Bars 471 to 475
 	des2 r4
-	ees2.~
+	\shiftOn \omit Stem ees2.~
 	ees~
-	ees~
+	ees~ \shiftOff \undo \omit Stem
 	ees \bar "||"
 % Bars 476 to 480
 	\key e \major gis4->_\marcato fis-> e->
@@ -570,8 +570,8 @@ musicOboeIIMvtI = \relative c {
 	d2~ d8 d
 % Bars 486 to 490
 	f2~ f8 f
-	c2~ c8 g16( a
-	bes2~ bes8) f16( g
+	c2 \stemUp \omitBeam c8 g16 a
+	\stemDown bes2 bes8 f16( g
 	a2~ a8) c16( d
 	e2~ e8) e
 % Bars 491 to 495
@@ -589,7 +589,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 501 to 505
 	c2 r8. c16
 	c2 r8. c16
-	c2_\crescmarkup r8. c16
+	c2 r8. c16
 	c2 r8. c16
 	c2 r8. c16\<
 % Bars 506 to 510
@@ -651,7 +651,7 @@ musicOboeIIMvtI = \relative c {
 	f2\!( c'4)
 	g4(\< d e\!
 	f2.)~
-	f~_\crescmarkup
+	f~
 % Bars 556 to 560
 	f~
 	f~
@@ -662,7 +662,7 @@ musicOboeIIMvtI = \relative c {
 	r4 c2->
 	r4 b2->
 	r4 c-> c-> \bar "||"
-	\key c \minor f2.->_\crescendo
+	\key c \minor f2.->
 	f->
 % Bars 566 to 570
 	f->

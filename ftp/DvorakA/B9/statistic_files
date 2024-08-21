@@ -1,4 +1,4 @@
-   156    485   5206 10_DvorakSymph1_Conductor_mvt1.ly
+   157    492   5240 10_DvorakSymph1_Conductor_mvt1.ly
    126    351   4219 10_DvorakSymph1_Conductor_mvt2.ly
    138    381   4693 10_DvorakSymph1_Conductor_mvt3.ly
    144    392   4763 10_DvorakSymph1_Conductor_mvt4.ly
@@ -42,15 +42,17 @@
    587   2053  17145 00-Common/DvorakSymph1_NameVoice.ily
     67    192   1627 00-Common/DvorakSymph1_PaperConductors.ily
     67    192   1627 00-Common/DvorakSymph1_PaperParts.ily
-   452   1310   9864 00-Common/DvorakSymph1_Shortcuts.ily
+   452   1310   9863 00-Common/DvorakSymph1_Shortcuts.ily
     45    142   1132 00-Common/DvorakSymph1_Tempi.ily
     22     90    602 00-Common/DvorakSymph1_timeMvt.ily
    770   2350  12064 01-Mvt1/m01_v02_music_FlautoI_C.ily
    770   2292  11265 01-Mvt1/m01_v02_music_FlautoI.ily
    762   2216  10750 01-Mvt1/m01_v03_music_FlautoII_C.ily
    762   2207  10896 01-Mvt1/m01_v03_music_FlautoII.ily
-   275    718   3077 01-Mvt1/m01_v04_music_OboeI.ily
-   275    718   3078 01-Mvt1/m01_v05_music_OboeII.ily
+   779   2268  11268 01-Mvt1/m01_v04_music_OboeI_C.ily
+   779   2204  10227 01-Mvt1/m01_v04_music_OboeI.ily
+   779   2195  10122 01-Mvt1/m01_v05_music_OboeII_C.ily
+   779   2180  10257 01-Mvt1/m01_v05_music_OboeII.ily
    275    718   3084 01-Mvt1/m01_v06_music_CornoInglese.ily
    275    718   3083 01-Mvt1/m01_v07_music_ClarinettoI.ily
    275    718   3084 01-Mvt1/m01_v08_music_ClarinettoII.ily
@@ -132,4 +134,4 @@
    345    891   3768 04-Mvt4/m04_v23_music_Viola.ily
    345    891   3774 04-Mvt4/m04_v24_music_Violoncello.ily
    345    891   3774 04-Mvt4/m04_v25_music_Contrabasso.ily
- 27263  74890 408657 total
+ 29830  82308 444409 total
