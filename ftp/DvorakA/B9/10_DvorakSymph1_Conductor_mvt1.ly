@@ -28,7 +28,7 @@
 \include "./01-Mvt1/m01_v03_music_FlautoII_C.ily"
 \include "./01-Mvt1/m01_v04_music_OboeI_C.ily"
 \include "./01-Mvt1/m01_v05_music_OboeII_C.ily"
-%\include "./01-Mvt1/m01_v06_music_CornoInglese.ily"
+\include "./01-Mvt1/m01_v06_music_CornoInglese_C.ily"
 %\include "./01-Mvt1/m01_v07_music_ClarinettoI.ily"
 %\include "./01-Mvt1/m01_v08_music_ClarinettoII.ily"
 %\include "./01-Mvt1/m01_v09_music_FagottoI.ily"
@@ -82,15 +82,14 @@
 %%						\musicFlautoIIMvtI 
 %					}
 %				>>
-				\new Staff {
-					\timeMvtI \nameStaffIIMvtI
-					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
-%					\musicOboeIIMvtI
-				}
 %				\new Staff {
-%					\timeMvtI \nameStaffIIIMvtI
-%					\musicCornoIngleseMvtI
+%					\timeMvtI \nameStaffIIMvtI
+%					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
+%%					\musicOboeIIMvtI
 %				}
+				\new Staff {
+					\timeMvtI \nameStaffIIIMvtI \musicCornoIngleseMvtI
+				}
 %				\new Staff {
 %					\timeMvtI \nameStaffIVMvtI
 %					\partCombine \musicClarinettoIMvtI \musicClarinettoIIMvtI
