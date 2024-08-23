@@ -15,6 +15,7 @@ dimin = \markup {\italic {dimin.}}
 dolce = \markup {\italic {dolce}}
 marcato = \markup {\italic {marcato}}
 fdiminuendo = \markup {\dynamic f \italic {diminuendo}}
+ppsempre = \markup {\dynamic pp \italic {sempre}}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
@@ -31,6 +32,26 @@ brack = #(define-event-function
 	)
 )
 omitBeam = \once \omit Beam
+
+#(define-markup-command (bracketMarkup layout props text) (markup?)
+	(interpret-markup layout props
+		#{
+			\markup \concat { 
+				\italic "[" #text \italic "]"
+			}
+		#}
+	)
+)
+brackM = -\markup \bracketMarkup \etc
+
+noteShift = #(define-music-function
+	(shift)
+	(number?)
+	#{
+		\once \override NoteColumn.force-hshift = #shift
+	#}
+)
+
 
 
 %aIIXoffset = #(define-music-function
@@ -240,14 +261,6 @@ omitBeam = \once \omit Beam
 %	(number?)
 %	#{
 %		\once \override Score.RehearsalMark.Y-offset = #offset
-%	#}
-%)
-
-%noteShift = #(define-music-function
-%	(shift)
-%	(number?)
-%	#{
-%		\once \override NoteColumn.force-hshift = #shift
 %	#}
 %)
 

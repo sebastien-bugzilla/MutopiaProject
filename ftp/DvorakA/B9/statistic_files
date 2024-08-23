@@ -1,4 +1,4 @@
-   157    492   5240 10_DvorakSymph1_Conductor_mvt1.ly
+   157    475   5244 10_DvorakSymph1_Conductor_mvt1.ly
    126    351   4219 10_DvorakSymph1_Conductor_mvt2.ly
    138    381   4693 10_DvorakSymph1_Conductor_mvt3.ly
    144    392   4763 10_DvorakSymph1_Conductor_mvt4.ly
@@ -15,7 +15,8 @@
    120    330   2999 20_DvorakSymph1_Part11_Viola.ly
    120    330   3119 20_DvorakSymph1_Part12_Violoncello.ly
    120    330   3119 20_DvorakSymph1_Part13_Contrabasso.ly
-    46     96    799 test.ly
+     7     13     84 display.ly
+    39     90    653 test.ly
    294    824   6864 00-Common/DvorakSymph1_CueVoice.ily
     10     64    558 00-Common/DvorakSymph1_Format_Cond_Mvt01.ily
     10     64    559 00-Common/DvorakSymph1_Format_Cond_Mvt02.ily
@@ -42,7 +43,7 @@
    587   2053  17145 00-Common/DvorakSymph1_NameVoice.ily
     67    192   1627 00-Common/DvorakSymph1_PaperConductors.ily
     67    192   1627 00-Common/DvorakSymph1_PaperParts.ily
-   452   1310   9863 00-Common/DvorakSymph1_Shortcuts.ily
+   465   1339  10122 00-Common/DvorakSymph1_Shortcuts.ily
     45    142   1132 00-Common/DvorakSymph1_Tempi.ily
     22     90    602 00-Common/DvorakSymph1_timeMvt.ily
    770   2350  12064 01-Mvt1/m01_v02_music_FlautoI_C.ily
@@ -53,9 +54,12 @@
    779   2204  10227 01-Mvt1/m01_v04_music_OboeI.ily
    779   2195  10122 01-Mvt1/m01_v05_music_OboeII_C.ily
    779   2180  10257 01-Mvt1/m01_v05_music_OboeII.ily
-   275    718   3084 01-Mvt1/m01_v06_music_CornoInglese.ily
-   275    718   3083 01-Mvt1/m01_v07_music_ClarinettoI.ily
-   275    718   3084 01-Mvt1/m01_v08_music_ClarinettoII.ily
+   312    774   3491 01-Mvt1/m01_v06_music_CornoInglese_C.ily
+   312    774   3491 01-Mvt1/m01_v06_music_CornoInglese.ily
+   788   2341  11672 01-Mvt1/m01_v07_music_ClarinettoI_C.ily
+   788   2237  10281 01-Mvt1/m01_v07_music_ClarinettoI.ily
+   784   2227  10003 01-Mvt1/m01_v08_music_ClarinettoII_C.ily
+   784   2206  10117 01-Mvt1/m01_v08_music_ClarinettoII.ily
    275    718   3078 01-Mvt1/m01_v09_music_FagottoI.ily
    275    718   3079 01-Mvt1/m01_v10_music_FagottoII.ily
    275    718   3078 01-Mvt1/m01_v11_music_CornoI.ily
@@ -134,4 +138,4 @@
    345    891   3768 04-Mvt4/m04_v23_music_Viola.ily
    345    891   3774 04-Mvt4/m04_v24_music_Violoncello.ily
    345    891   3774 04-Mvt4/m04_v25_music_Contrabasso.ily
- 29830  82308 444409 total
+ 32786  90732 484414 total
