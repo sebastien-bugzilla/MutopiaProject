@@ -16,6 +16,9 @@ dolce = \markup {\italic {dolce}}
 marcato = \markup {\italic {marcato}}
 fdiminuendo = \markup {\dynamic f \italic {diminuendo}}
 ppsempre = \markup {\dynamic pp \italic {sempre}}
+staccato = \markup {\italic {staccato}}
+stacc = \markup {\italic {stacc.}}
+aII = \markup {\bold a2}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
@@ -52,7 +55,7 @@ noteShift = #(define-music-function
 	#}
 )
 
-
+dotsPosition = \once \override Dots.staff-position = \etc
 
 %aIIXoffset = #(define-music-function
 %	(offset)
