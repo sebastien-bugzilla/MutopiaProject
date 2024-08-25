@@ -98,9 +98,9 @@ musicCornoIVMvtI = \relative c {
 	
 % Bars 96 to 100
 		
-		e2._\crescmarkup~
+		\stemUp e2.~
 		e~
-		<<e~ {s8\< s s s s s\!}>>
+		\stemDown <<e~ {s8\< s s s s s\!}>>
 		e2.
 % Bars 101 to 105
 		e8\brack\mf e e e e e
@@ -228,7 +228,7 @@ musicCornoIVMvtI = \relative c {
 		r e8 fis gis4->
 		r e8\< gis a4->
 		r e8 a bes4->\!
-		c,4(_\brackM\legato e a)
+		c,4( e a)
 % Bars 216 to 220
 		f2( c'4)
 		g( d e)
@@ -280,14 +280,14 @@ musicCornoIVMvtI = \relative c {
 		e2.\f
 		c'
 % Bars 261 to 265
-		b_\dimmarkup
+		b
 		b
 		c2\pp bes,4~
 		bes c2
 		bes4 r r
 % Bars 266 to 270
 		R2.
-		c2_\crescmarkup bes4~
+		c2 bes4~
 		bes\< c2
 		bes4\! r r
 		R2.*7
@@ -580,7 +580,7 @@ musicCornoIVMvtI = \relative c {
 	r4 e2->
 	r4 e2->
 	r4 e2->
-	r4 e2->_\brackM\crescmarkup
+	r4 e2->
 % Bars 556 to 560
 	r4 e2->
 	r4 e2->
@@ -591,14 +591,14 @@ musicCornoIVMvtI = \relative c {
 	d a d~
 	d gis, d'~
 	d cis-> c-> \section
-	g2.->_\crescendo
+	g2.->
 	g->
 % Bars 566 to 570
 	g->
-	e\ff~
+	\stemUp e\ff~
 	e~
 	e~
-	e
+	\stemDown e
 % Bars 571 to 575
 	d4\p r r
 	R2.*3

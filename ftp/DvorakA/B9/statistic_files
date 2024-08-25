@@ -1,4 +1,4 @@
-   159    500   5337 10_DvorakSymph1_Conductor_mvt1.ly
+   160    471   5334 10_DvorakSymph1_Conductor_mvt1.ly
    126    351   4219 10_DvorakSymph1_Conductor_mvt2.ly
    138    381   4693 10_DvorakSymph1_Conductor_mvt3.ly
    144    392   4763 10_DvorakSymph1_Conductor_mvt4.ly
@@ -68,8 +68,10 @@
    700   1973   9045 01-Mvt1/m01_v11_music_CornoI.ily
    692   1945   8859 01-Mvt1/m01_v12_music_CornoII_C.ily
    692   1945   8927 01-Mvt1/m01_v12_music_CornoII.ily
-   275    717   3081 01-Mvt1/m01_v13_music_CornoIII.ily
-   275    717   3080 01-Mvt1/m01_v14_music_CornoIV.ily
+   708   1951   9219 01-Mvt1/m01_v13_music_CornoIII_C.ily
+   708   1933   8803 01-Mvt1/m01_v13_music_CornoIII.ily
+   708   1918   8679 01-Mvt1/m01_v14_music_CornoIV_C.ily
+   708   1914   8726 01-Mvt1/m01_v14_music_CornoIV.ily
    275    718   3079 01-Mvt1/m01_v15_music_TrombeI.ily
    275    718   3080 01-Mvt1/m01_v16_music_TrombeII.ily
    275    718   3079 01-Mvt1/m01_v17_music_TrombonoI.ily
@@ -142,4 +144,4 @@
    345    891   3768 04-Mvt4/m04_v23_music_Viola.ily
    345    891   3774 04-Mvt4/m04_v24_music_Violoncello.ily
    345    891   3774 04-Mvt4/m04_v25_music_Contrabasso.ily
- 37684 105325 555357 total
+ 39967 111578 584620 total
