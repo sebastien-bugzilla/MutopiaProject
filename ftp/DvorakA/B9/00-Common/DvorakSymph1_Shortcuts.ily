@@ -19,6 +19,10 @@ ppsempre = \markup {\dynamic pp \italic {sempre}}
 staccato = \markup {\italic {staccato}}
 stacc = \markup {\italic {stacc.}}
 aII = \markup {\bold a2}
+fzcresc = \markup {\dynamic fz \italic {cresc.}}
+energico = \markup {\italic {energico}}
+semprepp = \markup {\italic {sempre} \dynamic pp}
+soli = \markup {Soli}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))

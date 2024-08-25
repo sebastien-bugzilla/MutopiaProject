@@ -7,7 +7,7 @@
 musicCornoIVMvtI = \relative c {
 	\clef treble
 	\key a \minor
-%	\transposition a
+	\transposition ees
 % Bars 1 to 5
 	
 % Bars 6 to 10
