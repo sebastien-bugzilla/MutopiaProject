@@ -17,7 +17,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 6 to 10
 	e4 r r2
 	d4 r r2
-	e,2 r\fermata \section
+	\once \partCombineApart e,2 r\fermata \section
 	\time 3/4 R2.*2
 	
 % Bars 11 to 15
@@ -413,7 +413,7 @@ musicTrombeIMvtI = \relative c {
 	e~
 	e
 % Bars 571 to 575
-	d4\p r r
+	\once \partCombineApart d4 r r
 	R2.*7
 % Bars 576 to 580
 	

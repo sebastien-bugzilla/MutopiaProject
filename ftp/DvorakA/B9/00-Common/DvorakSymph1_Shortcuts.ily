@@ -23,6 +23,7 @@ fzcresc = \markup {\dynamic fz \italic {cresc.}}
 energico = \markup {\italic {energico}}
 semprepp = \markup {\italic {sempre} \dynamic pp}
 soli = \markup {Soli}
+pcresc = \markup {\dynamic p \italic {cresc.}}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))

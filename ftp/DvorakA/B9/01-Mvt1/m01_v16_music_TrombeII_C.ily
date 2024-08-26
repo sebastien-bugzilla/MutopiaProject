@@ -4,20 +4,20 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIMvtI = \relative c {
+musicTrombeIIMvtI = \relative c {
 	\clef treble
 	\key a \minor
-	\transposition bes
+%	\transposition a
 % Bars 1 to 5
-	c''4\f r r2
+	e'4\f r r2
 	c4 r r2
-	c4 r r2
-	b4 r r2
+	e4 r r2
+	e4 r r2
 	d4 r r2
 % Bars 6 to 10
 	e4 r r2
-	d4 r r2
-	e,2 r\fermata \section
+	g4 r r2
+	e2 r\fermata \section
 	\time 3/4 R2.*2
 	
 % Bars 11 to 15
@@ -44,9 +44,9 @@ musicTrombeIMvtI = \relative c {
 % Bars 61 to 65
 	
 % Bars 66 to 70
-		e'2.->\f
+		c'2.->\f
 		R
-		e->
+		c->
 		R2.*12
 % Bars 71 to 75
 	
@@ -69,12 +69,12 @@ musicTrombeIMvtI = \relative c {
 		
 		
 		
-		e'2.\brack\f~
+		c'2.\brack\f~
 % Bars 106 to 110
-		e~
-		e~
-		e
-		e4 r r
+		c~
+		c~
+		c
+		c4 r r
 		R2.*35
 % Bars 111 to 115
 	
@@ -93,7 +93,7 @@ musicTrombeIMvtI = \relative c {
 		
 		
 		
-		c2.\f~
+		c,2.\f~
 % Bars 146 to 150
 		c4 r r
 		c2.~
@@ -152,19 +152,19 @@ musicTrombeIMvtI = \relative c {
 		e4(\f c) c-.
 % Bars 216 to 220
 		r c-. c-.
-		r d-. d-.
-		r d-. d-.
-		r e-. e-.
-		r f-. f-.
+		r g'-. g-.
+		r g-. g-.
+		r b-. b-.
+		r a-. a-.
 % Bars 221 to 225
-		r d-. d-.
-		r d-. d-.
+		r g-. g-.
+		r g-. g-.
 		R2.*4
 		
 		
 % Bars 226 to 230
 		
-		g,2._\fzcresc->~
+		g2._\fzcresc->~
 		g~
 		g~
 		g
@@ -197,7 +197,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 281 to 285
 		
 		
-		g,2.\ppp~
+		g,,2.\ppp~
 		g~
 		g~
 % Bars 286 to 290
@@ -260,9 +260,9 @@ musicTrombeIMvtI = \relative c {
 % Bars 351 to 355
 	
 % Bars 356 to 360
-	d2.\brack\mf\<~
-	<< d {s8 s s s s s\!}>>
-	r4 d2\brack\f->\>~
+	c'2.\brack\mf\<~
+	<< c {s8 s s s s s\!}>>
+	r4 d,2\brack\f->\>~
 	d4\! r r
 	r d2->~
 % Bars 361 to 365
@@ -317,7 +317,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 466 to 470
 	
 	
-	r4\brack\f c2->\fz
+	r4\brack\f c'2->\fz
 	r4 c2->\fz
 	r4 c2->\fz
 % Bars 471 to 475
@@ -337,7 +337,7 @@ musicTrombeIMvtI = \relative c {
 	
 % Bars 491 to 495
 	
-	e4 r r\fermata
+	e,4 r r\fermata
 	e r r\fermata
 	d r r\fermata
 	R2.*4
@@ -350,7 +350,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 501 to 505
 	
 	
-	e2._\pcresc~
+	e2.~
 	e~
 	e~
 % Bars 506 to 510
@@ -364,16 +364,16 @@ musicTrombeIMvtI = \relative c {
 	r4 d2->
 	r4 d2->
 	r4 d2->
-	cis->\ff r4
+	a'->\ff r4
 % Bars 516 to 520
 	R2.
-	cis2-> r4
+	a2-> r4
 	R2.
-	cis4-> r r
-	cis-> r r
+	a4-> r r
+	a-> r r
 % Bars 521 to 525
-	cis-> r r
-	cis-> r r
+	a-> r r
+	a-> r r
 	R2.*12
 % Bars 526 to 530
 	
@@ -382,7 +382,7 @@ musicTrombeIMvtI = \relative c {
 	
 	
 	
-	e,4\brack\f r r
+	e4\brack\f r r
 % Bars 536 to 540
 	e r r
 	e r r
@@ -399,27 +399,27 @@ musicTrombeIMvtI = \relative c {
 	
 	
 	
-	r4 e'2->\brack\f
+	r4 e2->\brack\f
 % Bars 561 to 565
 	r4 e2->
 	r4 e2->~ 
 	e4 r r \section
-	d2.->
-	d->
+	g2.->
+	g->
 % Bars 566 to 570
-	d->
-	e\ff~
-	e~
-	e~
-	e
+	g->
+	c\ff~
+	c~
+	c~
+	c
 % Bars 571 to 575
-	d4\p r r
+	c4\p r r
 	R2.*7
 % Bars 576 to 580
 	
 	
 	
-	r4 g,2\f->
+	r4 g2\f->
 	r4 g2->
 % Bars 581 to 585
 	r4 g2->
@@ -438,7 +438,7 @@ musicTrombeIMvtI = \relative c {
 	d8-. f-. a4-> a->
 	g8-. e-. c4-> c->
 	d8-. f-. a4-> a->
-	r e'2->
+	r e2->
 % Bars 596 to 600
 	r4 e2->
 	r4 e2->
@@ -495,7 +495,7 @@ musicTrombeIMvtI = \relative c {
 	d8 r r4 r
 	r r d~
 	d8 r r4 d~
-	d8 r r4 d~
+	d8 r r4 d'~
 	d8 r r4 d~
 % Bars 651 to 655
 	d2.
@@ -506,5 +506,5 @@ musicTrombeIMvtI = \relative c {
 % Bars 656 to 658
 	e-> e-> r
 	e2.->
-	e4-> r r\fermata \fine
+	c4-> r r\fermata \fine
 }

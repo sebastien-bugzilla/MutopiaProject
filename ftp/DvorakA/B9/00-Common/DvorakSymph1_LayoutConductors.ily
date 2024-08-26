@@ -4,9 +4,9 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 13) % 13
+#(set-global-staff-size 19) % 13
 \layout {
-	#(layout-set-staff-size 13) % 13
+	#(layout-set-staff-size 19) % 13
 %	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.rehearsalMarkFormatter = #format-mark-alphabet
 	\set Staff.soloText = #"I"
@@ -48,8 +48,8 @@
 		\override TrillSpanner.to-barline = ##f
 		\override Hairpin.height = #0.55
 		\override DynamicTextSpanner.font-size = #1
-		\override DynamicText.font-size = #1
-		\override TextScript.font-size = #1
+%		\override DynamicText.font-size = #1
+%		\override TextScript.font-size = #1
 	}
 }
 layoutHorn = {
