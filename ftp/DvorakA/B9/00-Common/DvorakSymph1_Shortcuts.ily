@@ -26,6 +26,8 @@ soli = \markup {Soli}
 pcresc = \markup {\dynamic p \italic {cresc.}}
 flegato = \markup {\dynamic f \italic {legato}}
 solo = \markup {Solo}
+pocoapococrescendo = \markup {\italic {"poco a poco crescendo"}}
+
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
