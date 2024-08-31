@@ -27,7 +27,13 @@ pcresc = \markup {\dynamic p \italic {cresc.}}
 flegato = \markup {\dynamic f \italic {legato}}
 solo = \markup {Solo}
 pocoapococrescendo = \markup {\italic {"poco a poco crescendo"}}
-
+ppdolce = \markup {\dynamic pp \italic {dolce}}
+fmarcato = \markup {\dynamic f \italic {marcato}}
+pdolce = \markup {\dynamic p \italic {dolce}}
+pizz = \markup {\italic {pizz.}}
+arco = \markup {\italic {arco}}
+spiccato = \markup {\italic {spiccato}}
+sulg = \markup {sul G}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
