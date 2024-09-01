@@ -34,6 +34,9 @@ pizz = \markup {\italic {pizz.}}
 arco = \markup {\italic {arco}}
 spiccato = \markup {\italic {spiccato}}
 sulg = \markup {sul G}
+ppstacc = \markup {\dynamic pp \italic {stacc.}}
+pdim = \markup {\dynamic p \italic {dim.}}
+
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
