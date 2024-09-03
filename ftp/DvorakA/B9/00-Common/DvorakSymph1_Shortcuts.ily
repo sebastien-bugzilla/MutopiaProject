@@ -36,7 +36,7 @@ spiccato = \markup {\italic {spiccato}}
 sulg = \markup {sul G}
 ppstacc = \markup {\dynamic pp \italic {stacc.}}
 pdim = \markup {\dynamic p \italic {dim.}}
-
+pocoapococresc = \markup {\italic {poco a poco cresc.}}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
