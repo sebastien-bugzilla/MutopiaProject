@@ -191,7 +191,7 @@ musicVioloncelloMvtI = \relative c {
 		g'8 r fis,4->( g8) r
 % Bars 151 to 155
 		g'8 r fis,4->( g8) r
-		g'8 r fis4( g8)[ r16 ees'-.]
+		g'8-. r fis4( g8)[ r16 ees'-.]
 		d8-.\ff d-. fis-. d-. d4->
 		b8-. b-. d-. b-. b4->
 		c8-. c-. ees-. c-. c4->

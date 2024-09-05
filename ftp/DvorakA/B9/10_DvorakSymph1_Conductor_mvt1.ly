@@ -47,7 +47,7 @@
 \include "./01-Mvt1/m01_v22_music_ViolinoII.ily"
 \include "./01-Mvt1/m01_v23_music_Viola.ily"
 \include "./01-Mvt1/m01_v24_music_Violoncello.ily"
-%\include "./01-Mvt1/m01_v25_music_Contrabasso.ily"
+\include "./01-Mvt1/m01_v25_music_Contrabasso.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -148,9 +148,9 @@
 				\new Staff {
 					\timeMvtI \nameStaffXVMvtI \musicVioloncelloMvtI
 				}
-%				\new Staff {
-%					\timeMvtI \nameStaffXVIMvtI \musicContrabassoMvtI
-%				}
+				\new Staff {
+					\timeMvtI \nameStaffXVIMvtI \musicContrabassoMvtI
+				}
 			>>
 		>>
 		\header {
