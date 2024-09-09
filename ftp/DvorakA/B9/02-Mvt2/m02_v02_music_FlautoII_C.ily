@@ -47,7 +47,7 @@ musicFlautoIIMvtII = \relative c {
 	R2
 	aes'4.->\fp r8
 	des4.\fp r8
-	aes16-._\crescendo r aes-. r f-. r f-. r
+	aes16-. r aes-. r f-. r f-. r
 % Bars 56 to 60
 	ees-.\< r ees-. r ees-. r ees-. r\!
 	e4.\p r8
@@ -94,7 +94,7 @@ musicFlautoIIMvtII = \relative c {
 	R2*3
 	
 	
-	bes,2\brack\mf_\crescendo~
+	bes,2\brack\mf~
 	bes
 % Bars 101 to 105
 	ees'8(\f f16 g d) r r bes
@@ -103,7 +103,7 @@ musicFlautoIIMvtII = \relative c {
 	g16([ ees g f32 ees]) ees8.( d32 c)
 	bes8( c16 bes) ees8( f)
 % Bars 106 to 110
-	g16[(_\brackM\dimin ees g f32 ees)] ees8.( f32 g)
+	g16[( ees g f32 ees)] ees8.( f32 g)
 	c16\p r r8 r4
 	R2*3
 	
@@ -118,9 +118,9 @@ musicFlautoIIMvtII = \relative c {
 	
 % Bars 121 to 125
 	
-	ees'4-.\brack\p f4-._\crescmarkup
+	ees'4-.\brack\p f4-.
 	g8[->\< aes]-> bes-> c->\!
-	c16(_\dimin bes a bes c\> bes des c)\!
+	c16( bes a bes c\> bes des c)\!
 	bes( c des f ees c8 aes!16)
 % Bars 126 to 130
 	g4\pp( aes)

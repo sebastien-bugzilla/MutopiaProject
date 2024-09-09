@@ -4,9 +4,9 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 14) % 13
+#(set-global-staff-size 19) % 13
 \layout {
-	#(layout-set-staff-size 14) % 13
+	#(layout-set-staff-size 19) % 13
 %	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.rehearsalMarkFormatter = #format-mark-alphabet
 	\set Staff.soloText = #"I"

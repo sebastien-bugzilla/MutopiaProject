@@ -31,7 +31,7 @@ musicFlautoIMvtII = \relative c {
 	r4 d,\brack\p
 % Bars 26 to 30
 	f8(\< g\! aes\> g\!)
-	f r d4
+	f r d!4
 	f8(\< g\! aes\> g\!)
 	R2*23
 % Bars 31 to 35
@@ -44,7 +44,7 @@ musicFlautoIMvtII = \relative c {
 	
 % Bars 51 to 55
 	
-	r4 ees''32[\brack\p\<-. ees-. ees-. ees-. ees-. ees-. ees-. ees-.]\!
+	\partCombineApart r4 ees''32[\brack\p\<-. ees-. ees-. ees-. ees-. ees-. ees-. ees-.]\! \partCombineAutomatic
 	ees4.->\fp r8
 	f4.\fp r8
 	ees16-._\crescendo r f-. r des-. r bes-. r
@@ -61,36 +61,39 @@ musicFlautoIMvtII = \relative c {
 	
 	
 	
-	des2\pp~
+	\partCombineApart des2~
 	des~
 % Bars 71 to 75
 	des~
 	des
-	des4(\brack\p ges)
+	des4( ges)
 	des2~
 	des
 % Bars 76 to 80
-	des4(\< c8 ges')\!
-	f4\f( ees8\> des)\!
+	des4( c8 ges')
+	f4( ees8 des)
 	des2
 	des4( c8 ges')
-	ges4(\< f8 ees\!)
+	ges4( f8 ees) \partCombineAutomatic
 % Bars 81 to 85
 	d16 r r8 r4
-	R2*17
+	R2*7
 % Bars 86 to 90
 	
+	
+	
+	R2*7
 % Bars 91 to 95
 	
 % Bars 96 to 100
-	
+	R2*3
 	
 	
 	bes2\brack\mf_\crescendo~
 	bes
 % Bars 101 to 105
-	g'8(\f aes16 bes f) r r bes,
-	g'8( aes16 bes f) r r bes,,-.
+	g'8(\f aes16 bes f) r r \once \partCombineApart bes,
+	g'8( aes16 bes f) r r \once \partCombineApart bes,,-.
 	ees8[( f)] g( aes)
 	bes16([ g bes aes32 g]) g8.( f32 ees)
 	d8( ees16 f) g8( aes)
@@ -110,13 +113,13 @@ musicFlautoIMvtII = \relative c {
 	
 % Bars 121 to 125
 	
-	ees'8\brack\p f4->_\crescmarkup g8~
-	g16\< aes8 bes c des16\!
+	\partCombineApart ees'8 f4->_\crescmarkup g8~
+	g16 aes8 bes c des16 \partCombineAutomatic
 	ees16(_\dimin des c des ees\> des f ees)\!
-	des( ees f aes g f ees des)
+	\partCombineApart des( ees f aes g f ees des)
 % Bars 126 to 130
-	c2\pp~
-	c4\< f\!
+	c2~
+	c4 f \partCombineAutomatic
 	ees16\pp r r8 r4
 	R2*3
 	
@@ -128,7 +131,7 @@ musicFlautoIMvtII = \relative c {
 	c16-._\crescendo r g-. r d'-. r g-. r
 % Bars 136 to 140
 	r c,-. r g-. r d'-. r g-.
-	r c,-. r g-. r d'-. r g-.
+	\partCombineApart r c,-. r g-. r d'-. r g-. \partCombineAutomatic
 	c,,32(\f b a g a b c d e d c b c d e f)
 	g( f e d c d e f g a b c d e f g)
 	aes!16\ff r r8 r4\fermata
@@ -152,10 +155,10 @@ musicFlautoIMvtII = \relative c {
 	b(_\crescmarkup c) r c-. b( c e f)
 % Bars 166 to 170
 	cis( d) r d-. cis( d fis g)
-	dis( e) r e-. dis( e) r e-. \section
+	\partCombineChords dis( e) r e-. dis( e) r e-. \partCombineAutomatic \section
 	\key c \major dis( e\<) r e-. dis( e) r\! e-.
-	e8(\f f16 g d) r r g,-.
-	e'8( f16 g d-.) r r g,-.
+	e8(\f f16 g d) r r \once \partCombineApart g,-.
+	e'8( f16 g d-.) r r \once \partCombineApart g,-.
 % Bars 171 to 175
 	c8( d e f)
 	g16([ e g f32 e)] e8.( d32 c)
@@ -177,12 +180,12 @@ musicFlautoIMvtII = \relative c {
 % Bars 196 to 200
 	R2*2
 	
-	r4 r8 \tuplet 6/4 8 {r32 ees'( f g aes bes)}
-	c4( des)\<
-	c( ees8\> des)
+	\partCombineApart r4 r8 \tuplet 6/4 8 {r32 ees'( f g aes bes)}
+	c4( des)
+	c( ees8 des)
 % Bars 201 to 205
-	c4(\! bes8 aes)
-	g8.( bes32 aes) aes8 r 
+	c4( bes8 aes)
+	g8.( bes32 aes) aes8 \partCombineAutomatic r 
 	R2
 	R\fermata \fine
 }

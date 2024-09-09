@@ -21,6 +21,8 @@ tempiMvtI = {
 }
 tempiMvtII = {
 	\tempo "Adagio di molto"
+	s2*158
+	\tempo "stringendo"
 }
 tempiMvtIII = {
 	\tempo "Allegretto"
