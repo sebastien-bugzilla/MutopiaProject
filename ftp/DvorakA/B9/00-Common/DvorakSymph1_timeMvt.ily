@@ -10,13 +10,14 @@ timeMvtI = {
 }
 timeMvtII = {
 	\time 2/4
-	\set Timing.baseMoment = #(ly:make-moment 1/2)
+	\set Timing.baseMoment = #(ly:make-moment 1/4)
 	\set Timing.beatStructure = 1,1
 	\set Timing.beamExceptions = \beamExceptions {
 		32[ 32 32 32] 32[ 32 32 32] 32[ 32 32 32] 32[ 32 32 32] |
 		8[ 16 16] 8[ 8] |
 		16[ 16 16 32 32] 8.[ 32 32] |
-		4 32[ 32 32 32 8]
+		4 32[ 32 32 32 8] |
+		8[ 8] 8[ 16. 64]
 	}
 }
 timeMvtIII = {

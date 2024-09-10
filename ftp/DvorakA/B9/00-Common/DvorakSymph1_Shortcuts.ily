@@ -41,6 +41,8 @@ div = \markup {div.}
 marc = \markup {\italic {marc.}}
 sempre = \markup {\italic {sempre}}
 flegatosempre = \markup {\dynamic f \italic {legato sempre}}
+pococresc = \markup {\italic {poco cresc.}}
+
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))

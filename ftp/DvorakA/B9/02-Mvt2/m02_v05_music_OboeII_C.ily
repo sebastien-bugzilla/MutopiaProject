@@ -55,14 +55,14 @@ musicOboeIIMvtII = \relative c {
 	<< g2 {s8\> s s s\!} >>
 	f2
 	e8.( des16 c f g a)
-	c8( bes a_\pococresc g16 f)
+	c8( bes a g16 f)
 	bes2~
 % Bars 51 to 55
 	bes\<
 	ees,\!
 	aes4.->\fp r8
 	des4.\fp r8
-	aes16-._\crescendo r aes-. r f-. r f-. r
+	aes16-. r aes-. r f-. r f-. r
 % Bars 56 to 60
 	<< ees2 {s8\< s s s16 s\!}>>
 	e4.\p r8
@@ -111,16 +111,16 @@ musicOboeIIMvtII = \relative c {
 	
 	f8\mf f f a
 	d4 c8 bes
-	bes2_\crescendo~
+	bes2~
 	bes
 % Bars 101 to 105
-	ees8(\f f16 g d) r r bes
-	ees8( f16 g d) r r bes-.
+	ees8(\f f16 g d) r r \once \partCombineApart bes
+	ees8( f16 g d) r r \once \partCombineApart bes-.
 	c8( d) ees( f)
 	g16([ ees g f32 ees)] ees8.( d32 c)
 	bes8( c16 bes) ees8( f)
 % Bars 106 to 110
-	g16([_\brackM\dimin ees g f32 ees)] ees8.( f32 g)
+	g16([ ees g f32 ees)] ees8.( f32 g)
 	aes16\p r r8 r4
 	R2*3
 	

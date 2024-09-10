@@ -180,7 +180,7 @@ musicFlautoIMvtII = \relative c {
 	r4 r8 \tuplet 6/4 8 {r32 ees'( f g aes bes)}
 	c4( des)\<
 	c( ees8\> des)
-% Bars 201 to 205
+% Bars 201 to 204
 	c4(\! bes8 aes)
 	g8.( bes32 aes) aes8 r 
 	R2

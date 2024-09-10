@@ -195,7 +195,7 @@ musicFlautoIIMvtII = \relative c {
 	R2
 	aes'2\brack\p~
 	aes~\<
-% Bars 201 to 205
+% Bars 201 to 204
 	aes4\> ees8-. ees-.\!
 	ees4~ ees8 r 
 	R2
