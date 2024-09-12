@@ -60,13 +60,13 @@ musicClarinettoIIMvtII = \relative c {
 	r4 f'32[\brack\p-. f-. f-. f-. f-. f-. f-. f]-. 
 	f4.->\fp r8
 	ees4.\fp r8
-	bes16-._\crescendo r bes-. r g-. r g-. r
+	bes16-. r bes-. r g-. r g-. r
 % Bars 56 to 60
 	<< f2 {s8\< s s s\!}>>
 	fis4.\p r8
 	d'4. r8
 	d16\< r d r ees r ees r\!
-	a8[(\> b cis e)]\!
+	a8[(\> b cis! e!)]\!
 % Bars 61 to 65
 	d16\brack\p-. d,-. d-. d-. d-. d-. d-. d-. 
 	d d d d c c c c
@@ -75,7 +75,7 @@ musicClarinettoIIMvtII = \relative c {
 	g g g g  g g g g
 % Bars 66 to 70
 	c, c c c  ees ees ees ees
-	aes aes aes aes g_\crescmarkup g g g
+	aes aes aes aes g g g g
 	g\< g g g bes bes\! bes bes
 	c\pp r c r c r c r
 	c r c r ces r ces r
@@ -90,7 +90,7 @@ musicClarinettoIIMvtII = \relative c {
 	ees16\f r r ees32-. ees-. ees16\> r r b32-. b-.\!
 	c16 r r c32-. c-. c16 r r aes32-. aes-.
 	bes16 r r bes32-. bes-. d,!16 r r d32-. d-.
-	ees16\< r r ees32-. ees-. ees16\! r r f32-. f-.
+	ees16\< r r ees32-. ees-.\! ees16 r r f32-. f-.
 % Bars 81 to 85
 	\tuplet 6/4 4 {e16\mf e e e e e  e e e g g g
 	g g g c\< c c b b b\! bes bes bes}
@@ -113,8 +113,8 @@ musicClarinettoIIMvtII = \relative c {
 	r8 r16 b-. e32( d c b) b16 r
 	e,8\mf f e g
 	c4 b8 a
-	bes!8->_\crescendo c-> d8.-> c16-.
-	e,16( f e d c bes a g)
+	bes!8-> c-> d8.-> c16-.
+	e,16( f e d c bes a g) 
 % Bars 101 to 105
 	f'8(\f g16 a e) r r c 
 	f8( g16 a e) r r c-.
@@ -122,7 +122,7 @@ musicClarinettoIIMvtII = \relative c {
 	a16([ f a g32 f)] f8.( e32 d)
 	c8( d16 c) f8( g)
 % Bars 106 to 110
-	a16[(_\brackM\dimin f a g32 f)] f8.( g32 a)
+	a16[( f a g32 f)] f8.( g32 a)
 	f16 r r8 r4
 	R2*3
 	
@@ -216,7 +216,7 @@ musicClarinettoIIMvtII = \relative c {
 	bes,4(\brack\ppp aes)
 	f2
 	f
-	bes!_\brackM\dimmarkup
+	bes!
 	a~
 % Bars 191 to 195
 	a~
@@ -231,7 +231,7 @@ musicClarinettoIIMvtII = \relative c {
 	bes'2\brack\p~
 	<< bes~ {s8\< s s s\!}>>
 % Bars 201 to 204
-	bes4(\> f8\!-. f-.
+	bes4\> f8\!-. f-.
 	f4~ f8 r
 	r16. ees'32\pp-.[ ees16.-. ees32-.] d8-. d-. 
 	<< d2\fermata {s8\< s\! s\> s\!}>> \fine

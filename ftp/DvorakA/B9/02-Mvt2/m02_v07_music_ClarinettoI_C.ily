@@ -17,7 +17,7 @@ musicClarinettoIMvtII = \relative c {
 % Bars 6 to 10
 	bes\fp\fermata
 	a8\< bes\fermata\! bes\<[ ees16.\fermata a,32]\!
-	<< a2\fermata {s8\< s\! s\> s\!}>>
+	\once \partCombineChords << a2\fermata {s8\< s\! s\> s\!}>>
 	R2*17
 % Bars 11 to 15
 	
@@ -26,15 +26,15 @@ musicClarinettoIMvtII = \relative c {
 % Bars 21 to 25
 	
 % Bars 26 to 30
-	R2
+	\partCombineApart R2 \partCombineAutomatic
 	R
+	\partCombineApart R \partCombineAutomatic
 	R
-	R
-	f2\brack\p~
+	\partCombineApart f2\brack\p~
 % Bars 31 to 35
-	f8 r r4
+	f8 r r4 
 	f2~
-	f8 r r4
+	f8 r r4 \partCombineAutomatic
 	R2*3
 	
 % Bars 36 to 40
@@ -62,7 +62,7 @@ musicClarinettoIMvtII = \relative c {
 	bes4.\fp r8
 	bes16-._\crescendo r bes-. r g-. r g-. r
 % Bars 56 to 60
-	f-.\< r ees-. r d-. r c-. r\!
+	\partCombineApart f-. r ees-. r d-. r c-. r \partCombineAutomatic
 	a'4.\p r8
 	bes4. r8
 	d16\< r d r ees r ees r\!
@@ -111,22 +111,22 @@ musicClarinettoIMvtII = \relative c {
 	R2
 % Bars 96 to 100
 	r8 r16 b-. e32( d c b) b16 r
-	c32\mf g f e d16. c32 c8-> d->
-	e-> f-> g[ d'16. c32]
+	\partCombineApart c32 g f e d16. c32 c8-> d->
+	e-> f-> g[ d'16. c32] \partCombineAutomatic
 	e,8->_\crescendo f-> g8.-> f16-.
 	e16( f e d c bes a g)
 % Bars 101 to 105
-	a8(\f bes16 c g) r r c, 
-	a'8( bes16 c g) r r c,-.
+	a8(\f bes16 c g) r r \once \partCombineApart c, 
+	a'8( bes16 c g) r r \once \partCombineApart c,-.
 	f8( g) a( bes)
 	c16([ a c bes32 a)] a8.( g32 f)
 	e8( f16 g) a8( bes)
 % Bars 106 to 110
 	c16[(_\brackM\dimin a c bes32 a)] a8.( bes32 c)
-	f,8.[\p \tuplet 3/2 16 {g32( a bes]} c8.) g16
+	\partCombineApart f,8.[\p \tuplet 3/2 16 {g32( a bes]} c8.) g16
 	f8.[ \tuplet 3/2 16 {g32( a bes]} c8.) g16
 	f8.[ \tuplet 3/2 4 {g32( a bes]} c8.)[ \tuplet 3/2 4 {d32( ees f)]}
-	<<f2 {s8\< s s s\!} >>
+	<<f2 {s8\< s s s\!} >> \partCombineAutomatic
 % Bars 111 to 115
 	g4(\pp aes)
 	g( bes8 aes)
@@ -138,16 +138,16 @@ musicClarinettoIMvtII = \relative c {
 	
 	
 	
-	g4(\brack\pp aes)\<
+	\partCombineApart g4(\brack\pp aes)\<
 % Bars 121 to 125
 	ees( f)\!
 	r16 f-. g( f) r8 r16 f-.
-	g(\< f) r f-. g( f ees d)\!
+	g(\< f) r f-. g( f ees d)\! \partCombineAutomatic
 	f( ees d ees f ees g f)
-	ees( f g bes a g f ees)
+	\partCombineApart ees( f g bes a g f ees)
 % Bars 126 to 130
-	d2\pp\<~
-	d4 g\!
+	d2~
+	d4 g \partCombineAutomatic
 	f4(~ f32[ g a g f8]~
 	f8)[\< aes\!( g\> f\!)]
 	ees!2~\<
@@ -158,8 +158,8 @@ musicClarinettoIMvtII = \relative c {
 	
 	
 % Bars 136 to 140
-	R2
-	a,8.\brack\mf( b32 a) g( fis e fis g a b cis)
+	\partCombineApart R2
+	a,8.\brack\mf( b32 a) g( fis e fis g a b cis) \partCombineAutomatic
 	d,(\brack\f cis b a b cis d e fis e d cis d e fis g)
 	a( g fis e d e fis g a b cis d e fis g a)
 	bes!16\ff r r8 r4\fermata
@@ -171,20 +171,20 @@ musicClarinettoIMvtII = \relative c {
 	
 % Bars 146 to 150
 	
-	c'8\brack\pp r bes r
-	a16 r f r e r a r
+	\partCombineApart c'8\brack\pp r bes r
+	a16 r f r e r a r \partCombineAutomatic
 	R2*3
 	
 % Bars 151 to 155
 	
-	<< a2(^\solo\brack\p {s8\< s s s\!}>>
+	\partCombineApart << a2(^\solo\brack\p {s8\< s s s\!}>>
 	bes4.\> cis,8\!
 	d2~
 	d4) c8.( b16)
 % Bars 156 to 160
 	c4.( d32 c b c)
 	f2~
-	f16 r r8 r4
+	f16 r r8 r4 \partCombineAutomatic
 	R2*9
 % Bars 161 to 165
 	
@@ -192,8 +192,8 @@ musicClarinettoIMvtII = \relative c {
 	
 	\section
 	\key d \major R2
-	fis8(\f g16 a e) r r a,-.
-	fis'8( g16 a e-.) r r a,-.
+	fis8(\f g16 a e) r r \once \partCombineApart a,-.
+	fis'8( g16 a e-.) r r \once \partCombineApart a,-.
 % Bars 171 to 175
 	d8[( e fis g)]
 	a16([ fis a g32 fis)] fis8.( e32 d)
@@ -201,38 +201,38 @@ musicClarinettoIMvtII = \relative c {
 	a16([ fis a g32 fis]) fis8.( e32 d) \section
 	\key bes \major \afterGrace e!4\startTrillSpan {dis16( e)\stopTrillSpan} \afterGrace a4\startTrillSpan {gis16( a)\stopTrillSpan}
 % Bars 176 to 180
-	d,8 r d16( fis a g)
+	d,8 r \partCombineApart d16( fis a g)
 	fis(_\dimmarkup a c bes) a( d cis g)
 	fis( g a fis d g fis c)
 	ees( d a' g d c a' g)
 	bes( g f e) r4
 % Bars 181 to 185
-	g16( e d c) r4
+	g16( e d c) r4 \partCombineAutomatic
 	R2*4
 	
 	
 	
 % Bars 186 to 190
-	bes,4(\brack\ppp aes~
+	\partCombineApart bes,4( aes~
 	aes2)
-	a!
+	\partCombineAutomatic a! 
 	ees'!_\brackM\dimmarkup
 	e~
 % Bars 191 to 195
 	e~
 	e
-	dis8 r r4
+	dis8 r r4 
 	f,2\ppp\fermata~
 	f8 r r4
 % Bars 196 to 200
 	R2*2
 	
-	r4 r8 \tuplet 6/4 8 {r32 f'\brack\p( g a bes c)}
+	\partCombineApart r4 r8 \tuplet 6/4 8 {r32 f'\brack\p( g a bes c)}
 	d4( ees
 	d\< f8 ees)\!
 % Bars 201 to 204
 	d4(\> c8\! bes)
-	a8.( c32 bes) bes8 r
+	a8.( c32 bes) bes8 \partCombineChords r
 	r16. f'32\pp-.[ f16.-. f32-.] bes8-. bes-. 
 	<< bes2\fermata {s8\< s\! s\> s\!}>> \fine
 }
