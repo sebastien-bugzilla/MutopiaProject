@@ -36,8 +36,8 @@
 \include "./02-Mvt2/m02_v12_music_CornoII_C.ily"
 \include "./02-Mvt2/m02_v15_music_TrombeI_C.ily"
 \include "./02-Mvt2/m02_v16_music_TrombeII_C.ily"
-%\include "./02-Mvt2/m02_v20_music_Timpani.ily"
-%\include "./02-Mvt2/m02_v21_music_ViolinoI.ily"
+\include "./02-Mvt2/m02_v20_music_Timpani.ily"
+\include "./02-Mvt2/m02_v21_music_ViolinoI.ily"
 %\include "./02-Mvt2/m02_v22_music_ViolinoII.ily"
 %\include "./02-Mvt2/m02_v23_music_Viola.ily"
 %\include "./02-Mvt2/m02_v24_music_Violoncello.ily"
@@ -104,14 +104,14 @@
 %					\musicTrombeIIMvtII 
 				}
 			>>
-%			\new Staff {
-%				\timeMvtII \nameStaffVIIMvtII \musicTimpaniMvtII
-%			}
-%			\new StaffGroup <<
+			\new Staff {
+				\timeMvtII \nameStaffVIIMvtII \musicTimpaniMvtII
+			}
+			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
-%					\new Staff {
-%						\timeMvtII \nameStaffVIIIMvtII \musicViolinoIMvtII
-%					}
+					\new Staff {
+						\timeMvtII \nameStaffVIIIMvtII \musicViolinoIMvtII
+					}
 %					\new Staff {
 %						\timeMvtII \nameStaffIXMvtII \musicViolinoIIMvtII
 %					}
@@ -125,7 +125,7 @@
 %				\new Staff {
 %					\timeMvtII \nameStaffXIIMvtII \musicContrabassoMvtII
 %				}
-%			>>
+			>>
 		>>
 		\header {
 			breakbefore = ##t
