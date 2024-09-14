@@ -4,10 +4,10 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIIMvtII = \relative c {
+musicTrombeIMvtII = \relative c {
 	\clef treble
 	\key c \major
-%	\transposition a
+	\transposition ees
 % Bars 1 to 5
 	R2\fermata
 	R\fermata
@@ -35,7 +35,7 @@ musicTrombeIIMvtII = \relative c {
 % Bars 51 to 55
 	
 	
-	f8.(\brack\mf^\sole g16 a4)
+	f'8.(\brack\mf^\sole g16 a4)
 	f8.( g32 a bes4)
 	c8[(_\crescendo d e d])
 % Bars 56 to 60
@@ -71,18 +71,18 @@ musicTrombeIIMvtII = \relative c {
 	
 % Bars 96 to 100
 	
-	g'8\mf[ d16. d32] d8 d
-	g4( fis8 e)
-	f!->_\crescendo g-> a8.-> g16-.
-	f16(_\legato g f e d c b a)
+	b8\mf[ a16. g32] g8 a
+	b4( a8 g)
+	b->_\crescendo c-> d8.-> c16-.
+	b16(_\legato c b a g f e d)
 % Bars 101 to 105
-	c'8->\f[ g16 e32. e64] g16-. c-. e,-. r
-	c'8->[ g16 e32. e64] g16-. c-. e,-. r
-	r8 d'[-> c-> g->]
-	e'8.-> d16-. c8 r
-	r d[-> c-> g->]
+	e'8->\f[ d16 c32. c64] d16-. e-. c-. r
+	e8->[ d16 c32. c64] d16-. e-. c-. r
+	r8 f[-> e-> d->]
+	g8.-> f16-. e8 r
+	r f[-> e-> d->]
 % Bars 106 to 110
-	e'8.->_\brackM\dimin d16-. c8 r
+	g8.->_\brackM\dimin f16-. e8 r
 	R2*15
 % Bars 111 to 115
 	
@@ -90,7 +90,7 @@ musicTrombeIIMvtII = \relative c {
 	
 % Bars 121 to 125
 	
-	r8 r16 c,([\pp d c)] r8
+	r8 r16 c([\pp d c)] r8
 	R2*45
 % Bars 126 to 130
 	
@@ -112,17 +112,17 @@ musicTrombeIIMvtII = \relative c {
 	
 	\section
 	R2
-	c'8\f[ g16 e32. e64] g16-. c-. e,-. r
-	c'8[ g16 e32. e64] g16-. c-. e,-. r
+	e8\f[ d16 c32. c64] d16-. e-. c-. r
+	e8[ d16 c32. c64] d16-. e-. c-. r
 % Bars 171 to 175
-	r8 d'[-> c-> g]->
-	e'8.-> d16 c8 r
-	r d[-> c-> g]->
-	e'8.-> d16 c8 r \section
-	c16 g32 e g c e, r c'16 g32 e g c e, r
+	r8 f[-> e-> d]->
+	g8.-> f16 e8 r
+	r f[-> e-> d]->
+	g8.-> f16 e8 r \section
+	e16 d32 c d e c r e16 d32 c d e c r
 % Bars 176 to 180
-	g c e,8 e32 e c'4~_\dimin
-	c8 r r4
+	d e c8 c32 c \partCombineApart c4~
+	c8 \partCombineAutomatic r r4
 	R2*16
 % Bars 181 to 185
 	

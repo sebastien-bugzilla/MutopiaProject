@@ -35,9 +35,9 @@ musicTrombeIIMvtII = \relative c {
 % Bars 51 to 55
 	
 	
-	f8.(\brack\mf^\sole g16 a4)
+	f8.(\brack\mf g16 a4)
 	f8.( g32 a bes4)
-	c8[(_\crescendo d e d])
+	c8[( d e d])
 % Bars 56 to 60
 	c[( bes a g])
 	a4.\p r8
@@ -73,8 +73,8 @@ musicTrombeIIMvtII = \relative c {
 	
 	g'8\mf[ d16. d32] d8 d
 	g4( fis8 e)
-	f!->_\crescendo g-> a8.-> g16-.
-	f16(_\legato g f e d c b a)
+	f!-> g-> a8.-> g16-.
+	f16( g f e d c b a)
 % Bars 101 to 105
 	c'8->\f[ g16 e32. e64] g16-. c-. e,-. r
 	c'8->[ g16 e32. e64] g16-. c-. e,-. r
@@ -82,7 +82,7 @@ musicTrombeIIMvtII = \relative c {
 	e'8.-> d16-. c8 r
 	r d[-> c-> g->]
 % Bars 106 to 110
-	e'8.->_\brackM\dimin d16-. c8 r
+	e'8.-> d16-. c8 r
 	R2*15
 % Bars 111 to 115
 	
