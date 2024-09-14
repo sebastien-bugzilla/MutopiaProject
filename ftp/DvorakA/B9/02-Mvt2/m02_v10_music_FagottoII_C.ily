@@ -68,13 +68,13 @@ musicFagottoIIMvtII = \relative c {
 	bes32[\<-. c-. des-. ees!-. f-. g-. aes-. bes-.]\! ees,16 ees des des\f
 	c2->
 	des->
-	c8[_\legato des bes aes]
+	c8[ des bes aes]
 % Bars 56 to 60
 	g[\< f ees des]\!
 	c2\p
 	c
-	c8([\< f des bes]\!
-	g') r r4
+	\stemUp \omitBeam c8([\< f \omitBeam des bes]\!
+	\stemDown g') r r4
 % Bars 61 to 65
 	c16\p-. c-. c-. c-.  c-. c-. c-. c-.
 	c c c c des des des des
@@ -83,7 +83,7 @@ musicFagottoIIMvtII = \relative c {
 	d d d d  g g g g
 % Bars 66 to 70
 	ges ges ges ges  bes, bes bes bes
-	ees ees ees ees  ees_\crescmarkup ees ees ees
+	ees ees ees ees  ees ees ees ees
 	des\< des des des f f\! f f
 	ges\pp r ges r ges r ges r
 	ges r ges r ges r ges r
@@ -122,7 +122,7 @@ musicFagottoIIMvtII = \relative c {
 	bes'4~\mf bes16 a-. g-. f-.
 	bes32-. f-. ees-. d-. c16-. c'-. d32-. a-. g-. f-. ees16-. ees'-.
 	R2 
-	f,16(_\legato g f ees_\crescmarkup d c bes aes)
+	f,16( g f ees d c bes aes)
 % Bars 101 to 105
 	ees'8(\f f16 g d) r r bes
 	ees8( f16 g d) r r bes-.
@@ -130,7 +130,7 @@ musicFagottoIIMvtII = \relative c {
 	g16[( ees g f32 ees)] ees8.( d32 c)
 	bes8( c16 bes) ees8( f)
 % Bars 106 to 110
-	g16[(_\brackM\dimin ees g f32 ees)] ees8.( f32 g)
+	g16[( ees g f32 ees)] ees8.( f32 g)
 	c,16\p r r8 r4
 	R2*3
 	
@@ -146,7 +146,7 @@ musicFagottoIIMvtII = \relative c {
 	f-. e-. f-. e-. f( c a f)
 	c2
 	c
-	des4(_\crescendo ees)\<
+	des4( ees)\<
 % Bars 121 to 125
 	f( ges)\!
 	g!8[ bes g ees]
@@ -224,7 +224,7 @@ musicFagottoIIMvtII = \relative c {
 	b2~
 	b
 	e8 r r4
-	R2\fermata
+	R2_\fermata
 	ees4(\brack\f f)
 % Bars 196 to 200
 	ees( g8 f)
