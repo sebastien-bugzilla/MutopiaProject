@@ -47,6 +47,8 @@ pococresc = \markup {\italic {poco cresc.}}
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
 
+inc = \markup {in C}
+ines = \markup {[in Es]}
 
 brack = #(define-event-function 
 	(dyn) (ly:event?)
@@ -81,6 +83,26 @@ noteShift = #(define-music-function
 
 dotsPosition = \once \override Dots.staff-position = \etc
 
+mmrPos = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)
+
+omitFlag = \once \omit Flag
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+omitDots = \once \omit Dots
+
 %aIIXoffset = #(define-music-function
 %	(offset)
 %	(number?)
@@ -104,14 +126,6 @@ dotsPosition = \once \override Dots.staff-position = \etc
 %	(number?)
 %	#{
 %		\once \override Voice.Arpeggio.padding = #padding
-%	#}
-%)
-
-%beamOffset = #(define-music-function
-%	(position)
-%	(pair?)
-%	#{
-%		\once \offset positions #position Beam
 %	#}
 %)
 
@@ -231,14 +245,6 @@ dotsPosition = \once \override Dots.staff-position = \etc
 %	\once \override Score.RehearsalMark.whiteout-style = #'outline
 %}
 
-%mmrPos = #(define-music-function
-%	(position)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.staff-position = #(- position 2)
-%	#}
-%)
-
 %mmrnDown = {
 %	\once \override MultiMeasureRestNumber.direction = #-1 
 %}
@@ -262,8 +268,6 @@ dotsPosition = \once \override Dots.staff-position = \etc
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 %omitMMRN = \omit MultiMeasureRestNumber
-%omitFlag = \once \omit Flag
-%omitDots = \once \omit Dots
 
 
 %mmrEO = #(define-music-function

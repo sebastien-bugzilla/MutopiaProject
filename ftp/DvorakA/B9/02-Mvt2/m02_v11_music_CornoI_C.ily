@@ -11,7 +11,7 @@ musicCornoIMvtII = \relative c {
 % Bars 1 to 5
 	f''2\fermata\fp
 	f\fermata\fp
-	<< f4\fermata {s8\< s\!} >> << d4\fermata {s8\< s\!} >>
+	\partCombineApart f4\fermata d4\fermata \partCombineAutomatic
 	<< c2\fermata {s8\< s\! s\> s\!}>>
 	ees2\fp\fermata
 % Bars 6 to 10
@@ -50,12 +50,12 @@ musicCornoIMvtII = \relative c {
 	
 % Bars 46 to 50
 	
-	r16 c8\pp c16 r c8 c16
+	\partCombineApart r16 c8\pp c16 r c8 c16
 	r cis8 cis16 r d8 d16
 	e4( d
 	cis d
 % Bars 51 to 55
-	e8) r r4
+	e8) r r4 \partCombineAutomatic
 	r c32[\brack\p-. c-. c-. c-. c-. c-. c-. c]-. 
 	c4.->\fp r8
 	d4. r8
@@ -73,14 +73,14 @@ musicCornoIMvtII = \relative c {
 	
 	
 	
-	r16 ees8\ppp ees16 r ees8 ees16
+	\partCombineApart r16 ees8\ppp ees16 r ees8 ees16
 	r ees8 ees16 r ees8 ees16
 % Bars 71 to 75
 	r d8 d16 r d[ r ees]
 	r bes8 bes16 r bes8 bes16
 	r ees8\brack\pp ees16 r bes8 bes16
 	r bes8 bes16 r bes8 bes16
-	r bes,8 bes16 r bes8 bes16
+	r bes,8 bes16 r bes8 bes16 \partCombineAutomatic
 % Bars 76 to 80
 	r bes'8 bes16(\< ees4)\!
 	r16 d8\brack\f d16(\< fis4)\!
@@ -102,15 +102,15 @@ musicCornoIMvtII = \relative c {
 % Bars 91 to 95
 	
 	
-	R2*4
+	\partCombineApart R2*4
 	
 	
 % Bars 96 to 100
 	
-	d8\mf[ d16. d32] d8 d
+	d8[ d16. d32] d8 d
 	d[( g fis e]
-	d)_\crescendo e-> f!8.-> e16
-	d[ r g, r g r g] r
+	\stemDown \omitBeam d)_\crescendo e-> f!8.-> e16
+	\stemUp \beamOffset #'(-1 . -1) d[ \once \partCombineAutomatic r g, \once \partCombineAutomatic r g \once \partCombineAutomatic r g] \partCombineAutomatic r 
 % Bars 101 to 105
 	e'8[\f-> d16 c32. c64] d16-. e-. c-. r
 	e8->[ d16 c32. c64] d16-. e-. c-. r
@@ -124,10 +124,10 @@ musicCornoIMvtII = \relative c {
 	r c8 c16 r c8 c16
 	r c8\< c16 r c8 c16\!
 % Bars 111 to 115
-	d4(\pp ees)
+	\partCombineApart \stemUp d4(\pp ees)
 	d16( aes' g f f8 ees)
 	d4( c8 bes)
-	a8.( bes32 c bes16) r r8
+	a8.( bes32 c bes16) r r8 \partCombineAutomatic
 	R2*3
 % Bars 116 to 120
 	
@@ -137,25 +137,25 @@ musicCornoIMvtII = \relative c {
 	r g8_\crescendo g16 r g8 g16
 % Bars 121 to 125
 	r g8 g16 r g8 g16
-	r c-. d( c) r8 r16 c-.[
-	d(\< c)] r c d( c bes\! a)
+	\partCombineApart r c-. d( c) r8 r16 c-.[
+	d(\< c)] r c d( c bes\! a) \partCombineAutomatic
 	r d8_\dimin d16(\< bes4)\!
 	r16 bes8 bes16(\< f4)\!
 % Bars 126 to 130
 	R2*2
 	
-	c'2\brack\pp~
-	c8 r r4
-	ees2~
+	c'2\brack\pp(
+	c8) r r4
+	ees2(
 % Bars 131 to 135
-	ees8 r r4
-	fis2~
-	fis8 r r4
-	r8 e,16-. e-. e'8( e,)
+	ees8) r r4
+	fis2(
+	fis8) r r4
+	\partCombineApart r8 e,16-. e-. e'8( e,)
 	r e16-. e-. e'8( e,)
 % Bars 136 to 140
 	r e16-. e-. e'8( e,)
-	r e16-. e-. e'8( e,)
+	r e16-. e-. e'8( e,) \partCombineAutomatic
 	R2*30
 % Bars 141 to 145
 	
@@ -180,8 +180,8 @@ musicCornoIMvtII = \relative c {
 	g8.-> f16 e8 r \section
 	e16 d32 c d e c r e16 d32 c d e c r
 % Bars 176 to 180
-	d e c8 c32 c c4~_\dimin
-	c8 r r4
+	d e c8 c32 c \partCombineApart c4~
+	c8 \partCombineAutomatic r r4
 	R2*2
 	<>^\ines
 	g2\pp~
@@ -205,11 +205,11 @@ musicCornoIMvtII = \relative c {
 	
 	
 	
-	c4(\brack\p d
+	\partCombineApart c4(\brack\p d
 	c\< e8 d\!)
 % Bars 201 to 204
 	<< c2~ {s8\> s s s\!}>>
-	c4~ c8 r
+	c4~ c8 \partCombineAutomatic r 
 	R2
 	R\fermata \fine
 }

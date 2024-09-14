@@ -105,8 +105,8 @@ musicCornoIIMvtII = \relative c {
 	b->
 	b'8\mf[ c16. b32] b8 d
 	g,16 r r8 r4
-	d'8_\crescendo e-> f!8.-> e16
-	d[ r g,, r g r g] r
+	d'8 e \omitDots f!8. e16
+	\stemUp \omitFlag d r \omitFlag g,, r \omitFlag g r \omitFlag g r
 % Bars 101 to 105
 	c'8[\f-> g16 e32. e64] g16-. c-. e,-. r
 	c'8->[ g16 e32. e64] g16-. c-. e,-. r
@@ -114,7 +114,7 @@ musicCornoIIMvtII = \relative c {
 	e'8.-> d16-. c8 r
 	r d->[ c-> g->]
 % Bars 106 to 110
-	e'8.->_\brackM\dimin d16-. c8 r
+	e'8.-> d16-. c8 r
 	r16 c,8\p c16 r c8 c16
 	r c8 c16 r c8 c16
 	r c8 c16 r c8 c16
@@ -130,12 +130,12 @@ musicCornoIIMvtII = \relative c {
 	
 	r16 a'8\pp a16 r a8 a16
 	r a8 a16 r a8 a16
-	r g,8_\crescendo g16 r g8 g16
+	r g,8 g16 r g8 g16
 % Bars 121 to 125
 	r g8 g16 r g8 g16
 	R2*2
 	
-	r16 d'8_\dimin d16(\< bes4)\!
+	r16 d'8 d16(\< bes4)\!
 	r16 bes8 bes16(\< f4)\!
 % Bars 126 to 130
 	R2*2
@@ -147,11 +147,11 @@ musicCornoIIMvtII = \relative c {
 	aes8) r r4
 	cis2(
 	b!8) r r4
-	R2*4
-	
+	\mmrPos #-6 R2
+	\mmrPos #-6 R
 % Bars 136 to 140
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 	R2*30
 % Bars 141 to 145
 	
@@ -179,7 +179,7 @@ musicCornoIIMvtII = \relative c {
 	g g e8 e32 e c'4~_\dimin
 	c8 r r4
 	R2*2
-	<>^\ines
+	
 	g,2\pp~
 % Bars 181 to 185
 	g~
@@ -204,7 +204,7 @@ musicCornoIIMvtII = \relative c {
 	R2*2
 	
 % Bars 201 to 204
-	<< c2~\brack\p {s8\> s s s\!}>>
+	c2~\brack\p
 	c4~ c8 r
 	R2
 	R\fermata \fine
