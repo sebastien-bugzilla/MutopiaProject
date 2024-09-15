@@ -39,7 +39,7 @@
 \include "./02-Mvt2/m02_v20_music_Timpani.ily"
 \include "./02-Mvt2/m02_v21_music_ViolinoI.ily"
 \include "./02-Mvt2/m02_v22_music_ViolinoII.ily"
-%\include "./02-Mvt2/m02_v23_music_Viola.ily"
+\include "./02-Mvt2/m02_v23_music_Viola.ily"
 %\include "./02-Mvt2/m02_v24_music_Violoncello.ily"
 %\include "./02-Mvt2/m02_v25_music_Contrabasso.ily"
 %###############################################################################
@@ -116,9 +116,9 @@
 						\timeMvtII \nameStaffIXMvtII \musicViolinoIIMvtII
 					}
 				>>
-%				\new Staff {
-%					\timeMvtII \nameStaffXMvtII \musicViolaMvtII
-%				}
+				\new Staff {
+					\timeMvtII \nameStaffXMvtII \musicViolaMvtII
+				}
 %				\new Staff {
 %					\timeMvtII \nameStaffXIMvtII \musicVioloncelloMvtII
 %				}

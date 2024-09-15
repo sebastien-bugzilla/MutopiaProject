@@ -45,7 +45,7 @@ pococresc = \markup {\italic {poco cresc.}}
 sole = \markup {Sole}
 sulg = \markup {sul G}
 velmijemnedelicatissimo = \markup {\italic {velmi jemně [delicatissimo]}}
-
+espressivo = \markup {\italic {espressivo}}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
