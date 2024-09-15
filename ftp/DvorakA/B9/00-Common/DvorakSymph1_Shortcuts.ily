@@ -44,7 +44,7 @@ flegatosempre = \markup {\dynamic f \italic {legato sempre}}
 pococresc = \markup {\italic {poco cresc.}}
 sole = \markup {Sole}
 sulg = \markup {sul G}
-
+velmijemnedelicatissimo = \markup {\italic {velmi jemně [delicatissimo]}}
 
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
