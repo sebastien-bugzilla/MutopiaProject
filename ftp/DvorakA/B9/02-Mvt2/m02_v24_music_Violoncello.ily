@@ -202,7 +202,7 @@ musicVioloncelloMvtII = \relative c {
 	R2
 	aes32\ff r r aes' aes4.\fermata
 % Bars 141 to 145
-	a,32 r r f'' f4.\fermata
+	aes,32 r r f'' f4.\fermata
 	R2*8
 % Bars 146 to 150
 	
@@ -241,7 +241,7 @@ musicVioloncelloMvtII = \relative c {
 	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. \section
 	\key aes \major g16 bes8 g16 g bes8 g16
 % Bars 176 to 180
-	g16-> bes-> bes-> g-> bes r a r
+	g16-> bes-> bes-> g-> bes r aes r
 	r c'8\p c16 r c8 f,16
 	r e8 e16 r f8 bes16
 	r c8 c16 r bes8 aes16
