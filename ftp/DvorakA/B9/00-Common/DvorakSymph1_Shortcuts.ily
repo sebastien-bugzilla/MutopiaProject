@@ -46,6 +46,10 @@ sole = \markup {Sole}
 sulg = \markup {sul G}
 velmijemnedelicatissimo = \markup {\italic {velmi jemně [delicatissimo]}}
 espressivo = \markup {\italic {espressivo}}
+divisi = \markup {divisi}
+pizzsempre = \markup {\italic {pizz. sempre}}
+ppcresc = \markup {\dynamic pp \italic {cresc.}}
+
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
@@ -105,6 +109,7 @@ beamOffset = #(define-music-function
 )
 
 omitDots = \once \omit Dots
+
 
 %aIIXoffset = #(define-music-function
 %	(offset)
