@@ -26,6 +26,15 @@ tempiMvtII = {
 }
 tempiMvtIII = {
 	\tempo "Allegretto"
+	s16*1 s2*98 s4
+	% bar 100.5
+	\tempo "rit."
+	s4 s2
+	% bar 102
+	\tempo "in tempo"
+	s2*133
+	% bar 235
+	\tempo "calando"
 }
 tempiMvtIV = {
 	\tempo "Allegro animato"

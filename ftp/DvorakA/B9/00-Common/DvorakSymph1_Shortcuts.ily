@@ -110,6 +110,7 @@ beamOffset = #(define-music-function
 
 omitDots = \once \omit Dots
 
+setBarNumber = \set Score.currentBarNumber = \etc
 
 %aIIXoffset = #(define-music-function
 %	(offset)
