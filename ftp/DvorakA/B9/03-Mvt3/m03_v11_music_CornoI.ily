@@ -160,6 +160,6 @@ musicCornoIMvtIII = \relative c {
 	
 % Bars 376 to 380
 	
-% Bars 381 and 382
+% Bar 381
 	
 }

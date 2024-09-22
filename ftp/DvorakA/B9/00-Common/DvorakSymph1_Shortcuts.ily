@@ -112,6 +112,9 @@ omitDots = \once \omit Dots
 
 setBarNumber = \set Score.currentBarNumber = \etc
 
+markFermata = \mark \markup { \fermata }
+
+
 %aIIXoffset = #(define-music-function
 %	(offset)
 %	(number?)

@@ -27,6 +27,7 @@ timeMvtIII = {
 	\set Timing.beamExceptions = \beamExceptions {
 		8[ 8 8 8] |
 		16[ 16 16 16] 16[ 16 16 16] |
+		32[ 32 32 32] 32[ 32 32 32] 32[ 32 32 32] 32[ 32 32 32] |
 		\tuplet 3/2 4 {8[ 8 8] 8[ 8 8]}
 	}
 }

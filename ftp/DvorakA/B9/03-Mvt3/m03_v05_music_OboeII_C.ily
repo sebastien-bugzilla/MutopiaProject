@@ -18,7 +18,7 @@ musicOboeIIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	R2_\fermata
 	R2*8
 % Bars 11 to 15
 	
@@ -52,13 +52,13 @@ musicOboeIIMvtIII = \relative c {
 	c''4->\mf b->
 % Bars 36 to 40
 	c8-. a-. b-. r
-	c4->_\crescmarkup b->
+	c4-> b->
 	c8-. ees-. d-. r
 	c-.\f c-. g-. r
 	f'-. f-. c-. r
 % Bars 41 to 45
 	c-.\mf r a-. r
-	d8-.\p_\dimin r g,-. r
+	d8-.\p r g,-. r
 	bes-. r g!-. r
 	c8-. r f,-. r
 	R2*2
@@ -71,9 +71,9 @@ musicOboeIIMvtIII = \relative c {
 % Bars 51 to 55
 	d8->\< c~ c16 bes-.\! aes( f)
 	f'8->\< ees~ ees16 des-.\! ces( aes)
-	aes'8->\f ges->~ ges16 f-. ees( des)
-	aes'8-> ges->~ ges16 f-. ees( des)
-	d!2(_\dimin
+	aes'8->\f ges->~ ges16 f-. ees( des!)
+	aes'8-> ges->~ ges16 f-. ees( des!)
+	d!2(
 % Bars 56 to 60
 	c4\> b)\!
 	c8-.\f d-. c-. r
@@ -93,7 +93,7 @@ musicOboeIIMvtIII = \relative c {
 	f8->\fp f16 r d8->\fp d16 r
 	ees8->\fp ees16 r d8->\fp d16 r
 % Bars 71 to 75
-	r8 ees-.\pp r d-._\crescmarkup
+	r8 ees-.\pp r d-.
 	ees-. r f-. r
 	ees-. r d-. r
 	g8(\f f ees d)
@@ -140,7 +140,7 @@ musicOboeIIMvtIII = \relative c {
 		R2*3
 		
 		
-		d8.[->_\crescendo ees16 ees8] r
+		d8.[-> ees16 ees8] r
 % Bars 111 to 115
 		f8.[-> g16 g8] r
 		a8.-> bes16 bes4\f~
@@ -200,14 +200,14 @@ musicOboeIIMvtIII = \relative c {
 	bes2\p
 % Bars 161 to 165
 	bes
-	<< bes {s4 s_\crescendo}>>
+	<< bes {s4 s}>>
 	ees4.(\< d8\!)
-	<< d2\brack\mf {s4 s_\crescmarkup}>>
+	<< d2\brack\mf {s4 s}>>
 	c4( d!)
 % Bars 166 to 170
 	des2~
 	des4\f c
-	d!16\ff r r8 r d_\brackM\pdim~
+	d!16\ff r r8 r d~
 	d16 r r8 r d\brack\pp~
 	d16 r c8~ c16 r a8~
 % Bars 171 to 175
@@ -227,7 +227,7 @@ musicOboeIIMvtIII = \relative c {
 	d16-> r r8 r d8~
 	d16-> r c8~ c16-> r a8~
 	a16-> r r8 r c~
-	c16->_\dimin r r8 r bes~
+	c16-> r r8 r bes~
 % Bars 186 to 190
 	bes16 r c8~ c16 r c8~
 	c16 r r8 r f,\pp~
@@ -257,7 +257,7 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	f2\brack\p(
-	ees)_\crescmarkup
+	ees)
 % Bars 211 to 215
 	d
 	g4 f
@@ -295,7 +295,7 @@ musicOboeIIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	R2_\fermata
 % Bars 246 to 250
 	R2*8
 	
@@ -325,13 +325,13 @@ musicOboeIIMvtIII = \relative c {
 % Bars 271 to 275
 	c4->\mf b->
 	c8-. a-. b-. r
-	c4->_\crescmarkup b->
+	c4-> b->
 	c8-. ees-. d-. r
 	c-.\f c-. g-. r
 % Bars 276 to 280
 	f'-. f-. c-. r
 	c-.\mf r a-. r
-	d8-.\p_\dimin r g,-. r
+	d8-.\p r g,-. r
 	bes-. r g!-. r
 	c8-. r f,-. r
 % Bars 281 to 285
@@ -347,9 +347,9 @@ musicOboeIIMvtIII = \relative c {
 	aes'8->\f ges->~ ges16 f-. ees( des)
 	aes'8-> ges->~ ges16 f-. ees( des)
 % Bars 291 to 295
-	d!2(_\dimin
+	d!2(
 	c4\> b\!)
-	c8-.\f d-. c-. r
+	c8-. d-. c-. r
 	c-. b-. c-. r
 	f-. e-. f-. r
 % Bars 296 to 300
@@ -366,7 +366,7 @@ musicOboeIIMvtIII = \relative c {
 	f8->\fp f16 r d8->\fp d16 r
 % Bars 306 to 310
 	ees8->\fp ees16 r d8->\fp d16 r
-	r8 ees-.\pp r d-._\crescmarkup
+	r8 ees-.\pp r d-.
 	ees-. r f-. r
 	ees-. r d-. r
 	g8(\f f ees d)
@@ -404,10 +404,10 @@ musicOboeIIMvtIII = \relative c {
 	R
 	d!
 	r4 bes'8.\p r16
-	r4_\crescendo c8.\< r16\!
+	r4_\crescendo << c8. {s16\< s s\!}>> r16
 	r4 d8. r16
 % Bars 341 to 345
-	d8.\< r16 \afterGrace d4\startTrillSpan {cis16( d)\stopTrillSpan\!}
+	d8.\< r16 \afterGrace d4 {cis16( d)\!}
 	c!4\f c8-. c-.
 	c8.-> c16 c4
 	c8-. d-. ees8.-> ees16-.
@@ -451,7 +451,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 376 to 380
 	c16-. g'-. d-. g-. ees-. g-. f32( ees d c)
 	c8[ b\prall] c-. d-.
-	c8._\diminuendo c16 c4~
+	c8. c16 c4~
 	c2~
 	c8 f-. g8.\p c,16
 % Bar 381
