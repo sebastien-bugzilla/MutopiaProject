@@ -49,7 +49,7 @@ espressivo = \markup {\italic {espressivo}}
 divisi = \markup {divisi}
 pizzsempre = \markup {\italic {pizz. sempre}}
 ppcresc = \markup {\dynamic pp \italic {cresc.}}
-
+fmarcatoconmoltaforza = \markup {\dynamic f \italic {marcato, con molta forza}}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))

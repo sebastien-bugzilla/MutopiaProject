@@ -27,7 +27,7 @@ musicFagottoIIMvtIII = \relative c {
 	ees'4->\mf d->
 	c8-. c-. g-. r
 % Bars 16 to 20
-	ees'4->_\crescendo d->
+	ees'4-> d->
 	c8-. c-. g-. r
 	c\f-. c-. c-. r
 	c16-. g'-. d-. g-. ees-. c'-. f,-. c'-. 
@@ -47,18 +47,18 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 31 to 35
 	R2
 	ees16-. g-. d-. g-. c,-. g'-. f32( ees d c)
-	f8-. r r4_\crescendo
+	f8-. r r4
 	aes16-. c-. g-. c-. f,-. c'-. bes32( aes g f)
 	ees4->\mf d->
 % Bars 36 to 40
 	c8-. c-. g-. r
-	ees'4->_\crescmarkup d->
+	ees'4-> d->
 	c8-. c-. g-. r
 	ees'16\f-. g-. d-. g-. c,-. c'-. r8
 	aes16-. c-. g-. c-. f,-. f'-. r8
 % Bars 41 to 45
 	ees,8-.\brack\mf r d-. r
-	g,8-.\p_\dimin r c-. r
+	g,8-.\p r c-. r
 	des-. r c-. r
 	f,8-. r bes-. r
 	R2*2
@@ -73,7 +73,7 @@ musicFagottoIIMvtIII = \relative c {
 	ees[\< ees,]-. f-. f'\!
 	ges,2\f~
 	ges(
-	fis2)_\dimin
+	fis2)
 % Bars 56 to 60
 	<<g2 {s4\> s\!}>>
 	c8-.\f c-. c-. r
@@ -93,7 +93,7 @@ musicFagottoIIMvtIII = \relative c {
 	f8->\fp f16 r g8->\fp g16 r
 	ees8->\fp ees16 r d8->\fp d16 r
 % Bars 71 to 75
-	r8 ees-.\pp r d_\brackM\crescmarkup-.
+	r8 ees-.\pp r d-.
 	c-. r bes-. r
 	ees-. r f-. r
 	g'8\brack\f( f ees d)
@@ -140,7 +140,7 @@ musicFagottoIIMvtIII = \relative c {
 		c( bes aes g f g aes bes)
 		ees,4->( d->)
 		g(\< f\!)
-		bes,8_\crescendo r c8. d16
+		bes,8 r c8. d16
 % Bars 111 to 115
 		d8 r ees8. f16
 		f8 r g8. a16
@@ -227,7 +227,7 @@ musicFagottoIIMvtIII = \relative c {
 	bes16-> r r8 r bes~
 	bes16-> r c8~ c16-> r fis,8~
 	fis16-> r r8 r a~
-	a16->_\dimin r r8 r g~
+	a16-> r r8 r g~
 % Bars 186 to 190
 	g16 r c8~ c16 r f,8~
 	f16 r r8 r g\pp~
@@ -257,7 +257,7 @@ musicFagottoIIMvtIII = \relative c {
 	bes8. bes16 bes8-. bes-.
 	bes2
 	d2(
-	ees)_\crescmarkup
+	ees)
 % Bars 211 to 215
 	f
 	g8[ aes] bes bes,
@@ -290,7 +290,7 @@ musicFagottoIIMvtIII = \relative c {
 	ees,4.) bes8
 % Bars 236 to 240
 	ees,2~
-	ees4~ ees8 r16 \section r %%%%%%%%%%%%%%%%%%%%
+	ees4~ ees8 r16 \section r 
 	c'8-.\f[ g'-.] d-. g-.
 	ees-._\brackM\dimmarkup g-. f16( ees d c
 	bes8-.)[ c-.]\brack\p d-. d-.
@@ -308,7 +308,7 @@ musicFagottoIIMvtIII = \relative c {
 	ees'4->\mf d->
 % Bars 251 to 255
 	c8-. c-. g-. r
-	ees'4->_\crescendo d->
+	ees'4-> d->
 	c8-. c-. g-. r
 	c\f-. c-. c-. r
 	c16-. g'-. d-. g-. ees-. c'-. f,-. c'-. 
@@ -328,18 +328,18 @@ musicFagottoIIMvtIII = \relative c {
 	c,\brack\pp r r4
 	R2
 	ees16-. g-. d-. g-. c,-. g'-. f32( ees d c)
-	f8-. r r4_\crescendo
+	f8-. r r4
 	aes16-. c-. g-. c-. f,-. c'-. bes32( aes g f)
 % Bars 271 to 275
 	ees4->\mf d->
 	c8-. c-. g-. r
-	ees'4->_\crescmarkup d->
+	ees'4-> d->
 	c8-. c-. g-. r
 	ees'16\f-. g-. d-. g-. c,-. c'-. r8
 % Bars 276 to 280
 	aes16-. c-. g-. c-. f,-. f'-. r8
 	ees,8-.\brack\mf r d-. r
-	g,8-.\p_\dimin r c-. r
+	g,8-.\p r c-. r
 	des-. r c-. r
 	f,8-. r bes-. r
 % Bars 281 to 285
@@ -355,7 +355,7 @@ musicFagottoIIMvtIII = \relative c {
 	ges,2\f~
 	ges(
 % Bars 291 to 295
-	fis2)_\dimin
+	fis2)
 	<<g2 {s4\> s\!}>>
 	c8-.\f c-. c-. r
 	c16-. g'-. d-. g-. ees-. g-. f32( ees d c)
@@ -374,7 +374,7 @@ musicFagottoIIMvtIII = \relative c {
 	f8->\fp f16 r g8->\fp g16 r
 % Bars 306 to 310
 	ees8->\fp ees16 r d8->\fp d16 r
-	r8 ees-.\pp r d_\brackM\crescmarkup-.
+	r8 ees-.\pp r d-.
 	c-. r bes-. r
 	ees-. r f-. r
 	g'8\brack\f( f ees d)
@@ -411,8 +411,8 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 336 to 340
 	R2
 	fis
-	g8[(_\plegato c] g c,)
-	g'([_\crescendo c] g c,)
+	g8[( c] g c,)
+	g'([ c] g c,)
 	g'([ c] g c,)
 % Bars 341 to 345
 	g'([ c] g c,)
@@ -441,7 +441,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 361 to 365
 	f c)
 	\tuplet 3/2 4 {des'8-. aes-. des-. f-. des-. f-. 
-	bes,-. ges-. bes-. des-. bes-. c-. 
+	bes,-. ges-. bes-. des!-. bes-. c-. 
 	des-. aes-. des-. des-. bes-. des-. 
 	ges-. ees-. ges-. ees-. c-. ees-. }
 % Bars 366 to 370
@@ -459,7 +459,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 376 to 380
 	c! r \tuplet 3/2 4 {c( b) c-.}
 	c r \tuplet 3/2 4 {c( b) c-.}
-	c8._\diminuendo c16 c4~
+	c8. c16 c4~
 	c2~
 	c8 c,,4\p c8
 % Bar 381

@@ -30,21 +30,21 @@
 \include "./03-Mvt3/m03_v05_music_OboeII_C.ily"
 \include "./03-Mvt3/m03_v07_music_ClarinettoI_C.ily"
 \include "./03-Mvt3/m03_v08_music_ClarinettoII_C.ily"
-%\include "./03-Mvt3/m03_v09_music_FagottoI.ily"
-%\include "./03-Mvt3/m03_v10_music_FagottoII.ily"
-%\include "./03-Mvt3/m03_v11_music_CornoI.ily"
-%\include "./03-Mvt3/m03_v12_music_CornoII.ily"
-%\include "./03-Mvt3/m03_v15_music_TrombeI.ily"
-%\include "./03-Mvt3/m03_v16_music_TrombeII.ily"
-%\include "./03-Mvt3/m03_v17_music_TrombonoI.ily"
-%\include "./03-Mvt3/m03_v18_music_TrombonoII.ily"
-%\include "./03-Mvt3/m03_v19_music_TrombonoIII.ily"
-%\include "./03-Mvt3/m03_v20_music_Timpani.ily"
-%\include "./03-Mvt3/m03_v21_music_ViolinoI.ily"
-%\include "./03-Mvt3/m03_v22_music_ViolinoII.ily"
-%\include "./03-Mvt3/m03_v23_music_Viola.ily"
-%\include "./03-Mvt3/m03_v24_music_Violoncello.ily"
-%\include "./03-Mvt3/m03_v25_music_Contrabasso.ily"
+\include "./03-Mvt3/m03_v09_music_FagottoI_C.ily"
+\include "./03-Mvt3/m03_v10_music_FagottoII_C.ily"
+\include "./03-Mvt3/m03_v11_music_CornoI.ily"
+\include "./03-Mvt3/m03_v12_music_CornoII.ily"
+\include "./03-Mvt3/m03_v15_music_TrombeI.ily"
+\include "./03-Mvt3/m03_v16_music_TrombeII.ily"
+\include "./03-Mvt3/m03_v17_music_TrombonoI.ily"
+\include "./03-Mvt3/m03_v18_music_TrombonoII.ily"
+\include "./03-Mvt3/m03_v19_music_TrombonoIII.ily"
+\include "./03-Mvt3/m03_v20_music_Timpani.ily"
+\include "./03-Mvt3/m03_v21_music_ViolinoI.ily"
+\include "./03-Mvt3/m03_v22_music_ViolinoII.ily"
+\include "./03-Mvt3/m03_v23_music_Viola.ily"
+\include "./03-Mvt3/m03_v24_music_Violoncello.ily"
+\include "./03-Mvt3/m03_v25_music_Contrabasso.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -89,10 +89,11 @@
 					\partCombine #'(0 . 10) \musicClarinettoIMvtIII \musicClarinettoIIMvtIII
 %					\musicClarinettoIIMvtIII 
 				}
-%				\new Staff {
-%					\timeMvtIII \nameStaffIVMvtIII
-%					\partCombine \musicFagottoIMvtIII \musicFagottoIIMvtIII
-%				}
+				\new Staff {
+					\timeMvtIII \nameStaffIVMvtIII
+					\partCombine #'(0 . 11) \musicFagottoIMvtIII \musicFagottoIIMvtIII
+%					\musicFagottoIIMvtIII
+				}
 			>>
 %			\new StaffGroup <<
 %				\new Staff {
