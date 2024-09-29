@@ -137,7 +137,7 @@ musicTrombeIIMvtIII = \relative c {
 		
 		
 		
-		g,8.->\mf[_\crescendo g16 g8] r
+		g,8.->\mf[ g16 g8] r
 % Bars 111 to 115
 		g8.[ g16 g8] r
 		g8.[ g16 g8] r
@@ -193,7 +193,7 @@ musicTrombeIIMvtIII = \relative c {
 	e8 r r4
 	e8 r c r
 	b8 r r4
-	b8_\dimin r r4
+	b8 r r4
 % Bars 186 to 190
 	b8 r cis r
 	d r r4
@@ -402,15 +402,15 @@ musicTrombeIIMvtIII = \relative c {
 	bes4.-> c8
 	d8. bes16 bes4(
 % Bars 371 to 375
-	g) bes~ 
-	bes aes
+	g) bes(
+	\tweak Accidental.stencil ##f bes) aes
 	g,2->
 	\tuplet 3/2 4 {ees'8-. ees-. ees-. ees-. ees-. ees-.
-	ees-. ees-. ees-. f'-. ees!-. e-. }
+	ees-. ees-. ees-. \partCombineApart f'-. ees!-. e-. \partCombineAutomatic }
 % Bars 376 to 380
 	e,2~
 	e
-	c'8._\diminuendo c16 c4~
+	c'8. c16 c4~
 	c2~
 	c8 e,4\p e8
 % Bar 381

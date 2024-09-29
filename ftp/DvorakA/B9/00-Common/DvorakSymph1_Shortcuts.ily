@@ -114,6 +114,7 @@ setBarNumber = \set Score.currentBarNumber = \etc
 
 markFermata = \mark \markup { \fermata }
 
+omitAccidental = \once \omit Staff.Accidental 
 
 %aIIXoffset = #(define-music-function
 %	(offset)
