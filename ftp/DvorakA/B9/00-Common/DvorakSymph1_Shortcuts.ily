@@ -52,6 +52,8 @@ ppcresc = \markup {\dynamic pp \italic {cresc.}}
 fmarcatoconmoltaforza = \markup {\dynamic f \italic {marcato, con molta forza}}
 tutti = \markup {Tutti}
 sempreff = \markup {\italic {sempre} \dynamic ff}
+solidiv = \markup {Soli div.}
+ffdim = \markup {\dynamic ff \italic {dim.}}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
