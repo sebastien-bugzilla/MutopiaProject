@@ -190,7 +190,7 @@ musicViolinoIIMvtIII = \relative c {
 	c4(\> bes8 a\!
 	g4 f8) r
 	<< { 
-		<f aes>2^\solidiv
+		<f aes>2^\brackM\solidiv
 % Bars 146 to 150
 		g
 		aes
