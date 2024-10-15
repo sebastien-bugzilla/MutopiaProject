@@ -6,7 +6,6 @@
 %###############################################################################
 timeMvtI = {
 	\time 2/2
-%	\tempo "Maestoso"
 }
 timeMvtII = {
 	\time 2/4
@@ -33,5 +32,4 @@ timeMvtIII = {
 }
 timeMvtIV = {
 	\time 2/4
-%	\tempo "Allegro animato"
 }

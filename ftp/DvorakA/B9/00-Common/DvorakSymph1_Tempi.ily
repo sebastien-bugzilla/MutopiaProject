@@ -38,6 +38,9 @@ tempiMvtIII = {
 }
 tempiMvtIV = {
 	\tempo "Allegro animato"
+	s2*760 s1.*11
+	% bar 772
+	\tempo "Più allegro"
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #

@@ -26,7 +26,6 @@ soli = \markup {Soli}
 pcresc = \markup {\dynamic p \italic {cresc.}}
 flegato = \markup {\dynamic f \italic {legato}}
 solo = \markup {Solo}
-pocoapococrescendo = \markup {\italic {"poco a poco crescendo"}}
 ppdolce = \markup {\dynamic pp \italic {dolce}}
 fmarcato = \markup {\dynamic f \italic {marcato}}
 pdolce = \markup {\dynamic p \italic {dolce}}
@@ -55,7 +54,8 @@ sempreff = \markup {\italic {sempre} \dynamic ff}
 solidiv = \markup {Soli div.}
 ffdim = \markup {\dynamic ff \italic {dim.}}
 mfespressivo = \markup {\dynamic mf \italic {espressivo}}
-
+pppocoapococresc = \markup {\dynamic pp \italic {poco a poco cresc.}}
+pcrescendo = \markup {\dynamic p \italic {crescendo}}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))

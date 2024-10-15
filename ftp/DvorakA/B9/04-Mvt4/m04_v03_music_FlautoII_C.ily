@@ -109,13 +109,13 @@ musicFlautoIIMvtIV = \relative c {
 	e4 d\<
 	<< g2~ {s4 s\!}>>
 	<< g2 {s4 s\>}>>
-	g4->\! fis->
+	g4\! fis
 	g8 r r4
 % Bars 106 to 110
 	R2*3
 	
 	
-	a2->\mf_\crescendo
+	a2->\mf
 	g->
 % Bars 111 to 115
 	a8.-> b16-. c8-.\< b-.
@@ -149,7 +149,7 @@ musicFlautoIIMvtIV = \relative c {
 	r a-.\pp
 % Bars 136 to 140
 	r a-.
-	r f-._\pppocoapococresc 
+	r f-.
 	r f-.
 	r b-.
 	r b-.
@@ -180,7 +180,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 161 to 165
 	a8 r r4
 	a8 r r4
-	r8 g_\pcrescendo r b
+	r8 g r b
 	r c r d
 	r e r b\<
 % Bars 166 to 170
@@ -207,7 +207,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	
 	r8. d'16([\f cis8.) d16(]
-	cis8)_\diminuendo r r4
+	cis8) r r4
 	r8. e,16[(\brack\mf a8.) e16(]
 % Bars 191 to 195
 	a8) r r4
@@ -224,7 +224,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 211 to 215
 	b'8\f[ r16 c c8 r16 d]
 	d8 r r4
-	b8[_\dimin r16 c c8 r16 d]
+	b8[ r16 c c8 r16 d]
 	d8 r r4
 	a8[ r16 b\p b8 r16 c]
 % Bars 216 to 220
@@ -395,7 +395,7 @@ musicFlautoIIMvtIV = \relative c {
 	ais\> fis\!~
 	fis8 r r4
 	R2
-	bes4_\crescendo c~
+	bes4 c~
 % Bars 401 to 405
 	c bes~
 	bes2
@@ -504,13 +504,13 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 501 to 505
 	<< g2~ {s4 s\!}>>
 	<< g2 {s4 s\> }>>
-	g4->\! fis->
+	g4\! fis
 	g8 r r4
 	R2*3
 % Bars 506 to 510
 	
 	
-	a2->\mf_\crescendo
+	a2->\mf
 	g->
 	a8.-> b16-. c8-.\< b-.
 % Bars 511 to 515
@@ -534,7 +534,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 526 to 530
 	bes4 r8. bes16
 	bes4 r
-	r r8. b!16_\diminuendo
+	r r8. b!16
 	b4 r
 	r4 r8. b16
 % Bars 531 to 535
@@ -600,7 +600,7 @@ musicFlautoIIMvtIV = \relative c {
 	g8 r r4
 	g8 r r4
 	g8 r r4
-	r8 f_\crescendo-. r a-.
+	r8 f-. r a-.
 	r bes-. r c-.
 % Bars 596 to 600
 	r d-. r a-.
@@ -634,9 +634,9 @@ musicFlautoIIMvtIV = \relative c {
 	g4.. g16
 % Bars 621 to 625
 	g8 r r8. f16
-	\afterGrace f2(\startTrillSpan {e16 f)\stopTrillSpan}
+	\afterGrace f2_(\startTrillSpan {e16 f)\stopTrillSpan}
 	g8 r r8. bes16
-	\afterGrace bes2(\startTrillSpan {a16 bes)\stopTrillSpan}
+	\afterGrace bes2_(\startTrillSpan {a16 bes)\stopTrillSpan}
 	bes,8 r r4
 % Bars 626 to 630
 	R2*8
@@ -662,7 +662,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 656 to 660
 	
 	a'8.\f bes16 bes8. c16
-	c8_\diminuendo r r4
+	c8 r r4
 	a8. bes16 bes8. c16
 	c8 r r4
 % Bars 661 to 665
@@ -755,9 +755,9 @@ musicFlautoIIMvtIV = \relative c {
 	b-> cis->\!
 	<< d2\fz-> {s8\> s s s\!}>>
 	b2~
-	b4 cis->\<
+	b4 cis\<
 % Bars 741 to 745
-	dis-> eis->\!
+	dis eis\!
 	fis2\fz->
 	gis8 r r4
 	R2*17
