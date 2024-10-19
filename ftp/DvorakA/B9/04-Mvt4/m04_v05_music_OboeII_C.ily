@@ -34,7 +34,7 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
-	R2\fermata
+	R2_\fermata
 	R2*4
 	
 	
@@ -80,7 +80,7 @@ musicOboeIIMvtIV = \relative c {
 	cis'~
 % Bars 76 to 80
 	cis
-	cis,4(_\ppocoapococrescendo e
+	cis,4( e
 	d cis)
 	fis( e
 	cis a')
@@ -152,7 +152,7 @@ musicOboeIIMvtIV = \relative c {
 	f,2\pp~
 % Bars 136 to 140
 	f
-	d_\pocoapococresc~
+	d~
 	d
 	b~
 	b
@@ -183,7 +183,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 161 to 165
 	c8 r r4
 	c8 r r4 
-	r8 g_\pcrescendo r b
+	r8 g r b
 	r c r d
 	r e r b\<
 % Bars 166 to 170
@@ -214,18 +214,30 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 	
-	R2*20
-	
+	\mmrPos #-6 R2
+	\mmrPos #-6 R
 % Bars 201 to 205
-	
+	\mmrPos #-6 R
+	R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 206 to 210
-	
+	R
+	R
+	R
+	R
+	R
 % Bars 211 to 215
-	
+	R
+	R
+	R
+	R
+	R
 % Bars 216 to 220
-	
-	
-	
+	R
+	R
+	R
 	c,8.\f e16 a4~
 	a g->
 % Bars 221 to 225
@@ -416,7 +428,7 @@ musicOboeIIMvtIV = \relative c {
 	d~
 % Bars 381 to 385
 	d4\< ees~
-	ees8\! f-. ges4
+	ees8\! f ges4
 	d2\pp~
 	d~
 	d4\< ees~
@@ -432,7 +444,7 @@ musicOboeIIMvtIV = \relative c {
 	fis2
 	cis
 	cis~
-	cis4.._\crescendo dis16
+	cis4.. dis16
 	f!4( ees
 % Bars 401 to 405
 	des bes')~
@@ -459,11 +471,11 @@ musicOboeIIMvtIV = \relative c {
 	g2~->
 	g
 % Bars 421 to 425
-	b->~
+	\noteShift #1.5 b->~
 	b
-	d\brack\fz->~
+	\noteShift #1.5 d\brack\fz->~
 	d
-	f\brack\fz->~
+	\noteShift #1.5 f\brack\fz->~
 % Bars 426 to 430
 	f
 	f,(
@@ -597,14 +609,14 @@ musicOboeIIMvtIV = \relative c {
 	c->\fp~
 % Bars 541 to 545
 	c
-	c->\fp~
+	c\fp~
 	c
-	c->\fp~
+	c\fp~
 	c
 % Bars 546 to 550
-	c->\fp~
+	c\fp~
 	c
-	c->\fp~
+	c\fp~
 	c
 	c->~
 % Bars 551 to 555
@@ -708,18 +720,30 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 	
-	R2*20
+	\mmrPos #-7 R2
 % Bars 646 to 650
-	
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
 % Bars 651 to 655
-	
+	\mmrPos #-7 R
+	\mmrPos #-6 R
+	R
+	R
+	R
 % Bars 656 to 660
-	
+	R
+	R
+	R
+	R
+	R
 % Bars 661 to 665
-	
-	
-	
-	
+	R
+	R
+	\mmrPos #-6 R
+	R
 	bes8.\f d16 g4~
 % Bars 666 to 670
 	g fis->
@@ -748,11 +772,11 @@ musicOboeIIMvtIV = \relative c {
 % Bars 686 to 690
 	R2*2
 	
-	r4 r8. d,16(\brack\p
-	\tuplet 3/2 4 {e8 d e f g f
-	g f g a b a
+	r4 r8. \stemUp \omitFlag d,16\brack\p
+	\tuplet 3/2 4 {\omitBeam \omitTupletNumber e8 d e \omitTupletNumber \omitBeam f g f
+	\omitTupletNumber \omitBeam g f g \stemDown a b a
 % Bars 691 to 695
-	c a c} e8. f16)
+	c a c} e8. f16
 	b,4. a8
 	g8 r r4
 	R2*2
@@ -760,7 +784,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 696 to 700
 	r4 r8. d16\p
 	d2~
-	d_\crescendo
+	d
 	g->~
 	g
 % Bars 701 to 705
@@ -821,7 +845,7 @@ musicOboeIIMvtIV = \relative c {
 	cis4 dis->
 	e( dis)
 	cis(\< a')\!
-	a2_\crescendo~
+	a2~
 	a~
 % Bars 751 to 755
 	<< a~ {s8\< s s s\!}>>
@@ -890,8 +914,8 @@ musicOboeIIMvtIV = \relative c {
 	c( e c)
 	e( g e)
 % Bars 806 to 810
-	c( e c)
-	e( g e)
+	\omitTupletNumber \stemUp c \once \stemDown e c
+	\omitTupletNumber e \once \stemDown g e
 	c( e c)
 	e( g e)
 	c( e c)}

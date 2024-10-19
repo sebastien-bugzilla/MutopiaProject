@@ -27,8 +27,8 @@
 \include "./04-Mvt4/m04_v01_music_Piccolo.ily"
 \include "./04-Mvt4/m04_v02_music_FlautoI_C.ily"
 \include "./04-Mvt4/m04_v03_music_FlautoII_C.ily"
-\include "./04-Mvt4/m04_v04_music_OboeI.ily"
-\include "./04-Mvt4/m04_v05_music_OboeII.ily"
+\include "./04-Mvt4/m04_v04_music_OboeI_C.ily"
+\include "./04-Mvt4/m04_v05_music_OboeII_C.ily"
 \include "./04-Mvt4/m04_v07_music_ClarinettoI.ily"
 \include "./04-Mvt4/m04_v08_music_ClarinettoII.ily"
 \include "./04-Mvt4/m04_v09_music_FagottoI.ily"
@@ -66,7 +66,7 @@
 	}
 	\score {
 		<<
-%			\new StaffGroup <<
+%%			\new StaffGroup <<
 				\new GrandStaff <<
 					\new Staff <<
 %						\new Voice {
@@ -85,10 +85,11 @@
 %						\musicFlautoIIMvtIV
 					}
 				>>
-%				\new Staff {
-%					\timeMvtIV \nameStaffIIIMvtIV
-%					\partCombine \musicOboeIMvtIV \musicOboeIIMvtIV
-%				}
+				\new Staff {
+					\timeMvtIV \nameStaffIIIMvtIV
+					\partCombine #'(0 . 10) \musicOboeIMvtIV \musicOboeIIMvtIV
+%					\musicOboeIIMvtIV
+				}
 %				\new Staff {
 %					\timeMvtIV \nameStaffIVMvtIV
 %					\partCombine \musicClarinettoIMvtIV \musicClarinettoIIMvtIV

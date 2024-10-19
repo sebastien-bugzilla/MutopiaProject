@@ -56,6 +56,10 @@ ffdim = \markup {\dynamic ff \italic {dim.}}
 mfespressivo = \markup {\dynamic mf \italic {espressivo}}
 pppocoapococresc = \markup {\dynamic pp \italic {poco a poco cresc.}}
 pcrescendo = \markup {\dynamic p \italic {crescendo}}
+ppocoapococrescendo = \markup {\dynamic p \italic {poco a poco crescendo}}
+mfcrescendo = \markup {\dynamic mf \italic {crescendo}}
+fzcrescendo = \markup {\dynamic fz \italic {crescendo}}
+
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
@@ -121,6 +125,19 @@ setBarNumber = \set Score.currentBarNumber = \etc
 markFermata = \mark \markup { \fermata }
 
 omitAccidental = \once \omit Staff.Accidental 
+
+stemOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \offset length #offset Stem
+	#}
+)
+
+omitTupletNumber = \once \omit Voice.TupletNumber
+
+
+
 
 %aIIXoffset = #(define-music-function
 %	(offset)
@@ -345,14 +362,6 @@ omitAccidental = \once \omit Staff.Accidental
 %}
 
 
-%stemOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \offset length #offset Stem
-%	#}
-%)
-
 %textInSlur = {
 %	%\once \override TextScript.outside-staff-priority = 0
 %	\once \override TextScript.slur-padding = #0
@@ -410,9 +419,6 @@ omitAccidental = \once \omit Staff.Accidental
 %)
 
 %tupletAvoidSlur = \once \override TupletNumber.avoid-slur = #'ignore
-
-%omitTupletNumber = \once \omit Voice.TupletNumber
-
 
 %tremoloPosition = #(define-music-function
 %	(position)
