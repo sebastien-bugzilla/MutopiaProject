@@ -59,7 +59,7 @@ pcrescendo = \markup {\dynamic p \italic {crescendo}}
 ppocoapococrescendo = \markup {\dynamic p \italic {poco a poco crescendo}}
 mfcrescendo = \markup {\dynamic mf \italic {crescendo}}
 fzcrescendo = \markup {\dynamic fz \italic {crescendo}}
-
+fconespressione = \markup {\dynamic f \italic {con espressione}}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))

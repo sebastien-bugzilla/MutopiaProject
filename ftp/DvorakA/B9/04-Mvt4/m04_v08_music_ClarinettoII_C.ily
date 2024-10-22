@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicClarinettoIMvtIV = \relative c {
+musicClarinettoIIMvtIV = \relative c {
 	\clef treble
 	\key d \major
 	\transposition bes
@@ -21,37 +21,48 @@ musicClarinettoIMvtIV = \relative c {
 	b4\fermata r
 	R2
 % Bars 11 to 15
-	<< e'2\fermata {s8\> s s s\!}>>
-	R2*20
+	<< a'2\fermata {s8\> s s s\!}>>
+	d4(\brack\p a
+	d,2)
+	d'4( a
+	d,2)
 % Bars 16 to 20
-	
+	d'4( a
+	d,2)
+	d'4( a~
+	a8) r r4
+	d4( a
 % Bars 21 to 25
-	
+	d,2)
+	d'4( a
+	d,2)
+	fis'4( cis
+	fis,2)
 % Bars 26 to 30
-	
+	fis'4( cis
+	fis,2)
+	fis'4( cis_\crescmarkup
+	fis,2)
+	fis'4( cis
 % Bars 31 to 35
-	
-	R2\fermata
+	fis,2)~
+	fis8 r r4\fermata
 	R2*4
 	
 	
 % Bars 36 to 40
 	
-	g4( a
-	g fis~\<
-	fis)\> g(\!
-	a g)
+	R2*9
+	
+	
+	
 % Bars 41 to 45
-	g( b_\crescendo
-	a g~
-	g) a(
-	b a)
-	a8 r r4
+	
 % Bars 46 to 50
 	R2*6
 % Bars 51 to 55
 	
-	r4 r32 d,,(\< e fis g a b cis\!
+	r4 r32 d(\< e fis g a b cis\!
 	d4)\f e8.-> a,16
 	a2
 	d4 e8.-> a16
@@ -77,20 +88,20 @@ musicClarinettoIMvtIV = \relative c {
 	ges'4.. ges,16
 	ges2
 	bes'4.. bes,16
-	bes2
+	bes,2
 	ees'4.. ees,16
 % Bars 76 to 80
 	ees2
-	dis8.\brack\p_\pocoapococrescendo dis,16 dis4
+	dis'8.\brack\p_\pocoapococrescendo dis,16 dis4
 	fis'!8. fis,!16 fis4
-	b'8. b,16 b4
+	b8. b,16 b4
 	dis'8. dis,16 dis4
 % Bars 81 to 85
-	e8. e,16 e4
-	a'8. a,16 a4
-	c'8. c,16 c4
 	e'8. e,16 e4
-	r4 r8. g,16\f
+	a'8. a,16 a4
+	c8. c,16 c4
+	e'8. e,16 e4
+	r4 r8. g16\f
 % Bars 86 to 90
 	g4( g,8) r
 	r4 r8. g'16
@@ -100,72 +111,72 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 91 to 95
 	
 	r4 r8 a'\p
-	b4( cis\<
-	d e)\!
-	d2~\>
+	<< a2~ {s4 s\<}>>
+	a4 b\!
+	a(\> b
 % Bars 96 to 100
-	d4\! cis
+	d4\! cis)
 	d8 r r4
 	R2*2
 	
 	r4 r8. cis16\brack\p
 % Bars 101 to 105
-	cis4-> e->~\<
+	cis,4-> e->~\<
 	e fis->\!
 	<< a2 {s4 s\> }>>
 	e2\!
-	cis8 r r4
+	a8 r r4
 % Bars 106 to 110
 	R2*3
 	
 	
-	b8.->_\mfcrescendo cis16-. d8-. cis-.
+	b,8.-> cis16-. d8-. cis-.
 	d8.-> e16-. fis8-. cis-.
 % Bars 111 to 115
 	d8.-> e16-. fis8-.\< e-.
 	fis8.->\! g16-. a8-. fis-.
-	g4->\f d->
-	d4.. d16
-	d4-> fis->
+	g4->\f a->
+	b4.. a16
+	a4-> d->
 % Bars 116 to 120
-	g4..-> g16
-	g4..-> e16
-	e4..-> fis16
-	fis2\ff~
-	fis4.. g16
+	d4..-> e16
+	e4..-> cis16
+	cis4..-> d16
+	d2\ff~
+	d4.. d16
 % Bars 121 to 125
-	g2~
-	g4.. e16
-	e4 fis8. d16
-	d2
-	e4 fis8. d16
+	d2~
+	d4.. cis16
+	cis4 d8. a16
+	a2
+	cis4 d8. a16
 % Bars 126 to 130
-	d4.. e16
-	e4 r8. e16
-	e4 r
-	r_\diminuendo r8. cis!16
-	cis4 r
+	a4.. c16
+	c4 r8. c16
+	c4 r
+	r_\diminuendo r8. g16
+	g4 r
 % Bars 131 to 135
-	r4 r8. cis!16
-	cis4 r
-	r r8. b16
-	b4 r
-	r d-.\pp
+	r4 r8. g16
+	g4 r
+	r r8. a16
+	a4 r
+	r g-.\pp
 % Bars 136 to 140
-	r d-.
-	r b-._\pppocoapococresc
-	r b-.
-	r e-.
-	r e-.
+	r g-.
+	r g-.
+	r g-.
+	r cis-.
+	r cis-.
 % Bars 141 to 145
-	r cis-.
-	r cis-.
-	r8 fis r fis\<
-	r d\! r d
-	r a'\< r a
+	r a-.
+	r a-.
+	r8 cis r cis\<
+	r a\! r a
+	r fis'\< r fis
 % Bars 146 to 150
-	r fis r fis\!
-	\tuplet 3/2 4 {r8 b, fis'~ fis b, fis'~
+	r d r d\!
+	\tuplet 3/2 4 {r8 b fis'~ fis b, fis'~
 	fis b, fis'~ } fis b,
 	\tuplet 3/2 4 {r d,\f a'~ a d, a'~
 	a d, a'~} a d,
@@ -179,26 +190,26 @@ musicClarinettoIMvtIV = \relative c {
 	cis~
 	cis~
 	cis
-	b8 r r4
-	b8 r r4
+	b,~
+	b~
 % Bars 161 to 165
-	b8 r r4
-	b8 r r4
-	r8 a\brack\p_\crescendo r a
+	b~
+	b
+	r8 a\brack\p r a
 	r a r a
 	r a r a\<
 % Bars 166 to 170
 	r a\! r a
-	a8->\f a16-. r a8-> a16-. r
-	a8-> a16-. r d8-> d16-. r
-	d8-> d16-. r cis8-> cis16-. r
-	cis8-> cis16-. r cis8-> cis16-. r
-% Bars 171 to 175
-	d8-> d16-. r cis8-> cis16-. r
+	fis'8->\f fis16-. r e8-> e16-. r
+	e8-> e16-. r a8-> a16-. r
+	g8-> g16-. r a8-> a16-. r
 	a8-> a16-. r a8-> a16-. r
-	d8-> d16-. r d8-> d16-. r
-	cis8-> cis16-. r cis8-> cis16-. r
-	d8-. r r8. e16
+% Bars 171 to 175
+	a8-> a16-. r g8-> g16-. r
+	fis8-> fis16-. r e8-> e16-. r
+	a8-> a16-. r g8-> g16-. r
+	a8-> a16-. r a8-> a16-. r
+	a8-. r r8. e'16
 % Bars 176 to 180
 	\afterGrace e2\startTrillSpan {dis16( e)\stopTrillSpan}
 	fis8-. r r8. a16
@@ -210,57 +221,57 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 186 to 190
 	
 	
-	r8. gis'16[(\f fis8.) gis16](
-	fis8)_\diminuendo r r4
-	r8. e16[(\mf dis8.) e16](
-% Bars 191 to 195
+	r8. e'16[(\f dis8.) e16](
 	dis8) r r4
-	r8. cis16[(\p b8.) cis16](
+	r8. fis,16[(\mf b8.) fis16](
+% Bars 191 to 195
 	b8) r r4
-	r8. gis16[(\brack\pp fis8.) gis16](
+	r8. gis16[(\p fis8.) gis16](
 	fis8) r r4
+	r8. e16[(\brack\pp dis8.) e16](
+	dis8) r r4
 % Bars 196 to 200
 	R2*2
 	
-	R2
-	a,\brack\pp(
-	cis)
+	fis,4(\brack\pp\< << eis) {s8\> s\!}>>
+	r8 fis4 fis8
+	r fis4 fis8
 % Bars 201 to 205
-	d(
-	b)
-	fis'4( cis)
-	d cis
-	cis fis
+	r fis4 fis8
+	r eis4 eis8
+	cis'4( a)
+	b gis
+	a cis
 % Bars 206 to 210
-	gis2~_\crescendo
-	gis8 r r4
+	dis2(
+	cis8) r r4
 	R2*3
 	
 	
 % Bars 211 to 215
-	e'8[\f r16 fis fis8 r16 g]
-	g8 r r4
-	e8[_\dimin r16 fis fis8 r16 g]
-	g8 r r4
-	d8[ r16 e\p e8 r16 f]
+	cis'8[\f r16 d d8 r16 e]
+	e8 r r4
+	cis8[ r16 d d8 r16 e]
+	e8 r r4
+	b8[ r16 cis\p cis8 r16 d]
 % Bars 216 to 220
-	f8 r r4
-	d8[ r16 e\brack\pp e8 r16 f]
-	f8 r r4
-	fis!8.\f b,16 d4~
-	d cis->
+	d8 r r4
+	b8[ r16 cis\brack\pp cis8 r16 d]
+	d8 r r4
+	d8.\f fis,16 b4~
+	b a->
 % Bars 221 to 225
-	d-> b->
-	a-> gis->
-	a4..-> b16
-	gis4.. a16
-	a8. b16 gis8. a16
+	b-> gis->
+	fis-> eis->
+	fis4..-> gis16
+	eis4.. fis16
+	fis8. fis16 eis8. fis16
 % Bars 226 to 230
-	a8-.[ b-. cis-. dis-.]
-	e4.. fis16
-	dis4.. e16
-	e8. fis16 dis8. e16
-	e8([\< eis fis fisis])\!
+	fis8-.[ fis-. a-. a-.]
+	cis4.. cis16
+	bis4.. cis16
+	cis8. cis16 bis8. cis16
+	<< cis2 {s8\< s s s\!}>>
 % Bars 231 to 235
 	gis2\fp~
 	gis
@@ -274,28 +285,28 @@ musicClarinettoIMvtIV = \relative c {
 	fis'4->\f fis,->
 	R2
 % Bars 241 to 245
-	fis'4-> fis,->
+	fis'4-> fis,-> 
 	R2
-	cis'4-> cis->
-	d4..-> d16
-	cis4-> cis->
+	fis'4-> fis->
+	fis4..-> fis16
+	fis4-> fis->
 % Bars 246 to 250
-	b4..-> b16
-	a8[( gis fis8. d'16)]
-	d4( cis)
-	cis2~
-	cis
+	fis4..-> fis16
+	fis2->
+	gis
+	fis2~
+	fis4 e
 % Bars 251 to 255
-	d4->\ff a'
-	a4.. b16
-	b4 a
-	a4.. b16
-	b4-> fis->
+	a4->\ff d
+	fis4.. g16
+	g4 fis
+	fis4.. g16
+	g4-> dis->
 % Bars 256 to 260
-	fis4.. g16
-	g4-> fis->
-	fis4.. g16
-	g8\brack\fp r r4
+	dis4.. e16
+	e4-> dis->
+	dis4.. e16
+	e8\brack\fp r r4
 	R2*11
 % Bars 261 to 265
 	
@@ -311,16 +322,16 @@ musicClarinettoIMvtIV = \relative c {
 	a4( gis8) r
 	gis([ fis eis) r16 d']-.
 	d4( cis8) r
-	e,4(\ff fis8.) e16
-	e4( d8) r
+	cis,2\ff
+	a
 % Bars 281 to 285
-	e4( fis8.) e16-.
-	e4 e
-	e2~
-	e~
-	e~
+	a
+	a4 gis
+	a4( b8.) a16
+	a4( b8.) a16
+	a4( gis8.) fis16
 % Bars 286 to 290
-	e4 e16(\< eis fis gis)\!
+	fis4 e16(\< eis fis gis)\!
 	e2
 	e4 e
 	e2
@@ -330,21 +341,21 @@ musicClarinettoIMvtIV = \relative c {
 	e4 e 
 	e2
 	e4 e
-	e2\p~
+	\once \stemUp e2\p~
 % Bars 296 to 300
-	e4 fis(
-	gis\< ais)
-	b2\!
-	eis,4..\p cis16
-	cis4.. gis16
-% Bars 301 to 305
+	e
+	e\<
+	b'2\!
+	cis!4..\p gis16
 	gis4.. eis16
-	eis4 gis
-	fis4.. gis16
-	gis4.. d'!16
-	d2(~\brack\pp
+% Bars 301 to 305
+	eis4.. cis16
+	cis4 dis
+	dis4.. e16
+	e4.. b'16
+	d2~\brack\pp
 % Bars 306 to 310
-	d4 e)
+	d
 	R2*12 
 % Bars 311 to 315
 	
@@ -359,7 +370,7 @@ musicClarinettoIMvtIV = \relative c {
 	d
 	R2*2
 	
-	r4 a,,4\brack\mf
+	r4 a,4\brack\mf
 % Bars 326 to 330
 	a'4..->_\fzcrescendo a,16
 	a8 r r4
@@ -367,35 +378,35 @@ musicClarinettoIMvtIV = \relative c {
 	r4 d
 	d'4..\brack\fz d,16
 % Bars 331 to 335
-	g'2\f~
+	g2\f~
 	g~
 	g~
 	g
-	d4-> cis->
+	g
 % Bars 336 to 340
-	cis4..-> d16
-	cis4-> b->
-	b4..-> cis16
-	ais8 r r4
+	g4..-> g16
+	g4-> g->
+	g4..-> g16
+	fis8 r r4
 	R2*3 
 % Bars 341 to 345
 	
 	
-	c2~
-	c~
-	c~
+	R2*5
+	
+	
 % Bars 346 to 350
-	c
-	b8 r r4
+	
+	
 	R2*3
 	
 	
 % Bars 351 to 355
-	r8 gis'\brack\f r gis
+	r8 gis\brack\f r gis
 	r gis r gis
-	r f r f
-	r f r f
-	d' r r4
+	r b r b
+	r b r b
+	d r r4
 % Bars 356 to 360
 	r8. d16 d8 r
 	d8 r r4
@@ -407,18 +418,18 @@ musicClarinettoIMvtIV = \relative c {
 	r8. c16 c8 r
 	c2~
 	c
-	c4 b8-._\brackM\crescmarkup a-.
+	d4. c8_\brackM\crescmarkup
 % Bars 366 to 370
-	g-. f-. e-. d-.
-	ees2\ff~
-	ees
-	f~
-	f
+	b-. a-. g-. f-.
+	c'4\ff b8. c16
+	c2
+	cis!4 bis8. cis16
+	cis!2
 % Bars 371 to 375
-	d
-	dis
-	e
-	f
+	c~
+	c~
+	c~
+	c
 	g8\brack\f r r8. g16-.
 % Bars 376 to 380
 	g4( g,8) r
@@ -433,26 +444,26 @@ musicClarinettoIMvtIV = \relative c {
 	bes2\pp~
 	bes4\< aes(
 % Bars 386 to 390
-	des c)\!
+	des c)\! 
 	R2*4
 	
 	
 	
 % Bars 391 to 395
-	c4\brack\p f,
-	f4.( g8)\<
-	aes(\! g\> f des')\!
-	des4( c8) r
+	R2*4
+	
+	
+	
 	R2*5
 % Bars 396 to 400
 	
 	
 	
 	
-	ees,4_\crescendo g~
+	c4 d~
 % Bars 401 to 405
-	g ees~
-	ees2
+	d c~
+	c2
 	cis!4..\f cis16
 	cis4.. cis16
 	cis4.. cis16
@@ -463,7 +474,7 @@ musicClarinettoIMvtIV = \relative c {
 	cis4.. cis16
 	cis4.. a16\brack\ff
 % Bars 411 to 415
-	fis'2~
+	fis2~
 	fis4.. e16
 	d2~
 	d4.. d'16
@@ -472,49 +483,49 @@ musicClarinettoIMvtIV = \relative c {
 	b4.. a16
 	g2~
 	g4.. fis16
-	e8-> r r4
+	a8-> r r4
 	R2*7
 % Bars 421 to 425
 	
 % Bars 426 to 430
 	
-	g,2(
+	e2(
+	fis)
+	g(
 	a)
+% Bars 431 to 435
 	b(
 	cis)
-% Bars 431 to 435
 	d(
 	e)
-	fis(
-	g)
-	fis4-> d->
+	d4-> a->
 % Bars 436 to 440
-	d4..-> e16
-	fis4-> d->
-	d4..-> e16
-	fis8 e d[ r16 b']
+	b4..-> cis16
+	d4-> a->
+	b4..-> cis16
+	a4.. d16
 	b2->
 % Bars 441 to 445
 	cis->
 	d->
-	b8 a g a
-	b r r4
-	b,8 a g a
+	e8 e e e
+	d r r4
+	e,8 e e e
 % Bars 446 to 450
-	b r r4
+	g r r4
 	R2*11
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
 	
-	g2->\brack\f~
-	g
-	e'\fz~
+	e2->\brack\f~
+	e
+	a\fz~
 % Bars 461 to 465
-	e
-	e\fz~
-	e
+	a
+	cis\fz~
+	cis
 	a,\brack\ff~
 	a~
 % Bars 466 to 470
@@ -530,14 +541,14 @@ musicClarinettoIMvtIV = \relative c {
 	g2~
 	g
 % Bars 476 to 480
-	e'\ff~
-	e~
-	e4 g,8.( fis16
+	c'\ff~
+	c~
+	c4 g8.( fis16
 	g8) r r4\fermata
-	ees'2~
+	c2~
 % Bars 481 to 485
-	ees~
-	ees4 g,8.( fis16
+	c~
+	c4 g8.( fis16
 	g8) r r4\fermata
 	r r8. g16\f
 	g4( g,8) r
@@ -549,56 +560,56 @@ musicClarinettoIMvtIV = \relative c {
 	
 % Bars 491 to 495
 	r4 r8 a'\p
-	b4( cis\<
-	d e)\!
-	d2\>~
-	d4\! cis
+	<< a2~ {s4 s\<}>>
+	a b\!
+	a(\> b
+	d4\! cis)
 % Bars 496 to 500
 	d8 r r4
 	R2*2
 	
 	r4 r8. cis16\brack\p
-	cis4-> e->~\<
+	cis,4-> e->~\<
 % Bars 501 to 505
 	e fis->\!
 	<< a2 {s4 s\> }>>
 	e2\!
-	cis8 r r4
+	a8 r r4
 	R2*3
 % Bars 506 to 510
 	
 	
-	b8.->_\mfcrescendo cis16-. d8-. cis-.
+	b,8.-> cis16-. d8-. cis-.
 	d8.-> e16-. fis8-. cis-.
 	d8.-> e16-. fis8-.\< e-.
 % Bars 511 to 515
 	fis8.->\! g16-. a8-. fis-.
-	g4->\f d->
-	d4..-> d16
-	d4-> fis->
-	g4..-> g16
+	g4->\f a->
+	b4..-> a16
+	a4-> d->
+	d4..-> e16
 % Bars 516 to 520
-	g4..-> e16
-	e4..-> fis16
-	fis2\ff~
-	fis4.. g16
-	g2~
+	e4..-> cis16
+	cis4..-> d16
+	d2\ff~
+	d4.. d16
+	d2~
 % Bars 521 to 525
-	g4.. e16
-	e4 fis8. d16
-	d2
-	e4 fis8. d16
-	d4.. e16
+	d4.. cis16
+	cis4 d8. a16
+	a2
+	cis4 d8. a16
+	a4.. c16
 % Bars 526 to 530
-	e4 r8. e16
-	e4 r
-	r_\diminuendo r8. cis!16
-	cis4 r
-	r r8. cis!16
+	c4 r8. c16
+	c4 r
+	r_\diminuendo r8. g16
+	g4 r
+	r r8. g16
 % Bars 531 to 535
-	cis4 r
-	r r8. b16
-	b4 r
+	g4 r
+	r r8. a16
+	a4 r
 	d\p ees8. a,16
 	a2
 % Bars 536 to 540
@@ -618,24 +629,24 @@ musicClarinettoIMvtIV = \relative c {
 	ees4 d8. c16
 	c4 bes8. a16
 	a4( bes8) r
-	e4 f8. d16
+	b2->~
 % Bars 551 to 555
-	d2
-	a'4( f
-	e d)
-	e f8. d16
-	d2
+	b2
+	d->~
+	d
+	gis,~
+	gis
 % Bars 556 to 560
-	g4( ees
-	d c)
+	g!->~
+	g
 	R2*2
 	
-	f,,2\brack\fp~
+	f,2\brack\fp~
 % Bars 561 to 565
 	f
-	c''\brack\fp~
+	c'\brack\fp~
 	c
-	c,\brack\fp~
+	c\brack\fp~
 	c
 % Bars 566 to 570
 	g'\fp~
@@ -652,35 +663,35 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 576 to 580
 	d4 d8. b16
 	b2
-	d4 c8. c16
-	c2
-	d4 c8. c16
+	b4 g8. a16
+	a2
+	b4 g8. a16
 % Bars 581 to 585
-	c2
-	c8 r d r
-	r8. c16 c8-> r
-	c8 r d r
-	r8. c16 c4
+	a2
+	g8 r b r
+	r8. a16 a8-> r
+	g8 r b r
+	r8. a16 a4
 % Bars 586 to 590
-	e8 r c r
-	r8. d16 d4->
-	e8 r c r
-	r8. d16 d4->
-	a8\p r r4
+	c8 r a r
+	r8. bes16 bes4->
+	c8 r a r
+	r8. bes16 bes4->
+	a,2\p~
 % Bars 591 to 595
-	a8 r r4
-	a8 r r4
-	a8 r r4
+	a~
+	a~
+	a
 	r8_\crescendo g-. r g-.
 	r g-. r g-.
 % Bars 596 to 600
 	r g-. r g-.
-	g8->\brack\f g16-. r g8-> g16-. r
-	g8-> g16-. r c8-> c16-. r
-	c8-> c16-. r b8-> b16-. r
-	b8-> b16-. r b8-> b16-. r
+	e'8->\brack\f e16-. r d8-> d16-. r
+	d8-> d16-. r g8-> g16-. r
+	f8-> f16-. r g8-> g16-. r
+	g8-> g16-. r g8-> g16-. r
 % Bars 601 to 605
-	f'2\fz->~
+	f2\fz->~
 	f
 	g->\fz~
 	g
@@ -694,12 +705,12 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 611 to 615
 	e->
 	b4.. a'16
-	f4..\ff e16
-	e!4.. ees16
-	ees4.. d16
+	a4..\ff aes16
+	aes4.. g16
+	g4.. fis16
 % Bars 616 to 620
-	d4.. cis!16
-	cis4 fis8. cis16
+	fis4.. f16
+	eis4 fis'8. cis16
 	cis4.. cis16
 	cis4 d8. a16
 	a4.. a16
@@ -715,225 +726,225 @@ musicClarinettoIMvtIV = \relative c {
 	
 	
 	
-	r8. fis'16[(\f e8.) fis16](
-	e8) r r4_\diminuendo
+	r8. d'16[(\f cis8.) d16](
+	cis8) r r4_\diminuendo
 % Bars 636 to 640
-	r8. d16[( cis8.) d16](
-	cis8) r r4
-	r8. b16[(\p a8.) b16](
+	r8. e,16[( a8.) e16](
 	a8) r r4
-	r8. fis16[(\pp e8.) fis16](
+	r8. fis16[(\p e8.) fis16](
+	e8) r r4
+	r8. d16[(\pp cis8.) d16](
 % Bars 641 to 645
-	e2)~
-	e~
-	e~
-	e4( dis)
-	g,2(
+	cis2)~
+	cis~
+	cis~
+	cis4( c)
+	e,2_(
 % Bars 646 to 650
-	b)
-	c->
-	a->
-	e'~
-	e4. dis8
+	e)
+	e'->
+	dis->
+	b
+	g4 b
 % Bars 651 to 655
-	e2
-	fis_\crescendo~
-	fis8 r r4
+	b2
+	cis
+	b8 r r4
 	R2*3
 	
 % Bars 656 to 660
 	
-	d'8._\fconespressione e16 e8. f16
-	f8_\diminuendo r r4
-	d8. e16 e8. f16
-	f8 r r4
+	b'8. c16 c8. d16
+	d8 r r4
+	b8. c16 c8. d16
+	d8 r r4
 % Bars 661 to 665
-	c8.\brack\p d16 d8. ees16
-	ees8 r r4
-	c8. d16 d8. ees16
-	ees8 r r4
-	e!8.\f a,16 c4~
+	a8.\brack\p b16 b8. c!16
+	c8 r r4
+	a8. b16 b8. c!16
+	c8 r r4
+	c8.\f e,16 a4~
 % Bars 666 to 670
-	c b->
-	c-> a->
-	g-> fis->
-	g4.. a16
-	fis4.. g16
+	a gis->
+	a-> fis->
+	e-> dis->
+	e4.. fis16
+	dis4.. e16
 % Bars 671 to 675
-	g8. a16 fis8. g16
-	g8-. a-. b-. c-.
-	d4.. e16
-	cis4.. d16
-	d8.-> e16 cis8.-> d16
+	e8. e16 dis8. e16
+	e8. e16 g8. g16
+	b4.. b16
+	ais4.. b16
+	b8.-> b16 ais8.-> b16
 % Bars 676 to 680
-	d8( dis e eis)
+	b2
 	fis4( fis,8) r
 	r4 r8. fis'16
 	fis4( fis,8) r
-	r4 r8. cis'16\p
+	r4 r8. fis'16\p
 % Bars 681 to 685
-	dis4( e)
-	fis(\< gis)\!
-	fis4.\< e8\>
-	dis4 cis\!
+	gis4( ais)
+	<< b2 {s4\< s\!} >>
+	<< b2 {s4\< s8\! s\>}>>
+	b4 ais\!
 	b8 r r4
 % Bars 686 to 690
 	R2*2
 	
-	r4 r8. e,16(\brack\p
-	\tuplet 3/2 4 {fis8 e fis g a g
-	a g a b cis b
+	r4 r8. a,16(\brack\p
+	\tuplet 3/2 4 {b8 a b cis d cis
+	d cis d e fis e
 % Bars 691 to 695
-	d b d } d8. d16)
-	a'4( gis)
+	fis e fis } a8. g16)
+	a4( gis)
 	fis8 r r4
 	R2*7
 	
 % Bars 696 to 700
 	
 % Bars 701 to 705
-	b,8.\f-> cis16 d8-. cis-.
-	d8.-> e16 fis8-. cis-.
-	d8.-> e16 fis8-. e-.
-	fis8.-> g16 a8-. fis-.
-	g4-> d->
+	b2\f
+	a
+	b8.-> cis16 d8-. cis-.
+	d8.-> e16 fis8-. d-.
+	g,4-> g->
 % Bars 706 to 710
-	d4..-> d16
-	d4-> fis->
-	g4..-> g16
-	g4..-> e16
-	e4..-> fis16
+	b4..-> a16
+	a4-> d->
+	d4..-> e16
+	e4..-> cis16
+	cis4..-> d16
 % Bars 711 to 715
-	fis2\ff~
-	fis4.. g16
-	g2~
-	g4.. e16
-	e4 fis8. d16
+	d2\ff~
+	d4.. d16
+	d2~
+	d4.. cis16
+	cis4 d8. a16
 % Bars 716 to 720
-	d2
-	e4 fis8. d16
-	d2
-	d
-	d~
+	a2
+	cis4 d8. a16
+	a2
+	a4 b8. a16
+	a4( g8) r
 % Bars 721 to 725
-	d~
-	d4 cis8 r
-	d4 e8. d16
-	d4 e8. d16
-	d4 cis8. b16
+	fis4 g8. fis16
+	fis4( e8) r
+	a2~
+	a~
+	a~
 % Bars 726 to 730
-	b4 a16( ais b cis
-	d4) e8. d16
-	d4 e8. d16
-	d4 cis8. b16
-	b4( a8) r
+	a4 a16( ais b cis
+	d4) a8. a16
+	a4 a8. a16
+	a4 a8. a16
+	a4~ a8 r
 % Bars 731 to 735
-	d4 b8. cis16
-	cis2
-	d4 b8. cis16
-	cis2
-	d4 b8. cis16
+	a4 a8. a16
+	a2
+	a4 a8. a16
+	a2
+	a4 a8. a16
 % Bars 736 to 740
-	cis4-> d->\<
-	e-> fis->\!
-	a4..\fz\> g16\!
-	fis4-> dis,8. eis16
-	eis4-> fis->\<
+	a4-> b->\<
+	cis-> dis->\!
+	cis4..\fz\> b16\!
+	ais2
+	<< gis {s4 s\<}>>
 % Bars 741 to 745
-	gis-> ais->\!
-	cis4..->\fz b16
-	bes2\fp
-	ees,\p
-	b!~
+	\stemUp eis4 fisis\! \stemDown
+	gis2\fz
+	d\fp
+	bes\p
+	gis~
 % Bars 746 to 750
-	b
-	dis
-	bes'8[( aes ges f)]
-	ges2_\crescendo(
-	fis!)~
+	gis
+	dis'
+	bes8[( aes ges f)]
+	ges2
+	dis'~
 % Bars 751 to 755
-	<< fis {s8\< s s s\!}>>
-	b2->
-	d4->\brack\f a->
-	b4..-> b16
-	a4-> a->
+	\once \stemUp << dis {s8\< s s s\!}>>
+	e2->
+	a4->\brack\f fis->
+	g4..-> g16
+	fis4-> e->
 % Bars 756 to 760
-	b-> d->
-	d-> a->
-	b4..-> b16
-	a4-> a->
-	gis-> gis'-> \section
+	d-> b'->
+	a-> fis->
+	g4..-> g16
+	fis4-> e->
+	d-> d'-> \section
 % Bars 761 to 765
 	\time 3/2 a2->\brack\ff b-> c->
 	b1 g4 g8. g16
 	g1.->
-	fis1-> d4 d8. d16
-	eis1.->
+	fis!1-> d4 d8. d16
+	b'1.->
 % Bars 766 to 770
-	gis->
-	a2-> fis-> a4.-> a8-.
-	a2-> fis-> a4.-> a8-.
-	gis1-> a4 b8. a16
-	a2-> gis1->
+	b->
+	fis'2-> d-> d4.-> e8-.
+	fis2-> d-> d4.-> e8-.
+	b1-> cis2->~
+	cis2 b1->
 % Bars 771 to 775
-	a4 b8. a16 a2-> a4 b8. a16
-	\tuplet 3/2 2 {ees4-.\brack\ff r ees-. d-. r d-. ees-. r ees-.
-	dis-. r dis-. e!-. r e-. dis-. r dis-.
-	ees-. r ees-. ees-. r ees-. ees-. r ees-.}
-	e!2-> d-> cis!->
+	cis1-> a4 b8. a16
+	\tuplet 3/2 2 {bes4-.\brack\ff r bes-. bes-. r bes-. bes-. r bes-.
+	b!-. r b-. ais-. r ais-. b-. r b-.
+	a!-. r a-. a-. r a-. a-. r a-.}
+	a2-> a-> a->
 % Bars 776 to 780
-	fis-> e-> d->
-	fis1.->
-	fis1-> \tuplet 3/2 2 {g4-> a-> b->}
-	bes1.->\fp
-	b!->\fp
+	a'-> a-> a->
+	c,1.->
+	dis1-> \tuplet 3/2 2 {e4-> fis-> g->}
+	g1.->\fp
+	fis!->\fp
 % Bars 781 to 785
-	a->\fp
-	g->\ff
-	d,4\brack\f e8. d16 d2 d
-	fis4 g8. fis16 fis2 fis
+	e->\fp
+	e->\ff
+	fis,,4\brack\f g8. fis16 fis2 fis
 	a4 b8. a16 a2 a
+	d4 cis8. d16 d2 d
 % Bars 786 to 790
-	d1( fis4.\< g8)\!
-	a1 cis,2
-	d4 e d2.. d8
-	fis4 g fis2.. fis8
-	a4 b a2.. a8
+	a'1 << d2 {s8\< s s s\!}>>
+	d1 g,2
+	a4 a a2.. a8
+	b4 b b2.. b8
+	c4 c c2.. c8
 % Bars 791 to 795
 	d2.( b4 a fis
-	d b a fis e d)
-	d'1-> a2
-	b1-> cis2
-	d1-> a2
+	d b a fis e' d)
+	a'1-> fis2
+	g1.->
+	fis->
 % Bars 796 to 800
-	b1-> cis2
-	d1.~->
-	d~
-	d2~ d4. d8 d4-. e-.
+	g->
+	fis1.~->
+	fis~
+	fis2~ fis4. d'8 d4-. e-.
 	e4.-> a,8 a4-. b-. b4.-> e,8
 % Bars 801 to 805
 	e4-. fis-. fis4.-> b,8 b4 r
-	e'\brack\ff r r2 e4 r \section
-	\time 2/4 \tuplet 3/2 2 {fis4( a fis)
+	b'\brack\ff r r2 cis4 r \section
+	\time 2/4 \tuplet 3/2 2 {fis,4( a fis)
 	d( fis d)
 	fis( a fis)
 % Bars 806 to 810
-	d( fis, d')
-	fis( a, fis')
+	\stemUp \omitTupletNumber d \stemDown fis \stemUp d
+	\omitTupletNumber \stemDown fis a fis
 	d( fis d)
 	fis( a fis)
 	d( fis d)}
 % Bars 811 to 815
-	d2~
+	a'2~
+	a~
+	a~
+	a
+	d~
+% Bars 816 to 820
 	d~
 	d~
 	d
-	fis~
-% Bars 816 to 820
-	fis~
-	fis~
-	fis
-	fis4 r
+	d4 r
 	R2
 % Bars 821 to 825
 	a4 r
