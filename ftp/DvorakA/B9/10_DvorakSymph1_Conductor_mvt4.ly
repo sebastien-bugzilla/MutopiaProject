@@ -31,8 +31,8 @@
 \include "./04-Mvt4/m04_v05_music_OboeII_C.ily"
 \include "./04-Mvt4/m04_v07_music_ClarinettoI_C.ily"
 \include "./04-Mvt4/m04_v08_music_ClarinettoII_C.ily"
-\include "./04-Mvt4/m04_v09_music_FagottoI.ily"
-\include "./04-Mvt4/m04_v10_music_FagottoII.ily"
+\include "./04-Mvt4/m04_v09_music_FagottoI_C.ily"
+\include "./04-Mvt4/m04_v10_music_FagottoII_C.ily"
 \include "./04-Mvt4/m04_v11_music_CornoI.ily"
 \include "./04-Mvt4/m04_v12_music_CornoII.ily"
 \include "./04-Mvt4/m04_v15_music_TrombeI.ily"
@@ -66,7 +66,7 @@
 	}
 	\score {
 		<<
-%			\new StaffGroup <<
+			\new StaffGroup <<
 				\new GrandStaff <<
 					\new Staff <<
 %						\new Voice {
@@ -95,11 +95,12 @@
 					\partCombine \musicClarinettoIMvtIV \musicClarinettoIIMvtIV
 %					\musicClarinettoIIMvtIV
 				}
-%				\new Staff {
-%					\timeMvtIV \nameStaffVMvtIV
-%					\partCombine \musicFagottoIMvtIV \musicFagottoIIMvtIV
-%				}
-%			>>
+				\new Staff {
+					\timeMvtIV \nameStaffVMvtIV
+					\partCombine #'(0 . 14) \musicFagottoIMvtIV \musicFagottoIIMvtIV
+%					\musicFagottoIIMvtIV
+				}
+			>>
 %			\new StaffGroup <<
 %				\new Staff {
 %					\timeMvtIV \nameStaffVIMvtIV
