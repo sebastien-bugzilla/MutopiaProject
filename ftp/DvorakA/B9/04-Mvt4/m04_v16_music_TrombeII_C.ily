@@ -61,7 +61,7 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	g'2_\pcrescendo~
+	g'2~
 	g~
 	g~\<
 	g\!
@@ -117,7 +117,7 @@ musicTrombeIIMvtIV = \relative c {
 	R2
 	d4\pp r
 	R2
-	e2(_\ppplegato
+	e2(
 % Bars 156 to 160
 	f4 g)
 	e2(
@@ -614,7 +614,7 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 776 to 780
 	c-> c-> c->
 	c-> d-> e->
-	e1-> \tuplet 3/2 2 {d4-> e-> d->}
+	e1-> \omitTupletNumber \tuplet 3/2 2 {d4 e-> d->}
 	d1.\fp->
 	c->\fp
 % Bars 781 to 785

@@ -128,17 +128,18 @@ markFermata = \mark \markup { \fermata }
 
 omitAccidental = \once \omit Staff.Accidental 
 
-stemOffset = #(define-music-function
-	(offset)
-	(number?)
-	#{
-		\once \offset length #offset Stem
-	#}
-)
+
 
 omitTupletNumber = \once \omit Voice.TupletNumber
 
 
+%stemOffset = #(define-music-function
+%	(offset)
+%	(number?)
+%	#{
+%		\once \offset length #offset Stem
+%	#}
+%)
 
 
 %aIIXoffset = #(define-music-function

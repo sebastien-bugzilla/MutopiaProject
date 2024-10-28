@@ -4,12 +4,12 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIIMvtIV = \relative c {
+musicTrombeIMvtIV = \relative c {
 	\clef treble
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	c'2->\f
+	c''2->\f
 	g->
 	c->
 	g'->
@@ -17,7 +17,7 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 6 to 10
 	c->
 	g->
-	d''
+	d'
 	a4\fermata r
 	R2
 % Bars 11 to 15
@@ -42,17 +42,17 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 51 to 55
 	
 	
-	c8\f r d4~
-	d8 r c4~
-	c8 r g4~
+	e'8\f r f4~
+	f8 r \partCombineApart e4(
+	f8) \partCombineAutomatic r d4~
 % Bars 56 to 60
-	g g->
-	g-> g->
-	g-> d'->
-	e8 r c,4->~
-	c g'->
+	d d->
+	c-> d->
+	e-> f->
+	g8 r c,4->~
+	c d->
 % Bars 61 to 65
-	c,8\brack\pp r r4
+	c8\brack\pp r r4
 	R2*19
 % Bars 66 to 70
 	
@@ -86,18 +86,18 @@ musicTrombeIIMvtIV = \relative c {
 	c4 c
 % Bars 116 to 120
 	c4.. c16
-	d'4..-> g,16
-	g4.. c16
-	c2\ff~
-	c4.. c,16
+	f4..-> d16
+	d4.. e16
+	e2\ff~
+	e4.. c16
 % Bars 121 to 125
 	c2~
-	c4.. g'16
-	g4 c8. e,16
-	e2
-	g4 c8. e,16
+	c4.. d16
+	d4 e8. c16
+	c2
+	d4 e8. c16
 % Bars 126 to 130
-	e4.. d16
+	c4.. d16
 	d4 r
 	R2*21
 % Bars 131 to 135
@@ -132,16 +132,16 @@ musicTrombeIIMvtIV = \relative c {
 	g'2\brack\p\<~
 % Bars 166 to 170
 	g\!
-	e4\f-> g->
-	g2
-	c,4-> g'->
-	g2
+	c,4\f-> d->
+	\once \partCombineApart g,2
+	c4-> d->
+	d2
 % Bars 171 to 175
-	g4-> g->
-	c-> g->
-	e-> c->
-	g'2->
-	e8 r r4
+	c4-> d->
+	e-> d->
+	c-> c->
+	d2->
+	c8 r r4
 % Bars 176 to 180
 	R2*63
 % Bars 181 to 185
@@ -183,18 +183,18 @@ musicTrombeIIMvtIV = \relative c {
 	e8 r r4
 	R2*2
 	
-	g4-> g->
+	g,4-> g->
 % Bars 251 to 255
-	c,2\ff
+	c2\ff
 	c4 c
 	c2
 	c4 c
-	c-> a'->
+	c-> e->
 % Bars 256 to 260
-	a4.. d16
-	d4-> a->
-	a4.. d16
-	d8 r r4
+	e4.. f16
+	f4-> e->
+	e4.. f16
+	f8 r r4
 	R2*19
 % Bars 261 to 265
 	
@@ -206,11 +206,11 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	g,2\ff
-	g4 c
+	d2\ff
+	d4 e
 % Bars 281 to 285
-	g4( c8.) g16
-	d'2
+	d4( e8.) d16
+	d2
 	d->
 	d->
 	d->
@@ -224,7 +224,7 @@ musicTrombeIIMvtIV = \relative c {
 	d2
 	d4 d
 	d2 
-	d,4 d
+	d4 d
 	R2*40
 % Bars 296 to 300
 	
@@ -245,7 +245,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	f'2\f
+	f2\f
 % Bars 336 to 340
 	f
 	f
@@ -261,16 +261,16 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	c,8\brack\f r r4
+	c8\brack\f r r4
 % Bars 356 to 360
 	r8. c16 c8 r
 	c r r4
-	r8. d16 d8 r
-	d8 r r4
-	r8. cis16 cis8 r
+	r8. b16 b8 r
+	b8 r r4
+	r8. b16 b8 r
 % Bars 361 to 365
-	d8 r r4
-	r8. des16 des8 r
+	b8 r r4
+	r8. bes16 bes8 r
 	c2->
 	c->
 	R2*2
@@ -303,7 +303,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	r4 r8. g16\brack\ff
+	r4 r8. g,16\brack\ff
 % Bars 411 to 415
 	e2~
 	e4.. d16
@@ -333,13 +333,13 @@ musicTrombeIIMvtIV = \relative c {
 	r g
 	r g
 	r g
-	c-> e,->
+	e'-> c->
 % Bars 436 to 440
-	g4..-> g16
-	c4-> e,->
-	g4..-> g16
-	c2
-	c,->
+	c4..-> d16
+	e4-> c->
+	c4..-> d16
+	e2
+	c->
 % Bars 441 to 445
 	c->
 	c->
@@ -357,11 +357,11 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	g2\f~
-	g~
+	\partCombineApart g,2~
+	g
 % Bars 466 to 470
-	g8 g g g~
-	g2
+	\stemDown \omitBeam \beamOffset #'(-1.5 . -1.5) g'8 g \omitBeam \beamOffset #'(-1.5 . -1.5) g g~
+	g2 \partCombineAutomatic
 	c,~
 	c~
 	c8 c c c~
@@ -372,11 +372,11 @@ musicTrombeIIMvtIV = \relative c {
 	f8 f f f~
 	f2
 % Bars 476 to 480
-	d'~
-	d~
-	d8 r r4
+	f~
+	f~
+	f8 r r4
 	R2\fermata
-	f,~
+	f~
 % Bars 481 to 485
 	f~
 	f8 r r4
@@ -401,17 +401,17 @@ musicTrombeIIMvtIV = \relative c {
 	c4 c
 	c4.. c16
 % Bars 516 to 520
-	d'4..-> g,16
-	g4.. c16
-	c2\ff~
-	c4.. c,16
+	f4..-> d16
+	d4.. e16
+	e2\ff~
+	e4.. c16
 	c2~
 % Bars 521 to 525
-	c4.. g'16
-	g4 c8. e,16
-	e2
-	g4 c8. e,16
-	e4.. d16
+	c4.. d16
+	d4 e8. c16
+	c2
+	d4 e8. c16
+	c4.. d16
 % Bars 526 to 530
 	d4 r
 	R2*43
@@ -434,7 +434,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	c'2\fz~
+	c2\fz~
 % Bars 571 to 575
 	c
 	c,\fz~
@@ -449,16 +449,16 @@ musicTrombeIIMvtIV = \relative c {
 	a4 f8. bes16
 % Bars 581 to 585
 	bes2
-	f8 r f r
-	r8. g16 g4->
-	f8 r f r
-	r8. g16 g4->
+	bes8 r c r
+	r8. d16 d4->
+	bes8 r c r
+	r8. d16 d4->
 % Bars 586 to 590
-	f8 r g r
-	r8. c,16 c4->
-	f8 r g r
-	r8. c,16 c4->
-	g'8\p r r4
+	d8 r bes r
+	r8. c16 c4->
+	d8 r bes r
+	r8. c16 c4->
+	\once \partCombineApart g8 r r4
 % Bars 591 to 595
 	R2*6
 % Bars 596 to 600
@@ -509,7 +509,7 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 676 to 680
 	
 	
-	e2->\f
+	e'2->\f
 	R
 	e->\f
 % Bars 681 to 685
@@ -536,18 +536,18 @@ musicTrombeIIMvtIV = \relative c {
 	c4..-> c16
 	c4-> c->
 	c4..-> c16
-	d'4..-> g,16
-	g4..-> c16
+	f4..-> d16
+	d4..-> e16
 % Bars 711 to 715
-	c2\ff~
-	c4.. c,16
+	e2\ff~
+	e4.. c16
 	c2~
-	c4.. g'16
-	g4 c8. e,16
+	c4.. d16
+	d4 e8. c16
 % Bars 716 to 720
-	e2
-	g4 c8. e,16
-	e2
+	c2
+	d4 e8. c16
+	c2
 	c
 	c
 % Bars 721 to 725
@@ -563,10 +563,10 @@ musicTrombeIIMvtIV = \relative c {
 	g g~
 	g g
 % Bars 731 to 735
-	g4. g8
-	g4 g8. g16
-	g4. g8
-	g4 g8. g16
+	g4. e8
+	d4 d8. d16
+	g4. e8
+	d4 d8. d16
 	g8 r r4
 % Bars 736 to 740
 	<< g2-> {s4 s\<}>>
@@ -584,25 +584,25 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 751 to 755
 	
 	
-	e4\f-> e->
-	a4..-> a16
-	g4-> g->
+	c4\f-> c->
+	c4..-> d16
+	e4-> d->
 % Bars 756 to 760
-	a4.. a16
-	g4-> e->
-	a4.. a16
-	g4-> g->
-	c,2-> \section
+	\partCombineApart \stemUp c4-> c-> \partCombineAutomatic
+	e4-> c->
+	c4.. d16
+	e4-> d->
+	c2-> \section
 % Bars 761 to 765
 	\time 3/2 e1.->\brack\ff
 	e2-> f1->
-	b1.->
-	b2 c1->
-	c,1.->
+	\partCombineApart f2-> e-> d4. f8
+	e2.-> dis4-> e2-> \partCombineAutomatic
+	c1.->
 % Bars 766 to 770
 	c->
-	g'1-> c4.-> g8-.
-	g1-> c4.-> g8-.
+	g'1-> \partCombineApart f4-> e8 d \partCombineAutomatic
+	g1-> \partCombineApart f4-> e8 d \partCombineAutomatic
 	c4 d8. c16 c2-> g4 g8. g16
 	g2-> c4 d8. c16 c2->
 % Bars 771 to 775
@@ -610,23 +610,23 @@ musicTrombeIIMvtIV = \relative c {
 	\tuplet 3/2 2 {r4 c\brack\ff-> f-> r f-> c-> r c-> f->
 	r d-> e-> r e-> d-> r d-> e->
 	r f-> g-> r g-> f-> r f-> g->}
-	d2-> d-> d->
+	f2-> f-> f->
 % Bars 776 to 780
-	c-> c-> c->
-	c-> d-> e->
-	e1-> \tuplet 3/2 2 {d4-> e-> d->}
-	d1.\fp->
-	c->\fp
+	d-> d-> e->
+	e-> f-> g->
+	g1-> \partCombineApart \tuplet 3/2 2 {\once \stemDown f4-> e-> d->} \partCombineAutomatic
+	f1.\fp->
+	ees->\fp
 % Bars 781 to 785
-	c->\fp
-	g->\ff
-	r2 c,\brack\f c
-	r c c
+	d->\fp
+	d->\ff
+	r2 \partCombineApart c, c \partCombineAutomatic
 	r e e
+	r g g
 % Bars 786 to 790
-	c'1.
-	e1-> g,2
-	c,2. c4 c4. c8
+	\partCombineApart c1( e4. f8) \partCombineAutomatic
+	g1-> \once \partCombineApart g,2
+	c2. c4 c4. c8
 	c2. c4 c4. c8
 	c2. c4 c4. c8
 % Bars 791 to 795
@@ -643,40 +643,40 @@ musicTrombeIIMvtIV = \relative c {
 	R1.*2
 % Bars 801 to 805
 	
-	d'4\ff r r2 g,4 r \section
-	\time 2/4 g2~
-	g4 e
-	e2~
-% Bars 806 to 810
-	e4 c'
-	c2~
+	f4\ff r r2 d4 r \section
+	\time 2/4 c2~
 	c4 g
 	g2~
+% Bars 806 to 810
 	g4 e'
+	e2~
+	e4 c
+	c2~
+	c4 g'
 % Bars 811 to 815
-	e2->\fz~
-	e
-	g,->\fz~
+	g2->\fz~
 	g
-	c->\fz~
-% Bars 816 to 820
+	c,->\fz~
 	c
 	e->\fz~
+% Bars 816 to 820
 	e
-	e,4 r
+	g->\fz~
+	g
+	c,4 r
 	R2
 % Bars 821 to 825
-	g4 r
+	d4 r
 	R2
-	r4 r8 c
-	c4. c8
-	c2->
+	r4 r8 \once \partCombineApart c
+	d4. e8
+	e2->
 % Bars 826 to 830
-	c->
-	c->
-	c->
-	c->~
-	c~
+	e->
+	e->
+	e->
+	e->~
+	e~
 % Bar 831
-	c\fermata \fine
+	e\fermata \fine
 }
