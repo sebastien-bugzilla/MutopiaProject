@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicCornoIMvtIV = \relative c {
+musicCornoIIMvtIV = \relative c {
 	\clef treble
 	\key c \major
 %	\transposition a
@@ -21,44 +21,59 @@ musicCornoIMvtIV = \relative c {
 	a'4\fermata r
 	R2
 % Bars 11 to 15
-	<< d2\fermata {s8\> s s s\!}>>
-	R2*20
+	<< g2\fermata {s8\> s s s\!}>>
+	c4(\brack\p g
+	c,2)
+	c'4( g
+	c,2)
 % Bars 16 to 20
-	
+	c'4( g
+	c,2)
+	c'4( g~
+	g8) r r4
+	c4( g
 % Bars 21 to 25
-	
+	c,2)
+	c'4( g
+	c,2)
+	e'4( b 
+	e,2)
 % Bars 26 to 30
-	
+	e'4( b
+	e,2)
+	e'4( b_\brackM\crescmarkup
+	e,2)
+	e'4( b
 % Bars 31 to 35
-	
-	R2\fermata
+	e,2~
+	e8) r r4\fermata
 	R2*8
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	g2\brack\pp~
-	g_\crescmarkup~
+	g~
 	g~
 	g
-	g\mf
+	c\mf
 % Bars 46 to 50
-	g4 g
-	g2
-	g4 g
-	g2
-	g4 g
+	c4 c
+	c2
+	c4 c
+	c2
+	c4 c
 % Bars 51 to 55
-	g2
+	c2
 	g4 << g {s32 s\< s s s s s s\!}>>
-	g8\f r g4~
+	c8\f r g4~
 	g c,~
-	c8 r d4~
+	c8 r g'4~
 % Bars 56 to 60
-	d d->
+	g g-> 
+	g-> g->
 	c-> d->
-	e-> f->
-	g8 r f4->~
-	f d
+	e8 r c4->~
+	c g
 % Bars 61 to 65
 	c4..\pp c,16
 	c2
@@ -99,17 +114,17 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	
-	c'2\brack\p\<~
+	c2\brack\p\<~
 	<< c {s8 s\! s\> s}>>
 % Bars 96 to 100
 	<< g2 {s8 s s s\!}>>
-	c,8 r r4
+	c8 r r4
 	R2*4
 	
 	
 % Bars 101 to 105
 	
-	g''2\brack\p\<~
+	g'2\brack\p\<~
 	<< g {s8 s\! s\> s}>>
 	<< d2 {s8 s s s\!}>>
 	d4.. d16
@@ -117,7 +132,7 @@ musicCornoIMvtIV = \relative c {
 	d2
 	g,~
 	g
-	r8 c4\brack\mf_\crescendo c8
+	r8 c4 c8
 	r c4 c8
 % Bars 111 to 115
 	r c4 c8\<
@@ -126,20 +141,20 @@ musicCornoIMvtIV = \relative c {
 	c4.. c16
 	c4 c
 % Bars 116 to 120
-	c4.. d16
-	d2->
-	d->
-	c\brack\ff~
+	c4.. g'16
+	g2->
+	g->
+	c,\brack\ff~
 	c
 % Bars 121 to 125
 	c~
 	c4. r8
-	d4 e8. c16
-	c2
-	d4 e8. c16
+	g'4 c8. e,16
+	e2
+	g4 c8. e,16
 % Bars 126 to 130
-	c4.. d16
-	f2->\fz~
+	e4.. f16
+	f'2->\fz~
 	f4.. f16
 	d2->\fz~_\diminuendo
 	d4.. d16
@@ -151,7 +166,7 @@ musicCornoIMvtIV = \relative c {
 	c4 r
 % Bars 136 to 140
 	R2
-	g4_\ppocoapococresc r
+	g,4 r
 	g r
 	g r
 	g r
@@ -172,12 +187,12 @@ musicCornoIMvtIV = \relative c {
 	g8.( f16 e8) e-.
 	d8.(\brack\pp e16 f8) f-.
 	f8.( e16 d8) d-.
-	e2(_\brackM\ppplegato
+	e2(
 % Bars 156 to 160
 	f4 g)
 	e2(
 	f4 g)
-	c,4^\soli d8. c16
+	c4^\soli d8. c16
 	c2
 % Bars 161 to 165
 	c4 d8. c16
@@ -187,21 +202,21 @@ musicCornoIMvtIV = \relative c {
 	e4 c8.\< d16
 % Bars 166 to 170
 	d2\!
-	c4->\f d->~
-	d e->
-	f-> d->~
-	d d->
+	e,4->\f g->~
+	g c->
+	c-> g->~
+	g g->
 % Bars 171 to 175
-	g-> f->
-	e-> d->
-	e-> f->
-	d2->
+	c-> g->
+	g-> g->
+	g-> c->
+	g2->
 	c8 r r4
 % Bars 176 to 180
 	R2*3
 	
 	
-	r8. g'16 g4~
+	r8. g16 g4~
 	g2
 % Bars 181 to 185
 	r8. g16 g4~
@@ -232,16 +247,16 @@ musicCornoIMvtIV = \relative c {
 % Bars 206 to 210
 	
 % Bars 211 to 215
-	r4 f\f
-	r f
-	r f_\dimmarkup
-	r f
-	r ees\p
+	r4 d'\f
+	r d
+	r d
+	r d
+	r c\p
 % Bars 216 to 220
-	r ees
-	r ees\pp
-	r ees8\< r\!
-	e!\f r r4
+	r c
+	r c\pp
+	r c8\< r\!
+	c\f r r4
 	e2->
 % Bars 221 to 225
 	a,->
@@ -265,52 +280,44 @@ musicCornoIMvtIV = \relative c {
 % Bars 241 to 245
 	e'4-> e,->
 	R2
-	e'4-> e->
+	e4-> e->
 	e4..-> e16
 	e4-> e->
 % Bars 246 to 250
 	e4..-> e16
-	e2->
-	dis->
-	e->~
-	e4 d!
+	g2->
+	fis->
+	b
+	g
 % Bars 251 to 255
-	c-> c
+	c4-> c
 	c4.. c16
 	c4 c
 	c4.. c16
-	c4-> e->
+	c4-> a->
 % Bars 256 to 260
-	e4.. f16
-	f4-> e->
-	e4.. f16
-	f2\fp~
-	f~
+	a4.. d16
+	d4-> a->
+	a4.. d16
+	d8 r r4
+	R2*12
 % Bars 261 to 265
-	f~
-	f4 e
-	c2\fp~
-	c
-	c~
+	
 % Bars 266 to 270
-	c4 b
-	g'2\fp~
-	g~_\brackM\crescmarkup
-	g~
-	g4 fis~
+	
 % Bars 271 to 275
-	fis8 r r4
+	
 	R2*7
 % Bars 276 to 280
 	
 	
 	
-	d2\ff
-	d4 e
+	g,2\ff
+	g4 c
 % Bars 281 to 285
 	d2->
-	d
-	d->
+	d4 d,
+	d'2->
 	d->
 	d->
 % Bars 286 to 290
@@ -328,7 +335,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 296 to 300
 	d~
 	d\<
-	e\!
+	a\!
 	r4 b->\p
 	r b->
 % Bars 301 to 305
@@ -338,7 +345,7 @@ musicCornoIMvtIV = \relative c {
 	r a
 	r a\pp
 % Bars 306 to 310
-	r d
+	r d 
 	R2*16
 % Bars 311 to 315
 	
@@ -370,7 +377,7 @@ musicCornoIMvtIV = \relative c {
 	R2*2
 % Bars 341 to 345
 	
-	r8 e4 e8
+	R2
 	R2*12
 % Bars 346 to 350
 	
@@ -379,43 +386,43 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	
-	ees8\brack\f r r4
+	c8\brack\f r r4
 % Bars 356 to 360
-	r8. d16 d8 r
-	ees8 r r4
-	r8. d16 d8 r
-	d r r4
-	r8. cis16 cis8 r
+	r8. c16 c8 r
+	c8 r r4
+	r8. b16 b8 r
+	b r r4
+	r8. b16 b8 r
 % Bars 361 to 365
-	d r r4
-	r8. des16 des8 r
+	b r r4
+	r8. bes16 bes8 r
 	R2*4
 	
 	
 % Bars 366 to 370
 	
-	e4\ff e8. e16
+	e,4\ff e8. e16
 	e2->
 	e4 e8. e16
 	e2->
 % Bars 371 to 375
-	e~
-	e~
-	e~
-	e~
-	e\brack\f
+	bes'~
+	bes~
+	bes~
+	bes~
+	bes\brack\f
 % Bars 376 to 380
-	f~
-	f
-	f,~
-	f
+	r4 r8. f'16-.
+	f4( f,8) r
+	r4 r8. g'16-.\brack\pp
+	g4( g,8) r
 	R2*8
 % Bars 381 to 385
 	
 % Bars 386 to 390
 	
 	
-	r4 ees'8.\pp ees16
+	r4 ees8.\pp ees16
 	ees2~
 	ees~
 % Bars 391 to 395
@@ -428,7 +435,7 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	
-	f4->\brack\p bes,->
+	f'4->\brack\p bes,->
 	bes4. c8
 % Bars 401 to 405
 	des( c bes ges')
@@ -471,13 +478,13 @@ musicCornoIMvtIV = \relative c {
 	r g
 	r g
 	r g
-	e'-> e->
+	c-> c->
 % Bars 436 to 440
-	f4..-> f16
-	e4-> e->
-	f4..-> f16
-	e2
-	c->
+	g4..-> g16
+	c4-> c->
+	g4..-> g16
+	c2
+	c,->
 % Bars 441 to 445
 	c->
 	c->
@@ -510,14 +517,14 @@ musicCornoIMvtIV = \relative c {
 	f8 f f f~
 	f2
 % Bars 476 to 480
-	f~
-	f~
-	f8 r r4
+	d'~
+	d~
+	d8 r r4
 	R2\fermata
-	f2~
+	des2~
 % Bars 481 to 485
-	f~
-	f8 r r4
+	des~
+	des8 r r4
 	R2\fermata
 	r4 r8. f16\f
 	f4( f,8) r
@@ -528,17 +535,17 @@ musicCornoIMvtIV = \relative c {
 % Bars 491 to 495
 	
 	
-	c'2\brack\p\<~
+	c2\brack\p\<~
 	<< c {s8 s\! s\> s}>>
 	<< g2 {s8 s s s\!}>>
 % Bars 496 to 500
-	c,8 r r4
+	c8 r r4
 	R2*4
 	
 	
 	
 % Bars 501 to 505
-	g''2\brack\p\<~
+	g'2\brack\p\<~
 	<< g {s8 s\! s\> s}>>
 	<< d2 {s8 s s s\!}>>
 	d4.. d16
@@ -546,7 +553,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 506 to 510
 	g,~
 	g
-	r8 c4\brack\mf_\crescendo c8
+	r8 c4\brack\mf c8
 	r c4 c8
 	r c4 c8\<
 % Bars 511 to 515
@@ -554,21 +561,21 @@ musicCornoIMvtIV = \relative c {
 	c4->\f c->
 	c4.. c16
 	c4 c
-	c4.. d16
+	c4.. g'16
 % Bars 516 to 520
-	d2->
-	d->
-	c\brack\ff~
+	g2->
+	g->
+	c,\brack\ff~
 	c
 	c~
 % Bars 521 to 525
 	c4. r8
-	d4 e8. c16
-	c2
-	d4 e8. c16
-	c4.. d16
+	g'4 c8. e,16
+	e2
+	g4 c8. e,16
+	e4.. f16
 % Bars 526 to 530
-	f2\fz->~
+	f'2\fz->~
 	f4.. f16
 	d2->\fz_\diminuendo~
 	d4.. d16
@@ -577,7 +584,7 @@ musicCornoIMvtIV = \relative c {
 	f4.. f16
 	des2~
 	des4.. des16
-	c2\brack\p~
+	c,2\brack\p~
 	c4. c8
 % Bars 536 to 540
 	c2~
@@ -596,13 +603,13 @@ musicCornoIMvtIV = \relative c {
 	c4. c8
 	c2~
 	c4. c8
-	c2\fp~
+	a'2\fp~
 % Bars 551 to 555
+	a
+	c\fp~
 	c
-	g'\fp~
-	g
-	c,\fp~
-	c
+	ges\fp~
+	ges
 % Bars 556 to 560
 	f\fp~
 	f
@@ -614,30 +621,30 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	
-	c2->\fp~
+	c'2->\fp~
 % Bars 571 to 575
 	c
 	c,->\fp~
 	c
-	c'4\ff e8. f16
-	f2
+	c'4\ff c8. d16
+	d2
 % Bars 576 to 580
-	c4 e8. f16
-	f2
-	f4 f8. g16
-	g2
-	f4 f8. g16
+	c4 c8. d16
+	d2
+	f4 d8. ees16
+	ees2
+	f4 d8. ees16 
 % Bars 581 to 585
-	g2
-	f8 r f r
-	r8. d16 d4->
-	f8 r f r
-	r8. d16 d4->
+	ees2
+	f8 r c r
+	r8. bes16 bes4->
+	d8 r c r
+	r8. bes16 bes4->
 % Bars 586 to 590
-	d8 r ees r
-	r8. ees16 ees4->
-	d8 r ees r
-	r8. ees16 ees4->
+	bes8 r g r
+	r8. c16 c4->
+	bes8 r g r
+	r8. c16 c4->
 	bes\f c8. bes16
 % Bars 591 to 595
 	bes2
@@ -647,17 +654,17 @@ musicCornoIMvtIV = \relative c {
 	bes4 c8. f16
 % Bars 596 to 600
 	d4 bes8. c16
-	bes4\brack\f c~
-	c d
-	ees c~
-	c c8 r
+	d,4\brack\f f~
+	f bes
+	bes f~
+	f f8 r
 % Bars 601 to 605
 	R2*12
 % Bars 606 to 610
 	
 % Bars 611 to 615
 	
-	
+	 
 	a4->\brack\ff a->
 	a-> a->
 	a-> a->
@@ -672,7 +679,7 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	
-	r8. f'16\brack\ff f4~
+	r8. f16\brack\ff f4~
 % Bars 626 to 630
 	f2
 	r8. f16 f4~
@@ -684,7 +691,7 @@ musicCornoIMvtIV = \relative c {
 	f~
 	f8 r r4
 	R2
-	r4 r8. f16_\diminuendo
+	r4 r8. f16
 % Bars 636 to 640
 	f2~
 	f4 r
@@ -703,16 +710,16 @@ musicCornoIMvtIV = \relative c {
 	
 % Bars 656 to 660
 	
-	r4 ees\f
-	r_\diminuendo ees
-	r ees
-	r ees
+	r4 c'\f
+	r_\diminuendo c
+	r c
+	r c
 % Bars 661 to 665
-	r des\brack\p
-	r des
-	r des
-	r des8 r
-	d! r r4
+	r bes\brack\p
+	r bes
+	r bes
+	r bes8 r
+	bes r r4
 % Bars 666 to 670
 	d2\f->
 	g,->
@@ -728,15 +735,15 @@ musicCornoIMvtIV = \relative c {
 % Bars 676 to 680
 	
 	
-	e'2->\f
+	e2->\f
 	R
 	e->\f
 % Bars 681 to 685
-	e\p~
-	e4\< fis\!
-	e4.\< d8\>
-	<< e2 {s8 s s s\!}>>
-	e8 r r4
+	R2*2
+	
+	cis'4\brack\p\< a\>
+	<< \once \stemUp e2 {s8 s s s\!}>>
+	a8 r r4
 % Bars 686 to 690
 	R2*4
 	
@@ -744,15 +751,15 @@ musicCornoIMvtIV = \relative c {
 	
 	c2\brack\p~
 % Bars 691 to 695
-	c4 e8. f16
-	g4( fis)
-	e8 r r4 
+	c4~ c
+	b2
+	e,8 r r4 
 	R2*2
 	
 % Bars 696 to 700
 	r4 r8. d16\p
 	d2~
-	d_\crescendo
+	d
 	g->~
 	g
 % Bars 701 to 705
@@ -764,19 +771,19 @@ musicCornoIMvtIV = \relative c {
 % Bars 706 to 710
 	c4..-> c16
 	c4-> c->
-	c4..-> d16
-	d2->~
-	d
+	c4..-> f16
+	g2->~
+	g
 % Bars 711 to 715
-	c\ff~
+	c,\ff~
 	c
 	c~
 	c4. r8
-	d4 e8. c16
+	g'4 c8. e,16
 % Bars 716 to 720
-	c2
-	d4 e8. c16
-	c2
+	e2
+	g4 c8. e,16
+	e2
 	c
 	c
 % Bars 721 to 725
@@ -800,24 +807,24 @@ musicCornoIMvtIV = \relative c {
 % Bars 736 to 740
 	<< g-> {s4 s\< }>>
 	<< g2-> {s8 s s s\!}>>
-	<< f2-> {s8\fz\> s s s\!}>>
-	e4.. dis16
-	<< fis2->~ {s4 s\< }>>
+	<< a2-> {s8\fz\> s s s\!}>>
+	gis4.. b16
+	<< b2->~ {s4 s\< }>>
 % Bars 741 to 745
-	fis4 f\!
-	fis2\fz->
-	ees8 r r4
+	b4 b\!
+	cis2\fz->
+	c!8 r r4
 	R2*6
 % Bars 746 to 750
 	
 	
 	
 	
-	e2->_\brackM\mfcresc
+	a2->
 % Bars 751 to 755
-	e->
-	d->
-	c4->\brack\f c->
+	a->
+	a->
+	c,4->\brack\f c->
 	c4..-> c16
 	c4-> c->
 % Bars 756 to 760
@@ -828,79 +835,79 @@ musicCornoIMvtIV = \relative c {
 	c4.. c16 \section
 % Bars 761 to 765
 	\time 3/2 e1.->\brack\ff
-	d->
+	a->
 	d2-> e-> f->
-	e1.->
+	e,1.->
 	\tuplet 3/2 2 {c4 c c c2-> c4 c c c
 % Bars 766 to 770
 	c c c c2-> c4 c c c }
-	g'2-> e-> g4.-> g8-.
-	g2-> e-> g4.-> g8-.
-	fis1-> g4 d8. d16
-	d2-> fis1->
+	e'2-> c-> c4.-> d8-.
+	e2-> c-> c4.-> d8-.
+	ees1-> d4 g,8. g16
+	g2-> ees'1->
 % Bars 771 to 775
-	g4 d8. d16 g,2-> g->
+	d4 g,8. g16 g2-> g->
 	aes1.->\brack\ff
-	e'!->
+	e!->
 	ees->
-	f2-> f-> f->
+	d'2-> d-> d->
 % Bars 776 to 780
-	d-> d-> e->
-	e-> f-> g->
-	g1-> \tuplet 3/2 2 {f4-> e-> d->}
-	f1.\brack\fp->
-	fis\fp->
+	c-> c-> c->
+	c-> d-> e->
+	e1-> \omitTupletNumber \tuplet 3/2 2 {d4 e-> d->}
+	d1.\brack\fp->
+	ees\fp->
 % Bars 781 to 785
-	g->\fp
-	f->\ff
+	d->\fp
+	d->\ff
 	g,4\brack\f g g2 g4. g8
 	c4 b c2 c4. c8
 	e4 f e2 e
 % Bars 786 to 790
-	e1-> e4.( f8)
-	g1->( f2)
-	c2. c4 c4. c8
+	e1-> c2
+	e1->( d2)
+	c,2. c4 c4. c8
 	c2. c4 c4. c8
 	c2. c4 c4. c8
 % Bars 791 to 795
 	c1.->~
 	c
-	e2-> e-> e->
-	f1.->
-	e2 e e
+	c'2-> c-> c->
+	g1.->
+	c2 c c
 % Bars 796 to 800
-	f1.->
-	e->
-	e->~
-	e2~ e4 r r2
+	g1.->
+	c->
+	c->~
+	c2~ c4 r r2
 	R1.*2
 % Bars 801 to 805
 	
-	f4\ff r r2 d4 r \section
-	\time 2/4 c2~
+	d4\ff r r2 g,4 r \section
+	\time 2/4 g2~
+	g4 e
+	e2~
+% Bars 806 to 810
+	e4 c'
+	c2~
 	c4 g
 	g2~
-% Bars 806 to 810
 	g4 e'
-	e2~
-	e4 c
-	c2~
-	c4 g'
 % Bars 811 to 815
-	g2->\fz~
-	g
-	c,->\fz~
-	c
-	e->\fz~
-% Bars 816 to 820
+	e2->\fz~
 	e
-	g->\brack\fz~
+	g,->\fz~
 	g
-	c,~
+	c->\fz~
+% Bars 816 to 820
+	c
+	e->\brack\fz~
+	e
+	c~
 	c
 % Bars 821 to 825
-	d~
-	d4. g,8
+	c~
+	c4. g8
 	g2~
 	g
 	g4 g'->
