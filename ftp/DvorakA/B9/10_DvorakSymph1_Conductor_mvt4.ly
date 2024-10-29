@@ -118,10 +118,9 @@
 						\partCombine \musicTrombonoIMvtIV \musicTrombonoIIMvtIV
 %						\musicTrombonoIIMvtIV
 					}
-%					\new Staff {
-%						\timeMvtIV \nameStaffIXMvtIV
-%						\musicTrombonoIIIMvtIV
-%					}
+					\new Staff {
+						\timeMvtIV \nameStaffIXMvtIV \musicTrombonoIIIMvtIV
+					}
 				>>
 			>>
 %			\new Staff {
