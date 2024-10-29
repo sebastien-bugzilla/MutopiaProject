@@ -5,7 +5,7 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicTrombonoIIMvtIV = \relative c {
-	\clef tenor
+	\clef alto
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
@@ -43,8 +43,8 @@ musicTrombonoIIMvtIV = \relative c {
 	
 	<< b2 {s8\brack\mf\< s s s\!}>>
 	c8\f r d4~
-	d8 r c4~
-	c8 r b4~
+	d8 r c4(
+	c8) r b4~
 % Bars 56 to 60
 	b8 r b4->
 	c-> b->
@@ -71,12 +71,12 @@ musicTrombonoIIMvtIV = \relative c {
 	R
 % Bars 76 to 80
 	e
-	cis_\pppocoapococrescendo~
+	cis~
 	cis~
 	cis~
 	cis
 % Bars 81 to 85
-	d_\crescendo~
+	d~
 	d~
 	d~\<
 	d\!
@@ -95,10 +95,10 @@ musicTrombonoIIMvtIV = \relative c {
 	
 	
 	
-	r4 a_\pcrescendo
+	r4 a
 	r g
 % Bars 111 to 115
-	r c_\crescmarkup
+	r c
 	r bes
 	c\f e
 	c4.. e16
@@ -119,7 +119,7 @@ musicTrombonoIIMvtIV = \relative c {
 	g4 g8 r
 	f4 r
 	R2
-	f4_\diminuendo r
+	f4 r
 	R2
 % Bars 131 to 135
 	eis4\p r
@@ -152,7 +152,7 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 161 to 165
 	a8\pp r r4
 	R2
-	g8_\pcrescendo r g r
+	g8 r g r
 	g r b r
 	c r d r
 % Bars 166 to 170
@@ -337,7 +337,7 @@ musicTrombonoIIMvtIV = \relative c {
 	fis2->\brack\pp
 	cis->
 	cis->~
-	cis4.._\crescendo dis16
+	cis4.. dis16
 	f!4( ees
 % Bars 401 to 405
 	des bes')
@@ -439,9 +439,9 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 506 to 510
 	
 	
-	r4 a_\pcrescendo
+	r4 a
 	r g
-	r c_\crescmarkup
+	r c
 % Bars 511 to 515
 	r bes
 	c\f e
@@ -463,7 +463,7 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 526 to 530
 	f4 r
 	R2
-	f4_\diminuendo r
+	f4 r
 	R2
 	eis4\p r
 % Bars 531 to 535
@@ -500,11 +500,11 @@ musicTrombonoIIMvtIV = \relative c {
 	c
 	des->
 	ees8 r r4
-	R2*9
+	R2*7
 % Bars 561 to 565
 	
 % Bars 566 to 570
-	
+	R2*2
 	
 	f2\fz~
 	f
@@ -537,7 +537,7 @@ musicTrombonoIIMvtIV = \relative c {
 	R2
 	bes8 r r4
 	R2
-	bes8_\crescendo r a r
+	bes8 r a r
 	f r a\< r
 % Bars 596 to 600
 	bes r c\! r
@@ -619,7 +619,7 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 696 to 700
 	
 % Bars 701 to 705
-	r4 a,\brack\mf_\crescmarkup
+	r4 a,\brack\mf
 	r g\<
 	r c\!
 	r bes
@@ -663,7 +663,7 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 736 to 740
 	g4-> a->\<
 	b-> cis->\!
-	<< d2-> {s8\fz\> s s s\!}>>
+	<< d2-> {s8\fz\> s s s16 s\!}>>
 	b2~
 	b4 cis->\<
 % Bars 741 to 745
@@ -711,7 +711,7 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 776 to 780
 	g-> g-> g->
 	c-> c-> c->
-	cis1-> \tuplet 3/2 2 {d4-> e-> f->}
+	cis1-> \tuplet 3/2 2 {d4 e f->}
 	d4 r r2 r
 	c4 r r2 r
 % Bars 781 to 785
