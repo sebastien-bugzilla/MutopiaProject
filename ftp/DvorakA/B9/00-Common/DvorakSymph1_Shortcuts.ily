@@ -64,9 +64,11 @@ ppplegato = \markup {\dynamic ppp \italic {legato}}
 mfcresc = \markup {\dynamic mf \italic {cresc.}}
 ppocoapococresc = \markup {\dynamic p \italic {poco a poco cresc.}}
 pppocoapococrescendo = \markup {\dynamic pp \italic {poco a poco crescendo}}
+ppleggierissimo = \markup {\dynamic pp \italic {leggierissimo}}
 
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
+crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 
 inc = \markup {in C}
 ines = \markup {[in Es]}
