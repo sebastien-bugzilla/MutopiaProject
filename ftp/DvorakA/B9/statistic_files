@@ -1,7 +1,7 @@
     162     440    5352 10_DvorakSymph1_Conductor_mvt1.ly
     136     376    4517 10_DvorakSymph1_Conductor_mvt2.ly
     149     408    5032 10_DvorakSymph1_Conductor_mvt3.ly
-    155     435    5149 10_DvorakSymph1_Conductor_mvt4.ly
+    155     430    5144 10_DvorakSymph1_Conductor_mvt4.ly
     215     530    4521 20_DvorakSymph1_Part01_Flauti.ly
     215     530    4465 20_DvorakSymph1_Part02_Oboi.ly
     196     490    4371 20_DvorakSymph1_Part03_Clarinetti.ly
@@ -16,7 +16,7 @@
     120     330    3119 20_DvorakSymph1_Part12_Violoncello.ly
     120     330    3119 20_DvorakSymph1_Part13_Contrabasso.ly
       7      13      84 display.ly
-     65     230    1168 test.ly
+     75     261    1279 test.ly
     294     824    6864 00-Common/DvorakSymph1_CueVoice.ily
      10      64     558 00-Common/DvorakSymph1_Format_Cond_Mvt01.ily
      10      64     559 00-Common/DvorakSymph1_Format_Cond_Mvt02.ily
@@ -43,9 +43,9 @@
     587    2053   17145 00-Common/DvorakSymph1_NameVoice.ily
      67     192    1627 00-Common/DvorakSymph1_PaperConductors.ily
      67     192    1627 00-Common/DvorakSymph1_PaperParts.ily
-    528    1686   12678 00-Common/DvorakSymph1_Shortcuts.ily
+    530    1648   12495 00-Common/DvorakSymph1_Shortcuts.ily
      59     175    1328 00-Common/DvorakSymph1_Tempi.ily
-     35     189    1063 00-Common/DvorakSymph1_timeMvt.ily
+     43     243    1313 00-Common/DvorakSymph1_timeMvt.ily
     770    2350   12064 01-Mvt1/m01_v02_music_FlautoI_C.ily
     770    2292   11265 01-Mvt1/m01_v02_music_FlautoI.ily
     762    2216   10750 01-Mvt1/m01_v03_music_FlautoII_C.ily
@@ -184,9 +184,9 @@
     779    1860    8148 04-Mvt4/m04_v18_music_TrombonoII.ily
     743    1847    8213 04-Mvt4/m04_v19_music_TrombonoIII.ily
     687    1718    6902 04-Mvt4/m04_v20_music_Timpani.ily
-   1000    4526   17814 04-Mvt4/m04_v21_music_ViolinoI.ily
-    345     891    3774 04-Mvt4/m04_v22_music_ViolinoII.ily
+   1000    4525   17818 04-Mvt4/m04_v21_music_ViolinoI.ily
+   1000    4424   17479 04-Mvt4/m04_v22_music_ViolinoII.ily
     345     891    3768 04-Mvt4/m04_v23_music_Viola.ily
     345     891    3774 04-Mvt4/m04_v24_music_Violoncello.ily
     345     891    3774 04-Mvt4/m04_v25_music_Contrabasso.ily
-  86147  260113 1306434 total
+  86822  263687 1320316 total

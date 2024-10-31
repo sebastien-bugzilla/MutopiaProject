@@ -912,7 +912,7 @@ musicViolinoIMvtIV = \relative c {
 	g, g c! c dis dis e e
 	a, a c c e e f f \section
 % Bars 761 to 765
-	\time 3/2 g\ff g cis, cis  cis cis d d  e e d d  cis cis bes' bes  a a g g  f f e e 
+	\timeThreeTwo g\ff g cis, cis  cis cis d d  e e d d  cis cis bes' bes  a a g g  f f e e 
 	f f f f  g g g f  f f f f  f f f f  d d d d  e e e d
 	d d gis, gis  gis gis a a  b b a a  gis gis f' f  e e d d  c c b b
 	c c c c  d d d c  c c c c  c c c c  a a a a  b b b a

@@ -66,9 +66,11 @@ ppocoapococresc = \markup {\dynamic p \italic {poco a poco cresc.}}
 pppocoapococrescendo = \markup {\dynamic pp \italic {poco a poco crescendo}}
 ppleggierissimo = \markup {\dynamic pp \italic {leggierissimo}}
 
+
 plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
 ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
 crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
+fpp = #(make-dynamic-script (markup #:dynamic "fpp"))
 
 inc = \markup {in C}
 ines = \markup {[in Es]}
@@ -136,6 +138,28 @@ omitAccidental = \once \omit Staff.Accidental
 
 omitTupletNumber = \once \omit Voice.TupletNumber
 
+
+trillSpanCustom = #(define-music-function
+	(markup)
+	(markup?)
+	#{
+		\once \override TrillSpanner.springs-and-rods = #ly:spanner::set-spacing-rods
+		\once \override Score.TrillSpanner.bound-details.left.text = #markup
+	#}
+)
+
+naturaltrill = \markup { 
+	\general-align #X #CENTER 
+	\line { 
+		\general-align #Y #CENTER \musicglyph #"scripts.trill" \tiny \natural 
+	}
+}
+flattrill = \markup { 
+	\general-align #X #CENTER 
+	\line { 
+		\general-align #Y #DOWN \tiny \flat \musicglyph #"scripts.trill" 
+	}
+}
 
 %stemOffset = #(define-music-function
 %	(offset)
@@ -443,18 +467,6 @@ omitTupletNumber = \once \omit Voice.TupletNumber
 %	#}
 %)
 
-%trillSpanCustom = #(define-music-function
-%	(length markup)
-%	(number? markup?)
-%	% function to create a trill spanner with :
-%	%	- specified length
-%	%	- specified markup
-%	#{
-%		\once \override TrillSpanner.minimum-length = #length
-%		\once \override TrillSpanner.springs-and-rods = #ly:spanner::set-spacing-rods
-%		\once \override Score.TrillSpanner.bound-details.left.text = #markup
-%	#}
-%)
 
 %trillSpanPadding = #(define-music-function
 %	(padding)
@@ -467,16 +479,6 @@ omitTupletNumber = \once \omit Voice.TupletNumber
 %)
 
 
-%naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \natural 
-%	}
-%}
-%flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
-%	}
-%}
 %sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 %	\concat { 
 %		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \sharp  
