@@ -52,13 +52,3 @@
 %		\override TextScript.font-size = #1
 	}
 }
-layoutHorn = {
-	\set Staff.soloText = #"III"
-	\set Staff.soloIIText = #"IV"
-	\set Staff.aDueText = #"a2"
-}
-layoutPosaune = {
-	\set Staff.soloText = #"III"
-	\set Staff.soloIIText = #"Tuba"
-	\set Staff.aDueText = #"a2"
-}
