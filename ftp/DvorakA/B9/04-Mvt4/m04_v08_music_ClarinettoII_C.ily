@@ -897,7 +897,7 @@ musicClarinettoIIMvtIV = \relative c {
 	c,1.->
 	dis1-> \tuplet 3/2 2 {e4-> fis-> g->}
 	g1.->\fp
-	fis!->\fp
+	gis!->\fp
 % Bars 781 to 785
 	e->\fp
 	e->\ff

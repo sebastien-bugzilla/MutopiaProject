@@ -166,7 +166,7 @@ musicCornoIIMvtII = \relative c {
 % Bars 166 to 170
 	
 	\section
-	R2^\inc
+	R2^\inc \transposition c
 	c8\f[ g16 e32. e64] g16-. c-. e,-. r
 	c'8[ g16 e32. e64] g16-. c-. e,-. r
 % Bars 171 to 175
@@ -179,7 +179,7 @@ musicCornoIIMvtII = \relative c {
 	g g e8 e32 e c'4~_\dimin
 	c8 r r4
 	R2*2
-	<>^\ines
+	<>^\ines \transposition ees
 	g,2\pp~
 % Bars 181 to 185
 	g~

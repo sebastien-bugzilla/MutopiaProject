@@ -89,7 +89,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 66 to 70
 	f,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
 	c8->_\marcato aes'-> d,-> f->
-	e-> g-> c,4->
+	ees-> g-> c,4->  % e => ees based on audio recording
 	f,->_\marcato g->
 	aes-> bes->
 % Bars 71 to 75
@@ -320,7 +320,7 @@ musicVioloncelloMvtIII = \relative c {
 	ees4.) bes8(
 % Bars 236 to 240
 	<ees, ees'>2\pp)~
-	q8 r r r16 \section r %%%%%%%%%%%%%%%
+	q8 r r r16 \section r
 	c'8->\f[ g'] d-> g->
 	ees->_\dimmarkup g-> f16( ees d c
 	bes8-.)[ c-.]\p d-. d-.
@@ -400,7 +400,7 @@ musicVioloncelloMvtIII = \relative c {
 	c,8-. c-. c-. r
 	f,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
 	c8->_\marcato aes'-> d,-> f->
-	e-> g-> c,4->
+	ees-> g-> c,4->  % e => ees based on audio recording
 	f,-._\marcato g-.
 % Bars 306 to 310
 	aes-> bes->

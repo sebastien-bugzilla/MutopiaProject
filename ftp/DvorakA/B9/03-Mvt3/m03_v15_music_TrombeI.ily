@@ -118,7 +118,7 @@ musicTrombeIMvtIII = \relative c {
 	ees4->\brack\ff ees->
 % Bars 91 to 95
 	f8.-> ees16-. ees4->
-	e8-> d-> c-> bes->
+	ees8-> d-> c-> bes->
 	f'8.-> ees16-. ees4->
 	e!2~
 	e~
@@ -354,7 +354,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 326 to 330
 	ees4->\brack\ff ees->
 	f8.-> ees16-. ees4->
-	e8-> d-> c-> bes->
+	ees8-> d-> c-> bes->
 	f'8.-> ees16-. ees4->
 	e!2~
 % Bars 331 to 335

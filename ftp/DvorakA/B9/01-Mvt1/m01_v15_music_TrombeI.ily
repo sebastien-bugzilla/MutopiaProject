@@ -7,7 +7,7 @@
 musicTrombeIMvtI = \relative c {
 	\clef treble
 	\key a \minor
-	\transposition bes
+	\transposition ees
 % Bars 1 to 5
 	c''4\f r r2
 	c4 r r2

@@ -477,7 +477,7 @@ musicContrabassoMvtI = \relative c {
 	gis-.\< gis-. gis-.
 	gis-. gis-. gis-.\!
 % Bars 391 to 395
-	b2.\brack\pp
+	bes2.\brack\pp
 	d(
 	f
 	aes)

@@ -101,7 +101,7 @@ musicFagottoIMvtII = \relative c {
 	ges16\< r r ges32-. ges-. f16\! r r f32-. f-.
 % Bars 81 to 85
 	\tuplet 6/4 4 {f16\mf f f f f f g g g a a a
-	bes bes bes des\< des des c c c\! d d d }
+	bes bes bes des!\< des des c c c\! d d d }
 	ees8\f bes,4 bes8~
 	bes bes4 bes8
 	bes16 bes' bes, bes' bes, bes' bes, bes' 
@@ -115,7 +115,7 @@ musicFagottoIMvtII = \relative c {
 	c4( bes8 aes)
 	<< g4( {s8\< s\!}>> f8\> c'16 bes\!)
 	bes4.( ees8
-	d2)
+	des2)
 	d8 r r4
 % Bars 96 to 100
 	R2

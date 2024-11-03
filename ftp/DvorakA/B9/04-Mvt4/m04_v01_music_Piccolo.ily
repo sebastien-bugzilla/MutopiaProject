@@ -477,9 +477,9 @@ musicPiccoloMvtIV = \relative c {
 	\tuplet 3/2 2 {f4-.\brack\ff r f-. ges-. r ges-. f-. r f-.
 	e-. r e-. fis-. r fis-. e-. r e-.
 	ees-. r ees-. f!-. r f-. ees-. r ees-.}
-	d2-> c-> bes->
+	d2-> c-> b->
 % Bars 776 to 780
-	ees-> d-> c->
+	e-> d-> c->
 	g'-> f-> e->
 	bes'1-> \tuplet 3/2 2 {a4-> g-> f->}
 	f r r2 r

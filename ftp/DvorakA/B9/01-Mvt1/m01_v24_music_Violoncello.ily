@@ -133,7 +133,7 @@ musicVioloncelloMvtI = \relative c {
 		c2(\f d4)
 		ees2( f4)
 		g2( aes4)
-		b2->(\< aes4)\!
+		bes2->(\< aes4)\!
 		c,8\f g g ees' ees c
 % Bars 106 to 110
 		c g' g ees ees c'
@@ -485,7 +485,7 @@ musicVioloncelloMvtI = \relative c {
 	gis-.\< gis-. gis-.
 	gis-. gis-. gis-.\!
 % Bars 391 to 395
-	b2.\pp
+	bes2.\pp
 	d(
 	f
 	aes)

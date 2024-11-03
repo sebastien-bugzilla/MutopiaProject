@@ -54,7 +54,7 @@ musicOboeIIMvtII = \relative c {
 % Bars 46 to 50
 	<< g2 {s8\> s s s\!} >>
 	f2
-	e8.( des16 c f g a)
+	e8.( d16 c f g a)  % des => d according to audio recording
 	c8( bes a g16 f)
 	bes2~
 % Bars 51 to 55

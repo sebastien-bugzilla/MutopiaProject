@@ -219,7 +219,7 @@ musicViolinoIMvtII = \relative c {
 	g-> bes-> bes-> g-> \grace {e16^( g} c)_\dimin r \grace {f,16^( aes} c) r
 	\grace {e,16^( bes'} c) r \grace {aes^( c} f) r \grace {c^( e} g) r \grace {b,^( f'} g) r
 	\grace {e^( g} c) r \grace {c,,( e} g) r \grace {c,( f} aes) r \grace {e^( g} bes) r
-	\grace {aes^( c} f)\brack\p r \grace {a,^( c} f) r \grace {bes,^( d} f) r \grace {f,^( aes} c) r
+	\grace {aes^( c} f)\brack\p r \grace {a,^( c} f) r \grace {bes,^( des} f) r \grace {f,^( aes} c) r
 	r bes8\pp bes16 c-. bes-. r bes-.
 % Bars 181 to 185
 	r bes8 bes16 c-. bes-. r bes-.

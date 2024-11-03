@@ -129,7 +129,7 @@ musicVioloncelloMvtII = \relative c {
 	r bes8_\crescendo\< bes16 r bes8\! bes16
 	bes32\f-. bes-. g-. g-. ees-. ees-. c'-. c-. bes-. bes-. ees-. ees-. c-. c-. g-. aes-. 
 	bes-. bes-. g-. g-. ees-. ees-. c'-. c-. bes-. bes-. ees-. ees-. c-. c-. g-. aes-. 
-	bes-. a-. bes-. c-. des-. c-. des-. bes-. ees-. f-. g-. aes-. bes-. c-. bes-. aes-. 
+	bes-. a-. bes-. c-. d-. c-. d-. bes-. ees-. f-. g-. aes-. bes-. c-. bes-. aes-.  % des => d according to audio recording
 % Bars 86 to 90
 	g-. ees-. f-. g-. aes-. bes-. c-. d-. ees-. d-. c-. bes-. c-. bes-. aes-. g-. 
 	f-. g-. f-. ees-. d-. c-. d-. bes-. ees-. g-. c( bes) f-. aes-. ees'( d)

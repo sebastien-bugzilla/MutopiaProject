@@ -71,7 +71,7 @@ musicViolaMvtII = \relative c {
 	r bes8\> bes16\! r e8 e16
 	r <a, ees'!>8 q16 r q8 q16
 	r <g c e>8 q16 r <a f'>8 q16
-	e'16( f des e g_\crescmarkup f c des)
+	e'16( f d e g_\crescmarkup f c d) % des => d according to audio recording
 	e([ c g f32 e] f16[ g32 aes bes16 aes])
 % Bars 51 to 55
 	g16( bes aes g) des'( bes des f,)
@@ -114,7 +114,7 @@ musicViolaMvtII = \relative c {
 	r bes8_\crescendo bes16 r\< <bes f'>8 q16\!
 	bes32\f-. bes-. g-. g-. ees-. ees-. c'-. c-. bes-. bes-. ees-. ees-. c-. c-. g-. aes-. 
 	bes-. bes-. g-. g-. ees-. ees-. c'-. c-. bes-. bes-. ees-. ees-. c-. c-. g-. aes-. 
-	bes-. a-. bes-. c-. des-. c-. des-. bes-. ees-. f-. g-. aes-. bes-. c-. bes-. aes-. 
+	bes-. a-. bes-. c-. d-. c-. d-. bes-. ees-. f-. g-. aes-. bes-. c-. bes-. aes-.  % des => d according to audio recording
 % Bars 86 to 90
 	g-. ees-. f-. g-. aes-. bes-. c-. d-. ees-. d-. c-. bes-. c-. bes-. aes-. g-. 
 	f-. g-. f-. ees-. d-. c-. d-. bes-. ees-. g-. c( bes) f-. aes-. ees'( d) \clef treble

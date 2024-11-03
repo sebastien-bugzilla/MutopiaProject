@@ -7,7 +7,7 @@
 musicTrombeIIMvtII = \relative c {
 	\clef treble
 	\key c \major
-%	\transposition a
+	\transposition ees
 % Bars 1 to 5
 	R2\fermata
 	R\fermata
@@ -111,7 +111,7 @@ musicTrombeIIMvtII = \relative c {
 % Bars 166 to 170
 	
 	\section
-	R2
+	R2^\inc \transposition c
 	c'8\f[ g16 e32. e64] g16-. c-. e,-. r
 	c'8[ g16 e32. e64] g16-. c-. e,-. r
 % Bars 171 to 175

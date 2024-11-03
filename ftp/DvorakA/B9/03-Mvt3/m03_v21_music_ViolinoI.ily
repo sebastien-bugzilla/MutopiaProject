@@ -435,7 +435,7 @@ musicViolinoIMvtIII = \relative c {
 	g8.-> fis16-. fis4
 	g8-. a-. b8.-> b16-.
 	<b, b'>2->
-	bes'16-. ees-. d( ees) des-. e,-. g( f)
+	bes'!16-. ees-. d( ees) des-. e,-. g( f)
 % Bars 351 to 355
 	ees!( f) g-. c-. aes8-. r
 	g16-. ees'-. d( ees) des-. e,-. g( f)

@@ -111,7 +111,7 @@ musicTrombeIMvtII = \relative c {
 % Bars 166 to 170
 	
 	\section
-	R2
+	R2^\inc \transposition c
 	e8\f[ d16 c32. c64] d16-. e-. c-. r
 	e8[ d16 c32. c64] d16-. e-. c-. r
 % Bars 171 to 175
@@ -122,7 +122,7 @@ musicTrombeIMvtII = \relative c {
 	e16 d32 c d e c r e16 d32 c d e c r
 % Bars 176 to 180
 	d e c8 c32 c c4~_\dimin
-	c8 r r4
+	c8 r r4 
 	R2*16
 % Bars 181 to 185
 	

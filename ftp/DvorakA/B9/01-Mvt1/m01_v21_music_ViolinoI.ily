@@ -530,7 +530,7 @@ musicViolinoIMvtI = \relative c {
 % Bars 436 to 440
 	
 	
-	r4 r des'8-.\pp c-.
+	r4 r d'8-.\pp c-.
 	c-. b-. b-. g-. g-. aes-. 
 	aes-. g-. g-. d-. d-. f-. 
 % Bars 441 to 445

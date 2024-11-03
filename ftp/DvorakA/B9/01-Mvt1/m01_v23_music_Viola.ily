@@ -519,7 +519,7 @@ musicViolaMvtI = \relative c {
 	q8 r c,4->~
 % Bars 416 to 420
 	c8[ d-. ees-. f-.] 
-	g-.[ a-. bes-. c-.] 
+	g-.[ aes-. bes-. c-.] 
 	d-.[ ees-. f-.] r \section 
 	\time 3/4 g,8-.\brack\pp bes-. ees-.\noBeam d4-> c8-.
 	c-. a-. bes-.\noBeam d4-> g8-.

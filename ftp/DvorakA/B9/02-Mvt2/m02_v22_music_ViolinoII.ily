@@ -65,8 +65,8 @@ musicViolinoIIMvtII = \relative c {
 % Bars 46 to 50
 	r\> q8 q16\! r <bes g'>8 q16
 	r c'-. b-. c-. r ees-. des-. ees-. 
-	r e-. des-. e-. r c-. des-. c-. 
-	e( f des e g_\crescmarkup f c des)
+	r e-. d-. e-. r c-. d-. c-.  % des => d according to audio recording
+	e( f d e g_\crescmarkup f c d)  % des => d according to audio recording
 	e[( c g f32 e] f16[ g32 aes bes16 aes])
 % Bars 51 to 55
 	g16( bes aes g bes8 des,)

@@ -89,7 +89,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 66 to 70
 	f,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
 	c8->_\brackM\marcato aes'-> d,-> f->
-	e-> g-> c,4->
+	ees-> g-> c,4->  % e => ees based on audio recording
 	f,->_\marcato g->
 	aes-> bes->
 % Bars 71 to 75
@@ -296,7 +296,7 @@ musicContrabassoMvtIII = \relative c {
 	ees4. bes8
 % Bars 236 to 240
 	ees\brack\pp r ees r
-	ees r r r16 \section r %%%%%%%%%%%%%%%
+	ees r r r16 \section r
 	R2*3
 	
 	
@@ -376,7 +376,7 @@ musicContrabassoMvtIII = \relative c {
 	c,8-. c-. c-. r
 	f,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
 	c8->_\marcato aes'-> d,-> f->
-	e-> g-> c,4->
+	ees-> g-> c,4->  % e => ees based on audio recording
 	f,->_\marcato g->
 % Bars 306 to 310
 	aes-> bes->

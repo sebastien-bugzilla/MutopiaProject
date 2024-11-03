@@ -89,7 +89,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 66 to 70
 	f,,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
 	c8-. aes'-. d,-. f-. 
-	e-. g-. c,4->
+	ees-. g-. c,4->  % e => ees based on audio recording
 	c'8->\fp c16 r b8->\fp b16 r
 	g8->\fp g16 r f8->\fp f16 r
 % Bars 71 to 75
@@ -370,7 +370,7 @@ musicFagottoIMvtIII = \relative c {
 	c-. d-. c-. r
 	f,,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
 	c8-. aes'-. d,-. f-. 
-	e-. g-. c,4->
+	ees-. g-. c,4-> % e => ees based on audio recording
 	c'8->\fp c16 r b8->\fp b16 r
 % Bars 306 to 310
 	g8->\fp g16 r f8->\fp f16 r

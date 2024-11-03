@@ -4,6 +4,37 @@
 %###############################################################################
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
+ppplegato = \markup {\hspace #-1.55 \dynamic ppp \italic {legato}}
+ppsempre = \markup {\hspace #-0.82 \dynamic pp \italic {sempre}}
+ppdolce = \markup {\hspace #-0.82 \dynamic pp \italic {dolce}}
+ppstacc = \markup {\hspace #-0.82 \dynamic pp \italic {stacc.}}
+ppcresc = \markup {\hspace #-0.82 \dynamic pp \italic {cresc.}}
+pppocoapococresc = \markup {\hspace #-0.82 \dynamic pp \italic {poco a poco cresc.}}
+pppocoapococrescendo = \markup {\hspace #-0.82 \dynamic pp \italic {poco a poco crescendo}}
+ppleggierissimo = \markup {\hspace #-0.82 \dynamic pp \italic {leggierissimo}}
+pcresc = \markup {\hspace #-0.08 \dynamic p \italic {cresc.}}
+pdolce = \markup {\hspace #-0.08 \dynamic p \italic {dolce}}
+pcrescendo = \markup {\hspace #-0.08 \dynamic p \italic {crescendo}}
+ppocoapococrescendo = \markup {\hspace #-0.08 \dynamic p \italic {poco a poco crescendo}}
+ppocoapococresc = \markup {\hspace #-0.08 \dynamic p \italic {poco a poco cresc.}}
+pdim = \markup {\hspace #-0.08 \dynamic p \italic {dim.}}
+mfespressivo = \markup {\hspace #-0.8 \dynamic mf \italic {espressivo}}
+mfcrescendo = \markup {\hspace #-0.8 \dynamic mf \italic {crescendo}}
+mfcresc = \markup {\hspace #-0.8 \dynamic mf \italic {cresc.}}
+fzcresc = \markup {\hspace #-0.54 \dynamic fz \italic {cresc.}}
+fzcrescendo = \markup {\hspace #-0.54 \dynamic fz \italic {crescendo}}
+fdiminuendo = \markup {\hspace #0.02 \dynamic f \italic {diminuendo}}
+flegato = \markup {\hspace #0.02 \dynamic f \italic {legato}}
+fmarcato = \markup {\hspace #0.02 \dynamic f \italic {marcato}}
+flegatosempre = \markup {\hspace #0.02 \dynamic f \italic {legato sempre}}
+fmarcatoconmoltaforza = \markup {\hspace #0.02 \dynamic f \italic {marcato, con molta forza}}
+fconespressione = \markup {\hspace #0.02 \dynamic f \italic {con espressione}}
+ffdim = \markup {\hspace #-0.53 \dynamic ff \italic {dim.}}
+
+semprepp = \markup {\italic {sempre} \dynamic pp}
+sempreff = \markup {\italic {sempre} \dynamic ff}
+
+
 pococrescendo = \markup {\italic {poco crescendo}}
 crescmarkup = \markup {\italic {cresc.}}
 legato = \markup {\italic {legato}}
@@ -14,32 +45,20 @@ dimmarkup = \markup {\italic {dim.}}
 dimin = \markup {\italic {dimin.}}
 dolce = \markup {\italic {dolce}}
 marcato = \markup {\italic {marcato}}
-fdiminuendo = \markup {\dynamic f \italic {diminuendo}}
-ppsempre = \markup {\dynamic pp \italic {sempre}}
 staccato = \markup {\italic {staccato}}
 stacc = \markup {\italic {stacc.}}
 aII = \markup {\bold a2}
-fzcresc = \markup {\dynamic fz \italic {cresc.}}
 energico = \markup {\italic {energico}}
-semprepp = \markup {\italic {sempre} \dynamic pp}
 soli = \markup {Soli}
-pcresc = \markup {\dynamic p \italic {cresc.}}
-flegato = \markup {\dynamic f \italic {legato}}
 solo = \markup {Solo}
-ppdolce = \markup {\dynamic pp \italic {dolce}}
-fmarcato = \markup {\dynamic f \italic {marcato}}
-pdolce = \markup {\dynamic p \italic {dolce}}
 pizz = \markup {\italic {pizz.}}
 arco = \markup {\italic {arco}}
 spiccato = \markup {\italic {spiccato}}
 sulg = \markup {sul G}
-ppstacc = \markup {\dynamic pp \italic {stacc.}}
-pdim = \markup {\dynamic p \italic {dim.}}
 pocoapococresc = \markup {\italic {poco a poco cresc.}}
 div = \markup {div.}
 marc = \markup {\italic {marc.}}
 sempre = \markup {\italic {sempre}}
-flegatosempre = \markup {\dynamic f \italic {legato sempre}}
 pococresc = \markup {\italic {poco cresc.}}
 sole = \markup {Sole}
 sulg = \markup {sul G}
@@ -47,32 +66,24 @@ velmijemnedelicatissimo = \markup {\italic {velmi jemně [delicatissimo]}}
 espressivo = \markup {\italic {espressivo}}
 divisi = \markup {divisi}
 pizzsempre = \markup {\italic {pizz. sempre}}
-ppcresc = \markup {\dynamic pp \italic {cresc.}}
-fmarcatoconmoltaforza = \markup {\dynamic f \italic {marcato, con molta forza}}
 tutti = \markup {Tutti}
-sempreff = \markup {\italic {sempre} \dynamic ff}
 solidiv = \markup {Soli div.}
-ffdim = \markup {\dynamic ff \italic {dim.}}
-mfespressivo = \markup {\dynamic mf \italic {espressivo}}
-pppocoapococresc = \markup {\dynamic pp \italic {poco a poco cresc.}}
-pcrescendo = \markup {\dynamic p \italic {crescendo}}
-ppocoapococrescendo = \markup {\dynamic p \italic {poco a poco crescendo}}
-mfcrescendo = \markup {\dynamic mf \italic {crescendo}}
-fzcrescendo = \markup {\dynamic fz \italic {crescendo}}
-fconespressione = \markup {\dynamic f \italic {con espressione}}
-ppplegato = \markup {\dynamic ppp \italic {legato}}
-mfcresc = \markup {\dynamic mf \italic {cresc.}}
-ppocoapococresc = \markup {\dynamic p \italic {poco a poco cresc.}}
-pppocoapococrescendo = \markup {\dynamic pp \italic {poco a poco crescendo}}
-ppleggierissimo = \markup {\dynamic pp \italic {leggierissimo}}
 marc = \markup {\italic {marc.}}
 divisi = \markup {\italic {divisi}}
 conespressione = \markup {\italic {con espressione}}
 
-plegato = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "legato"))
-ppcrescendo = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "crescendo"))
-crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
-fpp = #(make-dynamic-script (markup #:dynamic "fpp"))
+plegato = #(make-dynamic-script 
+	(markup #:dynamic "p" #:normal-text #:italic "legato")
+)
+ppcrescendo = #(make-dynamic-script 
+	(markup #:dynamic "pp" #:normal-text #:italic "crescendo")
+)
+crescD = #(make-dynamic-script 
+	(markup #:normal-text #:italic "cresc.")
+)
+fpp = #(make-dynamic-script 
+	(markup #:dynamic "fpp")
+)
 
 inc = \markup {in C}
 ines = \markup {[in Es]}

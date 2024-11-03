@@ -761,7 +761,7 @@ musicClarinettoIMvtIV = \relative c {
 	fis4.. g16
 % Bars 671 to 675
 	g8. a16 fis8. g16
-	g8-. a-. b-. c-.
+	g8-. a-. b-. cis-.
 	d4.. e16
 	cis4.. d16
 	d8.-> e16 cis8.-> d16
