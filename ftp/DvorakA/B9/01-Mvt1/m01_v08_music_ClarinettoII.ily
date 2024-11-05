@@ -94,7 +94,7 @@ musicClarinettoIIMvtI = \relative c {
 		des'2 des8. des16
 % Bars 76 to 80
 		des2 des8. des16
-		a2._\crescmarkup~
+		a2._\brackM\crescmarkup~
 		a~
 		a~
 		a
@@ -154,7 +154,7 @@ musicClarinettoIIMvtI = \relative c {
 		r d2\p
 		r4 d2
 % Bars 131 to 135
-		r4 d2
+		r4_\crescendo d2
 		r4 d2
 		r4 d2
 		r4 d2
@@ -642,7 +642,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 541 to 545
 	
 	a,2.\brack\p\<~
-	a~\!
+	a~\!\p
 	a~
 	a~
 % Bars 546 to 550

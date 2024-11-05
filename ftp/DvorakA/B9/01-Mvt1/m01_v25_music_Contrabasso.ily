@@ -101,7 +101,7 @@ musicContrabassoMvtI = \relative c {
 		
 % Bars 76 to 80
 		
-		g'8._\brackM\crescmarkup g16 g2~
+		g'8.\brack\pp_\brackM\crescmarkup g16 g2~
 		g2.
 		g,8. g16 g2~
 		g2.
@@ -166,14 +166,14 @@ musicContrabassoMvtI = \relative c {
 		<g, g'>2\p^\div( <c c'>4)
 		<bes bes'>2( <aes aes'>4)
 % Bars 131 to 135
-		<g g'>2( <c c'>4)
+		<g g'>2(_\crescendo <c c'>4)
 		<bes bes'>2( <aes aes'>4)
 		<g g'>2( <ees' ees'>4)
 		<d d'>2( <c c'>4)
 		<g g'>2( <ees' ees'>4)
 % Bars 136 to 140
 		<d d'>2( <c c'>4)
-		aes->\brack\f bes'(-> aes8) r 
+		aes->\f bes'(-> aes8) r 
 		aes, r bes'4->( aes8) r
 		aes, r bes'4(-> aes8) r
 		aes, r bes'4(-> aes8) r
@@ -255,7 +255,7 @@ musicContrabassoMvtI = \relative c {
 		R2.
 % Bars 211 to 215
 		r8 bes16(\brack\pp g e8) r r4
-		r8 b'16( g e8) r r4
+		r8_\crescendo b'16( g e8) r r4
 		r8 c'16( g e8) r r4
 		r8 cis'16( g e8) r r4
 		ees'!4(\f g c!)
@@ -565,7 +565,7 @@ musicContrabassoMvtI = \relative c {
 	fis:
 	fis:
 	fis4 r r
-	r fis'8.\brack\p fis'16 fis4
+	r fis'8.\brack\p_\crescmarkup fis'16 fis4
 % Bars 466 to 470
 	e2 r4
 	r e,8. e'16 e4
@@ -603,7 +603,7 @@ musicContrabassoMvtI = \relative c {
 	bes r r\fermata
 	f2.~\brack\pp
 % Bars 496 to 500
-	\after 2.*2/3 <>_\crescmarkup f~
+	\after 2.*2/3 <>_\brackM\crescmarkup f~
 	f~\<
 	\after 2.*5/6 \! f \section
 	\key a \minor e2 a'4(\p
@@ -669,7 +669,7 @@ musicContrabassoMvtI = \relative c {
 	g r r
 	g, r r
 % Bars 551 to 555
-	g2.~^\brackM\arco_\pocoapococresc
+	g2.~^\brackM\arco_\brackM\pocoapococresc
 	g~
 	g~
 	g

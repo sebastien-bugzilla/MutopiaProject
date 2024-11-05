@@ -94,7 +94,7 @@ musicFlautoIIMvtI = \relative c {
 		des2 des8. des16
 % Bars 76 to 80
 		des2 des8. des16
-		d!4-._\crescmarkup r r
+		d!4-. r r
 		R2.*8 
 		
 		
@@ -281,7 +281,7 @@ musicFlautoIIMvtI = \relative c {
 		R2.*3
 		
 		
-		r4 d,(\plegato\< ees
+		r4 d,(\brack\p_\legato\< ees
 		f g des'\!
 % Bars 241 to 245
 		c)\f r r
@@ -336,7 +336,7 @@ musicFlautoIIMvtI = \relative c {
 		bes4 r r
 		\alternative {
 			\volta 1 {
-				r4 g2\pp->
+				r4 g2\brack\pp->
 				r4 g2->
 			}
 			\volta 2 {
@@ -360,7 +360,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 301 to 305
 	bes'2\p~ bes8. aes16-.
 	g2~ g8. f16-.
-	e2._\crescendo\<~
+	e2._\brackM\crescendo\<~
 	e\!
 	f2\f~ f8. ees!16-.
 % Bars 306 to 310
@@ -549,7 +549,7 @@ musicFlautoIIMvtI = \relative c {
 	des2.~
 	des2 r4 \bar "||"
 % Bars 476 to 480
-	\key e \major gis4->_\marcato fis-> e->
+	\key e \major gis4->_\brackM\marcato fis-> e->
 	e-> dis-> cis->
 	gis'-> fis-> e->
 	dis-> cis-> b->

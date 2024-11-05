@@ -65,7 +65,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 51 to 55
 		c-. c-. c-.
 		c-. c-. c-.
-		c4. c8 c4
+		c4._\pococrescendo c8 c4
 		c4. c8 c4
 		c4. c8 c4
 % Bars 56 to 60
@@ -173,7 +173,7 @@ musicCornoIIIMvtI = \relative c {
 		d2->~ d8. d16
 		d2.~->
 		d4 e-> f->
-		g r r
+		g_\diminuendo r r
 		R2.
 % Bars 171 to 175
 		g,4.\p g,8 g4
@@ -225,7 +225,7 @@ musicCornoIIIMvtI = \relative c {
 		r << bes2 {s8\p\< s s s\!}>>
 % Bars 211 to 215
 		r4 e,8\brack\pp fis g4->
-		r e8 fis gis4->
+		r_\crescendo e8 fis gis4->
 		r e8\< gis a4->
 		r e8 a bes4->\!
 		\partCombineApart c4(_\brackM\legato e, a) \partCombineAutomatic
@@ -373,7 +373,7 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	
-	d8\brack\p d d d d d
+	d8\brack\p_\crescendo d d d d d
 	d d d d d d
 % Bars 356 to 360
 	d\< d d d d d
@@ -410,7 +410,7 @@ musicCornoIIIMvtI = \relative c {
 	g~
 	g~
 	g
-	g->
+	g->_\crescendo
 % Bars 396 to 400
 	g->\<
 	g->

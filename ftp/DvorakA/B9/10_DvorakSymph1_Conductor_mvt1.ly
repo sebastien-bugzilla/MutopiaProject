@@ -102,7 +102,7 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
+				\new GrandStaff \with { \nameGrandStaffIMvtI \consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtI \nameStaffVIMvtI
 						\partCombine \musicCornoIMvtI \musicCornoIIMvtI
@@ -119,7 +119,7 @@
 					\partCombine \musicTrombeIMvtI \musicTrombeIIMvtI
 %					\musicTrombeIIMvtI 
 				}
-				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtI \consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtI \nameStaffIXMvtI
 						\partCombine \musicTrombonoIMvtI \musicTrombonoIIMvtI
@@ -157,6 +157,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+			system-count = 93
 		}
 	}
 }

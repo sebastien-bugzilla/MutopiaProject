@@ -154,7 +154,7 @@ musicClarinettoIMvtI = \relative c {
 		r f2\p
 		r4 f2
 % Bars 131 to 135
-		r4 f2
+		r4_\crescendo f2
 		r4 f2
 		r4 f2
 		r4 f2
@@ -200,7 +200,7 @@ musicClarinettoIMvtI = \relative c {
 		g r r
 		R2.*2
 		
-		g,2\brack\f c4~
+		g,2\brack\f_\diminuendo c4~
 % Bars 171 to 175
 		c2.~
 		c
@@ -505,7 +505,7 @@ musicClarinettoIMvtI = \relative c {
 	b a a')
 % Bars 421 to 425
 	g( f e
-	d c2)
+	d c!2)
 	R2.
 	d,4-. c-. c'-.
 	R2.
@@ -646,7 +646,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 541 to 545
 	a2.~
 	a~
-	a~
+	a~\p
 	a~
 	a~
 % Bars 546 to 550

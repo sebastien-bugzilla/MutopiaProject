@@ -201,7 +201,7 @@ musicOboeIIMvtI = \relative c {
 		d r r
 		R2.
 		R
-		f,4(\f c'_\diminuendo bes~
+		f,4(\brack\f_\diminuendo c' bes~
 % Bars 171 to 175
 		bes2.~
 		bes~
@@ -363,7 +363,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 301 to 305
 	bes'2\p~ bes8. aes16-.
 	g2~ g8. f16-.
-	e2._\crescendo~
+	e2._\brackM\crescendo~
 	e
 	f2~\f f8. ees!16-.
 % Bars 306 to 310
@@ -380,7 +380,7 @@ musicOboeIIMvtI = \relative c {
 	c,2.\p->
 % Bars 316 to 320
 	b->
-	c4(_\pococrescendo f g
+	c4( f_\brackM\pococrescendo g
 	aes\< b c)
 	des( b c
 	a c ees)\!
@@ -457,7 +457,7 @@ musicOboeIIMvtI = \relative c {
 	c2( d4)
 	e4 d c
 % Bars 381 to 385
-	d8 e d c\p g' f
+	d8 e d\p c g' f
 	e4 c,2\brack\pp~
 	c2.~
 	c~

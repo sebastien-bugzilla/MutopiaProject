@@ -223,7 +223,7 @@ musicCornoIIMvtI = \relative c {
 		r << f,2 {s8\p\< s s s\!} >>
 % Bars 211 to 215
 		r4 d8\pp e f4->
-		r4 d8 e fis4->
+		r4_\crescendo d8 e fis4->
 		r d8\< fis g4->
 		r d8 g aes4->\!
 		bes,(_\legato d g)
@@ -403,7 +403,7 @@ musicCornoIIMvtI = \relative c {
 	g\pp-. g-. g-.
 	g-. g-. g-.
 % Bars 386 to 390
-	g-. g-. g-.
+	g-._\pococrescendo g-. g-.
 	R2.*8
 % Bars 391 to 395
 	

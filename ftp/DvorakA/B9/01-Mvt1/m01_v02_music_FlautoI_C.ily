@@ -285,7 +285,7 @@ musicFlautoIMvtI = \relative c {
 		R2.*3
 		
 		
-		r4 b(\plegato\< c
+		r4 b(\brack\p_\legato\< c
 		d ees e\!
 % Bars 241 to 245
 		f)\f r r
@@ -340,7 +340,7 @@ musicFlautoIMvtI = \relative c {
 		bes4 r r
 		\alternative {
 			\volta 1 {
-				r4 ees,2\pp->
+				r4 ees,2\brack\pp->
 				r4 ees2->
 			}
 			\volta 2 {
@@ -364,7 +364,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 301 to 305
 	bes'2\p~ bes8. aes16-.
 	g2~ g8. f16-.
-	e2._\crescendo\<~
+	e2._\brackM\crescendo\<~
 	e\!
 	f2\f~ f8. ees!16-.
 % Bars 306 to 310
@@ -557,7 +557,7 @@ musicFlautoIMvtI = \relative c {
 	ees2.~
 	ees2 r4 \bar "||"
 % Bars 476 to 480
-	\key e \major gis4->_\marcato fis-> e->
+	\key e \major gis4->_\brackM\marcato fis-> e->
 	e-> dis-> cis->
 	gis'-> fis-> e->
 	dis-> cis-> b->

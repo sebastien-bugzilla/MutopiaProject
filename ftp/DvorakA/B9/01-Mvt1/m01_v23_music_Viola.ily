@@ -214,7 +214,7 @@ musicViolaMvtI = \relative c {
 		d d ees ees f f d d bes' bes c c
 		d4 r bes,16 bes c c 
 		d d ees ees f f d d bes' bes c c
-		f,8(_\diminuendo aes ees g f d)
+		f,8( aes ees_\diminuendo g f d)
 		bes( d ees c d bes)
 % Bars 171 to 175
 		c( ees aes, c f, aes)
@@ -266,7 +266,7 @@ musicViolaMvtI = \relative c {
 		r r r16 f\> g a\!
 % Bars 211 to 215
 		bes2\pp~ bes8 f32( g a bes)
-		b2~_\crescmarkup b8 fis32( g a b)
+		b2~_\crescendo b8 fis32( g a b)
 		c2~ c8 g32(\< a b c)
 		cis2~ cis8\! g32( a bis cis!)
 		ees8\f r f16( ees) r8 d16( ees) r8
@@ -291,7 +291,7 @@ musicViolaMvtI = \relative c {
 % Bars 231 to 235
 		b4\brack\f r r8. g16
 		g4 r r
-		d'' r r8. g,,16
+		d'' r r8. g,,16\pp
 		g4 r r
 		r aes-.\pp g-.
 % Bars 236 to 240
@@ -482,7 +482,7 @@ musicViolaMvtI = \relative c {
 	e-. e-. e-.
 	e-. e-. e-.
 % Bars 386 to 390
-	e-. e-. e-.
+	e-._\pococrescendo e-. e-.
 	e-. e-. e-.
 	e-. e-. e-.
 	e-.\< e-. e-.

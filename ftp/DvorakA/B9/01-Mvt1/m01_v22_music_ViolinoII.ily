@@ -166,14 +166,14 @@ musicViolinoIIMvtI = \relative c {
 		r8. ees,,16-.\p ees4-. \acciaccatura d'8 ees4
 		r8. ees,16-. ees4-. \acciaccatura d'8 ees4
 % Bars 131 to 135
-		r8. ees,16-. ees4-. \acciaccatura d'8 ees4
+		r8. ees,16-. ees4-._\crescendo \acciaccatura d'8 ees4
 		r8. ees,16-. ees4-. \acciaccatura d'8 ees4
 		r8. ees,16-. ees4-. \acciaccatura d'8 ees4
 		r8. g,16-. g4-. \acciaccatura fis'8 g4
 		r8. g,16-. g4-. \acciaccatura fis'8 g4
 % Bars 136 to 140
 		r8. g,16-. g4-. \acciaccatura fis'8 g4
-		c,16 c bes bes aes aes c c bes bes aes aes
+		c,16\f c bes bes aes aes c c bes bes aes aes
 		bes bes aes aes ges ges bes bes aes aes ges ges
 		des' des c c bes bes des des c c bes bes
 		c c des des c c bes bes c c des des
@@ -266,7 +266,7 @@ musicViolinoIIMvtI = \relative c {
 		g_\crescendo g e e g, g g' g e e g, g
 		e' e g, g e e e' e g, g e\< e
 		g g e e\! g, g g' g e e e' e
-		<ees,! bes' g'>4 r r
+		<ees,! bes' g'>4\f r r
 % Bars 216 to 220
 		<ees c' aes'> r r
 		<d bes' f'> r r
@@ -479,7 +479,7 @@ musicViolinoIIMvtI = \relative c {
 	c-. c-. c-.
 	c-. c-. c-.
 % Bars 386 to 390
-	c-. c-. c-.
+	c-._\pococrescendo c-. c-.
 	cis-. cis-. cis-. 
 	cis-. cis-. cis-. 
 	cis-.\< cis-. cis-. 

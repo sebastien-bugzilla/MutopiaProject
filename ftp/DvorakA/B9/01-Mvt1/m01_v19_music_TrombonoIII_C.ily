@@ -60,7 +60,7 @@ musicTrombonoIIIMvtI = \relative c {
 % Bars 51 to 55
 		aes~
 		aes~
-		aes~
+		aes~_\pococrescendo
 		aes~
 		aes~
 % Bars 56 to 60
@@ -85,7 +85,7 @@ musicTrombonoIIIMvtI = \relative c {
 		
 % Bars 76 to 80
 		
-		g,2.\pp~
+		g,2.\pp_\brackM\crescmarkup~
 		g~
 		g~
 		g
@@ -191,7 +191,7 @@ musicTrombonoIIIMvtI = \relative c {
 		R2.
 % Bars 211 to 215
 		bes,4(\pp-> g e)
-		b'( g e)
+		b'(_\crescendo g e)
 		c'( g e)\<
 		cis'( g\! e)
 		r8 ees!(\f g4 c!)
@@ -367,7 +367,7 @@ musicTrombonoIIIMvtI = \relative c {
 	g,4-.\pp g-. g-.
 	g-. g-. g-.
 % Bars 386 to 390
-	g-. g-. g-.
+	g-._\pococrescendo g-. g-.
 	gis-. r r
 	R2.*7
 % Bars 391 to 395
@@ -532,7 +532,7 @@ musicTrombonoIIIMvtI = \relative c {
 	c2-> r4
 	d2-> r4 
 	e2-> r4 \section
-	\key c \minor bes2.->
+	\key c \minor bes2.->_\crescendo
 	c->
 % Bars 566 to 570
 	d->

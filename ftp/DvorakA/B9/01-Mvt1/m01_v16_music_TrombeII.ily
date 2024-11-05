@@ -404,7 +404,7 @@ musicTrombeIIMvtI = \relative c {
 	r4 e2->
 	r4 e2->~ 
 	e4 r r \section
-	g2.->
+	g2.->_\crescendo
 	g->
 % Bars 566 to 570
 	g->

@@ -60,7 +60,7 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 51 to 55
 		aes~
 		aes~
-		aes~
+		aes~_\pococrescendo
 		aes~
 		aes~
 % Bars 56 to 60

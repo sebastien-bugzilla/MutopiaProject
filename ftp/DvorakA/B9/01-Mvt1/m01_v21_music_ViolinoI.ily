@@ -155,7 +155,7 @@ musicViolinoIMvtI = \relative c {
 		r8. ees,16\p-. ees4-. \acciaccatura d'8 ees4
 		r8. ees,16-._\crescendo ees4-. \acciaccatura d'8 ees4
 % Bars 131 to 135
-		r8. ees,16-. ees4-. \acciaccatura d'8 ees4
+		r8. ees,16-. ees4-._\crescendo \acciaccatura d'8 ees4
 		r8. ees,16-. ees4-. \acciaccatura d'8 ees4
 		r8. g,16-. g4-. \acciaccatura fis'8 g4
 		r8. g,16-. g4-. \acciaccatura fis'8 g4
@@ -248,7 +248,7 @@ musicViolinoIMvtI = \relative c {
 		R2.
 		<e b' b'>4\f r r
 		R2.
-		<f des' bes'!>4 r r
+		<f des' bes'!>4\f r r
 		R2.
 % Bars 211 to 215
 		g''16\pp g e e g, g g' g e e g, g
@@ -613,7 +613,7 @@ musicViolinoIMvtI = \relative c {
 	r8. e,16 e4 \acciaccatura dis'8 e4\<
 % Bars 506 to 510
 	r8. e,16 e4 \acciaccatura dis'8 e4\!
-	ees4:16\ff c16 c ees ees c4:16
+	ees4:16\f c16 c ees ees c4:16
 	ees: c16 c ees ees c4:16
 	ees: c16 c ees ees c4:16
 	ees: c16 c ees ees c4:16
@@ -642,7 +642,7 @@ musicViolinoIMvtI = \relative c {
 	r8. <e, a>16-. q4( <a e'>8) r
 	r8. <g, g'>16-. q4( <d' d'>8) r
 % Bars 531 to 535
-	a''8:16\ff e: d: cis: b: a:
+	a''8:16\f e: d: cis: b: a:
 	e': d: cis8\noBeam r r4
 	a'8:16 e: d: cis: b: a:
 	e': d: cis8\noBeam r r4

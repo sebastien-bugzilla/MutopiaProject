@@ -259,7 +259,7 @@ musicFagottoIMvtI = \relative c {
 		r f2\p\<
 % Bars 211 to 215
 		g,2.\brack\pp~
-		g~
+		g~_\crescendo
 		g~
 		g
 		ees'!4( g c)
@@ -344,7 +344,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 281 to 285
 		g~
 		g
-		aes\ppp~
+		aes\brack\ppp~
 		aes~
 		aes~
 % Bars 286 to 290
@@ -392,7 +392,7 @@ musicFagottoIMvtI = \relative c {
 	c2.->\p
 % Bars 316 to 320
 	b->
-	c4( f_\pococrescendo g
+	c4( f_\brackM\pococrescendo g
 	aes\< b c)
 	des( b c
 	a c ees)\!
@@ -543,7 +543,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 441 to 445
 	f4( d2)
 	f4( d2) \partCombineAutomatic
-	a8\brack\pp a a a a a
+	a8\brack\pp_\crescendo a a a a a
 	a8 a a a a a
 	a8 a a a a a
 % Bars 446 to 450

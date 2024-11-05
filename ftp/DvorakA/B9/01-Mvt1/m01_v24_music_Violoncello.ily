@@ -24,7 +24,7 @@ musicVioloncelloMvtI = \relative c {
 	\repeat volta 2 {
 		R2.*2
 		
-		r4 ees''\prall( c~
+		r4 ees''\prall(\pp c~
 		c2.~
 		c~
 % Bars 16 to 20
@@ -166,7 +166,7 @@ musicVioloncelloMvtI = \relative c {
 		<g, g'>2\p^\div( <c c'>4)
 		<bes bes'>2( <aes aes'>4)
 % Bars 131 to 135
-		<g g'>2( <c c'>4)
+		<g g'>2(_\crescendo <c c'>4)
 		<bes bes'>2( <aes aes'>4)
 		<g g'>2( <ees' ees'>4)
 		<d d'>2( <c c'>4)

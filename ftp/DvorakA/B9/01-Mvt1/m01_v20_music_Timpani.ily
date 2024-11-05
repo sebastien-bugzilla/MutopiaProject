@@ -284,7 +284,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 301 to 305
 	g2.:16\p
 	g:
-	g:\<
+	g:_\brackM\crescendo\<
 	g:\!
 	R2.*4
 % Bars 306 to 310
@@ -294,7 +294,7 @@ musicTimpaniMvtI = \relative c {
 	r4 r g\p
 	r r g
 % Bars 311 to 315
-	r r g\brack\ppp
+	r r g\brack\pp
 	r r g
 	R2.*10
 % Bars 316 to 320

@@ -7,7 +7,7 @@
 \paper {
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
-	left-margin = 18 \mm
+	left-margin = 20 \mm
 %	indent = 0
 %	annotate-spacing = ##t
 %	max-systems-per-page = 1

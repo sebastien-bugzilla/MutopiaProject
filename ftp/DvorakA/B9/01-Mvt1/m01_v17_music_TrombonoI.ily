@@ -185,7 +185,7 @@ musicTrombonoIMvtI = \relative c {
 		b'(_\crescendo g e)
 		c'( g e)\<
 		cis'( g\! e)
-		r8 ees!( g4 c!)
+		r8 ees!(\f g4 c!)
 % Bars 216 to 220
 		aes2( ees'4)
 		r8 bes( f4 g)
