@@ -180,7 +180,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 196 to 200
 	R2*2
 	
-	\partCombineApart r4 r8 \tuplet 6/4 8 {r32 ees'( f g aes bes)}
+	\partCombineApart r4 r8 \tuplet 6/4 8 {r32 ees'(\brack\p f g aes bes)}
 	c4( des)
 	c( ees8 des)
 % Bars 201 to 204

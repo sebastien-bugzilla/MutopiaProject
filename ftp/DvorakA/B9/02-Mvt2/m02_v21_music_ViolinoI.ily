@@ -236,7 +236,7 @@ musicViolinoIMvtII = \relative c {
 % Bars 191 to 195
 	g[ fis a g]
 	fis[ e d g]
-	g16) r r16. g32 g16 r r16. g32
+	g16)\pp r r16. g32 g16 r r16. g32
 	g8 r r8\fermata \tuplet 6/4 8 {r32 ees(\< f g aes bes\!}
 	c4\f des)
 % Bars 196 to 200

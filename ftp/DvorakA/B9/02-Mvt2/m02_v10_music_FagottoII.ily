@@ -68,7 +68,7 @@ musicFagottoIIMvtII = \relative c {
 	bes32[\<-. c-. des-. ees!-. f-. g-. aes-. bes-.]\! ees,16 ees des des\f
 	c2->
 	des->
-	c8[_\legato des bes aes]
+	c8[^\legato_\crescendo des bes aes]
 % Bars 56 to 60
 	g[\< f ees des]\!
 	c2\p
@@ -101,7 +101,7 @@ musicFagottoIIMvtII = \relative c {
 	des16\< r r des32-. des-. des16\! r r ees32-. ees-.
 % Bars 81 to 85
 	\tuplet 6/4 4 {d16\mf d d d d d  d d d f f f
-	f f f bes\< bes bes a a a\! aes aes aes }
+	f_\crescendo f f bes\< bes bes a a a\! aes aes aes }
 	g8\f ees,4 ees8~
 	ees ees4 ees8
 	bes16 r bes r bes r bes r 
@@ -151,7 +151,7 @@ musicFagottoIIMvtII = \relative c {
 	f( ges)\!
 	g!8[ bes g ees]
 	aes'16\< g f c des aes bes f\!
-	bes2->
+	bes2->_\dimin
 	f->
 % Bars 126 to 130
 	e4\pp( f)

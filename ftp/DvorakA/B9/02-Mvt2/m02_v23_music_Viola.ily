@@ -18,7 +18,7 @@ musicViolaMvtII = \relative c {
 	ces\brack\f r ces\brack\p r\fermata
 	c! c\fermata des f\fermata
 	g r g, r\fermata
-	c16(^\arco g c g e g e g)
+	c16(^\arco\pp g c g e g e g)
 	c( g c g f bes f bes)
 % Bars 11 to 15
 	f( c' f, c' <aes c> <c f> <aes c> <c f>)

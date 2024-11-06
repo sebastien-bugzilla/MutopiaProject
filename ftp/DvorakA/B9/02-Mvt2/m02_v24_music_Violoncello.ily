@@ -181,7 +181,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 122 to 125
 	g'!8[^\pizz bes g ees]
 	aes16\< g f c\! des aes bes f
-	bes2^\brackM\arco
+	bes2^\brackM\arco_\dimin
 	f
 % Bars 126 to 130
 	c''8[(~_\ppcresc c32 des ees des] c8.) c16-.
@@ -224,7 +224,7 @@ musicVioloncelloMvtII = \relative c {
 	<< a {s4 s\<}>>
 % Bars 161 to 165
 	c4( ees)\!
-	d( g,)_\dimmarkup
+	d( g,!)_\dimmarkup
 	a(\> << d,) {s16 s s s\!}>>
 	e4( gis,)
 	gis16(_\crescmarkup a c e) gis,( a) r a
@@ -241,7 +241,7 @@ musicVioloncelloMvtII = \relative c {
 	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. \section
 	\key aes \major g16 bes8 g16 g bes8 g16
 % Bars 176 to 180
-	g16-> bes-> bes-> g-> bes r aes r
+	g16-> bes-> bes-> g-> bes_\dimin r aes r
 	r c'8\p c16 r c8 f,16
 	r e8 e16 r f8 bes16
 	r c8 c16 r bes8 aes16

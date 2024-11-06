@@ -18,7 +18,7 @@ musicContrabassoMvtII = \relative c {
 	aes,\brack\f r aes'\brack\p r\fermata
 	c f,\fermata des bes\fermata
 	g r g r\fermata
-	c2^\arco~
+	c2^\arco~\pp
 	c4 des
 % Bars 11 to 15
 	aes( f)
@@ -156,7 +156,7 @@ musicContrabassoMvtII = \relative c {
 	f r ges r
 	g!8[ bes g ees]
 	aes16\< g f c\! des aes bes f
-	bes2^\brackM\arco
+	bes2^\brackM\arco_\dimin
 	f
 % Bars 126 to 130
 	e4(\pp f)
@@ -208,7 +208,7 @@ musicContrabassoMvtII = \relative c {
 	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. \section
 	\key aes \major g16 bes8 g16 g bes8 g16
 % Bars 176 to 180
-	g16-> bes-> bes-> g-> bes r aes^\pizz r
+	g16-> bes-> bes-> g-> bes_\dimin r aes^\pizz r
 	g r f' r ees r d r
 	c r bes r aes r g' r
 	f\p r ees r des r aes' r

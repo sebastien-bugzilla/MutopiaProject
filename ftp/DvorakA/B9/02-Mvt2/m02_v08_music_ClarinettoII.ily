@@ -93,7 +93,7 @@ musicClarinettoIIMvtII = \relative c {
 	ees16\< r r ees32-. ees-. ees16\! r r f32-. f-.
 % Bars 81 to 85
 	\tuplet 6/4 4 {e16\mf e e e e e  e e e g g g
-	g g g c\< c c b b b\! bes bes bes}
+	g_\crescendo g g c\< c c b b b\! bes bes bes}
 	a8->\f[ c16-. a32.-. a64-.] c16 f a, r
 	f'8[ c16-. a32.-. a64-.] c16 f a, r
 	r8 g'->[ f-> c->]
@@ -143,7 +143,7 @@ musicClarinettoIIMvtII = \relative c {
 	
 	
 	
-	d'16( c b c d c ees d)
+	d'16(_\dimin c b c d c ees d)
 	c( d ees g f d8 bes!16)
 % Bars 126 to 130
 	a4\pp( bes)\<

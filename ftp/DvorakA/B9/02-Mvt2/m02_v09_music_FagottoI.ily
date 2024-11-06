@@ -68,7 +68,7 @@ musicFagottoIMvtII = \relative c {
 	
 	c'2->
 	des->
-	c8[_\legato des bes aes]
+	c8[^\legato_\crescendo des bes aes]
 % Bars 56 to 60
 	g[\< f ees des]\!
 	c2\p
@@ -101,7 +101,7 @@ musicFagottoIMvtII = \relative c {
 	ges16\< r r ges32-. ges-. f16\! r r f32-. f-.
 % Bars 81 to 85
 	\tuplet 6/4 4 {f16\mf f f f f f g g g a a a
-	bes bes bes des!\< des des c c c\! d d d }
+	bes_\crescendo bes bes des!\< des des c c c\! d d d }
 	ees8\f bes,4 bes8~
 	bes bes4 bes8
 	bes16 bes' bes, bes' bes, bes' bes, bes' 
@@ -151,7 +151,7 @@ musicFagottoIMvtII = \relative c {
 	des( ees)\!
 	f16( ees) r8 r16 ees-. f( ees)
 	r ees'(\< f ees des c bes aes)\!
-	bes2->
+	bes2->_\dimin
 	f->
 % Bars 126 to 130
 	g4~\pp g16 aes-. bes-. c-.
@@ -164,7 +164,7 @@ musicFagottoIMvtII = \relative c {
 	
 	
 	
-	g8.(\brack\p a32 g f) e-. d-. e-. f-. g-. a-. b-. \clef tenor
+	g8.(\brack\p_\crescendo a32 g f) e-. d-. e-. f-. g-. a-. b-. \clef tenor
 % Bars 136 to 140
 	c16-. r g-. r d'-. r g-. r
 	r c,-. r g-. r d'-. r g-. \clef bass

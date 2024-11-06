@@ -149,7 +149,7 @@ musicViolinoIIMvtII = \relative c {
 	f8\pp r r4
 	R2*2
 	
-	r4 des8\p( f~
+	r4 des8\pp( f~
 	f4) e(
 % Bars 116 to 120
 	f) e(

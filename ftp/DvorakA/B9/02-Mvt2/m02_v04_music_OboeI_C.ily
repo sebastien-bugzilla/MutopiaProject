@@ -99,7 +99,7 @@ musicOboeIMvtII = \relative c {
 	ges4( f8 ees) \partCombineAutomatic
 % Bars 81 to 85
 	bes'32\mf g! f d c16 bes bes8-> c->
-	d-> ees->\< f->\! bes->
+	d->_\crescendo ees->\< f->\! bes->
 	g8[->\f f16-. ees32.-. ees64-.] f16 g ees r
 	g8[ f16-. ees32.-. ees64-.] f16 g ees r
 	r8 aes8->[ g-> f->]
@@ -152,7 +152,7 @@ musicOboeIMvtII = \relative c {
 	R2*2
 	
 % Bars 126 to 130
-	\partCombineApart c8[(~\brack\pp c32 des ees des] c8.) c16-.
+	\partCombineApart c8[(~ c32 des ees des] c8.) c16-.
 	c8[(~\< c32 des ees des]\! c8.) c16-. \partCombineAutomatic
 	bes r r8 r4
 	R2

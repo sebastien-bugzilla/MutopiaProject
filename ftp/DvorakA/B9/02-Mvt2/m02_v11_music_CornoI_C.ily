@@ -89,7 +89,7 @@ musicCornoIMvtII = \relative c {
 	bes8[-> bes-> bes-> bes->]
 % Bars 81 to 85
 	\tuplet 6/4 4 {g16\mf g g g g g  g g g g g g
-	g g g g g g   g g g g g g}
+	g_\crescendo g g g g g   g g g g g g}
 	e'8[\f d16-. c32.-. c64-.] d16 e c r
 	e8[ d16-. c32.-. c64]-. d16 e c r
 	r8 f[-> e-> d->]

@@ -131,6 +131,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+			system-count = 40
 		}
 	}
 }

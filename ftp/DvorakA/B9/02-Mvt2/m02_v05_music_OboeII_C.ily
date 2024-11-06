@@ -91,7 +91,7 @@ musicOboeIIMvtII = \relative c {
 	aes4.(\< a8)\!
 % Bars 81 to 85
 	bes'32\mf g! f d c16 bes bes8-> c->
-	d-> ees->\< f->\! bes->
+	d->_\crescendo ees->\< f->\! bes->
 	ees,8[->\f bes16-. g32.-. g64-.] bes16 ees g, r
 	ees'8[ bes16-. g32.-. g64-.] bes16 ees g, r
 	r8 f'8->[ ees-> bes->]

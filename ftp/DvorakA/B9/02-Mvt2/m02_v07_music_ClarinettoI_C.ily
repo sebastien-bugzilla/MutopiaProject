@@ -93,7 +93,7 @@ musicClarinettoIMvtII = \relative c {
 	bes16\< r r bes32-. bes-. bes16\! r r g32-. g-.
 % Bars 81 to 85
 	\tuplet 6/4 4 {g16\mf g g g g g a a a b b b
-	c c c ees!\< ees ees d d d\! e e e}
+	c_\crescendo c c ees!\< ees ees d d d\! e e e}
 	f8->\f[ g16-. f32.-. f64-.] g16 a f r
 	a8[ g16-. f32.-. f64-.] g16 a f r
 	r8 bes->[ a-> g->]
@@ -138,12 +138,12 @@ musicClarinettoIMvtII = \relative c {
 	
 	
 	
-	\partCombineApart g4(\brack\pp aes)\<
+	\partCombineApart g4(\brack\pp_\crescendo aes)\<
 % Bars 121 to 125
 	ees( f)\!
 	r16 f-. g( f) r8 r16 f-.
 	g(\< f) r f-. g( f ees d)\! \partCombineAutomatic
-	f( ees d ees f ees g f)
+	f(_\dimin ees d ees f ees g f)
 	\partCombineApart ees( f g bes a g f ees)
 % Bars 126 to 130
 	d2~
@@ -201,7 +201,7 @@ musicClarinettoIMvtII = \relative c {
 	a16([ fis a g32 fis]) fis8.( e32 d) \section
 	\key bes \major \afterGrace e!4\startTrillSpan {dis16( e)\stopTrillSpan} \afterGrace a4\startTrillSpan {gis16( a)\stopTrillSpan}
 % Bars 176 to 180
-	d,8 r \partCombineApart d16( fis a g)
+	d,8 r \partCombineApart d16(_\dimin fis a g)
 	fis(_\dimmarkup a c bes) a( d cis g)
 	fis( g a fis d g fis c)
 	ees( d a' g d c a' g)
