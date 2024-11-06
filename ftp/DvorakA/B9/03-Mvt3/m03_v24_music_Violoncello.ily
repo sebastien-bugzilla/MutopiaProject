@@ -238,7 +238,7 @@ musicVioloncelloMvtIII = \relative c {
 	g'16-> g-> g-> g-> f8-> r
 	\tuplet 3/2 4 {ees\brack\f-> ees-> ees->} r aes16 aes,
 	bes\brack\ff r r8 r4
-	d'8^\pizz r r4
+	d'8^\pizz\brack\p r r4
 	d8\brack\pp r c r
 % Bars 171 to 175
 	a r r4

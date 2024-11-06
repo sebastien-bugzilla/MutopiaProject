@@ -49,7 +49,7 @@ musicFlautoIMvtIII = \relative c {
 	g8 r g16-. g-. g-. g-.
 	c8-. r c16-._\crescendo c-. c-. c-.
 	c8-. r c16-. c-. c-. c-.
-	g'8-.\mf fis16( g) f-. g,-. aes( g)
+	g'8-. fis16( g) f-. g,-. aes( g)
 % Bars 36 to 40
 	fis( g) c-. ees-. d8-. \once \partCombineAutomatic r
 	g,16-._\crescmarkup g'-. fis( g) f-. g,-. aes( g)
@@ -167,7 +167,7 @@ musicFlautoIMvtIII = \relative c {
 			}
 			\volta 2 {
 				r4 r8. a,16(\pp
-				d4.) a8-.
+				d4.) a!8-.
 % Bars 136 to 140
 				\partCombineChords d2~
 				d4. \partCombineAutomatic r8 \section
@@ -225,7 +225,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 191 to 195
 	c16 r r8 r bes~
 	bes16 r aes8~ aes16 r g8~
-	g16 \partCombineAutomatic r r8 r4_\crescmarkup
+	g16 \partCombineAutomatic r r8 r4
 	R2*6
 % Bars 196 to 200
 	

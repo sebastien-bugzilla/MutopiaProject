@@ -23,9 +23,9 @@
 \include "./00-Common/DvorakSymph1_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
-\include "./00-Common/DvorakSymph1_Format_Cond_Mvt03.ily"
-\include "./03-Mvt3/m03_v02_music_FlautoI_C.ily"
-\include "./03-Mvt3/m03_v03_music_FlautoII_C.ily"
+%\include "./00-Common/DvorakSymph1_Format_Cond_Mvt03.ily"
+\include "./03-Mvt3/m03_v02_music_FlautoI.ily"
+\include "./03-Mvt3/m03_v03_music_FlautoII.ily"
 \include "./03-Mvt3/m03_v04_music_OboeI_C.ily"
 \include "./03-Mvt3/m03_v05_music_OboeII_C.ily"
 \include "./03-Mvt3/m03_v07_music_ClarinettoI_C.ily"
@@ -36,8 +36,8 @@
 \include "./03-Mvt3/m03_v12_music_CornoII_C.ily"
 \include "./03-Mvt3/m03_v15_music_TrombeI_C.ily"
 \include "./03-Mvt3/m03_v16_music_TrombeII_C.ily"
-\include "./03-Mvt3/m03_v17_music_TrombonoI_C.ily"
-\include "./03-Mvt3/m03_v18_music_TrombonoII_C.ily"
+\include "./03-Mvt3/m03_v17_music_TrombonoI.ily"
+\include "./03-Mvt3/m03_v18_music_TrombonoII.ily"
 \include "./03-Mvt3/m03_v19_music_TrombonoIII.ily"
 \include "./03-Mvt3/m03_v20_music_Timpani.ily"
 \include "./03-Mvt3/m03_v21_music_ViolinoI.ily"
@@ -66,17 +66,22 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtIII
-%					}
-					\new Voice {
-						\tempiMvtIII
-					}
-					\new Voice {
-						\timeMvtIII \nameStaffIMvtIII
-						\partCombine \musicFlautoIMvtIII \musicFlautoIIMvtIII
-%						\musicFlautoIIMvtIII 
+				\new GrandStaff <<
+					\new Staff <<
+%						\new Voice {
+%							\formatConductorMvtIII
+%						}
+						\new Voice {
+							\tempiMvtIII
+						}
+						\new Voice {
+							\timeMvtIII \nameStaffIMvtIII
+%							\partCombine \musicFlautoIMvtIII \musicFlautoIIMvtIII
+							\musicFlautoIMvtIII 
+						}
+					>>
+					\new Staff {
+						\timeMvtIII \nameStaffIMvtIII \musicFlautoIIMvtIII
 					}
 				>>
 				\new Staff {
@@ -109,8 +114,11 @@
 				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
 					\new Staff {
 						\timeMvtIII \nameStaffVIIMvtIII
-						\partCombine \musicTrombonoIMvtIII \musicTrombonoIIMvtIII
-%						\musicTrombonoIIMvtIII
+%						\partCombine \musicTrombonoIMvtIII \musicTrombonoIIMvtIII
+						\musicTrombonoIMvtIII
+					}
+					\new Staff {
+						\timeMvtIII \nameStaffVIIIMvtIII \musicTrombonoIIMvtIII
 					}
 					\new Staff {
 						\timeMvtIII \nameStaffVIIIMvtIII \musicTrombonoIIIMvtIII
@@ -144,6 +152,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+			system-count = 55
 		}
 	}
 }

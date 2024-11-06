@@ -64,7 +64,7 @@ musicOboeIMvtIII = \relative c {
 	\partCombineApart g'8(\brack\pp f ees d)
 % Bars 46 to 50
 	g4( c,)
-	des2\brack\pp(~
+	des2(~
 	des8[ c] f f,
 	ges2) 
 	\once \partCombineAutomatic R
@@ -163,7 +163,7 @@ musicOboeIMvtIII = \relative c {
 		g8 r r4
 		g'8.->\brack\f g16-. a,8.-> a16-.
 		c8-> bes-> d4~->
-		d8 a d4->~
+		d8 a d4->~_\dimin
 		\alternative {
 			\volta 1 {
 				d8 r r4
@@ -343,7 +343,7 @@ musicOboeIMvtIII = \relative c {
 	f-. r \partCombineApart des->( c16) r \partCombineAutomatic
 	f8-. r bes,-. r
 % Bars 281 to 285
-	\partCombineApart g'8( f ees d)
+	\partCombineApart g'8(\brack\pp f ees d)
 	g4( c,)
 	des2\brack\pp(~
 	des8[ c] f f,

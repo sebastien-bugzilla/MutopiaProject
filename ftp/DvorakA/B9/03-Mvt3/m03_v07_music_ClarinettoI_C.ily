@@ -163,7 +163,7 @@ musicClarinettoIMvtIII = \relative c {
 		a'->~
 		a8\brack\f g f8. f16
 		e4 c'8( b
-		a[ g)] c( b)
+		a[ g)] c(_\dimin b)
 		\alternative {
 			\volta 1 {
 				\partCombineApart e( b e4~
@@ -237,9 +237,9 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 191 to 195
 	fis16 r r8 r g~
 	g16 r g8~ g16 r f8~
-	f16 r r8 r4_\crescmarkup
+	f16 r r8 r4
 	R2
-	f,,16-.\brack\pp c'-. g-. c-. aes-._\brackM\crescmarkup c-. bes32( aes g f)
+	f,,16-.\brack\p c'-. g-. c-. aes-._\brackM\crescmarkup c-. bes32( aes g f)
 % Bars 196 to 200
 	f'8 e\prall f r
 	gis,16\brack\f-. dis'-. ais-. dis-. b-. dis-. cis32( b ais gis)

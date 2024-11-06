@@ -277,7 +277,7 @@ musicFagottoIIMvtIII = \relative c {
 	g8-. g-. g8.-> g16-.
 	aes2\brack\p(
 % Bars 226 to 230
-	f) \clef tenor
+	f)_\crescmarkup \clef tenor
 	c'(
 	aes)
 	ees'(
@@ -290,7 +290,7 @@ musicFagottoIIMvtIII = \relative c {
 	ees,4.) bes8
 % Bars 236 to 240
 	ees,2~
-	ees4~ ees8 r16 \section r %%%%%%%%%%%%%%%%%%%%
+	ees4~ ees8 r16 \section r
 	c'8-.\f[ g'-.] d-. g-.
 	ees-._\brackM\dimmarkup g-. f16( ees d c
 	bes8-.)[ c-.]\brack\p d-. d-.

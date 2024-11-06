@@ -140,7 +140,7 @@ musicViolinoIIMvtIII = \relative c {
 		ees8. ees16 ees8 d
 		<g, ees'> r <a fis'>\< r
 		g'8. bes16 a8 a\!
-		bes8.[-> bes16 bes8] r
+		bes8.[->_\mfcrescendo bes16 bes8] r
 % Bars 111 to 115
 		bes8.->[ bes16 bes8] r
 		d8.->[ d16 d8] r

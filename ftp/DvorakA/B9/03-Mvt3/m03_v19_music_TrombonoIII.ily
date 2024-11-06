@@ -222,7 +222,7 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 211 to 215
 	r4 r8 f\<
 	g8-. aes-. bes-.\! r
-	c4->\f c->
+	c4->\brack\f c->
 	c8.-> d16-. d8-. bes-.
 	R2*4
 % Bars 216 to 220

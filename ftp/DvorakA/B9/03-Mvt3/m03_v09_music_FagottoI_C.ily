@@ -163,7 +163,7 @@ musicFagottoIMvtIII = \relative c {
 		g8 r r4
 		g'8.-> g16-. a,8.-> a16-.
 		d4. r8
-		d( cis d) r
+		d( cis d)_\dimin r
 		\alternative {
 			\volta 1 {
 				d( cis d) r
@@ -277,7 +277,7 @@ musicFagottoIMvtIII = \relative c {
 	d4) des \partCombineAutomatic
 	c2\brack\p(
 % Bars 226 to 230
-	aes) \clef tenor
+	aes)_\crescmarkup \clef tenor
 	ees'(
 	c)
 	\partCombineApart g'(
@@ -355,7 +355,7 @@ musicFagottoIMvtIII = \relative c {
 	des ges,( aes) f(
 	des') ges,( aes) f-.
 % Bars 291 to 295
-	c'!2_\dimin~
+	c'!2~
 	c4 b \partCombineAutomatic
 	g8-.\f g-. g-. r
 	c,16-. g'-. d-. g-. ees-. g-. f32( ees d c)

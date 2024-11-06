@@ -225,7 +225,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 191 to 195
 	g16 r r8 r f~
 	f16 r f8~ f16 r ees8~
-	ees16 r r8 r4_\crescmarkup
+	ees16 r r8 r4
 	R2*6
 % Bars 196 to 200
 	

@@ -52,7 +52,7 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	
-	e''4->\brack\mf e->
+	e''4->\brack\mf_\crescmarkup e->
 	e8-. e-. e-. r
 	a,\f r a16 a a a
 	a8 r a16 a a a
@@ -203,7 +203,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 191 to 195
 	a8 r r4
 	g8 r f r
-	a2~
+	a2~_\crescmarkup
 	a8 b( c a)
 	g2(
 % Bars 196 to 200
@@ -288,7 +288,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 271 to 275
 	
 	
-	e4->\brack\mf e->
+	e4->\brack\mf_\crescmarkup e->
 	e8-. e-. e-. r
 	a,\f r a16 a a a
 % Bars 276 to 280

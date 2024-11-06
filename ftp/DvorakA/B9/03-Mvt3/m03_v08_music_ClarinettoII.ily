@@ -136,7 +136,7 @@ musicClarinettoIIMvtIII = \relative c {
 		
 		R2
 % Bars 106 to 110
-		a4-> f->
+		a4->\brack\p f->
 		f8.-> f16-. f8-. e-.
 		a4-> gis->\<
 		a8.-> a16-. b8-. b-.\!
@@ -163,7 +163,7 @@ musicClarinettoIIMvtIII = \relative c {
 		f'->~
 		f8\brack\f e d8. d16
 		c4 c8( b
-		a[ g)] c( b)
+		a[ g)] c(_\dimin b)
 		\alternative {
 			\volta 1 {
 				a'(\brack\p g c b)
@@ -237,9 +237,9 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 191 to 195
 	fis16 r r8 r g~
 	g16 r g8~ g16 r a8~
-	a16 r r8 r4_\crescmarkup
+	a16 r r8 r4
 	R2
-	f,16-.\brack\pp c'-. g-. c-. aes-._\brackM\crescmarkup c-. bes32( aes g f)
+	f,16-.\brack\p c'-. g-. c-. aes-._\brackM\crescmarkup c-. bes32( aes g f)
 % Bars 196 to 200
 	f'8 e\prall f r
 	gis,16\brack\f-. dis'-. ais-. dis-. b-. dis-. cis32( b ais gis)
@@ -277,7 +277,7 @@ musicClarinettoIIMvtIII = \relative c {
 	e4) c!
 	d8 r r4
 % Bars 226 to 230
-	d8.\brack\p d16 e,4(
+	d8.\brack\p d16 e,4(_\crescmarkup
 	f8) r r4
 	f'8. f16 g,4(
 	a8) r r4

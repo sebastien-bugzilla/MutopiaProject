@@ -115,7 +115,7 @@ musicContrabassoMvtIII = \relative c {
 	aes8-. aes-. aes,16( aes') g-. aes-.
 	aes8-. aes-. aes8.-> aes16
 	aes8-. aes-. aes,16( aes') g-. aes-.
-	bes4->\brack\ff ees->
+	bes4->\ff ees->
 % Bars 91 to 95
 	des8.-> bes16-. bes8.-> aes16-.
 	ges8-> f-> ees-> des->
@@ -183,7 +183,7 @@ musicContrabassoMvtIII = \relative c {
 	}
 	R2*2
 	
-	g'4(^\brackM\arco c,)
+	g'4(^\brackM\arco\pp c,)
 % Bars 141 to 145
 	bes( d)
 	ees(\< c)\!
@@ -361,7 +361,7 @@ musicContrabassoMvtIII = \relative c {
 	ges4->\f ges,8-. ges-.
 	ges'4-> ges,8-. ges-.
 % Bars 291 to 295
-	fis'4-> fis,->_\dimin
+	fis'4->_\dimin fis,->
 	g-> g,->
 	c8->\f c-> c-> r
 	c16-. g'-. d-. g-. ees-. g-. f32( ees d c)

@@ -163,7 +163,7 @@ musicOboeIMvtIII = \relative c {
 		g8 r r4
 		g'8.->\brack\f g16-. a,8.-> a16-.
 		c8-> bes-> d4~->
-		d8 a d4->~
+		d8 a d4->~_\dimin
 		\alternative {
 			\volta 1 {
 				d8 r r4
