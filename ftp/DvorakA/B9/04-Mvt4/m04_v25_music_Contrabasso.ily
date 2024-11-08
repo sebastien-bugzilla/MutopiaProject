@@ -143,14 +143,14 @@ musicContrabassoMvtIV = \relative c {
 % Bars 111 to 115
 	a->
 	g->
-	a4-^\f c-^
+	a4-^\brack\f c-^
 	f,2~
 	f8. f'16 f4~
 % Bars 116 to 120
 	f4 f,
 	g2~
 	g
-	c\ff~
+	c\brack\ff~
 	c4.. a16
 % Bars 121 to 125
 	a2~

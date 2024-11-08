@@ -430,7 +430,7 @@ musicOboeIMvtIV = \relative c {
 	\partCombineApart ees8-. d-. c-. d-. \partCombineAutomatic
 % Bars 366 to 370
 	ees8-. f-. g-. a-.
-	\partCombineApart bes4\ff a8. bes16
+	\partCombineApart bes4 a8. bes16
 	bes2
 	b!4 ais8. b16
 	b2 \partCombineAutomatic
@@ -755,12 +755,12 @@ musicOboeIMvtIV = \relative c {
 	d g,->~
 % Bars 656 to 660
 	g c->(~
-	c bes~
+	c\f bes~
 	bes)_\diminuendo a(
 	ees'8. c16 bes4~
 	bes) a(
 % Bars 661 to 665
-	bes a~
+	bes\brack\p a~
 	a) g(
 	bes8. fis16 a4~
 	a) g \partCombineAutomatic

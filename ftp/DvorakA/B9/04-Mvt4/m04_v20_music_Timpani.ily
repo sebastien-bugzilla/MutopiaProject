@@ -78,7 +78,7 @@ musicTimpaniMvtIV = \relative c {
 	g2:16_\ppocoapococrescendo
 	g:
 % Bars 81 to 85
-	g:
+	g:_\crescendo
 	g:
 	g:\<
 	g:\!

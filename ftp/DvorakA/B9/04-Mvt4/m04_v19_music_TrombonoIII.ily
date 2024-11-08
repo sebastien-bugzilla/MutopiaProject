@@ -38,7 +38,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 51 to 55
 	
 	<< g'2 {s8\brack\mf\< s s s\!}>>
-	g8 r g4~
+	g8\f r g4~
 	g8 r g4(
 	f8) r g4~
 % Bars 56 to 60
@@ -127,7 +127,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	d e)
 	d(\pp b
 	c d)
-	b2\ppp~
+	b2\brack\ppp~
 % Bars 156 to 160
 	b~
 	b~
@@ -173,7 +173,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 211 to 215
 	aes8\brack\f r r4
 	R2
-	g8\brack\mf_\dimin r r4
+	g8\brack\mf r r4
 	R2
 	ges8\p r r4
 % Bars 216 to 220

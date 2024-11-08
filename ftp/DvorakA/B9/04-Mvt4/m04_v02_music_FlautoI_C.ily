@@ -189,7 +189,7 @@ musicFlautoIMvtIV = \relative c {
 	r g r d\<
 % Bars 166 to 170
 	r f\! r f
-	e8-> e16-. r f8-> f16-. r
+	e8->\f e16-. r f8-> f16-. r
 	f8-> f16-. r g8-> g16-. r
 	c,8-> c16-. r d8-> d16-. r
 	d8-> d16-. r \partCombineApart g,8-> g16-. \partCombineAutomatic r
@@ -218,7 +218,7 @@ musicFlautoIMvtIV = \relative c {
 	r8. b16[(\brack\p a8.) b16(]
 	a8) r r4
 	r8. fis16[(\brack\pp e8.) fis16](
-	e8) r r4
+	e8) r r4 
 % Bars 196 to 200
 	R2*15
 % Bars 201 to 205
@@ -518,7 +518,7 @@ musicFlautoIMvtIV = \relative c {
 % Bars 506 to 510
 	
 	
-	\partCombineApart a8.->_\crescendo b16-. c8-. b-.
+	\partCombineApart a8.-> b16-. c8-. b-.
 	c8.-> d16-. e8-. b-. \partCombineAutomatic
 	c8.-> d16-. e8-.\< d-.
 % Bars 511 to 515
@@ -778,7 +778,7 @@ musicFlautoIMvtIV = \relative c {
 	
 	
 	
-	\section
+	\section \break
 % Bars 761 to 765
 	\time 3/2 \partCombineApart g8-. cis,-. cis-. d-. e-. d-. cis-. bes'-. a-. g-. f-. e-. 
 	\partCombineAutomatic f4-. g8. f16 f2-> d4 e8. d16
@@ -824,7 +824,7 @@ musicFlautoIMvtIV = \relative c {
 	d4.-> g,8 g4-. a-. a4.-> d,8
 % Bars 801 to 805
 	d4-. e-. e4.-> a,8 a4 r
-	a'\brack\ff r r2 b4 r \section
+	a'\brack\ff r r2 b4 r \section \break
 	\time 2/4 \tuplet 3/2 2 {e4( g e)
 	c( e c)
 	e( g e)

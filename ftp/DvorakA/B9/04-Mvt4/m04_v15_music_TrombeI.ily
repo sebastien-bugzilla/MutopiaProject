@@ -474,7 +474,7 @@ musicTrombeIMvtIV = \relative c {
 % Bars 611 to 615
 	
 	
-	a4->\brack\ff a->
+	a4->\ff a->
 	a-> a->
 	a-> a->
 % Bars 616 to 620
@@ -661,7 +661,7 @@ musicTrombeIMvtIV = \relative c {
 	e->\fz~
 % Bars 816 to 820
 	e
-	g->\fz~
+	g->\brack\fz~
 	g
 	c,4 r
 	R2

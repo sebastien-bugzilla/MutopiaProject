@@ -312,7 +312,7 @@ musicTrombonoIIMvtIV = \relative c {
 	bes8 r r4
 	bes2->
 	bes->
-	bes8 r r4
+	bes8 r r4_\brackM\crescmarkup
 % Bars 366 to 370
 	a8 r r4
 	cis2\ff~

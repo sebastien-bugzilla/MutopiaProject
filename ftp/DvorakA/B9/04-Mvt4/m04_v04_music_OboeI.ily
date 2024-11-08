@@ -755,12 +755,12 @@ musicOboeIMvtIV = \relative c {
 	d g,->~
 % Bars 656 to 660
 	g c->(~
-	c bes~
+	c\f bes~
 	bes)_\diminuendo a(
 	ees'8. c16 bes4~
 	bes) a(
 % Bars 661 to 665
-	bes a~
+	bes\brack\p a~
 	a) g(
 	bes8. fis16 a4~
 	a) g

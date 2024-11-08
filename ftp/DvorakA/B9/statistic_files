@@ -1,7 +1,7 @@
     163     447    5451 10_DvorakSymph1_Conductor_mvt1.ly
     137     379    4538 10_DvorakSymph1_Conductor_mvt2.ly
     158     429    5256 10_DvorakSymph1_Conductor_mvt3.ly
-    155     421    5135 10_DvorakSymph1_Conductor_mvt4.ly
+    168     456    5573 10_DvorakSymph1_Conductor_mvt4.ly
     215     530    4521 20_DvorakSymph1_Part01_Flauti.ly
     215     530    4465 20_DvorakSymph1_Part02_Oboi.ly
     196     490    4371 20_DvorakSymph1_Part03_Clarinetti.ly
@@ -155,22 +155,22 @@
     497    2012   10662 03-Mvt3/m03_v24_music_Violoncello.ily
     473    1735    9165 03-Mvt3/m03_v25_music_Contrabasso.ily
     536    1442    6310 04-Mvt4/m04_v01_music_Piccolo.ily
-    863    2548   12608 04-Mvt4/m04_v02_music_FlautoI_C.ily
-    863    2472   11366 04-Mvt4/m04_v02_music_FlautoI.ily
-    855    2341   10603 04-Mvt4/m04_v03_music_FlautoII_C.ily
-    855    2341   10733 04-Mvt4/m04_v03_music_FlautoII.ily
-    968    2773   14322 04-Mvt4/m04_v04_music_OboeI_C.ily
-    968    2679   12509 04-Mvt4/m04_v04_music_OboeI.ily
+    863    2550   12614 04-Mvt4/m04_v02_music_FlautoI_C.ily
+    863    2472   11367 04-Mvt4/m04_v02_music_FlautoI.ily
+    855    2341   10615 04-Mvt4/m04_v03_music_FlautoII_C.ily
+    855    2341   10734 04-Mvt4/m04_v03_music_FlautoII.ily
+    968    2773   14329 04-Mvt4/m04_v04_music_OboeI_C.ily
+    968    2679   12519 04-Mvt4/m04_v04_music_OboeI.ily
     948    2505   11438 04-Mvt4/m04_v05_music_OboeII_C.ily
     924    2417   11051 04-Mvt4/m04_v05_music_OboeII.ily
-    960    2722   14260 04-Mvt4/m04_v07_music_ClarinettoI_C.ily
-    952    2616   12553 04-Mvt4/m04_v07_music_ClarinettoI.ily
+    960    2722   14269 04-Mvt4/m04_v07_music_ClarinettoI_C.ily
+    952    2616   12562 04-Mvt4/m04_v07_music_ClarinettoI.ily
     963    2608   12438 04-Mvt4/m04_v08_music_ClarinettoII_C.ily
     963    2596   12471 04-Mvt4/m04_v08_music_ClarinettoII.ily
-    989    2666   13370 04-Mvt4/m04_v09_music_FagottoI_C.ily
-    989    2590   11969 04-Mvt4/m04_v09_music_FagottoI.ily
-    989    2503   11199 04-Mvt4/m04_v10_music_FagottoII_C.ily
-    989    2501   11395 04-Mvt4/m04_v10_music_FagottoII.ily
+    989    2666   13373 04-Mvt4/m04_v09_music_FagottoI_C.ily
+    989    2590   11987 04-Mvt4/m04_v09_music_FagottoI.ily
+    989    2503   11195 04-Mvt4/m04_v10_music_FagottoII_C.ily
+    989    2501   11413 04-Mvt4/m04_v10_music_FagottoII.ily
     915    2244   10526 04-Mvt4/m04_v11_music_CornoI_C.ily
     915    2205    9846 04-Mvt4/m04_v11_music_CornoI.ily
     922    2228    9882 04-Mvt4/m04_v12_music_CornoII_C.ily
@@ -179,15 +179,15 @@
     682    1665    7140 04-Mvt4/m04_v15_music_TrombeI.ily
     682    1658    7139 04-Mvt4/m04_v16_music_TrombeII_C.ily
     682    1657    7146 04-Mvt4/m04_v16_music_TrombeII.ily
-    788    1944    9202 04-Mvt4/m04_v17_music_TrombonoI_C.ily
-    788    1891    8303 04-Mvt4/m04_v17_music_TrombonoI.ily
-    779    1862    7998 04-Mvt4/m04_v18_music_TrombonoII_C.ily
-    779    1860    8148 04-Mvt4/m04_v18_music_TrombonoII.ily
-    743    1847    8213 04-Mvt4/m04_v19_music_TrombonoIII.ily
-    687    1718    6902 04-Mvt4/m04_v20_music_Timpani.ily
+    788    1944    9225 04-Mvt4/m04_v17_music_TrombonoI_C.ily
+    788    1891    8325 04-Mvt4/m04_v17_music_TrombonoI.ily
+    779    1862    8019 04-Mvt4/m04_v18_music_TrombonoII_C.ily
+    779    1860    8168 04-Mvt4/m04_v18_music_TrombonoII.ily
+    743    1847    8214 04-Mvt4/m04_v19_music_TrombonoIII.ily
+    687    1718    6913 04-Mvt4/m04_v20_music_Timpani.ily
    1000    4525   17818 04-Mvt4/m04_v21_music_ViolinoI.ily
-   1000    4424   17479 04-Mvt4/m04_v22_music_ViolinoII.ily
+   1000    4424   17473 04-Mvt4/m04_v22_music_ViolinoII.ily
    1055    4950   19674 04-Mvt4/m04_v23_music_Viola.ily
    1012    3593   16062 04-Mvt4/m04_v24_music_Violoncello.ily
-    998    3297   14868 04-Mvt4/m04_v25_music_Contrabasso.ily
-  89111  273988 1375935 total
+    998    3297   14880 04-Mvt4/m04_v25_music_Contrabasso.ily
+  89124  274025 1376567 total

@@ -201,7 +201,7 @@ musicTrombonoIMvtIV = \relative c {
 	R2*2
 % Bars 226 to 230
 	
-	b2->
+	b2->\f
 	fis->
 	R2*14
 % Bars 231 to 235
@@ -312,7 +312,7 @@ musicTrombonoIMvtIV = \relative c {
 	g8 \partCombineAutomatic r r4
 	g2->
 	f->
-	ees8 r r4
+	ees8 r r4_\brackM_\crescmarkup
 % Bars 366 to 370
 	c8 r r4
 	e2\ff~

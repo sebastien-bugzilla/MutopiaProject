@@ -560,7 +560,7 @@ musicViolinoIIMvtIV = \relative c {
 	q:
 	q:
 	q:
-	g8.\brack\ff g,16 g8. g'16
+	g8.\ff g,16 g8. g'16
 	g8. g,16 g8. g'16
 % Bars 466 to 470
 	g8. g,16 g8. g'16

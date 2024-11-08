@@ -37,7 +37,7 @@ musicClarinettoIMvtIV = \relative c {
 	
 % Bars 36 to 40
 	
-	g4( a
+	g4(\brack\pp a
 	g fis~\<
 	fis)\> g(\!
 	a g)

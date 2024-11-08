@@ -259,7 +259,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 211 to 215
 	d\brack\f c~
 	c b(
-	f'8. d16 c4~
+	f'8._\dimin d16 c4~
 	c) b(
 	c) b~\brack\p
 % Bars 216 to 220
@@ -482,8 +482,8 @@ musicFagottoIMvtIV = \relative c {
 	fis4. gis8
 	ais( gis fis dis')
 	dis4( cis8) r
-	R2_\crescendo
-	des4( f!~
+	R2
+	des4(_\crescendo f!~
 % Bars 401 to 405
 	f des)~
 	des2
@@ -709,7 +709,7 @@ musicFagottoIMvtIV = \relative c {
 	des~
 	des~
 	des
-	\tuplet 3/2 4 {d8_\brackM\legato ees d c d c
+	\tuplet 3/2 4 {d8_\brackM\legato_\crescendo ees d c d c
 	f g f ees f ees
 % Bars 596 to 600
 	d ees d c d c}

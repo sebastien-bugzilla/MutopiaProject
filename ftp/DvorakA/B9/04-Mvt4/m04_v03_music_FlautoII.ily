@@ -185,7 +185,7 @@ musicFlautoIIMvtIV = \relative c {
 	r e r b\<
 % Bars 166 to 170
 	r d\! r d
-	c8-> c16-. r d8-> d16-. r
+	c8->\f c16-. r d8-> d16-. r
 	d8-> d16-. r e8-> e16-. r
 	f,8-> f16-. r b8-> b16-. r
 	b8-> b16-. r g8-> g16-. r
@@ -510,7 +510,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 506 to 510
 	
 	
-	a2->\mf_\crescendo
+	a2->_\mfcrescendo
 	g->
 	a8.-> b16-. c8-.\< b-.
 % Bars 511 to 515

@@ -259,7 +259,7 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 211 to 215
 	aes\brack\f~
 	aes
-	g~
+	g~_\dimin
 	g
 	ges\brack\p~
 % Bars 216 to 220
@@ -482,7 +482,7 @@ musicFagottoIIMvtIV = \relative c {
 	fis4. gis8
 	ais( gis fis dis')
 	dis4( cis8) r
-	R2_\crescendo
+	R2
 	bes4( c!~
 % Bars 401 to 405
 	c bes)~
