@@ -20,7 +20,7 @@
 \include "./00-Common/DvorakSymph1_LayoutParts.ily"
 \include "./00-Common/DvorakSymph1_NameVoice.ily"
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
-\include "./00-Common/DvorakSymph1_Format_PartFagotti.ily"
+\include "./00-Common/DvorakSymph1_Format_Part04_Fagotti.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
 \include "./01-Mvt1/m01_v09_music_FagottoI.ily"
 \include "./01-Mvt1/m01_v10_music_FagottoII.ily"

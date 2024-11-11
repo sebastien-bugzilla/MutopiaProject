@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph1_LayoutParts.ily"
 \include "./00-Common/DvorakSymph1_NameVoice.ily"
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
-\include "./00-Common/DvorakSymph1_Format_PartViola.ily"
+\include "./00-Common/DvorakSymph1_Format_Part11_Viola.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
 \include "./01-Mvt1/m01_v23_music_Viola.ily"
 \include "./02-Mvt2/m02_v23_music_Viola.ily"

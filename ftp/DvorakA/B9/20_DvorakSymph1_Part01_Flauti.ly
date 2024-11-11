@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph1_LayoutParts.ily"
 \include "./00-Common/DvorakSymph1_NameVoice.ily"
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
-\include "./00-Common/DvorakSymph1_Format_PartFlauti.ily"
+\include "./00-Common/DvorakSymph1_Format_Part01_Flauti.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoI.ily"
 \include "./01-Mvt1/m01_v03_music_FlautoII.ily"

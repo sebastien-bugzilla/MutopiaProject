@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph1_LayoutParts.ily"
 \include "./00-Common/DvorakSymph1_NameVoice.ily"
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
-\include "./00-Common/DvorakSymph1_Format_PartVioloncello.ily"
+\include "./00-Common/DvorakSymph1_Format_Part12_Violoncello.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
 \include "./01-Mvt1/m01_v24_music_Violoncello.ily"
 \include "./02-Mvt2/m02_v24_music_Violoncello.ily"

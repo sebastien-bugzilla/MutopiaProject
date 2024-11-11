@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph1_LayoutParts.ily"
 \include "./00-Common/DvorakSymph1_NameVoice.ily"
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
-\include "./00-Common/DvorakSymph1_Format_PartTromboni.ily"
+\include "./00-Common/DvorakSymph1_Format_Part07_Tromboni.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
 \include "./01-Mvt1/m01_v17_music_TrombonoI.ily"
 \include "./01-Mvt1/m01_v18_music_TrombonoII.ily"
