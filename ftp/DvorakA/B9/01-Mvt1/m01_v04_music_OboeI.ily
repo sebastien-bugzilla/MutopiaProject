@@ -709,7 +709,7 @@ musicOboeIMvtI = \relative c {
 % Bars 601 to 605
 	f des f ees des ges
 	aes f aes ges f bes
-	r4 a2\brack\ff
+	r4 a2->\brack\ff
 	r4 a2->
 	r4 b2->
 % Bars 606 to 610

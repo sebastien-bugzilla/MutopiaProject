@@ -25,7 +25,7 @@ musicOboeIIMvtI = \relative c {
 		R2.*6
 % Bars 16 to 20
 		
-		c,2.\pp~
+		c,2.-\tweak X-offset -3 \pp~
 		c~
 		c~
 		c~
@@ -105,7 +105,7 @@ musicOboeIIMvtI = \relative c {
 		b, r r
 % Bars 86 to 90
 		R2.
-		r4 cis(\p\< dis
+		r4 cis(-\tweak X-offset #0.5 \p\< dis
 		g\> fis e)\!
 		dis r r
 		R2.
@@ -201,7 +201,7 @@ musicOboeIIMvtI = \relative c {
 		d r r
 		R2.
 		R
-		f,4(\brack\f_\diminuendo c' bes~
+		f,4(\brack\f-\offset X-offset 3 _\diminuendo c' bes~
 % Bars 171 to 175
 		bes2.~
 		bes~
@@ -260,9 +260,9 @@ musicOboeIIMvtI = \relative c {
 % Bars 221 to 225
 		r f-. f-.
 		r f-. f-.
-		des2.\fz~
+		\dynEO #'(0.9 . 2) des2.\fz~
 		des~
-		des~\fz
+		\dynEO #'(0.5 . 0.5) des~\fz
 % Bars 226 to 230
 		des
 		d!4 r r
@@ -318,7 +318,7 @@ musicOboeIIMvtI = \relative c {
 		des4\! r r
 		R2.
 % Bars 271 to 275
-		g4(\f c d
+		g4(-\tweak X-offset -1 \f c d
 		ees d c)
 		d2( ees4
 		f\> g f)\!
@@ -343,7 +343,7 @@ musicOboeIIMvtI = \relative c {
 				
 			}
 			\volta 2 {
-				c,2.\ff~
+				c,2.-\tweak X-offset -2 \ff~
 				c~
 			}
 		}
@@ -353,7 +353,7 @@ musicOboeIIMvtI = \relative c {
 	c
 	g''4( ees2)
 	g4( ees2)
-	c2._\dolce~
+	c2.-\offset X-offset 0.5 _\dolce~
 % Bars 296 to 300
 	c4 d4. ees8
 	d2 c4(~
@@ -363,8 +363,8 @@ musicOboeIIMvtI = \relative c {
 % Bars 301 to 305
 	bes'2\p~ bes8. aes16-.
 	g2~ g8. f16-.
-	e2._\brackM\crescendo~
-	e
+	<< e2._\brackM\crescendo~ {s2 s4\<}>>
+	<< e2. {s8 s16 s\! s2}>>
 	f2~\f f8. ees!16-.
 % Bars 306 to 310
 	d2~ d8. c16-.
@@ -398,9 +398,9 @@ musicOboeIIMvtI = \relative c {
 	r4 g2->
 % Bars 331 to 335
 	c,4\pp r r
-	R2.*3
-	
-	
+	R2.
+	\mmrPos #-6 R
+	\mmrPos #-7 R
 	b8\f r r4 r8. g16
 % Bars 336 to 340
 	g8 r r4 r
@@ -445,9 +445,9 @@ musicOboeIIMvtI = \relative c {
 	r4 a,2->\fz
 	e2\f( g4)
 % Bars 371 to 375
-	c2._\legato
-	e4( d c
-	a'8 f g a g f)
+	c2.-\offset X-offset 0.5 _\legato
+	e4 d c
+	a'8 f g a g f
 	c8 r r4 r8. c,16
 	c8 r r4 r
 % Bars 376 to 380
@@ -473,7 +473,7 @@ musicOboeIIMvtI = \relative c {
 	R2.*3
 	
 	
-	bes''2(\brack\pp_\crescendo aes4
+	bes''2(\brack\pp-\tweak X-offset 3.5 _\crescendo aes4
 % Bars 396 to 400
 	e2 f4)
 	ees!2( d4
@@ -542,7 +542,7 @@ musicOboeIIMvtI = \relative c {
 	
 	
 	
-	bes2.\pp~
+	bes2.-\tweak X-offset 0.5 \pp~
 	bes
 % Bars 466 to 470
 	bes~
@@ -633,7 +633,7 @@ musicOboeIIMvtI = \relative c {
 	g r r
 	R2.
 	R
-	d4(\brack\p a' g)
+	\dynEO #'(-2.5 . 2) d4(\brack\p a' g)
 % Bars 541 to 545
 	g2.~
 	g~\<
@@ -673,7 +673,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 571 to 575
 	c,4\brack\p r r 
 	ees,2.
-	R2.
+	\mmrPos #-6 R2.
 	R2.
 	f4\f r r
 % Bars 576 to 580
@@ -709,7 +709,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 601 to 605
 	f des f ees des ges
 	aes f aes ges f bes
-	r4 fis2\brack\ff
+	r4 fis2->\brack\ff
 	r4 fis2->
 	r4 g2->
 % Bars 606 to 610

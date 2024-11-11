@@ -212,7 +212,7 @@ musicCornoIVMvtI = \relative c {
 		dis4 r r8. fis,16
 		fis2.->
 % Bars 201 to 205
-		a2\ff~ a8 b
+		a2-\tweak X-offset -1 \ff~ a8 b
 		c4 r r
 		a2~ a8 b
 		c4 r r
@@ -313,7 +313,7 @@ musicCornoIVMvtI = \relative c {
 				c->
 			}
 			\volta 2 {
-				a'2.->\ff
+				a'2.->-\tweak X-offset -1 \ff
 				a->
 			}
 		}
@@ -373,7 +373,7 @@ musicCornoIVMvtI = \relative c {
 	
 	
 	
-	d,8\brack\p_\crescendo d d d d d
+	d,8\brack\p d d d d d
 	d d d d d d
 % Bars 356 to 360
 	d\< d d d d d
@@ -414,7 +414,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 396 to 400
 	g->\<
 	g->
-	g->\! \section
+	<< g-> {s4 s s8 s\!}>> \section
 	\time 2/4 c,2\pp~
 	c~
 % Bars 401 to 405
@@ -600,15 +600,15 @@ musicCornoIVMvtI = \relative c {
 	e~
 	\stemDown e
 % Bars 571 to 575
-	d4\p r r
+	d4-\offset X-offset 0.5 \p r r
 	R2.*3
 	
 	
 	g2.->\fz
 % Bars 576 to 580
-	d'\fz
-	b\fz->
-	g'\fz
+	d'->\fz
+	b->\fz
+	g'->\fz
 	d8-.\f b-. g4-> g->
 	a8-. c-. e4-> e->
 % Bars 581 to 585

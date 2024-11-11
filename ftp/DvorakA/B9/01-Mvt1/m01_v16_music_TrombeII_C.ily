@@ -364,7 +364,7 @@ musicTrombeIIMvtI = \relative c {
 	r4 d2->
 	r4 d2->
 	r4 d2->
-	a'->\ff r4
+	a'->-\tweak X-offset 0.2 \ff r4
 % Bars 516 to 520
 	R2.
 	a2-> r4
@@ -404,7 +404,7 @@ musicTrombeIIMvtI = \relative c {
 	r4 e2->
 	r4 e2->~ 
 	e4 r r \section
-	g2.->_\crescendo
+	g2.->
 	g->
 % Bars 566 to 570
 	g->

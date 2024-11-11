@@ -125,7 +125,7 @@ musicCornoIIMvtI = \relative c {
 % Bars 111 to 115
 		d2( ees4)
 		f2( ees4)
-		d4.-> c8 bes4~
+		d4.-> c8 bes4->~
 		bes8 a g4.-> g'8
 		f4.-> ees8 d4->~
 % Bars 116 to 120
@@ -226,7 +226,7 @@ musicCornoIIMvtI = \relative c {
 		r4_\crescendo d8 e fis4->
 		r d8\< fis g4->
 		r d8 g aes4->\!
-		bes,(_\legato d g)
+		bes,(^\legato d g)
 % Bars 216 to 220
 		ees2( bes'4)
 		f( c d)
@@ -403,7 +403,7 @@ musicCornoIIMvtI = \relative c {
 	g\pp-. g-. g-.
 	g-. g-. g-.
 % Bars 386 to 390
-	g-._\pococrescendo g-. g-.
+	g-. g-. g-.
 	R2.*8
 % Bars 391 to 395
 	
@@ -475,10 +475,10 @@ musicCornoIIMvtI = \relative c {
 	r4 bes2\fz
 % Bars 471 to 475
 	r4 bes2\fz
-	r4 bes2\fz
-	r4 bes2\fz
-	r4 bes2\fz
-	r4 bes2\fz \section
+	r4 bes2-\tweak X-offset 0.5 \fz
+	r4 bes2-\tweak X-offset 0.5 \fz
+	r4 bes2-\tweak X-offset 0.5 \fz
+	r4 bes2-\tweak X-offset 0.5 \fz \section
 % Bars 476 to 480
 	b!2->~ b8 b
 	gis2~ gis8 gis
@@ -512,7 +512,7 @@ musicCornoIIMvtI = \relative c {
 % Bars 501 to 505
 	b2 r8. b16
 	b2 r8. b16
-	b2_\crescmarkup r8. b16
+	b2-\offset X-offset 5 _\crescmarkup r8. b16
 	b2 r8. b16
 	b2 r8. b16\<
 % Bars 506 to 510
@@ -579,15 +579,15 @@ musicCornoIIMvtI = \relative c {
 	c->
 % Bars 566 to 570
 	c->
-	bes\ff~
+	bes-\tweak X-offset -1.5 \ff~
 	bes~
 	bes~
 	bes
 % Bars 571 to 575
-	bes4\p r r
+	bes4-\offset X-offset 0.5 \p r r
 	R2.*2
 	
-	R2.
+	\mmrPos #-6 R2.
 	f2.->\f
 % Bars 576 to 580
 	c'->\fz
@@ -622,7 +622,7 @@ musicCornoIIMvtI = \relative c {
 % Bars 601 to 605
 	r4 r8. c16 c4
 	r4 r8. c16 c4
-	r4 r8. c16\brack\ff c4
+	r4 r8. c16-\tweak X-offset -1 \brack\ff c4
 	r4 r8. c16 c4
 	r4 r8. c16 c4
 % Bars 606 to 610

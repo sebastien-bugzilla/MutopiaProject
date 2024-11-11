@@ -9,7 +9,7 @@ musicViolinoIMvtI = \relative c {
 	\key c \minor
 %	\transposition a
 % Bars 1 to 5
-	<g'' ees' c'>4\ff r r2
+	<g'' ees' c'>4-\offset X-offset 0.5 \ff r r2
 	<aes ees' c'>4 r r2
 	<g ees' c'>4 r r2
 	<g, d' b' g'>4 r r2
@@ -17,7 +17,7 @@ musicViolinoIMvtI = \relative c {
 % Bars 6 to 10
 	<g, ees' ees' bes'>4 r r2
 	<d' bes' f'>4 r r2
-	\acciaccatura  {g,16( d' b' } g'1)\fermata_\dimmarkup \section
+	\acciaccatura  {g,16( d' b' } \markEO #'(1 . 1) g'1)\fermata_\dimmarkup \section
 	\time 3/4 R2.*2
 	
 % Bars 11 to 15
@@ -56,7 +56,7 @@ musicViolinoIMvtI = \relative c {
 		
 		
 		
-		c,2(\pp des4_\brackM\dolce
+		c,2(\pp-\offset X-offset 2.3 _\brackM\dolce des4
 		ees2 f4)
 % Bars 51 to 55
 		ges2( aes4
@@ -75,7 +75,7 @@ musicViolinoIMvtI = \relative c {
 		c c bes bes aes aes bes bes c c des des
 		des\< des c c bes bes c c des! des ees ees
 		ees ees des des c c des des ees ees f f\!
-		g!4-.\f g16( f ees8) r ees-.
+		\dynEO #'(0 . 3) g!4-.\f g16( f ees8) r ees-.
 % Bars 66 to 70
 		ees4-. ees16( d c8) r g-.
 		g4-. g16( f ees8) r ees-.
@@ -110,7 +110,7 @@ musicViolinoIMvtI = \relative c {
 		b2.~
 		b
 		b2( c4)
-		d2(\< ees4)\!
+		\hairpinShorten #'(0 . -3) d2(\< ees4)\!
 		g(\> f ees)\!
 % Bars 96 to 100
 		d2(_\crescmarkup c4)
@@ -140,7 +140,7 @@ musicViolinoIMvtI = \relative c {
 		q r r
 		R2.*2
 		
-		c'2.(\p_\brackM\dimmarkup
+		c'2.(\p-\offset X-offset 1.5 _\brackM\dimmarkup
 		aes')
 % Bars 121 to 125
 		b,4-. b-.\pp c-.
@@ -251,10 +251,10 @@ musicViolinoIMvtI = \relative c {
 		<f des' bes'!>4\f r r
 		R2.
 % Bars 211 to 215
-		g''16\pp g e e g, g g' g e e g, g
+		\beamDamping #5 \dynEO #'(0 . 2) g''16\pp g e e g, g g' g e e g, g
 		e'_\crescendo e g, g e e e' e g, g e e
 		g g e e g, g g' g e e g,\< g
-		e' e g, g\! e e e' e g, g g' g
+		e' e g, g\! e e e' e g, g g' g \beamDampingRevert
 		r4 f'16\f( ees!) r8 d16( ees) r8
 % Bars 216 to 220
 		r4 d16( c) r8 b16( c) r8
@@ -337,8 +337,8 @@ musicViolinoIMvtI = \relative c {
 % Bars 281 to 285
 		q
 		<b b'>
-		bes'!16\pp bes d, d bes bes bes' bes d, d bes bes
-		d d bes bes d, d d' d bes bes d, d
+		\beamDamping #5 bes'!16\pp bes d, d bes bes bes' bes d, d bes bes
+		d d bes bes d, d d' d bes bes d, d \beamDampingRevert
 		bes4 r r
 % Bars 286 to 290
 		R2.
@@ -348,14 +348,14 @@ musicViolinoIMvtI = \relative c {
 				
 			}
 			\volta 2 {
-				c''16\ff c ees, ees c c c' c ees, ees c c
+				\beamDamping #5 c''16\ff c ees, ees c c c' c ees, ees c c
 				g' g ees ees g, g g' g ees ees g, g
 			}
 		}
 	}
 % Bars 291 to 295
 	ees' ees g, g ees ees ees' ees g, g ees ees
-	c' c ees, ees c c c' c ees, ees c c
+	c' c ees, ees c c c' c ees, ees c c \beamDampingRevert
 	ees'8[( c) ees,8.-> ees'16-.] c4->
 	ees8[( c) ees,8.-> ees'16-.] c4->
 	ees8[( c) ees,8.-> ees'16-.] c4->
@@ -366,10 +366,10 @@ musicViolinoIMvtI = \relative c {
 	g8[( ees) g,8.-> g'16-.] ees4->
 	g8[( ees) g,8.-> g'16-.] ees4->
 % Bars 301 to 305
-	g16\p g e e g, g g' g e e g, g
+	\beamDamping #5 g16\p g e e g, g g' g e e g, g
 	bes' bes g g bes, bes bes' bes g g bes, bes
 	e'_\crescendo e cis cis e, e e' e cis\< cis e, e
-	g' g e e\! g, g g' g e e g, g
+	g' g e e\! g, g g' g e e g, g \beamDampingRevert
 	aes'4.\f c,8([ aes') r16 g-.]
 % Bars 306 to 310
 	f4. aes,8[( f') r16 ees-.]
@@ -429,11 +429,11 @@ musicViolinoIMvtI = \relative c {
 	<a a'>2: <bes bes'>4:
 	<c c'>2: <d d'>4:
 	<ees ees'>2: <d d'>4:
-	c'16_\crescendo c f f g g f f f4:16
+	\beamDamping #5 c'16_\crescendo c f f g g f f f4:16
 	f,16 f ees' ees f f ees ees c4:16
 % Bars 356 to 360
 	f,16\< f d' d ees ees d d d4:16
-	f,16 f c' c d d c c c4:16\!
+	f,16 f c' c d d c c c4:16\! \beamDampingRevert
 	bes8.->\f a16-. a8-.[ bes-.] d-. c-. 
 	bes r r8. bes,,16 bes8 r
 	d''8.-> c16-. c8([ d)] f-. ees-.
@@ -458,7 +458,7 @@ musicViolinoIMvtI = \relative c {
 % Bars 376 to 380
 	e''8:16 f: f: e: e: f:
 	g8 r r8. c,,,16 c8 r
-	<e c' g'>_\diminuendo r r4 r8. c16
+	<e c' g'>-\offset X-offset 1 _\diminuendo r r4 r8. c16
 	c8 r r4 r
 	<e c' g'>8 r r4 r8. c16
 % Bars 381 to 385
@@ -495,7 +495,7 @@ musicViolinoIMvtI = \relative c {
 	bes( d,) d4~
 	d8 r bes4\prall
 	R2
-	d8[(_\brackM\ppsempre bes) bes( d)]
+	d8[(-\offset X-offset -0.8 _\brackM\ppsempreB bes) bes( d)]
 	d( bes) bes4~
 % Bars 411 to 415
 	bes8 r d,4\prall
@@ -585,7 +585,7 @@ musicViolinoIMvtI = \relative c {
 	<gis dis' b'>-> r r
 	<dis ais' fis'>-> r r
 	<d bes' f'>-> r r \section
-	\key c \minor a''16\f-> a g g g-> g f f f-> f a a 
+	\key c \minor \dynEO #'(0 . 1) a''16\f-> a g g g-> g f f f-> f a a 
 	f-> f e e e-> e d d d-> d f f
 % Bars 486 to 490
 	a-> a g g g-> g f f f-> f a a
@@ -598,11 +598,11 @@ musicViolinoIMvtI = \relative c {
 	\grace {g,16( d' b'} g'2.)\fermata
 	\grace {g,,16( e' b'} b'2.)\fermata
 	\grace {d,,16( bes'! f'} d'2.)\fermata
-	a'16\pp a f f a, a a' a f f a, a
+	\beamDamping #5 \dynEO #'(0 . 1) a'16\pp a f f a, a a' a f f a, a
 % Bars 496 to 500
 	f' f a, a f_\crescmarkup f f' f a, a f f
-	a a f f a, a\< a' a f f a, a
-	f' f a, a f f f' f a, a f f\! \section
+	a a f f a,\< a a' a f f a, a
+	f' f a, a f f f' f a, a f f\! \section \beamDampingRevert
 	\key a \minor r8. c'16\p c4-. \acciaccatura b'8 c4-.
 	r8. c,16 c4-. \acciaccatura b'8 c4-.
 % Bars 501 to 505
@@ -665,7 +665,7 @@ musicViolinoIMvtI = \relative c {
 	
 	
 	
-	c8(\mf e a g f c')
+	\dynEO #'(-3 . 2) c8(\mf e a g f c')
 % Bars 556 to 560
 	g4_\crescmarkup d8-. e-. f4->
 	g8( b e d a d)

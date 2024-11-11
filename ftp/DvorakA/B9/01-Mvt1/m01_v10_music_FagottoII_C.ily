@@ -379,8 +379,8 @@ musicFagottoIIMvtI = \relative c {
 % Bars 301 to 305
 	bes2\p~ bes8. aes16-.
 	g2~ g8. f16-.
-	e2._\brackM\crescendo~
-	e
+	<< e2._\brackM\crescendo~ {s2 s4\<}>>
+	<< e2. {s8 s16 s\! s2}>>
 	f2\f~ f8. ees!16-.
 % Bars 306 to 310
 	d2~ d8. c16-.
@@ -462,8 +462,8 @@ musicFagottoIIMvtI = \relative c {
 	c2(\f g4)
 % Bars 371 to 375
 	c,2.
-	e4( d c
-	a'8 f g a g f)
+	e4 d c
+	a'8 f g a g f
 	c8 r r4 r8. c16
 	c8 r r4 r
 % Bars 376 to 380
@@ -489,7 +489,7 @@ musicFagottoIIMvtI = \relative c {
 	R2.*3
 	
 	
-	bes,,,4\brack\pp( c2)
+	bes,,,4-\offset X-offset -3 \brack\pp( c2)
 % Bars 396 to 400
 	d4( ees2->)
 	f4( g2->)
@@ -539,7 +539,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 441 to 445
 	
 	
-	g,8\brack\pp_\crescendo g g g g g
+	g,8\brack\pp g g g g g
 	g g g g g g 
 	g g g g g g
 % Bars 446 to 450
@@ -625,7 +625,7 @@ musicFagottoIIMvtI = \relative c {
 	f->
 	a->~
 	a2~ a8 a
-	e'!2.\ff~
+	e'!2.->\ff~
 % Bars 516 to 520
 	e4 a,8 b c d
 	e2.->~
@@ -699,7 +699,7 @@ musicFagottoIIMvtI = \relative c {
 	d r r
 	ees8.-> bes16 bes8-. ees-. d4->~
 	d r r \clef bass
-	c r r
+	\grace {s8} c4 r r
 % Bars 581 to 585
 	bes r r
 	c r r
@@ -777,7 +777,7 @@ musicFagottoIIMvtI = \relative c {
 	aes-> \clef tenor
 	b2( c4
 	d f ees8 d) \clef bass
-	g,2-> g8. g16
+	\grace {s8} g,2-> g8. g16
 % Bars 646 to 650
 	aes4 r r
 	g2-> g8. g16
@@ -792,6 +792,6 @@ musicFagottoIIMvtI = \relative c {
 	g4-> c,-> r
 % Bars 656 to 658
 	g-> c-> r
-	g2.
+	g2.->
 	c,4-> r r\fermata \fine
 }

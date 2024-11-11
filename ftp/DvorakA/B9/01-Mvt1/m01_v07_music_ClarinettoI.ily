@@ -154,7 +154,7 @@ musicClarinettoIMvtI = \relative c {
 		r f2\p
 		r4 f2
 % Bars 131 to 135
-		r4_\crescendo f2
+		r4 f2_\crescendo
 		r4 f2
 		r4 f2
 		r4 f2

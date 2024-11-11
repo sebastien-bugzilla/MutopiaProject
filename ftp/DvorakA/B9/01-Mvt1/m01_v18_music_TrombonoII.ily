@@ -71,7 +71,7 @@ musicTrombonoIIMvtI = \relative c {
 		aes bes-> c->
 % Bars 61 to 65
 		bes2.->\f
-		c2~ c8 aes
+		c2~-> c8 aes
 		aes2 c4->~
 		c des-> ees->
 		R2.
@@ -647,5 +647,5 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 656 to 658
 	d-> c-> r
 	g2.->
-	g4 r r\fermata \fine
+	g4-> r r\fermata \fine
 }

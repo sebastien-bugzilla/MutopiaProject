@@ -164,7 +164,7 @@ musicTrombeIMvtI = \relative c {
 		
 % Bars 226 to 230
 		
-		g,2._\fzcresc->~
+		\aIIXoffset -4 g,2._\fzcresc->~
 		g~
 		g~
 		g
@@ -364,7 +364,7 @@ musicTrombeIMvtI = \relative c {
 	r4 d2->
 	r4 d2->
 	r4 d2->
-	cis->\ff r4
+	cis->-\tweak X-offset 0.2 \ff r4
 % Bars 516 to 520
 	R2.
 	cis2-> r4
@@ -460,7 +460,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 611 to 615
 	c~
 	c
-	d->\ff
+	\dynEO #'(-2.5 . 2) d->\ff
 	d->
 	d->
 % Bars 616 to 620

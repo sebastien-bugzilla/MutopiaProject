@@ -36,7 +36,7 @@ musicFlautoIIMvtI = \relative c {
 		
 		
 		
-		r4 g2->\pp
+		r4 g2->-\tweak X-offset #0.5 \pp
 % Bars 26 to 30
 		r4 g2->
 		r4 g2->
@@ -94,7 +94,7 @@ musicFlautoIIMvtI = \relative c {
 		des2 des8. des16
 % Bars 76 to 80
 		des2 des8. des16
-		d!4-._\brackM\crescmarkup r r
+		d!4-.-\offset X-offset 0.5 _\brackM\crescmarkup r r
 		R2.*8 
 		
 		
@@ -102,14 +102,14 @@ musicFlautoIIMvtI = \relative c {
 		
 % Bars 86 to 90
 		R2.
-		r4 cis(\p\< dis
+		r4 cis(-\tweak X-offset #0.5 \p\< dis
 		g\> fis e)\!
 		dis r r
 		R2.
 % Bars 91 to 95
 		r4 dis(\brack\p\< e
 		g\> fis\! e
-		d!2.\p~
+		d!2.-\tweak X-offset #0.5 \p~
 		d)
 		c~
 % Bars 96 to 100
@@ -202,7 +202,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 171 to 175
 		bes2.~
 		bes)
-		bes\pp~
+		bes-\tweak X-offset 0.5 \pp~
 		bes~
 		bes~
 % Bars 176 to 180
@@ -262,9 +262,9 @@ musicFlautoIIMvtI = \relative c {
 % Bars 221 to 225
 		r \acciaccatura c,8 f4-. \acciaccatura c8 f4-.
 		r \acciaccatura bes,8 f'4-. \acciaccatura bes,8 f'4-.
-		des2.\fz~
+		\dynEO #'(0 . 2) des2.\fz~
 		des~
-		des\fz~
+		\dynEO #'(0 . 0.5) des\fz~
 % Bars 226 to 230
 		des
 		d!4 r r
@@ -281,7 +281,7 @@ musicFlautoIIMvtI = \relative c {
 		R2.*3
 		
 		
-		r4 d,(\brack\p_\legato\< ees
+		r4\brack\p d,( ees\<
 		f g des'\!
 % Bars 241 to 245
 		c)\f r r
@@ -315,7 +315,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 266 to 270
 	
 % Bars 271 to 275
-		g,4(\f c d
+		g,4(-\tweak X-offset -1 \f c d
 		ees d c)
 		d2( ees4
 		f\> g f\!)
@@ -360,8 +360,8 @@ musicFlautoIIMvtI = \relative c {
 % Bars 301 to 305
 	bes'2\p~ bes8. aes16-.
 	g2~ g8. f16-.
-	e2._\brackM\crescendo\<~
-	e\!
+	<< e2._\brackM\crescendo~ {s2 s4\<}>>
+	<< e2. {s8 s16 s\! s2}>>
 	f2\f~ f8. ees!16-.
 % Bars 306 to 310
 	d2~ d8. c16-.
@@ -389,7 +389,7 @@ musicFlautoIIMvtI = \relative c {
 	r4 d2->
 	r4 g2->
 % Bars 331 to 335
-	c,2.\pp~
+	\dynEO #'(0 . 2) c,2.\pp~
 	c~
 	c~\<
 	\after 2.*5/6 \! c
@@ -407,7 +407,7 @@ musicFlautoIIMvtI = \relative c {
 	b r r8. g16 g8 r
 	g8.->[ a16-. a8( g) g-. a-.]
 % Bars 346 to 350
-	ees'2.\p~
+	\dynEO #'(0 . 1) ees'2.\p~
 	ees~
 	ees\<~
 	ees\!
@@ -465,7 +465,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 396 to 400
 	aes~\<
 	aes~
-	\after 2.*5/6 \! aes \bar "||"
+	<< aes {s4 s s8 s\!}>> \bar "||"
 	\time 2/4 ees2\ppp~
 	ees~
 % Bars 401 to 405
@@ -500,10 +500,10 @@ musicFlautoIIMvtI = \relative c {
 	
 % Bars 426 to 430
 	
-	aes,4(\brack\pp des2)
+	aes,4(-\tweak X-offset -3.5 \brack\pp des2)
 	aes4( des2)
 	aes4( des2)
-	aes4(\pp des2)
+	aes4(-\tweak X-offset 0.5 \pp des2)
 % Bars 431 to 435
 	aes4( des2)
 	aes4( des2)
@@ -625,7 +625,7 @@ musicFlautoIIMvtI = \relative c {
 	g r r
 	R2.
 	R
-	d,4(\brack\p a' g)
+	\dynEO #'(-2.5 . 2) d,4(\brack\p a' g)
 % Bars 541 to 545
 	g2.~
 	g~\<
@@ -657,7 +657,7 @@ musicFlautoIIMvtI = \relative c {
 	R2.
 	R2.
 	ees,,2.\brack\p~
-	\after 2.*5/6 \! ees\<
+	<< ees\< {s4 s s8 s\!}>>
 	d4\f r r
 % Bars 576 to 580
 	bes''8.->\f f16 f8-. bes-. d4->~

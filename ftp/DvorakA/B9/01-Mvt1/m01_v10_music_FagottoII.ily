@@ -625,7 +625,7 @@ musicFagottoIIMvtI = \relative c {
 	f->
 	a->~
 	a2~ a8 a
-	e'!2.\ff~
+	e'!2.->\ff~
 % Bars 516 to 520
 	e4 a,8 b c d
 	e2.->~
@@ -792,6 +792,6 @@ musicFagottoIIMvtI = \relative c {
 	g4-> c,-> r
 % Bars 656 to 658
 	g-> c-> r
-	g2.
+	g2.->
 	c,4-> r r\fermata \fine
 }

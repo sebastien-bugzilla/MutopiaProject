@@ -109,14 +109,14 @@ musicFlautoIIMvtI = \relative c {
 % Bars 91 to 95
 		r4 dis(\brack\p\< e
 		g\> fis\! e
-		d!2.\p~
+		d!2.-\tweak X-offset #0.5 \p~
 		d)
 		c~
 % Bars 96 to 100
 		c_\crescmarkup
 		d8. g16 g4. g8
-		g8. g16 g2~
-		g8. g16 g2~
+		g8. g16 << g2~ {s4 s\< }>>
+		g8. g16 << g2~ {s4 s8. s16\!}>>
 		g8. g16 g2
 % Bars 101 to 105
 		R2.*4

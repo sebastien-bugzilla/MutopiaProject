@@ -36,7 +36,7 @@ musicFlautoIMvtI = \relative c {
 		
 		
 		
-		r4 ees2->\pp
+		r4 ees2->-\tweak X-offset #0.5 \pp
 % Bars 26 to 30
 		r4 ees2->
 		r4 ees2->
@@ -99,31 +99,31 @@ musicFlautoIMvtI = \relative c {
 		b-. d-. c-.
 		b-. a-. g-.
 % Bars 81 to 85
-		d'->\fz( ees f)
+		\dynEO #'(-1.7 . -3.5) d'->\fz( ees f)
 		b,(\fz c d)
-		f,(->\fz g aes)
-		d,(->\fz ees f)
+		\dynEO #'(-1.7 . -3.5) f,(->\fz g aes)
+		\dynEO #'(-1.7 . -3.5) d,(->\fz ees f)
 		b, r r \partCombineAutomatic
 % Bars 86 to 90
 		R2.
-		r4 e(\p\< fis
+		r4 e(-\tweak X-offset #0.5 \p\< fis
 		b\> a g)\!
 		fis r r
 		R2.
 % Bars 91 to 95
 		r4 fis(\brack\p\< g
 		b\> a\! g
-		f!2.\p~
+		f!2.-\tweak X-offset #0.5 \p~
 		f)
 		ees~
 % Bars 96 to 100
 		ees_\crescmarkup
 		\partCombineApart d8. g16 g4. g8
-		aes2~ aes8. aes16
-		a2~ a8. a16
+		aes2~ aes8._\< aes16
+		a2~ a8. a16\!
 		b2~ b8. b16
 % Bars 101 to 105
-		c8\brack\f-. c-. g-. c-. g4-. 
+		c8_\brack\f-. c-. g-. c-. g4-. 
 		c8-. c-. g-. c-. g4-. 
 		c8-. c-. g-. c-. g4-. 
 		c8\<-. c-. g-. c-. g4\!-. \partCombineAutomatic
@@ -148,7 +148,7 @@ musicFlautoIMvtI = \relative c {
 		
 		
 		
-		r4 b,(\brack\f c_\legato
+		r4 b,(\brack\f c-\offset X-offset #-1 _\legato
 % Bars 126 to 130
 		d ees e
 		f) r r
@@ -182,7 +182,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 151 to 155
 		g4-. c,8-. d-. ees-. f-. 
 		ees4 c8( d \tuplet 3/2 4 {ees f g)}
-		a2\f~ a8. d,16
+		\dynEO #'(0 . 1) a2\f~ a8. d,16
 		d2~ d8. g16
 		g2~ g8. c,16
 % Bars 156 to 160
@@ -201,12 +201,12 @@ musicFlautoIMvtI = \relative c {
 		f r r
 		f r r
 		R2.
-		\partCombineApart f,4(-\offset X-offset -2 \brack\f c'_\diminuendo bes~
+		\partCombineApart f,4(-\offset X-offset -2 \brack\f c'-\offset X-offset -2.5 _\diminuendo bes~
 		bes2.~
 % Bars 171 to 175
 		bes~
 		bes) \partCombineAutomatic
-		bes\pp~
+		bes-\tweak X-offset 0.5 \pp~
 		bes~
 		bes~
 % Bars 176 to 180
@@ -256,7 +256,7 @@ musicFlautoIMvtI = \relative c {
 		g~_\crescendo
 		g~
 		g
-		r4 \acciaccatura fis8 g4-.\f \acciaccatura fis8 g4-.
+		r4 \acciaccatura fis8 \dynEO #'(0 . 1) g4-.\f \acciaccatura fis8 g4-.
 % Bars 216 to 220
 		r \acciaccatura d8 ees4-. \acciaccatura d8 ees4-.
 		r \acciaccatura cis8 d4-. \acciaccatura cis8 d4-.
@@ -268,7 +268,7 @@ musicFlautoIMvtI = \relative c {
 		r \acciaccatura bes,8 f'4-. \acciaccatura bes,8 f'4-.
 		des2.->~
 		des
-		\after 2.*3/6 <>_\pocoapococrescendo ees->~
+		ees->~-\offset X-offset 4 _\pocoapococrescendo 
 % Bars 226 to 230
 		ees
 		f4 r r
@@ -285,10 +285,10 @@ musicFlautoIMvtI = \relative c {
 		R2.*3
 		
 		
-		r4 b(\brack\p_\legato\< c
+		r4\brack\p b(_\legato c\<
 		d ees e\!
 % Bars 241 to 245
-		f)\f r r
+		\dynEO #'(0 . 1) f)\f r r
 		g r r
 		r f,2->
 		r4 g2
@@ -319,7 +319,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 266 to 270
 	
 % Bars 271 to 275
-		g,4(\f c d
+		g,4(-\tweak X-offset -1 \f c d
 		ees d c)
 		d2( ees4
 		f\> g f\!)
@@ -344,7 +344,7 @@ musicFlautoIMvtI = \relative c {
 				r4 ees2->
 			}
 			\volta 2 {
-				c'2.\ff~
+				\aIIXoffset #-3 c'2.\ff~
 				c~
 			}
 		}
@@ -364,8 +364,8 @@ musicFlautoIMvtI = \relative c {
 % Bars 301 to 305
 	bes'2\p~ bes8. aes16-.
 	g2~ g8. f16-.
-	e2._\brackM\crescendo\<~
-	e\!
+	<< e2._\brackM\crescendo~ {s2 s4\<}>>
+	<< e2. {s8 s16 s\! s2}>>
 	f2\f~ f8. ees!16-.
 % Bars 306 to 310
 	d2~ d8. c16-.
@@ -425,20 +425,20 @@ musicFlautoIMvtI = \relative c {
 % Bars 356 to 360
 	f\< f f f f f
 	f f\! f f f f
-	bes\f r r4 r8. \partCombineApart bes,16
+	\dynEO #'(0 . 1) bes\f r r4 r8. \partCombineApart bes,16
 	bes8 \partCombineAutomatic r r4 r
 	bes'8 r r4 r8. \partCombineApart bes,16
 % Bars 361 to 365
 	bes8 \partCombineAutomatic r r4 r
-	r bes2->\brack\fz
-	r4 d2\fz->
-	r4 f2->\fz
-	r4 c2->\fz
+	r \dynEO #'(0 . 2) bes2->\brack\fz
+	r4 \dynEO #'(0 . 2) d2\fz->
+	r4 \dynEO #'(0 . 2) f2->\fz
+	r4 \dynEO #'(0 . 2) c2->\fz
 % Bars 366 to 370
-	r4 ees2->\fz
+	r4 \dynEO #'(0 . 2) ees2->\fz
 	r4 f2->\fz
-	r4 a2->\fz
-	r4 a,2->\fz
+	r4 \dynEO #'(0 . 2) a2->\fz
+	r4 \dynEO #'(0 . 2) a,2->\fz
 	R2.*4
 % Bars 371 to 375
 	
@@ -454,7 +454,7 @@ musicFlautoIMvtI = \relative c {
 	
 % Bars 381 to 385
 	
-	\partCombineApart g,4-.\ppp f-. e-.
+	\partCombineApart g,4-.-\offset X-offset -2 \ppp f-. e-.
 	d-. c-. c'-. 
 	d,-. c-. c'-. 
 	bes-. a-. g-.
@@ -469,11 +469,11 @@ musicFlautoIMvtI = \relative c {
 	R2.*3
 	
 	
-	bes,2.~\brack\pp_\crescendo
+	bes,2.~\brack\pp-\offset X-offset 3.5 _\crescendo
 % Bars 396 to 400
 	bes~\<
 	bes~
-	\after 2.*5/6 \! bes \bar "||"
+	<< bes {s4 s s8 s\!}>> \bar "||"
 	\time 2/4 g2\ppp~
 	g~
 % Bars 401 to 405
@@ -501,17 +501,17 @@ musicFlautoIMvtI = \relative c {
 	\time 3/4 d4(\brack\pp c bes
 	a g g')
 % Bars 421 to 425
-	\partCombineApart f( ees d
+	\partCombineApart \shape #'((0 . 1.5)(0 . -0.3)(0 . -0.3)(0 . 1.5)) Slur f( ees d
 	c bes!2) \partCombineAutomatic
 	R2.*4
 	
 	
 % Bars 426 to 430
 	
-	aes4(\brack\pp f2)
+	aes4(-\tweak X-offset -3.5 \brack\pp f2)
 	aes4( f2)
 	aes4( f2)
-	aes4(\pp f2)
+	aes4(-\tweak X-offset 0.5 \pp f2)
 % Bars 431 to 435
 	aes4( f2)
 	aes4( f2)
@@ -527,7 +527,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 441 to 445
 	aes4( f2)
 	aes4( f2)
-	a8_\crescendo a a a a a
+	\markEO #'(0 . 0.5) a8_\crescendo a a a a a
 	a a a a a a
 	a a a a a a
 % Bars 446 to 450
@@ -594,7 +594,7 @@ musicFlautoIMvtI = \relative c {
 	r \acciaccatura dis8 e4 \acciaccatura b8 c4\<
 % Bars 506 to 510
 	r \acciaccatura ais8 b4 \acciaccatura gis8 a4\!
-	a2.\f->
+	\dynEO #'(0 . 1) a2.\f->
 	g->
 	bes->~
 	bes2~ bes8 bes
@@ -603,7 +603,7 @@ musicFlautoIMvtI = \relative c {
 	a->
 	c->~
 	c2~ c8 c
-	e!2.->\ff~
+	\dynEO #'(0 . 2) e!2.->\ff~
 % Bars 516 to 520
 	e4 a,8 b c d
 	e2.->~
@@ -632,7 +632,7 @@ musicFlautoIMvtI = \relative c {
 	d r r
 	d r r
 	R2.
-	\partCombineApart d,4(\p a' g)~
+	\partCombineApart d,4(-\offset X-offset -1.5 \p a' g)~
 	g2.~
 % Bars 541 to 545
 	g~
@@ -662,10 +662,10 @@ musicFlautoIMvtI = \relative c {
 	g~
 	g
 % Bars 571 to 575
-	\partCombineApart f8.\p[( a,16 f8 f' a, f]) \partCombineAutomatic
+	\partCombineApart f8.-\offset X-offset -2 \p[( a,16 f8 f' a, f]) \partCombineAutomatic
 	R2.
-	a,2.\brack\p~
-	\after 2.*5/6 \! a\<
+	\dynEO #'(-2 . 1) a,2.\brack\p~
+	<< a\< {s4 s s8 s\!}>>
 	bes4\f r r
 % Bars 576 to 580
 	d'8.->\f bes16 bes8-. d-. f4->~

@@ -26,7 +26,7 @@ musicViolaMvtI = \relative c {
 		
 		
 		
-		c,8\pp c c c c c
+		\dynEO #'(-2.5 . 1.2) c,8\pp c c c c c
 % Bars 16 to 20
 		c c c c c c
 		c c c c c c
@@ -42,7 +42,7 @@ musicViolaMvtI = \relative c {
 % Bars 26 to 30
 		R2.*5
 % Bars 31 to 35
-		c8\pp c c c c c
+		\dynEO #'(-2.5 . 1) c8\pp c c c c c
 		c c c c c c
 		c c c c c c
 		c c c c c c
@@ -125,7 +125,7 @@ musicViolaMvtI = \relative c {
 		}>>
 		f'!4 ees!16 ees d d f f d d
 		f4 ees16 ees d d f f d d
-		ees4 d16 d c_\brackM\crescmarkup c ees ees c c
+		ees4 d16 d \markEO #'(0 . 0.5) c_\brackM\crescmarkup c ees ees c c
 % Bars 96 to 100
 		ees4 d16 d c c ees ees c c
 		g' g g g g, g g g g' g g g
@@ -161,7 +161,7 @@ musicViolaMvtI = \relative c {
 		f-. ees-. des-.
 		c-. r r
 		g'-. r r
-		r aes'8\f-. g-. g-. f-. 
+		r \dynEO #'(0 . 1) aes'8\f-. g-. g-. f-. 
 % Bars 126 to 130
 		f-. ees-. ees-. des-. des-. c-. 
 		c4 r r 
@@ -169,8 +169,8 @@ musicViolaMvtI = \relative c {
 		c,,2.:16\p
 		c:
 % Bars 131 to 135
-		c:_\crescendo
-		c:
+		<<c: {s4 s2_\crescendo}>>
+		c2.:
 		c:
 		c:
 		c:
@@ -298,7 +298,7 @@ musicViolaMvtI = \relative c {
 		f8. f16 ees4 des8. des16
 		c4 r r
 		d'! r r
-		r aes'8\f-. g-. g-. f-.
+		r aes'8-\offset X-offset -1 \f-. g-. g-. f-.
 		f-. ees-. ees-. des-. des-. c-.  
 % Bars 241 to 245
 		c4 r r
@@ -353,9 +353,9 @@ musicViolaMvtI = \relative c {
 		r4 f8.->[ g16-. g8( aes)]
 		aes4 r r
 		R2.
-		bes16\pp bes d, d bes bes bes' bes d, d bes bes
+		\beamDamping #5 bes16\pp bes d, d bes bes bes' bes d, d bes bes
 % Bars 286 to 290
-		d d bes bes d, d d' d bes bes aes aes
+		d d bes bes d, d d' d bes bes aes aes \beamDampingRevert
 		\alternative {
 			\volta 1 {
 				g4 r r
@@ -387,7 +387,7 @@ musicViolaMvtI = \relative c {
 	c,,4\f f8-. g-. aes4->~
 % Bars 306 to 310
 	aes c8-. bes-. aes-. g-. 
-	aes4-. f-._\dimmarkup bes-.
+	aes4-. f-.-\offset X-offset 3 _\dimmarkup bes-.
 	f-. c'-. f,-.
 	g2.:16_\pdim
 	g:
@@ -406,7 +406,7 @@ musicViolaMvtI = \relative c {
 % Bars 321 to 325
 	d d d f f f ees ees ees
 	g\< g g f f f d d d\!}
-	ees4->\f_\brackM\marcato d-> c->
+	ees4->\f-\offset X-offset #1.5 _\brackM\marcato d-> c->
 	c-> bes-> aes->
 	ees'-> d-> c->
 % Bars 326 to 330
@@ -430,7 +430,7 @@ musicViolaMvtI = \relative c {
 % Bars 341 to 345
 	f4._\crescendo aes,8([ f') r16 ees-.]
 	d4. f,8([ d') r16 c-.]
-	<<{b g' g g g2:16} \\ {b,16\f g g g g2:16}>>
+	<<{b g' g g g2:16} \\ {b,16-\offset X-offset -2 \f g g g g2:16}>>
 	<b d>16 <g g'> q q q2:16
 	<b d>16 <g g'> q q q2:16
 % Bars 346 to 350
@@ -443,19 +443,19 @@ musicViolaMvtI = \relative c {
 	c4 r8 d16 d f f ees ees
 	ees4 r8 f16 f a a g g
 	g4 r8 a16 a c c bes bes
-	a_\crescendo a a, a bes bes a a bes4:16
+	\beamDamping #5 a_\crescendo a a, a bes bes a a bes4:16
 	f16 f c' c d d c c d4:16
 % Bars 356 to 360
 	f,16\< f ees' ees f f ees ees f4:16
-	f,16 f g' g a a g g a4:16\!
-	bes8.->\f c16-. c8([ bes)] bes-. c-.
+	\stemUp f,16 f g' g \stemNeutral a a g g a4:16\! \beamDampingRevert
+	bes8.->-\offset X-offset -1 \f c16-. c8([ bes)] bes-. c-.
 	d r r8. bes,16 bes8 r
 	d'8.-> ees16-. ees8([ d]) d-. ees-.
 % Bars 361 to 365
 	f r r8. bes,,16 bes8 r
 	bes-. f-. c'[-> f,-.] d'-. f,-.
 	g-. d-. a'->[ d,]-. bes'-. d,-.
-	bes'-. f'-. c->\fz f-> d-. f-.
+	bes'-. f'-. c->-\offset X-offset 0.5 \fz f-> d-. f-.
 	f,-. c'-. g->\fz c-> a-. c-.
 % Bars 366 to 370
 	ees-. bes-. f'->\fz bes,-> g'-. bes,-.
@@ -472,7 +472,7 @@ musicViolaMvtI = \relative c {
 % Bars 376 to 380
 	q:
 	q:
-	q:_\diminuendo
+	q:-\offset X-offset 0.5 _\diminuendo
 	q:
 	q:
 % Bars 381 to 385
@@ -509,7 +509,7 @@ musicViolaMvtI = \relative c {
 	q:
 	q:
 	q:
-	q:_\brackM\ppsempre
+	q:-\offset X-offset -0.8 _\brackM\ppsempreB
 	q:
 % Bars 411 to 415
 	q:
@@ -558,7 +558,7 @@ musicViolaMvtI = \relative c {
 	q4 r r
 	R2.
 	r4 gis(\brack\p ais
-	dis\! cis\> b
+	dis\! \hairpinShorten #'(0.5 . 0) cis\> b
 % Bars 451 to 455
 	ais)\! r r
 	R2.
@@ -580,7 +580,7 @@ musicViolaMvtI = \relative c {
 % Bars 466 to 470
 	<aes! bes>:
 	q:
-	g8->\brack\f_\marcato f f-> ees ees-> aes
+	g8->\brack\f-\offset X-offset 2.7 _\marcato f f-> ees ees-> aes
 	aes-> g g-> f f-> bes
 	bes-> aes aes-> g g-> f
 % Bars 471 to 475
@@ -615,14 +615,14 @@ musicViolaMvtI = \relative c {
 	<f a>2.:16\pp
 % Bars 496 to 500
 	\after 2.*1/3 <>_\crescmarkup q:
-	q:\<
-	\after 2.*5/6 \! q: \section
+	<< q: {s4 s2\<} >>
+	\after 2.*5/6 \! q2.: \section
 	\key a \minor <a a'>:\brack\p
 	q:
 % Bars 501 to 505
 	q:
 	q:
-	q:_\crescmarkup
+	q:-\offset X-offset 5 _\crescmarkup
 	q:
 	q:
 % Bars 506 to 510
@@ -690,7 +690,7 @@ musicViolaMvtI = \relative c {
 	a g-> f->
 	e-^\< d-^ g-^\!
 	c,2.:16\f
-	d'16 d g g fis fis g g d d g g
+	\beamDamping #5 d'16 d g g fis fis g g d d g g
 % Bars 561 to 565
 	c, c g' g fis fis g g c, c g' g
 	b, b g' g fis fis g g b, b g' g
@@ -698,8 +698,8 @@ musicViolaMvtI = \relative c {
 	\key c \minor d_\crescendo d bes' bes a a bes bes d, d bes' bes
 	ees, ees bes' bes a a bes bes ees, ees bes' bes
 % Bars 566 to 570
-	f f bes bes a a bes bes f f bes bes
-	ees8:16\ff g,: ees: ees': g,: ees:
+	f f bes bes a a bes bes f f bes bes \beamDampingRevert
+	\dynEO #'(-2 . 0) ees8:16\ff g,: ees: ees': g,: ees:
 	ees': g,: ees: ees': g,: ees:
 	g: ees: g,: g': ees: g,:
 	g': ees: g,: g': ees: g,:
@@ -737,10 +737,10 @@ musicViolaMvtI = \relative c {
 	g: ees: g: f: ees: aes:
 	aes: f: aes: g: f: bes:
 	bes: g: bes: aes: g: c:
-	c2:-> c16 c f, f
+	c2:-> \beamDamping #5 c16 c f, f
 	des'2:16-> des16 des f, f
 % Bars 601 to 605
-	ees'2:16-> ees16 ees f, f
+	ees'2:16-> ees16 ees f, f \beamDampingRevert
 	f'2:16 aes,4: \clef treble
 	r8. f16-.\ff f'4->( ees8) r
 	r8. f,16-. f'4->( ees8) r
@@ -764,7 +764,7 @@ musicViolaMvtI = \relative c {
 	r8. g16-. f'4(-> ees8) r
 	r8. g,16-. d'4(-> c8) r
 % Bars 621 to 625
-	e4:16 cis16 cis e e r4
+	\beamDamping #5 e4:16 cis16 cis e e r4
 	e4:16 cis16 cis e e r4
 	e4:16 cis16 cis e e r4
 	e4:16 cis16 cis e e r4
@@ -772,7 +772,7 @@ musicViolaMvtI = \relative c {
 % Bars 626 to 630
 	d4:16 cis16 cis d d r4 \clef alto
 	d4:16 cis16 cis d d r4
-	c!4:16 aes!16 aes c c r4
+	c!4:16 aes!16 aes c c r4 \beamDampingRevert
 	<c,, c'>2.:16\ff
 	q:
 % Bars 631 to 635

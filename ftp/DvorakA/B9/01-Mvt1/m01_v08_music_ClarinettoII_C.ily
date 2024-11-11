@@ -89,7 +89,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 71 to 75
 		e'2.~
 		e4 r r
-		g2\pp g8. g16
+		g2-\tweak X-offset #0.5 \pp g8. g16
 		g2 g8. g16
 		des'2 des8. des16
 % Bars 76 to 80
@@ -118,7 +118,7 @@ musicClarinettoIIMvtI = \relative c {
 		d~
 % Bars 96 to 100
 		d
-		a8. a'16 a4. a8
+		\beamOffset #'(0.8 . 0) a8. a'16 a4. a8
 		a8. a16 a2~
 		a8. a16 a2~
 		a8. a16 a2
@@ -154,7 +154,7 @@ musicClarinettoIIMvtI = \relative c {
 		r d2\p
 		r4 d2
 % Bars 131 to 135
-		r4_\crescendo d2
+		r4 d2
 		r4 d2
 		r4 d2
 		r4 d2
@@ -202,7 +202,7 @@ musicClarinettoIIMvtI = \relative c {
 		
 		R2.
 % Bars 171 to 175
-		g,,4\brack\p( d' c)
+		g,,4-\offset X-offset -2.5 \brack\p( d' c)
 		c2.
 		c\pp~
 		c~
@@ -223,7 +223,7 @@ musicClarinettoIIMvtI = \relative c {
 		e~
 		e~
 		e
-		\stemUp \omit Dots g~\f
+		\stemUp \omit Dots g~-\offset X-offset -1 \f
 		g~
 % Bars 191 to 195
 		g~
@@ -246,7 +246,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 206 to 210
 		r4 f,2(\p\<
 		fis4)\! r r
-		r cis2(\p\<
+		r cis2(-\tweak X-offset -0.5 \p\<
 		ees4)\! r r
 		r g2\p\<
 % Bars 211 to 215
@@ -264,9 +264,9 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 221 to 225
 		r g-. g-.
 		r g-. g-.
-		ees'2.\fz~
+		\dynEO #'(0.8 . 2) ees'2.\fz~
 		ees~
-		ees\fz~
+		\dynEO #'(0.5 . 0.5) ees\fz~
 % Bars 226 to 230
 		ees
 		e!4 r r
@@ -296,7 +296,7 @@ musicClarinettoIIMvtI = \relative c {
 		r4 bes2
 		r4 aes2
 		r4 bes2
-		r4 aes2\pp
+		r4 aes2-\tweak X-offset 0.5 \pp
 % Bars 251 to 255
 		R2.*2
 		
@@ -365,10 +365,10 @@ musicClarinettoIIMvtI = \relative c {
 	a4( f2)
 	a4( f2)
 % Bars 301 to 305
-	c2~\p c8. bes16-.
+	c2~-\tweak X-offset 0.5 \p c8. bes16-.
 	a2~ a8. g16-.
-	fis2._\brackM\crescendo~
-	fis
+	<< fis2._\brackM\crescendo~ {s2 s4\<}>>
+	<< fis2. {s8 s16 s\! s2}>>
 	g2\f~ g8. f!16-.
 % Bars 306 to 310
 	e2~ e8. d16-.
@@ -400,7 +400,7 @@ musicClarinettoIIMvtI = \relative c {
 	d~
 	d~\<
 	<< d {s8 s s s s s\!}>>
-	e8\f r r4 r8. a,,16
+	e8-\tweak X-offset -1.3 \f r r4 r8. a,,16
 % Bars 336 to 340
 	a8 r r4 r
 	e''8 r r4 r8. a,,16
@@ -410,7 +410,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 341 to 345
 	
 	
-	a'8.->\f[ b16-. b8( a) a-. b-.]
+	a'8.->-\tweak X-offset -2 \f[ b16-. b8( a) a-. b-.]
 	cis r r8. a,16 a8 r
 	cis'8.->[ d16-. d8( cis) cis-. d-.]
 % Bars 346 to 350
@@ -442,7 +442,7 @@ musicClarinettoIIMvtI = \relative c {
 	r4 g2->\fz
 	r4 b,2->\fz
 	r4 b2->\fz
-	fis2(\brack\f a4)
+	fis2(-\tweak X-offset -3.5 \brack\f a4)
 % Bars 371 to 375
 	d2.
 	fis4 e d
@@ -459,12 +459,20 @@ musicClarinettoIIMvtI = \relative c {
 	e8 fis e\p d a' g
 	fis4 r r
 	R2.
-	R2.*12 
-	
+	\mmrPos #-7 R
+	R
 % Bars 386 to 390
-	
+	\mmrPos #-7 R
+	R
+	R
+	R
+	R
 % Bars 391 to 395
-	
+	R
+	R
+	R
+	R
+	R
 % Bars 396 to 400
 	a,4\brack\pp a \afterGrace a\trill {gis16( a)}
 	c4( bes) r8. bes16
@@ -503,12 +511,12 @@ musicClarinettoIIMvtI = \relative c {
 	R2.
 % Bars 426 to 430
 	f,4-. ees-. ees'-.
-	bes,2.\brack\pp~
+	bes,2.-\tweak X-offset -3.5 \brack\pp~
 	bes~
 	bes~
 	bes
 % Bars 431 to 435
-	\acciaccatura a8 bes2.~\pp
+	\acciaccatura a8 \dynEO #'(0 . 7) bes2.~\pp
 	bes~
 	bes~
 	bes
@@ -589,7 +597,7 @@ musicClarinettoIIMvtI = \relative c {
 	<< f) {s8\< s s s s s\!}>>
 	<< e2.( {s8\< s s s s s\!}>>
 	<< eis2.) {s8\< s s s s s\!}>> \bar "||"
-	\key b \minor b'2\p r8. b16
+	\key b \minor b'2-\tweak X-offset -1 \p r8. b16
 	b2 r8. b16
 % Bars 501 to 505
 	b2 r8. b16
@@ -641,8 +649,8 @@ musicClarinettoIIMvtI = \relative c {
 	R2.*2
 % Bars 541 to 545
 	
-	\stemUp a,2.\brack\p\<~
-	a~\!\p
+	\stemUp \dynEO #'(-2.5 . 2) a,2.\brack\p\<~
+	a~\!-\offset X-offset -0.5 \p
 	a~
 	a~
 % Bars 546 to 550
@@ -671,7 +679,7 @@ musicClarinettoIIMvtI = \relative c {
 	c->
 % Bars 566 to 570
 	c->
-	c\ff~
+	c-\tweak X-offset -1.5 \ff~
 	c~
 	c~
 	c
@@ -726,7 +734,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 611 to 615
 	r4 b,8-. c-. c-. d-.
 	r4 gis,8-. a-. a-. b-.
-	cis2\ff~ cis8 cis
+	cis2-\tweak X-offset 0.5 \ff~ cis8 cis
 	cis2~ cis8 cis
 	cis2~ cis8 cis
 % Bars 616 to 620

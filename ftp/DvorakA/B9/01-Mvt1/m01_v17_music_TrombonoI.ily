@@ -56,7 +56,7 @@ musicTrombonoIMvtI = \relative c {
 	
 % Bars 76 to 80
 		
-		g2.\pp~
+		g2._\brackM\crescmarkup\pp~
 		g~
 		g~
 		g

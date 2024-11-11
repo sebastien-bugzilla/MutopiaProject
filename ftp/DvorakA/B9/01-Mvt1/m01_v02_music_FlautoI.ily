@@ -119,8 +119,8 @@ musicFlautoIMvtI = \relative c {
 % Bars 96 to 100
 		ees_\crescmarkup
 		d8. g16 g4. g8
-		aes2~ aes8. aes16
-		a2~ a8. a16
+		aes2~ aes8.\< aes16
+		a2~ a8. a16\!
 		b2~ b8. b16
 % Bars 101 to 105
 		c8\brack\f-. c-. g-. c-. g4-. 

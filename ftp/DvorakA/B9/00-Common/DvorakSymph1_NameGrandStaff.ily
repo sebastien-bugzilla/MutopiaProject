@@ -10,8 +10,12 @@ nameGrandStaffIMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffIIMvtI = {
-	\set Staff.instrumentName = "Tromboni"
-	\set Staff.shortInstrumentName = "Tb."
+	\set Staff.instrumentName = \markup {
+		"Tromboni" \hspace #10
+	}
+	\set Staff.shortInstrumentName = \markup {
+		"Tbni." \hspace #3
+	}
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffIIIMvtI = {

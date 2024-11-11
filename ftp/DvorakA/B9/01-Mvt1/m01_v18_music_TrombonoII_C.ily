@@ -5,7 +5,7 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicTrombonoIIMvtI = \relative c {
-	\clef alto
+	\clef tenor
 	\key c \minor
 %	\transposition a
 % Bars 1 to 5
@@ -65,13 +65,13 @@ musicTrombonoIIMvtI = \relative c {
 		aes~
 % Bars 56 to 60
 		aes
-		aes^\solo_\brackM\crescmarkup
+		aes->^\solo-\offset X-offset 3 _\brackM\crescmarkup
 		bes2~ bes8 ees,
 		ees2 aes4~
 		aes bes-> c->
 % Bars 61 to 65
 		bes2.->\f
-		c2~ c8 aes
+		c2~-> c8 aes
 		aes2 c4->~
 		c des-> ees->
 		R2.
@@ -84,7 +84,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 76 to 80
 		
-		g,2.\pp~_\brackM\crescmarkup
+		g,2.\pp~-\offset X-offset 2.5 _\brackM\crescmarkup
 		g~
 		g~
 		g
@@ -101,7 +101,7 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 96 to 100
 		
 		r4 g->\mf r
-		r f-> r
+		r f->_\crescmarkup r
 		r f-> r
 		r f-> r
 % Bars 101 to 105
@@ -151,7 +151,7 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 151 to 155
 		c r r
 		c r r
-		r fis2->\f
+		r \dynEO #'(0 . 2) fis2->\f
 		r4 f!2->
 		r4 ees2->
 % Bars 156 to 160
@@ -182,7 +182,7 @@ musicTrombonoIIMvtI = \relative c {
 		
 		
 		
-		c2.->\f^\solo
+		c2.->\f-\offset X-offset -5 ^\solo
 		a2~-> a8. g16
 % Bars 191 to 195
 		g2.
@@ -210,7 +210,7 @@ musicTrombonoIIMvtI = \relative c {
 		R2.
 % Bars 211 to 215
 		bes4(->\pp g e)
-		b'(-> g e)
+		b'(->_\crescendo g e)
 		c'( g e)\<
 		cis'( g\! e)
 		r8 ees!\f( g4 c!)
@@ -260,7 +260,7 @@ musicTrombonoIIMvtI = \relative c {
 		aes4 r r
 % Bars 266 to 270
 		R2.
-		c4 r r
+		c4_\crescmarkup r r
 		R2.
 		aes4\mf r r
 		R2.*13
@@ -402,19 +402,10 @@ musicTrombonoIIMvtI = \relative c {
 	d4( ees2->)
 	f4( g2->)
 	aes4( bes2->) \section
-	\time 2/4 R2*3
-	
+	\time 2/4 R2*20
 % Bars 401 to 405
 	
-	R2*3
-	
-	
-	R2*2
 % Bars 406 to 410
-	
-	R2*2
-	
-	R2*10
 	
 % Bars 411 to 415
 	
@@ -422,18 +413,11 @@ musicTrombonoIIMvtI = \relative c {
 	
 	
 	\section
-	\time 3/4 R2.*4
-	
+	\time 3/4 R2.*42
 % Bars 421 to 425
-	
-	
-	R2.*5
-	
 	
 % Bars 426 to 430
 	
-	
-	R2.*33
 % Bars 431 to 435
 	
 % Bars 436 to 440
@@ -547,7 +531,7 @@ musicTrombonoIIMvtI = \relative c {
 	a r r
 	b r r
 	g r r
-	a r r
+	a_\crescmarkup r r
 % Bars 556 to 560
 	f r r
 	g r r
@@ -558,7 +542,7 @@ musicTrombonoIIMvtI = \relative c {
 	g2-> r4
 	g2-> r4
 	g2-> r4 \section
-	\key c \minor bes2.->
+	\key c \minor bes2.->_\crescendo
 	bes->
 % Bars 566 to 570
 	bes->
@@ -663,5 +647,5 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 656 to 658
 	d-> c-> r
 	g2.->
-	g4 r r\fermata \fine
+	g4-> r r\fermata \fine
 }

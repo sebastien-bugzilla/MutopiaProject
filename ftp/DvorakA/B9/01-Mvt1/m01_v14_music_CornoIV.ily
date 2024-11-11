@@ -482,7 +482,7 @@ musicCornoIVMvtI = \relative c {
 	ees->\fz
 	ees->\fz
 	g,,\pp~
-	g
+	g_\crescmarkup
 % Bars 466 to 470
 	g~
 	g
@@ -606,9 +606,9 @@ musicCornoIVMvtI = \relative c {
 	
 	g2.->\fz
 % Bars 576 to 580
-	d'\fz
-	b\fz->
-	g'\fz
+	d'->\fz
+	b->\fz
+	g'->\fz
 	d8-.\f b-. g4-> g->
 	a8-. c-. e4-> e->
 % Bars 581 to 585

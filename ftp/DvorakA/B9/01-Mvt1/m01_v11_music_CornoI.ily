@@ -125,7 +125,7 @@ musicCornoIMvtI = \relative c {
 % Bars 111 to 115
 		d2( ees4)
 		f2( ees4)
-		d4.-> c8 bes4~
+		d4.-> c8 bes4~->
 		bes8 a g4.-> g'8
 		f4.-> ees8 d4->~
 % Bars 116 to 120

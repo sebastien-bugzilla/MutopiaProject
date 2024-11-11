@@ -6,6 +6,7 @@
 %###############################################################################
 ppplegato = \markup {\hspace #-1.55 \dynamic ppp \italic {legato}}
 ppsempre = \markup {\hspace #-0.82 \dynamic pp \italic {sempre}}
+ppsempreB = \markup {\dynamic pp \italic {sempre}}
 ppdolce = \markup {\hspace #-0.82 \dynamic pp \italic {dolce}}
 ppstacc = \markup {\hspace #-0.82 \dynamic pp \italic {stacc.}}
 ppcresc = \markup {\hspace #-0.82 \dynamic pp \italic {cresc.}}
@@ -23,6 +24,7 @@ mfcrescendo = \markup {\hspace #-0.8 \dynamic mf \italic {crescendo}}
 mfcresc = \markup {\hspace #-0.8 \dynamic mf \italic {cresc.}}
 fzcresc = \markup {\hspace #-0.54 \dynamic fz \italic {cresc.}}
 fzcrescendo = \markup {\hspace #-0.54 \dynamic fz \italic {crescendo}}
+fzdiminuendo = \markup {\hspace #-0.54 \dynamic fz \italic {diminuendo}}
 fdiminuendo = \markup {\hspace #0.02 \dynamic f \italic {diminuendo}}
 flegato = \markup {\hspace #0.02 \dynamic f \italic {legato}}
 fmarcato = \markup {\hspace #0.02 \dynamic f \italic {marcato}}
@@ -71,6 +73,7 @@ solidiv = \markup {Soli div.}
 marc = \markup {\italic {marc.}}
 divisi = \markup {\italic {divisi}}
 conespressione = \markup {\italic {con espressione}}
+
 
 plegato = #(make-dynamic-script 
 	(markup #:dynamic "p" #:normal-text #:italic "legato")
@@ -174,6 +177,46 @@ flattrill = \markup {
 	}
 }
 
+aIIXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override CombineTextScript.X-offset = #offset
+	#}
+)
+
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = #1
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
+
+markEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TextScript.layer = #3
+		\once \override TextScript.extra-offset = #offset
+		\once \override TextScript.whiteout = #1
+		\once \override TextScript.whiteout-style = #'outline
+	#}
+)
+
+beamDamping = \override Beam.damping = \etc
+beamDampingRevert = \revert Beam.damping
+
 %stemOffset = #(define-music-function
 %	(offset)
 %	(number?)
@@ -182,14 +225,6 @@ flattrill = \markup {
 %	#}
 %)
 
-
-%aIIXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override CombineTextScript.X-offset = #offset
-%	#}
-%)
 
 %aIIOmit = \once \omit Voice.CombineTextScript
 
@@ -260,24 +295,6 @@ flattrill = \markup {
 %	#}
 %)
 
-%dynEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override DynamicText.extra-offset = #offset
-%		\once \override DynamicText.whiteout = ##t
-%		\once \override DynamicText.whiteout-style = #'outline
-%	#}
-%)
-
-%hairpinShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.shorten-pair = #shortLength
-%	#}
-%)
-
 %hairpinEO = #(define-music-function
 %	(offset)
 %	(pair?)
@@ -307,17 +324,6 @@ flattrill = \markup {
 %%	\override Beam.length = #7
 %	\unset fontSize
 %}
-
-%markEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TextScript.layer = #3
-%		\once \override TextScript.extra-offset = #offset
-%		\once \override TextScript.whiteout = ##t
-%		\once \override TextScript.whiteout-style = #'outline
-%	#}
-%)
 
 %markWhiteout = {
 %	\once \override Score.RehearsalMark.layer = #3
