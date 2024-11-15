@@ -5,55 +5,60 @@
 %#               G R A N D   S T A F F   N A M E   :   M V T   I               #
 %###############################################################################
 nameGrandStaffIMvtI = {
-	\set Staff.instrumentName = "Corni"
-	\set Staff.shortInstrumentName = "Cor."
-	\set Staff.midiInstrument = #""
+	\set GrandStaff.instrumentName = "Corni"
+	\set GrandStaff.shortInstrumentName = "Cor."
+	\set GrandStaff.midiInstrument = #""
 }
 nameGrandStaffIIMvtI = {
-	\set Staff.instrumentName = \markup {
+	\set GrandStaff.instrumentName = \markup {
 		"Tromboni" \hspace #10
 	}
-	\set Staff.shortInstrumentName = \markup {
+	\set GrandStaff.shortInstrumentName = \markup {
 		"Tbni." \hspace #3
 	}
-	\set Staff.midiInstrument = #""
+	\set GrandStaff.midiInstrument = #""
 }
 nameGrandStaffIIIMvtI = {
-	\set Staff.instrumentName = "Violini"
-	\set Staff.shortInstrumentName = "Vln."
-	\set Staff.midiInstrument = #""
+	\set GrandStaff.instrumentName = "Violini"
+	\set GrandStaff.shortInstrumentName = "Vln."
+	\set GrandStaff.midiInstrument = #""
 }
 %###############################################################################
 %#              G R A N D   S T A F F   N A M E   :   M V T   I I              #
 %###############################################################################
 nameGrandStaffIMvtII = {
-	\set Staff.instrumentName = "Violini"
-	\set Staff.shortInstrumentName = "Vln."
-	\set Staff.midiInstrument = #""
+	\set GrandStaff.instrumentName = "Flauti"
+	\set GrandStaff.shortInstrumentName = "Fl."
+	\set GrandStaff.midiInstrument = #""
+}
+nameGrandStaffIIMvtII = {
+	\set GrandStaff.instrumentName = "Violini"
+	\set GrandStaff.shortInstrumentName = "Vln."
+	\set GrandStaff.midiInstrument = #""
 }
 %###############################################################################
 %#             G R A N D   S T A F F   N A M E   :   M V T   I I I             #
 %###############################################################################
 nameGrandStaffIMvtIII = {
-	\set Staff.instrumentName = "Tromboni"
-	\set Staff.shortInstrumentName = "Tb."
-	\set Staff.midiInstrument = #""
+	\set GrandStaff.instrumentName = "Tromboni"
+	\set GrandStaff.shortInstrumentName = "Tb."
+	\set GrandStaff.midiInstrument = #""
 }
 nameGrandStaffIIMvtIII = {
-	\set Staff.instrumentName = "Violini"
-	\set Staff.shortInstrumentName = "Vln."
-	\set Staff.midiInstrument = #""
+	\set GrandStaff.instrumentName = "Violini"
+	\set GrandStaff.shortInstrumentName = "Vln."
+	\set GrandStaff.midiInstrument = #""
 }
 %###############################################################################
 %#              G R A N D   S T A F F   N A M E   :   M V T   I V              #
 %###############################################################################
 nameGrandStaffIMvtIV = {
-	\set Staff.instrumentName = "Tromboni"
-	\set Staff.shortInstrumentName = "Tb."
-	\set Staff.midiInstrument = #""
+	\set GrandStaff.instrumentName = "Tromboni"
+	\set GrandStaff.shortInstrumentName = "Tb."
+	\set GrandStaff.midiInstrument = #""
 }
 nameGrandStaffIIMvtIV = {
-	\set Staff.instrumentName = "Violini"
-	\set Staff.shortInstrumentName = "Vln."
-	\set Staff.midiInstrument = #""
+	\set GrandStaff.instrumentName = "Violini"
+	\set GrandStaff.shortInstrumentName = "Vln."
+	\set GrandStaff.midiInstrument = #""
 }

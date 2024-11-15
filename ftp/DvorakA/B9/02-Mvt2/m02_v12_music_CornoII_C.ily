@@ -103,12 +103,12 @@ musicCornoIIMvtII = \relative c {
 	e'->
 % Bars 96 to 100
 	b->
-	b'8\mf[ c16. b32] b8 d
+	\dynEO #'(-3 . 2) b'8\mf[ c16. b32] b8 d
 	g,16 r r8 r4
 	d'8 e \omitDots f!8. e16
 	\stemUp \omitFlag d r \omitFlag g,, r \omitFlag g r \omitFlag g r
 % Bars 101 to 105
-	c'8[\f-> g16 e32. e64] g16-. c-. e,-. r
+	c'8[-\tweak X-offset -1 \f-> g16 e32. e64] g16-. c-. e,-. r
 	c'8->[ g16 e32. e64] g16-. c-. e,-. r
 	r8 d'->[ c-> g->]
 	e'8.-> d16-. c8 r

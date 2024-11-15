@@ -187,7 +187,7 @@ musicOboeIMvtII = \relative c {
 	
 	r4 ees\brack\pp~
 	ees8 bes( ges f16 ees)
-	bes'8 a4(~ a32 bes c des)
+	bes'8_\brackM\pocoapococrescendo a4(~ a32 bes c des)
 	des8 c4 des32( ees f ges)
 % Bars 161 to 165
 	ges4 f16( ees des c)

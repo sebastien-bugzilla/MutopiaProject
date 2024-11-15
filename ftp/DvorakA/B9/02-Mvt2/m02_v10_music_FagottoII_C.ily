@@ -44,7 +44,7 @@ musicFagottoIIMvtII = \relative c {
 	bes2 
 	aes
 	des,8( c) bes4
-	<< bes2 {s8 s\< s s\!}>>
+	<< bes2 {s8 s\< s s16 s\!}>>
 % Bars 36 to 40
 	ees4.(\> des8)\!
 	c2(
@@ -62,7 +62,7 @@ musicFagottoIIMvtII = \relative c {
 	
 	
 	<< c'2\brack\p~ {s4 s_\brackM\pococresc}>>
-	c8 bes( aes g16 f
+	c8 \shape #'((0 . -2.5 )(0 . 0)(0 . 0)(0 . -2.5)) Slur bes( aes g16 f
 % Bars 51 to 55
 	e4) g,8( aes)
 	bes32[\<-. c-. des-. ees!-. f-. g-. aes-. bes-.]\! ees,16 ees des des\f
@@ -189,7 +189,7 @@ musicFagottoIIMvtII = \relative c {
 	
 	
 	r4 r8. e''16 \clef tenor
-	e4.(\brack\p_\brackM\pocoapococresc f8)
+	e4.(\brack\p-\tweak X-offset 2.7 _\brackM\pocoapococresc f8)
 % Bars 166 to 170
 	f4(\< fis8 g)\!
 	fis4.( g8) \section
@@ -206,7 +206,7 @@ musicFagottoIIMvtII = \relative c {
 	c,8 r r4
 	c4\brack\f g'_\dimmarkup~
 	g f8.( e16) \clef tenor
-	f4.( g32 f e f)
+	\grace {s8} f4.( g32 f e f)
 	bes2~
 % Bars 181 to 185
 	bes8 f( d c16 bes)

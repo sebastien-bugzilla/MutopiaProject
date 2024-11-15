@@ -17,7 +17,7 @@ musicCornoIMvtII = \relative c {
 % Bars 6 to 10
 	f\fp\fermata
 	<< c4\fermata {s8\< s\!}>> << d4\fermata {s8\< s\!}>>
-	<< e2\fermata {s8\< s\! s\> s\!}>>
+	<< e2\fermata {\hairpinShorten #'(0 . -1.4) s8\< s\! \hairpinShorten #'(-1.4 . 0) s\> s\!}>>
 	R2*9
 	
 % Bars 11 to 15
@@ -112,7 +112,7 @@ musicCornoIMvtII = \relative c {
 	\stemDown \omitBeam d)_\crescendo e-> f!8.-> e16
 	\stemUp \beamOffset #'(-1 . -1) d[ \once \partCombineAutomatic r g, \once \partCombineAutomatic r g \once \partCombineAutomatic r g] \partCombineAutomatic r 
 % Bars 101 to 105
-	e'8[\f-> d16 c32. c64] d16-. e-. c-. r
+	e'8[-\tweak X-offset -1 \f-> d16 c32. c64] d16-. e-. c-. r
 	e8->[ d16 c32. c64] d16-. e-. c-. r
 	r8 f->[ e-> d->]
 	g8.-> f16-. e8 r
@@ -138,8 +138,8 @@ musicCornoIMvtII = \relative c {
 % Bars 121 to 125
 	r g8 g16 r g8 g16
 	\partCombineApart r c-. d( c) r8 r16 c-.[
-	d(\< c)] r c d( c bes\! a) \partCombineAutomatic
-	r d8_\dimin d16(\< bes4)\!
+	d(_\< c)] r c d( c bes a)\! \partCombineAutomatic
+	r_\dimin d8 d16(\< bes4)\!
 	r16 bes8 bes16(\< f4)\!
 % Bars 126 to 130
 	R2*2
@@ -170,8 +170,8 @@ musicCornoIMvtII = \relative c {
 % Bars 166 to 170
 	
 	\section
-	R2^\inc \transposition c
-	e'8\f[ d16 c32. c64] d16-. e-. c-. r
+	R2^\inc \transposition c \setStaffName \nameStaffCorinC
+	\dynEO #'(-1 . 0) e'8\f[ d16 c32. c64] d16-. e-. c-. r
 	e8[ d16 c32. c64] d16-. e-. c-. r
 % Bars 171 to 175
 	r8 f->[ e-> d->]
@@ -183,7 +183,7 @@ musicCornoIMvtII = \relative c {
 	d e c8 c32 c \partCombineApart c4~
 	c8 \partCombineAutomatic r r4
 	R2*2
-	<>^\ines \transposition ees
+	<>^\ines \transposition ees \setStaffName \nameStaffCorinEs
 	g2\pp~
 % Bars 181 to 185
 	g~

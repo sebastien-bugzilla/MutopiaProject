@@ -4,20 +4,20 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIIMvtII = \relative c {
-	\clef treble
+musicTimpaniMvtII = \relative c {
+	\clef bass
 	\key c \major
-	\transposition ees
+%	\transposition a
 % Bars 1 to 5
 	R2\fermata
-	R\fermata
-	R\fermata
-	R\fermata
-	R\fermata
+	R2\fermata
+	R2\fermata
+	R2\fermata
+	R2\fermata
 % Bars 6 to 10
 	R\fermata
 	R\fermata
-	R2*45
+	R2*21
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -26,8 +26,15 @@ musicTrombeIIMvtII = \relative c {
 	
 % Bars 26 to 30
 	
-% Bars 31 to 35
 	
+	
+	r4 r8 ees32\pp ees ees ees
+	ees8 r r ees32 ees ees ees
+% Bars 31 to 35
+	ees8 r r ees32 ees ees ees
+	ees8 r r ees32 ees ees ees
+	ees8 r r4
+	R2*19
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -37,14 +44,15 @@ musicTrombeIIMvtII = \relative c {
 % Bars 51 to 55
 	
 	
-	f8.(\brack\mf g16 a4)
-	f8.( g32 a bes4)
-	c8[( d e d])
+	c16\mf r c r c r c r
+	R2*2
+	
 % Bars 56 to 60
-	c[( bes a g])
-	a4.\p r8
-	a4. r8
-	R2*17
+	r16 ees\< g, ees' g, ees' g, ees'\!
+	c8\pp[ c c c]
+	c[ c c c]
+	c r r4
+	R2*23
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -52,56 +60,47 @@ musicTrombeIIMvtII = \relative c {
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	bes4\brack\p\<( a8 ees')\!
-	d16\f d8 d16 r d8\> d16\!
-	<< g,4. {s8\> s s\!}>> r8
-	R2*4
 	
 % Bars 81 to 85
 	
 	
-	r8 r16 g32\f g g16 g g g
-	r8 r16 g32 g g16 g g g
-	r8 r16 g32 g g16 g g g
+	r8 r16 ees32\f ees ees16 ees ees ees
+	r8 r16 ees32 ees ees16 ees ees ees
+	r8 r16 ees32 ees ees16 ees ees ees
 % Bars 86 to 90
-	r8 r16 g32 g g16 g g g
-	r8 r16 g32 g g16 g g g
-	r8 r16 g32 g g16\> g g g\!
-	R2*8
-	
+	r8 r16 ees32 ees ees16 ees ees ees
+	r8 r16 ees32 ees ees16 ees ees ees
+	r8 r16 ees32 ees ees16\> ees ees ees\!
+	R2*12
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
-	g'8\mf[ d16. d32] d8 d
-	g4( fis8 e)
-	f!-> g-> a8.-> g16-.
-	f16( g f e d c b a)
 % Bars 101 to 105
-	c'8->\f[ g16 e32. e64] g16-. c-. e,-. r
-	c'8->[ g16 e32. e64] g16-. c-. e,-. r
-	r8 d'[-> c-> g->]
-	e'8.-> d16-. c8 r
-	r d[-> c-> g->]
+	ees16\brack\f r r8 ees16 r r8 
+	ees16 r r8 ees16 r r8 
+	R2*37
 % Bars 106 to 110
-	e'8.-> d16-. c8 r
-	R2*15
+	
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
-	r8 r16 c,([\pp d c)] r8
-	R2*45
 % Bars 126 to 130
 	
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
-% Bars 141 to 145
 	
+	
+	
+	c16\brack\ff r r8 r4\fermata
+% Bars 141 to 145
+	R2\fermata
+	R2*26
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -113,18 +112,17 @@ musicTrombeIIMvtII = \relative c {
 % Bars 166 to 170
 	
 	\section
-	R2^\inc \transposition c
-	c'8\f[ g16 e32. e64] g16-. c-. e,-. r
-	c'8[ g16 e32. e64] g16-. c-. e,-. r
+	R2
+	c16\brack\f r r c32 c c16 g c g
+	c r r c32 c c16 g c g
 % Bars 171 to 175
-	r8 d'[-> c-> g]->
-	e'8.-> d16 c8 r
-	r d[-> c-> g]->
-	e'8.-> d16 c8 r \section
-	c16 g32 e g c e, r c'16 g32 e g c e, r
+	c r r c32 c c16 g c g
+	c r r g32 g c16 g c g
+	c r r g32 g c16 g c g
+	c r r g32 g c16 g c g \section
+	c g c g c g c g
 % Bars 176 to 180
-	g c e,8 e32 e c'4~_\dimin
-	c8 r r4
+	c g c g c8 r
 	R2*16
 % Bars 181 to 185
 	
@@ -133,8 +131,8 @@ musicTrombeIIMvtII = \relative c {
 % Bars 191 to 195
 	
 	
-	
-	R2\fermata
+	g2:32\ppp
+	ees'32 ees g, ees' g,16 r ees'32 ees g, ees' g,16 r\fermata
 	R2*9
 % Bars 196 to 200
 	

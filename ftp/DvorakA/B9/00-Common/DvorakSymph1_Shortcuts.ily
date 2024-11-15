@@ -217,6 +217,24 @@ markEO = #(define-music-function
 beamDamping = \override Beam.damping = \etc
 beamDampingRevert = \revert Beam.damping
 
+unsetGrandStaffName = \set GrandStaff.shortInstrumentName = ""
+setStaffName = \set Staff.shortInstrumentName = \etc
+
+nameStaffCorinC = \markup {
+	\center-column {
+		\lower #1 "Cor. I. II." "in C"
+	}
+}
+
+nameStaffCorinEs = \markup {
+	\center-column {
+		\lower #1.5 "Cor. I. II."
+		\concat { \general-align #Y #CENTER { "in E" \tiny \flat }}
+	}
+}
+
+nameStaffTrInC = "Tr. in C"
+
 %stemOffset = #(define-music-function
 %	(offset)
 %	(number?)

@@ -35,7 +35,7 @@ musicContrabassoMvtII = \relative c {
 % Bars 21 to 25
 	c8. c16 f-. f,-. r8
 	c''8. c16 f-. f,-. r8
-	c8. c16_\brackM\crescmarkup f8( f,)
+	c8. c16-\offset X-offset -2 _\brackM\crescmarkup f8( f,)
 	des'4(~\< des16 c bes aes)\!
 	<< g2\pp~ {s8\< s s s\!}>>
 % Bars 26 to 30
@@ -52,8 +52,8 @@ musicContrabassoMvtII = \relative c {
 	bes8 bes4\< bes8\!
 % Bars 36 to 40
 	ees\> r ees16^\pizz ees des des\!
-	c\brack\pp r r8 g16 g c c
-	bes r r8 aes16 aes f' f
+	c\brack\pp r r8 \beamDamping #5 g16 g c c
+	bes r r8 aes16 aes f' f \beamDampingRevert
 	des r r8 c16 c ees ees
 	d8 r d16 d bes d
 % Bars 41 to 45
@@ -61,9 +61,9 @@ musicContrabassoMvtII = \relative c {
 	ges8 r bes16 bes des bes
 	a8 r c16-. c-. ees-. ees-.
 	des8 des4^\brackM\arco des8
-	c4( b8\< a\!)
+	c4( \hairpinShorten #'(0 . -1.5) b8\< a\!)
 % Bars 46 to 50
-	g4\> c\!
+	\hairpinShorten #'(0 . 2.5) g4\> c\!
 	f,2\pp
 	c'4( f)
 	<< c'2~ {s4 s_\crescmarkup }>>
@@ -73,9 +73,9 @@ musicContrabassoMvtII = \relative c {
 	bes32[\<-. c-. des-. ees!-. f-. g-. aes-. bes]-. ees,16 ees des des\!
 	c4->\f aes->
 	des-> aes->
-	c8([\< des bes aes]\!
+	\hairpinShorten #'(0 . -4) c8([\< des bes aes]\!
 % Bars 56 to 60
-	g[) f'(\< ees des)]\!
+	g[) \hairpinShorten #'(0 . -4) f'(\< ees des)]\!
 	c4->\p c'->
 	c,-> c'->
 	c,8[\<-. f-. des-. bes]-.\!
@@ -106,7 +106,7 @@ musicContrabassoMvtII = \relative c {
 	des16\< des8 des16 des' des,8 ces16\!
 % Bars 81 to 85
 	bes\mf r r8 r4
-	bes16_\crescendo r r8 r4 % cresc according part score.
+	bes16_\crescendo r r8 r4  % cresc according part score.
 	ees16\f r ees r ees r ees r
 	ees r ees r ees r ees r
 	bes bes8-> bes16 bes' bes8-> bes16
@@ -129,15 +129,15 @@ musicContrabassoMvtII = \relative c {
 	
 	
 % Bars 101 to 105
-	bes'32\f^\brackM\arco bes g g ees ees c' c bes bes ees ees c c g aes
+	\beamDamping #5 bes'32\f^\brackM\arco bes g g ees ees c' c bes bes ees ees c c g aes
 	bes bes g g ees ees c' c bes bes ees, ees c c g aes
 	bes a bes c d c d bes ees f g aes! bes c bes aes
 	g ees f g aes bes c d ees d c bes c bes aes g
 	f g f ees d c d bes ees-. g-. c( bes) f-. aes-. ees'( d)
 % Bars 106 to 110
-	g,-._\brackM\dimin bes-. f'( ees) ees,-. g-. c( bes) bes,-. ees-. aes( g) g,-. bes-. f'( ees)
-	aes,4(\p\< << g) {s8\> s\!}>>
-	aes4(\< << g) {s8\> s\!}>>
+	g,-._\brackM\dimin bes-. f'( ees) ees,-. g-. c( bes) bes,-. ees-. aes( g) g,-. bes-. f'( ees) \beamDampingRevert
+	\hairpinShorten #'(0 . 2) aes,4(\p\< << g) {\hairpinShorten #'(-2 . -2) s8\> s\!}>>
+	\hairpinShorten #'(0 . 2) aes4(\< << g) {\hairpinShorten #'(-2 . -2) s8\> s\!}>>
 	aes2~
 	<< aes {s8\< s s s\!}>>
 % Bars 111 to 115
@@ -172,7 +172,7 @@ musicContrabassoMvtII = \relative c {
 	c16_\crescendo c8 b a g16
 % Bars 136 to 140
 	c16( b a g) c( b a g)
-	c32( b a g) c( b a g) c( b a g) c( b a g)
+	\beamDamping #5 c32( b a g) c( b a g) c( b a g) c( b a g) \beamDampingRevert
 	c16\brack\f r r8 r4
 	R2
 	aes32\ff r r aes' aes4.\fermata

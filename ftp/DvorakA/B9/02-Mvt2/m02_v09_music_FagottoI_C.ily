@@ -17,7 +17,7 @@ musicFagottoIMvtII = \relative c {
 % Bars 6 to 10
 	ees\fp\fermata
 	\once \partCombineApart c4\fermata aes8\< bes\fermata\!
-	f'(\< ees16 d\! c8\> d)\!\fermata
+	\hairpinShorten #'(0 . 1.2) f'(\< ees16 d\! \hairpinShorten #'(-1.2 . 0) c8\> d)\!\fermata
 	R2*8
 % Bars 11 to 15
 	
@@ -61,11 +61,11 @@ musicFagottoIMvtII = \relative c {
 	R2*3
 	
 	
-	\partCombineApart R2*4
-	
+	\partCombineApart \mmrPos #8 R2
+	\mmrPos #8 R
 % Bars 51 to 55
-	
-	\partCombineAutomatic
+	R
+	\mmrPos #8 R \partCombineAutomatic
 	c'2->
 	des->
 	c8[^\legato_\crescendo des bes aes]
@@ -101,7 +101,7 @@ musicFagottoIMvtII = \relative c {
 	ges16\< r r ges32-. ges-. f16\! r r f32-. f-.
 % Bars 81 to 85
 	\tuplet 6/4 4 {f16\mf f f f f f g g g a a a
-	bes_\crescendo bes bes des!\< des des c c c\! d d d }
+	bes-\tweak X-offset -1.5 _\crescendo bes bes des!\< des des c c c\! d d d }
 	ees8\f bes,4 bes8~
 	bes bes4 bes8
 	\partCombineApart bes16 bes' bes, bes' bes, bes' bes, bes' 
@@ -110,11 +110,11 @@ musicFagottoIMvtII = \relative c {
 	bes, bes' bes, bes' bes, bes' bes, bes' 
 	bes, bes' bes, bes' bes, bes' bes, bes'
 	c4( des)
-	c( ees8 des)
+	\shape #'((0 . -1)(0 . -0.5)(0 . 0)(0 . 0)) Slur c( ees8 des)
 % Bars 91 to 95
 	c4( bes8 aes)
 	g4( f8 c'16 bes)
-	bes4.( ees8
+	\shape #'((0 . -1)(0 . -0.5)(0 . -0.5)(0 . -1)) Slur bes4.( ees8
 	des2)
 	d8 r r4 \partCombineAutomatic
 % Bars 96 to 100
@@ -139,12 +139,12 @@ musicFagottoIMvtII = \relative c {
 	ces4( bes)
 	ces16( ees des ces bes4)
 	aes4( ges8 f)
-	ees8.( f32 ges f8) r
-	R2*3
+	ees8.( f32 ges f8) \once \partCombineAutomatic r
+	\mmrPos #10 R2
 % Bars 116 to 120
-	
-	
-	c'4.(\pp a8)
+	R
+	\mmrPos #6 R
+	c'4.(-\offset X-offset -1.5 \pp a8)
 	g8.( f16 e4) \partCombineAutomatic
 	f(_\crescendo ges)\<
 % Bars 121 to 125
@@ -158,18 +158,18 @@ musicFagottoIMvtII = \relative c {
 	c4~ c16 d-. e-. f-.
 	bes,2
 	aes8 r r4
-	R2*5
+	\mmrPos #7 \tweak extra-offset #'(1 . 0) R2
 % Bars 131 to 135
-	
-	
-	
-	
-	g8.(\brack\p_\crescendo a32 g f) e-. d-. e-. f-. g-. a-. b-. \clef tenor
+	R
+	\mmrPos #8 \tweak extra-offset #'(1 . 0) R
+	\mmrPos #6 R
+	R
+	\dynEO #'(-1.8 . -2.2) g8.(\brack\p_\crescendo a32 g f) e-. d-. e-. f-. g-. a-. b-. \clef tenor
 % Bars 136 to 140
 	c16-. r g-. r d'-. r g-. r
 	r c,-. r g-. r d'-. r g-. \clef bass \partCombineAutomatic
-	c,,32(\brack\f b a g a b c d e d c b c d e f)
-	g( f e d c d e f g a b c d e f g)
+	\beamDamping #5 c,,32(\brack\f b a g a b c d e d c b c d e f)
+	g( f e d c d e f g a b c d e f g) \beamDampingRevert
 	aes!16\ff r r8 r4\fermata
 % Bars 141 to 145
 	aes,16 r r8 r4\fermata
@@ -177,14 +177,14 @@ musicFagottoIMvtII = \relative c {
 % Bars 146 to 150
 	
 % Bars 151 to 155
-	\partCombineApart ees'8\brack\pp r des r
+	\partCombineApart \dynEO #'(-2.5 . -2.5) ees'8\brack\pp r des r
 	c16 r aes r g r c r \partCombineAutomatic
 	R2
 	\partCombineApart c2~
 	c4 bes8.( a16)
 % Bars 156 to 160
 	bes4.( c32 bes a bes)
-	ees2(~
+	\shape #'((0 . -1.5)(0 . -0.5)(0 . 0)(0 . 0)) Slur ees2(~
 	ees8 bes) ges( f16 ees)
 	bes'8_\brackM\pocoapococrescendo a4(~ a32 bes c des)
 	des8 c4 des32( ees f ges)
@@ -193,7 +193,7 @@ musicFagottoIMvtII = \relative c {
 	c8( b) r8. b16
 	ees4(_\brackM\dimmarkup d16 c bes! a)
 	a8( gis) \partCombineAutomatic r8. \once \partCombineApart e'16 \clef tenor
-	e4.(\brack\p_\brackM\pocoapococresc f8)
+	e4.(\brack\p-\tweak X-offset 2.7 _\brackM\pocoapococresc f8)
 % Bars 166 to 170
 	f4(\< fis8 g)\!
 	fis4.( g8) \section
@@ -205,12 +205,12 @@ musicFagottoIMvtII = \relative c {
 	g16[( e g f32 e]) e8.( d32 c)
 	b8( c16 d) e8( f)
 	g16[( e g f32 e]) e8.( d32 c) \section \clef bass
-	\key aes \major \afterGrace d!4\startTrillSpan {cis16( d)\stopTrillSpan} \afterGrace g4\startTrillSpan {fis16( g)\stopTrillSpan}
+	\key aes \major \aIIXoffset #-4 \afterGrace d!4\startTrillSpan {cis16( d)\stopTrillSpan} \afterGrace g4\startTrillSpan {fis16( g)\stopTrillSpan}
 % Bars 176 to 180
 	c,8 r r4
 	c4\brack\f g'_\dimmarkup~
 	g f8.( e16) \clef tenor
-	f4.( g32 f e f)
+	\grace {s8} f4.( g32 f e f)
 	bes2~
 % Bars 181 to 185
 	bes8 f( d c16 bes)
@@ -231,9 +231,9 @@ musicFagottoIMvtII = \relative c {
 	des2_\ppp\fermata(
 	c8) r r4
 % Bars 196 to 200
-	R2*3
-	
-	
+	\mmrPos #7 R2
+	\mmrPos #7 R
+	R
 	ees4( f
 	ees g8 f)
 % Bars 201 to 204

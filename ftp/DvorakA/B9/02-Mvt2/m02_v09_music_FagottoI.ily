@@ -193,7 +193,7 @@ musicFagottoIMvtII = \relative c {
 	c8( b) r8. b16
 	ees4(_\brackM\dimmarkup d16 c bes! a)
 	a8( gis) r8. e'16 \clef tenor
-	e4.(\brack\p_\brackM\pocoapococresc f8)
+	e4.(\brack\p-\tweak X-offset 2.7 _\brackM\pocoapococresc f8)
 % Bars 166 to 170
 	f4(\< fis8 g)\!
 	fis4.( g8) \section

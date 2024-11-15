@@ -17,7 +17,7 @@ musicFlautoIIMvtII = \relative c {
 % Bars 6 to 10
 	ees\fermata\brack\fp
 	<< ees4\fermata {s8\< s\!} >> << aes,4\fermata {s8\< s\!}>>
-	<< g2\fermata {s8\< s\! s\> s\!} >>
+	<< g2\fermata {\hairpinShorten #'(0 . -1.4) s8\< s\! \hairpinShorten #'(-1.4 . 0) s\> s\!} >>
 	R2*16
 % Bars 11 to 15
 	
@@ -28,7 +28,7 @@ musicFlautoIIMvtII = \relative c {
 	
 	
 	
-	r4 b,\brack\p
+	r4 \dynEO #'(-3.5 . 2.8) b,\brack\p
 % Bars 26 to 30
 	d8(\< ees\! f\> ees\!)
 	d r b4
@@ -45,9 +45,9 @@ musicFlautoIIMvtII = \relative c {
 % Bars 51 to 55
 	
 	R2
-	aes'4.->\fp r8
-	des4.\fp r8
-	aes16-. r aes-. r f-. r f-. r
+	\dynEO #'(0 . 2) aes'4.->\fp r8
+	\dynEO #'(0 . 2) des4.\fp r8
+	aes16-._\crescendo r aes-. r f-. r f-. r
 % Bars 56 to 60
 	ees-.\< r ees-. r ees-. r ees-. r\!
 	e4.\p r8
@@ -66,12 +66,12 @@ musicFlautoIIMvtII = \relative c {
 % Bars 71 to 75
 	aes4.) ges8(~
 	ges4 f)
-	ges(\brack\p des)
+	\dynEO #'(0 . 1.5) ges(\brack\p des)
 	bes'( aes8 ges)
 	ces4( bes)
 % Bars 76 to 80
 	aes8[(\< des] c! bes)\!
-	aes4\f( << a) {s8\> s\!}>>
+	aes4\f( << a) {\hairpinShorten #'(0 . -3) s8\> s\!}>>
 	bes4( aes!8 ges)
 	aes4.( c8)
 	aes4.(\< a8\!)
@@ -82,8 +82,8 @@ musicFlautoIIMvtII = \relative c {
 	
 	
 	
-	c4(\p\< << des) {s8\> s\!}>>
-	c4(\< ees8\> des)\!
+	\hairpinShorten #'(0 . 0.5) c4(\p\< << des) {\hairpinShorten #'(-0.5 . -2) s8\> s\!}>>
+	\hairpinShorten #'(0 . 2) c4(\< \hairpinShorten #'(-2 . -1) ees8\> des)\!
 % Bars 91 to 95
 	c4(\< bes8\! aes)
 	g4(\< f8\> c'16 bes)\!
@@ -94,7 +94,7 @@ musicFlautoIIMvtII = \relative c {
 	R2*3
 	
 	
-	bes,2\brack\mf~
+	bes,2\brack\mf-\offset X-offset 3.5 _\crescendo~
 	bes
 % Bars 101 to 105
 	ees'8(\f f16 g d) r r bes
@@ -103,7 +103,7 @@ musicFlautoIIMvtII = \relative c {
 	g16([ ees g f32 ees]) ees8.( d32 c)
 	bes8( c16 bes) ees8( f)
 % Bars 106 to 110
-	g16[( ees g f32 ees)] ees8.( f32 g)
+	g16[(_\brackM\dimin ees g f32 ees)] ees8.( f32 g)
 	c16\p r r8 r4
 	R2*3
 	
@@ -118,9 +118,9 @@ musicFlautoIIMvtII = \relative c {
 	
 % Bars 121 to 125
 	
-	ees'4-.\brack\p f4-.
+	ees'4-.\brack\p f4-._\crescmarkup
 	g8[->\< aes]-> bes-> c->\!
-	c16( bes a bes c\> bes des c)\!
+	c16(_\dimin bes a bes c\> bes des c)\!
 	bes( c des f ees c8 aes!16)
 % Bars 126 to 130
 	g4\pp( aes)
@@ -137,9 +137,9 @@ musicFlautoIIMvtII = \relative c {
 % Bars 136 to 140
 	
 	g'8.\brack\mf( a32 g) f-. e-. d-. e-. f-. g-. a-. b-.
-	c,32(\f b a g a b c d e d c b c d e f)
-	g( f e d c d e f g a b c d e f g)
-	aes!16\ff r r8 r4\fermata
+	\beamDamping #5 c,32(\f b a g a b c d e d c b c d e f)
+	g( f e d c d e f g a b c d e f g) \beamDampingRevert
+	\dynEO #'(0 . 2) aes!16\ff r r8 r4\fermata
 % Bars 141 to 145
 	aes16 r r8 r4\fermata
 	R2*5

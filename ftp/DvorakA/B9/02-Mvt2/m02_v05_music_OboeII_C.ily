@@ -50,9 +50,9 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	
-	r4 g\brack\p\<~
+	r4 << g~ {s8\brack\p\< s16 s\!}>>
 % Bars 46 to 50
-	<< g2 {s8\> s s s\!} >>
+	<< g2 {s8\> s s s16 s\!} >>
 	f2
 	e8.( d16 c f g a)  % des => d according to audio recording
 	c8( bes a g16 f)
@@ -60,7 +60,7 @@ musicOboeIIMvtII = \relative c {
 % Bars 51 to 55
 	bes\<
 	ees,\!
-	aes4.->\fp r8
+	aes4.->-\tweak X-offset 0.5 \fp r8
 	des4.\fp r8
 	aes16-. r aes-. r f-. r f-. r
 % Bars 56 to 60
@@ -84,14 +84,14 @@ musicOboeIIMvtII = \relative c {
 	des2(
 	f4) ges
 % Bars 76 to 80
-	aes8(\< des c bes)\!
-	aes4(\f  << a) {s8\> s\!} >>
+	\hairpinShorten #'(0 . 1) aes8(\< des c bes)\!
+	aes4(\f  << a) {\hairpinShorten #'(0 . -3) s8\> s\!} >>
 	bes4( aes!8 ges)
 	aes4.( c8)
 	aes4.(\< a8)\!
 % Bars 81 to 85
 	bes'32\mf g! f d c16 bes bes8-> c->
-	d->_\crescendo ees->\< f->\! bes->
+	d->-\tweak X-offset -1.5 _\crescendo ees->\< f->\! bes->
 	ees,8[->\f bes16-. g32.-. g64-.] bes16 ees g, r
 	ees'8[ bes16-. g32.-. g64-.] bes16 ees g, r
 	r8 f'8->[ ees-> bes->]
@@ -109,7 +109,7 @@ musicOboeIIMvtII = \relative c {
 	R2*2
 % Bars 96 to 100
 	
-	f8\mf f f a
+	\dynEO #'(-3 . 2) f8\mf f f a
 	d4 c8 bes
 	bes2~
 	bes
@@ -134,30 +134,30 @@ musicOboeIIMvtII = \relative c {
 % Bars 116 to 120
 	
 	
-	R2*6
-	
-	
+	R2
+	\mmrPos #-6 R
+	R
 % Bars 121 to 125
-	
-	
-	
+	\mmrPos #-6 R
+	R
+	R
 	R2*2
 	
 % Bars 126 to 130
-	c,2\brack\pp~
+	c,2-\offset X-offset 2 \brack\pp~
 	c
 	ees16 r r8 r4
 	R2
 	ges4(\brack\p~ ges32[ aes bes aes\< ges8])~\!
 % Bars 131 to 135
 	ges\>[ beses(\! aes ges)]
-	fes2~\<
+	<< fes2~ {s4 s32 s s\< s s8\!}>>
 	fes8[\> g!(\! fis dis)]
 	R2*2
 	
 % Bars 136 to 140
-	R2*2
-	
+	\mmrPos #-8 R2
+	R
 	c'32(\f b a g a b c d e d c b c d e f)
 	g( f e d c d e f) g,( a b c d e f g)
 	aes!16\ff r r8 r4\fermata
@@ -186,7 +186,7 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	
-	e4.(\brack\p_\pocoapococresc f8)
+	e4.(\brack\p-\tweak X-offset 2.7 _\pocoapococresc f8)
 % Bars 166 to 170
 	f4( fis8 g)
 	fis4.( g8) \section

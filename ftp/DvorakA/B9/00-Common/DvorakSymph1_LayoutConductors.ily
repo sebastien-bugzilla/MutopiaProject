@@ -42,7 +42,7 @@
 		\override TupletBracket.bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
 		\override TupletNumber.avoid-slur = #'ignore
-		\override TrillSpanner.bound-details.right.padding = #1  % 1.8
+%		\override TrillSpanner.bound-details.right.padding = #1  % 1.8
 		\override TrillSpanner.bound-details.right.end-on-accidental = ##f
 		\override TrillSpanner.bound-details.right.adjust-on-neighbor = ##f
 		\override TrillSpanner.to-barline = ##f

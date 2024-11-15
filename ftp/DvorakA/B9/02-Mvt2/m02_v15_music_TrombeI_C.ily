@@ -15,7 +15,9 @@ musicTrombeIMvtII = \relative c {
 	R\fermata
 	R\fermata
 % Bars 6 to 10
-	R2*47
+	R\fermata
+	R\fermata
+	R2*45
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -111,7 +113,7 @@ musicTrombeIMvtII = \relative c {
 % Bars 166 to 170
 	
 	\section
-	R2^\inc \transposition c
+	R2^\inc \transposition c \setStaffName \nameStaffTrInC
 	e8\f[ d16 c32. c64] d16-. e-. c-. r
 	e8[ d16 c32. c64] d16-. e-. c-. r
 % Bars 171 to 175
