@@ -96,7 +96,7 @@ musicOboeIIMvtIII = \relative c {
 	r8 ees-.\pp r d-.
 	ees-. r f-. r
 	ees-. r d-. r
-	g8(\f f ees d)
+	\dynEO #'(-2 . 2.5) g8(\f f ees d)
 	c'( bes aes g)
 % Bars 76 to 80
 	f( ees d16 c bes aes
@@ -156,14 +156,14 @@ musicOboeIIMvtIII = \relative c {
 % Bars 121 to 125
 		
 		
-		R2*7
-		
-		
+		\mmrPos #-7 R2
+		R
+		\mmrPos #-6 R
 % Bars 126 to 130
-		
-		
-		
-		
+		R
+		R
+		R
+		R
 		\alternative {
 			\volta 1 {
 				R2
@@ -243,7 +243,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 196 to 200
 	ees8 d\prall ees r
 	fis16-.\f cis'-. gis-. cis-. a-. cis-. b32( a gis fis)
-	fis2\ff~
+	fis2-\tweak X-offset 0.5 \ff~
 	fis~
 	fis
 % Bars 201 to 205
@@ -271,7 +271,7 @@ musicOboeIIMvtIII = \relative c {
 	ees4-> ees->
 	ees8.-> f16-. f8-. d-.
 % Bars 221 to 225
-	ees-.\ff ees-. ees8.-> ees16-.
+	ees-.-\tweak X-offset -1 \ff ees-. ees8.-> ees16-.
 	ees8-. c-. d8.-> d16-.
 	ees8-. ees-. ees8.-> ees16-.
 	d8-. d-. des8.-> des16-.
@@ -369,7 +369,7 @@ musicOboeIIMvtIII = \relative c {
 	r8 ees-.\pp r d-.
 	ees-. r f-. r
 	ees-. r d-. r
-	g8(\f f ees d)
+	\dynEO #'(-1.5 . 0.5) g8(\f f ees d)
 % Bars 311 to 315
 	c'( bes aes g)
 	f( ees d16 c bes aes
@@ -397,7 +397,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 331 to 335
 	g->] ees->[ g->] f16([ ees
 	d c]) bes8-.[ c-.] d-.[ 
-	d]-. b4.\fermata % signo
+	d]-. b4.\fermata \section % signo
 	R2
 	des,\pp
 % Bars 336 to 340

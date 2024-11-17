@@ -32,6 +32,7 @@ flegatosempre = \markup {\hspace #0.02 \dynamic f \italic {legato sempre}}
 fmarcatoconmoltaforza = \markup {\hspace #0.02 \dynamic f \italic {marcato, con molta forza}}
 fconespressione = \markup {\hspace #0.02 \dynamic f \italic {con espressione}}
 ffdim = \markup {\hspace #-0.53 \dynamic ff \italic {dim.}}
+ffdimB = \markup {\dynamic ff \italic {dim.}}
 
 semprepp = \markup {\italic {sempre} \dynamic pp}
 sempreff = \markup {\italic {sempre} \dynamic ff}

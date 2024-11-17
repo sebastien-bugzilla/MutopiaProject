@@ -13,7 +13,7 @@ musicClarinettoIIMvtIII = \relative c {
 	R2*3
 	
 	
-	a''2\fermata\pp
+	a''2\fermata-\tweak X-offset 0.5 \pp
 % Bars 6 to 10
 	f8\brack\p r e r
 	d r r f
@@ -24,10 +24,10 @@ musicClarinettoIIMvtIII = \relative c {
 	a4.-> r8
 	g'-. fis-. g-. r
 	d4.-> r8
-	a'4->\mf  g->
+	a'4->-\tweak X-offset 0.5 \mf  g->
 	f8-. f-. e-. r
 % Bars 16 to 20
-	c'4->_\crescendo bes->
+	a4->_\crescendo g->
 	f8-. a16( gis) a8-. r
 	f-.\f g!-. f-. r
 	f->[ g->] a-> bes->
@@ -49,7 +49,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a8-. g-. f-. r
 	R2
 	d'8-. c-. bes-. r
-	a4->\mf g->
+	a4->-\tweak X-offset 0.5 \mf g->
 % Bars 36 to 40
 	f8-. f-. e-. r
 	a4-> g->
@@ -57,7 +57,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a-.\f a-. a-. r
 	g-. g-. g-. r
 % Bars 41 to 45
-	a-.\mf r b-. r
+	a-.-\tweak X-offset 1 \mf r b-. r
 	cis-.\p r a-. r
 	g-. r a-. r
 	b-. r g-. r
@@ -96,7 +96,7 @@ musicClarinettoIIMvtIII = \relative c {
 	r8 a-.\pp r g-.
 	a-. r c-. r
 	c-. r bes-. r
-	a'\brack\f( g f e)
+	\dynEO #'(-1 . 0.5) a'\brack\f( g f e)
 	d( c bes a)
 % Bars 76 to 80
 	g( f e16 d c bes)
@@ -136,7 +136,7 @@ musicClarinettoIIMvtIII = \relative c {
 		
 		R2
 % Bars 106 to 110
-		a4->\brack\p f->
+		\dynEO #'(-2.6 . 2.2) a4->\brack\p f->
 		f8.-> f16-. f8-. e-.
 		a4-> gis->\<
 		a8.-> a16-. b8-. b-.\!
@@ -155,7 +155,7 @@ musicClarinettoIIMvtIII = \relative c {
 		f-> f->\<
 % Bars 121 to 125
 		e!( ees)\!
-		<< bes2 {s4 s_\crescendo }>>
+		<< bes2 {s4 s_\crescmarkup }>>
 		g2
 		d'(
 		bes)
@@ -173,14 +173,14 @@ musicClarinettoIIMvtIII = \relative c {
 				\mmrPos #-13 R
 			}
 			\volta 2 {
-				a8\p( g c b)
+				\dynEO #'(-1 . 0.5) a8\p( g c b)
 				c8 r r4
 % Bars 136 to 140
 				R2*2
 				
 			}
 		}
-	}
+	} \section
 	R2*15
 % Bars 141 to 145
 	
@@ -189,7 +189,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 151 to 155
 	
 	
-	a4\mf( g)
+	a4-\tweak X-offset 0.5 \mf( g)
 	f( g)
 	<< a2 {s8\< s\! s\> s\!}>>
 % Bars 156 to 160
@@ -202,7 +202,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a)
 	<< bes {s4 s }>>
 	<< {a4( g)} {s8\< s s s\!}>>
-	<<f2\mf~ {s4 s }>>
+	<<f2-\offset X-offset 1.5 \mf~ {s4 s }>>
 	f4 g
 % Bars 166 to 170
 	c,( bes)
@@ -214,7 +214,7 @@ musicClarinettoIIMvtIII = \relative c {
 	e16 r r8 r e~
 	e16 r r8 r e\<~
 	e16 r a8\!~ a16\> r g8~\!
-	g16\p r r8 r c,\pp~
+	g16-\tweak X-offset 0.7 \p r r8 r c,\pp~
 	c16 r r8 r g~
 % Bars 176 to 180
 	g16\< r g8~ g16\! r\> a8\!~
@@ -230,7 +230,7 @@ musicClarinettoIIMvtIII = \relative c {
 	e16-> r r8 r a~
 % Bars 186 to 190
 	a16 r fis8~ fis16 r g8~
-	g16 r r8 r g,\pp~
+	g16 r r8 r g,-\tweak X-offset -1.5 \pp~
 	g16 r r8 r d'~
 	d16 r ees8~ ees16 r a,8~
 	a16 r r8 r fis'~
@@ -271,7 +271,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a4-> bes->
 	c-> d->
 % Bars 221 to 225
-	c,(\ff cis)
+	\dynEO #'(-2.5 . 1) c,(\ff cis)
 	d8( bes) c!4~
 	c cis8.( d16
 	e4) c!
@@ -281,7 +281,7 @@ musicClarinettoIIMvtIII = \relative c {
 	f8) r r4
 	f'8. f16 g,4(
 	a8) r r4
-	a'8.\brack\f\< a16 b,4(
+	\dynEO #'(0 . 1.8) a'8.\brack\f\< a16 b,4(
 % Bars 231 to 235
 	d8) c-. f4\!
 	bes4\f\> a~
@@ -331,7 +331,7 @@ musicClarinettoIIMvtIII = \relative c {
 	R2
 	d'8-. c-. bes-. r
 % Bars 271 to 275
-	a4->\mf g->
+	a4->-\tweak X-offset 0.5 \mf g->
 	f8-. f-. e-. r
 	a4-> g->
 	f8-. gis-. a-. r
@@ -351,8 +351,8 @@ musicClarinettoIIMvtIII = \relative c {
 	ees8\f aes,( bes) g(
 	ees') aes,( bes) g-.
 % Bars 291 to 295
-	d'2_\dimin
-	<< a {s4\> s\!}>>
+	d'2
+	<< a {\hairpinShorten #'(0.5 . 0) s4\> s\!}>>
 	d8-.\f e-. d-. r
 	d-. cis-. d-. r
 	bes!-. c!-. bes-. r
@@ -373,7 +373,7 @@ musicClarinettoIIMvtIII = \relative c {
 	r8 a-.\pp r g-.
 	a-. r c-. r
 	c-. r bes-. r
-	a'8\brack\f( g f e)
+	\dynEO #'(-2 . 0) a'8\brack\f( g f e)
 % Bars 311 to 315
 	d( c bes a)
 	g( f e16 d c bes)
@@ -401,7 +401,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 331 to 335
 	e->[ a->] f-> a->
 	g16( f e d) c8-. d-.
-	e-. e-. a4\fermata % signo 
+	e-. e-. a4\fermata \section % signo 
 	R2
 	bes,\pp
 % Bars 336 to 340
@@ -426,7 +426,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a8. bes16 bes8 r
 	c4-> bes->
 	a8. bes16 bes8 r
-	f2\ff(
+	f2-\tweak X-offset 0.5 \ff(
 	g)
 % Bars 356 to 360
 	aes(

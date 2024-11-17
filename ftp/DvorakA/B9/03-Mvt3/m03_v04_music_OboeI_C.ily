@@ -18,7 +18,7 @@ musicOboeIMvtIII = \relative c {
 	\partCombineApart c''8-.[\brack\p g']-. d-. g-.
 	ees-. g-. f16( ees d c)
 	bes8-.[ c-.] d-.\< d-.\!
-	<< d2\fermata {s8\< s\! s\> s\!}>> \partCombineAutomatic
+	<< d2\fermata {s8\< s\! s-\tweak extra-offset #'(0 . 3.3) \> s\!}>> \partCombineAutomatic
 	R2*8
 % Bars 11 to 15
 	
@@ -58,13 +58,13 @@ musicOboeIMvtIII = \relative c {
 	c'-. bes-. aes-. r
 % Bars 41 to 45
 	g-.\mf r \partCombineApart ees(-> d16) r \partCombineAutomatic
-	g8-.\p_\dimin r c,-. r
+	g8-.\p-\offset X-offset 1.5 _\dimin r c,-. r
 	f-. r \partCombineApart des->( c16) r \partCombineAutomatic
 	f8-. r bes,-. r
-	\partCombineApart g'8(\brack\pp f ees d)
+	\partCombineApart \dynEO #'(-2.5 . -2.5) g'8(\brack\pp f ees d)
 % Bars 46 to 50
 	g4( c,)
-	des2(~
+	\shape #'((0 . -2)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur des2(~
 	des8[ c] f f,
 	ges2) 
 	\once \partCombineAutomatic R
@@ -115,7 +115,7 @@ musicOboeIMvtIII = \relative c {
 	f8-. ees-. aes-. r
 	ges-. ges-. ges8.-> ges16
 	f8-. ees-. aes-. r
-	des,16(\brack\ff ges aes ges) bes,( ees f ees)
+	\aIIXoffset #-2 des,16(\brack\ff ges aes ges) bes,( ees f ees)
 % Bars 91 to 95
 	f( ges aes des) des( bes aes ges)
 	ges8-> f-> ees-> des->
@@ -156,12 +156,12 @@ musicOboeIMvtIII = \relative c {
 % Bars 121 to 125
 		
 		
-		\partCombineApart c,8.->\brack\mf c16-. d,8.-> d16-.
+		\partCombineApart \dynEO #'(-3.2 . -2.5) c,8.->\brack\mf c16-. d,8.-> d16-.
 		ees8 r r4
 		ees'8.-> ees16-. f,8.-> f16-.
 % Bars 126 to 130
 		g8 r r4
-		g'8.->\brack\f g16-. a,8.-> a16-.
+		\dynEO #'(-2.7 . -4) g'8.->\brack\f g16-. a,8.-> a16-.
 		c8-> bes-> d4~->
 		d8 a d4->~_\dimin
 		\alternative {
@@ -206,7 +206,7 @@ musicOboeIMvtIII = \relative c {
 	g4.( f8)
 % Bars 166 to 170
 	ees8.( f16) ees4
-	bes'4.->\f( aes8) \partCombineAutomatic
+	\dynEO #'(-1.8 . -4.5) bes'4.->\f( aes8) \partCombineAutomatic
 	g16\ff r r8 r g_\brackM\pdim~
 	g16 r r8 r g\brack\pp~
 	g16 r ees8~ ees16 r d8~
@@ -243,7 +243,7 @@ musicOboeIMvtIII = \relative c {
 % Bars 196 to 200
 	ees8 d\prall ees r
 	fis16-.\f cis'-. gis-. cis-. a-. cis-. b32( a gis fis)
-	fis'2\ff~
+	fis'2-\tweak X-offset 0.5 \ff~
 	fis~
 	fis
 % Bars 201 to 205
@@ -271,7 +271,7 @@ musicOboeIMvtIII = \relative c {
 	ees4-> ees->
 	ees8.-> f16-. f8-. d-.
 % Bars 221 to 225
-	g-.\ff g-. g8.-> aes16-.
+	g-.-\tweak X-offset -1 \ff g-. g8.-> aes16-.
 	aes8-. f-. f8.-> g16-.
 	g8-. g-. g8.-> aes16-.
 	bes8-. g-. f8.-> ees16-.
@@ -299,7 +299,7 @@ musicOboeIMvtIII = \relative c {
 	\partCombineApart c,8-.[\brack\p g']-. d-. g-.
 	ees-. g-. f16( ees d c)
 	bes8-.[ c-.] d-.\< d-.\!
-	<< d2\fermata {s8\< s\! s\> s\!}>> \partCombineAutomatic
+	<< d2\fermata {s8\< s\! s-\tweak extra-offset #'(0 . 3.2) \> s\!}>> \partCombineAutomatic
 % Bars 246 to 250
 	R2*8
 	
@@ -339,13 +339,13 @@ musicOboeIMvtIII = \relative c {
 % Bars 276 to 280
 	c'-. bes-. aes-. r
 	g-.\mf r \partCombineApart ees(-> d16) r \partCombineAutomatic
-	g8-.\p_\dimin r c,-. r
+	g8-.\p-\offset X-offset 1.5 _\dimin r c,-. r
 	f-. r \partCombineApart des->( c16) r \partCombineAutomatic
 	f8-. r bes,-. r
 % Bars 281 to 285
-	\partCombineApart g'8(\brack\pp f ees d)
+	\partCombineApart \dynEO #'(-2.5 . -3) g'8(\brack\pp f ees d)
 	g4( c,)
-	des2\brack\pp(~
+	\shape #'((0 . -2)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur des2(~
 	des8[ c] f f,
 	ges2)
 % Bars 286 to 290
@@ -397,7 +397,7 @@ musicOboeIMvtIII = \relative c {
 	ges-. ges-. ges8.-> ges16
 	f8-. ees-. aes-. r
 % Bars 326 to 330
-	des,16(\brack\ff ges aes ges) bes,( ees f ees)
+	\aIIXoffset #-5.5 des,16(\brack\ff ges aes ges) bes,( ees f ees)
 	f( ges aes des) des( bes aes ges)
 	ges8-> f-> ees-> des->
 	aes'8.-> ges16-. ges4->
@@ -405,7 +405,7 @@ musicOboeIMvtIII = \relative c {
 % Bars 331 to 335
 	g->] ees->[ g->] f16([ ees
 	d c]) bes8-.[ c-.] d-.[ 
-	d]-. d4.\fermata % signo
+	d]-. d4.\fermata \section % signo
 	R2
 	des,\pp
 % Bars 336 to 340
@@ -430,7 +430,7 @@ musicOboeIMvtIII = \relative c {
 	g8. aes16 aes8 r
 	bes4-> aes->
 	g8. aes16 aes8 r
-	r4 g8.->\ff c,16
+	r4 \dynEO #'(-1.5 . 0.5) g8.->\ff c,16
 	des4.-> r8
 % Bars 356 to 360
 	r4 ges8.-> bes,16

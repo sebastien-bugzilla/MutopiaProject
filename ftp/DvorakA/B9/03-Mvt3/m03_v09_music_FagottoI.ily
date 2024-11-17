@@ -58,7 +58,7 @@ musicFagottoIMvtIII = \relative c {
 	aes16-. c-. g-. c-. f,-. f'-. r8
 % Bars 41 to 45
 	c8\brack\mf r ees(-> d16) r
-	g8\p_\dimin g16-. g-. e8-. r
+	g8-.\p_\dimin g16-. g-. e8-. r
 	bes!-. r des(-> c16) r
 	f8-. f16-. f-. f8-. r
 	ees-.\brack\pp r16 d( c8) r16 b(

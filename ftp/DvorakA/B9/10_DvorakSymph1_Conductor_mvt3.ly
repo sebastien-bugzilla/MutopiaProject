@@ -23,9 +23,9 @@
 \include "./00-Common/DvorakSymph1_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
-%\include "./00-Common/DvorakSymph1_Format_Cond_Mvt03.ily"
-\include "./03-Mvt3/m03_v02_music_FlautoI.ily"
-\include "./03-Mvt3/m03_v03_music_FlautoII.ily"
+\include "./00-Common/DvorakSymph1_Format_Cond_Mvt03.ily"
+\include "./03-Mvt3/m03_v02_music_FlautoI_C.ily"
+\include "./03-Mvt3/m03_v03_music_FlautoII_C.ily"
 \include "./03-Mvt3/m03_v04_music_OboeI_C.ily"
 \include "./03-Mvt3/m03_v05_music_OboeII_C.ily"
 \include "./03-Mvt3/m03_v07_music_ClarinettoI_C.ily"
@@ -36,15 +36,15 @@
 \include "./03-Mvt3/m03_v12_music_CornoII_C.ily"
 \include "./03-Mvt3/m03_v15_music_TrombeI_C.ily"
 \include "./03-Mvt3/m03_v16_music_TrombeII_C.ily"
-\include "./03-Mvt3/m03_v17_music_TrombonoI.ily"
-\include "./03-Mvt3/m03_v18_music_TrombonoII.ily"
-\include "./03-Mvt3/m03_v19_music_TrombonoIII.ily"
-\include "./03-Mvt3/m03_v20_music_Timpani.ily"
-\include "./03-Mvt3/m03_v21_music_ViolinoI.ily"
-\include "./03-Mvt3/m03_v22_music_ViolinoII.ily"
-\include "./03-Mvt3/m03_v23_music_Viola.ily"
-\include "./03-Mvt3/m03_v24_music_Violoncello.ily"
-\include "./03-Mvt3/m03_v25_music_Contrabasso.ily"
+\include "./03-Mvt3/m03_v17_music_TrombonoI_C.ily"
+\include "./03-Mvt3/m03_v18_music_TrombonoII_C.ily"
+\include "./03-Mvt3/m03_v19_music_TrombonoIII_C.ily"
+\include "./03-Mvt3/m03_v20_music_Timpani_C.ily"
+\include "./03-Mvt3/m03_v21_music_ViolinoI_C.ily"
+\include "./03-Mvt3/m03_v22_music_ViolinoII_C.ily"
+\include "./03-Mvt3/m03_v23_music_Viola_C.ily"
+\include "./03-Mvt3/m03_v24_music_Violoncello_C.ily"
+\include "./03-Mvt3/m03_v25_music_Contrabasso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -66,85 +66,78 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new GrandStaff <<
+				\new GrandStaff \with {
+					\nameGrandStaffIMvtIII \consists Keep_alive_together_engraver
+				} <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtIII
-%						}
+						\new Voice {
+							\formatConductorMvtIII
+						}
 						\new Voice {
 							\tempiMvtIII
 						}
 						\new Voice {
-							\timeMvtIII \nameStaffIMvtIII
-%							\partCombine \musicFlautoIMvtIII \musicFlautoIIMvtIII
-							\musicFlautoIMvtIII 
+							\timeMvtIII \nameStaffIMvtIII \musicFlautoIMvtIII 
 						}
 					>>
 					\new Staff {
-						\timeMvtIII \nameStaffIMvtIII \musicFlautoIIMvtIII
+						\timeMvtIII \nameStaffIIMvtIII \musicFlautoIIMvtIII
 					}
 				>>
 				\new Staff {
-					\timeMvtIII \nameStaffIIMvtIII
-					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
-%					\musicOboeIIMvtIII 
-				}
-				\new Staff {
 					\timeMvtIII \nameStaffIIIMvtIII
-					\partCombine #'(0 . 10) \musicClarinettoIMvtIII \musicClarinettoIIMvtIII
-%					\musicClarinettoIIMvtIII 
+					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
 				}
 				\new Staff {
 					\timeMvtIII \nameStaffIVMvtIII
+					\partCombine #'(0 . 10) \musicClarinettoIMvtIII \musicClarinettoIIMvtIII
+				}
+				\new Staff {
+					\timeMvtIII \nameStaffVMvtIII
 					\partCombine #'(0 . 11) \musicFagottoIMvtIII \musicFagottoIIMvtIII
-%					\musicFagottoIIMvtIII
 				}
 			>>
 			\new StaffGroup <<
 				\new Staff {
-					\timeMvtIII \nameStaffVMvtIII
+					\timeMvtIII \nameStaffVIMvtIII
 					\partCombine \musicCornoIMvtIII \musicCornoIIMvtIII
-%					\musicCornoIIMvtIII 
 				}
 				\new Staff {
-					\timeMvtIII \nameStaffVIMvtIII
+					\timeMvtIII \nameStaffVIIMvtIII
 					\partCombine \musicTrombeIMvtIII \musicTrombeIIMvtIII
-%					\musicTrombeIIMvtIII
 				}
-				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
 					\new Staff {
-						\timeMvtIII \nameStaffVIIMvtIII
-%						\partCombine \musicTrombonoIMvtIII \musicTrombonoIIMvtIII
-						\musicTrombonoIMvtIII
+						\timeMvtIII \nameStaffVIIIMvtIII \musicTrombonoIMvtIII
 					}
 					\new Staff {
-						\timeMvtIII \nameStaffVIIIMvtIII \musicTrombonoIIMvtIII
+						\timeMvtIII \nameStaffIXMvtIII \musicTrombonoIIMvtIII
 					}
 					\new Staff {
-						\timeMvtIII \nameStaffVIIIMvtIII \musicTrombonoIIIMvtIII
+						\timeMvtIII \nameStaffXMvtIII \musicTrombonoIIIMvtIII
 					}
 				>>
 			>>
 			\new Staff {
-				\timeMvtIII \nameStaffIXMvtIII \musicTimpaniMvtIII
+				\timeMvtIII \nameStaffXIMvtIII \musicTimpaniMvtIII
 			}
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
+				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
 					\new Staff {
-						\timeMvtIII \nameStaffXMvtIII \musicViolinoIMvtIII
+						\timeMvtIII \nameStaffXIIMvtIII \musicViolinoIMvtIII
 					}
 					\new Staff {
-						\timeMvtIII \nameStaffXIMvtIII \musicViolinoIIMvtIII
+						\timeMvtIII \nameStaffXIIIMvtIII \musicViolinoIIMvtIII
 					}
 				>>
 				\new Staff {
-					\timeMvtIII \nameStaffXIIMvtIII \musicViolaMvtIII
+					\timeMvtIII \nameStaffXIVMvtIII \musicViolaMvtIII
 				}
 				\new Staff {
-					\timeMvtIII \nameStaffXIIIMvtIII \musicVioloncelloMvtIII
+					\timeMvtIII \nameStaffXVMvtIII \musicVioloncelloMvtIII
 				}
 				\new Staff {
-					\timeMvtIII \nameStaffXIVMvtIII \musicContrabassoMvtIII
+					\timeMvtIII \nameStaffXVIMvtIII \musicContrabassoMvtIII
 				}
 			>>
 		>>
@@ -152,7 +145,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-			system-count = 55
 		}
 	}
 }

@@ -21,6 +21,7 @@
 %		\override RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
 %		\override RehearsalMark.outside-staff-priority = ##f
 		\override BarNumber.font-size = #3 % 3
+		barNumberVisibility = #first-bar-number-invisible-save-broken-bars
 	}
 	\context {
 		\StaffGroup

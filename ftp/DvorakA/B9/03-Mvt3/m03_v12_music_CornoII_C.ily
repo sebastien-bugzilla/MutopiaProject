@@ -13,7 +13,7 @@ musicCornoIIMvtIII = \relative c {
 	r8 e'4\f-> e8~
 	e e4-> e8
 	e r r4
-	e2\pp\fermata
+	\dynEO #'(1.5 . 4) e2\pp\fermata
 % Bars 6 to 10
 	a8\brack\p r a r
 	a r r c~
@@ -76,7 +76,7 @@ musicCornoIIMvtIII = \relative c {
 	b!2->_\dimin
 % Bars 56 to 60
 	<< e,-- {s4\> s\!}>>
-	a8-.\f b-. a-. r
+	a8-.-\tweak X-offset -1 \f b-. a-. r
 	R2
 	a8-. a-. a-. r
 	R2
@@ -202,7 +202,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 166 to 170
 	g f
 	e4\f f
-	b16\ff r r8 r e,~\p
+	b16-\tweak X-offset -1 \ff r r8 r e,~\p
 	e16 r r8 r e~\pp
 	e16 r a8~ a16 r fis8~
 % Bars 171 to 175
@@ -242,7 +242,7 @@ musicCornoIIMvtIII = \relative c {
 	ees->
 	ees->
 % Bars 201 to 205
-	a16\ff r r8 r4
+	a16-\tweak X-offset 0.5 \ff r r8 r4
 	R2*4
 	
 	
@@ -262,7 +262,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 216 to 220
 	
 % Bars 221 to 225
-	g4\ff( gis)
+	g4-\offset X-offset -1 \ff( gis)
 	a8( f) g!4
 	g gis8.-> a16-.
 	b8 c4-> c,8~
@@ -275,13 +275,13 @@ musicCornoIIMvtIII = \relative c {
 	c4->\f\< c-> 
 % Bars 231 to 235
 	c-> c->\!
-	\stemUp g\> \omitBeam c8 g
+	\stemUp \hairpinShorten #'(0 . 2) g\> \omitBeam c8 g
 	\stemDown c4. g8\!(
 	c4.)\brack\p g8
 	g4. g8 \clef bass
 % Bars 236 to 240
 	c,,8 r \clef treble c'''\pp r
-	c r c r16 \section r %%%%%%%%%%%%%%%%%%
+	c r c r16 \section r
 	r8 e,4\f-> e8~
 	e e4-> e8
 	e r r4
@@ -396,7 +396,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 331 to 335
 	b-.[ e-.] c-. e-.
 	d16( c b a) g8-. a-.
-	b-. b-. e4\fermata % signo
+	b-. b-. e4\fermata \section % signo
 	R2
 	bes2\pp
 % Bars 336 to 340
@@ -448,7 +448,7 @@ musicCornoIIMvtIII = \relative c {
 	R2*2
 	
 % Bars 376 to 380
-	e''4\brack\ff \tuplet 3/2 4 {e8 e e}
+	e''4-\tweak X-offset -1 \brack\ff \tuplet 3/2 4 {e8 e e}
 	e4 \tuplet 3/2 4 {e8 e e}
 	c8. c16 c4~
 	c2~

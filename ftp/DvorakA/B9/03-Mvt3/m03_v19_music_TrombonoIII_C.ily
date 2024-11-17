@@ -4,8 +4,8 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombonoIIMvtIII = \relative c {
-	\clef tenor
+musicTrombonoIIIMvtIII = \relative c {
+	\clef bass
 	\key c \minor
 %	\transposition a
 % Bars 1 to 5
@@ -52,10 +52,10 @@ musicTrombonoIIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	
-	c'4->\brack\mf-\offset X-offset 3.5 _\crescmarkup b->
-	c8-. c-. b-. r
-	c4.->\f r8
-	c8-> bes-> aes-> r 
+	ees4->\brack\mf-\offset X-offset 3.5 _\crescmarkup d->
+	c8-. c-. g-. r
+	ees'8->\f d-> c-> r
+	aes'-> g-> f-> r
 % Bars 41 to 45
 	R2*12
 	
@@ -71,57 +71,57 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 51 to 55
 	
 	
-	des4.->\f r8
-	des4.-> r8
-	<< a2( {s8\> s s s\!}>>
+	ges4.->\f r8
+	ges4.-> r8
+	<< fis2( {s8\> s s s\!}>>
 % Bars 56 to 60
 	g8)\p r r4
-	g8-.\f g-. g-. r
-	g4.-> r8
-	aes8-. bes-. aes-. r
-	c4.-> r8
+	c,8-.\f c-. c-. r
+	c-. d-. ees-. r
+	f-. f-. f-. r
+	f-. g-. aes-. r
 % Bars 61 to 65
-	c4-> b->
-	c8-. a-. b-. r
-	c4. b8
-	c8-. a-. b-. r
-	c-. b-. c-. r
+	ees4-> d->
+	c8-. c-. g-. r
+	ees'4-> d->
+	c8-. c-. g-. r
+	c-. c-. c-. r
 % Bars 66 to 70
 	f,8-^ g-^ aes-^ bes!-^
-	c4.-> b8-.
-	c-. b-. c4->
-	r8 aes\p-. g4->
-	r8 g-. f4->
+	c-. aes'-. d,-. f-.
+	e-. g-. c,4->
+	f,8-> r r4
+	R2*4
 % Bars 71 to 75
-	r8 c\brack\p( d f)
-	r ees( f_\crescmarkup bes)
-	r g( aes c)
-	g\f r r4
+	
+	
+	
+	g'8\f r r4
 	g8 r r4
 % Bars 76 to 80
 	g8 r r4
 	g8 r r4
-	R2*2
-	
-	r8 c-.\brack\f g-. r
+	bes,8->[ f']-> c-> f->
+	d->[ aes'->] ees-> aes->
+	f-. r r c'-.
 % Bars 81 to 85
-	R2*5
-	
-	
-	
-	
+	aes-. r r4
+	R2
+	g8 r r4
+	bes,8->[ c->] cis-> d->
+	ees r r4
 % Bars 86 to 90
-	c8-. c-. des8.-> des16
-	des8-. c-. f-. r
-	c-. c-. des8.-> des16
-	des8-. c-. f-. r
-	des4->\brack\ff ees->
+	aes8-. aes-. aes8.-> aes16
+	aes8-. aes-. aes-. r
+	aes-. aes-. aes8.-> aes16
+	aes8-. aes-. aes-. r
+	bes4->\brack\ff r
 % Bars 91 to 95
-	f8.-> des16-. des4->
-	ges,8-> f-> ees-> des->
+	des8.-> bes16-. bes8. aes16-.
+	ges8-> f-> ees-> des->
 	aes'8.-> ges16-. ges4->
 	g!4..->\fff fis16(
-	g4..) fis16(
+	g4..) fis,16(
 % Bars 96 to 100
 	g8) r r4
 	R2\fermata % signo
@@ -175,12 +175,12 @@ musicTrombonoIIMvtIII = \relative c {
 	
 	
 	
-	<< des'2->\mf {s4 s_\crescmarkup }>>
-	c4( d!)
+	<< g2->\brack\mf {s4 s_\crescmarkup }>>
+	aes4( bes)
 % Bars 166 to 170
-	ees2~
-	ees\f
-	d16\ff r r8 r4
+	g( f)
+	ees(\f aes)
+	bes16\ff r r8 r4
 	R2*12
 % Bars 171 to 175
 	
@@ -189,58 +189,62 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 181 to 185
 	bes8\mf r r4
 	bes8 r r4
-	bes8 r g r
-	fis r r4
-	fis8_\dimin r r4
+	bes8 r c r
+	fis, r r4
+	a8_\dimin r r4
 % Bars 186 to 190
 	g8 r c r
-	c r r4
+	f, r r4
 	g8\pp r r4
-	aes8 r f r
-	e r r4
+	aes8 r bes r
+	e, r r4
 % Bars 191 to 195
-	e8 r r4
-	f8 r f r
-	<< c'2~ {s4 s_\crescmarkup }>>
-	c8 d( ees c)
-	bes2(
+	c'8 r r4
+	f,8 r f r
+	<< { g4. r8} {s4 s_\crescmarkup }>>
+	a4. r8
+	bes4. r8
 % Bars 196 to 200
-	a)
-	fis'4..->\brack\f fis16
-	cis4..-> cis16
-	fis4..-> fis16
-	d4..-> d16
+	c4. r8
+	cis4->\brack\f cis'
+	cis,2
+	fis,~
+	fis
 % Bars 201 to 205
-	a\brack\ff r r8 r4
-	R2*7
+	f!16\brack\ff r r8 r4
+	R2*7 
 % Bars 206 to 210
 	
 	
 	
-	r4 r8 bes\p
-	bes8._\crescmarkup c16 bes4
+	r4 r8 d'\p
+	ees8._\crescmarkup ees16 ees4
 % Bars 211 to 215
-	r4 r8 d\<
-	ees8-. f-. ees-.\! r
-	c4->\f c->
+	r4 r8 f\<
+	g8-. aes-. bes-.\! r
+	c4->\brack\f c->
 	c8.-> d16-. d8-. bes-.
 	R2*4
 % Bars 216 to 220
 	
 	
 	
-	R2*11
+	R2*6
 % Bars 221 to 225
 	
+	
+	
+	
+	aes,4.\p aes8
 % Bars 226 to 230
-	
-	
-	
-	
-	r4 c(\brack\f\<
+	c4(_\crescmarkup bes)
+	c4. c8
+	ees4( d)
+	ees4. ees8
+	f4\brack\f\< fis->
 % Bars 231 to 235
-	bes aes)\!
-	f'(-> ees8) r
+	g-> aes->\!
+	bes(-> ees,8) r
 	R2*4
 	
 	
@@ -289,11 +293,11 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 271 to 275
 	
 	
-	c4->\brack\mf-\offset X-offset 3.5 _\crescmarkup b->
-	c8-. c-. b-. r
-	c4.->\f r8
+	ees4->\brack\mf-\offset X-offset 3.5 _\crescmarkup d->
+	c8-. c-. g-. r
+	ees'->\f d-> c-> r
 % Bars 276 to 280
-	c8-> bes-> aes-> r 
+	aes'-> g-> f-> r
 	R2*12
 	
 	
@@ -308,113 +312,113 @@ musicTrombonoIIMvtIII = \relative c {
 	
 	
 	
-	des4.->\f r8
-	des4.-> r8
+	ges4.->\f r8
+	ges4.-> r8
 % Bars 291 to 295
-	<< a2( {s8\> s s s\!}>>
+	<< fis2( {s8\> s s s\!}>>
 	g8)\p r r4
-	g8-.\f g-. g-. r
-	g4.-> r8
-	aes8-. bes-. aes-. r
+	c,8-.\f c-. c-. r
+	c-. d-. ees-. r
+	f-. f-. f-. r
 % Bars 296 to 300
-	c4.-> r8
-	c4-> b->
-	c8-. a-. b-. r
-	c4. b8
-	c8-. a-. b-. r
+	f-. g-. aes-. r
+	ees4-> d->
+	c8-. c-. g-. r
+	ees'4-> d->
+	c8-. c-. g-. r
 % Bars 301 to 305
-	c-. b-. c-. r
-	f,8-^ g-^ aes-^ bes!-^
-	c4.-> b8-.
-	c-. b-. c4->
-	r8 aes\p-. g4->
+	c-. c-. c-. r
+	f,8-^ g-^ aes-^ bes-^
+	c-. aes'-. d,-. f-.
+	e-. g-. c,4->
+	f,8-> r r4
 % Bars 306 to 310
-	r8 g-. f4->
-	r8 c\brack\p( d f)
-	r ees( f_\crescmarkup bes)
-	r g( aes c)
-	g\f r r4
+	R2*4
+	
+	
+	
+	g'8\f r r4
 % Bars 311 to 315
 	g8 r r4
 	g8 r r4
 	g8 r r4
-	R2*2
-	
+	bes,8->[\f f'->] c-> f->
+	d->[ aes'->] ees-> aes->
 % Bars 316 to 320
-	r8 c-.\brack\f g-. r
-	R2*5
-	
-	
-	
+	f-. r r c'-.
+	aes-. r r4
+	R2
+	g8 r r4
+	bes,8->[ c->] cis-> d->
 % Bars 321 to 325
-	
-	c8-. c-. des8.-> des16
-	des8-. c-. f-. r
-	c-. c-. des8.-> des16
-	des8-. c-. f-. r
+	ees r r4
+	aes8-. aes-. aes8.-> aes16
+	aes8-. aes-. aes-. r
+	aes-. aes-. aes8.-> aes16
+	aes8-. aes-. aes-. r
 % Bars 326 to 330
-	des4->\brack\ff ees->
-	f8.-> des16-. des4->
-	ges,8-> f-> ees-> des->
+	bes4->\brack\ff r
+	des8.-> bes16-. bes8.-> aes16-.
+	ges8-> f-> ees-> des->
 	aes'8.-> ges16-. ges4->
 	g!4..->\fff fis16(
 % Bars 331 to 335
-	g4..) fis16(
+	g4..) fis,16(
 	g8) r r4
 	R2\fermata \section % signo
 	R2
-	aes2\pp
+	f2\pp
 % Bars 336 to 340
 	R
-	a!
-	R2*4
-	
-	
+	fis
+	r4 g-.
+	r g-.
+	R2*2
 % Bars 341 to 345
 	
 	e4\brack\f-> f8-> g->
 	g8.-> aes16 aes4
-	g4-> c->
-	b2->
+	g2
+	f
 % Bars 346 to 350
-	c2\f~
-	c4 ees
-	d2->
-	g,->
-	des'4-> des->
+	e4\f f8-. g-.
+	a4. c8
+	b d g,4~
+	g8 r r4
+	bes'!4-> aes->
 % Bars 351 to 355
-	des8. c16 c8 r
-	des4-> des->
-	des8. c16 c8 r
-	c8.(\brack\ff ees16) ees8-. r
-	r4 des->
+	g8. aes16 aes8 r
+	bes4-> aes->
+	g8. aes16 aes8 r
+	g8.(\brack\ff c16) c8-. r
+	r4 aes->
 % Bars 356 to 360
-	bes8.( des16) des8-. r
-	r4 c->
-	c-> c->
-	c8.-> c16-. c4->
-	c4-> c->
+	ges8.( bes16) bes8-. r
+	r4 g!->
+	aes-> g->
+	f8.-> g16-. g4->
+	aes4-> g->
 % Bars 361 to 365
-	c8.-> c16-. c4->
-	aes4-> aes->
-	des8.-> des16-. des8-. c-.
-	aes4-> des->
-	c-> c8-. c-.
+	f8.-> g16-. g4->
+	des4-> c->
+	bes-> aes->
+	des4-> bes->
+	aes-> des8-. des-.
 % Bars 366 to 370
-	des4-> a->
-	des8.-> des16 des8-. c-.
-	ces4.-> bes8
-	ces4.-> bes8
-	aes r bes r
+	des-.[ des-.] des-. des-.
+	des8.-> bes'16 bes8-. aes-.
+	des4.-> ges,8
+	des'4.-> ges,8
+	des r ges r
 % Bars 371 to 375
-	ges r f r 
-	ges8.-> ces16-. ces8-. r
-	bes2->
+	ees r des r 
+	bes8.-> aes!16-. aes8-. r
+	ges2->
 	R2*2
 	
 % Bars 376 to 380
-	c8\ff r \tuplet 3/2 4 {c( b) c-.}
-	c r \tuplet 3/2 4 {c( b) c-.}
+	c'4\brack\ff c8-> g!->
+	c4-> c,8-> g->
 	c_\diminuendo r r4
 	R2*3
 	

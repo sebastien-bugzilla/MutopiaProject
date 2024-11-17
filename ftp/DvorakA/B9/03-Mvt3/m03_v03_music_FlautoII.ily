@@ -304,7 +304,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 271 to 275
 	g4->\mf g->
 	g8-. a-. b-. r
-	g4-> g->
+	g4->_\crescmarkup g->
 	g8-. a-. b-. r
 	g-.\f g-. c-. r
 % Bars 276 to 280
@@ -376,7 +376,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 331 to 335
 	g-.] ees[-. g-.] f16[( ees
 	d c]) bes8-.[ c-.] d[-.
-	d-.] b4.\fermata   % signo
+	d-.] b4.\fermata  \section  % signo
 	R2
 	r8 aes4->\pp~ aes8-.
 % Bars 336 to 340

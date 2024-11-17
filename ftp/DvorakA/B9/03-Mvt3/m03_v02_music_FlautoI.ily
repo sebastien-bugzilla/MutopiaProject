@@ -129,7 +129,7 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 % Bars 101 to 105
-	R2\fermata
+	R2\fermata 
 	\repeat volta 2 {
 		R2*12
 % Bars 106 to 110
@@ -173,7 +173,7 @@ musicFlautoIMvtIII = \relative c {
 				d4. r8 \section
 			}
 		}
-	}
+	} 
 	R2*15
 % Bars 141 to 145
 	
@@ -376,7 +376,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 331 to 335
 	g-.] ees[-. g-.] f16[( ees
 	d c]) bes8-.[ c-.] d[-.
-	d-.] d4.\fermata   % signo
+	d-.] d4.\fermata  \section  % signo
 	R2
 	r8 des4->\pp~ des8-.
 % Bars 336 to 340

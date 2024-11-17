@@ -70,7 +70,7 @@ musicFagottoIIMvtIII = \relative c {
 	R2
 % Bars 51 to 55
 	c,8[-.\f\< c,]-. d-. d'-.\!
-	ees[\< ees,]-. f-. f'\!
+	ees[\< ees,]-. f-. f'-.\!
 	ges,2\f~
 	ges(
 	fis2)_\dimin
@@ -120,7 +120,7 @@ musicFagottoIIMvtIII = \relative c {
 	f( ges aes des) des( bes aes ges) \clef bass
 	ges,8-> f-> ees-> des->
 	aes'8.-> ges16 ges4->
-	r c,,8-. g'!
+	r c,,8-. g'!-.
 	d-.[ g-.] ees-. g-.
 % Bars 96 to 100
 	f16( ees d c) bes8-. c-.
@@ -401,7 +401,7 @@ musicFagottoIIMvtIII = \relative c {
 	f( ges aes des) des( bes aes ges) \clef bass
 	ges,8-> f-> ees-> des->
 	aes'8.-> ges16 ges4->
-	r c,,8-. g'!
+	r c,,8-. g'!-.
 % Bars 331 to 335
 	d-.[ g-.] ees-. g-.
 	f16( ees d c) bes8-. c-.

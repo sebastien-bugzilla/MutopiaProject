@@ -52,9 +52,9 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	
-	e''4->\brack\mf_\crescmarkup e->
+	e''4->\brack\mf-\offset X-offset 3.5 _\crescmarkup e->
 	e8-. e-. e-. r
-	a,\f r a16 a a a
+	\aIIXoffset #-5 a,\f r a16 a a a
 	a8 r a16 a a a
 % Bars 41 to 45
 	R2*16
@@ -137,7 +137,7 @@ musicTrombeIMvtIII = \relative c {
 		
 		
 		
-		g,8.->\mf[_\crescendo g16 g8] r
+		g,8.->_\mfcrescendo[ g16 g8] r
 % Bars 111 to 115
 		g8.[ g16 g8] r
 		g8.[ g16 g8] r
@@ -203,7 +203,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 191 to 195
 	a8 r r4
 	g8 r f r
-	a2~_\crescmarkup
+	<< a2~ {s4 s_\crescmarkup}>>
 	a8 b( c a)
 	g2(
 % Bars 196 to 200
@@ -288,7 +288,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 271 to 275
 	
 	
-	e4->\brack\mf_\crescmarkup e->
+	e4->\brack\mf-\offset X-offset 3.5 _\crescmarkup e->
 	e8-. e-. e-. r
 	a,\f r a16 a a a
 % Bars 276 to 280
@@ -360,7 +360,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 331 to 335
 	e~
 	e8 r r4
-	R2\fermata % signo
+	R2\fermata \section % signo
 	R2*8
 	
 % Bars 336 to 340

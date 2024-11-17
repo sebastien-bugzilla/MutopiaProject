@@ -27,7 +27,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a'4->\mf  g->
 	f8-. f-. e-. r
 % Bars 16 to 20
-	c'4->_\crescendo bes->
+	a4->_\crescendo g->
 	f8-. a16( gis) a8-. r
 	f-.\f g!-. f-. r
 	f->[ g->] a-> bes->

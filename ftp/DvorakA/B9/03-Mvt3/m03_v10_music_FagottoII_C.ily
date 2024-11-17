@@ -18,7 +18,7 @@ musicFagottoIIMvtIII = \relative c {
 	c8\p r  c' r
 	c, r r c
 	ees r d\< r\!
-	<< g,2\fermata {s8\< s\! s\> s\!}>>
+	<< g,2\fermata {s8\< s\! s-\tweak extra-offset #'(0 . -4) \> s\!}>>
 	R2
 % Bars 11 to 15
 	c16\brack\p-. g'-. d-. g-. ees-. g-. f32( ees d c
@@ -70,7 +70,7 @@ musicFagottoIIMvtIII = \relative c {
 	R2
 % Bars 51 to 55
 	c,8[-.\f\< c,]-. d-. d'-.\!
-	ees[\< ees,]-. f-. f'\!
+	ees[\< ees,]-. f-. f'-.\!
 	ges,2\f~
 	ges(
 	fis2)
@@ -120,7 +120,7 @@ musicFagottoIIMvtIII = \relative c {
 	f( ges aes des) des( bes aes ges) \clef bass
 	ges,8-> f-> ees-> des->
 	aes'8.-> ges16 ges4->
-	r c,,8-. g'!
+	r c,,8-. g'!-.
 	d-.[ g-.] ees-. g-.
 % Bars 96 to 100
 	f16( ees d c) bes8-. c-.
@@ -155,7 +155,7 @@ musicFagottoIIMvtIII = \relative c {
 		ees( f)\<
 % Bars 121 to 125
 		g( ees)\!
-		<< aes,2 {s4 s_\crescendo }>>
+		<< aes,2 {s4 s_\crescmarkup }>>
 		c4->( bes)
 		c2(
 		ees4 d)
@@ -277,13 +277,13 @@ musicFagottoIIMvtIII = \relative c {
 	g8-. g-. g8.-> g16-.
 	aes2\brack\p(
 % Bars 226 to 230
-	f)_\crescmarkup \clef tenor
-	c'(
+	f) \clef tenor
+	\grace {s8} c'2(
 	aes)
 	ees'(
 	c\brack\f\<
 % Bars 231 to 235
-	\tweak color #red des4 c\!)
+	des4 c\!)
 	bes4\> ees8( bes)
 	c[( bes]) ees( d)\!
 	c(\p bes ees) bes(\noBeam \clef bass
@@ -299,7 +299,7 @@ musicFagottoIIMvtIII = \relative c {
 	c8\p r  c' r
 	c, r r c
 	ees r d\< r\!
-	<< g,2\fermata {s8\< s\! s\> s\!}>>
+	<< g,2\fermata {s8\< s\! s-\tweak extra-offset #'(0 . -4) \> s\!}>>
 % Bars 246 to 250
 	R2
 	c16\brack\p-. g'-. d-. g-. ees-. g-. f32( ees d c
@@ -401,11 +401,11 @@ musicFagottoIIMvtIII = \relative c {
 	f( ges aes des) des( bes aes ges) \clef bass
 	ges,8-> f-> ees-> des->
 	aes'8.-> ges16 ges4->
-	r c,,8-. g'!
+	r c,,8-. g'!-.
 % Bars 331 to 335
 	d-.[ g-.] ees-. g-.
 	f16( ees d c) bes8-. c-.
-	d-. d-. g4\fermata  % coda
+	d-. d-. g4\fermata \section  % coda
 	R2
 	f2\pp
 % Bars 336 to 340

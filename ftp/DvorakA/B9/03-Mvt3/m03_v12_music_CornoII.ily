@@ -232,7 +232,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 191 to 195
 	e16 r r8 r g~
 	g16 r a8~ a16 r a8
-	c( b16) r a8( b16) r
+	c( b16) r a8(_\brackM\crescmarkup b16) r
 	c8( b16) r a8( b16 c)
 	ees8( d16) r c8( d16) r
 % Bars 196 to 200

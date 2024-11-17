@@ -76,7 +76,7 @@ musicCornoIMvtIII = \relative c {
 	b!2->_\dimin
 % Bars 56 to 60
 	<< d-- {s4\> s\!}>>
-	c8-.\f d-. c-. r
+	c8-.-\tweak X-offset -1 \f d-. c-. r
 	R2
 	d8-. e-. d-. r
 	R2
@@ -108,8 +108,8 @@ musicCornoIMvtIII = \relative c {
 	
 	
 	
-	g,2->\fz
-	c->\fz
+	\dynEO #'(-2.3 . 2.5) g,2->\fz
+	\dynEO #'(-2.3 . 2.5) c->\fz
 % Bars 86 to 90
 	c8-. c-. ees8.-> ees16
 	d8-. c-. d-. r
@@ -125,7 +125,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 96 to 100
 	d16( c b a) g8-. a-.
 	b-. b-. b'4\fermata % signo
-	\partCombineApart e4->(\brack\p e->
+	\partCombineApart \dynEO #'(-2.2 . -2.5) e4->(\brack\p e->
 	e->) r
 	d->( d->
 % Bars 101 to 105
@@ -202,7 +202,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 166 to 170
 	bes,2~
 	bes4 a \partCombineAutomatic
-	e'16\ff r r8 r b~\p
+	e'16-\tweak X-offset -1 \ff r r8 r b~\p
 	b16 r r8 r b~\pp
 	b16 r c8~ c16 r b8~
 % Bars 171 to 175
@@ -232,7 +232,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 191 to 195
 	e16 r r8 r g~
 	g16 r f8~ f16 r e8
-	c( b16) r a8( b16) r
+	c( b16) r a8(_\brackM\crescmarkup b16) r
 	c8( b16) r a8( b16 c)
 	ees8( d16) r c8( d16) r
 % Bars 196 to 200
@@ -242,7 +242,7 @@ musicCornoIMvtIII = \relative c {
 	ees->
 	ees->
 % Bars 201 to 205
-	c16\ff r r8 r4
+	c16-\tweak X-offset 0.5 \ff r r8 r4
 	R2*4
 	
 	
@@ -281,7 +281,7 @@ musicCornoIMvtIII = \relative c {
 	R2
 % Bars 236 to 240
 	r4 \partCombineAutomatic g8\pp r
-	g r g r16 \section r %%%%%%%%%%%%%%%%%%
+	g r g r16 \section r 
 	r8 e4\f-> e8~
 	e_\dimmarkup e4-> e8
 	e r r4
@@ -348,7 +348,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 291 to 295
 	b!2->_\dimin
 	<< d-- {s4\> s\!}>>
-	c8-.\f d-. c-. r
+	\dynEO #'(-1 . 0) c8-.\f d-. c-. r
 	R2
 	d8-. e-. d-. r
 % Bars 296 to 300
@@ -380,9 +380,9 @@ musicCornoIMvtIII = \relative c {
 	
 	
 	
-	g,2->\fz
+	\dynEO #'(-2.3 . 2.5) g,2->\fz
 % Bars 321 to 325
-	c->\fz
+	\dynEO #'(-2.3 . 2.5) c->\fz
 	c8-. c-. ees8.-> ees16
 	d8-. c-. d-. r
 	c-. c-. ees8.-> ees16
@@ -396,7 +396,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 331 to 335
 	b-.[ e-.] c-. e-.
 	d16( c b a) g8-. a-.
-	b-. b-. b'4\fermata % signo
+	b-. b-. b'4\fermata \section % signo
 	R2
 	f2\pp
 % Bars 336 to 340
@@ -448,7 +448,7 @@ musicCornoIMvtIII = \relative c {
 	R2*2
 	
 % Bars 376 to 380
-	e'4\brack\ff \tuplet 3/2 4 {e8 e e}
+	e'4-\tweak X-offset -1 \brack\ff \tuplet 3/2 4 {e8 e e}
 	e4 \tuplet 3/2 4 {e8 e e}
 	e8._\diminuendo e16 e4~
 	e2~

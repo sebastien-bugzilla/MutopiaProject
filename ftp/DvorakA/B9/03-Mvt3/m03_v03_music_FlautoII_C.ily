@@ -52,13 +52,13 @@ musicFlautoIIMvtIII = \relative c {
 	g'''4->\mf g->
 % Bars 36 to 40
 	g8-. a-. b-. r
-	g4-> g->
+	g4->_\crescmarkup g->
 	g8-. a-. b-. r
 	g\f-. g-. c-. r
 	c-. c-. f-. r
 % Bars 41 to 45
 	c-.\mf r r4
-	b8-.\p r r4
+	b8-.\p-\offset X-offset 1.5 _\dimin r r4
 	bes!8-. r r4
 	a8-. r r4
 	R2*2
@@ -73,7 +73,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	des'2->(\brack\f(
+	des'2->(\brack\f-\offset X-offset 3 _\dimin(
 % Bars 56 to 60
 	c4\> b\!)
 	c8\f-. b-. c-. r
@@ -96,7 +96,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	c8-.\brack\p\< r c-. r\!
-	g'8(\f f ees d)
+	\dynEO #'(0 . 2) g'8(\f f ees d)
 	c( bes aes g)
 % Bars 76 to 80
 	f8 r r4
@@ -115,7 +115,7 @@ musicFlautoIIMvtIII = \relative c {
 	aes!( bes) c-. f-. des8-. r
 	c16-. aes'-. g( aes) ges-. a,-. c( bes)
 	aes!( bes) c-. f-. des8-. r
-	ges4->\brack\ff ges->
+	\dynEO #'(0 . 2) ges4->\brack\ff ges->
 % Bars 91 to 95
 	aes8.-> ges16-. ges4->
 	ges8-> f-> ees-> des->
@@ -182,7 +182,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 151 to 155
 	
 	
-	ees4\mf c~
+	\dynEO #'(0 . 2) ees4\mf c~
 	c bes
 	ees,( d8 ees)
 % Bars 156 to 160
@@ -193,9 +193,9 @@ musicFlautoIIMvtIII = \relative c {
 	aes2(\p
 % Bars 161 to 165
 	g->)
-	<< aes2( {s4 s }>>
+	<< aes2( {s4 s_\crescendo }>>
 	<< bes2)~ {s8\< s s s\! }>> 
-	bes8\brack\mf r r4
+	\dynEO #'(0 . 2) bes8\brack\mf r r4
 	R2*3
 % Bars 166 to 170
 	
@@ -215,7 +215,7 @@ musicFlautoIIMvtIII = \relative c {
 	d16-> r r8 r d~
 	d16-> r c8~ c16-> r a8~
 	a16-> r r8 r c8~
-	c16-> r r8 r bes~
+	c16->_\dimin r r8 r bes~
 % Bars 186 to 190
 	bes16 r c8~ c16 r c8~
 	c16 r r8 r bes\pp~
@@ -234,7 +234,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	b'4->\brack\ff b->
 % Bars 201 to 205
-	a8.-> bes!16\mf bes8-. ges-.
+	a8.-> \dynEO #'(0 . 2) bes!16\mf bes8-. ges-.
 	ges4-> ges->
 	ees8.-> fes16-. fes8-. ees-.
 	ees4->\p ees->
@@ -304,13 +304,13 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 271 to 275
 	g4->\mf g->
 	g8-. a-. b-. r
-	g4-> g->
+	g4->_\crescmarkup g->
 	g8-. a-. b-. r
 	g-.\f g-. c-. r
 % Bars 276 to 280
 	c-. c-. f-. r
 	c8-.\mf r r4
-	b8-.\p r r4
+	b8-.\p-\offset X-offset 1.5 _\dimin r r4
 	bes!8-. r r4
 	a8-. r r4
 % Bars 281 to 285
@@ -326,7 +326,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 % Bars 291 to 295
-	d'2->\brack\f(
+	d'2->\brack\f-\offset X-offset 3 _\dimin(
 	c4\> b)\!
 	c8-.\f b-. c-. r
 	ees,-. f-. g-. r
@@ -348,7 +348,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	c8-.\brack\p\< r c-. r\!
-	g'(\f f ees d)
+	\dynEO #'(0 . 2) g'(\f f ees d)
 % Bars 311 to 315
 	c( bes aes g)
 	f8 r r4
@@ -376,17 +376,17 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 331 to 335
 	g-.] ees[-. g-.] f16[( ees
 	d c]) bes8-.[ c-.] d[-.
-	d-.] b4.\fermata   % signo
+	d-.] b4.\fermata  \section  % signo
 	R2
 	r8 aes4->\pp~ aes8-.
 % Bars 336 to 340
 	R2
 	r8 a!4~ a8-.
 	r4 r8. g16\brack\p~
-	g8 r r8. g16~
+	g8 r_\crescendo r8. g16~
 	g8 r16 g~ g8 r16 g~
 % Bars 341 to 345
-	g8\< r16 g~ g8 r16 g_(\!
+	g8\< r16 g~ g8 r16 g(\!
 	c4)->\f c8-. c-.
 	c8.-> c16 c4
 	c8-. d-. ees8.-> ees16-.
@@ -428,7 +428,7 @@ musicFlautoIIMvtIII = \relative c {
 	\tuplet 3/2 4 {ces8-. bes-. ces-. bes-. ces-. bes-. 
 	ces-. bes-. ces-. ces-. ees-. d!-. }
 % Bars 376 to 380
-	c!16\ff-. g'-. d!-. g-. ees-. g-. f32[( ees d c)]
+	\dynEO #'(0 . 2) c!16\ff-. g'-. d!-. g-. ees-. g-. f32[( ees d c)]
 	c8[ b]\prall c-. d-.
 	c8.->_\diminuendo c16 c4~
 	c2~
