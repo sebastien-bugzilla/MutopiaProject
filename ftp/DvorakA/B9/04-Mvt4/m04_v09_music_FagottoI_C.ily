@@ -100,7 +100,7 @@ musicFagottoIMvtIV = \relative c {
 	gis2
 % Bars 76 to 80
 	gis''4.. gis,,16
-	a4_\pocoapococrescendo a'8. a,16
+	a4-\tweak X-offset 4 _\pocoapococrescendo a'8. a,16
 	a4 cis'8. a,16
 	a4 e''8. a,,16
 	a4 a''8. a,,16
@@ -189,7 +189,7 @@ musicFagottoIMvtIV = \relative c {
 	g4\f-> a->
 	e2
 % Bars 151 to 155
-	e4( cis
+	\aIIXoffset #-5 e4( cis
 	d e)
 	d(\pp b
 	c! d)
@@ -203,7 +203,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 161 to 165
 	ees~
 	ees \partCombineAutomatic
-	\tuplet 3/2 4 {e!8\brack\p_\legato_\crescendo f e d e d
+	\tuplet 3/2 4 {e!8\brack\p-\offset X-offset -8 ^\legato-\offset X-offset 3 _\crescendo f e d e d
 	g a g f g f
 	e f e d\< e d
 % Bars 166 to 170
@@ -251,20 +251,20 @@ musicFagottoIMvtIV = \relative c {
 	e4. dis8
 	e2
 % Bars 206 to 210
-	fis4 fis'\fz~
+	fis4 \dynEO #'(-1 . -1) fis'\fz~
 	fis b,\fp~
 	b e\fp~
 	e a,\fp~
 	a d\fp
 % Bars 211 to 215
 	d c~
-	c b(
+	c \shape #'(((0 . -1)(0 . -0.5)(0 . 0)(0 . 0))()) Slur b(
 	f'8. d16 c4~
 	c) b(
-	c) b~\brack\p
+	c) \dynEO #'(-2 . -2) b~\brack\p
 % Bars 216 to 220
-	b a(
-	c8. gis16 b4\pp~
+	b \shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur a(
+	c8. gis16 \dynEO #'(0 . -9) b4\pp~
 	b)\< a\! \partCombineAutomatic
 	e8\f r r4
 	e'2->\f
@@ -347,7 +347,7 @@ musicFagottoIMvtIV = \relative c {
 	d~
 	d~
 % Bars 286 to 290
-	d4 \partCombineAutomatic fis,16(\< g gis a)\!
+	d4 \partCombineAutomatic \aIIXoffset #-3 fis,16(\< g gis a)\!
 	b4( c8.) b16-.
 	b4( c8.) b16-.
 	b4( a8.) g16-.
@@ -381,10 +381,10 @@ musicFagottoIMvtIV = \relative c {
 	R2*3
 	
 	
-	\clef tenor \partCombineApart e2\brack\fp~
+	\clef tenor \partCombineApart \dynEO #'(-2 . -2) e2\brack\fp~
 % Bars 316 to 320
 	e
-	a\brack\fp~
+	\dynEO #'(-2 . -2) a\brack\fp~
 	a \partCombineAutomatic
 	R2*4
 	
@@ -425,7 +425,7 @@ musicFagottoIMvtIV = \relative c {
 	a d,~
 	d c8.( b16) \partCombineAutomatic
 % Bars 351 to 355
-	ees4-> d->
+	\aIIXoffset #-1 ees4-> d->
 	d4. c8
 	c8-> bes bes-> a
 	a4( g8) r
@@ -637,10 +637,10 @@ musicFagottoIMvtIV = \relative c {
 	gis4 r
 	r r8. e16
 	e4 r
-	\partCombineApart c2->\brack\fp~
+	\partCombineApart \dynEO #'(-2.8 . -3) c2->\brack\fp~
 	c
 % Bars 536 to 540
-	c->\brack\fp~
+	\dynEO #'(-2.8 . -3) c->\brack\fp~
 	c
 	c->~
 	c
@@ -671,7 +671,7 @@ musicFagottoIMvtIV = \relative c {
 	
 % Bars 561 to 565
 	
-	bes2\fp~
+	\aIIXoffset #-4 bes2\fp~
 	bes
 	bes,\fp~
 	bes
@@ -901,7 +901,7 @@ musicFagottoIMvtIV = \relative c {
 	g,->
 	ees'-> \section 
 % Bars 761 to 765
-	\time 3/2 \partCombineApart bes2-> a-> g4.-> bes8-.
+	\timeThreeTwo \partCombineApart bes2-> a-> g4.-> bes8-.
 	a2. gis4 a2
 	b1.~
 	b2 c1-> \partCombineAutomatic
@@ -914,7 +914,7 @@ musicFagottoIMvtIV = \relative c {
 	b2 \partCombineApart c4 c8. c16 c2->
 % Bars 771 to 775
 	c-> \partCombineAutomatic b4 b8. b16 \once \partCombineApart g2
-	\tuplet 3/2 2 {des'4-.\brack\ff r des-. c-. r c-. des-. r des-.
+	\tuplet 3/2 2 {\dynEO #'(-1 . 1.5) des'4-.\brack\ff r des-. c-. r c-. des-. r des-.
 	cis-. r cis-. d!-. r d-. cis-. r cis-.
 	des-. r des-. des-. r des-. des-. r des-.}
 	d!2-> c-> b->

@@ -256,7 +256,7 @@ musicClarinettoIIMvtIV = \relative c {
 	b8[ r16 cis\p cis8 r16 d]
 % Bars 216 to 220
 	d8 r r4
-	b8[ r16 cis\brack\pp cis8 r16 d]
+	b8[ r16 cis cis8\brack\pp r16 d]
 	d8 r r4
 	d8.\f fis,16 b4~
 	b a->
@@ -327,9 +327,9 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 281 to 285
 	a
 	a4 gis
-	a4( b8.) a16
-	a4( b8.) a16
-	a4( gis8.) fis16
+	a4( b8.) a16-.
+	a4( b8.) a16-.
+	a4( gis8.) fis16-.
 % Bars 286 to 290
 	fis4 e16(\< eis fis gis)\!
 	e2

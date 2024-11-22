@@ -457,7 +457,7 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 376 to 380
 	f4( f,8) r
 	r4 r8. g'16
-	g4( g,8) r 
+	\shape #'((0 . -1.5)(0 . -1.5)(0 . -1.5)(0 . -1.5)) Slur g4( g,8) r 
 	e'2\pp~
 	e
 % Bars 381 to 385
@@ -812,7 +812,7 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 681 to 685
 	a4( b)
 	cis(\< d\!)
-	e\< fis\>
+	\hairpinShorten #'(0 . -2) e\< \hairpinShorten #'(2 . 0) fis\>
 	e\! e,
 	a8 r r4
 % Bars 686 to 690
@@ -901,7 +901,7 @@ musicFagottoIIMvtIV = \relative c {
 	g,->
 	ees'-> \section 
 % Bars 761 to 765
-	\time 3/2 cis1.->\brack\ff
+	\timeThreeTwo cis1.->\brack\ff
 	d->
 	gis
 	a->

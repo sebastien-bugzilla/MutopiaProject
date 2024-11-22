@@ -149,7 +149,7 @@ musicOboeIIMvtIV = \relative c {
 	des4 r
 	r r8. cis16
 	cis4 r
-	f,2\pp~
+	f,2-\tweak X-offset 0.5 \pp~
 % Bars 136 to 140
 	f
 	d~
@@ -251,7 +251,7 @@ musicOboeIIMvtIV = \relative c {
 	fis4.. b,16
 	ais4.. b16
 	b8. b16 ais8. b16
-	<< b2 {s8\< s s s\!}>>
+	<< b2 {\hairpinShorten #'(0.5 . 0) s8\< s s s\!}>>
 % Bars 231 to 235
 	fis'2\fp~
 	fis
@@ -296,7 +296,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 266 to 270
 	
 % Bars 271 to 275
-	fis4\f b,
+	fis4-\tweak X-offset -0.5 \f b,
 	b4.. cis16
 	dis4-> b->
 	b4.. cis16
@@ -305,10 +305,10 @@ musicOboeIIMvtIV = \relative c {
 	g4( fis8) r
 	fis8([ e dis) r16 c'-.]
 	c4( b8) r
-	d,4\ff( e8.) d16
+	d,4-\offset X-offset -1 \ff( e8.) d16
 	d4( c8) r
 % Bars 281 to 285
-	b4( c8.) b16
+	b4( c8.) b16-.
 	b4 a
 	d2~
 	d~
@@ -336,7 +336,7 @@ musicOboeIIMvtIV = \relative c {
 	gis4 ais
 	a!4.. a16
 	a4.. a16
-	a2~\pp
+	a2~-\offset X-offset 1.3 \pp
 % Bars 306 to 310
 	a
 	r4 b8\p r
@@ -407,7 +407,7 @@ musicOboeIIMvtIV = \relative c {
 	r8. des16 des8 r
 	g4.. f!16
 	f4.. ees16
-	c4. bes8-._\brackM\crescmarkup
+	c4. \markEO #'(1 . 1.5) bes8-._\brackM\crescmarkup
 % Bars 366 to 370
 	c-. d-. ees-. f-.
 	e2\ff~
@@ -599,7 +599,7 @@ musicOboeIIMvtIV = \relative c {
 	des4 r
 	r r8. cis16
 	cis4 r
-	c!2->\fp~
+	c!2->-\tweak X-offset 0.3 \fp~
 	c
 % Bars 536 to 540
 	c->\fp~
@@ -621,16 +621,16 @@ musicOboeIIMvtIV = \relative c {
 	c->~
 % Bars 551 to 555
 	c
-	g'->~
+	\shape #'((0 . -1)(0 . -1)(0 . -1)(0 . -1)) Tie g'->~
 	g
 	c,->~
 	c
 % Bars 556 to 560
-	f->~
+	\shape #'((0 . -1)(0 . -1)(0 . -1)(0 . -1)) Tie f->~
 	f
 	ees,2\brack\fp~
 	ees
-	ees\fp~
+	ees-\offset X-offset 0.5 \fp~
 % Bars 561 to 565
 	ees
 	R2*4
@@ -638,7 +638,7 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 % Bars 566 to 570
-	f2->\fp~
+	f2->-\tweak X-offset 0.3 \fp~
 	f
 	f->\fp~
 	f
@@ -766,7 +766,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 681 to 685
 	e2
 	a,4(\< b\!)
-	cis\< e8.\!( d16)\>
+	\hairpinShorten #'(0 . -2) cis\< e8.\!( \hairpinShorten #'(2 . 0) d16)\>
 	cis4 b\!
 	a8 r r4
 % Bars 686 to 690
@@ -838,7 +838,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 741 to 745
 	dis-> eis->\!
 	fis2\fz
-	gis,2->\fp
+	gis,2->-\tweak X-offset 0.3 \fp
 	cis,->\p
 	cis->~
 % Bars 746 to 750
@@ -860,7 +860,7 @@ musicOboeIIMvtIV = \relative c {
 	c4-> c->
 	a-> a'-> \section
 % Bars 761 to 765
-	\time 3/2 e1.->\ff
+	\timeThreeTwo e1.->\ff
 	d4 d8. d16 d2-> a4 a8. a16
 	b1.->
 	a4 a8. a16 a2-> e4 e8. e16

@@ -92,7 +92,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ees'4.. ees,16
 % Bars 76 to 80
 	ees2
-	dis'8.\brack\p_\pocoapococrescendo dis,16 dis4
+	dis'8.\brack\p-\tweak X-offset 2.5 _\pocoapococrescendo dis,16 dis4
 	fis'!8. fis,!16 fis4
 	b8. b,16 b4
 	dis'8. dis,16 dis4
@@ -161,7 +161,7 @@ musicClarinettoIIMvtIV = \relative c {
 	g4 r
 	r r8. a16
 	a4 r
-	r g-.\pp
+	r g-.-\tweak X-offset 0.5 \pp
 % Bars 136 to 140
 	r g-.
 	r g-.
@@ -233,7 +233,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 196 to 200
 	R2*2
 	
-	fis,4(\brack\pp\< << eis) {s8\> s\!}>>
+	\hairpinShorten #'(-0.3 . 0) fis,4(-\offset X-offset -1.5 \brack\pp\< << eis) {\hairpinShorten #'(0 . -1) s8\> s\!}>>
 	r8 fis4 fis8
 	r fis4 fis8
 % Bars 201 to 205
@@ -256,7 +256,7 @@ musicClarinettoIIMvtIV = \relative c {
 	b8[ r16 cis\p cis8 r16 d]
 % Bars 216 to 220
 	d8 r r4
-	b8[ r16 cis\brack\pp cis8 r16 d]
+	b8[ r16 cis cis8\brack\pp r16 d]
 	d8 r r4
 	d8.\f fis,16 b4~
 	b a->
@@ -273,7 +273,7 @@ musicClarinettoIIMvtIV = \relative c {
 	cis8. cis16 bis8. cis16
 	<< cis2 {s8\< s s s\!}>>
 % Bars 231 to 235
-	gis2\fp~
+	gis2-\tweak X-offset 0.5 \fp~
 	gis
 	gis,\fp~
 	gis
@@ -297,7 +297,7 @@ musicClarinettoIIMvtIV = \relative c {
 	fis2~
 	fis4 e
 % Bars 251 to 255
-	a4->\ff d
+	a4->-\tweak X-offset 0.3 \ff d
 	fis4.. g16
 	g4 fis
 	fis4.. g16
@@ -313,7 +313,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 266 to 270
 	
 % Bars 271 to 275
-	gis4\f cis,
+	gis4-\tweak X-offset -0.5 \f cis,
 	cis4.. dis16
 	eis4-> cis->
 	cis4.. dis16
@@ -327,9 +327,9 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 281 to 285
 	a
 	a4 gis
-	a4( b8.) a16
-	a4( b8.) a16
-	a4( gis8.) fis16
+	a4( b8.) a16-.
+	a4( b8.) a16-.
+	a4( gis8.) fis16-.
 % Bars 286 to 290
 	fis4 e16(\< eis fis gis)\!
 	e2
@@ -344,7 +344,7 @@ musicClarinettoIIMvtIV = \relative c {
 	\once \stemUp e2\p~
 % Bars 296 to 300
 	e
-	e\<
+	\hairpinShorten #'(0.5 . 0.5) e\<
 	b'2\!
 	cis!4..\p gis16
 	gis4.. eis16
@@ -363,7 +363,7 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	
 	
-	a2\fp~
+	a2-\tweak X-offset 0.3 \fp~
 	a
 % Bars 321 to 325
 	d\fp~
@@ -421,7 +421,7 @@ musicClarinettoIIMvtIV = \relative c {
 	d4. c8_\brackM\crescmarkup
 % Bars 366 to 370
 	b-. a-. g-. f-.
-	c'4\ff b8. c16
+	c'4-\offset X-offset -1 \ff b8. c16
 	c2
 	cis!4 bis8. cis16
 	cis!2
@@ -610,7 +610,7 @@ musicClarinettoIIMvtIV = \relative c {
 	g4 r
 	r r8. a16
 	a4 r
-	d\p ees8. a,16
+	d-\tweak X-offset 0.3 \p ees8. a,16
 	a2
 % Bars 536 to 540
 	d4 ees8. a,16
@@ -677,7 +677,7 @@ musicClarinettoIIMvtIV = \relative c {
 	r8. bes16 bes4->
 	c8 r a r
 	r8. bes16 bes4->
-	a,2\p~
+	a,2-\offset X-offset 0.5 \p~
 % Bars 591 to 595
 	a~
 	a~
@@ -691,7 +691,7 @@ musicClarinettoIIMvtIV = \relative c {
 	f8-> f16-. r g8-> g16-. r
 	g8-> g16-. r g8-> g16-. r
 % Bars 601 to 605
-	f2\fz->~
+	f2-\tweak X-offset 0.5 \fz->~
 	f
 	g->\fz~
 	g
@@ -705,7 +705,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 611 to 615
 	e->
 	b4.. a'16
-	a4..\ff aes16
+	a4..-\tweak X-offset 0.3 \ff aes16
 	aes4.. g16
 	g4.. fis16
 % Bars 616 to 620
@@ -785,7 +785,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 681 to 685
 	gis4( ais)
 	<< b2 {s4\< s\!} >>
-	<< b2 {s4\< s8\! s\>}>>
+	<< b2 {\hairpinShorten #'(0 . -1.8) s4\< s8\! \hairpinShorten #'(2.2 . 0) s\>}>>
 	b4 ais\!
 	b8 r r4
 % Bars 686 to 690
@@ -852,7 +852,7 @@ musicClarinettoIIMvtIV = \relative c {
 	<< gis {s4 s\<}>>
 % Bars 741 to 745
 	\stemUp eis4 fisis\! \stemDown
-	gis2\fz
+	gis2-\offset X-offset 0.5 \fz
 	d\fp
 	bes\p
 	gis~
@@ -875,7 +875,7 @@ musicClarinettoIIMvtIV = \relative c {
 	fis4-> e->
 	d-> d'-> \section
 % Bars 761 to 765
-	\time 3/2 a2->\brack\ff b-> c->
+	\timeThreeTwo a2->\brack\ff b-> c->
 	b1 g4 g8. g16
 	g1.->
 	fis!1-> d4 d8. d16
@@ -911,7 +911,7 @@ musicClarinettoIIMvtIV = \relative c {
 	b4 b b2.. b8
 	c4 c c2.. c8
 % Bars 791 to 795
-	d2.( b4 a fis
+	\shape #'((0 . 1)(0 . 0.5)(0 . 0.5)(0 . 1)) Slur d2.( b4 a fis
 	d b a fis e' d)
 	a'1-> fis2
 	g1.->

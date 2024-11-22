@@ -48,7 +48,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 51 to 55
 	
 	r4 r32 c,(\< d e f g a b\!
-	c4)\f d8.-> g,16
+	\dynEO #'(0 . 2) c4)\f d8.-> g,16
 	g2
 	c4 d8.-> g16
 % Bars 56 to 60
@@ -77,7 +77,7 @@ musicFlautoIIMvtIV = \relative c {
 	cis'~
 % Bars 76 to 80
 	cis
-	cis4(\p_\pocoapococrescendo e
+	cis4(_\ppocoapococrescendo e
 	d cis)
 	fis( e
 	cis a')
@@ -109,13 +109,13 @@ musicFlautoIIMvtIV = \relative c {
 	e4 d\<
 	<< g2~ {s4 s\!}>>
 	<< g2 {s4 s\>}>>
-	g4\! fis
+	g4->\! fis->
 	g8 r r4
 % Bars 106 to 110
 	R2*3
 	
 	
-	a2->\mf
+	a2->_\mfcrescendo
 	g->
 % Bars 111 to 115
 	a8.-> b16-. c8-.\< b-.
@@ -149,7 +149,7 @@ musicFlautoIIMvtIV = \relative c {
 	r a-.\pp
 % Bars 136 to 140
 	r a-.
-	r f-.
+	r f-._\pppocoapococresc 
 	r f-.
 	r b-.
 	r b-.
@@ -163,7 +163,7 @@ musicFlautoIIMvtIV = \relative c {
 	r c-. r c-.\!
 	\tuplet 3/2 4 {r8 a e'~ e a, e'~
 	e a, e'~} e a,
-	\tuplet 3/2 4 {r c\f g'~ g c, g'~
+	\tuplet 3/2 4 {r\f c g'~ g c, g'~
 	g c, g'~} g c, 
 % Bars 151 to 155
 	cis4( e
@@ -180,7 +180,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 161 to 165
 	a8 r r4
 	a8 r r4
-	r8 g r b
+	r8 g_\pcrescendo r b
 	r c r d
 	r e r b\<
 % Bars 166 to 170
@@ -207,7 +207,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	
 	r8. d'16([\f cis8.) d16(]
-	cis8) r r4
+	cis8)_\diminuendo r r4
 	r8. e,16[(\brack\mf a8.) e16(]
 % Bars 191 to 195
 	a8) r r4
@@ -222,9 +222,9 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 206 to 210
 	
 % Bars 211 to 215
-	b'8\f[ r16 c c8 r16 d]
+	\dynEO #'(0 . 2) b'8\f[ r16 c c8 r16 d]
 	d8 r r4
-	b8[ r16 c c8 r16 d]
+	\markEO #'(0 . 1) b8[_\dimin r16 c c8 r16 d]
 	d8 r r4
 	a8[ r16 b\p b8 r16 c]
 % Bars 216 to 220
@@ -255,7 +255,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	
 	
-	e'4->\f e,->
+	\dynEO #'(0 . 1) e'4->\f e,->
 	R2
 % Bars 241 to 245
 	e'4-> e,->
@@ -270,7 +270,7 @@ musicFlautoIIMvtIV = \relative c {
 	b2->
 	g-> 
 % Bars 251 to 255
-	g4->\ff c
+	\dynEO #'(0 . 2) g4->\ff c
 	e4.. f16
 	f4 e
 	e4.. f16
@@ -291,7 +291,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	
 	
-	b2\ff
+	b2-\offset X-offset -1 \ff
 	g4-> g->
 % Bars 281 to 285
 	g2
@@ -365,7 +365,7 @@ musicFlautoIIMvtIV = \relative c {
 	c4. bes8-._\brackM\crescmarkup
 % Bars 366 to 370
 	c-. d-. ees-. f-.
-	cis2\ff~
+	\dynEO #'(0 . 2) cis2\ff~
 	cis
 	b4 ais8. b16
 	b2
@@ -374,7 +374,7 @@ musicFlautoIIMvtIV = \relative c {
 	bes~
 	bes~
 	bes
-	f'~\brack\f
+	\dynEO #'(0 . 2) f'~\brack\f
 % Bars 376 to 380
 	f
 	f,~
@@ -395,11 +395,11 @@ musicFlautoIIMvtIV = \relative c {
 	ais\> fis\!~
 	fis8 r r4
 	R2
-	bes4 c~
+	bes4_\crescendo c~
 % Bars 401 to 405
 	c bes~
 	bes2
-	b!4..\f b16
+	\dynEO #'(0 . 2) b!4..\f b16
 	b4.. b16
 	b4.. b16
 % Bars 406 to 410
@@ -419,12 +419,12 @@ musicFlautoIIMvtIV = \relative c {
 	a~
 % Bars 421 to 425
 	a
-	c~->\fz
+	\dynEO #'(0 . 2) c~->\fz
 	c
-	e->\fz~
+	\dynEO #'(0 . 2) e->\fz~
 	e
 % Bars 426 to 430
-	g->\fz
+	\dynEO #'(0 . 2) g->\fz
 	g\startTrillSpan
 	g
 	g\startTrillSpan
@@ -472,7 +472,7 @@ musicFlautoIIMvtIV = \relative c {
 	f2~
 	f
 % Bars 476 to 480
-	d\ff~
+	\dynEO #'(0 . 2) d\ff~
 	d~
 	d4 f,8.( e16
 	f8) r r4\fermata
@@ -504,7 +504,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 501 to 505
 	<< g2~ {s4 s\!}>>
 	<< g2 {s4 s\> }>>
-	g4\! fis
+	g4->\! fis->
 	g8 r r4
 	R2*3
 % Bars 506 to 510
@@ -534,7 +534,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 526 to 530
 	bes4 r8. bes16
 	bes4 r
-	r r8. b!16
+	r r8. b!16_\diminuendo
 	b4 r
 	r4 r8. b16
 % Bars 531 to 535
@@ -570,7 +570,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 556 to 560
 	f4( des
 	c bes)
-	ees2\fp~
+	\dynEO #'(0 . 2) ees2\fp~
 	ees
 	R2*2
 % Bars 561 to 565
@@ -600,7 +600,7 @@ musicFlautoIIMvtIV = \relative c {
 	g8 r r4
 	g8 r r4
 	g8 r r4
-	r8 f-. r a-.
+	r8 f_\crescendo-. r a-.
 	r bes-. r c-.
 % Bars 596 to 600
 	r d-. r a-.
@@ -634,9 +634,9 @@ musicFlautoIIMvtIV = \relative c {
 	g4.. g16
 % Bars 621 to 625
 	g8 r r8. f16
-	\afterGrace f2_(\startTrillSpan {e16 f)\stopTrillSpan}
+	\afterGrace f2(\startTrillSpan {e16 f)\stopTrillSpan}
 	g8 r r8. bes16
-	\afterGrace bes2_(\startTrillSpan {a16 bes)\stopTrillSpan}
+	\afterGrace bes2(\startTrillSpan {a16 bes)\stopTrillSpan}
 	bes,8 r r4
 % Bars 626 to 630
 	R2*8
@@ -662,11 +662,11 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 656 to 660
 	
 	a'8.\f bes16 bes8. c16
-	c8 r r4
+	c8_\diminuendo r r4
 	a8. bes16 bes8. c16
 	c8 r r4
 % Bars 661 to 665
-	g8.\p a16 a8. bes16
+	\dynEO #'(0 . 1) g8.\p a16 a8. bes16
 	bes8 r r4
 	g8. a16 a8. bes16
 	bes8 r r4
@@ -692,7 +692,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 681 to 685
 	e2(
 	<< a) {s4\< s\!}>>
-	<< a2~ {s4\< s\>}>>
+	<< a2~ {\hairpinShorten #'(0 . -3) s4\< \hairpinShorten #'(3 . 0) s\>}>>
 	a4 gis\!
 	a8 r r4
 % Bars 686 to 690
@@ -755,10 +755,10 @@ musicFlautoIIMvtIV = \relative c {
 	b-> cis->\!
 	<< d2\fz-> {s8\> s s s\!}>>
 	b2~
-	b4 cis\<
+	b4 cis->\<
 % Bars 741 to 745
-	dis eis\!
-	fis2\fz->
+	dis-> eis->\!
+	\dynEO #'(0 . 2) fis2\fz->
 	gis8 r r4
 	R2*17
 % Bars 746 to 750
@@ -772,7 +772,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	\section
 % Bars 761 to 765
-	\time 3/2 e1.\ff->
+	\timeThreeTwo \dynEO #'(0 . 1) e1.\ff->
 	d4 d8. d16 d2-> a4 a8. a16
 	b1.->
 	a4 a8. a16 a2-> e4 e8. e16
@@ -785,7 +785,7 @@ musicFlautoIIMvtIV = \relative c {
 	d ees1->
 % Bars 771 to 775
 	d1-> g2
-	\tuplet 3/2 2 {des4\brack\ff-. r des-. c-. r c-. des-. r des-.
+	\tuplet 3/2 2 {\dynEO #'(-1 . 3) des4\brack\ff-. r des-. c-. r c-. des-. r des-.
 	cis-. r cis-. d!-. r d-. cis-. r cis-.
 	c!-. r c-. des-. r des-. c-. r c-.}
 	d!2-> c-> b->
@@ -796,8 +796,8 @@ musicFlautoIIMvtIV = \relative c {
 	d1.->\fp
 	c->\fp
 % Bars 781 to 785
-	c->\fp
-	b->\ff
+	\dynEO #'(0 . 2) c->\fp
+	\dynEO #'(0 . 2) b->\ff
 	c4 r r2 r 
 	R1.*9
 % Bars 786 to 790
@@ -805,7 +805,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 791 to 795
 	
 	
-	g'1->\f g,2
+	\dynEO #'(0 . 2) g'1->\f g,2
 	a1-> b2
 	c1-> g2
 % Bars 796 to 800

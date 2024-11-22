@@ -115,7 +115,7 @@ musicFlautoIIMvtIV = \relative c {
 	R2*3
 	
 	
-	a2->\mf_\crescendo
+	a2->_\mfcrescendo
 	g->
 % Bars 111 to 115
 	a8.-> b16-. c8-.\< b-.

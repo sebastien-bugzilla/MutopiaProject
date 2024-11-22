@@ -95,12 +95,12 @@ musicViolinoIIMvtIV = \relative c {
 % Bars 71 to 75
 	q~
 	q
-	gis''8\brack\pp^\pizz gis e' e
+	gis''8\brack\pp-\offset X-offset 0.5 ^\pizz gis e' e
 	cis cis gis gis
 	e e cis' cis
 % Bars 76 to 80
 	gis gis e e
-	r4 e8\brack\p_\pocoapococrescendo e
+	r4 e8\brack\p-\tweak X-offset 2.5 _\pocoapococrescendo e
 	cis[ e cis] r
 	e e cis e
 	cis r e e
@@ -150,7 +150,7 @@ musicViolinoIIMvtIV = \relative c {
 	a: a16 a a f
 	<d, b' g'>8 r q r
 	q r q r
-	<e c' g'>\ff r q r
+	<e c' g'>-\offset X-offset 0.5 \ff r q r
 	q r q r
 % Bars 121 to 125
 	<f c' f> r q r
@@ -203,7 +203,7 @@ musicViolinoIIMvtIV = \relative c {
 % Bars 161 to 165
 	c( b c a gis a)
 	ges( f ges ees d ees)
-	e!(\brack\p_\crescendo f e d e d)
+	e!(\brack\p-\offset X-offset 3 _\crescendo f e d e d)
 	g( a g f g f)
 	e(\< f e d e d)
 % Bars 166 to 170
@@ -251,7 +251,7 @@ musicViolinoIIMvtIV = \relative c {
 % Bars 201 to 205
 	
 % Bars 206 to 210
-	cis'4(\brack\p_\crescendo fis8.) e16-.
+	cis'4(\brack\p-\offset X-offset 3 _\crescendo fis8.) e16-.
 	e4( dis8) r
 	b4( e8.)\< d!16-.
 	d4( c8) r
@@ -295,11 +295,11 @@ musicViolinoIIMvtIV = \relative c {
 % Bars 241 to 245
 	dis8 r g4~
 	g8 r fis4
-	e16 e b b  b b e e
+	\beamDamping #5 e16 e b b  b b e e
 	e e c c  c c e e
 	e e b b  b b e e
 % Bars 246 to 250
-	e e a, a  a a e' e
+	e e a, a  a a e' e \beamDampingRevert
 	g4-> g,->
 	fis-> fis'->
 	e-> e,->
@@ -401,7 +401,7 @@ musicViolinoIIMvtIV = \relative c {
 	g\< g'4 g,8~\!
 	g g'-. g-. g,-.
 % Bars 331 to 335
-	c16\f c d d c c b b
+	\beamDamping #5 c16\f c d d c c b b
 	b b a a b b c c 
 	b b c c b b a a
 	a a gis gis a a b b
@@ -409,7 +409,7 @@ musicViolinoIIMvtIV = \relative c {
 % Bars 336 to 340
 	f f f f f f f f
 	f f f f  f' f f, f
-	f f f f  f f f f
+	f f f f  f f f f \beamDampingRevert
 	b,8 r r4
 	R2
 % Bars 341 to 345
@@ -439,7 +439,7 @@ musicViolinoIIMvtIV = \relative c {
 % Bars 361 to 365
 	d4( cis8.) d16-.
 	cis2->
-	c!16 c c c  c c c, c
+	\beamDamping #5 c!16 c c c  c c c, c
 	c' c c c  c c c, c
 	c' c c c  c c bes\<_\brackM\crescmarkup bes
 % Bars 366 to 370
@@ -447,7 +447,7 @@ musicViolinoIIMvtIV = \relative c {
 	bes'\ff bes bes bes  a a bes bes
 	bes bes bes bes  bes bes bes bes
 	b! b b b  ais ais b b
-	b b b b  b b b b
+	b b b b  b b b b \beamDampingRevert
 % Bars 371 to 375
 	c2:16
 	cis:
@@ -497,7 +497,7 @@ musicViolinoIIMvtIV = \relative c {
 	R
 	<d! g>->\fz
 % Bars 411 to 415
-	<g,, e' c'>8\brack\ff r q r
+	\dynEO #'(-3.2 . 2.3) <g,, e' c'>8\brack\ff r q r
 	q r q r
 	q r q r
 	q r q r
@@ -530,7 +530,7 @@ musicViolinoIIMvtIV = \relative c {
 	a4.: b16-. b-.
 	c4:16-> g:->
 	a4.:-> b16-. b-.
-	e, e d d  c c a' a
+	e, e d d \beamDamping #5 c c a' a \beamDampingRevert
 	f'2:16
 % Bars 441 to 445
 	f:
@@ -625,7 +625,7 @@ musicViolinoIIMvtIV = \relative c {
 % Bars 516 to 520
 	<d, b' g'>8 r q r
 	q r q r
-	<e c' g'>\ff r q r
+	<e c' g'>-\offset X-offset 0.5 \ff r q r
 	q r q r
 	<f c' f> r q r
 % Bars 521 to 525
@@ -711,7 +711,7 @@ musicViolinoIIMvtIV = \relative c {
 	ees-. ees-. ees-. ees-. ees-. ees-. 
 	f-. f-. g-. g-. g-. ees-. 
 	ees-. ees-. ees-. ees-. ees-. ees-. 
-	des(\pp c des bes a bes)
+	des(-\offset X-offset -1 \pp c des bes a bes)
 % Bars 591 to 595
 	g( fis g e dis e)
 	bes'( a bes g fis g)
@@ -720,7 +720,7 @@ musicViolinoIIMvtIV = \relative c {
 	f( g f ees f ees)
 % Bars 596 to 600
 	d( ees d c d c)}
-	f16\f f f f  f f f f
+	\beamDamping #5 f16\f f f f  f f f f
 	f f f f  bes bes bes bes
 	bes bes bes bes  <a c> q q q
 	q q q q  q q q q
@@ -743,7 +743,7 @@ musicViolinoIIMvtIV = \relative c {
 	a a a d,  fis-> fis fis a
 	a a a cis,  f! f f a
 % Bars 616 to 620
-	a a a c,!  e-> e e a
+	a a a c,!  e-> e e a \beamDampingRevert
 	a8 r gis r
 	r8. gis,16 gis'4->
 	f8 r e r
@@ -758,8 +758,8 @@ musicViolinoIIMvtIV = \relative c {
 	bes4.. a16
 	aes4.. g16
 	g,4( aes8.) g16-.
-	g g d d  b b g g
-	b b d d  g g b b
+	\beamDamping #5 g g d d  b b g g
+	b b d d  g g b b \beamDampingRevert 
 % Bars 631 to 635
 	b'4( c8.) b16-.
 	b4( c8.) b16-.
@@ -875,7 +875,7 @@ musicViolinoIIMvtIV = \relative c {
 	g:
 	g:
 % Bars 726 to 730
-	g4 g,16( gis a b
+	g4 \beamOffset #'(-0.5 . -0.5) g,16( gis a b
 	c) c c c  d d d c
 	c4:16 d16 d d c
 	c4:16 b16 b b a
@@ -900,9 +900,9 @@ musicViolinoIIMvtIV = \relative c {
 % Bars 746 to 750
 	
 % Bars 751 to 755
-	e4(\brack\mf_\crescendo fis,8.) e16
+	e4(\brack\mf-\offset X-offset 3.5 _\crescendo fis,8.) e16
 	e8 r r4
-	e16\f e g g  b b c c
+	\beamDamping #5 e16-\offset X-offset -1 \f e g g  b b c c
 	f, f a a  cis cis d d
 	g, g c c  dis dis e e
 % Bars 756 to 760
@@ -910,9 +910,9 @@ musicViolinoIIMvtIV = \relative c {
 	g, g c c  dis dis e e
 	a, a c c  e e f f
 	c c e e  fis fis g g
-	c, c f! f  gis gis a a \section
+	c, c f! f  gis gis a a \beamDampingRevert \section
 % Bars 761 to 765
-	\timeThreeTwo g\ff g cis, cis  cis cis d d  e e d d  cis cis bes' bes  a a g g  f f e e
+	\timeThreeTwo \beamDamping #5 g\ff g cis, cis  cis cis d d  e e d d  cis cis bes' bes  a a g g  f f e e
 	f f f f  g g g f  f f f f  f f f f  d d d d  e e e d
 	d d gis, gis  gis gis a a  b b a a  gis gis f' f  e e d d  c c b b
 	c c c c  d d d c  c c c c  c c c c  a a a a  b b b a
@@ -920,7 +920,7 @@ musicViolinoIIMvtIV = \relative c {
 % Bars 766 to 770
 	c c fis, fis  fis fis g g  a a g g  fis fis ees' ees  ees ees ees ees  ees ees ees ees
 	e! e d d  c c d d  c c d d  e e d d  c c a' a  g g f f
-	e e d d  c c d d  c c d d  e e d d  c c a' a  g g f f
+	e e d d  c c d d  c c d d  e e d d  c c a' a  g g f f \beamDampingRevert
 	ees2:16 d4: c: b2:
 	a'4: g: fis2: fis:
 % Bars 771 to 775
@@ -933,7 +933,7 @@ musicViolinoIIMvtIV = \relative c {
 	e e e e  d d d d  c c c c
 	g'-> g g g  f-> f f f  e-> e e e
 	bes'\ff bes bes bes  bes bes bes bes  \tuplet 3/2 2 {a4-> g-> f->}
-	aes2:16\fp aes: aes:
+	\dynEO #'(0 . 1) aes2:16\fp aes: aes:
 	<ees c'>:\fp q: q:
 % Bars 781 to 785
 	<d c'>:\fp q: q:

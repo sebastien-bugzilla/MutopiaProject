@@ -117,7 +117,7 @@ musicTrombeIMvtIV = \relative c {
 	R2
 	d4\pp r
 	R2
-	e2(_\ppplegato
+	e2(-\offset X-offset #-1 _\ppplegato
 % Bars 156 to 160
 	f4 g)
 	e2(
@@ -206,7 +206,7 @@ musicTrombeIMvtIV = \relative c {
 	
 	
 	
-	d2\ff
+	d2-\tweak X-offset 0.2 \ff
 	d4 e
 % Bars 281 to 285
 	d4( e8.) d16
@@ -576,7 +576,7 @@ musicTrombeIMvtIV = \relative c {
 	b4.. b16\<
 % Bars 741 to 745
 	b4-> b->\!
-	cis2->\fz
+	cis2->-\tweak X-offset -1 \fz
 	c!8 r r4
 	R2*9
 % Bars 746 to 750
@@ -594,7 +594,7 @@ musicTrombeIMvtIV = \relative c {
 	e4-> d->
 	c2-> \section
 % Bars 761 to 765
-	\time 3/2 e1.->\brack\ff
+	\timeThreeTwo e1.->\brack\ff
 	e2-> f1->
 	\partCombineApart f2-> e-> d4. f8
 	e2.-> dis4-> e2-> \partCombineAutomatic
@@ -607,7 +607,7 @@ musicTrombeIMvtIV = \relative c {
 	g2-> c4 d8. c16 c2->
 % Bars 771 to 775
 	g4 g8. g16 g2-> g->
-	\tuplet 3/2 2 {r4 c\brack\ff-> f-> r f-> c-> r c-> f->
+	\tuplet 3/2 2 {r4 \dynEO #'(-3.3 . 2) c\brack\ff-> f-> r f-> c-> r c-> f->
 	r d-> e-> r e-> d-> r d-> e->
 	r f-> g-> r g-> f-> r f-> g->}
 	f2-> f-> f->

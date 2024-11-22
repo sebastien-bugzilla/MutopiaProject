@@ -45,7 +45,7 @@ musicClarinettoIMvtIV = \relative c {
 	
 % Bars 36 to 40
 	
-	\partCombineApart g4(\brack\pp a
+	\partCombineApart \dynEO #'(-2 . -3) g4(\brack\pp a
 	g fis~\<
 	fis)\> g(\!
 	a g)
@@ -89,7 +89,7 @@ musicClarinettoIMvtIV = \relative c {
 	ees'4.. ees,16
 % Bars 76 to 80
 	ees2
-	dis8.\brack\p_\pocoapococrescendo dis,16 dis4
+	\aIIXoffset #-4 dis8.\brack\p-\tweak X-offset 2.5 _\pocoapococrescendo dis,16 dis4
 	fis'!8. fis,!16 fis4
 	b'8. b,16 b4
 	dis'8. dis,16 dis4
@@ -158,7 +158,7 @@ musicClarinettoIMvtIV = \relative c {
 	cis4 r
 	r r8. b16
 	b4 r
-	r d-.\pp
+	r d-.-\tweak X-offset 0.5 \pp
 % Bars 136 to 140
 	r d-.
 	r b-._\pppocoapococresc
@@ -192,7 +192,7 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 161 to 165
 	b8 r r4
 	b8 r r4 \partCombineAutomatic
-	r8 a\brack\p_\crescendo r a
+	r8 a\brack\p-\offset X-offset 2.5 _\crescendo r a
 	r a r a
 	r a r a\<
 % Bars 166 to 170
@@ -220,7 +220,7 @@ musicClarinettoIMvtIV = \relative c {
 	
 	r8. gis'16[(\f fis8.) gis16](
 	fis8)_\diminuendo r r4
-	r8. e16[(\mf dis8.) e16](
+	r8. \dynEO #'(-2.8 . 3) e16[(\mf dis8.) e16](
 % Bars 191 to 195
 	dis8) r r4
 	r8. cis16[(\p b8.) cis16](
@@ -240,7 +240,7 @@ musicClarinettoIMvtIV = \relative c {
 	d cis
 	cis fis
 % Bars 206 to 210
-	\partCombineApart gis2~_\crescendo
+	\partCombineApart gis2~-\tweak extra-offset #'(2 . 3) _\crescendo
 	gis8 \partCombineAutomatic r r4
 	R2*3
 	
@@ -253,7 +253,7 @@ musicClarinettoIMvtIV = \relative c {
 	d8[ r16 e\p e8 r16 f]
 % Bars 216 to 220
 	f8 r r4
-	d8[ r16 e\brack\pp e8 r16 f]
+	d8[ r16 e e8\brack\pp r16 f]
 	f8 r r4
 	fis!8.\f b,16 d4~
 	d cis->
@@ -270,7 +270,7 @@ musicClarinettoIMvtIV = \relative c {
 	e8. fis16 dis8. e16
 	\partCombineApart e8([ eis fis fisis]) \partCombineAutomatic
 % Bars 231 to 235
-	gis2\fp~
+	gis2-\tweak X-offset 0.5 \fp~
 	gis
 	gis,\fp~
 	gis
@@ -294,7 +294,7 @@ musicClarinettoIMvtIV = \relative c {
 	cis2~
 	cis \partCombineAutomatic
 % Bars 251 to 255
-	d4->\ff a'
+	d4->-\tweak X-offset 0.3 \ff a'
 	a4.. b16
 	b4 a
 	a4.. b16
@@ -303,14 +303,14 @@ musicClarinettoIMvtIV = \relative c {
 	fis4.. g16
 	g4-> fis->
 	fis4.. g16
-	g8\brack\fp r r4
+	\dynEO #'(0.7 . 1.5) g8\brack\fp r r4
 	R2*11
 % Bars 261 to 265
 	
 % Bars 266 to 270
 	
 % Bars 271 to 275
-	gis4\f cis,
+	gis4-\tweak X-offset -0.5 \f cis,
 	cis4.. dis16
 	eis4-> cis->
 	cis4.. dis16
@@ -343,7 +343,7 @@ musicClarinettoIMvtIV = \relative c {
 	e4 fis(
 	gis ais)
 	\once \stemDown b2 \partCombineAutomatic
-	eis,4..\p cis16
+	\dynEO #'(-1.8 . 1.2) eis,4..\p cis16
 	cis4.. gis!16
 % Bars 301 to 305
 	gis4.. eis!16
@@ -360,7 +360,7 @@ musicClarinettoIMvtIV = \relative c {
 	
 	
 	
-	a2\fp~
+	a2-\tweak X-offset 0.3 \fp~
 	a
 % Bars 321 to 325
 	d\fp~
@@ -433,12 +433,12 @@ musicClarinettoIMvtIV = \relative c {
 	r4 r8. a'16-.
 	a4( a,8) r
 	R2
-	bes'2\pp~ 
+	\dynEO #'(1.5 . 1.5) bes'2\pp~ 
 % Bars 381 to 385
 	bes4\< aes(
 	des\! c)
 	R2
-	bes2\pp~
+	\dynEO #'(1.3 . 1.5) bes2\pp~
 	bes4\< aes(
 % Bars 386 to 390
 	des c)\!
@@ -447,9 +447,9 @@ musicClarinettoIMvtIV = \relative c {
 	
 	
 % Bars 391 to 395
-	\partCombineApart c4\brack\p f,
-	f4.( g8)\<
-	aes(\! g\> f des')\!
+	\partCombineApart c4_\brack\p f,
+	f4.( g8)_\<
+	aes(\! g_\> f des')\!
 	des4( c8) r \partCombineAutomatic
 	R2*5
 % Bars 396 to 400
@@ -523,7 +523,7 @@ musicClarinettoIMvtIV = \relative c {
 	e
 	e\fz~
 	e
-	a,\brack\ff~
+	\dynEO #'(-3.2 . 3.5) a,\brack\ff~
 	a~
 % Bars 466 to 470
 	a~
@@ -607,7 +607,7 @@ musicClarinettoIMvtIV = \relative c {
 	cis4 r
 	r r8. b16
 	b4 r
-	d\p ees8. a,16
+	\aIIXoffset #-2.5 d-\tweak X-offset 0.3 \p ees8. a,16
 	a2
 % Bars 536 to 540
 	d4 ees8. a,16
@@ -688,7 +688,7 @@ musicClarinettoIMvtIV = \relative c {
 	c8-> c16-. r b8-> b16-. r
 	b8-> b16-. r b8-> b16-. r
 % Bars 601 to 605
-	f'2\fz->~
+	f'2-\tweak X-offset 0.5 \fz->~
 	f
 	g->\fz~
 	g
@@ -702,7 +702,7 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 611 to 615
 	e->
 	b4.. a'16
-	f4..\ff e16
+	f4..-\tweak X-offset 0.3 \ff e16
 	e!4.. ees16
 	ees4.. d16
 % Bars 616 to 620
@@ -745,7 +745,7 @@ musicClarinettoIMvtIV = \relative c {
 	e4. dis8
 % Bars 651 to 655
 	e2
-	fis_\crescendo~
+	fis-\offset X-offset 1 _\crescendo~
 	fis8 \partCombineAutomatic r r4
 	R2*3
 	
@@ -756,7 +756,7 @@ musicClarinettoIMvtIV = \relative c {
 	d8. e16 e8. f16
 	f8 r r4
 % Bars 661 to 665
-	c8.\brack\p d16 d8. ees16
+	\dynEO #'(-2.5 . 2) c8.\brack\p d16 d8. ees16
 	ees8 r r4
 	c8. d16 d8. ees16
 	ees8 r r4
@@ -857,7 +857,7 @@ musicClarinettoIMvtIV = \relative c {
 	b
 	dis \partCombineAutomatic
 	bes'8[( aes ges f)]
-	\partCombineApart ges2_\crescendo(
+	\partCombineApart ges2-\offset X-offset 0.8 _\crescendo(
 	fis!)~
 % Bars 751 to 755
 	fis \partCombineAutomatic
@@ -872,7 +872,7 @@ musicClarinettoIMvtIV = \relative c {
 	a4-> a->
 	gis-> gis'-> \section
 % Bars 761 to 765
-	\time 3/2 a2->\brack\ff b-> c->
+	\timeThreeTwo \dynEO #'(-3.3 . 1.3) a2->\brack\ff b-> c->
 	b1 g4 g8. g16
 	g1.->
 	fis1-> d4 d8. d16
@@ -885,7 +885,7 @@ musicClarinettoIMvtIV = \relative c {
 	a2-> \partCombineAutomatic gis1->
 % Bars 771 to 775
 	\partCombineApart a4 b8. a16 a2-> \partCombineAutomatic a4 b8. a16
-	\tuplet 3/2 2 {ees4-.\brack\ff r ees-. d-. r d-. ees-. r ees-.
+	\tuplet 3/2 2 {\dynEO #'(-1 . 1.5) ees4-.\brack\ff r ees-. d-. r d-. ees-. r ees-.
 	dis-. r dis-. e!-. r e-. dis-. r dis-.
 	ees-. r ees-. ees-. r ees-. ees-. r ees-.}
 	e!2-> d-> cis!->
@@ -893,10 +893,10 @@ musicClarinettoIMvtIV = \relative c {
 	\partCombineApart fis-> e-> d-> \partCombineAutomatic
 	fis1.->
 	fis1-> \tuplet 3/2 2 {g4-> a-> b->}
-	bes1.->\fp
-	b!->\fp
+	\dynEO #'(0 . 2) bes1.->\fp
+	\dynEO #'(0 . 2) b!->\fp
 % Bars 781 to 785
-	a->\fp
+	\dynEO #'(0 . 2) a->\fp
 	g->\ff
 	d,4\brack\f e8. d16 d2 d
 	fis4 g8. fis16 fis2 fis

@@ -5,6 +5,7 @@
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
 ppplegato = \markup {\hspace #-1.55 \dynamic ppp \italic {legato}}
+ppplegatoB = \markup {\dynamic ppp \italic {legato}}
 ppsempre = \markup {\hspace #-0.82 \dynamic pp \italic {sempre}}
 ppsempreB = \markup {\dynamic pp \italic {sempre}}
 ppdolce = \markup {\hspace #-0.82 \dynamic pp \italic {dolce}}
@@ -22,6 +23,7 @@ pdim = \markup {\hspace #-0.08 \dynamic p \italic {dim.}}
 mfespressivo = \markup {\hspace #-0.8 \dynamic mf \italic {espressivo}}
 mfcrescendo = \markup {\hspace #-0.8 \dynamic mf \italic {crescendo}}
 mfcresc = \markup {\hspace #-0.8 \dynamic mf \italic {cresc.}}
+mfcrescB = \markup {\dynamic mf \italic {cresc.}}
 fzcresc = \markup {\hspace #-0.54 \dynamic fz \italic {cresc.}}
 fzcrescendo = \markup {\hspace #-0.54 \dynamic fz \italic {crescendo}}
 fzdiminuendo = \markup {\hspace #-0.54 \dynamic fz \italic {diminuendo}}
@@ -168,7 +170,7 @@ trillSpanCustom = #(define-music-function
 naturaltrill = \markup { 
 	\general-align #X #CENTER 
 	\line { 
-		\general-align #Y #CENTER \musicglyph #"scripts.trill" \tiny \natural 
+		\general-align #Y #DOWN \tiny \natural \musicglyph #"scripts.trill" 
 	}
 }
 flattrill = \markup { 

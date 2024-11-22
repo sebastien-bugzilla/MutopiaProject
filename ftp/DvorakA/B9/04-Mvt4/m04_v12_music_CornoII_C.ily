@@ -94,12 +94,12 @@ musicCornoIIMvtIV = \relative c {
 	
 % Bars 76 to 80
 	
-	cis'8.\brack\p_\pocoapococrescendo cis,16 cis4
+	cis'8.\brack\p-\tweak X-offset 2.5 _\pocoapococrescendo cis,16 cis4
 	e'8. e,16 e4
 	R2*2
 	
 % Bars 81 to 85
-	d'8._\brack\p_\crescendo d,16 d4
+	d'8._\brack\p-\tweak X-offset 2.5 _\crescendo d,16 d4
 	g'8. g,16 g4
 	R2*2
 	
@@ -156,7 +156,7 @@ musicCornoIIMvtIV = \relative c {
 	e4.. f16
 	f'2->\fz~
 	f4.. f16
-	d2->\fz~_\diminuendo
+	d2->~_\fzdiminuendo
 	d4.. d16
 % Bars 131 to 135
 	f2\fz~
@@ -312,7 +312,7 @@ musicCornoIIMvtIV = \relative c {
 	
 	
 	
-	g,2\ff
+	g,2-\tweak X-offset 0.2 \ff
 	g4 c
 % Bars 281 to 285
 	d2->
@@ -577,7 +577,7 @@ musicCornoIIMvtIV = \relative c {
 % Bars 526 to 530
 	f'2\fz->~
 	f4.. f16
-	d2->\fz_\diminuendo~
+	d2->~
 	d4.. d16
 	f2~
 % Bars 531 to 535
@@ -603,7 +603,7 @@ musicCornoIIMvtIV = \relative c {
 	c4. c8
 	c2~
 	c4. c8
-	a'2\fp~
+	a'2-\tweak X-offset 0.3 \fp~
 % Bars 551 to 555
 	a
 	c\fp~
@@ -611,7 +611,7 @@ musicCornoIIMvtIV = \relative c {
 	ges\fp~
 	ges
 % Bars 556 to 560
-	f\fp~
+	f-\tweak X-offset 0.3 \fp~
 	f
 	R2*12
 % Bars 561 to 565
@@ -621,7 +621,7 @@ musicCornoIIMvtIV = \relative c {
 	
 	
 	
-	c'2->\fp~
+	c'2->-\tweak X-offset 0.3 \fp~
 % Bars 571 to 575
 	c
 	c,->\fp~
@@ -741,8 +741,8 @@ musicCornoIIMvtIV = \relative c {
 % Bars 681 to 685
 	R2*2
 	
-	cis'4\brack\p\< a\>
-	<< \once \stemUp e2 {s8 s s s\!}>>
+	\hairpinShorten #'(0 . -2) cis'4-\offset X-offset -2 \brack\p\< \hairpinShorten #'(2 . 0)  a\>
+	<< \once \stemUp e2 {s8 s\! s s}>>
 	a8 r r4
 % Bars 686 to 690
 	R2*4
@@ -834,7 +834,7 @@ musicCornoIIMvtIV = \relative c {
 	c4-> c->
 	c4.. c16 \section
 % Bars 761 to 765
-	\time 3/2 e1.->\brack\ff
+	\timeThreeTwo e1.->\brack\ff
 	a->
 	d2-> e-> f->
 	e,1.->

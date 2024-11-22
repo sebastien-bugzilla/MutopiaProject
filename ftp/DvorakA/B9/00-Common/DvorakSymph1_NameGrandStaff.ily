@@ -62,11 +62,20 @@ nameGrandStaffIIIMvtIII = {
 %#              G R A N D   S T A F F   N A M E   :   M V T   I V              #
 %###############################################################################
 nameGrandStaffIMvtIV = {
-	\set GrandStaff.instrumentName = "Tromboni"
-	\set GrandStaff.shortInstrumentName = "Tb."
+	\set GrandStaff.instrumentName = "Flauti"
+	\set GrandStaff.shortInstrumentName = "Fl."
 	\set GrandStaff.midiInstrument = #""
 }
 nameGrandStaffIIMvtIV = {
+	\set GrandStaff.instrumentName = \markup {
+		"Tromboni" \hspace #10
+	}
+	\set GrandStaff.shortInstrumentName = \markup {
+		"Tbni." \hspace #3
+	}
+	\set GrandStaff.midiInstrument = #""
+}
+nameGrandStaffIIIMvtIV = {
 	\set GrandStaff.instrumentName = "Violini"
 	\set GrandStaff.shortInstrumentName = "Vln."
 	\set GrandStaff.midiInstrument = #""

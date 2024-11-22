@@ -245,7 +245,7 @@ musicClarinettoIMvtIV = \relative c {
 	d8[ r16 e\p e8 r16 f]
 % Bars 216 to 220
 	f8 r r4
-	d8[ r16 e\brack\pp e8 r16 f]
+	d8[ r16 e e8\brack\pp r16 f]
 	f8 r r4
 	fis!8.\f b,16 d4~
 	d cis->

@@ -79,12 +79,12 @@ musicCornoIMvtIV = \relative c {
 	
 % Bars 76 to 80
 	
-	cis'8.\brack\p_\pocoapococrescendo cis,16 cis4
+	cis'8.\brack\p-\tweak X-offset 2.5 _\pocoapococrescendo cis,16 cis4
 	e'8. e,16 e4
 	R2*2
 	
 % Bars 81 to 85
-	d'8._\brack\p_\crescendo d,16 d4
+	d'8._\brack\p-\tweak X-offset 2.5 _\crescendo d,16 d4
 	g'8. g,16 g4
 	R2*2
 	
@@ -117,7 +117,7 @@ musicCornoIMvtIV = \relative c {
 	d2
 	g,~
 	g
-	r8 c4\brack\mf_\crescendo c8
+	r8 c4\brack\mf-\offset X-offset 3.5 _\crescendo c8
 	r c4 c8
 % Bars 111 to 115
 	r c4 c8\<
@@ -141,7 +141,7 @@ musicCornoIMvtIV = \relative c {
 	c4.. d16
 	f2->\fz~
 	f4.. f16
-	d2->\fz~_\diminuendo
+	d2->~_\fzdiminuendo
 	d4.. d16
 % Bars 131 to 135
 	f2\fz~
@@ -172,7 +172,7 @@ musicCornoIMvtIV = \relative c {
 	g8.( f16 e8) e-.
 	d8.(\brack\pp e16 f8) f-.
 	f8.( e16 d8) d-.
-	e2(_\brackM\ppplegato
+	e2(-\offset X-offset -4 _\brackM\ppplegatoB
 % Bars 156 to 160
 	f4 g)
 	e2(
@@ -294,7 +294,7 @@ musicCornoIMvtIV = \relative c {
 	c~
 % Bars 266 to 270
 	c4 b
-	g'2\fp~
+	g'2-\offset X-offset -1 \fp~
 	g~_\brackM\crescmarkup
 	g~
 	g4 fis~
@@ -305,7 +305,7 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	
-	d2\ff
+	d2-\tweak X-offset 0.2 \ff
 	d4 e
 % Bars 281 to 285
 	\partCombineApart d2->
@@ -394,7 +394,7 @@ musicCornoIMvtIV = \relative c {
 	
 % Bars 366 to 370
 	
-	e4\ff e8. e16
+	\dynEO #'(-1 . 0) e4\ff e8. e16
 	e2->
 	e4 e8. e16
 	e2->
@@ -546,7 +546,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 506 to 510
 	g,~
 	g
-	r8 c4\brack\mf_\crescendo c8
+	r8 c4\brack\mf-\offset X-offset 3.5 _\crescendo c8
 	r c4 c8
 	r c4 c8\<
 % Bars 511 to 515
@@ -570,7 +570,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 526 to 530
 	f2\fz->~
 	f4.. f16
-	d2->\fz_\diminuendo~
+	d2->_\fzdiminuendo~
 	d4.. d16
 	f2~
 % Bars 531 to 535
@@ -596,7 +596,7 @@ musicCornoIMvtIV = \relative c {
 	c4. c8
 	c2~
 	c4. c8
-	c2\fp~
+	c2-\tweak X-offset 0.3 \fp~
 % Bars 551 to 555
 	c
 	g'\fp~
@@ -604,7 +604,7 @@ musicCornoIMvtIV = \relative c {
 	c,\fp~
 	c
 % Bars 556 to 560
-	f\fp~
+	f-\tweak X-offset 0.3 \fp~
 	f
 	R2*12
 % Bars 561 to 565
@@ -614,7 +614,7 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	
-	c2->\fp~
+	c2->-\tweak X-offset 0.3 \fp~
 % Bars 571 to 575
 	c
 	c,->\fp~
@@ -813,7 +813,7 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	
-	e2->_\brackM\mfcresc
+	e2->-\offset X-offset -1.5 _\brackM\mfcrescB
 % Bars 751 to 755
 	e->
 	d->
@@ -827,7 +827,7 @@ musicCornoIMvtIV = \relative c {
 	c4-> c->
 	c4.. c16 \section
 % Bars 761 to 765
-	\time 3/2 e1.->\brack\ff
+	\timeThreeTwo e1.->\brack\ff
 	d->
 	d2-> e-> f->
 	e1.->

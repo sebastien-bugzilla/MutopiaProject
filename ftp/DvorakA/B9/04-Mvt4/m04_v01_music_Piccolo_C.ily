@@ -4,24 +4,24 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIIMvtIV = \relative c {
+musicPiccoloMvtIV = \relative c {
 	\clef treble
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	c'2->\f
-	g->
-	c->
-	g'->
-	f->
+	\dynEO #'(0 . 2) c'''4\f d8. g,16
+	g2
+	c4 d8. g16
+	g2
+	f4 g8. c,16
 % Bars 6 to 10
-	c->
-	g->
-	d''
+	c4 d8. g,16
+	g4 a8. d,16
+	d4 e8. a,16
 	a4\fermata r
 	R2
 % Bars 11 to 15
-	R2\fermata
+	R\fermata
 	R2*20
 % Bars 16 to 20
 	
@@ -32,7 +32,7 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 31 to 35
 	
 	R2\fermata
-	R2*20
+	R2*19
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -41,19 +41,19 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 51 to 55
 	
-	
-	c8\f r d4~
-	d8 r c4~
-	c8 r g4~
+	r4 r8 f'32(\< g a b\!
+	\dynEO #'(0 . 2) c4)\f d8.-> g,16
+	g2
+	c4 d8.-> g16
 % Bars 56 to 60
-	g g->
-	g-> g->
-	g-> d'->
-	e8 r c,4->~
-	c g'->
+	g2
+	c,4 d8.-> g,16
+	c4 d8.-> g16
+	e8 r c4->~
+	c d8.( c16)
 % Bars 61 to 65
-	c,8\brack\pp r r4
-	R2*19
+	c8\brack\pp r r4
+	R2*23
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -61,15 +61,16 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	g'2~
-	g~
-	g~\<
-	g\!
-	c,8\f r c r
+	
+	
+	
+	
+	r4 r8. \dynEO #'(0 . 1) f16\f
 % Bars 86 to 90
-	R2
-	c8 r c r
-	R2*25
+	f4( f,8) r
+	r4 r8. f'16
+	f4( f,8) r
+	R2*30
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -80,26 +81,22 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 111 to 115
 	
-	
-	c4->\f c->
-	c4.. c16
-	c4 c
 % Bars 116 to 120
-	c4.. c16
-	d'4..-> g,16
-	g4.. c16
-	c2\ff~
-	c4.. c,16
+	
+	
+	
+	\dynEO #'(0 . 2) e'2\ff~
+	e4.. c16
 % Bars 121 to 125
 	c2~
-	c4.. g'16
-	g4 c8. e,16
-	e2
-	g4 c8. e,16
+	c4.. d16
+	d4 e8. c16
+	c2
+	d4 e8. c16
 % Bars 126 to 130
-	e4.. d16
-	d4 r
-	R2*21
+	c4.. d16
+	d8 r r4
+	R2*151
 % Bars 131 to 135
 	
 % Bars 136 to 140
@@ -108,42 +105,18 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 146 to 150
 	
-	
-	
-	c4\brack\f c
-	c2
 % Bars 151 to 155
-	e4 r
-	R2
-	d4\pp r
-	R2
-	e2(
+	
 % Bars 156 to 160
-	f4 g)
-	e2(
-	f4 g)
-	c,8 r r4
-	R2*5
+	
 % Bars 161 to 165
 	
-	
-	
-	
-	g'2\brack\p\<~
 % Bars 166 to 170
-	g\!
-	e4\f-> g->
-	g2
-	c,4-> g'->
-	g2
+	
 % Bars 171 to 175
-	g4-> g->
-	c-> g->
-	e-> c->
-	g'2->
-	e8 r r4
+	
 % Bars 176 to 180
-	R2*63
+	
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -168,34 +141,14 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 236 to 240
 	
-	
-	
-	e2\f
-	R
 % Bars 241 to 245
-	e
-	R
-	e4-> e->
-	e2->
-	e4-> e->
-% Bars 246 to 250
-	e2->~
-	e8 r r4
-	R2*2
 	
-	g4-> g->
+% Bars 246 to 250
+	
 % Bars 251 to 255
-	c,2\ff
-	c4 c
-	c2
-	c4 c
-	c-> a'->
+	
 % Bars 256 to 260
-	a4.. d16
-	d4-> a->
-	a4.. d16
-	d8 r r4
-	R2*19
+	
 % Bars 261 to 265
 	
 % Bars 266 to 270
@@ -206,26 +159,26 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	g,2-\tweak X-offset 0.2 \ff
-	g4 c
+	\dynEO #'(0 . 2) d4(\ff e8.) d16-.
+	d4( c8) r
 % Bars 281 to 285
-	g4( c8.) g16
-	d'2
-	d->
-	d->
-	d->
+	b4( c8.) b16-.
+	b4( a8) r
+	d2~
+	d~
+	d~
 % Bars 286 to 290
-	\tuplet 3/2 4 {d8\< d d  d d d\!}
-	d2 
-	d4 d
-	d2
-	d4 d
+	d4 d16(\< dis e fis)\!
+	g4( a8.) g16-.
+	g4( a8.) g16-.
+	g4( fis8.) e16-.
+	e4( d8) r
 % Bars 291 to 295
-	d2
-	d4 d
-	d2 
-	d,4 d
-	R2*40
+	g4( e8.) fis16-. 
+	fis4. r8
+	g4( e8.) fis16-.
+	fis4. r8
+	R2*72
 % Bars 296 to 300
 	
 % Bars 301 to 305
@@ -242,52 +195,35 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 331 to 335
 	
-	
-	
-	
-	f'2\f
 % Bars 336 to 340
-	f
-	f
-	f
-	e8 r r4
-	R2*15
+	
 % Bars 341 to 345
 	
 % Bars 346 to 350
 	
 % Bars 351 to 355
 	
-	
-	
-	
-	c,8\brack\f r r4
 % Bars 356 to 360
-	r8. c16 c8 r
-	c r r4
-	r8. d16 d8 r
-	d8 r r4
-	r8. cis16 cis8 r
+	
 % Bars 361 to 365
-	d8 r r4
-	r8. des16 des8 r
-	c2->
-	c->
-	R2*2
+	
 % Bars 366 to 370
 	
-	e4\ff e8. e16
-	e2->
-	e4 e8. e16
-	e2->
+	\dynEO #'(0 . 2) bes,4\ff a8. bes16
+	bes2
+	b!4 ais8. b16
+	b2
 % Bars 371 to 375
-	e~
-	e~
-	e~
-	e
-	f8 r r4
+	c
+	cis
+	d
+	dis
+	\dynEO #'(0 . 2) f8\brack\f r r8. f16-.
 % Bars 376 to 380
-	R2*34
+	f4( f,8) r
+	r4 r8. g'16-.
+	g4( g,8) r
+	R2*48
 % Bars 381 to 385
 	
 % Bars 386 to 390
@@ -300,55 +236,38 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 406 to 410
 	
-	
-	
-	
-	r4 r8. g16\brack\ff
 % Bars 411 to 415
-	e2~
-	e4.. d16
-	c2~
-	c4.. c'16
-	a2~
+	
 % Bars 416 to 420
-	a4.. g16
-	f2~
-	f4.. e16
-	d8 r r4
-	g4-> g8-. r
+	
 % Bars 421 to 425
-	R2
-	g4 g8 r
-	R2
-	g4 g8 r
-	R2
+	
 % Bars 426 to 430
-	g4 g8 r
-	r4 g
-	r g
-	r g
-	r g
+	
+	d2(\brack\ff
+	e)
+	f(
+	g)
 % Bars 431 to 435
-	r g
-	r g
-	r g
-	r g
-	c-> e,->
+	a(
+	b)
+	c(
+	d)
+	e4-> c->
 % Bars 436 to 440
-	g4..-> g16
-	c4-> e,->
-	g4..-> g16
-	c2
-	c,->
+	c4..-> d16
+	e4-> c->
+	c4..-> d16
+	e8 d c[ r16 a']
+	a2~
 % Bars 441 to 445
-	c->
-	c->
-	f8 f f f
-	f r r4
-	f8 f f f
+	a~
+	a
+	a8 g f g
+	a r r4
+	R2*19
 % Bars 446 to 450
-	f r r4
-	R2*17
+	
 % Bars 451 to 455
 	
 % Bars 456 to 460
@@ -357,35 +276,36 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	g2\f~
+	g,2\ff~
 	g~
 % Bars 466 to 470
-	g8 g g g~
-	g2
-	c,~
+	g~
+	g
 	c~
 	c8 c c c~
+	c2~
 % Bars 471 to 475
-	c2
-	f~
+	c
 	f~
 	f8 f f f~
-	f2
+	f2~
+	f
 % Bars 476 to 480
-	d'~
-	d~
-	d8 r r4
-	R2\fermata
-	f,~
+	\dynEO #'(0 . 2) f\brack\ff~
+	f~
+	f4 f,8.( e16
+	f8) r r4\fermata
+	f'2~
 % Bars 481 to 485
 	f~
-	f8 r r4
-	R2\fermata
-	c8\f r c r
-	R2
+	f4 f,8.( e16
+	f8) r r4\fermata
+	r4 r8. \dynEO #'(0 . 2) f'16\f
+	f4( f,8) r
 % Bars 486 to 490
-	c8 r c r
-	R2*25
+	r4 r8. f'16
+	f4( f,8) r 
+	R2*30
 % Bars 491 to 495
 	
 % Bars 496 to 500
@@ -396,25 +316,21 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 511 to 515
 	
-	c4\f-> c->
-	c4.. c16
-	c4 c
-	c4.. c16
 % Bars 516 to 520
-	d'4..-> g,16
-	g4.. c16
-	c2\ff~
-	c4.. c,16
+	
+	
+	\dynEO #'(0 . 2) e'2\ff~
+	e4.. c16
 	c2~
 % Bars 521 to 525
-	c4.. g'16
-	g4 c8. e,16
-	e2
-	g4 c8. e,16
-	e4.. d16
+	c4.. d16
+	d4 e8. c16
+	c2
+	d4 e8. c16
+	c4.. d16
 % Bars 526 to 530
-	d4 r
-	R2*43
+	d8 r r4
+	R2*74
 % Bars 531 to 535
 	
 % Bars 536 to 540
@@ -431,61 +347,41 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 566 to 570
 	
-	
-	
-	
-	c'2\fz~
 % Bars 571 to 575
-	c
-	c,\fz~
-	c
-	c'4\ff c8. a16
-	a2
+	
 % Bars 576 to 580
-	c4 c8. a16
-	a2
-	a4 f8. bes16
-	bes2
-	a4 f8. bes16
+	
 % Bars 581 to 585
-	bes2
-	f8 r f r
-	r8. g16 g4->
-	f8 r f r
-	r8. g16 g4->
+	
 % Bars 586 to 590
-	f8 r g r
-	r8. c,16 c4->
-	f8 r g r
-	r8. c,16 c4->
-	g'8\p r r4
+	
 % Bars 591 to 595
-	R2*6
+	
 % Bars 596 to 600
 	
-	d'4\brack\f c
-	c f,
-	bes c
-	c2
 % Bars 601 to 605
-	R2*12
+	ees,2->\fz~
+	ees
+	f->\fz~
+	f
+	fis->~
 % Bars 606 to 610
-	
+	fis
+	cis->~
+	cis4.. b'16
+	b2->
+	cis->
 % Bars 611 to 615
-	
-	
-	a4->\ff a->
-	a-> a->
-	a-> a->
+	d->
+	a4.. g'16
+	\dynEO #'(0 . 2) g4..\ff ges16
+	ges4.. f16
+	f4.. e16
 % Bars 616 to 620
-	a->
-	a->
-	b8 r b r
-	r4 b8 r
-	g r g r
+	e4.. dis16
+	R2*94
 % Bars 621 to 625
-	r4 g8 r
-	R2*57
+	
 % Bars 626 to 630
 	
 % Bars 631 to 635
@@ -508,175 +404,133 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 676 to 680
 	
-	
-	e2->\f
-	R
-	e->\f
 % Bars 681 to 685
-	R2*9
+	
 % Bars 686 to 690
 	
-	
-	
-	
-	c2\brack\p~
 % Bars 691 to 695
-	c4 c8. c16
-	e8 r r4
-	R2*12
+	
 % Bars 696 to 700
 	
 % Bars 701 to 705
 	
-	
-	
-	
-	c4->\f c->
 % Bars 706 to 710
-	c4..-> c16
-	c4-> c->
-	c4..-> c16
-	d'4..-> g,16
-	g4..-> c16
+	
 % Bars 711 to 715
-	c2\ff~
-	c4.. c,16
+	\dynEO #'(0 . 2) e2\ff~
+	e4.. c16
 	c2~
-	c4.. g'16
-	g4 c8. e,16
+	c4.. d16
+	d4 e8. c16
 % Bars 716 to 720
-	e2
-	g4 c8. e,16
-	e2
-	c
-	c
+	c2
+	d4 e8. c16
+	c2
+	g'4 a8. g16
+	g4( f8) r
 % Bars 721 to 725
-	c
-	g'
-	r8. g16 g4
-	r8. g16 g4
-	r8. g16 g4
+	e4 f8. e16
+	e4( d8) r
+	g,2~
+	g~
+	g~
 % Bars 726 to 730
-	r8. g16 g4
-	g4 g~
-	g g~
-	g g~
-	g g
+	g4 g16( gis a b
+	c4) d8. c16
+	c4 d8. c16
+	c4 b8. a16
+	a4( g8) r
 % Bars 731 to 735
-	g4. g8
-	g4 g8. g16
-	g4. g8
-	g4 g8. g16
-	g8 r r4
+	c4 a8. b16
+	b2
+	c4 a8. b16
+	b2
+	R2*26 \break
 % Bars 736 to 740
-	<< g2-> {s4 s\<}>>
-	<< g2-> {s8 s s s\!}>>
-	<< d2 {s8\fz\> s s s\!}>>
-	b2->~
-	b4.. b16\<
+	
 % Bars 741 to 745
-	b4-> b->\!
-	cis2->-\tweak X-offset -1 \fz
-	c!8 r r4
-	R2*9
+	
 % Bars 746 to 750
 	
 % Bars 751 to 755
 	
-	
-	e4\f-> e->
-	a4..-> a16
-	g4-> g->
 % Bars 756 to 760
-	a4.. a16
-	g4-> e->
-	a4.. a16
-	g4-> g->
-	c,2-> \section
+	
+	
+	
+	
+	\section \timeThreeTwo
 % Bars 761 to 765
-	\timeThreeTwo e1.->\brack\ff
-	e2-> f1->
-	b1.->
-	b2 c1->
-	c,1.->
+	\dynEO #'(0 . 2) g'8-.\ff cis,-. cis-. d-. e-. d-. cis-. bes'-. a-. g-. f-. e-. 
+	f4-. g8. f16 f2-> d4 e8. d16
+	d8-. gis,-. gis-. -. a-. b-. a-. gis-. f'-. e-. d-. c-. b-. 
+	c4 d8. c16 c2-> a4 b8. a16
+	a8-. dis,-. dis-. e-. fis-. e-. dis-. c'-. c2->~
 % Bars 766 to 770
-	c->
-	g'1-> c4.-> g8-.
-	g1-> c4.-> g8-.
-	c4 d8. c16 c2-> g4 g8. g16
-	g2-> c4 d8. c16 c2->
+	c8 fis,-. fis-. g-. a-. g-. fis-. ees'-. ees2->
+	e!8-. d-. c-. d-. c-. d-. e-. d-. c-. a'-. g-. f-. 
+	e-. d-. c-. d-. c-. d-. e-. d-. c-. a'-. g-. f-. 
+	ees2 d4( c) b2->
+	a'4( g) fis1->
 % Bars 771 to 775
-	g4 g8. g16 g2-> g->
-	\tuplet 3/2 2 {r4 c\brack\ff-> f-> r f-> c-> r c-> f->
-	r d-> e-> r e-> d-> r d-> e->
-	r f-> g-> r g-> f-> r f-> g->}
-	d2-> d-> d->
-% Bars 776 to 780
-	c-> c-> c->
-	c-> d-> e->
-	e1-> \omitTupletNumber \tuplet 3/2 2 {d4 e-> d->}
-	d1.\fp->
-	c->\fp
-% Bars 781 to 785
-	c->\fp
-	g->\ff
-	r2 c,\brack\f c
-	r c c
-	r e e
-% Bars 786 to 790
-	c'1.
-	e1-> g,2
-	c,2. c4 c4. c8
-	c2. c4 c4. c8
-	c2. c4 c4. c8
-% Bars 791 to 795
-	c1.->~
-	c
-	g'2-> g-> g->
-	g-> g-> g->
-	g-> g-> g->
-% Bars 796 to 800
-	g-> g-> g->
 	g1.->
+	\tuplet 3/2 2 {\dynEO #'(-1 . 3) f4-.\brack\ff r f-. ges-. r ges-. f-. r f-.
+	e-. r e-. fis-. r fis-. e-. r e-.
+	ees-. r ees-. f!-. r f-. ees-. r ees-.}
+	d2-> c-> b->
+% Bars 776 to 780
+	e-> d-> c->
+	g'-> f-> e->
+	bes'1-> \tuplet 3/2 2 {a4-> g-> f->}
+	f r r2 r
+	ees4 r r2 r
+% Bars 781 to 785
+	d4 r r2 r
+	\dynEO #'(0 . 2) g4\brack\ff r r2 r
+	c,4 r r2 r
+	R1.*9
+% Bars 786 to 790
+	
+% Bars 791 to 795
+	
+	
+	\dynEO #'(0 . 2) g'1\f-> c,2 
+	c1-> d2
+	e1-> c2
+% Bars 796 to 800
+	c1-> d2
+	e1.->
 	g->~
-	g2~ g4 r r2
-	R1.*2
+	g4 r r2 r
+	R1.*3
 % Bars 801 to 805
 	
-	d'4\ff r r2 g,4 r \section
-	\time 2/4 g2~
-	g4 e
-	e2~
+	\break \section
+	\time 2/4 \tuplet 3/2 2 {e4( g e)
+	c( e c)
+	e( g e)
 % Bars 806 to 810
-	e4 c'
-	c2~
-	c4 g
-	g2~
-	g4 e'
+	c( e, c')
+	e( g, e')
+	c( e c)
+	e( g e)
+	c( e c)}
 % Bars 811 to 815
-	e2->\fz~
+	e2~
+	e~
+	e~
 	e
-	g,->\fz~
-	g
-	c->\fz~
+	g~
 % Bars 816 to 820
-	c
-	e->\brack\fz~
-	e
-	e,4 r
-	R2
+	g~
+	g~
+	g
+	c,4 r
+	R2*11
 % Bars 821 to 825
-	g4 r
-	R2
-	r4 r8 c
-	c4. c8
-	c2->
+	
 % Bars 826 to 830
-	c->
-	c->
-	c->
-	c->~
-	c~
+	
 % Bar 831
-	c\fermata \fine
+	R2\fermata \fine
 }
