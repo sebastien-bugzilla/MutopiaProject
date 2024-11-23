@@ -533,15 +533,19 @@ musicFlautoIMvtI = \relative c {
 % Bars 446 to 450
 	a a a a a a
 	a4 r r
-	R2.*16
+	R2.*12
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	
+	
+	
+	\ni \mmrPos #4 R2.
 % Bars 461 to 465
-	
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	bes2.\pp~
 	bes_\crescmarkup
 % Bars 466 to 470
@@ -638,15 +642,19 @@ musicFlautoIMvtI = \relative c {
 	g~
 	g~\<
 	g4\p r r
-	R2.*15
+	R2.*11
 % Bars 546 to 550
 	
 % Bars 551 to 555
 	
+	
+	
+	
+	\ni \mmrPos #-9 R2.
 % Bars 556 to 560
-	
-	
-	
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-5 R \no
 	r4 f'2->\f
 	r4 f2->
 % Bars 561 to 565

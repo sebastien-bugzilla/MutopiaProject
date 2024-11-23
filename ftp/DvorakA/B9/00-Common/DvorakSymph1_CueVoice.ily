@@ -5,31 +5,214 @@
 %#                   C U E   V O I C E   F O R   F L A U T I                   #
 %###############################################################################
 cueVoiceFlautoIMvtI = \relative c {
-	
+	s1*8 s2.*390 s2*20 s2.*41
+	% bar 460 - 463
+	ges'2(^\markup {Clar.} aes4
+	bes2 ces4
+	des2 ees4
+	ges fes des)
+	s2.*91
+	% bar 555 - 558
+	c8(\mf^\markup {Viol.I} e a g f c')
+	g4 d8-. e-. f4->
+	g8( b e d a d)
+	c4\< bes8-. a-. bes4->\!
 }
 cueVoiceFlautoIMvtII = \relative c {
-	
+	s2*22
+	% bar 23 - 24
+	aes''16(^\markup {Viol.I} ees des c) bes8.( aes16)
+	aes8.( f'16) f4
+	s2*62
+	% bar 87 - 95
+	bes'8.->^\markup {Ob.I} aes16 g8 r
+	bes8.-> aes16-. g8 r
+	c4(^\markup {Fl.II}\< << des) {s8\> s\!}>>
+	c4(\< ees8\> des)\!
+	c4(\< bes8\! aes)
+	g4(\< f8\> c'16 bes)\!
+	bes4.( ees8
+	des2)
+	d8 r r4
+	s2*97
+	% bar 193
+	<<{\InCueContext b,2^\markup {Ob.}} \\ {\InCueContext g16_\markup {Viol.} r r16. g32 g16 r r16. g32}>>
 }
 cueVoiceFlautoIMvtIII = \relative c {
-	
+	s16 s2*136
+	% bar 138
+	<>^\markup {Archi}
+	s2*92
+	% bar 230 - 231
+	g'''8.^\markup {Ob.I} g16 a,4(
+	c8) bes ees4
 }
 cueVoiceFlautoIMvtIV = \relative c {
-	
+	s2*32
+	% bar 33
+	<>^\markup {Archi}
+	s2*296
+	% bar 329 - 330
+	\voiceOne r4^\markup {Ob.I} c''
+	c'4.. c,16 
+	s2*129
+	% bar 460 - 463
+	f2~^\markup {Ob.}
+	f
+	a~
+	a
+	s2*289
+	% bar 753 - 756
+	g4->^\markup {Ob.} c,->
+	c4..-> d16
+	e4-> d->
+	c-> a'-> \oneVoice
 }
 cueVoiceFlautoIIMvtI = \relative c {
-	
+	s1*8 s2.*390 s2*20 s2.*41
+	% bar 460 - 463
+	\voiceTwo ges'2(^\markup {Clar.} aes4
+	bes2 ces4
+	des2 ees4
+	ges fes des)
 }
 cueVoiceFlautoIIMvtII = \relative c {
-	
+	s2*22
+	% bar 23 - 24
+	aes''16(^\markup {Viol.I} ees des c) bes8.( aes16)
+	aes8.( f'16) f4
+	s2*62
+	% bar 87 - 88
+	\voiceOne <g' bes>8.^\markup {Ob.} <f aes>16 <ees g>8 r
+	<g bes>8. <f aes>16 <ees g>8 r 
+	s2*76
+	% bar 165 - 166
+	b'16(^\markup {Fl.I} c) r c-. b( c e f)
+	cis( d) r d-. cis( d fis g) \oneVoice 
+	s2*26
+	% bar 193
+	<<{\InCueContext b,,2^\markup {Ob.I}} \\ {\InCueContext g16_\markup {Viol.I} r r16. g32 g16 r r16. g32}>>
 }
 cueVoiceFlautoIIMvtIII = \relative c {
-	
+	s16 s2*228
+	% bar 230 - 231
+	\voiceOne g'''8.^\markup {Ob.I} g16 a,4(
+	c8) bes ees4 \oneVoice 
 }
 cueVoiceFlautoIIMvtIV = \relative c {
-	
+	s2*32
+	% bar 33
+	<>^\markup {Archi}
+	s2*12
+	% bar 45 - 49
+	\voiceOne c''4(^\markup {Ob.I} d8.) g,16-.
+	g2
+	c4( d8.) g16
+	g2
+	c,4( d8.) g,16-. 
+	s2*279
+	% bar 329 - 330
+	r4^\markup {Ob.I} c
+	c'4.. c,16 
+	s2*127
+	% bar 458 - 463
+	d2\f~^\markup {Ob.I}
+	d
+	f~\fz
+	f
+	a~\fz
+	a
+	s2*289
+	% bar 753 - 756
+	g4^\markup {Ob.I} c,
+	c4.. d16
+	e4 d
+	c a' \oneVoice 
 }
 cueVoicePiccoloMvtIV = \relative c {
-	
+	s2*44
+	% bar 45 - 49
+	\stemDown c''4(^\markup {Ob.I} d8.) g,16-.
+	g2
+	c4( d8.) g16-.
+	g2
+	c,4( d8.) g,16 \stemNeutral 
+	s2*31
+	% bar 81 - 84
+	\voiceOne g''4(^\markup {Fl.I} f
+	cis d)
+	e( f
+	e d)
+	s2*28
+	% bar 113 - 118
+	f,4->^\markup {Ob.I} g->
+	a4..-> g16
+	g4-> c->
+	a4..-> f16
+	f4..-> d16
+	d4..-> e16
+	s2*152
+	% bar 271 - 278
+	fis4\f^\markup {Ob.I} b,
+	b4.. cis16
+	dis4-> b->
+	b4.. cis16
+	dis8[( cis b) r16 g']-.
+	g4( fis8) r
+	fis8[( e dis) r16 c'-.]
+	c4( b8) r
+	s2*84
+	% bar 363 - 366
+	g4..^\markup {Fl. Ob.} f!16
+	f4.. ees16
+	ees8-. d-. c-. d-.^\crescmarkup
+	ees-. f-. g-. a-.
+	s2*52
+	% bar 419 - 426
+	d,,4^\markup {Fag.} g,
+	g4.. a16
+	b4 g
+	g4.. a16
+	<b d>4 <g b>
+	q4.. <a c>16
+	<b d>4 <g b>
+	q4.. <a c>16
+	s2*31
+	% bar 458 - 463
+	d'2~^\markup {Ob.}
+	d
+	f~
+	f
+	a~
+	a
+	s2*48
+	% bar 512 - 517
+	f4^\markup {Ob.I} g
+	a4.. g16-.
+	g4 c
+	a4.. f16
+	f4.. d16
+	d4.. e16
+	s2*79
+	% bar 597 - 600
+	d'8->\f^\markup {Fl.I} d16-. r ees8-> e16-. r
+	ees8-> ees16-. r f8-> f16-. r
+	bes,8-> bes16-. r c8-> c16-. r
+	c8-> c16-. r f,8-> f16-. r
+	s2*104
+	% bar 705 - 710
+	f4->^\markup {Ob.I} g->
+	a4..-> g16
+	g4-> c->
+	a4..-> f16
+	f4..-> d16
+	d4..-> e16
+	s2*42
+	% bar 753 - 756
+	g4->^\markup {Ob.I} c,->
+	c4..-> d16
+	e4-> d->
+	c-> a'->
 }
 %###############################################################################
 %#                     C U E   V O I C E   F O R   O B O I                     #

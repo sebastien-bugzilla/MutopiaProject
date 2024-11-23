@@ -525,15 +525,19 @@ musicFlautoIIMvtI = \relative c {
 % Bars 446 to 450
 	fis fis fis fis fis fis
 	fis4 r r
-	R2.*16
+	R2.*12
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	
+	
+	
+	\ni \voiceOne R2.
 % Bars 461 to 465
-	
-	
-	
+	R
+	R
+	R \no \oneVoice 
 	bes2.\pp~
 	bes_\crescmarkup
 % Bars 466 to 470

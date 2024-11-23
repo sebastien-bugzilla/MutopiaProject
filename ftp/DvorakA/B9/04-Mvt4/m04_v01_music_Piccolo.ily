@@ -32,13 +32,21 @@ musicPiccoloMvtIV = \relative c {
 % Bars 31 to 35
 	
 	R2\fermata
-	R2*19
+	R2*12
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
-% Bars 46 to 50
 	
+	
+	
+	\ni \mmrPos #8 R2
+% Bars 46 to 50
+	\mmrPos #4 R
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #8 R \no
+	R2*2
 % Bars 51 to 55
 	
 	r4 r8 f'32(\< g a b\!
@@ -53,7 +61,7 @@ musicPiccoloMvtIV = \relative c {
 	c d8.( c16)
 % Bars 61 to 65
 	c8\brack\pp r r4
-	R2*23
+	R2*19
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -61,16 +69,16 @@ musicPiccoloMvtIV = \relative c {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	
-	
-	
-	
+	\ni \mmrPos #-2 R2
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no
 	r4 r8. f16\f
 % Bars 86 to 90
 	f4( f,8) r
 	r4 r8. f'16
 	f4( f,8) r
-	R2*30
+	R2*24
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -81,10 +89,14 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 111 to 115
 	
+	
+	\ni \mmrPos #-2 R2
+	\mmrPos #-2 R
+	\mmrPos #-2 R
 % Bars 116 to 120
-	
-	
-	
+	\mmrPos #-2 R
+	\mmrPos #-2 R
+	\mmrPos #-2 R \no
 	e'2\ff~
 	e4.. c16
 % Bars 121 to 125
@@ -96,7 +108,7 @@ musicPiccoloMvtIV = \relative c {
 % Bars 126 to 130
 	c4.. d16
 	d8 r r4
-	R2*151
+	R2*143
 % Bars 131 to 135
 	
 % Bars 136 to 140
@@ -154,11 +166,15 @@ musicPiccoloMvtIV = \relative c {
 % Bars 266 to 270
 	
 % Bars 271 to 275
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 276 to 280
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	d4(\ff e8.) d16-.
 	d4( c8) r
 % Bars 281 to 285
@@ -178,7 +194,7 @@ musicPiccoloMvtIV = \relative c {
 	fis4. r8
 	g4( e8.) fis16-.
 	fis4. r8
-	R2*72
+	R2*68
 % Bars 296 to 300
 	
 % Bars 301 to 305
@@ -207,8 +223,12 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 361 to 365
 	
-% Bars 366 to 370
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 366 to 370
+	\mmrPos #-4 R \no
 	bes,4\ff a8. bes16
 	bes2
 	b!4 ais8. b16
@@ -223,7 +243,7 @@ musicPiccoloMvtIV = \relative c {
 	f4( f,8) r
 	r4 r8. g'16-.
 	g4( g,8) r
-	R2*48
+	R2*40
 % Bars 381 to 385
 	
 % Bars 386 to 390
@@ -240,10 +260,18 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 416 to 420
 	
+	
+	
+	\ni \clef bass \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 421 to 425
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 426 to 430
-	
+	\mmrPos #-4 R \no \clef treble
 	d2(\brack\ff
 	e)
 	f(
@@ -265,17 +293,21 @@ musicPiccoloMvtIV = \relative c {
 	a
 	a8 g f g
 	a r r4
-	R2*19
+	R2*13
 % Bars 446 to 450
 	
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 461 to 465
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g,2\ff~
 	g~
 % Bars 466 to 470
@@ -305,7 +337,7 @@ musicPiccoloMvtIV = \relative c {
 % Bars 486 to 490
 	r4 r8. f'16
 	f4( f,8) r 
-	R2*30
+	R2*24
 % Bars 491 to 495
 	
 % Bars 496 to 500
@@ -316,9 +348,13 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 511 to 515
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 516 to 520
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	e'2\ff~
 	e4.. c16
 	c2~
@@ -330,7 +366,7 @@ musicPiccoloMvtIV = \relative c {
 	c4.. d16
 % Bars 526 to 530
 	d8 r r4
-	R2*74
+	R2*70
 % Bars 531 to 535
 	
 % Bars 536 to 540
@@ -359,6 +395,10 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 596 to 600
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 601 to 605
 	ees,2->\fz~
 	ees
@@ -379,7 +419,7 @@ musicPiccoloMvtIV = \relative c {
 	f4.. e16
 % Bars 616 to 620
 	e4.. dis16
-	R2*94
+	R2*88
 % Bars 621 to 625
 	
 % Bars 626 to 630
@@ -414,8 +454,16 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 701 to 705
 	
-% Bars 706 to 710
 	
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 706 to 710
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 711 to 715
 	e2\ff~
 	e4.. c16
@@ -445,7 +493,7 @@ musicPiccoloMvtIV = \relative c {
 	b2
 	c4 a8. b16
 	b2
-	R2*26
+	R2*18
 % Bars 736 to 740
 	
 % Bars 741 to 745
@@ -454,9 +502,13 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 751 to 755
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 756 to 760
-	
-	
+	\mmrPos #-4 R \no
+	R2*4
 	
 	
 	\section \time 3/2

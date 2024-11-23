@@ -7,7 +7,7 @@
 #(set-global-staff-size 19)
 \layout {
 	#(layout-set-staff-size 19) 
-	\set Score.alternativeNumberingStyle = #'numbers
+%	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatBarType = #":|.|:"
 	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 	\set Voice.restNumberThreshold = #0

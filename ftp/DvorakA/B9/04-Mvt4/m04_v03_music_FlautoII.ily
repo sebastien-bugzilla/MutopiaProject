@@ -37,14 +37,22 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 36 to 40
 	
-	R2*9
+	R2*8
 	
 	
 	
 % Bars 41 to 45
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 46 to 50
-	R2*6
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*2
 % Bars 51 to 55
 	
 	r4 r32 c,(\< d e f g a b\!
@@ -310,7 +318,7 @@ musicFlautoIIMvtIV = \relative c {
 	d4 d
 	d2
 	d4 d
-	R2*36
+	R2*34
 % Bars 296 to 300
 	
 % Bars 301 to 305
@@ -325,6 +333,10 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 326 to 330
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 331 to 335
 	c4->\f b->
 	b4..-> c16
@@ -446,17 +458,21 @@ musicFlautoIIMvtIV = \relative c {
 	f
 	d8 d d d
 	c r r4
-	R2*19
+	R2*13
 % Bars 446 to 450
 	
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 461 to 465
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g2\brack\ff~
 	g~
 % Bars 466 to 470
@@ -760,13 +776,18 @@ musicFlautoIIMvtIV = \relative c {
 	dis-> eis->\!
 	fis2\fz->
 	gis8 r r4
-	R2*17
+	R2*9
 % Bars 746 to 750
 	
 % Bars 751 to 755
 	
-% Bars 756 to 760
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 756 to 760
+	\mmrPos #-4 R \no
+	R2*4
 	
 	
 	

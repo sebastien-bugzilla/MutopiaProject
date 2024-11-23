@@ -244,7 +244,7 @@ musicFlautoIMvtIII = \relative c {
 	bes8 r r4
 	bes8. bes'16 bes8-. bes,-.
 	bes r r4
-	R2*22
+	R2*20
 % Bars 211 to 215
 	
 % Bars 216 to 220
@@ -253,8 +253,12 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 226 to 230
 	
-% Bars 231 to 235
 	
+	
+	
+	\ni \mmrPos #-6 R2
+% Bars 231 to 235
+	\mmrPos #-6 R \no
 	ees'8-.\f\> d-. g4->~
 	g8 d-. g4->~\!
 	g8 r r4

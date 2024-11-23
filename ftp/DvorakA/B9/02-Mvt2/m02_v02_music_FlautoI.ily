@@ -18,7 +18,7 @@ musicFlautoIMvtII = \relative c {
 	ees\fermata\brack\fp
 	<< ees4\fermata {s8\< s\!} >> << aes4\fermata {s8\< s\!}>>
 	<< g2\fermata {s8\< s\! s\> s\!} >>
-	R2*16
+	R2*14
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -26,8 +26,8 @@ musicFlautoIMvtII = \relative c {
 % Bars 21 to 25
 	
 	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	r4 d,\brack\p
 % Bars 26 to 30
 	f8(\< g\! aes\> g\!)
@@ -77,13 +77,21 @@ musicFlautoIMvtII = \relative c {
 	ges4(\< f8 ees\!)
 % Bars 81 to 85
 	d16 r r8 r4
-	R2*17
+	R2*5
 % Bars 86 to 90
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 91 to 95
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 96 to 100
-	
+	R2*3
 	
 	
 	bes2\brack\mf_\crescendo~
@@ -161,7 +169,7 @@ musicFlautoIMvtII = \relative c {
 	g16([ e g f32 e)] e8.( d32 c)
 	b8( c16 d) e8( f)
 	g16([ e g f32 e)] e8.( d32 c) \section
-	\key aes \major R2*19
+	\key aes \major R2*18
 % Bars 176 to 180
 	
 % Bars 181 to 185
@@ -171,7 +179,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 191 to 195
 	
 	
-	
+	\ni \mmrPos #4 R2 \no
 	g,2\ppp\fermata(
 	aes8) r r4
 % Bars 196 to 200
