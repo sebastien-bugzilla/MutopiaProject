@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part05_Corni.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v11_music_CornoI.ily"
 \include "./01-Mvt1/m01_v12_music_CornoII.ily"
 \include "./01-Mvt1/m01_v13_music_CornoIII.ily"
@@ -57,6 +58,12 @@
 %				\formatCornoIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameCornoIMvtI \musicCornoIMvtI
 			}
 		>>
@@ -74,6 +81,12 @@
 %			\new Voice {
 %				\formatCornoIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameCornoIMvtII \musicCornoIMvtII
 			}
@@ -93,6 +106,12 @@
 %				\formatCornoIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameCornoIMvtIII \musicCornoIMvtIII
 			}
 		>>
@@ -110,6 +129,12 @@
 %			\new Voice {
 %				\formatCornoIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameCornoIMvtIV \musicCornoIMvtIV
 			}
@@ -129,6 +154,12 @@
 %				\formatCornoIIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameCornoIIMvtI \musicCornoIIMvtI
 			}
 		>>
@@ -146,6 +177,12 @@
 %			\new Voice {
 %				\formatCornoIIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameCornoIIMvtII \musicCornoIIMvtII
 			}
@@ -165,6 +202,12 @@
 %				\formatCornoIIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameCornoIIMvtIII \musicCornoIIMvtIII
 			}
 		>>
@@ -182,6 +225,12 @@
 %			\new Voice {
 %				\formatCornoIIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameCornoIIMvtIV \musicCornoIIMvtIV
 			}
@@ -201,6 +250,12 @@
 %				\formatCornoIIIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(cornoIII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameCornoIIIMvtI \musicCornoIIIMvtI
 			}
 		>>
@@ -218,6 +273,12 @@
 %			\new Voice {
 %				\formatCornoIVMvtI
 %			}
+			\new Voice {
+				\keepWithTag #'(cornoIV) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIVMvtI
+			}
 			\new Voice {
 				\timeMvtI \nameCornoIVMvtI \musicCornoIVMvtI
 			}

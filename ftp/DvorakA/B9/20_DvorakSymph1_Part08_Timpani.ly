@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part08_Timpani.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v20_music_Timpani.ily"
 \include "./02-Mvt2/m02_v20_music_Timpani.ily"
 \include "./03-Mvt3/m03_v20_music_Timpani.ily"
@@ -51,6 +52,12 @@
 %				\formatTimpaniMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTimpaniMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameTimpaniMvtI \musicTimpaniMvtI
 			}
 		>>
@@ -68,6 +75,12 @@
 %			\new Voice {
 %				\formatTimpaniMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTimpaniMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameTimpaniMvtII \musicTimpaniMvtII
 			}
@@ -87,6 +100,12 @@
 %				\formatTimpaniMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTimpaniMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameTimpaniMvtIII \musicTimpaniMvtIII
 			}
 		>>
@@ -104,6 +123,12 @@
 %			\new Voice {
 %				\formatTimpaniMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTimpaniMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameTimpaniMvtIV \musicTimpaniMvtIV
 			}

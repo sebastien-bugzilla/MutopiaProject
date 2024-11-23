@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part03_Clarinetti.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v07_music_ClarinettoI.ily"
 \include "./01-Mvt1/m01_v08_music_ClarinettoII.ily"
 \include "./02-Mvt2/m02_v07_music_ClarinettoI.ily"
@@ -55,6 +56,12 @@
 %				\formatClarinettoIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(clarinettoI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameClarinettoIMvtI \musicClarinettoIMvtI
 			}
 		>>
@@ -72,6 +79,12 @@
 %			\new Voice {
 %				\formatClarinettoIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(clarinettoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameClarinettoIMvtII \musicClarinettoIMvtII
 			}
@@ -91,6 +104,12 @@
 %				\formatClarinettoIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(clarinettoI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameClarinettoIMvtIII \musicClarinettoIMvtIII
 			}
 		>>
@@ -108,6 +127,12 @@
 %			\new Voice {
 %				\formatClarinettoIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(clarinettoI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameClarinettoIMvtIV \musicClarinettoIMvtIV
 			}
@@ -127,6 +152,12 @@
 %				\formatClarinettoIIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(clarinettoII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameClarinettoIIMvtI \musicClarinettoIIMvtI
 			}
 		>>
@@ -144,6 +175,12 @@
 %			\new Voice {
 %				\formatClarinettoIIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(clarinettoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameClarinettoIIMvtII \musicClarinettoIIMvtII
 			}
@@ -163,6 +200,12 @@
 %				\formatClarinettoIIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(clarinettoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameClarinettoIIMvtIII \musicClarinettoIIMvtIII
 			}
 		>>
@@ -180,6 +223,12 @@
 %			\new Voice {
 %				\formatClarinettoIIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(clarinettoII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceClarinettoIIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameClarinettoIIMvtIV \musicClarinettoIIMvtIV
 			}

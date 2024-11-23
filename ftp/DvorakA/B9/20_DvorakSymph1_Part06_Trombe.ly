@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part06_Trombe.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v15_music_TrombeI.ily"
 \include "./01-Mvt1/m01_v16_music_TrombeII.ily"
 \include "./02-Mvt2/m02_v15_music_TrombeI.ily"
@@ -55,6 +56,12 @@
 %				\formatTrombeIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(trombeI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameTrombeIMvtI \musicTrombeIMvtI
 			}
 		>>
@@ -72,6 +79,12 @@
 %			\new Voice {
 %				\formatTrombeIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(trombeI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameTrombeIMvtII \musicTrombeIMvtII
 			}
@@ -91,6 +104,12 @@
 %				\formatTrombeIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(trombeI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameTrombeIMvtIII \musicTrombeIMvtIII
 			}
 		>>
@@ -108,6 +127,12 @@
 %			\new Voice {
 %				\formatTrombeIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(trombeI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameTrombeIMvtIV \musicTrombeIMvtIV
 			}
@@ -127,6 +152,12 @@
 %				\formatTrombeIIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(trombeII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameTrombeIIMvtI \musicTrombeIIMvtI
 			}
 		>>
@@ -144,6 +175,12 @@
 %			\new Voice {
 %				\formatTrombeIIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(trombeII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameTrombeIIMvtII \musicTrombeIIMvtII
 			}
@@ -163,6 +200,12 @@
 %				\formatTrombeIIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(trombeII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameTrombeIIMvtIII \musicTrombeIIMvtIII
 			}
 		>>
@@ -180,6 +223,12 @@
 %			\new Voice {
 %				\formatTrombeIIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(trombeII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombeIIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameTrombeIIMvtIV \musicTrombeIIMvtIV
 			}

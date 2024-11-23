@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part10_ViolineII.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v22_music_ViolinoII.ily"
 \include "./02-Mvt2/m02_v22_music_ViolinoII.ily"
 \include "./03-Mvt3/m03_v22_music_ViolinoII.ily"
@@ -51,6 +52,12 @@
 %				\formatViolinoIIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(violinoII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolinoIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameViolinoIIMvtI \musicViolinoIIMvtI
 			}
 		>>
@@ -68,6 +75,12 @@
 %			\new Voice {
 %				\formatViolinoIIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(violinoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolinoIIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameViolinoIIMvtII \musicViolinoIIMvtII
 			}
@@ -87,6 +100,12 @@
 %				\formatViolinoIIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(violinoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolinoIIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameViolinoIIMvtIII \musicViolinoIIMvtIII
 			}
 		>>
@@ -104,6 +123,12 @@
 %			\new Voice {
 %				\formatViolinoIIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(violinoII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolinoIIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameViolinoIIMvtIV \musicViolinoIIMvtIV
 			}

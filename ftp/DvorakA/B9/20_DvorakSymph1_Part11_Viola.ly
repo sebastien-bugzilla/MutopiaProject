@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part11_Viola.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v23_music_Viola.ily"
 \include "./02-Mvt2/m02_v23_music_Viola.ily"
 \include "./03-Mvt3/m03_v23_music_Viola.ily"
@@ -51,6 +52,12 @@
 %				\formatViolaMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolaMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameViolaMvtI \musicViolaMvtI
 			}
 		>>
@@ -68,6 +75,12 @@
 %			\new Voice {
 %				\formatViolaMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolaMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameViolaMvtII \musicViolaMvtII
 			}
@@ -87,6 +100,12 @@
 %				\formatViolaMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolaMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameViolaMvtIII \musicViolaMvtIII
 			}
 		>>
@@ -104,6 +123,12 @@
 %			\new Voice {
 %				\formatViolaMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolaMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameViolaMvtIV \musicViolaMvtIV
 			}

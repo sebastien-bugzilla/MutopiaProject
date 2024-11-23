@@ -28,6 +28,9 @@ cueVoiceFlautoIIMvtIII = \relative c {
 cueVoiceFlautoIIMvtIV = \relative c {
 	
 }
+cueVoicePiccoloMvtIV = \relative c {
+	
+}
 %###############################################################################
 %#                     C U E   V O I C E   F O R   O B O I                     #
 %###############################################################################

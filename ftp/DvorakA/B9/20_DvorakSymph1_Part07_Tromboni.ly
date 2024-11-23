@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part07_Tromboni.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v17_music_TrombonoI.ily"
 \include "./01-Mvt1/m01_v18_music_TrombonoII.ily"
 \include "./01-Mvt1/m01_v19_music_TrombonoIII.ily"
@@ -56,6 +57,12 @@
 %				\formatTrombonoIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(trombonoI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombonoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameTrombonoIMvtI \musicTrombonoIMvtI
 			}
 		>>
@@ -73,6 +80,12 @@
 %			\new Voice {
 %				\formatTrombonoIMvtIII
 %			}
+			\new Voice {
+				\keepWithTag #'(trombonoI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombonoIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \nameTrombonoIMvtIII \musicTrombonoIMvtIII
 			}
@@ -92,6 +105,12 @@
 %				\formatTrombonoIMvtIV
 %			}
 			\new Voice {
+				\keepWithTag #'(trombonoI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombonoIMvtIV
+			}
+			\new Voice {
 				\timeMvtIV \nameTrombonoIMvtIV \musicTrombonoIMvtIV
 			}
 		>>
@@ -109,6 +128,12 @@
 %			\new Voice {
 %				\formatTrombonoIIMvtI
 %			}
+			\new Voice {
+				\keepWithTag #'(trombonoII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombonoIIMvtI
+			}
 			\new Voice {
 				\timeMvtI \nameTrombonoIIMvtI \musicTrombonoIIMvtI
 			}
@@ -128,6 +153,12 @@
 %				\formatTrombonoIIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(trombonoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombonoIIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameTrombonoIIMvtIII \musicTrombonoIIMvtIII
 			}
 		>>
@@ -145,6 +176,12 @@
 %			\new Voice {
 %				\formatTrombonoIIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(trombonoII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombonoIIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameTrombonoIIMvtIV \musicTrombonoIIMvtIV
 			}
@@ -164,6 +201,12 @@
 %				\formatTrombonoIIIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(trombonoIII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombonoIIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameTrombonoIIIMvtI \musicTrombonoIIIMvtI
 			}
 		>>
@@ -182,6 +225,12 @@
 %				\formatTrombonoIIIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(trombonoIII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombonoIIIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameTrombonoIIIMvtIII \musicTrombonoIIIMvtIII
 			}
 		>>
@@ -199,6 +248,12 @@
 %			\new Voice {
 %				\formatTrombonoIIIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(trombonoIII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTrombonoIIIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameTrombonoIIIMvtIV \musicTrombonoIIIMvtIV
 			}

@@ -23,10 +23,11 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part01_Flauti.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoI.ily"
 \include "./01-Mvt1/m01_v03_music_FlautoII.ily"
 \include "./02-Mvt2/m02_v02_music_FlautoI.ily"
-\include "./02-Mvt2/m02_v02_music_FlautoII.ily"
+\include "./02-Mvt2/m02_v03_music_FlautoII.ily"
 \include "./03-Mvt3/m03_v02_music_FlautoI.ily"
 \include "./03-Mvt3/m03_v03_music_FlautoII.ily"
 \include "./04-Mvt4/m04_v01_music_Piccolo.ily"
@@ -56,11 +57,17 @@
 %				\formatFlautoIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameFlautoIMvtI \musicFlautoIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -73,6 +80,12 @@
 %			\new Voice {
 %				\formatFlautoIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameFlautoIMvtII \musicFlautoIMvtII
 			}
@@ -92,6 +105,12 @@
 %				\formatFlautoIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameFlautoIMvtIII \musicFlautoIMvtIII
 			}
 		>>
@@ -109,6 +128,12 @@
 %			\new Voice {
 %				\formatFlautoIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameFlautoIMvtIV \musicFlautoIMvtIV
 			}
@@ -128,11 +153,17 @@
 %				\formatFlautoIIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameFlautoIIMvtI \musicFlautoIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -145,6 +176,12 @@
 %			\new Voice {
 %				\formatFlautoIIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameFlautoIIMvtII \musicFlautoIIMvtII
 			}
@@ -164,6 +201,12 @@
 %				\formatFlautoIIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameFlautoIIMvtIII \musicFlautoIIMvtIII
 			}
 		>>
@@ -182,6 +225,12 @@
 %				\formatFlautoIIMvtIV
 %			}
 			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtIV
+			}
+			\new Voice {
 				\timeMvtIV \nameFlautoIIMvtIV \musicFlautoIIMvtIV
 			}
 		>>
@@ -199,6 +248,12 @@
 %			\new Voice {
 %				\formatPiccoloMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoicePiccoloMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \namePiccoloMvtIV \musicPiccoloMvtIV
 			}

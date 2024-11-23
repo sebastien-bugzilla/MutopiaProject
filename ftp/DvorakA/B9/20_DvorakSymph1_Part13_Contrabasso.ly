@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part13_Contrabasso.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v25_music_Contrabasso.ily"
 \include "./02-Mvt2/m02_v25_music_Contrabasso.ily"
 \include "./03-Mvt3/m03_v25_music_Contrabasso.ily"
@@ -51,6 +52,12 @@
 %				\formatContrabassoMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(contrabasso) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceContrabassoMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameContrabassoMvtI \musicContrabassoMvtI
 			}
 		>>
@@ -68,6 +75,12 @@
 %			\new Voice {
 %				\formatContrabassoMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(contrabasso) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceContrabassoMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameContrabassoMvtII \musicContrabassoMvtII
 			}
@@ -87,6 +100,12 @@
 %				\formatContrabassoMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(contrabasso) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceContrabassoMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameContrabassoMvtIII \musicContrabassoMvtIII
 			}
 		>>
@@ -104,6 +123,12 @@
 %			\new Voice {
 %				\formatContrabassoMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(contrabasso) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceContrabassoMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameContrabassoMvtIV \musicContrabassoMvtIV
 			}

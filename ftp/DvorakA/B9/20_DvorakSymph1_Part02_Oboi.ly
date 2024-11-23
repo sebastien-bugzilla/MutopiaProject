@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part02_Oboi.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v04_music_OboeI.ily"
 \include "./01-Mvt1/m01_v05_music_OboeII.ily"
 \include "./01-Mvt1/m01_v06_music_CornoInglese.ily"
@@ -56,6 +57,12 @@
 %				\formatOboeIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameOboeIMvtI \musicOboeIMvtI
 			}
 		>>
@@ -73,6 +80,12 @@
 %			\new Voice {
 %				\formatOboeIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameOboeIMvtII \musicOboeIMvtII
 			}
@@ -92,6 +105,12 @@
 %				\formatOboeIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameOboeIMvtIII \musicOboeIMvtIII
 			}
 		>>
@@ -109,6 +128,12 @@
 %			\new Voice {
 %				\formatOboeIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameOboeIMvtIV \musicOboeIMvtIV
 			}
@@ -128,6 +153,12 @@
 %				\formatOboeIIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameOboeIIMvtI \musicOboeIIMvtI
 			}
 		>>
@@ -145,6 +176,12 @@
 %			\new Voice {
 %				\formatOboeIIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameOboeIIMvtII \musicOboeIIMvtII
 			}
@@ -164,6 +201,12 @@
 %				\formatOboeIIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameOboeIIMvtIII \musicOboeIIMvtIII
 			}
 		>>
@@ -182,6 +225,12 @@
 %				\formatOboeIIMvtIV
 %			}
 			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceOboeIIMvtIV
+			}
+			\new Voice {
 				\timeMvtIV \nameOboeIIMvtIV \musicOboeIIMvtIV
 			}
 		>>
@@ -199,6 +248,12 @@
 %			\new Voice {
 %				\formatCornoIngleseMvtI
 %			}
+			\new Voice {
+				\keepWithTag #'(cornoInglese) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIngleseMvtI
+			}
 			\new Voice {
 				\timeMvtI \nameCornoIngleseMvtI \musicCornoIngleseMvtI
 			}

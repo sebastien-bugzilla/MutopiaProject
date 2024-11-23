@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part12_Violoncello.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v24_music_Violoncello.ily"
 \include "./02-Mvt2/m02_v24_music_Violoncello.ily"
 \include "./03-Mvt3/m03_v24_music_Violoncello.ily"
@@ -51,6 +52,12 @@
 %				\formatVioloncelloMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(violoncello) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceVioloncelloMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameVioloncelloMvtI \musicVioloncelloMvtI
 			}
 		>>
@@ -68,6 +75,12 @@
 %			\new Voice {
 %				\formatVioloncelloMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(violoncello) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceVioloncelloMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
 			}
@@ -87,6 +100,12 @@
 %				\formatVioloncelloMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(violoncello) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceVioloncelloMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameVioloncelloMvtIII \musicVioloncelloMvtIII
 			}
 		>>
@@ -104,6 +123,12 @@
 %			\new Voice {
 %				\formatVioloncelloMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(violoncello) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceVioloncelloMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameVioloncelloMvtIV \musicVioloncelloMvtIV
 			}

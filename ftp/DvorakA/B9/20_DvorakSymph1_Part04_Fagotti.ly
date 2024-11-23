@@ -22,6 +22,7 @@
 \include "./00-Common/DvorakSymph1_Shortcuts.ily"
 \include "./00-Common/DvorakSymph1_Format_Part04_Fagotti.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
+\include "./00-Common/DvorakSymph1_Tempi.ily"
 \include "./01-Mvt1/m01_v09_music_FagottoI.ily"
 \include "./01-Mvt1/m01_v10_music_FagottoII.ily"
 \include "./02-Mvt2/m02_v09_music_FagottoI.ily"
@@ -54,6 +55,12 @@
 %				\formatFagottoIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(fagottoI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameFagottoIMvtI \musicFagottoIMvtI
 			}
 		>>
@@ -71,6 +78,12 @@
 %			\new Voice {
 %				\formatFagottoIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(fagottoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameFagottoIMvtII \musicFagottoIMvtII
 			}
@@ -90,6 +103,12 @@
 %				\formatFagottoIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(fagottoI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameFagottoIMvtIII \musicFagottoIMvtIII
 			}
 		>>
@@ -107,6 +126,12 @@
 %			\new Voice {
 %				\formatFagottoIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(fagottoI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameFagottoIMvtIV \musicFagottoIMvtIV
 			}
@@ -126,6 +151,12 @@
 %				\formatFagottoIIMvtI
 %			}
 			\new Voice {
+				\keepWithTag #'(fagottoII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtI
+			}
+			\new Voice {
 				\timeMvtI \nameFagottoIIMvtI \musicFagottoIIMvtI
 			}
 		>>
@@ -143,6 +174,12 @@
 %			\new Voice {
 %				\formatFagottoIIMvtII
 %			}
+			\new Voice {
+				\keepWithTag #'(fagottoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtII
+			}
 			\new Voice {
 				\timeMvtII \nameFagottoIIMvtII \musicFagottoIIMvtII
 			}
@@ -162,6 +199,12 @@
 %				\formatFagottoIIMvtIII
 %			}
 			\new Voice {
+				\keepWithTag #'(fagottoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtIII
+			}
+			\new Voice {
 				\timeMvtIII \nameFagottoIIMvtIII \musicFagottoIIMvtIII
 			}
 		>>
@@ -179,6 +222,12 @@
 %			\new Voice {
 %				\formatFagottoIIMvtIV
 %			}
+			\new Voice {
+				\keepWithTag #'(fagottoII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFagottoIIMvtIV
+			}
 			\new Voice {
 				\timeMvtIV \nameFagottoIIMvtIV \musicFagottoIIMvtIV
 			}
