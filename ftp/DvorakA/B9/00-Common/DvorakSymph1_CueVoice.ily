@@ -218,31 +218,115 @@ cueVoicePiccoloMvtIV = \relative c {
 %#                     C U E   V O I C E   F O R   O B O I                     #
 %###############################################################################
 cueVoiceOboeIMvtI = \relative c {
-	
+	s1*8 s2.*390 s2*20 s2.*41
+	% bar 460 - 463
+	\voiceTwo ges'2(^\markup {Ob.I} aes4
+	bes2 ces4
+	des2 ees4
+	ges fes des) \oneVoice 
 }
 cueVoiceOboeIMvtII = \relative c {
-	
+	% no cue voice
 }
 cueVoiceOboeIMvtIII = \relative c {
-	
+	s16 s2*136
+	% bar 138
+	<>^\markup {Archi}
 }
 cueVoiceOboeIMvtIV = \relative c {
-	
+	s2*197
+	% bar 198
+	e4^\markup {Cl.II} dis
+	s2*257
+	% bar 456 - 457
+	\voiceOne a'4\ff d,
+	d4. e8 
+	s2*183
+	% bar 641 - 644
+	r8.^\markup {Viol.I} b''16 b4
+	r8. g16 g4
+	r8. d16 d4 \oneVoice 
+	d cis
 }
 cueVoiceOboeIIMvtI = \relative c {
-	
+	s1*8 s2.*390 s2*20 s2.*41
+	% bar 460 - 463
+	\voiceTwo ges'2(^\markup {Ob.I} aes4
+	bes2 ces4
+	des2 ees4
+	ges fes des) \oneVoice 
 }
 cueVoiceOboeIIMvtII = \relative c {
-	
+	s2*8
+	% bar 9
+	<>^\markup {Ob.I solo}
+	s2*52
+	% bar 61
+	<>^\markup {Ob.I solo}
+	s2*102
+	% bar 163 - 164
+	\voiceOne ees''4^\markup {Ob.I} d16 c bes! a
+	a8( gis) r8. e'16 \oneVoice 
 }
 cueVoiceOboeIIMvtIII = \relative c {
-	
+	s16 s2*136
+	% bar 138
+	<>^\markup {Archi}
 }
 cueVoiceOboeIIMvtIV = \relative c {
-	
+	s2*11
+	% bar 12
+	<>^\markup {Ob.I solo}
+	s2*21
+	% bar 33
+	<>^\markup {Archi}
+	s2*12
+	% bar 45 - 52
+	\voiceOne  c''4(^\markup {Ob.I} d8.) g,16-.
+	g2
+	c4( d8.) g16-.
+	g2
+	c,4( d8.) g,16-.
+	c4( d8.) g16-.
+	e4( c8.) d16-.
+	d4. g8 
+	s2*162
+	% bar 215 - 218
+	c,4\repeatTie^\markup {Ob.I} b~
+	b a(
+	c8. gis16 b4~
+	b) a 
+	s2*237
+	% bar 456 - 457
+	a,4^\markup {Fag.} d,
+	d4.. e16 
+	s2*203
+	% bar 661 - 664
+	bes''4(^\markup {Ob.I} a~
+	a) g(
+	bes8. fis16 a4~
+	a) g \oneVoice 
 }
 cueVoiceCornoIngleseMvtI = \relative c {
-	
+	s1*8 s2.*373
+	% bar 382 - 398
+	\voiceOne g'''4-.^\markup {Fl.} f-. e-.
+	d-. c-. c'-. 
+	d,-. c-. c'-. 
+	bes-. a!-. g-. 
+	f-. e-. e'-. 
+	dis-. cis-. b-. 
+	ais-. gis-. gis'-. 
+	fis-. e-. dis-. 
+	cis-. b-. b'-. 
+	bes,!2(^\markup {Viol.I} a4)
+	e2( f4)
+	ees!2( d4
+	c2 bes4)
+	bes'2(^\markup {Ob.I} a4
+	e2 f4)
+	ees!2( d4
+	c2 bes4) \oneVoice 
 }
 %###############################################################################
 %#               C U E   V O I C E   F O R   C L A R I N E T T I               #

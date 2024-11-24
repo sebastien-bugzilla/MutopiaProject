@@ -177,15 +177,15 @@ musicOboeIIMvtII = \relative c {
 	
 % Bars 156 to 160
 	
-	R2*8
+	R2*6
 	
 	
 	
 % Bars 161 to 165
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	e4.(\brack\p_\pocoapococresc f8)
 % Bars 166 to 170
 	f4( fis8 g)

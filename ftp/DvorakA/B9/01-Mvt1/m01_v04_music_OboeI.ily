@@ -533,15 +533,19 @@ musicOboeIMvtI = \relative c {
 % Bars 446 to 450
 	c
 	c4 r r
-	R2.*16
+	R2.*12
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	
+	
+	
+	\ni \mmrPos #2 R2.
 % Bars 461 to 465
-	
-	
-	
+	\mmrPos #2 R
+	\mmrPos #2 R
+	\mmrPos #2 R \no
 	ges2.\pp~
 	ges_\crescmarkup
 % Bars 466 to 470

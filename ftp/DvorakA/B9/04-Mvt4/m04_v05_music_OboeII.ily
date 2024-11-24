@@ -40,17 +40,25 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 36 to 40
 	
-	R2*16
+	R2*8
 	
 	
 	
 % Bars 41 to 45
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 46 to 50
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 51 to 55
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g2~\f
 	g4 c,~
 	c8 r g'4~
@@ -214,7 +222,7 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 	
-	R2*20
+	R2*16
 	
 % Bars 201 to 205
 	
@@ -222,10 +230,14 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 211 to 215
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 216 to 220
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	c,8.\f e16 a4~
 	a g->
 % Bars 221 to 225
@@ -490,12 +502,12 @@ musicOboeIIMvtIV = \relative c {
 	d8 d d d
 % Bars 446 to 450
 	c r r4
-	R2*11 
+	R2*9 
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	
-	
+	\ni \clef bass \mmrPos #-4 R2
+	\mmrPos #-4 R \no \clef treble
 	a2\brack\f->~
 	a
 	b\fz~
@@ -708,7 +720,7 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 	
-	R2*20
+	R2*16
 % Bars 646 to 650
 	
 % Bars 651 to 655
@@ -716,10 +728,10 @@ musicOboeIIMvtIV = \relative c {
 % Bars 656 to 660
 	
 % Bars 661 to 665
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 	bes8.\f d16 g4~
 % Bars 666 to 670
 	g fis->

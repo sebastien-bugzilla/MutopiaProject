@@ -141,7 +141,7 @@ musicCornoIngleseMvtI = \relative c {
 		}
 	}
 % Bars 291 to 295
-	R2.*108 \bar "||"
+	R2.*91
 % Bars 296 to 300
 	
 % Bars 301 to 305
@@ -178,14 +178,26 @@ musicCornoIngleseMvtI = \relative c {
 	
 % Bars 381 to 385
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 386 to 390
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 391 to 395
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 396 to 400
-	
-	
-	\time 2/4
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \time 2/4 \section
 	bes''2->\ppp
 	d,->\fz
 % Bars 401 to 405
@@ -209,7 +221,7 @@ musicCornoIngleseMvtI = \relative c {
 % Bars 416 to 420
 	g->\brack\fz
 	a->\brack\fz
-	a->\brack\fz \bar "||"
+	a->\brack\fz \section
 	\time 3/4 R2.*240
 % Bars 421 to 425
 	

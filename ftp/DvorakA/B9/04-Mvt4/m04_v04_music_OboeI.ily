@@ -223,7 +223,7 @@ musicOboeIMvtIV = \relative c {
 	e8-. r r8. g16
 	\afterGrace g2\startTrillSpan {fis16( g)\stopTrillSpan}
 	g8-. r r4
-	R2*19
+	R2*18
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -233,7 +233,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 196 to 200
 	
 	
-	
+	\ni \mmrPos #4 R2 \no
 	b,4\p^\solo e,~
 	e4. fis8
 % Bars 201 to 205
@@ -522,12 +522,12 @@ musicOboeIMvtIV = \relative c {
 	a8 g f g
 % Bars 446 to 450
 	a r r4
-	R2*11 
+	R2*9 
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	
-	
+	\ni \clef bass \mmrPos #-4 R2
+	\mmrPos #-4 R \no \clef treble
 	d,2\brack\f->~
 	d
 	f\fz~
@@ -730,16 +730,16 @@ musicOboeIMvtIV = \relative c {
 	\afterGrace bes2(\startTrillSpan {a16 bes)\stopTrillSpan}
 	bes,8 r r4
 % Bars 626 to 630
-	R2*19
+	R2*15
 % Bars 631 to 635
 	
 % Bars 636 to 640
 	
 % Bars 641 to 645
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	a4(\p d,)
 % Bars 646 to 650
 	d4. e8
