@@ -226,7 +226,7 @@ cueVoiceOboeIMvtI = \relative c {
 	ges fes des) \oneVoice 
 }
 cueVoiceOboeIMvtII = \relative c {
-	% no cue voice
+	% no cueVoice
 }
 cueVoiceOboeIMvtIII = \relative c {
 	s16 s2*136
@@ -332,28 +332,78 @@ cueVoiceCornoIngleseMvtI = \relative c {
 %#               C U E   V O I C E   F O R   C L A R I N E T T I               #
 %###############################################################################
 cueVoiceClarinettoIMvtI = \relative c {
-	
+	% no cueVoice
 }
 cueVoiceClarinettoIMvtII = \relative c {
-	
+	s2*27
+	% bar 28 - 29
+	\voiceOne a'2^\markup {Cl.II}
+	\transpose bes c' {
+		\relative c'' {
+			c4(^\markup {Viol.I} bes8 aes) \oneVoice 
+		}
+	}
 }
 cueVoiceClarinettoIMvtIII = \relative c {
-	
+	s16 s2*136
+	% bar 138
+	<>^\markup {Archi}
 }
 cueVoiceClarinettoIMvtIV = \relative c {
+	s2*32
+	% bar 33
+	<>^\markup {Archi}
+	s2*423
+	% bar 456 - 457
+	\transpose bes c' {
+		\relative c {
+			\voiceOne a'4^\markup {Fag.I} d,
+			d4.. e16 \oneVoice 
+		}
+	}
 	
 }
 cueVoiceClarinettoIIMvtI = \relative c {
-	
+	% no CueVoice
 }
 cueVoiceClarinettoIIMvtII = \relative c {
-	
+	s2*24
+	% bar 25
+	\transpose bes c' {
+		\relative c {
+			\stemUp f''8(^\markup {Ob.I} g aes8. g16) \stemNeutral 
+		}
+	}
 }
 cueVoiceClarinettoIIMvtIII = \relative c {
-	
+	s16 s2*136
+	% bar 138
+	<>^\markup {Archi}
 }
 cueVoiceClarinettoIIMvtIV = \relative c {
-	
+	s2*32
+	% bar 33
+	<>^\markup {Archi}
+	s2*17
+	% bar 50 - 52
+	\transpose bes c' {
+		\relative c {
+			\voiceOne  c''4(^\markup {Ob.I} d8.) g16-.
+			e4( c8.) d16
+			d4. s8
+		}
+	}
+	s2*394
+	% bar 447
+	<>^\markup {Archi}
+	s2*9
+	% bar 456 - 457
+	\transpose bes c' {
+		\relative c {
+			a'4->^\markup {Fag.I} d,->
+			d4..-> e16-. \oneVoice 
+		}
+	}
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #

@@ -17,7 +17,7 @@
     145     384    3708 20_DvorakSymph1_Part13_Contrabasso.ly
       7      13      84 display.ly
     104     399    2159 test.ly
-    564    1693   11654 00-Common/DvorakSymph1_CueVoice.ily
+    614    1841   12522 00-Common/DvorakSymph1_CueVoice.ily
     382    2295   17387 00-Common/DvorakSymph1_Format_Cond_Mvt01.ily
     170     869    7475 00-Common/DvorakSymph1_Format_Cond_Mvt02.ily
     241    1375   10959 00-Common/DvorakSymph1_Format_Cond_Mvt03.ily
@@ -41,7 +41,7 @@
      71     260    2520 00-Common/DvorakSymph1_LayoutParts.ily
      82     330    2999 00-Common/DvorakSymph1_NameGrandStaff.ily
     432    1545   11907 00-Common/DvorakSymph1_NameStaff.ily
-    587    2053   17145 00-Common/DvorakSymph1_NameVoice.ily
+    587    2053   17149 00-Common/DvorakSymph1_NameVoice.ily
      67     185    1620 00-Common/DvorakSymph1_PaperConductors.ily
      67     192    1627 00-Common/DvorakSymph1_PaperParts.ily
     572    1786   13687 00-Common/DvorakSymph1_Shortcuts.ily
@@ -104,9 +104,9 @@
     229     744    3812 02-Mvt2/m02_v05_music_OboeII_C.ily
     229     700    3606 02-Mvt2/m02_v05_music_OboeII.ily
     238    1187    6127 02-Mvt2/m02_v07_music_ClarinettoI_C.ily
-    238    1079    5015 02-Mvt2/m02_v07_music_ClarinettoI.ily
+    238    1085    5046 02-Mvt2/m02_v07_music_ClarinettoI.ily
     238     978    4520 02-Mvt2/m02_v08_music_ClarinettoII_C.ily
-    238     942    4410 02-Mvt2/m02_v08_music_ClarinettoII.ily
+    242     947    4439 02-Mvt2/m02_v08_music_ClarinettoII.ily
     244    1223    6439 02-Mvt2/m02_v09_music_FagottoI_C.ily
     244    1094    5396 02-Mvt2/m02_v09_music_FagottoI.ily
     240    1045    4964 02-Mvt2/m02_v10_music_FagottoII_C.ily
@@ -184,9 +184,9 @@
     948    2566   11812 04-Mvt4/m04_v05_music_OboeII_C.ily
     936    2483   11369 04-Mvt4/m04_v05_music_OboeII.ily
     960    2818   14854 04-Mvt4/m04_v07_music_ClarinettoI_C.ily
-    952    2616   12562 04-Mvt4/m04_v07_music_ClarinettoI.ily
+    952    2628   12620 04-Mvt4/m04_v07_music_ClarinettoI.ily
     963    2677   12918 04-Mvt4/m04_v08_music_ClarinettoII_C.ily
-    963    2596   12477 04-Mvt4/m04_v08_music_ClarinettoII.ily
+    967    2617   12588 04-Mvt4/m04_v08_music_ClarinettoII.ily
     989    2736   13764 04-Mvt4/m04_v09_music_FagottoI_C.ily
     989    2590   11987 04-Mvt4/m04_v09_music_FagottoI.ily
     989    2521   11309 04-Mvt4/m04_v10_music_FagottoII_C.ily
@@ -217,4 +217,4 @@
    1012    3593   16062 04-Mvt4/m04_v24_music_Violoncello.ily
     998    3336   15192 04-Mvt4/m04_v25_music_Contrabasso_C.ily
     998    3297   14880 04-Mvt4/m04_v25_music_Contrabasso.ily
- 107903  358454 1807800 total
+ 107961  358646 1808901 total

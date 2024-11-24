@@ -28,8 +28,8 @@ musicClarinettoIMvtII = \relative c {
 % Bars 26 to 30
 	R2
 	R
-	R
-	R
+	\ni \mmrPos #4 R
+	\mmrPos #-4 R \no
 	f2\brack\p~
 % Bars 31 to 35
 	f8 r r4

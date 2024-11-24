@@ -18,13 +18,17 @@ musicClarinettoIIMvtII = \relative c {
 	bes\fp\fermata
 	a8\< bes\fermata\! bes\<[ ees16.\fermata a,32]\!
 	<< a2\fermata {s8\< s\! s\> s\!}>>
-	R2*17
+	R2*16
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2 \no
 % Bars 26 to 30
 	a,2->\brack\pp
 	R
@@ -231,7 +235,7 @@ musicClarinettoIIMvtII = \relative c {
 	bes'2\brack\p~
 	<< bes~ {s8\< s s s\!}>>
 % Bars 201 to 204
-	bes4(\> f8\!-. f-.
+	bes4\> f8\!-. f-.
 	f4~ f8 r
 	r16. ees'32\pp-.[ ees16.-. ees32-.] d8-. d-. 
 	<< d2\fermata {s8\< s\! s\> s\!}>> \fine

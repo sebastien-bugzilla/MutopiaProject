@@ -59,10 +59,14 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 41 to 45
 	
 % Bars 46 to 50
-	R2*6
-% Bars 51 to 55
+	R2*4
 	
-	r4 r32 d(\< e fis g a b cis\!
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 51 to 55
+	\mmrPos #-4 R \no
+	r4 \oneVoice r32 d(\< e fis g a b cis\!
 	d4)\f e8.-> a,16
 	a2
 	d4 e8.-> a16
@@ -513,12 +517,12 @@ musicClarinettoIIMvtIV = \relative c {
 	e,8 e e e
 % Bars 446 to 450
 	g r r4
-	R2*11
+	R2*9
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	
-	
+	\ni \clef bass \mmrPos #-4 R2
+	\mmrPos #-4 R \no \clef treble
 	e2->\brack\f~
 	e
 	a\fz~

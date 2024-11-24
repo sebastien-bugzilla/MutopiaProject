@@ -502,12 +502,12 @@ musicClarinettoIMvtIV = \relative c {
 	b,8 a g a
 % Bars 446 to 450
 	b r r4
-	R2*11
+	R2*9
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	
-	
+	\ni \clef bass \mmrPos #-4 R2
+	\mmrPos #-4 R \clef treble \no
 	g2->\brack\f~
 	g
 	e'\fz~
