@@ -180,15 +180,15 @@ musicFagottoIIMvtII = \relative c {
 	R2*2
 	
 	R2
-	R2*10
+	R2*9
 	
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 	
-	
-	r4 r8. e''16 \clef tenor
+	\ni \mmrPos #-4 R2 \no
+	\voiceTwo r4 \oneVoice r8. e''16 \clef tenor
 	e4.(\brack\p_\brackM\pocoapococresc f8)
 % Bars 166 to 170
 	f4(\< fis8 g)\!

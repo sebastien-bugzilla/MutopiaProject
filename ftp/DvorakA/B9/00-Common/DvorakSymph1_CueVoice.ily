@@ -409,28 +409,50 @@ cueVoiceClarinettoIIMvtIV = \relative c {
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #
 %###############################################################################
 cueVoiceFagottoIMvtI = \relative c {
-	
+	% no cueVoice
 }
 cueVoiceFagottoIMvtII = \relative c {
-	
+	s2*8
+	% bar 9
+	<>^\markup {Ob.I solo}
 }
 cueVoiceFagottoIMvtIII = \relative c {
-	
+	s16 s2*9
+	% bar 11
+	<>^\markup {Fag.II}
+	s2*127
+	% bar 138
+	<>^\markup {Archi}
 }
 cueVoiceFagottoIMvtIV = \relative c {
-	
+	s2*32
+	% bar 33
+	<>^\markup {Archi}
+	s2*414
+	% bar 447
+	<>^\markup {Archi}
 }
 cueVoiceFagottoIIMvtI = \relative c {
-	
+	% no cueVoice
 }
 cueVoiceFagottoIIMvtII = \relative c {
-	
+	s2*162
+	% bar 163 - 164
+	\voiceOne  ees'4(^\markup {Fag.I} d16 c bes! a)
+	a8( gis) s4 \oneVoice 
 }
 cueVoiceFagottoIIMvtIII = \relative c {
-	
+	s16 s2*136
+	% bar 138
+	<>^\markup {Archi}
 }
 cueVoiceFagottoIIMvtIV = \relative c {
-	
+	s2*32
+	% bar 33
+	<>^\markup {Archi}
+	s2*414
+	% bar 447
+	<>^\markup {Archi}
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   C O R N I                    #
