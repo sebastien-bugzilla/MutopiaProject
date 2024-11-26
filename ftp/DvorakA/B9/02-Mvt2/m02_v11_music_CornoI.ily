@@ -45,12 +45,16 @@ musicCornoIMvtII = \relative c {
 	r16 g8 g16 r\< g8 g16\!
 % Bars 36 to 40
 	r c8\> c16 c8\! r
-	R2*10
+	R2*8
 % Bars 41 to 45
 	
-% Bars 46 to 50
 	
-	r16 c8\pp c16 r c8 c16
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 46 to 50
+	\mmrPos #-4 R \no
+	r16 c!8\pp c16 r c8 c16
 	r cis8 cis16 r d8 d16
 	e4( d
 	cis d

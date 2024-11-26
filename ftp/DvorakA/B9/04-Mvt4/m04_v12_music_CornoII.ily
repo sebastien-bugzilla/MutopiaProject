@@ -307,11 +307,11 @@ musicCornoIIMvtIV = \relative c {
 	
 % Bars 271 to 275
 	
-	R2*7
+	R2*4
 % Bars 276 to 280
-	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	g,2\ff
 	g4 c
 % Bars 281 to 285
@@ -378,14 +378,14 @@ musicCornoIIMvtIV = \relative c {
 % Bars 341 to 345
 	
 	R2
-	R2*12
+	R2*8
 % Bars 346 to 350
 	
 % Bars 351 to 355
-	
-	
-	
-	
+	\ni \clef bass \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \clef treble \no
 	c8\brack\f r r4
 % Bars 356 to 360
 	r8. c16 c8 r
@@ -493,11 +493,15 @@ musicCornoIIMvtIV = \relative c {
 	f8 f f f
 % Bars 446 to 450
 	f r r4
-	R2*17
+	R2*11
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	
+	\ni \clef bass \mmrPos #6 R2
+	\mmrPos #6 R \clef treble \no
+	R2*4
 % Bars 461 to 465
 	
 	

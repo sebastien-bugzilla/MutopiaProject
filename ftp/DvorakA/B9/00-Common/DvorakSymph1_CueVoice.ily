@@ -458,34 +458,141 @@ cueVoiceFagottoIIMvtIV = \relative c {
 %#                    C U E   V O I C E   F O R   C O R N I                    #
 %###############################################################################
 cueVoiceCornoIMvtI = \relative c {
-	
+	s1*8 s2.*262
+	% bar 271 - 274
+	\transpose f c' {
+		\relative c {
+			\voiceOne g''4(^\markup {\column {\lower #1 "Fl. Ob." "Cl."}} c d
+			ees d c)
+			d2( ees4
+			f g f)
+		}
+	}
+	s2.*46
+	% bar 321 - 322
+	\transpose f c' {
+		\relative c {
+			g'''2^\markup {Viol.I} aes4~
+			aes a!-> b->
+		}
+	}
+	s2.*76 s2*20 s2.*41
+	% bar 460 - 463
+	des''2.->^\markup {Cor.III}
+	des->
+	des->
+	des->
 }
 cueVoiceCornoIMvtII = \relative c {
-	
+	s2*44
+	% bar 45 - 46
+	\transpose ees c {
+		\relative c {
+			\voiceOne g'''2~^\markup {Viol.I}
+			g4 f8. e!16 \oneVoice 
+		}
+	}
 }
 cueVoiceCornoIMvtIII = \relative c {
-	
+	s16 s2*136
+	% bar 138
+	<>^\markup {Archi}
 }
 cueVoiceCornoIMvtIV = \relative c {
-	
+	s2*32
+	% bar 33
+	<>^\markup {Archi}
+	s2*425
+	% bar 458 - 459
+	\voiceOne f8[(^\markup {Fag.I} e d) r16 c']
+	c4( b8) r \oneVoice 
 }
 cueVoiceCornoIIMvtI = \relative c {
-	
+	s1*8 s2.*262
+	% bar 271 - 274
+	\transpose f c' {
+		\relative c {
+			\voiceOne g''4(^\markup {\column {\lower #1 "Fl. Ob." "Cl."}} c d
+			ees d c)
+			d2( ees4
+			f g f)
+		}
+	}
+	s2.*46
+	% bar 321 - 322
+	\transpose f c' {
+		\relative c {
+			g'''2^\markup {Viol.I} aes4~
+			aes a!-> b->
+		}
+	}
+	s2.*76 s2*20 s2.*41
+	% bar 460 - 463
+	des''2.->^\markup {Cor.III}
+	des->
+	des->
+	des->
 }
 cueVoiceCornoIIMvtII = \relative c {
-	
+	s2*49
+	% bar 50 - 51
+	\voiceOne cis''4(^\markup {Cor.I} d
+	e8) r r4 \oneVoice 
 }
 cueVoiceCornoIIMvtIII = \relative c {
-	
+	s16 s2*136
+	% bar 138
+	<>^\markup {Archi}
 }
 cueVoiceCornoIIMvtIV = \relative c {
-	
+	s2*32
+	% bar 33
+	<>^\markup {Archi}
+	s2*243
+	% bar 276 - 278
+	e'8([^\markup {Tbne.I} d cis) r16 e]
+	e4( dis8) r
+	fis8[( e dis) r16 fis]
+	s2*72
+	% bar 351 - 354
+	\voiceOne ees4->^\markup {Fag.I} d->
+	d4. c8
+	c->[ bes bes-> a]
+	a4( g8) r \oneVoice 
+	s2*103
+	% bar 458 - 459
+	\stemUp f,8[(^\markup {Fag.II} e d) r16 c']-.
+	c4( b8) r \stemNeutral
 }
 cueVoiceCornoIIIMvtI = \relative c {
-	
+	s1*8 s2.*262
+	% bar 271 - 274
+	\transpose f c' {
+		\relative c {
+			\voiceOne g''4(^\markup {\column {\lower #1 "Fl. Ob." "Cl."}} c d
+			ees d c)
+			d2( ees4
+			f g f)
+		}
+	}
+	s2.*46
+	% bar 321 - 322
+	\transpose f c' {
+		\relative c {
+			g'''2^\markup {Viol.I} aes4~
+			aes a!-> b->
+		}
+	}
 }
 cueVoiceCornoIVMvtI = \relative c {
-	
+	s1*8 s2.*312
+	% bar 321 - 322
+	\transpose f c' {
+		\relative c {
+			g'''2^\markup {Viol.I} aes4~
+			aes a!-> b->
+		}
+	}
 }
 %###############################################################################
 %#                   C U E   V O I C E   F O R   T R O M B E                   #

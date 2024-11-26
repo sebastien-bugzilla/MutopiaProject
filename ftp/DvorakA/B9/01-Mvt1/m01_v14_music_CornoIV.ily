@@ -331,7 +331,7 @@ musicCornoIVMvtI = \relative c {
 	e4-> r r
 	f-> r r
 % Bars 301 to 305
-	R2.*22
+	R2.*20
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -339,8 +339,8 @@ musicCornoIVMvtI = \relative c {
 % Bars 316 to 320
 	
 % Bars 321 to 325
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	a,2->\f~ a8 a
 	f2->~ f8 f
 	a2->~ a8 a

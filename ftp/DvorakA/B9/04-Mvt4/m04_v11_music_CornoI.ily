@@ -486,11 +486,15 @@ musicCornoIMvtIV = \relative c {
 	f8 f f f
 % Bars 446 to 450
 	f r r4
-	R2*17
+	R2*11
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	
+	\ni \clef bass \mmrPos #-4 R2
+	\mmrPos #-4 R \clef treble \no
+	R2*4
 % Bars 461 to 465
 	
 	

@@ -290,9 +290,13 @@ musicCornoIIIMvtI = \relative c {
 		c2_\crescmarkup d4~
 		d\< c2
 		d4\! r r
-		R2.*7
+		R2.
 % Bars 271 to 275
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*2
 % Bars 276 to 280
 		
 		e2.\p(
@@ -331,7 +335,7 @@ musicCornoIIIMvtI = \relative c {
 	e4-> r r
 	f-> r r
 % Bars 301 to 305
-	R2.*22
+	R2.*20
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -339,8 +343,8 @@ musicCornoIIIMvtI = \relative c {
 % Bars 316 to 320
 	
 % Bars 321 to 325
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	a,2->\f~ a8 a
 	f2->~ f8 f
 	a2->~ a8 a

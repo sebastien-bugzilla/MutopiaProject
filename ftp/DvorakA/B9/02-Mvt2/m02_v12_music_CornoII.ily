@@ -50,12 +50,12 @@ musicCornoIIMvtII = \relative c {
 	
 % Bars 46 to 50
 	
-	R2*5
+	R2*3
 	
 	
-	
+	\ni \mmrPos #-4 R2
 % Bars 51 to 55
-	
+	\mmrPos #-4 R \no
 	r4 c32[\brack\p-. c-. c-. c-. c-. c-. c-. c]-. 
 	f4.->\fp r8
 	f4. r8
