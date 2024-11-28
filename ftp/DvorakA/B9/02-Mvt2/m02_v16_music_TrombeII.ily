@@ -15,7 +15,7 @@ musicTrombeIIMvtII = \relative c {
 	R\fermata
 	R\fermata
 % Bars 6 to 10
-	R2*47
+	R2*46
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -34,7 +34,7 @@ musicTrombeIIMvtII = \relative c {
 	
 % Bars 51 to 55
 	
-	
+	\ni \mmrPos #4 R2 \no
 	f8.(\brack\mf^\sole g16 a4)
 	f8.( g32 a bes4)
 	c8[(_\crescendo d e d])
@@ -42,13 +42,17 @@ musicTrombeIIMvtII = \relative c {
 	c[( bes a g])
 	a4.\p r8
 	a4. r8
-	R2*17
+	R2*10
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
-% Bars 71 to 75
 	
+	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
+% Bars 71 to 75
+	R2*5
 % Bars 76 to 80
 	bes4\brack\p\<( a8 ees')\!
 	d16\f d8 d16 r d8\> d16\!
@@ -83,13 +87,17 @@ musicTrombeIIMvtII = \relative c {
 	r d[-> c-> g->]
 % Bars 106 to 110
 	e'8.->_\brackM\dimin d16-. c8 r
-	R2*15
+	R2*13
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
-% Bars 121 to 125
 	
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 121 to 125
+	\mmrPos #-4 R \no
 	r8 r16 c,([\pp d c)] r8
 	R2*45
 % Bars 126 to 130

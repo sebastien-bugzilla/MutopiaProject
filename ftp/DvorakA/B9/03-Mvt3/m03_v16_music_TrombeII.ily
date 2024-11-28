@@ -19,7 +19,7 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	R2\fermata
-	R2*27
+	R2*25
 % Bars 11 to 15
 	
 	
@@ -49,9 +49,9 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	
-	
+	\ni \clef bass R2
 % Bars 36 to 40
-	
+	R \no \clef treble
 	e'4->\brack\mf_\crescmarkup e->
 	e8-. e-. e-. r
 	a\f r a16 a a a
@@ -168,7 +168,7 @@ musicTrombeIIMvtIII = \relative c {
 			}
 		}
 	}
-	R2*30
+	R2*28
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -180,8 +180,8 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	e'16\ff r r8 r4
 	R2*12
 % Bars 171 to 175
@@ -214,15 +214,15 @@ musicTrombeIIMvtIII = \relative c {
 	b!4..-> b16
 % Bars 201 to 205
 	d,\brack\ff r r8 r4
-	R2*17
+	R2*15
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
 % Bars 216 to 220
 	
-	
-	
+	\ni R2
+	R \no
 	r8 c4->\f c8->~
 	c r r4
 % Bars 221 to 225

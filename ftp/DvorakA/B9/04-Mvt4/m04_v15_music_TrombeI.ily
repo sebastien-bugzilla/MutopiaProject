@@ -32,16 +32,20 @@ musicTrombeIMvtIV = \relative c {
 % Bars 31 to 35
 	
 	R2\fermata
-	R2*20
+	R2*15
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
+	
+	\ni \clef bass \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 51 to 55
-	
-	
+	\mmrPos #-6 R \no \clef treble
+	R2
 	e'8\f r f4~
 	f8 r e4(
 	f8) r d4~
@@ -53,13 +57,16 @@ musicTrombeIMvtIV = \relative c {
 	c d->
 % Bars 61 to 65
 	c8\brack\pp r r4
-	R2*19
+	R2*15
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
+	\ni \mmrPos #6 R2
+	\mmrPos #-6 R \no
+	R2*2
 % Bars 81 to 85
 	g'2_\pcrescendo~
 	g~
@@ -99,7 +106,7 @@ musicTrombeIMvtIV = \relative c {
 % Bars 126 to 130
 	c4.. d16
 	d4 r
-	R2*21
+	R2*19
 % Bars 131 to 135
 	
 % Bars 136 to 140
@@ -108,8 +115,8 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 146 to 150
 	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	c4\brack\f c
 	c2
 % Bars 151 to 155
@@ -143,7 +150,7 @@ musicTrombeIMvtIV = \relative c {
 	d2->
 	c8 r r4
 % Bars 176 to 180
-	R2*63
+	R2*59
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -166,10 +173,14 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 231 to 235
 	
+	
+	
+	
+	\ni \mmrPos #4 R2
 % Bars 236 to 240
-	
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	e2\f
 	R
 % Bars 241 to 245
@@ -195,7 +206,7 @@ musicTrombeIMvtIV = \relative c {
 	f4-> e->
 	e4.. f16
 	f8 r r4
-	R2*19
+	R2*17
 % Bars 261 to 265
 	
 % Bars 266 to 270
@@ -204,8 +215,8 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 276 to 280
 	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	d2\ff
 	d4 e
 % Bars 281 to 285
@@ -225,7 +236,7 @@ musicTrombeIMvtIV = \relative c {
 	d4 d
 	d2 
 	d4 d
-	R2*40
+	R2*36
 % Bars 296 to 300
 	
 % Bars 301 to 305
@@ -241,9 +252,9 @@ musicTrombeIMvtIV = \relative c {
 % Bars 326 to 330
 	
 % Bars 331 to 335
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
+	R2*2
 	
 	f2\f
 % Bars 336 to 340
@@ -251,16 +262,16 @@ musicTrombeIMvtIV = \relative c {
 	f
 	f
 	e8 r r4
-	R2*15
+	R2*11
 % Bars 341 to 345
 	
 % Bars 346 to 350
 	
 % Bars 351 to 355
-	
-	
-	
-	
+	\ni \clef bass \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \clef treble
 	c8\brack\f r r4
 % Bars 356 to 360
 	r8. c16 c8 r
@@ -287,7 +298,7 @@ musicTrombeIMvtIV = \relative c {
 	e
 	f8 r r4
 % Bars 376 to 380
-	R2*34
+	R2*27
 % Bars 381 to 385
 	
 % Bars 386 to 390
@@ -298,6 +309,10 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 401 to 405
 	
+	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
+	R2*5
 % Bars 406 to 410
 	
 	
@@ -348,11 +363,15 @@ musicTrombeIMvtIV = \relative c {
 	f8 f f f
 % Bars 446 to 450
 	f r r4
-	R2*17
+	R2*9
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	
+	\ni \clef bass \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \clef treble
+	R2*4
 % Bars 461 to 465
 	
 	
@@ -385,7 +404,7 @@ musicTrombeIMvtIV = \relative c {
 	R2
 % Bars 486 to 490
 	c8 r c r
-	R2*25
+	R2*21
 % Bars 491 to 495
 	
 % Bars 496 to 500
@@ -394,8 +413,12 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 506 to 510
 	
-% Bars 511 to 515
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+% Bars 511 to 515
+	\mmrPos #4 R \no
 	c4\f-> c->
 	c4.. c16
 	c4 c
@@ -414,7 +437,7 @@ musicTrombeIMvtIV = \relative c {
 	c4.. d16
 % Bars 526 to 530
 	d4 r
-	R2*43
+	R2*39
 % Bars 531 to 535
 	
 % Bars 536 to 540
@@ -430,10 +453,10 @@ musicTrombeIMvtIV = \relative c {
 % Bars 561 to 565
 	
 % Bars 566 to 570
-	
-	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	c2\fz~
 % Bars 571 to 575
 	c
@@ -485,7 +508,7 @@ musicTrombeIMvtIV = \relative c {
 	g r g r
 % Bars 621 to 625
 	r4 g8 r
-	R2*57
+	R2*51
 % Bars 626 to 630
 	
 % Bars 631 to 635
@@ -506,9 +529,13 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 671 to 675
 	
+	\ni \clef bass \mmrPos #8 R2
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #8 R
 % Bars 676 to 680
-	
-	
+	\mmrPos #8 R \no \clef treble
+	R2 
 	e'2->\f
 	R
 	e->\f

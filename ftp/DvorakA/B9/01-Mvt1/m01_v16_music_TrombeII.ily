@@ -22,7 +22,7 @@ musicTrombeIIMvtI = \relative c {
 	
 % Bars 11 to 15
 	\repeat volta 2 {
-		R2.*55
+		R2.*50
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -42,7 +42,11 @@ musicTrombeIIMvtI = \relative c {
 % Bars 56 to 60
 	
 % Bars 61 to 65
-	
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R \no
+		R2.
 % Bars 66 to 70
 		c'2.->\f
 		R
@@ -59,23 +63,23 @@ musicTrombeIIMvtI = \relative c {
 		e r r
 		e r r
 % Bars 86 to 90
-		R2.*19
+		R2.*15
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
 % Bars 101 to 105
-		
-		
-		
-		
+		\ni \clef bass \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \clef treble \no
 		c'2.\brack\f~
 % Bars 106 to 110
 		c~
 		c~
 		c
 		c4 r r
-		R2.*35
+		R2.*33
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -91,8 +95,8 @@ musicTrombeIIMvtI = \relative c {
 % Bars 141 to 145
 		
 		
-		
-		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 		c,2.\f~
 % Bars 146 to 150
 		c4 r r
@@ -111,7 +115,7 @@ musicTrombeIIMvtI = \relative c {
 		c->
 		R
 		e->
-		R2.*29
+		R2.*21
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -121,7 +125,11 @@ musicTrombeIIMvtI = \relative c {
 % Bars 176 to 180
 	
 % Bars 181 to 185
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*4
 % Bars 186 to 190
 		
 		
@@ -179,7 +187,7 @@ musicTrombeIIMvtI = \relative c {
 % Bars 241 to 245
 		d4\f r r
 		e r r
-		R2.*40
+		R2.*36
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -193,10 +201,14 @@ musicTrombeIIMvtI = \relative c {
 % Bars 271 to 275
 	
 % Bars 276 to 280
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 281 to 285
-		
-		
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		g,,2.\ppp~
 		g~
 		g~
@@ -295,7 +307,7 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	\section
-	\time 3/4 R2.*49
+	\time 3/4 R2.*46
 % Bars 421 to 425
 	
 % Bars 426 to 430
@@ -314,9 +326,13 @@ musicTrombeIIMvtI = \relative c {
 	
 % Bars 461 to 465
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 466 to 470
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r4\brack\f c'2->\fz
 	r4 c2->\fz
 	r4 c2->\fz
@@ -387,7 +403,7 @@ musicTrombeIIMvtI = \relative c {
 	e r r
 	e r r
 	e r r
-	R2.*21
+	R2.*20
 % Bars 541 to 545
 	
 % Bars 546 to 550
@@ -398,7 +414,7 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	
-	
+	\ni \mmrPos #4 R2. \no
 	r4 e2->\brack\f
 % Bars 561 to 565
 	r4 e2->
