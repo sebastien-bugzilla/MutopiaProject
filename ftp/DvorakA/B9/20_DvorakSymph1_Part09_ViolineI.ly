@@ -43,7 +43,7 @@
 			"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 (The Bells of Zlonice)"
 		}
 		instrument = \markup {
-			"ViolineI"
+			"Violine I"
 		}
 	}
 	\score {
@@ -62,7 +62,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}

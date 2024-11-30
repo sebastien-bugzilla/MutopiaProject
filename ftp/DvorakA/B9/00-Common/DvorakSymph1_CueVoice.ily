@@ -1233,16 +1233,16 @@ cueVoiceTimpaniMvtIV = \relative c {
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #
 %###############################################################################
 cueVoiceViolinoIMvtI = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceViolinoIMvtII = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceViolinoIMvtIII = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceViolinoIMvtIV = \relative c {
-	
+	% no Cue Voice
 }
 %###############################################################################
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #
