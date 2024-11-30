@@ -19,7 +19,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	R2\fermata
-	R2*27
+	R2*25
 % Bars 11 to 15
 	
 	
@@ -49,9 +49,9 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	
-	
+	\ni \mmrPos #-6 R2
 % Bars 36 to 40
-	
+	\mmrPos #-6 R \no
 	ees4->\brack\mf_\crescmarkup d->
 	c8-. c-. g-. r
 	ees'8->\f d-> c-> r

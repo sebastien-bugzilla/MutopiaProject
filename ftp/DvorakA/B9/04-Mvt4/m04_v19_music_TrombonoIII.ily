@@ -28,13 +28,17 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 31 to 35
 	
 	R2\fermata
-	R2*19
+	R2*15
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
+	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R \no
+	R2*2
 % Bars 51 to 55
 	
 	<< g'2 {s8\brack\mf\< s s s\!}>>
@@ -113,14 +117,14 @@ musicTrombonoIIIMvtIV = \relative c {
 	R2
 	f4 r
 % Bars 136 to 140
-	R2*14
+	R2*13
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 	
 	
-	
+	\ni \clef treble \mmrPos #-8 R2 \no \clef bass
 	c''2->\f
 % Bars 151 to 155
 	e,4( cis
@@ -151,7 +155,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	c8) r b4(
 	c8) r a4(
 	g8) r r4
-	R2*31
+	R2*28
 % Bars 176 to 180
 	
 % Bars 181 to 185
@@ -164,6 +168,10 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 % Bars 201 to 205
 	
+	
+	\ni \clef treble \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R \clef bass \no
 % Bars 206 to 210
 	fis8_\pcrescendo r r4
 	R2
@@ -227,7 +235,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	%%%%%%%%%%%%%%%%
+	
 % Bars 271 to 275
 	dis2->\brack\f
 	dis4-> dis->
@@ -257,7 +265,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	d,4. r8 
 	b'4( g8.) a16-.
 	d,4. r8
-	R2*40
+	R2*36
 % Bars 296 to 300
 	
 % Bars 301 to 305
@@ -273,9 +281,9 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 326 to 330
 	
 % Bars 331 to 335
-	
-	
-	
+	\ni \clef treble \mmrPos #-4 R2
+	\mmrPos #-4 R \clef bass \no
+	R2*2
 	
 	d2->\f
 % Bars 336 to 340
@@ -316,7 +324,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	ges->
 	f8 r r4
 % Bars 376 to 380
-	R2*59
+	R2*43
 % Bars 381 to 385
 	
 % Bars 386 to 390
@@ -333,8 +341,14 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 % Bars 416 to 420
 	
-% Bars 421 to 425
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 421 to 425
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*12
 % Bars 426 to 430
 	
 % Bars 431 to 435
@@ -357,11 +371,15 @@ musicTrombonoIIIMvtIV = \relative c {
 	bes8 bes bes bes
 % Bars 446 to 450
 	f r r4
-	R2*17
+	R2*11
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
+	R2*4
 % Bars 461 to 465
 	
 	
@@ -535,7 +553,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	des r c r
 	r4 e8 r
 % Bars 621 to 625
-	R2*36
+	R2*32
 % Bars 626 to 630
 	
 % Bars 631 to 635
@@ -548,8 +566,12 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 % Bars 651 to 655
 	
-% Bars 656 to 660
 	
+	\ni \mmrPos #-4 \clef treble R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 656 to 660
+	\mmrPos #-4 R \clef bass \no
 	fis,8\mf r r4
 	R2
 	f!8 r r4

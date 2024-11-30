@@ -22,7 +22,7 @@ musicTrombonoIMvtI = \relative c {
 	
 % Bars 11 to 15
 	\repeat volta 2 {
-		R2.*50
+		R2.*46
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -40,7 +40,11 @@ musicTrombonoIMvtI = \relative c {
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	
+		
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R \no
 % Bars 61 to 65
 		bes2.->\f
 		c2->~ c8 aes
@@ -235,14 +239,18 @@ musicTrombonoIMvtI = \relative c {
 		ees4_\crescmarkup r r
 		R2.
 		f4\mf r r
-		R2.*13
+		R2.*9
 % Bars 271 to 275
 	
 % Bars 276 to 280
-	
+		
+		
+		
+		\ni \clef treble \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 281 to 285
-		
-		
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no \clef alto
 		d2.\brack\ppp~
 		d~
 		d~
@@ -391,7 +399,7 @@ musicTrombonoIMvtI = \relative c {
 % Bars 426 to 430
 	g
 	aes4 r r
-	R2.*33
+	R2.*32
 % Bars 431 to 435
 	
 % Bars 436 to 440
@@ -404,6 +412,10 @@ musicTrombonoIMvtI = \relative c {
 	
 % Bars 456 to 460
 	
+	
+	
+	
+	\ni \mmrPos #4 \clef bass R2. \clef alto \no
 % Bars 461 to 465
 	r4 bes'(\pp aes)
 	ges2.~\<

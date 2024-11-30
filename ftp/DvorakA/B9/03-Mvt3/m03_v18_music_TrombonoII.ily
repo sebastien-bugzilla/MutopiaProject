@@ -19,7 +19,7 @@ musicTrombonoIIMvtIII = \relative c {
 	
 	
 	R2\fermata
-	R2*27
+	R2*25
 % Bars 11 to 15
 	
 	
@@ -49,9 +49,9 @@ musicTrombonoIIMvtIII = \relative c {
 	
 	
 	
-	
+	\ni \clef bass \mmrPos #-6 R2
 % Bars 36 to 40
-	
+	\mmrPos #-6 R \no \clef tenor
 	c'4->\brack\mf_\crescmarkup b->
 	c8-. c-. b-. r
 	c4.->\f r8

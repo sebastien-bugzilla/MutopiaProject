@@ -263,14 +263,18 @@ musicTrombonoIIMvtI = \relative c {
 		c4_\crescmarkup r r
 		R2.
 		aes4\mf r r
-		R2.*13
+		R2.*9
 % Bars 271 to 275
 	
 % Bars 276 to 280
-	
+		
+		
+		
+		\ni \clef treble \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 281 to 285
-		
-		
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no \clef tenor
 		bes2.\brack\ppp~
 		bes~
 		bes~
@@ -413,7 +417,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 	
 	\section
-	\time 3/4 R2.*42
+	\time 3/4 R2.*41
 % Bars 421 to 425
 	
 % Bars 426 to 430
@@ -430,6 +434,10 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 456 to 460
 	
+	
+	
+	
+	\ni \clef bass \mmrPos #4 R2. \no \clef tenor
 % Bars 461 to 465
 	r4 des(\pp ces)
 	bes2.~\<

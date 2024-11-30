@@ -168,7 +168,7 @@ musicTrombonoIIIMvtI = \relative c {
 		bes c bes)
 		aes r r
 % Bars 166 to 170
-		R2.*41
+		R2.*35
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -182,7 +182,11 @@ musicTrombonoIIIMvtI = \relative c {
 % Bars 196 to 200
 	
 % Bars 201 to 205
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*2
 % Bars 206 to 210
 		
 		g4\f r r
@@ -244,14 +248,18 @@ musicTrombonoIIIMvtI = \relative c {
 		aes4_\crescmarkup r r
 		R2.
 		des4\mf r r
-		R2.*13
+		R2.*9
 % Bars 271 to 275
 	
 % Bars 276 to 280
-	
+		
+		
+		
+		\ni \clef treble \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 281 to 285
-		
-		
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no \clef bass
 		d2.\ppp~
 		d~
 		d~
