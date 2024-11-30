@@ -17,7 +17,7 @@
     145     384    3708 20_DvorakSymph1_Part13_Contrabasso.ly
       7      13      84 display.ly
     104     399    2159 test.ly
-   1237    3794   23414 00-Common/DvorakSymph1_CueVoice.ily
+   1306    4050   24852 00-Common/DvorakSymph1_CueVoice.ily
     382    2295   17387 00-Common/DvorakSymph1_Format_Cond_Mvt01.ily
     170     869    7475 00-Common/DvorakSymph1_Format_Cond_Mvt02.ily
     241    1375   10959 00-Common/DvorakSymph1_Format_Cond_Mvt03.ily
@@ -120,7 +120,7 @@
     146     480    2267 02-Mvt2/m02_v16_music_TrombeII_C.ily
     152     500    2404 02-Mvt2/m02_v16_music_TrombeII.ily
     144     487    2233 02-Mvt2/m02_v20_music_Timpani_C.ily
-    142     485    2211 02-Mvt2/m02_v20_music_Timpani.ily
+    146     499    2280 02-Mvt2/m02_v20_music_Timpani.ily
     253    1525    7447 02-Mvt2/m02_v21_music_ViolinoI_C.ily
     253    1450    6940 02-Mvt2/m02_v21_music_ViolinoI.ily
     261    1579    7629 02-Mvt2/m02_v22_music_ViolinoII_C.ily
@@ -162,7 +162,7 @@
     427    1021    5284 03-Mvt3/m03_v19_music_TrombonoIII_C.ily
     427    1022    5266 03-Mvt3/m03_v19_music_TrombonoIII.ily
     397     901    4093 03-Mvt3/m03_v20_music_Timpani_C.ily
-    397     900    4085 03-Mvt3/m03_v20_music_Timpani.ily
+    397     915    4157 03-Mvt3/m03_v20_music_Timpani.ily
     477    2316   11737 03-Mvt3/m03_v21_music_ViolinoI_C.ily
     477    2288   11565 03-Mvt3/m03_v21_music_ViolinoI.ily
     499    2457   12071 03-Mvt3/m03_v22_music_ViolinoII_C.ily
@@ -206,7 +206,7 @@
     743    1855    8266 04-Mvt4/m04_v19_music_TrombonoIII_C.ily
     765    1934    8652 04-Mvt4/m04_v19_music_TrombonoIII.ily
     687    1717    6917 04-Mvt4/m04_v20_music_Timpani_C.ily
-    687    1718    6913 04-Mvt4/m04_v20_music_Timpani.ily
+    709    1836    7459 04-Mvt4/m04_v20_music_Timpani.ily
    1000    4599   18369 04-Mvt4/m04_v21_music_ViolinoI_C.ily
    1000    4525   17818 04-Mvt4/m04_v21_music_ViolinoI.ily
    1000    4487   18013 04-Mvt4/m04_v22_music_ViolinoII_C.ily
@@ -217,4 +217,4 @@
    1012    3593   16062 04-Mvt4/m04_v24_music_Violoncello.ily
     998    3336   15192 04-Mvt4/m04_v25_music_Contrabasso_C.ily
     998    3297   14880 04-Mvt4/m04_v25_music_Contrabasso.ily
- 108777  361701 1825222 total
+ 108872  362104 1827347 total

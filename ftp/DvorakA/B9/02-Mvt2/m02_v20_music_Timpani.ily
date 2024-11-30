@@ -32,7 +32,7 @@ musicTimpaniMvtII = \relative c {
 	ees8 r r ees32 ees ees ees
 	ees8 r r ees32 ees ees ees
 	ees8 r r4
-	R2*19
+	R2*18
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -41,7 +41,7 @@ musicTimpaniMvtII = \relative c {
 	
 % Bars 51 to 55
 	
-	
+	\ni \mmrPos #-4 R2 \no
 	c16\mf r c r c r c r
 	R2*2
 	
@@ -50,13 +50,17 @@ musicTimpaniMvtII = \relative c {
 	c8\pp[ c c c]
 	c[ c c c]
 	c r r4
-	R2*23
+	R2*9
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
-% Bars 71 to 75
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
+% Bars 71 to 75
+	R2*12
 % Bars 76 to 80
 	
 % Bars 81 to 85

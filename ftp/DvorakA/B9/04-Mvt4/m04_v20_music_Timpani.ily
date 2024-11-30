@@ -62,7 +62,7 @@ musicTimpaniMvtIV = \relative c {
 	g4 r
 	c8[ c g c]
 	g r r4
-	R2*25
+	R2*23
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -73,8 +73,8 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 76 to 80
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	g2:16_\ppocoapococrescendo
 	g:
 % Bars 81 to 85
@@ -113,7 +113,7 @@ musicTimpaniMvtIV = \relative c {
 	c2:16
 % Bars 126 to 130
 	g4 c
-	R2*22
+	R2*20
 % Bars 131 to 135
 	
 % Bars 136 to 140
@@ -122,8 +122,8 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 146 to 150
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	c4\f c
 	c2:16
 % Bars 151 to 155
@@ -157,7 +157,7 @@ musicTimpaniMvtIV = \relative c {
 	g2:16
 	c8 r r4
 % Bars 176 to 180
-	R2*43
+	R2*35
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -171,7 +171,10 @@ musicTimpaniMvtIV = \relative c {
 % Bars 206 to 210
 	
 % Bars 211 to 215
-	
+	\ni \mmrPos #-4 R2 \no
+	R2
+	\ni \mmrPos #-4 R2 \no
+	R2*5
 % Bars 216 to 220
 	
 	
@@ -263,7 +266,7 @@ musicTimpaniMvtIV = \relative c {
 	b2:16\p
 	b:
 % Bars 301 to 305
-	R2*54
+	R2*50
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -283,10 +286,10 @@ musicTimpaniMvtIV = \relative c {
 % Bars 346 to 350
 	
 % Bars 351 to 355
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r4 c8\brack\f r
 % Bars 356 to 360
 	R2
@@ -304,7 +307,7 @@ musicTimpaniMvtIV = \relative c {
 	g16 g g g  g g g g
 	g8 r r4
 % Bars 371 to 375
-	R2*40
+	R2*32
 % Bars 376 to 380
 	
 % Bars 381 to 385
@@ -317,6 +320,10 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 401 to 405
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
+	R2*6
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -363,11 +370,15 @@ musicTimpaniMvtIV = \relative c {
 	c8 c c c
 % Bars 446 to 450
 	c r r4
-	R2*17
+	R2*9
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*4
 % Bars 461 to 465
 	
 	
@@ -396,7 +407,7 @@ musicTimpaniMvtIV = \relative c {
 	g g g g  g g g g
 	g8 r r4
 	r g8\fz r\fermata
-	R2*28
+	R2*24
 % Bars 486 to 490
 	
 % Bars 491 to 495
@@ -407,8 +418,12 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 506 to 510
 	
-% Bars 511 to 515
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+% Bars 511 to 515
+	\mmrPos #4 R \no
 	c4\f c
 	c2:16
 	c4 c
@@ -459,7 +474,7 @@ musicTimpaniMvtIV = \relative c {
 	c:
 % Bars 556 to 560
 	c8 r r4
-	R2*33
+	R2*25
 % Bars 561 to 565
 	
 % Bars 566 to 570
@@ -470,8 +485,12 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 581 to 585
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 586 to 590
-	
+	R2*4
 	
 	
 	
@@ -479,7 +498,7 @@ musicTimpaniMvtIV = \relative c {
 % Bars 591 to 595
 	R2
 	g8 r r4
-	R2*40
+	R2*29
 % Bars 596 to 600
 	
 % Bars 601 to 605
@@ -492,6 +511,9 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 621 to 625
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
+	R2*9
 % Bars 626 to 630
 	
 % Bars 631 to 635
@@ -511,7 +533,7 @@ musicTimpaniMvtIV = \relative c {
 	g:
 	g:
 	g8 r r4
-	R2*60
+	R2*56
 % Bars 646 to 650
 	
 % Bars 651 to 655
@@ -535,10 +557,10 @@ musicTimpaniMvtIV = \relative c {
 % Bars 696 to 700
 	
 % Bars 701 to 705
-	
-	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	c4->\f c->
 % Bars 706 to 710
 	c2:16->

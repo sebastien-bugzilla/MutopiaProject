@@ -182,7 +182,7 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	bes16\ff r r8 r4
-	R2*36
+	R2*33
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -197,9 +197,9 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 201 to 205
 	
-	
-	
-	
+	\ni \clef treble \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \clef bass
 	bes2:32\pp
 % Bars 206 to 210
 	bes:
