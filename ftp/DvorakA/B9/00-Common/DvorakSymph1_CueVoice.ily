@@ -1278,16 +1278,16 @@ cueVoiceViolaMvtIV = \relative c {
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #
 %###############################################################################
 cueVoiceVioloncelloMvtI = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceVioloncelloMvtII = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceVioloncelloMvtIII = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceVioloncelloMvtIV = \relative c {
-	
+	% no Cue Voice
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   C O N T R A B A S S O              #
