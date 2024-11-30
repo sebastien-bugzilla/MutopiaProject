@@ -24,6 +24,9 @@ tempiMvtII = {
 	s2*158
 	% bar 159
 	\tempo "stringendo"
+	s2*10
+	% bar 169
+	\tempo "in tempo"
 }
 tempiMvtIII = {
 	\tempo "Allegretto"
@@ -110,6 +113,16 @@ tempiPartMvtII = {
 		trombeII trombonoI trombonoII trombonoIII timpani violinoI violinoII
 		viola violoncello contrabasso) {
 		\tempo "stringendo"
+	}
+	s2*10
+	%%%%%%%%%%%%%%%%%%%%%%
+	% bar 169
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoInglese clarinettoI
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI
+		trombeII trombonoI trombonoII trombonoIII timpani violinoI violinoII
+		viola violoncello contrabasso) {
+		\tempo "in tempo"
 	}
 }
 tempiPartMvtIII = {

@@ -17,7 +17,7 @@
     145     384    3708 20_DvorakSymph1_Part13_Contrabasso.ly
       7      13      84 display.ly
     104     399    2159 test.ly
-   1306    4066   24908 00-Common/DvorakSymph1_CueVoice.ily
+   1306    4082   24964 00-Common/DvorakSymph1_CueVoice.ily
     382    2295   17387 00-Common/DvorakSymph1_Format_Cond_Mvt01.ily
     170     869    7475 00-Common/DvorakSymph1_Format_Cond_Mvt02.ily
     241    1375   10959 00-Common/DvorakSymph1_Format_Cond_Mvt03.ily
@@ -45,7 +45,7 @@
      67     185    1620 00-Common/DvorakSymph1_PaperConductors.ily
      67     192    1627 00-Common/DvorakSymph1_PaperParts.ily
     572    1786   13687 00-Common/DvorakSymph1_Shortcuts.ily
-    170     623    5461 00-Common/DvorakSymph1_Tempi.ily
+    183     667    5839 00-Common/DvorakSymph1_Tempi.ily
      45     251    1383 00-Common/DvorakSymph1_timeMvt.ily
     770    2486   12821 01-Mvt1/m01_v02_music_FlautoI_C.ily
     778    2320   11440 01-Mvt1/m01_v02_music_FlautoI.ily
@@ -217,4 +217,4 @@
    1012    3593   16062 04-Mvt4/m04_v24_music_Violoncello.ily
     998    3336   15192 04-Mvt4/m04_v25_music_Contrabasso_C.ily
     998    3297   14880 04-Mvt4/m04_v25_music_Contrabasso.ily
- 108872  362121 1827404 total
+ 108885  362181 1827838 total
