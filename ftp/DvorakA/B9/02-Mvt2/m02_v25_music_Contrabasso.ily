@@ -184,7 +184,7 @@ musicContrabassoMvtII = \relative c {
 	
 	
 	
-	R2*15
+	R2*14
 % Bars 151 to 155
 	
 % Bars 156 to 160
@@ -193,7 +193,7 @@ musicContrabassoMvtII = \relative c {
 	
 	
 	
-	
+	\ni \mmrPos #-6 R2 \no
 	gis,,16(_\crescmarkup a c e) gis,( a) r a
 % Bars 166 to 170
 	ais( b d g) ais,( b) r b-.

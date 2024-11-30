@@ -22,10 +22,13 @@ nameStaffIIIMvtI = {
 nameStaffIVMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetti" "I. II. in B"
+			\lower #1 "Clarinetti" 
+			\concat {\general-align #Y #CENTER { "I. II. in B" \tiny \flat } }
 		}
 	}
-	\set Staff.shortInstrumentName = "Cl. in B"
+	\set Staff.shortInstrumentName = \markup {
+		\concat { \general-align #Y #CENTER { "Cl. in B" \tiny \flat } }
+	}
 	\set Staff.midiInstrument = #""
 }
 nameStaffVMvtI = {
@@ -46,10 +49,14 @@ nameStaffVIMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffVIIMvtI = {
-	\set Staff.instrumentName = "III. IV. in Es"
+	\set Staff.instrumentName = \markup {
+		\concat { \general-align #Y #CENTER { "III. IV. in E" \tiny \flat }}
+	}
 	\set Staff.shortInstrumentName = \markup {
 		\line {
-			\hspace #5 \lower #1.5 "in Es"
+			\hspace #5 \lower #1.5 \concat { 
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
 			\center-column {
 				"III." "IV."
 			}
@@ -60,10 +67,13 @@ nameStaffVIIMvtI = {
 nameStaffVIIIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Trombe" "I. II. in Es"
+			\lower #1 "Trombe" 
+			\concat { \general-align #Y #CENTER { "I. II. in E" \tiny \flat }}
 		}
 	}
-	\set Staff.shortInstrumentName = "Tr. in Es"
+	\set Staff.shortInstrumentName = \markup {
+		\concat { \general-align #Y #CENTER { "Tr. in E" \tiny \flat }}
+	}
 	\set Staff.midiInstrument = #""
 }
 nameStaffIXMvtI = {
@@ -84,7 +94,8 @@ nameStaffXIMvtI = {
 nameStaffXIIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in C G Es"
+			\lower #1 "Timpani" 
+			\concat { \general-align #Y #CENTER {"in C, G, E" \tiny \flat }}
 		}
 	}
 	\set Staff.shortInstrumentName = "Timp."
@@ -177,7 +188,8 @@ nameStaffVIIMvtII = {
 nameStaffVIIIMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in Es C G"
+			\lower #1 "Timpani" 
+			\concat { \general-align #Y #CENTER { "in E" \tiny \flat ", C, G" }}
 		}
 	}
 	\set Staff.shortInstrumentName = "Timp."

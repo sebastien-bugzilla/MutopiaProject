@@ -1293,14 +1293,16 @@ cueVoiceVioloncelloMvtIV = \relative c {
 %#              C U E   V O I C E   F O R   C O N T R A B A S S O              #
 %###############################################################################
 cueVoiceContrabassoMvtI = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceContrabassoMvtII = \relative c {
-	
+	s2*163
+	% bar 164
+	\voiceOne e4^\markup {Vcl.} gis, \oneVoice 
 }
 cueVoiceContrabassoMvtIII = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceContrabassoMvtIV = \relative c {
-	
+	% no Cue Voice
 }
