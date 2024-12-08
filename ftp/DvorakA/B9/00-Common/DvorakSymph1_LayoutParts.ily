@@ -21,6 +21,7 @@
 %		\override TrillSpanner.bound-details.right.padding = #1
 		\override Arpeggio.padding = #0.25
 		\override TupletNumber.avoid-slur = #'ignore
+		\override Beam.damping = #3
 		
 %		\override NoteHead.transparent = ##t
 %		\override Stem.transparent = ##t
@@ -49,17 +50,20 @@
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 		\override CueClef.font-size = #-1 
 		\override CueEndClef.font-size = #-1 
+		\override MeasureCounter.font-size = #-3
 		
 %		\override StaffSymbol.transparent = ##t
+%		\override LedgerLineSpanner.transparent = ##t
 	}
 	\context {
 		\Score
+		barNumberVisibility = #first-bar-number-invisible-save-broken-bars
 %		scriptDefinitions = #my-script-alist
-		\override RehearsalMark.font-size = #4
-		\override RehearsalMark.extra-spacing-width = #'(-0.1 . 0.1)
-		\override RehearsalMark.extra-spacing-height = #'(-10 . 10)
-		\override RehearsalMark.outside-staff-priority = ##f
-		\override RehearsalMark.font-family = #'sans
+%		\override RehearsalMark.font-size = #4
+%		\override RehearsalMark.extra-spacing-width = #'(-0.1 . 0.1)
+%		\override RehearsalMark.extra-spacing-height = #'(-10 . 10)
+%		\override RehearsalMark.outside-staff-priority = ##f
+%		\override RehearsalMark.font-family = #'sans
 		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f

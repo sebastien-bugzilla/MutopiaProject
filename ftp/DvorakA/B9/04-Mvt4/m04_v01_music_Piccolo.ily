@@ -21,7 +21,7 @@ musicPiccoloMvtIV = \relative c {
 	a4\fermata r
 	R2
 % Bars 11 to 15
-	R\fermata
+	\once \ni R\fermata
 	R2*20
 % Bars 16 to 20
 	
@@ -31,7 +31,7 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*12
 % Bars 36 to 40
 	
@@ -355,7 +355,7 @@ musicPiccoloMvtIV = \relative c {
 % Bars 516 to 520
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	e'2\ff~
+	\dynEO #'(0 . 2) e'2\ff~
 	e4.. c16
 	c2~
 % Bars 521 to 525
@@ -526,7 +526,7 @@ musicPiccoloMvtIV = \relative c {
 	a'4( g) fis1->
 % Bars 771 to 775
 	g1.->
-	\tuplet 3/2 2 {f4-.\brack\ff r f-. ges-. r ges-. f-. r f-.
+	\tuplet 3/2 2 {f!4-.\brack\ff r f-. ges-. r ges-. f-. r f-.
 	e-. r e-. fis-. r fis-. e-. r e-.
 	ees-. r ees-. f!-. r f-. ees-. r ees-.}
 	d2-> c-> b->
@@ -584,5 +584,5 @@ musicPiccoloMvtIV = \relative c {
 % Bars 826 to 830
 	
 % Bar 831
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

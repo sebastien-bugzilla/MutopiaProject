@@ -13,36 +13,20 @@ musicFlautoIIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 6 to 10
 	R2*3
 	
 	
-	R2\fermata
-	R2*8
+	\once \ni R2\fermata
+	R2*25
 % Bars 11 to 15
-	
-	
-	
-	
 	
 % Bars 16 to 20
 	
-	
-	R2*8
-	
-	
 % Bars 21 to 25
 	
-	
-	
-	
-	
 % Bars 26 to 30
-	R2*2
-	
-	R2
-	R2*6
 	
 % Bars 31 to 35
 	
@@ -58,7 +42,7 @@ musicFlautoIIMvtIII = \relative c {
 	c-. c-. f-. r
 % Bars 41 to 45
 	c-.\mf r r4
-	b8-.\p_\dimin r r4
+	b8-.\p-\offset X-offset 2 _\dimin r r4
 	bes!8-. r r4
 	a8-. r r4
 	R2*2
@@ -73,7 +57,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	des'2->(\brack\f_\dimin(
+	d'2->(\brack\f-\offset X-offset 3 _\dimin
 % Bars 56 to 60
 	c4\> b\!)
 	c8\f-. b-. c-. r
@@ -129,16 +113,12 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 % Bars 101 to 105
-	R2\fermata
+	\once \ni R2\fermata
 	\repeat volta 2 {
-		R2*12
+		\tempoXoffset #-2 R2*16
 % Bars 106 to 110
 	
 % Bars 111 to 115
-		
-		
-		
-		R2*4
 		
 % Bars 116 to 120
 		
@@ -190,10 +170,10 @@ musicFlautoIIMvtIII = \relative c {
 	ees8( g4\< ees'8)
 	c4(\! bes8\> a)\!
 	g4->( f8) r
-	aes2(\p
+	aes!2(\p
 % Bars 161 to 165
 	g->)
-	<< aes2( {s4 s_\crescendo }>>
+	aes2(-\offset X-offset -1.5 _\crescmarkup
 	<< bes2)~ {s8\< s s s\! }>> 
 	bes8\brack\mf r r4
 	R2*3
@@ -265,45 +245,29 @@ musicFlautoIIMvtIII = \relative c {
 	R2
 % Bars 236 to 240
 	r4 g,8-.\pp r
-	g-. r g-. r16 \section r16 
+	g-. r g-. r16 \section \break r16 
 	R2*3
 	
 	
 % Bars 241 to 245
-	R2\fermata
+	\once \ni R2\fermata
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 246 to 250
-	R2*8
+	R2*25
 	
 	
 	
 	
 % Bars 251 to 255
 	
-	
-	
-	R2*8
-	
 % Bars 256 to 260
-	
-	
-	
-	
 	
 % Bars 261 to 265
 	
-	R2*2
-	
-	R2
-	R2*6
 % Bars 266 to 270
-	
-	
-	
-	
 	
 % Bars 271 to 275
 	g4->\mf g->
@@ -314,7 +278,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 276 to 280
 	c-. c-. f-. r
 	c8-.\mf r r4
-	b8-.\p_\dimin r r4
+	b8-._\pdimin r r4
 	bes!8-. r r4
 	a8-. r r4
 % Bars 281 to 285
@@ -330,7 +294,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 % Bars 291 to 295
-	d'2->\brack\f_\dimin(
+	d'2->-\offset X-offset -2 \brack\f-\offset X-offset 1 _\dimin(
 	c4\> b)\!
 	c8-.\f b-. c-. r
 	ees,-. f-. g-. r
@@ -364,7 +328,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	aes8-.\brack\f aes-. aes8.-> aes16
+	\dynEO #'(0 . -8) aes8-.^\brack\f aes-. aes8.-> aes16
 % Bars 321 to 325
 	des8-. des-. des8.-> des16
 	c16-. aes'-. g( aes) ges-. a,-. c( bes)
@@ -438,5 +402,5 @@ musicFlautoIIMvtIII = \relative c {
 	c2~
 	c8 f-. g8.\p c,16-.
 % Bar 381
-	c8 r r4 \fine
+	c8 r r4 \markNormalSizeFermata \fine
 }

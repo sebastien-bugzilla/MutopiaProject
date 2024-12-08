@@ -21,7 +21,7 @@ musicFlautoIMvtIV = \relative c {
 	a4\fermata r
 	R2
 % Bars 11 to 15
-	<< b'2\fermata {s8\> s s s\!}>>
+	<< \once \ni b'2\fermata {s8\> s s s\!}>>
 	R2*20
 % Bars 16 to 20
 	
@@ -31,7 +31,7 @@ musicFlautoIMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*4
 	
 	
@@ -81,7 +81,7 @@ musicFlautoIMvtIV = \relative c {
 	e~
 % Bars 76 to 80
 	e
-	cis4(\p_\pocoapococrescendo e
+	cis4(_\ppocoapococrescendo e
 	d cis)
 	fis( e
 	cis a')
@@ -295,7 +295,7 @@ musicFlautoIMvtIV = \relative c {
 	
 	
 	
-	d4(\ff e8.) d16-.
+	d4(-\offset X-offset -2 \ff e8.) d16-.
 	d4( c8) r
 % Bars 281 to 285
 	b4( c8.) b16-.
@@ -411,7 +411,7 @@ musicFlautoIMvtIV = \relative c {
 % Bars 401 to 405
 	f des~
 	des2
-	b!4..\f b16
+	\startMeasureCount b!4..\f b16
 	b4.. b16
 	b4.. b16
 % Bars 406 to 410
@@ -419,7 +419,7 @@ musicFlautoIMvtIV = \relative c {
 	b4.. b16
 	b4.. b16
 	b4.. b16
-	b4.. b16
+	b4.. b16 \stopMeasureCount
 % Bars 411 to 415
 	c8 r r4
 	R2*7

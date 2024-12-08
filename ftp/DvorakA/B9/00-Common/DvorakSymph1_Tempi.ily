@@ -74,7 +74,9 @@ tempiPartMvtI = {
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI
 		trombeII trombonoI trombonoII trombonoIII timpani violinoI violinoII
 		viola violoncello contrabasso) {
-		\tempo "tranquillo"
+		\tempo \markup {
+			\normal-weight \italic "tranquillo"
+		}
 	}
 	s2.*129 s2
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -84,7 +86,9 @@ tempiPartMvtI = {
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI
 		trombeII trombonoI trombonoII trombonoIII timpani violinoI violinoII
 		viola violoncello contrabasso) {
-		\tempo "ritard."
+		\tempo \markup {
+			\normal-weight \italic "ritard."
+		}
 	}
 	s4 s2.
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -94,7 +98,9 @@ tempiPartMvtI = {
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI
 		trombeII trombonoI trombonoII trombonoIII timpani violinoI violinoII
 		viola violoncello contrabasso) {
-		\tempo "a tempo"
+		\tempo \markup {
+			\normal-weight \italic "a tempo"
+		}
 	}
 }
 tempiPartMvtII = {
@@ -112,7 +118,9 @@ tempiPartMvtII = {
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI
 		trombeII trombonoI trombonoII trombonoIII timpani violinoI violinoII
 		viola violoncello contrabasso) {
-		\tempo "stringendo"
+		\tempo \markup {
+			\normal-weight \italic "stringendo"
+		}
 	}
 	s2*10
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -122,7 +130,9 @@ tempiPartMvtII = {
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI
 		trombeII trombonoI trombonoII trombonoIII timpani violinoI violinoII
 		viola violoncello contrabasso) {
-		\tempo "in tempo"
+		\tempo \markup {
+			\normal-weight \italic "in tempo"
+		}
 	}
 }
 tempiPartMvtIII = {
@@ -140,7 +150,9 @@ tempiPartMvtIII = {
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI
 		trombeII trombonoI trombonoII trombonoIII timpani violinoI violinoII
 		viola violoncello contrabasso) {
-		\tempo "rit."
+		\tempo \markup {
+			\normal-weight \italic "rit."
+		}
 	}
 	s4 s2
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -150,7 +162,9 @@ tempiPartMvtIII = {
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI
 		trombeII trombonoI trombonoII trombonoIII timpani violinoI violinoII
 		viola violoncello contrabasso) {
-		\tempo "in tempo"
+		\tempo \markup {
+			\normal-weight \italic "in tempo"
+		}
 	}
 	s2*133
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -160,7 +174,9 @@ tempiPartMvtIII = {
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI
 		trombeII trombonoI trombonoII trombonoIII timpani violinoI violinoII
 		viola violoncello contrabasso) {
-		\tempo "calando"
+		\tempo \markup {
+			\normal-weight \italic "calando"
+		}
 	}
 }
 tempiPartMvtIV = {

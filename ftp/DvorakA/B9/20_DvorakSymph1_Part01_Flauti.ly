@@ -24,10 +24,13 @@
 \include "./00-Common/DvorakSymph1_Format_Part01_Flauti.ily"
 \include "./00-Common/DvorakSymph1_CueVoice.ily"
 \include "./00-Common/DvorakSymph1_Tempi.ily"
+\include "./01-Mvt1/m01_v01_music_Piccolo.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoI.ily"
 \include "./01-Mvt1/m01_v03_music_FlautoII.ily"
+\include "./02-Mvt2/m02_v01_music_Piccolo.ily"
 \include "./02-Mvt2/m02_v02_music_FlautoI.ily"
 \include "./02-Mvt2/m02_v03_music_FlautoII.ily"
+\include "./03-Mvt3/m03_v01_music_Piccolo.ily"
 \include "./03-Mvt3/m03_v02_music_FlautoI.ily"
 \include "./03-Mvt3/m03_v03_music_FlautoII.ily"
 \include "./04-Mvt4/m04_v01_music_Piccolo.ily"
@@ -45,17 +48,29 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 (The Bells of Zlonice)"
+			\concat {
+				"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 " 
+				\italic { "\"" "The Bells of Zlonice" "\"" }
+				" — Flauti"
+			}
 		}
 		instrument = \markup {
 			"Flauti"
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtI
-%			}
+			\new Voice {
+				\formatFlautoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtI
 			}
@@ -77,9 +92,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtII
-%			}
+			\new Voice {
+				\formatFlautoIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtII
 			}
@@ -101,9 +116,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtIII
-%			}
+			\new Voice {
+				\formatFlautoIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtIII
 			}
@@ -115,7 +130,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -125,9 +140,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtIV
-%			}
+			\new Voice {
+				\formatFlautoIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtIV
 			}
@@ -147,11 +162,19 @@
 		\layout {
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIIMvtI
-%			}
+			\new Voice {
+				\formatFlautoIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtI
 			}
@@ -173,9 +196,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIIMvtII
-%			}
+			\new Voice {
+				\formatFlautoIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtII
 			}
@@ -189,7 +212,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #0.8 \bold 2.
 			}
 		}
 		\layout {
@@ -197,9 +220,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIIMvtIII
-%			}
+			\new Voice {
+				\formatFlautoIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtIII
 			}
@@ -213,7 +236,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.3 \bold 3.
 			}
 		}
 		\layout {
@@ -221,9 +244,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIIMvtIV
-%			}
+			\new Voice {
+				\formatFlautoIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtIV
 			}
@@ -237,7 +260,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.8 \bold 4.
 			}
 		}
 		\layout {
@@ -245,9 +268,75 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPiccoloMvtIV
-%			}
+			\new Voice {
+				\formatPiccoloMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(piccolo) \tempiPartMvtI
+			}
+			\new Voice {
+				\timeMvtI \namePiccoloMvtI \musicPiccoloMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "1. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPiccoloMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(piccolo) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \namePiccoloMvtII \musicPiccoloMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #0.9 \bold "2. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPiccoloMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(piccolo) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \namePiccoloMvtIII \musicPiccoloMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #0.5 \bold "3. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPiccoloMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtIV
 			}
@@ -259,7 +348,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold 4.
 			}

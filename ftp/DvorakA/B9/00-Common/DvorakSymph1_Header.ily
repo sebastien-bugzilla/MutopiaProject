@@ -16,7 +16,9 @@
 		\abs-fontsize #18 \sans
 		\center-column {
 			"Symphony No. 1 in C Minor Op.3 B.9"
-			"(The Bells of Zlonice)"
+			\concat {
+				\italic { "\"" "The Bells of Zlonice" "\"" }
+			}
 		}
 	}
 %	mutopiatitle = "Concerto for Violin and Cello in A Minor"

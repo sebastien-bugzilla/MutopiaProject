@@ -31,15 +31,11 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
-	R2\fermata
-	R2*4
+	\once \ni R2\fermata
+	R2*12
 	
 	
 % Bars 36 to 40
-	
-	R2*8
-	
-	
 	
 % Bars 41 to 45
 	
@@ -85,7 +81,7 @@ musicFlautoIIMvtIV = \relative c {
 	cis'~
 % Bars 76 to 80
 	cis
-	cis4(\p_\pocoapococrescendo e
+	cis4(_\ppocoapococrescendo e
 	d cis)
 	fis( e
 	cis a')
@@ -215,7 +211,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	
 	r8. d'16([\f cis8.) d16(]
-	cis8)_\diminuendo r r4
+	cis8)-\offset X-offset -1.5 _\diminuendo r r4
 	r8. e,16[(\brack\mf a8.) e16(]
 % Bars 191 to 195
 	a8) r r4
@@ -348,14 +344,10 @@ musicFlautoIIMvtIV = \relative c {
 	b4-> a->
 	a4..-> b16
 	gis8 r r4
-	R2*7
+	R2*11
 % Bars 341 to 345
 	
 % Bars 346 to 350
-	
-	R2*4
-	
-	
 	
 % Bars 351 to 355
 	r8 a\brack\f r a
@@ -391,14 +383,10 @@ musicFlautoIIMvtIV = \relative c {
 	f
 	f,~
 	f
-	R2*9
+	R2*17
 % Bars 381 to 385
 	
 % Bars 386 to 390
-	
-	
-	R2*8
-	
 	
 % Bars 391 to 395
 	
@@ -411,7 +399,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 401 to 405
 	c bes~
 	bes2
-	b!4..\f b16
+	\startMeasureCount b!4..\f b16
 	b4.. b16
 	b4.. b16
 % Bars 406 to 410
@@ -419,7 +407,7 @@ musicFlautoIIMvtIV = \relative c {
 	b4.. b16
 	b4.. b16
 	b4.. b16
-	b4.. b16
+	b4.. b16 \stopMeasureCount
 % Bars 411 to 415
 	c8 r r4
 	R2*7
@@ -655,7 +643,7 @@ musicFlautoIIMvtIV = \relative c {
 	\afterGrace bes2(\startTrillSpan {a16 bes)\stopTrillSpan}
 	bes,8 r r4
 % Bars 626 to 630
-	R2*8
+	\mmrLength #14 R2*8
 % Bars 631 to 635
 	
 	
@@ -769,7 +757,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 736 to 740
 	g4-> a->\<
 	b-> cis->\!
-	<< d2\fz-> {s8\> s s s\!}>>
+	<< d2\fz-> {\hairpinShorten #'(-0.3 . -1.5) s8\> s s s\!}>>
 	b2~
 	b4 cis->\<
 % Bars 741 to 745

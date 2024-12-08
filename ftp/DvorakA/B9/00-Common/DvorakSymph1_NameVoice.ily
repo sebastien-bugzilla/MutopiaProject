@@ -44,6 +44,21 @@ nameFlautoIIMvtIV = {
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }
+namePiccoloMvtI = {
+	\set Staff.instrumentName = "Piccolo"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"flute"
+}
+namePiccoloMvtII = {
+	\set Staff.instrumentName = "Piccolo"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"flute"
+}
+namePiccoloMvtIII = {
+	\set Staff.instrumentName = "Piccolo"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"flute"
+}
 namePiccoloMvtIV = {
 	\set Staff.instrumentName = "Piccolo"
 	\set Staff.shortInstrumentName = ""

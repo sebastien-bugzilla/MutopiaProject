@@ -18,7 +18,7 @@ musicFlautoIIMvtI = \relative c {
 	g4 r r2
 	d4 r r2
 	d4 r r2\fermata \bar "||"
-	\time 3/4 r4 g,2\pp->
+	\time 3/4 \startMeasureCount r4 g,2\pp->
 	r4 g2->
 % Bars 11 to 15
 	\repeat volta 2 {
@@ -26,7 +26,7 @@ musicFlautoIIMvtI = \relative c {
 		r4 g2->
 		r4 g2->
 		r4 g2->
-		r4 g2->
+		r4 g2-> \stopMeasureCount
 % Bars 16 to 20
 		r4 g2->~
 		g4 r r
@@ -36,7 +36,7 @@ musicFlautoIIMvtI = \relative c {
 		
 		
 		
-		r4 g2->\pp
+		\startMeasureCount r4 g2->\pp
 % Bars 26 to 30
 		r4 g2->
 		r4 g2->
@@ -44,14 +44,14 @@ musicFlautoIIMvtI = \relative c {
 		r4 g2->
 		r4 g2->
 % Bars 31 to 35
-		r4 g2->
+		r4 g2-> \stopMeasureCount 
 		r4 g2->~
 		g4 r r
 		R2.*7
 % Bars 36 to 40
 	
 % Bars 41 to 45
-		r4 ges2->\pp
+		\startMeasureCount r4 ges2->\pp
 		r4 ges2->
 		r4 ges2->
 		r4 ges2->
@@ -59,7 +59,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 46 to 50
 		r4 ges2->
 		r4 ges2->
-		r4 ges2->
+		r4 ges2-> \stopMeasureCount
 		ees'2.~
 		ees~
 % Bars 51 to 55
@@ -95,20 +95,20 @@ musicFlautoIIMvtI = \relative c {
 % Bars 76 to 80
 		des2 des8. des16
 		d!4-. r r
-		R2.*8 
+		R2.*9
 		
 		
 % Bars 81 to 85
 		
 % Bars 86 to 90
-		R2.
+		
 		r4 cis(\p\< dis
 		g\> fis e)\!
 		dis r r
 		R2.
 % Bars 91 to 95
 		r4 dis(\brack\p\< e
-		g\> fis\! e
+		g\> fis e\!
 		d!2.-\tweak X-offset #0.5 \p~
 		d)
 		c~
@@ -144,7 +144,7 @@ musicFlautoIIMvtI = \relative c {
 		
 		
 		
-		r4 d,(\brack\f ees_\legato
+		r4 d,(\brack\f^\legato ees
 % Bars 126 to 130
 		f g des'
 		c) r r
@@ -196,13 +196,13 @@ musicFlautoIIMvtI = \relative c {
 % Bars 166 to 170
 		d r r
 		d r r
-		R2.
-		R2.
+		R2.*2
+		
 		f,,4(_\fdiminuendo c' bes~
 % Bars 171 to 175
 		bes2.~
 		bes)
-		bes\pp~
+		\startMeasureCount bes\pp~
 		bes~
 		bes~
 % Bars 176 to 180
@@ -210,7 +210,7 @@ musicFlautoIIMvtI = \relative c {
 		bes~
 		bes~
 		bes~
-		bes
+		bes \stopMeasureCount
 % Bars 181 to 185
 		ees4(\brack\p g c8)[ r16 bes-.]
 		aes2( ees'4)
@@ -244,9 +244,9 @@ musicFlautoIIMvtI = \relative c {
 % Bars 206 to 210
 		r fis,2(\p\< 
 		b4)\! r r
-		r e,2(\p\<
-		bes'!4)\! r r
-		r \after 2*3/4 \! f2\p\<
+		r e,2(\p-\alterBroken shorten-pair #'(() (0 . 2.5)) \<
+		bes'!4) r\! r
+		r f2\p\<
 % Bars 211 to 215
 		e'2.\pp~
 		e~_\crescendo
@@ -264,7 +264,7 @@ musicFlautoIIMvtI = \relative c {
 		r \acciaccatura bes,8 f'4-. \acciaccatura bes,8 f'4-.
 		des2.->\fz~
 		des~
-		\after 2.*3/6 <>_\pocoapococrescendo des->\fz~
+		des~->_\fzpocoapococrescendo
 % Bars 226 to 230
 		des
 		d!4 r r
@@ -281,7 +281,7 @@ musicFlautoIIMvtI = \relative c {
 		R2.*3
 		
 		
-		r4 d,(\brack\p_\legato\< ees
+		r4 d,(\brack\p-\offset X-offset -5 ^\legato\< ees
 		f g des'\!
 % Bars 241 to 245
 		c)\f r r
@@ -290,7 +290,7 @@ musicFlautoIIMvtI = \relative c {
 		r4 b2
 		r4 c2
 % Bars 246 to 250
-		r4_\diminuendo d2
+		r4 d2_\diminuendo
 		r4 des2
 		r4 des2
 		r4 des2
@@ -336,8 +336,8 @@ musicFlautoIIMvtI = \relative c {
 		bes4 r r
 		\alternative {
 			\volta 1 {
-				r4 g2\brack\pp->
-				r4 g2->
+				\startMeasureCount r4 g2\brack\pp->
+				r4 g2-> \stopMeasureCount
 			}
 			\volta 2 {
 				c'2.\ff~
@@ -360,7 +360,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 301 to 305
 	bes'2\p~ bes8. aes16-.
 	g2~ g8. f16-.
-	e2._\brackM\crescendo\<~
+	e2._\brackM\crescmarkup\<~
 	e\!
 	f2\f~ f8. ees!16-.
 % Bars 306 to 310
@@ -445,26 +445,22 @@ musicFlautoIIMvtI = \relative c {
 % Bars 376 to 380
 	c8. d16-. d8( c) c-. d-.
 	e r r4 r
-	R2.*4
+	R2.*17
 	
 	
 % Bars 381 to 385
-	
-	R2.*10
-	
-	
 	
 % Bars 386 to 390
 	
 % Bars 391 to 395
 	
-	R2.*3
 	
 	
-	aes,2.~\brack\pp_\crescendo
+	
+	aes,2.~-\offset X-offset -1 \brack\pp-\offset X-offset 2.5 _\crescendo
 % Bars 396 to 400
-	aes~\<
 	aes~
+	aes~\<
 	\after 2.*5/6 \! aes \bar "||"
 	\time 2/4 ees2\ppp~
 	ees~
@@ -500,7 +496,7 @@ musicFlautoIIMvtI = \relative c {
 	
 % Bars 426 to 430
 	
-	aes,4(\brack\pp des2)
+	\startMeasureCount aes,4(\brack\pp des2)
 	aes4( des2)
 	aes4( des2)
 	aes4(\pp des2)
@@ -508,8 +504,8 @@ musicFlautoIIMvtI = \relative c {
 	aes4( des2)
 	aes4( des2)
 	aes4( des2)
-	aes4( des2)
-	aes4( d!2)
+	aes4( des2) \stopMeasureCount
+	\startMeasureCount aes4( d!2)
 % Bars 436 to 440
 	aes4( d2)
 	aes4( d2)
@@ -518,7 +514,7 @@ musicFlautoIIMvtI = \relative c {
 	aes4( d2)
 % Bars 441 to 445
 	aes4( d2)
-	aes4( d2)
+	aes4( d2) \stopMeasureCount
 	fis8_\crescendo fis fis fis fis fis
 	fis fis fis fis fis fis
 	fis fis fis fis fis fis
@@ -537,7 +533,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 461 to 465
 	R
 	R
-	R \no \oneVoice 
+	\mmrPos #7 R \no \oneVoice 
 	bes2.\pp~
 	bes_\crescmarkup
 % Bars 466 to 470
@@ -627,8 +623,8 @@ musicFlautoIIMvtI = \relative c {
 % Bars 536 to 540
 	g r r
 	g r r
-	R2.
-	R
+	R2.*2
+	
 	d,4(\brack\p a' g)
 % Bars 541 to 545
 	g2.~
@@ -658,8 +654,8 @@ musicFlautoIIMvtI = \relative c {
 	ees~
 	ees
 % Bars 571 to 575
-	R2.
-	R2.
+	R2.*2
+	
 	ees,,2.\brack\p~
 	\after 2.*5/6 \! ees\<
 	d4\f r r

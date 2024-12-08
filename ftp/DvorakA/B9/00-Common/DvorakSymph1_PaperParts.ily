@@ -39,8 +39,7 @@
 		\unless \on-first-page \fill-line {
 			\null
 			\center-column {
-				\fromproperty #'header:subsubtitle
-				\fromproperty #'header:instrument
+				\smaller \fromproperty #'header:subsubtitle
 				\vspace #1
 			}
 			\fromproperty #'page:page-number-string
@@ -50,8 +49,7 @@
 		\unless \on-first-page \fill-line {
 			\fromproperty #'page:page-number-string
 			\center-column {
-				\fromproperty #'header:subsubtitle
-				\fromproperty #'header:instrument
+				\smaller \fromproperty #'header:subsubtitle
 				\vspace #1
 			}
 			\null

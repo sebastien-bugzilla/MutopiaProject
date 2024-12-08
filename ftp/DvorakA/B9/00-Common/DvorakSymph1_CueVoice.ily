@@ -13,7 +13,7 @@ cueVoiceFlautoIMvtI = \relative c {
 	ges fes des)
 	s2.*91
 	% bar 555 - 558
-	c8(\mf^\markup {Viol.I} e a g f c')
+	c8(-\offset X-offset -2.5 \mf^\markup {Viol.I} e a g f c')
 	g4 d8-. e-. f4->
 	g8( b e d a d)
 	c4\< bes8-. a-. bes4->\!
@@ -22,10 +22,10 @@ cueVoiceFlautoIMvtII = \relative c {
 	s2*22
 	% bar 23 - 24
 	aes''16(^\markup {Viol.I} ees des c) bes8.( aes16)
-	aes8.( f'16) f4
+	aes8.( f'16) f4 
 	s2*62
 	% bar 87 - 95
-	bes'8.->^\markup {Ob.I} aes16 g8 r
+	\voiceOne bes'8.->^\markup {Ob.I} aes16 g8 r
 	bes8.-> aes16-. g8 r
 	c4(^\markup {Fl.II}\< << des) {s8\> s\!}>>
 	c4(\< ees8\> des)\!
@@ -33,7 +33,7 @@ cueVoiceFlautoIMvtII = \relative c {
 	g4(\< f8\> c'16 bes)\!
 	bes4.( ees8
 	des2)
-	d8 r r4
+	d8 r r4 \oneVoice 
 	s2*97
 	% bar 193
 	<<{\InCueContext b,2^\markup {Ob.}} \\ {\InCueContext g16_\markup {Viol.} r r16. g32 g16 r r16. g32}>>
@@ -44,8 +44,8 @@ cueVoiceFlautoIMvtIII = \relative c {
 	<>^\markup {Archi}
 	s2*92
 	% bar 230 - 231
-	g'''8.^\markup {Ob.I} g16 a,4(
-	c8) bes ees4
+	\voiceOne g'''8.^\markup {Ob.I} g16 a,4(
+	c8) bes ees4 \oneVoice 
 }
 cueVoiceFlautoIMvtIV = \relative c {
 	s2*32
@@ -71,7 +71,7 @@ cueVoiceFlautoIMvtIV = \relative c {
 cueVoiceFlautoIIMvtI = \relative c {
 	s1*8 s2.*390 s2*20 s2.*41
 	% bar 460 - 463
-	\voiceTwo ges'2(^\markup {Clar.} aes4
+	ges'2(^\markup {Clar.} aes4
 	bes2 ces4
 	des2 ees4
 	ges fes des)
@@ -87,7 +87,7 @@ cueVoiceFlautoIIMvtII = \relative c {
 	<g bes>8. <f aes>16 <ees g>8 r 
 	s2*76
 	% bar 165 - 166
-	b'16(^\markup {Fl.I} c) r c-. b( c e f)
+	b'16(-\offset X-offset -3 ^\markup {Fl.I} c) r c-. b( c e f)
 	cis( d) r d-. cis( d fis g) \oneVoice 
 	s2*26
 	% bar 193
@@ -132,14 +132,14 @@ cueVoiceFlautoIIMvtIV = \relative c {
 cueVoicePiccoloMvtIV = \relative c {
 	s2*44
 	% bar 45 - 49
-	\stemDown c''4(^\markup {Ob.I} d8.) g,16-.
+	\stemDown c''4(-\offset X-offset -2 ^\markup {Ob.I} d8.) g,16-.
 	g2
 	c4( d8.) g16-.
 	g2
 	c,4( d8.) g,16 \stemNeutral 
 	s2*31
 	% bar 81 - 84
-	\voiceOne g''4(^\markup {Fl.I} f
+	\voiceOne g''4(-\offset X-offset -3 ^\markup {Fl.I} f
 	cis d)
 	e( f
 	e d)
@@ -195,7 +195,7 @@ cueVoicePiccoloMvtIV = \relative c {
 	d4.. e16
 	s2*79
 	% bar 597 - 600
-	d'8->\f^\markup {Fl.I} d16-. r ees8-> e16-. r
+	d'8->\f-\offset X-offset -3 ^\markup {Fl.I} d16-. r ees8-> e16-. r
 	ees8-> ees16-. r f8-> f16-. r
 	bes,8-> bes16-. r c8-> c16-. r
 	c8-> c16-. r f,8-> f16-. r

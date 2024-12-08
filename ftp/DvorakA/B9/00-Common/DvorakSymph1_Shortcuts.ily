@@ -11,15 +11,17 @@ ppsempreB = \markup {\dynamic pp \italic {sempre}}
 ppdolce = \markup {\hspace #-0.82 \dynamic pp \italic {dolce}}
 ppstacc = \markup {\hspace #-0.82 \dynamic pp \italic {stacc.}}
 ppcresc = \markup {\hspace #-0.82 \dynamic pp \italic {cresc.}}
-pppocoapococresc = \markup {\hspace #-0.82 \dynamic pp \italic {poco a poco cresc.}}
-pppocoapococrescendo = \markup {\hspace #-0.82 \dynamic pp \italic {poco a poco crescendo}}
+pppocoapococresc = \markup {\hspace #-0.82 \dynamic pp \italic {"poco a poco cresc."}}
+pppocoapococrescendo = \markup {\hspace #-0.82 \dynamic pp \italic {"poco a poco crescendo"}}
 ppleggierissimo = \markup {\hspace #-0.82 \dynamic pp \italic {leggierissimo}}
 pcresc = \markup {\hspace #-0.08 \dynamic p \italic {cresc.}}
 pdolce = \markup {\hspace #-0.08 \dynamic p \italic {dolce}}
 pcrescendo = \markup {\hspace #-0.08 \dynamic p \italic {crescendo}}
-ppocoapococrescendo = \markup {\hspace #-0.08 \dynamic p \italic {poco a poco crescendo}}
-ppocoapococresc = \markup {\hspace #-0.08 \dynamic p \italic {poco a poco cresc.}}
+ppocoapococrescendo = \markup {\hspace #-0.08 \dynamic p \italic {"poco a poco crescendo"}}
+ppocoapococresc = \markup {\hspace #-0.08 \dynamic p \italic {"poco a poco cresc."}}
 pdim = \markup {\hspace #-0.08 \dynamic p \italic {dim.}}
+pdimB = \markup {\dynamic p \italic {dim.}}
+pdimin = \markup {\hspace #-0.08 \dynamic p \italic {dimin.}}
 mfespressivo = \markup {\hspace #-0.8 \dynamic mf \italic {espressivo}}
 mfcrescendo = \markup {\hspace #-0.8 \dynamic mf \italic {crescendo}}
 mfcresc = \markup {\hspace #-0.8 \dynamic mf \italic {cresc.}}
@@ -27,12 +29,13 @@ mfcrescB = \markup {\dynamic mf \italic {cresc.}}
 fzcresc = \markup {\hspace #-0.54 \dynamic fz \italic {cresc.}}
 fzcrescendo = \markup {\hspace #-0.54 \dynamic fz \italic {crescendo}}
 fzdiminuendo = \markup {\hspace #-0.54 \dynamic fz \italic {diminuendo}}
+fzpocoapococrescendo = \markup {\hspace #-0.54 \dynamic fz \italic {"poco a poco crescendo"}}
 fdiminuendo = \markup {\hspace #0.02 \dynamic f \italic {diminuendo}}
 flegato = \markup {\hspace #0.02 \dynamic f \italic {legato}}
 fmarcato = \markup {\hspace #0.02 \dynamic f \italic {marcato}}
-flegatosempre = \markup {\hspace #0.02 \dynamic f \italic {legato sempre}}
-fmarcatoconmoltaforza = \markup {\hspace #0.02 \dynamic f \italic {marcato, con molta forza}}
-fconespressione = \markup {\hspace #0.02 \dynamic f \italic {con espressione}}
+flegatosempre = \markup {\hspace #0.02 \dynamic f \italic {"legato sempre"}}
+fmarcatoconmoltaforza = \markup {\hspace #0.02 \dynamic f \italic {"marcato, con molta forza"}}
+fconespressione = \markup {\hspace #0.02 \dynamic f \italic {"con espressione"}}
 ffdim = \markup {\hspace #-0.53 \dynamic ff \italic {dim.}}
 ffdimB = \markup {\dynamic ff \italic {dim.}}
 
@@ -40,12 +43,12 @@ semprepp = \markup {\italic {sempre} \dynamic pp}
 sempreff = \markup {\italic {sempre} \dynamic ff}
 
 
-pococrescendo = \markup {\italic {poco crescendo}}
+pococrescendo = \markup {\italic {"poco crescendo"}}
 crescmarkup = \markup {\italic {cresc.}}
 legato = \markup {\italic {legato}}
 crescendo = \markup {\italic {crescendo}}
 diminuendo = \markup {\italic {diminuendo}}
-pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
+pocoapococrescendo = \markup {\italic {"poco a poco crescendo"}}
 dimmarkup = \markup {\italic {dim.}}
 dimin = \markup {\italic {dimin.}}
 dolce = \markup {\italic {dolce}}
@@ -60,22 +63,22 @@ pizz = \markup {\italic {pizz.}}
 arco = \markup {\italic {arco}}
 spiccato = \markup {\italic {spiccato}}
 sulg = \markup {sul G}
-pocoapococresc = \markup {\italic {poco a poco cresc.}}
+pocoapococresc = \markup {\italic {"poco a poco cresc."}}
 div = \markup {div.}
 marc = \markup {\italic {marc.}}
 sempre = \markup {\italic {sempre}}
-pococresc = \markup {\italic {poco cresc.}}
+pococresc = \markup {\italic {"poco cresc."}}
 sole = \markup {Sole}
 sulg = \markup {sul G}
-velmijemnedelicatissimo = \markup {\italic {velmi jemně [delicatissimo]}}
+velmijemnedelicatissimo = \markup {\italic {"velmi jemně [delicatissimo]"}}
 espressivo = \markup {\italic {espressivo}}
 divisi = \markup {divisi}
-pizzsempre = \markup {\italic {pizz. sempre}}
+pizzsempre = \markup {\italic {"pizz. sempre"}}
 tutti = \markup {Tutti}
-solidiv = \markup {Soli div.}
+solidiv = \markup {"Soli div."}
 marc = \markup {\italic {marc.}}
 divisi = \markup {\italic {divisi}}
-conespressione = \markup {\italic {con espressione}}
+conespressione = \markup {\italic {"con espressione"}}
 
 
 plegato = #(make-dynamic-script 
@@ -150,6 +153,7 @@ omitDots = \once \omit Dots
 setBarNumber = \set Score.currentBarNumber = \etc
 
 markFermata = \mark \markup { \fermata }
+markNormalSizeFermata = \mark \markup { \normalsize \fermata }
 
 omitAccidental = \once \omit Staff.Accidental 
 
@@ -267,6 +271,24 @@ ni = {
 	\omit MultiMeasureRestNumber
 }
 
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.minimum-length = #length
+	#}
+)
+
+tempoXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.X-offset = #offset
+	#}
+)
+
+
+
 
 
 %stemOffset = #(define-music-function
@@ -367,14 +389,6 @@ ni = {
 %	\once \override MultiMeasureRestNumber.direction = #-1 
 %}
 
-%mmrLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.space-increment = #length
-%	#}
-%)
-
 %mmrMinLength = #(define-music-function
 %	(length)
 %	(number?)
@@ -450,14 +464,6 @@ ni = {
 %)
 
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
-
-%tempoXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.MetronomeMark.X-offset = #offset
-%	#}
-%)
 
 %tempoExtraOffset = #(define-music-function
 %	(offset)

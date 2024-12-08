@@ -16,8 +16,8 @@ musicFlautoIMvtII = \relative c {
 	c2\fermata\brack\fp
 % Bars 6 to 10
 	ees\fermata\brack\fp
-	<< ees4\fermata {s8\< s\!} >> << aes4\fermata {s8\< s\!}>>
-	<< g2\fermata {s8\< s\! s\> s\!} >>
+	<< ees4\fermata {\hairpinShorten #'(0 . -1) s8\< s\!} >> << aes4\fermata {\hairpinShorten #'(0 . -1) s8\< s\!}>>
+	<< g2\fermata {\hairpinShorten #'(0 . -0.5) s8\< s\! \hairpinShorten #'(0 . -0.5)  s\> s\!} >>
 	R2*14
 % Bars 11 to 15
 	
@@ -26,13 +26,13 @@ musicFlautoIMvtII = \relative c {
 % Bars 21 to 25
 	
 	
-	\ni \mmrPos #4 R2
-	\mmrPos #4 R \no
-	r4 d,\brack\p
+	\ni \mmrPos #6 R2
+	\mmrPos #6 R \no
+	r4 d,-\offset X-offset 1 \brack\p
 % Bars 26 to 30
-	f8(\< g\! aes\> g\!)
+	f8[(\< g\! aes\> g\!)]
 	f r d4
-	f8(\< g\! aes\> g\!)
+	f8[(\< g\! aes\> g\!)]
 	R2*23
 % Bars 31 to 35
 	
@@ -53,7 +53,7 @@ musicFlautoIMvtII = \relative c {
 	c4.\p r8
 	c4. r8
 	g16\< r aes r aes r des r\!
-	b8(\> c d f)\!
+	b8[(\> c d f)]\!
 % Bars 61 to 65
 	e r r4
 	R2*7
@@ -94,7 +94,7 @@ musicFlautoIMvtII = \relative c {
 	R2*3
 	
 	
-	bes2\brack\mf_\crescendo~
+	bes2\brack\mf-\offset X-offset 3.5 _\crescendo~
 	bes
 % Bars 101 to 105
 	g'8(\f aes16 bes f) r r bes,
@@ -131,7 +131,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 131 to 135
 	
 	a,4\brack\p(~ a32[ b cis\< b a8]~
-	a)\! c!( b a)
+	a)[\! c!( b a)]
 	g8.\brack\p^\solo( a32 g) f-. e-. d-. e-. f-. g-. a-. b-.
 	c16-._\crescendo r g-. r d'-. r g-. r
 % Bars 136 to 140
@@ -155,7 +155,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 161 to 165
 	
 	
-	ees'4_\brackM\pdim d16( c bes a)
+	ees'4-\offset X-offset -0.5 _\brackM\pdimB d16( c bes a)
 	a8( gis) r8. b16
 	b(_\crescmarkup c) r c-. b( c e f)
 % Bars 166 to 170
@@ -165,7 +165,7 @@ musicFlautoIMvtII = \relative c {
 	e8(\f f16 g d) r r g,-.
 	e'8( f16 g d-.) r r g,-.
 % Bars 171 to 175
-	c8( d e f)
+	c8[( d e f)]
 	g16([ e g f32 e)] e8.( d32 c)
 	b8( c16 d) e8( f)
 	g16([ e g f32 e)] e8.( d32 c) \section
@@ -192,5 +192,5 @@ musicFlautoIMvtII = \relative c {
 	c4(\! bes8 aes)
 	g8.( bes32 aes) aes8 r 
 	R2
-	R\fermata \fine
+	\once \ni R\fermata \fine
 }

@@ -73,7 +73,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	des'2->(\brack\f-\offset X-offset 3 _\dimin(
+	d'2->(\brack\f-\offset X-offset 3 _\dimin
 % Bars 56 to 60
 	c4\> b\!)
 	c8\f-. b-. c-. r
