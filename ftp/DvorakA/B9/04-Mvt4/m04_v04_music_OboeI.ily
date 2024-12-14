@@ -105,7 +105,7 @@ musicOboeIMvtIV = \relative c {
 	fis( e
 	cis a')
 % Bars 81 to 85
-	g( f
+	g( f!
 	cis d)
 	e(\< f\!
 	e d)
@@ -172,7 +172,7 @@ musicOboeIMvtIV = \relative c {
 	f2\pp~
 % Bars 136 to 140
 	f
-	d_\pocoapococresc~
+	d_\pocoapococresc~ 
 	d
 	b~
 	b
@@ -469,15 +469,15 @@ musicOboeIMvtIV = \relative c {
 % Bars 401 to 405
 	des bes')~
 	bes2
-	b!4..\f b16
+	\startMeasureCount b!4..\f b16
 	b4.. b16
 	b4.. b16
 % Bars 406 to 410
 	b4.. b16
 	b4.. b16
 	b4.. b16
-	b4.. b16
-	b4.. g16\brack\ff
+	b4.. b16 \stopMeasureCount
+	b4.. g16\brack\ff 
 % Bars 411 to 415
 	e2~
 	e4.. d16
@@ -692,7 +692,7 @@ musicOboeIMvtIV = \relative c {
 	des8 r r4
 	des8 r r4
 	r8_\crescendo bes-. r c-.
-	r d-. r ees-.
+	r d!-. r ees-.
 % Bars 596 to 600
 	r f-. r c-.
 	d->\brack\f d16-. r ees8-> ees16-. r
@@ -756,7 +756,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 656 to 660
 	g c->(~
 	c\f bes~
-	bes)_\diminuendo a(
+	bes)_\dimin a(
 	ees'8. c16 bes4~
 	bes) a(
 % Bars 661 to 665
@@ -786,7 +786,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 681 to 685
 	fis4( gis)
 	a(\< b\!)
-	<< a2 {s4\< s8.\! s16\> }>>
+	<< a2 {\hairpinShorten #'(0 . -2) s4\< s8.\! \hairpinShorten #'(1 . 0) s16\> }>>
 	e4 d\!
 	cis8 r r4
 % Bars 686 to 690
@@ -910,8 +910,8 @@ musicOboeIMvtIV = \relative c {
 	e4 f8. e16 e2 e
 	g4 a8. g16 g2 g
 % Bars 786 to 790
-	c1(-> e4.\< f8)\!
-	g1 b,2
+	c1( e4.\< f8)\!
+	g1-> b,2
 	c4 d c2.. c8
 	e4 f e2.. e8
 	g4 a g2.. g8

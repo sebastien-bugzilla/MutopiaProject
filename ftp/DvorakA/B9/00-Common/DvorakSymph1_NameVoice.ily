@@ -112,6 +112,21 @@ nameCornoIngleseMvtI = {
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"oboe"
 }
+nameCornoIngleseMvtII = {
+	\set Staff.instrumentName = "Corno Inglese"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"oboe"
+}
+nameCornoIngleseMvtIII = {
+	\set Staff.instrumentName = "Corno Inglese"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"oboe"
+}
+nameCornoIngleseMvtIV = {
+	\set Staff.instrumentName = "Corno Inglese"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"oboe"
+}
 %###############################################################################
 %#                V O I C E   N A M E   :   C L A R I N E T T I                #
 %###############################################################################

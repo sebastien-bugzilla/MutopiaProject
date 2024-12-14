@@ -305,7 +305,7 @@ musicOboeIIMvtIV = \relative c {
 	g4( fis8) r
 	fis8([ e dis) r16 c'-.]
 	c4( b8) r
-	d,4-\offset X-offset -1 \ff( e8.) d16
+	d,4-\offset X-offset -1 \ff( e8.) d16-.
 	d4( c8) r
 % Bars 281 to 285
 	b4( c8.) b16-.

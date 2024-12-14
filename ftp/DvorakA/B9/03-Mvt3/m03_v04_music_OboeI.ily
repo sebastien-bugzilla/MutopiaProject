@@ -13,7 +13,7 @@ musicOboeIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 6 to 10
 	c''8-.[\brack\p g']-. d-. g-.
 	ees-. g-. f16( ees d c)
@@ -58,7 +58,7 @@ musicOboeIMvtIII = \relative c {
 	c'-. bes-. aes-. r
 % Bars 41 to 45
 	g-.\mf r ees(-> d16) r
-	g8-.\p_\dimin r c,-. r
+	g8-._\pdimin r c,-. r
 	f-. r des->( c16) r
 	f8-. r bes,-. r
 	g'8(\brack\pp f ees d)
@@ -73,9 +73,9 @@ musicOboeIMvtIII = \relative c {
 	g'4->\< aes8-. des,-.\!
 	bes'4->\f aes8-. des,-.
 	bes'4-> aes8-. des,-.
-	a'2(_\dimin
+	a'2(-\offset X-offset -1.5 _\dimin
 % Bars 56 to 60
-	<< f) {s4\> s\!} >>
+	<< f) {s4\> s} >>
 	ees8-.\f f-. ees-. r
 	ees-. f-. g-. r
 	f16-. c'-. g-. c-. aes-. c-. bes32( aes g f)
@@ -129,7 +129,7 @@ musicOboeIMvtIII = \relative c {
 	
 	
 % Bars 101 to 105
-	R2\fermata
+	\once \ni R2\fermata
 	\repeat volta 2 {
 		g,4->\pp g->
 		g8.-> aes16-. aes8-. f-.
@@ -290,12 +290,12 @@ musicOboeIMvtIII = \relative c {
 	R2
 % Bars 236 to 240
 	r4 g8-.\pp r
-	g-. r g-. r16 \section r
+	g-. r g-. r16 \section \break r
 	R2*3
 	
 	
 % Bars 241 to 245
-	R2\fermata
+	\once \ni R2\fermata
 	c,8-.[\brack\p g']-. d-. g-.
 	ees-. g-. f16( ees d c)
 	bes8-.[ c-.] d-.\< d-.\!
@@ -339,7 +339,7 @@ musicOboeIMvtIII = \relative c {
 % Bars 276 to 280
 	c'-. bes-. aes-. r
 	g-.\mf r ees(-> d16) r
-	g8-.\p_\dimin r c,-. r
+	g8-._\pdimin r c,-. r
 	f-. r des->( c16) r
 	f8-. r bes,-. r
 % Bars 281 to 285
@@ -356,7 +356,7 @@ musicOboeIMvtIII = \relative c {
 	bes'4-> aes8-. des,-.
 % Bars 291 to 295
 	a'2(_\dimin
-	<< f) {s4\> s\!} >>
+	<< f) {s4\> s} >>
 	ees8-.\f f-. ees-. r
 	ees-. f-. g-. r
 	f16-. c'-. g-. c-. aes-. c-. bes32( aes g f)
@@ -405,7 +405,7 @@ musicOboeIMvtIII = \relative c {
 % Bars 331 to 335
 	g->] ees->[ g->] f16([ ees
 	d c]) bes8-.[ c-.] d-.[ 
-	d]-. d4.\fermata % signo
+	d]-. d4.\fermata \section % signo
 	R2
 	des,\pp
 % Bars 336 to 340
@@ -463,5 +463,5 @@ musicOboeIMvtIII = \relative c {
 	ees2~
 	ees8 f-. g8.\p c,16
 % Bar 381
-	c8 r r4 \fine
+	c8 r r4 \markNormalSizeFermata \fine
 }

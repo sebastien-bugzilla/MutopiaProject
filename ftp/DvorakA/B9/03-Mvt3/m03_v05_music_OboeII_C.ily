@@ -202,7 +202,7 @@ musicOboeIIMvtIII = \relative c {
 	bes
 	<< bes {s4 s}>>
 	ees4.(\< d8\!)
-	<< d2\brack\mf {s4 s}>>
+	<< des2\brack\mf {s4 s}>>
 	c4( d!)
 % Bars 166 to 170
 	des2~

@@ -25,7 +25,7 @@ musicOboeIIMvtI = \relative c {
 		R2.*6
 % Bars 16 to 20
 		
-		c,2.\pp~
+		\startMeasureCount c,2.\pp~
 		c~
 		c~
 		c~
@@ -33,14 +33,14 @@ musicOboeIIMvtI = \relative c {
 		c~
 		c~
 		c~
-		c~
+		c~ \stopMeasureCount
 		c4 r r
 % Bars 26 to 30
 		R2.*7
 % Bars 31 to 35
 		
 		
-		c2.\brack\pp~
+		\startMeasureCount c2.\brack\pp~
 		c~
 		c~
 % Bars 36 to 40
@@ -48,7 +48,7 @@ musicOboeIIMvtI = \relative c {
 		c~
 		c~
 		c~
-		c~
+		c~ \stopMeasureCount
 % Bars 41 to 45
 		c4 r r
 		R2.*7
@@ -111,7 +111,7 @@ musicOboeIIMvtI = \relative c {
 		R2.
 % Bars 91 to 95
 		r4 dis(\brack\p\< e
-		g\> fis\! e
+		g\> fis e\!
 		d!2.\p~
 		d)
 		c~
@@ -152,7 +152,7 @@ musicOboeIIMvtI = \relative c {
 		f g des'
 		c) r r
 		b r r
-		c2\p r4
+		\startMeasureCount c2\p r4
 		c2 r4
 % Bars 131 to 135
 		c2_\crescendo r4
@@ -161,7 +161,7 @@ musicOboeIIMvtI = \relative c {
 		c2 r4
 		c2 r4
 % Bars 136 to 140
-		c2 r4
+		c2 r4 \stopMeasureCount
 		aes2.\f
 		ges
 		bes~
@@ -199,9 +199,9 @@ musicOboeIIMvtI = \relative c {
 % Bars 166 to 170
 		d r r
 		d r r
-		R2.
-		R
-		f,4(\brack\f_\diminuendo c' bes~
+		R2.*2
+		
+		f,4(\brack\f-\offset X-offset 3 _\diminuendo c' bes~
 % Bars 171 to 175
 		bes2.~
 		bes~
@@ -219,7 +219,7 @@ musicOboeIIMvtI = \relative c {
 		bes2( c,4)
 		bes( d ees
 		f2.)
-		f\f~
+		\startMeasureCount f\f~
 		f~
 % Bars 191 to 195
 		f~
@@ -228,7 +228,7 @@ musicOboeIIMvtI = \relative c {
 		f~
 		f~
 % Bars 196 to 200
-		f
+		f \stopMeasureCount
 		a~
 		a8 d, d g g fis
 		a2.~
@@ -242,8 +242,8 @@ musicOboeIIMvtI = \relative c {
 % Bars 206 to 210
 		r c,2(\p\<
 		b4)\! r r
-		r b2(\p\<
-		bes!4)\! r r
+		r b2(\p-\alterBroken shorten-pair #'((-0.3 . 0)(0 . 1.3)) \<
+		bes!4) r\! r
 		r des2\p\<
 % Bars 211 to 215
 		e2.\pp~
@@ -262,7 +262,7 @@ musicOboeIIMvtI = \relative c {
 		r f-. f-.
 		des2.\fz->~
 		des~
-		des->~\fz_\pocoapococrescendo
+		des~_\pocoapococrescendo
 % Bars 226 to 230
 		des
 		d!4 r r
@@ -381,8 +381,8 @@ musicOboeIIMvtI = \relative c {
 % Bars 316 to 320
 	b->
 	c4( f_\brackM\pococrescendo g
-	aes\< b c)
-	des( b c
+	aes b c)
+	des(\< b c
 	a c ees)\!
 % Bars 321 to 325
 	d g,2->_\crescmarkup~
@@ -445,7 +445,7 @@ musicOboeIIMvtI = \relative c {
 	r4 a,2->\fz
 	e2\f( g4)
 % Bars 371 to 375
-	c2._\legato
+	c2.^\legato
 	e4( d c
 	a'8 f g a g f)
 	c8 r r4 r8. c,16
@@ -463,7 +463,7 @@ musicOboeIIMvtI = \relative c {
 	c~
 	c~
 % Bars 386 to 390
-	c_\pococrescendo
+	c-\offset X-offset -2 _\pococrescendo
 	cis2.~
 	cis~\<
 	cis~
@@ -473,7 +473,7 @@ musicOboeIIMvtI = \relative c {
 	R2.*3
 	
 	
-	bes''2(\brack\pp_\crescendo aes4
+	bes''2(\brack\pp-\offset X-offset 3.5 _\crescendo aes4
 % Bars 396 to 400
 	e2 f4)
 	ees!2( d4
@@ -588,7 +588,7 @@ musicOboeIIMvtI = \relative c {
 	<< f2.~ {s8\< s s s s s\!}>>
 	<< f2.~ {s8\< s s s s s\!}>>
 	<< f2. {s8\< s s s s s\!}>> \bar "||"
-	\key a \minor c2\p r8. c16
+	\key a \minor \startMeasureCount c2\p r8. c16
 	c2 r8. c16
 % Bars 501 to 505
 	c2 r8. c16
@@ -597,7 +597,7 @@ musicOboeIIMvtI = \relative c {
 	c2 r8. c16
 	c2 r8. c16\<
 % Bars 506 to 510
-	c2 r8. c16\!
+	c2 r8. c16\! \stopMeasureCount
 	f2.->\f
 	ees->
 	g->~
@@ -635,11 +635,11 @@ musicOboeIIMvtI = \relative c {
 % Bars 536 to 540
 	g r r
 	g r r
-	R2.
-	R
+	R2.*2
+	
 	d4(\brack\p a' g)
 % Bars 541 to 545
-	g2.~
+	\startMeasureCount g2.~
 	g~\<
 	g\p~
 	g~
@@ -649,7 +649,7 @@ musicOboeIIMvtI = \relative c {
 	g~
 	g~
 	g~
-	g
+	g \stopMeasureCount
 % Bars 551 to 555
 	c,4( e a8)[\< r16 g-.]
 	f2\!( c'4)
@@ -677,8 +677,8 @@ musicOboeIIMvtI = \relative c {
 % Bars 571 to 575
 	c,4\brack\p r r 
 	ees,2.
-	R2.
-	R2.
+	R2.*2
+	
 	f4\f r r
 % Bars 576 to 580
 	bes8.\f-> f16 f8-. bes-. d4->~
@@ -760,7 +760,7 @@ musicOboeIIMvtI = \relative c {
 	a->
 % Bars 641 to 645
 	g->
-	aes->
+	aes!->
 	b2( c4
 	d f ees8 d)
 	ees2-> d8. d16

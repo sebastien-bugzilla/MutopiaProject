@@ -29,10 +29,13 @@
 \include "./01-Mvt1/m01_v06_music_CornoInglese.ily"
 \include "./02-Mvt2/m02_v04_music_OboeI.ily"
 \include "./02-Mvt2/m02_v05_music_OboeII.ily"
+\include "./02-Mvt2/m02_v06_music_CornoInglese.ily"
 \include "./03-Mvt3/m03_v04_music_OboeI.ily"
 \include "./03-Mvt3/m03_v05_music_OboeII.ily"
+\include "./03-Mvt3/m03_v06_music_CornoInglese.ily"
 \include "./04-Mvt4/m04_v04_music_OboeI.ily"
 \include "./04-Mvt4/m04_v05_music_OboeII.ily"
+\include "./04-Mvt4/m04_v06_music_CornoInglese.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -45,17 +48,29 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 (The Bells of Zlonice)"
+			\concat {
+				"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 " 
+				\italic { "\"" "The Bells of Zlonice" "\"" }
+				" — Oboi"
+			}
 		}
 		instrument = \markup {
 			"Oboi"
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtI
-%			}
+			\new Voice {
+				\formatOboeIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtI
 			}
@@ -77,9 +92,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtII
-%			}
+			\new Voice {
+				\formatOboeIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtII
 			}
@@ -93,7 +108,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.1 \bold 2.
 			}
 		}
 		\layout {
@@ -101,9 +116,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtIII
-%			}
+			\new Voice {
+				\formatOboeIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtIII
 			}
@@ -117,7 +132,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.9 \bold 3.
 			}
 		}
 		\layout {
@@ -125,9 +140,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtIV
-%			}
+			\new Voice {
+				\formatOboeIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtIV
 			}
@@ -141,7 +156,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.9 \bold 4.
 			}
 		}
 		\layout {
@@ -149,9 +164,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtI
-%			}
+			\new Voice {
+				\formatOboeIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
@@ -163,7 +178,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -173,9 +188,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtII
-%			}
+			\new Voice {
+				\formatOboeIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
@@ -187,7 +202,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -197,9 +212,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtIII
-%			}
+			\new Voice {
+				\formatOboeIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
@@ -211,7 +226,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -221,9 +236,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtIV
-%			}
+			\new Voice {
+				\formatOboeIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
@@ -235,7 +250,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 4.
 			}
@@ -245,9 +260,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIngleseMvtI
-%			}
+			\new Voice {
+				\formatCornoIngleseMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(cornoInglese) \tempiPartMvtI
 			}
@@ -265,6 +280,73 @@
 			}
 		}
 		\layout {
+			system-count = 5
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatCornoIngleseMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(cornoInglese) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameCornoIngleseMvtII \musicCornoIngleseMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold "2. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatCornoIngleseMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(cornoInglese) \tempiPartMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameCornoIngleseMvtII \musicCornoIngleseMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold "3. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatCornoIngleseMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(cornoInglese) \tempiPartMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameCornoIngleseMvtIV \musicCornoIngleseMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold "4. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
 		}
 	}
 }

@@ -12,11 +12,11 @@ musicOboeIMvtII = \relative c {
 	ees''2\fp\fermata
 	f\fp\fermata
 	ees8\< f\!\fermata f[\< bes16.\fermata ees,32\!]
-	<< ees2\fermata {s8\< s\! s\> s\!}>>
+	<< ees2\fermata {\hairpinShorten #'(0 . -0.33) s8\< s\! \hairpinShorten #'(-0.33 . 0) s\> s\!}>>
 	ees2\brack\fp\fermata
 % Bars 6 to 10
 	ces\brack\fp\fermata
-	<< {c!4\fermata f\fermata } {s8\< s\! s\< s\!}>>
+	<< {c!4\fermata f\fermata } {\hairpinShorten #'(0 . -1) s8\< s\! \hairpinShorten #'(0 . -1) s\< s\!}>>
 	f8(\< ees16 d\! c8\> d\!\fermata)
 	r4 g~\brack\p^\solo
 	g f8.( e16
@@ -76,9 +76,9 @@ musicOboeIMvtII = \relative c {
 % Bars 61 to 65
 	g2^\solo~
 	g4 f8.( e16
-	f4.) g32( f e f
+	f4.) g32( f e f)
 	bes2\<~
-	bes8)\! f(\> d c16 bes)\!
+	bes8\! f(\> d c16 bes)\!
 % Bars 66 to 70 
 	f'8(\pp ees4 d32 ees f ges)
 	ges4( f16_\brackM\crescmarkup ees des c)
@@ -144,7 +144,7 @@ musicOboeIMvtII = \relative c {
 	
 	c4.(\brack\pp a8)
 	g8.( f16 e4)
-	f4(_\crescendo ges)\<
+	f4(-\offset X-offset -1.5 _\crescmarkup ges)\<
 % Bars 121 to 125
 	des( ees)\!
 	f16( ees) r8 r16 ees-. f( ees)
@@ -164,7 +164,7 @@ musicOboeIMvtII = \relative c {
 	R2*2
 	
 % Bars 136 to 140
-	g,8.(\brack\p_\brackM\crescmarkup a32 g) f( e d e f g a b)
+	g,8.(\brack\p-\offset X-offset 2.5 _\brackM\crescmarkup a32 g) f( e d e f g a b)
 	c16 r g r d' r g r
 	c,32(\f b a g a b c d e d c b c d e f)
 	g( f e d c d e f) g,( a b c d e f g)
@@ -194,7 +194,7 @@ musicOboeIMvtII = \relative c {
 	c8( b) r8. b16
 	ees4_\brackM\dimmarkup d16( c bes! a)
 	a8( gis) r8. e'16
-	e4.(\brack\p_\pocoapococresc f8)
+	e4.(\brack\p-\offset X-offset 2.7 _\pocoapococresc f8)
 % Bars 166 to 170
 	f4( fis8 g)
 	fis4.( g8) \section
@@ -228,7 +228,7 @@ musicOboeIMvtII = \relative c {
 % Bars 191 to 195
 	d2~ 
 	d4.. b16
-	<< b2( {s4 s_\dimmarkup }>>
+	<< b2( {s4 s-\offset X-offset -3.5 _\dimmarkup }>>
 	c4..\fermata\ppp bes!16
 	aes8) r r4
 % Bars 196 to 200
@@ -241,5 +241,5 @@ musicOboeIMvtII = \relative c {
 	ees4(\> des8\! c)
 	bes8.( des32 c) c8 r
 	R2
-	R\fermata \fine
+	\once \ni R\fermata \fine
 }

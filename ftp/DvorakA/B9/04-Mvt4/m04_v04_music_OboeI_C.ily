@@ -910,8 +910,8 @@ musicOboeIMvtIV = \relative c {
 	e4 f8. e16 e2 e
 	g4 a8. g16 g2 g
 % Bars 786 to 790
-	\partCombineApart c1(-> e4. f8) \partCombineAutomatic
-	g1 b,2
+	\partCombineApart c1( e4. f8) \partCombineAutomatic
+	g1-> b,2
 	c4 d c2.. c8
 	e4 f e2.. e8
 	g4 a g2.. g8

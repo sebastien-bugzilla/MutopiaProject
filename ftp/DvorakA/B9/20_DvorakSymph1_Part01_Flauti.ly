@@ -338,7 +338,7 @@
 				\formatPiccoloMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(flautoII) \tempiPartMvtIV
+				\keepWithTag #'(piccolo) \tempiPartMvtIV
 			}
 			\new Voice {
 				\InCueContext \cueVoicePiccoloMvtIV

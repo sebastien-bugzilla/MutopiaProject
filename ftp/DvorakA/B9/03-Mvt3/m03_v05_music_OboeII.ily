@@ -13,13 +13,13 @@ musicOboeIIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 6 to 10
 	R2*3
 	
 	
-	R2\fermata
-	R2*8
+	\once \ni R2\fermata
+	R2*25
 % Bars 11 to 15
 	
 	
@@ -29,7 +29,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 16 to 20
 	
 	
-	R2*10
+	
 	
 	
 % Bars 21 to 25
@@ -41,8 +41,8 @@ musicOboeIIMvtIII = \relative c {
 % Bars 26 to 30
 	
 	
-	R2
-	R2*6
+	
+	
 	
 % Bars 31 to 35
 	
@@ -58,7 +58,7 @@ musicOboeIIMvtIII = \relative c {
 	f'-. f-. c-. r
 % Bars 41 to 45
 	c-.\mf r a-. r
-	d8-.\p_\dimin r g,-. r
+	d8-._\pdimin r g,-. r
 	bes-. r g!-. r
 	c8-. r f,-. r
 	R2*2
@@ -66,8 +66,8 @@ musicOboeIIMvtIII = \relative c {
 	
 	des'16\brack\pp r r g,[( f]) r r bes(
 	aes8) r r4
-	R2
-	R
+	R2*2
+	
 % Bars 51 to 55
 	d8->\< c~ c16 bes-.\! aes( f)
 	f'8->\< ees~ ees16 des-.\! ces( aes)
@@ -79,7 +79,7 @@ musicOboeIIMvtIII = \relative c {
 	c8-.\f d-. c-. r
 	c-. b-. c-. r
 	f-. e-. f-. r
-	aes,8-. bes\prall c-. r
+	aes,8-. bes c-. r
 % Bars 61 to 65
 	c4-> b->
 	c8-. a-. b-. r
@@ -87,7 +87,7 @@ musicOboeIIMvtIII = \relative c {
 	c8-. a-. b-. r
 	c-. b-. c-. r
 % Bars 66 to 70
-	aes-. bes!\prall c-. bes-.
+	aes-. bes! c-. bes-.
 	c4. b8-.
 	c-. b-. e4->
 	f8->\fp f16 r d8->\fp d16 r
@@ -129,7 +129,7 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 % Bars 101 to 105
-	R2\fermata
+	\once \ni R2\fermata
 	\repeat volta 2 {
 		ees,4-> ees->
 		ees8.-> ees16-. ees8-. d-.
@@ -145,7 +145,7 @@ musicOboeIIMvtIII = \relative c {
 		f8.[-> g16 g8] r
 		a8.-> bes16 bes4\f~
 		bes8 r r4
-		R2*9
+		R2*16
 		
 % Bars 116 to 120
 		
@@ -156,7 +156,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 121 to 125
 		
 		
-		R2*7
+		
 		
 		
 % Bars 126 to 130
@@ -166,10 +166,10 @@ musicOboeIIMvtIII = \relative c {
 		
 		\alternative {
 			\volta 1 {
-				R2
+				R2*4
 % Bars 131 to 135
-				R2
-				R2*2
+				
+				
 				
 			}
 			\volta 2 {
@@ -202,7 +202,7 @@ musicOboeIIMvtIII = \relative c {
 	bes
 	<< bes {s4 s_\crescendo}>>
 	ees4.(\< d8\!)
-	<< d2\brack\mf {s4 s_\crescmarkup}>>
+	<< des2\brack\mf {s4 s-\offset X-offset 1 _\crescmarkup}>>
 	c4( d!)
 % Bars 166 to 170
 	des2~
@@ -242,12 +242,12 @@ musicOboeIIMvtIII = \relative c {
 	ees16-. bes'-. f-. bes-. ges-. bes-. aes32( ges f ees)
 % Bars 196 to 200
 	ees8 d\prall ees r
-	fis16-.\f cis'-. gis-. cis-. a-. cis-. b32( a gis fis)
+	fis16-.\f cis'-. gis-. cis-. a-. cis-. b32( a gis! fis)
 	fis2\ff~
 	fis~
 	fis
 % Bars 201 to 205
-	<< f!2-> {s8. s16\mf s4}>>
+	f!2->\mf
 	f2->
 	f->
 	f\p
@@ -286,41 +286,29 @@ musicOboeIIMvtIII = \relative c {
 	R2
 % Bars 236 to 240
 	r4 ees8-.\pp r
-	ees-. r ees-. r16 \section r
+	ees-. r ees-. r16 \section \break r
 	R2*3
 	
 	
 % Bars 241 to 245
-	R2\fermata
+	\once \ni R2\fermata
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 246 to 250
-	R2*8
+	R2*25
 	
 	
 	
 	
 % Bars 251 to 255
 	
-	
-	
-	R2*10
-	
 % Bars 256 to 260
 	
 % Bars 261 to 265
 	
-	
-	
-	R2
-	R2*6
 % Bars 266 to 270
-	
-	
-	
-	
 	
 % Bars 271 to 275
 	c4->\mf b->
@@ -331,7 +319,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 276 to 280
 	f'-. f-. c-. r
 	c-.\mf r a-. r
-	d8-.\p_\dimin r g,-. r
+	d8-._\pdimin r g,-. r
 	bes-. r g!-. r
 	c8-. r f,-. r
 % Bars 281 to 285
@@ -339,9 +327,9 @@ musicOboeIIMvtIII = \relative c {
 	
 	des'16\brack\pp r r g,([ f]) r r bes(
 	aes8) r r4
-	R2
+	R2*2
 % Bars 286 to 290
-	R
+	
 	d8->\< c~ c16 bes-.\! aes( f)
 	f'8->\< ees~ ees16 des\!-. ces( aes)
 	aes'8->\f ges->~ ges16 f-. ees( des)
@@ -353,14 +341,14 @@ musicOboeIIMvtIII = \relative c {
 	c-. b-. c-. r
 	f-. e-. f-. r
 % Bars 296 to 300
-	aes,8-. bes\prall c-. r
+	aes,8-. bes c-. r
 	c4-> b->
 	c8-. a-. b-. r
 	c4. b8
 	c8-. a-. b-. r
 % Bars 301 to 305
 	c-. b-. c-. r
-	aes8-. bes!\prall c-. bes-.
+	aes8-. bes! c-. bes-.
 	c4. b8-.
 	c-. b-. e4->
 	f8->\fp f16 r d8->\fp d16 r
@@ -397,7 +385,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 331 to 335
 	g->] ees->[ g->] f16([ ees
 	d c]) bes8-.[ c-.] d-.[ 
-	d]-. b4.\fermata % signo
+	d]-. b4.\fermata \section % signo
 	R2
 	des,\pp
 % Bars 336 to 340
@@ -455,5 +443,5 @@ musicOboeIIMvtIII = \relative c {
 	c2~
 	c8 f-. g8.\p c,16
 % Bar 381
-	c8 r r4 \markFermata \fine 
+	c8 r r4 \markNormalSizeFermata \fine 
 }

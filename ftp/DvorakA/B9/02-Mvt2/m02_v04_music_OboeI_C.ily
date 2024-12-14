@@ -76,9 +76,9 @@ musicOboeIMvtII = \relative c {
 % Bars 61 to 65
 	\partCombineApart g2^\solo~
 	g4 f8.( e16
-	f4.) g32( f e f
+	f4.) g32( f e f)
 	bes2\<~
-	bes8)\! f(\> d c16 bes)\!
+	bes8\! f(\> d c16 bes)\!
 % Bars 66 to 70 
 	f'8(\pp ees4 d32 ees f ges)
 	ges4( f16_\brackM\crescmarkup ees des c)

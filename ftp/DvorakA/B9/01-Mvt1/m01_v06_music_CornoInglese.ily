@@ -18,7 +18,7 @@ musicCornoIngleseMvtI = \relative c {
 	
 % Bars 11 to 15
 	\repeat volta 2 {
-		R2.*276
+		R2.*240
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -114,7 +114,7 @@ musicCornoIngleseMvtI = \relative c {
 % Bars 246 to 250
 	
 % Bars 251 to 255
-	
+		\mmrLength #15 R2.*36
 % Bars 256 to 260
 	
 % Bars 261 to 265

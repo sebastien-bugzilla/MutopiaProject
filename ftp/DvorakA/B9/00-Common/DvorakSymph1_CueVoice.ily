@@ -220,7 +220,7 @@ cueVoicePiccoloMvtIV = \relative c {
 cueVoiceOboeIMvtI = \relative c {
 	s1*8 s2.*390 s2*20 s2.*41
 	% bar 460 - 463
-	\voiceTwo ges'2(^\markup {Ob.I} aes4
+	\voiceTwo ges'2(^\markup {Cl.I} aes4
 	bes2 ces4
 	des2 ees4
 	ges fes des) \oneVoice 
@@ -239,13 +239,13 @@ cueVoiceOboeIMvtIV = \relative c {
 	e4^\markup {Cl.II} dis
 	s2*257
 	% bar 456 - 457
-	\voiceOne a'4\ff d,
+	\voiceOne a'4\ff^\markup {Fag.I} d,
 	d4. e8 
 	s2*183
 	% bar 641 - 644
 	r8.^\markup {Viol.I} b''16 b4
-	r8. g16 g4
-	r8. d16 d4 \oneVoice 
+	r8. g16 g4 \oneVoice 
+	r8. d16 d4 
 	d cis
 }
 cueVoiceOboeIIMvtI = \relative c {
@@ -293,7 +293,7 @@ cueVoiceOboeIIMvtIV = \relative c {
 	s2*162
 	% bar 215 - 218
 	c,4\repeatTie^\markup {Ob.I} b~
-	b a(
+	b \shape #'((0 . 1.5)(0 . 0)(0 . 0)(0 . 1.5)) Slur a(
 	c8. gis16 b4~
 	b) a 
 	s2*237
@@ -303,14 +303,14 @@ cueVoiceOboeIIMvtIV = \relative c {
 	s2*203
 	% bar 661 - 664
 	bes''4(^\markup {Ob.I} a~
-	a) g(
+	a) \shape #'((0 . 1.5)(0 . -0.5)(0 . -0.5)(0 . 1.5)) Slur g(
 	bes8. fis16 a4~
 	a) g \oneVoice 
 }
 cueVoiceCornoIngleseMvtI = \relative c {
 	s1*8 s2.*373
 	% bar 382 - 398
-	\voiceOne g'''4-.^\markup {Fl.} f-. e-.
+	\voiceOne g'''4-.-\offset X-offset -2.5 ^\markup {Fl.} f-. e-.
 	d-. c-. c'-. 
 	d,-. c-. c'-. 
 	bes-. a!-. g-. 
