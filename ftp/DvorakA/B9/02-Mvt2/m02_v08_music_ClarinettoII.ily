@@ -11,13 +11,13 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 1 to 5
 	bes'2\fp\fermata
 	g\fp\fermata
-	<< bes4\fermata {s8\< s\!} >> << ees4\fermata {s8\< s\!} >>
+	<< bes4\fermata {\hairpinShorten #'(0 . -1) s8\< s\!} >> << ees4\fermata {\hairpinShorten #'(0 . -1) s8\< s\!} >>
 	c8\<( bes16 a\! g8)\> a8\fermata\!
 	a'2\fp\fermata
 % Bars 6 to 10
 	bes\fp\fermata
 	a8\< bes\fermata\! bes\<[ ees16.\fermata a,32]\!
-	<< a2\fermata {s8\< s\! s\> s\!}>>
+	<< a2\fermata {\hairpinShorten #'(0 . -0.4) s8\< s\! \hairpinShorten #'(-0.4 . 0) s\> s\!}>>
 	R2*16
 % Bars 11 to 15
 	
@@ -33,13 +33,13 @@ musicClarinettoIIMvtII = \relative c {
 	a,2->\brack\pp
 	R
 	a->
-	R
-	R2*4
+	R2*8
+	
 % Bars 31 to 35
 	
 	
 	
-	R2*3
+	
 	
 % Bars 36 to 40
 	
@@ -97,7 +97,7 @@ musicClarinettoIIMvtII = \relative c {
 	ees16\< r r ees32-. ees-. ees16\! r r f32-. f-.
 % Bars 81 to 85
 	\tuplet 6/4 4 {e16\mf e e e e e  e e e g g g
-	g_\crescendo g g c\< c c b b b\! bes bes bes}
+	g_\crescendo g g \hairpinShorten #'(0 . 1) c\< c c b b b\! bes bes bes}
 	a8->\f[ c16-. a32.-. a64-.] c16 f a, r
 	f'8[ c16-. a32.-. a64-.] c16 f a, r
 	r8 g'->[ f-> c->]
@@ -136,13 +136,13 @@ musicClarinettoIIMvtII = \relative c {
 	g( bes8 aes)
 	g4( f8 ees)
 	d8.( ees32 f ees16) r r8
-	R2*5
+	R2*9
 % Bars 116 to 120
 	
 	
 	
 	
-	R2*4
+	
 % Bars 121 to 125
 	
 	
@@ -162,34 +162,23 @@ musicClarinettoIIMvtII = \relative c {
 	
 	
 % Bars 136 to 140
-	a,8.(\brack\p\brackM\crescmarkup b32 a) g( fis e fis g a b cis)
+	a,8.(-\offset X-offset -2 \brack\p-\tweak extra-offset #'(0.4 . 1.3) \brackM\crescmarkup b32 a) g( fis e fis g a b cis)
 	d16 r a r e' r a r
 	d,32(\brack\f cis b a b cis d e fis e d cis d e fis g)
 	a( g fis e d e fis g a b cis d e fis g a)
 	bes!16\ff r r8 r4\fermata
 % Bars 141 to 145
 	bes,16 r r8 r4\fermata
-	R2*5
+	R2*26
 	
 	
 	
 % Bars 146 to 150
 	
-	R2*2
-	
-	R2*3
-	
 % Bars 151 to 155
-	
-	R2*7
-	
-	
 	
 % Bars 156 to 160
 	
-	
-	
-	R2*9
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -206,15 +195,11 @@ musicClarinettoIIMvtII = \relative c {
 	\key bes \major \afterGrace e!4\startTrillSpan {dis16( e)\stopTrillSpan} \afterGrace a4\startTrillSpan {gis16( a)\stopTrillSpan}
 % Bars 176 to 180
 	d,8 r r4
-	R2*5
+	R2*9
 	
 	
 	
 % Bars 181 to 185
-	
-	R2*4
-	
-	
 	
 % Bars 186 to 190
 	bes,4(\brack\ppp aes)
@@ -229,9 +214,9 @@ musicClarinettoIIMvtII = \relative c {
 	f2\ppp\fermata~
 	f8 r r4
 % Bars 196 to 200
-	R2*2
+	R2*3
 	
-	R2
+	
 	bes'2\brack\p~
 	<< bes~ {s8\< s s s\!}>>
 % Bars 201 to 204

@@ -151,7 +151,7 @@ musicClarinettoIIMvtIII = \relative c {
 		
 		
 		f4->(\p f->)
-		f f
+		f-> f->
 		f-> f->\<
 % Bars 121 to 125
 		e!( ees)\!
@@ -383,7 +383,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 316 to 320
 	d2~
 	d4 e
-	c8-. c-. cis8.-> cis16
+	c8-. c-. c8.-> c16
 	cis8 r r4 
 	bes8-. bes-. bes8.-> bes16
 % Bars 321 to 325

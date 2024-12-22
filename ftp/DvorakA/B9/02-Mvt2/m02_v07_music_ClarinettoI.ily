@@ -11,14 +11,14 @@ musicClarinettoIMvtII = \relative c {
 % Bars 1 to 5
 	d''2\fp\fermata
 	bes\fp\fermata
-	<< bes4\fermata {s8\< s\!} >> << ees4\fermata {s8\< s\!} >>
+	<< bes4\fermata {\hairpinShorten #'(0 . -1) s8\< s\!} >> << ees4\fermata {\hairpinShorten #'(0 . -1) s8\< s\!} >>
 	ees,8\<( d16 c\! bes8)\> c8\fermata\!
 	a''2\fp\fermata
 % Bars 6 to 10
 	bes\fp\fermata
 	a8\< bes\fermata\! bes\<[ ees16.\fermata a,32]\!
-	<< a2\fermata {s8\< s\! s\> s\!}>>
-	R2*17
+	<< a2\fermata {\hairpinShorten #'(0 . -0.4) s8\< s\! \hairpinShorten #'(-0.4 . 0) s\> s\!}>>
+	R2*19
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -26,9 +26,9 @@ musicClarinettoIMvtII = \relative c {
 % Bars 21 to 25
 	
 % Bars 26 to 30
-	R2
-	R
-	\ni \mmrPos #4 R
+	
+	
+	\ni \mmrPos #4 R2
 	\mmrPos #-4 R \no
 	f2\brack\p~
 % Bars 31 to 35
@@ -42,7 +42,7 @@ musicClarinettoIMvtII = \relative c {
 	r4 a4\p~
 	a g8.( fis16
 	g4.) a32( g fis g)
-	<<c2~ {s8 s\< s s\! }>>
+	<<c2~ {\hairpinShorten #'(0 . -0.5) s8\< s s s\! }>>
 % Bars 41 to 45
 	c8\> g( e\! d16 c)
 	g'8(\pp f4) e32(\< f g aes)\!
@@ -77,14 +77,14 @@ musicClarinettoIMvtII = \relative c {
 	c c c c  aes aes aes aes
 	d d d d d_\crescmarkup d d d
 	g\< g g g f f\! ees ees
-	ees\pp r ees r ees r ees r
+	\startMeasureCount ees\pp r ees r ees r ees r
 	ees r ees r f r f r
 % Bars 71 to 75
 	ees r ees r ees r  ees r
 	ees r ees r ees r ees r
 	ees\brack\p r ees r ees r ees r
 	ees r ees r ees r ees r
-	ees r ees r ees r ees r
+	ees r ees r ees r ees r \stopMeasureCount
 % Bars 76 to 80
 	ees\< r r ees32-. ees-. d16 r r aes'32-. aes-.\!
 	g16\f r r g32-. g-. f16\> r r ees32-. ees-.\!
@@ -93,7 +93,7 @@ musicClarinettoIMvtII = \relative c {
 	bes16\< r r bes32-. bes-. bes16\! r r g32-. g-.
 % Bars 81 to 85
 	\tuplet 6/4 4 {g16\mf g g g g g a a a b b b
-	c_\crescendo c c ees!\< ees ees d d d\! e e e}
+	c_\crescmarkup c c ees!\< ees ees d d d\! e e e}
 	f8->\f[ g16-. f32.-. f64-.] g16 a f r
 	a8[ g16-. f32.-. f64-.] g16 a f r
 	r8 bes->[ a-> g->]
@@ -138,7 +138,7 @@ musicClarinettoIMvtII = \relative c {
 	
 	
 	
-	g4(\brack\pp_\crescendo aes)\<
+	g4(\brack\pp aes_\crescmarkup)\<
 % Bars 121 to 125
 	ees( f)\!
 	r16 f-. g( f) r8 r16 f-.
@@ -154,11 +154,11 @@ musicClarinettoIMvtII = \relative c {
 % Bars 131 to 135
 	ees8[\> ges(\! f d)]
 	ees16 r r8 r4
-	R2*3
+	R2*4
 	
 	
 % Bars 136 to 140
-	R2
+	
 	a,8.\brack\mf( b32 a) g( fis e fis g a b cis)
 	d,(\brack\f cis b a b cis d e fis e d cis d e fis g)
 	a( g fis e d e fis g a b cis d e fis g a)
@@ -177,10 +177,10 @@ musicClarinettoIMvtII = \relative c {
 	
 % Bars 151 to 155
 	
-	<< a2(^\solo\brack\p {s8\< s s s\!}>>
-	bes4.\> cis,8\!
+	<< a2(^\solo\brack\p {\hairpinShorten #'(-0.3 . -2.3) s8\< s s s\!}>>
+	\hairpinShorten #'(1 . 0) bes4.\> cis,8\!
 	d2~
-	d4) c8.( b16)
+	d4) c!8.( b16)
 % Bars 156 to 160
 	c4.( d32 c b c)
 	f2~
@@ -203,7 +203,7 @@ musicClarinettoIMvtII = \relative c {
 % Bars 176 to 180
 	d,8 r d16(_\dimin fis a g)
 	fis(_\dimmarkup a c bes) a( d cis g)
-	fis( g a fis d g fis c)
+	fis( g a fis d g fis c!)
 	ees( d a' g d c a' g)
 	bes( g f e) r4
 % Bars 181 to 185
@@ -234,5 +234,5 @@ musicClarinettoIMvtII = \relative c {
 	d4(\> c8\! bes)
 	a8.( c32 bes) bes8 r
 	r16. f'32\pp-.[ f16.-. f32-.] bes8-. bes-. 
-	<< bes2\fermata {s8\< s\! s\> s\!}>> \fine
+	<< bes2\fermata {\hairpinShorten #'(0 . -0.3) s8\< s\! \hairpinShorten #'(-0.3 . 0) s\> s\!}>> \fine
 }

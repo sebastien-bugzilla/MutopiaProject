@@ -825,7 +825,7 @@ musicClarinettoIMvtIV = \relative c {
 	d~
 % Bars 721 to 725
 	d~
-	d4 cis8 \once \partCombineAutomatic r
+	d4( cis8) \once \partCombineAutomatic r
 	d4 e8. d16
 	d4 e8. d16
 	d4 cis8. b16

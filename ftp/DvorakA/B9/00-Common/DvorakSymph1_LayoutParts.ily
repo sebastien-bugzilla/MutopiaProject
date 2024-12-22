@@ -54,6 +54,7 @@
 		
 %		\override StaffSymbol.transparent = ##t
 %		\override LedgerLineSpanner.transparent = ##t
+%		\override BarLine.transparent = ##t
 	}
 	\context {
 		\Score

@@ -133,7 +133,10 @@ nameCornoIngleseMvtIV = {
 nameClarinettoIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto I" "in B"
+			\lower #1.5 "Clarinetto II" 
+			\concat {
+				\general-align #Y #CENTER { "in B" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -142,7 +145,10 @@ nameClarinettoIMvtI = {
 nameClarinettoIMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto I" "in B"
+			\lower #1.5 "Clarinetto II" 
+			\concat {
+				\general-align #Y #CENTER { "in B" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -151,7 +157,10 @@ nameClarinettoIMvtII = {
 nameClarinettoIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto I" "in B"
+			\lower #1.5 "Clarinetto II" 
+			\concat {
+				\general-align #Y #CENTER { "in B" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -160,7 +169,10 @@ nameClarinettoIMvtIII = {
 nameClarinettoIMvtIV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto I" "in B"
+			\lower #1.5 "Clarinetto II" 
+			\concat {
+				\general-align #Y #CENTER { "in B" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -169,7 +181,10 @@ nameClarinettoIMvtIV = {
 nameClarinettoIIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto II" "in B"
+			\lower #1.5 "Clarinetto II" 
+			\concat {
+				\general-align #Y #CENTER { "in B" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -178,7 +193,10 @@ nameClarinettoIIMvtI = {
 nameClarinettoIIMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto II" "in B"
+			\lower #1.5 "Clarinetto II" 
+			\concat {
+				\general-align #Y #CENTER { "in B" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -187,7 +205,10 @@ nameClarinettoIIMvtII = {
 nameClarinettoIIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto II" "in B"
+			\lower #1.5 "Clarinetto II" 
+			\concat {
+				\general-align #Y #CENTER { "in B" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -196,7 +217,10 @@ nameClarinettoIIMvtIII = {
 nameClarinettoIIMvtIV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto II" "in B"
+			\lower #1.5 "Clarinetto II" 
+			\concat {
+				\general-align #Y #CENTER { "in B" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""

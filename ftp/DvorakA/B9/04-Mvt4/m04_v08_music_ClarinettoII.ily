@@ -47,19 +47,15 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 31 to 35
 	fis,2)~
 	fis8 r r4\fermata
-	R2*4
+	R2*17
 	
 	
 % Bars 36 to 40
 	
-	R2*9
-	
-	
-	
 % Bars 41 to 45
 	
 % Bars 46 to 50
-	R2*4
+	
 	
 	
 	
@@ -96,7 +92,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ees'4.. ees,16
 % Bars 76 to 80
 	ees2
-	dis'8.\brack\p_\pocoapococrescendo dis,16 dis4
+	dis'8.\brack\p-\offset X-offset 2.5 _\pocoapococrescendo dis,16 dis4
 	fis'!8. fis,!16 fis4
 	b8. b,16 b4
 	dis'8. dis,16 dis4
@@ -199,7 +195,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 161 to 165
 	b~
 	b
-	r8 a\brack\p_\crescendo r a
+	r8 a\brack\p-\offset X-offset 2.5 _\crescendo r a
 	r a r a
 	r a r a\<
 % Bars 166 to 170
@@ -226,7 +222,7 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	
 	r8. e'16[(\f dis8.) e16](
-	dis8)_\diminuendo r r4
+	dis8)-\offset X-offset -2.5 _\diminuendo r r4
 	r8. fis,16[(\mf b8.) fis16](
 % Bars 191 to 195
 	b8) r r4
@@ -237,7 +233,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 196 to 200
 	R2*2
 	
-	fis,4(\brack\pp\< << eis) {s8\> s\!}>>
+	\hairpinShorten #'(-0.3 . 0) fis,4(-\offset X-offset -1.5 \brack\pp\< << eis) {\hairpinShorten #'(0 . -0.5) s8\> s\!}>>
 	r8 fis4 fis8
 	r fis4 fis8
 % Bars 201 to 205
@@ -336,7 +332,7 @@ musicClarinettoIIMvtIV = \relative c {
 	a4( gis8.) fis16-.
 % Bars 286 to 290
 	fis4 e16(\< eis fis gis)\!
-	e2
+	e!2
 	e4 e
 	e2
 	e4 e
@@ -386,24 +382,16 @@ musicClarinettoIIMvtIV = \relative c {
 	g~
 	g~
 	g
-	g
+	g->
 % Bars 336 to 340
 	g4..-> g16
 	g4-> g->
 	g4..-> g16
 	fis8 r r4
-	R2*3 
+	R2*11 
 % Bars 341 to 345
 	
-	
-	R2*5
-	
-	
 % Bars 346 to 350
-	
-	
-	R2*3
-	
 	
 % Bars 351 to 355
 	r8 gis\brack\f r gis
@@ -444,38 +432,34 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 381 to 385
 	bes4\< aes(
 	des\! c)
-	R2
+	R2 
 	bes2\pp~
 	bes4\< aes(
 % Bars 386 to 390
 	des c)\! 
-	R2*4
+	R2*13
 	
 	
 	
 % Bars 391 to 395
-	R2*4
 	
-	
-	
-	R2*5
 % Bars 396 to 400
 	
 	
 	
 	
-	c4_\crescendo d~
+	c4-\offset X-offset -2 _\crescendo d~
 % Bars 401 to 405
 	d c~
 	c2
-	cis!4..\f cis16
+	\startMeasureCount cis!4..\f cis16
 	cis4.. cis16
 	cis4.. cis16
 % Bars 406 to 410
 	cis4.. cis16
 	cis4.. cis16
 	cis4.. cis16
-	cis4.. cis16
+	cis4.. cis16 \stopMeasureCount
 	cis4.. a16\brack\ff
 % Bars 411 to 415
 	fis2~
@@ -633,7 +617,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ees4 d8. c16
 	c4 bes8. a16
 	a4( bes8) r
-	b2->~
+	b!2->~
 % Bars 551 to 555
 	b2
 	d->~
@@ -714,7 +698,7 @@ musicClarinettoIIMvtIV = \relative c {
 	g4.. fis16
 % Bars 616 to 620
 	fis4.. f16
-	eis4 fis'8. cis16
+	eis4 fis'!8. cis16
 	cis4.. cis16
 	cis4 d8. a16
 	a4.. a16
@@ -758,7 +742,7 @@ musicClarinettoIIMvtIV = \relative c {
 	
 % Bars 656 to 660
 	
-	b'8._\fconespressione c16 c8. d16
+	b'8.\f^\conespressione c16 c8. d16
 	d8_\diminuendo r r4
 	b8. c16 c8. d16
 	d8 r r4
@@ -788,8 +772,8 @@ musicClarinettoIIMvtIV = \relative c {
 	r4 r8. fis'16\p
 % Bars 681 to 685
 	gis4( ais)
-	<< b2 {s4\< s\!} >>
-	<< b2 {s4\< s8\! s\>}>>
+	<< b2 {\hairpinShorten #'(0 . -1) s4\< s8 s\!} >>
+	<< b2 {\hairpinShorten #'(0 . -2) s4\< s8\! \hairpinShorten #'(2 . 0) s\>}>>
 	b4 ais\!
 	b8 r r4
 % Bars 686 to 690
@@ -807,8 +791,8 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 696 to 700
 	
 % Bars 701 to 705
-	b2\f
-	a
+	b2->\f
+	a->
 	b8.-> cis16 d8-. cis-.
 	d8.-> e16 fis8-. d-.
 	g,4-> g->
@@ -838,7 +822,7 @@ musicClarinettoIIMvtIV = \relative c {
 	a~
 % Bars 726 to 730
 	a4 a16( ais b cis
-	d4) a8. a16
+	d4) a!8. a16
 	a4 a8. a16
 	a4 a8. a16
 	a4~ a8 r
@@ -857,7 +841,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 741 to 745
 	eis4-> fisis->\!
 	gis2\fz
-	d\fp
+	d!\fp
 	bes\p
 	gis~
 % Bars 746 to 750
@@ -892,8 +876,8 @@ musicClarinettoIIMvtIV = \relative c {
 	cis2 b1->
 % Bars 771 to 775
 	cis1-> a4 b8. a16
-	\tuplet 3/2 2 {bes4-.\brack\ff r bes-. bes-. r bes-. bes-. r bes-.
-	b!-. r b-. ais-. r ais-. b-. r b-.
+	\tuplet 3/2 2 {bes4-.-\offset X-offset -1 \brack\ff r bes-. bes-. r bes-. bes-. r bes-.
+	\stemUp b!-. r b-. ais-. r ais-. b-. r b-. \stemNeutral
 	a!-. r a-. a-. r a-. a-. r a-.}
 	a2-> a-> a->
 % Bars 776 to 780
@@ -909,7 +893,7 @@ musicClarinettoIIMvtIV = \relative c {
 	a4 b8. a16 a2 a
 	d4 cis8. d16 d2 d
 % Bars 786 to 790
-	a'1 << d2 {s8\< s s s\!}>>
+	a'1( << d2) {s8\< s s s\!}>>
 	d1 g,2
 	a4 a a2.. a8
 	b4 b b2.. b8

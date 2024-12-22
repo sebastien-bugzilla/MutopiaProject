@@ -382,7 +382,7 @@ musicClarinettoIIMvtIV = \relative c {
 	g~
 	g~
 	g
-	g
+	g->
 % Bars 336 to 340
 	g4..-> g16
 	g4-> g->
@@ -803,8 +803,8 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 696 to 700
 	
 % Bars 701 to 705
-	b2\f
-	a
+	b2->\f
+	a->
 	b8.-> cis16 d8-. cis-.
 	d8.-> e16 fis8-. d-.
 	g,4-> g->
@@ -905,7 +905,7 @@ musicClarinettoIIMvtIV = \relative c {
 	a4 b8. a16 a2 a
 	d4 cis8. d16 d2 d
 % Bars 786 to 790
-	a'1 << d2 {s8\< s s s\!}>>
+	a'1( << d2) {s8\< s s s\!}>>
 	d1 g,2
 	a4 a a2.. a8
 	b4 b b2.. b8

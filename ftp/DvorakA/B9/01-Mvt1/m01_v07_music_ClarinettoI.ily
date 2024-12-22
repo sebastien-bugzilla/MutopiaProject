@@ -19,14 +19,14 @@ musicClarinettoIMvtI = \relative c {
 	c4 r r2
 	a4 r r2\fermata \bar "||"
 	\time 3/4 a'2.\pp->
-	a->
+	\measureCountFrom 2 \startMeasureCount a->
 % Bars 11 to 15
 	\repeat volta 2 {
 		a->
 		a->
 		a->
 		a->
-		a->
+		a-> \stopMeasureCount
 % Bars 16 to 20
 		a->~
 		a4 r r
@@ -36,7 +36,7 @@ musicClarinettoIMvtI = \relative c {
 		
 		
 		
-		a2.->\pp
+		\measureCountFrom 1 \startMeasureCount a2.->\pp
 % Bars 26 to 30
 		a->
 		a->
@@ -44,8 +44,8 @@ musicClarinettoIMvtI = \relative c {
 		a->
 		a->
 % Bars 31 to 35
-		a->
-		a->~
+		a-> \stopMeasureCount
+		a->~ 
 		a4 r r
 		R2.*7
 % Bars 36 to 40
@@ -112,7 +112,7 @@ musicClarinettoIMvtI = \relative c {
 		R2.
 % Bars 91 to 95
 		r4 gis(\brack\p\< a
-		cis\> b\! a
+		cis\> b a\!
 		g!2.\p~
 		g)
 		f~
@@ -151,7 +151,7 @@ musicClarinettoIMvtI = \relative c {
 		e f fis
 		g) r r
 		a r r
-		r f2\p
+		\startMeasureCount r f2\p
 		r4 f2
 % Bars 131 to 135
 		r4 f2_\crescendo
@@ -160,7 +160,7 @@ musicClarinettoIMvtI = \relative c {
 		r4 f2
 		r4 f2
 % Bars 136 to 140
-		r4 f2
+		r4 f2 \stopMeasureCount
 		d2.\f
 		c
 		ees~
@@ -200,11 +200,11 @@ musicClarinettoIMvtI = \relative c {
 		g r r
 		R2.*2
 		
-		g,2\brack\f_\diminuendo c4~
+		g,2\brack\f-\offset X-offset #3 _\diminuendo c4~
 % Bars 171 to 175
 		c2.~
 		c
-		c\pp~
+		\startMeasureCount c\pp~
 		c~
 		c~
 % Bars 176 to 180
@@ -212,7 +212,7 @@ musicClarinettoIMvtI = \relative c {
 		c~
 		c~
 		c~
-		c
+		c \stopMeasureCount
 % Bars 181 to 185
 		a\brack\p(
 		bes)
@@ -233,9 +233,9 @@ musicClarinettoIMvtI = \relative c {
 		a~
 % Bars 196 to 200
 		a
-		b~
+		b^~
 		b8 e, e a a gis
-		b2.~
+		b2.^~
 		b8 e, e a a gis
 % Bars 201 to 205
 		gis\brack\ff d d f f e
@@ -248,7 +248,7 @@ musicClarinettoIMvtI = \relative c {
 		fis4)\! r r
 		r cis2(\p\<
 		ees4)\! r r
-		r c2\p\<
+		r \hairpinShorten #'(-0.3 . -0.3) c!2\p\<
 % Bars 211 to 215
 		a2.\pp~
 		a~_\crescendo
@@ -266,7 +266,7 @@ musicClarinettoIMvtI = \relative c {
 		r c-. c-.
 		ees2.\fz->~
 		ees
-		f->\fz~_\pocoapococrescendo
+		f~->_\fzpocoapococrescendo
 % Bars 226 to 230
 		f
 		g4 r r
@@ -343,8 +343,8 @@ musicClarinettoIMvtI = \relative c {
 		e4 r r
 		\alternative {
 			\volta 1 {
-				a2.->\pp
-				a->
+				\startMeasureCount \noteHeadEsw #'(-2 . 0) a2.->\pp \revertNoteHeadEsw
+				a-> \stopMeasureCount
 			}
 			\volta 2 {
 				d,\ff~
@@ -355,7 +355,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 291 to 295
 	d~
 	d
-	a'
+	\startMeasureCount a'
 	a
 	a->
 % Bars 296 to 300
@@ -363,7 +363,7 @@ musicClarinettoIMvtI = \relative c {
 	a->
 	a->
 	a->
-	a->
+	a-> \stopMeasureCount
 % Bars 301 to 305
 	c,2~\p c8. bes16-.
 	a2~ a8. g16-.
@@ -442,9 +442,9 @@ musicClarinettoIMvtI = \relative c {
 	r4 g2->\fz
 	r4 b,2->\fz
 	r4 b2->\fz
-	d,2(\brack\f e4)
+	d,2(-\tweak extra-offset #'(-0.9 . -9.2) ^\brack\f e4)
 % Bars 371 to 375
-	fis2(_\brackM\legato g4)
+	fis2(^\brackM\legato g4)
 	a2( b4
 	d cis b)
 	a8 r r4 r8. d,16
@@ -469,10 +469,10 @@ musicClarinettoIMvtI = \relative c {
 	ees-. des-. des'-.
 % Bars 391 to 395
 	c-. r r
-	\afterGrace a2.\startTrillSpan {gis16( a)\stopTrillSpan}
+	\afterGrace a!2.\startTrillSpan {gis16( a)\stopTrillSpan}
 	bes4 r r
 	\afterGrace fis2.\startTrillSpan { eis16( fis)\stopTrillSpan}
-	g4_\crescendo r r
+	g4_\crescmarkup r r
 % Bars 396 to 400
 	a\brack\pp a \afterGrace a\trill {gis16( a)}
 	c4( bes) r8. bes16
@@ -526,15 +526,15 @@ musicClarinettoIMvtI = \relative c {
 % Bars 441 to 445
 	
 	
-	f8\brack\pp_\crescendo f f f f f 
+	f8\brack\pp-\offset X-offset 3.5 _\crescendo f f f f f 
 	f f f f f f 
 	f f f f f f 
 % Bars 446 to 450
 	f f f f f f 
 	f4 r r 
 	R2.
-	r4 bes,,!(\brack\p\< c
-	f\> ees des
+	r4 \hairpinShorten #'(0 . -2) bes,,!(\brack\p\< c
+	\hairpinShorten #'(2 . 0) f\> ees des
 % Bars 451 to 455
 	c)\! r r
 	R2.
@@ -545,7 +545,7 @@ musicClarinettoIMvtI = \relative c {
 	aes~
 	aes~
 	aes~\<
-	<<aes {s8\> s s s s s\!}>>
+	<<aes {\hairpinShorten #'(0 . -1.5) s8\> s s s s s\!}>>
 	aes2( bes4\<
 % Bars 461 to 465
 	c2 des4
@@ -593,7 +593,7 @@ musicClarinettoIMvtI = \relative c {
 	<< dis) {s8\< s s s s s\!}>>
 	<< e2.( {s8\< s s s s s\!}>>
 	<< cis2.) {s8\< s s s s s\!}>> \bar "||"
-	\key b \minor d2\p r8. d16
+	\key b \minor \startMeasureCount d2\p r8. d16
 	d2 r8. d16
 % Bars 501 to 505
 	d2 r8. d16
@@ -602,7 +602,7 @@ musicClarinettoIMvtI = \relative c {
 	d2 r8. d16
 	d2 r8. d16\<
 % Bars 506 to 510
-	d2 r8. d16\!
+	d2 r8. d16\! \stopMeasureCount
 	b2.->\f
 	a->
 	c->~
@@ -644,7 +644,7 @@ musicClarinettoIMvtI = \relative c {
 	
 	e,2(\brack\p a4)~
 % Bars 541 to 545
-	a2.~
+	\startMeasureCount a2.~
 	a~
 	a~\p
 	a~
@@ -654,18 +654,18 @@ musicClarinettoIMvtI = \relative c {
 	a~
 	a~
 	a~
-	a
+	a \stopMeasureCount
 % Bars 551 to 555
 	d4( fis b8)\<[ r16 a-.]
 	g2\!( d'4)
 	a4(\< e fis\!
-	g2.)~
+	\startMeasureCount g2.)~
 	g~_\crescmarkup
 % Bars 556 to 560
 	g~
 	g~
 	g~
-	g\f
+	g\f \stopMeasureCount
 	r4 e2->
 % Bars 561 to 565
 	r4 e2->
@@ -740,16 +740,16 @@ musicClarinettoIMvtI = \relative c {
 	f2~ f8 f
 	f2~ f8 f
 % Bars 621 to 625
-	dis2.~
+	\startMeasureCount dis2.~
 	dis~
 	dis~
 	dis~
 	dis~
 % Bars 626 to 630
 	dis~
-	dis
+	dis \stopMeasureCount
 	f!->
-	d\brack\ff
+	d!\brack\ff
 	bes
 % Bars 631 to 635
 	d

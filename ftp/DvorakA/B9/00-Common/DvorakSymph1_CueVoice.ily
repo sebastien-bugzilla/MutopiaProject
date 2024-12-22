@@ -340,7 +340,7 @@ cueVoiceClarinettoIMvtII = \relative c {
 	\voiceOne a'2^\markup {Cl.II}
 	\transpose bes c' {
 		\relative c'' {
-			c4(^\markup {Viol.I} bes8 aes) \oneVoice 
+			c4_(^\markup {Viol.I} bes8 aes) \oneVoice 
 		}
 	}
 }
@@ -371,14 +371,14 @@ cueVoiceClarinettoIIMvtII = \relative c {
 	% bar 25
 	\transpose bes c' {
 		\relative c {
-			\stemUp f''8(^\markup {Ob.I} g aes8. g16) \stemNeutral 
+			f''8(-\offset X-offset -4 ^\markup {Ob.I} g aes8. g16)
 		}
 	}
 }
 cueVoiceClarinettoIIMvtIII = \relative c {
 	s16 s2*136
 	% bar 138
-	<>^\markup {Archi}
+	<>_\markup {Archi}
 }
 cueVoiceClarinettoIIMvtIV = \relative c {
 	s2*32

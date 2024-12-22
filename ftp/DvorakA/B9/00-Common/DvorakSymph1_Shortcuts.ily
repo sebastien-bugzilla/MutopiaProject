@@ -287,6 +287,33 @@ tempoXoffset = #(define-music-function
 	#}
 )
 
+measureCountFrom = \override Staff.MeasureCounter.count-from = \etc
+
+noteHeadEsw = #(define-music-function
+	(spacing)
+	(pair?)
+	#{
+		\override NoteHead.extra-spacing-width = #spacing
+	#}
+)
+
+revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
+
+tempoDown = \once \override Score.MetronomeMark.direction = #-1 
+
+tempoEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
+
 
 
 
@@ -385,10 +412,6 @@ tempoXoffset = #(define-music-function
 %	\once \override Score.RehearsalMark.whiteout-style = #'outline
 %}
 
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
-
 %mmrMinLength = #(define-music-function
 %	(length)
 %	(number?)
@@ -462,24 +485,6 @@ tempoXoffset = #(define-music-function
 %		\once \override TextScript.outside-staff-priority = #prio
 %	#}
 %)
-
-%tempoDown = \once \override Score.MetronomeMark.direction = #-1 
-
-%tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-%tempoEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-
 
 %tupletOffset = #(define-music-function
 %	(offset)
