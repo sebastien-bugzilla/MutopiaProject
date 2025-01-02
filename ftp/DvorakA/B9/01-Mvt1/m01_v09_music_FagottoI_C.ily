@@ -166,7 +166,7 @@ musicFagottoIMvtI = \relative c {
 		g,2(\brack\p c4)
 		bes2( aes4)
 % Bars 131 to 135
-		g2( c4)
+		<< g2( {s4 s_\crescendo} >> c4)
 		bes2( aes4)
 		g2( ees'4)
 		d2( c4)
@@ -736,10 +736,10 @@ musicFagottoIMvtI = \relative c {
 	f~
 	f
 	r4 a2\brack\ff->
-	r4 a2 
+	r4 a2->
 	r4 b2->
 % Bars 606 to 610
-	r4 b2
+	r4 b2->
 	r4 des2->
 	r4 des2-> \clef tenor
 	r4 ees8-. f-. f-. ges-. \clef bass

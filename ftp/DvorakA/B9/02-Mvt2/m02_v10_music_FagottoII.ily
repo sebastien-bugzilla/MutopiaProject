@@ -12,7 +12,7 @@ musicFagottoIIMvtII = \relative c {
 	aes'2\fp\fermata
 	aes\fp\fermata
 	aes8\< des,\fermata\! bes\< g\fermata\!
-	<< ees2\fermata {s8\< s\! s\> s\!}>>
+	<< ees2\fermata {\hairpinShorten #'(0 . -0.3) s8\< s\! \hairpinShorten #'(-0.3 . 0) s-\tweak extra-offset #'(0 . -1.2) \> s\!}>>
 	c''2\fp\fermata
 % Bars 6 to 10
 	aes\fp\fermata
@@ -44,13 +44,13 @@ musicFagottoIIMvtII = \relative c {
 	bes2 
 	aes
 	des,8( c) bes4
-	<< bes2 {s8 s\< s s\!}>>
+	<< bes2 {\hairpinShorten #'(0 . -0.5) s8\< s s s\!}>>
 % Bars 36 to 40
 	ees4.(\> des8)\!
 	c2(
 	bes4 aes)\>
 	des\! c8 ees
-	<< d2 {s8 s\< s s\!}>>
+	<< d2 {\hairpinShorten #'(0 . -0.5) s8\< s s s\!}>>
 % Bars 41 to 45
 	aes4\> g\!
 	ges\pp bes
@@ -61,8 +61,8 @@ musicFagottoIIMvtII = \relative c {
 	R2*3
 	
 	
-	<< c'2\brack\p~ {s4 s_\brackM\pococresc}>>
-	c8 bes( aes g16 f
+	c'2~\brack\p
+	c8_\brackM\pococresc bes( aes g16 f
 % Bars 51 to 55
 	e4) g,8( aes)
 	bes32[\<-. c-. des-. ees!-. f-. g-. aes-. bes-.]\! ees,16 ees des des\f
@@ -77,15 +77,15 @@ musicFagottoIIMvtII = \relative c {
 	g') r r4
 % Bars 61 to 65
 	c16\p-. c-. c-. c-.  c-. c-. c-. c-.
-	c c c c des des des des
-	aes aes aes aes f' f f f
-	d d d d  d d d d
-	d d d d  g g g g
+	c4:16 des:
+	aes: f':
+	d2:
+	d4: g:
 % Bars 66 to 70
-	ges ges ges ges  bes, bes bes bes
-	ees ees ees ees  ees_\crescmarkup ees ees ees
-	des\< des des des f f\! f f
-	ges\pp r ges r ges r ges r
+	ges: bes,:
+	ees: ees:_\crescmarkup
+	des:\< f:\!
+	ges16\pp r ges r ges r ges r
 	ges r ges r ges r ges r
 % Bars 71 to 75
 	ges r ges r ges r ges r
@@ -101,24 +101,24 @@ musicFagottoIIMvtII = \relative c {
 	des16\< r r des32-. des-. des16\! r r ees32-. ees-.
 % Bars 81 to 85
 	\tuplet 6/4 4 {d16\mf d d d d d  d d d f f f
-	f_\crescendo f f bes\< bes bes a a a\! aes aes aes }
+	f-\offset X-offset 1.5 _\crescD\< f f bes bes bes a a a\! aes aes aes }
 	g8\f ees,4 ees8~
 	ees ees4 ees8
 	bes16 r bes r bes r bes r 
 % Bars 86 to 90
 	bes r bes r bes r bes r 
 	bes r bes r bes r bes r 
-	bes r bes r bes\> r bes r\!
+	bes r bes r bes-\tweak extra-offset #'(0 . -9.5) ^\> r bes r\!
 	aes'4(\p g)
 	aes( g)
 % Bars 91 to 95
 	aes2
-	<< bes {s8\< s\! s\> s\!}>>
+	bes
 	ees8 r r4
-	R2*2
+	R2*3
 	
 % Bars 96 to 100
-	R2
+	
 	bes'4~\mf bes16 a-. g-. f-.
 	bes32-. f-. ees-. d-. c16-. c'-. d32-. a-. g-. f-. ees16-. ees'-.
 	R2 
@@ -146,9 +146,9 @@ musicFagottoIIMvtII = \relative c {
 	f-. e-. f-. e-. f( c a f)
 	c2
 	c
-	des4(_\crescendo ees)\<
+	des4(_\crescmarkup ees)
 % Bars 121 to 125
-	f( ges)\!
+	f(\< ges)\!
 	g!8[ bes g ees]
 	aes'16\< g f c des aes bes f\!
 	bes2->_\dimin
@@ -173,23 +173,22 @@ musicFagottoIIMvtII = \relative c {
 	aes!16\ff r r8 r4\fermata
 % Bars 141 to 145
 	aes,,16 r r8 r4\fermata
-	R2*9
+	R2*17
 % Bars 146 to 150
 	
 % Bars 151 to 155
-	R2*2
-	
-	R2
-	R2*9
 	
 % Bars 156 to 160
 	
+	
+	
+	\mmrnDown R2*4
 % Bars 161 to 165
 	
 	
 	\ni \mmrPos #-4 R2 \no
 	\voiceTwo r4 \oneVoice r8. e''16 \clef tenor
-	e4.(\brack\p_\brackM\pocoapococresc f8)
+	e4.(\brack\p-\offset X-offset 2.3 _\brackM\pocoapococresc f8)
 % Bars 166 to 170
 	f4(\< fis8 g)\!
 	fis4.( g8) \section
@@ -200,12 +199,12 @@ musicFagottoIIMvtII = \relative c {
 	a8[( b c d)]
 	e16[( c e d32 c]) c8.( b32 a)
 	g8( a16 b) c8( d)
-	e16[( c e d32 c]) c8.( b32 a) \section \clef bass
+	e16[( c e d32 c]) c8.( b32 a) \section
 	\key aes \major \afterGrace d!4\startTrillSpan {cis16( d)\stopTrillSpan} \afterGrace g4\startTrillSpan {fis16( g)\stopTrillSpan}
 % Bars 176 to 180
-	c,8 r r4
+	c,8 r-\offset X-offset -1 _\dimin r4
 	c4\brack\f g'_\dimmarkup~
-	g f8.( e16) \clef tenor
+	g f8.( e16)
 	f4.( g32 f e f)
 	bes2~
 % Bars 181 to 185
@@ -224,8 +223,8 @@ musicFagottoIIMvtII = \relative c {
 	b2~
 	b
 	e8 r r4
-	R2\fermata
-	ees4(\brack\f f)
+	\once \ni R2\fermata
+	ees!4(\brack\f f)
 % Bars 196 to 200
 	ees( g8 f)
 	f4( ees)

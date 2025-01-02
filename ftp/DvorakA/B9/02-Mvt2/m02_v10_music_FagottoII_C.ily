@@ -203,7 +203,7 @@ musicFagottoIIMvtII = \relative c {
 	e16[( c e d32 c]) c8.( b32 a) \section \clef bass
 	\key aes \major \afterGrace d!4\startTrillSpan {cis16( d)\stopTrillSpan} \afterGrace g4\startTrillSpan {fis16( g)\stopTrillSpan}
 % Bars 176 to 180
-	c,8 r r4
+	c,8 r r4_\dimin
 	c4\brack\f g'_\dimmarkup~
 	g f8.( e16) \clef tenor
 	\grace {s8} f4.( g32 f e f)

@@ -5,18 +5,18 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicFagottoIMvtII = \relative c {
-	\clef bass
+	\clef tenor
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
 	c'2\fp\fermata
 	des\fp\fermata
-	c8\< des\fermata\! bes\< g\fermata\!
-	<< ees2\fermata {s8\< s\! s\> s\!}>>
+	c8\< des\fermata\! bes\< g\fermata\! \clef bass
+	<< ees2\fermata {\hairpinShorten #'(0 . -0.3) s8\< s\! \hairpinShorten #'(-0.3 . 0) s-\tweak extra-offset #'(0 . -0.4) \> s\!}>>
 	ees'2\fp\fermata
 % Bars 6 to 10
 	ees\fp\fermata
-	<< c4\fermata {s8\< s\!} >> aes8\< bes\fermata\!
+	<< c4\fermata {\hairpinShorten #'(0 . -1) s8\< s\!} >> aes8\< bes\fermata\!
 	f'(\< ees16 d\! c8\> d)\!\fermata
 	R2*8
 % Bars 11 to 15
@@ -32,25 +32,25 @@ musicFagottoIMvtII = \relative c {
 	c~
 	c
 	aes8 r r4
-	R2*4
+	R2*5
 % Bars 26 to 30
 	
 	
 	
-	R2
+	
 	c2\brack\p
 % Bars 31 to 35
 	des8 r r4
 	des2
 	ees4( des8 c)
-	bes[ aes16.( f'32]) f4~ \clef tenor 
+	bes[ aes16.( f'32]) \shape #'((0 . 0)(0 . -0.3)(0.25 . -1)(0.5 . -1.5)) Tie f4~ \clef tenor 
 	f8 ees d(\< bes'16 f)\!
 % Bars 36 to 40
 	aes4(\> g8 f)\! \clef bass
 	e2~
 	e4 c\>
 	bes\! aes
-	<< f'2 {s8 s\< s s\!}>>
+	<< f'2 {\hairpinShorten #'(0 . -1) s8\< s s s\!}>>
 % Bars 41 to 45
 	d8\> c bes4\!~
 	bes\pp des!(
@@ -58,10 +58,10 @@ musicFagottoIMvtII = \relative c {
 	f2
 	e8 r r4
 % Bars 46 to 50
-	R2*3
+	R2*7
 	
 	
-	R2*4
+	
 	
 % Bars 51 to 55
 	
@@ -101,7 +101,7 @@ musicFagottoIMvtII = \relative c {
 	ges16\< r r ges32-. ges-. f16\! r r f32-. f-.
 % Bars 81 to 85
 	\tuplet 6/4 4 {f16\mf f f f f f g g g a a a
-	bes_\crescendo bes bes des!\< des des c c c\! d d d }
+	bes-\offset X-offset -0.5 _\crescmarkup bes bes des!\< des des c c c\! d d d }
 	ees8\f bes,4 bes8~
 	bes bes4 bes8
 	bes16 bes' bes, bes' bes, bes' bes, bes' 
@@ -146,7 +146,7 @@ musicFagottoIMvtII = \relative c {
 	
 	c'4.(\pp a8)
 	g8.( f16 e4)
-	f(_\crescendo ges)\<
+	f(-\offset X-offset -1.5 _\crescmarkup ges)\<
 % Bars 121 to 125
 	des( ees)\!
 	f16( ees) r8 r16 ees-. f( ees)
@@ -164,7 +164,7 @@ musicFagottoIMvtII = \relative c {
 	
 	
 	
-	g8.(\brack\p_\crescendo a32 g f) e-. d-. e-. f-. g-. a-. b-. \clef tenor
+	g8.(\brack\p^\crescendo a32 g f) e-. d-. e-. f-. g-. a-. b-. \clef tenor
 % Bars 136 to 140
 	c16-. r g-. r d'-. r g-. r
 	r c,-. r g-. r d'-. r g-. \clef bass
@@ -193,7 +193,7 @@ musicFagottoIMvtII = \relative c {
 	c8( b) r8. b16
 	ees4(_\brackM\dimmarkup d16 c bes! a)
 	a8( gis) r8. e'16 \clef tenor
-	e4.(\brack\p-\tweak X-offset 2.7 _\brackM\pocoapococresc f8)
+	e4.(\brack\p^\brackM\pocoapococresc f8)
 % Bars 166 to 170
 	f4(\< fis8 g)\!
 	fis4.( g8) \section
@@ -207,7 +207,7 @@ musicFagottoIMvtII = \relative c {
 	g16[( e g f32 e]) e8.( d32 c) \section \clef bass
 	\key aes \major \afterGrace d!4\startTrillSpan {cis16( d)\stopTrillSpan} \afterGrace g4\startTrillSpan {fis16( g)\stopTrillSpan}
 % Bars 176 to 180
-	c,8 r r4
+	c,8 r r4-\offset X-offset -3 _\dimin
 	c4\brack\f g'_\dimmarkup~
 	g f8.( e16) \clef tenor
 	f4.( g32 f e f)
@@ -240,5 +240,5 @@ musicFagottoIMvtII = \relative c {
 	ees4(\> des8 c)\!
 	bes8.( des32 c) c8 r
 	r4 ees8-.\pp ees-.
-	<< ees2\fermata {s8\< s\! s\> s\!} >> \fine
+	<< ees2\fermata {\hairpinShorten #'(0 . -0.4) s8\< s\! \hairpinShorten #'(-0.4 . 0) s\> s\!} >> \fine
 }

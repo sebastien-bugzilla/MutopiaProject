@@ -18,7 +18,7 @@ musicFagottoIIMvtIII = \relative c {
 	c8\p r  c' r
 	c, r r c
 	ees r d\< r\!
-	<< g,2\fermata {s8\< s\! s\> s\!}>>
+	<< g,2\fermata {s8\< s\! s-\tweak extra-offset #'(0 . -0.3) \> s\!}>>
 	R2
 % Bars 11 to 15
 	c16\brack\p-. g'-. d-. g-. ees-. g-. f32( ees d c
@@ -42,7 +42,7 @@ musicFagottoIIMvtIII = \relative c {
 	g8 r r4
 	R2
 	a16\brack\f b g8 f'4->~
-	f d8 g
+	f d8( g)
 	c,\brack\pp r r4
 % Bars 31 to 35
 	R2
@@ -58,7 +58,7 @@ musicFagottoIIMvtIII = \relative c {
 	aes16-. c-. g-. c-. f,-. f'-. r8
 % Bars 41 to 45
 	ees,8-.\brack\mf r d-. r
-	g,8-.\p_\dimin r c-. r
+	g,8-._\pdimin r c-. r
 	des-. r c-. r
 	f,8-. r bes-. r
 	R2*2
@@ -75,7 +75,7 @@ musicFagottoIIMvtIII = \relative c {
 	ges(
 	fis2)_\dimin
 % Bars 56 to 60
-	<<g2 {s4\> s\!}>>
+	<<g!2 {s4\> s\!}>>
 	c8-.\f c-. c-. r
 	c16-. g'-. d-. g-. ees-. g-. f32( ees d c)
 	f8-. f-. f-. r
@@ -181,7 +181,7 @@ musicFagottoIIMvtIII = \relative c {
 			}
 		}
 	}
-	R2*15
+	\mmrnDown R2*15
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -290,7 +290,7 @@ musicFagottoIIMvtIII = \relative c {
 	ees,4.) bes8
 % Bars 236 to 240
 	ees,2~
-	ees4~ ees8 r16 \section r
+	ees4~ ees8 r16 \section \break r
 	c'8-.\f[ g'-.] d-. g-.
 	ees-._\brackM\dimmarkup g-. f16( ees d c
 	bes8-.)[ c-.]\brack\p d-. d-.
@@ -298,8 +298,8 @@ musicFagottoIIMvtIII = \relative c {
 	g,2\pp\fermata
 	c8\p r  c' r
 	c, r r c
-	ees r d\< r\!
-	<< g,2\fermata {s8\< s\! s\> s\!}>>
+	ees r \hairpinShorten #'(0 . -1) d\< r\!
+	<< g,2\fermata {\hairpinShorten #'(0 . -0.3) s8\< s\! \hairpinShorten #'(-0.3 . 0) s-\tweak extra-offset #'(0 . -0.3) \> s\!}>>
 % Bars 246 to 250
 	R2
 	c16\brack\p-. g'-. d-. g-. ees-. g-. f32( ees d c
@@ -339,7 +339,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 276 to 280
 	aes16-. c-. g-. c-. f,-. f'-. r8
 	ees,8-.\brack\mf r d-. r
-	g,8-.\p_\dimin r c-. r
+	g,8-._\pdimin r c-. r
 	des-. r c-. r
 	f,8-. r bes-. r
 % Bars 281 to 285
@@ -356,7 +356,7 @@ musicFagottoIIMvtIII = \relative c {
 	ges(
 % Bars 291 to 295
 	fis2)_\dimin
-	<<g2 {s4\> s\!}>>
+	<<g!2 {s4\> s\!}>>
 	c8-.\f c-. c-. r
 	c16-. g'-. d-. g-. ees-. g-. f32( ees d c)
 	f8-. f-. f-. r
@@ -405,7 +405,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 331 to 335
 	d-.[ g-.] ees-. g-.
 	f16( ees d c) bes8-. c-.
-	d-. d-. g4\fermata  % coda
+	d-. d-. g4\fermata \section % coda
 	R2
 	f2\pp
 % Bars 336 to 340
@@ -463,5 +463,5 @@ musicFagottoIIMvtIII = \relative c {
 	c2~
 	c8 c,,4\p c8
 % Bar 381
-	c8 r r4 \fine
+	c8 r r4 \markNormalSizeFermata \fine
 }

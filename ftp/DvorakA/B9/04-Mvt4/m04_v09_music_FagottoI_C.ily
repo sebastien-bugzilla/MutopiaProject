@@ -920,7 +920,7 @@ musicFagottoIMvtIV = \relative c {
 	d!2-> c-> b->
 % Bars 776 to 780
 	e-> d-> c->
-	c1.
+	c1.->
 	e1-> \tuplet 3/2 2 {f4-> g-> a->}
 	aes1.\fp->
 	a!->\fp

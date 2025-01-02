@@ -22,6 +22,7 @@ ppocoapococresc = \markup {\hspace #-0.08 \dynamic p \italic {"poco a poco cresc
 pdim = \markup {\hspace #-0.08 \dynamic p \italic {dim.}}
 pdimB = \markup {\dynamic p \italic {dim.}}
 pdimin = \markup {\hspace #-0.08 \dynamic p \italic {dimin.}}
+plegato = \markup {\hspace #-0.08 \dynamic p \italic {legato}}
 mfespressivo = \markup {\hspace #-0.8 \dynamic mf \italic {espressivo}}
 mfcrescendo = \markup {\hspace #-0.8 \dynamic mf \italic {crescendo}}
 mfcresc = \markup {\hspace #-0.8 \dynamic mf \italic {cresc.}}
@@ -81,7 +82,7 @@ divisi = \markup {\italic {divisi}}
 conespressione = \markup {\italic {"con espressione"}}
 
 
-plegato = #(make-dynamic-script 
+plegatoD = #(make-dynamic-script 
 	(markup #:dynamic "p" #:normal-text #:italic "legato")
 )
 ppcrescendo = #(make-dynamic-script 
@@ -313,6 +314,15 @@ mmrnDown = {
 	\once \override MultiMeasureRestNumber.direction = #-1 
 }
 
+beamGap = #(define-music-function
+	(gap)
+	(number?)
+	#{
+		\once \override Beam.auto-knee-gap = #gap
+	#}
+)
+
+
 
 
 
@@ -344,15 +354,6 @@ mmrnDown = {
 %		\once \override Voice.Arpeggio.padding = #padding
 %	#}
 %)
-
-%beamGap = #(define-music-function
-%	(gap)
-%	(number?)
-%	#{
-%		\once \override Beam.auto-knee-gap = #gap
-%	#}
-%)
-
 
 %beamLeftTwoRightOne = {
 %	\set stemLeftBeamCount = #2

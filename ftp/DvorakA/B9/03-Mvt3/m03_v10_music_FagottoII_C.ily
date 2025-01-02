@@ -42,7 +42,7 @@ musicFagottoIIMvtIII = \relative c {
 	g8 r r4
 	R2
 	a16\brack\f b g8 f'4->~
-	f d8 g
+	f d8( g)
 	c,\brack\pp r r4
 % Bars 31 to 35
 	R2

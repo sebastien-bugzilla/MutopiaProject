@@ -453,10 +453,10 @@ musicFagottoIIMvtIV = \relative c {
 	g~
 	g
 	ges
-	f8\brack\f r r8. f'16
+	f8\brack\f r r8. f'16-.
 % Bars 376 to 380
 	f4( f,8) r
-	r4 r8. g'16
+	r4 r8. g'16-.
 	\shape #'((0 . -1.5)(0 . -1.5)(0 . -1.5)(0 . -1.5)) Slur g4( g,8) r 
 	e'2\pp~
 	e
@@ -920,7 +920,7 @@ musicFagottoIIMvtIV = \relative c {
 	g2-> g-> g->
 % Bars 776 to 780
 	g-> g-> g->
-	bes1.
+	bes1.->
 	cis1-> \tuplet 3/2 2 {d4-> e-> f->}
 	f1.\fp->
 	fis->\fp

@@ -41,7 +41,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 26 to 30
 	b8[ b-.] c-. d-.
 	ees[-. g-.] d-. g,-.
-	r4 c16(\brack\f b g8)
+	r4 c16(->\brack\f b g8)
 	aes'4.(-> f8)
 	ees\brack\pp( f g f16 ees)
 % Bars 31 to 35
@@ -120,7 +120,7 @@ musicFagottoIMvtIII = \relative c {
 	f( ges aes des) des( bes aes ges) \clef bass
 	ges,8-> f-> ees-> des->
 	aes'8.-> ges16 ges4->
-	\partCombineApart r8 c[ g'!] d[
+	\partCombineApart r8 c[-. g'!]-. d[-.
 	g-. ees-. g-.] f16([ ees
 % Bars 96 to 100
 	d c]) bes8-.[ c-.] d-.[
@@ -322,7 +322,7 @@ musicFagottoIMvtIII = \relative c {
 	d8( ees16) r b8( c16) r
 	b8[ b-.] c-. d-.
 	ees[-. g-.] d-. g,-.
-	r4 c16(\brack\f b g8)
+	r4 c16->(\brack\f b g8)
 	aes'4.(-> f8)
 % Bars 266 to 270
 	ees\brack\pp( f g f16 ees)
@@ -401,7 +401,7 @@ musicFagottoIMvtIII = \relative c {
 	f( ges aes des) des( bes aes ges) \clef bass
 	ges,8-> f-> ees-> des->
 	aes'8.-> ges16 ges4->
-	\partCombineApart r8 c[ g'!] d[
+	\partCombineApart r8 c[-. g'!]-. d[-.
 % Bars 331 to 335
 	g-. ees-. g-.] f16([ ees
 	d c]) bes8-.[ c-.] d-.[

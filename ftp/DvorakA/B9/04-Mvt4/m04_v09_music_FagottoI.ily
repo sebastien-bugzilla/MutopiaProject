@@ -22,13 +22,13 @@ musicFagottoIMvtIV = \relative c {
 	R2
 % Bars 11 to 15
 	<< b'2\fermata {s8\> s s s\!}>>
-	g2\p~
+	\startMeasureCount g2\p~
 	g~
 	g~
 	g~
 % Bars 16 to 20
 	g~
-	g
+	g \stopMeasureCount
 	g4( f)
 	b4. a8
 	g2~
@@ -36,7 +36,7 @@ musicFagottoIMvtIV = \relative c {
 	g~
 	g~
 	g
-	b,~
+	\startMeasureCount b,~
 	b~
 % Bars 26 to 30
 	b~
@@ -45,7 +45,7 @@ musicFagottoIMvtIV = \relative c {
 	b2~
 	b~
 % Bars 31 to 35
-	b~
+	b~ \stopMeasureCount
 	b8 r r4\fermata
 	R2*4
 	
@@ -61,16 +61,16 @@ musicFagottoIMvtIV = \relative c {
 	f~
 	f~
 	f
-	g\mf~
+	\startMeasureCount g\mf~
 % Bars 46 to 50
 	g~
 	g~
 	g~
 	g~
-	g~
+	g~ \stopMeasureCount
 % Bars 51 to 55
 	g4 f
-	<< g2 {s4 s8\< s16 s\! }>>
+	<< g2 {s4\< s8 s16 s\! }>>
 	c4(\f b~
 	b) bes(
 	a8) r g4~
@@ -102,13 +102,13 @@ musicFagottoIMvtIV = \relative c {
 	gis''4.. gis,,16
 	a4\brack\p_\pocoapococrescendo a'8. a,16
 	a4 cis'8. a,16
-	a4 e''8. a,,16
-	a4 a''8. a,,16
+	a4 \beamGap #3 e''8. a,,16
+	a4 \beamGap #3 a''8. a,,16
 % Bars 81 to 85
 	bes4 bes'8. bes,16
-	bes4 d'8. bes,16
-	bes4\< g''8. bes,,16
-	bes4\! bes''8. bes,,16
+	bes4 \beamGap #3 d'8. bes,16
+	bes4\< \beamGap #3 g''8. bes,,16
+	bes4\! \beamOffset #'(-0.8 . -0.8) \beamGap #3 bes''8. bes,,16
 	r4 r8. f'16\f
 % Bars 86 to 90
 	f4( f,8) r
@@ -203,7 +203,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 161 to 165
 	ees~
 	ees
-	\tuplet 3/2 4 {e!8\brack\p_\legato_\crescendo f e d e d
+	\tuplet 3/2 4 {e!8\brack\p^\legato-\offset X-offset 2.5 _\crescendo f e d e d
 	g a g f g f
 	e f e d\< e d
 % Bars 166 to 170
@@ -228,20 +228,20 @@ musicFagottoIMvtIV = \relative c {
 	
 % Bars 186 to 190
 	
-	e,2\brack\f~
+	\startMeasureCount e,2\brack\f~
 	e~
-	e~_\diminuendo
+	e~_\dimmarkup
 	e~\brack\mf
 % Bars 191 to 195
 	e~
 	e~\brack\p
 	e~
-	e
+	e \stopMeasureCount
 	e4( cis8.) a16-.
 % Bars 196 to 200
 	e'4( cis8.) a16-.
 	e'4( cis8.) a16-.
-	cis4(\< << c) {s8\> s\!}>>
+	\hairpinShorten #'(0 . 1.2) cis4(\< << c) {\hairpinShorten #'(-1.2 . -0.5) s8\> s\!}>>
 	b2(
 	e)
 % Bars 201 to 205
@@ -251,7 +251,7 @@ musicFagottoIMvtIV = \relative c {
 	e4. dis8
 	e2
 % Bars 206 to 210
-	fis4 fis'\fz~
+	fis4-\offset X-offset -2.5 _\crescmarkup fis'\fz~
 	fis b,\fp~
 	b e\fp~
 	e a,\fp~
@@ -464,13 +464,13 @@ musicFagottoIMvtIV = \relative c {
 	aes(\< b!
 	gis\! dis)
 	b'(\pp-- ais--)
-	b(-- g--)
+	b(-- g!--)
 	gis(\< b
 % Bars 386 to 390
 	gis dis)\!
 	b r \clef tenor
 	dis'\pp fis\<~
-	fis\> dis~\!
+	\hairpinShorten #'(0 . -1) fis\> dis~\!
 	dis8 r r4
 % Bars 391 to 395
 	R2
@@ -487,14 +487,14 @@ musicFagottoIMvtIV = \relative c {
 % Bars 401 to 405
 	f des)~
 	des2
-	b!4..\f b16
+	\startMeasureCount b!4..\f b16
 	b4.. b16
 	b4.. b16
 % Bars 406 to 410
 	b4.. b16
 	b4.. b16
 	b4.. b16
-	b4.. b16
+	b4.. b16 \stopMeasureCount
 	b4.. g16\brack\ff
 % Bars 411 to 415
 	c,2~
@@ -606,7 +606,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 506 to 510
 	
 	\clef bass
-	a2_\mfcrescendo(
+	a2-\offset X-offset -2 _\mfcrescendo(
 	g)
 	<< c( {s4 s\<}>>
 % Bars 511 to 515
@@ -683,7 +683,7 @@ musicFagottoIMvtIV = \relative c {
 	c2->\fp~
 % Bars 571 to 575
 	c
-	c,->\fp~
+	c,^>\fp~
 	c
 	a''4\ff c8. d16
 	d2
@@ -709,7 +709,7 @@ musicFagottoIMvtIV = \relative c {
 	des~
 	des~
 	des
-	\tuplet 3/2 4 {d8_\brackM\legato_\crescendo ees d c d c
+	\tuplet 3/2 4 {d!8^\brackM\legato_\crescendo ees d c d c
 	f g f ees f ees
 % Bars 596 to 600
 	d ees d c d c}
@@ -752,7 +752,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 631 to 635
 	
 	
-	d2\f~
+	\startMeasureCount d2\f~
 	d~
 	d~_\diminuendo
 % Bars 636 to 640
@@ -760,7 +760,7 @@ musicFagottoIMvtIV = \relative c {
 	d~
 	d~
 	d~
-	<< d {s8. s16\pp s4}>>
+	<< d \stopMeasureCount {s8. s16\pp s4}>>
 % Bars 641 to 645
 	d4( b8.) g16-.
 	d'4( b8.) g16-.
@@ -812,7 +812,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 681 to 685
 	a4( b)
 	cis(\< d\!)
-	<< a2~ {s4\< s\>}>>
+	<< a2~ {\hairpinShorten #'(0 . -1) s4\< \hairpinShorten #'(1 . 0) s\>}>>
 	a4\! d
 	cis8 r r4
 % Bars 686 to 690
@@ -873,7 +873,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 736 to 740
 	<< g,2~ {s4 s\<}>>
 	g8.[ f16 e8. a16]\!
-	<< d,2 {s8\fz\> s s s\!}>>
+	<< d,2 {\hairpinShorten #'(-0.4 . -2) s8\fz\> s s s\!}>>
 	e4.. fis16
 	<< b,2~ {s4 s\< }>>
 % Bars 741 to 745
@@ -903,7 +903,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 761 to 765
 	\time 3/2 bes2->\brack\ff a-> g4.-> bes8-.
 	a2. gis4 a2
-	b1.~
+	b!1.~
 	b2 c1->
 	g1.->
 % Bars 766 to 770
@@ -914,13 +914,13 @@ musicFagottoIMvtIV = \relative c {
 	b2 c4 c8. c16 c2->
 % Bars 771 to 775
 	c-> b4 b8. b16 g2
-	\tuplet 3/2 2 {des'4-.\brack\ff r des-. c-. r c-. des-. r des-.
+	\tuplet 3/2 2 {des'4-.-\offset X-offset -1.5 \brack\ff r des-. c-. r c-. des-. r des-.
 	cis-. r cis-. d!-. r d-. cis-. r cis-.
 	des-. r des-. des-. r des-. des-. r des-.}
 	d!2-> c-> b->
 % Bars 776 to 780
 	e-> d-> c->
-	c1.
+	c1.->
 	e1-> \tuplet 3/2 2 {f4-> g-> a->}
 	aes1.\fp->
 	a!->\fp

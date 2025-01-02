@@ -10,7 +10,7 @@ musicFagottoIMvtIII = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	\partial 16 r16 \setBarNumber #2
-	c8-.\f[ g'-.] d-. g-.
+	c8-.-\offset X-offset -2 \f[ g'-.] d-. g-.
 	ees-._\brackM\dimmarkup g-. f16( ees d c
 	bes8-.)[ c-.]\brack\p d-. d-.
 	b'2\pp\fermata
@@ -41,7 +41,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 26 to 30
 	b8[ b-.] c-. d-.
 	ees[-. g-.] d-. g,-.
-	r4 c16(\brack\f b g8)
+	r4 c16(->\brack\f b g8)
 	aes'4.(-> f8)
 	ees\brack\pp( f g f16 ees)
 % Bars 31 to 35
@@ -58,22 +58,22 @@ musicFagottoIMvtIII = \relative c {
 	aes16-. c-. g-. c-. f,-. f'-. r8
 % Bars 41 to 45
 	c8\brack\mf r ees(-> d16) r
-	g8-.\p_\dimin g16-. g-. e8-. r
+	g8-._\pdimin g16-. g-. e8-. r
 	bes!-. r des(-> c16) r
 	f8-. f16-. f-. f8-. r
 	ees-.\brack\pp r16 d( c8) r16 b(
 % Bars 46 to 50
 	c8) r16 g( f8) r16 bes!(
-	aes16) r r8 r4
-	R2*2
+	aes16) r8. r4
+	R2*3
 	
-	R2
+	
 % Bars 51 to 55
 	g!8[-.\f\< c,]-. f bes\!~
 	bes[\< ees,]-. aes-. des~\!
 	des\f ges,( aes) f(
 	des') ges,( aes) f-.
-	c'2_\dimin~
+	c'2-\offset X-offset -2 _\dimin~
 % Bars 56 to 60
 	c4\> b\!
 	g8-.\f g-. g-. r
@@ -120,14 +120,14 @@ musicFagottoIMvtIII = \relative c {
 	f( ges aes des) des( bes aes ges) \clef bass
 	ges,8-> f-> ees-> des->
 	aes'8.-> ges16 ges4->
-	r8 c[ g'!] d[
+	r8 c[-. g'!]-. d[-.
 	g-. ees-. g-.] f16([ ees
 % Bars 96 to 100
 	d c]) bes8-.[ c-.] d-.[
 	d-.] d4.\fermata % signo
 	r8. c16\p b r r b
 	c r r8 r4
-	r8. bes16 bes r r a
+	r8. bes!16 bes r r a
 % Bars 101 to 105
 	bes2\fermata
 	\repeat volta 2 {
@@ -155,7 +155,7 @@ musicFagottoIMvtIII = \relative c {
 		ees( f)\<
 % Bars 121 to 125
 		g( ees)\!
-		<< aes,2 {s4 s_\crescendo }>>
+		<< aes,2 {s4 s-\offset X-offset -2 _\crescendo }>>
 		c'8.-> c16-. d,8.-> d16-.
 		ees8 r r4
 		ees'8.-> ees16-. f,8.-> f16-.
@@ -166,14 +166,14 @@ musicFagottoIMvtIII = \relative c {
 		d( cis d)_\dimin r
 		\alternative {
 			\volta 1 {
-				d(\p cis d) r
+				\noteHeadEsw #'(-2 . 0) d(\p \revertNoteHeadEsw cis d) r
 % Bars 131 to 135
 				bes( a g f)
 				bes r r4
 				R2
 			}
 			\volta 2 {
-				d8(\p cis d d)
+				\noteHeadEsw #'(-2 . 0) d8(\p \revertNoteHeadEsw cis d d)
 				d8 r r4
 % Bars 136 to 140
 				bes,2\brack\pp~
@@ -194,15 +194,15 @@ musicFagottoIMvtIII = \relative c {
 	ees( d8 ees)
 % Bars 156 to 160
 	c4 ces
-	bes c!\<
-	a\! f
+	bes c!-\alterBroken shorten-pair #'(()(0 . 4)) \<
+	a f\!
 	bes4~ bes8 r
 	d,2\p
 % Bars 161 to 165
 	ees->
-	<< f {s4 s_\crescendo }>>
+	<< f {s4_\crescmarkup s }>>
 	g8\< aes bes4\!
-	<< g2\mf( {s4 s_\crescmarkup }>>
+	g2_\mfcresc(
 	aes4 bes)
 % Bars 166 to 170
 	g( f)
@@ -290,7 +290,7 @@ musicFagottoIMvtIII = \relative c {
 	ees,4.) bes8~
 % Bars 236 to 240
 	bes2~
-	bes4~ bes8 r16 \section r
+	bes4~ bes8 r16 \section \break r
 	c8-.\f[ g'-.] d-. g-.
 	ees-._\brackM\dimmarkup g-. f16( ees d c
 	bes8-.)[ c-.]\brack\p d-. d-.
@@ -301,8 +301,8 @@ musicFagottoIMvtIII = \relative c {
 	bes8-.[ c-.] d-.\< d-.\!
 	<< d2\fermata {s8\< s\! s\> s\!}>>
 % Bars 246 to 250
-	R2
-	R2*3
+	R2*4
+	
 	
 	
 	g,4->\mf g->
@@ -322,7 +322,7 @@ musicFagottoIMvtIII = \relative c {
 	d8( ees16) r b8( c16) r
 	b8[ b-.] c-. d-.
 	ees[-. g-.] d-. g,-.
-	r4 c16(\brack\f b g8)
+	r4 c16->(\brack\f b g8)
 	aes'4.(-> f8)
 % Bars 266 to 270
 	ees\brack\pp( f g f16 ees)
@@ -339,17 +339,17 @@ musicFagottoIMvtIII = \relative c {
 % Bars 276 to 280
 	aes16-. c-. g-. c-. f,-. f'-. r8
 	c8\brack\mf r ees(-> d16) r
-	g8\p_\dimin g16-. g-. e8-. r
+	g8_\pdimin g16-. g-. e8-. r
 	bes!-. r des(-> c16) r
 	f8-. f16-. f-. f8-. r
 % Bars 281 to 285
 	ees-.\brack\pp r16 d( c8) r16 b(
 	c8) r16 g( f8) r16 bes!(
-	a16) r r8 r4
-	R2*2
+	aes16) r r8 r4
+	R2*3
 	
 % Bars 286 to 290
-	R2
+	
 	g!8[-.\f\< c,]-. f bes\!~
 	bes[\< ees,]-. aes-. des~\!
 	des\f ges,( aes) f(
@@ -374,7 +374,7 @@ musicFagottoIMvtIII = \relative c {
 	c'8->\fp c16 r b8->\fp b16 r
 % Bars 306 to 310
 	g8->\fp g16 r f8->\fp f16 r
-	r8 g-.\pp r f_\brackM\crescmarkup-.
+	r8 g-.\pp r f-\offset X-offset -2.5 _\brackM\crescmarkup-.
 	c'-. r bes-. r
 	bes-. r aes-. r
 	g'4->\brack\f( ees->)
@@ -401,11 +401,11 @@ musicFagottoIMvtIII = \relative c {
 	f( ges aes des) des( bes aes ges) \clef bass
 	ges,8-> f-> ees-> des->
 	aes'8.-> ges16 ges4->
-	r8 c[ g'!] d[
+	r8 c[-. g'!]-. d[-.
 % Bars 331 to 335
-	g-. ees-. ges-.] f16([ ees
+	g-. ees-. g-.] f16([ ees
 	d c]) bes8-.[ c-.] d-.[
-	d-.] d4.\fermata
+	d-.] d4.\fermata \section
 	c16\brack\pp-. g'-. d-. g-. ees-. g-. f32( ees d c)
 	R2
 % Bars 336 to 340
@@ -463,5 +463,5 @@ musicFagottoIMvtIII = \relative c {
 	ees2~
 	ees8 c,4\p c8
 % Bar 381
-	c8 r r4 \fine
+	c8 r r4 \markNormalSizeFermata \fine
 }
