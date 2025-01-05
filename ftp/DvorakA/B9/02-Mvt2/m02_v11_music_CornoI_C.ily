@@ -13,7 +13,7 @@ musicCornoIMvtII = \relative c {
 	f\fermata\fp
 	\partCombineApart f4\fermata d4\fermata \partCombineAutomatic
 	<< c2\fermata {s8\< s\! s\> s\!}>>
-	ees2\fp\fermata
+	e2\fp\fermata
 % Bars 6 to 10
 	f\fp\fermata
 	<< c4\fermata {s8\< s\!}>> << d4\fermata {s8\< s\!}>>
@@ -58,7 +58,7 @@ musicCornoIMvtII = \relative c {
 	e8) r r4 \partCombineAutomatic
 	r c32[\brack\p-. c-. c-. c-. c-. c-. c-. c]-. 
 	c4.->\fp r8
-	d4. r8
+	d4.\fp r8
 	R2
 % Bars 56 to 60
 	r16 c-.\brack\mf[ r c-. r c-. r c-.]

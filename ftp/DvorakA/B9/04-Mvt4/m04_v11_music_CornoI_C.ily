@@ -213,7 +213,7 @@ musicCornoIMvtIV = \relative c {
 	g~
 	g8 r r4
 	R2
-	r4 r8. g16\mf
+	r4 r8. g16_\mfdim
 	g2~
 % Bars 191 to 195
 	g4 r
@@ -428,7 +428,7 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	
-	f4->\brack\p bes,->
+	f4->\brack\p-\offset X-offset 2.5 _\crescendo bes,->
 	bes4. c8
 % Bars 401 to 405
 	des( c bes ges')

@@ -18,14 +18,14 @@ musicCornoIIMvtIII = \relative c {
 	a8\brack\p r a r
 	a r r c~
 	c r b\< r\!
-	<< e,2\fermata {s8\< s\! s\> s\!}>> 
+	<< e,2\fermata {s8\< s\! s-\tweak extra-offset #'(0 . -0.3) \> s\!}>> 
 	R2
 % Bars 11 to 15
 	e4.->\brack\p r8
 	R2
 	a4.-> r8
 	R2
-	r4 e8\brack\mf-> e->
+	r4 e8-\offset X-offset -0.5 \brack\mf-> e->
 % Bars 16 to 20
 	R2
 	r4 e8-.\< e\!-.
@@ -73,9 +73,9 @@ musicCornoIIMvtIII = \relative c {
 	g\< bes->~\!
 	bes8 r bes4->~
 	bes8 r bes4
-	b!2->_\dimin
+	b!2->_\dimmarkup
 % Bars 56 to 60
-	<< e,-- {s4\> s\!}>>
+	<< e,-- {s4\> s8 s16 s\!}>>
 	a8-.\f b-. a-. r
 	R2
 	a8-. a-. a-. r
@@ -91,9 +91,9 @@ musicCornoIIMvtIII = \relative c {
 	a4. d8->
 	a d-> a4->
 	a8\fp-> a16 r e8\fp-> e16 r
-	c8->\brack\fp c16 r g8->\brack\fp g16 r
+	c8^>\brack\fp c16 r g8^>\brack\fp g16 r
 % Bars 71 to 75
-	r8 c-.\pp r g-.\brackM\crescmarkup
+	r8 c-.\pp r g-.-\offset X-offset -1 \brackM\crescmarkup
 	c'-. r b-. r
 	c-. r a-. r
 	e\f r r4
@@ -129,12 +129,12 @@ musicCornoIIMvtIII = \relative c {
 	
 	
 % Bars 101 to 105
-	R2\fermata
+	\once \ni R2\fermata
 	\repeat volta 2 {
 		R2*3
 		
 		
-		r4 g,8\brack\pp g
+		r4 g,8-\offset X-offset -3.5 \brack\pp g
 % Bars 106 to 110
 		c r r4
 		R2
@@ -150,8 +150,8 @@ musicCornoIIMvtIII = \relative c {
 	
 % Bars 121 to 125
 		e,2->\fz 
-		c->\fz
-		d4(\brack\mf b)
+		c->-\offset X-offset -1.5 \fz^\crescmarkup
+		d4(-\offset X-offset -1 \brack\mf b)
 		c( e)\<
 		d( g8.\! f16)
 % Bars 126 to 130
@@ -189,15 +189,15 @@ musicCornoIIMvtIII = \relative c {
 	e,4. a8
 % Bars 156 to 160
 	a4( aes)
-	g a\<
+	g a!\<
 	fis\! d
 	g4~ g8 r
 	d'2\p(
 % Bars 161 to 165
 	c)
-	<< g {s4 s_\crescendo }>>
+	<< g {s4_\crescmarkup s }>>
 	c4(\< g\!)
-	<< g2 {s4 s_\brackM\crescmarkup }>>
+	<< g2 {s4 s-\offset X-offset -0.5 _\brackM\crescmarkup }>>
 	a4 b
 % Bars 166 to 170
 	g f
@@ -281,7 +281,7 @@ musicCornoIIMvtIII = \relative c {
 	g4. g8 \clef bass
 % Bars 236 to 240
 	c,,8 r \clef treble c'''\pp r
-	c r c r16 \section r %%%%%%%%%%%%%%%%%%
+	c r c r16 \section \break r 
 	r8 e,4\f-> e8~
 	e_\dimmarkup e4-> e8
 	e r r4
@@ -290,7 +290,7 @@ musicCornoIIMvtIII = \relative c {
 	a8\brack\p r a r
 	a r r c~
 	c r b\< r\!
-	<< e,2\fermata {s8\< s\! s\> s\!}>> 
+	<< e,2\fermata {s8\< s\! s-\tweak extra-offset #'(0 . -0.3) \> s\!}>> 
 % Bars 246 to 250
 	R2
 	e4.->\brack\p r8
@@ -298,7 +298,7 @@ musicCornoIIMvtIII = \relative c {
 	a4.-> r8
 	R2
 % Bars 251 to 255
-	r4 e8\brack\mf-> e->
+	r4 e8-\offset X-offset -0.5 \brack\mf-> e->
 	R2
 	r4 e8-.\< e\!-.
 	e\f-. e-. e-. r
@@ -346,8 +346,8 @@ musicCornoIIMvtIII = \relative c {
 	bes8 r bes4->~
 	bes8 r bes4
 % Bars 291 to 295
-	b!2->_\dimin
-	<< e,-- {s4\> s\!}>>
+	b!2->_\dimmarkup
+	<< e,-- {s4\> s8 s16 s\!}>>
 	a8-.\f b-. a-. r
 	R2
 	a8-. a-. a-. r
@@ -364,8 +364,8 @@ musicCornoIIMvtIII = \relative c {
 	a d-> a4->
 	a8\fp-> a16 r e8\fp-> e16 r
 % Bars 306 to 310
-	c8->\brack\fp c16 r g8->\brack\fp g16 r
-	r8 c-.\pp r g-.\brackM\crescmarkup
+	c8^>\brack\fp c16 r g8^>\brack\fp g16 r
+	r8 c-.\pp r g-.-\offset X-offset -1 \brackM\crescmarkup
 	c'-. r b-. r
 	c-. r a-. r
 	e\f r r4
@@ -396,7 +396,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 331 to 335
 	b-.[ e-.] c-. e-.
 	d16( c b a) g8-. a-.
-	b-. b-. e4\fermata % signo
+	b-. b-. e4\fermata \section % signo
 	R2
 	bes2\pp
 % Bars 336 to 340
@@ -448,11 +448,11 @@ musicCornoIIMvtIII = \relative c {
 	R2*2
 	
 % Bars 376 to 380
-	e''4\brack\ff \tuplet 3/2 4 {e8 e e}
+	e''!4\brack\ff \tuplet 3/2 4 {e8 e e}
 	e4 \tuplet 3/2 4 {e8 e e}
 	c8._\diminuendo c16 c4~
 	c2~
 	c8 e,4\p e8
 % Bar 381
-	e r r4 \fine
+	e r r4 \markNormalSizeFermata \fine
 }

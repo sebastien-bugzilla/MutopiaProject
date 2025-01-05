@@ -462,17 +462,17 @@ cueVoiceCornoIMvtI = \relative c {
 	% bar 271 - 274
 	\transpose f c' {
 		\relative c {
-			\voiceOne g''4(^\markup {\column {\lower #1 "Fl. Ob." "Cl."}} c d
+			\ottava #1 g''4(-\offset X-offset 1 ^\markup {\column {\lower #1.5 "Fl. Ob." "Cl."}} c d
 			ees d c)
 			d2( ees4
-			f g f)
+			f g f) \ottava #0
 		}
 	}
 	s2.*46
 	% bar 321 - 322
 	\transpose f c' {
 		\relative c {
-			g'''2^\markup {Viol.I} aes4~
+			\voiceOne g'''2-\offset X-offset -4 ^\markup {Viol.I} aes4~
 			aes a!-> b->
 		}
 	}
@@ -504,7 +504,7 @@ cueVoiceCornoIMvtIV = \relative c {
 	<>^\markup {Archi}
 	s2*425
 	% bar 458 - 459
-	\voiceOne f8[(^\markup {Fag.I} e d) r16 c']
+	\voiceOne f8[(-\offset X-offset -4 ^\markup {Fag.I} e d) r16 c']
 	c4( b8) r \oneVoice 
 }
 cueVoiceCornoIIMvtI = \relative c {
@@ -512,7 +512,7 @@ cueVoiceCornoIIMvtI = \relative c {
 	% bar 271 - 274
 	\transpose f c' {
 		\relative c {
-			\voiceOne g''4(^\markup {\column {\lower #1 "Fl. Ob." "Cl."}} c d
+			g''4(-\offset X-offset -1.5 ^\markup {\column {\lower #1.5 "Fl. Ob." "Cl."}} c d
 			ees d c)
 			d2( ees4
 			f g f)
@@ -522,7 +522,7 @@ cueVoiceCornoIIMvtI = \relative c {
 	% bar 321 - 322
 	\transpose f c' {
 		\relative c {
-			g'''2^\markup {Viol.I} aes4~
+			\voiceOne g'''2-\offset X-offset -4 ^\markup {Viol.I} aes4~
 			aes a!-> b->
 		}
 	}
@@ -542,7 +542,7 @@ cueVoiceCornoIIMvtII = \relative c {
 cueVoiceCornoIIMvtIII = \relative c {
 	s16 s2*136
 	% bar 138
-	<>^\markup {Archi}
+	<>_\markup {Archi}
 }
 cueVoiceCornoIIMvtIV = \relative c {
 	s2*32
@@ -555,7 +555,7 @@ cueVoiceCornoIIMvtIV = \relative c {
 	fis8[( e dis) r16 fis]
 	s2*72
 	% bar 351 - 354
-	\voiceOne ees4->^\markup {Fag.I} d->
+	ees4->-\offset X-offset -5.5 ^\markup {Fag.I} d->
 	d4. c8
 	c->[ bes bes-> a]
 	a4( g8) r \oneVoice 
@@ -569,7 +569,7 @@ cueVoiceCornoIIIMvtI = \relative c {
 	% bar 271 - 274
 	\transpose f c' {
 		\relative c {
-			\voiceOne g''4(^\markup {\column {\lower #1 "Fl. Ob." "Cl."}} c d
+			g''4(-\offset X-offset -3 ^\markup {\column {\lower #1.5 "Fl. Ob." "Cl."}} c d
 			ees d c)
 			d2( ees4
 			f g f)
@@ -579,7 +579,7 @@ cueVoiceCornoIIIMvtI = \relative c {
 	% bar 321 - 322
 	\transpose f c' {
 		\relative c {
-			g'''2^\markup {Viol.I} aes4~
+			\voiceOne g'''2-\offset X-offset -4 ^\markup {Viol.I} aes4~
 			aes a!-> b->
 		}
 	}
@@ -589,7 +589,7 @@ cueVoiceCornoIVMvtI = \relative c {
 	% bar 321 - 322
 	\transpose f c' {
 		\relative c {
-			g'''2^\markup {Viol.I} aes4~
+			g'''2-\offset X-offset -4 ^\markup {Viol.I} aes4~
 			aes a!-> b->
 		}
 	}

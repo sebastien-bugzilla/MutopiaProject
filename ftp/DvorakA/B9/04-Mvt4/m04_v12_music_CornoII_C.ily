@@ -228,7 +228,7 @@ musicCornoIIMvtIV = \relative c {
 	g~
 	g8 r r4
 	R2
-	r4 r8. g16\mf
+	r4 r8. g16
 	g2~
 % Bars 191 to 195
 	g4 r
@@ -287,7 +287,7 @@ musicCornoIIMvtIV = \relative c {
 	e4..-> e16
 	g2->
 	fis->
-	b
+	b->
 	g
 % Bars 251 to 255
 	c4-> c

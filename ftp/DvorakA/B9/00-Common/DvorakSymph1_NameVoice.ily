@@ -284,7 +284,10 @@ nameCornoIMvtI = {
 nameCornoIMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Corno I" "in Es"
+			\lower #1.5 "Corno I" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -293,7 +296,10 @@ nameCornoIMvtII = {
 nameCornoIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Corno I" "in Es"
+			\lower #1.5 "Corno I" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -320,7 +326,10 @@ nameCornoIIMvtI = {
 nameCornoIIMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Corno II" "in Es"
+			\lower #1.5 "Corno II" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -329,7 +338,10 @@ nameCornoIIMvtII = {
 nameCornoIIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Corno II" "in Es"
+			\lower #1.5 "Corno II" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -347,7 +359,55 @@ nameCornoIIMvtIV = {
 nameCornoIIIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Corno III" "in Es"
+			\lower #1.5 "Corno III" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"french horn"
+}
+nameCornoIIIMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1.5 "Corno III" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"french horn"
+}
+nameCornoIIIMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1.5 "Corno III" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"french horn"
+}
+nameCornoIIIMvtIII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1.5 "Corno III" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"french horn"
+}
+nameCornoIIIMvtIV = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Corno III" "in C"
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -356,7 +416,43 @@ nameCornoIIIMvtI = {
 nameCornoIVMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Corno IV" "in Es"
+			\lower #1.5 "Corno IV" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"french horn"
+}
+nameCornoIVMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1.5 "Corno IV" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"french horn"
+}
+nameCornoIVMvtIII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1.5 "Corno IV" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat }
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"french horn"
+}
+nameCornoIVMvtIV = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Corno IV" "in C"
 		}
 	}
 	\set Staff.shortInstrumentName = ""

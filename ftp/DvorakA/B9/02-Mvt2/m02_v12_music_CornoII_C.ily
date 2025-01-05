@@ -58,7 +58,7 @@ musicCornoIIMvtII = \relative c {
 	
 	r4 c32[\brack\p-. c-. c-. c-. c-. c-. c-. c]-. 
 	f4.->\fp r8
-	f4. r8
+	f4.\fp r8
 	R2
 % Bars 56 to 60
 	r16 c-.\brack\mf[ r c-. r c-. r c-.]

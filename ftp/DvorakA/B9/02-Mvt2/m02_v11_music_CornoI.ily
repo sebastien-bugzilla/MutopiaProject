@@ -11,13 +11,13 @@ musicCornoIMvtII = \relative c {
 % Bars 1 to 5
 	f''2\fermata\fp
 	f\fermata\fp
-	<< f4\fermata {s8\< s\!} >> << d4\fermata {s8\< s\!} >>
-	<< c2\fermata {s8\< s\! s\> s\!}>>
-	ees2\fp\fermata
+	<< f4\fermata {s8\< s16 s\!} >> << d4\fermata {s8\< s16 s\!} >>
+	<< c2\fermata {s8\< s16 s\! s8-\tweak extra-offset #'(0 . -0.4) \> s16 s\!}>>
+	e2\fp\fermata
 % Bars 6 to 10
 	f\fp\fermata
-	<< c4\fermata {s8\< s\!}>> << d4\fermata {s8\< s\!}>>
-	<< e2\fermata {s8\< s\! s\> s\!}>>
+	<< c4\fermata {s8\< s16 s\!}>> << d4\fermata {s8\< s16 s\!}>>
+	<< e2\fermata {s8\< s16 s\! s8\> s16 s\!}>>
 	R2*9
 	
 % Bars 11 to 15
@@ -60,9 +60,9 @@ musicCornoIMvtII = \relative c {
 	cis d
 % Bars 51 to 55
 	e8) r r4
-	r c32[\brack\p-. c-. c-. c-. c-. c-. c-. c]-. 
+	r c!32[\brack\p-. c-. c-. c-. c-. c-. c-. c]-. 
 	c4.->\fp r8
-	d4. r8
+	d4.\fp r8
 	R2
 % Bars 56 to 60
 	r16 c-.\brack\mf[ r c-. r c-. r c-.]
@@ -101,13 +101,9 @@ musicCornoIMvtII = \relative c {
 	g8.-> f16 e8 r
 	r f[-> e-> d->]
 	g8.-> f16 e8 r
-	R2*4
+	R2*8
 	
 % Bars 91 to 95
-	
-	
-	R2*4
-	
 	
 % Bars 96 to 100
 	
@@ -143,7 +139,7 @@ musicCornoIMvtII = \relative c {
 	r g8 g16 r g8 g16
 	r c-. d( c) r8 r16 c-.[
 	d(\< c)] r c d( c bes\! a)
-	r d8_\dimin d16(\< bes4)\!
+	r d8-\offset X-offset -1 _\dimmarkup d16(\< bes4)\!
 	r16 bes8 bes16(\< f4)\!
 % Bars 126 to 130
 	R2*2
@@ -160,15 +156,21 @@ musicCornoIMvtII = \relative c {
 % Bars 136 to 140
 	r e16-. e-. e'8( e,)
 	r e16-. e-. e'8( e,)
-	R2*30
-% Bars 141 to 145
+	R2*2
 	
+	\ni R2\fermata
+% Bars 141 to 145
+	R\fermata \no
+	R2*17
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
 % Bars 156 to 160
 	
+	
+	
+	\mmrLength #12 \tempoXoffset #-1.5 R2*9
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -184,10 +186,10 @@ musicCornoIMvtII = \relative c {
 	g8.-> f16 e8 r \section
 	e16 d32 c d e c r e16 d32 c d e c r
 % Bars 176 to 180
-	d e c8 c32 c c4~_\dimin
+	d e c8 c32 c c4~_\dimmarkup
 	c8 r r4
 	R2*2
-	<>^\ines \transposition ees
+	<>^\ineflat \transposition ees
 	g2\pp~
 % Bars 181 to 185
 	g~
@@ -203,7 +205,7 @@ musicCornoIMvtII = \relative c {
 	b~
 	b4. r8
 	R2
-	R\fermata
+	\once \ni R\fermata
 	R2*4
 % Bars 196 to 200
 	
@@ -215,5 +217,5 @@ musicCornoIMvtII = \relative c {
 	<< c2~ {s8\> s s s\!}>>
 	c4~ c8 r
 	R2
-	R\fermata \fine
+	\once \ni R\fermata \fine
 }

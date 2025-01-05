@@ -150,7 +150,7 @@ musicCornoIMvtIII = \relative c {
 	
 % Bars 121 to 125
 		e2->\fz
-		c->\fz
+		<< c->\fz {s4 s_\crescmarkup}>>
 		d4(\brack\mf b)
 		c( e)\<
 		d( g8.\! f16)

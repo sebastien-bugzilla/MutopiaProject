@@ -388,7 +388,7 @@ musicCornoIVMvtI = \relative c {
 	g2->~ g8 g
 	d2->~ d8 d
 % Bars 366 to 370
-	c2 c8 g16( a
+	c2~ c8 g16( a
 	b2~ b8) d16( e
 	fis2~ fis8) fis
 	d2~ d8 fis16( g
@@ -486,7 +486,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 466 to 470
 	g~
 	g
-	c4 r r
+	c4\brack\f r r
 	d'8^\soli d bes d bes4->
 	R2.
 % Bars 471 to 475
@@ -626,7 +626,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 591 to 595
 	g8-. e-. c4-> c->
 	d8-. f-. a4-> a->
-	g8-. e-> c4-> c->
+	g8-. e-. c4-> c->
 	d8-. f-. a4-> a->
 	r r8. e16 e4
 % Bars 596 to 600

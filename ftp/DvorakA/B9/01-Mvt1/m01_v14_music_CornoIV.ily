@@ -18,7 +18,7 @@ musicCornoIVMvtI = \relative c {
 	c2.~ c8) e16( f
 	g2.~ g8) g
 	e2 r\fermata \section
-	\time 3/4 c2.\pp->
+	\time 3/4 \startMeasureCount c2.\pp->
 	c->
 % Bars 11 to 15
 	\repeat volta 2 {
@@ -26,7 +26,7 @@ musicCornoIVMvtI = \relative c {
 		c->
 		c->
 		c->
-		c->
+		c-> \stopMeasureCount
 % Bars 16 to 20
 		c->~
 		c4 r r
@@ -36,7 +36,7 @@ musicCornoIVMvtI = \relative c {
 		
 		
 		
-		c2.->\pp
+		\startMeasureCount c2.->\pp
 % Bars 26 to 30
 		c->
 		c->
@@ -44,14 +44,14 @@ musicCornoIVMvtI = \relative c {
 		c->
 		c->
 % Bars 31 to 35
-		c->
+		c-> \stopMeasureCount
 		c->~
 		c4 r r
 		R2.*7
 % Bars 36 to 40
 	
 % Bars 41 to 45
-		c2.->\pp
+		\startMeasureCount c2.->\pp
 		c->
 		c->
 		c->
@@ -59,7 +59,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 46 to 50
 		c->
 		c->
-		c->
+		c-> \stopMeasureCount
 		c4-. c-. c-.
 		c-. c-. c-.
 % Bars 51 to 55
@@ -98,7 +98,7 @@ musicCornoIVMvtI = \relative c {
 	
 % Bars 96 to 100
 		
-		e2._\crescmarkup~
+		e2._\pcresc~
 		e~
 		<<e~ {s8\< s s s s s\!}>>
 		e2.
@@ -178,7 +178,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 171 to 175
 		g,4.\p g,8 g4
 		g4. g8 g4
-		g2.\pp~
+		\startMeasureCount g2.\pp~
 		g~
 		g~
 % Bars 176 to 180
@@ -186,17 +186,17 @@ musicCornoIVMvtI = \relative c {
 		g~
 		g~
 		g~
-		g
+		g \stopMeasureCount
 % Bars 181 to 185
 		c'\p~
 		c
-		g~
+		\startMeasureCount g~
 		g~
 		g~\pp
 % Bars 186 to 190
 		g~
 		g~
-		g
+		g \stopMeasureCount
 		a->\f
 		fis2->~ fis8. e16
 % Bars 191 to 195
@@ -222,13 +222,13 @@ musicCornoIVMvtI = \relative c {
 		gis4\f r r
 		R2.
 		g!4\f r r
-		r << d2 {s8\p\< s s s\!}>>
+		r << d2 {\hairpinShorten #'(-0.3 . -1) s8\p\< s s s\!}>>
 % Bars 211 to 215
 		r4 e8\brack\pp fis g4->
 		r_\crescendo e8 fis gis4->
 		r e8\< gis a4->
 		r e8 a bes4->\!
-		c,4(_\brackM\legato e a)
+		c,4(^\brackM\legato e a)
 % Bars 216 to 220
 		f2( c'4)
 		g( d e)
@@ -258,11 +258,11 @@ musicCornoIVMvtI = \relative c {
 % Bars 241 to 245
 		a4\f r r
 		b r r
-		r d->_\energico a->
+		r d->^\energico a->
 		r gis8 a b4->\fz
 		r a-> d->
 % Bars 246 to 250
-		r_\diminuendo gis,8 fis e4->\fz
+		r_\dimmarkup gis,8 fis e4->\fz
 		r bes'-> f!->
 		r g8 aes bes4->\fz
 		r f-> bes->
@@ -290,14 +290,10 @@ musicCornoIVMvtI = \relative c {
 		c2_\crescmarkup bes4~
 		bes\< c2
 		bes4\! r r
-		R2.*7
+		R2.*11
 % Bars 271 to 275
 	
 % Bars 276 to 280
-		
-		R2.*4
-		
-		
 		
 % Bars 281 to 285
 		a'2.(\brack\p
@@ -309,8 +305,8 @@ musicCornoIVMvtI = \relative c {
 		g4 r r
 		\alternative {
 			\volta 1 {
-				c2.->\brack\pp
-				c->
+				\startMeasureCount c2.->\brack\pp
+				c-> \stopMeasureCount
 			}
 			\volta 2 {
 				a'2.->\ff
@@ -373,7 +369,7 @@ musicCornoIVMvtI = \relative c {
 	
 	
 	
-	d,8\brack\p_\crescendo d d d d d
+	d,8\brack\p-\offset X-offset 2.5 _\crescendo d d d d d
 	d d d d d d
 % Bars 356 to 360
 	d\< d d d d d
@@ -388,7 +384,7 @@ musicCornoIVMvtI = \relative c {
 	g2->~ g8 g
 	d2->~ d8 d
 % Bars 366 to 370
-	c2 c8 g16( a
+	c2~ c8 g16( a
 	b2~ b8) d16( e
 	fis2~ fis8) fis
 	d2~ d8 fis16( g
@@ -410,7 +406,7 @@ musicCornoIVMvtI = \relative c {
 	g~
 	g~
 	g
-	g'->_\crescendo
+	g'->_\crescmarkup
 % Bars 396 to 400
 	g->\<
 	g->
@@ -439,24 +435,17 @@ musicCornoIVMvtI = \relative c {
 % Bars 421 to 425
 	b
 	e,->
-	R2.*5
+	R2.*20
 % Bars 426 to 430
 	
-	
-	R2.
-	R2.
-	R
 % Bars 431 to 435
-	R2.*5
+	
 % Bars 436 to 440
-	R2.
-	R2.
-	R
-	R2.*4
+	
 % Bars 441 to 445
 	
 	
-	ees'8\mf_\crescendo ees c ees c4
+	ees'8_\mfcrescendo ees c ees c4
 	R2.
 	ees8\f ees c ees c4
 % Bars 446 to 450
@@ -469,13 +458,13 @@ musicCornoIVMvtI = \relative c {
 	R2.*3
 	
 	
-	ees2.\brack\p~
+	\startMeasureCount ees2.\brack\p~
 	ees~
 % Bars 456 to 460
 	ees~
 	ees~
 	<< ees~ {s8\< s s s s s\!}>>
-	<< ees2.{s8\> s s s s s\!}>>
+	<< ees2.{s8\> s s s s s\!}>> \stopMeasureCount
 	ees2.\fz->
 % Bars 461 to 465
 	ees->\fz
@@ -486,7 +475,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 466 to 470
 	g~
 	g
-	c4 r r
+	c4\brack\f r r
 	d'8^\soli d bes d bes4->
 	R2.
 % Bars 471 to 475
@@ -576,15 +565,15 @@ musicCornoIVMvtI = \relative c {
 % Bars 546 to 550
 	
 % Bars 551 to 555
-	r4 e2->\brack\p
+	\startMeasureCount r4 e2->\brack\p
 	r4 e2->
 	r4 e2->
 	r4 e2->
-	r4 e2->_\brackM\crescmarkup
+	r4 e2->-\offset X-offset -2 _\brackM\crescmarkup
 % Bars 556 to 560
 	r4 e2->
 	r4 e2->
-	r4 e2->
+	r4 e2-> \stopMeasureCount
 	R2.
 	d''4\f b d~
 % Bars 561 to 565
@@ -626,14 +615,14 @@ musicCornoIVMvtI = \relative c {
 % Bars 591 to 595
 	g8-. e-. c4-> c->
 	d8-. f-. a4-> a->
-	g8-. e-> c4-> c->
+	g8-. e-. c4-> c->
 	d8-. f-. a4-> a->
 	r r8. e16 e4
 % Bars 596 to 600
 	r r8. e16 e4
 	r r8. e16 e4
 	r r8. a16 a4
-	r r8. d,16 d4
+	\startMeasureCount r r8. d,16 d4
 	r r8. d16 d4
 % Bars 601 to 605
 	r r8. d16 d4
@@ -644,7 +633,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 606 to 610
 	r r8. d16 d4
 	r r8. d16 d4
-	r r8. d16 d4
+	r r8. d16 d4 \stopMeasureCount
 	c'8-. b-. a2
 	a8-. g-. fis2
 % Bars 611 to 615

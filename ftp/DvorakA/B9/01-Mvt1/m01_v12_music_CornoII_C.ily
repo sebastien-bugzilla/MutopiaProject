@@ -171,7 +171,7 @@ musicCornoIIMvtI = \relative c {
 % Bars 161 to 165
 		g,2->~ g8. g16
 		g2~-> g8. g16
-		g2.~
+		g2.->~
 		g4 a-> b->
 		c2->~ c8. c16
 % Bars 166 to 170

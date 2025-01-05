@@ -51,6 +51,7 @@
 		\override CueClef.font-size = #-1 
 		\override CueEndClef.font-size = #-1 
 		\override MeasureCounter.font-size = #-3
+		\override DoublePercentRepeatCounter.font-size = #-3
 		
 %		\override StaffSymbol.transparent = ##t
 %		\override LedgerLineSpanner.transparent = ##t

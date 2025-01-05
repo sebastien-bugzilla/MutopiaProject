@@ -27,9 +27,11 @@ mfespressivo = \markup {\hspace #-0.8 \dynamic mf \italic {espressivo}}
 mfcrescendo = \markup {\hspace #-0.8 \dynamic mf \italic {crescendo}}
 mfcresc = \markup {\hspace #-0.8 \dynamic mf \italic {cresc.}}
 mfcrescB = \markup {\dynamic mf \italic {cresc.}}
+mfdim = \markup {\hspace #-0.8 \dynamic mf \italic {dim.}}
 fzcresc = \markup {\hspace #-0.54 \dynamic fz \italic {cresc.}}
 fzcrescendo = \markup {\hspace #-0.54 \dynamic fz \italic {crescendo}}
 fzdiminuendo = \markup {\hspace #-0.54 \dynamic fz \italic {diminuendo}}
+fzdim = \markup {\hspace #-0.54 \dynamic fz \italic {dim.}}
 fzpocoapococrescendo = \markup {\hspace #-0.54 \dynamic fz \italic {"poco a poco crescendo"}}
 fdiminuendo = \markup {\hspace #0.02 \dynamic f \italic {diminuendo}}
 flegato = \markup {\hspace #0.02 \dynamic f \italic {legato}}
@@ -97,6 +99,9 @@ fpp = #(make-dynamic-script
 
 inc = \markup {in C}
 ines = \markup {[in Es]}
+ineflat = \markup {
+	\concat { \general-align #Y #CENTER { "[in E" \tiny \flat "]" }}
+}
 
 brack = #(define-event-function 
 	(dyn) (ly:event?)
@@ -322,6 +327,12 @@ beamGap = #(define-music-function
 	#}
 )
 
+DoublePercentNumberOne = {
+	\once \override Score.RehearsalMark.padding = #0
+	\mark \markup {
+		\fontsize #-6 \musicglyph "one"
+	}
+}
 
 
 
