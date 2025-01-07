@@ -21,7 +21,7 @@ musicTrombeIMvtIV = \relative c {
 	a4\fermata r
 	R2
 % Bars 11 to 15
-	R2\fermata
+	\once \ni R2\fermata
 	R2*20
 % Bars 16 to 20
 	
@@ -31,7 +31,7 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*15
 % Bars 36 to 40
 	
@@ -64,11 +64,11 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 76 to 80
 	
-	\ni \mmrPos #6 R2
+	\ni \mmrPos #8 R2
 	\mmrPos #-6 R \no
 	R2*2
 % Bars 81 to 85
-	g'2_\pcrescendo~
+	g'2-\offset X-offset -1 _\pcrescendo~
 	g~
 	g~\<
 	g\!
@@ -339,7 +339,7 @@ musicTrombeIMvtIV = \relative c {
 	R2
 % Bars 426 to 430
 	g4 g8 r
-	r4 g
+	\startMeasureCount r4 g
 	r g
 	r g
 	r g
@@ -347,7 +347,7 @@ musicTrombeIMvtIV = \relative c {
 	r g
 	r g
 	r g
-	r g
+	r g \stopMeasureCount
 	e'-> c->
 % Bars 436 to 440
 	c4..-> d16
@@ -394,17 +394,17 @@ musicTrombeIMvtIV = \relative c {
 	f~
 	f~
 	f8 r r4
-	R2\fermata
+	\once \ni R2\fermata
 	f~
 % Bars 481 to 485
 	f~
 	f8 r r4
-	R2\fermata
+	\once \ni R2\fermata
 	c8\f r c r
 	R2
 % Bars 486 to 490
 	c8 r c r
-	R2*21
+	R2*21 
 % Bars 491 to 495
 	
 % Bars 496 to 500
@@ -453,8 +453,8 @@ musicTrombeIMvtIV = \relative c {
 % Bars 561 to 565
 	
 % Bars 566 to 570
-	\ni \mmrPos #4 R2
-	\mmrPos #4 R
+	\ni \mmrPos #6 R2
+	\mmrPos #6 R
 	\mmrPos #4 R
 	\mmrPos #4 R \no
 	c2\fz~
@@ -529,12 +529,12 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 671 to 675
 	
-	\ni \clef bass \mmrPos #8 R2
-	\mmrPos #8 R
-	\mmrPos #8 R
-	\mmrPos #8 R
+	\ni \clef bass \mmrPos #-7 R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 676 to 680
-	\mmrPos #8 R \no \clef treble
+	\mmrPos #-4 R \no \clef treble
 	R2 
 	e'2->\f
 	R
@@ -598,7 +598,7 @@ musicTrombeIMvtIV = \relative c {
 % Bars 736 to 740
 	<< g2-> {s4 s\<}>>
 	<< g2-> {s8 s s s\!}>>
-	<< d2 {s8\fz\> s s s\!}>>
+	<< d2 {\hairpinShorten #'(-0.3 . -1.5) s8\fz\> s s s\!}>>
 	b2->~
 	b4.. b16\<
 % Bars 741 to 745
@@ -617,7 +617,7 @@ musicTrombeIMvtIV = \relative c {
 % Bars 756 to 760
 	c4-> c->
 	e4-> c->
-	c4.. d16
+	c4..-> d16
 	e4-> d->
 	c2-> \section
 % Bars 761 to 765

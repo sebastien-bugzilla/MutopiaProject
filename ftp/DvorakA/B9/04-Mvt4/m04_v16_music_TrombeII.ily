@@ -21,7 +21,7 @@ musicTrombeIIMvtIV = \relative c {
 	a4\fermata r
 	R2
 % Bars 11 to 15
-	R2\fermata
+	\once \ni R2\fermata
 	R2*20
 % Bars 16 to 20
 	
@@ -31,14 +31,16 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
-	R2\fermata
-	R2*20
+	\once \ni R2\fermata
+	\mmrnDown R2*15
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
+	
+	\mmrnDown R2*5
 % Bars 51 to 55
 	
 	
@@ -61,13 +63,13 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 76 to 80
 	
 	\ni \mmrPos #4 R2
-	\mmrPos #4 R \no
+	\mmrPos #6 R \no
 	R2*2
 	
 % Bars 81 to 85
-	g'2_\pcrescendo~
+	g'2-\offset X-offset -1 _\pcrescendo~
 	g~
-	g~\<
+	\hairpinShorten #'(1 . -2) g~\<
 	g\!
 	c,8\f r c r
 % Bars 86 to 90
@@ -336,7 +338,7 @@ musicTrombeIIMvtIV = \relative c {
 	R2
 % Bars 426 to 430
 	g4 g8 r
-	r4 g
+	\startMeasureCount r4 g
 	r g
 	r g
 	r g
@@ -344,7 +346,7 @@ musicTrombeIIMvtIV = \relative c {
 	r g
 	r g
 	r g
-	r g
+	r g \stopMeasureCount
 	c-> e,->
 % Bars 436 to 440
 	g4..-> g16
@@ -387,12 +389,12 @@ musicTrombeIIMvtIV = \relative c {
 	d'~
 	d~
 	d8 r r4
-	R2\fermata
+	\once \ni R2\fermata
 	f,~
 % Bars 481 to 485
 	f~
 	f8 r r4
-	R2\fermata
+	\once \ni R2\fermata
 	c8\f r c r
 	R2
 % Bars 486 to 490
@@ -608,9 +610,9 @@ musicTrombeIIMvtIV = \relative c {
 	a4..-> a16
 	g4-> g->
 % Bars 756 to 760
-	a4.. a16
+	a4..-> a16
 	g4-> e->
-	a4.. a16
+	a4..-> a16
 	g4-> g->
 	c,2-> \section
 % Bars 761 to 765

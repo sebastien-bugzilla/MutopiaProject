@@ -630,7 +630,7 @@ cueVoiceTrombeIMvtI = \relative c {
 	% bar 181 - 184
 	\transpose ees c {
 		\relative c {
-			ees''4(^\markup {\column {\lower #1 "Fl." "Ob."}} g c8)[ r16 bes]
+			ees''4(^\markup {\column {\lower #1.5 "Fl." "Ob."}} g c8)[ r16 bes]
 			aes2( ees'4)
 			bes( f g
 			aes2 f'8)[ r16 ees]
@@ -669,7 +669,7 @@ cueVoiceTrombeIMvtI = \relative c {
 cueVoiceTrombeIMvtII = \relative c {
 	s2*51
 	% bar 52
-	r4^\markup {Cor.} c'32[\p\<-. c-. c-. c-. c-. c-. c-. c-.]\!
+	r4 c'32[\p\<-.^\markup {Cor.} c-. c-. c-. c-. c-. c-. c-.]\!
 	s2*16
 	% bar 69 - 70
 	\transpose ees c {
@@ -693,14 +693,14 @@ cueVoiceTrombeIMvtIII = \relative c {
 	\transpose ees c {
 		\relative c {
 			c4^\markup {Timp.} g
-			c8 c g r
+			c8 c g\noBeam r
 		}
 	}
 	s2*129
 	% bar 166 - 167
 	\transpose ees c {
 		\relative c {
-			ees'''8.( f16) ees4
+			ees'''8.(^\markup {Fl.} f16) ees4
 			bes'4.( aes8)
 		}
 	}
@@ -817,7 +817,7 @@ cueVoiceTrombeIIMvtI = \relative c {
 	% bar 181 - 184
 	\transpose ees c {
 		\relative c {
-			ees''4(^\markup {\column {\lower #1 "Fl." "Ob."}} g c8)[ r16 bes]
+			ees''4(^\markup {\column {\lower #1.5 "Fl." "Ob."}} g c8)[ r16 bes]
 			aes2( ees'4)
 			bes( f g
 			aes2 f'8)[ r16 ees]
@@ -890,7 +890,7 @@ cueVoiceTrombeIIMvtIII = \relative c {
 	% bar 166 - 167
 	\transpose ees c {
 		\relative c {
-			ees'''8.( f16) ees4
+			ees'''8.(^\markup {Fl.} f16) ees4
 			bes'4.( aes8)
 		}
 	}
@@ -916,7 +916,7 @@ cueVoiceTrombeIIMvtIV = \relative c {
 	e'8. e,16 e4 \oneVoice 
 	s2*23
 	% bar 102
-	<>^\markup {Cor.}
+	<>-\offset X-offset -2.5 ^\markup {Cor.}
 	s2*45
 	% bar 147 - 148
 	\voiceTwo e8^\markup {Cor.} e16 r e8 e16 r
@@ -925,7 +925,7 @@ cueVoiceTrombeIIMvtIV = \relative c {
 	% bar 235 - 238
 	b'2~\fp^\markup {Cor.}
 	b
-	b~
+	b~\fp
 	b
 	s2*38
 	% bar 277 - 278

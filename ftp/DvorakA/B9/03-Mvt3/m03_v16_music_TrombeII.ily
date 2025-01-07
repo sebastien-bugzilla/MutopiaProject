@@ -13,12 +13,12 @@ musicTrombeIIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 6 to 10
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*25
 % Bars 11 to 15
 	
@@ -49,10 +49,10 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	
-	\ni \clef bass R2
+	\ni \clef bass \mmrPos #4 R2
 % Bars 36 to 40
-	R \no \clef treble
-	e'4->\brack\mf_\crescmarkup e->
+	\mmrPos #4 R \no \clef treble
+	e'4->\brack\mf-\offset X-offset 3.5 _\crescmarkup e->
 	e8-. e-. e-. r
 	a\f r a16 a a a
 	a8 r a16 a a a
@@ -124,23 +124,23 @@ musicTrombeIIMvtIII = \relative c {
 	e~
 % Bars 96 to 100
 	e8 r r4
-	R2\fermata % signo 
-	R2*4
+	\once \ni R2\fermata % signo 
+	R2*3
 	
 	
 % Bars 101 to 105
-	
+	\once \ni R2\fermata
 	\repeat volta 2 {
-		R2*8
+		\mmrnDown R2*8
 % Bars 106 to 110
 		
 		
 		
 		
-		g,8.->\mf[_\crescendo g16 g8] r
+		g,8.->_\mfcrescendo[ g16 g8] r
 % Bars 111 to 115
-		g8.[ g16 g8] r
-		g8.[ g16 g8] r
+		g8.[-> g16 g8] r
+		g8.[-> g16 g8] r
 		R2*17
 % Bars 116 to 120
 	
@@ -183,7 +183,7 @@ musicTrombeIIMvtIII = \relative c {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no
 	e'16\ff r r8 r4
-	R2*12
+	\mmrnDown R2*12
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -226,7 +226,7 @@ musicTrombeIIMvtIII = \relative c {
 	r8 c4->\f c8->~
 	c r r4
 % Bars 221 to 225
-	c8-.\brack\ff c-. c8.-> c16-.
+	c8-.-\offset X-offset -1 \brack\ff c-. c8.-> c16-.
 	c4 g
 	c8-. c-. c8.-> c16-.
 	c4 c
@@ -245,16 +245,16 @@ musicTrombeIIMvtIII = \relative c {
 	R2*2
 % Bars 236 to 240
 	
-	r4 r8 r16 \section r
+	r4 r8 r16 \section \break r
 	R2*3
 	
 	
 % Bars 241 to 245
-	R2\fermata
+	\once \ni R2\fermata
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 246 to 250
 	R2*27
 	
@@ -288,7 +288,7 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 271 to 275
 	
 	
-	e4->\brack\mf_\crescmarkup e->
+	e4->\brack\mf-\offset X-offset 3.5 _\crescmarkup e->
 	e8-. e-. e-. r
 	a\f r a16 a a a
 % Bars 276 to 280
@@ -360,7 +360,7 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 331 to 335
 	e~
 	e8 r r4
-	R2\fermata % signo
+	\once \ni R2\fermata \section % signo
 	R2*8
 	
 % Bars 336 to 340
@@ -369,7 +369,7 @@ musicTrombeIIMvtIII = \relative c {
 	
 	e4\f d8-. cis-.
 	cis8.-> d16 d4
-	a'8-. b-. c8.-> c16
+	a'8-. b-. c!8.-> c16
 	c4( b)
 % Bars 346 to 350
 	e,4\f e8 e
@@ -390,7 +390,7 @@ musicTrombeIIMvtIII = \relative c {
 	b8.-> c16-. c4->
 	d-> c->
 % Bars 361 to 365
-	b8. c16-. c4
+	b8.-> c16-. c4->
 	d-> d->
 	bes4. c8
 	d4 bes
@@ -414,5 +414,5 @@ musicTrombeIIMvtIII = \relative c {
 	c2~
 	c8 e,4\p e8
 % Bar 381
-	e8 r r4 \fine
+	e8 r r4 \markNormalSizeFermata \fine
 }

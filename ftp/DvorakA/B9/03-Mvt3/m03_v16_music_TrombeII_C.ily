@@ -139,8 +139,8 @@ musicTrombeIIMvtIII = \relative c {
 		
 		g,8.->[ g16 g8] r
 % Bars 111 to 115
-		g8.[ g16 g8] r
-		g8.[ g16 g8] r
+		g8.[-> g16 g8] r
+		g8.[-> g16 g8] r
 		R2*17
 % Bars 116 to 120
 	
@@ -390,7 +390,7 @@ musicTrombeIIMvtIII = \relative c {
 	b8.-> c16-. c4->
 	d-> c->
 % Bars 361 to 365
-	b8. c16-. c4
+	b8.-> c16-. c4->
 	d-> d->
 	bes4. c8
 	d4 bes

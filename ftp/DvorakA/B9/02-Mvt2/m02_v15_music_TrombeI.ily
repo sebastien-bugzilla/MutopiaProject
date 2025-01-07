@@ -9,7 +9,7 @@ musicTrombeIMvtII = \relative c {
 	\key c \major
 	\transposition ees
 % Bars 1 to 5
-	R2\fermata
+	\ni R2\fermata
 	R\fermata
 	r4\fermata r\fermata
 	R2\fermata
@@ -17,7 +17,7 @@ musicTrombeIMvtII = \relative c {
 % Bars 6 to 10
 	R\fermata
 	r4\fermata r\fermata
-	R2\fermata
+	R2\fermata \no
 	R2*43
 % Bars 11 to 15
 	
@@ -65,13 +65,13 @@ musicTrombeIMvtII = \relative c {
 % Bars 81 to 85
 	
 	
-	r8 r16 g32\f g g16 g g g
+	\startMeasureCount r8 r16 g32\f g g16 g g g
 	r8 r16 g32 g g16 g g g
 	r8 r16 g32 g g16 g g g
 % Bars 86 to 90
 	r8 r16 g32 g g16 g g g
 	r8 r16 g32 g g16 g g g
-	r8 r16 g32 g g16\> g g g\!
+	r8 r16 g32 g g16\> g g g\! \stopMeasureCount
 	R2*8
 	
 % Bars 91 to 95
@@ -102,15 +102,20 @@ musicTrombeIMvtII = \relative c {
 % Bars 121 to 125
 	\mmrPos #-4 R \no
 	r8 r16 c([\pp d c)] r8
-	R2*45
+	R2*17
 % Bars 126 to 130
 	
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
-% Bars 141 to 145
 	
+	
+	
+	\ni R2\fermata
+% Bars 141 to 145
+	R\fermata \no
+	R2*26
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -143,7 +148,7 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*9
 % Bars 196 to 200
 	
@@ -151,5 +156,5 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

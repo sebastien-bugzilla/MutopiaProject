@@ -590,7 +590,7 @@ musicTrombeIMvtIV = \relative c {
 % Bars 756 to 760
 	\partCombineApart \stemUp c4-> c-> \partCombineAutomatic
 	e4-> c->
-	c4.. d16
+	c4..-> d16
 	e4-> d->
 	c2-> \section
 % Bars 761 to 765

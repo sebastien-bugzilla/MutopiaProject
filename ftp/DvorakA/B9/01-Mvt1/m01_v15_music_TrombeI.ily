@@ -134,13 +134,13 @@ musicTrombeIMvtI = \relative c {
 		
 		
 		
-		r4 d2\f->
+		\startMeasureCount r4 d2\f->
 		r4 d2->
 % Bars 191 to 195
 		r4 d2->
 		r4 d2->
 		r4 d2->
-		r4 d2->
+		r4 d2-> \stopMeasureCount
 		R2.*6
 % Bars 196 to 200
 	
@@ -155,7 +155,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 211 to 215
 		
 		
-		e2.\p\<~
+		e!2.\p\<~
 		<< e {s8 s s s s s\!}>>
 		e4(\f c) c-.
 % Bars 216 to 220
@@ -172,7 +172,7 @@ musicTrombeIMvtI = \relative c {
 		
 % Bars 226 to 230
 		
-		g,2._\fzcresc->~
+		g,2.~-\offset X-offset -2 _\fzcresc->
 		g~
 		g~
 		g
@@ -187,11 +187,11 @@ musicTrombeIMvtI = \relative c {
 % Bars 241 to 245
 		d4\f r r
 		e r r
-		R2.*36
+		R2.*8
 % Bars 246 to 250
 	
 % Bars 251 to 255
-	
+		\mmrLength #14 \tempoXoffset #-2 \mmrnDown R2.*28
 % Bars 256 to 260
 	
 % Bars 261 to 265
@@ -333,7 +333,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 466 to 470
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	r4\brack\f c2->\fz
+	\startMeasureCount r4\brack\f c2->-\offset X-offset 0.5 \fz
 	r4 c2->\fz
 	r4 c2->\fz
 % Bars 471 to 475
@@ -341,7 +341,7 @@ musicTrombeIMvtI = \relative c {
 	r4 c2->\brack\fz
 	r4 c2->\brack\fz
 	r4 c2->\brack\fz
-	r4 c2->\brack\fz \section
+	r4 c2->\brack\fz \stopMeasureCount \section
 % Bars 476 to 480
 	R2.*8
 % Bars 481 to 485
@@ -372,14 +372,14 @@ musicTrombeIMvtI = \relative c {
 % Bars 506 to 510
 	e~\<
 	e4\! r r
-	r d2->\f
+	\startMeasureCount r d2->\f
 	r4 d2->
 	r4 d2->
 % Bars 511 to 515
 	r4 d2->
 	r4 d2->
 	r4 d2->
-	r4 d2->
+	r4 d2-> \stopMeasureCount
 	cis->\ff r4
 % Bars 516 to 520
 	R2.
@@ -435,7 +435,7 @@ musicTrombeIMvtI = \relative c {
 	
 	
 	
-	r4 g,2\f->
+	\startMeasureCount r4 g,2\f->
 	r4 g2->
 % Bars 581 to 585
 	r4 g2->
@@ -444,7 +444,7 @@ musicTrombeIMvtI = \relative c {
 	r4 g2->
 	r4 g2->
 % Bars 586 to 590
-	r4 g2->
+	r4 g2-> \stopMeasureCount
 	c,2.->\brack\fz
 	g'->\brack\fz
 	e->
@@ -459,7 +459,7 @@ musicTrombeIMvtI = \relative c {
 	r4 e2->
 	r4 e2->
 	r4 e2->
-	r4 d2->
+	\startMeasureCount r4 d2->
 	r4 d2->
 % Bars 601 to 605
 	r4 d2->
@@ -470,7 +470,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 606 to 610
 	r4 d2->
 	r4 d2->
-	r4 d2->
+	r4 d2-> \stopMeasureCount
 	c2.\brack\ff\>~
 	c\!
 % Bars 611 to 615

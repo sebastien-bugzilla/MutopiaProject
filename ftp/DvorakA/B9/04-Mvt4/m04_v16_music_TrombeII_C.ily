@@ -588,9 +588,9 @@ musicTrombeIIMvtIV = \relative c {
 	a4..-> a16
 	g4-> g->
 % Bars 756 to 760
-	a4.. a16
+	a4..-> a16
 	g4-> e->
-	a4.. a16
+	a4..-> a16
 	g4-> g->
 	c,2-> \section
 % Bars 761 to 765
