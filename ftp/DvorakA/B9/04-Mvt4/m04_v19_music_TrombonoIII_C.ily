@@ -695,7 +695,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	d2-> e-> f->
 	g1.->
 	g,2 a'4.-> g8 g2
-	g1.
+	g1.->
 % Bars 796 to 800
 	g,2 a'4.-> g8 g2
 	g1.->
@@ -737,7 +737,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 	
 	
-	c2
+	c2->
 % Bar 831
 	c2\fermata \fine
 }

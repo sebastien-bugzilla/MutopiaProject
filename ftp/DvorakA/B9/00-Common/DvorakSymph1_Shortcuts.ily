@@ -11,6 +11,7 @@ ppsempreB = \markup {\dynamic pp \italic {sempre}}
 ppdolce = \markup {\hspace #-0.82 \dynamic pp \italic {dolce}}
 ppstacc = \markup {\hspace #-0.82 \dynamic pp \italic {stacc.}}
 ppcresc = \markup {\hspace #-0.82 \dynamic pp \italic {cresc.}}
+pppococresc = \markup {\hspace #-0.82 \dynamic pp \italic {poco cresc.}}
 pppocoapococresc = \markup {\hspace #-0.82 \dynamic pp \italic {"poco a poco cresc."}}
 pppocoapococrescendo = \markup {\hspace #-0.82 \dynamic pp \italic {"poco a poco crescendo"}}
 ppleggierissimo = \markup {\hspace #-0.82 \dynamic pp \italic {leggierissimo}}
@@ -334,9 +335,11 @@ DoublePercentNumberOne = {
 	}
 }
 
-
-
-
+paramParentheses = {
+	\override Parentheses.font-size = #8
+	\set fontSize = #-4
+	\override Stem.length-fraction = #0.8 
+}
 
 
 %stemOffset = #(define-music-function

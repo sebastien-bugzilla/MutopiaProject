@@ -13,12 +13,12 @@ musicTrombonoIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 6 to 10
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*25
 % Bars 11 to 15
 	
@@ -52,7 +52,7 @@ musicTrombonoIMvtIII = \relative c {
 	\ni \clef bass \mmrPos #4 R2
 % Bars 36 to 40
 	\mmrPos #4 R \no \clef alto
-	g''4->\brack\mf_\crescmarkup f->
+	g''4->\brack\mf-\offset X-offset 3.5 _\crescmarkup f->
 	ees8-. ees-. d-. r
 	g-.\f f-. ees-. r
 	f4.-> r8
@@ -73,7 +73,7 @@ musicTrombonoIMvtIII = \relative c {
 	
 	des4.->\f r8
 	des4.-> r8
-	<< a'2( {s8\> s s s\!}>>
+	<< a'2->( {s8\> s s s\!}>>
 % Bars 56 to 60
 	g8)\p r r4
 	c,8-.\f b-. c-. r
@@ -106,7 +106,7 @@ musicTrombonoIMvtIII = \relative c {
 	aes)\> g\!(
 % Bars 81 to 85
 	f ees
-	e8)[ f-. g8.-> aes16]
+	e8)[-. f-. g8.-> aes16]
 	g4-> f->
 	d8-. ees-. e8.-> f16
 	ees!4-> des->
@@ -124,12 +124,12 @@ musicTrombonoIMvtIII = \relative c {
 	g4..) fis16(
 % Bars 96 to 100
 	g8) r r4
-	R2\fermata % signo
+	\once \ni R2\fermata % signo
 	R2*3
 	
 	
 % Bars 101 to 105
-	R2\fermata
+	\once \ni R2\fermata
 	\repeat volta 2 {
 		R2*26
 % Bars 106 to 110
@@ -144,7 +144,7 @@ musicTrombonoIMvtIII = \relative c {
 		
 		
 		r4 d\f->~
-		d8 a d4->~_\dimin
+		d8 a d4->~-\offset X-offset -2 _\dimin
 		\alternative {
 			\volta 1 {
 				d8\brack\p r r4
@@ -246,16 +246,16 @@ musicTrombonoIMvtIII = \relative c {
 	
 % Bars 236 to 240
 	
-	r4 r8 r16 \section r
+	r4 r8 r16 \section \break r
 	R2*3
 	
 	
 % Bars 241 to 245
-	R2\fermata
+	\once \ni R2\fermata
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 246 to 250
 	R2*27
 	
@@ -289,7 +289,7 @@ musicTrombonoIMvtIII = \relative c {
 % Bars 271 to 275
 	
 	
-	g4->\brack\mf_\crescmarkup f->
+	g4->\brack\mf-\offset X-offset 3.5 _\crescmarkup f->
 	ees8-. ees-. d-. r
 	g-.\f f-. ees-. r
 % Bars 276 to 280
@@ -311,7 +311,7 @@ musicTrombonoIMvtIII = \relative c {
 	des4.->\f r8
 	des4.-> r8
 % Bars 291 to 295
-	<< a'2( {s8\> s s s\!}>>
+	<< a'2->( {s8\> s s s}>>
 	g8)\p r r4
 	c,8-.\f b-. c-. r
 	g'4.-> r8
@@ -343,7 +343,7 @@ musicTrombonoIMvtIII = \relative c {
 % Bars 316 to 320
 	aes)\> g\!(
 	f ees
-	e8)[ f-. g8.-> aes16]
+	e8)[-. f-. g8.-> aes16]
 	g4-> f->
 	d8-. ees-. e8.-> f16
 % Bars 321 to 325
@@ -361,7 +361,7 @@ musicTrombonoIMvtIII = \relative c {
 % Bars 331 to 335
 	g4..) fis16(
 	g8) r r4
-	R2\fermata % signo
+	\once \ni R2\fermata \section % signo
 	R2
 	des2\pp
 % Bars 336 to 340
@@ -419,5 +419,5 @@ musicTrombonoIMvtIII = \relative c {
 	R2*3
 	
 % Bar 381
-	\fine
+	\markNormalSizeFermata \fine
 }

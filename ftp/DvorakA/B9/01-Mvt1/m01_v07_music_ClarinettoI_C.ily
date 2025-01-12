@@ -283,7 +283,7 @@ musicClarinettoIMvtI = \relative c {
 		R2.*3
 		
 		
-		r4 cis(\plegato\< d
+		r4 cis(_\plegato\< d
 		e f fis\!
 % Bars 241 to 245
 		g)\f r r

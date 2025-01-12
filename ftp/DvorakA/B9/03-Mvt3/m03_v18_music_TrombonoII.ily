@@ -13,12 +13,12 @@ musicTrombonoIIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 6 to 10
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*25
 % Bars 11 to 15
 	
@@ -52,10 +52,10 @@ musicTrombonoIIMvtIII = \relative c {
 	\ni \clef bass \mmrPos #-6 R2
 % Bars 36 to 40
 	\mmrPos #-6 R \no \clef tenor
-	c'4->\brack\mf_\crescmarkup b->
+	c'4->\brack\mf-\offset X-offset 3.5 _\crescmarkup b->
 	c8-. c-. b-. r
 	c4.->\f r8
-	c8-> bes-> aes-> r 
+	c8-> bes!-> aes-> r 
 % Bars 41 to 45
 	R2*12
 	
@@ -73,7 +73,7 @@ musicTrombonoIIMvtIII = \relative c {
 	
 	des4.->\f r8
 	des4.-> r8
-	<< a2( {s8\> s s s\!}>>
+	<< a2->( {\hairpinShorten #'(0.6 . -1) s8\> s s s\!}>>
 % Bars 56 to 60
 	g8)\p r r4
 	g8-.\f g-. g-. r
@@ -120,18 +120,18 @@ musicTrombonoIIMvtIII = \relative c {
 	f8.-> des16-. des4->
 	ges,8-> f-> ees-> des->
 	aes'8.-> ges16-. ges4->
-	g!4..->\fff fis16(
+	g!4..^>\fff fis16(
 	g4..) fis16(
 % Bars 96 to 100
 	g8) r r4
-	R2\fermata % signo
+	\once \ni R2\fermata % signo
 	R2*3
 	
 	
 % Bars 101 to 105
-	R2\fermata
+	\once \ni R2\fermata
 	\repeat volta 2 {
-		R2*28
+		\mmrLength #13 R2*28
 % Bars 106 to 110
 	
 % Bars 111 to 115
@@ -224,12 +224,9 @@ musicTrombonoIIMvtIII = \relative c {
 	ees8-. f-. ees-.\! r
 	c4->\f c->
 	c8.-> d16-. d8-. bes-.
-	R2*4
+	R2*15
 % Bars 216 to 220
 	
-	
-	
-	R2*11
 % Bars 221 to 225
 	
 % Bars 226 to 230
@@ -246,16 +243,16 @@ musicTrombonoIIMvtIII = \relative c {
 	
 % Bars 236 to 240
 	
-	r4 r8 r16 \section r
+	r4 r8 r16 \section \break r
 	R2*3
 	
 	
 % Bars 241 to 245
-	R2\fermata
+	\once \ni R2\fermata
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 246 to 250
 	R2*27
 	
@@ -289,11 +286,11 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 271 to 275
 	
 	
-	c4->\brack\mf_\crescmarkup b->
+	c4->\brack\mf-\offset X-offset 3.5 _\crescmarkup b->
 	c8-. c-. b-. r
 	c4.->\f r8
 % Bars 276 to 280
-	c8-> bes-> aes-> r 
+	c8-> bes!-> aes-> r 
 	R2*12
 	
 	
@@ -311,7 +308,7 @@ musicTrombonoIIMvtIII = \relative c {
 	des4.->\f r8
 	des4.-> r8
 % Bars 291 to 295
-	<< a2( {s8\> s s s\!}>>
+	<< a2(-> {\hairpinShorten #'(0.6 . -1) s8\> s s s\!}>>
 	g8)\p r r4
 	g8-.\f g-. g-. r
 	g4.-> r8
@@ -361,7 +358,7 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 331 to 335
 	g4..) fis16(
 	g8) r r4
-	R2\fermata % signo
+	\once \ni R2\fermata \section % signo
 	R2
 	aes2\pp
 % Bars 336 to 340
@@ -419,5 +416,5 @@ musicTrombonoIIMvtIII = \relative c {
 	R2*3
 	
 % Bar 381
-	\fine
+	\markNormalSizeFermata \fine
 }

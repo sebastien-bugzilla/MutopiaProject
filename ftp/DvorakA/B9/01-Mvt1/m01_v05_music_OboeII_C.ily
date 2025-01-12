@@ -279,7 +279,7 @@ musicOboeIIMvtI = \relative c {
 		R2.*3
 		
 		
-		r4 b\plegato\<( c
+		r4 b_\plegato\<( c
 		d ees e\!
 % Bars 241 to 245
 		f)\f r r

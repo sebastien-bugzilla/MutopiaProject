@@ -295,7 +295,7 @@ musicFagottoIIMvtI = \relative c {
 		R2.*3
 		
 		
-		r4 f,(\plegato\< ees
+		r4 f,(_\plegato\< ees
 		d c bes\!
 % Bars 241 to 245
 		aes\f) r r

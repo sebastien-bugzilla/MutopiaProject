@@ -73,7 +73,7 @@ musicTrombonoIIMvtIII = \relative c {
 	
 	des4.->\f r8
 	des4.-> r8
-	<< a2( {s8\> s s s\!}>>
+	<< a2(-> {s8\> s s s\!}>>
 % Bars 56 to 60
 	g8)\p r r4
 	g8-.\f g-. g-. r
@@ -311,7 +311,7 @@ musicTrombonoIIMvtIII = \relative c {
 	des4.->\f r8
 	des4.-> r8
 % Bars 291 to 295
-	<< a2( {s8\> s s s\!}>>
+	<< a2(-> {s8\> s s s\!}>>
 	g8)\p r r4
 	g8-.\f g-. g-. r
 	g4.-> r8

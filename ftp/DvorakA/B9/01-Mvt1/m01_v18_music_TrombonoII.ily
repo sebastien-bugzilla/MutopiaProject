@@ -15,7 +15,7 @@ musicTrombonoIIMvtI = \relative c {
 	b4 r r2
 	c4 r r2
 % Bars 6 to 10
-	bes4 r r2
+	bes!4 r r2
 	d4 r r2
 	b4 r r2\fermata \section
 	\time 3/4 R2.*2
@@ -25,7 +25,7 @@ musicTrombonoIIMvtI = \relative c {
 		R2.*6
 % Bars 16 to 20
 		
-		c2._\ppsempre~
+		\startMeasureCount c2._\ppsempre~
 		c~
 		c~
 		c~
@@ -33,14 +33,14 @@ musicTrombonoIIMvtI = \relative c {
 		c~
 		c~
 		c~
-		c~
+		c~ \stopMeasureCount
 		c4 r r
 % Bars 26 to 30
 		R2.*7
 % Bars 31 to 35
 		
 		
-		bes2.\pp~
+		\startMeasureCount bes2.\pp~
 		bes~
 		bes~
 % Bars 36 to 40
@@ -48,14 +48,14 @@ musicTrombonoIIMvtI = \relative c {
 		bes~
 		bes~
 		bes~
-		bes
+		bes \stopMeasureCount
 % Bars 41 to 45
 		R2.*8
 % Bars 46 to 50
 		
 		
 		
-		aes2.\pp~
+		\startMeasureCount aes2.\pp~
 		aes~
 % Bars 51 to 55
 		aes~
@@ -64,8 +64,8 @@ musicTrombonoIIMvtI = \relative c {
 		aes~
 		aes~
 % Bars 56 to 60
-		aes
-		aes^\solo_\brackM\crescmarkup
+		aes \stopMeasureCount
+		aes->^\solo_\brackM\crescmarkup
 		bes2~ bes8 ees,
 		ees2 aes4~
 		aes bes-> c->
@@ -84,7 +84,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 76 to 80
 		
-		g,2.\pp~_\brackM\crescmarkup
+		g,2.\pp~-\offset X-offset 2.5 _\brackM\crescmarkup
 		g~
 		g~
 		g
@@ -233,7 +233,7 @@ musicTrombonoIIMvtI = \relative c {
 		bes~
 		bes
 % Bars 231 to 235
-		b!2.\fz->
+		b!2.-\offset X-offset 0.5 \fz->
 		b->\fz
 		b->\fz
 		b->\pp
@@ -392,7 +392,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 386 to 390
 	
-	e,2.\pp~
+	e,2._\pppococresc~
 	e~
 	e~
 	e4 r r
@@ -568,7 +568,7 @@ musicTrombonoIIMvtI = \relative c {
 	d4-.\f r r
 	R2.
 	bes4-. r r
-	bes2.->
+	\startMeasureCount bes2.->
 	bes->
 % Bars 581 to 585
 	bes->
@@ -577,7 +577,7 @@ musicTrombonoIIMvtI = \relative c {
 	bes->
 	bes->
 % Bars 586 to 590
-	bes->
+	bes-> \stopMeasureCount
 	bes4-. r r
 	R2.
 	bes4-. r r
@@ -585,8 +585,8 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 591 to 595
 	ees2.\brack\fz->
 	R2.
-	ees\brack\fz
-	c'\brack\fz
+	ees->\brack\fz
+	c'->\brack\fz
 	g4 r r
 % Bars 596 to 600
 	R2.*7

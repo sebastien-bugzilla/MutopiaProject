@@ -351,7 +351,7 @@ musicTrombonoIMvtI = \relative c {
 	
 % Bars 386 to 390
 	
-	e2.\pp~
+	e2._\pppococresc~
 	e~
 	e~
 	e4 r r

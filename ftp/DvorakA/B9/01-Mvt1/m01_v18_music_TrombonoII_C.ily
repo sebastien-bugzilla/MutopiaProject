@@ -388,7 +388,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 386 to 390
 	
-	e,2.\pp~
+	e,2._\pppococresc~
 	e~
 	e~
 	e4 r r
@@ -577,8 +577,8 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 591 to 595
 	ees2.\brack\fz->
 	R2.
-	ees\brack\fz
-	c'\brack\fz
+	ees->\brack\fz
+	c'->\brack\fz
 	g4 r r
 % Bars 596 to 600
 	R2.*7

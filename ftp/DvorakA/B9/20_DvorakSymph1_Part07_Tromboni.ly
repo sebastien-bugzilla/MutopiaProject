@@ -27,6 +27,9 @@
 \include "./01-Mvt1/m01_v17_music_TrombonoI.ily"
 \include "./01-Mvt1/m01_v18_music_TrombonoII.ily"
 \include "./01-Mvt1/m01_v19_music_TrombonoIII.ily"
+\include "./02-Mvt2/m02_v17_music_TrombonoI.ily"
+\include "./02-Mvt2/m02_v18_music_TrombonoII.ily"
+\include "./02-Mvt2/m02_v19_music_TrombonoIII.ily"
 \include "./03-Mvt3/m03_v17_music_TrombonoI.ily"
 \include "./03-Mvt3/m03_v18_music_TrombonoII.ily"
 \include "./03-Mvt3/m03_v19_music_TrombonoIII.ily"
@@ -45,7 +48,11 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 (The Bells of Zlonice)"
+			\concat {
+				"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 " 
+				\italic { "\"" "The Bells of Zlonice" "\"" }
+				" — Tromboni"
+			}
 		}
 		instrument = \markup {
 			"Tromboni"
@@ -53,9 +60,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIMvtI
-%			}
+			\new Voice {
+				\formatTrombonoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoI) \tempiPartMvtI
 			}
@@ -77,9 +84,31 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIMvtIII
-%			}
+			\new Voice {
+				\formatTrombonoIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(trombonoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTrombonoIMvtII \musicTrombonoIMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #4 \bold "2. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTrombonoIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoI) \tempiPartMvtIII
 			}
@@ -101,9 +130,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIMvtIV
-%			}
+			\new Voice {
+				\formatTrombonoIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoI) \tempiPartMvtIV
 			}
@@ -117,7 +146,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2.5 \bold 4.
 			}
 		}
 		\layout {
@@ -125,9 +154,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIMvtI
-%			}
+			\new Voice {
+				\formatTrombonoIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtI
 			}
@@ -149,9 +178,31 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIMvtIII
-%			}
+			\new Voice {
+				\formatTrombonoIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(trombonoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTrombonoIIMvtII \musicTrombonoIIMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #3.5 \bold "2. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTrombonoIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtIII
 			}
@@ -163,7 +214,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -173,9 +224,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIMvtIV
-%			}
+			\new Voice {
+				\formatTrombonoIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtIV
 			}
@@ -189,7 +240,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #3 \bold 4.
 			}
 		}
 		\layout {
@@ -197,9 +248,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIIMvtI
-%			}
+			\new Voice {
+				\formatTrombonoIIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoIII) \tempiPartMvtI
 			}
@@ -221,9 +272,31 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIIMvtIII
-%			}
+			\new Voice {
+				\formatTrombonoIIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(trombonoIII) \tempiPartMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTrombonoIIIMvtII \musicTrombonoIIIMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #3.5 \bold "2. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTrombonoIIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoIII) \tempiPartMvtIII
 			}
@@ -235,7 +308,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -245,9 +318,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIIMvtIV
-%			}
+			\new Voice {
+				\formatTrombonoIIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoIII) \tempiPartMvtIV
 			}
@@ -261,7 +334,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2.5 \bold 4.
 			}
 		}
 		\layout {

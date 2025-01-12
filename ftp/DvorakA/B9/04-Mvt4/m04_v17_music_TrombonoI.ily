@@ -21,7 +21,7 @@ musicTrombonoIMvtIV = \relative c {
 	a4\fermata r
 	R2
 % Bars 11 to 15
-	R\fermata
+	\once \ni R\fermata
 	R2*20
 % Bars 16 to 20
 	
@@ -31,7 +31,7 @@ musicTrombonoIMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*15
 % Bars 36 to 40
 	
@@ -45,7 +45,7 @@ musicTrombonoIMvtIV = \relative c {
 	R2*2
 % Bars 51 to 55
 	
-	d4\brack\mf\< f\!
+	\hairpinShorten #'(-0.3 . -1.5) d4\brack\mf\< f\!
 	e8\f r f4~
 	f8 r e4(
 	f8) r b,4~
@@ -139,7 +139,7 @@ musicTrombonoIMvtIV = \relative c {
 	
 	
 	
-	\ni \clef treble \mmrPos #-4 R2 \clef alto \no 
+	\ni \clef treble \mmrPos #-8 R2 \clef alto \no 
 	g'2->\f
 % Bars 151 to 155
 	e4( cis
@@ -319,7 +319,7 @@ musicTrombonoIMvtIV = \relative c {
 	ees8 r r4_\brackM\crescmarkup
 % Bars 366 to 370
 	c8 r r4
-	e2\ff~
+	e!2\ff~ 
 	e
 	e~
 	e
@@ -432,12 +432,12 @@ musicTrombonoIMvtIV = \relative c {
 	d\ff~
 	d~
 	d8 r r4
-	R2\fermata
+	\once \ni R2\fermata
 	des~
 % Bars 481 to 485
 	des~
 	des8 r r4
-	R2\fermata
+	\once \ni R2\fermata
 	a8\f r f' r
 	R2
 % Bars 486 to 490
@@ -636,7 +636,7 @@ musicTrombonoIMvtIV = \relative c {
 % Bars 696 to 700
 	
 % Bars 701 to 705
-	r4 c\brack\mf_\crescmarkup
+	r4 c\brack\mf-\offset X-offset 3.5 _\crescmarkup
 	r c\<
 	r e\!
 	r e
@@ -680,7 +680,7 @@ musicTrombonoIMvtIV = \relative c {
 % Bars 736 to 740
 	b4-> c->\<
 	d-> e->\!
-	g4..\fz\>-> f16\!
+	\hairpinShorten #'(-0.3 . -0.5) g4..\fz\>-> f16\!
 	e4-> cis8. dis16
 	dis4-> e->\<
 % Bars 741 to 745
@@ -693,7 +693,7 @@ musicTrombonoIMvtIV = \relative c {
 	dis8 r r4
 	e8 r r4
 	R2
-	r4 cis\brack\p_\crescendo
+	r4 cis\brack\p-\offset X-offset 2.5 _\crescendo
 	e4.. e16
 % Bars 751 to 755
 	e4\< e\!
@@ -715,7 +715,7 @@ musicTrombonoIMvtIV = \relative c {
 	dis1.->
 % Bars 766 to 770
 	fis->
-	g2-> e-> f4-> e8 d
+	g2-> e-> f!4-> e8 d
 	g2-> e-> f4-> e8 d
 	a'4-> r r2 g4-> r
 	r2 a4-> r r2

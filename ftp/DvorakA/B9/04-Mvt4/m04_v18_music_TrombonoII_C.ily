@@ -693,7 +693,7 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 761 to 765
 	\timeThreeTwo bes->\ff a-> g4.-> bes8-.
 	a2. gis4 a2
-	b1.~
+	b1.->~
 	b2 c1->
 	a1.->
 % Bars 766 to 770

@@ -73,7 +73,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	ges4.->\f r8
 	ges4.-> r8
-	<< fis2( {s8\> s s s\!}>>
+	<< fis2(-> {s8\> s s s\!}>>
 % Bars 56 to 60
 	g8)\p r r4
 	c,8-.\f c-. c-. r
@@ -87,7 +87,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	c8-. c-. g-. r
 	c-. c-. c-. r
 % Bars 66 to 70
-	f,8-^ g-^ aes-^ bes!-^
+	f,8-^ g-^ aes-^ bes-^
 	c-. aes'-. d,-. f-.
 	e-. g-. c,4->
 	f,8-> r r4
@@ -101,7 +101,7 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 76 to 80
 	g8 r r4
 	g8 r r4
-	bes,8->[ f']-> c-> f->
+	bes,8->[\f f']-> c-> f->
 	d->[ aes'->] ees-> aes->
 	f-. r r c'-.
 % Bars 81 to 85
@@ -117,7 +117,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	aes8-. aes-. aes-. r
 	bes4->\brack\ff r
 % Bars 91 to 95
-	des8.-> bes16-. bes8. aes16-.
+	des8.-> bes16-. bes8.-> aes16-.
 	ges8-> f-> ees-> des->
 	aes'8.-> ges16-. ges4->
 	g!4..->\fff fis16(
@@ -175,7 +175,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	
-	<< g2->\brack\mf {s4 s_\crescmarkup }>>
+	<< g2\brack\mf {s4 s_\crescmarkup }>>
 	aes4( bes)
 % Bars 166 to 170
 	g( f)
@@ -206,7 +206,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	bes4. r8
 % Bars 196 to 200
 	c4. r8
-	cis4->\brack\f cis'
+	cis4\brack\f cis'
 	cis,2
 	fis,~
 	fis
@@ -315,7 +315,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	ges4.->\f r8
 	ges4.-> r8
 % Bars 291 to 295
-	<< fis2( {s8\> s s s\!}>>
+	<< fis2(-> {s8\> s s s\!}>>
 	g8)\p r r4
 	c,8-.\f c-. c-. r
 	c-. d-. ees-. r
@@ -417,7 +417,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	R2*2
 	
 % Bars 376 to 380
-	c'4\brack\ff c8-> g!->
+	c'4->\brack\ff c8-> g!->
 	c4-> c,8-> g->
 	c_\diminuendo r r4
 	R2*3

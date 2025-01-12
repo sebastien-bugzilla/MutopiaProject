@@ -73,7 +73,7 @@ musicTrombonoIMvtIII = \relative c {
 	
 	des4.->\f r8
 	des4.-> r8
-	<< a'2( {s8\> s s s\!}>>
+	<< a'2->( {s8\> s s s\!}>>
 % Bars 56 to 60
 	g8)\p r r4
 	c,8-.\f b-. c-. r
@@ -106,7 +106,7 @@ musicTrombonoIMvtIII = \relative c {
 	aes)\> g\!(
 % Bars 81 to 85
 	f ees
-	e8)[ f-. g8.-> aes16]
+	e8)[-. f-. g8.-> aes16]
 	g4-> f->
 	d8-. ees-. e8.-> f16
 	ees!4-> des->
@@ -311,7 +311,7 @@ musicTrombonoIMvtIII = \relative c {
 	des4.->\f r8
 	des4.-> r8
 % Bars 291 to 295
-	<< a'2( {s8\> s s s\!}>>
+	<< a'2(-> {s8\> s s s\!}>>
 	g8)\p r r4
 	c,8-.\f b-. c-. r
 	g'4.-> r8
@@ -343,7 +343,7 @@ musicTrombonoIMvtIII = \relative c {
 % Bars 316 to 320
 	aes)\> g\!(
 	f ees
-	e8)[ f-. g8.-> aes16]
+	e8)[-. f-. g8.-> aes16]
 	g4-> f->
 	d8-. ees-. e8.-> f16
 % Bars 321 to 325

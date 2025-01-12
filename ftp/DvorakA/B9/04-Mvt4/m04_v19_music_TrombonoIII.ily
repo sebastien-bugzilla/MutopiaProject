@@ -14,10 +14,10 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R
 % Bars 11 to 15
-	R\fermata
+	\once \ni R\fermata
 	R2*20
 % Bars 16 to 20
 	
@@ -27,7 +27,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*15
 % Bars 36 to 40
 	
@@ -41,7 +41,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	R2*2
 % Bars 51 to 55
 	
-	<< g'2 {s8\brack\mf\< s s s\!}>>
+	<< g'2 {\hairpinShorten #'(-0.5 . -1) s8-\offset X-offset -1 \brack\mf\< s s s}>>
 	g8\f r g4~
 	g8 r g4(
 	f8) r g4~
@@ -124,13 +124,13 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 	
 	
-	\ni \clef treble \mmrPos #-8 R2 \no \clef bass
+	\ni \clef treble \mmrPos #-4 R2 \no \clef bass
 	c''2->\f
 % Bars 151 to 155
 	e,4( cis
 	d e)
 	d(\pp b
-	c d)
+	c! d)
 	b2\brack\ppp~
 % Bars 156 to 160
 	b~
@@ -141,7 +141,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 161 to 165
 	fis8\pp r r4
 	R2
-	g8\brack\p_\crescendo r f'! r
+	g8\brack\p-\offset X-offset 2.5 _\crescendo r f'! r
 	e r d r
 	c r b r
 % Bars 166 to 170
@@ -202,7 +202,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 	
 	
-	b2->\fp~
+	\dynEO #'(0 . 1) b2->\fp~
 % Bars 236 to 240
 	b
 	b,\fp~
@@ -224,7 +224,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 251 to 255
 	e->\ff
 	c'4-> f,->
-	<<{\parenthesize f'2->} \\ {f,2->}>>
+	<<{\paramParentheses \parenthesize f'2->} \\ {f,2->}>>
 	c'4-> f,->
 	f2->
 % Bars 256 to 260
@@ -402,12 +402,12 @@ musicTrombonoIIIMvtIV = \relative c {
 	g\ff~
 	g~
 	g8 r r4
-	R2\fermata
+	\once \ni R2\fermata
 	f~
 % Bars 481 to 485
 	f~
 	f8 r r4
-	R2\fermata
+	\once \ni R2\fermata
 	f8\brack\f r f r
 	R2
 % Bars 486 to 490
@@ -605,7 +605,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 696 to 700
 	
 % Bars 701 to 705
-	r4 f,_\brackM\mfcresc
+	r4 f,-\offset X-offset -3 _\brackM\mfcrescB
 	r e\<
 	r a\!
 	r g
@@ -649,7 +649,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 736 to 740
 	g2~\<
 	g8.[ f16 e8. a16]\!
-	<< d,2 {s8\fz\> s s s16 s\!}>>
+	<< d,2 {\hairpinShorten #'(-0.3 . -1.5) s8\fz\> s s s16 s\!}>>
 	e4.. fis16
 	<< b,2~ {s4 s\< }>>
 % Bars 741 to 745
@@ -697,7 +697,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 776 to 780
 	fis-> g-> a->
 	bes-> a-> g->
-	f1-> \tuplet 3/2 2 {f4-> f-> f->}
+	f!1-> \tuplet 3/2 2 {f4-> f-> f->}
 	b4 r r2 r
 	c4 r r2 r
 % Bars 781 to 785
@@ -717,7 +717,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	d2-> e-> f->
 	g1.->
 	g,2 a'4.-> g8 g2
-	g1.
+	g1.->
 % Bars 796 to 800
 	g,2 a'4.-> g8 g2
 	g1.->
@@ -737,14 +737,14 @@ musicTrombonoIIIMvtIV = \relative c {
 	c,->
 	a->
 % Bars 811 to 815
-	g4 r
+	\startMeasureCount g4 r
 	g r
 	g r
 	g r 
 	g r
 % Bars 816 to 820
 	g r 
-	g r
+	g r \stopMeasureCount
 	e r 
 	c r
 	R2
@@ -759,7 +759,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 	
 	
-	c2
+	c2->
 % Bar 831
 	c2\fermata \fine
 }

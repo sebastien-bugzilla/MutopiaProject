@@ -983,7 +983,7 @@ cueVoiceTrombonoIMvtI = \relative c {
 	<>^\markup {Legni}
 	s2.*192
 	% bar 279 - 282
-	\voiceOne c''2.(^\markup {\column {\lower #1.5 "Fl." "Ob."}}
+	\voiceOne c''2.(-\offset X-offset -3.5 ^\markup {\column {\lower #1.5 "Fl." "Ob."}}
 	ees,)
 	g(
 	d) \oneVoice 
@@ -1021,7 +1021,10 @@ cueVoiceTrombonoIMvtIV = \relative c {
 	d4. c8
 	c bes bes a
 	a4( g8) r \oneVoice 
-	s2*298
+	s2*146
+	% bar 501
+	<>^\markup {Cor.}
+	s2*152
 	% bar 653 - 656
 	\voiceOne e''4(^\markup {Viol.I} a8.) g16
 	g4( f8) r
@@ -1034,13 +1037,13 @@ cueVoiceTrombonoIIMvtI = \relative c {
 	<>^\markup {Legni}
 	s2.*193
 	% bar 279 - 282
-	\voiceOne c'''2.(^\markup {\column {\lower #1.5 "Fl." "Ob."}}
+	\voiceOne c'''2.(-\offset X-offset -3.5 ^\markup {\column {\lower #1.5 "Fl." "Ob."}}
 	ees,)
 	g(
 	d) \oneVoice 
 	s2.*116 s2*20 s2.*41
 	% bar 460
-	\voiceTwo ges,,,2._\markup {Trbne.III} \oneVoice 
+	\voiceTwo ges,,,2.-\offset X-offset 1 _\markup {Trbne.III} \oneVoice 
 }
 cueVoiceTrombonoIIMvtIII = \relative c {
 	s16 s2*33
@@ -1070,14 +1073,14 @@ cueVoiceTrombonoIIMvtIV = \relative c {
 	q4.. <b d>16 \oneVoice 
 	s2*123
 	% bar 458 - 459
-	\voiceOne f,8[^\markup {Fag.} e d r16 c'-.]
+	\voiceOne f,8[-\offset X-offset -3 ^\markup {Fag.} e d r16 c'-.]
 	c4( b8) r \oneVoice 
 	s2*41
 	% bar 501
-	<>^\markup {Cor.}
+	<>-\offset X-offset -1.5 ^\markup {Cor.}
 	s2*152
 	% bar 653 - 656
-	\voiceOne e'4(^\markup {Viol.I} a8.) g16
+	\voiceOne e'4(-\offset X-offset -3 ^\markup {Viol.I} a8.) g16
 	g4( f8) r
 	d4( g8.) f16
 	f4( e8) r \oneVoice 
@@ -1088,13 +1091,13 @@ cueVoiceTrombonoIIIMvtI = \relative c {
 	<>^\markup {Legni}
 	s2.*115
 	% bar 201 - 204
-	\voiceOne c'2~^\markup {Trb.I.II} c8 d
+	\voiceOne c'2~-\offset X-offset -5 ^\markup {Trb.I.II} c8 d
 	ees4 r r
 	c2~ c8 d
 	ees4 r r \oneVoice 
 	s2.*74
 	% bar 279 - 282
-	\voiceOne c''2.(^\markup {\column {\lower #1.5 "Fl." "Ob."}}
+	\voiceOne c''2.(-\offset X-offset -3.5 ^\markup {\column {\lower #1.5 "Fl." "Ob."}}
 	ees,)
 	g(
 	d) \oneVoice 
@@ -1118,29 +1121,29 @@ cueVoiceTrombonoIIIMvtIV = \relative c {
 	<c' c'>4^\markup {Trba} q
 	s2*53
 	% bar 203 - 205
-	b'4^\markup {Ob.I} e,
+	\voiceOne b'4^\markup {Ob.I} e,
 	e4. fis8
 	g[ fis e b']
 	s2*125
 	% bar 331 - 332
-	\voiceOne <c e>4^\markup {Ob.Fl.I II} <b d>
+	<c e>4^\markup {Ob.Fl.I II} <b d>
 	q4.. <c e>16 \oneVoice
 	s2*86
 	% bar 419 - 422
-	\voiceOne d,4^\markup {Trb.I} g,
+	\voiceOne d,4-\offset X-offset -3.5 ^\markup {Trb.I} g,
 	g4.. a16
 	b4 g
 	g4.. a16 \oneVoice 
 	s2*35
 	% bar 458 - 459
-	\voiceOne f8[(^\markup {Fag.} e d) r16 c'-.]
+	\voiceOne f8[(-\offset X-offset -3.5 ^\markup {Fag.} e d) r16 c'-.]
 	c4( b8) r \oneVoice 
 	s2*41
 	% bar 501
-	<>^\markup {Cor.}
+	<>-\offset X-offset -1.5 ^\markup {Cor.}
 	s2*152
 	% bar 653 - 656
-	\voiceOne e'4(^\markup {Viol.I} a8.) g16-.
+	\voiceOne e'4(-\offset X-offset -4 ^\markup {Viol.I} a8.) g16-.
 	g4( f8) r
 	d4( g8.) f16-.
 	f4( e8) r \oneVoice

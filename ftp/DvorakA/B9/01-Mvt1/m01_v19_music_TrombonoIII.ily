@@ -25,7 +25,7 @@ musicTrombonoIIIMvtI = \relative c {
 		R2.*6
 % Bars 16 to 20
 		
-		c,2._\ppsempre~
+		\startMeasureCount c,2._\ppsempre~
 		c~
 		c~
 		c~
@@ -33,14 +33,14 @@ musicTrombonoIIIMvtI = \relative c {
 		c~
 		c~
 		c~
-		c~
+		c~ \stopMeasureCount
 		c4 r r
 % Bars 26 to 30
 		R2.*7
 % Bars 31 to 35
 		
 		
-		bes2.\pp~
+		\startMeasureCount bes2.\pp~
 		bes~
 		bes~
 % Bars 36 to 40
@@ -48,14 +48,14 @@ musicTrombonoIIIMvtI = \relative c {
 		bes~
 		bes~
 		bes~
-		bes
+		bes \stopMeasureCount
 % Bars 41 to 45
 		R2.*8
 % Bars 46 to 50
 		
 		
 		
-		aes2.\pp~
+		\startMeasureCount aes2.\pp~
 		aes~
 % Bars 51 to 55
 		aes~
@@ -64,7 +64,7 @@ musicTrombonoIIIMvtI = \relative c {
 		aes~
 		aes~
 % Bars 56 to 60
-		aes
+		aes \stopMeasureCount
 		aes'->^\solo_\crescmarkup
 		bes2~ bes8 ees,
 		ees2 aes4~
@@ -85,7 +85,7 @@ musicTrombonoIIIMvtI = \relative c {
 		
 % Bars 76 to 80
 		
-		g,2.\pp_\brackM\crescmarkup~
+		g,2.\pp-\offset X-offset 2.5 _\brackM\crescmarkup~
 		g~
 		g~
 		g
@@ -213,7 +213,7 @@ musicTrombonoIIIMvtI = \relative c {
 		
 % Bars 226 to 230
 		
-		bes'2.->\fz_\brackM\crescmarkup~
+		bes'2.->\fz-\offset X-offset 2.5 _\brackM\crescmarkup~
 		bes~
 		bes~
 		bes
@@ -271,7 +271,7 @@ musicTrombonoIIIMvtI = \relative c {
 				
 			}
 			\volta 2 {
-				c'2.->\ff
+				\noteHeadEsw #'(-2 . 0) c'2.->\ff \revertNoteHeadEsw
 				c->
 			}
 		}
@@ -523,7 +523,7 @@ musicTrombonoIIIMvtI = \relative c {
 	e r r
 	f r r
 	g r r
-	g, r r
+	\startMeasureCount g, r r
 % Bars 551 to 555
 	g\p r r
 	g r r
@@ -533,7 +533,7 @@ musicTrombonoIIIMvtI = \relative c {
 % Bars 556 to 560
 	g r r
 	g r r
-	g r r
+	g r r \stopMeasureCount
 	g2->\f a4
 	b2-> r4
 % Bars 561 to 565
@@ -592,7 +592,7 @@ musicTrombonoIIIMvtI = \relative c {
 % Bars 611 to 615
 	a8-. g-. fis2->
 	ges8-. f!-. ees2->
-	g!2.->\ff
+	\startMeasureCount g!2.->\ff
 	g->
 	g->
 % Bars 616 to 620
@@ -600,7 +600,7 @@ musicTrombonoIIIMvtI = \relative c {
 	g->
 	g->
 	g->
-	g->
+	g-> \stopMeasureCount
 % Bars 621 to 625
 	e~
 	e~

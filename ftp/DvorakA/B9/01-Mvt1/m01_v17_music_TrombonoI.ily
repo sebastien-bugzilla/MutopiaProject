@@ -60,7 +60,7 @@ musicTrombonoIMvtI = \relative c {
 	
 % Bars 76 to 80
 		
-		g2._\brackM\crescmarkup\pp~
+		g2.~\pp-\offset X-offset 2.5 _\brackM\crescmarkup
 		g~
 		g~
 		g
@@ -141,7 +141,7 @@ musicTrombonoIMvtI = \relative c {
 		R2.*3
 		
 		
-		aes,4(\brackM\flegato bes c)
+		aes,4(-\offset X-offset -1 \brackM\flegato bes c)
 % Bars 166 to 170
 		d2.~
 		d4 c( d
@@ -209,7 +209,7 @@ musicTrombonoIMvtI = \relative c {
 		bes~
 		bes
 % Bars 231 to 235
-		b\fz->
+		b\fz^>
 		b\fz->
 		b\fz->
 		b\pp->
@@ -359,7 +359,7 @@ musicTrombonoIMvtI = \relative c {
 	
 % Bars 386 to 390
 	
-	e2.\pp~
+	e2._\pppococresc~
 	e~
 	e~
 	e4 r r
@@ -419,8 +419,8 @@ musicTrombonoIMvtI = \relative c {
 % Bars 461 to 465
 	r4 bes'(\pp aes)
 	ges2.~\<
-	<< ges~ {s8\> s s  s s s\!} >>
-	ges4 r r
+	<< ges~ {s8\> s s  s s s} >>
+	ges4\! r r
 	R2.*11
 % Bars 466 to 470
 	
