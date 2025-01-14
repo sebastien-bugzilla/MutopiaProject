@@ -40,7 +40,11 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 (The Bells of Zlonice)"
+			\concat {
+				"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 " 
+				\italic { "\"" "The Bells of Zlonice" "\"" }
+				" — Timpani"
+			}
 		}
 		instrument = \markup {
 			"Timpani"
@@ -48,9 +52,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtI
-%			}
+			\new Voice {
+				\formatTimpaniMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtI
 			}
@@ -72,9 +76,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtII
-%			}
+			\new Voice {
+				\formatTimpaniMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtII
 			}
@@ -88,7 +92,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.5 \bold 2.
 			}
 		}
 		\layout {
@@ -96,9 +100,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtIII
-%			}
+			\new Voice {
+				\formatTimpaniMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtIII
 			}
@@ -112,7 +116,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.3 \bold 3.
 			}
 		}
 		\layout {
@@ -120,9 +124,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtIV
-%			}
+			\new Voice {
+				\formatTimpaniMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtIV
 			}
@@ -136,7 +140,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2.3 \bold 4.
 			}
 		}
 		\layout {

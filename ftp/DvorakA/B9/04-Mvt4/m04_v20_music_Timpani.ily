@@ -14,11 +14,11 @@ musicTimpaniMvtIV = \relative c {
 	
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R
 % Bars 11 to 15
-	<< g2:16\fermata {s8\f\> s s s\!}>>
-	c2:\pp
+	<< g2:16\fermata {\hairpinShorten #'(-0.3 . -1.5) s8\f\> s s s\!}>>
+	\startMeasureCount c2:\pp
 	c:
 	c:
 	c:
@@ -31,8 +31,8 @@ musicTimpaniMvtIV = \relative c {
 % Bars 21 to 25
 	c:
 	c:
-	c:
-	b:
+	c: \stopMeasureCount
+	\startMeasureCount b:
 	b:
 % Bars 26 to 30
 	b:
@@ -41,7 +41,7 @@ musicTimpaniMvtIV = \relative c {
 	b2:
 	b:
 % Bars 31 to 35
-	b:
+	b: \stopMeasureCount
 	b8 r r4\fermata
 	R2*8
 % Bars 36 to 40
@@ -75,13 +75,13 @@ musicTimpaniMvtIV = \relative c {
 	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no
-	g2:16_\ppocoapococrescendo
+	\startMeasureCount g2:16_\ppocoapococrescendo
 	g:
 % Bars 81 to 85
-	g:_\crescendo
+	g:
 	g:
 	g:\<
-	g:\!
+	g:\! \stopMeasureCount
 	R2*28
 % Bars 86 to 90
 	
@@ -145,7 +145,7 @@ musicTimpaniMvtIV = \relative c {
 	g r g r
 	g r g r
 % Bars 166 to 170
-	<< g2 {s8\< s s s\!}>>
+	<< g2 {\hairpinShorten #'(0 . -1) s8\< s s s\!}>>
 	c4->\f g8.-> g16
 	g2:16
 	c4-> g8.-> g16
@@ -327,7 +327,7 @@ musicTimpaniMvtIV = \relative c {
 % Bars 406 to 410
 	
 % Bars 411 to 415
-	c2:16\ff
+	\startMeasureCount c2:16\ff
 	c:
 	c:
 	c:
@@ -335,7 +335,7 @@ musicTimpaniMvtIV = \relative c {
 % Bars 416 to 420
 	c:
 	c:
-	c:
+	c: \stopMeasureCount
 	g8 r r4
 	g4 g
 % Bars 421 to 425
@@ -346,7 +346,7 @@ musicTimpaniMvtIV = \relative c {
 	R2
 % Bars 426 to 430
 	g4 g8 r
-	g4 r
+	\startMeasureCount g4 r
 	g r
 	g r
 	g r
@@ -354,7 +354,7 @@ musicTimpaniMvtIV = \relative c {
 	g r
 	g r
 	g r
-	g r
+	g r \stopMeasureCount
 	c-> c->
 % Bars 436 to 440
 	g2:16->
@@ -446,7 +446,7 @@ musicTimpaniMvtIV = \relative c {
 	
 	
 	
-	c2:16\pp
+	\startMeasureCount c2:16\pp
 	c:
 % Bars 536 to 540
 	c:
@@ -471,7 +471,7 @@ musicTimpaniMvtIV = \relative c {
 	c:
 	c:
 	c:
-	c:
+	c: \stopMeasureCount
 % Bars 556 to 560
 	c8 r r4
 	R2*25
@@ -498,7 +498,7 @@ musicTimpaniMvtIV = \relative c {
 % Bars 591 to 595
 	R2
 	g8 r r4
-	R2*29
+	R2*32
 % Bars 596 to 600
 	
 % Bars 601 to 605
@@ -511,17 +511,20 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 621 to 625
 	
+	
+	
+	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R \no
-	R2*9
 % Bars 626 to 630
+	\mmrPos #-4 R \no
+	R2*6
 	
 % Bars 631 to 635
 	
 	
 	g2:16\brack\f
 	b8[ b g b]
-	g r r4_\diminuendo
+	g r r4_\dimmarkup
 % Bars 636 to 640
 	g2:16
 	b8[ b g b]
@@ -671,7 +674,7 @@ musicTimpaniMvtIV = \relative c {
 % Bars 801 to 805
 	
 	\section
-	\time 2/4 c4\ff g
+	\time 2/4 \startMeasureCount c4\ff g
 	c g
 	c g
 % Bars 806 to 810
@@ -681,7 +684,7 @@ musicTimpaniMvtIV = \relative c {
 	c g
 	c g
 % Bars 811 to 815
-	c g
+	c g \stopMeasureCount
 	g c
 	c g
 	g c

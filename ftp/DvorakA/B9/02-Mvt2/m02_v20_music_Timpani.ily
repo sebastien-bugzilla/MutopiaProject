@@ -9,13 +9,16 @@ musicTimpaniMvtII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
+	\ni R2\fermata
 	R2\fermata
-	R2\fermata
-	R2\fermata
+	r4\fermata r\fermata
 	R2\fermata
 	R2\fermata
 % Bars 6 to 10
-	R2*23
+	R2\fermata
+	r4\fermata r\fermata
+	R2\fermata \no
+	R2*20
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -66,18 +69,18 @@ musicTimpaniMvtII = \relative c {
 % Bars 81 to 85
 	
 	
-	r8 r16 ees32\f ees ees16 ees ees ees
+	\startMeasureCount r8 r16 ees32\f ees ees16 ees ees ees
 	r8 r16 ees32 ees ees16 ees ees ees
 	r8 r16 ees32 ees ees16 ees ees ees
 % Bars 86 to 90
 	r8 r16 ees32 ees ees16 ees ees ees
 	r8 r16 ees32 ees ees16 ees ees ees
-	r8 r16 ees32 ees ees16\> ees ees ees\!
+	r8 r16 ees32 ees ees16\> ees ees ees\! \stopMeasureCount
 	R2*12
 % Bars 91 to 95
 	
 % Bars 96 to 100
-	
+	%%%%%%%%%%%%%%%
 % Bars 101 to 105
 	ees16\brack\f r r8 ees16 r r8 
 	ees16 r r8 ees16 r r8 
@@ -101,7 +104,7 @@ musicTimpaniMvtII = \relative c {
 	
 	c16\brack\ff r r8 r4\fermata
 % Bars 141 to 145
-	R2\fermata
+	\once \ni R2\fermata
 	R2*26
 % Bars 146 to 150
 	
@@ -142,5 +145,5 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

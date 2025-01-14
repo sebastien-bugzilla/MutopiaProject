@@ -90,10 +90,10 @@ musicTimpaniMvtI = \relative c {
 		g4\brack\f r g
 		r r g
 		r r g
-		g r r
-		g r r
+		r r g
+		R2.*12
 % Bars 86 to 90
-		R2.*11
+		
 % Bars 91 to 95
 	
 % Bars 96 to 100

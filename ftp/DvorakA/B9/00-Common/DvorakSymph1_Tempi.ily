@@ -116,13 +116,13 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoInglese clarinettoI
 		clarinettoII fagottoI cornoI  cornoIII cornoIV 
-		 trombonoI trombonoII trombonoIII timpani violinoI violinoII
+		 trombonoI trombonoII trombonoIII  violinoI violinoII
 		viola violoncello contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "stringendo"
 		}
 	}
-	\tag #'(fagottoII cornoII trombeI trombeII) {
+	\tag #'(fagottoII cornoII trombeI trombeII timpani) {
 		\tempo \markup {
 			\normal-weight \italic "string."
 		}

@@ -668,7 +668,10 @@ nameTrombonoIIIMvtIV = {
 nameTimpaniMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in C G Es"
+			\lower #1 "Timpani" 
+			\concat {
+				\general-align #Y #CENTER { "in C G E" \tiny \flat }
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -677,7 +680,10 @@ nameTimpaniMvtI = {
 nameTimpaniMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in Es C G"
+			\lower #1 "Timpani" 
+			\concat {
+				\general-align #Y #CENTER { "in E" \tiny \flat " C G"}
+			}
 		}
 	}
 	\set Staff.shortInstrumentName = ""

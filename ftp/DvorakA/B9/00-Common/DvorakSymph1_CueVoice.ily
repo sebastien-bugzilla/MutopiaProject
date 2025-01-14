@@ -1157,7 +1157,10 @@ cueVoiceTimpaniMvtI = \relative c {
 	<>^\markup {Trbni.}
 }
 cueVoiceTimpaniMvtII = \relative c {
-	s2*51
+	s2*8
+	% bar 9
+	<>-\offset X-offset -3 ^\markup {\column {\lower #1.5 "Ob.I" "solo" }}
+	s2*43
 	% bar 52
 	\voiceOne r4 ees32-.[^\markup {Corni} ees-. ees-. ees-. ees-. ees-. ees-. ees-.] \oneVoice 
 	s2*16
@@ -1172,9 +1175,12 @@ cueVoiceTimpaniMvtIII = \relative c {
 	s16 s2*51
 	% bar 53
 	<>^\markup {Trbni}
-	s2*149
+	s2*85
+	% bar 138
+	<>^\markup {Archi}
+	s2*64
 	% bar 202 - 204
-	\voiceOne bes'''4->^\markup {Fl.} bes
+	\voiceOne bes'''4->-\offset X-offset -3 ^\markup {Fl.} bes
 	a!8.-> bes16 bes8 ges
 	ges4-> ges-> \oneVoice 
 }
@@ -1183,7 +1189,10 @@ cueVoiceTimpaniMvtIV = \relative c {
 	% bar 77 - 78
 	\voiceOne cis'8.^\markup {Cor.} cis,16 cis4
 	e'8. e,16 e4 \oneVoice 
-	s2*68
+	s2*23
+	% bar 102
+	<>^\markup {Corni}
+	s2*45
 	% bar 147 - 148
 	\voiceOne e8^\markup {Cor.} e16 r e8 e16 r
 	e8 e16 r e8 e16 r \oneVoice 
@@ -1221,11 +1230,11 @@ cueVoiceTimpaniMvtIV = \relative c {
 	r8. g16 g4
 	d8 r f r
 	r8. g16 g4 \oneVoice 
-	s2*36
-	% bar 622 - 623
+	s2*39
+	% bar 625 - 626
 	\voiceOne r8.^\markup {Cor.} <f f'>16 q4~
 	q2 \oneVoice 
-	s2*77
+	s2*74
 	% bar 701 - 704
 	\voiceTwo r4_\markup {Trbne.III} f,
 	r e

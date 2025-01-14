@@ -13,12 +13,12 @@ musicTimpaniMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 6 to 10
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*8
 % Bars 11 to 15
 	
@@ -128,7 +128,7 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 % Bars 101 to 105
-	R2\fermata
+	\once \ni R2\fermata
 	\repeat volta 2 {
 		R2*8
 % Bars 106 to 110
@@ -136,7 +136,7 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	
-		bes8.->[\mf_\crescendo bes16 bes8] r
+		bes8.->[_\mfcrescendo bes16 bes8] r
 % Bars 111 to 115
 		bes8.->[ bes16 bes8] r
 		bes8.->[ bes16 bes8] r
@@ -227,16 +227,16 @@ musicTimpaniMvtIII = \relative c {
 	bes[ bes] g bes
 % Bars 236 to 240
 	g r bes bes\pp
-	g bes g r16 \section r
+	g bes g r16 \section \break r
 	R2*3
 	
 	
 % Bars 241 to 245
-	R2\fermata
+	\once \ni R2\fermata
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 246 to 250
 	R2*8
 	
@@ -342,7 +342,7 @@ musicTimpaniMvtIII = \relative c {
 % Bars 331 to 335
 	g:
 	g:
-	g8 r r4\fermata % signo
+	g8 r r4\fermata \section % signo
 	c2:32\pp
 	c8 r r4
 % Bars 336 to 340
@@ -393,5 +393,5 @@ musicTimpaniMvtIII = \relative c {
 	c2:
 	c8\brack\p r r4
 % Bar 381
-	R2 \fine
+	R2 \markNormalSizeFermata \fine
 }

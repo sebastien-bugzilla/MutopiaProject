@@ -13,7 +13,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 6 to 10
 	
 	
-	R1\fermata \section
+	\once \ni R1\fermata \section
 	\time 3/4 R2.*2
 	
 % Bars 11 to 15
@@ -21,7 +21,7 @@ musicTimpaniMvtI = \relative c {
 		R2.*6
 % Bars 16 to 20
 		
-		c2.:16_\ppsempre
+		\startMeasureCount c2.:16_\ppsempre
 		c:
 		c:
 		c:
@@ -29,14 +29,14 @@ musicTimpaniMvtI = \relative c {
 		c:
 		c:
 		c:
-		c:
+		c: \stopMeasureCount
 		c4 r r
 % Bars 26 to 30
 		R2.*7
 % Bars 31 to 35
 		
 		
-		c2.:16\pp
+		\startMeasureCount c2.:16\pp
 		c:
 		c:
 % Bars 36 to 40
@@ -44,7 +44,7 @@ musicTimpaniMvtI = \relative c {
 		c:
 		c:
 		c:
-		c:
+		c: \stopMeasureCount
 % Bars 41 to 45
 		c4 r r
 		R2.*7
@@ -52,7 +52,7 @@ musicTimpaniMvtI = \relative c {
 		
 		
 		
-		c2.:\pp
+		\startMeasureCount c2.:\pp
 		c:
 % Bars 51 to 55
 		c:
@@ -65,9 +65,9 @@ musicTimpaniMvtI = \relative c {
 		c:
 		c:
 		c:
-		c:
+		c: \stopMeasureCount
 % Bars 61 to 65
-		ees8_\brackM\crescmarkup ees c ees c4
+		ees8-\offset X-offset -1.5 _\brackM\crescmarkup ees c ees c4
 		ees8 ees c ees c4
 		ees8 ees c ees c4
 		ees8 ees c ees c4
@@ -82,7 +82,7 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 76 to 80
 		
-		g2.:16\pp_\brackM\crescmarkup
+		g2.:16-\offset X-offset -1.2 \pp-\offset X-offset 1.2 _\brackM\crescmarkup
 		g:
 		g:
 		g:
@@ -90,15 +90,15 @@ musicTimpaniMvtI = \relative c {
 		g4\brack\f r g
 		r r g
 		r r g
-		g r r
-		g r r
+		r r g
+		R2.*12
 % Bars 86 to 90
-		R2.*11
+		
 % Bars 91 to 95
 	
 % Bars 96 to 100
 		
-		<< g2.:16\brack\mf { s2 s4_\crescmarkup }>>
+		<< g2.:16\brack\mf { s2 s4-\offset X-offset 0.5 _\crescmarkup }>>
 		g2.:
 		g:
 		g:
@@ -129,7 +129,7 @@ musicTimpaniMvtI = \relative c {
 		
 		c4\brack\f r r
 		g r r
-		ees'8\brack\p^\solo ees c ees c4
+		\startMeasureCount ees'8\brack\p-\offset X-offset -1 ^\solo ees c ees c4
 		ees8_\pocoapococrescendo ees c ees c4
 % Bars 131 to 135
 		ees8 ees c ees c4
@@ -138,7 +138,7 @@ musicTimpaniMvtI = \relative c {
 		ees8 ees c ees c4
 		ees8 ees c ees c4
 % Bars 136 to 140
-		ees8 ees c ees c4
+		ees8 ees c ees c4 \stopMeasureCount
 		ees4\brack\f r r
 		ees r r
 		ees r r
@@ -148,7 +148,7 @@ musicTimpaniMvtI = \relative c {
 		ees r r 
 		ees2 r4
 		R2.
-		ees4->\f c-> g->
+		\startMeasureCount ees4->\f c-> g->
 % Bars 146 to 150
 		ees'-> c-> g->
 		ees'-> c-> g->
@@ -157,7 +157,7 @@ musicTimpaniMvtI = \relative c {
 		ees'-> c-> g->
 % Bars 151 to 155
 		ees'-> c-> g->
-		ees'-> c-> g->
+		ees'-> c-> g-> \stopMeasureCount
 		c\brack\f-> r r
 		g r r
 		c r r
@@ -184,7 +184,7 @@ musicTimpaniMvtI = \relative c {
 		
 		
 		
-		ees8\brack\f^\solo ees c ees c4
+		\startMeasureCount ees8\brack\f-\offset X-offset -1 ^\solo ees c ees c4
 		ees8 ees c ees c4
 % Bars 191 to 195
 		ees8 ees c ees c4
@@ -193,7 +193,7 @@ musicTimpaniMvtI = \relative c {
 		ees8 ees c ees c4
 		ees8 ees c ees c4
 % Bars 196 to 200
-		ees8 ees c ees c4
+		ees8 ees c ees c4 \stopMeasureCount
 		R2.*4
 		
 		
@@ -239,11 +239,11 @@ musicTimpaniMvtI = \relative c {
 % Bars 241 to 245
 		c4\brack\f r r
 		g r r
-		R2.*44
+		R2.*8
 % Bars 246 to 250
-	
+		
 % Bars 251 to 255
-	
+		\mmrLength #12 R2.*36
 % Bars 256 to 260
 	
 % Bars 261 to 265
@@ -454,7 +454,7 @@ musicTimpaniMvtI = \relative c {
 	c:
 % Bars 506 to 510
 	<< c: {s8\< s s s s s\!}>>
-	r4 ees->\f c->
+	\startMeasureCount r4 ees->\f c->
 	r ees-> c->
 	r ees-> c->
 	r ees-> c->
@@ -462,7 +462,7 @@ musicTimpaniMvtI = \relative c {
 	r ees-> c->
 	r ees-> c->
 	r ees-> c->
-	r ees-> c->
+	r ees-> c-> \stopMeasureCount
 	c2.:16:\ff
 % Bars 516 to 520
 	c:
@@ -493,7 +493,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 546 to 550
 	
 % Bars 551 to 555
-	g2.:16\p
+	\startMeasureCount g2.:16\p
 	g:
 	g:
 	g:
@@ -502,7 +502,7 @@ musicTimpaniMvtI = \relative c {
 	g:
 	g:
 	g:
-	g:\f
+	g:\f \stopMeasureCount
 	g4-> g-> g->
 % Bars 561 to 565
 	g-> g-> g->
@@ -551,7 +551,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 611 to 615
 	ees:
 	ees:
-	c8\brack\ff c g c g4
+	\startMeasureCount c8\brack\ff c g c g4
 	c8 c g c g4
 	c8 c g c g4
 % Bars 616 to 620
@@ -559,14 +559,14 @@ musicTimpaniMvtI = \relative c {
 	c8 c g c g4
 	c8 c g c g4
 	c8 c g c g4
-	c8 c g c g4
+	c8 c g c g4 \stopMeasureCount
 % Bars 621 to 625
 	R2.*7
 % Bars 626 to 630
 	
 	
 	ees'2.:16\ff
-	ees8^\solo ees c ees c4
+	\startMeasureCount ees8^\solo ees c ees c4
 	ees8 ees c ees c4
 % Bars 631 to 635
 	ees8 ees c ees c4
@@ -575,7 +575,7 @@ musicTimpaniMvtI = \relative c {
 	ees8 ees c ees c4
 	ees8 ees c ees c4
 % Bars 636 to 640
-	ees8 ees c ees c4
+	ees8 ees c ees c4 \stopMeasureCount
 	c2.:16
 	c:
 	g:
