@@ -116,7 +116,7 @@ musicViolinoIIMvtII = \relative c {
 	q r r q->~ q r r q->~ q r r q->~ q r r q->(
 	<bes bes'>16) r r q~ q r r q~
 % Bars 86 to 90
-	q q[~ q] q~ q r r q
+	q q[~ q] q~[ q] r r q
 	q r r q~ q r r q
 	q q[~ q] q[~ q] r r c\brack\p(
 	ees)\< ees8 ees\> ees ees16\!

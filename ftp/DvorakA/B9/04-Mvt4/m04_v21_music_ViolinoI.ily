@@ -47,7 +47,7 @@ musicViolinoIMvtIV = \relative c {
 % Bars 31 to 35
 	<fis b fis'>8 r <fis b b'> r
 	<e b' e> r r4\fermata
-	\afterGrace a2\p\trill {gis16( a)}
+	\afterGrace a2\p\trill-\offset X-offset -6 ^\brackM\arco {gis16( a)}
 	c8. b16 c8 r
 	\afterGrace a2\trill {gis16( a)} 
 % Bars 36 to 40
@@ -84,7 +84,7 @@ musicViolinoIMvtIV = \relative c {
 	R2*3
 	
 	
-	r4 r8 ees'''\brack\pp^\pizz
+	r4 r8 ees'''\brack\pp-\offset X-offset -6 ^\pizz
 	ees c c aes
 % Bars 66 to 70
 	aes ees ees c'
@@ -100,7 +100,7 @@ musicViolinoIMvtIV = \relative c {
 	cis'( b cis b a gis a gis)
 % Bars 76 to 80
 	fis( e fis e dis cis dis cis
-	e8)\brack\p_\pocoapococrescendo r a,16-. cis-. cis-. d-.
+	e8)\brack\p-\offset X-offset 2.5 _\pocoapococrescendo r a,16-. cis-. cis-. d-.
 	e8-. r a,16-. cis-. cis-. d-. 
 	e8-. r a,16-. cis-. cis-. d-. 
 	e8-. r a,16-. cis-. cis-. e-. 
@@ -203,12 +203,12 @@ musicViolinoIMvtIV = \relative c {
 % Bars 161 to 165
 	c'( b c a gis a)
 	ges( f! ges ees d ees)
-	e!(\brack\p_\crescendo f e d e d)
+	e!(\brack\p-\offset X-offset 2.5 _\crescmarkup f e d e d)
 	g( a g f g f)
 	e(\< f e d e d)
 % Bars 166 to 170
-	c( d c b c b)\! }
-	<g, e' c'>4\brack\f <g g' d'>8[ r16 g']
+	c( d c \once \tupletUp b c b)\! }
+	<g, e' c'>4-\tweak extra-offset #'(0 . 0.3) \brack\f <g g' d'>8[ r16 g']
 	<g, g'>2
 	<a f' c'>4 <g d' d'>8. g''16
 	g2
@@ -217,7 +217,7 @@ musicViolinoIMvtIV = \relative c {
 	<e c'>4 <g, d' d'>8. g''16
 	<g, c e>4 c8. d16
 	d2
-	e4(_\espressivo fis)
+	e4(^\espressivo fis)
 % Bars 176 to 180
 	a( g~
 	g) e'~
@@ -252,7 +252,7 @@ musicViolinoIMvtIV = \relative c {
 	
 % Bars 206 to 210
 	
-	fis'4(\brack\p_\crescendo b8.) a16-.
+	fis'4(\brack\p-\offset X-offset 2.5 _\crescendo b8.) a16-.
 	a4( g8)\< r
 	e4( a8.) g16-.
 	g4( fis8)\! r
@@ -271,15 +271,15 @@ musicViolinoIMvtIV = \relative c {
 % Bars 221 to 225
 	c4..-> a,16
 	b4..-> b'16
-	e e b b b b e e
-	dis dis b b b b dis dis
-	e e b b dis dis b b
+	e8:16 b: b: e: % e e b b b b e e
+	dis: b: b: dis: % dis dis b b b b dis dis
+	e: b: dis: b: % e e b b dis dis b b
 % Bars 226 to 230
-	e e b b g' g b, b
-	b' b fis fis fis fis b b
-	ais ais fis fis fis fis ais ais
-	b b fis fis ais ais fis fis
-	b\< b b b  b b b b\!
+	e: b: g': b,: % e e b b g' g b, b
+	b': fis: fis: b: % b' b fis fis fis fis b b
+	ais: fis: fis: ais: % ais ais fis fis fis fis ais ais
+	b: fis: ais: fis: % b b fis fis ais ais fis fis
+	<< b2: {s8\< s s s\!}>> % b\< b b b  b b b b\!
 % Bars 231 to 235
 	fis8-> r r4
 	R2*3
@@ -329,7 +329,7 @@ musicViolinoIMvtIV = \relative c {
 	ais,:
 	ais:\!
 % Bars 271 to 275
-	<b, fis' b>4\f r
+	\dynEO #'(0.4 . -9.0) <b, fis' b>4^\f r
 	q-> q->
 	<gis dis' b'>-> r
 	q-> q->
@@ -338,7 +338,7 @@ musicViolinoIMvtIV = \relative c {
 	<ais fis' e'>-> q->
 	<fis' cis' e>-> <b, fis' dis'>->
 	<fis' dis' fis>-> <fis dis' b'>->
-	d''!4(\ff e8.) d16-.
+	\dynEO #'(3 . 2) d''!4(-\offset X-offset -3 \ff e8.) d16-.
 	d4( c8) r
 % Bars 281 to 285
 	b4( c8.) b16-.
@@ -347,7 +347,7 @@ musicViolinoIMvtIV = \relative c {
 	q:
 	q:
 % Bars 286 to 290
-	q4: d'16(\< dis e fis)\!
+	q4: \ottava #1 d'16(\< dis e fis)\!
 	g4( a8.) g16-.
 	g4( a8.) g16-.
 	g4( fis8.) e16-.
@@ -356,7 +356,7 @@ musicViolinoIMvtIV = \relative c {
 	g4( e8.) fis16-.
 	fis4. r8
 	g4( e8.) fis16-.
-	fis4. r8
+	fis4. \ottava #0 r8
 	g,4(\p e8.) fis16-.
 % Bars 296 to 300
 	fis4( g)
@@ -395,40 +395,40 @@ musicViolinoIMvtIV = \relative c {
 	<gis gis'>( <d' d'>)
 	<c c'>2
 % Bars 326 to 330
-	<b b'>_\crescendo
+	<b b'>_\crescmarkup
 	<a a'>4(\< <b b'>
 	<cis cis'> <g' g'>)\!
 	<< <f f'>2 {s8\< s s s\!}>>
 	<e e'>2
 % Bars 331 to 335
-	e16\f e f f e e d d
-	d d c c d d e e
-	d d e e d d c c
-	c c b b  c c d d
-	c c d d c c b b
+	e8:16\f f: e: d: % e16\f e f f e e d d
+	d: c: d: e: % d d c c d d e e
+	d: e: d: c: % d d e e d d c c
+	c: b: c: d: % c c b b  c c d d
+	c: d: c: b: % c c d d c c b b
 % Bars 336 to 340
-	c c b b a a b b
-	b b a a b b c c
-	b b a a gis gis a a
-	gis gis fis fis e e b' b
-	b b b b a a a a
+	c: b: a: b: % c c b b a a b b
+	b: a: b: c: % b b a a b b c c
+	b: a: gis: a: % b b a a gis gis a a
+	gis: fis: e: b': % gis gis fis fis e e b' b
+	b4: a: % b b b b a a a a
 % Bars 341 to 345
-	b b b b  b b b b
-	c c c c  c c c c
+	b2: % b b b b  b b b b
+	c: % c c c c  c c c c
 	d8( c bes8.) f'16-.
 	f4-> e->
-	f16 f f f  f f f f
+	f2:16 % f16 f f f  f f f f
 % Bars 346 to 350
-	g g g g g g g g
-	a a a a a, a a a
-	a a a a a a b b
-	b b a a c c a a
-	d d b b e e e, e
+	g: % g g g g g g g g
+	a4: a,: % a a a a a, a a a
+	a: a8: b: % a a a a a a b b
+	b: a: c: a: % b b a a c c a a
+	d: b: e: e,: % d d b b e e e, e
 % Bars 351 to 355
-	c' c a a fis fis d' d
-	ees ees c c a a d d
-	ees ees c c a a f' f
-	ges ges ees ees c c g' g
+	c': a: fis: d': % c' c a a fis fis d' d
+	ees: c: a: d: % ees ees c c a a d d
+	ees: c: a: f': % ees ees c c a a f' f
+	ges: ees: c: g': % ges ges ees ees c c g' g
 	a4-> a,->
 % Bars 356 to 360
 	a16 a gis gis a a a' a
@@ -440,16 +440,16 @@ musicViolinoIMvtIV = \relative c {
 	b!4-> b,!->
 	bes-> bes'->
 	g16 g g, g  g g g f'
-	f f g, g g g ees' ees
-	ees ees d d c c d\<_\brackM\crescmarkup d
+	f8:16 g,: g: ees': % f f g, g g g ees' ees
+	ees: d: c: d:-\offset X-offset -2 _\brackM\crescmarkup % ees ees d d c c d\<_\brackM\crescmarkup d
 % Bars 366 to 370
-	ees ees f f g g a a\!
-	bes\ff bes bes bes a a bes bes
-	bes bes bes bes  bes bes bes bes
-	b! b b b ais ais b b
-	b b b b  b b b b
+	ees:\< f: g: a:\! % ees ees f f g g a a\!
+	bes4:\ff a8: bes: % bes\ff bes bes bes a a bes bes
+	bes2: % bes bes bes bes  bes bes bes bes
+	b!4: ais8: b: % b! b b b ais ais b b
+	b2: % b b b b  b b b b
 % Bars 371 to 375
-	c2:16
+	c2:
 	cis:
 	d:
 	dis:
@@ -468,19 +468,19 @@ musicViolinoIMvtIV = \relative c {
 	ces8-. des-. ees4~
 % Bars 386 to 390
 	ees8 f-. ges4\!
-	a,16\pp a a a  a a gis gis
-	fis fis b b b b b, b
-	b b b b' b b b cis
-	dis->\fp dis dis dis dis dis dis dis,
+	a,4:16\pp a8: gis: %a,16\pp a a a  a a gis gis
+	fis: b: b: b,: % fis fis b b b b b, b
+	b16 b b b' b b b cis
+	dis4:16\fp-> dis16 dis dis dis, % dis->\fp dis dis dis dis dis dis dis,
 % Bars 391 to 395
-	ees ees ees ees  ees ees f f
-	ges ges bes bes  bes bes bes, bes
-	bes bes bes ees  ees ees ees bes'
-	ges'->\fp ges ges ges  ges ges ges ges,
-	cis cis cis cis  cis cis bis bis
+	ees4:16 ees8: f: % ees ees ees ees  ees ees f f
+	ges: bes: bes: bes,: % ges ges bes bes  bes bes bes, bes
+	bes16 bes bes ees  ees ees ees bes'
+	ges'4:16\fp-> ges16 ges ges ges, % ges'->\fp ges ges ges  ges ges ges ges,
+	cis4:16 cis8: bis: % cis cis cis cis  cis cis bis bis
 % Bars 396 to 400
-	cis cis fis fis  fis fis fis, fis
-	fis fis fis cis'  cis cis cis dis
+	cis: fis: fis: fis,: % cis cis fis fis  fis fis fis, fis
+	fis16 fis fis cis'  cis cis cis dis
 	e!2:16\f
 	f16_\pcrescendo f f f  f f f e
 	f f f bes  bes bes bes bes,
@@ -497,7 +497,7 @@ musicViolinoIMvtIV = \relative c {
 	b g'!->~
 	g b->
 % Bars 411 to 415
-	<g, e' c'>8\ff r q r
+	\dynEO #'(1.5 . 0) <g, e' c'>8-\offset X-offset -1.5 \ff r q r
 	q r q r
 	<g' c e> r q r
 	q r q r
@@ -527,19 +527,19 @@ musicViolinoIMvtIV = \relative c {
 	d:
 	e4:-> c:->
 % Bars 436 to 440
-	c4.:-> d16-. d-.
+	\ottava #1 c4.:-> d16-. d-.
 	e4:16-> c:->
 	c4.:-> d16-. d-.
-	e e d d c c a' a
-	a2:16
+	e8:16 d: c: a': % e e d d c c a' a
+	a2:
 % Bars 441 to 445
 	a:
 	a:
-	a16 a g g f f g g
+	a8: g: f: g: % a16 a g g f f g g
 	a8 r r4
-	a16 a g g f f g g
+	a8:16: g: f: g: % a16 a g g f f g g
 % Bars 446 to 450
-	a8 r r4
+	a8 \ottava #0 r r4
 	a,8-.\pp g-. f-. g-.
 	f-. e-. d-. cis~
 	cis d-. f,-. g-.
@@ -560,7 +560,7 @@ musicViolinoIMvtIV = \relative c {
 	b,4 r8. d16
 	d8 r g r
 	f r a r
-	g8.\ff g,16 g8. g'16
+	g8.-\offset X-offset -1.5 \ff g,16 g8. g'16
 	g8. g,16 g8. g'16
 % Bars 466 to 470
 	g8. g,16 g8. g'16
@@ -579,16 +579,16 @@ musicViolinoIMvtIV = \relative c {
 	q:
 	q8 r r4
 	r r8.\fermata f'16
-	<f, f'>16 q q q  q q q q
+	<f, f'>2:16 %<f, f'>16 q q q  q q q q
 % Bars 481 to 485
-	q q q q  q q q q
+	q: % q q q q  q q q q
 	q8 r r4
-	R2\fermata
+	\once \ni R2\fermata
 	a8\f r a r
 	r4 r8. g16
 % Bars 486 to 490
 	a8. a16 a8 r
-	r4 r8. g,16\p
+	r4 r8. \dynEO #'(0 . 0.5) g,16\p
 	a4( b)\<
 	c( d)
 	e( g8. f16)\!
@@ -663,15 +663,15 @@ musicViolinoIMvtIV = \relative c {
 	f,8-. f'-. aes,-. aes'-.
 	c,-. c'-. r4
 	f,,8-. f'-. aes,-. aes'-.
-	<d,, d'>4(_\espressivo <ees ees'>~
+	<d,, d'>4(^\espressivo <ees ees'>~
 % Bars 551 to 555
 	q <c c'>~
 	q4.) <d d'>8
 	q4( <ees ees'>)
 	q2~
-	<< q~ {s8\< s s s\!}>>
+	<< q~ {\hairpinShorten #'(0 . -1.5) s8\< s s s\!}>>
 % Bars 556 to 560
-	q4( << <des des'> {s8\< s\!}>>
+	q4( << <des des'> {\hairpinShorten #'(0 . -1.5) s8\< s\!}>>
 	<a! a'!>4 <bes bes'>~
 	q8) r r4
 	R2*2
@@ -716,17 +716,17 @@ musicViolinoIMvtIV = \relative c {
 	g( fis g e dis e)
 	bes'( a bes g fis g)
 	e( dis e des c des)
-	d!(_\crescendo ees d c d c)
+	d!(-\offset X-offset -1.5 _\crescendo ees d c d c)
 	f( g f ees f ees)
 % Bars 596 to 600
 	d( ees d c d c)}
-	bes16\f bes bes bes  c c c f,
-	f f f f f' f f f
-	bes bes bes bes c c c f
-	f f f f  f f f f
+	bes4:16\f c16 c c f, % bes16\f bes bes bes  c c c f,
+	f4:16 f': % f f f f f' f f f
+	bes: c16 c c f % bes bes bes bes c c c f
+	f2:16 % f f f f  f f f f
 % Bars 601 to 605
-	ees ees f f f f bes, bes
-	bes-> bes c c c c f, f
+	ees8: f: f: bes,: % ees ees f f f f bes, bes
+	bes:-> c: c: f,: % bes-> bes c c c c f, f
 	f8 r r4
 	R2
 	g'16 g g a a a a d,
@@ -739,11 +739,11 @@ musicViolinoIMvtIV = \relative c {
 % Bars 611 to 615
 	ees'16 ees ees f  f f f b,!
 	b8 r r4
-	g'16->\brack\ff g g g a, a a ges'
-	ges-> ges ges ges a, a a f'
-	f-> f f f a, a a e'
+	\dynEO #'(4 . 1) g'4:16-\offset X-offset -4 \brack\ff-> a,16 a a ges' % g'16->\brack\ff g g g a, a a ges'
+	ges4:16-> a,16 a a f' % ges-> ges ges ges a, a a f'
+	f4:16-> a,16 a a e' % f-> f f f a, a a e'
 % Bars 616 to 620
-	e-> e e e a, a a dis
+	e4:16-> a,16 a a dis % e-> e e e a, a a dis
 	dis8 r e r
 	r8. b,16 b'4->
 	b8 r c r
@@ -789,29 +789,29 @@ musicViolinoIMvtIV = \relative c {
 % Bars 656 to 660
 	f4( e8) r
 	ees4\f r8 c16 c
-	c_\diminuendo c d d d d ees ees
+	c8:16_\diminuendo d: d: ees: % c_\diminuendo c d d d d ees ees
 	ees4 r8 c16 c
-	c c d d d d ees ees
+	c8:16 d: d: ees: % c c d d d d ees ees
 % Bars 661 to 665
 	des4\p r8 bes16 bes
-	bes bes c c  c c des des
+	bes8:16 c: c: des: % bes bes c c  c c des des
 	des4 r8 bes16 bes
-	bes bes c c  c c des des
+	bes8:16 c: c: des: % bes bes c c  c c des des
 	d!4..->\f d,16
 % Bars 666 to 670
 	d4..-> bes'16
 	bes4..-> g,16
 	a4..-> a'16
-	d d a a  a a d d
-	cis cis a a  a a cis cis
+	d8:16 a: a: d: % d d a a  a a d d
+	cis: a: a: cis: % cis cis a a  a a cis cis
 % Bars 671 to 675
-	d d a a  cis cis a a
-	d d a a  fis' fis a, a
-	a' a e e  e e a a
-	gis gis e e  e e gis gis
-	a a e e  gis gis e e
+	d: a: cis: a: % d d a a  cis cis a a
+	d: a: fis': a, % d d a a  fis' fis a, a
+	a': e: e: a: % a' a e e  e e a a
+	gis: e: e: gis: % gis gis e e  e e gis gis
+	a: e: gis: e: % a a e e  gis gis e e
 % Bars 676 to 680
-	a a a a  a a a a
+	a2:16 % a a a a  a a a a
 	e8 r r8. fis16(\f
 	gis8-.) r gis-. r
 	r4 r8. fis16-.
@@ -845,18 +845,18 @@ musicViolinoIMvtIV = \relative c {
 	c8.[( d16 e8)] r16 b-.
 	c8.[( d16 e8]) r16 d-.
 	e8.[( f16 g8]) r16 e-.
-	f f f f g g g g
+	f4:16 g: % f f f f g g g g
 % Bars 706 to 710
-	a a a a  a a a g
-	g g g g  c c c c
-	a a a a  a a a f
-	f f f f  f f f d
-	d d d d  d d d e
+	a: a16 a a g % a a a a  a a a g
+	g4:16 c: % g g g g  c c c c
+	a: a16 a a f % a a a a  a a a f
+	f4:16 f16 f f d % f f f f  f f f d
+	d4:16 d16 d d e % d d d d  d d d e
 % Bars 711 to 715
-	e\ff e e e  e e e e
-	e e e e  e e e c
+	e2:16\ff % e\ff e e e  e e e e
+	e4: e16 e e c % e e e e  e e e c
 	c2:16
-	c16 c c c  c c c d
+	c4: c16 c c d % c16 c c c  c c c d
 	<g,, f' d'>8 r <g e' c'> r
 % Bars 716 to 720
 	q4 r8. q16
@@ -898,69 +898,69 @@ musicViolinoIMvtIV = \relative c {
 	
 	
 	
-	e4\brack\mf_\crescendo( fis,8.) e16
+	e4\brack\mf-\offset X-offset 3.5 _\crescendo( fis,8.) e16
 % Bars 751 to 755
 	e8 r r4
 	R2
-	g,16\f g c c dis dis e e
-	a, a c c e e f f
-	c c e e fis fis g g
+	g,8:16\f c: dis: e: % g,16\f g c c dis dis e e
+	a,: c: e: f: % a, a c c e e f f
+	c: e: fis: g: % c c e e fis fis g g
 % Bars 756 to 760
-	c, c f! f gis gis a a
-	e e g! g b b c c
-	f, f a a cis cis d d
-	g, g c! c dis dis e e
-	a, a c c e e f f \section
+	c,: f!: gis: a: % c, c f! f gis gis a a
+	e: g!: b: c: % e e g! g b b c c
+	f,: a: cis: d: % f, f a a cis cis d d
+	g,: c!: dis: e: % g, g c! c dis dis e e
+	a,: c: e: f: \section % a, a c c e e f f \section
 % Bars 761 to 765
-	\timeThreeTwo g\ff g cis, cis  cis cis d d  e e d d  cis cis bes' bes  a a g g  f f e e 
-	f f f f  g g g f  f f f f  f f f f  d d d d  e e e d
-	d d gis, gis  gis gis a a  b b a a  gis gis f' f  e e d d  c c b b
-	c c c c  d d d c  c c c c  c c c c  a a a a  b b b a
-	a a dis, dis  dis dis e e  fis fis e e  dis dis c' c  c c c c  c c c c
+	\timeThreeTwo \newSpacingSection g:\ff cis,: cis: d: e: d: cis: bes': a: g: f: e: % \timeThreeTwo g\ff g cis, cis  cis cis d d  e e d d  cis cis bes' bes  a a g g  f f e e 
+	f4:16 g16 g g f f2:16 d4: e16 e e d % f16 f f f  g g g f  f f f f  f f f f  d d d d  e e e d
+	d8:16 gis,: gis: a: b: a: gis: f': e: d: c: b: % d d gis, gis  gis gis a a  b b a a  gis gis f' f  e e d d  c c b b
+	c4:16 d16 d d c c2:16 a4: b16 b b a % c c c c  d d d c  c c c c  c c c c  a a a a  b b b a
+	a8:16 dis,: dis: e: fis: e: dis: c': c2: % a a dis, dis  dis dis e e  fis fis e e  dis dis c' c  c c c c  c c c c
 % Bars 766 to 770
-	c c fis, fis  fis fis g g  a a g g  fis fis  ees' ees  ees ees ees ees  ees ees ees ees
-	e! e d d  c c d d  c c d d e e d d  c c a' a  g g f f
-	e e d d  c c d d  c c d d  e e d d  c c a' a  g g f f
+	c8: fis,: fis: g: a: g: fis: ees': ees2: % c c fis, fis  fis fis g g  a a g g  fis fis  ees' ees  ees ees ees ees  ees ees ees ees
+	e!8: d: c: d:c: d: e: d: c: a': g: f: % e! e d d  c c d d  c c d d e e d d  c c a' a  g g f f
+	e: d: c: d: c: d: e: d: c: a': g: f: % e e d d  c c d d  c c d d  e e d d  c c a' a  g g f f
 	ees2:16 d4: c: b2:
 	a'4: g: fis2: fis:
 % Bars 771 to 775
-	g: g,16 g a a  b b c c  d d e e  f! f g g
+	g: g,8: a: b: c: d: e: f!: g: %g: g,16 g a a  b b c c  d d e e  f! f g g
 	\tuplet 3/2 2 {f4->\ff ges-> f-> ges-> f-> ges-> f-> ges-> f->
 	e!-> fis-> e-> fis-> e-> fis-> e-> fis-> e->
-	ees-> f-> ees-> f-> ees-> f-> ees-> f-> ees->}
-	d8 d d d  c c c c  b b b b
+	ees-> f!-> ees-> f-> ees-> f-> ees-> f-> ees->}
+	d2:8 c: b: % d8 d d d  c c c c  b b b b
 % Bars 776 to 780
-	e e e e  d d d d  c c c c
-	g'-> g g g  f-> f f f  e-> e e e
-	bes'\ff bes bes bes  bes bes bes bes \tuplet 3/2 2 {a4-> g-> f->}
+	e: d: c: % e e e e  d d d d  c c c c
+	g':-> f:-> e:-> % g'-> g g g  f-> f f f  e-> e e e
+	bes': bes: \tuplet 3/2 2 {a4-> g-> f->} % bes'\ff bes bes bes  bes bes bes bes \tuplet 3/2 2 {a4-> g-> f->}
 	f2:16\fp f: f:
 	ees:\fp ees: ees:
 % Bars 781 to 785
 	d:\fp d: d:
 	g:\ff g: g:
-	c,,8\f c d-> c  c c c c  c c c c
-	e e f-> e  e e e e  e e e e
-	g g a-> g  g g g g  g g g g
+	c,,8\f c d-> c  c2:8 c: % c,,8\f c d-> c  c c c c  c c c c
+	e8 e f-> e  e2:8 e: % e e e e  e e e e
+	g8 g a-> g  g2:8 g: % g g g g  g g g g
 % Bars 786 to 790
-	c c c c  c c a a  g g e e
-	c c a a  g g e e  d d c c
-	c c c c  c c c c  c c c c
-	e e e e  e e e e  e e e e
-	g g g g  g g g g  g g g g
+	c2: c4: a: g: e: % c c c c  c c a a  g g e e
+	c: a: g: e: d: c: % c c a a  g g e e  d d c c
+	c2: c: c: % c c c c  c c c c  c c c c
+	e: e: e: % e e e e  e e e e  e e e e
+	g: g: g: % g g g g  g g g g  g g g g
 % Bars 791 to 795
-	c c c c  c c c c  c c c c
-	c'-> c c c  c-> c c c  c-> c c c
-	g' g g g  g g g g  c, c c c
-	c c c c  c c c c  d d d d
-	e e e e  e e e e  c c c c
+	c: c: c: % c c c c  c c c c  c c c c
+	c':-> c:-> c:-> % c'-> c c c  c-> c c c  c-> c c c
+	g': g: c,: % g' g g g  g g g g  c, c c c
+	c: c: d: % c c c c  c c c c  d d d d
+	e: e: c: % e e e e  e e e e  c c c c
 % Bars 796 to 800
-	c c c c  c c c c  d d d d
-	e e e e  e e d d  c c g' g
-	g g g g  g g f f  e e c' c
-	c c c c  c c c, c  c c d d
-	d-> d d g,  g g a a  a-> a a d,
+	c: c: d: % c c c c  c c c c  d d d d
+	e: e4: d: c: g': % e e e e  e e d d  c c g' g
+	g2: g4: f: e: c': % g g g g  g g f f  e e c' c
+	c2: c4: c,: c: d: % c c c c  c c c, c  c c d d
+	d8-> d d g, g4:8 a: a8-> a a d, % d-> d d g,  g g a a  a-> a a d,
 % Bars 801 to 805
-	d d e e  e-> e e a, a4 r
+	d4:8 e: e8-> e e a, a4 r % d d e e  e-> e e a, a4 r
 	<f a>\brack\ff r r2 <g b>4 r \section
 	\time 2/4 <e c'>4.-> c8
 	c4.-> <c' e>8

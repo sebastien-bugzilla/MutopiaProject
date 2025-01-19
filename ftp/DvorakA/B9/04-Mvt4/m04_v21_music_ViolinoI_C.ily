@@ -47,7 +47,7 @@ musicViolinoIMvtIV = \relative c {
 % Bars 31 to 35
 	<fis b fis'>8 r <fis b b'> r
 	<e b' e> r r4\fermata
-	\afterGrace a2\p\trill {gis16( a)}
+	\afterGrace a2\p\trill^\brackM\arco {gis16( a)}
 	c8. b16 c8 r
 	\afterGrace a2\trill {gis16( a)} 
 % Bars 36 to 40

@@ -108,7 +108,7 @@ musicViolinoIMvtII = \relative c {
 	q r r q->~ q r r q->~ q r r q->~ q r r q->~
 	q16 r r q~ q r r q~
 % Bars 86 to 90
-	q q~[ q] q~ q r r q
+	q q~[ q] q~[ q] r r q
 	q r r q~ q r r q
 	q q[~ q] q[~ q] r r c\p~
 	\hairpinShorten #'(0 . 1) c4\< << des {\hairpinShorten #'(-1 . -2) s8\> s\!}>>
@@ -133,7 +133,7 @@ musicViolinoIMvtII = \relative c {
 	r q8-> q16-. r q8-> q16-. 
 % Bars 106 to 110
 	r q8->_\dimin q16-. r q8-> q16-. 
-	\hairpinShorten #'(0 . 2) <c c'>4\p\< << <des des'> {\hairpinShorten #'(-2 . -2) s8\> s\!}>>
+	\hairpinShorten #'(0 . 2) <c c'>4(\p\< << <des des'>) {\hairpinShorten #'(-2 . -2) s8\> s\!}>>
 	\hairpinShorten #'(0 . 2) <c c'>4(\< \hairpinShorten #'(-2 . -2) <ees ees'>8\> <des des'>)\!
 	<c c'>4( <bes bes'>8 <aes aes'>)\<
 	<g g'>8.( <aes aes'>32 <bes bes'>)\! <aes aes'>8( <ees ees'>)
@@ -177,7 +177,7 @@ musicViolinoIMvtII = \relative c {
 	aes,,32 r r f'' f4.\fermata
 	ees8_\ppsempre f~ f[ bes16.( ees,32)]
 	ees16-. d8-- c-- bes-- aes16-.
-	c16-. des-. c-. bes-. aes aes'8-> g16-.
+	c16-. des-. c-. bes-. aes-. aes'8-> g16-.
 	c-. bes-. aes-. des~ des c-. b-. d-.
 % Bars 146 to 150
 	g,4\pp( aes)

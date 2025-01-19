@@ -39,7 +39,7 @@ musicViolinoIMvtIII = \relative c {
 	g4._\dimin( f8)
 	g4.( aes8)
 % Bars 26 to 30
-	g-.\noBeam g'-.^\pizz g-. g-.
+	g-.\noBeam g'^\pizz g g
 	g g g g,,\noBeam
 	R2
 	r4-\offset X-offset -1 ^\brackM\arco \afterGrace g''4->\startTrillSpan\f\< {fis16( g)\stopTrillSpan\!}
@@ -330,7 +330,7 @@ musicViolinoIMvtIII = \relative c {
 	g4._\dimin( f8)
 % Bars 261 to 265
 	g4.( aes8)
-	g-.\noBeam g'-.^\pizz g-. g-.
+	g-.\noBeam g'^\pizz g g
 	g g g g,,\noBeam
 	R2
 	r4-\offset X-offset -1 ^\brackM\arco \afterGrace g''4->\startTrillSpan\f\< {fis16( g)\stopTrillSpan\!}

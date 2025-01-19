@@ -9,7 +9,7 @@ musicViolinoIMvtI = \relative c {
 	\key c \minor
 %	\transposition a
 % Bars 1 to 5
-	<g'' ees' c'>4-\offset X-offset 0.5 \ff r r2
+	<g'' ees' c'>4-\offset X-offset 0.5 \f r r2
 	<aes ees' c'>4 r r2
 	<g ees' c'>4 r r2
 	<g, d' b' g'>4 r r2
@@ -632,8 +632,8 @@ musicViolinoIMvtI = \relative c {
 % Bars 521 to 525
 	e: c16 c e e e4:16
 	e: c16 c e e e4:16
-	r8. b16-. b4->( f8) r
-	r8. f16-. f4->( b8) r
+	r8. b16-. b4->( fis8) r
+	r8. f!16-. f4->( b8) r
 	r8. a16-. a4->( e8) r
 % Bars 526 to 530
 	r8. e16-. d4->( a'8) r

@@ -18,7 +18,7 @@ musicViolinoIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	c16-.\p g'-. d-. g-. ees-. g-. f32( ees d c)
 % Bars 11 to 15
 	c8 b\prall c r
@@ -39,10 +39,10 @@ musicViolinoIMvtIII = \relative c {
 	g4._\dimin( f8)
 	g4.( aes8)
 % Bars 26 to 30
-	g-.\noBeam g'-.^\pizz g-. g-.
+	g-.\noBeam g'^\pizz g g
 	g g g g,,\noBeam
 	R2
-	r4^\brackM\arco \afterGrace g''4->\startTrillSpan\f\< {fis16( g)\stopTrillSpan\!}
+	r4-\offset X-offset -3 ^\brackM\arco \afterGrace g''4->\startTrillSpan\f\< {fis16( g)\stopTrillSpan\!}
 	ees16\pp-. g-. d-. g-. c,-. g'-. f32( ees d c)
 % Bars 31 to 35
 	aes'16-. c-. g-. c-. f,-. c'-. bes32( aes g f)
@@ -73,7 +73,7 @@ musicViolinoIMvtIII = \relative c {
 	g4->\< aes8-> des->\!
 	bes4->\f aes8-> des->
 	bes4-> aes16( bes) ces-. des-.
-	a2~_\dimin
+	a2~_\dimmarkup
 % Bars 56 to 60
 	a8[ d,!]-> d-> g->
 	c,16\f-. g'-. d-. g-. ees-. g-. f32( ees d c)
@@ -87,7 +87,7 @@ musicViolinoIMvtIII = \relative c {
 	fis( g) c-. ees-. d8-. r
 	c16-. g'-. d-. g-. ees-. g-. f32( ees d c)
 % Bars 66 to 70
-	f8->_\marcato e\prall f-> des->
+	f8->^\marcato e\prall f-> des->
 	c4.-> b8-.
 	c-> g-> g-> aes16-. bes!-.
 	aes4-> g8^\sulg d16 f
@@ -101,7 +101,7 @@ musicViolinoIMvtIII = \relative c {
 % Bars 76 to 80
 	d8-. r r4
 	g8-. r r4
-	bes,,4->_\marcato bes->
+	bes,,4->^\marcato bes->
 	b8. c16 c4->
 	d-> ees->
 % Bars 81 to 85
@@ -140,11 +140,11 @@ musicViolinoIMvtIII = \relative c {
 		g8. aes16 aes8 f
 		<bes, g'> r <d a'>\< r
 		bes'8. d16 f8 ees\!
-		d8.->[_\crescendo\mf ees16 ees8] r
+		d8.->[_\mfcrescendo ees16 ees8] r
 % Bars 111 to 115
 		f8.[-> g16 g8] r
 		a8.->[ bes16 bes8] r
-		bes,,\f r r4
+		bes,,\f r r4 
 		g'->\pp^\brackM\arco g->
 		g8.-> aes16-. aes8-. f-.
 % Bars 116 to 120
@@ -160,13 +160,13 @@ musicViolinoIMvtIII = \relative c {
 		ees8[-. \tuplet 7/4 8 {ees32( f g aes bes c d]} ees8.) ees16-.
 		f,2
 % Bars 126 to 130
-		g8-.[\< \tuplet 7/4 8 {g32( aes bes c d ees f\!]} g8.) g16-.
+		g8-.[\< \once \tupletUp \tuplet 7/4 8 {g32( aes bes c d ees f\!]} g8.) g16-.
 		aes,4\f a
 		c8-> bes-> <d, d'>4->~
 		q8 a' q4->~_\dimin
 		\alternative {
 			\volta 1 {
-				q8 r r a,(\p
+				\noteHeadEsw #'(-1.5 . 0) q8 \revertNoteHeadEsw r r a,(\p
 % Bars 131 to 135
 				d4.) a8(
 				d2)\pp~
@@ -177,7 +177,7 @@ musicViolinoIMvtIII = \relative c {
 				R2
 % Bars 136 to 140
 				r4 r8. aes!16\brack\pp^\pizz
-				f'8 r r8. bes,16^\arco \section
+				f'8 r r8. bes,16-\offset X-offset -1 ^\arco \section
 			}
 		}
 	}
@@ -194,7 +194,7 @@ musicViolinoIMvtIII = \relative c {
 	c4.( bes8)
 	bes8.(\< c16) bes4
 	ees4.( d8)\!
-	ees8.( f16) ees4\<
+	ees8.( f16) \hairpinShorten #'(0 . -1) ees4\<
 	g4.\>( f8)\!
 % Bars 151 to 155
 	ees8.( f16)\< ees4
@@ -204,7 +204,7 @@ musicViolinoIMvtIII = \relative c {
 	bes,( ees bes g) r c( g c)
 % Bars 156 to 160
 	aes( c aes f) r ces'( aes f)
-	bes( g f ees) r c'(\< g ees)
+	bes( g f ees) r c'!(\< g ees)
 	ees'(->  d c f,) r ees'( c a)\!
 	g'(-> ees c a) r f'(\> d c)\!
 	bes8\brack\p r \tuplet 3/2 8 {d,16[ d d] bes bes bes}
@@ -245,7 +245,7 @@ musicViolinoIMvtIII = \relative c {
 	r8 c,16( c' des8-> c16) r
 	r8 g,16( g' fis8-> g16) r
 % Bars 191 to 195
-	r8 c,16(\< c' b8-> c16)\! r
+	r8 c,16(-\tweak extra-offset #'(0 . 0.2) \< c' b8-> c16)\! r
 	r8 f,16( f' e8-> f16) r
 	<< <g, g'>2:32 { s4 s_\crescmarkup }>>
 	q2:
@@ -300,7 +300,7 @@ musicViolinoIMvtIII = \relative c {
 	g4.) d8
 % Bars 236 to 240
 	<bes g'>2\pp~
-	q8 r r r16 \section <g, g'>\f~
+	q8 r r r16 \section \break <g, g'>\f~
 	q8 r16 q~ q8 r16 q~
 	q8_\dimmarkup r r8. g'16~
 	g8 r16 a\p~ a8 r16 b~
@@ -309,7 +309,7 @@ musicViolinoIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 246 to 250
 	c16-.\p g'-. d-. g-. ees-. g-. f32( ees d c)
 	c8 b\prall c r
@@ -330,10 +330,10 @@ musicViolinoIMvtIII = \relative c {
 	g4._\dimin( f8)
 % Bars 261 to 265
 	g4.( aes8)
-	g-.\noBeam g'-.^\pizz g-. g-.
+	g-.\noBeam g'^\pizz g g
 	g g g g,,\noBeam
 	R2
-	r4^\brackM\arco \afterGrace g''4->\startTrillSpan\f\< {fis16( g)\stopTrillSpan\!}
+	r4-\offset X-offset -3 ^\brackM\arco \afterGrace g''4->\startTrillSpan\f\< {fis16( g)\stopTrillSpan\!}
 % Bars 266 to 270
 	ees16\pp-. g-. d-. g-. c,-. g'-. f32( ees d c)
 	aes'16-. c-. g-. c-. f,-. c'-. bes32( aes g f)
@@ -378,7 +378,7 @@ musicViolinoIMvtIII = \relative c {
 	fis( g) c-. ees-. d8-. r
 % Bars 301 to 305
 	c16-. g'-. d-. g-. ees-. g-. f32( ees d c)
-	f8->_\marcato e\prall f-> des->
+	f8->^\marcato e\prall f-> des->
 	c4.-> b8-.
 	c-> g-> g-> aes16-. bes!-.
 	aes4-> g8^\sulg d16 f
@@ -392,7 +392,7 @@ musicViolinoIMvtIII = \relative c {
 	c8-. r r4
 	d8-. r r4
 	g8-. r r4
-	bes,,4->_\marcato bes->
+	bes,,4->^\marcato bes->
 	b8. c16 c4->
 % Bars 316 to 320
 	d-> ees->
@@ -415,7 +415,7 @@ musicViolinoIMvtIII = \relative c {
 % Bars 331 to 335
 	g g g g  g g g fis g g g g  g g g fis
 	g g g g  g g g fis g g g g  g g g c,
-	d d d d d d d c b4\fermata % signo
+	d d d d d d d c b4\fermata \section % signo
 	R2
 	des,4:32\pp des8 r
 % Bars 336 to 340
@@ -473,5 +473,5 @@ musicViolinoIMvtIII = \relative c {
 	ees8.-> ees16-. ees8-. f-.
 	g8.-> c,16-.\p c8 r
 % Bar 381
-	<g, ees' c'>8^\pizz r r4 \markFermata \fine 
+	<g, ees' c'>8^\pizz r r4 \markNormalSizeFermata \fine 
 }

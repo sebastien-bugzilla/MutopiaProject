@@ -80,7 +80,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 91 to 95
 	
 % Bars 96 to 100
-	%%%%%%%%%%%%%%%
+	
 % Bars 101 to 105
 	ees16\brack\f r r8 ees16 r r8 
 	ees16 r r8 ees16 r r8 
