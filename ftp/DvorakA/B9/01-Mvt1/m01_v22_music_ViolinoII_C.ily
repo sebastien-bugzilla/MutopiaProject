@@ -312,7 +312,7 @@ musicViolinoIIMvtI = \relative c {
 % Bars 251 to 255
 		<c, ees>2\pp <des f>4~
 		<des f> <c ees>2
-		q4 r r
+		<des f>4 r r
 		R2.
 		<c ees>2\pp <des f>4~
 % Bars 256 to 260
@@ -413,7 +413,7 @@ musicViolinoIIMvtI = \relative c {
 	bes-> c-> d->
 	g,-> a-> b->
 % Bars 331 to 335
-	c8.[->\brack\pp d16 d8( c)] r4
+	c8.[->\brack\pp d16-. d8( c)] r4
 	d8.->[ ees16-. ees8( d)] r4
 	ees8.[->\< f16-. f8( ees)] r4
 	f8.->[ g16-. g8( f)] r4\!
@@ -452,7 +452,7 @@ musicViolinoIIMvtI = \relative c {
 	q2.:
 	bes8-. f-. c'[-> f,-.] d'-. f,-.
 	g-. d-. a'->[ d,-.] bes'-. d,-. 
-	bes' f' c\fz-> f-> d-. f-.
+	bes'-. f'-. c\fz-> f-> d-. f-.
 	f,-. c'-. g->\fz c-> a-. c-. 
 % Bars 366 to 370
 	ees,-. bes'-. f->\fz bes-> g-. bes-.
@@ -547,7 +547,7 @@ musicViolinoIIMvtI = \relative c {
 % Bars 441 to 445
 	f:
 	f:
-	<c ees>:
+	<c ees>:_\crescendo
 	q:
 	q:
 % Bars 446 to 450

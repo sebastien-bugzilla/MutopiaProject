@@ -445,7 +445,7 @@ musicViolinoIIMvtIII = \relative c {
 	a!4:32 a8 r
 	c,16-.\p g'-. f32( ees d c) r4
 	c16-.\< g'-. f32(_\crescendo ees d c)\! r4
-	c16-. g'-. f32( ees d c) d'8. r16
+	c16-. g'-. f32( ees d c) d'8.-> r16
 % Bars 341 to 345
 	d8.->\< r16 \afterGrace d4\startTrillSpan {cis16( d)\stopTrillSpan\!}
 	c!8\f[ g'->] f-> e->

@@ -660,7 +660,7 @@ musicViolinoIIMvtIV = \relative c {
 	c8-. c-. c8.-> c16-.
 % Bars 546 to 550
 	c8-. c-. c8.-> c16-.
-	aes'8-. aes-. aes8.-> aes16
+	aes'8-. aes-. aes8.-> aes16-.
 	f8-. f-. f8.-> f16-.
 	c'8-. c-. c8.-> c16-.
 	\afterGrace a2(\startTrillSpan {gis16 a)\stopTrillSpan}
@@ -789,7 +789,7 @@ musicViolinoIIMvtIV = \relative c {
 	b4(_\crescendo e8.) d16-.
 	d4(\< cis8)\! r
 	a4(\< d8.) c!16-.\!
-	c4( bes8)\! r
+	c4(\> bes8)\! r
 % Bars 656 to 660
 	a4( g8) r
 	c4\f r8 a16 a

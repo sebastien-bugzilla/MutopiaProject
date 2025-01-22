@@ -15,7 +15,7 @@ musicViolinoIIMvtI = \relative c {
 	<g, d' b' g'>4 r r2
 	<f' c' f>4 r r2
 % Bars 6 to 10
-	<ees bes' g'>4 r r2
+	<ees bes'! g'>4 r r2
 	<bes f' d'>4 r r2
 	\grace {g16( d' b'} g'1)\fermata_\dimmarkup \section
 	\time 3/4 R2.*2
@@ -29,7 +29,7 @@ musicViolinoIIMvtI = \relative c {
 		g8-. g-. ees-. g-. ees4-. 
 % Bars 16 to 20
 		g8-. g-. ees-. g-. ees4-. 
-		c8_\ppsempre c c c c c
+		\startMeasureCount c8_\ppsempre c c c c c
 		c c c c c c
 		c c c c c c
 		c c c c c c
@@ -37,7 +37,7 @@ musicViolinoIIMvtI = \relative c {
 		c c c c c c
 		c c c c c c
 		c c c c c c
-		c c c c c c
+		c c c c c c \stopMeasureCount
 		c4 r r
 % Bars 26 to 30
 		R2.*3
@@ -48,7 +48,7 @@ musicViolinoIIMvtI = \relative c {
 % Bars 31 to 35
 		g8-. g-. ees-. g-. ees4-. 
 		g8-. g-. ees-. g-. ees4-. 
-		c8\pp c c c c c
+		\startMeasureCount c8\pp c c c c c
 		c c c c c c
 		c c c c c c
 % Bars 36 to 40
@@ -56,7 +56,7 @@ musicViolinoIIMvtI = \relative c {
 		c c c c c c
 		c c c c c c
 		c c c c c c
-		c c c c c c
+		c c c c c c \stopMeasureCount
 % Bars 41 to 45
 		c4 r r
 		R2.*3
@@ -166,7 +166,7 @@ musicViolinoIIMvtI = \relative c {
 		r8. ees,,16-.\p ees4-. \acciaccatura d'8 ees4
 		r8. ees,16-. ees4-. \acciaccatura d'8 ees4
 % Bars 131 to 135
-		r8. ees,16-. ees4-._\crescendo \acciaccatura d'8 ees4
+		r8. ees,16-. ees4-._\crescmarkup \acciaccatura d'8 ees4
 		r8. ees,16-. ees4-. \acciaccatura d'8 ees4
 		r8. ees,16-. ees4-. \acciaccatura d'8 ees4
 		r8. g,16-. g4-. \acciaccatura fis'8 g4
@@ -226,7 +226,7 @@ musicViolinoIIMvtI = \relative c {
 		aes')
 		f4( ees d)
 % Bars 181 to 185
-		bes'2.:16\p
+		\startMeasureCount bes'2.:16\p
 		bes:
 		bes:
 		bes:
@@ -234,8 +234,8 @@ musicViolinoIIMvtI = \relative c {
 % Bars 186 to 190
 		bes:
 		bes:
-		bes:
-		f':\f
+		bes: \stopMeasureCount
+		\startMeasureCount f':\f
 		f:
 % Bars 191 to 195
 		f:
@@ -244,7 +244,7 @@ musicViolinoIIMvtI = \relative c {
 		f:
 		f:
 % Bars 196 to 200
-		f:
+		f: \stopMeasureCount
 		fis8.-. g16-. g4->( e8) r
 		c4-> a-> r
 		fis'8.-. g16-. g4->( e8) r
@@ -263,7 +263,7 @@ musicViolinoIIMvtI = \relative c {
 		R2.
 % Bars 211 to 215
 		e''16\pp e g, g e e e' e g, g e e
-		g_\crescendo g e e g, g g' g e e g, g
+		g-\offset X-offset -1.5 _\crescendo g e e g, g g' g e e g, g
 		e' e g, g e e e' e g, g e\< e
 		g g e e\! g, g g' g e e e' e
 		<ees,! bes' g'>4\f r r
@@ -288,7 +288,7 @@ musicViolinoIIMvtI = \relative c {
 % Bars 231 to 235
 		g4\f r r8. g,,16
 		g4 r r
-		b'' r r8. g,,16\pp
+		b'' r r8. g,,16-\offset X-offset -2.5 \pp
 		g4 r r
 		r d'-.\pp ees-.
 % Bars 236 to 240
@@ -312,7 +312,7 @@ musicViolinoIIMvtI = \relative c {
 % Bars 251 to 255
 		<c, ees>2\pp <des f>4~
 		<des f> <c ees>2
-		q4 r r
+		<des f>4 r r
 		R2.
 		<c ees>2\pp <des f>4~
 % Bars 256 to 260
@@ -338,7 +338,7 @@ musicViolinoIIMvtI = \relative c {
 		q~
 		q(\>
 		<b b'>)\!
-		c\p~
+		\startMeasureCount c\p~
 % Bars 276 to 280
 		c~
 		c~
@@ -346,7 +346,7 @@ musicViolinoIIMvtI = \relative c {
 		c~
 		c~
 % Bars 281 to 285
-		c
+		c \stopMeasureCount
 		b
 		d16\pp d bes! bes d, d d' d bes bes d, d
 		bes' bes d, d bes bes bes' bes d, d bes bes
@@ -403,7 +403,7 @@ musicViolinoIIMvtI = \relative c {
 % Bars 321 to 325
 	d d d g g g g g g 
 	g\< g g g g g g g g\!}
-	c,4\f_\brackM\marcato-> d-> ees->
+	c,4\f-\offset X-offset 1.5 _\brackM\marcato-> d-> ees->
 	aes,-> bes-> c->
 	c-> d-> ees->
 % Bars 326 to 330
@@ -413,7 +413,7 @@ musicViolinoIIMvtI = \relative c {
 	bes-> c-> d->
 	g,-> a-> b->
 % Bars 331 to 335
-	c8.[->\brack\pp d16 d8( c)] r4
+	c8.[->\brack\pp d16-. d8( c)] r4
 	d8.->[ ees16-. ees8( d)] r4
 	ees8.[->\< f16-. f8( ees)] r4
 	f8.->[ g16-. g8( f)] r4\!
@@ -440,19 +440,19 @@ musicViolinoIIMvtI = \relative c {
 	a2( bes4)
 	c2( d4
 	ees2 d4)
-	c4_\crescendo r8 a'8:16[ bes: a:]
-	g4 r8 g8:16[ a: g:]
+	c4_\crescendo r8 a'16 a bes bes a a %a'8:16[ bes: a:]
+	g4 r8 g16 g a a g g %g8:16[ a: g:]
 % Bars 356 to 360
-	f4\< r8 f8:16[ g: f:]
-	ees4 r8 ees8:16[ f: ees:]\!
-	d16\f <bes bes'> q q q2:16
+	f4\< r8 f16 f g g f f %f8:16[ g: f:]
+	ees4 r8 ees16 ees f f ees ees\! %ees8:16[ f: ees:]\!
+	d16\f <bes bes'> q q   q q q q   q q q q % q2:16
 	q2.:
-	<d, bes'>16 <bes' bes'> q q q2:16
+	<d, bes'>16 <bes' bes'> q q  q q q q  q q q q % q2:16
 % Bars 361 to 365
 	q2.:
 	bes8-. f-. c'[-> f,-.] d'-. f,-.
 	g-. d-. a'->[ d,-.] bes'-. d,-. 
-	bes' f' c\fz-> f-> d-. f-.
+	bes'-. f'-. c\fz-> f-> d-. f-.
 	f,-. c'-. g->\fz c-> a-. c-. 
 % Bars 366 to 370
 	ees,-. bes'-. f->\fz bes-> g-. bes-.
@@ -464,10 +464,10 @@ musicViolinoIIMvtI = \relative c {
 	c8 r r4 r8. c'16
 	<g c e>8 r r4 r8. c,16
 	c8 r r4 r8. c'16
-	g'8:16 a: a: g: g: a:
+	g'16 g a a  a a g g  g g a a %g'8:16 a: a: g: g: a:
 	g8 r r8. c,,16 c8 r
 % Bars 376 to 380
-	c''8:16 d: d: c: c: d:
+	c''16 c d d  d d c c  c c d d % c''8:16 d: d: c: c: d:
 	e8 r r8. c,,16 c8 r
 	<g' e' c'>_\diminuendo r r4 r8. c,16
 	c8 r r4 r
@@ -506,7 +506,7 @@ musicViolinoIIMvtI = \relative c {
 	d( bes) bes4~
 	bes8 r d,4\prall
 	R2
-	bes'8[(_\brackM\ppsempre d,) d( bes')]
+	bes'8[(-\offset X-offset -0.82 _\brackM\ppsempreB d,) d( bes')]
 	bes( d,) d4~
 % Bars 411 to 415
 	d8 r bes4\prall
@@ -547,7 +547,7 @@ musicViolinoIIMvtI = \relative c {
 % Bars 441 to 445
 	f:
 	f:
-	<c ees>:
+	<c ees>:_\crescendo
 	q:
 	q:
 % Bars 446 to 450
@@ -770,7 +770,7 @@ musicViolinoIIMvtI = \relative c {
 	a4:16 f16 f a a r4
 	a4:16 f16 f a a r4
 	aes!4:16 ees16 ees aes aes r4
-	<g, g'>2.:16\ff
+	\startMeasureCount <g, g'>2.:16\ff
 	q:
 % Bars 631 to 635
 	q:
@@ -779,7 +779,7 @@ musicViolinoIIMvtI = \relative c {
 	q:
 	q:
 % Bars 636 to 640
-	q:
+	q: \stopMeasureCount
 	ees''8:16 g,: ees: ees': g,: ees:
 	g: ees: g,: g': ees: g,:
 	g': ees: g,: g': ees: g,:

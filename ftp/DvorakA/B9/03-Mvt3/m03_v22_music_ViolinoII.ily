@@ -18,7 +18,7 @@ musicViolinoIIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	g8-.\p g-. g-. r
 % Bars 11 to 15
 	ees-. f-. g-. r
@@ -47,17 +47,17 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 31 to 35
 	aes[(\> e\!] f\< c'\!
 	g16) g,-. f'-. g,-. ees'8-. r
-	<< c'2->~ {s4 s_\crescendo}>>
+	<< c'2->~ {s4_\crescmarkup s}>>
 	c16 c,\<-. bes'-. c,-. aes'8\!-. r
 	<g, g'>4->\mf <g f'>->
 % Bars 36 to 40
 	ees'16( g) g-. a-. b8 r
-	<g, g'>4->_\crescmarkup <g f'>->
+	<g, g'>4->-\offset X-offset -2 _\crescmarkup <g f'>->
 	ees'16( g) fis-. a-. b8 r
 	c,16\brack\f-. g'-. d-. g-. ees-. g-. f32( ees d c)
 	f16-. c'-. g-. c-. aes-. c-. bes32( aes g f)
 % Bars 41 to 45
-	g16-.\brack\mf c-. b_\spiccato-. c-. a-. ees'-. d-. c-. 
+	g16-.\brack\mf-\offset X-offset 3 ^\spiccato c-. b-. c-. a-. ees'-. d-. c-. 
 	b-._\dimin g-. r g-. e-. c'-. des-. c-. 
 	f,\p-. bes!-. a-. bes-. g-. des'-. c-. bes-. 
 	a-.\> f-. r f d\!-. bes'-. ces-. bes-. 
@@ -101,7 +101,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 76 to 80
 	c8-. r r4
 	g8-. r r4
-	aes,8->[_\marcato d,] aes'-> ees
+	aes,8->[^\marcato d,] aes'-> ees
 	aes->[ f] g-> ees
 	c'->[ aes] c-> g
 % Bars 81 to 85
@@ -155,12 +155,12 @@ musicViolinoIIMvtIII = \relative c {
 		ees16 ees ees ees ees\< ees ees ees
 % Bars 121 to 125
 		d d d d\! des des des des
-		<< c2:32\mf { s4 s_\crescmarkup} >>
+		c2:32_\mfcresc
 		aes2:
 		\acciaccatura g8 ees'2:32
 		c:
 % Bars 126 to 130
-		<< {\acciaccatura bes8 g'2:32 } {s8\< s s\! s} >>
+		<< {\acciaccatura bes8 g'2:32 } {s8\< s s s\!} >>
 		g8->\brack\f f-> ees-> r
 		g4 bes8( a
 		g[ f]) bes(_\dimin a
@@ -196,7 +196,7 @@ musicViolinoIIMvtIII = \relative c {
 		aes
 		bes
 		<bes des>(
-		c4 d)
+		c4 d!)
 % Bars 151 to 152
 		<bes des>2
 		g'4 ees
@@ -226,7 +226,7 @@ musicViolinoIIMvtIII = \relative c {
 	g( bes g ees) r g( ees g)
 % Bars 156 to 160
 	f( aes f c) r ces( d f)
-	ees( g ees bes) r\< c( ees g)
+	ees( g ees bes) r\< c!( ees g)
 	g(-> f ees c) r f( a c)\!
 	ees( c a g) r4
 	\tuplet 3/2 8 {bes16[\p bes bes] f f f} d8 r
@@ -239,7 +239,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 166 to 170
 	ees16-> f-> ees-> f-> ees8-> r
 	\tuplet 3/2 4 {ees8->\f f-> ees->} r ees->
-	g16_\brackM\ffdim-. d'-. a-. -. d-. bes-. d-. c32( bes a g)
+	g16-\offset X-offset -1.5 _\brackM\ffdimB-. d'-. a-. -. d-. bes-. d-. c32( bes a g)
 	r8 fis16(\brack\pp g) cis( d) r8
 	r fis,16( g) d'( ees) r8
 % Bars 171 to 175
@@ -283,11 +283,11 @@ musicViolinoIIMvtIII = \relative c {
 	f( e f) f( e f)}
 	f-. r \tuplet 3/2 4 {f( e f)
 	f( e f) f( e f)}
-	d32\pp d d d  d d ees ees ees8:32 ces:
+	d32\pp d d d  d d ees ees   ees ees ees ees  ces ces ces ces % ees8:32 ces:
 % Bars 206 to 210
-	ces2:
-	aes32 aes aes aes  aes aes a a  a8:32 aes:
-	aes2:
+	ces2:32
+	aes32 aes aes aes  aes aes a a  a a a a  aes aes aes aes % a8:32 aes:
+	aes2:32
 	bes:
 	bes:_\crescmarkup
 % Bars 211 to 215
@@ -322,7 +322,7 @@ musicViolinoIIMvtIII = \relative c {
 	g4. d8
 % Bars 236 to 240
 	<g ees'>2\pp~
-	q8 r r r16 \section r 
+	q8 r r r16 \section \break r 
 	ees8\f r f r
 	ees_\dimmarkup r r8. ees16(
 	d8) r16 g(\p fis8) r16 a(
@@ -331,7 +331,7 @@ musicViolinoIIMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 246 to 250
 	g8-.\p g-. g-. r
 	ees-. f-. g-. r
@@ -360,7 +360,7 @@ musicViolinoIIMvtIII = \relative c {
 	g4.(\pp\< aes8)\!
 	aes[(\> e\!] f\< c'\!
 	g16) g,-. f'-. g,-. ees'8-. r
-	<< c'2->~ {s4 s_\crescendo}>>
+	c'2->~_\crescendo
 	c16 c,\<-. bes'-. c,-. aes'8\!-. r
 % Bars 271 to 275
 	<g, g'>4->\mf <g f'>->
@@ -370,7 +370,7 @@ musicViolinoIIMvtIII = \relative c {
 	c,16\brack\f-. g'-. d-. g-. ees-. g-. f32( ees d c)
 % Bars 276 to 280
 	f16-. c'-. g-. c-. aes-. c-. bes32( aes g f)
-	g16-.\brack\mf c-. b_\spiccato-. c-. a-. ees'-. d-. c-. 
+	g16-.\brack\mf^\spiccato c-. b-. c-. a-. ees'-. d-. c-. 
 	b-._\dimin g-. r g-. e-. c'-. des-. c-. 
 	f,\p-. bes!-. a-. bes-. g-. des'-. c-. bes-. 
 	a-.\> f-. r f d\!-. bes'-. ces-. bes-. 
@@ -414,7 +414,7 @@ musicViolinoIIMvtIII = \relative c {
 	g8-. r r4
 	c8-. r r4
 	g8-. r r4
-	aes,8->[_\marcato d,] aes'-> ees
+	aes,8->[^\marcato d,] aes'-> ees
 	aes->[ f] g-> ees
 % Bars 316 to 320
 	c'->[ aes] c-> g
@@ -437,15 +437,15 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 331 to 335
 	g g g g g g g fis g g g g  g g g fis
 	g g g g g g g fis g g g g  g g g c,
-	d d d d  d d d c <g b>4\fermata %  signo
+	d d d d  d d d c <g b>4\fermata \section %  signo
 	R2
 	aes4:32\pp aes8 r
 % Bars 336 to 340
 	R2
 	a!4:32 a8 r
 	c,16-.\p g'-. f32( ees d c) r4
-	c16-.\< g'-. f32(_\crescendo ees d c)\! r4
-	c16-. g'-. f32( ees d c) d'8. r16
+	c16-.\< g'-. f32(^\crescendo ees d c)\! r4
+	c16-. g'-. f32( ees d c) d'8.-> r16
 % Bars 341 to 345
 	d8.->\< r16 \afterGrace d4\startTrillSpan {cis16( d)\stopTrillSpan\!}
 	c!8\f[ g'->] f-> e->
@@ -495,5 +495,5 @@ musicViolinoIIMvtIII = \relative c {
 	ees8.-> ees16-. ees8-. f-.
 	g8.-> c,16\brack\p-. c8 r
 % Bar 381
-	<g ees' c'>^\pizz r r4 \markFermata \fine
+	<g ees' c'>^\pizz r r4 \markNormalSizeFermata \fine
 }

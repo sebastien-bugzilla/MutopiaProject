@@ -40,17 +40,29 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 (The Bells of Zlonice)"
+			\concat {
+				"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 " 
+				\italic { "\"" "The Bells of Zlonice" "\"" }
+				" — Violine II"
+			}
 		}
 		instrument = \markup {
 			"ViolineII"
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIIMvtI
-%			}
+			\new Voice {
+				\formatViolinoIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(violinoII) \tempiPartMvtI
 			}
@@ -72,9 +84,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIIMvtII
-%			}
+			\new Voice {
+				\formatViolinoIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(violinoII) \tempiPartMvtII
 			}
@@ -86,7 +98,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -96,9 +108,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIIMvtIII
-%			}
+			\new Voice {
+				\formatViolinoIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(violinoII) \tempiPartMvtIII
 			}
@@ -112,17 +124,25 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #3 \bold 3.
 			}
 		}
 		\layout {
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIIMvtIV
-%			}
+			\new Voice {
+				\formatViolinoIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(violinoII) \tempiPartMvtIV
 			}
@@ -134,7 +154,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 4.
 			}
