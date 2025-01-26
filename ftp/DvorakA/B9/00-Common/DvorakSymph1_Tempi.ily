@@ -85,9 +85,14 @@ tempiPartMvtI = {
 	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoInglese clarinettoI
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI
 		trombeII trombonoI trombonoII trombonoIII timpani violinoI violinoII
-		viola violoncello contrabasso) {
+		violoncello contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "ritard."
+		}
+	}
+	\tag #'(viola) {
+		\tempo \markup {
+			\normal-weight \italic "rit."
 		}
 	}
 	s4 s2.

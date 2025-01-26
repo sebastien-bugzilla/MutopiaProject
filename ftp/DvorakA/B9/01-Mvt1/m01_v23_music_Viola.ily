@@ -15,7 +15,7 @@ musicViolaMvtI = \relative c {
 	<g d' b'>4 r r2
 	<f c' aes'>4 r r2
 % Bars 6 to 10
-	<g ees' bes'>4 r r2
+	<g ees' bes'!>4 r r2
 	<d bes' f'>4 r r2
 	<b' g'>4 r r2\fermata \section
 	\time 3/4 R2.*2
@@ -26,7 +26,7 @@ musicViolaMvtI = \relative c {
 		
 		
 		
-		c,8\pp c c c c c
+		\startMeasureCount c,8\pp c c c c c
 % Bars 16 to 20
 		c c c c c c
 		c c c c c c
@@ -37,12 +37,12 @@ musicViolaMvtI = \relative c {
 		c c c c c c
 		c c c c c c
 		c c c c c c
-		c c c c c c
+		c c c c c c \stopMeasureCount
 		c4 r r
 % Bars 26 to 30
 		R2.*5
 % Bars 31 to 35
-		c8\pp c c c c c
+		\startMeasureCount c8\pp c c c c c
 		c c c c c c
 		c c c c c c
 		c c c c c c
@@ -52,19 +52,19 @@ musicViolaMvtI = \relative c {
 		c c c c c c
 		c c c c c c
 		c c c c c c
-		c c c c c c
+		c c c c c c \stopMeasureCount
 % Bars 41 to 45
 		c4 r r
 		R2.*5
 % Bars 46 to 50
 		
-		c8 c c c c c
+		\startMeasureCount c8 c c c c c
 		c c c c c c
 		c c c c c c
 		c c c c c c
 % Bars 51 to 55
 		c c c c c c
-		c c c c c c
+		c c c c c c \stopMeasureCount
 		c_\brackM\pococrescendo c c des ees ees
 		ees f ges ges ges c,
 		ees ees ees f ges ges
@@ -166,7 +166,7 @@ musicViolaMvtI = \relative c {
 		f-. ees-. ees-. des-. des-. c-. 
 		c4 r r 
 		g' r r
-		c,,2.:16\p
+		\startMeasureCount c,,2.:16\p
 		c:
 % Bars 131 to 135
 		c:_\crescendo
@@ -175,7 +175,7 @@ musicViolaMvtI = \relative c {
 		c:
 		c:
 % Bars 136 to 140
-		c:
+		c: \stopMeasureCount 
 		aes'16\f aes bes bes c c aes aes bes bes c c
 		ges ges aes aes bes bes ges ges aes aes bes bes
 		bes bes c c des des bes bes c c des des
@@ -238,7 +238,7 @@ musicViolaMvtI = \relative c {
 		r4 c8( bes aes16 g aes8)
 		r4 ees'8( d c16 b c8)
 		r4 f8( ees d16 cis d8)
-		f2.:16\f
+		\startMeasureCount f2.:16\f
 		f:
 % Bars 191 to 195
 		f:
@@ -247,7 +247,7 @@ musicViolaMvtI = \relative c {
 		f:
 		f:
 % Bars 196 to 200
-		f:
+		f: \stopMeasureCount
 		fis8.-. g16-. g4->( e8) r
 		c4-> a-> r
 		fis'8.-. g16-. g4->( e8) r
@@ -268,7 +268,7 @@ musicViolaMvtI = \relative c {
 		bes2\pp~ bes8 f32( g a bes)
 		b2~_\crescendo b8 fis32( g a b)
 		c2~ c8 g32(\< a b c)
-		cis2~ cis8\! g32( a bis cis!)
+		cis2^~ cis8\! g32( a bis cis!)
 		ees8\f r f16( ees) r8 d16( ees) r8
 % Bars 216 to 220
 		r4 d'16( c) r8 b16( c) r8
@@ -281,7 +281,7 @@ musicViolaMvtI = \relative c {
 		r4 \clef alto c16( bes) r8 a16( bes) r8
 		des,8.->\p ces16 ces8( bes) bes-. aes-.
 		ges4-^ f-^ r
-		ees'8.->_\pocoapococrescendo des16 des8( ces) ces-. bes-.
+		ees'8.->_\pocoapococresc des16 des8( ces) ces-. bes-.
 % Bars 226 to 230
 		bes4-^ aes-^ r
 		f'8.-> g16-. g8( aes) r4
@@ -331,11 +331,11 @@ musicViolaMvtI = \relative c {
 		R2.
 		<aes,, aes'>2\pp q4~
 % Bars 266 to 270
-		q\< q2\!
+		\hairpinShorten #'(0 . -1.5) q\< q2\!
 		q4 r r
 		R2.
 		q2_\crescmarkup q4~
-		q\< q2\!
+		\hairpinShorten #'(0 . -1.5) q\< q2\!
 % Bars 271 to 275
 		<g' g'>2.\f
 		<aes aes'>
@@ -362,7 +362,7 @@ musicViolaMvtI = \relative c {
 				R2.
 			}
 			\volta 2 {
-				<c, c'>16\ff q q q  q q q q  q q q q
+				\noteHeadEsw #'(-1.5 . 0) <c, c'>16\ff \revertNoteHeadEsw q q q  q q q q  q q q q
 				q q q q  q q q q  q q q q
 			}
 		}
@@ -382,9 +382,9 @@ musicViolaMvtI = \relative c {
 % Bars 301 to 305
 	bes'16\p bes g g e e e e e e e e
 	des' des bes bes g g g g g g g g
-	e'_\crescendo e cis cis b b b b b\< b b b
+	e'_\crescendo e cis cis bes bes bes bes bes\< bes bes bes
 	g' g e e\! cis cis cis cis cis cis cis cis
-	c,,4\f f8-. g-. aes4->~
+	c,,!4\f f8-. g-. aes4->~
 % Bars 306 to 310
 	aes c8-. bes-. aes-. g-. 
 	aes4-. f-._\dimmarkup bes-.
@@ -406,7 +406,7 @@ musicViolaMvtI = \relative c {
 % Bars 321 to 325
 	d d d f f f ees ees ees
 	g\< g g f f f d d d\!}
-	ees4->\f_\brackM\marcato d-> c->
+	ees4->\f-\offset X-offset 1.5 _\brackM\marcato d-> c->
 	c-> bes-> aes->
 	ees'-> d-> c->
 % Bars 326 to 330
@@ -420,7 +420,7 @@ musicViolaMvtI = \relative c {
 	c8 r aes2:16
 	c8\< r f,2:16
 	c'8 r d,2:16\!
-	<g g'>2.:\f
+	<g g'>2.:-\offset X-offset 0.5 \f
 % Bars 336 to 340
 	q:
 	q:
@@ -447,7 +447,7 @@ musicViolaMvtI = \relative c {
 	f16 f c' c d d c c d4:16
 % Bars 356 to 360
 	f,16\< f ees' ees f f ees ees f4:16
-	f,16 f g' g a a g g a4:16\!
+	\stemUp f,16 f g' g \stemNeutral a a g g a4:16\!
 	bes8.->\f c16-. c8([ bes)] bes-. c-.
 	d r r8. bes,16 bes8 r
 	d'8.-> ees16-. ees8([ d]) d-. ees-.
@@ -459,10 +459,10 @@ musicViolaMvtI = \relative c {
 	f,-. c'-. g->\fz c-> a-. c-.
 % Bars 366 to 370
 	ees-. bes-. f'->\fz bes,-> g'-. bes,-.
-	d a e'->\fz a,-> f'-. a,-.
+	d-. a-. e'->\fz a,-> f'-. a,-.
 	a-. e'-. b->\fz e-> cis-. e-.
 	f-. c!-. g'->\fz c,-> a'-. c,-. 
-	<c, c'>2.:16
+	\startMeasureCount <c, c'>2.:16
 % Bars 371 to 375
 	q:
 	q:
@@ -476,8 +476,8 @@ musicViolaMvtI = \relative c {
 	q:
 	q:
 % Bars 381 to 385
-	q:\p
-	e4-.\brack\pp e-. e-.
+	q:\p \stopMeasureCount
+	\startMeasureCount e4-.\brack\pp e-. e-.
 	e-. e-. e-.
 	e-. e-. e-.
 	e-. e-. e-.
@@ -485,34 +485,34 @@ musicViolaMvtI = \relative c {
 	e-._\pococrescendo e-. e-.
 	e-. e-. e-.
 	e-. e-. e-.
-	e-.\< e-. e-.
-	e-. e-. e-.\!
+	e-.-\tweak extra-offset #'(0 . 0.3) \< e-. e-.
+	e-. e-. e-.\! \stopMeasureCount
 % Bars 391 to 395
-	<aes bes>2.:16\pp
+	\startMeasureCount <aes bes>2.:16\pp
 	q:
 	q:
 	q:
-	q:_\crescendo
+	q:-\offset X-offset -1 _\crescendo
 % Bars 396 to 400
 	q:\<
 	q:
-	\after 2.*5/6 \! q: \section
-	\time 2/4 <c' ees>2:16\pp
+	\after 2.*5/6 \! q: \section \stopMeasureCount
+	\time 2/4 \startMeasureCount <c' ees>2:16\pp
 	q:
 % Bars 401 to 405
 	q:
 	q:
 	q:
-	q:
-	<bes d>:
+	q: \stopMeasureCount 
+	\startMeasureCount <bes d>:
 % Bars 406 to 410
 	q:
 	q:
 	q:
-	q:_\brackM\ppsempre
+	q:-\offset X-offset -1.5 _\brackM\ppsempreB
 	q:
 % Bars 411 to 415
-	q:
+	q: \stopMeasureCount
 	<f c'>:
 	q:
 	q:
@@ -536,7 +536,7 @@ musicViolaMvtI = \relative c {
 	aes:
 	aes:
 % Bars 431 to 435
-	bes4 r bes'8-._\brackM\spiccato aes-.
+	aes4 r bes'8-.-\offset X-offset -3 ^\brackM\spiccato aes-.
 	aes-. des,-. des-. ees-. ees-. f-. 
 	f-. ees-. ees-. des-. des-. aes-. 
 	aes4 r r
@@ -580,7 +580,7 @@ musicViolaMvtI = \relative c {
 % Bars 466 to 470
 	<aes! bes>:
 	q:
-	g8->\brack\f_\marcato f f-> ees ees-> aes
+	g8->\brack\f-\offset X-offset 3 _\marcato f f-> ees ees-> aes
 	aes-> g g-> f f-> bes
 	bes-> aes aes-> g g-> f
 % Bars 471 to 475
@@ -617,14 +617,14 @@ musicViolaMvtI = \relative c {
 	\after 2.*1/3 <>_\crescmarkup q:
 	q:\<
 	\after 2.*5/6 \! q: \section
-	\key a \minor <a a'>:\brack\p
+	\key a \minor \startMeasureCount <a a'>:\brack\p
 	q:
 % Bars 501 to 505
 	q:
 	q:
 	q:_\crescmarkup
 	q:
-	q:
+	q: \stopMeasureCount
 % Bars 506 to 510
 	\after 2.*5/6 \! q:\<
 	f'8:16\f g: a: f: g: a:
@@ -773,7 +773,7 @@ musicViolaMvtI = \relative c {
 	d4:16 cis16 cis d d r4 \clef alto
 	d4:16 cis16 cis d d r4
 	c!4:16 aes!16 aes c c r4
-	<c,, c'>2.:16\ff
+	\startMeasureCount <c,, c'>2.:16\ff
 	q:
 % Bars 631 to 635
 	q:
@@ -782,7 +782,7 @@ musicViolaMvtI = \relative c {
 	q:
 	q:
 % Bars 636 to 640
-	q:
+	q: \stopMeasureCount
 	c':
 	<c d>:
 	g':

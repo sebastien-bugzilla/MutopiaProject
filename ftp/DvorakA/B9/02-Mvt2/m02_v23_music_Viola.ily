@@ -24,9 +24,9 @@ musicViolaMvtII = \relative c {
 	f( c' f, c' <aes c> <c f> <aes c> <c f>)
 	<<{
 		f,( bes f bes d f d f)
-		bes( f bes f bes f d! f)
+		\beamOffset #'(-0.5 . -0.5) bes( f bes f \beamOffset #'(-0.5 . -0.5) bes f d! f)
 	} \\ {
-		d,( bes' d, f f bes f bes)
+		\beamOffset #'(0.5 . 0.5) d,( bes' d, f \beamOffset #'(0.5 . 0.5) f bes f bes)
 		d( f d f d f bes, d)
 	}>>
 	ees( bes ees bes des! bes des bes)
@@ -111,10 +111,10 @@ musicViolaMvtII = \relative c {
 	<ges ges'>4(\< <f f'>8 <ees ees'>)\!
 % Bars 81 to 85
 	<d d'>16\mf bes'8 bes16 r bes8 bes16
-	r bes8_\crescendo bes16 r\< <bes f'>8 q16\!
+	r bes8_\crescmarkup bes16 r\< <bes f'>8 q16\!
 	bes32\f-. bes-. g-. g-. ees-. ees-. c'-. c-. bes-. bes-. ees-. ees-. c-. c-. g-. aes-. 
 	bes-. bes-. g-. g-. ees-. ees-. c'-. c-. bes-. bes-. ees-. ees-. c-. c-. g-. aes-. 
-	bes-. a-. bes-. c-. d-. c-. d-. bes-. ees-. f-. g-. aes-. bes-. c-. bes-. aes-.  % des => d according to audio recording
+	bes-. a-. bes-. c-. d-. c-. d-. bes-. ees-. f-. g-. aes!-. bes-. c-. bes-. aes-.  % des => d according to audio recording
 % Bars 86 to 90
 	g-. ees-. f-. g-. aes-. bes-. c-. d-. ees-. d-. c-. bes-. c-. bes-. aes-. g-. 
 	f-. g-. f-. ees-. d-. c-. d-. bes-. ees-. g-. c( bes) f-. aes-. ees'( d) \clef treble
@@ -146,18 +146,18 @@ musicViolaMvtII = \relative c {
 	ees16( c' aes f') des8( c)
 	<bes des>4(\< <des f>16 <c ees> <bes des> <aes c>)\!
 % Bars 111 to 115
-	ces8\brack\pp r r4
+	\once \stemUp ces8\brack\pp r r4
 	R2*5
 % Bars 116 to 120
 	
-	c2\pp
+	c!2\pp
 	g16( c bes c) a( c f, c')
 	e,( c' b c) c,( c' b c)
 	bes!_\crescendo r \afterGrace bes8[(\startTrillSpan {a16 bes\stopTrillSpan} ges'16)] r \afterGrace ges8[(\startTrillSpan {f16 ges\stopTrillSpan}
 % Bars 121 to 125
 	des16]) r \afterGrace des8[(\startTrillSpan {c16 des\stopTrillSpan} ees16]) r \afterGrace ees8\startTrillSpan {d16( ees)\stopTrillSpan}
 	r16 <ees, des'!>8 q16 r q8 q16
-	<<{c'16( ees aes g) f( ees des c)} \\ {c(\< ees c ees\! aes, c f, aes)}>>
+	<<{c'16( ees aes g) f( ees des c)} \\ {\shape #'((0 . 0)(0 . 0.3)(0 . 0.3)(0 . 0)) Slur \beamOffset #'(0.3 . 0.3) c(\< ees c ees\! \beamOffset #'(0.3 . 0.3) aes, c f, aes)}>>
 	\tuplet 6/4 4 {bes16-._\dimin c-. des-. c-. des-. f-. a,-. bes-. des-. bes-. c-. des-.}
 	r4 \tuplet 3/2 4 {des16( aes f)} r8
 % Bars 126 to 130
@@ -172,10 +172,10 @@ musicViolaMvtII = \relative c {
 	}>>
 	r16 <ges bes>8 q16 r q8 q16
 % Bars 131 to 135
-	r <b dis>8 <a e'>16 r <gis dis'>8 <dis' fis>16
+	r <b dis>8 <a e'>16 r <gis dis'!>8 <dis' fis>16
 	r <a e'>8 <cis e>16 r q8 q16
 	r <a fis'>8 <c g'>16 r <b fis'!>8 <b dis>16
-	<c, e>4->\brack\p <d f!>->
+	<c,! e>4->\brack\p <d f!>->
 	<c e>8[_\crescendo q <d f> q]
 % Bars 136 to 140
 	<c e>16 q q q <d f> q q q
@@ -198,7 +198,7 @@ musicViolaMvtII = \relative c {
 % Bars 151 to 155
 	ees16-. des8-> c-> bes-> aes16-.
 	c16-. des-. c-. bes-. aes( aes'8) g16
-	c,\<-. bes-. aes-. des~ des c-. b-. d-.\!
+	c,\<-. bes-. aes-. des~ \stemUp des c-. b-. d-.\! \stemNeutral
 	r e8_\ppsempre e16 r ees8 ees16
 	r d8 d16 r des8 des16
 % Bars 156 to 160
@@ -239,7 +239,7 @@ musicViolaMvtII = \relative c {
 	r16 e,8.\pp r16 aes8.
 % Bars 186 to 192
 	<<{
-		aes4 ges~
+		aes!4 ges~
 		ges2
 	} \\ {
 		des2\ppp

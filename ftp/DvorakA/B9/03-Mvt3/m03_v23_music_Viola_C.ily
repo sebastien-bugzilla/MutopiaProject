@@ -47,7 +47,7 @@ musicViolaMvtIII = \relative c {
 % Bars 31 to 35
 	aes16-. c,-. bes'!-. c,-. c'8 r
 	g'2->
-	g8-. e\prall f-._\crescendo r
+	aes8-. e\prall f-._\crescendo r
 	<< c'2-> {s8\< s s s\!}>>
 	c4\mf( b8) f-.
 % Bars 36 to 40
@@ -375,7 +375,7 @@ musicViolaMvtIII = \relative c {
 	ees\pp b\prall( c) r
 	aes16-. c,-. bes'!-. c,-. c'8 r
 	g'2->
-	g8-. e\prall f-._\crescendo r
+	aes8-. e\prall f-._\crescendo r
 	<< c'2-> {s8\< s s s\!}>>
 % Bars 271 to 275
 	c4\mf( b8) f-.

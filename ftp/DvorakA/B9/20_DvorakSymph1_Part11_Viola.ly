@@ -40,17 +40,29 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 (The Bells of Zlonice)"
+			\concat {
+				"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 " 
+				\italic { "\"" "The Bells of Zlonice" "\"" }
+				" — Viola"
+			}
 		}
 		instrument = \markup {
 			"Viola"
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtI
-%			}
+			\new Voice {
+				\formatViolaMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtI
 			}
@@ -72,9 +84,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtII
-%			}
+			\new Voice {
+				\formatViolaMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtII
 			}
@@ -86,7 +98,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -94,11 +106,19 @@
 		\layout {
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIII
-%			}
+			\new Voice {
+				\formatViolaMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIII
 			}
@@ -110,7 +130,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -120,9 +140,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIV
-%			}
+			\new Voice {
+				\formatViolaMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIV
 			}
@@ -136,7 +156,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.5 \bold 4.
 			}
 		}
 		\layout {
