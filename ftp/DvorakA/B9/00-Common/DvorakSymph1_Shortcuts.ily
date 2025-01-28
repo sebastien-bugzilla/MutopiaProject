@@ -53,6 +53,7 @@ legato = \markup {\italic {legato}}
 crescendo = \markup {\italic {crescendo}}
 diminuendo = \markup {\italic {diminuendo}}
 pocoapococrescendo = \markup {\italic {"poco a poco crescendo"}}
+pocoapoco_crescendo = \markup {\italic {\column {\lower #1.5 "[poco a poco" "    crescendo]"}}}
 dimmarkup = \markup {\italic {dim.}}
 dimin = \markup {\italic {dimin.}}
 dolce = \markup {\italic {dolce}}

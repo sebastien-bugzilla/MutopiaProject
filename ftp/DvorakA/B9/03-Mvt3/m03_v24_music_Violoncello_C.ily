@@ -67,7 +67,7 @@ musicVioloncelloMvtIII = \relative c {
 	aes16-. g-. f-. e-. f8-. g-. 
 	aes-. a-. bes-. c-. 
 	des16-. c-. bes-. a-. bes8-. c-. 
-	des8 c-. bes-. b-.
+	des8-. c-. bes-. b-.
 % Bars 51 to 55
 	c\<[ c'(] d) d,(\!
 	ees)[\< ees']( f) f,(\!
@@ -84,7 +84,7 @@ musicVioloncelloMvtIII = \relative c {
 	ees4-> d->
 	c8 c g16-. g'-. fis-. g-. 
 	ees4-> d->
-	c8-> c-> g16-. g'-. fis-. g-. 
+	c8-. c-. g16-. g'-. fis-. g-. 
 	c,8-. c-. c-. r
 % Bars 66 to 70
 	f,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
@@ -379,7 +379,7 @@ musicVioloncelloMvtIII = \relative c {
 	aes-. a-. bes-. c-. 
 	des16-. c-. bes-. a-. bes8-. c-. 
 % Bars 286 to 290
-	des8 c-. bes-. b-.
+	des8-. c-. bes-. b-.
 	c\<[ c'(] d) d,(\!
 	ees)[\< ees']( f) f,(\!
 	\dynEO #'(-0.3 . 2) ges32)\brack\f ges, ges ges  ges ges ges ges ges4:32
@@ -395,13 +395,13 @@ musicVioloncelloMvtIII = \relative c {
 	ees4-> d->
 	c8 c g16-. g'-. fis-. g-. 
 	ees4-> d->
-	c8-> c-> g16-. g'-. fis-. g-. 
+	c8-. c-. g16-. g'-. fis-. g-. 
 % Bars 301 to 305
 	c,8-. c-. c-. r
 	f,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
 	c8->_\marcato aes'-> d,-> f->
 	ees-> g-> c,4->  % e => ees based on audio recording
-	f,-._\marcato g-.
+	f,->_\marcato g->
 % Bars 306 to 310
 	aes-> bes->
 	ees bes

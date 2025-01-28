@@ -22,6 +22,7 @@
 		\override Arpeggio.padding = #0.25
 		\override TupletNumber.avoid-slur = #'ignore
 		\override Beam.damping = #3
+%		\override MultiMeasureRestNumber.color = #red
 		
 %		\override NoteHead.transparent = ##t
 %		\override Stem.transparent = ##t

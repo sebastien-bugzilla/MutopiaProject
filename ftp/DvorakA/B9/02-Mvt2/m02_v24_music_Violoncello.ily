@@ -10,7 +10,7 @@ musicVioloncelloMvtII = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	aes8\f^\pizz r aes\brack\p r\fermata
-	des\f r des\brack\p r\fermata
+	\stemUp des\f r des\brack\p r\fermata \stemNeutral
 	aes des\fermata bes g\fermata
 	ees r ees' r\fermata
 	c\brack\f r c'\brack\p r\fermata
@@ -19,22 +19,22 @@ musicVioloncelloMvtII = \relative c {
 	c f,\fermata des bes\fermata
 	g r g r\fermata
 	<<{
-		g'16(^\brackM\arco c g c g c g c)
+		g'16(-\offset X-offset -5 ^\brackM\arco c g c g c g c)
 		g( c g c f, bes f bes)
 % Bars 11 to 15
 		f( c f c f aes f aes)
 		bes(f bes f f d! f d)
-		f( bes f bes f bes f bes)
+		\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur f( bes f bes f bes f bes)
 		ees,( ges ees ges des! ges des ges)
-		ges( a ges a f ees c f)
+		\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur ges( a ges a f ees c f)
 % Bars 16
-		des( f des f fes aes! fes aes)
+		\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur des( f des f fes aes! fes aes)
 	} \\ {
-		e16(\pp c e c e c e c)
+		\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e16(-\offset X-offset -2.5 \pp c e c e c e c)
 		e( c e c des bes des bes)
 % Bars 11 to 15
-		aes( c aes c f, c' f, c')
-		d( f d f aes, f' aes, f')
+		\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur aes( c aes c f, c' f, c')
+		\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur d( f d f aes, f' aes, f')
 		aes,( f' aes, f' g, d' g, d')
 		ges,( ees' ges, ees' bes des! bes des)
 		a( c a c a c a ees')
@@ -43,14 +43,14 @@ musicVioloncelloMvtII = \relative c {
 	}>>
 	ees( g c a) bes8.( ees16)
 	des2(\<
-	bes4\! << ees,) {s8\> s\!}>>
+	bes4\! << ees,) {s8\> s}>>
 	ees4.(\pp des8)
 % Bars 21 to 25
 	c4( f)
 	c( f,)
 	c'8. c16_\crescmarkup f8( f,)
 	des'4(~\< des16 c bes aes)\!
-	<< g2\pp~ {s8\< s s s\!}>>
+	<< g2\pp~ {\hairpinShorten #'(-0.3 . -3) s8\< s s s\!}>>
 % Bars 26 to 30
 	g8[ c(\> ees c)]\!
 	g2~\<
@@ -79,7 +79,7 @@ musicVioloncelloMvtII = \relative c {
 	g4\> c\!
 	f,2\pp
 	c'4( f)
-	<< c'2~ {s4 s_\crescmarkup }>>
+	<< c'2~ {s4_\crescmarkup s }>>
 	c8 bes( aes g16 f)
 % Bars 51 to 55
 	e4. f8
@@ -101,7 +101,7 @@ musicVioloncelloMvtII = \relative c {
 	r aes,8( aes'16) r g,8( g'16)
 % Bars 66 to 70
 	r ges,8( ges'16) r bes,8( bes'16)
-	r ees,,8( ees'16) r_\crescmarkup ees,8( ees'16)
+	r ees,,8( ees'16) r^\crescmarkup ees,8( ees'16)
 	r des,8( des'16) r f,8(\< f'16)\!
 	ges,2\ppp~
 	ges~
@@ -109,18 +109,18 @@ musicVioloncelloMvtII = \relative c {
 	ges
 	des'
 	<<{
-		ees16(^\divisi ges ees ges des ges des ges)
+		ees16(-\offset X-offset -3 ^\div ges ees ges des ges des ges)
 		des( ges bes ges) f( aes des des,)~
 		des f( ces') aes,~ aes des( ges) ges,!(
 		\oneVoice f8)\< aes' ges8[( bes16. aes32])\!
 	} \\ {
 		ees4(\p bes)
 		des( ces8 bes)
-		aes4( ges)
+		\shape #'((0 . 0)(0 . -1.3)(10 . -1.3)(12.2 . -0.2)) Slur aes4( ges)
 		s2
 	}>>
 % Bars 77 to 80
-	aes'4(\f << a) {s8\> s\!}>>
+	\hairpinShorten #'(-0.3 . -1) aes'4(\f\> << a) {s8 s\!}>>
 	bes8( ees16 des c8 bes)
 	aes( des,) c( ges')
 	f16\< des8 des16 des des8 ces16\!
@@ -140,7 +140,7 @@ musicVioloncelloMvtII = \relative c {
 	ees8(\< \tuplet 3/2 4 {aes16 c ees} des8 c)\!
 	bes4(\< aes8\> f\!)
 	ees16 r ees,32[ ees' ees, ees'] ees,16 r ees32[ ees' ees, ees']
-	bes16 r bes32[ bes' bes, bes'] bes,16 r bes32[ bes' bes, bes']
+	bes16 r bes32[ bes' bes, bes'] bes,16 r \beamOffset #'(0.5 . 0.5) bes32[ bes' bes, bes']
 	g,16 r g32[ g' g, g'] g,16 r g32[ g' g, g']
 % Bars 96 to 100
 	d16 r d,32[ d' d, d'] d,16 r d32[ d' d, d']
@@ -175,7 +175,7 @@ musicVioloncelloMvtII = \relative c {
 		des,( des'8) des16-. ees,!( ees'8) ees16-.
 		f,( f'8) f16-. ges,( ges'8) ges16-.
 	} \\ {
-		des,4(_\crescendo ees)
+		des,4(^\crescendo ees)
 		f( ges)
 	}>>
 % Bars 122 to 125
@@ -220,7 +220,7 @@ musicVioloncelloMvtII = \relative c {
 	ges( f)
 	ees( des)
 	c( bes)
-	ges'2_\brackM\pocoapococrescendo
+	ges'2_\pocoapoco_crescendo
 	<< a {s4 s\<}>>
 % Bars 161 to 165
 	c4( ees)\!
@@ -232,13 +232,13 @@ musicVioloncelloMvtII = \relative c {
 	ais( b d g) ais,( b) r b-.
 	c->\< c'-> b-> b,->\! a-> a'-> g-> g,-> \section
 	\key c \major b\<-> b'-> a-> a,-> g-> g'-> fis-> fis,->\!
-	\acciaccatura fis8 g16\f g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
+	\startMeasureCount \acciaccatura fis8 \tempoXoffset #-2.5 g16\f g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
 	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
 % Bars 171 to 175
 	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
 	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
 	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
-	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. \section
+	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. \section \stopMeasureCount
 	\key aes \major g16 bes8 g16 g bes8 g16
 % Bars 176 to 180
 	g16-> bes-> bes-> g-> bes_\dimin r aes r
@@ -265,7 +265,7 @@ musicVioloncelloMvtII = \relative c {
 		\oneVoice e16)\brack\pp r r16. e32 e16 r r16. e32
 	} \\ {
 % Bars 186 to 190
-		ges,2\ppp
+		ges,2-\offset X-offset 2 \ppp
 		ces
 		ees
 		f,\f

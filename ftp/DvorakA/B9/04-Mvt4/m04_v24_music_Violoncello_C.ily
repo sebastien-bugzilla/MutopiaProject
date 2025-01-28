@@ -438,7 +438,7 @@ musicVioloncelloMvtIV = \relative c {
 	fis4-> fis,->
 	f!4..-> f'!16-.
 	f4.. f,16
-	f4.. f'16-.
+	f4..-> f'16-.
 	f4-> f,->
 % Bars 361 to 365
 	e!4..-> e'16-.
@@ -753,7 +753,7 @@ musicVioloncelloMvtIV = \relative c {
 	bes4 c8. f,16
 % Bars 626 to 630
 	bes4 c8. f16
-	d4( c8.) b!16
+	d4( c8.) b!16-.
 	b4( c8.) b16-.
 	b8 g4 d8~
 	d b4 g8
@@ -966,9 +966,9 @@ musicVioloncelloMvtIV = \relative c {
 	g,2 a'4.-> g8 g2
 	g2. c,4-> c-> d->
 % Bars 796 to 800
-	g,2 a'4. g8 g2
+	g,2 a'4.-> g8 g2
 	c4 b a4. e'8 e2->~
-	e4 d c4. g'8 g2~
+	e4 d c4. g'8 g2->~
 	g4 fis-> g8 g g c,  c c d d
 	d-> d d g,  g g a a  a-> a a d,
 % Bars 801 to 805

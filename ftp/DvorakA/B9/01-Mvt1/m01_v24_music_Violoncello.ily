@@ -83,7 +83,7 @@ musicVioloncelloMvtI = \relative c {
 		aes-. aes-. aes-. bes-. c-. c-. 
 % Bars 61 to 65
 		c16_\crescmarkup c des des ees ees des des c c bes bes
-		bes bes c c des des c c bes bes aes aes
+		bes bes c c des des c c bes bes aes aes  
 		aes\< aes bes bes c c bes bes aes aes ges ges
 		ges ges aes aes bes bes aes aes aes, aes aes aes\!
 		g8\f-. c-. c-. g-. c-. d-. 
@@ -163,7 +163,7 @@ musicVioloncelloMvtI = \relative c {
 		d-. c-. c-. bes-. bes-. aes-. 
 		aes4 r r
 		g r r
-		<g, g'>2\p^\div( <c c'>4)
+		<g, g'>2\p-\offset X-offset #-3 ^\div( <c c'>4)
 		<bes bes'>2( <aes aes'>4)
 % Bars 131 to 135
 		<g g'>2(_\crescendo <c c'>4)
@@ -173,7 +173,7 @@ musicVioloncelloMvtI = \relative c {
 		<g g'>2( <ees' ees'>4)
 % Bars 136 to 140
 		<d d'>2( <c c'>4)
-		aes->\brack\f bes'(-> aes8) r 
+		\startMeasureCount aes->\brack\f bes'(-> aes8) r 
 		aes, r bes'4->( aes8) r
 		aes, r bes'4(-> aes8) r
 		aes, r bes'4(-> aes8) r
@@ -181,8 +181,8 @@ musicVioloncelloMvtI = \relative c {
 		aes, r bes'4(-> aes8) r
 		aes, r bes'4(-> aes8) r
 		aes, r bes'4(-> aes8) r
-		aes, r bes'4(-> aes8) r
-		g8 r fis,4->( g8) r
+		aes, r bes'4(-> aes8) r \stopMeasureCount
+		\startMeasureCount g8 r fis,4->( g8) r
 % Bars 146 to 150
 		g'8 r fis,4->( g8) r
 		g'8 r fis,4->( g8) r
@@ -190,7 +190,7 @@ musicVioloncelloMvtI = \relative c {
 		g'8 r fis,4->( g8) r
 		g'8 r fis,4->( g8) r
 % Bars 151 to 155
-		g'8 r fis,4->( g8) r
+		g'8 r fis,4->( g8) r \stopMeasureCount
 		g'8-. r fis4( g8)[ r16 ees'-.]
 		d8-.\ff d-. fis-. d-. d4->
 		b8-. b-. d-. b-. b4->
@@ -263,7 +263,7 @@ musicVioloncelloMvtI = \relative c {
 		r r r16 f\> g a\!
 % Bars 211 to 215
 		bes2\pp~ bes8 f32( g a bes)
-		b2_\crescendo~ b8 fis32( g a b)
+		b2_\crescmarkup~ b8 fis32( g a b)
 		c2~ c8 g32(\< a b c)
 		cis2\!~ cis8 g32( a bis cis!)
 		ees4(\f g c!)
@@ -328,11 +328,11 @@ musicVioloncelloMvtI = \relative c {
 		R2.
 		des2\pp aes4~
 % Bars 266 to 270
-		aes\< des2\!
+		\hairpinShorten #'(0 . -1.5) aes\< des2\!
 		aes4 r r
 		R2.
 		des2_\crescmarkup aes4~
-		aes\< des2\!
+		\hairpinShorten #'(0 . -1.5) aes\< des2\!
 % Bars 271 to 275
 		ees2.\f
 		aes
@@ -350,7 +350,7 @@ musicVioloncelloMvtI = \relative c {
 		g8.->[ a16-. a8( b)] r4
 		R2.*2
 		
-		d16\pp d bes bes d, d  d' d bes bes d, d
+		d16\pp d bes! bes d, d  d' d bes bes d, d
 % Bars 286 to 290
 		bes' bes d, d bes bes bes' bes g g f f
 		\alternative {
@@ -413,7 +413,7 @@ musicVioloncelloMvtI = \relative c {
 	d'-> c-> bes->
 	b-> a-> g->
 % Bars 331 to 335
-	aes4.\pp c,8[( aes') r16 g-.]
+	aes!4.\pp c,8[( aes') r16 g-.]
 	f4. aes,8[( f') r16 ees-.]
 	d4.\< f,8[( d') r16 c-.]
 	bes4. d,8[( bes') r16 aes-.]\!
@@ -431,7 +431,7 @@ musicVioloncelloMvtI = \relative c {
 	g2.
 	g,8. g16 g2
 % Bars 346 to 350
-	a2.\brack\p_\dolce(
+	a2.\brack\p-\offset X-offset 2.8 _\dolce(
 	bes)
 	c(\<
 	d)\!
@@ -440,7 +440,7 @@ musicVioloncelloMvtI = \relative c {
 	d8.->[ ees16-. ees8( d)] d4
 	c8.->[ d16-. d8( c)] c4
 	bes8.[-> c16-. c8( bes)] bes4
-	f'2.:16_\crescendo
+	f'2.:16_\crescmarkup
 	f:
 % Bars 356 to 360
 	f:\<
@@ -469,11 +469,11 @@ musicVioloncelloMvtI = \relative c {
 % Bars 376 to 380
 	d->\fz
 	c->\fz
-	bes'->\fz_\diminuendo
+	bes'->-\offset X-offset -1 _\fzdim
 	a->\fz
 	g->\fz
 % Bars 381 to 385
-	\after 2.*1/3 <>\p f->\fz
+	\after 2.*1/3 <>-\offset X-offset 1 \p f->\fz
 	g4-.\brack\pp g,-. g-.
 	g-. g-. g-.
 	g-. g-. g-.
@@ -506,7 +506,7 @@ musicVioloncelloMvtI = \relative c {
 	f-. d4->~
 	d8[ bes-. f-.] r
 	R2
-	g'4-.\pp\brackM\sempre d-.
+	g'4-.\pp-\offset X-offset 2.7 \brackM\sempre d-.
 	bes-. g~->
 % Bars 411 to 415
 	g8[ d-. bes-.] r
@@ -528,13 +528,13 @@ musicVioloncelloMvtI = \relative c {
 	g->
 % Bars 426 to 430
 	bes->
-	f8_\pp_\brackM\marc-. des'-. aes-. f'-. des( aes')
+	f8_\pp-\offset X-offset 2.7 _\brackM\marc-. des'-. aes-. f'-. des( aes')
 	f,-. des'-. aes-. f'-. des( aes')
 	f,-. des'-. aes-. f'-. des( aes')
 	f,-. des'-. aes-. f'-. des( aes')
 % Bars 431 to 435
 	f,4 r r
-	r r bes'8-._\brackM\spiccato aes-.
+	r r bes'8-.-\offset X-offset -3 _\brackM\spiccato aes-.
 	aes-. des,-. des-. ees-. ees-. f-. 
 	f-. ees-. ees-. des-. des-. aes-. 
 	g-. d'!-. b-. g'-. d( b')
@@ -547,7 +547,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 441 to 445
 	c-. b-. b-. g-. g-. aes-. 
 	aes-. g-. g-. d-. d-. g,-. 
-	g2(_\crescendo c4
+	g2(-\offset X-offset -1 _\crescendo c4
 	ees2\< g4)
 	c2( d4
 % Bars 446 to 450
@@ -587,7 +587,7 @@ musicVioloncelloMvtI = \relative c {
 	bes-> aes aes-> g g-> f
 	f-> ees ees-> des des-> ees \section
 % Bars 476 to 480
-	\key e \major e4 r r
+	\key e \major e!4 r r
 	cis'-> r r
 	e-> r r
 	b-> r r
@@ -611,7 +611,7 @@ musicVioloncelloMvtI = \relative c {
 	bes r r\fermata
 	f2.:16\pp
 % Bars 496 to 500
-	\after 2.*2/3 <>_\crescmarkup f:
+	\after 2.*2/3 <>-\offset X-offset -1 _\crescmarkup f:
 	f:\<
 	\after 2.*5/6 \! f: \section
 	\key a \minor e2 a'4(\p
@@ -624,7 +624,7 @@ musicVioloncelloMvtI = \relative c {
 	e2) c'4(\<
 % Bars 506 to 510
 	b2) a4\!
-	f8-.\f r g,4->( f8) r
+	\startMeasureCount f8-.\f r g,4->( f8) r
 	f' r g,4->( f8) r
 	f' r g,4->( f8) r
 	f' r g,4->( f8) r
@@ -632,7 +632,7 @@ musicVioloncelloMvtI = \relative c {
 	f' r g,4->( f8) r
 	f' r g,4->( f8) r
 	f' r g,4->( f8) r
-	f' r g,4->( f8) r
+	f' r g,4->( f8) r \stopMeasureCount
 	e-.\ff[ e']-. dis( e) e,(-. e')-. 
 % Bars 516 to 520
 	e-.[ e']-. f( e) e\noBeam r
@@ -645,7 +645,7 @@ musicVioloncelloMvtI = \relative c {
 	e2 \tuplet 3/2 4 {e8( d c)}
 	b-. b-. dis( b) b4->
 	gis8-. gis-. b( gis) gis4->
-	a8-. a-. c( c) a4-.
+	a8-. a-. c( a) a4-.
 % Bars 526 to 530
 	f8-. f-. a( f) f4->
 	e8( c') e-. e,-. e'-. e,-.
@@ -677,7 +677,7 @@ musicVioloncelloMvtI = \relative c {
 	g r r
 	<b d>(^\arco <a c> <g b>)
 % Bars 551 to 555
-	r c8(\p e, g16_\pocoapococresc f e8)
+	r c8(_\ppocoapococresc e, g16 f e8)
 	r4 c'8( f, a16 g f8)
 	r4 g8( d f16 e d8)
 	r4 d8( a b16 c d8)
@@ -739,19 +739,19 @@ musicVioloncelloMvtI = \relative c {
 % Bars 601 to 605
 	f->~
 	f
-	f,4\ff f, r8. f'16
+	\startMeasureCount f,4\ff f, r8. f'16
 	f4 f, r8. f'16
 	f4 f, r8. f'16
 % Bars 606 to 610
 	f4 f, r8. f'16
 	f4 f, r8. f'16
-	f4 f, r8. f'16
+	f4 f, r8. f'16 \stopMeasureCount
 	ees'8-. d-. c2->
 	c8-. bes-. a2->
 % Bars 611 to 615
 	a8-. g-. fis2->
 	ges8-. f!-. ees2->
-	c8\brack\ff c g c g4
+	\startMeasureCount c8\brack\ff c g c g4
 	c8 c g c g4 
 	c8 c g c g4 
 % Bars 616 to 620
@@ -759,7 +759,7 @@ musicVioloncelloMvtI = \relative c {
 	c8 c g c g4 
 	c8 c g c g4 
 	c8 c g c g4 
-	c8 c g c g4 
+	c8 c g c g4 \stopMeasureCount
 % Bars 621 to 625
 	e8 a a cis cis e
 	e a a cis cis e
@@ -770,7 +770,7 @@ musicVioloncelloMvtI = \relative c {
 	a f a, a' f a,
 	f' a, f f' a, f
 	fis2.->
-	g8\ff g g g g g
+	\startMeasureCount g8\ff g g g g g
 	g g g g g g
 % Bars 631 to 635
 	g g g g g g
@@ -779,7 +779,7 @@ musicVioloncelloMvtI = \relative c {
 	g g g g g g
 	g g g g g g
 % Bars 636 to 640
-	g g g g g g
+	g g g g g g \stopMeasureCount
 	g4( c ees)
 	c2( g'4)
 	ees( g c)

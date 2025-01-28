@@ -47,7 +47,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 31 to 35
 	f-. g-. aes-. r
 	ees16-. g-. d-. g-. c,-. g'-. f32( ees d c)
-	f8-. g-. aes-._\crescendo r
+	f8-. g-. aes-._\crescmarkup r
 	aes16\<-. c-. g-. c-. f,-. c'-. bes32( aes g f)\!
 	ees4->\mf d->
 % Bars 36 to 40
@@ -67,7 +67,7 @@ musicVioloncelloMvtIII = \relative c {
 	aes16-. g-. f-. e-. f8-. g-. 
 	aes-. a-. bes-. c-. 
 	des16-. c-. bes-. a-. bes8-. c-. 
-	des8 c-. bes-. b-.
+	des8-. c-. bes-. b-.
 % Bars 51 to 55
 	c\<[ c'(] d) d,(\!
 	ees)[\< ees']( f) f,(\!
@@ -75,7 +75,7 @@ musicVioloncelloMvtIII = \relative c {
 	ges2:
 	fis:_\dimin
 % Bars 56 to 60
-	g:
+	g!:
 	c8->\brack\f c-> c-> r
 	c16-. g'-. d-. g-. ees-. g-. f32( ees d c)
 	f8-> f-> f-> r
@@ -83,14 +83,14 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 61 to 65
 	ees4-> d->
 	c8 c g16-. g'-. fis-. g-. 
-	ees4-> d->
+	ees4-. d-.
 	c8-> c-> g16-. g'-. fis-. g-. 
 	c,8-. c-. c-. r
 % Bars 66 to 70
 	f,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
-	c8->_\marcato aes'-> d,-> f->
+	c8->^\marcato aes'-> d,-> f->
 	ees-> g-> c,4->  % e => ees based on audio recording
-	f,->_\marcato g->
+	f,->^\marcato g->
 	aes-> bes->
 % Bars 71 to 75
 	ees bes
@@ -99,9 +99,9 @@ musicVioloncelloMvtIII = \relative c {
 	g\brack\fz r r4
 	R2
 % Bars 76 to 80
-	r8 f'8.->^\brackM\arco\noBeam d8-> bes16->~
+	r8 f'8.->-\offset X-offset -6.3 ^\brackM\arco\noBeam d8-> bes16->~
 	bes g8-> ees-> c-> a16->
-	bes8->_\marcato[ f'->] c-> f->
+	bes8->^\marcato[ f'->] c-> f->
 	d->[ aes'->] ees-> aes->
 	f->[ c'->] g-> c->
 % Bars 81 to 85
@@ -140,9 +140,9 @@ musicVioloncelloMvtIII = \relative c {
 		c( bes aes g f g aes bes)
 		bes( ees,) r8 d'16(\< d,) r8
 		d'16( g,) r8 f'16( f,) r8\!
-		bes\mf_\crescendo r c8.^\pizz d16
+		bes_\mfcrescendo r c8.^\pizz d16
 % Bars 111 to 115
-		d8 r ees8. f16
+		\once \stemUp d8 r ees8. f16
 		f8 r g8. a16
 		bes8\f bes, r4
 		ees8\brack\pp r d r
@@ -199,13 +199,13 @@ musicVioloncelloMvtIII = \relative c {
 		g4.(^\> f8)\!
 % Bars 151 to 155
 		ees8.( f16) ees4
-		bes'4.( aes8)
-		g4(^\brackM\tutti f)
+		bes'4.(-\tweak extra-offset #'(9 . -1.3) ^\brackM\tutti aes8)
+		g4( f)
 		ees( f)
 		bes,( c)
 % Bars 156 to 158
 		aes4.( f8)
-		g( bes ees g)
+		\beamOffset #'(-2.5 . -0.5) \shape #'((0 . 0)(0 . -0.4)(0 . -0.4)(0 . 0)) Slur g( bes ees g)
 		f r r4
 	} \\ {
 		d,,2\pp(
@@ -213,10 +213,10 @@ musicVioloncelloMvtIII = \relative c {
 		ees)
 		f
 		g8( aes bes4)
-		g2( 
+		\shape #'((0 . 0.1)(0 . 0.6)(0 . 0.6)(0 . 0.1)) Slur g2( 
 		aes4 bes)
 % Bars 151 to 155
-		g\< f
+		g f\<
 		ees aes8 c\!
 		ees16\brack\mf ees ees ees aes, aes aes aes
 		c c c c d, d d d
@@ -227,16 +227,16 @@ musicVioloncelloMvtIII = \relative c {
 		a a a a f f f f\!
 	}>>
 	bes8 r r4
-	r \tuplet 3/2 8 {d16[\brack\p d d] bes bes bes}
+	r \tuplet 3/2 8 {d16[-\offset X-offset -1.5 \brack\p d d] bes bes bes}
 % Bars 161 to 165
 	c' r r8 \tuplet 3/2 8 {ees,16[ ees ees] bes bes bes}
 	d' r r8 \tuplet 3/2 8 {f,16[_\crescendo f f] bes, bes bes}
-	ees'\< r r8 \tuplet 3/2 8 {g,16[ g g] bes, bes bes\!}
+	\hairpinShorten #'(0 . 1) ees'\< r r8 \tuplet 3/2 8 {g,16[ g g] bes, bes bes\!}
 	g16->\brack\mf g-> g-> g-> g8 r
 	\tuplet 3/2 4 {aes8->_\brackM\crescmarkup aes-> aes->} r bes-.
 % Bars 166 to 170
 	g'16-> g-> g-> g-> f8-> r
-	\tuplet 3/2 4 {ees\brack\f-> ees-> ees->} r aes16 aes,
+	\tuplet 3/2 4 {ees-\offset X-offset -1.5 \brack\f-> ees-> ees->} r aes16 aes,
 	bes\brack\ff r r8 r4
 	d'8^\pizz\brack\p r r4
 	d8\brack\pp r c r
@@ -253,7 +253,7 @@ musicVioloncelloMvtIII = \relative c {
 	<f aes>8 r <a c> r
 	bes r ees r
 % Bars 181 to 185
-	g2^\arco_\mfespressivo~
+	g2-\offset X-offset 1 ^\arco_\mfespressivo~
 	g~
 	g4 ees(
 	d2)
@@ -320,7 +320,7 @@ musicVioloncelloMvtIII = \relative c {
 	ees4.) bes8(
 % Bars 236 to 240
 	<ees, ees'>2\pp)~
-	q8 r r r16 \section r
+	q8 r r r16 \section \break r
 	c'8->\f[ g'] d-> g->
 	ees->_\dimmarkup g-> f16( ees d c
 	bes8-.)[ c-.]\p d-. d-.
@@ -358,7 +358,7 @@ musicVioloncelloMvtIII = \relative c {
 	c,-.\pp d-. ees-. r
 	f-. g-. aes-. r
 	ees16-. g-. d-. g-. c,-. g'-. f32( ees d c)
-	f8-. g-. aes-._\crescendo r
+	f8-. g-. aes-._\crescmarkup r
 	aes16\<-. c-. g-. c-. f,-. c'-. bes32( aes g f)\!
 % Bars 271 to 275
 	ees4->\mf d->
@@ -379,14 +379,14 @@ musicVioloncelloMvtIII = \relative c {
 	aes-. a-. bes-. c-. 
 	des16-. c-. bes-. a-. bes8-. c-. 
 % Bars 286 to 290
-	des8 c-. bes-. b-.
+	des8-. c-. bes-. b-.
 	c\<[ c'(] d) d,(\!
 	ees)[\< ees']( f) f,(\!
 	ges32)\brack\f ges, ges ges  ges ges ges ges ges4:32
 	ges2:
 % Bars 291 to 295
 	fis:_\dimin
-	g:
+	g!:
 	c8->\brack\f c-> c-> r
 	c16-. g'-. d-. g-. ees-. g-. f32( ees d c)
 	f8-> f-> f-> r
@@ -395,13 +395,13 @@ musicVioloncelloMvtIII = \relative c {
 	ees4-> d->
 	c8 c g16-. g'-. fis-. g-. 
 	ees4-> d->
-	c8-> c-> g16-. g'-. fis-. g-. 
+	c8-. c-. g16-. g'-. fis-. g-. 
 % Bars 301 to 305
 	c,8-. c-. c-. r
 	f,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
-	c8->_\marcato aes'-> d,-> f->
+	c8->^\marcato aes'-> d,-> f->
 	ees-> g-> c,4->  % e => ees based on audio recording
-	f,-._\marcato g-.
+	f,->^\marcato g->
 % Bars 306 to 310
 	aes-> bes->
 	ees bes
@@ -410,9 +410,9 @@ musicVioloncelloMvtIII = \relative c {
 	g\brack\fz r r4
 % Bars 311 to 315
 	R2
-	r8 f'8.->^\brackM\arco\noBeam d8-> bes16->~
+	r8 f'8.->-\offset X-offset -6.3 ^\brackM\arco\noBeam d8-> bes16->~
 	bes g8-> ees-> c-> a16->
-	bes8->_\marcato[ f'->] c-> f->
+	bes8->^\marcato[ f'->] c-> f->
 	d->[ aes'->] ees-> aes->
 % Bars 316 to 320
 	f->[ c'->] g-> c->
@@ -435,7 +435,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 331 to 335
 	g8.) fis16( g8.) fis16(
 	g8.) fis16( g8.) c16(
-	d8.) d16-. g,4\fermata % signo
+	d8.) d16-. g,4\fermata \section % signo
 	R2
 	f\pp
 % Bars 336 to 340
@@ -493,5 +493,5 @@ musicVioloncelloMvtIII = \relative c {
 	ees8-. f-. g8.-> c,16
 	c8 r r4
 % Bar 381
-	c8\brack\p^\pizz r r4 \markFermata \fine
+	c8\brack\p^\pizz r r4 \markNormalSizeFermata \fine
 }

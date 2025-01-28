@@ -40,7 +40,11 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 (The Bells of Zlonice)"
+			\concat {
+				"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 " 
+				\italic { "\"" "The Bells of Zlonice" "\"" }
+				" — Violoncello"
+			}
 		}
 		instrument = \markup {
 			"Violoncello"
@@ -48,9 +52,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncelloMvtI
-%			}
+			\new Voice {
+				\formatVioloncelloMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtI
 			}
@@ -72,9 +76,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncelloMvtII
-%			}
+			\new Voice {
+				\formatVioloncelloMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtII
 			}
@@ -86,7 +90,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -96,9 +100,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncelloMvtIII
-%			}
+			\new Voice {
+				\formatVioloncelloMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtIII
 			}
@@ -112,7 +116,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #2.1 \bold 3.
 			}
 		}
 		\layout {
@@ -120,9 +124,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncelloMvtIV
-%			}
+			\new Voice {
+				\formatVioloncelloMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtIV
 			}
@@ -134,7 +138,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 4.
 			}
