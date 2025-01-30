@@ -18,7 +18,7 @@ musicContrabassoMvtIII = \relative c {
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	c8-.\p^\arco c'-. c,-. r
 % Bars 11 to 15
 	R2
@@ -84,13 +84,13 @@ musicContrabassoMvtIII = \relative c {
 	ees4-> d->
 	c8 c g16-. g'-. fis-. g-. 
 	ees4-> d->
-	c8-> c-> g16-. g'-. fis-. g-. 
+	c8-. c-. g16-. g'-. fis-. g-. 
 	c,8-. c-. c-. r
 % Bars 66 to 70
 	f,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
-	c8->_\brackM\marcato aes'-> d,-> f->
+	c8->^\brackM\marcato aes'-> d,-> f->
 	ees-> g-> c,4->  % e => ees based on audio recording
-	f,->_\marcato g->
+	f,->^\marcato g->
 	aes-> bes->
 % Bars 71 to 75
 	ees bes
@@ -99,9 +99,9 @@ musicContrabassoMvtIII = \relative c {
 	g\brack\fz r r4
 	R2
 % Bars 76 to 80
-	r8 f'8.->^\brackM\arco\noBeam d8-> bes16->~
+	r8 f'8.->\noBeam-\offset X-offset -6.5 ^\brackM\arco d8-> bes16->~
 	bes g8-> ees-> c-> a16->
-	bes8->_\marcato[ f'->] c-> f->
+	bes8->^\marcato[ f'->] c-> f->
 	d->[ aes'->] ees-> aes->
 	f->[ c'->] g-> c->
 % Bars 81 to 85
@@ -140,7 +140,7 @@ musicContrabassoMvtIII = \relative c {
 		c, r f bes,
 		ees r d\< r
 		g r f r\!
-		bes,\mf_\crescendo r c8. d16
+		bes,_\mfcrescendo r c8. d16
 % Bars 111 to 115
 		d8 r ees8. f16
 		f8 r g8. a16
@@ -155,12 +155,12 @@ musicContrabassoMvtIII = \relative c {
 		ees r f\< r
 % Bars 121 to 125
 		g r ees\! r
-		<< aes,2\brack\mf^\arco {s4 s_\crescendo}>>
+		<< aes,2\brack\mf^\arco {s4 s-\offset X-offset 1.5 _\crescendo}>>
 		c4->( bes)
 		c2(
 		ees4-> d
 % Bars 126 to 130
-		<< ees2) {s8\< s s s\!}>>
+		<< ees2) {s8\< s s s}>>
 		f4.\f fis8
 		g4 bes8-> f!->
 		<< { bes4.-> f8} {s4 s_\dimin}>>
@@ -206,20 +206,20 @@ musicContrabassoMvtIII = \relative c {
 	r4 r8 bes\brack\p
 % Bars 161 to 165
 	r4 r8 bes
-	r4 r8_\crescendo bes
-	r4 r8 bes\brack\mf\<
-	g16->\! g-> g-> g-> g8 r
+	r4 r8-\offset X-offset -1 _\crescendo bes
+	r4 r8 \hairpinShorten #'(-0.3 . -2) bes\brack\mf\<
+	g16->\!^\brackM\arco g-> g-> g-> g8 r
 	\tuplet 3/2 4 {aes8->_\brackM\crescmarkup aes-> aes->} r bes-.
 % Bars 166 to 170
 	g'16-> g-> g-> g-> f8-> r
-	\tuplet 3/2 4 {ees\brack\f-> ees-> ees->} r aes16 aes,
+	\tuplet 3/2 4 {ees-\offset X-offset -1 \brack\f-> ees-> ees->} r aes16 aes,
 	bes\ff r r8 r4
 	bes8\p^\pizz r r4
 	b8\pp r c r
 % Bars 171 to 175
 	fis, r r4
 	a8 r r4
-	g8\< r\! c\> r\!
+	\hairpinShorten #'(0 . -0.5) g8\< r\! \hairpinShorten #'(-0.5 . 0) c\> r\!
 	f,\brack\p r r4
 	g8\pp r r4
 % Bars 176 to 180
@@ -259,10 +259,10 @@ musicContrabassoMvtIII = \relative c {
 	f8. f'16 f8-. f,-.
 	bes\brack\pp bes'4:32 bes,8
 % Bars 206 to 210
-	bes2:32
+	bes8 r r4
 	bes8 bes'4:32 bes,8
-	bes2:32
-	d:
+	bes8 r r4
+	d2:32
 	ees:_\crescmarkup
 % Bars 211 to 215
 	f:
@@ -292,29 +292,29 @@ musicContrabassoMvtIII = \relative c {
 	g-> aes->\!
 	bes-> ees8-. bes-.
 	ees4.\> bes8
-	ees\! r r bes,\brack\p^\pizz
+	ees\! r r bes,\brack\p-\offset X-offset -1.5 ^\pizz
 	ees4. bes8
 % Bars 236 to 240
 	ees\brack\pp r ees r
-	ees r r r16 \section r
+	ees r r r16 \section \break r
 	R2*3
 	
 	
 % Bars 241 to 245
-	g,2\pp\fermata
+	g,2\pp\fermata^\arco
 	R2*3
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 246 to 250
-	c8-.\p^\arco c'-. c,-. r
+	c8-.\p c'-. c,-. r
 	R2
 	f8-. f'-. f,-. r
 	R2
 	ees4->\mf d->
 % Bars 251 to 255
 	c8-. c-. g-. r
-	ees'4->_\crescendo d->
+	ees'4->_\crescmarkup d->
 	c8-. c-. g-. r
 	c-.\f c-. c-. r
 	c16-> g'-> d-> g-> ees-> c'-> f,-> c'->
@@ -375,9 +375,9 @@ musicContrabassoMvtIII = \relative c {
 % Bars 301 to 305
 	c,8-. c-. c-. r
 	f,16-. c'-. g-. c-. aes-. f'-. bes,-. f'-. 
-	c8->_\marcato aes'-> d,-> f->
+	c8->^\marcato aes'-> d,-> f->
 	ees-> g-> c,4->  % e => ees based on audio recording
-	f,->_\marcato g->
+	f,->^\marcato g->
 % Bars 306 to 310
 	aes-> bes->
 	ees bes
@@ -386,9 +386,9 @@ musicContrabassoMvtIII = \relative c {
 	g\brack\fz r r4
 % Bars 311 to 315
 	R2
-	r8 f'8.->^\brackM\arco\noBeam d8-> bes16->~
+	r8 f'8.->-\offset X-offset -6.5 ^\brackM\arco\noBeam d8-> bes16->~
 	bes g8-> ees-> c-> a16->
-	bes8->_\marcato[ f'->] c-> f->
+	bes8->^\marcato[ f'->] c-> f->
 	d->[ aes'->] ees-> aes->
 % Bars 316 to 320
 	f->[ c'->] g-> c->
@@ -411,13 +411,13 @@ musicContrabassoMvtIII = \relative c {
 % Bars 331 to 335
 	g8.) fis16( g8.) fis16(
 	g8.) fis16( g8.) c16(
-	d8.) d16-. g,4\fermata % signo
+	d8.) d16-. g,4\fermata \section % signo
 	R2
 	des''4:32\pp des8 r
 % Bars 336 to 340
 	R2
 	d!4:32 d8 r
-	g,,8\brack\p g'4 g,8-.
+	g,,8-.\brack\p g'4 g,8-.
 	g-._\crescendo g'4 g,8-.
 	g-. g'4 g,8-.
 % Bars 341 to 345
@@ -469,5 +469,5 @@ musicContrabassoMvtIII = \relative c {
 	ees8-. f-. g8.-> c,16
 	c8 r r4
 % Bar 381
-	c8\brack\p^\pizz r r4 \markFermata \fine
+	c8\brack\p^\pizz r r4 \markNormalSizeFermata \fine
 }

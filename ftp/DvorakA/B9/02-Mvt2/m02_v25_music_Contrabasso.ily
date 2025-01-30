@@ -30,14 +30,14 @@ musicContrabassoMvtII = \relative c {
 	des bes fes'4
 	ees16( g c a) bes8.( ees16)
 	des4(\< ees,8) r
-	<< g,2\!( { s4 s8\> s\!}>>
+	<< g,2\!( { s4 \hairpinShorten #'(-0.3 . -0.5) s8\> s\!}>>
 	aes4\pp des)
 % Bars 21 to 25
 	c8. c16 f-. f,-. r8
 	c''8. c16 f-. f,-. r8
 	c8. c16_\brackM\crescmarkup f8( f,)
 	des'4(~\< des16 c bes aes)\!
-	<< g2\pp~ {s8\< s s s\!}>>
+	<< g2\pp~ {\hairpinShorten #'(-0.3 . -2.5) s8\< s s s\!}>>
 % Bars 26 to 30
 	g8[ c(\> ees c)]\!
 	g2~\<
@@ -88,7 +88,7 @@ musicContrabassoMvtII = \relative c {
 	aes r g r
 % Bars 66 to 70
 	ges r bes r
-	ees r ees\brackM\crescmarkup r
+	ees r ees-\offset X-offset -1.5 \brackM\crescmarkup r
 	des r f r
 	ges,2\ppp^\arco~
 	ges~
@@ -135,9 +135,9 @@ musicContrabassoMvtII = \relative c {
 	g ees f g aes bes c d ees d c bes c bes aes g
 	f g f ees d c d bes ees-. g-. c( bes) f-. aes-. ees'( d)
 % Bars 106 to 110
-	g,-._\brackM\dimin bes-. f'( ees) ees,-. g-. c( bes) bes,-. ees-. aes( g) g,-. bes-. f'( ees)
-	aes,4(\p\< << g) {s8\> s\!}>>
-	aes4(\< << g) {s8\> s\!}>>
+	g,-.-\offset X-offset -1 _\brackM\dimin bes-. f'( ees) ees,-. g-. c( bes) bes,-. ees-. aes( g) g,-. bes-. f'( ees)
+	\hairpinShorten #'(-0.3 . -0.5) aes,4(\p\< << g) {\hairpinShorten #'(0.5 . -2) s8\> s\!}>>
+	\hairpinShorten #'(0 . 1) aes4(\< << g) {\hairpinShorten #'(-1 . -1) s8\> s\!}>>
 	aes2~
 	<< aes {s8\< s s s\!}>>
 % Bars 111 to 115
@@ -178,13 +178,9 @@ musicContrabassoMvtII = \relative c {
 	aes32\ff r r aes' aes4.\fermata
 % Bars 141 to 145
 	aes,32 r r f'' f4.\fermata
-	R2*8
+	R2*22
 % Bars 146 to 150
 	
-	
-	
-	
-	R2*14
 % Bars 151 to 155
 	
 % Bars 156 to 160
@@ -193,19 +189,19 @@ musicContrabassoMvtII = \relative c {
 	
 	
 	
-	\ni \mmrPos #-6 R2 \no
+	\ni \mmrPos #-7 R2 \no
 	gis,,16(_\crescmarkup a c e) gis,( a) r a
 % Bars 166 to 170
 	ais( b d g) ais,( b) r b-.
 	c->\< c'-> b-> b,->\! a-> a'-> g-> g,-> \section
 	\key c \major b\<-> b'-> a-> a,-> g-> g'-> fis-> fis,->\!
-	\acciaccatura fis8 g16\f g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
+	\startMeasureCount \acciaccatura fis8 \tempoXoffset #-3.5 g16\f g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
 	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
 % Bars 171 to 175
 	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
 	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
 	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. 
-	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. \section
+	\acciaccatura fis8 g16 g'8 g,16-. \acciaccatura fis8 g16 g'8 g,16-. \stopMeasureCount \section
 	\key aes \major g16 bes8 g16 g bes8 g16
 % Bars 176 to 180
 	g16-> bes-> bes-> g-> bes_\dimin r aes^\pizz r
@@ -223,7 +219,7 @@ musicContrabassoMvtII = \relative c {
 	ges,2\brack\ppp
 	ces\<
 	<< ees {s8 s s s\!}>>
-	<< f,2\f {s4 s_\dimmarkup}>>
+	f,2_\fdim
 	g2
 % Bars 191 to 195
 	b~
@@ -241,5 +237,5 @@ musicContrabassoMvtII = \relative c {
 	
 	
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

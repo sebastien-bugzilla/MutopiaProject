@@ -40,7 +40,11 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 (The Bells of Zlonice)"
+			\concat {
+				"Antonín Dvořák — Symphony No. 1 in C Minor Op.3 B.9 " 
+				\italic { "\"" "The Bells of Zlonice" "\"" }
+				" — Contrabasso"
+			}
 		}
 		instrument = \markup {
 			"Contrabasso"
@@ -48,9 +52,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatContrabassoMvtI
-%			}
+			\new Voice {
+				\formatContrabassoMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtI
 			}
@@ -72,9 +76,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatContrabassoMvtII
-%			}
+			\new Voice {
+				\formatContrabassoMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtII
 			}
@@ -86,7 +90,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -96,9 +100,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatContrabassoMvtIII
-%			}
+			\new Voice {
+				\formatContrabassoMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtIII
 			}
@@ -110,7 +114,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -120,9 +124,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatContrabassoMvtIV
-%			}
+			\new Voice {
+				\formatContrabassoMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtIV
 			}
@@ -134,7 +138,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 4.
 			}

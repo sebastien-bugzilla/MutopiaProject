@@ -100,15 +100,15 @@ musicContrabassoMvtIV = \relative c {
 	gis2
 % Bars 76 to 80
 	gis''4.. gis,,16
-	a4\p_\pocoapococrescendo a'8. a,16
+	a4_\ppocoapococrescendo a'8. a,16
 	a4 cis'8. a,16
 	a4 e''8. a,,16
-	a4 a''8. a,,16
+	a4 \beamGap #4 a''8. a,,16
 % Bars 81 to 85
 	bes4 bes'8. bes,16
 	bes4 d'8.\< bes,16
-	bes4 g''8. bes,,16\!
-	bes4 bes''8. bes,,16
+	bes4 \beamGap #3 g''8. bes,,16\!
+	bes4 \beamGap #4 \beamOffset #'(-0.9 . -0.9) bes''8. bes,,16
 	f'4(\f f,8) r
 % Bars 86 to 90
 	r4 r8. bes'16
@@ -137,8 +137,8 @@ musicContrabassoMvtIV = \relative c {
 % Bars 106 to 110
 	b4( a)
 	b4.. c16
-	d4-> g,_\crescmarkup
-	f2->\brack\mf_\crescendo
+	d4-> g,-\offset X-offset -1.5 _\crescmarkup
+	f2->\brack\mf-\offset X-offset 3.5 _\crescendo
 	e->
 % Bars 111 to 115
 	a->
@@ -203,7 +203,7 @@ musicContrabassoMvtIV = \relative c {
 % Bars 161 to 165
 	a8.-. c16 c8.-. ees16
 	ees8.-. fis16 fis8.-. fis16
-	\tuplet 3/2 4 {g8\brack\p_\crescendo( a g f! g f)
+	\tuplet 3/2 4 {g8\brack\p-\offset X-offset 2.5 _\crescmarkup ( a g f! g f)
 	e( f e d e d)
 	c(\< d c b c b)
 % Bars 166 to 170
@@ -234,7 +234,7 @@ musicContrabassoMvtIV = \relative c {
 	a4( gis8.) a16-.
 	a2~
 	a4 a'8. gis,16
-	a2~_\diminuendo
+	a2~_\dimmarkup
 	a4 a'8. gis,16
 % Bars 191 to 195
 	a2~
@@ -255,7 +255,7 @@ musicContrabassoMvtIV = \relative c {
 	
 	
 % Bars 206 to 210
-	fis8\brack\p_\crescendo^\pizz r r4
+	fis8-\offset X-offset 0.5 \brack\p-\offset X-offset 3 _\crescendo^\pizz r r4
 	fis'8 r r4
 	fis,8 r r4
 	fis'8\< r r4
@@ -402,7 +402,7 @@ musicContrabassoMvtIV = \relative c {
 	b(_\crescendo e)
 	cis(\< d
 	<< b2) {s8 s s s\!}>>
-	b4(\< c\!
+	b4(\< c!\!
 	e a,)
 % Bars 331 to 335
 	d,2\f~
@@ -461,8 +461,8 @@ musicContrabassoMvtIV = \relative c {
 % Bars 376 to 380
 	R2
 	f''8 r f,, r
-	R2
-	R2*3
+	R2*4
+	
 	
 % Bars 381 to 385
 	
@@ -486,7 +486,7 @@ musicContrabassoMvtIV = \relative c {
 	e2
 	dis4 e8. dis16
 	dis2
-	des4\brack\p_\crescendo ees8. des16
+	des4\brack\p-\offset X-offset 2.8 _\crescendo ees8. des16
 	des4 c
 % Bars 401 to 405
 	c des8. c16
@@ -575,12 +575,12 @@ musicContrabassoMvtIV = \relative c {
 	g2\ff~
 	g4 g'8. fis,16
 	g8 r r4
-	R2\fermata
+	\once \ni R2\fermata
 	f2~
 % Bars 481 to 485
 	f4 f'8. e,16
 	f8 r r4
-	R2\fermata
+	\once \ni R2\fermata
 	f'4(\f f,8) r
 	r4 r8. bes'16
 % Bars 486 to 490
@@ -609,8 +609,8 @@ musicContrabassoMvtIV = \relative c {
 	b4( a)
 % Bars 506 to 510
 	b4.. c16
-	d4-> g,_\crescmarkup
-	f2->\brack\mf_\crescendo
+	d4-> g,-\offset X-offset -1 _\crescmarkup
+	f2->\brack\mf-\offset X-offset 3.5 _\crescendo
 	e->
 	a->
 % Bars 511 to 515
@@ -779,7 +779,7 @@ musicContrabassoMvtIV = \relative c {
 	
 % Bars 651 to 655
 	
-	e'8\brack\pp_\crescendo r r4
+	e'8\brack\pp-\offset X-offset 3.5 _\crescmarkup r r4
 	e8 r r4
 	e8\< r r4\!
 	e8\> r r4\!
@@ -794,7 +794,7 @@ musicContrabassoMvtIV = \relative c {
 	e4 e'8. e16
 	ees2~
 	ees4 ees8. ees16
-	r8 r r4
+	d8 r r4
 % Bars 666 to 670
 	R2*3
 	
@@ -882,7 +882,7 @@ musicContrabassoMvtIV = \relative c {
 % Bars 736 to 740
 	<< g,2~ {s4 s\< }>>
 	g8.[ f16 e8. a16]\!
-	<< d,2 {s8\brack\fz\> s s s16 s\!}>>
+	<< d,2 {\hairpinShorten #'(-0.3 . -2) s8\brack\fz\> s s s16 s\!}>>
 	e4.. fis16
 	<< b,2~ {s4 s\< }>>
 % Bars 741 to 745
@@ -910,7 +910,7 @@ musicContrabassoMvtIV = \relative c {
 	g4..-> g16
 	g4-> g-> \section
 % Bars 761 to 765
-	\time 3/2 \tuplet 3/2 2 {g4\ff g g  g2 g4  g g g
+	\time 3/2 \newSpacingSection \tuplet 3/2 2 {g4\ff g g  g2 g4  g g g
 	g g g  g g g  g g g
 	g g g  g2 g4  g g g
 	g g g  g g g  g g g
@@ -970,14 +970,14 @@ musicContrabassoMvtIV = \relative c {
 	c,-> e-> c->
 	a-> c-> a->}
 % Bars 811 to 815
-	g4 \acciaccatura {a16( b} c4)
+	\startMeasureCount g4 \acciaccatura {a16( b} c4)
 	g4 \acciaccatura {a16( b} c4)
 	g4 \acciaccatura {a16( b} c4)
 	g4 \acciaccatura {a16( b} c4)
 	g4 \acciaccatura {a16( b} c4)
 % Bars 816 to 820
 	g4 \acciaccatura {a16( b} c4)
-	g4 \acciaccatura {a16( b} c4)
+	g4 \acciaccatura {a16( b} c4) \stopMeasureCount
 	e4-> g->
 	c-> r
 	R2

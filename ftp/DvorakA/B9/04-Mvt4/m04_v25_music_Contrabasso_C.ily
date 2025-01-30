@@ -794,7 +794,7 @@ musicContrabassoMvtIV = \relative c {
 	e4 e'8. e16
 	ees2~
 	ees4 ees8. ees16
-	r8 r r4
+	d8 r r4
 % Bars 666 to 670
 	R2*3
 	

@@ -625,7 +625,7 @@ musicContrabassoMvtI = \relative c {
 	f' r g,4->( f8) r
 	f' r g,4->( f8) r
 	f' r g,4->( f8) r
-	e-.\ff[ e']-. dis( e) e,(-. e')-. 
+	e-.\ff[ e']-. dis( e) e,-. e'-. 
 % Bars 516 to 520
 	e-.[ e']-. f( e) e\noBeam r
 	e,,-. e'-. dis( e) e,-. e'-.
@@ -637,7 +637,7 @@ musicContrabassoMvtI = \relative c {
 	e2 \tuplet 3/2 4 {e8( d c)}
 	b-. b-. dis( b) b4->
 	gis8-. gis-. b( gis) gis4->
-	a8-. a-. c( a) a4-.
+	a8-. a-. c( a) a4->
 % Bars 526 to 530
 	f8-. f-. a( f) f4->
 	e8( c') e-. e,-. e'-. e,-.
