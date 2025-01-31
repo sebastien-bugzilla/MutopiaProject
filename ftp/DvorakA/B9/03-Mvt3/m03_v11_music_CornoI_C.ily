@@ -202,7 +202,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 166 to 170
 	bes,2~
 	bes4 a \partCombineAutomatic
-	e'16-\tweak X-offset -1 \ff r r8 r b~\p
+	e'16-\tweak X-offset 0.5 \ff r r8 r b~\p
 	b16 r r8 r b~\pp
 	b16 r c8~ c16 r b8~
 % Bars 171 to 175

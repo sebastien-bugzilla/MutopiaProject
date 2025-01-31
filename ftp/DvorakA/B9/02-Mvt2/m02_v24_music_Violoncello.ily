@@ -116,7 +116,7 @@ musicVioloncelloMvtII = \relative c {
 	} \\ {
 		ees4(\p bes)
 		des( ces8 bes)
-		\shape #'((0 . 0)(0 . -1.3)(10 . -1.3)(12.2 . -0.2)) Slur aes4( ges)
+		\shape #'((0 . 0)(0 . -1.8)(10 . -1.8)(11.7 . -0.2)) Slur aes4( ges)
 		s2
 	}>>
 % Bars 77 to 80

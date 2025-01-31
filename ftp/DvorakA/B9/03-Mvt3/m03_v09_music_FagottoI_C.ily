@@ -261,7 +261,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 211 to 215
 	aes
 	\once \partCombineApart bes
-	\aIIXoffset #-2 c4->_\fmarcatoconmoltaforza c->
+	\aIIXoffset #-3 c4->_\fmarcatoconmoltaforza c->
 	c8.-> d16-. d8-. bes-.
 	ees4-> ees->
 % Bars 216 to 220

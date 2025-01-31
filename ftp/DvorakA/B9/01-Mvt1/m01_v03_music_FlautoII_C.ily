@@ -281,8 +281,8 @@ musicFlautoIIMvtI = \relative c {
 		R2.*3
 		
 		
-		r4\brack\p d,( ees\<
-		f g des'\!
+		r4\brack\p d,( ees
+		f\< g des'\!
 % Bars 241 to 245
 		c)\f r r
 		b r r

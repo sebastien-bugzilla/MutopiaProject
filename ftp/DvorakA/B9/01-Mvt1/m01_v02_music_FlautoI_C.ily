@@ -285,8 +285,8 @@ musicFlautoIMvtI = \relative c {
 		R2.*3
 		
 		
-		r4\brack\p b(_\legato c\<
-		d ees e\!
+		r4\brack\p b(_\legato c
+		d\< ees e\!
 % Bars 241 to 245
 		\dynEO #'(0 . 1) f)\f r r
 		g r r

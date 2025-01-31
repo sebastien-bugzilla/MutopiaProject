@@ -217,7 +217,7 @@ musicFagottoIMvtIV = \relative c {
 	c8-> c16-. r g8-> g16-. r
 	g8-> g16-. r c8-> c16-. r
 	b8-> b16-. r b8-> b16-. r
-	c8-. r r8. d16
+	c8-. r r8. \aIIXoffset #-1.5 d16
 % Bars 176 to 180
 	\afterGrace d2\startTrillSpan {cis16( d)\stopTrillSpan}
 	e8-. r r8. g16

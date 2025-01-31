@@ -41,7 +41,7 @@ musicTrombonoIMvtIV = \relative c {
 	
 % Bars 51 to 55
 	
-	d4\brack\mf\< f\!
+	\hairpinShorten #'(0 . -6) d4\brack\mf\< f\!
 	e8\f r f4~
 	f8 r e4(
 	f8) r b,4~

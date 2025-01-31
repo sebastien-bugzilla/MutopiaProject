@@ -206,7 +206,7 @@ musicClarinettoIMvtIV = \relative c {
 	a8-> a16-. r a8-> a16-. r
 	d8-> d16-. r d8-> d16-. r
 	cis8-> cis16-. r cis8-> cis16-. r
-	d8-. r r8. e16
+	d8-. r r8. \aIIXoffset #-1.5 e16
 % Bars 176 to 180
 	\afterGrace e2\startTrillSpan {dis16( e)\stopTrillSpan}
 	fis8-. r r8. a16

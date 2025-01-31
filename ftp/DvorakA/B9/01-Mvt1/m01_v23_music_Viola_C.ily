@@ -329,7 +329,7 @@ musicViolaMvtI = \relative c {
 		f(\> g f)\!
 		ees r r
 		R2.
-		<aes,, aes'>2\pp q4~
+		<aes,, aes'>2-\offset X-offset 0.5 \pp q4~
 % Bars 266 to 270
 		q\< q2\!
 		q4 r r

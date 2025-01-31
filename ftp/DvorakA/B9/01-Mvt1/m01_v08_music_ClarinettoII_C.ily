@@ -283,8 +283,8 @@ musicClarinettoIIMvtI = \relative c {
 		R2.*3
 		
 		
-		r4 e,(_\plegato\< f
-		g a ees'\!
+		r4 e,( f
+		g\< a ees'\!
 % Bars 241 to 245
 		d)\f r r
 		cis r r

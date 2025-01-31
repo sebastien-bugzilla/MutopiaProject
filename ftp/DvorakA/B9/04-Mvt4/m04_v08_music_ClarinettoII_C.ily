@@ -803,7 +803,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 696 to 700
 	
 % Bars 701 to 705
-	b2->\f
+	b2->-\offset X-offset -1.5 \f
 	a->
 	b8.-> cis16 d8-. cis-.
 	d8.-> e16 fis8-. d-.

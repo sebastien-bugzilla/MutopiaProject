@@ -8,7 +8,7 @@
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
 	left-margin = 20 \mm
-%	indent = 0
+	indent = 0
 %	annotate-spacing = ##t
 %	max-systems-per-page = 1
 %	first-page-number = 0

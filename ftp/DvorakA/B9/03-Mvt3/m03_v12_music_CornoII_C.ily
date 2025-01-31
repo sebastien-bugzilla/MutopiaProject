@@ -202,7 +202,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 166 to 170
 	g f
 	e4\f f
-	b16-\tweak X-offset -1 \ff r r8 r e,~\p
+	b16-\tweak X-offset 0.5 \ff r r8 r e,~\p
 	e16 r r8 r e~\pp
 	e16 r a8~ a16 r fis8~
 % Bars 171 to 175

@@ -120,9 +120,8 @@ tempiPartMvtII = {
 	% bar 159
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoInglese clarinettoI
-		clarinettoII fagottoI cornoI  cornoIII cornoIV 
-		 trombonoI trombonoII trombonoIII  violinoI violinoII
-		viola violoncello ) {
+		clarinettoII fagottoI cornoI  cornoIII cornoIV trombonoI trombonoII
+		trombonoIII violinoI violinoII viola violoncello ) {
 		\tempo \markup {
 			\normal-weight \italic "stringendo"
 		}
