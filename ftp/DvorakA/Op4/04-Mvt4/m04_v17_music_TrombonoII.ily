@@ -156,4 +156,84 @@ musicTrombonoIIMvtIV = \relative c {
 	
 % Bars 366 to 370
 	
+% Bars 371 to 375
+	
+% Bars 376 to 380
+	
+% Bars 381 to 385
+	
+% Bars 386 to 390
+	
+% Bars 391 to 395
+	
+% Bars 396 to 400
+	
+% Bars 401 to 405
+	
+% Bars 406 to 410
+	
+% Bars 411 to 415
+	
+% Bars 416 to 420
+	
+% Bars 421 to 425
+	
+% Bars 426 to 430
+	
+% Bars 431 to 435
+	
+% Bars 436 to 440
+	
+% Bars 441 to 445
+	
+% Bars 446 to 450
+	
+% Bars 451 to 455
+	
+% Bars 456 to 460
+	
+% Bars 461 to 465
+	
+% Bars 466 to 470
+	
+% Bars 471 to 475
+	
+% Bars 476 to 480
+	
+% Bars 481 to 485
+	
+% Bars 486 to 490
+	
+% Bars 491 to 495
+	
+% Bars 496 to 500
+	
+% Bars 501 to 505
+	
+% Bars 506 to 510
+	
+% Bars 511 to 515
+	
+% Bars 516 to 520
+	
+% Bars 521 to 525
+	
+% Bars 526 to 530
+	
+% Bars 531 to 535
+	
+% Bars 536 to 540
+	
+% Bars 541 to 545
+	
+% Bars 546 to 550
+	
+% Bars 551 to 555
+	
+% Bars 556 to 560
+	
+% Bars 561 to 565
+	
+% Bars 566 to 570
+	
 }
