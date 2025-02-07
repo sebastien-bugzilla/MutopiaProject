@@ -15,7 +15,7 @@
 	title = \markup { 
 		\abs-fontsize #18 \sans
 		\center-column {
-			Symphony No. 2 in B-flat Major Op.4
+			"Symphony No. 2 in" "B-flat Major Op.4"
 		}
 	}
 %	mutopiatitle = "Concerto for Violin and Cello in A Minor"

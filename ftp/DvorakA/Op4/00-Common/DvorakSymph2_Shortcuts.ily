@@ -24,6 +24,8 @@ pespr = \markup {
 	\concat {\musicglyph "p" \musicglyph "scripts.espr" }
 }
 fpp = \markup {\dynamic fpp}
+legato = \markup {\italic {legato}}
+
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -57,6 +59,16 @@ brack = #(define-event-function
 brackM = -\markup \bracketMarkup \etc
 
 setBarNumber = \set Score.currentBarNumber = \etc
+
+mmrPos = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)
+
+omitFlag = \once \omit Flag
 
 
 %aIIXoffset = #(define-music-function
@@ -209,14 +221,6 @@ setBarNumber = \set Score.currentBarNumber = \etc
 %	\once \override Score.RehearsalMark.whiteout-style = #'outline
 %}
 
-%mmrPos = #(define-music-function
-%	(position)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.staff-position = #(- position 2)
-%	#}
-%)
-
 %mmrnDown = {
 %	\once \override MultiMeasureRestNumber.direction = #-1 
 %}
@@ -240,7 +244,6 @@ setBarNumber = \set Score.currentBarNumber = \etc
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 %omitMMRN = \omit MultiMeasureRestNumber
-%omitFlag = \once \omit Flag
 %omitBeam = \once \omit Beam
 %omitDots = \once \omit Dots
 

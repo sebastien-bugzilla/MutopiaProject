@@ -4,12 +4,12 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicOboeIMvtI = \relative c {
+musicOboeIIMvtI = \relative c {
 	\clef treble
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	d''2\pp~
+	d'2\pp~
 	d~
 	d~
 	d~
@@ -35,12 +35,12 @@ musicOboeIMvtI = \relative c {
 % Bars 21 to 25
 	fis~
 	fis~
-	fis~_\crescmarkup
+	fis~
 	fis~
 	fis
 % Bars 26 to 30
 	gis\ff\fermata \mark \default
-	g!4\f f!->~
+	g'!4\f f!->~
 	f8 r ees!4->~
 	ees8 r d4->~
 	d8 r c4->~
@@ -49,22 +49,14 @@ musicOboeIMvtI = \relative c {
 	g8-. r g8.-> a16-.
 	a8-. r a8.-> bes16-.
 	bes8-. r bes8.-> c16-.
-	ees8-. r r4
+	c8-. r r4
 % Bars 36 to 40
-	f,4\f g8. a16
-	bes4-> c->
-	des2\fz(
-	c8) r r4
-	c4\f d8. e16
+	R2*12
 % Bars 41 to 45
-	f4 g
-	aes2(
-	g4) g,~
-	g8\f\< a!-. b8.-> c16-.
-	c8\! r r4
+	
 % Bars 46 to 50
-	c8\< g( g'8.)\f-> f16-.
-	f8 r r4
+	
+	
 	R2*3
 	
 	
@@ -87,12 +79,12 @@ musicOboeIMvtI = \relative c {
 		
 		
 		
-		g,2\p~
+		ees2\p~
 % Bars 71 to 75
-		<< g~ {s8\< s s s\!}>>
-		<< g2~ {s8\> s s s\!}>>
-		g2~
-		g
+		<< ees~ {s8\< s s s\!}>>
+		<< ees2~ {s8\> s s s\!}>>
+		ees2~
+		ees
 		R2*3
 % Bars 76 to 80
 		
@@ -102,37 +94,37 @@ musicOboeIMvtI = \relative c {
 		r8 g->~ g16.[ g32 g16] r
 % Bars 81 to 85
 		bes2\f\>
-		ges(\!
-		f8) r f4\mf~
-		f ees8-.-> f-.->
-		g r c,4->\<~
+		a(\!
+		f8) r r f\p~
+		f16.[ f32 f16] r r8 f~
+		f16.[ f32 f16]_\crescmarkup r r8 f~
 % Bars 86 to 90
-		c\! d8->-. ees-.->
+		f16.[ f32 f16] r r8 f
 		aes16.\ff[ aes32 aes16] r r8 aes8~
 		aes16.[ aes32 aes16] r r8 b~
 		b16.[ b32 b16] r r8 d~
 		d16.[ d32 d16] r r8 d
 % Bars 91 to 95
-		gis,2\ff~
-		gis4 r
+		d!2\ff~
+		d4 r
 		R2*2
 		
-		gis4\f r
+		e4\f r
 % Bars 96 to 100
 		R2
-		gis4 r
+		e4 r
 		R2
-		a2~\ff
-		a4 r
+		ees!2~\ff
+		ees4 r
 % Bars 101 to 105
 		R2*2
 		
-		a4\f r
+		f4\f r
 		R2
-		a4\f r
+		f4\f r
 % Bars 106 to 110
 		R2
-		b2\ff~
+		b,2\ff~
 		b~
 		b~
 		b \mark \default
@@ -147,10 +139,10 @@ musicOboeIMvtI = \relative c {
 	
 % Bars 126 to 130
 		
-		a,2\pp~
-		a~
-		a~
-		a
+		f,2\pp~
+		f~
+		f~
+		f
 % Bars 131 to 135
 		R2*4
 		
@@ -173,7 +165,7 @@ musicOboeIMvtI = \relative c {
 		
 		
 		\mark \default
-		f2\f~
+		f'2\f~
 % Bars 161 to 165
 		f8 c-. a-. c-.
 		\tuplet 3/2 4 {f( c a} c16 d ees g)
@@ -183,12 +175,12 @@ musicOboeIMvtI = \relative c {
 % Bars 166 to 170
 		\tuplet 3/2 4 {f8( c a} c16 d ees g)
 		\tuplet 3/2 4 {f8( c a} c16 d ees g)
-		a2\ff~
-		a~
-		a~
+		fis2\ff~
+		fis~
+		fis~
 % Bars 171 to 175
-		a~
-		a8 r r4
+		fis~
+		fis8 r r4
 		R2*3
 		
 		
@@ -221,41 +213,41 @@ musicOboeIMvtI = \relative c {
 		d->\< g~
 		g f8. d16
 		d4\! r \mark \default
-		d'2\f~
+		d2\f~
 % Bars 201 to 205
 		d4 c->~
 		c bes8.-> aes16-.
 		g2->(
-		f8) r bes4\mf~
-		bes2~
+		f8) r aes'4\mf~
+		aes2~
 % Bars 206 to 210
-		bes~
-		bes~
-		bes8 r aes4\brack\ff~
-		aes2~
 		aes~
+		aes~
+		aes8 r d,4\brack\ff~
+		d2~
+		d~
 % Bars 211 to 215
-		aes~
-		aes8 r aes4~
-		aes2~
-		aes~
-		aes
+		d~
+		d8 r d4~
+		d2~
+		d~
+		d
 % Bars 216 to 220
-		\tuplet 3/2 4 {a!8\f a a  a a a
-		a a a  a a a}
-		a4.\f( e8)
-		cis4 fis8.( e16)
-		\tuplet 3/2 4 {e8 e e  e e e
-% Bars 221 to 225
+		\tuplet 3/2 4 {e8\f e e  e e e
 		e e e  e e e}
-		\acciaccatura {e16\ff fis gis} a4.( e!8)
-		cis4 fis8.-> e16-.
-		g!8.[( fis16) g8.( fis16)]
-		g8.[( fis16) g8.( fis16)]
+		e4.\f( cis8)
+		a4 d8.( cis!16)
+		\tuplet 3/2 4 {cis8 cis cis  cis cis cis
+% Bars 221 to 225
+		cis cis cis  cis cis cis}
+		e!4. cis8
+		a4 d8.-> cis!16-.
+		cis2~
+		cis~
 % Bars 226 to 230
-		g8.[( fis16) g8.( fis16)]
-		g8.[( fis16) g8.( fis16)]
-		g8 r r4
+		cis~
+		cis
+		cis8 r r4
 		R2*7
 % Bars 231 to 235
 	
@@ -275,162 +267,151 @@ musicOboeIMvtI = \relative c {
 % Bars 241 to 245
 	
 % Bars 246 to 250
-	d4->\mf d->
-	d-> d->_\crescmarkup
-	d-> d->
-	d-> d->
+	b4->\mf b->
+	b-> b->
+	b-> b->
+	b-> b->
 	R2*8
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
 	\mark \default
-	f4->\pp f->
-	f-> f->
-	f-> f->
+	d4->\pp d->
+	d-> d->
+	d-> d->
 % Bars 261 to 265
-	f-> f->
-	f2~\pp
-	f8 f f f
-	f2~
-	f8\< f f f
+	d-> d->
+	d2~\pp
+	d8 d d d
+	d2~
+	d8\< d d d
 % Bars 266 to 270
-	b2~
-	b8 b b b
-	a2~
-	a8 a[ a a]\!
-	g2\f~
+	g2~
+	g8 g g g
+	f2~
+	f8 f[ f f]\!
+	e2\f~
 % Bars 271 to 275
-	g~
-	g~
-	g4 e8. g16
-	g4 g8. f16
-	e8 r g8._\dimmarkup f16
+	e~
+	e~
+	e4 c8. e!16
+	e4 e8. d16
+	c8 r e!8. d16
 % Bars 276 to 280
-	e8 r \tuplet 3/2 4 {g-.\> g-. f-.}
-	e\! r \tuplet 3/2 4 {g\p-. g-. f-.}
-	aes2\pp~
-	aes~
-	aes~
-% Bars 281 to 285
-	aes~
-	aes8 r r4
+	c8 r \tuplet 3/2 4 {e!-.\> e-. d-.}
+	c\! r \tuplet 3/2 4 {e!\p-. e-. d-.}
+	ees!8\pp r r4
 	R2*3
 	
+% Bars 281 to 285
 	
+	c,2~
+	c~
+	c~
+	<< c {s8\> s s s\!}>>
 % Bars 286 to 290
-	ees2\p\<
-	e8[(\! f ees) r16 des-.]
-	<< c2 {s8\> s s s\!}>>
-	ees( des aes bes)
-	c4.( b8\<
+	aes'2\p\<~
+	aes\!
+	<< aes2~ {s8\> s s s\!}>>
+	aes2
+	g8 r r4
 % Bars 291 to 295
-	\tuplet 3/2 4 {a!8 g e'} e4-)
-	c4.( b8)\!
-	\tuplet 3/2 4 {a8(\f g e'} e4)
-	\tuplet 3/2 4 {d8(_\fcresc c g')} g4\brack\fz~
-	g2~
+	R2*4
+	
+	
+	
+	\tuplet 3/2 4 {d'8(\f\< c g')} g4~\!
 % Bars 296 to 300
-	g~
-	g \mark \default
-	e4(\f cis)
-	a'( e8. fis16)
-	e4( cis8. d16)
-% Bars 301 to 305
-	e2
-	e4 cis8.( e16)
 	g2~
+	g \mark \default
+	cis,4(\f a)
+	e'( a,8. a16)
+	cis4( a8. b16)
+% Bars 301 to 305
+	cis2
+	e4 cis8.( e16)
+	g,2~
 	g~\>
 	<< g {s8 s s s\!}>>
 % Bars 306 to 310
-	g2\p(
-	a4 g8 f)
-	e2( 
-	f4~ \tuplet 3/2 4 {f8 c d)}
-	e r g4(\<
+	a8 r r4
+	R2*7
+	
+	
+	
 % Bars 311 to 315
-	gis8[ a g) r16\! f-.]
-	e2(
-	g8\> f c d)\!
-	c4(\p d8 e)
-	g4.( f8)
+	
+	
+	
+	c2\p~
+	c~
 % Bars 316 to 320
-	c4( d8 e)
-	g4.( f8)
-	c4( d16_\crescmarkup c d e
-	g8.) g16-. f4->
-	c4( d16 c d e
+	c
+	c~
+	<< c~ {s4 s}>> 
+	c2~
+	c
 % Bars 321 to 325
-	g8.) g16-. f4
-	bes8-.\pp c16( bes \tuplet 3/2 4 {g8 f g}
-	f8-.) d-. c-. bes-.
-	bes' r bes bes
-	bes r bes bes
+	c
+	R2*7
+	
+	
+	
 % Bars 326 to 330
-	bes2\p~
-	bes~
-	bes8 r r4
+	
+	
+	
 	R2 \mark \default
-	r8 ees,\pp r c
+	R2*12
 % Bars 331 to 335
-	r ees r c
-	r ees r c
-	r ees r c
-	d8.( des16 \tuplet 3/2 4 {c8 b f')}
-	d!8.( des16 \tuplet 3/2 4 {c8 b f')}
+	
 % Bars 336 to 340
-	d!8.( des16 \tuplet 3/2 4 {c8 b f')}
-	d!8.( des16 \tuplet 3/2 4 {c8 b f')}
-	r8 e r cis
-	r e r cis
-	r e r cis
+	
 % Bars 341 to 345
-	r e r cis
+	
 	R2*4
 % Bars 346 to 350
-	bes'!2(~\f\<
-	bes4\! aes8) r
-	ges16[(\f aes ges16. f32)] f8 r
-	ees16[( f ees16. des32)] des8 r
-	c16[( des c16. bes32)] bes8 r
+	ges'!2(~\f\<
+	ges4\! f8) r
+	R2*3
+	
+	
 % Bars 351 to 355
-	aes16[( bes aes16. g!32)] g8 r
-	r4 g16(\f aes g f
-	bes8) r r4
-	r g16(\mp aes g f
-	bes8) r r4 \mark \default
+	\mmrPos #-6 R2
+	R2*4
+	
+	
+	\mark \default
 % Bars 356 to 360
-	r ees,->\p
-	ees-> ees->
-	f16( g aes bes c4)
-	c r
-	r f,->
+	\mmrPos #-6 R2
+	\mmrPos #-6 R
+	R2*2
+	
+	\mmrPos #-6 R2
 % Bars 361 to 365
-	f-> f->
-	g16( a! bes c d4)
-	d r
-	r g,->
-	g-> g->
+	\mmrPos #-6 R
+	R2*7
 % Bars 366 to 370
-	a!16(\p bes c d ees4-^)
-	ees-^ r
-	a,16( bes c d ees8) r
+	
+	
+	
 	R2
-	bes16(\mf\< c d ees f8)\! r
+	R
 % Bars 371 to 375
 	R2
-	r4 r8. ees16
-	f4.->\f ees8-.
-	f4.-> ees8-.
-	f-. ees-. d-. c-.
+	r4 r8. c16
+	b4.->\f c8-.
+	b4.-> c8-.
+	b-. aes-. g-. f-.
 % Bars 376 to 380
-	bes r r8. ees16
-	aes4.-> g8-.
-	aes4.-> g8-.
-	aes-. g-. f-. ees-.
-	d r r4
+	ees r r8. bes'16
+	d4.-> ees8-.
+	d4.-> ees8-.
+	d-. c-. bes-. aes-.
+	g r r4
 % Bars 381 to 385
-	g,2->
+	g2->
 	f4-> g->
 	ees2->
 	bes'4..-> bes16
@@ -438,14 +419,14 @@ musicOboeIMvtI = \relative c {
 % Bars 386 to 390
 	aes4-> bes->
 	ges2->\fz
-	bes'8\f r r4
-	bes8 r r4 \mark #11
-	r f\fp~
+	ees'8\f r r4
+	e8 r r4 \mark #11
+	R2
 % Bars 391 to 395
-	f2~\<
+	f,2~\fp\<
 	<< f~ {s8 s s s\!}>>
 	f2
-	f8-.\f g16( f) \tuplet 3/2 4 {f,8( e f)}
+	f'8-.\f g16( f) \tuplet 3/2 4 {f,8( e f)}
 	f'8-. g16( f f,8) r
 % Bars 396 to 400
 	f'-. g16( f) \tuplet 3/2 4 {f,8( e f)}
@@ -460,8 +441,8 @@ musicOboeIMvtI = \relative c {
 	
 	
 % Bars 406 to 410
-	ees8-.\p d16( ees \tuplet 3/2 4 {d8 cis d)}
-	c!8-. b16( c \tuplet 3/2 4 {bes8 f bes)}
+	R2*2
+	
 	R2*12
 % Bars 411 to 415
 	
@@ -470,15 +451,15 @@ musicOboeIMvtI = \relative c {
 	
 	
 	
-	d2~\pp
+	bes,2~\pp
 % Bars 421 to 425
-	d~
-	d(\<
-	f)\!~
-	f
-	g~\fz
+	bes~
+	bes\<
+	d\!~
+	d
+	c~\fz
 % Bars 426 to 430
-	g4. r8
+	c4. r8
 	R2*8
 % Bars 431 to 435
 	
@@ -490,43 +471,43 @@ musicOboeIMvtI = \relative c {
 	r8 ees~-> ees16.[ ees32 ees16] r
 	r8 g->~ g16.[ g32 g16]\! r
 	bes2(\fz\>
-	<< ges {s8  s s s\!}>> \mark \default
-	f8) r f4->\f~
+	<< a! {s8  s s s\!}>> \mark \default
+	f8) r r f\p~
 % Bars 441 to 445
-	f\< ees8-.-> f-.->
-	g r c,4->~
-	c d8-.-> ees-.->\!
-	aes16.[_\fcresc aes32 aes16] r r8 aes->~
+	f16.[\< f32 f16] r r8 f~
+	f16.[ f32 f16] r r8 f~
+	f16.[ f32 f16] r r8 f\!
+	aes16.[ aes32 aes16] r r8 aes->~
 	aes16.[ aes32 aes16] r r8 b->~
 % Bars 446 to 450
 	b16.[ b32 b16] r r8 d->~
 	d16.[ d32 d16] r r8 d
-	gis,2\f~
-	gis4 r
+	d2\f~
+	d4 r
 	R2*2
 % Bars 451 to 455
 	
-	gis4\f r
+	e4\f r
 	R2
-	gis4 r
+	e4 r
 	R2
 % Bars 456 to 460
-	a!2\ff~
-	a4 r
+	ees!2\ff~
+	ees4 r
 	R2*2
 	
 	
 % Bars 461 to 465
-	a4\f r
+	f4\f r
 	R2
-	a4\f r
+	f4\f r
 	R2
-	b2~\ff
+	gis2~\ff
 % Bars 466 to 470
-	b~
-	b~
-	b
-	aes(~\pp
+	gis~
+	gis~
+	gis
+	aes,(~\pp
 	aes~
 % Bars 471 to 475
 	aes~
@@ -536,7 +517,7 @@ musicOboeIMvtI = \relative c {
 % Bars 476 to 480
 	
 	
-	g,4_\fzpocoapococrescendo~ g8 \tuplet 3/2 8 {g16( a b}
+	g4_\fzpocoapococrescendo~ g8 \tuplet 3/2 8 {g16( a b}
 	c4.)->\< d8-.\!
 	ees4.\fz d8
 % Bars 481 to 485
@@ -549,13 +530,13 @@ musicOboeIMvtI = \relative c {
 	aes8-> \tuplet 3/2 8 {g16( f e} f8) r
 	f'8-> \tuplet 3/2 4 {ees!16( des c} des8) r
 	R2
-	des'8-.\p c16( des \tuplet 3/2 4 {bes8 aes bes}
-	des) r r bes-.
+	R2*6
+	
 % Bars 491 to 495
-	aes-. f-. ees-. des-.
-	r4 r8 des\p(
-	des'4. c8
-	des8) r r4
+	
+	
+	
+	
 	R2
 % Bars 496 to 500
 	r4 cis,\brack\pp
@@ -583,53 +564,53 @@ musicOboeIMvtI = \relative c {
 	
 	
 	\setBarNumber #544 \mark #15
-	g8\repeatTie r  ees4\pp
-	r e
+	ees'8\repeatTie r  ces4\pp
+	r c!
 % Bars 546 to 550
-	f8(\p e16 f des8) r
-	ges8( f16 ges d!8) r
-	g!-.\< fis16( g ees8) r
-	aes-. g16( aes e8)\! r
-	\tuplet 3/2 4 {a!8(\ff g a} g4->)
+	R2*4
+	
+	
+	
+	\tuplet 3/2 4 {cis8(\ff b cis} b4->)
 % Bars 551 to 555
-	\tuplet 3/2 4 {a8( g a} g4->)
-	\tuplet 3/2 4 {a8( g a} g4->)
-	\tuplet 3/2 4 {a8( g a} g4->)
-	\tuplet 3/2 4 {a8( g a g a g)
-	a( g a g a g)}
+	\tuplet 3/2 4 {cis8( b cis} b4->)
+	\tuplet 3/2 4 {cis8( b cis} b4->)
+	\tuplet 3/2 4 {cis8( b cis} b4->)
+	\tuplet 3/2 4 {cis8( b cis b cis b)
+	cis( b cis b cis b)}
 % Bars 556 to 560
-	a8-. g16( a g a b a)
-	b( a g a g fis e d)
-	bes'!2\ff~
-	bes~
-	bes~
+	cis8-. b16( cis b cis d cis)
+	d( cis b cis b a g fis)
+	g'2\ff~
+	g~
+	g~
 % Bars 561 to 565
-	bes
-	a~
-	a~
-	a8 r r4
+	g
+	f~
+	f~
+	f8 r r4
 	R2
 % Bars 566 to 570
-	\tuplet 3/2 4 {f8\mf f f  f\> f f
-	f f f  f f f\! \mark \default
-	f\p f f  f\> f f
-	f f f  f f f\!
-	ges\pp ges ges  ges ges ges
+	\tuplet 3/2 4 {c8\mf c c  c\> c c
+	c c c  c c c\! \mark \default
+	c\p c c  c\> c c
+	c c c  c c c\!
+	c\pp c c  c c c 
 % Bars 571 to 575
-	ees! ees ees  ees ees ees
-	ees ees ees_\calando  ees ees ees
-	ees ees ees   ees ees ees }
-	ees4 r
-	ees\< r
+	c c c  c c c
+	c c c  c c c
+	c c c  c c c}
+	c4 r
+	c\< r
 % Bars 576 to 580
-	ees r
-	ees\! r
-	f2\pp~
-	f~
-	f~
+	c r
+	c\! r
+	d2\pp~
+	d~
+	d~
 % Bars 581 to 585
-	f
-	d'(~_\brackM\legato\<
+	d
+	d(~\<
 	d4\! c\>->~
 	c\! bes8. a16-.
 	<< g2->) {s8\> s s s\!}>>
@@ -649,10 +630,10 @@ musicOboeIMvtI = \relative c {
 	
 	
 	
-	f2\f\<~
-	<< f {s8 s s s\!}>> \mark \default
+	R2*2
+	\mark \default
 % Bars 611 to 615
-	bes2\ff~
+	bes'2\ff~
 	bes8 f-. d-. f-.
 	\tuplet 3/2 4 {bes( f d f aes c)
 	bes( f d f aes c)}
@@ -661,46 +642,46 @@ musicOboeIMvtI = \relative c {
 	bes8 f-. d-. f-.
 	\tuplet 3/2 4 {bes8( f d f aes c
 	bes f d f aes c)}
-	f,\f r r4
+	d,\f r r4
 	R2
 % Bars 621 to 625
-	ges8\f r r4
+	ees8\f r r4
 	R2
-	g!8\f r r4
-	r r8. e16\ff
-	g4. f8
+	e8\f r r4
+	r r8. cis16\ff
+	d2
 % Bars 626 to 630
-	ees!( e f fis)
-	g4.-> f!8
-	ees( e f f)
-	f2->
-	aes4.-> aes8
+	c8( des c ees!)
+	d!2
+	c8( des c c)
+	bes2->
+	f'4.-> f8
 % Bars 631 to 635
-	aes r aes r16 aes
-	aes8 r aes4
-	aes2->
-	aes4. aes8
-	aes r aes8. aes16
+	f r ees r16 d
+	d8 r d4
+	f2->
+	f4. f8
+	f r ees8. d16
 % Bars 636 to 640
-	aes8 r r8. aes16
-	ges8 r ges r16 ges
-	ges8 r r8. ges16
-	aes8 r aes r16 aes
-	aes8 r r8. f16
+	d8 r r8. d16
+	ees8 r d r16 c
+	c8 r r8. c16
+	f8 r ees r16 d
+	d8 r r8. d16
 % Bars 641 to 645
-	g4 r8 e
-	f4 r8 aes
-	g4 r8 e
-	f4 r8 aes
-	g r r4
+	e4 r8 cis
+	d4 r8 f
+	e4 r8 cis
+	d4 r8 f
+	ees! r r4
 % Bars 646 to 650
 	R2*6
 % Bars 651 to 655
 	
-	f,2_\fpespr
+	d,2
 	R
-	bes_\pespr( \mark \default
-	a8) r r4
+	e( \mark \default
+	f8) r r4
 % Bars 656 to 660
 	R2*15
 % Bars 661 to 665
@@ -708,70 +689,66 @@ musicOboeIMvtI = \relative c {
 % Bars 666 to 670
 	
 % Bars 671 to 675
-	d2(\p
-	c4. bes8)
-	r4 r8. a16(
-	g2
-	f8) r r4
+	R2*5
 % Bars 676 to 680
 	R2*7
 % Bars 681 to 685
 	
 	\mark \default
 	r4\fermata r
-	e4->\f f->
-	g d'8. c16
+	cis4->\f d->
+	c! fis
 % Bars 686 to 690
-	bes4 a'8. g16
-	f2~
-	f8 ees d c
-	bes4 ees8. d16
-	c4 f
+	f! r
+	a2~
+	a8 a f ees
+	d4 b'8. b16
+	c4 c
 % Bars 691 to 695
-	d4. bes8
-	e-. r f-. r
-	g r d8. c16
-	bes8 r a'8. g16
-	f2->~
+	bes4. f8
+	des'-. r d-. r
+	bes r a8. a16
+	f8 r e'8. e16
+	ees2->~
 % Bars 696 to 700
-	f8 f-. f-. f-.
-	d r ees8. d16
-	f8 r a r
-	f2->~
-	f8 f-. f-. f-.
+	ees8 ees-. d-. c-.
+	bes r b8. b16
+	c8 r f r
+	ees2->~
+	ees8 ees-. d-. c-.
 % Bars 701 to 705
-	d r ees8. d16
-	f4-> a->
-	f-> a->
-	f-> a->
-	c,\ff( bes)
+	bes r b8. b16
+	c4-> f->
+	c-> f->
+	c-> f->
+	a,\ff( f)
 % Bars 706 to 710
-	c ees~
-	ees d8. c16
-	c4( d)
-	ees( d)
-	ees g\fz~
+	a2~
+	a4 bes8. c16
+	c4( bes)
+	a( bes)
+	a ees'\fz~
 % Bars 711 to 715
-	g f8. d16
-	d4 g\fz~
-	g f8. d16
-	d4 bes'->\fff~
-	bes2~
+	ees d8. bes16
+	bes4 ees\fz~
+	ees d8. bes16
+	bes4 e\fff~
+	e2~
 % Bars 716 to 720
-	bes~
-	bes~
-	bes8 r r4
+	e~
+	e
+	f8 r r4
 	R2*4
 	
 % Bars 721 to 725
 	
 	
-	r4 a-.\ff
-	g-. bes-.
-	bes-. r
+	r4 c-.\ff
+	bes-. g'-.
+	f-. r
 % Bars 726 to 729
-	r a
-	bes r
-	bes r
-	bes r\fermata \fine
+	r f
+	f r
+	f r
+	f r\fermata \fine
 }

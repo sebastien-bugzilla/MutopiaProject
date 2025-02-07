@@ -51,7 +51,7 @@ musicOboeIMvtI = \relative c {
 	bes8-. r bes8.-> c16-.
 	ees8-. r r4
 % Bars 36 to 40
-	f,4\f g8. a16
+	\partCombineApart f,4\f g8. a16
 	bes4-> c->
 	des2\fz(
 	c8) r r4
@@ -64,7 +64,7 @@ musicOboeIMvtI = \relative c {
 	c8\! r r4
 % Bars 46 to 50
 	c8\< g( g'8.)\f-> f16-.
-	f8 r r4
+	f8 r r4 \partCombineAutomatic
 	R2*3
 	
 	
@@ -103,11 +103,11 @@ musicOboeIMvtI = \relative c {
 % Bars 81 to 85
 		bes2\f\>
 		ges(\!
-		f8) r f4\mf~
+		f8) r \partCombineApart f4\mf~
 		f ees8-.-> f-.->
 		g r c,4->\<~
 % Bars 86 to 90
-		c\! d8->-. ees-.->
+		c\! d8->-. ees-.-> \partCombineAutomatic
 		aes16.\ff[ aes32 aes16] r r8 aes8~
 		aes16.[ aes32 aes16] r r8 b~
 		b16.[ b32 b16] r r8 d~
@@ -243,18 +243,18 @@ musicOboeIMvtI = \relative c {
 % Bars 216 to 220
 		\tuplet 3/2 4 {a!8\f a a  a a a
 		a a a  a a a}
-		a4.\f( e8)
+		a4.\f( e!8)
 		cis4 fis8.( e16)
 		\tuplet 3/2 4 {e8 e e  e e e
 % Bars 221 to 225
 		e e e  e e e}
-		\acciaccatura {e16\ff fis gis} a4.( e!8)
+		\partCombineApart \stemDown \acciaccatura {e16_\ff fis gis} a4.( \omitFlag e!8) \partCombineAutomatic
 		cis4 fis8.-> e16-.
-		g!8.[( fis16) g8.( fis16)]
+		\partCombineApart \stemUp g!8.[( fis16) g8.( fis16)]
 		g8.[( fis16) g8.( fis16)]
 % Bars 226 to 230
 		g8.[( fis16) g8.( fis16)]
-		g8.[( fis16) g8.( fis16)]
+		g8.[( fis16) g8.( fis16)] \partCombineAutomatic
 		g8 r r4
 		R2*7
 % Bars 231 to 235
@@ -309,7 +309,7 @@ musicOboeIMvtI = \relative c {
 % Bars 276 to 280
 	e8 r \tuplet 3/2 4 {g-.\> g-. f-.}
 	e\! r \tuplet 3/2 4 {g\p-. g-. f-.}
-	aes2\pp~
+	\partCombineApart aes2~
 	aes~
 	aes~
 % Bars 281 to 285
@@ -319,29 +319,29 @@ musicOboeIMvtI = \relative c {
 	
 	
 % Bars 286 to 290
-	ees2\p\<
-	e8[(\! f ees) r16 des-.]
-	<< c2 {s8\> s s s\!}>>
+	ees2
+	e8[( f ees) r16 des-.]
+	<< c2 {s8 s s s}>>
 	ees( des aes bes)
 	c4.( b8\<
 % Bars 291 to 295
 	\tuplet 3/2 4 {a!8 g e'} e4-)
 	c4.( b8)\!
 	\tuplet 3/2 4 {a8(\f g e'} e4)
-	\tuplet 3/2 4 {d8(_\fcresc c g')} g4\brack\fz~
+	\tuplet 3/2 4 {d8(-\fcresc c g')} g4\brack\fz~
 	g2~
 % Bars 296 to 300
 	g~
-	g \mark \default
-	e4(\f cis)
-	a'( e8. fis16)
-	e4( cis8. d16)
+	g \partCombineAutomatic \mark \default
+	e4(\f cis!)
+	a'( e!8. fis16)
+	e4( cis!8. d16)
 % Bars 301 to 305
 	e2
 	e4 cis8.( e16)
-	g2~
-	g~\>
-	<< g {s8 s s s\!}>>
+	\partCombineApart \stemDown g2~
+	g~
+	<< g {s8 s s s}>> \stemUp
 % Bars 306 to 310
 	g2\p(
 	a4 g8 f)
@@ -352,7 +352,7 @@ musicOboeIMvtI = \relative c {
 	gis8[ a g) r16\! f-.]
 	e2(
 	g8\> f c d)\!
-	c4(\p d8 e)
+	c4( d8 e)
 	g4.( f8)
 % Bars 316 to 320
 	c4( d8 e)
@@ -369,9 +369,9 @@ musicOboeIMvtI = \relative c {
 % Bars 326 to 330
 	bes2\p~
 	bes~
-	bes8 r r4
+	bes8 r r4 \partCombineAutomatic
 	R2 \mark \default
-	r8 ees,\pp r c
+	\partCombineApart r8 ees,\pp r c
 % Bars 331 to 335
 	r ees r c
 	r ees r c
@@ -385,12 +385,12 @@ musicOboeIMvtI = \relative c {
 	r e r cis
 	r e r cis
 % Bars 341 to 345
-	r e r cis
+	r e r cis \partCombineAutomatic
 	R2*4
 % Bars 346 to 350
 	bes'!2(~\f\<
 	bes4\! aes8) r
-	ges16[(\f aes ges16. f32)] f8 r
+	\partCombineApart ges16[(\f aes ges16. f32)] f8 r
 	ees16[( f ees16. des32)] des8 r
 	c16[( des c16. bes32)] bes8 r
 % Bars 351 to 355
@@ -415,10 +415,10 @@ musicOboeIMvtI = \relative c {
 	a!16(\p bes c d ees4-^)
 	ees-^ r
 	a,16( bes c d ees8) r
-	R2
+	\once \partCombineAutomatic R2
 	bes16(\mf\< c d ees f8)\! r
 % Bars 371 to 375
-	R2
+	\partCombineAutomatic R2
 	r4 r8. ees16
 	f4.->\f ees8-.
 	f4.-> ees8-.
@@ -440,11 +440,11 @@ musicOboeIMvtI = \relative c {
 	ges2->\fz
 	bes'8\f r r4
 	bes8 r r4 \mark #11
-	r f\fp~
+	\partCombineApart r f\fp~
 % Bars 391 to 395
-	f2~\<
-	<< f~ {s8 s s s\!}>>
-	f2
+	f2~
+	<< f~ {s8 s s s}>>
+	f2 \partCombineAutomatic
 	f8-.\f g16( f) \tuplet 3/2 4 {f,8( e f)}
 	f'8-. g16( f f,8) r
 % Bars 396 to 400
@@ -460,8 +460,8 @@ musicOboeIMvtI = \relative c {
 	
 	
 % Bars 406 to 410
-	ees8-.\p d16( ees \tuplet 3/2 4 {d8 cis d)}
-	c!8-. b16( c \tuplet 3/2 4 {bes8 f bes)}
+	\partCombineApart ees8-.\p d16( ees \tuplet 3/2 4 {d8 cis d)}
+	c!8-. b16( c \tuplet 3/2 4 {bes8 f bes)} \partCombineAutomatic
 	R2*12
 % Bars 411 to 415
 	
@@ -470,12 +470,12 @@ musicOboeIMvtI = \relative c {
 	
 	
 	
-	d2~\pp
+	\partCombineApart \stemDown d2~
 % Bars 421 to 425
 	d~
-	d(\<
-	f)\!~
-	f
+	d(
+	f)~
+	f \partCombineAutomatic
 	g~\fz
 % Bars 426 to 430
 	g4. r8
@@ -491,11 +491,11 @@ musicOboeIMvtI = \relative c {
 	r8 g->~ g16.[ g32 g16]\! r
 	bes2(\fz\>
 	<< ges {s8  s s s\!}>> \mark \default
-	f8) r f4->\f~
+	f8) \partCombineApart \stemUp r f4->\f~
 % Bars 441 to 445
-	f\< ees8-.-> f-.->
+	f ees8-.-> f-.->
 	g r c,4->~
-	c d8-.-> ees-.->\!
+	c d8-.-> ees-.-> \partCombineAutomatic
 	aes16.[_\fcresc aes32 aes16] r r8 aes->~
 	aes16.[ aes32 aes16] r r8 b->~
 % Bars 446 to 450
@@ -549,13 +549,13 @@ musicOboeIMvtI = \relative c {
 	aes8-> \tuplet 3/2 8 {g16( f e} f8) r
 	f'8-> \tuplet 3/2 4 {ees!16( des c} des8) r
 	R2
-	des'8-.\p c16( des \tuplet 3/2 4 {bes8 aes bes}
+	\partCombineApart des'8-.\p c16( des \tuplet 3/2 4 {bes8 aes bes}
 	des) r r bes-.
 % Bars 491 to 495
 	aes-. f-. ees-. des-.
 	r4 r8 des\p(
 	des'4. c8
-	des8) r r4
+	des8) r r4 \partCombineAutomatic
 	R2
 % Bars 496 to 500
 	r4 cis,\brack\pp
@@ -586,10 +586,10 @@ musicOboeIMvtI = \relative c {
 	g8\repeatTie r  ees4\pp
 	r e
 % Bars 546 to 550
-	f8(\p e16 f des8) r
+	\partCombineApart f8(\p e16 f des8) r
 	ges8( f16 ges d!8) r
 	g!-.\< fis16( g ees8) r
-	aes-. g16( aes e8)\! r
+	aes-. g16( aes e8)\! r \partCombineAutomatic
 	\tuplet 3/2 4 {a!8(\ff g a} g4->)
 % Bars 551 to 555
 	\tuplet 3/2 4 {a8( g a} g4->)
@@ -649,8 +649,8 @@ musicOboeIMvtI = \relative c {
 	
 	
 	
-	f2\f\<~
-	<< f {s8 s s s\!}>> \mark \default
+	\partCombineApart f2\f\<~
+	<< f {s8 s s s\!}>> \partCombineAutomatic \mark \default
 % Bars 611 to 615
 	bes2\ff~
 	bes8 f-. d-. f-.
@@ -668,10 +668,10 @@ musicOboeIMvtI = \relative c {
 	R2
 	g!8\f r r4
 	r r8. e16\ff
-	g4. f8
+	\partCombineApart g4. f8 \partCombineAutomatic
 % Bars 626 to 630
 	ees!( e f fis)
-	g4.-> f!8
+	\partCombineApart g4.-> f!8 \partCombineAutomatic
 	ees( e f f)
 	f2->
 	aes4.-> aes8
@@ -688,9 +688,9 @@ musicOboeIMvtI = \relative c {
 	aes8 r aes r16 aes
 	aes8 r r8. f16
 % Bars 641 to 645
-	g4 r8 e
+	g4 r8 e!
 	f4 r8 aes
-	g4 r8 e
+	g4 r8 e!
 	f4 r8 aes
 	g r r4
 % Bars 646 to 650
@@ -708,11 +708,11 @@ musicOboeIMvtI = \relative c {
 % Bars 666 to 670
 	
 % Bars 671 to 675
-	d2(\p
+	\partCombineApart d2(\p
 	c4. bes8)
 	r4 r8. a16(
 	g2
-	f8) r r4
+	f8) r r4 \partCombineAutomatic
 % Bars 676 to 680
 	R2*7
 % Bars 681 to 685
@@ -720,13 +720,13 @@ musicOboeIMvtI = \relative c {
 	\mark \default
 	r4\fermata r
 	e4->\f f->
-	g d'8. c16
+	g \partCombineApart d'8. c16
 % Bars 686 to 690
-	bes4 a'8. g16
+	bes4 a'8. g16 \partCombineAutomatic
 	f2~
 	f8 ees d c
 	bes4 ees8. d16
-	c4 f
+	\once \partCombineApart c4 f
 % Bars 691 to 695
 	d4. bes8
 	e-. r f-. r
@@ -746,21 +746,21 @@ musicOboeIMvtI = \relative c {
 	f-> a->
 	c,\ff( bes)
 % Bars 706 to 710
-	c ees~
+	\partCombineApart c ees~
 	ees d8. c16
-	c4( d)
+	c4( d) \partCombineAutomatic
 	ees( d)
 	ees g\fz~
 % Bars 711 to 715
 	g f8. d16
 	d4 g\fz~
 	g f8. d16
-	d4 bes'->\fff~
+	d4 \partCombineApart \stemDown bes'->~
 	bes2~
 % Bars 716 to 720
 	bes~
 	bes~
-	bes8 r r4
+	\stemUp bes8 \partCombineAutomatic r r4
 	R2*4
 	
 % Bars 721 to 725
