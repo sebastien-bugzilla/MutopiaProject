@@ -35,7 +35,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 21 to 25
 	gis~
 	gis~
-	gis~_\crescmarkup
+	gis~
 	gis~
 	gis
 % Bars 26 to 30
@@ -67,7 +67,7 @@ musicClarinettoIIMvtI = \relative c {
 	ees,2\f\<~
 	ees8 f g8.-> aes16\!
 	aes2\ff~
-	aes8\< ees( ees' des16 c)\!
+	aes8\< ees( ees'! des16 c)\!
 % Bars 51 to 55
 	ees8.\f d!16 d8. ees16
 	ees8 r r4
@@ -85,7 +85,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 66 to 70
 		
 		
-		f,,2\fz\>(
+		f,,2\fz\>_(
 		e)\!
 		d''4.(\p des16\< c
 % Bars 71 to 75
@@ -149,7 +149,7 @@ musicClarinettoIIMvtI = \relative c {
 		fis fis fis  fis fis fis\!
 		fis fis fis\pp  fis fis fis
 % Bars 121 to 125
-		fis fis_\brackM\dimin fis  fis fis fis
+		fis fis fis  fis fis fis
 		fis fis fis  fis fis fis~}
 		fis r r4
 		R2*7
@@ -171,18 +171,18 @@ musicClarinettoIIMvtI = \relative c {
 		a b8. d16)\!
 		ais2(\> 
 		b8)\! r r4
-		g2\p~
+		\stemUp g2\p~
 		g~
 % Bars 146 to 150
 		g~
-		g
+		\stemDown g
 		fis~
 		fis~
 		fis~
 % Bars 151 to 155
 		fis
 		g'\p~
-		<< g~ {s4 s_\brackM\pocoapococresc}>>
+		<< g~ {s4 s}>>
 		g2~
 		g
 % Bars 156 to 160
@@ -234,7 +234,7 @@ musicClarinettoIIMvtI = \relative c {
 		b~
 		b
 % Bars 196 to 200
-		g'_\crescmarkup~
+		g'~
 		g4\< c~
 		c2~
 		<< c {s8 s s s\!}>> \mark \default
@@ -261,12 +261,12 @@ musicClarinettoIIMvtI = \relative c {
 		\tuplet 3/2 4 {b!8\f b b   b b b
 		b b b  b b b}
 		fis'4.\f( dis8)
-		b4 e8.( dis16)
+		b4 e8.( dis!16)
 		\tuplet 3/2 4 {fis,8 fis fis  fis fis fis
 % Bars 221 to 225
 		fis fis fis  fis fis fis}
-		fis'4.(\ff dis8)
-		b4 e8.-> dis16-.
+		fis'!4.( dis8)
+		b4 e8.-> dis!16-.
 		dis,2~
 		dis~
 % Bars 226 to 230
@@ -278,7 +278,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 231 to 235
 		fis'-. eis16( fis fis,8) r
 		f,!2\fp~
-		f~_\dimmarkup
+		f~
 		f~
 		f~
 % Bars 236 to 240
@@ -329,7 +329,7 @@ musicClarinettoIIMvtI = \relative c {
 	d~
 	d4 a8. d16
 	a8 r fis8. a16
-	d8 r fis,8._\dimmarkup a16
+	d8 r fis,8. a16
 % Bars 276 to 280
 	d8 r \tuplet 3/2 4 {fis,-.\> fis-. a-.}
 	d\! r \tuplet 3/2 4 {fis,-.\p fis-. a-.}
@@ -339,7 +339,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 281 to 285
 	bes
 	d2\p\<~
-	d4\! c_\crescmarkup~
+	d4\! c~
 	c bes8. a16-.
 	<< g2 {s8\> s s s\!}>>
 % Bars 286 to 290
@@ -374,7 +374,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 316 to 320
 	d
 	d~
-	<< d~ {s4 s_\crescmarkup } >>
+	<< d~ {s4 s } >>
 	d2~
 	d
 % Bars 321 to 325
@@ -477,12 +477,12 @@ musicClarinettoIIMvtI = \relative c {
 	
 % Bars 411 to 415
 	
-	c,8-.\p^\solo( d16\< e \tuplet 3/2 4 {f8 g a)\!}
+	c,8-.\p( d16\< e \tuplet 3/2 4 {f8 g a)\!}
 	g4.( e8)
 	c-. d16(\< e \tuplet 3/2 4 {f8 g a)\!}
 	g4.(\> e8)\!
 % Bars 416 to 420
-	c(_\ppcalando d16 e \tuplet 3/2 4 {f8 g a)}
+	c( d16 e \tuplet 3/2 4 {f8 g a)}
 	c,( d16 e \tuplet 3/2 4 {f8 g a)}
 	c,( d16 e \tuplet 3/2 4 {f8 g a)}
 	c,( d16 e \tuplet 3/2 4 {f8 g a)}
@@ -515,7 +515,7 @@ musicClarinettoIIMvtI = \relative c {
 	f16.[\< f32 f16] r r8 f~
 	f16.[ f32 f16] r r8 f~
 	f16.[ f32 f16] r r8 f\!
-	bes,,2-^~\f_\brackM\crescmarkup
+	bes,,2-^~\f
 	bes
 % Bars 446 to 450
 	cis-^~
@@ -559,7 +559,7 @@ musicClarinettoIIMvtI = \relative c {
 	f4.\fz e8
 % Bars 481 to 485
 	d-.\< a'-. a-. g-.\!
-	f,4.->_\piuf e8
+	f,4.-> e8
 	d-.\< a'-. a-. g-.\!
 	R2*12
 % Bars 486 to 490
@@ -608,7 +608,7 @@ musicClarinettoIIMvtI = \relative c {
 	b( a b a b a)}
 % Bars 556 to 560
 	b-. a16( b a b a b)
-	a8-. b,16( cis dis e fis gis)
+	a8-. b,16( cis dis! e fis! gis!)
 	dis'2\ff~
 	dis~
 	dis~
@@ -626,7 +626,7 @@ musicClarinettoIIMvtI = \relative c {
 	gis\pp gis gis  gis gis gis
 % Bars 571 to 575
 	gis gis gis  gis gis gis
-	gis gis gis_\brackM\calando  gis gis gis
+	gis gis gis  gis gis gis
 	gis gis gis  gis gis gis}
 	gis4 r
 	gis\< r
@@ -639,7 +639,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 581 to 585
 	g
 	e\legatoD\<(~
-	e4 d->\>~
+	e4 d->~\>
 	d\! c8. b16-.
 	<< a2-> {s8\> s s s\!}>>
 % Bars 586 to 590
@@ -718,9 +718,9 @@ musicClarinettoIIMvtI = \relative c {
 	R2*6
 % Bars 651 to 655
 	
-	g,2_\fpespr
+	g,2
 	R
-	g~_\pespr \mark \default
+	g_~ \mark \default
 	g8 r r4
 % Bars 656 to 660
 	R2*11

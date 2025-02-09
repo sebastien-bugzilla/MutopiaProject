@@ -25,10 +25,14 @@ pespr = \markup {
 }
 fpp = \markup {\dynamic fpp}
 legato = \markup {\italic {legato}}
-
+solo = \markup {Solo}
+ppcalando = \markup {\dynamic pp \italic {calando}}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
+)
+legatoD = #(make-dynamic-script 
+	(markup #:normal-text #:italic "legato")
 )
 
 
