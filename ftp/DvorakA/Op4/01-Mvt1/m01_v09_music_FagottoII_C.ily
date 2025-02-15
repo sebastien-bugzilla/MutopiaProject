@@ -4,12 +4,12 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFagottoIMvtI = \relative c {
+musicFagottoIIMvtI = \relative c {
 	\clef bass
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	bes2\pp~
+	bes,2\pp~
 	bes~
 	bes~
 	bes~
@@ -35,74 +35,74 @@ musicFagottoIMvtI = \relative c {
 % Bars 21 to 25
 	d~
 	d~
-	d~_\crescmarkup
+	d~
 	d~
 	d
 % Bars 26 to 30
-	d'\ff\fermata \mark \default
-	a4\f bes!->~
-	bes8 r c4->~
-	c8 r d4->~
-	d8 r ees4~->
+	b'\ff\fermata \mark \default
+	f'!4\f g->~
+	g8 r a4->~
+	a8 r bes!4->~
+	bes8 r c4~->
 % Bars 31 to 35
-	ees8 r a,8.-> bes16-.
+	c8 r f,8.-> g16-.
+	g8-. r g8.-> a16-.
+	a8-. r a8.-> bes16-.
 	bes8-. r bes8.-> c16-.
-	c8-. r c8.-> d16-.
-	d8-. r d8.-> ees16-.
-	ees8-. r r4
+	c8-. r r4
 % Bars 36 to 40
-	f,4\f g8. a16
-	bes4-> c->
-	des2(\brack\fz
-	c8) r r4
-	c\f d8. e16
+	R2*7
+	
+	
+	
+	
 % Bars 41 to 45
-	f4-> g->
-	aes2->
-	g,8-.\f g,-. g'8.-> f16
+	
+	
+	g8-.\f g,-. g'8.-> f16
 	f8-.[ g,-.\<] f'-. ees-.
 	ees-. g,-. ees'8.-> d16
 % Bars 46 to 50
 	d8[-. g,]-. c-. c'-.\!
-	des\f-. des,-. des'8.-> ces16-.
+	des,\f-. des,-. des'8.-> ces16-.
 	ces8[-. des,]-. ces'-. bes-.
 	bes-. des,-. bes'8.-> aes16-.
 	aes8[-. des,]-. ges-. ges-.
 % Bars 51 to 55
 	des2\f~
 	des8 r r4
-	des'\p aes8. ees16
+	des''\p aes8. ees16
 	f( ges aes bes aes8-.) f-.
-	c2\ff~
+	c,2\ff~
 % Bars 56 to 60
 	c8 r r4
-	c'\p g8. d16
+	c''\p g8. d16
 	e( f g a! g8) r
-	a2\pp~
-	a~
+	f2\pp~
+	f~
 % Bars 61 to 65
-	<< a~ {s8\< s s s\!}>>
-	a4\> bes8( c\! \mark \default
+	<< f~ {s8\< s s s\!}>>
+	<< f2 {s8\> s s s\!}>> \mark \default
 	\repeat volta 2 {
-		d4 bes~
-		bes2)
-		ees4( c)
+		bes,8 r r4
+		R2*6
+		
 % Bars 66 to 70
-		f2(
-		g8 f a, bes)
-		c2~\fz\>
-		c\! \clef tenor
-		c2~\p
+		
+		
+		
+		\clef tenor
+		bes'2~\p
 % Bars 71 to 75
-		c~
-		c~
-		c~\>
-		c\!
+		bes~
+		bes~
+		bes~\>
+		bes\!
 		R2*3
 % Bars 76 to 80
 		
 		\clef bass
-		f,8(\p e) r e([
+		f8(\p e) r e([
 		g\<-> f)] r f[(
 		bes-> a)]\! r a
 % Bars 81 to 85
@@ -137,51 +137,51 @@ musicFagottoIMvtI = \relative c {
 		ees4 c16([ d c r32 bes-.)]
 % Bars 106 to 110
 		a16( bes a g) \tuplet 3/2 4 {a8( g f)}
-		f'\ff e f4~
+		f\ff e f4~
 		f8 g aes g
 		f g aes4~
 		aes8 g aes f \mark \default
 % Bars 111 to 115
 		c2~
 		c
-		g'\ff~
-		g \clef tenor
-		\tuplet 3/2 4 {e'8\mf e e  e e e
+		e'\ff~
+		e \clef tenor
+		\tuplet 3/2 4 {c'8\mf c c  c c c
 % Bars 116 to 120
-		e e e  e\> e e
-		e e e  e e e\!}
-		e\p e e\> e
-		des des des des\!
-		\tuplet 3/2 4 {des des des\pp  des des des
+		c c c  c\> c c
+		c c c  c c c\!}
+		c\p c c\> c
+		bes bes bes bes\!
+		\tuplet 3/2 4 {bes bes bes\pp  bes bes bes
 % Bars 121 to 125
-		des des_\brackM\dimin des  des des des
-		des des des  des des des~}
-		des r r4
+		bes bes bes  bes bes bes
+		bes bes bes  bes bes bes~}
+		bes r r4
 		R2*3
 		
 % Bars 126 to 130
 		\clef bass
-		c2\pp~
-		c~
-		c~
-		c
+		f,2\pp~
+		f~
+		f~
+		f
 % Bars 131 to 135
 		R2*4
 		
 		
 		
-		R2*4
+		f2~\p
 % Bars 136 to 140
+		f~
+		f~
+		f
+		R2*5
 		
-		
-		
-		f,2~\p
-		f4\< g(~
 % Bars 141 to 145
-		g a8. c16)\!
-		gis2(\>
-		a8)\! r r4
-		g,8\p f'4(\fz d8)
+		
+		
+		
+		g8\p f'4(\fz d8)
 		g, f'4(\fz d8)
 % Bars 146 to 150
 		g, f'4(\fz d8)
@@ -191,16 +191,16 @@ musicFagottoIMvtI = \relative c {
 		g g'4(\fz c,8)
 % Bars 151 to 155
 		g g'4(\fz c,8)
-		g'2\p~
-		g~_\brackM\pocoapococresc
-		g~
-		g
+		f2\p~
+		f~
+		f~
+		f
 % Bars 156 to 160
-		c~\<
-		c~
-		c~
-		<< c {s8 s s s\!}>> \mark \default
-		f2\f~
+		bes~\<
+		bes~
+		bes~
+		<< bes {s8 s s s\!}>> \mark \default
+		f'2\f~
 % Bars 161 to 165
 		f8 c-. a-. c-. \clef tenor
 		\tuplet 3/2 4 {f8( c a} c16 d ees g)
@@ -210,7 +210,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 166 to 170
 		\tuplet 3/2 4 {f8( c a} c16 d ees g)
 		\tuplet 3/2 4 {f8( c a} c16 d ees g) \clef bass
-		ees2\ff~
+		ees,2\ff~
 		ees~
 		ees~
 % Bars 171 to 175
@@ -220,164 +220,164 @@ musicFagottoIMvtI = \relative c {
 		
 		
 % Bars 176 to 180
-		dis,2\p~
-		dis~
-		dis~
-		dis
-		e~
+		b2\p~
+		b~
+		b~
+		b
+		gis~
 % Bars 181 to 185
-		e~
-		e~
-		e
-		d~\p
-		d~
+		gis~
+		gis~
+		gis
+		fis~\p
+		fis~
 % Bars 186 to 190
-		d~
-		d
-		g,~
-		g~
-		g~
+		fis~
+		fis
+		\stemUp \noteShift #-0.9 f!~
+		\noteShift #-0.9 f~
+		\noteShift #-0.9 f~
 % Bars 191 to 195
-		g
-		ees'!~
-		ees~
-		ees~
-		ees
+		\noteShift #-0.9 f~
+		f~
+		f~
+		f~
+		f
 % Bars 196 to 200
-		bes'~_\brackM\crescmarkup
-		bes4\< d~
-		d2~
-		<< d {s8 s s s\!}>> \mark \default
-		aes2\f~
+		f'~
+		f4\< bes~
+		bes2~
+		<< bes {s8 s s s\!}>> \mark \default
+		f2\f~
 % Bars 201 to 205
-		aes~
-		aes~
-		aes~
-		aes~
-		aes~
+		f~
+		f~
+		f~
+		f~
+		f~
 % Bars 206 to 210
-		aes~
-		aes~
-		aes~
-		aes~
-		aes~
+		f~
+		f~
+		f~
+		f~
+		f~
 % Bars 211 to 215
-		aes~
-		aes~
-		aes~
-		aes~
-		aes
+		f~
+		f~
+		f~
+		f~
+		f
 % Bars 216 to 220
-		\tuplet 3/2 4 {a!8\f a a   a a a
+		\tuplet 3/2 4 {a,!8\f a a   a a a
 		a a a  a a a}
-		cis4.\f cis8
-		cis4 fis8.( e16)
-		\tuplet 3/2 4 {cis8 cis cis  cis cis cis
+		a'4.\f a8
+		a4 d8.( cis!16)
+		\tuplet 3/2 4 {a8 a a  a a a
 % Bars 221 to 225
-		cis cis cis  cis cis cis}
-		cis4.\ff cis8
-		cis4 fis8.-> e16-.
-		e,2~
+		a a a   a a a}
+		a4.\ff a8
+		a4 d8.-> cis!16-.
+		e,,2~
 		e~
 % Bars 226 to 230
 		e~
 		e
-		e'8-.\fp f16( e) \tuplet 3/2 4 {e,8( dis e)}
+		e''8-.\fp f16( e) \tuplet 3/2 4 {e,8( dis e)}
 		e'-. dis16( e e,8) r
 		e'-. dis16( e e,8) r
 % Bars 231 to 235
 		e'-. dis16( e e,8) r
-		ees!2\fp\>~
-		<< ees~\! {s4 s_\brackM\dimmarkup}>>
-		ees2~
-		ees~
+		f,2\fp\>~
+		<< f~\! {s4 s_\brackM\dimmarkup}>>
+		f2~
+		f~
 % Bars 236 to 240
 		\alternative {
 			\volta 1 {
-				ees8 r r4
-				\tuplet 3/2 4 {g8(\p f f'~} f4)
+				f8 r r4
+				R2
 			}
 			\volta 2 {
-				ees8-.\pp d16( ees \tuplet 3/2 4 {c8 b c}
-				d) c-. a-. f-.
+				\stemDown f'2\pp~
+				f~
 			}
 		}
 	}
-	ees'8-. d16( ees \tuplet 3/2 4 {c8 b c}
+	f~
 % Bars 241 to 245
-	d) c-. a-. f-. \clef tenor
-	ees'8-. d16( ees \tuplet 3/2 4 {c8 b c)}
-	ees-. d16( ees \tuplet 3/2 4 {c8 b c)}
-	ees-. d16( ees \tuplet 3/2 4 {c8 b c)}
-	ees-. d16( ees \tuplet 3/2 4 {c8 b c)}
+	f~ \clef tenor
+	f~
+	f~
+	f~
+	f
 % Bars 246 to 250
 	R2*4
 	
 	
 	
-	ges'8-.\pp f16( ges \tuplet 3/2 4 {ees8 d ees}
+	aes2\pp~
 % Bars 251 to 255
-	f) ees!-. c-. aes-.
-	ges'-. f16( ges \tuplet 3/2 4 {ees8 d ees}
-	f) ees-. c-. aes-.
-	ges'8-. f16( ges \tuplet 3/2 4 {ees8 d ees)}
-	ges8-. f16( ges \tuplet 3/2 4 {ees8 d ees)}
+	aes
+	aes~
+	aes~
+	aes~
+	aes~
 % Bars 256 to 260
-	ges8-. f16( ges \tuplet 3/2 4 {ees8 d ees)}
-	ges8-. f16( ges \tuplet 3/2 4 {ees8 d ees)} \mark \default
+	aes~
+	aes \mark \default
 	R2*8 \clef bass
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	d2\p\<
-	d4 d
-	d2
-	d4 d\!
-	c2\f~
+	g2\p\<
+	g4 g
+	g2
+	g4 g\!
+	g2\f~
 % Bars 271 to 275
-	c~
-	c~
-	c4 c8. c16
-	c8 r c8. d16
-	e8 r c8._\dimmarkup d16
+	g~
+	g~
+	g4 g8. g16
+	g8 r e8. g16
+	c8 r e,8. g16
 % Bars 276 to 280
-	e8 r \tuplet 3/2 4 {c-.\> c-. d-.}
-	e\! r \tuplet 3/2 4 {c-.\p c-. d-.}
-	ees!2\pp(
-	f4 ees8 des)
-	c2(
+	c8 r \tuplet 3/2 4 {e,-.\> e-. g-.}
+	c\! r \tuplet 3/2 4 {e,-.\p e-. g-.}
+	aes!2\pp~
+	aes~
+	aes~
 % Bars 281 to 285
-	des4 aes8 bes)
-	ees,!2\pp~
-	ees~
-	ees~
-	<< ees {s8\> s s s\!}>>
+	aes
+	\stemUp aes,!2\pp~
+	aes~
+	aes~
+	<< aes {s8\> s s s\!}>>
 % Bars 286 to 290
-	<< aes2~ {s8\p\< s s s\!}>>
-	aes2~
-	<< aes {s8\> s s s\!} >>
+	\stemDown << c2 {s8\p\< s s s\!}>>
 	des2
-	g,~
+	<< ees {s8\> s s s\!} >>
+	fes2
+	e!~
 % Bars 291 to 295
-	g~\<
-	g~\!
-	g~
-	g~_\crescmarkup
-	g~
-% Bars 296 to 300
-	g~\f
-	g \mark \default
-	cis(\f
+	e~\<
+	e~\!
 	e~
-	e4) cis8.( d16)
+	e~
+	e~
+% Bars 296 to 300
+	e~\f
+	e \mark \default
+	a(\f
+	cis~
+	cis4) a8.( b16)
 % Bars 301 to 305
-	e2
-	e4 cis8.( e16)
+	cis2
+	e,4 cis8.( e16)
 	g2~
 	g~\>
 	<< g {s8 s s s\!}>>
 % Bars 306 to 310
-	e,2\p(
+	e2\p(
 	f
 	g
 	a!)
@@ -396,67 +396,67 @@ musicFagottoIMvtI = \relative c {
 	c-. d16( c bes a bes c
 % Bars 321 to 325
 	a8) a r a
-	bes2\pp~
+	bes,2\pp~
 	bes~
 	bes~
 	bes
 % Bars 326 to 330
-	bes'8.( a16 \tuplet 3/2 4 {g8 f d')}
-	bes8.( a16 \tuplet 3/2 4 {g8 f d')}
-	bes8.( a16 \tuplet 3/2 4 {g8 f d')}
-	bes8.( a16 \tuplet 3/2 4 {g8 f d')} \mark \default
-	r8 f16(\pp ees) r8 d16( c)
-% Bars 331 to 335
-	r8 f16( ees) r8 d16( c)
-	r8 f16( ees) r8 d16( c)
-	r8 f16( ees) r8 d16( c)
 	R2*4
 	
+	
+	\mark \default
+	a'2\pp~
+% Bars 331 to 335
+	a~
+	a~
+	a
+	aes8^\solo-. d!-. aes-. d-. 
+	aes-. aes-. d-. d-. 
 % Bars 336 to 340
-	
-	
-	r8 ees16(\p des) r8 c16( bes)
-	r8 ees16( des) r8 c16( bes)
-	r8 ees16( des) r8 c16( bes)
+	aes-. d-. aes-. d-. 
+	aes-. aes-. d-. d-. 
+	g,2~\pp
+	g~
+	g~
 % Bars 341 to 345
-	r8 ees16( des) r8 c16( bes)
-	ais4(\p\< b
-	cis dis)\!
-	e( fis\<
-	gis ais,)\!
+	g
+	fis4(\p\< gis
+	ais b)\!
+	cis( dis\<
+	e fis)\!
 % Bars 346 to 350
-	c!(\f\< des)
-	ees(\! f8) r
-	des2(\fz
-	aes)\fz
-	ees'\fz~
+	aes(\f\< bes!)
+	c(\! des8) r
+	R2*4
+	
+	
 % Bars 351 to 355
-	ees
+	
 	r4 bes16(\f c bes aes
 	g8) r r4
 	r bes16(\mp c bes aes
 	g8) r r4 \mark \default
 % Bars 356 to 360
-	r ees8.\p ees16
-	ees8. ees16 ees8 r
-	r4 ees8. ees16
-	ees8. ees16 ees8 r
+	r g,8.\p g16
+	g8. g16 g8 r
 	r4 f8. f16
+	f8. f16 f8 r
+	r4 aes8. aes16
 % Bars 361 to 365
-	f8. f16 f8 r
-	r4 f8. f16
-	f8. f16 f8 r
+	aes8. aes16 aes8 r
 	r4 g8. g16
 	g8. g16 g8 r
+	r4 bes8. bes16
+	bes8. bes16 bes8 r
 % Bars 366 to 370
-	r4 g8. g16
-	g8. g16 g8 r
+	r4 a8. a16
+	a8. a16 a8 r
 	R2
-	bes16(\p c d ees f8) r
+	R
 	R2
 % Bars 371 to 375
-	c16(\f d ees f g8) r
-	r4 r8. c,16
+	R
+	r4 r8. c16
 	d4.\f c8-.
 	d4.-> c8-.
 	d-. c-. bes-. aes-. 
@@ -467,7 +467,7 @@ musicFagottoIMvtI = \relative c {
 	f-. ees-. d-. c-. 
 	b r r4 \clef tenor
 % Bars 381 to 385
-	g'2->\f
+	g''2->\f
 	f4-> g->
 	ees2->
 	bes'4..-> bes16
@@ -475,7 +475,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 386 to 390
 	aes4-> bes->
 	ges2->\brack\fz \clef bass
-	g,!8\f r r4
+	g,,!8\f r r4
 	ges8 r r4 \mark #11
 	R2
 % Bars 391 to 395
@@ -485,7 +485,7 @@ musicFagottoIMvtI = \relative c {
 	\tuplet 3/2 4 {f8\f-. g-. a-. bes-. c-. d-.}
 	ees4.-> d8-.
 % Bars 396 to 400
-	c-. bes-. a-. bes-. 
+	c'-. bes-. a-. bes-. 
 	c4.-> d8-.
 	ees-. d-. c-. bes-. 
 	a4.-> bes8-.
@@ -497,38 +497,38 @@ musicFagottoIMvtI = \relative c {
 	
 	
 % Bars 406 to 410
-	r4 bes8\brack\p bes
-	r4 f8 f
+	r4 g8\brack\p g
+	r4 d8 d
 	R2*4
 	
 	
 % Bars 411 to 415
 	
-	bes,2\pp~
-	bes~
-	bes~
-	bes~
+	ees,2\pp~
+	ees~
+	ees~
+	ees~
 % Bars 416 to 420
-	bes~\pp
-	bes~
-	bes~
-	bes
-	bes8 r r4
+	ees~\pp
+	ees~
+	ees~
+	ees
+	bes'8 r r4
 % Bars 421 to 425
 	R2*2
 	
-	f''2->~
-	f
-	g\fz~
+	R2*4
+	
+	
 % Bars 426 to 430
-	g4. r8
+	
 	R2*8
 % Bars 431 to 435
 	
 	
 	
 	
-	f,8(\p\< e) r e[(
+	f'8(\p\< e) r e[(
 % Bars 436 to 440
 	g-> f)] r f([
 	bes-> a)]\! r a
@@ -539,12 +539,12 @@ musicFagottoIMvtI = \relative c {
 	f\< ees8-.-> f-.->
 	g r c,4->~
 	c d8-.-> ees-.->\!
-	b r r4
+	b, r r4
 	R2*3
 % Bars 446 to 450
 	
 	
-	e,,8[\ff-> b']-> gis-> e'->
+	e,8[\ff-> b']-> gis-> e'->
 	b gis' e b'
 	d( cis16 d) \tuplet 3/2 4 {b8( ais b)}
 % Bars 451 to 455
@@ -563,12 +563,12 @@ musicFagottoIMvtI = \relative c {
 	a4-> g16([ a g r32 f-.)]
 	ees4-> c16([ d c r32 bes-.)]
 	a16( bes a g) \tuplet 3/2 4 {a8( g f)}
-	aes'2\ff~
-	aes~
+	f'2\ff~
+	f~
 % Bars 466 to 470
-	aes~
-	aes
-	aes8 r r4
+	f~
+	f
+	ges8 r r4
 	R2*3
 	
 % Bars 471 to 475
@@ -584,19 +584,19 @@ musicFagottoIMvtI = \relative c {
 	c8\<-. g'-. g-. f\!-. 
 	ees4._\piuf-> d8
 	c\<-. g'-. g-. f\!-. 
-	ees->\f \tuplet 3/2 8 {d16( c b} c8) r
-	c-> \tuplet 3/2 8 {bes!16( aes g} aes8) r
+	c-.\p[ g-.] c,-. g-.\fz
+	aes-.[\p ees'-.] aes-. ees'-.\fz
 % Bars 486 to 490
-	aes8-> \tuplet 3/2 8 {g16( f e} f8) r
+	f-.[\p c-.] f,-. c-.\fz
 	f'8-> \tuplet 3/2 8 {ees!16( des c} des8) r
 	R2*8
 % Bars 491 to 495
 	
 % Bars 496 to 500
-	r4 a\brack\pp
-	r a
-	r bes
-	r bes
+	r4 fis,\brack\pp
+	r fis
+	r g
+	r g
 	% Vi- -de section 
 % Bars 501 to 505
 	
@@ -618,47 +618,47 @@ musicFagottoIMvtI = \relative c {
 	
 	
 	\setBarNumber #544 \mark #15
-	bes8 r ces4\pp
-	r c!
+	g8 r aes4\pp
+	r a!
 % Bars 546 to 550
-	r des8\p c16( des
-	ges8) r \clef tenor d!8-. cis16( d
-	g!8) r ees-. d16( ees
-	aes8) r e-. dis16( e) \clef bass
-	\tuplet 3/2 4 {cis8(\ff b cis} b4)->
+	R2*4
+	
+	
+	
+	\tuplet 3/2 4 {a8(\ff g! a} g4)->
 % Bars 551 to 555
-	\tuplet 3/2 4 {cis8( b cis} b4->)
-	\tuplet 3/2 4 {cis8( b cis} b4->)
-	\tuplet 3/2 4 {cis8( b cis} b4->)
-	\tuplet 3/2 4 {cis8( b cis b cis b)
-	cis( b cis b cis b)}
+	\tuplet 3/2 4 {a8( g a} g4->)
+	\tuplet 3/2 4 {a8( g a} g4->)
+	\tuplet 3/2 4 {a8( g a} g4->)
+	\tuplet 3/2 4 {a8( g a g a g)
+	a( g a g a g)}
 % Bars 556 to 560
-	cis-. b16( cis b cis b cis)
-	b8-. cis,16( d e fis g a)
-	bes!2\ff~
-	bes~
-	bes~
+	a-. g16( a g a g a)
+	g8-. a,16( b cis! d e! fis!)
+	g2\ff~
+	g~
+	g~
 % Bars 561 to 565
-	bes
-	c~
-	c~
-	c8 r r4
+	g
+	a~
+	a~
+	a8 r r4
 	R2
 % Bars 566 to 570
-	\tuplet 3/2 4 {c8\mf c c  c\> c c
+	\tuplet 3/2 4 {c,8\mf c c  c\> c c
 	c c c  c c c\! \mark \default
 	c\p c c  c\> c c
 	c c c  c c c\!
 	c\pp c c  c c c
 % Bars 571 to 575
 	c c c  c c c
-	c c c_\brackM\calando  c c c
+	c c c  c c c
 	c c c  c c c }
-	c4 r
-	c\< r
+	bes4 r
+	bes\< r
 % Bars 576 to 580
-	c r
-	c\! r
+	bes r
+	bes\! r
 	bes,2\pp~
 	bes~
 	bes~
@@ -669,35 +669,35 @@ musicFagottoIMvtI = \relative c {
 	
 	
 % Bars 586 to 590
-	bes'8.(\p a16 \tuplet 3/2 4 {g8 f d')}
-	bes8.( a16 \tuplet 3/2 4 {g8 f d')}
-	bes8.( a16 \tuplet 3/2 4 {g8 f d')}
-	bes8.( a16 \tuplet 3/2 4 {g8 f d')}
-	bes2\p(~
+	bes2~\p
+	bes~
+	bes~
+	bes
+	bes''2\p(~
 % Bars 591 to 595
 	bes4 c->~\<
 	c d8.\! f16-.
 	cis2\>
 	d8)\! r r4
-	c,8\p bes'4(-> g8) 
+	c,2\p~
 % Bars 596 to 600
-	c,8 bes'4(-> g8)
-	c,8 bes'4(-> g8)
-	c,8 bes'4(-> g8)
-	c, ees'4(->\< a,8) 
-	c, ees'4(-> a,8) 
+	c
+	c~
+	c
+	<< c~ {s4 s\< }>>
+	c2~
 % Bars 601 to 605
-	c, ees'4(-> a,8) 
-	c, ees'4(-> a,8)\!
-	c2\mf~
-	c~\<
-	<< c~ {s8 s s s\!}>>
+	c~
+	<< c {s8 s s s\!}>>
+	bes'2\mf~
+	bes~\<
+	<< bes~ {s8 s s s\!}>>
 % Bars 606 to 610
-	c2
-	ees\mf~
-	ees
-	ees~\brack\f\<
-	<< ees {s8 s s s\!}>> \mark \default
+	bes2
+	a\mf~
+	a
+	a\brack\f\<
+	<< c {s8 s s s\!}>> \mark \default
 % Bars 611 to 615
 	bes2\ff~
 	bes8 f-. d-. f-.
@@ -708,18 +708,18 @@ musicFagottoIMvtI = \relative c {
 	bes8 f-. d-. f-.
 	\tuplet 3/2 4 {bes( f d f aes c
 	bes f d f aes c)}
-	b\f r r4
+	gis\f r r4
 	R2
 % Bars 621 to 625
-	c8\f r r4
+	a8\f r r4
 	R2
-	des8\f r r4
-	r4 r8. des16\ff
-	d!2
+	bes8\f r r4
+	r4 r8. bes16\ff
+	f2~
 % Bars 626 to 630
-	c8( bes a c)
-	d2
-	c8( bes a c)
+	f~
+	f~
+	f
 	d2->
 	c4.-> c8
 % Bars 631 to 635
@@ -739,7 +739,7 @@ musicFagottoIMvtI = \relative c {
 	aes f
 	bes g
 	aes f
-	g, gis
+	g gis
 % Bars 646 to 650
 	a( bes
 	c cis
@@ -748,50 +748,50 @@ musicFagottoIMvtI = \relative c {
 	g c,
 % Bars 651 to 655
 	f!8) r r4
-	d'2_\fpespr
+	bes2
 	R2
-	d(_\pespr \mark \default
-	c4 bes
+	bes( \mark \default
+	a8) r r4
 % Bars 656 to 660
-	c ees~
-	ees d8. c16
-	c4 d) \clef tenor
-	ees( d
-	ees g~
+	R2*7
+	
+	
+	
+	
 % Bars 661 to 665
-	g) f8.( d16)
-	d4 r
+	
+	
 	R2*4
 	
 	
 % Bars 666 to 670
 	\clef bass
-	f,2\pp~
-	f~
-	f
-	ees
+	f2\pp(
+	d~
+	d)
+	c
 % Bars 671 to 675
-	f\pp~
-	f~
-	f~
-	f4. r8
-	bes2(\pp
+	d\pp~
+	d~
+	d~
+	d4. r8
+	R2*7
 % Bars 676 to 680
-	c4. d8)
-	r4 r8. \clef tenor f16(
-	cis2->
-	d4) r8 f(
-	cis2_\dimmarkup
+	
+	
+	
+	
+	
 % Bars 681 to 685
-	d4) r8 f(
-	ees2\pp~
-	ees4\fermata d) \clef bass
-	bes4\f bes
-	bes a
+	
+	f2\pp(~
+	f4\fermata bes) \clef bass
+	g4\f f
+	e ees
 % Bars 686 to 690
-	bes bes
-	a2~
-	a4 a8 a
+	d des
+	c b
+	bes4 f8 f
 	g4 gis
 	a f
 % Bars 691 to 695
@@ -813,7 +813,7 @@ musicFagottoIMvtI = \relative c {
 	a-> f->
 	ees(\ff d)
 % Bars 706 to 710
-	ees c->~
+	ees' c->~
 	c bes8. a16
 	a4( bes)
 	c( bes)
@@ -823,15 +823,15 @@ musicFagottoIMvtI = \relative c {
 	bes4 f\fz~
 	f f8. bes16
 	bes4 g\fff~
-	g g
+	g g~
 % Bars 716 to 720
-	g' g~
+	g g~
 	g g
-	f8 r r8. f,16
+	f8 r r8. f16
 	g4-. gis-.
 	a-. bes-.
 % Bars 721 to 725
-	c-. cis-.
+	c,-. cis-.
 	d-. ees-.
 	f-. fis-.
 	g-. c,-.

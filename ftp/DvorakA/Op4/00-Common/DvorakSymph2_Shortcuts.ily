@@ -74,6 +74,23 @@ mmrPos = #(define-music-function
 
 omitFlag = \once \omit Flag
 
+noteShift = #(define-music-function
+	(shift)
+	(number?)
+	#{
+		\once \override NoteColumn.force-hshift = #shift
+	#}
+)
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+
 
 %aIIXoffset = #(define-music-function
 %	(offset)
@@ -98,14 +115,6 @@ omitFlag = \once \omit Flag
 %	(number?)
 %	#{
 %		\once \override Voice.Arpeggio.padding = #padding
-%	#}
-%)
-
-%beamOffset = #(define-music-function
-%	(position)
-%	(pair?)
-%	#{
-%		\once \offset positions #position Beam
 %	#}
 %)
 
@@ -274,14 +283,6 @@ omitFlag = \once \omit Flag
 %	(number?)
 %	#{
 %		\once \override Score.RehearsalMark.Y-offset = #offset
-%	#}
-%)
-
-%noteShift = #(define-music-function
-%	(shift)
-%	(number?)
-%	#{
-%		\once \override NoteColumn.force-hshift = #shift
 %	#}
 %)
 
