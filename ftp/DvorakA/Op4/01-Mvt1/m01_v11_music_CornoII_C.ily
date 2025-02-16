@@ -429,15 +429,15 @@ musicCornoIIMvtI = \relative c {
 	
 	
 	
-	R2*7
+	\mmrPos #-6 R2
 % Bars 421 to 425
-	
-	
-	
-	
-	
+	\mmrPos #-6 R
+	R
+	R
+	\mmrPos #-6 R
+	R
 % Bars 426 to 430
-	
+	R
 	R2*11
 % Bars 431 to 435
 	
@@ -655,10 +655,10 @@ musicCornoIIMvtI = \relative c {
 % Bars 666 to 670
 	
 % Bars 671 to 675
-	R2
+	\mmrPos #-8 R2
 	R2*2
 	
-	c,2\pp~
+	\stemUp c,2\pp~
 	c~
 % Bars 676 to 680
 	c~
@@ -668,7 +668,7 @@ musicCornoIIMvtI = \relative c {
 	c~
 % Bars 681 to 685
 	c~
-	c8 r r4 \mark \default
+	\stemDown c8 r r4 \mark \default
 	r4\fermata r
 	R2*3
 	
@@ -701,7 +701,7 @@ musicCornoIIMvtI = \relative c {
 	e f8. g16
 	g4 a
 	e f
-	e e->\fz~
+	e \once \stemUp e->\fz~
 % Bars 711 to 715
 	e~ e8. f16
 	f4 e\fz~

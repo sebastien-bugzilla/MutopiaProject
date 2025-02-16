@@ -34,6 +34,8 @@ crescD = #(make-dynamic-script
 legatoD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "legato")
 )
+%fzcresc = \markup {\dynamic fz \italic {cresc.}}
+pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
 
 
 %%%%%%%%%%%
