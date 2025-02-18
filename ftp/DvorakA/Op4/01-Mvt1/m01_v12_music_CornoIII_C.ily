@@ -73,13 +73,13 @@ musicCornoIIIMvtI = \relative c {
 	cis8 r r4
 	R2*2
 	
-	c2\p~
+	\partCombineApart c2\p~
 	c~
 % Bars 61 to 65
 	c~
 	c \mark \default
 	\repeat volta 2 {
-		b8 r r4
+		b8 r r4 \partCombineAutomatic 
 		R2*19
 % Bars 66 to 70
 	
@@ -98,7 +98,7 @@ musicCornoIIIMvtI = \relative c {
 		r8 cis,~->\f cis16.[ b32 gis16] r
 		r8 cis->~ cis16.[ b32 gis16] r
 		r8 f'!->~ f16.[ d32 b16] r
-		r8 f'!~ f16.[ d32 g16] r
+		r8 \partCombineApart f'!~ f16.[ d32 g16] \partCombineAutomatic r
 % Bars 91 to 95
 		b2\ff~
 		b4 r 
@@ -124,18 +124,18 @@ musicCornoIIIMvtI = \relative c {
 		e
 		cis\f~
 		cis
-		R2*9
+		\partCombineApart R2*9
 % Bars 116 to 120
 	
 % Bars 121 to 125
 		
 		
-		
+		\partCombineAutomatic
 		R2*3
 		
 % Bars 126 to 130
 		
-		R2*4
+		\partCombineApart R2*4
 % Bars 131 to 135
 		a2\pp~
 		a~
@@ -156,7 +156,7 @@ musicCornoIIIMvtI = \relative c {
 		b~
 % Bars 146 to 150
 		b~
-		b
+		b \partCombineAutomatic
 		R2*12
 % Bars 151 to 155
 	
@@ -224,11 +224,11 @@ musicCornoIIIMvtI = \relative c {
 		cis cis cis  cis cis cis
 		cis cis cis  cis cis cis
 		cis cis cis  cis cis cis}
-		e8.[(\ff dis16) e8.( dis16)]
+		\partCombineApart e8.[( dis16) e8.( dis16)]
 		e8.[( dis16) e8.( dis16)]
 % Bars 226 to 230
 		e8.[( dis16) e8.( dis16)]
-		e8.[( dis16) e8.( dis16)]
+		e8.[( dis16) e8.( dis16)] \partCombineAutomatic
 		e8 r r4
 		g,2\pp~
 		g~
@@ -278,13 +278,13 @@ musicCornoIIIMvtI = \relative c {
 % Bars 276 to 280
 	cis8 r \tuplet 3/2 4 {e8 e d}
 	cis\! r \tuplet 3/2 4 {e\p e d}
-	c! r r4
+	\once \partCombineApart c! r r4
 	R2*4
 	
 % Bars 281 to 285
 	
 	
-	c2->\fp~
+	\partCombineApart c2->~
 	c~
 	c
 % Bars 286 to 290
@@ -292,7 +292,7 @@ musicCornoIIIMvtI = \relative c {
 	bes)\!
 	c
 	bes(
-	a8) r r4
+	a8) r r4 \partCombineAutomatic
 % Bars 291 to 295
 	R2*7
 % Bars 296 to 300
@@ -302,11 +302,11 @@ musicCornoIIIMvtI = \relative c {
 % Bars 301 to 305
 	
 	
-	e'8 r r4
+	\once \partCombineApart e'8 r r4
 	R2*2
 	
 % Bars 306 to 310
-	e2(\p^\solo
+	\partCombineApart e2(\p^\solo
 	fis4 e8 d)
 	cis2(
 	d4~ \tuplet 3/2 4 {d8 a b}
@@ -315,7 +315,7 @@ musicCornoIIIMvtI = \relative c {
 	eis8[ fis e) r16 d-.]
 	cis2(
 	e8\> d a b\!
-	cis) r r4
+	cis) r r4 \partCombineAutomatic
 	R2*7
 % Bars 316 to 320
 	
@@ -395,15 +395,15 @@ musicCornoIIIMvtI = \relative c {
 % Bars 406 to 410
 	
 	
-	g,8\brack\p-. a16( b) \tuplet 3/2 4 {c8( d e)}
+	\partCombineApart g,8\brack\p-. a16( b) \tuplet 3/2 4 {c8( d e)}
 	d4.( b8)
 	g-. a16( b) \tuplet 3/2 4 {c8( d e)}
 % Bars 411 to 415
-	d4.( b8)
+	d4.( b8) \partCombineAutomatic
 	e4.(\pp c8)
-	d8. g,16 g4
+	\partCombineApart d8. g,16 g4 \partCombineAutomatic
 	e'4.( c8)
-	d8. g,16 g4
+	\partCombineApart d8. g,16 g4 \partCombineAutomatic
 % Bars 416 to 420
 	c4( d8 e)
 	c4(\pp d8 e)
@@ -553,12 +553,12 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	
-	R2*5
+	\partCombineApart R2*5
 % Bars 591 to 595
 	
 	
 	
-	
+	\partCombineAutomatic
 	R2*4
 % Bars 596 to 600
 	
@@ -623,8 +623,8 @@ musicCornoIIIMvtI = \relative c {
 % Bars 651 to 655
 	
 	
-	r8 g4.->\>~
-	g4.\! r8 \mark \default
+	r8 \partCombineApart g4.->~
+	g4. \partCombineAutomatic r8 \mark \default
 	R2*16
 % Bars 656 to 660
 	
@@ -633,18 +633,18 @@ musicCornoIIIMvtI = \relative c {
 % Bars 666 to 670
 	
 % Bars 671 to 675
-	R2*3
+	\partCombineApart R2*3
 	
 	
-	b2\pp~
+	b2~
 	b~
 % Bars 676 to 680
 	b~
-	b4. r8
+	b4. r8 
 	R2*5
 % Bars 681 to 685
 	
-	\mark \default
+	\partCombineAutomatic \mark \default
 	r4\fermata r
 	R2*3
 % Bars 686 to 690
@@ -670,10 +670,10 @@ musicCornoIIIMvtI = \relative c {
 	c8 r c4->
 	c-> c->
 	c-> c->
-	a(\ff g)
+	\partCombineApart a( g)
 % Bars 706 to 710
 	a c~
-	c b8. a16
+	c \partCombineAutomatic b8. a16
 	a4 b
 	c b
 	c c->\fz~
@@ -692,7 +692,7 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	r4 a-.\ff
-	g c-.
+	\once \partCombineApart g c-.
 	b-. r
 % Bars 726 to 729
 	r c

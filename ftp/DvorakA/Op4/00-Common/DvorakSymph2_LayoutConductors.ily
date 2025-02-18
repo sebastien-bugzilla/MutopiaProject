@@ -37,6 +37,7 @@
 	}
 	\context {
 		\Staff
+		\RemoveEmptyStaves
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f
 %		\override MultiMeasureRest.space-increment = 0
