@@ -456,13 +456,13 @@ musicTrombeIMvtI = \relative c {
 	
 	\mark \default
 % Bars 611 to 615
-	c,2\f~
-	c8 g-. e-. g-.
+	\partCombineApart c,2~
+	c8 g-. e-. g-. \partCombineAutomatic
 	c4-> r8 d->
 	c4-> r8 d->
-	c2~
+	\partCombineApart c2~
 % Bars 616 to 620
-	c8 g-. e-. g-.
+	c8 g-. e-. g-. \partCombineAutomatic
 	c4 r8 d
 	c4 r8 d
 	r4 e8\f r
@@ -496,7 +496,7 @@ musicTrombeIMvtI = \relative c {
 	\tuplet 3/2 4 {c8 c c} c8. c16
 	c4 r8 c16 c
 	\tuplet 3/2 4 {c8 c c} c8. c16
-	g8 r r4
+	\once \partCombineApart g8 r r4
 % Bars 646 to 650
 	R2*9
 % Bars 651 to 655
@@ -530,12 +530,12 @@ musicTrombeIMvtI = \relative c {
 	g'2~
 % Bars 696 to 700
 	g8 g-. g-. g-.
-	e r g, r
+	e r \once \partCombineApart g, r
 	d' r d r 
 	g2~
 	g8 g-. g-. g-.
 % Bars 701 to 705
-	e r g, r
+	e r \once \partCombineApart g, r
 	d' r d4->
 	d-> d->
 	d-> d->
