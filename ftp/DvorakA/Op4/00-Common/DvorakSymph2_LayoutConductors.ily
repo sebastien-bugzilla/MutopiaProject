@@ -49,7 +49,7 @@
 		\override TupletBracket.bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
 		\override Hairpin.height = 0.55
-		\override TrillSpanner.bound-details.right.padding = #1
+%		\override TrillSpanner.bound-details.right.padding = #1
 		\override Arpeggio.padding = #0.25
 		\override TupletNumber.avoid-slur = #'ignore
 		\override Beam.breakable = ##t
