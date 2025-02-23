@@ -31,11 +31,25 @@ ppcalando = \markup {\dynamic pp \italic {calando}}
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
 )
+dimD = #(make-dynamic-script 
+	(markup #:normal-text #:italic "dim.")
+)
 legatoD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "legato")
 )
+fpp = #(make-dynamic-script "fpp")
+
 %fzcresc = \markup {\dynamic fz \italic {cresc.}}
 pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
+ppdim = \markup {\dynamic pp \italic {dim.}}
+pplegato = \markup {\dynamic pp \italic {legato}}
+ppsempre = \markup {\dynamic pp \italic {sempre}}
+pizz = \markup {\italic {pizz.}}
+arco = \markup {\italic {arco}}
+trem = \markup {\italic {trem.}}
+fpocoapococrescendo = \markup {\dynamic f \italic {poco a poco crescendo}}
+ppmorendo = \markup {\dynamic pp \italic {morendo}}
+
 
 
 %%%%%%%%%%%
