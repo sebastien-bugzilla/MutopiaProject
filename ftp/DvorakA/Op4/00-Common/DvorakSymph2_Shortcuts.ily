@@ -28,17 +28,6 @@ legato = \markup {\italic {legato}}
 solo = \markup {Solo}
 ppcalando = \markup {\dynamic pp \italic {calando}}
 
-crescD = #(make-dynamic-script 
-	(markup #:normal-text #:italic "cresc.")
-)
-dimD = #(make-dynamic-script 
-	(markup #:normal-text #:italic "dim.")
-)
-legatoD = #(make-dynamic-script 
-	(markup #:normal-text #:italic "legato")
-)
-fpp = #(make-dynamic-script "fpp")
-
 %fzcresc = \markup {\dynamic fz \italic {cresc.}}
 pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
 ppdim = \markup {\dynamic pp \italic {dim.}}
@@ -49,7 +38,22 @@ arco = \markup {\italic {arco}}
 trem = \markup {\italic {trem.}}
 fpocoapococrescendo = \markup {\dynamic f \italic {poco a poco crescendo}}
 ppmorendo = \markup {\dynamic pp \italic {morendo}}
+fmarkup = \markup {\dynamic f}
+fzdim = \markup {\dynamic fz \normal-text \italic {dim.}}
+morendo = \markup {\italic {morendo}}
 
+
+crescD = #(make-dynamic-script 
+	(markup #:normal-text #:italic "cresc.")
+)
+dimD = #(make-dynamic-script 
+	(markup #:normal-text #:italic "dim.")
+)
+legatoD = #(make-dynamic-script 
+	(markup #:normal-text #:italic "legato")
+)
+fpp = #(make-dynamic-script "fpp")
+fzdimD = #(make-dynamic-script fzdim)
 
 
 %%%%%%%%%%%
