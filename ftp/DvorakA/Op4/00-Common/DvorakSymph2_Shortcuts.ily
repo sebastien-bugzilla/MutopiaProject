@@ -12,7 +12,7 @@ dimmarkup = \markup {\italic {dim.}}
 fcresc = \markup {\dynamic f \italic {cresc.}}
 mfmarcato = \markup {\dynamic mf \italic {marcato}}
 fzpocoapococrescendo = \markup {\dynamic fz \italic {poco a poco crescendo}}
-piuf = \markup {\italic {più} \dynamic f}
+piuf = \markup {\normal-text \italic {più} \dynamic f}
 pocoapococresc = \markup {\italic {poco a poco cresc.}}
 calando = \markup {\italic {calando}}
 fpespr = \markup {
@@ -41,7 +41,10 @@ ppmorendo = \markup {\dynamic pp \italic {morendo}}
 fmarkup = \markup {\dynamic f}
 fzdim = \markup {\dynamic fz \normal-text \italic {dim.}}
 morendo = \markup {\italic {morendo}}
-
+pcresc = \markup {\dynamic p \italic {cresc.}}
+sempre = \markup {\italic {sempre}}
+trem = \markup {\italic {trem.}}
+fzmarkup = \markup {\dynamic fz}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -54,7 +57,7 @@ legatoD = #(make-dynamic-script
 )
 fpp = #(make-dynamic-script "fpp")
 fzdimD = #(make-dynamic-script fzdim)
-
+piufD = #(make-dynamic-script piuf)
 
 %%%%%%%%%%%
 % functions
