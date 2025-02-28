@@ -45,6 +45,11 @@ pcresc = \markup {\dynamic p \italic {cresc.}}
 sempre = \markup {\italic {sempre}}
 trem = \markup {\italic {trem.}}
 fzmarkup = \markup {\dynamic fz}
+fmarc = \markup {\dynamic f \italic {marc.}}
+crescendo = \markup {\italic {crescendo}}
+conespr = \markup {\italic {con espr.}}
+conmoltaforza = \markup {\italic {con molta forza}}
+
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -58,6 +63,7 @@ legatoD = #(make-dynamic-script
 fpp = #(make-dynamic-script "fpp")
 fzdimD = #(make-dynamic-script fzdim)
 piufD = #(make-dynamic-script piuf)
+ffz = #(make-dynamic-script "ffz")
 
 %%%%%%%%%%%
 % functions
