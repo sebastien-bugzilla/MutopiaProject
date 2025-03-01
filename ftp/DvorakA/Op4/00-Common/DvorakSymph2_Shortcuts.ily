@@ -49,7 +49,7 @@ fmarc = \markup {\dynamic f \italic {marc.}}
 crescendo = \markup {\italic {crescendo}}
 conespr = \markup {\italic {con espr.}}
 conmoltaforza = \markup {\italic {con molta forza}}
-
+semprepianissimo = \markup {\italic {sempre pianissimo}}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
