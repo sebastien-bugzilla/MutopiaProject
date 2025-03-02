@@ -54,6 +54,18 @@ tempiMvtI = {
 }
 tempiMvtII = {
 	\tempo "Poco adadio"
+	s1.*23 s2.
+	% bar 24.5
+	\tempo "rit."
+	s2.
+	% bar 25
+	\tempo "[a tempo]"
+	s1.*11 s2 s2
+	% bar 36.66
+	\tempo "rit."
+	s2
+	% bar 37
+	\tempo "[a tempo]"
 }
 tempiMvtIII = {
 	\tempo "Scherzo"

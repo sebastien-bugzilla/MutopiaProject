@@ -55,6 +55,7 @@ fzpocoapococresc = \markup {\dynamic fz \italic {poco a poco cresc}}
 ffconmoltosforza = \markup {\dynamic ff \italic {con molto sforza}}
 conmoltosforza = \markup {\italic {con molto sforza}}
 fmarcato = \markup {\dynamic f \italic {marcato}}
+pococresc = \markup {\italic {poco cresc.}}
 
 
 crescD = #(make-dynamic-script 
@@ -71,8 +72,8 @@ fzdimD = #(make-dynamic-script fzdim)
 piufD = #(make-dynamic-script piuf)
 ffz = #(make-dynamic-script "ffz")
 
-markVi = \markup { \abs-fontsize #10 "Vi-" }
-markDe = \markup { \fontsize #0.6 "-de" }
+markVi = \markup { \abs-fontsize #12 "Vi-" }
+markDe = \markup { \abs-fontsize #12 "-de" }
 
 %%%%%%%%%%%
 % functions
@@ -128,6 +129,14 @@ beamOffset = #(define-music-function
 	#}
 )
 
+liriii = {
+	\set stemLeftBeamCount = #1
+	\set stemRightBeamCount = #3
+}
+liiiri = {
+	\set stemLeftBeamCount = #3
+	\set stemRightBeamCount = #1
+}
 
 
 %aIIXoffset = #(define-music-function
