@@ -570,28 +570,56 @@ musicClarinettoIIMvtI = \relative c {
 	r4 aes\brack\pp
 	r aes
 	r a!
-	r a
-	% Vi- -de section go to bar 544
+	r a \mark \markVi
+	R2*4
 % Bars 501 to 505
 	
+	
+	\mark \default
+	\tuplet 3/2 4 {a8(\brack\f g a} g4)
+	\tuplet 3/2 4 {a8( g a} g4)
 % Bars 506 to 510
-	
+	\tuplet 3/2 4 {a8( g a} g4)
+	\tuplet 3/2 4 {a8( g a} g4)
+	\tuplet 3/2 4 {a8( g a g a g)
+	a( g a g a g)}
+	a-. g16( a g a g a)
 % Bars 511 to 515
-	
+	g8-. a16( g a g a g)
+	fis2~
+	fis~
+	fis~
+	fis
 % Bars 516 to 520
-	
+	bes4\pp bes
+	bes bes
+	bes bes
+	bes bes
+	R2*8
 % Bars 521 to 525
 	
 % Bars 526 to 530
 	
+	
+	g4.->\f fis8-.
+	e-. b'-. b-. a-.
+	g4.-> fis8->
 % Bars 531 to 535
+	e-. b'-. b-. a-.
+	g-. r r4
+	R2*4
+	
 	
 % Bars 536 to 540
 	
+	\tuplet 3/2 4 {a8\fp a a  a a a}
+	a r r4
+	\tuplet 3/2 4 {a8\fp a a  a a a}
+	a r r4
 % Bars 541 to 545
-	
-	
-	\mark #15 \setBarNumber #544 
+	\tuplet 3/2 4 {a8\fp a a  a a a}
+	a r r4
+	\tuplet 3/2 4 {a8\fp a a  a a a} \mark \default
 	a8 r bes4\pp
 	r b!
 % Bars 546 to 550

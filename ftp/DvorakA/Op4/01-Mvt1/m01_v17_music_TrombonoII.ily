@@ -352,7 +352,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 471 to 475
 	\mark \default
-	R2*2
+	\grace {s8} R2*2
 	
 	r4 g8\p r
 	R2
@@ -375,27 +375,53 @@ musicTrombonoIIMvtI = \relative c {
 	
 	
 	
-	% Vi- -de section : go to bar 544
+	\mark \markVi
+	R2*4
 % Bars 501 to 505
 	
+	
+	\mark \default
+	b2\ff_\brackM\conmoltosforza
+	r4 b8. b16
 % Bars 506 to 510
-	
+	b2
+	r4 b8. b16
+	b2~
+	b~
+	b~
 % Bars 511 to 515
-	
+	b
+	r8 cis4.->\ff
+	r8 cis4.->
+	r8 cis4.->
+	r8 cis4.->
 % Bars 516 to 520
+	d8 r r4
+	R2*3
 	
+	
+	r4 r8 a\p
 % Bars 521 to 525
-	
+	R2
+	r4 a8 r
+	R2
+	r4_\pocoapococrescendo a8 r
+	R2
 % Bars 526 to 530
-	
+	r4 a8 r
+	R2
+	r4 a8\mf r
+	r4 a8 r
+	r4 a8 r
 % Bars 531 to 535
-	
+	r4 a8 r
+	R2*12
 % Bars 536 to 540
 	
 % Bars 541 to 545
 	
 	
-	\setBarNumber #544 \mark #15
+	\mark \default
 	R2*6
 	
 % Bars 546 to 550
@@ -425,7 +451,7 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 566 to 570
 	
 	\mark \default
-	R2*18
+	\grace {s8.} R2*18
 % Bars 571 to 575
 	
 % Bars 576 to 580
@@ -545,7 +571,7 @@ musicTrombonoIIMvtI = \relative c {
 	ees ees8. d16
 	bes4 ees\fz~
 	ees ees8. d16
-	b4 cis\fff~
+	bes4 cis\fff~
 	cis2~
 % Bars 716 to 720
 	cis~

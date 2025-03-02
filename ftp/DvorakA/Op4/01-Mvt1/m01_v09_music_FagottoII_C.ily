@@ -573,7 +573,7 @@ musicFagottoIIMvtI = \relative c {
 	
 % Bars 471 to 475
 	\mark \default
-	R2*6
+	\grace {s8} R2*6
 % Bars 476 to 480
 	
 	
@@ -596,16 +596,29 @@ musicFagottoIIMvtI = \relative c {
 	r4 fis,\brack\pp
 	r fis
 	r g
-	r g
-	% Vi- -de section 
+	r g \mark \markVi
+	R2
 % Bars 501 to 505
-	
+	aes,4\brack\p a~
+	a bes~
+	bes b \mark \default
+	\tuplet 3/2 4 {g'!8(\f f g} f4)
+	\tuplet 3/2 4 {g8( f g} f4)
 % Bars 506 to 510
-	
+	\tuplet 3/2 4 {g8( f g} f4)
+	\tuplet 3/2 4 {g8( f g} f4)
+	\tuplet 3/2 4 {g8( f g f g f)
+	g( f g f g f)}
+	g-. f16( g f g f g)
 % Bars 511 to 515
-	
+	f8-. g16( f g f g f)
+	e2~
+	e~
+	e~
+	e
 % Bars 516 to 520
-	
+	f8 r r4
+	R2*20
 % Bars 521 to 525
 	
 % Bars 526 to 530
@@ -614,10 +627,14 @@ musicFagottoIIMvtI = \relative c {
 	
 % Bars 536 to 540
 	
+	\tuplet 3/2 4 {g8\fp g g  g g g}
+	g r r4
+	\tuplet 3/2 4 {g8\fp g g  g g g}
+	g r r4
 % Bars 541 to 545
-	
-	
-	\setBarNumber #544 \mark #15
+	\tuplet 3/2 4 {g8\fp g g  g g g}
+	g r r4
+	\tuplet 3/2 4 {g8\fp g g  g g g} \mark \default
 	g8 r aes4\pp
 	r a!
 % Bars 546 to 550
@@ -646,8 +663,8 @@ musicFagottoIIMvtI = \relative c {
 	R2
 % Bars 566 to 570
 	\tuplet 3/2 4 {c,8\mf c c  c\> c c
-	c c c  c c c\! \mark \default
-	c\p c c  c\> c c
+	c c c  c c c\! } \mark \default
+	\grace {s8.} \tuplet 3/2 4 {c8\p c c  c\> c c
 	c c c  c c c\!
 	c\pp c c  c c c
 % Bars 571 to 575

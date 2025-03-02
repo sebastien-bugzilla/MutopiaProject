@@ -88,7 +88,7 @@
 				\new Staff {
 					\timeMvtI \nameStaffIIIMvtI
 					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
-%					\musicOboeIIMvtI
+%					\musicOboeIMvtI
 				}
 				\new Staff {
 					\timeMvtI \nameStaffIVMvtI

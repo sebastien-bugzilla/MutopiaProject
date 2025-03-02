@@ -410,7 +410,7 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 471 to 475
 	\mark \default
-	R2*28
+	\grace {s8} R2*28
 % Bars 476 to 480
 	
 % Bars 481 to 485
@@ -423,16 +423,29 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	
-	% Vi- -de Section. Go to Bar 544
+	\mark \markVi
+	R2*4
 % Bars 501 to 505
 	
+	
+	\mark \default
+	f'2:32\ff
+	f:
 % Bars 506 to 510
-	
+	f:
+	f:
+	f:
+	f:
+	f:
 % Bars 511 to 515
-	
+	f:
+	bes,:
+	bes:
+	bes:
+	bes:
 % Bars 516 to 520
-	
+	bes8 r r4
+	R2*27
 % Bars 521 to 525
 	
 % Bars 526 to 530
@@ -444,7 +457,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 541 to 545
 	
 	
-	\setBarNumber #544 \mark #15
+	\mark \default
 	R2*14
 % Bars 546 to 550
 	
@@ -465,7 +478,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 566 to 570
 	
 	\mark \default
-	R2*2
+	\grace {s8.} R2*2
 	
 	bes,2:16\pp
 % Bars 571 to 575

@@ -465,7 +465,7 @@ musicCornoIVMvtI = \relative c {
 	
 % Bars 471 to 475
 	\mark \default
-	e2\fz~
+	\grace {s8} e2\fz~
 	e
 	a,\fz~
 	a
@@ -489,15 +489,29 @@ musicCornoIVMvtI = \relative c {
 	
 	
 	
-	% Vi- -de section : go back to bar 544
+	\mark \markVi
+	R2*4
 % Bars 501 to 505
 	
+	
+	\mark \default
+	b2\ff
+	r8 b b \tuplet 3/2 8 {b16 b b}
 % Bars 506 to 510
-	
+	b2
+	r8 b b \tuplet 3/2 8 {b16 b b}
+	b2~
+	b~
+	b~
 % Bars 511 to 515
-	
+	b
+	g,->
+	r8 g g \tuplet 3/2 8 {g16 g g}
+	g2->
+	r8 g g \tuplet 3/2 8 {g16 g g}
 % Bars 516 to 520
-	
+	g8 r r4
+	R2*27
 % Bars 521 to 525
 	
 % Bars 526 to 530
@@ -509,8 +523,8 @@ musicCornoIVMvtI = \relative c {
 % Bars 541 to 545
 	
 	
-	\setBarNumber #544 \mark #15
-	r4 f,\pp
+	\mark \default
+	r4 f'\pp
 	r fis
 % Bars 546 to 550
 	R2*4
@@ -539,7 +553,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 566 to 570
 	
 	\mark \default
-	R2*6
+	\grace {s8.} R2*6
 % Bars 571 to 575
 	
 	

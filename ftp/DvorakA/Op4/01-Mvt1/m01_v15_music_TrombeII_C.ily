@@ -372,7 +372,7 @@ musicTrombeIIMvtI = \relative c {
 	R2*3
 % Bars 471 to 475
 	\mark \default
-	R2*28
+	\grace {s8} R2*28
 % Bars 476 to 480
 	
 % Bars 481 to 485
@@ -385,34 +385,52 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	
-	% Vi- -de section => go to bar 544
+	\mark \markVi
+	R2*4
 % Bars 501 to 505
 	
+	
+	\mark \default
+	a2\ff
+	r8 a a \tuplet 3/2 8 {a16 a a}
 % Bars 506 to 510
-	
+	a2
+	r8 a a \tuplet 3/2 8 {a16 a a}
+	a2~
+	a~
+	a~
 % Bars 511 to 515
-	
+	a
+	c,->
+	r8 c c \tuplet 3/2 8 {c16 c c}
+	c2->
+	r8 c c \tuplet 3/2 8 {c16 c c}
 % Bars 516 to 520
-	
+	c8 r r4
+	R2*15
 % Bars 521 to 525
 	
 % Bars 526 to 530
 	
 % Bars 531 to 535
 	
+	r4 r8 b\f
+	r4 r8 g'
+	r4 r8 e
+	r4 r8 c
 % Bars 536 to 540
-	
+	R2*8
 % Bars 541 to 545
 	
 	
-	\setBarNumber #544 \mark #15
+	\mark \default
 	R2*6
 % Bars 546 to 550
 	
 	
 	
 	
-	b!2->\f
+	b'!2->\f
 % Bars 551 to 555
 	b->
 	b->
@@ -434,7 +452,7 @@ musicTrombeIIMvtI = \relative c {
 % Bars 566 to 570
 	
 	\mark \default
-	R2*43
+	\grace {s8.} R2*43
 % Bars 571 to 575
 	
 % Bars 576 to 580

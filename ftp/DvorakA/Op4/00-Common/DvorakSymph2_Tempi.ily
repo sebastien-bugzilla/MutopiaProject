@@ -15,7 +15,7 @@ tempiMvtI = {
 	s2*13
 	% bar 144
 	\tempo "Tempo I."
-	s2*356 s2*38
+	s2*438
 	% bar 582
 	\tempo "Poco tranquillo"
 	s2*13

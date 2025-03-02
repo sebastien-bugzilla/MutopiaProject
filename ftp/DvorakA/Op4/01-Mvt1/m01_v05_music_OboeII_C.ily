@@ -496,23 +496,22 @@ musicOboeIIMvtI = \relative c {
 	ees4 r
 	R2*2
 	
-	
-% Bars 461 to 465
 	f4\f r
+% Bars 461 to 465
 	R2
 	f4\f r
 	R2
 	gis2~\ff
-% Bars 466 to 470
 	gis~
+% Bars 466 to 470
 	gis~
 	gis
 	aes,(~\pp
 	aes~
-% Bars 471 to 475
 	aes~
+% Bars 471 to 475
 	aes \mark \default
-	g8) r r4
+	\grace {s8} g8) r r4
 	R2*5
 % Bars 476 to 480
 	
@@ -542,29 +541,58 @@ musicOboeIIMvtI = \relative c {
 	r4 cis,\brack\pp
 	r cis
 	r d
-	r d
-	% Vi- -de Section up to bar 543
+	r d \mark \markVi
+	R2*4
 % Bars 501 to 505
 	
+	
+	\mark \default
+	\tuplet 3/2 4 {g'8(\f f g} f4)
+	\tuplet 3/2 4 {g8( f g} f4)
 % Bars 506 to 510
-	
+	\tuplet 3/2 4 {g8( f g} f4)
+	\tuplet 3/2 4 {g8( f g} f4)
+	\tuplet 3/2 4 {g8( f g f g f)
+	g( f g f g f)}
+	g-. f16( g f g f g)
 % Bars 511 to 515
-	
+	f8-. g16( f g f e d)
+	cis2~
+	cis~
+	cis~
+	cis
 % Bars 516 to 520
-	
+	d8 r r4
+	R2*7
 % Bars 521 to 525
 	
+	
+	
+	a2~
+	a
 % Bars 526 to 530
-	
+	d\<~
+	<< d {s4 s\!}>>
+	f4.->\f e8-.
+	d-. a'-. a-. g-. 
+	f4.-> e8
 % Bars 531 to 535
-	
+	d-. a'-. a-. g-. 
+	f \tuplet 3/2 8 {e16( d cis} d8) r
+	d-. \tuplet 3/2 8 {c!16( bes a } bes8) r
+	bes-. \tuplet 3/2 8 {a16( g fis} g8) r
+	g'-. \tuplet 3/2 4 {f!16( ees! d} ees8) r
 % Bars 536 to 540
+	R2
+	R2*5
+	
+	
 	
 % Bars 541 to 545
 	
-	
-	\setBarNumber #544 \mark #15
-	ees'8\repeatTie r  ces4\pp
+	r4 r8 bes(\p\<
+	\tuplet 3/2 4 {aes g ees'\!} ees4~\> \mark \default
+	ees8) r  ces4\pp
 	r c!
 % Bars 546 to 550
 	R2*4
@@ -592,8 +620,8 @@ musicOboeIIMvtI = \relative c {
 	R2
 % Bars 566 to 570
 	\tuplet 3/2 4 {c8\mf c c  c\> c c
-	c c c  c c c\! \mark \default
-	c\p c c  c\> c c
+	c c c  c c c\! } \mark \default
+	\grace {s8.} \tuplet 3/2 4 { c8\p c c  c\> c c
 	c c c  c c c\!
 	c\pp c c  c c c 
 % Bars 571 to 575

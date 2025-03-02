@@ -509,28 +509,56 @@ musicCornoIMvtI = \relative c {
 	c8 r r4
 	R2*3
 	
-	
-	% Vi- -de section. Go to bar 544
+	\mark \markVi
+	R2*4
 % Bars 501 to 505
 	
+	
+	\mark \default
+	a2\ff
+	r8 a a \tuplet 3/2 8 {a16 a a}
 % Bars 506 to 510
-	
+	a2
+	r8 a a \tuplet 3/2 8 {a16 a a}
+	a2~
+	a~
+	a~
 % Bars 511 to 515
-	
+	a
+	b~
+	b~
+	b~
+	b
 % Bars 516 to 520
+	c8 r r4
+	R2*3
 	
+	
+	e2\fz~
 % Bars 521 to 525
-	
+	e~
+	e~
+	e
+	e,_\fzpocoapococresc~
+	e
 % Bars 526 to 530
-	
+	e~
+	e
+	\tuplet 3/2 4 {e8\f e e  e e e
+	e e e  e e e
+	e e e  e e e
 % Bars 531 to 535
-	
+	e e e  e e e
+	a(\fp e) e-. a( e) e-.}
+	a r r4
+	\tuplet 3/2 4 {d8\fp( a) a-. d( a) a-.}
+	d r r4
 % Bars 536 to 540
-	
+	R2*8
 % Bars 541 to 545
 	
 	
-	\setBarNumber #544 \mark #15
+	\mark \default
 	R2*6
 % Bars 546 to 550
 	

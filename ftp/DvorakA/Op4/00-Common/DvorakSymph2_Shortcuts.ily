@@ -50,6 +50,12 @@ crescendo = \markup {\italic {crescendo}}
 conespr = \markup {\italic {con espr.}}
 conmoltaforza = \markup {\italic {con molta forza}}
 semprepianissimo = \markup {\italic {sempre pianissimo}}
+ppocoapococresc = \markup {\dynamic p \italic {poco a poco cresc.}}
+fzpocoapococresc = \markup {\dynamic fz \italic {poco a poco cresc}}
+ffconmoltosforza = \markup {\dynamic ff \italic {con molto sforza}}
+conmoltosforza = \markup {\italic {con molto sforza}}
+fmarcato = \markup {\dynamic f \italic {marcato}}
+
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -64,6 +70,9 @@ fpp = #(make-dynamic-script "fpp")
 fzdimD = #(make-dynamic-script fzdim)
 piufD = #(make-dynamic-script piuf)
 ffz = #(make-dynamic-script "ffz")
+
+markVi = \markup { \abs-fontsize #10 "Vi-" }
+markDe = \markup { \fontsize #0.6 "-de" }
 
 %%%%%%%%%%%
 % functions

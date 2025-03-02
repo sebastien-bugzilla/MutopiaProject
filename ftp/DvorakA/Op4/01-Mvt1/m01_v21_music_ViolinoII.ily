@@ -569,7 +569,7 @@ musicViolinoIIMvtI = \relative c {
 	
 % Bars 471 to 475
 	\mark \default
-	R2*2
+	\grace {s8} R2*2
 	
 	g'4\fz~ g8 \tuplet 3/2 8 {g16( a b)}
 	c4.\< d8(
@@ -601,28 +601,60 @@ musicViolinoIIMvtI = \relative c {
 	des'-. c16( des \tuplet 3/2 4 {a!8 gis a)}
 	des-. c16( des \tuplet 3/2 4 {a!8 gis a)}
 	d!-. cis16( d \tuplet 3/2 4 {bes8 a bes)}
-	d-. cis16( d \tuplet 3/2 4 {bes8 a bes)}
-	% Vi- -de section : go to bar 544
+	d-. cis16( d \tuplet 3/2 4 {bes8 a_\pocoapococresc bes)} \mark \markVi
+	ees2(
 % Bars 501 to 505
-	
+	<< e) {s4 s\<}>>
+	f2(
+	<< fis) {s8 s s s\!}>> \mark \default
+	g4:16\f a8: g:
+	e4: d8: e:
 % Bars 506 to 510
-	
+	d4: b:
+	a: g:
+	g'2:\ff
+	g4: f:
+	e: d16 d b' b
 % Bars 511 to 515
-	
+	<b, g'>2:16
+	\tuplet 3/2 4 {bes'!8(-> a bes) bes->( a bes) 
+	bes->( a bes) bes->( a bes) 
+	bes->( a bes) bes->( a bes) 
+	bes->( a bes) bes->( a bes) }
 % Bars 516 to 520
-	
+	bes r r bes^\pizz
+	r4 r8 bes
+	r4 r8 bes
+	r4 r8 bes
+	R2
 % Bars 521 to 525
-	
+	b,4:16\p\<^\arco c:
+	<< <d, d'>2: {s8 s s s\!}>>
+	<d' e>4:\< <d f>8: <d g>:\!
+	a'8_\fzpocoapococrescendo a,~ a \tuplet 3/2 8 {a16( b cis)}
+	d4 e(
 % Bars 526 to 530
-	
+	f8) f4->\fz( e8)
+	d4. e8~
+	e d4-> a'8->~
+	a d,4-> e8--->
+	a, \tuplet 3/2 8 {a16( b cis} d8-.) e-.
 % Bars 531 to 535
-	
+	f4.->\fz e8->
+	a4.\p g8->\fz
+	f4.\p ees!8->\fz
+	d4.\p c8->\fz
+	bes4.\p aes8->\fz
 % Bars 536 to 540
-	
+	bes,4.\pp bes8~
+	bes4. bes8~
+	bes4. bes8~
+	bes4. bes8~
+	bes4.\pp bes8~
 % Bars 541 to 545
-	
-	
-	\setBarNumber #544 \mark #15
+	bes4. bes8~
+	bes4. bes8~
+	bes4. bes'8 \mark \default
 	ees8-.\pp d16( ees \tuplet 3/2 4 {ces8 bes ces_\pocoapococresc)}
 	e!-. dis16( e \tuplet 3/2 4 {c!8 b c)}
 % Bars 546 to 550

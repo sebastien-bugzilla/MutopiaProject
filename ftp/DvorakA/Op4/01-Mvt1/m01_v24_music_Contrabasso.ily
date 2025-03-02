@@ -262,7 +262,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 216 to 220
 		a8\ff[-. e']-. cis-. a'-. 
 		e[-. cis']-. a-. e'-. 
-		e-. dis16( e) \tuplet 3/2 4 {f8( e f)}
+		e-. dis16( e) \tuplet 3/2 4 {f8( e f)}  % f => fis ??
 		e-. cis-. a-. r
 		a,[-. e']-. cis-. a'-. 
 % Bars 221 to 225
@@ -558,7 +558,7 @@ musicContrabassoMvtI = \relative c {
 	
 % Bars 471 to 475
 	\mark \default
-	g!4\fz~ g8\> \tuplet 3/2 8 {g16( a b\!}
+	\grace {s8} g!4\fz~ g8\> \tuplet 3/2 8 {g16( a b\!}
 	c4.)-> d8
 	ees c4 g8~
 	g r r16 c(\< bes aes
@@ -590,28 +590,60 @@ musicContrabassoMvtI = \relative c {
 	f4( ges)
 	f\( ges(
 	fis) g!\)
-	fis( g)
-	% Vi- -de section
+	fis( g~_\pocoapococresc \mark \markVi
+	g8) g aes4~
 % Bars 501 to 505
-	
+	aes8 aes a4\<~
+	a8 a bes4~
+	bes8 bes b4\! \mark \default
+	g2\f~
+	g~
 % Bars 506 to 510
-	
+	g~
+	g
+	g8\ff g r g
+	r g r g
+	r g r g
 % Bars 511 to 515
-	
+	r g r g'
+	g,4.\fz g8
+	g4.\fz g8
+	g4.\fz g8
+	g4.\fz g8
 % Bars 516 to 520
+	aes8 r r4
+	R2*3
 	
+	
+	a4\fp~ a8 \tuplet 3/2 8 {a16( b cis)}
 % Bars 521 to 525
-	
+	d4.\p e8
+	f d4 a8~
+	a r r16 d( c bes)
+	a8-._\pocoapococrescendo \tuplet 3/2 8 {d16( c bes} a8) r
+	r4 r16 d(\f c bes
 % Bars 526 to 530
-	
+	a8) \tuplet 3/2 8 {d16( c bes} a8) r
+	r4 r16 d( c bes)
+	a8-. \tuplet 3/2 8 {a16( b cis} d8 e-.)
+	f4.\fz e8
+	d->\fz a a a'
 % Bars 531 to 535
-	
+	d->\fz a-. a-. a'-.
+	d,->\p[ a->] d,-> a->\fz
+	bes-.\p[ f'-.] bes-. f'-.\fz
+	g-.\p\<[ d-.] g,-. d-.\fz
+	ees'-.\p[ bes-.] ees,-.[ bes-.\fz]
 % Bars 536 to 540
-	
+	g2\pp~
+	g~
+	g8 g g4~
+	g2
+	g2\pp~
 % Bars 541 to 545
-	
-	
-	\setBarNumber #544 \mark #15
+	g8 g g4~
+	g2
+	g \mark \default
 	g4(\pp aes)_\pocoapococresc
 	gis( a!~
 % Bars 546 to 550
@@ -641,7 +673,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 566 to 570
 	R2
 	\acciaccatura {c16\p d e} f2 \mark \default
-	R2
+	\grace {s8.} R2
 	\acciaccatura {c16 d e} f2_\dimmarkup
 	R2
 % Bars 571 to 575

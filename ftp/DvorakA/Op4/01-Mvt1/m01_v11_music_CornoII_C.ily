@@ -481,7 +481,7 @@ musicCornoIIMvtI = \relative c {
 	
 % Bars 471 to 475
 	\mark \default
-	R2*4
+	\grace {s8} R2*4
 	
 	
 	
@@ -509,35 +509,63 @@ musicCornoIIMvtI = \relative c {
 	
 	R2*3
 	
-	
-	% Vi- -de section. Go to bar 544
+	\mark \markVi
+	R2*4
 % Bars 501 to 505
 	
+	
+	\mark \default
+	d2\ff
+	r8 d d \tuplet 3/2 8 {d16 d d}
 % Bars 506 to 510
-	
+	d2
+	r8 d d \tuplet 3/2 8 {d16 d d}
+	d2~
+	d~
+	d~
 % Bars 511 to 515
-	
+	d
+	gis~
+	gis~
+	gis~
+	gis
 % Bars 516 to 520
+	a8 r r4
+	R2*3
 	
+	
+	e2\fz~
 % Bars 521 to 525
-	
+	e~
+	e~
+	e
+	e,~
+	e
 % Bars 526 to 530
-	
+	e~
+	e
+	\tuplet 3/2 4 {e8\f e e  e e e
+	e e e  e e e
+	e e e  e e e
 % Bars 531 to 535
-	
+	e e e  e e e
+	a'(\fp e) e-. a( e) e-.}
+	a r r4
+	\tuplet 3/2 4 {d8\fp( a) a-. d( a) a-.}
+	d r r4
 % Bars 536 to 540
-	
+	R2*8
 % Bars 541 to 545
 	
 	
-	\setBarNumber #544 \mark #15
+	\mark \default
 	R2*6
 % Bars 546 to 550
 	
 	
 	
 	
-	b'2->\f
+	b2->\f
 % Bars 551 to 555
 	b->
 	b->
@@ -559,7 +587,7 @@ musicCornoIIMvtI = \relative c {
 % Bars 566 to 570
 	
 	\mark \default
-	R2*14
+	\grace {s8.} R2*14
 % Bars 571 to 575
 	
 % Bars 576 to 580

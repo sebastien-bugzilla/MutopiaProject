@@ -596,16 +596,29 @@ musicFagottoIMvtI = \relative c {
 	r4 a\brack\pp
 	r a
 	r bes
-	r bes
-	% Vi- -de section 
+	r bes \mark \markVi
+	r ces8-._\ppocoapococresc bes16( ces
 % Bars 501 to 505
-	
+	e8) r c!-. b16( c
+	f8) r des-.( c16 des
+	ges8) r d!-. cis16( d) \mark \default
+	\tuplet 3/2 4 {b8(\f a b} a4)
+	\tuplet 3/2 4 {b8( a b} a4)
 % Bars 506 to 510
-	
+	\tuplet 3/2 4 {b8( a b} a4)
+	\tuplet 3/2 4 {b8( a b} a4)
+	\tuplet 3/2 4 {b8( a b  a b a)
+	b( a b a b a)}
+	b8-. a16( b a b a b)
 % Bars 511 to 515
-	
+	a8-. b16( a b a b d)
+	cis2~
+	cis~
+	cis~
+	cis
 % Bars 516 to 520
-	
+	d8 r r4
+	R2*20
 % Bars 521 to 525
 	
 % Bars 526 to 530
@@ -614,10 +627,14 @@ musicFagottoIMvtI = \relative c {
 	
 % Bars 536 to 540
 	
+	\tuplet 3/2 4 {bes8\fp bes bes  bes bes bes}
+	bes r r4
+	\tuplet 3/2 4 {bes8\fp bes bes  bes bes bes}
+	bes r r4
 % Bars 541 to 545
-	
-	
-	\setBarNumber #544 \mark #15
+	\tuplet 3/2 4 {bes8\fp bes bes  bes bes bes}
+	bes r r4
+	\tuplet 3/2 4 {bes8\fp bes bes  bes bes bes} \mark \default
 	bes8 r ces4\pp
 	r c!
 % Bars 546 to 550

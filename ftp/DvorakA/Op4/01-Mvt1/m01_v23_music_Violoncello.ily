@@ -270,7 +270,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 216 to 220
 		a8\ff[-. e']-. cis-. a'-. 
 		e[-. cis']-. a-. e'-. 
-		e-. dis16( e) \tuplet 3/2 4 {f8( e f)}
+		e-. dis16( e) \tuplet 3/2 4 {f8( e f)} % f => fis ??
 		e-. cis-. a-. r
 		a,[-. e']-. cis-. a'-. 
 % Bars 221 to 225
@@ -574,7 +574,7 @@ musicVioloncelloMvtI = \relative c {
 	\tuplet 3/2 4 {f8( ees c'} aes8. ges16)
 % Bars 471 to 475
 	\tuplet 3/2 4 {f8( ees c'} aes8. ges16) \clef bass \mark \default
-	g,,!4\fz~ g8\> \tuplet 3/2 8 {g16( a b\!}
+	\grace {s8} g,,!4\fz~ g8\> \tuplet 3/2 8 {g16( a b\!}
 	c4.)-> d8
 	ees c4 g8~
 	g r r16 c(\< bes aes
@@ -606,28 +606,60 @@ musicVioloncelloMvtI = \relative c {
 	f4( ges)
 	f\( ges(
 	fis) g!\)
-	fis( g)
-	% Vi- -de section
+	fis( g~_\pocoapococresc \mark \markVi
+	g8) g aes4~
 % Bars 501 to 505
-	
+	aes8 aes a4\<~
+	a8 a bes4~
+	bes8 bes b4\! \mark \default
+	g8[_\fmarcato d'] b g'
+	d[ b'] g d'
 % Bars 506 to 510
-	
+	f8-. e16( f) \tuplet 3/2 4 {d8( cis d)}
+	f-. e16( f d8-.) r16 g,,
+	g\ff d' cis d b g' fis g
+	d b' ais b g d' cis d
+	g, f' e f g, d' cis d
 % Bars 511 to 515
-	
+	g,( f' e f d8) r
+	g4:16 g:
+	g: g:
+	g: g:
+	g: g:
 % Bars 516 to 520
-	
+	aes8 r \clef tenor bes8. aes16
+	\tuplet 3/2 4 {g8( f d'} bes8.) aes16-.
+	\tuplet 3/2 4 {g8( f d'} bes8.) aes16-.
+	\tuplet 3/2 4 {g8( f d'} bes8.) aes16-.
+	a!8 r r4 \clef bass
 % Bars 521 to 525
-	
+	d,,4.\p e8
+	f d4 a8~
+	a r r16 d( c bes)
+	a8-._\pocoapococrescendo \tuplet 3/2 8 {d16( c bes} a8) r
+	r4 r16 d(\f c bes
 % Bars 526 to 530
-	
+	a8) \tuplet 3/2 8 {d16( c bes} a8) r
+	r4 r16 d( c bes)
+	a8-. \tuplet 3/2 8 {a16( b cis} d8 e-.)
+	f4.\fz e8
+	d->\fz a a a'
 % Bars 531 to 535
-	
+	d->\fz a-. a-. a'-.
+	d,->\p[ a->] d,-> a->\fz
+	bes-.\p[ f'-.] bes-. f'-.\fz
+	g-.\p\<[ d-.] g,-. d-.\fz
+	ees'-.\p[ bes-.] ees,-.[ bes-.\fz]
 % Bars 536 to 540
-	
+	g4.\pp g8~
+	g4. g8~
+	g4. g8~
+	g4. g8~
+	g4.\pp g8~
 % Bars 541 to 545
-	
-	
-	\setBarNumber #544 \mark #15
+	g4. g8~
+	g4. g8~
+	g4. g8 \mark \default
 	g4(\pp aes)_\pocoapococresc
 	gis( a!~
 % Bars 546 to 550
@@ -657,7 +689,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 566 to 570
 	c'4(\p a
 	f d) \mark \default
-	c'( a
+	\grace {s8.} c'4( a
 	f d)
 	c'(\pp a
 % Bars 571 to 575

@@ -529,7 +529,7 @@ musicFlautoIMvtI = \relative c {
 	aes-> aes->
 % Bars 471 to 475
 	aes-> aes-> \mark \default
-	g8 r r4
+	\grace {s8} g8 r r4
 	R2*5
 % Bars 476 to 480
 	
@@ -559,29 +559,61 @@ musicFlautoIMvtI = \relative c {
 	r4 a!
 	r a
 	r bes
-	r bes
-	% vi-de section => bar 543
+	r bes \mark \markVi
+	ees8-.\p_\brackM\pocoapococresc d16( ees ces8) r
 % Bars 501 to 505
-	
+	e8-. dis16( e c!8) r
+	f-. e16( f des8) r
+	fis8-. eis16( fis d!8) r \mark \default
+	\tuplet 3/2 4 {g8(\f f! g} f4)
+	\tuplet 3/2 4 {g8( f! g} f4)
 % Bars 506 to 510
-	
+	\tuplet 3/2 4 {g8( f g} f4)
+	\tuplet 3/2 4 {g8( f g} f4)
+	\tuplet 3/2 4 {g8( f g f g f)
+	g( f g f g f)}
+	g-. f16( g f g f g)
 % Bars 511 to 515
-	
+	f8-. g16( f g f g f)
+	e2~
+	e~
+	e~
+	e
 % Bars 516 to 520
-	
+	bes4->\pp bes->
+	bes-> bes->
+	bes-> bes->
+	bes-> bes->
+	R2*4
 % Bars 521 to 525
 	
+	
+	
+	a2(_\fzpocoapococrescendo
+	b4 c)
 % Bars 526 to 530
-	
+	d2(\fz
+	e4 f)
+	f4.\f-> e8-.
+	d-. a'-. a-. g-. 
+	f4.-> e8
 % Bars 531 to 535
-	
+	d-. a'-. a-. g-. 
+	f-. \tuplet 3/2 8 {e16( d cis} d8) r
+	d-. \tuplet 3/2 8 {c!16( bes a} bes8) r
+	bes-. \tuplet 3/2 8 {a16( g fis} g8) r
+	g-. \tuplet 3/2 8 {f!16( ees! d} ees8) r
 % Bars 536 to 540
-	
+	R2
+	ees'8-.\p d16( ees \tuplet 3/2 4 {c8 bes c}
+	ees) r r c-.
+	bes-. g-. f-. ees-. 
+	r4 r8 ees(\< 
 % Bars 541 to 545
-	
-	
-	\setBarNumber #544 \mark #15
-	g'8\repeatTie r ees4\pp
+	ees'4.\! d8
+	ees) r r d\p\<(
+	\tuplet 3/2 4 {c bes g'\!} g4~\> \mark \default
+	g8)\! r ees4\pp
 	r e
 % Bars 546 to 550
 	f8(\mf\< e16 f des8) r
@@ -609,8 +641,8 @@ musicFlautoIMvtI = \relative c {
 	R2
 % Bars 566 to 570
 	\tuplet 3/2 4 {a8\mf a a  a\> a a
-	a a a  a a a\! \mark \default
-	a\p a a  a\> a a
+	a a a  a a a\! } \mark \default
+	\grace {s8.} \tuplet 3/2 4 { a8\p a a  a\> a a
 	a a a  a a a\!
 	a\pp a a  a a a
 % Bars 571 to 575

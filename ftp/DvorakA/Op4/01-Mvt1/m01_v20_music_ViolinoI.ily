@@ -514,7 +514,7 @@ musicViolinoIMvtI = \relative c {
 	ees8( c16 bes~ bes4
 	ees8 c16 bes~ bes4
 	ees8 c16 bes ees8 g,)
-	bes(\pp c16 bes \tuplet 3/2 4 {g8 g f}
+	bes(\pp c16 bes \tuplet 3/2 4 {g8 f g}
 % Bars 421 to 425
 	f) d-.( c-. bes-.)
 	bes'4.->(\< a8)
@@ -606,29 +606,61 @@ musicViolinoIMvtI = \relative c {
 	des'8-. c16( des \tuplet 3/2 4 {a!8 gis a)}
 	des-. c16( des \tuplet 3/2 4 {a8 gis a)}
 	d!-. cis16( d \tuplet 3/2 4 {bes8 a bes)}
-	d-. cis16( d \tuplet 3/2 4 {bes8 a bes)}
-	% Vi- -de section : go to bar 544
+	d-. cis16( d \tuplet 3/2 4 {bes8 a_\pocoapococresc bes)} \mark \markVi
+	ees2(
 % Bars 501 to 505
-	
+	<< e) {s4 s\< }>>
+	f2(
+	<< fis) {s8 s s s\!}>>
+	g4:16\f a8: g:
+	e4: d8: e:
 % Bars 506 to 510
-	
+	d4: b:
+	a: g:
+	g'2:\ff
+	g4: f:
+	e: d16 d b' b
 % Bars 511 to 515
-	
+	b2:16
+	\tuplet 3/2 4 {bes!8(-> a bes) bes->( a bes) 
+	bes->( a bes) bes->( a bes) 
+	bes->( a bes) bes->( a bes) 
+	bes->( a bes) bes->( a bes) }
 % Bars 516 to 520
-	
+	bes r r4
+	bes,8\p^\pizz r r4
+	bes8 r r4
+	bes8 r r4
+	<< <a,,! a'!>2:16\fz\>^\arco {s8 s s s\!}>>
 % Bars 521 to 525
-	
+	q2:\p
+	q:\<
+	<< q: {s8 s s s\!}>>
+	q2:_\fzpocoapococrescendo
+	q8 f''4\< d32( e f g\!
 % Bars 526 to 530
-	
+	a4)~ a8 \tuplet 3/2 8 {a16(\< b cis\!)}
+	d4._\piuf e8~\<
+	e d4-> a'8->~
+	a\! d,4-> e8->~
+	e d4-> a8~
 % Bars 531 to 535
-	
+	a \tuplet 3/2 8 {a16( b cis} d8) e-.
+	f4.\p e8->\fz
+	d4.\p c8->\fz
+	bes4.\p a8->\fz
+	g4.\p f8->\fz
 % Bars 536 to 540
-	
+	ees!-.\pp d16( ees \tuplet 3/2 4 {c8 b c}
+	ees) r r c-.
+	bes-. g-. f-. ees-.
+	r4 r8 ees
+	ees'4.(\pp d8
 % Bars 541 to 545
-	
-	
-	\setBarNumber #544 \mark #15
-	ees8-.\pp d16( ees \tuplet 3/2 4 {ces8 bes_\pocoapococresc ces)}
+	ees) r r d(\<
+	\tuplet 3/2 4 {c bes g'\!)} g4\>~
+	g8\! r r4 \mark \default
+	ees'8-.\pp d16( ees \tuplet 3/2 4 {ces8 bes_\pocoapococresc ces)}
 	e-. dis16( e \tuplet 3/2 4 {c!8 b c)}
 % Bars 546 to 550
 	f2(\<
@@ -657,7 +689,7 @@ musicViolinoIMvtI = \relative c {
 % Bars 566 to 570
 	c'4(\p a
 	f d) \mark \default
-	c'( a
+	\grace {s8.} c'4( a
 	f d)
 	c'(_\ppcalando a
 % Bars 571 to 575

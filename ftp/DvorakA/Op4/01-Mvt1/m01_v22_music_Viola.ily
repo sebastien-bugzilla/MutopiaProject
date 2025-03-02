@@ -600,8 +600,8 @@ musicViolaMvtI = \relative c {
 	aes8.( ges16 \tuplet 3/2 4 {f8 ees c')}
 	aes8.( ges16 \tuplet 3/2 4 {f8 ees c')}
 % Bars 471 to 475
-	aes8.( ges16 \tuplet 3/2 4 {f8 ees c')}
-	g!8 r r4
+	aes8.( ges16 \tuplet 3/2 4 {f8 ees c')} \mark \default
+	\grace {s8} g!8 r r4
 	<g, g'>2:32\fz^\brackM\trem
 	<c, c'>:\fz
 	q:
@@ -633,29 +633,61 @@ musicViolaMvtI = \relative c {
 	aes') aes-. des,4~
 	des4. des8(
 	a'!) a-. d,!4~
-	d4. d8
-	% Vi- -de Section : go to bar 544
+	d4. d8(_\pocoapococresc \mark \markVi
+	\tuplet 3/2 4 {bes') bes bes} ees, ees(
 % Bars 501 to 505
-	
+	\tuplet 3/2 4 {ces') ces ces(} e,)\< e(
+	\tuplet 3/2 4 {c'!) c c(} f,) f(
+	\tuplet 3/2 4 {des') des des(} fis,) fis\!( \mark \default
+	g)[_\fmarcato d'] b g'
+	d[ b'] g d'
 % Bars 506 to 510
-	
+	f-. e16( f) \tuplet 3/2 4 {d8( cis d)}
+	f-. e16( f d8-.) r16 g,,
+	g\ff d' cis d b g' fis g
+	d b' ais b g d' cis d
+	g, f' e f g, d' cis d
 % Bars 511 to 515
-	
+	g,( f' e f d8) r
+	cis16 cis e e cis cis e e
+	cis cis e e cis cis e e
+	cis cis e e cis cis e e
+	cis cis e e cis cis e e
 % Bars 516 to 520
-	
+	f8 r \tuplet 3/2 4 {g,( f d'}
+	bes8. aes16-.) \tuplet 3/2 4 {g8( f d'}
+	bes8. aes16) \tuplet 3/2 4 {g8( f d'}
+	bes8. aes16) \tuplet 3/2 4 {g8( f d'}
+	a!8) r r4
 % Bars 521 to 525
-	
+	R2
+	a,4\p~ a8 \tuplet 3/2 8 {a16( b cis)}
+	d4. e8(
+	f16)_\pocoapococrescendo a, a a  a a a a
+	<<{b4:16 c:} \\ {a2:}>>
 % Bars 526 to 530
-	
+	d:
+	<<{e4: f:} \\ {d2:}>>
+	d,8: e: f: g:
+	a8-. \tuplet 3/2 8 {a16( b cis)} d8 e->
+	f4.->\fz e8-.
 % Bars 531 to 535
-	
+	d a'4-> cis,8->
+	a'4.\p g8->\fz
+	f4.\p ees!8->\fz
+	d4.\p c8->\fz
+	bes4.\p aes8->\fz
 % Bars 536 to 540
-	
+	ees4.\pp ees8~
+	ees4. ees8~
+	ees4. ees8~
+	ees4. ees8~
+	ees4.\pp ees8~
 % Bars 541 to 545
-	
-	
-	\setBarNumber #544 \mark #15
-	bes'8\pp bes-. ees,4(_\pocoapococresc
+	ees4. ees8~
+	ees4. ees8~
+	ees4. ees8( \mark \default
+	bes'8)\pp bes-. ees,4(_\pocoapococresc
 	ces'8) ces-. e,4(
 % Bars 546 to 550
 	c'!)(\fz\< f,8) f(\!
@@ -684,7 +716,7 @@ musicViolaMvtI = \relative c {
 % Bars 566 to 570
 	<f a>2:16\p
 	q: \mark \default
-	q:
+	\grace {s8.} q2:
 	q:
 	<fis a>:\pp
 % Bars 571 to 575
