@@ -25,8 +25,8 @@
 \include "./00-Common/DvorakSymph2_Format_Cond_Mvt02.ily"
 \include "./02-Mvt2/m02_v02_music_FlautoI.ily"
 \include "./02-Mvt2/m02_v03_music_FlautoII.ily"
-\include "./02-Mvt2/m02_v04_music_OboeI.ily"
-\include "./02-Mvt2/m02_v05_music_OboeII.ily"
+\include "./02-Mvt2/m02_v04_music_OboeI_C.ily"
+\include "./02-Mvt2/m02_v05_music_OboeII_C.ily"
 \include "./02-Mvt2/m02_v06_music_ClarinettoI.ily"
 \include "./02-Mvt2/m02_v07_music_ClarinettoII.ily"
 \include "./02-Mvt2/m02_v08_music_FagottoI.ily"
@@ -83,10 +83,11 @@
 						\timeMvtII \nameStaffIIMvtII \musicFlautoIIMvtII
 					}
 				>>
-%				\new Staff {
-%					\timeMvtII \nameStaffIIIMvtII
-%					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
-%				}
+				\new Staff {
+					\timeMvtII \nameStaffIIIMvtII
+					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
+%					\musicOboeIIMvtII 
+				}
 %				\new Staff {
 %					\timeMvtII \nameStaffIVMvtII
 %					\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII

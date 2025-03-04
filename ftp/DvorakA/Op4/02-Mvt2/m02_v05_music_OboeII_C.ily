@@ -11,7 +11,7 @@ musicOboeIIMvtII = \relative c {
 % Bars 1 to 5
 	r4 r8 g'''4.\brack\pp r4 r8 g4.
 	r4 r8 ees4. r4 r8 ees4.
-	r4 r8 ees4._\crescmarkup r4 r8 ees4.
+	r4 r8 ees4. r4 r8 ees4.
 	r4 r8 ees4.\< r4 r8 ees4.\!
 	r4 r8 g4.\mf r4 r8 g4.
 % Bars 6 to 10
@@ -167,7 +167,7 @@ musicOboeIIMvtII = \relative c {
 	r4 r8 a'16(\p-. g-. fis8-. g)-. r2.
 	d16\f c bes8 a c16 bes a8 g c16 bes a8 g bes16 a g8 fis
 	r4 r8 r r ees'!16. c32 c16 r r8 ees16. c32 c16 r r8 ees16. cis32
-	dis2.\ff gis,\fz
+	cis2.\ff c\fz
 % Bars 146 to 150
 	bes!8\p r r ees,4\pp r8 d4 r8 ees4 r8
 	d4 r8 ees4 r8 d4 r8 ees4 r8
@@ -175,5 +175,5 @@ musicOboeIIMvtII = \relative c {
 	d4 r8 r4 r8 r2.
 	R1.
 % Bar 151
-	R1.\fermata \fine
+	R1._\fermata \fine
 }
