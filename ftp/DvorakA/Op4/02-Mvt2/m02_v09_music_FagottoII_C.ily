@@ -11,7 +11,7 @@ musicFagottoIIMvtII = \relative c {
 % Bars 1 to 5
 	g4.\pp~ g8 r r16 fis(\< g4.~\> g8)\! r r16 g(
 	a4.\pp~ a8) r r16 gis(\< a4.\>~ a8\!) r r16 a(\pp
-	bes4.~\< bes8)\! r r16 a(_\crescmarkup\< bes4.~\> bes8)\! r r16 bes(\<
+	bes4.~\< bes8)\! r r16 a(\< bes4.~\> bes8)\! r r16 bes(\<
 	c4.~\> c8\!) r r16 b(\< c4.\>~ c8)\! r r16 c\(
 	cis2.\mf( d)\)
 % Bars 6 to 10
@@ -90,7 +90,7 @@ musicFagottoIIMvtII = \relative c {
 	b
 	d\pp~
 	d2.(~ d4.~ d16 a b f g d)
-	g,4.(\p gis_\pocoapococrescendo a bes)
+	g,4.(\p gis a bes)
 	c(\< cis d ees)\!
 % Bars 71 to 75
 	f,4.(\mf fis)\< g( aes)\!
@@ -112,13 +112,13 @@ musicFagottoIIMvtII = \relative c {
 	c2.(\fpp\> bes!4.\! c)
 	bes( c des c)
 % Bars 91 to 95
-	<< {bes2.( des~ } {s8\< s_\crescmarkup s s s s\! s\> s s  s s s\!}>>
+	<< {bes2.( des!~ } {s8\< s_\crescmarkup s s s s\! s\> s s  s s s\!}>>
 	des4.)\pp r4 r8 r2.
 	c2.\pp( bes4. c)
 	bes( c des c)
 	aes,4.\<( a bes b\!)
 % Bars 96 to 100
-	cis( d!) ees!(_\crescmarkup e)
+	cis( d!) ees!( e)
 	fis,4.(\mf g!\< gis a)\!
 	b(\f c\< cis d)\!
 	e2.\ff e,
@@ -132,7 +132,7 @@ musicFagottoIIMvtII = \relative c {
 % Bars 106 to 110
 	f4.(\pp aes << b2.)\< {s4. s8 s s\!}>>
 	c4.(\> ees\! fis, c')
-	bes4.(\< a_\pococresc g f!)\!
+	bes4.(\< a g f!)\!
 	d'(\< << c {s8 s s\!}>> bes4.\> << a) {s8 s s\!}>>
 	aes4.(\p g c ees)
 % Bars 111 to 115

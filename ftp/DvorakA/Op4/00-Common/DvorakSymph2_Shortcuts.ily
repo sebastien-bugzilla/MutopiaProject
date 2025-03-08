@@ -138,6 +138,8 @@ liiiri = {
 	\set stemRightBeamCount = #1
 }
 
+omitBeam = \once \omit Beam
+
 
 %aIIXoffset = #(define-music-function
 %	(offset)
@@ -304,7 +306,6 @@ liiiri = {
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 %omitMMRN = \omit MultiMeasureRestNumber
-%omitBeam = \once \omit Beam
 %omitDots = \once \omit Dots
 
 
