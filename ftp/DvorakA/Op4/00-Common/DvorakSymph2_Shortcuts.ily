@@ -57,6 +57,8 @@ conmoltosforza = \markup {\italic {con molto sforza}}
 fmarcato = \markup {\dynamic f \italic {marcato}}
 pococresc = \markup {\italic {poco cresc.}}
 pdim = \markup {\dynamic p \normal-text \italic {dim.}}
+moltocresc = \markup {\italic {molto cresc.}}
+
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -72,9 +74,14 @@ fzdimD = #(make-dynamic-script fzdim)
 piufD = #(make-dynamic-script piuf)
 ffz = #(make-dynamic-script "ffz")
 pdimD = #(make-dynamic-script pdim)
+fzpp = #(make-dynamic-script "fzpp")
+ffp = #(make-dynamic-script "ffp")
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }
 markDe = \markup { \abs-fontsize #12 "-de" }
+
+
+mutaingd = \markup {"[muta in G, D]"}
 
 %%%%%%%%%%%
 % functions
