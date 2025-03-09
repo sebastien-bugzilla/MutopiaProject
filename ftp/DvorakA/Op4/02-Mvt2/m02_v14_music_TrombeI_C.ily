@@ -105,7 +105,7 @@ musicTrombeIMvtII = \relative c {
 	
 	b8\f b16 b b8 g g16 g g8 c c16 c c8 b b16 b b8
 	R1.
-	e,4.->\ff~ e8 r r b'!4.->~ b8 r r
+	\partCombineApart e,4.->~ e8 \partCombineAutomatic r r b'!4.->~ b8 r r
 % Bars 146 to 150
 	R1.*5
 % Bar 151
