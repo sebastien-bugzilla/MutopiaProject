@@ -58,6 +58,10 @@ fmarcato = \markup {\dynamic f \italic {marcato}}
 pococresc = \markup {\italic {poco cresc.}}
 pdim = \markup {\dynamic p \normal-text \italic {dim.}}
 moltocresc = \markup {\italic {molto cresc.}}
+pmoltoespress = \markup {\dynamic p \normal-text \italic {molto espress.}}
+pmarkup = \markup {\dynamic p}
+pppsempre = \markup {\dynamic ppp \italic {sempre}}
+pdolce = \markup {\dynamic p \italic {dolce}}
 
 
 crescD = #(make-dynamic-script 
@@ -76,6 +80,7 @@ ffz = #(make-dynamic-script "ffz")
 pdimD = #(make-dynamic-script pdim)
 fzpp = #(make-dynamic-script "fzpp")
 ffp = #(make-dynamic-script "ffp")
+pmoltoespressD = #(make-dynamic-script pmoltoespress)
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }
 markDe = \markup { \abs-fontsize #12 "-de" }
