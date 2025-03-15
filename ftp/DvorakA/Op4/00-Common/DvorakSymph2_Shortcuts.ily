@@ -62,6 +62,8 @@ pmoltoespress = \markup {\dynamic p \normal-text \italic {molto espress.}}
 pmarkup = \markup {\dynamic p}
 pppsempre = \markup {\dynamic ppp \italic {sempre}}
 pdolce = \markup {\dynamic p \italic {dolce}}
+conmoltaforza = \markup {\italic {con molta forza}}
+ffconmoltaforza = \markup {\dynamic ff \italic {con molta forza}}
 
 
 crescD = #(make-dynamic-script 
