@@ -81,7 +81,7 @@ musicClarinettoIMvtII = \relative c {
 	f2.( g)
 	a c~
 % Bars 61 to 65
-	c4 \once \partCombineAutomatic r8 f,16(-. f-. a-. a-. c-. c)-. r4 r8 f,,16(-. f-. a-. a-. c-. c)-. \partCombineAutomatic
+	c4 \once \partCombineAutomatic r8 f,16(-.\p f-. a-. a-. c-. c)-. r4 r8 f,,16(-. f-. a-. a-. c-. c)-. \partCombineAutomatic
 	R1.
 	r4 r8 \partCombineApart a''4.\p\<~ a8 eis8.( fis16\! << fis4.) {s8\> s s16 s\!}>> \partCombineAutomatic
 	R1.

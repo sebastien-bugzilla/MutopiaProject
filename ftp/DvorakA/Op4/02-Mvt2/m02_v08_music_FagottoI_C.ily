@@ -110,7 +110,7 @@ musicFagottoIMvtII = \relative c {
 	\omitBeam a! a ees' ees d! d \omitBeam c c bes bes a a  \stemUp bes bes ees ees d d \stemDown \omitBeam ees ees d d c c \partCombineAutomatic
 	d1.\f \mark \default
 	ees2.(\fpp\> des4.\! ees)
-	\partCombineApart \stemUp des( ees c2.) \partCombineAutomatic
+	\partCombineApart \stemUp des( ees ees2.) \partCombineAutomatic
 % Bars 91 to 95
 	<< {des( f~ } {s8\< s_\crescmarkup s s s s\! s\> s s  s s s\!}>>
 	f4.)\pp r4 r8 r2.

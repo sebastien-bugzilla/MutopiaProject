@@ -151,7 +151,7 @@ musicVioloncelloMvtII = \relative c {
 	f2.->_\dimmarkup ees'4.(\> e)\!
 	f1.\pp~
 	f4 r8 r4 r8 r2. \clef tenor
-	bes4.(\p\< d) << f( {s8 s s\!}>> bes4\> a8)\! \clef bass
+	bes4.(\p\< d) << f( {s8 s s\!}>> a4\> g8)\! \clef bass
 % Bars 121 to 125
 	f4.\pp~ f8 r r r2.
 	f,1.\pp

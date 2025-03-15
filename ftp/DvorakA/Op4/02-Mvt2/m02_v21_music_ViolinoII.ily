@@ -61,7 +61,7 @@ musicViolinoIIMvtII = \relative c {
 	g( c g c~ c g~  g c g c~ c g)  bes(_\dimmarkup g bes g~ g bes~  bes g bes g~ g bes)
 	aes(\p f aes f~ f aes~  aes f aes f~ f aes) f( des f des~ des f~  f des f des~ des f)
 	e(\pp des e des~ des e~  e des e des~ des e) c( g c g c g bes g bes g bes g)
-	a\pp a8 a a16 r bes8\< bes bes16 r des8 des des16 r des8 des des16\!
+	aes\pp aes8 aes aes16 r bes8\< bes bes16 r des8 des des16 r des8 des des16\!
 % Bars 46 to 50
 	r <aes f'>8 q q16 r q8 q q16 r f'8\> f f16 r\! f8 f\pp f16
 	r <des f>8 q q16 r <a! ges'>8\< q q16 r des!8 des des16 r c8 c c16\!

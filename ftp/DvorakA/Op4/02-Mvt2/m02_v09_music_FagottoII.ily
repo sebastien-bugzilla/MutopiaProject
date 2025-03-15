@@ -107,7 +107,7 @@ musicFagottoIIMvtII = \relative c {
 	ees\p ees aes aes g\< g f f ees ees d d ees ees ces' ces bes bes aes aes g g f f\!
 % Bars 86 to 90
 	e\mf e bes' bes aes aes\< g g f f e e f f des' des c c bes bes aes aes g g\!
-	fis\f fis c' c bes bes a! a g g f f g g ees' ees d d c c bes bes a a
+	fis\f fis c' c bes bes a! a g g fis fis g g ees' ees d d c c bes bes a a
 	b1.\f \mark \default
 	c2.(\fpp\> bes!4.\! c)
 	bes( c des c)

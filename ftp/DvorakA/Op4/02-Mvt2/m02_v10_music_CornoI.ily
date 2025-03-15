@@ -76,7 +76,7 @@ musicCornoIMvtII = \relative c {
 % Bars 61 to 65
 	r2. bes4.\ppp~ bes8 r r
 	R1.
-	r2. ees,4.\ppp~ ees8 r r
+	r2. e,4.\ppp~ e8 r r
 	R1.*5
 	
 % Bars 66 to 70

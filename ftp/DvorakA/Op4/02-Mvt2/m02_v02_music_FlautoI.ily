@@ -73,7 +73,7 @@ musicFlautoIMvtII = \relative c {
 	des4) r8 r4 r8 r2.
 % Bars 56 to 60
 	r2. bes32(\pp aes g \liiiri aes \liriii bes aes g aes) r8 ges'32( fes ees \liiiri fes \liriii ges fes ees fes) r8
-	bes16( a g! a g f  ees f ges f aes ges  f ees des ees des c  c bes ees g,! des' g,)
+	bes16( aes g! aes g f  ees f ges f aes ges  f ees des ees des c  c bes ees g,! des' g,) % a => aes based on audio reference
 	aes4 r8 r4 r8 r2. \mark \default
 	r4 r16 ees'\p\< ees4.\! r4 r16 d!\< d4.\!
 	r4 r16 des des4. r4 r16 bes bes4.

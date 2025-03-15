@@ -10,7 +10,7 @@ musicContrabassoMvtII = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	g4.\pp~ g8 r r16 fis(\< g4.~\> g8)\! r r16 g(
-	aes4.\p~ aes8) r r16 gis(\< aes4.\>~ aes8)\! r r16 aes(\pp\<
+	a4.\p~ a8) r r16 gis(\< a4.\>~ a8)\! r r16 a(\pp\<
 	<< bes4.~ {s8 s s\!}>> bes8) r r16 a(\<_\crescmarkup bes4.~\> bes8)\! r r16 bes(\<
 	c4.~\> c8)\! r r16 b(\< c4.\>~ c8)\! r r16 c(\<
 	cis4.\fz~ cis8) r r16 cis(\< d4.\>~ d8)\! r r16 d(

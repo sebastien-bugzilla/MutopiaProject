@@ -7,7 +7,7 @@
 musicTrombeIIMvtII = \relative c {
 	\clef treble
 	\key c \major
-	\transposition bes
+	\transposition ees
 % Bars 1 to 5
 	R1.*22
 % Bars 6 to 10
@@ -103,7 +103,7 @@ musicTrombeIIMvtII = \relative c {
 % Bars 141 to 145
 	
 	
-	dis8\f dis16 dis dis8 e e16 e e8 fis fis16 fis fis8 d d16 d d8
+	dis8\f dis16 dis dis8 e e16 e e8 fis fis16 fis fis8 dis dis16 dis dis8
 	R1.
 	e4.->\ff~ e8 r r b!4.->~ b8 r r
 % Bars 146 to 150

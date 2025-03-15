@@ -110,7 +110,7 @@ musicFagottoIMvtII = \relative c {
 	a!\f a ees' ees d! d  c c bes bes a a  bes bes ees ees d d  ees ees d d c c
 	d1.\f \mark \default
 	ees2.(\fpp\> des4.\! ees)
-	des( ees c2.)
+	des( ees ees2.)
 % Bars 91 to 95
 	<< {des( f~ } {s8\< s_\crescmarkup s s s s\! s\> s s  s s s\!}>>
 	f4.)\pp r4 r8 r2.
