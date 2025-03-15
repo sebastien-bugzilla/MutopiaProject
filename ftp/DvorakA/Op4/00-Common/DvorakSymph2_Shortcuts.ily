@@ -64,7 +64,9 @@ pppsempre = \markup {\dynamic ppp \italic {sempre}}
 pdolce = \markup {\dynamic p \italic {dolce}}
 conmoltaforza = \markup {\italic {con molta forza}}
 ffconmoltaforza = \markup {\dynamic ff \italic {con molta forza}}
-
+pppocoapococrescendo = \markup {\dynamic pp \italic {poco a poco crescendo}}
+espressivo = \markup {\italic {espressivo}}
+semprepp = \markup {\italic {sempre} \dynamic pp}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -89,6 +91,7 @@ markDe = \markup { \abs-fontsize #12 "-de" }
 
 
 mutaingd = \markup {"[muta in G, D]"}
+div = \markup {div.}
 
 %%%%%%%%%%%
 % functions
