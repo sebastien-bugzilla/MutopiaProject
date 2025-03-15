@@ -84,6 +84,7 @@ ffz = #(make-dynamic-script "ffz")
 pdimD = #(make-dynamic-script pdim)
 fzpp = #(make-dynamic-script "fzpp")
 ffp = #(make-dynamic-script "ffp")
+fzp = #(make-dynamic-script "fzp")
 pmoltoespressD = #(make-dynamic-script pmoltoespress)
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }
