@@ -68,7 +68,61 @@ tempiMvtII = {
 	\tempo "[a tempo]"
 }
 tempiMvtIII = {
-	\tempo "Scherzo"
+	\tempo "Allegro con brio"
+	s2.*56
+	% bar 57
+	\tempo "poco ritard."
+	s2.*3
+	% bar 60
+	\tempo "poco a poco [più] adagio"
+	s2.*3
+	% bar 63
+	\tempo "in tempo"
+	s2.*16
+	% bar 79
+	\tempo "ritardando"
+	s2.*3
+	% bar 82
+	\tempo "a tempo"
+	s2.*243
+	% bar 325
+	\tempo "poco ritard."
+	s2.*3
+	% bar 328
+	\tempo "poco a poco [più] adagio"
+	s2.*3
+	% bar 331
+	\tempo "in tempo"
+	s2.*16
+	% bar 347
+	\tempo "ritardando"
+	s2.*3
+	% bar 350
+	\tempo "a tempo"
+	s2.*63 s4
+	% bar 413.33
+	\tempo "rit."
+	s2 s2.*12
+	% bar 426
+	\tempo "Meno Allegro"
+	s2.*4
+	% bar 430
+	\tempo "rit."
+	s2.
+	% bar 431
+	\tempo "Quasi andante"
+	s2.*3
+	% bar 434
+	\tempo "Adagio"
+	s2.*4
+	% bar 438
+	\tempo "Allegro, tempo I."
+	s2.*24
+	% bar 462
+	\tempo "rit."
+	s2.*2
+	% bar 464
+	\tempo "Presto assai"
 }
 tempiMvtIV = {
 	\tempo "Allegro con fuoco (alla breve)"
@@ -84,7 +138,7 @@ tempiPartMvtII = {
 	\tempo "Poco adadio"
 }
 tempiPartMvtIII = {
-	\tempo "Scherzo"
+	\tempo "Allegro con brio"
 }
 tempiPartMvtIV = {
 	\tempo "Allegro con fuoco (alla breve)"

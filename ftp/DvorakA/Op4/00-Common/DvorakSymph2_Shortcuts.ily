@@ -67,6 +67,7 @@ ffconmoltaforza = \markup {\dynamic ff \italic {con molta forza}}
 pppocoapococrescendo = \markup {\dynamic pp \italic {poco a poco crescendo}}
 espressivo = \markup {\italic {espressivo}}
 semprepp = \markup {\italic {sempre} \dynamic pp}
+piup = \markup {\italic {più} \dynamic p}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -92,7 +93,17 @@ markDe = \markup { \abs-fontsize #12 "-de" }
 
 
 mutaingd = \markup {"[muta in G, D]"}
+mutainflpicc = \markup {"[muta in Fl.picc.]"}
+mutainflii = \markup {"[muta in Fl.II.]"}
+mutainflautopiccolo = \markup {"[muta in Flauto piccolo]"}
+mutainflautoii = \markup {"[muta in Flauto II.]"}
 div = \markup {div.}
+
+markAaBox = \markup { \box \bold "Aa" }
+markBbBox = \markup { \box \bold "Bb" }
+markCcBox = \markup { \box \bold "Cc" }
+markDdBox = \markup { \box \bold "Dd" }
+
 
 %%%%%%%%%%%
 % functions

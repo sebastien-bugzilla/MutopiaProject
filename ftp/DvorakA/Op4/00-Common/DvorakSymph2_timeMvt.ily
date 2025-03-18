@@ -17,11 +17,9 @@ timeMvtI = {
 }
 timeMvtII = {
 	\time 12/8
-	
 }
 timeMvtIII = {
 	\time 3/4
-	
 }
 timeMvtIV = {
 	\time 2/2
