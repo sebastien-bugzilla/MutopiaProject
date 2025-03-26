@@ -39,14 +39,14 @@ musicOboeIIMvtIII = \relative c {
 	c2.\f
 	r4 r r8 e(\pp
 % Bars 26 to 30
-	f4_\legato g bes)
+	f4 g bes)
 	c2~ c8 des(
 	c4 e f)
 	f2~ f8 c(
 	f4 e f
 % Bars 31 to 35
 	a8) r f,4(->\f ees!->\<~
-	ees) f(_\fzmarkup ees)\!
+	ees) f( ees)\!
 	f8(->\f e ees d des c)
 	f(-> e ees d des c)
 	f2.
@@ -75,8 +75,8 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 % Bars 66 to 70
-	R2.\fermata
-	f2(_\piuf g4
+	R2._\fermata
+	f2( g4
 	ees f aes)
 	<< bes2( {s4 s\< }>> a!4\!
 	bes8)[-. r16 bes-.] bes2~
@@ -84,7 +84,7 @@ musicOboeIIMvtIII = \relative c {
 	<< bes2. {s4\< s s\!}>>
 	c4(\f d bes\>~
 	bes) a bes8. bes16\!
-	c8(_\dimmarkup bes a bes c a)
+	c8( bes a bes c a)
 	f2(\< g4)\!
 % Bars 76 to 80
 	bes( c d)
@@ -228,11 +228,11 @@ musicOboeIIMvtIII = \relative c {
 % Bars 206 to 210
 		fis4\! r r
 		d,2\pp(~ d8 fis
-		d2\<_\crescmarkup~ d8 fis)\!
+		d2\<~ d8 fis)\!
 		c2(~\< c8 e\!
 		c2~ c8 e)
 % Bars 211 to 215
-		f'4.\f g8-. a16[( bes) r16. e,32]
+		f'4.\f g8-. a16[( bes!) r16. e,32]
 		e4( f) d8-. d-.
 		e4 c2->
 		d2 bes8. c16
@@ -248,7 +248,7 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 226 to 230
 	
-	c4.(\mp^\solo d8) \tuplet 3/2 4 {e( f b,)}
+	c4.(\mp d8) \tuplet 3/2 4 {e( f b,)}
 	b4( c) a8-. a-.
 	b4 g2->
 	R2.*5
@@ -257,7 +257,7 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	ees'16(\f f g8) ees-. ees-. g-. g-.
+	ees'16(\f f g!8) ees-. ees-. g-. g-.
 % Bars 236 to 240
 	c,8\>-. c-. bes-. bes-. bes-. bes\!-. 
 	bes-.\p r r4 r
@@ -291,9 +291,9 @@ musicOboeIIMvtIII = \relative c {
 	
 	f,2.\pp\<~
 	f
-	d~
+	\stemUp \stemOffset #3 d~
 % Bars 276 to 280
-	<< d {s4 s s\!}>>
+	<< \stemOffset #3 d {s4 s s\!}>>
 	R2.*4
 	
 	
@@ -315,7 +315,7 @@ musicOboeIIMvtIII = \relative c {
 	<< c {s4 s s\!}>>
 	r4 r r8 e\p
 	f4( g bes)
-	c2~ c8 des
+	\stemDown c2~ c8 des
 % Bars 296 to 300
 	c4( e f)
 	f2(~ f8 c
@@ -352,8 +352,8 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	R2.\fermata
-	f2(_\piuf g4
+	R2._\fermata
+	f2( g4
 % Bars 336 to 340
 	ees f aes)
 	<< bes2( {s4 s\< }>> a!\!
@@ -362,7 +362,7 @@ musicOboeIIMvtIII = \relative c {
 	c\f( d bes~\>
 % Bars 341 to 345
 	bes) a bes8. bes16\!
-	c8(_\dimmarkup bes a bes c a)
+	c8( bes a bes c a)
 	f2(\< g4)\!
 	bes( c d)
 	g,( << bes2) {s4\< s\!}>>
@@ -528,7 +528,7 @@ musicOboeIIMvtIII = \relative c {
 	
 	e4.\f e8 e4
 	c r r
-	d-. c\>-._\dimmarkup bes-.
+	d-. c\>-. bes-.
 	c-.\! r r
 % Bars 491 to 495
 	R2.*6

@@ -456,7 +456,7 @@ musicFlautoIIMvtIII = \relative c {
 	fis,4\brack\ff g a
 	bes a bes
 	a2.\fermata
-	\textMark "Coda" bes4.(\p c8 d16[ ees r16. a,32-.)]
+	bes4.(\p c8 d16[ ees r16. a,32-.)]
 % Bars 416 to 420
 	a4(-> bes-> g8-. g-.)
 	a4-> f2->

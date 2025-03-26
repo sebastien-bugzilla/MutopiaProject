@@ -37,7 +37,7 @@ musicOboeIMvtIII = \relative c {
 	ees
 	<< e~ {s4 s s\!}>>
 	e2.\f
-	r4 r r8 g,(\pp
+	r4 r r8 \partCombineApart g,(
 % Bars 26 to 30
 	a4_\legato bes d)
 	c2~ c8 e(
@@ -45,8 +45,8 @@ musicOboeIMvtIII = \relative c {
 	f2~ f8 g(
 	a4 bes a
 % Bars 31 to 35
-	c8) r f,4(->\f ees!->\<~
-	ees) f(_\fzmarkup ees)\!
+	c8) \partCombineAutomatic r f,4(->\f ees!->\<~
+	ees) f(^\fzmarkup ees)\!
 	f8(->\f e ees d des c)
 	f(-> e ees d des c)
 	f2.
@@ -70,7 +70,7 @@ musicOboeIMvtIII = \relative c {
 	
 % Bars 61 to 65
 	
-	r4 r \tuplet 3/2 4 {e'8(\p f g)}
+	\partCombineApart r4 r \tuplet 3/2 4 {e'8(\p f g)}
 	a2( g8 f
 	a2) g8( f
 	a2) g8( f
@@ -78,25 +78,25 @@ musicOboeIMvtIII = \relative c {
 	a2.)\fermata
 	bes,2(_\piuf bes4
 	bes2 d4)
-	ees( f\< ees\!
+	ees( f ees
 	d ees f)
 % Bars 71 to 75
-	g(\< f ees\!~
-	ees\f d bes)\>
-	ees2~ ees8. ees16\!
+	g( f ees~
+	ees d bes)
+	ees2~ ees8. ees16
 	ees2._\dimmarkup
-	bes2\< bes4\!
+	bes2 bes4
 % Bars 76 to 80
 	f'( g aes)
-	g( f\< ees)\!
-	a!2(\f bes4)
-	aes2(\p\> ges4)
-	f( g! aes)\p
+	g( f ees)
+	a!2( bes4)
+	aes2( ges4)
+	f( g! aes)
 % Bars 81 to 85
-	<< f2. {s4 s\> s\!}>>
+	<< f2. {s4 s s}>> \partCombineAutomatic
 	g2(\pp aes4)
 	g2( aes4)
-	g2 e8. e16 \mark \default
+	g2 e!8. e16 \mark \default
 	ees!4.\fz ees8-. ees-. c-.
 % Bars 86 to 90
 	c4(\> d)\! r
@@ -124,9 +124,9 @@ musicOboeIMvtIII = \relative c {
 	f2.\ff~
 	f
 % Bars 111 to 115
-	R2. \mark \default
-	ees4.\f ees8-. ees-. c-.
-	c4( d bes)
+	R2. \mark \default 
+	\partCombineApart ees4. ees8-. ees-. c-.
+	c4( d bes) \partCombineAutomatic
 	bes'8.\f bes16 bes8 r r4
 	bes8. bes16 bes8 r r4
 % Bars 116 to 120
@@ -154,7 +154,7 @@ musicOboeIMvtIII = \relative c {
 	R2.*2
 	
 % Bars 136 to 140
-	f8-.\ff bes,-. r4 r
+	\partCombineApart f8-. bes,-. \partCombineAutomatic r4 r
 	R2.
 	\tuplet 3/2 4 {ees,8-.\ff\< g-. bes-.\!} ees2->
 	R2.
@@ -176,11 +176,11 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	f2.\pp~
+	\partCombineApart f2.~
 % Bars 156 to 160
-	f\<~
-	<< f~ {s4 s s\!}>>
-	f2.\f
+	f~
+	<< f~ {s4 s s}>>
+	f2. \partCombineAutomatic
 	R2.*4
 	
 % Bars 161 to 165
@@ -289,11 +289,11 @@ musicOboeIMvtIII = \relative c {
 % Bars 271 to 275
 	
 	
-	f2.\pp\<~
+	\partCombineApart \stemDown f2.~
 	f~
-	f~
+	\stemUp f~
 % Bars 276 to 280
-	<< f {s4 s s\!}>>
+	<< f {s4 s s}>> \partCombineAutomatic
 	R2.*4
 	
 	
@@ -315,12 +315,12 @@ musicOboeIMvtIII = \relative c {
 	<< e {s4 s s\!}>>
 	r4 r r8 g,\p
 	a4( bes d)
-	c2~ c8 e
+	\partCombineApart c2~ c8 e \partCombineAutomatic
 % Bars 296 to 300
 	f4( bes a)
-	f2(~ f8 g
+	\partCombineApart f2(~ f8 g
 	a4 bes d
-	c8) r r4 r
+	c8) \partCombineAutomatic r r4 r
 	R2.*4
 % Bars 301 to 305
 	
@@ -347,34 +347,34 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	r4 r \tuplet 3/2 4 {e'8(\p f g)}
+	\partCombineApart r4 r \tuplet 3/2 4 {e'8(\p f g)}
 % Bars 331 to 335
 	a2( g8 f
 	a2) g8( f
 	a2) g8( f
-	a2.)\fermata
+	a2.)\fermata 
 	bes,2(_\piuf bes4
 % Bars 336 to 340
 	bes2 d4)
-	ees( f\< ees\!
+	ees( f ees
 	d ees f)
-	g(\< f ees~\!
-	ees\f d bes)\>
+	g( f ees~
+	ees d bes)
 % Bars 341 to 345
-	ees2~ ees8. ees16\!
+	ees2~ ees8. ees16
 	ees2._\dimmarkup
-	bes2\< bes4\!
+	bes2 bes4
 	f'( g aes)
-	g( f\< ees\!)
+	g( f ees)
 % Bars 346 to 350
-	a!2(\f bes4)
-	<< aes2(\p {s4 s\> }>> ges4)
-	f( g! aes)\p
-	<< f2. {s4 s\> s\!}>>
+	a!2( bes4)
+	<< aes2( {s4 s }>> ges4)
+	f( g! aes)
+	<< f2. {s4 s s}>> \partCombineAutomatic
 	g2(\pp aes4)
 % Bars 351 to 355
 	g2( aes4)
-	g2 e8. e16 \mark \markBbBox
+	g2 e!8. e16 \mark \markBbBox
 	ees!4.\fz ees8-. ees-. c-.
 	c4(\> d)\! r
 	ees4.\f ees8-. ees-. c-.
@@ -404,9 +404,9 @@ musicOboeIMvtIII = \relative c {
 	f2.\ff~
 	f
 	R2. \mark \markCcBox
-	ees4.\f ees8-. ees-. c-.
+	\partCombineApart ees4. ees8-. ees-. c-.
 % Bars 381 to 385
-	c4( d bes)
+	c4( d bes) \partCombineAutomatic
 	bes'8.\f bes16 bes8 r r4
 	bes8. bes16 bes8 r r4
 	a8. a16 a8 r r4
@@ -462,10 +462,10 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	d'4(\< ees g
-	f d\! bes8.\> bes16)
+	\partCombineApart d'4( ees g
+	f d bes8. bes16)
 % Bars 436 to 440
-	bes2( c4)\!
+	bes2( c4) \partCombineAutomatic
 	c(\pp ees4.\fermata d8
 	d) r r4 r
 	R2.*3
