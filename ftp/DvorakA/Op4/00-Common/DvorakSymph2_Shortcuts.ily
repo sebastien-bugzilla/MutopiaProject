@@ -97,6 +97,9 @@ mutainflpicc = \markup {"[muta in Fl.picc.]"}
 mutainflii = \markup {"[muta in Fl.II.]"}
 mutainflautopiccolo = \markup {"[muta in Flauto piccolo]"}
 mutainflautoii = \markup {"[muta in Flauto II.]"}
+mutaina = \markup {"[muta in A]"}
+mutainb = \markup {"[muta in B]"}
+
 div = \markup {div.}
 
 markAaBox = \markup { \box \bold "Aa" }

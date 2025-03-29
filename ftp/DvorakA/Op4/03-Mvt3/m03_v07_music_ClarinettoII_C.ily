@@ -79,7 +79,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a4(\< g f\!
 	a\f g a)\>
 	c( b f8. f16)\!
-	f2(~_\dimmarkup f8. d16)
+	f2(~ f8. d16)
 	c2(\< f4)\!
 % Bars 76 to 80
 	g( a bes)
@@ -241,9 +241,9 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 206 to 210
 		f8. d16 d8 r r4
 		\tuplet 3/2 4 {bes8(\pp c d)} a8-. a-. bes4->
-		\tuplet 3/2 4 {bes8(_\crescmarkup\< c d)} a-. a-. bes4->\!
-		\tuplet 3/2 4 {c8(\< d ees)} b!-. b-. c4->\!
-		\tuplet 3/2 4 {c8( d ees)} b8-. b-. c4
+		\tuplet 3/2 4 {bes8(\< c d)} a-. a-. bes4->\!
+		\tuplet 3/2 4 {c8(\< d ees!)} b!-. b-. c4->\!
+		\tuplet 3/2 4 {c8( d ees!)} b8-. b-. c4
 % Bars 211 to 215
 		R2.*8
 % Bars 216 to 220
@@ -264,10 +264,10 @@ musicClarinettoIIMvtIII = \relative c {
 	r4 r d'16(\pp ees f g)
 % Bars 231 to 235
 	r4 r d16( ees f g)
-	r4 r e!16( f g aes)
-	r4 r e16( f g aes)
+	r4 r e!16( f g aes!)
+	r4 r e16( f g aes!)
 	R2.
-	bes,16(\f aes ges8) ees'-. ees-. des-. des-.
+	bes,16(\f aes ges8) ees'-. ees-. des!-. des-.
 % Bars 236 to 240
 	des\>-. ces-. ces-. bes-. aes-. ces\!-. 
 	bes-.\p r r4 r
@@ -297,9 +297,9 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 261 to 265
 	
 	
-	\tuplet 3/2 4 {r8 bes,!( c des\< ees f g bes des)\!
+	\tuplet 3/2 4 {r8 bes,!( c des\< ees f g bes des!)\!
 	ees(\fz des c\> bes aes g f ees des)\!
-	r bes( c des\< ees f g bes des\!)
+	r bes( c des\< ees f g bes des!\!)
 % Bars 266 to 270
 	ees\f( des c bes aes g f ees des)}
 	g2.\startTrillSpan
@@ -369,7 +369,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a\f g a)\>
 % Bars 341 to 345
 	c( b f8. f16)\!
-	f2(~_\dimmarkup f8. d16)
+	f2(~ f8. d16)
 	c2(\< f4\!)
 	g( a bes)
 	a( g\< f)\!
@@ -460,7 +460,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 416 to 420
 	b4(-> c-> a8-. a-.)
 	b4-> g2->
-	f4(_\piup g a)
+	f4( g a)
 	e8. e16 e2->
 	a4(\> g f
 % Bars 421 to 425
@@ -478,7 +478,7 @@ musicClarinettoIIMvtIII = \relative c {
 	g4(\< a f
 	g2\! a4)\>
 % Bars 436 to 440
-	c2( b4)\!
+	c2 b4\!
 	g2.\pp\fermata
 	c,4( a e
 	g a b
@@ -541,11 +541,11 @@ musicClarinettoIIMvtIII = \relative c {
 	
 	a4.\f a8 a4
 	g r r
-	g-. g-.\>_\dimmarkup g-.
+	g-. g-.\> g-.
 	g-.\! r r
 % Bars 491 to 495
 	e-.\p d-. c-.
-	r r d_\pdim-.
+	r r d-.
 	r r c-.
 	r r d-.
 	r r c-.
