@@ -37,7 +37,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	f'2.-\offset X-offset -1.3 _\pmarkup-\offset X-offset 1.3\brack\p~
+	f'2._\pbrackp~
 % Bars 26 to 30
 	f~
 	f~
@@ -73,16 +73,16 @@ musicFagottoIMvtIII = \relative c {
 	ees8. ees16 ees2~
 % Bars 66 to 70
 	ees8. ees16 ees2\fermata
-	bes2._\piuf~
+	\partCombineApart bes2._\piuf~
 	bes~
-	<< {bes2 a4} {s4 s\< s\!}>>
+	<< {bes2 a4} {s4 s s}>>
 	bes2.
 % Bars 71 to 75
-	bes2(\< g'4\!
-	c,\f << d2) {s4 s\>}>>
+	bes2( g'4
+	c, << d2) {s4 s_\>}>>
 	ees2 bes8. bes16\!
 	c8(_\dimmarkup bes a bes c a)
-	<< bes2. {s4\< s s\!}>>
+	<< bes2. {s4 s s}>> \partCombineAutomatic
 % Bars 76 to 80
 	f4( g aes)
 	g( bes\< g)\!
@@ -93,12 +93,12 @@ musicFagottoIMvtIII = \relative c {
 	<< f,2.\p {s4 s\> s }>>
 	e4(\pp g aes)
 	g2( aes4)
-	g2 r4 \mark \default
-	r4 \clef tenor r8 g'-.\f f-. ees-.
+	g2 r4 \mark \default 
+	r4 \clef tenor \partCombineApart r8 g'-.\f f-. ees-.
 % Bars 86 to 90
 	ees4( d2)
-	r4 r8 g-.\f f-. ees-.
-	ees4( d2)
+	\once \partCombineAutomatic r4 r8 g-.\f f-. ees-.
+	ees4( d2) \partCombineAutomatic
 	ees2\p\<(~ ees8 c)
 	c4( bes4. d8)\!
 % Bars 91 to 95
@@ -127,8 +127,8 @@ musicFagottoIMvtIII = \relative c {
 	f
 % Bars 111 to 115
 	R2. \mark \default
-	r4 r8 g'\f-. f-. f,-.
-	f4(-^ bes-^ bes,-^)
+	\partCombineApart r4 r8 g'\f-. f-. f,-.
+	f4(-^ bes-^ bes,-^) \partCombineAutomatic
 	bes'8.\f bes16 bes8 r r4
 	f8. f16 f8 r r4
 % Bars 116 to 120
@@ -168,7 +168,7 @@ musicFagottoIMvtIII = \relative c {
 	d4 g f
 	bes f bes
 % Bars 146 to 150
-	f2.\fermata
+	\once \partCombineApart f2.\fermata
 	c'16( d bes8-.) bes4. bes8
 	c16( d bes8-.) bes4. bes8
 	c16( d bes8-.) bes4. bes8
@@ -243,21 +243,21 @@ musicFagottoIMvtIII = \relative c {
 	R2.*5
 % Bars 226 to 230
 	
-	r4 c8-.\p b-. a-. g-.
+	\partCombineApart r4 c8-.\p b-. a-. g-.
 	r4 c8-. b-. a-. g-. 
-	r4 c8-. b-. a-. g-. 
+	r4 c8-. b-. a-. g-. \partCombineAutomatic
 	R2.*5
 % Bars 231 to 235
 	
 	
 	
 	
-	bes16(\f aes g8) ees'-. ees-. d-. d-.
+	bes16(\f aes g!8) ees'-. ees-. d-. d-.
 % Bars 236 to 240
 	c\>-. c-. ees-. ees-. ees-. d-.\!
 	ees-.\p r r4 r
 	R2.
-	cis16(\fz b ais8)\> fis'-. fis-. eis-. eis-.\!
+	cis16(\fz b ais!8)\> fis'-. fis-. eis-. eis-.\!
 	dis\p-. dis-. cis-. cis-. b-. b-. 
 % Bars 241 to 245
 	ais r r4 r
@@ -278,14 +278,14 @@ musicFagottoIMvtIII = \relative c {
 	f \clef bass \section \key bes \major
 	r8 d,16(\p ees \tuplet 3/2 4 {f8\< g aes bes c d\!
 % Bars 256 to 260
-	ees\> d c bes aes g\! f ees d)}
+	ees\> d c bes aes! g\! f ees d)}
 	r8 d16( ees \tuplet 3/2 4 {f8\< g aes bes c d\!
-	ees\> d c bes aes g\! f ees d)}
-	r8 d16( ees \tuplet 3/2 4 {f8\< g aes bes c d\!
-	ees\> d c bes\! aes g f ees d)}
+	ees\> d c bes aes! g\! f ees d)}
+	r8 d16( ees \tuplet 3/2 4 {f8 g\< aes bes c d\!
+	ees\> d c bes\! aes! g f ees d)}
 % Bars 261 to 265
 	r8 d16( ees \tuplet 3/2 4 {f8 g aes bes\< c d\!
-	ees\> d c bes\! aes g f aes ces)}
+	ees\> d c bes\! aes! g f aes ces)}
 	R2.*4
 	
 	
@@ -306,20 +306,20 @@ musicFagottoIMvtIII = \relative c {
 % Bars 291 to 295
 	
 	
-	f,2.\p~
+	\partCombineApart f,2.~
 	f~
 	f~
 % Bars 296 to 300
 	f~
-	<< f~ {s4 s s\<}>>
+	<< f~ {s4 s s}>>
 	f2.
-	f,~
-	<< f~ {s4 s s\!}>>
+	f,
+	<< f^\adue {s4 s s}>>
 % Bars 301 to 305
-	f2.\f~
-	f~
-	f~
-	f8 r r4 r
+	f2.
+	f
+	f
+	f8 \partCombineAutomatic r r4 r
 	R2.*4
 % Bars 306 to 310
 	
@@ -342,17 +342,17 @@ musicFagottoIMvtIII = \relative c {
 	ees8. ees16 ees2~
 	ees8. ees16 ees2~
 	ees8. ees16 ees2\fermata
-	bes2._\piuf~
+	\partCombineApart bes2._\piuf~
 % Bars 336 to 340
 	bes~
-	<< bes2 {s4 s\< }>> a\!
+	<< bes2 {s4 s }>> a
 	bes2.
-	bes2(\< g'4\!
-	c,\f << d2) {s4 s\>} >>
+	bes2( g'4
+	c, << d2) {s4 s_\>} >>
 % Bars 341 to 345
 	ees2 bes8. bes16\!
 	c8(_\dimmarkup bes a bes c a)
-	<< bes2. {s4\< s s\!}>>
+	<< bes2. {s4 s s}>> \partCombineAutomatic
 	f4( g aes)
 	g( bes\< g)\!
 % Bars 346 to 350
@@ -364,11 +364,11 @@ musicFagottoIMvtIII = \relative c {
 % Bars 351 to 355
 	g2( aes4)
 	g2 r4 \mark \markBbBox
-	r4 \clef tenor r8 g'\f-. f-. ees-.
+	r4 \clef tenor \partCombineApart r8 g'\f-. f-. ees-.
 	ees4( d2)
-	r4 r8 g-.\f f-. ees-.
+	\once \partCombineAutomatic r4 r8 g-.\f f-. ees-.
 % Bars 356 to 360
-	ees4( d2)
+	ees4( d2) \partCombineAutomatic
 	ees2\p\<(~ ees8 c)
 	c4( bes4. d8)\!
 	ees2\mf\<(~ ees8 c)\!
@@ -396,9 +396,9 @@ musicFagottoIMvtIII = \relative c {
 	f,2.\ff~
 	f
 	R2. \mark \markCcBox
-	r4 r8 g'\f-. f-. f,-.
+	\partCombineApart r4 r8 g'\f-. f-. f,-.
 % Bars 381 to 385
-	f4-^( bes-^ bes,-^)
+	f4-^( bes-^ bes,-^) \partCombineAutomatic
 	bes'8.\f bes16 bes8 r r4
 	f8. f16 f8 r r4
 	f8. f16 f8 r r4
@@ -437,7 +437,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	d4\brack\ff g f
 	bes f bes
-	f2.\fermata \clef tenor
+	\once \partCombineApart f2.\fermata \clef tenor
 	d'4.(\p ees8 f16[ g r16. c,32-.])
 % Bars 416 to 420
 	c4(-> d-> ees8-. ees-.)
@@ -458,14 +458,14 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 % Bars 431 to 435
-	g4(\pp\< f ees8. f16
-	f4 << ees2\!~ {s4 s\>}>>
-	ees2.)\!
-	d4(\< g a
-	<< bes2 {s4 s\!}>> bes8.\> bes16)
+	\partCombineApart g4( f ees8. f16
+	f4 << ees2~ {s4 s}>>
+	ees2.)
+	d4( g a
+	<< bes2 {s4 s}>> bes8. bes16)
 % Bars 436 to 440
-	bes2(_\dimmarkup c4)\!
-	c4(\pp ees4.\fermata d8)
+	bes2(_\dimmarkup c4)
+	c4( ees4.\fermata d8) \partCombineAutomatic
 	d r g, r r f
 	f r g r ees r
 	f r d r bes' r
@@ -473,8 +473,8 @@ musicFagottoIMvtIII = \relative c {
 	<< f2. {s4 s\> s}>>
 	f8\p[ f] g[ g] a a
 	bes[ bes] bes[ bes] a a
-	bes[\< bes] bes[ bes] d d
-	f,[ f f f] f f\!
+	\partCombineApart \stemDown \omitBeam \beamOffset #'(-2 . -2) bes[ bes] \omitBeam \beamOffset #'(-2 . -2) bes[ bes] \omitBeam \beamOffset #'(-3 . -3) d d
+	\stemUp f,[ f f f] f f \partCombineAutomatic
 % Bars 446 to 450
 	f\mf[ f] g[ g] a a
 	bes[ bes] bes[ bes] f f
@@ -482,7 +482,7 @@ musicFagottoIMvtIII = \relative c {
 	a[ a a a] a a\!
 	bes[\f bes] a[ a] bes bes
 % Bars 451 to 455
-	a[ a a a] a a
+	a[ a a a] \partCombineApart a a \partCombineAutomatic
 	b[ b] c[ c] d d
 	ees[ ees] e[ e] bes! bes
 	b[ b] c[ c] d d
@@ -540,7 +540,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	bes2.\brack\pp~
+	\partCombineApart bes2.\brack\pp~
 % Bar 501
 	bes\fermata \fine
 }

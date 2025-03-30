@@ -68,6 +68,7 @@ pppocoapococrescendo = \markup {\dynamic pp \italic {poco a poco crescendo}}
 espressivo = \markup {\italic {espressivo}}
 semprepp = \markup {\italic {sempre} \dynamic pp}
 piup = \markup {\italic {più} \dynamic p}
+diminuendo = \markup {\italic {diminuendo}}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -88,6 +89,13 @@ ffp = #(make-dynamic-script "ffp")
 fzp = #(make-dynamic-script "fzp")
 pmoltoespressD = #(make-dynamic-script pmoltoespress)
 
+pbrackp = \markup {
+	\concat {
+		\dynamic p \bracket \with-true-dimensions \dynamic p
+	}
+}
+
+
 markVi = \markup { \abs-fontsize #12 "Vi-" }
 markDe = \markup { \abs-fontsize #12 "-de" }
 
@@ -107,6 +115,7 @@ markBbBox = \markup { \box \bold "Bb" }
 markCcBox = \markup { \box \bold "Cc" }
 markDdBox = \markup { \box \bold "Dd" }
 
+adue = \markup {\bold "a2"}
 
 %%%%%%%%%%%
 % functions
@@ -145,6 +154,7 @@ mmrPos = #(define-music-function
 )
 
 omitFlag = \once \omit Flag
+omitStem = \once \omit Stem
 
 noteShift = #(define-music-function
 	(shift)

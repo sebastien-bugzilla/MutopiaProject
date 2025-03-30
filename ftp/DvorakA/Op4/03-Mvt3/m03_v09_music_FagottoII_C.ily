@@ -37,7 +37,7 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	
-	f2.-\offset X-offset -1.3 _\pmarkup-\offset X-offset 1.3\brack\p~
+	f2.~
 % Bars 26 to 30
 	f~
 	f~
@@ -55,7 +55,7 @@ musicFagottoIIMvtIII = \relative c {
 	R2.*4
 % Bars 41 to 45
 	g4( a bes)
-	f8.\f f16_\diminuendo f8 r r4
+	f8.\f f16 f8 r r4
 	f8.\p f16 f8 r r4
 	f8.\p\> f16 << f2\fermata {s4 s\!}>> \mark \default
 	R2.*18
@@ -73,15 +73,15 @@ musicFagottoIIMvtIII = \relative c {
 	c8. c16 c2~
 % Bars 66 to 70
 	c8. c16 c2\fermata
-	bes,4(_\piuf d ees
+	bes,4( d ees
 	c d f)
 	ees( d\< c\!
 	bes c d)
 % Bars 71 to 75
 	ees2(\< c4\!
-	a\f bes g)\>
-	c2 f4\!
-	aes,8(_\dimmarkup g f g aes f)
+	a\f bes g)
+	c2 f4
+	aes,8( g f g aes f)
 	bes4(\< d ees)\!
 % Bars 76 to 80
 	d4( ees f)
@@ -91,7 +91,7 @@ musicFagottoIIMvtIII = \relative c {
 	aes4( bes c)\p
 % Bars 81 to 85
 	<< des2.\p {s4 s\> s }>>
-	c4(\pp e f)
+	c4(\pp e! f)
 	e2( f4)
 	e2 r4 \mark \default
 	r4 \clef tenor r4 r8 f\f
@@ -222,9 +222,9 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 206 to 210
 		d8. b16 b8 r r4
 		\tuplet 3/2 4 {g8(\pp a b)} fis-. fis-. g4->
-		\tuplet 3/2 4 {g8(\<_\crescmarkup a b)} fis-. fis-. g4->\!
-		\tuplet 3/2 4 {a8(\< b c)} gis!-. gis-. a4->\!
-		\tuplet 3/2 4 {a8( b c)} gis-. gis-. a4->
+		\tuplet 3/2 4 {g8(\< a b)} fis-. fis-. g4->\!
+		\tuplet 3/2 4 {a8(\< b c!)} gis!-. gis-. a4->\!
+		\tuplet 3/2 4 {a8( b c!)} gis-. gis-. a4->
 % Bars 211 to 215
 		f,8-.\f e-. f-. d-. f-. c-. 
 		f-. e-. f-. d'-. f,-. c'-. 
@@ -276,15 +276,15 @@ musicFagottoIIMvtIII = \relative c {
 	d2 d8. d16
 	d2.~
 	d \clef bass \section \key bes \major
-	r8 bes,16(\p c \tuplet 3/2 4 {d8\< ees f g aes bes\!
+	r8 bes,16(\p c \tuplet 3/2 4 {d8\< ees f g aes! bes\!
 % Bars 256 to 260
-	c\> bes aes g f ees d c bes)\!}
-	r8 bes16( c \tuplet 3/2 4 {d8\< ees f g aes bes
 	c\> bes aes g f ees\! d c bes)}
-	r8 bes16( c \tuplet 3/2 4 {d8 ees\< f g aes bes\!
+	r8 bes16( c \tuplet 3/2 4 {d8\< ees f g aes! bes\!
+	c\> bes aes g f ees\! d c bes)}
+	r8 bes16( c \tuplet 3/2 4 {d8 ees\< f g aes! bes\!
 	c\> bes aes g\! f ees d c bes)}
 % Bars 261 to 265
-	r8 bes16( c \tuplet 3/2 4 {d8 ees f g\< aes bes\!
+	r8 bes16( c \tuplet 3/2 4 {d8 ees f g\< aes! bes\!
 	c\> bes aes g\! f ees d f aes)}
 	R2.*4
 	
@@ -306,20 +306,20 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 291 to 295
 	
 	
-	f,2.\p~
+	\stemUp f,2.\p~
 	f~
 	f~
 % Bars 296 to 300
 	f~
 	<< f~ {s4 s s\<}>>
-	f2.~
+	\stemDown f2.~
 	f~
-	<< f~ {s4 s s\!}>>
+	\omitStem << f~ {s4 s s\!}>>
 % Bars 301 to 305
-	f2.\f~
-	f~
-	f~
-	f8 r r4 r
+	\omitStem f2.\f~
+	\omitStem f~
+	\omitStem f~
+	\omitStem \omitFlag f8 r r4 r
 	R2.*4
 % Bars 306 to 310
 	
@@ -342,16 +342,16 @@ musicFagottoIIMvtIII = \relative c {
 	c8. c16 c2~
 	c8. c16 c2~
 	c8. c16 c2\fermata
-	bes,4(_\piuf d ees
+	bes,4( d ees
 % Bars 336 to 340
 	c d f)
 	ees( d\< c\!
 	bes c d)
 	ees2(\< c4\!
-	a\f bes g)\>
+	a\f bes g)
 % Bars 341 to 345
-	c2 f4\!
-	a,8(_\dimmarkup g f g a f)
+	c2 f4
+	a,8( g f g a f)
 	bes4(\< d ees)\!
 	d( ees f)
 	ees( bes\< g\!)
@@ -360,7 +360,7 @@ musicFagottoIIMvtIII = \relative c {
 	<< aes2.\p~ {s4 s\> s }>>
 	aes4( bes c)\p
 	<< des2.\p {s4 s\> s}>>
-	c(\pp e f)
+	c(\pp e! f)
 % Bars 351 to 355
 	e2( f4)
 	e2 r4 \mark \markBbBox
@@ -442,7 +442,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 416 to 420
 	a4(-> bes-> g8-. g-.)
 	a4-> f2->
-	ees4(_\piup f g)
+	ees4( f g)
 	d8. d16 d2-> \clef bass
 	g4( f\> ees
 % Bars 421 to 425
@@ -464,7 +464,7 @@ musicFagottoIIMvtIII = \relative c {
 	bes4(\< ees c
 	<< d2 {s4 s\!}>> ees4\>)
 % Bars 436 to 440
-	<< f2._\dimmarkup {s4 s s\!}>>
+	<< f2. {s4 s s\!}>>
 	f,2.\fermata\pp
 	bes8 r ees r r d
 	d r ees r c r
@@ -474,7 +474,7 @@ musicFagottoIIMvtIII = \relative c {
 	bes8\p[ bes] ees[ ees] f f
 	d[ d] ees[ ees] c c
 	bes[\< bes] a[ a] g g
-	f[ f f f] f' f\!
+	\stemUp \omitBeam \beamOffset #'(1 . 1) f[ f f f] \stemDown f'[ f]\!
 % Bars 446 to 450
 	bes,\mf[ bes] ees[ ees] f f
 	d[ d] ees[ ees] c c
@@ -527,11 +527,11 @@ musicFagottoIIMvtIII = \relative c {
 	
 	c4.\f c8 c4
 	f, r r
-	d''-. c-.\>_\dimmarkup bes-.
+	d''-. c-.\> bes-.
 	a-.\! r r
 % Bars 491 to 495
 	bes,-.\p f-. bes-.
-	r r f_\pdim-.
+	r r f-.
 	r r bes-.
 	r r f-.
 	r r bes-.
@@ -542,5 +542,5 @@ musicFagottoIIMvtIII = \relative c {
 	
 	R2.
 % Bar 501
-	R\fermata \fine
+	R_\fermata \fine
 }
