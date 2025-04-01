@@ -69,6 +69,7 @@ espressivo = \markup {\italic {espressivo}}
 semprepp = \markup {\italic {sempre} \dynamic pp}
 piup = \markup {\italic {più} \dynamic p}
 diminuendo = \markup {\italic {diminuendo}}
+fpdim = \markup {\dynamic fp \normal-text \italic {dim.}}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -88,12 +89,14 @@ fzpp = #(make-dynamic-script "fzpp")
 ffp = #(make-dynamic-script "ffp")
 fzp = #(make-dynamic-script "fzp")
 pmoltoespressD = #(make-dynamic-script pmoltoespress)
+fpdimD = #(make-dynamic-script fpdim)
 
 pbrackp = \markup {
 	\concat {
 		\dynamic p \bracket \with-true-dimensions \dynamic p
 	}
 }
+espr = \markup {\left-align \musicglyph "scripts.espr"}
 
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }
@@ -107,7 +110,8 @@ mutainflautopiccolo = \markup {"[muta in Flauto piccolo]"}
 mutainflautoii = \markup {"[muta in Flauto II.]"}
 mutaina = \markup {"[muta in A]"}
 mutainb = \markup {"[muta in B]"}
-
+mutaine = \markup {"[muta in E]"}
+mutainf = \markup {"[muta in F]"}
 div = \markup {div.}
 
 markAaBox = \markup { \box \bold "Aa" }
