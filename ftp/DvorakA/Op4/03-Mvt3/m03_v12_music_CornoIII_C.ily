@@ -95,7 +95,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 111 to 115
 	R2. \mark \default
 	R2.
-	r4 g,-.\f( g,-.)
+	\partCombineApart r4 g,-.\f( g,-.) \partCombineAutomatic
 	g'8.\ff g16 g8 r r4
 	g8. g16 g8 r r4
 % Bars 116 to 120
@@ -132,7 +132,7 @@ musicCornoIIIMvtIII = \relative c {
 	c4\ff d8. d16 e4
 	c d8. d16 e4
 	c d8. d16 e4
-	b b d
+	\partCombineApart b b \partCombineAutomatic d
 	d d d
 % Bars 146 to 150
 	d2.\fermata
@@ -184,11 +184,11 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 201 to 205
 		g~
 		g
-		r4 e'8.\pp e16 e8 r
-		r4 e8. e16 e8 r
-		r4 e8. e16 e8 r
+		r4 \partCombineApart e'8. e16 e8 \partCombineAutomatic r
+		r4 \partCombineApart e8. e16 e8 \partCombineAutomatic r
+		r4 \partCombineApart e8. e16 e8 \partCombineAutomatic r
 % Bars 206 to 210
-		r4 e8. e16 e8 r
+		r4 \partCombineApart e8. e16 e8 \partCombineAutomatic r
 		e,2.\pp~
 		e
 		d~
@@ -335,7 +335,7 @@ musicCornoIIIMvtIII = \relative c {
 	R2. \mark \markCcBox
 	R2.
 % Bars 381 to 385
-	r4 g,-.(\f g,-.)
+	\partCombineApart r4 g,-.(\f g,-.) \partCombineAutomatic
 	g'8.\ff g16 g8 r r4
 	g8. g16 g8 r r4
 	c8. c16 c8 r r4
@@ -369,7 +369,7 @@ musicCornoIIIMvtIII = \relative c {
 	c d8. d16 e4
 % Bars 411 to 415
 	c d8. d16 e4
-	b b d
+	\partCombineApart b b \partCombineAutomatic d
 	d d d
 	d2.\fermata
 	g,,8\p r g r g r
@@ -393,20 +393,20 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 % Bars 431 to 435
-	g'2(\pp\< a8. b16
+	\partCombineApart g'2(\pp\< a8. b16
 	b4 c\! d\>~
 	d2.)\!
-	d4(\pp\< e c\!
-	d2\> g,4)\!
+	d4( e c
+	d2 g,4)
 % Bars 436 to 440
-	b2_\dimmarkup c4~
-	c2.\fermata
+	b2_\dimmarkup c4~ 
+	c2.\fermata \partCombineAutomatic
 	b8 r r4 r
 	R2.*3
 	
 % Bars 441 to 445
 	
-	g8\p[ g g g] d' d
+	\partCombineApart g8[ g g g] d' d \partCombineAutomatic
 	d[ d] c[ c] c c
 	b\< b b b b b
 	d d d d d d\!
@@ -419,7 +419,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 451 to 455
 	ais ais ais ais ais ais
 	f![ f] e[ e] gis gis
-	a[ a] fis[ fis] e! e
+	a[ a] \partCombineApart fis[ fis] \partCombineAutomatic e! e
 	f![ f] e[ e] gis gis
 	a[ a a a] b b
 % Bars 456 to 460
@@ -456,14 +456,14 @@ musicCornoIIIMvtIII = \relative c {
 	d-. c-. d-.
 	e-. d-. e-.
 	d-. e-. d-.
-	b-. r r
+	\once \partCombineApart b-. r r
 	R2.*4
 % Bars 486 to 490
 	
 	
 	
-	g4-.\fp\> d-. g-.
-	d-.\! r r
+	\partCombineApart g4-.\fp\> d-. g-.
+	d-.\! r r \partCombineAutomatic
 % Bars 491 to 495
 	R2.*2
 	

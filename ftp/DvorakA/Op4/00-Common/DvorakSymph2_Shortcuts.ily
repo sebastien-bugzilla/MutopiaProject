@@ -112,6 +112,8 @@ mutaina = \markup {"[muta in A]"}
 mutainb = \markup {"[muta in B]"}
 mutaine = \markup {"[muta in E]"}
 mutainf = \markup {"[muta in F]"}
+mutaind = \markup {"[muta in D]"}
+mutaines = \markup {"[muta in Es]"}
 div = \markup {div.}
 
 markAaBox = \markup { \box \bold "Aa" }

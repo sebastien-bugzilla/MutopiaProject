@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicCornoIIIMvtIII = \relative c {
+musicCornoIVMvtIII = \relative c {
 	\clef treble
 	\key c \major
 	\transposition ees
@@ -28,14 +28,14 @@ musicCornoIIIMvtIII = \relative c {
 	r4 r8. d16 d4->\fz
 	r4 r8. d16 d4->\fz
 % Bars 36 to 40
-	d2.->\fz
+	d,2.->\fz
 	d->\fz
 	d->\fz
 	d2\sfz d4->~
 	d d2\sfz
 % Bars 41 to 45
 	d2->\sfz d4->
-	c8. c16 c8 r r4
+	c'8. c16 c8 r r4
 	c8.\> c16 c8\! r r4
 	c8.\p\> c16 << c2\fermata {s4 s\!}>> \mark \default
 	R2.*21
@@ -55,7 +55,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 	
-	g2.\pp~
+	g,2.\pp~
 % Bars 76 to 80
 	g~
 	g
@@ -76,50 +76,50 @@ musicCornoIIIMvtIII = \relative c {
 	g2 r4
 % Bars 96 to 100
 	R2.
-	r4 r b8.\f b16
-	b4 r b8. b16
-	b4 r b8. b16
-	e2.->
+	r4 r g'8.\f g16
+	g4 r g8. g16
+	g4 r g8. g16
+	cis2.->
 % Bars 101 to 105
-	c!8.[\ff c16 c8. c16] c4~
-	c8.[ c16 c8. c16] c4~
-	c8.[ c16 c8. c16] c4~
-	c8.[ c16 c8. c16] c4~
-	c2 c8. c16
+	a8.[\ff a16 a8. a16] a4~
+	a8.[ a16 a8. a16] a4~
+	a8.[ a16 a8. a16] a4~
+	a8.[ a16 a8. a16] a4~
+	a2 a8. a16
 % Bars 106 to 110
-	c2 c8. c16
-	c2 c8. c16
-	c2 c8. c16
+	a2 a8. a16
+	fis2 fis8. fis16
+	fis2 fis8. fis16
 	d2.\ff~
 	d
 % Bars 111 to 115
 	R2. \mark \default
 	R2.
-	r4 g,-.\f( g,-.)
-	g'8.\ff g16 g8 r r4
+	R
+	c8.\ff c16 c8 r r4
 	g8. g16 g8 r r4
 % Bars 116 to 120
-	c8. c16 c8 r r4
-	g8. g16 g8 r r4
-	c-.-> b-.-> g-.->
-	a8. a16 a8 r r4
-	c-.-> b-.-> g-.->
-% Bars 121 to 125
-	a8. a16 a8 r r4
-	g8. g16 g8 r r4
-	fis8. fis16 fis8 r r4
-	e'8. e16 e8 r r4
+	fis'8. fis16 fis8 r r4
+	g,8. g16 g8 r r4 
+	c-.-> d-.-> c-.->
 	d8. d16 d8 r r4
+	c-.-> d-.-> c-.->
+% Bars 121 to 125
+	d8. d16 d8 r r4
+	e8. e16 e8 r r4
+	d8. d16 d8 r r4
+	fis8. fis16 fis8 r r4
+	fis8. fis16 fis8 r r4
 % Bars 126 to 130
-	g,4-.-> a-.-> d-.->
-	a8. a16 a8 r r4
-	g-.-> a-.-> d-.->
-	a8. a16 a8 r r4
-	b2-> a8. b16
+	e4-.-> d-.-> g-.->
+	e8. e16 e8 r r4
+	e-.-> d-.-> g-.->
+	e8. e16 e8 r r4
+	g2-> d8. g16
 % Bars 131 to 135
-	b2-> a8. b16
-	b4-.-> ees-.-> d-.->
-	ees-.-> d-.-> ees-.-> \mark \default
+	g2-> d8. g16
+	g4-.-> c-.-> g-.->
+	c-.-> g-.-> c-.-> \mark \default
 	R2.*4
 	
 % Bars 136 to 140
@@ -129,10 +129,10 @@ musicCornoIIIMvtIII = \relative c {
 	R2.
 	\tuplet 3/2 4 {c,8\f\< e g} c2\!
 % Bars 141 to 145
-	c4\ff d8. d16 e4
-	c d8. d16 e4
-	c d8. d16 e4
-	b b d
+	e,4\ff g8. g16 c4
+	e, g8. g16 c4
+	e, g8. g16 c4
+	b b d,
 	d d d
 % Bars 146 to 150
 	d2.\fermata
@@ -155,20 +155,20 @@ musicCornoIIIMvtIII = \relative c {
 	
 	\section
 	\repeat volta 2 {
-		d'2.\fz\>~
-		<< d~ {s4 s s\!}>>
+		g'2.\fz\>~
+		<< g~ {s4 s s\!}>>
 % Bars 181 to 185
-		d2.~\pp
-		d~
-		d4 r r
+		g2.~\pp
+		g~
+		g4 r r
 		R2.*3
 		
 % Bars 186 to 190
 		
-		d,2.\pp
-		d8. d16 d8 r r4
-		d2.
-		d8. d16 d8 r r4
+		g,2.\pp
+		g8. g16 g8 r r4
+		g2.
+		g8. g16 g8 r r4
 % Bars 191 to 195
 		e2.
 		e8. e16 e8 r r4
@@ -184,12 +184,12 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 201 to 205
 		g~
 		g
-		r4 e'8.\pp e16 e8 r
-		r4 e8. e16 e8 r
-		r4 e8. e16 e8 r
+		r4 a8.\pp a16 a8 r
+		r4 a8. a16 a8 r
+		r4 a8. a16 a8 r
 % Bars 206 to 210
-		r4 e8. e16 e8 r
-		e,2.\pp~
+		r4 a8. a16 a8 r
+		e'2.\pp~
 		e
 		d~
 		d
@@ -198,7 +198,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 216 to 220
 		
 		
-		ees'4\f r r \mark \default
+		c'4\f r r \mark \default
 	}
 	g,2.\p~
 	g~
@@ -266,7 +266,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 	
-	d2.->\fz
+	d'2.->\fz
 	d->\fz
 % Bars 306 to 310
 	d->\fz
@@ -276,7 +276,7 @@ musicCornoIIIMvtIII = \relative c {
 	c8. c16 c8 r r4
 % Bars 311 to 315
 	c8.\> c16 c8\! r r4
-	c8.\pp c16 c2\fermata_\espr \mark \markAaBox
+	d,8.\pp d16 d2\fermata \mark \markAaBox
 	R2.*21
 % Bars 316 to 320
 	
@@ -295,7 +295,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 341 to 345
 	
 	
-	g2.\pp~
+	g,2.\pp~
 	g~
 	g
 % Bars 346 to 350
@@ -315,64 +315,64 @@ musicCornoIIIMvtIII = \relative c {
 	r r r8 g
 	g2 r4
 	R2.
-	r4 r b8.\f b16
+	r4 r g'8.\f g16
 % Bars 366 to 370
-	b4 r b8. b16
-	b4 r b8. b16
-	e2.->
-	c!8.\ff[ c16 c8. c16] c4~
-	c8.[ c16 c8. c16] c4~
+	g4 r g8. g16
+	g4 r g8. g16
+	cis2.->
+	a8.\ff[ a16 a8. a16] a4~
+	a8.[ a16 a8. a16] a4~
 % Bars 371 to 375
-	c8.[ c16 c8. c16] c4~
-	c8.[ c16 c8. c16] c4~
-	c2 c8. c16
-	c2 c8. c16
-	c2 c8. c16
+	a8.[ a16 a8. a16] a4~
+	a8.[ a16 a8. a16] a4~
+	a2 a8. a16
+	a2 a8. a16
+	fis2 fis8. fis16
 % Bars 376 to 380
-	c2 c8. c16
+	fis2 fis8. fis16
 	d2.\ff~
 	d
 	R2. \mark \markCcBox
 	R2.
 % Bars 381 to 385
-	r4 g,-.(\f g,-.)
-	g'8.\ff g16 g8 r r4
+	R
+	c8.\ff c16 c8 r r4
 	g8. g16 g8 r r4
-	c8. c16 c8 r r4
-	g8. g16 g8 r r4
+	fis'8. fis16 fis8 r r4
+	g,8. g16 g8 r r4
 % Bars 386 to 390
-	c-.-> b-.-> g-.->
-	a8. a16 a8 r r4
-	c-.-> b-.-> g-.->
-	a8. a16 a8 r r4
-	g8. g16 g8 r r4
-% Bars 391 to 395
-	fis8. fis16 fis8 r r4
-	e'8. e16 e8 r r4
+	c-.-> d-.-> c-.->
 	d8. d16 d8 r r4
-	g,-.-> a-.-> d-.->
-	a8. a16 a8 r r4
+	c-.-> d-.-> c-.->
+	d8. d16 d8 r r4
+	e8. e16 e8 r r4
+% Bars 391 to 395
+	d8. d16 d8 r r4
+	fis8. fis16 fis8 r r4
+	fis8. fis16 fis8 r r4
+	e-.-> d-.-> g-.->
+	e8. e16 e8 r r4
 % Bars 396 to 400
-	g-.-> a-.-> d-.->
-	a8. a16 a8 r r4
-	b2-> a8. b16
-	b2-> a8. b16
-	b4-.-> ees-.-> d-.->
+	e-.-> d-.-> g-.->
+	e8. e16 e8 r r4
+	g2-> d8. g16
+	g2-> d8. g16
+	g4-.-> c-.-> g-.->
 % Bars 401 to 405
-	ees-.-> d-.-> ees-.-> \mark \markDdBox
+	c-.-> g-.-> c-.-> \mark \markDdBox
 	R2.*4
 % Bars 406 to 410
 	\tuplet 3/2 4 {c,8\f\< e g} c2\!
 	R2.
 	\tuplet 3/2 4 {c,8\f\< e g} c2\!
-	c4\ff d8. d16 e4
-	c d8. d16 e4
+	e,4\ff g8. g16 c4
+	e, g8. g16 c4
 % Bars 411 to 415
-	c d8. d16 e4
-	b b d
+	e, g8. g16 c4
+	b b d,
 	d d d
 	d2.\fermata
-	g,,8\p r g r g r
+	g,8\p r g r g r
 % Bars 416 to 420
 	g r g r g r
 	g r g r g r
@@ -393,81 +393,81 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 % Bars 431 to 435
-	g'2(\pp\< a8. b16
-	b4 c\! d\>~
-	d2.)\!
-	d4(\pp\< e c\!
-	d2\> g,4)\!
+	R2.*3
+	
+	
+	g4(\pp\< c a\!)
+	b2(\> c4)\!
 % Bars 436 to 440
-	b2_\dimmarkup c4~
-	c2.\fermata
-	b8 r r4 r
+	d2.
+	d,2.\fermata
+	d'8 r r4 r
 	R2.*3
 	
 % Bars 441 to 445
 	
 	g8\p[ g g g] d' d
-	d[ d] c[ c] c c
-	b\< b b b b b
-	d d d d d d\!
+	g,[ g] g[ g] fis fis
+	g\< g g g g g
+	fis fis fis fis fis fis\!
 % Bars 446 to 450
-	g,\mf[ g] g[ g] a a
-	g[ g] g[ g] d' d
-	g,\< g g g g g
-	c c c c c c\!
-	g[\f g] fis[ fis] b b
+	b,\mf[ b] c[ c] d d
+	d[ d] e[ e] fis fis
+	b,\< b b b b b
+	a' a a a a a\!
+	d,[\f d] d[ d] d d
 % Bars 451 to 455
-	ais ais ais ais ais ais
-	f![ f] e[ e] gis gis
-	a[ a] fis[ fis] e! e
-	f![ f] e[ e] gis gis
-	a[ a a a] b b
+	fis fis fis fis fis fis
+	d![ d] c[ c] d d
+	e[ e] fis[ fis] c! c
+	d[ d] c[ c] d d
+	e[ e e e] g g
 % Bars 456 to 460
-	c8.\ff c16 c2
-	d8. d16 d2
-	c8. c16 c2
-	d8. d16 d2
-	cis2.\ff-^~
+	g8.\ff g16 g2
+	aes8. aes16 aes2
+	g8. g16 g2
+	aes8. aes16 aes2
+	a!2.\ff-^~
 % Bars 461 to 465
-	cis
-	c!4->-. c-.-> c-.->
-	c-.-> c-.-> d-.->
-	d4.\ff d8 d4
-	b4. b8 b4
+	a
+	a4->-. a-.-> g-.->
+	fis-.-> g-.-> a-.->
+	g4.\ff g8 g4
+	g4. g8 g4
 % Bars 466 to 470
-	a4. a8 a4
+	fis4. fis8 fis4
+	fis4. fis8 fis4
+	g4. g8 g4
+	e4. e8 e4
 	d4. d8 d4
-	e4. e8 e4
-	e4. e8 e4
-	g,4. g8 g4
 % Bars 471 to 475
-	b4. b8 b4
-	c4. c8 c4
-	cis4. cis8 cis4
-	d2.~
-	d~
+	e4. e8 e4
+	e4. e8 e4
+	fis4. fis8 fis4
+	b2.~
+	b~
 % Bars 476 to 480
-	d~
-	d
-	c(
-	b)
-	c4-. d-. c-.
+	b~
+	b
+	a(
+	g)
+	a4-. gis-. a-.
 % Bars 481 to 485
-	d-. c-. d-.
-	e-. d-. e-.
-	d-. e-. d-.
+	gis-. a-. b-.
+	c-. a-. c-.
+	a-. c-. a-.
 	b-. r r
 	R2.*4
 % Bars 486 to 490
 	
 	
 	
-	g4-.\fp\> d-. g-.
-	d-.\! r r
+	\mmrPos #-7 R2.
+	R
 % Bars 491 to 495
 	R2.*2
 	
-	r4 r d-.\pp
+	r4 r b,-.\pp
 	R2.*2
 	
 % Bars 496 to 500
