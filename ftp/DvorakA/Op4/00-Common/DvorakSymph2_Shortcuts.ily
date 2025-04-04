@@ -101,7 +101,7 @@ espr = \markup {\left-align \musicglyph "scripts.espr"}
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }
 markDe = \markup { \abs-fontsize #12 "-de" }
-
+sole = \markup {Sole}
 
 mutaingd = \markup {"[muta in G, D]"}
 mutainflpicc = \markup {"[muta in Fl.picc.]"}

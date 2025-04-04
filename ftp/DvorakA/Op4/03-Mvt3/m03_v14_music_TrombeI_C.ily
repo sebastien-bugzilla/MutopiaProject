@@ -4,10 +4,10 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIIMvtIII = \relative c {
+musicTrombeIMvtIII = \relative c {
 	\clef treble
 	\key c \major
-%	\transposition a
+	\transposition bes
 % Bars 1 to 5
 	R2.*43
 % Bars 6 to 10
@@ -47,17 +47,17 @@ musicTrombeIIMvtIII = \relative c {
 	
 % Bars 81 to 85
 	
-	d'8.\pp d16 d2
+	d''8.\pp d16 d2
 	d8. d16 d2
 	d8. d16 d2 \mark \default
-	g8 r r4 r
+	\once \partCombineApart g,8 r r4 r
 % Bars 86 to 90
 	R2.*11
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
-	r4 r g8.\f g16
+	r4 r g'8.\f g16
 	g2 g8. g16
 	g2 g8. g16
 	g2.->
@@ -77,31 +77,31 @@ musicTrombeIIMvtIII = \relative c {
 	R2. \mark \default
 	R2.*2
 	
-	c8.\ff c16 c8 r r4
-	c8. c16 c8 r r4
-% Bars 116 to 120
-	g8. g16 g8 r r4
+	\partCombineApart c,8. c16 c8 \partCombineAutomatic r r4
 	e8. e16 e8 r r4
-	f-.-> g-.-> f-.->
-	g2 r4
-	f-.-> g-.-> f-.->
-% Bars 121 to 125
-	g2 r4
-	e2\fz r4
-	e2\fz r4
-	b'2\sfz-> r4
-	e,2\sfz-> r4
-% Bars 126 to 130
-	e-.-> g-.-> g-.->
+% Bars 116 to 120
+	d8. d16 d8 r r4
+	c8. c16 c8 r r4
+	d-.-> e-.-> c-.->
 	d2 r4
-	e-.-> g-.-> g-.->
+	d-.-> e-.-> c-.->
+% Bars 121 to 125
+	d2 r4
+	e2\fz r4
+	e2\fz r4
+	\once \partCombineApart b2-> r4
+	e2\sfz-> r4
+% Bars 126 to 130
+	c-.-> d-.-> c-.->
+	d2 r4
+	c-.-> d-.-> c-.->
 	d2 g,4
 	c8. c16 c4 r
 % Bars 131 to 135
 	c8. c16 c4 r
 	c4-.-> c-.-> c-.->
 	c-.-> c-.-> c-.-> \mark \default
-	\tuplet 3/2 4 {c8\ff\<^\sole e g} c2->\!
+	\tuplet 3/2 4 {c,8\ff\<^\sole e g} c2->\!
 	R2.
 % Bars 136 to 140
 	\tuplet 3/2 4 {c,8\f\< e g} c2\!
@@ -110,17 +110,17 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 % Bars 141 to 145
-	r4 c,\ff c
+	r4 c\ff c
 	r c c
 	r c c
-	r r g'
-	c g c
+	r r d
+	e d e
 % Bars 146 to 150
-	g2.\fermata
-	r4 e2->\f
-	r4 e2->
-	r4 e2->
-	r4 e2-> \mark \default
+	d2.\fermata
+	r4 c2->\f
+	r4 c2->
+	r4 c2->
+	r4 c2-> \mark \default
 % Bars 151 to 155
 	R2.*28^\mutaind \transposition d
 % Bars 156 to 160
@@ -144,7 +144,7 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 191 to 195
 	
 % Bars 196 to 200
-		g2.~
+		g'2.~
 		g~
 		g
 		R
@@ -217,7 +217,7 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	
-	g'4\f r r
+	g4\f r r
 	g r r
 % Bars 306 to 310
 	g r r
@@ -250,11 +250,11 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	
-	d8.\pp d16 d2
+	d'8.\pp d16 d2
 % Bars 351 to 355
 	d8. d16 d2
 	d8. d16 d2 \mark \markBbBox
-	g8 r r4 r
+	\once \partCombineApart g,8 r r4 r
 	R2.*11
 % Bars 356 to 360
 	
@@ -263,7 +263,7 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	
-	r4 r g8.\f g16
+	r4 r g'8.\f g16
 % Bars 366 to 370
 	g2 g8. g16
 	g2 g8. g16
@@ -284,31 +284,31 @@ musicTrombeIIMvtIII = \relative c {
 	R2.*2
 % Bars 381 to 385
 	
-	c8.\ff c16 c8 r r4
-	c8. c16 c8 r r4
-	g8. g16 g8 r r4
+	\partCombineApart c,8.\ff c16 c8 \partCombineAutomatic r r4
 	e8. e16 e8 r r4
+	d8. d16 d8 r r4
+	c8. c16 c8 r r4
 % Bars 386 to 390
-	f-.-> g-.-> f-.->
-	g2 r4
-	f4-.-> g-.-> f-.->
-	g2 r4
+	d-.-> e-.-> c-.->
+	d2 r4
+	d4-.-> e-.-> c-.->
+	d2 r4
 	e2\fz r4
 % Bars 391 to 395
 	e2\fz r4
-	b'2->\sfz r4
-	e,2->\sfz r4
-	e4-.-> g-.-> g-.->
+	\once \partCombineApart b2-> r4
+	e2->\sfz r4
+	c4-.-> d-.-> c-.->
 	d2 r4
 % Bars 396 to 400
-	e4-.-> g-.-> g-.->
+	c4-.-> d-.-> c-.->
 	d2 g,4
 	c8. c16 c4 r
 	c8. c16 c4 r
 	c-.-> c-.-> c-.->
 % Bars 401 to 405
 	c-.-> c-.-> c-.-> \mark \markDdBox
-	\tuplet 3/2 4 {c8\ff\<^\sole e g} c2->\!
+	\tuplet 3/2 4 {c,8\ff\<^\sole e g} c2->\!
 	R2.
 	\tuplet 3/2 4 {c,8\f\< e g} c2\!
 	R2.*4
@@ -316,13 +316,13 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	
-	r4 c,\ff c
+	r4 c\ff c
 	r c c
 % Bars 411 to 415
 	r c c
-	r r g'
-	c g c
-	g2.\fermata
+	r r d
+	e d e
+	d2.\fermata
 	R2.*22
 % Bars 416 to 420
 	
@@ -343,40 +343,40 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	<< c,2.-> {s4\ff\> s s\!}>>
+	<< c2.-> {s4\ff\> s s\!}>>
 	<< g'2.-> {s4\> s s\!}>>
 	<< c,2.-> {s4\> s s\!}>>
 	<< g'2.-> {s4\> s s\!}>>
-	c2.\ff-^~
+	d2.\ff-^~
 % Bars 461 to 465
-	c
-	d4-.-> d-.-> c-.->
-	b-.-> c-.-> d-.->
-	c\ff r r
-	c r r
+	d
+	f!4-.-> f-.-> f-.->
+	f-.-> f-.-> f-.->
+	e\ff r r
+	e r r
 % Bars 466 to 470
-	g r r
-	g r r
-	a r r
-	a r r
-	c r r
-% Bars 471 to 475
-	a r r
-	d r r
 	b r r
-	e2.~
-	e~
+	e r r
+	c r r
+	d r r
+	e r r
+% Bars 471 to 475
+	e r r
+	f r r
+	fis r r
+	g2.~
+	g~
 % Bars 476 to 480
-	e~
-	e
-	d(
-	c)
-	d4 r r
+	g~
+	g
+	f(
+	e)
+	\once \partCombineApart d4 r r
 % Bars 481 to 485
 	R2.
-	d,4\mf d d
+	d4\mf d d
 	d d d
-	a' r r
+	e r r
 	R2.*16
 % Bars 486 to 490
 	

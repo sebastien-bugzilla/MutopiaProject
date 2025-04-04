@@ -158,7 +158,7 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 206 to 210
 		e
 		c~
-		c_\crescmarkup
+		c
 		<< d~ {s4\< s s\!}>>
 		d2.
 % Bars 211 to 215
