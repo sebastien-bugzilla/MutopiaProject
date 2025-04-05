@@ -70,7 +70,7 @@ semprepp = \markup {\italic {sempre} \dynamic pp}
 piup = \markup {\italic {più} \dynamic p}
 diminuendo = \markup {\italic {diminuendo}}
 fpdim = \markup {\dynamic fp \normal-text \italic {dim.}}
-
+pocoapoco = \markup {\italic {poco a poco}}
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
 )
@@ -114,6 +114,8 @@ mutaine = \markup {"[muta in E]"}
 mutainf = \markup {"[muta in F]"}
 mutaind = \markup {"[muta in D]"}
 mutaines = \markup {"[muta in Es]"}
+mutainda = \markup {"[muta in D, A]"}
+mutainbf = \markup {"[muta in B, F]"}
 div = \markup {div.}
 
 markAaBox = \markup { \box \bold "Aa" }
