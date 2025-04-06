@@ -71,6 +71,33 @@ piup = \markup {\italic {più} \dynamic p}
 diminuendo = \markup {\italic {diminuendo}}
 fpdim = \markup {\dynamic fp \normal-text \italic {dim.}}
 pocoapoco = \markup {\italic {poco a poco}}
+ffmarcato = \markup {\dynamic ff \italic {marcato}}
+fffz = \markup {\concat { \dynamic ff \hspace #0.4 \dynamic fz }}
+pbrackp = \markup {
+	\concat {
+		\dynamic p \bracket \with-true-dimensions \dynamic p
+	}
+}
+espr = \markup {\left-align \musicglyph "scripts.espr"}
+fbrackf = \markup {
+	\overlay {
+		\general-align #Y #CENTER {
+			\dynamic f 
+			\translate #'(1.4 . 0) \path #0.15 #'(
+				(lineto 0.7 2.8) (moveto 0.7 2.8) (lineto 1 2.8) (moveto 0 0)
+				(lineto 0.3 0)
+			)
+			\translate #'(2.1 . 0) \dynamic f
+			\translate #'(3.5 . 0) \path #0.15 #'(
+				(lineto 0.7 2.8) (moveto 0.7 2.8) (lineto 0.4 2.8) (moveto 0 0)
+				(lineto -0.3 0)
+			)
+		}
+	}
+}
+mfmarkup = \markup {\dynamic mf}
+
+
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
 )
@@ -90,13 +117,7 @@ ffp = #(make-dynamic-script "ffp")
 fzp = #(make-dynamic-script "fzp")
 pmoltoespressD = #(make-dynamic-script pmoltoespress)
 fpdimD = #(make-dynamic-script fpdim)
-
-pbrackp = \markup {
-	\concat {
-		\dynamic p \bracket \with-true-dimensions \dynamic p
-	}
-}
-espr = \markup {\left-align \musicglyph "scripts.espr"}
+fffzD = #(make-dynamic-script fffz)
 
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }
