@@ -1,6 +1,6 @@
     163     434    5282 10_DvorakSymph2_Conductor_mvt1.ly
     161     432    5303 10_DvorakSymph2_Conductor_mvt2.ly
-    161     447    5397 10_DvorakSymph2_Conductor_mvt3.ly
+    161     444    5394 10_DvorakSymph2_Conductor_mvt3.ly
     153     413    5091 10_DvorakSymph2_Conductor_mvt4.ly
     244     562    5211 20_DvorakSymph2_Part01_Flauti.ly
     243     560    5089 20_DvorakSymph2_Part02_Oboi.ly
@@ -15,7 +15,7 @@
     143     360    3445 20_DvorakSymph2_Part11_Viola.ly
     143     360    3613 20_DvorakSymph2_Part12_Violoncello.ly
     143     360    3613 20_DvorakSymph2_Part13_Contrabasso.ly
-    137     326    2387 test.ly
+    145     345    2533 test.ly
     318     867    7181 00-Common/DvorakSymph2_CueVoice.ily
      10      59     537 00-Common/DvorakSymph2_Format_Cond_Mvt01.ily
      10      59     538 00-Common/DvorakSymph2_Format_Cond_Mvt02.ily
@@ -42,7 +42,7 @@
     694    2327   19104 00-Common/DvorakSymph2_NameVoice.ily
      67     187    1606 00-Common/DvorakSymph2_PaperConductors.ily
      67     180    1599 00-Common/DvorakSymph2_PaperParts.ily
-    612    2002   14828 00-Common/DvorakSymph2_Shortcuts.ily
+    618    2027   15019 00-Common/DvorakSymph2_Shortcuts.ily
     146     386    2496 00-Common/DvorakSymph2_Tempi.ily
      27     125     760 00-Common/DvorakSymph2_timeMvt.ily
     805    2661   12369 01-Mvt1/m01_v02_music_FlautoI.ily
@@ -146,7 +146,7 @@
     363     972    4420 03-Mvt3/m03_v18_music_TrombonoIII.ily
     412    1309    6065 03-Mvt3/m03_v19_music_Timpani.ily
     605    2981   12917 03-Mvt3/m03_v20_music_ViolinoI.ily
-    213     556    2436 03-Mvt3/m03_v21_music_ViolinoII.ily
+    609    3193   13029 03-Mvt3/m03_v21_music_ViolinoII.ily
     213     556    2430 03-Mvt3/m03_v22_music_Viola.ily
     213     556    2436 03-Mvt3/m03_v23_music_Violoncello.ily
     213     556    2436 03-Mvt3/m03_v24_music_Contrabasso.ily
@@ -174,4 +174,4 @@
     239     623    2697 04-Mvt4/m04_v22_music_Viola.ily
     239     623    2703 04-Mvt4/m04_v23_music_Violoncello.ily
     239     623    2703 04-Mvt4/m04_v24_music_Contrabasso.ily
-  61328  197654 1008868 total
+  61738  200332 1019795 total

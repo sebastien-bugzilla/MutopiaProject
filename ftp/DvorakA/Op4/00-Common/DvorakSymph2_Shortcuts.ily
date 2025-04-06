@@ -96,7 +96,12 @@ fbrackf = \markup {
 	}
 }
 mfmarkup = \markup {\dynamic mf}
-
+fbrackz = \markup {
+	\concat {
+		\dynamic f \bracket \with-true-dimensions \dynamic z 
+	}
+}
+ppdiminuendo = \markup {\dynamic pp \italic {diminuendo}}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -118,6 +123,7 @@ fzp = #(make-dynamic-script "fzp")
 pmoltoespressD = #(make-dynamic-script pmoltoespress)
 fpdimD = #(make-dynamic-script fpdim)
 fffzD = #(make-dynamic-script fffz)
+fbrackzD = #(make-dynamic-script fbrackz)
 
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }
