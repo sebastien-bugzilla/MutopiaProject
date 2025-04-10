@@ -102,6 +102,8 @@ fbrackz = \markup {
 	}
 }
 ppdiminuendo = \markup {\dynamic pp \italic {diminuendo}}
+sempref = \markup {\italic sempre \dynamic f}
+
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
