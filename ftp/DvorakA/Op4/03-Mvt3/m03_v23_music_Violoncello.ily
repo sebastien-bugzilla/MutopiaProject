@@ -174,7 +174,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 141 to 145
 	c4-> bes-> ees->
 	c-> bes-> ees->
-	c-> bes-> ees,->
+	c-.-> bes-.-> ees,-.->
 	d->\f g-> f->
 	bes-> f-> bes->
 % Bars 146 to 150
@@ -337,7 +337,7 @@ musicVioloncelloMvtIII = \relative c {
 	
 % Bars 276 to 280
 	
-	ees'2.\ff\>~
+	ees'!2.\ff\>~
 	<< ees {s4 s s\!}>>
 	c2.\p\>~
 	<< c {s4 s s\!}>>
