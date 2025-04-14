@@ -226,7 +226,7 @@ musicCornoIVMvtIII = \relative c {
 	e2.\pp~
 % Bars 246 to 250
 	e2 r4 \mark \default
-	R2.*8^\mutaines
+	R2.*8^\mutaines \transposition ees
 % Bars 251 to 255
 	
 	

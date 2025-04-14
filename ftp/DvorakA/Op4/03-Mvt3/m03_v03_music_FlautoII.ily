@@ -237,10 +237,10 @@ musicFlautoIIMvtIII = \relative c {
 		e4( f) d8-. d-.
 		e4 c2->
 		d bes8. c16
-		c4-> d-> ees->
+		c4-> d-> e->
 % Bars 216 to 220
 		d2 bes8. c16
-		c4-> d-> ees->
+		c4-> d-> e->
 		bes'\fp r r \mark \default
 	}
 	a4.(\p b8) \tuplet 3/2 4 {cis( d gis,)}

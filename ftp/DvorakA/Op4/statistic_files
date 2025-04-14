@@ -116,7 +116,7 @@
     193    1803    9010 02-Mvt2/m02_v23_music_Violoncello.ily
     193    1411    6961 02-Mvt2/m02_v24_music_Contrabasso.ily
     555    1864    9005 03-Mvt3/m03_v02_music_FlautoI.ily
-    555    1858    9171 03-Mvt3/m03_v03_music_FlautoII.ily
+    555    1858    9167 03-Mvt3/m03_v03_music_FlautoII.ily
     543    1696    8418 03-Mvt3/m03_v04_music_OboeI_C.ily
     543    1672    8058 03-Mvt3/m03_v04_music_OboeI.ily
     543    1671    7917 03-Mvt3/m03_v05_music_OboeII_C.ily
@@ -129,18 +129,18 @@
     546    1898    9285 03-Mvt3/m03_v08_music_FagottoI.ily
     546    1873    8874 03-Mvt3/m03_v09_music_FagottoII_C.ily
     546    1863    8895 03-Mvt3/m03_v09_music_FagottoII.ily
-    506    1569    7547 03-Mvt3/m03_v10_music_CornoI_C.ily
-    506    1543    7116 03-Mvt3/m03_v10_music_CornoI.ily
-    506    1491    6931 03-Mvt3/m03_v11_music_CornoII_C.ily
-    506    1487    6936 03-Mvt3/m03_v11_music_CornoII.ily
-    481    1478    6916 03-Mvt3/m03_v12_music_CornoIII_C.ily
-    481    1452    6427 03-Mvt3/m03_v12_music_CornoIII.ily
-    481    1439    6424 03-Mvt3/m03_v13_music_CornoIV_C.ily
-    481    1436    6430 03-Mvt3/m03_v13_music_CornoIV.ily
+    506    1571    7562 03-Mvt3/m03_v10_music_CornoI_C.ily
+    506    1545    7131 03-Mvt3/m03_v10_music_CornoI.ily
+    506    1493    6946 03-Mvt3/m03_v11_music_CornoII_C.ily
+    506    1489    6951 03-Mvt3/m03_v11_music_CornoII.ily
+    481    1480    6935 03-Mvt3/m03_v12_music_CornoIII_C.ily
+    481    1454    6446 03-Mvt3/m03_v12_music_CornoIII.ily
+    481    1441    6443 03-Mvt3/m03_v13_music_CornoIV_C.ily
+    481    1438    6449 03-Mvt3/m03_v13_music_CornoIV.ily
     389    1037    4902 03-Mvt3/m03_v14_music_TrombeI_C.ily
     389    1023    4713 03-Mvt3/m03_v14_music_TrombeI.ily
-    389    1024    4698 03-Mvt3/m03_v15_music_TrombeII_C.ily
-    389    1024    4711 03-Mvt3/m03_v15_music_TrombeII.ily
+    389    1023    4699 03-Mvt3/m03_v15_music_TrombeII_C.ily
+    389    1023    4712 03-Mvt3/m03_v15_music_TrombeII.ily
     357     922    4261 03-Mvt3/m03_v16_music_TrombonoI.ily
     357     922    4278 03-Mvt3/m03_v17_music_TrombonoII.ily
     363     972    4420 03-Mvt3/m03_v18_music_TrombonoIII.ily
@@ -174,4 +174,4 @@
     239     623    2697 04-Mvt4/m04_v22_music_Viola.ily
     239     623    2703 04-Mvt4/m04_v23_music_Violoncello.ily
     239     623    2703 04-Mvt4/m04_v24_music_Contrabasso.ily
-  62939  206534 1047714 total
+  62939  206548 1047848 total

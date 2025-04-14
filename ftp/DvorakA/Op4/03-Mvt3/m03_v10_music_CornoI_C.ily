@@ -165,7 +165,7 @@ musicCornoIMvtIII = \relative c {
 	g16( a f8-.) f4. f8
 	g16( a f8-.) f4. f8 \mark \default 
 % Bars 151 to 155
-	R2.*28^\mutaine \transposition ees
+	R2.*28^\mutaine \transposition e
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -251,7 +251,7 @@ musicCornoIMvtIII = \relative c {
 	
 	c'2.\p~
 	c2 r4
-	R2.*2^\mutainf
+	R2.*2^\mutainf \transposition f
 % Bars 246 to 250
 	\mark \default
 	R2.*8
