@@ -126,6 +126,18 @@ tempiMvtIII = {
 }
 tempiMvtIV = {
 	\tempo "Allegro con fuoco (alla breve)"
+	s1*45
+	% bar 46
+	\tempo "calando"
+	s1*244
+	% bar 290
+	\tempo "calando"
+	s1*198
+	% bar 488
+	\tempo "Un poco animato"
+	s1*60 s2
+	% bar 548.5
+	\tempo "Vivace"
 }
 
 %###############################################################################

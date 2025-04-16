@@ -23,5 +23,12 @@ timeMvtIII = {
 }
 timeMvtIV = {
 	\time 2/2
-	
+	\set Timing.baseMoment = #(ly:make-moment 1/4)
+	\set Timing.beatStructure = 1,1
+	\set Timing.beamExceptions = \beamExceptions {
+		8[ 8 8 8] |
+		16[ 16 16 16] 16[ 16 16 16] |
+		32[ 32 32 32] 32[ 32 32 32] 32[ 32 32 32] 32[ 32 32 32] |
+		\tuplet 3/2 4 {8[ 8 8] 8[ 8 8]}
+	}
 }

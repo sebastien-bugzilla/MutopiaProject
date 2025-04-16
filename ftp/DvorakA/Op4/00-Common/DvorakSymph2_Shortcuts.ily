@@ -103,7 +103,7 @@ fbrackz = \markup {
 }
 ppdiminuendo = \markup {\dynamic pp \italic {diminuendo}}
 sempref = \markup {\italic sempre \dynamic f}
-
+fpmarkup = \markup {\dynamic fp}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -228,6 +228,44 @@ stemOffset = #(define-music-function
 	#}
 )
 
+trillSpanCustom = #(define-music-function
+	(markup)
+	(markup?)
+	#{
+		\once \override Score.TrillSpanner.bound-details.left.text = #markup
+	#}
+)
+
+flattrill = \markup {
+	\concat { 
+		\musicglyph #"scripts.trill" \translate #'(0.20 . 0.05) \text-flat 
+	}
+}
+naturaltrill = \markup {
+	\concat { 
+		\musicglyph #"scripts.trill" \translate #'(0.2 . 0.05) \text-natural 
+	}
+}
+
+InCueContext = {
+	\override Beam.beam-thickness = #0.30 % 0.30
+	\override StemTremolo.beam-thickness = #0.35 % 0.30
+	\override Beam.length-fraction = #0.67 % 0.8
+	\override Stem.length-fraction = #0.8 % 0.8
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\set fontSize = #-3 %-3
+}
+
+OutCueContext = {
+	\revert Beam.beam-thickness
+	\revert StemTremolo.beam-thickness
+	\revert Beam.length-fraction
+	\revert Stem.length-fraction
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\unset fontSize
+}
 
 
 
@@ -338,26 +376,6 @@ stemOffset = #(define-music-function
 %		\once \override Hairpin.whiteout-style = #'outline
 %	#}
 %)
-
-%InCueContext = {
-%	\override Beam.beam-thickness = #0.30 % 0.30
-%	\override StemTremolo.beam-thickness = #0.35 % 0.30
-%	\override Beam.length-fraction = #0.67 % 0.8
-%	\override Stem.length-fraction = #0.8 % 0.8
-%%	\override Stem.length = #7
-%%	\override Beam.length = #7
-%	\set fontSize = #-3 %-3
-%}
-
-%OutCueContext = {
-%	\revert Beam.beam-thickness
-%	\revert StemTremolo.beam-thickness
-%	\revert Beam.length-fraction
-%	\revert Stem.length-fraction
-%%	\override Stem.length = #7
-%%	\override Beam.length = #7
-%	\unset fontSize
-%}
 
 %markEO = #(define-music-function
 %	(offset)
@@ -535,19 +553,6 @@ stemOffset = #(define-music-function
 %	#}
 %)
 
-%trillSpanCustom = #(define-music-function
-%	(length markup)
-%	(number? markup?)
-%	% function to create a trill spanner with :
-%	%	- specified length
-%	%	- specified markup
-%	#{
-%		\once \override TrillSpanner.minimum-length = #length
-%		\once \override TrillSpanner.springs-and-rods = #ly:spanner::set-spacing-rods
-%		\once \override Score.TrillSpanner.bound-details.left.text = #markup
-%	#}
-%)
-
 %trillSpanPadding = #(define-music-function
 %	(padding)
 %	(number?)
@@ -559,16 +564,6 @@ stemOffset = #(define-music-function
 %)
 
 
-%naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \natural 
-%	}
-%}
-%flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
-%	}
-%}
 %sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 %	\concat { 
 %		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \sharp  
