@@ -1,7 +1,7 @@
     163     434    5282 10_DvorakSymph2_Conductor_mvt1.ly
     161     432    5303 10_DvorakSymph2_Conductor_mvt2.ly
     161     435    5385 10_DvorakSymph2_Conductor_mvt3.ly
-    159     489    5288 10_DvorakSymph2_Conductor_mvt4.ly
+    160     485    5310 10_DvorakSymph2_Conductor_mvt4.ly
     244     562    5211 20_DvorakSymph2_Part01_Flauti.ly
     243     560    5089 20_DvorakSymph2_Part02_Oboi.ly
     243     560    5401 20_DvorakSymph2_Part03_Clarinetti.ly
@@ -152,9 +152,11 @@
     575    2022    9232 03-Mvt3/m03_v24_music_Contrabasso.ily
     422    1222    5797 04-Mvt4/m04_v01_music_Piccolo.ily
     600    2140   10013 04-Mvt4/m04_v02_music_FlautoI.ily
-    587    1901    8938 04-Mvt4/m04_v03_music_FlautoII.ily
-    239     623    2699 04-Mvt4/m04_v04_music_OboeI.ily
-    239     623    2700 04-Mvt4/m04_v05_music_OboeII.ily
+    587    1901    8941 04-Mvt4/m04_v03_music_FlautoII.ily
+    623    2270   11265 04-Mvt4/m04_v04_music_OboeI_C.ily
+    623    2208   10134 04-Mvt4/m04_v04_music_OboeI.ily
+    601    1913    8851 04-Mvt4/m04_v05_music_OboeII_C.ily
+    601    1902    8804 04-Mvt4/m04_v05_music_OboeII.ily
     239     623    2703 04-Mvt4/m04_v06_music_ClarinettoI.ily
     239     623    2704 04-Mvt4/m04_v07_music_ClarinettoII.ily
     239     623    2700 04-Mvt4/m04_v08_music_FagottoI.ily
@@ -174,4 +176,4 @@
     239     623    2697 04-Mvt4/m04_v22_music_Viola.ily
     239     623    2703 04-Mvt4/m04_v23_music_Violoncello.ily
     239     623    2703 04-Mvt4/m04_v24_music_Contrabasso.ily
-  63881  210107 1065354 total
+  65852  217150 1099034 total

@@ -74,8 +74,8 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 	
-	a4->\f a-> cis-> d->
-	e2-> d->
+	a4->\f a-> cis!-> d->
+	e2 d->
 % Bars 91 to 95
 	c \tuplet 3/2 2 {c4-.( d-. ees!-.)}
 	ees2( d4) r
@@ -92,7 +92,7 @@ musicOboeIIMvtIV = \relative c {
 	bes d4. c8
 	cis2-> cis->
 	d-> c!->
-	<<{\InCueContext bes c} \\ {d-> e}>>
+	<<{\InCueContext \stemDown bes c} \\ {d-> e}>>
 	f2.\ff~ f8 e-.
 % Bars 106 to 110
 	f2.~ f8 e-.
@@ -304,15 +304,15 @@ musicOboeIIMvtIV = \relative c {
 % Bars 306 to 310
 	R1*2
 	
-	R1*4
-	
-	
+	\mmrPos #-6 R1
+	R
+	\mmrPos #-6 R
 % Bars 311 to 315
-	
+	R
 	R1*2
 	
-	R1*2
-	
+	\mmrPos #-6 R1
+	R
 % Bars 316 to 320
 	R1*2
 	
@@ -513,11 +513,11 @@ musicOboeIIMvtIV = \relative c {
 	a a a a a a
 	a a a a a a
 	a a a a a a}
-	fis'2 g8. a16 b4
+	fis'2 g8. a16 b!4
 % Bars 501 to 505
-	cis,2 d8. e16 fis4
-	fis2 g8. a16 b4
-	cis,2 d8. e16 fis4
+	cis,2 d8. e16 fis!4
+	fis2 g8. a16 b!4
+	cis,2 d8. e16 fis!4
 	f!1->
 	ees!2-> c->
 % Bars 506 to 510
@@ -569,7 +569,7 @@ musicOboeIIMvtIV = \relative c {
 	f1\ff~
 	f
 % Bars 546 to 550
-	e->~
+	e~
 	e
 	f4 r r2
 	R1*3

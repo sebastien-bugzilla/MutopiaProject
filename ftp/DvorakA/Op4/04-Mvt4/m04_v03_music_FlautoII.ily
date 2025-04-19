@@ -63,7 +63,7 @@ musicFlautoIIMvtIV = \relative c {
 	bes!1(
 % Bars 81 to 85
 	d4) r r2
-	c1\<(
+	c1\fz\<(
 	e4)\! r r2
 	d1(\fz
 	f4) r r2
