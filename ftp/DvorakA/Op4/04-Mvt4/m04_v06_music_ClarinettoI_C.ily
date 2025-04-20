@@ -60,7 +60,7 @@ musicClarinettoIMvtIV = \relative c {
 	gis2.~ gis8 fis-.
 	gis2.~ gis8 fis-.
 	gis4. dis8 dis4. e8
-	e4. cis8 cis4. a8
+	e4. cis!8 cis4. a8
 	gis'2.\f~ gis8 fis-.
 % Bars 46 to 50
 	gis2.~ gis8_\dimmarkup fis-.
@@ -70,25 +70,25 @@ musicClarinettoIMvtIV = \relative c {
 	gis2.~ gis8 fis-.
 % Bars 51 to 55
 	gis4. dis8 dis4. e8
-	e4. cis8 cis4. a8
+	e4. cis!8 cis4. a8
 	gis2(\pp fis
 	e fis
-	gis) fis(
+	gis) \partCombineChords fis(
 % Bars 56 to 60
 	e fis
 	b, d\<
 	e << f!) {s4 s\!}>>
-	g1\fz\>~
-	<< g~ {s4 s\! s s}>>
+	g1\fz\>^~
+	<< g^~ {s4 s\! s s}>>
 % Bars 61 to 65
-	g1\p
+	g1\p \partCombineAutomatic
 	b4(\< d g f)\!
 	d1\pp~
 	d~
 	d~
 % Bars 66 to 70
 	d
-	c4.\p c8 \tuplet 3/2 2 {b4-.( c-. d-.)}
+	\partCombineApart c4.\p c8 \tuplet 3/2 2 {b4-.( c-. d-.)}
 	c2. d4
 	e4. e8 \tuplet 3/2 2 {b4( c d)}
 	c2. d4
@@ -97,9 +97,9 @@ musicClarinettoIMvtIV = \relative c {
 	c4. ees8 \tuplet 3/2 2 {f4( g\! aes)}
 	aes2.( ees4
 	f ees des bes)
-	<< aes'2.( {s4 s\> s }>> ees
+	<< aes'2.( {s4 s s }>> ees
 % Bars 76 to 80
-	f ees\! des bes) \mark \default
+	f ees des bes) \partCombineAutomatic \mark \default
 	c r r2
 	R1*11
 % Bars 81 to 85
@@ -121,13 +121,13 @@ musicClarinettoIMvtIV = \relative c {
 	a2 a4. a8
 	g2-> d->
 	c d
-	e a4. g8
+	\partCombineApart e a4. g8 \partCombineAutomatic
 % Bars 101 to 105
 	f2 e4. e8
 	c2-> b->
 	a-> b->
-	c-> << { e!4. d8 } \\ { \InCueContext f2}>>
-	b,2.\ff~ b8 a-.
+	<<{c2-> e!4. d8} \\ {s1} \\ {s1}>>
+	b2.\ff~ b8 a-.
 % Bars 106 to 110
 	b2.~ b8 a-.
 	b4. a8 a4. g8
@@ -135,10 +135,10 @@ musicClarinettoIMvtIV = \relative c {
 	b2.~ b8 a-.
 	b2.~ b8 a-.
 % Bars 111 to 115
-	g1\brack\mf~
+	\partCombineApart g1~
 	g~
 	g~
-	g
+	g \partCombineAutomatic
 	a2->\f a->
 % Bars 116 to 120
 	gis-> a->
@@ -161,7 +161,7 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 131 to 135
 	e4) r r2
 	R1
-	dis'2(\p e\<
+	\partCombineApart dis'2(\p e\<
 	a\> g)\!
 	dis( e\<
 % Bars 136 to 140
@@ -169,7 +169,7 @@ musicClarinettoIMvtIV = \relative c {
 	dis,4(\f\< e d'! c)\!
 	b(\> a g fis)\!
 	e1\p\>(
-	<< ees) {s4 s s s\!}>>
+	<< ees) {s4 s s s\!}>> \partCombineAutomatic
 % Bars 141 to 145
 	ees1(\pp
 	d2) c4.( g8
@@ -179,18 +179,18 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 146 to 150
 	a bes ees g)\!
 	c2.( bes4)
-	a(\< bes ees g\!
-	c2->\f\> bes4) r\!
+	\partCombineApart a( bes ees g
+	c2-> bes4) \partCombineAutomatic r
 	R1*5
 % Bars 151 to 155
 	
 	
 	
 	
-	bes,2->\brack\p bes4. bes8
+	\partCombineApart bes,2->\brack\p bes4. bes8
 % Bars 156 to 160
 	bes'2(~-> bes8 aes g f)
-	ees4 r r2
+	ees4 r r2 \partCombineAutomatic
 	R1*3
 	
 	
@@ -203,14 +203,14 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 166 to 170
 	fis-> a,->
 	a4.-> g8-. fis4-. e-.
-	fis2. fis16( gis a b
-	cis4) gis-> a-> b->
+	fis2. \partCombineApart fis16( gis a b
+	cis4) \partCombineAutomatic gis-> a-> b->
 	a2-> b->
 % Bars 171 to 175
-	a1
-	cis2( d4) r
+	\partCombineApart a1
+	cis2( d4) \partCombineAutomatic r
 	g,4.\p g8 \tuplet 3/2 2 {g4( f\< e)\!}
-	<< e2( {s4\> s\!}>> f4) r \mark \default
+	\partCombineApart << e2( {s4 s}>> f4) \partCombineAutomatic r \mark \default
 	e'1->\ff
 % Bars 176 to 180
 	dis2( cis4. gis8)
@@ -226,7 +226,7 @@ musicClarinettoIMvtIV = \relative c {
 	fis2\fz~ fis8 cis( e8.) dis16-.
 % Bars 186 to 190
 	dis2\fz~ dis8 fis,( cis'8.) b16-.
-	b2\fz~ b8 dis,( gis8.) fis16-.
+	b2\fz^~ b8 dis,( gis8.) fis16-.
 	fis2\fz~ fis8 a,( cis8.) b16-.
 	aes'4->\ff ees-> aes4.-> bes8-.
 	c4.-> des8-. ees4.-> e8-.
@@ -241,11 +241,11 @@ musicClarinettoIMvtIV = \relative c {
 	
 	
 	
-	a,2\pp gis8.-. a16-. bes4-.
+	\partCombineApart a,2\pp gis8.-. a16-. bes4-.
 % Bars 201 to 205
 	a4 r r2
 	d2 cis8. d16 ees4
-	d r r2
+	d r r2 \partCombineAutomatic
 	R1*5
 	
 % Bars 206 to 210
@@ -255,13 +255,13 @@ musicClarinettoIMvtIV = \relative c {
 	aes2\p \tuplet 3/2 2 {g4-. aes-. bes-.}
 	aes-. r r2
 % Bars 211 to 215
-	R1*4
+	\partCombineApart R1*4
 	
 	
-	
+	\partCombineAutomatic
 	f'2->\pp \tuplet 3/2 2 {e!4-. f-. ges-.}
 % Bars 216 to 220
-	f2-> \tuplet 3/2 2 {c4-. des-. ees-.}
+	f2-> \tuplet 3/2 2 {c4-. des!-. ees-.}
 	des2 \tuplet 3/2 2 {c4-. des!-. ees-.}
 	des2 \tuplet 3/2 2 {a!4-. bes-. c-.}
 	bes r r2
@@ -297,8 +297,8 @@ musicClarinettoIMvtIV = \relative c {
 	\tuplet 3/2 2 {bes4-.) des-. bes-. g!-. bes-. g-.}
 	e2-^ d4-^ cis-^
 % Bars 246 to 250
-	e'1\f~
-	e2 c
+	\partCombineApart e'1\f~
+	e2 c \partCombineAutomatic
 	<< g'2.\f {s4 s\> s}>> g16( f e d
 	\tuplet 3/2 2 {c4-.) e-. c-.\! a-. c-. a-.}
 	g2.\p g16( f e d
@@ -314,10 +314,10 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	a2\mf b\<
+	\partCombineApart a2 b
 	c d
-	e << f {s8 s s s\!}>>
-	g2 a
+	e << f {s8 s s s}>> 
+	g2 a \partCombineAutomatic
 	ees4\ff ees8 ees ees4 ees8 ees
 % Bars 271 to 275
 	des4 des8 des des4 des8 des
@@ -357,7 +357,7 @@ musicClarinettoIMvtIV = \relative c {
 	bes
 % Bars 301 to 305
 	R1 \mark \default
-	r2 f'(\brack\p
+	\partCombineApart r2 f'(\brack\p
 	\tuplet 3/2 2 {g4 f c'} bes2)
 	R1*8
 % Bars 306 to 310
@@ -370,27 +370,27 @@ musicClarinettoIMvtIV = \relative c {
 	
 % Bars 316 to 320
 	r2 b(
-	\tuplet 3/2 2 {cis4 b gis'} fis2)
+	\tuplet 3/2 2 {cis4 b gis'} fis2) \partCombineAutomatic
 	r2 \tuplet 3/2 2 {g,4\mf c d}
 	e8[(\< c a'8.) g16]-.\! g2
 	r \tuplet 3/2 2 {g,4 c d}
 % Bars 321 to 325
 	e8[(\< c a'8.) g16]-.\! g2
-	ees1\ff~
+	\partCombineApart ees1~
 	ees~
 	ees~
 	ees~
 % Bars 326 to 330
-	ees4 r \tuplet 3/2 2 {bes4\f( ees f)}
+	ees4 \partCombineAutomatic r \tuplet 3/2 2 {bes4\f( ees f)}
 	g8[(\< ees c'8.) bes16]\! bes2->
 	r2 \tuplet 3/2 2 {bes,4(\f ees f)}
 	g8[(\< ees c'8. bes16-.])\! bes2
-	fis1\ff~
+	\partCombineApart fis1~
 % Bars 331 to 335
 	fis~
 	fis~
 	fis~
-	fis4\fp r \tuplet 3/2 2 {des4(\< ges aes)}
+	fis4 \partCombineAutomatic r \tuplet 3/2 2 {des4(\< ges aes)}
 	bes8[( ges ees'8.)\! des16]-. des2
 % Bars 336 to 340
 	r2 \tuplet 3/2 2 {des,4( ges aes)}
@@ -400,7 +400,7 @@ musicClarinettoIMvtIV = \relative c {
 	des~
 % Bars 341 to 345
 	des
-	des4(\p-. bes4. aes8 ges4)
+	\partCombineApart des4(\p-. bes4. aes8 ges4)
 	des'(-. bes4. aes8 ges4)
 	e'(-. cis4. b!8 ais4)
 	e'(-. cis4. b!8 ais4)
@@ -408,7 +408,7 @@ musicClarinettoIMvtIV = \relative c {
 	g'( e4. d8 cis4)
 	g'( e4. d8 cis4)
 	ais'( g!4. fis8 e4)
-	ais( g4. fis8 e4)
+	ais( g4. fis8 e4) \partCombineAutomatic
 	f!-.(\brack\p d4. c8 bes4)
 % Bars 351 to 355
 	f'-.( d4. c8 bes4)
@@ -443,14 +443,14 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 376 to 380
 	c'\startTrillSpan\ff
 	c\startTrillSpan
-	<< c\startTrillSpan {s4 s s s\stopTrillSpan}>>
-	f,1->\fz
+	c\startTrillSpan
+	f,1->\fz\stopTrillSpan
 	<< c,\fp\<( {s4 s s_\dimmarkup s\!}>>
 % Bars 381 to 385
 	d1)
 	c(
 	d)
-	gis2(\p a
+	\partCombineApart gis2(\p a
 	d c)
 % Bars 386 to 390
 	gis( a
@@ -474,19 +474,19 @@ musicClarinettoIMvtIV = \relative c {
 	ees1~
 	ees~
 	ees~
-	ees2. r4
+	ees2. r4 \partCombineAutomatic
 	R1*7
 % Bars 406 to 410
 	
 % Bars 411 to 415
 	
-	fis2\f eis4. fis8
-	fis2. \tuplet 5/4 4 {cis16( dis eis fis gis)}
-	a4.-> g!8 fis4-> e!->
+	fis2\f \partCombineApart eis4. fis8
+	\once \partCombineAutomatic fis2. \tuplet 5/4 4 {cis16( dis eis fis gis)} \partCombineAutomatic
+	a4.-> g!8 fis!4-> e!->
 	fis2..-> fis8
 % Bars 416 to 420
 	fis2-> fis->
-	d2. \tuplet 5/4 4 {fis,16(\< gis ais b cis)\!}
+	d2. \partCombineApart \tuplet 5/4 4 {fis,16( gis ais b cis)} \partCombineAutomatic
 	d4.\fz c!8 b4-. a!-.
 	b2.-> b16(\f\< c cis d)\!
 	dis4->\ff dis-> dis-> dis->
@@ -495,7 +495,7 @@ musicClarinettoIMvtIV = \relative c {
 	fis4. fis8 \tuplet 3/2 2 {fis4-. gis-. a-.}
 	a2(\> gis4)\! r
 	g!4.\p g8 \tuplet 3/2 2 {g4( f! e)}
-	e2( f!4) r
+	\partCombineApart e2( f!4) \partCombineAutomatic r
 % Bars 426 to 430
 	cis,1~
 	cis~
@@ -566,8 +566,8 @@ musicClarinettoIMvtIV = \relative c {
 	bes2-> a->
 	a-> \tuplet 3/2 2 {g4 a bes}
 	bes2-> a2->
-	f \tuplet 3/2 2 {e4 f g}
-	f2 \tuplet 3/2 2 {e4 f g}
+	\partCombineApart f \tuplet 3/2 2 {e4 f g}
+	f2 \tuplet 3/2 2 {e4 f g} \partCombineAutomatic
 % Bars 486 to 490
 	a2-> gis->
 	a-> gis->
@@ -609,7 +609,7 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 521 to 525
 	c' g4.-> g8-. e4
 	e'1->~
-	e2 \tuplet 3/2 2 {e4-. d-. c-.}
+	e2 \tuplet 3/2 2 {e4-. d-. \once \partCombineApart c-.}
 	ees1-^~
 	ees
 % Bars 526 to 530
@@ -644,9 +644,9 @@ musicClarinettoIMvtIV = \relative c {
 	
 % Bars 551 to 555
 	
-	r2 g,->\ff
+	r2 \partCombineApart g,->
 	c-> d->
-	e-> fis->
+	e-> \partCombineAutomatic fis->
 	gis-> a4. b8
 % Bars 556 to 560
 	c2\ff f,!

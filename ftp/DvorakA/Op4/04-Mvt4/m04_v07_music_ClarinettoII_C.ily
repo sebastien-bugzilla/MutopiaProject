@@ -36,17 +36,17 @@ musicClarinettoIIMvtIV = \relative c {
 	f4-> f8 f f4-> f8 f
 	gis4-> gis8 gis g4-> g8 g
 	g4-> g8 g f4-> f8 f
-	d4->_\pocoapococresc d8 d d4-> d8 d
+	d4-> d8 d d4-> d8 d
 	g4-> g8 g f4-> f8 f
 % Bars 26 to 30
 	aes4-> aes8 aes aes4-> aes8 aes
 	g4-> g8 g e4-> e8 e
 	c'4-> c8 c g4-> g8 g
-	g4->_\piuf g8 g e4-> e8\< e
+	g4-> g8 g e4-> e8\< e
 	f!4-> f8 f f4-> f8 f\!
 % Bars 31 to 35
 	g4-> g8 g a4-> a8 a
-	f4-> f8_\crescmarkup f e4-> e8 e
+	f4-> f8 f e4-> e8 e
 	f4-> f8 f a4-> a8 a
 	g4-> g8 g g4-> g8 g
 	c,2->\ff d->
@@ -63,7 +63,7 @@ musicClarinettoIIMvtIV = \relative c {
 	cis4. a8 a4. fis8
 	e'2.\f~ e8 dis-.
 % Bars 46 to 50
-	e2.~ e8_\dimmarkup dis-.
+	e2.~ e8 dis-.
 	e4. dis8 dis4. cis8
 	cis4.\> dis8 dis4.\! e8
 	e2.~ e8 dis-.
@@ -126,7 +126,7 @@ musicClarinettoIIMvtIV = \relative c {
 	c c4. c8
 	fis,2-> fis->
 	e-> gis->
-	a-> << { c-> } \\ { \InCueContext b2}>>
+	<<{s1} \\ {a2-> c->} \\ {\InCueContext s2 \once \stemDown \noteShift #1.8 <b f'>2 }>>
 	g2.\ff~ g8 fis-.
 % Bars 106 to 110
 	g2.~ g8 fis-.
@@ -176,7 +176,7 @@ musicClarinettoIIMvtIV = \relative c {
 	a bes ees g)\!
 	c2.( bes4)
 	a(\< bes ees g\!
-	c,2->\f\> bes4) r\!
+	c,2->\f\> bes4)\! r
 	R1*5
 % Bars 151 to 155
 	
@@ -255,7 +255,7 @@ musicClarinettoIIMvtIV = \relative c {
 	f~
 	f~
 	f
-	des''2->\pp \tuplet 3/2 2 {c4-. des-. ees-.}
+	des''2->\pp \tuplet 3/2 2 {c4-. des!-. ees-.}
 % Bars 216 to 220
 	des2-> \tuplet 3/2 2 {a4-. bes-. c-.}
 	f,2 \tuplet 3/2 2 {e!4-. f-. ges-.}
@@ -266,7 +266,7 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	
 	b'!2->\pp \tuplet 3/2 2 {ais4-. b-. cis-.}
-	b2-> \tuplet 3/2 2 {fisis4-. gis-. ais-.}
+	b2-> \tuplet 3/2 2 {fisis4-. gis-. ais!-.}
 	gis r r2
 % Bars 226 to 230
 	R1*5
@@ -444,8 +444,8 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 376 to 380
 	c\startTrillSpan\ff
 	c\startTrillSpan
-	<< c\startTrillSpan {s4 s s s\stopTrillSpan}>>
-	d1->\fz
+	c\startTrillSpan
+	d1->\fz\stopTrillSpan
 	<< a,\fp\<( {s4 s s_\dimmarkup s\!}>>
 % Bars 381 to 385
 	gis1)
@@ -489,7 +489,7 @@ musicClarinettoIIMvtIV = \relative c {
 	dis4->\ff ais'-> b-> cis->
 % Bars 421 to 425
 	b2 cis
-	dis4. dis8 \tuplet 3/2 2 {dis4-. e-. fis-.}
+	dis4. dis8 \tuplet 3/2 2 {dis4-. e-. fis!-.}
 	fis2(\> e4)\! r
 	e4.\p e8 \tuplet 3/2 2 {e4( d c)}
 	c2~ c4 r
@@ -578,11 +578,11 @@ musicClarinettoIIMvtIV = \relative c {
 	d d d d d d 
 	e e e e e e
 	dis dis dis dis dis dis}
-	gis,2 a8. b16 cis4
+	gis,2 a8. b16 cis!4
 % Bars 501 to 505
-	dis,2 e8. fis16 gis4
-	gis2 a8. b16 cis4
-	dis,2 e8. fis16 gis4
+	dis,2 e8. fis!16 gis!4
+	gis2 a8. b16 cis!4
+	dis,2 e8. fis!16 gis!4
 	e'!1->
 	f!2-> b,->
 % Bars 506 to 510
