@@ -28,17 +28,17 @@ musicFagottoIIMvtIV = \relative c {
 	ees4-> ees8 ees ees4-> ees8 ees
 	fis4-> fis8 fis f4-> f8 f
 	f4-> f8 f ees4-> ees8 ees 
-	f4->_\pocoapococresc f8 f f4-> f8 f
+	f4-> f8 f f4-> f8 f
 	f4-> f8 f ees4-> ees8 ees
 % Bars 26 to 30
 	a4-> a8 a a4-> a8 a
 	f4-> f8 f d4-> d8 d
 	bes'4-> bes8 bes f4-> f8 f
-	f4->_\piuf f8 f d4-> d8\< d
+	f4-> f8 f d4-> d8\< d
 	ees!4-> ees8 ees ees4-> ees8 ees\!
 % Bars 31 to 35
 	d4-> d8 d ees4-> ees8 ees
-	f4-> f8_\crescmarkup f f4-> f8 f
+	f4-> f8 f f4-> f8 f
 	ees4-> ees8 ees ees4-> ees8 ees
 	aes4-> aes8 aes aes4-> aes8 aes
 	g,4\ff c a! d
@@ -55,7 +55,7 @@ musicFagottoIIMvtIV = \relative c {
 	b4. g8 g4. e8
 	d'2.\f~ d8 cis-.
 % Bars 46 to 50
-	d2.~ d8_\dimmarkup cis-.
+	d2.~ d8 cis-.
 	d4. cis8 cis4. b8
 	b4.\> cis8 cis4. d8\!
 	d2.~ d8 cis-.
@@ -74,7 +74,7 @@ musicFagottoIIMvtIV = \relative c {
 	<< f~ {s4 s\! s s}>>
 % Bars 61 to 65
 	f1\p~
-	f4(\< a c f)\!
+	\stemUp f4\< a \stemDown c f\!
 	f1\pp~
 	f~
 	f~
@@ -135,7 +135,7 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 111 to 115
 	g,1\brack\mf
 	a
-	<< gis( {s2 s_\crescmarkup}>>
+	<< gis( {s2 s}>>
 	a1)
 	bes2->\f c->
 % Bars 116 to 120
