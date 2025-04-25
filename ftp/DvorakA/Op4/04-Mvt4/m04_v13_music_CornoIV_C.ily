@@ -80,7 +80,7 @@ musicCornoIVMvtIV = \relative c {
 	c->
 	c2 b
 	a d
-	<<{c d} \\ {\InCueContext c g}>>
+	<<{\InCueContext c g} \\ {s s}>>
 	g'\ff r4 r8 d
 % Bars 106 to 110
 	g2 r4 r8 d
@@ -148,7 +148,7 @@ musicCornoIVMvtIV = \relative c {
 	a2-> fis->
 % Bars 171 to 175
 	a4. a8 \tuplet 3/2 2 {a4-. a-. a-.}
-	a2~ a4 r
+	\once \stemUp a2~ a4 r
 	c,4.\pp c8 \tuplet 3/2 2 {c4 c\< c\!}
 	<< c'2~ {s4\> s\!}>> c4 r \mark \default
 	e1->\f~
@@ -239,7 +239,7 @@ musicCornoIVMvtIV = \relative c {
 % Bars 246 to 250
 	c,,4.\f c8 \tuplet 3/2 2 {c4 c c}
 	c1\>~
-	c4.\! c8_\dimmarkup \tuplet 3/2 2 {c4 c c}
+	c4.\! c8 \tuplet 3/2 2 {c4 c c}
 	c1~
 	c4.\> c8 \tuplet 3/2 2 {c4 c c\!}
 % Bars 251 to 255
@@ -273,7 +273,7 @@ musicCornoIVMvtIV = \relative c {
 	a2-^ a4-. a-.
 % Bars 281 to 285
 	a2-^ a4-. a-.
-	e2\p^\soli fis8. e16 cis'4
+	e2\p fis8. e16 cis'4
 	b2 r
 	R1*18
 % Bars 286 to 290
@@ -361,17 +361,17 @@ musicCornoIVMvtIV = \relative c {
 	f~
 	f~
 	<<f {s4\> s s s\!}>>
-	R1*8
-	
+	\mmrPos #-6 R1
+	\mmrPos #-6 R
 % Bars 386 to 390
-	
-	
-	
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
 % Bars 391 to 395
-	\mark #11
-	R1
+	\mmrPos #-7 R \mark #11
+	\mmrPos #-6 R1
 	R1*13
 % Bars 396 to 400
 	
@@ -400,13 +400,13 @@ musicCornoIVMvtIV = \relative c {
 	
 	
 	c,1->\p
-	f2~ f4 r
+	\stemUp f2~ f4 r
 % Bars 426 to 430
 	e1\mf->~
 	e
 	e->~
 	e
-	e->_\brackM\crescendo~
+	e->~
 % Bars 431 to 435
 	e
 	e->~
@@ -494,7 +494,7 @@ musicCornoIVMvtIV = \relative c {
 	c1->
 	g2-> g->
 	c,2.~ c8 c
-	g'2.~ g8 g
+	\stemDown g'2.~ g8 g
 	c2.~ c8 c
 % Bars 511 to 515
 	g2.~ g8 g

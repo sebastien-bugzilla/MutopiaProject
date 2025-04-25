@@ -131,6 +131,7 @@ fbrackzD = #(make-dynamic-script fbrackz)
 markVi = \markup { \abs-fontsize #12 "Vi-" }
 markDe = \markup { \abs-fontsize #12 "-de" }
 sole = \markup {Sole}
+soli = \markup {Soli}
 
 mutaingd = \markup {"[muta in G, D]"}
 mutainflpicc = \markup {"[muta in Fl.picc.]"}
@@ -267,6 +268,8 @@ OutCueContext = {
 	\unset fontSize
 }
 
+aIIOmit = \once \omit Voice.CombineTextScript
+
 
 
 
@@ -279,8 +282,6 @@ OutCueContext = {
 %		\once \override CombineTextScript.X-offset = #offset
 %	#}
 %)
-
-%aIIOmit = \once \omit Voice.CombineTextScript
 
 %aIIExtraOffset = #(define-music-function
 %	(extraoffset)
