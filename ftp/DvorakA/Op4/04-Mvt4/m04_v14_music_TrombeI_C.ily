@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIIMvtIV = \relative c {
+musicTrombeIMvtIV = \relative c {
 	\clef treble
 	\key c \major
 	\transposition ees
@@ -24,7 +24,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 36 to 40
 	\mark \default
-	b'2\ff r
+	b''2\ff r
 	b r
 	b r
 	b r
@@ -55,25 +55,25 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	fis'4\f-> fis-> fis-> fis->
-	fis2-> b->
+	\partCombineApart fis4-> fis-> fis-> fis->
+	fis2-> b-> \partCombineAutomatic
 % Bars 91 to 95
-	d, \tuplet 3/2 2 {d4(-. d-. d-.)}
+	d \tuplet 3/2 2 {d4(-. d-. d-.)}
 	d2~ d4 r
 	b4-> b-> b-> b->
-	fis'2-> e->
+	b2-> e->
 	g, \tuplet 3/2 2 {g4( g g)}
 % Bars 96 to 100
 	g2 g4. g8
-	e'2 \tuplet 3/2 2 {e4( e e)}
-	g2 \tuplet 3/2 2 {d4( d d)}
-	g2 a
-	g \tuplet 3/2 2 {b,4 b b}
+	c2 \partCombineApart \tuplet 3/2 2 {e,4( e e)}
+	g2 \tuplet 3/2 2 {d4( d d)} \partCombineAutomatic
+	b'2 d
+	d \tuplet 3/2 2 {b4 b b}
 % Bars 101 to 105
 	g2 \tuplet 3/2 2 {g4 g g}
 	g2 bes
 	b! b
-	b << e \\ \InCueContext d >>
+	b << g \\ \InCueContext \noteShift #2.1 d' >>
 	r a\ff~
 % Bars 106 to 110
 	a1
@@ -86,15 +86,15 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	e'4\f r e r
+	\once \partCombineApart e4 r \once \partCombineApart e r
 % Bars 116 to 120
-	r2 e4 r
-	g r fis r
-	g r r2
-	d4 r d r
-	r2 r4 e \mark \default
+	r2 g4 r
+	b r a r
+	\once \partCombineApart g r r2
+	\once \partCombineApart d4 r \once \partCombineApart d r
+	r2 r4 \once \partCombineApart e \mark \default
 % Bars 121 to 125
-	d2.->\ff r4
+	d'2.->\ff r4
 	d2.-> r4
 	d2.-> r4
 	g,4 g8 g \tuplet 3/2 2 {g4 g g}
@@ -127,7 +127,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	gis4->\brack\f gis-> gis-> gis->
-	gis2-> cis->   % c => cis according to part
+	gis2-> cis->
 % Bars 171 to 175
 	e1->~
 	e2~ e4 r
@@ -170,12 +170,12 @@ musicTrombeIIMvtIV = \relative c {
 	b2->\f r
 	b-> r
 	b-> r
-	fis'-> r
-	b,-> r
+	cis-> r
+	b-> r
 % Bars 236 to 240
-	fis' r
-	b, r 
-	fis' r
+	cis r
+	b r 
+	cis r
 	dis r
 	d! r
 % Bars 241 to 245
@@ -199,22 +199,22 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	ees2\ff r
+	bes2\ff r
 % Bars 271 to 275
 	ees r
 	c r
 	ees r
-	gis r
+	gis, r
 	gis r
 % Bars 276 to 280
 	gis r
 	gis r
 	gis-^ gis4-. gis-.
 	gis2-^ gis4-. gis-.
-	e2-^ e4-. e-.
+	a2-^ a4-. a-.
 % Bars 281 to 285
-	e2-^ e4-. e-.
-	dis r r2
+	a2-^ a4-. a-.
+	b r r2
 	R1*19
 % Bars 286 to 290
 	
@@ -233,7 +233,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 321 to 325
 	
-	g,2\fffzD r
+	g2\fffzD r
 	g r
 	g r
 	g r
@@ -263,23 +263,23 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	r2 e'->\ff~
-	e \tuplet 3/2 2 {a4-. b-. c-.}
-	r2 e,2->\ff~
+	e \partCombineApart \tuplet 3/2 2 {a,4-. b-. c-.} \partCombineAutomatic
+	r2 e2->\ff~
 % Bars 361 to 365
-	e \tuplet 3/2 2 {a4-. b-. c-.}
-	r2 f,->\ff~
-	f \tuplet 3/2 2 {bes4-. c-. d-.}
-	r2 f,->\ff~
-	f \tuplet 3/2 2 {bes4-. c-. d-.}
+	e \partCombineApart \tuplet 3/2 2 {a,4-. b-. c-.} \partCombineAutomatic
+	r2 f->\ff~
+	f \partCombineApart \tuplet 3/2 2 {bes,4-. c-. d-.} \partCombineAutomatic
+	r2 f->\ff~
+	f \partCombineApart \tuplet 3/2 2 {bes,4-. c-. d-.} \partCombineAutomatic
 % Bars 366 to 370
-	d,\ff r a' r
-	e r a r
-	b r b r
-	e, r a r
-	r e r f
+	a\ff r \once \partCombineApart a r
+	e' r \once \partCombineApart a, r
+	\once \partCombineApart b r \once \partCombineApart b r
+	\once \partCombineApart e, r \once \partCombineApart a r
+	r a r a
 % Bars 371 to 375
-	r d r c \mark \default
-	g2\f-^ r
+	r gis r a \mark \default
+	g!2\f-^ r
 	g-^ r
 	g-^ r
 	c4 c8 c \tuplet 3/2 2 {c4 c c}
@@ -306,10 +306,10 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	e4.->\brack\f e8-. e4-. e-.
-	e2. e4-.
+	\partCombineApart e,4.-> e8-. e4-. e-.
+	e2. e4-. \partCombineAutomatic
 % Bars 416 to 420
-	cis2-> cis->
+	cis'2-> cis->
 	cis2.-> cis4
 	a4.-> a8-. a4-. a-.
 	a2.-> r4
@@ -331,7 +331,7 @@ musicTrombeIIMvtIV = \relative c {
 	R1*2
 % Bars 441 to 445
 	
-	r2 \tuplet 3/2 2 {fis4\f\< gis a\!}
+	r2 \tuplet 3/2 2 {fis,4\f\< gis a\!}
 	a1->\fz
 	gis4-> r r2
 	R1
@@ -340,16 +340,16 @@ musicTrombeIIMvtIV = \relative c {
 	a1->\fz
 	gis2 \tuplet 3/2 2 {gis4-. gis-. gis-.}
 	gis2-> gis->
-	a->\ff r
+	cis->\ff r
 % Bars 451 to 455
-	a-> a->
-	a-> r
-	a-> a->
-	a-> r
-	a-> a->
+	cis-> cis->
+	cis-> r
+	cis-> cis->
+	cis-> r
+	cis-> cis->
 % Bars 456 to 460
-	a-> r
-	a-> a->
+	cis-> r
+	cis-> cis->
 	e-> e->
 	e-> e->
 	e-> e->
@@ -360,7 +360,7 @@ musicTrombeIIMvtIV = \relative c {
 	c r r2
 	R1
 % Bars 466 to 470
-	aes2->\f c4-> ees->
+	aes,2->\f c4-> ees->
 	f-> aes-> c-> aes->
 	b!1->\ff~
 	b~
@@ -376,7 +376,7 @@ musicTrombeIIMvtIV = \relative c {
 	R1*3
 	
 	
-	c,!4->\ff c-> c-> c->
+	c!4->\ff c-> c-> c->
 % Bars 481 to 485
 	c4-> c-> c-> c->
 	c4-> c-> c-> c->
@@ -391,37 +391,37 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 491 to 495
 	
 % Bars 496 to 500
-	b'2.->\ff~ b8 b
-	fis2.->~ fis8 fis
-	b2.->~ b8 b
-	fis2.->~ fis8 fis
-	b,2-> b->
+	dis2.->\ff~ dis8 dis
+	cis2.->~ cis8 cis
+	dis2.->~ dis8 dis
+	cis2.->~ cis8 cis
+	b2-> b->
 % Bars 501 to 505
-	fis'-> fis->
-	b,-> b->
-	fis'-> fis->
-	g!1->
-	g2-> d->
+	\partCombineApart fis-> fis-> \partCombineAutomatic
+	b-> b->
+	\partCombineApart fis-> fis-> 
+	g!1-> 
+	g2-> \once \partCombineAutomatic d'->
 % Bars 506 to 510
-	g1->
-	g2-> d->
-	g-> g->
+	g,1->
+	g2-> \partCombineAutomatic d'->
+	g,-> g->
 	d' d
 	g, g
 % Bars 511 to 515
 	d' d
 	g,1->~
 	g \mark \default
-	g2->\ff d->
-	g-> d->
+	b2->\ff d->
+	b-> d->
 % Bars 516 to 520
-	g-> d->
-	g-> d->
-	g-> d->
-	g-> d->
-	g-> d->
+	b-> d->
+	b-> d->
+	b-> d->
+	b-> d->
+	b-> d->
 % Bars 521 to 525
-	g-> d->
+	b-> d->
 	g,1->~
 	g2 \tuplet 3/2 2 {g4-. g-. g-.}
 	g1-^~
@@ -460,16 +460,16 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	r2 fis'->\ff
-	fis-> a4 d,
+	r2 \partCombineApart fis->
+	fis-> a4 a \partCombineAutomatic
 % Bars 556 to 560
 	g1-^\ff~
 	g
-	g2 e->
-	g-> c->
-	g4 r r2
+	g2 c->
+	d-> e->
+	d4 r r2
 % Bars 561 to 565
-	g4 r r2
+	g,4 r r2
 	g4 r r2
 	g4 r r2
 	g4 r r2

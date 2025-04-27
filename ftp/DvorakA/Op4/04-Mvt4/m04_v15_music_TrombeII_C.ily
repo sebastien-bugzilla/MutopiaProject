@@ -56,7 +56,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	fis'4\f-> fis-> fis-> fis->
-	fis2-> b->
+	fis2 b
 % Bars 91 to 95
 	d, \tuplet 3/2 2 {d4(-. d-. d-.)}
 	d2~ d4 r
@@ -65,8 +65,8 @@ musicTrombeIIMvtIV = \relative c {
 	g, \tuplet 3/2 2 {g4( g g)}
 % Bars 96 to 100
 	g2 g4. g8
-	e'2 \tuplet 3/2 2 {e4( e e)}
-	g2 \tuplet 3/2 2 {d4( d d)}
+	e'2 \tuplet 3/2 2 {e4 e e}
+	g2 \tuplet 3/2 2 {d4 d d}
 	g2 a
 	g \tuplet 3/2 2 {b,4 b b}
 % Bars 101 to 105
@@ -127,7 +127,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	gis4->\brack\f gis-> gis-> gis->
-	gis2-> cis->   % c => cis according to part
+	gis2-> cis->   % c => cis according to part score
 % Bars 171 to 175
 	e1->~
 	e2~ e4 r
