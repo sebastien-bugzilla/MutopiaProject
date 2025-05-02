@@ -51,7 +51,7 @@ conespr = \markup {\italic {con espr.}}
 conmoltaforza = \markup {\italic {con molta forza}}
 semprepianissimo = \markup {\italic {sempre pianissimo}}
 ppocoapococresc = \markup {\dynamic p \italic {poco a poco cresc.}}
-fzpocoapococresc = \markup {\dynamic fz \italic {poco a poco cresc}}
+fzpocoapococresc = \markup {\dynamic fz \italic {poco a poco cresc.}}
 ffconmoltosforza = \markup {\dynamic ff \italic {con molto sforza}}
 conmoltosforza = \markup {\italic {con molto sforza}}
 fmarcato = \markup {\dynamic f \italic {marcato}}
@@ -104,6 +104,10 @@ fbrackz = \markup {
 ppdiminuendo = \markup {\dynamic pp \italic {diminuendo}}
 sempref = \markup {\italic sempre \dynamic f}
 fpmarkup = \markup {\dynamic fp}
+sulponticello = \markup {sul ponticello}
+ppspiccato = \markup {\dynamic pp \italic {spiccato}}
+ppsulponticello = \markup {\dynamic pp \italic {sul ponticello}}
+ffmarc = \markup {\dynamic ff \italic {marc.}}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
