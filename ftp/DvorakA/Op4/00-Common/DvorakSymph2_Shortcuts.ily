@@ -109,6 +109,13 @@ ppspiccato = \markup {\dynamic pp \italic {spiccato}}
 ppsulponticello = \markup {\dynamic pp \italic {sul ponticello}}
 ffmarc = \markup {\dynamic ff \italic {marc.}}
 
+brackmf = \markup {
+	\concat {
+		\bracket \with-true-dimensions \dynamic m \dynamic f
+	}
+}
+
+
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
 )
