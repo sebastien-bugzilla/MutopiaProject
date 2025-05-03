@@ -114,6 +114,14 @@ brackmf = \markup {
 		\bracket \with-true-dimensions \dynamic m \dynamic f
 	}
 }
+psecco = \markup {\dynamic p \italic {secco}}
+spiccato = \markup {\italic {spiccato}}
+ppbracksulponticello = \markup {
+	\concat {
+		\dynamic pp \bracket \with-true-dimensions \italic {"sul ponticello"}
+	}
+}
+marcato = \markup {\italic {marcato}}
 
 
 crescD = #(make-dynamic-script 
