@@ -148,9 +148,13 @@
 				\new Staff {
 					\timeMvtIV \nameStaffXVIMvtIV \musicViolaMvtIV
 				}
-%				\new Staff {
-%					\timeMvtIV \nameStaffXVIIMvtIV \musicVioloncelloMvtIV
-%				}
+				\new Staff {
+					\timeMvtIV \nameStaffXVIIMvtIV \musicVioloncelloMvtIV
+				}
+				\new Staff \with {\RemoveAllEmptyStaves \remove Time_signature_engraver \magnifyStaff #2/3 firstClef = ##f } {
+					\timeMvtIV 
+					\nameStaffXVIIOssiaMvtIV \musicVioloncelloOssiaMvtIV
+				}
 %				\new Staff {
 %					\timeMvtIV \nameStaffXVIIIMvtIV \musicContrabassoMvtIV
 %				}

@@ -122,7 +122,14 @@ ppbracksulponticello = \markup {
 	}
 }
 marcato = \markup {\italic {marcato}}
-
+marc = \markup {\italic {marc.}}
+pbracksecco = \markup {
+	\concat { 
+		\dynamic p 
+		\bracket \with-true-dimensions \italic {secco}
+	}
+}
+fzmarc = \markup {\dynamic fz \italic {marc.}}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
