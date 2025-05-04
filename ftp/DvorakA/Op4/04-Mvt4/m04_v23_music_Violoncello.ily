@@ -448,7 +448,7 @@ musicVioloncelloMvtIV = \relative c {
 	c-^ aes-^ 
 	e4\ff e' f, f'
 % Bars 371 to 375
-	g, g' aes, aes'
+	g, g' aes, aes' \mark \default
 	bes ees,8( ees,) ees'( ees,) r bes'
 	bes4 ees8( ees,) ees'( ees,) r bes'
 	bes4 ees8( ees,) ees'( ees,) r bes'

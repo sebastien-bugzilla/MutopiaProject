@@ -467,3 +467,8 @@ nameStaffXVIIIMvtIV = {
 	\set Staff.shortInstrumentName = "Cb."
 	\set Staff.midiInstrument = #""
 }
+nameStaffXVIIIOssiaMvtIV = {
+	\set Staff.instrumentName = "Contrabassi"
+	\set Staff.shortInstrumentName = "Cb. Ossia"
+	\set Staff.midiInstrument = #""
+}
