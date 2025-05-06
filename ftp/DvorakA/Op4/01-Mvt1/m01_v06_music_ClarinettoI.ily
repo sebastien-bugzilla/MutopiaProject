@@ -277,8 +277,8 @@ musicClarinettoIMvtI = \relative c {
 % Bars 231 to 235
 		fis'-. eis16( fis fis,8) r
 		b,2\fp~
-		b~_\dimmarkup
-		b~
+		<<b~ {s4 s_\dimmarkup}>>
+		b2~
 		b~
 % Bars 236 to 240
 		\alternative {
@@ -404,7 +404,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 346 to 350
 	
 	
-	ees2(\fz
+	ees2(\f
 	bes\fz)
 	f'\fz~
 % Bars 351 to 355

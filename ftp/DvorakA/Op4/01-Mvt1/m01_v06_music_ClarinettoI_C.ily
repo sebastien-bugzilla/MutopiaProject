@@ -277,8 +277,8 @@ musicClarinettoIMvtI = \relative c {
 % Bars 231 to 235
 		fis'-. eis16( fis fis,8) r
 		b,2\fp~
-		b~_\dimmarkup
-		b~
+		<<b~ {s4 s_\dimmarkup}>>
+		b2~
 		b~
 % Bars 236 to 240
 		\alternative {
@@ -304,7 +304,7 @@ musicClarinettoIMvtI = \relative c {
 	
 	
 	
-	\partCombineApart aes'8-.\pp g16( aes \tuplet 3/2 4 {f8 e f}
+	\partCombineApart aes'8-. g16( aes \tuplet 3/2 4 {f8 e f}
 % Bars 251 to 255
 	g) f-. d-. bes-.
 	aes'-. g16( aes \tuplet 3/2 4 {f8 e! f}
@@ -404,7 +404,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 346 to 350
 	
 	
-	\partCombineApart ees2(\fz
+	\partCombineApart ees2(\f
 	bes\fz)
 	f'\fz~
 % Bars 351 to 355

@@ -144,7 +144,7 @@ musicCornoIMvtI = \relative c {
 		d d d d\!
 		\tuplet 3/2 4 {d8 d d\pp  d d d
 % Bars 121 to 125
-		d d d  d_\dimmarkup d d
+		d d d  d d_\dimmarkup d
 		d d d  d d d~ }
 		d\pp r r4
 		R2*3
@@ -621,7 +621,7 @@ musicCornoIMvtI = \relative c {
 	
 	\mark \default
 % Bars 611 to 615
-	c2\brack\ff
+	c2_\fbrackf
 	c8 r r4
 	c r8 ees
 	c4-> r8 ees

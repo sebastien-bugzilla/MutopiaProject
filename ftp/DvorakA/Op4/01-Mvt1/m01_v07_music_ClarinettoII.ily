@@ -278,8 +278,8 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 231 to 235
 		fis'-. eis16( fis fis,8) r
 		f,!2\fp~
-		f~_\dimmarkup
-		f~
+		<<f~ {s4 s_\dimmarkup}>>
+		f2~
 		f~
 % Bars 236 to 240
 		\alternative {

@@ -215,8 +215,8 @@ musicViolinoIIMvtI = \relative c {
 		q->
 % Bars 171 to 175
 		q->
-		\acciaccatura {dis16 e} fis4\>_\dimmarkup \acciaccatura {dis16 e} fis4
-		\acciaccatura {dis16\p e} fis4 \acciaccatura {dis16 e} fis4\!
+		\acciaccatura {dis16 e} fis4\>_\dimmarkup \acciaccatura {dis16 e} fis4\!
+		\acciaccatura {dis16\p e} fis4 \acciaccatura {dis16 e} fis4
 		\acciaccatura {dis,16 e} fis4 r
 		R2
 % Bars 176 to 180
@@ -327,7 +327,7 @@ musicViolinoIIMvtI = \relative c {
 	q:
 	q:
 % Bars 266 to 270
-	<< q: {s4 s_\crescmarkup}>>
+	<< q: {s4. s_\crescmarkup}>>
 	q2.:
 	q:
 	q:}
@@ -655,7 +655,7 @@ musicViolinoIIMvtI = \relative c {
 	bes4. bes8~
 	bes4. bes8~
 	bes4. bes'8 \mark \default
-	ees8-.\pp d16( ees \tuplet 3/2 4 {ces8 bes ces_\pocoapococresc)}
+	ees8-.\pp d16( ees \tuplet 3/2 4 {ces8 bes_\pocoapococresc ces)}
 	e!-. dis16( e \tuplet 3/2 4 {c!8 b c)}
 % Bars 546 to 550
 	f2(\<
@@ -736,7 +736,7 @@ musicViolinoIIMvtI = \relative c {
 	a4.\< f32( g a bes
 	c8) \tuplet 3/2 8 {c16( d ees} d8) r\! \mark \default
 % Bars 611 to 615
-	f,16\brack\ff f bes bes  bes bes bes, bes
+	f,16_\fbrackf f bes bes  bes bes bes, bes
 	f' f d' d  d d bes, bes
 	bes bes f'' f  f f aes aes
 	bes,, bes f'' f  f f aes aes
@@ -859,7 +859,7 @@ musicViolinoIIMvtI = \relative c {
 	g: f16 f d d
 	d4:16 g:\fz
 	g: f16 f d d
-	d4:16 bes':\brack\fff
+	d4:16 bes':_\ffbrackf
 	bes2:
 % Bars 716 to 720
 	bes:

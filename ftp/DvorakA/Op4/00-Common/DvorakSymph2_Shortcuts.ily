@@ -95,6 +95,22 @@ fbrackf = \markup {
 		}
 	}
 }
+ffbrackf = \markup {
+	\overlay {
+		\general-align #Y #CENTER {
+			\dynamic ff
+			\translate #'(2.5 . 0) \path #0.15 #'(
+				(lineto 0.7 2.8) (moveto 0.7 2.8) (lineto 1 2.8) (moveto 0 0)
+				(lineto 0.3 0)
+			)
+			\translate #'(3.2 . 0) \dynamic f
+			\translate #'(4.6 . 0) \path #0.15 #'(
+				(lineto 0.7 2.8) (moveto 0.7 2.8) (lineto 0.4 2.8) (moveto 0 0)
+				(lineto -0.3 0)
+			)
+		}
+	}
+}
 mfmarkup = \markup {\dynamic mf}
 fbrackz = \markup {
 	\concat {

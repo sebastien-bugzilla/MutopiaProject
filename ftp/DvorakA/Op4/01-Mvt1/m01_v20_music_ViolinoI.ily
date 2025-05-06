@@ -136,7 +136,7 @@ musicViolinoIMvtI = \relative c {
 		g8.-> bes16-. bes8-. a-.
 		a8.-> ees'16-. ees8-. d-.
 % Bars 106 to 110
-		d8( c) \tuplet 6/4 4 {c16( d ees f fis g)\!}
+		d8( c) \tuplet 6/4 4 {c16(\< d ees f fis g)\!}
 		aes16\ff aes bes bes  aes aes aes aes
 		aes aes g g  f f g g
 		aes aes g g  f f f f
@@ -549,7 +549,7 @@ musicViolinoIMvtI = \relative c {
 	d4->\fz cis16[( d cis r32 b-.])
 	b4->\fz a16([ b a r32 gis-.])
 % Bars 451 to 455
-	gis4-> fis16[( gis fis r32 e-.])
+	gis4->\fz fis16[( gis fis r32 e-.])
 	e8.->\fz gis16-. gis8-. fis-.
 	fis8.->\fz a16-. a8-. gis-.
 	gis8.->\fz d'16-. d8-. cis-.
@@ -576,7 +576,7 @@ musicViolinoIMvtI = \relative c {
 	\mark \default
 	\acciaccatura g,8 g'2:32\fz^\trem
 	a4:\p b:
-	c2:
+	c2:\fz
 	d4: ees8: f:
 % Bars 476 to 480
 	g4\<~ g8 \tuplet 3/2 8 {g16( a b)\!}
@@ -741,7 +741,7 @@ musicViolinoIMvtI = \relative c {
 	a4.\< f32( g a bes
 	c8) \tuplet 3/2 4 {c16( d ees} d8) r\! \mark \default
 % Bars 611 to 615
-	bes,16\brack\ff bes d d  d d bes bes
+	bes,16_\fbrackf bes d d  d d bes bes
 	bes bes f' f f f d d
 	d d bes' bes  bes bes c c
 	f, f bes bes  bes bes c c
@@ -864,7 +864,7 @@ musicViolinoIMvtI = \relative c {
 	g: f16 f d d
 	d4:16 g:\fz
 	g: f16 f d d
-	d4:16 bes':\brack\fff
+	d4:16 bes':_\ffbrackf
 	bes2:
 % Bars 716 to 720
 	bes:

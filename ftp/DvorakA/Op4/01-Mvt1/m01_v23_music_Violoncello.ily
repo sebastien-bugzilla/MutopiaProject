@@ -161,7 +161,7 @@ musicVioloncelloMvtI = \relative c {
 		e(-> g a-> bes)\!
 % Bars 126 to 130
 		g(->\f bes c-> des)
-		c r f,8.( e16
+		c r f,8.(\pp e16
 		\tuplet 3/2 4 {d8 c a')} f8.( e16
 		\tuplet 3/2 4 {d8 c a')} f8.( e16
 		\tuplet 3/2 4 {d8 c a')} f r
@@ -741,7 +741,7 @@ musicVioloncelloMvtI = \relative c {
 	f4->\< g->
 	\acciaccatura {g16 a} bes4.->( a8)\! \mark \default
 % Bars 611 to 615
-	aes2\brack\ff_\conmoltaforza
+	aes2_\fbrackf_\conmoltaforza
 	aes'4. f16 g
 	aes4-> f->
 	aes-> f->
@@ -864,7 +864,7 @@ musicVioloncelloMvtI = \relative c {
 	f f8. bes16
 	bes4 f\fz~
 	f f8. bes16
-	bes4 g4:16\brack\fff
+	bes4 g4:16_\ffbrackf
 	g2:
 % Bars 716 to 720
 	g:

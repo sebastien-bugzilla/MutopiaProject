@@ -621,7 +621,7 @@ musicCornoIIMvtI = \relative c {
 	
 	\mark \default
 % Bars 611 to 615
-	a2\brack\ff
+	a2_\fbrackf
 	a8 r r4
 	a r8 c
 	a4-> r8 c

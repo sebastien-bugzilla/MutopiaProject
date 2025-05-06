@@ -153,7 +153,7 @@ musicFlautoIMvtI = \relative c {
 		e e e  e e e~(}
 		e2\pp\startTrillSpan
 		g\startTrillSpan\<
-		bes\startTrillSpan
+		<< bes\startTrillSpan {s8 s s s\!}>>
 % Bars 126 to 130
 		des4.)\f\startTrillSpan c16(\stopTrillSpan\> bes)\!
 		a2\pp~
@@ -647,7 +647,7 @@ musicFlautoIMvtI = \relative c {
 	a\pp a a  a a a
 % Bars 571 to 575
 	a a a  a a a
-	a a a  a_\calando a a
+	a a a_\calando  a a a
 	a a a  a a a }
 	a4 r
 	c\< r
@@ -696,7 +696,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 621 to 625
 	ees8\f r r4
 	R2
-	e8 r r4
+	e8\f r r4
 	r r8. e16\ff
 	g4.-> f8
 % Bars 626 to 630

@@ -403,7 +403,7 @@ musicContrabassoMvtI = \relative c {
 	r8 bes' r4
 	r8 bes, r4
 	r8 bes' r4 \mark \default
-	a,2\pp~^\arco
+	a,2~^\arco
 % Bars 331 to 335
 	a~
 	a~
@@ -721,7 +721,7 @@ musicContrabassoMvtI = \relative c {
 	f4->\< g->
 	\acciaccatura {g16 a} bes4.->( a8)\! \mark \default
 % Bars 611 to 615
-	aes2\brack\ff_\conmoltaforza
+	aes2_\fbrackf_\conmoltaforza
 	aes'4. f16 g
 	aes4-> f->
 	aes-> f->
@@ -832,7 +832,7 @@ musicContrabassoMvtI = \relative c {
 	f f8. bes16
 	bes4 f\fz~
 	f f8. bes16
-	bes4 g4:16\brack\fff
+	bes4 g4:16_\ffbrackf
 	g2:
 % Bars 716 to 720
 	g:

@@ -192,8 +192,8 @@ musicFagottoIIMvtI = \relative c {
 % Bars 151 to 155
 		g g'4(\fz c,8)
 		f2\p~
-		f~_\brackM\pocoapococresc
-		f~
+		<< f~ {s4 s_\brackM\pocoapococresc}>>
+		f2~
 		f
 % Bars 156 to 160
 		bes~\<
@@ -534,7 +534,7 @@ musicFagottoIIMvtI = \relative c {
 	bes-> a)]\! r a
 	c(\f\> ees c bes)
 	a( ges ees c)\! \mark \default
-	f r f'4\f~
+	f r f'4->\f~
 % Bars 441 to 445
 	f\< ees8-.-> f-.->
 	g r c,4->~

@@ -30,6 +30,10 @@
 		
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
+		
+		\override DynamicText.color = #red
+		\override Hairpin.color = #red
+		\override TextScript.color = #red
 	}
 	\context {
 		\StaffGroup

@@ -267,7 +267,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 241 to 245
 	
 % Bars 246 to 250
-	b4->\mf b->
+	b4->\mp b->
 	b-> b->_\crescmarkup
 	b-> b->
 	b-> b->
@@ -587,7 +587,7 @@ musicOboeIIMvtI = \relative c {
 	
 	r4 r8 bes(\p\<
 	\tuplet 3/2 4 {aes g ees'\!} ees4~\> \mark \default
-	ees8) r  ces4\pp
+	ees8)\! r  ces4\pp
 	r c!
 % Bars 546 to 550
 	R2*4

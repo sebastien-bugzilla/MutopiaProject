@@ -24,7 +24,7 @@ musicTrombeIMvtI = \relative c {
 	
 	
 	
-	r4 e\brack\ff~
+	r4 e_\fbrackf~
 % Bars 26 to 30
 	e2\fermata \mark \default
 	g\f~

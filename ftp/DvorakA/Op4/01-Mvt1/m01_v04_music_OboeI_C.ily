@@ -275,7 +275,7 @@ musicOboeIMvtI = \relative c {
 % Bars 241 to 245
 	
 % Bars 246 to 250
-	d4->\mf d->
+	d4->\mp d->
 	d-> d->_\crescmarkup
 	d-> d->
 	d-> d->
@@ -362,7 +362,7 @@ musicOboeIMvtI = \relative c {
 	c4( d16 c d e
 % Bars 321 to 325
 	g8.) g16-. f4
-	bes8-.\pp c16( bes \tuplet 3/2 4 {g8 f g}
+	bes8-. c16( bes \tuplet 3/2 4 {g8 f g}
 	f8-.) d-. c-. bes-.
 	bes' r bes bes
 	bes r bes bes
@@ -611,7 +611,7 @@ musicOboeIMvtI = \relative c {
 	ees'4.\! d8
 	ees) r \partCombineAutomatic r d(\p\<
 	\tuplet 3/2 4 {c bes g'\!} g4~\> \mark \default
-	g8) r  ees4\pp
+	g8)\! r  ees4\pp
 	r e
 % Bars 546 to 550
 	\partCombineApart f8(\p e16 f des8) r

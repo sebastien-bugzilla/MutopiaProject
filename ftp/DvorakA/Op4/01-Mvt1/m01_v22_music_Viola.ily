@@ -40,7 +40,7 @@ musicViolaMvtI = \relative c {
 	b8.( a!16) b( a b a)\!
 % Bars 26 to 30
 	<b, gis'>2\fermata\ff \mark \default
-	a16\ff a g a <g bes!>4:16
+	a16\ff a g! a <g bes!>4:16
 	q16 q <f a> <g bes> <a c>4:16
 	q16 q <g bes> <a c> <bes d>4:16
 	q16 q <a c> <bes d> <c ees>4:16
@@ -790,7 +790,7 @@ musicViolaMvtI = \relative c {
 		\repeat tremolo 4 {c( ees)\!}
 	}>>
 % Bars 611 to 615
-	d16\brack\ff d f f  f f d, d
+	d16_\fbrackf d f f  f f d, d
 	d' d bes' bes  bes bes f f
 	f f d d  d' d c c
 	d d d, d d' d c c
@@ -876,7 +876,7 @@ musicViolaMvtI = \relative c {
 % Bars 681 to 685
 	bes, f' bes, f' bes, f'}
 	ees) r r4 \mark \default
-	r\fermata r8. f16
+	r\fermata r8. f16\f
 	bes4-.-> bes-.->
 	c-. a-.
 % Bars 686 to 690
@@ -913,7 +913,7 @@ musicViolaMvtI = \relative c {
 	q: q16 q <bes d> q
 	q4:16 <a ees'>:\fz
 	q: q16 q <bes d> q
-	<bes d>4:16 <cis e>:\brack\fff
+	<bes d>4:16 <cis e>:_\ffbrackf
 	q2:
 % Bars 716 to 720
 	q:

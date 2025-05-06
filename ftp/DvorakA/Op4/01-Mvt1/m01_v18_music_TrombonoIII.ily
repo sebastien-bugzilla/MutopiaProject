@@ -377,7 +377,7 @@ musicTrombonoIIIMvtI = \relative c {
 % Bars 491 to 495
 	
 % Bars 496 to 500
-	cis2~
+	cis2~\pp
 	cis
 	d~
 	d \mark \markVi

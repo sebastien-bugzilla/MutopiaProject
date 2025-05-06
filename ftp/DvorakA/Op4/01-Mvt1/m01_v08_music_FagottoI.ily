@@ -82,7 +82,7 @@ musicFagottoIMvtI = \relative c {
 	a~
 % Bars 61 to 65
 	<< a~ {s8\< s s s\!}>>
-	a4\> bes8( c\! \mark \default
+	a4\> bes!8( c\! \mark \default
 	\repeat volta 2 {
 		d4 bes~
 		bes2)
@@ -192,8 +192,8 @@ musicFagottoIMvtI = \relative c {
 % Bars 151 to 155
 		g g'4(\fz c,8)
 		g'2\p~
-		g~_\brackM\pocoapococresc
-		g~
+		<<g~ {s4 s_\brackM\pocoapococresc}>>
+		g2~
 		g
 % Bars 156 to 160
 		c~\<
@@ -344,10 +344,10 @@ musicFagottoIMvtI = \relative c {
 	e8 r \tuplet 3/2 4 {c-.\> c-. d-.}
 	e\! r \tuplet 3/2 4 {c-.\p c-. d-.}
 	ees!2\pp(
-	f4 ees8 des)
-	c2(
+	f4\< ees8 des)\!
+	c2(\>
 % Bars 281 to 285
-	des4 aes8 bes)
+	des4 aes8 bes)\!
 	ees,!2\pp~
 	ees~
 	ees~
@@ -401,7 +401,7 @@ musicFagottoIMvtI = \relative c {
 	bes~
 	bes
 % Bars 326 to 330
-	bes'8.( a16 \tuplet 3/2 4 {g8 f d')}
+	bes'8.(\p a16 \tuplet 3/2 4 {g8 f d')}
 	bes8.( a16 \tuplet 3/2 4 {g8 f d')}
 	bes8.( a16 \tuplet 3/2 4 {g8 f d')}
 	bes8.( a16 \tuplet 3/2 4 {g8 f d')} \mark \default
@@ -534,7 +534,7 @@ musicFagottoIMvtI = \relative c {
 	bes-> a)]\! r a
 	c(\f\> ees c bes)
 	a( ges ees c)\! \mark \default
-	f r f'4\f~
+	f r f'4->\f~
 % Bars 441 to 445
 	f\< ees8-.-> f-.->
 	g r c,4->~
