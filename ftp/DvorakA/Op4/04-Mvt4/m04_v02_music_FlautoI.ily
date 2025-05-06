@@ -130,7 +130,7 @@ musicFlautoIMvtIV = \relative c {
 	
 	
 	
-	ges,2\p-> ges4.->\< f8
+	ges,2\p-> ges4.->\< ges8
 	ges'2_\fpmarkup(~ ges8 fes ees des\!)
 % Bars 161 to 165
 	b2->\f ais4.-> b8

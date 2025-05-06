@@ -295,7 +295,7 @@ musicClarinettoIMvtIV = \relative c {
 	dis4 dis8 dis dis4 dis8 dis
 	e2.\ff e16( dis cis b
 	\tuplet 3/2 2 {bes4-.) des-. bes-. g!-. bes-. g-.}
-	e2-^ d4-^ cis-^
+	e2-^ dis4-^ cis-^
 % Bars 246 to 250
 	e'1\f~
 	e2 c
@@ -407,7 +407,7 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 346 to 350
 	g'( e4. d8 cis4)
 	g'( e4. d8 cis4)
-	ais'( g!4. fis8 e4)
+	ais'( g!4. fis8 e!4)
 	ais( g4. fis8 e4)
 	f!-.(\brack\p d4. c8 bes4)
 % Bars 351 to 355

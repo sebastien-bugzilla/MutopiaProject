@@ -183,7 +183,7 @@ musicCornoIIMvtIV = \relative c {
 	eis4 r r2
 	cis'4.-> a8-. gis4.-> fis8-.
 % Bars 191 to 195
-	fis r r4 \tuplet 3/2 2 {b4-> b-> b->}
+	f! r r4 \tuplet 3/2 2 {b4-> b-> b->}  % fis => f based on part score & cor III IV
 	b1~
 	b4 r r2
 	R1

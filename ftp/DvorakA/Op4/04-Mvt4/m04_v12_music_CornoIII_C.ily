@@ -262,7 +262,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 271 to 275
 	des4 des8 des des4 des8 des
 	des4 des8 des des4 des8 des
-	ces4 ces8 ces ces4 ces8 ces
+	c4 c8 c c4 c8 c  % ces => c based on oboe I
 	cis4 cis8 cis cis4 cis8 cis
 	cis4 cis8 cis cis4 cis8 cis
 % Bars 276 to 280

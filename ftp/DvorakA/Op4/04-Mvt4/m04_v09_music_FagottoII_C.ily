@@ -512,7 +512,7 @@ musicFagottoIIMvtIV = \relative c {
 	e2.( d4
 % Bars 431 to 435
 	cis d g b)
-	ees2.( d4)
+	e2.( d4)  % ees => e based on Flute / Oboe
 	d,1
 	c~
 	c
