@@ -4,83 +4,67 @@
 %###############################################################################
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
+% dynamics 
+pppsempre = \markup {\hspace #-1.51 \dynamic ppp \italic {sempre}}
 
-crescmarkup = \markup {\italic {cresc.}}
-mfespress = \markup {\dynamic mf \italic {espress.}}
-dimin = \markup {\italic {dimin.}}
-dimmarkup = \markup {\italic {dim.}}
-fcresc = \markup {\dynamic f \italic {cresc.}}
-mfmarcato = \markup {\dynamic mf \italic {marcato}}
-fzpocoapococrescendo = \markup {\dynamic fz \italic {poco a poco crescendo}}
-piuf = \markup {\normal-text \italic {più} \dynamic f}
-pocoapococresc = \markup {\italic {poco a poco cresc.}}
-calando = \markup {\italic {calando}}
-fpespr = \markup {
-	\concat {
-		\musicglyph "f" \musicglyph "p" \musicglyph "scripts.espr"
-	}
-}
-pespr = \markup {
-	\concat {\musicglyph "p" \musicglyph "scripts.espr" }
-}
-fpp = \markup {\dynamic fpp}
-legato = \markup {\italic {legato}}
-solo = \markup {Solo}
-ppcalando = \markup {\dynamic pp \italic {calando}}
-
-%fzcresc = \markup {\dynamic fz \italic {cresc.}}
-pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
-ppdim = \markup {\dynamic pp \italic {dim.}}
-pplegato = \markup {\dynamic pp \italic {legato}}
-ppsempre = \markup {\dynamic pp \italic {sempre}}
-pizz = \markup {\italic {pizz.}}
-arco = \markup {\italic {arco}}
-trem = \markup {\italic {trem.}}
-fpocoapococrescendo = \markup {\dynamic f \italic {poco a poco crescendo}}
-ppmorendo = \markup {\dynamic pp \italic {morendo}}
-fmarkup = \markup {\dynamic f}
-fzdim = \markup {\dynamic fz \normal-text \italic {dim.}}
-morendo = \markup {\italic {morendo}}
-pcresc = \markup {\dynamic p \italic {cresc.}}
-sempre = \markup {\italic {sempre}}
-trem = \markup {\italic {trem.}}
-fzmarkup = \markup {\dynamic fz}
-fmarc = \markup {\dynamic f \italic {marc.}}
-crescendo = \markup {\italic {crescendo}}
-conespr = \markup {\italic {con espr.}}
-conmoltaforza = \markup {\italic {con molta forza}}
-semprepianissimo = \markup {\italic {sempre pianissimo}}
-ppocoapococresc = \markup {\dynamic p \italic {poco a poco cresc.}}
-fzpocoapococresc = \markup {\dynamic fz \italic {poco a poco cresc.}}
-ffconmoltosforza = \markup {\dynamic ff \italic {con molto sforza}}
-conmoltosforza = \markup {\italic {con molto sforza}}
-fmarcato = \markup {\dynamic f \italic {marcato}}
-pococresc = \markup {\italic {poco cresc.}}
-pdim = \markup {\dynamic p \normal-text \italic {dim.}}
-moltocresc = \markup {\italic {molto cresc.}}
-pmoltoespress = \markup {\dynamic p \normal-text \italic {molto espress.}}
-pmarkup = \markup {\dynamic p}
-pppsempre = \markup {\dynamic ppp \italic {sempre}}
-pdolce = \markup {\dynamic p \italic {dolce}}
-conmoltaforza = \markup {\italic {con molta forza}}
-ffconmoltaforza = \markup {\dynamic ff \italic {con molta forza}}
-pppocoapococrescendo = \markup {\dynamic pp \italic {poco a poco crescendo}}
-espressivo = \markup {\italic {espressivo}}
+ppcalando = \markup {\hspace #-0.78 \dynamic pp \italic {calando}}
+ppdim = \markup {\hspace #-0.78 \dynamic pp \italic {dim.}}
+pplegato = \markup {\hspace #-0.78 \dynamic pp \italic {legato}}
+ppsempre = \markup {\hspace #-0.78 \dynamic pp \italic {sempre}}
+ppmorendo = \markup {\hspace #-0.78 \dynamic pp \italic {morendo}}
+pppocoapococrescendo = \markup {\hspace #-0.78 \dynamic pp \italic {poco a poco crescendo}}
+ppdiminuendo = \markup {\hspace #-0.78 \dynamic pp \italic {diminuendo}}
+ppspiccato = \markup {\hspace #-0.78 \dynamic pp \italic {spiccato}}
+ppsulponticello = \markup {\hspace #-0.78 \dynamic pp \italic {sul ponticello}}
 semprepp = \markup {\italic {sempre} \dynamic pp}
+
+pcresc = \markup {\hspace #-0.05 \dynamic p \italic {cresc.}}
+ppocoapococresc = \markup {\hspace #-0.05 \dynamic p \italic {poco a poco cresc.}}
+pdim = \markup {\hspace #-0.05 \dynamic p \normal-text \italic {dim.}}
+pmoltoespress = \markup {\hspace #-0.05 \dynamic p \normal-text \italic {molto espress.}}
+pmarkup = \markup {\hspace #-0.05 \dynamic p}
+pdolce = \markup {\hspace #-0.05 \dynamic p \italic {dolce}}
+psecco = \markup {\hspace #-0.05 \dynamic p \italic {secco}}
 piup = \markup {\italic {più} \dynamic p}
-diminuendo = \markup {\italic {diminuendo}}
-fpdim = \markup {\dynamic fp \normal-text \italic {dim.}}
-pocoapoco = \markup {\italic {poco a poco}}
-ffmarcato = \markup {\dynamic ff \italic {marcato}}
-fffz = \markup {\concat { \dynamic ff \hspace #0.4 \dynamic fz }}
+
+mfespress = \markup {\hspace #-0.76 \dynamic mf \italic {espress.}}
+mfmarcato = \markup {\hspace #-0.76 \dynamic mf \italic {marcato}}
+mfmarkup = \markup {\hspace #-0.76 \dynamic mf}
+
+fpp = \markup {\hspace #-1.41 \dynamic fpp}
+
+fpdim = \markup {\hspace #-0.67 \dynamic fp \normal-text \italic {dim.}}
+fpmarkup = \markup {\hspace #-0.67 \dynamic fp}
+
+fzpocoapococrescendo = \markup {\hspace #-0.5 \dynamic fz \italic {poco a poco crescendo}}
+fzdim = \markup {\hspace #-0.5 \dynamic fz \normal-text \italic {dim.}}
+fzmarkup = \markup {\hspace #-0.5 \dynamic fz}
+fzpocoapococresc = \markup {\hspace #-0.5 \dynamic fz \italic {poco a poco cresc.}}
+fzmarc = \markup {\hspace #-0.5 \dynamic fz \italic {marc.}}
+
+fcresc = \markup {\hspace #0.05 \dynamic f \italic {cresc.}}
+fpocoapococrescendo = \markup {\hspace #0.05 \dynamic f \italic {poco a poco crescendo}}
+fmarkup = \markup {\hspace #0.05 \dynamic f}
+fmarc = \markup {\hspace #0.05 \dynamic f \italic {marc.}}
+fmarcato = \markup {\hspace #0.05 \dynamic f \italic {marcato}}
+sempref = \markup {\italic sempre \dynamic f}
+piuf = \markup {\normal-text \italic {più} \dynamic f}
+
+
+ffconmoltosforza = \markup {\hspace #-0.51 \dynamic ff \italic {con molto sforza}}
+ffconmoltaforza = \markup {\hspace #-0.51 \dynamic ff \italic {con molta forza}}
+ffmarcato = \markup {\hspace #-0.51 \dynamic ff \italic {marcato}}
+ffmarc = \markup {\hspace #-0.51 \dynamic ff \italic {marc.}}
+
+fffz = \markup {\hspace #-3.3 \concat { \dynamic ff \hspace #0.4 \dynamic fz }}
+
 pbrackp = \markup {
-	\concat {
+	\hspace #-1.6 \concat {
 		\dynamic p \bracket \with-true-dimensions \dynamic p
 	}
 }
-espr = \markup {\left-align \musicglyph "scripts.espr"}
-fbrackf = \markup {
-	\overlay {
+fbrackf = \markup { 
+	\hspace #-1.2 \overlay {
 		\general-align #Y #CENTER {
 			\dynamic f 
 			\translate #'(1.4 . 0) \path #0.15 #'(
@@ -96,7 +80,7 @@ fbrackf = \markup {
 	}
 }
 ffbrackf = \markup {
-	\overlay {
+	\hspace #-1.8 \overlay {
 		\general-align #Y #CENTER {
 			\dynamic ff
 			\translate #'(2.5 . 0) \path #0.15 #'(
@@ -111,48 +95,40 @@ ffbrackf = \markup {
 		}
 	}
 }
-mfmarkup = \markup {\dynamic mf}
 fbrackz = \markup {
-	\concat {
+	\hspace #-0.5 \concat {
 		\dynamic f \bracket \with-true-dimensions \dynamic z 
 	}
 }
-ppdiminuendo = \markup {\dynamic pp \italic {diminuendo}}
-sempref = \markup {\italic sempre \dynamic f}
-fpmarkup = \markup {\dynamic fp}
-sulponticello = \markup {sul ponticello}
-ppspiccato = \markup {\dynamic pp \italic {spiccato}}
-ppsulponticello = \markup {\dynamic pp \italic {sul ponticello}}
-ffmarc = \markup {\dynamic ff \italic {marc.}}
-
 brackmf = \markup {
-	\concat {
+	\hspace #-0.76 \concat {
 		\bracket \with-true-dimensions \dynamic m \dynamic f
 	}
 }
-psecco = \markup {\dynamic p \italic {secco}}
-spiccato = \markup {\italic {spiccato}}
 ppbracksulponticello = \markup {
-	\concat {
-		\dynamic pp \bracket \with-true-dimensions \italic {"sul ponticello"}
+	\hspace #-0.78 \concat {
+		\dynamic pp \hspace #0.4 \bracket \with-true-dimensions \italic {"sul ponticello"}
 	}
 }
-marcato = \markup {\italic {marcato}}
-marc = \markup {\italic {marc.}}
 pbracksecco = \markup {
-	\concat { 
+	\hspace #-0.05 \concat { 
 		\dynamic p \hspace #0.5
 		\bracket \with-true-dimensions \italic {secco}
 	}
 }
-fzmarc = \markup {\dynamic fz \italic {marc.}}
 ppfz = \markup {
-	\concat {
+	\hspace #-1.02 \concat {
 		\hspace #-3 \dynamic pp \hspace #0.6 \dynamic fz
 	}
 }
-
-
+fpespr = \markup {
+	\hspace #-0.68 \concat {
+		\musicglyph "f" \musicglyph "p" \musicglyph "scripts.espr"
+	}
+}
+pespr = \markup {
+	\hspace #-0.05 \concat {\musicglyph "p" \musicglyph "scripts.espr" }
+}
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -176,6 +152,41 @@ fpdimD = #(make-dynamic-script fpdim)
 fffzD = #(make-dynamic-script fffz)
 fbrackzD = #(make-dynamic-script fbrackz)
 ppfzD = #(make-dynamic-script ppfz)
+
+
+
+crescmarkup = \markup {\italic {cresc.}}
+dimin = \markup {\italic {dimin.}}
+dimmarkup = \markup {\italic {dim.}}
+pocoapococresc = \markup {\italic {poco a poco cresc.}}
+calando = \markup {\italic {calando}}
+legato = \markup {\italic {legato}}
+solo = \markup {Solo}
+pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
+pizz = \markup {\italic {pizz.}}
+arco = \markup {\italic {arco}}
+trem = \markup {\italic {trem.}}
+morendo = \markup {\italic {morendo}}
+sempre = \markup {\italic {sempre}}
+trem = \markup {\italic {trem.}}
+crescendo = \markup {\italic {crescendo}}
+conespr = \markup {\italic {con espr.}}
+conmoltaforza = \markup {\italic {con molta forza}}
+semprepianissimo = \markup {\italic {sempre pianissimo}}
+conmoltosforza = \markup {\italic {con molto sforza}}
+pococresc = \markup {\italic {poco cresc.}}
+moltocresc = \markup {\italic {molto cresc.}}
+conmoltaforza = \markup {\italic {con molta forza}}
+espressivo = \markup {\italic {espressivo}}
+diminuendo = \markup {\italic {diminuendo}}
+pocoapoco = \markup {\italic {poco a poco}}
+espr = \markup {\left-align \musicglyph "scripts.espr"}
+sulponticello = \markup {sul ponticello}
+spiccato = \markup {\italic {spiccato}}
+marcato = \markup {\italic {marcato}}
+marc = \markup {\italic {marc.}}
+
+
 
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }
@@ -322,7 +333,28 @@ OutCueContext = {
 aIIOmit = \once \omit Voice.CombineTextScript
 
 
-
+%#(define my-script-alist
+%	(
+%		append `(
+%			(marcato
+%				(script-stencil . (feta . ("dmarcato" . "umarcato")))
+%				(padding . 0.20)
+%				(avoid-slur . outside)
+%				;;(staff-padding . ())
+%				(quantize-position . #t)
+%				(side-relative-direction . ,DOWN))
+%			(staccatissimo
+%				(avoid-slur . outside)
+%				(quantize-position . #t)
+%				(script-stencil . (feta . ("dstaccatissimo" . "ustaccatissimo")))
+%				(padding . 0.20)
+%				(skyline-horizontal-padding . 0.10)
+%				(side-relative-direction . ,DOWN)
+%				(toward-stem-shift . 1.0)
+%				(toward-stem-shift-in-column . 0.0))
+%		)
+%		default-script-alist)
+%)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -19,21 +19,23 @@
 	\context {
 		\Score
 %		scriptDefinitions = #my-script-alist
-		\override RehearsalMark.font-size = #4
+		\override MetronomeMark.font-size = #2
+		\override RehearsalMark.font-size = #6
 		\override RehearsalMark.extra-spacing-width = #'(-0.1 . 0.1)
 		\override RehearsalMark.extra-spacing-height = #'(-10 . 10)
 		\override RehearsalMark.outside-staff-priority = ##f
 %		\override RehearsalMark.font-family = #'sans
-		\override BarNumber.font-size = #0.1
+		\override BarNumber.font-size = #3
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
-		
+		\override Beam.damping = #3
+		\override Stem.length-fraction = #0.9
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
 		
-		\override DynamicText.color = #red
-		\override Hairpin.color = #red
-		\override TextScript.color = #red
+%		\override DynamicText.color = #red
+%		\override Hairpin.color = #red
+%		\override TextScript.color = #red
 	}
 	\context {
 		\StaffGroup
@@ -69,13 +71,6 @@
 %		\override MultiMeasureRestNumber.transparent = ##t
 %		\override Script.transparent = ##t
 %		\override Tie.transparent = ##t
-	}
-	\context {
-		\CueVoice
-		fontSize = #-3
-		\override Stem.length-fraction = #0.85
-		\override TupletBracket.bracket-visibility = ##f
-		\override StemTremolo.beam-thickness = #0.35 
 	}
 }
 

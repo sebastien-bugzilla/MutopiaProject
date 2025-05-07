@@ -63,7 +63,7 @@ musicClarinettoIIMvtIV = \relative c {
 	cis4. a8 a4. fis8
 	e'2.\f~ e8 dis-.
 % Bars 46 to 50
-	e2.~ e8_\dimmarkup dis-.
+	e2.~ e8_\dimmarkup dis-.  % dim. based on Oboe & Faggot
 	e4. dis8 dis4. cis8
 	cis4.\> dis8 dis4.\! e8
 	e2.~ e8 dis-.

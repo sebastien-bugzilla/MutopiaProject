@@ -17,10 +17,10 @@
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperConductors.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
+\include "./00-Common/DvorakSymph2_Shortcuts.ily"
 \include "./00-Common/DvorakSymph2_LayoutConductors.ily"
 \include "./00-Common/DvorakSymph2_NameStaff.ily"
 \include "./00-Common/DvorakSymph2_NameGrandStaff.ily"
-\include "./00-Common/DvorakSymph2_Shortcuts.ily"
 \include "./00-Common/DvorakSymph2_Tempi.ily"
 \include "./00-Common/DvorakSymph2_Format_Cond_Mvt01.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoI.ily"
@@ -67,9 +67,8 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new GrandStaff \with {
-					\nameGrandStaffIMvtI \consists Keep_alive_together_engraver 
-				} <<
+				\new GrandStaff \with {\nameGrandStaffIMvtI 
+				\consists Keep_alive_together_engraver } <<
 					\new Staff <<
 %						\new Voice {
 %							\formatConductorMvtI
@@ -102,7 +101,8 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtI  
+				\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtI \nameStaffVIMvtI
 						\partCombine \musicCornoIMvtI \musicCornoIIMvtI
@@ -119,7 +119,8 @@
 					\partCombine \musicTrombeIMvtI \musicTrombeIIMvtI
 %					\musicTrombeIIMvtI 
 				}
-				\new GrandStaff \with { \nameGrandStaffIIIMvtI } <<
+				\new GrandStaff \with { \nameGrandStaffIIIMvtI 
+				\consists Keep_alive_together_engraver} <<
 					\new Staff {
 						\timeMvtI \nameStaffIXMvtI \musicTrombonoIMvtI
 					}
@@ -135,7 +136,8 @@
 				\timeMvtI \nameStaffXIIMvtI \musicTimpaniMvtI
 			}
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIVMvtI } <<
+				\new GrandStaff \with { \nameGrandStaffIVMvtI
+				\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtI \nameStaffXIIIMvtI \musicViolinoIMvtI
 					}

@@ -67,7 +67,8 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIMvtII 
+				\consists Keep_alive_together_engraver } <<
 					\new Staff <<
 %						\new Voice {
 %							\formatConductorMvtII
@@ -100,7 +101,8 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtII 
+				\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtII \nameStaffVIMvtII
 						\partCombine \musicCornoIMvtII \musicCornoIIMvtII
@@ -117,7 +119,8 @@
 					\partCombine \musicTrombeIMvtII \musicTrombeIIMvtII
 %					\musicTrombeIIMvtII
 				}
-				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIIIMvtII
+				\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtII \nameStaffIXMvtII \musicTrombonoIMvtII
 					}
@@ -133,7 +136,8 @@
 				\timeMvtII \nameStaffXIIMvtII \musicTimpaniMvtII
 			}
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIVMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIVMvtII
+				\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtII \nameStaffXIIIMvtII \musicViolinoIMvtII
 					}
