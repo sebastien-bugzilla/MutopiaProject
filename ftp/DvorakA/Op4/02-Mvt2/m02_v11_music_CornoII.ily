@@ -84,7 +84,7 @@ musicCornoIIMvtII = \relative c {
 	
 	
 	r2. << c'2. {s8\p\< s s  s\! s s}>>
-	c2.(\p c4. bes)\!
+	c2.(\p\< c4. bes)\!
 % Bars 71 to 75
 	c\mf a\< bes16 bes bes bes bes bes\!  bes bes bes bes bes bes
 	bes4.\f r4 r8 c4. r4 r8 \mark \default

@@ -13,7 +13,7 @@ musicViolinoIIMvtII = \relative c {
 	c( fis, c' fis,~ fis c'~  c fis, c' fis,~ fis c'~  c fis, c' fis,~ fis_\brackM\crescmarkup c'~  c fis, c' fis,~ fis c')
 	ees,( g ees g~ g ees~  ees\< g ees g~ g ees~  ees g ees g~ g ees~  ees g ees\! g~ g ees)
 	ees( ges ees ges~ ges ees~  ees ges ees ges~ ges ees~  ees ges ees ges~ ges ees~  ees ges ees ges~ ges ees)
-	g!( ees' g, ees'~ ees g,~  g ees' g, ees'~ ees g,~  g d' g, d'~ d g,~  g d' g, d'~ d g,)
+	g!(\mf ees' g, ees'~ ees g,~  g ees' g, ees'~ ees g,~  g d' g, d'~ d g,~  g d' g, d'~ d g,)
 % Bars 6 to 10
 	g( c g c~ c g~  g\> c g c~ c g~  g d' g, d'~ d g,~  g d' g, d'~ d g,)\!
 	c(\p g c g~ g c~  c g c g~ g c) g( ees g ees~ ees g~  g ees g ees~ ees g)
@@ -29,7 +29,7 @@ musicViolinoIIMvtII = \relative c {
 % Bars 16 to 20
 	r8 bes,16(_\crescmarkup f' bes, f') r8 a,16(\< f' a, f') r8 bes,16( f' bes, f') r8 cis16( a' e cis)\!
 	r8 d16(\mf\> f d f) r8 d16( f d f) r8 c16( ees c ees)_\dimmarkup r8 c16( g' c, g')\!
-	r8 aes,16( f' aes, f') r8 cis16( g' cis, g') r8 d16(\< aes' d, aes') r8 f16( d f bes)\!
+	r8 aes,16(\pp f' aes, f') r8 cis16( g' cis, g') r8 d16(\< aes' d, aes') r8 f16( d f bes)\!
 	r8 ees,16(\< bes ees bes) r8 ees16( bes ees bes)\! r8 e16(\mf bes e bes)\> r8 e16( bes e bes)\!
 	r8 f'16(\p\< d f d) r8 a'16( f a f) r8 bes16( f bes f)\! r8 bes16(\> e, bes' e,)\!
 % Bars 21 to 25

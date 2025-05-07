@@ -75,7 +75,7 @@ musicFlautoIIMvtII = \relative c {
 	r4 r8 ees4.(\p\< aes b,!)\!
 	<< {c( f2. g!4.} {s4.\< s8 s s\!  s s s\> s s s\! }>>
 	aes4) r8 r4 r8 r2. \mark \default
-	r4 r16 c'\p\< c4.\! r4 r16 b\< b4.\!
+	r4 r16 c'\p\< c4.\! r4 r16 b\p\< b4.\!
 	r4 r16 bes! bes4. r4 r16 g g4.
 % Bars 61 to 65
 	R1.*3
@@ -91,7 +91,7 @@ musicFlautoIIMvtII = \relative c {
 	R1.
 % Bars 71 to 75
 	bes16\mf bes bes bes bes bes  bes bes\< bes bes bes bes bes4.:16 ees:\!
-	ees4.\brack\ff~ ees8 r ees f4.~ f8 r f \mark \default
+	ees4._\fbrackf~ ees8 r ees f4.~ f8 r f \mark \default
 	f8\f r r r4\fermata r8 r2.
 	R1.
 	r2. r4 r8 c,4.\pp

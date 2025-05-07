@@ -197,7 +197,7 @@ musicViolaMvtII = \relative c {
 % Bars 141 to 145
 	d,4.~ d8 r r r2.
 	d''4.\pp(~ d8 ees bes d) r r r4 r8
-	<a, fis'>16 q q8 q <g g'>16 q q8 q <c ees>16 q q8 q <c d>16 q q8 q
+	<a, fis'>16\ff q q8 q <g g'>16 q q8 q <c ees>16 q q8 q <c d>16 q q8 q
 	r4 r8 a'16. g32 g16 r r8 a16. g32 g16 r r8 a16. g32 g16 r r8
 	r4 r8 <a, g'>4.-^\ff\arpeggio r4 r8 <c a'>4.-^\arpeggio
 % Bars 146 to 150

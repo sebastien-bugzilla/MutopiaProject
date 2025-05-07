@@ -46,7 +46,7 @@ musicCornoIIIMvtII = \relative c {
 	R1.*4
 % Bars 41 to 45
 	r4 r8 \partCombineApart c2.->~ c4 \partCombineAutomatic r8
-	r4 r8 \partCombineApart d4.( ees~ ees4)_\dimmarkup r8
+	r4 r8 \partCombineApart d4.( ees~ ees4)_\dimmarkup \partCombineAutomatic r8
 	r2. r4 r8 ees4.\pp
 	r4 r8 fis4.\pp fis fis 
 	d8 r r r4 r8 r2.
@@ -155,7 +155,7 @@ musicCornoIIIMvtII = \relative c {
 	R1.*3
 	
 	
-	f8\f r r r4 r8 e8 r r r4 r8 \mark \default
+	f8\ff r r r4 r8 e8 r r r4 r8 \mark \default
 	R1.*3
 % Bars 141 to 145
 	

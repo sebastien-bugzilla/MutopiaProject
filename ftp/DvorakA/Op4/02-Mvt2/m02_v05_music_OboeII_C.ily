@@ -106,7 +106,7 @@ musicOboeIIMvtII = \relative c {
 	bes'16\p bes f f g\< g  aes aes bes bes ces ces  bes bes f f g g   aes aes bes bes c c\!
 % Bars 86 to 90
 	bes\mf bes g g aes\< aes  bes bes c c des des  c c g g aes aes  bes bes c c des des\!
-	c\f c a! a bes bes  c c d d ees ees  d d a a bes bes  c c d d ees ees
+	c\f c a! a bes bes  c c d! d ees ees  d d a a bes bes  c c d d ees ees
 	d1.\f \mark \default
 	ees8\ff r r r4 r8 r2.
 	R1.*2
@@ -154,7 +154,7 @@ musicOboeIIMvtII = \relative c {
 	r4 r16 d\pp d4. r4 r16 d d4.
 	r4 r16 c c4. r4 r16 c c4.
 	r4 r16 bes bes4. r4 r16 ees ees4.
-	r4 r16 ees ees4. r4 r16 ees\< ees4.\!
+	r4 r16 ees ees4. r4 r16 ees\< << ees4. {s8 s s\!}>>
 	e8\ff r r r4 r8 cis4.\pp r4 r8
 % Bars 136 to 140
 	R1.*2

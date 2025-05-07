@@ -11,7 +11,7 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 1 to 5
 	c'2.\pp~ c
 	d~ d
-	f~ f
+	<< f~ {s4. s_\crescmarkup}>> f2.
 	R1.*5
 	
 % Bars 6 to 10
@@ -52,7 +52,7 @@ musicClarinettoIIMvtII = \relative c {
 	a8 a a  a a a  a a a  a a a
 % Bars 36 to 40
 	f' f f  f f f  e e e  r4 r8 \mark \default
-	r4 r8 c2.\pp~ c4 r8
+	r4 r8 c2.\p~ c4 r8
 	r4 r8 d2.~ d4 r8
 	r4 r8 f2.~ f4 r8
 	r4 r8 gis2.\<~ gis4\! r8

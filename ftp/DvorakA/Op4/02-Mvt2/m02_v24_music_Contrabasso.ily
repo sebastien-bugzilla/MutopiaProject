@@ -130,8 +130,8 @@ musicContrabassoMvtII = \relative c {
 	ees!4.: ees16: ees: ees': ees: ees,: ees: ees4.: ees16: ees: ees': ees: ees,: ees:
 % Bars 101 to 105
 	d8 r r r4 r8 d r r r4\fermata r8 \mark \default
-	g,4 r8 r4 r8 r2.
-	<< cis4.( {s8 s s\!}>> d4.\> ees << b {s8 s s\!}>>
+	g,4\pp r8 r4 r8 r2.
+	<< cis4.(\< {s8 s s}>> d4.\! ees\> << b {s8 s s\!}>>
 	c!4) r8 r4 r8 r2.
 	fis,4.(\< g\! aes\> << e {s8 s s\!}>>
 % Bars 106 to 110

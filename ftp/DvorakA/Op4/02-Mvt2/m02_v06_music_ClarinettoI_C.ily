@@ -52,7 +52,7 @@ musicClarinettoIMvtII = \relative c {
 	a8 a a  a a a  a a_\crescmarkup a  a a a
 % Bars 36 to 40
 	gis gis gis  a a a  b b b  r4 r8 \mark \default
-	r4 r8 e,2.\pp~ e4 r8
+	r4 r8 e,2.\p~ e4 r8
 	r4 r8 f2.~ f4 r8
 	r4 r8 a2.~ a4 r8
 	r4 r8 b2.\<~ b4\! r8

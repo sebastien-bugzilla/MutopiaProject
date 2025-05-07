@@ -154,7 +154,7 @@ musicCornoIMvtII = \relative c {
 % Bars 136 to 140
 	R1.*2
 	
-	\partCombineApart r2. d4.\p~ d8 r r \partCombineAutomatic
+	\partCombineApart r2. d4.\pp~ d8 r r \partCombineAutomatic
 	d\ff r r r4 r8 cis r r r4 r8 \mark \default
 	R1.*3
 % Bars 141 to 145

@@ -139,7 +139,7 @@ musicViolinoIMvtII = \relative c {
 	ees4.(\< d8 c g)\! bes4.(\> a!4 a8--)\!
 	g4.(\p a)_\pococresc\< bes( d4\! c8)
 	d4.(\< ees) d\!( a'4\f\> g8)\!
-	<< f2.\p~ { s4 s_\dimmarkup }>> f8 ees( d c4 g8)\pp
+	<< f2.\p~ { s4. s_\dimmarkup }>> f8 ees( d c4 g8)\pp
 % Bars 111 to 115
 	bes4(~ bes16. c32 bes4.~ bes4) bes8(_\crescmarkup c4 d8)
 	ees4. c'4\f\<(~ c16. bes32-.) bes4.~\! bes4\> e,8(\!

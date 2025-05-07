@@ -75,7 +75,7 @@ musicFlautoIMvtII = \relative c {
 	r2. bes32(\pp aes g \liiiri aes \liriii bes aes g aes) r8 ges'32( fes ees \liiiri fes \liriii ges fes ees fes) r8
 	bes16( aes g! aes g f  ees f ges f aes ges  f ees des ees des c  c bes ees g,! des' g,) % a => aes based on audio reference
 	aes4 r8 r4 r8 r2. \mark \default
-	r4 r16 ees'\p\< ees4.\! r4 r16 d!\< d4.\!
+	r4 r16 ees'\p\< ees4.\! r4 r16 d!\p\< d4.\!
 	r4 r16 des des4. r4 r16 bes bes4.
 % Bars 61 to 65
 	r4 r8 des4.\pp~^\solo des8 a!8.( bes16 bes4.)
@@ -91,7 +91,7 @@ musicFlautoIMvtII = \relative c {
 	c4.(_\pocoapococrescendo f2.\<~ f8 ees bes)\!
 % Bars 71 to 75
 	d16\mf d d d d d  d d\< d d d d ees4.:16 f:\!
-	g4.\brack\ff~ g8 r g gis4.~ gis8 r gis \mark \default
+	g4._\fbrackf~ g8 r g gis4.~ gis8 r gis \mark \default
 	a8\f r r r4\fermata r8 r4 r8 f,4.(\pp
 	g c,4 d8 ees4. bes4 c8)
 	d4.( bes^~ bes8 a g c4.)
@@ -149,7 +149,7 @@ musicFlautoIMvtII = \relative c {
 	<< f,1.~ {s8\p\< s s  s s s  s\! s\> s  s s s\!}>>
 	f4 r8 r4 r8 r2.
 	r r4 r8 a16(\pp-. a-. c-. c-. f-. f)-. 
-	r4 r8 a,,16(-. a-. c-. c-. f-. f)-. r2. \mark \default
+	r4 r8 a,,16(-.\pp a-. c-. c-. f-. f)-. r2. \mark \default
 	r4 r8 e'4.->(~\> e8 bis8. cis16~ cis4.)\!
 % Bars 126 to 130
 	r2. r4 r8 a16(-. a-. cis-. cis-. e-. e)-. 

@@ -40,7 +40,7 @@ musicFagottoIMvtII = \relative c {
 	d8\< d d d d d\! d d\> d  d d d\!
 % Bars 26 to 30
 	bes2.\p\>~ bes4\! r8 r4 r8 \clef tenor
-	r4 r8 f'16( c f ees d c d8) r r ees16( bes ees d c bes
+	r4 r8 f'16(\p c f ees d c d8) r r ees16( bes ees d c bes
 	c8) r r \clef bass d16( a d c bes a bes8) r r c16( g c bes a f')
 	f,8\p\< f f  f f f\!  f f f\>  f f f\!
 	bes2.\p~ bes4.~ bes8 r r
