@@ -278,7 +278,7 @@ musicViolaMvtIII = \relative c {
 % Bars 206 to 210
 		<fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> <fis d'>)
 		<d b'>(\pp <b' d> <d, b'> <b' d> <d, b'> <b' d> <d, b'> <b' d> <d, b'> 
-		<b' d> <d, b'> <b' d> <d, b'> <b' d> <d, b'> <b' d> <d, b'> <b' d>)
+		<b' d>_\crescmarkup <d, b'> <b' d> <d, b'> <b' d> <d, b'> <b' d> <d, b'> <b' d>)
 		<e, c'>(\< <c'! e> <e, c'> <c' e> <e, c'> <c' e> <e, c'> <c' e> <e, c'>\!
 		<c' e> <e, c'!> <c' e> <e, c'> <c' e> <e, c'> <c' e> <e, c'> <c' e>)}
 % Bars 211 to 215

@@ -330,8 +330,8 @@ musicViolinoIMvtIII = \relative c {
 	f4-.\f des-. r8. des,16
 % Bars 266 to 270
 	des4 f8:16\< aes: des: ees:\!
-	f4(\fffzD des8) r f4(
-	des8) r f4( des8) r \mark \default
+	f4(\fffzD des8) r f4(\fz
+	des8) r f4(\fz des8) r \mark \default
 	bes2.\ff\>~
 	<< bes {s4 s s\!}>>
 % Bars 271 to 275

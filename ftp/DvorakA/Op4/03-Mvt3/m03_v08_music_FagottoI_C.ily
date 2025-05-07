@@ -527,7 +527,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	c4.\f c8 c4
 	f, r r
-	f'-. ees-.\>_\dimmarkup d-.
+	f'-. ees-.\> d-._\dimmarkup
 	c-.\! r r
 % Bars 491 to 495
 	bes-.\p f-. bes-.

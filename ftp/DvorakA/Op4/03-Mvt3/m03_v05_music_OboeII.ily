@@ -377,7 +377,7 @@ musicOboeIIMvtIII = \relative c {
 	e2 c8. c16 \mark \markBbBox
 	c4.\fz c8-. c-. a-.
 	a4(\> bes)\! r
-	c4.\f c8-. c-. a-.
+	c4.\fz c8-. c-. a-.
 % Bars 356 to 360
 	a4( bes) r
 	R2.*8
@@ -528,7 +528,7 @@ musicOboeIIMvtIII = \relative c {
 	
 	e4.\f e8 e4
 	c r r
-	d-. c\>-._\dimmarkup bes-.
+	d-. c\>-. bes-._\dimmarkup
 	c-.\! r r
 % Bars 491 to 495
 	R2.*6

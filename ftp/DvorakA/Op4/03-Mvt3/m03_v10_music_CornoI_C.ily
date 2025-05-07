@@ -437,7 +437,7 @@ musicCornoIMvtIII = \relative c {
 	R2.*2
 	
 % Bars 441 to 445
-	\partCombineApart << c'2.\fp\> {s4 s s\!}>> \partCombineAutomatic
+	\partCombineApart << c'2.\fpp\> {s4 s s\!}>> \partCombineAutomatic
 	R2.*8
 % Bars 446 to 450
 	

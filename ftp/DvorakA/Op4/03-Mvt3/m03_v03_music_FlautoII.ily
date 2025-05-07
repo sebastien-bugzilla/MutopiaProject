@@ -54,8 +54,8 @@ musicFlautoIIMvtIII = \relative c {
 	f\fz\startTrillSpan
 % Bars 41 to 45
 	\afterGrace f\fz\startTrillSpan {e16 f\stopTrillSpan}
-	f,8 r r4 r
-	R2.^\mutainflii
+	f,8 r^\mutainflii r4 r
+	R2.
 	R2.\fermata \mark \default
 	R2.*18
 % Bars 46 to 50
@@ -241,7 +241,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 216 to 220
 		d2 bes8. c16
 		c4-> d-> e->
-		bes'\fp r r \mark \default
+		bes' r r \mark \default
 	}
 	a4.(\p b8) \tuplet 3/2 4 {cis( d gis,)}
 	gis4( a fis8-. fis-.)

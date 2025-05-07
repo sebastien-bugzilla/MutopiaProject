@@ -69,7 +69,7 @@ musicViolinoIIMvtIII = \relative c {
 	<< bes2.\< {s4 s s_\mfmarkup}>>
 	c( d\! d,\>
 % Bars 51 to 55
-	e2.
+	<< e2. {s4 s s8 s\!}>>
 	<< ees!2.)\p\> {s4 s s\!}>>
 	d4(\pp bes4. bes8
 	bes4 c\< d)
@@ -294,7 +294,7 @@ musicViolinoIIMvtIII = \relative c {
 	ees4\f) r r
 % Bars 236 to 240
 	R2.
-	ees,16(\fz f g8)\> c,-. c-. bes-. bes-.
+	ees,16(\fz f g8)\> c,-. c-. bes-. bes-.\!
 	aes-.\p aes-. g-. g-. aes-. f-.
 	bes r r4 r
 	R2.
@@ -326,7 +326,7 @@ musicViolinoIIMvtIII = \relative c {
 	aes2:\< aes4:
 	aes2: aes4:\!
 	ces2:\mf\< ces4:\!
-	<< ces2.: {s4 s s8 s\!}>>
+	<< ces2.:\< {s4 s s8 s\!}>>
 	ces2.:\f
 % Bars 266 to 270
 	ces4: f,8:\< aes: des: ees:\!
@@ -385,7 +385,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 311 to 315
 	a_\dimmarkup
 	a\fermata \mark \markAaBox
-	bes2.
+	bes2.\pp
 	ees4( f d)
 	<< bes2( {s4 s\< }>> a4)
 % Bars 316 to 320

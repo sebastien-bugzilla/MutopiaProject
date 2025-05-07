@@ -90,7 +90,7 @@ musicOboeIIMvtIII = \relative c {
 	bes( c d)
 	g,( << bes2) {s4\< s\!}>>
 	d8.\f d16 d2
-	f2(\p\> ees4)
+	<< f2\p {s4 s\>}>> ees4
 	des2( ees4\p
 % Bars 81 to 85
 	des c\> bes)\!
@@ -377,7 +377,7 @@ musicOboeIIMvtIII = \relative c {
 	e2 c8. c16 \mark \markBbBox
 	c4.\fz c8-. c-. a-.
 	a4(\> bes)\! r
-	c4.\f c8-. c-. a-.
+	c4.\fz c8-. c-. a-.
 % Bars 356 to 360
 	a4( bes) r
 	R2.*8

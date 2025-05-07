@@ -397,7 +397,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 351 to 355
 	c r c' r r c,
 	c r c' r r4 \mark \markBbBox
-	f,,2.\pp~
+	f,,2.\pp^\brackM\arco~
 	f4. bes8( a16 bes c bes
 	f2.~
 % Bars 356 to 360

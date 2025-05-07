@@ -99,7 +99,7 @@ musicTimpaniMvtIII = \relative c {
 	<< f'2.\ff\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
 	R2.
 % Bars 121 to 125
-	<< f2.\ff\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
+	<< f2.\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
 	r4 \grace {bes,16 bes} bes8 r r4
 	r4 \grace {f'16 f} f8 r r4
 	r4 \grace {f16 f} f8 r r4
@@ -245,7 +245,7 @@ musicTimpaniMvtIII = \relative c {
 	f:
 	<< f: {s4 s s8 s\!}>>
 % Bars 301 to 305
-	f2.:\ff
+	f2.:\f
 	f:
 	f:\f
 	f4\f r r
@@ -258,7 +258,7 @@ musicTimpaniMvtIII = \relative c {
 	f2.:16\p
 % Bars 311 to 315
 	<< f2.: {s4\> s s8 s\!}>>
-	f4 r r\fermata \mark \markAaBox
+	f4\pp r r\fermata \mark \markAaBox
 	R2.*21
 % Bars 316 to 320
 	
@@ -318,7 +318,7 @@ musicTimpaniMvtIII = \relative c {
 	R2.
 	<< f'2.\ff\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
 	R2.
-	<< f2.\ff\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
+	<< f2.\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
 	r4 \grace {bes,16 bes} bes8 r r4
 % Bars 391 to 395
 	r \grace {f'16 f} f8 r r4

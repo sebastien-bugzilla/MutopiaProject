@@ -321,7 +321,7 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	r4\ff ges'2\fz
+	r4 ges'2\fffzD
 	r4 des2->\fz
 	r4 ges2->\sfz
 	r4 des2->\fz

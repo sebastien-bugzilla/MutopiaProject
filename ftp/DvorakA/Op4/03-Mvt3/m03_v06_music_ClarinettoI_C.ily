@@ -302,7 +302,7 @@ musicClarinettoIMvtIII = \relative c {
 	r g( aes bes\< c des ees g bes)\!
 % Bars 266 to 270
 	c(\f bes aes g f ees! des! c bes!)}
-	ees2.\startTrillSpan
+	ees2.\ff\startTrillSpan
 	<< ees\startTrillSpan {s4 s s\stopTrillSpan }>> \mark \default
 	e!4-. r r
 	R2.*3
@@ -462,7 +462,7 @@ musicClarinettoIMvtIII = \relative c {
 	d4-> e2->
 	a,4(_\piup b c)
 	g8. g16 g2->
-	c4(\> b a
+	c4( b\> a
 % Bars 421 to 425
 	d8[ r16 d] d2)\!
 	e4.(\pp f8 g16[ a r16. d,32-.])
@@ -541,7 +541,7 @@ musicClarinettoIMvtIII = \relative c {
 	
 	d4.\f d8 d4
 	b r r
-	c-. b-.\>_\dimmarkup c-.
+	c-. b-.\> c-._\dimmarkup
 	b-.\! r r
 % Bars 491 to 495
 	g-.\p f-. e-.
