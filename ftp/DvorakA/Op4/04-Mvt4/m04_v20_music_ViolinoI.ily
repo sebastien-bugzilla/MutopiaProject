@@ -187,7 +187,7 @@ musicViolinoIMvtIV = \relative c {
 	e-> e e e dis-> dis dis e
 % Bars 166 to 170
 	e\ffz\< e e e  e[ e] \tuplet 5/4 4 {b16( cis dis e fis\!}
-	g8->)\ff g g f!  e e e d
+	g8->)\ffz g g f!  e e e d
 	e e e e  e[ e] e16( fis g a
 	b4->)\ff b8 b  b b b b
 	b-> b b b  c-> c c c
@@ -325,7 +325,7 @@ musicViolinoIMvtIV = \relative c {
 	g2 fis8[-. r16 g-.] c4-.
 % Bars 281 to 285
 	g2 fis8.-. g16-. c4-.
-	gis8.-. a16-. d4-. r2
+	gis8.-.\f a16-. d4-. r2
 	r gis,,8.-.\pp a16-. d4-.
 	fis,8.-. g!16-. c4-. r2
 	r fis,8.-. g16-. c4-.

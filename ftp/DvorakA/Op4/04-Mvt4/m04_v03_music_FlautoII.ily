@@ -58,7 +58,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 76 to 80
 	\mark \default
 	R1
-	aes1\pp(
+	aes1\pp(   % pp indication in conductor based on Fl I and fl II part score
 	c4) r r2
 	bes!1(
 % Bars 81 to 85
@@ -140,7 +140,7 @@ musicFlautoIIMvtIV = \relative c {
 	g2..-> g8
 	b2-> a4.-> a8-.
 % Bars 166 to 170
-	b2-> << g-> {s4\< s8 s\!}>> 
+	b2-> g-> 
 	e'4.-> d8-. c4-. b-.
 	c2.-> e,16( fis g a
 	b4->) fis-> e-> a->
@@ -342,7 +342,7 @@ musicFlautoIIMvtIV = \relative c {
 	gis~
 % Bars 341 to 345
 	gis~
-	gis4\pp r r2
+	gis4 r r2
 	R1*15
 	
 	

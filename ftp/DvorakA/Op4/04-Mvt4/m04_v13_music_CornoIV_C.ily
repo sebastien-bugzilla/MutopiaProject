@@ -244,7 +244,7 @@ musicCornoIVMvtIV = \relative c {
 	c4.\> c8 \tuplet 3/2 2 {c4 c c\!}
 % Bars 251 to 255
 	c1~
-	c~
+	c~\pp
 	c~
 	c~
 	c~ \mark \default

@@ -41,7 +41,7 @@ musicFagottoIMvtIV = \relative c {
 	b4-> b8_\crescmarkup b b4-> b8 b
 	c4-> c8 c c4-> c8 c
 	d4-> d8 d d4-> d8 d
-	\partCombineApart d4\ff ees2 f4~
+	\partCombineApart d4 ees2 f4~
 % Bars 36 to 40
 	f g2 a4 \partCombineAutomatic \mark \default
 	fis2.~ fis8 e-.
@@ -159,8 +159,8 @@ musicFagottoIMvtIV = \relative c {
 % Bars 131 to 135
 	<< f( {s4 s_\dimmarkup s2}>>
 	g1)
-	\partCombineApart e'2( f\<
-	cis\! d)
+	\partCombineApart e'2( f
+	cis d)
 	e( f)
 % Bars 136 to 140
 	<< des1 {s4 s s s}>>
@@ -294,7 +294,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 246 to 250
 	\partCombineApart d'1\f~
 	d2 bes
-	<< d1~ {s4 s\> s s}>>
+	<< d1~ {s4\f s\> s s}>>   % f and decresc. based on part score
 	<< d2 {s8 s s s\!}>> bes2 \partCombineAutomatic
 	f'2.\p f16( ees d c
 % Bars 251 to 255
@@ -339,7 +339,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 286 to 290
 	\partCombineApart \mmrPos #10 R1 \partCombineAutomatic
 	R
-	\partCombineApart r4 a,8( bes) f'( ees!) r4 \partCombineAutomatic
+	\partCombineApart r4 a,8(\< bes) f'( ees!)\! r4 \partCombineAutomatic
 	R1
 	r4 c\pp bes4. bes8
 % Bars 291 to 295
@@ -505,7 +505,7 @@ musicFagottoIMvtIV = \relative c {
 	f'4.\p f8 \tuplet 3/2 2 {f4( g aes)}
 	aes2( g4) r
 % Bars 426 to 430
-	g1\p
+	g1\f
 	fis2-> e4.-> b8
 	d1(~
 	d4 \clef bass b_\crescendo g e)

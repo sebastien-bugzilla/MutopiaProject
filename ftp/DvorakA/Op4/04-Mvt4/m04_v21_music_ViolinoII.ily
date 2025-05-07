@@ -165,7 +165,7 @@ musicViolinoIIMvtIV = \relative c {
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	<des, f>2:32\pp^\sulponticello q:
+	<des, f>2:32_\ppsempre^\sulponticello q:
 	q: q:
 	<f aes>4: <f bes>: <f aes>: f:
 	<des f>2: q:
@@ -415,7 +415,7 @@ musicViolinoIIMvtIV = \relative c {
 	q:_\semprepp q:
 	<gis, gis'>: q:
 	q: q:
-	<c! ees!>: q:
+	<c! ees!>:\pp q:
 % Bars 351 to 355
 	q: q:
 	<aes ges'>: q:

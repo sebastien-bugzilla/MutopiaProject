@@ -505,7 +505,7 @@ musicFagottoIIMvtIV = \relative c {
 	d''4.\p d8 \tuplet 3/2 2 {d4( ees! f)}
 	f2( ees!4) r
 % Bars 426 to 430
-	g1\p
+	g1\f
 	fis2-> e4.-> b8
 	d1(~
 	d4 \clef bass b_\crescendo g e)

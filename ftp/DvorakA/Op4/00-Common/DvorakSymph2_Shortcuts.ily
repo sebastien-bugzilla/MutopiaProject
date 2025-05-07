@@ -141,11 +141,18 @@ marcato = \markup {\italic {marcato}}
 marc = \markup {\italic {marc.}}
 pbracksecco = \markup {
 	\concat { 
-		\dynamic p 
+		\dynamic p \hspace #0.5
 		\bracket \with-true-dimensions \italic {secco}
 	}
 }
 fzmarc = \markup {\dynamic fz \italic {marc.}}
+ppfz = \markup {
+	\concat {
+		\hspace #-3 \dynamic pp \hspace #0.6 \dynamic fz
+	}
+}
+
+
 
 crescD = #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -168,6 +175,7 @@ pmoltoespressD = #(make-dynamic-script pmoltoespress)
 fpdimD = #(make-dynamic-script fpdim)
 fffzD = #(make-dynamic-script fffz)
 fbrackzD = #(make-dynamic-script fbrackz)
+ppfzD = #(make-dynamic-script ppfz)
 
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }

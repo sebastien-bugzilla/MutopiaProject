@@ -72,7 +72,7 @@ musicOboeIMvtIV = \relative c {
 	<< d2. {s4 s s_\crescmarkup}>> d16( e f g
 	a!2)\fz g4. f8
 	e2.\< e16( f g a)\!
-	bes2(\fz\< a4. g8)\!
+	bes2(\fz\< a4. g8)\!    % fz indication based on part score
 	f2.(\f\< g16 a bes c)\!
 % Bars 86 to 90
 	d2 c4. f,8(

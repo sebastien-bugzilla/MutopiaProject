@@ -428,7 +428,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	b4->\ff r r2
 % Bars 441 to 445
 	R1
-	r2 \tuplet 3/2 2 {b4->\ff\< b-> b->\!}
+	r2 \tuplet 3/2 2 {b4->\f\< b-> b->\!}
 	b'1->\fz
 	b,4-> r r2
 	R1

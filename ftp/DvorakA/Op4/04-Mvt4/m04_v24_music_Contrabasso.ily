@@ -63,7 +63,7 @@ musicContrabassoMvtIV = \relative c {
 	d4.\fz a8 d4.\fz a8
 	d4 r r2
 % Bars 46 to 50
-	d4 r d r8 a
+	d4\pp r d r8 a
 	d4 d'8( d,) d'( d,) r4
 	d r d r8 a
 	d4 d'8( d,) d'( d,) r4
@@ -458,7 +458,7 @@ musicContrabassoMvtIV = \relative c {
 	bes4 ees8( ees,) ees'( ees,) r bes'
 	bes4 ees8( ees,) ees'( ees,) r bes'
 	bes4 ees8( ees,) ees'( ees,) r bes'
-	bes4_\dimmarkup ees8( ees,) ees'( ees,) r bes'
+	bes4 ees8( ees,) ees'(_\dimmarkup ees,) r bes'
 % Bars 381 to 385
 	bes4 ees8( ees,) ees'(\> ees,) r bes'\!
 	bes4 ees8(\p ees,) ees'( ees,) r\> bes'

@@ -37,7 +37,7 @@ musicViolaMvtIV = \relative c {
 	<fis a>: <f bes>:
 	<g b>: << <g c>: {s4\< s s\!}>>
 	<c ees>2.:_\fzpocoapococresc q:
-	<g d'>: << <g c>: {s4\< s s\!}>>
+	<g d'>: << <g c>: {s4\< s s8 s\!}>>
 % Bars 26 to 30
 	<ges a!>2.:\fz q:
 	<f bes>: <bes d>:

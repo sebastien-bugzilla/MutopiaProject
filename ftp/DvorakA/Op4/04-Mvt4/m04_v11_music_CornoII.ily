@@ -16,7 +16,7 @@ musicCornoIIMvtIV = \relative c {
 	R1
 % Bars 6 to 10
 	b->\fp
-	<< r2 {s4 s\pp}>> b2\fz
+	r2 b\ppfzD
 	r b\fz
 	r b\fz
 	r b\fz

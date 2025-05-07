@@ -294,7 +294,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 246 to 250
 	d'1\f~
 	d2 bes
-	<< d1~ {s4 s\> s s}>>
+	<< d1~\f {s4 s\> s s}>>   % f and decresc. based on part score
 	<< d2 {s8 s s s\!}>> bes2
 	f'2.\p f16( ees d c
 % Bars 251 to 255
@@ -339,7 +339,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 286 to 290
 	R1
 	R
-	r4 a,8( bes) f'( ees!) r4
+	r4 a,8(\< bes) f'( ees!)\! r4
 	R1
 	r4 c\pp bes4. bes8
 % Bars 291 to 295
@@ -501,7 +501,7 @@ musicFagottoIMvtIV = \relative c {
 	f'4.\p f8 \tuplet 3/2 2 {f4( g aes)}
 	aes2( g4) r
 % Bars 426 to 430
-	g1\p
+	g1\f
 	fis2-> e4.-> b8
 	d1(~
 	d4 \clef bass b_\crescendo g e)
