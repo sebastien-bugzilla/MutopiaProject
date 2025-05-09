@@ -37,7 +37,7 @@
      22      90    1029 00-Common/DvorakSymph2_Format_PartVioloncello.ily
     321    2288   18891 00-Common/DvorakSymph2_Format_temp.ily
      34     289    2014 00-Common/DvorakSymph2_Header.ily
-     83     314    2919 00-Common/DvorakSymph2_LayoutConductors.ily
+     83     310    2915 00-Common/DvorakSymph2_LayoutConductors.ily
      72     258    2531 00-Common/DvorakSymph2_LayoutParts.ily
      95     375    3306 00-Common/DvorakSymph2_NameGrandStaff.ily
     546    1878   14286 00-Common/DvorakSymph2_NameStaff.ily
@@ -109,7 +109,7 @@
     188     977    4626 02-Mvt2/m02_v09_music_FagottoII.ily
     174     846    4432 02-Mvt2/m02_v10_music_CornoI_C.ily
     174     809    3792 02-Mvt2/m02_v10_music_CornoI.ily
-    174     627    2935 02-Mvt2/m02_v11_music_CornoII_C.ily
+    174     627    2929 02-Mvt2/m02_v11_music_CornoII_C.ily
     174     618    2907 02-Mvt2/m02_v11_music_CornoII.ily
     174     713    3741 02-Mvt2/m02_v12_music_CornoIII_C.ily
     174     679    3105 02-Mvt2/m02_v12_music_CornoIII.ily
@@ -121,7 +121,7 @@
     113     354    1739 02-Mvt2/m02_v15_music_TrombeII.ily
     147     564    2723 02-Mvt2/m02_v16_music_TrombonoI.ily
     147     564    2746 02-Mvt2/m02_v17_music_TrombonoII.ily
-    133     482    2345 02-Mvt2/m02_v18_music_TrombonoIII.ily
+    133     482    2343 02-Mvt2/m02_v18_music_TrombonoIII.ily
     129     491    2590 02-Mvt2/m02_v19_music_Timpani.ily
     193    1963    9262 02-Mvt2/m02_v20_music_ViolinoI.ily
     193    2433   10420 02-Mvt2/m02_v21_music_ViolinoII.ily
@@ -199,4 +199,4 @@
     724    4007   17555 04-Mvt4/m04_v22_music_Viola.ily
     709    3461   15373 04-Mvt4/m04_v23_music_Violoncello.ily
     729    3073   13760 04-Mvt4/m04_v24_music_Contrabasso.ily
-  88464  304581 1526524 total
+  88464  304577 1526512 total

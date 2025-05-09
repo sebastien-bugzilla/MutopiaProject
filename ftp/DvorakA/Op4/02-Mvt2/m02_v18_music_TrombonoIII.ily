@@ -121,7 +121,7 @@ musicTrombonoIIIMvtII = \relative c {
 	
 	d8\ff r d ees r ees c r c d r d
 	r4 r8 r r ges-. ees-. r ges-. ees-. r ges16-. r
-	e4.-^\ff a,-^ d,2.-^
+	e4.-^\ff a,-^ d,2.
 % Bars 146 to 150
 	g4\pp r8 r4 r8 g4 r8 r4 r8
 	g4 r8 r4 r8 g4 r8 r4 r8

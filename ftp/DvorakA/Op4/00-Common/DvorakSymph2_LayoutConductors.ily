@@ -74,10 +74,10 @@
 %		\override Script.transparent = ##t
 %		\override Tie.transparent = ##t
 
-%		\override Script.color = #red
-%		\override Script.font-size = #4
-%		\override MultiMeasureRestScript.color = #red
-%		\override MultiMeasureRestScript.font-size = #4
+		\override Script.color = #red
+		\override Script.font-size = #4
+		\override MultiMeasureRestScript.color = #red
+		\override MultiMeasureRestScript.font-size = #4
 	}
 }
 
