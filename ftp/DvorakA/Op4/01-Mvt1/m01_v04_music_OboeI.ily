@@ -560,7 +560,7 @@ musicOboeIMvtI = \relative c {
 	r4 cis,\brack\pp
 	r cis
 	r d
-	r d \mark \markVi
+	r d 
 	ees8-._\ppocoapococresc d16( ees ces8) r
 % Bars 501 to 505
 	e-. dis16( e c!8) r
@@ -597,7 +597,7 @@ musicOboeIMvtI = \relative c {
 	f4.-> e8
 % Bars 531 to 535
 	d-. a'-. a-. g-. 
-	f \tuplet 3/2 8 {e16( d cis} d8) r
+	f-. \tuplet 3/2 8 {e16( d cis} d8) r
 	d-. \tuplet 3/2 8 {c!16( bes a } bes8) r
 	bes-. \tuplet 3/2 8 {a16( g fis} g8) r
 	g'-. \tuplet 3/2 4 {f!16( ees! d} ees8) r

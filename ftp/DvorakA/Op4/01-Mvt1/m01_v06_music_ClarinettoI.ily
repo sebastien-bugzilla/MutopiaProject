@@ -450,7 +450,7 @@ musicClarinettoIMvtI = \relative c {
 	c'4..-> c16
 	c2\brack\fz->
 % Bars 386 to 390
-	bes4 c->
+	bes4-> c->
 	aes2->\brack\fz
 	f'8\f r r4
 	fis8 r r4 \mark #11
@@ -566,11 +566,11 @@ musicClarinettoIMvtI = \relative c {
 	r4 aes\brack\pp
 	r aes
 	r a!
-	r a \mark \markVi
+	r a 
 	r4 des,8-._\ppocoapococresc c16( des
 % Bars 501 to 505
 	fis8) r d!-. cis16( d
-	g8) r ees d16( ees
+	g8) r ees-. d16( ees
 	aes8) r e!-. dis16( e) \mark \default
 	\tuplet 3/2 4 {cis8(\brack\f b cis} b4)
 	\tuplet 3/2 4 {cis8( b cis} b4)
@@ -599,7 +599,7 @@ musicClarinettoIMvtI = \relative c {
 	
 	g,4.->\f fis8-.
 	e-. b'-. b-. a-.
-	g4.-> fis8->
+	g4.-> fis8
 % Bars 531 to 535
 	e-. b'-. b-. a-.
 	g-. r r4

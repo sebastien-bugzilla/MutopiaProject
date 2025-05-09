@@ -44,7 +44,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 46 to 50
 	
 % Bars 51 to 55
-	g8.\f d16 d8. g16
+	\dynEO #'(-2.5 . 2) g8.\f d16 d8. g16
 	g8 r r4
 	R2*2
 	
@@ -153,7 +153,7 @@ musicTrombeIMvtI = \relative c {
 		\mark \default
 		R2
 % Bars 201 to 205
-		c2->\brack\f
+		c2^>\brack\f
 		R
 		c->
 		R
@@ -165,7 +165,7 @@ musicTrombeIMvtI = \relative c {
 		c->\fz
 		R
 % Bars 211 to 215
-		c->\fz
+		\dynEO #'(-1.5 . 0.5) c->\fz
 		R
 		c\f
 		R
@@ -354,7 +354,7 @@ musicTrombeIMvtI = \relative c {
 	fis4 r
 	R2
 % Bars 456 to 460
-	f!2\ff~
+	f!2-\tweak X-offset #0.2 \ff~
 	f4 r
 	R2*2
 	
@@ -385,7 +385,7 @@ musicTrombeIMvtI = \relative c {
 	
 	
 	
-	\mark \markVi
+	
 	R2*4
 % Bars 501 to 505
 	
@@ -563,7 +563,7 @@ musicTrombeIMvtI = \relative c {
 	g~
 	g
 	g~
-	g4 g4->\fz~
+	g4 g4->-\tweak X-offset #0.5 \fz~
 % Bars 711 to 715
 	g2~
 	g4 g\fz~

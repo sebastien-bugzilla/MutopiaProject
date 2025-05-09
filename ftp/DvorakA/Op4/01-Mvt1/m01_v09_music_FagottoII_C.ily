@@ -146,7 +146,7 @@ musicFagottoIIMvtI = \relative c {
 		c
 		e'\ff~
 		e \clef tenor
-		\tuplet 3/2 4 {c'8\mf c c  c c c
+		\tuplet 3/2 4 {c'8-\tweak X-offset -2 \mf c c  c c c
 % Bars 116 to 120
 		c c c  c\> c c
 		c c c  c c c\!}
@@ -596,7 +596,7 @@ musicFagottoIIMvtI = \relative c {
 	r4 fis,\brack\pp
 	r fis
 	r g
-	r g \mark \markVi
+	r g
 	R2
 % Bars 501 to 505
 	aes,4\brack\p a~
@@ -662,7 +662,7 @@ musicFagottoIIMvtI = \relative c {
 	a8 r r4
 	R2
 % Bars 566 to 570
-	\tuplet 3/2 4 {c,8\mf c c  c\> c c
+	\tuplet 3/2 4 {c,8-\tweak X-offset -1.5 \mf c c  c\> c c
 	c c c  c c c\! } \mark \default
 	\grace {s8.} \tuplet 3/2 4 {c8\p c c  c\> c c
 	c c c  c c c\!
@@ -696,7 +696,7 @@ musicFagottoIIMvtI = \relative c {
 	c d8.\! f16-.
 	cis2\>
 	d8)\! r r4
-	c,2\p~
+	c,2~
 % Bars 596 to 600
 	c
 	c~

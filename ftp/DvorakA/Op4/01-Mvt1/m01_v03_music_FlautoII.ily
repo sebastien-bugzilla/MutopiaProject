@@ -539,7 +539,7 @@ musicFlautoIIMvtI = \relative c {
 	r4 a!
 	r a
 	r bes
-	r bes \mark \markVi
+	r bes 
 	R2*4
 % Bars 501 to 505
 	

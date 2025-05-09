@@ -23,7 +23,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 11 to 15
 	b~
 	b\!
-	g'\ff\fermata
+	\dynEO #'(-2 . 0.5) g'\ff\fermata
 	dis\pp~
 	dis~
 % Bars 16 to 20
@@ -65,10 +65,10 @@ musicCornoIIIMvtI = \relative c {
 	bes-. bes-. bes8.-> bes16-.
 % Bars 51 to 55
 	bes8 r r4
-	\tuplet 3/2 4 {bes8-!\ff d-! f-!} bes4->~
+	\tuplet 3/2 4 {\dynEO #'(-3.5 . 3) bes8-!\ff d-! f-!} bes4->~
 	bes f8 r
 	R2
-	cis'8.->\ff b16 b8.-> cis16
+	\dynEO #'(-0.5 . 0) cis'8.->\ff b16 b8.-> cis16
 % Bars 56 to 60
 	cis8 r r4
 	R2*2
@@ -98,24 +98,24 @@ musicCornoIIIMvtI = \relative c {
 		r8 cis,~->\f cis16.[ b32 gis16] r
 		r8 cis->~ cis16.[ b32 gis16] r
 		r8 f'!->~ f16.[ d32 b16] r
-		r8 \partCombineApart f'!~ f16.[ d32 g16] \partCombineAutomatic r
+		r8 \partCombineApart f'!->~ f16.[ d32 g16] \partCombineAutomatic r  % "->" according part score
 % Bars 91 to 95
 		b2\ff~
 		b4 r 
 		R2*2
 		
-		cis4\f r
+		\dynEO #'(0.5 . 0.5) cis4\f r
 % Bars 96 to 100
 		R2
 		cis4 r
 		R2
-		c!2~\ff
+		\dynEO #'(0.5 . 0.5) c!2~\ff
 		c4 r
 % Bars 101 to 105
 		R2*6
 % Bars 106 to 110
 		
-		f2\ff~
+		\dynEO #'(-1 . 0) f2\ff~
 		f~
 		f~
 		f \mark \default
@@ -306,15 +306,15 @@ musicCornoIIIMvtI = \relative c {
 	R2*2
 	
 % Bars 306 to 310
-	\partCombineApart e2(\p^\solo
+	\partCombineApart e2(_\p-\offset X-offset -5 ^\solo
 	fis4 e8 d)
 	cis2(
 	d4~ \tuplet 3/2 4 {d8 a b}
-	cis8) r e4(
+	cis8) r \shape #'((0 . -0.3)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur e4(
 % Bars 311 to 315
 	eis8[ fis e) r16 d-.]
 	cis2(
-	e8\> d a b\!
+	e8_\> d a b\!
 	cis) r r4 \partCombineAutomatic
 	R2*7
 % Bars 316 to 320
@@ -436,19 +436,19 @@ musicCornoIIIMvtI = \relative c {
 	R2*2
 % Bars 451 to 455
 	
-	cis4\f r
+	\dynEO #'(0.3 . 0.5) cis4\f r
 	R2
 	cis4 r
 	R2
 % Bars 456 to 460
-	c!2\ff~
+	c!2-\tweak X-offset #0.2 \ff~
 	c4 r
 	R2*6
 % Bars 461 to 465
 	
 	
 	
-	f2\ff~
+	\dynEO #'(-0.8 . 0) f2\ff~
 	f~
 % Bars 466 to 470
 	f~
@@ -460,10 +460,10 @@ musicCornoIIIMvtI = \relative c {
 	\mark \default
 	\grace {s8} e2\fz~
 	e
-	a,\fz~
+	\dynEO #'(-1.5 . 1) a,\fz~
 	a
 % Bars 476 to 480
-	e->\fp~
+	\dynEO #'(-1.5 . 1) e^>\fp~
 	e
 	R2*6
 % Bars 481 to 485
@@ -482,7 +482,7 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	
-	\mark \markVi
+	
 	R2*4
 % Bars 501 to 505
 	
@@ -591,7 +591,7 @@ musicCornoIIIMvtI = \relative c {
 	d'\fz\<~
 	<< d {s8 s s s\!}>> \mark \default
 % Bars 611 to 615
-	g,2->\ff
+	\dynEO #'(-0.5 . 0) g,2->\ff
 	g'4. d16 e
 	f4-> d->
 	f-> d->
@@ -612,7 +612,7 @@ musicCornoIIIMvtI = \relative c {
 	r d
 	r d
 	r d
-	d2\ff
+	\dynEO #'(-0.5 . 0) d2\ff
 	c!4. c8
 % Bars 631 to 635
 	b8 r d r16 d
@@ -663,7 +663,7 @@ musicCornoIIIMvtI = \relative c {
 	R2*3
 % Bars 686 to 690
 	
-	c2->\ff\<~
+	\aIIEO #'(-5 . -1) c2->\ff\<~
 	c8 c c c\!
 	b4 c8. b16
 	c4 c

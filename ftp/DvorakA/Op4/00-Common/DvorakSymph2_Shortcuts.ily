@@ -37,6 +37,7 @@ fpdim = \markup {\hspace #-0.67 \dynamic fp \normal-text \italic {dim.}}
 fpmarkup = \markup {\hspace #-0.67 \dynamic fp}
 
 fzpocoapococrescendo = \markup {\hspace #-0.5 \dynamic fz \italic {poco a poco crescendo}}
+fzpocoapococrescendoC = \markup {\hspace #-0.5 \dynamic fz \italic \vcenter \column { \vspace #-0.5 \lower #1 "poco a poco" "crescendo"}}
 fzdim = \markup {\hspace #-0.5 \dynamic fz \normal-text \italic {dim.}}
 fzmarkup = \markup {\hspace #-0.5 \dynamic fz}
 fzpocoapococresc = \markup {\hspace #-0.5 \dynamic fz \italic {poco a poco cresc.}}
@@ -129,62 +130,86 @@ fpespr = \markup {
 pespr = \markup {
 	\hspace #-0.05 \concat {\musicglyph "p" \musicglyph "scripts.espr" }
 }
+fbrackcresc = \markup {
+	\hspace #-0.5 \concat {
+		\dynamic f \hspace #0.3 \bracket \with-true-dimensions \italic "cresc."
+	}
+}
+pbrackpocoapococresc = \markup {\hspace #-0.05 \dynamic p \hspace #0.3 
+	\bracket \with-true-dimensions \italic {"poco a poco cresc."}
+}
+ffbrackconmoltosforza = \markup {\hspace #-0.51 \dynamic ff \hspace #0.3 
+	\bracket \with-true-dimensions \italic {"con molto sforza"}
+}
+ppbrackmorendo = \markup {\hspace #-0.78 \dynamic pp \hspace #0.3
+	\bracket \with-true-dimensions \italic {morendo}
+}
+fbrackfconmoltaforza = \markup { \concat { 
+		\fbrackf \hspace #0.3 \lower #0.5 \italic {"con molta forza"}
+	}
+}
 
-crescD = #(make-dynamic-script 
+crescD = \tweak DynamicText.self-alignment-X #-0.75 #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
 )
-dimD = #(make-dynamic-script 
+dimD = \tweak DynamicText.self-alignment-X #-0.70 #(make-dynamic-script 
 	(markup #:normal-text #:italic "dim.")
 )
-legatoD = #(make-dynamic-script 
+%crescD = #(make-dynamic-script 
+%	(markup #:normal-text #:italic "cresc.")
+%)
+%dimD = #(make-dynamic-script 
+%	(markup #:normal-text #:italic "dim.")
+%)
+legatoD = \tweak DynamicText.self-alignment-X #-0.77 #(make-dynamic-script 
 	(markup #:normal-text #:italic "legato")
 )
 fpp = #(make-dynamic-script "fpp")
-fzdimD = #(make-dynamic-script fzdim)
+fzdimD = \tweak DynamicText.self-alignment-X #-0.8 #(make-dynamic-script fzdim)
 piufD = #(make-dynamic-script piuf)
 ffz = #(make-dynamic-script "ffz")
-pdimD = #(make-dynamic-script pdim)
+pdimD = \tweak DynamicText.self-alignment-X #-0.8 #(make-dynamic-script pdim)
 fzpp = #(make-dynamic-script "fzpp")
 ffp = #(make-dynamic-script "ffp")
 fzp = #(make-dynamic-script "fzp")
-pmoltoespressD = #(make-dynamic-script pmoltoespress)
-fpdimD = #(make-dynamic-script fpdim)
-fffzD = #(make-dynamic-script fffz)
-fbrackzD = #(make-dynamic-script fbrackz)
-ppfzD = #(make-dynamic-script ppfz)
+pmoltoespressD = \tweak DynamicText.self-alignment-X #-0.8 #(make-dynamic-script pmoltoespress)
+fpdimD = \tweak DynamicText.self-alignment-X #-0.81 #(make-dynamic-script fpdim)
+fffzD = \tweak DynamicText.self-alignment-X #-0.28 #(make-dynamic-script fffz)
+fbrackzD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script fbrackz)
+ppfzD = \tweak DynamicText.self-alignment-X #-0.26 #(make-dynamic-script ppfz)
 
 
 
-crescmarkup = \markup {\italic {cresc.}}
-dimin = \markup {\italic {dimin.}}
-dimmarkup = \markup {\italic {dim.}}
-pocoapococresc = \markup {\italic {poco a poco cresc.}}
-calando = \markup {\italic {calando}}
-legato = \markup {\italic {legato}}
-solo = \markup {Solo}
-pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
-pizz = \markup {\italic {pizz.}}
 arco = \markup {\italic {arco}}
-trem = \markup {\italic {trem.}}
-morendo = \markup {\italic {morendo}}
-sempre = \markup {\italic {sempre}}
-trem = \markup {\italic {trem.}}
-crescendo = \markup {\italic {crescendo}}
+calando = \markup {\italic {calando}}
 conespr = \markup {\italic {con espr.}}
 conmoltaforza = \markup {\italic {con molta forza}}
-semprepianissimo = \markup {\italic {sempre pianissimo}}
 conmoltosforza = \markup {\italic {con molto sforza}}
-pococresc = \markup {\italic {poco cresc.}}
-moltocresc = \markup {\italic {molto cresc.}}
-conmoltaforza = \markup {\italic {con molta forza}}
-espressivo = \markup {\italic {espressivo}}
+crescendo = \markup {\italic {crescendo}}
+crescmarkup = \markup {\italic {cresc.}}
+dimin = \markup {\italic {dimin.}}
 diminuendo = \markup {\italic {diminuendo}}
-pocoapoco = \markup {\italic {poco a poco}}
+dimmarkup = \markup {\italic {dim.}}
 espr = \markup {\left-align \musicglyph "scripts.espr"}
-sulponticello = \markup {sul ponticello}
-spiccato = \markup {\italic {spiccato}}
-marcato = \markup {\italic {marcato}}
+espressivo = \markup {\italic {espressivo}}
+legato = \markup {\italic {legato}}
 marc = \markup {\italic {marc.}}
+marcato = \markup {\italic {marcato}}
+moltocresc = \markup {\italic {molto cresc.}}
+morendo = \markup {\italic {morendo}}
+pizz = \markup {\italic {pizz.}}
+pocoapoco = \markup {\italic {poco a poco}}
+pocoapococresc = \markup {\italic {poco a poco cresc.}}
+pocoapococrescC = \markup {\italic {\column { \lower #1 "poco a poco" "cresc."}}}
+pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
+pococresc = \markup {\italic {poco cresc.}}
+sempre = \markup {\italic {sempre}}
+semprepianissimo = \markup {\italic {sempre pianissimo}}
+solo = \markup {Solo}
+spiccato = \markup {\italic {spiccato}}
+sulponticello = \markup {sul ponticello}
+trem = \markup {\italic {trem.}}
+
 
 
 
@@ -332,6 +357,72 @@ OutCueContext = {
 
 aIIOmit = \once \omit Voice.CombineTextScript
 
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = #0.75
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+markEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TextScript.layer = #3
+		\once \override TextScript.extra-offset = #offset
+		\once \override TextScript.whiteout = #0.75
+		\once \override TextScript.whiteout-style = #'outline
+	#}
+)
+
+hairpinEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Hairpin.layer = #3
+		\once \override Hairpin.extra-offset = #offset
+		\once \override Hairpin.whiteout = #0.75
+		\once \override Hairpin.whiteout-style = #'outline
+	#}
+)
+
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
+
+aIIXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override CombineTextScript.X-offset = #offset
+	#}
+)
+
+aIIEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override CombineTextScript.layer = #3
+		\once \override CombineTextScript.extra-offset = #offset
+		\once \override CombineTextScript.whiteout = #0.75
+		\once \override CombineTextScript.whiteout-style = #'outline
+	#}
+)
+
+markWhiteout = {
+	\once \override Score.RehearsalMark.layer = #3
+	\once \override Score.RehearsalMark.whiteout = #0.75
+	\once \override Score.RehearsalMark.whiteout-style = #'outline
+}
+
+marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
 
 %#(define my-script-alist
 %	(
@@ -357,14 +448,6 @@ aIIOmit = \once \omit Voice.CombineTextScript
 %)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%aIIXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override CombineTextScript.X-offset = #offset
-%	#}
-%)
 
 %aIIExtraOffset = #(define-music-function
 %	(extraoffset)
@@ -432,51 +515,6 @@ aIIOmit = \once \omit Voice.CombineTextScript
 %		\once \override DynamicTextSpanner.bound-details.right.Y = #offset
 %	#}
 %)
-
-%dynEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override DynamicText.extra-offset = #offset
-%		\once \override DynamicText.whiteout = ##t
-%		\once \override DynamicText.whiteout-style = #'outline
-%	#}
-%)
-
-%hairpinShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.shorten-pair = #shortLength
-%	#}
-%)
-
-%hairpinEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.extra-offset = #offset
-%		\once \override Hairpin.whiteout = ##t
-%		\once \override Hairpin.whiteout-style = #'outline
-%	#}
-%)
-
-%markEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TextScript.layer = #3
-%		\once \override TextScript.extra-offset = #offset
-%		\once \override TextScript.whiteout = ##t
-%		\once \override TextScript.whiteout-style = #'outline
-%	#}
-%)
-
-%markWhiteout = {
-%	\once \override Score.RehearsalMark.layer = #3
-%	\once \override Score.RehearsalMark.whiteout = #0.75
-%	\once \override Score.RehearsalMark.whiteout-style = #'outline
-%}
 
 %mmrnDown = {
 %	\once \override MultiMeasureRestNumber.direction = #-1 

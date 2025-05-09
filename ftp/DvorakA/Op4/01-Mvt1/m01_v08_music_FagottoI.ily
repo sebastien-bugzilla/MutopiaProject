@@ -596,7 +596,7 @@ musicFagottoIMvtI = \relative c {
 	r4 a\brack\pp
 	r a
 	r bes
-	r bes \mark \markVi
+	r bes 
 	r ces8-._\ppocoapococresc bes16( ces
 % Bars 501 to 505
 	e8) r c!-. b16( c
@@ -640,8 +640,8 @@ musicFagottoIMvtI = \relative c {
 % Bars 546 to 550
 	r des8\p c16( des
 	ges8) r \clef tenor d!8-. cis16( d
-	g!8) r ees-. d16( ees
-	aes8) r e-. dis16( e) \clef bass
+	g!8) r ees-.\! d16( ees
+	aes8) r e-. dis16( e)\! \clef bass
 	\tuplet 3/2 4 {cis8(\ff b cis} b4)->
 % Bars 551 to 555
 	\tuplet 3/2 4 {cis8( b cis} b4->)

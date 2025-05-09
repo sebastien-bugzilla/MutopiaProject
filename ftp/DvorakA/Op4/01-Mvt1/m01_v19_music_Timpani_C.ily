@@ -111,9 +111,9 @@ musicTimpaniMvtI = \relative c {
 		f2\ff\startTrillSpan
 		f
 		f
-		<< f {s8 s s s\stopTrillSpan}>> \mark \default
+		<< f {s8 s s s}>> \mark \default
 % Bars 111 to 115
-		bes,8 r r4
+		bes,8\stopTrillSpan r r4
 		R2*11
 % Bars 116 to 120
 	

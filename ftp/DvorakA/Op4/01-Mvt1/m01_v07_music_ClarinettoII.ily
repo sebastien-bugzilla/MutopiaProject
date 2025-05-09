@@ -451,7 +451,7 @@ musicClarinettoIIMvtI = \relative c {
 	c'4..-> c16
 	c2\brack\fz->
 % Bars 386 to 390
-	bes4 c->
+	bes4-> c->
 	aes2->\brack\fz
 	c8\f r r4
 	c8 r r4 \mark #11
@@ -570,7 +570,7 @@ musicClarinettoIIMvtI = \relative c {
 	r4 aes\brack\pp
 	r aes
 	r a!
-	r a \mark \markVi
+	r a 
 	R2*4
 % Bars 501 to 505
 	
@@ -603,7 +603,7 @@ musicClarinettoIIMvtI = \relative c {
 	
 	g4.->\f fis8-.
 	e-. b'-. b-. a-.
-	g4.-> fis8->
+	g4.-> fis8
 % Bars 531 to 535
 	e-. b'-. b-. a-.
 	g-. r r4

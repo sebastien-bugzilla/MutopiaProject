@@ -385,7 +385,7 @@ musicTrombeIMvtI = \relative c {
 	
 	
 	
-	\mark \markVi
+	
 	R2*4
 % Bars 501 to 505
 	

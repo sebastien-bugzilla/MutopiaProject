@@ -98,7 +98,7 @@ musicCornoIIIMvtI = \relative c {
 		r8 cis,~->\f cis16.[ b32 gis16] r
 		r8 cis->~ cis16.[ b32 gis16] r
 		r8 f'!->~ f16.[ d32 b16] r
-		r8 f'!~ f16.[ d32 g16] r
+		r8 f'!->~ f16.[ d32 g16] r   % "->" according part score
 % Bars 91 to 95
 		b2\ff~
 		b4 r 
@@ -482,7 +482,7 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	
-	\mark \markVi
+	
 	R2*4
 % Bars 501 to 505
 	

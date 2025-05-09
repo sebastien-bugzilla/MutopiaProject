@@ -30,6 +30,7 @@
 		\override Footnote.annotation-line = ##f
 		\override Beam.damping = #3
 		\override Stem.length-fraction = #0.9
+		\override TextMark.font-size = #4
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
 		
@@ -44,6 +45,7 @@
 	\context {
 		\Staff
 		\RemoveEmptyStaves
+%		\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f
 %		\override MultiMeasureRest.space-increment = 0
@@ -71,6 +73,11 @@
 %		\override MultiMeasureRestNumber.transparent = ##t
 %		\override Script.transparent = ##t
 %		\override Tie.transparent = ##t
+
+%		\override Script.color = #red
+%		\override Script.font-size = #4
+%		\override MultiMeasureRestScript.color = #red
+%		\override MultiMeasureRestScript.font-size = #4
 	}
 }
 

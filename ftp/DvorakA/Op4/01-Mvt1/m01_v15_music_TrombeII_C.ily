@@ -24,7 +24,7 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	
-	r4 e_\fbrackf~
+	r4 e~
 % Bars 26 to 30
 	e2\fermata \mark \default
 	g\f~
@@ -354,7 +354,7 @@ musicTrombeIIMvtI = \relative c {
 	fis4 r
 	R2
 % Bars 456 to 460
-	b2\ff~
+	b2-\tweak X-offset #0.2 \ff~
 	b4 r
 	R2*2
 	
@@ -385,7 +385,7 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	
-	\mark \markVi
+	
 	R2*4
 % Bars 501 to 505
 	
@@ -563,7 +563,7 @@ musicTrombeIIMvtI = \relative c {
 	g~
 	g
 	g~
-	g4 g4->\fz~
+	g4 g4->-\tweak X-offset #0.5 \fz~
 % Bars 711 to 715
 	g2~
 	g4 g\fz~

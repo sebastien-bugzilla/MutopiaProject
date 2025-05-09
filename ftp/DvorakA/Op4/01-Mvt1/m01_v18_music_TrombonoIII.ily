@@ -380,7 +380,7 @@ musicTrombonoIIIMvtI = \relative c {
 	cis2~\pp
 	cis
 	d~
-	d \mark \markVi
+	d 
 	<< ees( {s4 s_\crescmarkup}>>
 % Bars 501 to 505
 	<< e2 {s4 s\< }>>

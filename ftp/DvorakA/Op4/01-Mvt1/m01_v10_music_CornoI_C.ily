@@ -23,7 +23,7 @@ musicCornoIMvtI = \relative c {
 % Bars 11 to 15
 	a~
 	a\!
-	f'\ff\fermata
+	f'-\tweak X-offset 0.1 \ff\fermata
 	cis\pp~
 	cis~
 % Bars 16 to 20
@@ -39,7 +39,7 @@ musicCornoIMvtI = \relative c {
 	cis~
 	cis
 % Bars 26 to 30
-	cis\ff\fermata \mark \default
+	\dynEO #'(0 . 0.5) cis-\tweak X-offset 0.3 \ff\fermata \mark \default
 	d4\f c!~
 	c8 r bes4~
 	bes8 r a4~
@@ -75,7 +75,7 @@ musicCornoIMvtI = \relative c {
 	
 	
 % Bars 56 to 60
-	\tuplet 3/2 4 {g,8\ff-! b-! d-!} g4~
+	\tuplet 3/2 4 {\dynEO #'(-3 . 4) g,8\ff-! b-! d-!} g4~
 	g d8 r
 	R2*5
 % Bars 61 to 65
@@ -88,10 +88,10 @@ musicCornoIMvtI = \relative c {
 		
 		
 		
-		g8.->\p g16-. g8.-. g16-.
+		\dynEO #'(-2 . 2) g8.->\p g16-. g8.-. g16-.
 % Bars 71 to 75
 		g8-. g-. r g-.
-		g8.-. g16-. g8-. g-. 
+		g8.-> g16-. g8-. g-. 
 		g-. g-. r g-.
 		g8.-> g16-. g8-. g-. 
 		R2*6
@@ -100,7 +100,7 @@ musicCornoIMvtI = \relative c {
 % Bars 81 to 85
 		\clef bass c,2\fz~
 		c \clef treble
-		r8 c'->\p~ c16.[ c32 c16] r
+		r8 c'->-\tweak X-offset #-1 \p~ c16.[ c32 c16] r
 		r8 c->~ c16.[ c32 c16] r
 		r8 c->~ c16.[ c32\< c16] r
 % Bars 86 to 90
@@ -127,14 +127,14 @@ musicCornoIMvtI = \relative c {
 		c4\f r
 % Bars 106 to 110
 		R2
-		ees2\ff~
+		\dynEO #'(0.5 . 1) ees2\ff~
 		ees~
 		ees~
 		ees \mark \default
 % Bars 111 to 115
 		d~
 		d
-		g,\f~
+		\dynEO #'(-1.5 . 0.5) g,\f~
 		g
 		\partCombineApart \tuplet 3/2 4 {d'8\mf d d  d d d
 % Bars 116 to 120
@@ -237,7 +237,7 @@ musicCornoIMvtI = \relative c {
 		a8 r a4->~
 		a8 r a4->
 % Bars 216 to 220
-		\tuplet 3/2 4 {b!8\ff b b  b b b
+		\tuplet 3/2 4 {\dynEO #'(-1 . 0) b!8\ff b b  b b b
 		b b b  b b b
 		b b b  b b b
 		b b b  b b b
@@ -320,7 +320,7 @@ musicCornoIMvtI = \relative c {
 % Bars 281 to 285
 	
 % Bars 286 to 290
-	\partCombineApart bes2\p\<
+	\partCombineApart << bes2 {s4\p s\<}>>
 	b!8([ c\! bes r16 aes)]\>
 	<< g2 {s4 s\!}>>
 	bes8( aes ees f)
@@ -340,7 +340,7 @@ musicCornoIMvtI = \relative c {
 	<< d~ {s8\> s s s\!}>>
 	d2
 % Bars 306 to 310
-	g,\pp~
+	\dynEO #'(-2.8 . 2.3) g,\pp~
 	g~
 	g~
 	g~
@@ -359,7 +359,7 @@ musicCornoIMvtI = \relative c {
 	g~
 % Bars 321 to 325
 	g
-	f\pp~
+	\dynEO #'(-1 . 0.5) f\pp~
 	f~
 	f~
 	f
@@ -404,7 +404,7 @@ musicCornoIMvtI = \relative c {
 	des2->
 	bes8\f r r4
 	b!8 r r4 \mark #11
-	\partCombineApart << c2~ {s8\fp\> s s s\!}>>
+	\partCombineApart << c2~ { \hairpinShorten #'(0 . -2) s8\fp\> s s s\!}>>
 % Bars 391 to 395
 	c2 \clef bass \partCombineAutomatic
 	c,,~
@@ -488,7 +488,7 @@ musicCornoIMvtI = \relative c {
 % Bars 476 to 480
 	d,2->\mf
 	e4-> f->
-	g2_\pocoapococrescendo
+	g2-\tweak X-offset #-0.5 _\pocoapococrescendo
 	a4->\< bes->
 	\tuplet 3/2 4 {d8\f d d  d d d
 % Bars 481 to 485
@@ -504,12 +504,12 @@ musicCornoIMvtI = \relative c {
 	
 	
 	
-	\partCombineApart \tuplet 3/2 4 {r8 ees,(\pp c')} c4~
+	\partCombineApart \tuplet 3/2 4 {r8 ees,(-\offset X-offset -1.5 \pp c')} c4~
 % Bars 496 to 500
 	c8 r r4 \partCombineAutomatic
 	R2*3
 	
-	\mark \markVi
+	
 	R2*4
 % Bars 501 to 505
 	
@@ -544,7 +544,7 @@ musicCornoIMvtI = \relative c {
 % Bars 526 to 530
 	e~
 	e
-	\tuplet 3/2 4 {e8\f e e  e e e
+	\tuplet 3/2 4 {\dynEO #'(-2 . 2) e8\f e e  e e e
 	e e e  e e e
 	e e e  e e e
 % Bars 531 to 535
@@ -668,7 +668,7 @@ musicCornoIMvtI = \relative c {
 	r4 \partCombineApart c4->~
 	c2
 	\once \partCombineAutomatic R2
-	d2\p( \mark \default
+	\shape #'((0 . -1)(0 . -0.5)(0 . 0)(0 . 0)) Slur d2\p( \mark \default
 	e4 f8. c16)
 % Bars 656 to 660
 	c2\pp\>~
@@ -729,7 +729,7 @@ musicCornoIMvtI = \relative c {
 	c->
 	c->
 	c~
-	c4 d->(
+	c4 d(
 % Bars 711 to 715
 	f) e8. c16
 	e4 f~

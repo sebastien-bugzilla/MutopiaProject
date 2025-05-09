@@ -23,7 +23,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 11 to 15
 	d~
 	d\!
-	e\fermata\ff
+	\dynEO #'(0.5 . 0.5) e\fermata\ff
 	fis\pp~
 	fis~
 % Bars 16 to 20
@@ -95,9 +95,9 @@ musicOboeIIMvtI = \relative c {
 % Bars 81 to 85
 		bes2\f\>
 		a(\!
-		f8) r r f\p~
+		f8) r r f-\offset X-offset 1 \p~
 		f16.[ f32 f16] r r8 f~
-		f16.[ f32 f16]_\crescmarkup r r8 f~
+		f16.[ f32 f16]-\offset X-offset 0.5 _\crescmarkup r r8 f~
 % Bars 86 to 90
 		f16.[ f32 f16] r r8 f
 		aes16.\ff[ aes32 aes16] r r8 aes8~
@@ -423,8 +423,8 @@ musicOboeIIMvtI = \relative c {
 	e8 r r4 \mark #11
 	R2
 % Bars 391 to 395
-	f,2~\fp\<
-	<< f~ {s8 s s s\!}>>
+	<< f,2~\fp {s8 s\< s s}>>
+	<< f2~ {s8 s s s\!}>>
 	f2
 	f'8-.\f g16( f) \tuplet 3/2 4 {f,8( e f)}
 	f'8-. g16( f f,8) r
@@ -472,7 +472,7 @@ musicOboeIIMvtI = \relative c {
 	r8 g->~ g16.[ g32 g16]\! r
 	bes2(\fz\>
 	<< a! {s8  s s s\!}>> \mark \default
-	f8) r r f\p~
+	f8) r r f-\offset X-offset 0.5 \p~
 % Bars 441 to 445
 	f16.[\< f32 f16] r r8 f~
 	f16.[ f32 f16] r r8 f~
@@ -538,10 +538,10 @@ musicOboeIIMvtI = \relative c {
 	
 	R2
 % Bars 496 to 500
-	r4 cis,\brack\pp
+	r4 cis,-\tweak X-offset 0.5 \brack\pp
 	r cis
 	r d
-	r d \mark \markVi
+	r d
 	R2*4
 % Bars 501 to 505
 	
@@ -578,7 +578,7 @@ musicOboeIIMvtI = \relative c {
 	f4.-> e8
 % Bars 531 to 535
 	d-. a'-. a-. g-. 
-	f \tuplet 3/2 8 {e16( d cis} d8) r
+	f-. \tuplet 3/2 8 {e16( d cis} d8) r
 	d-. \tuplet 3/2 8 {c!16( bes a } bes8) r
 	bes-. \tuplet 3/2 8 {a16( g fis} g8) r
 	g'-. \tuplet 3/2 4 {f!16( ees! d} ees8) r
@@ -619,7 +619,7 @@ musicOboeIIMvtI = \relative c {
 	f8 r r4
 	R2
 % Bars 566 to 570
-	\tuplet 3/2 4 {c8\mf c c  c\> c c
+	\tuplet 3/2 4 {c8-\tweak X-offset -1.5 \mf c c  c\> c c
 	c c c  c c c\! } \mark \default
 	\grace {s8.} \tuplet 3/2 4 { c8\p c c  c\> c c
 	c c c  c c c\!

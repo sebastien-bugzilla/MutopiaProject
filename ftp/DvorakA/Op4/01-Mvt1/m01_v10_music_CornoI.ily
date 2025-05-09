@@ -91,7 +91,7 @@ musicCornoIMvtI = \relative c {
 		g8.->\p g16-. g8.-. g16-.
 % Bars 71 to 75
 		g8-. g-. r g-.
-		g8.-. g16-. g8-. g-. 
+		g8.-> g16-. g8-. g-. 
 		g-. g-. r g-.
 		g8.-> g16-. g8-. g-. 
 		R2*6
@@ -509,7 +509,7 @@ musicCornoIMvtI = \relative c {
 	c8 r r4
 	R2*3
 	
-	\mark \markVi
+	
 	R2*4
 % Bars 501 to 505
 	

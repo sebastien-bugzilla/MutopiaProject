@@ -92,7 +92,7 @@ nameStaffXIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column { \lower #1 "Trombone" "basso" }
 	}
-	\set Staff.shortInstrumentName = "Tb.III."
+	\set Staff.shortInstrumentName = "Tb.III"
 	\set Staff.midiInstrument = #""
 }
 nameStaffXIIMvtI = {

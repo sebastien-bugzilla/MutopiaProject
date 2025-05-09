@@ -596,7 +596,7 @@ musicFagottoIIMvtI = \relative c {
 	r4 fis,\brack\pp
 	r fis
 	r g
-	r g \mark \markVi
+	r g 
 	R2
 % Bars 501 to 505
 	aes,4\brack\p a~

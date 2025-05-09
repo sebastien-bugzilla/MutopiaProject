@@ -590,7 +590,7 @@ musicContrabassoMvtI = \relative c {
 	f4( ges)
 	f\( ges(
 	fis) g!\)
-	fis( g~_\pocoapococresc \mark \markVi
+	fis( g~_\pocoapococresc 
 	g8) g aes4~
 % Bars 501 to 505
 	aes8 aes a4\<~

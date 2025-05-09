@@ -98,7 +98,7 @@ musicCornoIVMvtI = \relative c {
 		r8 cis~->\f cis16.[ b32 gis16] r
 		r8 cis->~ cis16.[ b32 gis16] r
 		r8 f'!->~ f16.[ d32 b16] r
-		r8 f'!~ f16.[ d32 b16] r
+		r8 f'!->~ f16.[ d32 b16] r   % "->" according part score
 % Bars 91 to 95
 		gis'2\ff~
 		gis4 r 
@@ -124,7 +124,7 @@ musicCornoIVMvtI = \relative c {
 		a
 		cis\f~
 		cis
-		\tuplet 3/2 4 {e,8\mf e e  e e e
+		\tuplet 3/2 4 {e,8-\tweak X-offset -2 \mf e e  e e e
 % Bars 116 to 120
 		e e e  e\> e e
 		e e e  e e e\! }
@@ -139,7 +139,7 @@ musicCornoIVMvtI = \relative c {
 		
 % Bars 126 to 130
 		
-		d2\pp~
+		d2-\offset X-offset 1.4 \pp~
 		d~
 		d~
 		d
@@ -448,7 +448,7 @@ musicCornoIVMvtI = \relative c {
 	cis4 r
 	R2
 % Bars 456 to 460
-	a'2\ff~
+	a'2-\tweak X-offset #0.2 \ff~
 	a4 r
 	R2*6
 % Bars 461 to 465
@@ -489,7 +489,7 @@ musicCornoIVMvtI = \relative c {
 	
 	
 	
-	\mark \markVi
+	
 	R2*4
 % Bars 501 to 505
 	
