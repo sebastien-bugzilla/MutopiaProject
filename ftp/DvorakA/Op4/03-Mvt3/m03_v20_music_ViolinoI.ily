@@ -117,7 +117,7 @@ musicViolinoIMvtIII = \relative c {
 	f16(\< g f g f8) bes-. a-. g-.
 	g4( f) bes,8. f'16\!
 % Bars 91 to 95
-	f16(\mf\< g f g f8-.) bes-. a-. g-.\!
+	f16(\mf\< g f g f8) bes-. a-. g-.\!
 	g4(\f f) bes,8.( c'16)
 	c4->(\fz bes) ees,8.( g16)
 	g4(->\fz f) bes,8.( c'16)
@@ -535,7 +535,7 @@ musicViolinoIMvtIII = \relative c {
 % Bars 441 to 445
 	
 % Bars 446 to 450
-	f4.(\mf g8 a16[ bes r16. f32)]
+	f4.(\mf g8 a16[ bes r16. f32-.)]
 	f4( g ees)
 	d4.(\< f8 bes d)\!
 	d2->(_\crescmarkup c4)

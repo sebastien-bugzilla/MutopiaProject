@@ -212,7 +212,7 @@ musicOboeIIMvtIV = \relative c {
 	ces8-.\p r r4 bes8-. r r4
 	ces8-. r r4 g8-. r r4
 % Bars 221 to 225
-	aes8-. r r4 bes8-. r r4
+	aes8 r r4 bes8 r r4
 	ees8 r r4 bes8 r r4
 	R1*2
 	
@@ -335,11 +335,11 @@ musicOboeIIMvtIV = \relative c {
 	g~
 	g~
 	g
-	\tuplet 3/2 2 {b,4\fp b b b b b
-	b b b b b b 
+	\tuplet 3/2 2 {b,4\fp-. b-. b-. b-. b-. b-. 
+	b-. b-. b-. b-. b-. b-. 
 % Bars 336 to 340
-	b b b b b b 
-	b b b b b b } \mark \default
+	b-. b-. b-. b-. b-. b-. 
+	b-. b-. b-. b-. b-. b-. } \mark \default
 	e1\f~
 	e~
 	e~
@@ -442,10 +442,10 @@ musicOboeIIMvtIV = \relative c {
 	e2-> d->
 	fis, b4.-> a8-.
 % Bars 436 to 440
-	a'2~ a8 e( g8. fis16-.)
-	fis2~ fis8 a,( e'8. d16-.)
-	d2~ d8 fis,( b8. a16-.)
-	a2~ a8 cis,( e8. d16-.) \mark \default
+	a'2~ a8[ e( g8. fis16-.)]
+	fis2~ fis8[ a,( e'8. d16-.)]
+	d2~ d8[ fis,( b8. a16-.)]
+	a2~ a8[ cis,( e8. d16-.)] \mark \default
 	b'4\f fis b4.-> cis8-.
 % Bars 441 to 445
 	dis4.-> e8-. fis4.-> g8-.

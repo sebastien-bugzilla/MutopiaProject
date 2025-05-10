@@ -109,7 +109,7 @@ musicFagottoIMvtIV = \relative c {
 	\partCombineApart g4-> f-> e-> d-> \partCombineAutomatic
 	c'2-> bes->
 % Bars 91 to 95
-	\partCombineApart f \tuplet 3/2 2 {f4-. f-. f-.} \partCombineAutomatic
+	\partCombineApart f \tuplet 3/2 2 {f4-.( f-. f-.)} \partCombineAutomatic
 	c'2( d4) r
 	bes-> d-> c-> bes->
 	a2-> g->
@@ -167,7 +167,7 @@ musicFagottoIMvtIV = \relative c {
 	bes2 << bes->~ {s4 s}>>
 	<< bes1~ {s4 s s s}>>
 	bes1~
-	<< bes {s4 s s s}>> \partCombineAutomatic
+	<< bes-> {s4 s s s}>> \partCombineAutomatic
 % Bars 141 to 145
 	des1\pp
 	c2( bes4. f8

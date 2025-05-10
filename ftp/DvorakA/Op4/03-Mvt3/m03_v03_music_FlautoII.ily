@@ -231,7 +231,7 @@ musicFlautoIIMvtIII = \relative c {
 		\tuplet 3/2 4 {g8(\pp a b)} fis8-. fis-. g4->
 		\tuplet 3/2 4 {g8(\<_\crescmarkup g b)} fis8-. fis-. g4->\!
 		\tuplet 3/2 4 {a8(\< b c)} gis-. gis-. a4->\!
-		\tuplet 3/2 4 {a8( b c)} gis-. gis-. a4-> 
+		\tuplet 3/2 4 {a8( b c)} gis-. gis-. a4
 % Bars 211 to 215
 		f4.\f g8-. a16[( bes) r16. e,32]
 		e4( f) d8-. d-.

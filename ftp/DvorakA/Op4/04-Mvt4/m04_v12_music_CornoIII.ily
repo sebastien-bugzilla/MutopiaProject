@@ -388,7 +388,7 @@ musicCornoIIIMvtIV = \relative c {
 	cis2\brack\f-> cis->
 	cis1->
 	d4.-> a8-. a4-. a-.
-	a2. a4
+	a2. a4-.
 % Bars 416 to 420
 	b2->\brack\f e->
 	d1->

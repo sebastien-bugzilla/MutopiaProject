@@ -74,7 +74,7 @@ musicFlautoIIMvtIV = \relative c {
 	a4->\f a-> a-> a->
 	a2-> bes->
 % Bars 91 to 95
-	a-> \tuplet 3/2 2 {a4(-. bes-. c-.)}
+	a \tuplet 3/2 2 {a4(-. bes-. c-.)}
 	c2( bes4) r
 	bes-> bes-> c-> bes->
 	a2-> c->
@@ -433,10 +433,10 @@ musicFlautoIIMvtIV = \relative c {
 	e2-> d->
 	fis, b4.-> a8-.
 % Bars 436 to 440
-	a2~ a8 e( g8. fis16-.)
-	fis2~ fis8 a,( e'8. d16-.)
-	d2~ d8 fis,( b8. a16-.)
-	a2~ a8 cis,( e8. d16-.) \mark \default
+	a2~ a8[ e( g8. fis16-.)]
+	fis2~ fis8[ a,( e'8. d16-.)]
+	d2~ d8[ fis,( b8. a16-.)]
+	a2~ a8[ cis,( e8. d16-.)] \mark \default
 	b'4\f fis b4.-> cis8-.
 % Bars 441 to 445
 	dis4.-> e8-. fis4.-> g8-.
@@ -543,7 +543,7 @@ musicFlautoIIMvtIV = \relative c {
 	bes~
 % Bars 531 to 535
 	bes2 \tuplet 3/2 2 {bes4-> bes-> bes->}
-	f'1\fz~
+	f'1->\fz~
 	f
 	aes,!->~
 	aes2 \tuplet 3/2 2 {aes4-> aes-> aes->}

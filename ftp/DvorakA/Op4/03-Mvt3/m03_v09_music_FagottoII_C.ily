@@ -224,7 +224,7 @@ musicFagottoIIMvtIII = \relative c {
 		\tuplet 3/2 4 {g8(\pp a b)} fis-. fis-. g4->
 		\tuplet 3/2 4 {g8(\< a b)} fis-. fis-. g4->\!
 		\tuplet 3/2 4 {a8(\< b c!)} gis!-. gis-. a4->\!
-		\tuplet 3/2 4 {a8( b c!)} gis-. gis-. a4->
+		\tuplet 3/2 4 {a8( b c!)} gis-. gis-. a4
 % Bars 211 to 215
 		f,8-.\f e-. f-. d-. f-. c-. 
 		f-. e-. f-. d'-. f,-. c'-. 

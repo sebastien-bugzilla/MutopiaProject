@@ -231,7 +231,7 @@ musicFlautoIMvtIII = \relative c {
 		\tuplet 3/2 4 {b8(\pp c d)} a8-. a-. b4->
 		\tuplet 3/2 4 {b8(\<_\crescmarkup c d)} a8-. a-. b4->\!
 		\tuplet 3/2 4 {c8(\< d e)} b-. b-. c4->\!
-		\tuplet 3/2 4 {c8( d e)} b-. b-. c4-> 
+		\tuplet 3/2 4 {c8( d e)} b-. b-. c4
 % Bars 211 to 215
 		a4.\f bes8-. c16[( d) r16. g,32]
 		g4( a) bes8-. bes-.
@@ -367,7 +367,7 @@ musicFlautoIMvtIII = \relative c {
 	f\fermata
 	d4(_\piuf f g
 % Bars 336 to 340
-	bes8)[ r16 bes-.] bes2->
+	bes8-.)[ r16 bes-.] bes2->
 	g4( bes\< c\!
 	d8-.)[ r16 d-.] d2->(
 	c4\< d ees)\!

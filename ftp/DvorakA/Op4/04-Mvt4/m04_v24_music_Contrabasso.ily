@@ -217,7 +217,7 @@ musicContrabassoMvtIV = \relative c {
 	a a a a  a a a a
 	a a a a  a'-> a a, a
 	a a a a  a a a a 
-	a a a a  d'-> d a, a
+	a a a a  d'-> d a, a   % d-> => d on sixth eighth based on cello part
 	a a a a  a a a a 
 % Bars 181 to 185
 	a a a a  fis'' fis a,, a
@@ -336,7 +336,7 @@ musicContrabassoMvtIV = \relative c {
 % Bars 276 to 280
 	e2.~ e8 b
 	dis2.~ dis8 b
-	e2\ff e'4-. e,
+	e2\ff e'4-. e,-.
 	e2 e'4-. e,-.
 	ees!2 ees'4-. ees,-.
 % Bars 281 to 285
@@ -573,7 +573,7 @@ musicContrabassoMvtIV = \relative c {
 	e'2\ff-^~ e8 bis( dis-> cis)
 	cis2~ cis8 gis( b-> ais)
 	ais2~ ais8 e( gis-> fis)
-	fis2~ fis8 cis( e-> dis)
+	fis2->~ fis8 cis( e-> dis)
 	ees4-> ees ees-> ees
 % Bars 481 to 485
 	ees-> ees ees-> ees

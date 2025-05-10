@@ -608,7 +608,7 @@ musicViolaMvtIII = \relative c {
 	d-> cis-> d->
 	ees-> d-> ees->
 	c-> b-> c->
-	bes!-> a-> bes
+	bes!-> a-> bes->
 % Bars 471 to 475
 	g-> fis-> g->
 	c-> b-> c->

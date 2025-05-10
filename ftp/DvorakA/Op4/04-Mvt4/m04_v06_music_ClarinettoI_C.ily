@@ -487,7 +487,7 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 416 to 420
 	fis2-> fis->
 	d2. \partCombineApart \tuplet 5/4 4 {fis,16( gis ais b cis)} \partCombineAutomatic
-	d4.\fz c!8 b4-. a!-.
+	d4.\fz c!8-. b4-. a!-.
 	b2.-> b16(\f\< c cis d)\!
 	dis4->\ff dis-> dis-> dis->
 % Bars 421 to 425
@@ -509,10 +509,10 @@ musicClarinettoIMvtIV = \relative c {
 	b~
 	b
 % Bars 436 to 440
-	b'2^~ b8 fis( a8. gis16)-.
-	gis2~ gis8 b,( fis'8. e16-.)
-	e2~ e8 gis,8( cis8. b16-.)
-	b2~ b8 dis( fis8. e16-.) \mark \default
+	b'2^~ b8[ fis( a8. gis16)-.]
+	gis2~ gis8[ b,( fis'8. e16-.)]
+	e2~ e8[ gis,8( cis8. b16-.)]
+	b2~ b8[ dis( fis8. e16-.)] \mark \default
 	cis4\f gis cis4.-> dis8-.
 % Bars 441 to 445
 	eis4.-> fis8-. gis4.-> a8-.

@@ -487,7 +487,7 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 416 to 420
 	fis2-> fis->
 	d2. \tuplet 5/4 4 {fis,16(\< gis ais b cis)\!}
-	d4.\fz c!8 b4-. a!-.
+	d4.\fz c!8-. b4-. a!-.
 	b2.-> b16(\f\< c cis d)\!
 	dis4->\ff dis-> dis-> dis->
 % Bars 421 to 425

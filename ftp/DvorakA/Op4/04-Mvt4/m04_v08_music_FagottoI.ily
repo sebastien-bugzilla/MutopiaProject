@@ -109,7 +109,7 @@ musicFagottoIMvtIV = \relative c {
 	g4->\f f-> e-> d->
 	c'2-> bes->
 % Bars 91 to 95
-	f \tuplet 3/2 2 {f4-. f-. f-.}
+	f \tuplet 3/2 2 {f4-.( f-. f-.)}
 	c'2( d4) r
 	bes-> d-> c-> bes->
 	a2-> g->
@@ -163,7 +163,7 @@ musicFagottoIMvtIV = \relative c {
 	cis\fz d\>)
 	e(\! f)\<
 % Bars 136 to 140
-	<< des1\fz\> {s4 s s s\!}>>
+	<< des1->\fz\> {s4 s s s\!}>>
 	bes2\< << bes->~ {s4 s\!}>>
 	<< bes1~\> {s4 s s s\!}>>
 	bes1~\p\>

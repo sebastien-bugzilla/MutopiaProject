@@ -388,7 +388,7 @@ musicCornoIIIMvtIV = \relative c {
 	\partCombineApart cis2\brack\f-> cis->
 	cis1->
 	d4.-> a8-. a4-. a-. 
-	a2. a4 \partCombineAutomatic
+	a2. a4-. \partCombineAutomatic
 % Bars 416 to 420
 	b2->\brack\f e->
 	d1->

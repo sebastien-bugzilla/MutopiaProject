@@ -125,11 +125,11 @@ musicTrombonoIIIMvtIV = \relative c {
 	f'4 bes bes,-. r8 bes-.
 	f'4 bes bes,-. r8 bes-.
 	f'4 bes bes,-. r8 bes-.
-	f'4 bes bes,-. r8 bes-.
+	f'4 bes bes, r8 bes
 % Bars 126 to 130
-	f'4 bes bes,-. r8 bes-.
-	f'4 bes bes,-. r8 bes-.
-	f'4 bes bes,-. r8 bes-.
+	f'4 bes bes, r8 bes
+	f'4 bes bes, r8 bes
+	f'4 bes bes, r8 bes
 	bes4 r r2
 	bes1\fp~
 % Bars 131 to 135
@@ -353,14 +353,14 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 371 to 375
 	r g r aes \mark \default
 	bes-.\f ees,-. ees,-. r8 bes'
-	bes4-. ees-. ees,-. r8 bes'-.
-	bes4-. ees-. ees,-. r8 bes'-.
-	bes4-. ees-. ees,-. r8 bes'-.
+	bes4-. ees-. ees,-. r8 bes'
+	bes4-. ees-. ees,-. r8 bes'
+	bes4-. ees-. ees,-. r8 bes'
 % Bars 376 to 380
-	bes4-. ees-. ees,-. r8 bes'-.
-	bes4-. ees-. ees,-. r8 bes'-.
-	bes4-. ees-. ees,-. r8 bes'-.
-	bes4-. ees-. ees,-. r8 bes'-.
+	bes4-. ees-. ees,-. r8 bes'
+	bes4-. ees-. ees,-. r8 bes'
+	bes4-. ees-. ees,-. r8 bes'
+	bes4-. ees-. ees,-. r8 bes'
 	ees r r4 r2
 % Bars 381 to 385
 	<< ees1\fp~ {s2 s4\> s}>>

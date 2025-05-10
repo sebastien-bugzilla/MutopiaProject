@@ -262,7 +262,7 @@ musicViolinoIIMvtIII = \relative c {
 		c'(\< e, c' e, c' e, c' e, c'\!
 		e, c' e, c' e, c' e, c' e,)}
 % Bars 211 to 215
-		f4.\ff( g8) a16([ bes r16. e,32)]
+		f4.\ff( g8) a16([ bes r16. e,32-.)]
 		e4( f) d8-.( d-.)
 		e4-. <c f>2->
 		d\brack\fz d8. c16

@@ -164,7 +164,7 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 166 to 170
 	b-> r r2
 	e4 r c-> b->
-	c2 r
+	c2-> r
 	b4-> b-> b-> b->
 	g2-> e->
 % Bars 171 to 175

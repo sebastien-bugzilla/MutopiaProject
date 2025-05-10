@@ -473,7 +473,7 @@ musicTrombonoIMvtIV = \relative c {
 	d->\f
 	d->\f
 % Bars 471 to 475
-	d4.( e8 eis4 fis)
+	d4.(-> e8 eis4 fis)
 	g\f r r2
 	R1
 	ees,!2\f-> g!4-> bes!->

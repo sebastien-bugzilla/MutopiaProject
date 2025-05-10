@@ -168,10 +168,10 @@ musicViolinoIMvtIV = \relative c {
 	bes2(\fpp\> aes)\!
 	c,( f4.-> ees8-.)
 % Bars 151 to 155
-	ees2\p~ ees8 bes( des8.-> c16-.)
-	c2~ c8 ees,( bes'8.-> aes16)
-	aes2\>~ aes8 c,( f8.-> ees16)
-	ees2~ ees8\! g,!( bes8.-> aes16)
+	ees2\p~ ees8[ bes( des8.-> c16-.)]
+	c2~ c8[ ees,( bes'8.-> aes16)]
+	aes2\>~ aes8[ c,( f8.-> ees16)]
+	ees2~ ees8[\! g,!( bes8.-> aes16)]
 	aes2->\pp aes4. aes8
 % Bars 156 to 160
 	aes'2->\fp\>(~ aes8 ges f ees)\!

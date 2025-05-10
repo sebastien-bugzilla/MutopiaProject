@@ -125,7 +125,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 126 to 130
 	f-. d2->\prall( c4)
 	f-. d2\prall( ees4-.)
-	e1\fz
+	e1\fz->
 	f\f(~
 	f4\< e\! g4.\> f8)\!
 % Bars 131 to 135
@@ -222,7 +222,7 @@ musicOboeIMvtIV = \relative c {
 	ees8-.\p r r4 d!8-. r r4
 	ees8-. r r4 bes8-. r r4
 % Bars 221 to 225
-	ces8-. r r4 g'8-. r r4
+	ces8 r r4 g'8 r r4
 	ces8 r r4 g8 r r4
 	R1*2
 	
@@ -349,11 +349,11 @@ musicOboeIMvtIV = \relative c {
 	bes~
 	bes~
 	bes
-	\tuplet 3/2 2 {e,4\fp e e e e e
-	e e e e e e
+	\tuplet 3/2 2 {e,4\fp-. e-. e-. e-. e-. e-. 
+	e-. e-. e-. e-. e-. e-. 
 % Bars 336 to 340
-	e e e e e e
-	e e e e e e} \mark \default
+	e-. e-. e-. e-. e-. e-. 
+	e-. e-. e-. e-. e-. e-. } \mark \default
 	gis1\f~
 	gis~
 	gis~

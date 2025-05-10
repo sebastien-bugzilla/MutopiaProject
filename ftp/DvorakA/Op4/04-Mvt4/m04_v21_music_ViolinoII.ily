@@ -112,7 +112,7 @@ musicViolinoIIMvtIV = \relative c {
 	cis4-._\piuf-> d->-. e-.-> f-.->
 	<a, e'>2-> <d g>->
 % Bars 91 to 95
-	<f, c'>4. q8 \tuplet 3/2 2 {<f c'>4-.( <f d'>-. <f ees'>-.)}
+	<f, c'>4. q8 \tuplet 3/2 2 {<f c'>4-.( <f d'>-. <f ees'!>-.)}
 	<f ees'>2 <f d'>4. q8
 	d'4-. g-. fis-. g-.
 	a2-> c->
@@ -538,7 +538,7 @@ musicViolinoIIMvtIV = \relative c {
 	e, e c'-> c  c c d e
 % Bars 456 to 460
 	e, e c'-> c  c c d e
-	e, e c'-> c  c c d e
+	e, e c'-> c  c-. c-. d-. e-.
 	f-> f f f e-> e e e
 	d-> d d d g-> g g f
 	f f f f a-> a a g

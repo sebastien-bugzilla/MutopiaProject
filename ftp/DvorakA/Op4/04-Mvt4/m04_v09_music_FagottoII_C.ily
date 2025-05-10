@@ -109,7 +109,7 @@ musicFagottoIIMvtIV = \relative c {
 	g'4->\f f-> e-> d->
 	c2-> bes->
 % Bars 91 to 95
-	f' \tuplet 3/2 2 {f4-. f-. f-.}
+	f' \tuplet 3/2 2 {f4-.( f-. f-.)}
 	f2( bes4) r
 	g-> bes-> a-> g->
 	f2-> ees->
