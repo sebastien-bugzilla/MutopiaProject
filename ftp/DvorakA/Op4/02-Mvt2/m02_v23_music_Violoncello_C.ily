@@ -27,7 +27,7 @@ musicVioloncelloMvtII = \relative c {
 	c4.(\<  << ees {s8 s s\!}>> fis4.\> << c) {s8 s s\!}>>
 	bes4.(\p a g\< f!4 f'8)\!
 % Bars 16 to 20
-	bes4.(\p\< ees) d( a'4_\fzmarkup g8)\!
+	bes4.(\p\< ees) d( \markEO #'(0 . 2) a'4_\fzmarkup g8)\!
 	f2.~\fz\> f8 ees( d c4 g8)\!
 	bes4\pp(~ bes16. c32-.) bes4._\crescmarkup~ bes4\< bes8( c4 d8)\! \clef tenor
 	ees4.\< c'4(~ c16.\! bes32-.) bes4.\f\>~ bes4 e,8\!
@@ -76,7 +76,7 @@ musicVioloncelloMvtII = \relative c {
 	f4\fz(~ f16 f-.) f4(~ f16 f-.) fes4_\dimmarkup(~ fes16 fes-.) fes'4(~ fes16 fes-.)
 % Bars 56 to 60
 	ees4\p(~ ees16 ees-.) des4\>(~ des16 des-.) c4(~ c16 c-.) d4(~ d16 d-.)\!
-	ees8\pp ees16\<^\pizz aes ees aes r8 ees16 a ees a\! r8 f16 bes f bes r8 des16\> ees, des' ees,\!
+	ees8\pp \markEO #'(0 . -0.3) ees16\<^\pizz aes ees aes r8 ees16 a ees a\! r8 f16 bes f bes r8 des16\> ees, des' ees,\!
 	r8 c'16 ees, c' ees, r8 c'16_\dimmarkup ees, c' ees, r8 ges16\> ees ges ees r8 f16 bes f bes\! \mark \default
 	ees,4\pp r8 r4 r8 r2.
 	r ees,8(\pp^\arco bes' ees g bes ees)
@@ -90,8 +90,8 @@ musicVioloncelloMvtII = \relative c {
 	r4 r8 fis,16(-. fis-. b-. b-. d-. d)-. r4 r8 \clef tenor fis16(-. fis-. b-. b-. d-. d)-.  \clef bass
 	r4 r8 g,,,16(-. g-. b-. b-. d-. d)-. r4 r8 g16(-. g-. b-. b-. d-. d)-. 
 	r4 r8 g,16-. g(-. b)-. b(-. d)-. d-. r4 r8 \clef tenor g16-. g(-. b)-. b(-. d)-. d-. \clef bass
-	r4 r8 gis,,,32_\pppocoapococrescendo gis gis \liiiri gis \liriii gis'-> gis gis \liiiri gis \liriii gis, gis gis gis a4. bes32 bes bes \liiiri bes  \liriii bes'-> bes bes \liiiri bes  \liriii bes, bes bes bes
-	c4. cis32 cis cis \liiiri cis \liriii cis'-> cis cis \liiiri cis \liriii cis, cis cis cis d4. ees!32 ees ees \liiiri ees \liriii ees'!-> ees ees \liiiri ees \liriii ees, ees ees ees
+	r4 r8 gis,,,8:32_\pppocoapococrescendo gis':-> gis,: a4. bes8:32 bes':-> bes,:
+	c4. cis8:32 cis':->  cis,: d4. ees!8:32 ees'!:-> ees,: 
 % Bars 71 to 75
 	f4.\mf\< fis8( fis,-> fis') << g4. {s8 s s\!}>> aes( aes,-> aes')
 	bes4.:32\f bes,8: bes': bes,: bes'4.:_\conmoltaforza bes,8: bes': bes,: \mark \default
@@ -108,8 +108,8 @@ musicVioloncelloMvtII = \relative c {
 	c,8-.\pp d-. ees!-. f-.\< g-. a-. << bes2. {s8 s s  s s s\!}>>
 	ees,8-._\crescmarkup f-. g-. aes-. bes-. c-. d2.~\mf\>
 	d4\p r8 r4 r32 cis,,( d d') d4\>_\dimmarkup r8 r4 r32 cis,(\pp d d')
-	d4 r8 r4 r32 cis,(\pp d d') d4 r8 r4 r32 cis,( d d')
-	ees8\brack\p-. aes-._\pocoapococresc g-. f-. ees-. d-. ees-. ces'-. bes-. aes-. g-. f-.
+	d4 r8 r4 r32 cis,(-\offset X-offset -1 \pp d d') d4 r8 r4 r32 cis,( d d')
+	ees8_\brackppocoapococresc-. aes-. g-. f-. ees-. d-. ees-. ces'-. bes-. aes-. g-. f-.
 % Bars 86 to 90
 	e\mf\<-. bes'-. aes-. g-. f-. e-. f-. des'-. c!-. bes-. aes-. g\!-. 
 	fis\f\<-. c'-. bes-. a!-. g-. fis-. g-. ees'-. d-. c-. bes-. a\!-. 
@@ -138,11 +138,11 @@ musicVioloncelloMvtII = \relative c {
 	f4.(\pp aes b2.)
 	c4.(\< ees)\! fis,->(\> << c') {s8 s s\!}>>
 	bes4.(\p a\<_\pococresc g f!)\!
-	bes'4.(\< ees) << d( {s8 s s\!}>> a'4\f\> g8)\!
+	\clef tenor bes'4.(\< ees) << d( {s8 s s\!}>> a'4\f\> g8)\!
 	<< f2.~\p {s4. s8 s4_\dimmarkup}>> f8 ees( d c4\pp g8)
 % Bars 111 to 115
-	bes4(~ bes16. c32) bes4.~_\crescmarkup bes4 bes8( c4 d8) \clef tenor
-	ees4. c'4(~\f\< c16. bes32)-. << bes4.~ {s8 s s\!}>> bes4\> e,8\!(
+	bes4(~ bes16. c32) bes4.~_\crescmarkup bes4 bes8( c4 d8) 
+	\clef treble ees4. c'4(~\f\< c16. bes32)-. << bes4.~ {s8 s s\!}>> bes4\> e,8\!( \clef tenor
 	f4.)\p d4(\< c8) g'4( f8)\! bes4( ges16 bes,)
 	d2.\> g!4( f8 ees d c)\! \clef bass
 	d4.(\p\> bes4 f8)\! aes4.(\pp g8 ees c)
@@ -157,12 +157,12 @@ musicVioloncelloMvtII = \relative c {
 	f,1.\pp
 	f,
 	R1. \mark \default
-	fis'16\pp^\pizz fis ais ais cis cis r4 r8 fis,,16 fis ais ais cis cis r4 r8
+	fis'16\pp-\offset X-offset -1 ^\pizz fis ais ais cis cis r4 r8 fis,,16 fis ais ais cis cis r4 r8
 % Bars 126 to 130
 	a'!16 a cis cis e e r4 r8 a,,16 a cis cis e e  r4 r8
 	c'!16 c e e g g r4 r8 c,,16 c e e g g r4 r8
 	ees!16\ppp ees bes' bes r8 ees,16 ees bes' bes r8 ees,,16 ees bes' bes r8 ees,16 ees bes' bes r8
-	r2. g'8\ff^\arco-> d-> g-> d-> g-> d->
+	r2. g'8\ff-\offset X-offset -5 ^\arco-> d-> g-> d-> g-> d->
 	R1.
 % Bars 131 to 135
 	r4 r8 << d'2. {s8\fz\> s s  s s s\!}>> r4 r8
@@ -175,7 +175,7 @@ musicVioloncelloMvtII = \relative c {
 	g\< f e\! << ees) {s8\> s s\!}>>
 	d4.(\pp d'~ d~ d8) r r
 	cis\ff r r r4 r8 d8 r r r4 r8 \mark \default
-	r2. ees8-.\pp d-. c-. <<{d16(-.^\div c-. bes8-. a-.)} \\ {bes16-.( a-. g8-. d-.)}>>
+	r2. ees8-.\pp d-. c-. <<{d16(-.-\offset X-offset -3 ^\div c-. bes8-. a-.)} \\ {bes16-.( a-. g8-. d-.)}>>
 % Bars 141 to 145
 	r4 r8 <<{a'8-.( bes-. c-.) d16(-. c-. bes8-. a-.)} \\ {fis8(-.\pp g-. a-.) bes16(-. a-. g8-. d-.)}>> r4 r8
 	<<{d'16(-. c-. bes8-. a-.)} \\ {bes16(-. a-. g8-. d-.)}>> r4 r8 <<{d'16(-. c-. bes8-. a-.)} \\ {bes16(-. a-. g8-. d-.)}>> r4 r8

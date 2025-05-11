@@ -91,7 +91,7 @@ musicCornoIVMvtII = \relative c {
 % Bars 81 to 85
 	d,2.(\pp\< e4. << c) {s8 s s\!} >>
 	a'2.(\mf g4.\> f\!)
-	<< e1.~ {s4.\pdimD\> s s s8 s s\!}>>
+	<< e1.~ {s4.\pdimD\> s s s8 s s}>>
 	e2.\pp~ e4 r8 r4 r8
 	R1.*3
 % Bars 86 to 90
@@ -123,7 +123,7 @@ musicCornoIVMvtII = \relative c {
 	R1.*4
 % Bars 111 to 115
 	<< c,1.\pp~ {s4. s\< s s}>>
-	\stemUp \omitBeam c8 c c~  \omitBeam c c c~\!  \omitBeam c c c~  \omitBeam c\> c c\!
+	\stemUp \omitBeam \beamOffset #'(1.5 . 1.5) c8 c c~  \omitBeam \beamOffset #'(1.5 . 1.5) c c c~\!  \omitBeam \beamOffset #'(1.5 . 1.5) c c c~  \omitBeam \beamOffset #'(1.5 . 1.5) c\> c c\!
 	\stemDown g'4.~ g8 r r r2.
 	R1.*4
 	

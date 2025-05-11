@@ -148,6 +148,12 @@ fbrackfconmoltaforza = \markup { \concat {
 		\fbrackf \hspace #0.3 \lower #0.5 \italic {"con molta forza"}
 	}
 }
+brackppocoapococresc = \markup { \concat {
+	\hspace #-0.05 \bracket \with-true-dimensions \dynamic p 
+	\hspace #0.9 \italic {"poco a poco cresc."}}
+}
+
+
 
 crescD = \tweak DynamicText.self-alignment-X #-0.75 #(make-dynamic-script 
 	(markup #:normal-text #:italic "cresc.")
@@ -155,12 +161,6 @@ crescD = \tweak DynamicText.self-alignment-X #-0.75 #(make-dynamic-script
 dimD = \tweak DynamicText.self-alignment-X #-0.70 #(make-dynamic-script 
 	(markup #:normal-text #:italic "dim.")
 )
-%crescD = #(make-dynamic-script 
-%	(markup #:normal-text #:italic "cresc.")
-%)
-%dimD = #(make-dynamic-script 
-%	(markup #:normal-text #:italic "dim.")
-%)
 legatoD = \tweak DynamicText.self-alignment-X #-0.77 #(make-dynamic-script 
 	(markup #:normal-text #:italic "legato")
 )
@@ -172,7 +172,7 @@ pdimD = \tweak DynamicText.self-alignment-X #-0.8 #(make-dynamic-script pdim)
 fzpp = #(make-dynamic-script "fzpp")
 ffp = #(make-dynamic-script "ffp")
 fzp = #(make-dynamic-script "fzp")
-pmoltoespressD = \tweak DynamicText.self-alignment-X #-0.8 #(make-dynamic-script pmoltoespress)
+pmoltoespressD = \tweak DynamicText.self-alignment-X #-0.91 #(make-dynamic-script pmoltoespress)
 fpdimD = \tweak DynamicText.self-alignment-X #-0.81 #(make-dynamic-script fpdim)
 fffzD = \tweak DynamicText.self-alignment-X #-0.28 #(make-dynamic-script fffz)
 fbrackzD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script fbrackz)
@@ -180,6 +180,7 @@ ppfzD = \tweak DynamicText.self-alignment-X #-0.26 #(make-dynamic-script ppfz)
 
 
 
+adue = \markup {\bold "a2"}
 arco = \markup {\italic {arco}}
 calando = \markup {\italic {calando}}
 conespr = \markup {\italic {con espr.}}
@@ -240,7 +241,11 @@ markBbBox = \markup { \box \bold "Bb" }
 markCcBox = \markup { \box \bold "Cc" }
 markDdBox = \markup { \box \bold "Dd" }
 
-adue = \markup {\bold "a2"}
+timpaniingd = \markup {
+	\center-column { 
+		\lower #1 "Timp. in" "G/D"
+	}
+}
 
 %%%%%%%%%%%
 % functions
@@ -423,6 +428,16 @@ markWhiteout = {
 }
 
 marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
+
+changeStaffName = #(define-music-function
+	(staffName)
+	(markup?)
+	#{
+		\set Staff.shortInstrumentName = #staffName
+	#}
+)
+
+
 
 %#(define my-script-alist
 %	(

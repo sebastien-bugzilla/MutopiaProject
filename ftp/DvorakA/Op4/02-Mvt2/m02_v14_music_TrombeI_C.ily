@@ -46,7 +46,7 @@ musicTrombeIMvtII = \relative c {
 	
 % Bars 71 to 75
 	
-	g4.\f r4 r8 g4. r4 r8 \mark \default
+	\dynEO #'(-2.3 . 2.5) g4.\f r4 r8 g4. r4 r8 \mark \default
 	r4 r8 r4\fermata r8 r2.
 	R1.*14
 % Bars 76 to 80
@@ -86,14 +86,14 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	r2. b8->\ff b-> b-> b-> b-> b->
+	r2. \dynEO #'(-2.5 . 1.5) b8->\ff b-> b-> b-> b-> b->
 	R1.*5
 % Bars 131 to 135
 	
 	
 	
 	
-	g8\ff r r r4 r8 r2.
+	\dynEO #'(-2.5 . 1) g8\ff r r r4 r8 r2.
 % Bars 136 to 140
 	R1.*3
 	

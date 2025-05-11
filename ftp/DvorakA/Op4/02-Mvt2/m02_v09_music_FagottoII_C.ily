@@ -130,7 +130,7 @@ musicFagottoIIMvtII = \relative c {
 	
 	
 % Bars 106 to 110
-	f4.(\pp aes << b2.)\< {s4. s8 s s\!}>>
+	\dynEO #'(-2.5 . 2) f4.(\pp aes << b2.)\< {s4. s8 s s\!}>>
 	c4.(\> ees\! fis, c')
 	bes4.(\< a g f!)\!
 	d'(\< << c {s8 s s\!}>> bes4.\> << a) {s8 s s\!}>>
@@ -178,7 +178,7 @@ musicFagottoIIMvtII = \relative c {
 	r4 r8 r r ges,16. ees32 ees16 r r8 ges16. ees32 ees16 r r8 ges16. e32
 	e4.->\ff a-> d,2.-^\fz
 % Bars 146 to 150
-	g8\p r r r4 r8 r2.
+	g8-\offset X-offset 0.5 \p r r r4 r8 r2.
 	R1.
 	g'4.(\p fis g fis)
 	g( fis << g2. {s8\< s s  s s s\!}>>

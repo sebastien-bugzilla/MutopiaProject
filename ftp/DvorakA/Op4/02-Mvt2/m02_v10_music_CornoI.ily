@@ -98,7 +98,7 @@ musicCornoIMvtII = \relative c {
 	
 	
 	c1.\ff \mark \default
-	r8 des\p\> des~  des des des~  des\! des\pp des~  des des des~
+	r8 des\p\> des~  des des des~  des des\pp des~  des des des~
 	des des des~  des des des~  des des des~  des des des
 % Bars 91 to 95
 	ees,1.~

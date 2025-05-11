@@ -13,7 +13,7 @@ musicCornoIIIMvtII = \relative c {
 	r4 r8 \partCombineApart d2.~ d4 \partCombineAutomatic r8
 	r4 r8 \partCombineApart c2.~ c4 \partCombineAutomatic r8
 	r4 r8 \partCombineApart b2.~ b4 \partCombineAutomatic r8
-	\partCombineApart r4 r8 f'4.(\mf e~ e4) r8 \partCombineAutomatic
+	\partCombineApart r4 r8 \dynEO #'(-1 . -1.5) f'4.(\mf e~ e4) r8 \partCombineAutomatic
 % Bars 6 to 10
 	r4 r8 \partCombineApart d4.( g~ g4) \partCombineAutomatic r8
 	r4 r8 f2.\p\>~ f4\! r8
@@ -75,10 +75,10 @@ musicCornoIIIMvtII = \relative c {
 	
 	
 	
-	\partCombineApart r2. c\fz \partCombineAutomatic
+	\partCombineApart r2. c-\offset X-offset -1 \fz \partCombineAutomatic
 % Bars 71 to 75
 	e16\mf e e e e e  e e\< e e e e  << c4.:16 {s8 s s\!}>> d4.:16
-	c1.\f( \mark \default
+	\dynEO #'(-2 . 1.5) c1.\f( \mark \default
 	b8) r r r4\fermata r8 r2.
 	R1.*5
 	
@@ -91,7 +91,7 @@ musicCornoIIIMvtII = \relative c {
 % Bars 81 to 85
 	d,2.(\pp\< e4. << c) {s8 s s\!} >>
 	a'2.(\mf g4.\> f\!)
-	<< e1.~ {s4.\pdimD\> s s s8 s s\!}>>
+	<< e1.~ {s4.\pdimD\> s s s8 s s}>>
 	e2.\pp~ e4 r8 r4 r8
 	R1.*3
 % Bars 86 to 90
@@ -130,7 +130,7 @@ musicCornoIIIMvtII = \relative c {
 % Bars 116 to 120
 	
 	
-	\partCombineApart r8 f\pp f~  f f f~  f f f~  f f f~
+	\partCombineApart r8 f-\offset X-offset -1.5 \pp f~  f f f~  f f f~  f f f~
 	f f f~  f f f~  f f f~  f f f
 	g,1.~
 % Bars 121 to 125
@@ -143,7 +143,7 @@ musicCornoIIIMvtII = \relative c {
 	
 	
 	\partCombineApart r4 r8 ees'4.(~\p ees8 b!8. c16 c4.) \partCombineAutomatic
-	r2. c8->\ff b-> c-> b-> c-> b->
+	r2. \dynEO #'(-1 . 0) c8->\ff b-> c-> b-> c-> b->
 	r4 r8 e(\pp-> e-> e->) r2.
 % Bars 131 to 135
 	r4 r8 e2.\pp~ e4 r8

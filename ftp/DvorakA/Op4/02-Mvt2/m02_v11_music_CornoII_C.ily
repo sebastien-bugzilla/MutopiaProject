@@ -9,7 +9,7 @@ musicCornoIIMvtII = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	r4 r8 a'2.\pp~ a4 r8
+	r4 r8 \dynEO #'(-2.5 . 1.5) a'2.\pp~ a4 r8
 	r4 r8 bes'2.\pp~ bes4 r8
 	r4 r8 bes2.\pp\<~ bes4\! r8
 	r4 r8 e,2.\<~ e4\! r8
@@ -18,7 +18,7 @@ musicCornoIIMvtII = \relative c {
 	r4 r8 g4.(\> a~ a4)\! r8
 	r4 r8 bes2.\p\>~ bes4\! r8
 	r4 r8 e,2.\pp~ e4 r8
-	d4.(\pp g) f( bes~
+	\dynEO #'(-2.5 . 1) d4.(\pp g) f( bes~
 	bes\< a) << { g(\! d'~ } {s8 s s\> s s s\!}>> 
 % Bars 11 to 15
 	d8)\pp r r r4 r8 r2.
@@ -35,7 +35,7 @@ musicCornoIIMvtII = \relative c {
 	
 	\mark \default
 	c8\p c~ c  c~ c c~  c c~ c  c~ c c
-	c,,1.\fp
+	\dynEO #'(-3 . 2.5) c,,1.\fp
 	c'8\p\< c c  c c c\!  c c\> c   c c c\!
 % Bars 26 to 30
 	R1.*3
@@ -55,7 +55,7 @@ musicCornoIIMvtII = \relative c {
 	R1.*2
 	
 	r4 r8 g4.\pp r2.
-	r4 r8 g,4.\pp g g
+	r4 r8 \dynEO #'(-2.5 . 3) g,4.\pp g g
 	c8 r r r4 r8 r2.
 % Bars 46 to 50
 	R1.*2
@@ -105,7 +105,7 @@ musicCornoIIMvtII = \relative c {
 	R
 	R
 	R
-	<< c,2. {s8\p\< s s  s s s\!}>> des2.~
+	<< c,2. {s8-\offset X-offset 0.5 \p\< s s  s s s\!}>> des2.~
 % Bars 96 to 100
 	des4 r8 r4 r8 r2.
 	R1.
@@ -131,7 +131,7 @@ musicCornoIIMvtII = \relative c {
 	c,8\p c c~  c c c~  c c c~  c c c
 	r4 r8 \clef bass c,,2.\p~ c4.~
 	c8 r r r4 r8 r2. \clef treble
-	c''1.\pp~
+	\dynEO #'(-2.5 . 1) c''1.\pp~
 	c8 r r r4 r8 r2.
 % Bars 121 to 125
 	R1.*4
@@ -143,7 +143,7 @@ musicCornoIIMvtII = \relative c {
 	
 	
 	
-	r2. a'8->\ff a-> a->   a-> a-> a->
+	r2. \dynEO #'(-1 . 0) a'8->\ff a-> a->   a-> a-> a->
 	R1.
 % Bars 131 to 135
 	r4 r8 a2.\pp~ a4 r8
@@ -162,7 +162,7 @@ musicCornoIIMvtII = \relative c {
 	
 	g8\f g16 g g8 f f16 f f8 bes bes16 bes bes8 a a16 a a8
 	r4 r8  r r g16. bes!32 bes16 r r8 g16. bes32 bes16 r r8 g16. b32
-	b4.\ff~ b8 r r cis4.~ cis8 r r
+	b4.-\tweak X-offset 0.5 \ff~ b8 r r cis4.~ cis8 r r
 % Bars 146 to 150
 	d8 r r r4 r8 r2.
 	R1.*2

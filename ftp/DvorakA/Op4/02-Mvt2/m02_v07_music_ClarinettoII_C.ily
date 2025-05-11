@@ -9,7 +9,7 @@ musicClarinettoIIMvtII = \relative c {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	c'2.\pp~ c
+	\dynEO #'(-2.5 . 1.5) c'2.\pp~ c
 	d~ d
 	<< f~ {s4. s_\crescmarkup}>> f2.
 	R1.*5
@@ -18,7 +18,7 @@ musicClarinettoIIMvtII = \relative c {
 	
 	
 	
-	c4.\p( gis a gis4.)
+	\shape #'((0 . 1)(0 . 0.5)(0 . 0)(0 . 0)) Slur \dynEO #'(-1.5 . 1.5) c4.\p( gis a gis4.)
 	a2.~ a4. a
 % Bars 11 to 15
 	d\pp bes2.~\< bes4.\!
@@ -31,19 +31,19 @@ musicClarinettoIIMvtII = \relative c {
 	e2.(\fz\> d4. a)\!
 	g'\pp( dis e~ e)
 	<< {c2. c\f } {s4.\< s\! s\> s4 s8\!}>>
-	e4.( d c dis)\fz
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e4.( d c dis)\fz
 % Bars 21 to 25
 	e2.(\p d4. d8 c b!)
 	<< {e2.( e4. f} {s4.\< s8 s s\! s4.\> s\!}>> \mark \default
 	e8) r r e'4.\pp r4 r8 dis4.
-	r4 r8 << b2.\fz\> {s4.\> s4 s8\!}>> r4 r8
+	r4 r8 << b2.-\offset X-offset 0.5 \fz\> {s4.\> s4 s8\!}>> r4 r8
 	R1.
 % Bars 26 to 30
 	f2.~\p\> f4\! r8 r4 r8
 	d'2.(\pp c)
 	b( a4.~ a8 g16 a b8)
 	e,8 e e  e e e  e e e  e e e
-	f2.\p~ f4.~ f8 r r
+	f2.-\offset X-offset 0.5 \p~ f4.~ f8 r r
 % Bars 31 to 35
 	R1.*2
 	
@@ -77,8 +77,8 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 56 to 60
 	f4.(\p d4 c8) g'4( f8 bes4 ges16\> bes,\!)
 	d!2.(\p\< g!4\! f8\> ees d c)\!
-	d4.(\p bes4 f8) aes4.( g8 ees c') \mark \default
-	f2.(\p e!)
+	d4.(\p bes4 f8) \shape #'((0 . 0.5)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur aes4.( \beamOffset #'(0.5 . 0.5) g8 ees c') \mark \default
+	\dynEO #'(0.6 . 1.2) f2.(\p e!)
 	ees~ ees~
 % Bars 61 to 65
 	ees4 r8 r4 r8 r2.
@@ -91,9 +91,9 @@ musicClarinettoIIMvtII = \relative c {
 	e)\pp
 	e2.(~ e4.~ e16 b cis g a e)
 	<< d2.(~ {s4. s }>> d4. e)
-	<< { b'2.( c) } {s4. s\< s s8 s s\!} >>
+	<< { b'2.( c) } {s4. s s s8 s s} >>
 % Bars 71 to 75
-	c16\mf c c c c c  c\< c c c c c c4.:16\! d:
+	c16\mf c c c c c  c\< c c c c c c4.:16 d:\!
 	a4.\ff~ a8 r a g4.~ g8 r g \mark \default
 	b r r r4\fermata r8 r2.
 	R1.*4
@@ -107,7 +107,7 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 81 to 85
 	d2.\pp\<( e4. c)\!
 	a2.(->\fz g4.\> f)\!
-	e1.~
+	<< e1.~ {s4. s2.}>>
 	e2.~ e4\brack\pp r8 r4 r8
 	R1.*3
 % Bars 86 to 90
@@ -130,9 +130,9 @@ musicClarinettoIIMvtII = \relative c {
 	d( c!)
 % Bars 101 to 105
 	c8 r r r4 r8 b r r r4\fermata r8 \mark \default
-	c,4.(\p gis a b)
+	\shape #'((0 . 1)(0 . 1.5)(0 . 1.5)(0 . 1)) Slur \dynEO #'(-1.8 . 1.5) c,4.(\p gis a b)
 	c4 r8 r4 r8 r2.
-	d4.\pp bes2.~ bes4.~
+	d4.-\offset X-offset 1 \pp bes2.~ bes4.~
 	bes4.( a\< g\> c)\!
 % Bars 106 to 110
 	g'1.(
@@ -157,18 +157,18 @@ musicClarinettoIIMvtII = \relative c {
 	r r4 r8 g,16(\pp-. g-. b-. b-. d-. d)-. 
 	R1.
 	R1. \mark \default
-	r2. r4 r8 aes,16(\p-. aes-. c-. c-. ees-. ees)-.
+	r2. r4 r8 \dynEO #'(-2 . 2) aes,16(\p-. aes-. c-. c-. ees-. ees)-.
 % Bars 126 to 130
 	R1.*2
 	
-	r8 r g,16(\p-. f-.) r8 r g16(-. f-.) r8 r g16(-. f-.) r8 r g16-.( f-.)
+	r8 r \dynEO #'(-2 . 1.5) g,16(\p-. f-.) r8 r g16(-. f-.) r8 r g16(-. f-.) r8 r g16-.( f-.)
 	r2. a'8->\ff gis-> a-> gis-> a-> gis->
 	r4 r8 e,4.->\p r2.
 % Bars 131 to 135
 	r4 r8 << e'2.\fz {s4.\> s4 s8\!}>> r4 r8
-	r4 r8 << f2.\fz {s4.\> s4 s8\!}>> r4 r8
-	r4 r8 << a2.\fz {s4.\> s4 s8\!}>> r4 r8
-	r4 r8 << gis2.\fz {s4.\> s4 s8\!}>> r4 r8
+	r4 r8 << f2.-\tweak X-offset 0.5 \fz {s4.\> s4 s8\!}>> r4 r8
+	r4 r8 << a2.-\tweak X-offset 0.5 \fz {s4.\> s4 s8\!}>> r4 r8
+	r4 r8 << gis2.-\tweak X-offset 0.5 \fz {s4.\> s4 s8\!}>> r4 r8
 	a8\fp r r r4 r8 a4.\pp r4 r8
 % Bars 136 to 140
 	R1.*2

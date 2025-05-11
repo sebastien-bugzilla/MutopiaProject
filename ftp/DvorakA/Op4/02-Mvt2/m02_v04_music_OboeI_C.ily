@@ -13,7 +13,7 @@ musicOboeIMvtII = \relative c {
 	r4 r8 fis4. r4 r8 fis4.
 	r4 r8 g4._\crescmarkup r4 r8 g4.
 	r4 r8 fis4.\< r4 r8 fis4.\!
-	r4 r8 bes4.\mf r4 r8 bes4.
+	r4 r8 \dynEO #'(0 . 2) bes4.\mf r4 r8 bes4.
 % Bars 6 to 10
 	r4 r8 g4.\> r4 r8 b4.\!
 	r4 r8 ees,4.\p r4 r8 g4.
@@ -40,7 +40,7 @@ musicOboeIMvtII = \relative c {
 	f8\p f f  f f f  f f f  f f f
 	R1.
 % Bars 31 to 35
-	\partCombineApart r4 r8 a'16(\p e a g f e f8) r r g16( d g f e d
+	\partCombineApart r4 r8 a'16(-\offset X-offset -1 \p e a g f e f8) r r g16( d g f e d
 	e8) r r f16( c f ees! d c d8) r r ees16( bes ees d c bes
 	c8) r r r4 r8 r2. \partCombineAutomatic
 	R1.
@@ -61,7 +61,7 @@ musicOboeIMvtII = \relative c {
 	R1.*2
 	
 	\partCombineApart r2. r4 r8 bes,4\p bes8
-	ges'4.(\< f8 ees bes des4.\! c4\> c8)
+	\hairpinShorten #'(0 . -6) ges'4.(\< f8 ees bes des4.\! \hairpinShorten #'(-6 . 0) c4\> c8)
 	des4\! r8 r4 r8 r2. \partCombineAutomatic
 % Bars 51 to 55
 	R1.
@@ -72,24 +72,24 @@ musicOboeIMvtII = \relative c {
 	
 	
 	\mark \default
-	r4 r16 aes\p\< aes4.\! r4 r16 aes\p\< aes4.\!
+	r4 r16 \hairpinShorten #'(-0.3 . -1) aes-\tweak X-offset -1 \p\< aes4.\! r4 r16 \hairpinShorten #'(-0.3 . -1) aes-\tweak X-offset -1 \p\< aes4.\!
 	r4 r16 g g4. r4 r16 ees! ees4.
 % Bars 61 to 65
 	R1.
 	\partCombineApart r4 r8 bes'4.\p~ bes8 fis8.( g16 g4.) \partCombineAutomatic
 	R1.
-	r4 r8 fis16(-. fis-. ais-. ais-. cis-. cis)-. r4 r8 fis,16(-. fis-. ais-. ais-. cis-. cis)-. 
+	r4 r8 \aIIEO #'(-3 . -2) fis16(-. fis-. ais-. ais-. cis-. cis)-. r4 r8 fis,16(-. fis-. ais-. ais-. cis-. cis)-. 
 	R1.
 % Bars 66 to 70
 	\partCombineApart r4 r8 d,4.\p(~ d8 cis8. b16 fis'4.) \partCombineAutomatic
 	R1.
 	\partCombineApart r4 r8 f4.(~ f8 e8. d16 a'4) g8(~
-	g4.\< c2.\!_\pocoapococrescendo~ c8 bes f)
+	\hairpinShorten #'(0 . 1) g4.\< c2.\!_\pocoapococrescendo~ c8 bes f)
 	a4 r8 r4 r8 r2. \partCombineAutomatic
 % Bars 71 to 75
 	d,16\mf d d d d d  d d\< d d d d  ees4.:16 f:\!
 	g4.\ff~ g8 r g aes4.~ aes8 r aes \mark \default
-	a! r r r4\fermata r8 \partCombineApart r4 r8 f4.(\pp
+	a! r r r4\fermata r8 \partCombineApart r4 r8 f4.(-\offset X-offset -1.5 \pp
 	g c,4 d8 ees4. bes4 c8)
 	d4.( bes^~ bes8 a g c4.)
 % Bars 76 to 80
@@ -99,10 +99,10 @@ musicOboeIMvtII = \relative c {
 	f4 r8 r4 r8 r2.
 	f,4.( g~ g8 a bes c4.)
 % Bars 81 to 85
-	c2.(\pp\< d4. bes)\!
-	g'2.(->\fz f4.\> ees)\!
+	\hairpinShorten #'(0 . -8.5) c2.(_\pp_\< d4. bes)\!
+	g'2.(->_\fz f4._\> ees)\!
 	<< d1.~ {s4. s_\dimmarkup s2.}>>
-	d2.~ d4\pp r8 r4 r8 \partCombineAutomatic
+	d2.~ d4_\pp r8 r4 r8 \partCombineAutomatic
 	g16\p g d d ees\< ees  f f g g aes aes  g g d d ees ees   f f g g aes aes\!
 % Bars 86 to 90
 	g\mf g e e f\< f  g g aes aes bes bes  aes aes e e f f  g g aes aes bes bes\!
@@ -112,12 +112,12 @@ musicOboeIMvtII = \relative c {
 	R1.*2
 % Bars 91 to 95
 	
-	\partCombineApart des,8-.\pp^\solo f-. aes-. f16-. ees-. des8-. bes'-. aes-. des4(~ des8 f, bes
+	\partCombineApart \dynEO #'(-2 . -3) \markEO #'(0.5 . -2) des,8-.\pp^\solo f-. aes-. f16-. ees-. des8-. bes'-. aes-. des4(~ des8 f, bes
 	aes4) r8 r4 r8 r2. \partCombineAutomatic
 	R1.*2
 	
 % Bars 96 to 100
-	\partCombineApart cis,4.(\brack\p << fis2.~ {s4. s_\crescmarkup }>> fis8 e b)
+	\partCombineApart \shape #'((0 . -1.5)(0 . -0.5)(0 . 0)(0 . 0)) Slur cis,4.(\brack\p << fis2.~ {s4. s_\crescmarkup }>> fis8 e b)
 	<< { dis2.( e) } {s4. s s s}>>
 	<< {gis2.( a)} {s4. s s s}>> \partCombineAutomatic
 	a2.(\ff b)
@@ -139,14 +139,14 @@ musicOboeIMvtII = \relative c {
 	R1.*2
 	
 % Bars 121 to 125
-	\partCombineApart bes8-.\p\<^\solo d-. f-. d16-. c-. bes8-. g'-. f-.\! bes4\>(~ bes8 d, g\!
+	\partCombineApart bes8-._\p_\<-\offset X-offset -4 ^\solo d-. f-. d16-. c-. bes8-. g'-. f-.\! \shape #'((0 . 1.5)(0 . -0.5)(0 . -0.5)(0 . 1.5)) Slur bes4_\>(~ bes8 d, g\!
 	f4) r8 r4 r8 r2. \partCombineAutomatic
 	r2. r4 r8 a,16(\pp-. a-. c-. c-. f-. f)-. 
-	\partCombineApart r2. a,16(\pp-. a-. c-. c-. f-. f)-. r4 r8 \partCombineAutomatic \mark \default
+	\partCombineApart r2. \dynEO #'(-2 . -2) a,16(\pp-. a-. c-. c-. f-. f)-. r4 r8 \partCombineAutomatic \mark \default
 	R1.
 % Bars 126 to 130
 	\partCombineApart r4 r8 a,16(-. a-. cis-. cis-. e-. e)-. r2.
-	r4 r8 bes'4.\p(~ bes8 fis8. g16) g4. \partCombineAutomatic
+	r4 r8 \shape #'((0 . -1)(0 . -0.8)(0 . -0.8)(0 . 0)) Slur \dynEO #'(-1.5 . -2) bes'4.\p(~ bes8 fis8. g16) g4. \partCombineAutomatic
 	R1.
 	r2. bes8->\ff a-> bes-> a-> bes-> a->
 	R1.
@@ -159,21 +159,21 @@ musicOboeIMvtII = \relative c {
 % Bars 136 to 140
 	R1.*2
 	
-	r2. d\pp
+	r2. d-\tweak X-offset -1.3 \pp
 	g8\ff r r r4 r8 fis r r r4 r8 \mark \default
 	R1.*2
 % Bars 141 to 145
 	
 	r4 r8 \partCombineApart c'16(-. bes-. a8-. g)-. \partCombineAutomatic r2.
-	d16\f c bes8 a c16 bes a8 g c16 bes a8 g bes16 a g8 fis
+	\aIIEO #'(-3.5 . 0) d16\f c bes8 a c16 bes a8 g c16 bes a8 g bes16 a g8 fis
 	r4 r8 r r gis'16. a32 a16 r r8 gis16. a32 a16 r r8 gis16. a32
 	a2.\ff fis\fz
 % Bars 146 to 150
 	g8\p r r \partCombineApart r4 r8 r2.
 	R1. \partCombineAutomatic
 	d4\pp r8 ees4 r8 d4 r8 ees4 r8
-	d4 r8 \partCombineApart ees4.( << d2.~ {s8\< s s s s s\!}>>
-	d4.~\> d8 e fis\! b,4)\pp r8 b4 r8
+	d4 r8 \partCombineApart ees4.( << d2.~ {s8_\< s s s s s\!}>>
+	d4.~_\> d8 e fis\! b,4)_\pp r8 b4 r8
 % Bar 151
 	b2.~ b4 r8 r4 r8\fermata \fine
 }

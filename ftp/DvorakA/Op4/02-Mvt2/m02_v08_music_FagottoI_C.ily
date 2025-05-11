@@ -9,10 +9,10 @@ musicFagottoIMvtII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	g'4.\pp~ g8 r r16 fis(\< g4.~\> g8)\! r r16 g(
-	a4.\pp~ a8) r r16 gis(\< a4.\>~ a8\!) r r16 a(\pp
-	bes4.~\< bes8)\! r r16 a(_\crescmarkup\< bes4.~\> bes8)\! r r16 bes(\<
-	c4.~\> c8\!) r r16 b(\< c4.\>~ c8)\! r r16 c\(
+	g'4.\pp~ g8 r r16 \hairpinShorten #'(0 . -4) fis(\< \hairpinShorten #'(4 . 0) g4.~\> g8)\! r r16 g(
+	a4.\pp~ a8) r r16 \hairpinShorten #'(0 . -4) gis(\< \hairpinShorten #'(4 . 0) a4.\>~ a8\!) r r16 a(\pp
+	bes4.~\< bes8)\! r r16 \hairpinShorten #'(0 . -5) a(_\crescmarkup\< \hairpinShorten #'(5 . 0) bes4.~\> bes8)\! r r16 \hairpinShorten #'(0 . -4) bes(\<
+	\hairpinShorten #'(4 . 0) c4.~\> c8\!) r r16 \hairpinShorten #'(0 . -5) b(\< \hairpinShorten #'(5 . 0)c4.\>~ c8)\! r r16 c\(
 	cis2.\mf( d)\)
 % Bars 6 to 10
 	<< {ees b } {s4. s\> s s4\! s8} >>
@@ -31,11 +31,11 @@ musicFagottoIMvtII = \relative c {
 	<< {b2. c } {s4. s s s}>>
 	<< {bes!2. bes} {s4. s s s}>>
 	<< { bes2. cis } {s8 s s s s s  s s s s s s}>>
-	bes4.( a bes2.)
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur bes4.( a bes2.)
 % Bars 21 to 25
 	bes4.( b c a8 bes c)
 	<< { bes2.( b4. c) }{s4.\< s8 s s\! s4.\> s\! } >> \mark \default
-	f2.\p f(
+	\dynEO #'(-0.5 . -1.5) f2.\p f(
 	\stemDown ees)~ ees  \partCombineAutomatic
 	d8\< d d d d d\! d d\> d  d d d\!
 % Bars 26 to 30
@@ -51,14 +51,14 @@ musicFagottoIMvtII = \relative c {
 	a8) r r bes16( f bes a g f g8) r r a16( e a g fis c')
 	bes2.( ees4.~_\crescmarkup ees4~ ees16 d)
 % Bars 36 to 40
-	c4.\<~ c4 bes16( a\! d4) r8 r4 r8 \partCombineAutomatic \mark \default
+	\hairpinShorten #'(0 . 3) c4.\<~ c4 bes16( a\! d4) r8 r4 r8 \partCombineAutomatic \mark \default
 	g,,2.\pp~ g4. g16( bes a g fis g)
 	a2.~ a4. a16( c bes a g a)
 	bes2.~ bes4._\crescmarkup bes16( des c bes a! bes)
 	<< c2.~ {s4. s8 s\< s}>> c4. c16(_\crescD ees d c bes c)
 % Bars 41 to 45
 	cis2.\mf( d)
-	ees(\> e)\!_\dimmarkup
+	ees(\> \markEO #'(-9 . -0.5) e)\!_\dimmarkup
 	<< {f\p( bes,) } {s4. s\> s\! s}>>
 	c'2.~ c4.~ c8 r r
 	\partCombineApart f,4.(\p\< bes aes\!~ aes8\> e8. f16)\!
@@ -67,12 +67,12 @@ musicFagottoIMvtII = \relative c {
 	bes4.(\< ees) des\!~ des8\> a!8.( bes16)\!
 	bes4.\p~ bes8 r r r2. \partCombineAutomatic
 	R1.
-	\partCombineApart des4.\p( c8 bes f aes4. g4 g8)
+	\partCombineApart \dynEO #'(-0.4 . -1) des4.\p( c8 bes f aes4. g4 g8)
 % Bars 51 to 55
 	f4.( g)\< aes( c4\> bes8)\!
 	aes4.( des)\< c( g'4\fz f8)
 	ees2.\fz\>~ ees8 des( c bes4\p f8)
-	aes4.(\pp~ aes4~ aes16 bes aes4) aes8(\< bes4 c8)\! \partCombineAutomatic
+	\shape #'((0 . -1)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur aes4.(_\pp~ aes4~ aes16 bes aes4) aes8(_\< bes4 c8)\! \partCombineAutomatic
 	aes2.\fz  << ces {s8\> s s  s s s\!}>>
 % Bars 56 to 60
 	c!4.(\p\> g!)\! \partCombineApart aes!( fes') \partCombineAutomatic
@@ -120,14 +120,14 @@ musicFagottoIMvtII = \relative c {
 % Bars 96 to 100
 	bes!2.( b_\crescmarkup) \partCombineAutomatic
 	fis4.(\mf g!\< gis a)\!
-	b(\f c\< cis d)\!
+	b(\f \hairpinShorten #'(0 . -10.5) c\< cis d)\!
 	e2.\ff e,!
 	ees'! ees,
 % Bars 101 to 105
 	d8 r r r4 r8 d8 r r r4\fermata r8 \mark \default
-	\partCombineApart g4.(\p c bes~ bes8 fis8. g16)
+	\partCombineApart \shape #'((0 . -1.5)(0 . -1)(0 . -1)(0 . 0)) Slur \dynEO #'(-1.5 . -1) g4.(\p c bes~ bes8 fis8. g16)
 	g4.(\< bes\! c\> d)\!
-	c( f ees4.~ ees8 b8. c16~
+	\shape #'((0 . -1.5)(0 . 0)(2 . 0)(0 . -1)) Slur c( f ees4.~ \beamOffset #'(-0.5 . -0.5) ees8 b8. c16~
 	c4) r8 r4 r8 r2.
 % Bars 106 to 110
 	c2.( ees4. << d) {s8 s s}>>
@@ -136,7 +136,7 @@ musicFagottoIMvtII = \relative c {
 	\partCombineChords f,(\< << a {s8 s s\!}>> bes4.\> << g) {s8 s s\!}>>
 	\partCombineApart b2.( c) \partCombineAutomatic
 % Bars 111 to 115
-	f4.( cis\< d bes!)\!
+	\shape #'((0 . 0)(0 . -1)(0 . -1)(0 . 0)) Slur f4.( cis\< d bes!)\!
 	\partCombineApart << bes1.-> {s4. s s s8 s s}>>
 	d4.( c << bes2.) {s4. s}>>
 	bes4.( b c ees8 d c)
@@ -154,8 +154,8 @@ musicFagottoIMvtII = \relative c {
 	\mark \default
 	R1.
 % Bars 126 to 130
-	\partCombineApart r4 r8 \clef tenor g4.(\brack\p~ g8\> dis8. e16) e4.\! \clef bass
-	r4 r8 c16(\pp-. c-. e-. e-. g-. g)-. r4 r8 c,,16(-. c-. e-. e-. g-. g)-. 
+	\partCombineApart r4 r8 \clef tenor \shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur \dynEO #'(-1.5 . -2) g4.(\brack\p~ g8\> dis8. e16) e4.\! \clef bass
+	r4 r8 \beamOffset #'(-0.3 . -0.3) \dynEO #'(-1.5 . -1) c16(\pp-. c-. e-. e-. g-. g)-. r4 r8 c,,16(-. c-. e-. e-. g-. g)-. 
 	r4 r8 des4.(\p~ des8 a!8. bes16 bes4.) \partCombineAutomatic 
 	r2. bes'8\ff-> a-> bes-> a-> bes-> a->
 	r4 r8 a(\p bes a) r2.
@@ -164,7 +164,7 @@ musicFagottoIMvtII = \relative c {
 	<< a2.\sfz\>~ {s8 s s  s s s\!}>> a4.~\< a16( c bes a g a)\!
 	bes2.\fp\>~ bes4.~\! bes16(\< des c bes a bes)\!
 	c2.\fp\>~ c4.~\! c16(\< ees d c b c)\!
-	\partCombineApart << cis'2.( {s8\fp\> s s s s s\pp}>> d2.~
+	\partCombineApart << cis'2.( {s8_\fp_\> s s s s s_\pp}>> d2.~
 % Bars 136 to 140
 	d8) r r r4 r8 r2. \partCombineAutomatic
 	R1.*2

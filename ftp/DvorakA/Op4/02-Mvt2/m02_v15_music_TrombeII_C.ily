@@ -105,7 +105,7 @@ musicTrombeIIMvtII = \relative c {
 	
 	dis8\f dis16 dis dis8 e e16 e e8 fis fis16 fis fis8 dis dis16 dis dis8
 	R1.
-	e4.->\ff~ e8 r r b!4.->~ b8 r r
+	\dynEO #'(-2.7 . 2.3) e4.->\ff~ e8 r r b!4.->~ b8 r r
 % Bars 146 to 150
 	R1.*5
 % Bar 151

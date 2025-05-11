@@ -83,7 +83,7 @@ musicCornoIMvtII = \relative c {
 	
 	
 	
-	\partCombineApart d'4.( g2.\!~_\pocoapococrescendo g8 f c)
+	\partCombineApart d'4.(\p\< g2.\!~_\pocoapococrescendo g8 f c)
 	ees2.( c4. d)
 % Bars 71 to 75
 	c << f2.(~ {s8 s s  s s s16 s} >> f8 ees bes!) \partCombineAutomatic
@@ -98,7 +98,7 @@ musicCornoIMvtII = \relative c {
 	
 	
 	c1.\ff \mark \default
-	\partCombineApart r8 des\p\> des~  des des des~  des\! des\pp des~  des des des~
+	\partCombineApart r8 des\p\> des~  des des des~  des des\pp des~  des des des~
 	des des des~  des des des~  des des des~  des des des
 % Bars 91 to 95
 	ees,1.~
@@ -108,7 +108,7 @@ musicCornoIMvtII = \relative c {
 	<< c2. {s8 s s  s s s}>> des2.
 % Bars 96 to 100
 	aes4.(\< << des2.\!~ {s4. s_\crescmarkup}>> des8 ces ges)
-	cis4.(\mf fis2.->\<~ fis8\! e b)
+	\shape #'((0 . -1.5)(0 . -0.5)(0 . 0)(0 . 0)) Slur cis4.(\mf fis2.->\<~ fis8\! e b)
 	<< {dis2.( e4. cis) } {s4. s s s8 s s}>> \partCombineAutomatic
 	b2.\ff dis\fz->
 	ees\fz d\fz
@@ -119,7 +119,7 @@ musicCornoIMvtII = \relative c {
 	d4. fis,(\pp g a)
 	bes2.( c4. d)
 % Bars 106 to 110
-	ees(\pp d8 c g bes4. a4) r8 \partCombineAutomatic
+	\dynEO #'(-2.2 . -1.5) ees(\pp d8 c g bes4. a4) r8 \partCombineAutomatic
 	R1.*6
 % Bars 111 to 115
 	
@@ -143,7 +143,7 @@ musicCornoIMvtII = \relative c {
 	
 	
 	
-	r2. a'8->\ff a-> a->   a-> a-> a->
+	r2. \dynEO #'(-1 . 0) a'8->\ff a-> a->   a-> a-> a->
 	R1.
 % Bars 131 to 135
 	r4 r8 d2.\pp~ d4 r8
@@ -160,11 +160,11 @@ musicCornoIMvtII = \relative c {
 % Bars 141 to 145
 	
 	
-	e8\f e16 e e8 d d16 d d8 d d16 d d8 e e16 e e8
+	\dynEO #'(-2.3 . 1.5) e8\f e16 e e8 d d16 d d8 d d16 d d8 e e16 e e8
 	r4 r8  r r bes16. d!32 d16 r r8 bes16. d32 d16 r r8 bes16. d32
-	d4.\ff~ d8 r r e4.~ e8 r r
+	d4.-\tweak X-offset 0.5 \ff~ d8 r r e4.~ e8 r r
 % Bars 146 to 150
-	\partCombineApart f4.(\p^\solo e4~ e16 g f4. e4~ e16 g)
+	\partCombineApart f4.(\p-\offset X-offset -5 ^\solo e4~ e16 g f4. e4~ e16 g)
 	f4.( e4~ e16 g f4. e4~ e16 g)
 	f4.( e4~ e16 g f4. bes,)
 	f'4.( e4~ e16 g) fis2.~
