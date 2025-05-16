@@ -152,7 +152,10 @@ brackppocoapococresc = \markup { \concat {
 	\hspace #-0.05 \bracket \with-true-dimensions \dynamic p 
 	\hspace #0.9 \italic {"poco a poco cresc."}}
 }
-
+ppbrackdiminuendo = \markup {
+	\hspace #-0.78 \dynamic pp \bracket \with-true-dimensions 
+	\italic {diminuendo}
+}
 
 
 crescD = \tweak DynamicText.self-alignment-X #-0.75 #(make-dynamic-script 
@@ -211,7 +214,11 @@ spiccato = \markup {\italic {spiccato}}
 sulponticello = \markup {sul ponticello}
 trem = \markup {\italic {trem.}}
 
-
+brackpocoapococresc = \markup {
+	\concat {
+		\bracket \with-true-dimensions \pocoapoco \hspace #0.4 \crescmarkup
+	}
+}
 
 
 
@@ -241,12 +248,67 @@ markBbBox = \markup { \box \bold "Bb" }
 markCcBox = \markup { \box \bold "Cc" }
 markDdBox = \markup { \box \bold "Dd" }
 
+% Instrument name for staff
 timpaniingd = \markup {
 	\center-column { 
 		\lower #1 "Timp. in" "G/D"
 	}
 }
-
+flpicc = \markup {"Fl.picc."}
+II = \markup {"II."}
+I-IIine = \markup {
+	\center-column {
+		\lower #1 "I. II." "in E"
+	}
+}
+III-IVind = \markup {
+	\center-column {
+		\lower #1 "III. IV." "in D"
+	}
+}
+trbeind = \markup {
+	\center-column {
+		\lower #1 "Trbe" "in D"
+	}
+}
+timpinda = \markup {
+	\center-column {
+		\lower #1 "Timp. in" "D/A"
+	}
+}
+clina = \markup {
+	\center-column {
+		\lower #1 "Cl. in" "A"
+	}
+}
+trbeinb = \markup {
+	\center-column {
+		\lower #1 "Trbe in"
+		\concat { "B" \text-flat }
+	}
+}
+I-IIinf = \markup {
+	\center-column {
+		\lower #1 "I. II." "in F"
+	}
+}
+timpinbf = \markup {
+	\center-column {
+		\lower #1 "Timp." \concat { "in B" \text-flat "/F" }
+	}
+}
+III-IVines = \markup {
+	\center-column {
+		\lower #1 "III. IV." 
+		\concat { "in E" \text-flat }
+	}
+}
+clinbes = \markup {
+	\center-column {
+		\lower #1 "Cl. in" 
+		\concat { "B" \text-flat }
+	}
+}
 %%%%%%%%%%%
 % functions
 %%%%%%%%%%%

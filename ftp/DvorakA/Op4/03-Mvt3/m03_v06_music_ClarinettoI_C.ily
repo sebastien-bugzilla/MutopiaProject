@@ -73,7 +73,7 @@ musicClarinettoIMvtIII = \relative c {
 	f8. f16 f2\fermata
 	\partCombineApart e,4(\< g a\!
 	c8)[-. r16 c]-. c2
-	a4( c d
+	\shape #'((0 . 0)(-0.5 . -0.5)(-0.5 . -1)(-1 . -1.5)) Slur a4( c d
 	e8-.)[ r16 e-.] e2 \partCombineAutomatic
 % Bars 71 to 75
 	d4(\< e f\!
@@ -82,9 +82,9 @@ musicClarinettoIMvtIII = \relative c {
 	\partCombineApart a2(_\dimmarkup g8. d16)
 	e4( g a
 % Bars 76 to 80
-	c8)[-. r16 c-.] c2 \partCombineAutomatic
+	c8)[-. d16\rest c-.] c2 \partCombineAutomatic
 	d4( e\< f\!)
-	\partCombineApart g8. g16 g2(~
+	\partCombineApart g8. g16 \shape #'((0.5 . -1.5)(0 . -1)(1 . -0.5)(0 . -1.5)) Slur g2(~
 	g4 bes d,)
 	ees( g f
 % Bars 81 to 85
@@ -110,7 +110,7 @@ musicClarinettoIMvtIII = \relative c {
 	e2->\f r4
 	e2-> r4
 	e2-> r4
-	ees2.\fz
+	\dynEO #'(0.5 . 0) ees2.\fz
 % Bars 101 to 105
 	d8.\ff[ f16 f8. f16] f4~
 	f8.[ f16 f8. f16] f4~
@@ -121,7 +121,7 @@ musicClarinettoIMvtIII = \relative c {
 	f2 f8. f16
 	f2 f8. f16
 	f2 f8. f16
-	g,2.\brack\ff~
+	\dynEO #'(-2 . 0.5) g,2.\brack\ff~
 	g
 % Bars 111 to 115
 	R2. \mark \default 
@@ -200,7 +200,7 @@ musicClarinettoIMvtIII = \relative c {
 	\partCombineApart c2( d4) \partCombineAutomatic
 	R2.
 	\partCombineApart c2( d4) \partCombineAutomatic
-	R2.*4^\mutaina \transposition a
+	R2.*4^\mutaina \transposition a \changeStaffName #clina
 % Bars 176 to 180
 	
 	
@@ -241,7 +241,7 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 206 to 210
 		a8. f16 f8 r r4
 		\tuplet 3/2 4 {d8(\pp ees f)} c8-. c-. d4->
-		\tuplet 3/2 4 {d8(_\crescmarkup\< ees f)} c-. c-. d4->\!
+		\tuplet 3/2 4 {\hairpinShorten #'(0 . -3) d8(\crescD\< ees f)} c-. c-. d4->\!
 		\tuplet 3/2 4 {ees8(\< f g)} d-. d-. ees4->\!
 		\tuplet 3/2 4 {ees8( f g)} d8-. d-. ees4
 % Bars 211 to 215
@@ -251,7 +251,7 @@ musicClarinettoIMvtIII = \relative c {
 		
 		\mark \default
 	}
-	e4.(\p f8 \tuplet 3/2 4 {g a d,)}
+	\dynEO #'(-0.5 . 0) e4.(\p f8 \tuplet 3/2 4 {g a d,)}
 	d4( e f8-. f-.)
 % Bars 221 to 225
 	d4 e2->\brack\fz
@@ -282,7 +282,7 @@ musicClarinettoIMvtIII = \relative c {
 	f16( g a8) e8-. e-. f4->
 % Bars 246 to 250
 	f16( g a8) e8-. e-. f4-> \mark \default
-	R2.*8^\mutainb \transposition bes
+	R2.*8^\mutainb \transposition bes \changeStaffName #clinbes
 % Bars 251 to 255
 	
 	
@@ -302,8 +302,8 @@ musicClarinettoIMvtIII = \relative c {
 	r g( aes bes\< c des ees g bes)\!
 % Bars 266 to 270
 	c(\f bes aes g f ees! des! c bes!)}
-	ees2.\ff\startTrillSpan
-	<< ees\startTrillSpan {s4 s s\stopTrillSpan }>> \mark \default
+	ees2.-\tweak X-offset 0.5 \ff\startTrillSpan
+	<< ees\startTrillSpan {s4 s s8 s\stopTrillSpan }>> \mark \default
 	e!4-. r r
 	R2.*3
 % Bars 271 to 275
@@ -371,10 +371,10 @@ musicClarinettoIMvtIII = \relative c {
 	e( d a8. a16)\!
 	\partCombineApart a2(_\dimmarkup g8. d16)
 	e4( g a
-	c8)[-. r16 c-.] c2 \partCombineAutomatic
+	c8)[-. d16\rest c-.] c2 \partCombineAutomatic
 	d4( e\< f\!)
 % Bars 346 to 350
-	\partCombineApart g8. g16 g2(~
+	\partCombineApart g8. g16 \shape #'((0 . -1.5)(0 . -0.8)(0 . -0.8)(0 . -2)) Slur g2(~
 	g4 bes d,)
 	ees( g f
 	ees d c) \partCombineAutomatic
@@ -400,7 +400,7 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 366 to 370
 	e2-> r4
 	e2-> r4
-	ees2.\fz
+	\dynEO #'(0.5 . 0) ees2.\fz
 	d8.[\ff f16 f8. f16] f4~
 	f8.[ f16 f8. f16] f4~
 % Bars 371 to 375
@@ -411,7 +411,7 @@ musicClarinettoIMvtIII = \relative c {
 	f2 f8. f16
 % Bars 376 to 380
 	f2 f8. f16
-	g,2.\brack\ff~
+	\dynEO #'(-0.5 . 0) g,2.\brack\ff~
 	g
 	R2. \mark \markCcBox
 	\partCombineApart g'16( a g a g8) c-. b-. a-.
@@ -500,7 +500,7 @@ musicClarinettoIMvtIII = \relative c {
 	bes[ bes] a[ a] cis cis
 	d[ d] dis[ dis] dis dis
 	e[ e] d![ d] cis cis
-	d[\ff d d d] c! c
+	\beamOffset #'(0.5 . 0.5) d[\ff d d d] c! c
 % Bars 456 to 460
 	c8. c16 c2
 	des8. des16 des2

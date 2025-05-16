@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicContrabassoMvtIII = \relative c {
+musicVioloncelloMvtIII = \relative c {
 	\clef bass
 	\key bes \major
 %	\transposition a
@@ -39,15 +39,15 @@ musicContrabassoMvtIII = \relative c {
 	
 	f2.:16\pp
 % Bars 26 to 30
-	f8 f' f,4. f'8
-	f,2.
-	f8 f' f,4. f'8
-	f, f' f,4. f'8
-	f, f' f,4._\pocoapococresc f'8
+	f4: f': f,:
+	f2.:
+	f4: f': f,:
+	f2.:
+	f4: f':_\pocoapococresc f,:
 % Bars 31 to 35
-	f, f' f,4. f'8
-	f, f' f,4. f'8
-	f,4\f r r
+	f2.:
+	f4: f': f,:
+	f4\f r r
 	R2.*8
 % Bars 36 to 40
 	
@@ -56,39 +56,55 @@ musicContrabassoMvtIII = \relative c {
 	r4 r \tuplet 3/2 4 {c'8(\mf a f)}
 	r4 r \tuplet 3/2 4 {c'8(\p a f)}
 	r4 r \tuplet 3/2 4 {c'8(\pp a f)\fermata} \mark \default
-	R2.*21
+	bes4(\pp d ees
 % Bars 46 to 50
-	
+	c d f)
+	ees( d\< c
+	bes c d)\!
+	ees2(\< \markEO #'(0 . 2) c4_\mfmarkup
+	a bes\! g\>)
 % Bars 51 to 55
-	
+	c2( f4)\!
+	a,8(\p g f g a f)
+	bes4(\pp d ees
+	d ees\< f)
+	ees( bes g
 % Bars 56 to 60
-	
+	f2 g4)\!
+	aes2.\pp(~
+	aes4 bes c)
+	des2.(
+	c2) c,8[ r16 c]
 % Bars 61 to 65
-	
+	c'2 c,8[ r16 c]
+	c'2 \tuplet 3/2 4 {c,8 d e}
+	f\p f f f f f
+	f f f f f f
+	f f f f f f
 % Bars 66 to 70
-	R2.\fermata
-	bes8^\pizz\p r d r ees r
-	c r d r f r
-	ees r d r c r
-	bes r c r d r
+	f f f f f\noBeam r\fermata
+	bes4:16\pp d: ees:
+	c: d: f:
+	ees: d: c:
+	bes: c: d:
 % Bars 71 to 75
-	ees r r4 c8 r
-	a r bes r g r
-	c r r4 f8 r
-	f, r f r f r
-	bes r d r ees r
+	ees2: c4:
+	a: bes: g:
+	c2: f,4:
+	f2.:
+	bes16 bes bes bes d d d, d ees ees ees' ees
 % Bars 76 to 80
-	d r ees r f r
-	ees r bes\< r g r
-	f r f' r r g,\!
-	aes\pp r aes' r aes, r
-	aes r bes r c r
+	d d d, d ees ees ees' ees f f f, f
+	ees ees ees' ees bes'\< bes bes, bes g' g g, g
+	f f f' f f, f f' f g g g, g\!
+	aes\pp aes aes' aes aes, aes aes' aes aes, aes aes' aes
+	aes, aes aes' aes bes bes bes, bes c c c, c
 % Bars 81 to 85
-	des r des' r r des,
-	c r c' r r c,
-	c r c' r r c,
-	c r c' r r4 \mark \default
-	f,,2.\pp~^\brackM\arco
+	des des des' des des, des des' des des, des des' des
+	c, c c' c  c c c c c, c c' c
+	c, c c' c c c c c c, c c' c
+	c, c c' c c c c c c, c c' c \mark \default
+	f,2.\pp~
 % Bars 86 to 90
 	f4. bes8( a16 bes c bes
 	f2.~
@@ -98,11 +114,11 @@ musicContrabassoMvtIII = \relative c {
 % Bars 91 to 95
 	a16(\mf\< bes a bes a8) g-. f-. ees'-.\!
 	ees4(\f d4.)-> bes8
-	aes'4(-> g4.) ees'8
+	aes4(-> g4.) ees'8
 	ees4->( d4.) bes8
 	aes'4->( g4.) ees8
 % Bars 96 to 100
-	ees4->( d) bes8. f16
+	ees'4->( d) bes8. f16
 	f2 bes,8. f16
 	f2 bes'8. f16
 	f2 bes,8. f16
@@ -187,14 +203,14 @@ musicContrabassoMvtIII = \relative c {
 	
 % Bars 166 to 170
 	
-	aes2.\fz\>(
+	aes2.\fbrackzD\>(
 	<< f) {s4 s s\!}>>
 	R2.*2
 	
 % Bars 171 to 175
 	aes'2(~\fp aes8 g16 f
 	ees4) r r
-	aes2(~\fp aes8 g16 f % a => aes based on cello part.
+	aes2(~\fp aes8 g16 f
 	ees4) r r
 	aes-.-> g-.-> f-.->
 % Bars 176 to 180
@@ -202,44 +218,44 @@ musicContrabassoMvtIII = \relative c {
 	bes8 r r4 r
 	R2. \section
 	\repeat volta 2 {
-		\key a \major a,4\f^\pizz r r
-		R2.
+		\key a \major <a, e'>2.:16\ff\>
+		<< q: {s4 s s\!}>>
 % Bars 181 to 185
-		a4\p r r
-		R2.
-		a2.\pp^\arco~
-		a~
-		a~
+		q2.:\p\>
+		q:\pp
+		q4 r r
+		R2.*3
+		
 % Bars 186 to 190
-		a~
-		a~
-		a~
-		a~
-		a
+		
+		\grace {e16( fis gis} a2.)^\solo\fp\>~
+		a4 cis8( e a b)\!
+		cis2.(
+		a4) r r8. cis16
 % Bars 191 to 195
-		fis~
-		fis~
-		fis~
-		fis
-		d'\pp~
+		<< cis2.~ {s4 s\< s }>>
+		cis4 \clef tenor fis8( gis a fis)\!
+		cis'2.\f\>~
+		cis4\! r r
+		R2.*4
 % Bars 196 to 200
-		d~
-		d~
-		d~
-		d~
-		d~
+		
+		
+		\clef bass
+		\grace {a,,16( b cis} d2.)\fp->~
+		d4 fis8( a d e)
 % Bars 201 to 205
-		d~
-		d
-		b_\semprepp~
-		b~
-		b~
+		fis2.(
+		d4) r r8. \clef tenor fis16
+		<< fis2.\pp~ {s4 s8 s\< s4}>>
+		fis4 b8( cis d b)\! \clef treble
+		fis'2.\f\>~
 % Bars 206 to 210
-		b
-		b2\pp~ b8 d-.
-		b2_\crescmarkup~ b8 d-.
-		a2\<~ a8 e'\!-.
-		a,2~ a8 e'-.
+		fis4\! r r \clef bass
+		\tuplet 3/2 4 {\stemDown b,,,8(\pp fis' b, fis' b, fis' b, fis' b,
+		fis'_\crescmarkup b, fis' b, fis' b, fis' b, fis') \stemNeutral
+		a,(\< e' a, e' a, e' a, e' a,\!
+		e' a, e' a, e' a, e' a, e')}
 % Bars 211 to 215
 		f\ff e f d f c
 		f e f d' f, c'
@@ -249,43 +265,43 @@ musicContrabassoMvtIII = \relative c {
 % Bars 216 to 220
 		bes a bes g bes f
 		f' e f d e c
-		bes4 r r \mark \default
+		bes,4 r r \mark \default
 	}
 	R2.*3
 	
 % Bars 221 to 225
 	
-	R2.*5
-	
-	
-	
+	cis2:16\pp cis'4:
+	cis,2: cis'4:
+	b,: b': b,:
+	b': b,: b':
 % Bars 226 to 230
-	
-	c,4\fz^\pizz r c'\pp
-	c, r c'
-	c, r c'
-	c, r r
+	\tuplet 3/2 4 {e8(\< d c b a g f e d)\!}
+	c8:16\fp b: a: g: r4
+	c8:16\pp b: a: g: r4
+	c8:16 b: a: g: r4
+	e'2:16\pp e'4:
 % Bars 231 to 235
-	R2.*6
-	
-	
-	
-	
+	e,2:16 e'4:
+	d,: d': d,:
+	d': d,: d':
+	\tuplet 3/2 4 {g8(\< f ees d c bes aes g f\!}
+	ees4\f) r r
 % Bars 236 to 240
-	
-	ees8\fz^\pizz r r4 r
 	R2.
-	fis!8\pp r r4 r
+	ees8\fz^\pizz r\> c' r g r\!
+	aes\p r ees r f bes,
+	ges' r r4 r
 	R2.
 % Bars 241 to 245
-	fis8\fz r r4 r
-	R2.
-	a,2.\pp^\arco~
-	a~
-	a~
+	fis!8\fz r\> dis' r ais r\!
+	b!\p r fis r gis-. cis,-.
+	r4 \tuplet 3/2 4 {a8(\pp-\offset X-offset -4 ^\arco e' a, e' a, e')
+	a,( e' a, e' a, e' a, e' a,)
+	a( d a d a d a d a)
 % Bars 246 to 250
-	a \mark \default
-	g2.\pp~
+	d( a d a d a d a d)} \mark \default
+	g,2.\pp~
 	g4 b8(\< d g a)\!
 	b2.\>(
 	g4)\! r r8 g,
@@ -309,8 +325,8 @@ musicContrabassoMvtIII = \relative c {
 	des4\f f8( aes des ees)
 % Bars 266 to 270
 	f r f,(\< aes des ees)\!
-	f4(->\ff des8) r f4(->
-	des8) r f4(-> des8) r \mark \default
+	f4(_\fffz des8) r \dynEO #'(-0.5 . 0) f4(\fz
+	des8) r \dynEO #'(0 . 2) f4(\fz des8) r \mark \default
 	bes,2.\ff\>~
 	<< bes {s4 s s\!}>>
 % Bars 271 to 275
@@ -341,14 +357,14 @@ musicContrabassoMvtIII = \relative c {
 	
 	
 	f2.:16\pp
-	f8 f' f,4. f8
-	f2.:16
+	f4: f': f,:
+	f2.:
 % Bars 296 to 300
-	f8 f' f,4. f8
-	f8\< f' f,4. f8
-	f8 f' f,4. f8
-	f8 f' f,4. f8
-	f8 f' f,4. f8\!
+	f4: f': f,:
+	f2.:_\pocoapococresc
+	f4: f': f,:
+	f2.:
+	f8 f' f,4:16 f:
 % Bars 301 to 305
 	f4\f r r
 	R2.*8
@@ -361,43 +377,55 @@ musicContrabassoMvtIII = \relative c {
 % Bars 311 to 315
 	r4 r \tuplet 3/2 4 {c'8(\> a f)\!}
 	r4 r \tuplet 3/2 4 {c'8(\pp a f)\fermata} \mark \markAaBox
-	R2.*21
-	
-	
+	bes4(\pp d ees
+	c d f)
+	ees( d\< c
 % Bars 316 to 320
-	
+	bes c d)\!
+	ees2(\< \markEO #'(0 . 2) c4_\mfmarkup
+	a bes\! g)\>
+	c2( f4)\!
+	a,8(\p g f g a f)
 % Bars 321 to 325
-	
+	bes4(\pp d ees
+	d ees\< f)
+	ees( bes g
+	f2 g4)\!
+	aes2.(\pp~
 % Bars 326 to 330
-	
+	aes4 bes c)
+	des2.(
+	c2) c,8[ r16 c]
+	c'2 c,8[ r16 c]
+	c'2 \tuplet 3/2 4 {c,8 d e}
 % Bars 331 to 335
-	
-	
-	
-	R2.\fermata
-	bes8\p^\pizz r d r ees r
+	f\p f f f f f
+	f f f f f f
+	f f f f f f
+	f f f f f\noBeam r\fermata
+	bes4:16\pp d: ees:
 % Bars 336 to 340
-	c r d r f r
-	ees r d r c r
-	bes r c r d r
-	ees r r4 c8 r
-	a r bes r g r
+	c: d: f:
+	ees: d: c:
+	bes: c: d:
+	ees2: c4:
+	a: bes: g:
 % Bars 341 to 345
-	c r r4 f8 r
-	f, r f r f r
-	bes r d r ees r
-	d r ees r f r
-	ees r bes\< r g r
+	c2: f,4:
+	f2.:
+	bes16 bes bes bes d d d, d ees ees ees' ees
+	d d d, d ees ees ees' ees f f f, f
+	ees ees ees' ees bes'\< bes bes, bes g' g g, g
 % Bars 346 to 350
-	f r f' r r g,\!
-	aes\pp r aes' r aes, r
-	aes r bes r c r
-	des r des' r r des,
-	c r c' r r c,
+	f f f' f f, f f' f g g g, g\!
+	aes\pp aes aes' aes aes, aes aes' aes aes, aes aes' aes
+	aes, aes aes' aes bes bes bes, bes c c c, c
+	des des des' des des, des des' des des, des des' des
+	c, c c' c c c c c c, c c' c
 % Bars 351 to 355
-	c r c' r r c,
-	c r c' r r4 \mark \markBbBox
-	f,,2.\pp^\brackM\arco~
+	c, c c' c c c c c c, c c' c
+	c, c c' c c c c c c, c c' c \mark \markBbBox
+	f,2.\pp~
 	f4. bes8( a16 bes c bes
 	f2.~
 % Bars 356 to 360
@@ -407,10 +435,10 @@ musicContrabassoMvtIII = \relative c {
 	a16(\mf\< bes a bes a8) g-. f-. ees'-.\!
 	ees4(\f d4.)-> bes8
 % Bars 361 to 365
-	aes'4(-> g4.) ees'8
+	aes4(-> g4.) ees'8
 	ees4->( d4.) bes8
 	aes'4->( g4.) ees8
-	ees4->( d) bes8. f16
+	ees'4->( d) bes8. f16
 	f2 bes,8. f16
 % Bars 366 to 370
 	f2 bes'8. f16
@@ -471,31 +499,41 @@ musicContrabassoMvtIII = \relative c {
 	d->_\fbrackf g-> f->
 	bes-> f-> bes->
 	f2.\fermata
-	bes,8\p^\pizz r bes r bes r
+	\repeat tremolo 6 {bes,16(\p a)}
 % Bars 416 to 420
-	bes r bes r bes r
-	bes r bes r bes r
-	bes r bes r bes r
-	bes r bes r bes r
-	bes r bes r bes r
+	\repeat tremolo 6 {bes( a)}
+	\repeat tremolo 6 {bes( a)}
+	\repeat tremolo 6 {bes( a)}
+	\repeat tremolo 6 {bes( a)}
+	\repeat tremolo 6 {bes( a)}
 % Bars 421 to 425
-	bes r bes r bes r
-	bes_\ppdiminuendo r bes r bes r
-	bes r bes r bes r
-	bes r bes r bes r
-	bes r bes r bes r
+	\repeat tremolo 6 {bes( a)}
+	\repeat tremolo 6 {bes(_\ppdiminuendo a)}
+	\repeat tremolo 6 {bes( a)}
+	\repeat tremolo 6 {bes( a)}
+	\repeat tremolo 6 {bes( a)}
 % Bars 426 to 430
-	bes\pp r r4 r
-	R2.*9
-	
-	
-	
+	bes4.(\pp\< c8 \tuplet 3/2 4 {d ees a,)}
+	a4\!( bes\> g)
+	f( d\pp d')
+	ees2( c8. bes16)
+	bes4( g f)
 % Bars 431 to 435
-	
+	<ees' g>(\pp <d f> <c ees>8. <bes d>16)
+	<<{
+		f'4( ees2~
+		ees2.
+		d4) \oneVoice r r
+	} \\ {
+		bes( g f~
+		f2.
+		bes4) s s
+	}>>
+	R2.
 % Bars 436 to 440
-	f'4\p^\pizz r r
-	f,\pp r\fermata r
-	bes8 r ees r r d
+	<< f'2.(\p\> {s4 s s\!}>>
+	f,2.\pp)\fermata
+	bes8^\pizz r ees r r d
 	d\< r ees r c r
 	f r d\! r bes r
 % Bars 441 to 445
@@ -512,8 +550,8 @@ musicContrabassoMvtIII = \relative c {
 	d8\f r c r bes r
 % Bars 451 to 455
 	a r a' r r4
-	b,8^\arco[ b'] c[ c,] d d'
-	ees[ ees,] e[ e'] bes! bes,!
+	b,8-\offset X-offset -4 ^\arco[ b'] c[ c,] d d'
+	ees[ ees,] e'[ e,] bes'! bes,!
 	b[ b'] c[ c,] d d'
 	ees[ ees,] e[ e'] f f,
 % Bars 456 to 460
@@ -567,7 +605,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 496 to 500
 	f2.\pp
 	R
-	bes\brack\pp
+	bes\pp
 	R
 	bes\ppp~
 % Bar 501

@@ -24,7 +24,7 @@ musicCornoIVMvtIII = \relative c {
 % Bars 31 to 35
 	r4 r8. d''16 d4->\fz
 	r4 r8. d16 d4->\fz
-	r4 r8. d16_\crescmarkup d4->\fz
+	r4 r8. d16-\tweak X-offset -3 _\crescmarkup d4->\fz
 	r4 r8. d16 d4->\fz
 	r4 r8. d16 d4->\fz
 % Bars 36 to 40
@@ -37,7 +37,7 @@ musicCornoIVMvtIII = \relative c {
 	d2->\sfz d4->
 	c'8. c16 c8 r r4
 	c8.\> c16 c8\! r r4
-	c8.\p\> c16 << c2\fermata {s4 s\!}>> \mark \default
+	c8.\p\> c16 << c2\fermata {s4 s8 s\!}>> \mark \default
 	R2.*21
 % Bars 46 to 50
 	
@@ -184,7 +184,7 @@ musicCornoIVMvtIII = \relative c {
 % Bars 201 to 205
 		g~
 		g
-		r4 a8.\pp a16 a8 r
+		r4 \dynEO #'(-2.5 . 1.5) a8.\pp a16 a8 r
 		r4 a8. a16 a8 r
 		r4 a8. a16 a8 r
 % Bars 206 to 210

@@ -37,7 +37,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 31 to 35
 	r4 r8. c'16 c4->\fz
 	r4 r8. c16 c4->\fz
-	r4 r8. c16_\crescmarkup c4->\fz
+	r4 r8. c16-\tweak X-offset -3 _\crescmarkup c4->\fz
 	r4 r8. c16 c4->\fz
 	r4 r8. c16 c4->\fz
 % Bars 36 to 40
@@ -114,7 +114,7 @@ musicCornoIMvtIII = \relative c {
 	c2 c8. c16
 	c2 c8. c16
 	c2 c8. c16
-	c2.\ff~
+	\dynEO #'(-1.5 . 1) c2.\ff~
 	c
 % Bars 111 to 115
 	R2. \mark \default
@@ -160,12 +160,12 @@ musicCornoIMvtIII = \relative c {
 	f e f
 % Bars 146 to 150
 	e2.\fermata
-	g,16(\f a f8-.) f4. f8
+	\dynEO #'(-1.5 . 1.5) g,16(\f a f8-.) f4. f8
 	g16( a f8-.) f4. f8
 	g16( a f8-.) f4. f8
 	g16( a f8-.) f4. f8 \mark \default 
 % Bars 151 to 155
-	R2.*28^\mutaine \transposition e
+	R2.*28^\mutaine \transposition e \changeStaffName #I-IIine
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -188,7 +188,7 @@ musicCornoIMvtIII = \relative c {
 		c~
 % Bars 186 to 190
 		c \clef bass
-		f,,,\fp\>~
+		\grace {s8.} f,,,2.\fp\>~
 		f4 a8( c f g)\! \clef treble
 		a'2.(
 		f4) r r8. a16
@@ -212,7 +212,7 @@ musicCornoIMvtIII = \relative c {
 		r4 bes8. bes16 bes8 r
 % Bars 206 to 210
 		r4 bes8. bes16 bes8 r
-		r4 f'8-.\pp f-. g4
+		r4 \dynEO #'(-2.5 . 1) f'8-.\pp f-. g4
 		r f8-. f-. g4
 		r g8-. g-. aes4
 		r g8-. g-. aes4
@@ -232,7 +232,7 @@ musicCornoIMvtIII = \relative c {
 	
 	
 % Bars 226 to 230
-	\partCombineApart << ees2.\p\< {s4 s s\!}>> \partCombineAutomatic
+	\partCombineApart << ees2.\p\< {s4 s s8 s16 s\!}>> \partCombineAutomatic
 	R2.*7
 % Bars 231 to 235
 	
@@ -251,7 +251,7 @@ musicCornoIMvtIII = \relative c {
 	
 	c'2.\p~
 	c2 r4
-	R2.*2^\mutainf \transposition f
+	R2.*2^\mutainf \transposition f \changeStaffName #I-IIinf
 % Bars 246 to 250
 	\mark \default
 	R2.*8
@@ -360,7 +360,7 @@ musicCornoIMvtIII = \relative c {
 	c2 c8. c16
 % Bars 376 to 380
 	c2 c8. c16
-	c2.\ff~
+	\dynEO #'(-0.5 . 0) c2.\ff~
 	c
 	R2. \mark \markCcBox
 	\partCombineApart r4 r r8 bes\mf
@@ -452,7 +452,7 @@ musicCornoIMvtIII = \relative c {
 	c[ c] bes[ bes] c c
 	d[ d d d] c c
 % Bars 456 to 460
-	bes8.\ff bes16 bes2
+	\dynEO #'(-1 . 0) bes8.\ff bes16 bes2
 	ees8. ees16 ees2
 	bes8. bes16 bes2
 	ees8. ees16 ees2

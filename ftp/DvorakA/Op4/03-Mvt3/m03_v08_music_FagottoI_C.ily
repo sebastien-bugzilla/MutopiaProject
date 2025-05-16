@@ -57,7 +57,7 @@ musicFagottoIMvtIII = \relative c {
 	g4( a bes)
 	c,8.\f c16_\diminuendo c8 r r4
 	c8.\p c16 c8 r r4
-	c8.\p\> c16 << c2\fermata {s4 s\!}>> \mark \default
+	c8.\p\> c16 << c2\fermata {s4 s8 s\!}>> \mark \default
 	R2.*18
 % Bars 46 to 50
 	
@@ -78,10 +78,10 @@ musicFagottoIMvtIII = \relative c {
 	<< {bes2 a4} {s4 s s}>>
 	bes2.
 % Bars 71 to 75
-	bes2( g'4
+	\shape #'((0 . -2.5)(0 . -1)(0 . -1)(-0.5 . -2)) Slur bes2( g'4
 	c, << d2) {s4 s_\>}>>
 	ees2 bes8. bes16\!
-	c8(_\dimmarkup bes a bes c a)
+	\shape #'((0 . 0)(0 . -1)(0 . -1)(0 . 0)) Slur c8(_\dimmarkup bes a bes c a)
 	<< bes2. {s4 s s}>> \partCombineAutomatic
 % Bars 76 to 80
 	f4( g aes)
@@ -94,10 +94,10 @@ musicFagottoIMvtIII = \relative c {
 	e4(\pp g aes)
 	g2( aes4)
 	g2 r4 \mark \default 
-	r4 \clef tenor \partCombineApart r8 g'-.\f f-. ees-.
+	r4 \clef tenor \partCombineApart r8 \dynEO #'(-0.8 . -1.3) g'-.\f f-. ees-.
 % Bars 86 to 90
 	ees4( d2)
-	\once \partCombineAutomatic r4 r8 g-.\f f-. ees-.
+	\once \partCombineAutomatic r4 r8 \dynEO #'(-0.8 . -1.3) g-.\f f-. ees-.
 	ees4( d2) \partCombineAutomatic
 	ees2\p\<(~ ees8 c)
 	c4( bes4. d8)\!
@@ -127,7 +127,7 @@ musicFagottoIMvtIII = \relative c {
 	f
 % Bars 111 to 115
 	R2. \mark \default
-	\partCombineApart r4 r8 g'\f-. f-. f,-.
+	\partCombineApart r4 r8 \dynEO #'(-0.8 . -1.5) g'\f-. f-. f,-.
 	f4(-^ bes-^ bes,-^) \partCombineAutomatic
 	bes'8.\f bes16 bes8 r r4
 	f8. f16 f8 r r4
@@ -156,7 +156,7 @@ musicFagottoIMvtIII = \relative c {
 	R2.*2
 	
 % Bars 136 to 140
-	d8-.\ff bes,-. r4 r
+	\beamOffset #'(-0.5 . -0.5) d8-.\ff bes,-. r4 r
 	R2.
 	g'8-.\f ees-. r4 r
 	R2.
@@ -222,7 +222,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 206 to 210
 		fis8. d16 d8 r r4
 		\tuplet 3/2 4 {b8(\pp c d)} a-. a-. b4->
-		\tuplet 3/2 4 {b8(\<_\crescmarkup c d)} a-. a-. b4->\!
+		\tuplet 3/2 4 {\hairpinShorten #'(0 . -3) b8(\crescD\< c d)} a-. a-. b4->\!
 		\tuplet 3/2 4 {c8(\< d e)} b-. b-. c4->\!
 		\tuplet 3/2 4 {c8( d e)} b-. b-. c4
 % Bars 211 to 215
@@ -292,7 +292,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 266 to 270
 	
 	des2.\ff\startTrillSpan
-	<< des\startTrillSpan {s4 s s\stopTrillSpan}>> \mark \default
+	<< des\startTrillSpan {s4 s s8 s\stopTrillSpan}>> \mark \default
 	d!4-. r r
 	R2.*23
 % Bars 271 to 275
@@ -347,11 +347,11 @@ musicFagottoIMvtIII = \relative c {
 	bes~
 	<< bes2 {s4 s }>> a
 	bes2.
-	bes2( g'4
+	\shape #'((0 . -2)(0 . -1.5)(0 . -1.2)(0 . -1)) Slur bes2( g'4
 	c, << d2) {s4 s_\>} >>
 % Bars 341 to 345
 	ees2 bes8. bes16\!
-	c8(_\dimmarkup bes a bes c a)
+	\shape #'((0 . 0)(0 . -0.8)(0 . -0.8)(0 . 0)) Slur c8(_\dimmarkup bes a bes c a)
 	<< bes2. {s4 s s}>> \partCombineAutomatic
 	f4( g aes)
 	g( bes\< g)\!
@@ -364,9 +364,9 @@ musicFagottoIMvtIII = \relative c {
 % Bars 351 to 355
 	g2( aes4)
 	g2 r4 \mark \markBbBox
-	r4 \clef tenor \partCombineApart r8 g'\f-. f-. ees-.
+	r4 \clef tenor \partCombineApart r8 \dynEO #'(-1 . -1.5) g'\f-. f-. ees-.
 	ees4( d2)
-	\once \partCombineAutomatic r4 r8 g-.\f f-. ees-.
+	\once \partCombineAutomatic r4 r8 \dynEO #'(-1 . -1.5) g-.\f f-. ees-.
 % Bars 356 to 360
 	ees4( d2) \partCombineAutomatic
 	ees2\p\<(~ ees8 c)
@@ -396,7 +396,7 @@ musicFagottoIMvtIII = \relative c {
 	f,2.\ff~
 	f
 	R2. \mark \markCcBox
-	\partCombineApart r4 r8 g'\f-. f-. f,-.
+	\partCombineApart r4 r8 \dynEO #'(-1.5 . -2)  g'\f-. f-. f,-.
 % Bars 381 to 385
 	f4-^( bes-^ bes,-^) \partCombineAutomatic
 	bes'8.\f bes16 bes8 r r4

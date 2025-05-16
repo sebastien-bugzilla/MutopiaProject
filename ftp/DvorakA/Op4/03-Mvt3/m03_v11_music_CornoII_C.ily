@@ -37,7 +37,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 31 to 35
 	r4 r8. c'16 c4->\fz
 	r4 r8. c16 c4->\fz
-	r4 r8. c16_\crescmarkup c4->\fz
+	r4 r8. c16-\tweak X-offset -3 _\crescmarkup c4->\fz
 	r4 r8. c16 c4->\fz
 	r4 r8. c16 c4->\fz
 % Bars 36 to 40
@@ -188,7 +188,7 @@ musicCornoIIMvtIII = \relative c {
 		f~
 % Bars 186 to 190
 		f \clef bass
-		f,,\fp\>~
+		\grace {s8.} f,,2.\fp\>~
 		f4 a8( c f g)\! \clef treble
 		a'2.(
 		f4) r r8. a16
@@ -425,7 +425,7 @@ musicCornoIIMvtIII = \relative c {
 	
 	
 % Bars 431 to 435
-	\mmrPos #-7 R2.
+	\mmrPos #-6 R2.
 	R
 	R
 	f2(\pp\< e4\!

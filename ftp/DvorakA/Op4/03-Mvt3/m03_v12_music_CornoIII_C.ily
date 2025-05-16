@@ -22,9 +22,9 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 26 to 30
 	
 % Bars 31 to 35
-	r4 r8. d''16 d4->\fz
+	r4 r8. \aIIEO #'(-3 . -1) d''16 d4->\fz
 	r4 r8. d16 d4->\fz
-	r4 r8. d16_\crescmarkup d4->\fz
+	r4 r8. d16-\tweak X-offset -3 _\crescmarkup d4->\fz
 	r4 r8. d16 d4->\fz
 	r4 r8. d16 d4->\fz
 % Bars 36 to 40
@@ -37,7 +37,7 @@ musicCornoIIIMvtIII = \relative c {
 	d2->\sfz d4->
 	c8. c16 c8 r r4
 	c8.\> c16 c8\! r r4
-	c8.\p\> c16 << c2\fermata {s4 s\!}>> \mark \default
+	c8.\p\> c16 << c2\fermata {s4 s8 s\!}>> \mark \default
 	R2.*21
 % Bars 46 to 50
 	
@@ -90,13 +90,13 @@ musicCornoIIIMvtIII = \relative c {
 	c2 c8. c16
 	c2 c8. c16
 	c2 c8. c16
-	d2.\ff~
+	\dynEO #'(-1.5 . 1) d2.\ff~
 	d
 % Bars 111 to 115
 	R2. \mark \default
 	R2.
 	\partCombineApart r4 g,-.\f( g,-.) \partCombineAutomatic
-	g'8.\ff g16 g8 r r4
+	\dynEO #'(-0.7 . 0) g'8.\ff g16 g8 r r4
 	g8. g16 g8 r r4
 % Bars 116 to 120
 	c8. c16 c8 r r4
@@ -136,12 +136,12 @@ musicCornoIIIMvtIII = \relative c {
 	d d d
 % Bars 146 to 150
 	d2.\fermata
-	r8 g,\f g4. g8
+	r8 \dynEO #'(-2.3 . 2.5) g,\f g4. g8
 	r g g4. g8
 	r g g4. g8
 	r g g4. g8 \mark \default
 % Bars 151 to 155
-	R2.*28^\mutaind \transposition d
+	R2.*28^\mutaind \transposition d \changeStaffName #III-IVind
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -200,7 +200,7 @@ musicCornoIIIMvtIII = \relative c {
 		
 		ees'4\f r r \mark \default
 	}
-	g,2.\p~
+	\dynEO #'(-1 . 0.5) g,2.\p~
 	g~
 % Bars 221 to 225
 	g~
@@ -226,7 +226,7 @@ musicCornoIIIMvtIII = \relative c {
 	e2.\pp~
 % Bars 246 to 250
 	e2 r4 \mark \default
-	R2.*8^\mutaines \transposition ees
+	R2.*8^\mutaines \transposition ees \changeStaffName #III-IVines
 % Bars 251 to 255
 	
 	
@@ -266,7 +266,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 	
-	d2.->\fz
+	\aIIEO #'(-4 . -1) d2.->\fz
 	d->\fz
 % Bars 306 to 310
 	d->\fz
@@ -362,7 +362,7 @@ musicCornoIIIMvtIII = \relative c {
 	ees-.-> d-.-> ees-.-> \mark \markDdBox
 	R2.*4
 % Bars 406 to 410
-	\tuplet 3/2 4 {c,8\f\< e g} c2\!
+	\tuplet 3/2 4 {\aIIEO #'(-3.5 . 0) c,8\f\< e g} c2\!
 	R2.
 	\tuplet 3/2 4 {c,8\f\< e g} c2\!
 	c4\ff d8. d16 e4

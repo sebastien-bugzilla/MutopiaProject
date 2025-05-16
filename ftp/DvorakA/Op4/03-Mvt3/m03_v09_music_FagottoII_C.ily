@@ -57,7 +57,7 @@ musicFagottoIIMvtIII = \relative c {
 	g4( a bes)
 	f8.\f f16 f8 r r4
 	f8.\p f16 f8 r r4
-	f8.\p\> f16 << f2\fermata {s4 s\!}>> \mark \default
+	f8.\p\> f16 << f2\fermata {s4 s8 s\!}>> \mark \default
 	R2.*18
 % Bars 46 to 50
 	
@@ -292,7 +292,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 266 to 270
 	
 	f2.\ff\startTrillSpan
-	<< f\startTrillSpan {s4 s s\stopTrillSpan}>> \mark \default
+	<< f\startTrillSpan {s4 s s8 s\stopTrillSpan}>> \mark \default
 	bes4-. r r
 	R2.*23
 % Bars 271 to 275

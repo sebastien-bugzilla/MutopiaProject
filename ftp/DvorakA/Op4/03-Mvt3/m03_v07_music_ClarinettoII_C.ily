@@ -71,7 +71,7 @@ musicClarinettoIIMvtIII = \relative c {
 	b8. b16 b2~
 % Bars 66 to 70
 	b8. b16 b2\fermata
-	c,2(_\piuf f4
+	\markEO #'(-3.9 . 1.0) c,2(_\piuf f4
 	f g e)
 	a4( g\< f\!
 	e f g)
@@ -79,7 +79,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a4(\< g f\!
 	a\f g a)\>
 	c( b f8. f16)\!
-	f2(~ f8. d16)
+	\shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur f2(~ f8. d16)
 	c2(\< f4)\!
 % Bars 76 to 80
 	g( a bes)
@@ -154,7 +154,7 @@ musicClarinettoIIMvtIII = \relative c {
 	R2.*2
 	
 % Bars 136 to 140
-	g8-.\ff c,-. r4 r
+	\beamOffset #'(0.5 . 0.5) \dynEO #'(-2 . 0) g8-.\ff c,-. r4 r
 	R2.
 	a'8-.\f f,-. r4 r
 	R2.
@@ -302,8 +302,8 @@ musicClarinettoIIMvtIII = \relative c {
 	r bes( c des\< ees f g bes des!\!)
 % Bars 266 to 270
 	ees\f( des c bes aes g f ees des)}
-	g2.\ff\startTrillSpan
-	<< g\startTrillSpan {s4 s s\stopTrillSpan }>> \mark \default
+	g2.-\tweak X-offset 0.5 \ff\startTrillSpan
+	<< g\startTrillSpan {s4 s s8 s\stopTrillSpan }>> \mark \default
 	c4-. r r
 	R2.*3
 % Bars 271 to 275
@@ -343,7 +343,7 @@ musicClarinettoIIMvtIII = \relative c {
 	g( f e)
 	d( c b)
 	a(\> g f)\!
-	g2.\p
+	\dynEO #'(-1.7 . 2) g2.\p
 	g8. g16 g8 r r4
 % Bars 311 to 315
 	g8.\> g16 g8\! r r4
@@ -360,7 +360,7 @@ musicClarinettoIIMvtIII = \relative c {
 	b8. b16 b2~
 	b8. b16 b2~
 	b8. b16 b2\fermata
-	c,2(_\piuf f4
+	\markEO #'(-3.8 . 1.1) c,2(_\piuf f4
 % Bars 336 to 340
 	f g e)
 	a4( g\< f\!
@@ -369,7 +369,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a\f g a)\>
 % Bars 341 to 345
 	c( b f8. f16)\!
-	f2(~ f8. d16)
+	\shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur f2(~ f8. d16)
 	c2(\< f4\!)
 	g( a bes)
 	a( g\< f)\!
@@ -414,7 +414,7 @@ musicClarinettoIIMvtIII = \relative c {
 	g,2.\brack\ff~
 	g
 	R2. \mark \markCcBox
-	b'16(\f c b c b8) r r4
+	\dynEO #'(-1.5 . 1) b'16(\f c b c b8) r r4
 % Bars 381 to 385
 	R2.
 	c8.\f c16 c8 r r4
@@ -443,7 +443,7 @@ musicClarinettoIIMvtIII = \relative c {
 	b-.-> c-.-> b-.-> \mark \markDdBox
 	R2.*2
 	
-	g8-.\ff c,-. r4 r
+	\dynEO #'(-1.5 . 0) g8-.\ff c,-. r4 r
 	R2.
 % Bars 406 to 410
 	a'8-.\f f,-. r4 r
@@ -480,7 +480,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 436 to 440
 	c2 b4\!
 	g2.\pp\fermata
-	c,4( a e
+	\shape #'((0 . 2)(0 . 1)(0 . 1)(0 . 0)) Slur c,4( a e
 	g a b
 	c g e)
 % Bars 441 to 445

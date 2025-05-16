@@ -23,8 +23,9 @@
 \include "./00-Common/DvorakSymph2_Shortcuts.ily"
 \include "./00-Common/DvorakSymph2_Tempi.ily"
 \include "./00-Common/DvorakSymph2_Format_Cond_Mvt03.ily"
-\include "./03-Mvt3/m03_v02_music_FlautoI.ily"
-\include "./03-Mvt3/m03_v03_music_FlautoII.ily"
+%\include "./00-Common/DvorakSymph2_Format_temp.ily"
+\include "./03-Mvt3/m03_v02_music_FlautoI_C.ily"
+\include "./03-Mvt3/m03_v03_music_FlautoII_C.ily"
 \include "./03-Mvt3/m03_v04_music_OboeI_C.ily"
 \include "./03-Mvt3/m03_v05_music_OboeII_C.ily"
 \include "./03-Mvt3/m03_v06_music_ClarinettoI_C.ily"
@@ -37,15 +38,15 @@
 \include "./03-Mvt3/m03_v13_music_CornoIV_C.ily"
 \include "./03-Mvt3/m03_v14_music_TrombeI_C.ily"
 \include "./03-Mvt3/m03_v15_music_TrombeII_C.ily"
-\include "./03-Mvt3/m03_v16_music_TrombonoI.ily"
-\include "./03-Mvt3/m03_v17_music_TrombonoII.ily"
-\include "./03-Mvt3/m03_v18_music_TrombonoIII.ily"
-\include "./03-Mvt3/m03_v19_music_Timpani.ily"
-\include "./03-Mvt3/m03_v20_music_ViolinoI.ily"
-\include "./03-Mvt3/m03_v21_music_ViolinoII.ily"
-\include "./03-Mvt3/m03_v22_music_Viola.ily"
-\include "./03-Mvt3/m03_v23_music_Violoncello.ily"
-\include "./03-Mvt3/m03_v24_music_Contrabasso.ily"
+\include "./03-Mvt3/m03_v16_music_TrombonoI_C.ily"
+\include "./03-Mvt3/m03_v17_music_TrombonoII_C.ily"
+\include "./03-Mvt3/m03_v18_music_TrombonoIII_C.ily"
+\include "./03-Mvt3/m03_v19_music_Timpani_C.ily"
+\include "./03-Mvt3/m03_v20_music_ViolinoI_C.ily"
+\include "./03-Mvt3/m03_v21_music_ViolinoII_C.ily"
+\include "./03-Mvt3/m03_v22_music_Viola_C.ily"
+\include "./03-Mvt3/m03_v23_music_Violoncello_C.ily"
+\include "./03-Mvt3/m03_v24_music_Contrabasso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -70,9 +71,9 @@
 				\new GrandStaff \with { \nameGrandStaffIMvtIII
 				\consists Keep_alive_together_engraver } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtIII
-%						}
+						\new Voice {
+							\formatConductorMvtIII
+						}
 						\new Voice {
 							\tempiMvtIII
 						}
@@ -160,6 +161,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+%			system-count = 80
 		}
 	}
 }

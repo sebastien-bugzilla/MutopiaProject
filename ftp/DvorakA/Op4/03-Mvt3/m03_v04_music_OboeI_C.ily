@@ -76,7 +76,7 @@ musicOboeIMvtIII = \relative c {
 	a2) g8( f
 % Bars 66 to 70
 	a2.)\fermata
-	bes,2(_\piuf bes4
+	\markEO #'(-4 . 1.4) bes,2(_\piuf bes4
 	bes2 d4)
 	ees( f ees
 	d ees f)
@@ -97,17 +97,17 @@ musicOboeIMvtIII = \relative c {
 	g2(\pp aes4)
 	g2( aes4)
 	g2 e!8. e16 \mark \default
-	ees!4.\fz ees8-. ees-. c-.
+	\dynEO #'(-1 . -0.3) ees!4.\fz ees8-. ees-. c-.
 % Bars 86 to 90
 	c4(\> d)\! r
-	ees4.\fz ees8-. ees-. c-.
+	\dynEO #'(-1 . -0.3) ees4.\fz ees8-. ees-. c-.
 	c4( d) r
 	R2.*8
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
-	d4(\f c bes)
+	\aIIEO #'(-3 . -1) d4(\f c bes)
 	f'( ees d)
 	a'( g f)
 	bes(-> a g)
@@ -214,7 +214,7 @@ musicOboeIMvtIII = \relative c {
 % Bars 191 to 195
 	
 % Bars 196 to 200
-		a2.\pp~
+		\dynEO #'(-1.5 . 0) a2.\pp~
 		a~
 		a
 		R2.
@@ -228,7 +228,7 @@ musicOboeIMvtIII = \relative c {
 % Bars 206 to 210
 		fis4\! r r
 		d2\pp(~ d8 fis
-		d2\<_\crescmarkup~ d8 fis)\!
+		d2\crescD\<~ d8 fis)\!
 		c2(~\< c8 e\!
 		c2~ c8 e)
 % Bars 211 to 215
@@ -353,7 +353,7 @@ musicOboeIMvtIII = \relative c {
 	a2) g8( f
 	a2) g8( f
 	a2.)\fermata 
-	bes,2(_\piuf bes4
+	\markEO #'(-4 . 1.4) bes,2(_\piuf bes4
 % Bars 336 to 340
 	bes2 d4)
 	ees( f ees
@@ -375,9 +375,9 @@ musicOboeIMvtIII = \relative c {
 % Bars 351 to 355
 	g2( aes4)
 	g2 e!8. e16 \mark \markBbBox
-	ees!4.\fz ees8-. ees-. c-.
+	\dynEO #'(-1 . 0) ees!4.\fz ees8-. ees-. c-.
 	c4(\> d)\! r
-	ees4.\fz ees8-. ees-. c-.
+	\dynEO #'(-1 . 0) ees4.\fz ees8-. ees-. c-.
 % Bars 356 to 360
 	c4( d) r
 	R2.*8
@@ -386,7 +386,7 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	d4(\f c bes)
+	\aIIEO #'(-3.5 . -1) d4(\f c bes)
 % Bars 366 to 370
 	f'( ees d)
 	a'( g f)
@@ -433,7 +433,7 @@ musicOboeIMvtIII = \relative c {
 	a-.-> bes-.-> a-.-> \mark \markDdBox
 	R2.*2
 	
-	f8-.\ff bes,-. r4 r
+	\partCombineApart f8-. bes,-. \partCombineAutomatic r4 r
 	R2.
 % Bars 406 to 410
 	\tuplet 3/2 4 {ees,8-.\ff\< g-. bes-.\!} ees2->

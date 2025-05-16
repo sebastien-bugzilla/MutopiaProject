@@ -78,8 +78,8 @@ musicOboeIIMvtIII = \relative c {
 	R2._\fermata
 	f2( g4
 	ees f aes)
-	<< bes2( {s4 s\< }>> a!4\!
-	bes8)[-. r16 bes-.] bes2~
+	<< bes2( {s4 s-\tweak extra-offset #'(0 . 2.2) \< }>> a!4\!
+	bes8)[-. b16\rest bes-.] bes2~
 % Bars 71 to 75
 	<< bes2. {s4\< s s\!}>>
 	c4(\f d bes\>~
@@ -356,8 +356,8 @@ musicOboeIIMvtIII = \relative c {
 	f2( g4
 % Bars 336 to 340
 	ees f aes)
-	<< bes2( {s4 s\< }>> a!\!
-	bes8-.)[ r16 bes-.] bes2~
+	<< bes2( {s4 s-\tweak extra-offset #'(0 . 2.3) \< }>> a!\!
+	bes8-.)[ bes16\rest bes-.] bes2~
 	<< bes2. {s4\< s s\!}>>
 	c\f( d bes~\>
 % Bars 341 to 345
@@ -404,7 +404,7 @@ musicOboeIIMvtIII = \relative c {
 	f,2.\ff~
 	f
 	R2. \mark \markCcBox
-	c'4.\f c8-. c-. a-.
+	\dynEO #'(-1 . 0) c'4.\f c8-. c-. a-.
 % Bars 381 to 385
 	a4( bes bes)
 	g'8.\f g16 g8 r r4

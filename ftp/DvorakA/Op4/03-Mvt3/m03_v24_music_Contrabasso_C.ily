@@ -512,7 +512,7 @@ musicContrabassoMvtIII = \relative c {
 	d8\f r c r bes r
 % Bars 451 to 455
 	a r a' r r4
-	b,8^\arco[ b'] c[ c,] d d'
+	b,8-\offset X-offset -4 ^\arco[ b'] c[ c,] d d'
 	ees[ ees,] e[ e'] bes! bes,!
 	b[ b'] c[ c,] d d'
 	ees[ ees,] e[ e'] f f,
