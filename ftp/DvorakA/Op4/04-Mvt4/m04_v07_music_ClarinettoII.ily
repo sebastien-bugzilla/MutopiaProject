@@ -471,8 +471,8 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	
 	
-	R1*7
 	
+	R1*7
 % Bars 406 to 410
 	
 % Bars 411 to 415

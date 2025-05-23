@@ -23,9 +23,9 @@
 \include "./00-Common/DvorakSymph2_LayoutConductors.ily"
 \include "./00-Common/DvorakSymph2_Tempi.ily"
 \include "./00-Common/DvorakSymph2_Format_Cond_Mvt04.ily"
-\include "./04-Mvt4/m04_v01_music_Piccolo.ily"
-\include "./04-Mvt4/m04_v02_music_FlautoI.ily"
-\include "./04-Mvt4/m04_v03_music_FlautoII.ily"
+\include "./04-Mvt4/m04_v01_music_Piccolo_C.ily"
+\include "./04-Mvt4/m04_v02_music_FlautoI_C.ily"
+\include "./04-Mvt4/m04_v03_music_FlautoII_C.ily"
 \include "./04-Mvt4/m04_v04_music_OboeI_C.ily"
 \include "./04-Mvt4/m04_v05_music_OboeII_C.ily"
 \include "./04-Mvt4/m04_v06_music_ClarinettoI_C.ily"
@@ -38,15 +38,15 @@
 \include "./04-Mvt4/m04_v13_music_CornoIV_C.ily"
 \include "./04-Mvt4/m04_v14_music_TrombeI_C.ily"
 \include "./04-Mvt4/m04_v15_music_TrombeII_C.ily"
-\include "./04-Mvt4/m04_v16_music_TrombonoI.ily"
-\include "./04-Mvt4/m04_v17_music_TrombonoII.ily"
-\include "./04-Mvt4/m04_v18_music_TrombonoIII.ily"
-\include "./04-Mvt4/m04_v19_music_Timpani.ily"
-\include "./04-Mvt4/m04_v20_music_ViolinoI.ily"
-\include "./04-Mvt4/m04_v21_music_ViolinoII.ily"
-\include "./04-Mvt4/m04_v22_music_Viola.ily"
-\include "./04-Mvt4/m04_v23_music_Violoncello.ily"
-\include "./04-Mvt4/m04_v24_music_Contrabasso.ily"
+\include "./04-Mvt4/m04_v16_music_TrombonoI_C.ily"
+\include "./04-Mvt4/m04_v17_music_TrombonoII_C.ily"
+\include "./04-Mvt4/m04_v18_music_TrombonoIII_C.ily"
+\include "./04-Mvt4/m04_v19_music_Timpani_C.ily"
+\include "./04-Mvt4/m04_v20_music_ViolinoI_C.ily"
+\include "./04-Mvt4/m04_v21_music_ViolinoII_C.ily"
+\include "./04-Mvt4/m04_v22_music_Viola_C.ily"
+\include "./04-Mvt4/m04_v23_music_Violoncello_C.ily"
+\include "./04-Mvt4/m04_v24_music_Contrabasso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -69,14 +69,17 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtIV
-%					}
+					\new Voice {
+						\timeMvtIV \nameStaffIMvtIV \musicPiccoloMvtIV
+					}
+					\new Voice {
+						\formatConductorMvtIV
+					}
 					\new Voice {
 						\tempiMvtIV
 					}
 					\new Voice {
-						\timeMvtIV \nameStaffIMvtIV \musicPiccoloMvtIV
+						\displayFilterVoice
 					}
 				>>
 				\new GrandStaff \with { \nameGrandStaffIMvtIV
@@ -155,14 +158,18 @@
 				\new Staff {
 					\timeMvtIV \nameStaffXVIIMvtIV \musicVioloncelloMvtIV
 				}
-				\new Staff \with {\RemoveAllEmptyStaves \remove Time_signature_engraver \magnifyStaff #2/3 firstClef = ##f } {
+				\new Staff \with {
+				\RemoveAllEmptyStaves \remove Time_signature_engraver 
+				\magnifyStaff #2/3 firstClef = ##f } {
 					\timeMvtIV 
 					\nameStaffXVIIOssiaMvtIV \musicVioloncelloOssiaMvtIV
 				}
 				\new Staff {
 					\timeMvtIV \nameStaffXVIIIMvtIV \musicContrabassoMvtIV
 				}
-				\new Staff \with {\RemoveAllEmptyStaves \remove Time_signature_engraver \magnifyStaff #2/3 firstClef = ##f } {
+				\new Staff \with {
+				\RemoveAllEmptyStaves \remove Time_signature_engraver 
+				\magnifyStaff #2/3 firstClef = ##f } {
 					\timeMvtIV 
 					\nameStaffXVIIIOssiaMvtIV \musicContrabassoOssiaMvtIV
 				}
@@ -172,6 +179,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+%			system-count = 95
 		}
 	}
 }

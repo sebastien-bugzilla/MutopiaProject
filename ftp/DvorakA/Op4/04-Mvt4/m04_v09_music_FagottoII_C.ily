@@ -163,7 +163,7 @@ musicFagottoIIMvtIV = \relative c {
 	bes\fz\>
 	bes~\<
 % Bars 136 to 140
-	<< bes\fz\> {s4 s s s\!}>>
+	<< \hairpinShorten #'(-0.3 . -1.5) bes\fz\> {s4 s s s\!}>>
 	<< g1 {s4\< s s s\!}>>
 	<< g1~\> {s4 s s s\!}>>
 	g1~\p\>

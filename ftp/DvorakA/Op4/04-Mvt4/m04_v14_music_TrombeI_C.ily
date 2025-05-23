@@ -74,7 +74,7 @@ musicTrombeIMvtIV = \relative c {
 	g2 bes
 	b! b
 	b << g \\ \InCueContext \noteShift #2.1 d' >>
-	r a\ff~
+	r \dynEO #'(-2.5 . 3) a\ff~
 % Bars 106 to 110
 	a1
 	r2 a~
@@ -126,7 +126,7 @@ musicTrombeIMvtIV = \relative c {
 	
 	
 	
-	gis4->\brack\f gis-> gis-> gis->
+	\dynEO #'(-4 . 3) gis4->\brack\f gis-> gis-> gis->
 	gis2-> cis->
 % Bars 171 to 175
 	e1->~
@@ -167,7 +167,7 @@ musicTrombeIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 231 to 235
-	b2->\f r
+	\dynEO #'(-2 . 2) b2->\f r
 	b-> r
 	b-> r
 	cis-> r
@@ -242,7 +242,7 @@ musicTrombeIMvtIV = \relative c {
 	
 	
 	
-	g2->\ff r
+	\dynEO #'(-2.8 . 2.5) g2->\ff r
 % Bars 331 to 335
 	g-> r
 	g-> r
@@ -262,14 +262,14 @@ musicTrombeIMvtIV = \relative c {
 % Bars 356 to 360
 	
 	
-	r2 e'->\ff~
+	r2 \dynEO #'(-2.5 . 1.5) e'->\ff~
 	e \partCombineApart \tuplet 3/2 2 {a,4-. b-. c-.} \partCombineAutomatic
-	r2 e2->\ff~
+	r2 \dynEO #'(-2.5 . 1.5) e2->\ff~
 % Bars 361 to 365
 	e \partCombineApart \tuplet 3/2 2 {a,4-. b-. c-.} \partCombineAutomatic
-	r2 f->\ff~
+	r2 \dynEO #'(-2.5 . 1.5) f->\ff~
 	f \partCombineApart \tuplet 3/2 2 {bes,4-. c-. d-.} \partCombineAutomatic
-	r2 f->\ff~
+	r2 f->-\tweak X-offset 0.2 \ff~
 	f \partCombineApart \tuplet 3/2 2 {bes,4-. c-. d-.} \partCombineAutomatic
 % Bars 366 to 370
 	a\ff r \once \partCombineApart a r
@@ -279,7 +279,7 @@ musicTrombeIMvtIV = \relative c {
 	r a r a
 % Bars 371 to 375
 	r gis r a \mark \default
-	g!2\f-^ r
+	\dynEO #'(-2.2 . 2.5) g!2\f-^ r
 	g-^ r
 	g-^ r
 	c4 c8 c \tuplet 3/2 2 {c4 c c}
@@ -287,7 +287,7 @@ musicTrombeIMvtIV = \relative c {
 	g-. g-. r2
 	g4-. g-. r2
 	g4-. g-. r2
-	c4 c8 c \tuplet 3/2 2 {c4 c c}
+	c4 c8 c \tuplet 3/2 2 {\once \tupletDown c4 c c}
 	c8 r r4 r2
 % Bars 381 to 385
 	R1*11
@@ -331,7 +331,7 @@ musicTrombeIMvtIV = \relative c {
 	R1*2
 % Bars 441 to 445
 	
-	r2 \tuplet 3/2 2 {fis,4\f\< gis a\!}
+	r2 \tuplet 3/2 2 {\aIIEO #'(-3.5 . 0) fis,4\f\< gis a\!}
 	a1->\fz
 	gis4-> r r2
 	R1
@@ -360,7 +360,7 @@ musicTrombeIMvtIV = \relative c {
 	c r r2
 	R1
 % Bars 466 to 470
-	aes,2->\f c4-> ees->
+	\dynEO #'(-2 . 1) aes,2->\f c4-> ees->
 	f-> aes-> c-> aes->
 	b!1->\ff~
 	b~
@@ -448,7 +448,7 @@ musicTrombeIMvtIV = \relative c {
 	g g
 	g g
 	g g
-	g1\ff-^~
+	\dynEO #'(-2.3 . 2) g1\ff-^~
 	g
 % Bars 546 to 550
 	g-^~

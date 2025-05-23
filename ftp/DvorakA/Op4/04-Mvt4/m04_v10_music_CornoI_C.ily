@@ -52,9 +52,9 @@ musicCornoIMvtIV = \relative c {
 	cis4. cis8 \tuplet 3/2 2 {gis4\> a b}
 % Bars 56 to 60
 	a2. b4\!
-	cis4. a8 \tuplet 3/2 2 {bes4(\< c d)}
+	cis4. a8 \tuplet 3/2 2 {bes4(_\< c d)}
 	a4. c8 \tuplet 3/2 2 {d4( e f!)\!}
-	f2.\fz( c4\>
+	f2._\fz( c4_\>
 	d c bes g)\!
 % Bars 61 to 65
 	c,1\p~
@@ -82,7 +82,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 86 to 90
 	c~
 	c
-	g->\fz
+	\dynEO #'(-2.5 . 2) g->\fz
 	gis4->\f a-> b-> c->
 	b2-> d->
 % Bars 91 to 95
@@ -110,7 +110,7 @@ musicCornoIMvtIV = \relative c {
 	c2 r4 r8 g
 	c2 r4 r8 g
 % Bars 111 to 115
-	c1\brack\mf~
+	\dynEO #'(-2 . 0.5) c1\brack\mf~
 	<< c~ {s4 s s s_\crescmarkup} >>
 	c1~
 	c
@@ -169,7 +169,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 171 to 175
 	d4. d8 \tuplet 3/2 2 {d4-. d-. d-.}
 	\partCombineApart d2~ d4 \partCombineAutomatic r
-	c4.\pp c8 \tuplet 3/2 2 {c4 d\< ees\!}
+	c4.\pp c8 \tuplet 3/2 2 {\once \tupletUp c4 d\< ees\!}
 	<< ees2( {s4\> s\!}>> d4) r \mark \default
 	cis1->\f~
 % Bars 176 to 180
@@ -203,7 +203,7 @@ musicCornoIMvtIV = \relative c {
 	d1\fp~
 	d
 % Bars 201 to 205
-	g,->\pp~
+	\dynEO #'(-3 . 2) g,->\pp~
 	g
 	R1*8
 % Bars 206 to 210
@@ -298,7 +298,7 @@ musicCornoIMvtIV = \relative c {
 	R1*2
 	
 	\partCombineApart r2 bes(\pp
-	\tuplet 3/2 4 {c4 bes f'} ees2) \partCombineAutomatic
+	\tuplet 3/2 2 {c4 bes f'} ees2) \partCombineAutomatic
 % Bars 306 to 310
 	R1*12
 % Bars 311 to 315
@@ -325,7 +325,7 @@ musicCornoIMvtIV = \relative c {
 	f2 f4 f2 f4
 	f2 f4 f2 f4
 	f2 f4 f2 f4
-	dis\fp-. dis-. dis-. dis-. dis-. dis-. 
+	\dynEO #'(-1 . 1) dis\fp-. dis-. dis-. dis-. dis-. dis-. 
 	dis-. dis-. dis-. dis-. dis-. dis-. 
 % Bars 336 to 340
 	dis-. dis-. dis-. dis-. dis-. dis-. 
@@ -368,9 +368,9 @@ musicCornoIMvtIV = \relative c {
 	cis1->\fz
 	\partCombineApart d2( << f~\<_\dimmarkup {s8 s s s\!}>>
 % Bars 381 to 385
-	f4) e(\> g4. f8)
+	f4) e(_\> g4. f8)
 	<< f1~ {s4 s8 s\! s4 s}>>
-	f4 e(\p\> g4. f8\!)
+	f4 e(_\p_\> g4. f8\!)
 	e2(\p f
 	cis d)
 % Bars 386 to 390
@@ -431,7 +431,7 @@ musicCornoIMvtIV = \relative c {
 	\once \partCombineApart fis4 r r2
 % Bars 441 to 445
 	R1
-	r2 \tuplet 3/2 2 {e'4->\f\< e-> e->\!}
+	r2 \tuplet 3/2 2 {\once \tupletUp e'4->\f\< e-> e->\!}
 	e1->\fz
 	e4-> r r2
 	R1
@@ -440,7 +440,7 @@ musicCornoIMvtIV = \relative c {
 	e1->\fz
 	e2 r
 	R1
-	d2->\ff d->
+	\dynEO #'(0.5 . 1) d2->\ff d->
 % Bars 451 to 455
 	d-> r
 	d-> d->
@@ -491,7 +491,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 491 to 495
 	
 % Bars 496 to 500
-	\tuplet 3/2 2 {cis4\ff cis cis cis cis cis
+	\tuplet 3/2 2 {\dynEO #'(-0.8 . 1.8) cis4\ff cis cis cis cis cis
 	b b b b b b 
 	cis cis cis cis cis cis
 	b b b b b b}
@@ -533,7 +533,7 @@ musicCornoIMvtIV = \relative c {
 	d
 	d~
 % Bars 531 to 535
-	d2 \tuplet 3/2 2 {d4-> d-> d->}
+	d2 \tuplet 3/2 2 {\once \tupletUp d4-> d-> d->}
 	ees1->\fz~
 	ees
 	ees->~
@@ -542,7 +542,7 @@ musicCornoIMvtIV = \relative c {
 	e!1~
 	e
 	c!~
-	c2 \tuplet 3/2 2 {c4-> c-> c->}
+	c2 \tuplet 3/2 2 {\once \tupletUp c4-> c-> c->}
 	bes2-> a->
 % Bars 541 to 545
 	bes-> c->

@@ -298,7 +298,7 @@ musicCornoIMvtIV = \relative c {
 	R1*2
 	
 	r2 bes(\pp
-	\tuplet 3/2 4 {c4 bes f'} ees2)
+	\tuplet 3/2 2 {c4 bes f'} ees2)
 % Bars 306 to 310
 	R1*12
 % Bars 311 to 315

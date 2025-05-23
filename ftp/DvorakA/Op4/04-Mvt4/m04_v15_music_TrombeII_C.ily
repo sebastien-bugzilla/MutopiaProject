@@ -24,7 +24,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 36 to 40
 	\mark \default
-	b'2\ff r
+	\dynEO #'(-2.8 . 2) b'2\ff r
 	b r
 	b r
 	b r
@@ -269,7 +269,7 @@ musicTrombeIIMvtIV = \relative c {
 	e \tuplet 3/2 2 {a4-. b-. c-.}
 	r2 f,->\ff~
 	f \tuplet 3/2 2 {bes4-. c-. d-.}
-	r2 f,->\ff~
+	r2 f,->-\tweak X-offset 0.2 \ff~
 	f \tuplet 3/2 2 {bes4-. c-. d-.}
 % Bars 366 to 370
 	d,\ff r a' r
@@ -306,7 +306,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	e4.->\brack\f e8-. e4-. e-.
+	\dynEO #'(-2.8 . 2) e4.->\brack\f e8-. e4-. e-.
 	e2. e4-.
 % Bars 416 to 420
 	cis2-> cis->
@@ -460,7 +460,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	r2 fis'->\ff
+	r2 fis'->-\offset X-offset -2.8 \ff
 	fis-> a4 d,
 % Bars 556 to 560
 	g1-^\ff~

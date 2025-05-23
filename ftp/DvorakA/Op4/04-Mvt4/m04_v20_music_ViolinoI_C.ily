@@ -119,7 +119,7 @@ musicViolinoIMvtIV = \relative c {
 	ees2 d4. c8
 	bes2-> a->
 	g-> a->
-	<<{\InCueContext bes4 d f4. a,8} \\ {bes2 d4. c8}>>
+	<<{\InCueContext bes4 d f4. \noteShift #1 a,8} \\ {bes2 d4. c8}>>
 	c2:16\ff c:
 % Bars 106 to 110
 	c: c:
@@ -143,7 +143,7 @@ musicViolinoIMvtIV = \relative c {
 	d\ff c bes a bes c d ees
 	f ees d c d ees f g
 	aes g f e f g aes bes
-	c2..\fz c,8
+	\dynEO #'(0 . 2) c2..\fz c,8
 	d c bes a bes c d ees
 % Bars 126 to 130
 	f ees d c d ees f g
@@ -165,7 +165,7 @@ musicViolinoIMvtIV = \relative c {
 	g: aes: des: f:
 	bes2.: aes4:
 	g: aes:\< des: f:\!
-	bes2(\fpp\> aes)\!
+	\hairpinShorten #'(-0.3 . -2) bes2(\fpp\> aes)\!
 	c,( f4.-> ees8-.)
 % Bars 151 to 155
 	ees2\p~ ees8[ bes( des8.-> c16-.)]
@@ -186,7 +186,7 @@ musicViolinoIMvtIV = \relative c {
 	b b b b  b b b b
 	e-> e e e dis-> dis dis e
 % Bars 166 to 170
-	e\ffz\< e e e  e[ e] \tuplet 5/4 4 {b16( cis dis e fis\!}
+	e\ffz\< e e e  e[ e] \tuplet 5/4 4 {\once \tupletUp b16( cis dis e fis\!}
 	g8->)\ffz g g f!  e e e d
 	e e e e  e[ e] e16( fis g a
 	b4->)\ff b8 b  b b b b
@@ -278,13 +278,13 @@ musicViolinoIMvtIV = \relative c {
 % Bars 241 to 245
 	cis b4.-> r2
 	r16 cis,( dis eis fis gis a b cis4.) cis8-.
-	d2.\ff d16( cis b a
+	\dynEO #'(0 . 2) d2.\ff d16( cis b a
 	\tuplet 3/2 2 {gis4-.) b-. gis-. f!-. aes-. f-.}
 	d2-^ cis4-^ b-^
 % Bars 246 to 250
 	\tuplet 3/2 4 {bes!8(\f c! bes f! g f d ees d} bes) r
 	R1
-	\tuplet 3/2 4 {bes'8(_\dimD\> c bes f g f d ees d} bes)\! r
+	\tuplet 3/2 4 {\once \tupletUp bes'8(_\dimD\> c bes f g f d ees d} bes)\! r
 	R1
 	\tuplet 3/2 4 {bes'8(\p c bes f g f d ees d} bes) r
 % Bars 251 to 255
@@ -294,7 +294,7 @@ musicViolinoIMvtIV = \relative c {
 	bes1(~ 
 	bes2~ \tuplet 3/2 4 {bes8 a bes g f d)} \mark \default
 % Bars 256 to 260
-	bes2\mp \tuplet 3/2 2 {c4(\< bes g')\!}
+	bes2-\offset X-offset -0.5 \mp \tuplet 3/2 2 {c4(\< bes g')\!}
 	f2._\espressivo g8(\< a
 	bes4 a4.\!  g8\> d4)\!
 	f2. f4
@@ -387,7 +387,7 @@ musicViolinoIMvtIV = \relative c {
 	cis2.-> ais16( b cis dis)
 	e4.-> dis8-. cis4-. bis-.
 	cis2.-> cis16( dis e fis)
-	gis4(\fp fis4. e8 b4)
+	\dynEO #'(0 . 2) gis4(\fp fis4. e8 b4)
 	fis'( e4. cis8 b4)
 % Bars 336 to 340
 	fis'( e4. cis8 b4)
@@ -436,12 +436,12 @@ musicViolinoIMvtIV = \relative c {
 	g\f f ees d ees f g aes
 	bes aes g f g aes bes c
 	des c bes a! bes c des ees
-	f2..->\fz f,8
+	\dynEO #'(0 . 2) f2..->\fz f,8
 % Bars 376 to 380
 	g f ees d ees f g aes
 	bes aes g f g aes bes c
 	des c bes a! \tuplet 5/4 2 {bes( c des ees f)}
-	fis1\fz-^(
+	\dynEO #'(0 . 2) fis1\fz-^(
 	g8) r r4 r2
 % Bars 381 to 385
 	R1*11
@@ -469,12 +469,12 @@ musicViolinoIMvtIV = \relative c {
 	des2\p des4.-> des8-.
 	des'2\fp(~ des8 ces bes aes)
 	ges2\p\< ges4.-> ges8-.
-	ges'2_\fpmarkup(~ ges8 fes ees des)
+	\markEO #'(0 . 2) ges'2_\fpmarkup(~ ges8 fes ees des)
 	b2-> b4.-> b8-.\!
 % Bars 411 to 415
 	b'2\fz(~ b8 a gis fis)
 	e\f e e e dis dis dis e
-	e e e e e e \tuplet 5/4 4 {b16(\< cis dis e fis)\!}
+	e e e e e e \tuplet 5/4 4 {\once \tupletUp b16(\< cis dis e fis)\!}
 	g8->\fz g g f! e->\fz e e d
 	e-> e e e  e e e e
 % Bars 416 to 420
@@ -493,7 +493,7 @@ musicViolinoIMvtIV = \relative c {
 	<d, b' g'>4-> r r2
 	q4 r <d b' b'> r8. <g, g'>16
 	q4 r r2
-	<d' b' g'>4_\crescendo r <g d' b'> r8. <g, g'>16
+	<d' b' g'>4-\offset X-offset 1 _\crescendo r <g d' b'> r8. <g, g'>16
 	q4 r r2
 % Bars 431 to 435
 	<g' d' b'>4 r <g d' d'> r8. <g, g'>16
@@ -535,7 +535,7 @@ musicViolinoIMvtIV = \relative c {
 	g g g g d-> d e e
 	f f a, a b b c c
 	d d e\< e f f b b\! \mark \default
-	b\fff b b b b dis, gis-> fis
+	\dynEO #'(0 . 2) b\fff b b b b dis, gis-> fis
 	fis fis fis fis fis b, e-> dis
 % Bars 466 to 470
 	dis dis dis dis dis fis, cis'-> b
@@ -550,7 +550,7 @@ musicViolinoIMvtIV = \relative c {
 	g g g g  g bes, f'-> ees
 	ees ees ees ees  ees g, c-> bes
 % Bars 476 to 480
-	fis'4:16\ff <fis fis'>2.:
+	\dynEO #'(0 . 1) fis'4:16\ff <fis fis'>2.:
 	q2: q:
 	q: q:
 	q: q:
@@ -583,7 +583,7 @@ musicViolinoIMvtIV = \relative c {
 	e2-> fis8. g16 a4
 	a,2-> b8. cis16 d4
 	e2-> fis8. g16 a4
-	\tuplet 3/2 2 {bes!4:8\ff a: g: fis: g: a:
+	\tuplet 3/2 2 {\dynEO #'(0 . 2) bes!4:8\ff a: g: fis: g: a:
 	g: f!: g: a: g: f:
 % Bars 506 to 510
 	bes: a: g: fis: g: a:
@@ -595,7 +595,7 @@ musicViolinoIMvtIV = \relative c {
 	f: f:}
 	\tuplet 3/2 2 {g4:8 a: bes: g: a: bes:
 	g: a: bes: g: a: bes:} \mark \default
-	bes1->\fff
+	\dynEO #'(0 . 2) bes1->\fff
 	a2-> g4.( d8)
 % Bars 516 to 520
 	f1~

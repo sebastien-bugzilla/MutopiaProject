@@ -12,7 +12,7 @@ musicFlautoIIMvtIV = \relative c {
 	R1*3
 	
 	
-	r4 bes'''8(\pp a) f'( e) r4
+	r4 \dynEO #'(0 . 1) bes'''8(\pp a) f'( e) r4
 	R1
 % Bars 6 to 10
 	r4 bes8( a) f'( e) r4
@@ -89,7 +89,7 @@ musicFlautoIIMvtIV = \relative c {
 	bes2 bes4. bes8
 	bes2-> a->
 	g-> a->
-	<< {\InCueContext bes4 d f4. a,8} \\ {bes2^> bes4. bes8}>>
+	<< {\InCueContext bes4 d f4. \noteShift #1 a,8} \\ {bes2^> bes4. bes8}>>
 	f'2.\ff~ f8 e-.
 % Bars 106 to 110
 	f2.~ f8 e-.
@@ -150,7 +150,7 @@ musicFlautoIIMvtIV = \relative c {
 	d2(\> c4)\! r
 	R1*2
 	\mark \default
-	d1\ff
+	\dynEO #'(0 . 2) d1\ff
 % Bars 176 to 180
 	cis2->( b4. fis8)
 	a1->~
@@ -160,7 +160,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 181 to 185
 	b2.( a4\<
 	gis a d fis)\!
-	b2->(\ff a->)
+	\dynEO #'(0 . 2) b2->(\ff a->)
 	cis,( fis4. e8-.)
 	e2\fz~ e8 b( d8.) cis16-.
 % Bars 186 to 190
@@ -189,7 +189,7 @@ musicFlautoIIMvtIV = \relative c {
 	R1*2
 % Bars 206 to 210
 	
-	ges,2->\p \tuplet 3/2 2 {f4-. ges-. aes-.}
+	\dynEO #'(-0.5 . 0) ges,2->\p \tuplet 3/2 2 {f4-. ges-. aes-.}
 	ges-. r r2
 	bes,-> \tuplet 3/2 2 {a!4-. bes-. ces-.}
 	bes4 r r2
@@ -218,7 +218,7 @@ musicFlautoIIMvtIV = \relative c {
 	R1*2
 	\mark \default
 % Bars 231 to 235
-	a4\f a8 a a4 a8 a
+	\dynEO #'(0 . 1) a4\f a8 a a4 a8 a
 	a4 a8 a a4 a8 a
 	b4 b8 b b4 b8 b
 	cis4 cis8 cis cis4 cis8 cis
@@ -261,7 +261,7 @@ musicFlautoIIMvtIV = \relative c {
 	bes4. ees8 c4. f8
 	d4. g8 ees4. a8\!
 	f4. bes8 g4. c,8
-	cis4\ff cis8 cis cis4 cis8 cis
+	\dynEO #'(0 . 2) cis4\ff cis8 cis cis4 cis8 cis
 % Bars 271 to 275
 	b4 b8 b b4 b8 b
 	b4 b8 b b4 b8 b
@@ -353,7 +353,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 356 to 360
 	
 	
-	ees'4.\ff d8 c4. g8
+	\dynEO #'(-0.5 . 0) ees'4.\ff d8 c4. g8
 	ees'4. d8 c4. g8
 	\tuplet 3/2 2 {ees'4-. ees-. d-.} c4. g8
 % Bars 361 to 365
@@ -373,12 +373,12 @@ musicFlautoIIMvtIV = \relative c {
 	bes!2.\f d4-.
 	bes2. d4-.
 	g,2. bes4-.
-	c1->\fz
+	\dynEO #'(0 . 1) c1->\fz
 % Bars 376 to 380
 	bes4-. g2-^ \tuplet 3/2 4 {aes8( g aes}
 	bes4-.) g2-^ \tuplet 3/2 4 {aes8( g aes}
 	bes4-.) g2-^ \tuplet 3/2 4 {aes8( g aes)}
-	c!1-^\fz(
+	\dynEO #'(0 . 1) c!1-^\fz(
 	bes8) r r4 r2
 % Bars 381 to 385
 	R1
@@ -412,8 +412,8 @@ musicFlautoIIMvtIV = \relative c {
 	
 	
 	
-	r2 r4 a16(\f\< bes b c)\!
-	cis4\ff-> gis-> a-> b->
+	r2 r4 a16(\f-\tweak extra-offset #'(0 . 0.5) \< bes b c)\!
+	\dynEO #'(0 . 2) cis4\ff-> gis-> a-> b->
 % Bars 421 to 425
 	a2-> b->
 	cis4.-> cis8 \tuplet 3/2 2 {cis4-. d-. e-.}
@@ -449,7 +449,7 @@ musicFlautoIIMvtIV = \relative c {
 	R1
 	b,4 b'8( b,) b'( b,) r b-.
 	b4 b'8( b,) b'( b,) r b-.
-	c'2->\ff c->
+	\dynEO #'(0 . 2) c'2->\ff c->
 % Bars 451 to 455
 	c-> r
 	c-> c->
@@ -481,7 +481,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	
 % Bars 476 to 480
-	\tuplet 3/2 2 {e4\ff e e} e2~
+	\tuplet 3/2 2 {\dynEO #'(0 . 2) e4\ff e e} e2~
 	\tuplet 3/2 2 {e4 e e} e2~
 	\tuplet 3/2 2 {e4 e e} e2~
 	\tuplet 3/2 2 {e4 e e} e2
@@ -521,7 +521,7 @@ musicFlautoIIMvtIV = \relative c {
 	a2-> bes8. c16 d4
 	e1->~
 	e \mark \default
-	f4\ff d4.-> d8-. bes4
+	\dynEO #'(0 . 1) f4\ff d4.-> d8-. bes4
 	f' d4.-> d8-. bes4
 % Bars 516 to 520
 	d bes4.-> bes8-. f4
@@ -543,12 +543,12 @@ musicFlautoIIMvtIV = \relative c {
 	bes~
 % Bars 531 to 535
 	bes2 \tuplet 3/2 2 {bes4-> bes-> bes->}
-	f'1->\fz~
+	\dynEO #'(0 . 2) f'1->\fz~
 	f
 	aes,!->~
 	aes2 \tuplet 3/2 2 {aes4-> aes-> aes->}
 % Bars 536 to 540
-	f'!1\fz~
+	\dynEO #'(0 . 2) f'!1\fz~
 	f
 	bes,~
 	bes2 \tuplet 3/2 2 {bes4-> bes-> bes->}
@@ -557,7 +557,7 @@ musicFlautoIIMvtIV = \relative c {
 	ees-> f->
 	ees-> d->
 	ees-> f->
-	des1\ff~
+	\dynEO #'(0 . 1) des1\ff~
 	des
 % Bars 546 to 550
 	des->~
@@ -567,7 +567,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 551 to 555
 	
 % Bars 556 to 560
-	d2\ff ees
+	\dynEO #'(0 . 1) d2\ff ees
 	d bes
 	bes bes
 	bes g
@@ -582,6 +582,6 @@ musicFlautoIIMvtIV = \relative c {
 	bes4 r r2
 	R1*2
 	
-	d1\ff
+	\dynEO #'(0 . 2) d1\ff
 	d4 r r2\fermata \fine
 }

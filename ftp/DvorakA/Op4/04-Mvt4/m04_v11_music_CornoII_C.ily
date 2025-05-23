@@ -550,7 +550,7 @@ musicCornoIIMvtIV = \relative c {
 	
 % Bars 551 to 555
 	
-	r2 c2->\ff
+	r2 c2->-\offset X-offset -2.8 \ff
 	c-> bes->
 	c-> gis->
 	a-> bes4 bes

@@ -155,7 +155,7 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 126 to 130
 	g-. e2->\prall( d4)
 	g-. e2\prall( f4-.)
-	fis1->\fz(
+	\dynEO #'(0 . 2) fis1->\fz(
 	e4) r r2
 	dis,1->\fp(
 % Bars 131 to 135

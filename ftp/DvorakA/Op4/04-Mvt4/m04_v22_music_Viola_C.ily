@@ -9,7 +9,7 @@ musicViolaMvtIV = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	cis1->\f\>~
+	cis1->-\offset X-offset -2 \f\>~
 	cis~
 	cis~\pp
 	cis~
@@ -36,23 +36,23 @@ musicViolaMvtIV = \relative c {
 	<g bes>: q:
 	<fis a>: <f bes>:
 	<g b>: << <g c>: {s4\< s s\!}>>
-	<c ees>2.:_\fzpocoapococresc q:
+	\tupletUp <c ees>2.:_\fzpocoapococresc q: \tupletNeutral
 	<g d'>: << <g c>: {s4\< s s8 s\!}>>
 % Bars 26 to 30
 	<ges a!>2.:\fz q:
 	<f bes>: <bes d>:
 	q: <f c'>:
 	<f bes>: <bes d>:
-	<gis ees'!>: <a! ees'>:
+	\once \tupletDown <gis ees'!>: <a! ees'>:
 % Bars 31 to 35
 	<aes f'>: <g ees'>:
 	<aes b>: q:
 	<g c>: <g ees'>:
-	<b d>:\fz q: }
+	\once \tupletUp <b d>:\fz q: }
 	ees8:16 d: c: bes!:\< c: d: ees: f:
 % Bars 36 to 40
 	g: f: ees: d: ees: f: g: a:\! \mark \default
-	\tuplet 3/2 4 {d,8\ff d cis[ cis] b b a a g[ g] a a
+	\tuplet 3/2 4 {d,8-\offset X-offset -0.5 \ff d cis[ cis] b b a a g[ g] a a
 	d d cis[ cis] b b a a g[ g] a a}
 	\tuplet 6/4 2 {d->[ d d d a a] d[-> d d d a a]
 	d[-> d d d a a] d[-> d d d a a]}
@@ -63,7 +63,7 @@ musicViolaMvtIV = \relative c {
 	d[-> d d d a a] d[-> d d d a a]}
 	d4 r r2
 % Bars 46 to 50
-	r2 r4 cis,8(\pp d)
+	r2 r4 \dynEO #'(-3.7 . 2) cis,8(\pp d)
 	bes'( a) r4 r2
 	r r4 cis,8(\pp d)
 	bes'( a) d,4 r2
@@ -105,7 +105,7 @@ musicViolaMvtIV = \relative c {
 	c: c:
 	c: c:
 % Bars 81 to 85
-	c:_\pocoapococresc c:
+	\tupletUp c:_\pocoapococresc c: \tupletNeutral
 	c: c:
 	e: e:
 	<<{
@@ -137,8 +137,8 @@ musicViolaMvtIV = \relative c {
 	g,: bes: ees: f,: bes: c:
 	cis,: e: bes': a: cis: e:
 	d: bes: g: fis: a: c:
-	<<{\InCueContext \noteShift #-1 d: \noteShift #-1 f!: \noteShift #-1 bes: a: f: ees:} \\ {d: g: bes: e: c: bes:}>>
-	a4\ff-. g-. f-. e-. f-. g-. 
+	<<{\InCueContext \noteShift #-0.8 d4:8 \noteShift #-1.2 f!: \noteShift #-1 bes: \noteShift #0.5 \stemOffset #4 a: \noteShift #0.5 \stemOffset #4 f: \noteShift #0.5 \stemOffset #3.5 ees:} \\ {d: g: bes: e: \stemOffset #1 c: \stemOffset #1 bes:}>>
+	\dynEO #'(-0.5 . 1) a4\ff-. g-. f-. e-. f-. g-. 
 % Bars 106 to 110
 	a-. g-. f-. e-. f-. g-. 
 	a-. f-. c-. c,-. f'-. c-. 
@@ -266,7 +266,7 @@ musicViolaMvtIV = \relative c {
 	ees, ees bes' bes ees, bes' ees, bes'
 	ees, ees bes' bes ees, bes' ees, bes'
 % Bars 211 to 215
-	<ges' bes>-._\ppp q-. <f a!>-._\brackM\spiccato <ges bes>-. <f a>-. <ges bes>-. <aes ces>-. q-.
+	<ges' bes>-._\pppbrackspiccato q-. <f a!>-. <ges bes>-. <f a>-. <ges bes>-. <aes ces>-. q-.
 	<ges bes>-. q-. <d f>-. <ees ges!>-. <d f>-. <ees ges>-. <f aes>-. q-.
 	<bes, ges'>-. q-. <a! f'>-. <bes ges'>-. <a f'>-. <bes ges'>-. <ces aes'>-. q-.
 	<bes ges'>-. q-. <f d'!>-. <ges ees'>-. <f d'>-. <ges ees'>-. <aes f'>-. <ges ees'>-.
@@ -308,7 +308,7 @@ musicViolaMvtIV = \relative c {
 	\tuplet 3/2 2 {gis4-.) b!-. gis-. f!-. aes-. f-.}
 	d2-^ cis4-^ b-^ 
 % Bars 246 to 250
-	\tuplet 3/2 4 {bes!8\f( c! bes f! g f d ees d} bes') r
+	\tuplet 3/2 4 {\shape #'((0 . 1.5)(0 . 0.5)(0 . 0)(0 . 0)) Slur bes!8\f( c! bes f! g f d ees d} bes') r
 	R1
 	\tuplet 3/2 4 {bes8(\dimD\> c bes f g f d ees d} bes')\! r
 	R1
@@ -320,7 +320,7 @@ musicViolaMvtIV = \relative c {
 	bes1(~
 	bes2~ \tuplet 3/2 4 {bes8 a bes g f d)} \mark \default
 % Bars 256 to 260
-	bes'2\brack\mp\<^\solo \tuplet 3/2 2 {c4( bes g')\!}
+	bes'2\brack\mp\<-\offset X-offset -4 ^\solo \tuplet 3/2 2 {\once \tupletUp c4( bes g')\!}
 	f2._\espressivo g8(\< a
 	bes4 a4.\! g8\> d4)\!
 	f2. f4
@@ -336,7 +336,7 @@ musicViolaMvtIV = \relative c {
 	g_\crescmarkup f ees d ees f g a
 	bes a g f g a bes c
 	d\< c bes a bes c d ees\!
-	\tuplet 6/4 2 {<ais, fis'>[\f q q q q q] q[ q q q q q]
+	\tuplet 6/4 2 {\dynEO #'(-2.5 . 1.5) \tupletUp <ais, fis'>[\f q q q q q] q[ q q q q q] \tupletNeutral
 % Bars 271 to 275
 	<b fis'>[ q q q q q] q[ q q q q q]
 	<b dis>[ q q q q q] q[ q q q q q]
@@ -417,13 +417,13 @@ musicViolaMvtIV = \relative c {
 	r des4\p^\pizz aes
 	r2 des4 aes
 	r2 des4 aes
-	e'4.->\ff^\arco dis8-. cis4-. bis-.
+	e'4.->\ff-\offset X-offset 0.2 ^\arco dis8-. cis4-. bis-.
 % Bars 331 to 335
 	cis2.-> ais16( b cis dis)
 	e4.-> dis8-. cis4-. bis-.
 	cis2. cis16( dis e fis
 	gis4)\f r r2
-	r e4^\pizz b
+	r e4-\offset X-offset -6 ^\pizz b
 % Bars 336 to 340
 	r2 e4 b
 	r2 e4 b \mark \default
@@ -441,7 +441,7 @@ musicViolaMvtIV = \relative c {
 	q:_\semprepp q:
 	d: d:
 	d: d:
-	<aes c>:\pp q: 
+	<aes c>:\pp q:
 % Bars 351 to 355
 	q: q:
 	q: q:
@@ -499,10 +499,10 @@ musicViolaMvtIV = \relative c {
 		c4: des: ges: bes:
 		s1
 	} \\ {
-		c,,4:\< des: ges: bes:
+		c,,4: \hairpinShorten #'(-2 . -3) des:-\tweak rotation #'(5 -1 0) \< ges: bes:
 		<bes des>2: q:\!
 	}>>
-	<ces des>1:\pp
+	\dynEO #'(-2.5 . 1) <ces des>1:\pp
 % Bars 401 to 405
 	q:
 	q:
@@ -513,8 +513,8 @@ musicViolaMvtIV = \relative c {
 	\tuplet 3/2 2 {e,4\pp-. fis-. g!-. g-. fis-. e-. 
 	f!\fp-. ges-. aes-. f-. ges-. aes-. 
 	a!\p\<-. b-. c-. c-. b-. a-. 
-	bes!_\fpmarkup-. c-. des-. bes-. c-. des-. 
-	d!_\pmarkup-. e-. f-. f-. e-. d\!-. 
+	\markEO #'(0 . 2) \tupletUp bes!_\fpmarkup-. c-. des-. bes-. c-. des-. \tupletNeutral
+	\markEO #'(0 . 3) d!_\pmarkup-. e-. f-. f-. e-. d\!-. 
 % Bars 411 to 415
 	dis\fz-. eis-. fis-. dis-. eis-. fis-. }
 	g8\f-> b a g fis-> a g fis
@@ -544,7 +544,7 @@ musicViolaMvtIV = \relative c {
 	d8 d d d  d d d d
 	d4 fis,8( g e'-> d) r4
 	\tuplet 3/2 2 {fis,4->\f( f fis a d a)
-	fis->( f fis a d fis,)
+	\shape #'((0 . 2.5)(0 . -0.5)(0 . -0.5)(0 . 2.5)) Slur fis->( f fis a d fis,)
 % Bars 436 to 440
 	a(-> gis a d fis d)
 	a(-> gis a d fis a,)
@@ -572,7 +572,7 @@ musicViolaMvtIV = \relative c {
 % Bars 456 to 460
 	q: q:
 	q: q:
-	<g f' g>:\ff q:
+	\dynEO #'(-2.5 . 0) <g f' g>:\ff q:
 	q: q:
 	q: q:
 % Bars 461 to 465
@@ -594,7 +594,7 @@ musicViolaMvtIV = \relative c {
 	ees ees ees ees  ees g, ces-> bes
 	bes bes bes bes  bes ees, aes-> g
 % Bars 476 to 480
-	c'!2(\ff-> cis)
+	\dynEO #'(0 . 2) c'!2(\ff-> cis)
 	ais(-> b)
 	c!->( cis4 e)
 	ais,(-> b bis cis)
@@ -618,7 +618,7 @@ musicViolaMvtIV = \relative c {
 	bes'2.-> bes4->
 	ees2-> bes->
 % Bars 496 to 500
-	\tuplet 3/2 2 {<d, a'>4\ff q q  q q q
+	\tuplet 3/2 2 {\dynEO #'(-0.8 . 1.8) <d, a'>4\ff q q  q q q
 	<e cis'> q q  q q q
 	<d a'> q q  q q q
 	<e cis'> q q  q q q}
@@ -694,7 +694,7 @@ musicViolaMvtIV = \relative c {
 		<ges, bes>2.:8 q:
 		q: q:
 	}>> }
-	<<{f'4} \\ {<f, d'>}>> r \tuplet 3/2 2 {f'4->\ff f-> ees->
+	<<{f'4} \\ {<f, d'>}>> r \tuplet 3/2 2 {\dynEO #'(-0.5 . 2) f'4->\ff f-> ees->
 	d-> d d ees-> ees ees
 	<d f>-> q q <bes g'>-> q q
 % Bars 551 to 555

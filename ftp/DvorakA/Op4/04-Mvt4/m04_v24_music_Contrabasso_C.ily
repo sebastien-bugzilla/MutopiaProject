@@ -88,7 +88,7 @@ musicContrabassoMvtIV = \relative c {
 	
 % Bars 66 to 70
 	
-	bes'4^\pizz\brack\ppp r f r
+	bes'4-\offset X-offset -5 ^\pizz\brack\ppp r f r
 	g r ees r
 	bes r f' r
 	g r ees r
@@ -133,7 +133,7 @@ musicContrabassoMvtIV = \relative c {
 	g2 a
 	bes( a)
 	<<{g( c)} \\ {\InCueContext s f,}>>
-	\tuplet 3/2 2 {f'4\ff-. e-. d-. c-. d-. e-. 
+	\tuplet 3/2 2 {\dynEO #'(-0.5 . 2) f'4\ff-. e-. d-. c-. d-. e-. 
 % Bars 106 to 110
 	f-. e-. d-. c-. d-. e-. 
 	f-. a-. c-. f-. f-. c-. 
@@ -299,12 +299,12 @@ musicContrabassoMvtIV = \relative c {
 	d2-^ cis4-^ b-^ 
 % Bars 246 to 250
 	bes!1\ff~
-	bes2 \tuplet 3/2 2 {ees!4_\brackM\dimmarkup-. g-. ees-. }
+	bes2 \tuplet 3/2 2 {\once \tupletUp ees!4_\brackM\dimmarkup-. g-. ees-. }
 	bes1\fz\>~
 	bes4.\! bes8 \tuplet 3/2 2 {ees4\p-. g-. ees-. }
 	bes1~
 % Bars 251 to 255
-	bes4. bes8 \tuplet 3/2 2 {ees4\pp-. g-. ees-.
+	bes4. bes8 \tuplet 3/2 2 {ees4-\offset X-offset -0.6 \pp-. g-. ees-.
 	bes-. d-. bes-. g-. bes-. g-. 
 	bes-. d-. bes-. g-. bes-. g-. 
 	bes-. d-. bes-. g-. bes-. g-. 
@@ -362,7 +362,7 @@ musicContrabassoMvtIV = \relative c {
 	
 	
 	
-	r2 e8(\ff^\brackM\arco f) bes4-.
+	r2 \markEO #'(-6 . -1.5) e8(\ff^\brackM\arco f) bes4-.
 % Bars 301 to 305
 	e,8( f) bes4-. r2 \mark \default
 	ces,1\pp~

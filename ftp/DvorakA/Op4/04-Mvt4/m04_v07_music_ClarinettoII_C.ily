@@ -65,7 +65,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 46 to 50
 	e2.~ e8 dis-.
 	e4. dis8 dis4. cis8
-	cis4.\> dis8 dis4.\! e8
+	cis4.\> dis8 dis4. e8\!
 	e2.~ e8 dis-.
 	e2.~ e8 dis-.
 % Bars 51 to 55
@@ -135,7 +135,7 @@ musicClarinettoIIMvtIV = \relative c {
 	g2.~ g8 fis-.
 	g2.~ g8 fis-.
 % Bars 111 to 115
-	cis1\brack\mf
+	\dynEO #'(-1 . 1) cis1\brack\mf
 	d
 	cis
 	d 
@@ -237,11 +237,11 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	
 	
-	R1*4
+	\mmrPos #-6 R1
 % Bars 201 to 205
-	
-	
-	
+	R
+	R
+	R
 	R1*5
 	
 % Bars 206 to 210
@@ -251,7 +251,7 @@ musicClarinettoIIMvtIV = \relative c {
 	c,,2\p \tuplet 3/2 2 {b!4-. c-. des-.}
 	c-. r r2
 % Bars 211 to 215
-	f,1->\fp~
+	\dynEO #'(-3 . 3) f,1->\fp~
 	f~
 	f~
 	f
@@ -310,7 +310,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	a,4.\mf d8 b4.\< e8
+	\dynEO #'(-3 . 2.3) a,4.\mf d8 b4.\< e8
 	c4. f8 d4. g8
 	e4. a8 f4. b8\!
 	g4. c8 a4. d8
@@ -401,7 +401,7 @@ musicClarinettoIIMvtIV = \relative c {
 	bes~
 % Bars 341 to 345
 	bes
-	fis,\p~
+	\dynEO #'(-1 . 0) fis,\p~
 	fis~
 	fis~
 	fis
@@ -446,7 +446,7 @@ musicClarinettoIIMvtIV = \relative c {
 	c\startTrillSpan
 	c\startTrillSpan
 	d1->\fz\stopTrillSpan
-	<< a,\fp\<( {s4 s s_\dimmarkup s\!}>>
+	<< a,\fp-\tweak extra-offset #'(1 . 2.7) \<( {s4 s s^\dimmarkup s\!}>>
 % Bars 381 to 385
 	gis1)
 	a(
@@ -461,18 +461,22 @@ musicClarinettoIIMvtIV = \relative c {
 	
 % Bars 391 to 395
 	\mark #11
-	R1*13
-	
-	
-	
+	R1
+	R
+	R
+	R
 % Bars 396 to 400
-	
+	R
+	\mmrPos #-6 R
+	R
+	R
+	R
 % Bars 401 to 405
-	
-	
-	
+	R
+	R
+	R
+	R
 	R1*7
-	
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -641,7 +645,7 @@ musicClarinettoIIMvtIV = \relative c {
 	
 % Bars 551 to 555
 	
-	r2 g,->\ff
+	r2 g,->-\offset X-offset -2.8 \ff
 	c-> d->
 	e-> dis->
 	e-> f!4. f8

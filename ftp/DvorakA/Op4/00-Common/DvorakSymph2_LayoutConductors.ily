@@ -22,7 +22,7 @@
 		\override MetronomeMark.font-size = #2
 		\override RehearsalMark.font-size = #6
 		\override RehearsalMark.extra-spacing-width = #'(-0.1 . 0.1)
-		\override RehearsalMark.extra-spacing-height = #'(-10 . 10)
+		\override RehearsalMark.extra-spacing-height = #'(-20 . 20)
 		\override RehearsalMark.outside-staff-priority = ##f
 %		\override RehearsalMark.font-family = #'sans
 		\override BarNumber.font-size = #3

@@ -29,7 +29,7 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 36 to 40
 	\mark \default
-	r2 a2\ff~
+	r2 \dynEO #'(0 . 2.5) a2\ff~
 	a1
 	r2 a~
 	a1
@@ -67,7 +67,7 @@ musicPiccoloMvtIV = \relative c {
 	
 	
 	\textMark "Vi-"
-	r2 c,\brack\ff~
+	r2 \dynEO #'(0 . 2) c,\brack\ff~
 % Bars 106 to 110
 	c1
 	r2 c~
@@ -81,17 +81,17 @@ musicPiccoloMvtIV = \relative c {
 	
 	
 	
-	\textEndMark "-de" \mark \default
+	\tweak TextMark.X-offset -7.5 \textEndMark "-de" \mark \default
 % Bars 121 to 125
-	d,8(\f c bes a bes c d ees)
+	\dynEO #'(-1.5 . 0.5) d,8(\f c bes a bes c d ees)
 	f( ees d c d ees f g)
 	aes( g f e f g aes bes)
-	c1->\fz
+	\dynEO #'(0 . 2) c1->\fz
 	d,8( c bes a bes c d ees)
 % Bars 126 to 130
 	f( ees d c d ees f g)
 	aes( g f e \tuplet 5/4 2 {f g aes bes c)}
-	cis1\fz->(
+	\dynEO #'(0 . 2) cis1\fz->(
 	d8) r r4 r2
 	R1*38
 % Bars 131 to 135
@@ -151,12 +151,12 @@ musicPiccoloMvtIV = \relative c {
 	r16 d,(\f\< e fis g a b cis d4.) d8-.\!
 	d2\brack\fz r
 	r16 d,(\f\< e fis g a b cis d4.) d8-.\!
-	d2->\brack\fz r
+	\dynEO #'(0 . 2) d2->\brack\fz r
 % Bars 236 to 240
 	r16 a(\< b cis d e fis g a4.) a8-.\!
-	a2\fz r
+	\dynEO #'(0 . 2) a2\fz r
 	r16 a,(\< b cis d e fis g a4.) a8-.\!
-	a2\brack\fz r
+	\dynEO #'(0 . 2) a2\brack\fz r
 	r16 cis,,( dis eis fis gis a b cis4.) cis8-.
 % Bars 241 to 245
 	cis b4.-> r2
@@ -165,7 +165,7 @@ musicPiccoloMvtIV = \relative c {
 	
 	
 % Bars 246 to 250
-	f!2.\f f16( ees! d c!
+	\dynEO #'(0 . 2) f!2.\f f16( ees! d c!
 	\tuplet 3/2 2 {bes!4-.) d-. bes-. g-. bes-. g-.}
 	f r r2
 	R1*7
@@ -189,7 +189,7 @@ musicPiccoloMvtIV = \relative c {
 	
 	
 	
-	gis,2\brack\ff fis8. e16 b'4
+	\dynEO #'(0 . 2) gis,2\brack\ff fis8. e16 b'4
 	fis2. fis4
 % Bars 276 to 280
 	gis2 fis8. e16 b'4
@@ -218,7 +218,7 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 321 to 325
 	
-	des4.\ff c8 bes4-. a-.
+	\dynEO #'(0 . 2) des4.\ff c8 bes4-. a-.
 	bes2. g16( aes bes c
 	des4.) c8 bes4 a!
 	bes2. bes16(\< c des ees\!
@@ -227,7 +227,7 @@ musicPiccoloMvtIV = \relative c {
 	R1*3
 	
 	
-	e4.\ff dis8 cis4 bis
+	\dynEO #'(0 . 2) e4.\ff dis8 cis4 bis
 % Bars 331 to 335
 	cis2. ais16( b cis dis)
 	e4. dis8 cis4 bis
@@ -256,15 +256,15 @@ musicPiccoloMvtIV = \relative c {
 	c4\prall r c\prall r
 % Bars 371 to 375
 	b\prall r c\prall r \mark \default
-	g8(\f f ees d ees f g aes)
+	\dynEO #'(0 . 1) g8(\f f ees d ees f g aes)
 	bes( aes g f g aes bes c)
 	des( c bes a! bes c des ees)
-	f2..->\fz f,8
+	\dynEO #'(0 . 2) f2..->\fz f,8
 % Bars 376 to 380
 	g( f ees d ees f g aes)
 	bes( aes g f g aes bes c)
 	des( c bes a! \tuplet 5/4 2 {bes c des ees f)}
-	fis1-^\fz(
+	\dynEO #'(0 . 2) fis1-^\fz(
 	g8-.) r r4 r2
 % Bars 381 to 385
 	R1*11
@@ -285,7 +285,7 @@ musicPiccoloMvtIV = \relative c {
 	
 	
 	
-	r2 r4 a,16(\f\< bes b c)\!
+	r2 r4 a,16(\f-\tweak extra-offset #'(0 . 0.5) \< bes b c)\!
 	cis4\ff-> cis-> cis-> cis->
 % Bars 421 to 425
 	cis2-> d->
@@ -309,7 +309,7 @@ musicPiccoloMvtIV = \relative c {
 	
 	b,,4\brack\f b'8( b,) b'( b,) r b-.
 	b4 b'8( b,) b'( b,) r b-.
-	e'2->\ff e->
+	\dynEO #'(0 . 2) e'2->\ff e->
 % Bars 451 to 455
 	e-> r
 	e-> e->
@@ -337,7 +337,7 @@ musicPiccoloMvtIV = \relative c {
 	
 	
 	
-	g,2->\f \tuplet 3/2 2 {f4 g aes}
+	\dynEO #'(0 . 2) g,2->\f \tuplet 3/2 2 {f4 g aes}
 % Bars 481 to 485
 	aes2-> g->
 	bes-> \tuplet 3/2 2 {aes4 bes c}
@@ -368,26 +368,26 @@ musicPiccoloMvtIV = \relative c {
 	
 	
 	
-	bes,1\ff\startTrillSpan
+	\dynEO #'(0 . 2) bes,1\ff\startTrillSpan
 	bes2\startTrillSpan bes4\stopTrillSpan r
 % Bars 526 to 530
 	R1*2
 	
-	bes1\ff\startTrillSpan
+	\dynEO #'(0 . 2) bes1\ff\startTrillSpan
 	bes2\startTrillSpan~ bes4\stopTrillSpan r
 	R1*2
 % Bars 531 to 535
 	
-	\trillSpanCustom #flattrill f'1\startTrillSpan\ff
+	\dynEO #'(0 . 2) \trillSpanCustom #flattrill f'1\startTrillSpan\ff
 	f2.\stopTrillSpan r4
 	R1*2
 	
 % Bars 536 to 540
-	\trillSpanCustom #naturaltrill f1\startTrillSpan\ff
+	\dynEO #'(0 . 2) \trillSpanCustom #naturaltrill f1\startTrillSpan\ff
 	f2.\startTrillSpan r4\stopTrillSpan
 	R1*2
 	
-	bes,1\ff\startTrillSpan\ff
+	\dynEO #'(0 . 2) bes,1\ff\startTrillSpan\ff
 % Bars 541 to 545
 	bes
 	bes
@@ -402,7 +402,7 @@ musicPiccoloMvtIV = \relative c {
 % Bars 551 to 555
 	
 % Bars 556 to 560
-	bes,1\ff~
+	\dynEO #'(0 . 2) bes,1\ff~
 	bes~
 	bes~
 	bes~
@@ -418,5 +418,5 @@ musicPiccoloMvtIV = \relative c {
 	R1*3
 	
 	
-	\grace {f32( g a} bes4\ff) r r2\fermata \fine
+	\grace {f32( g a} \dynEO #'(0 . 2) bes4\ff) r r2\fermata \fine
 }

@@ -121,7 +121,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 126 to 130
 	d-. bes2->\prall( a4)
 	d-. bes2\prall( c4-.)
-	cis1\fz(
+	\dynEO #'(-0.5 . 0) cis1\fz(
 	d4) r r2
 	R1*4
 % Bars 131 to 135
@@ -156,11 +156,11 @@ musicOboeIIMvtIV = \relative c {
 	b4) b,-> b-> b->
 	b2-> c->~
 % Bars 171 to 175
-	c \tuplet 3/2 2 {b4\<-. c-. d-.\!}
+	c \tuplet 3/2 2 {\once \omit TupletNumber b4\<-. c-. d-.\!}
 	d2(\> c4)\! r
 	R1
 	R \mark \default
-	d'1\ff
+	d'1
 % Bars 176 to 180
 	cis2( b4. fis8)
 	a1->~
@@ -576,7 +576,7 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 551 to 555
 	
-	r2 f,->\ff
+	r2 f,->-\offset X-offset -2.8 \ff
 	bes-> c->
 	d-> cis->
 	d-> ees!4. ees8

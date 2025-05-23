@@ -151,7 +151,7 @@ musicCornoIIIMvtIV = \relative c {
 	cis2( \once \stemDown d4) \partCombineAutomatic r
 	c4.\pp c8 \tuplet 3/2 2 {c4 c\< c\!}
 	\partCombineApart << c2~ {s4 s}>> c4 \partCombineAutomatic r \mark \default
-	e1->\f~
+	\aIIEO #'(-3 . -1) e1->\f~
 % Bars 176 to 180
 	e
 	e->\fz~
@@ -185,7 +185,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 201 to 205
 	
 	
-	g1->\pp~
+	\dynEO #'(-3 . 2) g1->\pp~
 	g
 	c,~
 % Bars 206 to 210
@@ -350,12 +350,12 @@ musicCornoIIIMvtIV = \relative c {
 	c!\f c r2
 	c4 c r2
 	c4 c r2
-	c1\fz-^
+	c1-\tweak X-offset -2 \fz-^
 % Bars 376 to 380
 	c4-.\ff c-. r2
 	c4-. c-. r2
 	c4-. c-. r2
-	\once \partCombineChords << c1\ff\> {s4 s s s\!}>>
+	\once \partCombineChords << c1-\tweak X-offset -2 \ff\> {s4 s s s\!}>>
 	\partCombineUnisono f,1_\fpdim~
 % Bars 381 to 385
 	f~
@@ -464,7 +464,7 @@ musicCornoIIIMvtIV = \relative c {
 	
 	
 	
-	c4->\ff c-> c-> c->
+	\aIIEO #'(-4 . -1) c4->\ff c-> c-> c->
 % Bars 481 to 485
 	c-> c-> c-> c->
 	c-> c-> c-> c->
@@ -479,7 +479,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 491 to 495
 	
 % Bars 496 to 500
-	\tuplet 3/2 2 {b4\ff b b b b b
+	\tuplet 3/2 2 {\dynEO #'(-0.8 . 1.8) b4\ff b b b b b
 	b b b b b b
 	b b b b b b
 	b b b b b b}

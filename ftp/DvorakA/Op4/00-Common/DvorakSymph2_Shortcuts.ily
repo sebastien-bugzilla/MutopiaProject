@@ -156,6 +156,10 @@ ppbrackdiminuendo = \markup {
 	\hspace #-0.78 \dynamic pp \bracket \with-true-dimensions 
 	\italic {diminuendo}
 }
+pppbrackspiccato = \markup {
+	\hspace #-1.51 \dynamic ppp \hspace #0.3
+	\bracket \with-true-dimensions \italic {spiccato}
+}
 
 
 crescD = \tweak DynamicText.self-alignment-X #-0.75 #(make-dynamic-script 
@@ -309,6 +313,12 @@ clinbes = \markup {
 		\concat { "B" \text-flat }
 	}
 }
+timpinbesfa = \markup {
+	\center-column {
+		\lower #1 "Timp. in"
+		\concat { "B" \text-flat "/F/A" }
+	}
+}
 %%%%%%%%%%%
 % functions
 %%%%%%%%%%%
@@ -401,6 +411,7 @@ naturaltrill = \markup {
 		\musicglyph #"scripts.trill" \translate #'(0.2 . 0.05) \text-natural 
 	}
 }
+
 
 InCueContext = {
 	\override Beam.beam-thickness = #0.30 % 0.30
@@ -496,6 +507,14 @@ changeStaffName = #(define-music-function
 	(markup?)
 	#{
 		\set Staff.shortInstrumentName = #staffName
+	#}
+)
+
+tupletExtraOffset = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TupletNumber.extra-offset = #offset 
 	#}
 )
 
@@ -720,14 +739,6 @@ changeStaffName = #(define-music-function
 %	(number?)
 %	#{
 %		\once \override TupletNumber.Y-offset = #offset 
-%	#}
-%)
-
-%tupletExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TupletNumber.extra-offset = #offset 
 %	#}
 %)
 
