@@ -52,7 +52,7 @@ musicViolinoIIMvtIII = \relative c {
 	a( bes a g) f( g f des) c( bes' a g)
 % Bars 36 to 40
 	a->\ff f f a g-> ees ees g f-> d d f
-	g\f ees ees g f d d f ees c c ees
+	\dynEO #'(0 . 1) g\f ees ees g f d d f ees c c ees
 	f d d f ees c c ees d bes bes d
 	\tuplet 3/2 4 {c8 a c bes g bes a f a
 	g es g f d f ees c ees

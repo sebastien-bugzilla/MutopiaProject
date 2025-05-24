@@ -821,7 +821,7 @@ musicViolinoIIMvtI = \relative c {
 	bes f bes f  bes f bes f
 % Bars 681 to 685
 	bes f bes f  bes f bes f
-	a8) r r4
+	a8) r r4 \mark \default
 	r\fermata r8. d16\f
 	cis4->-. d-.->
 	<g, bes>-. ges'-.

@@ -434,9 +434,6 @@ musicViolinoIIMvtI = \relative c {
 	r8 ees4_\fzdimD\> ees8~
 	ees\! r r4
 	r8 ees,4->\p ees8 \mark \default
-	
-	
-	
 % Bars 356 to 360
 	ees8.\p bes16-. a!16( bes c bes)
 	bes4 \acciaccatura bes8 bes'4->~
@@ -821,7 +818,7 @@ musicViolinoIIMvtI = \relative c {
 	bes f bes f  bes f bes f
 % Bars 681 to 685
 	bes f bes f  bes f bes f
-	a8) r r4
+	a8) r r4 \mark \default
 	r\fermata r8. d16\f
 	cis4->-. d-.->
 	<g, bes>-. ges'-.

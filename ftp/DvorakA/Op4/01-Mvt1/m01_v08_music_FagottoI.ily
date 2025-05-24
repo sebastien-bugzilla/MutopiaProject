@@ -801,7 +801,7 @@ musicFagottoIMvtI = \relative c {
 	cis2_\dimmarkup
 % Bars 681 to 685
 	d4) r8 f(
-	ees2\pp~
+	ees2\pp~ \mark \default
 	ees4\fermata d) \clef bass
 	bes4\f bes
 	bes a

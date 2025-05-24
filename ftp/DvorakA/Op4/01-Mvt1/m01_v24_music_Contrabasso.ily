@@ -433,7 +433,7 @@ musicContrabassoMvtI = \relative c {
 	g!-. ees'-. r4
 	r bes8_\dimD\> aes
 	g-.\! ees'-. r4
-	r bes,8-.\p\> aes-.\!
+	r bes,8-.\p\> aes-.\! \mark \default
 % Bars 356 to 360
 	g2\pp~
 	g

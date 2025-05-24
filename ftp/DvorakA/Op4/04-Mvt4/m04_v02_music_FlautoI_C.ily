@@ -284,7 +284,7 @@ musicFlautoIMvtIV = \relative c {
 	\tuplet 3/2 2 {b,4(\p c f d ees bes'!)
 	b,( c f d ees bes'!)}
 	R1
-	r2 \tuplet 3/2 2 {b,4(\pp c f)}
+	r2 \tuplet 3/2 2 {b,4(-\offset X-offset -1 \pp c f)}
 % Bars 296 to 300
 	r2 \tuplet 3/2 2 {d4( ees aes)}
 	r2 \tuplet 3/2 2 {d,4( ees aes)}

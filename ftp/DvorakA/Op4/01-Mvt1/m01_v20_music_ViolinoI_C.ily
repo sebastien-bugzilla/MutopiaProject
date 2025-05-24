@@ -611,7 +611,7 @@ musicViolinoIMvtI = \relative c {
 % Bars 501 to 505
 	<< e) {s4 s\< }>>
 	f2(
-	<< fis) {s8 s s s\!}>>
+	<< fis) {s8 s s s\!}>> \mark \default
 	g4:16\f a8: g:
 	e4: d8: e:
 % Bars 506 to 510

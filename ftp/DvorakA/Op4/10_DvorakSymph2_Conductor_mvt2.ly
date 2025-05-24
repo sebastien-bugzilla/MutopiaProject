@@ -22,8 +22,8 @@
 \include "./00-Common/DvorakSymph2_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph2_Shortcuts.ily"
 \include "./00-Common/DvorakSymph2_Tempi.ily"
-\include "./00-Common/DvorakSymph2_Format_Cond_Mvt02.ily"
-%\include "./00-Common/DvorakSymph2_Format_temp.ily"
+%\include "./00-Common/DvorakSymph2_Format_Cond_Mvt02.ily"
+\include "./00-Common/DvorakSymph2_Format_temp.ily"
 \include "./02-Mvt2/m02_v02_music_FlautoI_C.ily"
 \include "./02-Mvt2/m02_v03_music_FlautoII_C.ily"
 \include "./02-Mvt2/m02_v04_music_OboeI_C.ily"
@@ -88,17 +88,14 @@
 				\new Staff {
 					\timeMvtII \nameStaffIIIMvtII
 					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
-%					\musicOboeIIMvtII 
 				}
 				\new Staff {
 					\timeMvtII \nameStaffIVMvtII
 					\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
-%					\musicClarinettoIIMvtII
 				}
 				\new Staff {
 					\timeMvtII \nameStaffVMvtII
 					\partCombine #'(0 . 12) \musicFagottoIMvtII \musicFagottoIIMvtII
-%					\musicFagottoIIMvtII
 				}
 			>>
 			\new StaffGroup <<
@@ -107,18 +104,15 @@
 					\new Staff {
 						\timeMvtII \nameStaffVIMvtII
 						\partCombine \musicCornoIMvtII \musicCornoIIMvtII
-%						\musicCornoIIMvtII 
 					}
 					\new Staff {
 						\timeMvtII \nameStaffVIIMvtII
 						\partCombine \musicCornoIIIMvtII \musicCornoIVMvtII
-%						\musicCornoIVMvtII
 					}
 				>>
 				\new Staff {
 					\timeMvtII \nameStaffVIIIMvtII
 					\partCombine \musicTrombeIMvtII \musicTrombeIIMvtII
-%					\musicTrombeIIMvtII
 				}
 				\new GrandStaff \with { \nameGrandStaffIIIMvtII
 				\consists Keep_alive_together_engraver } <<

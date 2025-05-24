@@ -801,7 +801,7 @@ musicFagottoIIMvtI = \relative c {
 	
 % Bars 681 to 685
 	
-	f2\pp(~
+	f2\pp(~ \mark \default
 	f4\fermata bes) \clef bass
 	g4\f f
 	e ees

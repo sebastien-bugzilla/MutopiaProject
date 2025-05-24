@@ -801,7 +801,7 @@ musicFagottoIMvtI = \relative c {
 	cis2_\dimmarkup
 % Bars 681 to 685
 	d4) r8 \shape #'((0 . -0.3)(0 . -0.8)(0 . -0.8)(0 . 0)) Slur f(
-	ees2~
+	ees2~ \mark \default
 	ees4\fermata d) \partCombineAutomatic \clef bass
 	bes4\f bes
 	bes a
