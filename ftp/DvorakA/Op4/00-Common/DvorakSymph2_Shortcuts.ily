@@ -414,6 +414,18 @@ naturaltrill = \markup {
 
 
 InCueContext = {
+	\override NoteHead.color = #red
+	\override Stem.color = #red
+	\override Beam.color = #red
+	\override TextScript.color = #red
+	\override DynamicText.color = #red
+	\override Slur.color = #red
+	\override Tie.color = #red
+	\override Script.color = #red
+	\override Accidental.color = #red
+	\override Hairpin.color = #red
+	\override Rest.color = #red
+	
 	\override Beam.beam-thickness = #0.30 % 0.30
 	\override StemTremolo.beam-thickness = #0.35 % 0.30
 	\override Beam.length-fraction = #0.67 % 0.8
@@ -517,6 +529,15 @@ tupletExtraOffset = #(define-music-function
 		\once \override TupletNumber.extra-offset = #offset 
 	#}
 )
+
+no = {
+	\undo \omit MultiMeasureRestNumber
+}
+
+
+ni = {
+	\omit MultiMeasureRestNumber
+}
 
 
 
@@ -662,15 +683,6 @@ tupletExtraOffset = #(define-music-function
 %		\once \override Score.RehearsalMark.Y-offset = #offset
 %	#}
 %)
-
-%no = {
-%	\undo \omit MultiMeasureRestNumber
-%}
-
-
-%ni = {
-%	\omit MultiMeasureRestNumber
-%}
 
 %ottavaShorten = #(define-music-function
 %	(value)

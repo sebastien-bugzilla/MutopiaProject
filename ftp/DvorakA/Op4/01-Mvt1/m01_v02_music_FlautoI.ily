@@ -81,11 +81,11 @@ musicFlautoIMvtI = \relative c {
 	
 	\mark \default
 	\repeat volta 2 {
-		R2*6
+		R2*3
 % Bars 66 to 70
-		
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		r4 r8 fis,16(\p g
 		c4.)_\mfespress ces16(\< bes
 % Bars 71 to 75
@@ -290,9 +290,13 @@ musicFlautoIMvtI = \relative c {
 			}
 		}
 	}
-	R2*6
+	R2*2
 % Bars 241 to 245
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 246 to 250
 	aes,4->\mp\< aes->
 	aes-> aes->
@@ -464,7 +468,7 @@ musicFlautoIMvtI = \relative c {
 	f8-.\ff g16( f) f( g f) r\fermata
 	ees8-.\p d16( ees) \tuplet 3/2 4 {d8( cis d)}
 	c!8-. b16( c \tuplet 3/2 4 {bes!8 f bes)}
-	R2*22
+	R2*18
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -473,6 +477,10 @@ musicFlautoIMvtI = \relative c {
 	
 % Bars 421 to 425
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 426 to 430
 	r4 r8 fis16(\mp\< g
 	c4. ces16\! bes)
@@ -668,7 +676,7 @@ musicFlautoIMvtI = \relative c {
 	bes8.( a16 \tuplet 3/2 4 {g8 f d')}
 	bes8.( a16 \tuplet 3/2 4 {g8 f d')}
 	bes8.( a16 \tuplet 3/2 4 {g8 f d')}
-	R2*21
+	R2*17
 % Bars 591 to 595
 	
 % Bars 596 to 600
@@ -677,10 +685,10 @@ musicFlautoIMvtI = \relative c {
 	
 % Bars 606 to 610
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 611 to 615
 	bes2\ff~
 	bes8 f-. d-. f-.
@@ -752,9 +760,13 @@ musicFlautoIMvtI = \relative c {
 	
 	\mark \default
 	r4\fermata r
-	R2*7
+	R2*3
 % Bars 686 to 690
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 691 to 695
 	r4 r8 bes\f
 	e,-. r f-. r

@@ -95,11 +95,15 @@ musicFlautoIMvtIII = \relative c {
 	c8. c16 c2 \mark \default
 	f8 r r4 r
 % Bars 86 to 90
-	R2.*11
+	R2.*7
 % Bars 91 to 95
 	
-% Bars 96 to 100
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 96 to 100
+	\mmrPos #-4 R \no
 	d4(\f c bes)
 	f'->( ees d)
 	a'->( g f)
@@ -199,11 +203,15 @@ musicFlautoIMvtIII = \relative c {
 	
 	\section
 	\repeat volta 2 {
-		\key a \major R2.*8
+		\key a \major R2.*4
 % Bars 181 to 185
-	
-% Bars 186 to 190
 		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+% Bars 186 to 190
+		\mmrPos #-4 R \no
 		e2.\pp
 		e8. cis16 cis8 r r4
 		e2.
@@ -353,13 +361,17 @@ musicFlautoIMvtIII = \relative c {
 % Bars 311 to 315
 	R2.
 	R\fermata \mark \markAaBox
-	R2.*18
+	R2.*15
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 331 to 335
 	f2.\pp~
 	f~
@@ -388,14 +400,14 @@ musicFlautoIMvtIII = \relative c {
 	c8. c16 c2~
 	c8. c16 c2 \mark \markBbBox
 	f8 r r4 r
-	R2.*11
+	R2.*7
 % Bars 356 to 360
 	
 % Bars 361 to 365
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	d4(\f c bes)
 % Bars 366 to 370
 	f'(-> ees d)

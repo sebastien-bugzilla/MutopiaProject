@@ -9,7 +9,7 @@ musicFlautoIMvtIV = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*33
+	R1*31
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -22,8 +22,8 @@ musicFlautoIMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	r2 r4 r8 d'''\f~
 	d4\ff ees2 f4~
 % Bars 36 to 40
@@ -39,7 +39,7 @@ musicFlautoIMvtIV = \relative c {
 	d4. b8 b4. g8
 	fis4 r r2
 % Bars 46 to 50
-	R1*31
+	R1*21
 % Bars 51 to 55
 	
 % Bars 56 to 60
@@ -48,8 +48,15 @@ musicFlautoIMvtIV = \relative c {
 	
 % Bars 66 to 70
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 71 to 75
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R1*3
 % Bars 76 to 80
 	\mark \default
 	R1
@@ -115,7 +122,7 @@ musicFlautoIMvtIV = \relative c {
 	f-. d2\prall( ees4)-.
 	e1->\fz(
 	f8) r r4 r2
-	R1*29
+	R1*27
 % Bars 131 to 135
 	
 % Bars 136 to 140
@@ -128,8 +135,8 @@ musicFlautoIMvtIV = \relative c {
 	
 % Bars 156 to 160
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	ges,2\p-> ges4.->\< ges8
 	ges'2_\fpmarkup(~ ges8 fes ees des\!)
 % Bars 161 to 165
@@ -248,12 +255,12 @@ musicFlautoIMvtIV = \relative c {
 	d2 f8. d16 d4 \mark \default
 % Bars 256 to 260
 	d r r2
-	R1*8
+	R1*6
 % Bars 261 to 265
 	
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	r2 r4 fis,16(\p g a bes
 % Bars 266 to 270
 	g4.) c8 a4.\< d8
@@ -416,15 +423,15 @@ musicFlautoIMvtIV = \relative c {
 	des~
 	des~
 	des2. r4
-	R1*14
+	R1*11
 % Bars 406 to 410
 	
 % Bars 411 to 415
 	
 % Bars 416 to 420
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r2 r4 a16(\f\< bes b c)\!
 	cis4\ff-> cis-> cis-> cis->
 % Bars 421 to 425

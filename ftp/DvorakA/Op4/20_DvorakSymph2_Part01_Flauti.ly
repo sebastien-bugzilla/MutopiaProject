@@ -23,12 +23,16 @@
 \include "./00-Common/DvorakSymph2_Tempi.ily"
 \include "./00-Common/DvorakSymph2_Format_PartFlauti.ily"
 \include "./00-Common/DvorakSymph2_CueVoice.ily"
+\include "./01-Mvt1/m01_v01_music_Piccolo.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoI.ily"
 \include "./01-Mvt1/m01_v03_music_FlautoII.ily"
+\include "./02-Mvt2/m02_v01_music_Piccolo.ily"
 \include "./02-Mvt2/m02_v02_music_FlautoI.ily"
 \include "./02-Mvt2/m02_v03_music_FlautoII.ily"
+\include "./03-Mvt3/m03_v01_music_Piccolo.ily"
 \include "./03-Mvt3/m03_v02_music_FlautoI.ily"
 \include "./03-Mvt3/m03_v03_music_FlautoII.ily"
+\include "./04-Mvt4/m04_v01_music_Piccolo.ily"
 \include "./04-Mvt4/m04_v02_music_FlautoI.ily"
 \include "./04-Mvt4/m04_v03_music_FlautoII.ily"
 %###############################################################################
@@ -51,9 +55,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtI
-			}
+%			\new Voice {
+%				\formatFlautoIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtI
 			}
@@ -65,7 +69,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -75,9 +79,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtII
-			}
+%			\new Voice {
+%				\formatFlautoIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtII
 			}
@@ -99,9 +103,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtIII
-			}
+%			\new Voice {
+%				\formatFlautoIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtIII
 			}
@@ -123,9 +127,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtIV
-			}
+%			\new Voice {
+%				\formatFlautoIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtIV
 			}
@@ -147,9 +151,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtI
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtI
 			}
@@ -161,7 +165,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -171,9 +175,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtII
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtII
 			}
@@ -195,9 +199,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtIII
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtIII
 			}
@@ -219,9 +223,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtIV
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtIV
 			}
@@ -230,6 +234,105 @@
 			}
 			\new Voice {
 				\timeMvtIV \nameFlautoIIMvtIV \musicFlautoIIMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold 4.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
+%				\formatPiccoloMvtI
+%			}
+			\new Voice {
+				\keepWithTag #'(piccolo) \tempiPartMvtI
+			}
+%			\new Voice {
+%				\InCueContext \cueVoicePiccoloMvtI
+%			}
+			\new Voice {
+				\timeMvtI \namePiccoloMvtI \musicPiccoloMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "1. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
+%				\formatPiccoloMvtII
+%			}
+			\new Voice {
+				\keepWithTag #'(piccolo) \tempiPartMvtII
+			}
+%			\new Voice {
+%				\InCueContext \cueVoicePiccoloMvtII
+%			}
+			\new Voice {
+				\timeMvtII \namePiccoloMvtII \musicPiccoloMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold "2. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
+%				\formatPiccoloMvtIII
+%			}
+			\new Voice {
+				\keepWithTag #'(piccolo) \tempiPartMvtIII
+			}
+%			\new Voice {
+%				\InCueContext \cueVoicePiccoloMvtIII
+%			}
+			\new Voice {
+				\timeMvtIII \namePiccoloMvtIII \musicPiccoloMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold "3. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
+%				\formatPiccoloMvtIV
+%			}
+			\new Voice {
+				\keepWithTag #'(piccolo) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoicePiccoloMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \namePiccoloMvtIV \musicPiccoloMvtIV
 			}
 		>>
 		\header {

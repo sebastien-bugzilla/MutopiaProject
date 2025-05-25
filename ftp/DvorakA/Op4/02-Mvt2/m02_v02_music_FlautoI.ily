@@ -136,9 +136,13 @@ musicFlautoIMvtII = \relative c {
 	ees'4.(\p d8 c g) bes4.( a)
 	g4.( a\<_\pococresc bes d4\! c8\>
 	bes)\! r r r4 r8 r2.
-	R1.*6
+	R1.*5
 % Bars 111 to 115
 	
+	
+	
+	
+	\ni \mmrPos #-6 R1. \no
 % Bars 116 to 120
 	r4 r8 f'4.\pp r4 r8 e4.
 	r4 r8 ees!4.(\p c8\> bes a bes des8. c16)\!

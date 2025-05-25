@@ -16,7 +16,7 @@ musicPiccoloMvtIV = \relative c {
 	R1
 % Bars 6 to 10
 	r4 bes8( a) f'( e) r4
-	R1*30
+	R1*27
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -27,8 +27,12 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 36 to 40
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	r2 a2\ff~
 	a1
 	r2 a~
@@ -53,7 +57,7 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 76 to 80
 	\mark \default
-	R1*28
+	R1*25
 % Bars 81 to 85
 	
 % Bars 86 to 90
@@ -64,9 +68,9 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 101 to 105
 	
-	
-	
-	\textMark "Vi-"
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \textMark "Vi-"
 	r2 c,\brack\ff~
 % Bars 106 to 110
 	c1
@@ -75,13 +79,13 @@ musicPiccoloMvtIV = \relative c {
 	r2 c~
 	c1
 % Bars 111 to 115
-	R1*10
+	R1*7
 % Bars 116 to 120
 	
 	
-	
-	
-	\textEndMark "-de" \mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \textEndMark "-de" \mark \default
 % Bars 121 to 125
 	d,8(\f c bes a bes c d ees)
 	f( ees d c d ees f g)
@@ -93,7 +97,7 @@ musicPiccoloMvtIV = \relative c {
 	aes( g f e \tuplet 5/4 2 {f g aes bes c)}
 	cis1\fz->(
 	d8) r r4 r2
-	R1*38
+	R1*36
 % Bars 131 to 135
 	
 % Bars 136 to 140
@@ -109,8 +113,8 @@ musicPiccoloMvtIV = \relative c {
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	r2 r4 e,16(\brack\f fis g a
 	b4)-> b-> b-> b->
 	b2-> c->
@@ -119,7 +123,7 @@ musicPiccoloMvtIV = \relative c {
 	f2(\> e4)\! r
 	R1*2
 	\mark \default
-	R1*56
+	R1*48
 % Bars 176 to 180
 	
 % Bars 181 to 185
@@ -140,14 +144,18 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 221 to 225
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 226 to 230
-	
-	
-	
-	
+	R1
+	\ni \mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R1*2
 	\mark \default
 % Bars 231 to 235
-	R1
+	\ni \mmrPos #-4 R1 \no
 	r16 d,(\f\< e fis g a b cis d4.) d8-.\!
 	d2\brack\fz r
 	r16 d,(\f\< e fis g a b cis d4.) d8-.\!
@@ -176,9 +184,13 @@ musicPiccoloMvtIV = \relative c {
 	
 	\mark \default
 % Bars 256 to 260
-	R1*10
+	R1*9
 % Bars 261 to 265
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1 \no
 % Bars 266 to 270
 	r4 g\p r a
 	r\< bes r c
@@ -209,15 +221,23 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 301 to 305
 	\mark \default
-	R1*20
+	R1*12
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 % Bars 316 to 320
+	R1*2
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 321 to 325
-	
+	\mmrPos #-4 R \no
 	des4.\ff c8 bes4-. a-.
 	bes2. g16( aes bes c
 	des4.) c8 bes4 a!
@@ -237,7 +257,7 @@ musicPiccoloMvtIV = \relative c {
 % Bars 336 to 340
 	
 	\mark \default
-	R1*28
+	R1*26
 % Bars 341 to 345
 	
 % Bars 346 to 350
@@ -248,6 +268,10 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 361 to 365
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 % Bars 366 to 370
 	c,4\brack\ff r c\prall r
 	b\prall r c\prall r
@@ -272,7 +296,7 @@ musicPiccoloMvtIV = \relative c {
 	
 % Bars 391 to 395
 	\mark #11
-	R1*27
+	R1*24
 % Bars 396 to 400
 	
 % Bars 401 to 405
@@ -282,9 +306,9 @@ musicPiccoloMvtIV = \relative c {
 % Bars 411 to 415
 	
 % Bars 416 to 420
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r2 r4 a,16(\f\< bes b c)\!
 	cis4\ff-> cis-> cis-> cis->
 % Bars 421 to 425
@@ -301,12 +325,16 @@ musicPiccoloMvtIV = \relative c {
 	
 	
 	\mark \default
-	R1*8
+	R1*4
 % Bars 441 to 445
 	
+	
+	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-4 R
 % Bars 446 to 450
-	
-	
+	\mmrPos #-4 R \no
+	R1
 	b,,4\brack\f b'8( b,) b'( b,) r b-.
 	b4 b'8( b,) b'( b,) r b-.
 	e'2->\ff e->
@@ -327,16 +355,16 @@ musicPiccoloMvtIV = \relative c {
 	g~
 	g4 g-> g-> g-> \mark \default
 	fis r r2
-	R1*15
+	R1*11
 % Bars 466 to 470
 	
 % Bars 471 to 475
 	
 % Bars 476 to 480
-	
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g,2->\f \tuplet 3/2 2 {f4 g aes}
 % Bars 481 to 485
 	aes2-> g->
@@ -361,13 +389,17 @@ musicPiccoloMvtIV = \relative c {
 	
 	
 	\mark \default
-	R1*10
+	R1*6
 % Bars 516 to 520
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 521 to 525
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	bes,1\ff\startTrillSpan
 	bes2\startTrillSpan bes4\stopTrillSpan r
 % Bars 526 to 530

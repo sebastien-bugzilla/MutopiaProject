@@ -28,27 +28,27 @@ musicFlautoIIMvtII = \relative c {
 	
 % Bars 16 to 20
 	
-	R1.*6
+	R1.*4
 % Bars 21 to 25
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-6 R \no \mark \default
 	r4 r8 d4.\pp r4 r8 des4.
 	R1.*2
 	
 % Bars 26 to 30
 	R1.
-	R1.*2
-	
+	R1.
+	\ni \mmrPos #-4 R1. \no
 	r4 r8 << {d,,2.~ d4 } {s8\brack\p\< s s\! s\> s s s4\!}>> r8
 	R1.*3
 % Bars 31 to 35
 	
 	
-	R1.*4
+	R1.*2
 	
-	
+	\ni \mmrPos #-4 R1. 
 % Bars 36 to 40
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	r4 r16 d'\pp d4. r4 r16 d d4.
 	r4 r16 c c4. r4 r16 c c4.
 	r4 r16 bes bes4. r4 r16 bes\< << bes4. {s8 s s\!}>>
@@ -64,13 +64,13 @@ musicFlautoIIMvtII = \relative c {
 	
 	des,2.(\p\< ees4. f)\>
 	ees4\! r8 r4 r8 r2.
-	R1.*6
+	R1.*5
 % Bars 51 to 55
 	
 	
 	
 	
-	
+	\ni \mmrPos #-4 R1. \no 
 % Bars 56 to 60
 	r4 r8 ees4.(\p\< aes b,!)\!
 	<< {c( f2. g!4.} {s4.\< s8 s s\!  s s s\> s s s\! }>>
@@ -88,7 +88,7 @@ musicFlautoIIMvtII = \relative c {
 	R1.
 	R1.*2
 	
-	R1.
+	\ni \mmrPos #-4 R1. \no
 % Bars 71 to 75
 	bes16\mf bes bes bes bes bes  bes bes\< bes bes bes bes bes4.:16 ees:\!
 	ees4._\fbrackf~ ees8 r ees f4.~ f8 r f \mark \default
@@ -121,24 +121,28 @@ musicFlautoIIMvtII = \relative c {
 	
 % Bars 96 to 100
 	
-	R1.*2
-	
+	R1.
+	\ni \mmrPos #-4 R1. \no
 	a'2.(\ff b)
 	c( cis)
 % Bars 101 to 105
 	bes8 r r r4 r8 a r r r4\fermata r8 \mark \default
 	R1.*2
 	
-	R1.
+	\ni \mmrPos #-4 R1. \no
 	c4.\p\<~ c8 c-> c->\! c4.(~\> c4~ c16 g\!
 % Bars 106 to 110
 	aes8) r r r4 r8 r2.
 	R1.*3
 	
 	
-	R1.*6
+	R1.*5
 % Bars 111 to 115
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1. \no
 % Bars 116 to 120
 	r4 r8 d4.\pp r4 r8 des4.
 	R1.*2
@@ -150,9 +154,9 @@ musicFlautoIIMvtII = \relative c {
 	f4 r8 r4 r8 r2.
 	r r4 r8 f'16(\pp-. f-. a-. a-. c-. c)-. 
 	R1. \mark \default
-	R1.*2
+	R1.
 % Bars 126 to 130
-	
+	\ni \mmrPos #-4 R1. \no
 	r4 r8 c,16(-.\brack\pp c-. e-. e-. g-. g)-. r2.
 	R1.
 	r2. d'8->\ff d-> d-> d-> d-> d->
@@ -177,9 +181,9 @@ musicFlautoIIMvtII = \relative c {
 	a2.->\ff a-^\fz 
 % Bars 146 to 150
 	bes!8\p r r r4 r8 r2.
-	R1.*3
+	R1.*2
 	
-	
+	\ni \mmrPos #-4 R1. \no
 	r2. g4\pp r8 g4 r8
 % Bar 151
 	g2.~ g4 r8 r4 r8\fermata \fine

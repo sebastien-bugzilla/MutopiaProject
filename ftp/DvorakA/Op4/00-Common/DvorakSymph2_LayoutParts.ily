@@ -7,7 +7,7 @@
 #(set-global-staff-size 19)
 \layout {
 	#(layout-set-staff-size 19) 
-	\set Score.alternativeNumberingStyle = #'numbers
+%	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatBarType = #":|.|:"
 	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 	\set Voice.restNumberThreshold = #0
@@ -61,10 +61,10 @@
 		\override RehearsalMark.extra-spacing-height = #'(-10 . 10)
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override RehearsalMark.font-family = #'sans
-		\override BarNumber.font-size = #0.1
+%		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
-		
+		\override BarNumber.break-visibility = ##(#f #t #t)
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
 	}
