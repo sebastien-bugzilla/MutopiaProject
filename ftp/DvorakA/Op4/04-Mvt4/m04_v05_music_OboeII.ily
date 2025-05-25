@@ -29,10 +29,10 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 	
-	R1*3
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 36 to 40
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	d''2.\ff~ d8 cis-.
 	d2.~ d8 cis-.
 	d4. cis8 cis4. b8-.
@@ -64,16 +64,20 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 76 to 80
 	\mark \default
-	R1*12
+	R1*8
 	
 	
 	
 % Bars 81 to 85
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 86 to 90
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	a4->\f a-> cis-> d->
 	e2-> d->
 % Bars 91 to 95
@@ -139,9 +143,9 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 156 to 160
 	
-	R1*3
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	R1
 % Bars 161 to 165
 	fis,2\f-> ais->
@@ -191,11 +195,11 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 	
-	R1*4
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 206 to 210
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ges!2\p \tuplet 3/2 2 {d4-. ees-. f-.}
 	ees-. r r2
 	bes2-> \tuplet 3/2 2 {f4-. ges-. aes-.}
@@ -255,12 +259,16 @@ musicOboeIIMvtIV = \relative c {
 	bes2 d8. bes16 bes4 \mark \default
 % Bars 256 to 260
 	bes r r2
-	R1*9
+	R1*6
 	
 	
 	
 % Bars 261 to 265
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 266 to 270
 	g2\mf a\<
 	bes c
@@ -311,8 +319,8 @@ musicOboeIIMvtIV = \relative c {
 	
 	R1*2
 	
-	R1*2
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 % Bars 316 to 320
 	R1*2
 	
@@ -345,7 +353,7 @@ musicOboeIIMvtIV = \relative c {
 	e~
 % Bars 341 to 345
 	e
-	R1*16
+	R1*14
 	
 	
 	
@@ -354,8 +362,8 @@ musicOboeIIMvtIV = \relative c {
 % Bars 351 to 355
 	
 % Bars 356 to 360
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	ees4.\ff d8 c4. g8
 	ees'4. d8 c4. g8
 	\tuplet 3/2 2 {ees'4-. ees-. d-.} c4. g8
@@ -392,12 +400,12 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 391 to 395
 	\mark #11
-	R1*8
+	R1*5
 % Bars 396 to 400
 	
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f,1\pp~
 % Bars 401 to 405
 	f~

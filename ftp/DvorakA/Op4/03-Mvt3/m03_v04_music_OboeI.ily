@@ -61,16 +61,20 @@ musicOboeIMvtIII = \relative c {
 	<< f~ {s4\> s s8 s\!}>>
 	f2.\p\>~
 	f\fermata\! \mark \default
-	R2.*17
+	R2.*15
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
-% Bars 61 to 65
 	
-	r4 r \tuplet 3/2 4 {e'8(\p f g)}
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 61 to 65
+	\mmrPos #-4 R \no
+	\voiceTwo r4 r \oneVoice \tuplet 3/2 4 {e'8(\p f g)}
 	a2( g8 f
 	a2) g8( f
 	a2) g8( f
@@ -102,11 +106,15 @@ musicOboeIMvtIII = \relative c {
 	c4(\> d)\! r
 	ees4.\fz ees8-. ees-. c-.
 	c4( d) r
-	R2.*8
+	R2.*4
 % Bars 91 to 95
 	
-% Bars 96 to 100
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 96 to 100
+	\mmrPos #-4 R \no
 	d4(\f c bes)
 	f'( ees d)
 	a'( g f)
@@ -206,13 +214,17 @@ musicOboeIMvtIII = \relative c {
 	
 	\section
 	\repeat volta 2 {
-		\key a \major R2.*17
+		\key a \major R2.*14
 % Bars 181 to 185
 	
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
+		R2.
 % Bars 196 to 200
 		a2.\pp~
 		a~
@@ -261,11 +273,15 @@ musicOboeIMvtIII = \relative c {
 % Bars 236 to 240
 	ees,-.\> ees-. ees-. ees-. ees-. d-.\!
 	ees-.\p r r4 r
-	R2.*9
+	R2.*7
 % Bars 241 to 245
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 246 to 250
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	f2.\pp~
 	f2 f8. f16
 	f2.~
@@ -277,11 +293,15 @@ musicOboeIMvtIII = \relative c {
 	f2 f8. f16 \section
 	\key bes \major f4 r r
 % Bars 256 to 260
-	R2.*11
+	R2.*9
 % Bars 261 to 265
 	
-% Bars 266 to 270
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 266 to 270
+	\mmrPos #-4 R \no
 	f2.\ff\startTrillSpan
 	<< f\startTrillSpan {s4 s s8 s\stopTrillSpan}>> \mark \default
 	bes4-. r r
@@ -337,7 +357,7 @@ musicOboeIMvtIII = \relative c {
 % Bars 311 to 315
 	f2.\>~
 	f\pp\fermata \mark \markAaBox
-	R2.*17
+	R2.*15
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -345,8 +365,8 @@ musicOboeIMvtIII = \relative c {
 % Bars 326 to 330
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	r4 r \tuplet 3/2 4 {e'8(\p f g)}
 % Bars 331 to 335
 	a2( g8 f
@@ -446,12 +466,16 @@ musicOboeIMvtIII = \relative c {
 	fis g a
 	bes a bes
 	a2.\fermata
-	R2.*8
+	R2.*5
 % Bars 416 to 420
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 421 to 425
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	a,4.(\pp bes8 c16[ d r16. f,32-.])
 	f4. r8 r4
 	a4.( bes8 c16[ d r16. f,32-.)]

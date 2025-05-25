@@ -70,12 +70,12 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 61 to 65
 	
-	R2.*4
-	
-	
-	
+	R2.
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 66 to 70
-	R2.\fermata
+	\mmrPos #-4 R2._\fermata \no 
 	f2(_\piuf g4
 	ees f aes)
 	<< bes2( {s4 s\< }>> a!4\!
@@ -102,11 +102,15 @@ musicOboeIIMvtIII = \relative c {
 	a4(\> bes)\! r
 	c4.\fz c8-. c-. a-.
 	a4( bes) r
-	R2.*8
+	R2.*4
 % Bars 91 to 95
 	
-% Bars 96 to 100
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 96 to 100
+	\mmrPos #-4 R \no
 	d4(\f c bes)
 	f'( ees d)
 	a'( g f)
@@ -206,13 +210,17 @@ musicOboeIIMvtIII = \relative c {
 	
 	\section
 	\repeat volta 2 {
-		\key a \major R2.*17
+		\key a \major R2.*14
 % Bars 181 to 185
 	
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
+		R2.
 % Bars 196 to 200
 		a'2.\pp~
 		a~
@@ -261,9 +269,13 @@ musicOboeIIMvtIII = \relative c {
 % Bars 236 to 240
 	c,8\>-. c-. bes-. bes-. bes-. bes\!-. 
 	bes-.\p r r4 r
-	R2.*9
+	R2.*7
 % Bars 241 to 245
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 % Bars 246 to 250
 	\mark \default
 	d2.\pp~
@@ -277,11 +289,15 @@ musicOboeIIMvtIII = \relative c {
 	d2 d8. d16 \section
 	\key bes \major d4 r r
 % Bars 256 to 260
-	R2.*11
+	R2.*9
 % Bars 261 to 265
 	
-% Bars 266 to 270
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 266 to 270
+	\mmrPos #-4 R \no
 	des2.\ff\startTrillSpan
 	<< des\startTrillSpan {s4 s s8 s\stopTrillSpan}>> \mark \default
 	d!4-. r r
@@ -347,12 +363,12 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	R2.*4
+	R2.
 % Bars 331 to 335
-	
-	
-	
-	R2.\fermata
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R2._\fermata \no
 	f2(_\piuf g4
 % Bars 336 to 340
 	ees f aes)
@@ -380,12 +396,12 @@ musicOboeIIMvtIII = \relative c {
 	c4.\fz c8-. c-. a-.
 % Bars 356 to 360
 	a4( bes) r
-	R2.*8
+	R2.*4
 % Bars 361 to 365
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	d4(\f c bes)
 % Bars 366 to 370
 	f'( ees d)
@@ -446,12 +462,16 @@ musicOboeIIMvtIII = \relative c {
 	a, bes c
 	d c d
 	c2.\fermata
-	R2.*8
+	R2.*5
 % Bars 416 to 420
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 421 to 425
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f,4.(\pp g8 a16[ bes r16. d,32-.])
 	d4. r8 r4
 	f4.( g8 a16[ bes r16. d,32-.)]

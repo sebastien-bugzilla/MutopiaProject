@@ -24,12 +24,12 @@ musicOboeIMvtII = \relative c {
 	ees4)\p r8 r4 r8 r2.
 	c'4.\p\<~ c8 c c\! c4.(~ c4~\> c16 g
 	aes4)\p r8 r4 r8 r2.
-	R1.*9
+	R1.*7
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #6 R \no \mark \default
 	r4 r8 bes4.\pp r4 r8 bes4.
 	r4 r8 ees,2.\fp\>~ ees4.\pp
 	f,8\p\< f f  f f f\!  f\> f f  f f f\!
@@ -127,11 +127,15 @@ musicOboeIMvtII = \relative c {
 	R1.
 	g4.\p\<~ g8 g-> g->\! g4.\>(~ g4~ g16 d)\!
 	ees4 r8 r4 r8 r2.
-	R1.*11
+	R1.*10
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
+	
+	
+	
+	\ni \mmrPos #-6 R1. \no
 % Bars 116 to 120
 	r4 r8 bes'4.\pp r4 r8 bes4.
 	r4 r8 ees,4.( c8\> bes a bes des8. c16)\!

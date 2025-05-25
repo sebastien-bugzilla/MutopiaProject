@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -50,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtI
-			}
+%			\new Voice {
+%				\formatOboeIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtI
 			}
@@ -74,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtII
-			}
+%			\new Voice {
+%				\formatOboeIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtII
 			}
@@ -98,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtIII
-			}
+%			\new Voice {
+%				\formatOboeIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtIII
 			}
@@ -122,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtIV
-			}
+%			\new Voice {
+%				\formatOboeIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtIV
 			}
@@ -146,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtI
-			}
+%			\new Voice {
+%				\formatOboeIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
@@ -170,9 +171,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtII
-			}
+%			\new Voice {
+%				\formatOboeIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
@@ -194,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtIII
-			}
+%			\new Voice {
+%				\formatOboeIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
@@ -218,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtIV
-			}
+%			\new Voice {
+%				\formatOboeIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}

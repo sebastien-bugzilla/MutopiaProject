@@ -16,7 +16,7 @@ musicOboeIMvtIV = \relative c {
 	R1
 % Bars 6 to 10
 	r4 bes8( a) f'( e) r4
-	R1*27
+	R1*25
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -27,8 +27,8 @@ musicOboeIMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	r2 r4 r8 d\f~
 	d4\ff ees2 f4~
 % Bars 36 to 40
@@ -53,15 +53,22 @@ musicOboeIMvtIV = \relative c {
 	a~
 	a~
 	a4 r r2
-	R1*23
+	R1*13
 % Bars 56 to 60
 	
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 71 to 75
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R1*3
 % Bars 76 to 80
 	\mark \default
 	bes,2.\mp bes16(\< c d ees\!
@@ -138,7 +145,7 @@ musicOboeIMvtIV = \relative c {
 		f4\< e\! g4.\> f8\!
 		e4) r r2
 	}>>
-	R1*23
+	R1*21
 % Bars 136 to 140
 	
 % Bars 141 to 145
@@ -147,8 +154,12 @@ musicOboeIMvtIV = \relative c {
 	
 % Bars 151 to 155
 	
-% Bars 156 to 160
 	
+	
+	
+	\ni \mmrPos #-4 R1
+% Bars 156 to 160
+	\mmrPos #-4 R \no
 	des2\p\< des4. des8\!
 	des'2\fz(~ des8\> ces bes aes\!)
 	ges4 r r2
@@ -196,11 +207,11 @@ musicOboeIMvtIV = \relative c {
 	ais fis ais b cis ais cis d
 	e cis e fis g4) r
 % Bars 196 to 200
-	R1*8
+	R1*5
 % Bars 201 to 205
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f2\p e8. f16 ges4
 	f r r2
 % Bars 206 to 210
@@ -311,8 +322,8 @@ musicOboeIMvtIV = \relative c {
 	
 % Bars 301 to 305
 	\mark \default
-	R1*2
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	r2 ees,(\p
 	\tuplet 3/2 2 {f4 ees bes'} aes2)
 % Bars 306 to 310
@@ -414,12 +425,12 @@ musicOboeIMvtIV = \relative c {
 	
 % Bars 391 to 395
 	\mark #11
-	R1*8
+	R1*5
 % Bars 396 to 400
 	
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	aes,1\pp~
 % Bars 401 to 405
 	aes~
