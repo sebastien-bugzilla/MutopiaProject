@@ -157,7 +157,7 @@ musicClarinettoIIMvtII = \relative c {
 	r r4 r8 g,16(\pp-. g-. b-. b-. d-. d)-. 
 	R1.
 	R1. \mark \default
-	r2. r4 r8 aes,16(\p-. aes-. c-. c-. ees-. ees)-.
+	\voiceTwo r2. \oneVoice r4 r8 aes,16(\p-. aes-. c-. c-. ees-. ees)-.
 % Bars 126 to 130
 	R1.*2
 	
@@ -173,7 +173,7 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 136 to 140
 	R1.*2
 	
-	R1.
+	\ni \mmrPos #4 R1. \no
 	a8\ff r r r4 r8 gis8 r r r4 r8 \mark \default
 	R1.
 % Bars 141 to 145

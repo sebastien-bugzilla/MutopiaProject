@@ -81,10 +81,10 @@ musicClarinettoIMvtI = \relative c {
 	
 	\mark \default
 	\repeat volta 2 {
-		R2*5
+		R2*3
 % Bars 66 to 70
-		
-		
+		\ni \mmrPos #4 R2
+		\mmrPos #4 R \no
 		a,,2\fz\>~
 		a\!
 		R2*5
@@ -363,11 +363,11 @@ musicClarinettoIMvtI = \relative c {
 	<< a {s8 s s s\!}>>
 % Bars 306 to 310
 	d,8 r r4
-	R2*7
+	R2*5
 % Bars 311 to 315
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	d,4\p( e8 fis)
 	a4.( g8)
 % Bars 316 to 320
@@ -557,11 +557,15 @@ musicClarinettoIMvtI = \relative c {
 	d-.\< a'-. a-. g-.\!
 	f4.->_\piuf e8
 	d-.\< a'-. a-. g-.\!
-	R2*12
+	R2*11
 % Bars 486 to 490
 	
 % Bars 491 to 495
 	
+	
+	
+	
+	\ni \mmrPos #4 R2 \no
 % Bars 496 to 500
 	r4 aes\brack\pp
 	r aes

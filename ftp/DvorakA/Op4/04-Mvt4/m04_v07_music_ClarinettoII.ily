@@ -101,13 +101,17 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 76 to 80
 	<< g1 {s4 s\! s s}>> \mark \default
 	g4 r r2
-	R1*11
+	R1*7
 % Bars 81 to 85
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 86 to 90
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	fis4->\f g-> a-> g->
 	fis2-> a->
 % Bars 91 to 95
@@ -242,12 +246,12 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	
 	
-	R1*5
+	R1*4
 	
 % Bars 206 to 210
 	
 	
-	
+	\ni \mmrPos #-4 R1 \no
 	c,,2\p \tuplet 3/2 2 {b!4-. c-. des-.}
 	c-. r r2
 % Bars 211 to 215
@@ -472,11 +476,15 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	
 	
-	R1*7
+	R1
 % Bars 406 to 410
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 411 to 415
-	
+	\mmrPos #-4 R \no
 	cis'2\f b
 	a2. \tuplet 5/4 4 {cis16( dis eis fis gis)}
 	fis4.-> e!8 d4-> cis->

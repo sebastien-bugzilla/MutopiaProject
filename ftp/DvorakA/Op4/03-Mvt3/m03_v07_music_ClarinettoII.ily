@@ -56,16 +56,20 @@ musicClarinettoIIMvtIII = \relative c {
 	g8.\f g16 g8 r r4
 	g8.\p g16 g8 r r4
 	g8.\p\> g16 << g2\fermata {s8 s s s\!}>> \mark \default
-	R2.*18
+	R2.*15
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 61 to 65
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	b'8.\p b16 b2~
 	b8. b16 b2~
 	b8. b16 b2~
@@ -282,12 +286,12 @@ musicClarinettoIIMvtIII = \relative c {
 	d16( e f8) cis8-. cis-. d4->
 % Bars 246 to 250
 	d16( e f8) cis8-. cis-. d4-> \mark \default
-	R2.*8^\mutainb \transposition bes
+	R2.*4^\mutainb \transposition bes
 % Bars 251 to 255
-	
-	
-	
-	\section
+	\ni \mmrPos #-4 R2. 
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	g,2.\pp~
 % Bars 256 to 260
 	g~
@@ -330,13 +334,13 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 291 to 295
 	a~
 	<< a {s4 s s\!}>>
-	R2.*11
+	R2.*8
 % Bars 296 to 300
 	
 % Bars 301 to 305
-	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	b4(\brack\f a g)
 	a( g f)
 % Bars 306 to 310
@@ -348,13 +352,17 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 311 to 315
 	g8.\> g16 g8\! r r4
 	g8.\pp g16 g8 r r4\fermata \mark \markAaBox
-	R2.*18
+	R2.*15
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 331 to 335
 	b'8.\p b16 b2~
 	b8. b16 b2~

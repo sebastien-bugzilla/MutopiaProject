@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -50,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtI
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtI
 			}
@@ -74,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtII
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtII
 			}
@@ -98,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtIII
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtIII
 			}
@@ -122,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtIV
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtIV
 			}
@@ -146,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtI
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtI
 			}
@@ -170,9 +171,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtII
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtII
 			}
@@ -194,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtIII
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtIII
 			}
@@ -218,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtIV
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtIV
 			}

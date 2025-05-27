@@ -661,28 +661,175 @@ cueVoiceOboeIIMvtIV = \relative c {
 %#               C U E   V O I C E   F O R   C L A R I N E T T I               #
 %###############################################################################
 cueVoiceClarinettoIMvtI = \relative c {
-	
+	s2*65
+	% bars 66 - 67
+	\voiceTwo g''2(^\markup {Fag.} 
+	a8 g b, c)
+	s2*244
+	% bars 312 - 313
+	\voiceOne fis'2(^\markup {Ob.}
+	a8 g d e)
+	s2*181
+	% bar 495
+	\voiceTwo \tuplet 3/2 4 {r8^\markup {Cor.I.} bes,( g')} g4
 }
 cueVoiceClarinettoIMvtII = \relative c {
-	
+	% no cue Voice for clarinetto I
 }
 cueVoiceClarinettoIMvtIII = \relative c {
-	
+	s2.*59
+	% bars 60 - 62
+	\transpose bes c' {
+		\relative c'' {
+			\voiceOne c8[^\markup {Viol.I.} r16 c-.] c2~
+			c8[ r16 c-.] c2~
+			c8[ r16 c-.] c2
+		}
+	}
+	s2.*188
+	% bars 251 - 254
+	\transpose bes c' {
+		\relative c''' {
+			f2.~^\markup {Fl.I.} 
+			f2 f8. f16
+			f2.~
+			f
+		}
+	}
+	s2.*46
+	% bars 301 - 303
+	\transpose bes c' {
+		\relative c''' {
+			f8^\markup {Fl.I.} r r4 \acciaccatura e8 f r
+			r4 r \acciaccatura e8 f r
+			r4 r \acciaccatura e8 f r
+		}
+	}
+	s2.*24
+	% bars 328 - 330
+	\transpose bes c' {
+		\relative c'' {
+			c8[^\markup {Viol.I.} r16 c-.] c2~
+			c8[ r16 c-.] c2~
+			c8[ r16 c-.] c2
+		}
+	}
 }
 cueVoiceClarinettoIMvtIV = \relative c {
-	
+	s1*84
+	% bars 85 - 88
+	\transpose bes c' {
+		\relative c'' {
+			\voiceOne f2.(^\markup {Ob.I.} g16 a bes c)
+			d2 c4. f,8(
+			bes2) a4. d,8(
+			g2) f4. c8
+		}
+	}
+	s1*119
+	% bar 208
+	\transpose bes c' {
+		\relative c''' {
+			<ges bes>2^\markup {Ob.I.II.} \tuplet 3/2 2 {<d f>4-. <ees ges>-. <f aes>-.}
+		}
+	}
 }
 cueVoiceClarinettoIIMvtI = \relative c {
-	
+	s2*65
+	% bars 66 - 67
+	\voiceTwo g''2(^\markup {Fag.} 
+	a8 g b, c)
+	s2*244
+	% bars 312 - 313
+	\voiceOne fis'2(^\markup {Ob.}
+	a8 g d e)
+	s2*24
+	% bar 338 - 341
+	r8^\markup {Cl.I.} f16( ees) r8 d16( c)
+	r8 f16( ees) r8 d16( c)
+	r8 f16( ees) r8 d16( c)
+	r8 f16( ees) r8 d16( c)
+	s2*153
+	% bar 495
+	\voiceTwo \tuplet 3/2 4 {r8^\markup {Cor.I.} bes,( g')} g4
 }
 cueVoiceClarinettoIIMvtII = \relative c {
-	
+	s1.*124
+	% bar 125
+	\voiceOne r4 r8 aes''16(-.^\markup {Cl.I.} aes-. c-. c-. ees-. ees-.) s2.
+	s1.*12
+	% bar 138
+	\voiceTwo r2. c4.(~^\markup {Cl.I.} c8 gis8. a16)
 }
 cueVoiceClarinettoIIMvtIII = \relative c {
-	
+	s2.*59
+	% bars 60 - 62
+	\transpose bes c' {
+		\relative c'' {
+			\voiceOne c8[\repeatTie^\markup {Viol.I.} r16 c-.] c2~
+			c8[ r16 c-.] c2~
+			c8[ r16 c-.] c2
+		}
+	}
+	s2.*188
+	% bars 251 - 254
+	\transpose bes c' {
+		\relative c''' {
+			f2.~^\markup {Fl.I.} 
+			f2 f8. f16
+			f2.~
+			f
+		}
+	}
+	s2.*46
+	% bars 301 - 303
+	\transpose bes c' {
+		\relative c''' {
+			f8^\markup {Fl.I.} r r4 \acciaccatura e8\f f r
+			r4 r \acciaccatura e8\f f r
+			r4 r \acciaccatura e8\f f r
+		}
+	}
+	s2.*24
+	% bars 328 - 330
+	\transpose bes c' {
+		\relative c'' {
+			c8[^\markup {Viol.I.} r16 c-.] c2~
+			c8[ r16 c-.] c2~
+			c8[ r16 c-.] c2
+		}
+	}
 }
 cueVoiceClarinettoIIMvtIV = \relative c {
-	
+	s1*84
+	% bars 85 - 88
+	\transpose bes c' {
+		\relative c'' {
+			\voiceOne f2.(^\markup {Ob.I.} g16 a bes c)
+			d2 c4. f,8(
+			bes2) a4. d,8(
+			g2) f4. c8
+		}
+	}
+	s1*119
+	% bar 208
+	\transpose bes c' {
+		\relative c''' {
+			<ges bes>2^\markup {Ob.I.II.} \tuplet 3/2 2 {<d f>4-. <ees ges>-. <f aes>-.}
+		}
+	}
+	s1*197
+	% bars 406 - 411
+	\transpose bes c' {
+		\relative c {
+			\clef bass des2^\markup {Fag.I.} des4.-> des8-.
+			des'2\fz(~ des8 ces bes aes)
+			ges2 ges4.-> ges8-.
+			ges'2\fz(~ ges8 fes ees des)
+			b1~\fz
+			b \clef treble
+		}
+	}
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #
