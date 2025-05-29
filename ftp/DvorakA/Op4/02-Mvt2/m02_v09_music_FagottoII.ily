@@ -67,12 +67,12 @@ musicFagottoIIMvtII = \relative c {
 	
 	
 	R1.
-	R1.*5
+	R1.*3
 % Bars 51 to 55
 	
 	
-	
-	
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no
 	f2.\fz  << fes {s8\> s s  s s s\!}>>
 % Bars 56 to 60
 	aes4.(\p\> ees)\! << aes2. {s4.\> s\!}>>
@@ -96,12 +96,12 @@ musicFagottoIIMvtII = \relative c {
 	f,4.(\mf fis)\< g( aes)\!
 	g'4.\ff~ g8 r g f4.~ f8 r f \mark \default
 	f r r r4\fermata r8 r2.
-	R1.*9
+	R1.*7
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	
-	\clef tenor
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no \clef tenor
 	d'8(\mf c d ees d ees16 d c8\> bes c d c d16 c)\!
 	bes8(\p a bes\> c bes c16 bes a8 g a bes a bes16 a)\! \clef bass
 	ees\p ees aes aes g\< g f f ees ees d d ees ees ces' ces bes bes aes aes g g f f\!
@@ -154,9 +154,9 @@ musicFagottoIIMvtII = \relative c {
 	\mark \default
 	R1.
 % Bars 126 to 130
-	R1.*3
+	R1.*2
 	
-	
+	\ni \mmrPos #-4 R1. \no
 	r2. g8\ff-> fis-> g-> fis-> g-> fis->
 	r4 r8 fis(\p g fis) r2.
 % Bars 131 to 135

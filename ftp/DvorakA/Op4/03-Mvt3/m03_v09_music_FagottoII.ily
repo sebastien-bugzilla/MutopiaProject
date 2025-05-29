@@ -58,16 +58,20 @@ musicFagottoIIMvtIII = \relative c {
 	f8.\f f16_\diminuendo f8 r r4
 	f8.\p f16 f8 r r4
 	f8.\p\> f16 << f2\fermata {s4 s\!}>> \mark \default
-	R2.*18
+	R2.*15
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 61 to 65
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	c''8.\p c16 c2~
 	c8. c16 c2~
 	c8. c16 c2~
@@ -188,10 +192,11 @@ musicFagottoIIMvtIII = \relative c {
 	
 	\section
 	\repeat volta 2 {
-		\key a \major R2.*4
+		\key a \major \ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 181 to 185
-		
-		
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		cis'2.\pp
 		cis8. a16 a8 r r4
 		cis2.
@@ -294,15 +299,22 @@ musicFagottoIIMvtIII = \relative c {
 	f2.\ff\startTrillSpan
 	<< f\startTrillSpan {s4 s s\stopTrillSpan}>> \mark \default
 	bes4-. r r
-	R2.*23
+	R2.*15
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
 	
-% Bars 286 to 290
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 286 to 290
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*4
 % Bars 291 to 295
 	
 	
@@ -330,13 +342,17 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 311 to 315
 	f8.\> f16 f8\! r r4
 	f8.\pp f16 f8 r r4\fermata \mark \markAaBox
-	R2.*18
+	R2.*15
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 331 to 335
 	c''8.\p c16 c2~
 	c8. c16 c2~

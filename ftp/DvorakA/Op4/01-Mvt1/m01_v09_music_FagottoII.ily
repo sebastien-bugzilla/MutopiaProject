@@ -522,12 +522,12 @@ musicFagottoIIMvtI = \relative c {
 	
 % Bars 426 to 430
 	
-	R2*8
+	R2*5
 % Bars 431 to 435
 	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f'8(\p\< e) r e[(
 % Bars 436 to 440
 	g-> f)] r f([
@@ -573,10 +573,10 @@ musicFagottoIIMvtI = \relative c {
 	
 % Bars 471 to 475
 	\mark \default
-	R2*6
+	R2*4
 % Bars 476 to 480
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	g4~_\fzpocoapococrescendo g8 \tuplet 3/2 8 {g16( a! b}
 	c4.->)\< d8-.\!
 	ees4.\fz d8
@@ -589,9 +589,13 @@ musicFagottoIIMvtI = \relative c {
 % Bars 486 to 490
 	f-.[\p c-.] f,-. c-.\fz
 	f'8-> \tuplet 3/2 8 {ees!16( des c} des8) r
-	R2*8
+	R2*7
 % Bars 491 to 495
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2 \no
 % Bars 496 to 500
 	r4 fis,\brack\pp
 	r fis
@@ -618,15 +622,19 @@ musicFagottoIIMvtI = \relative c {
 	e
 % Bars 516 to 520
 	f8 r r4
-	R2*20
+	R2*18
 % Bars 521 to 525
 	
 % Bars 526 to 530
 	
 % Bars 531 to 535
 	
-% Bars 536 to 540
 	
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 536 to 540
+	\mmrPos #-4 R \no
 	\tuplet 3/2 4 {g8\fp g g  g g g}
 	g r r4
 	\tuplet 3/2 4 {g8\fp g g  g g g}

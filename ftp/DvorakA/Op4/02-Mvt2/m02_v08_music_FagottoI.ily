@@ -22,9 +22,9 @@ musicFagottoIMvtII = \relative c {
 	
 % Bars 11 to 15
 	
-	R1.*2
-	
 	R1.
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R1. \no
 	bes4.(\p a\< g f)\!
 % Bars 16 to 20
 	R1.
@@ -96,12 +96,12 @@ musicFagottoIMvtII = \relative c {
 	f,4.:16\mf fis:\< g: aes:\!
 	bes4.\ff~ bes8 r bes bes4.~ bes8 r bes \mark \default
 	a r r r4\fermata r8 r2.
-	R1.*9
+	R1.*7
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	
-	\clef tenor
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no \clef tenor
 	f'8(\mf ees f g f g16 f ees8\> d ees f ees f16 ees)\!
 	d8(\p c d\> ees d ees16 d c8 bes c d c d16 c)\! \clef bass
 	g\p g ces ces bes\< bes  aes aes g g f f  g g ces! ces bes bes  ces ces bes bes aes aes

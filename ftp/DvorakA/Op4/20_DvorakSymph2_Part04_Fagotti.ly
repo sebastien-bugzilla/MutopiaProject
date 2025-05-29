@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -50,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtI
-			}
+%			\new Voice {
+%				\formatFagottoIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtI
 			}
@@ -74,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtII
-			}
+%			\new Voice {
+%				\formatFagottoIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtII
 			}
@@ -98,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtIII
-			}
+%			\new Voice {
+%				\formatFagottoIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtIII
 			}
@@ -122,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtIV
-			}
+%			\new Voice {
+%				\formatFagottoIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtIV
 			}
@@ -146,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtI
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtI
 			}
@@ -170,9 +171,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtII
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtII
 			}
@@ -194,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtIII
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtIII
 			}
@@ -218,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtIV
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtIV
 			}

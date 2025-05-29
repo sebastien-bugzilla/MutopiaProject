@@ -9,9 +9,13 @@ musicFagottoIMvtIV = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*10
+	R1*6
 % Bars 6 to 10
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 11 to 15
 	bes'4->\mf bes8 bes bes4-> bes8 bes
 	bes4-> bes8 bes bes4-> bes8 bes
@@ -254,11 +258,14 @@ musicFagottoIMvtIV = \relative c {
 	bes2\p \tuplet 3/2 2 {f4-. ges-. aes-.}
 % Bars 211 to 215
 	ges r r2
-	R1*7
+	R1*3
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 216 to 220
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ees'8-.\p r r4 d!8-. r r4
 	ees8-. r r4 bes8-. r r4
 % Bars 221 to 225
