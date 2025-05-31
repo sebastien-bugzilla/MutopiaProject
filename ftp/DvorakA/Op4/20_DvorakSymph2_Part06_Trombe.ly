@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -50,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIMvtI
-			}
+%			\new Voice {
+%				\formatTrombeIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(trombeI) \tempiPartMvtI
 			}
@@ -64,7 +65,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -74,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIMvtII
-			}
+%			\new Voice {
+%				\formatTrombeIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(trombeI) \tempiPartMvtII
 			}
@@ -98,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIMvtIII
-			}
+%			\new Voice {
+%				\formatTrombeIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(trombeI) \tempiPartMvtIII
 			}
@@ -122,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIMvtIV
-			}
+%			\new Voice {
+%				\formatTrombeIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(trombeI) \tempiPartMvtIV
 			}
@@ -146,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIIMvtI
-			}
+%			\new Voice {
+%				\formatTrombeIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(trombeII) \tempiPartMvtI
 			}
@@ -160,7 +161,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -170,14 +171,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIIMvtII
-			}
+%			\new Voice {
+%				\formatTrombeIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(trombeII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrombeIIMvtI
+				\InCueContext \cueVoiceTrombeIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \nameTrombeIIMvtII \musicTrombeIIMvtII
@@ -194,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIIMvtIII
-			}
+%			\new Voice {
+%				\formatTrombeIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(trombeII) \tempiPartMvtIII
 			}
@@ -218,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIIMvtIV
-			}
+%			\new Voice {
+%				\formatTrombeIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(trombeII) \tempiPartMvtIV
 			}

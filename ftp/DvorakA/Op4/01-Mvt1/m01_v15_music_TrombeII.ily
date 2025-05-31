@@ -9,22 +9,26 @@ musicTrombeIIMvtI = \relative c {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	R2*11
+	R2*8
 % Bars 6 to 10
 	
-% Bars 11 to 15
 	
-	r4 e'\ff~
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 11 to 15
+	\mmrPos #-4 R \no
+	\voiceTwo r4 \oneVoice e'\ff~
 	e2\fermata
-	R2*11
+	R2*10
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
 	
 	
-	
-	r4 e_\fbrackf~
+	\ni \mmrPos #-4 R2 \no
+	\voiceTwo r4 \oneVoice e_\fbrackf~
 % Bars 26 to 30
 	e2\fermata \mark \default
 	g\f~
@@ -38,11 +42,15 @@ musicTrombeIIMvtI = \relative c {
 	g8 r g4->~
 	g8 r r4
 % Bars 36 to 40
-	R2*15
+	R2*13
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
+	
+	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-4 R \no
 % Bars 51 to 55
 	g8.\f d16 d8. g16
 	g8 r r4
@@ -56,7 +64,7 @@ musicTrombeIIMvtI = \relative c {
 	
 	\mark \default
 	\repeat volta 2 {
-		R2*28
+		R2*24
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -66,7 +74,11 @@ musicTrombeIIMvtI = \relative c {
 % Bars 81 to 85
 	
 % Bars 86 to 90
-	
+		
+		\ni \mmrPos #4 R2
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R \no
 % Bars 91 to 95
 		e2\ff~
 		e4 r
@@ -95,19 +107,23 @@ musicTrombeIIMvtI = \relative c {
 		d~
 		d~
 		d8 r r4
-		R2*13
+		R2*9
 % Bars 116 to 120
 	
 % Bars 121 to 125
-	
-% Bars 126 to 130
 		
+		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+% Bars 126 to 130
+		\mmrPos #-4 R \no
 		d2\pp~
 		d~
 		d~
 		d
 % Bars 131 to 135
-		R2*29
+		R2*25
 % Bars 136 to 140
 	
 % Bars 141 to 145
@@ -117,10 +133,10 @@ musicTrombeIIMvtI = \relative c {
 % Bars 151 to 155
 	
 % Bars 156 to 160
-		
-		
-		
-		\mark \default
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no \mark \default
 		g2\f~
 % Bars 161 to 165
 		g~
@@ -151,7 +167,7 @@ musicTrombeIIMvtI = \relative c {
 		
 		
 		\mark \default
-		R2
+		\ni \mmrPos #-4 R2 \no
 % Bars 201 to 205
 		c2->\brack\f
 		R
@@ -211,14 +227,14 @@ musicTrombeIIMvtI = \relative c {
 % Bars 256 to 260
 	
 	\mark \default
-	R2*12
+	R2*9
 % Bars 261 to 265
 	
 % Bars 266 to 270
 	
-	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	d2\f~
 % Bars 271 to 275
 	d~
@@ -229,15 +245,19 @@ musicTrombeIIMvtI = \relative c {
 % Bars 276 to 280
 	d8_\dimmarkup r r4
 	d8\p r r4
-	R2*16
+	R2*12
 % Bars 281 to 285
 	
 % Bars 286 to 290
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 291 to 295
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r4 d->\f
 	r d->
 % Bars 296 to 300
@@ -289,7 +309,7 @@ musicTrombeIIMvtI = \relative c {
 	
 	\mark \default
 % Bars 356 to 360
-	R2*32
+	R2*28
 % Bars 361 to 365
 	
 % Bars 366 to 370
@@ -300,9 +320,13 @@ musicTrombeIIMvtI = \relative c {
 	
 % Bars 381 to 385
 	
+	
+	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
 % Bars 386 to 390
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	c8\f r r4
 	c8 r r4 \mark #11
 	R2*4
@@ -338,12 +362,16 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	\mark \default
-	R2*8
+	R2*4
 % Bars 441 to 445
 	
+	
+	
+	\ni \mmrPos #4 R2 
+	\mmrPos #4 R
 % Bars 446 to 450
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	fis2\f~
 	fis4 r
 	R2*2
@@ -386,11 +414,11 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	
-	R2*4
+	\ni \mmrPos #4 R2
 % Bars 501 to 505
-	
-	
-	\mark \default
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	a2\ff
 	r8 a a \tuplet 3/2 8 {a16 a a}
 % Bars 506 to 510
@@ -407,13 +435,17 @@ musicTrombeIIMvtI = \relative c {
 	r8 c c \tuplet 3/2 8 {c16 c c}
 % Bars 516 to 520
 	c8 r r4
-	R2*15
+	R2*11
 % Bars 521 to 525
 	
 % Bars 526 to 530
 	
-% Bars 531 to 535
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+% Bars 531 to 535
+	\mmrPos #4 R \no
 	r4 r8 b\f
 	r4 r8 g'
 	r4 r8 e
@@ -424,12 +456,13 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	\mark \default
-	R2*6
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
 % Bars 546 to 550
-	
-	
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	b'!2->\f
 % Bars 551 to 555
 	b->
@@ -452,7 +485,7 @@ musicTrombeIIMvtI = \relative c {
 % Bars 566 to 570
 	
 	\mark \default
-	R2*43
+	R2*39
 % Bars 571 to 575
 	
 % Bars 576 to 580
@@ -469,10 +502,10 @@ musicTrombeIIMvtI = \relative c {
 	
 % Bars 606 to 610
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 % Bars 611 to 615
 	e2\f~
 	e8 g-. e-. g-.

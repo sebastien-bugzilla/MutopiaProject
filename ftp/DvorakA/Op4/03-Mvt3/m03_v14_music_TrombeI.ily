@@ -40,23 +40,31 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 66 to 70
 	R2.\fermata
-	R2.*15
+	R2.*12
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
-% Bars 81 to 85
 	
+	
+	\ni \mmrPos #9 R2.
+	\mmrPos #9 R
+% Bars 81 to 85
+	\mmrPos #6 R \no
 	d''8.\pp d16 d2
 	d8. d16 d2
 	d8. d16 d2 \mark \default
 	g,8 r r4 r
 % Bars 86 to 90
-	R2.*11
+	R2.*7
 % Bars 91 to 95
 	
-% Bars 96 to 100
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 96 to 100
+	\mmrPos #-4 R \no
 	r4 r g'8.\f g16
 	g2 g8. g16
 	g2 g8. g16
@@ -136,13 +144,21 @@ musicTrombeIMvtIII = \relative c {
 	
 	\section
 	\repeat volta 2 {
-		R2.*17
+		R2.*8
 % Bars 181 to 185
 	
 % Bars 186 to 190
-	
+		
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R
 % Bars 191 to 195
-	
+		\mmrPos #4 R
+		\mmrPos #8 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 % Bars 196 to 200
 		g'2.~
 		g~
@@ -200,7 +216,7 @@ musicTrombeIMvtIII = \relative c {
 	
 	
 	\mark \default
-	R2.*35
+	R2.*30
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -213,10 +229,14 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 296 to 300
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 301 to 305
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g4\f r r
 	g r r
 % Bars 306 to 310
@@ -240,29 +260,33 @@ musicTrombeIMvtIII = \relative c {
 	
 	
 	R2.\fermata
-	R2.*15
+	R2.*11
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
 % Bars 346 to 350
-	
-	
-	
-	
+	\ni \mmrPos #9 R2.
+	\mmrPos #9 R
+	\mmrPos #9 R
+	\mmrPos #6 R \no
 	d'8.\pp d16 d2
 % Bars 351 to 355
 	d8. d16 d2
 	d8. d16 d2 \mark \markBbBox
 	g,8 r r4 r
-	R2.*11
+	R2.*6
 % Bars 356 to 360
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 361 to 365
-	
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r4 r g'8.\f g16
 % Bars 366 to 370
 	g2 g8. g16
@@ -335,13 +359,21 @@ musicTrombeIMvtIII = \relative c {
 % Bars 436 to 440
 	
 	R2.\fermata
-	R2.*18
+	R2.*12
 % Bars 441 to 445
 	
 % Bars 446 to 450
 	
-% Bars 451 to 455
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 451 to 455
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 456 to 460
 	<< c2.-> {s4\ff\> s s\!}>>
 	<< g'2.-> {s4\> s s\!}>>
