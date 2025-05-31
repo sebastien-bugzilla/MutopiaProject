@@ -24,12 +24,12 @@ musicCornoIMvtII = \relative c {
 	d4.(->\pp c\< bes\! ees)
 	ees(\fz\> d)\! c( g\p~
 	g8) r r r4 r8 r2.
-	R1.*6
+	R1.*5
 % Bars 16 to 20
 	
 	
 	
-	
+	\ni \mmrPos #-4 R1. \no
 	c2.\brack\p\<~ c4.\! des\fz
 % Bars 21 to 25
 	f\fp( ees) d!(\pp d8 c bes
@@ -60,11 +60,11 @@ musicCornoIMvtII = \relative c {
 % Bars 46 to 50
 	<< c1. {s8\< s s  s s s\! s\> s s s s s\!}>>
 	c4 r8 r4 r8 r2.
-	R1.*6
+	R1.*5
 % Bars 51 to 55
 	
 	
-	
+	\ni \mmrPos #-4 R1. \no
 	bes4.(\pp des2.\< << bes4.) {s8 s s\!}>>
 	<< {aes2.(->\mf a)} {s8\< s s s s s\! s\> s s s s s\!} >>
 % Bars 56 to 60
@@ -89,14 +89,14 @@ musicCornoIMvtII = \relative c {
 	c\mf << f2.\<(~ {s8 s s  s s s16 s\!} >> f8 ees bes)
 	d4.\f r4 r8 ees4. r4 r8 \mark \default
 	e!8 r r r4\fermata r8 r2.
-	R1.*14
+	R1.*13
 % Bars 76 to 80
 	
 % Bars 81 to 85
 	
 % Bars 86 to 90
 	
-	
+	\ni \mmrPos #-4 R1. \no
 	c1.\ff \mark \default
 	r8 des\p\> des~  des des des~  des des\pp des~  des des des~
 	des des des~  des des des~  des des des~  des des des
@@ -138,11 +138,11 @@ musicCornoIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1.*4
+	R1.*3
 % Bars 126 to 130
 	
 	
-	
+	\ni \mmrPos #4 R1. \no
 	r2. a'8->\ff a-> a->   a-> a-> a->
 	R1.
 % Bars 131 to 135

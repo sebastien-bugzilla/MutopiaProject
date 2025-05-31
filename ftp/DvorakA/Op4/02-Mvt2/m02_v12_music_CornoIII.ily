@@ -26,8 +26,8 @@ musicCornoIIIMvtII = \relative c {
 % Bars 21 to 25
 	
 	\mark \default
-	R1.*2
-	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R \no
 	c8\p\< c c  c c c\!  c c\> c  c c c\!
 % Bars 26 to 30
 	R1.
@@ -54,14 +54,14 @@ musicCornoIIIMvtII = \relative c {
 	R1.*2
 	
 	<< c1. {s8\p\< s s s s s\! s\> s s  s s s\!}>>
-	R1.*10
+	R1.*8
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no \mark \default
 	f,1.\pp~
 	f~
 % Bars 61 to 65
@@ -69,24 +69,24 @@ musicCornoIIIMvtII = \relative c {
 	r2. d'4.\ppp~ d8 r r
 	R1.
 	r2. aes4.\ppp~ aes8 r r
-	R1.*5
+	R1.*4
 % Bars 66 to 70
 	
 	
 	
-	
-	r2. c\fz
+	\ni \mmrPos #-4 R1. \no
+	\voiceTwo r2. \oneVoice c\fz
 % Bars 71 to 75
 	e16\mf e e e e e  e e\< e e e e  << c4.:16 {s8 s s\!}>> d4.:16
 	c1.\f( \mark \default
 	b8) r r r4\fermata r8 r2.
-	R1.*5
+	R1.*4
 	
 % Bars 76 to 80
 	
 	
-	
-	r2. r4 r8 d4.\pp(
+	\ni \mmrPos #-4 R1. \no
+	\voiceTwo r2. \oneVoice r4 r8 d4.\pp(
 	e) a,4( b8 c4.) g4( a8)
 % Bars 81 to 85
 	d,2.(\pp\< e4. << c) {s8 s s\!} >>
@@ -120,7 +120,10 @@ musicCornoIIIMvtII = \relative c {
 	d1.
 % Bars 106 to 110
 	d4 r8 r4 r8 r2.
-	R1.*4
+	R1.*3
+	
+	
+	\ni \mmrPos #-4 R1. \no
 % Bars 111 to 115
 	<< c1.\pp~ {s4. s\< s s}>>
 	c8 c c~  c c c~\!  c c c~  c\> c c\!~
@@ -138,10 +141,10 @@ musicCornoIIIMvtII = \relative c {
 	R1.*3
 	
 	\mark \default
-	R1.*3
+	R1.*2
 % Bars 126 to 130
 	
-	
+	\ni \mmrPos #-4 R1. \no
 	r4 r8 ees'4.(~\p ees8 b!8. c16 c4.)
 	r2. c8->\ff b-> c-> b-> c-> b->
 	r4 r8 e(\pp-> e-> e->) r2.

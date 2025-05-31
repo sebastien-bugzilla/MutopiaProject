@@ -973,52 +973,1258 @@ cueVoiceFagottoIIMvtIV = \relative c {
 %#                    C U E   V O I C E   F O R   C O R N I                    #
 %###############################################################################
 cueVoiceCornoIMvtI = \relative c {
-	
+	s2*67
+	% bars 68 - 69
+	\transpose f c' {
+		\relative c {
+			\voiceOne \clef bass bes8^\markup {Timp.} bes16 bes bes8 bes16 bes
+			bes8 bes16 bes bes8 bes16 bes \clef treble
+		}
+	}
+	s2*86
+	% bars 156 - 159
+	\transpose f c' {
+		\relative c {
+			\clef bass c4->^\markup {Vcl.Cb.} c->
+			c-> d8( bes)
+			c4 d
+			\grace {d16 e} f4.->( e8) \clef treble
+		}
+	}
+	s2*36
+	% bars 196 - 199
+	\transpose f c' {
+		\relative c'' {
+			d4->^\markup {Fl.I.} cis->
+			d->\< g->~
+			g f8. d16
+			d4\! r
+		}
+	}
+	s2*177
+	% bars 377 - 380
+	\transpose f c' {
+		\relative c {
+			<f f'>4.->^\markup {Fag.} <ees ees'>8-.
+			<f f'>4.-> <ees ees'>8-.
+			<f f'> <ees ees'> <d d'>-. <c c'>-.
+			<b b'> r r4
+		}
+	}
+	s2*35
+	% bars 416 - 419
+	\transpose f ees {
+		\relative c' {
+			\clef treble <e c'>4(^\markup {Cor.III.IV} <g d'>8 <c e>)
+			<e, c'>4( <g d'>8 <c e>)
+			<e, c'>4( <g d'>8 <c e>)
+			<e, c'>4( <g d'>8 <c e>)
+		}
+	}
+	s2*15
+	% bars 435 - 437
+	\transpose f c' {
+		\relative c {
+			\clef bass f8(^\markup {Fag.Cl.} e) r e[(
+			g-> f]) r f[(
+			bes-> a]) r a
+		}
+	}
+	s2*54
+	% bars 492 - 494
+	\transpose f c' {
+		\relative c'' {
+			r4^\markup {Ob.I.} r8 des(
+			des'4. c8
+			des8) r r4
+		}
+	}
+	s2*5
+	% bars 500 - 503
+	\voiceTwo <bes' bes'>2(^\markup {Trbni}
+	<b b'>
+	<c c'>
+	<cis cis'>)
+	s2*40
+	% bars 544 - 545
+	r4^\markup {Cor.III.IV.} <ees bes'>
+	r <e! b'!>
+	s2*32
+	% bars 578 - 581
+	<a c>2^\markup {Cor.III.IV.}~
+	q~
+	q~
+	q
+	s2*25
+	% bars 607 - 610
+	c,2~^\markup {Cor.III.}
+	c
+	c'~
+	c
+	s2*56
+	% bars 667 - 670
+	\transpose f c' {
+		\relative c' {
+			d2(^\markup {Viol.I.}
+			f
+			bes4 f
+			ees4. c8)
+		}
+	}
 }
 cueVoiceCornoIMvtII = \relative c {
-	
+	s1.*18
+	% bar 19
+	\transpose f c' {
+		\relative c'' {
+			\voiceOne ees4.^\markup {Viol.I.} c'4(~ c16. bes!32-.) bes4.~ bes4 e,8
+		}
+	}
+	s1.*33
+	% bar 53
+	\transpose f c' {
+		\relative c' {
+			ees2.~^\markup {Fag.} ees8 des( c bes4 f8)
+		}
+	}
+	s1.*33
+	% bar 87
+	\transpose f c' {
+		\relative c''' {
+			a!16\f^\markup {Ob.I.} a fis fis g g a a bes bes c c bes bes fis fis g g a a bes bes c c
+		}
+	}
+	s1.*40
+	% bar 128
+	\voiceTwo r4^\markup {Cor.III} r8 aes''4.(~ aes8 e8. f16) f4.
 }
 cueVoiceCornoIMvtIII = \relative c {
-	
+	s2.*28
+	% bars 29 - 31
+	\transpose f c' {
+		\relative c'' {
+			\voiceOne f2^\markup {Ob.}~ f8 g(
+			a4 bes a
+			c8) s s2
+		}
+	}
+	s2.*28
+	% bars 60 - 62
+	\transpose f c' {
+		\relative c'' {
+			c8[\repeatTie^\markup {Viol.I.} r16 c-.] c2~
+			c8[ r16 c-.] c2~
+			c8[ r16 c-.] c2 
+		}
+	}
+	s2.*12
+	% bars 75 - 76
+	\voiceTwo \clef treble <f f'>2.~^\markup {Cor.III.IV.}
+	q2 s4
+	s2.*102
+	% bars 179 - 182
+	\transpose e d {
+		\relative c'' {
+			<g d'>2.\fz\>~^\markup {Cor.III.IV.D}
+			q~
+			q\pp~
+			q\laissezVibrer
+		}
+	}
+	s2.*35
+	% bar 218
+	\transpose e d {
+		\relative c'' {
+			\voiceOne <c ees>4^\markup {Cor.III.IV.D} r r
+		}
+	}
+	s2.*80
+	% bars 299 - 303
+	\transpose f c' {
+		\relative c'''' {
+			\ottava #1 r4^\markup {Fl.I.} r g16(\mf f ees bes'
+			f8) r r4 g16( f ees bes'
+			f8) r r4 \acciaccatura e8\f f r
+			r4 r \acciaccatura e8\f f r
+			r4 r \acciaccatura e8\f f \ottava #0 r
+		}
+	}
+	s2.*24
+	% bars 328 - 330
+	\transpose f c' {
+		\relative c'' {
+			c8[^\markup {Viol.I.} r16 c-.] c2~
+			c8[ r16 c-.] c2~
+			c8[ r16 c-.] c2
+		}
+	}
+	s2.*12
+	% bar 343
+	\transpose f ees {
+		\relative c' {
+			\clef treble \voiceTwo <g g'>2.\pp\laissezVibrer^\markup {Cor.III.IV.Es}
+		}
+	}
+	s2.*103
+	% bars 447 - 449
+	\transpose f ees {
+		\relative c' {
+			<d g>8[^\markup {Cor.III.IV.Es} q] <e g>[ q] <fis d'> q
+			<b, g'> q\< q q q q
+			<a' c> q q q q q\!
+		}
+	}
 }
 cueVoiceCornoIMvtIV = \relative c {
-	
+	s1*33
+	% bars 34 - 36
+	\transpose f c' {
+		\relative c'' {
+			\voiceOne r2^\markup {Ob.I.} r4 r8 d\f~
+			d4\ff ees2 f4~
+			f g2 a4
+		}
+	}
+	s1*32
+	% bars 69 - 72
+	\transpose f bes {
+		\relative c'' {
+			e4.^\markup {Cl.I.} e8 \tuplet 3/2 2 {b4( c d)}
+			c2. d4
+			e4. c8 \tuplet 3/2 2 {des4(\< ees f)\!}
+			c4.\< ees8 \tuplet 3/2 2 {f4( g aes)\!}
+		}
+	}
+	s1*8
+	% bars 81 - 84
+	\transpose f bes {
+		\relative c' {
+			<e e'>1~^\markup {Cor.III.IV}
+			q~\<
+			q~
+			q\!
+		}
+	}
+	s1*70
+	% bars 155 - 157
+	\transpose f bes {
+		\relative c'' {
+			bes2->^\markup {Cl.I.} bes4. bes8
+			bes'2(~-> bes8 aes g f)
+			ees4 r r2
+		}
+	}
+	s1*49
+	% bars 207 - 210
+	\transpose f bes {
+		\relative c' {
+			\voiceTwo c2\pp^\markup {Cor.III.IV} c4. c8
+			f4-. c-. r4 r8 c-.
+			f4-. c-. r4 r8 c-.
+			f4-. c-. r4 r8 c-.
+		}
+	}
+	s1*55
+	% bars 266 - 269
+	\transpose f c' {
+		\relative c'' {
+			\voiceOne g4.\p^\markup {Ob.I.} c8 a4. d8
+			bes4. ees8 c4. f8
+			d4. g8 ees4. a8
+			f4. bes8 g4. c8
+		}
+	}
+	s1*32
+	% bars 302 - 303
+	\transpose f c' {
+		\relative c' {
+			r2^\markup {Legni} ees\p(
+			\tuplet 3/2 2 {f4 ees bes'} aes2)
+		}
+	}
+	s1*6
+	% bars 310 - 311
+	\transpose f c' {
+		\relative c' {
+			r2^\markup {Fl.Ob.} fis2(\p
+			\tuplet 3/2 2 {gis4 fis cis'} b2)
+		}
+	}
+	s1*2
+	% bars 314 - 315
+	\transpose f c' {
+		\relative c'' {
+			r2 ^\markup {Fl.Ob.} a2(\p
+			\tuplet 3/2 2 {b4 a f'} e2)
+		}
+	}
+	s1*38
+	% bars 354 - 357
+	\transpose f bes {
+		\relative c'' {
+			ces1~^\markup {Cor.III.IV.}
+			ces
+			aes~
+			aes
+		}
+	}
+	s1*48
+	% bars 406 - 409
+	\transpose f bes {
+		\relative c'' {
+			a1\p^\markup {Cor.III.IV}(
+			bes)
+			d\p(
+			ees)
+		}
+	}
 }
 cueVoiceCornoIIMvtI = \relative c {
-	
+	s2*67
+	% bars 68 - 69
+	\transpose f c' {
+		\relative c {
+			\voiceOne \clef bass bes8^\markup {Timp.} bes16 bes bes8 bes16 bes
+			bes8 bes16 bes bes8 bes16 bes \clef treble
+		}
+	}
+	s2*57
+	% bars 127 - 130
+	c''2^\markup {Cor.I}~
+	c~
+	c~
+	c
+	s2*25
+	% bars 156 - 159
+	\transpose f c' {
+		\relative c {
+			\clef bass c4->^\markup {Vcl.Cb.} c->
+			c-> d8( bes)   % c => bes based on conductor
+			c4 d
+			\grace {d16 e} f4.->( e8) \clef treble
+		}
+	}
+	s2*36
+	% bars 196 - 199
+	\transpose f c' {
+		\relative c'' {
+			d4->^\markup {Fl.I.} cis->
+			d->\< g->~
+			g f8. d16
+			d4\! r
+		}
+	}
+	s2*96
+	% bar 296
+	\tuplet 3/2 4 {a8(\f^\markup {Cor.I.} g d')} d4\laissezVibrer
+	s2*80
+	% bars 377 - 380
+	\transpose f c' {
+		\relative c {
+			<f f'>4.->^\markup {Fag.} <ees ees'>8-.
+			<f f'>4.-> <ees ees'>8-.
+			<f f'> <ees ees'> <d d'>-. <c c'>-.
+			<b b'> r r4
+		}
+	}
+	s2*54
+	% bars 435 - 437
+	\transpose f c' {
+		\relative c {
+			\clef bass f8(^\markup {Fag.Cl.} e) r e[(
+			g-> f]) r f[(
+			bes-> a]) r a
+		}
+	}
+	s2*62
+	% bars 500 - 503
+	\voiceTwo <bes, bes'>2(^\markup {Trbni}
+	<b b'>
+	<c c'>
+	<cis cis'>)
+	s2*40
+	% bars 544 - 545
+	r4^\markup {Cor.III.IV.} <ees bes'>
+	r <e! b'!>
+	s2*32
+	% bars 578 - 581
+	<a c>2^\markup {Cor.III.IV.}~
+	q~
+	q~
+	q
+	s2*25
+	% bars 607 - 610
+	c,2~^\markup {Cor.III.}
+	c
+	c'~
+	c
+	s2*60
+	% bars 671 - 673
+	f,,2\p^\markup {Cor.IV.}~
+	f~
+	f
 }
 cueVoiceCornoIIMvtII = \relative c {
-	
+	s1.*20
+	% bar 21 - 22
+	\voiceOne f''4.(\fp ees) d!(~\pp d8 c bes
+	c4.~ c8) r r r2.
+	s1.*64
+	% bar 87
+	\transpose f c' {
+		\relative c''' {
+			a!16\f^\markup {Ob.I.} a fis fis g g a a bes bes c c bes bes fis fis g g a a bes bes c c
+		}
+	}
+	s1.*5
+	% bars 93 - 94
+	r8^\markup {Cor.I.} des8\pp des~  des des des~  des des des~  des des des~  
+	des des des~  des des des~  des des des~  des des des
+	s1.*33
+	% bar 128
+	\voiceTwo r4^\markup {Cor.III} r8 aes4.(~ aes8 e!8. f16) f4.
 }
 cueVoiceCornoIIMvtIII = \relative c {
-	
+	s2.*28
+	% bars 29 - 31
+	\transpose f c' {
+		\relative c'' {
+			\voiceOne f2^\markup {Ob.}~ f8 g(
+			a4 bes a
+			c8) s s2
+		}
+	}
+	s2.*28
+	% bars 60 - 62
+	\transpose f c' {
+		\relative c'' {
+			c8[\repeatTie^\markup {Viol.I.} r16 c-.] c2~
+			c8[ r16 c-.] c2~
+			c8[ r16 c-.] c2 
+		}
+	}
+	s2.*12
+	% bars 75 - 77
+	\voiceTwo \clef treble <f f'>2.~\pp^\markup {Cor.III.IV.}
+	q~
+	q
+	s2.*101
+	% bars 179 - 182
+	\transpose e d {
+		\relative c'' {
+			<g d'>2.\fz\>~^\markup {Cor.III.IV.D}
+			q~
+			q\pp~
+			q\laissezVibrer
+		}
+	}
+	s2.*35
+	% bar 218
+	\transpose e d {
+		\relative c'' {
+			\voiceOne <c ees>4^\markup {Cor.III.IV.D} r r
+		}
+	}
+	s2.*12
+	% bars 231 - 237
+	\transpose e d {
+		\relative c'' {
+			e16(^\markup {Viol.I.} f g8) d-. d-. e4->
+			f16( g a8) e8-. e-. f4->
+			f16( g a8) e8-. e-. f4->
+		}
+	}
+	ges''2.~\fz\<^\markup {Cor.I.}
+	ges4\f r r
+	b!2\p~ b8 fis
+	fis r r4 r
+	s2.*61
+	% bars 299 - 303
+	\transpose f c' {
+		\relative c'''' {
+			\ottava #1 r4^\markup {Fl.I.} r g16(\mf f ees bes'
+			f8) r r4 g16( f ees bes'
+			f8) r r4 \acciaccatura e8\f f r
+			r4 r \acciaccatura e8\f f r
+			r4 r \acciaccatura e8\f f \ottava #0 r
+		}
+	}
+	s2.*24
+	% bars 328 - 330
+	\transpose f c' {
+		\relative c'' {
+			c8[^\markup {Viol.I.} r16 c-.] c2~
+			c8[ r16 c-.] c2~
+			c8[ r16 c-.] c2
+		}
+	}
+	s2.*12
+	% bars 343 - 345
+	\transpose f ees {
+		\relative c' {
+			\clef treble \voiceTwo <g g'>2.~^\markup {Cor.III.IV.Es}
+			q~
+			q
+		}
+	}
+	s2.*85
+	% bar 431
+	<>^\markup {Corno.I.}
+	s2.*16
+	% bars 447 - 449
+	\transpose f ees {
+		\relative c' {
+			d8^\markup {Cor.IV.} d e[ e] fis fis
+			b, b\< b b b b
+			a' a a a a a\!
+		}
+	}
 }
 cueVoiceCornoIIMvtIV = \relative c {
-	
+	s1*33
+	% bars 34 - 36
+	\transpose f c' {
+		\relative c'' {
+			\voiceOne r2^\markup {Ob.I.} r4 r8 d\f~
+			d4\ff ees2 f4~
+			f g2 a4
+		}
+	}
+	s1*36
+	% bar 73 - 77
+	\voiceTwo f'1(\ppp^\markup {Cor.I.}
+	ges
+	f
+	ges
+	f4) r r2
+	s1*3
+	% bars 81 - 84
+	\transpose f bes {
+		\relative c' {
+			e1~^\markup {Cor.IV}
+			e~\<
+			e~
+			e\!
+		}
+	}
+	s1*70
+	% bars 155 - 157
+	\transpose f bes {
+		\relative c'' {
+			\voiceOne bes2->^\markup {Cl.I.} bes4. bes8
+			bes'2(~-> bes8 aes g f)
+			ees4 r r2
+		}
+	}
+	s1*49
+	% bars 207 - 210
+	\transpose f bes {
+		\relative c' {
+			\voiceTwo c2\pp^\markup {Cor.III.IV} c4. c8
+			f4-. c-. r4 r8 c-.
+			f4-. c-. r4 r8 c-.
+			f4-. c-. r4 r8 c-.
+		}
+	}
+	s1*55
+	% bars 266 - 269
+	\transpose f c' {
+		\relative c'' {
+			\voiceOne g4.\p^\markup {Ob.I.} c8 a4. d8
+			bes4.\< ees8 c4. f8
+			d4. g8 ees4. a8\!
+			f4. bes8 g4. c8
+		}
+	}
+	s1*32
+	% bars 302 - 305
+	\transpose f c' {
+		\relative c' {
+			r2^\markup {Legni} ees\p(
+			\tuplet 3/2 2 {f4 ees bes'} aes2)
+		}
+	}
+	r2^\markup {Cor.I.} bes2(\pp
+	\tuplet 3/2 2 {c4 bes f'} ees2)
+	s1*4
+	% bars 310 - 311
+	\transpose f c' {
+		\relative c' {
+			r2^\markup {Fl.Ob.} fis2(\p
+			\tuplet 3/2 2 {gis4 fis cis'} b2)
+		}
+	}
+	s1*2
+	% bars 314 - 315
+	\transpose f c' {
+		\relative c'' {
+			r2 ^\markup {Fl.Ob.} a2(\p
+			\tuplet 3/2 2 {b4 a f'} e2)
+		}
+	}
+	s1*38
+	% bars 354 - 357
+	\transpose f bes {
+		\relative c'' {
+			ces1~^\markup {Cor.III.IV.}
+			ces
+			aes~
+			aes
+		}
+	}
 }
 cueVoiceCornoIIIMvtI = \relative c {
-	
+	s2*80
+	% bars 81 - 82
+	\transpose ees c {
+		\relative c, {
+			\voiceOne \clef bass <f f'>2^\markup {Cor.I.II.}~
+			q \clef treble
+		}
+	}
+	s2*44
+	% bars 127 - 130
+	\voiceTwo d'2\pp^\markup {Cor.IV.}~
+	d~
+	d~
+	d
+	s2*25
+	% bars 156 - 159
+	\transpose ees c {
+		\relative c {
+			\clef bass c4->^\markup {Vcl.Cb.} c->
+			c-> d8( bes)
+			c4 d
+			\grace {d16 e} f4.->( e8) \clef treble
+		}
+	}
+	s2*36
+	% bars 196 - 199
+	\transpose ees c {
+		\relative c'' {
+			d4->^\markup {Fl.I.} cis->
+			d->\< g->~
+			g f8. d16
+			d4\! r
+		}
+	}
+	s2*58
+	% bars 258 - 261
+	\voiceOne f'2^\markup {Cor.I.II.}
+	f
+	f
+	f
+	s2*38
+	% bars 300 - 302
+	\voiceTwo fis,4.^\markup {Cor.I.II.} eis8
+	\tuplet 3/2 4 {dis8( cis ais')} ais4
+	cis ais8.( cis16)
+	s2*45
+	% bars 348 - 351
+	\transpose ees c {
+		\relative c' {
+			\voiceOne \clef bass des2(\fz^\markup {Fag.}
+			aes\fz)
+			ees'~\fz
+			ees \clef treble
+		}
+	}
+	s2*25
+	% bars 377 - 380
+	\transpose ees c {
+		\relative c {
+			\clef bass <f f'>4.->^\markup {Fag.} <ees ees'>8-.
+			<f f'>4.-> <ees ees'>8-.
+			<f f'> <ees ees'> <d d'>-. <c c'>-.
+			<b b'> r r4 \clef treble
+		}
+	}
+	s2*57
+	% bars 438 - 439
+	\transpose ees f {
+		\relative c' {
+			\clef bass c2\fz~^\markup {Cor.I.II.}
+			c \clef treble
+		}
+	}
+	s2*60
+	% bars 500 - 503
+	\voiceTwo <c, c'>2(^\markup {Trbni}
+	<cis cis'>
+	<d d'>
+	<dis dis'>)
+	s2*36
+	% bars 540 - 543
+	\transpose ees c {
+		\relative c' {
+			r4^\markup {Ob.I.} r8 ees^(\<
+			\voiceOne ees'4.\! d8 
+			ees8) r r d(\p\<
+			\tuplet 3/2 4 {c8 bes g'\!} g4\laissezVibrer)
+		}
+	}
+	s2*51
+	% bars 595 - 598
+	\transpose ees c {
+		\relative c {
+			\clef bass c8^\markup {Fag.} bes'4(-> g8)
+			c, bes'4->( g8)
+			c, bes'4->( g8)
+			c, bes'4->( g8) \clef treble
+		}
+	}
+	s2*68
+	% bars 667 - 671
+	\transpose ees c {
+		\relative c' {
+			\voiceTwo d2(^\markup {Viol.I.}
+			f
+			bes4 f
+			ees4. c8)
+		}
+	}
+	<>^\markup {Corno IV.}
 }
 cueVoiceCornoIIIMvtII = \relative c {
-	
+	s1.*22
+	% bars 23 - 24
+	\voiceTwo g''8\p^\markup {Cor.II} g~ g g~ g g~ g g~ g g~ g g
+	\ottava #-1 g,,1. \ottava #0
+	s1.*32
+	% bars 57 - 58
+	\transpose ees f {
+		\relative c'' {
+			\voiceOne g4.(\p^\markup {Cor.I.} c2. d4.
+			ees4) r8 r4 r8 r2.
+		}
+	}
+	s1.*10
+	% bars 69 - 70
+	a''4.\p(^\markup {Cor.I.} d2.~_\pocoapococresc d8 c g)
+	b2. s
+	s1.*7
+	% bars 78 - 79
+	\transpose ees c {
+		\relative c'' {
+			bes4.(^\markup {Ob.I.} c~ c8 d ees f4.)
+			f4 r8 r4 r8 s2.
+		}
+	}
+	s1.*30
+	% bar 110
+	\transpose ees c {
+		\relative c' {
+			\clef bass f2.\p~^\markup {Vlc.Viol.} f8 ees( d c4 g8) \clef treble
+		}
+	}
+	s1.*16
+	% bar 127
+	\transpose ees c {
+		\relative c''' {
+			r4^\markup {Ob.I.} r8 bes4.(~\p bes8 fis8. g16) g4.
+		}
+	}
 }
 cueVoiceCornoIIIMvtIII = \relative c {
-	
+	s2.*28
+	% bars 29 - 31
+	\transpose ees c {
+		\relative c'' {
+			\voiceOne f2~^\markup {Ob.I.} f8 g(
+			a4 bes a
+			c8) r s2
+		}
+	}
+	s2.*41
+	% bars 73 - 74
+	\transpose ees c {
+		\relative c''' {
+			<bes d>4(^\markup {Fl.} <a c> <ees g>8. <ees f>16)
+			<ees g>2(-> <ees f>8. c16)
+		}
+	}
+	s2.*14
+	% bars 89 - 91
+	\transpose ees f {
+		\relative c'' {
+			c2.~\<^\markup {Cor.I.}
+			c2~ c8\! f,
+			c'2.\laissezVibrer
+		}
+	}
+	s2.*83
+	% bars 175 - 178
+	\transpose d c {
+		\relative c'' {
+			aes2(\pp^\markup {Viol.I.} bes16 aes g f)
+			aes2(\< bes16 aes g f)
+			bes( aes g f bes aes g f bes aes g f)\!
+			bes(\< aes g f bes aes g f bes aes g f)\!
+		}
+	}
+	s2.*64
+	% bars 243 - 244
+	\transpose d e {
+		\relative c' {
+			\voiceTwo <c c'>2.\p^\markup {Cor.I.II.}~
+			q2 r4
+		}
+	}
+	s2.*6
+	% bars 251 - 254
+	\transpose ees c {
+		\relative c' {
+			\voiceTwo <d f>2.~^\markup {Fag.}
+			q2 q8. q16
+			q2.~
+			q
+		}
+	}
+	s2.*44
+	% bars 299 - 303
+	\transpose ees c {
+		\relative c'''' {
+			\voiceOne r4^\markup {Fl.I.} r g16(\mf f ees bes'
+			f8) r r4 g16( f ees bes'
+			f8) r r4 \acciaccatura e8\f f r
+			r4 r \acciaccatura e8\f f r
+			r4 r \acciaccatura e8\f f r
+		}
+	}
+	s2.*35
+	% bars 339 - 342
+	\transpose ees c {
+		\relative c''' {
+			c4\<(^\markup {Fl.I.} d ees)\!
+			g(\f\> f bes,)
+			d( c g8. f16)\!
+			g2->(_\dimmarkup f8. c16)
+		}
+	}
+	s2.*11
+	% bars 354 - 358
+	\transpose ees f {
+		\relative c' {
+			r2^\markup {Cor.I.II.} r8 f
+			c'2.\fp\>~
+			c4\! r r8 f,
+			<<{
+				\InCueContext c'2.~
+				c2~ c8 f,
+			}\\{
+				\InCueContext c2.\p\<~
+				c2~ c8 f\!
+			}>>
+		}
+	}
 }
 cueVoiceCornoIIIMvtIV = \relative c {
-	
+	s1*33
+	% bars 34 - 36
+	\transpose bes c' {
+		\relative c'' {
+			\voiceOne r2^\markup {Ob.I.} r4 r8 d\f~
+			d4\ff ees2 f4~
+			f g2 a4
+		}
+	}
+	s1*36
+	% bars 73 - 76
+	\transpose bes f {
+		\relative c' {
+			\voiceTwo f1(\ppp^\markup {Cor.I.}
+			ges
+			f
+			ges)
+		}
+	}
+	s1*68
+	% bars 145 - 148
+	c'2.^(^\markup {Cl.I.II.} bes4
+	a bes ees g)
+	c2.( bes4)
+	\voiceOne a( bes ees g)
+	s1*12
+	% bars 161 - 164
+	\transpose bes f {
+		\relative c' {
+			\voiceTwo <cis cis'>2^\markup {Cor.I.II.} q
+			q q4. q8
+			<d d'>1~
+			q2 r
+		}
+	}
+	s1*101
+	% bars 266 - 269
+	\transpose bes c' {
+		\relative c'' {
+			\voiceOne g4.\p^\markup {Ob.I.} c8 a4. d8
+			bes4.\< ees8 c4. f8
+			d4. g8 ees4. a8\!
+			f4. bes8 g4. c8
+		}
+	}
+	s1*48
+	% bars 318 - 321
+	\transpose bes f {
+		\relative c' {
+			\voiceTwo \tuplet 3/2 2 { <c c'>4\pp^\markup {Cor.I.II.} q q  q q q
+			q q q  q q q
+			q q q  q q q
+			q q q  q q q}
+		}
+	}
+	s1*24
+	% bars 346 - 349
+	\transpose bes c' {
+		\relative c''' {
+			\voiceOne d1~^\markup {Fl.I.}
+			d
+			ais2.( b4)
+			b1
+		}
+	}
+	s1*56
+	% bars 406 - 407
+	\voiceTwo a,!1(\p^\markup {Cor.IV.}
+	bes)
+	s1*58
+	% bars 466 - 467
+	\transpose bes ees {
+		\relative c' {
+			aes2->^\markup {Trbe} c4-> ees->
+			f-> aes-> c-> aes->
+		}
+	}
 }
 cueVoiceCornoIVMvtI = \relative c {
-	
+	s2*80
+	% bars 81 - 82
+	\transpose ees c {
+		\relative c, {
+			\voiceOne \clef bass <f f'>2^\markup {Cor.I.II.}~  % clef seems to be forgotten. Keep same cueVoice than 3rd Horn
+			q \clef treble
+		}
+	}
+	s2*73
+	% bars 156 - 159
+	\transpose ees c {
+		\relative c {
+			\clef bass c4->^\markup {Vcl.Cb.} c->
+			c-> d8( bes)
+			c4 d
+			\grace {d16 e} f4.->( e8) \clef treble
+		}
+	}
+	s2*36
+	% bars 196 - 199
+	\transpose ees c {
+		\relative c'' {
+			d4->^\markup {Fl.I.} cis->
+			d->\< g->~
+			g f8. d16
+			d4\! r
+		}
+	}
+	s2*58
+	% bars 258 - 261
+	\voiceOne f''2^\markup {Cor.I.II.}
+	f
+	f
+	f
+	s2*38
+	% bars 300 - 302
+	\voiceTwo fis,4.^\markup {Cor.I.II.} eis8
+	\tuplet 3/2 4 {dis8( cis ais')} ais4
+	cis ais8.( cis16)
+	s2*15
+	% bars 318 - 321
+	\transpose ees c {
+		\relative c {
+			\clef bass c8-. d16( c bes_\crescmarkup a bes c
+			a8) a r d
+			c-. d16( d bes a bes c
+			a8) a r a \clef treble
+		}
+	}
+	s2*26
+	% bars 348 - 351
+	\transpose ees c {
+		\relative c' {
+			\voiceOne \clef bass des2(\fz^\markup {Fag.}
+			aes\fz)
+			ees'~\fz
+			ees \clef treble
+		}
+	}
+	s2*25
+	% bars 377 - 380
+	\transpose ees c {
+		\relative c' {
+			\clef bass f4.->^\markup {Fag.} ees8-.
+			f4.-> ees8-.
+			f-. ees-. d-. c-. 
+			b r r4 \clef treble
+		}
+	}
+	s2*27
+	% bars 408 - 411
+	g8\p-.^\markup {Cor.III.} a16( b) \tuplet 3/2 4 {c8( d e)}
+	d4.( b8)
+	g-. a16( b) \tuplet 3/2 4 {c8( d e)}
+	d4.( b8)
+	s2*26
+	% bars 438 - 439
+	\transpose ees f {
+		\relative c {
+			\clef bass <c c'>2\fz~^\markup {Cor.I.II.}
+			q \clef treble
+		}
+	}
+	s2*60
+	% bars 500 - 503
+	\voiceTwo <c, c'>2(^\markup {Trbni}
+	<cis cis'>
+	<d d'>
+	<dis dis'>)
+	s2*36
+	% bars 540 - 543
+	\transpose ees c {
+		\relative c' {
+			r4^\markup {Ob.I.} r8 ees^(\<
+			\voiceOne ees'4.\! d8 
+			ees8) r r d(\p\<
+			\tuplet 3/2 4 {c8 bes g'\!} g4\laissezVibrer)
+		}
+	}
+	s2*123
+	% bars 667 - 671
+	\transpose ees c {
+		\relative c' {
+			\voiceTwo d2(^\markup {Viol.I.}
+			f
+			bes4 f
+			ees4. c8)
+		}
+	}
 }
 cueVoiceCornoIVMvtII = \relative c {
-	
+	s1.*22
+	% bars 23 - 24
+	\voiceTwo g''8\p^\markup {Cor.II} g~ g g~ g g~ g g~ g g~ g g
+	\ottava #-1 g,,1.\fp \ottava #0
+	s1.*45
+	% bars 70
+	r2.^\markup {Cor.III} c''2.\fz
+	s1.*7
+	% bars 78 - 79
+	\transpose ees c {
+		\relative c'' {
+			\voiceOne bes4.(^\markup {Ob.I.} c~ c8 d ees f4.)
+			f4 r8 r4 r8 s2.
+		}
+	}
+	s1.*16
+	% bars 96 - 98
+	\voiceTwo ees,4.(^\markup {Cor.I.} aes2.~ aes8 ges des)
+	gis4.( cis2.->~ cis8 b fis)
+	ais2.(\f\< b4. gis)\!
+	s1.*11
+	% bar 110
+	\transpose ees c {
+		\relative c' {
+			\clef bass \oneVoice f2.\p~^\markup {Vlc.Viol.} f8 ees( d c4 g8) \clef treble
+		}
+	}
+	s1.*17
+	% bar 128
+	\voiceOne r4^\markup {Cor.III.} r8 ees'4.(~\p ees8 b!8. c16) c4.
 }
 cueVoiceCornoIVMvtIII = \relative c {
-	
+	s2.*28
+	% bars 29 - 31
+	\transpose ees c {
+		\relative c'' {
+			\voiceOne f2~^\markup {Ob.I.} f8 g(
+			a4 bes a
+			c8) r s2
+		}
+	}
+	s2.*41
+	% bars 73 - 74
+	\transpose ees c {
+		\relative c''' {
+			<bes d>4(^\markup {Fl.} <a c> <ees g>8. <ees f>16)
+			<ees g>2(-> <ees f>8. c16)
+		}
+	}
+	s2.*14
+	% bar 89 - 91
+	\transpose ees f {
+		\relative c'' {
+			<<{
+				\InCueContext c2.~
+				c2~ c8 f,
+				c'2.\laissezVibrer
+			}\\{
+				\InCueContext c,2.\<~
+				c2~ c8 f\!
+				c2.\fz\laissezVibrer
+			}>>
+		}
+	}
+	s2.*83
+	% bars 175 - 178
+	\transpose d c {
+		\relative c'' {
+			\voiceTwo aes2(\pp^\markup {Viol.I.} bes16 aes g f)
+			aes2(\< bes16 aes g f)
+			bes( aes g f bes aes g f bes aes g f)\!
+			bes(\< aes g f bes aes g f bes aes g f)\!
+		}
+	}
+	s2.*64
+	% bars 243 - 244
+	\transpose d e {
+		\relative c' {
+			\voiceTwo <c c'>2.\p^\markup {Cor.I.II.}~
+			q2 r4
+		}
+	}
+	s2.*6
+	% bars 251 - 254
+	\transpose ees c {
+		\relative c' {
+			\voiceOne \clef tenor <d f>2.~^\markup {Fag.}
+			q2 q8. q16
+			q2.~
+			q \clef treble
+		}
+	}
+	s2.*44
+	% bars 299 - 303
+	\transpose ees c {
+		\relative c''' {
+			\voiceOne r4^\markup {Fl.picc.} r g16(\mf f ees bes'
+			f8) r r4 g16( f ees bes'
+			f8) r r4 \acciaccatura e'8\f f r
+			r4 r \acciaccatura e8\f f r
+			r4 r \acciaccatura e8\f f r
+		}
+	}
+	s2.*35
+	% bars 339 - 342
+	\transpose ees c {
+		\relative c''' {
+			c4\<(^\markup {Fl.I.} d ees)\!
+			g(\f\> f bes,)
+			d( c g8. f16)\!
+			g2->(_\dimmarkup f8. c16)
+		}
+	}
+	s2.*11
+	% bars 354 - 358
+	\transpose ees f {
+		\relative c' {
+			r2^\markup {Cor.I.II.} r8 f
+			c'2.\fp\>~
+			c4\! r r8 f,
+			<<{
+				\InCueContext c'2.~
+				c2~ c8 f,
+			}\\{
+				\InCueContext c2.\p\<~
+				c2~ c8 f\!
+			}>>
+		}
+	}
 }
 cueVoiceCornoIVMvtIV = \relative c {
-	
+	s1*33
+	% bars 34 - 36
+	\transpose bes c' {
+		\relative c'' {
+			\voiceOne r2^\markup {Ob.I.} r4 r8 d\f~
+			d4\ff ees2 f4~
+			f g2 a4
+		}
+	}
+	s1*36
+	% bars 73 - 76
+	\transpose bes f {
+		\relative c' {
+			\voiceTwo f1(\ppp^\markup {Cor.I.}
+			ges
+			f
+			ges)
+		}
+	}
+	s1*68
+	% bars 145 - 148
+	c'2.^(^\markup {Cl.I.II.} bes4
+	a bes ees g)
+	c2.( bes4)
+	\voiceOne a( bes ees g)
+	s1*12
+	% bars 161 - 164
+	\transpose bes f {
+		\relative c' {
+			\voiceTwo <cis cis'>2^\markup {Cor.I.II.} q
+			q q4. q8
+			<d d'>1~
+			q2 r
+		}
+	}
+	s1*101
+	% bars 266 - 269
+	\transpose bes c' {
+		\relative c'' {
+			\voiceOne g4.\p^\markup {Ob.I.} c8 a4. d8
+			bes4.\< ees8 c4. f8
+			d4. g8 ees4. a8\!
+			f4. bes8 g4. c8
+		}
+	}
+	s1*48
+	% bars 318 - 321
+	\transpose bes f {
+		\relative c' {
+			\voiceTwo \tuplet 3/2 2 { <c c'>4\pp^\markup {Cor.I.II.} q q  q q q
+			q q q  q q q
+			q q q  q q q
+			q q q  q q q}
+		}
+	}
+	s1*24
+	% bars 346 - 349
+	\transpose bes c' {
+		\relative c''' {
+			\voiceOne d1~^\markup {Fl.I.}
+			d
+			ais2.( b4)
+			b1
+		}
+	}
+	s1*50
+	% bars 400 - 405
+	\transpose bes f {
+		\relative c'' {
+			\voiceTwo aes1\pp^\markup {Cor.II.}~
+			aes~
+			aes~
+			aes~
+			aes~
+			aes
+		}
+	}
+	s1*60
+	% bars 466 - 467
+	\transpose bes ees {
+		\relative c' {
+			aes2->^\markup {Trbe} c4-> ees->
+			f-> aes-> c-> aes->
+		}
+	}
 }
 %###############################################################################
 %#                   C U E   V O I C E   F O R   T R O M B E                   #

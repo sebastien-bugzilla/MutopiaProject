@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -58,9 +59,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIMvtI
-			}
+%			\new Voice {
+%				\formatCornoIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoI) \tempiPartMvtI
 			}
@@ -72,7 +73,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -85,9 +86,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIMvtII
-			}
+%			\new Voice {
+%				\formatCornoIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoI) \tempiPartMvtII
 			}
@@ -109,9 +110,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIMvtIII
-			}
+%			\new Voice {
+%				\formatCornoIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoI) \tempiPartMvtIII
 			}
@@ -133,9 +134,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIMvtIV
-			}
+%			\new Voice {
+%				\formatCornoIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoI) \tempiPartMvtIV
 			}
@@ -157,9 +158,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIMvtI
-			}
+%			\new Voice {
+%				\formatCornoIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoII) \tempiPartMvtI
 			}
@@ -171,7 +172,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -181,9 +182,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIMvtII
-			}
+%			\new Voice {
+%				\formatCornoIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoII) \tempiPartMvtII
 			}
@@ -205,9 +206,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIMvtIII
-			}
+%			\new Voice {
+%				\formatCornoIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoII) \tempiPartMvtIII
 			}
@@ -229,9 +230,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIMvtIV
-			}
+%			\new Voice {
+%				\formatCornoIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoII) \tempiPartMvtIV
 			}
@@ -253,9 +254,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIIMvtI
-			}
+%			\new Voice {
+%				\formatCornoIIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoIII) \tempiPartMvtI
 			}
@@ -267,7 +268,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -277,9 +278,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIIMvtII
-			}
+%			\new Voice {
+%				\formatCornoIIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoIII) \tempiPartMvtII
 			}
@@ -301,9 +302,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIIMvtIII
-			}
+%			\new Voice {
+%				\formatCornoIIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoIII) \tempiPartMvtIII
 			}
@@ -325,9 +326,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIIMvtIV
-			}
+%			\new Voice {
+%				\formatCornoIIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoIII) \tempiPartMvtIV
 			}
@@ -349,9 +350,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIVMvtI
-			}
+%			\new Voice {
+%				\formatCornoIVMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoIV) \tempiPartMvtI
 			}
@@ -363,7 +364,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -373,9 +374,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIVMvtII
-			}
+%			\new Voice {
+%				\formatCornoIVMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoIV) \tempiPartMvtII
 			}
@@ -397,9 +398,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIVMvtIII
-			}
+%			\new Voice {
+%				\formatCornoIVMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoIV) \tempiPartMvtIII
 			}
@@ -421,9 +422,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIVMvtIV
-			}
+%			\new Voice {
+%				\formatCornoIVMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(cornoIV) \tempiPartMvtIV
 			}

@@ -6,7 +6,7 @@
     244     586    5131 20_DvorakSymph2_Part02_Oboi.ly
     244     586    5443 20_DvorakSymph2_Part03_Clarinetti.ly
     244     586    5286 20_DvorakSymph2_Part04_Fagotti.ly
-    446     964    8544 20_DvorakSymph2_Part05_Corni.ly
+    447    1014    8610 20_DvorakSymph2_Part05_Corni.ly
     243     560    5191 20_DvorakSymph2_Part06_Trombe.ly
     343     760    7059 20_DvorakSymph2_Part07_Tromboni.ly
     143     360    3501 20_DvorakSymph2_Part08_Timpani.ly
@@ -16,8 +16,8 @@
     143     360    3613 20_DvorakSymph2_Part12_Violoncello.ly
     143     360    3613 20_DvorakSymph2_Part13_Contrabasso.ly
       4      21      97 display.ly
-    366    1208    7556 test.ly
-   1178    4610   28203 00-Common/DvorakSymph2_CueVoice.ily
+    365    1204    7381 test.ly
+   2384    8432   49014 00-Common/DvorakSymph2_CueVoice.ily
     430    2522   19796 00-Common/DvorakSymph2_Format_Cond_Mvt01.ily
     274    1480   12397 00-Common/DvorakSymph2_Format_Cond_Mvt02.ily
     330    1827   15023 00-Common/DvorakSymph2_Format_Cond_Mvt03.ily
@@ -65,13 +65,13 @@
     861    2593   11997 01-Mvt1/m01_v09_music_FagottoII_C.ily
     869    2599   12064 01-Mvt1/m01_v09_music_FagottoII.ily
     756    2005    9485 01-Mvt1/m01_v10_music_CornoI_C.ily
-    756    1905    8605 01-Mvt1/m01_v10_music_CornoI.ily
+    773    2054    9279 01-Mvt1/m01_v10_music_CornoI.ily
     756    1850    8444 01-Mvt1/m01_v11_music_CornoII_C.ily
-    756    1788    8137 01-Mvt1/m01_v11_music_CornoII.ily
+    769    1924    8750 01-Mvt1/m01_v11_music_CornoII.ily
     716    1971    9427 01-Mvt1/m01_v12_music_CornoIII_C.ily
-    716    1864    8428 01-Mvt1/m01_v12_music_CornoIII.ily
+    739    2027    9168 01-Mvt1/m01_v12_music_CornoIII.ily
     725    1875    8493 01-Mvt1/m01_v13_music_CornoIV_C.ily
-    725    1860    8386 01-Mvt1/m01_v13_music_CornoIV.ily
+    749    2024    9137 01-Mvt1/m01_v13_music_CornoIV.ily
     590    1422    6413 01-Mvt1/m01_v14_music_TrombeI_C.ily
     590    1392    6128 01-Mvt1/m01_v14_music_TrombeI.ily
     590    1402    6153 01-Mvt1/m01_v15_music_TrombeII_C.ily
@@ -112,13 +112,13 @@
     188     984    4614 02-Mvt2/m02_v09_music_FagottoII_C.ily
     188     998    4722 02-Mvt2/m02_v09_music_FagottoII.ily
     174     875    4590 02-Mvt2/m02_v10_music_CornoI_C.ily
-    174     809    3790 02-Mvt2/m02_v10_music_CornoI.ily
+    174     829    3881 02-Mvt2/m02_v10_music_CornoI.ily
     174     657    3092 02-Mvt2/m02_v11_music_CornoII_C.ily
-    174     618    2907 02-Mvt2/m02_v11_music_CornoII.ily
+    174     644    3023 02-Mvt2/m02_v11_music_CornoII.ily
     174     731    3842 02-Mvt2/m02_v12_music_CornoIII_C.ily
-    174     679    3105 02-Mvt2/m02_v12_music_CornoIII.ily
+    177     718    3308 02-Mvt2/m02_v12_music_CornoIII.ily
     174     592    2831 02-Mvt2/m02_v13_music_CornoIV_C.ily
-    174     570    2684 02-Mvt2/m02_v13_music_CornoIV.ily
+    177     607    2866 02-Mvt2/m02_v13_music_CornoIV.ily
     113     368    1815 02-Mvt2/m02_v14_music_TrombeI_C.ily
     113     354    1714 02-Mvt2/m02_v14_music_TrombeI.ily
     113     358    1761 02-Mvt2/m02_v15_music_TrombeII_C.ily
@@ -159,13 +159,13 @@
     546    1875    8878 03-Mvt3/m03_v09_music_FagottoII_C.ily
     562    1913    9148 03-Mvt3/m03_v09_music_FagottoII.ily
     506    1602    7757 03-Mvt3/m03_v10_music_CornoI_C.ily
-    506    1545    7132 03-Mvt3/m03_v10_music_CornoI.ily
+    519    1631    7548 03-Mvt3/m03_v10_music_CornoI.ily
     506    1498    6981 03-Mvt3/m03_v11_music_CornoII_C.ily
-    506    1489    6951 03-Mvt3/m03_v11_music_CornoII.ily
+    519    1604    7482 03-Mvt3/m03_v11_music_CornoII.ily
     481    1516    7155 03-Mvt3/m03_v12_music_CornoIII_C.ily
-    481    1454    6446 03-Mvt3/m03_v12_music_CornoIII.ily
+    503    1568    6999 03-Mvt3/m03_v12_music_CornoIII.ily
     481    1449    6488 03-Mvt3/m03_v13_music_CornoIV_C.ily
-    481    1438    6449 03-Mvt3/m03_v13_music_CornoIV.ily
+    503    1551    6995 03-Mvt3/m03_v13_music_CornoIV.ily
     389    1043    4969 03-Mvt3/m03_v14_music_TrombeI_C.ily
     389    1023    4713 03-Mvt3/m03_v14_music_TrombeI.ily
     389    1023    4699 03-Mvt3/m03_v15_music_TrombeII_C.ily
@@ -207,13 +207,13 @@
     676    2343   10555 04-Mvt4/m04_v09_music_FagottoII_C.ily
     683    2365   10703 04-Mvt4/m04_v09_music_FagottoII.ily
     583    2016    9539 04-Mvt4/m04_v10_music_CornoI_C.ily
-    583    1948    8723 04-Mvt4/m04_v10_music_CornoI.ily
+    613    2079    9350 04-Mvt4/m04_v10_music_CornoI.ily
     575    1822    8090 04-Mvt4/m04_v11_music_CornoII_C.ily
-    571    1792    7976 04-Mvt4/m04_v11_music_CornoII.ily
+    599    1914    8553 04-Mvt4/m04_v11_music_CornoII.ily
     571    1747    8480 04-Mvt4/m04_v12_music_CornoIII_C.ily
-    571    1666    7461 04-Mvt4/m04_v12_music_CornoIII.ily
+    587    1776    7954 04-Mvt4/m04_v12_music_CornoIII.ily
     571    1651    7427 04-Mvt4/m04_v13_music_CornoIV_C.ily
-    571    1613    7254 04-Mvt4/m04_v13_music_CornoIV.ily
+    595    1736    7813 04-Mvt4/m04_v13_music_CornoIV.ily
     483    1448    7021 04-Mvt4/m04_v14_music_TrombeI_C.ily
     483    1351    6039 04-Mvt4/m04_v14_music_TrombeI.ily
     483    1373    6124 04-Mvt4/m04_v15_music_TrombeII_C.ily
@@ -236,4 +236,4 @@
     709    3461   15375 04-Mvt4/m04_v23_music_Violoncello.ily
     729    3102   13929 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     729    3086   13827 04-Mvt4/m04_v24_music_Contrabasso.ily
- 105800  389471 1959940 total
+ 107257  394987 1988314 total

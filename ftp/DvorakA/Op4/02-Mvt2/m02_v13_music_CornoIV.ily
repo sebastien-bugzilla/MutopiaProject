@@ -26,8 +26,8 @@ musicCornoIVMvtII = \relative c {
 % Bars 21 to 25
 	
 	\mark \default
-	R1.*2
-	
+	\ni \mmrPos #4 R1. 
+	\mmrPos #4 R \no
 	c,8\p\< c c  c c c\!  c c\> c  c c c\!
 % Bars 26 to 30
 	R1.
@@ -75,18 +75,18 @@ musicCornoIVMvtII = \relative c {
 	
 	
 	
-	R1.
+	\ni \mmrPos #4 R1. \no
 % Bars 71 to 75
 	c'16\mf c c c c c  c c\< c c c c  << a4.:16 {s8 s s\!}>> bes4.:16
 	c,1.\f( \mark \default
 	b8) r r r4\fermata r8 r2.
-	R1.*5
+	R1.*4
 	
 % Bars 76 to 80
 	
 	
-	
-	r2. r4 r8 d'4.\pp(
+	\ni \mmrPos #-4 R1. \no
+	\voiceTwo r2. \oneVoice r4 r8 d'4.\pp(
 	e) a,4( b8 c4.) g4( a8)
 % Bars 81 to 85
 	d,2.(\pp\< e4. << c) {s8 s s\!} >>
@@ -104,12 +104,12 @@ musicCornoIVMvtII = \relative c {
 	
 	R1.*2
 	
-	R1.*3
-	
-% Bars 96 to 100
-	
 	R1.*2
 	
+% Bars 96 to 100
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	b2.\ff cis->\fz
 	bes\fz c\fz
 % Bars 101 to 105
@@ -120,7 +120,10 @@ musicCornoIVMvtII = \relative c {
 	
 % Bars 106 to 110
 	
-	R1.*4
+	R1.*3
+	
+	
+	\ni \mmrPos #-4 R1. \no
 % Bars 111 to 115
 	<< c,1.\pp~ {s4. s\< s s}>>
 	c8 c c~  c c c~\!  c c c~  c\> c c\!
@@ -142,7 +145,7 @@ musicCornoIVMvtII = \relative c {
 % Bars 126 to 130
 	
 	
-	R1.
+	\ni \mmrPos #-4 R1. \no
 	r2. a8->\ff gis-> a-> gis-> a-> gis->
 	r4 r8 e(\pp-> e-> e->) r2.
 % Bars 131 to 135

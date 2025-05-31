@@ -31,11 +31,15 @@ musicCornoIIMvtIII = \relative c {
 	c2.\p\>~
 	<< c {s4 s s\!}>>
 % Bars 21 to 25
-	R2.*10
+	R2.*8
 % Bars 26 to 30
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 % Bars 31 to 35
-	r4 r8. c'16 c4->\fz
+	\once \voiceTwo r4 r8. c'16 c4->\fz
 	r4 r8. c16 c4->\fz
 	r4 r8. c16_\crescmarkup c4->\fz
 	r4 r8. c16 c4->\fz
@@ -51,32 +55,36 @@ musicCornoIIMvtIII = \relative c {
 	c r r
 	R2.
 	R\fermata \mark \default
-	R2.*18
+	R2.*15
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
-% Bars 61 to 65
 	
-	\clef bass
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 61 to 65
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \clef bass
 	c,,2.\p~
 	c~
 	c~
 % Bars 66 to 70
 	c\fermata
-	R2.*9 
+	R2.*8 
 	
 % Bars 71 to 75
 	
 	
 	
 	
-	\clef treble
+	\clef treble \ni \mmrPos #4 R2.
 % Bars 76 to 80
-	R2.*2
-	
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	a'''8._\fmarkup a16 a2(
 	aes4\brack\p\> c bes)
 	aes2(\! g4)\p
@@ -179,10 +187,11 @@ musicCornoIIMvtIII = \relative c {
 	
 	\section
 	\repeat volta 2 {
-		R2.*4
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R
 % Bars 181 to 185
-		
-		
+		\mmrPos #4 R
+		\mmrPos #4 R \no
 		f'2.\pp~
 		f~
 		f~
@@ -233,16 +242,16 @@ musicCornoIIMvtIII = \relative c {
 	
 % Bars 226 to 230
 	R2.
-	R2.*7
-% Bars 231 to 235
-	
-	
-	
 	R2.*4
-	
+% Bars 231 to 235
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 236 to 240
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	R2.*5
 	
 	
@@ -269,7 +278,7 @@ musicCornoIIMvtIII = \relative c {
 	
 	
 	\mark \default
-	R2.*35
+	R2.*30
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -282,10 +291,14 @@ musicCornoIIMvtIII = \relative c {
 	
 % Bars 296 to 300
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 301 to 305
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	c'2.->\fz
 	c->\fz
 % Bars 306 to 310
@@ -297,7 +310,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 311 to 315
 	R2.
 	e,8.\pp e16 e2\fermata_\espr \mark \markAaBox
-	R2.*18
+	R2.*15
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -305,23 +318,23 @@ musicCornoIIMvtIII = \relative c {
 % Bars 326 to 330
 	
 	
-	
-	
-	\clef bass
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \clef bass
 % Bars 331 to 335
 	c,,2.\p~
 	c~
 	c~
 	c\fermata
-	R2.*9 \clef treble
+	R2.*8 \clef treble
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
 	
-	
-	R2.*2
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 346 to 350
 	a'''8._\fmarkup a16 a2(
 	aes4\brack\p\> c bes)
@@ -438,12 +451,12 @@ musicCornoIIMvtIII = \relative c {
 	
 % Bars 441 to 445
 	R2.
-	R2.*8
+	R2.*5
 % Bars 446 to 450
 	
-	
-	
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	f8\f[ f] e[ e] f f
 % Bars 451 to 455
 	e e e e e e
