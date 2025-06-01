@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -54,9 +55,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIMvtI
-			}
+%			\new Voice {
+%				\formatTrombonoIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoI) \tempiPartMvtI
 			}
@@ -78,9 +79,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIMvtII
-			}
+%			\new Voice {
+%				\formatTrombonoIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoI) \tempiPartMvtII
 			}
@@ -102,9 +103,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIMvtIII
-			}
+%			\new Voice {
+%				\formatTrombonoIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoI) \tempiPartMvtIII
 			}
@@ -126,9 +127,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIMvtIV
-			}
+%			\new Voice {
+%				\formatTrombonoIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoI) \tempiPartMvtIV
 			}
@@ -150,9 +151,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIMvtI
-			}
+%			\new Voice {
+%				\formatTrombonoIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtI
 			}
@@ -174,9 +175,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIMvtII
-			}
+%			\new Voice {
+%				\formatTrombonoIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtII
 			}
@@ -198,9 +199,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIMvtIII
-			}
+%			\new Voice {
+%				\formatTrombonoIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtIII
 			}
@@ -222,9 +223,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIMvtIV
-			}
+%			\new Voice {
+%				\formatTrombonoIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtIV
 			}
@@ -246,9 +247,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIIMvtI
-			}
+%			\new Voice {
+%				\formatTrombonoIIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoIII) \tempiPartMvtI
 			}
@@ -270,14 +271,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIIMvtII
-			}
+%			\new Voice {
+%				\formatTrombonoIIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrombonoIIMvtII
+				\InCueContext \cueVoiceTrombonoIIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \nameTrombonoIIIMvtII \musicTrombonoIIIMvtII
@@ -294,14 +295,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIIMvtIII
-			}
+%			\new Voice {
+%				\formatTrombonoIIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrombonoIIMvtIII
+				\InCueContext \cueVoiceTrombonoIIIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \nameTrombonoIIIMvtIII \musicTrombonoIIIMvtIII
@@ -318,14 +319,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIIMvtIV
-			}
+%			\new Voice {
+%				\formatTrombonoIIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrombonoIIMvtIV
+				\InCueContext \cueVoiceTrombonoIIIMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \nameTrombonoIIIMvtIV \musicTrombonoIIIMvtIV

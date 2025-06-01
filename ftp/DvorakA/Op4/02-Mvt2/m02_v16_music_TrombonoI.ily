@@ -54,19 +54,23 @@ musicTrombonoIMvtII = \relative c {
 	r2. ges4.\pp~ ges8 r r
 	r2. des4.\pp~ des8 r r
 % Bars 51 to 55
-	R1.*8
+	R1.*6
 % Bars 56 to 60
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no \mark \default
 	ees4\pp r8 r4 r8 d4 r8 r4 r8
 	des4\pp r8 r4 r8 bes4 r8 r4 r8
 % Bars 61 to 65
-	R1.*11
+	R1.*9
 % Bars 66 to 70
 	
-% Bars 71 to 75
 	
+	
+	
+	\ni \mmrPos #-4 R1.
+% Bars 71 to 75
+	\mmrPos #-4 R \no
 	r4 r8 g'4.->\f r4 r8 gis4.-> \mark \default
 	a8-. r r r4\fermata r8 r2.
 	R1.*5
@@ -88,13 +92,13 @@ musicTrombonoIMvtII = \relative c {
 	
 	r2. d4.\fff->~ d8 r r \mark \default
 	ees8\ff r r r4 r8 r2.
-	R1.*9
+	R1.*6
 % Bars 91 to 95
 	
 % Bars 96 to 100
-	
-	
-	
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r4 r8 a4.->\ff r4 r8 gis4.->
 	r4 r8 aes4.-> r4 r8 g!4.->
 % Bars 101 to 105
@@ -111,10 +115,10 @@ musicTrombonoIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1.*3
+	R1.*2
 % Bars 126 to 130
 	
-	
+	\ni \mmrPos #-4 R1. \no
 	ees1.\pp
 	r2. g8->\ff fis-> g-> fis-> g-> fis->
 	r4 r8 a,(\pp bes a) r2.

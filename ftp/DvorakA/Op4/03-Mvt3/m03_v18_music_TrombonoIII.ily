@@ -50,13 +50,17 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	\mark \default
-	R2.*12
+	R2.*8
 % Bars 86 to 90
 	
 % Bars 91 to 95
 	
-% Bars 96 to 100
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 96 to 100
+	\mmrPos #-4 R \no
 	f2\f-> r4
 	f2-> r4
 	f2-> r4
@@ -98,13 +102,13 @@ musicTrombonoIIIMvtIII = \relative c {
 	r bes-> r
 	bes-.-> r bes-.->
 	r bes-.-> r \mark \default
-	R2.*10
+	R2.*7
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r4 r f
 	bes f bes
 % Bars 146 to 150
@@ -128,11 +132,15 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	\section
 	\repeat volta 2 {
-		\key a \major R2.*8
+		\key a \major R2.*4
 % Bars 181 to 185
-	
-% Bars 186 to 190
 		
+		
+		\ni \mmrPos #-4 R2. 
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+% Bars 186 to 190
+		\mmrPos #-4 R \no
 		r4 r r8 a,\pp
 		a2.
 		r4 r r8 a\pp
@@ -168,7 +176,7 @@ musicTrombonoIIIMvtIII = \relative c {
 		
 		\mark \default
 	}
-	R2.*28
+	R2.*25
 % Bars 221 to 225
 	
 % Bars 226 to 230
@@ -179,9 +187,14 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 % Bars 241 to 245
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 246 to 250
-	\mark \default
-	R2.*8
+	\mmrPos #-4 R \mark \default
+	\mmrPos #-4 R \no
+	R2.*7
 % Bars 251 to 255
 	
 	
@@ -196,7 +209,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	\mark \default
-	R2.*43
+	R2.*24
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -207,6 +220,9 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 % Bars 291 to 295
 	
+	
+	\ni \mmrPos #-4 R2. \no
+	R2.*18
 % Bars 296 to 300
 	
 % Bars 301 to 305
@@ -216,7 +232,7 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 311 to 315
 	
 	R2.\fermata \mark \markAaBox
-	R2.*21
+	R2.*18
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -224,28 +240,37 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 326 to 330
 	
 % Bars 331 to 335
-	
-	
-	
-	R2.\fermata
-	R2.*18
+	\ni \mmrPos #4 R2. 
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R2._\fermata \ni
+	R2.*15
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
 % Bars 346 to 350
 	
-% Bars 351 to 355
 	
-	\mark \markBbBox
-	R2.*12
+	
+	
+	\ni \mmrPos #4 R2.
+% Bars 351 to 355
+	\mmrPos #4 R
+	\mmrPos #4 R \mark \markBbBox
+	\mmrPos #4 R \no
+	R2.*6
 % Bars 356 to 360
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 361 to 365
-	
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f'2->\f r4
 % Bars 366 to 370
 	f2-> r4
@@ -313,13 +338,21 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 436 to 440
 	
 	R2.\fermata
-	R2.*18
+	R2.*12
 % Bars 441 to 445
 	
 % Bars 446 to 450
 	
-% Bars 451 to 455
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 451 to 455
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 456 to 460
 	r4 ges'2\fffzD
 	r4 des2->\fz

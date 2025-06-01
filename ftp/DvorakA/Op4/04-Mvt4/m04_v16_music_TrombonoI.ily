@@ -9,9 +9,13 @@ musicTrombonoIMvtIV = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*10
+	R1*6
 % Bars 6 to 10
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 11 to 15
 	r2 f\pp
 	r f
@@ -68,9 +72,16 @@ musicTrombonoIMvtIV = \relative c {
 	
 % Bars 76 to 80
 	\mark \default
-	R1*12
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 81 to 85
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R1*4
 % Bars 86 to 90
 	
 	
@@ -202,7 +213,7 @@ musicTrombonoIMvtIV = \relative c {
 	cis4 r r2
 	R1
 	g'4\f r r2
-	R1*31
+	R1*27
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -215,10 +226,10 @@ musicTrombonoIMvtIV = \relative c {
 	
 % Bars 226 to 230
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 % Bars 231 to 235
 	d,2\f e8. d16 b'4
 	a2. b8 cis
@@ -275,7 +286,7 @@ musicTrombonoIMvtIV = \relative c {
 % Bars 281 to 285
 	c2-^ c4-. c-.
 	d r r2
-	R1*19
+	R1*18
 % Bars 286 to 290
 	
 % Bars 291 to 295
@@ -283,8 +294,8 @@ musicTrombonoIMvtIV = \relative c {
 % Bars 296 to 300
 	
 % Bars 301 to 305
-	\mark \default
-	R1
+	\ni \mmrPos #-4 R1 \mark \default
+	\mmrPos #-4 R1 \no
 	r4 aes2\pp r4
 	R1
 	r4 aes2\pp r4
