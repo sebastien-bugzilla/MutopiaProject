@@ -3731,16 +3731,24 @@ cueVoiceViolinoIMvtIV = \relative c {
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #
 %###############################################################################
 cueVoiceViolinoIIMvtI = \relative c {
-	
+	s2*429
+	% bars 430 - 431
+	\voiceOne e''8-.\>^\markup {Fl.} f-. g4->\!
+	g->\p g->
 }
 cueVoiceViolinoIIMvtII = \relative c {
-	
+	% no CueVoice for violin II
 }
 cueVoiceViolinoIIMvtIII = \relative c {
-	
+	% no CueVoice for violin II
 }
 cueVoiceViolinoIIMvtIV = \relative c {
-	
+	s1*136
+	% bars 137 - 140
+	\voiceOne cis''4(\<^\markup {Cl.I.} d c'! bes!)\!
+	a(\> g f e)\!
+	d1(\p\>
+	des)\!
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   V I O L A                    #

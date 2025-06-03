@@ -513,11 +513,15 @@ musicViolinoIIMvtI = \relative c {
 	g' ees bes' bes,)
 	bes r r4
 % Bars 421 to 425
-	R2*11
+	R2*9
 % Bars 426 to 430
 	
-% Bars 431 to 435
 	
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 431 to 435
+	\mmrPos #-4 R \no
 	ees2\pp
 	r8 <a, f'>4\< q8
 	r <f' a>4 q8\!

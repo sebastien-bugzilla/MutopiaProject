@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -46,14 +47,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIIMvtI
-			}
+%			\new Voice {
+%				\formatViolinoIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIIMvtI
+				\InCueContext \cueVoiceViolinoIIMvtI
 			}
 			\new Voice {
 				\timeMvtI \nameViolinoIIMvtI \musicViolinoIIMvtI
@@ -70,14 +71,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIIMvtII
-			}
+%			\new Voice {
+%				\formatViolinoIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIIMvtII
+				\InCueContext \cueVoiceViolinoIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \nameViolinoIIMvtII \musicViolinoIIMvtII
@@ -94,14 +95,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIIMvtIII
-			}
+%			\new Voice {
+%				\formatViolinoIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIIMvtIII
+				\InCueContext \cueVoiceViolinoIIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \nameViolinoIIMvtIII \musicViolinoIIMvtIII
@@ -118,14 +119,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIIMvtIV
-			}
+%			\new Voice {
+%				\formatViolinoIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIIMvtIV
+				\InCueContext \cueVoiceViolinoIIMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \nameViolinoIIMvtIV \musicViolinoIIMvtIV

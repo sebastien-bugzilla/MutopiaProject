@@ -161,9 +161,13 @@ musicViolinoIIMvtIV = \relative c {
 	<< cis1->\fz\>( {s4 s s s\!}>>
 % Bars 131 to 135
 	d4) r r2
-	R1*9
+	R1*5
 % Bars 136 to 140
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 141 to 145
 	<des, f>2:32_\ppsempre^\sulponticello q:
 	q: q:
