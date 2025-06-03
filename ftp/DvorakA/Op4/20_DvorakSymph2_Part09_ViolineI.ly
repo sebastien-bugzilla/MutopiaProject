@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -46,14 +47,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtI
-			}
+%			\new Voice {
+%				\formatViolinoIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIMvtI
+				\InCueContext \cueVoiceViolinoIMvtI
 			}
 			\new Voice {
 				\timeMvtI \nameViolinoIMvtI \musicViolinoIMvtI
@@ -70,14 +71,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtII
-			}
+%			\new Voice {
+%				\formatViolinoIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIMvtII
+				\InCueContext \cueVoiceViolinoIMvtII
 			}
 			\new Voice {
 				\timeMvtII \nameViolinoIMvtII \musicViolinoIMvtII
@@ -94,14 +95,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtIII
-			}
+%			\new Voice {
+%				\formatViolinoIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIMvtIII
+				\InCueContext \cueVoiceViolinoIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \nameViolinoIMvtIII \musicViolinoIMvtIII
@@ -118,14 +119,14 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtIV
-			}
+%			\new Voice {
+%				\formatViolinoIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(violinI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIMvtIV
+				\InCueContext \cueVoiceViolinoIMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \nameViolinoIMvtIV \musicViolinoIMvtIV

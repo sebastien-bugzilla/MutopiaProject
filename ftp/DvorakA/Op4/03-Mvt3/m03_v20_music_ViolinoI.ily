@@ -531,9 +531,13 @@ musicViolinoIMvtIII = \relative c {
 % Bars 436 to 440
 	
 	R2.\fermata
-	R2.*8
+	R2.*4
 % Bars 441 to 445
 	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 446 to 450
 	f4.(\mf g8 a16[ bes r16. f32-.)]
 	f4( g ees)

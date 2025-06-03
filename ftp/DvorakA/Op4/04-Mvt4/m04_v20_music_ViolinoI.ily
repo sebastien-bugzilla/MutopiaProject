@@ -150,11 +150,15 @@ musicViolinoIMvtIV = \relative c {
 	aes(\f g f e) \tuplet 5/4 2 {f( g aes bes c)}
 	cis,1\fz(->
 	d8) r r4 r2
-	R1*11
+	R1*7
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 141 to 145
 	des,1:32\pp^\sulponticello
 	c2: bes4.: bes32 bes f f

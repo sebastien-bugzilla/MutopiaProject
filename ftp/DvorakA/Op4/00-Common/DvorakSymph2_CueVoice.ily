@@ -3706,16 +3706,26 @@ cueVoiceTimpaniMvtIV = \relative c {
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #
 %###############################################################################
 cueVoiceViolinoIMvtI = \relative c {
-	
+	% no CueVoice for violin I
 }
 cueVoiceViolinoIMvtII = \relative c {
-	
+	% no CueVoice for violin I
 }
 cueVoiceViolinoIMvtIII = \relative c {
-	
+	s2.*441
+	% bars 442 - 445
+	\voiceOne f'4.(\p^\markup {Viol.II.} g8 a16[ bes r16. f32])-.
+	f4( g ees)
+	d4.(\< f8 bes d)\!
+	d2(\> c4)\!
 }
 cueVoiceViolinoIMvtIV = \relative c {
-	
+	s1*136
+	% bars 137 - 140
+	\voiceOne cis''4(\<^\markup {Cl.I.} d c'! bes!)\!
+	a(\> g f e)\!
+	d1(\p\>
+	des)\!
 }
 %###############################################################################
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #
