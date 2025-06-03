@@ -22,7 +22,7 @@ musicTimpaniMvtIV = \relative c {
 	a:
 % Bars 11 to 15
 	bes4 r r2
-	R1*25
+	R1*23
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -31,8 +31,12 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 31 to 35
 	
+	
+	
+	
+	\ni \mmrPos #4 R1
 % Bars 36 to 40
-	\mark \default
+	\mmrPos #4 R \no \mark \default
 	d1\ff\startTrillSpan
 	<< d {s4 s s s\stopTrillSpan}>>
 	\tuplet 3/2 2 {d4 d a d d a
@@ -64,22 +68,26 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 76 to 80
 	\mark \default
-	R1*14
+	R1*11
 % Bars 81 to 85
 	
 % Bars 86 to 90
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 91 to 95
 	f1:16\ff
 	f2: f4 r
-	R1*12
+	R1*10
 % Bars 96 to 100
 	
 % Bars 101 to 105
 	
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	f1:16\ff
 % Bars 106 to 110
 	f:
@@ -115,7 +123,7 @@ musicTimpaniMvtIV = \relative c {
 	bes,4\p f'8 bes, f'\> bes, r f'
 	bes,4 f'8 bes, f' bes,\! r f'
 	bes,4 r r2
-	R1*41
+	R1*39
 % Bars 136 to 140
 	
 % Bars 141 to 145
@@ -133,8 +141,8 @@ musicTimpaniMvtIV = \relative c {
 % Bars 171 to 175
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no \mark \default
 	a1\sfz\startTrillSpan
 % Bars 176 to 180
 	a
@@ -163,11 +171,15 @@ musicTimpaniMvtIV = \relative c {
 % Bars 196 to 200
 	bes1:
 	bes4 r r2
-	R1*9
+	R1*7
 % Bars 201 to 205
 	
-% Bars 206 to 210
 	
+	
+	
+	\ni \mmrPos #-4 R1
+% Bars 206 to 210
+	\mmrPos #-4 R \no
 	bes1\pp\startTrillSpan
 	<< bes {s4 s s s\stopTrillSpan}>>
 	bes1:16\pp
@@ -186,11 +198,15 @@ musicTimpaniMvtIV = \relative c {
 	
 	\mark \default
 % Bars 231 to 235
-	R1*15
+	R1*12
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 246 to 250
 	bes1:16\f
 	<< bes:\> {s4 s s s\!}>>
@@ -205,7 +221,7 @@ musicTimpaniMvtIV = \relative c {
 	bes: \mark \default
 % Bars 256 to 260
 	bes4 r r2
-	R1*41
+	R1*33
 % Bars 261 to 265
 	
 % Bars 266 to 270
@@ -218,25 +234,37 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 286 to 290
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 291 to 295
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 296 to 300
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	bes1:16\pp
 	bes:
 	bes:
 % Bars 301 to 305
 	bes4 r r2 \mark \default
-	R1*20
+	R1*16
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
-% Bars 321 to 325
 	
+	\ni \mmrPos #4 R1
+	\mmrPos #8 R
+	\mmrPos #4 R
+% Bars 321 to 325
+	\mmrPos #8 R \no
 	bes2:16\ff r
 	bes: r
 	bes: r
@@ -256,7 +284,7 @@ musicTimpaniMvtIV = \relative c {
 % Bars 336 to 340
 	
 	\mark \default
-	R1*34
+	R1*31
 % Bars 341 to 345
 	
 % Bars 346 to 350
@@ -269,8 +297,12 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 366 to 370
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 371 to 375
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	bes4\f bes r bes
 	bes bes r bes
 	bes bes r bes
@@ -325,13 +357,17 @@ musicTimpaniMvtIV = \relative c {
 % Bars 461 to 465
 	
 	
-	
 	\mark \default
-	R1*8
+	R1*2
+	
 % Bars 466 to 470
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 471 to 475
-	
+	\mmrPos #-4 R \no
 	bes2:16\f bes:
 	bes: bes:
 	bes: bes:
@@ -352,15 +388,15 @@ musicTimpaniMvtIV = \relative c {
 	bes r
 	bes r
 	bes4 r r2
-	R1*15
+	R1*13
 % Bars 491 to 495
 	
 % Bars 496 to 500
 	
 % Bars 501 to 505
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	bes1\startTrillSpan
 	bes
 % Bars 506 to 510

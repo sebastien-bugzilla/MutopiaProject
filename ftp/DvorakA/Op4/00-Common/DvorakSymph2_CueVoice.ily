@@ -3478,16 +3478,229 @@ cueVoiceTrombonoIIIMvtIV = \relative c {
 %#                  C U E   V O I C E   F O R   T I M P A N I                  #
 %###############################################################################
 cueVoiceTimpaniMvtI = \relative c {
-	
+	s2*25
+	% bar 26
+	\voiceTwo b!2\fermata^\markup {Trbne III.}
+	s2*22
+	% bars 49 - 50
+	\voiceOne bes'8-.^\markup {Fag.Vlc.Cb.} bes,-. bes'8.-> aes16-.
+	aes8-.[ des,-.] ges-. ges,-.
+	s2*105
+	% bars 156 - 159
+	\voiceTwo c4->^\markup {Vlc.Cb.} c->
+	c-> d8( bes)
+	c4 d
+	\grace {d16( e!} f4.)(-> e!8)
+	s2*28
+	% bars 188 - 191
+	\clef treble \voiceOne b''4->^\markup {Fl.Ob.} ais->
+	b-> e->~
+	e d8. b16
+	b2 \clef bass
+	s2*106
+	% bars 298 - 301
+	a,4.^\markup {Cor.I.II} gis8
+	\tuplet 3/2 4 {fis8( e cis')} cis4
+	a4. gis8
+	\tuplet 3/2 4 {fis( e cis')} cis4
+	s2*16
+	% bars 318 - 321
+	\voiceTwo c,8-.^\markup {Fag.} d16( c bes_\crescmarkup a bes c
+	a8) a r d
+	c-. d16( c bes a bes c
+	a8) a r a
+	s2*30
+	% bars 352 - 355
+	\voiceOne r4^\markup {Cor.} r8. bes'16
+	bes8 r r4
+	r r8. bes16
+	bes8 r r4
+	s2*36
+	% bars 392 - 393
+	<f f'>2^\markup {Cor.III.IV}
+	q
+	s2*41
+	% bars 435 - 437
+	f8(^\markup {Fag.Cl.} e) r e([
+	g-> f]) r f[(
+	bes-> a)] r a
+	s2*62
+	% bars 500 - 503
+	ees2(^\markup {Trbne}
+	e!
+	f
+	fis)
+	s2*50
+	% bars 554 - 557
+	a8^\markup {Trbni} r r a[~
+	a] r r a[~
+	a] r r a[~
+	a] r r4
+	s2*49
+	% bars 607 - 610
+	f2~^\markup {Cor.III}
+	f
+	f'~
+	f
+	s2*81
+	% bars 692 - 694
+	g,8-.^\markup {Trbne basso} r f-. r
+	e-. r ees-. r
+	d-. r des-. r 
 }
 cueVoiceTimpaniMvtII = \relative c {
-	
+	s1.*26
+	% bars 27 - 28
+	\voiceOne r4^\markup {Fag.} r8 f'16( c f ees d c d8) r r ees16( bes ees d c bes
+	c8) r r d16( a d c bes a bes8) r r c16( g c bes a f')
+	s1.*18
+	% bars 47 - 48
+	bes,4.(^\markup {Fag.} ees) des~ des8 a8.( bes16)
+	bes4.~ bes8 r r r2.  %  4 => 4. based on conductor
+	s1.*8
+	% bars 57 - 58
+	c4.(^\markup {Cor.I.} f2. g4.
+	aes4) r8 r4 r8 r2.
+	s1.*22
+	% bars 81 - 82
+	c,,2.(^\markup {Trbne.III} d4. bes)
+	g'2.( f4. ees)
+	s1.*16
+	% bar 99
+	r4^\markup {Trbne.II.} r8 e!4. r4 r8 e4.
+	s1.*27
+	% bar 127
+	r4^\markup {Fag.} r8 \oneVoice c'16-.( c-. e!-. e-. g-. g-.) \voiceOne r4 r8 c,,16(-. c-. e!-. e-. g-. g-.)
 }
 cueVoiceTimpaniMvtIII = \relative c {
-	
+	s2.*16
+	% bars 17 - 20
+	\voiceOne aes'2.~^\markup {Cor.I.II.}
+	aes
+	f~
+	f
+	s2.*72
+	% bars 93 - 96
+	\clef treble c'''4(->\fz^\markup {Viol.I.} bes) ees,8.( g16)
+	g4(->\fz f) bes,8.( c'16)
+	c4(->\fz bes) ees,8.( g16)
+	g4(->\fz f) bes,8.( d'16) \clef bass
+	s2.*82
+	% bars 179 - 182
+	\clef treble \oneVoice <a,, e'>2.->\ff\>^\markup {Viol.I.}
+	q\!->
+	q->\p\>
+	q\pp \clef bass
+	s2.*32
+	% bars 215 - 217
+	\clef treble \voiceOne a''4->^\markup {Viol.I.} bes-> c->
+	f,2-> g8. a16
+	a4->-. bes-.-> c-.-> \clef bass
+	s2.*16
+	% bars 234 - 235
+	\clef treble \oneVoice \tuplet 3/2 4 {e,8(\<^\markup {Viol.I.} f! g! aes bes c! d ees f!\!}
+	g!4)\f r r
+	s2.*1
+	% bars 237 - 239
+	\voiceOne g,!16(\fz aes bes8) ees,8-.\> ees-. g-. g-.\!
+	c,-.\p c-. ees-. ees-. bes-. bes-.
+	des r r4 r
+	s2.*1
+	% bars 241 - 243
+	ais'16(\fz b! cis8) fis,\>-. fis-. a-. a-.\!
+	dis,\p-. dis-. fis-. fis-. cis-. cis-.
+	\oneVoice cis'16(\p^\markup {Fl.I.} d e8) b8-. b-. cis4-> \clef bass
+	s2.*45
+	% bars 289 - 292
+	\clef treble \voiceOne bes2.\pp~^\markup {Fl.I.}
+	bes\<
+	c~
+	c\! \clef bass
+	s2.*57
+	% bars 350 - 353
+	\voiceTwo \clef treble <c,, c'>8.\pp^\markup {Trbe.I.II.} q16 q2
+	q8. q16 q2
+	q8. q16 q2
+	<< {\InCueContext f8} \\ {\InCueContext f8} >> r r4 r
+	s2.*7
+	% bars 361 - 364
+	\voiceOne c''4(->^\markup {Viol.I.} bes) ees,8.( g16)
+	g4->( f) bes,8.( c'16)
+	c4->( bes) ees,8.( g16)
+	g4->( f) bes,8.( d'16) \clef bass
+	s2.*85
+	% bars 450 - 455
+	\clef treble \oneVoice bes4.(\f\<^\markup {Viol.I.} c8 d f)\!
+	a2( g4)
+	\tuplet 3/2 4 { f8 f f  ees ees ees  d d d
+	c c c  a' a a  g g g
+	f f f  ees ees ees  d d d
+	c c c  c' c c  bes bes bes } \clef bass
 }
 cueVoiceTimpaniMvtIV = \relative c {
-	
+	s1*34
+	% bars 35 - 36
+	\voiceTwo g4^\markup {Trbne.III.} c a! d
+	b e c f
+	s1*51
+	% bars 88 - 90
+	\clef treble \oneVoice c'''2->^\markup {Viol.I.} e,8[( f bes r16 a-.])
+	a4-.->_\piuf a-.-> a-.-> a-.->
+	a2-> bes-> \clef bass
+	s1*12
+	% bars 103 - 104
+	\clef treble g2->^\markup {Viol.I.} a->
+	<< {\InCueContext bes4 d f4. a,8} \\ {\InCueContext bes2 d4. c8}>> \clef bass
+	s1*68
+	% bars 173 - 174
+	\transpose c f {
+		\relative c'' {
+			\clef treble \voiceOne <a c>4.\pp^\markup {Cor.I.II.} q8 \tuplet 3/2 2 { q4 <bes d>\< <c ees>\!}
+			q2(\> <bes d>4)\! r \clef bass
+		}
+	}
+	s1*30
+	% bars 205 - 206
+	\clef treble \oneVoice bes4\ppp^\markup {Viol.I.} r a!8.-. bes16-. ces4-.
+	bes2-^\p^\markup {Ob.} a!8. bes16 ces4 \clef bass
+	s1*36
+	% bars 243 - 245
+	\clef treble d2.\ff^\markup {Viol.} d16( cis b! a
+	\tuplet 3/2 2 { gis4-.) b!-. gis-. f!-. aes-. f-.}
+	d2-^ cis4-^ b!-^ \clef bass
+	s1*44
+	% bars 290 - 297
+	\voiceOne r4^\markup {Fag.I.II.} <aes, c>4\pp <ees bes'>4. q8
+	<c aes'>4 r r2
+	r4 <aes' c>\pp <ees bes'>4. q8
+	<c aes'>4 r r2
+	\clef treble \tuplet 3/2 2 { b''!4(\ppp^\markup {Viol.I.} c f b, c f)
+	b,( c f b, c f)
+	d( ees aes d, ees aes)
+	d,( ees aes d, ees aes)} \clef bass
+	s1*20
+	% bars 318 - 321
+	\voiceTwo \clef treble r2^\markup {Cl.I.II.} \tuplet 3/2 2 {<f,, f'>4 <bes bes'> <c c'> }  % <a f'> => <f f'> according to conductor
+	<d d'>8[(\< <bes bes'> <g' g'>8.) <f f'>16]-.\! q2 % <g f'> => <f f'> according to conductor
+	\oneVoice r2 \tuplet 3/2 2 {<f, f'>4 <bes bes'> <c c'> }
+	\voiceTwo <d d'>8[(\< <bes bes'> <g' g'>8.) <f f'>16]-.\! q2 \clef bass % <e f'> => <f f'> according to conductor
+	s1*47
+	% bars 369 - 371
+	\clef treble \voiceOne ees'2.^\markup {Viol.I.} \tuplet 5/4 4 { ees16(\< f g aes bes\!}
+	c4.)->\fz bes8 aes4.->\fz g8
+	aes4.->\fz g8 f4.->\fz ees8 \clef bass
+	s1*94
+	% bars 466 - 471
+	b,,!2->^\markup {Trbne III.} dis4-> fis->
+	gis b! dis b
+	\tuplet 3/2 2 { <c d!>4\ff^\markup {Cor.} q q } q2~
+	\tuplet 3/2 2 {q4 q q} q2~
+	\tuplet 3/2 2 {q4 q q} q2~
+	\tuplet 3/2 2 {q4 q q} q2
+	s1*30
+	% bars 502 - 503
+	\clef treble \oneVoice a''2->^\markup {Viol.I.} b8. cis16 d4
+	e!2-> fis8. g16 a4 \clef bass
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #

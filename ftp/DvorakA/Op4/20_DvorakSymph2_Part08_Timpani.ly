@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -46,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtI
-			}
+%			\new Voice {
+%				\formatTimpaniMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtI
 			}
@@ -70,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtII
-			}
+%			\new Voice {
+%				\formatTimpaniMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtII
 			}
@@ -94,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtIII
-			}
+%			\new Voice {
+%				\formatTimpaniMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtIII
 			}
@@ -118,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtIV
-			}
+%			\new Voice {
+%				\formatTimpaniMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtIV
 			}

@@ -19,32 +19,32 @@ musicTimpaniMvtII = \relative c {
 % Bars 21 to 25
 	
 	\mark \default
-	R1.*6
+	R1.*4
 % Bars 26 to 30
 	
-	
-	
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no
 	bes8\p\< bes bes  bes bes bes\!  bes bes bes\>  bes bes bes\!
 	bes^\solo r r16 bes\pp ees8 r r16 bes ees8 r r16 bes ees8 r r
 % Bars 31 to 35
 	R1.*6
 % Bars 36 to 40
 	\mark \default
-	R1.*12
+	R1.*10
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
-	
-	
+	\ni \mmrPos #-4 R1. 
+	\mmrPos #-4 R \no
 	r2. ees16^\solo\pp ees ees r r ees   ees ees ees r r8
 	r2. bes16 bes bes r r bes   bes bes bes r r8
 % Bars 51 to 55
-	R1.*8
+	R1.*6
 % Bars 56 to 60
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no \mark \default
 	ees16^\solo\pp ees ees ees ees ees  ees4.:16 ees: ees:
 	ees:\pp ees: ees: ees:
 % Bars 61 to 65
@@ -56,12 +56,12 @@ musicTimpaniMvtII = \relative c {
 	
 	\mark \default
 	r4 r8 r4\fermata r8 r2.
-	R1.*9
+	R1.*7
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	
-	
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no
 	<< d1.\startTrillSpan {s4.\fzpp\> s s s8 s s\!}>>
 	<< d1.\pp\startTrillSpan {s4. s s s8 s s\stopTrillSpan}>>
 	g,8 r r r4 r8 r2.
@@ -69,14 +69,14 @@ musicTimpaniMvtII = \relative c {
 	R1.*2
 	
 	r2. d'4.:32\ff d8 r r \mark \default
-	R1.*11
+	R1.*10
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
 	
 	
-	
+	\ni \mmrPos #-4 R1. \no
 	<< g,1.\ff {s4.\startTrillSpan s s  s8 s s\stopTrillSpan}>>
 % Bars 101 to 105
 	d'2.\fpp\startTrillSpan << d\startTrillSpan\fermata\ffp\> {s8 s s s s s\stopTrillSpan}>> \mark \default
@@ -93,10 +93,10 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	\mark \default
-	R1.*3
+	R1.*2
 % Bars 126 to 130
 	
-	
+	\ni \mmrPos #-4 R1. \no
 	g,1.\pp\startTrillSpan
 	g2.\startTrillSpan\<_\moltocresc g8\ff\stopTrillSpan d' g, d' g, d'\ffz\>
 	<< d1.\startTrillSpan {s4.\p\> s s\pp s}>>

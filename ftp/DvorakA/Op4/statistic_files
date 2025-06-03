@@ -9,7 +9,7 @@
     447    1014    8610 20_DvorakSymph2_Part05_Corni.ly
     244     586    5234 20_DvorakSymph2_Part06_Trombe.ly
     344     798    7116 20_DvorakSymph2_Part07_Tromboni.ly
-    143     360    3501 20_DvorakSymph2_Part08_Timpani.ly
+    144     374    3531 20_DvorakSymph2_Part08_Timpani.ly
     143     360    3521 20_DvorakSymph2_Part09_ViolineI.ly
     143     360    3549 20_DvorakSymph2_Part10_ViolineII.ly
     143     360    3445 20_DvorakSymph2_Part11_Viola.ly
@@ -17,7 +17,7 @@
     143     360    3613 20_DvorakSymph2_Part13_Contrabasso.ly
       4      21      97 display.ly
     365    1204    7381 test.ly
-   3566   12839   73415 00-Common/DvorakSymph2_CueVoice.ily
+   3779   13878   79002 00-Common/DvorakSymph2_CueVoice.ily
     430    2522   19796 00-Common/DvorakSymph2_Format_Cond_Mvt01.ily
     274    1480   12397 00-Common/DvorakSymph2_Format_Cond_Mvt02.ily
     330    1827   15023 00-Common/DvorakSymph2_Format_Cond_Mvt03.ily
@@ -83,7 +83,7 @@
     598    1397    6415 01-Mvt1/m01_v18_music_TrombonoIII_C.ily
     626    1571    7243 01-Mvt1/m01_v18_music_TrombonoIII.ily
     634    1429    6894 01-Mvt1/m01_v19_music_Timpani_C.ily
-    634    1429    6894 01-Mvt1/m01_v19_music_Timpani.ily
+    656    1581    7602 01-Mvt1/m01_v19_music_Timpani.ily
     886    3929   18991 01-Mvt1/m01_v20_music_ViolinoI_C.ily
     886    3830   18519 01-Mvt1/m01_v20_music_ViolinoI.ily
     881    3729   17868 01-Mvt1/m01_v21_music_ViolinoII_C.ily
@@ -130,7 +130,7 @@
     133     482    2343 02-Mvt2/m02_v18_music_TrombonoIII_C.ily
     141     529    2568 02-Mvt2/m02_v18_music_TrombonoIII.ily
     129     451    2473 02-Mvt2/m02_v19_music_Timpani_C.ily
-    129     491    2590 02-Mvt2/m02_v19_music_Timpani.ily
+    129     533    2782 02-Mvt2/m02_v19_music_Timpani.ily
     193    1959    9331 02-Mvt2/m02_v20_music_ViolinoI_C.ily
     193    1963    9262 02-Mvt2/m02_v20_music_ViolinoI.ily
     193    2539   10946 02-Mvt2/m02_v21_music_ViolinoII_C.ily
@@ -177,7 +177,7 @@
     363     972    4420 03-Mvt3/m03_v18_music_TrombonoIII_C.ily
     396    1095    5035 03-Mvt3/m03_v18_music_TrombonoIII.ily
     412    1291    6113 03-Mvt3/m03_v19_music_Timpani_C.ily
-    412    1309    6061 03-Mvt3/m03_v19_music_Timpani.ily
+    449    1456    6779 03-Mvt3/m03_v19_music_Timpani.ily
     605    3039   13234 03-Mvt3/m03_v20_music_ViolinoI_C.ily
     605    2981   12923 03-Mvt3/m03_v20_music_ViolinoI.ily
     609    3292   13573 03-Mvt3/m03_v21_music_ViolinoII_C.ily
@@ -225,7 +225,7 @@
     580    1667    7409 04-Mvt4/m04_v18_music_TrombonoIII_C.ily
     599    1748    7798 04-Mvt4/m04_v18_music_TrombonoIII.ily
     439    1156    5815 04-Mvt4/m04_v19_music_Timpani_C.ily
-    439    1225    6010 04-Mvt4/m04_v19_music_Timpani.ily
+    475    1358    6659 04-Mvt4/m04_v19_music_Timpani.ily
     666    3633   15857 04-Mvt4/m04_v20_music_ViolinoI_C.ily
     666    3575   15551 04-Mvt4/m04_v20_music_ViolinoI.ily
     677    3781   16205 04-Mvt4/m04_v21_music_ViolinoII_C.ily
@@ -236,4 +236,4 @@
     709    3461   15375 04-Mvt4/m04_v23_music_Violoncello.ily
     729    3102   13929 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     729    3086   13827 04-Mvt4/m04_v24_music_Contrabasso.ily
- 108879  401610 2023101 total
+ 109188  403137 2030985 total

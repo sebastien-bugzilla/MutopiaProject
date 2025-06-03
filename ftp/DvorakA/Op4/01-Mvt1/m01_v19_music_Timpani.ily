@@ -30,7 +30,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 21 to 25
 	
 % Bars 26 to 30
-	R2\fermata \mark \default
+	\ni \mmrPos #4 R2\fermata \no \mark \default
 	f'2:32\ff
 	f:
 	f:
@@ -42,11 +42,15 @@ musicTimpaniMvtI = \relative c {
 	f:
 	f8 r r4
 % Bars 36 to 40
-	R2*15
+	R2*13
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 51 to 55
 	f8-.\f r bes,-. r
 	f'-. r r4
@@ -139,7 +143,7 @@ musicTimpaniMvtI = \relative c {
 		f
 		f
 		f
-		R2*21\stopTrillSpan
+		R2*17\stopTrillSpan
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -147,10 +151,10 @@ musicTimpaniMvtI = \relative c {
 % Bars 151 to 155
 	
 % Bars 156 to 160
-		
-		
-		
-		\mark \default
+		\ni \mmrPos #4 R2
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #6 R \no \mark \default
 		f2:32\f
 % Bars 161 to 165
 		f:
@@ -160,7 +164,7 @@ musicTimpaniMvtI = \relative c {
 		f:
 % Bars 166 to 170
 		f8 r r4
-		R2*25
+		R2*21
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -168,9 +172,13 @@ musicTimpaniMvtI = \relative c {
 % Bars 181 to 185
 	
 % Bars 186 to 190
-	
-% Bars 191 to 195
 		
+		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+% Bars 191 to 195
+		\mmrPos #-4 R \no
 		f2:32\pp
 		f:
 		f:
@@ -267,21 +275,27 @@ musicTimpaniMvtI = \relative c {
 % Bars 296 to 300
 	
 	\mark \default
-	R2*4
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 301 to 305
-	
+	\mmrPos #-4 R \no
 	r4 bes,\f
 	r bes
 	r bes_\dimmarkup
 	r bes\p
 % Bars 306 to 310
-	R2*16
+	R2*12
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
-% Bars 321 to 325
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+% Bars 321 to 325
+	\mmrPos #4 R \no
 	bes8\pp^\solo f' bes, f'
 	bes, bes f' f
 	bes, f' bes, f'
@@ -303,15 +317,15 @@ musicTimpaniMvtI = \relative c {
 % Bars 341 to 345
 	bes:
 	bes8 r r4
-	R2*13
+	R2*9
 % Bars 346 to 350
 	
 % Bars 351 to 355
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 356 to 360
 	bes2:16\pp
 	bes:
@@ -339,11 +353,11 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	\mark #11
-	R2*4
+	R2*2
 % Bars 391 to 395
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	f'2:32\f
 	f:
 % Bars 396 to 400
@@ -370,14 +384,18 @@ musicTimpaniMvtI = \relative c {
 	bes:
 	bes8 r r4
 % Bars 421 to 425
-	R2*17
+	R2*14
 % Bars 426 to 430
 	
 % Bars 431 to 435
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 436 to 440
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f'2:32\fp
 	<< f: {s8\> s s s\!}>> \mark \default
 	f8 r r4
@@ -424,11 +442,11 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	R2*4
+	\ni \mmrPos #-4 R2
 % Bars 501 to 505
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	f'2:32\ff
 	f:
 % Bars 506 to 510
@@ -458,14 +476,18 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	\mark \default
-	R2*14
+	R2*10
 % Bars 546 to 550
 	
 % Bars 551 to 555
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 556 to 560
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	bes2:32\f
 	bes:
 	bes:
@@ -496,7 +518,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 581 to 585
 	bes:
 	bes4 r
-	R2*28
+	R2*24
 % Bars 586 to 590
 	
 % Bars 591 to 595
@@ -507,10 +529,10 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 606 to 610
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 611 to 615
 	bes2:16\f
 	bes:
@@ -582,14 +604,14 @@ musicTimpaniMvtI = \relative c {
 	
 	\mark \default
 	r4\fermata r
-	R2*11
+	R2*8
 % Bars 686 to 690
 	
 % Bars 691 to 695
 	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f'2:32\ff
 % Bars 696 to 700
 	f8 r r4

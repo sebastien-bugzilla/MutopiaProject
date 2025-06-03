@@ -325,9 +325,9 @@ musicTimpaniMvtIV = \relative c {
 % Bars 461 to 465
 	
 	
-	
 	\mark \default
 	R1*8
+	
 % Bars 466 to 470
 	
 % Bars 471 to 475
