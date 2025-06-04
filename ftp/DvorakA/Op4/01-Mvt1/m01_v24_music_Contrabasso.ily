@@ -92,14 +92,14 @@ musicContrabassoMvtI = \relative c {
 		
 		ees2\pp~
 		ees
-		R2*13
+		R2*11
 % Bars 71 to 75
 		
 % Bars 76 to 80
 		
 % Bars 81 to 85
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R \no
 		r4 r8 f,16(\p g
 		a8) g-. f4->
 		r4 r8 f16(\< g
@@ -502,7 +502,7 @@ musicContrabassoMvtI = \relative c {
 	r4 ees8 r
 % Bars 411 to 415
 	r4 bes8 r
-	R2*28
+	R2*26
 	
 	
 	
@@ -517,8 +517,8 @@ musicContrabassoMvtI = \relative c {
 % Bars 436 to 440
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no \mark \default
 	r4 r8 f16(\p g
 % Bars 441 to 445
 	a8) g-. f4->

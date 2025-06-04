@@ -96,12 +96,12 @@ musicVioloncelloMvtII = \relative c {
 	f4.\mf\< fis8( fis,-> fis') << g4. {s8 s s\!}>> aes( aes,-> aes')
 	bes4.:32\f bes,8: bes': bes,: bes'4.:_\conmoltaforza bes,8: bes': bes,: \mark \default
 	a8\ff r r r4\fermata r8 r2.
-	R1.*5
+	R1.*3
 	
 % Bars 76 to 80
 	
-	
-	
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no
 	r2. r4 r8 a'-.\pp c-. e-.
 	d16-. c-. b8-. a-. g-. c4-> bes8-. f-. g-. a16-. g-. f-. e-. d-. g-.
 % Bars 81 to 85

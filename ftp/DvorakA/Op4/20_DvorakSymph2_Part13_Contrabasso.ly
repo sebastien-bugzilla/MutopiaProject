@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -46,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtI
-			}
+%			\new Voice {
+%				\formatContrabassoMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtI
 			}
@@ -70,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtII
-			}
+%			\new Voice {
+%				\formatContrabassoMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtII
 			}
@@ -94,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtIII
-			}
+%			\new Voice {
+%				\formatContrabassoMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtIII
 			}
@@ -118,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtIV
-			}
+%			\new Voice {
+%				\formatContrabassoMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtIV
 			}

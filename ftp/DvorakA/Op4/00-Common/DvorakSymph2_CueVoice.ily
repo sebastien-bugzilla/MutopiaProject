@@ -3754,44 +3754,85 @@ cueVoiceViolinoIIMvtIV = \relative c {
 %#                    C U E   V O I C E   F O R   V I O L A                    #
 %###############################################################################
 cueVoiceViolaMvtI = \relative c {
-	
+	s2*429
+	% bars 430 - 431
+	\voiceOne ees'8-.^\markup {Cl.} f-. g4->
+	g-> g->
 }
 cueVoiceViolaMvtII = \relative c {
-	
+	% no CueVoice for viola
 }
 cueVoiceViolaMvtIII = \relative c {
-	
+	% no CueVoice for viola
 }
 cueVoiceViolaMvtIV = \relative c {
-	
+	% no CueVoice for viola
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #
 %###############################################################################
 cueVoiceVioloncelloMvtI = \relative c {
-	
+	s2*429
+	% bars 430 - 431
+	\voiceOne ees'8-.^\markup {Cl.} f-. g4->
+	g-> g->
 }
 cueVoiceVioloncelloMvtII = \relative c {
-	
+	s1.*76
+	% bars 77 - 79
+	\voiceOne r2. r4^\markup {Vle} r8 \clef alto d'8(\pp-. f-. a-.)
+	g16(-. f-. e8-. d-.) c f4-> ees8-. bes-. c-. d16(-. c-. bes-. a-. g-. c-.)
+	f,8-. g-. a-. bes-. c-. d-. \clef bass s2.
 }
 cueVoiceVioloncelloMvtIII = \relative c {
-	
+	s2.*308
+	% bar 309
+	\clef alto \voiceOne bes'4(->^\markup {Vle} c-> d->)s \clef bass
 }
 cueVoiceVioloncelloMvtIV = \relative c {
-	
+	% no CueVoice for violoncello
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   C O N T R A B A S S O              #
 %###############################################################################
 cueVoiceContrabassoMvtI = \relative c {
-	
+	s2*80
+	% bars 81 - 83
+	\voiceOne c'8[(\f\>^\markup {Vlc.} ees c bes)]\!
+	a[(_\dimmarkup ges ees c]
+	f) r s4
+	s2*354
+	% bars 438 - 439
+	c'8(\fz\>^\markup {Vlc.} ees c bes)\!
+	a(\> ges ees c)\!
 }
 cueVoiceContrabassoMvtII = \relative c {
-	
+	s1.*76
+	% bars 77 - 79
+	\voiceOne r2. r4^\markup {Vle} r8 \clef alto d'8(\pp-. f-. a-.)
+	g16(-. f-. e8-. d-.) c f4-> ees8-. bes-. c-. d16(-. c-. bes-. a-. g-. c-.)
+	f,8-. g-. a-. bes-. c-. d-. \clef bass s2.
 }
 cueVoiceContrabassoMvtIII = \relative c {
-	
+	s2.*59
+	% bars 60 - 62
+	\voiceTwo c2\repeatTie^\markup {Vlc.} c,8[ r16 c]
+	c'2 c,8[ r16 c]
+	c'2 \tuplet 3/2 4 {c,8 d e!}
+	s2.*3
+	% bar 66
+	f8^\markup {Vlc.} f f f f r\fermata
+	s2.*242
+	% bar 309
+	\clef alto \voiceOne bes'4->(^\markup {Vle} c-> d->) \clef bass
+	s2.*20
+	% bars 330 - 334
+	\clef treble r4^\markup {Ob.I.} r \tuplet 3/2 4 {e'8( f g)}
+	a2( g8 f
+	a2) g8( f
+	a2) g8( f
+	a2.)\fermata \clef bass
 }
 cueVoiceContrabassoMvtIV = \relative c {
-	
+	% no CueVoice for Contrabasso
 }

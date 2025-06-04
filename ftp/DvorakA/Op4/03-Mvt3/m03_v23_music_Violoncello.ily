@@ -367,12 +367,12 @@ musicVioloncelloMvtIII = \relative c {
 	f8 f' f,4:16 f:
 % Bars 301 to 305
 	f4\f r r
-	R2.*8
+	R2.*7
 % Bars 306 to 310
 	
 	
 	
-	
+	\ni \mmrPos #-4 R2. \no
 	r4 r \tuplet 3/2 4 {c'8(\p a f)}
 % Bars 311 to 315
 	r4 r \tuplet 3/2 4 {c'8(\> a f)\!}

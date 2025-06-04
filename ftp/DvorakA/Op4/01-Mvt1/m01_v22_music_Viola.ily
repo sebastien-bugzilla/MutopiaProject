@@ -548,11 +548,15 @@ musicViolaMvtI = \relative c {
 	\repeat tremolo 4 {bes'( ees,)}
 	bes'8 r r4
 % Bars 421 to 425
-	R2*11
+	R2*9
 % Bars 426 to 430
 	
-% Bars 431 to 435
 	
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 431 to 435
+	\mmrPos #-4 R \no
 	a4(\pp bes)
 	r8 <a ees'>4\< q8
 	r ees'4 ees8\!

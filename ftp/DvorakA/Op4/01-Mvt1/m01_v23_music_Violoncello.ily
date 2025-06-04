@@ -521,11 +521,15 @@ musicVioloncelloMvtI = \relative c {
 	\repeat tremolo 4 {ees,( bes')}
 	bes8 r r4
 % Bars 421 to 425
-	R2*11
+	R2*9
 % Bars 426 to 430
 	
-% Bars 431 to 435
 	
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 431 to 435
+	\mmrPos #-4 R \no
 	f4(\pp g)
 	a8( b\< c d)
 	ees4( d8 c)\!

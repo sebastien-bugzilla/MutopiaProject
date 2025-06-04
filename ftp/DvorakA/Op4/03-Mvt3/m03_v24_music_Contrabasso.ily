@@ -56,17 +56,25 @@ musicContrabassoMvtIII = \relative c {
 	r4 r \tuplet 3/2 4 {c'8(\mf a f)}
 	r4 r \tuplet 3/2 4 {c'8(\p a f)}
 	r4 r \tuplet 3/2 4 {c'8(\pp a f)\fermata} \mark \default
-	R2.*21
+	R2.*15
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	
+	
+	
+	\ni \mmrPos #4 R2.
 % Bars 61 to 65
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	R2.*3
+	
 	
 % Bars 66 to 70
-	R2.\fermata
+	\ni \mmrPos #4 R2.\fermata \no
 	bes8^\pizz\p r d r ees r
 	c r d r f r
 	ees r d r c r
@@ -351,17 +359,17 @@ musicContrabassoMvtIII = \relative c {
 	f8 f' f,4. f8\!
 % Bars 301 to 305
 	f4\f r r
-	R2.*8
+	R2.*7
 % Bars 306 to 310
 	
 	
 	
-	
+	\ni \mmrPos #-4 R2. \no
 	r4 r \tuplet 3/2 4 {c'8(\p a f)}
 % Bars 311 to 315
 	r4 r \tuplet 3/2 4 {c'8(\> a f)\!}
 	r4 r \tuplet 3/2 4 {c'8(\pp a f)\fermata} \mark \markAaBox
-	R2.*21
+	R2.*17
 	
 	
 % Bars 316 to 320
@@ -370,11 +378,15 @@ musicContrabassoMvtIII = \relative c {
 	
 % Bars 326 to 330
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 331 to 335
-	
-	
-	
-	R2.\fermata
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R 
+	\mmrPos #-4 R2._\fermata \no 
 	bes8\p^\pizz r d r ees r
 % Bars 336 to 340
 	c r d r f r

@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -46,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtI
-			}
+%			\new Voice {
+%				\formatViolaMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtI
 			}
@@ -60,7 +61,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -70,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtII
-			}
+%			\new Voice {
+%				\formatViolaMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtII
 			}
@@ -94,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtIII
-			}
+%			\new Voice {
+%				\formatViolaMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIII
 			}
@@ -118,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtIV
-			}
+%			\new Voice {
+%				\formatViolaMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIV
 			}

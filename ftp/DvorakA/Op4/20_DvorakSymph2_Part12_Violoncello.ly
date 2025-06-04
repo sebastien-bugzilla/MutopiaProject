@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph2_Header.ily"
 \include "./00-Common/DvorakSymph2_PaperParts.ily"
 \include "./00-Common/DvorakSymph2_timeMvt.ily"
@@ -46,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtI
-			}
+%			\new Voice {
+%				\formatVioloncelloMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtI
 			}
@@ -70,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtII
-			}
+%			\new Voice {
+%				\formatVioloncelloMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtII
 			}
@@ -94,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtIII
-			}
+%			\new Voice {
+%				\formatVioloncelloMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtIII
 			}
@@ -118,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtIV
-			}
+%			\new Voice {
+%				\formatVioloncelloMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtIV
 			}
