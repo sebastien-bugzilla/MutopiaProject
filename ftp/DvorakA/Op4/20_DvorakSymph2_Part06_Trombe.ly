@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph2_NameVoice.ily"
 \include "./00-Common/DvorakSymph2_Shortcuts.ily"
 \include "./00-Common/DvorakSymph2_Tempi.ily"
-\include "./00-Common/DvorakSymph2_Format_PartTrombe.ily"
+\include "./00-Common/DvorakSymph2_Format_Part06_Trombe.ily"
 \include "./00-Common/DvorakSymph2_CueVoice.ily"
 \include "./01-Mvt1/m01_v14_music_TrombeI.ily"
 \include "./01-Mvt1/m01_v15_music_TrombeII.ily"

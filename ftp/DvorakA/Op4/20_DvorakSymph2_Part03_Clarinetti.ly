@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph2_NameVoice.ily"
 \include "./00-Common/DvorakSymph2_Shortcuts.ily"
 \include "./00-Common/DvorakSymph2_Tempi.ily"
-\include "./00-Common/DvorakSymph2_Format_PartClarinetti.ily"
+\include "./00-Common/DvorakSymph2_Format_Part03_Clarinetti.ily"
 \include "./00-Common/DvorakSymph2_CueVoice.ily"
 \include "./01-Mvt1/m01_v06_music_ClarinettoI.ily"
 \include "./01-Mvt1/m01_v07_music_ClarinettoII.ily"

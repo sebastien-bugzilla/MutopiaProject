@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph2_NameVoice.ily"
 \include "./00-Common/DvorakSymph2_Shortcuts.ily"
 \include "./00-Common/DvorakSymph2_Tempi.ily"
-\include "./00-Common/DvorakSymph2_Format_PartOboi.ily"
+\include "./00-Common/DvorakSymph2_Format_Part02_Oboi.ily"
 \include "./00-Common/DvorakSymph2_CueVoice.ily"
 \include "./01-Mvt1/m01_v04_music_OboeI.ily"
 \include "./01-Mvt1/m01_v05_music_OboeII.ily"

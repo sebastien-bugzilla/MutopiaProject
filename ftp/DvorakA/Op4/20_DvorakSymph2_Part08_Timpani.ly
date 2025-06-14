@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph2_NameVoice.ily"
 \include "./00-Common/DvorakSymph2_Shortcuts.ily"
 \include "./00-Common/DvorakSymph2_Tempi.ily"
-\include "./00-Common/DvorakSymph2_Format_PartTimpani.ily"
+\include "./00-Common/DvorakSymph2_Format_Part08_Timpani.ily"
 \include "./00-Common/DvorakSymph2_CueVoice.ily"
 \include "./01-Mvt1/m01_v19_music_Timpani.ily"
 \include "./02-Mvt2/m02_v19_music_Timpani.ily"

@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph2_NameVoice.ily"
 \include "./00-Common/DvorakSymph2_Shortcuts.ily"
 \include "./00-Common/DvorakSymph2_Tempi.ily"
-\include "./00-Common/DvorakSymph2_Format_PartCorni.ily"
+\include "./00-Common/DvorakSymph2_Format_Part05_Corni.ily"
 \include "./00-Common/DvorakSymph2_CueVoice.ily"
 \include "./01-Mvt1/m01_v10_music_CornoI.ily"
 \include "./01-Mvt1/m01_v11_music_CornoII.ily"
