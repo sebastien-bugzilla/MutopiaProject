@@ -19,39 +19,34 @@ musicFlautoIIMvtII = \relative c {
 	r4 r8 g,4.\p r4 r8 c4.
 	r4 r8 c'4.\pp r4 r8 c4.(
 	bes8) r r r4 r8 r2.
-	R1.*3
+	R1.*11
 % Bars 11 to 15
-	
-	
-	R1.*4
-	
 	
 % Bars 16 to 20
 	
-	R1.*4
 % Bars 21 to 25
 	\ni \mmrPos #-4 R1.
 	\mmrPos #-6 R \no \mark \default
 	r4 r8 d4.\pp r4 r8 des4.
-	R1.*2
+	R1.*4
 	
 % Bars 26 to 30
-	R1.
-	R1.
+	
+	
 	\ni \mmrPos #-4 R1. \no
-	r4 r8 << {d,,2.~ d4 } {s8\brack\p\< s s\! s\> s s s4\!}>> r8
-	R1.*3
+	r4 r8 << {d,,2.~ d4 } {\hairpinShorten #'(-0.3 . -1.3) s8-\offset X-offset -2 \brack\p\< s s\! \hairpinShorten #'(1.3 . 0) s\> s s s4\!}>> r8
+	R1.*5
 % Bars 31 to 35
 	
 	
-	R1.*2
+	
 	
 	\ni \mmrPos #-4 R1. 
 % Bars 36 to 40
 	\mmrPos #-4 R \no \mark \default
 	r4 r16 d'\pp d4. r4 r16 d d4.
 	r4 r16 c c4. r4 r16 c c4.
-	r4 r16 bes bes4. r4 r16 bes\< << bes4. {s8 s s\!}>>
+	r4 r16 bes bes4. r4 r16 \hairpinShorten #'(0 . -1) bes\< << bes4. {s8 s s\!}>>
 	r4 r16 fis'\< fis4. r4 r16 fis fis4.\!
 % Bars 41 to 45
 	r4 r16 g\mf g4. r4 r16 g g4.
@@ -75,18 +70,18 @@ musicFlautoIIMvtII = \relative c {
 	r4 r8 ees4.(\p\< aes b,!)\!
 	<< {c( f2. g!4.} {s4.\< s8 s s\!  s s s\> s s s\! }>>
 	aes4) r8 r4 r8 r2. \mark \default
-	r4 r16 c'\p\< c4.\! r4 r16 b\p\< b4.\!
+	r4 r16 \hairpinShorten #'(-0.3 . -2) c'\p\< c4.\! r4 r16 \hairpinShorten #'(-0.3 . -2) b\p\< b4.\!
 	r4 r16 bes! bes4. r4 r16 g g4.
 % Bars 61 to 65
-	R1.*3
+	R1.*9
 	
 	
-	R1.
-	R1.
+	
+	
 % Bars 66 to 70
-	R1.
-	R1.
-	R1.*2
+	
+	
+	
 	
 	\ni \mmrPos #-4 R1. \no
 % Bars 71 to 75
@@ -117,11 +112,11 @@ musicFlautoIIMvtII = \relative c {
 	
 	aes,1.\p~
 	aes4 r8 r4 r8 r2.
-	R1.*3
+	R1.*4
 	
 % Bars 96 to 100
 	
-	R1.
+	
 	\ni \mmrPos #-4 R1. \no
 	a'2.(\ff b)
 	c( cis)
@@ -133,10 +128,10 @@ musicFlautoIIMvtII = \relative c {
 	c4.\p\<~ c8 c-> c->\! c4.(~\> c4~ c16 g\!
 % Bars 106 to 110
 	aes8) r r r4 r8 r2.
-	R1.*3
+	R1.*8
 	
 	
-	R1.*5
+	
 % Bars 111 to 115
 	
 	
@@ -145,12 +140,12 @@ musicFlautoIIMvtII = \relative c {
 	\ni \mmrPos #-4 R1. \no
 % Bars 116 to 120
 	r4 r8 d4.\pp r4 r8 des4.
-	R1.*2
+	R1.*4
 	
-	R1.*2
+	
 	
 % Bars 121 to 125
-	<< f,,1.~ {s8\p\< s s  s s s  s\! s\> s  s s s\!}>>
+	<< f,,1.~ {s8-\offset X-offset -2 \p\< s s  s s s  s\! s\> s  s s s\!}>>
 	f4 r8 r4 r8 r2.
 	r r4 r8 f'16(\pp-. f-. a-. a-. c-. c)-. 
 	R1. \mark \default
@@ -162,23 +157,23 @@ musicFlautoIIMvtII = \relative c {
 	r2. d'8->\ff d-> d-> d-> d-> d->
 	R1.
 % Bars 131 to 135
-	r4 r16 g,\pp g4. r4 r16 bes bes4.
+	\textMark "Vi-" r4 r16 g,\pp g4. r4 r16 bes bes4.
 	r4 r16 fis fis4. r4 r16 ees ees4.
 	r4 r16 g g4. r4 r16 bes, bes4.
 	r4 r16 a a4. r4 r16 a\< << a4. {s8 s s\!}>>
-	bes'8\ff r r r4 r8 g4.\pp r4 r8
+	bes'8\ff r r r4 r8 g4.\pp r4 r8 \textEndMark "-de"
 % Bars 136 to 140
 	R1.*2
 	
 	r2. bes,2.\pp
 	bes'8\ff r r r4 r8 a8 r r r4 r8 \mark \default
-	R1.
+	\tweak X-offset 2.5 \textMark "Vi-" R1.
 % Bars 141 to 145
 	r2. r4 r8 a16-.\brack\pp g-. fis8-. g-.
 	r2. bes16(\pp-. a-. g8-. d)-. r4 r8
 	d'16\f c bes8 a c16 bes a8 g c16 bes a8 g bes16 a g8 fis
 	r4 r8 r r gis16. a32 a16 r r8 gis16. a32 a16 r r8 gis16. a32
-	a2.->\ff a-^\fz 
+	a2.->\ff a-^\fz \textEndMark "-de"
 % Bars 146 to 150
 	bes!8\p r r r4 r8 r2.
 	R1.*2

@@ -418,5 +418,5 @@ musicPiccoloMvtIV = \relative c {
 	R1*3
 	
 	
-	\grace {f32( g a} \dynEO #'(0 . 2) bes4\ff) r r2\fermata \fine
+	\grace {f32(\ff g a} bes4) r r2\fermata \fine
 }

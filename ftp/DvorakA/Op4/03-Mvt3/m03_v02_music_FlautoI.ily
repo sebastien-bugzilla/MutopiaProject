@@ -47,23 +47,27 @@ musicFlautoIMvtIII = \relative c {
 	f8) r r4 f16( g f g
 	f8) r r4 f16( ees d bes)
 % Bars 36 to 40
-	f'2.\ff\startTrillSpan
-	f\fz\startTrillSpan
-	f\fz\startTrillSpan
-	f\fz\startTrillSpan
-	f\fz\startTrillSpan
+	\trillSpanPadding #-1 f'2.\ff\startTrillSpan
+	\trillSpanPadding #-1 f\fz\startTrillSpan
+	\trillSpanPadding #-1 f\fz\startTrillSpan
+	\trillSpanPadding #-1 f\fz\startTrillSpan
+	\trillSpanPadding #-0.5 f\fz\startTrillSpan
 % Bars 41 to 45
-	\afterGrace f\fz\startTrillSpan {e16 f\stopTrillSpan}
+	\trillSpanPadding #-0.3 \afterGrace f\fz\startTrillSpan {e16 f\stopTrillSpan}
 	f,8 r r4 r
 	R2.
-	R2.\fermata \mark \default
-	R2.*18
+	\once \ni R2.\fermata \mark \default
+	R2.*12
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	\mmrLength #12 \mmrnDown R2.*3
+	
+	
+	\mmrLength #16 \mmrnDown R2.*3
 % Bars 61 to 65
 	
 	
@@ -86,10 +90,10 @@ musicFlautoIMvtIII = \relative c {
 	bes8)[-. r16 bes-.] bes2
 	c4( d\< ees)\!
 	f8.\f f16 f2
-	f4(\p aes\> c,)
+	\tempoEO #'(-1 . -0.5) f4(\p aes\> c,)
 	des( f ees)\p
 % Bars 81 to 85
-	des( c\> bes)\!
+	des( \hairpinShorten #'(-1.5 . -0.5) c\> bes)\!
 	c8.\pp c16 c2~
 	c8. c16 c2~
 	c8. c16 c2 \mark \default
@@ -237,7 +241,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 206 to 210
 		fis8. d16 d8 r r4
 		\tuplet 3/2 4 {b8(\pp c d)} a8-. a-. b4->
-		\tuplet 3/2 4 {b8(\<_\crescmarkup c d)} a8-. a-. b4->\!
+		\tuplet 3/2 4 {b8(\crescD\< c d)} a8-. a-. b4->\!
 		\tuplet 3/2 4 {c8(\< d e)} b-. b-. c4->\!
 		\tuplet 3/2 4 {c8( d e)} b-. b-. c4
 % Bars 211 to 215
@@ -251,7 +255,7 @@ musicFlautoIMvtIII = \relative c {
 		a4-> bes-> c->
 		d\fp r r \mark \default
 	}
-	cis4.(\p d8) \tuplet 3/2 4 {e( fis b,)}
+	cis!4.(\p d8) \tuplet 3/2 4 {e( fis b,)}
 	b4( cis d8-. d-.)
 % Bars 221 to 225
 	b4 cis2->\fz
@@ -309,7 +313,7 @@ musicFlautoIMvtIII = \relative c {
 	r f( ges aes\< bes ces des f aes)\!
 % Bars 266 to 270
 	bes(\f aes ges f ees des ces bes aes)}
-	des2.\ff\<\startTrillSpan
+	\trillSpanPadding #-0.5 des2.\ff\<\startTrillSpan
 	<< des\startTrillSpan {s4 s s\!\stopTrillSpan}>> \mark \default
 	d!4-. r r
 	R2.*3
@@ -344,28 +348,32 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 	
-	r4 r g'16(\mf f ees bes'
+	r4 r g'16(-\offset X-offset -1 \mf f ees bes'
 	f8) r r4 g16( f ees bes'
 % Bars 301 to 305
 	f8) r r4 \acciaccatura e8\f f r
 	r4 r \acciaccatura e8\f f r
 	r4 r \acciaccatura e8\f f r
-	f2.\startTrillSpan
-	f\startTrillSpan
+	\startMeasureCount \trillSpanPadding #-0.5 f2.\startTrillSpan
+	\trillSpanPadding #-0.5 f\startTrillSpan
 % Bars 306 to 310
-	f\startTrillSpan
-	f\startTrillSpan
-	<< f\startTrillSpan {s4\> s s8 s\!}>>
-	<< f2.\p\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
-	f,8 r r4 r
+	\trillSpanPadding #-0.5 f\startTrillSpan
+	\trillSpanPadding #-0.5 f\startTrillSpan
+	<< \trillSpanPadding #-0.5 f\startTrillSpan {s4\> s s8 s\!}>>
+	\trillSpanPadding #-0.5 f2.\p\startTrillSpan \stopMeasureCount
+	f,8\stopTrillSpan r r4 r
 % Bars 311 to 315
 	R2.
-	R\fermata \mark \markAaBox
-	R2.*15
+	\once \ni R\fermata \mark \markAaBox
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
+	
+	
+	
+	\mmrLength #14 R2.*3
 % Bars 326 to 330
 	
 	
@@ -392,7 +400,7 @@ musicFlautoIMvtIII = \relative c {
 	c4( d\< ees)\!
 % Bars 346 to 350
 	f8.\f f16 f2
-	f4(\p aes\> c,)
+	\tempoEO #'(-1 . -0.5) f4(\p aes\> c,)
 	des( f ees)\p
 	des( c\> bes)\!
 	c8.\pp c16 c2~
@@ -482,12 +490,16 @@ musicFlautoIMvtIII = \relative c {
 	d4.( ees8 f16[ g r16. c,32-.])
 	c4. r8 r4
 % Bars 426 to 430
-	R2.*8
+	\mmrLength #18 \mmrnDown R2.*4
+	
+	
+	
+	R2.
 % Bars 431 to 435
+	\mmrLength #13 \mmrnDown R2.*3
 	
 	
-	
-	d4(\pp\< ees g
+	\tempoEO #'(0 . -0.15) \shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur d4(\pp\< ees g
 	f d\! bes8.\> bes16)
 % Bars 436 to 440
 	bes2(_\dimmarkup c4)\!
@@ -497,17 +509,17 @@ musicFlautoIMvtIII = \relative c {
 % Bars 441 to 445
 	
 % Bars 446 to 450
-	f,8\mf f g g c c
-	f, f g g a a
-	bes\< bes bes bes d d
-	f  f f f f f\!
-	f\f f ees ees d d
+	f,8\mf f g[ g] c c
+	f, f g[ g] a a
+	bes\< bes bes bes d[ d]
+	f f f f f f\!
+	f\f f ees[ ees] d d
 % Bars 451 to 455
 	g g g g g g
-	f f ees ees d d
-	c c a' a g g
-	f f ees ees d d
-	c\ff c c c d d
+	f f ees[ ees] d d
+	c c a'[ a] g g
+	f f ees[ ees] d d
+	c\ff c c c d[ d]
 % Bars 456 to 460
 	ees8. ees16 ees2
 	f8. f16 f2

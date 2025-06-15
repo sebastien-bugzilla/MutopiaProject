@@ -23,7 +23,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 11 to 15
 	
 	
-	r4 r8 r4 c8(\p\< ees4.\> d8)\! r r
+	r4 r8 r4 \hairpinShorten #'(-0.3 . 0) c8(-\offset X-offset -2 \p\< ees4.\> d8)\! r r
 	r4 r8 r4 g,8(\< bes4. a!8)\! r r
 	g4.(\p a)\< bes( d4 c8)\!
 % Bars 16 to 20
@@ -33,13 +33,13 @@ musicFlautoIMvtII = \relative c {
 	
 	\mark \default
 	r4 r8 f'4.\pp r4 r8 e4.
-	r4 r8 ees!4.\fz\>~ ees4\! c8(\p bes4 a8
+	r4 r8 \hairpinShorten #'(-0.3 . -0.3) ees!4.\fz\>~ ees4\! c8(\p bes4 a8
 	bes) r r r4 r8 r2.
 % Bars 26 to 30
 	R1.
 	r4 r8 f16(\p c f ees d c d8) r r ees16( bes ees d c bes
 	c8) r r d16( a d c bes a bes8) r r c16( g c bes a f'
-	bes8) r r << {f,2.~ f4} {s8\< s s\! s\> s s s4\!}>> r8
+	bes8) r r << {f,2.~ f4} {\hairpinShorten #'(-0.5 . -0.5) s8\< s s\! \hairpinShorten #'(0.5 . 0) s\> s s s4\!}>> r8
 	R1.*3
 % Bars 31 to 35
 	
@@ -67,15 +67,15 @@ musicFlautoIMvtII = \relative c {
 	des4.(\! c8 bes f aes4. g!4 g8)
 % Bars 51 to 55
 	f4.( g)\< aes( c4\> bes8)\!
-	aes4.(\< des) c( g'4_\fzmarkup f8)\!
-	ees2.\fz\>~ ees8 des( c bes4\p f8)
+	aes4.(\< des) c( \markEO #'(0 . 4.5) g'4_\fzmarkup f8)\!
+	ees2.\fz~ \hairpinShorten #'(-2 . -0.3) ees8\> des( c\! bes4\p f8)
 	aes4.\pp(~ aes4~ aes16 bes aes4) aes8(\< bes4 c8\!
 	des4) r8 r4 r8 r2.
 % Bars 56 to 60
 	r2. bes32(\pp aes g \liiiri aes \liriii bes aes g aes) r8 ges'32( fes ees \liiiri fes \liriii ges fes ees fes) r8
-	bes16( aes g! aes g f  ees f ges f aes ges  f ees des ees des c  c bes ees g,! des' g,) % a => aes based on audio reference
+	\shape #'((0 . -0.7)(0 . -0.6)(0 . -0.6)(0 . 0)) Slur bes16( aes g! aes g f  ees f ges f aes! ges  f ees des ees des c  c bes ees g,! des' g,) % a => aes based on audio reference
 	aes4 r8 r4 r8 r2. \mark \default
-	r4 r16 ees'\p\< ees4.\! r4 r16 d!\p\< d4.\!
+	r4 r16 \hairpinShorten #'(-0.3 . -1.5) ees'\p\< ees4.\! r4 r16 \hairpinShorten #'(-0.3 . -1.5) d!\p\< d4.\!
 	r4 r16 des des4. r4 r16 bes bes4.
 % Bars 61 to 65
 	r4 r8 des4.\pp~^\solo des8 a!8.( bes16 bes4.)
@@ -85,10 +85,10 @@ musicFlautoIMvtII = \relative c {
 	d4.(\p cis8 b fis) a4.( gis4) r8
 % Bars 66 to 70
 	R1.
-	d'4.(\p c8 b f a4. g4) r8
+	d'4.(\p c!8 b f a4. g4) r8
 	R1.*2
 	
-	c4.(_\pocoapococrescendo f2.\<~ f8 ees bes)\!
+	c4.(^\pocoapococrescendo f2.\<~ f8 ees bes)\!
 % Bars 71 to 75
 	d16\mf d d d d d  d d\< d d d d ees4.:16 f:\!
 	g4._\fbrackf~ g8 r g gis4.~ gis8 r gis \mark \default
@@ -103,7 +103,7 @@ musicFlautoIMvtII = \relative c {
 	f4.( g~ g8 a bes c4.)
 % Bars 81 to 85
 	c2.(\pp\< d4. bes)\!
-	g'2.->\fz( f4.\> ees\!)
+	g'2.->\fz\>( f4. ees\!)
 	<< d1.~ {s4. s_\dimmarkup s s}>>
 	d2.~ d4\pp r8 r4 r8
 	R1.*3
@@ -122,7 +122,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 96 to 100
 	
 	fis4.\mf b2.(~ b8 a e)
-	gis4.\f e'2.(~\< e8 d a)\!
+	gis4.\f\< e'2.(~ e8 d a)\!
 	cis2.(\ff d)
 	ees!( bes')
 % Bars 101 to 105
@@ -134,8 +134,8 @@ musicFlautoIMvtII = \relative c {
 % Bars 106 to 110
 	
 	ees'4.(\p d8 c g) bes4.( a)
-	g4.( a\<_\pococresc bes d4\! c8\>
-	bes)\! r r r4 r8 r2.
+	g4.( a\<_\pococresc bes d4\! c8-\alterBroken shorten-pair #'(()(0 . 1)) \>
+	bes) r\! r r4 r8 r2.
 	R1.*5
 % Bars 111 to 115
 	
@@ -150,14 +150,14 @@ musicFlautoIMvtII = \relative c {
 	R1.*2
 	
 % Bars 121 to 125
-	<< f,1.~ {s8\p\< s s  s s s  s\! s\> s  s s s\!}>>
+	<< f,1.~ {\hairpinShorten #'(-0.3 . 0) s8-\offset X-offset -2 \p\< s s  s s s  s\! s\> s  s s s\!}>>
 	f4 r8 r4 r8 r2.
 	r r4 r8 a16(\pp-. a-. c-. c-. f-. f)-. 
 	r4 r8 a,,16(-.\pp a-. c-. c-. f-. f)-. r2. \mark \default
 	r4 r8 e'4.->(~\> e8 bis8. cis16~ cis4.)\!
 % Bars 126 to 130
 	r2. r4 r8 a16(-. a-. cis-. cis-. e-. e)-. 
-	r2. r4 r8 c16(-. c-. e-. e-. g-. g)-. 
+	r2. r4 r8 c!16(-. c-. e-. e-. g-. g)-. 
 	r8 r f16(-. ees!-.) r8 r f16(-. ees-.) r8 r f16(-. ees-.) r8 r f16(-. ees-.)
 	r2. g8->\ff fis-> g-> fis-> g-> fis->
 	R1.
@@ -172,7 +172,7 @@ musicFlautoIMvtII = \relative c {
 	
 	r2. bes4.\pp\<(~ bes8 fis8. g16)\!
 	ees'!8\ff r r r4 r8 d8 r r r4 r8 \mark \default
-	\textMark "Vi-" R1.
+	\tweak X-offset #2.5 \textMark "Vi-" R1.
 % Bars 141 to 145
 	r2. r4 r8 c16-.\brack\pp bes-. a8-. g-.
 	r2. d'16(\pp-. c-. bes8-. a)-. r4 r8

@@ -91,8 +91,8 @@ musicFlautoIMvtIV = \relative c {
 	ees2 d4. c8
 	bes2-> a->
 	g-> a->
-	<< {\InCueContext bes4 d f4. a,8} \\ {bes2-> d4. c8}>>
-	a'2.\ff~ a8 g-.
+	<< {\InCueContext bes4 d f4. \noteShift #0.7 a,8} \\ {bes2^> d4. c8}>>
+	\textMark "Vi-" a'2.\ff~ a8 g-.
 % Bars 106 to 110
 	a2.~ a8 g-.
 	a4. g8 g4. f8
@@ -110,7 +110,7 @@ musicFlautoIMvtIV = \relative c {
 	d4.-> c8-. bes4-. a-.
 	bes2. \tuplet 5/4 4 {b16(\< c d ees f\!}
 	g4.) f8-. ees4.-> d8-.
-	ees4.-> d8-. c4.-> bes8-. \mark \default
+	ees4.-> d8-. c4.-> bes!8-. \textEndMark "-de" \mark \default
 % Bars 121 to 125
 	d2.->\ff c4-.
 	f-. d2->( c4)
@@ -138,7 +138,7 @@ musicFlautoIMvtIV = \relative c {
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R \no
 	ges,2\p-> ges4.->\< ges8
-	ges'2_\fpmarkup(~ ges8 fes ees des\!)
+	\markEO #'(0 . 4.5) ges'2_\fpmarkup(~ ges8 fes ees des\!)
 % Bars 161 to 165
 	b2->\f ais4.-> b8
 	b2.-> \tuplet 5/4 4 {fis16( gis ais b cis)}
@@ -168,11 +168,11 @@ musicFlautoIMvtIV = \relative c {
 	gis a d fis)\!
 	b2->(\ff a->)
 	cis,( fis4. e8-.)
-	e2\fz~ e8 b( d8.) cis16-.
+	e2\fz~ e8[ b( d8.) cis16-.]
 % Bars 186 to 190
-	cis2\fz~ cis8 e,( b'8.) a16-.
-	a2\fz~ a8 cis,( fis8.) e16-.
-	e2\fz~ e8 g,( b8.) a16-.
+	cis2\fz~ cis8[ e,( b'8.) a16-.]
+	a2\fz~ a8[ cis,( fis8.) e16-.]
+	e2\fz~ e8[ g,( b8.) a16-.]
 	fis'4\ff-> cis-> fis4.-> gis8-.
 	ais4.-> b8-. cis4.-> d8-.
 % Bars 191 to 195
@@ -377,7 +377,7 @@ musicFlautoIMvtIV = \relative c {
 	\tuplet 3/2 2 {f'4-. f-. ees-.} des4. aes8
 	\tuplet 3/2 2 {f'4-. f-. ees-. des-. des-. aes-.}
 % Bars 366 to 370
-	c4 r c\prall r
+	c4 r c\prall^\natural r
 	b\prall r c\prall r
 	bes!\prall r f'\prall r
 	ees\prall r r2
@@ -403,7 +403,7 @@ musicFlautoIMvtIV = \relative c {
 % Bars 386 to 390
 	fis( g
 	d' c)
-	fis,4(\< g f'! ees
+	\shape #'((0 . 0.5)(0 . -1.5)(0 . -1.5)(0 . 0.5)) Slur fis,4(\< g f'! ees
 	d c\! bes\> a)
 	<< g1( { s4 s s s\!}>>
 % Bars 391 to 395
@@ -429,7 +429,7 @@ musicFlautoIMvtIV = \relative c {
 % Bars 411 to 415
 	
 % Bars 416 to 420
-	\ni \mmrPos #-4 R1
+	\ni \mmrPos #-6 R1
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 	r2 r4 a16(\f\< bes b c)\!
@@ -460,7 +460,7 @@ musicFlautoIMvtIV = \relative c {
 	b'4\f fis b4.-> cis8-.
 % Bars 441 to 445
 	dis4.-> e8-. fis4.-> g8-.
-	a4.-> b8-. c4 r
+	a4.-> b8-. c4^\natural r
 	b,4 b'8( b,) b'( b,) r b
 	b2(~ b8 fis b cis
 	dis b dis e fis dis fis g)

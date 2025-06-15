@@ -29,6 +29,7 @@ piup = \markup {\italic {più} \dynamic p}
 
 mfespress = \markup {\hspace #-0.76 \dynamic mf \italic {espress.}}
 mfmarcato = \markup {\hspace #-0.76 \dynamic mf \italic {marcato}}
+mfmarc = \markup {\hspace #-0.76 \dynamic mf \italic {marc.}}
 mfmarkup = \markup {\hspace #-0.76 \dynamic mf}
 
 fpp = \markup {\hspace #-1.41 \dynamic fpp}
@@ -37,6 +38,13 @@ fpdim = \markup {\hspace #-0.67 \dynamic fp \normal-text \italic {dim.}}
 fpmarkup = \markup {\hspace #-0.67 \dynamic fp}
 
 fzpocoapococrescendo = \markup {\hspace #-0.5 \dynamic fz \italic {poco a poco crescendo}}
+fzpocoapoco_crescendo = \markup {
+	\hspace #-0.5 \general-align #Y #CENTER { 
+		\dynamic fz \italic {
+			\column { \lower #1.5 "poco a poco" "crescendo"}
+		}
+	}
+}
 fzpocoapococrescendoC = \markup {\hspace #-0.5 \dynamic fz \italic \vcenter \column { \vspace #-0.5 \lower #1 "poco a poco" "crescendo"}}
 fzdim = \markup {\hspace #-0.5 \dynamic fz \normal-text \italic {dim.}}
 fzmarkup = \markup {\hspace #-0.5 \dynamic fz}
@@ -124,11 +132,15 @@ ppfz = \markup {
 }
 fpespr = \markup {
 	\hspace #-0.68 \concat {
-		\musicglyph "f" \musicglyph "p" \musicglyph "scripts.espr"
+		\musicglyph "f" \musicglyph "p" 
+		\hspace #0.3 \translate #'(0 . 0.5) \musicglyph "scripts.espr"
 	}
 }
 pespr = \markup {
-	\hspace #-0.05 \concat {\musicglyph "p" \musicglyph "scripts.espr" }
+	\hspace #-0.05 \concat {
+		\musicglyph "p" \hspace #0.3 
+		\translate #'(0 . 0.3) \musicglyph "scripts.espr"
+	}
 }
 fbrackcresc = \markup {
 	\hspace #-0.5 \concat {
@@ -235,6 +247,9 @@ mutaingd = \markup {"[muta in G, D]"}
 mutainflpicc = \markup {"[muta in Fl.picc.]"}
 mutainflii = \markup {"[muta in Fl.II.]"}
 mutainflautopiccolo = \markup {"[muta in Flauto piccolo]"}
+mutain_flautopiccolo = \markup {
+	\column { \lower #1 "[muta in" "Flauto piccolo]"}
+}
 mutainflautoii = \markup {"[muta in Flauto II.]"}
 mutaina = \markup {"[muta in A]"}
 mutainb = \markup {"[muta in B]"}
@@ -319,6 +334,12 @@ timpinbesfa = \markup {
 		\concat { "B" \text-flat "/F/A" }
 	}
 }
+natural = \markup {
+	\smaller \text-natural
+}
+
+
+
 %%%%%%%%%%%
 % functions
 %%%%%%%%%%%
@@ -414,17 +435,17 @@ naturaltrill = \markup {
 
 
 InCueContext = {
-	\override NoteHead.color = #red
-	\override Stem.color = #red
-	\override Beam.color = #red
-	\override TextScript.color = #red
-	\override DynamicText.color = #red
-	\override Slur.color = #red
-	\override Tie.color = #red
-	\override Script.color = #red
-	\override Accidental.color = #red
-	\override Hairpin.color = #red
-	\override Rest.color = #red
+%	\override NoteHead.color = #red
+%	\override Stem.color = #red
+%	\override Beam.color = #red
+%	\override TextScript.color = #red
+%	\override DynamicText.color = #red
+%	\override Slur.color = #red
+%	\override Tie.color = #red
+%	\override Script.color = #red
+%	\override Accidental.color = #red
+%	\override Hairpin.color = #red
+%	\override Rest.color = #red
 	
 	\override Beam.beam-thickness = #0.30 % 0.30
 	\override StemTremolo.beam-thickness = #0.35 % 0.30
@@ -539,6 +560,59 @@ ni = {
 	\omit MultiMeasureRestNumber
 }
 
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.minimum-length = #length
+	#}
+)
+
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
+tempoXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.X-offset = #offset
+	#}
+)
+
+trillSpanPadding = #(define-music-function
+	(padding)
+	(number?)
+	#{
+		\once \override TrillSpanner.bound-details.right.padding = #padding
+	#}
+)
+
+tempoEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
+noteHeadEsw = #(define-music-function
+	(spacing)
+	(pair?)
+	#{
+		\once \override NoteHead.extra-spacing-width = #spacing
+	#}
+)
+
+revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
+
+measureCountEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Staff.MeasureCounter.extra-offset = #offset
+	#}
+)
 
 
 %#(define my-script-alist
@@ -633,18 +707,6 @@ ni = {
 %	#}
 %)
 
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
-
-%mmrLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.space-increment = #length
-%	#}
-%)
-
 %mmrMinLength = #(define-music-function
 %	(length)
 %	(number?)
@@ -722,22 +784,8 @@ ni = {
 
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
-%tempoXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.MetronomeMark.X-offset = #offset
-%	#}
-%)
 
 %tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-%tempoEO = #(define-music-function
 %	(offset)
 %	(pair?)
 %	#{
@@ -766,25 +814,6 @@ ni = {
 %		\once \override StemTremolo.Y-offset = #position
 %	#}
 %)
-
-%trillSpanPadding = #(define-music-function
-%	(padding)
-%	(number?)
-%	#{
-%		\once \override TrillSpanner.bound-details.right.padding = #padding
-%	#}
-%)
-
-%trillSpanPadding = #(define-music-function
-%	(padding)
-%	(number?)
-%	% function to create a trill spanner with :
-%	%	- specified padding to avoid overlap
-%	#{
-%		\once \override TrillSpanner.bound-details.right.padding = #padding
-%	#}
-%)
-
 
 %sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 %	\concat { 

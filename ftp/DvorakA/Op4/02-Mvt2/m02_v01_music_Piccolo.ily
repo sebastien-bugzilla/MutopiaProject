@@ -7,5 +7,5 @@
 musicPiccoloMvtII = \relative c {
 	\clef treble
 	\key bes \major
-	R1.*151
+	R1.*151 \fine
 }

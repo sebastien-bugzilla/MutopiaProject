@@ -152,7 +152,7 @@ musicFlautoIIMvtIV = \relative c {
 	\mark \default
 	\dynEO #'(0 . 2) d1\ff
 % Bars 176 to 180
-	cis2->( b4. fis8)
+	cis2( b4. fis8)
 	a1->~
 	a4 fis( d b)
 	b2.->( a4

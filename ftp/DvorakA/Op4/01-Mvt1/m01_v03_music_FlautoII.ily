@@ -9,7 +9,7 @@ musicFlautoIIMvtI = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	d'''2\pp~
+	\startMeasureCount d'''2\pp~
 	d~
 	d~
 	d~
@@ -18,13 +18,13 @@ musicFlautoIIMvtI = \relative c {
 	d~
 	d~
 	d~
-	d~\crescD\<
+	d~-\offset X-offset 1.5 \crescD\<
 	d~
 % Bars 11 to 15
 	d~
-	d\!
-	bes\ff\fermata
-	fis'\pp~
+	<< d {s8 s s s\!}>> \stopMeasureCount
+	\dynEO #'(0 . 2) bes2\ff\fermata
+	\startMeasureCount fis'\pp~
 	fis~
 % Bars 16 to 20
 	fis~
@@ -35,9 +35,9 @@ musicFlautoIIMvtI = \relative c {
 % Bars 21 to 25
 	fis~
 	fis~
-	fis~_\brackM\crescmarkup
-	fis~\<
-	fis
+	\measureCountEO #'(0.8 . -1.5) fis~-\offset X-offset 1.5 \brack\crescD\<
+	fis~ 
+	fis \stopMeasureCount
 % Bars 26 to 30
 	d\ff\fermata \mark \default
 	g!4\f f!->~
@@ -81,12 +81,8 @@ musicFlautoIIMvtI = \relative c {
 	
 	\mark \default
 	\repeat volta 2 {
-		R2*6
+		R2*12
 % Bars 66 to 70
-		
-		
-		
-		R2*6
 		
 % Bars 71 to 75
 		
@@ -105,7 +101,7 @@ musicFlautoIIMvtI = \relative c {
 		c\!
 		f8) r f4\mf~
 		f ees8-.-> f-.->
-		g r c,4->\fz\<~
+		g r \hairpinShorten #'(-0.3 . -1) c,4->\fz\<~
 % Bars 86 to 90
 		c\! d8-.-> ees-.->
 		b16.\ff[ b32 b16] r r8 b~
@@ -141,15 +137,15 @@ musicFlautoIIMvtI = \relative c {
 		e
 		c8) r r4
 		R2
-		\tuplet 3/2 4 {c,8\mf c c  c c c
+		\tuplet 3/2 4 {c,8-\offset X-offset -1 \mf c c  c c c
 % Bars 116 to 120
 		c c c  c\> c c
 		c c c  c c c\!
 		c\p c c  c c c
-		cis\> cis cis   cis cis cis\!
+		\tupletUp cis\> cis cis   cis cis cis\! \tupletNeutral
 		cis cis cis\pp cis cis cis 
 % Bars 121 to 125
-		cis cis_\dimin cis  cis cis cis
+		cis cis^\dimin cis  cis cis cis
 		cis cis cis  cis cis cis~}
 		cis8 r r4
 		R2*3
@@ -161,35 +157,25 @@ musicFlautoIIMvtI = \relative c {
 		f~\>
 		f\!
 % Bars 131 to 135
-		R2*4
-		
-		
-		
-		R2*4
+		\mmrLength #16 \mmrnDown R2*13
 % Bars 136 to 140
-		
-		
-		
-		R2*5
 		
 % Bars 141 to 145
 		
 		
 		
-		R2*9
+		\mmrLength #16 \mmrnDown R2*16
 		
 % Bars 146 to 150
 		
 % Bars 151 to 155
 		
-		
-		R2*7
 % Bars 156 to 160
 		
 		
 		
 		\mark \default
-		f'2\f~
+		\dynEO #'(0 . 2) f'2\f~
 % Bars 161 to 165
 		f8 c-. a-. c-.
 		\tuplet 3/2 4 {f( c a} c16 d ees g)
@@ -329,13 +315,9 @@ musicFlautoIIMvtI = \relative c {
 	c8 r \tuplet 3/2 4 {g-.\> g-. f-.}
 	e\! r \tuplet 3/2 4 {e'\p-. e-. d-.}
 	ees!8\pp r r4
-	R2*4
+	R2*7
 	
 % Bars 281 to 285
-	
-	
-	R2*3
-	
 	
 % Bars 286 to 290
 	aes,2~\p\<
@@ -368,7 +350,7 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	
-	c,2\p~
+	\startMeasureCount c,2\p~
 	c~
 % Bars 316 to 320
 	c~
@@ -377,31 +359,31 @@ musicFlautoIIMvtI = \relative c {
 	c2~
 	c~
 % Bars 321 to 325
-	c(
+	c( \stopMeasureCount
 	f8)\pp r r4
-	R2
-	R2*6
+	R2*7
+	
 	
 % Bars 326 to 330
 	
 	
 	
 	\mark \default
-	R2*12
+	R2*14
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
-	R2*2
+	
 	
 	b,2(~\brack\pp\<
 	b4 ais8)\! r
 % Bars 346 to 350
-	R2*2
+	R2*6
 	
-	R2*4
+	
 	
 	
 % Bars 351 to 355
@@ -411,15 +393,15 @@ musicFlautoIIMvtI = \relative c {
 	r ees8.\mp d16
 	ees8 r r4 \mark \default
 % Bars 356 to 360
-	R2*13
+	R2*14
 % Bars 361 to 365
 	
 % Bars 366 to 370
 	
 	
 	
-	R2
-	\ni \mmrPos #-4 R
+	
+	\ni \mmrPos #-4 R2
 % Bars 371 to 375
 	\mmrPos #-4 R \no
 	r4 r8. g16
@@ -454,9 +436,9 @@ musicFlautoIIMvtI = \relative c {
 	f8-. g16( f) f8-. g16( f) 
 % Bars 401 to 405
 	f8-. g16( f) f( g f) r\fermata
-	R2*2
+	R2*30
 	
-	R2*22
+	
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -466,7 +448,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 421 to 425
 	
 % Bars 426 to 430
-	R2*6
+	
 % Bars 431 to 435
 	
 	\ni \mmrPos #-4 R2
@@ -477,10 +459,10 @@ musicFlautoIIMvtI = \relative c {
 	r8 c->~ c16.[ c32 c16] r
 	r8 ees->~ ees16.[ ees32 ees16]\! r
 	ees2(\fz\>
-	<< c { s8 s s s\!}>> \mark \default
+	<< c { s8 s s s\!}>> \markWhiteout \mark \default
 	f8) r f4->_\mfmarcato~
 % Bars 441 to 445
-	f\< ees8-.-> f->-.
+	f ees8-.-> \hairpinShorten #'(1 . 0) f->-.\<
 	g r c,4->~
 	c d8-.-> ees-.->\!
 	b16.[_\fcresc b32 b16] r r8 b->~
@@ -518,12 +500,8 @@ musicFlautoIIMvtI = \relative c {
 % Bars 471 to 475
 	c-> c-> \mark \default
 	\grace {s8} c8 r r4
-	R2*5
+	R2*11
 % Bars 476 to 480
-	
-	
-	R2*6
-	
 	
 % Bars 481 to 485
 	
@@ -548,7 +526,7 @@ musicFlautoIIMvtI = \relative c {
 	r a
 	r bes
 	r bes 
-	R2*4
+	\textMark "Vi-" R2*4
 % Bars 501 to 505
 	
 	
@@ -577,7 +555,7 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	
-	a'2_\fzpocoapococrescendo~
+	a'2-\offset X-offset -2 _\fzpocoapoco_crescendo~
 	a
 % Bars 526 to 530
 	d\fz\<~
@@ -600,7 +578,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 541 to 545
 	
 	r4 r8 bes'\p\<(
-	\tuplet 3/2 4 {aes g ees'\!} ees4~\> \mark \default
+	\tuplet 3/2 4 {aes g ees'\!} ees4~\> \textEndMark "-de" \markWhiteout \mark \default
 	ees8)\! r ces4\pp
 	r c!
 % Bars 546 to 550
@@ -628,14 +606,14 @@ musicFlautoIIMvtI = \relative c {
 	f8 r r4
 	R2
 % Bars 566 to 570
-	\tuplet 3/2 4 {f8\mf f f  f\> f f
+	\tuplet 3/2 4 {f8-\offset X-offset -1 \mf f f  f\> f f
 	f f f  f f f\! } \mark \default
 	\grace {s8.} \tuplet 3/2 4 { f8\p f f  f\> f f
 	f f f  f f f\!
 	ges\pp ges ges  ges ges ges
 % Bars 571 to 575
 	ges ges ges  ges ges ges
-	ges ges ges_\brackM\calando  ges ges ges
+	ges ges ges^\brackM\calando  ges ges ges
 	ges ges ges  ges ges ges}
 	ges4 r
 	a\< r
@@ -647,7 +625,7 @@ musicFlautoIIMvtI = \relative c {
 	bes~
 % Bars 581 to 585
 	bes
-	R2*4
+	\mmrLength #12 \mmrnDown R2*4
 	
 	
 	
@@ -656,9 +634,13 @@ musicFlautoIIMvtI = \relative c {
 	\tuplet 3/2 4 {g8 f d')} bes8.( a16 
 	\tuplet 3/2 4 {g8 f d')} bes8.( a16 
 	\tuplet 3/2 4 {g8 f d')} bes8-. r
-	R2*17
+	R2*5
 % Bars 591 to 595
 	
+	
+	
+	
+	\tempoXoffset #-2 R2*12
 % Bars 596 to 600
 	
 % Bars 601 to 605
@@ -688,7 +670,7 @@ musicFlautoIIMvtI = \relative c {
 	r r8. cis16\ff
 	d2
 % Bars 626 to 630
-	c8( bes a c)
+	c!8( bes a c)
 	d2
 	c8( bes a f)
 	aes2->
@@ -717,21 +699,30 @@ musicFlautoIIMvtI = \relative c {
 	
 	d,2_\fpespr
 	R
-	e(_\pespr \mark \default
-	f8) r r4
+	e(_\pespr \markWhiteout \mark \default
+	\tempoXoffset #0.5 f8) r r4
 % Bars 656 to 660
-	R2*3
+	\mmrLength #10 R2*6
 	
 	
-	R2*12
+	
+	
 % Bars 661 to 665
+	
+	R2
+	\mmrLength #10 R2*4
+	
 	
 % Bars 666 to 670
 	
+	\mmrLength #12 R2*4
+	
+	
+	
 % Bars 671 to 675
-	R2*5
+	\mmrLength #10 R2*5
 % Bars 676 to 680
-	R2*7
+	\mmrLength #17 \mmrnDown R2*7
 % Bars 681 to 685
 	
 	\mark \default

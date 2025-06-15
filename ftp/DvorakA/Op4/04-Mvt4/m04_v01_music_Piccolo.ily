@@ -85,7 +85,7 @@ musicPiccoloMvtIV = \relative c {
 	
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \textEndMark "-de" \mark \default
+	\mmrPos #-4 R \no \offset X-offset -2.3 \textEndMark "-de" \mark \default
 % Bars 121 to 125
 	d,8(\f c bes a bes c d ees)
 	f( ees d c d ees f g)
@@ -157,7 +157,7 @@ musicPiccoloMvtIV = \relative c {
 % Bars 231 to 235
 	\ni \mmrPos #-4 R1 \no
 	r16 d,(\f\< e fis g a b cis d4.) d8-.\!
-	d2\brack\fz r
+	\dynEO #'(0 . 1) d2\brack\fz r
 	r16 d,(\f\< e fis g a b cis d4.) d8-.\!
 	d2->\brack\fz r
 % Bars 236 to 240
@@ -212,9 +212,13 @@ musicPiccoloMvtIV = \relative c {
 % Bars 281 to 285
 	g2 fis8. g16 c4
 	gis8. a16 d4 r2
-	R1*19
+	R1*7
 % Bars 286 to 290
 	
+	
+	
+	
+	\mmrLength #14 R1*12
 % Bars 291 to 295
 	
 % Bars 296 to 300
@@ -288,7 +292,7 @@ musicPiccoloMvtIV = \relative c {
 	g( f ees d ees f g aes)
 	bes( aes g f g aes bes c)
 	des( c bes a! \tuplet 5/4 2 {bes c des ees f)}
-	fis1-^\fz(
+	\marcatoUpperSlur fis1-^\fz(
 	g8-.) r r4 r2
 % Bars 381 to 385
 	R1*11
@@ -337,7 +341,7 @@ musicPiccoloMvtIV = \relative c {
 	R1
 	b,,4\brack\f b'8( b,) b'( b,) r b-.
 	b4 b'8( b,) b'( b,) r b-.
-	e'2->\ff e->
+	\dynEO #'(0 . 2) e'2->\ff e->
 % Bars 451 to 455
 	e-> r
 	e-> e->
@@ -347,12 +351,12 @@ musicPiccoloMvtIV = \relative c {
 % Bars 456 to 460
 	e-> e->
 	e-> r
-	g1->~
+	\startMeasureCount g1->~
 	g~
 	g~
 % Bars 461 to 465
 	g~
-	g~
+	g~ \stopMeasureCount
 	g4 g-> g-> g-> \mark \default
 	fis r r2
 	R1*11
@@ -400,31 +404,31 @@ musicPiccoloMvtIV = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	bes,1\ff\startTrillSpan
-	bes2\startTrillSpan bes4\stopTrillSpan r
+	\trillSpanPadding #-0.5 bes,1\ff\startTrillSpan
+	\trillSpanPadding #-1 bes2\startTrillSpan bes4\stopTrillSpan r
 % Bars 526 to 530
 	R1*2
 	
-	bes1\ff\startTrillSpan
-	bes2\startTrillSpan~ bes4\stopTrillSpan r
+	\trillSpanPadding #-1 bes1\ff\startTrillSpan
+	\trillSpanPadding #-1 bes2\startTrillSpan~ bes4\stopTrillSpan r
 	R1*2
 % Bars 531 to 535
 	
-	\trillSpanCustom #flattrill f'1\startTrillSpan\ff
+	\trillSpanPadding #-2 \dynEO #'(0 . 1) \trillSpanCustom #flattrill f'1\startTrillSpan\ff
 	f2.\stopTrillSpan r4
 	R1*2
 	
 % Bars 536 to 540
 	\trillSpanCustom #naturaltrill f1\startTrillSpan\ff
-	f2.\startTrillSpan r4\stopTrillSpan
+	f2. r4\stopTrillSpan
 	R1*2
 	
-	bes,1\ff\startTrillSpan\ff
+	\trillSpanPadding #-1 bes,1\ff\startTrillSpan\ff
 % Bars 541 to 545
 	bes
 	bes
 	bes
-	f'\ff\startTrillSpan
+	\trillSpanPadding #-1 f'\ff\startTrillSpan
 	f
 % Bars 546 to 550
 	e->~\startTrillSpan
@@ -450,5 +454,5 @@ musicPiccoloMvtIV = \relative c {
 	R1*3
 	
 	
-	\grace {f32( g a} bes4\ff) r r2\fermata \fine
+	\grace {f32(\ff g a} bes4) r r2\fermata \fine
 }

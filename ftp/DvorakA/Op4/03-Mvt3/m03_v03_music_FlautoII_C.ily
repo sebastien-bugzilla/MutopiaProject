@@ -229,8 +229,8 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 206 to 210
 		d8. b16 b8 r r4
 		\tuplet 3/2 4 {g8(\pp a b)} fis8-. fis-. g4->
-		\tuplet 3/2 4 {\hairpinShorten #'(0 . -3) g8(\crescD\< g b)} fis8-. fis-. g4->\!
-		\tuplet 3/2 4 {a8(\< b c)} gis-. gis-. a4->\!
+		\tuplet 3/2 4 {\hairpinShorten #'(0 . -3) g8(\crescD\< a b)} fis8-. fis-. g4->\!
+		\tuplet 3/2 4 {a8(\< b c)} gis!-. gis-. a4->\!
 		\tuplet 3/2 4 {a8( b c)} gis-. gis-. a4
 % Bars 211 to 215
 		f4.\f g8-. a16[( bes) r16. e,32]
@@ -301,8 +301,8 @@ musicFlautoIIMvtIII = \relative c {
 	r aes( bes ces\< des ees f aes ces)\!
 % Bars 266 to 270
 	des(\f ces bes aes ges f ees! des ces)}
-	f2.\ff\<\startTrillSpan
-	<< f\startTrillSpan {s4 s s8 s\!\stopTrillSpan}>> \mark \default
+	f2.\ff\startTrillSpan
+	<< f\startTrillSpan {s4 s s8 s\stopTrillSpan}>> \mark \default
 	bes4-. r r
 	R2.*3
 % Bars 271 to 275
