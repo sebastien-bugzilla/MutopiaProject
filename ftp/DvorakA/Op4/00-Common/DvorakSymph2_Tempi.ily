@@ -154,7 +154,7 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 63
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII  oboeI oboeII clarinettoI clarinettoII 
+	\tag #'(flautoI flautoII    clarinettoI clarinettoII 
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 
 		trombonoI trombonoII trombonoIII timpani violinoI violinoII viola 
 		violoncello contrabasso) {
@@ -162,13 +162,21 @@ tempiPartMvtI = {
 			\normal-weight \italic "poco tranquillo"
 		}
 	}
-	\tag #'(piccolo) {
+	\tag #'(piccolo ) {
 		\tempo \markup {
 			\normal-weight \italic \column {
 				\lower #1 "poco" "tranquillo"
 			}
 		}
-	}	s2*68
+	}
+	\tag #'(oboeI oboeII) {
+		\tempo \markup {
+			\normal-weight \italic \center-column {
+				\lower #1 "poco" "tranquillo"
+			}
+		}
+	}
+	s2*68
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 131
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -333,6 +341,7 @@ tempiPartMvtI = {
 		\tempo "Presto"
 	}
 }
+%-------------------------------------------------------------------------------
 tempiPartMvtII = {
 	\tag #'(flautoI flautoII piccolo oboeI oboeII clarinettoI clarinettoII 
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 
@@ -389,6 +398,7 @@ tempiPartMvtII = {
 		}
 	}
 }
+%-------------------------------------------------------------------------------
 tempiPartMvtIII = {
 	\tag #'(flautoI flautoII piccolo oboeI oboeII clarinettoI clarinettoII 
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 
@@ -419,7 +429,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 60
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII piccolo oboeI oboeII clarinettoI clarinettoII 
+	\tag #'(flautoI flautoII piccolo oboeII clarinettoI clarinettoII 
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 
 		trombonoI trombonoII trombonoIII timpani violinoI violinoII viola 
 		violoncello contrabasso) {
@@ -427,6 +437,11 @@ tempiPartMvtIII = {
 			\normal-weight \italic \center-column {
 				\lower #1 "poco a poco" "[più] adagio"
 			}
+		}
+	}
+	\tag #'(oboeI) {
+		\tempo \markup {
+			\normal-weight \italic "poco a poco [più] adagio"
 		}
 	}
 	s2.*3
@@ -474,7 +489,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 325
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI  piccolo oboeI oboeII clarinettoI clarinettoII 
+	\tag #'(flautoI  piccolo oboeI  clarinettoI clarinettoII 
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 
 		trombonoI trombonoII trombonoIII timpani violinoI violinoII viola 
 		violoncello contrabasso) {
@@ -482,7 +497,7 @@ tempiPartMvtIII = {
 			\normal-weight \italic "poco ritard."
 		}
 	}
-	\tag #'(flautoII) {
+	\tag #'(flautoII oboeII) {
 		\tempo \markup {
 			\normal-weight \italic \column { 
 				\lower #1 "poco" "ritard."
@@ -493,7 +508,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 328
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII 
+	\tag #'(flautoI flautoII   clarinettoI clarinettoII 
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 
 		trombonoI trombonoII trombonoIII timpani violinoI violinoII viola 
 		violoncello contrabasso) {
@@ -501,7 +516,7 @@ tempiPartMvtIII = {
 			\normal-weight \italic "poco a poco [più] adagio"
 		}
 	}
-	\tag #'(piccolo) {
+	\tag #'(piccolo oboeII) {
 		\tempo \markup {
 			\normal-weight \italic \column {
 				\lower #1 "poco a poco" "[più] adagio"
@@ -565,13 +580,16 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 426
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII piccolo oboeI oboeII clarinettoI clarinettoII 
+	\tag #'(flautoI flautoII piccolo oboeII clarinettoI clarinettoII 
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 
 		trombonoI trombonoII trombonoIII timpani violinoI violinoII viola 
 		violoncello contrabasso) {
 		\tempo \markup {
 			\column { \lower #1 "Meno" "Allegro" }
 		}
+	}
+	\tag #'(oboeI) {
+		\tempo "Meno Allegro" 
 	}
 	s2.*4
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -640,6 +658,7 @@ tempiPartMvtIII = {
 		\tempo "Presto assai"
 	}
 }
+%-------------------------------------------------------------------------------
 tempiPartMvtIV = {
 	\tag #'(flautoI flautoII piccolo oboeI oboeII clarinettoI clarinettoII 
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 

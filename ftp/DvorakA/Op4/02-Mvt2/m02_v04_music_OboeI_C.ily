@@ -37,7 +37,7 @@ musicOboeIMvtII = \relative c {
 	R1.*3
 	
 	
-	f8\p f f  f f f  f f f  f f f
+	f8\p\< f f  f f f\!  f\> f f  f f f\!
 	R1.
 % Bars 31 to 35
 	\partCombineApart r4 r8 a'16(-\offset X-offset -1 \p e a g f e f8) r r g16( d g f e d
@@ -56,7 +56,7 @@ musicOboeIMvtII = \relative c {
 	r4 r16 g\> g4. r4 r16 g_\dimD g4.
 	r4 r16 aes\p aes4. r4 r16\> f f4.\!
 	r4 r16 g\pp g4. r4 r16 bes bes4.(
-	a8) r r r4 r8 r2.
+	aes8) r r r4 r8 r2.  % a => aes according to part score and other voices
 % Bars 46 to 50
 	R1.*2
 	
@@ -139,7 +139,7 @@ musicOboeIMvtII = \relative c {
 	R1.*2
 	
 % Bars 121 to 125
-	\partCombineApart bes8-._\p_\<-\offset X-offset -4 ^\solo d-. f-. d16-. c-. bes8-. g'-. f-.\! \shape #'((0 . 1.5)(0 . -0.5)(0 . -0.5)(0 . 1.5)) Slur bes4_\>(~ bes8 d, g\!
+	\partCombineApart bes8-._\p_\<-\offset X-offset -4 ^\solo d-. f-. d16-. c-. bes8-. g'-. f\! \shape #'((0 . 1.5)(0 . -0.5)(0 . -0.5)(0 . 1.5)) Slur bes4_\>(~ bes8 d, g\!
 	f4) r8 r4 r8 r2. \partCombineAutomatic
 	r2. r4 r8 a,16(\pp-. a-. c-. c-. f-. f)-. 
 	\partCombineApart r2. \dynEO #'(-2 . -2) a,16(\pp-. a-. c-. c-. f-. f)-. r4 r8 \partCombineAutomatic \mark \default

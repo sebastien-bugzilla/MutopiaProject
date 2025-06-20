@@ -42,7 +42,7 @@ musicClarinettoIMvtII = \relative c {
 	c2.( f4) \partCombineAutomatic r8 r4 r8
 	f2.(\pp e)
 	d( c4.~ c8 b16 c d8)
-	\partCombineApart c8.( d16-\tweak rotation #'(7 1 0) \< c g c d e a g c)\! \beamOffset #'(-0.5 . 0) e,( a g c \dynEO #'(0 . -9.7) e\f d \beamOffset #'(0 . -0.5) c-\tweak rotation #'(-7 -1 0) \> a g e d c)\!
+	\partCombineApart c8.( d16_\< c g c d e a g c)\! \beamOffset #'(-0.5 . 0) e,( a g c \dynEO #'(0 . -9.7) e\f d \beamOffset #'(0 . -0.5) c_\> a g e d c)\!
 	c2. f4.~ f8 \partCombineAutomatic r r
 % Bars 31 to 35
 	R1.*2

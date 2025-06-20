@@ -9,7 +9,7 @@ musicOboeIIMvtI = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	d'2\pp~
+	\startMeasureCount d'2\pp~
 	d~
 	d~
 	d~
@@ -22,9 +22,9 @@ musicOboeIIMvtI = \relative c {
 	d~
 % Bars 11 to 15
 	d~
-	d\!
+	d\! \stopMeasureCount
 	e\fermata\ff
-	fis\pp~
+	\startMeasureCount fis\pp~
 	fis~
 % Bars 16 to 20
 	fis~
@@ -37,7 +37,7 @@ musicOboeIIMvtI = \relative c {
 	fis~
 	fis~_\crescmarkup
 	fis~
-	fis
+	fis \stopMeasureCount
 % Bars 26 to 30
 	gis\ff\fermata \mark \default
 	g'!4\f f!->~
@@ -73,18 +73,18 @@ musicOboeIIMvtI = \relative c {
 	
 	\mark \default
 	\repeat volta 2 {
-		R2*4
+		\mmrLength #12 \tempoXoffset -1 \mmrnDown R2*4
 % Bars 66 to 70
 		
 		\ni \mmrPos #-4 R2
 		\mmrPos #-4 R
 		\mmrPos #-4 R \no
-		ees2\p~
+		\startMeasureCount ees2\p~
 % Bars 71 to 75
 		<< ees~ {s8\< s s s\!}>>
 		<< ees2~ {s8\> s s s\!}>>
 		ees2~
-		ees
+		ees \stopMeasureCount
 		R2*3
 % Bars 76 to 80
 		
@@ -119,9 +119,9 @@ musicOboeIIMvtI = \relative c {
 % Bars 101 to 105
 		R2*2
 		
-		f4\f r
+		\dynEO #'(0 . -8) f4^\f r
 		R2
-		f4\f r
+		\dynEO #'(0 . -7) f4^\f r
 % Bars 106 to 110
 		R2
 		b,2\ff~
@@ -157,9 +157,13 @@ musicOboeIIMvtI = \relative c {
 		c~
 		c~
 		c
-		R2*19
+		R2*5
+		
 % Bars 141 to 145
-	
+		
+		
+		
+		\mmrLength #16 R2*14
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -199,7 +203,7 @@ musicOboeIIMvtI = \relative c {
 		cis b8. gis16
 		gis4 r
 		a\p-> gis->
-		a-> c~
+		a-> c!~
 % Bars 186 to 190
 		c b8. gis16
 		gis4( a8) r
@@ -307,7 +311,7 @@ musicOboeIIMvtI = \relative c {
 	e4 e8. d16
 	c8 r e8._\dimmarkup d16
 % Bars 276 to 280
-	c8 r \tuplet 3/2 4 {e-.\> e-. d-.}
+	c8 r \once \tupletUp \tuplet 3/2 4 {e-.\> e-. d-.}
 	c\! r \tuplet 3/2 4 {e\p-. e-. d-.}
 	ees!8\pp r r4
 	R2*3
@@ -343,7 +347,7 @@ musicOboeIIMvtI = \relative c {
 	g~\>
 	<< g {s8 s s s\!}>>
 % Bars 306 to 310
-	a8 r r4
+	c!8 r r4
 	R2*5
 	
 	
@@ -362,7 +366,7 @@ musicOboeIIMvtI = \relative c {
 	c
 % Bars 321 to 325
 	c
-	R2*7
+	R2*8
 	
 	
 	
@@ -370,15 +374,15 @@ musicOboeIIMvtI = \relative c {
 	
 	
 	
-	R2 \mark \default
-	R2*12
+	\mark \default
+	R2*14
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
-	R2*2
+	
 	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no
@@ -395,15 +399,15 @@ musicOboeIIMvtI = \relative c {
 	
 	\mark \default
 % Bars 356 to 360
-	R2*13
+	R2*14
 % Bars 361 to 365
 	
 % Bars 366 to 370
 	
 	
 	
-	R2
-	\ni \mmrPos #-4 R
+	
+	\ni \mmrPos #-4 R2
 % Bars 371 to 375
 	\mmrPos #-4 R2 \no
 	r4 r8. c16
@@ -442,14 +446,12 @@ musicOboeIIMvtI = \relative c {
 	f8-. g16( f) f8-. g16( f) 
 % Bars 401 to 405
 	f8-. g16( f) f( g f) r\fermata
-	R2*4
+	R2*14
 	
 	
 	
 % Bars 406 to 410
-	R2*2
 	
-	R2*8
 % Bars 411 to 415
 	
 % Bars 416 to 420
@@ -476,7 +478,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 436 to 440
 	r8 ees~-> ees16.[ ees32 ees16] r
 	r8 g->~ g16.[ g32 g16]\! r
-	bes2(\fz\>
+	\once \stemUp bes2(\fz\>
 	<< a! {s8  s s s\!}>> \mark \default
 	f8) r r f\p~
 % Bars 441 to 445
@@ -522,38 +524,34 @@ musicOboeIIMvtI = \relative c {
 % Bars 476 to 480
 	
 	
-	g4_\fzpocoapococrescendo~ g8 \tuplet 3/2 8 {g16( a b}
+	g4-\offset X-offset -3 _\fzpocoapoco_crescendo~ g8 \tuplet 3/2 8 {g16( a b}
 	c4.)->\< d8-.\!
 	ees4.\fz d8
 % Bars 481 to 485
 	c-.\< g'-. g-. f-.\!
-	ees4.->_\piuf d8
+	ees4.->-\offset X-offset -1 _\piuf d8
 	c8-.\< g'-. g-. f-.\!
-	ees->\f \tuplet 3/2 8 {d16( c b} c8) r
+	\dynEO #'(0 . -9.5) ees->^\f \tuplet 3/2 8 {d16( c b} c8) r
 	c8-> \tuplet 3/2 8 {bes!16( aes g} aes8) r
 % Bars 486 to 490
 	aes8-> \tuplet 3/2 8 {g16( f e} f8) r
 	f'8-> \tuplet 3/2 4 {ees!16( des c} des8) r
-	R2
-	R2*6
+	R2*8
+	
 	
 % Bars 491 to 495
 	
-	
-	
-	
-	R2
 % Bars 496 to 500
 	r4 cis,\brack\pp
 	r cis
 	r d
 	r d 
-	R2*4
+	\textMark "Vi-" R2*4
 % Bars 501 to 505
 	
 	
 	\mark \default
-	\tuplet 3/2 4 {g'8(\f f g} f4)
+	\tuplet 3/2 4 {g'8(\f f! g} f4)
 	\tuplet 3/2 4 {g8( f g} f4)
 % Bars 506 to 510
 	\tuplet 3/2 4 {g8( f g} f4)
@@ -574,7 +572,7 @@ musicOboeIIMvtI = \relative c {
 	
 	
 	
-	a2_\fzpocoapococrescendo~
+	a2-\offset X-offset -4 _\fzpocoapoco_crescendo~
 	a
 % Bars 526 to 530
 	d\<~
@@ -589,15 +587,11 @@ musicOboeIIMvtI = \relative c {
 	bes-. \tuplet 3/2 8 {a16( g fis} g8) r
 	g'-. \tuplet 3/2 4 {f!16( ees! d} ees8) r
 % Bars 536 to 540
-	R2
-	R2*5
-	
-	
-	
+	R2*6
 % Bars 541 to 545
 	
 	r4 r8 bes(\p\<
-	\tuplet 3/2 4 {aes g ees'\!} ees4~\> \mark \default
+	\tuplet 3/2 4 {\once \tupletUp aes g ees'\!} ees4~\> \offset X-offset -2.3 \textEndMark "-de" \markWhiteout \mark \default
 	ees8)\! r  ces4\pp
 	r c!
 % Bars 546 to 550
@@ -605,7 +599,7 @@ musicOboeIIMvtI = \relative c {
 	
 	
 	
-	\tuplet 3/2 4 {cis8(\ff b cis} b4->)
+	\tuplet 3/2 4 {cis8(-\offset X-offset -1 \ff b cis} b4->)
 % Bars 551 to 555
 	\tuplet 3/2 4 {cis8( b cis} b4->)
 	\tuplet 3/2 4 {cis8( b cis} b4->)
@@ -625,15 +619,15 @@ musicOboeIIMvtI = \relative c {
 	f8 r r4
 	R2
 % Bars 566 to 570
-	\tuplet 3/2 4 {c8\mf c c  c\> c c
-	c c c  c c c\! \mark \default
+	\startMeasureCount \tuplet 3/2 4 {c8\mf c c  c\> c c
+	c c c  c c c\! \resetMarkSpace \mark \default
 	c\p c c  c\> c c
 	c c c  c c c\!
 	c\pp c c  c c c 
 % Bars 571 to 575
 	c c c  c c c
-	c c c_\calando  c c c
-	c c c  c c c}
+	c c c^\calando  c c c
+	c c c  c c c} \stopMeasureCount
 	c4 r
 	c\< r
 % Bars 576 to 580
@@ -647,15 +641,19 @@ musicOboeIIMvtI = \relative c {
 	d(~_\brackM\legato\<
 	d4\! c\>->~
 	c\! bes8. a16-.
-	<< g2->) {s8\> s s s\!}>>
+	<< g2->) {\hairpinShorten #'(0 . -0.5) s8\> s s s\!}>>
 % Bars 586 to 590
 	f2\pp~
 	f~
 	f~
 	f
-	R2*17
+	R2*5
 % Bars 591 to 595
 	
+	
+	
+	
+	\mmrLength #14 R2*12
 % Bars 596 to 600
 	
 % Bars 601 to 605
@@ -691,16 +689,16 @@ musicOboeIIMvtI = \relative c {
 	bes2->
 	f'4.-> f8
 % Bars 631 to 635
-	f r ees r16 d
+	f r ees[ r16 d]
 	d8 r d4
 	f2->
 	f4. f8
 	f r ees8. d16
 % Bars 636 to 640
 	d8 r r8. d16
-	ees8 r d r16 c
+	ees8 r d[ r16 c]
 	c8 r r8. c16
-	f8 r ees r16 d
+	f8 r ees[ r16 d]
 	d8 r r8. d16
 % Bars 641 to 645
 	e4 r8 cis
@@ -715,20 +713,23 @@ musicOboeIIMvtI = \relative c {
 	d,2_\fpespr
 	R
 	e_\pespr( \mark \default
-	f8) r r4
+	\tempoXoffset 0.5 f8) r r4
 % Bars 656 to 660
-	R2*15
+	R2*6
 % Bars 661 to 665
 	
+	R2
+	R2*4
 % Bars 666 to 670
 	
+	\mmrLength #16 \tempoXoffset -2 R2*4
 % Bars 671 to 675
-	R2*5
+	\mmrLength #12 R2*5
 % Bars 676 to 680
-	R2*5
+	\mmrLength #10 \tempoXoffset -2 \mmrnDown R2*5
 % Bars 681 to 685
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-4 R \no \markWhiteout \mark \default
 	\voiceTwo r4\fermata r \oneVoice 
 	cis4->\f d->
 	c! fis
@@ -739,7 +740,7 @@ musicOboeIIMvtI = \relative c {
 	d4 b'8. b16
 	c4 c
 % Bars 691 to 695
-	bes4. f8
+	bes!4. f8
 	des'-. r d-. r
 	bes r a8. a16
 	f8 r e'8. e16

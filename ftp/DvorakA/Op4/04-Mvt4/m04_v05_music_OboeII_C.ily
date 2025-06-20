@@ -414,7 +414,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 411 to 415
 	b\!
 	b2\f a
-	b2. \tuplet 5/4 4 {b16( cis dis eis fis)} % eis to check
+	b2. \tuplet 5/4 4 {b16( cis dis e fis)}
 	e4.-> d!8 c4-> b->
 	c2..-> c8
 % Bars 416 to 420

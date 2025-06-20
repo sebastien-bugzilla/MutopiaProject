@@ -222,6 +222,9 @@ pocoapoco = \markup {\italic {poco a poco}}
 pocoapococresc = \markup {\italic {poco a poco cresc.}}
 pocoapococrescC = \markup {\italic {\column { \lower #1 "poco a poco" "cresc."}}}
 pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
+pocoapoco_crescendo = \markup {
+	\column { \italic \lower #1 "poco a poco" "crescendo"}
+}
 pococresc = \markup {\italic {poco cresc.}}
 sempre = \markup {\italic {sempre}}
 semprepianissimo = \markup {\italic {sempre pianissimo}}
@@ -614,6 +617,15 @@ measureCountEO = #(define-music-function
 	#}
 )
 
+markXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
+
+resetMarkSpace = \once \revert Score.RehearsalMark.extra-spacing-width
 
 %#(define my-script-alist
 %	(
@@ -729,14 +741,6 @@ measureCountEO = #(define-music-function
 %	#}
 %)
 
-
-%markXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
-%	#}
-%)
 
 %markYoffset = #(define-music-function
 %	(offset)

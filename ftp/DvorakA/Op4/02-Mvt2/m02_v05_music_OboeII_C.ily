@@ -37,7 +37,7 @@ musicOboeIIMvtII = \relative c {
 	R1.*3
 	
 	
-	d8\p d d  d d d  d d d  d d d
+	d8\p\< d d  d d d\!  d\> d d  d d d\!
 	R1.
 % Bars 31 to 35
 	R1.*3
@@ -123,7 +123,7 @@ musicOboeIIMvtII = \relative c {
 	e2.(\ff gis)
 	aes( g!)
 % Bars 101 to 105
-	d8 r r r4 r8 fis r r r4\fermata r8 \mark \default
+	d!8 r r r4 r8 fis r r r4\fermata r8 \mark \default
 	R1.
 	R1.*2
 	

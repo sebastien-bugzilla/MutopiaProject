@@ -37,16 +37,16 @@ musicOboeIIMvtIII = \relative c {
 	ees
 	<< c~ {s4 s s\!}>>
 	c2.\f
-	r4 r r8 e(\pp
+	r4 r r8 e(_\pplegato
 % Bars 26 to 30
-	f4_\legato g bes)
+	f4 g bes)
 	c2~ c8 des(
 	c4 e f)
 	f2~ f8 c(
 	f4 e f
 % Bars 31 to 35
 	a8) r f,4(->\f ees!->\<~
-	ees) f(_\fzmarkup ees)\!
+	ees) \markEO #'(0 . -8.5) f(^\fzmarkup ees)\!
 	f8(->\f e ees d des c)
 	f(-> e ees d des c)
 	f2.
@@ -61,16 +61,20 @@ musicOboeIIMvtIII = \relative c {
 	<< f~ {s4\> s s8 s\!}>>
 	f2.\p\>~
 	f\fermata\! \mark \default
-	R2.*17
+	R2.*12
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	\mmrLength #12 R2.*3
+	
+	
+	\mmrLength #18 \mmrnDown R2.*3
 % Bars 61 to 65
 	
-	R2.
+	
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
@@ -97,7 +101,7 @@ musicOboeIIMvtIII = \relative c {
 	e2(\pp f4)
 	e2( f4)
 	e2 c8. c16 \mark \default
-	c4.\fz c8-. c-. a-.
+	\dynEO #'(0.3 . 0.2) c4.-\offset X-offset 0.5 \fz c8-. c-. a-.
 % Bars 86 to 90
 	a4(\> bes)\! r
 	c4.\fz c8-. c-. a-.
@@ -256,7 +260,7 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 226 to 230
 	
-	c4.(\mp^\solo d8) \tuplet 3/2 4 {e( f b,)}
+	c4.(-\offset X-offset -1 \mp^\solo d8) \tuplet 3/2 4 {e( f b,)}
 	b4( c) a8-. a-.
 	b4 g2->
 	R2.*5
@@ -298,8 +302,8 @@ musicOboeIIMvtIII = \relative c {
 	\ni \mmrPos #-4 R2.
 % Bars 266 to 270
 	\mmrPos #-4 R \no
-	des2.\ff\startTrillSpan
-	<< des\startTrillSpan {s4 s s8 s\stopTrillSpan}>> \mark \default
+	\trillSpanPadding #-1 des2.\ff\startTrillSpan
+	<< \noteHeadEsw #'(0 . 2) des\startTrillSpan {s4 s s8 s\stopTrillSpan}>> \mark \default
 	d!4-. r r
 	R2.*3
 % Bars 271 to 275
@@ -342,7 +346,7 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	a4(\f g f)
+	a4(-\offset X-offset -4 \f g f)
 	g( f ees)
 % Bars 306 to 310
 	f( ees d)
@@ -353,17 +357,13 @@ musicOboeIIMvtIII = \relative c {
 % Bars 311 to 315
 	f2.\>~
 	f\pp\fermata \mark \markAaBox
-	R2.*17
+	R2.*18
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
-	
-	
-	
-	R2.
 % Bars 331 to 335
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R
@@ -452,7 +452,7 @@ musicOboeIIMvtIII = \relative c {
 	d8-.\ff bes-. r4 r
 	R2.
 % Bars 406 to 410
-	\tuplet 3/2 4 {ees,8-.\ff\< g-. bes-.\!} ees2->
+	\tuplet 3/2 4 {ees,8-.-\offset X-offset -2.5 \ff\< g-. bes-.\!} ees2->
 	R2.
 	\tuplet 3/2 4 {ees,8-.\f\< g-. bes-.\!} ees2\ff
 	g,4-.\ff bes-. ees-.
@@ -462,7 +462,7 @@ musicOboeIIMvtIII = \relative c {
 	a, bes c
 	d c d
 	c2.\fermata
-	R2.*5
+	\textMark "Coda" R2.*5
 % Bars 416 to 420
 	
 	
@@ -477,9 +477,12 @@ musicOboeIIMvtIII = \relative c {
 	f4.( g8 a16[ bes r16. d,32-.)]
 % Bars 426 to 430
 	d4 r r
-	R2.*7
-% Bars 431 to 435
+	R2.*3
 	
+	
+	R2.
+% Bars 431 to 435
+	\mmrLength #12 \mmrnDown R2.*3
 	
 	
 	bes'2(\< ees4)
@@ -492,22 +495,22 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 441 to 445
 	
-	d,8\p d ees ees f f
-	f f ees ees  ees ees
-	d\< d d d g g
+	d,8\p d ees[ ees] f f
+	f[ f] ees ees  ees ees
+	d\< d d d g[ g]
 	a a a a a a\!
 % Bars 446 to 450
-	f\mf f g g c c
-	bes bes bes bes a a
+	f\mf f g[ g] c c
+	bes bes bes bes a[ a]
 	bes\< bes bes bes bes bes
 	c c c c c c\!
-	bes\f bes a a bes bes
+	bes\f bes a[ a] bes bes
 % Bars 451 to 455
 	e e e e e e
-	f f ees! ees d d
-	c c cis cis e e
-	f f ees! ees d d
-	c\ff c c c d d 
+	f f ees![ ees] d d
+	c c cis cis e[ e]
+	f f ees![ ees] d d
+	c\ff c c c d[ d] 
 % Bars 456 to 460
 	bes8. bes16 bes2
 	des8. des16 des2

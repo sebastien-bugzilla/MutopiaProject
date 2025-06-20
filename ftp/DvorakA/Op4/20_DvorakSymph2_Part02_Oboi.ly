@@ -43,17 +43,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4"
+			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4 — Oboi"
 		}
 		instrument = \markup {
-			"Oboi"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtI
-%			}
+			\new Voice {
+				\formatOboeIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtI
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtII
-%			}
+			\new Voice {
+				\formatOboeIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtII
 			}
@@ -91,7 +91,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.1 \bold 2.
 			}
 		}
 		\layout {
@@ -99,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtIII
-%			}
+			\new Voice {
+				\formatOboeIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtIII
 			}
@@ -115,7 +115,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.9 \bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -123,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtIV
-%			}
+			\new Voice {
+				\formatOboeIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtIV
 			}
@@ -139,7 +139,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1 \bold "4. Finale"
 			}
 		}
 		\layout {
@@ -147,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtI
-%			}
+			\new Voice {
+				\formatOboeIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
@@ -171,9 +171,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtII
-%			}
+			\new Voice {
+				\formatOboeIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
@@ -187,7 +187,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.5 \bold 2.
 			}
 		}
 		\layout {
@@ -195,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtIII
-%			}
+			\new Voice {
+				\formatOboeIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
@@ -211,7 +211,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.8 \bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -219,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtIV
-%			}
+			\new Voice {
+				\formatOboeIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
@@ -233,9 +233,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. Finale"
 			}
 		}
 		\layout {

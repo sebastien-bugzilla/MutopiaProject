@@ -47,7 +47,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4 — Flauti"
+			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4 — Flauti & Piccolo"
 		}
 		instrument = \markup {
 			""

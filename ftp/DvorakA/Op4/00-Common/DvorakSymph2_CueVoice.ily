@@ -364,15 +364,15 @@ cueVoicePiccoloMvtIV = \relative c {
 cueVoiceOboeIMvtI = \relative c {
 	s2*66
 	% bars 67 - 69
-	\voiceOne d''4\repeatTie^\markup {Viol.I.} ees8( f
+	\voiceOne d''4\repeatTie-\offset X-offset -1.5 ^\markup {Viol.I.} ees8( f
 	g-. ees-.) c4->(
 	c-> c->)
 	s2*53
 	% bars 123 - 126
-	ees2(\startTrillSpan^\markup {Fl.I.}
-	g\startTrillSpan
-	bes\startTrillSpan
-	des4.)\startTrillSpan c16(\stopTrillSpan bes)
+	\oneVoice \trillSpanPadding #-1.8 ees2(\startTrillSpan-\offset X-offset -4 ^\markup {Fl.I.}
+	\trillSpanPadding #-1.8 g\startTrillSpan
+	\trillSpanPadding #-1 bes\startTrillSpan
+	\trillSpanPadding #-1 des4.)\startTrillSpan c16(\stopTrillSpan bes)
 	s2*31
 	% bars 158 - 159
 	e,4.->^\markup {Viol.I.} c32( d e f)
@@ -381,7 +381,7 @@ cueVoiceOboeIMvtI = \relative c {
 	% bars 242 - 245
 	\transpose c bes {
 		\relative c' {
-			f8-.^\markup {Cl.B} e16( f \tuplet 3/2 4 {d8 cis d)}
+			\voiceOne f8-.^\markup {Cl.B} e16( f \tuplet 3/2 4 {d8 cis d)}
 			f-. e16( f \tuplet 3/2 4 {d8 cis d)}
 			f-. e16( f \tuplet 3/2 4 {d8 cis d)}
 			f-. e16( f \tuplet 3/2 4 {d8 cis d)}
@@ -389,21 +389,21 @@ cueVoiceOboeIMvtI = \relative c {
 	}
 	s2*98
 	% Bars 344 - 345
-	dis2(~^\markup {Fl.I.}
+	\oneVoice dis2(~-\offset X-offset -4.5 ^\markup {Fl.I.}
 	dis4 cis8) r
 	s2*70
 	% Bars 416 - 419
-	bes,8(^\markup {Cl.I.} c16 d \tuplet 3/2 4 {ees8 f g)}
+	\voiceOne bes,8(-\offset X-offset -3 ^\markup {Cl.I.} c16 d \tuplet 3/2 4 {ees8 f g)}
 	bes,( c16 d \tuplet 3/2 4 {ees8 f g)}
 	bes,( c16 d \tuplet 3/2 4 {ees8 f g)}
 	bes,( c16 d \tuplet 3/2 4 {ees8 f g)}
 	s2*187
 	% Bars 607 - 608
-	a4(^\markup {Viol.I} f)
+	a4(-\offset X-offset -4 ^\markup {Viol.I} f)
 	d'4.( c8)
 	s2*58
 	% Bars 667 - 670
-	d,,2(^\markup {Viol.I.}
+	\shape #'((0 . 2.3)(0 . -0.7)(0 . -0.7)(0 . 2.3)) Slur d,,2(^\markup {Viol.I.}
 	f
 	bes4 f
 	ees4. c8)
@@ -425,41 +425,41 @@ cueVoiceOboeIMvtII = \relative c {
 cueVoiceOboeIMvtIII = \relative c {
 	s2.*59
 	% Bars 60 - 62
-	\voiceOne c''8[\repeatTie^\markup {Viol.I.} r16 c]-. c2~
+	\voiceOne c''8[\repeatTie-\offset X-offset -5 ^\markup {Viol.I.} r16 c]-. c2~
 	c8[ r16 c-.] c2~
 	c8[ r16 c-.] c2
 	s2.*30
 	% Bars 93 - 96
-	c'4->(\fz^\markup {Viol.I.} bes) ees,8.( g16)
+	c'4->(\fz-\offset X-offset -5 ^\markup {Viol.I.} bes) ees,8.( g16)
 	g4->\fz( f) bes,8.( c'16)
 	c4->\fz( bes) ees,8.( g16)
 	g4->\fz( f) bes,8.( d'16)
 	s2.*96
 	% Bars 193 - 194
-	cis2.^\markup {Fl.I.}
+	cis2.-\offset X-offset -3 ^\markup {Fl.I.}
 	cis8. a16 a8 r r4
 	s2.*50
 	% Bars 245 - 246
-	d16(^\markup {Fl.I.} e fis8) cis-. cis-. d4->
+	\oneVoice d16(-\offset X-offset -3.5 ^\markup {Fl.I.} e fis8) cis-. cis-. d4->
 	d16( e fis8) cis-. cis-. d4->
 	s2.*18
 	% Bars 265 - 266
-	\tuplet 3/2 4 {r8^\markup {Fl.I.} f,( ges aes bes ces des f aes)
+	\tuplet 3/2 4 { r8-\offset X-offset -1.5 ^\markup {Fl.I.} f,( ges aes bes ces des f aes)
 	bes( aes ges f ees des ces bes aes)}
 	s2.*61
 	% Bars 328 - 329
-	c,8[^\markup {Viol.I.} r16 c-.] c2~
+	\voiceOne c,8[^\markup {Viol.I.} r16 c-.] c2~
 	c8[ r16 c-.] c2\laissezVibrer
 	s2.*90
 	% Bars 420 - 422
-	bes'4(\>^\markup {Fl.I.} a g
+	\oneVoice bes'4(\>-\offset X-offset -3 ^\markup {Fl.I.} a g
 	c8[ r16 c] c2)\!
 	d4.(\pp ees8 f16[ g r16. c,32-.])
 }
 cueVoiceOboeIMvtIV = \relative c {
 	s1*31
 	% Bars 32 - 33
-	\voiceOne ees'''2\fz~^\markup {Viol.I.} ees8 d( c b)
+	\voiceOne ees'''2\fz~-\offset X-offset -4 ^\markup {Viol.I.} ees8 d( c b)
 	c2 d4. ees8
 	s1*33
 	% Bars 67 - 73
@@ -476,12 +476,12 @@ cueVoiceOboeIMvtIV = \relative c {
 	aes'2(~ aes8 ges f ees)
 	s1*44
 	% Bars 201 - 203
-	c'4-.\pp^\markup {Fl.I.} r b8.-. c16-. des4-.
+	\oneVoice c'4-.\pp^\markup {Fl.I.} r b8.-. c16-. des4-.
 	c r r2
 	f4-. r e8.-. f16-. ges4-.
 	s1*98
 	% Bars 302 - 303
-	r2^\markup {Fl.I.} ees,\p(
+	\voiceOne r2^\markup {Fl.I.} ees,\p(
 	\tuplet 3/2 2 {f4 ees bes'} aes2)
 	s1*93
 	% Bars 397 - 399
@@ -498,24 +498,24 @@ cueVoiceOboeIIMvtI = \relative c {
 	ges8 des( des' ces16 bes)
 	s2*16
 	% bars 67 - 69
-	d,4\repeatTie^\markup {Viol.I.} ees8( f
+	d,4\repeatTie-\offset X-offset -1 ^\markup {Viol.I.} ees8( f
 	g-. ees-.) c4->(
 	c-> c->)
 	s2*53
 	% bars 123 - 126
-	ees2(\startTrillSpan^\markup {Fl.I.}
-	g\startTrillSpan
-	bes\startTrillSpan
-	des4.)\startTrillSpan c16(\stopTrillSpan bes)
+	\oneVoice \trillSpanPadding #-1.5 ees2(\startTrillSpan-\offset X-offset -3 ^\markup {Fl.I.}
+	\trillSpanPadding #-1.5 g\startTrillSpan
+	\trillSpanPadding #-1 bes\startTrillSpan
+	\trillSpanPadding #-1 des4.)\startTrillSpan c16(\stopTrillSpan bes)
 	s2*31
 	% bars 158 - 159
-	e,4.->^\markup {Viol.I.} c32( d e f)
+	\voiceOne e,4.->-\offset X-offset -5 ^\markup {Viol.I.} c32( d e f)
 	g8-. \tuplet 3/2 8 {g16( a b} c8-.) \tuplet 3/2 8 {c16( d e)}
 	s2*82
 	% bars 242 - 245
 	\transpose c bes {
 		\relative c' {
-			f8-.^\markup {Cl.B} e16( f \tuplet 3/2 4 {d8 cis d)}
+			f8-.-\offset X-offset -3 ^\markup {Cl.B} e16( f \tuplet 3/2 4 {d8 cis d)}
 			f-. e16( f \tuplet 3/2 4 {d8 cis d)}
 			f-. e16( f \tuplet 3/2 4 {d8 cis d)}
 			f-. e16( f \tuplet 3/2 4 {d8 cis d)}
@@ -523,31 +523,31 @@ cueVoiceOboeIIMvtI = \relative c {
 	}
 	s2*66
 	% bars 312 - 313
-	e,2(^\markup {Ob.I.}
+	e,2(-\offset X-offset -3 ^\markup {Ob.I.}
 	g8 f c d)
 	s2*30
 	% Bars 344 - 345
-	dis'2(~^\markup {Fl.I.}
+	dis'2(~-\offset X-offset -4 ^\markup {Fl.I.}
 	dis4 cis8) r
 	s2*24
 	% bars 370 - 371
-	bes,16(^\markup {Ob.I.} c d ees f8) r
-	c16(^\markup {Cl.I.} d ees f g8) r
+	bes,16(-\offset X-offset -3.5 ^\markup {Ob.I.} c d ees f8) r
+	c16(-\offset X-offset -3 ^\markup {Cl.I.} d ees f g8) r
 	s2*44
 	% Bars 416 - 419
-	bes,8(^\markup {Cl.I.} c16 d \tuplet 3/2 4 {ees8 f g)}
+	bes,8(-\offset X-offset -3 ^\markup {Cl.I.} c16 d \tuplet 3/2 4 {ees8 f g)}
 	bes,( c16 d \tuplet 3/2 4 {ees8 f g)}
 	bes,( c16 d \tuplet 3/2 4 {ees8 f g)}
 	bes,( c16 d \tuplet 3/2 4 {ees8 f g)}
 	s2*187
 	% Bars 607 - 610
-	a4(^\markup {Viol.I} f)
+	\oneVoice a4(^\markup {Viol.I} f)
 	d'4.( c8)
 	a4. f32( g a bes
 	c8) \tuplet 3/2 8 {c16( d ees} d8) r
 	s2*60
 	% bar 671
-	<>^\markup {Oboe I.}
+	\voiceOne <>-\offset X-offset -3 ^\markup {Oboe I.}
 	s2*10
 	% Bars 681 - 683
 	d,4\repeatTie^\markup {Cl.I} r8 f(
@@ -557,7 +557,7 @@ cueVoiceOboeIIMvtI = \relative c {
 cueVoiceOboeIIMvtII = \relative c {
 	s1.*20
 	% Bars 21 - 22
-	\voiceOne d''2.\p^\markup {Viol.I.} g4( f8 ees d c
+	\voiceOne d''2.\p-\offset X-offset -1 ^\markup {Viol.I.} g4( f8 ees d c
 	d4.) bes4\<( f8 aes4.)\! g8(\> ees c)\!
 	s1.*12
 	% Bars 35 - 36
@@ -569,58 +569,57 @@ cueVoiceOboeIIMvtII = \relative c {
 	c4.( aes4 ees8) ges4.( f8 des bes)
 	s1.*11
 	% bar 70
-	c''4.(^\markup {Fl.I.} f2.~ f8 ees bes)
+	\oneVoice \shape #'((0 . -0.5)(0 . 0)(0 . 0)(0 . -0.5)) Slur c''4.(-\offset X-offset -3.5 ^\markup {Fl.I.} f2.~ f8 ees bes)
 	s1.*25
 	% bar 96
-	cis,4.(^\markup {Ob.I.} fis2.~ fis8 e b)
+	\voiceOne cis,4.(-\offset X-offset -3.5 ^\markup {Ob.I.} fis2.~ fis8 e b)
 	s1.*18
 	% Bar 115
 	d4.(^\markup {Viol.I.} bes4 f8) aes4.( g8 ees c)
 	s1.*6
 	% bar 122
-	r2.^\markup {Ob.I.} r4 r8 a'16(-. a-. c-. c-. f-. f-.)
+	r2.^\markup {Cl.I.} r4 r8 a'16(-. a-. c-. c-. f-. f-.)
 }
 cueVoiceOboeIIMvtIII = \relative c {
 	s2.*62
 	% Bars 63 - 66
-	\voiceOne 
-	a'''2(^\markup {Ob.I.} g8 f
+	\oneVoice a'''2(^\markup {Ob.I.} g8 f
 	a2) g8( f
 	a2) g8( f
 	a2.)\fermata
 	s2.*26
 	% Bars 93 - 96
-	c4->(\fz^\markup {Viol.I.} bes) ees,8.( g16)
+	\voiceOne c4->(\fz-\offset X-offset -5 ^\markup {Viol.I.} bes) ees,8.( g16)
 	g4->\fz( f) bes,8.( c'16)
 	c4->\fz( bes) ees,8.( g16)
 	g4->\fz( f) bes,8.( d'16)
 	s2.*96
 	% Bars 193 - 194
-	cis2.^\markup {Fl.I.}
+	cis2.-\offset X-offset -3 ^\markup {Fl.I.}
 	cis8. a16 a8 r r4
 	s2.*50
 	% Bars 245 - 246
-	d16(^\markup {Fl.I.} e fis8) cis-. cis-. d4->
+	\oneVoice d16(-\offset X-offset -4 ^\markup {Fl.I.} e fis8) cis-. cis-. d4->
 	d16( e fis8) cis-. cis-. d4->
 	s2.*18
 	% Bars 265 - 266
-	\tuplet 3/2 4 {r8^\markup {Fl.I.} f,( ges aes\< bes ces des f aes\!)
+	\tuplet 3/2 4 {r8-\offset X-offset -1.5 ^\markup {Fl.I.} f,( ges aes\< bes ces des f aes\!)
 	bes(\f aes ges f ees des ces bes aes)}
 	s2.*64
 	% Bars 331 - 334
-	a2(^\markup {Ob.I.} g8 f
+	a2(-\offset X-offset -4 ^\markup {Ob.I.} g8 f
 	a2) g8( f
 	a2) g8( f
 	a2.)\fermata
 	s2.*26
 	% bars 361 - 364
-	c4(->^\markup {Viol.I.} bes) ees,8.( g16)
+	\voiceOne c4(->-\offset X-offset -5 ^\markup {Viol.I.} bes) ees,8.( g16)
 	g4(-> f) bes,8.( c'16)
 	c4->( bes) ees,8.( g16)
 	g4(-> f) bes,8.( d'16)
 	s2.*55
 	% Bars 420 - 422
-	bes4(\>^\markup {Fl.I.} a g
+	\oneVoice bes4(\>-\offset X-offset -2.5 ^\markup {Fl.I.} a g
 	c8[ r16 c] c2)\!
 	d4.(\pp ees8 f16[ g r16. c,32-.])
 }
@@ -635,7 +634,7 @@ cueVoiceOboeIIMvtIV = \relative c {
 	<>^\markup {Oboe I.}
 	s1*8
 	% bars 85 - 88
-	f2.(\f\<^\markup {Ob.I.} g16 a bes c)\!
+	f2.(\f\<-\offset X-offset -3 ^\markup {Ob.I.} g16 a bes c)\!
 	d2 c4. f,8(
 	bes2) a4. d,8(
 	g2) f4. c8
@@ -652,12 +651,12 @@ cueVoiceOboeIIMvtIV = \relative c {
 	bes r r2
 	s1*55
 	% bars 263 - 265
-	bes2.(^\markup {Ob.I.} \tuplet 5/4 4 {fis16 g a bes c}
+	\oneVoice bes2.(-\offset X-offset -4 ^\markup {Ob.I.} \tuplet 5/4 4 {fis16 g a bes c}
 	d4. c8) bes4-. a-.
 	bes2. r4
 	s1*48
 	% Bars 314 - 315
-	r2^\markup {Ob.I.} a,!(
+	\voiceOne r2^\markup {Ob.I.} a,!(
 	\tuplet 3/2 2 {b4 a f'} e2)
 	s1*40
 	% Bars 356 - 357

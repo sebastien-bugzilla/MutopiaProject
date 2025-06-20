@@ -436,7 +436,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 411 to 415
 	b\!
 	e,2\f \partCombineApart dis4. e8 \partCombineAutomatic
-	e2. \partCombineApart \tuplet 5/4 4 {b16( cis dis eis fis)} \partCombineAutomatic % eis to check
+	e2. \partCombineApart \tuplet 5/4 4 {b16( cis dis e fis)} \partCombineAutomatic 
 	g4.-> f!8 e!4-> d!->
 	e2..-> e8
 % Bars 416 to 420

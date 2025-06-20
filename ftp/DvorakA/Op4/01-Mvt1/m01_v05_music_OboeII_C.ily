@@ -335,7 +335,7 @@ musicOboeIIMvtI = \relative c {
 	g~\>
 	<< g {s8 s s s\!}>>
 % Bars 306 to 310
-	a8 r r4
+	c8 r r4
 	R2*7
 	
 	
@@ -547,7 +547,7 @@ musicOboeIIMvtI = \relative c {
 	
 	
 	\mark \default
-	\tuplet 3/2 4 {g'8(\f f g} f4)
+	\tuplet 3/2 4 {g'8(\f f! g} f4)
 	\tuplet 3/2 4 {g8( f g} f4)
 % Bars 506 to 510
 	\tuplet 3/2 4 {g8( f g} f4)
