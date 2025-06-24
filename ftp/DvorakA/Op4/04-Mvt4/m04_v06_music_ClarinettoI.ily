@@ -12,11 +12,11 @@ musicClarinettoIMvtIV = \relative c {
 	R1*3
 	
 	
-	fis1->\fp
+	fis1^>\fp
 	R
 % Bars 6 to 10
-	fis->\fp
-	r2 fis\pp->
+	fis^>\fp
+	r2 fis\pp^>
 	r fis->
 	r fis->
 	r fis->
@@ -49,7 +49,7 @@ musicClarinettoIMvtIV = \relative c {
 	bes4-> bes8_\crescmarkup bes bes4-> bes8 bes
 	a4-> a8 a d4-> d8 d
 	des4-> des8 des des4-> des8 des
-	c2->\ff d->
+	c2->\ff d!->
 % Bars 36 to 40
 	e-> f-> \mark \default
 	gis2.\ff~ gis8 fis-.
@@ -79,7 +79,7 @@ musicClarinettoIMvtIV = \relative c {
 	b, d\<
 	e << f!) {s4 s\!}>>
 	g1\fz\>~
-	<< g~ {s4 s\! s s}>>
+	<< g~ {s4 s s s\!}>>
 % Bars 61 to 65
 	g1\p
 	b4(\< d g f)\!
@@ -130,14 +130,14 @@ musicClarinettoIMvtIV = \relative c {
 	f2 e4. e8
 	c2-> b->
 	a-> b->
-	c-> << { e!4. d8 } \\ { \InCueContext f2}>>
-	b,2.\ff~ b8 a-.
+	c-> << { \InCueContext f2 } \\ {e!4. d8 }>>
+	\textMark "Vi-" b2.\ff^~ b8 a-.
 % Bars 106 to 110
-	b2.~ b8 a-.
+	b2.^~ b8 a-.
 	b4. a8 a4. g8
 	g4. a8 a4. b8
-	b2.~ b8 a-.
-	b2.~ b8 a-.
+	b2.^~ b8 a-.
+	b2.^~ b8 a-.
 % Bars 111 to 115
 	g1\brack\mf~
 	g~
@@ -149,7 +149,7 @@ musicClarinettoIMvtIV = \relative c {
 	g!-> f->
 	e-> g->
 	a a
-	b a \mark \default
+	b a \textEndMark "-de" \mark \default
 % Bars 121 to 125
 	e'2.\ff d4-.
 	g-. e2->( d4)
@@ -227,11 +227,11 @@ musicClarinettoIMvtIV = \relative c {
 	ais b e gis)\!
 	cis2->(\ff b->)
 	dis,( gis4. fis8-.)
-	fis2\fz~ fis8 cis( e8.) dis16-.
+	fis2\fz~ fis8[ cis( e8.) dis16-.]
 % Bars 186 to 190
-	dis2\fz~ dis8 fis,( cis'8.) b16-.
-	b2\fz~ b8 dis,( gis8.) fis16-.
-	fis2\fz~ fis8 a,( cis8.) b16-.
+	dis2\fz~ dis8[ fis,( cis'8.) b16-.]
+	b2\fz~ b8[ dis,( gis8.) fis16-.]
+	fis2\fz~ fis8[ a,( cis8.) b16-.]
 	aes'4->\ff ees-> aes4.-> bes8-.
 	c4.-> des8-. ees4.-> e8-.
 % Bars 191 to 195
@@ -304,7 +304,7 @@ musicClarinettoIMvtIV = \relative c {
 	e'1\f~
 	e2 c
 	<< g'2.\f {s4 s\> s}>> g16( f e d
-	\tuplet 3/2 2 {c4-.) e-. c-.\! a-. c-. a-.}
+	\tuplet 3/2 2 {\once \tupletUp c!4-.) e-. c-.\! a-. c-. a-.}
 	g2.\p g16( f e d
 % Bars 251 to 255
 	\tuplet 3/2 2 {c4-.) e-. c-. a-. c-. a-.
@@ -349,7 +349,7 @@ musicClarinettoIMvtIV = \relative c {
 	\tuplet 3/2 2 {cis4(\p d g e f c'!)
 % Bars 291 to 295
 	cis,( d g e f c'!)}
-	r2 f,,,2\pp~
+	r2 f,,,2-\offset X-offset -2 \pp~
 	f1
 	bes\pp~
 	bes~
@@ -373,9 +373,9 @@ musicClarinettoIMvtIV = \relative c {
 	R1*2
 	
 % Bars 316 to 320
-	r2 b(
+	r2 b!(
 	\tuplet 3/2 2 {cis4 b gis'} fis2)
-	r2 \tuplet 3/2 2 {g,4\mf c d}
+	r2 \tuplet 3/2 2 {\once \tupletUp g,!4\mf c d}
 	e8[(\< c a'8.) g16]-.\! g2
 	r \tuplet 3/2 2 {g,4 c d}
 % Bars 321 to 325
@@ -445,13 +445,13 @@ musicClarinettoIMvtIV = \relative c {
 	c2. ees4-.
 	d1-^\fz
 % Bars 376 to 380
-	c'\startTrillSpan\ff
-	c\startTrillSpan
-	<< c\startTrillSpan {s4 s s s\stopTrillSpan}>>
+	\trillSpanPadding #-1 c'\startTrillSpan\ff
+	\trillSpanPadding #-1 c\startTrillSpan
+	<< \trillSpanPadding #-1 c\startTrillSpan {s4 s s s\stopTrillSpan}>>
 	f,1->\fz
-	<< c,\fp\<( {s4 s s_\dimmarkup s\!}>>
+	<< c,-\offset X-offset -1.5 \fp\<( {s4 s s^\dimmarkup s}>>
 % Bars 381 to 385
-	d1)
+	d1)\!
 	c(
 	d)
 	gis2(\p a
@@ -501,7 +501,7 @@ musicClarinettoIMvtIV = \relative c {
 	g!4.\p g8 \tuplet 3/2 2 {g4( f! e)}
 	e2( f!4) r
 % Bars 426 to 430
-	cis,1~
+	\startMeasureCount cis,1~
 	cis~
 	cis~
 	<< cis~ {s4 s_\crescendo s s}>>
@@ -509,18 +509,18 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 431 to 435
 	cis~
 	cis~
-	cis
+	cis \stopMeasureCount
 	b~
 	b
 % Bars 436 to 440
-	b'2^~ b8 fis( a8. gis16)-.
-	gis2~ gis8 b,( fis'8. e16-.)
-	e2~ e8 gis,8( cis8. b16-.)
-	b2~ b8 dis( fis8. e16-.) \mark \default
+	b'2^~ b8[ fis( a8. gis16)-.]
+	gis2~ gis8[ b,( fis'8. e16-.)]
+	e2~ e8[ gis,8( cis8. b16-.)]
+	b2~ b8[ dis( fis8. e16-.)] \mark \default
 	cis4\f gis cis4.-> dis8-.
 % Bars 441 to 445
 	eis4.-> fis8-. gis4.-> a8-.
-	b4.-> cis8-. d4 r
+	b4.-> cis8-. d!4 r
 	cis, cis'8( cis,) cis'( cis,) r cis
 	cis2(~ cis8 gis cis dis
 	eis cis eis fis gis eis gis a)
@@ -539,12 +539,12 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 456 to 460
 	a-> a->
 	a-> r
-	a1->~
+	\startMeasureCount a1->~
 	a~
 	a~
 % Bars 461 to 465
 	a~
-	a~
+	a~ \stopMeasureCount
 	a4 a-> a-> a-> \mark \default
 	gis r r2
 	R1*3
@@ -581,7 +581,7 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 491 to 495
 	
 % Bars 496 to 500
-	\tuplet 3/2 2 {gis4\ff gis gis gis gis gis
+	\tuplet 3/2 2 {gis4-\offset X-offset -1 \ff gis gis gis gis gis
 	fis fis fis fis fis fis
 	gis gis gis gis gis gis
 	fis fis fis fis fis fis}

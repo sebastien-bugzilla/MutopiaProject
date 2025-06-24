@@ -18,7 +18,7 @@ musicClarinettoIIMvtII = \relative c {
 	
 	
 	
-	c4.\p( gis a gis4.)
+	\shape #'((0 . 0)(1 . 0.5)(-1 . 0.8)(0 . 0)) Slur c4.\p( gis a gis4.)
 	a2.~ a4. a
 % Bars 11 to 15
 	d\pp bes2.~\< bes4.\!
@@ -28,12 +28,12 @@ musicClarinettoIIMvtII = \relative c {
 	e4.(\p d\<  c b!)\!
 % Bars 16 to 20
 	<< { c( b e dis)} {s s\< s s\!}>>
-	e2.(\fz\> d4. a)\!
+	e2.(\fz\> d!4. a)\!
 	g'\pp( dis e~ e)
-	<< {c2. c\f } {s4.\< s\! s\> s4 s8\!}>>
+	<< {c2.~ c-\offset X-offset -1 \f } {\hairpinShorten #'(0 . -1) s4.\< s\! s\> s4 s8\!}>>
 	e4.( d c dis)\fz
 % Bars 21 to 25
-	e2.(\p d4. d8 c b!)
+	e2.(\p d!4. d8 c b!)
 	<< {e2.( e4. f} {s4.\< s8 s s\! s4.\> s\!}>> \mark \default
 	e8) r r e'4.\pp r4 r8 dis4.
 	r4 r8 << b2.\fz\> {s4.\> s4 s8\!}>> r4 r8
@@ -59,14 +59,14 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 41 to 45
 	r4 r8 f4.\mf e~ e4 r8
 	r4 r8 a,2.~_\dimmarkup a4 r8
-	r4 r8 bes4.\p r4 r8\> g4.\!
-	r4 r8 a'4.-> a-> a->
+	r4 r8 bes4.\p r4 \hairpinShorten #'(0 . -1.5) r8\> g4.\!
+	r4 r8 a'4.->\pp a-> a->
 	bes8 r r r4 r8 r2.
 % Bars 46 to 50
 	R1.*3
 	
 	
-	f,4.\pp~ f8 r r r2.
+	f,4.-\offset X-offset -2 \pp~ f8 r r r2.
 	g4.\pp~ g8 r r r2.
 % Bars 51 to 55
 	R1.*3
@@ -130,7 +130,7 @@ musicClarinettoIIMvtII = \relative c {
 	d( c!)
 % Bars 101 to 105
 	c8 r r r4 r8 b r r r4\fermata r8 \mark \default
-	c,4.(\p gis a b)
+	\shape #'((0 . 0)(1 . 0.5)(-1 . 0.8)(0 . 0)) Slur c,4.(\p gis a b)
 	c4 r8 r4 r8 r2.
 	d4.\pp bes2.~ bes4.~
 	bes4.( a\< g\> c)\!
@@ -155,33 +155,33 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 121 to 125
 	e4.)\p r4 r8 r2.
 	r r4 r8 g,16(\pp-. g-. b-. b-. d-. d)-. 
-	R1.
-	R1. \mark \default
-	\voiceTwo r2. \oneVoice r4 r8 aes,16(\p-. aes-. c-. c-. ees-. ees)-.
+	R1.*2
+	\mark \default
+	\voiceTwo r2. \oneVoice r4 r8 aes,16(-\offset X-offset 0.5 \p-. aes-. c-. c-. ees-. ees)-.
 % Bars 126 to 130
 	R1.*2
 	
 	r8 r g,16(\p-. f-.) r8 r g16(-. f-.) r8 r g16(-. f-.) r8 r g16-.( f-.)
 	r2. a'8->\ff gis-> a-> gis-> a-> gis->
-	r4 r8 e,4.->\p r2.
+	r4 r8 e,4.->-\offset X-offset -1.6 \p r2.
 % Bars 131 to 135
-	r4 r8 << e'2.\fz {s4.\> s4 s8\!}>> r4 r8
-	r4 r8 << f2.\fz {s4.\> s4 s8\!}>> r4 r8
-	r4 r8 << a2.\fz {s4.\> s4 s8\!}>> r4 r8
-	r4 r8 << gis2.\fz {s4.\> s4 s8\!}>> r4 r8
-	a8\fp r r r4 r8 a4.\pp r4 r8
+	\textMark "Vi-" r4 r8 << e'2.\fz {\hairpinShorten #'(-0.3 . -1.5) s4.\> s4 s8\!}>> r4 r8
+	r4 r8 << f2.\fz {\hairpinShorten #'(-0.3 . -1.5) s4.\> s4 s8\!}>> r4 r8
+	r4 r8 << a2.\fz {\hairpinShorten #'(-0.3 . -1.5) s4.\> s4 s8\!}>> r4 r8
+	r4 r8 << gis2.\fz {\hairpinShorten #'(-0.3 . -1.5) s4.\> s4 s8\!}>> r4 r8
+	a8\fp r r r4 r8 a4.\pp r4 r8 \textEndMark "-de"
 % Bars 136 to 140
 	R1.*2
 	
 	\ni \mmrPos #4 R1. \no
 	a8\ff r r r4 r8 gis8 r r r4 r8 \mark \default
-	R1.
+	\offset X-offset 2.7 \textMark "Vi-" \mmrLength #12 R1.
 % Bars 141 to 145
 	e,4.->\brack\pp~ e4 r8 r2.
 	c'16(-.\pp b-. a8-. e-.) r4 r8 r2.
 	e''16\f d c8 b d16 c b8 a d16 c b8 a c16 b a8 gis
 	r4 r8 r r ais16. b32 b16 r r8 ais16. b32 b16 r r8 ais16. dis32
-	dis2.\ff gis,\fz
+	dis2.\ff gis,\fz \textEndMark "-de"
 % Bars 146 to 150
 	a!8\p r r r4 r8 r2.
 	R1.*3

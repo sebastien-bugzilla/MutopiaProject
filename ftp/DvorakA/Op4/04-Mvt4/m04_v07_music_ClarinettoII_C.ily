@@ -579,7 +579,7 @@ musicClarinettoIIMvtIV = \relative c {
 	
 % Bars 496 to 500
 	\tuplet 3/2 2 {e4\ff e e e e e
-	d d d d d d 
+	dis dis dis dis dis dis  % d => dis based on part score and global harmony
 	e e e e e e
 	dis dis dis dis dis dis}
 	gis,2 a8. b16 cis!4

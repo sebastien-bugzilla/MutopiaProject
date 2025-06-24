@@ -101,7 +101,7 @@ musicClarinettoIIMvtIII = \relative c {
 	r g4.(\> c8)\!
 	b16(\fz c b c b8) r r4
 	r g4.(\> c8)\!
-	d2(~\p\< d8 b)
+	d2(~\p\< d8 b)  % c => b based on conductor score and faggots + Clar I
 	b4( g4. c8)\!
 % Bars 91 to 95
 	d2\mf\<(~ d8 b)\!
@@ -201,10 +201,10 @@ musicClarinettoIIMvtIII = \relative c {
 	a\!
 % Bars 171 to 175
 	R2.
-	<< a2. {s4\p\< s s\!}>>
+	<< a2. {\hairpinShorten #'(0 . -1.5) s4-\offset X-offset -1 \p\< s s\!}>>
 	R2.
-	<< a2. {s4\p\< s s\!}>>
-	R2.*4^\mutaina \transposition a
+	<< a2. {\hairpinShorten #'(0 . -1.5) s4-\offset X-offset -1 \p\< s s\!}>>
+	\mmrLength #14 R2.*4^\mutaina \transposition a
 % Bars 176 to 180
 	
 	
@@ -245,7 +245,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 206 to 210
 		f8. d16 d8 r r4
 		\tuplet 3/2 4 {bes8(\pp c d)} a8-. a-. bes4->
-		\tuplet 3/2 4 {bes8(_\crescmarkup\< c d)} a-. a-. bes4->\!
+		\tuplet 3/2 4 {\once \tupletUp bes8(_\crescmarkup\< c d)} a-. a-. bes4->\!
 		\tuplet 3/2 4 {c8(\< d ees)} b!-. b-. c4->\!
 		\tuplet 3/2 4 {c8( d ees)} b8-. b-. c4
 % Bars 211 to 215
@@ -286,7 +286,7 @@ musicClarinettoIIMvtIII = \relative c {
 	d16( e f8) cis8-. cis-. d4->
 % Bars 246 to 250
 	d16( e f8) cis8-. cis-. d4-> \mark \default
-	R2.*4^\mutainb \transposition bes
+	\mmrLength #17 R2.*4-\offset X-offset 0.5 ^\mutainb \transposition bes
 % Bars 251 to 255
 	\ni \mmrPos #-4 R2. 
 	\mmrPos #-4 R
@@ -301,12 +301,12 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 261 to 265
 	
 	
-	\tuplet 3/2 4 {r8 bes,!( c des\< ees f g bes des)\!
+	\tuplet 3/2 4 {r8 bes,!( c des\< ees f \once \tupletUp g bes des)\!
 	ees(\fz des c\> bes aes g f ees des)\!
-	r bes( c des\< ees f g bes des\!)
+	r bes( c des\< ees f \once \tupletUp g bes des\!)
 % Bars 266 to 270
 	ees\f( des c bes aes g f ees des)}
-	g2.\ff\startTrillSpan
+	\trillSpanPadding #-1 g2.\ff\startTrillSpan
 	<< g\startTrillSpan {s4 s s\stopTrillSpan }>> \mark \default
 	c4-. r r
 	R2.*3
@@ -346,8 +346,8 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 306 to 310
 	g( f e)
 	d( c b)
-	a(\> g f)\!
-	g2.\p
+	\shape #'((0 . 0)(0 . 0.4)(0 . 0.4)(0 . 0)) Slur a(\> g f)\!
+	g2.-\tweak extra-offset #'(0 . 0.2) \p
 	g8. g16 g8 r r4
 % Bars 311 to 315
 	g8.\> g16 g8\! r r4
@@ -464,7 +464,7 @@ musicClarinettoIIMvtIII = \relative c {
 	e'4\brack\ff e g
 	g g g
 	g2.\fermata
-	c4.(\p d8 e16[ f r16. b,32-.)]
+	\textMark "Coda" c4.(\p d8 e16[ f r16. b,32-.)]
 % Bars 416 to 420
 	b4(-> c-> a8-. a-.)
 	b4-> g2->
@@ -478,9 +478,13 @@ musicClarinettoIIMvtIII = \relative c {
 	c4.( d8 e16[ f r16. b,32-.])
 	b4 r r
 % Bars 426 to 430
-	R2.*8
-% Bars 431 to 435
+	\mmrLength #15 \mmrnDown R2.*4
 	
+	
+	
+	R2.
+% Bars 431 to 435
+	\mmrLength #12 \mmrnDown R2.*3
 	
 	
 	g4(\< a f
@@ -498,15 +502,15 @@ musicClarinettoIIMvtIII = \relative c {
 	g[\< g g g] a a
 	b[ b b b] b b\!
 % Bars 446 to 450
-	c[\mf c] c[ c] g' g
-	g[ g] f[ f] f f
+	c[\mf c c c] g' g
+	g[ g] f f f f
 	e\< e e e e e
 	g g g g g g\!
 	g[\f g] f[ f] e e
 % Bars 451 to 455
 	a a a a a a 
 	g[ g] f[ f] g g
-	a[ a] a[ a] a a
+	a a a a a a
 	bes[ bes] a[ a] g g
 	a[\ff a a a] g g
 % Bars 456 to 460

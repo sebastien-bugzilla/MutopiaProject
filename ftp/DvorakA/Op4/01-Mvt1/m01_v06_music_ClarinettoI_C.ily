@@ -456,7 +456,7 @@ musicClarinettoIMvtI = \relative c {
 	fis8 r r4 \mark #11
 	R2
 % Bars 391 to 395
-	\partCombineApart \tuplet 3/2 4 {g,8(_\p a b c d e)}
+	\partCombineApart \tuplet 3/2 4 {g,8(_\p_\> a b c d e)\!}
 	f4.(_\fz_\> e8\!)
 	d4.-> c8-. \partCombineAutomatic
 	g-.\f a16( g) \tuplet 3/2 4 {g,8( fis g)}
@@ -476,7 +476,7 @@ musicClarinettoIMvtI = \relative c {
 	
 % Bars 411 to 415
 	
-	c8-.\p-\offset X-offset #-5 ^\solo( d16\< e \once \tupletUp \tuplet 3/2 4 {f8 g a)\!}
+	c8-.\p-\offset X-offset #-5 ^\solo d16\<( e \once \tupletUp \tuplet 3/2 4 {f8 g a)\!}
 	g4.( e8)
 	c-. d16(\< e \once \tupletUp \tuplet 3/2 4 {f8 g a)\!}
 	g4.(\> e8)\!
@@ -700,7 +700,7 @@ musicClarinettoIMvtI = \relative c {
 	\stemUp f~
 	f \partCombineAutomatic \mark \default
 % Bars 611 to 615
-	c2~
+	c2\ff~  % ff according to all other voices
 	c8 g-. e-. g-.
 	\tuplet 3/2 4 {c( g e g bes d)
 	c( g e g bes d)}

@@ -286,13 +286,13 @@ musicClarinettoIMvtIII = \relative c {
 	f16( g a8) e8-. e-. f4->
 % Bars 246 to 250
 	f16( g a8) e8-. e-. f4-> \mark \default
-	R2.*4^\mutainb \transposition bes
+	\mmrLength #16 R2.*4^\mutainb \transposition bes
 % Bars 251 to 255
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no \section
-	bes,2.\pp~
+	bes,2.\pp~^\inb
 % Bars 256 to 260
 	bes~
 	bes~
@@ -301,12 +301,12 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 261 to 265
 	
 	
-	\tuplet 3/2 4 {r8 g( aes bes\< c des ees g bes)\!
-	c(\fz bes aes\> g f ees des c bes)\!  % bes according to part score
-	r g( aes bes\< c des ees g bes)\!
+	\tuplet 3/2 4 {r8 g( aes \once \tupletUp bes\< c des ees g bes)\!
+	c(\fz bes aes\> g f ees \once \tupletUp des c bes)\!  % bes according to part score
+	r g( aes \once \tupletUp bes\< c des ees g bes)\!
 % Bars 266 to 270
 	c(\f bes aes g f ees des c bes)}
-	ees2.\ff\startTrillSpan
+	\trillSpanPadding #-1 ees2.\ff\startTrillSpan
 	<< ees\startTrillSpan {s4 s s\stopTrillSpan }>> \mark \default
 	e!4-. r r
 	R2.*3
@@ -352,13 +352,17 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 311 to 315
 	b8.\> b16 b8\! r r4
 	b8.\pp b16 b8 r r4\fermata \mark \markAaBox
-	R2.*18
+	R2.*15
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
 % Bars 326 to 330
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 331 to 335
 	f''8.\p f16 f2~
 	f8. f16 f2~
@@ -373,7 +377,7 @@ musicClarinettoIMvtIII = \relative c {
 	a\f g e)\>
 % Bars 341 to 345
 	e( d a8. a16)\!
-	a2(_\dimmarkup g8. d16)
+	\markEO #'(0 . -8.5) a2(^\dimmarkup g8. d16)
 	e4(\<  g a\!
 	c8)[-. r16 c-.] c2
 	d4( e\< f\!)
@@ -447,7 +451,7 @@ musicClarinettoIMvtIII = \relative c {
 	d-.-> e-.-> d-.-> \mark \markDdBox
 	R2.*2
 	
-	c8-.\ff c,-. r4 r
+	c8-.-\offset X-offset -1 \ff c,-. r4 r
 	R2.
 % Bars 406 to 410
 	c'8-.\f f,-. r4 r
@@ -460,11 +464,11 @@ musicClarinettoIMvtIII = \relative c {
 	e'4\brack\ff e g
 	g g g
 	g2.\fermata
-	e4.(\p f8 g16[ a r16. d,32-.)]
+	\textMark "Coda" e4.(\p f8 g16[ a r16. d,32-.)]
 % Bars 416 to 420
 	d4(-> e-> f8-. f-.)
 	d4-> e2->
-	a,4(_\piup b c)
+	a,4(_\piup \once \stemUp b c)
 	g8. g16 g2->
 	c4( b\> a
 % Bars 421 to 425
@@ -474,9 +478,13 @@ musicClarinettoIMvtIII = \relative c {
 	e4.( f8 g16[ a r16. d,32-.])
 	d4 r r
 % Bars 426 to 430
-	R2.*8
-% Bars 431 to 435
+	\mmrLength #14 \mmrnDown R2.*4
 	
+	
+	
+	R2.
+% Bars 431 to 435
+	\mmrnDown R2.*3
 	
 	
 	c2(\< b4
@@ -492,17 +500,17 @@ musicClarinettoIMvtIII = \relative c {
 	c[\p c c c] f f
 	g[ g] a[ a] g g
 	g[\< g g g] c, c
-	f[ f f f] f f\!
+	f f f f f f\!
 % Bars 446 to 450
 	e[\mf e] f[ f] b b
-	c[ c] c[ c] b b 
+	c[ c c c] b b 
 	c\< c c c c c
 	d d d d d d\!
 	c[\f c] g[ g] c c
 % Bars 451 to 455
 	dis dis dis dis dis dis
 	bes[ bes] a[ a] cis cis
-	d[ d] dis[ dis] dis dis
+	d[ d] dis[ dis dis dis]
 	e[ e] d![ d] cis cis
 	d[\ff d d d] c! c
 % Bars 456 to 460

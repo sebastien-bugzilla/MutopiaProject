@@ -9,7 +9,7 @@ musicClarinettoIMvtI = \relative c {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	e'2\pp~
+	\startMeasureCount e'2\pp~
 	e~
 	e~
 	e~
@@ -18,13 +18,13 @@ musicClarinettoIMvtI = \relative c {
 	e~
 	e~
 	e~
-	e~\brack\crescD\<
+	\hairpinShorten #'(0 . 3) e~\brack\crescD\<
 	e~
 % Bars 11 to 15
 	e~
-	e\!
+	e\! \stopMeasureCount
 	e'\fermata\ff
-	gis,\pp~
+	\startMeasureCount gis,\pp~
 	gis~
 % Bars 16 to 20
 	gis~
@@ -37,7 +37,7 @@ musicClarinettoIMvtI = \relative c {
 	gis~
 	gis~_\crescmarkup
 	gis~
-	gis
+	gis \stopMeasureCount
 % Bars 26 to 30
 	gis'\ff\fermata \mark \default
 	b,4\f c!~->
@@ -81,28 +81,24 @@ musicClarinettoIMvtI = \relative c {
 	
 	\mark \default
 	\repeat volta 2 {
-		R2*3
+		\mmrnDown R2*3
 % Bars 66 to 70
 		\ni \mmrPos #4 R2
 		\mmrPos #4 R \no
 		a,,2\fz\>~
 		a\!
-		R2*5
+		R2*8
 % Bars 71 to 75
 		
-		
-		
-		
-		R2*3
 % Bars 76 to 80
 		
 		
-		g8(\p fis) r fis[(
+		g8(-\offset X-offset -1.6 \p fis) r fis[(
 		a->\< g)] r g[(
 		c-> b)]\! r b
 % Bars 81 to 85
 		d( f d c
-		b\> aes f)\! r
+		b-\tweak extra-offset #'(0 . -10.7) ^\> aes f)\! r
 		r4 r8 g''\p~
 		g16.[ g32 g16] r r8 g~
 		g16.[ g32\< g16] r r8 g~
@@ -111,7 +107,7 @@ musicClarinettoIMvtI = \relative c {
 		des,2~
 		des
 		e(
-		g)
+		g)   % e => g (in part score) based on conductor
 % Bars 91 to 95
 		e'~\ff
 		e4 r
@@ -141,23 +137,23 @@ musicClarinettoIMvtI = \relative c {
 		a
 		d,\ff~
 		d
-		\tuplet 3/2 4 {d8\mf d d  d d d
+		\tuplet 3/2 4 {d8-\offset X-offset -1 \mf d d  d d d
 % Bars 116 to 120
-		d d d  d\> d d
-		d d d  d d d\!
+		\tupletUp d d d  d\> d d
+		d d d  d d d\! \tupletNeutral
 		d\p d d  d\> d d
 		c! c c  c c c\!
 		c c c\pp  c c c
 % Bars 121 to 125
-		c c_\brackM\dimin c   c c c
+		c c^\brackM\dimin c   c c c
 		c c c  c c c~}
 		c r r4
 		R2*7
 % Bars 126 to 130
 	
 % Bars 131 to 135
-		<< b'2->~ {s8\f\< s s s\!}>>
-		b4\> a~\!
+		\tempoXoffset #-2 << b'2->~ {\hairpinShorten #'(-0.5 . -1.3) s8\f\< s s s\!}>>
+		b4-\tweak extra-offset #'(0  . -0.7) \> a~\!
 		a g8.-> fis16-.
 		e2(
 		d8) r g8.(\pp fis16
@@ -170,7 +166,7 @@ musicClarinettoIMvtI = \relative c {
 		
 		
 		
-		c,,2\p~
+		\startMeasureCount \tempoXoffset #-3 c,,2-\offset X-offset -1 \p~
 		c~
 % Bars 146 to 150
 		c~
@@ -179,7 +175,7 @@ musicClarinettoIMvtI = \relative c {
 		c~
 		c~
 % Bars 151 to 155
-		c
+		c \stopMeasureCount
 		e'\p~
 		<< e~ {s4 s_\brackM\pocoapococresc}>>
 		e2
@@ -330,7 +326,7 @@ musicClarinettoIMvtI = \relative c {
 	d8 r d8. e16
 	fis8 r d8._\dimmarkup e16
 % Bars 276 to 280
-	fis8 r \tuplet 3/2 4 {d-.\> d-. e-.}
+	fis8 r \tuplet 3/2 4 {\once \tupletUp d-.\> d-. e-.}
 	fis\! r \tuplet 3/2 4 {d-.\p d-. e-.}
 	f!2\pp(
 	g4\< f8 ees)\!
@@ -340,12 +336,12 @@ musicClarinettoIMvtI = \relative c {
 	d'2\p\<~
 	d4\! c_\crescmarkup~
 	c bes8. a16-.
-	<< g2 {s8\> s s s\!}>>
+	<< g2 {\hairpinShorten #'(0 . -1) s8\> s s s\!}>>
 % Bars 286 to 290
 	f2\p\<(
 	ees)\!
-	d
-	ees
+	<< d {s8\> s s s\!}>> 
+	ees2
 	d8 r r4
 % Bars 291 to 295
 	R2*5
@@ -456,8 +452,8 @@ musicClarinettoIMvtI = \relative c {
 	fis8 r r4 \mark #11
 	R2
 % Bars 391 to 395
-	\tuplet 3/2 4 {g,8(\p a b c d e)}
-	f4.(\fz\> e8\!)
+	\tuplet 3/2 4 {g,8(\p\< a b \once \tupletUp c d e)\!}
+	\hairpinShorten #'(-0.5 . -1) f4.(\fz\> e8\!)
 	d4.-> c8-.
 	g-.\f a16( g) \tuplet 3/2 4 {g,8( fis g)}
 	g'-. a16( g g,8) r
@@ -476,7 +472,7 @@ musicClarinettoIMvtI = \relative c {
 	
 % Bars 411 to 415
 	
-	c8-.\p^\solo( d16\< e \tuplet 3/2 4 {f8 g a)\!}
+	c8-.\p^\solo d16\<( e \tuplet 3/2 4 {f8 g a)\!}
 	g4.( e8)
 	c-. d16(\< e \tuplet 3/2 4 {f8 g a)\!}
 	g4.(\> e8)\!
@@ -494,24 +490,24 @@ musicClarinettoIMvtI = \relative c {
 	c\fz~
 % Bars 426 to 430
 	c4. r8
-	R2*5
+	R2*8
 % Bars 431 to 435
 	
-	R2*3
+	
 	
 	
 	g,,8\p( fis) r fis[(
 % Bars 436 to 440
 	a-> g)] r g[(
 	c-> b]) r b
-	d8(\f f d\> c)
+	d8(\f f d-\tweak rotation #'(-4 1 0) \> c)
 	b( aes f)\! r \mark \default
 	r4 r8 g''\p~
 % Bars 441 to 445
 	g16.[\< g32 g16] r r8 g~
 	g16.[ g32 g16] r r8 g~
 	g16.[ g32 g16] r r8 g\!
-	des,2-^~\f_\brackM\crescmarkup
+	des,2^^~_\fbrackcresc
 	des
 % Bars 446 to 450
 	e!-^~
@@ -550,7 +546,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 476 to 480
 	
 	
-	a,4~_\fzpocoapococrescendo a8 \tuplet 3/2 8 {a16( b cis}
+	a,4~_\fzpocoapococrescC a8 \tuplet 3/2 8 {a16( b cis}
 	d4.->)\< e8-.\!
 	f4.\fz e8
 % Bars 481 to 485
@@ -571,7 +567,7 @@ musicClarinettoIMvtI = \relative c {
 	r aes
 	r a!
 	r a 
-	r4 des,8-._\ppocoapococresc c16( des
+	\textMark "Vi-" r4 des,8-._\ppocoapococresc c16( des
 % Bars 501 to 505
 	fis8) r d!-. cis16( d
 	g8) r ees-. d16( ees
@@ -612,22 +608,22 @@ musicClarinettoIMvtI = \relative c {
 	
 % Bars 536 to 540
 	
-	\tuplet 3/2 4 {c8\fp c c  c c c}
+	\tuplet 3/2 4 {c8-\offset X-offset -1 \fp c c  c c c}
 	c r r4
-	\tuplet 3/2 4 {c8\fp c c  c c c}
+	\tuplet 3/2 4 {c8-\offset X-offset -1 \fp c c  c c c}
 	c r r4
 % Bars 541 to 545
-	\tuplet 3/2 4 {c8\fp c c  c c c}
+	\tuplet 3/2 4 {c8-\offset X-offset -1 \fp c c  c c c}
 	c r r4
-	\tuplet 3/2 4 {c8\fp c c  c c c} \mark \default
+	\tuplet 3/2 4 {c8-\offset X-offset -1 \fp c c  c c c} \offset X-offset -2.3 \textEndMark "-de" \mark \default
 	c8 r bes'4\pp
 	r b!
 % Bars 546 to 550
 	r ees,8\p d16( ees
 	aes8) r e!-. dis16( e
-	a!8) r f-.\< e16( f
+	a!8) r f-.\< e16( f  % cresc according to conductor score
 	bes8) r ges-. f16( ges)\!
-	\tuplet 3/2 4 {dis8\ff( cis dis} cis4->)
+	\tuplet 3/2 4 {dis8-\offset X-offset -1 \ff( cis dis} cis4->)
 % Bars 551 to 555
 	\tuplet 3/2 4 {dis8( cis dis} cis4->)
 	\tuplet 3/2 4 {dis8( cis dis} cis4->)
@@ -647,15 +643,15 @@ musicClarinettoIMvtI = \relative c {
 	g8 r r4
 	R2
 % Bars 566 to 570
-	\tuplet 3/2 4 {b,8\mf b b   b\> b b
-	b b b  b b b\! \mark \default
-	b\p b b  b\> b b
+	\tuplet 3/2 4 {\startMeasureCount b,8-\offset X-offset -1.5 \mf b b   b\> b b
+	b b b  b b b\! \resetMarkSpace \mark \default
+	b\p b b \tupletUp  b\> b b
 	b b b  b b b\!
-	b\pp b b  b b b
+	b\pp b b \tupletNeutral  b b b
 % Bars 571 to 575
 	b b b  b b b
-	b b b_\brackM\calando  b b b
-	b b b  b b b}
+	b b b^\brackM\calando  b b b
+	b b b  b b b} \stopMeasureCount
 	b4 r
 	b\< r
 % Bars 576 to 580
@@ -666,19 +662,19 @@ musicClarinettoIMvtI = \relative c {
 	c~
 % Bars 581 to 585
 	c
-	e\legatoD\<(~
-	e4 d->\>~
+	\hairpinShorten #'(-0.5 . -1.5) e\legatoD\<(~
+	e4 \hairpinShorten #'(1.5 . 0) d->\>~
 	d\! c8. b16-.
-	<< a2-> {s8\> s s s\!}>>
+	<< a2-> {s8\> s s s}>>
 % Bars 586 to 590
-	g4) r
+	g4)\! r
 	R2*3
 	
 	
 	c,2(~\p
 % Bars 591 to 595
-	c4 d->~\<
-	d e8.\! g16-.
+	c4\< d->~
+	d\! e8. g16-.
 	dis2\> 
 	e8\!) r r4
 	c'2\p~
@@ -701,7 +697,7 @@ musicClarinettoIMvtI = \relative c {
 	f\brack\f\<~
 	<< f {s8 s s s\!} >> \mark \default
 % Bars 611 to 615
-	c2~
+	c2\ff~  % ff according to all other voices
 	c8 g-. e-. g-.
 	\tuplet 3/2 4 {c( g e g bes d)
 	c( g e g bes d)}
@@ -738,7 +734,7 @@ musicClarinettoIMvtI = \relative c {
 	cis8 r r8. cis16
 % Bars 641 to 645
 	dis4 r8 a
-	c4 r8 e
+	c!4 r8 e
 	dis4 r8 a
 	c4 r8 e
 	d! r r4
@@ -746,10 +742,10 @@ musicClarinettoIMvtI = \relative c {
 	R2*6
 % Bars 651 to 655
 	
-	c2_\fpespr
+	c2-\offset X-offset 0.8 _\fpespr
 	R
-	ees(_\pespr \mark \default
-	d8) r r4
+	ees(_\pespr \markWhiteout \mark \default
+	\tempoXoffset #0.3 d8) r r4
 % Bars 656 to 660
 	R2*11
 % Bars 661 to 665
@@ -774,14 +770,14 @@ musicClarinettoIMvtI = \relative c {
 	dis2_\dimmarkup
 % Bars 681 to 685
 	e4) r8 g(
-	dis2\pp~ \mark \default
+	dis2\pp~ \markWhiteout \mark \default
 	dis4\fermata e)
-	R2*2
+	\mmrnDown R2*2
 	
 % Bars 686 to 690
 	c4\f fis
 	g2~
-	g8 f e d
+	g8 f! e d
 	c4 f8. e16
 	d4 b
 % Bars 691 to 695
@@ -818,7 +814,7 @@ musicClarinettoIMvtI = \relative c {
 	dis~
 	dis
 	e8 r r4
-	R2*4
+	\mmrnDown R2*4
 % Bars 721 to 725
 	
 	

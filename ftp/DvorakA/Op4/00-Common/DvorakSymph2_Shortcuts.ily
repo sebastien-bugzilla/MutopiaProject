@@ -49,6 +49,13 @@ fzpocoapococrescendoC = \markup {\hspace #-0.5 \dynamic fz \italic \vcenter \col
 fzdim = \markup {\hspace #-0.5 \dynamic fz \normal-text \italic {dim.}}
 fzmarkup = \markup {\hspace #-0.5 \dynamic fz}
 fzpocoapococresc = \markup {\hspace #-0.5 \dynamic fz \italic {poco a poco cresc.}}
+fzpocoapococrescC = \markup {
+	\hspace #-0.5 \general-align #Y #CENTER {
+		\dynamic fz \italic {
+			\column { \lower #1.5 "poco a" "poco cresc."}
+		}
+	}
+}
 fzmarc = \markup {\hspace #-0.5 \dynamic fz \italic {marc.}}
 
 fcresc = \markup {\hspace #0.05 \dynamic f \italic {cresc.}}
@@ -221,6 +228,7 @@ pizz = \markup {\italic {pizz.}}
 pocoapoco = \markup {\italic {poco a poco}}
 pocoapococresc = \markup {\italic {poco a poco cresc.}}
 pocoapococrescC = \markup {\italic {\column { \lower #1 "poco a poco" "cresc."}}}
+pocoa_pococresc = \markup {\italic {\column { \lower #1 "poco a" "poco cresc."}}}
 pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
 pocoapoco_crescendo = \markup {
 	\column { \italic \lower #1 "poco a poco" "crescendo"}
@@ -264,6 +272,8 @@ mutainda = \markup {"[muta in D, A]"}
 mutainbf = \markup {"[muta in B, F]"}
 dmutainf = \markup {"[D muta in F]"}
 div = \markup {div.}
+
+inb = \markup {in B}
 
 markAaBox = \markup { \box \bold "Aa" }
 markBbBox = \markup { \box \bold "Bb" }

@@ -298,7 +298,7 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 676
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII piccolo oboeI oboeII clarinettoI clarinettoII 
+	\tag #'(flautoI flautoII piccolo oboeI oboeII clarinettoII 
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 
 		trombonoI trombonoII trombonoIII timpani violinoI violinoII viola 
 		violoncello contrabasso) {
@@ -306,6 +306,11 @@ tempiPartMvtI = {
 			\normal-weight \italic \center-column {
 				\lower #1 "poco a poco" "ritard."
 			}
+		}
+	}
+	\tag #'(clarinettoI) {
+		\tempo \markup {
+			\normal-weight \italic "poco a poco ritard."
 		}
 	}
 	s2*8
@@ -429,7 +434,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 60
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII piccolo oboeII clarinettoI clarinettoII 
+	\tag #'(flautoI flautoII piccolo oboeII   
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 
 		trombonoI trombonoII trombonoIII timpani violinoI violinoII viola 
 		violoncello contrabasso) {
@@ -439,7 +444,7 @@ tempiPartMvtIII = {
 			}
 		}
 	}
-	\tag #'(oboeI) {
+	\tag #'(oboeI clarinettoI clarinettoII) {
 		\tempo \markup {
 			\normal-weight \italic "poco a poco [più] adagio"
 		}
@@ -508,7 +513,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 328
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII   clarinettoI clarinettoII 
+	\tag #'(flautoI flautoII   clarinettoI clarinettoII
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 
 		trombonoI trombonoII trombonoIII timpani violinoI violinoII viola 
 		violoncello contrabasso) {
@@ -539,7 +544,7 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 347
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoII piccolo oboeI oboeII clarinettoI clarinettoII 
+	\tag #'(flautoII piccolo oboeI oboeII  clarinettoII 
 		fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII 
 		trombonoI trombonoII trombonoIII timpani violinoI violinoII viola 
 		violoncello contrabasso) {
@@ -547,7 +552,7 @@ tempiPartMvtIII = {
 			\normal-weight \italic "ritardando"
 		}
 	}
-	\tag #'(flautoI) {
+	\tag #'(flautoI clarinettoI) {
 		\tempo \markup {
 			\normal-weight \italic "rit."
 		}

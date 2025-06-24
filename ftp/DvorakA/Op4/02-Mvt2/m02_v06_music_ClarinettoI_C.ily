@@ -30,7 +30,7 @@ musicClarinettoIMvtII = \relative c {
 	\partCombineApart << { g!2.~ g4. a} {s s s s}>> \partCombineAutomatic
 	g2.(\fz\> f4. d)\!
 	\partCombineApart bes'2.(~ bes4. g)
-	<< {f2. fis} {s4. s s s4 s8}>>
+	<< {f2.( fis)} {s4. s s s4 s8}>>
 	g2.(~ g4. aes)
 % Bars 21 to 25
 	e2.( f4. d8 e f)
@@ -60,7 +60,7 @@ musicClarinettoIMvtII = \relative c {
 	r4 r8 \partCombineApart a4.~ a~ a4 \partCombineAutomatic r8
 	r4 r8 \markEO #'(5 . 3) a2.~_\dimmarkup a4 r8
 	r4 r8 bes4.\p r4 r8\> g4.\!
-	r4 r8 d'4.-> d-> d->
+	r4 r8 d'4.->\pp d-> d->  % pp according to part score and other voices
 	d8 r r r4 r8 r2.
 % Bars 46 to 50
 	R1.*3

@@ -345,8 +345,8 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 286 to 290
 	bes2\p\<~
 	bes\!~
-	bes~
-	bes
+	<< bes~ {s8\> s s s\!}>>  % decresc based on part score and Fl. Ob. Fag.
+	bes2
 	a!8 r r4
 % Bars 291 to 295
 	R2*5
@@ -477,7 +477,7 @@ musicClarinettoIIMvtI = \relative c {
 	
 % Bars 411 to 415
 	
-	c,8-.\p( d16\< e \tuplet 3/2 4 {f8 g a)\!}
+	c,8-.\p d16\<( e \tuplet 3/2 4 {f8 g a)\!}
 	g4.( e8)
 	c-. d16(\< e \tuplet 3/2 4 {f8 g a)\!}
 	g4.(\> e8)\!
@@ -701,7 +701,7 @@ musicClarinettoIIMvtI = \relative c {
 	b\brack\f\<
 	<< d {s8 s s s\!} >> \mark \default
 % Bars 611 to 615
-	c2~
+	c2\ff~  % ff according to all other voices
 	c8 g-. e-. g-.
 	\tuplet 3/2 4 {c( g e g bes d)
 	c( g e g bes d)}
@@ -805,8 +805,8 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 706 to 710
 	b2~
 	b4 c8. g16
-	g4( g)
-	b( c)
+	g4 g
+	b c
 	b b~\fz
 % Bars 711 to 715
 	b e8. c16

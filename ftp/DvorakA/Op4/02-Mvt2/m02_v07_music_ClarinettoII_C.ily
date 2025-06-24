@@ -30,7 +30,7 @@ musicClarinettoIIMvtII = \relative c {
 	<< { c( b e dis)} {s s\< s s\!}>>
 	e2.(\fz\> d4. a)\!
 	g'\pp( dis e~ e)
-	<< {c2. c\f } {s4.\< s\! s\> s4 s8\!}>>
+	<< {c2.~ c\f } {s4.\< s\! s\> s4 s8\!}>>
 	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e4.( d c dis)\fz
 % Bars 21 to 25
 	e2.(\p d4. d8 c b!)
@@ -60,7 +60,7 @@ musicClarinettoIIMvtII = \relative c {
 	r4 r8 f4.\mf e~ e4 r8
 	r4 r8 a,2.~ a4 r8
 	r4 r8 bes4.\p r4 r8\> g4.\!
-	r4 r8 a'4.-> a-> a->
+	r4 r8 a'4.->\pp a-> a->   % pp according to part score and other voices
 	bes8 r r r4 r8 r2.
 % Bars 46 to 50
 	R1.*3
