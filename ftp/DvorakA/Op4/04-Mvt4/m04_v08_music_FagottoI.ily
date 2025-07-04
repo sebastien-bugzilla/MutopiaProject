@@ -129,7 +129,7 @@ musicFagottoIMvtIV = \relative c {
 	g2-> a->
 	bes-> a->
 	g-> c->
-	\tuplet 3/2 2 {f4\ff e d c d e
+	\textMark "Vi-" \tuplet 3/2 2 {f4\ff e d c d e
 % Bars 106 to 110
 	f e d c d e
 	f a c f f c
@@ -147,7 +147,7 @@ musicFagottoIMvtIV = \relative c {
 	bes-> a->
 	bes-> f->
 	g c
-	a g \mark \default
+	a g \offset X-offset -2.2 \textEndMark "-de" \mark \default
 % Bars 121 to 125
 	d'2.\ff c4-.
 	f-. d2->( c4)
@@ -167,8 +167,8 @@ musicFagottoIMvtIV = \relative c {
 	cis\fz d\>)
 	e(\! f)\<
 % Bars 136 to 140
-	<< des1->\fz\> {s4 s s s\!}>>
-	bes2\< << bes->~ {s4 s\!}>>
+	<< \hairpinShorten #'(-0.5 . -2) des1->\fz\> {s4 s s s\!}>>
+	\hairpinShorten #'(1 . 0) bes2\< << bes->~ {s4 s\!}>>
 	<< bes1~\> {s4 s s s\!}>>
 	bes1~\p\>
 	<< bes {s4 s s s\!}>>
@@ -177,18 +177,18 @@ musicFagottoIMvtIV = \relative c {
 	c2( bes4. f8
 	aes1~
 	aes4 f des bes)
-	bes2.( aes4\<
+	bes2.( aes4-\alterBroken shorten-pair #'(() (0 . 1.5)) \<
 % Bars 146 to 150
 	g aes des f)\!
 	bes2.( aes4)
 	g(\< aes des f)\!
-	<< aes,1\fp~ {s2 s_\dimmarkup}>>
+	\startMeasureCount << aes,1_\fpdim~ {s2 s}>>
 	aes1~
 % Bars 151 to 155
 	aes~
 	aes~
 	aes~
-	aes
+	aes \stopMeasureCount
 	d(\p
 % Bars 156 to 160
 	ees)
@@ -223,15 +223,15 @@ musicFagottoIMvtIV = \relative c {
 % Bars 181 to 185
 	a a fis''( a,,)
 	a a a a
-	a'1\ff~
+	\startMeasureCount a'1\ff~
 	a~
 	a~
 % Bars 186 to 190
 	a~
 	a~
-	a
+	a \stopMeasureCount
 	fis4->\ff cis'-> ais4.-> gis8-.
-	fis4.-> d'8-. cis4.-> b8-.
+	fis4.-> d'!8-. cis4.-> b8-.
 % Bars 191 to 195
 	ais4.-> g!8-. fis4-. r
 	fis, fis'8( fis,) fis'( fis,) r fis'-.
@@ -301,7 +301,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 246 to 250
 	d'1\f~
 	d2 bes
-	<< d1~\f {s4 s\> s s}>>   % f and decresc. based on part score
+	<< d1~\f {s4\> s s s}>>   % f and decresc. based on part score
 	<< d2 {s8 s s s\!}>> bes2
 	f'2.\p f16( ees d c
 % Bars 251 to 255
@@ -342,10 +342,10 @@ musicFagottoIMvtIV = \relative c {
 	a r r2
 	R1 \clef tenor
 	r4 b8(\p c) a'( g) r4
-	R1 \clef bass
+	R1*3
 % Bars 286 to 290
-	R1
-	R
+	
+	\clef bass
 	r4 a,8(\< bes) f'( ees!)\! r4
 	R1
 	r4 c\pp bes4. bes8
@@ -430,7 +430,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 356 to 360
 	ges~
 	ges
-	\tuplet 3/2 2 {g,4 a! b} c8( d ees f)
+	\tuplet 3/2 2 {g,!4 a! b} c8( d ees f)
 	\tuplet 3/2 2 {g,4 a b c d ees
 	g, a b} c8( d ees f)
 % Bars 361 to 365
@@ -523,8 +523,8 @@ musicFagottoIMvtIV = \relative c {
 	fis,1~
 	fis~
 	fis~
-	fis \mark \default
-	b,4\f fis dis''4.-> cis8-.
+	fis \resetMarkSpace \mark \default
+	b,4-\offset X-offset #-1 \f fis dis''4.-> cis8-.
 % Bars 441 to 445
 	b4.-> g!8-. fis4.-> e8-.
 	dis4.-> c!8-. b4 r
@@ -546,12 +546,12 @@ musicFagottoIMvtIV = \relative c {
 % Bars 456 to 460
 	g-> g->
 	g-> r
-	f1->~
+	\startMeasureCount f1->~
 	f~
 	f~
 % Bars 461 to 465
 	f~
-	f~
+	f~ \stopMeasureCount
 	f4 f4-> f-> f-> \mark \default
 	fis,,1~
 	fis~
@@ -666,8 +666,8 @@ musicFagottoIMvtIV = \relative c {
 	\tuplet 3/2 2 {f4 a,,( bes a bes a)
 % Bars 561 to 565
 	bes( a bes a bes a)
-	bes( a bes a bes a)
-	bes( a bes a bes a) }
+	bes( a bes a bes a
+	bes a bes a bes a) }
 	bes1\ff~
 	bes
 % Bars 566 to 570

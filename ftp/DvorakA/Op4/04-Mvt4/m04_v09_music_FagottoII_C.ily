@@ -485,9 +485,9 @@ musicFagottoIIMvtIV = \relative c {
 	ces)
 	ees!(
 	e)
-	gis1\brack\fz\<~
+	gis1\brack\fz\<(
 % Bars 411 to 415
-	gis\! % /!\ gis => a ???
+	a)\! % /!\ gis => a : based on part score and cello / bass parts.
 	g!2->\f fis->
 	e2. e4
 	c1->
@@ -663,8 +663,8 @@ musicFagottoIIMvtIV = \relative c {
 	\tuplet 3/2 2 {f4 a,( bes a bes a)
 % Bars 561 to 565
 	bes( a bes a bes a)
-	bes( a bes a bes a)
-	bes( a bes a bes a) }
+	bes( a bes a bes a
+	bes a bes a bes a) }
 	bes,1\ff~
 	bes
 % Bars 566 to 570

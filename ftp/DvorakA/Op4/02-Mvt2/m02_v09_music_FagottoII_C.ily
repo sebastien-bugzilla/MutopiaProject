@@ -140,7 +140,7 @@ musicFagottoIIMvtII = \relative c {
 	<< {g2.\f( ges)} {s4. s s\> s8 s s\! }>>
 	f4.(\p ees'\< << {d e)} {s4. s\!}>>
 	f2.~ << f {s4.\> s8 s s\!}>>
-	f2.~\p\> f4.~ f\!
+	f2.~\p\> f4.~ f4\! r8
 % Bars 116 to 120
 	R1.
 	r4 r8 ges4.(\brack\p\> f e)\!

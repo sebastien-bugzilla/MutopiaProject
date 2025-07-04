@@ -115,7 +115,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #1.5 \bold 3.
+				\vspace #1.5 \bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -139,7 +139,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #1.6 \bold 4.
+				\vspace #1.6 \bold "4. Finale"
 			}
 		}
 		\layout {
@@ -211,7 +211,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #1.2 \bold 3.
+				\vspace #1.2 \bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -235,7 +235,7 @@
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. Finale"
 			}
 		}
 		\layout {

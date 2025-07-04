@@ -20,6 +20,13 @@ semprepp = \markup {\italic {sempre} \dynamic pp}
 
 pcresc = \markup {\hspace #-0.05 \dynamic p \italic {cresc.}}
 ppocoapococresc = \markup {\hspace #-0.05 \dynamic p \italic {poco a poco cresc.}}
+ppocoapococrescC = \markup {
+	\hspace #-0.05  \general-align #Y #CENTER { 
+		\dynamic p \italic {
+			\column { \lower #1.5 "poco a" "poco cresc."}
+		}
+	}
+}
 pdim = \markup {\hspace #-0.05 \dynamic p \normal-text \italic {dim.}}
 pmoltoespress = \markup {\hspace #-0.05 \dynamic p \normal-text \italic {molto espress.}}
 pmarkup = \markup {\hspace #-0.05 \dynamic p}
@@ -59,6 +66,7 @@ fzpocoapococrescC = \markup {
 fzmarc = \markup {\hspace #-0.5 \dynamic fz \italic {marc.}}
 
 fcresc = \markup {\hspace #0.05 \dynamic f \italic {cresc.}}
+fdiminuendo = \markup {\hspace #0.05 \dynamic f \italic {diminuendo}}
 fpocoapococrescendo = \markup {\hspace #0.05 \dynamic f \italic {poco a poco crescendo}}
 fmarkup = \markup {\hspace #0.05 \dynamic f}
 fmarc = \markup {\hspace #0.05 \dynamic f \italic {marc.}}
@@ -542,7 +550,7 @@ aIIEO = #(define-music-function
 
 markWhiteout = {
 	\once \override Score.RehearsalMark.layer = #3
-	\once \override Score.RehearsalMark.whiteout = #0.75
+	\once \override Score.RehearsalMark.whiteout = #1
 	\once \override Score.RehearsalMark.whiteout-style = #'outline
 }
 

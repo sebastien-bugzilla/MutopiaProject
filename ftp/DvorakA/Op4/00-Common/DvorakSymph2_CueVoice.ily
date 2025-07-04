@@ -848,7 +848,7 @@ cueVoiceClarinettoIIMvtIV = \relative c {
 cueVoiceFagottoIMvtI = \relative c {
 	s2*431
 	% bars 432 - 434
-	\voiceOne \clef treble g'''8-.^\markup {Viol.I.} f16( g \tuplet 3/2 {ees8 d ees}
+	\voiceOne \clef treble g'''8-.-\offset X-offset -4.6 ^\markup {Viol.I.} f16( g \tuplet 3/2 {ees8 d ees}
 	c) a g f
 	f'4.-> ees8-. \clef bass
 	s2*41
@@ -857,20 +857,20 @@ cueVoiceFagottoIMvtI = \relative c {
 	a4-> bes->
 	s2*17
 	% bar 495
-	\tuplet 3/2 {r8^\markup {Cor.I.} aes( f') } f4\laissezVibrer
+	\oneVoice \tuplet 3/2 {r8-\offset X-offset -4 ^\markup {Cor.I.} aes( f') } f4\laissezVibrer
 	s2*39
 	% bars 535 - 536
-	\clef treble g'4.-\markup {Viol.I.} f8->
+	\clef treble g'4.^\markup {Viol.I.} f8->
 	ees!8-. d16( ees \tuplet 3/2 {c8 b c)} \clef bass
 }
 cueVoiceFagottoIMvtII = \relative c {
 	s1.*12
 	% bars 13 - 14
-	\voiceOne \clef treble aes'''4.(^\markup {Viol.I.} g8 f c) ees4.( d)
+	\voiceOne \clef treble aes'''4.(-\offset X-offset -4.5 ^\markup {Viol.I.} g8 f c) ees4.( d)
 	ees( d8 c g) bes4.( a!) \clef bass
 	s1.*66
 	% bars 81 - 82
-	c,2.(^\markup {\column { \lower #1.5 "Legni" "Fiatti"}} d4. bes)
+	\oneVoice c,2.(-\offset X-offset -5 ^\markup {\column { \lower #1.5 "Legni" "Fiatti"}} d4. bes)
 	g'2.( f4. ees)
 }
 cueVoiceFagottoIMvtIII = \relative c {
@@ -881,19 +881,19 @@ cueVoiceFagottoIMvtIII = \relative c {
 	c8[ r16 c-.] c2 \clef bass
 	s2.*116
 	% bars 179 - 182
-	<a, e'>2.\fz\>~^\markup {\column {\lower #1.5 "Cor.III.IV" "Archi"}}
+	<a, e'>2.\fz\>~-\offset X-offset -7 ^\markup {\column {\lower #1.5 "Cor.III.IV" "Archi"}}
 	q~
 	q\p~
 	q\laissezVibrer
 	s2.*102
 	% bars 285 - 288
-	\clef treble aes''2.\ff\>~^\markup {Viol.I.}
+	\clef treble aes''2.\ff\>~-\offset X-offset -6 ^\markup {Viol.I.}
 	aes
 	f\p\>~
 	f\! \clef bass
 	s2.*39
 	% bars 328 - 330
-	\clef treble c8[^\markup {Viol.I.} r16 c-.] c2~
+	\clef treble \markEO #'(-5 . 6.8) c8[_\markup {Viol.I.} r16 c-.] c2~
 	c8[ r16 c-.] c2~
 	c8[ r16 c-.] c2 \clef bass
 }
@@ -906,7 +906,7 @@ cueVoiceFagottoIMvtIV = \relative c {
 	r e
 	s1*204
 	% bars 215 - 218
-	\clef treble ees'''2->\pp^\markup {Fl.I.} \tuplet 3/2 {d4-. ees-. fes-.}
+	\clef treble \oneVoice ees'''2->\pp-\offset X-offset -3.8 ^\markup {Fl.I.} \tuplet 3/2 {d4-. ees-. fes-.}
 	ees2-> \tuplet 3/2 {bes4-. ces-. des-.}
 	ces2-> \tuplet 3/2 {bes4-. ces-. des-.}
 	ces2-> \tuplet 3/2 {g4-. aes-. bes-.} \clef bass
@@ -914,7 +914,7 @@ cueVoiceFagottoIMvtIV = \relative c {
 cueVoiceFagottoIIMvtI = \relative c {
 	s2*431
 	% bars 432 - 434
-	\voiceOne \clef treble g'''8-.^\markup {Viol.I.} f16( g \tuplet 3/2 {ees8 d ees}
+	\voiceOne \clef treble g'''8-.-\offset X-offset -4.5 ^\markup {Viol.I.} f16( g \tuplet 3/2 {ees8 d ees}
 	c) a g f
 	f'4.-> ees8-. \clef bass
 	s2*41
@@ -923,24 +923,24 @@ cueVoiceFagottoIIMvtI = \relative c {
 	a4-> bes->
 	s2*17
 	% bar 495
-	\tuplet 3/2 {r8^\markup {Cor.I.} aes( f') } f4\laissezVibrer
+	\oneVoice \tuplet 3/2 {r8-\offset X-offset -3 ^\markup {Cor.I.} aes( f') } f4\laissezVibrer
 	s2*39
 	% bars 535 - 536
-	\clef treble g'4.-\markup {Viol.I.} f8->
+	\voiceOne \clef treble g'4.-\offset X-offset -5 -\markup {Viol.I.} f8->
 	ees!8-. d16( ees \tuplet 3/2 {c8 b c)} \clef bass
 }
 cueVoiceFagottoIIMvtII = \relative c {
 	s1.*52
 	% bars 53 - 54
-	\voiceOne ees'2.\fz\>~^\markup {Fag.I.} ees8 des( c bes4\p f8)
+	\voiceOne ees'2.\fz\>~-\offset X-offset -4 ^\markup {Fag.I.} ees8 des( c bes4\p f8)
 	aes4.(~\pp aes4~ aes16 bes aes4) aes8( bes4 c8)
 	s1.*26
 	% bars 81 - 82
-	c2.(^\markup {\column { \lower #1.5 "Legni" "Fiatti"}} d4. bes)
+	\oneVoice c2.(-\offset X-offset -5 ^\markup {\column { \lower #1.5 "Legni" "Fiatti"}} d4. bes)
 	g'2.(-> f4. ees)
 	s1.*45
 	% bar 128
-	r4^\markup {Fag.I.} r8 des,4.(~ des8 a!8. bes16) bes4.
+	\voiceOne r4^\markup {Fag.I.} r8 des,4.(~ des8 a!8. bes16) bes4.
 }
 cueVoiceFagottoIIMvtIII = \relative c {
 	s2.*59
@@ -950,9 +950,9 @@ cueVoiceFagottoIIMvtIII = \relative c {
 	c8[ r16 c-.] c2 \clef bass
 	s2.*116
 	% bars 179 - 182
-	<a, e'>2.\fz\>~^\markup {\column {\lower #1.5 "Cor.III.IV" "Archi"}}
+	<a, e'>2.\fz\>~-\offset X-offset -7 ^\markup {\column {\lower #1.5 "Cor.III.IV" "Archi"}}
 	q~
-	q\p~
+	q\pp~
 	q\laissezVibrer
 	s2.*102
 	% bars 285 - 288
@@ -975,7 +975,7 @@ cueVoiceFagottoIIMvtIV = \relative c {
 	r e
 	s1*204
 	% bars 215 - 218
-	\clef treble ees'''2->\pp^\markup {Fl.I.} \tuplet 3/2 {d4-. ees-. fes-.}
+	\clef treble \oneVoice ees'''2->\pp-\offset X-offset -4 ^\markup {Fl.I.} \tuplet 3/2 {d4-. ees-. fes-.}
 	ees2-> \tuplet 3/2 {bes4-. ces-. des-.}
 	ces2-> \tuplet 3/2 {bes4-. ces-. des-.}
 	ces2-> \tuplet 3/2 {g4-. aes-. bes-.} \clef bass

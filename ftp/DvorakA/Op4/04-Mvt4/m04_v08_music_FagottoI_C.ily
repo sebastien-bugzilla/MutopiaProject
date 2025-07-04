@@ -663,8 +663,8 @@ musicFagottoIMvtIV = \relative c {
 	\tuplet 3/2 2 {f4 \aIIEO #'(1 . -3) a,,( bes a bes a)
 % Bars 561 to 565
 	bes( a bes a bes a)
-	bes( a bes a bes a)
-	bes( a bes a bes a) }
+	bes( a bes a bes a
+	bes a bes a bes a) }
 	bes1\ff~
 	bes
 % Bars 566 to 570

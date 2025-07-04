@@ -386,10 +386,10 @@ musicFagottoIIMvtI = \relative c {
 	f
 	g
 	aes)
-	c,8-.( d16 c \tuplet 3/2 4 {bes8 a bes}
+	c,8-. d16( c \tuplet 3/2 4 {bes8 a bes} % slur begins on 2nd eight based on part score and bar 316 / 318
 	a4. d8)
 % Bars 316 to 320
-	c-.( d16 c \tuplet 3/2 4 {bes8 a bes}
+	c-. d16( c \tuplet 3/2 4 {bes8 a bes} % slur begins on 2nd eight based on part score and bar 316 / 318
 	a4. d8)
 	c-. d16( c bes_\crescmarkup a bes c
 	a8) a r d

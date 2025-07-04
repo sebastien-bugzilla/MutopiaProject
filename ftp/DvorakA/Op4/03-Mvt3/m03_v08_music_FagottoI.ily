@@ -37,35 +37,35 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	f'2.-\offset X-offset -1.3 _\pmarkup-\offset X-offset 1.3\brack\p~
+	f'2._\pbrackp~
 % Bars 26 to 30
 	f~
 	f~
 	f
-	f~
+	\startMeasureCount f~
 	f~
 % Bars 31 to 35
 	f\mf\<~
 	<< f~ {s4 s s\!}>>
 	f2.\f~
 	f~
-	f~
+	f~ \stopMeasureCount
 % Bars 36 to 40
 	f8\f r r4 r
 	R2.*4
 % Bars 41 to 45
 	g4( a bes)
-	c,8.\f c16_\diminuendo c8 r r4
+	c,8._\fdiminuendo c16 c8 r r4
 	c8.\p c16 c8 r r4
 	c8.\p\> c16 << c2\fermata {s4 s\!}>> \mark \default
-	R2.*15
+	R2.*12
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
-	
+	\tempoXoffset #-2 R2.*3
 	
 	
 	\ni \mmrPos #-4 R2.
@@ -91,10 +91,10 @@ musicFagottoIMvtIII = \relative c {
 	f4( g aes)
 	g( bes\< g)\!
 	f2(\f\< g4\!)
-	<< aes2.~ {s4\p s\> s }>>
+	<< aes2.~ {s4\p\> s s }>>
 	aes4( des c)\p
 % Bars 81 to 85
-	<< f,2.\p {s4 s\> s }>>
+	<< f,2.\p {\hairpinShorten #'(-0.4 . -0.4) s4\> s s }>>
 	e4(\pp g aes)
 	g2( aes4)
 	g2 r4 \mark \default
@@ -216,7 +216,7 @@ musicFagottoIMvtIII = \relative c {
 		a8. fis16 fis8 r r4
 		a2.\pp
 		a8. fis16 fis8 r r4
-		\acciaccatura {a,16 b cis} d2.->\fp~
+		\acciaccatura {a,16 b cis} d2.->-\offset X-offset 1 \fp~
 		d4 fis8( a d e)
 % Bars 201 to 205
 		fis2.(
@@ -241,7 +241,7 @@ musicFagottoIMvtIII = \relative c {
 		f' e f d e c 
 		bes,4 r r \mark \default
 	}
-	cis'4.(\p d8 \tuplet 3/2 4 {e fis b,)}
+	cis'!4.(\p d8 \tuplet 3/2 4 {e fis! b,)}
 	b4( cis d8-. d-.)
 % Bars 221 to 225
 	b4 cis2->\brack\fz
@@ -281,12 +281,12 @@ musicFagottoIMvtIII = \relative c {
 	f2 f8. f16
 	f2.~
 	f \clef bass \section \key bes \major
-	r8 d,16(\p ees \tuplet 3/2 4 {f8\< g aes bes c d\!
+	r8 d,16(\p ees \tuplet 3/2 4 {\once \tupletUp f8\< g aes bes c d\!
 % Bars 256 to 260
 	ees\> d c bes aes g\! f ees d)}
 	r8 d16( ees \tuplet 3/2 4 {f8\< g aes bes c d\!
 	ees\> d c bes aes g\! f ees d)}
-	r8 d16( ees \tuplet 3/2 4 {f8\< g aes bes c d\!
+	r8 d16( ees \tuplet 3/2 4 {\once \tupletUp f8\< g aes bes c d\!
 	ees\> d c bes\! aes g f ees d)}
 % Bars 261 to 265
 	r8 d16( ees \tuplet 3/2 4 {f8 g aes bes\< c d\!
@@ -296,8 +296,8 @@ musicFagottoIMvtIII = \relative c {
 	
 % Bars 266 to 270
 	
-	des2.\ff\startTrillSpan
-	<< des\startTrillSpan {s4 s s\stopTrillSpan}>> \mark \default
+	\trillSpanPadding #-1 des2.\ff\startTrillSpan
+	<< \trillSpanPadding #-0.5 des\startTrillSpan {s4 s s\stopTrillSpan}>> \mark \default
 	d!4-. r r
 	R2.*15
 % Bars 271 to 275
@@ -318,19 +318,19 @@ musicFagottoIMvtIII = \relative c {
 % Bars 291 to 295
 	
 	
-	f,2.\p~
+	\startMeasureCount f,2.\p~
 	f~
 	f~
 % Bars 296 to 300
 	f~
 	<< f~ {s4 s s\<}>>
-	f2.
-	f,~
+	f2. \stopMeasureCount
+	\startMeasureCount f,~
 	<< f~ {s4 s s\!}>>
 % Bars 301 to 305
 	f2.\f~
 	f~
-	f~
+	f~ \stopMeasureCount
 	f8 r r4 r
 	R2.*4
 % Bars 306 to 310
@@ -341,12 +341,16 @@ musicFagottoIMvtIII = \relative c {
 	c,8. c16 c8 r r4
 % Bars 311 to 315
 	c8.\> c16 c8\! r r4
-	c8.\pp c16 c8 r r4\fermata \mark \markAaBox
-	R2.*15
+	c8.\pp c16 c8 r r4\fermata \markXoffset #-0.3 \resetMarkSpace \mark \markAaBox
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
+	
+	
+	
+	\tempoXoffset #-2 R2.*3
 % Bars 326 to 330
 	
 	
@@ -379,7 +383,7 @@ musicFagottoIMvtIII = \relative c {
 	e(\pp g aes)
 % Bars 351 to 355
 	g2( aes4)
-	g2 r4 \mark \markBbBox
+	g2 r4 \resetMarkSpace \mark \markBbBox
 	r4 \clef tenor r8 g'\f-. f-. ees-.
 	ees4( d2)
 	r4 r8 g-.\f f-. ees-.
@@ -411,7 +415,7 @@ musicFagottoIMvtIII = \relative c {
 	ees2 ees8. ees16
 	f,2.\ff~
 	f
-	R2. \mark \markCcBox
+	R2. \resetMarkSpace \mark \markCcBox
 	r4 r8 g'\f-. f-. f,-.
 % Bars 381 to 385
 	f4-^( bes-^ bes,-^)
@@ -438,7 +442,7 @@ musicFagottoIMvtIII = \relative c {
 	bes2-> g8. bes16
 	bes4-.-> ees-.-> bes-.->
 % Bars 401 to 405
-	ees-.-> bes-.-> ees-.-> \mark \markDdBox
+	ees-.-> bes-.-> ees-.-> \markXoffset #-0.3 \resetMarkSpace \mark \markDdBox
 	R2.*2
 	
 	d8-.\ff bes,-. r4 r
@@ -454,7 +458,7 @@ musicFagottoIMvtIII = \relative c {
 	d4\brack\ff g f
 	bes f bes
 	f2.\fermata \clef tenor
-	d'4.(\p ees8 f16[ g r16. c,32-.])
+	\textMark "Coda" d'4.(\p ees8 f16[ g r16. c,32-.])
 % Bars 416 to 420
 	c4(-> d-> ees8-. ees-.)
 	c4-> d2->
@@ -474,8 +478,8 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 % Bars 431 to 435
-	g4(\pp\< f ees8. f16
-	f4 << ees2\!~ {s4 s\>}>>
+	\hairpinShorten #'(0 . 2) g4(\pp\< f ees8. f16
+	f4 << ees2\!~ {s4 \hairpinShorten #'(-2 . 0) s\>}>>
 	ees2.)\!
 	d4(\< g a
 	<< bes2 {s4 s\!}>> bes8.\> bes16)
@@ -488,17 +492,17 @@ musicFagottoIMvtIII = \relative c {
 % Bars 441 to 445
 	<< f2. {s4 s\> s}>>
 	f8\p[ f] g[ g] a a
-	bes[ bes] bes[ bes] a a
-	bes[\< bes] bes[ bes] d d
-	f,[ f f f] f f\!
+	bes[ bes bes bes] a a
+	bes[\< bes bes bes] d d
+	f, f f f f f\!
 % Bars 446 to 450
 	f\mf[ f] g[ g] a a
-	bes[ bes] bes[ bes] f f
-	f[\< f] f[ f] g g
+	bes[ bes bes bes] f f
+	f[\< f f f] g g
 	a[ a a a] a a\!
 	bes[\f bes] a[ a] bes bes
 % Bars 451 to 455
-	a[ a a a] a a
+	a a a a a a
 	b[ b] c[ c] d d
 	ees[ ees] e[ e] bes! bes
 	b[ b] c[ c] d d

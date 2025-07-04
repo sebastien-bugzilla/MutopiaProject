@@ -140,7 +140,7 @@ musicFagottoIMvtII = \relative c {
 	\partCombineApart << bes1.-> {s4. s s s8 s s}>>
 	d4.( c << bes2.) {s4. s}>>
 	bes4.( b c ees8 d c)
-	bes!2.( b4. c)
+	bes!2.( b4. c4) \once \partCombineAutomatic r8
 % Bars 116 to 120
 	f2.\p~ f
 	a,4. bes( c des) \partCombineAutomatic

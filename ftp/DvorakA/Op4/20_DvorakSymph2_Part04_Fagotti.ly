@@ -43,17 +43,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4"
+			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4 — Fagotti"
 		}
 		instrument = \markup {
-			"Fagotti"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIMvtI
-%			}
+			\new Voice {
+				\formatFagottoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtI
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIMvtII
-%			}
+			\new Voice {
+				\formatFagottoIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtII
 			}
@@ -89,7 +89,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -99,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIMvtIII
-%			}
+			\new Voice {
+				\formatFagottoIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtIII
 			}
@@ -113,9 +113,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 3.
+				\bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -123,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIMvtIV
-%			}
+			\new Voice {
+				\formatFagottoIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtIV
 			}
@@ -137,9 +137,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. Finale"
 			}
 		}
 		\layout {
@@ -147,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIIMvtI
-%			}
+			\new Voice {
+				\formatFagottoIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtI
 			}
@@ -171,9 +171,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIIMvtII
-%			}
+			\new Voice {
+				\formatFagottoIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtII
 			}
@@ -187,7 +187,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.3 \bold 2.
 			}
 		}
 		\layout {
@@ -195,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIIMvtIII
-%			}
+			\new Voice {
+				\formatFagottoIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtIII
 			}
@@ -209,9 +209,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 3.
+				\bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -219,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIIMvtIV
-%			}
+			\new Voice {
+				\formatFagottoIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtIV
 			}
@@ -235,7 +235,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.8 \bold "4. Finale"
 			}
 		}
 		\layout {

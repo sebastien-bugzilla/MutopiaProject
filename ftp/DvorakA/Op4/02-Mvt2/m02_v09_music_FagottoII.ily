@@ -9,14 +9,14 @@ musicFagottoIIMvtII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	g4.\pp~ g8 r r16 fis(\< g4.~\> g8)\! r r16 g(
-	a4.\pp~ a8) r r16 gis(\< a4.\>~ a8\!) r r16 a(\pp
-	bes4.~\< bes8)\! r r16 a(_\crescmarkup\< bes4.~\> bes8)\! r r16 bes(\<
-	c4.~\> c8\!) r r16 b(\< c4.\>~ c8)\! r r16 c\(
+	g4.\pp~ g8 r r16 \hairpinShorten #'(0 . -1) fis(\< \hairpinShorten #'(1 . 0) g4.~\> g8)\! r r16 g(
+	a4.\pp~ a8) r r16 \hairpinShorten #'(0 . -1) gis(\< \hairpinShorten #'(1 . 0) a4.\>~ a8\!) r r16 a(\pp
+	bes4.~\< bes8)\! r r16 \hairpinShorten #'(0 . -1) a(_\crescmarkup\< \hairpinShorten #'(1 . 0) bes4.~\> bes8)\! r r16 bes(\<
+	c4.~\> c8\!) r r16 \hairpinShorten #'(0 . -0.5) b(\< \hairpinShorten #'(0.5 . 0) c4.\>~ c8)\! r r16 c\(
 	cis2.\mf( d)\)
 % Bars 6 to 10
-	<< {ees b } {s4. s\> s s4\! s8} >>
-	c2.( << a) {s8\> s s\! s4.}>>
+	<< {ees b } {s4.\> s s s4\! s8} >>
+	c2.( << a) {s8\> s s s8 s s\!}>>
 	d2.\pp~ d4.~ d8 r r
 	R1.*3
 	
@@ -36,20 +36,20 @@ musicFagottoIIMvtII = \relative c {
 	f2.\p f,\pp~
 	f1.~ \mark \default
 	f4 r8 r4 r8 r2.
-	c''2.\fz\>~ c\pp
+	\hairpinShorten #'(-0.5 . -0.5) c''2.-\offset X-offset -1 \fz\>~ c-\offset X-offset 1 \pp
 	bes8\< bes bes bes bes bes\! bes bes\> bes  bes bes bes\!
 % Bars 26 to 30
-	g2.\p\>~ g4\! r8 r4 r8
+	\hairpinShorten #'(-0.5 . -1.5) g2.\p\>~ g4\! r8 r4 r8
 	R1.*2
 	
 	bes,8\p\< bes bes  bes bes bes\!  bes bes bes\>  bes bes bes\!
 	g'2.\p~ g4.~ g8 r r
 % Bars 31 to 35
-	cis2.( bes)
+	cis2.( bes!)
 	a( g
 	fis8) r r r4 r8 r2.
 	R1.
-	ees4.\f d c bes
+	ees!4.\f d c bes
 % Bars 36 to 40
 	a g fis d'16(\> ees d c bes a)\! \mark \default
 	g2.\pp~ g4. g16( bes a g fis g)
@@ -61,13 +61,9 @@ musicFagottoIIMvtII = \relative c {
 	ees(\> e)\!_\dimmarkup
 	<< {f\p( bes,) } {s4. s\> s\! s}>>
 	c2.~ c4.~ c8 r r
-	R1.*4
+	R1.*8
 % Bars 46 to 50
 	
-	
-	
-	R1.
-	R1.*3
 % Bars 51 to 55
 	
 	
@@ -75,48 +71,48 @@ musicFagottoIIMvtII = \relative c {
 	\mmrPos #-4 R \no
 	f2.\fz  << fes {s8\> s s  s s s\!}>>
 % Bars 56 to 60
-	aes4.(\p\> ees)\! << aes2. {s4.\> s\!}>>
-	aes\p\<( a << bes2.) {s8\! s s\> s s s\!}>>
+	\hairpinShorten #'(-0.5 . -0.5) aes4.(\p\> ees)\! << aes2. {\hairpinShorten #'(0 . -1) s4.\> s\!}>>
+	\hairpinShorten #'(0 . 1.5) aes\p\<( a << bes2.) {\hairpinShorten #'(-1.5 . 0) s8\> s s s s s\!}>>
 	ees,2.\p~ ees4. des8( f bes) \mark \default
 	c2.(\p b)
 	bes! g~
 % Bars 61 to 65
 	g4 r8 r4 r8 r2.
-	R1.
-	R1.
-	R1.
+	R1.*3
+	
+	
 	b1.\pp~
 % Bars 66 to 70
 	b
 	d\pp~
 	d2.(~ d4.~ d16 a b f g d)
-	g,4.(\p gis_\pocoapococrescendo a bes)
-	c(\< cis d ees)\!
+	g,4.(_\ppocoapococresc gis a bes)
+	c(\< cis \once \stemUp d ees)\!
 % Bars 71 to 75
-	f,4.(\mf fis)\< g( aes)\!
+	f,4.(-\tweak extra-offset #'(0 . -10) ^\mf fis)\< g( aes)\!
 	g'4.\ff~ g8 r g f4.~ f8 r f \mark \default
 	f r r r4\fermata r8 r2.
 	R1.*7
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	\ni \mmrPos #-4 R1.
-	\mmrPos #-4 R \no \clef tenor
+	\clef tenor \ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no 
 	d'8(\mf c d ees d ees16 d c8\> bes c d c d16 c)\!
 	bes8(\p a bes\> c bes c16 bes a8 g a bes a bes16 a)\! \clef bass
 	ees\p ees aes aes g\< g f f ees ees d d ees ees ces' ces bes bes aes aes g g f f\!
 % Bars 86 to 90
 	e\mf e bes' bes aes aes\< g g f f e e f f des' des c c bes bes aes aes g g\!
-	fis\f fis c' c bes bes a! a g g fis fis g g ees' ees d d c c bes bes a a
+	fis-\offset X-offset 2 -\tweak extra-offset #'(-2 . 0) \f fis c' c bes bes a! a g g fis fis g g ees' ees d d c c bes bes a a
 	b1.\f \mark \default
-	c2.(\fpp\> bes!4.\! c)
+	\hairpinShorten #'(-0.5 . -0.5) c2.(\fpp\> bes!4.\! c)
 	bes( c des c)
 % Bars 91 to 95
 	<< {bes2.( des~ } {s8\< s_\crescmarkup s s s s\! s\> s s  s s s\!}>>
 	des4.)\pp r4 r8 r2.
 	c2.\pp( bes4. c)
 	bes( c des c)
-	aes,4.\<( a bes b\!)
+	\hairpinShorten #'(0 . 3) aes,4.\<( a bes b\!)
 % Bars 96 to 100
 	cis( d!) ees!(_\crescmarkup e)
 	fis,4.(\mf g!\< gis a)\!
@@ -132,57 +128,57 @@ musicFagottoIIMvtII = \relative c {
 % Bars 106 to 110
 	f4.(\pp aes << b2.)\< {s4. s8 s s\!}>>
 	c4.(\> ees\! fis, c')
-	bes4.(\< a_\pococresc g f!)\!
+	bes4.(\< a^\pococresc g f!)\!
 	d'(\< << c {s8 s s\!}>> bes4.\> << a) {s8 s s\!}>>
 	aes4.(\p g c ees)
 % Bars 111 to 115
 	d4.( e\< f aes,)\! 
-	<< {g2.\f( ges)} {s4. s s\> s8 s s\! }>>
+	<< {g2.-\offset X-offset -1.5 \f( ges)} {s4. s s\> s8 s s\! }>>
 	f4.(\p ees'\< << {d e)} {s4. s\!}>>
 	f2.~ << f {s4.\> s8 s s\!}>>
-	f2.~\p\> f4.~ f\!
+	f2.~\p\> f4.~ f4\! r8
 % Bars 116 to 120
 	R1.
 	r4 r8 ges4.(\brack\p\> f e)\!
 	a2.(\pp g!4. a)
 	g( a bes a)
-	g2.(\< << bes {s8\> s s s s s\!}>>
+	\hairpinShorten #'(0 . 1.2) g2.(\< << bes {\hairpinShorten #'(-1.2 . 0) s8\> s s s s s\!}>>
 % Bars 121 to 125
 	d4.)\p r4 r8 r2.
 	r r4 r8 f,16(\pp-. f-. a-. a-. c-. c)-. 
 	R1.*2
 	\mark \default
-	R1.
+	R1.*3
 % Bars 126 to 130
-	R1.*2
+	
 	
 	\ni \mmrPos #-4 R1. \no
 	r2. g8\ff-> fis-> g-> fis-> g-> fis->
 	r4 r8 fis(\p g fis) r2.
 % Bars 131 to 135
-	<< g,2.\p~ {s4. s\<}>> g4.~ g16( bes a g fis g)\!
-	<< a2.\sfz\>~ {s8 s s  s s s\!}>> a4.~\< a16( c bes a g a)\!
-	bes2.\fp\>~ bes4.~\! bes16(\< des c bes a bes)\!
-	c2.\fp\>~ c4.~\! c16(\< ees d c b c)\!
-	R1.*2
+	\textMark "Vi-" << g,2.\p~ {s4. \hairpinShorten #'(0 . 2) s-\tweak extra-offset #'(0 . -8.3) ^\<}>> g4.~ g16( bes a g fis g)\!
+	<< \hairpinShorten #'(-0.5 . -2) a2.-\tweak extra-offset #'(0 . -8) -\offset X-offset -1 ^\sfz\>~ {s8 s s  s s s\!}>> \hairpinShorten #'(2 . 0) a4.~\< a16( c bes a g a)\!
+	\hairpinShorten #'(-0.5 . -0.5) bes2.\fp\>~ bes4.~\! bes16(\< des c bes a bes)\!
+	\hairpinShorten #'(-0.5 . -0.5) c2.\fp\>~ c4.~\! c16(\< ees d! c b c)\!
+	R1. \textEndMark "-de"
 % Bars 136 to 140
+	R1.*3
 	
-	R1.*2
 	
 	des,8\ff r r r4 r8 d r r r4 r8 \mark \default
-	r2. ees'8-.\pp d-. c-. bes16-. a-. g8-. d-.
+	\offset X-offset 2.4 \textMark "Vi-" r2. ees'8-.\pp d-. c-. bes16-. a-. g8-. d-.
 % Bars 141 to 145
 	r4 r8 fis-.\pp g-. a-. bes16-. a-. g8-. d-. r4 r8
 	R1.
-	d8\f d'16 d d8 ees, ees'16 ees ees8 c, c'16 c c8 d, d'16 d d8
-	r4 r8 r r ges,16. ees32 ees16 r r8 ges16. ees32 ees16 r r8 ges16. e32
-	e4.->\ff a-> d,2.-^\fz
+	d8-\offset X-offset -2 \f d'16 d d8 ees, ees'16 ees ees8 c, c'16 c c8 d, d'16 d d8
+	r4 r8 r4 ges,16. ees32 ees16 r r8 ges16. ees32 ees16 r r8 ges16. e32
+	e4.->\ff a-> d,2.-^\fz \textEndMark "-de"
 % Bars 146 to 150
 	g8\p r r r4 r8 r2.
 	R1.
 	g'4.(\p fis g fis)
 	g( fis << g2. {s8\< s s  s s s\!}>>
-	b2.)\> g4\pp r8 g4 r8
+	\hairpinShorten #'(-1 . -0.3) b2.)\> g4\pp r8 g4 r8
 % Bar 151
 	g2.~ g4 r8 r4 r8\fermata \fine
 }

@@ -386,10 +386,10 @@ musicFagottoIMvtI = \relative c {
 	f
 	g
 	aes)
-	c,8-.( d16 c \tuplet 3/2 4 {bes8 a bes}
+	c,8-. d16( c \tuplet 3/2 4 {bes8 a bes} % slur begins on 2nd eight based on part score and bar 316 / 318
 	a4. d8)
 % Bars 316 to 320
-	c-.( d16 c \tuplet 3/2 4 {bes8 a bes}
+	c-. d16( c \tuplet 3/2 4 {bes8 a bes} % slur begins on 2nd eight based on part score and bar 316 / 318
 	a4. d8)
 	c-. d16( c bes_\crescmarkup a bes c
 	a8) a r d
@@ -600,7 +600,7 @@ musicFagottoIMvtI = \relative c {
 	\partCombineApart r ces8-.^\ppocoapococresc bes16( ces
 % Bars 501 to 505
 	e8) r c!-. b16( c
-	f8) r des-.( c16 des
+	f8) r des-. c16( des
 	ges8) r d!-. cis16( d) \partCombineAutomatic \mark \default
 	\tuplet 3/2 4 {b8(\f a b} a4)
 	\tuplet 3/2 4 {b8( a b} a4)
@@ -768,11 +768,11 @@ musicFagottoIMvtI = \relative c {
 	d'2_\fpespr
 	R2 \clef tenor
 	\partCombineApart d(_\pespr \mark \default
-	c4 bes
+	c4 bes\<
 % Bars 656 to 660
-	c ees~
-	ees d8. c16
-	c4 d) 
+	c ees~\!
+	ees\> d8. c16
+	c4 d)\!
 	ees( d
 	ees g~
 % Bars 661 to 665
