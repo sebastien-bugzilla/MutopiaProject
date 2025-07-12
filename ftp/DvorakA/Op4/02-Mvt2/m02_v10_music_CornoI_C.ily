@@ -84,7 +84,7 @@ musicCornoIMvtII = \relative c {
 	
 	
 	\partCombineApart d'4.(\p\< g2.\!~_\pocoapococrescendo g8 f c)
-	ees2.( c4. d)
+	e2.( c4. d)
 % Bars 71 to 75
 	c << f2.(~ {s8 s s  s s s16 s} >> f8 ees bes!) \partCombineAutomatic
 	d4.\f r4 r8 ees4. r4 r8 \mark \default

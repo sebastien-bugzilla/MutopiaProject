@@ -45,6 +45,10 @@ musicCornoIMvtII = \relative c {
 	R1.*6
 % Bars 31 to 35
 	
+	
+	
+	
+	% d (g real note) in part score are indicated for Horn III in conductor score (c real note)
 % Bars 36 to 40
 	bes8\brack\mf bes bes  bes bes bes  a a a r4 r8 \mark \default
 	r4 r8 f2.\pp~ f4 r8
@@ -66,9 +70,9 @@ musicCornoIMvtII = \relative c {
 	
 	\ni \mmrPos #-4 R1. \no
 	bes4.(\pp des2.\< << bes4.) {s8 s s\!}>>
-	<< {aes2.(->\mf a)} {s8\< s s s s s\! s\> s s s s s\!} >>
+	<< {aes2.(->\mf a)} {\hairpinShorten #'(-0.5 . -1.5) s8\< s s s s \hairpinShorten #'(1.5 . 0) s\> s s s s s s\!} >>
 % Bars 56 to 60
-	bes4.(\p g4 f8) c'4( bes8 ees4 ces16 ees,)
+	bes4.(\p g4 f8) c'4( bes!8 ees4 ces16 ees,)
 	<< { g!4.(\p c2. d!4. } {s4.\< s8 s s\! s4. s\> }>>
 	ees4)\! r8 r4 r8 r2. \mark \default
 	R1.*2
@@ -83,8 +87,8 @@ musicCornoIMvtII = \relative c {
 	
 	
 	
-	d'4.(\p\< g2.\!~_\pocoapococrescendo g8 f c)
-	ees2.(\p\< c4. d)\!
+	d'4.(\p\< g2.\!~^\pocoapococrescendo g8 f c)
+	e2.(\p\< c4. d)\!
 % Bars 71 to 75
 	c\mf << f2.\<(~ {s8 s s  s s s16 s\!} >> f8 ees bes)
 	d4.\f r4 r8 ees4. r4 r8 \mark \default
@@ -105,7 +109,7 @@ musicCornoIMvtII = \relative c {
 	ees4 r8 r4 r8 r2.
 	r8 des'\pp des~  des des des~  des des des~  des des des~
 	des des des~   des des des~   des des des~  des des des
-	<< c2. {s8\p\< s s  s s s\!}>> des2.
+	<< c2. {\hairpinShorten #'(-0.5 . -1.5) s8\p\< s s  s s s\!}>> des2.
 % Bars 96 to 100
 	aes4.(\< << des2.\!~ {s4. s_\crescmarkup}>> des8 ces ges)
 	cis4.(\mf fis2.->\<~ fis8\! e b)
@@ -115,7 +119,7 @@ musicCornoIMvtII = \relative c {
 % Bars 101 to 105
 	d8 r r r4 r8 e!8 r r r4\fermata r8 \mark \default
 	R1.
-	<< d1.~ {s8\pp\< s s s s s\! s\> s s s s s\!}>>
+	<< d1.~ {\hairpinShorten #'(-0.5 . -1.8) s8-\offset X-offset -1 \pp\< s s s s s \hairpinShorten #'(1.8 . -2.5) s\> s s s s s\!}>>
 	d4. fis,(\pp g a)
 	bes2.( c4. d)
 % Bars 106 to 110
@@ -143,26 +147,26 @@ musicCornoIMvtII = \relative c {
 	
 	
 	\ni \mmrPos #4 R1. \no
-	r2. a'8->\ff a-> a->   a-> a-> a->
+	r2. a'!8->\ff a-> a->   a-> a-> a->
 	R1.
 % Bars 131 to 135
-	r4 r8 d2.\pp~ d4 r8
+	\textMark "Vi-" r4 r8 d2.\pp~ d4 r8
 	r4 r8 cis2.~ cis4 r8
 	r4 r8 d2.~ d4 r8
 	r4 r8 cis2.~\< cis4\! r8
-	d8\ff r r r4 r8 r2.
+	d8\ff r r r4 r8 r2. \textEndMark "-de"
 % Bars 136 to 140
 	R1.*2
 	
 	r2. d4.\pp~ d8 r r
 	d\ff r r r4 r8 cis r r r4 r8 \mark \default
-	R1.*3
+	\offset X-offset 2.3 \textMark "Vi-" R1.*3
 % Bars 141 to 145
 	
 	
 	e8\f e16 e e8 d d16 d d8 d d16 d d8 e e16 e e8
 	r4 r8  r r bes16. d!32 d16 r r8 bes16. d32 d16 r r8 bes16. d32
-	d4.\ff~ d8 r r e4.~ e8 r r
+	d4.\ff~ d8 r r e4.~ e8 r r \textEndMark "-de"
 % Bars 146 to 150
 	f4.(\p^\solo e4~ e16 g f4. e4~ e16 g)
 	f4.( e4~ e16 g f4. e4~ e16 g)

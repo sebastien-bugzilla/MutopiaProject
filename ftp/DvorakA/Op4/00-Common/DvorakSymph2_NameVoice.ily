@@ -303,7 +303,7 @@ nameCornoIIMvtIV = {
 nameCornoIIIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Corno III" "in Es"
+			\lower #1 "Corno III" \concat { "in E" \text-flat }
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -321,7 +321,7 @@ nameCornoIIIMvtII = {
 nameCornoIIIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Corno III" "in B"
+			\lower #1 "Corno III" \concat { "in E" \text-flat }
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -339,7 +339,7 @@ nameCornoIIIMvtIV = {
 nameCornoIVMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Corno IV" "in Es"
+			\lower #1 "Corno IV" \concat { "in E" \text-flat }
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -357,7 +357,7 @@ nameCornoIVMvtII = {
 nameCornoIVMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Corno IV" "in B"
+			\lower #1 "Corno IV" \concat { "in E" \text-flat }
 		}
 	}
 	\set Staff.shortInstrumentName = ""

@@ -51,17 +51,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4"
+			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4 — Corni"
 		}
 		instrument = \markup {
-			"Corni"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIMvtI
-%			}
+			\new Voice {
+				\formatCornoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(cornoI) \tempiPartMvtI
 			}
@@ -75,10 +75,7 @@
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
+				\bold 1.
 			}
 		}
 		\layout {
@@ -86,9 +83,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIMvtII
-%			}
+			\new Voice {
+				\formatCornoIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(cornoI) \tempiPartMvtII
 			}
@@ -102,7 +99,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1 \bold 2.
 			}
 		}
 		\layout {
@@ -110,9 +107,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIMvtIII
-%			}
+			\new Voice {
+				\formatCornoIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(cornoI) \tempiPartMvtIII
 			}
@@ -124,9 +121,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 3.
+				\bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -134,9 +131,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIMvtIV
-%			}
+			\new Voice {
+				\formatCornoIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(cornoI) \tempiPartMvtIV
 			}
@@ -148,9 +145,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. Finale"
 			}
 		}
 		\layout {
@@ -158,9 +155,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIIMvtI
-%			}
+			\new Voice {
+				\formatCornoIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(cornoII) \tempiPartMvtI
 			}
@@ -182,9 +179,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIIMvtII
-%			}
+			\new Voice {
+				\formatCornoIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(cornoII) \tempiPartMvtII
 			}
@@ -198,7 +195,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.5 \bold 2.
 			}
 		}
 		\layout {
@@ -206,9 +203,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIIMvtIII
-%			}
+			\new Voice {
+				\formatCornoIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(cornoII) \tempiPartMvtIII
 			}
@@ -220,9 +217,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 3.
+				\bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -230,9 +227,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIIMvtIV
-%			}
+			\new Voice {
+				\formatCornoIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(cornoII) \tempiPartMvtIV
 			}
@@ -244,9 +241,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. Finale"
 			}
 		}
 		\layout {
@@ -254,9 +251,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIIIMvtI
-%			}
+			\new Voice {
+				\formatCornoIIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(cornoIII) \tempiPartMvtI
 			}
@@ -278,9 +275,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIIIMvtII
-%			}
+			\new Voice {
+				\formatCornoIIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(cornoIII) \tempiPartMvtII
 			}
@@ -294,7 +291,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.3 \bold 2.
 			}
 		}
 		\layout {
@@ -302,9 +299,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIIIMvtIII
-%			}
+			\new Voice {
+				\formatCornoIIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(cornoIII) \tempiPartMvtIII
 			}
@@ -318,7 +315,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #2.5 \bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -326,9 +323,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIIIMvtIV
-%			}
+			\new Voice {
+				\formatCornoIIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(cornoIII) \tempiPartMvtIV
 			}
@@ -342,17 +339,25 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2.5 \bold "4. Finale"
 			}
 		}
 		\layout {
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIVMvtI
-%			}
+			\new Voice {
+				\formatCornoIVMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(cornoIV) \tempiPartMvtI
 			}
@@ -374,9 +379,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIVMvtII
-%			}
+			\new Voice {
+				\formatCornoIVMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(cornoIV) \tempiPartMvtII
 			}
@@ -390,7 +395,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.2 \bold 2.
 			}
 		}
 		\layout {
@@ -398,9 +403,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIVMvtIII
-%			}
+			\new Voice {
+				\formatCornoIVMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(cornoIV) \tempiPartMvtIII
 			}
@@ -414,7 +419,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.4 \bold "3. Scherzo" 
 			}
 		}
 		\layout {
@@ -422,9 +427,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIVMvtIV
-%			}
+			\new Voice {
+				\formatCornoIVMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(cornoIV) \tempiPartMvtIV
 			}
@@ -438,7 +443,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2.5 \bold "4. Finale"
 			}
 		}
 		\layout {

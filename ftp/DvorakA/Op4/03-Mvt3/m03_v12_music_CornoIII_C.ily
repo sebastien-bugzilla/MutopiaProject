@@ -190,7 +190,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 206 to 210
 		r4 \partCombineApart e8. e16 e8 \partCombineAutomatic r
 		e,2.\pp~
-		e
+		e_\crescmarkup
 		d~
 		d
 % Bars 211 to 215

@@ -89,7 +89,7 @@ musicCornoIIIMvtIV = \relative c {
 	c2 b
 	a d
 	<<{c d} \\ {\InCueContext e f}>>
-	g\ff r4 r8 d
+	\textMark "Vi-" g\ff r4 r8 d
 % Bars 106 to 110
 	g2 r4 r8 d
 	g4. d8 g,4. d'8
@@ -107,7 +107,7 @@ musicCornoIIIMvtIV = \relative c {
 	c-> b->
 	c-> g->
 	a d
-	b a \mark \default
+	b a \offset X-offset #-2.3 \textEndMark "-de" \mark \default
 % Bars 121 to 125
 	e'4\ff r r2
 	e4 r r2
@@ -136,13 +136,13 @@ musicCornoIIIMvtIV = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R
 	\mmrPos #-4 R \no
-	<< c1\p~ {s2 s_\dimmarkup }>>
-	c1~
+	\startMeasureCount << f1\p~ {s2 s_\dimmarkup }>>  % c => f : based on part score and recording
+	f1~
 % Bars 151 to 155
-	c~
-	c~
-	c~
-	c
+	f~
+	f~
+	f~
+	f \stopMeasureCount
 	R1*6
 % Bars 156 to 160
 	
@@ -161,8 +161,8 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 171 to 175
 	a4. a8 \tuplet 3/2 2 {a4-. a-. a-.}
 	cis2( d4) r
-	c4.\pp c8 \tuplet 3/2 2 {c4 c\< c\!}
-	<< c2~ {s4\> s\!}>> c4 r \mark \default
+	c!4.\pp c8 \tuplet 3/2 2 {\once \tupletUp c4 c\< c\!}
+	<< c2~ {s4\> s}>> c4\! r \mark \default
 	e1->\f~
 % Bars 176 to 180
 	e
@@ -173,15 +173,15 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 181 to 185
 	<< e->~ {s4\> s s s\!}>>
 	e1
-	ees\ff~
+	\startMeasureCount ees\ff~
 	ees~
 	ees~
 % Bars 186 to 190
 	ees~
 	ees~
-	ees~
+	ees~ \stopMeasureCount
 	ees4 r r2
-	gis,4.-> e8-. dis4.-> cis8-.
+	gis,4.-> e!8-. dis4.-> cis8-.
 % Bars 191 to 195
 	c!8 r r4 \tuplet 3/2 2 {c'4-> c-> c->}
 	c1~
@@ -253,7 +253,7 @@ musicCornoIIIMvtIV = \relative c {
 	c1\>~
 	c4.\! c8_\dimmarkup \tuplet 3/2 2 {c4 c c}
 	c1~
-	c4.\> c8 \tuplet 3/2 2 {c4 c c\!}
+	c4.\> c8 \tuplet 3/2 2 {\once \tupletUp c4 c c\!}
 % Bars 251 to 255
 	c1
 	r2 \tuplet 3/2 2 {c4 e c}
@@ -287,9 +287,13 @@ musicCornoIIIMvtIV = \relative c {
 	d2-^ d4-. d-.
 	e,2\p^\soli fis8. e16 cis'4
 	b2 r
-	R1*18
+	R1*6
 % Bars 286 to 290
 	
+	
+	
+	
+	\tempoXoffset #-1 R1*12
 % Bars 291 to 295
 	
 % Bars 296 to 300
@@ -318,7 +322,7 @@ musicCornoIIIMvtIV = \relative c {
 	R1*3
 	
 	
-	\tuplet 3/2 2 {fis2\f fis4 fis2 fis4
+	\tuplet 3/2 2 {fis2-\offset X-offset -1 \f fis4 fis2 fis4
 % Bars 331 to 335
 	fis2 fis4 fis2 fis4
 	fis2 fis4 fis2 fis4
@@ -346,7 +350,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 356 to 360
 	aes~
 	aes
-	a!_\fbrackf~
+	a!^^_\fbrackf~
 	\tuplet 3/2 2 {a4 b-. cis-.} d r
 	a1~
 % Bars 361 to 365
@@ -371,8 +375,8 @@ musicCornoIIIMvtIV = \relative c {
 	c4-.\ff c-. r2
 	c4-. c-. r2
 	c4-. c-. r2
-	<< c1\ff\> {s4 s s s\!}>>
-	f,1_\fpdim~
+	c1\ff\> 
+	f,1_\fpdimD~
 % Bars 381 to 385
 	f~
 	f~
@@ -437,12 +441,12 @@ musicCornoIIIMvtIV = \relative c {
 	R1*2
 % Bars 441 to 445
 	
-	r2 \tuplet 3/2 2 {cis4->\f\< cis-> cis->\!}
+	r2 \tuplet 3/2 2 {\once \tupletUp cis4->\f\< cis-> cis->\!}
 	eis1->\fz
 	cis4-> r r2
 	R1
 % Bars 446 to 450
-	r2 \tuplet 3/2 2 {cis4->\f\< cis-> cis->\!}
+	r2 \tuplet 3/2 2 {\once \tupletUp cis4->\f\< cis-> cis->\!}
 	eis1->\fz
 	cis2 \tuplet 3/2 2 {cis4-. cis-. cis-.}
 	cis2-> cis->
@@ -468,7 +472,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 466 to 470
 	\ni \mmrPos #4 R1
 	\mmrPos #4 R \no
-	\tuplet 3/2 2 {e4\ff e e} e2~
+	\tuplet 3/2 2 {e4-\offset X-offset -1 \ff e e} e2~
 	\tuplet 3/2 2 {e4 e e} e2~
 	\tuplet 3/2 2 {e4 e e} e2~
 % Bars 471 to 475
@@ -495,7 +499,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 491 to 495
 	
 % Bars 496 to 500
-	\tuplet 3/2 2 {b4\ff b b b b b
+	\tuplet 3/2 2 {b4-\offset X-offset -1 \ff b b b b b
 	b b b b b b
 	b b b b b b
 	b b b b b b}
@@ -503,7 +507,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 501 to 505
 	b-> e->
 	b-> e->
-	b-> e->
+	b-> e->  % c => e based on conductor score
 	e1->
 	c2-> d->
 % Bars 506 to 510
@@ -516,7 +520,7 @@ musicCornoIIIMvtIV = \relative c {
 	g2.~ g8 g
 	ees'1~
 	ees \mark \default
-	c4\ff g c g
+	\startMeasureCount c4\ff g c g
 	c g c g
 % Bars 516 to 520
 	c g c g
@@ -525,7 +529,7 @@ musicCornoIIIMvtIV = \relative c {
 	c g c g
 	c g c g
 % Bars 521 to 525
-	c g c g
+	c g c g \stopMeasureCount
 	e'1~
 	e2 \tuplet 3/2 2 {e4-. e-. e-.}
 	ees1~

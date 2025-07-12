@@ -40,10 +40,10 @@ musicCornoIIIMvtII = \relative c {
 	
 	
 	
-	d8\mf d d  d d d  d d d  d d d
+	d8\mf d d  d d d  d d d  d d d  % according to conductor score. not in part score.
 % Bars 36 to 40
-	R1. \mark \default
-	R1.*4
+	<< R1. {s2 s \tempoXoffset #-2 s }>> \mark \default
+	\tempoXoffset #0.5 R1.*4
 % Bars 41 to 45
 	r4 r8 c2.->\mf~ c4 r8
 	r4 r8 d4.(\p ees~ ees4)_\dimmarkup r8
@@ -53,7 +53,7 @@ musicCornoIIIMvtII = \relative c {
 % Bars 46 to 50
 	R1.*2
 	
-	<< c1. {s8\p\< s s s s s\! s\> s s  s s s\!}>>
+	<< c1. {\hairpinShorten #'(-0.3 . -0.5) s8-\offset X-offset -1.5 \p\< s s s s s\! \hairpinShorten #'(0.5 . 0) s\> s s  s s s\!}>>
 	R1.*8
 	
 % Bars 51 to 55
@@ -91,8 +91,8 @@ musicCornoIIIMvtII = \relative c {
 % Bars 81 to 85
 	d,2.(\pp\< e4. << c) {s8 s s\!} >>
 	a'2.(\mf g4.\> f\!)
-	<< e1.~ {s4.\pdimD\> s s s8 s s\!}>>
-	e2.\pp~ e4 r8 r4 r8
+	<< e1.~ {s4.-\offset X-offset -2 \pdimD-\alterBroken shorten-pair #'((-0.6 . -0.5)(-1 . 0)) \> s s s8 s s}>>
+	<< e2.~ {s4. s\pp}>> e4 r8 r4 r8
 	R1.*3
 % Bars 86 to 90
 	
@@ -149,23 +149,23 @@ musicCornoIIIMvtII = \relative c {
 	r2. c8->\ff b-> c-> b-> c-> b->
 	r4 r8 e(\pp-> e-> e->) r2.
 % Bars 131 to 135
-	r4 r8 e2.\pp~ e4 r8
+	\textMark "Vi-" r4 r8 e2.\pp~ e4 r8
 	r4 r8 f2.~ f4 r8
 	r4 r8 f2.~ f4 r8
 	r4 r8 f2.~\< f4\! r8
-	fis8\ff r r r4 r8 r2.
+	fis8\ff r r r4 r8 r2. \textEndMark "-de"
 % Bars 136 to 140
 	R1.*3
 	
 	
 	f8\ff r r r4 r8 e8 r r r4 r8 \mark \default
-	R1.*3
+	\offset X-offset #2.3 \textMark "Vi-" R1.*3
 % Bars 141 to 145
 	
 	
 	e8\f e16 e e8 c c16 c c8 f f16 f f8 e e16 e e8
-	r4 r8 r r d16. d32 d16 r r8 d16. d32 d16 r r8 d16. fis32
-	fis2.\ff e
+	r4 r8 r4 d16. d32 d16 r r8 d16. d32 d16 r r8 d16. fis32
+	fis2.\ff e \textEndMark "-de"
 % Bars 146 to 150
 	e8\p r r r4 r8 r2.
 	R1.*2

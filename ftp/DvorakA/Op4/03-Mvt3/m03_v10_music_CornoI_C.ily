@@ -213,7 +213,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 206 to 210
 		r4 bes8. bes16 bes8 r
 		r4 \dynEO #'(-2.5 . 1) f'8-.\pp f-. g4
-		r f8-. f-. g4
+		r f8-._\crescmarkup f-. g4
 		r g8-. g-. aes4
 		r g8-. g-. aes4
 % Bars 211 to 215

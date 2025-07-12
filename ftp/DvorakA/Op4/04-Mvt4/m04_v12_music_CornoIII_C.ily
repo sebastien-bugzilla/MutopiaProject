@@ -124,13 +124,13 @@ musicCornoIIIMvtIV = \relative c {
 	
 	
 	
-	<< c1\p~ {s2 s_\dimmarkup }>>
-	c1~
+	<< f1\p~ {s2 s_\dimmarkup }>> % c => f : based on part score and recording
+	f1~
 % Bars 151 to 155
-	c~
-	c~
-	c~
-	c
+	f~
+	f~
+	f~
+	f
 	R1*10
 % Bars 156 to 160
 	
@@ -330,7 +330,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 356 to 360
 	aes~
 	aes
-	a!_\fbrackf~
+	a!-^_\fbrackf~
 	\tuplet 3/2 2 {a4 b-. cis-.} d r
 	a1~
 % Bars 361 to 365

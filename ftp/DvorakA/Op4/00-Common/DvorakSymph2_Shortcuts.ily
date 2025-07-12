@@ -64,6 +64,7 @@ fzpocoapococrescC = \markup {
 	}
 }
 fzmarc = \markup {\hspace #-0.5 \dynamic fz \italic {marc.}}
+fzcresc = \markup {\hspace #-0.5 \dynamic fz \italic {cresc.}}
 
 fcresc = \markup {\hspace #0.05 \dynamic f \italic {cresc.}}
 fdiminuendo = \markup {\hspace #0.05 \dynamic f \italic {diminuendo}}
@@ -359,7 +360,21 @@ natural = \markup {
 	\smaller \text-natural
 }
 
+ine = \markup {
+	"in E"
+}
 
+inf = \markup {
+	"in F"
+}
+
+ind = \markup {
+	"in D"
+}
+
+ines = \markup {
+	"in Es"
+}
 
 %%%%%%%%%%%
 % functions

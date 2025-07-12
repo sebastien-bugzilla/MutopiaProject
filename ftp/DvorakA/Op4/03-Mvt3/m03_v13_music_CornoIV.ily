@@ -26,11 +26,11 @@ musicCornoIVMvtIII = \relative c {
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R \no
 % Bars 31 to 35
-	\voiceTwo r4 \oneVoice r8. d''16 d4->\fz
+	\startMeasureCount \voiceTwo r4 \oneVoice r8. d''16 d4->\fz
 	r4 r8. d16 d4->\fz
-	r4 r8. d16_\crescmarkup d4->\fz
+	r4 r8. d16-\offset X-offset -4 _\crescmarkup d4->\fz
 	r4 r8. d16 d4->\fz
-	r4 r8. d16 d4->\fz
+	r4 r8. d16 d4->\fz \stopMeasureCount 
 % Bars 36 to 40
 	d,2.->\fz
 	d->\fz
@@ -42,17 +42,25 @@ musicCornoIVMvtIII = \relative c {
 	c'8. c16 c8 r r4
 	c8.\> c16 c8\! r r4
 	c8.\p\> c16 << c2\fermata {s4 s\!}>> \mark \default
-	R2.*21
+	R2.*12
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	\mmrnDown R2.*3
+	
+	
+	\mmrLength #13 \tempoXoffset #-1 \mmrnDown R2.*3
 % Bars 61 to 65
 	
+	
+	\mmrnDown R2.*3
+	
+	
 % Bars 66 to 70
-	R2.\fermata
+	\once \ni R2.\fermata
 	R2.*6
 % Bars 71 to 75
 	
@@ -63,10 +71,12 @@ musicCornoIVMvtIII = \relative c {
 % Bars 76 to 80
 	g~
 	g
-	R2.*7
+	R2.
+	R2.*3
+	
 % Bars 81 to 85
 	
-	
+	\mmrLength #12 \tempoXoffset #-1  R2.*3
 	
 	\mark \default
 	R2.*4
@@ -102,8 +112,8 @@ musicCornoIVMvtIII = \relative c {
 	d
 % Bars 111 to 115
 	R2. \mark \default
-	R2.
-	R
+	R2.*2
+	
 	c8.\ff c16 c8 r r4
 	g8. g16 g8 r r4
 % Bars 116 to 120
@@ -147,9 +157,9 @@ musicCornoIVMvtIII = \relative c {
 	r8 g,\f g4. g8
 	r g g4. g8
 	r g g4. g8
-	r g g4. g8 \mark \default
+	r g g4. g8 \markXoffset #-0.2 \markWhiteout \mark \default
 % Bars 151 to 155
-	R2.*24^\mutaind \transposition d
+	\mmrLength #18 R2.*24-\offset X-offset 1 ^\mutaind \transposition d
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -167,7 +177,7 @@ musicCornoIVMvtIII = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R \no \section
 	\repeat volta 2 {
-		g'2.\fz\>~
+		g'2.\fz\>~^\ind
 		<< g~ {s4 s s\!}>>
 % Bars 181 to 185
 		g2.~\pp
@@ -177,7 +187,7 @@ musicCornoIVMvtIII = \relative c {
 		
 % Bars 186 to 190
 		
-		g,2.\pp
+		g,2.-\offset X-offset -2.3 \pp
 		g8. g16 g8 r r4
 		g2.
 		g8. g16 g8 r r4
@@ -202,7 +212,7 @@ musicCornoIVMvtIII = \relative c {
 % Bars 206 to 210
 		r4 a8. a16 a8 r
 		e'2.\pp~
-		e
+		e_\crescmarkup
 		d~
 		d
 % Bars 211 to 215
@@ -233,18 +243,18 @@ musicCornoIVMvtIII = \relative c {
 % Bars 241 to 245
 	
 	
-	\ni \mmrPos #4 R2.
-	\mmrPos #4 R \no
+	\ni \mmrPos #6 R2.
+	\mmrPos #6 R \no
 	e2.\pp~
 % Bars 246 to 250
 	e2 r4 \mark \default
-	R2.*4^\mutaines \transposition ees
+	\mmrLength #15 \mmrnDown R2.*4-\offset X-offset 1 ^\mutaines \transposition ees
 % Bars 251 to 255
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no \section
-	g,2.\pp~
+	\startMeasureCount g,2.-\offset X-offset -2.6 \pp~^\ines
 % Bars 256 to 260
 	g~
 	g~
@@ -252,7 +262,7 @@ musicCornoIVMvtIII = \relative c {
 	g~
 	g~
 % Bars 261 to 265
-	g~
+	g~ \stopMeasureCount
 	g2 r4
 	<< bes2.~ {s4\< s s\!}>>
 	<< bes2. {s4\> s s\!}>>
@@ -293,18 +303,26 @@ musicCornoIVMvtIII = \relative c {
 % Bars 311 to 315
 	c8.\> c16 c8\! r r4
 	d,8.\pp d16 d2\fermata_\espr \mark \markAaBox
-	R2.*21
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
+	
+	
+	
+	\mmrnDown R2.*3
 % Bars 326 to 330
 	
+	
+	\mmrLength #17 \mmrnDown \tempoXoffset -1 R2.*3
+	
+	
 % Bars 331 to 335
+	R2.*3
 	
 	
-	
-	R2.\fermata
+	\once \ni R2.\fermata
 	R2.*4
 % Bars 336 to 340
 	
@@ -319,7 +337,11 @@ musicCornoIVMvtIII = \relative c {
 	g~
 	g
 % Bars 346 to 350
-	R2.*7
+	R2.
+	R2.*3
+	
+	
+	\mmrLength #13 \tempoXoffset #-1 R2.*3
 % Bars 351 to 355
 	
 	\mark \markBbBox
@@ -330,7 +352,7 @@ musicCornoIVMvtIII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #8 R
 	\mmrPos #8 R \no
-	
+	R2.
 	r4 r r8 g\f
 % Bars 361 to 365
 	g2-> r4
@@ -355,9 +377,9 @@ musicCornoIVMvtIII = \relative c {
 	d2.\ff~
 	d
 	R2. \mark \markCcBox
-	R2.
+	R2.*2
 % Bars 381 to 385
-	R
+	
 	c8.\ff c16 c8 r r4
 	g8. g16 g8 r r4
 	fis'8. fis16 fis8 r r4
@@ -394,7 +416,7 @@ musicCornoIVMvtIII = \relative c {
 	b b d,
 	d d d
 	d2.\fermata
-	g,8\p r g r g r
+	\textMark "Coda" \startMeasureCount g,8\p r g r g r
 % Bars 416 to 420
 	g r g r g r
 	g r g r g r
@@ -406,7 +428,7 @@ musicCornoIVMvtIII = \relative c {
 	g r g r g r
 	g r g r g r
 	g r g r g r
-	g r g r g r
+	g r g r g r \stopMeasureCount 
 % Bars 426 to 430
 	g r r4 r
 	R2.*4
@@ -479,15 +501,11 @@ musicCornoIVMvtIII = \relative c {
 	c-. a-. c-.
 	a-. c-. a-.
 	b-. r r
-	R2.*4
+	R2.*8
 % Bars 486 to 490
 	
-	
-	
-	R2.*2
-	
 % Bars 491 to 495
-	R2.*2
+	
 	
 	r4 r b,-.\pp
 	R2.*2
