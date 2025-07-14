@@ -376,6 +376,19 @@ ines = \markup {
 	"in Es"
 }
 
+inb = \markup {
+	"in B"
+}
+
+DoublePercentNumberOne = {
+	\once \override Score.RehearsalMark.padding = #0.2
+	\mark \markup {
+		\fontsize #-7 \musicglyph "one"
+	}
+}
+
+
+
 %%%%%%%%%%%
 % functions
 %%%%%%%%%%%

@@ -9,7 +9,7 @@ musicTrombeIIMvtI = \relative c {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	R2*8
+	\mmrLength #24 R2*8
 % Bars 6 to 10
 	
 	
@@ -123,11 +123,14 @@ musicTrombeIIMvtI = \relative c {
 		d~
 		d
 % Bars 131 to 135
-		R2*25
+		\mmrLength #17 \tempoXoffset #-1 R2*13
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	
+		
+		
+		
+		R2*12
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -169,26 +172,32 @@ musicTrombeIIMvtI = \relative c {
 		\mark \default
 		\ni \mmrPos #-4 R2 \no
 % Bars 201 to 205
-		c2->\brack\f
-		R
-		c->
-		R
-		c->
+		<<{
+			\oneVoice c2->\brack\f \DoublePercentNumberOne
+			R
+			c->
+			R
+			c->
 % Bars 206 to 210
-		R
-		c->
-		R
-		c->\fz
-		R
+			R
+			c->
+			R
+			c->\fz
+			R
 % Bars 211 to 215
-		c->\fz
-		R
-		c\f
-		R
-		c->
+			c->\fz
+			R
+			c\f
+			R
+			c->
 % Bars 216 to 220
-		R
-		fis->\f
+			R
+		} \\ {
+			\set countPercentRepeats = ##t
+			\omit DoublePercentRepeat
+			\repeat percent 8 { s2*2 }
+		}>>
+		fis2->\f
 		R
 		fis
 		R
@@ -196,7 +205,7 @@ musicTrombeIIMvtI = \relative c {
 		fis
 		R
 		fis
-		c4.->\ff \tuplet 3/2 8 {c16 c c}
+		c4.^>-\tweak extra-offset #'(0 . 0.2) \ff \tuplet 3/2 8 {c16 c c}
 		c4.-> \tuplet 3/2 8 {c16 c c}
 % Bars 226 to 230
 		c8 c16 c \tuplet 3/2 4 {c8 c c}
@@ -262,7 +271,7 @@ musicTrombeIIMvtI = \relative c {
 	r d->
 % Bars 296 to 300
 	r d->
-	r d-> \mark \default
+	r d-> \markXoffset #-0.2 \markWhiteout \mark \default
 	r fis->\f
 	r fis->
 	r fis->
@@ -273,7 +282,7 @@ musicTrombeIIMvtI = \relative c {
 	r c_\dimmarkup
 	r c\p
 % Bars 306 to 310
-	d2\pp~
+	\startMeasureCount d2\pp~
 	d~
 	d~
 	d~
@@ -281,7 +290,7 @@ musicTrombeIIMvtI = \relative c {
 % Bars 311 to 315
 	d~
 	d~
-	d~
+	d~ \stopMeasureCount
 	d8 r r4
 	R2*15
 % Bars 316 to 320
@@ -334,16 +343,16 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	
-	r4 g'\f
+	\startMeasureCount r4 g'\f
 	r g
 % Bars 396 to 400
 	r g
 	r g
 	r g
 	r g
-	r g
+	r g \stopMeasureCount
 % Bars 401 to 405
-	r g\fermata
+	r g\fermata 
 	R2*38
 % Bars 406 to 410
 	
@@ -414,7 +423,7 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	
-	\ni \mmrPos #4 R2
+	\textMark "Vi-" \ni \mmrPos #4 R2
 % Bars 501 to 505
 	\mmrPos #4 R
 	\mmrPos #4 R
@@ -455,7 +464,7 @@ musicTrombeIIMvtI = \relative c {
 % Bars 541 to 545
 	
 	
-	\mark \default
+	\offset X-offset #-2.3 \textEndMark "-de" \mark \default
 	\ni \mmrPos #4 R2
 	\mmrPos #4 R
 % Bars 546 to 550
@@ -485,17 +494,22 @@ musicTrombeIIMvtI = \relative c {
 % Bars 566 to 570
 	
 	\mark \default
-	R2*39
+	R2*14
 % Bars 571 to 575
 	
 % Bars 576 to 580
 	
 % Bars 581 to 585
 	
+	\mmrLength #15 \tempoXoffset #-1 R2*13
 % Bars 586 to 590
 	
 % Bars 591 to 595
 	
+	
+	
+	
+	\tempoXoffset #-1 R2*12
 % Bars 596 to 600
 	
 % Bars 601 to 605
@@ -549,23 +563,31 @@ musicTrombeIIMvtI = \relative c {
 	\tuplet 3/2 4 {c8 c c} c8. c16
 	g'8 r r4
 % Bars 646 to 650
-	R2*9
+	R2*5
 % Bars 651 to 655
+	\mmrLength #10 \mmrnDown R2*4
 	
 	
-	
-	\mark \default
-	R2*28
+	\markXoffset #-0.2 \markWhiteout \mark \default
+	\mmrLength #19 R2*7
 % Bars 656 to 660
 	
 % Bars 661 to 665
 	
+	R2
+	\mmrLength #12 R2*4
+	
+	
 % Bars 666 to 670
 	
+	\mmrLength #12 R2*4
+	
+	
+	
 % Bars 671 to 675
-	
+	\mmrLength #11 R2*5
 % Bars 676 to 680
-	
+	\mmrLength #17 R2*7
 % Bars 681 to 685
 	
 	\mark \default

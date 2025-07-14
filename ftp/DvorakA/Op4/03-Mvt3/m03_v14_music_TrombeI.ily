@@ -28,18 +28,24 @@ musicTrombeIMvtIII = \relative c {
 	
 	
 	
-	R2.\fermata \mark \default
-	R2.*21
+	\once \ni R2.\fermata \mark \default
+	R2.*12
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	R2.*3
+	
+	
+	\mmrLength #14 \tempoXoffset #-1 R2.*3
 % Bars 61 to 65
 	
+	
+	R2.*3
 % Bars 66 to 70
-	R2.\fermata
+	\once \ni R2.\fermata
 	R2.*12
 % Bars 71 to 75
 	
@@ -130,7 +136,7 @@ musicTrombeIMvtIII = \relative c {
 	r4 c2->
 	r4 c2-> \mark \default
 % Bars 151 to 155
-	R2.*28^\mutaind \transposition d
+	\mmrLength #18 \mmrnDown R2.*28^\mutaind \transposition d
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -160,7 +166,7 @@ musicTrombeIMvtIII = \relative c {
 		\mmrPos #-4 R
 		\mmrPos #-4 R \no
 % Bars 196 to 200
-		g'2.~
+		g'2.~^\ind
 		g~
 		g
 		R
@@ -188,7 +194,7 @@ musicTrombeIMvtIII = \relative c {
 		bes\f r r
 		c\f r r \mark \default
 	}
-	\transposition bes R2.*28^\mutainb
+	\transposition bes \mmrLength #18 R2.*28^\mutainb
 % Bars 221 to 225
 	
 % Bars 226 to 230
@@ -237,29 +243,37 @@ musicTrombeIMvtIII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	g4\f r r
+	g4\f^\inb r r
 	g r r
 % Bars 306 to 310
 	g r r
-	g r g_\dimmarkup
-	r\> g r
+	g r g\dimD\>
+	r g r
 	g r g\p
 	R2.*2
 % Bars 311 to 315
 	
-	R2.\fermata \mark \markAaBox
-	R2.*21
+	\once \ni R2.\fermata \mark \markAaBox
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
+	
+	
+	
+	\mmrnDown R2.*3
 % Bars 326 to 330
 	
+	
+	\mmrLength #13 \mmrnDown \tempoXoffset #-1 R2.*3
+	
+	
 % Bars 331 to 335
+	R2.*3
 	
 	
-	
-	R2.\fermata
+	\once \ni R2.\fermata
 	R2.*11
 % Bars 336 to 340
 	
@@ -347,19 +361,27 @@ musicTrombeIMvtIII = \relative c {
 	r r d
 	e d e
 	d2.\fermata
-	R2.*22
+	\textMark "Coda" \mmrnDown R2.*11
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	
 % Bars 426 to 430
+	\mmrLength #11 \mmrnDown R2.*4
 	
+	
+	
+	\mmrnDown R2.
 % Bars 431 to 435
+	\mmrLength #11 \mmrnDown R2.*3
+	
+	
+	\mmrnDown R2.*3
 	
 % Bars 436 to 440
 	
-	R2.\fermata
-	R2.*12
+	\once \ni R2.\fermata
+	\mmrLength #12 \mmrnDown R2.*12
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -370,12 +392,12 @@ musicTrombeIMvtIII = \relative c {
 	\ni \mmrPos #-4 R2.
 % Bars 451 to 455
 	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-7 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R
+	\mmrPos #-6 R \no
 % Bars 456 to 460
-	<< c2.-> {s4\ff\> s s\!}>>
+	<< c2.-> {\hairpinShorten #'(-0.4 . -1.5) s4\ff\> s s\!}>>
 	<< g'2.-> {s4\> s s\!}>>
 	<< c,2.-> {s4\> s s\!}>>
 	<< g'2.-> {s4\> s s\!}>>
@@ -417,5 +439,5 @@ musicTrombeIMvtIII = \relative c {
 % Bars 496 to 500
 	
 % Bar 501
-	R2.\fermata \fine
+	\once \ni R2.\fermata \fine
 }

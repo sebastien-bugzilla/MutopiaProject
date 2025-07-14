@@ -2245,7 +2245,7 @@ cueVoiceTrombeIMvtI = \relative c {
 	% bars 9 - 12
 	\transpose bes c' {
 		\relative c''' {
-			\voiceOne bes8-.\pp^\markup {Viol.I.} c16( bes \tuplet 3/2 4 {g8 f g\<}
+			bes8-.\pp-\offset X-offset -5 ^\markup {Viol.I.} c16( bes \tuplet 3/2 4 {g8 f g\<}
 			f) d-.( c-. bes-.)\!
 			bes'4.( a8)
 			\tuplet 3/2 4 { g8( f d')} s4
@@ -2255,7 +2255,7 @@ cueVoiceTrombeIMvtI = \relative c {
 	% bars 24 - 25
 	\transpose bes c' {
 		\relative c''' {
-			d4.->(^\markup {Viol.I.} cis8)
+			d4.->(-\offset X-offset -5 ^\markup {Viol.I.} cis8)
 			\tuplet 3/2 4 {b!8( a fis')} s4
 		}
 	}
@@ -2263,7 +2263,7 @@ cueVoiceTrombeIMvtI = \relative c {
 	% bars 49 - 50
 	\transpose bes f {
 		\relative c'' {
-			d8\repeatTie^\markup {Cor.I.} aes( aes'8. ges16)
+			\voiceOne d8\repeatTie-\offset X-offset -1 ^\markup {Cor.I.} aes( aes'8. ges16)
 			ges8 f4( ees16 des)
 		}
 	}
@@ -2277,10 +2277,10 @@ cueVoiceTrombeIMvtI = \relative c {
 	% bars 123 - 126
 	\transpose bes c' {
 		\relative c {
-			\clef bass \voiceOne f2\startTrillSpan^\markup {Timp.}
+			\clef bass \voiceOne \trillSpanPadding #-3 f2\startTrillSpan-\offset X-offset -5 ^\markup {Timp.}
 			f
 			f
-			f\stopTrillSpan \clef treble
+			<< f { s4 s\stopTrillSpan}>> \clef treble
 		}
 	}
 	s2*29
@@ -2309,7 +2309,7 @@ cueVoiceTrombeIMvtI = \relative c {
 	% bars 290 - 293
 	\transpose bes c' {
 		\relative c'' {
-			\voiceOne c4.(^\markup {Ob.I.} b8
+			\voiceOne c4.(-\offset X-offset -3 ^\markup {Ob.I.} b8
 			\tuplet 3/2 4 { a8 g e'} e4)
 			c4.( b8)
 			\tuplet 3/2 4 { a8\f( g e'} e4)
@@ -2387,11 +2387,11 @@ cueVoiceTrombeIMvtIII = \relative c {
 	\transpose bes f {
 		\relative c'' {
 			<< {
-				\InCueContext c4(^\markup {Cor.I.II.} ees des)
+				\InCueContext c4(-\offset X-offset #-2.3 ^\markup {\column { \lower #1.5 "Cor." "I.II."}} ees des)
 				c( d! ees)
 				c2.
 			}\\{
-				\InCueContext aes4(\p\> c bes)
+				\InCueContext aes4(-\offset X-offset -1 \p\> c bes)
 				aes2(\! g4)\p
 				<< c2. {s4\> s s8 s\!}>>
 			}>>
@@ -2401,7 +2401,7 @@ cueVoiceTrombeIMvtIII = \relative c {
 	% bars 93 - 96
 	\transpose bes c' {
 		\relative c''' {
-			\voiceOne c4(->\fz^\markup {Viol.I.} bes) ees,8.( g16)
+			\oneVoice c4(->\fz-\offset X-offset -5 ^\markup {Viol.I.} bes) ees,8.( g16)
 			g4(->\fz f) bes,8.( c'16)
 			c4(->\fz bes) ees,8.( g16)
 			g4(->\fz f) bes,8.( d'16)
@@ -2438,14 +2438,14 @@ cueVoiceTrombeIMvtIII = \relative c {
 	\transpose bes f {
 		\relative c'' {
 			<<{
-				\InCueContext c8. c16 c2(~
+				\InCueContext c8.^\markup {Cor.I.II} c16 c2(~
 				c4 ees des)
 				c( d! ees)
 				c2.
 			}\\{
 				\InCueContext a8.\f a16 a2(
-				aes4\p\> c bes)
-				aes2( g4)\p
+				aes4\p\> c bes)\!
+				aes2( g4)-\offset X-offset 0.5 \p
 				<< c2. {s4\> s s8 s\!}>>
 			}>>
 		}
@@ -2454,7 +2454,7 @@ cueVoiceTrombeIMvtIII = \relative c {
 	% bars 360 - 364
 	\transpose bes c' {
 		\relative c''' {
-			g4(\f^\markup {Viol.I.} f) bes,8.( c'16)
+			\oneVoice g4(\f^\markup {Viol.I.} f) bes,8.( c'16)
 			c4(->\fz bes) ees,8.( g16)
 			g4(->\fz f) bes,8.( c'16)
 			c4(->\fz bes) ees,8.( g16) 
@@ -2465,12 +2465,12 @@ cueVoiceTrombeIMvtIII = \relative c {
 	% bars 450 - 455
 	\transpose bes c' {
 		\relative c''' {
-			bes4.(\f\<^\markup {Viol.I.} c8 d f)\!
+			\ottava #1 bes4.(\f\<-\tweak extra-offset #'(-1.5 . 9.2) _\markup {Viol.I.} c8 d f)\!
 			a2( g4) 
 			\tuplet 3/2 4 {f8 f f ees ees ees d d d
 			c c c a' a a g g g
 			f f f ees ees ees d d d
-			c c c c' c c bes bes bes}
+			c c c c' c c bes bes bes} \ottava #0
 		}
 	}
 }
@@ -2479,8 +2479,8 @@ cueVoiceTrombeIMvtIV = \relative c {
 	% bar 35 - 36
 	\transpose ees c {
 		\relative c''' {
-			\voiceOne ees8:16^\markup {Viol.I.} d: c: bes:\< c: d: ees: f:
-			g: f: ees: d: ees: f: g: a:\!
+			\ottava #1 \voiceOne ees8:16-\offset X-offset -5.5 ^\markup {Viol.I.} d: c: bes:\< c: d: ees: f:
+			g: f: ees: d: ees: f: g: a:\! \ottava #0
 		}
 	}
 	s1*48
@@ -2532,7 +2532,7 @@ cueVoiceTrombeIMvtIV = \relative c {
 	}
 	s1*48
 	% bars 318 - 321
-	\transpose ees c {
+	\transpose ees f {
 		\relative c' {
 			\voiceTwo \tuplet 3/2 2 { <c c'>4\pp^\markup {Cor.I.II.} q q  q q q
 			q q q  q q q
@@ -2554,7 +2554,7 @@ cueVoiceTrombeIMvtIV = \relative c {
 	% bars 406 - 409
 	\transpose ees c {
 		\relative c {
-			\clef bass des2\p^\markup {Fag.I.} des4. des8
+			\clef bass des2\p^\markup {Fag.I.} des4.\< des8\!
 			des'2(~ des8 ces bes aes)
 			ges2\< ges4.-> ges8\!
 			ges'2(~\fz ges8 fes ees des)
@@ -2582,7 +2582,7 @@ cueVoiceTrombeIIMvtI = \relative c {
 	% bars 9 - 12
 	\transpose bes c' {
 		\relative c''' {
-			\voiceOne bes8-.\pp^\markup {Viol.I.} c16( bes \tuplet 3/2 4 {g8 f g\<}
+			\oneVoice bes8-.\pp-\offset X-offset -5 ^\markup {Viol.I.} c16( bes \tuplet 3/2 4 {g8 f g\<}
 			f) d-.( c-. bes-.)\!
 			bes'4.( a8)
 			\tuplet 3/2 4 { g8( f d')} s4
@@ -2592,7 +2592,7 @@ cueVoiceTrombeIIMvtI = \relative c {
 	% bars 24 - 25
 	\transpose bes c' {
 		\relative c''' {
-			d4.->(^\markup {Viol.I.} cis8)
+			d4.->(-\offset X-offset -5 ^\markup {Viol.I.} cis8)
 			\tuplet 3/2 4 {b!8( a fis')} s4
 		}
 	}
@@ -2600,7 +2600,7 @@ cueVoiceTrombeIIMvtI = \relative c {
 	% bars 49 - 50
 	\transpose bes f {
 		\relative c'' {
-			d8\repeatTie^\markup {Cor.I.} aes( aes'8. ges16)
+			\voiceOne d8\repeatTie-\offset X-offset -1 ^\markup {Cor.I.} aes( aes'8. ges16)
 			ges8 f4( ees16 des)
 		}
 	}
@@ -2614,10 +2614,10 @@ cueVoiceTrombeIIMvtI = \relative c {
 	% bars 123 - 126
 	\transpose bes c' {
 		\relative c {
-			\clef bass \voiceOne f2\pp\startTrillSpan^\markup {Timp.}
+			\clef bass \voiceOne \trillSpanPadding #-3 f2\pp\startTrillSpan-\offset X-offset -5 ^\markup {Timp.}
 			f
 			f
-			f\stopTrillSpan \clef treble
+			<< f {s4 s\stopTrillSpan}>> \clef treble
 		}
 	}
 	s2*29
@@ -2634,7 +2634,7 @@ cueVoiceTrombeIIMvtI = \relative c {
 	% bar 200
 	\transpose bes c' {
 		\relative c {
-			\clef bass <f aes d>2^\markup {Trbni} \clef treble
+			\oneVoice \clef bass <f aes d>2^\markup {Trbni} \clef treble
 		}
 	}
 	s2*66
@@ -2646,7 +2646,7 @@ cueVoiceTrombeIIMvtI = \relative c {
 	% bars 290 - 293
 	\transpose bes c' {
 		\relative c'' {
-			\voiceOne c4.(^\markup {Ob.I.} b8
+			\voiceOne c4.(-\offset X-offset -3 ^\markup {Ob.I.} b8
 			\tuplet 3/2 4 { a8 g e'} e4)
 			c4.( b8)
 			\tuplet 3/2 4 { a8\f( g e'} e4)
@@ -2724,11 +2724,11 @@ cueVoiceTrombeIIMvtIII = \relative c {
 	\transpose bes f {
 		\relative c'' {
 			<< {
-				\InCueContext c4(^\markup {Cor.I.II.} ees des)
+				\InCueContext c4(-\offset X-offset #-2.3 ^\markup {\column { \lower #1.5 "Cor." "I.II."}} ees des)
 				c( d! ees)
 				c2.
 			}\\{
-				\InCueContext aes4(\p\> c bes)
+				\InCueContext aes4(-\offset X-offset -1 \p\> c bes)
 				aes2(\! g4)\p
 				<< c2. {s4\> s s8 s\!}>>
 			}>>
@@ -2738,7 +2738,7 @@ cueVoiceTrombeIIMvtIII = \relative c {
 	% bars 93 - 96
 	\transpose bes c' {
 		\relative c''' {
-			\voiceOne c4(->\fz^\markup {Viol.I.} bes) ees,8.( g16)
+			c4(->\fz-\offset X-offset -5 ^\markup {Viol.I.} bes) ees,8.( g16)
 			g4(->\fz f) bes,8.( c'16)
 			c4(->\fz bes) ees,8.( g16)
 			g4(->\fz f) bes,8.( d'16)
@@ -2763,7 +2763,7 @@ cueVoiceTrombeIIMvtIII = \relative c {
 	% bars 299 - 303
 	\transpose bes c' {
 		\relative c''' {
-			r4^\markup {Fl.picc.} r g16(\mf f ees bes'
+			\oneVoice r4^\markup {Fl.picc.} r g16(\mf f ees bes'
 			f8) r r4 g16( f ees bes'
 			f8) r r4 \acciaccatura e'8\f f r
 			r4 r \acciaccatura e8\f f r
@@ -2775,14 +2775,14 @@ cueVoiceTrombeIIMvtIII = \relative c {
 	\transpose bes f {
 		\relative c'' {
 			<<{
-				\InCueContext c8. c16 c2(~
+				\InCueContext c8.^\markup {Cor.I.II.} c16 c2(~
 				c4 ees des)
 				c( d! ees)
 				c2.
 			}\\{
 				\InCueContext a8.\f a16 a2(
-				aes4\p\> c bes)
-				aes2( g4)\p
+				aes4\p\> c bes)\!
+				aes2( g4)-\offset X-offset 0.5 \p
 				<< c2. {s4\> s s8 s\!}>>
 			}>>
 		}
@@ -2802,12 +2802,12 @@ cueVoiceTrombeIIMvtIII = \relative c {
 	% bars 450 - 455
 	\transpose bes c' {
 		\relative c''' {
-			bes4.(\f\<^\markup {Viol.I.} c8 d f)\!
+			\ottava #1 \oneVoice bes4.(\f\<-\tweak extra-offset #'(0.7 . 10) _\markup {Viol.I.} c8 d f)\!
 			a2( g4) 
 			\tuplet 3/2 4 {f8 f f ees ees ees d d d
 			c c c a' a a g g g
 			f f f ees ees ees d d d
-			c c c c' c c bes bes bes}
+			c c c c' c c bes bes bes} \ottava #0
 		}
 	}
 }
@@ -2816,8 +2816,8 @@ cueVoiceTrombeIIMvtIV = \relative c {
 	% bar 35 - 36
 	\transpose ees c {
 		\relative c''' {
-			\voiceOne ees8:16^\markup {Viol.I.} d: c: bes:\< c: d: ees: f:
-			g: f: ees: d: ees: f: g: a:\!
+			\voiceOne \ottava #1 ees8:16-\offset X-offset -5 ^\markup {Viol.I.} d: c: bes:\< c: d: ees: f:
+			g: f: ees: d: ees: f: g: a:\! \ottava #0
 		}
 	}
 	s1*48
@@ -2869,7 +2869,7 @@ cueVoiceTrombeIIMvtIV = \relative c {
 	}
 	s1*48
 	% bars 318 - 321
-	\transpose ees c {
+	\transpose ees f {
 		\relative c' {
 			\voiceTwo \tuplet 3/2 2 { <c c'>4\pp^\markup {Cor.I.II.} q q  q q q
 			q q q  q q q
@@ -2891,7 +2891,7 @@ cueVoiceTrombeIIMvtIV = \relative c {
 	% bars 406 - 409
 	\transpose ees c {
 		\relative c {
-			\clef bass des2\p^\markup {Fag.I.} des4. des8
+			\clef bass des2\p^\markup {Fag.I.} des4.\< des8\!
 			des'2(~ des8 ces bes aes)
 			ges2\< ges4.-> ges8\!
 			ges'2(~\fz ges8 fes ees des)

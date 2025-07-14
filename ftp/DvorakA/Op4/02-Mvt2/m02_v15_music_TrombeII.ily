@@ -19,14 +19,16 @@ musicTrombeIIMvtII = \relative c {
 % Bars 21 to 25
 	
 	\mark \default
-	R1.*14
+	R1.
+	R
+	R1.*11
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	\mark \default
-	R1.*20
+	<< R1. {s2 s \tempoXoffset #-2 s}>> \mark \default
+	\tempoXoffset #0.5 R1.*20
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -60,8 +62,8 @@ musicTrombeIIMvtII = \relative c {
 % Bars 86 to 90
 	
 	\ni \mmrPos #-4 R1. \no
-	d'1.\ff \mark \default
-	a8\ff r r r4 r8 r2.
+	d'1.\ff \resetMarkSpace \mark \default
+	a8-\offset X-offset -2 -\tweak extra-offset #'(2 . 0) \ff r r r4 r8 r2.
 	R1.*9
 % Bars 91 to 95
 	
@@ -90,28 +92,28 @@ musicTrombeIIMvtII = \relative c {
 	
 	
 	\ni \mmrPos #4 R1. \no
-	r2. b8->\ff b-> b-> b-> b-> b->
-	R1.*5
+	r2. b8->-\offset X-offset -2.5 \ff b-> b-> b-> b-> b->
+	R1.
 % Bars 131 to 135
+	\textMark "Vi-" R1.*4
 	
 	
 	
-	
-	g8\ff r r r4 r8 r2.
+	g8\ff r r r4 r8 r2. \textEndMark "-de"
 % Bars 136 to 140
 	R1.*3
 	
 	
-	e'8\ff r r r4 r8 fis8 r r r4 r8 \mark \default
-	R1.*3
+	e'8\ff r r r4 r8 fis8 r r r4 r8 \markXoffset #-0.2 \markWhiteout \mark \default
+	\offset X-offset #2 \textMark "Vi-" R1.*3
 % Bars 141 to 145
 	
 	
 	dis8\f dis16 dis dis8 e e16 e e8 fis fis16 fis fis8 dis dis16 dis dis8
 	R1.
-	e4.->\ff~ e8 r r b!4.->~ b8 r r
+	e4.->\ff~ e8 r r b!4.->~ b8 r r \textEndMark "-de"
 % Bars 146 to 150
 	R1.*5
 % Bar 151
-	R1.\fermata \fine
+	\once \ni R1.\fermata \fine
 }

@@ -22,6 +22,7 @@
 \include "./00-Common/DvorakSymph2_Shortcuts.ily"
 \include "./00-Common/DvorakSymph2_Tempi.ily"
 \include "./00-Common/DvorakSymph2_Format_Part06_Trombe.ily"
+%\include "./00-Common/DvorakSymph2_Format_temp.ily"
 \include "./00-Common/DvorakSymph2_CueVoice.ily"
 \include "./01-Mvt1/m01_v14_music_TrombeI.ily"
 \include "./01-Mvt1/m01_v15_music_TrombeII.ily"
@@ -43,17 +44,20 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4"
+			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4 — Trombe"
 		}
 		instrument = \markup {
-			"Trombe"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatTrombeIMvtI
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatTrombeIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(trombeI) \tempiPartMvtI
 			}
@@ -71,13 +75,14 @@
 			}
 		}
 		\layout {
+%			system-count = 9 % 29 % 26
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombeIMvtII
-%			}
+			\new Voice {
+				\formatTrombeIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(trombeI) \tempiPartMvtII
 			}
@@ -91,17 +96,21 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.8 \bold 2.
 			}
 		}
 		\layout {
+%			system-count = 7
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatTrombeIMvtIII
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatTrombeIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(trombeI) \tempiPartMvtIII
 			}
@@ -115,17 +124,21 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.5 \bold "3. Scherzo"
 			}
 		}
 		\layout {
+%			system-count = 16 % 25 % 21
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatTrombeIMvtIV
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatTrombeIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(trombeI) \tempiPartMvtIV
 			}
@@ -139,17 +152,21 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.8 \bold "4. Finale"
 			}
 		}
 		\layout {
+%			system-count = 26 % 32
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatTrombeIIMvtI
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatTrombeIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(trombeII) \tempiPartMvtI
 			}
@@ -167,15 +184,16 @@
 			}
 		}
 		\layout {
+%			system-count = 9
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombeIIMvtII
-%			}
 			\new Voice {
-				\keepWithTag #'(trombeII) \tempiPartMvtI
+				\formatTrombeIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(trombeII) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtII
@@ -187,17 +205,21 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.2 \bold 2.
 			}
 		}
 		\layout {
+%			system-count = 7
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatTrombeIIMvtIII
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatTrombeIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(trombeII) \tempiPartMvtIII
 			}
@@ -211,17 +233,21 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.7 \bold "3. Scherzo"
 			}
 		}
 		\layout {
+%			system-count = 16
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatTrombeIIMvtIV
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatTrombeIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(trombeII) \tempiPartMvtIV
 			}
@@ -235,10 +261,11 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.7 \bold "4. Finale"
 			}
 		}
 		\layout {
+%			system-count = 24
 		}
 	}
 }

@@ -9,7 +9,7 @@ musicTrombeIIMvtIV = \relative c {
 	\key c \major
 	\transposition ees
 % Bars 1 to 5
-	R1*34
+	\mmrLength #19 R1*34
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -28,7 +28,7 @@ musicTrombeIIMvtIV = \relative c {
 	\ni \mmrPos #-4 R1
 % Bars 36 to 40
 	\mmrPos #-4 R \no \mark \default
-	b'2\ff r
+	\startMeasureCount b'2\ff r
 	b r
 	b r
 	b r
@@ -36,10 +36,10 @@ musicTrombeIIMvtIV = \relative c {
 	b r
 	b r 
 	b r 
-	b r
+	b r \stopMeasureCount
 	b4 r r2
 % Bars 46 to 50
-	R1*31
+	\mmrLength #13 \mmrnDown R1*31
 % Bars 51 to 55
 	
 % Bars 56 to 60
@@ -82,7 +82,7 @@ musicTrombeIIMvtIV = \relative c {
 	g2 bes
 	b! b
 	b << e \\ \InCueContext d >>
-	r a\ff~
+	\textMark "Vi-" r a\ff~
 % Bars 106 to 110
 	a1
 	r2 a~
@@ -100,7 +100,7 @@ musicTrombeIIMvtIV = \relative c {
 	g r fis r
 	g r r2
 	d4 r d r
-	r2 r4 e \mark \default
+	r2 r4 e \offset X-offset #-2.3 \textEndMark "-de" \mark \default
 % Bars 121 to 125
 	d2.->\ff r4
 	d2.-> r4
@@ -111,7 +111,7 @@ musicTrombeIIMvtIV = \relative c {
 	g,4-. g-. r2
 	d'4-. d-. r2
 	g,4 g8 g \tuplet 3/2 2 {g4 g g}
-	<< g1\fp\>~ {s4 s s s8 s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1.5) g1\fp\>~ {s4 s s s8 s\!}>>
 	g4 g8 g \tuplet 3/2 2 {g4 g g}
 % Bars 131 to 135
 	g1\p\>~
@@ -138,7 +138,7 @@ musicTrombeIIMvtIV = \relative c {
 	\mmrPos #8 R
 	\mmrPos #6 R
 	\mmrPos #6 R \no
-	gis4->\brack\f gis-> gis-> gis->
+	gis4->-\tweak extra-offset #'(0 . -11.5) ^\brack\f gis-> gis-> gis->
 	gis2-> cis->   % c => cis according to part
 % Bars 171 to 175
 	e1->~
@@ -211,7 +211,7 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	\ni \mmrPos #-4 R1
+	\ni \mmrPos #-6 R1
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
@@ -231,9 +231,13 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 281 to 285
 	e2-^ e4-. e-.
 	dis r r2
-	R1*19
+	R1*7
 % Bars 286 to 290
 	
+	
+	
+	
+	\mmrLength #13 R1*12
 % Bars 291 to 295
 	
 % Bars 296 to 300
@@ -248,11 +252,11 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 316 to 320
 	
 	
-	\ni \mmrPos #4 R1
-	\mmrPos #4 R
-	\mmrPos #4 R
+	\ni \mmrPos #6 R1
+	\mmrPos #6 R
+	\mmrPos #6 R
 % Bars 321 to 325
-	\mmrPos #4 R \no
+	\mmrPos #6 R \no
 	g,2\fffzD r
 	g r
 	g r
@@ -378,12 +382,12 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 456 to 460
 	a-> r
 	a-> a->
-	e-> e->
+	\startMeasureCount e-> e->
 	e-> e->
 	e-> e->
 % Bars 461 to 465
 	e-> e->
-	e-> e->
+	e-> e-> \stopMeasureCount
 	e4-> e-> e-> e-> \mark \default
 	c r r2
 	R1
@@ -440,7 +444,7 @@ musicTrombeIIMvtIV = \relative c {
 	d' d
 	g,1->~
 	g \mark \default
-	g2->\ff d->
+	\startMeasureCount g2->\ff d->
 	g-> d->
 % Bars 516 to 520
 	g-> d->
@@ -449,7 +453,7 @@ musicTrombeIIMvtIV = \relative c {
 	g-> d->
 	g-> d->
 % Bars 521 to 525
-	g-> d->
+	g-> d-> \stopMeasureCount 
 	g,1->~
 	g2 \tuplet 3/2 2 {g4-. g-. g-.}
 	g1-^~
