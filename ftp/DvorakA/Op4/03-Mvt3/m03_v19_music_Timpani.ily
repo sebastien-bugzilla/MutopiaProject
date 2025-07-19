@@ -25,38 +25,46 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	
-	f8\pp f f f f f
+	\startMeasureCount f8\pp f f f f f
 % Bars 26 to 30
 	f f f f f f
 	f f f f f f
 	f f f f f f
 	f f f f f f
-	f f f_\pocoapococresc f f f
+	f f f_\pocoapococresc f f f \stopMeasureCount 
 % Bars 31 to 35
-	f2.:16
+	\startMeasureCount f2.:16
 	f:
 	f:
 	f:
-	f:
+	f: \stopMeasureCount
 % Bars 36 to 40
 	f8\f r r4 r
 	R2.*5
 % Bars 41 to 45
 	
-	<< f2.:16_\pdim {s4 s8 s\> s4}>>
+	f2.:16\pdimD\>
 	f2.:
 	f:\pp\fermata \mark \default
-	R2.*21
+	R2.*12
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	\mmrnDown R2.*3
+	
+	
+	\mmrnDown \mmrLength #13 \tempoXoffset #-1.5 R2.*3
 % Bars 61 to 65
 	
+	
+	R2.*3
+	
+	
 % Bars 66 to 70
-	R2.\fermata
+	\once \ni R2.\fermata
 	R2.*18
 % Bars 71 to 75
 	
@@ -131,7 +139,7 @@ musicTimpaniMvtIII = \relative c {
 	r r bes8\ff bes
 	bes r r4 r
 % Bars 141 to 145
-	r r bes8 bes
+	r r bes8 bes \break
 	r4 bes bes
 	r bes bes
 	r bes f'
@@ -143,7 +151,7 @@ musicTimpaniMvtIII = \relative c {
 	r bes r
 	r bes r \mark \default
 % Bars 151 to 155
-	R2.*28^\mutainda
+	\mmrLength #18 R2.*28-\offset X-offset 2 ^\mutainda
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -227,7 +235,7 @@ musicTimpaniMvtIII = \relative c {
 	a:
 % Bars 246 to 250
 	a: \mark \default
-	d4\pp r^\mutainbf r
+	d4\pp r-\offset X-offset -2 ^\mutainbf r
 	R2.*7
 % Bars 251 to 255
 	
@@ -259,19 +267,19 @@ musicTimpaniMvtIII = \relative c {
 % Bars 291 to 295
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	f2.:16\pp
+	\startMeasureCount f2.:16\pp^\inbf
 	f:
 	f:
 % Bars 296 to 300
 	f:
-	<<f: {s4_\brackM\pocoapoco s s_\crescmarkup}>>
+	<<f: {s4_\brackpocoapococresc s s}>>
 	f2.:\<
 	f:
 	<< f: {s4 s s8 s\!}>>
 % Bars 301 to 305
 	f2.:\f
 	f:
-	f:\f
+	f:\f \stopMeasureCount
 	f4\f r r
 	f r r
 % Bars 306 to 310
@@ -283,18 +291,26 @@ musicTimpaniMvtIII = \relative c {
 % Bars 311 to 315
 	<< f2.: {s4\> s s8 s\!}>>
 	f4\pp r r\fermata \mark \markAaBox
-	R2.*21
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
+	
+	
+	
+	\mmrnDown R2.*3
 % Bars 326 to 330
 	
+	
+	\mmrnDown \mmrLength #14 \tempoXoffset #-1 R2.*3
+	
+	
 % Bars 331 to 335
+	R2.*3
 	
 	
-	
-	R2.\fermata
+	\once \ni R2.\fermata
 	R2.*15
 % Bars 336 to 340
 	
@@ -333,8 +349,8 @@ musicTimpaniMvtIII = \relative c {
 	r4 r \grace {f16 f} f8 r
 % Bars 376 to 380
 	r4 r \grace {f16 f} f8 r
-	f2.\ff\startTrillSpan
-	<< f\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
+	\trillSpanPadding #-0.5 f2.\ff\startTrillSpan
+	<< \trillSpanPadding #-1 f\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
 	f4 r r \mark \markCcBox
 	R2.*2
 % Bars 381 to 385
@@ -345,9 +361,9 @@ musicTimpaniMvtIII = \relative c {
 	r4 r \grace {bes,16 bes} bes8 r
 % Bars 386 to 390
 	R2.
-	<< f'2.\ff\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
+	<< \trillSpanPadding #-1 f'2.\ff\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
 	R2.
-	<< f2.\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
+	<< \trillSpanPadding #-1 f2.\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
 	r4 \grace {bes,16 bes} bes8 r r4
 % Bars 391 to 395
 	r \grace {f'16 f} f8 r r4
@@ -378,7 +394,7 @@ musicTimpaniMvtIII = \relative c {
 	r bes f'
 	bes, f' bes,
 	f'2.\fermata
-	bes,8\p r bes r bes r
+	\textMark "Coda" \startMeasureCount bes,8\p r bes r bes r
 % Bars 416 to 420
 	bes8 r bes r bes r
 	bes8 r bes r bes r
@@ -390,20 +406,20 @@ musicTimpaniMvtIII = \relative c {
 	bes8 r bes r bes r
 	bes8 r bes r bes r
 	bes8 r bes r bes r
-	bes8 r bes r bes r
+	bes8 r bes r bes r \stopMeasureCount
 % Bars 426 to 430
 	bes r r4 r
 	R2.*6
 % Bars 431 to 435
 	
 	
-	<<f'2.\pp\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
+	<<\trillSpanPadding #-1 f'2.\pp\startTrillSpan {s4 s s8 s\stopTrillSpan}>>
 	bes,4 r r
 % Bars 436 to 440
 	R2.*2
 	
-	R2.\fermata
-	R2.*12
+	\once \ni R2.\fermata
+	\mmrLength #12 \mmrnDown R2.*12
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -411,13 +427,13 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 % Bars 451 to 455
 	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-7 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R
+	\mmrPos #-6 R \no
 % Bars 456 to 460
 	r4 bes8.\ff bes16 bes4
 	r f'8. f16 f4
@@ -445,5 +461,5 @@ musicTimpaniMvtIII = \relative c {
 % Bars 496 to 500
 	
 % Bar 501
-	R2.\fermata \fine
+	\once \ni R2.\fermata \fine
 }

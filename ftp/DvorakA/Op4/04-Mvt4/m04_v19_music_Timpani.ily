@@ -10,7 +10,7 @@ musicTimpaniMvtIV = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	R1
-	a1:16\pp
+	\startMeasureCount a1:16\pp
 	a:
 	a:
 	a:
@@ -19,7 +19,7 @@ musicTimpaniMvtIV = \relative c {
 	a:
 	a:
 	a:
-	a:
+	a: \stopMeasureCount
 % Bars 11 to 15
 	bes4 r r2
 	R1*23
@@ -46,7 +46,7 @@ musicTimpaniMvtIV = \relative c {
 	<< d {s4 s s s\stopTrillSpan }>>
 	\tuplet 3/2 2 {d4 d a d d a
 	d d a d d a}
-	d1\fpp\startTrillSpan
+	\startMeasureCount d1\fpp\startTrillSpan
 % Bars 46 to 50
 	d
 	d
@@ -55,7 +55,7 @@ musicTimpaniMvtIV = \relative c {
 	d
 % Bars 51 to 55
 	d
-	<< d {s4 s s s\stopTrillSpan}>>
+	<< d {s4 s s s\stopTrillSpan}>> \stopMeasureCount
 	d4 r^\dmutainf r2
 	R1*23
 % Bars 56 to 60
@@ -78,7 +78,7 @@ musicTimpaniMvtIV = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 % Bars 91 to 95
-	f1:16\ff
+	f1:16\ff^\inbfa
 	f2: f4 r
 	R1*10
 % Bars 96 to 100
@@ -88,7 +88,7 @@ musicTimpaniMvtIV = \relative c {
 	
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R \no
-	f1:16\ff
+	\textMark "Vi-" f1:16\ff
 % Bars 106 to 110
 	f:
 	f4 f f f
@@ -106,7 +106,7 @@ musicTimpaniMvtIV = \relative c {
 	
 	
 	
-	\mark \default
+	\offset X-offset #-2.3 \textEndMark "-de" \mark \default
 % Bars 121 to 125
 	bes,4\ff f'8 bes, f' bes, r f'
 	bes,4 f'8 bes, f' bes, r f'
@@ -143,7 +143,7 @@ musicTimpaniMvtIV = \relative c {
 	
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R \no \mark \default
-	a1\sfz\startTrillSpan
+	\startMeasureCount a1\sfz\startTrillSpan
 % Bars 176 to 180
 	a
 	a
@@ -159,11 +159,11 @@ musicTimpaniMvtIV = \relative c {
 % Bars 186 to 190
 	a
 	a
-	<< a {s4 s s s\stopTrillSpan}>>
+	<< a {s4 s s s\stopTrillSpan}>> \stopMeasureCount
 	a4 r r2
 	R1
 % Bars 191 to 195
-	r2 << bes2:16\f {s4 s\< }>>
+	r2 bes2:16\f\<
 	<< bes1: {s4 s s s\!}>>
 	bes4 r r2
 	R1
@@ -208,7 +208,7 @@ musicTimpaniMvtIV = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 % Bars 246 to 250
-	bes1:16\f
+	\startMeasureCount bes1:16\f
 	<< bes:\> {s4 s s s\!}>>
 	<< bes1: {s4 s\> s s}>>
 	<< bes1: {s4 s s\! s}>>
@@ -218,7 +218,7 @@ musicTimpaniMvtIV = \relative c {
 	bes:\pp
 	bes:
 	bes:
-	bes: \mark \default
+	bes: \stopMeasureCount \mark \default
 % Bars 256 to 260
 	bes4 r r2
 	R1*33
@@ -261,10 +261,10 @@ musicTimpaniMvtIV = \relative c {
 	
 	
 	\ni \mmrPos #4 R1
-	\mmrPos #8 R
+	\mmrPos #9 R
 	\mmrPos #4 R
 % Bars 321 to 325
-	\mmrPos #8 R \no
+	\mmrPos #9 R \no
 	bes2:16\ff r
 	bes: r
 	bes: r
@@ -314,9 +314,9 @@ musicTimpaniMvtIV = \relative c {
 	bes1:16
 	bes4 r r2
 % Bars 381 to 385
-	<< bes1\fp\startTrillSpan {s4 s s\> s}>>
+	<< \trillSpanPadding #-1 bes1\fp\startTrillSpan {s4 s s\> s}>>
 	bes4\stopTrillSpan\! r r2
-	bes1\fpp\startTrillSpan
+	\trillSpanPadding #-1 bes1\fpp\startTrillSpan
 	bes4\stopTrillSpan r r2
 	R1*7
 % Bars 386 to 390
@@ -368,7 +368,7 @@ musicTimpaniMvtIV = \relative c {
 	\mmrPos #-4 R
 % Bars 471 to 475
 	\mmrPos #-4 R \no
-	bes2:16\f bes:
+	\startMeasureCount bes2:16\f bes:
 	bes: bes:
 	bes: bes:
 	bes: bes:
@@ -376,7 +376,7 @@ musicTimpaniMvtIV = \relative c {
 	bes: bes:
 	bes: bes:
 	bes: bes:
-	bes: bes:
+	bes: bes: \stopMeasureCount
 	bes1\startTrillSpan
 % Bars 481 to 485
 	bes
@@ -409,7 +409,7 @@ musicTimpaniMvtIV = \relative c {
 	r f' r f
 	bes,1\fff\startTrillSpan
 	<< bes {s4 s s s\stopTrillSpan}>> \mark \default
-	bes2\ff f'->
+	\startMeasureCount bes2\ff f'->
 	bes,-> f'->
 % Bars 516 to 520
 	bes,-> f'->
@@ -418,7 +418,7 @@ musicTimpaniMvtIV = \relative c {
 	bes,-> f'->
 	bes,-> f'->
 % Bars 521 to 525
-	bes, f'
+	bes, f' \stopMeasureCount
 	bes,1\ff\startTrillSpan
 	<< bes {s4 s s s\stopTrillSpan}>>
 	\tuplet 3/2 1 {bes2-> bes-> bes->

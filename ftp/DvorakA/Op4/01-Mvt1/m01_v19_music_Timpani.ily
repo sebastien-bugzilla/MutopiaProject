@@ -9,7 +9,7 @@ musicTimpaniMvtI = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	bes2:16\pp
+	\startMeasureCount bes2:16\pp
 	bes:
 	bes:
 	bes:
@@ -22,7 +22,7 @@ musicTimpaniMvtI = \relative c {
 	bes:\<
 % Bars 11 to 15
 	bes:
-	<< bes: {s8 s s s\!}>>
+	<< bes: {s8 s s s\!}>> \stopMeasureCount 
 	bes2:\ff\fermata
 	R2*12
 % Bars 16 to 20
@@ -31,7 +31,7 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 26 to 30
 	\ni \mmrPos #4 R2\fermata \no \mark \default
-	f'2:32\ff
+	\startMeasureCount f'2:32\ff
 	f:
 	f:
 	f:
@@ -39,7 +39,7 @@ musicTimpaniMvtI = \relative c {
 	f:
 	f:
 	f:
-	f:
+	f: \stopMeasureCount
 	f8 r r4
 % Bars 36 to 40
 	R2*13
@@ -74,24 +74,24 @@ musicTimpaniMvtI = \relative c {
 		
 		bes8\pp^\solo bes16 bes bes8 bes16 bes 
 		bes8 bes16 bes bes8 bes16 bes 
-		bes2\startTrillSpan
+		\startMeasureCount bes2\startTrillSpan
 % Bars 71 to 75
 		bes
 		bes
 		bes
-		<< bes {s8\> s s s\!}>>
+		<< bes {s8\> s s s\!}>> \stopMeasureCount
 		R2*6\stopTrillSpan
 % Bars 76 to 80
 	
 % Bars 81 to 85
-		<< f'2:32 {s8\fz\> s s s\!}>>
+		<< f'2:32 {\hairpinShorten #'(-0.3 . -1) s8-\offset X-offset -1 \fz\> s s s\!}>>
 		<< f2: {s8\> s s s\!}>>
 		f8 r r4
 		R2*3
 		
 % Bars 86 to 90
 		
-		<< f2:32 {s8\f\< s s s\!}>>
+		<< f2:32 {\hairpinShorten #'(-0.3 . -1) s8\f\< s s s\!}>>
 		f2:
 		f:
 		f:
@@ -102,12 +102,12 @@ musicTimpaniMvtI = \relative c {
 		
 		
 		
-		f2\ff\startTrillSpan
+		\trillSpanPadding #-1 f2-\offset X-offset 2 -\tweak extra-offset #'(-2 . 0) \ff\startTrillSpan
 		f8\stopTrillSpan r r4
 % Bars 101 to 105
 		R2*2
 		
-		f4\f\startTrillSpan r\stopTrillSpan
+		\trillSpanPadding #-1 f4\f\startTrillSpan r\stopTrillSpan
 		R2
 		f4\f\prall r
 % Bars 106 to 110
@@ -124,7 +124,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 121 to 125
 		
 		
-		f'2\pp\startTrillSpan
+		\startMeasureCount f'2\pp\startTrillSpan
 		f\<
 		<< f {s8 s s s\!}>>
 % Bars 126 to 130
@@ -132,7 +132,7 @@ musicTimpaniMvtI = \relative c {
 		f\pp
 		f
 		f
-		f
+		f \stopMeasureCount
 % Bars 131 to 135
 		f8\stopTrillSpan r r4
 		R2*3
@@ -179,7 +179,7 @@ musicTimpaniMvtI = \relative c {
 		\mmrPos #-4 R
 % Bars 191 to 195
 		\mmrPos #-4 R \no
-		f2:32\pp
+		\startMeasureCount f2:32\pp
 		f:
 		f:
 		<< f: {s4 s_\crescmarkup}>>
@@ -187,23 +187,28 @@ musicTimpaniMvtI = \relative c {
 		f2:
 		f:
 		f:
-		f: \mark \default
-		bes,8\f bes bes f'
+		f: \stopMeasureCount \mark \default
+		<< {
+			\oneVoice bes,8\f bes bes f' \DoublePercentNumberOne
 % Bars 201 to 205
-		bes,4 r8 f'
-		bes, bes bes f'
-		bes,4 r8 f'
-		bes, bes bes f'
-		bes,4 r8 f'
+			bes,4 r8 f'
+			bes, bes bes f'
+			bes,4 r8 f'
+			bes, bes bes f'
+			bes,4 r8 f'
 % Bars 206 to 210
-		bes, bes bes f'
-		bes,4 r8 f'
-		bes, bes bes f'
-		bes,4 r8 f'
-		bes, bes bes f'
+			bes, bes bes f'
+			bes,4 r8 f'
+			bes, bes bes f'
+			bes,4 r8 f'
+			bes, bes bes f'
 % Bars 211 to 215
-		bes,4 r8 f'
-		bes, bes bes f'
+			bes,4 r8 f'
+		} \\ {
+			\set countPercentRepeats = ##t \omit DoublePercentRepeat
+			\repeat percent 6 { s2*2 }
+		}>>
+		bes,8 bes bes f'
 		bes, bes bes f'
 		bes, bes bes f'
 		bes, r r4
@@ -213,7 +218,7 @@ musicTimpaniMvtI = \relative c {
 		
 		
 		
-		bes2:32\ff
+		\startMeasureCount bes2:32\ff
 		bes:
 % Bars 226 to 230
 		bes:
@@ -222,19 +227,19 @@ musicTimpaniMvtI = \relative c {
 		bes:\pp
 		bes:
 % Bars 231 to 235
-		bes:
-		f'2:16
+		bes: \stopMeasureCount 
+		\startMeasureCount f'2:16
 		<< f: {s4 s_\brackM\dimmarkup }>>
 		f2:
 		f:
 % Bars 236 to 240
 		\alternative {
 			\volta 1 {
-				f:
-				f:
+				\noteHeadEsw #'(-3 . 0) f:
+				f: \stopMeasureCount 
 			}
 			\volta 2 {
-				f:\pp
+				\startMeasureCount \noteHeadEsw #'(-2 . 0) f:\pp
 				f:
 			}
 		}
@@ -249,7 +254,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 246 to 250
 	f:
 	f:
-	f:
+	f: \stopMeasureCount
 	f8 r r4
 	R2*8
 % Bars 251 to 255
@@ -358,14 +363,14 @@ musicTimpaniMvtI = \relative c {
 	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no
-	f'2:32\f
+	\startMeasureCount f'2:32\f
 	f:
 % Bars 396 to 400
 	f:
 	f:
 	f:
 	f:
-	f:
+	f: \stopMeasureCount 
 % Bars 401 to 405
 	f4: f8 r\fermata
 	R2*10
@@ -373,7 +378,7 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 411 to 415
 	
-	bes,2:16\pp
+	\startMeasureCount bes,2:16\pp
 	bes:
 	bes:
 	bes:
@@ -381,7 +386,7 @@ musicTimpaniMvtI = \relative c {
 	bes:
 	bes:
 	bes:
-	bes:
+	bes: \stopMeasureCount 
 	bes8 r r4
 % Bars 421 to 425
 	R2*14
@@ -413,7 +418,7 @@ musicTimpaniMvtI = \relative c {
 	f8 r r4
 	R2*2
 	
-	f4\brack\f^\startTrillSpan r\stopTrillSpan
+	\trillSpanPadding #-1 f4\brack\f^\startTrillSpan r\stopTrillSpan
 % Bars 461 to 465
 	R2*3
 	
@@ -428,7 +433,7 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 471 to 475
 	\mark \default
-	\grace {s8} R2*28
+	R2*28
 % Bars 476 to 480
 	
 % Bars 481 to 485
@@ -442,12 +447,12 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2
+	\textMark "Vi-" \ni \mmrPos #-4 R2
 % Bars 501 to 505
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no \mark \default
-	f'2:32\ff
+	\startMeasureCount f'2:32\ff
 	f:
 % Bars 506 to 510
 	f:
@@ -456,7 +461,7 @@ musicTimpaniMvtI = \relative c {
 	f:
 	f:
 % Bars 511 to 515
-	f:
+	f: \stopMeasureCount 
 	bes,:
 	bes:
 	bes:
@@ -475,7 +480,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 541 to 545
 	
 	
-	\mark \default
+	\offset X-offset #-2.3 \textEndMark "-de" \mark \default
 	R2*10
 % Bars 546 to 550
 	
@@ -500,9 +505,9 @@ musicTimpaniMvtI = \relative c {
 % Bars 566 to 570
 	
 	\mark \default
-	\grace {s8.} R2*2
+	R2*2
 	
-	bes,2:16\pp
+	\startMeasureCount bes,2:16\pp
 % Bars 571 to 575
 	bes:
 	bes:
@@ -516,13 +521,17 @@ musicTimpaniMvtI = \relative c {
 	bes:
 	bes:
 % Bars 581 to 585
-	bes:
+	bes: \stopMeasureCount
 	bes4 r
-	R2*24
+	\mmrLength #10 R2*12
 % Bars 586 to 590
 	
 % Bars 591 to 595
 	
+	
+	
+	
+	\mmrLength #10 R2*12
 % Bars 596 to 600
 	
 % Bars 601 to 605
@@ -582,14 +591,18 @@ musicTimpaniMvtI = \relative c {
 	<< f: {s8 s s s\!}>>
 	f2:\pp
 	f: \mark \default
-	f8 r r4
+	\tempoXoffset #0.5 f8 r r4
 % Bars 656 to 660
-	R2*13
+	\mmrLength #10 R2*6
 % Bars 661 to 665
+	
+	R2
+	R2*4
+	
 	
 % Bars 666 to 670
 	
-	
+	R2*2
 	
 	f2:32\pp
 	f:
@@ -597,9 +610,10 @@ musicTimpaniMvtI = \relative c {
 	bes,:
 	bes:
 	bes:
-	R2*9
-% Bars 676 to 680
+	R2*2
 	
+% Bars 676 to 680
+	\mmrLength #17 \mmrnDown R2*7
 % Bars 681 to 685
 	
 	\mark \default
@@ -624,7 +638,7 @@ musicTimpaniMvtI = \relative c {
 	f2:16
 	f:
 	f:
-	f4\ff r8 f
+	\startMeasureCount f4\ff r8 f
 % Bars 706 to 710
 	f4 r8 f
 	f4 r8 f
@@ -634,7 +648,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 711 to 715
 	f4 r8 f
 	f4 r8 f
-	f4 r8 f
+	f4 r8 f \stopMeasureCount 
 	f r bes,4:16\fff
 	bes2:
 % Bars 716 to 720

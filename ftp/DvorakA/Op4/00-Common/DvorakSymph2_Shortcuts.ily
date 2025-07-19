@@ -380,6 +380,18 @@ inb = \markup {
 	"in B"
 }
 
+ingd = \markup {
+	"in G,D"
+}
+
+inbf = \markup {
+	"in B,F"
+}
+
+inbfa = \markup {
+	"in B,F,A"
+}
+
 DoublePercentNumberOne = {
 	\once \override Score.RehearsalMark.padding = #0.2
 	\mark \markup {

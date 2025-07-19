@@ -39,7 +39,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4"
+			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4 — Timpani"
 		}
 		instrument = \markup {
 			"Timpani"
@@ -47,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtI
-%			}
+			\new Voice {
+				\formatTimpaniMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtI
 			}
@@ -71,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtII
-%			}
+			\new Voice {
+				\formatTimpaniMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtII
 			}
@@ -87,7 +87,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #0.9 \bold 2.
 			}
 		}
 		\layout {
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtIII
-%			}
+			\new Voice {
+				\formatTimpaniMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtIII
 			}
@@ -111,7 +111,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.8 \bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -119,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtIV
-%			}
+			\new Voice {
+				\formatTimpaniMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtIV
 			}
@@ -135,7 +135,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2.2 \bold "4. Finale"
 			}
 		}
 		\layout {

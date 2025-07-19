@@ -27,10 +27,10 @@ musicTimpaniMvtII = \relative c {
 	bes8\p\< bes bes  bes bes bes\!  bes bes bes\>  bes bes bes\!
 	bes^\solo r r16 bes\pp ees8 r r16 bes ees8 r r16 bes ees8 r r
 % Bars 31 to 35
-	R1.*6
+	R1.*5
 % Bars 36 to 40
-	\mark \default
-	R1.*10
+	<< R1. {s2 s \tempoXoffset #-2 s } >> \mark \default
+	\tempoXoffset #0.5 R1.*10
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -48,7 +48,7 @@ musicTimpaniMvtII = \relative c {
 	ees16^\solo\pp ees ees ees ees ees  ees4.:16 ees: ees:
 	ees:\pp ees: ees: ees:
 % Bars 61 to 65
-	ees8 r r r4 r8 r2.^\mutaingd
+	ees8 r r r4^\mutaingd r8 r2.
 	R1.*11
 % Bars 66 to 70
 	
@@ -62,8 +62,8 @@ musicTimpaniMvtII = \relative c {
 % Bars 81 to 85
 	\ni \mmrPos #-4 R1.
 	\mmrPos #-4 R \no
-	<< d1.\startTrillSpan {s4.\fzpp\> s s s8 s s\!}>>
-	<< d1.\pp\startTrillSpan {s4. s s s8 s s\stopTrillSpan}>>
+	<< d1.\startTrillSpan^\ingd {\hairpinShorten #'(-0.3 . -0.3) s4.\fzpp\> s s s8 s s}>>
+	<< \trillSpanPadding #-1 d1.\pp\startTrillSpan {s4. s s s8 s s\stopTrillSpan}>>
 	g,8 r r r4 r8 r2.
 % Bars 86 to 90
 	R1.*2
@@ -97,27 +97,27 @@ musicTimpaniMvtII = \relative c {
 % Bars 126 to 130
 	
 	\ni \mmrPos #-4 R1. \no
-	g,1.\pp\startTrillSpan
-	g2.\startTrillSpan\<_\moltocresc g8\ff\stopTrillSpan d' g, d' g, d'\ffz\>
-	<< d1.\startTrillSpan {s4.\p\> s s\pp s}>>
+	\trillSpanPadding #-0.5 g,1.\pp\startTrillSpan
+	\trillSpanPadding #-1 g2.\startTrillSpan\<_\moltocresc g8\ff\stopTrillSpan d' g, d' g, \hairpinShorten #'(-0.3 . -0.3) d'-\offset X-offset #-1 \ffz\>
+	<< d1.\startTrillSpan {\hairpinShorten #'(-0.5 . -0.5) s4.\p\> s s s\pp}>>
 % Bars 131 to 135
-	g,1.\ppp
+	\textMark "Vi-" g,1.-\offset X-offset 1 \ppp
 	g
 	g
 	<< g {s4.\< s s s8 s s\!\stopTrillSpan}>>
-	g8\ff r r r4 r8 r2.
+	g8\ff r r r4 r8 r2. \textEndMark "-de"
 % Bars 136 to 140
 	R1.*2
 	
 	<< d'1.\pp\startTrillSpan {s4. s s\< s8 s s\!}>>
 	<< d1.\ff {s4. s s s8 s s\stopTrillSpan}>> \mark \default
-	R1.
+	\offset X-offset #2.3 \textMark "Vi-" R1.
 % Bars 141 to 145
 	r2. r4 r8 d\pp\prall r r
 	r4 r8 d\ppp\prall r r r4 r8 d\prall r r
 	d8\ff d16 d d8 g, g16 g g8 g g16 g g8 d' d16 d d8
 	R1.
-	r2. << d\fff\startTrillSpan { s4. s8 s s\stopTrillSpan }>>
+	r2. << d\fff\startTrillSpan { s4. s8 s s\stopTrillSpan }>> \textEndMark "-de"
 % Bars 146 to 150
 	g,4\pp r8 r4 r8 g4 r8 r4 r8
 	g4 r8 r4 r8 g4 r8 r4 r8
@@ -125,5 +125,5 @@ musicTimpaniMvtII = \relative c {
 	g4 r8 r4 r8 g4 r8 r4 r8
 	g4\ppp r8 g4 r8 g4 r8 r4 r8
 % Bar 151
-	R1.\fermata \fine
+	\once \ni R1.\fermata \fine
 }

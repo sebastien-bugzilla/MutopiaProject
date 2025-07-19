@@ -3491,10 +3491,10 @@ cueVoiceTrombonoIIIMvtIV = \relative c {
 cueVoiceTimpaniMvtI = \relative c {
 	s2*25
 	% bar 26
-	\voiceTwo b!2\fermata^\markup {Trbne III.}
+	\voiceTwo b!2\fermata-\offset X-offset -3 ^\markup { \center-column { \lower #1.5 "Trbne" "III."} }
 	s2*22
 	% bars 49 - 50
-	\voiceOne bes'8-.^\markup {Fag.Vlc.Cb.} bes,-. bes'8.-> aes16-.
+	\voiceOne bes'8-.-\tweak extra-offset #'(0 . 10.5) _\markup {Fag.Vlc.Cb.} bes,-. bes'8.-> aes16-.
 	aes8-.[ des,-.] ges-. ges,-.
 	s2*105
 	% bars 156 - 159
@@ -3528,7 +3528,7 @@ cueVoiceTimpaniMvtI = \relative c {
 	bes8 r r4
 	s2*36
 	% bars 392 - 393
-	<f f'>2^\markup {Cor.III.IV}
+	<f f'>2-\offset X-offset -7 ^\markup {Cor.III.IV}
 	q
 	s2*41
 	% bars 435 - 437
@@ -3537,7 +3537,7 @@ cueVoiceTimpaniMvtI = \relative c {
 	bes-> a)] r a
 	s2*62
 	% bars 500 - 503
-	ees2(^\markup {Trbne}
+	ees2(-\offset X-offset -5 ^\markup {Trbne}
 	e!
 	f
 	fis)
@@ -3549,7 +3549,7 @@ cueVoiceTimpaniMvtI = \relative c {
 	a] r r4
 	s2*49
 	% bars 607 - 610
-	f2~^\markup {Cor.III}
+	f2~-\offset X-offset -4.5 ^\markup {Cor.III}
 	f
 	f'~
 	f
@@ -3562,19 +3562,19 @@ cueVoiceTimpaniMvtI = \relative c {
 cueVoiceTimpaniMvtII = \relative c {
 	s1.*26
 	% bars 27 - 28
-	\voiceOne r4^\markup {Fag.} r8 f'16( c f ees d c d8) r r ees16( bes ees d c bes
+	r4^\markup {Fag.} r8 f'16( c f ees d c d8) r r ees16( bes ees d c bes
 	c8) r r d16( a d c bes a bes8) r r c16( g c bes a f')
 	s1.*18
 	% bars 47 - 48
-	bes,4.(^\markup {Fag.} ees) des~ des8 a8.( bes16)
+	\voiceOne bes,4.(^\markup {Fag.} ees) des~ des8 a!8.( bes16)
 	bes4.~ bes8 r r r2.  %  4 => 4. based on conductor
 	s1.*8
 	% bars 57 - 58
-	c4.(^\markup {Cor.I.} f2. g4.
+	\oneVoice c4.(-\offset X-offset -3 ^\markup {Cor.I.} f2. g4.
 	aes4) r8 r4 r8 r2.
 	s1.*22
 	% bars 81 - 82
-	c,,2.(^\markup {Trbne.III} d4. bes)
+	\voiceOne c,,2.(^\markup {Trbne.III} d4. bes)
 	g'2.( f4. ees)
 	s1.*16
 	% bar 99
@@ -3586,13 +3586,13 @@ cueVoiceTimpaniMvtII = \relative c {
 cueVoiceTimpaniMvtIII = \relative c {
 	s2.*16
 	% bars 17 - 20
-	\voiceOne aes'2.~^\markup {Cor.I.II.}
+	\voiceOne aes'2.~-\offset X-offset -5.5 ^\markup {Cor.I.II.}
 	aes
 	f~
 	f
 	s2.*72
 	% bars 93 - 96
-	\clef treble c'''4(->\fz^\markup {Viol.I.} bes) ees,8.( g16)
+	\clef treble c'''4(->\fz-\offset X-offset #-5 ^\markup {Viol.I.} bes) ees,8.( g16)
 	g4(->\fz f) bes,8.( c'16)
 	c4(->\fz bes) ees,8.( g16)
 	g4(->\fz f) bes,8.( d'16) \clef bass
@@ -3604,49 +3604,49 @@ cueVoiceTimpaniMvtIII = \relative c {
 	q\pp \clef bass
 	s2.*32
 	% bars 215 - 217
-	\clef treble \voiceOne a''4->^\markup {Viol.I.} bes-> c->
+	\clef treble a''4->-\offset X-offset -2 ^\markup {Viol.I.} bes-> c->
 	f,2-> g8. a16
 	a4->-. bes-.-> c-.-> \clef bass
 	s2.*16
 	% bars 234 - 235
-	\clef treble \oneVoice \tuplet 3/2 4 {e,8(\<^\markup {Viol.I.} f! g! aes bes c! d ees f!\!}
+	\clef treble \oneVoice \tuplet 3/2 4 {e,8(\<-\offset X-offset #-4 ^\markup {Viol.I.} f! g! aes bes c! d ees f!\!}
 	g!4)\f r r
 	s2.*1
 	% bars 237 - 239
 	\voiceOne g,!16(\fz aes bes8) ees,8-.\> ees-. g-. g-.\!
-	c,-.\p c-. ees-. ees-. bes-. bes-.
+	c,!-.\p c-. ees-. ees-. bes-. bes-.
 	des r r4 r
 	s2.*1
 	% bars 241 - 243
-	ais'16(\fz b! cis8) fis,\>-. fis-. a-. a-.\!
+	ais'16(\fz b! cis8) fis,\>-. fis-. ais-. ais-.\!
 	dis,\p-. dis-. fis-. fis-. cis-. cis-.
 	\oneVoice cis'16(\p^\markup {Fl.I.} d e8) b8-. b-. cis4-> \clef bass
 	s2.*45
 	% bars 289 - 292
-	\clef treble \voiceOne bes2.\pp~^\markup {Fl.I.}
+	\clef treble \voiceOne bes2.\pp~-\offset X-offset -4.5 ^\markup {Fl.I.}
 	bes\<
 	c~
 	c\! \clef bass
 	s2.*57
 	% bars 350 - 353
-	\voiceTwo \clef treble <c,, c'>8.\pp^\markup {Trbe.I.II.} q16 q2
-	q8. q16 q2
+	\voiceTwo \clef treble \beamOffset #'(0.5 . 0.5) <c,, c'>8.\pp^\markup {Trbe.I.II.} q16 q2
+	\beamOffset #'(0.5 . 0.5) q8. q16 q2
 	q8. q16 q2
 	<< {\InCueContext f8} \\ {\InCueContext f8} >> r r4 r
 	s2.*7
 	% bars 361 - 364
-	\voiceOne c''4(->^\markup {Viol.I.} bes) ees,8.( g16)
+	\voiceOne c''4(->-\offset X-offset #-5 ^\markup {Viol.I.} bes) ees,8.( g16)
 	g4->( f) bes,8.( c'16)
 	c4->( bes) ees,8.( g16)
 	g4->( f) bes,8.( d'16) \clef bass
 	s2.*85
 	% bars 450 - 455
-	\clef treble \oneVoice bes4.(\f\<^\markup {Viol.I.} c8 d f)\!
+	\clef treble \oneVoice \ottava #1 bes4.(\f\<-\tweak extra-offset #'(0.8 . 10.5) _\markup {Viol.I.} c8 d f)\!
 	a2( g4)
 	\tuplet 3/2 4 { f8 f f  ees ees ees  d d d
 	c c c  a' a a  g g g
 	f f f  ees ees ees  d d d
-	c c c  c' c c  bes bes bes } \clef bass
+	c c c  c' c c  bes bes bes } \ottava #0 \clef bass
 }
 cueVoiceTimpaniMvtIV = \relative c {
 	s1*34
@@ -3655,7 +3655,7 @@ cueVoiceTimpaniMvtIV = \relative c {
 	b e c f
 	s1*51
 	% bars 88 - 90
-	\clef treble \oneVoice c'''2->^\markup {Viol.I.} e,8[( f bes r16 a-.])
+	\clef treble \oneVoice c'''2->-\offset X-offset -5 ^\markup {Viol.I.} e,8[( f bes r16 a-.])
 	a4-.->_\piuf a-.-> a-.-> a-.->
 	a2-> bes-> \clef bass
 	s1*12
@@ -3681,7 +3681,7 @@ cueVoiceTimpaniMvtIV = \relative c {
 	d2-^ cis4-^ b!-^ \clef bass
 	s1*44
 	% bars 290 - 297
-	\voiceOne r4^\markup {Fag.I.II.} <aes, c>4\pp <ees bes'>4. q8
+	\voiceOne r4-\offset X-offset -3 ^\markup {Fag.I.II.} <aes, c>4\pp <ees bes'>4. q8
 	<c aes'>4 r r2
 	r4 <aes' c>\pp <ees bes'>4. q8
 	<c aes'>4 r r2
@@ -3691,20 +3691,20 @@ cueVoiceTimpaniMvtIV = \relative c {
 	d,( ees aes d, ees aes)} \clef bass
 	s1*20
 	% bars 318 - 321
-	\voiceTwo \clef treble r2^\markup {Cl.I.II.} \tuplet 3/2 2 {<f,, f'>4 <bes bes'> <c c'> }  % <a f'> => <f f'> according to conductor
+	\stemDown \clef treble \once \voiceTwo r2^\markup {Cl.I.II.} \tuplet 3/2 2 {<f,, f'>4 <bes bes'> <c c'> }  % <a f'> => <f f'> according to conductor
 	<d d'>8[(\< <bes bes'> <g' g'>8.) <f f'>16]-.\! q2 % <g f'> => <f f'> according to conductor
-	\oneVoice r2 \tuplet 3/2 2 {<f, f'>4 <bes bes'> <c c'> }
-	\voiceTwo <d d'>8[(\< <bes bes'> <g' g'>8.) <f f'>16]-.\! q2 \clef bass % <e f'> => <f f'> according to conductor
+	\once \voiceTwo r2 \tuplet 3/2 2 {<f, f'>4 <bes bes'> <c c'> }
+	<d d'>8[(\< <bes bes'> <g' g'>8.) <f f'>16]-.\! q2 \clef bass \stemNeutral % <e f'> => <f f'> according to conductor
 	s1*47
 	% bars 369 - 371
-	\clef treble \voiceOne ees'2.^\markup {Viol.I.} \tuplet 5/4 4 { ees16(\< f g aes bes\!}
+	\clef treble \voiceOne ees'2.-\offset X-offset -1 ^\markup {Viol.I.} \tuplet 5/4 4 { ees16(\< f g aes bes\!}
 	c4.)->\fz bes8 aes4.->\fz g8
 	aes4.->\fz g8 f4.->\fz ees8 \clef bass
 	s1*94
 	% bars 466 - 471
-	b,,!2->^\markup {Trbne III.} dis4-> fis->
+	b,,!2->-\offset X-offset -1 ^\markup {Trbne III.} dis4-> fis->
 	gis b! dis b
-	\tuplet 3/2 2 { <c d!>4\ff^\markup {Cor.} q q } q2~
+	\tuplet 3/2 2 { <c d!>4\ff-\offset X-offset -1 ^\markup {Cor.} q q } q2~
 	\tuplet 3/2 2 {q4 q q} q2~
 	\tuplet 3/2 2 {q4 q q} q2~
 	\tuplet 3/2 2 {q4 q q} q2

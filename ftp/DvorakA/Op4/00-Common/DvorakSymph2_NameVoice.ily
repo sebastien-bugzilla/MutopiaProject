@@ -564,7 +564,7 @@ nameTrombonoIIIMvtIV = {
 nameTimpaniMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in B F"
+			\lower #1 "Timpani" "in B / F"
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -573,7 +573,7 @@ nameTimpaniMvtI = {
 nameTimpaniMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in Es B"
+			\lower #1 "Timpani" \concat { "in E" \text-flat " / B" }
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -582,7 +582,7 @@ nameTimpaniMvtII = {
 nameTimpaniMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in B F"
+			\lower #1 "Timpani" "in B / F"
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -591,7 +591,7 @@ nameTimpaniMvtIII = {
 nameTimpaniMvtIV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in D B A"
+			\lower #1 "Timpani" "in D / B / A"
 		}
 	}
 	\set Staff.shortInstrumentName = ""
