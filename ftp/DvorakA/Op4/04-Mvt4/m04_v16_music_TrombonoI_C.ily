@@ -402,7 +402,7 @@ musicTrombonoIMvtIV = \relative c {
 	f!4-. r r2
 % Bars 411 to 415
 	fis4-. r r2
-	ees->\f dis->
+	e->\f dis->   % ees => e based on part score and Violin I
 	e2.-> r4
 	g2 e4-. d-.
 	e2. r4

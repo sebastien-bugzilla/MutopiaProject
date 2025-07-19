@@ -9,7 +9,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*6
+	\mmrnDown R1*6
 % Bars 6 to 10
 	
 	\ni \mmrPos #-4 R1
@@ -32,7 +32,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	r ees(
 	d4) r bes-. r
 	r2 c4 r
-	a_\pocoapococresc r a r
+	a-\offset X-offset -1 _\pocoapococresc r a r
 	r2 c4 r
 % Bars 26 to 30
 	ees r ees r
@@ -44,7 +44,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	d r ees r
 	f2.\fz r4
 	ees r c r
-	a2.->\fz r4
+	a2.->-\offset X-offset -1 \fz r4
 	g c a! d\<
 % Bars 36 to 40
 	bes ees c\! f \mark \default
@@ -57,7 +57,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	d r a r
 	d r d' r
 	d, r d' r
-	d,,1\fpp~
+	\startMeasureCount d,,1-\offset X-offset -4 -\tweak extra-offset #'(3 . -1) \fpp~
 % Bars 46 to 50
 	d~
 	d~
@@ -66,7 +66,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	d~
 % Bars 51 to 55
 	d~
-	d~
+	d~ \stopMeasureCount
 	d4 r r2
 	R1*23
 % Bars 56 to 60
@@ -92,7 +92,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 86 to 90
 	
 	
-	
+	\clef bass
 	g'4-.->\f f-.-> e-.-> d-.->
 	c2-> bes4 bes'
 % Bars 91 to 95
@@ -112,7 +112,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	g2-> a->
 	bes-> a->
 	g-> << c-> \\ \InCueContext f, >>
-	f'4\ff r r2
+	\textMark "Vi-" f'4\ff r r2
 % Bars 106 to 110
 	f4 r r2
 	f4 r f r
@@ -130,9 +130,9 @@ musicTrombonoIIIMvtIV = \relative c {
 	f-. r fis-. r
 	g-. r a,-. r
 	b r c r
-	d r ees r \mark \default
+	d r ees r \offset X-offset #-2.3 \textEndMark "-de" \mark \default
 % Bars 121 to 125
-	f\ff bes bes,-. r8 bes-.
+	\startMeasureCount f\ff bes bes,-. r8 bes-.
 	f'4 bes bes,-. r8 bes-.
 	f'4 bes bes,-. r8 bes-.
 	f'4 bes bes,-. r8 bes-.
@@ -140,7 +140,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 126 to 130
 	f'4 bes bes, r8 bes
 	f'4 bes bes, r8 bes
-	f'4 bes bes, r8 bes
+	f'4 bes bes, r8 bes \stopMeasureCount
 	bes4 r r2
 	bes1\fp~
 % Bars 131 to 135
@@ -200,13 +200,13 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 181 to 185
 	a4-. r a-. r
 	R1
-	g4\f r r2
+	\startMeasureCount g4\f r r2
 	g4 r r2
 	g4 r r2
 % Bars 186 to 190
 	g4 r r2
 	g4 r r2
-	g4 r r2
+	g4 r r2 \stopMeasureCount 
 	fis4 r r2
 	R1
 % Bars 191 to 195
@@ -214,7 +214,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	fis1~
 	fis4 r r2
 	R1
-	r2 \tuplet 3/2 2 {fis'4\f fis fis}
+	r2 \tuplet 3/2 2 {fis'4-\offset X-offset -1 \f fis fis}
 % Bars 196 to 200
 	fis1\fz
 	fis4 r r2
@@ -297,7 +297,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 296 to 300
 	
 % Bars 301 to 305
-	\ni \mmrPos #-4 R1 \mark \default
+	\ni \mmrPos #-4 \tweak extra-offset #'(-1 . 0) R1 \markXoffset #-0.2 \markWhiteout \mark \default
 	\mmrPos #-4 R1 \no
 	r4 ces2\pp r4
 	R1
@@ -372,17 +372,17 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 371 to 375
 	r g r aes \mark \default
 	bes-.\f ees,-. ees,-. r8 bes'
-	bes4-. ees-. ees,-. r8 bes'
+	\startMeasureCount bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
 % Bars 376 to 380
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
-	bes4-. ees-. ees,-. r8 bes'
+	bes4-. ees-. ees,-. r8 bes' \stopMeasureCount
 	ees r r4 r2
 % Bars 381 to 385
-	<< ees1\fp~ {s2 s4\> s}>>
+	ees1\fp\>~
 	ees4\! r r2
 	ees1\pp~
 	ees4 r r2
@@ -437,13 +437,13 @@ musicTrombonoIIIMvtIV = \relative c {
 	R1
 	d2 r
 	R1
-	c4\f r r2
+	\startMeasureCount c4\f r r2
 	c4 r r2
 % Bars 436 to 440
 	c4 r r2
 	c4 r r2
 	c4 r r2
-	c4 r r2 \mark \default
+	c4 r r2 \stopMeasureCount \mark \default
 	b4->\ff r r2
 % Bars 441 to 445
 	R1

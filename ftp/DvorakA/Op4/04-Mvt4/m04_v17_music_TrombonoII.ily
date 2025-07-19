@@ -45,7 +45,7 @@ musicTrombonoIIMvtIV = \relative c {
 	aes2.\fz r4
 	g4 r g r
 	ces2.->\fz r4
-	bes2 << c\mf {s4 s\<}>>
+	bes2 << c!\mf {s4 s\<}>>
 % Bars 36 to 40
 	d2 ees\! \mark \default
 	d->\f r
@@ -71,7 +71,7 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	\mark \default
+	\markXoffset #-0.2 \markWhiteout \mark \default
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R
 	\mmrPos #-4 R
@@ -104,8 +104,8 @@ musicTrombonoIIMvtIV = \relative c {
 	bes f4. ees8
 	cis2-> cis->
 	d-> fis->
-	g-> << g-> \\ \InCueContext a >>
-	a4\ff r r2
+	g-> << g_> \\ \InCueContext a >>
+	\textMark "Vi-" a4\ff r r2
 % Bars 106 to 110
 	a4 r r2
 	c4 r c r
@@ -123,7 +123,7 @@ musicTrombonoIIMvtIV = \relative c {
 	bes-. r a-. r
 	bes-. r f-. r
 	g r c r
-	a r g r \mark \default
+	a r g r \textEndMark "-de" \markXoffset #-0.2 \markWhiteout \mark \default
 % Bars 121 to 125
 	bes8\ff r r4 bes4-.-> a-.->
 	r2 bes4-. a-.
@@ -193,13 +193,13 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 181 to 185
 	d4-. r d-. r
 	R1
-	cis4\f r r2
+	\startMeasureCount cis4\f r r2
 	cis4 r r2
 	cis4 r r2
 % Bars 186 to 190
 	cis4 r r2
 	cis4 r r2
-	cis4 r r2
+	cis4 r r2 \stopMeasureCount
 	ais4 r r2
 	R1
 % Bars 191 to 195
@@ -294,7 +294,7 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 296 to 300
 	
 % Bars 301 to 305
-	\ni \mmrPos #-4 R1 \mark \default
+	\ni \mmrPos #-4 \tweak extra-offset #'(-1 . 0) R1 \markWhiteout \mark \default
 	\mmrPos #-4 R1 \no
 	r4 ees2\pp r4
 	R1
@@ -351,7 +351,7 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 356 to 360
 	d!2.( ees4)
 	ees1
-	\tuplet 3/2 2 {g4-.\ff a-. b-.} c r
+	\tuplet 3/2 2 {g4-.-\offset X-offset #-1 \ff a-. b-.} c r
 	R1
 	\tuplet 3/2 2 {g4-. a-. b-.} c r
 % Bars 361 to 365
@@ -368,7 +368,7 @@ musicTrombonoIIMvtIV = \relative c {
 	r c r aes
 % Bars 371 to 375
 	r b r c \mark \default
-	bes!-.\f ees-. ees,-. r8 bes'
+	\startMeasureCount bes!-.\f ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
@@ -376,7 +376,7 @@ musicTrombonoIIMvtIV = \relative c {
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
-	bes4-. ees-. ees,-. r8 bes'
+	bes4-. ees-. ees,-. r8 bes' \stopMeasureCount
 	g r r4 r2
 % Bars 381 to 385
 	<< c1(\fp {s2 s\>}>>
@@ -434,22 +434,22 @@ musicTrombonoIIMvtIV = \relative c {
 	R1
 	b2 r
 	R1
-	a4\f r r2
+	\startMeasureCount a4\f r r2
 	a4 r r2
 % Bars 436 to 440
 	a4 r r2
 	a4 r r2
 	a4 r r2
-	a4 r r2 \mark \default
+	a4 r r2 \stopMeasureCount \mark \default
 	dis4->\ff r r2
 % Bars 441 to 445
 	R1
-	r2 \tuplet 3/2 2 {dis4->\f\< dis-> dis->\!}
+	r2 \tuplet 3/2 2 {dis4->-\offset X-offset #-1 \f\< dis-> dis->\!}
 	dis1\fz->
 	dis4-> r r2
 	R1
 % Bars 446 to 450
-	r2 \tuplet 3/2 2 {dis4->\f\< dis-> dis->\!}
+	r2 \tuplet 3/2 2 {dis4->-\offset X-offset #-1 \f\< dis-> dis->\!}
 	dis1->\fz
 	dis2 r
 	R1
@@ -525,7 +525,7 @@ musicTrombonoIIMvtIV = \relative c {
 	f-> f->
 	e'1->~
 	e \mark \default
-	bes2->\ff f->
+	\startMeasureCount bes2->\ff f->
 	bes-> f->
 % Bars 516 to 520
 	bes-> f->
@@ -534,7 +534,7 @@ musicTrombonoIIMvtIV = \relative c {
 	bes-> f->
 	bes-> f->
 % Bars 521 to 525
-	bes-> f->
+	bes-> f-> \stopMeasureCount
 	e'1\ff-^~
 	e2 e-^
 	ees!1-^~
@@ -561,7 +561,7 @@ musicTrombonoIIMvtIV = \relative c {
 	g-> aes->
 	g-> fis->
 	g-> aes->
-	g!1-^\ff~
+	g1-^\ff~
 	g
 % Bars 546 to 550
 	ges-^~

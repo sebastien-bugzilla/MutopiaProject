@@ -134,7 +134,7 @@ musicTrombonoIMvtII = \relative c {
 	
 	
 	fis8\ff r fis g r g ees r ees d r d
-	r4 r8 r r ees-. ges-. r ees-. ges-. r ees16-. r
+	r4 r8 r r ees-. ges-. r ees-. ges-. r ees16-. r 
 	g4.-^\ff a,-^ d2.-^
 % Bars 146 to 150
 	r4 r8 a4\pp r8 r4 r8 a4 r8

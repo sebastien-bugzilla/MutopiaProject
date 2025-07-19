@@ -84,7 +84,7 @@ musicTrombonoIMvtII = \relative c {
 % Bars 81 to 85
 	c2.(\pp\< d4. << bes) {s8 s s\!}>>
 	g'2.(\fz f4.\> ees)\!
-	d1.\pdimD\>~
+	\markEO #'(3 . -6) d1.\p\>~^\dimmarkup
 	d2.\pp~ d4 r8 r4 r8
 	R1.*3
 % Bars 86 to 90
@@ -123,23 +123,23 @@ musicTrombonoIMvtII = \relative c {
 	r2. g8->\ff fis-> g-> fis-> g-> fis->
 	r4 r8 a,(\pp bes a) r2.
 % Bars 131 to 135
-	d4.\pp r4 r8 d4. r4 r8
+	\textMark "Vi-" d4.\pp r4 r8 d4. r4 r8
 	ees4.\pp r4 r8 ees4. r4 r8
 	g4.\pp r4 r8 g4. r4 r8
 	fis4. r4 r8 fis4. r4 r8
-	g8\ff r r r4 r8 r2.
+	g8\ff r r r4 r8 r2. \textEndMark "-de"
 % Bars 136 to 140
 	R1.*3
 	
 	
-	ees8\ff r r r4 r8 d r r r4 r8 \mark \default
-	R1.*3
+	ees8\ff r r r4 r8 d r r r4 r8 \markXoffset #-0.2 \markWhiteout \mark \default
+	\offset X-offset #2.2 \textMark "Vi-" R1.*3
 % Bars 141 to 145
 	
 	
 	fis8\ff r fis g r g ees r ees d r d
-	r4 r8 r r ees-. ges-. r ees-. ges-. r ees16-. r
-	g4.-^\ff a,-^ d2.-^
+	r4 r8 r4 ees8-. ges-. r ees-. ges-. r ees16-. r % g => ges based on conductor score and clarinet part
+	g!4.-^\ff a,-^ d2.-^ \textEndMark "-de"
 % Bars 146 to 150
 	r4 r8 a4\pp r8 r4 r8 a4 r8
 	r4 r8 a4 r8 r4 r8 a4\pp r8
@@ -147,5 +147,5 @@ musicTrombonoIMvtII = \relative c {
 	r4 r8 a4\pp r8 r4 r8 b4_\dimmarkup r8
 	b4\ppp r8 b4 r8 b4 r8 r4 r8
 % Bar 151
-	R1.\fermata \fine
+	\once \ni R1.\fermata \fine
 }

@@ -240,7 +240,7 @@ pocoapococrescC = \markup {\italic {\column { \lower #1 "poco a poco" "cresc."}}
 pocoa_pococresc = \markup {\italic {\column { \lower #1 "poco a" "poco cresc."}}}
 pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
 pocoapoco_crescendo = \markup {
-	\column { \italic \lower #1 "poco a poco" "crescendo"}
+	\italic \column { \lower #1 "poco a poco" "crescendo"}
 }
 pococresc = \markup {\italic {poco cresc.}}
 sempre = \markup {\italic {sempre}}

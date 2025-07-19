@@ -58,7 +58,7 @@ musicTrombonoIIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\ni \mmrPos #-4 R1.
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-4 R \no \markXoffset #-0.2 \markWhiteout \mark \default
 	c4\pp r8 r4 r8 b4 r8 r4 r8
 	bes!4\pp r8 r4 r8 g4 r8 r4 r8
 % Bars 61 to 65
@@ -84,7 +84,7 @@ musicTrombonoIIMvtII = \relative c {
 % Bars 81 to 85
 	c2.(\pp\< d4. << bes) {s8 s s\!}>>
 	g'2.(\fz f4.\> ees)\!
-	d1.\pdimD\>~
+	\markEO #'(2 . -5) d1.\p\>^\dimmarkup~
 	d2.\pp~ d4 r8 r4 r8
 	R1.*3
 % Bars 86 to 90
@@ -123,29 +123,29 @@ musicTrombonoIIMvtII = \relative c {
 	r2. bes'8->\ff a-> bes-> a-> bes-> a->
 	r4 r8 fis(\pp g fis) r2.
 % Bars 131 to 135
-	bes4.\pp r4 r8 bes4. r4 r8
+	\textMark "Vi-" bes4.\pp r4 r8 bes4. r4 r8
 	c4.\pp r4 r8 c4. r4 r8
 	ees4.\pp r4 r8 ees4. r4 r8
 	ees4. r4 r8 ees4. r4 r8
-	bes8\ff r r r4 r8 r2.
+	bes8\ff r r r4 r8 r2. \textEndMark "-de"
 % Bars 136 to 140
 	R1.*3
 	
 	
 	g8\ff r r r4 r8 fis r r r4 r8 \mark \default
-	R1.*3
+	\offset X-offset #2.3 \textMark "Vi-" R1.*3
 % Bars 141 to 145
 	
 	
 	d'8\ff r d bes r bes a r a fis r fis
 	r4 r8 r r gis-. a-. r gis-. a-. r c16-. r
-	cis4.-^\ff a-^ d,2.-^
+	cis4.-^\ff a-^ d,2.-^ \textEndMark "-de"
 % Bars 146 to 150
 	r4 r8 fis4\pp r8 r4 r8 fis4 r8
 	r4 r8 fis4 r8 r4 r8 fis4\pp r8
 	r4 r8 fis4\pp r8 r4 r8 fis4 r8
-	r4 r8 fis4\pp r8 r4 r8 g4_\dimmarkup r8
+	r4 r8 fis4\pp r8 r4 r8 g4-\offset X-offset -1 _\dimmarkup r8
 	g4\ppp r8 g4 r8 g4 r8 r4 r8
 % Bar 151
-	R1.\fermata \fine
+	\once \ni R1.\fermata \fine
 }

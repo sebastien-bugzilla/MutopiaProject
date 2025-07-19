@@ -28,26 +28,38 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	
-	R2.\fermata \mark \default
-	R2.*21
+	\once \ni R2.\fermata \mark \default
+	R2.*12
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	\mmrnDown R2.*3
+	
+	
+	\mmrLength #14 \mmrnDown \tempoXoffset #-1 R2.*3
 % Bars 61 to 65
 	
+	
+	R2.*3
+	
+	
 % Bars 66 to 70
-	R2.\fermata
-	R2.*18
+	\once \ni R2.\fermata
+	R2.*12
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
+	
+	
+	R2.*3
+	
 % Bars 81 to 85
 	
-	
+	\mmrLength #13 R2.*3
 	
 	\mark \default
 	R2.*8
@@ -174,7 +186,7 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 216 to 220
 		
 		
-		\mark \default
+		\markXoffset #-0.2 \mark \default
 	}
 	R2.*25
 % Bars 221 to 225
@@ -189,11 +201,11 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
-	\mmrPos #-4 R
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
 % Bars 246 to 250
-	\mmrPos #-4 R \mark \default
-	\mmrPos #-4 R \no
+	\mmrPos #4 R \mark \default
+	\mmrPos #4 R \no
 	R2.*7
 % Bars 251 to 255
 	
@@ -231,19 +243,27 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 % Bars 311 to 315
 	
-	R2.\fermata \mark \markAaBox
-	R2.*18
+	\once \ni R2.\fermata \mark \markAaBox
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
+	
+	
+	
+	\mmrnDown R2.*3
 % Bars 326 to 330
 	
+	
+	\mmrnDown \mmrLength #15 R2.*3
+	
+	
 % Bars 331 to 335
-	\ni \mmrPos #4 R2. 
-	\mmrPos #4 R
-	\mmrPos #4 R
-	\mmrPos #4 R2._\fermata \ni
+	\ni \mmrPos #-4 R2. 
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R2._\fermata \no
 	R2.*15
 % Bars 336 to 340
 	
@@ -257,7 +277,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	\ni \mmrPos #4 R2.
 % Bars 351 to 355
 	\mmrPos #4 R
-	\mmrPos #4 R \mark \markBbBox
+	\mmrPos #4 R \resetMarkSpace \mark \markBbBox
 	\mmrPos #4 R \no
 	R2.*6
 % Bars 356 to 360
@@ -265,12 +285,12 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 % Bars 361 to 365
 	\mmrPos #-4 R
+	\mmrPos #-6 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 	f'2->\f r4
 % Bars 366 to 370
 	f2-> r4
@@ -320,7 +340,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	r4 r f\brack\f
 	bes f bes
 	f2.\fermata
-	bes,8\p r bes r bes r
+	\textMark "Coda" \startMeasureCount bes,8\p r bes r bes r
 % Bars 416 to 420
 	bes r bes r bes r
 	bes r bes r bes r
@@ -328,17 +348,27 @@ musicTrombonoIIIMvtIII = \relative c {
 	bes r bes r bes r
 	bes r bes r bes r
 % Bars 421 to 425
-	bes r bes r bes r
+	bes r bes r bes r \stopMeasureCount
 	bes r r4 r
-	R2.*14
-% Bars 426 to 430
+	R2.*3
 	
+	
+% Bars 426 to 430
+	\mmrLength #10 \tempoXoffset #-1 \mmrnDown R2.*4
+	
+	
+	
+	R2.
 % Bars 431 to 435
+	\mmrLength #10 \tempoXoffset #-1 \mmrnDown R2.*3
+	
+	
+	\mmrLength #10 R2.*3
 	
 % Bars 436 to 440
 	
-	R2.\fermata
-	R2.*12
+	\once \ni R2.\fermata
+	\mmrLength #12 \mmrnDown R2.*12
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -346,13 +376,13 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 % Bars 451 to 455
 	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-7 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R
+	\mmrPos #-6 R \no
 % Bars 456 to 460
 	r4 ges'2\fffzD
 	r4 des2->\fz
@@ -392,5 +422,5 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 496 to 500
 	
 % Bar 501
-	R2.\fermata \fine
+	\once \ni R2.\fermata \fine
 }

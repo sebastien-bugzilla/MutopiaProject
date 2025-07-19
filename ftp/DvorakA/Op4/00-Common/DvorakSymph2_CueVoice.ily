@@ -2920,7 +2920,7 @@ cueVoiceTrombeIIMvtIV = \relative c {
 cueVoiceTrombonoIMvtI = \relative c {
 	s2*8
 	% bars 9 - 12
-	\clef treble \voiceOne bes'''8-.(\pp^\markup {Viol.I.} c16 bes \tuplet 3/2 4 {g8 f g}
+	\clef treble \oneVoice bes'''8-.(\pp^\markup {Viol.I.} c16 bes \tuplet 3/2 4 {g8 f g}
 	f) d-.( c-. bes-.)
 	bes'4.( a8)
 	\tuplet 3/2 4 {g8( f d')} d4->\laissezVibrer \clef alto
@@ -2930,7 +2930,7 @@ cueVoiceTrombonoIMvtI = \relative c {
 	\tuplet 3/2 4 {b( a fis')} fis4\laissezVibrer \clef alto
 	s2*23
 	% bars 49 - 50
-	\clef bass bes,,,8-.[^\markup {Fag.,Vlc.,Cb.} des,-.] bes'8.-. aes16-.
+	\clef bass \voiceOne bes,,,8-.[^\markup {Fag.,Vlc.,Cb.} des,-.] bes'8.-. aes16-.
 	aes8-.[ des,-.] ges-. ges,-. \clef alto
 	s2*17
 	% bars 68 - 69
@@ -2944,7 +2944,7 @@ cueVoiceTrombonoIMvtI = \relative c {
 	c d8-.-> ees-.-> \clef alto
 	s2*36
 	% bars 123 - 126
-	\clef bass \voiceOne f,2\pp^\markup {Timp}\startTrillSpan
+	\clef bass \voiceOne f,2\pp-\offset X-offset -5 ^\markup {Timp}\startTrillSpan
 	f\<
 	<< f {s8 s s s\!}>>
 	<< f2 {s8 s s s\stopTrillSpan}>> \clef alto
@@ -3009,18 +3009,18 @@ cueVoiceTrombonoIMvtII = \relative c {
 	gis2.( a4. fis)
 	s1.*28
 	% bars 127
-	\clef treble r4^\markup {Ob.I.} r8 bes'4.(~\p bes8 fis8. g16) g4. \clef alto
+	\clef treble r4^\markup {Ob.I.} r8 \shape #'((0 . -1)(0 . -0.5)(0 . -0.2)(0 . 0)) Slur bes'4.(~\p bes8 fis8. g16) g4. \clef alto
 }
 cueVoiceTrombonoIMvtIII = \relative c {
 	s2.*92
 	% bars 93 - 96
-	\clef treble \voiceOne c'''4->\fz(^\markup {Viol.I.} bes) ees,8.( g16)
+	\clef treble c'''4->\fz(-\offset X-offset -5 ^\markup {Viol.I.} bes) ees,8.( g16)
 	g4->(\fz f) bes,8.( c'16)
 	c4->(\fz bes) ees,8.( g16)
 	g4->(\fz f) bes,8.( d'16) \clef alto
 	s2.*44
 	% bars 141 - 143
-	\clef treble <g,, ees'>4-.^\markup {Ob.I.II.} <bes f'>-. <ees g>-.
+	\voiceOne \clef treble <g,, ees'>4-.^\markup {Ob.I.II.} <bes f'>-. <ees g>-.
 	<g, ees'>-. <bes f'>-. <ees g>-.
 	<g, ees'>-. <bes f'>-. <ees g>-. \clef alto
 	s2.*39
@@ -3040,7 +3040,7 @@ cueVoiceTrombonoIMvtIII = \relative c {
 	\clef bass \voiceOne f2.:16^\markup {Timp.}
 	s2.*37
 	% bars 331 - 334
-	\clef treble a''2(^\markup {Ob.I.} g8 f
+	\clef treble a''2(-\offset X-offset #-4 ^\markup {Ob.I.} g8 f
 	a2) g8( f
 	a2) g8 f
 	a2.\fermata
@@ -3052,19 +3052,19 @@ cueVoiceTrombonoIMvtIII = \relative c {
 	<< {\InCueContext f8 } \\ {\InCueContext f}>> r r4 r
 	s2.*6
 	% bars 360 - 364
-	\voiceOne g'4(\f^\markup {Viol.I.} f) bes,8.( c'16)
+	\oneVoice g'4(\f^\markup {Viol.I.} f) bes,8.( c'16)
 	c4->(\fz bes) ees,8.( g16)
 	g4->(\fz f) bes,8.( c'16)
 	c4->(\fz bes) ees,8.( g16)
 	g4->(\fz f) bes,8.( d'16) \clef alto
 	s2.*85
 	% bars 450 - 455
-	\clef treble \oneVoice bes4.(\f\<^\markup {Viol.I.} c8 d f)\!
+	\clef treble \ottava #1 bes4.(\f\<-\tweak extra-offset #'(1 . 10.3) _\markup {Viol.I.} c8 d f)\!
 	a2( g4)
 	\tuplet 3/2 4 { f8 f f  ees ees ees  d d d
 	c c c  a' a a  g g g
 	f f f  ees ees ees  d d d
-	c c c  c' c c  bes bes bes} \clef alto
+	c c c  c' c c  bes bes bes} \ottava #0 \clef alto
 }
 cueVoiceTrombonoIMvtIV = \relative c {
 	s1*6
@@ -3082,7 +3082,7 @@ cueVoiceTrombonoIMvtIV = \relative c {
 	d2._\crescmarkup d16( e f g
 	a!2\fz) g4. f8
 	e2. e16(\< f g a)\!
-	bes2( a4. g8) \clef alto
+	bes2( a4. g8)
 	s1*142
 	% bars 227 - 230
 	\voiceTwo \clef treble fis,2\p^\markup {Cor.I.II.} cis4. cis8
@@ -3091,23 +3091,23 @@ cueVoiceTrombonoIMvtIV = \relative c {
 	gis'8( fis) r4 cis8 cis r4 \clef alto
 	s1*70
 	% bars 301 - 302
-	s2. \clef treble \voiceOne bes''4(~\pp^\markup {Viol.I.}
+	s2 \clef treble s4 \voiceOne bes''4(~\pp-\offset X-offset -5 ^\markup {Viol.I.}
 	bes aes4. ges8 d!4) \clef alto
 }
 cueVoiceTrombonoIIMvtI = \relative c {
 	s2*8
 	% bars 9 - 12
-	\clef treble \voiceOne bes'''8-.(\pp^\markup {Viol.I.} c16 bes \tuplet 3/2 4 {g8 f g}
+	\clef treble \oneVoice bes'''8-.(\pp^\markup {Viol.I.} c16 bes \tuplet 3/2 4 {g8 f g}
 	f) d-.( c-. bes-.)
 	bes'4.( a8)
 	\tuplet 3/2 4 {g8( f d')} d4->\laissezVibrer \clef tenor
 	s2*11
 	% bars 24 - 25
-	\clef treble \oneVoice d4.(->^\markup {Viol.I.} cis8)
+	\clef treble d4.(->^\markup {Viol.I.} cis8)
 	\tuplet 3/2 4 {b( a fis')} fis4\laissezVibrer \clef tenor
 	s2*23
 	% bars 49 - 50
-	\clef bass \voiceOne bes,,,8-.[^\markup {Fag.,Vlc.,Cb.} des,-.] bes'8.-. aes16-.
+	\clef bass \voiceOne bes,,,8-.[^\markup {Fag.,Vlc.,Cb.} des,-.] bes'8.-> aes16-.
 	aes8-.[ des,-.] ges-. ges,-. \clef tenor
 	s2*17
 	% bars 68 - 69
@@ -3115,13 +3115,13 @@ cueVoiceTrombonoIIMvtI = \relative c {
 	bes8 bes16 bes bes8 bes16 bes \clef tenor
 	s2*13
 	% bars 83 - 86
-	\clef bass \oneVoice f'8^\markup {Fag.} r f'4~
+	\clef bass \oneVoice f'8^\markup {Fag.} r f'4\f~
 	f ees8-.-> f-.->
-	g8 r c,4->~
+	g8 r c,4->\fz~
 	c d8-.-> ees-.-> \clef tenor
 	s2*36
 	% bars 123 - 126
-	\clef bass \voiceOne f,2\pp^\markup {Timp}\startTrillSpan
+	\clef bass \voiceOne f,2\pp-\offset X-offset -5 ^\markup {Timp}\startTrillSpan
 	f\<
 	<< f {s8 s s s\!}>>
 	<< f2 {s8 s s s\stopTrillSpan}>> \clef tenor
@@ -3144,7 +3144,7 @@ cueVoiceTrombonoIIMvtI = \relative c {
 	e cis8.( e16)
 	s2*49
 	% bars 352 - 355
-	r4^\markup {Cor.III.IV} r8. <bes bes'>16
+	r4-\offset X-offset -2 ^\markup {Cor.III.IV} r8. <bes bes'>16
 	q8 r r4
 	r r8. q16
 	q8 r r4 
@@ -3153,7 +3153,7 @@ cueVoiceTrombonoIIMvtI = \relative c {
 	bes4..->^\markup {Cor.} bes16
 	bes2->
 	aes4-> bes->
-	ges2
+	ges2->
 	s2*52
 	% bars 440 - 443
 	\clef bass \voiceOne f8^\markup {Fag.} r f'4->~
@@ -3162,7 +3162,7 @@ cueVoiceTrombonoIIMvtI = \relative c {
 	c d8-.-> ees-.-> \clef tenor
 	s2*52
 	% bar 496
-	<>^\markup {Tromboni I. II.}
+	<>-\offset X-offset -1.5 ^\markup {Trbn.I.II.}
 	s2*48
 	% bars 544 - 549
 	ees2(^\markup {Trbne.I.}
@@ -3187,7 +3187,7 @@ cueVoiceTrombonoIIMvtI = \relative c {
 cueVoiceTrombonoIIMvtII = \relative c {
 	s1.*56
 	% bars 57 - 58
-	\voiceOne c'4.(^\markup {Cor.I.} f2. g4.
+	\voiceOne c'4.(-\offset X-offset -4 ^\markup {Cor.I.} f2. g4.
 	aes4) r8 r4 r8 r2.
 	s1.*11
 	% bars 70 - 71
@@ -3200,12 +3200,12 @@ cueVoiceTrombonoIIMvtII = \relative c {
 	gis2.( a4. fis)
 	s1.*28
 	% bars 127
-	\clef treble r4^\markup {Ob.I.} r8 bes'4.(~\p bes8 fis8. g16) g4. \clef alto
+	\clef treble r4^\markup {Ob.I.} r8 bes'4.(~\p bes8 fis8. g16) g4. \clef tenor
 }
 cueVoiceTrombonoIIMvtIII = \relative c {
 	s2.*92
 	% bars 93 - 96
-	\clef treble \voiceOne c'''4->\fz(^\markup {Viol.I.} bes) ees,8.( g16)
+	\clef treble \voiceOne c'''4->\fz(-\offset X-offset -5 ^\markup {Viol.I.} bes) ees,8.( g16)
 	g4->(\fz f) bes,8.( c'16)
 	c4->(\fz bes) ees,8.( g16)
 	g4->(\fz f) bes,8.( d'16) \clef tenor
@@ -3225,13 +3225,13 @@ cueVoiceTrombonoIIMvtIII = \relative c {
 	\voiceTwo \clef bass a,2.:16\pp^\markup {Timp.}
 	a:
 	a:
-	d4 r r \clef tenor
+	d4\pp r r \clef tenor
 	s2.*45
 	% bar 293
 	\clef bass \voiceOne f2.:16^\markup {Timp.}
 	s2.*37
 	% bars 331 - 334
-	\clef treble a''2(^\markup {Ob.I.} g8 f
+	\clef treble a''2(-\offset X-offset -3 ^\markup {Ob.I.} g8 f
 	a2) g8( f
 	a2) g8 f
 	a2.\fermata
@@ -3243,19 +3243,19 @@ cueVoiceTrombonoIIMvtIII = \relative c {
 	<< {\InCueContext f8 } \\ {\InCueContext f}>> r r4 r
 	s2.*6
 	% bars 360 - 364
-	\voiceOne g'4(\f^\markup {Viol.I.} f) bes,8.( c'16)
+	\oneVoice g'4(\f^\markup {Viol.I.} f) bes,8.( c'16)
 	c4->(\fz bes) ees,8.( g16)
 	g4->(\fz f) bes,8.( c'16)
 	c4->(\fz bes) ees,8.( g16)
 	g4->(\fz f) bes,8.( d'16) \clef tenor
 	s2.*85
 	% bars 450 - 455
-	\clef treble \oneVoice bes4.(\f\<^\markup {Viol.I.} c8 d f)\!
+	\clef treble \ottava #1 \oneVoice bes!4.(\f\<-\tweak extra-offset #'(1 . 10.3) _\markup {Viol.I.} c8 d f)\!
 	a2( g4)
 	\tuplet 3/2 4 { f8 f f  ees ees ees  d d d
 	c c c  a' a a  g g g
 	f f f  ees ees ees  d d d
-	c c c  c' c c  bes bes bes} \clef tenor
+	c c c  c' c c  bes bes bes} \clef tenor \ottava #0
 }
 cueVoiceTrombonoIIMvtIV = \relative c {
 	s1*6
@@ -3273,7 +3273,7 @@ cueVoiceTrombonoIIMvtIV = \relative c {
 	d2._\crescmarkup d16( e f g
 	a!2\fz) g4. f8
 	e2. e16(\< f g a)\!
-	bes2( a4. g8) \clef tenor
+	bes2(\< a4. g8)\! \clef tenor
 	s1*142
 	% bars 227 - 230
 	\voiceTwo \clef treble fis,2\p^\markup {Cor.I.II.} cis4. cis8
@@ -3292,7 +3292,7 @@ cueVoiceTrombonoIIMvtIV = \relative c {
 cueVoiceTrombonoIIIMvtI = \relative c {
 	s2*8
 	% bars 9 - 12
-	\clef treble \voiceOne bes'''8-.(\pp^\markup {Viol.I.} c16 bes \tuplet 3/2 4 {g8 f g}
+	\clef treble \oneVoice bes'''8-.(\pp^\markup {Viol.I.} c16 bes \tuplet 3/2 4 {g8 f g}
 	f) d-.( c-. bes-.)
 	bes'4.( a8)
 	\tuplet 3/2 4 {g8( f d')} d4->\laissezVibrer \clef bass
@@ -3306,7 +3306,7 @@ cueVoiceTrombonoIIIMvtI = \relative c {
 	aes8-.[ des,-.] ges-. ges,-. \clef bass
 	s2*17
 	% bars 68 - 69
-	\clef bass \voiceTwo bes8\pp^\markup {Timp.} bes16 bes bes8 bes16 bes
+	\clef bass \voiceTwo bes8-\offset X-offset -1 \pp^\markup {Timp.} bes16 bes bes8 bes16 bes
 	bes8 bes16 bes bes8 bes16 bes \clef bass
 	s2*13
 	% bars 83 - 86
@@ -3316,7 +3316,7 @@ cueVoiceTrombonoIIIMvtI = \relative c {
 	c d8-.-> ees-.-> \clef bass
 	s2*36
 	% bars 123 - 126
-	\clef bass \voiceOne f,2\pp^\markup {Timp}\startTrillSpan
+	\clef bass \voiceOne f,2\pp-\offset X-offset -5 ^\markup {Timp}\startTrillSpan
 	f\<
 	<< f {s8 s s s\!}>>
 	<< f2 {s8 s s s\stopTrillSpan}>> \clef bass
@@ -3372,11 +3372,11 @@ cueVoiceTrombonoIIIMvtII = \relative c {
 	s1.*34
 	% bars 35 - 36
 	\voiceOne r4^\markup {Trbni.I.II.} r8 r4 r16 g'\mf c4.~ c8 r r
-	r4 r8 r4 r16 a\mf d4.~ d8 r r
+	r4 r8 r4 r16 a\mf\< d4.~ d8\! r r
 	s1.*20
 	% bars 57 - 58
-	c4.(^\markup {Cor.I.} f2. g4.
-	aes4) r8 r4 r8 r2.
+	\clef treble c4.(^\markup {Cor.I.} f2. g4.
+	aes4) r8 r4 r8 r2. \clef bass
 	s1.*11
 	% bars 70 - 71
 	\clef treble a2.(^\markup {Cor.I.} f4. g)
@@ -3392,7 +3392,7 @@ cueVoiceTrombonoIIIMvtII = \relative c {
 	gis2.( a4. fis) \clef bass
 	s1.*28
 	% bars 127
-	\clef treble \voiceOne r4^\markup {Ob.} r8 bes'4.(~ bes8 fis8. g16) g4. \clef bass
+	\clef treble \voiceOne r4^\markup {Ob.} r8 bes'4.(~\p bes8 fis8. g16) g4. \clef bass
 }
 cueVoiceTrombonoIIIMvtIII = \relative c {
 	s2.*92
@@ -3408,7 +3408,7 @@ cueVoiceTrombonoIIIMvtIII = \relative c {
 	<g, ees'>-. <bes f'>-. <ees g>-. \clef bass
 	s2.*39
 	% bars 183 - 186
-	<cis, e>2.^\markup {Fag.I.II.}
+	\oneVoice <cis, e>2.^\markup {Fag.I.II.}
 	q8. <a cis>16 q8 r r4
 	<cis e>2.
 	q8. <a cis>16 q8 r r4
@@ -3417,13 +3417,13 @@ cueVoiceTrombonoIIIMvtIII = \relative c {
 	\voiceTwo a,2.:16\pp^\markup {Timp.}
 	a:
 	a:
-	d4 r r
+	d4\pp r r
 	s2.*45
 	% bar 293
 	\voiceOne f2.:16^\markup {Timp.}
 	s2.*37
 	% bars 331 - 334
-	\clef treble a''2(^\markup {Ob.I.} g8 f
+	\clef treble a''2(-\offset X-offset -3 ^\markup {Ob.I.} g8 f
 	a2) g8( f
 	a2) g8 f
 	a2.\fermata
@@ -3435,24 +3435,24 @@ cueVoiceTrombonoIIIMvtIII = \relative c {
 	<< {\InCueContext f8 } \\ {\InCueContext f}>> r r4 r
 	s2.*6
 	% bars 360 - 364
-	\voiceOne g'4(\f^\markup {Viol.I.} f) bes,8.( c'16)
+	\oneVoice g'4(\f^\markup {Viol.I.} f) bes,8.( c'16)
 	c4->(\fz bes) ees,8.( g16)
 	g4->(\fz f) bes,8.( c'16)
 	c4->(\fz bes) ees,8.( g16)
 	g4->(\fz f) bes,8.( d'16) \clef bass
 	s2.*85
 	% bars 450 - 455
-	\clef treble \oneVoice bes4.(\f\<^\markup {Viol.I.} c8 d f)\!
+	\clef treble \oneVoice \ottava #1 bes4.(\f\<-\tweak extra-offset #'(0.5 . 10.3) _\markup {Viol.I.} c8 d f)\!
 	a2( g4)
 	\tuplet 3/2 4 { f8 f f  ees ees ees  d d d
 	c c c  a' a a  g g g
 	f f f  ees ees ees  d d d
-	c c c  c' c c  bes bes bes} \clef tenor
+	c c c  c' c c  bes bes bes} \ottava #0 \clef bass
 }
 cueVoiceTrombonoIIIMvtIV = \relative c {
 	s1*6
 	% bars 7 - 10
-	\voiceOne r2^\markup {Cl.I.II.} e2\fz
+	\voiceOne r2-\offset X-offset -3 _\markup {Cl.I.II.} e2\fz
 	r e
 	r e
 	r e
@@ -3465,10 +3465,10 @@ cueVoiceTrombonoIIIMvtIV = \relative c {
 	d2._\crescmarkup d16( e f g
 	a!2\fz) g4. f8
 	e2. e16(\< f g a)\!
-	bes2( a4. g8) \clef bass
+	bes2(\< a4. g8)\!
 	s1*70
 	% bars 155 - 160
-	\clef treble \voiceTwo aes,,2->\pp^\markup {Viol.I.} aes4. aes8
+	\clef treble \voiceTwo aes,,2->-\offset X-offset -2 \pp^\markup {Viol.I.} aes4. aes8
 	aes'2(~-> aes8 ges f ees)
 	des2\f des4.\< des8\!
 	\voiceOne des'2(~\fz des8 ces bes aes)
@@ -3476,7 +3476,7 @@ cueVoiceTrombonoIIIMvtIV = \relative c {
 	\voiceOne ges'2(~\fz ges8 fes ees des) \clef bass
 	s1*66
 	% bars 227 - 230
-	fis,2\p^\markup {Cor.I.II.} cis4. cis8
+	\oneVoice fis,2\p^\markup {Cor.I.II.} cis4. cis8
 	gis'8( fis) cis4 r cis8-. cis-.
 	gis'( fis) r4 cis8 cis r4
 	gis'8( fis) r4 cis8 cis r4

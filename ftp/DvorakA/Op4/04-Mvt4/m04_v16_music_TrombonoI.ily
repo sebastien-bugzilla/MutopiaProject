@@ -71,7 +71,7 @@ musicTrombonoIMvtIV = \relative c {
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	\mark \default
+	\markXoffset #-0.2 \markWhiteout \mark \default
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R
 	\mmrPos #-4 R
@@ -85,11 +85,11 @@ musicTrombonoIMvtIV = \relative c {
 % Bars 86 to 90
 	
 	
-	
+	\clef alto
 	cis4-.->\f d-.-> e-.-> f-.->
 	e2-> d->
 % Bars 91 to 95
-	c \tuplet 3/2 2 {c4-.( d-. ees-.)}
+	c! \tuplet 3/2 2 {c4-.( d-. ees-.)}
 	ees2( d4-.) r
 	d-> d-> d-> d->
 	d2-> ees->
@@ -104,8 +104,8 @@ musicTrombonoIMvtIV = \relative c {
 	ees2 d4. c8
 	bes2-> a->
 	g-> c->
-	bes-> << bes-> \\ \InCueContext ees >>
-	c4\ff r r2
+	bes-> << bes_> \\ \InCueContext \noteShift #2 ees >>
+	\textMark "Vi-" c4\ff r r2
 % Bars 106 to 110
 	c4 r r2
 	f4 r f r
@@ -123,7 +123,7 @@ musicTrombonoIMvtIV = \relative c {
 	d-. r c-. r
 	bes-. r c-. r
 	d r ees r
-	c r bes r \mark \default
+	c r bes r \offset X-offset #-2.3 \textEndMark "-de" \mark \default
 % Bars 121 to 125
 	d8\ff r r4 d-.-> c-.->
 	r2 d4-. c-.
@@ -193,13 +193,13 @@ musicTrombonoIMvtIV = \relative c {
 % Bars 181 to 185
 	fis4-. r fis-. r
 	R1
-	e4\f r r2
+	\startMeasureCount e4\f r r2
 	e4 r r2
 	e4 r r2
 % Bars 186 to 190
 	e4 r r2
 	e4 r r2
-	e4 r r2
+	e4 r r2 \stopMeasureCount
 	fis4 r r2
 	R1
 % Bars 191 to 195
@@ -229,7 +229,7 @@ musicTrombonoIMvtIV = \relative c {
 	\ni \mmrPos #4 R1
 	\mmrPos #4 R
 	\mmrPos #4 R
-	\mmrPos #4 R \no \mark \default
+	\mmrPos #4 R \no \markXoffset #-0.2 \markWhiteout \mark \default
 % Bars 231 to 235
 	d,2\f e8. d16 b'4
 	a2. b8 cis
@@ -249,7 +249,7 @@ musicTrombonoIMvtIV = \relative c {
 	R1*2
 	
 % Bars 246 to 250
-	f,1\f~
+	f,!1\f~
 	f4 r r2
 	<< f1~ {s4 s2._\dimmarkup}>>
 	f4 r r2
@@ -282,7 +282,7 @@ musicTrombonoIMvtIV = \relative c {
 	b-> r
 	b-^ b4-. b-.
 	b2-^ b4-. b-.
-	c2-^ c4-. c-.
+	c!2-^ c4-. c-.
 % Bars 281 to 285
 	c2-^ c4-. c-.
 	d r r2
@@ -294,7 +294,7 @@ musicTrombonoIMvtIV = \relative c {
 % Bars 296 to 300
 	
 % Bars 301 to 305
-	\ni \mmrPos #-4 R1 \mark \default
+	\ni \mmrPos #-4 \tweak extra-offset #'(1 . 0) R1 \markWhiteout \mark \default
 	\mmrPos #-4 R1 \no
 	r4 aes2\pp r4
 	R1
@@ -373,7 +373,7 @@ musicTrombonoIMvtIV = \relative c {
 	r g' r f
 % Bars 371 to 375
 	r f r ees \mark \default
-	bes-.\f ees-. ees,-. r8 bes'
+	\startMeasureCount bes-.\f ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
@@ -381,7 +381,7 @@ musicTrombonoIMvtIV = \relative c {
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
-	bes4-. ees-. ees,-. r8 bes'
+	bes4-. ees-. ees,-. r8 bes' \stopMeasureCount
 	bes r r4 r2
 % Bars 381 to 385
 	<< fis'1(\fp {s2 s\> }>>
@@ -413,7 +413,7 @@ musicTrombonoIMvtIV = \relative c {
 	f!4-. r r2
 % Bars 411 to 415
 	fis4-. r r2
-	ees->\f dis->
+	e->\f dis->  % ees => e based on part score and Violin I
 	e2.-> r4
 	g2 e4-. d-.
 	e2. r4
@@ -439,22 +439,22 @@ musicTrombonoIMvtIV = \relative c {
 	R1
 	g2 r
 	R1
-	fis4\f r r2
+	\startMeasureCount fis4\f r r2
 	fis4 r r2
 % Bars 436 to 440
 	fis4 r r2
 	fis4 r r2
 	fis4 r r2
 	fis4 r r2 \mark \default
-	fis4\ff-> r r2
+	fis4\ff-> r r2 \stopMeasureCount
 % Bars 441 to 445
 	R1
-	r2 \tuplet 3/2 2 {fis4->\f\< fis-> fis->\!}
+	r2 \tuplet 3/2 2 {\once \tupletUp fis4->\f\< fis-> fis->}
 	fis1\fz->
 	fis4-> r r2
 	R1
 % Bars 446 to 450
-	r2 \tuplet 3/2 2 {fis4\f\<-> fis-> fis->\!}
+	r2 \tuplet 3/2 2 {\once \tupletUp fis4\f\<-> fis-> fis->}
 	fis1->\fz
 	fis2 r
 	R1
@@ -494,7 +494,7 @@ musicTrombonoIMvtIV = \relative c {
 	fis\fz->
 	fis\fz->
 	fis4. gis8 ais2->
-	g!2\ff \tuplet 3/2 2 {f4 g aes}
+	g!2\ff \tuplet 3/2 2 {f!4 g aes}
 % Bars 481 to 485
 	aes2-> g->
 	bes \tuplet 3/2 2 {aes4 bes c}
@@ -526,7 +526,7 @@ musicTrombonoIMvtIV = \relative c {
 	ees-> d->
 	g1->~
 	g \mark \default
-	d2->\ff f->
+	\startMeasureCount d2->\ff f->
 	d-> f->
 % Bars 516 to 520
 	d-> f->
@@ -535,7 +535,7 @@ musicTrombonoIMvtIV = \relative c {
 	d-> f->
 	d-> f->
 % Bars 521 to 525
-	d-> f->
+	d-> f-> \stopMeasureCount
 	e1\ff-^~
 	e2 e-^
 	ees!1-^~

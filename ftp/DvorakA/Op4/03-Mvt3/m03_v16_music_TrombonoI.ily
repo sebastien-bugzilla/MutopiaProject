@@ -28,26 +28,38 @@ musicTrombonoIMvtIII = \relative c {
 	
 	
 	
-	R2.\fermata \mark \default
-	R2.*21
+	\once \ni R2.\fermata \mark \default
+	R2.*12
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	\mmrnDown R2.*3
+	
+	
+	\mmrLength #14 \mmrnDown R2.*3
 % Bars 61 to 65
 	
+	
+	R2.*3
+	
+	
 % Bars 66 to 70
-	R2.\fermata
-	R2.*18
+	\once \ni R2.\fermata
+	R2.*12
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
+	
+	
+	R2.*3
+	
 % Bars 81 to 85
 	
-	
+	\mmrLength #14 R2.*3
 	
 	\mark \default
 	R2.*8
@@ -231,13 +243,21 @@ musicTrombonoIMvtIII = \relative c {
 	
 % Bars 311 to 315
 	
-	R2.\fermata \mark \markAaBox
-	R2.*18
+	\once \ni R2.\fermata \mark \markAaBox
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
+	
+	
+	
+	\mmrnDown R2.*3
 % Bars 326 to 330
+	
+	
+	\mmrLength #16 \mmrnDown R2.*3
+	
 	
 % Bars 331 to 335
 	\ni \mmrPos #-4 R2.
@@ -320,19 +340,27 @@ musicTrombonoIMvtIII = \relative c {
 	r4 r f\brack\f
 	f f f 
 	f2.\fermata
-	R2.*22
+	\textMark "Coda" R2.*11
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	
 % Bars 426 to 430
+	R2.*4
 	
+	
+	
+	R2.
 % Bars 431 to 435
+	\mmrLength #11 R2.*3
+	
+	
+	\mmrLength #11 R2.*3
 	
 % Bars 436 to 440
 	
-	R2.\fermata
-	R2.*12
+	\once \ni R2.\fermata
+	\mmrLength #11 \mmrnDown R2.*12
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -340,13 +368,13 @@ musicTrombonoIMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 % Bars 451 to 455
 	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-7 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R
+	\mmrPos #-6 R \no
 % Bars 456 to 460
 	r4 ees2\fffzD
 	r4 f2->\fz
@@ -386,5 +414,5 @@ musicTrombonoIMvtIII = \relative c {
 % Bars 496 to 500
 	
 % Bar 501
-	R2.\fermata \fine
+	\once \ni R2.\fermata \fine
 }

@@ -9,13 +9,13 @@ musicTrombonoIMvtI = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R2*8
+	\mmrLength #24 R2*8
 % Bars 6 to 10
 	
 	
 	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
+	\mmrPos #-6 R
 % Bars 11 to 15
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
@@ -28,7 +28,7 @@ musicTrombonoIMvtI = \relative c {
 	
 	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 % Bars 26 to 30
 	d2\ff\fermata \mark \default
 	a4\f r8 bes!~
@@ -70,12 +70,12 @@ musicTrombonoIMvtI = \relative c {
 		
 		\ni \mmrPos #4 R2
 		\mmrPos #4 R \no
-		c2\pp~
+		\startMeasureCount c2\pp~
 % Bars 71 to 75
 		c~
 		c~
 		c~
-		<< c {s8\> s s s\!} >>
+		<< c {s8\> s s s\!} >> \stopMeasureCount
 		R2*8
 % Bars 76 to 80
 	
@@ -127,11 +127,14 @@ musicTrombonoIMvtI = \relative c {
 		a~
 		a
 % Bars 131 to 135
-		R2*25
+		\mmrLength #15 \tempoXoffset #-1 R2*13
 % Bars 136 to 140
-	
+		
 % Bars 141 to 145
-	
+		
+		
+		
+		\tempoXoffset #-2 R2*12
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -392,7 +395,7 @@ musicTrombonoIMvtI = \relative c {
 	cis
 	d~
 	d 
-	<<ees( {s4 s_\crescmarkup}>>
+	\textMark "Vi-" <<ees( {s4 s_\crescmarkup}>>
 % Bars 501 to 505
 	<< e2 {s4 s\< }>>
 	f2
@@ -421,7 +424,7 @@ musicTrombonoIMvtI = \relative c {
 	R2
 	r4 d8 r
 	R2
-	r4_\pocoapococrescendo d8 r
+	r4_\pocoapococrescendo d8 r 
 	R2
 % Bars 526 to 530
 	r4 d8 r
@@ -437,7 +440,7 @@ musicTrombonoIMvtI = \relative c {
 % Bars 541 to 545
 	
 	
-	\mark \default
+	\offset X-offset -2.3 \textEndMark "-de" \mark \default
 	ees2(\pp
 	e)
 % Bars 546 to 550
@@ -467,7 +470,7 @@ musicTrombonoIMvtI = \relative c {
 % Bars 566 to 570
 	
 	\mark \default
-	\grace {s8.} R2*14
+	R2*14
 % Bars 571 to 575
 	
 % Bars 576 to 580
@@ -539,23 +542,31 @@ musicTrombonoIMvtI = \relative c {
 	r f
 	ees!8 r r4
 % Bars 646 to 650
-	R2*9
+	R2*5
 % Bars 651 to 655
+	\mmrLength #12 \mmrnDown \tempoXoffset #-1 R2*4
 	
 	
-	
-	\mark \default
-	R2*28
+	\markXoffset #-0.2 \markWhiteout \mark \default
+	\mmrLength #19 R2*7
 % Bars 656 to 660
 	
 % Bars 661 to 665
 	
+	R2
+	\mmrLength #11 R2*4
+	
+	
 % Bars 666 to 670
 	
+	\mmrLength #11 R2*4
+	
+	
+	
 % Bars 671 to 675
-	
+	\mmrLength #11 R2*5
 % Bars 676 to 680
-	
+	\mmrLength #17 \mmrnDown R2*7
 % Bars 681 to 685
 	
 	\mark \default
@@ -602,7 +613,7 @@ musicTrombonoIMvtI = \relative c {
 % Bars 721 to 725
 	
 	
-	r4 ees\ff-.
+	r4 ees!\ff-.
 	d-. g-.
 	f-. r
 % Bars 726 to 729
