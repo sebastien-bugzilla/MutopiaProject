@@ -521,7 +521,7 @@ musicViolinoIMvtIII = \relative c {
 	r4 r f8 r
 	r4 r f8 r
 % Bars 426 to 430
-	d4.(\pp\< ees8 \once \tupletUp \tuplet 3/2 4 {f g c,)}
+	d4.(\pp\<^\arco ees8 \once \tupletUp \tuplet 3/2 4 {f g c,)} % arco according to part score and second violin
 	c4(\! d\> ees8. ees16-.)
 	c4( d2)\pp
 	bes( c8. d16)

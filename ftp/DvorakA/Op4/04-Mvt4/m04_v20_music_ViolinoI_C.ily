@@ -298,7 +298,7 @@ musicViolinoIMvtIV = \relative c {
 	f2._\espressivo g8(\< a
 	bes4 a4.\!  g8\> d4)\!
 	f2. f4
-	f2 \tuplet 3/2 4 {f4( ees bes')}
+	f2 \tuplet 3/2 2 {f4( ees bes')}
 % Bars 261 to 265
 	bes2. \tuplet 5/4 4 {fis16(\< g a bes c)\!}
 	d4.(\fz c8-.) bes4-.( a-.)

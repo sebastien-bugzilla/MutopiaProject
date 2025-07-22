@@ -33,6 +33,7 @@ pmarkup = \markup {\hspace #-0.05 \dynamic p}
 pdolce = \markup {\hspace #-0.05 \dynamic p \italic {dolce}}
 psecco = \markup {\hspace #-0.05 \dynamic p \italic {secco}}
 piup = \markup {\italic {più} \dynamic p}
+pcalando = \markup {\hspace #-0.05 \dynamic p \italic {calando}}
 
 mfespress = \markup {\hspace #-0.76 \dynamic mf \italic {espress.}}
 mfmarcato = \markup {\hspace #-0.76 \dynamic mf \italic {marcato}}
@@ -190,28 +191,6 @@ pppbrackspiccato = \markup {
 }
 
 
-crescD = \tweak DynamicText.self-alignment-X #-0.75 #(make-dynamic-script 
-	(markup #:normal-text #:italic "cresc.")
-)
-dimD = \tweak DynamicText.self-alignment-X #-0.70 #(make-dynamic-script 
-	(markup #:normal-text #:italic "dim.")
-)
-legatoD = \tweak DynamicText.self-alignment-X #-0.77 #(make-dynamic-script 
-	(markup #:normal-text #:italic "legato")
-)
-fpp = #(make-dynamic-script "fpp")
-fzdimD = \tweak DynamicText.self-alignment-X #-0.8 #(make-dynamic-script fzdim)
-piufD = #(make-dynamic-script piuf)
-ffz = #(make-dynamic-script "ffz")
-pdimD = \tweak DynamicText.self-alignment-X #-0.8 #(make-dynamic-script pdim)
-fzpp = #(make-dynamic-script "fzpp")
-ffp = #(make-dynamic-script "ffp")
-fzp = #(make-dynamic-script "fzp")
-pmoltoespressD = \tweak DynamicText.self-alignment-X #-0.91 #(make-dynamic-script pmoltoespress)
-fpdimD = \tweak DynamicText.self-alignment-X #-0.81 #(make-dynamic-script fpdim)
-fffzD = \tweak DynamicText.self-alignment-X #-0.28 #(make-dynamic-script fffz)
-fbrackzD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script fbrackz)
-ppfzD = \tweak DynamicText.self-alignment-X #-0.26 #(make-dynamic-script ppfz)
 
 
 
@@ -235,7 +214,7 @@ moltocresc = \markup {\italic {molto cresc.}}
 morendo = \markup {\italic {morendo}}
 pizz = \markup {\italic {pizz.}}
 pocoapoco = \markup {\italic {poco a poco}}
-pocoapococresc = \markup {\italic {poco a poco cresc.}}
+pocoapococresc = \markup {\normal-text \italic {poco a poco cresc.}}
 pocoapococrescC = \markup {\italic {\column { \lower #1 "poco a poco" "cresc."}}}
 pocoa_pococresc = \markup {\italic {\column { \lower #1 "poco a" "poco cresc."}}}
 pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
@@ -256,6 +235,29 @@ brackpocoapococresc = \markup {
 	}
 }
 
+crescD = \tweak DynamicText.self-alignment-X #-0.75 #(make-dynamic-script 
+	(markup #:normal-text #:italic "cresc.")
+)
+dimD = \tweak DynamicText.self-alignment-X #-0.70 #(make-dynamic-script 
+	(markup #:normal-text #:italic "dim.")
+)
+legatoD = \tweak DynamicText.self-alignment-X #-0.77 #(make-dynamic-script 
+	(markup #:normal-text #:italic "legato")
+)
+fpp = #(make-dynamic-script "fpp")
+fzdimD = \tweak DynamicText.self-alignment-X #-0.8 #(make-dynamic-script fzdim)
+piufD = #(make-dynamic-script piuf)
+ffz = #(make-dynamic-script "ffz")
+pdimD = \tweak DynamicText.self-alignment-X #-0.8 #(make-dynamic-script pdim)
+fzpp = #(make-dynamic-script "fzpp")
+ffp = #(make-dynamic-script "ffp")
+fzp = #(make-dynamic-script "fzp")
+pmoltoespressD = \tweak DynamicText.self-alignment-X #-0.91 #(make-dynamic-script pmoltoespress)
+fpdimD = \tweak DynamicText.self-alignment-X #-0.81 #(make-dynamic-script fpdim)
+fffzD = \tweak DynamicText.self-alignment-X #-0.28 #(make-dynamic-script fffz)
+fbrackzD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script fbrackz)
+ppfzD = \tweak DynamicText.self-alignment-X #-0.26 #(make-dynamic-script ppfz)
+pocoapococrescD = \tweak DynamicText.self-alignment-X #-0.91 #(make-dynamic-script pocoapococresc)
 
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }

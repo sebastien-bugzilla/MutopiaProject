@@ -3733,7 +3733,7 @@ cueVoiceViolinoIMvtIII = \relative c {
 cueVoiceViolinoIMvtIV = \relative c {
 	s1*136
 	% bars 137 - 140
-	\voiceOne cis''4(\<^\markup {Cl.I.} d c'! bes!)\!
+	\voiceOne cis''4(\<-\offset X-offset -3 ^\markup {Cl.I.} d c'! bes!)\!
 	a(\> g f e)\!
 	d1(\p\>
 	des)\!

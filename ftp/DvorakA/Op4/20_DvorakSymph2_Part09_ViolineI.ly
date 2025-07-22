@@ -39,19 +39,27 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4"
+			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4 — Violine I"
 		}
 		instrument = \markup {
-			"ViolineI"
+			""
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIMvtI
-%			}
 			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtI
+				\formatViolinoIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtI
 			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtI
@@ -71,11 +79,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIMvtII
-%			}
 			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtII
+				\formatViolinoIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtII
@@ -87,7 +95,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1 \bold 2.
 			}
 		}
 		\layout {
@@ -95,11 +103,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIMvtIII
-%			}
 			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtIII
+				\formatViolinoIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtIII
@@ -111,7 +119,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.3 \bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -119,11 +127,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIMvtIV
-%			}
 			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtIV
+				\formatViolinoIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtIV
 			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtIV
@@ -135,7 +143,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2.3 \bold "4. Finale"
 			}
 		}
 		\layout {

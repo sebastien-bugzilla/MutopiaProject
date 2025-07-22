@@ -66,7 +66,7 @@ musicViolinoIMvtIII = \relative c {
 	bes8)\![ r16 bes-.]\> << bes2 { s8 s s s\!}>>
 	g4( bes\< c
 	d8)[\! r16 d-.]\> << d2 {s8 s s s\!}>>
-	c4(\< d ees_\mfmarkup)
+	c4(\< d \markEO #'(-0.5 . -6.3) ees-\offset X-offset 1.5 ^\mfmarkup)
 	g( f\! bes,)\>
 % Bars 51 to 55
 	d( c g8)[ r16 g-.]\!
@@ -97,7 +97,7 @@ musicViolinoIMvtIII = \relative c {
 	g( f ees d ees f bes,! a bes)
 	d( c bes a bes c bes a g)
 	f( g f g f g f g f)
-	d( c bes f' ees d g f ees)
+	\tupletUp d( c bes f' ees d \tupletNeutral g f ees)
 % Bars 76 to 80
 	bes'( a bes bes, a bes bes' a bes)
 	c( b c d\< c d ees d ees)
@@ -118,8 +118,8 @@ musicViolinoIMvtIII = \relative c {
 	g4( f) bes,8. f'16\!
 % Bars 91 to 95
 	f16(\mf\< g f g f8) bes-. a-. g-.\!
-	g4(\f f) bes,8.( c'16)
-	c4->(\fz bes) ees,8.( g16)
+	\dynEO #'(0 . 1) g4(\f f) bes,8.( c'16)
+	\dynEO #'(0 . 1) c4->(\fz bes) ees,8.( g16)
 	g4(->\fz f) bes,8.( c'16)
 	c4(->\fz bes) ees,8.( g16)
 % Bars 96 to 100
@@ -141,9 +141,9 @@ musicViolinoIMvtIII = \relative c {
 	f':\ff ees: d: c: bes: a:
 	g: f: ees: d: c: bes:
 % Bars 111 to 115
-	R2. \mark \default
+	R2. \markXoffset #-0.2 \markWhiteout \mark \default
 	R2.
-	r8 bes,16\ff\< a bes d f a bes d f bes\!
+	r8 bes,16-\offset X-offset -1 \ff a\< bes d f a bes d f bes\!
 	g2->\ff ees8. f16
 	f2-> d8. ees16
 % Bars 116 to 120
@@ -187,7 +187,7 @@ musicViolinoIMvtIII = \relative c {
 	r4 r8. <bes, bes'>16\ff q4
 	r4 r8. q16 q4
 	r4 r8. q16 q4
-	r4 r8. q16 q4\ff~ \mark \default
+	r4 r8. q16 q4\ff~ \markWhiteout \mark \default
 % Bars 151 to 155
 	q2.~\>
 	<< q {s4 s s\!}>>
@@ -226,33 +226,43 @@ musicViolinoIMvtIII = \relative c {
 		\key a \major <a, e'>2.->\ff\>
 		<< q-> {s4 s s\!}>>
 % Bars 181 to 185
-		<< q2.->\p\> {s4 s s\!}>>
+		<< \hairpinShorten #'(-0.3 . -1.5) q2.->\p\> {s4 s s\!}>>
 		q2.->\brack\pp
-		\tuplet 3/2 4 {cis'8\pp( e cis  e cis e cis e cis
-		e cis e cis e cis e cis e)
-		cis( e cis e cis e cis e cis
+		<<{
+			\oneVoice \tuplet 3/2 4 {cis'8\pp( e cis  e cis e cis e cis \DoublePercentNumberOne
+			e cis e cis e cis e cis e)
+			cis( e cis e cis e cis e cis
 % Bars 186 to 190
-		e cis e cis e cis e cis e)
-		cis( e cis e cis e cis e cis
-		e cis e cis e cis e cis e)
-		cis( e cis e cis e cis e cis
-		e cis e cis e cis e cis e)
+			e cis e cis e cis e cis e)
+			cis( e cis e cis e cis e cis
+			e cis e cis e cis e cis e)
+			cis( e cis e cis e cis e cis
+			e cis e cis e cis e cis e)}
+		} \\ {
+			\set countPercentRepeats = ##t \omit DoublePercentRepeat
+			\repeat percent 4 { s2.*2 }
+		}>>
 % Bars 191 to 195
-		fis( a fis a fis a fis a fis
-		a fis a fis a fis a fis a)
-		fis( a fis a fis a fis a fis
-		a fis a fis a fis a fis a)
-		fis(\pp a fis a fis a fis a fis
+		<<{
+			\oneVoice \tuplet 3/2 4 {fis8( a fis a fis a fis a fis \DoublePercentNumberOne
+			a fis a fis a fis a fis a)
+			fis( a fis a fis a fis a fis
+			a fis a fis a fis a fis a)
+			fis(\pp a fis a fis a fis a fis
 % Bars 196 to 200
-		a fis a fis a fis a fis a)
-		fis( a fis a fis a fis a fis
-		a fis a fis a fis a fis a)
-		fis( a fis a fis a fis a fis
-		a fis a fis a fis a fis a)
+			a fis a fis a fis a fis a)
+			fis( a fis a fis a fis a fis
+			a fis a fis a fis a fis a)
+			fis( a fis a fis a fis a fis
+			a fis a fis a fis a fis a)
 % Bars 201 to 205
-		fis( a fis a fis a fis a fis
-		a fis a fis a fis a fis a)
-		d(\pp b d b d b d b d
+			fis( a fis a fis a fis a fis
+			a fis a fis a fis a fis a)}
+		} \\ {
+			\set countPercentRepeats = ##t \omit DoublePercentRepeat
+			\repeat percent 6 { s2.*2 }
+		}>>
+		\tuplet 3/2 4 {d8(\pp b d b d b d b d
 		b d b d b d b d b)
 		d( b d b d b d b d
 % Bars 206 to 210
@@ -299,7 +309,7 @@ musicViolinoIMvtIII = \relative c {
 	des r r4 r
 	R2.
 % Bars 241 to 245
-	ais'16(\fz b! cis8)\> fis,-. fis-. ais-. ais-.\!
+	ais'16(\fz b! cis!8)\> fis,-. fis-. ais-. ais-.\!
 	dis,\p-. dis-. fis-. fis-. cis-. cis-. 
 	\tuplet 3/2 4 {e!(\pp e, e' e, e' e, e' e, e')
 	e,( e' e,  e' e, e' e, e' e,)
@@ -329,7 +339,7 @@ musicViolinoIMvtIII = \relative c {
 	des4\< f8( aes des ees!)\!
 	f4-.\f des-. r8. des,16
 % Bars 266 to 270
-	des4 f8:16\< aes: des: ees:\!
+	des4 \hairpinShorten #'(0 . 3) f8:16\< aes: des: ees:
 	f4(\fffzD des8) r f4(\fz
 	des8) r f4(\fz des8) r \mark \default
 	bes2.\ff\>~
@@ -378,7 +388,7 @@ musicViolinoIMvtIII = \relative c {
 	bes'\fz g g ees a\fz f f d g\fz ees ees c
 % Bars 306 to 310
 	a'\fz f f d g\fz ees ees c f\fz d d bes
-	\tuplet 3/2 4 {ees8-. c-. a-. d\>-. bes-. g-. c-. a-. f-. 
+	\tuplet 3/2 4 {ees8-. c-. a-. \once \tupletUp d\>-. bes-. g-. c-. a-. f-. 
 	bes-. g-. ees-. a-. f-. d-. g-. ees-. c\dimD-. 
 	f-. d-. bes-. ees-. c-. a-. d-. bes-. g-. 
 	a\p( c f)} r4 r
@@ -389,8 +399,8 @@ musicViolinoIMvtIII = \relative c {
 	bes8)[\! r16 bes-.]\> << bes2 {s4 s\!}>>
 	g4( bes\< c
 % Bars 316 to 320
-	d8)\![ r16 d-.]\> << d2 {s4 s\!}>>
-	c4(\< d ees_\mfmarkup)
+	d8)\![ r16 \hairpinShorten #'(0 . -1) d-.]\> << d2 {s4 s\!}>>
+	c4(\< d \markEO #'(1 . -8) ees^\mfmarkup)
 	g( f\! bes,)\>
 	d( c g8)[ r16 g-.]\!
 	g2(\p f8. c16)
@@ -426,7 +436,7 @@ musicViolinoIMvtIII = \relative c {
 	c( b c d\< c d ees d ees)
 % Bars 346 to 350
 	f( e f e f g f e f)\!
-	aes(\pp g aes g aes bes aes g aes)
+	\tempoXoffset #-3 aes(\pp g aes g aes bes aes g aes)
 	des,( c des f ees des ees c aes)
 	des( f, des' c f, c' bes f bes)
 	c( b c b c b c b c)
@@ -440,8 +450,8 @@ musicViolinoIMvtIII = \relative c {
 	f4.) bes8( a16 bes c bes)
 	f(\< g f g f8) bes-. a-. g-.
 	g4( f) bes,8. f'16\!
-	f16(\mf\< g f g f8) bes-. a-. g-.\!
-	g4(\f f) bes,8.( c'16)
+	f16(\mf-\tweak extra-offset #'(0 . 0.5) \< g f g f8) bes-. a-. g-.\!
+	\dynEO #'(0 . 1) g4(\f f) bes,8.( c'16)
 % Bars 361 to 365
 	c4(->\fz bes) ees,8.( g16)
 	g4(->\fz f) bes,8.( c'16)
@@ -507,7 +517,7 @@ musicViolinoIMvtIII = \relative c {
 	a':_\fbrackf d,,: bes'': g,: c': f,,:
 	d'': f,: c': f,: d': f,:
 	c'2.\fermata
-	r4 r f,8\p^\pizz r
+	\textMark "Coda" \startMeasureCount r4 r f,8\p-\offset X-offset 1 ^\pizz r
 % Bars 416 to 420
 	r4 r f8 r
 	r4 r f8 r
@@ -516,22 +526,25 @@ musicViolinoIMvtIII = \relative c {
 	r4 r f8 r
 % Bars 421 to 425
 	r4 r f8 r
-	r4_\diminuendo r f8\pp r
+	r4_\dimmarkup r f8\pp r
 	r4 r f8 r
 	r4 r f8 r
-	r4 r f8 r
+	r4 r f8 r \stopMeasureCount
 % Bars 426 to 430
-	d4.(\pp\< ees8 \tuplet 3/2 4 {f g c,)}
+	d4.(\pp\<^\arco ees8 \tuplet 3/2 4 {f g c,)} % arco according to part score and second violin
 	c4(\! d\> ees8. ees16-.)
 	c4( d2)\pp
 	bes( c8. d16)
 	d4( ees f)
 % Bars 431 to 435
-	R2.*6
+	\mmrLength #12 \mmrnDown R2.*3
+	
+	
+	\mmrLength #12 R2.*3
 % Bars 436 to 440
 	
-	R2.\fermata
-	R2.*4
+	\once \ni R2.\fermata
+	\mmrLength #19 \mmrnDown R2.*4
 % Bars 441 to 445
 	
 	\ni \mmrPos #-6 R2.
@@ -539,7 +552,7 @@ musicViolinoIMvtIII = \relative c {
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no
 % Bars 446 to 450
-	f4.(\mf g8 a16[ bes r16. f32-.)]
+	f4.(\mf g8 \beamOffset #'(-0.5 . -0.5) a16[ bes r16. f32-.)]
 	f4( g ees)
 	d4.(\< f8 bes d)\!
 	d2->(_\crescmarkup c4)
@@ -558,7 +571,7 @@ musicViolinoIMvtIII = \relative c {
 	bes:\ff
 % Bars 461 to 465
 	bes:
-	bes4-> a-> g->
+	bes4-> a!-> g->
 	f-> ees-> c->
 	<d, bes'~>2\ff bes'8 bes-.
 	<d, bes'>2~ q8 q-.
@@ -591,7 +604,7 @@ musicViolinoIMvtIII = \relative c {
 	g->
 	a4\f-^ bes-^ a-^
 	bes r r
-	a,-.\p bes-._\calando a-.
+	a,-._\pcalando bes-. a-.
 % Bars 491 to 495
 	bes-. r r
 	a,-.\p r r
