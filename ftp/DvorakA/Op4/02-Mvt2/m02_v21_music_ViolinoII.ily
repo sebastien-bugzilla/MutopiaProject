@@ -13,9 +13,9 @@ musicViolinoIIMvtII = \relative c {
 	c( fis, c' fis,~ fis c'~  c fis, c' fis,~ fis c'~  c fis, c' fis,~ fis_\brackM\crescmarkup c'~  c fis, c' fis,~ fis c')
 	ees,( g ees g~ g ees~  ees\< g ees g~ g ees~  ees g ees g~ g ees~  ees g ees\! g~ g ees)
 	ees( ges ees ges~ ges ees~  ees ges ees ges~ ges ees~  ees ges ees ges~ ges ees~  ees ges ees ges~ ges ees)
-	g!(\mf ees' g, ees'~ ees g,~  g ees' g, ees'~ ees g,~  g d' g, d'~ d g,~  g d' g, d'~ d g,)
+	g!(-\offset X-offset -2 \mf ees' g, ees'~ ees g,~  g ees' g, ees'~ ees g,~  g d' g, d'~ d g,~  g d' g, d'~ d g,)
 % Bars 6 to 10
-	g( c g c~ c g~  g\> c g c~ c g~  g d' g, d'~ d g,~  g d' g, d'~ d g,)\!
+	g( c g c~ c g~  g\> c g c~ c g~ \stemUp g d' g, d'~ d g,~  g d' g, d'~ d g,)\! \stemNeutral
 	c(\p g c g~ g c~  c g c g~ g c) g( ees g ees~ ees g~  g ees g ees~ ees g)
 	fis(_\dimmarkup ees fis ees~ ees fis~  fis ees fis ees~ ees fis)  d( a d a d a)  d( a d a d a)
 	r8 d16(\pp bes d bes) r8 ges'16( ees ges ees) r8 g!16( ees g ees) r8 ees16( a, ees' a,)
@@ -28,36 +28,36 @@ musicViolinoIIMvtII = \relative c {
 	r8 g!16(\p d g d) r8 fis16( c fis c) r8 g'16(\< bes, g' bes,) r8 ees16( f ees f)\!
 % Bars 16 to 20
 	r8 bes,16(_\crescmarkup f' bes, f') r8 a,16(\< f' a, f') r8 bes,16( f' bes, f') r8 cis16( a' e cis)\!
-	r8 d16(\mf\> f d f) r8 d16( f d f) r8 c16( ees c ees)_\dimmarkup r8 c16( g' c, g')\!
+	r8 d16(\mf\> f d f) r8 d16( f d f) r8 c!16( ees c \markEO #'(0 . 3) ees)_\dimmarkup r8 c16( g' c, g')\!
 	r8 aes,16(\pp f' aes, f') r8 cis16( g' cis, g') r8 d16(\< aes' d, aes') r8 f16( d f bes)\!
 	r8 ees,16(\< bes ees bes) r8 ees16( bes ees bes)\! r8 e16(\mf bes e bes)\> r8 e16( bes e bes)\!
-	r8 f'16(\p\< d f d) r8 a'16( f a f) r8 bes16( f bes f)\! r8 bes16(\> e, bes' e,)\!
+	r8 f'16(\p d f-\tweak extra-offset #'(0 . -9) ^\< d) r8 a'16( f a f) r8 bes16( f bes f)\! r8 bes16(\> e, bes' e,)\!
 % Bars 21 to 25
 	r8 bes'16(\p f bes f) r8 aes16( d, aes' d,) r8 g16( ees g ees) g( c f, bes a ees)
 	r8 d16( f d f) r8 d16( f d f) r8 b,16( d b d) ees( g c, ees c g) \mark \default
 	bes!4\pp r8 r4 r16 bes des4 r8 r4 r16 des
-	c4\fz\> r8 r4 r16 c_\pmarkup a4\! r8 r4 r16 a\pp
+	c4\fz\> r8 r4 r16 \markEO #'(-2 . -7) c^\pmarkup a4\! r8 r4 r16 a\pp
 	bes4 r8 r4 r8 r2.
 % Bars 26 to 30
 	ees2.(\pp bes')
 	ees( d)
-	c bes4.(~ bes8 a16 g f a,
+	c \once \stemUp bes4.(~ bes8 a16 g f a,
 	bes4) r8 r4 r8 r2.
-	ees2.(\fp << bes') {s4.\> s8 s s\!}>>
+	\hairpinShorten #'(-0.5 . 0) ees2.(\fp\> << bes') {s4. s8 s s\!}>>
 % Bars 31 to 35
 	e2.\pp( d)
 	c( bes)
 	a16( fis a fis a fis) a( fis a fis a fis) g( ees g ees g ees  g ees g es g ees)
 	f!( d f d f d  f d f d f d) ees( c ees c ees c\<  e cis e cis d c\!)
-	bes8\mf bes bes  bes bes bes  ees ees ees  ees ees ees
+	bes8-\offset X-offset -3 \mf bes bes  bes bes bes  ees! ees ees  ees ees ees
 % Bars 36 to 40
-	<c ees>\< q q   q q q  <c d> q q\! d16(\> c a ees' d fis)\! \mark \default
+	<c ees>\< q q   q q q  <c d> q q\! d16(\> c a ees' d fis)\! \markXoffset #-0.2 \markWhiteout \mark \default
 	g(_\ppsempre bes g bes~ bes g~  g bes g bes~ bes g~  g bes g bes~ bes g~  g bes g bes~ bes g)
 	c( fis, c' fis,~ fis c'~  c fis, c' fis,~ fis c'~  c fis, c' fis,~ fis c'~  c fis, c' fis,~ fis c')
 	ees,( g ees g~ g ees~  ees g ees g~ g ees~  ees_\crescmarkup g ees g~ g ees~  ees g ees g~ g ees)
 	ees(\< ges ees ges~ ges ees~  ees ges ees ges~ ges ees~  ees ges ees ges~ ges ees~\!  ees_\crescmarkup ges ees ges~ ges ees)
 % Bars 41 to 45
-	g!(\mf ees' g, ees'~ ees g,~  g ees' g, ees'~ ees g,~  g d' g, d'~ d g,~  g d' g, d'~ d g,)~
+	g!(\mf ees' g, ees'~ ees g,~  g ees' g, ees'~ ees g,~  g d' g, d'~ d g,~  g d' g, d'~ d g,)~  % ees => d on third and fourth beat based on conductor and Fl I
 	g( c g c~ c g~  g c g c~ c g)  bes(_\dimmarkup g bes g~ g bes~  bes g bes g~ g bes)
 	aes(\p f aes f~ f aes~  aes f aes f~ f aes) f( des f des~ des f~  f des f des~ des f)
 	e(\pp des e des~ des e~  e des e des~ des e) c( g c g c g bes g bes g bes g)
@@ -71,26 +71,26 @@ musicViolinoIIMvtII = \relative c {
 % Bars 51 to 55
 	r <c f>8\pp q q16 r <bes g'>8 q q16 r <c aes'>8 q q16 r <des bes'>8 q q16
 	r ees8\< ees ees16 r <g, ees'>8 q q16 r <c ees>8 q q16\! r <b g'>8 q q16
-	r <c ees>8\mf q q16 r q8 q q16 r <bes f'>8\> q q16 r q8 q q16\!
+	r <c ees>8\mf q q16 r q8 q q16 r <bes! f'>8\> q q16 r q8 q q16\!
 	r <aes ges'>8\pp q q16 r q8\< q q16 r q8 q q16 r <c ees>8 q q16
 	r des8 des des16\! r des8\> des des16 r <b d>8 q q16 r q8 q q16\!
 % Bars 56 to 60
-	r <c ees>8\p q q16 r <g ees'>8\> q q16 r <aes ees'>8 q q16 r <aes fes'>8 q q16\!
-	r8 c16(\pp\< ees c ees) r8 c16( f c f)\! r8 des16( f des f) r8 ees16(\> g, ees' g,)\!
+	r <c ees>8\p q q16 r <g ees'>8 \hairpinShorten #'(0.5 . 0) q-\tweak extra-offset #'(0 . -9.5) ^\> q16 r <aes ees'>8 q q16 r <aes fes'>8 q q16\!
+	r8 c16(-\offset X-offset -2.5 -\tweak extra-offset #'(1.5 . -1.8) \pp ees\< c ees) r8 c16( f c f)\! r8 des16( f des f) r8 ees16(\> g, ees' g,)\!
 	r8 ees'16( aes, ees' aes,) r8 ees'16(_\dimmarkup aes, ees' aes,) r8 c16(\> a c a) des( bes des bes des bes)\! \mark \default
 	<c ees>4\pp r8 r4 r8 aes'8( b d! f aes ces)
-	bes2.(\pp g)
+	bes!2.(\pp g)
 % Bars 61 to 65
 	g1.\ppp(
 	e
 	cis)
-	cis(_\pppsempre
-	b16)(-. b-. d-. d-. fis-. fis)-. r4 r8 b,16(-. b-. d-. d-. fis-. fis)-. r4 r8
+	cis(\ppp
+	b16)(-.-\offset X-offset -2 _\sempre b-. d-. d-. fis-. fis)-. r4 r8 b,16(-. b-. d-. d-. fis-. fis)-. r4 r8
 % Bars 66 to 70
 	b,16(-. b-. d-. d-. fis-. fis)-. r4 r8 b,16(-. b-. d-. d-. fis-. fis)-. r4 r8
 	b,16(-. b-. d-. d-. f!-. f)-.  r4 r8 b,16(-. b-. d-. d-. f-. f)-.  r4 r8
 	b,16(-. b-. d-. d-. f-. f)-. r4 r8 b,16(-. b-. d-. d-. f-. f)-. r4 r8
-	r16 <c, e>8\pp q q16 r_\pocoapococrescendo q8 q q16 r4 r8 r16 <d f>8 q q16
+	r16 <c, e>8-\tweak extra-offset #'(-1.5 . -8.3) ^\pp q q16 r_\pocoapococrescendo q8 q q16 r4 r8 r16 <d f>8 q q16
 	r4 r8 r16 <a f'>8 q q16 r4 r8 r16 <bes g'>8 q q16
 % Bars 71 to 75
 	r4 r8 r16 <bes d>8\mf\< q q16 r4 r8 r16 <c ees>8 q q16\!
@@ -106,12 +106,12 @@ musicViolinoIIMvtII = \relative c {
 	f8-. d-. c-. bes-. a4->~ a8 g4 f16-. e-. f-. g-. a-. bes-. 
 % Bars 81 to 85
 	c4.\pp a'4.\<~ a16 d g,4~ g16 aes f4\!
-	ees4.(_\crescmarkup c'~ c4\mf\> bes8~ bes4 a!8)\!
+	\shape #'((0 . -1)(-1 . 0.6)(0 . 0.3)(0 . -0.9)) Slur ees4.(_\crescmarkup c'~ c4\mf\> bes8~ bes4 a!8)\!
 	f16_\pdim-. f-. g-. g-. f-. f-. g\>-. g-. f-. f-. g-. f-. ees-. ees-. f-. f-. ees-. ees-. f-. f-. ees-. ees-. f-. ees-.\!
 	d\pp-. d-. ees-. ees-. d-. d-. ees-. ees-. d-. d-. ees-. d-. c\pp-. c-. d-. d-. c-. c-. d-. d-. c-. c-. d-. c-. 
 	bes_\ppocoapococresc ees8 ces bes d ees f16 ees g8 ces, bes d ees f16
 % Bars 86 to 90
-	bes,\mf\< des8 des c! bes f' g16 f aes8 des, c e f g16\!
+	bes,\mf\< des8 des c! bes f' g16 f aes8 des, c e f g16\!  % ees => e based on conductor (V1 and OboeI)
 	ees!\f\< ees8 ees d! fis g a!16 g bes8 ees, d fis g a16\!
 	b8\ff r c32( b c d) r8 c32( b c d) r8 c32( b c d) r8 c32( b c d) r8 c32( b c d) r8 \mark \default
 	ees!\ff r r r4 r8 r4 r8 ees,,16-.\pp ees( aes) aes( c) c-.
@@ -137,23 +137,23 @@ musicViolinoIIMvtII = \relative c {
 % Bars 106 to 110
 	r8 f16(\pp c f c r8 f16 c f c r8 aes'16 f aes f r8 aes16 f aes f)
 	r8 g16(\< ees g ees r8 g16 c, g' c,\! r8 ees16\> c ees c r8 ges'16 ees ges ees)\!
-	r8 g!16(\p d g d r8_\pococresc fis16\< c fis c r8 g'16 bes, g' bes,\! r8 ees16 f ees f)
-	r8 bes,16(\< f' bes, f' r8 a,16 f' a, f' r8 bes,16 f' bes, f'\! r8 cis16\mf\> a' e cis)\!
+	r8 g!16(\p d g d r8\pococrescD\< fis16 c fis c r8 g'16 bes, g' bes,\! r8 ees16 f ees f)
+	r8 bes,16(\< f' bes, f' r8 a,16 f' a, f' r8 bes,16 f' bes, f'\! r8 cis16-\offset X-offset -1 \mf\> a' e cis)\!
 	r8 d16(\p f d f r8 d16_\brackM\dimmarkup f d f r8 c!16 ees! c ees r8 c16\pp g' c, g')
 % Bars 111 to 115
 	r8 aes,16( f' aes, f' r8 cis16 aes' cis, aes' r8 d,16 aes' d, aes' r8 f16 d f bes)
 	r8 ees,16( bes ees bes r8 ees16 bes ees bes r8 e16 bes e bes r8\> e16 bes e bes)\!
-	r8 f'16(\p d f d r8 a'16\< f a f r8 bes16 f bes f\! r8 ges16 bes, ges' bes,)
+	r8 f'16(\p d f d r8 a'16-\tweak extra-offset #'(0 . 3.1) \< f a f r8 bes16 f bes f\! r8 ges16 bes, ges' bes,)
 	r8 bes'16( f bes f r8 g!16 d g d r8 g16\> ees g ees g c f, bes a ees)\!
-	r8 d16(\p f d f r8 d16 f\> d f r8 b,16  d b d\! ees\pp g ees c g c)
+	r8 d16(\p f d f r8 d16 f\> d f r8 b,16  d b d\! ees g-\tweak extra-offset #'(-2 . -7.3) ^\pp ees c g c)
 % Bars 116 to 120
 	bes!4.\p r4 r16 bes\< des4.\! r4 r16 des
-	c2.->\dimD\> a4.( << bes) {s8 s s\!}>>
+	c2.^>-\offset X-offset -1.5 _\dimmarkup a4.(-\tweak extra-offset #'(0 . -9.5) ^\> << bes) {s8 s s\!}>>
 	a8 r r r4 r8 r4 r8 f'16-.\pp f( a) a( c) c-.
 	r2. r4 r8 f,16-. f( a) a( c) c-.
 	R1.
 % Bars 121 to 125
-	d,8.(\pp\< f16 d c d f bes ees d g\! bes,\> ees d f bes f d ees d bes f d)\!
+	\shape #'((0 . -2)(0 . -1)(0 . -0.5)(0 . 0)) Slur d,8.(-\offset X-offset -3 -\tweak extra-offset #'(3 . -1) \pp \hairpinShorten #'(1 . 0) f16\< d c d f bes ees d g\! bes,\> ees d f bes f d ees d bes f d)\!
 	<c ees>2.(\pp <g g'>4.\< << <a a'>) {s8 s s\!}>>
 	<g g'>4.( <a f'>4 bes8) bes4.( ees)
 	R1. \mark \default
@@ -162,32 +162,32 @@ musicViolinoIIMvtII = \relative c {
 	cis)
 	e(
 	g)\ppp
-	r2. <d, bes' g'>8->\ff <d a' fis'>-> <d bes' g'>-> <d a' fis'>-> <d bes' g'>-> <d a' fis'>->
+	r2. <d, bes' g'>8->-\offset X-offset -2.5 \ff <d a' fis'>-> <d bes' g'>-> \stemDown <d a' fis'>-> <d bes' g'>-> <d a' fis'>-> \stemNeutral
 	R1.
 % Bars 131 to 135
-	g16(\pp bes g bes~ bes g~  g bes g bes~ bes g~  g bes g bes~ bes g~  g bes g bes~ bes g)
+	\textMark "Vi-" g16(\pp bes g bes~ bes g~  g bes g bes~ bes g~  g bes g bes~ bes g~  g bes g bes~ bes g)
 	fis( c' fis, c'~ c fis,~  fis c' fis, c'~ c fis,~  fis c' fis, c'~ c fis,~  fis c' fis, c'~ c fis,)
 	ees( g ees g~ g ees~  ees g ees g~ g ees~\<  ees g ees g~ g ees~  ees g\! ees g~ g ees)
 	ees( a! ees a~ a ees~  ees a ees a~ a ees~  ees\< a ees a~ a ees~  ees a ees a~ a ees)\!
-	<g bes e>8\ff r r r4 r8 r2.
+	<g bes e>8-\offset X-offset 1 \ff r r r4 r8 r2. \textEndMark "-de"
 % Bars 136 to 140
 	a,4.(\pp bes g c)
-	<< cis1. {s8\< s s  s s s\! s4. s4\> s8\!}>>
+	<< cis1. {\hairpinShorten #'(0 . -0.5) s8\< s s  s s s\! s4. \hairpinShorten #'(-0.5 . 0) s4-\tweak extra-offset #'(0 . -1.3) \> s8\!}>>
 	d2.(\pp bes4.~ bes8) r r
-	<bes g' ees'>8\ff\arpeggio r r r4 r8 <d a' fis'>8\arpeggio r r r4 r8 \mark \default
-	R1.
+	<bes g' ees'>8\ff\arpeggio r r r4 r8 <d a' fis'>8\arpeggio r r r4 r8 \markXoffset #-0.3 \markWhiteout \mark \default
+	\offset X-offset #2.3 \textMark "Vi-" R1.
 % Bars 141 to 145
 	r2. d'4.(~\pp d8 ees bes)
 	d r r r4 r8 r2.
 	d'16-.\ff c-. bes8 a c16-. bes-. a8 g c16-. bes-. a8 g bes16-. a-. g8 fis
 	r4 r8 c16. d32 d16 r r8 c16. d32 d16 r r8 c16. d32 d16 r r8
-	r4 r8 <e, a e'>4.-^\ff\arpeggio r4 r8 <e c'! fis>4.-^\arpeggio
+	r4 r8 <e, a e'>4.-^\ff\arpeggio r4 r8 <e c'! fis>4.-^\arpeggio \textEndMark "-de"
 % Bars 146 to 150
-	<bes d>4.:32_\ppsempre ees: <bes d>: ees:
+	<bes d>4.:32_\ppsempre ees!: <bes d>: ees:
 	<bes d>: ees: <bes d>: ees:
 	<bes d>: ees: <bes d>: ees:
 	<bes d>: <c ees>: b16(\< d b d b d  b d b d b d)\!
 	b(\> d b d b d  b d b d b d\! b4\pp) r8 r4 r8
 % Bar 151
-	R1.\fermata \fine
+	\once \ni R1.\fermata \fine
 }

@@ -196,12 +196,12 @@ musicViolinoIIMvtIV = \relative c {
 	b b b b <a b> q q q
 % Bars 166 to 170
 	<g b> q q q  q q q q
-	e'->\ffz e e d! c! c c b
+	e'->\ffz e e d c c c b
 	c c c c  c[ c] e,16( fis g a
 	b4->)\ff dis8 dis e e a a
 	g g g g a a a a
 % Bars 171 to 175
-	c c c c bes c c d
+	c c c c b c c d % bes => b based on ObII Vla TbII and part score
 	d d d d c4 r
 	R1*2
 	\mark \default
@@ -493,7 +493,7 @@ musicViolinoIIMvtIV = \relative c {
 	<c e>\f q q q  q[ q] \tuplet 5/4 4 {e,16(\< fis gis a b)\!}
 	c8->\fz a' a g f!->\fz f f e
 	f f f f  f[ f] a,16(\< bes b c)\!
-	cis8\ff cis <cis e> q <cis fis> q <cis b'> q
+	cis8\ff cis <cis eis> q <cis fis> q <cis b'> q
 % Bars 421 to 425
 	<cis a'> q q q <d b'> q q q
 	<e cis'> q q q  q q q q
@@ -588,7 +588,7 @@ musicViolinoIIMvtIV = \relative c {
 	<d, a'>\ff b'8. a16 fis'4
 	<a, e'>2..-> a8
 	<d, a'>2 b'8. a16 fis'4
-	<a, e'>2.. a8
+	<a, e'>2..-> a8
 	fis'2-> g8. a16 b4
 % Bars 501 to 505
 	cis2-> d8. e16 fis4

@@ -599,7 +599,7 @@ musicViolinoIIMvtI = \relative c {
 	aes4. aes8
 % Bars 496 to 500
 	des'-. c16( des \tuplet 3/2 4 {a!8 gis a)}
-	des-. c16( des \tuplet 3/2 4 {a!8 gis a)}
+	des-. c16( des \tuplet 3/2 4 {a8 gis a)}
 	d!-. cis16( d \tuplet 3/2 4 {bes8 a bes)}
 	d-. cis16( d \tuplet 3/2 4 {bes8 a_\pocoapococresc bes)}
 	ees2(

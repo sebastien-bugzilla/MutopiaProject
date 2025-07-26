@@ -35,23 +35,23 @@
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
 			\center-column {
-				"Part for ViolineII"
+				"Part for Violine II"
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4"
+			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4 — Violine II"
 		}
 		instrument = \markup {
-			"ViolineII"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIIMvtI
-%			}
 			\new Voice {
-				\keepWithTag #'(violinII) \tempiPartMvtI
+				\formatViolinoIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(violinoII) \tempiPartMvtI
 			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtI
@@ -71,11 +71,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIIMvtII
-%			}
 			\new Voice {
-				\keepWithTag #'(violinII) \tempiPartMvtII
+				\formatViolinoIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(violinoII) \tempiPartMvtII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtII
@@ -85,7 +85,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -95,11 +95,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIIMvtIII
-%			}
 			\new Voice {
-				\keepWithTag #'(violinII) \tempiPartMvtIII
+				\formatViolinoIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(violinoII) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtIII
@@ -109,7 +109,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -119,11 +119,11 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinoIIMvtIV
-%			}
 			\new Voice {
-				\keepWithTag #'(violinII) \tempiPartMvtIV
+				\formatViolinoIIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(violinoII) \tempiPartMvtIV
 			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtIV
@@ -133,7 +133,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 4.
 			}

@@ -189,6 +189,11 @@ pppbrackspiccato = \markup {
 	\hspace #-1.51 \dynamic ppp \hspace #0.3
 	\bracket \with-true-dimensions \italic {spiccato}
 }
+fzbrackcresc = \markup {
+	\hspace #-0.5 \concat {
+		\dynamic fz \hspace #0.4 \bracket \with-true-dimensions \italic "cresc."
+	}
+}
 
 
 
@@ -221,7 +226,7 @@ pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
 pocoapoco_crescendo = \markup {
 	\italic \column { \lower #1 "poco a poco" "crescendo"}
 }
-pococresc = \markup {\italic {poco cresc.}}
+pococresc = \markup {\normal-text \italic {poco cresc.}}
 sempre = \markup {\italic {sempre}}
 semprepianissimo = \markup {\italic {sempre pianissimo}}
 solo = \markup {Solo}
@@ -258,7 +263,7 @@ fffzD = \tweak DynamicText.self-alignment-X #-0.28 #(make-dynamic-script fffz)
 fbrackzD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script fbrackz)
 ppfzD = \tweak DynamicText.self-alignment-X #-0.26 #(make-dynamic-script ppfz)
 pocoapococrescD = \tweak DynamicText.self-alignment-X #-0.91 #(make-dynamic-script pocoapococresc)
-
+pococrescD = \tweak DynamicText.self-alignment-X #-0.91 #(make-dynamic-script pococresc)
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }
 markDe = \markup { \abs-fontsize #12 "-de" }
@@ -687,6 +692,11 @@ markXoffset = #(define-music-function
 
 resetMarkSpace = \once \revert Score.RehearsalMark.extra-spacing-width
 
+
+tempoDown = \once \override Score.MetronomeMark.direction = #-1 
+
+
+
 %#(define my-script-alist
 %	(
 %		append `(
@@ -845,9 +855,6 @@ resetMarkSpace = \once \revert Score.RehearsalMark.extra-spacing-width
 %		\once \override TextScript.outside-staff-priority = #prio
 %	#}
 %)
-
-%tempoDown = \once \override Score.MetronomeMark.direction = #-1 
-
 
 %tempoExtraOffset = #(define-music-function
 %	(offset)

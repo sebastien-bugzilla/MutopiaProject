@@ -146,7 +146,7 @@ musicFlautoIIMvtIV = \relative c {
 	b4->) fis-> e-> a->
 	g2-> a->
 % Bars 171 to 175
-	c!4. c8\< \tuplet 3/2 2 {bes4-- c-- d--\!}
+	c!4. c8\< \tuplet 3/2 2 {b4-- c-- d--\!} % bes => b based on ObII Vla TbII and part score
 	d2(\> c4)\! r
 	R1*2
 	\mark \default
