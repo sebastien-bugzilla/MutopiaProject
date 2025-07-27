@@ -204,7 +204,7 @@ musicViolaMvtII = \relative c {
 	<<{
 		bes4.:32 a: bes: a:
 		bes: a: bes: a:
-		bes: a: bes: a:
+		bes: a: bes: fis!:
 		bes: a: \oneVoice g16(\< b g b g b  g b g b g b)\!
 	} \\ {
 		g4.:32_\ppsempre fis: g: fis:

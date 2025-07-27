@@ -39,17 +39,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4"
+			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4 — Viola"
 		}
 		instrument = \markup {
-			"Viola"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtI
-%			}
+			\new Voice {
+				\formatViolaMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtI
 			}
@@ -71,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtII
-%			}
+			\new Voice {
+				\formatViolaMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtII
 			}
@@ -85,7 +85,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIII
-%			}
+			\new Voice {
+				\formatViolaMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIII
 			}
@@ -109,9 +109,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 3.
+				\bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -119,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIV
-%			}
+			\new Voice {
+				\formatViolaMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIV
 			}
@@ -133,9 +133,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. Finale"
 			}
 		}
 		\layout {

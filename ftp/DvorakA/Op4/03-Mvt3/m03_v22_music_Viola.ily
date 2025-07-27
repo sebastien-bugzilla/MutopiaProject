@@ -127,7 +127,7 @@ musicViolaMvtIII = \relative c {
 	ees\< ees ees ees ees8-. ees-. ees-. ees-.
 	a4:16 bes: f16 f d d\!
 % Bars 91 to 95
-	<< ees2.:16 {s4\mf\< s s\!}>>
+	<< ees2.:16 {\hairpinShorten #'(-0.5 . -1) s4-\offset X-offset -1 \mf\< s s\!}>>
 	a,4:\f bes: d:
 	f:\fz ees: bes'16 bes g g
 	a4:16\fz bes: f:
@@ -198,12 +198,12 @@ musicViolaMvtIII = \relative c {
 		c'16( d bes8-.) bes4. bes8
 		c16( d bes8-.) bes4. bes8
 		c16( d bes8-.) bes4. bes8
-		c16( d bes8-.) bes4. bes8~ \mark \default
+		c16( d bes8-.) bes4. bes8~ \mark \default % c16( d d8) => c16( d bes8) based on conductor and other voices
 % Bars 151 to 155
 		bes2.\>~
 		<< bes {s4 s s\!}>>
 	} \\ {
-		f16(\f bes d,8-.) d4. d8
+		\beamOffset #'(0.5 . 0.5) f16(-\offset X-offset -1.7 \f bes d,8-.) d4. d8
 		f16( bes d,8-.) d4. d8
 		f16( bes d,8-.) d4. d8
 		f16( bes d,8-.) d4. d8
@@ -248,7 +248,7 @@ musicViolaMvtIII = \relative c {
 % Bars 181 to 185
 		q2.:\p\>
 		q:\pp
-		\tuplet 3/2 4 { <a cis>8(_\brack\pp <cis e> <a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis> 
+		\oneVoice \stemDown \tuplet 3/2 4 { <a cis>8(-\offset X-offset -1.5 _\brack\pp <cis e> <a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis>
 		<cis e> <a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis> <cis e>)
 		<a cis>( <cis e> <a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis> 
 % Bars 186 to 190
@@ -256,7 +256,7 @@ musicViolaMvtIII = \relative c {
 		<cis e>( <a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis> <cis e>
 		<a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis>)
 		<cis e>( <a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis> <cis e>
-		<a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis>)
+		<a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis> <cis e> <a cis>) \stemNeutral 
 % Bars 191 to 195
 		<cis a'>( <a fis'> <cis a'> <a fis'> <cis a'> <a fis'> <cis a'> <a fis'> <cis a'> 
 		<a fis'> <cis a'> <a fis'> <cis a'> <a fis'> <cis a'> <a fis'> <cis a'> <a fis'>)
@@ -272,12 +272,12 @@ musicViolaMvtIII = \relative c {
 % Bars 201 to 205
 		<fis a>( <d fis> <fis a> <d fis> <fis a> <d fis> <fis a> <d fis> <fis a> 
 		<d fis> <fis a> <d fis> <fis a> <d fis> <fis a> <d fis> <fis a> <d fis>)
-		<d b'>(\pp <fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> 
+		<d b'>(-\offset X-offset -1 \pp <fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> 
 		<fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> <fis d'>)
 		<d b'>( <fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> 
 % Bars 206 to 210
 		<fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> <fis d'> <d b'> <fis d'>)
-		<d b'>(\pp <b' d> <d, b'> <b' d> <d, b'> <b' d> <d, b'> <b' d> <d, b'> 
+		<d b'>(-\offset X-offset -1 \pp <b' d> <d, b'> <b' d> <d, b'> <b' d> <d, b'> <b' d> <d, b'> 
 		<b' d>_\crescmarkup <d, b'> <b' d> <d, b'> <b' d> <d, b'> <b' d> <d, b'> <b' d>)
 		<e, c'>(\< <c'! e> <e, c'> <c' e> <e, c'> <c' e> <e, c'> <c' e> <e, c'>\!
 		<c' e> <e, c'!> <c' e> <e, c'> <c' e> <e, c'> <c' e> <e, c'> <c' e>)}
@@ -301,7 +301,7 @@ musicViolaMvtIII = \relative c {
 	fis,: fis': fis,:
 	fis': fis,: fis':
 % Bars 226 to 230
-	\tuplet 3/2 4 {g8(\< f e d c b a g f)\!}
+	\tuplet 3/2 4 {g8(\< f e \once \tupletUp d c b a g f)\!}
 	e4\fz r r
 	R2.*2
 	
@@ -310,7 +310,7 @@ musicViolaMvtIII = \relative c {
 	g,2: g'4:
 	a,: a': a,:
 	a': a,: a':
-	\tuplet 3/2 4 {bes8(\< aes g f ees d c bes aes\!}
+	\tuplet 3/2 4 {bes8(\< aes g \once \tupletUp f ees d c bes aes\!}
 	g4)\f r r
 % Bars 236 to 240
 	R2.
@@ -321,17 +321,17 @@ musicViolaMvtIII = \relative c {
 % Bars 241 to 245
 	\tuplet 3/2 4 {cis'!8\fz cis cis\> ais ais ais ais ais ais\!
 	fis!\p fis fis fis fis fis fis dis eis
-	e!(\pp a,! e' a, e' a, e' a, e')
-	a,( e' a, e' a, e' a, e' a,)
+	\stemDown e!(-\offset X-offset -2.5 \pp a,! e' a, e' a, e' a, e')
+	a,( e' a, e' a, e' a, e' a,) \stemNeutral
 	fis'( a, fis' a, fis' a, fis' a, fis')
 % Bars 246 to 250
 	a,( fis' a, fis' a, fis' a, fis' a,)} \mark \default
-	r g16(\pp a \tuplet 3/2 4 {b8\< c d e f g\!
-	a\> g f e d c\! b a g)}
-	r g16( a \tuplet 3/2 4 {b8\< c d e f g\!
+	r g16(\pp a \tuplet 3/2 4 {\once \tupletUp b8\< c d e f g\!
+	a\> g f \once \tupletUp e d c\! b a g)}
+	r g16( a \tuplet 3/2 4 {\once \tupletUp b8\< c d e f g\!
 	a\> g f\! e d c b a g)}
 % Bars 251 to 255
-	r g16( a \tuplet 3/2 4 {b8\< c d e f g\!
+	r g16( a \tuplet 3/2 4 {\once \tupletUp b8\< c d e f g\!
 	a\> g f e\! d c b a g)}
 	r g16( a \tuplet 3/2 4 {b8 c d e\< f g\!
 	a\> g f\! e\> d c b d f\!)} \section 
@@ -350,7 +350,7 @@ musicViolaMvtIII = \relative c {
 	aes2.:\f
 % Bars 266 to 270
 	aes4: f,8:\< aes: des: ees:\!
-	f4(_\fffz des8) r f4(\fz
+	\noteHeadEsw #'(-2 . 0) f4(_\fffz des8) r f4(\fz
 	des8) r f4(\fz des8) r \mark \default
 	bes2.\ff\>~
 	<< bes {s4 s s\!}>>
@@ -381,24 +381,24 @@ musicViolaMvtIII = \relative c {
 % Bars 291 to 295
 	
 	
-	a16(\pp d c des c8) e,-. f-. e'-.
+	a!16(\pp d c des c8) e,-. f-. e'-.
 	c-. r f-. r e-. r
 	f16( e f e f8) c-. f-. bes-.
 % Bars 296 to 300
 	a-. r des-. r c-. r
 	c16(_\pocoapococresc bes a des c8) c,-. des-. e-.
-	f-. r d'-. r e-. r
+	f-. r d'!-. r e-. r
 	f16( e f e f8) c-. ees!4->
 	\acciaccatura f,8 f'16( e f e f8) c-. ees!4->
 % Bars 301 to 305
 	\acciaccatura f,8 f'8:16\f\< e: ees: d: des: c: % d => des based on bar 302
 	\acciaccatura f,8 f'8:16 e: ees:\! d: des: c:
 	f16(\ff e f des) c( des c bes) a( g f e)
-	f\fz a a c g\fz bes bes ees d,\fz f f a
+	f\fz a a c g\fz bes bes ees d,!\fz f f a  % f a c c => f a a c based on conductor and other voice
 	g\fz bes bes ees d,\fz f f a ees\fz g g c
 % Bars 306 to 310
 	d,\fz f f a ees\fz g g c bes,\fz d d f
-	\tuplet 3/2 4 {a,8-. c-. ees-. bes\>-. d-. g-. f,-. a-. c-. 
+	\tuplet 3/2 4 {a,8-. c-. ees-. \once \tupletUp bes\>-. d-. g-. f,-. a-. c-. 
 	g-. bes-. ees-. d,-. f-. a-. ees-. g-. c\!-. }
 	bes4(-> c-> d->)
 	ees8.(\p c16 \tuplet 3/2 4 {a8 g f)} r4
@@ -469,7 +469,7 @@ musicViolaMvtIII = \relative c {
 	f4.) bes8( a16 bes c bes)
 	ees\< ees ees ees ees8-. ees-. ees-. ees-.
 	a4:16 bes: f16 f d d\!
-	<< ees2.\mf\< {s4 s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1.5) ees2.\mf\< {s4 s s\!}>>
 	a,4:16\f bes: d:
 % Bars 361 to 365
 	f:\fz ees: bes'16 bes g g
@@ -536,7 +536,7 @@ musicViolaMvtIII = \relative c {
 	fis'_\fbrackf g <f a>
 	<f bes>8 r <f a> r <f bes> r
 	<f, f'>2.\fermata
-	r4 r8. c'16\p f,4->
+	\textMark "Coda" \startMeasureCount r4 r8. c'16\p f,4->
 % Bars 416 to 420
 	r4 r8. c'16 f,4->
 	r4 r8. c'16 f,4->
@@ -545,10 +545,10 @@ musicViolaMvtIII = \relative c {
 	r4 r8. c'16 f,4->
 % Bars 421 to 425
 	r4 r8. c'16 f,4->
-	r4_\brackM\diminuendo r8. c'16\pp f,4->
+	r4-\offset X-offset -2 _\brackM\dimin r8. c'16\pp f,4->
 	r4 r8. c'16 f,4->
 	r4 r8. c'16 f,4->
-	r4 r8. c'16 f,4->
+	r4 r8. c'16 f,4-> \stopMeasureCount
 % Bars 426 to 430
 	f'2\pp\< \tuplet 3/2 4 {f8( g ees)}
 	ees4(\! d\> ees)

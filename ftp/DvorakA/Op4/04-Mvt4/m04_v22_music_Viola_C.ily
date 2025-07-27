@@ -165,7 +165,7 @@ musicViolaMvtIV = \relative c {
 	d c bes a bes c d ees
 % Bars 126 to 130
 	f ees d c d ees f g
-	aes(\f g f e) \tuplet 5/4 2 {f( g, a bes c)}
+	aes(\f g f e) \tuplet 5/4 2 {f( g, aes! bes c)} % f g, a bes c => f g, aes bes c based on part score and other parts
 	<cis e>1->\fz
 	<d, f>\fp
 	<e g>->\fz
@@ -208,7 +208,7 @@ musicViolaMvtIV = \relative c {
 % Bars 161 to 165
 	d!8\f fis e d cis e d cis
 	b d cis b a d b a
-	\tuplet 3/2 2 {g4 b d-> bes d g->
+	\tuplet 3/2 2 {g4 b d-> b d g->
 	d g b-> g b d->}
 	g,8 b a g fis a g fis
 % Bars 166 to 170

@@ -111,7 +111,7 @@
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\bold 3.
+				\bold "3. Scherzo"
 			}
 		}
 		\layout {
@@ -135,7 +135,7 @@
 		\header {
 			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. Finale"
 			}
 		}
 		\layout {

@@ -63,7 +63,7 @@ musicViolaMvtI = \relative c {
 	q:
 	q:\<
 % Bars 46 to 50
-	<< <c g'> {s8 s s s\!} >>
+	<< <c g'>: {s8 s s s\!} >>
 	des8\f ees f8.-> ges16
 	ges2->\<~
 	ges8 des(\! des'8.)\fz ces16-.
@@ -405,7 +405,7 @@ musicViolaMvtI = \relative c {
 	q:
 % Bars 301 to 305
 	q:
-	e16( d cis g') g!4\fz~
+	e16( d cis g'!) g4\fz~
 	g2
 	cis,16( b ais\> e') e4->~
 	<< e2 {s16 s s s\! s4}>>

@@ -194,6 +194,10 @@ fzbrackcresc = \markup {
 		\dynamic fz \hspace #0.4 \bracket \with-true-dimensions \italic "cresc."
 	}
 }
+ppbracksempre = \markup {
+	\hspace #-0.78 \dynamic pp \bracket \with-true-dimensions
+	\italic {sempre}
+}
 
 
 
