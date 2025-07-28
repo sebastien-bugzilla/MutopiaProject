@@ -3785,7 +3785,7 @@ cueVoiceViolaMvtIV = \relative c {
 cueVoiceVioloncelloMvtI = \relative c {
 	s2*429
 	% bars 430 - 431
-	\voiceOne ees'8-.^\markup {Cl.} f-. g4->
+	ees'8-.-\offset X-offset -3 ^\markup {Cl.} f-. g4->
 	g-> g->
 }
 cueVoiceVioloncelloMvtII = \relative c {

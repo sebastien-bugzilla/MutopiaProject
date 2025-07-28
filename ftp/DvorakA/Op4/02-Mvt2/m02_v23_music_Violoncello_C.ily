@@ -168,7 +168,7 @@ musicVioloncelloMvtII = \relative c {
 	r4 r8 << d'2. {s8\fz\> s s  s s s\!}>> r4 r8
 	r4 r8 << ees2. {s8\fz\> s s  s s s\!}>> r4 r8
 	r4 r8 \clef tenor << g2. {s8\fz\> s s  s s s\!}>> r4 r8
-	r4 r8 << fis2. {s8\fz\> s s  s s s\!}>> r4 r8 \clef bass
+	r4 r8 << fis2.-> {s8\fz\> s s  s s s\!}>> r4 r8 \clef bass
 	cis,8\ff r r r4 r8 r2.
 % Bars 136 to 140
 	d4.(\pp c bes a

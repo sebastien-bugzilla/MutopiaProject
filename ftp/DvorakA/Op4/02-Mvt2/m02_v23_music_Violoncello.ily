@@ -9,43 +9,43 @@ musicVioloncelloMvtII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	r4 r8 << d'2. {s8\fz\> s s  s s s\!}>> r4 r8
-	r4 r8 << ees2. {s8\fz\> s s  s s s\!}>> r4 r8
-	r4 r8 << g2.-> {s8\fz\> s s  s s s\!}>> r4 r8
-	r4 r8 << fis2. {s8\fz\> s s  s s s\!}>> r4 r8
-	r4 r8 \clef tenor << bes2. {s8\fz\> s s  s s s\!}>> r4 r8
+	r4 r8 << d'2. {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8
+	r4 r8 << ees2. {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8
+	r4 r8 << g2.-> {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8
+	r4 r8 << fis2. {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8
+	r4 r8 \clef tenor << bes2. {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8
 % Bars 6 to 10
-	r4 r8 << g2. {s8\fz\> s s  s s s\!}>> r4 r8
-	r4 r8 \clef bass << ees2. {s8\fz\> s s  s s s\!}>> r4 r8
-	r4 r8 << d2. {s8\fz\> s s  s s s\!}>> r4 r8
+	r4 r8 << g2. {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8
+	r4 r8 \clef bass << ees2. {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8
+	r4 r8 << d2. {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8
 	g,,4.(\pp a bes c)
-	cis( d\< ees\! << b) {s8\> s s\!}>>
+	cis( d\< ees\> << b) {s8 s s\!}>>
 % Bars 11 to 15
 	c!4.(\pp d)\< ees(\! f,)
 	fis(\fp g\> aes e)\p
-	f!(\pp aes\< << b2.) {s8\> s s s4.\!}>>
+	f!(\pp \hairpinShorten #'(-1 . 2) aes\< << b2.) {\hairpinShorten #'(-2 . 0) s8\> s s s4.\!}>>
 	c4.(\<  << ees {s8 s s\!}>> fis4.\> << c) {s8 s s\!}>>
 	bes4.(\p a g\< f!4 f'8)\!
 % Bars 16 to 20
-	bes4.(\p\< ees) d( a'4_\fzmarkup g8)\!
+	\clef tenor bes4.(\p\< ees) d( \markEO #'(0 . 2.3) a'4_\fzmarkup g8)\!
 	f2.~\fz\> f8 ees( d c4 g8)\!
-	bes4\pp(~ bes16. c32-.) bes4._\crescmarkup~ bes4\< bes8( c4 d8)\! \clef tenor
+	bes4\pp(~ bes16. c32-.) bes4._\crescD\<~ bes4 bes8( c4 d8)\!
 	ees4.\< c'4(~ c16.\! bes32-.) bes4.\f\>~ bes4 e,8\!
 	f4.\p\< d4( c8) g'4( f8)\! bes4(\fz\> e,16 bes)\!
 % Bars 21 to 25
-	d2.\p g4( f8 ees d\< c) \clef bass
+	d2.\p g4( f8 ees! d\< c) \clef bass
 	d4.( bes4 f8) << aes4.( {s8 s s\!}>> g ees c) \mark \default
 	f,2.\pp f
 	f4\fz r16 f\pp f4 r16 f f4 r16 f f4 r16 f
-	bes2.\pp^\solo bes'4.~ bes4 c16( d
+	bes2.\pp-\offset X-offset 2.5 _\solo bes'4.~ bes4 c16( d
 % Bars 26 to 30
-	ees4.)\< \clef tenor bes4(~ bes16 bes')\! << bes4. {s8\> s s\!}>> r4 r8 \clef bass
+	ees4.)\< \clef tenor bes4(~ bes16 bes')\! << bes4. {\hairpinShorten #'(0 . -2) s8\> s s\!}>> r4 r8 \clef bass
 	f,,16:32\pp e: f: e: f: e: f8 r r f16: e: f: e: f: e: f8 r r
 	f16: e: f: e: f: e: f8 r r f16: e: f: e: f: e: f8 r r
 	bes2. bes'4.(~\< bes4 c16 d)\! \clef tenor
 	ees4.\p bes4(~ bes16\> bes') << bes4. {s8 s s\!}>> r4 r8 \clef bass
 % Bars 31 to 35
-	a,,32[\pp a gis gis] a[ a gis gis] a[ a gis gis] a8 r r a32[ a gis gis] a[ a gis gis] a[ a gis gis] a8 r r
+	a,,16:32\pp gis: a: gis: a: gis: a8 r r a16:32 gis: a: gis: a: gis: a8 r r
 	a16: gis: a: gis: a: gis: a8 r r d,16: cis: d: cis: d: cis: d8 r r
 	d16: cis: d: cis: d: cis: d8 r r d16: cis: d: cis: d: cis: d8 r r
 	d16: cis: d: cis: d: cis: d8 r r d16: cis: d: cis: d: cis:\< d8 r r16 d'\!
@@ -57,9 +57,9 @@ musicVioloncelloMvtII = \relative c {
 	r4 r8 << g2. {s8\< s s\! s\> s s\!}>> r4 r8
 	r4 r8 \clef tenor << fis2. {s8\< s s\! s\> s s\!}>> r4 r8
 % Bars 41 to 45
-	r4 r8 << bes2. {s8\f\< s s\! s\> s s\!}>> r4 r8
+	r4 r8 << bes2. {\hairpinShorten #'(-0.5 . -1) s8-\offset X-offset -1.5 \f\< s s\! \hairpinShorten #'(1 . -1) s-\tweak extra-offset #'(0 . -0.7) \> s s\!}>> r4 r8
 	r4 r8 << g2. {s8\< s s\! s\> s s\!}>> r4 r8
-	r4 r8 << f2. {s8\p\< s s\! s\> s s\!}>> r4 r8 \clef bass
+	r4 r8 << f2. {\hairpinShorten #'(-0.5 . -1) s8-\offset X-offset -1.5 \p\< s s\! \hairpinShorten #'(1 . -1) s\> s s\!}>> r4 r8 \clef bass
 	r4 r8 c2._\pdim r4 r8
 	f,,4.(\pp g)\< aes( bes)
 % Bars 46 to 50
@@ -90,7 +90,7 @@ musicVioloncelloMvtII = \relative c {
 	r4 r8 fis,16(-. fis-. b-. b-. d-. d)-. r4 r8 \clef tenor fis16(-. fis-. b-. b-. d-. d)-.  \clef bass
 	r4 r8 g,,,16(-. g-. b-. b-. d-. d)-. r4 r8 g16(-. g-. b-. b-. d-. d)-. 
 	r4 r8 g,16-. g(-. b)-. b(-. d)-. d-. r4 r8 \clef tenor g16-. g(-. b)-. b(-. d)-. d-. \clef bass
-	r4 r8 gis,,,32_\pppocoapococrescendo gis gis \liiiri gis \liriii gis'-> gis gis \liiiri gis \liriii gis, gis gis gis a4. bes32 bes bes \liiiri bes  \liriii bes'-> bes bes \liiiri bes  \liriii bes, bes bes bes
+	r4 r8 gis,,,32-\offset X-offset -1 _\pppocoapococrescendo gis gis \liiiri gis \liriii gis'-> gis gis \liiiri gis \liriii gis, gis gis gis a4. bes32 bes bes \liiiri bes  \liriii bes'-> bes bes \liiiri bes  \liriii bes, bes bes bes
 	c4. cis32 cis cis \liiiri cis \liriii cis'-> cis cis \liiiri cis \liriii cis, cis cis cis d4. ees!32 ees ees \liiiri ees \liriii ees'!-> ees ees \liiiri ees \liriii ees, ees ees ees
 % Bars 71 to 75
 	f4.\mf\< fis8( fis,-> fis') << g4. {s8 s s\!}>> aes( aes,-> aes')
@@ -106,19 +106,19 @@ musicVioloncelloMvtII = \relative c {
 	d16-. c-. b8-. a-. g-. c4-> bes8-. f-. g-. a16-. g-. f-. e-. d-. g-.
 % Bars 81 to 85
 	c,8-.\pp d-. ees!-. f-.\< g-. a-. << bes2. {s8 s s  s s s\!}>>
-	ees,8-._\crescmarkup f-. g-. aes-. bes-. c-. d2.~\mf\>
+	ees,8-._\crescmarkup f-. g-. aes-. bes-. c-. \hairpinShorten #'(-0.5 . -0.5) d2.~-\offset X-offset -1 \mf\>
 	d4\p r8 r4 r32 cis,,( d d') d4\>_\dimmarkup r8 r4 r32 cis,(\pp d d')
 	d4 r8 r4 r32 cis,(\pp d d') d4 r8 r4 r32 cis,( d d')
-	ees8\brack\p-. aes-._\pocoapococresc g-. f-. ees-. d-. ees-. ces'-. bes-. aes-. g-. f-.
+	ees8-._\brackppocoapococresc aes-. g-. f-. ees-. d-. ees-. ces'-. bes-. aes-. g-. f-.
 % Bars 86 to 90
 	e\mf\<-. bes'-. aes-. g-. f-. e-. f-. des'-. c!-. bes-. aes-. g\!-. 
 	fis\f\<-. c'-. bes-. a!-. g-. fis-. g-. ees'-. d-. c-. bes-. a\!-. 
-	gis4.:32\ff gis,32 gis gis \liiiri gis \liriii gis' gis gis \liiiri gis  \liriii gis, gis gis gis gis'4.: gis,32 gis gis \liiiri gis \liriii gis' gis gis \liiiri gis \liriii gis, gis gis gis \mark \default
+	gis4.:32-\offset X-offset -1 \ff gis,32 gis gis \liiiri gis \liriii gis' gis gis \liiiri gis  \liriii gis, gis gis gis gis'4.: gis,32 gis gis \liiiri gis \liriii gis' gis gis \liiiri gis \liriii gis, gis gis gis \mark \default
 	aes1.\fpp~
 	aes4 r8 r4 r8 r2. \clef tenor
 % Bars 91 to 95
-	des'4.(\<_\espressivo f) << aes( {s8 s s\!}>> c4\f\> bes8)\!
-	aes4.\p\>~ aes8\! r r r2. \clef bass
+	des'4.(\<_\espressivo f) << aes( {s8 s s\!}>> \hairpinShorten #'(-0.5 . -1) c4\f\> bes8)\!
+	\hairpinShorten #'(-0.5 . -1) aes4.\p\>~ aes8\! r r r2. \clef bass
 	aes,,1.\pp~
 	aes4 r8 r4 r8 r2.
 	aes4.\pp a16:32 a: a': a: a,: a: bes4. ces16:_\pocoapococrescendo ces: ces': ces: ces,: ces:
@@ -135,11 +135,11 @@ musicVioloncelloMvtII = \relative c {
 	c!4.(\pp\< d ees << f,) {s8 s s\!}>>
 	fis4.( g\> aes << e) {s8 s s\!}>>
 % Bars 106 to 110
-	f4.(\pp aes b2.)
+	f!4.(\pp aes b2.)
 	c4.(\< ees)\! fis,->(\> << c') {s8 s s\!}>>
-	bes4.(\p a\<_\pococresc g f!)\!
-	bes'4.(\< ees) << d( {s8 s s\!}>> a'4\f\> g8)\!
-	<< f2.~\p {s4. s8 s4_\dimmarkup}>> f8 ees( d c4\pp g8)
+	bes4.(\p a\<^\pococresc g f!)\!
+	bes'4.(\< ees) << d( {s8 s s\!}>> \hairpinShorten #'(-0.5 . -1) a'4\f\> g8)\! % f4. => d4. according to the conductor
+	f2.~_\pdim f8 ees( d c4\pp g8)
 % Bars 111 to 115
 	bes4(~ bes16. c32) bes4.~_\crescmarkup bes4 bes8( c4 d8) \clef tenor
 	ees4. c'4(~\f\< c16. bes32)-. << bes4.~ {s8 s s\!}>> bes4\> e,8\!(
@@ -147,7 +147,7 @@ musicVioloncelloMvtII = \relative c {
 	d2.\> g!4( f8 ees d c)\! \clef bass
 	d4.(\p\> bes4 f8)\! aes4.(\pp g8 ees c)
 % Bars 116 to 120
-	f,2.~ << f {s4.\< s8 s\! s}>>
+	f,2.~ << f {\hairpinShorten #'(0 . -1) s4.\< s8 s\! s}>>
 	f2.->_\dimmarkup ees'4.(\> e)\!
 	f1.\pp~
 	f4 r8 r4 r8 r2. \clef tenor
@@ -165,25 +165,25 @@ musicVioloncelloMvtII = \relative c {
 	r2. g'8\ff^\arco-> d-> g-> d-> g-> d->
 	R1.
 % Bars 131 to 135
-	r4 r8 << d'2. {s8\fz\> s s  s s s\!}>> r4 r8
-	r4 r8 << ees2. {s8\fz\> s s  s s s\!}>> r4 r8
-	r4 r8 \clef tenor << g2. {s8\fz\> s s  s s s\!}>> r4 r8
-	r4 r8 << fis2. {s8\fz\> s s  s s s\!}>> r4 r8 \clef bass
-	cis,8\ff r r r4 r8 r2.
+	\textMark "Vi-" r4 r8 << d'2. {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8
+	r4 r8 << ees2. {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8
+	r4 r8 \clef tenor << g2. {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8
+	r4 r8 << fis2.-> {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>> r4 r8 \clef bass
+	cis,8\ff r r r4 r8 r2. \textEndMark "-de"
 % Bars 136 to 140
-	d4.(\pp c bes a
+	d4.(\pp c! bes a
 	g\< f e\! << ees) {s8\> s s\!}>>
 	d4.(\pp d'~ d~ d8) r r
-	cis\ff r r r4 r8 d8 r r r4 r8 \mark \default
-	r2. ees8-.\pp d-. c-. <<{d16(-.^\div c-. bes8-. a-.)} \\ {bes16-.( a-. g8-. d-.)}>>
+	cis\ff r r r4 r8 d8 r r r4 r8 \markXoffset #-0.2 \mark \default
+	\offset X-offset 2.3 \textMark "Vi-" r2. ees8-.\pp d-. c!-. <<{d16(-.^\div c-. bes8-. a-.)} \\ {bes16-.( a-. g8-. d-.)}>>
 % Bars 141 to 145
-	r4 r8 <<{a'8-.( bes-. c-.) d16(-. c-. bes8-. a-.)} \\ {fis8(-.\pp g-. a-.) bes16(-. a-. g8-. d-.)}>> r4 r8
+	r4 r8 <<{a'8-.( bes-. c-.) d16(-. c-. bes8-. a-.)} \\ {fis8(-.-\offset X-offset -2.3 \pp g-. a-.) bes16(-. a-. g8-. d-.)}>> r4 r8
 	<<{d'16(-. c-. bes8-. a-.)} \\ {bes16(-. a-. g8-. d-.)}>> r4 r8 <<{d'16(-. c-. bes8-. a-.)} \\ {bes16(-. a-. g8-. d-.)}>> r4 r8
 	d'8\ff d'16 d d8 ees, ees'16 ees ees8 c, c'16 c c8 d, d'16 d d8
 	r4 r8 ees16. bes32 bes16 r r8 ees16. bes32 bes16 r r8 ees16. bes32 bes16 r r8 
-	r4 r8 <a, e' cis'>4.-^\ff\arpeggio r4 r8 <d a' fis'>4.-^\arpeggio
+	r4 r8 <a, e' cis'>4.-^\ff\arpeggio r4 r8 <d a' fis'>4.-^\arpeggio \textEndMark "-de"
 % Bars 146 to 150
-	g,4.:32_\ppsempre c: g: c:
+	g,4.:32_\ppsempre c!: g: c:
 	g: c: g: c:
 	g: c: g: c:
 	g2.: << g: {s4.\< s8 s s\!}>>

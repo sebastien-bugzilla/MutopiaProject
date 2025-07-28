@@ -18,7 +18,7 @@ musicVioloncelloMvtI = \relative c {
 	bes~
 	bes~
 	bes
-	f4\pp~ f8 \tuplet 3/2 8 {g16(\< a b}
+	f4\pp~ f8 \tuplet 3/2 8 {f16(\< g a}
 	bes4.) bes16( c
 % Bars 11 to 15
 	d8 ees f fis)
@@ -290,7 +290,7 @@ musicVioloncelloMvtI = \relative c {
 		\dynEO #'(0 . 1) c2\pp~
 		c~
 		c~
-		c
+		c~ % tie according to part score (also from repeatTie on second time measure)
 % Bars 236 to 240
 		\alternative {
 			\volta 1 {

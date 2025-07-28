@@ -70,6 +70,13 @@ fzcresc = \markup {\hspace #-0.5 \dynamic fz \italic {cresc.}}
 fcresc = \markup {\hspace #0.05 \dynamic f \italic {cresc.}}
 fdiminuendo = \markup {\hspace #0.05 \dynamic f \italic {diminuendo}}
 fpocoapococrescendo = \markup {\hspace #0.05 \dynamic f \italic {poco a poco crescendo}}
+fpocoapococrescendoC = \markup {
+	\hspace #0.05 \general-align #Y #CENTER {
+		\dynamic f \italic {
+			\column { \lower #1.5 "poco a poco" "crescendo"}
+		}
+	}
+}
 fmarkup = \markup {\hspace #0.05 \dynamic f}
 fmarc = \markup {\hspace #0.05 \dynamic f \italic {marc.}}
 fmarcato = \markup {\hspace #0.05 \dynamic f \italic {marcato}}
@@ -209,7 +216,7 @@ calando = \markup {\italic {calando}}
 conespr = \markup {\italic {con espr.}}
 conmoltaforza = \markup {\italic {con molta forza}}
 conmoltosforza = \markup {\italic {con molto sforza}}
-crescendo = \markup {\italic {crescendo}}
+crescendo = \markup {\normal-text \italic {crescendo}}
 crescmarkup = \markup {\italic {cresc.}}
 dimin = \markup {\italic {dimin.}}
 diminuendo = \markup {\italic {diminuendo}}
@@ -268,6 +275,7 @@ fbrackzD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script fbrac
 ppfzD = \tweak DynamicText.self-alignment-X #-0.26 #(make-dynamic-script ppfz)
 pocoapococrescD = \tweak DynamicText.self-alignment-X #-0.91 #(make-dynamic-script pocoapococresc)
 pococrescD = \tweak DynamicText.self-alignment-X #-0.91 #(make-dynamic-script pococresc)
+crescendoD = #(make-dynamic-script crescendo)
 
 markVi = \markup { \abs-fontsize #12 "Vi-" }
 markDe = \markup { \abs-fontsize #12 "-de" }

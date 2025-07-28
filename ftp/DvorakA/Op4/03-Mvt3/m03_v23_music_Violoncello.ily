@@ -9,8 +9,8 @@ musicVioloncelloMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	bes2.\ff~
-	<< bes {s4\> s s\!}>>
+	bes2.\ff\>~
+	<< bes {s4 s s\!}>>
 	g2.\p\>~
 	<< g {s4 s s\!}>>
 	R2.*4
@@ -61,7 +61,7 @@ musicVioloncelloMvtIII = \relative c {
 	c d f)
 	ees( d\< c
 	bes c d)\!
-	ees2(\< c4_\mfmarkup
+	ees2(\< \markEO #'(1 . -9) c4-\offset X-offset -1 ^\mfmarkup
 	a bes\! g\>)
 % Bars 51 to 55
 	c2( f4)\!
@@ -78,11 +78,11 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 61 to 65
 	c'2 c,8[ r16 c]
 	c'2 \tuplet 3/2 4 {c,8 d e}
-	f\p f f f f f
-	f f f f f f
-	f f f f f f
+	f2.:8\p
+	f:
+	f:
 % Bars 66 to 70
-	f f f f f\noBeam r\fermata
+	f2: f8 r\fermata
 	bes4:16\pp d: ees:
 	c: d: f:
 	ees: d: c:
@@ -92,18 +92,18 @@ musicVioloncelloMvtIII = \relative c {
 	a: bes: g:
 	c2: f,4:
 	f2.:
-	bes16 bes bes bes d d d, d ees ees ees' ees
+	bes4: d8: d,: ees: ees':
 % Bars 76 to 80
-	d d d, d ees ees ees' ees f f f, f
-	ees ees ees' ees bes'\< bes bes, bes g' g g, g
-	f f f' f f, f f' f g g g, g\!
-	aes\pp aes aes' aes aes, aes aes' aes aes, aes aes' aes
-	aes, aes aes' aes bes bes bes, bes c c c, c
+	d: d,: ees: ees': f: f,:
+	ees: ees': bes':\< bes,: g': g,:
+	f: f': f,: f': g: g,:\!
+	aes:\pp aes': aes,: aes': aes,: aes':
+	aes,: aes': bes: bes,: c: c,:
 % Bars 81 to 85
-	des des des' des des, des des' des des, des des' des
-	c, c c' c  c c c c c, c c' c
-	c, c c' c c c c c c, c c' c
-	c, c c' c c c c c c, c c' c \mark \default
+	des: des': des,: des': des,: des':
+	c,: c': c4: c,8: c':
+	c,: c': c4: c,8: c':
+	c,: c': c4: c,8: c': \mark \default
 	f,2.\pp~
 % Bars 86 to 90
 	f4. bes8( a16 bes c bes
@@ -221,14 +221,14 @@ musicVioloncelloMvtIII = \relative c {
 		\key a \major <a, e'>2.:16\ff\>
 		<< q: {s4 s s\!}>>
 % Bars 181 to 185
-		q2.:\p\>
+		\hairpinShorten #'(-0.5 . -0.5) q2.:\p\>
 		q:\pp
 		q4 r r
 		R2.*3
 		
 % Bars 186 to 190
 		
-		\grace {e16( fis gis} a2.)^\solo\fp\>~
+		\grace {e16( fis gis} a2.)^\solo-\offset X-offset 1 \fp\>~
 		a4 cis8( e a b)\!
 		cis2.(
 		a4) r r8. cis16
@@ -242,7 +242,7 @@ musicVioloncelloMvtIII = \relative c {
 		
 		
 		\clef bass
-		\grace {a,,16( b cis} d2.)\fp->~
+		\grace {a,,16( b cis} d2.)-\offset X-offset 1 \fp->~
 		d4 fis8( a d e)
 % Bars 201 to 205
 		fis2.(
@@ -252,12 +252,12 @@ musicVioloncelloMvtIII = \relative c {
 		fis'2.\f\>~
 % Bars 206 to 210
 		fis4\! r r \clef bass
-		\tuplet 3/2 4 {b,,,8(\pp fis' b, fis' b, fis' b, fis' b,
-		fis'_\crescmarkup b, fis' b, fis' b, fis' b, fis')
+		\stemDown \tuplet 3/2 4 {b,,,8(-\offset X-offset -1 \pp fis' b, fis' b, fis' b, fis' b,
+		\once \tupletUp fis'_\crescmarkup b, fis' b, fis' b, fis' b, fis') \stemNeutral
 		a,(\< e' a, e' a, e' a, e' a,\!
 		e' a, e' a, e' a, e' a, e')}
 % Bars 211 to 215
-		f\ff e f d f c
+		\dynEO #'(0 . -9) f^\ff e f d f c
 		f e f d' f, c'
 		f, e f d' f, c'
 		bes a bes g bes f
@@ -271,12 +271,12 @@ musicVioloncelloMvtIII = \relative c {
 	
 % Bars 221 to 225
 	
-	cis2:16\pp cis'4:
-	cis,2: cis'4:
+	cis2:16\pp cis'4: % next four measure according to conductor. In cello part 
+	cis,2: cis'4: % score, the alto part is attributed as is.
 	b,: b': b,:
 	b': b,: b':
 % Bars 226 to 230
-	\tuplet 3/2 4 {e8(\< d c b a g f e d)\!}
+	\tuplet 3/2 4 {e8(\< d c b a g \once \tupletUp f e d)\!}
 	c8:16\fp b: a: g: r4
 	c8:16\pp b: a: g: r4
 	c8:16 b: a: g: r4
@@ -285,22 +285,22 @@ musicVioloncelloMvtIII = \relative c {
 	e,2:16 e'4:
 	d,: d': d,:
 	d': d,: d':
-	\tuplet 3/2 4 {g8(\< f ees d c bes aes g f\!}
+	\tuplet 3/2 4 {g8(\< f ees d c bes \once \tupletUp aes g f\!}
 	ees4\f) r r
 % Bars 236 to 240
 	R2.
-	ees8\fz^\pizz r\> c' r g r\!
+	ees8\fz\>-\offset X-offset -1.5 ^\pizz r c' r g r\!
 	aes\p r ees r f bes,
 	ges' r r4 r
 	R2.
 % Bars 241 to 245
-	fis!8\fz r\> dis' r ais r\!
+	fis!8\fz\> r dis' r ais r\!
 	b!\p r fis r gis-. cis,-.
-	r4 \tuplet 3/2 4 {a8(\pp^\arco e' a, e' a, e')
+	r4 \tuplet 3/2 4 {a8(\pp^\arco e' a, e' a, e') % arco indication is from conductor score
 	a,( e' a, e' a, e' a, e' a,)
 	a( d a d a d a d a)
 % Bars 246 to 250
-	d( a d a d a d a d)} \mark \default
+	d( a d a d a d a d)} \markXoffset #-0.2 \mark \default
 	g,2.\pp~
 	g4 b8(\< d g a)\!
 	b2.\>(
@@ -325,7 +325,7 @@ musicVioloncelloMvtIII = \relative c {
 	des4\f f8( aes des ees)
 % Bars 266 to 270
 	f r f,(\< aes des ees)\!
-	f4(_\fffz des8) r f4(\fz
+	\noteHeadEsw #'(-2 . 0) f4(_\fffz des8) r f4(\fz
 	des8) r f4(\fz des8) r \mark \default
 	bes,2.\ff\>~
 	<< bes {s4 s s\!}>>
@@ -382,7 +382,7 @@ musicVioloncelloMvtIII = \relative c {
 	ees( d\< c
 % Bars 316 to 320
 	bes c d)\!
-	ees2(\< c4_\mfmarkup
+	ees2(\< \markEO #'(0 . 2) c4_\mfmarkup
 	a bes\! g)\>
 	c2( f4)\!
 	a,8(\p g f g a f)
@@ -391,7 +391,7 @@ musicVioloncelloMvtIII = \relative c {
 	d ees\< f)
 	ees( bes g
 	f2 g4)\!
-	aes2.(\pp~
+	\tempoXoffset #-1.5 aes2.(\pp~
 % Bars 326 to 330
 	aes4 bes c)
 	des2.(
@@ -499,7 +499,7 @@ musicVioloncelloMvtIII = \relative c {
 	d->_\fbrackf g-> f->
 	bes-> f-> bes->
 	f2.\fermata
-	\repeat tremolo 6 {bes,16(\p a)}
+	\textMark "Coda" \startMeasureCount \repeat tremolo 6 {bes,16(\p a)}
 % Bars 416 to 420
 	\repeat tremolo 6 {bes( a)}
 	\repeat tremolo 6 {bes( a)}
@@ -508,10 +508,10 @@ musicVioloncelloMvtIII = \relative c {
 	\repeat tremolo 6 {bes( a)}
 % Bars 421 to 425
 	\repeat tremolo 6 {bes( a)}
-	\repeat tremolo 6 {bes(_\ppdiminuendo a)}
+	\repeat tremolo 6 {bes(-\offset X-offset -1 \pp a)_\diminuendo}
 	\repeat tremolo 6 {bes( a)}
 	\repeat tremolo 6 {bes( a)}
-	\repeat tremolo 6 {bes( a)}
+	\repeat tremolo 6 {bes( a)} \stopMeasureCount
 % Bars 426 to 430
 	bes4.(\pp\< c8 \tuplet 3/2 4 {d ees a,)}
 	a4\!( bes\> g)
@@ -519,7 +519,7 @@ musicVioloncelloMvtIII = \relative c {
 	ees2( c8. bes16)
 	bes4( g f)
 % Bars 431 to 435
-	<ees' g>(\pp <d f> <c ees>8. <bes d>16)
+	<ees' g>(\pp <d f> \stemDown <c ees>8. <bes d>16) \stemNeutral
 	<<{
 		f'4( ees2~
 		ees2.
@@ -531,9 +531,9 @@ musicVioloncelloMvtIII = \relative c {
 	}>>
 	R2.
 % Bars 436 to 440
-	<< f'2.(\p\> {s4 s s\!}>>
+	\hairpinShorten #'(-0.5 . -0.5) f'2.(\p\>
 	f,2.\pp)\fermata
-	bes8^\pizz r ees r r d
+	bes8_\pizz r ees r r d
 	d\< r ees r c r
 	f r d\! r bes r
 % Bars 441 to 445

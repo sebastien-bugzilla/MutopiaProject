@@ -39,17 +39,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4"
+			"Antonín Dvořák — Symphony No. 2 in B-flat Major Op.4 — Violoncello"
 		}
 		instrument = \markup {
-			"Violoncello"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncelloMvtI
-%			}
+			\new Voice {
+				\formatVioloncelloMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtI
 			}
@@ -69,11 +69,19 @@
 		\layout {
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncelloMvtII
-%			}
+			\new Voice {
+				\formatVioloncelloMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtII
 			}
@@ -85,7 +93,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -95,9 +103,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncelloMvtIII
-%			}
+			\new Voice {
+				\formatVioloncelloMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtIII
 			}
@@ -109,33 +117,41 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 3.
+				\bold "3. Scherzo"
 			}
 		}
 		\layout {
 		}
 	}
 	\score {
-		\new Staff <<
-%			\new Voice {
-%				\formatVioloncelloMvtIV
-%			}
-			\new Voice {
-				\keepWithTag #'(violoncello) \tempiPartMvtIV
-			}
-			\new Voice {
-				\InCueContext \cueVoiceVioloncelloMvtIV
-			}
-			\new Voice {
-				\timeMvtIV \nameVioloncelloMvtIV \musicVioloncelloMvtIV
+		\new StaffGroup <<
+			\new Staff <<
+				\new Voice {
+					\formatVioloncelloMvtIV
+				}
+				\new Voice {
+					\keepWithTag #'(violoncello) \tempiPartMvtIV
+				}
+				\new Voice {
+					\InCueContext \cueVoiceVioloncelloMvtIV
+				}
+				\new Voice {
+					\timeMvtIV \nameVioloncelloMvtIV \musicVioloncelloMvtIV
+				}
+			>>
+			\new Staff \with {
+				\RemoveAllEmptyStaves \remove Time_signature_engraver 
+				\magnifyStaff #4/5 firstClef = ##f
+			} {
+				\timeMvtIV \musicVioloncelloOssiaMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. Finale"
 			}
 		}
 		\layout {
