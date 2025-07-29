@@ -36,7 +36,7 @@ musicContrabassoMvtIV = \relative c {
 	ees
 	d2( bes
 	g << c) {s8\< s s s\!}>>
-	a1_\fzpocoapococresc(
+	a1_\fzpocoapococrescC(
 	b2 << c) {s8\< s s s\!}>>
 % Bars 26 to 30
 	ees1->\fz
@@ -105,7 +105,7 @@ musicContrabassoMvtIV = \relative c {
 	ees,2 f8[ r16 ees] d'4-.
 	c-. r r2
 % Bars 81 to 85
-	f,2_\pocoapococresc g8[ r16 f] e'4-.
+	f,2_\pocoa_pococresc g8[ r16 f] e'4-.
 	d-. r r2
 	g,2 a8[ r16 g] f'4-.
 	e-.\fz r r2
@@ -133,7 +133,7 @@ musicContrabassoMvtIV = \relative c {
 	g2 a
 	bes( a)
 	<<{g( c)} \\ {\InCueContext s f,}>>
-	\tuplet 3/2 2 {f'4\ff-. e-. d-. c-. d-. e-. 
+	\textMark "Vi-" \tuplet 3/2 2 {f'4\ff-. e-. d-. c-. d-. e-. 
 % Bars 106 to 110
 	f-. e-. d-. c-. d-. e-. 
 	f-. a-. c-. f-. f-. c-. 
@@ -151,9 +151,9 @@ musicContrabassoMvtIV = \relative c {
 	f-> fis->
 	g-> a,->
 	b-> c->
-	d-> ees-> \mark \default
+	d-> ees-> \offset X-offset #-2.3 \textEndMark "-de" \mark \default
 % Bars 121 to 125
-	f4\ff bes8( bes,) bes'( bes,) r bes
+	\startMeasureCount f4\ff bes8( bes,) bes'( bes,) r bes
 	f'4 bes8( bes,) bes'( bes,) r bes
 	f'4 bes8( bes,) bes'( bes,) r bes
 	f'4 bes8( bes,) bes'( bes,) r bes
@@ -166,13 +166,13 @@ musicContrabassoMvtIV = \relative c {
 	f'4 bes8( bes,) bes'( bes,) r bes
 % Bars 131 to 135
 	f'4 bes8(\p bes,) bes'( bes,) r bes
-	f'4 bes8( bes,) bes'( bes,) r bes\p
+	f'4 bes8( bes,) bes'( bes,) r bes\p \stopMeasureCount
 	bes4 r r2
 	R1*7
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	aes'2:32\pp aes:
+	\startMeasureCount aes'2:32\pp aes:
 	aes: aes:
 	aes: aes:
 	aes: aes:
@@ -180,7 +180,7 @@ musicContrabassoMvtIV = \relative c {
 % Bars 146 to 150
 	aes: aes:
 	aes: aes:
-	aes:\< aes:\!
+	aes:\< aes:\! \stopMeasureCount
 	ges,1\pp~
 	ges2~ \tuplet 3/2 2 {ges4-. ges-. ges-.}
 % Bars 151 to 155
@@ -241,7 +241,7 @@ musicContrabassoMvtIV = \relative c {
 	fis'\ff fis'8( fis,) fis'( fis,) r fis
 	fis fis fis fis  fis cis' ais gis
 	fis ais fis d! cis fis cis fis,
-	g''4\ff r f,!-.\pp r
+	g''!4\ff r f,!-.\pp r
 	ees!-. r d-. r
 % Bars 201 to 205
 	c-. r bes-. r
@@ -278,7 +278,7 @@ musicContrabassoMvtIV = \relative c {
 	fis4.\pp fis'8 fis4 r
 	fis,4. fis'8 fis4 r
 	fis,4. fis'8 fis4 r
-	fis,4. fis'8 fis4 r \mark \default
+	fis,4. fis'8 fis4 r \markXoffset #-0.2 \mark \default
 % Bars 231 to 235
 	d2_\ffconmoltaforza e8. d16 b'4
 	a2. b8 cis
@@ -299,7 +299,7 @@ musicContrabassoMvtIV = \relative c {
 	d2-^ cis4-^ b-^ 
 % Bars 246 to 250
 	bes!1\ff~
-	bes2 \tuplet 3/2 2 {ees!4_\brackM\dimmarkup-. g-. ees-. }
+	bes2 \tuplet 3/2 2 {\once \tupletUp ees!4_\brackM\dimmarkup-. g-. ees-. }
 	bes1\fz\>~
 	bes4.\! bes8 \tuplet 3/2 2 {ees4\p-. g-. ees-. }
 	bes1~
@@ -332,10 +332,10 @@ musicContrabassoMvtIV = \relative c {
 	gis,2.~ gis8 gis
 	fis2.~ fis8 fis
 	e2.~ e8 b
-	dis2.~ dis8 b
+	dis2.^~ dis8 b
 % Bars 276 to 280
 	e2.~ e8 b
-	dis2.~ dis8 b
+	dis2.^~ dis8 b
 	e2\ff e'4-. e,-.
 	e2 e'4-. e,-.
 	ees!2 ees'4-. ees,-.
@@ -449,7 +449,7 @@ musicContrabassoMvtIV = \relative c {
 	e4\ff e' f, f'
 % Bars 371 to 375
 	g, g' aes, aes' \mark \default
-	bes ees8( ees,) ees'( ees,) r bes'
+	\startMeasureCount bes ees8( ees,) ees'( ees,) r bes'
 	bes4 ees8( ees,) ees'( ees,) r bes'
 	bes4 ees8( ees,) ees'( ees,) r bes'
 	bes4 ees8( ees,) ees'( ees,) r bes'
@@ -462,14 +462,14 @@ musicContrabassoMvtIV = \relative c {
 % Bars 381 to 385
 	bes4 ees8( ees,) ees'(\> ees,) r bes'\!
 	bes4 ees8(\p ees,) ees'( ees,) r\> bes'
-	bes4 ees8( ees,) ees'( ees,) r ees\!
+	bes4 ees8( ees,) ees'( ees,) r ees\! \stopMeasureCount
 	bes4\pp r r2
 	R1*7
 % Bars 386 to 390
 	
 % Bars 391 to 395
-	\mark #11
-	des'2:32\pp des:
+	\markXoffset #-0.2 \mark #11
+	\startMeasureCount des'2:32\pp des:
 	des: des:
 	des: des:
 	des: des:
@@ -477,7 +477,7 @@ musicContrabassoMvtIV = \relative c {
 	des: des:
 	des: des:
 	des:\< des:
-	des: << des: {s4 s\!}>>
+	des: << des: {s4 s\!}>> \stopMeasureCount
 	ces,1\pp~
 % Bars 401 to 405
 	ces2~ \tuplet 3/2 2 {ces4 ces-. ces-.}
@@ -494,7 +494,7 @@ musicContrabassoMvtIV = \relative c {
 % Bars 411 to 415
 	a a a a  a a a a
 	g!->\f b a g fis-> a g fis
-	e-> g fis e d-> g e d
+	e-> g fis e d-> g e d  % d fis e d => d g e d based on conductor and other voices
 	\tuplet 3/2 2 {c4-> e,-> g-> c-> g-> c->
 	e-> c-> e-> g-> e-> g->}
 % Bars 416 to 420
@@ -560,7 +560,7 @@ musicContrabassoMvtIV = \relative c {
 % Bars 466 to 470
 	
 	
-	c''2\ff~ c8 gis( b-> a)
+	c''!2\ff~ c8 gis( b-> a)
 	a2~ a8 e( g!-> fis)
 	fis2~ fis8 c( e-> d)
 % Bars 471 to 475
@@ -574,7 +574,7 @@ musicContrabassoMvtIV = \relative c {
 	cis2~ cis8 gis( b-> ais)
 	ais2~ ais8 e( gis-> fis)
 	fis2->~ fis8 cis( e-> dis)
-	ees4-> ees ees-> ees
+	ees!4-> ees ees-> ees
 % Bars 481 to 485
 	ees-> ees ees-> ees
 	ees-> ees-> ees-> ees->
@@ -689,7 +689,7 @@ musicContrabassoOssiaMvtIV = \relative c {
 	\key bes \major
 % Bars 1 to 370
 	s1*368 \break
-	c2-^ aes-^
+	c2-^-\offset X-offset -1.5 ^\markup {\fontsize #3 "Cb. ossia"} aes-^
 	e4 e' f, f'
 % Bars 371 to 375
 	g, g' aes, aes'
@@ -707,9 +707,11 @@ musicContrabassoOssiaMvtIV = \relative c {
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
 	bes4-. ees-. ees,-. r8 bes'
-% Bars 384 to 450
-	s1*66 \break
-	c1\ff
+	bes,4 r r2
+	R1*7
+% Bars 392 to 450
+	s1*58 \break
+	c'1\ff-\offset X-offset 3 ^\markup {\fontsize #3 "Cb. ossia"}
 % Bars 451 to 455
 	b2 a4. e8
 	g1~
@@ -726,4 +728,5 @@ musicContrabassoOssiaMvtIV = \relative c {
 	b2~ b8 f a g
 	g2~ g8 b, e d
 	<< d2~ {s4 s\<}>> d8 f, a g\!
+	
 }

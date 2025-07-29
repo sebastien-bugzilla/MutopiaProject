@@ -9,7 +9,7 @@ musicContrabassoMvtI = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	bes2\pp~
+	\startMeasureCount bes2\pp~
 	bes~
 	bes~
 	bes~
@@ -17,14 +17,14 @@ musicContrabassoMvtI = \relative c {
 % Bars 6 to 10
 	bes~
 	bes~
-	bes~
+	bes~ \stopMeasureCount
 	bes8\brack\pp bes~ bes4~\<
 	bes8 bes bes4~
 % Bars 11 to 15
 	bes8 bes bes4
 	bes8.( a16) bes( a bes a)\!
 	g2\fermata\ff
-	d'2\pp~
+	\startMeasureCount d'2\pp~
 	d~
 % Bars 16 to 20
 	d~
@@ -33,7 +33,7 @@ musicContrabassoMvtI = \relative c {
 	d~
 	d~
 % Bars 21 to 25
-	d
+	d \stopMeasureCount
 	d8 d d4~
 	d8 d\< d4~
 	d8 d d4
@@ -71,9 +71,9 @@ musicContrabassoMvtI = \relative c {
 % Bars 51 to 55
 	des'16(\f c bes aes) des( c bes aes)
 	des8 r r4
-	des2~\p
+	des2~-\offset X-offset 0.5 \p
 	des8 r r4
-	c16(\f b a! g) c( b a g)
+	c16(-\tweak extra-offset #'(0 . -8) ^\f b a! g) c( b a g)
 % Bars 56 to 60
 	c8 r r4
 	<< c2~\p {s4 s8 s\>}>>
@@ -84,7 +84,7 @@ musicContrabassoMvtI = \relative c {
 	<< f~ {s8\< s s s\!}>>
 	<< f2 {s8\> s s s\!}>> \mark \default
 	\repeat volta 2 {
-		bes8\pp r r4
+		\tempoXoffset #0.5 bes8\pp r r4
 		R2*4
 		
 % Bars 66 to 70
@@ -99,7 +99,7 @@ musicContrabassoMvtI = \relative c {
 		
 % Bars 81 to 85
 		\ni \mmrPos #-4 R2
-		\mmrPos #-4 R \no
+		\mmrPos #-6 R \no
 		r4 r8 f,16(\p g
 		a8) g-. f4->
 		r4 r8 f16(\< g
@@ -114,7 +114,7 @@ musicContrabassoMvtI = \relative c {
 		b[-. gis']-. e-. b'-. 
 		d-. cis16( d) \tuplet 3/2 4 {b8( ais b)}
 		d-. cis16( d b8) r
-		d4->\ff b16[( cis b r32 a-.)]
+		d4->\ff \beamOffset #'(-0.5 . -0.5) b16[( cis b r32 a-.)]
 % Bars 96 to 100
 		gis4-> fis16[( gis fis r32 e-.])
 		d4-> b16[( cis b r32 a-.])
@@ -124,12 +124,12 @@ musicContrabassoMvtI = \relative c {
 % Bars 101 to 105
 		ees-. d16( ees) \tuplet 3/2 4 {c8( b c)}
 		ees-. d16( ees c8) r
-		ees4->\ff c16[( d c r32 bes-.])
-		a4-> g16[( a g r32 f-.])
+		ees4->\ff \beamOffset #'(-0.5 . -0.5) c16[( d c r32 bes-.])
+		a4-> \beamOffset #'(-0.5 . -0.5) g16[( a g r32 f-.])
 		ees4 c16[( d c r32 bes-.])
 % Bars 106 to 110
 		a16( bes a g) \tuplet 3/2 4 {a8( g f)}
-		f\ff e f4~
+		f-\offset X-offset -1 \ff e f4~
 		f8 g-> aes-> g->
 		f-> g-> aes4~
 		aes8 g-> aes-> f-> \mark \default
@@ -142,7 +142,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 116 to 120
 		\acciaccatura {g16 a b} c2\p
 		R2
-		\acciaccatura {g16 a b} << c2 {s4\dimD\> s8 s16 s\!}>>
+		\acciaccatura {g16 a b} << c2 {\hairpinShorten #'(-0.8 . -0.5) s4-\offset X-offset -2.5 \dimD\> s8 s16 s\!}>>
 		R2
 		\acciaccatura {bes!16\pp a} g2
 % Bars 121 to 125
@@ -152,7 +152,7 @@ musicContrabassoMvtI = \relative c {
 		f:\<
 		<< f: {s8 s s s\!}>>
 % Bars 126 to 130
-		f2:\f
+		f2:-\tweak extra-offset #'(-2 . -8) ^\f
 		f8 r r4
 		R2*7
 		
@@ -173,7 +173,7 @@ musicContrabassoMvtI = \relative c {
 		
 		
 		
-		g4 r8 g
+		\startMeasureCount g4 r8 g
 		g4 r8 g
 % Bars 146 to 150
 		g4 r8 g
@@ -182,8 +182,8 @@ musicContrabassoMvtI = \relative c {
 		g4 r8 g\<
 		g4 r8 g
 % Bars 151 to 155
-		g4 r8 g\!
-		bes4\p bes
+		g4 r8 g\! \stopMeasureCount
+		bes4\p bes \break
 		bes c8(_\brackM\pocoapococresc a)
 		bes4 c
 		\acciaccatura {bes16 c} d4.->( c8)
@@ -194,7 +194,7 @@ musicContrabassoMvtI = \relative c {
 		\acciaccatura {d16 e} f4.->( e!8) \mark \default
 		ees!2\f->
 % Bars 161 to 165
-		ees'4.->\fz c16( d)
+		ees'4.->-\offset X-offset 2 -\tweak extra-offset #'(-2 . 0) \fz c16( d)
 		ees4-> c->
 		ees c
 		ees,2
@@ -226,7 +226,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 186 to 190
 		fis4 r8 fis
 		fis4 r8 fis
-		f!4 r8 f
+		\startMeasureCount f!4 r8 f
 		f4 r8 f
 		f4 r8 f
 % Bars 191 to 195
@@ -234,12 +234,12 @@ musicContrabassoMvtI = \relative c {
 		f4\pp r8 f
 		f4 r8 f
 		f4 r8 f
-		f4 r8 f_\crescendo
+		f4 r8 f\crescendoD\<
 % Bars 196 to 200
-		f4 r8\< f
 		f4 r8 f
 		f4 r8 f
-		f4 r8 f\! \mark \default
+		f4 r8 f
+		f4 r8 f\! \stopMeasureCount \mark \default
 		f2\ff
 % Bars 201 to 205
 		g4-> aes->
@@ -250,7 +250,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 206 to 210
 		f2->~
 		f4 g8. aes16
-		f2\ff(
+		f2-\offset X-offset -2 \ff(
 		g4) aes->
 		f2->~
 % Bars 211 to 215
@@ -260,7 +260,7 @@ musicContrabassoMvtI = \relative c {
 		f2->~
 		f4 g8. aes16
 % Bars 216 to 220
-		a8\ff[-. e']-. cis-. a'-. 
+		a!8\ff[-. e']-. cis-. a'-. 
 		e[-. cis']-. a-. e'-. 
 		e-. dis16( e) \tuplet 3/2 4 {f8( e f)}  % f => fis ??
 		e-. cis-. a-. r
@@ -421,7 +421,7 @@ musicContrabassoMvtI = \relative c {
 	fis8-.\pp gis16( fis) \tuplet 3/2 4 {gis8( fis gis)}
 	ais-.\< b16( ais) \tuplet 3/2 4 {b8( ais b)\!}
 	cis-._\crescmarkup b16( cis) \tuplet 3/2 4 {dis8( cis dis)}
-	e-. dis16(\< e) \tuplet 3/2 4 {fis8( eis fis)\!}
+	e-. dis16(\< e) \tuplet 3/2 4 {\once \tupletUp fis8( eis fis)\!}
 % Bars 346 to 350
 	aes-.\f\< g16( aes) \tuplet 3/2 4 {bes8( aes bes)}
 	c-. bes16( c) des8. bes16\!
@@ -431,9 +431,9 @@ musicContrabassoMvtI = \relative c {
 % Bars 351 to 355
 	c8-. c'-. bes-. aes-.
 	g!-. ees'-. r4
-	r bes8_\dimD\> aes
+	r \hairpinShorten #'(-0.5 . -1) bes8_\dimD\> aes
 	g-.\! ees'-. r4
-	r bes,8-.\p\> aes-.\! \mark \default
+	r \hairpinShorten #'(-0.5 . -1) bes,8-.\p\> aes-.\! \mark \default
 % Bars 356 to 360
 	g2\pp~
 	g
@@ -461,7 +461,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 376 to 380
 	\tuplet 3/2 4 {g8-. aes-. bes-. c-. d-. ees-.}
 	f4.\fz ees8-.
-	f4.\fz ees8-.
+	f4.-\offset X-offset -3 -\tweak extra-offset #'(3.5 . 0) \fz ees8-.
 	f8-.[ ees-.] d-. c-.
 	b4.\f d8-.
 % Bars 381 to 385
@@ -519,7 +519,7 @@ musicContrabassoMvtI = \relative c {
 	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no \mark \default
-	r4 r8 f16(\p g
+	r4 r8 f16(\p^\arco g  % arco based on part score
 % Bars 441 to 445
 	a8) g-. f4->
 	r4 r8 f16(\< g
@@ -534,7 +534,7 @@ musicContrabassoMvtI = \relative c {
 	d8( cis16 d) \tuplet 3/2 4 {b8( ais b)}
 % Bars 451 to 455
 	d-. cis16( d b8) r
-	d4-> b16[( cis b r32 a-.])
+	d4-> \beamOffset #'(-0.5 . -0.5) b16[( cis b r32 a-.])
 	gis4-> fis16[( gis fis r32 e-.])
 	d4-> b16[( cis b r32 a-.])
 	gis16( a gis fis) \tuplet 3/2 4 {gis8( fis e)}
@@ -543,9 +543,9 @@ musicContrabassoMvtI = \relative c {
 	c[-. a'-.] f-. c'-.
 	ees!-. d16( ees) \tuplet 3/2 4 {c8( b c)}
 	ees-. d16( ees c8) r
-	ees4-> c16([ d c r32 bes-.])
+	ees4-> \beamOffset #'(-0.5 . -0.5) c16([ d c r32 bes-.])
 % Bars 461 to 465
-	a4-> g16[( a g r32 f-.])
+	a4-> \beamOffset #'(-0.5 . -0.5) g16[( a g r32 f-.])
 	ees4-> c16[( d c\< r32 bes-.])
 	a16( bes a g) \tuplet 3/2 4 {a8( g f)\!}
 	\acciaccatura e''\ff f4 \acciaccatura cis8 d4
@@ -565,7 +565,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 476 to 480
 	g8) \tuplet 3/2 8 {c16( bes aes} g8)\! r
 	r4 r16 c( bes aes
-	g8)_\fpocoapococrescendo \tuplet 3/2 8 {c16( bes aes} g8) r
+	g8)-\offset X-offset -1 _\fpocoapococrescendoC \tuplet 3/2 8 {c16( bes aes} g8) r
 	r4 r16 c(\f bes aes
 	g8) \tuplet 3/2 8 {g16(\< a! b} c8) d-.\!
 % Bars 481 to 485
@@ -591,7 +591,7 @@ musicContrabassoMvtI = \relative c {
 	f\( ges(
 	fis) g!\)
 	fis( g~_\pocoapococresc 
-	g8) g aes4~
+	\textMark "Vi-" g8) g aes4~
 % Bars 501 to 505
 	aes8 aes a4\<~
 	a8 a bes4~
@@ -615,19 +615,19 @@ musicContrabassoMvtI = \relative c {
 	R2*3
 	
 	
-	a4\fp~ a8 \tuplet 3/2 8 {a16( b cis)}
+	a!4\fp~ a8 \tuplet 3/2 8 {a16( b cis)}
 % Bars 521 to 525
 	d4.\p e8
 	f d4 a8~
 	a r r16 d( c bes)
-	a8-._\pocoapococrescendo \tuplet 3/2 8 {d16( c bes} a8) r
+	a8-.-\offset X-offset 1 _\pocoapoco_crescendo \tuplet 3/2 8 {d16( c bes} a8) r
 	r4 r16 d(\f c bes
 % Bars 526 to 530
 	a8) \tuplet 3/2 8 {d16( c bes} a8) r
 	r4 r16 d( c bes)
 	a8-. \tuplet 3/2 8 {a16( b cis} d8 e-.)
 	f4.\fz e8
-	d->\fz a a a'
+	d\fz a a a'
 % Bars 531 to 535
 	d->\fz a-. a-. a'-.
 	d,->\p[ a->] d,-> a->\fz
@@ -643,15 +643,15 @@ musicContrabassoMvtI = \relative c {
 % Bars 541 to 545
 	g8 g g4~
 	g2
-	g \mark \default
-	g4(\pp aes)_\pocoapococresc
+	g \offset X-offset #-2.3 \textEndMark "-de" \mark \default
+	g4(_\pppocoapococresc aes)
 	gis( a!~
 % Bars 546 to 550
 	a8) a-. bes4\<~
 	bes8 bes-.\! b4~
 	b8 b\< c4~
 	c8 c cis4\!
-	a4\ff a'->~
+	a!4\ff a'->~
 % Bars 551 to 555
 	a a,~
 	a a'->~
@@ -680,8 +680,8 @@ musicContrabassoMvtI = \relative c {
 	\acciaccatura {ees!16 d} c2\pp
 	R2
 	\acciaccatura {ees16 d} c2
-	<< bes2:16 {s4 s_\crescmarkup}>>
-	bes2:\<
+	<< bes2:16 {s4 s\crescD\<}>>
+	bes2:
 % Bars 576 to 580
 	bes:
 	<< bes: {s8 s s s\!}>>
@@ -701,7 +701,7 @@ musicContrabassoMvtI = \relative c {
 	
 	
 	
-	c4\p^\pizz r8 c
+	\startMeasureCount c4\p-\offset X-offset -5 ^\pizz r8 c
 % Bars 596 to 600
 	c4 r8 c
 	c4 r8 c
@@ -710,8 +710,8 @@ musicContrabassoMvtI = \relative c {
 	c4 r8_\crescmarkup c
 % Bars 601 to 605
 	c4 r8 c
-	c4 r8 c
-	ees4->\mf^\arco ees->
+	c4 r8 c \stopMeasureCount
+	ees4->-\offset X-offset -0.5 \mf^\arco ees->
 	ees->( f8 d)
 	ees4(->\< f)
 % Bars 606 to 610
@@ -721,7 +721,7 @@ musicContrabassoMvtI = \relative c {
 	f4->\< g->
 	\acciaccatura {g16 a} bes4.->( a8)\! \mark \default
 % Bars 611 to 615
-	aes2_\fbrackf_\conmoltaforza
+	aes2_\fbrackfconmoltaforza
 	aes'4. f16 g
 	aes4-> f->
 	aes-> f->
@@ -772,16 +772,24 @@ musicContrabassoMvtI = \relative c {
 	f, r r4
 	R2*3
 	
-	\mark \default
-	R2*16
+	\markXoffset #-0.2 \mark \default
+	\mmrnDown R2*7
 % Bars 656 to 660
 	
 % Bars 661 to 665
 	
+	R2
+	\mmrLength #12 R2*4
+	
+	
 % Bars 666 to 670
 	
+	\mmrLength #12 R2*4
+	
+	
+	
 % Bars 671 to 675
-	bes2\pp~
+	\startMeasureCount bes2\pp~
 	bes~
 	bes~
 	bes~
@@ -789,7 +797,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 676 to 680
 	bes~
 	bes~
-	bes~
+	bes~ \stopMeasureCount
 	bes8 r r4
 	R2*3
 % Bars 681 to 685

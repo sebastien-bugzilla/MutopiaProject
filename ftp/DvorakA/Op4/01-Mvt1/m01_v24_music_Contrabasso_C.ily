@@ -519,7 +519,7 @@ musicContrabassoMvtI = \relative c {
 	
 	
 	\mark \default
-	r4 r8 f16(\p g
+	r4 r8 f16(\p-\offset X-offset -5 ^\arco g   % arco based on part score
 % Bars 441 to 445
 	a8) g-. f4->
 	r4 r8 f16(\< g
@@ -627,7 +627,7 @@ musicContrabassoMvtI = \relative c {
 	r4 r16 d( c bes)
 	a8-. \tuplet 3/2 8 {a16( b cis} d8 e-.)
 	f4.\fz e8
-	d->\fz a a a'
+	d\fz a a a'
 % Bars 531 to 535
 	d->\fz a-. a-. a'-.
 	d,->\p[ a->] d,-> a->\fz

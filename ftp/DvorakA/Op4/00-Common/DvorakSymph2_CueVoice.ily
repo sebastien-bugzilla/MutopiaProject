@@ -3809,12 +3809,12 @@ cueVoiceVioloncelloMvtIV = \relative c {
 cueVoiceContrabassoMvtI = \relative c {
 	s2*80
 	% bars 81 - 83
-	\voiceOne c'8[(\f\>^\markup {Vlc.} ees c bes)]\!
+	c'8[(\f\>-\offset X-offset -3 ^\markup {Vlc.} ees c bes)]\!
 	a[(_\dimmarkup ges ees c]
-	f) r s4
+	\voiceOne f) r s4
 	s2*354
 	% bars 438 - 439
-	c'8(\fz\>^\markup {Vlc.} ees c bes)\!
+	c'8(\fz\>-\offset X-offset -3 ^\markup {Vlc.} ees c bes)\!
 	a(\> ges ees c)\!
 }
 cueVoiceContrabassoMvtII = \relative c {
@@ -3827,18 +3827,18 @@ cueVoiceContrabassoMvtII = \relative c {
 cueVoiceContrabassoMvtIII = \relative c {
 	s2.*59
 	% bars 60 - 62
-	\voiceTwo c2\repeatTie^\markup {Vlc.} c,8[ r16 c]
+	\voiceTwo c2\repeatTie_\markup {Vlc.} c,8[ r16 c]
 	c'2 c,8[ r16 c]
 	c'2 \tuplet 3/2 4 {c,8 d e!}
 	s2.*3
 	% bar 66
-	f8^\markup {Vlc.} f f f f r\fermata
+	f8^\markup {Vlc.} f f f f\noBeam r\fermata
 	s2.*242
 	% bar 309
 	\clef alto \voiceOne bes'4->(^\markup {Vle} c-> d->) \clef bass
 	s2.*20
 	% bars 330 - 334
-	\clef treble r4^\markup {Ob.I.} r \tuplet 3/2 4 {e'8( f g)}
+	\oneVoice \clef treble r4^\markup {Ob.I.} r \tuplet 3/2 4 {e'8( f g)}
 	a2( g8 f
 	a2) g8( f
 	a2) g8( f

@@ -9,8 +9,8 @@ musicContrabassoMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	bes2.\ff~
-	<< bes {s4\> s s\!}>>
+	bes2.\ff\>~
+	<< bes {s4 s s\!}>>
 	g2.\p\>~
 	<< g {s4 s s\!}>>
 	R2.*4
@@ -41,12 +41,12 @@ musicContrabassoMvtIII = \relative c {
 % Bars 26 to 30
 	f8 f' f,4. f'8
 	f,2.
-	f8 f' f,4. f'8
+	\startMeasureCount f8 f' f,4. f'8
 	f, f' f,4. f'8
 	f, f' f,4._\pocoapococresc f'8
 % Bars 31 to 35
 	f, f' f,4. f'8
-	f, f' f,4. f'8
+	f, f' f,4. f'8 \stopMeasureCount
 	f,4\f r r
 	R2.*8
 % Bars 36 to 40
@@ -56,14 +56,14 @@ musicContrabassoMvtIII = \relative c {
 	r4 r \tuplet 3/2 4 {c'8(\mf a f)}
 	r4 r \tuplet 3/2 4 {c'8(\p a f)}
 	r4 r \tuplet 3/2 4 {c'8(\pp a f)\fermata} \mark \default
-	R2.*15
+	R2.*12
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
-	
+	\mmrnDown R2.*3
 	
 	
 	\ni \mmrPos #4 R2.
@@ -78,7 +78,7 @@ musicContrabassoMvtIII = \relative c {
 	bes8^\pizz\p r d r ees r
 	c r d r f r
 	ees r d r c r
-	bes r c r d r
+	bes r c r d r 
 % Bars 71 to 75
 	ees r r4 c8 r
 	a r bes r g r
@@ -96,7 +96,7 @@ musicContrabassoMvtIII = \relative c {
 	c r c' r r c,
 	c r c' r r c,
 	c r c' r r4 \mark \default
-	f,,2.\pp~^\brackM\arco
+	f,,2.\pp~-\offset X-offset 0.5 ^\brackM\arco
 % Bars 86 to 90
 	f4. bes8( a16 bes c bes
 	f2.~
@@ -215,7 +215,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 181 to 185
 		a4\p r r
 		R2.
-		a2.\pp^\arco~
+		\startMeasureCount a2.\pp^\arco~
 		a~
 		a~
 % Bars 186 to 190
@@ -223,13 +223,13 @@ musicContrabassoMvtIII = \relative c {
 		a~
 		a~
 		a~
-		a
+		a \stopMeasureCount
 % Bars 191 to 195
 		fis~
 		fis~
 		fis~
 		fis
-		d'\pp~
+		\startMeasureCount d'\pp~
 % Bars 196 to 200
 		d~
 		d~
@@ -238,7 +238,7 @@ musicContrabassoMvtIII = \relative c {
 		d~
 % Bars 201 to 205
 		d~
-		d
+		d \stopMeasureCount
 		b_\semprepp~
 		b~
 		b~
@@ -259,17 +259,13 @@ musicContrabassoMvtIII = \relative c {
 		f' e f d e c
 		bes4 r r \mark \default
 	}
-	R2.*3
+	R2.*8
 	
 % Bars 221 to 225
 	
-	R2.*5
-	
-	
-	
 % Bars 226 to 230
 	
-	c,4\fz^\pizz r c'\pp
+	c,4\fz-\offset X-offset -1 ^\pizz r c'\pp
 	c, r c'
 	c, r c'
 	c, r r
@@ -288,7 +284,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 241 to 245
 	fis8\fz r r4 r
 	R2.
-	a,2.\pp^\arco~
+	a,!2.\pp^\arco~
 	a~
 	a~
 % Bars 246 to 250
@@ -352,11 +348,11 @@ musicContrabassoMvtIII = \relative c {
 	f8 f' f,4. f8
 	f2.:16
 % Bars 296 to 300
-	f8 f' f,4. f8
+	\startMeasureCount f8 f' f,4. f8
 	f8\< f' f,4. f8
 	f8 f' f,4. f8
 	f8 f' f,4. f8
-	f8 f' f,4. f8\!
+	f8 f' f,4. f8\! \stopMeasureCount
 % Bars 301 to 305
 	f4\f r r
 	R2.*7
@@ -369,17 +365,21 @@ musicContrabassoMvtIII = \relative c {
 % Bars 311 to 315
 	r4 r \tuplet 3/2 4 {c'8(\> a f)\!}
 	r4 r \tuplet 3/2 4 {c'8(\pp a f)\fermata} \mark \markAaBox
-	R2.*17
+	R2.*12
 	
 	
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
+	
+	
+	
+	\mmrnDown R2.*3
 % Bars 326 to 330
 	
 	
-	
+	\mmrLength #12 \mmrnDown R2.*2
 	
 	\ni \mmrPos #-4 R2.
 % Bars 331 to 335
@@ -409,7 +409,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 351 to 355
 	c r c' r r c,
 	c r c' r r4 \mark \markBbBox
-	f,,2.\pp^\brackM\arco~
+	f,,2.\pp-\offset X-offset 0.5 ^\brackM\arco~
 	f4. bes8( a16 bes c bes
 	f2.~
 % Bars 356 to 360
@@ -483,7 +483,7 @@ musicContrabassoMvtIII = \relative c {
 	d->_\fbrackf g-> f->
 	bes-> f-> bes->
 	f2.\fermata
-	bes,8\p^\pizz r bes r bes r
+	\textMark "Coda" \startMeasureCount bes,8\p^\pizz r bes r bes r
 % Bars 416 to 420
 	bes r bes r bes r
 	bes r bes r bes r
@@ -495,14 +495,18 @@ musicContrabassoMvtIII = \relative c {
 	bes_\ppdiminuendo r bes r bes r
 	bes r bes r bes r
 	bes r bes r bes r
-	bes r bes r bes r
+	bes r bes r bes r \stopMeasureCount
 % Bars 426 to 430
 	bes\pp r r4 r
-	R2.*9
+	R2.*3
 	
 	
-	
+	R2.
 % Bars 431 to 435
+	\mmrLength #10 \tempoXoffset -1 R2.*3
+	
+	
+	\mmrLength #10 R2.*2
 	
 % Bars 436 to 440
 	f'4\p^\pizz r r
