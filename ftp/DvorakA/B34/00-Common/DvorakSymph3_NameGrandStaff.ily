@@ -1,0 +1,82 @@
+%  work        : Symphony No. 3 in E-flat Major Op.10 (B.34)
+%  typesetter  : Sébastien MANEN
+%  date        : Tuesday 29 July 2025, 23:43
+%###############################################################################
+%#               G R A N D   S T A F F   N A M E   :   M V T   I               #
+%###############################################################################
+nameGrandStaffIMvtI = {
+	\set Staff.instrumentName = "Flauti"
+	\set Staff.shortInstrumentName = "Fl."
+	\set Staff.midiInstrument = #""
+}
+nameGrandStaffIIMvtI = {
+	\set Staff.instrumentName = "Corni F"
+	\set Staff.shortInstrumentName = "Cor."
+	\set Staff.midiInstrument = #""
+}
+nameGrandStaffIIIMvtI = {
+	\set Staff.instrumentName = ""
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #""
+}
+nameGrandStaffIVMvtI = {
+	\set Staff.instrumentName = "Violini"
+	\set Staff.shortInstrumentName = "Viol."
+	\set Staff.midiInstrument = #""
+}
+%###############################################################################
+%#              G R A N D   S T A F F   N A M E   :   M V T   I I              #
+%###############################################################################
+nameGrandStaffIMvtII = {
+	\set Staff.instrumentName = "Flauti"
+	\set Staff.shortInstrumentName = "Fl."
+	\set Staff.midiInstrument = #""
+}
+nameGrandStaffIIMvtII = {
+	\set Staff.instrumentName = "Clarinetti A"
+	\set Staff.shortInstrumentName = "Cl. A"
+	\set Staff.midiInstrument = #""
+}
+nameGrandStaffIIIMvtII = {
+	\set Staff.instrumentName = "Corni E"
+	\set Staff.shortInstrumentName = "Cor. E"
+	\set Staff.midiInstrument = #""
+}
+nameGrandStaffIVMvtII = {
+	\set Staff.instrumentName = "Tromboni"
+	\set Staff.shortInstrumentName = "Trbni"
+	\set Staff.midiInstrument = #""
+}
+nameGrandStaffVMvtII = {
+	\set Staff.instrumentName = "Arpa"
+	\set Staff.shortInstrumentName = "Arpa"
+	\set Staff.midiInstrument = #""
+}
+nameGrandStaffVIMvtII = {
+	\set Staff.instrumentName = "Violini"
+	\set Staff.shortInstrumentName = "Viol."
+	\set Staff.midiInstrument = #""
+}
+%###############################################################################
+%#             G R A N D   S T A F F   N A M E   :   M V T   I I I             #
+%###############################################################################
+nameGrandStaffIMvtIII = {
+	\set Staff.instrumentName = "Flauti"
+	\set Staff.shortInstrumentName = "Fl."
+	\set Staff.midiInstrument = #""
+}
+nameGrandStaffIIMvtIII = {
+	\set Staff.instrumentName = "Corni F"
+	\set Staff.shortInstrumentName = "Cor."
+	\set Staff.midiInstrument = #""
+}
+nameGrandStaffIIIMvtIII = {
+	\set Staff.instrumentName = ""
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #""
+}
+nameGrandStaffIVMvtIII = {
+	\set Staff.instrumentName = "Violini"
+	\set Staff.shortInstrumentName = "Viol."
+	\set Staff.midiInstrument = #""
+}
