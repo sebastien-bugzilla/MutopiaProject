@@ -6,15 +6,128 @@
 %###############################################################################
 
 
+%--------------------
+% dynamics ppp
+%--------------------
+
+%--------------------
+% dynamics pp
+%--------------------
+ppcrescpocoapoco = \markup {\dynamic pp \italic "cresc. poco a poco"}
+brackpppocoapococresc = \markup {
+	\bracket \with-true-dimensions \dynamic pp
+	\italic "poco a poco cresc."
+}
+%--------------------
+% dynamics p
+%--------------------
+pcresc = \markup {\dynamic p \italic "cresc."}
+%--------------------
+% dynamics mp
+%--------------------
+
+%--------------------
+% dynamics mf
+%--------------------
+
+%--------------------
+% dynamics fz
+%--------------------
+fzpocoapococresc = \markup { \dynamic fz \italic "poco a poco cresc."}
+fzmarkup = \markup {\dynamic fz}
+%--------------------
+% dynamics fzp
+%--------------------
+fzp = \markup {\dynamic fzp}
+fzpD = #(make-dynamic-script "fzp")
+%--------------------
+% dynamics fpp
+%--------------------
+fzp = \markup {\dynamic fpp}
+fppD = #(make-dynamic-script "fpp")
+%--------------------
+% dynamics fp
+%--------------------
+fpdim = \markup { \dynamic fp \italic "dim."}
+fpsempredim = \markup {\dynamic fp \italic "sempre dim."}
+fppocoapococrescendo = \markup {\dynamic fp \italic "poco a poco crescendo"}
+brackfppocoapococresc = \markup {
+	\bracket \with-true-dimensions \dynamic fp
+	\italic "poco a poco cresc."
+}
+%--------------------
+% dynamics f
+%--------------------
+
+%--------------------
+% dynamics ff
+%--------------------
+
+%--------------------
+% dynamics ffz
+%--------------------
+
+%--------------------
+% dynamics fff
+%--------------------
 
 
 
+%--------------------
+% dynamics text
+%--------------------
+crescmarkup = \markup {\italic cresc.}
+dimmarkup = \markup {\italic dim.}
+pocoapococresc = \markup {\italic "poco a poco cresc."}
+brackpocoapococresc = \markup { \italic { \bracket \with-true-dimensions  "poco a poco" cresc }}
+pocoapococrescendo = \markup {\italic "poco a poco crescendo"}
+
+%--------------------
+% text indications
+%--------------------
+solo = \markup {Solo}
+soli = \markup {Soli}
+
+%--------------------
+% functions
+%--------------------
+
+brack = #(define-event-function 
+	(dyn) (ly:event?)
+	(make-dynamic-script
+	#{
+		\markup {
+			\bracket \with-true-dimensions #(ly:music-property dyn 'text)
+		}
+	#}
+	)
+)
+
+#(define-markup-command (bracketMarkup layout props text) (markup?)
+	(interpret-markup layout props
+		#{
+			\markup \concat { 
+				\bracket \with-true-dimensions #text
+			}
+		#}
+	)
+)
+brackM = -\markup \bracketMarkup \etc
+
+mmrPos = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)
+
+omitFlag = \once \omit Flag
+omitBeam = \once \omit Beam
+omitDots = \once \omit Dots
 
 
-
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %aIIXoffset = #(define-music-function
 %	(offset)
 %	(number?)
@@ -182,14 +295,6 @@
 %	\once \override Score.RehearsalMark.whiteout-style = #'outline
 %}
 
-%mmrPos = #(define-music-function
-%	(position)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.staff-position = #(- position 2)
-%	#}
-%)
-
 %mmrnDown = {
 %	\once \override MultiMeasureRestNumber.direction = #-1 
 %}
@@ -214,9 +319,6 @@
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 %omitMMRN = \omit MultiMeasureRestNumber
-%omitFlag = \once \omit Flag
-%omitBeam = \once \omit Beam
-%omitDots = \once \omit Dots
 
 
 %mmrEO = #(define-music-function

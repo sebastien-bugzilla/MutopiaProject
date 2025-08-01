@@ -12,7 +12,7 @@
 	title = \markup { 
 		\abs-fontsize #18 \sans
 		\center-column {
-			Symphony No. 3 in E-flat Major Op.10 (B.34)
+			"Symphony No. 3 in" "E-flat Major Op.10 (B.34)"
 		}
 	}
 	copyright = \markup {

@@ -10,7 +10,7 @@
 %	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatBarType = #":|.|:"
 	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
-	\set Voice.restNumberThreshold = #0
+%	\set Voice.restNumberThreshold = #0
 	\set Staff.soloText = #"I"
 	\set Staff.soloIIText = #"II"
 	\set Staff.aDueText = #"a2"
@@ -19,13 +19,13 @@
 	\context {
 		\Score
 %		scriptDefinitions = #my-script-alist
-		\override MetronomeMark.font-size = #2
-		\override RehearsalMark.font-size = #6
+		\override MetronomeMark.font-size = #0 % 2
+		\override RehearsalMark.font-size = #4 % 6
 		\override RehearsalMark.extra-spacing-width = #'(-0.1 . 0.1)
 		\override RehearsalMark.extra-spacing-height = #'(-10 . 10)
 		\override RehearsalMark.outside-staff-priority = ##f
 %		\override RehearsalMark.font-family = #'sans
-		\override BarNumber.font-size = #3
+		\override BarNumber.font-size = #1 % 3
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
 %		\override Beam.damping = #3
