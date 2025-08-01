@@ -22,8 +22,8 @@ musicOboeIMvtI = \relative c {
 	ees4.( d16 ees f ees d ees)
 % Bars 11 to 15
 	c'4.~ c4~ c16 ees,
-	f4(\< des'16\!)[ r32 c-.] c4( bes8)
-	bes4(\<_\crescmarkup ges'16)\![ r32 f-.] f4( ees8)
+	f4(\< des'16\!)[ c32\rest c-.] c4( bes8)
+	bes4(\<_\crescmarkup ges'16)\![ f32\rest f-.] f4( ees8)
 	ees4.(~ ees16 d f ees ces aes)
 	ges4._\brackM\dimmarkup f4( bes8)
 % Bars 16 to 20

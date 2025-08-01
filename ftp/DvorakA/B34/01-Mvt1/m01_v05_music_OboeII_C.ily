@@ -18,10 +18,10 @@ musicOboeIIMvtI = \relative c {
 	
 	
 	ees'4.(\brack\pp d16 ees f ees\< d ees)
-	<< ees4( {s8 s\!}>> aes16)[ r32 g-.] f4(\> ees8)\!
+	<< ees4( {s8 s\!}>> aes16)[ g32\rest g-.] f4(\> ees8)\!
 	ees4.( d16 ees f\< ees d ees)\!
 % Bars 11 to 15
-	ees4(\brack\fz aes16)[ r32 g-.] f4(\> ees8)\!
+	ees4(\brack\fz aes16)[ g32\rest g-.] f4(\> ees8)\!
 	f2.
 	bes
 	ges4.\fz g4( aes8)

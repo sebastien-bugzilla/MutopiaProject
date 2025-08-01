@@ -22,6 +22,11 @@ brackpppocoapococresc = \markup {
 % dynamics p
 %--------------------
 pcresc = \markup {\dynamic p \italic "cresc."}
+pmarcato = \markup {\dynamic p \italic "marcato"}
+brackpcrescpocoapoco = \markup {
+	\bracket \with-true-dimensions \dynamic p
+	\italic "cresc. poco a poco"
+}
 %--------------------
 % dynamics mp
 %--------------------

@@ -84,18 +84,19 @@
 %						\timeMvtI \nameStaffIIMvtI \musicFlautoIIMvtI
 %					}
 %				>>
-				\new Staff {
-					\timeMvtI \nameStaffIIIMvtI
-					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
-%					\musicOboeIIMvtI 
-				}
+%				\new Staff {
+%					\timeMvtI \nameStaffIIIMvtI
+%					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
+%%					\musicOboeIIMvtI 
+%				}
 %				\new Staff {
 %					\timeMvtI \nameStaffIVMvtI \musicCornoIngleseMvtI
 %				}
-%				\new Staff {
-%					\timeMvtI \nameStaffVMvtI
+				\new Staff {
+					\timeMvtI \nameStaffVMvtI
 %					\partCombine \musicClarinettoIMvtI \musicClarinettoIIMvtI
-%				}
+					\musicClarinettoIMvtI 
+				}
 %				\new Staff {
 %					\timeMvtI \nameStaffVIMvtI
 %					\partCombine \musicFagottoIMvtI \musicFagottoIMvtI
