@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFagottoIMvtIII = \relative c {
+musicFagottoIIMvtIII = \relative c {
 	\clef bass
 	\key ees \major
 %	\transposition a

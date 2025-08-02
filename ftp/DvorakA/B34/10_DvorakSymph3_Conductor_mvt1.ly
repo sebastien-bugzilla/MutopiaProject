@@ -31,7 +31,7 @@
 \include "./01-Mvt1/m01_v07_music_ClarinettoI_C.ily"
 \include "./01-Mvt1/m01_v08_music_ClarinettoII_C.ily"
 \include "./01-Mvt1/m01_v09_music_FagottoI.ily"
-\include "./01-Mvt1/m01_v10_music_FagottoI.ily"
+\include "./01-Mvt1/m01_v10_music_FagottoII.ily"
 \include "./01-Mvt1/m01_v11_music_CornoI.ily"
 \include "./01-Mvt1/m01_v12_music_CornoII.ily"
 \include "./01-Mvt1/m01_v13_music_CornoIII.ily"

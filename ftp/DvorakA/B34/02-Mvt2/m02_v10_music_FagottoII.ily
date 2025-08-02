@@ -4,9 +4,9 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFagottoIMvtI = \relative c {
+musicFagottoIIMvtII = \relative c {
 	\clef bass
-	\key ees \major
+	\key cis \minor
 %	\transposition a
 % Bars 1 to 5
 	
@@ -116,34 +116,6 @@ musicFagottoIMvtI = \relative c {
 	
 % Bars 266 to 270
 	
-% Bars 271 to 275
-	
-% Bars 276 to 280
-	
-% Bars 281 to 285
-	
-% Bars 286 to 290
-	
-% Bars 291 to 295
-	
-% Bars 296 to 300
-	
-% Bars 301 to 305
-	
-% Bars 306 to 310
-	
-% Bars 311 to 315
-	
-% Bars 316 to 320
-	
-% Bars 321 to 325
-	
-% Bars 326 to 330
-	
-% Bars 331 to 335
-	
-% Bars 336 to 340
-	
-% Bars 341 to 343
+% Bars 271 to 273
 	
 }
