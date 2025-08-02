@@ -28,8 +28,8 @@
 \include "./01-Mvt1/m01_v04_music_OboeI_C.ily"
 \include "./01-Mvt1/m01_v05_music_OboeII_C.ily"
 \include "./01-Mvt1/m01_v06_music_CornoInglese.ily"
-\include "./01-Mvt1/m01_v07_music_ClarinettoI.ily"
-\include "./01-Mvt1/m01_v08_music_ClarinettoII.ily"
+\include "./01-Mvt1/m01_v07_music_ClarinettoI_C.ily"
+\include "./01-Mvt1/m01_v08_music_ClarinettoII_C.ily"
 \include "./01-Mvt1/m01_v09_music_FagottoI.ily"
 \include "./01-Mvt1/m01_v10_music_FagottoI.ily"
 \include "./01-Mvt1/m01_v11_music_CornoI.ily"
@@ -67,41 +67,41 @@
 	}
 	\score {
 		<<
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
-%					\new Staff <<
-%%						\new Voice {
-%%							\formatConductorMvtI
-%%						}
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
+					\new Staff <<
 %						\new Voice {
-%							\tempiMvtI
+%							\formatConductorMvtI
 %						}
-%						\new Voice {
-%							\timeMvtI \nameStaffIMvtI \musicFlautoIMvtI
-%						}
-%					>>
-%					\new Staff {
-%						\timeMvtI \nameStaffIIMvtI \musicFlautoIIMvtI
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtI \nameStaffIIIMvtI
-%					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
-%%					\musicOboeIIMvtI 
-%				}
-%				\new Staff {
-%					\timeMvtI \nameStaffIVMvtI \musicCornoIngleseMvtI
-%				}
+						\new Voice {
+							\tempiMvtI
+						}
+						\new Voice {
+							\timeMvtI \nameStaffIMvtI \musicFlautoIMvtI
+						}
+					>>
+					\new Staff {
+						\timeMvtI \nameStaffIIMvtI \musicFlautoIIMvtI
+					}
+				>>
+				\new Staff {
+					\timeMvtI \nameStaffIIIMvtI
+					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
+%					\musicOboeIIMvtI 
+				}
+				\new Staff {
+					\timeMvtI \nameStaffIVMvtI \musicCornoIngleseMvtI
+				}
 				\new Staff {
 					\timeMvtI \nameStaffVMvtI
-%					\partCombine \musicClarinettoIMvtI \musicClarinettoIIMvtI
-					\musicClarinettoIMvtI 
+					\partCombine \musicClarinettoIMvtI \musicClarinettoIIMvtI
+%					\musicClarinettoIIMvtI 
 				}
 %				\new Staff {
 %					\timeMvtI \nameStaffVIMvtI
 %					\partCombine \musicFagottoIMvtI \musicFagottoIMvtI
 %				}
-%			>>
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
 %					\new Staff {

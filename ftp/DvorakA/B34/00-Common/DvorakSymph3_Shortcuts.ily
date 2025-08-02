@@ -18,6 +18,9 @@ brackpppocoapococresc = \markup {
 	\bracket \with-true-dimensions \dynamic pp
 	\italic "poco a poco cresc."
 }
+pbrackp = \markup {
+	\concat { \dynamic p \bracket \with-true-dimensions \dynamic p }
+}
 %--------------------
 % dynamics p
 %--------------------
@@ -26,6 +29,13 @@ pmarcato = \markup {\dynamic p \italic "marcato"}
 brackpcrescpocoapoco = \markup {
 	\bracket \with-true-dimensions \dynamic p
 	\italic "cresc. poco a poco"
+}
+pmarc = \markup {\dynamic p \italic "marc."}
+pcrescpocoapoco = \markup { \dynamic p \italic "cresc. poco a poco"}
+pbrackpocoapococresc = \markup {
+	\dynamic p \italic {
+		\bracket \with-true-dimensions "poco a poco" cresc.
+	}
 }
 %--------------------
 % dynamics mp
@@ -40,6 +50,8 @@ brackpcrescpocoapoco = \markup {
 %--------------------
 fzpocoapococresc = \markup { \dynamic fz \italic "poco a poco cresc."}
 fzmarkup = \markup {\dynamic fz}
+fffz = \markup {\hspace #-3.3 \concat { \dynamic ff \hspace #0.4 \dynamic fz }}
+fzsempredim = \markup {\dynamic fz \italic "sempre dim."}
 %--------------------
 % dynamics fzp
 %--------------------
@@ -86,7 +98,8 @@ dimmarkup = \markup {\italic dim.}
 pocoapococresc = \markup {\italic "poco a poco cresc."}
 brackpocoapococresc = \markup { \italic { \bracket \with-true-dimensions  "poco a poco" cresc }}
 pocoapococrescendo = \markup {\italic "poco a poco crescendo"}
-
+pococresc = \markup {\italic "poco cresc."}
+leggiero = \markup {\italic "leggiero"}
 %--------------------
 % text indications
 %--------------------
