@@ -1,4 +1,4 @@
-   161    484   5297 10_DvorakSymph3_Conductor_mvt1.ly
+   162    485   5336 10_DvorakSymph3_Conductor_mvt1.ly
    171    461   5623 10_DvorakSymph3_Conductor_mvt2.ly
    165    440   5514 10_DvorakSymph3_Conductor_mvt3.ly
    219    513   4803 20_DvorakSymph3_Part01_Flauti.ly
@@ -42,7 +42,7 @@
    565   1956  16360 00-Common/DvorakSymph3_NameVoice.ily
     67    188   1612 00-Common/DvorakSymph3_PaperConductors.ily
     65    186   1554 00-Common/DvorakSymph3_PaperParts.ily
-   584   1650  12696 00-Common/DvorakSymph3_Shortcuts.ily
+   593   1684  12908 00-Common/DvorakSymph3_Shortcuts.ily
     64    184   1370 00-Common/DvorakSymph3_Tempi.ily
     15     65    464 00-Common/DvorakSymph3_timeMvt.ily
    386   1738   8737 01-Mvt1/m01_v02_music_FlautoI.ily
@@ -56,8 +56,10 @@
    419   1957   9523 01-Mvt1/m01_v07_music_ClarinettoI.ily
    417   1720   8094 01-Mvt1/m01_v08_music_ClarinettoII_C.ily
    415   1698   8117 01-Mvt1/m01_v08_music_ClarinettoII.ily
-   149    399   1805 01-Mvt1/m01_v09_music_FagottoI.ily
-   149    399   1805 01-Mvt1/m01_v10_music_FagottoI.ily
+   416   1770   9566 01-Mvt1/m01_v09_music_FagottoI_C.ily
+   416   1704   8727 01-Mvt1/m01_v09_music_FagottoI.ily
+   416   1570   7814 01-Mvt1/m01_v10_music_FagottoII_C.ily
+   416   1570   7993 01-Mvt1/m01_v10_music_FagottoII.ily
    149    399   1803 01-Mvt1/m01_v11_music_CornoI.ily
    149    399   1804 01-Mvt1/m01_v12_music_CornoII.ily
    149    399   1805 01-Mvt1/m01_v13_music_CornoIII.ily
@@ -81,7 +83,7 @@
    121    329   1529 02-Mvt2/m02_v07_music_ClarinettoI.ily
    121    329   1530 02-Mvt2/m02_v08_music_ClarinettoII.ily
    121    329   1526 02-Mvt2/m02_v09_music_FagottoI.ily
-   121    329   1526 02-Mvt2/m02_v10_music_FagottoI.ily
+   121    329   1527 02-Mvt2/m02_v10_music_FagottoII.ily
    121    329   1524 02-Mvt2/m02_v11_music_CornoI.ily
    121    329   1525 02-Mvt2/m02_v12_music_CornoII.ily
    121    329   1526 02-Mvt2/m02_v13_music_CornoIII.ily
@@ -107,7 +109,7 @@
    315    814   3470 03-Mvt3/m03_v07_music_ClarinettoI.ily
    315    814   3471 03-Mvt3/m03_v08_music_ClarinettoII.ily
    315    814   3467 03-Mvt3/m03_v09_music_FagottoI.ily
-   315    814   3467 03-Mvt3/m03_v10_music_FagottoI.ily
+   315    814   3468 03-Mvt3/m03_v10_music_FagottoII.ily
    315    814   3465 03-Mvt3/m03_v11_music_CornoI.ily
    315    814   3466 03-Mvt3/m03_v12_music_CornoII.ily
    315    814   3467 03-Mvt3/m03_v13_music_CornoIII.ily
@@ -125,4 +127,4 @@
    315    814   3464 03-Mvt3/m03_v27_music_Viola.ily
    315    814   3470 03-Mvt3/m03_v28_music_Violoncello.ily
    315    814   3470 03-Mvt3/m03_v29_music_Contrabasso.ily
- 24038  71802 410151 total
+ 25414  77653 440894 total

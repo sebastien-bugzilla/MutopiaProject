@@ -60,7 +60,7 @@ fzpD = #(make-dynamic-script "fzp")
 %--------------------
 % dynamics fpp
 %--------------------
-fzp = \markup {\dynamic fpp}
+fpp = \markup {\dynamic fpp}
 fppD = #(make-dynamic-script "fpp")
 %--------------------
 % dynamics fp
@@ -72,6 +72,7 @@ brackfppocoapococresc = \markup {
 	\bracket \with-true-dimensions \dynamic fp
 	\italic "poco a poco cresc."
 }
+fppocoapococresc = \markup {\dynamic fp \italic "poco a poco cresc."}
 %--------------------
 % dynamics f
 %--------------------
@@ -144,6 +145,14 @@ omitFlag = \once \omit Flag
 omitBeam = \once \omit Beam
 omitDots = \once \omit Dots
 
+liiri = {
+	\set stemLeftBeamCount = #2
+	\set stemRightBeamCount = #1
+}
+lirii = {
+	\set stemLeftBeamCount = #1
+	\set stemRightBeamCount = #2
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %aIIXoffset = #(define-music-function

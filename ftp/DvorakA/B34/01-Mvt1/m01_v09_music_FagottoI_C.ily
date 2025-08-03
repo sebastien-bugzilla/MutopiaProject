@@ -12,7 +12,7 @@ musicFagottoIMvtI = \relative c {
 	bes'2.\p~
 	bes~
 	bes
-	bes4.~ bes4 ees,16-> f->
+	\partCombineApart bes4.~ bes4 ees,16-> f->
 	g8->\< aes-> bes-> c->[ d-> r16 ees->]
 % Bars 6 to 10
 	ees4.(~\fz\> ees8. d16 f ees)\!
@@ -24,28 +24,28 @@ musicFagottoIMvtI = \relative c {
 	c4\brack\fz( aes16)[ r32 g-.] f4(\> ees8)\!
 	f4(\< des'16)\![ r32 c-.] c4( bes8)
 	bes4(\<_\crescmarkup ges'16)\![ r32 f-.] f4( ees8)
-	ees4.(~\fz ees16 d f ees ces aes)
+	ees4.(~ ees16 d f ees ces aes)
 	bes4._\brackM\dimmarkup aes\p
 % Bars 16 to 20
-	g!4.->\ff d16( ees f ees d ees)
-	bes'4.-^\fz f16( ges aes ges f ges)
-	des'4.-^\fz c16( des ees des c des)
-	\time 3/8 ges,4.->\ff
+	g!4.-> d16( ees f ees d ees)
+	bes'4.-^ f16( ges aes ges f ges)
+	des'4.-^ c16( des ees des c des)
+	\time 3/8 ges,4.-> \partCombineAutomatic
 	\time 3/4 aes8-^ r g!-^ r f-^ r
 % Bars 21 to 25
 	\time 6/8 f\< g aes g aes bes\!
 	\time 3/4 aes-^ r g-^ r f-^ r
-	\time 6/8 g\< aes bes aes a bes\! \mark \default
+	\time 6/8 \partCombineApart \stemDown \omitBeam g aes bes \stemUp aes a bes \partCombineAutomatic \mark \default
 	c,4.\fz r4 r8
 	c4.\fz r4 r8
 % Bars 26 to 30
-	des'4.(\> c16 des f ees des f,)\!
-	ges4\p r8 r4 r8
+	\partCombineApart des'4.( c16 des f ees des f,)
+	ges4 \partCombineAutomatic r8 r4 r8
 	R2.*2
 	
-	\clef tenor ees'4.(\p << des {s8\< s s\!}>>
+	\clef tenor \partCombineApart ees'4.( << des {s8 s s}>>
 % Bars 31 to 35
-	ees2.)_\brackM\crescmarkup \clef bass
+	ees2.)_\brackM\crescmarkup \partCombineAutomatic \clef bass
 	ges,4.->\ff~ ges8 f4->
 	ges4->\< aes8->~ aes ges-> f->\!
 	ees4.->\ff~ ees8 f4->
@@ -59,11 +59,11 @@ musicFagottoIMvtI = \relative c {
 % Bars 41 to 45
 	\time 6/8 aes->\< bes-> ces-> c-> des-> d->\!
 	\time 3/8 ees->\< f-> ges->\! \mark \default
-	\time 6/8 g!4\fz des'16.-. c32-. c4->( bes8)
-	bes4\fz des16.-. c32-. c4->( bes8)
-	c4\fz ees16.-. d!32-. d4->( c8)
+	\time 6/8 \partCombineApart g!4 des'16.-. c32-. c4->( bes8)
+	bes4 des16.-. c32-. c4->( bes8)
+	c4 ees16.-. d!32-. d4->( c8)
 % Bars 46 to 50
-	c4\fz ees16.-. d32-. d4->( c8)
+	c4 ees16.-. d32-. d4->( c8) \partCombineAutomatic
 	r r ees16.-> d32-. d8([ c)] ees16.-> d32-.
 	d8([ c)] ees16.-> d32-. d8( c) ees(
 	c) ees( c) ees( c) ees
@@ -73,9 +73,9 @@ musicFagottoIMvtI = \relative c {
 	g2.\ff~
 	g
 	<< g {s8 s s  s\< s s\!}>>
-	g2.->~
+	\partCombineApart g2.->~
 % Bars 56 to 60
-	g4. << aes {s8 s s\!}>>
+	g4. << aes {s8 s s\!}>> \partCombineAutomatic
 	<< g2. {s4. s8\< s s\!}>>
 	aes2.\fz
 	<< g {s4. s8\< s s\!}>>
@@ -91,9 +91,9 @@ musicFagottoIMvtI = \relative c {
 	a\ff~
 	a~
 	a8 r r r4 r8
-	r4 r8 r4 c16(\p d
+	\partCombineApart r4 r8 r4 c16(\p d
 % Bars 71 to 75
-	ees8) r r r4 r8
+	ees8) r r r4 r8 \partCombineAutomatic
 	R2.*4
 % Bars 76 to 80
 	ces2.\pp \mark \default
@@ -106,10 +106,10 @@ musicFagottoIMvtI = \relative c {
 	<< ces( {s8 s s  s s s\!}>>
 	<< des2. {s8 s s  s s s\!}>>
 	ges,4)\brack\pp r8 r4 r8
-	r4 r8 f'16(\p ges\< aes ges f ges
+	\partCombineApart r4 r8 f'16(\p ges\< aes ges f ges
 % Bars 86 to 90
 	ees'4.\> des4)\! r8
-	r4 r8 g,!16(\p\< aes bes aes g aes)\!
+	r4 r8 g,!16(\p\< aes bes aes g aes)\! \partCombineAutomatic
 	ces4.->(\fz\< << bes) {s8 s s\!}>>
 	aes4.(\> ges4 ees8)\!
 	des2.\p
@@ -128,12 +128,12 @@ musicFagottoIMvtI = \relative c {
 % Bars 101 to 105
 	c4.->~ c8 d4->
 	ees f8~ f ees-. d-.
-	ees-. r r r4 r8 \clef tenor
-	ges'2.\fz
+	\once \partCombineApart ees-. r r r4 r8 \clef tenor
+	\partCombineApart ges'2.\fz
 	f\fz~
 % Bars 106 to 110
-	f
-	des_\fppocoapococresc~
+	f \partCombineAutomatic
+	des_\fppocoapococresc~ 
 	des
 	<< d!->~ {s8\< s s  s s s\!}>>
 	d2.
@@ -142,57 +142,57 @@ musicFagottoIMvtI = \relative c {
 	<< d2.~ {s8 s s  s s s\!}>>
 	d4\brack\ff r8 r4 r8
 	R2. \clef bass
-	R2.*3
+	\partCombineApart \mmrPos #6 R2.
 % Bars 116 to 120
-	
-	
+	\mmrPos #6 R
+	R \partCombineAutomatic
 	ges,2.\pp~
 	ges~
 	ges~
 % Bars 121 to 125
 	ges~
 	ges4 r8 r4 r8
-	bes2.\p(
-	<< ces {s8\< s s\! s\> s s\!}>>
+	\partCombineApart bes2.(
+	<< ces {s8 s s s s s}>>
 	bes4)\pp r8 r4 r8
 % Bars 126 to 130
-	R2.*3
-	
-	
+	\mmrPos #6 R2.
+	\mmrPos #6 R
+	\mmrPos #6 R \partCombineAutomatic
 	b2.\fp~
 	<< b {s8\< s s  s s s\!}>>
 % Bars 131 to 135
-	a4 a16(\p gis a8) b-. c-.\<
-	c-. d-. e-.\> e-.\! r r 
+	a4 \partCombineApart a16( gis a8) b-. c-.
+	\stemDown \omitBeam c-. d-. e-. \omitFlag e-. \partCombineAutomatic r r 
 	r4 r8 \clef tenor b-.\< c-. d~
 	d\! c-. b-.\> a-. g-. fis-.\!
-	e4\brack\p r8 r4 r8
+	\once \partCombineApart \stemUp e4 r8 r4 r8
 % Bars 136 to 140
 	R2.*3
 	
 	\clef bass
-	b16(\p^\leggiero dis e dis e fis g\< e fis g a fis)
-	g( a\! b g a b c\> b d c b a)\!
+	\partCombineApart b16(^\leggiero dis e dis e fis g e fis g a fis)
+	g( a b g a b c b d c b a)
 % Bars 141 to 145
-	g(\< a b c d e fis\> g fis e d c)\!
-	b(\> d c b a g fis e d c b a)\!
-	d2.\pp~
+	g( a b c d e fis g fis e d c)
+	b( d c b a g fis e d c b a)
+	d2.~
 	d~
 	d~
 % Bars 146 to 150
-	<< d {s4. s8\< s s\!}>>
+	<< d {s4. s8 s s}>> \partCombineAutomatic
 	c2.\fz~
 	<< c {s8\< s s  s s s\!}>>
 	bes!2.\ff~
 	bes4.\> << des( {s8 s s\!}>>
 % Bars 151 to 155
-	c8)\p r r aes'4.(
+	c8)\p r r \partCombineChords aes'4.(
 	<< bes2.) {s8\> s s  s s s\!}>>
-	aes2.\pp~
+	\partCombineApart aes2.~
 	aes
 	aes~
 % Bars 156 to 160
-	aes
+	aes \partCombineAutomatic
 	ees4_\brackM\pococresc des8~ des c-. bes-.
 	f'4 ees8~ ees des-. c-.
 	ges'4-> f-> ees-> 
@@ -206,7 +206,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 166 to 170
 	des4.\fz r4 r8
 	ees4.\fz r4 r8 \mark \default
-	e,8\brack\fz r r r4 r8
+	\once \partCombineApart e,8 r r r4 r8
 	R2.*2
 	
 % Bars 171 to 175
@@ -240,19 +240,19 @@ musicFagottoIMvtI = \relative c {
 	des4(-> bes8) r4 r8
 	R2.*2
 	
-	cis4.\mf bis16(\< cis d cis bis cis)
+	\partCombineApart cis4.\mf bis16(\< cis d cis bis cis)
 % Bars 201 to 205
 	e2.\!
 	cis4.\> bis16(\! cis d cis bis cis)
 	<< g!2.->~ {s8\< s s  s s s\!}>>
-	<< g2. {s8\> s s  s s s\!}>>
+	<< g2. {s8\> s s  s s s\!}>> \partCombineAutomatic
 	R2.
 % Bars 206 to 210
-	d'4.(\mf cis16 d ees! d cis d)
+	\partCombineApart d'4.(\mf cis16 d ees! d cis d)
 	f2.-^
 	d4.( cis16 d ees d cis d)
 	aes!2.\brack\fz~
-	aes
+	aes \partCombineAutomatic
 % Bars 211 to 215
 	bes8-._\pcrescpocoapoco ces-. ges-. bes-. ces-. bes-.
 	bes-. ces-. ges-. bes-. ces-. ges-.
@@ -264,7 +264,7 @@ musicFagottoIMvtI = \relative c {
 	d
 	c-^~
 	c
-	d4.(\fz b)
+	d4.(\fz b!)
 % Bars 221 to 225
 	e(\fz c)
 	f->\fz d->
@@ -275,18 +275,18 @@ musicFagottoIMvtI = \relative c {
 	\time 3/4 bes-. r bes-. r bes-. r
 	\time 6/8 << aes'2.~ {s8\> s s  s s s\!}>>
 	aes4 r8 r4 r8
-	\time 3/8 aes4.\pp(
+	\time 3/8 \partCombineApart aes4.(
 	\time 6/8 g) d16( ees f ees d ees)
 % Bars 231 to 235
 	bes'4.~ bes4 ees,16-. f-.
 	g8-> aes-> bes->_\brackM\crescmarkup c->[ d-> r16 ees-.]
 	ees4.(~_\fzsempredim ees8. d16 f ees
 	d4. c)
-	bes4.(\brack\p d,16 ees f ees d ees)
+	bes4.( d,16 ees f ees d ees)
 % Bars 236 to 240
 	c'2.
-	bes4.(\brack\pp d,16 ees f ees d ees)
-	c'4.(~ c4 ees,8)
+	bes4.( d,16 ees f ees d ees)
+	c'4.(~ c4 ees,8) \partCombineAutomatic
 	g2.->_\pocoapococrescendo
 	ges
 % Bars 241 to 245
@@ -298,14 +298,14 @@ musicFagottoIMvtI = \relative c {
 % Bars 246 to 250
 	<< c {s8 s s  s s s\!}>>
 	c8-.\fz r r r4 r8
-	dis2.(\fp
+	\partCombineApart dis2.(\fp
 	d!8) r r r4 r8
-	f2.\fp(
+	f2.(
 % Bars 251 to 255
 	d!~
 	d)
-	<< d(~ {s4. s\<}>>
-	<< d4. {s8 s s\!}>> c4 a8) \mark \default
+	<< d(~ {s4. s}>>
+	<< d4. {s8 s s}>> c4 a8) \partCombineAutomatic \mark \default
 	cis2.\fp~
 % Bars 256 to 260
 	cis4.~ cis4 cis8\pp
@@ -322,7 +322,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 266 to 270
 	R2.*2
 	
-	b4.\pp~ b4 b8-.
+	\partCombineApart b4.\pp~ b4 b8-.
 	c!2.
 	b4.~ b8. b16-. b-. b-.
 % Bars 271 to 275
@@ -330,7 +330,7 @@ musicFagottoIMvtI = \relative c {
 	b4.~ b8. b16-. b-. b-.
 	b4.-! b-!
 	bes!~ bes8. bes16-. bes-. bes-.
-	bes4.\<_\pocoapococresc << bes {s8 s s\!}>>
+	bes4.\<_\pocoapococresc << bes {s8 s s\!}>> \partCombineAutomatic
 % Bars 276 to 280
 	c4.\brack\p~ c8. c16-. c-. c-.
 	c4. c

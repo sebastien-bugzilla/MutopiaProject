@@ -23,14 +23,14 @@ musicFagottoIIMvtI = \relative c {
 % Bars 11 to 15
 	aes2.
 	g
-	ges_\crescmarkup
+	ges
 	ces\fz
-	bes_\brackM\dimmarkup 
+	bes 
 % Bars 16 to 20
-	ees4.->\ff d16( ees f ees d ees)
-	ges4.-^\fz f16( ges aes ges f ges)
-	f4.-^\fz c'16( des ees des c des)
-	\time 3/8 ges,4.->\ff
+	ees4.\ff d16( ees f ees d ees)
+	ges4.\fz f16( ges aes ges f ges)
+	f4.\fz c'16( des ees des c des)
+	\time 3/8 ges,4.\ff
 	\time 3/4 f8-^ r ees-^ r d!-^ r
 % Bars 21 to 25
 	\time 6/8 d\< ees f ees f g\!
@@ -45,7 +45,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	\clef tenor << bes2.(\p  {s4. s8\< s s\!}>>
 % Bars 31 to 35
-	ces4._\brackM\crescmarkup bes) \clef bass
+	ces4. bes) \clef bass
 	ees,4.->\ff~ ees8 des4->
 	ees4->\< f8->~ f ees-> des->\!
 	c4.->\ff~ c8 des4->
@@ -133,7 +133,7 @@ musicFagottoIIMvtI = \relative c {
 	
 % Bars 106 to 110
 	
-	aes!2._\fppocoapococresc~
+	aes!2.~
 	aes
 	<< b->~ {s8\< s s  s s s\!}>>
 	b2.
@@ -163,7 +163,7 @@ musicFagottoIIMvtI = \relative c {
 	<< gis {s8\< s s  s s s\!}>>
 % Bars 131 to 135
 	a4 a'16(\p gis a8) gis!-. a-.\<
-	a-. b-. c-.\> c-.\! r r 
+	a b c\> c\! r r 
 	r4 r8 \clef tenor g-.\< a-. b~
 	b\! a-. g-.\> fis-. e-. dis-.\!
 	e4\brack\p r8 r4 r8
@@ -211,7 +211,7 @@ musicFagottoIIMvtI = \relative c {
 	
 % Bars 171 to 175
 	<< f,2.\fz\>~ {s8 s s  s s s\!}>>
-	f2._\dimmarkup
+	f2.
 	e'8-.\pp e-. e-. r4 r8
 	e8-. e-. e-. r4 r8
 	e8-. e-. e-. r4 r8
@@ -279,15 +279,15 @@ musicFagottoIIMvtI = \relative c {
 	\time 6/8 ees4) r8 ees4 r16 bes
 % Bars 231 to 235
 	ees4 r8 ees4 r16 bes
-	d4 r8_\brackM\crescmarkup c4 r16 g
-	c2.(_\fzsempredim
+	d4 r8 c4 r16 g
+	c2.(
 	bes4. aes)
 	g4.\brack\p~ g4 ees8
 % Bars 236 to 240
 	aes2.
 	g\brack\pp
 	aes
-	g->_\pocoapococrescendo
+	g->
 	ges
 % Bars 241 to 245
 	f(
@@ -378,7 +378,7 @@ musicFagottoIIMvtI = \relative c {
 	bes!\fz)
 	g4.(\p\< aes
 	a << bes) {s8 s s\!}>>
-	aes!2._\pcresc~
+	aes!2.~
 % Bars 316 to 320
 	aes4. aes8-.\fz r r
 	g4.-^\ff r4 r8
@@ -399,7 +399,7 @@ musicFagottoIIMvtI = \relative c {
 	bes4. bes,8-^\f bes-^ bes-^
 % Bars 331 to 335
 	R2.
-	r4 r8 g'4._\pbrackpocoapococresc~
+	r4 r8 g'4.~
 	g2.~
 	g~
 	<< g {s8\< s s  s s s\!}>>
