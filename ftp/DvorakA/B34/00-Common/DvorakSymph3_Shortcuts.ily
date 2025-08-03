@@ -73,6 +73,7 @@ brackfppocoapococresc = \markup {
 	\italic "poco a poco cresc."
 }
 fppocoapococresc = \markup {\dynamic fp \italic "poco a poco cresc."}
+fbrackp = \markup {\dynamic f \bracket \with-true-dimensions \dynamic p}
 %--------------------
 % dynamics f
 %--------------------
@@ -101,11 +102,14 @@ brackpocoapococresc = \markup { \italic { \bracket \with-true-dimensions  "poco 
 pocoapococrescendo = \markup {\italic "poco a poco crescendo"}
 pococresc = \markup {\italic "poco cresc."}
 leggiero = \markup {\italic "leggiero"}
+marcato = \markup {\italic "marcato"}
+dimp = \markup {\italic "dim." \dynamic p}
 %--------------------
 % text indications
 %--------------------
 solo = \markup {Solo}
 soli = \markup {Soli}
+aII = \markup {\bold a2}
 
 %--------------------
 % functions
@@ -144,6 +148,7 @@ mmrPos = #(define-music-function
 omitFlag = \once \omit Flag
 omitBeam = \once \omit Beam
 omitDots = \once \omit Dots
+aIIOmit = \once \omit Voice.CombineTextScript
 
 liiri = {
 	\set stemLeftBeamCount = #2
@@ -163,7 +168,6 @@ lirii = {
 %	#}
 %)
 
-%aIIOmit = \once \omit Voice.CombineTextScript
 
 %aIIExtraOffset = #(define-music-function
 %	(extraoffset)

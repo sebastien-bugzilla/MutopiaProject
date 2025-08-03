@@ -15,7 +15,7 @@ musicCornoIIMvtI = \relative c {
 	bes'2.\p~
 	bes
 % Bars 6 to 10
-	bes_\fbrackp~
+	bes~
 	<< bes {s8\> s s  s s s\!}>>
 	bes2.\pp~
 	bes
@@ -23,9 +23,9 @@ musicCornoIIMvtI = \relative c {
 % Bars 11 to 15
 	bes
 	d
-	f_\crescmarkup
+	f
 	bes,\fz
-	<< f' {s4._\dimmarkup s\p}>>
+	<< f' {s4. s\p}>>
 % Bars 16 to 20
 	f-^\ff r4 r8
 	f4.-^ r4 r8
@@ -54,7 +54,7 @@ musicCornoIIMvtI = \relative c {
 	f4.->\ff f->
 	ees-> ees-> 
 	\time 3/4 des8 r ees r f r
-	\time 6/8 ees->\< f-> ges-> ges4( f8)\!
+	\time 6/8 \stemUp \omitBeam ees->\< f-> ges-> \stemDown ges4( f8)\!
 	\time 3/4 f r ees r f r
 % Bars 41 to 45
 	\time 6/8 ees->\< f-> ges-> f-> ees-> ges->\!
@@ -132,7 +132,7 @@ musicCornoIIMvtI = \relative c {
 	
 % Bars 106 to 110
 	
-	c,2.~_\fppocoapococresc
+	c,2.~
 	c
 	<< c~ {s8\< s s  s s s\!}>>
 	c2.
@@ -174,7 +174,7 @@ musicCornoIIMvtI = \relative c {
 	g2.\fz\<~
 	<< g {s8 s s  s s s\!}>>
 	f2.\ff~
-	f4.\> ees4( f8)\!
+	f4.\> \stemUp  ees4( \omitFlag f8)\!
 % Bars 151 to 155
 	g4.\p\>~ g8\! r r
 	R2.
@@ -201,8 +201,8 @@ musicCornoIIMvtI = \relative c {
 	
 % Bars 171 to 175
 	<< ees,2.\fz\>~ {s8\> s s  s s s\!}>>
-	ees2._\dimmarkup
-	r4 r8 r4 e'!8-.\p
+	ees2.
+	r4 r8 r4 \stemDown e'!8-.\p
 	r4 r8 r4 e8-.
 	r4 r8 r4 e8-.
 % Bars 176 to 180
@@ -212,7 +212,7 @@ musicCornoIIMvtI = \relative c {
 	R2.*2
 	
 % Bars 181 to 185
-	<< d,2.\fz( {s4. s\>}>>
+	<< d,2.\fz_( {s4. s\>}>>
 	<< f2.) {s8 s s  s s s\!}>>
 	r4 r8 r4 fis'8-.\p
 	r4 r8 r4 fis8-.
@@ -248,13 +248,13 @@ musicCornoIIMvtI = \relative c {
 	r4 r8 << ees4.~ {s8\brack\fz\< s s\!}>>
 	<< ees2. {s8\> s s  s s s\!}>>
 % Bars 211 to 215
-	bes'2.~_\ppcrescpocoapoco
+	bes'2.~
 	bes~
 	bes
 	b!(\<
 	<< c) {s8 s s s s s\!}>> \mark \default
 % Bars 216 to 220
-	fis,2.\ff-^~
+	fis,2.\ff~
 	fis
 	g2.-^~
 	g 
@@ -274,7 +274,7 @@ musicCornoIIMvtI = \relative c {
 % Bars 231 to 235
 	
 	
-	bes,2._\fpsempredim~
+	bes,2.~
 	bes
 	bes\brack\p~
 % Bars 236 to 240
@@ -369,7 +369,7 @@ musicCornoIIMvtI = \relative c {
 	aes-.-^r r r4 r8
 	aes-. r r c-. r r
 	cis-. r r b!-. r r
-	c!2._\pcresc~
+	c!2.~
 % Bars 316 to 320
 	c4. c8-.\f r r
 	bes4.-^\ff r4 r8
