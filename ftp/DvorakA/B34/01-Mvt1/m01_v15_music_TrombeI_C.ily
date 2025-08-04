@@ -39,19 +39,19 @@ musicTrombeIMvtI = \relative c {
 	f4.->\ff~ f8 ees4->
 	des4-> c8->\<~ c des-> ees->\!
 % Bars 36 to 40
-	ges4->\ff( f8) bes4.->
+	\partCombineApart ges4->( f8) bes4.-> \partCombineAutomatic
 	g!4.-> aes->
 	\time 3/4 f8 r ges r aes r
-	\time 6/8 aes->\< aes-> bes-> aes4-> aes8\!
+	\time 6/8 \partCombineApart aes aes bes aes4-> aes8 \partCombineAutomatic
 	\time 3/4 f r ges r aes r
 % Bars 41 to 45
 	\time 6/8 aes->\< aes-> bes-> bes-> aes-> ges->\!
 	\time 3/8 f!->\< f-> f->\! \mark \default
-	\time 6/8 f4.->\fz r4 r8
-	f4.->\fz r4 r8
-	g4.->\fz r4 r8
+	\time 6/8 \once \partCombineApart f4.-> r4 r8
+	\once \partCombineApart f4.-> r4 r8
+	\once \partCombineApart g4.-> r4 r8
 % Bars 46 to 50
-	g4.->\fz r4 r8
+	\once \partCombineApart g4.-> r4 r8
 	R2.*3
 	
 	
@@ -60,14 +60,14 @@ musicTrombeIMvtI = \relative c {
 	<< a2. {s8\< s s  s s s\!}>> \mark \default
 	bes2.->\ff
 	bes2.->\fz~
-	bes4. bes~
+	bes4. \partCombineApart bes~
 	bes2.
 % Bars 56 to 60
-	a4.->\> << g-> {s8 s s\!}>>
+	a4.-> << g-> {s8 s s}>> \partCombineAutomatic
 	f2.->
-	g\brack\fz
-	f4.( << fis) {s8\< s s\!}>>
-	g2.->
+	\partCombineApart g
+	f4.( << fis) {s8 s s}>>
+	g2.-> \partCombineAutomatic
 % Bars 61 to 65
 	f4.\fz~ f4 r8
 	f4.\fz~ f4 r8
@@ -93,8 +93,8 @@ musicTrombeIMvtI = \relative c {
 	
 	
 	
-	ees,4.(\brack\mf^\sola des4\< bes8
-	aes4 des8 c4 ees8)\!
+	\partCombineApart ees,4.(\brack\mf^\sola des4\< bes8
+	aes4 des8 c4 ees8)\! \partCombineAutomatic
 % Bars 96 to 100
 	f4.-^\ff r4 r8
 	a!4.-^ r4 r8
@@ -141,7 +141,7 @@ musicTrombeIMvtI = \relative c {
 	
 	\time 3/4 f8-^\f r f-^ r f-^ r
 % Bars 161 to 165
-	\time 6/8 c'-> bes-> a-> bes-> f-> f->
+	\time 6/8 c'-> bes-> a-> \partCombineApart bes-> f-> f-> \partCombineAutomatic
 	\time 3/4 f-^ r f-^ r f-^ r 
 	\time 6/8 f-> f-> f-> bes-> bes-> bes->
 	bes4._\fbrackf r4 r8
@@ -257,7 +257,7 @@ musicTrombeIMvtI = \relative c {
 	c8-.\brack\fz r r r4 r8
 	R2.
 	c8-. r r b!-. r r
-	a!-. r r aes-^ g-^ f-^
+	a!-. r r \partCombineApart aes-^ g-^ f-^ \partCombineAutomatic
 	bes2.\ff~
 % Bars 306 to 310
 	bes
@@ -280,8 +280,8 @@ musicTrombeIMvtI = \relative c {
 % Bars 321 to 325
 	aes4.-> aes->
 	aes-> a8-. r r
-	bes-^ r r f-^ r r
-	bes-^ r r f-^ r r
+	bes-^ r r \once \partCombineApart f-^ r r
+	bes-^ r r \once \partCombineApart f-^ r r
 	ges-^ r r ges-^ r r
 % Bars 326 to 330
 	ges-^ r r ges-^ r r
@@ -299,8 +299,8 @@ musicTrombeIMvtI = \relative c {
 	d'2.-^\f
 	bes4.-^~ bes8 bes-^ bes-^
 	d2.\ff~
-	d4 r8 bes4 r16 f
-	bes4 r8 bes4 r16 f
+	d4 r8 \once \partCombineApart bes4 r16 \once \partCombineApart f
+	\once \partCombineApart bes4 r8 \once \partCombineApart bes4 r16 \once \partCombineApart f
 % Bars 341 to 343
 	bes4 r8 r4 r8
 	bes4 r8 r4 r8

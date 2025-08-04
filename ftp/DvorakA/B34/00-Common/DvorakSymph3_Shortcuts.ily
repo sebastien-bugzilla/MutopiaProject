@@ -82,7 +82,9 @@ fbrackp = \markup {\dynamic f \bracket \with-true-dimensions \dynamic p}
 %--------------------
 % dynamics ff
 %--------------------
-
+fbrackf = \markup {
+	\concat { \dynamic f \bracket \with-true-dimensions \dynamic f }
+} 
 %--------------------
 % dynamics ffz
 %--------------------
@@ -111,7 +113,8 @@ dimp = \markup {\italic "dim." \dynamic p}
 solo = \markup {Solo}
 soli = \markup {Soli}
 aII = \markup {\bold a2}
-
+sola = \markup {Sola}
+sole = \markup {Sole}
 %--------------------
 % functions
 %--------------------
