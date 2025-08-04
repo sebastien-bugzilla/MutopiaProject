@@ -52,6 +52,7 @@ fzpocoapococresc = \markup { \dynamic fz \italic "poco a poco cresc."}
 fzmarkup = \markup {\dynamic fz}
 fffz = \markup {\hspace #-3.3 \concat { \dynamic ff \hspace #0.4 \dynamic fz }}
 fzsempredim = \markup {\dynamic fz \italic "sempre dim."}
+fzpocoapococrescendo = \markup { \dynamic fz \italic "poco a poco crescendo"}
 %--------------------
 % dynamics fzp
 %--------------------
@@ -158,6 +159,8 @@ lirii = {
 	\set stemLeftBeamCount = #1
 	\set stemRightBeamCount = #2
 }
+
+marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %aIIXoffset = #(define-music-function
