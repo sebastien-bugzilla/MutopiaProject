@@ -53,6 +53,10 @@ fzmarkup = \markup {\dynamic fz}
 fffz = \markup {\hspace #-3.3 \concat { \dynamic ff \hspace #0.4 \dynamic fz }}
 fzsempredim = \markup {\dynamic fz \italic "sempre dim."}
 fzpocoapococrescendo = \markup { \dynamic fz \italic "poco a poco crescendo"}
+brackfzpocoapococresc = \markup {
+	\bracket \with-true-dimensions \dynamic fz
+	\italic "poco a poco cresc."
+}
 %--------------------
 % dynamics fzp
 %--------------------

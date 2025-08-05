@@ -8,4 +8,7 @@ correctionsMvtI = \markup {
 	
 	% bar 316 / Horn I
 	"Bar 316, Horn I : e flat on second beat is missing in conductor but confirmed by part score."
+	
+	% bar 96 / Tb. III
+	"Bar 96, Trbn III : g flat on first beat is missing in conductor but confirmed by part score."
 }
