@@ -37,6 +37,10 @@ pbrackpocoapococresc = \markup {
 		\bracket \with-true-dimensions "poco a poco" cresc.
 	}
 }
+pbrackcresc = \markup {
+	\dynamic p \bracket \with-true-dimensions \italic "cresc."
+}
+ppocoapococrescendo = \markup { \dynamic p \italic "poco a poco crescendo"}
 %--------------------
 % dynamics mp
 %--------------------
@@ -44,7 +48,10 @@ pbrackpocoapococresc = \markup {
 %--------------------
 % dynamics mf
 %--------------------
-
+brackmfpocoapococrescendo = \markup {
+	\bracket \with-true-dimensions \dynamic mf
+	\italic "poco a poco crescendo"
+}
 %--------------------
 % dynamics fz
 %--------------------
@@ -119,6 +126,25 @@ soli = \markup {Soli}
 aII = \markup {\bold a2}
 sola = \markup {Sola}
 sole = \markup {Sole}
+
+
+%--------------------
+% instrument modification
+%--------------------
+mutaindb = \markup {muta in D, B}
+mutainesb = \markup {muta in Es, B}
+
+timpindb = \markup {
+	\center-column {
+		\lower #1 "Timp." "in D, B"
+	}
+}
+timpinesb = \markup {
+	\center-column {
+		\lower #1 "Timp." "in Es, B"
+	}
+}
+
 %--------------------
 % functions
 %--------------------
@@ -168,6 +194,16 @@ lirii = {
 }
 
 marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
+
+changeStaffName = #(define-music-function
+	(staffName)
+	(markup?)
+	#{
+		\set Staff.shortInstrumentName = #staffName
+	#}
+)
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %aIIXoffset = #(define-music-function
@@ -227,14 +263,6 @@ marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
 %	\set baseMoment = #(ly:make-moment 1/8)
 %	\set beatStructure = 2,2,2
 %}
-
-%changeStaffName = #(define-music-function
-%	(staffName)
-%	(markup?)
-%	#{
-%		\set Staff.shortInstrumentName = #staffName
-%	#}
-%)
 
 %crescText = #(define-music-function
 %	(cresctext)
