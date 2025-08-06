@@ -21,6 +21,9 @@ brackpppocoapococresc = \markup {
 pbrackp = \markup {
 	\concat { \dynamic p \bracket \with-true-dimensions \dynamic p }
 }
+ppmoltoespress = \markup {\dynamic pp \italic "molto espress."}
+pptranquillomolto = \markup {\dynamic pp \italic "tranquillo molto"}
+pptranquillo = \markup {\dynamic pp \italic "tranquillo"}
 %--------------------
 % dynamics p
 %--------------------
@@ -118,6 +121,7 @@ pococresc = \markup {\italic "poco cresc."}
 leggiero = \markup {\italic "leggiero"}
 marcato = \markup {\italic "marcato"}
 dimp = \markup {\italic "dim." \dynamic p}
+sempredim = \markup {\italic "sempre dim."}
 %--------------------
 % text indications
 %--------------------
@@ -126,7 +130,8 @@ soli = \markup {Soli}
 aII = \markup {\bold a2}
 sola = \markup {Sola}
 sole = \markup {Sole}
-
+moltoespressivo = \markup { \italic "molto espressivo"}
+molto = \markup {\italic molto}
 
 %--------------------
 % instrument modification
@@ -192,7 +197,14 @@ lirii = {
 	\set stemLeftBeamCount = #1
 	\set stemRightBeamCount = #2
 }
-
+liriii = {
+	\set stemLeftBeamCount = #1
+	\set stemRightBeamCount = #3
+}
+liiiri = {
+	\set stemLeftBeamCount = #3
+	\set stemRightBeamCount = #1
+}
 marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
 
 changeStaffName = #(define-music-function
@@ -202,6 +214,12 @@ changeStaffName = #(define-music-function
 		\set Staff.shortInstrumentName = #staffName
 	#}
 )
+
+sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
+	\concat { 
+		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \sharp  
+	}
+}
 
 
 
@@ -550,19 +568,6 @@ changeStaffName = #(define-music-function
 %	#}
 %)
 
-%trillSpanCustom = #(define-music-function
-%	(length markup)
-%	(number? markup?)
-%	% function to create a trill spanner with :
-%	%	- specified length
-%	%	- specified markup
-%	#{
-%		\once \override TrillSpanner.minimum-length = #length
-%		\once \override TrillSpanner.springs-and-rods = #ly:spanner::set-spacing-rods
-%		\once \override Score.TrillSpanner.bound-details.left.text = #markup
-%	#}
-%)
-
 %trillSpanPadding = #(define-music-function
 %	(padding)
 %	(number?)
@@ -573,7 +578,6 @@ changeStaffName = #(define-music-function
 %	#}
 %)
 
-
 %naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 %	\concat { 
 %		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \natural 
@@ -582,11 +586,6 @@ changeStaffName = #(define-music-function
 %flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 %	\concat { 
 %		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
-%	}
-%}
-%sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \sharp  
 %	}
 %}
 

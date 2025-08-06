@@ -136,15 +136,22 @@
 			\new Staff {
 				\timeMvtI \nameStaffXIIIMvtI \musicTimpaniMvtI
 			}
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIVMvtI } <<
-%					\new Staff {
-%						\timeMvtI \nameStaffXIVMvtI \musicViolinoIMvtI
-%					}
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIVMvtI } <<
+					\new GrandStaff <<
+						\new Staff {
+							\timeMvtI \nameStaffXIVMvtI \musicViolinoIMvtI
+						}
+						\new Staff \with { 
+							\RemoveAllEmptyStaves 
+							\remove Time_signature_engraver } {
+							\timeMvtI \musicViolinoIDivMvtI
+						}
+					>>
 %					\new Staff {
 %						\timeMvtI \nameStaffXVMvtI \musicViolinoIIMvtI
 %					}
-%				>>
+				>>
 %				\new Staff {
 %					\timeMvtI \nameStaffXVIMvtI \musicViolaMvtI
 %				}
@@ -154,7 +161,7 @@
 %				\new Staff {
 %					\timeMvtI \nameStaffXVIIIMvtI \musicContrabassoMvtI
 %				}
-%			>>
+			>>
 		>>
 		\header {
 			breakbefore = ##t

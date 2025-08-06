@@ -1,4 +1,4 @@
-   165    467   5417 10_DvorakSymph3_Conductor_mvt1.ly
+   172    476   5591 10_DvorakSymph3_Conductor_mvt1.ly
    171    461   5623 10_DvorakSymph3_Conductor_mvt2.ly
    165    440   5514 10_DvorakSymph3_Conductor_mvt3.ly
    219    513   4803 20_DvorakSymph3_Part01_Flauti.ly
@@ -16,8 +16,8 @@
    119    313   3199 20_DvorakSymph3_Part13_Violoncello.ly
    118    311   3181 20_DvorakSymph3_Part14_Contrabasso.ly
      8     22    147 display.ly
-   123    456   3159 test.ly
-    14    100    649 00-Common/DvorakSymph3_Corrections.ily
+   166    610   4195 test.ly
+    17    124    766 00-Common/DvorakSymph3_Corrections.ily
    273    794   6753 00-Common/DvorakSymph3_CueVoice.ily
     10     60    543 00-Common/DvorakSymph3_Format_Cond_Mvt01.ily
     10     60    544 00-Common/DvorakSymph3_Format_Cond_Mvt02.ily
@@ -44,7 +44,7 @@
    565   1956  16360 00-Common/DvorakSymph3_NameVoice.ily
     67    188   1612 00-Common/DvorakSymph3_PaperConductors.ily
     65    186   1554 00-Common/DvorakSymph3_PaperParts.ily
-   635   1842  14038 00-Common/DvorakSymph3_Shortcuts.ily
+   634   1852  14101 00-Common/DvorakSymph3_Shortcuts.ily
     64    184   1370 00-Common/DvorakSymph3_Tempi.ily
     15     65    464 00-Common/DvorakSymph3_timeMvt.ily
    386   1738   8737 01-Mvt1/m01_v02_music_FlautoI.ily
@@ -78,7 +78,7 @@
    322   1178   5741 01-Mvt1/m01_v18_music_TrombonoII.ily
    322   1154   5591 01-Mvt1/m01_v19_music_TrombonoIII.ily
    338   1276   6094 01-Mvt1/m01_v21_music_Timpani.ily
-   149    399   1807 01-Mvt1/m01_v25_music_ViolinoI.ily
+   480   3271  16437 01-Mvt1/m01_v25_music_ViolinoI.ily
    149    399   1808 01-Mvt1/m01_v26_music_ViolinoII.ily
    149    399   1802 01-Mvt1/m01_v27_music_Viola.ily
    149    399   1808 01-Mvt1/m01_v28_music_Violoncello.ily
@@ -135,4 +135,4 @@
    315    814   3464 03-Mvt3/m03_v27_music_Viola.ily
    315    814   3470 03-Mvt3/m03_v28_music_Violoncello.ily
    315    814   3470 03-Mvt3/m03_v29_music_Contrabasso.ily
- 29903  95119 531179 total
+ 30286  98188 547199 total
