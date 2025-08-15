@@ -44,6 +44,7 @@ pbrackcresc = \markup {
 	\dynamic p \bracket \with-true-dimensions \italic "cresc."
 }
 ppocoapococrescendo = \markup { \dynamic p \italic "poco a poco crescendo"}
+pleggiero = \markup {\dynamic p \italic "leggiero"}
 %--------------------
 % dynamics mp
 %--------------------
@@ -122,6 +123,7 @@ leggiero = \markup {\italic "leggiero"}
 marcato = \markup {\italic "marcato"}
 dimp = \markup {\italic "dim." \dynamic p}
 sempredim = \markup {\italic "sempre dim."}
+crescpocoapoco = \markup {\italic "cresc. poco a poco"}
 %--------------------
 % text indications
 %--------------------
@@ -221,7 +223,17 @@ sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	}
 }
 
+setSextolet = {
+	\set subdivideBeams = ##t
+	\set baseMoment = #(ly:make-moment 1/8)
+	\set beatStructure = 3,3
+}
+unsetSextolet = {
+	\set subdivideBeams = ##f
+}
 
+pizz = \markup {\italic pizz.}
+arco = \markup {\italic arco}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %aIIXoffset = #(define-music-function

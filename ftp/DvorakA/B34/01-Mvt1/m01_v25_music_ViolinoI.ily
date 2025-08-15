@@ -421,7 +421,7 @@ musicViolinoIMvtI = \relative c {
 	q4 r8 r4 r8
 	<g ees'>2.\fermata\ff \fine
 }
-musicViolinoIDivMvtI = \relative c {
+musicViolinoIDivisiMvtI = \relative c {
 	\clef treble
 	\key ees \major
 	s2.*18 s4.*1 s2.*22 s4.*1 s2.*128

@@ -106,13 +106,13 @@ nameStaffXIIIMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffXIVMvtI = {
-	\set Staff.instrumentName = "I."
-	\set Staff.shortInstrumentName = "I."
+	\set Staff.instrumentName = "Violino I"
+	\set Staff.shortInstrumentName = "Viol.I"
 	\set Staff.midiInstrument = #""
 }
 nameStaffXVMvtI = {
-	\set Staff.instrumentName = "II."
-	\set Staff.shortInstrumentName = "II."
+	\set Staff.instrumentName = "Violino II"
+	\set Staff.shortInstrumentName = "Viol.II"
 	\set Staff.midiInstrument = #""
 }
 nameStaffXVIMvtI = {
