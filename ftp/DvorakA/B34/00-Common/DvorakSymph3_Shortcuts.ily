@@ -234,7 +234,7 @@ unsetSextolet = {
 
 pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
-
+div = \markup {div.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %aIIXoffset = #(define-music-function
 %	(offset)

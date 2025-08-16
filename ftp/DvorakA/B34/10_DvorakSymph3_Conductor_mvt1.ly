@@ -136,7 +136,7 @@
 			\new Staff {
 				\timeMvtI \nameStaffXIIIMvtI \musicTimpaniMvtI
 			}
-			\new StaffGroup \with { \nameGrandStaffVMvtI } <<
+			\new StaffGroup \with { \nameGrandStaffIVMvtI } <<
 				\new GrandStaff <<
 					\new Staff {
 						\timeMvtI \nameStaffXIVMvtI \musicViolinoIMvtI
@@ -147,7 +147,7 @@
 						\timeMvtI \musicViolinoIDivisiMvtI
 					}
 				>>
-				\new GrandStaff \with { \nameGrandStaffVIMvtI } <<
+				\new GrandStaff \with { \nameGrandStaffVMvtI } <<
 					\new Staff {
 						\timeMvtI \nameStaffXVMvtI \musicViolinoIIMvtI
 					}
@@ -157,9 +157,16 @@
 						\timeMvtI \musicViolinoIIDivisiMvtI
 					}
 				>>
-%				\new Staff {
-%					\timeMvtI \nameStaffXVIMvtI \musicViolaMvtI
-%				}
+				\new GrandStaff \with { \nameGrandStaffVIMvtI } <<
+					\new Staff {
+						\timeMvtI \nameStaffXVIMvtI \musicViolaMvtI
+					}
+					\new Staff \with {
+						\RemoveAllEmptyStaves
+						\remove Time_signature_engraver } {
+						\timeMvtI \musicViolaDivisiMvtI
+					}
+				>>
 %				\new Staff {
 %					\timeMvtI \nameStaffXVIIMvtI \musicVioloncelloMvtI
 %				}
