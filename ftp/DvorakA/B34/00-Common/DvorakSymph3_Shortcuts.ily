@@ -24,6 +24,8 @@ pbrackp = \markup {
 ppmoltoespress = \markup {\dynamic pp \italic "molto espress."}
 pptranquillomolto = \markup {\dynamic pp \italic "tranquillo molto"}
 pptranquillo = \markup {\dynamic pp \italic "tranquillo"}
+ppespress = \markup {\dynamic pp \italic espress.}
+ppsempre = \markup {\dynamic pp \italic sempre}
 %--------------------
 % dynamics p
 %--------------------
@@ -45,6 +47,11 @@ pbrackcresc = \markup {
 }
 ppocoapococrescendo = \markup { \dynamic p \italic "poco a poco crescendo"}
 pleggiero = \markup {\dynamic p \italic "leggiero"}
+brackpespressivo = \markup {\bracket \with-true-dimensions \dynamic p 
+	\italic espressivo
+}
+ppocoapococresc = \markup { \dynamic p \italic "poco a poco cresc."}
+
 %--------------------
 % dynamics mp
 %--------------------
@@ -68,6 +75,7 @@ brackfzpocoapococresc = \markup {
 	\bracket \with-true-dimensions \dynamic fz
 	\italic "poco a poco cresc."
 }
+fzcresc = \markup { \dynamic fz \italic cresc.}
 %--------------------
 % dynamics fzp
 %--------------------
@@ -90,6 +98,10 @@ brackfppocoapococresc = \markup {
 }
 fppocoapococresc = \markup {\dynamic fp \italic "poco a poco cresc."}
 fbrackp = \markup {\dynamic f \bracket \with-true-dimensions \dynamic p}
+brackfppocoapococrescendo = \markup {
+	\bracket \with-true-dimensions \dynamic fp
+	\italic "poco a poco crescendo"
+}
 %--------------------
 % dynamics f
 %--------------------
@@ -99,16 +111,23 @@ fbrackp = \markup {\dynamic f \bracket \with-true-dimensions \dynamic p}
 %--------------------
 fbrackf = \markup {
 	\concat { \dynamic f \bracket \with-true-dimensions \dynamic f }
-} 
+}
+ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
 %--------------------
 % dynamics ffz
 %--------------------
-
+ffz = \markup {\dynamic ffz}
+ffzD = #(make-dynamic-script "ffz")
 %--------------------
 % dynamics fff
 %--------------------
-
-
+fffmarcatissimo = \markup {\dynamic fff \italic marcatissimo}
+%--------------------
+% dynamics fff
+%--------------------
+brackfffz = \markup {
+	\concat { \bracket \with-true-dimensions \dynamic ff \dynamic fz }
+}
 
 %--------------------
 % dynamics text
@@ -124,6 +143,7 @@ marcato = \markup {\italic "marcato"}
 dimp = \markup {\italic "dim." \dynamic p}
 sempredim = \markup {\italic "sempre dim."}
 crescpocoapoco = \markup {\italic "cresc. poco a poco"}
+marcatiss = \markup {\italic marcatiss.}
 %--------------------
 % text indications
 %--------------------
@@ -134,7 +154,7 @@ sola = \markup {Sola}
 sole = \markup {Sole}
 moltoespressivo = \markup { \italic "molto espressivo"}
 molto = \markup {\italic molto}
-
+espressivo = \markup {\italic espressivo}
 %--------------------
 % instrument modification
 %--------------------
@@ -235,6 +255,14 @@ unsetSextolet = {
 pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
 div = \markup {div.}
+
+flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
+	\concat { 
+		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
+	}
+}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %aIIXoffset = #(define-music-function
 %	(offset)
@@ -593,11 +621,6 @@ div = \markup {div.}
 %naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 %	\concat { 
 %		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \natural 
-%	}
-%}
-%flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
 %	}
 %}
 
