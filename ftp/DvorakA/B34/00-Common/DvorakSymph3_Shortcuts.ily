@@ -144,6 +144,7 @@ dimp = \markup {\italic "dim." \dynamic p}
 sempredim = \markup {\italic "sempre dim."}
 crescpocoapoco = \markup {\italic "cresc. poco a poco"}
 marcatiss = \markup {\italic marcatiss.}
+dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 %--------------------
 % text indications
 %--------------------
