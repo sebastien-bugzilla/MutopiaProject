@@ -119,6 +119,11 @@ ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
 ffz = \markup {\dynamic ffz}
 ffzD = #(make-dynamic-script "ffz")
 %--------------------
+% dynamics ffp
+%--------------------
+ffp = \markup {\dynamic ffp}
+ffpD = #(make-dynamic-script "ffp")
+%--------------------
 % dynamics fff
 %--------------------
 fffmarcatissimo = \markup {\dynamic fff \italic marcatissimo}
@@ -145,6 +150,7 @@ sempredim = \markup {\italic "sempre dim."}
 crescpocoapoco = \markup {\italic "cresc. poco a poco"}
 marcatiss = \markup {\italic marcatiss.}
 dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
+pococrescendo = \markup {\italic "poco crescendo"}
 %--------------------
 % text indications
 %--------------------
@@ -253,6 +259,12 @@ unsetSextolet = {
 	\set subdivideBeams = ##f
 }
 
+divideBeam = {
+	\set Voice.beatStructure = 1,1,1,1
+}
+resetBeam = {
+	\set Voice.beatStructure = 2,2
+}
 pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
 div = \markup {div.}
