@@ -47,7 +47,7 @@ musicViolinoIIMvtI = \relative c {
 % Bars 31 to 35
 	ges(_\crescmarkup ces ges ces ges ces ges bes ges bes ges bes)
 	<c,! ees>8\ff c16( ees f ees) c( ees f ees des f)
-	ges(\< f ees ges aes ges) g( aes bes aes f des)\!
+	ges(\< f ees ges aes ges) f( aes bes aes f des)\!
 	<c ees>8->\ff c16( ees f ees) c( ees f ees des f)
 	ges(\< f ees ges aes ges) f( aes bes aes f des)\!
 % Bars 36 to 40

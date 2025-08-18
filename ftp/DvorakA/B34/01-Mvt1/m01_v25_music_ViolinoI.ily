@@ -13,7 +13,7 @@ musicViolinoIMvtI = \relative c {
 	
 	ees'4.(\p^\moltoespressivo d16 ees f ees d ees)
 	bes'4.~ bes4 ees,16(-. f-.)
-	g8(\<-. a-. bes-.) c[(-. d-. r16 ees-.)]\!
+	g8(\<-. aes-. bes-.) c[(-. d-. r16 ees-.)]\!
 % Bars 6 to 10
 	ees4.(~\fp ees8.\> d16 f ees)\!
 	d4.(\> c)\pp
@@ -25,7 +25,7 @@ musicViolinoIMvtI = \relative c {
 	f4(\< des'16\![ r32 c-.)] c4( bes8)
 	bes4(_\crescmarkup ges'16[ r32 f-.]) f4( ees8)
 	ees4.(~\fz ees16 d f ees ces aes)
-	g4.(_\brackM\dimmarkup f4\brack\p bes8-.)
+	ges4.(_\brackM\dimmarkup f4\brack\p bes8-.)
 % Bars 16 to 20
 	<g,! ees'!>4.\ff-^ d'16( ees f ees d ees)
 	<ges bes>4.-^ f16( ges aes ges f ges)

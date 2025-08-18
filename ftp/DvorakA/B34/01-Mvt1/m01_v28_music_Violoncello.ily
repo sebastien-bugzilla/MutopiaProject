@@ -120,7 +120,7 @@ musicVioloncelloMvtI = \relative c {
 	aes(_\pocoapococresc ges)
 	f( ees4 ces8)
 	des4.(\< << f) {s8 s s\!}>>
-	\flattrill \afterGrace 6/7 f4.\fz\startTrillSpan {ees16(\stopTrillSpan f)} ees4( ces8)
+	\flattrill f4.\fz\startTrillSpan \grace {ees16(\stopTrillSpan f)} ees4( ces8)
 	bes4.( ces) \clef bass
 % Bars 96 to 100
 	ges-^\ff r4 r8

@@ -14,4 +14,7 @@ correctionsMvtI = \markup {
 	
 	% bar 254 / Viol I
 	"Bar 254, Viol. I : a natural is not indicated in the conductor but confirmed by part score."
+	
+	% bar 39 / Horn I
+	"Bar 39, Horn I : d natural is indicated in conductor score instead of d flat in part score. d flat is coherent with trumpet II.
 }

@@ -54,7 +54,7 @@ musicCornoIMvtI = \relative c {
 	ees4.->\ff d!->
 	des-> c-> 
 	\time 3/4 des8 r c r des r
-	\time 6/8 \partCombineApart c d d ees->( e f) \partCombineAutomatic
+	\time 6/8 \partCombineApart c des des ees->( e f) \partCombineAutomatic % d => des based on Simrock conductor
 	\time 3/4 des r c r des r
 % Bars 41 to 45
 	\time 6/8 c->\< des-> des-> des-> c-> ees->\!

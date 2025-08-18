@@ -13,7 +13,7 @@ musicOboeIMvtI = \relative c {
 	
 	\partCombineApart ees'4.(\p^\solo d16 ees f ees d ees)
 	bes'4.~ bes4 ees,16-> f->
-	g8->\< a-> bes-> c->[ d-> r16 ees->]
+	g8->\< aes-> bes-> c->[ d-> r16 ees->]
 % Bars 6 to 10
 	ees4.->(~\fz\> ees8. d16 f ees)\!
 	d4.(\> c)\pp
@@ -290,7 +290,7 @@ musicOboeIMvtI = \relative c {
 % Bars 241 to 245
 	ees4( ges16)[ f32\rest f-.] f4( ees8)
 	ees4( ges16)[ f32\rest f-.] f4( ees8)
-	e4( g!16)[ f32\rest f-.] f4( ees8)
+	e4( g!16)[ f32\rest f-.] f4( e8)
 	f4( aes16)[ g32\rest g-.] g4( f8) \partCombineAutomatic
 	fis2.\fz\<~
 % Bars 246 to 250
