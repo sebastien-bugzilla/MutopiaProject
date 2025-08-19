@@ -55,13 +55,18 @@ ppocoapococresc = \markup { \dynamic p \italic "poco a poco cresc."}
 %--------------------
 % dynamics mp
 %--------------------
-
+brackmpcresc = \markup {
+	\bracket \with-true-dimensions \dynamic mp \italic "cresc."
+}
 %--------------------
 % dynamics mf
 %--------------------
 brackmfpocoapococrescendo = \markup {
 	\bracket \with-true-dimensions \dynamic mf
 	\italic "poco a poco crescendo"
+}
+mfbrackcresc = \markup {
+	\dynamic mf \bracket \with-true-dimensions \italic "cresc."
 }
 %--------------------
 % dynamics fz
@@ -265,6 +270,7 @@ divideBeam = {
 resetBeam = {
 	\set Voice.beatStructure = 2,2
 }
+
 pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
 div = \markup {div.}

@@ -11,21 +11,21 @@ musicOboeIIMvtII = \relative c {
 % Bars 1 to 5
 	cis'4\fp( dis8) r
 	cis4(\fp dis8) r
-	cis4(\< d8)\! r
+	cis4( d8) r
 	fis8\p r r4
 	fis8 r r4
 % Bars 6 to 10
-	fis8_\dimmarkup r r4
+	fis8 r r4
 	f8 r r4
 	f8 r r4
 	r8 f->\< r e->
 	r ees-> r d->\!
 % Bars 11 to 15
-	gis!4\mf a8_\dimmarkup fis
+	gis!4\mf a8 fis
 	<< e2\p\<~ {s4 s8. s16\!}>>
 	e8\f r r4
-	R2*2
-	
+	\mmrPos #-6 R2
+	R
 % Bars 16 to 20
 	R2*10
 % Bars 21 to 25
@@ -145,19 +145,19 @@ musicOboeIIMvtII = \relative c {
 	c8\trill\< c16.-. des32-. ees8\trill ees16.-. f32-.\!
 	<< a,4.\fp\> {s8 s\! s}>> r8
 % Bars 121 to 125
-	<< a4.\fp\>^\pococrescendo {s8 s\! s}>> r8
+	<< a4.\fp\> {s8 s\! s}>> r8
 	<< bes4.\fp\> {s8 s\! s}>> r8
 	<< b4.\fp\> {s8 s\! s}>> r8
 	a2\fp~
 	a8[\< a-> a-> a->]\! \mark \default
 % Bars 126 to 130
 	aes!8\fp aes16.( ces32) aes8 r
-	aes8\< aes16.( g32) aes8\! r
-	des8 des16.(_\crescmarkup bes32) des8 r
+	aes8 aes16.( g32) aes8 r
+	des8 des16.( bes32) des8 r
 	des\< des16.( ees32) des8 des16.( ees32)\!
 	f16.( ges32 f16. ges32) f16 r \tuplet 3/2 8 {des16\f des des
 % Bars 131 to 135
-	\divideBeam des\fp\> des des  des des des  des des des  des des des
+	\divideBeam des\fp\> des des  des des des  des des des  des des des\!
 	des\pp des des  des des des  des des des  ees ees ees
 	des des des  des des des  des des des  des des des
 	des des des  des des des  des des des  bes bes bes
@@ -223,15 +223,15 @@ musicOboeIIMvtII = \relative c {
 	ges16 r r8 r4
 	R2
 % Bars 186 to 190
-	R2*2
-	
+	\mmrPos #-6 R2
+	\mmrPos #-6 R
 	R2
 	gis4.(->\brack\mp a8)
 	gis4.(-> a8)
 % Bars 191 to 195
-	e4.(_\brackmpcresc f8->)\<
+	e4.( f8->)\<
 	e4.( f8->)\!
-	cis'4.(_\mfbrackcresc b8->)
+	cis'4.( b8->)
 	cis4.( b8->)
 	bes!4.(\< ces8->\!)
 % Bars 196 to 200
@@ -280,7 +280,7 @@ musicOboeIIMvtII = \relative c {
 	a4(\fp gis)
 	<< ais2(~\> {s8 s s s\!}>>
 	ais4\pp b~
-	b8)[ fis\>( gis a])\!
+	b8)[ fis( gis a])
 	a\pp r r4
 % Bars 236 to 240
 	R2*3
@@ -291,7 +291,7 @@ musicOboeIIMvtII = \relative c {
 % Bars 241 to 245
 	
 	
-	cis4_\brackfffz b16 r r8
+	cis4 b16 r r8
 	cis4-> b16 r r8
 	cis4-> b16 r r8
 % Bars 246 to 250
@@ -305,7 +305,7 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	
-	r8 e(~\p^\soli \tuplet 6/4 4 {e16 dis e fis gis fis}
+	r8 e(~\p \tuplet 6/4 4 {e16 dis e fis gis fis}
 % Bars 256 to 260
 	e8) r r4
 	R2
