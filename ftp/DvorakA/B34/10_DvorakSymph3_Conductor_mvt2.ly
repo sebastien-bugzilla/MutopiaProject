@@ -91,9 +91,9 @@
 					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
 %					\musicOboeIIMvtII
 				}
-%				\new Staff {
-%					\timeMvtII \nameStaffIVMvtII \musicCornoIngleseMvtII
-%				}
+				\new Staff {
+					\timeMvtII \nameStaffIVMvtII \musicCornoIngleseMvtII
+				}
 %				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
 %					\new Staff {
 %						\timeMvtII \nameStaffVMvtII \musicClarinettoIMvtII
