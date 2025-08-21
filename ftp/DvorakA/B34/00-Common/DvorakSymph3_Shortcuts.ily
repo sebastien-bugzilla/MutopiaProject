@@ -128,6 +128,9 @@ ffzD = #(make-dynamic-script "ffz")
 %--------------------
 ffp = \markup {\dynamic ffp}
 ffpD = #(make-dynamic-script "ffp")
+ffbrackp = \markup {
+	\concat { \dynamic ff \bracket \with-true-dimensions \dynamic p }
+}
 %--------------------
 % dynamics fff
 %--------------------
@@ -172,7 +175,8 @@ espressivo = \markup {\italic espressivo}
 %--------------------
 mutaindb = \markup {muta in D, B}
 mutainesb = \markup {muta in Es, B}
-
+mutainb = \markup {"muta in B"}
+mutaina = \markup {muta in A}
 timpindb = \markup {
 	\center-column {
 		\lower #1 "Timp." "in D, B"

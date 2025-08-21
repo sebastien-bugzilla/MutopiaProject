@@ -18,3 +18,10 @@ correctionsMvtI = \markup {
 	% bar 39 / Horn I
 	"Bar 39, Horn I : d natural is indicated in conductor score instead of d flat in part score. d flat is coherent with trumpet II.
 }
+correctionMvtII = \markup {
+	
+	% bar 67 68 / Clarinet I
+	"Bars 67 and 68 are missing in part score but indicated in the conductor."
+	
+	% bar 142 / Clarinet II
+	"Bar 142, Clarinet II : c on last beat is indicated as ees in part score.

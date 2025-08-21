@@ -9,7 +9,7 @@ musicClarinettoIMvtII = \relative c {
 	\key e \minor
 	\transposition a
 % Bars 1 to 5
-	e''4(\fp fis8) r
+	\staffHighlight "lightgreen" e''4(\fp fis8) r
 	e4(\fp fis8) r
 	e4(\< a16.\> g32 f16.\! e32)
 	dis8\p r r e(->
@@ -35,11 +35,11 @@ musicClarinettoIMvtII = \relative c {
 % Bars 21 to 25
 	
 % Bars 26 to 30
-	bes8.(\pp g32 a bes8 g)
+	\staffHighlight "red" bes8.(\pp g32 a bes8 g)
 	bes8.( g32\< a bes8 g)\!
-	bes8.(\f g32\> a bes16. a32 g16. f32)\!
-	e4(~\fp\> \tuplet 6/4 4 {e16 dis\! e fis!\p g fis)}
-	e8 r r4
+	\staffHighlight "lightgreen" bes8.(\f g32\> a bes16. a32 g16. f32)\!
+	\staffHighlight "red" e4(~\fp\> \tuplet 6/4 4 {e16 dis\! e fis!\p g fis)}
+	\staffHighlight "lightgreen" e8 r r4
 % Bars 31 to 35
 	R2*3
 	
@@ -50,7 +50,7 @@ musicClarinettoIMvtII = \relative c {
 	r8 a\p\<[( b c)]\!
 	c4(\fp\> b\!~
 	b4.\p\> ais8\!)
-	a!4\pp~ a8 r
+	\staffHighlight "lightgreen" a!4\pp~ a8 r
 	R2*4
 % Bars 41 to 45
 	
@@ -71,7 +71,7 @@ musicClarinettoIMvtII = \relative c {
 	r f'->\mf\< r g->\!
 	r fis!->\< r f->\!
 % Bars 56 to 60
-	f4(~\f f16\> e d c)\!
+	\staffHighlight "red" f4(~\f f16\> e d c)\!
 	b8 r r4
 	r r8 b'!\pp\<(
 	bes8.\p g32 a bes8 g)
@@ -79,7 +79,7 @@ musicClarinettoIMvtII = \relative c {
 % Bars 61 to 65
 	bes8.(\mf\< g32 a bes16.\! a32 g16. f32)
 	e4(~\fp \tuplet 6/4 4 {e16\> dis e fis! g fis)}
-	e4.\p r8
+	\staffHighlight "lightgreen" e4.\p r8
 	R2*3
 	
 % Bars 66 to 70
@@ -160,13 +160,13 @@ musicClarinettoIMvtII = \relative c {
 	\divideBeam g\fp\> g g  g g g  g g g  aes aes aes\!
 	g\pp g g  g g g  g g g  f f f} \resetBeam
 	ees8 r r4
-	r4 r8 \acciaccatura bes'8^\solo aes32(\mf\< g aes c)\!
+	\staffHighlight "red" r4 r8 \acciaccatura bes'8^\solo aes32(\mf\< g aes c)\!
 	<< g4. {s4 s8_\dimmarkup}>> \tuplet 3/2 8 {f16( c d)}
 % Bars 136 to 140
 	ees4. \tuplet 3/2 8 {f16( c d)}
 	ees8([ d ees f)]
 	bes,4. \tuplet 3/2 8 {aes16 aes aes
-	\divideBeam g\pp g g  g g g  g g g  ees ees ees
+	\staffHighlight "lightgreen" \divideBeam g\pp g g  g g g  g g g  ees ees ees
 	ees ees ees  ees ees ees  ees ees ees  f f f
 % Bars 141 to 145
 	ees ees ees  ees ees ees  ees ees ees  f f f

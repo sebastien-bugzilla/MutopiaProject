@@ -1,5 +1,5 @@
    191    520   6161 10_DvorakSymph3_Conductor_mvt1.ly
-   172    530   5719 10_DvorakSymph3_Conductor_mvt2.ly
+   176    535   5846 10_DvorakSymph3_Conductor_mvt2.ly
    165    440   5514 10_DvorakSymph3_Conductor_mvt3.ly
    219    513   4803 20_DvorakSymph3_Part01_Flauti.ly
    244    563   5189 20_DvorakSymph3_Part02_Oboi.ly
@@ -16,7 +16,7 @@
    119    313   3199 20_DvorakSymph3_Part13_Violoncello.ly
    118    311   3181 20_DvorakSymph3_Part14_Contrabasso.ly
    186    721   4870 test.ly
-    20    156    917 00-Common/DvorakSymph3_Corrections.ily
+    27    203   1151 00-Common/DvorakSymph3_Corrections.ily
    273    794   6753 00-Common/DvorakSymph3_CueVoice.ily
     10     60    543 00-Common/DvorakSymph3_Format_Cond_Mvt01.ily
     10     60    544 00-Common/DvorakSymph3_Format_Cond_Mvt02.ily
@@ -43,7 +43,7 @@
    565   1956  16360 00-Common/DvorakSymph3_NameVoice.ily
     67    188   1612 00-Common/DvorakSymph3_PaperConductors.ily
     65    186   1554 00-Common/DvorakSymph3_PaperParts.ily
-   688   2077  15811 00-Common/DvorakSymph3_Shortcuts.ily
+   692   2103  15962 00-Common/DvorakSymph3_Shortcuts.ily
    136    370   2353 00-Common/DvorakSymph3_Tempi.ily
     15     65    464 00-Common/DvorakSymph3_timeMvt.ily
    386   1738   8737 01-Mvt1/m01_v02_music_FlautoI.ily
@@ -89,8 +89,10 @@
    331   1164   5987 02-Mvt2/m02_v05_music_OboeII_C.ily
    331   1156   6058 02-Mvt2/m02_v05_music_OboeII.ily
    243    698   3781 02-Mvt2/m02_v06_music_CornoInglese.ily
-   121    329   1529 02-Mvt2/m02_v07_music_ClarinettoI.ily
-   121    329   1530 02-Mvt2/m02_v08_music_ClarinettoII.ily
+   324   1369   7266 02-Mvt2/m02_v07_music_ClarinettoI_C.ily
+   324   1349   7004 02-Mvt2/m02_v07_music_ClarinettoI.ily
+   324   1306   6713 02-Mvt2/m02_v08_music_ClarinettoII_C.ily
+   324   1306   6713 02-Mvt2/m02_v08_music_ClarinettoII.ily
    121    329   1526 02-Mvt2/m02_v09_music_FagottoI.ily
    121    329   1527 02-Mvt2/m02_v10_music_FagottoII.ily
    121    329   1524 02-Mvt2/m02_v11_music_CornoI.ily
@@ -136,4 +138,4 @@
    315    814   3464 03-Mvt3/m03_v27_music_Viola.ily
    315    814   3470 03-Mvt3/m03_v28_music_Violoncello.ily
    315    814   3470 03-Mvt3/m03_v29_music_Contrabasso.ily
- 33330 116496 640106 total
+ 34399 121246 665255 total
