@@ -26,6 +26,7 @@ pptranquillomolto = \markup {\dynamic pp \italic "tranquillo molto"}
 pptranquillo = \markup {\dynamic pp \italic "tranquillo"}
 ppespress = \markup {\dynamic pp \italic espress.}
 ppsempre = \markup {\dynamic pp \italic sempre}
+ppcresc = \markup {\dynamic pp \italic cresc.}
 %--------------------
 % dynamics p
 %--------------------
@@ -51,7 +52,10 @@ brackpespressivo = \markup {\bracket \with-true-dimensions \dynamic p
 	\italic espressivo
 }
 ppocoapococresc = \markup { \dynamic p \italic "poco a poco cresc."}
-
+pbrackespress = \markup {
+	\dynamic p
+	\bracket \with-true-dimensions \italic espress.
+}
 %--------------------
 % dynamics mp
 %--------------------
@@ -162,6 +166,7 @@ crescpocoapoco = \markup {\italic "cresc. poco a poco"}
 marcatiss = \markup {\italic marcatiss.}
 dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pococrescendo = \markup {\italic "poco crescendo"}
+marc = \markup {\italic marc.}
 %--------------------
 % text indications
 %--------------------
@@ -176,10 +181,12 @@ espressivo = \markup {\italic espressivo}
 %--------------------
 % instrument modification
 %--------------------
-mutaindb = \markup {muta in D, B}
-mutainesb = \markup {muta in Es, B}
+mutaindb = \markup {"muta in D, B"}
+mutainesb = \markup {"muta in Es, B"}
 mutainb = \markup {"muta in B"}
-mutaina = \markup {muta in A}
+mutaina = \markup {"muta in A"}
+mutainf = \markup {"muta in F"}
+mutaine = \markup {"muta in E"}
 timpindb = \markup {
 	\center-column {
 		\lower #1 "Timp." "in D, B"

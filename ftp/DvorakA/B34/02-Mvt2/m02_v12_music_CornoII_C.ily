@@ -67,7 +67,7 @@ musicCornoIIMvtII = \relative c {
 	e4\mf\>~ e8\! r
 	e4(\< f8)\! r
 	e4 r
-	e_\pocoapococresc r
+	e r
 % Bars 51 to 55
 	e r
 	R2*2
@@ -153,7 +153,7 @@ musicCornoIIMvtII = \relative c {
 	<< ees4.\< {s8 s s\!}>> r8
 	<< g4.\fp\> {s8 s\! s}>> r8
 % Bars 121 to 125
-	<< g4.\fp\>^\pococrescendo {s8 s\! s}>> r8
+	<< g4.\fp\> {s8 s\! s}>> r8
 	<< g4.\fp\> {s8 s\! s}>> r8
 	<< g4.\fp\> {s8 s\! s}>> r8
 	bes2\fp~
@@ -204,7 +204,7 @@ musicCornoIIMvtII = \relative c {
 	bes r r c->
 % Bars 166 to 170
 	f,16-.\mf f-. f-. f-. f r ges8->(
-	f16) f-. f-. f-. f_\brackM\crescmarkup r ges8(->
+	f16) f-. f-. f-. f r ges8(->
 	f16)\< r ges8->[( f16)] r ges8(->
 	f4)-> g!->\!
 	aes4\ff~ aes8.. bes32
@@ -231,14 +231,14 @@ musicCornoIIMvtII = \relative c {
 % Bars 191 to 195
 	R2*2
 	
-	b4._\mfcresc gis8->
+	b4. gis8->
 	b4. gis8->
 	gis4.\< a!8->\!
 % Bars 196 to 200
 	gis4.\< a!8->\!
 	a2->\ff\<
 	<< a-> {s8 s s s\!}>>
-	b2_\ffbrackp~
+	b2~
 	b8 r r4
 % Bars 201 to 205
 	R2*6
@@ -287,7 +287,7 @@ musicCornoIIMvtII = \relative c {
 % Bars 241 to 245
 	
 	
-	a4_\brackfffz g16 r r8
+	a4 g16 r r8
 	a4-> g16 r r8
 	a4-> g16 r r8
 % Bars 246 to 250

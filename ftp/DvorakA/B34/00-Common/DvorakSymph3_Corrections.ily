@@ -25,3 +25,7 @@ correctionMvtII = \markup {
 	
 	% bar 142 / Clarinet II
 	"Bar 142, Clarinet II : c on last beat is indicated as ees in part score.
+	
+	% bar 182 / Horn I to IV
+	"Bar 182, Horn I to IV : the rhythm indicated is wrong (the first note should be a sixteenth"
+}

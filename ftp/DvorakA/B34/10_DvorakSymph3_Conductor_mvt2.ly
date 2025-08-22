@@ -32,8 +32,8 @@
 \include "./02-Mvt2/m02_v08_music_ClarinettoII_C.ily"
 \include "./02-Mvt2/m02_v09_music_FagottoI_C.ily"
 \include "./02-Mvt2/m02_v10_music_FagottoII_C.ily"
-\include "./02-Mvt2/m02_v11_music_CornoI.ily"
-\include "./02-Mvt2/m02_v12_music_CornoII.ily"
+\include "./02-Mvt2/m02_v11_music_CornoI_C.ily"
+\include "./02-Mvt2/m02_v12_music_CornoII_C.ily"
 \include "./02-Mvt2/m02_v13_music_CornoIII.ily"
 \include "./02-Mvt2/m02_v14_music_CornoIV.ily"
 \include "./02-Mvt2/m02_v15_music_TrombeI.ily"
@@ -69,59 +69,61 @@
 	}
 	\score {
 		<<
-			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
-					\new Staff <<
+%			\new StaffGroup <<
+%				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
+%					\new Staff <<
+%%						\new Voice {
+%%							\formatConductorMvtII
+%%						}
 %						\new Voice {
-%							\formatConductorMvtII
+%							\tempiMvtII
 %						}
-						\new Voice {
-							\tempiMvtII
-						}
-						\new Voice {
-							\timeMvtII \nameStaffIMvtII \musicFlautoIMvtII
-						}
-					>>
-					\new Staff {
-						\timeMvtII \nameStaffIIMvtII \musicFlautoIIMvtII
-					}
-				>>
-				\new Staff {
-					\timeMvtII \nameStaffIIIMvtII
-					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
-%					\musicOboeIIMvtII
-				}
-				\new Staff {
-					\timeMvtII \nameStaffIVMvtII \musicCornoIngleseMvtII
-				}
-				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
-					\new Staff {
-						\timeMvtII \nameStaffVMvtII \musicClarinettoIMvtII
-					}
-					\new Staff {
-						\timeMvtII \nameStaffVIMvtII \musicClarinettoIIMvtII
-					}
+%						\new Voice {
+%							\timeMvtII \nameStaffIMvtII \musicFlautoIMvtII
+%						}
+%					>>
 %					\new Staff {
-%						\timeMvtII \nameStaffVIMvtII 
-%						\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
+%						\timeMvtII \nameStaffIIMvtII \musicFlautoIIMvtII
 %					}
-				>>
-				\new Staff {
-					\timeMvtII \nameStaffVIIMvtII
-					\partCombine #'(0 . 10) \musicFagottoIMvtII \musicFagottoIIMvtII
-%					\musicFagottoIIMvtII
-				}
-			>>
+%				>>
+%				\new Staff {
+%					\timeMvtII \nameStaffIIIMvtII
+%					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
+%%					\musicOboeIIMvtII
+%				}
+%				\new Staff {
+%					\timeMvtII \nameStaffIVMvtII \musicCornoIngleseMvtII
+%				}
+%				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
+%					\new Staff {
+%						\timeMvtII \nameStaffVMvtII \musicClarinettoIMvtII
+%					}
+%					\new Staff {
+%						\timeMvtII \nameStaffVIMvtII \musicClarinettoIIMvtII
+%					}
+%%					\new Staff {
+%%						\timeMvtII \nameStaffVIMvtII 
+%%						\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
+%%					}
+%				>>
+%				\new Staff {
+%					\timeMvtII \nameStaffVIIMvtII
+%					\partCombine #'(0 . 10) \musicFagottoIMvtII \musicFagottoIIMvtII
+%%					\musicFagottoIIMvtII
+%				}
+%			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
 %					\new Staff {
 %						\timeMvtII \nameStaffVIIIMvtII
-%						\partCombine \musicCornoIMvtII \musicCornoIIMvtII
+%						\partCombine #'(0 . 10) \musicCornoIMvtII \musicCornoIIMvtII
+%%						\musicCornoIIMvtII 
 %					}
-%					\new Staff {
-%						\timeMvtII \nameStaffIXMvtII
+					\new Staff {
+						\timeMvtII \nameStaffIXMvtII
 %						\partCombine \musicCornoIIIMvtII \musicCornoIVMvtII
-%					}
+						\musicCornoIIIMvtII
+					}
 %				>>
 %				\new Staff {
 %					\timeMvtII \nameStaffXMvtII
