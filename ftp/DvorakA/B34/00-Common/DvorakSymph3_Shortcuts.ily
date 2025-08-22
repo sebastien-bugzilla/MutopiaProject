@@ -68,6 +68,7 @@ brackmfpocoapococrescendo = \markup {
 mfbrackcresc = \markup {
 	\dynamic mf \bracket \with-true-dimensions \italic "cresc."
 }
+mfcresc = \markup { \dynamic mf \italic cresc. }
 %--------------------
 % dynamics fz
 %--------------------
@@ -81,6 +82,8 @@ brackfzpocoapococresc = \markup {
 	\italic "poco a poco cresc."
 }
 fzcresc = \markup { \dynamic fz \italic cresc.}
+fzdim = \markup {\dynamic fz \normal-text \italic dim.}
+fzdimD = #(make-dynamic-script fzdim)
 %--------------------
 % dynamics fzp
 %--------------------
@@ -284,6 +287,15 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
 	}
 }
+
+stemOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \offset length #offset Stem
+	#}
+)
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -545,14 +557,6 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 %	\revert TupletNumber.avoid-slur
 %}
 
-
-%stemOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \offset length #offset Stem
-%	#}
-%)
 
 %textInSlur = {
 %	%\once \override TextScript.outside-staff-priority = 0

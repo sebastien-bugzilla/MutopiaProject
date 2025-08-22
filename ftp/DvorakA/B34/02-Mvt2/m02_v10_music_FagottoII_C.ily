@@ -15,13 +15,13 @@ musicFagottoIIMvtII = \relative c {
 	gis8\p r r4
 	gis,8 r r4
 % Bars 6 to 10
-	gis8_\dimmarkup r r4
+	gis8 r r4
 	g8 r r4
 	g8\brack\pp r r4
 	r8 gis!->\< r gis->
 	r g-> r g->\!
 % Bars 11 to 15
-	eis4\mf( fis)\>
+	\stemUp eis4\mf( fis)\> \stemDown
 	<< gis2\p\<~ {s8 s s s\!}>>
 	<< gis2\> {s8 s s s\!}>>
 	cis8\pp r r4
@@ -37,7 +37,7 @@ musicFagottoIIMvtII = \relative c {
 % Bars 26 to 30
 	a'4\p r
 	a r \clef bass
-	ais,(\f b)\>
+	ais,\f b\>
 	fis\fzdimD( gis)
 	cis2(\pp
 % Bars 31 to 35
@@ -63,7 +63,7 @@ musicFagottoIIMvtII = \relative c {
 	cis4(\mf\> b8)\! r
 	cis4(\< fis,8)\! r
 	gis4\fp r
-	gis4_\fppocoapococresc r
+	gis4 r
 % Bars 51 to 55
 	gis4 r
 	g r
@@ -138,7 +138,7 @@ musicFagottoIIMvtII = \relative c {
 	
 % Bars 111 to 115
 	<< aes2(\fp\> {s8 s s s\!}>> \clef bass
-	<< ees,2)\> {s8 s s s\!}>>
+	<< \once \stemUp ees,2)\> {s8 s s s\!}>>
 	aes4->\p aes8-. aes16.-. ees32-.
 	aes4->\fp aes->
 	aes'-> aes8-. aes16.-. bes32-.
@@ -149,7 +149,7 @@ musicFagottoIIMvtII = \relative c {
 	c8\trill\< c16. des32 ees8\! r \clef bass
 	<< c4.\brack\fp\> {s8 s\! s}>> r8
 % Bars 121 to 125
-	<< c4.\fp\>^\pococrescendo {s8 s\! s}>> r8
+	<< c4.\fp\> {s8 s\! s}>> r8
 	<< c4.\fp\> {s8 s\! s}>> r8
 	<< c4.\fp\> {s8 s\! s}>> r8
 	c2\fp~
@@ -157,19 +157,19 @@ musicFagottoIIMvtII = \relative c {
 % Bars 126 to 130
 	des,,2\fp~
 	des
-	aes''8 aes16.(_\crescmarkup g32) aes8 r
+	aes''8 aes16.( g32) aes8 r
 	des,\<[ des des des]\!
 	des des des16 r r8
 % Bars 131 to 135
 	R2*3
 	
 	
-	r4 r8 \tuplet 3/2 8 {des16_\pbrackp des des
+	r4 r8 \tuplet 3/2 8 {des16 des des
 	\divideBeam des des des  des des des  des des des  des des des
 % Bars 136 to 140
 	des des des  des des des  des des des  des des des
 	des des des  f f f  bes, bes bes  ees ees ees
-	aes aes aes  aes aes aes  aes aes aes  ges ges ges
+	\divideBeam aes aes aes  aes aes aes  aes aes aes  ges ges ges
 	des\pp des des  des des des  des des des  des des des
 	des des des  des des des  des des des  des des des
 % Bars 141 to 145
@@ -204,7 +204,7 @@ musicFagottoIIMvtII = \relative c {
 	aes8 r r ces->
 % Bars 166 to 170
 	\tuplet 3/2 8 {\divideBeam bes16\mf bes bes  bes bes bes  bes bes bes  aes aes aes
-	bes bes bes  bes bes bes  bes_\brackM\crescmarkup bes bes  aes aes aes
+	bes bes bes  bes bes bes  bes bes bes  aes aes aes
 	bes\< bes bes  aes aes aes  ges ges ges  aes aes aes
 	ges ges ges  ges ges ges  aes aes aes  aes aes aes\!} \resetBeam
 	des4\ff~ des8.. ees32 
@@ -235,14 +235,14 @@ musicFagottoIIMvtII = \relative c {
 % Bars 191 to 195
 	
 	
-	a,4._\mfbrackcresc cis8->
+	a,4. cis8->
 	a4. cis8->
-	ges'!4.\<( des8)->\!
+	ges'!4.\<( des8)\!
 % Bars 196 to 200
-	ges4.(\< des8)->\!
+	ges4.(\< des8)\!
 	bes2\ff\<->
 	<< g {s8 s s s\!}>>
-	c,2_\ffbrackp~
+	c,2~
 	c8 r r4
 % Bars 201 to 205
 	R2*3
@@ -253,11 +253,11 @@ musicFagottoIIMvtII = \relative c {
 % Bars 206 to 210
 	c8-.\< c16.-. des32-. c8-.\! r
 	c r r4
-	c4.->_\fpp c8-.
+	c4.-> c8-.
 	c4.-> c8-.
 	d4.\< d8-.\!
 % Bars 211 to 215
-	ees2-^\ff~
+	ees2\ff~
 	ees8\< c4( d8)\!
 	ees\f r r4 \clef bass \section \mark \default
 	\key cis \minor << a,2\p\<~ {s8 s s s\!}>>
@@ -271,7 +271,7 @@ musicFagottoIIMvtII = \relative c {
 % Bars 221 to 225
 	R2*2
 	
-	fis4\fz\>( gis8) gis-.\!
+	\resetBeam fis4\fz\>( gis8) gis-.\!
 	e2\p~
 	<< e~\< {s8 s s s\!}>>
 % Bars 226 to 230
@@ -295,7 +295,7 @@ musicFagottoIIMvtII = \relative c {
 % Bars 241 to 245
 	
 	
-	cis,4_\brackfffz b16 r r8
+	cis,4 b16 r r8
 	cis4-> b16 r r8
 	cis4-> gis16 r r8
 % Bars 246 to 250

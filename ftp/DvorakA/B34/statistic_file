@@ -1,5 +1,5 @@
    191    520   6161 10_DvorakSymph3_Conductor_mvt1.ly
-   176    535   5846 10_DvorakSymph3_Conductor_mvt2.ly
+   177    536   5885 10_DvorakSymph3_Conductor_mvt2.ly
    165    440   5514 10_DvorakSymph3_Conductor_mvt3.ly
    219    513   4803 20_DvorakSymph3_Part01_Flauti.ly
    244    563   5189 20_DvorakSymph3_Part02_Oboi.ly
@@ -43,7 +43,7 @@
    565   1956  16360 00-Common/DvorakSymph3_NameVoice.ily
     67    188   1612 00-Common/DvorakSymph3_PaperConductors.ily
     65    186   1554 00-Common/DvorakSymph3_PaperParts.ily
-   692   2103  15962 00-Common/DvorakSymph3_Shortcuts.ily
+   696   2119  16099 00-Common/DvorakSymph3_Shortcuts.ily
    136    370   2353 00-Common/DvorakSymph3_Tempi.ily
     15     65    464 00-Common/DvorakSymph3_timeMvt.ily
    386   1738   8737 01-Mvt1/m01_v02_music_FlautoI.ily
@@ -93,8 +93,10 @@
    324   1349   7004 02-Mvt2/m02_v07_music_ClarinettoI.ily
    324   1306   6713 02-Mvt2/m02_v08_music_ClarinettoII_C.ily
    324   1306   6713 02-Mvt2/m02_v08_music_ClarinettoII.ily
-   121    329   1526 02-Mvt2/m02_v09_music_FagottoI.ily
-   121    329   1527 02-Mvt2/m02_v10_music_FagottoII.ily
+   328   1488   8576 02-Mvt2/m02_v09_music_FagottoI_C.ily
+   328   1407   7386 02-Mvt2/m02_v09_music_FagottoI.ily
+   328   1255   6547 02-Mvt2/m02_v10_music_FagottoII_C.ily
+   328   1249   6626 02-Mvt2/m02_v10_music_FagottoII.ily
    121    329   1524 02-Mvt2/m02_v11_music_CornoI.ily
    121    329   1525 02-Mvt2/m02_v12_music_CornoII.ily
    121    329   1526 02-Mvt2/m02_v13_music_CornoIII.ily
@@ -138,4 +140,4 @@
    315    814   3464 03-Mvt3/m03_v27_music_Viola.ily
    315    814   3470 03-Mvt3/m03_v28_music_Violoncello.ily
    315    814   3470 03-Mvt3/m03_v29_music_Contrabasso.ily
- 34399 121246 665255 total
+ 35474 126004 691513 total

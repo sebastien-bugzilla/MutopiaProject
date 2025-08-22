@@ -30,8 +30,8 @@
 \include "./02-Mvt2/m02_v06_music_CornoInglese.ily"
 \include "./02-Mvt2/m02_v07_music_ClarinettoI_C.ily"
 \include "./02-Mvt2/m02_v08_music_ClarinettoII_C.ily"
-\include "./02-Mvt2/m02_v09_music_FagottoI.ily"
-\include "./02-Mvt2/m02_v10_music_FagottoII.ily"
+\include "./02-Mvt2/m02_v09_music_FagottoI_C.ily"
+\include "./02-Mvt2/m02_v10_music_FagottoII_C.ily"
 \include "./02-Mvt2/m02_v11_music_CornoI.ily"
 \include "./02-Mvt2/m02_v12_music_CornoII.ily"
 \include "./02-Mvt2/m02_v13_music_CornoIII.ily"
@@ -106,10 +106,11 @@
 %						\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
 %					}
 				>>
-%				\new Staff {
-%					\timeMvtII \nameStaffVIIMvtII
-%					\partCombine \musicFagottoIMvtII \musicFagottoIMvtII
-%				}
+				\new Staff {
+					\timeMvtII \nameStaffVIIMvtII
+					\partCombine #'(0 . 10) \musicFagottoIMvtII \musicFagottoIIMvtII
+%					\musicFagottoIIMvtII
+				}
 			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
