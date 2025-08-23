@@ -4,8 +4,8 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombonoIIIMvtII = \relative c {
-	\clef bass
+musicTrombonoIIMvtII = \relative c {
+	\clef tenor
 	\key cis \minor
 %	\transposition a
 % Bars 1 to 5
@@ -73,10 +73,10 @@ musicTrombonoIIIMvtII = \relative c {
 	
 	
 	
-	c8-.\f r r4
+	a'8-.\f r r4
 	R2 \mark \default
 % Bars 126 to 130
-	des8.\fz r16 r4
+	aes8.\fz r16 r4
 	R2*26
 % Bars 131 to 135
 	
@@ -105,23 +105,23 @@ musicTrombonoIIIMvtII = \relative c {
 	
 	
 	
-	des8\ff r des8-> des16. aes32
+	f8\ff r f8-> ges16. f32
 % Bars 171 to 175
-	des8 r des r
-	des r des des16. aes32
-	des8  r des r
-	des des16. aes32 des8 r
-	des des16. aes32 des8 r
+	f8 r f r
+	f r f ees16. f32
+	f8  r f r
+	aes aes16. aes32 aes8 r
+	aes aes16. aes32 aes8 r
 % Bars 176 to 180
-	des4->\< bes8.-> aes16\!
-	ges8\brack\fz r ges' ges16. des32
-	ges8 r ges r
-	ges r ges ges16. des32
-	ges8 r ges r
+	aes4->\< bes8.-> aes16\!
+	ges8\brack\fz r bes bes16. aes32
+	bes8 r bes r
+	bes r bes bes16. aes32
+	bes8 r bes r
 % Bars 181 to 185
-	ges ges16. des32 ges8 r
-	ges ges16. des32 ges8 r
-	r16. ces,32[ ges16] r r16. ces32[ ges16] r
+	bes bes16. ces32 bes8 r
+	bes bes16. ces32 bes8 r
+	r16. ces32[ ges16] r r16. ces32[ ges16] r
 	r16. ces32[ ges16] r r4
 	R2*14
 % Bars 186 to 190
@@ -132,8 +132,8 @@ musicTrombonoIIIMvtII = \relative c {
 	
 	
 	
-	c2_\ffbrackp~
-	c8 r r4
+	g2~
+	g8 r r4
 % Bars 201 to 205
 	R2*12
 % Bars 206 to 210
@@ -141,8 +141,8 @@ musicTrombonoIIIMvtII = \relative c {
 % Bars 211 to 215
 	
 	
-	d4.\pp r8 \section \mark \default
-	\key cis \minor b4. r8
+	a4.\pp r8 \section \mark \default
+	\key cis \minor fis4. r8
 	R2*13
 % Bars 216 to 220
 	
@@ -162,9 +162,9 @@ musicTrombonoIIIMvtII = \relative c {
 	
 	
 	
-	r4 r8 f'16\f r
+	r4 r8 gis16\f r
 % Bars 246 to 250
-	r8 f16 r r8 f16 r
+	r8 gis16 r r8 gis16 r
 	R2*11
 % Bars 251 to 255
 	
