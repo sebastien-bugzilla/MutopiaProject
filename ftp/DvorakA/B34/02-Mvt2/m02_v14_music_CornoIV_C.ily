@@ -59,7 +59,7 @@ musicCornoIVMvtII = \relative c {
 % Bars 41 to 45
 	
 	
-	c,4.-^_\pbrackp r8
+	c,4.-^ r8
 	f4.-^ r8
 	<< e2\< {s8 s s s\!}>> \mark \default
 % Bars 46 to 50
@@ -131,9 +131,9 @@ musicCornoIVMvtII = \relative c {
 	R2*3
 	
 	
-	R2*2
+	\mmrPos #-6 R2
 % Bars 111 to 115
-	
+	R
 	<< bes2\brack\p\> {s8 s s s\!}>>
 	bes4\p bes8-. bes16.-. bes32-.
 	bes4->\fp bes->
@@ -142,10 +142,10 @@ musicCornoIVMvtII = \relative c {
 	bes4-> bes->
 	ees4.\fp r8
 	ees4.-> r8
-	<< ees4.\< {s8 s s\!}>> r8
+	<< \once \stemUp ees4.\< {s8 s s\!}>> r8
 	<< g4.\fp\> {s8 s\! s}>> r8
 % Bars 121 to 125
-	<< g4.\fp\>^\pococrescendo {s8 s\! s}>> r8
+	<< g4.\fp\> {s8 s\! s}>> r8
 	<< g4.\fp\> {s8 s\! s}>> r8
 	<< g4.\fp\> {s8 s\! s}>> r8
 	g2\fp~
@@ -153,7 +153,7 @@ musicCornoIVMvtII = \relative c {
 % Bars 126 to 130
 	aes,8-.[\fp aes-. aes-.] r
 	aes8-.[ aes-. aes-.] r
-	ees'8 ees16.(_\crescmarkup d32) ees8 r
+	ees'8 ees16.( d32) ees8 r
 	aes,8-.[\< aes-. aes-. aes-.]\!
 	aes[-. aes-. aes-.] r
 % Bars 131 to 135
@@ -192,9 +192,9 @@ musicCornoIVMvtII = \relative c {
 	ees4. r8
 % Bars 166 to 170
 	aes'16-.\mf aes-. aes-. aes-. aes r a8->(
-	aes16) aes-. aes-. aes-. aes_\brackM\crescmarkup r a8(->
+	aes16) aes-. aes-. aes-. aes r a8(->
 	aes16)\< r a8->[( aes16)] r a8(->
-	des,4)-> ees->\!
+	\stemUp des,4)-> ees->\!
 	aes4\ff~ aes8.. bes32
 % Bars 171 to 175
 	aes2~
@@ -219,14 +219,14 @@ musicCornoIVMvtII = \relative c {
 % Bars 191 to 195
 	
 	
-	e!4._\mfbrackcresc ges8->
+	e!4. ges8->
 	e!4. ges8->
 	des4.\< ees8->\!
 % Bars 196 to 200
 	des4.\< ees8->\!
 	c2->\ff\<
 	<< d!-> {s8 s s s\!}>>
-	d2_\ffbrackp~
+	d2~
 	d8 r r4
 % Bars 201 to 205
 	R2*7
@@ -267,7 +267,7 @@ musicCornoIVMvtII = \relative c {
 % Bars 241 to 245
 	
 	
-	e4_\brackfffz e16 r r8
+	e4 e16 r r8
 	e4-> e16 r r8
 	e4-> bes'16 r r8
 % Bars 246 to 250
@@ -285,11 +285,11 @@ musicCornoIVMvtII = \relative c {
 	
 	
 	\section
-	R2*4
-	
+	\mmrPos #-6 R2
+	\mmrPos #-6 R
 % Bars 266 to 270
-	
-	
+	R
+	R
 	R2*3
 	
 	
