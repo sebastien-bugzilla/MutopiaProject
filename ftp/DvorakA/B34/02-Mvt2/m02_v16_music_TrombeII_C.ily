@@ -4,10 +4,10 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIMvtII = \relative c {
+musicTrombeIIMvtII = \relative c {
 	\clef treble
 	\key a \minor
-	\transposition e
+	\transposition a
 % Bars 1 to 5
 	R2*33
 % Bars 6 to 10
@@ -24,7 +24,7 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	\time 2/8 r8 f'\fp~
+	\time 2/8 r8 f\fp~
 	\time 4/8 << f2\>~ {s8 s s s\!}>>
 % Bars 36 to 40
 	f8\pp r r4^\mutainf \transposition f
@@ -77,7 +77,7 @@ musicTrombeIMvtII = \relative c {
 	g8-.\f r r4
 	R2 \mark \default
 % Bars 126 to 130
-	ees8.\fz r16 r4
+	c8.\fz r16 r4
 	R2*26
 % Bars 131 to 135
 	
@@ -106,24 +106,24 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	aes,8\ff r aes8->^\marc aes16.-> bes32-.->
+	aes8\ff r aes8->^\marc aes16.-> bes32-.->
 % Bars 171 to 175
-	aes8 r aes r
-	c r c c16. des32
-	c8 r c r
-	ees ees16. f32 ees8 r
-	ees ees16. f32 ees8 r
-% Bars 176 to 180
-	ees4->\< f8.-> g16\!
-	aes8\brack\fz r aes aes16. bes32
 	aes8 r aes r
 	aes r aes aes16. bes32
 	aes8 r aes r
+	c c16. des32 c8 r
+	c c16. des32 c8 r
+% Bars 176 to 180
+	c4->\< c8.-> c16\!
+	des8\brack\fz r des des16. c32
+	des8 r des r
+	des r des des16. c32
+	des8 r des r
 % Bars 181 to 185
-	aes aes16. bes32 aes8 r
-	aes aes16. bes32 aes8 r
-	r16. bes32[ aes16] r r16. bes32[ aes16] r
-	r16. bes32[ aes16] r r4
+	f f16. ges32 f8 r
+	f f16. ges32 f8 r
+	r16. ges32[ f16] r r16. ges32[ f16] r
+	r16. ges32[ f16] r r4
 	R2*14
 % Bars 186 to 190
 	
@@ -133,7 +133,7 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	g2_\ffbrackp~
+	g,2~
 	g8 r r4^\mutaine \transposition e
 % Bars 201 to 205
 	R2*13
@@ -152,7 +152,7 @@ musicTrombeIMvtII = \relative c {
 	
 	\section
 	\time 2/8 R4 \section
-	\time 4/8 f2\fp~
+	\time 4/8 f'2\fp~
 	f8 r r4
 % Bars 231 to 235
 	R2*14
@@ -163,9 +163,9 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	r4 r8 g16\f r
+	r4 r8 bes,16\f r
 % Bars 246 to 250
-	r8 g16 r r8 g16 r
+	r8 bes16 r r8 bes16 r
 	R2*11
 % Bars 251 to 255
 	
