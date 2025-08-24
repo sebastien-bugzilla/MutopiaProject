@@ -27,5 +27,13 @@ correctionMvtII = \markup {
 	"Bar 142, Clarinet II : c on last beat is indicated as ees in part score.
 	
 	% bar 182 / Horn I to IV
-	"Bar 182, Horn I to IV : the rhythm indicated is wrong (the first note should be a sixteenth"
+	"Bar 182, Horn I to IV : the rhythm indicated is wrong (the first note should be a sixteenth."
+	
+	% bar 174 / Harpa
+	"Bar 174, Harpa : conductor suggest that sixteenth pattern begin on second beat whereas the part score suggest it begins on the third beat with 13 notes instead of 12 as in bar 178 - 180. This bar (and bar 175) is different in Simrock edition. I've decided to use the Simrock on this bar."
+	
+	% bar 175 / Harpa
+	"Bar 175, Harpa : Simrock edition gives another version. The simrock edition is used on this bar."
+	
+	
 }

@@ -144,14 +144,16 @@
 			\new Staff {
 				\timeMvtII \nameStaffXIIIMvtII \musicTimpaniMvtII
 			}
-%			\new GrandStaff \with { \nameGrandStaffVMvtII } <<
-%				\new Staff {
-%					\timeMvtII \nameStaffXIVMvtII \musicArpaUpMvtII
-%				}
-%				\new Staff {
-%					\timeMvtII \nameStaffXVMvtII \musicArpaDownMvtII
-%				}
-%			>>
+			\new PianoStaff \with { \nameGrandStaffVMvtII 
+%				\override StaffGrouper.staff-staff-spacing.minimum-distance = #10
+			} <<
+				\new Staff = "up" {
+					\timeMvtII \nameStaffXIVMvtII \musicArpaUpMvtII
+				}
+				\new Staff = "down" {
+					\timeMvtII \nameStaffXVMvtII \musicArpaDownMvtII
+				}
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffVIMvtII } <<
 %					\new Staff {

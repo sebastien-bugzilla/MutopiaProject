@@ -1,5 +1,5 @@
    191    520   6161 10_DvorakSymph3_Conductor_mvt1.ly
-   181    522   6004 10_DvorakSymph3_Conductor_mvt2.ly
+   183    523   6087 10_DvorakSymph3_Conductor_mvt2.ly
    165    440   5514 10_DvorakSymph3_Conductor_mvt3.ly
    219    513   4803 20_DvorakSymph3_Part01_Flauti.ly
    244    563   5189 20_DvorakSymph3_Part02_Oboi.ly
@@ -15,8 +15,8 @@
    119    313   3067 20_DvorakSymph3_Part12_Viola.ly
    119    313   3199 20_DvorakSymph3_Part13_Violoncello.ly
    118    311   3181 20_DvorakSymph3_Part14_Contrabasso.ly
-   186    721   4870 test.ly
-    31    231   1276 00-Common/DvorakSymph3_Corrections.ily
+   189    754   5138 test.ly
+    39    313   1714 00-Common/DvorakSymph3_Corrections.ily
    273    794   6753 00-Common/DvorakSymph3_CueVoice.ily
     10     60    543 00-Common/DvorakSymph3_Format_Cond_Mvt01.ily
     10     60    544 00-Common/DvorakSymph3_Format_Cond_Mvt02.ily
@@ -36,14 +36,14 @@
     18     79    872 00-Common/DvorakSymph3_Format_Part13_Violoncello.ily
     18     79    872 00-Common/DvorakSymph3_Format_Part14_Contrabasso.ily
     34    283   1846 00-Common/DvorakSymph3_Header.ily
-    84    322   2941 00-Common/DvorakSymph3_LayoutConductors.ily
+    91    345   3119 00-Common/DvorakSymph3_LayoutConductors.ily
     71    255   2504 00-Common/DvorakSymph3_LayoutParts.ily
     97    374   3219 00-Common/DvorakSymph3_NameGrandStaff.ily
    389   1266  10066 00-Common/DvorakSymph3_NameStaff.ily
    565   1956  16360 00-Common/DvorakSymph3_NameVoice.ily
     67    188   1612 00-Common/DvorakSymph3_PaperConductors.ily
     65    186   1554 00-Common/DvorakSymph3_PaperParts.ily
-   703   2154  16335 00-Common/DvorakSymph3_Shortcuts.ily
+   718   2198  16705 00-Common/DvorakSymph3_Shortcuts.ily
    136    370   2353 00-Common/DvorakSymph3_Tempi.ily
     15     65    464 00-Common/DvorakSymph3_timeMvt.ily
    386   1738   8737 01-Mvt1/m01_v02_music_FlautoI.ily
@@ -115,8 +115,8 @@
    188    486   2411 02-Mvt2/m02_v18_music_TrombonoII.ily
    188    486   2425 02-Mvt2/m02_v19_music_TrombonoIII.ily
    246    793   4047 02-Mvt2/m02_v21_music_Timpani.ily
-   121    329   1526 02-Mvt2/m02_v23_music_ArpaUp.ily
-   121    329   1526 02-Mvt2/m02_v24_music_ArpaDown.ily
+   230   1555   8726 02-Mvt2/m02_v23_music_ArpaUp.ily
+   221    721   3773 02-Mvt2/m02_v24_music_ArpaDown.ily
    121    329   1528 02-Mvt2/m02_v25_music_ViolinoI.ily
    121    329   1529 02-Mvt2/m02_v26_music_ViolinoII.ily
    121    329   1523 02-Mvt2/m02_v27_music_Viola.ily
@@ -148,4 +148,4 @@
    315    814   3464 03-Mvt3/m03_v27_music_Viola.ily
    315    814   3470 03-Mvt3/m03_v28_music_Violoncello.ily
    315    814   3470 03-Mvt3/m03_v29_music_Contrabasso.ily
- 38701 135371 743232 total
+ 38945 137172 754016 total

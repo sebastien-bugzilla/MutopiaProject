@@ -253,6 +253,14 @@ liiiri = {
 	\set stemLeftBeamCount = #3
 	\set stemRightBeamCount = #1
 }
+liiirii = {
+	\set stemLeftBeamCount = #3
+	\set stemRightBeamCount = #2
+}
+liiriii = {
+	\set stemLeftBeamCount = #2
+	\set stemRightBeamCount = #3
+}
 marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
 
 changeStaffName = #(define-music-function
@@ -303,6 +311,29 @@ stemOffset = #(define-music-function
 	#}
 )
 
+staffDown = \change Staff = "down"
+staffUp = \change Staff = "up"
+
+disconnectArpeggio = \set PianoStaff.connectArpeggios = ##f
+connectArpeggio = \set PianoStaff.connectArpeggios = ##t
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+beamGap = #(define-music-function
+	(gap)
+	(number?)
+	#{
+		\once \override Beam.auto-knee-gap = #gap
+	#}
+)
+
+omitAllTuplet = \override TupletNumber.stencil = ##f
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -328,22 +359,6 @@ stemOffset = #(define-music-function
 %	(number?)
 %	#{
 %		\once \override Voice.Arpeggio.padding = #padding
-%	#}
-%)
-
-%beamOffset = #(define-music-function
-%	(position)
-%	(pair?)
-%	#{
-%		\once \offset positions #position Beam
-%	#}
-%)
-
-%beamGap = #(define-music-function
-%	(gap)
-%	(number?)
-%	#{
-%		\once \override Beam.auto-knee-gap = #gap
 %	#}
 %)
 

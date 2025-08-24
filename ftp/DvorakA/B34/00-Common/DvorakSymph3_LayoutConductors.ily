@@ -14,6 +14,7 @@
 	\set Staff.soloText = #"I"
 	\set Staff.soloIIText = #"II"
 	\set Staff.aDueText = #"a2"
+	\set PianoStaff.connectArpeggios = ##t
 	\compressMMRests
 	\compressEmptyMeasures
 	\context {
@@ -54,6 +55,10 @@
 %		\override StaffSymbol.transparent = ##t
 	}
 	\context {
+		\PianoStaff
+%		\override TupletNumber.stencil = ##f
+	}
+	\context {
 		\Voice
 		\override TupletBracket.bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
@@ -62,6 +67,8 @@
 		\override Arpeggio.padding = #0.25
 		\override TupletNumber.avoid-slur = #'ignore
 		\override Beam.breakable = ##t
+%		\override Beam.damping = #5
+%		\override Beam.auto-knee-gap = #10
 		
 %		\override NoteHead.transparent = ##t
 %		\override Stem.transparent = ##t
