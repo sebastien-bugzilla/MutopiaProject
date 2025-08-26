@@ -27,6 +27,8 @@ pptranquillo = \markup {\dynamic pp \italic "tranquillo"}
 ppespress = \markup {\dynamic pp \italic espress.}
 ppsempre = \markup {\dynamic pp \italic sempre}
 ppcresc = \markup {\dynamic pp \italic cresc.}
+ppdim = \markup {\dynamic pp \italic dim.}
+pppococrescendo = \markup {\dynamic pp \italic "poco crescendo"}
 %--------------------
 % dynamics p
 %--------------------
@@ -56,6 +58,7 @@ pbrackespress = \markup {
 	\dynamic p
 	\bracket \with-true-dimensions \italic espress.
 }
+pbrackdim = \markup { \dynamic p \bracket \with-true-dimensions \italic dim.}
 %--------------------
 % dynamics mp
 %--------------------
@@ -158,15 +161,13 @@ pocoapococresc = \markup {\italic "poco a poco cresc."}
 brackpocoapococresc = \markup { \italic { \bracket \with-true-dimensions  "poco a poco" cresc }}
 pocoapococrescendo = \markup {\italic "poco a poco crescendo"}
 pococresc = \markup {\italic "poco cresc."}
-leggiero = \markup {\italic "leggiero"}
-marcato = \markup {\italic "marcato"}
 dimp = \markup {\italic "dim." \dynamic p}
 sempredim = \markup {\italic "sempre dim."}
 crescpocoapoco = \markup {\italic "cresc. poco a poco"}
-marcatiss = \markup {\italic marcatiss.}
 dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pococrescendo = \markup {\italic "poco crescendo"}
-marc = \markup {\italic marc.}
+dimin = \markup {\italic dimin.}
+moltocresc = \markup {\italic "molto cresc."}
 %--------------------
 % text indications
 %--------------------
@@ -178,6 +179,14 @@ sole = \markup {Sole}
 moltoespressivo = \markup { \italic "molto espressivo"}
 molto = \markup {\italic molto}
 espressivo = \markup {\italic espressivo}
+marc = \markup {\italic marc.}
+marcatiss = \markup {\italic marcatiss.}
+marcato = \markup {\italic "marcato"}
+leggiero = \markup {\italic "leggiero"}
+ivcorda = \markup {"4.Corda"}
+dolce = \markup {\italic dolce}
+morendo = \markup {\italic morendo}
+espress = \markup {\italic espress.}
 %--------------------
 % instrument modification
 %--------------------
