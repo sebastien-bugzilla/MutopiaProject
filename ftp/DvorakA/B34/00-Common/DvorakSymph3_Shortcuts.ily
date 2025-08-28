@@ -29,6 +29,10 @@ ppsempre = \markup {\dynamic pp \italic sempre}
 ppcresc = \markup {\dynamic pp \italic cresc.}
 ppdim = \markup {\dynamic pp \italic dim.}
 pppococrescendo = \markup {\dynamic pp \italic "poco crescendo"}
+ppdimsempre = \markup {\dynamic pp \italic "dim. sempre"}
+brackppmorendo = \markup {
+	\bracket \with-true-dimensions \dynamic pp \italic morendo
+}
 %--------------------
 % dynamics p
 %--------------------
@@ -59,6 +63,7 @@ pbrackespress = \markup {
 	\bracket \with-true-dimensions \italic espress.
 }
 pbrackdim = \markup { \dynamic p \bracket \with-true-dimensions \italic dim.}
+pdim = \markup {\dynamic p \italic dim.}
 %--------------------
 % dynamics mp
 %--------------------

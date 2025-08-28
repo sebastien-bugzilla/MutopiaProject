@@ -35,5 +35,9 @@ correctionMvtII = \markup {
 	% bar 175 / Harpa
 	"Bar 175, Harpa : Simrock edition gives another version. The simrock edition is used on this bar."
 	
+	% bar 121 / violin II
+	"Bar 121, Violin II : On the first beat, an half rest is written instead of a fourth rest."
 	
+	% bar 121 122 123 / violin II
+	"Bar 121 - 123, Violin II : In these measures in the conductor score, the last note is not included in the slur whereas it is in the part score. Part score is kept."
 }
