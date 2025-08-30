@@ -72,6 +72,11 @@ nameGrandStaffVIMvtII = {
 	\set Staff.shortInstrumentName = "Viol."
 	\set Staff.midiInstrument = #""
 }
+nameGrandStaffVIIMvtII = {
+	\set Staff.instrumentName = ""
+	\set Staff.shortInstrumentName = "Vle"
+	\set Staff.midiInstrument = #""
+}
 %###############################################################################
 %#             G R A N D   S T A F F   N A M E   :   M V T   I I I             #
 %###############################################################################

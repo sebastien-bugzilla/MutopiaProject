@@ -33,6 +33,7 @@ ppdimsempre = \markup {\dynamic pp \italic "dim. sempre"}
 brackppmorendo = \markup {
 	\bracket \with-true-dimensions \dynamic pp \italic morendo
 }
+ppsubito = \markup {\dynamic pp \italic subito}
 %--------------------
 % dynamics p
 %--------------------
@@ -192,6 +193,7 @@ ivcorda = \markup {"4.Corda"}
 dolce = \markup {\italic dolce}
 morendo = \markup {\italic morendo}
 espress = \markup {\italic espress.}
+unis = \markup {unis.}
 %--------------------
 % instrument modification
 %--------------------
