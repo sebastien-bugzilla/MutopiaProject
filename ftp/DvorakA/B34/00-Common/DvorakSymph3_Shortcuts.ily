@@ -34,6 +34,9 @@ brackppmorendo = \markup {
 	\bracket \with-true-dimensions \dynamic pp \italic morendo
 }
 ppsubito = \markup {\dynamic pp \italic subito}
+brackppespress = \markup {
+	\bracket \with-true-dimensions \dynamic pp \italic espress.
+}
 %--------------------
 % dynamics p
 %--------------------
@@ -65,6 +68,7 @@ pbrackespress = \markup {
 }
 pbrackdim = \markup { \dynamic p \bracket \with-true-dimensions \italic dim.}
 pdim = \markup {\dynamic p \italic dim.}
+pespress = \markup {\dynamic p \italic espress.}
 %--------------------
 % dynamics mp
 %--------------------
@@ -194,6 +198,7 @@ dolce = \markup {\italic dolce}
 morendo = \markup {\italic morendo}
 espress = \markup {\italic espress.}
 unis = \markup {unis.}
+espr = \markup {\italic espr.}
 %--------------------
 % instrument modification
 %--------------------

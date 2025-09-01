@@ -40,4 +40,7 @@ correctionMvtII = \markup {
 	
 	% bar 121 122 123 / violin II
 	"Bar 121 - 123, Violin II : In these measures in the conductor score, the last note is not included in the slur whereas it is in the part score. Part score is kept."
+	
+	% bar 43 / cello
+	"Bar 43, Cello : a supplementary 8th rest is printed and removed in the present version."
 }
