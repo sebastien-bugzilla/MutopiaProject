@@ -37,6 +37,7 @@ ppsubito = \markup {\dynamic pp \italic subito}
 brackppespress = \markup {
 	\bracket \with-true-dimensions \dynamic pp \italic espress.
 }
+ppmorendo = \markup {\dynamic pp \italic morendo}
 %--------------------
 % dynamics p
 %--------------------

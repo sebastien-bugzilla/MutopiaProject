@@ -319,7 +319,7 @@ musicVioloncelloMvtII = \relative c {
 	cis8\p r r4 \clef bass
 	r8 cis,[(\pp gis)] a16._\dimin gis32\fermata
 	cis4 <fis, ais>4^\div\fz\>~
-	q\! <f a>\pp(
+	q\! <fis a>\pp(
 % Bars 261 to 265
 	<cis gis'>) r
 	R2*2
@@ -500,6 +500,6 @@ musicVioloncelloDivisiMvtII = \relative c {
 % Bars 241 to 242
 	<< g2\mf\< {s8 s s s\!}>>
 	b8(\< a) gis!4\!
-% Bars 101 to 105
+% Bars 243 to 273
 	s2*31
 }
