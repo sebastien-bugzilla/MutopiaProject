@@ -94,18 +94,10 @@
 				\new Staff {
 					\timeMvtII \nameStaffIVMvtII \musicCornoIngleseMvtII
 				}
-				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
-					\new Staff {
-						\timeMvtII \nameStaffVMvtII \musicClarinettoIMvtII
-					}
-					\new Staff {
-						\timeMvtII \nameStaffVIMvtII \musicClarinettoIIMvtII
-					}
-%					\new Staff {
-%						\timeMvtII \nameStaffVIMvtII 
-%						\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
-%					}
-				>>
+				\new Staff {
+					\timeMvtII \nameStaffVIMvtII 
+					\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
+				}
 				\new Staff {
 					\timeMvtII \nameStaffVIIMvtII
 					\partCombine #'(0 . 10) \musicFagottoIMvtII \musicFagottoIIMvtII

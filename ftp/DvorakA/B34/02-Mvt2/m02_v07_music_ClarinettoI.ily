@@ -66,7 +66,7 @@ musicClarinettoIMvtII = \relative c {
 	
 % Bars 51 to 55
 	
-	<< aes,4.\fz\> {s8 s\! s}>> r8
+	<< aes,4.\fz\>^\pocoapococresc {s8 s\! s}>> r8
 	<< aes4.\fz\> {s8 s\! s}>> r8
 	r f'->\mf\< r g->\!
 	r fis!->\< r f->\!
@@ -197,7 +197,7 @@ musicClarinettoIMvtII = \relative c {
 	f8 r r \tuplet 3/2 8 {e16 e e
 	\divideBeam f f f  f f f  f f f  f f f 
 	f f f  f f f  f f f  f f f} \resetBeam
-	f8[(\< d c bes)]\!
+	f8[\< d( c bes)]\!
 % Bars 166 to 170
 	\tuplet 3/2 8 {\divideBeam c16\mf ees ees  ees ees ees  ees ees ees  fes fes fes
 	ees ees ees  ees ees ees  ees_\crescmarkup ees ees  fes fes fes
@@ -248,7 +248,7 @@ musicClarinettoIMvtII = \relative c {
 	f8-.\< f16. g32-. f8-.\! r
 % Bars 206 to 210
 	f8-.\< f16. g32-. f8-.\! r
-	f8-. f,16. g32-. aes8-. aes16.-. bes32-.\!
+	f8-.\< f,16. g32-. aes8-. aes16.-. bes32-.\!
 	f'4.->\fppD f8-.
 	fis4.-> fis8-.
 	g4.-\< g8-.\!
