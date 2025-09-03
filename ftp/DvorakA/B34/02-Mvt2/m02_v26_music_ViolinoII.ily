@@ -78,7 +78,7 @@ musicViolinoIIMvtII = \relative c {
 	\marcatoUpperSlur <gis b>4^\brackM\arco-^\f\>( a8) gis16(\! fis)
 	<cis e>2~
 	q8 r r4
-	<e g>8\pp r16 cis[^\pizz gis' cis,] r cis
+	<e g>8\pp r16 cis[^\pizz g' cis,] r cis
 	g' cis, r cis[ g' cis,] r cis
 % Bars 61 to 65
 	g'\< cis, r cis[ fis d] r d\!
@@ -306,11 +306,11 @@ musicViolinoIIMvtII = \relative c {
 	r4 r32 gis-> dis'-> b-> gis16->\noBeam r
 	r4 r32 gis-> d'-> b-> gis16->\noBeam r
 % Bars 246 to 250
-	r32 gis-> d'-> b-> gis16->\noBeam r r32 g-> d'-> b-> gis16->\noBeam r
+	r32 gis-> d'-> b-> gis16->\noBeam r r32 gis-> d'-> b-> gis16->\noBeam r
 	R2
 	r4 b'(\pp
 	bes a
-	gis g
+	gis! g
 % Bars 251 to 255
 	f\< dis!)\!
 	b!2_\moltocresc

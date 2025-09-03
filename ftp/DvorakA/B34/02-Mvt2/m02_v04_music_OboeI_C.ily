@@ -281,7 +281,7 @@ musicOboeIMvtII = \relative c {
 	gis4. fisis8)
 	fis!4(~ fis16 d cis b)
 	fis'8([\> d cis b])\!
-	cis \partCombineAutomatic r r4
+	a \partCombineAutomatic r r4
 % Bars 236 to 240
 	R2*3
 	

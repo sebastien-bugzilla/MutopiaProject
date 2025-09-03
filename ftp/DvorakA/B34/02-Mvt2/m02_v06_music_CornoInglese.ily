@@ -7,7 +7,7 @@
 musicCornoIngleseMvtII = \relative c {
 	\clef treble
 	\key gis \minor
-%	\transposition a
+	\transposition f
 % Bars 1 to 5
 	gis''4\fp( fis8) r
 	gis4(\fp fis8) r

@@ -11,7 +11,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 1 to 5
 	e'4(\fp dis8) r
 	e4(\fp dis8) r
-	cis4\fp\< f16.(\! e32\> d16. cis32)\!
+	cis4\fp\< fis16.(\! e32\> d16. cis32)\!
 	\tuplet 6/4 4 {bis16(\p\< fis gis a\! eis fis\>)} fis4\!
 	\tuplet 6/4 4 {r16 fis(\< gis a eis fis)} fis4\!
 % Bars 6 to 10

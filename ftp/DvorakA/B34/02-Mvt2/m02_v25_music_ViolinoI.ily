@@ -11,7 +11,7 @@ musicViolinoIMvtII = \relative c {
 % Bars 1 to 5
 	R2*2
 	
-	cis''4\fp\< f16.(\! e32\> d16. cis32)\!
+	cis''4\fp\< fis16.(\! e32\> d16. cis32)\!
 	bis8\p r r cis->^\pizz
 	bis r r cis->
 % Bars 6 to 10
@@ -283,7 +283,7 @@ musicViolinoIMvtII = \relative c {
 	r8 fis,([_\pbrackdim gis a)]
 	a4(~\< \tuplet 6/4 4 {a16 gis a cis b a)\!}
 % Bars 236 to 240
-	a4(~\< \tuplet 6/4 4 {a16 gis a cis b a)\!}
+	a4(~\< \tuplet 6/4 4 {a16 gis b a gis fis)\!}
 	e4(~\ff\> \tuplet 6/4 4 {e16 dis e fis e cis\pp)}
 	cis4(\ppp dis8) r
 	cis4(\< dis8)\! r

@@ -281,7 +281,7 @@ musicOboeIMvtII = \relative c {
 	gis4.\> fisis8)\!
 	fis!4(\pp~ fis16 d cis b)
 	fis'8([\> d cis b])\!
-	cis\pp r r4
+	a\pp r r4
 % Bars 236 to 240
 	R2*3
 	
