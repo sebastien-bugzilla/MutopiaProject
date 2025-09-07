@@ -119,7 +119,19 @@ tempiMvtII = {
 	\tempo "a tempo"
 }
 tempiMvtIII = {
-	\tempo "Allegro vivace"
+	\tempo \markup {
+		\concat {
+			"Allegro vivace "
+			\fontsize #-4 \general-align #Y #DOWN { \note {2} #1 }
+			" = 88"
+		}
+	}
+	s2*483
+	% bar 484
+	\tempo "Più mosso"
+	s2*40
+	% bar 524
+	\tempo "Tempo I."
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #

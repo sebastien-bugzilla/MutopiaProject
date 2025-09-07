@@ -70,6 +70,7 @@ pbrackespress = \markup {
 pbrackdim = \markup { \dynamic p \bracket \with-true-dimensions \italic dim.}
 pdim = \markup {\dynamic p \italic dim.}
 pespress = \markup {\dynamic p \italic espress.}
+semprep = \markup {\italic sempre \dynamic p}
 %--------------------
 % dynamics mp
 %--------------------
@@ -102,6 +103,7 @@ brackfzpocoapococresc = \markup {
 fzcresc = \markup { \dynamic fz \italic cresc.}
 fzdim = \markup {\dynamic fz \normal-text \italic dim.}
 fzdimD = #(make-dynamic-script fzdim)
+fzpococresc = \markup {\dynamic fz \italic "poco cresc."}
 %--------------------
 % dynamics fzp
 %--------------------
@@ -131,7 +133,7 @@ brackfppocoapococrescendo = \markup {
 %--------------------
 % dynamics f
 %--------------------
-
+fbrackcresc = \markup { \dynamic f \bracket \with-true-dimensions \italic cresc. }
 %--------------------
 % dynamics ff
 %--------------------
@@ -325,6 +327,12 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	}
 }
 
+naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
+	\concat { 
+		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \natural 
+	}
+}
+
 stemOffset = #(define-music-function
 	(offset)
 	(number?)
@@ -356,6 +364,18 @@ beamGap = #(define-music-function
 )
 
 omitAllTuplet = \override TupletNumber.stencil = ##f
+
+dottedPattern = #(define-music-function 
+	(noteA noteB noteC noteD)
+	(ly:music? ly:music? ly:music? ly:music?)
+	#{
+		$noteA[ r16 $noteB $noteC r16 $noteD]
+	#}
+)
+
+timeSignature = \set Staff.timeSignatureFraction = \etc
+unsetTimeSignature = \unset Staff.timeSignatureFraction
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -671,6 +691,15 @@ omitAllTuplet = \override TupletNumber.stencil = ##f
 %	#}
 %)
 
+%trillSpanCustom = #(define-music-function
+%	(number? markup?)
+%	% function to create a trill spanner with :
+%	%	- specified markup
+%	#{
+%		\once \override Score.TrillSpanner.bound-details.left.text = #markup
+%	#}
+%)
+
 %trillSpanPadding = #(define-music-function
 %	(padding)
 %	(number?)
@@ -702,8 +731,6 @@ omitAllTuplet = \override TupletNumber.stencil = ##f
 %		\translate #'(0.5 . 0.49) \tiny \flat 
 %	}
 %}
-
-
 
 %voltaShorten = #(define-music-function
 %	(shortLength)

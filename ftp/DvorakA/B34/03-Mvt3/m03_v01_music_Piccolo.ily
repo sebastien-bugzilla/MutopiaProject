@@ -9,7 +9,7 @@ musicPiccoloMvtIII = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	
+	R2*47
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -28,12 +28,28 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 46 to 50
 	
+	
+	r4 r8. bes'''16(\brack\f
+	ees2\fp~
+	\dottedPattern ees8) d16( f8) d16(
 % Bars 51 to 55
-	
+	ees2)~\fp
+	\dottedPattern ees8 d16( f8) d16(
+	\dottedPattern ees8) d16_\dimmarkup( f8) d16(
+	\dottedPattern ees8) g16( f8) ees16(
+	\dottedPattern d8) c16( f8) a,16(
 % Bars 56 to 60
-	
+	bes8) r r r32 a(\< bes c\!
+	des2)\fp~
+	\dottedPattern des8 c16( ees8) c16(
+	des2)\fp~
+	\dottedPattern des8 c16( ees8) c16(
 % Bars 61 to 65
-	
+	\dottedPattern des8)_\dimmarkup c16( ees8) c16(
+	\dottedPattern des8) f16( ees8) des16(
+	\dottedPattern c8) bes16( ees8) g,16(
+	aes8) r r4 \mark \default
+	R2*37
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -50,18 +66,35 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 101 to 105
 	
+	r4 \acciaccatura {bes16 c d} ees8\fz r
+	R2*15
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
 % Bars 116 to 120
 	
+	\mark \default
+	c2\fz-^~
+	c8 r r4
+	ees2-^~
 % Bars 121 to 125
+	ees8 r r4
+	g2-^~
+	g8 r r4
+	R2*4
 	
 % Bars 126 to 130
 	
-% Bars 131 to 135
 	
+	c,2-^~
+	c8 r r4
+	ees2-^~
+% Bars 131 to 135
+	ees8 r r4
+	bes'2-^~
+	bes8 r r4
+	R2*34
 % Bars 136 to 140
 	
 % Bars 141 to 145
@@ -76,6 +109,8 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 166 to 170
 	
+	\mark \default
+	R2*48
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -95,21 +130,51 @@ musicPiccoloMvtIII = \relative c {
 % Bars 211 to 215
 	
 % Bars 216 to 220
-	
+	r8.^\solo g,16[(\pp e8) r16 d](
+	c2~
+	\dottedPattern c8) c16( e8) g16(
+	c2~
+	\dottedPattern c8) c16( b8) gis16(
 % Bars 221 to 225
-	
+	a2~
+	\dottedPattern a8) c16( b8) gis16(
+	\dottedPattern a8) a16( g!8) c,16(
+	f4..)\fz-> g16(
+	a4..)\fz-> g16(
 % Bars 226 to 230
-	
+	f4..)\fz-> e16(
+	dis4..)\fz-> b16(
+	e4..)\fz-> g16(
+	fis4..)\fz-> d16(
+	g4) r
 % Bars 231 to 235
+	R2*2
 	
+	r8. d16[(\p b8) r16 a](
+	g2~
+	\dottedPattern g8) g16(\< b8) d16(
 % Bars 236 to 240
-	
+	g2)\!~
+	\dottedPattern g8 fis16(\< g8) a16(
+	bes!2~\!
+	bes8 a\> g f!)\!
+	ees4..->\fz d16(
 % Bars 241 to 245
-	
+	ees4..)->\fz d16(
+	ees4..)\fz-> f16(
+	ees8 d c bes)
+	ees4..->\fz d16(
+	ees4..)->\fz d16(
 % Bars 246 to 250
-	
+	ees4..)->\fz f16(
+	ees8 d c bes)
+	ees4..->_\fzpococresc d16(
+	cis4..)->\fz a16(
+	d4..)\fz->\< f16(
 % Bars 251 to 255
-	
+	e4..)->_\fzmarkup c!16(\!
+	f8) r r4
+	R2*53
 % Bars 256 to 260
 	
 % Bars 261 to 265
@@ -131,13 +196,27 @@ musicPiccoloMvtIII = \relative c {
 % Bars 301 to 305
 	
 % Bars 306 to 310
-	
+	r4 r8. bes16(
+	ees2)\fp~
+	\dottedPattern ees8 d16( f8) d16(
+	ees2\brack\fp~
+	\dottedPattern ees8) d16( f8) d16(
 % Bars 311 to 315
-	
+	\dottedPattern ees8) d16( f8) d16(
+	\dottedPattern ees8)_\dimmarkup g16( f8) ees16(
+	\dottedPattern d8) c16( f8) a,16(
+	bes8) r r r32 a(\< bes c\!
+	des2\fp~
 % Bars 316 to 320
-	
+	\dottedPattern des8\>) c16( ees8) c16(\!
+	des2\fp~
+	\dottedPattern des8) c16( ees8) c16(
+	\dottedPattern des8) c16( ees8) c16(
+	\dottedPattern des8) f16( ees8) des16(
 % Bars 321 to 325
-	
+	\dottedPattern c8) bes16( ees8) g,16( \mark \default
+	aes8) r r4
+	R2*70
 % Bars 326 to 330
 	
 % Bars 331 to 335
@@ -166,12 +245,27 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 391 to 395
 	
+	\mark \default
+	c2->\ff~
+	c8 r r4
+	ees2->~
 % Bars 396 to 400
+	ees8 r r4
+	g2->~
+	g8 r r4
+	R2*4
 	
 % Bars 401 to 405
 	
-% Bars 406 to 410
 	
+	c,2\ff~
+	c8 r r4
+	ees2->~
+% Bars 406 to 410
+	ees8 r r4
+	bes'2->~
+	bes8 r r4
+	R2*75
 % Bars 411 to 415
 	
 % Bars 416 to 420
@@ -202,14 +296,23 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 481 to 485
 	
-% Bars 486 to 490
 	
+	\mark \default
+	\scaleDurations 2/3 { 
+		\timeSignature 3/4 R2.*2
+	
+% Bars 486 to 490
+		\key e \major R2.*18
 % Bars 491 to 495
 	
 % Bars 496 to 500
 	
 % Bars 501 to 505
-	
+		
+		
+		
+	}
+	\unsetTimeSignature R2*20
 % Bars 506 to 510
 	
 % Bars 511 to 515
@@ -218,12 +321,28 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 521 to 525
 	
+	
+	\section
+	\key ees \major g,2->\ff~
+	g8 f( d ees)
 % Bars 526 to 530
-	
+	bes'2->~
+	bes8 a( fis g)
+	d'2->~
+	d8 c( bes a)
+	c( bes) g-. e-.
 % Bars 531 to 535
+	g( f) r4
+	R2*2
 	
+	g2->~
+	g8 f( d ees)
 % Bars 536 to 540
-	
+	bes'2->~
+	bes8 a( fis g)
+	f'2->~
+	f8 r r4
+	R2*29
 % Bars 541 to 545
 	
 % Bars 546 to 550
@@ -236,14 +355,34 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 566 to 570
 	
+	
+	\section
+	\key b \major R2*3
+	
 % Bars 571 to 575
-	
+	\mark \default
+	R2
+	r8. fis,16([\p dis8) r16 cis-.]
+	b2~
+	\dottedPattern b8\< b16( dis8) fis16-.\!
 % Bars 576 to 580
-	
+	b2\fz~
+	\dottedPattern b8\> b16( ais8) fisis16\!
+	gis2\p~
+	\dottedPattern gis8 b16( ais8) fisis16(
+	\dottedPattern gis8) gis16( fis!8) b,16(
 % Bars 581 to 585
-	
+	e4..)-> fis16(
+	gis4..)-> fis16(
+	e4..)-> dis16(
+	<< cisis4..)-> {s4 s8.\<} >> ais16(
+	dis4..)-> fis16(
 % Bars 586 to 590
-	
+	eis4..)-> cis16\!
+	<< fis2\fz\>~ {s8 s s s\!}>>
+	fis2~
+	fis4 r
+	R2*22
 % Bars 591 to 595
 	
 % Bars 596 to 600
@@ -254,27 +393,71 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 611 to 615
 	
+	r8. b16[(\p gis8) r16 fis-.]
+	e2~
+	\dottedPattern e8 e16( gis8) b16-.
+	e2~
 % Bars 616 to 620
-	
+	e4..-> dis16(
+	e4..)-> dis16(
+	e4..-> fis16
+	e8 dis cis b)
+	e4..->_\pocoapococrescendo dis16(
 % Bars 621 to 625
-	
+	e4..->) dis16(
+	e4..-> fis16
+	e8 dis cis b)
+	e4..(-> fis16
+	e8 dis cis b)
 % Bars 626 to 630
+	e4..->(\< fis16
+	e8 dis cis b)\!
+	fis'8\f r r4
+	R2*3
 	
 % Bars 631 to 635
-	
+	\section
+	\key ees \major R2
+	r4 d,16(\brack\f\< ees e f
+	ges8)\! r r4
+	r4 dis16(\< e f fis
 % Bars 636 to 640
-	
+	g!8)\! r r4
+	r ees!16(\< e f fis
+	g8)\! r r4
+	r \tuplet 3/2 4 {ees8(\< f g\!}
+	aes) r r4
 % Bars 641 to 645
-	
+	r ees16(\< f g aes\!
+	a8) r r4
+	r fis16(\< g gis a
+	b8)\! r r4
+	R2*7
 % Bars 646 to 650
 	
 % Bars 651 to 655
-	
+	\mark \default
+	ges'2\ff->~
+	\dottedPattern ges8 f16( aes8) f16(
+	ges2->~
+	\dottedPattern ges8) f16( aes8) f16(
 % Bars 656 to 660
-	
+	\dottedPattern ges8) f16( aes8) ges16(
+	bes8 ges ees bes)
+	f'( ees\< ces aes)
+	ges( f ees' des)\!
+	ges2->~
 % Bars 661 to 665
-	
+	\dottedPattern ges8 f16( aes8) f16(
+	ges2->~
+	\dottedPattern ges8) f16( aes8) f16(
+	\dottedPattern ges8) f16( aes8) ges16(
+	bes8 ges ees bes)
 % Bars 666 to 670
+	des( f ges g)
+	bes( aes ges ees)
+	des r r4
+	R2*13
 	
 % Bars 671 to 675
 	
@@ -282,14 +465,30 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 681 to 685
 	
+	r8 e(\f dis d16 cis
+	e8) r r4
+	r8 e( dis d16 cis
+	e8) r r4
 % Bars 686 to 690
-	
+	r8 e( dis d16 cis
+	e8) r r4
+	r r8 e(
+	dis\< d16 cis e8 d16 cis
+	f8 ees!16 des f8 ees16 des)\!
 % Bars 691 to 695
-	
+	ges8(\f f aes ges)
+	\flattrill << fes2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	ees8( des fes ees)
+	<< des2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	ces8( bes des ces)
 % Bars 696 to 700
-	
+	\naturaltrill << a2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	aes!8( g bes! aes)
+	<< ges2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	bes8( a c bes
+	ees) r r4
 % Bars 701 to 705
-	
+	R2*21
 % Bars 706 to 710
 	
 % Bars 711 to 715
@@ -298,18 +497,50 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 721 to 725
 	
+	r4 r8. ees16-.\f
+	d4..-> bes16
+	ees8 r r4
+	R2
 % Bars 726 to 730
-	
+	r4 r8. ees16
+	d4..-> bes16
+	ees8 r r4
+	r8 ees-. d-. bes-.
+	ees-. r r4
 % Bars 731 to 735
-	
+	r8 ees-. d-. bes-.
+	ees-. r r4
+	r8 ees-. d-. bes-.
+	ees-. r r4
+	r8 ees-. d-. bes-.
 % Bars 736 to 740
-	
+	ees2\brack\ff-^~
+	ees~
+	ees~
+	ees
+	g2-^~
 % Bars 741 to 745
-	
+	g~
+	g~
+	g
+	bes-^~
+	bes~
 % Bars 746 to 750
-	
+	bes~
+	bes
+	\dottedPattern ees,8-._\ffbrackp d16( f8) d16(
+	\dottedPattern ees8-.)_\pocoapococresc d16( f8) d16(
+	\dottedPattern ees8-.) d16( f8) d16(
 % Bars 751 to 755
-	
+	\dottedPattern ees8-.) d16( f8) d16(
+	\dottedPattern ees8-.) d16( f8) d16(
+	\dottedPattern ees8-.) d16( f8) d16(
+	\dottedPattern ees8-.) d16( f8) d16(
+	\dottedPattern ees8-.) d16( f8) d16(
 % Bars 756 to 760
+	ees8) r r4
+	R2*3
 	
+	
+	R2\fermata \fine
 }
