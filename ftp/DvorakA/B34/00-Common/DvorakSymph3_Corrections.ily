@@ -44,3 +44,8 @@ correctionMvtII = \markup {
 	% bar 43 / cello
 	"Bar 43, Cello : a supplementary 8th rest is printed and removed in the present version."
 }
+correctionMvtIII = \markup {
+	
+	% bar 261 / Oboe
+	"Bar 261, Oboe I : a missing e natural is added (same as in Fl.I)."
+}

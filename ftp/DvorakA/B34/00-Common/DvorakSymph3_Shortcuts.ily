@@ -104,6 +104,7 @@ fzcresc = \markup { \dynamic fz \italic cresc.}
 fzdim = \markup {\dynamic fz \normal-text \italic dim.}
 fzdimD = #(make-dynamic-script fzdim)
 fzpococresc = \markup {\dynamic fz \italic "poco cresc."}
+fzbrackcresc = \markup {\dynamic fz \bracket \with-true-dimensions \italic cresc.}
 %--------------------
 % dynamics fzp
 %--------------------
@@ -365,7 +366,7 @@ beamGap = #(define-music-function
 
 omitAllTuplet = \override TupletNumber.stencil = ##f
 
-dottedPattern = #(define-music-function 
+restPattern = #(define-music-function 
 	(noteA noteB noteC noteD)
 	(ly:music? ly:music? ly:music? ly:music?)
 	#{

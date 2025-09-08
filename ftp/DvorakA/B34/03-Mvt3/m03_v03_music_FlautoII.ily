@@ -39,7 +39,7 @@ musicFlautoIIMvtIII = \relative c {
 	\mark \default
 	aes'''4->\ff bes->
 % Bars 66 to 70
-	\dottedPattern c8-. ees16( c8) bes16-.
+	\restPattern c8-. ees16( c8) bes16-.
 	aes4-> bes->
 	c->( aes8) r
 	aes4-> bes->
@@ -47,14 +47,14 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 71 to 75
 	aes4-> bes->
 	c(-> aes8) r
-	\dottedPattern c8 d!16( ees8) d16-.
+	\restPattern c8 d!16( ees8) d16-.
 	c4( bes8) r
-	\dottedPattern aes8 bes16( c8) bes16-.
+	\restPattern aes8 bes16( c8) bes16-.
 % Bars 76 to 80
 	f4( g8) r
-	\dottedPattern c8 des16( ees8) d16-.
+	\restPattern c8 des16( ees8) d16-.
 	c4( bes8) r
-	\dottedPattern aes8 bes16( f8) bes16(
+	\restPattern aes8 bes16( f8) bes16(
 	g4.) r8
 % Bars 81 to 85
 	aes4-!\fp r
@@ -219,7 +219,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 321 to 325
 	\mark \default
 	aes4->\ff bes->
-	\dottedPattern c8 ees16( c8) bes16
+	\restPattern c8 ees16( c8) bes16
 	aes4-> bes->
 	c->( aes8) r
 % Bars 326 to 330
@@ -227,15 +227,15 @@ musicFlautoIIMvtIII = \relative c {
 	c8 r c8. bes16
 	aes4-> bes->
 	c->( aes8) r
-	\dottedPattern c8 des16( ees8) des16
+	\restPattern c8 des16( ees8) des16
 % Bars 331 to 335
 	c4( bes8) r
-	\dottedPattern aes8 bes16( c8) bes16
+	\restPattern aes8 bes16( c8) bes16
 	f4( g8) r
-	\dottedPattern c8 des16( ees8) d16
+	\restPattern c8 des16( ees8) d16
 	c4( bes8) r
 % Bars 336 to 340
-	\dottedPattern aes8 bes16( f8) bes16
+	\restPattern aes8 bes16( f8) bes16
 	g4.-> r8
 	R2*16
 % Bars 341 to 345
@@ -588,15 +588,15 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 746 to 750
 	ees~
 	ees
-	\dottedPattern ees8-._\ffbrackp d16( f8) d16(
-	\dottedPattern ees8-.)_\pocoapococresc d16( f8) d16(
-	\dottedPattern ees8-.) d16( f8) d16(
+	\restPattern ees8-._\ffbrackp d16( f8) d16(
+	\restPattern ees8-.)_\pocoapococresc d16( f8) d16(
+	\restPattern ees8-.) d16( f8) d16(
 % Bars 751 to 755
-	\dottedPattern ees8-.) d16( f8) d16(
-	\dottedPattern ees8-.) d16( f8) d16(
-	\dottedPattern ees8-.) d16( f8) d16(
-	\dottedPattern ees8-.) d16( f8) d16(
-	\dottedPattern ees8-.) d16( f8) d16(
+	\restPattern ees8-.) d16( f8) d16(
+	\restPattern ees8-.) d16( f8) d16(
+	\restPattern ees8-.) d16( f8) d16(
+	\restPattern ees8-.) d16( f8) d16(
+	\restPattern ees8-.) d16( f8) d16(
 % Bars 756 to 760
 	ees8) r r8. bes16\ff
 	g'2->\fz~
