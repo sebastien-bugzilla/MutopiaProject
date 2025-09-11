@@ -38,6 +38,7 @@ brackppespress = \markup {
 	\bracket \with-true-dimensions \dynamic pp \italic espress.
 }
 ppmorendo = \markup {\dynamic pp \italic morendo}
+pppococresc = \markup {\dynamic pp \italic "poco cresc."}
 %--------------------
 % dynamics p
 %--------------------
@@ -260,7 +261,9 @@ mmrPos = #(define-music-function
 omitFlag = \once \omit Flag
 omitBeam = \once \omit Beam
 omitDots = \once \omit Dots
+omitStem = \once \omit Stem
 aIIOmit = \once \omit Voice.CombineTextScript
+omitTupletNumber = \once \omit Voice.TupletNumber
 
 liiri = {
 	\set stemLeftBeamCount = #2
@@ -376,6 +379,14 @@ restPattern = #(define-music-function
 
 timeSignature = \set Staff.timeSignatureFraction = \etc
 unsetTimeSignature = \unset Staff.timeSignatureFraction
+
+noteShift = #(define-music-function
+	(shift)
+	(number?)
+	#{
+		\once \override NoteColumn.force-hshift = #shift
+	#}
+)
 
 
 
@@ -573,14 +584,6 @@ unsetTimeSignature = \unset Staff.timeSignatureFraction
 %	#}
 %)
 
-%noteShift = #(define-music-function
-%	(shift)
-%	(number?)
-%	#{
-%		\once \override NoteColumn.force-hshift = #shift
-%	#}
-%)
-
 %noteHeadEsw = #(define-music-function
 %	(spacing)
 %	(pair?)
@@ -681,7 +684,6 @@ unsetTimeSignature = \unset Staff.timeSignatureFraction
 
 %tupletAvoidSlur = \once \override TupletNumber.avoid-slur = #'ignore
 
-%omitTupletNumber = \once \omit Voice.TupletNumber
 
 
 %tremoloPosition = #(define-music-function
