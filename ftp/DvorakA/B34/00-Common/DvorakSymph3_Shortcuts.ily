@@ -72,6 +72,7 @@ pbrackdim = \markup { \dynamic p \bracket \with-true-dimensions \italic dim.}
 pdim = \markup {\dynamic p \italic dim.}
 pespress = \markup {\dynamic p \italic espress.}
 semprep = \markup {\italic sempre \dynamic p}
+ppococresc = \markup {\dynamic p \italic "poco cresc."}
 %--------------------
 % dynamics mp
 %--------------------
@@ -106,6 +107,7 @@ fzdim = \markup {\dynamic fz \normal-text \italic dim.}
 fzdimD = #(make-dynamic-script fzdim)
 fzpococresc = \markup {\dynamic fz \italic "poco cresc."}
 fzbrackcresc = \markup {\dynamic fz \bracket \with-true-dimensions \italic cresc.}
+fzbrackp = \markup { \dynamic fz \bracket \with-true-dimensions \dynamic p }
 %--------------------
 % dynamics fzp
 %--------------------

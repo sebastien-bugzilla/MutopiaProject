@@ -100,7 +100,7 @@ musicCornoIIMvtIII = \relative c {
 	ees4.-> r8
 	ees4-> ees->
 % Bars 86 to 90
-	r bes-^_\fbrackcresc
+	r bes-^
 	r bes-^
 	r bes-^
 	r bes-^
@@ -127,7 +127,7 @@ musicCornoIIMvtIII = \relative c {
 	bes,2\fp~
 	bes~
 	bes~
-	bes_\pocoapococresc
+	bes
 	r8. bes16\brack\f bes4~
 % Bars 111 to 115
 	bes2~
@@ -155,7 +155,7 @@ musicCornoIIMvtIII = \relative c {
 	ees2-^~
 % Bars 131 to 135
 	ees8 r r4
-	\marcatoUpperSlur b'!2-^(
+	\marcatoUpperSlur b'!2-^_(
 	c8) r r4
 	bes4-> r
 	a-> r
@@ -212,7 +212,7 @@ musicCornoIIMvtIII = \relative c {
 	bes4-.\p r
 % Bars 181 to 185
 	a-. r
-	ees-._\crescmarkup r
+	ees-. r
 	f-. r
 	f-. r
 	g-. r
@@ -484,7 +484,7 @@ musicCornoIIMvtIII = \relative c {
 	e-! e-!
 	e-! e-!
 % Bars 426 to 430
-	e-!_\brackM\semprep e-!
+	e-! e-!
 	e-! e-!
 	e-! e-!
 	e-! e-!
@@ -522,7 +522,7 @@ musicCornoIIMvtIII = \relative c {
 	r4 r8. c,16
 	c2\fz~
 	c~
-	c~\<_\pocoapococresc
+	c~\<
 	c~
 % Bars 466 to 470
 	<< c {s4 s\!}>>
@@ -767,12 +767,12 @@ musicCornoIIMvtIII = \relative c {
 	c-. r
 	aes-. r
 	a!-. r
-	bes2->_\fzbrackp~
+	bes2->~
 % Bars 701 to 705
 	bes~
 	bes8 r r4
 	r r8. bes16
-	bes2_\fzbrackp~
+	bes2~
 	bes~
 % Bars 706 to 710
 	bes8 r r4
@@ -822,7 +822,7 @@ musicCornoIIMvtIII = \relative c {
 	bes~
 	bes4. bes16-. bes-.
 	bes8 r r8. f16\mf
-	d4..->_\pocoapococresc c16-.
+	d4..-> c16-.
 	bes8-. r r4
 % Bars 751 to 755
 	R2
@@ -831,9 +831,9 @@ musicCornoIIMvtIII = \relative c {
 	bes8 r r4
 	R2
 % Bars 756 to 760
-	r4 r8. f''16_\fbrackf
+	r4 r8. \partCombineApart f''16
 	d2->~
-	d8 r r4
+	d8 \partCombineAutomatic r r4
 	c8-. r r4
 	bes8-. r r4\fermata \fine
 }
