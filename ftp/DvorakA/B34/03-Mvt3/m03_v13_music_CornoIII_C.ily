@@ -61,9 +61,9 @@ musicCornoIIIMvtIII = \relative c {
 	r4 c-.
 	d-. c-._\dimmarkup
 	bes8 r r4
-	R2*2
+	\partCombineApart R2*2
 % Bars 56 to 60
-	
+	\partCombineAutomatic
 	c2\fp
 	r4 ees-.
 	c2\fp
@@ -72,7 +72,7 @@ musicCornoIIIMvtIII = \relative c {
 	c-._\dimmarkup bes-.
 	aes r
 	f r
-	ees8 r r4 \mark \default
+	\once \partCombineApart ees8 r r4 \mark \default
 	g4->\ff aes->
 % Bars 66 to 70
 	bes8-> r r4
@@ -84,7 +84,7 @@ musicCornoIIIMvtIII = \relative c {
 	bes-> bes->
 	bes4.-> r8
 	d2->
-	g,4( bes8) r
+	\partCombineApart g,4( bes8) \partCombineAutomatic r
 	bes2->
 % Bars 76 to 80
 	c4-> d->
@@ -260,7 +260,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 	
-	r4 g-.\pp
+	\partCombineApart r4 g-.\pp
 % Bars 241 to 245
 	r f-.
 	r bes-.
@@ -278,7 +278,7 @@ musicCornoIIIMvtIII = \relative c {
 	c2\fz~
 	c~
 	<< c~\> {s8 s s s\!}>>
-	c8 r r4
+	c8 r r4 \partCombineAutomatic
 % Bars 256 to 260
 	R2*4
 	
@@ -302,7 +302,7 @@ musicCornoIIIMvtIII = \relative c {
 	e4->\f d->
 	r r8. a16
 	e'4-> d->
-	r r8. g,16
+	r r8. \once \partCombineApart g,16
 % Bars 276 to 280
 	g4 r
 	g4..\fz g16
@@ -344,8 +344,8 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 311 to 315
 	d-. c-.
 	bes8 r r4
-	R2*2
-	
+	\partCombineApart R2*2
+	\partCombineAutomatic
 	c2-^\fp
 % Bars 316 to 320
 	r4 bes-.\p
@@ -714,9 +714,9 @@ musicCornoIIIMvtIII = \relative c {
 	aes r aes r
 	bes-> r r4
 % Bars 666 to 670
-	ees,8-> r r4
+	\once \partCombineApart ees,8-> r r4
 	g8-> r r4
-	aes8-> r r4
+	\once \partCombineApart aes8-> r r4
 	R2*22
 % Bars 671 to 675
 	
@@ -741,14 +741,14 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 701 to 705
 	d~
 	d8 r r4
-	r r8. bes16
+	r r8. \once \partCombineApart bes16
 	d2_\fzbrackp~
 	d~
 % Bars 706 to 710
 	d8 r r4
-	r r8. bes16
+	r r8. \once \partCombineApart bes16
 	bes4\fz r
-	r r8. bes16
+	r r8. \once \partCombineApart bes16
 	bes4\fz r
 % Bars 711 to 715
 	R2*9
@@ -757,17 +757,17 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 	
-	bes2->\f~
+	\partCombineApart bes2->~
 % Bars 721 to 725
 	bes
-	bes\fz
-	c->\fz
-	bes->\fz~
+	bes 
+	\once \partCombineAutomatic c->\fz
+	bes->~
 	bes
 % Bars 726 to 730
-	bes->\fz
+	bes-> \partCombineAutomatic
 	c->\fz
-	bes8 r r4
+	\once \partCombineApart bes8 r r4
 	r8 f-. f-. f-.
 	bes-. r r4
 % Bars 731 to 735
