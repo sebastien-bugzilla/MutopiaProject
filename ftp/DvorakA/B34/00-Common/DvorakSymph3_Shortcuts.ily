@@ -138,6 +138,7 @@ brackfppocoapococrescendo = \markup {
 % dynamics f
 %--------------------
 fbrackcresc = \markup { \dynamic f \bracket \with-true-dimensions \italic cresc. }
+fmarc = \markup {\dynamic f \italic marc.}
 %--------------------
 % dynamics ff
 %--------------------

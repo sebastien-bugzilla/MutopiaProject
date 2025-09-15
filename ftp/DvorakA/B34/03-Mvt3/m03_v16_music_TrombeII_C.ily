@@ -75,7 +75,7 @@ musicTrombeIIMvtIII = \relative c {
 	ees4.-> r8
 	ees4-> ees->
 % Bars 86 to 90
-	r4 bes-^_\fbrackcresc
+	r4 bes-^
 	r bes-^
 	r bes-^
 	r bes-^
@@ -127,8 +127,8 @@ musicTrombeIIMvtIII = \relative c {
 	ees2-^~
 % Bars 131 to 135
 	ees8 r r4
-	f2-^~
-	f8 r r4
+	f2-^_(
+	f8) r r4
 	d-> r
 	ees-> r
 % Bars 136 to 140
@@ -179,7 +179,7 @@ musicTrombeIIMvtIII = \relative c {
 	r4 bes-^\f
 % Bars 181 to 185
 	r d-^
-	r ees-^_\brackM\crescmarkup
+	r ees-^
 	r f-^
 	r f-^
 	r e!-^\brack\fz
@@ -613,12 +613,12 @@ musicTrombeIIMvtIII = \relative c {
 	aes->
 	aes->
 	a!->
-	bes->_\fzbrackp~
+	bes->~
 % Bars 701 to 705
 	bes~
 	bes4. bes16\mf bes
 	bes4. bes16 bes
-	bes2_\fzbrackp~->
+	bes2~->
 	bes~
 % Bars 706 to 710
 	bes4. bes16\mf bes

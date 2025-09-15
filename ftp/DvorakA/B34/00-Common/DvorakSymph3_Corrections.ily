@@ -48,4 +48,7 @@ correctionMvtIII = \markup {
 	
 	% bar 261 / Oboe
 	"Bar 261, Oboe I : a missing e natural is added (same as in Fl.I)."
+	
+	% bar 419 / Trompete
+	"Bar 419, Tromba I & II : first beat is a quarter note in the conductor score, an eigth note in the part score."
 }
