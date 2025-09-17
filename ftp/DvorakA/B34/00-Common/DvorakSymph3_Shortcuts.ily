@@ -108,6 +108,7 @@ fzdimD = #(make-dynamic-script fzdim)
 fzpococresc = \markup {\dynamic fz \italic "poco cresc."}
 fzbrackcresc = \markup {\dynamic fz \bracket \with-true-dimensions \italic cresc.}
 fzbrackp = \markup { \dynamic fz \bracket \with-true-dimensions \dynamic p }
+fbrackz = \markup {\dynamic f \bracket \with-true-dimensions \dynamic z }
 %--------------------
 % dynamics fzp
 %--------------------

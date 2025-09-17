@@ -51,4 +51,7 @@ correctionMvtIII = \markup {
 	
 	% bar 419 / Trompete
 	"Bar 419, Tromba I & II : first beat is a quarter note in the conductor score, an eigth note in the part score."
+	
+	% bar 758 / Trombone I
+	"Bar 758, Trombone I : dynamic ff is not indicated in the conductor but present in part score. The dynamic is added in the conductor."
 }

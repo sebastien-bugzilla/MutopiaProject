@@ -40,7 +40,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	ees4->\ff ees->
 % Bars 66 to 70
 	ees8-> r r4
-	ees4-> ees->
+	ees4-> \once \partCombineApart ees->
 	aes4.-> r8
 	aes4-> aes->
 	aes-> r
@@ -48,18 +48,18 @@ musicTrombonoIIIMvtIII = \relative c {
 	aes-> aes->
 	ees4.-> r8
 	g2->
-	c,4( ees8) r
+	\partCombineApart c,4( ees8) \partCombineAutomatic r
 	aes2->
 % Bars 76 to 80
-	bes->
+	\once \partCombineApart bes->
 	aes4-> g->
 	c( bes8) r
 	aes4-> bes->
 	bes4.-> r8
 % Bars 81 to 85
-	aes,4->\brack\fp r
+	\partCombineApart  aes,4->\brack\fp r
 	aes-> r
-	aes4.-> r8
+	aes4.-> r8 \partCombineAutomatic
 	aes4.->\brack\p r8
 	aes4-> aes->
 % Bars 86 to 90
@@ -128,20 +128,20 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 % Bars 146 to 150
-	bes,4\fz r
+	\partCombineApart bes,4\fz r \partCombineAutomatic
 	R2
-	bes4\fz r
+	\partCombineApart bes4\fz r \partCombineAutomatic
 	R2
-	bes4\fz r
+	\partCombineApart bes4\fz r \partCombineAutomatic
 % Bars 151 to 155
 	R2
-	bes4-^\fz r
+	\partCombineApart bes4-^\fz r \partCombineAutomatic
 	R2
-	bes4-^\fz\< r
+	\partCombineApart bes4-^\fz\< r 
 	bes-^ r
 % Bars 156 to 160
 	bes-^ r
-	bes-^\! r
+	bes-^\! r \partCombineAutomatic
 	R2*3
 	
 	
@@ -162,13 +162,13 @@ musicTrombonoIIIMvtIII = \relative c {
 	ees2~\ff
 	ees8 r r4
 	R2
-	r4 c-^\f
+	\partCombineApart r4 c-^\f
 % Bars 181 to 185
 	r bes-^
 	r aes-^_\brackM\crescmarkup
 	r g-^
 	r ges-^
-	r f-^\fz
+	r f-^\fz \partCombineAutomatic
 % Bars 186 to 190
 	R2
 	bes'4-^\fz r
@@ -206,7 +206,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	
-	c,4-.\p r
+	\partCombineApart c,4-.\p r
 % Bars 241 to 245
 	ees-. r
 	f-. r
@@ -215,16 +215,16 @@ musicTrombonoIIIMvtIII = \relative c {
 	ees-. r
 % Bars 246 to 250
 	f-. r
-	bes,-. r
-	R2*7
+	bes,-. r \partCombineAutomatic
+	R2*7 
 % Bars 251 to 255
 	
 	
 	
 	
-	f4\pp r
+	\partCombineApart f4\pp r
 % Bars 256 to 260
-	f r
+	f r \partCombineAutomatic
 	R2*15
 % Bars 261 to 265
 	
@@ -232,10 +232,10 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 % Bars 271 to 275
 	
-	d'4->\f r
+	\partCombineApart d'4->\f r
 	c-> r
 	b-> r
-	a-> r
+	a-> r \partCombineAutomatic
 % Bars 276 to 280
 	fis'-^\fz r
 	R2
@@ -263,14 +263,14 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 296 to 300
 	
 % Bars 301 to 305
-	r4 r8. aes16\f
+	\partCombineApart r4 r8. aes16\f
 	f4..-> ees16
-	d8-. r r4
+	d8-. r r4 \partCombineAutomatic
 	R2*3
 	
 % Bars 306 to 310
 	
-	ees4-^\brack\f r
+	\partCombineApart ees4-^\brack\f r \partCombineAutomatic
 	R2*14
 % Bars 311 to 315
 	
@@ -280,7 +280,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	\mark \default
 	ees4->\ff ees->
 	ees-> r
-	ees-> ees->
+	ees-> \once \partCombineApart ees->
 	ees4.-> r8
 % Bars 326 to 330
 	aes4-> aes->
@@ -291,13 +291,13 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 331 to 335
 	c,4( ees8) r
 	aes2-^
-	bes-^
+	\once \partCombineApart bes-^
 	aes4-^ g-^
 	c4( bes8) r
 % Bars 336 to 340
 	aes4-^ bes4-^
 	bes4.-^ r8
-	aes,4-> ges->
+	\partCombineApart aes,4-> ges->
 	ces2->
 	fes->
 % Bars 341 to 345
@@ -305,12 +305,12 @@ musicTrombonoIIIMvtIII = \relative c {
 	ces-> bes->
 	ees2->
 	aes4-> fes->
-	ges2->
+	ges2-> \partCombineAutomatic
 % Bars 346 to 350
 	R2
-	e4(\brack\fz b8) r
+	\partCombineApart e4(\brack\fz b8) r \partCombineAutomatic
 	R2
-	e4(\brack\fz b8) r
+	\partCombineApart e4(\brack\fz b8) r \partCombineAutomatic
 	R2*4
 % Bars 351 to 355
 	
@@ -338,14 +338,14 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 376 to 380
 	
 % Bars 381 to 385
-	e,4-^\brack\f r
+	\partCombineApart e,4-^\brack\f r \partCombineAutomatic
 	R2
-	e4-^ r
+	\partCombineApart e4-^ r \partCombineAutomatic
 	R2
-	e4-^ r
+	\partCombineApart e4-^ r \partCombineAutomatic
 % Bars 386 to 390
 	R2
-	e4-^ r
+	\partCombineApart e4-^ r \partCombineAutomatic
 	R2*5
 % Bars 391 to 395
 	
@@ -467,8 +467,8 @@ musicTrombonoIIIMvtIII = \relative c {
 	f8 r r4
 	g4-> r
 % Bars 531 to 535
-	a-> a,8-> c->
-	ees4-> r
+	a-> \partCombineApart a,8-> c->
+	ees4-> \partCombineAutomatic r
 	R2
 	ees2-^~
 	ees8 r r4
@@ -543,7 +543,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	c8\fz r r4
 	R2
 	aes8\fz r r4
-	aes2-^_\fmarc~
+	\partCombineApart aes2-^_\fmarc~
 % Bars 646 to 650
 	aes
 	f4..-^ d16
@@ -551,7 +551,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	g
 	aes-^
 % Bars 651 to 655
-	bes4..-^ ces16 \mark \default
+	bes4..-^ ces16 \partCombineAutomatic \mark \default
 	bes2\ff-^~
 	bes8 r aes r
 	bes2-^~
@@ -580,11 +580,11 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 681 to 685
 	
 % Bars 686 to 690
-	ees2-^\f
+	\partCombineApart ees2-^\f
 	des-^
 	ces-^
 	a-^
-	aes!-^
+	aes!-^ \partCombineAutomatic
 % Bars 691 to 695
 	des4-.\f r
 	fes-. r
@@ -596,22 +596,22 @@ musicTrombonoIIIMvtIII = \relative c {
 	f-. r
 	ges-. r
 	f-. r
-	ees-. r 
+	\once \partCombineApart ees-. r  \partCombineAutomatic
 % Bars 701 to 705
 	R2*3
 	
 	
-	ees4\f r
+	\partCombineApart ees4\f r \partCombineAutomatic
 	R2*3
 % Bars 706 to 710
 	
 	
-	ees4\f r
+	\partCombineApart ees4\f r \partCombineAutomatic
 	R2
-	ees4\f r
+	\partCombineApart ees4\f r \partCombineAutomatic
 % Bars 711 to 715
 	R2
-	ees4-^\f r
+	\partCombineApart ees4-^\f r
 	ees-^ r
 	ees-^ r
 	ees-^ r
@@ -619,7 +619,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	ees-^ r
 	ees-^ r
 	ees-^ r
-	ees-^ r
+	ees-^ r \partCombineAutomatic
 	ees2->\fz(
 % Bars 721 to 725
 	des)
