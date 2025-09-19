@@ -140,6 +140,7 @@ brackfppocoapococrescendo = \markup {
 %--------------------
 fbrackcresc = \markup { \dynamic f \bracket \with-true-dimensions \italic cresc. }
 fmarc = \markup {\dynamic f \italic marc.}
+fcresc = \markup {\dynamic f \italic cresc.}
 %--------------------
 % dynamics ff
 %--------------------
@@ -227,7 +228,7 @@ timpinesb = \markup {
 		\lower #1 "Timp." "in Es, B"
 	}
 }
-
+mutaesinebinh = \markup {"muta Es in E, B in H"}
 %--------------------
 % functions
 %--------------------

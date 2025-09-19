@@ -137,9 +137,9 @@
 					}
 				>>
 			>>
-%			\new Staff {
-%				\timeMvtIII \nameStaffXIIIMvtIII \musicTimpaniMvtIII
-%			}
+			\new Staff {
+				\timeMvtIII \nameStaffXIIIMvtIII \musicTimpaniMvtIII
+			}
 %			\new RhythmicStaff {
 %				\timeMvtIII \nameStaffXIVMvtIII \musicTriangoloMvtIII
 %			}

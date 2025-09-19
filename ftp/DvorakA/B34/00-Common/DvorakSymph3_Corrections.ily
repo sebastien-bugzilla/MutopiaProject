@@ -54,4 +54,7 @@ correctionMvtIII = \markup {
 	
 	% bar 758 / Trombone I
 	"Bar 758, Trombone I : dynamic ff is not indicated in the conductor but present in part score. The dynamic is added in the conductor."
+	
+	% bar 287 / Timballes
+	"Bar 287, Timpani : In part score a tremolo is indicated on the first note. There is no tremolo in the conductor score."
 }
