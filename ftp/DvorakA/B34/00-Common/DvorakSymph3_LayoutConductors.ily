@@ -59,6 +59,10 @@
 %		\override TupletNumber.stencil = ##f
 	}
 	\context {
+		\RhythmicStaff
+		\RemoveEmptyStaves
+	}
+	\context {
 		\Voice
 		\override TupletBracket.bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f

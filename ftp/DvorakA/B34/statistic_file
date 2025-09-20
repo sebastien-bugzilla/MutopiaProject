@@ -1,6 +1,6 @@
     191     520    6161 10_DvorakSymph3_Conductor_mvt1.ly
     196     530    6399 10_DvorakSymph3_Conductor_mvt2.ly
-    172     479    5768 10_DvorakSymph3_Conductor_mvt3.ly
+    172     476    5765 10_DvorakSymph3_Conductor_mvt3.ly
     219     513    4803 20_DvorakSymph3_Part01_Flauti.ly
     244     563    5189 20_DvorakSymph3_Part02_Oboi.ly
     194     463    4539 20_DvorakSymph3_Part03_Clarinetti.ly
@@ -16,7 +16,7 @@
     119     313    3199 20_DvorakSymph3_Part13_Violoncello.ly
     118     311    3181 20_DvorakSymph3_Part14_Contrabasso.ly
     231     901    5952 test.ly
-     60     514    2706 00-Common/DvorakSymph3_Corrections.ily
+     63     540    2856 00-Common/DvorakSymph3_Corrections.ily
     273     794    6753 00-Common/DvorakSymph3_CueVoice.ily
      10      60     543 00-Common/DvorakSymph3_Format_Cond_Mvt01.ily
      10      60     544 00-Common/DvorakSymph3_Format_Cond_Mvt02.ily
@@ -36,7 +36,7 @@
      18      79     872 00-Common/DvorakSymph3_Format_Part13_Violoncello.ily
      18      79     872 00-Common/DvorakSymph3_Format_Part14_Contrabasso.ily
      34     283    1846 00-Common/DvorakSymph3_Header.ily
-     91     345    3119 00-Common/DvorakSymph3_LayoutConductors.ily
+     95     350    3172 00-Common/DvorakSymph3_LayoutConductors.ily
      71     255    2504 00-Common/DvorakSymph3_LayoutParts.ily
     102     390    3353 00-Common/DvorakSymph3_NameGrandStaff.ily
     389    1266   10066 00-Common/DvorakSymph3_NameStaff.ily
@@ -156,10 +156,10 @@
     660    1498    6965 03-Mvt3/m03_v20_music_Tuba_C.ily
     656    1472    6896 03-Mvt3/m03_v20_music_Tuba.ily
     644    1648    7954 03-Mvt3/m03_v21_music_Timpani.ily
-    315     814    3466 03-Mvt3/m03_v22_music_Triangolo.ily
+    483    1107    4711 03-Mvt3/m03_v22_music_Triangolo.ily
     315     814    3469 03-Mvt3/m03_v25_music_ViolinoI.ily
     315     814    3470 03-Mvt3/m03_v26_music_ViolinoII.ily
     315     814    3464 03-Mvt3/m03_v27_music_Viola.ily
     315     814    3470 03-Mvt3/m03_v28_music_Violoncello.ily
     315     814    3470 03-Mvt3/m03_v29_music_Contrabasso.ily
-  59349  197877 1068435 total
+  59524  198198 1069880 total

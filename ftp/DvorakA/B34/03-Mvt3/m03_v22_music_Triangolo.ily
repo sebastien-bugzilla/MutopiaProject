@@ -9,7 +9,7 @@ musicTriangoloMvtIII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	
+	R2*48
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -28,12 +28,28 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 46 to 50
 	
+	
+	
+	c2-^\p
+	R
 % Bars 51 to 55
-	
+	c-^
+	R
+	c4\p r
+	c r
+	c r
 % Bars 56 to 60
-	
+	c r
+	c2-^
+	R
+	c-^
+	R
 % Bars 61 to 65
-	
+	c4 r
+	c r
+	c r
+	c r \mark \default
+	R2*53
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -56,6 +72,8 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 116 to 120
 	
+	\mark \default
+	R2*50
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -76,6 +94,8 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 166 to 170
 	
+	\mark \default
+	R2*49
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -96,28 +116,73 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 216 to 220
 	
+	c4\pp r
+	R2
+	c4 r
+	R2
 % Bars 221 to 225
+	c4 r
+	R2*2
 	
+	c4 r
+	c r
 % Bars 226 to 230
-	
+	c r
+	c r
+	c r
+	c r
+	c2:16\ppp
 % Bars 231 to 235
-	
+	c:
+	c:
+	c4 r
+	R2
+	c4\pp r
 % Bars 236 to 240
-	
+	R2
+	c4 r
+	R2
+	c4 r
+	c4\p r
 % Bars 241 to 245
-	
+	c r
+	r c
+	r c
+	r c
+	r c
 % Bars 246 to 250
-	
+	r c
+	r c
+	R2
+	c4 r
+	R2
 % Bars 251 to 255
-	
+	c4 r
+	c2:16\brack\p
+	c:\>
+	c:\dimD
+	c8\brack\pp r r4
 % Bars 256 to 260
+	R2*4
 	
+	
+	
+	c4\p r
 % Bars 261 to 265
-	
+	c r
+	c c 
+	c r
+	c r
+	c r
 % Bars 266 to 270
-	
+	c c
+	c r
+	c c
+	c r
+	c c
 % Bars 271 to 275
-	
+	c r
+	R2*35
 % Bars 276 to 280
 	
 % Bars 281 to 285
@@ -132,12 +197,26 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 306 to 310
 	
+	c2-^\p
+	R
+	c-^
+	R
 % Bars 311 to 315
-	
+	c4 r
+	c r
+	c r
+	c r
+	c2-^\p
 % Bars 316 to 320
-	
+	R
+	c-^
+	R
+	c4 r
+	c r
 % Bars 321 to 325
-	
+	c r \mark \default
+	c r
+	R2*43
 % Bars 326 to 330
 	
 % Bars 331 to 335
@@ -155,9 +234,17 @@ musicTriangoloMvtIII = \relative c {
 % Bars 361 to 365
 	
 % Bars 366 to 370
-	
+	c4\p r
+	c r
+	c r
+	c2:16
+	c4 r
 % Bars 371 to 375
-	
+	c r
+	c r
+	<< c2:16 {s8\< s\! s\> s\!}>>
+	c4-> r
+	R2*18
 % Bars 376 to 380
 	
 % Bars 381 to 385
@@ -166,6 +253,8 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 391 to 395
 	
+	\mark \default
+	R2*91
 % Bars 396 to 400
 	
 % Bars 401 to 405
@@ -202,14 +291,34 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 481 to 485
 	
+	
+	\mark \default
+	c2:16\brack\f
+	c:
 % Bars 486 to 490
-	
+	c4 r
+	R2
+	c2:16
+	c:
+	c4 r
 % Bars 491 to 495
-	
+	R2
+	c2:16\brack\f
+	c:
+	c:
+	c:
 % Bars 496 to 500
-	
+	c:
+	c:
+	c:
+	c:
+	c:
 % Bars 501 to 505
-	
+	c:
+	c:
+	c:
+	c4-^ r
+	R2*19
 % Bars 506 to 510
 	
 % Bars 511 to 515
@@ -218,6 +327,9 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 521 to 525
 	
+	
+	\section
+	R2*45
 % Bars 526 to 530
 	
 % Bars 531 to 535
@@ -236,8 +348,13 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 566 to 570
 	
-% Bars 571 to 575
 	
+	\section
+	R2*3
+	
+% Bars 571 to 575
+	\mark \default
+	R2*60
 % Bars 576 to 580
 	
 % Bars 581 to 585
@@ -261,7 +378,8 @@ musicTriangoloMvtIII = \relative c {
 % Bars 626 to 630
 	
 % Bars 631 to 635
-	
+	\section
+	R2*20
 % Bars 636 to 640
 	
 % Bars 641 to 645
@@ -269,7 +387,8 @@ musicTriangoloMvtIII = \relative c {
 % Bars 646 to 650
 	
 % Bars 651 to 655
-	
+	\mark \default
+	R2*48
 % Bars 656 to 660
 	
 % Bars 661 to 665
@@ -288,28 +407,77 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 696 to 700
 	
+	
+	
+	
+	c2:16\f
 % Bars 701 to 705
-	
+	c:
+	c4 r
+	R2
+	c2:16
+	c:
 % Bars 706 to 710
-	
+	c4 r
+	R2
+	c2:16
+	c4 r
+	c2:16
 % Bars 711 to 715
-	
+	c4 r
+	R2*8
 % Bars 716 to 720
 	
+	
+	
+	
+	c2:16-^\f
 % Bars 721 to 725
-	
+	c4 r
+	c2:16
+	c4 r
+	c2:16
+	c4 r
 % Bars 726 to 730
-	
+	c2:16
+	c4 r
+	c r
+	r8 c-^ c-^ c-^
+	c4-^ r
 % Bars 731 to 735
-	
+	r8 c-^ c-^ c-^
+	c4-^ r
+	r8 c-^ c-^ c-^
+	c4-^ r
+	r8 c-^ c-^ c-^
 % Bars 736 to 740
-	
+	c2:16-^\brack\ff
+	c:
+	c:
+	c:
+	c:
 % Bars 741 to 745
-	
+	c:
+	c:
+	c:
+	c:
+	c:
 % Bars 746 to 750
-	
+	c:
+	c:
+	c:\p
+	c:_\pocoapococresc
+	c:
 % Bars 751 to 755
-	
+	c:
+	c:
+	c:
+	c:
+	c:
 % Bars 756 to 760
+	c8 r r4
+	R2*3
 	
+	
+	R2\fermata \fine
 }

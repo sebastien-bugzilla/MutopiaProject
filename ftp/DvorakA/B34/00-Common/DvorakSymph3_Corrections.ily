@@ -57,4 +57,7 @@ correctionMvtIII = \markup {
 	
 	% bar 287 / Timballes
 	"Bar 287, Timpani : In part score a tremolo is indicated on the first note. There is no tremolo in the conductor score."
+	
+	% bar 217 / triangle
+	"Bar 217, Triangle : the dynamic indicated in conductor score (pp) is different than the one indicated in part score (ppp)."
 }

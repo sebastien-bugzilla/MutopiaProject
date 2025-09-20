@@ -140,9 +140,9 @@
 			\new Staff {
 				\timeMvtIII \nameStaffXIIIMvtIII \musicTimpaniMvtIII
 			}
-%			\new RhythmicStaff {
-%				\timeMvtIII \nameStaffXIVMvtIII \musicTriangoloMvtIII
-%			}
+			\new RhythmicStaff {
+				\timeMvtIII \nameStaffXIVMvtIII \musicTriangoloMvtIII
+			}
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIVMvtIII } <<
 %					\new Staff {
