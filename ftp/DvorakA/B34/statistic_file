@@ -1,6 +1,6 @@
     191     520    6161 10_DvorakSymph3_Conductor_mvt1.ly
     196     530    6399 10_DvorakSymph3_Conductor_mvt2.ly
-    172     476    5765 10_DvorakSymph3_Conductor_mvt3.ly
+    172     537    5836 10_DvorakSymph3_Conductor_mvt3.ly
     219     513    4803 20_DvorakSymph3_Part01_Flauti.ly
     244     563    5189 20_DvorakSymph3_Part02_Oboi.ly
     194     463    4539 20_DvorakSymph3_Part03_Clarinetti.ly
@@ -16,7 +16,7 @@
     119     313    3199 20_DvorakSymph3_Part13_Violoncello.ly
     118     311    3181 20_DvorakSymph3_Part14_Contrabasso.ly
     231     901    5952 test.ly
-     63     540    2856 00-Common/DvorakSymph3_Corrections.ily
+     69     580    3038 00-Common/DvorakSymph3_Corrections.ily
     273     794    6753 00-Common/DvorakSymph3_CueVoice.ily
      10      60     543 00-Common/DvorakSymph3_Format_Cond_Mvt01.ily
      10      60     544 00-Common/DvorakSymph3_Format_Cond_Mvt02.ily
@@ -43,7 +43,7 @@
     565    1956   16360 00-Common/DvorakSymph3_NameVoice.ily
      67     188    1612 00-Common/DvorakSymph3_PaperConductors.ily
      65     186    1554 00-Common/DvorakSymph3_PaperParts.ily
-    775    2498   18935 00-Common/DvorakSymph3_Shortcuts.ily
+    778    2520   19118 00-Common/DvorakSymph3_Shortcuts.ily
     148     404    2532 00-Common/DvorakSymph3_Tempi.ily
      20      91     600 00-Common/DvorakSymph3_timeMvt.ily
     386    1738    8737 01-Mvt1/m01_v02_music_FlautoI.ily
@@ -157,9 +157,9 @@
     656    1472    6896 03-Mvt3/m03_v20_music_Tuba.ily
     644    1648    7954 03-Mvt3/m03_v21_music_Timpani.ily
     483    1107    4711 03-Mvt3/m03_v22_music_Triangolo.ily
-    315     814    3469 03-Mvt3/m03_v25_music_ViolinoI.ily
+    911    3440   19098 03-Mvt3/m03_v25_music_ViolinoI.ily
     315     814    3470 03-Mvt3/m03_v26_music_ViolinoII.ily
     315     814    3464 03-Mvt3/m03_v27_music_Viola.ily
     315     814    3470 03-Mvt3/m03_v28_music_Violoncello.ily
     315     814    3470 03-Mvt3/m03_v29_music_Contrabasso.ily
-  59524  198198 1069880 total
+  60129  200947 1085945 total

@@ -60,4 +60,10 @@ correctionMvtIII = \markup {
 	
 	% bar 217 / triangle
 	"Bar 217, Triangle : the dynamic indicated in conductor score (pp) is different than the one indicated in part score (ppp)."
+	
+	% bar 285 / Violino I
+	"Bar 285, Violino I : a rest is missing in the part score."
+	
+	% bar 230 / Violino I
+	"Bar 230, Violino I : a dot is missing on first rest of the measure."
 }

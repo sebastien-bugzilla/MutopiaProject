@@ -39,6 +39,8 @@ brackppespress = \markup {
 }
 ppmorendo = \markup {\dynamic pp \italic morendo}
 pppococresc = \markup {\dynamic pp \italic "poco cresc."}
+semprepp = \markup {\italic sempre \dynamic pp }
+ppbracknaturale = \markup {\dynamic pp \bracket \with-true-dimensions \italic naturale}
 %--------------------
 % dynamics p
 %--------------------
@@ -209,6 +211,7 @@ morendo = \markup {\italic morendo}
 espress = \markup {\italic espress.}
 unis = \markup {unis.}
 espr = \markup {\italic espr.}
+marcatissimo = \markup {\italic marcatissimo}
 %--------------------
 % instrument modification
 %--------------------
