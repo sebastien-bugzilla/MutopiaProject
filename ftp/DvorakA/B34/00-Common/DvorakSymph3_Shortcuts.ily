@@ -41,6 +41,7 @@ ppmorendo = \markup {\dynamic pp \italic morendo}
 pppococresc = \markup {\dynamic pp \italic "poco cresc."}
 semprepp = \markup {\italic sempre \dynamic pp }
 ppbracknaturale = \markup {\dynamic pp \bracket \with-true-dimensions \italic naturale}
+ppsulponticello = \markup {\dynamic pp \italic "sul ponticello"}
 %--------------------
 % dynamics p
 %--------------------
@@ -137,6 +138,7 @@ brackfppocoapococrescendo = \markup {
 	\bracket \with-true-dimensions \dynamic fp
 	\italic "poco a poco crescendo"
 }
+fpmarkup = \markup {\dynamic fp}
 %--------------------
 % dynamics f
 %--------------------
@@ -212,6 +214,7 @@ espress = \markup {\italic espress.}
 unis = \markup {unis.}
 espr = \markup {\italic espr.}
 marcatissimo = \markup {\italic marcatissimo}
+naturale = \markup {\italic naturale}
 %--------------------
 % instrument modification
 %--------------------
