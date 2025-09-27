@@ -76,6 +76,7 @@ pdim = \markup {\dynamic p \italic dim.}
 pespress = \markup {\dynamic p \italic espress.}
 semprep = \markup {\italic sempre \dynamic p}
 ppococresc = \markup {\dynamic p \italic "poco cresc."}
+pdimin = \markup {\dynamic p \italic dimin.}
 %--------------------
 % dynamics mp
 %--------------------
@@ -112,6 +113,7 @@ fzpococresc = \markup {\dynamic fz \italic "poco cresc."}
 fzbrackcresc = \markup {\dynamic fz \bracket \with-true-dimensions \italic cresc.}
 fzbrackp = \markup { \dynamic fz \bracket \with-true-dimensions \dynamic p }
 fbrackz = \markup {\dynamic f \bracket \with-true-dimensions \dynamic z }
+fzbrackmf = \markup {\dynamic fz \bracket \with-true-dimensions \dynamic m \dynamic f}
 %--------------------
 % dynamics fzp
 %--------------------
@@ -215,6 +217,7 @@ unis = \markup {unis.}
 espr = \markup {\italic espr.}
 marcatissimo = \markup {\italic marcatissimo}
 naturale = \markup {\italic naturale}
+tutti = \markup {Tutti}
 %--------------------
 % instrument modification
 %--------------------

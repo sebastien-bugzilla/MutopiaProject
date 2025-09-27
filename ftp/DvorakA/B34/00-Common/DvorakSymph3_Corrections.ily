@@ -66,4 +66,10 @@ correctionMvtIII = \markup {
 	
 	% bar 230 / Violino I
 	"Bar 230, Violino I : a dot is missing on first rest of the measure."
+	
+	% bar 368 / Viola
+	"Bar 368, Viola : the slur at the end of the measure is not ended at measure 369. No slur is printed in part score. The slur is removed."
+	
+	% bar 597 / Viola
+	"Bar 597, Viola upper voice : the natural is indicated for the f but should be printed for the d of the lower voice, similarly to bar 601"
 }
