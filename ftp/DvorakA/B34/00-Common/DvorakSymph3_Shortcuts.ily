@@ -154,6 +154,7 @@ fbrackf = \markup {
 	\concat { \dynamic f \bracket \with-true-dimensions \dynamic f }
 }
 ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
+brackfflegato = \markup {\bracket \with-true-dimensions \dynamic ff \italic legato }
 %--------------------
 % dynamics ffz
 %--------------------

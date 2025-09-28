@@ -72,4 +72,10 @@ correctionMvtIII = \markup {
 	
 	% bar 597 / Viola
 	"Bar 597, Viola upper voice : the natural is indicated for the f but should be printed for the d of the lower voice, similarly to bar 601"
+	
+	% bar 633 / Cello & Contrabass
+	"Bar 633, Cello & Contrabass : a rest is printed in total contradiction with rhythm."
+	
+	% bar 722 / Cello & Contrabass
+	"Bar 722, Cello & Contrabass : an accent is printed in conductor score, a marcato in the part score. The part score is more coherent with adjacent measures."
 }
