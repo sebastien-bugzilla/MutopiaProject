@@ -289,7 +289,7 @@ musicVioloncelloMvtIII = \relative c {
 	b g
 	ees! g'
 	ees! bes!
-	bes2->(\<^\arco
+	bes2->(\<^\arco_\espressivo
 % Bars 241 to 245
 	<< g'~ {s8 s s s\!}>>
 	g4) f4(~
