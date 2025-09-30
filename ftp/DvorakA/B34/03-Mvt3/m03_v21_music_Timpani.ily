@@ -431,7 +431,7 @@ musicTimpaniMvtIII = \relative c {
 	e-^ e-^ e-^ 
 	e-^ e-^ e-^ 
 	e-^ e-^ e-^ }
-	bes-^ r
+	b-^ r
 	R2*19
 % Bars 506 to 510
 	

@@ -253,7 +253,7 @@ musicViolinoIIMvtI = \relative c {
 	a16( f bes f) r8 a16( f bes f) r8 
 	a16( f bes f) r8 a16( f bes f) r8 
 	a16( f bes f) r8 a16( f bes f) r8 
-	bes16( f ces' aes ces aes ces\< aes ces aes ces aes
+	bes16( f ces' aes! ces aes ces\< aes ces aes ces aes
 	ces8) f,16( aes ces d! f d b d f aes)\!
 % Bars 211 to 215
 	\tuplet 3/2 8 { ges8.:16\pp ees: ces: ges':_\crescpocoapoco ees: ces:

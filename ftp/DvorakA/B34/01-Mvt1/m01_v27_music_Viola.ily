@@ -155,7 +155,7 @@ musicViolaMvtI = \relative c {
 % Bars 121 to 125
 	\repeat tremolo 6 {ges( bes}
 	\repeat tremolo 6 {ges\< bes)\!}
-	\repeat tremolo 6 {<d, ges>\p( <ges! bes>)}
+	\repeat tremolo 6 {<des, ges>\p( <ges! bes>)}
 	<< {\repeat tremolo 6 {<des aes'>( <aes' ces>)} } {s8\< s s\! s\> s s\!} >>
 	<ges bes>4 r8 r4 r8
 % Bars 126 to 130

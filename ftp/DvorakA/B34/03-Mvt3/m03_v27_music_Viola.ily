@@ -540,7 +540,7 @@ musicViolaMvtIII = \relative c {
 	<bes f'>-^ aes'8-.( f-.)
 % Bars 401 to 405
 	d8( bes f\< bes)
-	d[( f] \tuplet 3/2 4 {a c bes)\!}
+	d[( f] \tuplet 3/2 4 {aes c bes)\!}
 	aes,16->\ff bes-> c-> d->  ees-> f-> g-> aes->
 	aes,4-> r
 	f16-> g-> aes-> bes->  c-> d-> e-> f->

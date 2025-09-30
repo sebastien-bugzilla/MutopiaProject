@@ -17,6 +17,9 @@ correctionsMvtI = \markup {
 	
 	% bar 39 / Horn I
 	"Bar 39, Horn I : d natural is indicated in conductor score instead of d flat in part score. d flat is coherent with trumpet II.
+	
+	% bar 123 / Viola
+	"Bar 123, Viola : d natural is indicated on the lower voice of Viola but d flat is present and many other voice (Cello, V2, Horns, etc...)
 }
 correctionMvtII = \markup {
 	
