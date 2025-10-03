@@ -77,7 +77,7 @@ musicFagottoIMvtIII = \relative c {
 	\partCombineApart des2(~
 	des
 	c8) \partCombineAutomatic r r4 \clef bass \mark \default
-	aes4->\f aes->
+	aes4->\ff aes->
 % Bars 66 to 70
 	aes8-.-> r r4
 	aes4-> ees->

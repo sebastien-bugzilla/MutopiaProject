@@ -115,7 +115,7 @@ musicCornoIVMvtI = \relative c {
 	r f-. f-. r ges-.\< ges-.
 	r f-. f-. r ees-. ees-.\!
 % Bars 96 to 100
-	des4.-^ r4 r8
+	des4.-^\ff r4 r8
 	des4.-^ r4 r8
 	des4.-^ r4 r8
 	e4.\ff~ e8 f4->

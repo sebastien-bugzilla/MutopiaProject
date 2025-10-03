@@ -24,7 +24,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 21 to 25
 	
 % Bars 26 to 30
-	cis8 r r8. \tuplet 3/2 16 {cis32^\solo cis cis}
+	cis8\pp r r8. \tuplet 3/2 16 {cis32^\solo cis cis}
 	cis8 r r8. \tuplet 3/2 16 {cis32 cis cis}
 	cis8 r r8. \tuplet 3/2 16 {cis32 cis cis}
 	cis8[ r16 cis] gis_\dimmarkup r gis r

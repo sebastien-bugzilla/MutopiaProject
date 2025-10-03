@@ -136,7 +136,7 @@ musicContrabassoMvtII = \relative c {
 	
 	ees8\brack\p^\brackM\pizz r r4
 	aes,8\pp r r4
-	aes8\p^\brackM\pizz[ aes16 r32 ees'] aes,8 r
+	aes8\p[ aes16 r32 ees'] aes,8 r
 	aes r r4
 % Bars 116 to 120
 	aes8[ aes16 r32 ees'] aes,8 r
@@ -145,7 +145,7 @@ musicContrabassoMvtII = \relative c {
 	R2
 	c8\p[ c' c,] r
 % Bars 121 to 125
-	c[ c' c,] r
+	c[_\pocoapococrescendo c' c,] r
 	c[ c' c,] r
 	c[ c' c,] r
 	c16\brack\f^\arco r r8 r4

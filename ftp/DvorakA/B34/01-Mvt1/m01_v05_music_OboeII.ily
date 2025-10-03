@@ -180,7 +180,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 146 to 150
 	d
 	c-^\brack\f~
-	c
+	<< c {s8\< s s s s s\!}>>
 	ees4(\f\< d8 des4.\brack\fz~
 	des4) r8 r4 r8
 % Bars 151 to 155
@@ -196,9 +196,9 @@ musicOboeIIMvtI = \relative c {
 	\time 3/4 a( bes c bes) a( bes c bes) a( bes c bes)
 	\time 6/8 a( bes) c( bes) bes( aes) aes( g) g( f) f( ees)
 	f'4.\brack\fz d16( ees f ees d ees)
-	fis4.\fz d16( ees f ees d ees)
+	fis4.\brack\fz d16( ees f ees d ees)
 % Bars 166 to 170
-	fis4.\fz f16( ges aes ges f ges)
+	fis4.\brack\fz f16( ges aes ges f ges)
 	fis4.\brack\fz f16( ges aes ges f ges) \mark \default
 	a4.(\fzpD\> g!\!
 	f\< e

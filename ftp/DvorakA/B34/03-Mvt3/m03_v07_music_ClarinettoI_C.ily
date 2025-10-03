@@ -253,7 +253,7 @@ musicClarinettoIMvtIII = \relative c {
 	\partCombineApart b2~
 % Bars 261 to 265
 	b
-	a~
+	a\fz~
 	a \partCombineAutomatic
 	b4-. r
 	b-. r

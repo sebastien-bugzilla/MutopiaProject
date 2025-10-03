@@ -18,7 +18,7 @@ musicClarinettoIMvtII = \relative c {
 	dis) r r dis(\>
 	d!)\! r r ees(\brack\pp
 	d) r r ees \partCombineAutomatic
-	r d->\> r d->
+	r d->\< r d->
 	r d-> r d->\!
 % Bars 11 to 15
 	\partCombineApart d4 c16( a') e-. e-.
@@ -194,7 +194,7 @@ musicClarinettoIMvtII = \relative c {
 	ees4.\> ees8\!
 	aes4\pp \partCombineApart \stemDown \omitBeam aes8. aes16
 	\stemUp ces4(~\! ces16_\> bes aes ges)\!
-	ces4.\p \bar "!" \partCombineChords \tuplet 3/2 8 {ees,!16\pp ees ees \mark \default
+	ces4.\p \bar "!" \partCombineChords \tuplet 3/2 8 {ees,!16\fp ees ees \mark \default
 	\divideBeam f f f  f f f  f f f  e e e
 % Bars 161 to 165
 	f f f  f f f  f f f  e e e} \resetBeam

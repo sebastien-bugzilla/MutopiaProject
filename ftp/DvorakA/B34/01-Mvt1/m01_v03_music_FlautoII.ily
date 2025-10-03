@@ -187,10 +187,10 @@ musicFlautoIIMvtI = \relative c {
 	\time 3/4 a16( bes c bes) a( bes c bes) a( bes c bes)
 	\time 6/8 a16( bes) c( bes) bes( aes!) aes( g) g( f) f( ees)
 	a4.-^\brack\fz r4 r8
-	a4.-^\fz r4 r8
+	a4.-^\brack\fz r4 r8
 % Bars 166 to 170
-	cis4.-^\fz r4 r8
-	c!4.\fz r4 r8 \mark \default
+	cis4.-^\brack\fz r4 r8
+	c!4.\brack\fz r4 r8 \mark \default
 	c4\brack\fz r8 r4 r8
 	R2.*4
 	

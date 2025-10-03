@@ -517,7 +517,7 @@ musicViolaDivisiMvtI = \relative c {
 	<b g'!>: <c e>: <g! c>: <b g'>: <c e>: <g c>:
 	<cis aes'!>: <d f>: <gis, d'>: <cis aes'>: <d f>: <gis, d'>:\!}
 % Bars 216 to 220
-	d'16( \liiri cis \tuplet 3/2 8 {\lirii d cis \liiri d \lirii cis d cis  \setSextolet d cis d cis d c b a g)
+	d'16(\ff \liiri cis \tuplet 3/2 8 {\lirii d cis \liiri d \lirii cis d cis  \setSextolet d cis d cis d c b a g)
 	d'( cis d cis d cis d cis d  cis d cis d cis d} \unsetSextolet c32[ b a g])
 	\tuplet 3/2 8 {\setSextolet d'16( cis d cis d cis d cis d  cis d cis d cis d c b a)
 	d( cis d cis d cis d cis d  cis d cis d cis d c b a)} \unsetSextolet

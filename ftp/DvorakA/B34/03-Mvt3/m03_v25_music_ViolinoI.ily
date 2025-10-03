@@ -387,7 +387,7 @@ musicViolinoIMvtIII = \relative c {
 	bes8) r r r32 a(\< bes c\!
 	des2\fp~
 % Bars 316 to 320
-	\restPattern des8) c16( ees8) c16(\!
+	\restPattern des8)\> c16( ees8) c16(\!
 	des2\fp~
 	\restPattern des8) c16( ees8) c16(
 	\restPattern des8) c16( ees8) c16(
@@ -553,7 +553,7 @@ musicViolinoIMvtIII = \relative c {
 % Bars 461 to 465
 	\restPattern d!8) bes'16(\< f8) ees16\!(
 	d4) r
-	r8. bes'16[( f8) r16 ees](
+	r8. bes'16[(\mf f8) r16 ees](
 	d8)_\pocoapococresc r r4
 	R2
 % Bars 466 to 470

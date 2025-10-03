@@ -383,8 +383,8 @@ musicViolaMvtIII = \relative c {
 % Bars 276 to 280
 		<fis, a>:\fz
 		q:\fz
-		q:\fz
-		q:\fz
+		q:
+		q:
 		<ges ces>:\fz
 % Bars 281 to 285
 		q:
@@ -801,7 +801,7 @@ musicViolaMvtIII = \relative c {
 	r4 \tuplet 3/2 4 {<fis a>8( <d fis> <fis a>)}
 	r4 \tuplet 3/2 4 {<gis b>8( <e gis> <gis b>)}
 	r4 \tuplet 3/2 4 {<a cis>8( <e a!> <cis e>)}
-	fis,8[ r16 d']( a8)[ r16 fis](
+	fis,8[\p r16 d']( a8)[ r16 fis](
 % Bars 606 to 610
 	gis8)[\< r16 dis'!]( bis8)[ r16 gis](
 	cis8)[ r16 gis']( e8)[ r16 cis](

@@ -838,7 +838,7 @@ musicViolinoIIMvtIII = \relative c {
 	r r8. ees,16(
 	\restPattern ces'8)\fz bes16( des8) bes16(
 	ces4) r8. ees,16(
-	\restPattern bes'8) a16( c!8) a16(
+	\restPattern bes'8)\fz a16( c!8) a16(
 % Bars 711 to 715
 	bes4) r8. ees,16(
 	\restPattern aes8)\f g16( bes8) aes16(
@@ -885,7 +885,7 @@ musicViolinoIIMvtIII = \relative c {
 	bes: a: c: bes:
 	bes: a: c: bes:
 	\restPattern ees8_\ffbrackp d16( f8) d16(
-	\restPattern ees8)-. d16( f8) d16(
+	\restPattern ees8)-._\pocoapococresc d16( f8) d16(
 	\restPattern ees8)-. d16( f8) d16(
 % Bars 751 to 755
 	\restPattern ees8)-. d16( f8) d16(

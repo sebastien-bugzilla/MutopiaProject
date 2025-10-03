@@ -522,7 +522,7 @@ musicContrabassoMvtIII = \relative c {
 	\tuplet 3/2 2 {aes-> bes-> ces->
 	des-> ees-> f->}
 	ges-> r
-	\tuplet 3/2 2 {bes,-^\f ces-^ des-^
+	\tuplet 3/2 2 {bes,-^ ces-^ des-^
 	ees-^\< f-^ ges-^\!}
 % Bars 476 to 480
 	R2*2

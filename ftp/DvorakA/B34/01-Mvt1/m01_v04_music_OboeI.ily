@@ -196,9 +196,9 @@ musicOboeIMvtI = \relative c {
 	\time 3/4 a( bes c bes) a( bes c bes) a( bes c bes)
 	\time 6/8 a( bes) c( bes) bes( aes) aes( g) g( f) f( ees)
 	a4.\brack\fz d,16( ees f ees d ees)
-	a4.\fz d,16( ees f ees d ees)
+	a4.\brack\fz d,16( ees f ees d ees)
 % Bars 166 to 170
-	a4.\fz f16( ges aes ges f ges)
+	a4.\brack\fz f16( ges aes ges f ges)
 	a4.\brack\fz f16( ges aes ges f ges) \mark \default
 	a4.(\fzpD\> g!\!
 	f\< e
@@ -286,12 +286,12 @@ musicOboeIMvtI = \relative c {
 	ees2.(~\brack\pp
 	ees4\< aes16)\![ r32 g-.] f4(\> ees8)\!
 	f4(\<_\fppocoapococrescendo des'16)\![ r32 c-.] c4( bes8)
-	bes4(\fz ges'16)[ r32 f-.] f4( ees8)
+	bes4(\fz\< ges'16)[\! r32 f-.] f4( ees8)
 % Bars 241 to 245
-	ees4(\fz ges16)[ r32 f-.] f4( ees8)
-	ees4(\fz ges16)[ r32 f-.] f4( ees8)
-	e4(\fz\< g!16)[ r32 f-.] f4( e8)
-	f4(_\fzmarkup aes16)[ r32 g-.] g4( f8)\!
+	ees4(\fz\< ges16)[\! r32 f-.] f4( ees8)
+	ees4(\fz\< ges16)[\! r32 f-.] f4( ees8)
+	e4(\fz\< g!16)[\! r32 f-.] f4( e8)
+	f4(_\fzmarkup\< aes16)[\! r32 g-.] g4( f8)\!
 	fis2.\fz\<~
 % Bars 246 to 250
 	<< fis { s8 s s  s s s\!}>>

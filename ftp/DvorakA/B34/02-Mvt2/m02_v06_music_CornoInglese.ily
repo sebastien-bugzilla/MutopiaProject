@@ -129,7 +129,7 @@ musicCornoIngleseMvtII = \relative c {
 	ees4.->(\< ges8)\!
 % Bars 151 to 155
 	des4-> aes'(
-	ees)->\< g!8( bes)\!
+	ees)->\> g!8( bes)\!
 	ees,4.\pp \bar "!" r8
 	R2*5
 	

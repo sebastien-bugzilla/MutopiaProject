@@ -525,7 +525,7 @@ musicFlautoIIMvtIII = \relative c {
 	e) r r4
 % Bars 681 to 685
 	R2
-	r8 e([ dis d16 cis]
+	r8 e([\f dis d16 cis]
 	e8) r r4
 	r8 e[( dis d16 cis]
 	e8) r r4

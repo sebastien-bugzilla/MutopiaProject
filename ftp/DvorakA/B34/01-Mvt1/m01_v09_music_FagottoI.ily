@@ -104,7 +104,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 81 to 85
 	bes2.\<
 	<< ces( {s8 s s  s s s\!}>>
-	<< des2. {s8 s s  s s s\!}>>
+	<< des2. {s8\> s s  s s s\!}>>
 	ges,4)\brack\pp r8 r4 r8
 	r4 r8 f'16(\p ges\< aes ges f ges
 % Bars 86 to 90
@@ -202,10 +202,10 @@ musicFagottoIMvtI = \relative c {
 	\time 3/4 f-^ r ees-^ r d-^ r
 	\time 6/8 d-^ ees-^ f-^ g-^ aes-^ bes-^
 	c4.\brack\ff r4 r8
-	c4.\fz r4 r8
+	c4.\brack\fz r4 r8
 % Bars 166 to 170
-	des4.\fz r4 r8
-	ees4.\fz r4 r8 \mark \default
+	des4.\brack\fz r4 r8
+	ees4.\brack\fz r4 r8 \mark \default
 	e,8\brack\fz r r r4 r8
 	R2.*2
 	

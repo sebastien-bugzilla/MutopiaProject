@@ -517,7 +517,7 @@ musicCornoIVMvtIII = \relative c {
 	R2*2
 % Bars 476 to 480
 	
-	r4 r8. aes16
+	r4 r8. aes16\f
 	b4..->\fz fis16
 	b4..->\fz fis16
 	b4-> r
@@ -673,7 +673,7 @@ musicCornoIVMvtIII = \relative c {
 	
 % Bars 631 to 635
 	\section
-	bes,8 r r4
+	bes,8\f r r4
 	bes4..\fz bes16
 	bes8 r r4
 	bes2\fz~
@@ -796,7 +796,7 @@ musicCornoIVMvtIII = \relative c {
 	
 % Bars 751 to 755
 	
-	r4 r8. f'16\brack\f
+	r4 r8. f'16\f
 	d4..->\< c16\!
 	bes8 r r4
 	R2*3

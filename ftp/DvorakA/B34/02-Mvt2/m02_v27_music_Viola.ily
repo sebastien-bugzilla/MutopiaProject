@@ -118,7 +118,7 @@ musicViolaMvtII = \relative c {
 % Bars 81 to 85
 	fis-> a-> fis-> dis!->[ fis-> dis->] c-> ees-> c->} b'16\noBeam r
 	a32(\mf fis a \liiirii fis \liiriii a fis a fis  a fis a \liiirii fis \liiriii a fis dis fis)
-	a(\f fis a \liiirii fis\< \liiriii a fis a fis  a fis a \liiirii fis \liiriii a fis dis fis)\!
+	a( fis a \liiirii fis\< \liiriii a fis a fis  a fis a \liiirii fis \liiriii a fis dis fis)\!
 	a(\f fis a \liiirii fis \liiriii a fis c' a  gis e gis \liiirii e \liiriii gis e gis e)
 	\tuplet 6/4 4 {b'16( gis b gis b gis)_\dimmarkup a( fis a fis\brack\p a dis,)
 % Bars 86 to 90
@@ -167,7 +167,7 @@ musicViolaMvtII = \relative c {
 	a32(_\pococresc ges! ees ges a16) r a32( ges ees ges a16) r
 	bes32( g e g bes16) r bes32( g c g bes16) r
 	b32( aes f aes b16) r b32( aes d aes b16) r
-	ees,16\f^\unis r c32( ees ges f ees[ ges ees c] a ees' c a)
+	ees,16\brack\f^\unis r c32( ees ges f ees[ ges ees c] a ees' c a)
 	ges!(\< c a \liiirii ges \liiriii ees a ges ees) c( ges' ees \liiirii c) \liiriii a'-> gis-> g-> fis->\! \mark \default
 % Bars 126 to 130
 	aes!(\fp ces aes \liiirii ces \liiriii aes ces aes ces  aes ces aes \liiirii ces \liiriii aes ces aes ces)
@@ -213,7 +213,7 @@ musicViolaMvtII = \relative c {
 	r16. ees!32\p c!( ees aes! ees ges!16) r r8
 % Bars 161 to 165
 	r16. ees32 c( ees aes ees ges16) r r8
-	aes,32(\< ees' aes ees) r ges( bes ges)\! r f( aes f) r d( f d)\!
+	aes,32(\< ees' aes ees) r ges( bes ges)\! r f(\> aes f) r d( f d)\!
 	r16. ees32( c ees aes ees ges16) r r8
 	r16. ees32( c ees aes ees ges16) r r8
 	aes,32(\< ees' aes ees) r aes( c aes) r ges( bes ges) r f( aes f)\!
@@ -242,7 +242,7 @@ musicViolaMvtII = \relative c {
 	r16. <ces ees>32[-.-> <bes des>16]-.-> r r4
 	R2
 % Bars 186 to 190
-	r16^\pizz cis e gis a fisis gis r
+	r16^\pizz cis\pp e gis a fisis gis r
 	r cis, e gis a fisis gis r
 	r cis,(^\arco e gis fis e dis cis)
 	b(_\brack\p e, gis b c! ais b) r
@@ -333,7 +333,7 @@ musicViolaMvtII = \relative c {
 % Bars 256 to 260
 	r8 <e gis>[(\p\< <fis a>\> <dis fis>])\!
 	<cis e>\p r r4
-	r8 gis'[( e]~ e16)_\dimin fis\fermata
+	r8 gis'[(\pp e]~ e16)_\dimin fis\fermata
 	e4 <cis fis>->\fz\>~
 	q\! <cis_~ fis>\pp^(
 % Bars 261 to 265

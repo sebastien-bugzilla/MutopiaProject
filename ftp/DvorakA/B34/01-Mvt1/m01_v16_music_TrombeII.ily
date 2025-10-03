@@ -148,7 +148,7 @@ musicTrombeIIMvtI = \relative c {
 	e4.\ff r4 r8
 % Bars 166 to 170
 	e4.\brack\fz r4 r8
-	e4.\fz r4 r8 \mark \default
+	e4.\brack\fz r4 r8 \mark \default
 	b8\brack\fz r r r4 r8
 	R2.*17
 % Bars 171 to 175
@@ -233,10 +233,10 @@ musicTrombeIIMvtI = \relative c {
 	bes2.-^\fz
 	<< bes {s8\< s s  s s s\!}>>
 	cis,8-.\brack\fz r r r4 r8
-	c!-.\fz r r r4 r8
-	c-.\fz r r r4 r8
+	c!-.\brack\fz r r r4 r8
+	c-.\brack\fz r r r4 r8
 % Bars 286 to 290
-	b-.\fz r r r4 r8
+	b-.\brack\fz r r r4 r8
 	f'!4 r8 f4 r8
 	f4 r8 r4 r8
 	R2.

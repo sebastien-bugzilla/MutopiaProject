@@ -15,7 +15,7 @@ musicContrabassoMvtI = \relative c {
 	ees4 r8 ees4 r16 bes
 	d4\< r8 c4 r16 g\!
 % Bars 6 to 10
-	c4\fz r8 bes4.^\arco~
+	c4\fz r8 bes4.\fz^\arco~
 	bes\> aes\pp
 	g4 r8 g4-. r16 ees-.
 	<< aes2.\fp\> {s8 s s  s s s\!}>>
@@ -199,9 +199,9 @@ musicContrabassoMvtI = \relative c {
 	ees'4 des8~ des\<_\brackM\pococresc c-. bes-.\!
 	f'4 ees8~ ees des-. c-.
 	ges'4-^ f-^ ees-^
-	\time 3/4 d!8-^ r ees-^ r f-^ r
+	\time 3/4 d!8-^\f r ees-^ r f-^ r
 % Bars 161 to 165
-	\time 6/8 d-^\< ees-^ f-^ g!-^\! aes-^\> g-^\!
+	\time 6/8 d-^\< ees-^ f-^ g!-^\! aes-^ g-^
 	\time 3/4 f-^ r ees-^ r d-^ r
 	\time 6/8 d-^ ees-^ f-^ g!-^\! aes-^\> bes-^
 	c,4.\fz r4 r8

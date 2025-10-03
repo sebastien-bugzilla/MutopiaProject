@@ -270,7 +270,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 246 to 250
 	r bes-.
 	r a-.
-	r d,-.\p
+	r d,-._\ppococresc
 	r e-.
 	r\< a-.
 % Bars 251 to 255
@@ -517,7 +517,7 @@ musicCornoIIIMvtIII = \relative c {
 	R2*2
 % Bars 476 to 480
 	
-	r4 r8. aes16
+	r4 r8. aes16\f
 	b4..->\fz fis16
 	b4..->\fz fis16
 	b4-> r
@@ -673,7 +673,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 % Bars 631 to 635
 	\section
-	bes8 r r4
+	bes8\f r r4
 	bes4..\fz bes16
 	bes8 r r4
 	bes2\fz~
@@ -796,7 +796,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 % Bars 751 to 755
 	
-	r4 r8. f'16\brack\f
+	r4 r8. f'16\f
 	d4..->\< c16\!
 	bes8 r r4
 	R2*3

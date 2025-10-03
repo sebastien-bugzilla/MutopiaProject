@@ -197,7 +197,7 @@ musicFlautoIMvtII = \relative c {
 	ges16 r r8 r4
 	R2*12
 % Bars 186 to 190
-	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bars 191 to 195
 	
 % Bars 196 to 200

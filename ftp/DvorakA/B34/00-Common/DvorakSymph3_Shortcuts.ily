@@ -4,11 +4,41 @@
 %###############################################################################
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
+#(define-markup-command (bracketItalic layout props arg)
+  (markup?)
+  (let ((th 0.15) 
+        (m (interpret-markup layout props arg)))
+    (bracketify-stencil-italic m Y th (* 2.5 th) 0.5)))
 
-
-%--------------------
-% dynamics ppp
-%--------------------
+#(define-public (bracketify-stencil-italic stil axis thick protrusion padding)
+  "Add brackets around @var{stil}, producing a new stencil."
+  
+  (let* ((dimy (* 1.7 (cdr (ly:stencil-extent stil axis))))
+  		 (dimx (cdr (ly:stencil-extent stil (other-axis axis))))
+  		 (italic (* 0.25 dimy))
+  		 (alx (- padding))
+  		 (aly (+ (* dimy 0.12) (/ (- dimy) 2.0)))
+  		 (blx (- (- padding) protrusion))
+  		 (bly (+ (* dimy 0.12) (/ (- dimy) 2.0)))
+  		 (clx (+ italic (- (- padding) protrusion)))
+  		 (cly (+ (* dimy 0.12) (/ dimy 2.0)))
+  		 (dlx (+ italic (- padding)))
+  		 (dly (+ (* dimy 0.12) (/ dimy 2.0)))
+  		 (arx (- (+ dimx (* 0.3 padding)) italic))
+  		 (ary (+ (* dimy 0.12) (/ (- dimy) 2.0)))
+  		 (brx (- (+ dimx (+ (* 0.3 padding) protrusion)) italic))
+  		 (bry (+ (* dimy 0.12) (/ (- dimy) 2.0)))
+  		 (crx (+ dimx (+ (* 0.3 padding) protrusion)))
+  		 (cry (+ (* dimy 0.12) (/ dimy 2.0)))
+  		 (drx (+ dimx (* 0.3 padding)))
+  		 (dry (+ (* dimy 0.12) (/ dimy 2.0))))
+  	(ly:stencil-add (make-line-stencil thick alx aly blx bly)
+  					(make-line-stencil thick blx bly clx cly)
+  					(make-line-stencil thick clx cly dlx dly)
+  					stil
+  					(make-line-stencil thick arx ary brx bry)
+  					(make-line-stencil thick brx bry crx cry)
+  					(make-line-stencil thick crx cry drx dry))))
 
 %--------------------
 % dynamics pp
@@ -19,7 +49,7 @@ brackpppocoapococresc = \markup {
 	\italic "poco a poco cresc."
 }
 pbrackp = \markup {
-	\concat { \dynamic p \bracket \with-true-dimensions \dynamic p }
+	\concat { \dynamic p \bracketItalic \with-true-dimensions \dynamic p }
 }
 ppmoltoespress = \markup {\dynamic pp \italic "molto espress."}
 pptranquillomolto = \markup {\dynamic pp \italic "tranquillo molto"}
@@ -135,7 +165,7 @@ brackfppocoapococresc = \markup {
 	\italic "poco a poco cresc."
 }
 fppocoapococresc = \markup {\dynamic fp \italic "poco a poco cresc."}
-fbrackp = \markup {\dynamic f \bracket \with-true-dimensions \dynamic p}
+fbrackp = \markup {\dynamic f \bracketItalic \with-true-dimensions \dynamic p}
 brackfppocoapococrescendo = \markup {
 	\bracket \with-true-dimensions \dynamic fp
 	\italic "poco a poco crescendo"
@@ -167,7 +197,7 @@ ffzD = #(make-dynamic-script "ffz")
 ffp = \markup {\dynamic ffp}
 ffpD = #(make-dynamic-script "ffp")
 ffbrackp = \markup {
-	\concat { \dynamic ff \bracket \with-true-dimensions \dynamic p }
+	\concat { \dynamic ff \bracketItalic \with-true-dimensions \dynamic p }
 }
 %--------------------
 % dynamics fff
@@ -177,7 +207,7 @@ fffmarcatissimo = \markup {\dynamic fff \italic marcatissimo}
 % dynamics fff
 %--------------------
 brackfffz = \markup {
-	\concat { \bracket \with-true-dimensions \dynamic ff \dynamic fz }
+	\concat { \bracketItalic \with-true-dimensions \dynamic ff \dynamic fz }
 }
 
 %--------------------
@@ -243,7 +273,6 @@ mutaesinebinh = \markup {"muta Es in E, B in H"}
 %--------------------
 % functions
 %--------------------
-
 brack = #(define-event-function 
 	(dyn) (ly:event?)
 	(make-dynamic-script
@@ -403,8 +432,6 @@ noteShift = #(define-music-function
 		\once \override NoteColumn.force-hshift = #shift
 	#}
 )
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %aIIXoffset = #(define-music-function

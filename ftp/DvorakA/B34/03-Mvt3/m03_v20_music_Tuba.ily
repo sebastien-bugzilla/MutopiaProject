@@ -650,7 +650,7 @@ musicTubaMvtIII = \relative c {
 % Bars 756 to 760
 	ees8 r r4
 	R2
-	g8-. r r4
+	g8-.\ff r r4
 	bes8-. r r4
 	ees,8-. r r4\fermata \fine
 }

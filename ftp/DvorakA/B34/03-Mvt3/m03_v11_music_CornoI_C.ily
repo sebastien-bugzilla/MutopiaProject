@@ -684,7 +684,7 @@ musicCornoIMvtIII = \relative c {
 	fis2~
 	fis4 eis->
 	gis-> cis,->
-	<< fis2->\fz\>~ {s8 s s s\!}>>
+	<< fis2->\fz\>_\pocoapococrescendo~ {s8 s s s\!}>>
 % Bars 621 to 625
 	fis2~
 	fis4 eis->

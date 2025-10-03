@@ -374,7 +374,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 411 to 415
 	f-^ r
 	g-^ r
-	fis8-.\brack\fz r r4
+	fis8-.\fz r r4
 	R2
 	r4 fis8-. r
 % Bars 416 to 420

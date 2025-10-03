@@ -253,7 +253,7 @@ musicOboeIMvtII = \relative c {
 	bes4.-> bes8-.
 	b4.\< b8-.\!
 % Bars 211 to 215
-	\marcatoUpperSlur c2(~-^
+	\marcatoUpperSlur c2(~\ff-^
 	c4.\< d8\!
 	ees8)\f r r4 \section \mark \default
 	\key cis \minor R2*2

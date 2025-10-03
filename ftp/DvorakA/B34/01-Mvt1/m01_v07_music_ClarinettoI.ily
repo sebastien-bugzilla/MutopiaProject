@@ -201,9 +201,9 @@ musicClarinettoIMvtI = \relative c {
 	\time 3/4 b( c d c) b( c d c) b( c d c)
 	\time 6/8 b( c) d( c) c( bes!) bes( a) a( g) g( f)
 	f'4.\brack\fz e16( f g f e f)
-	f4.\fz e16( f g f e f)
+	f4.\brack\fz e16( f g f e f)
 % Bars 166 to 170
-	ees4.\fz g16( aes bes! aes g aes)
+	ees4.\brack\fz g16( aes bes! aes g aes)
 	d,4.\brack\fz g16( aes bes aes g aes) \mark \default
 	b4.(\fzpD\> a!\!
 	g\< fis

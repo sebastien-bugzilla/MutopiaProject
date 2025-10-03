@@ -15,7 +15,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 11 to 15
 	
 	f''4(\brack\p\< des'16)[\! r32 c-.] c4( bes8)
-	bes4(\<_\crescmarkup ges'16)[ r32 f-.] f4( ees8)
+	bes4(\<_\crescmarkup ges'16)[\! r32 f-.] f4( ees8)
 	ees4.(~\brack\fz ees16 d f ees ces aes)
 	ges4._\dimmarkup f4(\brack\p bes8)
 % Bars 16 to 20
@@ -187,10 +187,10 @@ musicFlautoIMvtI = \relative c {
 	\time 3/4 a16( bes c bes) a( bes c bes) a( bes c bes) \textEndMark "-de"
 	\time 6/8 a16( bes) c( bes) bes( aes!) aes( g) g( f) f( ees)
 	ees'4.\brack\fz d16( ees f ees d ees)
-	ees4.\fz d16( ees f ees d ees)
+	ees4.\brack\fz d16( ees f ees d ees)
 % Bars 166 to 170
-	ges4.\fz f16( ges aes ges f ges)
-	ges4.\fz f16( ges aes ges f ges) \mark \default
+	ges4.\brack\fz f16( ges aes ges f ges)
+	ges4.\brack\fz f16( ges aes ges f ges) \mark \default
 	a4\brack\fz r8 r4 r8
 	R2.*4
 	
@@ -238,7 +238,7 @@ musicFlautoIMvtI = \relative c {
 	f8 r r f,-.\pp f-. r
 % Bars 206 to 210
 	f-. f-. r f-. f-. r
-	f-. f-. r f-. f-. r
+	f-. f-. r f-. f-. r %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	f-. f-. r f-. f-. r
 	<< f'2.~ {s8\< s s  s s s\!}>>
 	<< f2. {s8\> s s  s s s\!}>>

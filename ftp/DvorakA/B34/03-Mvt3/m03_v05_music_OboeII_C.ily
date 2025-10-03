@@ -736,7 +736,7 @@ musicOboeIIMvtIII = \relative c {
 	g~
 	g
 	\restPattern ees8-._\ffbrackp d16( f8) d16(
-	\restPattern ees8-.) d16( f8) d16(
+	\restPattern ees8-.)_\pocoapococresc d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 % Bars 751 to 755
 	\restPattern ees8-.) d16( f8) d16(

@@ -336,7 +336,7 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	
-	ees2:16-^\ff
+	ees2:16-^\f
 	ees:
 % Bars 391 to 395
 	ees:
@@ -355,7 +355,7 @@ musicTimpaniMvtIII = \relative c {
 	<< bes: {s8 s s s\!}>>
 	ees8-^\ff ees-^ ees-^ ees-^ 
 	ees4-^ r
-	ees8-^\ff ees-^ ees-^ ees-^ 
+	ees8-^ ees-^ ees-^ ees-^ 
 % Bars 406 to 410
 	ees4-^ r
 	bes2:16\ff

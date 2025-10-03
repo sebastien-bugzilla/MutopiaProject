@@ -18,7 +18,7 @@ musicClarinettoIIMvtII = \relative c {
 	a8_\dimmarkup r r4
 	aes8 r r4
 	f8\brack\pp r r4
-	r8 f->\> r g->
+	r8 f->\< r g->
 	r ges-> r f->\!
 % Bars 11 to 15
 	f4(\mf e)\>
@@ -194,7 +194,7 @@ musicClarinettoIIMvtII = \relative c {
 	c4.\> ces8\!
 	ces4\pp ces8.\< ces16\!
 	ces8 r r4
-	r4 r8 \bar "!" \tuplet 3/2 8 {aes!16\pp aes aes \mark \default
+	r4 r8 \bar "!" \tuplet 3/2 8 {aes!16\fp aes aes \mark \default
 	\divideBeam aes aes aes  aes aes aes  aes aes aes  g g g
 % Bars 161 to 165
 	aes aes aes  aes aes aes  aes aes aes  g g g} \resetBeam
@@ -286,7 +286,7 @@ musicClarinettoIIMvtII = \relative c {
 	
 	
 	
-	r4 r32 b(\<-. fis'-.\! d-.\> b16-.)\!\noBeam r
+	r4 r32 b(\brack\p\<-. fis'-.\! d-.\> b16-.)\!\noBeam r
 	R2*3
 % Bars 241 to 245
 	

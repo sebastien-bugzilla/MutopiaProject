@@ -133,7 +133,7 @@ musicVioloncelloMvtII = \relative c {
 	
 	
 	\clef tenor
-	des''8^\pizz r des des16. ees32
+	des''8\p^\pizz r des des16. ees32
 % Bars 106 to 110
 	des8 r des r
 	ges\fp r ges[ ges16 r32 des]
@@ -261,7 +261,7 @@ musicVioloncelloMvtII = \relative c {
 	c~
 	<< c\< {s8 s s s\!}>>
 % Bars 211 to 215
-	r16. c32\noBeam fis( g a fis) dis[( e fis dis]) c!( d ees! c)
+	r16. c32\ff\noBeam fis( g a fis) dis[( e fis dis]) c!( d ees! c)
 	a( bes c a) fis([ g a fis]) ees!( f ges! ees) r8 \clef tenor
 	a'8.(_\p\<_\brackM\espress fis32 gis) a8( fis)\! \section \mark \default
 	\key cis \minor a8.(\< fis32 gis) a8( fis)\!
@@ -486,7 +486,7 @@ musicVioloncelloDivisiMvtII = \relative c {
 % Bars 151 to 153
 	ges!\f r ges' r des, r des' r
 	aes,\> r aes' r c! r ees,\! r
-	aes, r ees' r aes r \bar "!" r8^\arco
+	aes, r ees' r aes r \bar "!" r8^\brackM\arco
 	s2*12
 % Bars 166 to 169
 	ges32(\mf^\brackM\arco bes ges bes ges bes ges bes  ges bes ges bes aes ces aes ces)

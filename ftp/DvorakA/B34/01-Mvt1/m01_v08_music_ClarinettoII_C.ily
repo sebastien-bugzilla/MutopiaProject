@@ -39,7 +39,7 @@ musicClarinettoIIMvtI = \relative c {
 	aes4\p r8 r4 r8
 	c2.\pp~
 	c
-	<< c2\p\<( {s8 s s s s s\!}>>
+	<< c2\p( {s8 s s s\< s s\!}>>
 % Bars 31 to 35
 	des4. c)
 	d!4.->~\ff d8 ees4->
@@ -201,9 +201,9 @@ musicClarinettoIIMvtI = \relative c {
 	\time 3/4 b( c d c) b( c d c) b( c d c)
 	\time 6/8 b( c) d( c) c( bes!) bes( a) a( g) g( f)
 	b4.\brack\fz e16( f g f e f)
-	b,4.\fz e16( f g f e f)
+	b,4.\brack\fz e16( f g f e f)
 % Bars 166 to 170
-	b,4.\fz g16( aes bes! aes g aes)
+	b,4.\brack\fz g16( aes bes! aes g aes)
 	b4.\brack\fz g16( aes bes aes g aes) \mark \default
 	b4.(\fzpD\> a!\!
 	g\< fis
