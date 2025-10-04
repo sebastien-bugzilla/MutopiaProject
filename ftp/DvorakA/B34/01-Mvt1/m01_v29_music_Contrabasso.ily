@@ -201,9 +201,9 @@ musicContrabassoMvtI = \relative c {
 	ges'4-^ f-^ ees-^
 	\time 3/4 d!8-^\f r ees-^ r f-^ r
 % Bars 161 to 165
-	\time 6/8 d-^\< ees-^ f-^ g!-^\! aes-^ g-^
+	\time 6/8 d-^\< ees-^ f-^ g!-^\! aes-^\> g-^\!
 	\time 3/4 f-^ r ees-^ r d-^ r
-	\time 6/8 d-^ ees-^ f-^ g!-^\! aes-^\> bes-^
+	\time 6/8 d-^ ees-^ f-^ g!-^\! aes-^ bes-^
 	c,4.\fz r4 r8
 	c4.\fz r4 r8
 % Bars 166 to 170

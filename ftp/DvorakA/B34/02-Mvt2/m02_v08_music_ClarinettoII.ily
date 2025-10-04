@@ -132,7 +132,7 @@ musicClarinettoIIMvtII = \relative c {
 	c4\brack\fp->~ c8 c16.-. bes32-.
 % Bars 106 to 110
 	c4\fp->~ c8 ees,32( aes c ees)
-	c4\fp~ c8 c16. des32-.
+	c4\fp~ c8 c16.-. des32-.
 	c4\fp\> c8-.\! r
 	c4\< c8. c16\!
 	des4( c)
@@ -237,7 +237,7 @@ musicClarinettoIIMvtII = \relative c {
 	ees!4.( des!8)->\!
 	b4.(_\mfbrackcresc e8)->
 	b4.( e8->)
-	ees!4.(\< fes8)\!
+	ees!4.(\< fes8->)\!
 % Bars 196 to 200
 	ees4.(\< fes8)->\!
 	e2->\ff\<
@@ -249,10 +249,10 @@ musicClarinettoIIMvtII = \relative c {
 	f4-> f->
 	bes-> bes8-.\< bes16.-. c32-.
 	bes4-> bes->\!
-	d8-.\< d16. ees32-. d8-.\! r
+	d8-.\< d16.-. ees32-. d8-.\! r
 % Bars 206 to 210
-	d8-.\< d16. ees32-. d8-.\! r
-	d8-.\< d,16. ees32-. f8-. f16.-. g32-.\!
+	d8-.\< d16.-. ees32-. d8-.\! r
+	d8-.\< d,16.-. ees32-. f8-. f16.-. g32-.\!
 	aes!4.->\fppD aes8-.
 	a4.-> a8-.
 	e'4.-\< e8-.\!

@@ -281,8 +281,8 @@ musicViolaMvtIII = \relative c {
 	q4: <e b'>:->
 % Bars 221 to 225
 	<a c>2:
-	q4: <e b'>:
-	<a c>: <g bes!>:
+	q4: <e b'>:->
+	<a c>: <g bes!>:->
 	<f a>2:->
 	<a c>:->
 % Bars 226 to 230
@@ -560,7 +560,7 @@ musicViolaMvtIII = \relative c {
 	\restPattern a8 e'16( c!8) b16-^
 	a8-^ r r4
 	r <c e>-^
-	\restPattern <b g'>8 d16( b8) a16-^
+	\restPattern <b g'>8-^ d16( b8) a16-^
 	g8-^ r r4
 % Bars 421 to 425
 	r <b d>-^
@@ -950,7 +950,7 @@ musicViolaMvtIII = \relative c {
 	ees:-> f: ees: des:
 	ces:-> des: ces: bes:
 % Bars 736 to 740
-	ees:->\ff d!: f: ees:
+	ees:\ff d!: f: ees:
 	ees: d: f: ees:
 	ees: d: f: ees:
 	ees: d: f: ees:

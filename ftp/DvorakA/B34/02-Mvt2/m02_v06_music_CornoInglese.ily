@@ -227,7 +227,7 @@ musicCornoIngleseMvtII = \relative c {
 % Bars 261 to 265
 	r4 cis'\p~
 	cis\< cis8. cis16\!
-	b4\brack\ff\> a8 a\! \section
+	b4->\brack\ff\> a8 a\! \section
 	\key aes \major aes!2\pp~
 	aes8 r r4
 % Bars 266 to 270

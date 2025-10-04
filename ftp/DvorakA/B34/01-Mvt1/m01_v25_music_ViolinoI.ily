@@ -97,9 +97,9 @@ musicViolinoIMvtI = \relative c {
 	a2.\p~
 	a8 r r r4 r8
 	r4 r8 r4 f16(\pp ges
-	ees'8)\< f,16( ges <ees ees'>8-.) f16( ges <ees ees'>8-.) <c a'>16-.[ <des bes'>]
+	ees'8)\< f,16( ges <ees ees'>8-.) f16( ges <ees ees'>8-.) <c a'>16-.[ <des bes'>]-.
 % Bars 76 to 80
-	<ces ces'>8-. <des des'>-.\! <d d'>-.\> <ees ees'>-.[ <f f'> r16 <ges ges'>]\! \mark \default
+	<ces ces'>8 <des des'>-.\! <d d'>-.\> <ees ees'>-.[ <f f'>-. r16 <ges ges'>]\! \mark \default
 	<ges ges'>4.(_\ppmoltoespress <f f'>)
 	<ees ees'>( <des des'>)
 	<ges ges'>( <f f'>)
@@ -472,9 +472,13 @@ musicViolinoIDivisiMvtI = \relative c {
 	ees'8-.\noBeam c,16( ees! fis a c8)\noBeam\< a16( c ees fis)
 	<e, e'>2.:32
 	<f! f'!>8\noBeam d16( f aes b d8)\noBeam b16( d f aes)\!
-% Bars 216 to 219
+% Bars 216 to 220
 	<b, b'>2.:32\ff
 	q4.: \tuplet 3/2 8 {q8.:16 <c c'>: <cis cis'>:}
 	<d d'>2.:32
 	q4.: q4: d,16( a')
+	a4->( g8)\< f4->(\! e8)
+% Bars 221 to 222
+	b'4->( a8) g4->( fis8)
+	c'4(-^ b8) a4-^( gis8)
 }

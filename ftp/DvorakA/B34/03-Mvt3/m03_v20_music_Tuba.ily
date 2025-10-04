@@ -53,7 +53,7 @@ musicTubaMvtIII = \relative c {
 % Bars 76 to 80
 	bes4-> ees->
 	aes,4-> g->
-	c( ees8) r
+	c(-> ees8) r
 	aes,4-> bes->
 	ees4.-> r8
 % Bars 81 to 85
@@ -283,7 +283,7 @@ musicTubaMvtIII = \relative c {
 % Bars 331 to 335
 	c4( ees8) r
 	aes,2-^
-	bes4-> ees->
+	bes4-^ ees-^
 	aes,4-^ g-^
 	c4( ees8) r
 % Bars 336 to 340

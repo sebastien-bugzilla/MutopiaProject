@@ -174,8 +174,8 @@ musicTrombonoIIMvtI = \relative c {
 	des4.-^\ff bes-^
 	des-^ bes-^
 % Bars 196 to 200
-	des4-> bes8 des4-> bes8
-	des4-> bes8 r4 r8
+	des4-^ bes8 des4-^ bes8
+	des4-^ bes8 r4 r8
 	R2.*7
 % Bars 201 to 205
 	

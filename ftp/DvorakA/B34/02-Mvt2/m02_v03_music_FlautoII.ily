@@ -134,7 +134,7 @@ musicFlautoIIMvtII = \relative c {
 	r4 r8 aes-.\p
 % Bars 146 to 150
 	aes4.->\fp aes8-.
-	aes4.->\fz aes8-.
+	aes4.\fz aes8-.
 	<< g2\fz\< {s4 s8. s16\!}>>
 	ees4.\> aes8-.\!
 	aes4.->(\< ces8)\!

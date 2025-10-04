@@ -351,7 +351,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 331 to 335
 	c4( ees8) r
 	aes,2->
-	bes4( ees8) r
+	bes4(-> ees8) r
 	aes,4-^ g-^
 	c( ees8) r
 % Bars 336 to 340

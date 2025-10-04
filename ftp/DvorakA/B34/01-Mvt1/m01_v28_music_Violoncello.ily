@@ -145,7 +145,7 @@ musicVioloncelloMvtI = \relative c {
 	q\arpeggio r r q\arpeggio r r\!
 	q4\arpeggio\ff r8 r4 r8
 	R2.
-	r4 r8 aes'4.(~\fz
+	r4 r8 aes'4.(->~\fz
 % Bars 116 to 120
 	aes16\> g bes aes f e) g( f d cis ees d)
 	bes( a c! bes aes g bes aes g aes g f)\!

@@ -35,9 +35,9 @@
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
 		
-		\override DynamicText.color = #red
-		\override Hairpin.color = #red
-		\override TextScript.color = #red
+%		\override DynamicText.color = #red
+%		\override Hairpin.color = #red
+%		\override TextScript.color = #red
 	}
 	\context {
 		\StaffGroup
@@ -85,11 +85,13 @@
 %		\override MultiMeasureRestNumber.transparent = ##t
 %		\override Script.transparent = ##t
 %		\override Tie.transparent = ##t
-
+		
+		% !!! for script check only !!!
 %		\override Script.color = #red
 %		\override Script.font-size = #4
 %		\override MultiMeasureRestScript.color = #red
 %		\override MultiMeasureRestScript.font-size = #4
+		% end script check
 	}
 }
 

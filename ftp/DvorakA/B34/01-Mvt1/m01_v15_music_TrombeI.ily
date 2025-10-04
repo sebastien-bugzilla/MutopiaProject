@@ -75,7 +75,7 @@ musicTrombeIMvtI = \relative c {
 	f4.\brack\fz~ f8 r r
 	g4.\brack\fz~ g8 r r
 % Bars 66 to 70
-	g4.\fz~ g8 r r
+	g4.->\fz~ g8 r r
 	bes2.\ff~
 	bes~
 	bes8 r r r4 r8
@@ -185,7 +185,7 @@ musicTrombeIMvtI = \relative c {
 	\mark \default
 % Bars 216 to 220
 	d,4.-^\ff~ d4~ d16. e32-.
-	fis4.~ fis4~ fis16. e32-.
+	fis4.-^~ fis4~ fis16. e32-.
 	e4.-^~ e4~ e16.\< fis32-.\!
 	g4.-^~ g4~ g16. fis32-.
 	fis4-^~ fis16.\< g32-.\! a4-^~ a16. g32-.
@@ -244,7 +244,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 291 to 295
 	f8-.) r r r4 r8
 	\marcatoUpperSlur f2.(-^
-	g8) r r r4 r8
+	g8-.) r r r4 r8
 	g2.\fz(
 	\marcatoUpperSlur aes8)-^ r r r4 r8
 % Bars 296 to 300

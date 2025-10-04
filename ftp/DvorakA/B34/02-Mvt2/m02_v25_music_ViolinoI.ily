@@ -183,8 +183,8 @@ musicViolinoIMvtII = \relative c {
 	des(\ppp bes) c-.} des\noBeam r \tuplet 3/2 8 {r des( f} aes)\noBeam r
 	r8 \tuplet 3/2 8 {r16 aes( des} f) r \tuplet 3/2 8 {r des( f)
 % Bars 146 to 150
-	\divideBeam aes(\pp c,) ees-. aes( c,) ees-. aes( c,-.) ees-. aes( des,) f-.
-	aes( c,) ees-. aes( c,) ees-. aes( c,-.) ees-. aes( c,) f-.
+	\divideBeam aes(\pp c,) ees-. aes( c,) ees-. aes( c,) ees-. aes( des,) f-.
+	aes( c,) ees-. aes( c,) ees-. aes( c,) ees-. aes( c,) f-.
 	g(\fp\< c,) ees-. g( c,) ees-. g( c,) ees-. g( ees) des-.\!
 	aes'(\> c,) ees-. aes( c,) ees-. aes( c,) ees-.\! aes( des,) f-.
 	aes(\< c,) ees-. aes( c,) ees-. aes( c,) ees-. ges(\! ees) ces'-.

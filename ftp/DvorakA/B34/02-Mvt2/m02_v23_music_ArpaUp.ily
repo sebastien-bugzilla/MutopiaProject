@@ -139,7 +139,7 @@ musicArpaUpMvtII = \relative c {
 % Bars 161 to 165
 	aes,-. c-. ees-. aes-. r aes,[-. aes'-.] r
 	\staffDown r8 ges,32\mf\<([ bes \staffUp ges' bes)] \staffDown f,[( aes\! \staffUp f'\> aes)] \staffDown d,,([ f \staffUp d' f])\!
-	aes,16\p c-. ees-. aes-. aes,[-. aes'-.] r8
+	aes,16-.\p c-. ees-. aes-. aes,[-. aes'-.] r8
 	aes,16-. c-. ees-. aes-. aes,[-. aes'-.] r8
 	\staffDown r8 aes,32([\< c \staffUp aes' c)] \staffDown ges,[( bes \staffUp ges' bes)] \staffDown f,[( aes \staffUp f' aes])\!
 % Bars 166 to 170

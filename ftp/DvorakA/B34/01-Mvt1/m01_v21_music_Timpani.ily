@@ -72,7 +72,7 @@ musicTimpaniMvtI = \relative c {
 	ees:
 % Bars 56 to 60
 	<< ees:\> {s8 s s  s s s\!}>>
-	<< ees2.\< {s8 s s s s s\!}>>
+	<< ees2.:\< {s8 s s s s s\!}>>
 	ees4\fp r8 ees4 r16 ees
 	<< ees2.: {s4. s8\< s s\!}>>
 	ees4 r8 ees4 r16 ees

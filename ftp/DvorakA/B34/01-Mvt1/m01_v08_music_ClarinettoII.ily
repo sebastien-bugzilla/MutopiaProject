@@ -43,7 +43,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 31 to 35
 	des4._\brackM\crescmarkup c)
 	d!4.->~\ff d8 ees4->
-	f->\< g8~ g f-> ees->\!
+	f->\< g8~-> g f-> ees->\!
 	d4.\ff->~ d8 ees4->
 	f->\< g8->~ g f-> ees->\!
 % Bars 36 to 40

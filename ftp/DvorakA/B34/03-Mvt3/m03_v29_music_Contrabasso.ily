@@ -431,7 +431,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 386 to 390
 	e'-> r8. e,16
 	e4 r
-	e' r8. e,16
+	e'-> r8. e,16
 	ees!4\brack\ff r
 	R2*2
 % Bars 391 to 395

@@ -46,14 +46,14 @@ musicTrombonoIIMvtIII = \relative c {
 	c-> r
 % Bars 71 to 75
 	aes-> bes->
-	c4. r8
+	c4.-> r8
 	g2->
 	c4( ees8) r
 	c2->
 % Bars 76 to 80
 	des->
 	c4-> g->
-	ees'( des8) r
+	ees'(-> des8) r
 	c4-> des->
 	des4.-> r8
 % Bars 81 to 85
@@ -413,7 +413,7 @@ musicTrombonoIIMvtIII = \relative c {
 	b
 	r4 r8. c16-.
 % Bars 491 to 495
-	a4..-> fis16
+	a4..-> fis16-.
 	gis4-> gis->
 	gis-> gis->
 	gis-> gis->
@@ -616,11 +616,11 @@ musicTrombonoIIMvtIII = \relative c {
 	ges r r4
 	r8 g!-^ g-^ g-^
 % Bars 731 to 735
-	ges r r4
+	ges-^ r r4
 	r8 g!-^ g-^ g-^
-	ges r r4
+	ges-^ r r4
 	r8 g!-^ g-^ g-^
-	ges r r4
+	ges-^ r r4
 % Bars 736 to 740
 	g!2-^\brack\ff~
 	g~

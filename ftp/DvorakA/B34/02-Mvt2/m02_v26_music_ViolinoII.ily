@@ -157,7 +157,7 @@ musicViolinoIIMvtII = \relative c {
 	c( ees aes \liiirii ees \liiriii aes ees aes ees aes ees aes \liiirii c \liiriii ees c bes aes)
 	ees( c aes \liiirii c \liiriii ees c aes' f ees16) r r aes,32( c)
 	ees( c aes \liiirii c \liiriii ees c aes' f ees16) r r \tuplet 3/2 16 {aes,32( c ees)}
-	\afterGrace aes4\trill {g32( aes)} ees'16(\< c32 ees aes[ ees ges!])\! r
+	\afterGrace aes4\trill {g32[( aes])} ees'16(\< c32 ees aes[ ees ges!])\! r
 	r16 a,(\pp c ees ges f ees\noBeam) r
 % Bars 121 to 125
 	r16 a,(_\pococrescendo c ees ges f ees)\noBeam r

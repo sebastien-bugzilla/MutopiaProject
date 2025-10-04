@@ -105,7 +105,7 @@ musicTrombonoIIMvtII = \relative c {
 	
 	
 	
-	f8\ff r f8-> ges16. f32
+	f8\ff r f8 ges16. f32
 % Bars 171 to 175
 	f8 r f r
 	f r f ees16. f32

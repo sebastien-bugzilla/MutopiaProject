@@ -397,11 +397,11 @@ musicCornoIIMvtIII = \relative c {
 	R2
 	ces4(\fz bes8) r
 	R2
-	cis4.\fz-> b8-.
+	cis4.\fz b8-.
 % Bars 351 to 355
-	cis4.\fz-> b8-.
-	cis4.\fz-> b8-.
-	cis4.\fz-> r8
+	cis4.\fz b8-.
+	cis4.\fz b8-.
+	cis4.\fz r8
 	ees4.\fz r8
 	R2
 % Bars 356 to 360

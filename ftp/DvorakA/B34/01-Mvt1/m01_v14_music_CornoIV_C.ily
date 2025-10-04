@@ -346,7 +346,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 291 to 295
 	f8)-. r r r4 r8
 	\marcatoUpperSlur f2.-^(
-	g8) r r r4 r8
+	g8-.) r r r4 r8
 	g2.\fz(
 	\marcatoUpperSlur aes8)-^ r r r4 r8
 % Bars 296 to 300

@@ -83,7 +83,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 66 to 70
 	\restPattern q8-. ees''16( c8) bes16-.
 	aes4-> ees->
-	<aes, ees'>4. r8
+	<aes, ees'>4.-> r8
 	q4-> q->
 	q8 r r4
 % Bars 71 to 75
@@ -467,7 +467,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 386 to 390
 	e'-> r8. e,16
 	e4 r
-	e' r8. e,16
+	e'-> r8. e,16
 	ees!8.[_\fbrackf des'16 bes!8.->\< aes16]
 	g8.->[ g'16 ees8.-> des16] \clef tenor
 % Bars 391 to 395

@@ -135,7 +135,7 @@ musicCornoIIIMvtII = \relative c {
 % Bars 111 to 115
 	ees,4->\fp bes'->
 	<< bes2\brack\p\> {s8 s s s\!}>>
-	bes4\p bes8-. bes16.-. bes32-.
+	bes4->\p bes8-. bes16.-. bes32-.
 	bes4->\fp bes->
 	ees,4-> ees8-. ees16.-. bes32-.
 % Bars 116 to 120

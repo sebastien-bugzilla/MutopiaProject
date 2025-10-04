@@ -146,7 +146,7 @@ musicFagottoIIMvtII = \relative c {
 	aes4-> aes-> \clef tenor 
 	c8-.->\brack\fp c16.-. des32-. c8-. r
 	c8-.->\brack\fp c16.-. des32-. c8-. r
-	c8\trill\< c16. des32 ees8\! r \clef bass
+	c8\trill\< c16.-. des32-. ees8\! r \clef bass
 	<< c4.\brack\fp\> {s8 s\! s}>> r8
 % Bars 121 to 125
 	<< c4.\fp\>^\pococrescendo {s8 s\! s}>> r8
@@ -241,7 +241,7 @@ musicFagottoIIMvtII = \relative c {
 % Bars 196 to 200
 	ges4.(\< des8)->\!
 	bes2\ff\<->
-	<< g {s8 s s s\!}>>
+	<< g-> {s8 s s s\!}>>
 	c,2_\ffbrackp~
 	c8 r r4
 % Bars 201 to 205
@@ -290,7 +290,7 @@ musicFagottoIIMvtII = \relative c {
 	R2*2
 	\clef bass
 	R2
-	r4 r32 gis-.(\< dis'\! b-.\> gis16)\noBeam\! r
+	r4 r32 gis-.(\< dis'-.\! b-.\> gis16)\noBeam\! r
 	R2*3
 % Bars 241 to 245
 	

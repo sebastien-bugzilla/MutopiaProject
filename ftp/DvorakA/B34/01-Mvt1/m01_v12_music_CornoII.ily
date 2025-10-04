@@ -226,7 +226,7 @@ musicCornoIIMvtI = \relative c {
 % Bars 191 to 195
 	r8 r8. d16(\< f4->~ f16.)\! f32-.
 	c2.\fz
-	r8 r8. d16(\ff\< f4->~ f16.)\! f32-.
+	r8 r8. d16(\ff\< f4~ f16.)\! f32-.
 	aes,4.\ff f->
 	aes-> f->
 % Bars 196 to 200

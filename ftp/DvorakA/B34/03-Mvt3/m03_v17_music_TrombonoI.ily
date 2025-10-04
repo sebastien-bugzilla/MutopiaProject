@@ -46,7 +46,7 @@ musicTrombonoIMvtIII = \relative c {
 	ees-> r
 % Bars 71 to 75
 	c-> des->
-	ees4. r8
+	ees4.-> r8
 	g,2->
 	c4( ees8) r
 	aes2->
@@ -429,7 +429,7 @@ musicTrombonoIMvtIII = \relative c {
 	e
 	r4 r8. c16-.
 % Bars 491 to 495
-	a4..-> fis16
+	a4..-> fis16-.
 	b4-> b->
 	b-> b->
 	bis-> bis->

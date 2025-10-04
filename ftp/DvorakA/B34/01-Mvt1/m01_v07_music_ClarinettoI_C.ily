@@ -43,7 +43,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 31 to 35
 	f2.)_\brackM\crescmarkup
 	\partCombineAutomatic f4.->~\ff f8 g4->
-	aes->\< bes8~ bes aes-> g->\!
+	aes->\< bes8~-> bes aes-> g->\!
 	f4.\ff->~ f8 g4->
 	aes->\< bes8->~ bes aes-> g->\!
 % Bars 36 to 40

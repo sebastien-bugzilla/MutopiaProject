@@ -287,7 +287,7 @@ musicTrombeIMvtIII = \relative c {
 	ees,4->\ff f->
 	g-> r
 	ees-> f->
-	g4. r8
+	g4.-> r8
 % Bars 326 to 330
 	g4-> aes->
 	bes-> r

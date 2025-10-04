@@ -181,7 +181,7 @@ fcresc = \markup {\dynamic f \italic cresc.}
 % dynamics ff
 %--------------------
 fbrackf = \markup {
-	\concat { \dynamic f \bracket \with-true-dimensions \dynamic f }
+	\concat { \dynamic f \bracketItalic \with-true-dimensions \dynamic f }
 }
 ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
 brackfflegato = \markup {\bracket \with-true-dimensions \dynamic ff \italic legato }

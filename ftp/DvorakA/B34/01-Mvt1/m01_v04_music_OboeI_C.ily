@@ -128,7 +128,7 @@ musicOboeIMvtI = \relative c {
 	ges4.->~ ges8 f4->
 	ees d8~ d ees-. f-.
 	ges-. r r \partCombineApart b,16(\p c d c b c)
-	ges'8\brack\fz r r b,16( c d c b c)
+	ges'8-.\brack\fz r r b,16( c d c b c)
 	f8-.-^ r r b,16( c d c b c)
 % Bars 106 to 110
 	f8-.-^ r r b,16( c d c b c)

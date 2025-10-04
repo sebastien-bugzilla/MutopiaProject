@@ -84,7 +84,7 @@ musicViolaMvtI = \relative c {
 	des,(\< f des f des f) des( f bes f des f)\!
 	ees( ges ees ges ees ges) ees( ges bes ges ees ges)
 	<f a>4-> r8 ees16(-> f a f c' a)
-	bes4-> r8 ees,16( ges bes ges ees' bes)
+	bes4-> r8 ees,16(-> ges bes ges ees' bes)
 	c4-> r8 g!16(-> c e c g' e)
 % Bars 66 to 70
 	c4-> r8 f,16( aes c aes f' c)

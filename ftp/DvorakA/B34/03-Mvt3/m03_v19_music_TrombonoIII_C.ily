@@ -53,7 +53,7 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 76 to 80
 	\once \partCombineApart bes->
 	aes4-> g->
-	c( bes8) r
+	c(-> bes8) r
 	aes4-> bes->
 	bes4.-> r8
 % Bars 81 to 85

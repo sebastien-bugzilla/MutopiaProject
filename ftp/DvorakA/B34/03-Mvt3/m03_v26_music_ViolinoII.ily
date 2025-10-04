@@ -130,7 +130,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 101 to 105
 	<g bes>8.->[ <ees ees'>16( <g bes>8) r16 <f aes>-.]
 	<g bes>4-> r8 ees32(\< f g aes)\!
-	<g bes>8.->\fz[ <ees ees'>16( <g bes>8) r16 <f aes>-.]
+	<g bes>8.\fz[ <ees ees'>16( <g bes>8) r16 <f aes>-.]
 	<g bes>8.->[ <ees ees'>16( <g bes>8) r16 <f aes>-.]
 	<g bes>8.->[ <ees ees'>16( <g bes>8) r16 <f aes>-.]
 % Bars 106 to 110
@@ -768,7 +768,7 @@ musicViolinoIIMvtIII = \relative c {
 	cis':-> a: e: cis:
 	b':-> gis: e: b:
 % Bars 651 to 655
-	bes'!: g!: e: cis: \mark \default
+	bes'!:-> g!: e: cis: \mark \default
 	<bes' ges'>2:16->\ff
 	\restPattern q8 f'16( aes8) f16(
 	<bes, ges'>2:16)->
@@ -816,7 +816,7 @@ musicViolinoIIMvtIII = \relative c {
 	<e a>:
 	<< <f b>: {s4 s\!}>>
 % Bars 691 to 695
-	bes!8:16\brack\ff f: aes: ges:
+	bes!8:16->\brack\ff f: aes: ges:
 	fes:-> ees: ges: fes:
 	ees:-> des: fes: ees:
 	des:-> c: ees: des:

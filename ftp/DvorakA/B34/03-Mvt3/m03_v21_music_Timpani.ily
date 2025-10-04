@@ -525,7 +525,7 @@ musicTimpaniMvtIII = \relative c {
 	ees8-> r r4
 % Bars 641 to 645
 	R2
-	ees8-> r r4
+	ees8 r r4
 	R2*9
 % Bars 646 to 650
 	

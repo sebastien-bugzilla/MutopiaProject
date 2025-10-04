@@ -406,7 +406,7 @@ musicViolinoIMvtIII = \relative c {
 	\restPattern ees8-> f16( g8) f16-.
 % Bars 331 to 335
 	ees4( des8) r
-	\restPattern c8 des16( ees8) des16-.
+	\restPattern c8-. des16( ees8) des16-.
 	c4( bes8) r
 	\restPattern ees8-. f16( g8) f16-.
 	ees4( des8) r

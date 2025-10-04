@@ -311,7 +311,7 @@ musicCornoIMvtII = \relative c {
 	cis cis8-. cis16.-. d32-.
 	cis4 cis
 	\partCombineApart a a8-. a16.-. e32-.
-	a4 a8-. a16. e32-.
+	a4 a8-. a16.-. e32-.
 	a8-. r r4 \partCombineAutomatic
 % Bars 271 to 273
 	<< e'2\p\> {s8 s s s\!}>>

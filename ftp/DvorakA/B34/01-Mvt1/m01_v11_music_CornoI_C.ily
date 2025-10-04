@@ -226,7 +226,7 @@ musicCornoIMvtI = \relative c {
 % Bars 191 to 195
 	r8 r8. d16(\< f4->~ f16.)\! f32-.
 	f2.\fz
-	r8 r8. d16(\ff\< f4->~ f16.)\! f32-.
+	r8 r8. d16(\ff\< f4~ f16.)\! f32-.
 	\partCombineApart f4. \acciaccatura f8 ees4(-> d8) 
 	ees4. \acciaccatura f8 ees4(-> d8) 
 % Bars 196 to 200
