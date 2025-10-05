@@ -23,11 +23,12 @@
 \include "./00-Common/DvorakSymph3_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph3_Tempi.ily"
 %\include "./00-Common/DvorakSymph3_Format_Cond_Mvt01.ily"
-\include "./01-Mvt1/m01_v02_music_FlautoI.ily"
-\include "./01-Mvt1/m01_v03_music_FlautoII.ily"
+\include "./00-Common/DvorakSymph3_Format_temp.ily"
+\include "./01-Mvt1/m01_v02_music_FlautoI_C.ily"
+\include "./01-Mvt1/m01_v03_music_FlautoII_C.ily"
 \include "./01-Mvt1/m01_v04_music_OboeI_C.ily"
 \include "./01-Mvt1/m01_v05_music_OboeII_C.ily"
-\include "./01-Mvt1/m01_v06_music_CornoInglese.ily"
+\include "./01-Mvt1/m01_v06_music_CornoInglese_C.ily"
 \include "./01-Mvt1/m01_v07_music_ClarinettoI_C.ily"
 \include "./01-Mvt1/m01_v08_music_ClarinettoII_C.ily"
 \include "./01-Mvt1/m01_v09_music_FagottoI_C.ily"
@@ -38,15 +39,15 @@
 \include "./01-Mvt1/m01_v14_music_CornoIV_C.ily"
 \include "./01-Mvt1/m01_v15_music_TrombeI_C.ily"
 \include "./01-Mvt1/m01_v16_music_TrombeII_C.ily"
-\include "./01-Mvt1/m01_v17_music_TrombonoI.ily"
-\include "./01-Mvt1/m01_v18_music_TrombonoII.ily"
-\include "./01-Mvt1/m01_v19_music_TrombonoIII.ily"
-\include "./01-Mvt1/m01_v21_music_Timpani.ily"
-\include "./01-Mvt1/m01_v25_music_ViolinoI.ily"
-\include "./01-Mvt1/m01_v26_music_ViolinoII.ily"
-\include "./01-Mvt1/m01_v27_music_Viola.ily"
-\include "./01-Mvt1/m01_v28_music_Violoncello.ily"
-\include "./01-Mvt1/m01_v29_music_Contrabasso.ily"
+\include "./01-Mvt1/m01_v17_music_TrombonoI_C.ily"
+\include "./01-Mvt1/m01_v18_music_TrombonoII_C.ily"
+\include "./01-Mvt1/m01_v19_music_TrombonoIII_C.ily"
+\include "./01-Mvt1/m01_v21_music_Timpani_C.ily"
+\include "./01-Mvt1/m01_v25_music_ViolinoI_C.ily"
+\include "./01-Mvt1/m01_v26_music_ViolinoII_C.ily"
+\include "./01-Mvt1/m01_v27_music_Viola_C.ily"
+\include "./01-Mvt1/m01_v28_music_Violoncello_C.ily"
+\include "./01-Mvt1/m01_v29_music_Contrabasso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -68,11 +69,15 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
+				\new GrandStaff \with { \nameGrandStaffIMvtI 
+					\consists Keep_alive_together_engraver } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtI
-%						}
+						\new Voice {
+							\displayFilterVoice
+						}
+						\new Voice {
+							\formatConductorMvtI
+						}
 						\new Voice {
 							\tempiMvtI
 						}
@@ -104,7 +109,8 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtI 
+					\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtI \nameStaffVIIMvtI
 						\partCombine #'(0 . 10) \musicCornoIMvtI \musicCornoIIMvtI
@@ -186,6 +192,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+			system-count = 76
 		}
 	}
 }

@@ -414,10 +414,11 @@ musicViolinoIIMvtI = \relative c {
 musicViolinoIIDivisiMvtI = \relative c {
 	\clef treble
 	\key ees \major
-% Bars 1 to 76
-	s2.*18 s4.*1 s2.*22 s4.*1 s2.*34
-% Bars 77 to 80
-	<ges'' bes>8\pp bes,16( des bes des  bes des bes des bes des)
+% Bars 1 to 75
+	s2.*18 s4.*1 s2.*22 s4.*1 s2.*33
+% Bars 76 to 80
+	<f' aes!>8 r r r4 r8
+	<ges bes>8\pp bes,16( des bes des  bes des bes des bes des)
 	bes( des bes des bes des  bes des bes des bes des)
 	ces( des ces des ces des  ces des ces des ces des)
 	aes( des aes des aes des  aes des aes des f des)
@@ -486,9 +487,10 @@ musicViolinoIIDivisiMvtI = \relative c {
 	ees8 \tuplet 3/2 8 {ees16 ees ees} ees8 r4\< r8 
 	e8 \tuplet 3/2 8 {e16 e e} e8 r4 r8
 	b8 \tuplet 3/2 8 {b16 b b} b8 r4 r8\!
-% Bars 216 to 219
+% Bars 216 to 220
 	d'16(\ff \liiri cis \tuplet 3/2 8 {\lirii d cis \liiri d \lirii cis d cis \setSextolet d cis d cis d c b a g)
 	d'( cis d cis d cis d cis d  cis d cis d cis d} \unsetSextolet c32[ b a g])
 	\tuplet 3/2 8 {\setSextolet d'16( cis d cis d cis d cis d  cis d cis d cis d c b a)
-	d( cis d cis d cis d cis d  cis d cis d cis d c b a)} \unsetSextolet
+	d( cis d cis d cis d cis d  cis d cis d cis d c b a)
+	d( c b d c b d c b) b( a gis b a gis b a gis)} \unsetSextolet
 }

@@ -20,17 +20,17 @@
 	\context {
 		\Score
 %		scriptDefinitions = #my-script-alist
-		\override MetronomeMark.font-size = #0 % 2
-		\override RehearsalMark.font-size = #4 % 6
+		\override MetronomeMark.font-size = #2 % 2
+		\override RehearsalMark.font-size = #6 % 6
 		\override RehearsalMark.extra-spacing-width = #'(-0.1 . 0.1)
-		\override RehearsalMark.extra-spacing-height = #'(-10 . 10)
+		\override RehearsalMark.extra-spacing-height = #'(-20 . 20)
 		\override RehearsalMark.outside-staff-priority = ##f
 %		\override RehearsalMark.font-family = #'sans
-		\override BarNumber.font-size = #1 % 3
+		\override BarNumber.font-size = #3 % 3
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
-%		\override Beam.damping = #3
-%		\override Stem.length-fraction = #0.9
+		\override Beam.damping = #3
+		\override Stem.length-fraction = #0.9
 		\override TextMark.font-size = #4
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t

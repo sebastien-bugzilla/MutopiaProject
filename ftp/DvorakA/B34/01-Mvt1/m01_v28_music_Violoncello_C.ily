@@ -425,8 +425,9 @@ musicVioloncelloDivisiMvtI = \relative c {
 	\clef bass
 	\key ees \major
 % Bars 1 to 75
-	s2.*18 s4.*1 s2.*22 s4.*1 s2.*34
-% Bars 77 to 80
+	s2.*18 s4.*1 s2.*22 s4.*1 s2.*33
+% Bars 76 to 80
+	des'4( des,8)\> ces4 aes8\!
 	ges4.(~\pp ges4~\< ges16. aes32)\!
 	bes4.(~\> bes4~\! bes16. aes32)
 	aes4.(~ aes4~\< aes16. bes32)\!
@@ -501,14 +502,16 @@ musicVioloncelloDivisiMvtI = \relative c {
 	ees,! fis c'! ees,\< fis c'
 	e, g! c e, g c
 	f, aes! d f, aes d\!
-% Bars 216 to 219
+% Bars 216 to 220
 	d,16(\ff^\arco \liiri cis \tuplet 3/2 8 {\lirii d cis \liiri d \lirii cis d cis \setSextolet d cis d cis d c b a g)
 	d'( cis d cis d cis d cis d  cis d cis d cis d} \unsetSextolet c32[ b a g])
 	\tuplet 3/2 8 {\setSextolet d'16( cis d cis d cis d cis d  cis d cis d cis d c b a)
-	d( cis d cis d cis d cis d  cis d cis d cis d c b a)} \unsetSextolet
-% Bars 220 to 328
-	s2.*9 s4.*1 s2.*99
-% Bars 329 to 330
+	d( cis d cis d cis d cis d  cis d cis d cis d c b a)
+	d'16( c b d c b d c b) b( a gis b a gis b a gis) } \unsetSextolet
+% Bars 221 to 327
+	s2.*8 s4.*1 s2.*98
+% Bars 328 to 330
+	r4 r8 bes,16\f-^ bes-^ bes-^ bes-^ bes-^ bes-^ 
 	bes'16(\p des bes des bes des  bes des bes des bes des)
 	bes( des bes des bes des) bes,\ff-^ bes-^ bes-^ bes-^ bes-^ bes-^
 % Bars 331 to 335

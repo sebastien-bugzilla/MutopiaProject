@@ -11,7 +11,7 @@ nameGrandStaffIMvtI = {
 }
 nameGrandStaffIIMvtI = {
 	\set Staff.instrumentName = "Corni F"
-	\set Staff.shortInstrumentName = "Cor."
+	\set Staff.shortInstrumentName = "Cor. F"
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffIIIMvtI = {
@@ -20,22 +20,22 @@ nameGrandStaffIIIMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffIVMvtI = {
-	\set Staff.instrumentName = ""
+	\set Staff.instrumentName = "Violini I"
 	\set Staff.shortInstrumentName = "Viol.I"
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffVMvtI = {
-	\set Staff.instrumentName = ""
+	\set Staff.instrumentName = "Violini II"
 	\set Staff.shortInstrumentName = "Viol.II"
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffVIMvtI = {
-	\set Staff.instrumentName = ""
+	\set Staff.instrumentName = "Viole"
 	\set Staff.shortInstrumentName = "Vle"
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffVIIMvtI = {
-	\set Staff.instrumentName = ""
+	\set Staff.instrumentName = "Violoncelli"
 	\set Staff.shortInstrumentName = "Vlc."
 	\set Staff.midiInstrument = #""
 }
