@@ -93,7 +93,7 @@ musicTrombeIMvtI = \relative c {
 	
 	
 	
-	\partCombineApart ees,4.(\brack\mf^\sola des4\< bes8
+	\partCombineApart ees,4.(\brack\mf-\offset X-offset -7 ^\sola \hairpinShorten #'(4.5 . 0) des4\< bes8
 	aes4 des8 c4 ees8)\! \partCombineAutomatic
 % Bars 96 to 100
 	f4.-^\ff r4 r8
@@ -139,7 +139,7 @@ musicTrombeIMvtI = \relative c {
 	
 	
 	
-	\time 3/4 f8-^\f r f-^ r f-^ r
+	\time 3/4 \dynEO #'(-1 . 0) f8-^\f r f-^ r f-^ r
 % Bars 161 to 165
 	\time 6/8 c'-> bes-> a-> \partCombineApart bes-> f-> f-> \partCombineAutomatic
 	\time 3/4 f-^ r f-^ r f-^ r 
@@ -158,9 +158,9 @@ musicTrombeIMvtI = \relative c {
 % Bars 181 to 185
 	
 % Bars 186 to 190
-	f4\fz r8 r4 r8
+	\dynEO #'(-2.5 . 2) f4\fz r8 r4 r8
 	R2.
-	f4->\fz r8 r4 r8
+	\dynEO #'(-2.5 . 2) f4->\fz r8 r4 r8
 	R2.
 	f4->\fz r8 r4 r8
 % Bars 191 to 195
@@ -184,7 +184,7 @@ musicTrombeIMvtI = \relative c {
 	
 	\mark \default
 % Bars 216 to 220
-	d,4.-^\ff~ d4~ d16. e32-.
+	\dynEO #'(-2.5 . 2.5) d,4.-^\ff~ d4~ d16. e32-.
 	fis4.-^~ fis4~ fis16. e32-.
 	e4.-^~ e4~ e16.\< fis32-.\!
 	g4.-^~ g4~ g16. fis32-.
@@ -243,7 +243,7 @@ musicTrombeIMvtI = \relative c {
 	\marcatoUpperSlur e2.-^(
 % Bars 291 to 295
 	f8-.) r r r4 r8
-	\marcatoUpperSlur f2.(-^
+	\marcatoUpperSlur \shape #'((0 . 1)(0 . 0)(0 . 0)(0 . 0)) Slur f2.(-^
 	g8-.) r r r4 r8
 	g2.\fz(
 	\marcatoUpperSlur aes8)-^ r r r4 r8
@@ -272,8 +272,8 @@ musicTrombeIMvtI = \relative c {
 	f-. r r f-. r r
 	fis2._\pcresc~
 % Bars 316 to 320
-	fis4. f!8-.\fz r r
-	f4.-^\ff r4 r8
+	fis4. f!8-.-\tweak X-offset 1 \fz r r
+	f4.-^-\tweak X-offset 1 \ff r4 r8
 	aes4 r8 aes4 r8
 	aes4 r8 a!4 r8
 	bes2.-^
@@ -286,7 +286,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 326 to 330
 	ges-^ r r ges-^ r r
 	R2.
-	r4 r8 f-^\f f-^ f-^
+	r4 r8 \aIIXoffset #-3.5 f-^\f f-^ f-^
 	R2.
 	r4 r8 f-^\f f-^ f-^
 % Bars 331 to 335
@@ -304,5 +304,5 @@ musicTrombeIMvtI = \relative c {
 % Bars 341 to 343
 	bes4 r8 r4 r8
 	bes4 r8 r4 r8
-	bes2.\ff\fermata \fine
+	\dynEO #'(-2.6 . 1) bes2.\ff\fermata \fine
 }

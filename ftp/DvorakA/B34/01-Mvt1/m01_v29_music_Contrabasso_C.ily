@@ -99,7 +99,7 @@ musicContrabassoMvtI = \relative c {
 	r c,16-. des-. ees8-. ees16[-. f-. ges8-.] c,16-. des-.
 	ees8-.\< f-. ges-. a-. bes-. c-.\!
 % Bars 76 to 80
-	des r^\pizz\> r ces[ r aes!8]\! \mark \default
+	des r-\offset X-offset -0.5 ^\pizz\> r ces[ r aes!8]\! \mark \default
 	ges4\pp r8 r4 r8
 	bes,4 r8 r4 r8
 	aes4 r8 r4 r8
@@ -225,13 +225,13 @@ musicContrabassoMvtI = \relative c {
 	R2.*2
 	
 % Bars 181 to 185
-	e2.\f^\arco~
+	e2.\f-\offset X-offset #-5 ^\arco~
 	e4.~\> e8\dimD r r
 	ees!4\pp^\pizz r8 r4 r8
 	R2.*2
 	
 % Bars 186 to 190
-	g8\fz^\arco-^ g16-^ g-^ g8-^ r4 r8
+	g8\fz-\offset X-offset #-5 ^\arco-^ g16-^ g-^ g8-^ r4 r8
 	f,2.\fz
 	g'8-^\fz g16-^ g-^ g8-^ r4 r8
 	f,2.\fz
@@ -253,7 +253,7 @@ musicContrabassoMvtI = \relative c {
 	
 	
 	
-	d,8-^\p^\pizz r r r4 r8
+	d,8-^\p-\offset X-offset -5 ^\pizz r r r4 r8
 % Bars 206 to 210
 	R2.*3
 	
@@ -317,7 +317,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 256 to 260
 	R2.*2
 	
-	e8\fz^\pizz r r r4 r8
+	e8\fz-\offset X-offset -4 ^\pizz r r r4 r8
 	R2.*4
 	
 % Bars 261 to 265
@@ -346,7 +346,7 @@ musicContrabassoMvtI = \relative c {
 	<< g: {s8 s s  s s s\!}>>
 % Bars 281 to 285
 	g8\f-^ aes-^ a-^ bes-^[ b-^ r16 c-.]
-	c8-^\<_\molto cis-^ d-^ ees16-^ e-^ f-^ fis-^ g-^ aes!-^\!
+	\hairpinShorten #'(0 . 2) c8-^\<_\molto cis-^ d-^ ees16-^ e-^ f-^ fis-^ g-^ aes!-^\!
 	a8-^_\brackfffz r r r4 r8
 	aes,!8\fz r r r4 r8
 	aes'\fz r r r4 r8
@@ -363,7 +363,7 @@ musicContrabassoMvtI = \relative c {
 	aes-> r r r4 r8
 	ces4\fz r8 r4 r8
 % Bars 296 to 300
-	ces4->_\pocoapococrescendo r8 r4 r8
+	ces4->_\pocoapoco_crescendo r8 r4 r8
 	bes4\fz r8 bes'4-> r16 bes,
 	bes4-> r8 bes'4-> r16 bes,
 	bes4-> r8 bes'4-> r16 bes,

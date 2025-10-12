@@ -321,7 +321,7 @@ musicCornoIMvtI = \relative c {
 	d4.~ d8. d16-. d-. d-.
 	d4.-! d-!
 	g,4.-^\brack\mp^\marcato g4-^~ g16. g32-.
-	d'4.->~ d4 g,16-. a-.
+	d'4.->~_\pocoapococresc d4 g,16-. a-.
 % Bars 276 to 280
 	b8-.\< c-. d-. e-.[ fis-. r16 g]\!
 	g2.\fz

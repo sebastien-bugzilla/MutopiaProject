@@ -12,7 +12,7 @@ musicCornoIVMvtI = \relative c {
 	R2.*3
 	
 	
-	d'2.\p~
+	d'2.-\offset X-offset 0.5 \p~
 	d
 % Bars 6 to 10
 	<< d2.~ {s8\fp\> s s  s s s\!}>>
@@ -25,7 +25,7 @@ musicCornoIVMvtI = \relative c {
 	f
 	des
 	des4.\fz d4( ees8)
-	f4.( f,)\p
+	f4.( f,)-\offset X-offset 0.5 \p
 % Bars 16 to 20
 	bes-^\ff r4 r8
 	des4.-^ r4 r8
@@ -43,7 +43,7 @@ musicCornoIVMvtI = \relative c {
 	
 	R2.*2
 	
-	des2.->\p~
+	\dynEO #'(-2 . 0.8) des2.->\p~
 % Bars 31 to 35
 	des_\brackM\crescmarkup
 	ees4.->\ff~ ees8 ees4->
@@ -51,7 +51,7 @@ musicCornoIVMvtI = \relative c {
 	g4.->\ff~ g8 ees4->
 	ees4-> ees8->~\< ees ees-> ees->\!
 % Bars 36 to 40
-	a!4.->\ff aes->
+	a!4.->-\tweak X-offset 0.2 \ff aes->
 	g!-> ges-> 
 	\time 3/4 des8 r ges r f r
 	\time 6/8 ges->\< f-> des-> c4->( des!8)\!
@@ -75,7 +75,7 @@ musicCornoIVMvtI = \relative c {
 	bes4. d
 	d2.
 % Bars 56 to 60
-	d4.\> << ees {s8 s s\!}>>
+	\hairpinShorten #'(1 . 0) d4.\> << ees {s8 s s\!}>>
 	d2.
 	ees\f
 	<< bes2.-> {s4. s8\< s s\!}>>
@@ -143,7 +143,7 @@ musicCornoIVMvtI = \relative c {
 	
 	
 	aes2.->\p~
-	<< aes {s8\< s s\! s\> s s\!}>>
+	<< aes {s8\< s s\! s-\tweak extra-offset #'(0 . -3.5) \> s s\!}>>
 	des4 r8 r4 r8
 % Bars 126 to 130
 	R2.*3
@@ -248,11 +248,11 @@ musicCornoIVMvtI = \relative c {
 	r4 r8 << a4.~ {s8\fz\< s s\!}>>
 	<< a2. {s8\> s s  s s s\!}>>
 % Bars 211 to 215
-	r8 bes bes, r8 bes' bes,
+	r8 \beamOffset #'(0.8 . 0.8) bes bes, r8 \beamOffset #'(0.8 . 0.8) bes' bes,
 	r8 bes' bes, r4 r8
 	r8 bes' bes, r8 bes' bes,
-	r8 b'!\< b,! r4 r8
-	r c' c, r8 c'\! c, \mark \default
+	r8 \beamOffset #'(0.8 . 0.8) b'!\< b,! r4 r8
+	r \beamOffset #'(0.8 . 0.8) c' c, r8 \beamOffset #'(0.8 . 0.8) c'\! c, \mark \default
 % Bars 216 to 220
 	d2.\ff-^
 	d-^
@@ -274,9 +274,9 @@ musicCornoIVMvtI = \relative c {
 % Bars 231 to 235
 	
 	
-	R2.*3
-	
-	
+	R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 236 to 240
 	R2.*3
 	
@@ -350,7 +350,7 @@ musicCornoIVMvtI = \relative c {
 	g2.\fz(
 	\marcatoUpperSlur aes8)-^ r r r4 r8
 % Bars 296 to 300
-	aes2._\fzpocoapococrescendo
+	aes2._\fzpocoa_pococrescendo
 	ges4->\mf f->\< ees->\!
 	g!-> f->\< e!->\!
 	aes-> g->\< f->\!
@@ -374,7 +374,7 @@ musicCornoIVMvtI = \relative c {
 	e!-. r r f-. r r
 	f,2.~
 % Bars 316 to 320
-	f4. f8-.\f r r
+	f4. f8-.-\tweak X-offset 1 \f r r
 	bes4.-^\ff r4 r8
 	f'4 r8 ees4 r8
 	des4 r8 f4 r8

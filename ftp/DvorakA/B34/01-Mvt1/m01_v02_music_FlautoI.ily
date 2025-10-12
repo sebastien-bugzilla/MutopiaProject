@@ -326,8 +326,8 @@ musicFlautoIMvtI = \relative c {
 	c
 	des\fz\<~
 % Bars 296 to 300
-	<< des {s4 s s\!}>>
-	d!2.->_\pocoapococresc
+	<< des_\pocoapococresc {s4 s s\!}>>
+	d!2.->
 	ees->
 	e->
 	fis->

@@ -156,7 +156,7 @@ musicVioloncelloMvtI = \relative c {
 	\repeat tremolo 6 {ees( ges}
 	\repeat tremolo 6 {ees\< ges)\!}
 	des2.(\p
-	<< des,) {s8\< s s\! s\> s s\!}>>
+	<< des,) {s8\< s s\! s-\tweak extra-offset #'(0 . -1.5) \> s s\!}>>
 	ges4 r8 r4 r8
 % Bars 126 to 130
 	R2.
@@ -187,10 +187,10 @@ musicVioloncelloMvtI = \relative c {
 	a''4.-^\fz\< g-^
 	\marcatoUpperSlur f-^( e4 ees8)\!
 	ees4(_\fbrackf d!8 des4.~
-	des)\> aes!4( bes8)\! \clef bass
+	des)\> aes!4( bes8)\! 
 % Bars 151 to 155
 	c4.(\p\< << ees~ {s8 s s\!}>>
-	ees4)\> des8( c4 c,8)\!
+	ees4)\> \clef bass des8( c4 c,8)\!
 	des4.(_\ppespress c
 	bes aes)
 	des( c
@@ -209,29 +209,29 @@ musicVioloncelloMvtI = \relative c {
 % Bars 166 to 170
 	fis,16(\< a cis a fis' cis)\! r4 r8
 	fis,16(\< a c! a fis' c)\! r4 r8 \mark \default
-	a16(\brack\fp c a c a c  a c a c a c)
+	a16(-\offset X-offset -2.5 \brack\fp c a c a c  a c a c a c)
 	a( c a c a c  a c a c a c)
 	a(\< c a c a c  a c a c a c)\!
 % Bars 171 to 175
 	f,,(\f aes!) c-. aes-. f'-. c-. aes'!( f) c'-. aes-. f'8->
 	R2.
-	e,8\pp^\pizz a c e[ r a]
+	e,8\pp-\offset X-offset -1 ^\pizz a c e[ r a]
 	e, a c e[ r a]
 	e,\< a c e[ r a]\!
 % Bars 176 to 180
-	f,,16(^\arco aes!) c-.\< aes-. f'( c) aes'!-. f-. c'( aes) f'-. c-.\!
+	f,,16(-\offset X-offset -4 ^\arco aes!) c-.\< aes-. f'( c) aes'!-. f-. c'( aes) f'-. c-.\!
 	aes'8-. r r r4 r8
 	fis,16(\pp b fis b fis b  fis b fis b fis b
 	fis b fis b fis b  fis b fis b fis b
 	fis b fis b fis b  fis b fis b fis b)
 % Bars 181 to 185
 	e,,(\f g) bes!-. g-. e'( bes) g'-.\< e-. bes'( g) d'-. bes-.\!
-	g'8-. r r r4 r8
-	ees,8\pp^\pizz ges ces ges'[ r ces]
+	\clef tenor g'8-. r r r4 r8
+	ees,8\pp-\offset X-offset -4 ^\pizz ges ces ges'[ r ces]
 	ees,, ces' ees ges[ r ces]
-	ees,, ces' ees ges[ r ces]
+	ees,, ces' ees ges[ r ces] \clef bass
 % Bars 186 to 190
-	<g,,! e'>8\fz^\arco \tuplet 3/2 8 {q16 q q} q8 r4 r8
+	<g,,! e'>8\fz-\offset X-offset -5 ^\arco \tuplet 3/2 8 {q16 q q} q8 r4 r8
 	\tuplet 3/2 8 {f8.:16\< ges: aes!: aes: bes: ces:\!}
 	<g e'>8\fz \tuplet 3/2 8 {q16 q q} q8 r4 r8
 	\tuplet 3/2 8 {f8.:16\< ges: aes: aes: bes: ces:\!}
@@ -240,7 +240,7 @@ musicVioloncelloMvtI = \relative c {
 	\tuplet 3/2 8 {g8.:16\< a: bes: bes: c: des:\!}
 	d,!8\brack\fz \tuplet 3/2 8 {<f d'>16 q q} q8 r4 r8
 	\tuplet 3/2 8 {g8.:16\< aes!: a: bes: c: des:\!} \clef tenor
-	bes'4.\ff \acciaccatura bes8 aes!4->( g8)
+	\dynEO #'(0 . 2) bes'4.\ff \acciaccatura bes8 aes!4->( g8)
 	aes4. \acciaccatura bes8 aes4->( g8)
 % Bars 196 to 200
 	\acciaccatura bes8 aes4(-> g8) \acciaccatura bes8 aes4(-> g8) 
@@ -253,7 +253,7 @@ musicVioloncelloMvtI = \relative c {
 	<< cis4.\> {s8 s s\!}>> bis16( cis d cis bis cis)
 	g!2.\fz\<~
 	<< g {s8 s s  s s s\!}>>
-	<d d'>8^\pizz\brack\fz r r r4 r8 \clef tenor
+	<d d'>8-\offset X-offset -6 ^\pizz\brack\fz r r r4 r8 \clef tenor
 % Bars 206 to 210
 	d'4.\brack\mf^\arco cis16( d ees! d cis d)
 	f2.-^
@@ -261,13 +261,13 @@ musicVioloncelloMvtI = \relative c {
 	<< aes!2.\brack\fz\<~ {s8 s s  s s s\!}>>
 	<< aes2. {s8\> s s  s s s\!}>> \clef bass
 % Bars 211 to 215
-	<ees ces' ges'>8\p^\pizz r r r4 r8 \clef tenor
-	ees'4.-^^\arco\brack\mf\< d16( ees fes ees d ees)\!
+	<ees ces' ges'>8\p-\offset X-offset -7 ^\pizz r r r4 r8 \clef tenor
+	ees'4.-^-\offset X-offset -5 ^\arco-\offset X-offset -0.5 \brack\mf -\tweak extra-offset #'(0 . 0.5) \< d16( ees fes ees d ees)\!
 	<< a,2. {s4. s\<}>>
 	e'4. dis16( e f e dis e)
 	<< b2. {s8 s s  s s s\!}>> \clef bass \mark \default
 % Bars 216 to 220
-	<d, b' d>2.:32-^\ff
+	\dynEO #'(-3 . 2) <d, b' d>2.:32-^\ff
 	q:
 	<d a' c>:
 	<d fis c'>:
@@ -294,7 +294,7 @@ musicVioloncelloMvtI = \relative c {
 	aes2.
 	des'4.(\pp\< b)\!
 	c2.
-	f,4\((_\brackfppocoapococrescendo des'16)[ r32 c-.]\) c4( bes8) \clef tenor
+	f,4\((_\brackfppocoa_pococresc des'16)[ r32 c-.]\) c4( bes8) \clef tenor
 	bes4\((\fp ges'16)[ r32 f-.]\) f4( ees8)
 % Bars 241 to 245
 	ees4\((\fz ges16)[ r32 f-.]\) f4( ees8)
@@ -304,7 +304,7 @@ musicVioloncelloMvtI = \relative c {
 	a,,4-^\f c16[ r32 b] b8-^ d-^ c-^
 % Bars 246 to 250
 	ees!-^\< d-^ fis16 ees a-> fis-> c'-> a-> ees'-> c->\!
-	fis8-.\fz r r r4 r8
+	\dynEO #'(0 . 2) fis8-.\fz r r r4 r8
 	dis\fz r dis,16(\p cisis dis8) fis-. b-.
 	d!-^\fz r r r4 r8
 	des-^ r des,16(\p c des8) f!-. aes!-.
@@ -327,7 +327,7 @@ musicVioloncelloMvtI = \relative c {
 	R2.*2
 	
 % Bars 266 to 270
-	fis'8\fz^\pizz r r r4 r8
+	fis'8\fz-\offset X-offset -6 ^\pizz r r r4 r8
 	R2.
 	b,8\p r r r4 r8
 	R2.
@@ -346,7 +346,7 @@ musicVioloncelloMvtI = \relative c {
 	g,16( bes ees bes g' ees) bes'4-^ r8
 % Bars 281 to 285
 	g,\f-^ aes-^ a-^ bes-^[ b-^ r16 c-.]
-	c8-^\<_\molto cis-^ d-^ ees16-^ e-^ f-^ fis-^ g-^ aes!-^\!
+	\hairpinShorten #'(0 . 2) c8-^\<_\molto cis-^ d-^ ees16-^ e-^ f-^ fis-^ g-^ aes!-^\!
 	a8-^_\brackfffz r r r4 r8
 	aes,!8\fz r r r4 r8
 	aes'\fz r r r4 r8
@@ -363,7 +363,7 @@ musicVioloncelloMvtI = \relative c {
 	aes-> r r r4 r8
 	ces4\fz r8 r4 r8
 % Bars 296 to 300
-	ces4->_\pocoapococrescendo r8 r4 r8
+	ces4->_\pocoapoco_crescendo r8 r4 r8
 	bes4\fz r8 bes'4-> r16 bes,
 	bes4-> r8 bes'4-> r16 bes,
 	bes4-> r8 bes'4-> r16 bes,
@@ -377,7 +377,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 306 to 310
 	bes'4.~ bes4 ees,16-. f-.
 	g8\<-^ aes-^ bes-^ c-^ d-^ ees-^\!
-	ees4.\ff~ ees8. d16-^ f-^ ees-^
+	\dynEO #'(0 . 2) ees4.\ff~ ees8. d16-^ f-^ ees-^
 	d4.-^ c-^
 	bes8\fz r r r4 r8
 % Bars 311 to 315
@@ -411,7 +411,7 @@ musicVioloncelloMvtI = \relative c {
 	d,:\mf\< ees: bes: d: ees: bes:
 	d: ees: bes: d: ees: bes:\!}
 % Bars 336 to 340
-	<d, d'>4.\f-^^\brackM\div <ees ees'>-^
+	\dynEO #'(-2 . 1) <d, d'>4.\f-^^\brackM\div <ees ees'>-^
 	ces'4.:32 aes8-^ aes-^ aes-^
 	ees2.:32\ff
 	ees4 r8 r4 r8
@@ -419,7 +419,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 341 to 343
 	q4 r8 r4 r8
 	q4 r8 r4 r8
-	q2.\ff\fermata \fine
+	\dynEO #'(-2.6 . 0.5) q2.\ff\fermata \fine
 }
 musicVioloncelloDivisiMvtI = \relative c {
 	\clef bass
@@ -457,7 +457,7 @@ musicVioloncelloDivisiMvtI = \relative c {
 	e( a e a e a  e a e a e a)
 	e(\< a e a e a  e a e a e a)\!
 % Bars 171 to 175
-	<f, d'>8\f-^ \tuplet 3/2 8 {q16 q q} q8 r4 r8
+	\dynEO #'(-2 . 1) <f, d'>8\f-^ \tuplet 3/2 8 {q16 q q} q8 r4 r8
 	q8 \tuplet 3/2 8 {q16 q q} q8 r4 r8
 	r4 r8 <e' c'>8\pp^\pizz q q
 	r4 r8 q8 q q
@@ -467,16 +467,16 @@ musicVioloncelloDivisiMvtI = \relative c {
 		d2.:32^\arco
 		d:
 	} \\ {
-		<< f,2.:\f {s8\< s s  s s s\!}>>
-		<< f2.: {s8\> s s  s s s\!}>>
+		<< f,2.:-\offset X-offset #1.5 \f {s8\< s s  s s s\!}>>
+		<< f2.: {\hairpinShorten #'(2 . 0) s8\> s s  s s s\!}>>
 	} >>
 	dis'16(\pp fis dis fis dis fis  dis fis dis fis dis fis
 	dis fis dis fis dis fis  dis fis dis fis dis fis
 	dis fis dis fis dis fis  dis fis dis fis dis fis)
 % Bars 181 to 185
 	<e g>8\f \tuplet 3/2 8 {q16 q q} q8 r4 r8
-	q8\> \tuplet 3/2 8 {q16 q q} q8\! r4 r8
-	r4 r8 ees!\pp^\pizz ees'! ees
+	q8\> \once \tupletUp \tuplet 3/2 8 {q16 q q} q8\! r4 r8
+	r4 r8 ees!\pp-\offset X-offset -5 ^\pizz ees'! ees
 	r4 r8 ees, ees' ees
 	r4 r8 ees, ees' ees
 % Bars 186 to 198
@@ -487,23 +487,23 @@ musicVioloncelloDivisiMvtI = \relative c {
 % Bars 201 to 205
 	cis cis r cis cis r
 	cis cis r r4 r8
-	r16^\arco g!16(\< bes! g bes g  bes g bes g bes g
+	r16-\offset X-offset -5 ^\arco g!16(\< bes! g bes g  bes g bes g bes g
 	bes8)\! e,16( g bes cis bes8)\fz r r^\pizz
 	d\pp d r d d r
 % Bars 206 to 210
 	d d r r4 r8
 	d8 d r d d r
 	d d r r4 r8
-	r16^\arco aes( ces aes ces aes  ces aes ces aes ces aes
+	r16-\offset X-offset -3 ^\arco aes( ces aes ces aes  ces aes ces aes ces aes
 	ces8)\< f,16( aes b d! f8)\brack\fz r r
 % Bars 211 to 215
-	ees,8\p^\pizz ges ces ees, ges ces
+	ees,8\p-\offset X-offset -5 ^\pizz ges ces ees, ges ces
 	ees, ges ces ees, ges ces
-	ees,! fis c'! ees,\< fis c'
+	ees,! fis c'! ees,-\alterBroken shorten-pair #'(()(4 . 0)) \< fis c'
 	e, g! c e, g c
 	f, aes! d f, aes d\!
 % Bars 216 to 220
-	d,16(\ff^\arco \liiri cis \tuplet 3/2 8 {\lirii d cis \liiri d \lirii cis d cis \setSextolet d cis d cis d c b a g)
+	\dynEO #'(-2.5 . 2) d,16(\ff-\offset X-offset -4 ^\arco \liiri cis \tuplet 3/2 8 {\lirii d cis \liiri d \lirii cis d cis \setSextolet d cis d cis d c b a g)
 	d'( cis d cis d cis d cis d  cis d cis d cis d} \unsetSextolet c32[ b a g])
 	\tuplet 3/2 8 {\setSextolet d'16( cis d cis d cis d cis d  cis d cis d cis d c b a)
 	d( cis d cis d cis d cis d  cis d cis d cis d c b a)
@@ -518,6 +518,6 @@ musicVioloncelloDivisiMvtI = \relative c {
 	R2.
 	r4 r8 \tuplet 3/2 8 {d8.:16_\pcresc ees: bes:
 	d: ees: bes: d: ees: bes:
-	d,:\mf\< ees: bes': d,: ees: bes':
+	d,:-\offset X-offset -0.5 \mf\< ees: bes': d,: ees: bes':
 	d,: ees: bes': d,: ees: bes':\!}
 }

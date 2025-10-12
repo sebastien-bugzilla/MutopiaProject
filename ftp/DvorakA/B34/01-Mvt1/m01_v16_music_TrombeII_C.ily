@@ -39,7 +39,7 @@ musicTrombeIIMvtI = \relative c {
 	des4.->\ff~ des8 c4->
 	bes4-> aes8->\<~ aes bes-> c->\!
 % Bars 36 to 40
-	c4.\ff d!4.
+	c4.-\tweak X-offset 0.2 \ff d!4.
 	ees4.-> ees->
 	\time 3/4 des8 r c r des r
 	\time 6/8 \stemUp \omitBeam c->\< des-> ges-> \stemDown ees( e) f8\!
@@ -47,8 +47,8 @@ musicTrombeIIMvtI = \relative c {
 % Bars 41 to 45
 	\time 6/8 c->\< des-> ges-> f-> ees-> ees->\!
 	\time 3/8 des->\< ees-> des->\! \mark \default
-	\time 6/8 c4\fz( b!8) r4 r8
-	c4\fz( b8) r4 r8
+	\time 6/8 c4-\offset X-offset 0.5 \fz( b!8) r4 r8
+	c4-\offset X-offset 0.5 \fz( b8) r4 r8
 	des4\fz( c8) r4 r8
 % Bars 46 to 50
 	des4.\fz r4 r8
@@ -93,8 +93,8 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	
-	\mmrPos #-8 R2.
-	\mmrPos #-8 R
+	\mmrPos #-7 R2.
+	\mmrPos #-7 R
 % Bars 96 to 100
 	des4.-^\ff r4 r8
 	f4.-^ r4 r8
@@ -272,8 +272,8 @@ musicTrombeIIMvtI = \relative c {
 	f-. r r f-. r r
 	fis2.~
 % Bars 316 to 320
-	fis4. f!8-.\fz r r
-	d'4.-^\ff r4 r8
+	fis4. f!8-.-\tweak X-offset 1 \fz r r
+	d'4.-^-\tweak X-offset 1 \ff r4 r8
 	des4 r8 c4 r8
 	des4 r8 f4 r8
 	d!2.-^

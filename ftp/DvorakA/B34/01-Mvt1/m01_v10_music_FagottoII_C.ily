@@ -76,9 +76,9 @@ musicFagottoIIMvtI = \relative c {
 	c4.-> << bes~ {s8\> s s\!}>>
 % Bars 56 to 60
 	bes4.\> << aes {s8 s s\!}>>
-	<< g2. {s4. s8\< s s\!}>>
+	<< g2. {s4. s8\< s s16 s\!}>>
 	aes2.\fz
-	<< g {s4. s8\< s s\!}>>
+	<< g {s4. s8\< s s16 s\!}>>
 	aes2.->
 % Bars 61 to 65
 	g->
@@ -154,7 +154,7 @@ musicFagottoIIMvtI = \relative c {
 	ees4 r8 r4 r8
 	ges2.\p(
 	<< aes) {s8\< s s\! s\> s s\!}>>
-	ges4._\pmarcato^\solo f-!
+	ges4._\pmarcato-\tweak extra-offset #'(-0.5 . 4) _\solo f-!
 % Bars 126 to 130
 	ees-! des-!
 	ges-! f-!\<
@@ -311,7 +311,7 @@ musicFagottoIIMvtI = \relative c {
 	a4.~ a4 a8\pp
 	a8\<-. a-. a-. a-.[ a-. r16 a-.]\!
 	a4.\fp\>~ a4\! a8-.
-	a4.-!\> a-!\!
+	a4.-!\> << a-! {s8 s s\!}>>
 	a4.\pp~ a4 a8-.
 % Bars 261 to 265
 	a4.-! a-!

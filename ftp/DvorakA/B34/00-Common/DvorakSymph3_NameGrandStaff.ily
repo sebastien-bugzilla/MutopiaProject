@@ -10,7 +10,7 @@ nameGrandStaffIMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffIIMvtI = {
-	\set Staff.instrumentName = "Corni F"
+	\set Staff.instrumentName = "Corni in F"
 	\set Staff.shortInstrumentName = "Cor. F"
 	\set Staff.midiInstrument = #""
 }

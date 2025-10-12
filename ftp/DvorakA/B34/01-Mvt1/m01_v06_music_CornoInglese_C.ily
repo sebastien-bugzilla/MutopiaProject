@@ -67,9 +67,9 @@ musicCornoIngleseMvtI = \relative c {
 	
 	
 	
-	r4 r8 r4 g16(\p\< aes
+	r4 r8 r4 g16(-\offset X-offset -1 \p\< aes
 % Bars 76 to 80
-	bes8)\! b-. c-.\> des-.[ ees-. r16 f]\! \mark \default
+	bes8)\! b-. \hairpinShorten #'(1 . 0) c-.\> des-.[ ees-. r16 f]\! \mark \default
 	f2.\pp~
 	f4. c16(\< des ees des c des)\!
 	ges2.
@@ -97,7 +97,7 @@ musicCornoIngleseMvtI = \relative c {
 	
 % Bars 106 to 110
 	
-	c2.->_\brackfppocoapococresc~
+	\dynEO #'(-3.3 . 2.3) \markEO #'(3 . 5.5) c2.->\brack\fp_\pocoapococresc~
 	c\<~
 	<< c~ {s8 s s  s s s\!}>>
 	c2.
@@ -161,8 +161,8 @@ musicCornoIngleseMvtI = \relative c {
 % Bars 166 to 170
 	
 	\mark \default
-	e4.(\fzpD\> d!\!
-	c\< b
+	\dynEO #'(0 . 1) e4.(\fzpD-\tweak extra-offset #'(0 . 0.6) \> d!\!
+	c-\tweak rotation #'(-0.8  1 0) \< b
 	a g4)\! \tuplet 3/2 8 {fis16( g a)}
 % Bars 171 to 175
 	<< g2.(~ {s8\fz\> s s  s s s\!}>>
@@ -179,7 +179,7 @@ musicCornoIngleseMvtI = \relative c {
 % Bars 181 to 185
 	
 	
-	bes!2.\pp~
+	bes!2.-\offset X-offset 1.5 \pp~
 	bes~
 	bes
 % Bars 186 to 190
@@ -189,10 +189,10 @@ musicCornoIngleseMvtI = \relative c {
 	c\fz
 	a\fz
 % Bars 191 to 195
-	gis\fz
+	gis-\offset X-offset 0.5 \fz
 	a\fz
-	gis\fz
-	aes4.\ff-^ f-^
+	gis-\offset X-offset 0.5 \fz
+	aes4.-\offset X-offset -0.5 \ff-^ f-^
 	aes-^ f-^
 % Bars 196 to 200
 	aes4->( f8) aes4->( f8)
@@ -203,7 +203,7 @@ musicCornoIngleseMvtI = \relative c {
 % Bars 201 to 205
 	
 	
-	<< d2.\brack\pp~ {s8\< s s  s s s\!}>>
+	<< d2.-\offset X-offset -1 \brack\pp~ {s8\< s s  s s s\!}>>
 	<< d2. {s8\> s s  s s s\!}>>
 	R2.*4
 % Bars 206 to 210
@@ -213,13 +213,13 @@ musicCornoIngleseMvtI = \relative c {
 	<< ees2.~ {s8\pp\< s s s s s\!}>>
 	<< ees2. {s8\> s s  s s s\!}>>
 % Bars 211 to 215
-	bes'2._\brackpcrescpocoapoco~
+	bes'2.-\offset X-offset 1.6 _\brackpcrescpocoapoco~
 	bes4.\< a16( bes ces bes a bes)\!
 	e,2.\fz
 	b'4.( ais16_\crescmarkup b c! b ais b)
 	<< fis2. {s8\< s s  s s s\!}>> \mark \default
 % Bars 216 to 220
-	d'2.-^\ff~
+	\dynEO #'(0.5 . 1) d'2.-^\ff~
 	d
 	g~-^
 	g
@@ -228,7 +228,7 @@ musicCornoIngleseMvtI = \relative c {
 	g-^
 	a4.-^ fis-^
 	fis-^ fis-^
-	f!2.\fff
+	\dynEO #'(0 . 1) f!2.\fff
 	f8 r r f r r
 % Bars 226 to 230
 	\time 3/4 f-. r f-. r f-. r
@@ -278,16 +278,16 @@ musicCornoIngleseMvtI = \relative c {
 	
 	
 	
-	e,,2.\fz~
+	\dynEO #'(-1 . 0) e,,2.\fz~
 	e
 % Bars 291 to 295
-	f\fz~
+	\dynEO #'(-1 . 0) f\fz~
 	f
-	g\fz~
+	\dynEO #'(-1 . 0) g\fz~
 	g
 	aes\fz\<~
 % Bars 296 to 300
-	<< aes {s8 s s s s s\!}>>
+	<< \markEO #'(1 . 3) aes_\pocoapoco_crescendo {s8 s s s s s\!}>>
 	a!2.\fz
 	bes\fz
 	b\fz
@@ -296,7 +296,7 @@ musicCornoIngleseMvtI = \relative c {
 	f,\ff(
 	<< a) {s8\< s s  s s s\!}>>
 	r ees'( ees,) e'( e,) r
-	r f'( f,) fis-^ g-^ a-^
+	r \beamOffset #'(0.5 . 0.5) f'( f,) fis-^ g-^ a-^
 	bes2.\ff~
 % Bars 306 to 310
 	bes~
@@ -311,8 +311,8 @@ musicCornoIngleseMvtI = \relative c {
 	f-. r r f-. r r
 	fis2._\pcresc~
 % Bars 316 to 320
-	fis4. f'!8-.\f r r
-	bes,4.-^\ff r4 r8
+	fis4. f'!8-.-\offset X-offset -1 \f r r
+	bes,4.-^-\offset X-offset 0.5 \ff r4 r8
 	f'4-^ r8 aes4-^ r8
 	des,4-^ r8 f4-^ r8
 	bes,2.-^
@@ -325,9 +325,9 @@ musicCornoIngleseMvtI = \relative c {
 % Bars 326 to 330
 	f-^ r r f-^ r r 
 	R2.
-	r4 r8 f-^\f f-^ f-^
+	r4 r8 \dynEO #'(0.5 . 0.5) f-^\f f-^ f-^
 	R2.
-	r4 r8 f-^\f f-^ f-^
+	r4 r8 \dynEO #'(0.5 . 0.5) f-^\f f-^ f-^
 % Bars 331 to 335
 	a(\p bes f a bes f)
 	a(_\brackpocoapococresc bes f a bes f)
@@ -335,7 +335,7 @@ musicCornoIngleseMvtI = \relative c {
 	a( bes f a bes f)
 	a(\< bes f a bes f)\!
 % Bars 336 to 340
-	a4.-^\f bes-^
+	\dynEO #'(-1 . 0) a4.-^\f bes-^
 	ges-^ ees-^
 	bes'2.\ff~
 	bes4 r8 r4 r8
@@ -343,5 +343,5 @@ musicCornoIngleseMvtI = \relative c {
 % Bars 341 to 343
 	bes4 r8 r4 r8
 	bes4 r8 r4 r8
-	bes2.\ff\fermata \fine
+	\dynEO #'(-2.6 . 0.5) bes2.\ff\fermata \fine
 }

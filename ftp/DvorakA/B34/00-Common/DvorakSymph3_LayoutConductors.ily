@@ -51,6 +51,7 @@
 		\override TupletBracket.staff-padding = ##f
 		\override MultiMeasureRest.space-increment = 0
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
+		\override Accidental.avoid-slur = #'ignore
 		
 %		\override StaffSymbol.transparent = ##t
 	}
@@ -71,6 +72,8 @@
 		\override Arpeggio.padding = #0.25
 		\override TupletNumber.avoid-slur = #'ignore
 		\override Beam.breakable = ##t
+		\override Slur.ratio = #0.1
+		\override Tie.details.ratio = #0.25
 %		\override Beam.damping = #5
 %		\override Beam.auto-knee-gap = #10
 		

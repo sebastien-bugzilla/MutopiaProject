@@ -162,9 +162,9 @@ musicTrombonoIIMvtI = \relative c {
 	
 	
 % Bars 186 to 190
-	r8 r8. g16(\mf bes4-^~ bes16.) bes32-.
+	r8 r8. g16(\mf \marcatoUpperSlur bes4-^~ bes16.) bes32-.
 	f4 r8 r4 r8
-	r8 r8. g16( bes4-^~ bes16.) bes32-.
+	r8 r8. g16( \marcatoUpperSlur bes4-^~ bes16.) bes32-.
 	f4 r8 r4 r8
 	bes4-^\brack\fz r8 r4 r8
 % Bars 191 to 195
@@ -186,15 +186,15 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 206 to 210
 	R2.*5
 % Bars 211 to 215
-	fis8\p-^ r r r4 r8
+	fis8-\offset X-offset 1.5 \p-^ r r r4 r8
 	R2.*2
 	
 	g8-.\p r r r4 r8
 	R2. \mark \default
 % Bars 216 to 220
-	g4.-^\ff~ g4~ g16. a32-.
+	\dynEO #'(-2.5 . 1.5) g4.-^\ff~ g4~ g16. a32-.
 	b4.-^~ b4~ b16. a32-.
-	a4.-^~ a4~ a16.\< b32-.\!
+	a4.-^~ a4~ \beamOffset #'(0.5 . 0.5) a16.\< b32-.\!
 	c4.-^~ c4~ c16. b32-.
 	b4-^~ b16.\< c32-.\! d4-^~ d16. c32-.
 % Bars 221 to 225

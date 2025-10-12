@@ -162,14 +162,14 @@ musicTrombonoIIIMvtI = \relative c {
 	
 	
 % Bars 186 to 190
-	r8 r8. g,16(\mf bes4-^~ bes16.) bes32-.
+	r8 r8. g,16(\mf \marcatoUpperSlur bes4-^~ bes16.) bes32-.
 	f4 r8 r4 r8
-	r8 r8. g16( bes4-^~ bes16.) bes32-.
+	r8 r8. g16( \marcatoUpperSlur bes4-^~ bes16.) bes32-.
 	f4 r8 r4 r8
 	r8 r8. d'16(\f f4~ f16.) f32-.
 % Bars 191 to 195
 	cis4 r8 r4 r8
-	r8 r8. d16( f4-^~ f16.) f32-.
+	r8 r8. d16( \marcatoUpperSlur f4-^~ f16.) f32-.
 	cis4 r8 r4 r8
 	des4.-^\ff bes-^
 	des-^ bes-^
@@ -186,13 +186,13 @@ musicTrombonoIIIMvtI = \relative c {
 % Bars 206 to 210
 	R2.*5
 % Bars 211 to 215
-	dis8\p-^ r r r4 r8
+	dis8-\offset X-offset 0.5 \p-^ r r r4 r8
 	R2.*2
 	
-	e8-.\p r r r4 r8
+	e8-.-\offset X-offset 0.5 \p r r r4 r8
 	R2. \mark \default
 % Bars 216 to 220
-	d2.-^\ff~
+	\dynEO #'(-2.5 . 1.5) d2.-^\ff~
 	d
 	d\fz-^~
 	d

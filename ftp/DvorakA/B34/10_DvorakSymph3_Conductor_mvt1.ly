@@ -22,8 +22,8 @@
 \include "./00-Common/DvorakSymph3_NameStaff.ily"
 \include "./00-Common/DvorakSymph3_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph3_Tempi.ily"
-%\include "./00-Common/DvorakSymph3_Format_Cond_Mvt01.ily"
-\include "./00-Common/DvorakSymph3_Format_temp.ily"
+\include "./00-Common/DvorakSymph3_Format_Cond_Mvt01.ily"
+%\include "./00-Common/DvorakSymph3_Format_temp.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoI_C.ily"
 \include "./01-Mvt1/m01_v03_music_FlautoII_C.ily"
 \include "./01-Mvt1/m01_v04_music_OboeI_C.ily"
@@ -72,9 +72,9 @@
 				\new GrandStaff \with { \nameGrandStaffIMvtI 
 					\consists Keep_alive_together_engraver } <<
 					\new Staff <<
-						\new Voice {
-							\displayFilterVoice
-						}
+%						\new Voice {
+%							\displayFilterVoice
+%						}
 						\new Voice {
 							\formatConductorMvtI
 						}
@@ -192,7 +192,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-			system-count = 76
 		}
 	}
 }

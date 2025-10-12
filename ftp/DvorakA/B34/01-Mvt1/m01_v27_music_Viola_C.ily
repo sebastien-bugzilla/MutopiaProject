@@ -9,13 +9,13 @@ musicViolaMvtI = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	ees16(\pp g ees g ees g  ees g ees g ees g
+	\dynEO #'(-2 . 1) ees16(\pp g ees g ees g  ees g ees g ees g
 	ees g ees g ees g  ees g ees g ees g)
 	\repeat tremolo 3 {ees( g} \repeat tremolo 3 {ees g} 
 	\repeat tremolo 3 {ees g} \repeat tremolo 3 {ees g)} 
 	\repeat tremolo 3 {ees(\< g} ees c' ees, c' ees, c')\!
 % Bars 6 to 10
-	ees,(\fp c' ees, c' ees, c'  ees, bes' ees, bes' ees, bes')
+	\dynEO #'(-0.5 . 0.3) ees,(\fp c' ees, c' ees, c'  ees, bes' ees, bes' ees, bes')
 	g(\> ees g ees bes' g\! aes\pp ees aes ees aes ees)
 	g( ees g ees g ees  g ees g ees\< g ees)
 	aes( ees aes\! ees aes\> ees  aes ees aes ees aes ees)\!
@@ -25,19 +25,19 @@ musicViolaMvtI = \relative c {
 	des( f des f des f  bes f des f des f)
 	ees(_\brackM\crescmarkup ges ees ges ees ges  bes ges ees ges ees ges)
 	ees(\fz ges ees ges ees ges  ees g ees g ees aes)
-	ges(\> bes ges bes ges bes\!  f\brack\p aes f aes f aes)
+	ges(\> bes ges bes ges bes  f\brack\p aes f aes f aes)
 % Bars 16 to 20
 	<ees g!>4.-^\ff d16( ees f ees d ees)
 	<bes' des>4.-^\brack\fz f16( ges aes ges f ges)
 	<aes f'>4.-^\brack\fz c16( des ees des c des)
-	\time 3/8 <bes ges'>4.:32-^\ff
+	\time 3/8 \dynEO #'(1 . 2) <bes ges'>4.:32-^\ff
 	\time 3/4 a'16(-> bes c bes) a->( bes c bes) a->( bes c bes)
 % Bars 21 to 25
 	\time 6/8 a(\< bes) c( bes) bes( aes) aes( g) g( f) f( ees)\!
 	\time 3/4 a(-> bes c bes) a(-> bes c bes) a->( bes c bes)
 	\time 6/8 a(\< bes) c( bes) bes( aes) aes( g) g( f) f( ees)\! \mark \default
-	<a, f'>4.\fz d16( ees f ees d ees)
-	<a, ges'>4.\fz d16( ees f ees d ees)
+	<a, f'>4.-\offset X-offset 0.5 \fz d16( ees f ees d ees)
+	<a, ges'>4.-\offset X-offset 0.5 \fz d16( ees f ees d ees)
 % Bars 26 to 30
 	des(\> bes des bes des bes  ces aes ces aes ces aes)\!
 	ges4\p r8 r4 r8
@@ -70,7 +70,7 @@ musicViolaMvtI = \relative c {
 	<aes! f'>4->\< q8->~ q << q4-> {s8 s\!}>>
 % Bars 51 to 55
 	f'16(\< d bes) f-. <d f>-> <ees g>-> <f aes>-> <g bes>-> <aes c>-> <bes d>-> <c ees>-> <d f>->\! \mark \default
-	<ees g>(\ff bes g bes g bes  g bes g bes g bes)
+	\dynEO #'(-0.5 . 0) <ees g>(\ff bes g bes g bes  g bes g bes g bes)
 	\repeat tremolo 3 {g( bes} \repeat tremolo 3 { g bes)}
 	g(\< bes g bes g bes ees, g ees g ees g)\!
 	ees( g ees g ees g  ees g ees g ees g)
@@ -90,7 +90,7 @@ musicViolaMvtI = \relative c {
 	c4-> r8 f,16( aes c aes f' c)
 	<c ees>2.:32\fff->
 	q:
-	q8 r r q4.:\fppD\>
+	q8 r r q4.:-\offset X-offset -2 \fppD\>
 	<< q2.: {s8 s s\! s4.}>>
 % Bars 71 to 75
 	q2.:
@@ -141,7 +141,7 @@ musicViolaMvtI = \relative c {
 	\repeat tremolo 6 {<f d'!>( <aes f'>)}
 	\repeat tremolo 6 {<f d'>( <aes f'>)}
 % Bars 111 to 115
-	\repeat tremolo 6 {<f d'>( <aes f'>)\<}
+	\repeat tremolo 6 {<f d'>( \hairpinShorten #'(0 . -9) <aes f'>)\<}
 	\repeat tremolo 6 {<f d'>( <aes f'>)\!}
 	<f d'>4\brack\ff r8 r4 r8
 	R2.*4
@@ -162,7 +162,7 @@ musicViolaMvtI = \relative c {
 	R2.
 	des4\pp r8 r4 r8
 	R2.
-	r4 r8 b'16(\p\< gis e' b gis' e
+	r4 r8 b'16(-\offset X-offset #-2 \p gis\<  e' b gis' e
 	b e gis e b' gis e'8)\! r r
 % Bars 131 to 135
 	R2.
@@ -184,7 +184,7 @@ musicViolaMvtI = \relative c {
 	d16( fis a \liiri fis \tuplet 3/2 8 {\lirii c' a fis)} r4 r8
 % Bars 146 to 150
 	d16( fis a \liiri fis \tuplet 3/2 8 {\lirii c' a fis)} r4 r8
-	<f! a>2.:32\fp\<_\crescmarkup
+	\markEO #'(2.5 . 3.5) <f! a>2.:32\fp\<_\crescmarkup
 	<< q: {s8 s s s s s\!}>>
 	<f bes!>2.:32\f
 	q4.:\> << <f aes!>: {s8 s s\!}>>
@@ -209,9 +209,9 @@ musicViolaMvtI = \relative c {
 % Bars 166 to 170
 	<a, fis'>4.\fz eis'16(\< fis gis fis eis fis)\!
 	<a, fis'>4.\brack\fz eis'16( fis gis fis eis fis) \mark \default
-	e,(\brack\fp a c \liiri a \tuplet 3/2 8 {\lirii e' c a)} r4 r8
+	e,(-\offset X-offset -2.5 \brack\fp a c \liiri a \tuplet 3/2 8 {\tupletDown \lirii e' c a)} r4 r8
 	e16( a c \liiri a \tuplet 3/2 8 {\lirii e' c a)} r4 r8
-	e16(\< a c \liiri a \tuplet 3/2 8 {\lirii e' c a)\!} r4 r8
+	\beamOffset #'(-0.5 . -0.5) e16(\< a c \liiri a \tuplet 3/2 8 {\lirii e' c a)\!} r4 r8 \tupletNeutral
 % Bars 171 to 175
 	f16(\f aes!) c-. aes-. f'[-. c-.] aes'!( f) c-. aes-. f-. c-.
 	aes'(\< f) c'-. aes-. f'([ c])\! aes'(\> f) d-. b-. aes-. f-.\!
@@ -219,7 +219,7 @@ musicViolaMvtI = \relative c {
 	r4 r8 q q q
 	r4 r8 q\< q q\!
 % Bars 176 to 180
-	<f aes! d>2.:32\f^\arco
+	<f aes! d>2.:32\f-\offset X-offset -4 ^\arco
 	q:
 	dis16(\pp fis b \liiri fis \tuplet 3/2 8 {\lirii dis' b fis)} r4 r8
 	dis16( fis b \liiri fis \tuplet 3/2 8 {\lirii dis' b fis)} r4 r8 
@@ -227,7 +227,7 @@ musicViolaMvtI = \relative c {
 % Bars 181 to 185
 	e16(\f g) bes!-. g-. e'( bes) g'(\< e!) bes'-. g-. d'( bes)\!
 	g(\> d bes' g d bes) <e, cis'>8\! r r
-	r4 r8 <b' fis'>\pp^\brackM\pizz q q
+	r4 r8 \beamOffset #'(0.5 . 0.5) <b' fis'>\pp-\offset X-offset -7 ^\brackM\pizz q q
 	r4 r8 q q q
 	r4 r8 q q q
 % Bars 186 to 190
@@ -237,10 +237,10 @@ musicViolaMvtI = \relative c {
 	\tuplet 3/2 8 {f8.:16\< ges: aes: aes: bes: ces:\!}
 	<bes d>8\fz \tuplet 3/2 8 {q16 q q} q8 r4 r8
 % Bars 191 to 195
-	\tuplet 3/2 8 {g8.:16\< a: bes: bes: c: des:\!}
+	\tuplet 3/2 8 {g8.:16\< a: bes: \stemUp bes: c: des:\!} \stemNeutral
 	<bes d!>8\brack\fz \tuplet 3/2 8 {q16 q q} q8 r4 r8
-	\tuplet 3/2 8 {g8.:16\< aes!: a: bes: c: des:\!}
-	<f, des'>8\ff \tuplet 3/2 8 {q16 q q} q8 des'8-^ \tuplet 3/2 8 {bes16( c des)} des8-^
+	\tuplet 3/2 8 {g8.:16\< aes!: a: \stemUp bes: c: des:\!} \stemNeutral
+	\dynEO #'(-1 . 0) <f, des'>8\ff \tuplet 3/2 8 {q16 q q} q8 des'8-^ \tuplet 3/2 8 {bes16( c des)} des8-^
 	<f, des'>8 \tuplet 3/2 8 {q16 q q} q8 des'8-^ \tuplet 3/2 8 {bes16( c des)} des8-^
 % Bars 196 to 200
 	des-^ bes16( c des8) des-^ bes16( c des8)
@@ -251,23 +251,23 @@ musicViolaMvtI = \relative c {
 % Bars 201 to 205
 	r a16( e a e gis8) r r
 	r a16( e a e gis8) r r
-	<cis, e>2.\<~
-	<< q {s8 s s  s s s\!}>>
-	<d f>8^\pizz r r r4 r8
+	\stemOffset #-0.5 <cis, e>2.\<~
+	<< \stemOffset #-0.5 q {s8 s s  s s s\!}>>
+	<d f>8-\offset X-offset -5 ^\pizz r r r4 r8
 % Bars 206 to 210
-	r8 bes'16(\brack\pp^\arco f bes f a8) r r
+	r8 bes'16(\brack\pp-\offset X-offset -5 ^\arco f bes f a8) r r
 	r8 bes16( f bes f a8) r r
 	r8 bes16( f bes f a8) r r
 	<< <d, f>2.~\< {s8 s s  s s s\!}>>
 	<< q2.\> {s8 s s  s s s\!}>>
 % Bars 211 to 215
-	<ees ges>8 r r^\arco r <ces ces'>16(\brack\pp <ges ges'> <ces ces'> <ges ges'>
+	<ees ges>8 r r^\arco r \beamOffset #'(0.5 . 0.5) <ces ces'>16(\brack\pp <ges ges'> <ces ces'> <ges ges'>
 	<bes bes'>8) r r r <ces ces'>16( <ges ges'> <ces ces'> <ges ges'>
-	<a a'>8) r r r4\< r8
-	r <c! c'!>16( <g! g'!> <c c'> <g g'> <b b'>8) r r
-	<cis cis'>16( <b b'> <d d'> <gis, gis'> <b b'>) r <cis cis'>( <b b'> <d d'> <gis, gis'> <b b'>)\! r \mark \default
+	<a a'>8) r r r4-\alterBroken shorten-pair #'(()(2 . 0)) \< r8
+	r \beamOffset #'(0.5 . 0.5) <c! c'!>16( <g! g'!> <c c'> <g g'> <b b'>8) r r
+	\beamOffset #'(0.8 . 0.8) <cis cis'>16( <b b'> <d d'> <gis, gis'> <b b'>) r \beamOffset #'(0.2 . 0.2) <cis cis'>( <b b'> <d d'> <gis, gis'> <b b'>)\! r \mark \default
 % Bars 216 to 220
-	<g! b g'!>2.:32\ff-^
+	\dynEO #'(-3 . 2.5) <g! b g'!>2.:32\ff-^
 	q:
 	<c d a'>:
 	<c a'>:
@@ -304,15 +304,15 @@ musicViolaMvtI = \relative c {
 		\repeat tremolo 6 {c( f)}
 	} \\ {
 % Bars 239 to 240
-		\repeat tremolo 6 {bes,(_\pocoapococrescendo g)}
+		\repeat tremolo 6 {bes,(-\offset X-offset -2 _\pocoapococresc g)}
 		\repeat tremolo 6 {bes(\fp ges)}
 % Bars 241 to 245
 		\repeat tremolo 6 {a( f)}
 		\repeat tremolo 6 {bes(\fz ges)}
-		\repeat tremolo 6 {bes(\fz g!)\<}
-		\repeat tremolo 6 {c(_\fzmarkup aes)\!}
+		\repeat tremolo 6 {\dynEO #'(-1.5 . 1) bes(\fz g!)\<}
+		\repeat tremolo 6 {\markEO #'(0 . 2) c(_\fzmarkup aes)\!}
 	} >>
-	<a fis'>2.:32\fp\<
+	<a fis'>2.:32\fp-\tweak extra-offset #'(0 . 1) \<
 % Bars 246 to 250
 	<< q: {s8 s s  s s s\!}>>
 	c!16(\fz\> ees c ees c ees  c ees c ees c ees)\!
@@ -338,11 +338,11 @@ musicViolaMvtI = \relative c {
 	r16 fis(\pp\< gis fis eis fis a fis cis')\! r r8
 	R2.
 % Bars 266 to 270
-	a8^\pizz\fz r r r4 r8
+	a8-\offset X-offset -6 ^\pizz\fz r r r4 r8
 	R2.
 	a8\p r r r4 r8
 	R2.
-	<g, g'>8\pp r r r4 r8
+	<g, g'>8-\offset X-offset 1 \pp r r r4 r8
 % Bars 271 to 275
 	<b g'>4 r8 r q8 q
 	q4 r8 r4 r8
@@ -378,15 +378,15 @@ musicViolaMvtI = \relative c {
 		des:
 	} \\ {
 % Bars 294 to 295
-		bes4.:\< aes:\!
+		\hairpinShorten #'(0 . -6.5) bes4.:\< aes:\!
 		<f aes!>2.:\brack\fz\<
 % Bars 296 to 300
-		ces'4:_\pocoapococrescendo bes: aes:\!
+		\markEO #'(0 . 3) ces'4:_\pocoapococrescendo bes: aes:\!
 	} >>
-	\tuplet 3/2 8 {ces8.:16\fz bes: bes: aes: aes: ces:
+	\tuplet 3/2 8 {\dynEO #'(0 . 1) ces8.:16\fz bes: bes: aes: aes: ces:
 	c!:\fz bes: bes: a: a: c:
 	des:\fz c: c: bes: bes: des:
-	ees:\fz d!: d: c: c: ees:}
+	\dynEO #'(-2.5 . 2) ees:\fz d!: d: c: c: ees:}
 % Bars 301 to 305
 	<f aes!>2.:
 	<< q:\< {s8 s s  s s s\!}>>
@@ -396,12 +396,12 @@ musicViolaMvtI = \relative c {
 % Bars 306 to 310
 	q2.:
 	<< q:\< {s8 s s  s s s\!}>>
-	<fis a>2.:32\ff
+	\dynEO #'(0 . 1) <fis a>2.:32\ff
 	q:
-	\tuplet 3/2 8 {\setSextolet bes,16(\fz des bes des bes des bes des bes  des bes des bes des bes des bes des)
+	\tuplet 3/2 8 {\setSextolet \stemDown bes,16(\fz des bes des bes des bes des bes des bes des bes des bes des bes des)
 % Bars 311 to 315
-	b(\fz d! b d b d b d b  d b d b d b d b d)
-	bes!(\fz des bes des bes des bes des bes  des bes des bes des bes des bes des)
+	b(-\offset X-offset -0.5 \fz d! b d b d b d b  d b d b d b d b d)
+	bes!(\fz des bes des bes des bes des bes  des bes des bes des bes des bes des) \stemNeutral 
 	g,!( bes g bes g bes g bes g)  aes( ces aes ces aes ces aes ces aes)
 	a!( c a c a c a c a) bes( des bes des bes des bes des bes)} \unsetSextolet
 	<b d!>2.:32_\pbrackcresc
@@ -420,8 +420,8 @@ musicViolaMvtI = \relative c {
 % Bars 326 to 330
 	q-^\arpeggio r r q-^\arpeggio r r
 	<< {
-		bes'16(^\div des bes des) \once \oneVoice r8 bes16( des bes des) \once \oneVoice r8
-		bes16( des bes des) \oneVoice r8 <d,! bes'!>16-^\f q-^ q-^ q-^ q-^ q-^
+		\markEO #'(-3 . -4.5) \beamOffset #'(-0.5 . -0.5) bes'16(^\div des bes des) \once \oneVoice r8 bes16( des bes des) \once \oneVoice r8
+		\beamOffset #'(-0.5 . -0.5) bes16( des bes des) \oneVoice r8 <d,! bes'!>16-^\f q-^ q-^ q-^ q-^ q-^
 	} \\ {
 		f8(\p ges) s f( ges) s
 		f( ges) s s4.
@@ -435,7 +435,7 @@ musicViolaMvtI = \relative c {
 	q:\mf\<
 	<< q: {s8 s s  s s s\!}>>
 % Bars 336 to 340
-	q2.:\f
+	\dynEO #'(0 . 1) q2.:\f
 	<ees ees'>4.: q8 <aes, f' ees'>-^\arpeggio q-^
 	<bes g' ees'>2.:32\ff
 	q4 r8 r4 r8
@@ -443,7 +443,7 @@ musicViolaMvtI = \relative c {
 % Bars 341 to 343
 	q4 r8 r4 r8
 	q4 r8 r4 r8
-	<bes' g'>2.\ff\fermata \fine
+	\dynEO #'(-2.6 . 0.5) <bes' g'>2.\ff\fermata \fine
 }
 musicViolaDivisiMvtI = \relative c {
 	\clef alto
@@ -459,7 +459,7 @@ musicViolaDivisiMvtI = \relative c {
 % Bars 81 to 85
 	ges( bes ges\< bes ges bes  ges bes ges bes ges bes)\!
 	ees,(_\crescmarkup ges ces ges ees ges  ees ges ees ges ees ges)
-	des(_\dimmarkup ges bes ges bes ges  des f aes f aes f)
+	des(-\offset X-offset -1.5 _\dimmarkup ges bes ges bes ges  des f aes f aes f)
 	ges8\pp r r bes16( des, ges \liiri des \tuplet 3/2 8 {\lirii bes' ges des)}
 	r4 r8 bes'16( des, ges \liiri des \tuplet 3/2 8 {\lirii bes' ges des)}
 % Bars 86 to 90
@@ -477,9 +477,9 @@ musicViolaDivisiMvtI = \relative c {
 % Bars 96 to 170
 	s2.*75
 % Bars 171 to 175
-	<c aes'!>8-^\f \tuplet 3/2 8 {q16 q q} q8 r4 r8
+	\dynEO #'(-2 . 1) <c aes'!>8-^\f \tuplet 3/2 8 {q16 q q} q8 r4 r8
 	q8 \tuplet 3/2 8 {q16 q q} q8 r4 r8
-	e\pp^\pizz a c e[ r a]
+	e-\offset X-offset 1 \pp^\pizz a c e[ r a]
 	e, a c e[ r a]
 	e,\< a c e[ r a]\!
 % Bars 176 to 180
@@ -489,9 +489,9 @@ musicViolaDivisiMvtI = \relative c {
 	dis16( fis b \liiri fis \tuplet 3/2 8 {\lirii dis' b fis)} r4 r8 
 	dis16( fis b \liiri fis \tuplet 3/2 8 {\lirii dis' b fis)} r4 r8 
 % Bars 181 to 185
-	<bes! d!>8\f \tuplet 3/2 8 {q16 q q} q8 r4 r8
-	<bes! d>8\> \tuplet 3/2 8 {q16 q q} q8\! r4 r8
-	ees,!\pp^\pizz ges ces ges'[ r ces]
+	\dynEO #'(-1 . 0) <bes! d!>8\f \tuplet 3/2 8 {q16 q q} q8 r4 r8
+	\stemUp \beamOffset #'(-0.5 . -0.5) <bes! d>8\> \tuplet 3/2 8 {q16 q q} q8\! \stemNeutral r4 r8
+	\dynEO #'(-4 . 1) ees,!\pp^\pizz ges ces ges'[ r ces]
 	ees,, ces' ees ges[ r ces]
 	ees,, ces' ees ges[ r ces]
 % Bars 186 to 198
@@ -502,9 +502,9 @@ musicViolaDivisiMvtI = \relative c {
 % Bars 201 to 205
 	q~
 	q~
-	q8 r r e,16(\< g bes cis e g
+	q8 r r \beamOffset #'(-1 . -0.5) e,16(\< g bes cis e g
 	bes8) e,16( g bes cis\! bes8)\fz r r
-	<d, f>2.\pp~
+	\dynEO #'(1 . 0.5) <d, f>2.\pp~
 % Bars 206 to 210
 	q~
 	q~
@@ -512,16 +512,16 @@ musicViolaDivisiMvtI = \relative c {
 	q8 r r f,16(\< aes! b! d f aes
 	b8) f16( aes b d f d b d f aes)\!
 % Bars 211 to 215
-	ges8\p r r \tuplet 3/2 8 {<bes,, ges'>8.:16\brack\pp <ces ees>: <ges ces!>:
-	<bes ges'>: <ces ees>: <ges ces!>: <bes ges'>: <ces ees>: <ges ces>: 
-	<b ges'>: <c! ees>: <fis, c'!>: <b ges'>:\< <c ees>: <fis, c'>:
-	<b g'!>: <c e>: <g! c>: <b g'>: <c e>: <g c>:
-	<cis aes'!>: <d f>: <gis, d'>: <cis aes'>: <d f>: <gis, d'>:\!}
+	\dynEO #'(0 . 2) ges8\p r r \tuplet 3/2 8 {<bes,, ges'>8.:16-\offset X-offset -3.5 \brack\pp <ces ees>: <ges ces!>:
+	\omitAllTupletNumber <bes ges'>: <ces ees>: <ges ces!>: \beamOffset #'(0.5 . 0.5) <bes ges'>: <ces ees>: <ges ces>: 
+	<b ges'>: <c! ees>: <fis, c'!>: \beamOffset #'(0.5 . 0.5) <b ges'>:\< <c ees>: <fis, c'>:
+	\beamOffset #'(0.5 . 0.5) <b g'!>: <c e>: <g! c>: \beamOffset #'(0.5 . 0.5) <b g'>: <c e>: <g c>:
+	\beamOffset #'(0.5 . 0.5) <cis aes'!>: <d f>: <gis, d'>: \beamOffset #'(0.5 . 0.5) <cis aes'>: <d f>: <gis, d'>:\!} \undoOmitTupletNumber
 % Bars 216 to 220
-	d'16(\ff \liiri cis \tuplet 3/2 8 {\lirii d cis \liiri d \lirii cis d cis  \setSextolet d cis d cis d c b a g)
+	\dynEO #'(-3 . 2) d'16(\ff \liiri cis \tuplet 3/2 8 {\lirii d cis \liiri d \lirii cis d cis  \setSextolet d cis d cis d c b a g)
 	d'( cis d cis d cis d cis d  cis d cis d cis d} \unsetSextolet c32[ b a g])
-	\tuplet 3/2 8 {\setSextolet d'16( cis d cis d cis d cis d  cis d cis d cis d c b a)
-	d( cis d cis d cis d cis d  cis d cis d cis d c b a)} \unsetSextolet
+	\tuplet 3/2 8 {\setSextolet d'16( cis d cis d cis d cis d \stemDown cis d cis d cis d c b a) 
+	d( cis d cis d cis d cis d  cis d cis d cis d c b a)} \stemNeutral \unsetSextolet
 	b4.:32-> gis:->
 % Bars 221
 	c:-> a:->

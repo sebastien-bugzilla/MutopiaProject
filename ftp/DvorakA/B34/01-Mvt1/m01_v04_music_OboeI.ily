@@ -354,8 +354,8 @@ musicOboeIMvtI = \relative c {
 	c
 	des\fz\<~
 % Bars 296 to 300
-	<< des {s8 s s s s s\!}>>
-	f,2.->_\pocoapococrescendo
+	<< des_\pocoapococrescendo {s8 s s s s s\!}>>
+	f,2.->
 	ges->
 	g!->
 	a->

@@ -115,7 +115,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 111 to 115
 	bes2.:\p\<
 	<< bes: {s8 s s  s s s\!}>>
-	bes4\f r8 r4 r8
+	\dynEO #'(-1 . 0) bes4\f r8 r4 r8
 	R2.*4
 	
 % Bars 116 to 120
@@ -172,7 +172,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 181 to 185
 	bes:\fz
 	<< bes: {s8\> s s  s s s\!}>>
-	ees8-.\pp ees-. ees-. r4 r8
+	\dynEO #'(-1 . -7) ees8-.^\pp ees-. ees-. r4 r8
 	ees8-. ees-. ees-. r4 r8
 	ees-. ees-. ees-. r4 r8
 % Bars 186 to 190
@@ -185,7 +185,7 @@ musicTimpaniMvtI = \relative c {
 	bes \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r
 	bes \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r
 	bes \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r
-	bes2.:\ff-^
+	bes2.:\ff^^
 	bes:
 % Bars 196 to 200
 	bes:
@@ -208,7 +208,7 @@ musicTimpaniMvtI = \relative c {
 	
 	\mark \default
 % Bars 216 to 220
-	d2.:32\ff
+	\dynEO #'(-3 . 1.5) d2.:32\ff
 	d:
 	d:
 	d:
@@ -316,9 +316,9 @@ musicTimpaniMvtI = \relative c {
 % Bars 326 to 330
 	r r bes-^ r r bes-^
 	R2.
-	r4 r8 bes16-^\f bes-^ bes-^ bes-^ bes-^ bes-^ 
+	r4 r8 bes16-^-\offset X-offset -1.5 \f bes-^ bes-^ bes-^ bes-^ bes-^ 
 	R2.
-	r4 r8 bes16-^\f bes-^ bes-^ bes-^ bes-^ bes-^ 
+	r4 r8 bes16-^-\offset X-offset -1.5 \f bes-^ bes-^ bes-^ bes-^ bes-^ 
 % Bars 331 to 335
 	R2.
 	ees2.:\pp

@@ -11,25 +11,25 @@ musicOboeIIMvtI = \relative c {
 % Bars 1 to 5
 	R2.*2
 	
-	\mmrPos #-6 R2.
+	\mmrPos #-7 R2.
 	R2.*4
 	
 % Bars 6 to 10
 	
 	
-	ees'4.(\brack\pp d16 ees f ees\< d ees)
-	<< ees4( {s8 s\!}>> aes16)[ g32\rest g-.] f4(\> ees8)\!
-	ees4.( d16 ees f\< ees d ees)\!
+	\shape #'((0.5 . 2.5)(0 . 1)(0 . 0.5)(0 . 0)) Slur ees'4.(\brack\pp d16 ees f ees\< d ees)
+	<< ees4( {s8 s\!}>> aes16)[ a32\rest g-.] f4(\> ees8)\!
+	ees4.( d16 ees f ees d ees)
 % Bars 11 to 15
-	ees4(\brack\fz aes16)[ g32\rest g-.] f4(\> ees8)\!
+	ees4(^\brack\fz aes16)[ a32\rest g-.] f4(\> ees8)\!
 	f2.
 	bes
 	ges4.\fz g4( aes8)
 	ees4. d\p
 % Bars 16 to 20
 	ees4.\ff d16( ees f ees d ees)
-	ges4.\fz f16( ges aes ges f ges)
-	f4.\fz c'16( des ees des c des)
+	ges4.-\offset X-offset 0.5 \fz f16( ges aes ges f ges)
+	f4.-\offset X-offset 0.5 \fz c'16( des ees des c des)
 	\time 3/8 ges4.->\ff
 	\time 3/4 a,16(-> bes c bes) a->( bes c bes) a->( bes c bes)
 % Bars 21 to 25
@@ -70,7 +70,7 @@ musicOboeIIMvtI = \relative c {
 	f4->\< f8->~ f << f4-> {s8 s\!}>>
 % Bars 51 to 55
 	<< f2. {s8\< s s  s s s\!}>> \mark \default
-	ees4.\ff d16( ees f ees d ees)
+	\dynEO #'(-0.5 . 0) ees4.\ff d16( ees f ees d ees)
 	ees4.~ ees4 ees,16 f
 	g8->\< aes-> bes-> c->[ d-> r16 ees-.]\!
 	ees4.\fz~ ees8. d16(\> f ees)\!
@@ -132,7 +132,7 @@ musicOboeIIMvtI = \relative c {
 	
 % Bars 106 to 110
 	
-	des,2.~_\brackfppocoapococresc
+	\markEO #'(0.5 . 0.5) des,2.~_\brackfppocoapococresc
 	des
 	d!~
 	d
@@ -151,13 +151,13 @@ musicOboeIIMvtI = \relative c {
 	bes'4.->~ bes4 ees,16-. d-.
 	ees8-. f->_\crescmarkup ges-> aes->[ bes-> r16 c!-.]
 	des2.\fp(
-	<< f,) {s8\< s s\! s\> s s\!}>>
+	<< f,) {\hairpinShorten #'(1 . 0) s8\< s s\! s\> s s\!}>>
 	ges4 r8 r4 r8
 % Bars 126 to 130
 	R2.*3
 	
 	
-	e2.\fp~
+	e2.-\offset X-offset 0.8 \fp~
 	<< e {s8\< s s  s s s\!}>>
 % Bars 131 to 135
 	<< e2.\>~ {s8 s s  s s s\!}>>
@@ -174,14 +174,14 @@ musicOboeIIMvtI = \relative c {
 % Bars 141 to 145
 	
 	
-	d,2.~\p
+	\dynEO #'(-1.8 . 1.8) d,2.~\p
 	d
 	d~
 % Bars 146 to 150
 	d
 	c-^\brack\f~
 	<< c {s8\< s s  s s s\!}>>
-	ees!4(\f\< d8 des4.\brack\fz~
+	\shape #'((0 . 0.5)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur ees!4(-\offset X-offset -1 \f\< d8 des4.\brack\fz~
 	des4) r8 r4 r8
 % Bars 151 to 155
 	R2.*9
@@ -216,7 +216,7 @@ musicOboeIIMvtI = \relative c {
 	gis fis
 	e dis
 % Bars 181 to 185
-	d!4) \tuplet 3/2 8 {cis16(\< d e)\!} d4.\fz(~
+	d!4) \tuplet 3/2 8 {cis16(\< d e)\!} d4.-\tweak X-offset 0.5 \fz(~
 	<< d\> {s8. s}>> cis4.)\!
 	fis2.\pp~
 	fis4 r8 r4 r8
@@ -244,7 +244,7 @@ musicOboeIIMvtI = \relative c {
 	e
 	<< cis'~ {s8\< s s s s s\!}>>
 	<< cis2. {s8\> s s s s s\!}>>
-	d8 r r f,4.\pp~
+	d8 r r f,4.-\tweak X-offset 0.5 \pp~
 % Bars 206 to 210
 	f2.~
 	f~
@@ -258,13 +258,13 @@ musicOboeIIMvtI = \relative c {
 	e(\<
 	<< f) {s8 s s  s s s\!}>> \mark \default
 % Bars 216 to 220
-	g4.-^\ff fis-^
+	\dynEO #'(-2 . 2) g4.-^\ff fis-^
 	e-^ d-^
 	g-^ fis-^
 	e-^ d-^
-	a'4->(\< g8)\! f!4->( e8)
+	\hairpinShorten #'(0 . -3.5) a'4->(\< g8)\! f!4->( e8)
 % Bars 221 to 225
-	b'4(->\< a8)\! g4->( fis8)
+	\hairpinShorten #'(0 . -4.5) b'4(->\< a8)\! g4->( fis8)
 	c'4(->\< b8)\! a4->( gis8)
 	a4(->\< gis8)\! a4->( gis8)
 	d2.\fff
@@ -274,24 +274,24 @@ musicOboeIIMvtI = \relative c {
 	\time 6/8 << d,2.~ {s8\> s s  s s s\!}>>
 	d4 r8 r4 r8
 	\time 3/8 R4.
-	\time 6/8 ees2.~\pp
+	\time 6/8 ees2.~-\offset X-offset 1.5 \pp
 % Bars 231 to 235
 	ees~
 	ees
-	ees~_\fpsempredim
+	ees~-\offset X-offset 1 _\fpsempredim
 	ees
 	ees2.\brack\p(~
 % Bars 236 to 240
 	ees4\< aes16)\![ r32 g-.] f4(\> ees8)\!
 	ees2.(~\brack\pp
 	ees4\< aes16)\![ r32 g-.] f4(\> ees8)\!
-	f2.\<_\fppocoapococrescendo
-	bes\fz
+	f2.-\offset X-offset 1.5 _\fppocoa_pococresc
+	bes-\offset X-offset 0.5 \fz
 % Bars 241 to 245
-	a\fz
-	bes\fz
-	bes\fz\<
-	<< c_\fzmarkup {s8 s s  s s s\!}>>
+	a-\offset X-offset 0.5 \fz
+	bes-\offset X-offset 0.5 \fz
+	bes-\offset X-offset 0.5 \fz\<
+	<< \markEO #'(0.5 . 2) c_\fzmarkup {s8 s s  s s s\!}>>
 	fis,2.\fz\<~
 % Bars 246 to 250
 	<< fis { s8 s s  s s s\!}>>
@@ -308,8 +308,8 @@ musicOboeIIMvtI = \relative c {
 % Bars 256 to 260
 	<< cis2. {s4. s\!}>>
 	a8-.\< a-. a a-.[ a-. r16 a-.]\!
-	a4.\fp\>~ a4\! a8
-	a4.\> a\!
+	a4.-\offset X-offset 0.5 \fp\>~ a4\! a8
+	a4.\> << a {s8 s s\!}>>
 	a4.\pp~ a4 a8
 % Bars 261 to 265
 	a4.-! a-!

@@ -99,7 +99,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 81 to 85
 	ces4.(->\< bes)
 	aes( ges4 ees8)\!
-	des4( ges8\> f4 aes8\!
+	des4(\> ges8 f4 aes8\!
 	ges4)\brack\pp r8 r4 r8
 	R2.*3
 % Bars 86 to 90
@@ -326,8 +326,8 @@ musicFlautoIIMvtI = \relative c {
 	c
 	des\fz\<~
 % Bars 296 to 300
-	<< des {s4 s s\!}>>
-	aes8->_\pocoapococresc bes bes-> ces ces-> aes
+	<< des_\pocoapococresc {s4 s s\!}>>
+	aes8-> bes bes-> ces ces-> aes
 	a-> bes bes-> c! c-> a
 	bes-> c c-> des des-> bes
 	c-> d! d-> ees ees-> c

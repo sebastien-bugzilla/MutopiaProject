@@ -54,13 +54,13 @@ musicCornoIIMvtI = \relative c {
 	f4.->\ff f->
 	ees-> ees-> 
 	\time 3/4 des8 r ees r f r
-	\time 6/8 \stemUp \omitBeam ees->\< f-> ges-> \stemDown ges4( f8)\!
+	\time 6/8 \stemUp \hairpinShorten #'(0 . 2) \omitBeam ees->\< f-> ges-> \stemDown ges4( f8)\!
 	\time 3/4 f r ees r f r
 % Bars 41 to 45
 	\time 6/8 ees->\< f-> ges-> f-> ees-> ges->\!
 	\time 3/8 f->\< f-> f->\! \mark \default
-	\time 6/8 f4.\fz r4 r8
-	f4.\fz r4 r8
+	\time 6/8 f4.-\offset X-offset 0.5 \fz r4 r8
+	f4.-\offset X-offset 0.5 \fz r4 r8
 	g4.\fz r4 r8
 % Bars 46 to 50
 	g4.\fz r4 r8
@@ -238,8 +238,8 @@ musicCornoIIMvtI = \relative c {
 % Bars 201 to 205
 	R2.
 	R2.
-	r4 r8 << d4.\fz~ {s8\< s s\!}>>
-	<< d2. {s8\> s s  s s s\!}>>
+	r4 r8 << d4.-\offset X-offset 0.5 \fz~ {s8\< s s\!}>>
+	<< d2. {\hairpinShorten #'(1 . 0) s8\> s s  s s s\!}>>
 	c8\brack\pp r r r4 r8
 % Bars 206 to 210
 	R2.*3
@@ -254,11 +254,11 @@ musicCornoIIMvtI = \relative c {
 	b!(\<
 	<< c) {s8 s s s s s\!}>> \mark \default
 % Bars 216 to 220
-	fis,2.\ff~
+	\dynEO #'(-2.5 . 1.5) fis,2.\ff~
 	fis
 	g2.-^~
 	g 
-	fis-^
+	fis-\tweak extra-offset #'(0 . 0.7) -^
 % Bars 221 to 225
 	g-^
 	a->
@@ -306,7 +306,7 @@ musicCornoIIMvtI = \relative c {
 	R2.*5
 % Bars 261 to 265
 	
-	cis2.-^\fppD
+	cis2.-^-\tweak X-offset -0.6 \fppD
 	cis4.->\p cis->
 	cis->\>~ cis8\! r r
 	R2.
@@ -321,7 +321,7 @@ musicCornoIIMvtI = \relative c {
 	R2.*2
 	
 	g'4.-^\brack\mp^\marcato g4-^~ g16. g32-.
-	d'4.->~ d4 g,16-. a-.
+	d'4.->~_\pocoapococresc d4 g,16-. a-.
 % Bars 276 to 280
 	b8-.\< c-. d-. e-.[ fis-. r16 g]\!
 	g2.\fz

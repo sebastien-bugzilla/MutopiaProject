@@ -72,7 +72,7 @@ musicViolinoIMvtI = \relative c {
 	aes(\< f d) bes-. f-> g-> aes-> bes-> c-> d-> ees-> f->\! \mark \default
 	<bes,, g' ees'>4.\ff-^\arpeggio d'16( ees f ees d ees)
 	bes'4.~ bes4 ees,16 f
-	g8-.\< aes-. bes-. c-.[ d-. r16 ees-.]
+	g8-.\< aes-. bes-. c-.[ d-. r16 ees-.]\!
 	ees4.\fz(~-> ees8. d16\> f ees)\!
 % Bars 56 to 60
 	d4.(\> << c) {s8 s s\!}>>
@@ -379,7 +379,7 @@ musicViolinoIMvtI = \relative c {
 	<< ees: {s8\< s s  s s s\!}>>
 	ges2.:\ff-^
 	ges:-^
-	bes8 r bes,16.-. aes32-. aes4(\> ges8)\!
+	bes8 r bes,16.-. aes32-. aes4(\< ges8)\!
 % Bars 311 to 315
 	r4 ces16.-. bes32-. bes4(\< aes8)\!
 	r4 des16.-. ces32-. ces4(\< bes8)\!

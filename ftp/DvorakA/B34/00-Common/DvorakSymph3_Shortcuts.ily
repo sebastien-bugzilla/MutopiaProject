@@ -132,6 +132,13 @@ fzmarkup = \markup {\hspace #-0.55 \dynamic fz}
 fffz = \markup {\hspace #-3.3 \concat { \dynamic ff \hspace #0.4 \dynamic fz }}
 fzsempredim = \markup {\dynamic fz \italic "sempre dim."}
 fzpocoapococrescendo = \markup {\hspace #-0.55 \dynamic fz \italic "poco a poco crescendo"}
+fzpocoa_pococrescendo = \markup {
+	\column {
+		\lower #1.5
+		\line { \hspace #-0.55 \dynamic fz \italic "poco a"}
+		\line { \italic "poco crescendo"}
+	}
+}
 brackfzpocoapococresc = \markup {
 	\hspace #-0.55 \bracket \with-true-dimensions \dynamic fz
 	\italic "poco a poco cresc."
@@ -164,7 +171,20 @@ brackfppocoapococresc = \markup {
 	\hspace #-0.69 \bracket \with-true-dimensions \dynamic fp
 	\italic "poco a poco cresc."
 }
+brackfppocoa_pococresc = \markup {
+	\column {
+		\lower #1 
+		\line {\hspace #-0.69 \bracket \with-true-dimensions \dynamic fp \italic "poco a"}
+		\line {\italic "poco cresc."}
+	}
+}
 fppocoapococresc = \markup {\hspace #-0.69 \dynamic fp \italic "poco a poco cresc."}
+fppocoa_pococresc = \markup {
+	\column { 
+		\lower #1 \line { \hspace #-0.69 \dynamic fp \italic "poco a" }
+		\line { \italic "poco cresc."}
+	}
+}
 fbrackp = \markup {
 	\hspace #-0.69 \concat {
 		\dynamic f \bracketItalic \with-true-dimensions \dynamic p
@@ -222,6 +242,9 @@ dimmarkup = \markup {\italic dim.}
 pocoapococresc = \markup {\italic "poco a poco cresc."}
 brackpocoapococresc = \markup { \italic { \bracket \with-true-dimensions  "poco a poco" cresc }}
 pocoapococrescendo = \markup {\italic "poco a poco crescendo"}
+pocoapoco_crescendo = \markup {
+	\italic { \column { \lower #1.5 "poco a poco" "crescendo" } }
+}
 pococresc = \markup {\italic "poco cresc."}
 dimp = \markup {\italic "dim." \dynamic p}
 sempredim = \markup {\italic "sempre dim."}
@@ -313,6 +336,8 @@ omitDots = \once \omit Dots
 omitStem = \once \omit Stem
 aIIOmit = \once \omit Voice.CombineTextScript
 omitTupletNumber = \once \omit Voice.TupletNumber
+omitAllTupletNumber = \omit Voice.TupletNumber
+undoOmitTupletNumber = \undo \omit Voice.TupletNumber
 
 liiri = {
 	\set stemLeftBeamCount = #2
@@ -437,16 +462,65 @@ noteShift = #(define-music-function
 	#}
 )
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%aIIXoffset = #(define-music-function
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = #0.85
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
+
+aIIXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override CombineTextScript.X-offset = #offset
+	#}
+)
+
+markEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TextScript.layer = #3
+		\once \override TextScript.extra-offset = #offset
+		\once \override TextScript.whiteout = #0.85
+		\once \override TextScript.whiteout-style = #'outline
+	#}
+)
+
+%hairpinEO = #(define-music-function
 %	(offset)
-%	(number?)
+%	(pair?)
 %	#{
-%		\once \override CombineTextScript.X-offset = #offset
+%		\once \override Hairpin.extra-offset = #offset
+%		\once \override Hairpin.whiteout = #0.85
+%		\once \override Hairpin.whiteout-style = #'outline
 %	#}
 %)
 
 
+
+%ottavaEO = #(define-music-function
+%	(offset)
+%	(pair?)
+%	#{
+%		\once \override Staff.OttavaBracket.extra-offset = #offset
+%	#}
+%)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %aIIExtraOffset = #(define-music-function
 %	(extraoffset)
 %	(pair?)
@@ -506,34 +580,6 @@ noteShift = #(define-music-function
 %	#}
 %)
 
-%dynEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override DynamicText.extra-offset = #offset
-%		\once \override DynamicText.whiteout = ##t
-%		\once \override DynamicText.whiteout-style = #'outline
-%	#}
-%)
-
-%hairpinShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.shorten-pair = #shortLength
-%	#}
-%)
-
-%hairpinEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.extra-offset = #offset
-%		\once \override Hairpin.whiteout = ##t
-%		\once \override Hairpin.whiteout-style = #'outline
-%	#}
-%)
-
 %InCueContext = {
 %	\override Beam.beam-thickness = #0.30 % 0.30
 %	\override StemTremolo.beam-thickness = #0.35 % 0.30
@@ -562,17 +608,6 @@ noteShift = #(define-music-function
 %	\set stemLeftBeamCount = #3
 %	\set stemRightBeamCount = #1
 %}
-
-%markEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TextScript.layer = #3
-%		\once \override TextScript.extra-offset = #offset
-%		\once \override TextScript.whiteout = ##t
-%		\once \override TextScript.whiteout-style = #'outline
-%	#}
-%)
 
 %markWhiteout = {
 %	\once \override Score.RehearsalMark.layer = #3

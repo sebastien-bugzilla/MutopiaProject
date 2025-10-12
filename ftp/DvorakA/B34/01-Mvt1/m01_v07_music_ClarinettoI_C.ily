@@ -15,11 +15,11 @@ musicClarinettoIMvtI = \relative c {
 	a4. bes
 	c( e,16 f g f e f)
 	<< d'4.~ {s8 s s}>> d4~ d16 f,
-	f4.( e16 f g f\< e f)\!
+	f4.( e16 f g\< f e f)\!
 % Bars 11 to 15
-	d'4.~ d4~ d16 f,
-	g4(\< ees'16)[\! d32\rest d-.] d4( c8)
-	c4(\< aes'16)[\! g32\rest g-.] g4( f8)
+	d'4.~\brack\fz d4~ d16 f,
+	\hairpinShorten #'(0 . 1) g4(\< ees'16)[\! d32\rest d-.] d4( c8)
+	\hairpinShorten #'(0 . 1) c4(\< aes'16)[\! g32\rest g-.] g4( f8)
 	f4.(~ f16 e g f des! bes)
 	aes4._\brackM\dimmarkup g4( c8)
 % Bars 16 to 20
@@ -50,7 +50,7 @@ musicClarinettoIMvtI = \relative c {
 	\partCombineApart e!4.( f)
 	g4->( f8) ees4. 
 	\time 3/4 f8( ees16) r f8( ees16) r f8( ees16) r \partCombineAutomatic
-	\time 6/8 f16(\< ees) aes( g) g( f) f( ees) ees( des) b( c)\!
+	\time 6/8 \aIIXoffset #-3 f16(\< ees) aes( g) g( f) f( ees) ees( des) b( c)\!
 	\partCombineApart \time 3/4 f8( ees16) r f8( ees16) r f8( ees16) r \partCombineAutomatic
 % Bars 41 to 45
 	\time 6/8 f16(\< ees) bes'( aes) aes( g) g( f) f( ees) ees( des)\!
@@ -87,15 +87,15 @@ musicClarinettoIMvtI = \relative c {
 	aes2.\ff~
 	aes~
 	aes8 r r r4 r8
-	\partCombineApart r4^\solo d,16(\p e f8) d16( e f8) \partCombineAutomatic
+	\partCombineApart r4^\solo d,16(-\offset X-offset -0.5 \p e f8) d16( e f8) \partCombineAutomatic
 % Bars 71 to 75
 	R2.*4
 	
 	
 	
-	\partCombineApart r4 r8 r4 b,16(\p\< c
+	\partCombineApart r4 r8 r4 b,16(-\offset X-offset -1 \p\< c
 % Bars 76 to 80
-	des8)\! ees-. e-.\> f-.[ g-. r16 aes-.]\! \mark \default
+	des8)\! ees-. e-.\> \beamOffset #'(-0.5 . -0.5) f-.[ g-. r16 aes-.]\! \mark \default
 	aes2.~
 	aes4. g16(\< aes bes aes g aes)\! \partCombineAutomatic
 	aes4.->( g)
@@ -107,7 +107,7 @@ musicClarinettoIMvtI = \relative c {
 	c4) \partCombineAutomatic r8 r4 r8
 	R2.
 % Bars 86 to 90
-	\partCombineApart f4.->\p(\> ees4)\! r8 \partCombineAutomatic
+	\partCombineApart << {\dynEO #'(-1.2 . -3.2) f4.->\p( ees4)\! } {s8 \hairpinShorten #'(-3 . 0) s\> s  s4\!} >> r8 \partCombineAutomatic
 	R2.
 	des4.\brack\fz\<(-> << c) {s8 s s\!}>>
 	bes4.(\> aes4 f8)\!
@@ -133,11 +133,11 @@ musicClarinettoIMvtI = \relative c {
 % Bars 106 to 110
 	g8-.-^ r r cis,16( d e d cis d)
 	bes'8-._\fzpocoapococresc r r d,16(\< ees f ees d ees)\!
-	bes'8-.\fz r r d,16(\< ees f ees d ees)\!
+	\dynEO #'(-1 . -1) bes'8-.\fz r r d,16(\< ees f ees d ees)\!
 	des8-.\fz r r fis16( g a! g fis g)
 	des8-.\fz r r fis16( g a g fis g)
 % Bars 111 to 115
-	d!8-. fis,16( g a g) d'8-.\< fis,16( g a g)
+	d!8-. fis,16( g a g) d'8-._\< fis,16( g a g)
 	e'8-. b16( c d c) g'8-. dis16( e f e)\!
 	g4 \partCombineAutomatic r8 r4 r8
 	R2.
@@ -158,7 +158,7 @@ musicClarinettoIMvtI = \relative c {
 	R2.*3
 	
 	
-	\partCombineApart bes,!4.->\f aes->
+	\partCombineApart \dynEO #'(-1.8 . -2.5) bes,!4.->\f aes->
 	ges f4( e!8) \partCombineAutomatic
 % Bars 131 to 135
 	e!4 \partCombineApart b'16( ais b8) cis-. d-.
@@ -187,7 +187,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 151 to 155
 	d4 \partCombineAutomatic r8 r4 r8
 	R2.
-	g2.\pp~
+	g2.-\tweak X-offset -1.5 \pp~
 	g
 	aes~
 % Bars 156 to 160
@@ -209,9 +209,9 @@ musicClarinettoIMvtI = \relative c {
 	g\< fis
 	e d4)\! \tuplet 3/2 8 {cis16( d e)}
 % Bars 171 to 175
-	<< d2.(~\fz\> {s8 s s  s s s\!}>>
-	d4._\dimmarkup cis)
-	d2._\fpdim~
+	\dynEO #'(-1 . 0.4) << d2.(~\fz\> {s8 s s  s s s\!}>>
+	\markEO #'(1.3 . 2.5) d4._\dimmarkup cis)
+	\markEO #'(0.8 . 0.8) d2._\fpdim~
 	<< d~ {s8\> s s  s s s\!}>>
 	d8 r r r4 r8
 % Bars 176 to 180
@@ -221,8 +221,8 @@ musicClarinettoIMvtI = \relative c {
 	bes4.(\pp aes
 	ges f
 % Bars 181 to 185
-	e4) \tuplet 3/2 8 { dis16(\< e fis)\!} e4.\fz(~
-	e\>_\dimmarkup dis)\!
+	e4) \beamOffset #'(-0.5 . -0.5) \tuplet 3/2 8 { dis16(\< e fis)\!} e4.\fz(~
+	<< e\> {s8. \markEO #'(0 . 5) s_\dimmarkup}>> dis4.)\!
 	cis2.\pp~
 	cis4 r8 r4 r8
 	R2.
@@ -242,7 +242,7 @@ musicClarinettoIMvtI = \relative c {
 	\acciaccatura a8 g4->( fis8) \acciaccatura a8 g4->( fis8) 
 	\acciaccatura a8 g4->( fis8) \partCombineAutomatic r4 r8
 	R2.
-	\partCombineApart ais,8-.\pp b-. r ais-. b-. r
+	\partCombineApart ais,8-.-\offset X-offset -2.5 \pp b-. r ais-. b-. r
 	ais-. b-. r ais-. b-. r
 % Bars 201 to 205
 	ais-. b-. r ais-. b-. r
@@ -257,19 +257,19 @@ musicClarinettoIMvtI = \relative c {
 	<< des2.~ {s8\brack\fz\< s s  s s s\!}>>
 	<< des2. {s8\> s s  s s s\!}>>
 % Bars 211 to 215
-	c_\pcrescpocoapoco-. des-. aes-. c-. des-. aes-.
+	\aIIXoffset #-4 c_\pcrescpocoapoco-. des-. aes-. c-. des-. aes-.
 	c-. des-. aes-. c-. des-. aes-.
 	cis-. d-. gis,-. cis-. d-. gis,-.
 	cis-. d-. a-._\crescmarkup cis-. d-. a-.
 	dis\<-. e-. ais,-. dis-. e-. ais,-.\! \mark \default
 % Bars 216 to 220
-	e'2.\ff~
+	\dynEO #'(1 . 2) e'2.\ff~
 	e
 	\partCombineApart a4.-^ gis-^~
 	gis2. \partCombineAutomatic
-	e!4.(\fz cis)
+	\dynEO #'(1 . 2) e!4.(\fz cis)
 % Bars 221 to 225
-	fis(\fz d)
+	\dynEO #'(1 . 2) fis(\fz d)
 	g-> e->
 	g-> g->
 	bes!2.\fff
@@ -285,18 +285,18 @@ musicClarinettoIMvtI = \relative c {
 	a8-> bes-> c->_\crescmarkup d->[ e-> r16 f-.]
 	f4.(~_\fzsempredim f8. e16 g f
 	e4. d)
-	c(\brack\p e,16 f g f e f)
+	c(_\brack\p e,16 f g f e f)
 % Bars 236 to 240
 	d'2.
-	c4.(\brack\pp e,16 f g f e f)
+	c4.(_\brack\pp e,16 f g f e f)
 	d'4.(~ d4 f,8)
-	g4(\<_\pocoapococrescendo ees'16)\![ r32 d-.] d4( c8)
-	c4(\< aes'16)\![ r32 g-.] g4( f8)
+	\hairpinShorten #'(-1 . 1) g4(\<_\pocoapococrescendo ees'16)\![ r32 d-.] d4( c8)
+	\hairpinShorten #'(-1 . 1) c4(\< aes'16)\![ r32 g-.] g4( f8)
 % Bars 241 to 245
-	f4(\< aes16)\![ r32 g-.] g4( f8)
-	f4(\< aes16)\![ r32 g-.] g4( f8)
-	fis4(\< a!16)\![ r32 g-.] g4( fis8)
-	g4(\< bes16)\![ r32 a-.] a4( g8) \partCombineAutomatic
+	\hairpinShorten #'(-1 . 1) f4(\< aes16)\![ r32 g-.] g4( f8)
+	\hairpinShorten #'(-1 . 1) f4(\< aes16)\![ r32 g-.] g4( f8)
+	\hairpinShorten #'(-1 . 1) fis4(\< a!16)\![ r32 g-.] g4( fis8)
+	\hairpinShorten #'(-1 . 1) g4(\< bes16)\![ r32 a-.] a4( g8) \partCombineAutomatic
 	d2.\fz\<~
 % Bars 246 to 250
 	<< d {s8 s s  s s s\!}>>
@@ -309,13 +309,13 @@ musicClarinettoIMvtI = \relative c {
 	e) \partCombineAutomatic
 	e8 r r r4 r8
 	R2. \mark \default
-	\partCombineApart b4.(\mp^\solo ais16 b cis b ais b)
+	\partCombineApart b4.(_\mp-\offset X-offset -5 ^\solo ais16 b cis b ais b)
 % Bars 256 to 260
 	fis'4.~ fis4 b,16-. cis-.
-	dis8-.\< e!-. fis-. gis-.[ ais-. b16\rest b-.]\!
-	b4.\fp\>~ b8.\! ais16(-. cis-. b-.)
-	ais4.\> << gis {s8 s s\!}>>
-	fis4.\p~ fis8. eis16-.( gis-. fis-.)
+	dis8-._\< e!-. fis-. gis-.[ ais-. b16\rest b-.]\!
+	b4._\fp_\>~ b8.\! ais16(-. cis-. b-.)
+	ais4._\> << gis {s8 s s\!}>>
+	fis4._\p~ fis8. eis16-.( gis-. fis-.)
 % Bars 261 to 265
 	e!4.-! dis-! \partCombineAutomatic
 	gis2.-^\fppD
@@ -343,7 +343,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 281 to 285
 	f4.-^ f-^
 	<< a2. {s8\< s s  s s s\!}>>
-	aes8\ff r aes16.-. g32-. g4( f8)
+	\dynEO #'(0 . 2) aes8\ff r aes16.-. g32-. g4( f8)
 	r4 d16.-. c32-. c4( bes8)
 	r4 g'16.-. f32-. f4( e8)
 % Bars 286 to 290
@@ -368,7 +368,7 @@ musicClarinettoIMvtI = \relative c {
 	bes!\ff~
 	<< bes {s8\< s s  s s s\!}>>
 	r8 \partCombineApart bes( bes,) b'( b,) \partCombineAutomatic r
-	r \partCombineApart c'( c,) \partCombineAutomatic g'-^ g-^ g-^
+	r \partCombineApart \beamOffset #'(-0.5 . -0.5) c'( c,) \partCombineAutomatic g'-^ g-^ g-^
 	f2.\ff~
 % Bars 306 to 310
 	f~
@@ -384,7 +384,7 @@ musicClarinettoIMvtI = \relative c {
 	g2._\pcresc~
 % Bars 316 to 320
 	g4. c8-.\f r r
-	a4.\ff-^ r4 r8
+	\dynEO #'(0 . 2) a4.\ff-^ r4 r8
 	\partCombineApart ees4 ees16-. f-. ees4.-^
 	ees4-^ c16-. d-. \partCombineAutomatic e8-.-^ f-.-^ g-.-^
 	a2.-^
@@ -398,10 +398,10 @@ musicClarinettoIMvtI = \relative c {
 	g-^ r r g-^ r r
 	\partCombineApart c,-.\p c-. r c-. c-. r
 	c-. c-. r \partCombineAutomatic g'\f-^ g-^ g-^
-	g(_\leggiero aes ees g aes ees)
+	\beamOffset #'(0.5 . 0.5) g(_\leggiero aes ees g aes ees)
 	g( aes ees) g\f-^ g-^ g-^
 % Bars 331 to 335
-	\partCombineApart e(\p f c e f c)
+	\partCombineApart e(-\offset X-offset -1 \p f c e f c)
 	e( f c) \partCombineAutomatic a'4.~_\pbrackpocoapococresc
 	a2.~
 	a~
@@ -415,5 +415,5 @@ musicClarinettoIMvtI = \relative c {
 % Bars 341 to 343
 	a4 r8 r4 r8
 	a4 r8 r4 r8
-	a2.\fermata\ff \fine
+	\dynEO #'(-2.6 . 0) a2.\fermata\ff \fine
 }

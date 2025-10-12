@@ -27,7 +27,7 @@ musicCornoIIIMvtI = \relative c {
 	\partCombineApart ges
 	f4.(_\brackM\dimmarkup f,) \partCombineAutomatic
 % Bars 16 to 20
-	bes'-^\ff r4 r8
+	\dynEO #'(-0.5 . 0) bes'-^\ff r4 r8
 	aes4.-^ r4 r8
 	aes4.-^ r4 r8
 	\time 3/8 aes4.-^\ff 
@@ -39,7 +39,7 @@ musicCornoIIIMvtI = \relative c {
 	bes4.\fz r4 r8
 	bes4.\fz r4 r8
 % Bars 26 to 30
-	\partCombineApart << aes2.~ {s8\> s s  s s s\!}>>
+	\partCombineApart << aes2.~ {\hairpinShorten #'(2 . 0) s8\> s s  s s s\!}>>
 	aes4\p r8 r4 r8 \partCombineAutomatic
 	R2.*2
 	
@@ -51,7 +51,7 @@ musicCornoIIIMvtI = \relative c {
 	bes4.->\ff~ bes8 aes4->
 	ees'4-> ees8->~\< ees ees-> ees->\!
 % Bars 36 to 40
-	c4.->\ff bes->
+	c4.->-\tweak X-offset 0.2 \ff bes->
 	bes-> aes-> 
 	\time 3/4 aes8 r aes r aes r
 	\time 6/8 aes->\< aes-> bes-> c4->( des8)\!
@@ -59,7 +59,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 41 to 45
 	\time 6/8 aes->\< aes-> bes-> bes-> aes-> c->\!
 	\time 3/8 bes->\< a!-> bes->\! \mark \default
-	\time 6/8 aes4\fz aes16.-. g32-. g4->( f8)
+	\time 6/8 \aIIXoffset #-3.5 aes4\fz aes16.-. g32-. g4->( f8)
 	aes4\fz aes16.-. g32-. g4(-> f8)
 	bes4\fz bes16.-. a!32-. a4(-> g8)
 % Bars 46 to 50
@@ -70,7 +70,7 @@ musicCornoIIIMvtI = \relative c {
 	a4->\< a8->~ a << a4-> {s8 s\!}>>
 % Bars 51 to 55
 	<< a2. {s8\< s s  s s s\!}>> \mark \default
-	f2.\ff
+	\dynEO #'(-0.5 . 0) f2.\ff
 	f->~
 	f4. g
 	\partCombineApart bes4.-> a->~
@@ -191,7 +191,7 @@ musicCornoIIIMvtI = \relative c {
 	\time 6/8 c-> bes-> a-> bes-> a-> bes->
 	\time 3/4 a-> r bes-> r c-> r
 	\time 6/8 c-> bes-> a-> bes-> c-> bes->
-	bes4.-^\ff r4 r8
+	\dynEO #'(-0.5 . 0) bes4.-^\ff r4 r8
 	bes4.\ff r4 r8
 % Bars 166 to 170
 	\once \partCombineApart aes4. r4 r8
@@ -227,7 +227,7 @@ musicCornoIIIMvtI = \relative c {
 	R2.
 	a4\brack\fz r8 r4 r8
 	R2.
-	c4.\ff c4->( b!8)
+	\aIIXoffset #-4 c4.\ff c4->( b!8)
 	c4. c4->( b8)
 % Bars 196 to 200
 	\acciaccatura d8 c4(-> b8) \acciaccatura d8 c4(-> b8) 
@@ -248,22 +248,22 @@ musicCornoIIIMvtI = \relative c {
 	r4 r8 \partCombineChords << c4.~ {s8\fz\< s s\!}>>
 	<< c2. {s8\> s s  s s s\!}>>
 % Bars 211 to 215
-	\partCombineAutomatic r8 \once \partCombineApart bes4_\brackpcrescpocoapoco r8 \once \partCombineApart bes4
+	\partCombineAutomatic r8 \once \partCombineApart \markEO #'(0 . 0) bes4_\brackpcrescpocoapoco r8 \once \partCombineApart bes4
 	r8 \once \partCombineApart bes4 r4 r8
 	r8 \once \partCombineApart bes4 r8 \once \partCombineApart bes4
 	r8 \once \partCombineApart b!4 r4 r8
 	r \once \partCombineApart c4 r8 \once \partCombineApart c4 \mark \default
 % Bars 216 to 220
-	a2.\ff-^
+	\dynEO #'(-2.5 . 1.5) a2.\ff-^
 	d-^
 	\partCombineApart d4.-^ cis-^
 	b-^ a-^
-	a2.-^ \partCombineAutomatic
+	a2.-\tweak extra-offset #'(0 . -0.7) -^ \partCombineAutomatic
 % Bars 221 to 225
 	b4.-^ bes-^
 	\once \partCombineApart c2.->
 	c4.-> c->
-	c2.\fff
+	\dynEO #'(-1 . 0) c2.\fff
 	c8 r r c r r
 % Bars 226 to 230
 	\time 3/4 c-. r c-. r c-. r
@@ -281,7 +281,7 @@ musicCornoIIIMvtI = \relative c {
 	R2.*3
 	
 	
-	aes'2._\fppocoapococrescendo
+	aes'2._\fppocoa_pococresc
 	f\fp
 % Bars 241 to 245
 	g\fp
@@ -345,12 +345,12 @@ musicCornoIIIMvtI = \relative c {
 	\marcatoUpperSlur e2.(-^
 % Bars 291 to 295
 	f8)-. r r r4 r8
-	\marcatoUpperSlur f2.-^(
+	\marcatoUpperSlur \shape #'((0 . 1)(0 . 0)(0 . 0)(0 . 0)) Slur f2.-^(
 	g8-.) r r r4 r8
 	g2.\fz(
 	\marcatoUpperSlur aes8)-^ r r r4 r8
 % Bars 296 to 300
-	aes2._\fzpocoapococrescendo
+	aes2._\fzpocoa_pococrescendo
 	ges4->\mf f->\< ees->\!
 	g!-> f->\< e!->\!
 	aes-> g->\< f->\!
@@ -360,11 +360,11 @@ musicCornoIIIMvtI = \relative c {
 	<< f {s8\< s s  s s s\!}>>
 	aes8-. r r gis-. r r
 	a!-. r r \partCombineApart aes-^ g-^ f-^ \partCombineAutomatic
-	f2.\ff~
+	\dynEO #'(-0.5 . 0) f2.\ff~
 % Bars 306 to 310
 	f~
 	f
-	bes-^\ff~
+	\dynEO #'(-0.5 . 0) bes-^\ff~
 	bes
 	aes8 r r r4 r8
 % Bars 311 to 315
@@ -372,9 +372,9 @@ musicCornoIIIMvtI = \relative c {
 	aes-.-^ r r r4 r8
 	f-. r r ges-. r r
 	g!-. r r aes-. r r
-	f2._\pcresc~
+	f2.\p-\offset X-offset 1.8 _\crescmarkup~
 % Bars 316 to 320
-	f4. f8-.\f r r
+	f4. f8-.-\tweak X-offset 1 \f r r
 	f4.-^\ff r4 r8
 	aes4 r8 ges4 r8
 	f4 r8 \once \partCombineApart f4 r8
@@ -394,7 +394,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 331 to 335
 	R2.*2
 	
-	a8(_\pcresc bes f) d'4.
+	\aIIXoffset #-2.5 a8(_\pcresc bes f) d'4.
 	a8( bes f) d'4.-^~
 	<< d2. {s8\< s s  s s s\!}>>
 % Bars 336 to 340
@@ -406,5 +406,5 @@ musicCornoIIIMvtI = \relative c {
 % Bars 341 to 343
 	f4 r8 r4 r8
 	f4 r8 r4 r8
-	f2.\ff\fermata \fine
+	\dynEO #'(-2.6 . 0) f2.\ff\fermata \fine
 }

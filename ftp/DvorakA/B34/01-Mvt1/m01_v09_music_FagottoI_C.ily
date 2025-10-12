@@ -13,19 +13,19 @@ musicFagottoIMvtI = \relative c {
 	bes~
 	bes
 	\partCombineApart bes4.~ bes4 ees,16-> f->
-	g8->\< aes-> bes-> c->[ d-> r16 ees->]
+	g8->\< aes-> bes-> c->[ d-> d16\rest ees->]\!
 % Bars 6 to 10
-	ees4.(~\fz\> ees8. d16 f ees)\!
+	\shape #'((0.5 . -1.5)(0 . -1)(0 . -0.5)(0 . 0)) Slur ees4.(~\fz ees8. d16 f ees)
 	d4.(\> c)\pp
-	bes( d,16 ees f ees\< d ees)
+	bes( d,16 ees f \hairpinShorten #'(0 . 1) ees\< d ees)
 	ees4( aes16)\![ r32 g]-. f4(\> ees8\!)
 	des'4. b4\<~ b16 c\!
 % Bars 11 to 15
-	c4\brack\fz( aes16)[ r32 g-.] f4(\> ees8)\!
-	f4(\< des'16)\![ r32 c-.] c4( bes8)
-	bes4(\<_\crescmarkup ges'16)\![ r32 f-.] f4( ees8)
+	c4\brack\fz( aes16)[ r32 g-.] \hairpinShorten #'(0.5 . 0) f4(\> ees8)\!
+	\hairpinShorten #'(0 . 0.8) f4(\< des'16)\![ r32 c-.] c4( bes8)
+	\hairpinShorten #'(0 . 0.8) bes4(\<_\crescmarkup ges'16)\![ r32 f-.] f4( ees8)
 	ees4.(~ ees16 d f ees ces aes)
-	bes4._\brackM\dimmarkup aes\p
+	bes4._\brackM\dimmarkup aes-\offset X-offset -0.5 \p
 % Bars 16 to 20
 	g!4.-> d16( ees f ees d ees)
 	bes'4.-^ f16( ges aes ges f ges)
@@ -39,7 +39,7 @@ musicFagottoIMvtI = \relative c {
 	c,4.\fz r4 r8
 	c4.\fz r4 r8
 % Bars 26 to 30
-	\partCombineApart des'4.( c16 des f ees des f,)
+	\partCombineApart des'4.( \beamOffset #'(-0.5 . -0.5) c16 des f ees des f,)
 	ges4 \partCombineAutomatic r8 r4 r8
 	R2.*2
 	
@@ -59,8 +59,8 @@ musicFagottoIMvtI = \relative c {
 % Bars 41 to 45
 	\time 6/8 aes->\< bes-> ces-> c-> des-> d->\!
 	\time 3/8 ees->\< f-> ges->\! \mark \default
-	\time 6/8 \partCombineApart g!4 des'16.-. c32-. c4->( bes8)
-	bes4 des16.-. c32-. c4->( bes8)
+	\time 6/8 \partCombineApart g!4 \beamOffset #'(-0.5 . -0.5) des'16.-. c32-. c4->( bes8)
+	bes4 \beamOffset #'(-0.5 . -0.5) des16.-. c32-. c4->( bes8)
 	c4 ees16.-. d!32-. d4->( c8)
 % Bars 46 to 50
 	c4 ees16.-. d32-. d4->( c8) \partCombineAutomatic
@@ -76,9 +76,9 @@ musicFagottoIMvtI = \relative c {
 	\partCombineApart g2.->~
 % Bars 56 to 60
 	g4. << aes {s8 s s\!}>> \partCombineAutomatic
-	<< g2. {s4. s8\< s s\!}>>
+	<< g2. {s4. s8\< s s16 s\!}>>
 	aes2.\fz
-	<< g {s4. s8\< s s\!}>>
+	<< g {s4. s8\< s s16 s\!}>>
 	aes2.->
 % Bars 61 to 65
 	g->
@@ -91,7 +91,7 @@ musicFagottoIMvtI = \relative c {
 	a\ff~
 	a~
 	a8 r r r4 r8
-	\partCombineApart r4 r8 r4 c16(\p d
+	\partCombineApart r4 r8 r4 c16(-\offset X-offset -0.5 \p d
 % Bars 71 to 75
 	ees8) r r r4 r8 \partCombineAutomatic
 	R2.*4
@@ -116,7 +116,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 91 to 95
 	ges,_\pocoapococresc
 	ces
-	<< des {s8\< s s  s s s\!}>>
+	<< des {\hairpinShorten #'(-6 . 0) s8\< s s  s s s\!}>>
 	ees4. ces\<
 	des << des, {s8 s s\!}>>
 % Bars 96 to 100
@@ -156,10 +156,10 @@ musicFagottoIMvtI = \relative c {
 	<< ces {s8 s s s s s}>>
 	bes4)\pp r8 r4 r8
 % Bars 126 to 130
-	\mmrPos #6 R2.
-	\mmrPos #6 R
-	\mmrPos #6 R \partCombineAutomatic
-	b2.\fp~
+	\mmrPos #7 R2.
+	\mmrPos #7 R
+	\mmrPos #7 R \partCombineAutomatic
+	\dynEO #'(0.5 . 1) b2.\fp~
 	<< b {s8\< s s  s s s\!}>>
 % Bars 131 to 135
 	a4 \partCombineApart a16( gis a8) b-. c-.
@@ -171,7 +171,7 @@ musicFagottoIMvtI = \relative c {
 	R2.*3
 	
 	\clef bass
-	\partCombineApart b16(^\leggiero dis e dis e fis g e fis g a fis)
+	\partCombineApart b16(-\offset X-offset -4 ^\leggiero dis e dis e fis g e fis g a fis)
 	g( a b g a b c b d c b a)
 % Bars 141 to 145
 	g( a b c d e fis g fis e d c)
@@ -240,35 +240,35 @@ musicFagottoIMvtI = \relative c {
 	des4(-> bes8) r4 r8
 	R2.*2
 	
-	\partCombineApart cis4.\mf bis16(\< cis d cis bis cis)
+	\partCombineApart cis4.\mf bis16(_\< cis d cis bis cis)
 % Bars 201 to 205
 	e2.\!
-	cis4.\> bis16(\! cis d cis bis cis)
+	<< cis4._\> {s8 s s\!}>> bis16( cis d cis bis cis)
 	<< g!2.->~ {s8\< s s  s s s\!}>>
 	<< g2. {s8\> s s  s s s\!}>> \partCombineAutomatic
 	R2.
 % Bars 206 to 210
-	\partCombineApart d'4.(\mf cis16 d ees! d cis d)
+	\partCombineApart \dynEO #'(-1.7 . -2) \shape #'((0 . -1)(0 . 0)(0 . -0.8)(0 . 0)) Slur d'4.(\mf \beamOffset #'(-0.5 . -0.8) cis16 d ees! d cis d)
 	f2.-^
 	d4.( cis16 d ees d cis d)
-	aes!2.\brack\fz~
+	aes!2._\brack\fz~
 	aes \partCombineAutomatic
 % Bars 211 to 215
-	bes8-._\pcrescpocoapoco ces-. ges-. bes-. ces-. bes-.
+	\aIIXoffset #-4 bes8-._\pcrescpocoapoco ces-. ges-. bes-. ces-. bes-.
 	bes-. ces-. ges-. bes-. ces-. ges-.
 	b-. c!-. fis,-. b-. c-. fis,-.
 	b-. c-. g-._\crescmarkup b-. c-. g-.
 	cis-.\< d-. gis,-. cis-. d-. gis,-.\! \clef bass \mark \default
 % Bars 216 to 220
-	d'2.\ff~
+	\dynEO #'(0.5 . 2) d'2.\ff~
 	d
 	c-^~
 	c
-	d4.(\fz b!)
+	\dynEO #'(1 . 2) d4.(\fz b!)
 % Bars 221 to 225
-	e(\fz c)
-	f->\fz d->
-	d->\fz d->
+	\dynEO #'(0 . 2) e(\fz c)
+	\dynEO #'(0 . 2) f->\fz d->
+	\dynEO #'(0 . 2) d->\fz d->
 	bes,!2.\fff
 	bes8 r r bes r r
 % Bars 226 to 230
@@ -279,7 +279,7 @@ musicFagottoIMvtI = \relative c {
 	\time 6/8 g) d16( ees f ees d ees)
 % Bars 231 to 235
 	bes'4.~ bes4 ees,16-. f-.
-	g8-> aes-> bes->_\brackM\crescmarkup c->[ d-> r16 ees-.]
+	g8-> aes-> bes->_\brackM\crescmarkup c->[ d-> d16\rest ees-.]
 	ees4.(~_\fzsempredim ees8. d16 f ees
 	d4. c)
 	bes4.( d,16 ees f ees d ees)
@@ -298,7 +298,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 246 to 250
 	<< c {s8 s s  s s s\!}>>
 	c8-.\fz r r r4 r8
-	\partCombineApart dis2.(\fp
+	\partCombineApart \dynEO #'(-3.5 . -3) dis2.(\fp
 	d!8) r r r4 r8
 	f2.(
 % Bars 251 to 255
@@ -311,7 +311,7 @@ musicFagottoIMvtI = \relative c {
 	cis4.~ cis4 cis8\pp
 	cis8\<-. cis-. cis-. cis-.[ cis-. r16 cis-.]\!
 	cis4.\fp\>~ cis4\! cis8-.
-	cis4.-!\> cis-!\!
+	cis4.-!\> << cis-! {s8 s s\!}>>
 	cis4.\pp~ cis4 cis8-.
 % Bars 261 to 265
 	cis4.-! cis-!
@@ -322,7 +322,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 266 to 270
 	R2.*2
 	
-	\partCombineApart b4.\pp~ b4 b8-.
+	\partCombineApart b4._\pp~ b4 b8-.
 	c!2.
 	b4.~ b8. b16-. b-. b-.
 % Bars 271 to 275
@@ -330,7 +330,7 @@ musicFagottoIMvtI = \relative c {
 	b4.~ b8. b16-. b-. b-.
 	b4.-! b-!
 	bes!~ bes8. bes16-. bes-. bes-.
-	bes4.\<_\pocoapococresc << bes {s8 s s\!}>> \partCombineAutomatic
+	bes4._\<_\pocoapococresc << bes {s8 s s\!}>> \partCombineAutomatic
 % Bars 276 to 280
 	c4.\brack\p~ c8. c16-. c-. c-.
 	c4. c
@@ -356,13 +356,13 @@ musicFagottoIMvtI = \relative c {
 	c
 	des\fz~\<
 % Bars 296 to 300
-	<< des_\pocoapococrescendo {s8 s s  s s s\!}>>
+	<< \markEO #'(0 . 0.8) des_\pocoapococrescendo {s8 s s  s s s\!}>>
 	bes,2.~
 	bes~
 	bes~
 	bes
 % Bars 301 to 305
-	bes'\ff~
+	\aIIXoffset #-4 bes'\ff~
 	<< bes {s8\< s s  s s s\!}>>
 	f8-. r r e-. r r
 	d-. r r des-^ c-^ bes-^

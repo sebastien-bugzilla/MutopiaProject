@@ -166,10 +166,10 @@ musicTrombonoIMvtI = \relative c {
 	R2.
 	e4-^\brack\fz r8 r4 r8
 	R2.
-	r8 r8. d16(\f f4-^~ f16.) f32-.
+	r8 r8. d16(\f \marcatoUpperSlur f4-^~ f16.) f32-.
 % Bars 191 to 195
 	cis4 r8 r4 r8
-	r8 r8. d16( f4-^~ f16.) f32-.
+	r8 r8. d16( \marcatoUpperSlur f4-^~ f16.) f32-.
 	cis4 r8 r4 r8
 	r8 r8. bes16\ff des4\fz~ des16. des32-.
 	aes4\fz~ aes16. bes32-. des4\fz~ des16. des32-.
@@ -192,7 +192,7 @@ musicTrombonoIMvtI = \relative c {
 	c8-.\p r r r4 r8
 	R2. \mark \default
 % Bars 216 to 220
-	g4.-^\ff~ g4~ g16. a32-.
+	\dynEO #'(-2.5 . 1.5) g4.-^\ff~ g4~ g16. a32-.
 	b4.-^~ b4~ b16. a32-.
 	a4.-^~ a4~ a16.\< b32-.\!
 	c4.-^~ c4~ c16. b32-.
@@ -307,7 +307,7 @@ musicTrombonoIMvtI = \relative c {
 	R2.*3
 	
 	
-	r4 r8 d\mf-^ ees-^ bes-^
+	r4 r8 d-\offset X-offset -0.5 \mf-^ ees-^ bes-^
 	d-^\< ees-^ bes-^ d-^ ees-^ bes-^\!
 % Bars 336 to 340
 	d4.-^\f ees-^

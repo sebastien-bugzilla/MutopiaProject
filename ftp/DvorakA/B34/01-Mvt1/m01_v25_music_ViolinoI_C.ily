@@ -23,13 +23,13 @@ musicViolinoIMvtI = \relative c {
 % Bars 11 to 15
 	<< c'4.\brack\fz~ {s8 s s\>}>> c4~ c16\! ees,-.
 	f4(\< des'16\![ r32 c-.)] c4( bes8)
-	bes4(_\crescmarkup ges'16[ r32 f-.]) f4( ees8)
+	bes4(_\crescmarkup ges'16[ f32\rest f-.]) f4( ees8)
 	ees4.(~\fz ees16 d f ees ces aes)
 	ges4.(_\brackM\dimmarkup f4\brack\p bes8-.)
 % Bars 16 to 20
 	<g,! ees'!>4.\ff-^ d'16( ees f ees d ees)
-	<ges bes>4.-^\fz f16( ges aes ges f ges)
-	<f des'>4.-^\fz c'16( des ees des c des)
+	<ges bes>4.-^-\offset X-offset -1 \fz f16( ges aes ges f ges)
+	<f des'>4.-^-\offset X-offset -1 \fz c'16( des ees des c des)
 	\time 3/8 <des bes'>4.:32\ff-^
 	\time 3/4 a'16(-> bes c bes) a->( bes c bes) a->( bes c bes)
 % Bars 21 to 25
@@ -52,7 +52,7 @@ musicViolinoIMvtI = \relative c {
 	ges-> f8->~ f ges-> aes->\!
 % Bars 36 to 40
 	ces4\fz->( bes8) a16( bes ces bes a bes)
-	f'4(->\fz ees8) g,!16( aes! bes aes g aes)
+	\dynEO #'(0 . 2) f'4(->\fz ees8) g,!16( aes! bes aes g aes)
 	\time 3/4 ees'8( des16) r ees8( des16) r ees8( des16) r
 	\time 6/8 ees16(\< des) ges( f) f( ees) ees( des) des( ces) a( bes)\!
 	\time 3/4 ees8( des16) r ees8( des16) r ees8( des16) r
@@ -70,9 +70,9 @@ musicViolinoIMvtI = \relative c {
 	ces'16.(->\< bes!32) bes8-. ces16.->( bes32) bes8 ces16.->( \liiiri bes32) \lirii bes16( aes!)\!
 % Bars 51 to 55
 	aes(\< f d) bes-. f-> g-> aes-> bes-> c-> d-> ees-> f->\! \mark \default
-	<bes,, g' ees'>4.\ff-^\arpeggio d'16( ees f ees d ees)
+	\dynEO #'(-2 . 1) <bes,, g' ees'>4.\ff-^\arpeggio d'16( ees f ees d ees)
 	bes'4.~ bes4 ees,16 f
-	g8-.\< aes-. bes-. c-.[ d-. r16 ees-.]
+	g8-.\< aes-. bes-. c-.[ d-. r16 ees-.]\!
 	ees4.\fz(~-> ees8. d16\> f ees)\!
 % Bars 56 to 60
 	d4.(\> << c) {s8 s s\!}>>
@@ -88,7 +88,7 @@ musicViolinoIMvtI = \relative c {
 	e4(\< g!16[ r32 f-.])\! f4( e8)
 % Bars 66 to 70
 	f4(\< aes16[ r32 g-.])\! g4( f8)
-	fis2.:32->\fff
+	\dynEO #'(0 . 2) fis2.:32->\fff
 	fis:
 	fis8 r r r4 r8
 	r4 r8 r4 c,16(\pp d
@@ -126,10 +126,10 @@ musicViolinoIMvtI = \relative c {
 	ges4.-^\ff f16( ges aes ges f ges)
 	bes4.-^ a16( bes c! bes a bes)
 	ees4.-^ d16( ees f ees d ees)
-	ges4.-^\ff~ ges8 f4->\<
+	\dynEO #'(0 . 2) ges4.-^\ff~ ges8 f4->\<
 	ees4 d8~ d ees-.( f-.)\!
 % Bars 101 to 105
-	ges4.->\ff~ ges8 f4\<
+	\dynEO #'(0 . 2) ges4.->\ff~ ges8 f4\<
 	ees d8~ d ees8-.( f-.)\!
 	ges-. r r r4 r8
 	<a,, ges'>8-^\fz r r b16(\brack\p c d c b c)
@@ -147,8 +147,8 @@ musicViolinoIMvtI = \relative c {
 	d'( bes) f-. d-. bes'-. f-. d( bes) f'( d bes a
 	aes! f d bes a bes) \repeat tremolo 3 { aes!16(_\dimmarkup bes}
 % Bars 116 to 120
-	\repeat tremolo 6 { aes\> bes}
-	\repeat tremolo 6 { aes bes)\pp}
+	\repeat tremolo 6 { \hairpinShorten #'(0 . -10) aes\> bes}
+	\repeat tremolo 6 { aes\! bes)\pp}
 	R2.*5
 	
 	
@@ -156,7 +156,7 @@ musicViolinoIMvtI = \relative c {
 	
 	
 	<bes ges'>2.\pp
-	<< <aes f'> {s8\< s s\! s\> s s\!}>>
+	<< <aes f'> {s8\< s s\! s-\tweak extra-offset #'(0 . -2) \> s s\!}>>
 	<bes ges'>4 r8 r4 r8
 % Bars 126 to 130
 	R2.
@@ -199,7 +199,7 @@ musicViolinoIMvtI = \relative c {
 	ges'4. f4(\<_\brackM\pococresc aes8)\!
 	aes4. ges4( bes8)
 	bes4. aes4( c8)
-	\time 3/4 a16(\f bes c bes) a( bes c bes) a( bes c bes)
+	\time 3/4 \dynEO #'(0 . 2) a16(\f bes c bes) a( bes c bes) a( bes c bes)
 % Bars 161 to 165
 	\time 6/8 a(\< bes) c( bes) bes( aes) aes(\! g)\> g( f) f( ees)\!
 	\time 3/4 a( bes c bes) a( bes c bes) a( bes c bes)
@@ -217,7 +217,7 @@ musicViolinoIMvtI = \relative c {
 	r4 r8 r16 <d d'>(\brack\f\> <f f'> <e e'> <d d'> <aes'! aes'!>)\!
 	<a a'>4.(_\pptranquillomolto <g! g'!>)
 	<f f'>( <e e'>)
-	<d d'>(\< <c c'>4 \tuplet 3/2 8 {<b b'>16 <c c'> <d d'>)\!}
+	<d d'>(\< <c c'>4 \once \tupletUp \tuplet 3/2 8 {<b b'>16 <c c'> <d d'>)\!}
 % Bars 176 to 180
 	<c c'>4\f r8 aes!16( f) c'-.\< aes-. f'( c)
 	aes'-. f-.\! c'( aes) f-.\> c-. aes'( f) d-. b-. aes-. f-.\!
@@ -227,7 +227,7 @@ musicViolinoIMvtI = \relative c {
 % Bars 181 to 185
 	R2.
 	r4 r8 r16 <g' g'>(\p\> <fis fis'> <e e'> <dis dis'> <e e'>)\!
-	<b' b'>4.(_\pptranquillo <ais ais'>)
+	\markEO #'(0 . 2) <b' b'>4.(_\pptranquillo <ais ais'>)
 	<gis gis'>( <fis fis'>)
 	<e e'>( <dis dis'>)
 % Bars 186 to 190
@@ -240,7 +240,7 @@ musicViolinoIMvtI = \relative c {
 	q <e e'>)
 	<f f'>4(\fz \tuplet 3/2 8 {<e e'>16 <f f'> <g g'>)} <f f'>4.(~
 	q <e e'>)
-	<f f'>4\ff( \tuplet 3/2 8 {<e e'>16 <f f'> <g g'>)} <f f'>4( <e e'>8)
+	\dynEO #'(0 . 2) <f f'>4\ff( \tuplet 3/2 8 {<e e'>16 <f f'> <g g'>)} <f f'>4( <e e'>8)
 	<f f'>4( \tuplet 3/2 8 {<e e'>16 <f f'> <g g'>)} <f f'>4( <e e'>8)
 % Bars 196 to 200
 	\acciaccatura <g g'>8 <f f'>4(-> <e e'>8) \acciaccatura <g g'>8 <f f'>4(-> <e e'>8) 
@@ -251,9 +251,9 @@ musicViolinoIMvtI = \relative c {
 % Bars 201 to 205
 	q~
 	q~
-	q8 r r e,,16(\< g bes! cis e g
+	q8 r r \beamOffset #'(0.5 . 0.5) e,,16(\< g bes! cis e g
 	bes8) e,16( g bes cis bes g bes cis e g\!
-	f8)\p r r <d f>4.\pp~
+	f8)\p r r \dynEO #'(0 . 1) <d f>4.\pp~
 % Bars 206 to 210
 	q2.~
 	q~
@@ -261,22 +261,22 @@ musicViolinoIMvtI = \relative c {
 	q8 r r f,,16(\< aes! b d f aes
 	b8) f16( aes b d f d b d f aes)\!
 % Bars 211 to 215
-	<ges, ges'>2.:32_\ppcrescpocoapoco
+	\markEO #'(0 . 1) <ges, ges'>2.:32_\ppcrescpocoapoco
 	q:
-	<dis' fis>8-.\noBeam c,16( ees! fis a c8)\<\noBeam a16( c ees! fis)
+	<dis' fis>8-.\noBeam c,16( ees! fis a c8)-\alterBroken extra-offset #'(()(0 . 0.5)) \<\noBeam a16( c ees! fis)
 	<g,! g'!>2.:32
-	<aes! aes'!>8\noBeam d,16( f aes b d8)\noBeam b16( d f aes)\! \mark \default
+	\once \alterBroken extra-offset #'((0 . -1)()()) Staff.OttavaBracket \ottava #1 <aes! aes'!>8\noBeam d,16( f aes b d8)\noBeam b16( d f aes)\! \mark \default
 % Bars 216 to 220
-	<b, b'>2.:32\ff
-	q4.: \tuplet 3/2 8 { q8.:16 <c c'>: <cis cis'>:}
+	\dynEO #'(-3 . 1.5) <b, b'>2.:32\ff
+	q4.: \omitAllTupletNumber \tuplet 3/2 8 { \beamOffset #'(1 . 1) q8.:16 <c c'>: <cis cis'>:} \undoOmitTupletNumber
 	<d d'>2.:
 	q4.: q4: d16( a')
-	a4(-> g8)\< f4(->\! e8)
+	a4(-> g8)\< f4(->\! e8) 
 % Bars 221 to 225
 	b'4(-> a8)\< g4->(\! fis8)
 	\marcatoUpperSlur c'4-^( b8) \marcatoUpperSlur a4-^( gis8)
-	\marcatoUpperSlur a4(-^ gis8) \marcatoUpperSlur a4(-^ gis8)
-	bes!2.:32\fff
+	\marcatoUpperSlur a4(-^ gis8) \marcatoUpperSlur a4(-^ gis8) \ottava #0 
+	\dynEO #'(0 . 2) bes!2.:32\fff
 	bes8-. f16( e g f) d( cis ees! d bes a)
 % Bars 226 to 230
 	\time 3/4 c!->( bes g f) aes!(-> f ees d) f(-> d c bes)
@@ -294,13 +294,13 @@ musicViolinoIMvtI = \relative c {
 	c'4.(~\> c4 ees,8)\!
 	bes'4.(\pp d,16\< ees f ees d ees\!)
 	c'4.(~\> c4 ees,8)\!
-	f4(_\fppocoapococrescendo des'16[ r32 c-.]) c4( bes8)
-	bes4(\fp ges'16[ r32 f-.]) f4( ees8)
+	f4(_\fppocoa_pococresc des'16[ r32 c-.]) c4( bes8)
+	bes4(\fp ges'16[ f32\rest f-.]) f4( ees8)
 % Bars 241 to 245
-	ees4(\fz ges16[ r32 f-.]) f4( ees8)
-	ees4(\fz ges16[ r32 f-.]) f4( ees8)
-	e4(\fz\< g!16[ r32 f-.]) f4( e8)
-	f4( aes16[ r32 g-.]) g4( f8)\!
+	ees4(\fz ges16[ f32\rest f-.]) f4( ees8)
+	ees4(\fz ges16[ f32\rest f-.]) f4( ees8)
+	e4(\fz\< g!16[ f32\rest f-.]) f4( e8)
+	f4( aes16[ g32\rest g-.]) g4( f8)\!
 	<a, fis'>2.:32-^\f\<
 % Bars 246 to 250
 	<< q: {s8 s s  s s s\!}>>
@@ -313,7 +313,7 @@ musicViolinoIMvtI = \relative c {
 	d'8-.\fz r r fis,16( g a g fis g)
 	d'8-.\< gis,16( a bes a) d8-. a16( bes c bes)
 	d8-. gis,16( a b a) dis8-^ a16( b c a)\! \mark \default % aes => a based on part score
-	e'8-^\ff r r r4 r8
+	\dynEO #'(-0.5 . 0) e'8-^\ff r r r4 r8
 % Bars 256 to 260
 	R2.*3
 	
@@ -334,7 +334,7 @@ musicViolinoIMvtI = \relative c {
 	q8\ppp r r r4 r8
 % Bars 271 to 275
 	R2.
-	b16(\pp e g e b' g e' b g' e b' g)
+	b16(-\offset X-offset 1 \pp e g e b' g e' b g' e b' g)
 	e'4.~ e16 b-. b( e g b)
 	c2.:32\pp
 	c:_\pocoapococresc
@@ -363,23 +363,23 @@ musicViolinoIMvtI = \relative c {
 	\marcatoUpperSlur f8)-^\< g-^ aes!-^ aes-^[ bes-^ r16 c-.]\!
 	des2.:32\fz\<
 % Bars 296 to 300
-	<< des:_\pocoapococrescendo {s8 s s  s s s\!}>>
-	d!2.:->\fz
-	ees:\fz
-	e:\fz
+	<< \markEO #'(0 . 4) des:_\pocoapoco_crescendo {s8 s s  s s s\!}>>
+	\dynEO #'(0 . 2) d!2.:->\fz
+	\dynEO #'(0 . 2) ees:\fz
+	\dynEO #'(0 . 2) e:\fz
 	fis:\fz
 % Bars 301 to 305
 	aes!:
 	<< aes: {s8\< s s  s s s\!}>>
 	aes8 r r <e,, cis' a'> r r
 	<fis d'! bes'!> r r <b b'>-^ <c c'>-^ <d d'>-^
-	ees'2.:32\ff
+	\dynEO #'(0 . 2) ees'2.:32\ff
 % Bars 306 to 310
 	ees:
 	<< ees: {s8\< s s  s s s\!}>>
-	ges2.:\ff-^
+	\dynEO #'(0 . 2) ges2.:\ff-^
 	ges:-^
-	bes8 r bes,16.-. aes32-. aes4(\> ges8)\!
+	bes8 r bes,16.-. aes32-. aes4(\< ges8)\!
 % Bars 311 to 315
 	r4 ces16.-. bes32-. bes4(\< aes8)\!
 	r4 des16.-. ces32-. ces4(\< bes8)\!
@@ -388,7 +388,7 @@ musicViolinoIMvtI = \relative c {
 	f16.->\p e32 e8 f16.-> e32 e8 f16.-> e32 e8
 % Bars 316 to 320
 	f16( d aes') f-. d-. bes-. aes( f d bes aes f)
-	<g, ees' ees'>4.\ff\arpeggio d''16( ees f ees d ees)
+	<g, ees' ees'>4.-\offset X-offset -0.5 \ff\arpeggio d''16( ees f ees d ees)
 	bes'4.-^ des-^
 	des4-^ bes16-. c-. d8-^-. ees-^-. f-^-.
 	g2.:32
@@ -401,9 +401,9 @@ musicViolinoIMvtI = \relative c {
 % Bars 326 to 330
 	q-^\arpeggio r r q-^\arpeggio r r 
 	bes''16(\p des bes des) r8 bes16( des bes des) r8
-	bes16( des bes des) r8 aes'16\f-^ f-^ d-^ bes-^ aes-^ f-^
-	<bes, bes'>(\p <des des'> <bes bes'> <des des'> <bes bes'> <des des'> <bes bes'> <des des'> <bes bes'> <des des'> <bes bes'> <des des'>)
-	<bes bes'>( <des des'> <bes bes'> <des des'>  <bes bes'> <des des'>) aes''-^\ff f-^ d-^ bes-^ aes-^ f-^
+	bes16( des bes des) r8 \dynEO #'(-0.5 . 0) aes'16\f-^ f-^ d-^ bes-^ aes-^ f-^
+	\dynEO #'(-0.5 . 0) <bes, bes'>(\p <des des'> <bes bes'> <des des'> <bes bes'> <des des'> <bes bes'> <des des'> <bes bes'> <des des'> <bes bes'> <des des'>)
+	<bes bes'>( <des des'> <bes bes'> <des des'>  <bes bes'> <des des'>) \dynEO #'(0 . 1) aes''-^\ff f-^ d-^ bes-^ aes-^ f-^
 % Bars 331 to 335
 	<g g'>2.:32\pp
 	q:_\brackpocoapococresc
@@ -411,7 +411,7 @@ musicViolinoIMvtI = \relative c {
 	q:\mf\<
 	<< q: {s8 s s  s s s\!}>>
 % Bars 336 to 340
-	<bes bes'>2.:\f
+	\dynEO #'(0 . 2) <bes bes'>2.:\f
 	\ottava #1 q4: <ces ces'>8: q8 <des des'>-^ <d d'>-^
 	<ees ees'>2.:32\ff
 	q4 \ottava #0 r8 r4 r8
@@ -426,11 +426,11 @@ musicViolinoIDivisiMvtI = \relative c {
 	\key ees \major
 	s2.*18 s4.*1 s2.*22 s4.*1 s2.*128
 % Bars 171 to 175
-	<c' aes'!>8-^\f r r q \tuplet 3/2 8 {q16 q q} q8
+	\dynEO #'(-2 . 1) <c' aes'!>8-^\f r r q \tuplet 3/2 8 {q16 q q} q8
 	r4 r8 <b aes'!> \tuplet 3/2 8 {q16 q q} q8
 	<a' c>16(\pp <e e'> <a c> <e e'> <a c> <e e'> <a c> <e e'> <a c> <e e'> <a c> <e e'>
 	<a c> <e e'> <a c> <e e'> <a c> <e e'> <a c> <e e'> <a c> <e e'> <a c> <e e'>)
-	<a c>( <e e'> <a c>\< <e e'> <a c> <e e'> <a c> <e e'> <a c> <e e'> <a c> <e e'>)
+	<a c>( <e e'> <a c>\< <e e'> <a c> <e e'> <a c> <e e'> <a c> <e e'> <a c> <e e'>)\!
 % Bars 176 to 180
 	<aes! c>2.:32\f->
 	q4.:\> << <aes b:>: {s8 s s\!}>>
@@ -445,9 +445,9 @@ musicViolinoIDivisiMvtI = \relative c {
 		b dis b dis b dis b dis b dis b dis 
 		b dis b dis b dis b dis b dis b dis)
 	}\\{
-		fis,(\pp dis fis dis fis dis fis dis fis dis fis dis 
-		fis dis fis dis fis dis fis dis fis dis fis dis 
-		fis dis fis dis fis dis fis dis fis dis fis dis)
+		\beamOffset #'(0.8 . 0.5) \shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur fis,(-\offset X-offset -1.5 \pp dis fis dis fis dis \beamOffset #'(0.5 . 0.5) fis dis fis dis fis dis 
+		\beamOffset #'(0.5 . 0.5) fis dis fis dis fis dis \beamOffset #'(0.5 . 0.5) fis dis fis dis fis dis 
+		\beamOffset #'(0.5 . 0.5) fis dis fis dis fis dis \beamOffset #'(0.5 . 0.5) fis dis fis dis fis dis)
 	}>>
 % Bars 186 to 199
 	s2.*13
@@ -457,9 +457,9 @@ musicViolinoIDivisiMvtI = \relative c {
 % Bars 201 to 205
 	<cis cis'>( <e e'> <cis cis'> <e e'> <cis cis'> <e e'> <cis cis'> <e e'> <cis cis'> <e e'> <cis cis'> <e e'> 
 	<cis cis'> <e e'> <cis cis'> <e e'> <cis cis'> <e e'> <cis cis'> <e e'> <cis cis'> <e e'> <cis cis'> <e e'>)
-	<< <e cis' e>2.~ {s4. s\<}>>
+	<< <e cis' e>2.~ {s4. s-\tweak rotation #'(2 -1 0) \<}>>
 	<< q2. {s4. s\!}>>
-	\repeat tremolo 6 {<d d'>16(\pp <f f'>}
+	\repeat tremolo 6 {\dynEO #'(-2.3 . 1.5) <d d'>16(\pp <f f'>}
 % Bars 206 to 210
 	\repeat tremolo 6 {<d d'> <f f'>)}
 	\repeat tremolo 6 {<d d'>( <f f'>}
@@ -469,14 +469,14 @@ musicViolinoIDivisiMvtI = \relative c {
 % Bars 211 to 215
 	<ees' ees'>2.:32\pp
 	q:
-	ees'8-.\noBeam c,16( ees! fis a c8)\noBeam\< a16( c ees fis)
+	ees'8-.\noBeam c,16( ees! fis a c8)\noBeam-\alterBroken extra-offset #'(()(0 . 0.5)) \< a16( c ees fis)
 	<e, e'>2.:32
-	<f! f'!>8\noBeam d16( f aes b d8)\noBeam b16( d f aes)\!
+	\alterBroken extra-offset #'((0 . -1)()) Staff.OttavaBracket \ottava #1 \once \stemUp <f! f'!>8\noBeam d16( f aes b d8)\noBeam b16( d f aes)\!
 % Bars 216 to 220
-	<b, b'>2.:32\ff
-	q4.: \tuplet 3/2 8 {q8.:16 <c c'>: <cis cis'>:}
+	\dynEO #'(-3 . 1.5) <b, b'>2.:32\ff
+	q4.: \omitAllTupletNumber \tuplet 3/2 8 {\beamOffset #'(1 . 1) q8.:16 <c c'>: <cis cis'>:} \undoOmitTupletNumber
 	<d d'>2.:32
-	q4.: q4: d,16( a')
+	q4.: q4: \ottava #0 d,16( a')
 	a4->( g8)\< f4->(\! e8)
 % Bars 221 to 222
 	b'4->( a8) g4->( fis8)

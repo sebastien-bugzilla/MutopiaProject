@@ -287,7 +287,7 @@ musicCornoIngleseMvtI = \relative c {
 	g
 	aes\fz\<~
 % Bars 296 to 300
-	<< aes {s8 s s s s s\!}>>
+	<< aes_\pocoapococrescendo {s8 s s s s s\!}>>
 	a!2.\fz
 	bes\fz
 	b\fz
