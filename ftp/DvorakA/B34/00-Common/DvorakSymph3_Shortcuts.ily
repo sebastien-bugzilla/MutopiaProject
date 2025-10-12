@@ -155,12 +155,12 @@ fzbrackmf = \markup {\hspace #-0.55 \dynamic fz \bracket \with-true-dimensions \
 % dynamics fzp
 %--------------------
 fzp = \markup {\hspace #-1.4 \dynamic fzp}
-fzpD = \tweak DynamicText.self-alignment-X #-0.51 #(make-dynamic-script "fzp")
+fzpD = \tweak DynamicText.self-alignment-X #-0.51 #(make-dynamic-script fzp)
 %--------------------
 % dynamics fpp
 %--------------------
 fpp = \markup {\hspace #-1.46 \dynamic fpp}
-fppD = \tweak DynamicText.self-alignment-X #-0.52 #(make-dynamic-script "fpp")
+fppD = \tweak DynamicText.self-alignment-X #-0.52 #(make-dynamic-script fpp)
 %--------------------
 % dynamics fp
 %--------------------
@@ -214,12 +214,12 @@ fflegato = \markup {\hspace #-0.54 \dynamic ff \italic legato }
 % dynamics ffz
 %--------------------
 ffz = \markup {\hspace #-1.1 \dynamic ffz}
-ffzD = \tweak DynamicText.self-alignment-X #-0.45  #(make-dynamic-script "ffz")
+ffzD = \tweak DynamicText.self-alignment-X #-0.45  #(make-dynamic-script ffz)
 %--------------------
 % dynamics ffp
 %--------------------
 ffp = \markup {\hspace #-1.28 \dynamic ffp}
-ffpD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script "ffp")
+ffpD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script ffp)
 ffbrackp = \markup {
 	\hspace #-2.03 \concat { \dynamic ff \bracketItalic \with-true-dimensions \dynamic p }
 }

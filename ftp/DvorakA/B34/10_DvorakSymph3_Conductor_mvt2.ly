@@ -23,11 +23,11 @@
 \include "./00-Common/DvorakSymph3_Shortcuts.ily"
 \include "./00-Common/DvorakSymph3_Tempi.ily"
 %\include "./00-Common/DvorakSymph3_Format_Cond_Mvt02.ily"
-\include "./02-Mvt2/m02_v02_music_FlautoI.ily"
-\include "./02-Mvt2/m02_v03_music_FlautoII.ily"
+\include "./02-Mvt2/m02_v02_music_FlautoI_C.ily"
+\include "./02-Mvt2/m02_v03_music_FlautoII_C.ily"
 \include "./02-Mvt2/m02_v04_music_OboeI_C.ily"
 \include "./02-Mvt2/m02_v05_music_OboeII_C.ily"
-\include "./02-Mvt2/m02_v06_music_CornoInglese.ily"
+\include "./02-Mvt2/m02_v06_music_CornoInglese_C.ily"
 \include "./02-Mvt2/m02_v07_music_ClarinettoI_C.ily"
 \include "./02-Mvt2/m02_v08_music_ClarinettoII_C.ily"
 \include "./02-Mvt2/m02_v09_music_FagottoI_C.ily"
@@ -40,15 +40,15 @@
 \include "./02-Mvt2/m02_v16_music_TrombeII_C.ily"
 \include "./02-Mvt2/m02_v17_music_TrombonoI_C.ily"
 \include "./02-Mvt2/m02_v18_music_TrombonoII_C.ily"
-\include "./02-Mvt2/m02_v19_music_TrombonoIII.ily"
-\include "./02-Mvt2/m02_v21_music_Timpani.ily"
-\include "./02-Mvt2/m02_v23_music_ArpaUp.ily"
-\include "./02-Mvt2/m02_v24_music_ArpaDown.ily"
-\include "./02-Mvt2/m02_v25_music_ViolinoI.ily"
-\include "./02-Mvt2/m02_v26_music_ViolinoII.ily"
-\include "./02-Mvt2/m02_v27_music_Viola.ily"
-\include "./02-Mvt2/m02_v28_music_Violoncello.ily"
-\include "./02-Mvt2/m02_v29_music_Contrabasso.ily"
+\include "./02-Mvt2/m02_v19_music_TrombonoIII_C.ily"
+\include "./02-Mvt2/m02_v21_music_Timpani_C.ily"
+\include "./02-Mvt2/m02_v23_music_ArpaUp_C.ily"
+\include "./02-Mvt2/m02_v24_music_ArpaDown_C.ily"
+\include "./02-Mvt2/m02_v25_music_ViolinoI_C.ily"
+\include "./02-Mvt2/m02_v26_music_ViolinoII_C.ily"
+\include "./02-Mvt2/m02_v27_music_Viola_C.ily"
+\include "./02-Mvt2/m02_v28_music_Violoncello_C.ily"
+\include "./02-Mvt2/m02_v29_music_Contrabasso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -70,7 +70,8 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIMvtII 
+					\consists Keep_alive_together_engraver } <<
 					\new Staff <<
 %						\new Voice {
 %							\formatConductorMvtII
@@ -95,69 +96,72 @@
 					\timeMvtII \nameStaffIVMvtII \musicCornoIngleseMvtII
 				}
 				\new Staff {
-					\timeMvtII \nameStaffVIMvtII 
+					\timeMvtII \nameStaffVMvtII 
 					\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
 				}
 				\new Staff {
-					\timeMvtII \nameStaffVIIMvtII
+					\timeMvtII \nameStaffVIMvtII
 					\partCombine #'(0 . 10) \musicFagottoIMvtII \musicFagottoIIMvtII
 %					\musicFagottoIIMvtII
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtII
+					\consists Keep_alive_together_engraver } <<
 					\new Staff {
-						\timeMvtII \nameStaffVIIIMvtII
+						\timeMvtII \nameStaffVIIMvtII
 						\partCombine #'(0 . 10) \musicCornoIMvtII \musicCornoIIMvtII
 %						\musicCornoIIMvtII 
 					}
 					\new Staff {
-						\timeMvtII \nameStaffIXMvtII
+						\timeMvtII \nameStaffVIIIMvtII
 						\partCombine #'(0 . 10) \musicCornoIIIMvtII \musicCornoIVMvtII
 %						\musicCornoIVMvtII
 					}
 				>>
 				\new Staff {
-					\timeMvtII \nameStaffXMvtII
+					\timeMvtII \nameStaffIXMvtII
 					\partCombine \musicTrombeIMvtII \musicTrombeIIMvtII
 %					\musicTrombeIIMvtII
 				}
-				\new GrandStaff \with { \nameGrandStaffIVMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIIIMvtII 
+					\consists Keep_alive_together_engraver } <<
 					\new Staff {
-						\timeMvtII \nameStaffXIMvtII
+						\timeMvtII \nameStaffXMvtII
 						\partCombine \musicTrombonoIMvtII \musicTrombonoIIMvtII
 %						\musicTrombonoIIMvtII 
 					}
 					\new Staff {
-						\timeMvtII \nameStaffXIIMvtII \musicTrombonoIIIMvtII
+						\timeMvtII \nameStaffXIMvtII \musicTrombonoIIIMvtII
 					}
 				>>
 			>>
 			\new Staff {
-				\timeMvtII \nameStaffXIIIMvtII \musicTimpaniMvtII
+				\timeMvtII \nameStaffXIIMvtII \musicTimpaniMvtII
 			}
-			\new PianoStaff \with { \nameGrandStaffVMvtII 
+			\new PianoStaff \with { \nameGrandStaffIVMvtII 
 %				\override StaffGrouper.staff-staff-spacing.minimum-distance = #10
 			} <<
 				\new Staff = "up" {
-					\timeMvtII \nameStaffXIVMvtII \musicArpaUpMvtII
+					\timeMvtII \nameStaffXIIIMvtII \musicArpaUpMvtII
 				}
 				\new Staff = "down" {
-					\timeMvtII \nameStaffXVMvtII \musicArpaDownMvtII
+					\timeMvtII \nameStaffXIVMvtII \musicArpaDownMvtII
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffVIMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffVMvtII
+					\consists Keep_alive_together_engraver } <<
 					\new Staff {
-						\timeMvtII \nameStaffXVIMvtII \musicViolinoIMvtII
+						\timeMvtII \nameStaffXVMvtII \musicViolinoIMvtII
 					}
 					\new Staff {
-						\timeMvtII \nameStaffXVIIMvtII \musicViolinoIIMvtII
+						\timeMvtII \nameStaffXVIMvtII \musicViolinoIIMvtII
 					}
 				>>
-				\new GrandStaff \with { \nameGrandStaffVIIMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffVIMvtII } <<
 					\new Staff {
-						\timeMvtII \nameStaffXVIIIMvtII \musicViolaMvtII
+						\timeMvtII \nameStaffXVIIMvtII \musicViolaMvtII
 					}
 					\new Staff \with {
 						\RemoveAllEmptyStaves
@@ -165,9 +169,9 @@
 						\timeMvtII \musicViolaDivisiMvtII
 					}
 				>>
-				\new GrandStaff <<
+				\new GrandStaff \with { \nameGrandStaffVIIMvtII } <<
 					\new Staff {
-						\timeMvtII \nameStaffXIXMvtII \musicVioloncelloMvtII
+						\timeMvtII \nameStaffXIIIMvtII \musicVioloncelloMvtII
 					}
 					\new Staff \with {
 						\RemoveAllEmptyStaves
@@ -175,9 +179,9 @@
 						\timeMvtII \musicVioloncelloDivisiMvtII
 					}
 				>>
-				\new GrandStaff <<
+				\new GrandStaff \with { \nameGrandStaffVIIIMvtII } <<
 					\new Staff {
-						\timeMvtII \nameStaffXXMvtII \musicContrabassoMvtII
+						\timeMvtII \nameStaffXIXMvtII \musicContrabassoMvtII
 					}
 					\new Staff \with {
 						\RemoveAllEmptyStaves
@@ -191,6 +195,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+			system-count = #66
 		}
 	}
 }
