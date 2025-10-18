@@ -17,13 +17,13 @@ musicFagottoIIMvtII = \relative c {
 % Bars 6 to 10
 	gis8 r r4
 	g8 r r4
-	g8\brack\pp r r4
+	g8-\offset X-offset 1 \brack\pp r r4
 	r8 gis!->\< r gis->
 	r g-> r g->\!
 % Bars 11 to 15
 	\stemUp eis4\mf( fis)\> \stemDown
 	<< gis2\p\<~ {s8 s s s\!}>>
-	<< gis2\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -6) gis2\> {s8 s s s\!}>>
 	cis8\pp r r4
 	R2*7
 % Bars 16 to 20
@@ -37,8 +37,8 @@ musicFagottoIIMvtII = \relative c {
 % Bars 26 to 30
 	a'4\p r
 	a r \clef bass
-	ais,\f b\>
-	fis\fzdimD( gis)
+	ais,\f << b\> {s16 s s s32 s\!}>>
+	fis4\fzdimD( gis)
 	cis2(\pp
 % Bars 31 to 35
 	b
@@ -71,14 +71,14 @@ musicFagottoIIMvtII = \relative c {
 	r8 g->\mf\< r g->\!
 	r g->\< r g->\!
 % Bars 56 to 60
-	eis4(\f fis\>
-	gis8)\! r r4
+	eis4(\f << fis\> {s16 s s s\!}>>
+	gis8) r r4
 	e'8\p\<( a\! fis\> e16 dis)\!
 	e4\brack\p r
 	e r
 % Bars 61 to 65
 	ais,(\brack\mf b)
-	fis(\> gis8-.) gis-.\!
+	\shape #'((0.5 . 2)(0 . 2)(0 . 2)(-0.5 . 2)) Slur fis(\> gis8-.) gis-.\!
 	cis4.\p r8
 	a16\pp e' e8-. e-. r
 	a,16 e'\< e8-. e-.\! r
@@ -137,10 +137,10 @@ musicFagottoIIMvtII = \relative c {
 	
 	
 % Bars 111 to 115
-	<< aes2(\fp\> {s8 s s s\!}>> \clef bass
+	<< aes2(-\offset X-offset 0.5\fp\> {s8 s s s\!}>> \clef bass
 	<< \once \stemUp ees,2)\> {s8 s s s\!}>>
 	aes4->\p aes8-. aes16.-. ees32-.
-	aes4->\fp aes->
+	aes4->-\tweak X-offset 0.3 \fp aes->
 	aes'-> aes8-. aes16.-. bes32-.
 % Bars 116 to 120
 	aes4-> aes-> \clef tenor 
@@ -155,7 +155,7 @@ musicFagottoIIMvtII = \relative c {
 	c2\fp~
 	c8 r r4 \mark \default
 % Bars 126 to 130
-	des,,2\fp~
+	\dynEO #'(-2.5 . 2.5) des,,2\fp~
 	des
 	aes''8 aes16.( g32) aes8 r
 	des,\<[ des des des]\!
@@ -183,7 +183,7 @@ musicFagottoIIMvtII = \relative c {
 	
 	
 	
-	r4 r8 \clef tenor ces'\p\<
+	r4 r8 \clef tenor \hairpinShorten #'(0 . 2) ces'\p\<
 % Bars 151 to 155
 	ges4(->\! des')
 	aes4(\> c8 ees)\!
@@ -203,9 +203,9 @@ musicFagottoIIMvtII = \relative c {
 	aes aes aes  aes aes aes  aes aes aes  aes aes aes} \resetBeam
 	aes8 r r ces->
 % Bars 166 to 170
-	\tuplet 3/2 8 {\divideBeam bes16\mf bes bes  bes bes bes  bes bes bes  aes aes aes
+	\tuplet 3/2 8 {\divideBeam \dynEO #'(-1.5 . 1.5) bes16\mf bes bes  bes bes bes  bes bes bes  aes aes aes
 	bes bes bes  bes bes bes  bes bes bes  aes aes aes
-	bes\< bes bes  aes aes aes  ges ges ges  aes aes aes
+	bes-\alterBroken extra-offset #'(()(0 . 1.5)) \< bes bes  aes aes aes  ges ges ges  aes aes aes
 	ges ges ges  ges ges ges  aes aes aes  aes aes aes\!} \resetBeam
 	des4\ff~ des8.. ees32 
 % Bars 171 to 175
@@ -228,7 +228,7 @@ musicFagottoIIMvtII = \relative c {
 	R2*2
 % Bars 186 to 190
 	
-	R2 \clef bass
+	R2
 	R2*5
 	
 	
@@ -322,7 +322,7 @@ musicFagottoIIMvtII = \relative c {
 	des'8-. des16.-. aes32-. des8-. r
 	R2 \clef bass
 % Bars 271 to 273
-	<< des,,2\p\> {s8 s s s\!}>>
+	<< des,,2\p\> {s4 s8. s16\!}>>
 	des4\pp des
 	des2\fermata \fine
 }

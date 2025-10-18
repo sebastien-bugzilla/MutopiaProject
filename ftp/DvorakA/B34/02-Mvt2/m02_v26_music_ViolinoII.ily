@@ -284,7 +284,7 @@ musicViolinoIIMvtII = \relative c {
 % Bars 226 to 230
 	
 	\section
-	\time 2/8 <a~ g'>4\fp^(
+	\time 2/8 <a~ g'>4\fp^( \section
 	\time 4/8 <a fis'>8)\p\> <a g'>^\pizz <a fis'> <a g'>\!
 	<a fis'>[ fis'^\arco(\< gis! a)\!]
 % Bars 231 to 235

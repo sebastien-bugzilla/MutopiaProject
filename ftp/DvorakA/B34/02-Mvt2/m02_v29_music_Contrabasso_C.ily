@@ -27,11 +27,11 @@ musicContrabassoMvtII = \relative c {
 	cis4(\pp b8) r
 	cis4( bis8) r
 % Bars 16 to 20
-	cis4(\< fis,)\!
+	cis4(\< << fis,) {s8 s\!}>>
 	<< g2\f\> {s8 s s s\!}>>
 	b8(\p\< a\!) << gis!4 {s8\> s\!}>>
 	R2
-	b8(\p\< a\!) gis4\fz~
+	\hairpinShorten #'(-0.5 . 0) b8(\p\< a\!) gis4\fz~
 % Bars 21 to 25
 	gis8\< a-.\! gis4\fp~
 	gis8 a-.\< gis8. gis16\!
@@ -67,7 +67,7 @@ musicContrabassoMvtII = \relative c {
 	R2 \clef bass
 	r4 fis16\f r r8
 	gis,16\p r r8 gis16[ r a] r
-	gis^\pocoapococresc r r8 gis16[ r a] r
+	gis_\pocoapococresc r r8 gis16[ r a] r
 % Bars 51 to 55
 	gis8 r r aes16 r
 	g r r8 g16[ r aes] r
@@ -202,16 +202,16 @@ musicContrabassoMvtII = \relative c {
 	bes,\mf\< r bes' r r8 ces16 r\!
 	bes,\< r bes' r r8 ces16\! r
 	bes\< r ces r bes r aes r
-	ges r r8\! aes16\f r r8
-	des4->\ff des8-> des16.-> c32
+	ges r r8\! \dynEO #'(0 . 1) aes16\f r r8
+	\dynEO #'(0 . 2) des4->\ff des8-> des16.-> c32
 % Bars 171 to 175
-	des4-> \acciaccatura {aes32 bes c} des4
+	des4-> \acciaccatura {\beamOffset #'(-0.5 . -0.5) aes32 bes c} des4
 	\acciaccatura {aes32 bes c} des4-> des8-> des16.-> ees32->
 	des4-> \acciaccatura {aes32 bes c} des8 r
 	des-> des16. aes32 des8 r
 	des-> des16. aes32 des8 r
 % Bars 176 to 180
-	r des,16->(\< ees64 f ges aes\! bes16-.) r r c64(\< des ees f
+	r \beamOffset #'(0.5 . 0.5) des,16->(\< ees64 f ges aes\! bes16-.) r r c64(\< des ees f\!
 	ges4)\fz ges8-> ges16.-> des32
 	\acciaccatura {des32 ees f} ges2
 	\acciaccatura {des32 ees f} ges4-> ges8-> ges16.-> des32
@@ -255,7 +255,7 @@ musicContrabassoMvtII = \relative c {
 % Bars 211 to 215
 	R2*2
 	
-	<< d,2(\p\<^\brackM\arco {s8 s s s\!}>> \section \mark \default
+	<< d,2(\p\<-\offset X-offset -5.5 ^\brackM\arco {s8 s s s\!}>> \section \mark \default
 	\key cis \minor << b2)\< {s8 s s s\!}>>
 	b8(\f bis cis4)->
 % Bars 216 to 220
@@ -287,10 +287,10 @@ musicContrabassoMvtII = \relative c {
 	fis\ff\> gis8 gis,\pp
 	cis4(\ppp b8) r
 	cis4(\< b8\!) r
-	cis4(\< fis,)\!
+	\hairpinShorten #'(0 . -5.2) cis4(\< fis,)\!
 % Bars 241 to 245
 	<< g2\mf\< {s8 s s s\!}>>
-	b8(\< a) gis!4\!
+	\hairpinShorten #'(0 . -3) b8(\< a) gis!4\!
 	r4 r32 gis->\ff b-> a-> gis16->\noBeam r
 	r4 r32 gis-> dis'-> b-> gis16->\noBeam r
 	r4 r32 gis-> d'-> b-> gis16->\noBeam r
@@ -301,14 +301,14 @@ musicContrabassoMvtII = \relative c {
 	
 	
 % Bars 251 to 255
-	r4 bis(\brack\pp\<
-	cis)\!_\brackM\moltocresc eis,
+	r4 \hairpinShorten #'(-0.5 . -0.5) bis(-\offset X-offset -2 \brack\pp\<
+	cis)\!-\offset X-offset -2 _\brackM\moltocresc eis,
 	fis8\f << gis4.->\> {s8 s s\!}>>
 	r4 gis\pp
 	cis8 r r4
 % Bars 256 to 260
-	r8 cis[(\p\< fis,\> gis)]\!
-	cis\p r r4
+	r8 \hairpinShorten #'(0 . 1.5) cis[(\p\< fis, \hairpinShorten #'(-1.5 . 1) gis)]\>
+	\dynEO #'(0 . 1.5) cis\p r r4
 	r8 cis[(\pp gis)] a16._\dimin gis32\fermata
 	cis4 fis,\fz\>~
 	fis\! fis\pp(

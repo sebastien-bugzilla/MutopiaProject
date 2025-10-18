@@ -11,7 +11,7 @@ musicOboeIMvtII = \relative c {
 % Bars 1 to 5
 	cis''4\fp( dis8) r
 	cis4(\fp dis8) r
-	\partCombineApart cis4(\< fis16.\> e32 d16.\! cis32)
+	\partCombineApart cis4(\< \beamOffset #'(-0.5 . -0.5) fis16.\> e32 d16.\! cis32)
 	bis8 r r cis->(
 	bis) r r cis->(
 % Bars 6 to 10
@@ -25,7 +25,7 @@ musicOboeIMvtII = \relative c {
 	gis8.( fisis32 gis) b16( a) a( gis)
 	gis8\>[ \acciaccatura b8 a~ a gis]\!(
 	cis,)\pp r r4
-	r4 r16\pp \tuplet 3/2 16 {a''32( c b} a16) r \partCombineAutomatic
+	r4 r16\pp \beamOffset #'(-0.5 . -0.5) \tuplet 3/2 16 {a''32( c b} a16) r \partCombineAutomatic
 % Bars 16 to 20
 	R2*10
 % Bars 21 to 25
@@ -43,7 +43,7 @@ musicOboeIMvtII = \relative c {
 	\time 2/8 R4
 	\time 4/8 R2
 % Bars 36 to 40
-	r8 fis([\p\< gis a])\!
+	r8 \beamOffset #'(0.5 . 0.5) fis([\p\< gis a])\!
 	\partCombineApart a4( gis~
 	gis4. fisis8)
 	fis!4(~ fis16 d cis b)
@@ -57,7 +57,7 @@ musicOboeIMvtII = \relative c {
 % Bars 46 to 50
 	cis4( dis8) \once \partCombineAutomatic r
 	cis4( dis8) \once \partCombineAutomatic r
-	cis4( fis16. e32 d16. cis32)
+	\shape #'((0 . -1)(0 . -0.5)(0 . 0)(0 . 0)) Slur cis4( \beamOffset #'(-0.5 . -0.5) fis16. e32 d16. cis32)
 	bis4.(\fp cis8->)
 	bis4.(_\fppocoapococresc cis8->)
 % Bars 51 to 55
@@ -131,7 +131,7 @@ musicOboeIMvtII = \relative c {
 	ges4->\fp~ ges8 ges16.-. aes32-.
 	ges4\fp\> ges8-.\! r
 	ges4\< ges8. bes16\!
-	\partCombineApart ces4->( des8 bes)
+	\partCombineApart ces4->( \beamOffset #'(-0.5 . -0.5) des8 bes)
 % Bars 111 to 115
 	<< aes2( {s8 s s s}>>
 	<< g2) {s4 s8. s16}>> \partCombineAutomatic
@@ -143,12 +143,12 @@ musicOboeIMvtII = \relative c {
 	\partCombineApart ees8->-. ees16.-. f32-. ees8-. \once \partCombineAutomatic r
 	ees8->-. ees16.-. f32-. ees8-. \partCombineAutomatic r 
 	ees8\trill\< ees16.-. f32-. ges8\trill ges16.-. aes32-.\!
-	\partCombineApart << a4. {s8 s s}>> gis8
+	<< \once \partCombineChords a4.\> {s8 s\! s}>> \partCombineApart gis8
 % Bars 121 to 125
-	<< a4.^\pococrescendo {s8 s s}>> a8-.
+	<< a4.-\offset X-offset 3 ^\pococrescendo {s8 s s}>> a8-.
 	<< bes4. {s8 s s}>> bes8-.
 	<< b4. {s8 s s}>> b8-. \partCombineAutomatic
-	a2\fp~
+	a2-\tweak X-offset #0.3 \fp~
 	a8[\< a-> a-> a->]\! \mark \default
 % Bars 126 to 130
 	\partCombineApart ees4.( d8)
@@ -160,7 +160,7 @@ musicOboeIMvtII = \relative c {
 	\divideBeam aes!\fp\> aes aes  aes aes aes  aes aes aes  bes bes bes\!
 	aes\pp aes aes  aes aes aes  aes aes aes  ges ges ges
 	f f f  f f f  f f f  ges ges ges
-	f f f  f f f  f f f  des des des
+	f f f  f f f  f f f \beamOffset #'(0.5 . 0.5) \once \tupletUp des des des
 	des des des  des des des  des des des  bes bes bes
 % Bars 136 to 140
 	aes aes aes  aes aes aes  aes aes aes  bes bes bes
@@ -190,7 +190,7 @@ musicOboeIMvtII = \relative c {
 	ges4.\> des8\!
 	des4(\pp d8.\< d16\!
 	cis4\> d\!)
-	cis4. \bar "!" \tuplet 3/2 8 {\divideBeam ges'!16\fp ges ges \mark \default
+	cis4. \bar "!" \tuplet 3/2 8 {\divideBeam \dynEO #'(-1 . 1) ges'!16\fp ges ges \mark \default
 	ges ges ges  ges ges ges  ges ges ges  f f f
 % Bars 161 to 165
 	ges ges ges  ges ges ges  ges ges ges  f f f} \resetBeam
@@ -200,16 +200,16 @@ musicOboeIMvtII = \relative c {
 	ges8 r r4
 % Bars 166 to 170
 	\partCombineApart des4.(\mf\< eeses8\fz\>)
-	<< des4.(\< {s4 s8_\brackM\crescmarkup }>> eeses8->)\!
-	des8([\< eeses des ces)]
+	<< \hairpinShorten #'(0 . 2) des4.(\< {s4 s8_\brackM\crescmarkup }>> eeses8->)\!
+	des8([-\alterBroken extra-offset #'(()(0 . -10)) \< eeses des ces)]
 	bes( ees!) f16( ees c! aes)\! \partCombineAutomatic
-	aes'4\ff~ aes8.. aes32
+	aes'4-\tweak X-offset 0.5 \ff~ aes8.. aes32
 % Bars 171 to 175
 	aes2~
 	aes4~ aes8.. aes32
 	\partCombineApart \once \stemDown aes2~
-	aes8.. bes32-. aes4~
-	aes8.. bes32-. aes4~
+	\beamOffset #'(-0.5 . -0.5) aes8.. bes32-. aes4~
+	\beamOffset #'(-0.5 . -0.5) aes8.. bes32-. aes4~
 % Bars 176 to 180
 	aes8 \partCombineAutomatic r r4
 	bes4->\fz~ bes8.. ces32
@@ -286,7 +286,7 @@ musicOboeIMvtII = \relative c {
 	R2*3
 	
 	
-	r4 r32 gis\brack\p\<(-. dis'-.\! b-.\> gis16)\!\noBeam r
+	r4 r32 gis-\tweak X-offset -2 \brack\p\<(-. dis'-.\! b-.\> gis16)\!\noBeam r
 	R2*3
 % Bars 241 to 245
 	

@@ -76,7 +76,7 @@ musicTrombonoIIMvtII = \relative c {
 	a'8-.\f r r4
 	R2 \mark \default
 % Bars 126 to 130
-	aes8.\fz r16 r4
+	aes8.-\tweak X-offset 0.3 \fz r16 r4
 	R2*26
 % Bars 131 to 135
 	

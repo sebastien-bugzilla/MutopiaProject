@@ -12,7 +12,7 @@ musicVioloncelloMvtII = \relative c {
 	e'4(\fp dis8) r
 	e4(\fp dis8) r
 	cis4\fp\< fis16.(\! e32\> d16. cis32)\!
-	\tuplet 6/4 4 {bis16(\p\< fis gis a\! eis fis\>)} fis4\!
+	\tuplet 6/4 4 {bis16(\p\< fis gis a\! eis\> fis)} fis4\!
 	\tuplet 6/4 4 {r16 fis(\< gis a eis fis)} fis4\!
 % Bars 6 to 10
 	\tuplet 6/4 4 {r16 fis(\> gis a gis fis)} f4\!
@@ -444,7 +444,7 @@ musicVioloncelloDivisiMvtII = \relative c {
 	R2 \clef tenor
 	c32(\brack\pp^\brackM\arco ees c \liiirii ees \liiriii c ees c ees  c ees c ees) r16 c32( ees
 % Bars 121 to 125
-	c ees c \liiirii ees \liiriii c ees c ees  c ees c ees) r16 c32( ees
+	c_\pococrescendo ees c \liiirii ees \liiriii c ees c ees  c ees c ees) r16 c32( ees
 	c e c \liiirii e \liiriii c e c e  c e c e) r16 << { c32( e
 		d f d \liiirii f \liiriii d f d f  d f d f) r16 d32( f
 		\oneVoice a16)\f r32 a,(\noBeam c ees! ges! f ees[ ges ees c] a ees' c a)

@@ -48,7 +48,7 @@ musicArpaUpMvtII = \relative c {
 	q4\arpeggio r
 % Bars 66 to 70
 	q8\< r <d fis b d>\! r
-	<fis a cis fis>\mf r <e gis! cis e>_\dimmarkup <dis! gis bis dis!>
+	<fis a cis fis>-\offset X-offset -1 \mf r <e gis! cis e>_\dimmarkup <dis! gis bis dis!>
 	<cis e gis cis>\p r r4 \mark \default
 	R2*28
 % Bars 71 to 75
@@ -64,7 +64,7 @@ musicArpaUpMvtII = \relative c {
 % Bars 96 to 100
 	
 	R2\fermata \section
-	\key des \major <f, aes des>4\arpeggio\pp r
+	\key des \major \dynEO #'(0.5 . 0) <f, aes des>4\arpeggio\pp r
 	q\arpeggio q\arpeggio
 	<f aes des f>\arpeggio r
 % Bars 101 to 105
@@ -72,22 +72,22 @@ musicArpaUpMvtII = \relative c {
 	<aes des f aes>->\arpeggio r
 	q\arpeggio-> r
 	q\arpeggio\< <bes des f bes>8\! r
-	\staffDown \beamOffset #'(-1 . 1) ges,32[(^\fp des' ges \staffUp bes] des ges \staffDown bes des \once \stemUp ges16) r r8
+	\staffDown \beamGap #2 \beamOffset #'(1 . 1) \dynEO #'(-1 . 0) ges,32[(^\fp des' ges \staffUp bes] des ges \staffDown bes des \once \stemUp ges16) r r8
 % Bars 106 to 110
 	\beamOffset #'(-1 . 1) ges,,,32[( des' ges \staffUp bes] des ges \staffDown bes des  \once \stemUp ges16) r r8
 	ges,,32[( des' ges \staffUp bes] des ges \staffDown bes des ges16) r r8
 	ges,,,32[(\< des' ges \staffUp bes] des ges \staffDown bes des ges16)\! r r8
 	\staffUp R2
-	\staffDown ces,,,32( ges' ces ges' \staffUp ees ges ces ees) \staffDown \tuplet 3/2 16 {bes,,32[( des bes'] \staffUp des[ ges bes])} \staffDown ees,,32[( ges] \staffUp \tuplet 3/2 16 { bes ees bes')}
+	\staffDown \beamOffset #'(0.5 . -1) ces,,,32( ges' ces ges' \staffUp ees ges ces ees) \staffDown \tuplet 3/2 16 {bes,,32[( des bes'] \staffUp des[ ges bes])} \staffDown  \shape #'((0.5 . -3)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur ees,,32[( ges] \staffUp \tuplet 3/2 16 { bes ees bes')}
 % Bars 111 to 115
-	\staffDown aes,,( f' aes \staffUp des f aes des aes) \staffDown aes,,( ees' aes \staffUp c! ees aes c! aes)
-	\staffDown \clef bass ees,,,( bes'\> des \staffUp g bes ees \staffDown ees, bes' des \staffUp g-\tweak extra-offset #'(0 . -3) _\dimmarkup bes ees g ees bes g)\!
+	\staffDown \shape #'((0 . -4)(0 . 0)(0 . 0)(0 . 0)) Slur aes,,( f' aes \staffUp des f aes des aes) \staffDown aes,,( ees' aes \staffUp c! ees aes c! aes)
+	\staffDown \clef bass \beamGap #2 ees,,,( bes'\> des \staffUp g bes ees \staffDown ees, bes' des \staffUp g-\tweak extra-offset #'(0 . -3) _\dimmarkup bes ees g ees bes g)\!
 	<aes c ees aes>8\p r r4
-	\staffDown aes,,32( ees' aes \staffUp c ees aes c aes \staffDown \clef treble aes, ees' aes \staffUp c ees aes \staffDown c ees)
+	\staffDown \shape #'((0 . 0)(3 . -0.5)(3 . -0.5)(0 . 0)) Slur aes,,32( ees' aes \staffUp c ees aes c aes \staffDown \clef treble aes, ees' aes \staffUp c ees aes \staffDown c ees)
 	\staffUp R2
 % Bars 116 to 120
-	\staffDown \clef bass aes,,,,32(\< ees' aes \staffUp c ees aes c aes\! \staffDown \clef treble aes, ees' aes \staffUp c ees aes \staffDown c ees)
-	aes8 r \clef bass aes,,,,32( ees' aes \staffUp c ees aes \staffDown \clef treble c ees)
+	\staffDown \beamGap #2 \clef bass \shape #'((0 . 0)(5 . -2)(5 . -2)(0 . 0)) Slur aes,,,,32(\< ees' aes \staffUp c ees aes c aes\! \staffDown \clef treble \beamGap #2 aes, ees' aes \staffUp c ees aes \staffDown c ees)
+	aes8 r \clef bass \beamGap #2 aes,,,,32( ees' aes \staffUp c ees aes \staffDown \clef treble c ees)
 	aes8 r \clef bass aes,,,32( ees' aes \staffUp c ees aes \staffDown c ees)
 	aes8 r \clef bass aes,,,32( ees' aes \staffUp c ees aes \staffDown \clef treble c ees)
 	\staffUp R2
@@ -98,36 +98,36 @@ musicArpaUpMvtII = \relative c {
 	
 	\mark \default
 % Bars 126 to 130
-	\staffDown \clef bass f,,32(^\p aes ces \staffUp ces' aes ces aes f \staffDown f, aes ces \staffUp ces' aes ces aes f)
+	\staffDown \clef bass \beamGap #12 \dynEO #'(-1 . 0) f,,32(^\p aes ces \staffUp ces' aes ces aes f \staffDown \beamGap #12 f, aes ces \staffUp ces' aes ces aes f)
 	\staffDown \clef treble aes,( ces f \staffUp ees' ces ees ces aes \staffDown aes, ces f \staffUp ees' ces ees ces aes)
 	\staffDown ces,( f aes \staffUp des f aes f des \staffDown ces, f aes \staffUp des f aes f des)
-	\staffDown des,( aes' ces \staffUp f-\tweak extra-offset #'(0 . -1.5) _\crescmarkup aes des f des) \staffDown des,,( aes' ces \staffUp f aes des f des)
-	\tuplet 6/4 8 { \staffDown f,,32([ des' f \staffUp aes ces aes')] 
-		\staffDown f,,[( des' f \staffUp aes ces aes')]
-		\staffDown f,,[( des' f \staffUp a ces a')]
-		\staffDown ges,,[( des' ges \staffUp bes des ges)]}
+	\staffDown \shape #'((0 . -3)(0 . 0.5)(0 . 1)(0 . -0.5)) Slur des,( aes' ces \staffUp f-\tweak extra-offset #'(0 . -2.5) _\crescmarkup aes des f des) \staffDown \shape #'((0 . -3)(0 . 0.5)(0 . 1)(0 . -0.5)) Slur des,,( aes' ces \staffUp f aes des f des)
+	\tuplet 6/4 8 { \staffDown \shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur f,,32([ des' f \staffUp aes ces aes')] 
+		\shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur \staffDown f,,[( des' f \staffUp aes ces aes')]
+		\shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur \staffDown f,,[( des' f \staffUp a ces a')]
+		\shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur \staffDown ges,,[( des' ges \staffUp bes des ges)]}
 % Bars 131 to 135
 	<aes, des aes'>8\arpeggio <f, aes des>-.^\brackM\dimmarkup[\arpeggio <f aes des f>-.]\arpeggio r
 	<aes, des f aes>\arpeggio[\brack\p <f' aes des>\arpeggio <f aes des f>]\arpeggio r
 	<aes, des f aes>\arpeggio[ <f' aes des>\arpeggio <f aes des f>]\arpeggio r
 	<aes, des f aes>\arpeggio[ <f' aes des>\arpeggio <f aes des f>]\arpeggio r
-	\disconnectArpeggio <aes, des f>\arpeggio[\> <des f aes>\arpeggio <des f aes des>]\arpeggio\! r
+	\disconnectArpeggio \hairpinShorten #'(2 . 0) <aes, des f>\arpeggio[\> <des f aes>\arpeggio <des f aes des>]\arpeggio\! r
 % Bars 136 to 140
-	<aes des f>\arpeggio[\ppp\> <des f aes>\arpeggio <des f aes des>]\arpeggio\! r
+	<aes des f>\arpeggio[-\offset X-offset -1 \ppp\> <des f aes>\arpeggio <des f aes des>]\arpeggio\! r
 	R2*9
 % Bars 141 to 145
 	
 % Bars 146 to 150
-	\staffDown aes16(^\p ees' aes \staffUp c ees aes des, f)
-	\staffDown aes,,( ees' aes \staffUp c ees aes c, f)
+	\staffDown \shape #'((0 . -3)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur aes16(^\p ees' aes \staffUp c ees aes des, f)
+	\staffDown \shape #'((0 . -4)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur aes,,( ees' aes \staffUp c ees aes c, f)
 	\staffDown c,( ees g \staffUp c ees g bes, g')
-	\staffDown aes,,( ees' aes \staffUp c ees aes des, f)
-	\staffDown aes,,( ees' aes \staffUp c\< ees aes ees ges!)\!
+	\staffDown \shape #'((0 . -4)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur aes,,( ees' aes \staffUp c ees aes des, f)
+	\staffDown aes,,( ees' aes \staffUp \hairpinShorten #'(1 . 0) c\< ees aes ees ges!)\!
 % Bars 151 to 155
-	\staffDown \tuplet 3/2 8 {ges,,16[(\f des' ges]} \staffUp bes32 des ges bes)
-		\staffDown \tuplet 3/2 8 {des,,16[( f aes] \staffUp des[ f aes])}
-	\staffDown aes,,16( ees' aes \staffUp c ees g bes, g')
-	\staffDown \tuplet 3/2 8 {aes,,16([ c ees] \staffUp aes[ c ees])} aes16 r \bar "!" r8
+	\staffDown \tuplet 3/2 8 {\shape #'((0 . -0.5)(0 . 1)(0 . 1)(0 . 0)) Slur ges,,16[(\f des' ges]} \staffUp bes32 des ges bes)
+		\staffDown \tuplet 3/2 8 {\shape #'((0 . -2)(0 . 1)(0 . 1)(0 . 0)) Slur des,,16[( f aes] \staffUp des[ f aes])}
+	\staffDown \shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur aes,,16( ees' aes \staffUp c ees g bes, g')
+	\staffDown \tuplet 3/2 8 {\shape #'((0 . -2)(0 . 1)(0 . 1)(0 . 0)) Slur aes,,16([ c ees] \staffUp aes[ c ees])} aes16 r \bar "!" r8
 	R2*2
 	
 % Bars 156 to 160
@@ -138,15 +138,15 @@ musicArpaUpMvtII = \relative c {
 	aes,,\p-. c-. ees-. aes-. r aes,[-. aes'-.] r
 % Bars 161 to 165
 	aes,-. c-. ees-. aes-. r aes,[-. aes'-.] r
-	\staffDown r8 ges,32\mf\<([ bes \staffUp ges' bes)] \staffDown f,[( aes\! \staffUp f'\> aes)] \staffDown d,,([ f \staffUp d' f])\!
+	\staffDown r8 \shape #'((0.5 . -1)(0 . 1)(0 . 1)(0 . 0)) Slur ges,32\mf\<([ bes \staffUp ges' bes)] \staffDown \shape #'((0.5 . -1)(0 . 1)(0 . 1)(0 . 0)) Slur f,[( aes\! \staffUp f'\> aes)] \staffDown \shape #'((0.5 . -1)(0 . 1)(0 . 1)(0 . 0)) Slur d,,([ f \staffUp d' f])\!
 	aes,16-.\p c-. ees-. aes-. aes,[-. aes'-.] r8
 	aes,16-. c-. ees-. aes-. aes,[-. aes'-.] r8
-	\staffDown r8 aes,32([\< c \staffUp aes' c)] \staffDown ges,[( bes \staffUp ges' bes)] \staffDown f,[( aes \staffUp f' aes])\!
+	\staffDown r8 \shape #'((0.5 . -1)(0 . 1)(0 . 1)(0 . 0)) Slur aes,32([\< c \staffUp aes' c)] \staffDown \shape #'((0.5 . -1)(0 . 1)(0 . 1)(0 . 0)) Slur ges,[( bes \staffUp ges' bes)] \staffDown \shape #'((0.5 . -1)(0 . 1)(0 . 1)(0 . 0)) Slur f,[( aes \staffUp f' aes])\!
 % Bars 166 to 170
-	\staffDown bes,,,32(\brack\mf ges' bes \staffUp des ges bes des bes) s8 <ces eeses aes>16-> r
-	\staffDown bes,,32( ges' bes \staffUp des ges bes des bes) s8_\brackM\crescmarkup <ces eeses f aes>16-> r
-	\staffDown \tuplet 5/4 8 {bes,32([ ges'] \staffUp bes[ des ges]) \staffDown ces,,[( f] \staffUp ces'[ eeses aes]) \staffDown bes,,([ ges'] \staffUp bes[ des ges]) \staffDown aes,,[( d] \staffUp aes'[ ces f])}
-	\staffDown \beamGap #10 \tuplet 3/2 16 {ges,,,32([ bes \liiirii ees \staffUp \liiriii ges bes ees)] \staffDown \beamGap #20 ges( bes \liiirii ees \staffUp \liiriii ges bes ees)} <aes, c! ees aes>8\f r
+	\staffDown \stemUp bes,,,32(\brack\mf ges' bes \staffUp des ges bes des bes) \stemNeutral s8 <ces eeses aes>16-> r
+	\staffDown \stemUp bes,,32( ges' bes \staffUp des ges bes des bes) \stemNeutral s8_\brackM\crescmarkup <ces eeses f aes>16-> r
+	\staffDown \tuplet 5/4 8 {\shape #'((0 . -2)(0 . 1)(0 . 1)(0 . 0)) Slur bes,32([ ges'] \staffUp bes[ des ges]) \staffDown \shape #'((0 . -3)(0 . 1)(0 . 1)(0 . 0)) Slur ces,,[( f] \staffUp ces'[ eeses aes]) \staffDown \shape #'((0 . -2)(0 . 1)(0 . 1)(0 . 0)) Slur bes,,([ ges'] \staffUp bes[ des ges]) \staffDown \shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur aes,,[( d] \staffUp aes'[ ces f])}
+	\staffDown \beamGap #10 \tuplet 3/2 16 {ges,,,32([ bes \liiirii ees \staffUp \liiriii ges bes ees)] \staffDown \beamGap #20 \shape #'((0 . -4)(0 . 1)(0 . 1)(0 . 0)) Slur ges( bes \liiirii ees \staffUp \liiriii ges bes ees)} \dynEO #'(0 . 2) <aes, c! ees aes>8\f\arpeggio r
 	\staffDown \tuplet 3/2 16 {
 		\beamGap #10 des,,,32([\ff aes' \liiirii des \staffUp \liiriii f aes des] 
 		\beamGap #10 f des \liiirii aes \liiriii f \staffDown des aes} des,16) r r8
@@ -215,13 +215,13 @@ musicArpaUpMvtII = \relative c {
 	
 	
 	\section
-	\key des \major \staffDown f,32(^\pp des' f \staffUp aes des f des aes \staffDown f, des' f \staffUp aes des f des aes)
+	\key des \major \staffDown \dynEO #'(-1 . 0) f,32(^\pp des' f \staffUp aes des f des aes \staffDown f, des' f \staffUp aes des f des aes)
 	\staffDown f,( des' f \staffUp aes des f des aes \staffDown f, des' f \staffUp aes des f des aes)
 % Bars 266 to 270
 	\staffDown aes,( des f \staffUp aes des aes' des, aes  \staffDown aes, des f \staffUp aes des aes' des, aes)
 	\staffDown aes,( des f \staffUp aes des aes' des, aes  \staffDown aes, des f \staffUp aes des aes' des, aes)
-	\staffDown des,( aes' des \staffUp f aes f' des) r \staffDown des,,( aes' des \staffUp f aes f' des) r
-	\staffDown des,,( aes' des \staffUp f aes f' des) r \staffDown des,,( aes' des \staffUp f aes f' des) r
+	\staffDown \shape #'((0 . -4)(0 . 0.5)(0 . 0.5)(0 . -0.5)) Slur des,( aes' des \staffUp f aes f' des) r \staffDown \shape #'((0 . -4)(0 . 0.5)(0 . 0.5)(0 . -0.5)) Slur des,,( aes' des \staffUp f aes f' des) r
+	\staffDown \shape #'((0 . -4)(0 . 0.5)(0 . 0.5)(0 . -0.5)) Slur des,,( aes' des \staffUp f aes f' des) r \staffDown \shape #'((0 . -4)(0 . 0.5)(0 . 0.5)(0 . -0.5)) Slur des,,( aes' des \staffUp f aes f' des) r
 	R2*3
 % Bars 271 to 273
 	

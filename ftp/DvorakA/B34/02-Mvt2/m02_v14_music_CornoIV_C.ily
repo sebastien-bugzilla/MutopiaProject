@@ -151,7 +151,7 @@ musicCornoIVMvtII = \relative c {
 	g2\fp~
 	g8[\< bes-> bes-> bes]->\! \mark \default
 % Bars 126 to 130
-	aes,8-.[\fp aes-. aes-.] r
+	\dynEO #'(-2.5 . 3) aes,8-.[\fp aes-. aes-.] r
 	aes8-.[ aes-. aes-.] r
 	ees'8 ees16.( d32) ees8 r
 	aes,8-.[\< aes-. aes-. aes-.]\!
@@ -195,7 +195,7 @@ musicCornoIVMvtII = \relative c {
 	aes16) aes-. aes-. aes-. aes r a8(->
 	aes16)\< r a8->[( aes16)] r a8(->
 	\stemUp des,4)-> ees->\!
-	aes4\ff~ aes8.. bes32
+	aes4-\tweak X-offset 0.3 \ff~ aes8.. bes32
 % Bars 171 to 175
 	aes2~
 	aes4~ aes8.. bes32
@@ -294,7 +294,7 @@ musicCornoIVMvtII = \relative c {
 	
 	
 % Bars 271 to 273
-	<< e,2\p\> {s8 s s s\!}>>
+	<< e,2\p\> {s4 s8. s16\!}>>
 	e4\pp e
 	e2\fermata \fine
 }

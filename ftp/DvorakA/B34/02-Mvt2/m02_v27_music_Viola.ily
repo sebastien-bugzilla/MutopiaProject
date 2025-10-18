@@ -164,7 +164,7 @@ musicViolaMvtII = \relative c {
 	r4 r16 c,32(\< ees aes[ ees ges!])\! r
 	a(\pp ges! ees ges a16) r a32( ges ees ges aes16) r
 % Bars 121 to 125
-	a32(_\pococresc ges! ees ges a16) r a32( ges ees ges a16) r
+	a32(_\pococrescendo ges! ees ges a16) r a32( ges ees ges a16) r
 	bes32( g e g bes16) r bes32( g c g bes16) r
 	b32( aes f aes b16) r b32( aes d aes b16) r
 	ees,16\brack\f^\unis r c32( ees ges f ees[ ges ees c] a ees' c a)

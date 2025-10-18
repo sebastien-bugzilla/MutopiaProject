@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph3_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph3_Shortcuts.ily"
 \include "./00-Common/DvorakSymph3_Tempi.ily"
-%\include "./00-Common/DvorakSymph3_Format_Cond_Mvt02.ily"
+\include "./00-Common/DvorakSymph3_Format_Cond_Mvt02.ily"
 \include "./02-Mvt2/m02_v02_music_FlautoI_C.ily"
 \include "./02-Mvt2/m02_v03_music_FlautoII_C.ily"
 \include "./02-Mvt2/m02_v04_music_OboeI_C.ily"
@@ -73,9 +73,12 @@
 				\new GrandStaff \with { \nameGrandStaffIMvtII 
 					\consists Keep_alive_together_engraver } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtII
-%						}
+						\new Voice {
+							\formatConductorMvtII
+						}
+						\new Voice {
+							\displayFilterVoice
+						}
 						\new Voice {
 							\tempiMvtII
 						}
@@ -175,7 +178,7 @@
 					}
 					\new Staff \with {
 						\RemoveAllEmptyStaves
-						\remove Time_signature_engraver } {
+						 } {
 						\timeMvtII \musicVioloncelloDivisiMvtII
 					}
 				>>
@@ -195,7 +198,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-			system-count = #66
 		}
 	}
 }

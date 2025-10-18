@@ -9,8 +9,8 @@ musicViolaMvtII = \relative c {
 	\key cis \minor
 %	\transposition a
 % Bars 1 to 5
-	<gis''_~ cis>4(\fp <gis dis'>8) r
-	<gis_~ cis>4(\fp <gis dis'>8) r
+	\dynEO #'(0 . 2) <gis''_~ cis>4(\fp <gis dis'>8) r
+	\dynEO #'(0 . 2) <gis_~ cis>4(\fp <gis dis'>8) r
 	<cis, e>4(\fp <fis, a>
 	<dis fis>8)\p r r <a' cis>->^\pizz
 	<gis dis'> r r <a cis>->
@@ -21,7 +21,7 @@ musicViolaMvtII = \relative c {
 	r\< <f aes>-> r <e! aes>\!
 	r <ees g>-> r_\crescmarkup <d f>->
 % Bars 11 to 15
-	<eis gis!>(\f <gis b> <fis a>16\> <a cis> <gis b> <fis  a>)\!
+	\shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur <eis gis!>(-\offset X-offset -1.5 \f <gis b> <fis a>16\> <a cis> <gis b> <fis  a>)\!
 	<cis e>4(\p\< <e gis>)\!
 	<e gis>8( <a cis>\> <fis a> <e gis>16 <dis fis>)\!
 	e4(\pp dis8) r
@@ -32,9 +32,9 @@ musicViolaMvtII = \relative c {
 		a16.( g32 fis16. e32) \oneVoice dis8( e)
 		fis2
 	} \\ {
-		e4(\< d8 fis)\!
+		e4(-\tweak rotation #'(4 -1 0) \< \beamOffset #'(0.5 . 0.5) d8 fis)\!
 		d4\f\> s8 s\!
-		<< { fis4(\p dis) } {s8\< s\! s\> s\!}>>
+		<< { fis4(-\offset X-offset -1.5 \p dis) } {\hairpinShorten #'(-0.5 . 0) s8\< s\! s\> s\!}>>
 	} >>
 	R2
 	fis4\p \tuplet 6/4 4 {r16 fis(\< gis a eis fis)\!}
@@ -45,7 +45,7 @@ musicViolaMvtII = \relative c {
 	r4 r8 dis''->(~\fz\>
 	dis4 bis8)\pp r
 % Bars 26 to 30
-	r16 <e,, g>32( <cis' e>) q16( <e, g>) r q32(\< <cis' e>) q16( <e, g>)\!
+	r16 \beamOffset #'(-0.5 . -0.5) <e,, g>32( <cis' e>) q16( <e, g>) r q32(\< <cis' e>) q16( <e, g>)\!
 	r16 q32(\< <cis' e>) q16( <e, g>) r q32( <cis' e>) q16( <e, g>)\!
 	r q32( <cis' e>) q16( <e, g>) r <d fis>32( <b' d>) q16( <d, fis>)
 	r <cis fis>32( <a' cis>) q16( <cis, fis>) r_\dimmarkup <gis' cis>32( <e gis>) <dis! gis>16( <fis bis>)
@@ -81,7 +81,7 @@ musicViolaMvtII = \relative c {
 	\tuplet 6/4 4 {r16 b( cis! d ais b) r b( cis d ais b)
 	r g(\< a! b fis g) r f( g aes e f)\!}
 % Bars 56 to 60
-	r32 e[(\f\> f g] \tuplet 6/4 8 {aes e f g aes f) r fis( gis a cis,\! a'} gis[ cis, fis cis)]
+	r32 e[(-\offset X-offset -2 \f f\> g] \tuplet 6/4 8 {aes e f g aes f) r fis( gis a cis,\! a'} gis[ cis, fis cis)]
 	e8(\trill\< \tuplet 6/4 8 {dis32 e fis e dis e)} gis8( cis)\!
 	<e, gis>(\< <a cis>)\! <fis a>(\> <e gis>16 <dis fis>)\!
 	r <e g>32(\pp <cis' e>) q16( <e, g>) r <e g>32( <cis' e>) q16( <e, g>) 
@@ -117,7 +117,7 @@ musicViolaMvtII = \relative c {
 	<dis! fis!>16\fz r \tuplet 3/2 8 {dis16->\f fis-> dis-> c->[ ees-> c->] a-> c-> a->
 % Bars 81 to 85
 	fis-> a-> fis-> dis!->[ fis-> dis->] c-> ees-> c->} b'16\noBeam r
-	a32(\mf fis a \liiirii fis \liiriii a fis a fis  a fis a \liiirii fis \liiriii a fis dis fis)
+	\dynEO #'(-1 . 0.5) a32(\mf fis a \liiirii fis \liiriii a fis a fis  a fis a \liiirii fis \liiriii a fis dis fis)
 	a( fis a \liiirii fis\< \liiriii a fis a fis  a fis a \liiirii fis \liiriii a fis dis fis)\!
 	a(\f fis a \liiirii fis \liiriii a fis c' a  gis e gis \liiirii e \liiriii gis e gis e)
 	\tuplet 6/4 4 {b'16( gis b gis b gis)_\dimmarkup a( fis a fis\brack\p a dis,)
@@ -141,7 +141,7 @@ musicViolaMvtII = \relative c {
 	R2*2
 % Bars 101 to 105
 	
-	r4 r16 des,32\((\pp des') des16-.\) r
+	r4 r16 des,32\((-\offset X-offset -1 \pp des') des16-.\) r
 	R2*2
 	
 	bes,32(\pp des ges \liiirii bes \liiriii ges des bes des  bes des bes \liiirii des \liiriii bes des ges f)
@@ -164,21 +164,21 @@ musicViolaMvtII = \relative c {
 	r4 r16 c,32(\< ees aes[ ees ges!])\! r
 	a(\pp ges! ees ges a16) r a32( ges ees ges aes16) r
 % Bars 121 to 125
-	a32(_\pococresc ges! ees ges a16) r a32( ges ees ges a16) r
+	a32(_\pococrescendo ges! ees ges a16) r a32( ges ees ges a16) r
 	bes32( g e g bes16) r bes32( g c g bes16) r
 	b32( aes f aes b16) r b32( aes d aes b16) r
-	ees,16\brack\f^\unis r c32( ees ges f ees[ ges ees c] a ees' c a)
-	ges!(\< c a \liiirii ges \liiriii ees a ges ees) c( ges' ees \liiirii c) \liiriii a'-> gis-> g-> fis->\! \mark \default
+	ees,16\brack\f^\unis r c32( ees ges f ees[ ges ees c] \stemDown a ees' c a) \stemNeutral
+	\beamOffset #'(-0.5 . -0.5) ges!(\< c a \liiirii ges \liiriii ees a ges ees) \beamOffset #'(-0.5 . -0.5) c( ges' ees \liiirii c) \liiriii a'-> gis-> g-> fis->\! \mark \default
 % Bars 126 to 130
 	aes!(\fp ces aes \liiirii ces \liiriii aes ces aes ces  aes ces aes \liiirii ces \liiriii aes ces aes ces)
 	aes( ces aes \liiirii ces \liiriii aes ces g bes  aes ces aes \liiirii ces \liiriii aes ces aes ces)
-	aes( ces aes \liiirii ces \liiriii aes ces g bes_\crescmarkup  aes ces aes \liiirii ces \liiriii aes ces aes ces)
+	aes( ces aes \liiirii ces \liiriii aes ces g bes  aes_\crescmarkup ces aes \liiirii ces \liiriii aes ces aes ces)
 	aes( ces aes \liiirii ces \liiriii aes ces aes ces  aes ces aes \liiirii ces \liiriii aes ces aes ces)
-	des(\< aes des \liiirii ees \liiriii des aes des ees des16)\! r r8
+	\beamOffset #'(0.3 . 0.3) des(\< aes des \liiirii ees \liiriii des aes des ees des16)\! r r8
 % Bars 131 to 135
 	<des f>8\brack\fp^\pizz <f des'> <des f> <bes' des>
 	<f aes>16[ r <aes, des> r <des f> r <ges bes>] r
-	<f aes>[\> r <f, aes> r <aes des> r <des ges>]\! r
+	\beamOffset #'(0.5 . 0.5) <f aes>[\> r <f, aes> r <aes des> r <des ges>]\! r
 	<des f>[ r <f, aes> r <aes des> r <des ges>] r
 	r8 aes32(\pp^\arco des f aes,) des16 r r8
 % Bars 136 to 140
@@ -194,7 +194,7 @@ musicViolaMvtII = \relative c {
 	f r r8 r4
 	R2
 % Bars 146 to 150
-	aes16\p^\pizz ees' aes c ees r r8
+	\dynEO #'(-2 . 1) aes16\p^\pizz ees' aes c ees r r8
 	aes,,16 ees' aes c ees8 r
 	r16 ees, g c r ees, g bes
 	r aes, ees' aes c8_\dimin r
@@ -218,11 +218,11 @@ musicViolaMvtII = \relative c {
 	r16. ees32( c ees aes ees ges16) r r8
 	aes,32(\< ees' aes ees) r aes( c aes) r ges( bes ges) r f( aes f)\!
 % Bars 166 to 170
-	r16. bes,32\mf des( ges bes aes ges16) r <ces, aes'>8(->
+	r16. bes,32-\offset X-offset -1 \mf des( ges bes aes ges16) r <ces, aes'>8(->
 	<bes ges'>) r16 bes des32(_\brackM\crescmarkup ges bes aes ges16) r32 <ces, aes'>( \resetBeam
 	<bes ges'>16) r <ces aes'>8([ <bes ges'> <aes f'>)]
-	<ges ees'>-. ees''-. f16(\f ees c! aes)
-	\divideBeam aes,32(\ff aes') aes( f) f( des) des( aes) aes( f') f( des) aes'( f) des( aes)
+	\beamOffset #'(0.5 . 0.5) <ges ees'>-. ees''-. \dynEO #'(-1.5 . 2) f16(\f ees c! aes)
+	\divideBeam \dynEO #'(-1 . 0) aes,32(\ff aes') aes( f) f( des) des( aes) aes( f') f( des) aes'( f) des( aes)
 % Bars 171 to 175
 	aes( aes') aes( f) f( des) des( aes) aes( f') f( des) aes'( f) des( aes)
 	des( des') des( aes) aes( f) f( des) des( aes') aes( f) f( des) des( aes)
@@ -230,8 +230,8 @@ musicViolaMvtII = \relative c {
 	f'( f') f( des) des( aes) aes( f) f( aes) aes( f) r8
 	f32( f') f( des) des( aes) aes( f) f( aes) aes( f) r8 \clef alto
 % Bars 176 to 180
-	r des,16->(\< ees64 f g aes bes16-.)\! r r c64(\< des ees f\!
-	ges16-.)\fz\noBeam \clef treble ges'32( des) des( bes) bes( ges) ges( des') des( bes) bes( ges) des'( ces)
+	r des,16->(\< ees64 f g aes bes16-.)\! r r \beamOffset #'(1 . 1) c64(-\tweak rotation #'(3 -1 0) \< des ees f\!
+	\dynEO #'(0 . 1) ges16-.)\fz\noBeam \clef treble ges'32( des) des( bes) bes( ges) ges( des') des( bes) bes( ges) des'( ces)
 	bes( ges') ges( des) des( bes) bes( ges) ges( des) des( des') des( bes) bes( ges)
 	ges( ges') ges( des) des( bes) bes( ges) ges( des') des( bes) bes( ges) des'( ces)
 	bes( ges') ges( des) des( bes) bes( ges) ges( des) des( des') des( bes) bes( ges)
@@ -242,22 +242,22 @@ musicViolaMvtII = \relative c {
 	r16. <ces ees>32[-.-> <bes des>16]-.-> r r4
 	R2
 % Bars 186 to 190
-	r16^\pizz cis\pp e gis a fisis gis r
+	r16-\offset X-offset -2 ^\pizz cis\pp e gis a fisis gis r
 	r cis, e gis a fisis gis r
-	r cis,(^\arco e gis fis e dis cis)
+	r cis,(-\offset X-offset -3 ^\arco e gis fis e dis cis)
 	b(_\brack\p e, gis b c! ais b) r
 	r e,( gis b c! ais b c)
 % Bars 191 to 195
 	r e,^\pizz a b cis r d r
 	r e,\< a b cis r d\! r
-	\divideBeam e(_\mfbrackcresc^\arco d32 cis cis16 b32 a) a16( gis32 fis f16 ees!32 des!)
+	\divideBeam e(-\offset X-offset -3.5 _\mfbrackcresc-\offset X-offset -5 ^\arco d32 cis cis16 b32 a) a16( gis32 fis f16 ees!32 des!)
 	cis'16( b32 a a16 gis32 fis) e16( d32 cis) cis16 r
 	des'!16( ces32 bes! bes16 aes!32 ges!) ges16( f!32 ees!) des!16 r
 % Bars 196 to 200
-	des'16(\< ces32 bes bes16 aes32 ges) ges16( f32 ees) des16\! r
-	f'(->\ff ees32 d) d16(-> c32 bes) bes16(-> a32 g) f16(-> ees32 d)
+	des'16(\< ces32 bes \beamOffset #'(-0.5 . -0.5) bes16 aes32 ges) ges16( f32 ees) des16\! r
+	\dynEO #'(-2.5 . 1) f'(->\ff ees32 d) d16(-> c32 bes) bes16(-> a32 g) f16(-> ees32 d)
 	f'16(-> e32 d) d16(-> c32 b) b16(-> a32 g) f16(-> e32 d)
-	c->\ff g''-> fis-> f-> e( ees) d( des) r16 c32( b) r bes-> a-> aes->
+	\stemDown \dynEO #'(-3 . 2) c->\ff g''-> fis-> f-> \stemNeutral e( ees) d( des) r16 c32( b) r bes-> a-> aes->
 	g( fis) f( e) r16 ees32( d) r16 des'!32-> c-> b16 r \resetBeam
 % Bars 201 to 205
 	ees,!32(_\ppsubito f ges! \liiiri f \liriii ges f ges f  ges f ges \liiiri f \liriii ges f aes ees)
@@ -276,7 +276,7 @@ musicViolaMvtII = \relative c {
 	a( bes c a) fis[( g a fis)] ees!( f ges! ees) r8
 	c'32(\p\< a c \liiiri a \liriii c a c a  c a c \liiiri a \liriii c a fis a)\! \section \mark \default
 	\key cis \minor c(\< a c \liiiri a \liriii c a c a  c a c \liiiri a\! \liriii c a fis a)
-	fis(\f a fis \liiiri a \liriii fis a fis a)  fis( a e \liiiri gis \liriii dis fis cis e)
+	fis(-\offset X-offset -1 \f a fis \liiiri a \liriii fis a fis a)  fis( a e \liiiri gis \liriii dis fis cis e)
 % Bars 216 to 220
 	\tuplet 6/4 4 {dis16(\> gis b gis b gis) dis( a'\! b\p a b a)
 	r e(\> gis e gis e) cis( e a e a e)\!
@@ -285,7 +285,7 @@ musicViolaMvtII = \relative c {
 	r16 <e g>32(\pp <g! e'>) q16( <e g>) r q32( <g e'>) q16( <e g>) 
 % Bars 221 to 225
 	r q32( <g! e'>) q16( <e g>) r q32( <g e'>) q16( <e g>) 
-	r q32(\< <g! e'>) q16( <e g>) r <d fis>32( <fis d'>) q16( <d fis>)\!
+	r q32(\< <g! e'>) q16( <e g>) r \beamOffset #'(-0.5 . -0.5) <d fis>32( <fis d'>) q16( <d fis>)\!
 	r <cis fis>32(\> <a' cis>) q16( <cis, fis>) <e gis!>8-.\! <dis! fis>-.
 	\repeat tremolo 8 {e32(\pp gis)}
 	\repeat tremolo 8 {e32( gis)} 
@@ -293,7 +293,7 @@ musicViolaMvtII = \relative c {
 	\repeat tremolo 8 {e( <a cis>)}
 	\repeat tremolo 8 {e( <gis b>)} \section
 	\time 2/8 <e a>4(\fp \section
-	\time 4/8 <d a'>8)\> <a' e'>^\pizz <a d> <a e'>\!
+	\time 4/8 \beamOffset #'(-0.5 . -0.5) <d a'>8)\> <a' e'>^\pizz <a d> <a e'>\!
 	<a d>\noBeam fis'[(^\brackM\arco\< gis! a])\!
 % Bars 231 to 235
 	R2*4
@@ -325,16 +325,16 @@ musicViolaMvtII = \relative c {
 	e fis!
 	d cis!
 % Bars 251 to 255
-	d\< a!)\!
-	<< {gis!2} \\ {gis4(_\brackM\moltocresc eis)} >>
+	\hairpinShorten #'(0 . -3) d\< a!)\!
+	<< {gis!2} \\ {gis4(-\offset X-offset -2 _\brackM\moltocresc eis)} >>
 	<fis a>8\f << e4.->\fz\> {s8 s s\!}>>
 	r4 <dis fis>\pp
 	<cis e>8 r r4
 % Bars 256 to 260
-	r8 <e gis>[(\p\< <fis a>\> <dis fis>])\!
+	r8 \hairpinShorten #'(0 . 1.5) <e gis>[(\p\< <fis a> \hairpinShorten #'(-1.5 . 1) <dis fis>])\>
 	<cis e>\p r r4
 	r8 gis'[(\pp e]~ e16)_\dimin fis\fermata
-	e4 <cis fis>->\fz\>~
+	e4 <cis fis>->-\offset X-offset -1.5 \fz\>~
 	q\! <cis_~ fis>\pp^(
 % Bars 261 to 265
 	<cis e>) r
@@ -343,7 +343,7 @@ musicViolaMvtII = \relative c {
 	\key des \major \divideBeam des'32(\pp aes f aes des ees f ees des aes f aes) des16 r
 	des32( aes f aes des ees f ees) des( aes f aes) des16 r
 % Bars 266 to 270
-	des32( aes f aes) des( f aes ges) f( des aes f aes des f ees)
+	des32( aes f aes) des( f aes ges) \shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . -1)) Slur f( des aes f aes des f ees)
 	des( aes f aes des aes f' ees des aes f aes des f aes ges)
 	f16 r f32( des f ges) f16\noBeam r f32( des f aes) 
 	f16 r f32( des f ges) f16\noBeam r f32( des f aes)
@@ -382,9 +382,9 @@ musicViolaDivisiMvtII = \relative c {
 	r16 c32[( ees aes16-.]) aes32[( des c16-.]) r r8
 	r16 c,32[( ees aes16-.]) aes32[( des c16-.]) r r8
 	R2
-	r4 r8 c,32(\pp ees ges c,)
+	r4 r8 c,32(-\offset X-offset -2.5 \pp ees ges c,)
 % Bars 121 to 123
-	ees8 r r c32( ees ges ees)
+	ees8_\pococrescendo r r c32( ees ges ees)
 	e8 r r c32( e g c,)
 	f8 r r d32( f aes d,)
 % Bars 124 to 145
@@ -395,9 +395,9 @@ musicViolaDivisiMvtII = \relative c {
 	aes( c,) ees-. aes( c,) ees-. aes( c,) ees-. aes( c,) f-. 
 	g( c,)\< ees-. g( c,) ees-. g( c,) ees-. g( ees) des-.\!
 	aes'(\> c,) ees-. aes( c,) ees-. aes( c,) ees-.\! aes( des,) f-. 
-	aes(\< c,) ees-. aes( c,) ees-. aes( c,) ees ges!( ees)\! ces'-.
+	\hairpinEO #'(0 . 1.5) aes(\< c,) ees-. aes( c,) ees-. aes( c,) ees ges!( ees)\! ces'-.
 % Bars 151 to 155
-	bes(\f des,) ges-. bes( des,) ges-. aes( des,) f-. aes( des,) f-.
+	bes(-\offset X-offset -1 \f des,) ges-. bes( des,) ges-. aes( des,) f-. aes( des,) f-.
 	aes( c,) ees-. aes( c,) ees-. g( c,) ees-. g( ees) des-.
-	aes'( c,) ees-. aes( c,) ees-. << {aes8*3/2} \\ {aes16^( c,) ees^.} >> ees( aes,) ces-.}
+	aes'( c,) ees-. aes( c,) ees-. << {\stemOffset #2 aes8*3/2} \\ {aes16^( c,) ees^.} >> ees( aes,) ces-.}
 }

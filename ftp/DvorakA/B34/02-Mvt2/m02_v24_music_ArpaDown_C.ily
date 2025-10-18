@@ -78,7 +78,7 @@ musicArpaDownMvtII = \relative c {
 	s2
 	s
 	R
-	\staffUp s8\brack\p s\< s8 s16 s32 s\! \staffDown
+	\staffUp \dynEO #'(-1.3 . 0) s8\brack\p s-\tweak extra-offset #'(0 . 1) \< s8 s16 s32 s\! \staffDown
 % Bars 111 to 115
 	s2 \clef bass
 	s
@@ -110,7 +110,7 @@ musicArpaDownMvtII = \relative c {
 	<des, aes' des>[\arpeggio <des' aes' des>\arpeggio <f aes des>]\arpeggio r
 	<des, aes' des>[\arpeggio <des' aes'>\arpeggio <des aes'>\arpeggio] r
 % Bars 136 to 140
-	<des, aes' des>[\arpeggio <des' aes'>\arpeggio <des aes'>\arpeggio] r
+	\beamOffset #'(-0.5 . -0.5) <des, aes' des>[\arpeggio <des' aes'>\arpeggio <des aes'>\arpeggio] r
 	R2*9
 % Bars 141 to 145
 	

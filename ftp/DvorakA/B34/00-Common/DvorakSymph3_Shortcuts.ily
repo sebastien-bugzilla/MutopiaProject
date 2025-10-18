@@ -297,6 +297,19 @@ timpinesb = \markup {
 	}
 }
 mutaesinebinh = \markup {"muta Es in E, B in H"}
+
+clinbes = \markup {
+	\center-column { \lower #1 "Cl" \concat {"in B" \text-flat}}
+}
+clina = \markup {
+	\center-column { \lower #1 "Cl" "in A"}
+}
+trbeinf = \markup {
+	\center-column { \lower #1 "Trbe" "in F"}
+}
+trbeine = \markup {
+	\center-column { \lower #1 "Trbe" "in E"}
+}
 %--------------------
 % functions
 %--------------------
@@ -499,15 +512,24 @@ markEO = #(define-music-function
 	#}
 )
 
-%hairpinEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.extra-offset = #offset
-%		\once \override Hairpin.whiteout = #0.85
-%		\once \override Hairpin.whiteout-style = #'outline
-%	#}
-%)
+hairpinEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Hairpin.layer = #3
+		\once \override Hairpin.extra-offset = #offset
+		\once \override Hairpin.whiteout = #0.75
+		\once \override Hairpin.whiteout-style = #'outline
+	#}
+)
+
+markXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
 
 
 
@@ -649,14 +671,6 @@ markEO = #(define-music-function
 %	#}
 %)
 
-
-%markXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
-%	#}
-%)
 
 %markYoffset = #(define-music-function
 %	(offset)

@@ -34,7 +34,7 @@ musicCornoIIMvtII = \relative c {
 	r4 b\fp
 % Bars 21 to 25
 	r b\fp
-	r gis\fp\<~
+	r gis-\tweak X-offset 0 \fp\<~
 	gis8\! r r4
 	R2*2
 	
@@ -144,22 +144,22 @@ musicCornoIIMvtII = \relative c {
 	
 	<< f2\brack\p\> {s8 s s s\!}>>
 	g8\p r r4
-	g4->\fp g->
+	g4->-\tweak X-offset 0.3 \fp g->
 	ees4-> ees8-. ees16.-. bes32-.
 % Bars 116 to 120
 	bes4-> bes->
-	ees4.\fp r8
+	ees4.-\offset X-offset 0.8 \fp r8
 	ees4.-> r8
 	<< ees4.\< {s8 s s\!}>> r8
 	<< g4.\fp\> {s8 s\! s}>> r8
 % Bars 121 to 125
-	<< g4.\fp\> {s8 s\! s}>> r8
-	<< g4.\fp\> {s8 s\! s}>> r8
-	<< g4.\fp\> {s8 s\! s}>> r8
-	bes2\fp~
+	<< g4.-\offset X-offset 0.8 \fp\> {s8 s\! s}>> r8
+	<< g4.-\offset X-offset 0.8 \fp\> {s8 s\! s}>> r8
+	<< g4.-\offset X-offset 0.8 \fp\> {s8 s\! s}>> r8
+	bes2-\offset X-offset 0.8 \fp~
 	bes8 r r4 \mark \default
 % Bars 126 to 130
-	c8\fp c16.( des32) c8 r
+	\beamOffset #'(0.7 . 0.7) c8-\offset X-offset -1.5 \fp c16.( des32) c8 r
 	c8 c16.( b32) c8 r
 	c8[-. c-._\crescmarkup c-.] r
 	ges8\< ges16.( ees32) ges8 ges16.( ees32)\!
@@ -194,7 +194,7 @@ musicCornoIIMvtII = \relative c {
 	
 	
 	R2
-	r4 r8 \bar "!" \tuplet 3/2 8 {aes16\fp aes aes} \mark \default
+	r4 r8 \bar "!" \tuplet 3/2 8 {aes16-\offset X-offset -1.5 \fp aes aes} \mark \default
 	ees4. r8
 % Bars 161 to 165
 	ees4. r8
@@ -207,7 +207,7 @@ musicCornoIIMvtII = \relative c {
 	f16) f-. f-. f-. f r ges8(->
 	f16)\< r ges8->[( f16)] r ges8(->
 	f4)-> g!->\!
-	aes4\ff~ aes8.. bes32
+	aes4-\tweak X-offset 0.3 \ff~ aes8.. bes32
 % Bars 171 to 175
 	aes2~
 	aes4~ aes8.. bes32
@@ -314,7 +314,7 @@ musicCornoIIMvtII = \relative c {
 	
 	
 % Bars 271 to 273
-	<< a2\p\> {s8 s s s\!}>>
+	<< a2\p\> {s4 s8. s16\!}>>
 	a4\pp a
 	a2\fermata \fine
 }

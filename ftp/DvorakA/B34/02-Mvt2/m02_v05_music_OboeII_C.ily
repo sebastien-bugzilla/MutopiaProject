@@ -44,7 +44,7 @@ musicOboeIIMvtII = \relative c {
 	\time 4/8 R2
 % Bars 36 to 40
 	r8 fis([\p\< gis a])\!
-	a4(\fp\> gis\!)
+	\hairpinShorten #'(-0.5 . -1) a4(\fp\> gis\!)
 	<< ais2\p\> {s8 s s s\!}>>
 	ais4(\pp b8) r
 	R2*6
@@ -56,7 +56,7 @@ musicOboeIIMvtII = \relative c {
 	\mark \default
 % Bars 46 to 50
 	gis4~\mf\> gis8\! r
-	gis4~\mf\> gis8\! r
+	\hairpinShorten #'(-0.5 . -1) gis4~\mf\> gis8\! r
 	gis4(\< a8)\! r
 	R2*5
 	
@@ -140,18 +140,18 @@ musicOboeIIMvtII = \relative c {
 	
 % Bars 116 to 120
 	
-	aes4\fp~ aes8 r
+	aes4-\offset X-offset 0.8 \fp~ aes8 r
 	aes4\fp~ aes8 r
 	c8\trill\< c16.-. des32-. ees8\trill ees16.-. f32-.\!
-	<< a,4.\fp\> {s8 s\! s}>> r8
+	<< a,4.-\offset X-offset 0.8 \fp\> {s8 s\! s}>> r8
 % Bars 121 to 125
-	<< a4.\fp\> {s8 s\! s}>> r8
-	<< bes4.\fp\> {s8 s\! s}>> r8
-	<< b4.\fp\> {s8 s\! s}>> r8
-	a2\fp~
+	<< a4.-\offset X-offset 0.8 \fp\> {s8 s\! s}>> r8
+	<< bes4.-\offset X-offset 0.8 \fp\> {s8 s\! s}>> r8
+	<< b4.-\offset X-offset 0.8 \fp\> {s8 s\! s}>> r8
+	a2-\tweak X-offset #0.3 \fp~
 	a8[\< a-> a-> a->]\! \mark \default
 % Bars 126 to 130
-	aes!8\fp aes16.( ces32) aes8 r
+	aes!8-\offset X-offset -2 \fp aes16.( ces32) aes8 r
 	aes8 aes16.( g32) aes8 r
 	des8 des16.( bes32) des8 r
 	des\< des16.( ees32) des8 des16.( ees32)\!
@@ -203,7 +203,7 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	
-	aes4\ff~ aes8.. aes32
+	aes4-\tweak X-offset 0.5 \ff~ aes8.. aes32
 % Bars 171 to 175
 	aes2~
 	aes4~ aes8.. aes32
@@ -226,7 +226,7 @@ musicOboeIIMvtII = \relative c {
 	\mmrPos #-6 R2
 	\mmrPos #-6 R
 	R2
-	gis4.(->\brack\mp a8)
+	\dynEO #'(-3.3 . 2) gis4.(->\brack\mp a8)
 	gis4.(-> a8)
 % Bars 191 to 195
 	e4.( f8->)\<
@@ -286,7 +286,7 @@ musicOboeIIMvtII = \relative c {
 	R2*3
 	
 	
-	r4 r32 gis\brack\p\<(-. dis'-.\! b-.\> gis16)\!\noBeam r
+	r4 r32 gis-\tweak X-offset -2 \brack\p\<(-. dis'-.\! b-.\> gis16)\!\noBeam r
 	R2*3
 % Bars 241 to 245
 	

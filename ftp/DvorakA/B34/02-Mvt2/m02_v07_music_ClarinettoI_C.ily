@@ -11,19 +11,19 @@ musicClarinettoIMvtII = \relative c {
 % Bars 1 to 5
 	\partCombineAutomatic e''4(\fp fis8) r
 	e4(\brack\fp fis8) r
-	\partCombineApart e4(\< a16.\> g32 f16.\! e32)
+	\partCombineApart e4(\< \beamOffset #'(-0.5 . -0.5) a16.\> g32 f16.\! e32)
 	dis8\p r r e(->
 	dis) r r e(->
 % Bars 6 to 10
 	dis) r r dis(\>
-	d!)\! r r ees(\brack\pp
+	d!)\! r r \dynEO #'(-2 . -1.5) ees(\brack\pp
 	d) r r ees \partCombineAutomatic
 	r d->\< r d->
 	r d-> r d->\!
 % Bars 11 to 15
 	\partCombineApart d4 c16( a') e-. e-.
 	b4( b'~
-	b8.\f\> a32 g) g16( fis dis16. e32)\!
+	\beamOffset #'(-1 . -1) b8._\f_\> a32 g) \beamOffset #'(-1 . -1) g16( fis dis16. e32)\!
 	e8\pp r r4 \partCombineAutomatic
 	R2*4
 % Bars 16 to 20
@@ -47,7 +47,7 @@ musicClarinettoIMvtII = \relative c {
 	\time 2/8 R4
 	\time 4/8 R2
 % Bars 36 to 40
-	\partCombineApart r8 a\p\<[( b c)]\!
+	\partCombineApart r8 a_\p_\<[( b c)]\!
 	c4( b~
 	b4. ais8) \partCombineAutomatic
 	a!4\pp( a8) r
@@ -56,11 +56,11 @@ musicClarinettoIMvtII = \relative c {
 	
 	
 	
-	\partCombineApart r8 a\p\<(~^\solo \tuplet 6/4 4 {a16 gis a c b a)\!}
-	a8 a(~\f\< \tuplet 3/2 8 {a16 gis a\!} c32[\> b r b])\! \partCombineAutomatic \mark \default
+	\partCombineApart r8 a-\tweak extra-offset #'(0 . 0.5) _\p_\<(~-\offset X-offset -4 ^\solo \tuplet 6/4 4 {a16 gis a c b a)\!}
+	a8 a(~_\f_\< \tuplet 3/2 8 {a16 gis a\!} c32[_\> b r b])\! \partCombineAutomatic \mark \default
 % Bars 46 to 50
 	b4(\mf\> b8)\! r
-	b4(\mf\> b8)\! r
+	\hairpinShorten #'(-0.5 . -1) b4(\mf\> b8)\! r
 	\partCombineChords b4->\<( c8)\! \partCombineAutomatic r
 	R2*3
 	
@@ -79,13 +79,13 @@ musicClarinettoIMvtII = \relative c {
 % Bars 61 to 65
 	\partCombineChords bes8.(\brack\mf\< g32 a bes16.\! a32 g16. f32) 
 	\partCombineApart e4(~ \tuplet 6/4 4 {e16 dis e fis! g fis)} 
-	\once \partCombineChords e4.\p \partCombineAutomatic r8
+	\once \partCombineChords \dynEO #'(0.5 . 1) e4.\p \partCombineAutomatic r8
 	R2*3
 	
 % Bars 66 to 70
 	
-	\partCombineApart a4->\fz\>( g8 fis)\! % bar 67 - 68 are missing in part score
-	e4.\p r8 \mark \default
+	\partCombineApart a4->_\fz_\>( g8 fis)\! % bar 67 - 68 are missing in part score
+	e4._\p r8 \mark \default
 	\partCombineChords r16 b-.[\p r b-. r b-. r b-.]
 	r b-.[ r b-. r b-. r b-.]
 % Bars 71 to 75
@@ -111,7 +111,7 @@ musicClarinettoIMvtII = \relative c {
 	fis4\> e)\!
 	d8(\p\< dis~ dis8.\> e16)\!
 	e8 r r4 \transposition bes
-	R2*4
+	R2*4 \changeStaffName #clinbes
 % Bars 91 to 95
 	
 	
@@ -133,7 +133,7 @@ musicClarinettoIMvtII = \relative c {
 % Bars 106 to 110
 	ees4\fp->~ ees8 aes,32( c ees aes)
 	c4\fp~ c8 c16.-. g32-.
-	aes4\fp\> aes8-.\! r
+	\dynEO #'(-0.5 . 0) aes4\fp\> aes8-.\! r
 	aes4\< aes8. g16\!
 	\partCombineApart f4(-> ees8 f)
 % Bars 111 to 115
@@ -155,8 +155,8 @@ musicClarinettoIMvtII = \relative c {
 	gis2\fp~
 	gis8[\< gis-> gis-> gis->]\! \mark \default
 % Bars 126 to 130
-	\partCombineApart f!4.(\fp e8)
-	f([\< e f fis]\!
+	\partCombineApart f!4.(-\offset X-offset -2 \fp e8)
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur f([\< e f fis]\!
 	g) r r4
 	\partCombineChords ees8\< ees16.( f32) ees8 ees16.( f32)\!
 	g16.( aes32 g16. aes32) g16 r \tuplet 3/2 8 { aes16\f aes aes
@@ -164,8 +164,8 @@ musicClarinettoIMvtII = \relative c {
 	\divideBeam g\fp\> g g  g g g  g g g  aes aes aes\!
 	g\pp g g  g g g  g g g  f f f} \resetBeam
 	\partCombineApart ees8 r r4
-	r4 r8 \acciaccatura bes'8^\solo aes32(\mf\< g aes c)\!
-	<< g4. {s4 s8_\dimmarkup}>> \tuplet 3/2 8 {f16( c d)}
+	r4 r8 \acciaccatura bes'8-\offset X-offset -6 ^\solo \beamOffset #'(-0.5 . -0.5) \dynEO #'(-2 . -2) aes32(\mf\< g aes c)\!
+	<< g4. {s4 s8^\dimmarkup}>> \tuplet 3/2 8 {f16( c d)}
 % Bars 136 to 140
 	ees4. \tuplet 3/2 8 {f16( c d)}
 	ees8([ d ees f)]
@@ -194,7 +194,7 @@ musicClarinettoIMvtII = \relative c {
 	ees4.\> ees8\!
 	aes4\pp \partCombineApart \stemDown \omitBeam aes8. aes16
 	\stemUp ces4(~\! ces16_\> bes aes ges)\!
-	ces4.\p \bar "!" \partCombineChords \tuplet 3/2 8 {ees,!16\fp ees ees \mark \default
+	ces4.\p \bar "!" \partCombineChords \tuplet 3/2 8 {ees,!16-\tweak X-offset -1.5 \fp ees ees \mark \default
 	\divideBeam f f f  f f f  f f f  e e e
 % Bars 161 to 165
 	f f f  f f f  f f f  e e e} \resetBeam
@@ -203,9 +203,9 @@ musicClarinettoIMvtII = \relative c {
 	f f f  f f f  f f f  f f f} \resetBeam
 	f8[\< d( c bes)]\!
 % Bars 166 to 170
-	\tuplet 3/2 8 {\divideBeam c16\mf ees ees  ees ees ees  ees ees ees  fes fes fes
+	\tuplet 3/2 8 {\divideBeam \dynEO #'(-1.5 . 1.5) c16\mf ees ees  ees ees ees  ees ees ees  fes fes fes
 	ees ees ees  ees ees ees  ees_\brackM\crescmarkup ees ees  fes fes fes
-	ees\< ees ees  fes fes fes  ees ees ees  e e e
+	ees-\alterBroken extra-offset #'(()(0 . 1.5)) \< ees ees  fes fes fes  ees ees ees  e e e
 	f! f f  f f f  d d d  d d d\!} \resetBeam
 	g4\ff~ g8.. f32
 % Bars 171 to 175
@@ -216,7 +216,7 @@ musicClarinettoIMvtII = \relative c {
 	g8.. aes32-. g4~
 % Bars 176 to 180
 	g8 r r4
-	aes4->\fz~ aes8.. g32
+	\dynEO #'(0.8 . 1.5) aes4->\fz~ aes8.. g32
 	aes2
 	aes4->~ aes8.. g32
 	aes2~
@@ -225,7 +225,7 @@ musicClarinettoIMvtII = \relative c {
 	\partCombineChords aes16-. r r8 \partCombineApart aes16-.[ \once \partCombineAutomatic r aes16.-> ees32-.]
 	\partCombineChords aes16-. r r16. \partCombineApart ees32[ aes16] \partCombineChords r r16. \once \partCombineApart ees32
 	aes16 r r8 r4
-	\partCombineApart ees8\p[^\solo r16 f]( ees8)[ r16 f]
+	\partCombineApart ees8\p[-\offset X-offset -5 ^\solo r16 f]( ees8)[ r16 f]
 % Bars 186 to 190
 	\partCombineChords ges4.( f16)-> r
 	ges4.( f16)-> r
@@ -257,13 +257,13 @@ musicClarinettoIMvtII = \relative c {
 	fis4.-> fis8-.
 	g4.-\< g8-.\!
 % Bars 211 to 215
-	\marcatoUpperSlur aes!2\ff-^(
+	\marcatoUpperSlur \dynEO #'(0 . 2) aes!2\ff-^(
 	d4.\< e8\!
 	f)\f \partCombineAutomatic r r4^\mutaina \transposition a \section \mark \default
-	\key e \minor R2*2
+	\key e \minor \changeStaffName #clina R2*2
 	
 % Bars 216 to 220
-	\partCombineApart r4 r8 fis,(\p
+	\partCombineApart r4 r8 fis,(-\offset X-offset -1 \p
 	g2)
 	fis4(\> e)\!
 	<< {d8( dis4~ dis16. e32)}{s8..\< s32\! s8..\> s32\!}>>
@@ -283,7 +283,7 @@ musicClarinettoIMvtII = \relative c {
 % Bars 231 to 235
 	\partCombineApart \once \stemDown \stemOffset #3 fis2
 	<< e\> {s8 s s s\!}>>
-	e4(\pp d)
+	e4(-\offset X-offset -1.5 \pp d)
 	a'8[(\> f e d)]\!
 	c\pp r r4 \partCombineAutomatic
 % Bars 236 to 240
@@ -322,7 +322,7 @@ musicClarinettoIMvtII = \relative c {
 	b8-. b16.-. cis32-. b8-. r
 	<< { b4 cis8. gis'16} {s8\< s\! s8.\> s16\!}>>
 % Bars 271 to 273
-	<< gis2\p\> {s8 s s s\!}>>
+	<< gis2\p\> {s4 s8. s16\!}>>
 	gis4\pp gis
 	gis2\fermata \fine
 }

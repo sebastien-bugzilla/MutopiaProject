@@ -17,11 +17,11 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 6 to 10
 	a8_\dimmarkup r r4
 	aes8 r r4
-	f8\brack\pp r r4
+	f8-\offset X-offset 1 \brack\pp r r4
 	r8 f->\< r g->
 	r ges-> r f->\!
 % Bars 11 to 15
-	f4(\mf e)\>
+	f4(\mf << \hairpinShorten #'(1.5 . 0) e)\> {s16 s s s\!}>>
 	e8\p r r4
 	R2*2
 	
@@ -48,7 +48,7 @@ musicClarinettoIIMvtII = \relative c {
 	\time 4/8 R2
 % Bars 36 to 40
 	R
-	<< fis'!2\fp\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) fis'!2\fp\> {s8 s s s\!}>>
 	<< e2\p\> {s8 s s s\!}>>
 	e4\pp( d8) r
 	R2*4
@@ -107,14 +107,14 @@ musicClarinettoIIMvtII = \relative c {
 	c4(\< b)\!
 	d(\> c)\!
 % Bars 86 to 90
-	d8\p r r4
+	d8-\offset X-offset -0.5 \p r r4
 	R2*3
 	
 	
 	r8 g,8(~\p\< \tuplet 6/4 4 {g16\! fis g\> a g fis\!}
 % Bars 91 to 95
 	e8) r r4
-	r8 g\pp(~ \tuplet 6/4 4 {g16 fis g a g fis}
+	r8 g-\offset X-offset -2 \pp(~ \tuplet 6/4 4 {g16 fis g a g fis}
 	e8) r r4^\brackM\mutainb \transposition bes
 	R2*3
 	
@@ -152,10 +152,10 @@ musicClarinettoIIMvtII = \relative c {
 	<< gis4.\fp\> {s8 s\! s}>> r8
 	<< a4.\fp\> {s8 s\! s}>> r8
 	<< cis4.\fp\> {s8 s\! s}>> r8
-	f!2\fp~
+	\dynEO #'(0 . 2) f!2\fp~
 	f8[\< f-> f-> f->]\! \mark \default
 % Bars 126 to 130
-	bes,8 bes16.( des32) bes8 r
+	\beamOffset #'(1.3 . 1.3) bes,8 bes16.( des32) bes8 r
 	bes8 bes16.( a32) bes8 r
 	ees8 ees16.(_\crescmarkup c32) ees8 r
 	bes8\< bes16.( des32) bes8 bes16.( des32)\!
@@ -163,13 +163,13 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 131 to 135
 	\divideBeam bes\fp\> bes bes  bes bes bes  bes bes bes  c c c\!
 	bes\pp bes bes  bes bes bes  bes bes bes  c c c
-	bes bes bes  bes bes bes  bes bes bes  c c c
-	bes bes bes  bes bes bes  bes bes bes  aes aes aes
-	g g g  g g g  g g g  f f f
+	bes bes bes  bes[ bes bes]  bes bes bes  c[ c c]
+	bes bes bes  bes[ bes bes]  bes bes bes  aes[ aes aes]
+	g g g  g[ g g]  g g g  f[ f f]
 % Bars 136 to 140
-	g g g  g g g  g g g  f f f
-	g g g  g g g  g g g  f f f
-	f f f  f f f  f f f  ees ees ees
+	g g g  g[ g g]  g g g  f[ f f]
+	g g g  g[ g g]  g g g  f[ f f]
+	f f f  f[ f f]  f f f  ees[ ees ees]
 	ees\pp ees ees  ees ees ees  ees ees ees  c c c
 	bes bes bes  bes bes bes  bes bes bes  c c c
 % Bars 141 to 145
@@ -186,7 +186,7 @@ musicClarinettoIIMvtII = \relative c {
 	bes4.(->\< aes!8)\!
 % Bars 151 to 155
 	aes4(-> g)
-	bes4(\> a8 ees')\!
+	\hairpinShorten #'(2 . 0) bes4(\> a8 ees')\!
 	d4.\p \bar "!" bes8
 	bes4-.(\< bes-.)\!
 	des(\< bes)\!
@@ -194,7 +194,7 @@ musicClarinettoIIMvtII = \relative c {
 	c4.\> ces8\!
 	ces4\pp ces8.\< ces16\!
 	ces8 r r4
-	r4 r8 \bar "!" \tuplet 3/2 8 {aes!16\fp aes aes \mark \default
+	r4 r8 \bar "!" \tuplet 3/2 8 {aes!16-\tweak X-offset -1.5 \fp aes aes \mark \default
 	\divideBeam aes aes aes  aes aes aes  aes aes aes  g g g
 % Bars 161 to 165
 	aes aes aes  aes aes aes  aes aes aes  g g g} \resetBeam
@@ -205,7 +205,7 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 166 to 170
 	\tuplet 3/2 8 {\divideBeam aes16\mf aes aes  aes aes aes  aes aes aes  g g g
 	aes aes aes  aes aes aes  aes aes aes  g g g
-	aes\< aes aes  g g g  aes aes aes  g g g
+	aes-\alterBroken extra-offset #'(()(0 . 1.5)) \< aes aes  g g g  aes aes aes  g g g
 	aes c c  c c c  aes aes aes  aes aes aes\!} \resetBeam
 	ees'4\ff~ ees8.. d32
 % Bars 171 to 175
@@ -277,7 +277,7 @@ musicClarinettoIIMvtII = \relative c {
 	\time 4/8 R2*2
 	
 % Bars 231 to 235
-	dis,2\fp
+	dis,2-\offset X-offset 0.8 \fp
 	fis8 r r4
 	R2*3
 	
@@ -318,7 +318,7 @@ musicClarinettoIIMvtII = \relative c {
 	gis8-. gis16.-. a32-. gis8-. r
 	<< { gis4 gis8. b16} {s8\< s\! s8.\> s16\!}>>
 % Bars 271 to 273
-	<< b2\p\> {s8 s s s\!}>>
+	<< b2\p\> {s4 s8. s16\!}>>
 	b4\pp b
 	b2\fermata \fine
 }

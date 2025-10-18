@@ -13,13 +13,13 @@ musicCornoIngleseMvtII = \relative c {
 	gis4(\fp fis8) r
 	gis4( cis,8) r
 	\tuplet 6/4 4 {r16 cis'(\p\< dis e\> bis cis)\!} cis4
-	\tuplet 6/4 4 {r16 cis(\< dis e\! bis\> cis)} cis4\!
+	\tuplet 6/4 4 {r16 cis(\< dis e bis\> cis)} cis4\!
 % Bars 6 to 10
 	\tuplet 6/4 4 {r16 cis(_\dimmarkup dis e dis cis)} c4
-	\tuplet 6/4 4 {r16 c( d ees b c)} c4\pp
+	\tuplet 6/4 4 {r16 c( d ees b c)} c4-\offset X-offset 1 \pp
 	\tuplet 6/4 4 {r16 c( d ees b c)} c4
 	c4->\< b->
-	ais!-> a->\!
+	ais!-> << a-> {s8 s\!}>>
 % Bars 11 to 15
 	a4(~\mf a16 gis_\dimmarkup fis e)
 	dis8.(\p\< cisis32 dis) fis16( e) e( dis)\!
@@ -33,8 +33,8 @@ musicCornoIngleseMvtII = \relative c {
 % Bars 26 to 30
 	
 	
-	eis4(\f fis)\<
-	cis\brack\fp\>( dis\p
+	eis4(\f << fis)\< {s16 s s s32 s\!}>>
+	cis4\brack\fp\>( dis-\tweak extra-offset #'(0 . 0.6) \p
 	gis8) r r4
 % Bars 31 to 35
 	R2*3
@@ -58,7 +58,7 @@ musicCornoIngleseMvtII = \relative c {
 	
 % Bars 61 to 65
 	eis4(\mf fis)
-	cis(\> dis\!)
+	cis(-\tweak rotation #'(4 -1 0) \> dis\!)
 	gis4.\p r8 
 	R2*5
 	
@@ -108,7 +108,7 @@ musicCornoIngleseMvtII = \relative c {
 	
 	<< bes''4.\fp\> {s8 s\! s}>> r
 % Bars 121 to 125
-	<< bes4.\fp\>^\pococrescendo {s8 s\! s}>> r
+	<< bes4.\fp\>-\offset X-offset 3 ^\pococrescendo {s8 s\! s}>> r
 	<< b4.\fp\> {s8 s\! s}>> r
 	<< c4.\fp\> {s8 s\! s}>> r
 	g,2\fp~
@@ -129,7 +129,7 @@ musicCornoIngleseMvtII = \relative c {
 	ees4.->(\< ges8)\!
 % Bars 151 to 155
 	des4-> aes'(
-	ees)->\> g!8( bes)\!
+	\hairpinShorten #'(2 . 0) ees)->\> g!8( bes)\!
 	ees,4.\pp \bar "!" r8
 	R2*5
 	
@@ -159,7 +159,7 @@ musicCornoIngleseMvtII = \relative c {
 	aes->~
 % Bars 176 to 180
 	aes8 r r4
-	des4->\fz~ des8.. c32
+	\dynEO #'(0.8 . 1.5) des4->\fz~ des8.. c32
 	des2
 	des4->~ des8.. c32
 	des2~
@@ -185,9 +185,9 @@ musicCornoIngleseMvtII = \relative c {
 	g->
 	<< g\< {s8 s s s\!}>>
 % Bars 211 to 215
-	g2-^\ff(~
+	\marcatoUpperSlur g2^^\ff(~
 	g4.\< a8\!
-	bes)\f r r4 \section \mark \default
+	\dynEO #'(-2 . 0) bes)\f r r4 \section \mark \default
 	\key gis \minor R2*14
 % Bars 216 to 220
 	
@@ -235,7 +235,7 @@ musicCornoIngleseMvtII = \relative c {
 	
 	
 	
-	<< {aes4\pp f8. ees16}{s8\< s\! s8.\> s16\!}>>
+	<< {aes4\pp f8. ees16}{\hairpinShorten #'(-0.5 . -1) s8\< s\! s8.\> s16\!}>>
 % Bars 271 to 273
 	<< aes2\p\> {s4 s8. s16\!}>>
 	aes4\pp aes

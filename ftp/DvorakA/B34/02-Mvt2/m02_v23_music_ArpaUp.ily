@@ -146,7 +146,7 @@ musicArpaUpMvtII = \relative c {
 	\staffDown bes,,,32(\brack\mf ges' bes \staffUp des ges bes des bes) s8 <ces eeses aes>16-> r
 	\staffDown bes,,32( ges' bes \staffUp des ges bes des bes) s8_\brackM\crescmarkup <ces eeses f aes>16-> r
 	\staffDown \tuplet 5/4 8 {bes,32([ ges'] \staffUp bes[ des ges]) \staffDown ces,,[( f] \staffUp ces'[ eeses aes]) \staffDown bes,,([ ges'] \staffUp bes[ des ges]) \staffDown aes,,[( d] \staffUp aes'[ ces f])}
-	\staffDown \beamGap #10 \tuplet 3/2 16 {ges,,,32([ bes \liiirii ees \staffUp \liiriii ges bes ees)] \staffDown \beamGap #20 ges( bes \liiirii ees \staffUp \liiriii ges bes ees)} <aes, c! ees aes>8\f r
+	\staffDown \beamGap #10 \tuplet 3/2 16 {ges,,,32([ bes \liiirii ees \staffUp \liiriii ges bes ees)] \staffDown \beamGap #20 ges( bes \liiirii ees \staffUp \liiriii ges bes ees)} <aes, c! ees aes>8\f\arpeggio r
 	\staffDown \tuplet 3/2 16 {
 		\beamGap #10 des,,,32([\ff aes' \liiirii des \staffUp \liiriii f aes des] 
 		\beamGap #10 f des \liiirii aes \liiriii f \staffDown des aes} des,16) r r8

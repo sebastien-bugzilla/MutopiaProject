@@ -16,7 +16,7 @@ musicFlautoIMvtII = \relative c {
 	
 	
 	
-	r4 r16 \tuplet 3/2 16 {gis'''32(\p^\solo b a} gis16) r
+	r4 r16 \tuplet 3/2 16 {gis'''32(\p-\offset X-offset -5 ^\solo b a} gis16) r
 	R2
 % Bars 16 to 20
 	r4 r16 a64(\pp d cis b a16) r
@@ -41,10 +41,10 @@ musicFlautoIMvtII = \relative c {
 	
 	
 	
-	\mark \default
+	\markXoffset -0.3 \mark \default
 % Bars 46 to 50
 	cis4(\mf\> dis8)\! r
-	cis4(\mf\> dis8)\! r
+	\hairpinShorten #'(-0.5 . -1) cis4(\mf\> dis8)\! r
 	cis4(\< fis16.\! e32 d16. cis32)
 	bis4.(\fp cis8->)
 	bis4.(_\fppocoapococresc cis8->)
@@ -67,7 +67,7 @@ musicFlautoIMvtII = \relative c {
 	g8.\< e32 fis g8 e)\!
 	g8.(\< e32 fis g8 e)\!
 % Bars 66 to 70
-	g8.(\mf\< e32 fis g16. fis32 e16. d32)\!
+	\dynEO #'(0 . 1) g8.(\mf-\tweak rotation #'(-2 1 0) \< e32 fis g16. fis32 e16. d32)\!
 	cis4(~\f\> \tuplet 6/4 4 {cis16 bis cis dis! e dis)\!}
 	cis4.\p r8 \mark \default
 	R2
@@ -130,16 +130,16 @@ musicFlautoIMvtII = \relative c {
 	<< a4.\fp\>^\pococrescendo {s8 s\! s}>> a8-.
 	<< bes4.\fp\> {s8 s\! s}>> bes8-.
 	<< b4.\fp\> {s8 s\!}>> b8-.
-	c2\fp~
+	\dynEO #'(0 . 2) c2\fp~
 	c8[\< c-> c-> c->\!] \mark \default
 % Bars 126 to 130
-	ees4.(\fp d8)
+	\dynEO #'(0 . 2) ees4.(\fp d8)
 	ees[(\< d ees e)\!]
 	<< f4.( {s8 s_\crescmarkup s}>> e8)
 	f[(\< ges g aes)]\!
 	aes4( a8-.) bes-.
 % Bars 131 to 135
-	\tuplet 3/2 8 {\divideBeam f16\fp\> f f  f f f  f f f  des des des\!
+	\tuplet 3/2 8 {\divideBeam f16-\offset X-offset -1 \fp\> f f  f f f  f f f  des des des\!
 	des\pp des des  des des des  des des des  bes bes bes
 	aes aes aes  aes aes aes   aes aes aes  ges ges ges
 	f\> f f  f f f  f f f\!} r8 \resetBeam
@@ -153,7 +153,7 @@ musicFlautoIMvtII = \relative c {
 	
 	r4 r8 f'-.\p
 % Bars 146 to 150
-	ees4.->\fp des8-.
+	\dynEO #'(0 . 2) ees4.->\fp des8-.
 	c4.\fz c8-.
 	c4\fz\<~ c8 \tuplet 3/2 8 {bes16( c des)\!}
 	c8.(\> bes16 aes8)\!\noBeam f'-.
@@ -177,7 +177,7 @@ musicFlautoIMvtII = \relative c {
 	<< des4.(\< {s4 s8_\brackM\crescmarkup} >> eeses8->)\!
 	des[(\< eeses des ces)]
 	bes( ees!) f16( ees c! aes)\!
-	des4~\ff des8.. ees32
+	\dynEO #'(0 . 2) des4~\ff des8.. ees32
 % Bars 171 to 175
 	des2~
 	des4~ des8.. c32
@@ -186,7 +186,7 @@ musicFlautoIMvtII = \relative c {
 	des->~
 % Bars 176 to 180
 	des8 r r4
-	bes4->\fz~ bes8.. ces32
+	\dynEO #'(0 . 2) bes4->\fz~ bes8.. ces32
 	bes2
 	bes4->~ bes8.. ces32
 	bes2~
@@ -197,14 +197,14 @@ musicFlautoIMvtII = \relative c {
 	ges16 r r8 r4
 	R2*12
 % Bars 186 to 190
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 % Bars 191 to 195
 	
 % Bars 196 to 200
 	
 	bes,2->\ff\<
 	<< b-> {s4 s8. s16\!}>>
-	c2\ffpD~
+	\dynEO #'(0 . 2) c2\ffpD~
 	c8 r r4
 % Bars 201 to 205
 	R2*7
@@ -215,7 +215,7 @@ musicFlautoIMvtII = \relative c {
 	bes4.-> bes8-.
 	b4.\< b8-.\!
 % Bars 211 to 215
-	\marcatoUpperSlur c2(~-^\ff
+	\marcatoUpperSlur \dynEO #'(0 . 1) c2(~-^\ff
 	c4.\< d8\!
 	ees4.)\f r8 \section \mark \default
 	\key cis \minor R2*2
@@ -225,7 +225,7 @@ musicFlautoIMvtII = \relative c {
 	cis8(\p b) r4
 	R2*2
 	
-	g'8.(\pp e32 fis g8 e)
+	\dynEO #'(0 . 1) g'8.(\pp e32 fis g8 e)
 % Bars 221 to 225
 	g8.(\< e32 fis g8 e)\!
 	g8.(\< e32 fis g16. fis32 e16. d32)\!
@@ -267,7 +267,7 @@ musicFlautoIMvtII = \relative c {
 	r4 cis\p~
 	cis\< cis8. dis16\!
 	e4\ff\> fis8 g\! \section
-	\key des \major aes2\pp~
+	\key des \major \dynEO #'(0 . 2) aes2\pp~
 	aes8 r r4
 % Bars 266 to 270
 	R2*3
@@ -276,7 +276,7 @@ musicFlautoIMvtII = \relative c {
 	aes,8-.\pp aes16.-. bes32-. aes8-. r
 	<< aes4\< {s8 s\!}>> bes8.\> c16\!
 % Bars 271 to 273
-	<< des2\p\> {s4 s8.. s32\!}>>
+	<< des2\p\> {s4 s8. s16\!}>>
 	des4\pp des
 	des2\fermata \fine
 }

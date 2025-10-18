@@ -16,14 +16,14 @@ musicFagottoIMvtII = \relative c {
 	bis) r r cis(->
 % Bars 6 to 10
 	bis)_\dimmarkup r r c(\>
-	b!)\! r r c(\brack\pp
+	b!)\! r r \dynEO #'(-2 . -1.5) c(\brack\pp
 	b) r r c \partCombineAutomatic
 	r f,->\< r e->
 	r dis!-> r d->\!
 % Bars 11 to 15
 	\partCombineApart d4 cis
-	gis'\<( gis'~
-	gis8.\f fis32 e) e16( dis bis16. cis32)\!
+	gis'( gis'~
+	\dynEO #'(-1.5 . -4) \beamOffset #'(-1 . -1) gis8.\f fis32 e) \beamOffset #'(-1 . -1) e16( dis bis16. cis32)\!
 	cis8 \partCombineAutomatic r r4
 	R2*7
 % Bars 16 to 20
@@ -48,31 +48,31 @@ musicFagottoIMvtII = \relative c {
 	\time 4/8 fis-.[ g-.\> fis-. g-.\!]
 % Bars 36 to 40
 	fis\pp r r4 \clef tenor
-	\once \partCombineChords << ees'2\fp\> {s8 s s s\!}>>
+	\once \partCombineChords \hairpinShorten #'(-0.5 . -1)  << ees'2\fp\> {s8 s s s\!}>>
 	\partCombineApart << ees2-> {s8 s s s}>>
 	fis!4(~ fis16 d cis b)
 	fis'8[( d cis b])
 % Bars 41 to 45
 	e4.(\pp cis8)
 	a4.( b8)
-	cis2(~ \clef bass
+	\shape #'((0 . -1)(0 . -0.5)(0 . 0.5)(0 . 0)) Slur cis2(~ \clef bass
 	cis
 	<< bis) {s8 s s s}>> \partCombineAutomatic \mark \default
 % Bars 46 to 50
 	cis4(\mf\> b!8)\! r
-	cis4(\mf\> b8)\! r
-	\partCombineApart cis4( fis16. e32 d16. cis32)
+	\hairpinShorten #'(-0.5 . -1) cis4(\mf\> b8)\! r
+	\partCombineApart cis4( \beamOffset #'(-0.5 . -0.5) fis16. e32 d16. cis32)
 	bis4.( cis8->)
 	bis4.(_\fppocoapococresc cis8->)
 % Bars 51 to 55
 	bis4.( c8->)
-	b!4.(\brack\fp c8->)
-	b4.(\brack\fp c8->) \partCombineAutomatic
+	\dynEO #'(-2 . -2) b!4.(\brack\fp c8->)
+	\dynEO #'(-2 . -2) b4.(\brack\fp c8->) \partCombineAutomatic
 	r b->\mf\< r b->\!
 	r b->\< r b->\!
 % Bars 56 to 60
-	eis,4(\f fis\>
-	gis8)\! r r4
+	eis,4(\f << fis\> {s16 s s s\!}>>
+	gis8) r r4
 	gis8\p\<( cis\! a\> gis16 fis)\!
 	g4\brack\p r
 	g r
@@ -84,8 +84,8 @@ musicFagottoIMvtII = \relative c {
 	r16 cis-. cis8-. cis-. r
 % Bars 66 to 70
 	r16 cis-. cis8-. d-. r
-	fis4\fz\>( e8 dis!)\!
-	cis4.\p r8 \partCombineAutomatic \mark \default
+	fis4_\fz_\>( e8 dis!)\!
+	cis4._\p r8 \partCombineAutomatic \mark \default
 	r16 gis-.[\p r gis-. r gis-. r gis-.]
 	r16 gis-.[ r gis-. r gis-. r gis-.]
 % Bars 71 to 75
@@ -111,10 +111,10 @@ musicFagottoIMvtII = \relative c {
 	dis4\> cis\!)
 	b8(\p\< bis~\! bis8.\> cis16)\!
 	cis8 r r4
-	r8 e(~\p\< \tuplet 6/4 4 {e16\! dis e\> fis e dis\!}
+	r8 e(~_\p_\< \tuplet 6/4 4 {e16\! dis e_\> fis e dis\!}
 % Bars 91 to 95
 	cis8) r r4
-	r8 e(~\pp \tuplet 6/4 4 {e16 dis e fis e dis}
+	r8 e(~-\offset X-offset -2 \pp \tuplet 6/4 4 {e16 dis e fis e dis}
 	cis8) r r4 \partCombineAutomatic
 	R2*3
 	
@@ -132,15 +132,15 @@ musicFagottoIMvtII = \relative c {
 	ges4->\fp bes8 bes16.-. ces32-.
 % Bars 106 to 110
 	bes4\fp~ bes8 r \clef tenor
-	\partCombineApart ges'4\fp~ ges8 ges16.-. des32-.
-	ges4\brack\fp ges8-. r
-	ges4\< ees8. des16\!
+	\partCombineApart ges'4_\fp~ ges8 ges16.-. des32-.
+	ges4_\brack\fp ges8-. r
+	ges4_\< ees8. des16\!
 	ces4(-> bes8 ees)
 % Bars 111 to 115
 	<< aes,2( {s8 s s s}>> \clef bass
 	<< ees2) {s8 s s s}>> \partCombineAutomatic
-	ees4->\p ees8-. ees16.-. g32-.
-	aes4->\fp aes->
+	ees4->\p \beamOffset #'(-0.5 . -0.5) ees8-. ees16.-. g32-.
+	aes4->-\tweak X-offset 0.3 \fp aes->
 	c-> c8-. c16.-. des32-.
 % Bars 116 to 120
 	c4-> c-> \clef tenor
@@ -149,17 +149,17 @@ musicFagottoIMvtII = \relative c {
 	ees8\trill\< ees16.-. f32-. ges8\! r \clef bass
 	<< ees4.\brack\fp\> {s8 s\! s}>> r8
 % Bars 121 to 125
-	<< ees4.\fp\>^\pococrescendo {s8 s\! s}>> r8
+	<< ees4.\fp\>-\offset X-offset 3 ^\pococrescendo {s8 s\! s}>> r8
 	<< e4.\fp\> {s8 s\! s}>> r8
 	<< f4.\fp\> {s8 s\! s}>> r8
 	fis2\fp~
 	fis8 r r4 \mark \default
 % Bars 126 to 130
-	\partCombineApart ces8 ces16.( aes32) ces8 r
+	\partCombineApart \beamOffset #'(-1 . -1) ces8 ces16.( aes32) ces8 r
 	ces8 ces16.( bes32) ces8 r \partCombineAutomatic
 	ces8 ces16.(_\crescmarkup bes32) ces8 r
 	\partCombineApart ces ces16.( aes32) ces8 ces16.( aes32)
-	ces16.( aes32 ces16. aes32) ces16 \partCombineAutomatic r r8
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur ces16.( aes32 ces16. aes32) ces16 \partCombineAutomatic r r8
 % Bars 131 to 135
 	R2*3
 	
@@ -188,7 +188,7 @@ musicFagottoIMvtII = \relative c {
 	des4(-> des)
 	<< ees2~ {s8 s s s}>>
 	ees4. \bar "!" r8 \clef bass
-	r4 ces
+	e4\rest ces
 	<< ces2 {s8 s s s}>> \partCombineAutomatic
 % Bars 156 to 160
 	des4.\> des8\!
@@ -205,7 +205,7 @@ musicFagottoIMvtII = \relative c {
 % Bars 166 to 170
 	\tuplet 3/2 8 {\divideBeam bes16 des des \partCombineAutomatic \divideBeam des des des  des des des  ces ces ces
 	des des des  des des des  des_\brackM\crescmarkup des des  ces ces ces
-	des\< des des  ces ces ces  bes bes bes  ces ces ces
+	des-\alterBroken extra-offset #'(()(0 . 1.5)) \< des des  ces ces ces  bes bes bes  ces ces ces
 	bes bes bes  bes bes bes  ees ees ees  ees ees ees\!} \resetBeam
 	f4\ff~ f8.. ges32
 % Bars 171 to 175
@@ -228,8 +228,8 @@ musicFagottoIMvtII = \relative c {
 	\partCombineApart des8[\p^\solo r16 ees]( des8)[ r16 ees](
 % Bars 186 to 190
 	des8) r r4 \partCombineAutomatic
-	R2 \clef bass
-	\partCombineApart \resetBeam r16 cis(\p\< e gis\! fis\> e dis cis)\!
+	R2 
+	\partCombineApart \resetBeam r16 cis(_\p_\< e gis\! fis_\> e dis cis)\! \clef bass
 	b( e, gis b c! ais b) r
 	r e,( gis b c! ais b) r
 % Bars 191 to 195
@@ -281,7 +281,7 @@ musicFagottoIMvtII = \relative c {
 	\time 4/8 a8[-.\> a-. a-. a-.]\!
 	a r r4 \clef tenor
 % Bars 231 to 235
-	\partCombineApart fis'4(\fp dis)
+	\partCombineApart \dynEO #'(-1.5 . -2) fis'4(\fp dis)
 	<< dis2\pp\> {s8 s s s\!}>> \partCombineAutomatic
 	e4(\pp d~
 	<< d2)\> {s8 s s s\!}>>
@@ -290,7 +290,7 @@ musicFagottoIMvtII = \relative c {
 	R2*2
 	\clef bass
 	\partCombineApart r4 r32 gis-.(\p b-. a-. gis16)\noBeam r \partCombineAutomatic
-	r4 r32 gis-.(\< dis'-.\! b-.\> gis16)\noBeam\! r
+	r4 r32 \aIIXoffset -4 gis-.(\< dis'-.\! b-.\> gis16)\noBeam\! r
 	R2*3
 % Bars 241 to 245
 	
@@ -322,7 +322,7 @@ musicFagottoIMvtII = \relative c {
 	des8-. des16.-. aes32-. des8-. r
 	R2 \clef bass
 % Bars 271 to 273
-	<< des,2\p\> {s8 s s s\!}>>
+	<< des,2\p\> {s4 s8. s16\!}>>
 	des4\pp des
 	des2\fermata \fine
 }

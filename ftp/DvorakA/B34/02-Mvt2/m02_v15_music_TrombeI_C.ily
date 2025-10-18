@@ -28,7 +28,7 @@ musicTrombeIMvtII = \relative c {
 	\time 4/8 << f2\>~ {s8 s s s\!}>>
 % Bars 36 to 40
 	f8\pp r r4^\mutainf \transposition f
-	R2*9
+	R2*9 \changeStaffName #trbeinf
 % Bars 41 to 45
 	
 	
@@ -74,10 +74,10 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	g8-.\f r r4
+	\dynEO #'(-2.5 . 3) g8-.\f r r4
 	R2 \mark \default
 % Bars 126 to 130
-	ees8.\fz r16 r4
+	ees8.-\tweak X-offset 0.5 \fz r16 r4
 	R2*26
 % Bars 131 to 135
 	
@@ -106,7 +106,7 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	aes,8\ff r aes8->^\marc aes16.-> bes32-.->
+	\aIIXoffset #-3 \dynEO #'(-3.8 . 2.5) aes,8\ff r aes8->^\marc aes16.-> bes32-.->
 % Bars 171 to 175
 	aes8 r aes r
 	c r c c16. des32
@@ -133,10 +133,10 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	g2_\ffbrackp~
+	\markEO #'(-4 . 3) g2_\ffbrackp~
 	g8 r r4^\mutaine \transposition e
 % Bars 201 to 205
-	R2*13
+	R2*13 \changeStaffName #trbeine
 % Bars 206 to 210
 	
 % Bars 211 to 215

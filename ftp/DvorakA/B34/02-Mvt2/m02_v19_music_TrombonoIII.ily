@@ -105,7 +105,7 @@ musicTrombonoIIIMvtII = \relative c {
 	
 	
 	
-	des8\ff r des8-> des16. aes32
+	des8\ff r des8 des16. aes32
 % Bars 171 to 175
 	des8 r des r
 	des r des des16. aes32

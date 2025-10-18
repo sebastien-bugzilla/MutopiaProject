@@ -9,10 +9,10 @@ musicVioloncelloMvtII = \relative c {
 	\key cis \minor
 %	\transposition a
 % Bars 1 to 5
-	e'4(\fp dis8) r
-	e4(\fp dis8) r
+	\dynEO #'(0 . 2) e'4(\fp dis8) r
+	\dynEO #'(0 . 2) e4(\fp dis8) r
 	cis4\fp\< fis16.(\! e32\> d16. cis32)\!
-	\tuplet 6/4 4 {bis16(\p\< fis gis a\! eis fis\>)} fis4\!
+	\tuplet 6/4 4 {bis16(\p\< fis gis a\! eis\> fis)} fis4\!
 	\tuplet 6/4 4 {r16 fis(\< gis a eis fis)} fis4\!
 % Bars 6 to 10
 	\tuplet 6/4 4 {r16 fis(\> gis a gis fis)} f4\!
@@ -27,11 +27,11 @@ musicVioloncelloMvtII = \relative c {
 	cis,4(\pp b8) r
 	cis4( bis8) r
 % Bars 16 to 20
-	gis'4\< a(~\!
+	gis'4\< << a(~ {s8 s8\!}>>
 	a16.\f\> g32 fis16. e32) dis!8( e)\!
 	<< {b\p( a) gis!4} {s8\< s\! s\> s\!} >>
 	R2
-	b8(\p\< a\! \tuplet 6/4 4 {gis16) fis'(\< gis a eis fis)\!}
+	\hairpinShorten #'(-0.5 . 0) b8(\p\< a\! \tuplet 6/4 4 {gis16) \hairpinEO #'(0 . 1.5) fis'(\< gis a eis fis)\!}
 % Bars 21 to 25
 	fis4 \tuplet 6/4 4 {r16 fis(\< gis a eis fis)\!}
 	fis4 \tuplet 6/4 4 {r16 fis(\< gis a eis fis)\!}
@@ -54,7 +54,7 @@ musicVioloncelloMvtII = \relative c {
 	d\pp r r4
 	R2*2
 	
-	fis'4~^\arco_\brackppespress fis16 d( cis b)
+	fis'4~-\offset X-offset -5 ^\arco_\brackppespress fis16 d( cis b)
 	fis'8[( d cis b])
 % Bars 41 to 45
 	<< e2(~\< {s8 s s s\!} >>
@@ -65,11 +65,11 @@ musicVioloncelloMvtII = \relative c {
 % Bars 46 to 50
 	cis8\p r r4
 	R2 \clef bass
-	r4 <d, a' fis'>16\fz^\pizz r r8
+	r4 <d, a' fis'>16-\offset X-offset 0.5 \fz-\offset X-offset -6 ^\pizz r r8
 	gis,16\p dis'! bis' dis, gis, gis' cis a,
-	gis\<^\pocoapococresc dis' bis' dis,\! gis,\> gis' cis a,\!
+	gis\<_\pocoapococresc dis' bis' dis,\! gis,\> gis' cis a,\!
 % Bars 51 to 55
-	gis^\unis dis' bis' dis, aes f' c' f,
+	gis-\offset X-offset -2 ^\unis dis' bis' dis, aes f' c' f,
 	g, d' b'! d, g, f' c' aes,
 	g d' b' d, g, f' c' aes,
 	g f' b f g, e' b' e,
@@ -83,7 +83,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 61 to 65
 	<< cis4\< {s8 s\!}>> e16.(\> d32 cis16. b32)\!
 	a4(\> gis8-.) fis-.\!
-	<< {e8[-.^\div e-. e-.]} \\ {e-.[ cis-. cis-.]} >> r
+	<< {e8[-.-\offset X-offset -3 ^\div e-. e-.]} \\ {e-.[ cis-. cis-.]} >> r
 	a^\unis r a[ r16 a32 a]
 	a8 r a[\< r16 a32 a]\!
 % Bars 66 to 70
@@ -121,7 +121,7 @@ musicVioloncelloMvtII = \relative c {
 	r8 e(~\> \tuplet 6/4 4 {e16 dis e fis e dis)\!}
 	cis8-.\pp[ dis-. cis-._\dimmarkup gis-.]
 	gis-. fis-. \tuplet 6/4 {r16 dis( e fis e dis)}
-	\tuplet 3/2 8 {cis(\pp dis \liiri e \lirii fis e dis) cis( dis \liiri e \lirii fis e dis)
+	\tuplet 3/2 8 {cis(-\offset X-offset -1 \pp dis \liiri e \lirii fis e dis) cis( dis \liiri e \lirii fis e dis)
 % Bars 96 to 100
 	e( gis \liiri e \lirii cis e cis) gis( cis \liiri gis \lirii e a gis)
 	e( a \liiri gis \lirii e a gis e a \liiri gis \lirii e a\fermata gis)} \section
@@ -137,7 +137,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 106 to 110
 	des8 r des r
 	ges\fp r ges[ ges16 r32 des]
-	ges8[\<^\unis ges16 r32 des]\! ges8 r
+	ges8[\< ges16 r32 des]\! ges8 r
 	ges4^\arco ees8. des16
 	ces4\< bes8( ees)\!
 % Bars 111 to 115
@@ -156,8 +156,8 @@ musicVioloncelloMvtII = \relative c {
 	fis_\pococrescendo
 	g
 	aes!(
-	a16)\brack\f r32 a,(\noBeam c ees! ges! f ees[ ges ees c] a ees' c a) \clef bass
-	ges!(\< c a \liiirii ges \liiriii ees a ges ees) c( ges' ees \liiirii c) \liiriii a-> gis-> g-> fis->\! \mark \default
+	\dynEO #'(0 . 2) a16)\brack\f r32 a,(\noBeam c ees! ges! f ees[ ges ees c] a ees' c a) \clef bass
+	ges!(\< c a \liiirii ges \liiriii ees a ges ees) \beamOffset #'(-0.5 . -0.5) c([ ges' ees c]) a-> gis-> g-> fis->\! \mark \default
 % Bars 126 to 130
 	des'!8\fp \marcatoUpperSlur ees'4-^( d8)
 	ees8[( d ees e)] \clef tenor
@@ -174,7 +174,7 @@ musicVioloncelloMvtII = \relative c {
 	des, r r8 r des'16 r
 	des, r f r f r ees r
 	ees r ees r ees r r8
-	<des, aes'>2\pp^\arco~
+	\dynEO #'(-2.3 . 1) <des, aes'>2\pp^\arco~
 	q~
 % Bars 141 to 145
 	q~
@@ -207,11 +207,11 @@ musicVioloncelloMvtII = \relative c {
 	aes,16\< ees' aes c\! ees8\> aes,\!
 	aes,16\< r aes' r aes, r ces'\! r
 % Bars 166 to 170
-	bes8(^\brackM\arco_\espress ges'~\mf ges)\< f16( ges32 aes)\!
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . -0.5)) Slur bes8(-\offset X-offset -3 ^\brackM\arco-\offset X-offset -1 _\espress ges'~\mf ges)\< f16( ges32 aes)\!
 	ges4~ ges8_\brackM\crescmarkup f16( ges32 aes)
 	ges8 f16( ges32 aes) ges8 d16( ees32 f)
-	ees4 aes8.(\f c,16)
-	\divideBeam r32 des->\ff c-> ces-> ces( bes) bes( a) r16 a32( aes) r aes-> f-> ees->
+	ees4 \dynEO #'(0 . 2) aes8.(\f c,16)
+	\divideBeam r32 \dynEO #'(-1 . 1) des->\ff c-> ces-> ces( bes) bes( a) r16 a32( aes) r aes-> f-> ees->
 % Bars 171 to 175
 	r des'-> c!-> ces-> ces( bes) bes( a) r16 a32( aes) r aes-> f-> des->
 	r des'-> c!-> ces-> ces( bes) bes( a) r16 a32( aes) r aes-> f-> ees->
@@ -219,8 +219,8 @@ musicVioloncelloMvtII = \relative c {
 	r des'-> c!-> ces-> ces( bes) beses( aes) r16 f'32( des) r8
 	r32 des-> c!-> ces-> ces( bes) beses( aes) r16 f'32( des) r8
 % Bars 176 to 180
-	r des,16->(\< ees64 f ges aes\! bes16-.) r r c64(\< des ees f
-	ges32)\fz ges-> f-> fes-> fes( ees) ees( d) r16 d32( des) r des-> bes-> aes->
+	r des,16->(\< ees64 f ges aes\! bes16-.) r r c64(\< des ees f\!
+	\dynEO #'(0 . 1) ges32)\fz ges-> f-> fes-> fes( ees) ees( d) r16 d32( des) r des-> bes-> aes->
 	r ges'-> f-> fes-> fes( ees) d( des) r16 ces32( bes) r bes-> aes-> ges->
 	r ges'-> f-> fes-> fes( ees) d( des) r16 ces32( bes) r des-> bes-> aes->
 	r ges'-> f-> fes-> fes( ees) d( des) r16 ces32( bes) r bes-> aes-> ges->
@@ -295,7 +295,7 @@ musicVioloncelloMvtII = \relative c {
 	e(~\ff\> \tuplet 6/4 4 {e16 dis e fis e cis\pp)}
 	cis4(\ppp dis8) r
 	cis,4(\< b8\!) r
-	<< {gis'4( a)} \\ {cis,(\< fis,)\!} >>
+	<< {gis'4( a)} \\ {\hairpinShorten #'(0 . -5.2) cis,(\< fis,)\!} >>
 % Bars 241 to 245
 	a'16.(\mf\< g32 fis16. e32 dis!8-.) e-.\!
 	fis4\< a8( gis)\!
@@ -309,13 +309,13 @@ musicVioloncelloMvtII = \relative c {
 	cis, d
 	e ais,
 % Bars 251 to 255
-	b\< bis\!)
-	<< {cis d8.( cis16)} \\ {cis4_\brackM\moltocresc eis,} >>
+	\hairpinShorten #'(0 . -3) b\< bis\!)
+	<< {cis d8.( cis16)} \\ {cis4-\offset X-offset -2 _\brackM\moltocresc eis,} >>
 	<fis cis'>8\noBeam\f gis'16(-> fisis32\> gis) b16( a) a( gis)\!
 	gis8(\p\< \acciaccatura b a~\! a\> gis)\!
 	<< gis8 \\ cis, >> r r4 \clef tenor
 % Bars 256 to 260
-	r8 e'(~\p\<^\espr \tuplet 6/4 4 {e16 dis\! e\> fis e cis)\!}
+	r8 e'(~\p\<-\offset X-offset -4 ^\espr \tuplet 6/4 4 {e16 dis e\> fis e cis)\!}
 	cis8\p r r4 \clef bass
 	r8 cis,[(\pp gis)] a16._\dimin gis32\fermata
 	cis4 <fis, ais>4^\div\fz\>~
@@ -360,7 +360,7 @@ musicVioloncelloDivisiMvtII = \relative c {
 	cis4(\pp b8) r
 	cis4( bis8) r
 % Bars 16 to 20
-	cis4(\< fis,)\!
+	cis4(\< << fis,) {s8 s\!}>>
 	<< g2\f\> {s8 s s s\!}>>
 	b8(\p\< a\!) << gis!4 {s8\> s\!}>>
 	R2
@@ -394,7 +394,7 @@ musicVioloncelloDivisiMvtII = \relative c {
 % Bars 46 to 50
 	cis8\p r r4
 	R2
-	r4 <d a' fis'>16^\pizz\fz r r8
+	r4 <d a' fis'>16-\offset X-offset -6 ^\pizz\fz r r8
 	gis,16\p dis'! bis' dis, gis, gis' cis a,
 	gis\<_\pocoapococresc dis' bis' dis,\! gis,\> gis' cis a,\!
 % Bars 51 to 66
@@ -450,30 +450,30 @@ musicVioloncelloDivisiMvtII = \relative c {
 	<< aes,2\> {s8 s s s\!}>> \clef bass
 	ees4(\> ees,)\!
 	aes8\pp r r4
-	aes8\p^\brackM\pizz[ aes16 r32 ees'] aes,8 r
+	aes8\p-\offset X-offset -5 ^\brackM\pizz[ aes16 r32 ees'] aes,8 r
 	aes r r4
 % Bars 116 to 120
 	aes8[ aes16 r32 ees'] aes,8 r
 	aes'[-> aes16 r32 ees] aes16 r r8
 	aes->[ aes16 r32 ees] aes16 r r8
 	R2 \clef tenor
-	c32(\brack\pp^\brackM\arco ees c \liiirii ees \liiriii c ees c ees  c ees c ees) r16 c32( ees
+	c32(\brack\pp-\offset X-offset -5 ^\brackM\arco ees c \liiirii ees \liiriii c ees c ees  c ees c ees) r16 c32( ees
 % Bars 121 to 125
-	c ees c \liiirii ees \liiriii c ees c ees  c ees c ees) r16 c32( ees
+	c_\pococrescendo ees c \liiirii ees \liiriii c ees c ees  c ees c ees) r16 c32( ees
 	c e c \liiirii e \liiriii c e c e  c e c e) r16 << { c32( e
 		d f d \liiirii f \liiriii d f d f  d f d f) r16 d32( f
-		\oneVoice a16)\f r32 a,(\noBeam c ees! ges! f ees[ ges ees c] a ees' c a)
+		\oneVoice \dynEO #'(0 . 2) a16)\brack\f r32 a,(\noBeam c ees! ges! f ees[ ges ees c] a ees' c a)
 	} \\ { c32( e
 		c d! c \liiirii d \liiriii c d c d  c d c \liiirii d \liiriii c d c d)
 		s2 \clef bass
 	}>>
-	ges,!32(\< c a \liiirii ges \liiriii ees a ges ees)  c( ges' ees \liiirii c) \liiriii a-> gis-> g-> fis->\!
+	ges,!32(\< c a \liiirii ges \liiriii ees a ges ees)  c[( ges' ees c)] a-> gis-> g-> fis->\!
 % Bars 126 to 130
 	des'!8\fp ces'16.( aes!32) ces[( aes f aes]) ces16.( aes32)
 	ces8-^ \marcatoUpperSlur ces16.-^( bes32) ces32[( aes f aes)] ces16.( aes32)
-	ces8-^ \marcatoUpperSlur ces16.-^( bes32)_\crescmarkup ces[( aes f aes]) ces16.( aes32)
+	ces8-^ \marcatoUpperSlur ces16.-^( bes32) ces[(_\crescmarkup aes f aes]) ces16.( aes32)
 	ces8-^ ces16.( aes32) ces8-^ ces16.( aes32)
-	ces16.(->\< aes32) ces16.(-> aes32)\! ces16-> r r8
+	ces16.(->\< aes32) ces16.(-> aes32) ces16->\! r r8
 % Bars 131 to 135
 	des,8\f^\brackM\pizz r aes'_\dimmarkup des
 	des,\brack\p r aes'16[ r des] r
@@ -503,12 +503,12 @@ musicVioloncelloDivisiMvtII = \relative c {
 	aes,\> r aes' r c! r ees,\! r
 	aes, r ees' r aes r \bar "!" r8^\brackM\arco
 	s2*12
-% Bars 166 to 169
+% Bars 166 to 170
 	ges32(\mf^\brackM\arco bes ges bes ges bes ges bes  ges bes ges bes aes ces aes ces)
 	ges( bes ges bes ges bes ges bes  ges_\brackM\crescmarkup bes ges bes aes ces aes ces)
 	ges( bes ges bes aes ces aes ces  bes des bes des aes ces aes ces)
 	ges(\< bes ges bes ges bes ees ges)\! f16(\f ees c! aes)
-	r32 des->\ff c-> ces-> ces( bes) bes( a) r16 a32( aes) r32 aes-> f-> ees->
+	r32 \dynEO #'(0.5 . 0) des->\ff c-> ces-> ces( bes) bes( a) r16 a32( aes) r32 aes-> f-> ees->
 % Bars 171
 	r32 des'-> c!-> ces-> ces( bes) bes( a) r16 a32( aes) r aes-> f-> des->
 % Bars 172 to 238
@@ -516,10 +516,10 @@ musicVioloncelloDivisiMvtII = \relative c {
 	s2*14 s4*1 s2*10 
 % Bars 239 to 240
 	cis4(\< b8)\! r
-	cis4(\< fis,)\!
+	\hairpinShorten #'(0 . -5.2) cis4(\< fis,)\!
 % Bars 241 to 244
 	<< g2\mf\< {s8 s s s\!}>>
-	b8(\< a) gis!4\!
+	\hairpinShorten #'(0 . -3) b8(\< a) gis!4\!
 	r4 r32 gis->\ff b-> a-> gis16-> r
 	r4 r32 gis-> dis'-> b-> gis16-> r
 % Bars 245 to 273

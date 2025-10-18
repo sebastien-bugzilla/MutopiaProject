@@ -60,7 +60,7 @@ nameStaffIXMvtI = {
 	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
-			\lower #1 "Trbe in" "F"
+			\lower #1 "Trbe" "in F"
 		}
 	}
 	\set Staff.midiInstrument = #""
@@ -184,12 +184,12 @@ nameStaffVIIIMvtII = {
 nameStaffIXMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Trombe" "I. II. In E"
+			\lower #1 "Trombe" "I. II. in E"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
-			\lower #1 "Trbe in" "E"
+			\lower #1 "Trbe" "in E"
 		}
 	}
 	\set Staff.midiInstrument = #""
@@ -306,12 +306,12 @@ nameStaffVIIIMvtIII = {
 nameStaffIXMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Trombe" "I. II. In F"
+			\lower #1 "Trombe" "I. II. in F"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
-			\lower #1 "Trbe in" "F"
+			\lower #1 "Trbe" "in F"
 		}
 	}
 	\set Staff.midiInstrument = #""
