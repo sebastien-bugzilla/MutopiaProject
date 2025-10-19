@@ -4,12 +4,12 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFlautoIMvtIII = \relative c {
+musicFlautoIIMvtIII = \relative c {
 	\clef treble
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2*44
+	R2*64
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -26,13 +26,8 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 41 to 45
 	
-	
-	
-	
-	r4^\solo r8. a'''16(\p
 % Bars 46 to 50
-	c8)[ r16 a( bes8)] r
-	R2*18
+	
 % Bars 51 to 55
 	
 % Bars 56 to 60
@@ -42,36 +37,36 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 	\mark \default
-	aes4->\ff bes->
+	aes'''4->\ff bes->
 % Bars 66 to 70
 	\restPattern c8-. ees16( c8) bes16-.
 	aes4-> bes->
 	c->( aes8) r
-	c4-> des->
-	\restPattern ees8 aes16( ees8) des16-.
+	aes4-> bes->
+	c8-. r c[ r16 bes-.]
 % Bars 71 to 75
-	c4-> des->
-	ees(-> c8) r
-	\restPattern ees8 f16( g8) f16-.
-	ees4( des8) r
-	\restPattern c8 des16( ees8) des16-.
+	aes4-> bes->
+	c(-> aes8) r
+	\restPattern c8 d!16( ees8) d16-.
+	c4( bes8) r
+	\restPattern aes8 bes16( c8) bes16-.
 % Bars 76 to 80
+	f4( g8) r
+	\restPattern c8 des16( ees8) d16-.
 	c4( bes8) r
-	\restPattern ees8 f16( g8) f16-.
-	ees4( des8) r
-	\restPattern c8 des16( ees8) des16-.
-	c4( bes8) r
+	\restPattern aes8 bes16( f8) bes16(
+	g4.) r8
 % Bars 81 to 85
-	c4-!\fp r
-	des-! r
-	ees-! r
+	aes4-!\fp r
+	bes-! r
+	c-! r
 	R2*2
 	
 % Bars 86 to 90
-	bes4-!_\fbrackcresc r
+	g4-!_\fbrackcresc r
+	aes-! r
+	bes-! r
 	c-! r
-	des-! r
-	ees-! r
 	R2*12
 % Bars 91 to 95
 	
@@ -105,43 +100,26 @@ musicFlautoIMvtIII = \relative c {
 	ees'2-^~
 % Bars 131 to 135
 	ees8 d( b c)
-	\marcatoUpperSlur bes'2-^(~
-	bes8 aes) g-. f-.
+	\marcatoUpperSlur e2-^(
+	f8-.) r g-. f-.
 	aes( g) f-. ees-.
 	ees( d) c-. bes-.
 % Bars 136 to 140
 	bes( a aes g)
 	g( f ees d)
 	ees r r4
-	R2*2
+	R2*29
 	
 % Bars 141 to 145
-	r8. ees'16[(\p^\solo c8) r16 bes](
-	a8) r r4
-	R2*2
 	
-	r8. ges'16[(\p ees8) r16 c16](
 % Bars 146 to 150
-	des2\brack\fppD~
-	des
-	d!~
-	d)
-	<< ees(~ {s4 s_\brackM\crescmarkup }>>
+	
 % Bars 151 to 155
-	ees2
-	e~
-	e)
-	f(\<
-	aes
+	
 % Bars 156 to 160
-	f4_\crescmarkup d
-	bes)\! ces->(\fz
-	aes f)
-	d(\fz ces
-	aes f
+	
 % Bars 161 to 165
-	d8) r r4
-	R2*6
+	
 % Bars 166 to 170
 	
 	\mark \default
@@ -150,36 +128,36 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 176 to 180
 	
-	ees''2_\fbrackf~
-	\restPattern ees8 d16( f8) d16(
-	ees8) r r4
-	c-.\p r 
-% Bars 181 to 185
-	d-. r
-	ees-._\crescmarkup r
-	ees-. r
-	ees-. r
-	ees-. r
-% Bars 186 to 190
-	r f\brack\fz-^
+	bes'2\ff~
+	bes8 r r4
 	R2
-	r4 f\fz-^
-	r f\fz-^
-	ees-^ r
+	g4-.\p r
+% Bars 181 to 185
+	g-. r
+	aes-._\crescmarkup r
+	bes-. r
+	bes-. r
+	c-. r
+% Bars 186 to 190
+	r des\fz-^
+	R2
+	r4 c\fz-^
+	r b\fz-^
+	c-^ r
 % Bars 191 to 195
-	r g-^\fz
-	r g-^\fz
-	\restPattern g8-.\brack\fz fis16( a8) fis16(
-	g8) r r4
-	\restPattern g8-. fis16( a8) fis16(
+	r ees-^\fz
+	r d!-^\fz
+	cis8\brack\fz r r4
+	R2
+	cis8-^ r r4
 % Bars 196 to 200
-	g8) r r4
-	\restPattern g8-. fis16( a8) fis16(
-	g8) r r4
-	\restPattern g8-. fis16( a8) fis16(
-	g8) r r4
+	R2
+	b8-^ r r4
+	R2
+	bes!8-^ r r4
+	R2*72
 % Bars 201 to 205
-	R2*32
+	
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -192,70 +170,38 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 231 to 235
 	
-	
-	r8. d16[(\p b8) r16 a](
-	g2~
-	\restPattern g8) g16(\< b8) d16(
 % Bars 236 to 240
-	g2~\!
-	\restPattern g8) fis16( g8) a16(
-	bes!2\!~
-	bes8 a\> g f!)\!
-	ees4..->\fz d16(
-% Bars 241 to 245
-	ees4..)->\fz d16(
-	ees4..)\fz-> f16(
-	ees8 d c bes)
-	ees4..->\fz d16(
-	ees4..->)\fz d16(
-% Bars 246 to 250
-	ees4..->)\fz f16(
-	ees8 d c bes)
-	ees4..->_\fzpococresc d16(
-	cis4..->)\fz a16(
-	d4..->)\fz\< f16(
-% Bars 251 to 255
-	e4.._\fzmarkup)-> c!16(\!
-	f8) r r4
-	R2*3
 	
+% Bars 241 to 245
+	
+% Bars 246 to 250
+	
+% Bars 251 to 255
 	
 % Bars 256 to 260
-	r8. c16[(\p a8) r16 g](
-	<< f2~ {s8.. s16\<}>>
-	\restPattern f8) f16( a8) d16(
-	f2)->\!~
-	f4..->\fz e16(
+	
 % Bars 261 to 265
-	f4..)\fz e16(
-	f4..)\fz g16(
-	f8 e d c)
-	f4..\fz e16(
-	f4..)\fz e16(
+	
 % Bars 266 to 270
-	f4..)\fz g16(_\crescmarkup
-	f8 e d c)
-	f4..\fz g16(
-	f8 e d c)
-	f4..\fz g16(
+	
 % Bars 271 to 275
-	f8 e d c)
-	f(\f e d c)
+	
+	f'8(\f e d c)
 	e( d c b)
 	d( c b a)
 	c( b a g)
 % Bars 276 to 280
-	c4-. r
+	a4-. r
+	a4..->\fz a16
+	a4-. r
 	c4..->\fz c16
-	c4-. r
-	ees4..->\fz ees16
-	ees4-. r
+	ces4-. r
 % Bars 281 to 285
-	ees4..->\fz ees16
-	ees4-. r
-	ees4..->\fz ees16
-	d2-^\ff~
-	d8 r r4
+	ces4..->\fz ces16
+	ces4-. r
+	ces4..->\fz ces16
+	bes2-^\ff~
+	bes8 r r4
 % Bars 286 to 290
 	R2*36
 % Bars 291 to 295
@@ -277,20 +223,20 @@ musicFlautoIMvtIII = \relative c {
 	aes4-> bes->
 	c->( aes8) r
 % Bars 326 to 330
-	c4-> des->
-	\restPattern ees8 aes16( ees8) des16
-	c4-> des->
-	ees->( c8) r
-	\restPattern ees8 f16( g8) f16
-% Bars 331 to 335
-	ees4( des8) r
-	\restPattern c des16( ees8) des16
-	c4( bes8) r
-	\restPattern ees8 f16( g8) f16
-	ees4( des8) r
-% Bars 336 to 340
+	aes4-> bes->
+	c8 r c8. bes16
+	aes4-> bes->
+	c->( aes8) r
 	\restPattern c8 des16( ees8) des16
+% Bars 331 to 335
 	c4( bes8) r
+	\restPattern aes8 bes16( c8) bes16
+	f4( g8) r
+	\restPattern c8 des16( ees8) d16
+	c4( bes8) r
+% Bars 336 to 340
+	\restPattern aes8 bes16( f8) bes16
+	g4.-> r8
 	R2*16
 % Bars 341 to 345
 	
@@ -360,23 +306,15 @@ musicFlautoIMvtIII = \relative c {
 	d8)\! r r4
 	R2
 % Bars 421 to 425
-	<< d2->\<( {s8 s s s\!}>>
-	f8) r r4
-	r c\p-!
-	a-! g-!
-	f-! c'-!
+	<< b2->\<( {s8 s s s\!}>>
+	c8) r r4
+	R2*49
+	
+	
 % Bars 426 to 430
-	a-!_\semprep g-!
-	f-! c'-!
-	a-! g-!
-	f-! c'-!
-	a-! g-!
+	
 % Bars 431 to 435
-	f-! d'-!
-	a-! g-!
-	f-! b-!
-	c8-. r r4
-	R2*37
+	
 % Bars 436 to 440
 	
 % Bars 441 to 445
@@ -408,16 +346,16 @@ musicFlautoIMvtIII = \relative c {
 	R2*2
 	\mark \default
 	\scaleDurations 2/3 { 
-		\timeSignature 3/4 e'2.\ff~
-		e
+		\timeSignature 3/4 b'2.\ff~
+		b
 % Bars 486 to 490
-		\key e \major e2( dis4
-		fis2 dis4)
-		e2.(~
-		e~
-		e2 dis4
+		\key e \major c2.~
+		c
+		b~
+		b
+		c~
 % Bars 491 to 495
-		fis2 dis4)
+		c
 		e2( dis4
 		fis2 dis4)
 		e2( gis4
@@ -434,7 +372,7 @@ musicFlautoIMvtIII = \relative c {
 		dis2 cis4
 	}
 	\unsetTimeSignature b) r
-	R2*16
+	R2*19
 % Bars 506 to 510
 	
 % Bars 511 to 515
@@ -442,11 +380,11 @@ musicFlautoIMvtIII = \relative c {
 % Bars 516 to 520
 	
 % Bars 521 to 525
-	r8. fis'16[(\brack\f dis8) r16 b16](
-	cis4) r
-	r8. gis'16([ e8) r16 cis-.] \section \break
-	\key ees \major ees!2->\ff~
-	ees8 f,( d ees)
+	
+	
+	\section 
+	\key ees \major g2->\ff~
+	g8 f( d ees)
 % Bars 526 to 530
 	bes'2->~
 	bes8 a( fis g)
@@ -468,19 +406,13 @@ musicFlautoIMvtIII = \relative c {
 % Bars 541 to 545
 	bes( a) g-. f-. 
 	f r r4
-	R2*4
+	R2*26
 	
 	
 % Bars 546 to 550
 	
-	r8. e'16[(\p cis8) r16 b](
-	ais8) r r4
-	R2*2
-	
 % Bars 551 to 555
-	r8. g'16[(\p e8) r16 d](
-	cis8) r r4
-	R2*16
+	
 % Bars 556 to 560
 	
 % Bars 561 to 565
@@ -488,7 +420,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 566 to 570
 	
 	
-	\section \break
+	\section
 	\key b \major R2*3
 	
 % Bars 571 to 575
@@ -500,61 +432,49 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 586 to 590
 	
-	<< fis2\fz\>~ {s8 s s s\!}>>
-	fis2~
-	fis4 r
+	<< cis'2\fz\>~ {s8 s s s\!}>>
+	cis2~
+	cis4 r
 	R2
 % Bars 591 to 595
-	cis8\pp r cis r
+	ais8\pp r ais r
 	R2
-	dis8\pp r dis r
+	ais8\pp r ais r
 	R2
-	fis8 r fis r
+	d8 r d r
 % Bars 596 to 600
 	R2
-	d4\pp r
-	d r
-	d d
-	cis r
+	a4\pp r
+	a r
+	b b
+	a r
 % Bars 601 to 605
-	d r
-	d r
-	d d
-	cis r
-	d2\p(
+	a r
+	a r
+	b b
+	a r
+	a2\p(
 % Bars 606 to 610
-	dis!\<
-	e
-	fis)\!
-	<< gis\f\<~ {s8 s s s\!}>>
-	gis2~\>
+	bis!\<
+	cis
+	dis)\!
+	<< e\f\<~ {s8 s s s\!}>>
+	e2~\>
 % Bars 611 to 615
-	<< gis~ {s4 s\!}>>
-	gis8\p r r4
-	R2
-	r8. e,16[( gis8) r16 b]-.
-	e2~
+	<< e~ {s4 s\!}>>
+	e8\p r r4
+	R2*19
+	
+	
 % Bars 616 to 620
-	e4..-> dis16(
-	e4..->) dis16(
-	e4..-> fis16
-	e8 dis cis b)
-	e4..->_\pocoapococresc dis16(
+	
 % Bars 621 to 625
-	e4..)-> dis16(
-	e4..-> fis16
-	e8 dis cis b)
-	e4..->( fis16
-	e8 dis cis b)
+	
 % Bars 626 to 630
-	e4..->(\< fis16
-	e8 dis cis b)\!
-	fis'(\f e dis cis)
-	e( dis cis b)
-	dis( cis b ais)
+	
 % Bars 631 to 635
-	cis( b ais gis) \section
-	\key ees \major fis r r4
+	\section
+	\key ees \major fis,8\brack\f r r4
 	fis4..\fz fis16
 	fis8 r r4
 	fis4..\fz fis16
@@ -574,24 +494,24 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 651 to 655
 	\mark \default
-	ges'2->\ff~
-	\restPattern ges8 f16( aes8) f16(
-	ges2->~
-	\restPattern ges8) f16( aes8) f16(
+	bes2->\ff~
+	bes8 r ces r
+	bes2->~
+	bes8 r ces r
 % Bars 656 to 660
-	\restPattern ges8) f16( aes8) ges16(
-	bes8 ges ees bes)
-	f'( ees\< ces aes)
-	ges( f ees' des)\!
-	ges2->~
+	bes r bes r
+	bes r r4
+	aes8 r r4
+	ges8(\< f ees' des)\!
+	bes2->~
 % Bars 661 to 665
-	\restPattern ges8 f16( aes8) f16(
-	ges2->~
-	\restPattern ges8) f16( aes8) f16(
-	\restPattern ges8) f16( aes8) ges16(
-	bes8 ges ees bes)
+	bes8 r ces r
+	bes2->~
+	bes8 r ces r
+	bes r bes r
+	bes r r4
 % Bars 666 to 670
-	des( f ges g)
+	des8( f ges g)
 	bes( aes ges ees)
 	des r r4
 	R2*9
@@ -654,21 +574,21 @@ musicFlautoIMvtIII = \relative c {
 	ees-. r r4
 	r8 ees-. d-. bes-.
 % Bars 736 to 740
-	ees2-^\brack\ff~
+	bes2-^\brack\ff~
+	bes~
+	bes~
+	bes
+	ees-^~
+% Bars 741 to 745
 	ees~
 	ees~
 	ees
-	g-^~
-% Bars 741 to 745
-	g~
-	g~
-	g
-	bes-^~
-	bes~
+	ees-^~
+	ees~
 % Bars 746 to 750
-	bes~
-	bes
-	\restPattern ees,8-._\ffbrackp d16( f8) d16(
+	ees~
+	ees
+	\restPattern ees8-._\ffbrackp d16( f8) d16(
 	\restPattern ees8-.)_\pocoapococresc d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 % Bars 751 to 755
@@ -678,9 +598,9 @@ musicFlautoIMvtIII = \relative c {
 	\restPattern ees8-.) d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 % Bars 756 to 760
-	ees8) r r8. bes'16\ff
-	g2->\fz~
+	ees8) r r8. bes16\ff
+	g'2->\fz~
 	g8 r r4
-	f8-. r r4
+	d8-. r r4
 	ees8-. r r4\fermata \fine
 }

@@ -23,9 +23,10 @@
 \include "./00-Common/DvorakSymph3_Shortcuts.ily"
 \include "./00-Common/DvorakSymph3_Tempi.ily"
 %\include "./00-Common/DvorakSymph3_Format_Cond_Mvt03.ily"
-\include "./03-Mvt3/m03_v01_music_Piccolo.ily"
-\include "./03-Mvt3/m03_v02_music_FlautoI.ily"
-\include "./03-Mvt3/m03_v03_music_FlautoII.ily"
+\include "./00-Common/DvorakSymph3_Format_temp.ily"
+\include "./03-Mvt3/m03_v01_music_Piccolo_C.ily"
+\include "./03-Mvt3/m03_v02_music_FlautoI_C.ily"
+\include "./03-Mvt3/m03_v03_music_FlautoII_C.ily"
 \include "./03-Mvt3/m03_v04_music_OboeI_C.ily"
 \include "./03-Mvt3/m03_v05_music_OboeII_C.ily"
 \include "./03-Mvt3/m03_v07_music_ClarinettoI_C.ily"
@@ -38,17 +39,17 @@
 \include "./03-Mvt3/m03_v14_music_CornoIV_C.ily"
 \include "./03-Mvt3/m03_v15_music_TrombeI_C.ily"
 \include "./03-Mvt3/m03_v16_music_TrombeII_C.ily"
-\include "./03-Mvt3/m03_v17_music_TrombonoI.ily"
-\include "./03-Mvt3/m03_v18_music_TrombonoII.ily"
+\include "./03-Mvt3/m03_v17_music_TrombonoI_C.ily"
+\include "./03-Mvt3/m03_v18_music_TrombonoII_C.ily"
 \include "./03-Mvt3/m03_v19_music_TrombonoIII_C.ily"
 \include "./03-Mvt3/m03_v20_music_Tuba_C.ily"
-\include "./03-Mvt3/m03_v21_music_Timpani.ily"
-\include "./03-Mvt3/m03_v22_music_Triangolo.ily"
-\include "./03-Mvt3/m03_v25_music_ViolinoI.ily"
-\include "./03-Mvt3/m03_v26_music_ViolinoII.ily"
-\include "./03-Mvt3/m03_v27_music_Viola.ily"
-\include "./03-Mvt3/m03_v28_music_Violoncello.ily"
-\include "./03-Mvt3/m03_v29_music_Contrabasso.ily"
+\include "./03-Mvt3/m03_v21_music_Timpani_C.ily"
+\include "./03-Mvt3/m03_v22_music_Triangolo_C.ily"
+\include "./03-Mvt3/m03_v25_music_ViolinoI_C.ily"
+\include "./03-Mvt3/m03_v26_music_ViolinoII_C.ily"
+\include "./03-Mvt3/m03_v27_music_Viola_C.ily"
+\include "./03-Mvt3/m03_v28_music_Violoncello_C.ily"
+\include "./03-Mvt3/m03_v29_music_Contrabasso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -75,13 +76,17 @@
 %						\formatConductorMvtIII
 %					}
 					\new Voice {
+						\displayFilterVoice
+					}
+					\new Voice {
 						\tempiMvtIII
 					}
 					\new Voice {
 						\timeMvtIII \nameStaffIMvtIII \musicPiccoloMvtIII
 					}
 				>>
-				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
+				\new GrandStaff \with { \nameGrandStaffIMvtIII 
+					\consists Keep_alive_together_engraver  } <<
 					\new Staff {
 						\timeMvtIII \nameStaffIIMvtIII \musicFlautoIMvtIII
 					}
@@ -106,7 +111,8 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtIII 
+					\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtIII \nameStaffVIIMvtIII
 						\partCombine \musicCornoIMvtIII \musicCornoIIMvtIII
@@ -144,7 +150,8 @@
 				\timeMvtIII \nameStaffXIVMvtIII \musicTriangoloMvtIII
 			}
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIVMvtIII } <<
+				\new GrandStaff \with { \nameGrandStaffIVMvtIII 
+					\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtIII \nameStaffXVMvtIII \musicViolinoIMvtIII
 					}
@@ -167,6 +174,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+			system-count = 102
 		}
 	}
 }

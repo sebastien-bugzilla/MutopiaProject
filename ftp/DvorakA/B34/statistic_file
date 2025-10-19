@@ -1,6 +1,6 @@
     197     531    6381 10_DvorakSymph3_Conductor_mvt1.ly
     203     546    6686 10_DvorakSymph3_Conductor_mvt2.ly
-    172     457    5746 10_DvorakSymph3_Conductor_mvt3.ly
+    180     473    6031 10_DvorakSymph3_Conductor_mvt3.ly
     219     513    4803 20_DvorakSymph3_Part01_Flauti.ly
     244     563    5189 20_DvorakSymph3_Part02_Oboi.ly
     194     463    4539 20_DvorakSymph3_Part03_Clarinetti.ly
@@ -35,7 +35,7 @@
      18      79     854 00-Common/DvorakSymph3_Format_Part12_Viola.ily
      18      79     872 00-Common/DvorakSymph3_Format_Part13_Violoncello.ily
      18      79     872 00-Common/DvorakSymph3_Format_Part14_Contrabasso.ily
-    372    3256   26400 00-Common/DvorakSymph3_Format_temp.ily
+    372    5932   43752 00-Common/DvorakSymph3_Format_temp.ily
      34     283    1846 00-Common/DvorakSymph3_Header.ily
     100     371    3340 00-Common/DvorakSymph3_LayoutConductors.ily
      71     255    2504 00-Common/DvorakSymph3_LayoutParts.ily
@@ -147,8 +147,11 @@
     505    2964   15149 02-Mvt2/m02_v28_music_Violoncello.ily
     360    1712    9037 02-Mvt2/m02_v29_music_Contrabasso_C.ily
     357    1644    8628 02-Mvt2/m02_v29_music_Contrabasso.ily
+    546    1595    8297 03-Mvt3/m03_v01_music_Piccolo_C.ily
     546    1595    8297 03-Mvt3/m03_v01_music_Piccolo.ily
-    686    2019   10231 03-Mvt3/m03_v02_music_FlautoI.ily
+    686    2021   10244 03-Mvt3/m03_v02_music_FlautoI_C.ily
+    686    2021   10244 03-Mvt3/m03_v02_music_FlautoI.ily
+    606    1721    8317 03-Mvt3/m03_v03_music_FlautoII_C.ily
     606    1721    8317 03-Mvt3/m03_v03_music_FlautoII.ily
     813    2654   15442 03-Mvt3/m03_v04_music_OboeI_C.ily
     813    2565   13858 03-Mvt3/m03_v04_music_OboeI.ily
@@ -174,17 +177,26 @@
     686    1654    7737 03-Mvt3/m03_v15_music_TrombeI.ily
     686    1647    7629 03-Mvt3/m03_v16_music_TrombeII_C.ily
     686    1647    7680 03-Mvt3/m03_v16_music_TrombeII.ily
+    666    1594    7488 03-Mvt3/m03_v17_music_TrombonoI_C.ily
     666    1594    7488 03-Mvt3/m03_v17_music_TrombonoI.ily
+    654    1551    7265 03-Mvt3/m03_v18_music_TrombonoII_C.ily
     654    1551    7265 03-Mvt3/m03_v18_music_TrombonoII.ily
     672    1637    8636 03-Mvt3/m03_v19_music_TrombonoIII_C.ily
     672    1572    7411 03-Mvt3/m03_v19_music_TrombonoIII.ily
     660    1498    6970 03-Mvt3/m03_v20_music_Tuba_C.ily
     656    1472    6901 03-Mvt3/m03_v20_music_Tuba.ily
+    644    1648    7946 03-Mvt3/m03_v21_music_Timpani_C.ily
     644    1648    7946 03-Mvt3/m03_v21_music_Timpani.ily
+    483    1107    4722 03-Mvt3/m03_v22_music_Triangolo_C.ily
     483    1107    4722 03-Mvt3/m03_v22_music_Triangolo.ily
+    911    3440   19105 03-Mvt3/m03_v25_music_ViolinoI_C.ily
     911    3440   19105 03-Mvt3/m03_v25_music_ViolinoI.ily
+    902    3751   20199 03-Mvt3/m03_v26_music_ViolinoII_C.ily
     902    3751   20199 03-Mvt3/m03_v26_music_ViolinoII.ily
+    982    4280   20767 03-Mvt3/m03_v27_music_Viola_C.ily
     982    4280   20767 03-Mvt3/m03_v27_music_Viola.ily
+    913    2930   15319 03-Mvt3/m03_v28_music_Violoncello_C.ily
     913    2930   15319 03-Mvt3/m03_v28_music_Violoncello.ily
+    865    2375   11992 03-Mvt3/m03_v29_music_Contrabasso_C.ily
     865    2375   11992 03-Mvt3/m03_v29_music_Contrabasso.ily
-  72073  267480 1446649 total
+  80939  298187 1605960 total
