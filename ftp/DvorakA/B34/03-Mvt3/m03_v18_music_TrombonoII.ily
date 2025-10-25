@@ -63,7 +63,7 @@ musicTrombonoIIMvtIII = \relative c {
 	b4.-> r8
 	c4-> c->
 % Bars 86 to 90
-	aes-> r
+	aes->_\crescmarkup r
 	aes-> r
 	aes-> r
 	aes-> r

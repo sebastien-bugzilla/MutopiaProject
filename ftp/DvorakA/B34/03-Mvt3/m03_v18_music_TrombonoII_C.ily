@@ -63,7 +63,7 @@ musicTrombonoIIMvtIII = \relative c {
 	b4.-> r8
 	c4-> c->
 % Bars 86 to 90
-	aes-> r
+	aes->_\crescmarkup r
 	aes-> r
 	aes-> r
 	aes-> r
@@ -123,7 +123,7 @@ musicTrombonoIIMvtIII = \relative c {
 	
 % Bars 141 to 145
 	
-	a4-.\fz r
+	a4-.-\offset X-offset 0.5 \fz r
 	R2*3
 	
 	
@@ -562,7 +562,7 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 681 to 685
 	
 % Bars 686 to 690
-	ees2-^\f
+	\dynEO #'(-1 . 0) ees2-^\f
 	des-^
 	ces-^
 	a-^

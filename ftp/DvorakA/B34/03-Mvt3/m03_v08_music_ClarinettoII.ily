@@ -149,7 +149,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 151 to 155
 	
 % Bars 156 to 160
-	g'4(\brack\mf\< e
+	g'4(\brack\mf\<_\crescmarkup e
 	c)\! des(\fz
 	bes g)
 	e(\fz des

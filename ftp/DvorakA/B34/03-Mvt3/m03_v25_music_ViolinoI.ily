@@ -295,7 +295,7 @@ musicViolinoIMvtIII = \relative c {
 	
 	
 	
-	r8. bes''16[(_\ppbracknaturale g8) r16 f](
+	r8. bes''16[(\pp g8) r16 f](
 % Bars 241 to 245
 	\restPattern ees8) bes'16( g8) f16(
 	\restPattern ees8) a16( f8) ees16(

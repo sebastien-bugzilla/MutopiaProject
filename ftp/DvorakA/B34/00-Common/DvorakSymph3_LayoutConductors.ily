@@ -62,6 +62,7 @@
 	\context {
 		\RhythmicStaff
 		\RemoveEmptyStaves
+%		\RemoveAllEmptyStaves
 	}
 	\context {
 		\Voice

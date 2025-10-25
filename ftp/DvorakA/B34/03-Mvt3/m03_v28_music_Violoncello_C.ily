@@ -65,7 +65,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 51 to 55
 	ees\fp r
 	r bes
-	ees bes_\dimmarkup
+	ees bes-\offset X-offset -2 _\dimmarkup
 	c\> ees
 	f f,\!
 % Bars 56 to 60
@@ -78,7 +78,7 @@ musicVioloncelloMvtIII = \relative c {
 	f_\dimmarkup aes
 	bes des\p
 	ees ees,
-	\restPattern aes8^\arco ees'16-> c8-> bes16-. \clef bass \mark \default
+	\restPattern aes8-\offset X-offset -1 ^\arco ees'16-> c8-> bes16-. \clef bass \mark \default
 	aes4->\ff <aes, ees'>->
 % Bars 66 to 70
 	\restPattern q8-. ees''16( c8) bes16-.
@@ -143,7 +143,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 116 to 120
 	ees'4-^\< r8. ees,16
 	ees'4-^ r8. ees,16\! \mark \default
-	\tuplet 3/2 4 {aes,8[\ff aes' aes]  aes aes aes}
+	\tuplet 3/2 4 {aes,8[-\offset X-offset -1 \ff aes' aes]  aes aes aes}
 	aes r r4
 	\tuplet 3/2 4 {f,8[ f' f]  f f f}
 % Bars 121 to 125
@@ -181,16 +181,16 @@ musicVioloncelloMvtIII = \relative c {
 	R2
 	bes4-^ r
 	R2
-	bes4-^ r_\brackM\crescmarkup
+	bes4-^ r-\offset X-offset -2 _\brackM\crescmarkup
 % Bars 151 to 155
 	R2
 	bes4-^ r
 	R2
 	bes4-^\fz\< r
-	bes-^_\fzmarkup r
+	\markEO #'(0 . 2) bes-^_\fzmarkup r
 % Bars 156 to 160
-	bes-^_\fzmarkup r
-	bes-^_\fzmarkup r\!
+	\markEO #'(0 . 2) bes-^_\fzmarkup r
+	\markEO #'(0 . 2) bes-^_\fzmarkup r\!
 	R2*3
 	
 	
@@ -289,7 +289,7 @@ musicVioloncelloMvtIII = \relative c {
 	b g
 	ees! g'
 	ees! bes!
-	bes2->(\<^\arco_\espressivo
+	bes2->(\<-\offset X-offset -5 ^\arco_\espressivo
 % Bars 241 to 245
 	<< g'~ {s8 s s s\!}>>
 	g4) f4(~
@@ -328,19 +328,19 @@ musicVioloncelloMvtIII = \relative c {
 	\acciaccatura {f16 e} d4\< \acciaccatura {d16 b} g4
 % Bars 271 to 275
 	\acciaccatura {c16 d} e4\! r \clef bass
-	d4\f \acciaccatura {d16 c} b4->
+	\dynEO #'(0 . 2) d4\f \acciaccatura {d16 c} b4->
 	c \acciaccatura {c16 b} a4->
 	b \acciaccatura {b16 a} g4->
 	a \acciaccatura {a16 g} f4->
 % Bars 276 to 280
 	fis-> r
 	r r8. f16(
-	fis'4..)\fz fis16
+	\dynEO #'(0 . 2) fis'4..)\fz fis16
 	fis4 r8. fis,16(
-	fis'4..)\fz fis16
+	\dynEO #'(0 . 2) fis'4..)\fz fis16
 % Bars 281 to 285
 	fis4 r8. fis,16(
-	fis'4..)\fz fis16
+	\dynEO #'(0 . 2) fis'4..)\fz fis16
 	fis4 r8. fis,16
 	bes,!4->\ff( bes'8.) bes,16
 	bes4-. r
@@ -357,7 +357,7 @@ musicVioloncelloMvtIII = \relative c {
 	bes4(\fz bes'8.) bes,16-.
 	\restPattern bes8 cis16( ees8) d16(
 % Bars 296 to 300
-	\restPattern f8)_\brackM\dimmarkup a,16( c8) a16(
+	\restPattern f8)-\offset X-offset -0.5 _\brackM\dimmarkup a,16( c8) a16(
 	\restPattern bes8) a16( c8) a16(
 	\restPattern bes8) a16( c8) a16(
 	bes8:16) b:\p\< c: cis:
@@ -388,7 +388,7 @@ musicVioloncelloMvtIII = \relative c {
 	bes des
 % Bars 321 to 325
 	ees ees, \clef bass \mark \default
-	<aes, ees'>4->\ff^\arco q->
+	<aes, ees'>4->\ff-\offset X-offset -5 ^\arco q->
 	\restPattern q8 ees''16( c8) bes16-.
 	aes4-^ ees-^
 	<aes, ees'>4.-> r8
@@ -417,7 +417,7 @@ musicVioloncelloMvtIII = \relative c {
 	aes4-^ fes-^
 	ges2->\fz \clef tenor
 % Bars 346 to 350
-	\restPattern ces8->\fz des16( ees8)-> des16(
+	\restPattern ces8->-\offset X-offset -1.5 \fz des16( ees8)-> des16(
 	\restPattern ces8)-> des16( ees8)-> des16(
 	\restPattern ces8)-> des16( ees8)-> des16(
 	\restPattern ces8)-> des16( ees8)-> ces16(
@@ -445,12 +445,12 @@ musicVioloncelloMvtIII = \relative c {
 	R2*3
 	
 	
-	b'4\brack\f^\pizz r
+	b'4\brack\f-\offset X-offset -6 ^\pizz r
 % Bars 371 to 375
 	b\brack\p r
 	b r
 	b\brack\fz r
-	d!8.\f^\arco cis16 d4->~
+	d!8.\f-\offset X-offset -6 ^\arco cis16 d4->~
 	d8. cis16 d4->~
 % Bars 376 to 380
 	d8. cis16 d4->~
@@ -485,7 +485,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 401 to 405
 	bes-^ r
 	R2
-	aes,16\ff-> bes-> c-> d-> ees-> f-> g-> aes->
+	\dynEO #'(-1 . 0) aes,16\ff-> bes-> c-> d-> ees-> f-> g-> aes->
 	aes,4-> r
 	f16-> g-> aes-> bes-> c-> d-> e-> f->
 % Bars 406 to 410
@@ -530,7 +530,7 @@ musicVioloncelloMvtIII = \relative c {
 	
 	
 	
-	r8. bes16[(\brack\pp^\solo g8) r16 f](
+	r8. bes16[(\brack\pp-\offset X-offset -5 ^\solo g8) r16 f](
 	ees2~
 % Bars 446 to 450
 	\restPattern ees8) d16( f8) d16(
@@ -546,7 +546,7 @@ musicVioloncelloMvtIII = \relative c {
 	\restPattern des8 c16( aes'8) aes,16(
 % Bars 456 to 460
 	des8) r r4
-	des4-^^\brackM\tutti\p_\marcato\< ees-^
+	des4-^^\brackM\tutti\p-\tweak extra-offset #'(2 . 1.5) _\marcato-\tweak extra-offset #'(0 . 1) \< ees-^
 	f-^ ges-^
 	aes-^ bes-^
 	c-^ des-^\!
@@ -554,7 +554,7 @@ musicVioloncelloMvtIII = \relative c {
 	R2
 	bes,4-^\mf\< c-^
 	d!-^ ees-^
-	f-^_\pocoapococresc g-^
+	\markEO #'(0 . 3) f-^_\pocoapococresc g-^
 	aes-^ bes-^
 % Bars 466 to 470
 	c-^ d-^\!
@@ -588,7 +588,7 @@ musicVioloncelloMvtIII = \relative c {
 	fis(\< a
 % Bars 491 to 495
 	c\! gis'8 fis)
-	<e, e'>4->(\ff^\brackM\div <e, e'>)
+	\dynEO #'(1 . 2) <e, e'>4->(\ff-\offset X-offset #-4.7 ^\brackM\div <e, e'>)
 	<e' e'>->( <e, e'>)
 	<e' e'>->( <e, e'>)
 	<e' e'>->( <e, e'>)
@@ -702,12 +702,12 @@ musicVioloncelloMvtIII = \relative c {
 	dis r
 % Bars 586 to 590
 	cis\! r
-	fis\f r
+	\dynEO #'(0 . 2) fis\f r
 	R2
 	r8. cis,16[(^\arco-> ais8) r16 gis]->
 	fis8 r r4
 % Bars 591 to 595
-	fis'8\p^\pizz r ais' r
+	fis'8\p-\offset X-offset -1.5 ^\pizz r ais' r
 	fis r cis r
 	dis, r ais'' r
 	fis r dis r
@@ -907,7 +907,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 756 to 760
 	ees8 r r4
 	R2
-	<g, d' bes'>8-.\ff\arpeggio r r4
+	<g, d' bes'>8-.-\offset X-offset 0.5 \ff\arpeggio r r4
 	<bes f' d'>8-.\arpeggio r r4
 	<ees, bes' g' ees'>8-.\arpeggio r r4\fermata \fine
 }

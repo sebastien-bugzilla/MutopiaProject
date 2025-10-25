@@ -55,7 +55,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 % Bars 46 to 50
-	\partCombineApart r4 r8. a16(\brack\pp
+	\partCombineApart r4 r8. a16(-\offset X-offset -2.5 \brack\pp
 	c8)[ r16 bes( d8)] r \partCombineAutomatic
 	R2 \clef tenor
 	\once \partCombineApart ees2
@@ -63,7 +63,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 51 to 55
 	\once \partCombineApart ees2
 	r4 d-.
-	\once \partCombineApart ees-. d-._\dimmarkup
+	\once \partCombineApart ees-. d-.-\offset X-offset -2 _\dimmarkup
 	\partCombineApart c2(~
 	<< c {s8 s s s}>>
 % Bars 56 to 60
@@ -151,7 +151,7 @@ musicFagottoIMvtIII = \relative c {
 	R2*2
 	
 % Bars 126 to 130
-	r4 f,8(\< bes
+	r4 \aIIXoffset #-3 f,8(\< bes
 	d f)\! r4
 	c2-^~
 	c8 r r4
@@ -173,7 +173,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart r8. ges'16[(\p ees8) r16 c](
+	\partCombineApart r8. ges'16[(-\offset X-offset -1 \p ees8) r16 c](
 % Bars 146 to 150
 	des2\fppD~
 	des
@@ -185,10 +185,10 @@ musicFagottoIMvtIII = \relative c {
 	e~
 	e)
 	f(\<
-	aes
+	<< aes {s8 s s s\!}>>
 % Bars 156 to 160
-	f4\brack\mf\<_\crescmarkup d
-	bes)\! \partCombineAutomatic ces(\fz \clef bass
+	f4-\offset X-offset 3.5 _\crescmarkup d
+	bes) \partCombineAutomatic ces(\fz \clef bass
 	aes f
 	d)\fz ces'(
 	aes f
@@ -232,7 +232,7 @@ musicFagottoIMvtIII = \relative c {
 	bes!8 r r4
 	R2
 % Bars 201 to 205
-	\partCombineApart r8. g'16[(\p e8.) d16](
+	\partCombineApart r8. g'16[(-\offset X-offset -1 \p e8.) d16](
 	c8) r r4 \partCombineAutomatic
 	R2*16
 % Bars 206 to 210
@@ -291,13 +291,13 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	\clef tenor
-	\partCombineApart f4..\fz e16(
+	\partCombineApart f4.._\fz e16(
 % Bars 261 to 265
-	f4..)\fz e16(
-	f4..)\brack\fz g16(
+	f4..)_\fz e16(
+	f4..)_\brack\fz g16(
 	f8 e d c)
-	f4..\fz e16(
-	f4..)\fz e16(
+	f4.._\fz e16(
+	f4..)_\fz e16(
 % Bars 266 to 270
 	f4..)\fz g16(_\crescmarkup
 	f8 e d c)
@@ -306,7 +306,7 @@ musicFagottoIMvtIII = \relative c {
 	f4..\fz g16(
 % Bars 271 to 275
 	f8 e d c) \partCombineAutomatic
-	f(\f e d c)
+	\aIIXoffset #-3 f(\f e d c)
 	e( d c b)
 	d( c b a) \clef bass
 	c( b a g)
@@ -346,7 +346,7 @@ musicFagottoIMvtIII = \relative c {
 	\once \partCombineAutomatic r4 d-.
 % Bars 311 to 315
 	ees-. d-.
-	c2(~_\dimmarkup
+	c2(~-\offset X-offset -2 _\dimmarkup
 	c
 	bes8) \partCombineAutomatic r r4
 	f'2\fp
@@ -389,12 +389,12 @@ musicFagottoIMvtIII = \relative c {
 	e4(\brack\fz b8) r
 	e4(\brack\fz b8) r
 	e4(\brack\fz b8) r
-	d4.->\fz cis8-.
+	d4.->-\tweak X-offset 0.5 \fz cis8-.
 % Bars 351 to 355
-	d4.->\fz cis8-.
+	d4.->-\tweak X-offset 0.5 \fz cis8-.
 	d4.->\fz cis8-.
 	d4.->\fz r8
-	aes'4(\fz aes,8) r
+	\aIIXoffset #-3 aes'4(\fz aes,8) r
 	aes'4(\fz aes,8) r
 % Bars 356 to 360
 	aes'!4(\fz aes,!8) r
@@ -672,7 +672,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 626 to 630
 	
 	\clef tenor
-	fis'8(\f e dis cis)
+	\aIIXoffset #-3.5 fis'8(\f e dis cis)
 	e( dis cis b)
 	dis( cis b ais)
 % Bars 631 to 635
@@ -718,12 +718,12 @@ musicFagottoIMvtIII = \relative c {
 	ges8-> r r4
 	f8-> r r4
 	R2
-	\partCombineApart r4 \clef tenor aes'(->\ff
+	\partCombineApart r4 \clef tenor aes'(->_\ff
 % Bars 671 to 675
-	g\> ges8 f\!
+	g_\> ges8 f\!
 	aes8) r r4 \partCombineAutomatic
 	R2
-	\partCombineApart r4 aes(->\f\>
+	\partCombineApart r4 aes(->_\f_\>
 	g ges8 f)\! \partCombineAutomatic
 % Bars 676 to 680
 	R2*46
@@ -745,7 +745,7 @@ musicFagottoIMvtIII = \relative c {
 	
 % Bars 721 to 725
 	
-	r4 r8. ees16-.\f
+	r4 r8. \aIIXoffset #-3.5 ees16-.\f
 	d4..-> bes16
 	ees8 r r4
 	R2

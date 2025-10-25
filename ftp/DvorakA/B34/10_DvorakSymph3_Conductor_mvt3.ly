@@ -22,8 +22,8 @@
 \include "./00-Common/DvorakSymph3_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph3_Shortcuts.ily"
 \include "./00-Common/DvorakSymph3_Tempi.ily"
-%\include "./00-Common/DvorakSymph3_Format_Cond_Mvt03.ily"
-\include "./00-Common/DvorakSymph3_Format_temp.ily"
+\include "./00-Common/DvorakSymph3_Format_Cond_Mvt03.ily"
+%\include "./00-Common/DvorakSymph3_Format_temp.ily"
 \include "./03-Mvt3/m03_v01_music_Piccolo_C.ily"
 \include "./03-Mvt3/m03_v02_music_FlautoI_C.ily"
 \include "./03-Mvt3/m03_v03_music_FlautoII_C.ily"
@@ -72,9 +72,9 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtIII
-%					}
+					\new Voice {
+						\formatConductorMvtIII
+					}
 					\new Voice {
 						\displayFilterVoice
 					}
@@ -174,7 +174,7 @@
 			breakbefore = ##t
 		}
 		\layout {
-			system-count = 102
+%			system-count = 102
 		}
 	}
 }

@@ -278,12 +278,12 @@ nameStaffIVMvtIII = {
 nameStaffVMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetti" "I. II. In B"
+			\lower #1 "Clarinetti" \concat { "I. II. in B" \text-flat }
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
-			\lower #1 "Cl. in" "B"
+			\lower #1 "Cl. in" \concat { "B" \text-flat }
 		}
 	}
 	\set Staff.midiInstrument = #""
@@ -294,13 +294,41 @@ nameStaffVIMvtIII = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffVIIMvtIII = {
-	\set Staff.instrumentName = "I. II."
-	\set Staff.shortInstrumentName = "I. II."
+	\set Staff.instrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in F"
+			\center-column {
+				"I." "II."
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in F"
+			\center-column {
+				"I." "II."
+			}
+		}
+	}
 	\set Staff.midiInstrument = #""
 }
 nameStaffVIIIMvtIII = {
-	\set Staff.instrumentName = "III. IV."
-	\set Staff.shortInstrumentName = "III. IV."
+	\set Staff.instrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in F"
+			\center-column {
+				"III." "IV."
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in F"
+			\center-column {
+				"III." "IV."
+			}
+		}
+	}
 	\set Staff.midiInstrument = #""
 }
 nameStaffIXMvtIII = {
@@ -337,7 +365,7 @@ nameStaffXIMvtIII = {
 nameStaffXIIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Trombone basso" "e Tuba"
+			\lower #1 "Trombone" "basso e Tuba"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
@@ -350,12 +378,12 @@ nameStaffXIIMvtIII = {
 nameStaffXIIIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in Es B"
+			\lower #1 "Timpani" \concat {"in E" \text-flat "/B" \text-flat}
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
-			\lower #1 "Timp." "in Es B"
+			\lower #1 "Timp." \concat { "in E" \text-flat "/B" \text-flat }
 		}
 	}
 	\set Staff.midiInstrument = #""

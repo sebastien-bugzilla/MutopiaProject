@@ -150,7 +150,11 @@ fzpococresc = \markup {\hspace #-0.55 \dynamic fz \italic "poco cresc."}
 fzbrackcresc = \markup {\hspace #-0.55 \dynamic fz \bracket \with-true-dimensions \italic cresc.}
 fzbrackp = \markup {\hspace #-0.55 \dynamic fz \bracket \with-true-dimensions \dynamic p }
 fbrackz = \markup {\hspace #-0.55 \dynamic f \hspace #-0.45 \bracket \with-true-dimensions \dynamic z }
-fzbrackmf = \markup {\hspace #-0.55 \dynamic fz \bracket \with-true-dimensions \dynamic m \dynamic f}
+fzbrackmf = \markup {
+	\hspace #-0.55 \concat { 
+		\dynamic fz \hspace #0.1 \bracket \with-true-dimensions \dynamic m \dynamic f
+	}
+}
 %--------------------
 % dynamics fzp
 %--------------------
@@ -240,6 +244,9 @@ brackfffz = \markup {
 crescmarkup = \markup {\italic cresc.}
 dimmarkup = \markup {\italic dim.}
 pocoapococresc = \markup {\italic "poco a poco cresc."}
+pocoapoco_cresc = \markup {
+	\italic { \column { \lower #1.5 "poco a poco" "cresc."} }
+}
 brackpocoapococresc = \markup { \italic { \bracket \with-true-dimensions  "poco a poco" cresc }}
 pocoapococrescendo = \markup {\italic "poco a poco crescendo"}
 pocoapoco_crescendo = \markup {
@@ -286,6 +293,9 @@ mutainb = \markup {"muta in B"}
 mutaina = \markup {"muta in A"}
 mutainf = \markup {"muta in F"}
 mutaine = \markup {"muta in E"}
+mutaeineshinb = \markup {
+	\concat { "muta E in E" \text-flat ", H in B" \text-flat}
+}
 timpindb = \markup {
 	\center-column {
 		\lower #1 "Timp." "in D, B"
@@ -310,6 +320,15 @@ trbeinf = \markup {
 trbeine = \markup {
 	\center-column { \lower #1 "Trbe" "in E"}
 }
+timpineh = \markup {
+	\center-column { \lower #1 "Timp" "in E/H"}
+}
+timpinesbes = \markup {
+	\center-column { 
+		\lower #1 "Timp" \concat { "in E" \text-flat "/B" \text-flat }
+	}
+}
+
 %--------------------
 % functions
 %--------------------
@@ -420,7 +439,7 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 
 naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	\concat { 
-		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \natural 
+		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \natural 
 	}
 }
 

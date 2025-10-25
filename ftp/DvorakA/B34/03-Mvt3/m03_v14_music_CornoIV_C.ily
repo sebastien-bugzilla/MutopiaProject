@@ -166,7 +166,7 @@ musicCornoIVMvtIII = \relative c {
 	
 % Bars 141 to 145
 	
-	bes4-.\fz r
+	bes4-.-\tweak X-offset -1.6 \fz r
 	R2*3
 	
 	
@@ -313,7 +313,7 @@ musicCornoIVMvtIII = \relative c {
 	cis4..\fz cis16
 	cis4 r
 	cis4..\fz cis16
-	c!2-^\ff~
+	c!2-^-\tweak X-offset -1 \ff~
 	c8 r r4
 % Bars 286 to 290
 	f4-^ r

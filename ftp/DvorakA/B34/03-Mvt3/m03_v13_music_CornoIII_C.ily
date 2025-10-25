@@ -59,7 +59,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 51 to 55
 	d2\fp
 	r4 c-.
-	d-. c-._\dimmarkup
+	d-. c-.-\offset X-offset -2 _\dimmarkup
 	bes8 r r4
 	\partCombineApart R2*2
 % Bars 56 to 60
@@ -137,7 +137,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 116 to 120
 	aes\< r
 	aes r\! \mark \default
-	g2-^\ff~
+	\dynEO #'(-2 . 1) g2-^\ff~
 	g8 r r4
 	bes2-^~
 % Bars 121 to 125
@@ -166,7 +166,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 % Bars 141 to 145
 	
-	bes4-.\fz r
+	bes4-.-\tweak X-offset -1.6 \fz r
 	R2*3
 	
 	
@@ -187,7 +187,7 @@ musicCornoIIIMvtIII = \relative c {
 	c\! r
 	R2*2
 	
-	\tuplet 3/2 4 {f,8\brack\ff-^ a-^ c-^ } ees4\fz~
+	\tuplet 3/2 4 {\aIIXoffset -2 f,8\brack\ff-^ a-^ c-^ } ees4\fz~
 % Bars 161 to 165
 	<< ees2\> {s8 s s s\!}>>
 	R2*6
@@ -260,7 +260,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart r4 g-.\pp
+	\partCombineApart r4 g-._\pp
 % Bars 241 to 245
 	r f-.
 	r bes-.
@@ -275,16 +275,16 @@ musicCornoIIIMvtIII = \relative c {
 	r\< a-.
 % Bars 251 to 255
 	r g-.\!
-	c2\fz~
+	c2_\fz~
 	c~
-	<< c~\> {s8 s s s\!}>>
+	<< c~_\> {s8 s s s\!}>>
 	c8 r r4 \partCombineAutomatic
 % Bars 256 to 260
 	R2*4
 	
 	
 	
-	a2->\fz
+	\aIIXoffset #-2 a2->\fz
 % Bars 261 to 265
 	c->\fz
 	d4-> d,->
@@ -299,7 +299,7 @@ musicCornoIIIMvtIII = \relative c {
 	c-. c-.
 % Bars 271 to 275
 	b-. r
-	e4->\f d->
+	\aIIXoffset #-4 e4->\f d->
 	r r8. a16
 	e'4-> d->
 	r r8. \once \partCombineApart g,16
@@ -313,7 +313,7 @@ musicCornoIIIMvtIII = \relative c {
 	fis4..\fz fis16
 	fis4 r
 	fis4..\fz fis16
-	f!2-^\ff~
+	f!2-^-\tweak X-offset -1 \ff~
 	f8 r r4
 % Bars 286 to 290
 	a4-^ r
@@ -492,7 +492,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 % Bars 456 to 460
-	r4 c\fp~
+	r4 \dynEO #'(-2 . 1.5) c\fp~
 	c2\<~
 	c~
 	c~
@@ -697,7 +697,7 @@ musicCornoIIIMvtIII = \relative c {
 	r fis->
 % Bars 651 to 655
 	r gis-> \mark \default
-	gis2-^\ff~
+	\dynEO #'(-2 . 1) gis2-^\ff~
 	gis8 r gis r
 	aes2-^~
 	aes8 r aes r
@@ -777,7 +777,7 @@ musicCornoIIIMvtIII = \relative c {
 	bes-. r r4
 	r8 f-. f-. f-.
 % Bars 736 to 740
-	f2-^\brack\ff~
+	\dynEO #'(1 . 1) f2-^\brack\ff~
 	f~
 	f~
 	f4. f16-. f-.

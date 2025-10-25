@@ -194,7 +194,7 @@ musicViolinoIIMvtIII = \relative c {
 	f16(\fp\< aes) aes aes  aes aes aes aes
 	f(_\fpmarkup aes) aes aes  aes aes aes aes
 % Bars 156 to 160
-	f(_\fpmarkup aes) aes aes  aes aes aes aes
+	f(_\fpmarkup_\crescmarkup aes) aes aes  aes aes aes aes
 	f(_\fpmarkup aes) aes aes  aes aes aes aes\!
 	<aes, f'>2:16\ff
 	q:

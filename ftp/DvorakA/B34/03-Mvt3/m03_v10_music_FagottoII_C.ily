@@ -326,7 +326,7 @@ musicFagottoIIMvtIII = \relative c {
 	r4 bes-.\p
 % Bars 311 to 315
 	ees-. bes-.
-	c2(
+	\shape #'((0 . 0.5)(0 . 0)(0 . 0)(0 . 0)) Slur c2(
 	f,
 	bes8) r r4
 	aes2\fp
@@ -369,9 +369,9 @@ musicFagottoIIMvtIII = \relative c {
 	e4(\brack\fz b8) r
 	e4(\brack\fz b8) r
 	e4(\brack\fz b8) r
-	fis4.->\fz a8-.
+	fis4.->-\tweak X-offset 0.5 \fz a8-.
 % Bars 351 to 355
-	fis4.->\fz a8-.
+	fis4.->-\tweak X-offset 0.5 \fz a8-.
 	fis4.->\fz a8-.
 	fis4.->\fz r8
 	aes'!4(\fz aes,!8) r

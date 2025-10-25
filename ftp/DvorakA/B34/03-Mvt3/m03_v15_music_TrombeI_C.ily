@@ -69,7 +69,7 @@ musicTrombeIMvtIII = \relative c {
 	r bes->
 	r bes->
 % Bars 81 to 85
-	ees,->\brack\fp r
+	\aIIXoffset -4.3 ees,->\brack\fp r
 	ees-> r
 	ees4.-> r8
 	ees4.-> r8
@@ -145,20 +145,20 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 146 to 150
 	
-	f4\fz r
+	\dynEO #'(-2.3 . 2) f4\fz r
 	R2
-	f4\fz r
+	\dynEO #'(-2.3 . 2) f4\fz r
 	R2
 % Bars 151 to 155
-	f4\fz r
+	\dynEO #'(-2.3 . 2) f4\fz r
 	R2
-	f4\fz r
-	r fis-^\fz
-	r fis-^\fz
+	\dynEO #'(-2.3 . 2) f4\fz r
+	r \dynEO #'(-3.6 . 3) fis-^\fz
+	r \dynEO #'(-3.6 . 3) fis-^\fz
 % Bars 156 to 160
-	r fis-^\fz
-	r fis-^\fz
-	r \tuplet 3/2 4 {a,8-^\ff^\sole c-^ ees-^}
+	r \dynEO #'(-3.6 . 3) fis-^\fz
+	r \dynEO #'(-3.6 . 3) fis-^\fz
+	r \tuplet 3/2 4 {\dynEO #'(-3 . 3) a,8-^\ff-\offset X-offset -5 ^\sole c-^ ees-^}
 	ges2\fz
 	R2
 % Bars 161 to 165
@@ -276,7 +276,7 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 306 to 310
 	
-	bes'4-^\f r
+	\dynEO #'(0.5 . 0.5) bes'4-^\f r
 	R2*14
 % Bars 311 to 315
 	
@@ -561,7 +561,7 @@ musicTrombeIMvtIII = \relative c {
 	ees-^
 % Bars 651 to 655
 	f!4..-^ ges16 \mark \default
-	aes2-^\ff~
+	\dynEO #'(-2 . 1) aes2-^\ff~
 	aes8 r aes r
 	aes2-^~
 	aes8 r aes r

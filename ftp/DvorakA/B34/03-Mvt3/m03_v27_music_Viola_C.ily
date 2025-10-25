@@ -128,12 +128,12 @@ musicViolaMvtIII = \relative c {
 	bes'4) r8. ees,16(
 	bes'4) r8. ees,16(
 	bes') bes bes bes  bes8 r
-	des16->\fz des des c des des des des
-	des\fz des des c des des des des
+	\dynEO #'(-2 . 1) des16->\fz des des c des des des des
+	\dynEO #'(-2 . 1) des\fz des des c des des des des
 % Bars 101 to 105
-	des\fz des des c des-> des des des
+	\dynEO #'(-2 . 1) des\fz des des c des-> des des des
 	des des c c bes\< bes c c\!
-	des\fz des des c des des des des
+	\dynEO #'(-2 . 1) des\fz des des c des des des des
 	des des des c  des-> des des des
 	des des des c  des-> des des des
 % Bars 106 to 110
@@ -149,8 +149,8 @@ musicViolaMvtIII = \relative c {
 	q-> q <g bes> q <bes des> q q q
 	q-> q <g bes> q <bes des>\fz q q q
 % Bars 116 to 120
-	q->\< q <g bes> q <bes des>_\fzmarkup q q q
-	q q <g bes> q <bes des>_\fzmarkup q q q\! \mark \default
+	q->\< q <g bes> q \markEO #'(0 . 1.5) <bes des>_\fzmarkup q q q
+	q q <g bes> q \markEO #'(0 . 1.5) <bes des>_\fzmarkup q q q\! \mark \default
 	<aes c>->\ff <c aes'> q q  q q q q
 	q8 r r4
 	<f, aes>16-> <c' aes'> q q  q q q q
@@ -195,10 +195,10 @@ musicViolaMvtIII = \relative c {
 	bes16\fp des des des  des des des des
 	cis2:16
 	<aes d!>16(\fp\< <ces f>) q q  q q q q
-	<aes d>(_\fpmarkup <ces f>) q q  q q q q
+	\markEO #'(0 . 2) <aes d>(_\fpmarkup <ces f>) q q  q q q q
 % Bars 156 to 160
-	<aes d>(_\fpmarkup <ces f>) q q  q q q q
-	<aes d>(_\fpmarkup <ces f>) q q  q q q q\!
+	\markEO #'(0 . 2) <aes d>(_\fpmarkup <ces f>) q q  q q q q
+	\markEO #'(0 . 2) <aes d>(_\fpmarkup <ces f>) q q  q q q q\!
 	<f, d'>2:16\ff
 	q:
 	q:
@@ -252,7 +252,7 @@ musicViolaMvtIII = \relative c {
 		\voiceOne c) g g g  g g g g
 	}\\{
 		s2
-		c16\fz e, e e  e e e e
+		\dynEO #'(-1.5 . 1) c16\fz e, e e  e e e e
 	}>>
 	<e g>2:16\fp
 % Bars 201 to 205
@@ -272,7 +272,7 @@ musicViolaMvtIII = \relative c {
 	
 	
 	
-	q2:16\pp
+	q2:16-\offset X-offset 1 \pp
 % Bars 216 to 220
 	q:
 	q:
@@ -316,7 +316,7 @@ musicViolaMvtIII = \relative c {
 	<a cis e>:->
 	<d f>:\fz->
 % Bars 251 to 255
-	<c e g>:\fz->
+	\dynEO #'(-1 . 0) <c e g>:\fz->
 	<f a>:\mf->
 	q8 r r4
 	<< <f, a>2:16\fp\> {s8 s s s\!}>>
@@ -385,7 +385,7 @@ musicViolaMvtIII = \relative c {
 		q:\fz
 		q:
 		q:
-		<ges ces>:\fz
+		<ges ces>:-\offset X-offset 1 \fz
 % Bars 281 to 285
 		q:
 		q:->
@@ -428,7 +428,7 @@ musicViolaMvtIII = \relative c {
 	<ees g>:\fp <c ees g>:
 	<< <f, c' ees f>2:\> {s8 s s s\!}>>
 	<bes d f>4: q8 r
-	<< <des f>2:16 \\ <f, aes>:\fp >>
+	<< <des f>2:16 \\ <f, aes>:-\offset X-offset 1.2 \fp >>
 % Bars 316 to 320
 	<< {
 		<des' f>4: ees:
@@ -437,7 +437,7 @@ musicViolaMvtIII = \relative c {
 		q: ees:
 	} \\ {
 		<f, aes>4: <aes c>:
-		<f aes>2:\fp
+		<f aes>2:-\offset X-offset 1.2 \fp
 		q4: <aes c>:
 		<f aes>: <aes c>:
 	} >>
@@ -489,7 +489,7 @@ musicViolaMvtIII = \relative c {
 	f4(\fz d!8) r
 	<aes c>2:16\fz
 	<aes bes des>:\fz
-	<aes c ees>:\fz
+	<aes c ees>:-\offset X-offset 0.5 \fz
 % Bars 361 to 365
 	<aes bes des ees>:\fz
 	<aes c ees>:\fz
@@ -506,7 +506,7 @@ musicViolaMvtIII = \relative c {
 	b'4) r8. e,16(
 	b'4) r8. e,16(
 	b'8)\brack\fz r r4
-	d16->\f d d cis  d d d d
+	\dynEO #'(-2.3 . 1) d16->\f d d cis  d d d d
 	d-> d d cis d d d d
 % Bars 376 to 380
 	d-> d d cis d d d d
@@ -524,7 +524,7 @@ musicViolaMvtIII = \relative c {
 	q:->
 	q:->
 	q:->
-	r8. des'16[_\fbrackf bes!8.->\< aes16]
+	r8. des'16[-\offset X-offset -1.5 _\fbrackf bes!8.->\< aes16]
 	g8.->[ g'16 ees8.-> des16]
 % Bars 391 to 395
 	bes8.->[ bes'16 g8.-> f16]\!
@@ -588,9 +588,9 @@ musicViolaMvtIII = \relative c {
 % Bars 451 to 455
 	des8)[ r16 c( aes'8)] r
 	R2
-	r8. c,16[(\pp aes'8) r16 aes](
+	r8. \dynEO #'(-2 . 1) c,16[(\pp aes'8) r16 aes](
 	des,8) r r4
-	r8. c16([\pp aes'8) r16 aes](
+	r8. \dynEO #'(-2 . 1) c16([\pp aes'8) r16 aes](
 % Bars 456 to 460
 	des,8) r r4
 	R2*5
@@ -829,7 +829,7 @@ musicViolaMvtIII = \relative c {
 % Bars 626 to 630
 	gis( b gis b  fis ais fis ais)
 	fis( cis' fis, cis'  fis,\! b fis b)
-	fis'8(->\f e dis cis)
+	\dynEO #'(-1 . 0) fis'8(->\f e dis cis)
 	e(-> dis cis b)
 	dis(-> cis b ais)
 % Bars 631 to 635
@@ -839,11 +839,11 @@ musicViolaMvtIII = \relative c {
 	c8:16\f a: g: fis:
 	c'8 r r4
 % Bars 636 to 640
-	c8:16->\fz g: f!: ees:
+	\dynEO #'(-1 . 0) c8:16->\fz g: f!: ees:
 	c'8 r r4
 	c8:16-> g: f!: ees:
 	c'8 r r4
-	c8:16->\f bes: aes: ees:
+	\dynEO #'(-1 . 0) c8:16->\f bes: aes: ees:
 % Bars 641 to 645
 	c'8 r r4
 	c8:16-> a: ges: ees:
@@ -911,14 +911,14 @@ musicViolaMvtIII = \relative c {
 	q2:
 	q:
 	q:
-	<g, bes ees>16(\brack\fp <ees' g bes>) q q  q q q q
+	\dynEO #'(-3 . 2) <g, bes ees>16(\brack\fp <ees' g bes>) q q  q q q q
 	q2:16
 % Bars 706 to 710
 	q:
 	q:
-	<ges, ces ees!>16(\brack\fp <ees' ges ces>) q q  q q q q
+	\dynEO #'(-3 . 2) <ges, ces ees!>16(\brack\fp <ees' ges ces>) q q  q q q q
 	q2:16
-	<g,! bes ees>16(\brack\fp <bes ees g!>) q q  q q q q
+	\dynEO #'(-3 . 2) <g,! bes ees>16(\brack\fp <bes ees g!>) q q  q q q q
 % Bars 711 to 715
 	q2:16
 	<c ees>:\fz

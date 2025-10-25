@@ -131,7 +131,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 116 to 120
 	ees'4-^\< r8. ees,16
 	ees'4-^ r8. ees,16\! \mark \default
-	\tuplet 3/2 4 {aes,8[\ff aes' aes]  aes aes aes}
+	\tuplet 3/2 4 {aes,8[-\offset X-offset -1 \ff aes' aes]  aes aes aes}
 	aes r r4
 	\tuplet 3/2 4 {f,8[ f' f]  f f f}
 % Bars 121 to 125
@@ -169,16 +169,16 @@ musicContrabassoMvtIII = \relative c {
 	R2
 	bes4-^ r
 	R2
-	bes4-^ r_\brackM\crescmarkup
+	bes4-^ r-\offset X-offset -2 _\brackM\crescmarkup
 % Bars 151 to 155
 	R2
 	bes4-^ r
 	R2
 	bes4-^\fz\< r
-	bes-^_\fzmarkup r
+	\markEO #'(0 . 2) bes-^_\fzmarkup r
 % Bars 156 to 160
-	bes-^_\fzmarkup r
-	bes-^_\fzmarkup r\!
+	\markEO #'(0 . 2) bes-^_\fzmarkup r
+	\markEO #'(0 . 2) bes-^_\fzmarkup r\!
 	R2*3
 	
 	
@@ -333,7 +333,7 @@ musicContrabassoMvtIII = \relative c {
 	bes4(\fz bes'8.) bes,16-.
 	\restPattern bes8 cis16( ees8) d16(
 % Bars 296 to 300
-	\restPattern f8)_\brackM\dimmarkup a,16( c8) a16(
+	\restPattern f8)-\offset X-offset -0.5 _\brackM\dimmarkup a,16( c8) a16(
 	\restPattern bes8) a16( c8) a16(
 	\restPattern bes8) a16( c8) a16(
 	\marcatoUpperSlur bes4)-^\brack\p bes-^
@@ -486,7 +486,7 @@ musicContrabassoMvtIII = \relative c {
 	
 	
 	
-	ees4\p^\pizz r
+	ees4\p-\offset X-offset -4 ^\pizz r
 	R2
 % Bars 446 to 450
 	ees4 r
@@ -502,7 +502,7 @@ musicContrabassoMvtIII = \relative c {
 	aes r
 % Bars 456 to 460
 	des8 r r4
-	des4-^^\brackM\tutti\p_\marcato\< ees-^
+	des4-^-\offset X-offset -6.5 ^\brackM\tutti\p-\offset X-offset 2 _\marcato\< ees-^
 	f-^ ges-^
 	aes-^ bes-^
 	c-^ des-^\!
@@ -510,7 +510,7 @@ musicContrabassoMvtIII = \relative c {
 	R2
 	bes,4-^\mf\< c-^
 	d!-^ ees-^
-	f-^_\pocoapococresc g-^
+	\markEO #'(0 . 3) f-^_\pocoapococresc g-^
 	aes-^ bes-^
 % Bars 466 to 470
 	c-^ d-^\!

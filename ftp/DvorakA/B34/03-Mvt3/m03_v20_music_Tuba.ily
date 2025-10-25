@@ -63,7 +63,7 @@ musicTubaMvtIII = \relative c {
 	aes,4.->\brack\p r8
 	aes4-> aes->
 % Bars 86 to 90
-	aes-> r
+	aes->_\crescmarkup r
 	aes-> r
 	aes-> r
 	aes-> r

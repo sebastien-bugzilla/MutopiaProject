@@ -43,14 +43,14 @@ musicClarinettoIIMvtIII = \relative c {
 	
 	
 	
-	a2\fp
+	a2-\tweak X-offset 0.3 \fp
 	r4 g-.
 % Bars 51 to 55
-	a2\fp
+	a2-\tweak X-offset 0.3 \fp
 	r4 g-.
 	a-. g-.
 	f2(~
-	<< f {s8\> s s s\!}>>
+	<< f {\hairpinShorten #'(1 . 0) s8-\tweak extra-offset #'(0 . 3) \> s s s\!}>>
 % Bars 56 to 60
 	e8) r r4
 	ees2\fp
@@ -116,7 +116,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 116 to 120
 	
 	\mark \default
-	d2-^\ff~
+	\dynEO #'(-1.5 . 0) d2-^\ff~
 	d8 c( a bes)
 	d2-^~
 % Bars 121 to 125
@@ -126,7 +126,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a8 r r4
 	R2
 % Bars 126 to 130
-	r4 g,8(\< c
+	r4 g,8( c\<
 	e[ g] \tuplet 3/2 4 {bes d c)\!}
 	d2-^~
 	d8 c( a bes)
@@ -309,7 +309,7 @@ musicClarinettoIIMvtIII = \relative c {
 	ees2~
 % Bars 321 to 325
 	ees \mark \default
-	bes'4->\ff c->
+	bes'4->-\tweak X-offset #0.3 \ff c->
 	\restPattern d8 f16( d8) c16
 	bes4-> a->
 	bes4->~ bes8 r
@@ -447,7 +447,7 @@ musicClarinettoIIMvtIII = \relative c {
 	bes-! bes-!
 	bes-! bes-!
 % Bars 456 to 460
-	bes-! bes~\fp
+	bes-! bes~-\tweak X-offset 0.3 \fp
 	bes2~\<
 	bes~
 	bes~
@@ -622,7 +622,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 611 to 615
 	<< des~ {s4 s\!}>>
 	des8\p r r4
-	\tuplet 3/2 4 {bes8[\pp bes bes]  bes bes bes
+	\tuplet 3/2 4 {bes8[-\tweak X-offset -2 \pp bes bes]  bes bes bes
 	bes[ bes bes]  bes bes bes
 	bes[ bes bes]  bes bes bes
 % Bars 616 to 620
@@ -630,9 +630,9 @@ musicClarinettoIIMvtIII = \relative c {
 	bes[ bes bes]  bes bes bes
 	bes[ bes bes]  aes aes aes
 	aes[ aes aes]  aes aes aes 
-	bes[ bes bes]  bes bes bes
+	\tupletUp bes[ bes bes]  bes bes bes
 % Bars 621 to 625
-	bes[ bes bes]  bes bes bes
+	bes[ bes bes]  bes bes bes \tupletNeutral
 	bes[ bes bes]  aes aes aes
 	aes[ aes aes]  aes aes aes
 	bes[ bes bes]  aes aes aes

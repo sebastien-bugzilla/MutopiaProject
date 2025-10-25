@@ -60,14 +60,14 @@ musicCornoIMvtIII = \relative c {
 % Bars 51 to 55
 	f\fp
 	R
-	\partCombineApart << f-> {s4 s_\dimmarkup}>>
+	\partCombineApart << f-> {s4 s-\offset X-offset -2 ^\dimmarkup}>>
 	d2->
 	c->~
 % Bars 56 to 60
 	c8 r r4 \partCombineAutomatic
-	ees2\fp
+	ees2-\tweak X-offset 0.3 \fp
 	R
-	ees\fp
+	ees-\tweak X-offset 0.3 \fp
 	R
 % Bars 61 to 65
 	\partCombineApart ees->_\dimmarkup
@@ -138,7 +138,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 116 to 120
 	bes4..\< bes16-.
 	bes4..-> bes16-.\! \mark \default
-	bes2-^\ff~
+	\dynEO #'(-2 . 1) bes2-^\ff~
 	bes8 r r4
 	ees2-^~
 % Bars 121 to 125
@@ -176,7 +176,7 @@ musicCornoIMvtIII = \relative c {
 	R2
 	c4\fz r
 	R2
-	des4\fz r
+	des4-\tweak X-offset 0.3 \fz r
 % Bars 151 to 155
 	R2
 	d!4\fz r
@@ -184,11 +184,11 @@ musicCornoIMvtIII = \relative c {
 	ees4\brack\p\< r
 	ees r
 % Bars 156 to 160
-	ees r
+	\markEO #'(1 . 3) ees_\crescmarkup r
 	ees\! r
 	R2*2
 	
-	\tuplet 3/2 4 {f,8\brack\ff-^ a-^ c-^ } ees4\fz~
+	\tuplet 3/2 4 {\dynEO #'(-3 . 1.5) f,8\brack\ff-^ a-^ c-^ } ees4\fz~
 % Bars 161 to 165
 	<< ees2\> {s8 s s s\!}>>
 	R2*6
@@ -510,7 +510,7 @@ musicCornoIMvtIII = \relative c {
 	R
 	R
 % Bars 451 to 455
-	\mmrPos #6 R
+	\mmrPos #7 R
 	\mmrPos #6 R
 	\mmrPos #6 R
 	\mmrPos #6 R
@@ -692,7 +692,7 @@ musicCornoIMvtIII = \relative c {
 	fis-> eis->
 	gis-> cis,->
 % Bars 626 to 630
-	fis->\< eis->
+	fis->_\< eis->
 	gis-> cis,->\! \partCombineAutomatic
 	cis2->\f
 	b->
@@ -795,7 +795,7 @@ musicCornoIMvtIII = \relative c {
 	
 	
 	
-	d2->\f~
+	\dynEO #'(-2 . 1.5) d2->\f~
 % Bars 721 to 725
 	d
 	des\fz
@@ -839,7 +839,7 @@ musicCornoIMvtIII = \relative c {
 	bes8 r r4
 	R2
 % Bars 756 to 760
-	r4 r8. f'16_\fbrackf
+	r4 r8. \markEO #'(0 . 0) f'16_\fbrackf
 	d2->~
 	d8 r r4
 	ees8-. r r4

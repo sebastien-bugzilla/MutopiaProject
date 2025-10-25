@@ -42,7 +42,7 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 	\mark \default
-	aes4->\ff bes->
+	\dynEO #'(0 . 2) aes4->\ff bes->
 % Bars 66 to 70
 	\restPattern c8-. ees16( c8) bes16-.
 	aes4-> bes->
@@ -68,7 +68,7 @@ musicFlautoIMvtIII = \relative c {
 	R2*2
 	
 % Bars 86 to 90
-	bes4-!_\fbrackcresc r
+	bes4-!-\offset X-offset -0.5 _\fbrackcresc r
 	c-! r
 	des-! r
 	ees-! r
@@ -79,7 +79,7 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 101 to 105
 	
-	r4 \acciaccatura {bes16 c d} ees8\fz r
+	r4 \acciaccatura {bes16 c d} \dynEO #'(0 . 2) ees8\fz r
 	R2*15
 % Bars 106 to 110
 	
@@ -88,7 +88,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 116 to 120
 	
 	\mark \default
-	c2\ff-^~
+	\dynEO #'(0 . 2) c2\ff-^~
 	c8 bes( g aes)
 	ees'2-^~
 % Bars 121 to 125
@@ -116,7 +116,7 @@ musicFlautoIMvtIII = \relative c {
 	R2*2
 	
 % Bars 141 to 145
-	r8. ees'16[(\p^\solo c8) r16 bes](
+	r8. ees'16[(\p-\offset X-offset -5 ^\solo c8) r16 bes](
 	a8) r r4
 	R2*2
 	
@@ -150,7 +150,7 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 176 to 180
 	
-	ees''2_\fbrackf~
+	\markEO #'(0 . 2) ees''2_\fbrackf~
 	\restPattern ees8 d16( f8) d16(
 	ees8) r r4
 	c-.\p r 
@@ -161,15 +161,15 @@ musicFlautoIMvtIII = \relative c {
 	ees-. r
 	ees-. r
 % Bars 186 to 190
-	r f\brack\fz-^
+	r \dynEO #'(0 . 2) f\brack\fz-^
 	R2
-	r4 f\fz-^
-	r f\fz-^
+	r4 \dynEO #'(0 . 2) f\fz-^
+	r \dynEO #'(0 . 2) f\fz-^
 	ees-^ r
 % Bars 191 to 195
-	r g-^\fz
-	r g-^\fz
-	\restPattern g8-.\brack\fz fis16( a8) fis16(
+	r \dynEO #'(0 . 2) g-^\fz
+	r \dynEO #'(0 . 2) g-^\fz
+	\dynEO #'(0 . 2) \restPattern g8-.\brack\fz fis16( a8) fis16(
 	g8) r r4
 	\restPattern g8-. fis16( a8) fis16(
 % Bars 196 to 200
@@ -215,7 +215,7 @@ musicFlautoIMvtIII = \relative c {
 	cis4..->)\fz a16(
 	d4..->)\fz\< f16(
 % Bars 251 to 255
-	e4.._\fzmarkup)-> c!16(\!
+	\markEO #'(0 . 2) e4.._\fzmarkup)-> c!16(\!
 	f8) r r4
 	R2*3
 	
@@ -240,21 +240,21 @@ musicFlautoIMvtIII = \relative c {
 	f4..\fz g16(
 % Bars 271 to 275
 	f8 e d c)
-	f(\f e d c)
+	\dynEO #'(0 . 2) f(\f e d c)
 	e( d c b)
 	d( c b a)
 	c( b a g)
 % Bars 276 to 280
 	c4-. r
-	c4..->\fz c16
+	\dynEO #'(0 . 2) c4..->\fz c16
 	c4-. r
-	ees4..->\fz ees16
+	\dynEO #'(0 . 2) ees4..->\fz ees16
 	ees4-. r
 % Bars 281 to 285
-	ees4..->\fz ees16
+	\dynEO #'(0 . 2) ees4..->\fz ees16
 	ees4-. r
-	ees4..->\fz ees16
-	d2-^\ff~
+	\dynEO #'(0 . 2) ees4..->\fz ees16
+	\dynEO #'(0 . 2) d2-^\ff~
 	d8 r r4
 % Bars 286 to 290
 	R2*36
@@ -272,7 +272,7 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 321 to 325
 	\mark \default
-	aes4->\ff bes->
+	\dynEO #'(0 . 2) aes4->\ff bes->
 	\restPattern c8 ees16( c8) bes16
 	aes4-> bes->
 	c->( aes8) r
@@ -300,18 +300,18 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 	
-	aes'4(_\brackfffz aes,8) r
-	aes'4(\fz aes,8) r
+	\markEO #'(0 . 2) aes'4(_\brackfffz aes,8) r
+	\dynEO #'(0 . 2) aes'4(\fz aes,8) r
 % Bars 356 to 360
-	aes'4(\fz aes,8) r
-	aes'4(\fz aes,8) r
-	aes'4(\fz aes,8) r
-	aes'4(\fz aes,8) r
-	aes'4(\fz aes,8) r
+	\dynEO #'(0 . 2) aes'4(\fz aes,8) r
+	\dynEO #'(0 . 2) aes'4(\fz aes,8) r
+	\dynEO #'(0 . 2) aes'4(\fz aes,8) r
+	\dynEO #'(0 . 2) aes'4(\fz aes,8) r
+	\dynEO #'(0 . 2) aes'4(\fz aes,8) r
 % Bars 361 to 365
-	aes'4(\fz aes,8) r
+	\dynEO #'(0 . 2) aes'4(\fz aes,8) r
 	R2
-	aes'4(\fz aes,8) r
+	\dynEO #'(0 . 2) aes'4(\fz aes,8) r
 	R2*29
 % Bars 366 to 370
 	
@@ -326,7 +326,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 391 to 395
 	
 	\mark \default
-	c2->\ff~
+	\dynEO #'(0 . 2) c2->\ff~
 	c8 bes( g aes)
 	ees'2->~
 % Bars 396 to 400
@@ -408,7 +408,7 @@ musicFlautoIMvtIII = \relative c {
 	R2*2
 	\mark \default
 	\scaleDurations 2/3 { 
-		\timeSignature 3/4 e'2.\ff~
+		\timeSignature 3/4 \dynEO #'(0 . 2) e'2.\ff~
 		e
 % Bars 486 to 490
 		\key e \major e2( dis4
@@ -445,7 +445,7 @@ musicFlautoIMvtIII = \relative c {
 	r8. fis'16[(\brack\f dis8) r16 b16](
 	cis4) r
 	r8. gis'16([ e8) r16 cis-.] \section \break
-	\key ees \major ees!2->\ff~
+	\key ees \major \dynEO #'(0 . 2) ees!2->\ff~
 	ees8 f,( d ees)
 % Bars 526 to 530
 	bes'2->~
@@ -567,14 +567,14 @@ musicFlautoIMvtIII = \relative c {
 % Bars 641 to 645
 	aes4..\fz aes16
 	a8 r r4
-	a4..\fz a16 
+	\dynEO #'(0 . 1) a4..\fz a16 
 	b8 r r4
 	R2*7
 % Bars 646 to 650
 	
 % Bars 651 to 655
 	\mark \default
-	ges'2->\ff~
+	\dynEO #'(0 . 2) ges'2->\ff~
 	\restPattern ges8 f16( aes8) f16(
 	ges2->~
 	\restPattern ges8) f16( aes8) f16(
@@ -600,7 +600,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 676 to 680
 	
 	
-	r4 e(->\f\>
+	r4 \dynEO #'(-1 . 0) e(->\f\>
 	dis d8 cis\!
 	e) r r4
 % Bars 681 to 685
@@ -616,16 +616,16 @@ musicFlautoIMvtIII = \relative c {
 	dis\< d16 cis e8 d16 cis
 	f8 ees!16 des f8 ees16 des)\!
 % Bars 691 to 695
-	ges8(\f f aes ges)
-	\flattrill << fes2\startTrillSpan {s8 s s s\stopTrillSpan}>>
-	ees8( des fes ees)
-	<< des2\startTrillSpan {s8 s s s\stopTrillSpan}>>
-	ces8( bes des ces)
+	\dynEO #'(0 . 2) ges8(\f f aes ges)
+	\flattrill fes2\startTrillSpan 
+	ees8(\stopTrillSpan des fes ees)
+	des2\startTrillSpan 
+	ces8(\stopTrillSpan bes des ces)
 % Bars 696 to 700
-	\naturaltrill << a2\startTrillSpan {s8 s s s\stopTrillSpan}>>
-	aes!8( g bes! aes)
-	<< ges2\startTrillSpan {s8 s s s\stopTrillSpan}>>
-	bes8( a c bes
+	\naturaltrill a2\startTrillSpan 
+	aes!8(\stopTrillSpan g bes! aes)
+	ges2\startTrillSpan 
+	bes8(\stopTrillSpan a c bes
 	ees) r r4
 % Bars 701 to 705
 	R2*21
@@ -637,7 +637,7 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 721 to 725
 	
-	r4 r8. ees16-.\f
+	r4 r8. \dynEO #'(0 . 2) ees16-.\f
 	d4..-> bes16
 	ees8 r r4
 	R2
@@ -654,7 +654,7 @@ musicFlautoIMvtIII = \relative c {
 	ees-. r r4
 	r8 ees-. d-. bes-.
 % Bars 736 to 740
-	ees2-^\brack\ff~
+	\dynEO #'(0 . 2) ees2-^\brack\ff~
 	ees~
 	ees~
 	ees
@@ -668,7 +668,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 746 to 750
 	bes~
 	bes
-	\restPattern ees,8-._\ffbrackp d16( f8) d16(
+	\markEO #'(0 . 1) \restPattern ees,8-._\ffbrackp d16( f8) d16(
 	\restPattern ees8-.)_\pocoapococresc d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 % Bars 751 to 755
@@ -679,7 +679,7 @@ musicFlautoIMvtIII = \relative c {
 	\restPattern ees8-.) d16( f8) d16(
 % Bars 756 to 760
 	ees8) r r8. bes'16\ff
-	g2->\fz~
+	\dynEO #'(0 . 2) g2->\fz~
 	g8 r r4
 	f8-. r r4
 	ees8-. r r4\fermata \fine

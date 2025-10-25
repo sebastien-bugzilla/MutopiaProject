@@ -47,7 +47,7 @@ musicCornoIIMvtIII = \relative c {
 	
 	
 	
-	c2(\pp
+	c2(-\offset X-offset 1.5 \pp
 % Bars 41 to 45
 	f8) r r4
 	R2*7
@@ -65,9 +65,9 @@ musicCornoIIMvtIII = \relative c {
 	
 % Bars 56 to 60
 	
-	aes2\fp
+	aes2-\tweak X-offset 0.3 \fp
 	R
-	aes\fp
+	aes-\tweak X-offset 0.3 \fp
 	R
 % Bars 61 to 65
 	R2*4
@@ -176,7 +176,7 @@ musicCornoIIMvtIII = \relative c {
 	R2
 	fis4\fz r
 	R2
-	g!4\fz r
+	g!4-\tweak X-offset 0.3 \fz r
 % Bars 151 to 155
 	R2
 	aes4\fz r
@@ -249,7 +249,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 221 to 225
 	
 	
-	r4 g,-.\brack\pp
+	r4 \dynEO #'(-3 . 2) g,-.\brack\pp
 	c-. r
 	R2
 % Bars 226 to 230
@@ -500,7 +500,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 441 to 445
 	
 	
-	bes4-!\brack\pp bes-!
+	\dynEO #'(-3 . 2) bes4-!\brack\pp bes-!
 	bes-! bes-!
 	bes-! bes-!
 % Bars 446 to 450

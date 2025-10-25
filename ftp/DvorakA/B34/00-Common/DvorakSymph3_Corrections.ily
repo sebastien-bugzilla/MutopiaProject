@@ -73,6 +73,9 @@ correctionMvtIII = \markup {
 	% bar 368 / Viola
 	"Bar 368, Viola : the slur at the end of the measure is not ended at measure 369. No slur is printed in part score. The slur is removed."
 	
+	% bar 504 / Timpani
+	"Bar 504, Timpani : an indication of mutation is missing. It is added"
+	
 	% bar 597 / Viola
 	"Bar 597, Viola upper voice : the natural is indicated for the f but should be printed for the d of the lower voice, similarly to bar 601"
 	

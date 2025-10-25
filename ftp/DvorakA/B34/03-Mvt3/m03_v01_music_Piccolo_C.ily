@@ -40,7 +40,7 @@ musicPiccoloMvtIII = \relative c {
 	\restPattern d8) c16( f8) a,16(
 % Bars 56 to 60
 	bes8) r r r32 a(\< bes c\!
-	des2)\fp~
+	\dynEO #'(0 . 1) des2)\fp~
 	\restPattern des8 c16( ees8) c16(
 	des2)\fp~
 	\restPattern des8 c16( ees8) c16(
@@ -66,7 +66,7 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 101 to 105
 	
-	r4 \acciaccatura {bes16 c d} ees8\fz r
+	r4 \acciaccatura {bes16 c d} \dynEO #'(0 . 2) ees8\fz r
 	R2*15
 % Bars 106 to 110
 	
@@ -75,7 +75,7 @@ musicPiccoloMvtIII = \relative c {
 % Bars 116 to 120
 	
 	\mark \default
-	c2\ff-^~
+	\dynEO #'(0 . 2) c2\ff-^~
 	c8 r r4
 	ees2-^~
 % Bars 121 to 125
@@ -140,7 +140,7 @@ musicPiccoloMvtIII = \relative c {
 	\restPattern a8) c16( b8) gis16(
 	\restPattern a8) a16( g!8) c,16(
 	f4..)\fz-> g16(
-	a4..)\fz-> g16(
+	\dynEO #'(0 . 1) a4..)\fz-> g16(
 % Bars 226 to 230
 	f4..)\fz-> e16(
 	dis4..)\fz-> b16(
@@ -152,27 +152,27 @@ musicPiccoloMvtIII = \relative c {
 	
 	r8. d16[(\p b8) r16 a](
 	g2~
-	\restPattern g8) g16(\< b8) d16(
+	\stemUp \restPattern g8) g16(\< b8) d16( \stemNeutral
 % Bars 236 to 240
 	g2)\!~
 	\restPattern g8 fis16(\< g8) a16(
 	bes!2~\!
 	bes8 a\> g f!)\!
-	ees4..->\fz d16(
+	\dynEO #'(0 . 1) ees4..->\fz d16(
 % Bars 241 to 245
-	ees4..)->\fz d16(
-	ees4..)\fz-> f16(
+	\dynEO #'(0 . 1) ees4..)->\fz d16(
+	\dynEO #'(0 . 1) ees4..)\fz-> f16(
 	ees8 d c bes)
-	ees4..->\fz d16(
-	ees4..)->\fz d16(
+	\dynEO #'(0 . 1) ees4..->\fz d16(
+	\dynEO #'(0 . 1) ees4..)->\fz d16(
 % Bars 246 to 250
-	ees4..)->\fz f16(
+	\dynEO #'(0 . 1) ees4..)->\fz f16(
 	ees8 d c bes)
 	ees4..->_\fzpococresc d16(
-	cis4..)->\fz a16(
-	d4..)\fz->\< f16(
+	\dynEO #'(0 . 1) cis4..)->\fz a16(
+	\dynEO #'(0 . 1) d4..)\fz->\< f16(
 % Bars 251 to 255
-	e4..)->_\fzmarkup c!16(\!
+	\markEO #'(0 . 2) e4..)->_\fzmarkup c!16(\!
 	f8) r r4
 	R2*53
 % Bars 256 to 260
@@ -197,7 +197,7 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 306 to 310
 	r4 r8. bes16(
-	ees2)\fp~
+	\dynEO #'(0 . 2) ees2)\fp~
 	\restPattern ees8 d16( f8) d16(
 	ees2\brack\fp~
 	\restPattern ees8) d16( f8) d16(
@@ -206,10 +206,10 @@ musicPiccoloMvtIII = \relative c {
 	\restPattern ees8)_\dimmarkup g16( f8) ees16(
 	\restPattern d8) c16( f8) a,16(
 	bes8) r r r32 a(\< bes c\!
-	des2\fp~
+	\dynEO #'(0 . 2) des2\fp~
 % Bars 316 to 320
 	\restPattern des8\>) c16( ees8) c16(\!
-	des2\fp~
+	\dynEO #'(0 . 2) des2\fp~
 	\restPattern des8) c16( ees8) c16(
 	\restPattern des8) c16( ees8) c16(
 	\restPattern des8) f16( ees8) des16(
@@ -246,7 +246,7 @@ musicPiccoloMvtIII = \relative c {
 % Bars 391 to 395
 	
 	\mark \default
-	c2->\ff~
+	\dynEO #'(0 . 2) c2->\ff~
 	c8 r r4
 	ees2->~
 % Bars 396 to 400
@@ -323,7 +323,7 @@ musicPiccoloMvtIII = \relative c {
 	
 	
 	\section
-	\key ees \major g,2->\ff~
+	\key ees \major \dynEO #'(0 . 2) g,2->\ff~
 	g8 f( d ees)
 % Bars 526 to 530
 	bes'2->~
@@ -412,7 +412,7 @@ musicPiccoloMvtIII = \relative c {
 % Bars 626 to 630
 	e4..->(\< fis16
 	e8 dis cis b)\!
-	fis'8\f r r4
+	\dynEO #'(0 . 2) fis'8\f r r4
 	R2*3
 	
 % Bars 631 to 635
@@ -437,7 +437,7 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 651 to 655
 	\mark \default
-	ges'2\ff->~
+	\dynEO #'(0 . 2) ges'2\ff->~
 	\restPattern ges8 f16( aes8) f16(
 	ges2->~
 	\restPattern ges8) f16( aes8) f16(
@@ -465,7 +465,7 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 681 to 685
 	
-	r8 e(\f dis d16 cis
+	r8 \dynEO #'(0 . 2) e(\f dis d16 cis
 	e8) r r4
 	r8 e( dis d16 cis
 	e8) r r4
@@ -476,16 +476,16 @@ musicPiccoloMvtIII = \relative c {
 	dis\< d16 cis e8 d16 cis
 	f8 ees!16 des f8 ees16 des)\!
 % Bars 691 to 695
-	ges8(\f f aes ges)
-	\flattrill << fes2\startTrillSpan {s8 s s s\stopTrillSpan}>>
-	ees8( des fes ees)
-	<< des2\startTrillSpan {s8 s s s\stopTrillSpan}>>
-	ces8( bes des ces)
+	\dynEO #'(0 . 2) ges8(\f f aes ges)
+	\flattrill fes2\startTrillSpan
+	ees8(\stopTrillSpan des fes ees)
+	des2\startTrillSpan
+	ces8(\stopTrillSpan bes des ces)
 % Bars 696 to 700
-	\naturaltrill << a2\startTrillSpan {s8 s s s\stopTrillSpan}>>
-	aes!8( g bes! aes)
-	<< ges2\startTrillSpan {s8 s s s\stopTrillSpan}>>
-	bes8( a c bes
+	\naturaltrill a2\startTrillSpan 
+	aes!8(\stopTrillSpan g bes! aes)
+	ges2\startTrillSpan 
+	bes8(\stopTrillSpan a c bes
 	ees) r r4
 % Bars 701 to 705
 	R2*21
@@ -497,7 +497,7 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 721 to 725
 	
-	r4 r8. ees16-.\f
+	r4 r8. \dynEO #'(0 . 2) ees16-.\f
 	d4..-> bes16
 	ees8 r r4
 	R2
@@ -514,7 +514,7 @@ musicPiccoloMvtIII = \relative c {
 	ees-. r r4
 	r8 ees-. d-. bes-.
 % Bars 736 to 740
-	ees2\brack\ff-^~
+	\dynEO #'(0 . 2) ees2\brack\ff-^~
 	ees~
 	ees~
 	ees
@@ -528,7 +528,7 @@ musicPiccoloMvtIII = \relative c {
 % Bars 746 to 750
 	bes~
 	bes
-	\restPattern ees,8-._\ffbrackp d16( f8) d16(
+	\markEO #'(0 . 2) \restPattern ees,8-._\ffbrackp d16( f8) d16(
 	\restPattern ees8-.)_\pocoapococresc d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 % Bars 751 to 755

@@ -49,7 +49,7 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	\mark \default
-	ees'4->\ff d->
+	\dynEO #'(-2.5 . 2) ees'4->\ff d->
 % Bars 66 to 70
 	ees8-> r r4
 	ees4-> d->
@@ -238,7 +238,7 @@ musicTrombeIIMvtIII = \relative c {
 	e4-> d->~
 % Bars 271 to 275
 	d2
-	c4(\f-> d8 e
+	\dynEO #'(-2.1 . 2.3) c4(\f-> d8 e
 	b2)
 	a4( b8 c!)
 	g4( a8 b)
@@ -284,7 +284,7 @@ musicTrombeIIMvtIII = \relative c {
 	
 % Bars 321 to 325
 	\mark \default
-	ees4->\ff d->
+	\dynEO #'(-2.3 . 2) ees4->\ff d->
 	ees-> r
 	ees-> d->
 	ees4.-> r8
@@ -308,9 +308,9 @@ musicTrombeIIMvtIII = \relative c {
 	
 % Bars 346 to 350
 	
-	dis4\fz( cis8) r
+	dis4-\offset X-offset 0.5 \fz( cis8) r
 	R2
-	dis4\fz( cis8) r
+	dis4-\offset X-offset 0.5 \fz( cis8) r
 	R2*4
 % Bars 351 to 355
 	
@@ -374,7 +374,7 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 411 to 415
 	d-^ r
 	bes-^ r
-	fis'8-.\fz r r4
+	fis'8-.-\offset X-offset 0.5 \fz r r4
 	R2
 	r4 cis8-. r
 % Bars 416 to 420

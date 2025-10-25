@@ -45,9 +45,9 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	\mark \default
-	aes''4->\ff bes->
+	aes''4->-\tweak X-offset 0.1 \ff bes->
 % Bars 66 to 70
-	\restPattern c8-. ees16( c8) bes16-.
+	c8-.[ c16\rest ees( c8) c16\rest bes]-.
 	aes4-> bes->
 	c->( aes8) r
 	aes4-> bes->
@@ -77,10 +77,10 @@ musicOboeIIMvtIII = \relative c {
 	ees4(\fz c8) r
 	R2 
 % Bars 91 to 95
-	aes,4\fp r8. g16(
+	aes,4-\offset X-offset 0.5 \fp r8. g16(
 	aes4) r8. g16(
 	aes4) r8. g16(
-	aes4.)\fz r8
+	aes4.)-\offset X-offset 0.5 \fz r8
 	aes4\p r8. g16(
 % Bars 96 to 100
 	aes4) r8. g16(
@@ -116,7 +116,7 @@ musicOboeIIMvtIII = \relative c {
 	c2-^~
 % Bars 131 to 135
 	c8 d( b c)
-	\marcatoUpperSlur e2-^(
+	\marcatoUpperSlur \shape #'((0 . 1.5)(0 . 0.5)(0 . 0)(0 . 0)) Slur e2-^(
 	f8)-. r g-. f-.
 	aes( g) f-. ees-.
 	ees( d) c-. bes-.
@@ -222,19 +222,19 @@ musicOboeIIMvtIII = \relative c {
 	<< f~\> {s8\> s s s\!}>>
 	f8 r r4
 % Bars 256 to 260
-	R2*4
-	
-	
-	
-	a,2\fz~
+	R2
+	R
+	\mmrPos #-6 R
+	R
+	a,2-\offset X-offset 0.5 \fz~
 % Bars 261 to 265
 	a
-	g\fz~
+	g-\offset X-offset 0.5 \fz~
 	g
 	a-^~
 	a
 % Bars 266 to 270
-	g~_\fzcresc
+	g~-\offset X-offset 0.5 \fz -\tweak X-offset #7 _\crescmarkup
 	g
 	a4 g~
 	g2
@@ -285,7 +285,7 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 321 to 325
 	\mark \default
-	aes,4->\ff bes->
+	\dynEO #'(-2.3 . 2) aes,4->\ff bes->
 	\restPattern c8 ees16( c8) bes16
 	aes4-> g->
 	aes->~ aes8 r
@@ -318,9 +318,9 @@ musicOboeIIMvtIII = \relative c {
 	aes4(-> ges8) r
 	aes4(-> ges8) r
 	aes4(-> ges8) r
-	a2\fz
+	a2-\offset X-offset 0.5 \fz
 % Bars 351 to 355
-	a\fz
+	a-\offset X-offset 0.5 \fz
 	a\brack\fz
 	a\fz
 	aes'!4(\fz aes,!8) r
@@ -346,7 +346,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 371 to 375
 	a4) r8. gis16(
 	a4) r8. gis16(
-	a4)\fz r
+	a4)-\offset X-offset 0.5 \fz r
 	R2*12
 % Bars 376 to 380
 	
@@ -356,7 +356,7 @@ musicOboeIIMvtIII = \relative c {
 	f'4(\fz d8) r
 	f4(\fz d8) r
 	f4(\fz d8) r
-	g,2->\ff~
+	\dynEO #'(-2.6 . 2) g,2->\ff~
 	g~
 % Bars 391 to 395
 	g~
@@ -417,7 +417,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 441 to 445
 	
 	
-	r4 bes-!\brack\pp
+	r4 \dynEO #'(-3 . 2) bes-!\brack\pp
 	bes-! bes-!
 	bes-! bes-!
 % Bars 446 to 450
@@ -433,7 +433,7 @@ musicOboeIIMvtIII = \relative c {
 	aes-! aes-!
 	aes-! aes-!
 % Bars 456 to 460
-	aes-! aes~\fp
+	aes-! aes~-\tweak X-offset 0.3 \fp
 	aes2\<~
 	aes~
 	aes~
@@ -501,7 +501,7 @@ musicOboeIIMvtIII = \relative c {
 	R2*2
 	
 % Bars 511 to 515
-	r8. b'16[(\mf fis8) r16 dis](
+	r8. b'16[(-\tweak X-offset -1.5 \mf fis8) r16 dis](
 	cis4) r
 	R2*2
 	
@@ -601,9 +601,9 @@ musicOboeIIMvtIII = \relative c {
 % Bars 611 to 615
 	<< e~ {s4 s\!}>>
 	e8\p r r4
-	R2*15
-	
-	
+	R2
+	\mmrPos #-6 R
+	R2*13
 % Bars 616 to 620
 	
 % Bars 621 to 625
@@ -619,7 +619,7 @@ musicOboeIIMvtIII = \relative c {
 	\key ees \major a8 r r4
 	a4..\fz a16
 	a8 r r4
-	a4..\fz a16
+	a4..-\tweak X-offset 0.3 \fz a16
 % Bars 636 to 640
 	g8 r r4
 	g4..\fz fis16
@@ -629,14 +629,14 @@ musicOboeIIMvtIII = \relative c {
 % Bars 641 to 645
 	aes4..\fz aes16
 	a8 r r4
-	a4..\fz a16
+	a4..-\tweak X-offset 0.1 \fz a16
 	b8 r r4
 	R2*7
 % Bars 646 to 650
 	
 % Bars 651 to 655
 	\mark \default
-	bes2->\ff~
+	\dynEO #'(-2.6 . 1.8) bes2->\ff~
 	bes8 r ces r
 	bes2~
 	bes8 r ces r
@@ -684,14 +684,14 @@ musicOboeIIMvtIII = \relative c {
 	f8 ees!16 des! f8 ees16 des)\!
 % Bars 691 to 695
 	ges8(\f f aes ges)
-	\flattrill << fes2\startTrillSpan {s8 s s s\stopTrillSpan}>>
-	ees8( des fes ees)
-	<< des2\startTrillSpan {s8 s s s\stopTrillSpan}>>
-	ces8( bes des ces)
+	\flattrill fes2\startTrillSpan
+	ees8(\stopTrillSpan des fes ees)
+	des2\startTrillSpan 
+	ces8(\stopTrillSpan bes des ces)
 % Bars 696 to 700
-	\naturaltrill << a2\startTrillSpan {s8 s s s\stopTrillSpan}>>
-	aes!8( g bes! aes)
-	<< ges2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	\naturaltrill a2\startTrillSpan 
+	aes!8(\stopTrillSpan g bes! aes)
+	ges2
 	bes8( a c bes
 	ees) r r4
 % Bars 701 to 705

@@ -131,14 +131,14 @@ musicViolinoIMvtIII = \relative c {
 % Bars 101 to 105
 	<g bes>8.->[ <ees ees'>16( <g bes>8) r16 <f aes>-.]
 	<g bes>4-> r8 ees32(\< f g aes)\!
-	<g bes>8.[\fz <ees ees'>16( <g bes>8) r16 <f aes>-.]
+	<g bes>8.[-\offset X-offset -1 \fz <ees ees'>16( <g bes>8) r16 <f aes>-.]
 	<g bes>8.->[ <ees ees'>16( <g bes>8) r16 <f aes>-.]
 	<g bes>8.->[ <ees ees'>16( <g bes>8) r16 <f aes>-.]
 % Bars 106 to 110
 	bes4(->\fz g8) r
 	c4(->\fz a8) r
 	des4(->\fz bes8) r
-	d!4(->_\fzpocoapococresc b8) r
+	d!4(->-\offset X-offset -2 _\fzpocoapococresc b8) r
 	ees4(->\fz c8) r
 % Bars 111 to 115
 	e4(->\fz cis8) r
@@ -204,7 +204,7 @@ musicViolinoIMvtIII = \relative c {
 	\restPattern g8) f16( aes8) d,16(
 	\restPattern f8) e16( g8) cis,16(
 	\restPattern ees!8) d16( f8) a,16(
-	bes8)->\ff^\marcatissimo a-> c-> a->
+	bes8)->_\ffmarcatissimo a-> c-> a->
 	bes-> a-> c-> a->
 % Bars 166 to 170
 	bes-> a-> c-> a->
@@ -295,7 +295,7 @@ musicViolinoIMvtIII = \relative c {
 	
 	
 	
-	r8. bes''16[(_\ppbracknaturale g8) r16 f](
+	r8. bes''16[(\pp g8) r16 f](
 % Bars 241 to 245
 	\restPattern ees8) bes'16( g8) f16(
 	\restPattern ees8) a16( f8) ees16(
@@ -334,7 +334,7 @@ musicViolinoIMvtIII = \relative c {
 	<c c'>4(\< <a' a'>
 % Bars 271 to 275
 	<g g'>4..\! <e e'>16)
-	<f f'>8(\f <e e'> <d d'> <c c'>)
+	<f f'>8(-\offset X-offset -1 \f <e e'> <d d'> <c c'>)
 	<e e'>( <d d'> <c c'> <b b'>)
 	<d d'>( <c c'> <b b'> <a a'>)
 	<c c'>( <b b'> <a a'> <g g'>)
@@ -345,7 +345,7 @@ musicViolinoIMvtIII = \relative c {
 	ges' r r4
 	R2
 % Bars 281 to 285
-	ces4..->\fz ces16-.
+	\dynEO #'(0 . 2) ces4..->\fz ces16-.
 	ces8(\< ges fes ees)
 	ees'( ces ges) r16 e'(\!
 	\marcatoUpperSlur f2)-^\ff~
@@ -363,7 +363,7 @@ musicViolinoIMvtIII = \relative c {
 	\restPattern c8) e,16( g8) f16(
 	\restPattern aes8) cis,16( ees8) d16(
 % Bars 296 to 300
-	\restPattern f8)_\brackM\dimmarkup a,16( c8) a16(
+	\restPattern f8)-\offset X-offset -1 _\brackM\dimmarkup a,16( c8) a16(
 	\restPattern bes8) a16( c8) a16(
 	\restPattern bes8) a16( c8) a16(
 	bes8:16) b:\p\< c: cis:
@@ -376,7 +376,7 @@ musicViolinoIMvtIII = \relative c {
 	bes8:16->\< b: c: cis:
 % Bars 306 to 310
 	d8\! r r4
-	ees2\fp~
+	\dynEO #'(0 . 2) ees2\fp~
 	\restPattern ees8 d16( f8) d16(
 	ees2\brack\fp~
 	\restPattern ees8) d16( f8) d16(
@@ -450,13 +450,13 @@ musicViolinoIMvtIII = \relative c {
 	<b, b'>4-^ r
 	R2*2
 	
-	b16(\brack\p\< cis dis e fis gis a b)\!
+	b16(\brack\p-\tweak rotation #'(3 -1 0) \< cis dis e fis gis a b)\!
 	<b, b'>4\f r
 % Bars 371 to 375
 	R2*2
 	
-	b16(\f\< cis dis e fis gis a b)\!
-	<gis b>8.\f[ <e e'>16( <gis b>8 r16 <fis a>-.])
+	b16(\f-\tweak rotation #'(4 -1 0) \< cis dis e fis gis a b)\!
+	<gis b>8.-\offset X-offset -1 \f[ <e e'>16( <gis b>8 r16 <fis a>-.])
 	<gis b>8.[ <e e'>16( <gis b>8 r16 <fis a>-.)]
 % Bars 376 to 380
 	<gis b>8.[ <e e'>16( <gis b>8 r16 <fis a>-.)]
@@ -491,7 +491,7 @@ musicViolinoIMvtIII = \relative c {
 % Bars 401 to 405
 	d( bes f\< bes)
 	d[( f] \tuplet 3/2 4 {aes c bes)\!}
-	c2:16\ff
+	\dynEO #'(0 . 2) c2:16\ff
 	c8 bes( g aes)
 	ees'2:16->
 % Bars 406 to 410
@@ -608,8 +608,8 @@ musicViolinoIMvtIII = \relative c {
 	r8. a16([\p fis8.) e16](
 % Bars 506 to 510
 	dis4) r
-	R2*2_\pocoapococresc
-	
+	R2
+	R-\offset X-offset 1.5 _\pocoapoco_cresc
 	r8. b'16[(\p fis8) r16 e](
 	dis4) r
 % Bars 511 to 515
@@ -681,7 +681,7 @@ musicViolinoIMvtIII = \relative c {
 	\key b \major fis2:32\pp\<
 	fis:\f\>
 % Bars 571 to 575
-	<< fis: {s8 s s s\!}>> \mark \default
+	<< fis: {s8\! s s s}>> \mark \default
 	\restPattern fis8\pp fis16( dis8) cis16(
 	b8) r r4
 	r8. fis''16[(\pp dis8) r16 cis](
@@ -749,7 +749,7 @@ musicViolinoIMvtIII = \relative c {
 % Bars 626 to 630
 	<b b'>4( <gis' gis'>
 	<< <fis fis'>4.. {s4 s8.\!}>> <dis dis'>16)
-	fis'8(->\f e dis cis)
+	\dynEO #'(0 . 2) fis'8(->\f e dis cis)
 	e(-> dis cis b)
 	dis(-> cis b ais)
 % Bars 631 to 635
@@ -778,7 +778,7 @@ musicViolinoIMvtIII = \relative c {
 	e4..-> e16-.
 % Bars 651 to 655
 	e4..-> e16-. \mark \default
-	ges2:16->\ff
+	\dynEO #'(0 . 2) ges2:16->\ff
 	\restPattern ges8 f16( aes8) f16(
 	ges2:16->)
 	\restPattern ges8 f16( aes8) f16(
@@ -825,7 +825,7 @@ musicViolinoIMvtIII = \relative c {
 	q:
 	<< q: {s4 s\!}>>
 % Bars 691 to 695
-	ges'8:16->\brack\ff f: aes: ges:
+	\dynEO #'(0 . 2) ges'8:16->\brack\ff f: aes: ges:
 	fes:-> ees: ges: fes:
 	ees:-> des: fes: ees:
 	des:-> c: ees: des:
@@ -903,8 +903,8 @@ musicViolinoIMvtIII = \relative c {
 	\restPattern ees8)-. d16( f8) d16(
 	\restPattern ees8)-. d16( f8) d16(
 % Bars 756 to 760
-	ees8)\ff r r8. bes'16-.\ff
-	g2->\fz~
+	\dynEO #'(0 . 2) ees8)\ff r r8. \dynEO #'(0 . 2) bes'16-.\ff
+	\dynEO #'(0 . 2) g2->\fz~
 	g8 r r4
 	f8-. r r4
 	ees8-. r r4\fermata \fine

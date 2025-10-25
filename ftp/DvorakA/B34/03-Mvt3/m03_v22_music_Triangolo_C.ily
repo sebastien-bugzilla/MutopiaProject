@@ -467,7 +467,7 @@ musicTriangoloMvtIII = \relative c {
 	c:
 	c:\p
 	c:_\pocoapococresc
-	c:_\crescmarkup
+	c:
 % Bars 751 to 755
 	c:
 	c:

@@ -399,8 +399,9 @@ musicTimpaniMvtIII = \relative c {
 	bes2:16\brack\p\<
 % Bars 471 to 475
 	bes4 r8 bes16 bes\!
-	bes4\f r
+	bes4\f r \changeStaffName #timpineh
 	R2*11^\mutaesinebinh
+	
 % Bars 476 to 480
 	
 % Bars 481 to 485
@@ -431,7 +432,7 @@ musicTimpaniMvtIII = \relative c {
 	e-^ e-^ e-^ 
 	e-^ e-^ e-^ 
 	e-^ e-^ e-^ }
-	b-^ r
+	b-^ r^\mutaeineshinb \changeStaffName #timpinesbes
 	R2*19
 % Bars 506 to 510
 	

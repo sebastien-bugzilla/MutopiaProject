@@ -91,7 +91,7 @@ nameGrandStaffIMvtIII = {
 	\set Staff.midiInstrument = #""
 }
 nameGrandStaffIIMvtIII = {
-	\set Staff.instrumentName = "Corni F"
+	\set Staff.instrumentName = "Corni"
 	\set Staff.shortInstrumentName = "Cor."
 	\set Staff.midiInstrument = #""
 }
