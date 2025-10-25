@@ -288,7 +288,7 @@ tutti = \markup {Tutti}
 % instrument modification
 %--------------------
 mutaindb = \markup {"muta in D, B"}
-mutainesb = \markup {"muta in Es, B"}
+mutainesb = \markup {\concat {"muta in E" \text-flat ", B" \text-flat }}
 mutainb = \markup {"muta in B"}
 mutaina = \markup {"muta in A"}
 mutainf = \markup {"muta in F"}
@@ -309,10 +309,10 @@ timpinesb = \markup {
 mutaesinebinh = \markup {"muta Es in E, B in H"}
 
 clinbes = \markup {
-	\center-column { \lower #1 "Cl" \concat {"in B" \text-flat}}
+	\center-column { \lower #1 "Cl." \concat {"in B" \text-flat}}
 }
 clina = \markup {
-	\center-column { \lower #1 "Cl" "in A"}
+	\center-column { \lower #1 "Cl." "in A"}
 }
 trbeinf = \markup {
 	\center-column { \lower #1 "Trbe" "in F"}
@@ -321,14 +321,45 @@ trbeine = \markup {
 	\center-column { \lower #1 "Trbe" "in E"}
 }
 timpineh = \markup {
-	\center-column { \lower #1 "Timp" "in E/H"}
+	\center-column { \lower #1 "Timp." "in E/H"}
 }
 timpinesbes = \markup {
 	\center-column { 
 		\lower #1 "Timp" \concat { "in E" \text-flat "/B" \text-flat }
 	}
 }
-
+cornI-IIinf = \markup {
+	\line {
+		\hspace #5 \lower #1.5 "in F"
+		\center-column {
+			"I." "II."
+		}
+	}
+}
+cornIII-IVinf = \markup {
+	\line {
+		\hspace #5 \lower #1.5 "in F"
+		\center-column {
+			"III." "IV."
+		}
+	}
+}
+cornI-IIine = \markup {
+	\line {
+		\hspace #5 \lower #1.5 "in E"
+		\center-column {
+			"I." "II."
+		}
+	}
+}
+cornIII-IVine = \markup {
+	\line {
+		\hspace #5 \lower #1.5 "in E"
+		\center-column {
+			"III." "IV."
+		}
+	}
+}
 %--------------------
 % functions
 %--------------------

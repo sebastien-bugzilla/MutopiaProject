@@ -107,8 +107,8 @@ musicCornoIIIMvtII = \relative c {
 % Bars 81 to 85
 	R2
 	\dynEO #'(-2.3 . 2.5) b!4.\f r8
-	b4. r8
-	R2*13^\mutainf \transposition f
+	b4. r8^\mutainf \transposition f \changeStaffName #cornIII-IVinf
+	R2*13 
 	
 % Bars 86 to 90
 	
@@ -242,7 +242,7 @@ musicCornoIIIMvtII = \relative c {
 	g4.\< r8\! \partCombineAutomatic
 % Bars 211 to 215
 	cis2\f-^~ 
-	cis8 r r4^\mutaine \transposition e
+	cis8 r r4^\mutaine \transposition e \changeStaffName #cornIII-IVine
 	R2 \section
 	R2*12
 	

@@ -123,7 +123,7 @@ musicCornoIMvtII = \relative c {
 	R2
 	r8 \dynEO #'(-3 . 2) a,->\brack\pp r a->
 % Bars 96 to 100
-	R2^\mutainf \transposition f
+	R2^\mutainf \transposition f \changeStaffName #cornI-IIinf
 	R\fermata \section
 	R2*2
 	
@@ -254,7 +254,7 @@ musicCornoIMvtII = \relative c {
 	ees4.\< ees8-.\! \partCombineAutomatic
 % Bars 211 to 215
 	e!2\f-^~
-	e8 r r4^\mutaine \transposition e
+	e8 r r4^\mutaine \transposition e \changeStaffName #cornI-IIine
 	R2 \section
 	R2
 	\partCombineApart r8 d(~\f d16 c b a

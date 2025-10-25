@@ -43,13 +43,41 @@ nameStaffVIMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffVIIMvtI = {
-	\set Staff.instrumentName = "I. II."
-	\set Staff.shortInstrumentName = "I. II."
+	\set Staff.instrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in F"
+			\center-column {
+				"I." "II."
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in F"
+			\center-column {
+				"I." "II."
+			}
+		}
+	}
 	\set Staff.midiInstrument = #""
 }
 nameStaffVIIIMvtI = {
-	\set Staff.instrumentName = "III. IV."
-	\set Staff.shortInstrumentName = "III. IV."
+	\set Staff.instrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in F"
+			\center-column {
+				"III." "IV."
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in F"
+			\center-column {
+				"III." "IV."
+			}
+		}
+	}
 	\set Staff.midiInstrument = #""
 }
 nameStaffIXMvtI = {
@@ -172,13 +200,41 @@ nameStaffVIMvtII = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffVIIMvtII = {
-	\set Staff.instrumentName = "I. II."
-	\set Staff.shortInstrumentName = "I. II."
+	\set Staff.instrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in E"
+			\center-column {
+				"I." "II."
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in E"
+			\center-column {
+				"I." "II."
+			}
+		}
+	}
 	\set Staff.midiInstrument = #""
 }
 nameStaffVIIIMvtII = {
-	\set Staff.instrumentName = "III. IV."
-	\set Staff.shortInstrumentName = "III. IV."
+	\set Staff.instrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in E"
+			\center-column {
+				"III." "IV."
+			}
+		}
+	}
+	\set Staff.shortInstrumentName = \markup {
+		\line {
+			\hspace #5 \lower #1.5 "in E"
+			\center-column {
+				"III." "IV."
+			}
+		}
+	}
 	\set Staff.midiInstrument = #""
 }
 nameStaffIXMvtII = {
@@ -207,12 +263,12 @@ nameStaffXIMvtII = {
 nameStaffXIIMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in Cis Gis"
+			\lower #1 "Timpani" "in Cis/Gis"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
-			\lower #1 "Timp." "in Cis Gis"
+			\lower #1 "Timp. in" "Cis/Gis"
 		}
 	}
 	\set Staff.midiInstrument = #""
@@ -383,7 +439,7 @@ nameStaffXIIIMvtIII = {
 	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
-			\lower #1 "Timp." \concat { "in E" \text-flat "/B" \text-flat }
+			\lower #1 "Timp. in" \concat { "E" \text-flat "/B" \text-flat }
 		}
 	}
 	\set Staff.midiInstrument = #""

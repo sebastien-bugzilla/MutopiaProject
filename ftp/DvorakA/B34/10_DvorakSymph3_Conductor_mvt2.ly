@@ -93,7 +93,6 @@
 				\new Staff {
 					\timeMvtII \nameStaffIIIMvtII
 					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
-%					\musicOboeIIMvtII
 				}
 				\new Staff {
 					\timeMvtII \nameStaffIVMvtII \musicCornoIngleseMvtII
@@ -105,7 +104,6 @@
 				\new Staff {
 					\timeMvtII \nameStaffVIMvtII
 					\partCombine #'(0 . 10) \musicFagottoIMvtII \musicFagottoIIMvtII
-%					\musicFagottoIIMvtII
 				}
 			>>
 			\new StaffGroup <<
@@ -114,25 +112,21 @@
 					\new Staff {
 						\timeMvtII \nameStaffVIIMvtII
 						\partCombine #'(0 . 10) \musicCornoIMvtII \musicCornoIIMvtII
-%						\musicCornoIIMvtII 
 					}
 					\new Staff {
 						\timeMvtII \nameStaffVIIIMvtII
 						\partCombine #'(0 . 10) \musicCornoIIIMvtII \musicCornoIVMvtII
-%						\musicCornoIVMvtII
 					}
 				>>
 				\new Staff {
 					\timeMvtII \nameStaffIXMvtII
 					\partCombine \musicTrombeIMvtII \musicTrombeIIMvtII
-%					\musicTrombeIIMvtII
 				}
 				\new GrandStaff \with { \nameGrandStaffIIIMvtII 
 					\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtII \nameStaffXMvtII
 						\partCombine \musicTrombonoIMvtII \musicTrombonoIIMvtII
-%						\musicTrombonoIIMvtII 
 					}
 					\new Staff {
 						\timeMvtII \nameStaffXIMvtII \musicTrombonoIIIMvtII
@@ -142,9 +136,7 @@
 			\new Staff {
 				\timeMvtII \nameStaffXIIMvtII \musicTimpaniMvtII
 			}
-			\new PianoStaff \with { \nameGrandStaffIVMvtII 
-%				\override StaffGrouper.staff-staff-spacing.minimum-distance = #10
-			} <<
+			\new PianoStaff \with { \nameGrandStaffIVMvtII } <<
 				\new Staff = "up" {
 					\timeMvtII \nameStaffXIIIMvtII \musicArpaUpMvtII
 				}
