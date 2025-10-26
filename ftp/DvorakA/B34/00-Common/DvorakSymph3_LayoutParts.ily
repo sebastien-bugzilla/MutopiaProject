@@ -45,7 +45,7 @@
 		\Staff
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f
-		\override MultiMeasureRest.space-increment = 0
+%		\override MultiMeasureRest.space-increment = 0
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 		\override CueClef.font-size = #-1 
 		\override CueEndClef.font-size = #-1 
@@ -59,11 +59,12 @@
 		\override RehearsalMark.extra-spacing-width = #'(-0.1 . 0.1)
 		\override RehearsalMark.extra-spacing-height = #'(-10 . 10)
 		\override RehearsalMark.outside-staff-priority = ##f
-		\override RehearsalMark.font-family = #'sans
-		\override BarNumber.font-size = #0.1
+%		\override RehearsalMark.font-family = #'sans
+%		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
 		
+		\override BarNumber.break-visibility = ##(#f #t #t)
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
 	}

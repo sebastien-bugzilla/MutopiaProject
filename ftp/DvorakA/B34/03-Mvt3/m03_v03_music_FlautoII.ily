@@ -9,7 +9,7 @@ musicFlautoIIMvtIII = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2*64
+	R2*61
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -34,9 +34,9 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 61 to 65
 	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	aes'''4->\ff bes->
 % Bars 66 to 70
 	\restPattern c8-. ees16( c8) bes16-.
@@ -67,22 +67,30 @@ musicFlautoIIMvtIII = \relative c {
 	aes-! r
 	bes-! r
 	c-! r
-	R2*12
+	R2*9
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
-% Bars 101 to 105
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 101 to 105
+	\mmrPos #-4 R \no
 	r4 \acciaccatura {bes16 c d} ees8\fz r
-	R2*15
+	R2*12
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
-% Bars 116 to 120
 	
-	\mark \default
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 116 to 120
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	c2\ff-^~
 	c8 bes( g aes)
 	ees'2-^~
@@ -123,11 +131,15 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 166 to 170
 	
 	\mark \default
-	R2*9
+	R2*6
 % Bars 171 to 175
 	
-% Bars 176 to 180
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 176 to 180
+	\mmrPos #-4 R \no
 	bes'2\ff~
 	bes8 r r4
 	R2
@@ -155,7 +167,7 @@ musicFlautoIIMvtIII = \relative c {
 	b8-^ r r4
 	R2
 	bes!8-^ r r4
-	R2*72
+	R2*66
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -183,9 +195,13 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 271 to 275
-	
+	\mmrPos #-4 R \no
 	f'8(\f e d c)
 	e( d c b)
 	d( c b a)
@@ -203,7 +219,7 @@ musicFlautoIIMvtIII = \relative c {
 	bes2-^\ff~
 	bes8 r r4
 % Bars 286 to 290
-	R2*36
+	R2*34
 % Bars 291 to 295
 	
 % Bars 296 to 300
@@ -216,8 +232,12 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 321 to 325
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	aes4->\ff bes->
 	\restPattern c8 ees16( c8) bes16
 	aes4-> bes->
@@ -258,7 +278,7 @@ musicFlautoIIMvtIII = \relative c {
 	aes'4(\fz aes,8) r
 	R2
 	aes'4(\fz aes,8) r
-	R2*29
+	R2*25
 % Bars 366 to 370
 	
 % Bars 371 to 375
@@ -269,9 +289,13 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 386 to 390
 	
-% Bars 391 to 395
 	
-	\mark \default
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 391 to 395
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	c2->\ff~
 	c8 bes( g aes)
 	ees'2->~
@@ -308,7 +332,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 421 to 425
 	<< b2->\<( {s8 s s s\!}>>
 	c8) r r4
-	R2*49
+	R2*44
 	
 	
 % Bars 426 to 430
@@ -329,8 +353,12 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 466 to 470
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 471 to 475
-	
+	\mmrPos #4 R \no
 	\tuplet 3/2 2 {ges4\brack\p\< des' ces
 	bes aes ges\!}
 	R2*2
@@ -372,7 +400,7 @@ musicFlautoIIMvtIII = \relative c {
 		dis2 cis4
 	}
 	\unsetTimeSignature b) r
-	R2*19
+	R2*16
 % Bars 506 to 510
 	
 % Bars 511 to 515
@@ -380,9 +408,9 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 516 to 520
 	
 % Bars 521 to 525
-	
-	
-	\section 
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section 
 	\key ees \major g2->\ff~
 	g8 f( d ees)
 % Bars 526 to 530
@@ -425,13 +453,17 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 571 to 575
 	\mark \default
-	R2*15
+	R2*9
 % Bars 576 to 580
 	
 % Bars 581 to 585
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 586 to 590
-	
+	\mmrPos #-4 R \no
 	<< cis'2\fz\>~ {s8 s s s\!}>>
 	cis2~
 	cis4 r
@@ -463,7 +495,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 611 to 615
 	<< e~ {s4 s\!}>>
 	e8\p r r4
-	R2*19
+	R2*15
 	
 	
 % Bars 616 to 620
@@ -472,8 +504,12 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 626 to 630
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 631 to 635
-	\section
+	\mmrPos #-4 R \no \section
 	\key ees \major fis,8\brack\f r r4
 	fis4..\fz fis16
 	fis8 r r4
@@ -548,16 +584,20 @@ musicFlautoIIMvtIII = \relative c {
 	bes8( a c bes
 	ees) r r4
 % Bars 701 to 705
-	R2*21
+	R2*19
 % Bars 706 to 710
 	
 % Bars 711 to 715
 	
 % Bars 716 to 720
 	
-% Bars 721 to 725
 	
-	r4 r8. ees16-.\f
+	
+	
+	\ni \mmrPos #4 R2
+% Bars 721 to 725
+	\mmrPos #4 R \no
+	\once \voiceOne r4 r8. ees16-.\f
 	d4..-> bes16
 	ees8 r r4
 	R2

@@ -9,7 +9,7 @@ musicFlautoIMvtIII = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2*44
+	R2*42
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -27,21 +27,21 @@ musicFlautoIMvtIII = \relative c {
 % Bars 41 to 45
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r4^\solo r8. a'''16(\p
 % Bars 46 to 50
 	c8)[ r16 a( bes8)] r
-	R2*18
+	R2*15
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
 % Bars 61 to 65
 	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	aes4->\ff bes->
 % Bars 66 to 70
 	\restPattern c8-. ees16( c8) bes16-.
@@ -80,14 +80,18 @@ musicFlautoIMvtIII = \relative c {
 % Bars 101 to 105
 	
 	r4 \acciaccatura {bes16 c d} ees8\fz r
-	R2*15
+	R2*12
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
-% Bars 116 to 120
 	
-	\mark \default
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 116 to 120
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	c2\ff-^~
 	c8 bes( g aes)
 	ees'2-^~
@@ -145,11 +149,15 @@ musicFlautoIMvtIII = \relative c {
 % Bars 166 to 170
 	
 	\mark \default
-	R2*9
+	R2*6
 % Bars 171 to 175
 	
-% Bars 176 to 180
 	
+	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-4 R
+% Bars 176 to 180
+	\mmrPos #-4 R \no
 	ees''2_\fbrackf~
 	\restPattern ees8 d16( f8) d16(
 	ees8) r r4
@@ -179,7 +187,7 @@ musicFlautoIMvtIII = \relative c {
 	\restPattern g8-. fis16( a8) fis16(
 	g8) r r4
 % Bars 201 to 205
-	R2*32
+	R2*29
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -190,9 +198,13 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 226 to 230
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 231 to 235
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #4 R \no
 	r8. d16[(\p b8) r16 a](
 	g2~
 	\restPattern g8) g16(\< b8) d16(
@@ -257,7 +269,7 @@ musicFlautoIMvtIII = \relative c {
 	d2-^\ff~
 	d8 r r4
 % Bars 286 to 290
-	R2*36
+	R2*34
 % Bars 291 to 295
 	
 % Bars 296 to 300
@@ -270,8 +282,12 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 321 to 325
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	aes4->\ff bes->
 	\restPattern c8 ees16( c8) bes16
 	aes4-> bes->
@@ -312,7 +328,7 @@ musicFlautoIMvtIII = \relative c {
 	aes'4(\fz aes,8) r
 	R2
 	aes'4(\fz aes,8) r
-	R2*29
+	R2*25
 % Bars 366 to 370
 	
 % Bars 371 to 375
@@ -323,9 +339,13 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 386 to 390
 	
-% Bars 391 to 395
 	
-	\mark \default
+	
+	\ni \mmrPos #-4 R2 
+	\mmrPos #-4 R
+% Bars 391 to 395
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	c2->\ff~
 	c8 bes( g aes)
 	ees'2->~
@@ -376,7 +396,7 @@ musicFlautoIMvtIII = \relative c {
 	a-! g-!
 	f-! b-!
 	c8-. r r4
-	R2*37
+	R2*32
 % Bars 436 to 440
 	
 % Bars 441 to 445
@@ -391,8 +411,12 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 466 to 470
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 471 to 475
-	
+	\mmrPos #4 R \no
 	\tuplet 3/2 2 {ges4\brack\p\< des' ces
 	bes aes ges\!}
 	R2*2
@@ -434,13 +458,17 @@ musicFlautoIMvtIII = \relative c {
 		dis2 cis4
 	}
 	\unsetTimeSignature b) r
-	R2*16
+	R2*14
 % Bars 506 to 510
 	
 % Bars 511 to 515
 	
 % Bars 516 to 520
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 521 to 525
 	r8. fis'16[(\brack\f dis8) r16 b16](
 	cis4) r
@@ -493,13 +521,18 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 571 to 575
 	\mark \default
-	R2*15
+	\ni \mmrPos #4 R2 \no
+	R2*8
 % Bars 576 to 580
 	
 % Bars 581 to 585
-	
+	\ni \mmrPos #-4 R2 
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 586 to 590
-	
+	\mmrPos #-4 R \no
 	<< fis2\fz\>~ {s8 s s s\!}>>
 	fis2~
 	fis4 r
@@ -628,16 +661,20 @@ musicFlautoIMvtIII = \relative c {
 	bes8( a c bes
 	ees) r r4
 % Bars 701 to 705
-	R2*21
+	R2*19
 % Bars 706 to 710
 	
 % Bars 711 to 715
 	
 % Bars 716 to 720
 	
-% Bars 721 to 725
 	
-	r4 r8. ees16-.\f
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 721 to 725
+	\mmrPos #-4 R \no
+	\once \voiceOne r4 r8. ees16-.\f
 	d4..-> bes16
 	ees8 r r4
 	R2

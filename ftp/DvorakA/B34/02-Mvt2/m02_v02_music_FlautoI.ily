@@ -9,13 +9,13 @@ musicFlautoIMvtII = \relative c {
 	\key cis \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*13
+	R2*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r4 r16 \tuplet 3/2 16 {gis'''32(\p^\solo b a} gis16) r
 	R2
 % Bars 16 to 20
@@ -33,15 +33,15 @@ musicFlautoIMvtII = \relative c {
 	
 	
 	\time 2/8 R4
-	\time 4/8 R2*11
+	\time 4/8 R2*9
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no \mark \default
 % Bars 46 to 50
 	cis4(\mf\> dis8)\! r
 	cis4(\mf\> dis8)\! r
@@ -105,9 +105,13 @@ musicFlautoIMvtII = \relative c {
 % Bars 96 to 100
 	
 	R2\fermata \section
-	\key des \major R2*8
+	\key des \major R2*6
 % Bars 101 to 105
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 106 to 110
 	r4 r8 bes,32(\brack\p\< des ges bes)\!
 	des4->\fp~ des8 des16.-. ees32-.
@@ -197,7 +201,7 @@ musicFlautoIMvtII = \relative c {
 	ges16 r r8 r4
 	R2*12
 % Bars 186 to 190
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 % Bars 191 to 195
 	
 % Bars 196 to 200

@@ -50,9 +50,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtI
-			}
+%			\new Voice {
+%				\formatFlautoIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtI
 			}
@@ -64,7 +64,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -74,9 +74,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtII
-			}
+%			\new Voice {
+%				\formatFlautoIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtII
 			}
@@ -98,9 +98,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtIII
-			}
+%			\new Voice {
+%				\formatFlautoIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtIII
 			}
@@ -122,9 +122,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtI
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtI
 			}
@@ -136,7 +136,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -146,9 +146,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtII
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtII
 			}
@@ -170,9 +170,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtIII
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtIII
 			}
@@ -194,9 +194,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatPiccoloMvtIII
-			}
+%			\new Voice {
+%				\formatPiccoloMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(piccolo) \tempiPartMvtIII
 			}
@@ -208,7 +208,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}

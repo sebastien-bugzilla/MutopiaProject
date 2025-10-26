@@ -5,10 +5,10 @@
 %#                      P A R T   S C O R E   F O R M A T                      #
 %###############################################################################
 formatArpaUpMvtII = {
-	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
-	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+%	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+%	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
 formatArpaDownMvtII = {
-	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
-	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+%	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+%	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }

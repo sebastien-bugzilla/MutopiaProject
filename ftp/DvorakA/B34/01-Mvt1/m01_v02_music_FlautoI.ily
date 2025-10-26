@@ -173,14 +173,14 @@ musicFlautoIMvtI = \relative c {
 % Bars 146 to 150
 	c4.~ c8\< d-> e->\!
 	f!4->\f r8 r4 r8
-	R2.*12
+	R2.*10
 % Bars 151 to 155
 	
 % Bars 156 to 160
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	\time 3/4 a,16(\f bes c bes) a( bes c bes) a( bes c bes)
 % Bars 161 to 165
 	\textMark "Vi-" \time 6/8 a( bes) c( bes) bes( aes!) aes( g) g( f) f( ees)
@@ -238,7 +238,7 @@ musicFlautoIMvtI = \relative c {
 	f8 r r f,-.\pp f-. r
 % Bars 206 to 210
 	f-. f-. r f-. f-. r
-	f-. f-. r f-. f-. r %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	f-. f-. r f-. f-. r
 	f-. f-. r f-. f-. r
 	<< f'2.~ {s8\< s s  s s s\!}>>
 	<< f2. {s8\> s s  s s s\!}>>
@@ -265,7 +265,7 @@ musicFlautoIMvtI = \relative c {
 	\time 6/8 d r r r4 r8
 	R2.
 	\time 3/8 R4.
-	\time 6/8 R2.*25
+	\time 6/8 R2.*23
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -277,15 +277,15 @@ musicFlautoIMvtI = \relative c {
 % Bars 251 to 255
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no \mark \default
 	e2.~\fp\>
 % Bars 256 to 260
 	<< e {s4. s\!}>>
-	R2.*6
+	R2.*4
 % Bars 261 to 265
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	fis,4.(~\p fis16 eis gis fis eis fis)
 	cis'4.~ cis4 fis,16-. gis-.
 	a8-.\< b-. cis-. d!-. e-. fis-.\!

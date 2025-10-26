@@ -29,15 +29,15 @@ musicFlautoIIMvtII = \relative c {
 	
 	
 	\time 2/8 R4
-	\time 4/8 R2*11
+	\time 4/8 R2*9
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no \mark \default
 % Bars 46 to 50
 	gis4\mf\>~ gis8\! r
 	gis4~\mf\> gis8\! r
@@ -86,11 +86,15 @@ musicFlautoIIMvtII = \relative c {
 % Bars 96 to 100
 	
 	R2\fermata \section
-	\key des \major R2*9
+	\key des \major R2*6
 % Bars 101 to 105
 	
-% Bars 106 to 110
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 106 to 110
+	\mmrPos #-4 R \no 
 	ges4->\fp~ ges8 ges16.-. aes32-.
 	ges4\fp\> ges8-.\! r
 	ges4\< ges8. bes16\!

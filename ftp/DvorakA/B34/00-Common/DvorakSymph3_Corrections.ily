@@ -85,3 +85,13 @@ correctionMvtIII = \markup {
 	% bar 722 / Cello & Contrabass
 	"Bar 722, Cello & Contrabass : an accent is printed in conductor score, a marcato in the part score. The part score is more coherent with adjacent measures."
 }
+correctionFlauti = \markup {
+	% bar 254 / Mvt I
+	"Bar 254, Mvt I : a natural is not indicated in violin cue voice. Valid also for Flauto II"
+	
+	% bar 230 / Mvt III
+	"Bar 230, Mvt III : In violin cue voice, the first note indicated f is actually a d."
+	
+	% bar 520 / Mvt III
+	"Bar 520, Mvt III : a missing rest is added. Valid also for Flauto II at bars 521 and 523."
+}
