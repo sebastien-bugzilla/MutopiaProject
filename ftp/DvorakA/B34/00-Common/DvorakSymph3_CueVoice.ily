@@ -301,28 +301,172 @@ cueVoiceFlautoIIMvtIII = \relative c {
 %#                     C U E   V O I C E   F O R   O B O I                     #
 %###############################################################################
 cueVoiceOboeIMvtI = \relative c {
-	
+	s2.*18 s4.*1 s2.*22 s4.*1 s2.*115
+	% bars 158 - 159
+	aes'''4.^\markup {Viol.I.} ges4( bes8)
+	bes4. aes4( c8)
 }
 cueVoiceOboeIMvtII = \relative c {
-	
+	% no cue voice
 }
 cueVoiceOboeIMvtIII = \relative c {
-	
+	s2*38
+	% bars 39 - 42
+	\voiceOne r4^\markup {Viol.I.} r8. f'16(
+	\restPattern a8) gis16( bes8) gis16(
+	\restPattern bes8) a16( c8) bes16(
+	\restPattern d8) cis16( ees8) d16\laissezVibrer \oneVoice
+	s2*72
+	% bars 115 - 117
+	g'4(\fz^\markup {Viol.I.} fis8) r
+	f!4(\fz e8) r
+	ees!8( d16) r des8( bes16) r
+	s2*93
+	% bars 211 - 215
+	c,,2^\markup {Viol.I.}
+	g'
+	e
+	d
+	c8 \voiceTwo r r4 \oneVoice
+	s2*81
+	% bars 297 - 298
+	\restPattern bes8^\markup {Archi} a16( c8) a16(
+	\restPattern bes8) a16( c8) a16
+	s2*75
+	% bar 374
+	<>^\markup {Cor. TrbneI.}
+	s2*198
+	% bar 572
+	\restPattern fis'8^\markup {Viol.I.} fis16( dis8) cis16
+	s2*147
+	% bars 720 - 722
+	\voiceTwo r4 r8.^\markup {Trbe} bes'16
+	g4.. f16
+	ees8 s s4 \oneVoice
 }
 cueVoiceOboeIIMvtI = \relative c {
-	
+	s2.*18 s4.*1 s2.*22 s4.*1 s2.*115
+	% bars 158 - 159
+	\voiceOne aes'''4.^\markup {Viol.I.} ges4( bes8)
+	bes4. aes4( c8) \oneVoice
 }
 cueVoiceOboeIIMvtII = \relative c {
-	
+	s2*33 s4*1 s2*69
+	% bar 104
+	\voiceOne aes''4^\markup {Ob.I.} bes8. c16 \oneVoice
 }
 cueVoiceOboeIIMvtIII = \relative c {
-	
+	s2*48
+	% bar 49
+	<>^\markup {Ob.I.}
+	s2*13
+	% bars 62 - 64
+	\voiceOne \restPattern des''8\repeatTie f16( ees8) des16(
+	\restPattern c8) bes16( ees8) g,16 \oneVoice
+	aes8 r r4
+	s2*50
+	% bars 115 - 117
+	g''4(^\markup {Viol.I.} fis8) r
+	f!4( e8) r
+	ees!8( d16) r des8( bes16) r
+	s2*36
+	% bars 154 - 155
+	\voiceOne f2^\markup {Ob.I.}
+	aes \oneVoice
+	s2*77
+	% bar 233
+	<>^\markup {Fl.p.,Fl.I.}
+	s2*4
+	% bar 237
+	<>^\markup {Ob.I.}
+	s2*60
+	% bars 297 - 298
+	\restPattern bes,,8^\markup {Archi} a16( c8) a16(
+	\restPattern bes8) a16( c8) a16\laissezVibrer
+	s2*21
+	% bars 320 - 321
+	\stemUp \restPattern des'8\repeatTie^\markup {Ob.I.} f16( ees8) des16(
+	\restPattern c8) bes16( ees8) g,16 \stemNeutral
+	s2*52
+	% bar 374
+	<>^\markup {Cor.Trbne I.}
+	s2*207
+	% bars 581 - 586
+	\voiceOne e'4..->^\markup {Ob.I.} fis16(
+	gis4..)-> fis16(
+	e4..)-> dis16(
+	cisis4..)-> ais16(
+	dis4..)-> fis16(
+	eis4..)-> cis16 \oneVoice
+	s2*35
+	% bars 622 - 627
+	\voiceOne e4..(->^\markup {Ob.I.} fis16
+	e8 dis cis b)
+	e4..(-> fis16
+	e8 dis cis b)
+	e4..(-> fis16
+	e8 dis cis b) \oneVoice
+	s2*92
+	% bars 720 - 722
+	\voiceTwo r4 r8.^\markup {Trba} bes16
+	g4.. f16
+	ees8 \oneVoice s s4
 }
 cueVoiceCornoIngleseMvtI = \relative c {
-	
+	s2.*18 s4.*1 s2.*4
+	% bars 24 - 26
+	\transpose f c {
+		\relative c'' {
+			\voiceOne ees4.^\markup {Ob.I.II.} d16( ees f ees d ees)
+			a4. d,16( ees f ees d ees)
+			des4. c16( des f ees des f) \oneVoice
+		}
+	}
+	s2.*15 s4.*1 s2.*29
+	% bars 72 - 75
+	\transpose f c {
+		\relative c'' {
+			\voiceOne r4 r8^\markup {Ob.I.} r4 ees16( f
+			ges4.) f16( ges aes ges f ges)
+			ees4.~ ees4 f16( ges
+			ees8)( f16 ges ees8) f16( ges ees8) s \oneVoice
+		}
+	}
+	s2.*153 s4.*1 s2.*33
+	% bar 263
+	\transpose f c {
+		\relative c'' {
+			\voiceOne fis4.(~^\markup {Ob.I.} fis16 eis gis fis eis fis)
+		}
+	}
+	s2.*23
+	% bars 287 - 288
+	\transpose f c {
+		\relative c'' {
+			\voiceOne <bes bes'>4(^\markup {\column { \lower #1.5 "Fl." "Ob."} } <g g'>16) r <cis cis'>4( <bes bes'>16) r
+			<cis cis'>4( <bes bes'>16) r r4 r8
+		}
+	}
 }
 cueVoiceCornoIngleseMvtII = \relative c {
-	
+	s2*25
+	% bars 26 - 27
+	\voiceOne d''8.(^\markup {Cl.I.} b32 cis! d8 b)
+	d8.( b32 cis! d8 b) \oneVoice
+	s2*6 s4*1 s2*166
+	% bars 201 - 204
+	\voiceOne ees4^\markup {Ob.I.} ees8 ees16. f32
+	ees4 ees
+	g g8 g16. aes32
+	g4 g \oneVoice
+	s2*23 s4*1
+	% bars 229 - 230
+	\transpose f c {
+		\relative c'' {
+			\voiceOne \tuplet 6/4 4 { d16-.^\markup {Ob.I.} c-. d-. e( fis) e-. d-. cis-. d-. e( fis) e-. }
+			d8 r r4 \oneVoice
+		}
+	}
 }
 %###############################################################################
 %#               C U E   V O I C E   F O R   C L A R I N E T T I               #

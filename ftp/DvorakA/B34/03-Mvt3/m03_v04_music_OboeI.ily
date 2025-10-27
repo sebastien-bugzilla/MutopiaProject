@@ -9,7 +9,7 @@ musicOboeIMvtIII = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2*42
+	R2*38
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -24,9 +24,13 @@ musicOboeIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 41 to 45
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r4 r8.^\solo f''16([\p
 	aes8]) r16 g16([ bes8]) r
 	R2*3
@@ -99,14 +103,18 @@ musicOboeIMvtIII = \relative c {
 % Bars 101 to 105
 	
 	r4 \acciaccatura {bes,16 c d} ees8\fz r
-	R2*15
+	R2*12
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
-% Bars 116 to 120
 	
-	\mark \default
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 116 to 120
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	aes2-^\ff~
 	aes8 bes( g aes)
 	aes2-^~
@@ -204,11 +212,15 @@ musicOboeIMvtIII = \relative c {
 	\restPattern g8 fis16( a8) fis16(
 	g8) r r4
 % Bars 201 to 205
-	R2*15
+	R2*10
 % Bars 206 to 210
 	
 % Bars 211 to 215
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 216 to 220
 	r8.^\solo g16[(\p e8) r16 d](
 	c2~
@@ -290,13 +302,13 @@ musicOboeIMvtIII = \relative c {
 	aes2-^\ff~
 	aes8 r r4
 % Bars 286 to 290
-	R2*13
+	R2*11
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	r4 r8. f,16\f
 	d4..->\fz c16
 % Bars 301 to 305
@@ -608,7 +620,7 @@ musicOboeIMvtIII = \relative c {
 	
 % Bars 571 to 575
 	\mark \default
-	R2
+	\ni \mmrPos #4 R2 \no
 	r8. fis16[(\p dis8) r16 cis-.]
 	b2~
 	\restPattern b8\< b16( dis8) fis16-.\!
@@ -755,16 +767,20 @@ musicOboeIMvtIII = \relative c {
 	bes8( a c bes
 	ees,) r r4
 % Bars 701 to 705
-	R2*21
+	R2*19
 % Bars 706 to 710
 	
 % Bars 711 to 715
 	
 % Bars 716 to 720
 	
-% Bars 721 to 725
 	
-	r4 r8. ees16-.\f
+	
+	
+	\ni \mmrPos #4 R2
+% Bars 721 to 725
+	\mmrPos #4 R \no
+	\once \voiceOne r4 r8. ees16-.\f
 	d4..-> bes16
 	ees8 r r4
 	R2

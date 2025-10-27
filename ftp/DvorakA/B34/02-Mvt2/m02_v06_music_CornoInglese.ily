@@ -25,14 +25,14 @@ musicCornoIngleseMvtII = \relative c {
 	dis8.(\p\< cisis32 dis) fis16( e) e( dis)\!
 	dis8\f\>[ \acciaccatura fis e~ e dis]\!(
 	gis)\pp r r4
-	R2*13
+	R2*11
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
 % Bars 26 to 30
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	eis4(\f fis)\<
 	cis\brack\fp\>( dis\p
 	gis8) r r4
@@ -165,7 +165,7 @@ musicCornoIngleseMvtII = \relative c {
 	des2~
 % Bars 181 to 185
 	des8 r r4
-	R2*23
+	R2*19
 % Bars 186 to 190
 	
 % Bars 191 to 195
@@ -173,10 +173,10 @@ musicCornoIngleseMvtII = \relative c {
 % Bars 196 to 200
 	
 % Bars 201 to 205
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ees,4.\fz r8
 % Bars 206 to 210
 	ees4. r8
@@ -197,8 +197,8 @@ musicCornoIngleseMvtII = \relative c {
 	
 	\section
 	\time 2/8 R4 \section
-	\time 4/8 R2*2
-	
+	\time 4/8 \ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 231 to 235
 	fisis2\fp
 	<< ais!\> {s8 s s s\!}>>

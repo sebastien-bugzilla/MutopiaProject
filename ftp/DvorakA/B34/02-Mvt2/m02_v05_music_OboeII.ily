@@ -124,7 +124,7 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	
-	R2
+	\ni \mmrPos #-4 R2 \no
 	ges,4->\brack\fp~ ges8 ges16.-. f32-.
 % Bars 106 to 110
 	ges4\fp~ ges8 r

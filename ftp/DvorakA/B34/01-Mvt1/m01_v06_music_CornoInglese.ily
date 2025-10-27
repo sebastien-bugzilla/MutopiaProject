@@ -24,10 +24,10 @@ musicCornoIngleseMvtI = \relative c {
 	\time 6/8 R
 	\time 3/4 R
 	\time 6/8 R \mark \default
-	R2.*3
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 26 to 30
-	
+	\mmrPos #-4 R \no
 	des'4.(\p c16 des ees des c des)
 	aes'4.~ aes4 des,16-. ees-.
 	f8->\< ges-> aes-> bes->[ c-> r16 des]\!
@@ -55,7 +55,7 @@ musicCornoIngleseMvtI = \relative c {
 	R2.*5
 % Bars 51 to 55
 	\mark \default
-	R2.*23
+	R2.*20
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -64,10 +64,10 @@ musicCornoIngleseMvtI = \relative c {
 	
 % Bars 71 to 75
 	
-	
-	
-	
-	r4 r8 r4 g16(\p\< aes
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\voiceTwo r4 r8 r4 \oneVoice g16(\p\< aes
 % Bars 76 to 80
 	bes8)\! b-. c-.\> des-.[ ees-. r16 f]\! \mark \default
 	f2.\pp~
@@ -249,13 +249,13 @@ musicCornoIngleseMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*9
+	R2.*8
 % Bars 256 to 260
 	
 % Bars 261 to 265
 	
 	
-	
+	\ni \mmrPos #-4 R2. \no 
 	cis'2.\pp->~
 	cis8\< cis-. cis-. cis-. cis-. cis-.\!
 % Bars 266 to 270
@@ -269,15 +269,15 @@ musicCornoIngleseMvtI = \relative c {
 	fis8-.\< g-. a-. b-.[ cis-. r16 d]\!
 	<< d2.->~ {s8\fz\> s s  s s s\!}>>
 	d8 r r r4 r8
-	R2.*14
+	R2.*12
 % Bars 276 to 280
 	
 % Bars 281 to 285
 	
 % Bars 286 to 290
 	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \no
 	e,,2.\fz~
 	e
 % Bars 291 to 295

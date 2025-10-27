@@ -184,12 +184,12 @@ musicOboeIIMvtI = \relative c {
 	ees4(\f\< d8 des4.\brack\fz~
 	des4) r8 r4 r8
 % Bars 151 to 155
-	R2.*9
+	R2.*7
 % Bars 156 to 160
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	\time 3/4 a'16(\f bes c bes) a( bes c bes) a( bes c bes)
 % Bars 161 to 165
 	\time 6/8 a( bes) c( bes) bes( aes) aes( g) g( f) f( ees)
