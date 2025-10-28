@@ -472,22 +472,149 @@ cueVoiceCornoIngleseMvtII = \relative c {
 %#               C U E   V O I C E   F O R   C L A R I N E T T I               #
 %###############################################################################
 cueVoiceClarinettoIMvtI = \relative c {
-	
+	% no cue Voice for mvt I
 }
 cueVoiceClarinettoIMvtII = \relative c {
-	
+	% no cue Voice for mvt II
 }
 cueVoiceClarinettoIMvtIII = \relative c {
-	
+	s2*26
+	% bars 27 - 28
+	\transpose bes c' {
+		\relative c' {
+			\stemDown \restPattern ees8^\markup {Viol.I.} d16( f8) a,16(
+			\restPattern bes8) a16( c8) a16 \stemNeutral
+		}
+	}
+	s2*86
+	% bars 115 - 117
+	\transpose bes c' {
+		\relative c'''' {
+			g4(^\markup {Viol.I.} fis8) r
+			f!4( e8) r
+			ees!8( d16) r des8( bes16) r
+		}
+	}
+	s2*56
+	% bars 174 - 176
+	\transpose bes c' {
+		\relative c'' {
+			aes8_(^\markup {Ob.} ees bes'4->~
+			\voiceTwo bes8 a c bes
+			a bes c d) \oneVoice
+		}
+	}
+	s2*44
+	% bars 221 - 223
+	\voiceOne b'''2~^\markup {Fl.p.}
+	\restPattern b8 d16( cis8) ais16(
+	bes8)[ r16 b] s4 \oneVoice
+	s2*73
+	% bars 297 - 298
+	\transpose bes c' {
+		\relative c' {
+			\restPattern bes8^\markup {Archi} a16( c8) a16(
+			\restPattern bes8) a16( c8) a16
+		}
+	}
+	s2*75
+	% bar 374
+	<>^\markup {Cor.,Trbne I.}
+	s2*198
+	% bar 572
+	\transpose bes c' {
+		\relative c' {
+			\stemDown \restPattern f8^\markup {Viol.} f16( d8) c16 \stemNeutral
+		}
+	}
+	s2*147
+	% bar 720 - 721
+	\transpose bes c' {
+		\relative c'' {
+			\voiceTwo r4 r8.^\markup {Trbe} bes16
+			g4.. f16
+			ees8 s s4 \oneVoice
+		}
+	}
 }
 cueVoiceClarinettoIIMvtI = \relative c {
-	
+	s2.*18 s4.*1 s2.*22 s4.*1 s2.*186 s4.*1 s2.*11
+	% bars 241 - 244
+	\voiceOne f''4(^\markup {Cl.I.} aes16)[ r32 g-.] g4( f8)
+	f4( aes16)[ r32 g-.] g4( f8)
+	fis4( a!16)[ r32 g-.] g4( fis8)
+	g4( bes16)[ r32 a-.] a4( g8) \oneVoice
 }
 cueVoiceClarinettoIIMvtII = \relative c {
-	
+	% no Cue voice for MvtII
 }
 cueVoiceClarinettoIIMvtIII = \relative c {
-	
+	s2*26
+	% bars 27 - 28
+	\transpose bes c' {
+		\relative c' {
+			\oneVoice \restPattern ees8^\markup {Viol.I.} d16( f8) a,16(
+			\restPattern bes8) a16( c8) a16
+		}
+	}
+	s2*86
+	% bars 115 - 117
+	\transpose bes c' {
+		\relative c'''' {
+			g4(^\markup {Viol.I.} fis8) r
+			f!4( e8) r
+			ees!8( d16) r des8( bes16) r
+		}
+	}
+	s2*36
+	% bars 154 - 155
+	\transpose bes c' {
+		\relative c'' {
+			\voiceOne f2^\markup {Ob.I.}
+			aes \oneVoice
+		}
+	}
+	s2*18
+	% bars 174 - 176
+	\transpose bes c' {
+		\relative c'' {
+			aes8_(^\markup {Ob.} ees bes'4->~
+			\voiceTwo bes8 a c bes
+			a bes c d) \oneVoice
+		}
+	}
+	s2*56
+	% bars 233
+	<>^\markup {\column {\lower #1.5 "Fl.pic." "Fl. Cl.I."}}
+	s2*11
+	% bars 244 - 247
+	\voiceOne c''2~^\markup {Cl.I.}
+	c~
+	c4 b->
+	d-> g,-> \oneVoice
+	s2*49
+	% bars 297 - 298
+	\transpose bes c' {
+		\relative c' {
+			\restPattern bes8^\markup {Archi} a16( c8) a16(
+			\restPattern bes8) a16( c8) a16\laissezVibrer
+		}
+	}
+	s2*282
+	% bars 581- 584
+	\voiceOne g'4..\repeatTie aes16(
+	bes4..) aes16(
+	g4..) f16(
+	e4..) c16 \oneVoice
+	s2*135
+	% bar 720 - 721
+	\transpose bes c' {
+		\relative c'' {
+			\voiceTwo r4 r8.^\markup {Trbe} bes16
+			g4.. f16
+			ees8 s s4 \oneVoice
+		}
+	}
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #

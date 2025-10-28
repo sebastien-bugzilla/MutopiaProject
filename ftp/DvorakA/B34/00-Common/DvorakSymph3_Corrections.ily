@@ -95,3 +95,7 @@ correctionFlauti = \markup {
 	% bar 520 / Mvt III
 	"Bar 520, Mvt III : a missing rest is added. Valid also for Flauto II at bars 521 and 523."
 }
+correctionClarinetti = \markup {
+	% bars 222
+	"Bar 222, Mvt III : In Flauti piccolo cue voice, missing rest are added."
+}

@@ -9,7 +9,7 @@ musicClarinettoIMvtIII = \relative c {
 	\key f \major
 	\transposition bes
 % Bars 1 to 5
-	R2*28
+	R2*26
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,8 +20,8 @@ musicClarinettoIMvtIII = \relative c {
 	
 % Bars 26 to 30
 	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	g'2->\fp
 	R
 % Bars 31 to 35
@@ -108,14 +108,18 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 101 to 105
 	
 	r4 \acciaccatura {c16 d e} f8\fz r
-	R2*15
+	R2*12
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
-% Bars 116 to 120
 	
-	\mark \default
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 116 to 120
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	f2-^\ff~
 	f8 c( a bes)
 	f'2-^~
@@ -160,11 +164,15 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 166 to 170
 	
 	\mark \default
-	R2*9
+	R2*6
 % Bars 171 to 175
 	
-% Bars 176 to 180
 	
+	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+% Bars 176 to 180
+	\mmrPos #4 R \no
 	a'2\ff~
 	a8 r r4
 	R2
@@ -196,7 +204,7 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 201 to 205
 	r8. a16[(\p fis8.) e16](
 	d8) r r4
-	R2*20
+	R2*18
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -204,9 +212,9 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 216 to 220
 	
 % Bars 221 to 225
-	
-	
-	r4 r8. d16(_\brack\p
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
+	\once \voiceTwo r4 r8. d16(_\brack\p
 	g4..)->\fz a16(
 	b4..)->\fz a16(
 % Bars 226 to 230
@@ -282,13 +290,13 @@ musicClarinettoIMvtIII = \relative c {
 	g2-^\ff~
 	g8 r r4
 % Bars 286 to 290
-	R2*13
+	R2*11
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	r4 r8. g,16\f
 	e4..->\fz d16
 % Bars 301 to 305
@@ -585,7 +593,7 @@ musicClarinettoIMvtIII = \relative c {
 	
 % Bars 571 to 575
 	\mark \default
-	R2
+	\ni \mmrPos #4 R2 \no
 	r8. aes'16[(\p f8) r16 ees-.]
 	des2~
 	\restPattern des8\< des16( f8) aes16-.\!
@@ -736,16 +744,20 @@ musicClarinettoIMvtIII = \relative c {
 	c8(\stopTrillSpan b d c
 	f) r r4
 % Bars 701 to 705
-	R2*21
+	R2*19
 % Bars 706 to 710
 	
 % Bars 711 to 715
 	
 % Bars 716 to 720
 	
-% Bars 721 to 725
 	
-	r4 r8. f16-.\f
+	
+	
+	\ni \mmrPos #4 R2
+% Bars 721 to 725
+	\mmrPos #4 R \no
+	\once \voiceOne r4 r8. f16-.\f
 	e4..-> c16
 	f8 r r4
 	R2

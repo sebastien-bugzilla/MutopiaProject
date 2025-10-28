@@ -281,7 +281,7 @@ musicClarinettoIIMvtI = \relative c {
 	\time 3/8 c,4.~_\pbrackp
 	\time 6/8 c8 r r r4 r8
 % Bars 231 to 235
-	R2.*14
+	R2.*10
 	
 	
 	
@@ -289,10 +289,10 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	b'2.\fz\<~
 % Bars 246 to 250
 	<< b {s8 s s  s s s\!}>>

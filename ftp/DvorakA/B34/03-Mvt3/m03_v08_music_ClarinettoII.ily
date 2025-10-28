@@ -9,7 +9,7 @@ musicClarinettoIIMvtIII = \relative c {
 	\key f \major
 	\transposition bes
 % Bars 1 to 5
-	R2*28
+	R2*26
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,8 +20,8 @@ musicClarinettoIIMvtIII = \relative c {
 	
 % Bars 26 to 30
 	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	e2->\fp
 	R
 % Bars 31 to 35
@@ -108,14 +108,18 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 101 to 105
 	
 	r4 \acciaccatura {c16 d e} f8\fz r
-	R2*15
+	R2*12
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
-% Bars 116 to 120
 	
-	\mark \default
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 116 to 120
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	d2-^\ff~
 	d8 c( a bes)
 	d2-^~
@@ -160,11 +164,15 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 166 to 170
 	
 	\mark \default
-	R2*9
+	R2*6
 % Bars 171 to 175
 	
-% Bars 176 to 180
 	
+	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+% Bars 176 to 180
+	\mmrPos #4 R \no
 	c''2\ff~
 	c8 r r4
 	R2
@@ -222,12 +230,16 @@ musicClarinettoIIMvtIII = \relative c {
 	
 	R2*2
 	
-	R2*8
+	R2*4
 % Bars 241 to 245
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 246 to 250
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	a2(~_\pppococresc
 	a
 	g\<
@@ -274,13 +286,13 @@ musicClarinettoIIMvtIII = \relative c {
 	e!2-^\ff~
 	e8 r r4
 % Bars 286 to 290
-	R2*13
+	R2*11
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	r4 r8. g,16\f
 	e4..->\fz d16
 % Bars 301 to 305
@@ -578,16 +590,16 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 571 to 575
 	\mark \default
 	R2
-	R2*12
+	R2*8
 	
 	
 % Bars 576 to 580
 	
 % Bars 581 to 585
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	c2(\brack\p\<
 % Bars 586 to 590
 	<< des) {s8 s s s\!}>>
@@ -724,16 +736,20 @@ musicClarinettoIIMvtIII = \relative c {
 	c8(\stopTrillSpan b d c
 	f) r r4
 % Bars 701 to 705
-	R2*21
+	R2*19
 % Bars 706 to 710
 	
 % Bars 711 to 715
 	
 % Bars 716 to 720
 	
-% Bars 721 to 725
 	
-	r4 r8. f16-.\f
+	
+	
+	\ni \mmrPos #4 R2
+% Bars 721 to 725
+	\mmrPos #4 R \no
+	\once \voiceOne r4 r8. f16-.\f
 	e4..-> c16
 	f8 r r4
 	R2
