@@ -24,11 +24,11 @@
 \include "./00-Common/DvorakSymph3_Format_Part04_Fagotti.ily"
 \include "./00-Common/DvorakSymph3_CueVoice.ily"
 \include "./01-Mvt1/m01_v09_music_FagottoI.ily"
-\include "./01-Mvt1/m01_v10_music_FagottoI.ily"
+\include "./01-Mvt1/m01_v10_music_FagottoII.ily"
 \include "./02-Mvt2/m02_v09_music_FagottoI.ily"
-\include "./02-Mvt2/m02_v10_music_FagottoI.ily"
+\include "./02-Mvt2/m02_v10_music_FagottoII.ily"
 \include "./03-Mvt3/m03_v09_music_FagottoI.ily"
-\include "./03-Mvt3/m03_v10_music_FagottoI.ily"
+\include "./03-Mvt3/m03_v10_music_FagottoII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -63,7 +63,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -135,7 +135,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}

@@ -99,3 +99,7 @@ correctionClarinetti = \markup {
 	% bars 222
 	"Bar 222, Mvt III : In Flauti piccolo cue voice, missing rest are added."
 }
+correctionFagotto = \markup {
+	% bar 524 / Mvt III
+	"Bar 524, Mvt III : a missing f clef is added."
+}

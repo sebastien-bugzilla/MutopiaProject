@@ -620,22 +620,130 @@ cueVoiceClarinettoIIMvtIII = \relative c {
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #
 %###############################################################################
 cueVoiceFagottoIMvtI = \relative c {
-	
+	% no cue Voice
 }
 cueVoiceFagottoIMvtII = \relative c {
-	
+	% no cue Voice
 }
 cueVoiceFagottoIMvtIII = \relative c {
-	
+	s2*35
+	% bars 36 - 37
+	\transpose c f {
+		\relative c' {
+			\voiceTwo \clef treble <a a'>2\fp~^\markup {Cor.III.IV}
+			q8 r r4 \clef bass \oneVoice
+		}
+	}
+	s2*136
+	% bars 174 - 176
+	\clef treble \voiceOne aes''8\repeatTie ees bes'4~
+	bes8 a c bes
+	a bes c d \oneVoice \clef bass
+	s2*40
+	% bars 217 - 218
+	\voiceOne \clef treble c2^\markup {Fl.pic.}~
+	\restPattern c8 c16( e8) g16 \oneVoice \clef bass
+	s2*78
+	% bars 297 - 298
+	\clef treble \restPattern bes,,8\repeatTie^\markup {Archi} a16( c8) a16(
+	\restPattern bes8) a16( c8) a16\laissezVibrer \clef bass
+	s2*75
+	% bar 374
+	<>^\markup {Cor.,Trbne I.}
+	s2*12
+	% bars 386 - 388
+	\clef treble \voiceOne f''4(\fz^\markup {Ob.I.II} d8) r
+	f4(\fz d8) r
+	f4(\fz d8) r \oneVoice \clef bass
+	s2*130
+	% bars 519 - 523
+	\clef treble \voiceOne r8.^\markup {Ob.I.II} cis'16[(\f a8) r16 e](
+	fis4) r
+	r8.^\markup {Fl.I.} fis'16[( dis8) r16 b](
+	cis4) r
+	r8. gis'16[( e8) r16 cis] \clef bass \oneVoice
+	s2*98
+	% bars 622 - 627
+	\voiceOne \clef treble b,4\repeatTie^\markup {Cor.I.} ais->
+	cis-> fis,->
+	b-> ais->
+	cis-> fis,->
+	b-> ais->\<
+	cis-> fis,->\! \oneVoice \clef tenor
+	s2*92
+	% bars 720 - 722
+	\voiceTwo r4^\markup {Trbni.} r8. bes,16
+	g4.. f16
+	ees8 s s4 \oneVoice
 }
-cueVoiceFagottoIMvtI = \relative c {
-	
+cueVoiceFagottoIIMvtI = \relative c {
+	% no cue Voice
 }
-cueVoiceFagottoIMvtII = \relative c {
-	
+cueVoiceFagottoIIMvtII = \relative c {
+	% no cue Voice
 }
-cueVoiceFagottoIMvtIII = \relative c {
-	
+cueVoiceFagottoIIMvtIII = \relative c {
+	s2*35
+	% bars 36 - 37
+	\transpose c f {
+		\relative c' {
+			\voiceTwo \clef treble <a a'>2\fp~^\markup {Cor.III.IV}
+			q8 r r4 \clef bass \oneVoice
+		}
+	}
+	s2*116
+	% bar 154 - 155
+	\voiceOne f'2^\markup {Fag.I.}
+	aes \oneVoice
+	s2*18
+	% bars 174 - 176
+	\clef treble \voiceOne aes8(\repeatTie ees bes'4~
+	bes8 a c bes
+	a bes c d) \oneVoice \clef bass
+	s2*40
+	% bars 217 - 218
+	\voiceOne \clef treble c2^\markup {Fl.pic.}~
+	\restPattern c8 c16( e8) g16 \oneVoice \clef bass
+	s2*47
+	% bars 266 - 271
+	\voiceOne \clef tenor f,4..^\markup {Fag.I.} g16(
+	f8 e d c)
+	f4.. g16(
+	f8 e d c)
+	f4.. g16(
+	f8 e d c) \oneVoice
+	s2*25
+	% bars 297 - 298
+	\clef treble \restPattern bes8\repeatTie^\markup {Archi} a16( c8) a16(
+	\restPattern bes8) a16( c8) a16\laissezVibrer \clef bass
+	s2*75
+	% bar 374
+	<>^\markup {Cor.,Trbne I.}
+	s2*12
+	% bars 386 - 388
+	\clef treble \voiceOne f''4(\fz^\markup {Ob.I.II} d8) r
+	f4(\fz d8) r
+	f4(\fz d8) r \oneVoice \clef bass
+	s2*130
+	% bars 519 - 523
+	\clef treble \voiceOne r8.^\markup {Ob.I.II} cis'16[(\f a8) r16 e](
+	fis4) r
+	r8. fis16[( dis8) r16 b](
+	cis4) r
+	r8. gis'16[( e8) r16 cis] \clef bass \oneVoice
+	s2*98
+	% bars 622 - 627
+	\voiceOne \clef treble b4\repeatTie^\markup {Cor.I.} ais->
+	cis-> fis,->
+	b-> ais->
+	cis-> fis,->
+	b-> ais->\<
+	cis-> fis,->\! \oneVoice \clef tenor
+	s2*92
+	% bars 720 - 722
+	\clef tenor \voiceTwo r4^\markup {Trbni.} r8. bes,16
+	g4.. f16
+	ees8 s \clef bass s4 \oneVoice
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   C O R N I                    #

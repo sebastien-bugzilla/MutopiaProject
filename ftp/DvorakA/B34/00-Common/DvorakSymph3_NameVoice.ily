@@ -157,17 +157,17 @@ nameFagottoIMvtIII = {
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"bassoon"
 }
-nameFagottoIMvtI = {
+nameFagottoIIMvtI = {
 	\set Staff.instrumentName = "Fagotto I"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"bassoon"
 }
-nameFagottoIMvtII = {
+nameFagottoIIMvtII = {
 	\set Staff.instrumentName = "Fagotto I"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"bassoon"
 }
-nameFagottoIMvtIII = {
+nameFagottoIIMvtIII = {
 	\set Staff.instrumentName = "Fagotto I"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"bassoon"

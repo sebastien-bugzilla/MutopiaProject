@@ -37,15 +37,15 @@ musicFagottoIIMvtIII = \relative c {
 	bes\fz
 	bes\fz
 	bes8\brack\fz r r4
-	R2*15
+	R2*11
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	
-	
-	
+	\ni \mmrPos #6 R2
+	\mmrPos #6 R \no
+	R2*2
 	
 	f8-.\pp f-. f-. f-.
 % Bars 41 to 45
@@ -173,11 +173,15 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	
-	R2*11
+	R2*9
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 156 to 160
 	f'4(\brack\mf\<_\crescmarkup d
 	bes)\! ces(\fz \clef bass
@@ -190,11 +194,15 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 166 to 170
 	
 	\mark \default
-	R2*9
+	R2*6
 % Bars 171 to 175
 	
-% Bars 176 to 180
 	
+	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-4 R
+% Bars 176 to 180
+	\mmrPos #-4 R \no
 	ees,2\brack\ff~
 	ees8 r r4
 	R2
@@ -226,15 +234,15 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 201 to 205
 	R2*2
 	
-	R2*16
+	R2*14
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
 % Bars 216 to 220
 	
-	
-	\clef bass
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no \clef bass
 	a2\pp~
 	a4 gis-.
 % Bars 221 to 225
@@ -279,13 +287,17 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	\clef tenor
-	R2*12
+	R2*6
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 271 to 275
-	
+	\mmrPos #-4 R \no
 	f8(\f e d c)
 	e( d c b)
 	d( c b a) \clef bass
@@ -303,13 +315,13 @@ musicFagottoIIMvtIII = \relative c {
 	bes!-^\ff~
 	bes8 r r4
 % Bars 286 to 290
-	R2*13
+	R2*11
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	r4 r8. f'16\f
 	d4..->\fz c16
 % Bars 301 to 305
@@ -398,15 +410,15 @@ musicFagottoIIMvtIII = \relative c {
 	b4) r8. e16(
 	b4) r8. e16(
 	b4.)\fz r8 \clef bass
-	R2*15
+	R2*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
 % Bars 386 to 390
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ees,,2\ff~
 	ees~
 % Bars 391 to 395
@@ -542,17 +554,21 @@ musicFagottoIIMvtIII = \relative c {
 		dis2 cis4
 	}
 	\unsetTimeSignature b4) r
-	R2*19
+	R2*14
 % Bars 506 to 510
 	
 % Bars 511 to 515
 	
 % Bars 516 to 520
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 521 to 525
-	
-	
-	\section
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	\key ees \major \clef bass ees,,2->\ff~
 	ees4 r
 % Bars 526 to 530
@@ -644,14 +660,18 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 611 to 615
 	<< e~ {s4 s\!}>>
 	e8\p r r4
-	R2*15
+	R2*9
 % Bars 616 to 620
 	
 % Bars 621 to 625
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 626 to 630
-	
-	\clef tenor
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \clef tenor
 	fis''8(\f e dis cis)
 	e( dis cis b)
 	dis( cis b ais)
@@ -706,7 +726,7 @@ musicFagottoIIMvtIII = \relative c {
 	R2*2
 	
 % Bars 676 to 680
-	R2*46
+	R2*44
 % Bars 681 to 685
 	
 % Bars 686 to 690
@@ -723,9 +743,13 @@ musicFagottoIIMvtIII = \relative c {
 	
 % Bars 716 to 720
 	
-% Bars 721 to 725
 	
-	r4 r8. ees'16-.\f
+	
+	
+	\ni \mmrPos #4 R2
+% Bars 721 to 725
+	\mmrPos #4 R \no
+	\once \voiceOne r4 r8. ees'16-.\f
 	d4..-> bes16
 	ees8 r r4
 	R2

@@ -16,15 +16,15 @@ formatFagottoIMvtIII = {
 %	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 %	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
-formatFagottoIMvtI = {
+formatFagottoIIMvtI = {
 %	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 %	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
-formatFagottoIMvtII = {
+formatFagottoIIMvtII = {
 %	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 %	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
-formatFagottoIMvtIII = {
+formatFagottoIIMvtIII = {
 %	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 %	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
