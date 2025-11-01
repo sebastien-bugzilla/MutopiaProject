@@ -69,7 +69,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -141,7 +141,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -158,7 +158,7 @@
 				\keepWithTag #'(cornoII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceCornoIIMvtI
+				\InCueContext \cueVoiceCornoIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \nameCornoIIMvtII \musicCornoIIMvtII
@@ -213,7 +213,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -285,7 +285,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}

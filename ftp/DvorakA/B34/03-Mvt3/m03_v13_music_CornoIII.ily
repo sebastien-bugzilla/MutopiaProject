@@ -232,7 +232,7 @@ musicCornoIIIMvtIII = \relative c {
 	fis8 r r4
 	R2
 	g!8\fz r r4
-	R2*29
+	R2*26
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -244,9 +244,9 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 221 to 225
 	
 % Bars 226 to 230
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	cis4-.\pp r
 	a-. r
 % Bars 231 to 235
@@ -393,12 +393,15 @@ musicCornoIIIMvtIII = \relative c {
 	a4.\fz-> gis8-.
 	a4.\fz-> gis8-.
 	a4.\fz-> r8
-	R2*12
+	R2*7
 	
 % Bars 356 to 360
 	
 % Bars 361 to 365
-	
+	\ni \mmrPos #-6 R2 \no
+	R
+	\ni \mmrPos #-6 R2 \no
+	R2*2
 % Bars 366 to 370
 	cis4\fp r
 	cis r
@@ -552,7 +555,7 @@ musicCornoIIIMvtIII = \relative c {
 		b-> b-> b->
 	}
 	\unsetTimeSignature cis-> r
-	R2*19
+	R2*16
 % Bars 506 to 510
 	
 % Bars 511 to 515
@@ -560,9 +563,9 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 516 to 520
 	
 % Bars 521 to 525
-	
-	
-	\section
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	f,2-^\ff~
 	f8 r r4
 % Bars 526 to 530
@@ -613,7 +616,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 % Bars 571 to 575
 	\mark \default
-	R2*19
+	R2*15
 	
 	
 	
@@ -623,6 +626,10 @@ musicCornoIIIMvtIII = \relative c {
 	
 % Bars 586 to 590
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2
 % Bars 591 to 595
 	des8\pp r des r
 	R2
@@ -717,7 +724,7 @@ musicCornoIIIMvtIII = \relative c {
 	ees,8-> r r4
 	g8-> r r4
 	aes8-> r r4
-	R2*22
+	R2*19
 % Bars 671 to 675
 	
 % Bars 676 to 680
@@ -726,6 +733,10 @@ musicCornoIIIMvtIII = \relative c {
 	
 % Bars 686 to 690
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 691 to 695
 	f4-.\f r
 	f-. r

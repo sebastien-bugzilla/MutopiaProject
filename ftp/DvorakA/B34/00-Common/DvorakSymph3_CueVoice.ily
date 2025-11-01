@@ -749,40 +749,238 @@ cueVoiceFagottoIIMvtIII = \relative c {
 %#                    C U E   V O I C E   F O R   C O R N I                    #
 %###############################################################################
 cueVoiceCornoIMvtI = \relative c {
-	
+	s2.*18 s4.*1 s2.*22 s4.*1 s2.*82
+	% bars 125 - 128
+	\voiceOne des''4.^\markup {Cor.Ingl.} c
+	bes aes
+	des c
+	bes aes
 }
 cueVoiceCornoIMvtII = \relative c {
-	
+	% no cue voice
 }
 cueVoiceCornoIMvtIII = \relative c {
-	
+	s2*35
+	% bars 36 - 37
+	<a' a'>2~^\markup {Cor.III./IV.}
+	q8 s s4
+	s2*179
+	% bars 217 - 218
+	\transpose f c' {
+		\relative c'' {
+			\voiceTwo c2~^\markup {\column { \lower #1.5 "Fl.p." "Ob.II" }}
+			\restPattern c8 c16( e8) g16 \oneVoice
+		}
+	}
+	s2*237
+	% bar 456 - 460
+	r4^\markup {Cor. III./IV.} <c c'>~
+	q2~\<
+	q~
+	q~
+	q\!
+	s2*60
+	% bars 521 - 523
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne r8. \ottava #1 fis16[(\f^\markup {Fl.p.} dis8) r16 b16](
+			cis4) r
+			r8. gis'16[( e8) r16 cis-.] \ottava #0 \oneVoice
+		}
+	}
+	s2*49
+	% bars 573 - 575
+	\transpose f c' {
+		\relative c''' {
+			r8.^\markup {\column {\lower #1.5 "Fl." "picc."}} fis16[( dis8) r16 cis16]-.
+			b2~
+			\restPattern b8 b16( dis8) fis16
+		}
+	}
 }
 cueVoiceCornoIIMvtI = \relative c {
-	
+	s2.*18 s4.*1 s2.*22 s4.*1 s2.*86
+	% bars 129 - 130
+	\voiceOne dis''4.->\f^\markup {Cor.I.} cis->
+	b\< ais4( a8)\! \oneVoice
+	s2.*10
+	% bar 141
+	<>^\markup {Cor.I.}
+	s2.*88 s4.*1 s2.*29
+	% bars 259 - 261
+	\transpose f c' {
+		\relative c' {
+			r4^\markup {Viol.I.} r8 e16( a cis e a cis)
+			e2.\startTrillSpan
+			\afterGrace e {dis16( e)\stopTrillSpan}
+		}
+	}
 }
 cueVoiceCornoIIMvtII = \relative c {
-	
+	s2*33 s4*1 s2*2
+	% bar 37
+	<>^\markup {Cor.I.}
+	s2*52
+	% bars 89 - 90
+	\voiceOne r8^\markup {Cor.I.} e''4 e8~
+	e s s4 \oneVoice
 }
 cueVoiceCornoIIMvtIII = \relative c {
-	
+	s2*35
+	% bars 36 - 37
+	\voiceTwo <a' a'>2~^\markup {Cor.III.IV.}
+	q8 r r4 \oneVoice
+	s2*61
+	% bars 99 - 101
+	\voiceOne aes'8.\f^\markup {Cor.III.IV.} g16 aes4->~
+	aes8. g16 aes4->~
+	aes8. g16 aes4->\laissezVibrer \oneVoice
+	s2*117
+	% bars 219 - 223
+	\voiceOne b2~^\markup {Cor.I.}
+	b4 b-.
+	b2~
+	b4 b-.
+	b-. s \oneVoice
+	s2*297
+	% bars 521 - 523
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne r8. \ottava #1 fis16[(\f^\markup {Fl.p.} dis8) r16 b16](
+			cis4) r
+			r8. gis'16[( e8) r16 cis-.] \ottava #0 \oneVoice
+		}
+	}
+	s2*60
+	% bars 584 - 586
+	\voiceOne c2(^\markup {Cor.I}
+	des\<
+	ees)\! \oneVoice
+	s2*35
+	% bars 622 - 627
+	\voiceOne fis4\repeatTie^\markup {Cor.I.} eis->
+	gis-> cis,->
+	fis-> eis->
+	gis-> cis,->
+	fis->\< eis->
+	gis-> cis,->\!
 }
 cueVoiceCornoIIIMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceCornoIIIMvtII = \relative c {
-	
+	s2*33 s4*1 s2*54
+	% bar 89
+	<>^\markup {Cor.I.}
+	s2*11
+	% bars 100 - 101
+	\voiceOne aes''4\p^\markup {Cor.I.} aes8 aes16. g32
+	aes4 aes \oneVoice
+	s2*122
+	% bars 224 - 225
+	\voiceOne r8^\markup {Cor.I.} e'16.^\espr d32 d8( c)
+	r8 e16. d32 d8( c) \oneVoice
 }
 cueVoiceCornoIIIMvtIII = \relative c {
-	
+	s2*225
+	% bars 226 - 228
+	\voiceOne c''4\pp^\markup {Cor.I.} r
+	cis r 
+	d r \oneVoice
+	s2*132
+	% bars 361 - 363
+	\voiceOne ees4(^\markup {Cor.I.II.} ees,8) r
+	s2
+	ees'4( ees,8) r \oneVoice
+	s2*70
+	% bar 434
+	<>^\markup {Viol.I.}
+	s2*87
+	% bars 521 - 523
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne r8. \ottava #1 fis16[(\f^\markup {Fl.p.} dis8) r16 b16](
+			cis4) r
+			r8. gis'16[( e8) r16 cis-.] \ottava #0 \oneVoice
+		}
+	}
+	s2*45
+	% bar 569
+	<>^\markup {Fag.}
+	s2*18
+	% bars 587 - 589
+	\voiceOne <des' f>2~^\markup {Cor.I.II.}
+	q~
+	q \oneVoice
+	s2*98
+	% bars 688 - 690
+	\voiceOne c2^\markup {Cor.I.II.}
+	b4 bes
+	a aes \oneVoice
 }
 cueVoiceCornoIVMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceCornoIVMvtII = \relative c {
-	
+	s2*33 s4*1 s2*54
+	% bar 89
+	<>^\markup {Cor.I.}
+	s2*135
+	% bars 224 - 225
+	\voiceOne r8^\markup {Cor.I.} e''16.^\espr d32 d8( c)
+	r8 e16. d32 d8( c) \oneVoice
+	s2*2 s4*1 s2*35
+	% bars 264 - 267
+	e,4\pp^\markup {Cor.III.} e8 e
+	e4 e
+	a a8-. a16.-. a32-.
+	a4 a
 }
 cueVoiceCornoIVMvtIII = \relative c {
-	
+	s2*225
+	% bars 226 - 228
+	\voiceOne c''4-.^\markup {Cor.I.} r
+	cis-. r
+	d-. r \oneVoice
+	s2*11
+	% bar 240
+	<>^\markup {Cor.III.}
+	s2*12
+	% bars 252 - 255
+	\voiceOne c2~^\markup {}
+	c~
+	c~
+	c8 r r4 \oneVoice
+	s2*105
+	% bars 361 - 363
+	\voiceOne ees4(^\markup {Cor.I.II.} ees,8) r
+	s2
+	ees'4( ees,8) r \oneVoice
+	s2*70
+	% bar 434
+	<>^\markup {Viol.I.}
+	s2*87
+	% bars 521 - 523
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne r8. \ottava #1 fis16[(\f^\markup {Fl.p.} dis8) r16 b16](
+			cis4) r
+			r8. gis'16[( e8) r16 cis-.] \ottava #0 \oneVoice
+		}
+	}
+	s2*45
+	% bar 569
+	<>^\markup {Fag.}
+	s2*18
+	% bars 587 - 589
+	\voiceOne <des' f>2~^\markup {Cor.I.II.}
+	q~
+	q \oneVoice
+	s2*98
+	% bars 688 - 690
+	\voiceOne c2^\markup {Cor.I.II.}
+	b4 bes
+	a aes \oneVoice
 }
 %###############################################################################
 %#                   C U E   V O I C E   F O R   T R O M B E                   #

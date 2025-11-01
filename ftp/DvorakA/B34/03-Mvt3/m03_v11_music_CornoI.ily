@@ -37,15 +37,15 @@ musicCornoIMvtIII = \relative c {
 	c\fz
 	c\fz
 	c8\brack\fz r r4
-	R2*15
+	R2*11
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
+	R2*2
 	
 	c8-.\pp c-. c-. c-.
 % Bars 41 to 45
@@ -233,7 +233,7 @@ musicCornoIMvtIII = \relative c {
 	d8 r r4
 	R2
 	d8\fz r r4
-	R2*19
+	R2*17
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -242,8 +242,8 @@ musicCornoIMvtIII = \relative c {
 	
 % Bars 216 to 220
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	b2->\pp~
 	b4 b-.
 % Bars 221 to 225
@@ -500,14 +500,17 @@ musicCornoIMvtIII = \relative c {
 % Bars 441 to 445
 	
 	
-	R2*14
+	R2*13
 % Bars 446 to 450
 	
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	
-	R2*4
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 461 to 465
 	r4 r8. c16
 	c2\fz~
@@ -560,7 +563,7 @@ musicCornoIMvtIII = \relative c {
 		e-> e-> e->
 	}
 	\unsetTimeSignature e-> r
-	R2*19
+	R2*16
 % Bars 506 to 510
 	
 % Bars 511 to 515
@@ -568,9 +571,9 @@ musicCornoIMvtIII = \relative c {
 % Bars 516 to 520
 	
 % Bars 521 to 525
-	
-	
-	\section
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	d2-^\ff~
 	d8 r r4
 % Bars 526 to 530
@@ -617,10 +620,10 @@ musicCornoIMvtIII = \relative c {
 	
 % Bars 571 to 575
 	\mark \default
-	R2*4
-	
-	
-	
+	R2
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 576 to 580
 	bes2\fp~
 	bes~

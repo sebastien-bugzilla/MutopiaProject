@@ -114,8 +114,8 @@ musicCornoIIMvtII = \relative c {
 	
 	R2*2
 	
-	R2
-	r8 e,4\pp\< e8\>~
+	\ni \mmrPos #-4 R2 \no
+	\once \voiceTwo r8 e,4\pp\< e8\>~
 % Bars 91 to 95
 	e\! r r4
 	r8 e4\pp e8~

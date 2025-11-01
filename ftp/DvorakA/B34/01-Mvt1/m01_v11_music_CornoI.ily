@@ -140,15 +140,19 @@ musicCornoIMvtI = \relative c {
 	<< c->~ {s4. s\<}>>
 	<< c2.~ {s8 s s  s s s\!}>>
 	c4\ff r8 r4 r8
-	R2.*15
+	R2.*11
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 126 to 130
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	dis4.->\f cis->
 	b\< ais4( a8)\!
 % Bars 131 to 135

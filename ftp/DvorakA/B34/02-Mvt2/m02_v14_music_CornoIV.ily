@@ -244,12 +244,16 @@ musicCornoIVMvtII = \relative c {
 	g2\f-^~
 	g8 r r4^\mutaine \transposition e
 	R2 \section
-	R2*12
+	R2*10
 	
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 226 to 230
 	c,2\fp~
 	c \section
@@ -285,11 +289,11 @@ musicCornoIVMvtII = \relative c {
 	
 	
 	\section
-	R2*4
-	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
 % Bars 266 to 270
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	R2*3
 	
 	

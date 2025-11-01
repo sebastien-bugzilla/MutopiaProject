@@ -149,8 +149,8 @@ musicCornoIIMvtI = \relative c {
 	
 	
 	
-	R2.*2
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 % Bars 131 to 135
 	e2.\brack\fp~
 	e4. d4(\> e8)\!
@@ -303,9 +303,12 @@ musicCornoIIMvtI = \relative c {
 	R2.*2
 % Bars 256 to 260
 	
-	R2.*5
-% Bars 261 to 265
+	R2.*2
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+% Bars 261 to 265
+	\mmrPos #-4 R \no
 	cis2.-^\fppD
 	cis4.->\p cis->
 	cis->\>~ cis8\! r r

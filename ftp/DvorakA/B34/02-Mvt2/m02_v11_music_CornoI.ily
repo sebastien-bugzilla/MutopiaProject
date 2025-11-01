@@ -75,7 +75,7 @@ musicCornoIMvtII = \relative c {
 	r des->\mf\< r c->\!
 	r ees->\< r des->\!
 % Bars 56 to 60
-	e!4(\f f8)\> e16 d)\!
+	e!4(\f f8)\> e16 d\!
 	<< c2\fz\>~ {s8\> s s s\!}>>
 	c8 r r4
 	r ees\p

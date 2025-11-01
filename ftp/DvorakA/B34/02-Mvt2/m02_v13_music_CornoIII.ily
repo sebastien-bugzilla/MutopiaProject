@@ -117,11 +117,11 @@ musicCornoIIIMvtII = \relative c {
 % Bars 96 to 100
 	
 	R2\fermata \section
-	R2*4
+	R2*2
 	
-	
+	\ni \mmrPos #-4 R2
 % Bars 101 to 105
-	
+	\mmrPos #-4 R \no
 	aes8-.\p\< aes16.-. aes32-. aes8-.\! r
 	ees-.\< ees16.-. des32-. ees8-.\! r
 	aes4->\< aes8. g16\!
@@ -244,12 +244,16 @@ musicCornoIIIMvtII = \relative c {
 	cis2\f-^~
 	cis8 r r4^\mutaine \transposition e
 	R2 \section
-	R2*12
+	R2*10
 	
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 226 to 230
 	c2\fp~
 	c \section
