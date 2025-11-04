@@ -986,22 +986,336 @@ cueVoiceCornoIVMvtIII = \relative c {
 %#                   C U E   V O I C E   F O R   T R O M B E                   #
 %###############################################################################
 cueVoiceTrombeIMvtI = \relative c {
-	
+	s2.*11
+	% bars 12 - 15
+	\transpose f c' {
+		\relative c'' {
+			f4(^\markup {Fl.I.} des'16)[ r32 c-.] c4( bes8)
+			bes4( ges'16)[ r32 f-.] f4( ees8)
+			ees4.(~ ees16 d f ees ces aes)
+			ges4. f4( bes8)
+		}
+	}
+	s2.*3 s4.*1 s2.*22 s4.*1 s2.*48
+	% bars 91 - 93
+	r4^\markup {Cor.} r8 des' des des
+	r4 r8 des8 des des
+	r4 r8 c8 c c
+	s2.*64
+	% bars 158 - 159
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne aes4.^\markup {Viol.I.} ges4( bes8)
+			bes4. aes4( c8) \oneVoice
+		}
+	}
+	s2.*23
+	% bars 183 - 185
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne b4.(^\markup {Viol.I.} ais)
+			gis( fis)
+			e( dis) \oneVoice
+		}
+	}
+	s2.*28
+	% bars 214 - 215
+	\voiceTwo <b d>2.(^\markup {Cor.}
+	<c ees>) \oneVoice
+	s2.*13 s4.*1 s2.*46
+	% bars 276 - 277
+	\voiceTwo b8-.^\markup {Cor.I.} c-. d-. e-.[ fis-. r16 g-.]
+	g2.\fz \oneVoice
 }
 cueVoiceTrombeIMvtII = \relative c {
-	
+	s2*10
+	% bars 11 - 12
+	\transpose e c {
+		\relative c'' {
+			<b d>4^\markup {\column {\lower #1.5 "Cl." "Ob."}} <a d>16 <cis fis> <b cis> <a cis>
+			<<{\InCueContext \once \hideNotes gis4( gis')} \\ {\InCueContext gis,8. fisis32 gis b16 a a gis} >>
+		}
+	}
+	s2*17
+	% bars 30 - 34
+	\voiceOne a''8\p^\markup {Cor.I.} e'16.-> d32-. d8( c)
+	r e16.-> d32-. d8( c)
+	r e16.-> d32-. d8( c)
+	r g'16.-> f32-. f8( e)
+	ees8 s  \oneVoice
+	s2*9
+	% bars 44 - 45
+	\transpose e c {
+		\relative c'' {
+			\voiceOne r8^\markup {Cl.I.} fis(~ \tuplet 6/4 4 {fis16 eis fis a gis fis)}
+			fis8 fis(~\f \tuplet 3/2 8 {fis16 eis fis} a32[ gis) r gis] \oneVoice
+		}
+	}
+	s2*74
+	% bars 120 - 123
+	\voiceTwo e,4.^\markup {Cor.I.} dis8
+	e4. e8
+	f4. f8
+	fis4. fis8 \oneVoice
+	s2*42
+	% bars 166 - 169
+	\voiceTwo des16^\markup {Cor.I.} des des des des r ees8->(
+	des16) des des des des r ees8->(
+	des16) r ees8( des16) r c8(
+	bes4) des \oneVoice
+	s2*27
+	% bars 197 - 198
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne bes2^\markup {Fl.I.}
+			b \oneVoice
+		}
+	}
+	s2*25
+	% bars 224 - 228
+	\voiceTwo r8^\markup {Cor.I.} e16. d32 d8( c)
+	r e16. d32 d8( c)
+	r e16. d32 d8( c)
+	r g'16. f32 f8( e)
+	ees4 \oneVoice
+	s2*14
+	% bars 243 - 244
+	\transpose e c {
+		\relative c {
+			\voiceTwo \clef bass r4^\markup {Timp.} r8 r16 \tuplet 3/2 16 {gis32\f-^ gis-^ gis-^}
+			cis8 r r8. \tuplet 3/2 16 {gis32-^ gis-^ gis-^} \oneVoice \clef treble
+		}
+	}
 }
 cueVoiceTrombeIMvtIII = \relative c {
-	
+	s2*12
+	% bars 13 - 14
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne \stemDown r4^\markup {Viol.I.} r8. bes16(
+			\restPattern f'8) e16( g8) e16\laissezVibrer \oneVoice \stemNeutral
+		}
+	}
+	s2*46
+	% bars 61 - 64
+	\voiceTwo ees'2^\markup {Cor.I.}
+	c
+	bes~
+	bes8 r r4 \oneVoice
+	s2*103
+	% bar 168
+	<>^\markup {Ob.Viol.}
+	s2*92
+	% bars 260 - 263
+	a2^\markup {Cor.III.IV.}
+	c
+	d4 d,
+	g2
+	s2*55
+	% bars 319 - 321
+	\voiceTwo ees'2^\markup {Cor.I.}
+	c
+	bes \oneVoice
+	s2*134
+	% bars 456 - 460
+	\voiceTwo \stemUp r4^\markup {Cor.III.IV.} <c, c'>~
+	q2~
+	q~
+	q~
+	q \oneVoice \stemNeutral
+	s2*19
+	% bars 480 - 483
+	\voiceTwo \stemUp r4^\markup {Cor.I.II} r8. fis'16
+	b4.. fis16
+	<< {\InCueContext b4 s } \\ {\InCueContext r4 r8. fis16^\markup {Cor.III.IV.}} >>
+	\once \stemDown b4.. << {\InCueContext fis16} \\ {\InCueContext fis} >> \oneVoice \stemNeutral
+	s2*37
+	% bars 521 - 523
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne \stemDown r8.^\markup {Fl.I.} fis16[(\f dis8) r16 b](
+			cis4) r
+			r8. gis'16[( e8) r16 cis-.] \oneVoice \stemNeutral
+		}
+	}
+	s2*67
+	% bar 591 - 594
+	\voiceTwo r4^\markup {Cor.I.} f8-.\p r
+	des-. r aes-. r
+	r4 f'8-. r
+	des-. r bes-. r
+	s2*33
+	% bars 628 - 631
+	cis2^\markup {Cor.I.II.}
+	b
+	bes
+	aes
 }
 cueVoiceTrombeIIMvtI = \relative c {
-	
+	s2.*11
+	% bars 12 - 15
+	\transpose f c' {
+		\relative c'' {
+			f4(^\markup {Fl.I.} des'16)[ r32 c-.] c4( bes8)
+			bes4( ges'16)[ r32 f-.] f4( ees8)
+			ees4.(~ ees16 d f ees ces aes)
+			ges4. f4( bes8)
+		}
+	}
+	s2.*3 s4.*1 s2.*22 s4.*1 s2.*48
+	% bar 91
+	<>^\markup {Corni}
+	s2.*3
+	% bars 94 - 95
+	ees'4.\mf^\markup {Trb.I.solo} des4 bes8\<
+	aes4 des8 c4\! ees8
+	s2.*62
+	% bars 158 - 159
+	\transpose f c' {
+		\relative c''' {
+			aes4.^\markup {Viol.I.} ges4( bes8)
+			bes4. aes4( c8)
+		}
+	}
+	s2.*23
+	% bars 183 - 185
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne b4.(^\markup {Viol.I.} ais)
+			gis( fis)
+			e( dis) \oneVoice
+		}
+	}
+	s2.*28
+	% bars 214 - 215
+	\voiceTwo <b d>2.(^\markup {Cor.}_\crescmarkup
+	<c ees>) \oneVoice
+	s2.*13 s4.*1 s2.*46
+	% bars 276 - 277
+	\voiceTwo b8-.^\markup {Cor.I.} c-. d-. e-.[ fis-. r16 g-.]
+	g2.\fz \oneVoice
 }
 cueVoiceTrombeIIMvtII = \relative c {
-	
+	s2*29
+	% bars 30 - 34
+	\voiceOne a''8\p^\markup {Cor.I.} e'16.-> d32-. d8( c)
+	r e16.-> d32-. d8( c)
+	r e16.-> d32-. d8( c)
+	r g'16.-> f32-. f8( e)
+	ees4 \oneVoice
+	s2*9
+	% bars 44 - 45
+	\transpose e c {
+		\relative c'' {
+			\voiceOne r8^\markup {Cl.I.} fis(~ \tuplet 6/4 4 {fis16 eis fis a gis fis)}
+			fis8 fis(~\f \tuplet 3/2 8 {fis16 eis fis} a32[ gis) r gis] \oneVoice
+		}
+	}
+	s2*74
+	% bars 120 - 123
+	\voiceTwo e,4.^\markup {Cor.I.} dis8
+	e4. e8
+	f4. f8
+	fis4. fis8 \oneVoice
+	s2*42
+	% bars 166 - 169
+	\voiceTwo des16^\markup {Cor.I.} des des des des r ees8->(
+	des16) des des des des r ees8->(
+	des16) r ees8( des16) r c8(
+	bes4) des \oneVoice
+	s2*27
+	% bars 197 - 198
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne bes2^\markup {Fl.I.}
+			b \oneVoice
+		}
+	}
+	s2*25
+	% bars 224 - 228
+	\voiceTwo r8^\markup {Cor.I.} e16. d32 d8( c)
+	r e16. d32 d8( c)
+	r e16. d32 d8( c)
+	r g'16. f32 f8( e)
+	ees4 \oneVoice
+	s2*14
+	% bars 243 - 244
+	\transpose e c {
+		\relative c {
+			\voiceTwo \clef bass r4^\markup {Timp.} r8 r16 \tuplet 3/2 16 {gis32\f-^ gis-^ gis-^}
+			cis8 r r8. \tuplet 3/2 16 {gis32-^ gis-^ gis-^} \oneVoice \clef treble
+		}
+	}
 }
 cueVoiceTrombeIIMvtIII = \relative c {
-	
+	s2*12
+	% bars 13 - 14
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne \stemDown r4^\markup {Viol.I.} r8. bes16(
+			\restPattern f'8) e16( g8) e16\laissezVibrer \oneVoice \stemNeutral
+		}
+	}
+	s2*46
+	% bars 61 - 64
+	\voiceTwo ees'2^\markup {Cor.I.}
+	c
+	bes~
+	bes8 r r4 \oneVoice
+	s2*103
+	% bar 168
+	<>^\markup {Ob.Viol.}
+	s2*92
+	% bars 260 - 263
+	a2^\markup {Cor.III.IV.}
+	c
+	d4 d,
+	g2
+	s2*55
+	% bars 319 - 321
+	\voiceTwo ees'2^\markup {Cor.I.}
+	c
+	bes \oneVoice
+	s2*52
+	% bar 374
+	<>^\markup {Cor.I.II.}
+	s2*82
+	% bars 456 - 460
+	\voiceTwo \stemUp r4^\markup {Cor.III.IV.} <c, c'>~
+	q2~
+	q~
+	q~
+	q \oneVoice \stemNeutral
+	s2*19
+	% bars 480 - 483
+	\voiceTwo \stemUp r4^\markup {Cor.I.II} r8. fis'16
+	b4.. fis16
+	<< {\InCueContext b4 s } \\ {\InCueContext r4 r8. fis16^\markup {Cor.III.IV.}} >>
+	\once \stemDown b4.. << {\InCueContext fis16} \\ {\InCueContext fis} >> \oneVoice \stemNeutral
+	s2*37
+	% bars 521 - 523
+	\transpose f c' {
+		\relative c''' {
+			\voiceOne \stemDown r8.^\markup {Fl.I.} fis16[(\f dis8) r16 b](
+			cis4) r
+			r8. gis'16[( e8) r16 cis-.] \oneVoice \stemNeutral
+		}
+	}
+	s2*45
+	% bar 569
+	<>^\markup {Fag.}
+	s2*22
+	% bar 591 - 594
+	\voiceTwo r4^\markup {Cor.I.} f8-.\p r
+	des-. r aes-. r
+	r4 f'8-. r
+	des-. r bes-. r
+	s2*33
+	% bars 628 - 631
+	cis2^\markup {Cor.I.II.}
+	b
+	bes
+	aes
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   T R O M B O N I                 #

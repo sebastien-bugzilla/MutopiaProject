@@ -104,6 +104,12 @@ correctionFagotto = \markup {
 	"Bar 524, Mvt III : a missing f clef is added."
 }
 correctionCorni = \markup {
-	% bar 218
+	% bar 218 / Mvt III
 	"Bar 218, Mvt III : in flauti cue voice, missing rests and slur are added."
+}
+correctionTrombe = \markup {
+	% bar 225 / Mvt II
+	"Bar 228, Mvt II : a a-flat indicated in cue voice for Corno I is in actually a e-flat."
+	% bar 481 / Mvt III
+	"Bar 481, Mvt III : the indication of the cor III/IV is indicated bar 481 but they start at bar 482."
 }
