@@ -113,3 +113,17 @@ correctionTrombe = \markup {
 	% bar 481 / Mvt III
 	"Bar 481, Mvt III : the indication of the cor III/IV is indicated bar 481 but they start at bar 482."
 }
+CorrectionTrombone = \markup {
+	% bar 246 / Mvt I
+	"Bar 246, Mvt I : for trombone I the rhythm of the first beat of the cue voice is not correct."
+	% bar 30 / Mvt II
+	"Bar 30, MvtII : the cue voice of cor I is not in the right tune. The same error is reproduced for Trombone II."
+	% bar 168 / Mvt II
+	"Bar 168, Mvt II: for trombone I, the rhythm of the last beat of the cue voice is not correct."
+	% bar 99 / Mvt III
+	"Bar 99, Mvt III: for trombone I, missing rest are added."
+	% bar 245 / Mvt I
+	"Bar 245, Mvt I: for trombone II, a b-flat is indicated for celli cue voice, is actually a b natural."
+	% bar 456 / MVt III
+	"Bar 456, Mvt III: for trombone III, the cue voice of cor III/IV indicate a g pitch instead of f."
+}

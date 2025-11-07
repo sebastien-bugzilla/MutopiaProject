@@ -9,7 +9,7 @@ musicTrombonoIIMvtIII = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2*64
+	R2*60
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -33,10 +33,10 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 56 to 60
 	
 % Bars 61 to 65
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	aes'4->\ff g->
 % Bars 66 to 70
 	aes8-> r r4
@@ -70,13 +70,17 @@ musicTrombonoIIMvtIII = \relative c {
 	aes-> r
 % Bars 91 to 95
 	bes-> r
-	R2*14
+	R2*7
 % Bars 96 to 100
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 101 to 105
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*3
 	
 	
 % Bars 106 to 110
@@ -186,7 +190,7 @@ musicTrombonoIIMvtIII = \relative c {
 	g8 r r4
 	R2
 	bes8 r r4
-	R2*55
+	R2*52
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -209,19 +213,23 @@ musicTrombonoIIMvtIII = \relative c {
 	
 % Bars 251 to 255
 	
-	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	c,4\pp r
 % Bars 256 to 260
 	c r
-	R2*15
+	R2*9
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 271 to 275
-	
+	\mmrPos #-4 R \no
 	r4 b'->\f
 	r a->
 	r g->
@@ -249,21 +257,29 @@ musicTrombonoIIMvtIII = \relative c {
 	aes-^ r
 	aes-^ r
 	aes-^ r
-	R2*12
+	R2*10
 % Bars 296 to 300
 	
 % Bars 301 to 305
 	
-% Bars 306 to 310
 	
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 306 to 310
+	\mmrPos #-4 R \no
 	ees'4-^\brack\f r
-	R2*14
+	R2*11
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 321 to 325
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	aes,4->\ff g->
 	aes-> r
 	aes-> bes->
@@ -288,12 +304,16 @@ musicTrombonoIIMvtIII = \relative c {
 	fes->
 % Bars 341 to 345
 	des4-> ees->
-	R2*12
+	R2*5
 	
 	
 	
 % Bars 346 to 350
 	
+	\ni \mmrPos #-4 R2 \no
+	R
+	\ni \mmrPos #-4 R2 \no
+	R2*4
 % Bars 351 to 355
 	
 	
@@ -369,7 +389,7 @@ musicTrombonoIIMvtIII = \relative c {
 	r4 b8-.-^ r
 	<< c2-^~\> {s8 s s s\!}>>
 	c8 r r4
-	R2*37
+	R2*32
 % Bars 426 to 430
 	
 % Bars 431 to 435
@@ -383,7 +403,11 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 461 to 465
 	bes4-^\f r
 	R2*5
@@ -393,15 +417,19 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 466 to 470
 	
 	bes4-^\f r
-	R2*16
+	R2*12
 % Bars 471 to 475
 	
 % Bars 476 to 480
 	
+	
+	
+	
+	\ni \mmrPos #4 R2
 % Bars 481 to 485
-	
-	
-	\mark \default
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	\scaleDurations 2/3 {
 		\timeSignature 3/4 b2.-^\ff~
 		b
@@ -429,7 +457,7 @@ musicTrombonoIIMvtIII = \relative c {
 	a-> a->
 	a-> a->
 	fis-> r
-	R2*19
+	R2*16
 % Bars 506 to 510
 	
 % Bars 511 to 515
@@ -437,9 +465,9 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 516 to 520
 	
 % Bars 521 to 525
-	
-	
-	\section
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	\key ees \major g2-^\ff~
 	g8 r r4
 % Bars 526 to 530
@@ -485,7 +513,7 @@ musicTrombonoIIMvtIII = \relative c {
 	
 % Bars 571 to 575
 	\mark \default
-	R2*60
+	R2*56
 % Bars 576 to 580
 	
 % Bars 581 to 585
@@ -508,8 +536,12 @@ musicTrombonoIIMvtIII = \relative c {
 	
 % Bars 626 to 630
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R 
 % Bars 631 to 635
-	\section
+	\mmrPos #-4 R \no \section
 	\key ees \major c8_\fbrackz r r4
 	R2
 	c8\fz r r4
@@ -554,13 +586,21 @@ musicTrombonoIIMvtIII = \relative c {
 	aes8-> r r4
 	aes8-> r r4
 	des8-> r r4
-	R2*17
+	R2*11
 % Bars 671 to 675
 	
 % Bars 676 to 680
 	
-% Bars 681 to 685
 	
+	
+	
+	\ni \mmrPos #-6 R2
+% Bars 681 to 685
+	\mmrPos #-8 R \no
+	R2
+	\ni \mmrPos #-6 R
+	\mmrPos #-8 R \no
+	R2
 % Bars 686 to 690
 	ees2-^\f
 	des-^

@@ -7,7 +7,7 @@
     194     463    4419 20_DvorakSymph3_Part04_Fagotti.ly
     344     763    6864 20_DvorakSymph3_Part05_Corni.ly
     194     463    4379 20_DvorakSymph3_Part06_Trombe.ly
-    294     663    6187 20_DvorakSymph3_Part07_Tromboni.ly
+    294     663    6189 20_DvorakSymph3_Part07_Tromboni.ly
     144     363    3559 20_DvorakSymph3_Part08_Percussion.ly
      80     240    2542 20_DvorakSymph3_Part09_Arpa.ly
     119     313    3133 20_DvorakSymph3_Part10_ViolineI.ly
@@ -16,8 +16,8 @@
     119     313    3199 20_DvorakSymph3_Part13_Violoncello.ly
     118     311    3181 20_DvorakSymph3_Part14_Contrabasso.ly
     205     873    5408 test.ly
-    115     961    4915 00-Common/DvorakSymph3_Corrections.ily
-   1436    5091   32417 00-Common/DvorakSymph3_CueVoice.ily
+    129    1118    5638 00-Common/DvorakSymph3_Corrections.ily
+   1886    6903   43014 00-Common/DvorakSymph3_CueVoice.ily
     314    1998   15106 00-Common/DvorakSymph3_Format_Cond_Mvt01.ily
     274    1612   12836 00-Common/DvorakSymph3_Format_Cond_Mvt02.ily
     418    2464   19292 00-Common/DvorakSymph3_Format_Cond_Mvt03.ily
@@ -78,11 +78,11 @@
     308    1123    5473 01-Mvt1/m01_v16_music_TrombeII_C.ily
     316    1156    5620 01-Mvt1/m01_v16_music_TrombeII.ily
     322    1211    5960 01-Mvt1/m01_v17_music_TrombonoI_C.ily
-    322    1202    5879 01-Mvt1/m01_v17_music_TrombonoI.ily
+    338    1254    6141 01-Mvt1/m01_v17_music_TrombonoI.ily
     322    1191    5847 01-Mvt1/m01_v18_music_TrombonoII_C.ily
-    322    1178    5741 01-Mvt1/m01_v18_music_TrombonoII.ily
+    338    1230    6002 01-Mvt1/m01_v18_music_TrombonoII.ily
     322    1167    5715 01-Mvt1/m01_v19_music_TrombonoIII_C.ily
-    322    1154    5595 01-Mvt1/m01_v19_music_TrombonoIII.ily
+    338    1207    5854 01-Mvt1/m01_v19_music_TrombonoIII.ily
     338    1294    6199 01-Mvt1/m01_v21_music_Timpani_C.ily
     338    1276    6095 01-Mvt1/m01_v21_music_Timpani.ily
     485    3511   17955 01-Mvt1/m01_v25_music_ViolinoI_C.ily
@@ -126,11 +126,11 @@
     189     496    2464 02-Mvt2/m02_v16_music_TrombeII_C.ily
     201     577    2840 02-Mvt2/m02_v16_music_TrombeII.ily
     188     489    2441 02-Mvt2/m02_v17_music_TrombonoI_C.ily
-    188     486    2420 02-Mvt2/m02_v17_music_TrombonoI.ily
+    196     552    2712 02-Mvt2/m02_v17_music_TrombonoI.ily
     188     489    2420 02-Mvt2/m02_v18_music_TrombonoII_C.ily
-    188     486    2409 02-Mvt2/m02_v18_music_TrombonoII.ily
+    196     552    2700 02-Mvt2/m02_v18_music_TrombonoII.ily
     188     486    2423 02-Mvt2/m02_v19_music_TrombonoIII_C.ily
-    188     486    2423 02-Mvt2/m02_v19_music_TrombonoIII.ily
+    196     552    2715 02-Mvt2/m02_v19_music_TrombonoIII.ily
     246     793    4050 02-Mvt2/m02_v21_music_Timpani_C.ily
     246     793    4050 02-Mvt2/m02_v21_music_Timpani.ily
     230    1963   10624 02-Mvt2/m02_v23_music_ArpaUp_C.ily
@@ -178,13 +178,13 @@
     686    1668    7757 03-Mvt3/m03_v16_music_TrombeII_C.ily
     706    1764    8207 03-Mvt3/m03_v16_music_TrombeII.ily
     666    1594    7501 03-Mvt3/m03_v17_music_TrombonoI_C.ily
-    666    1594    7501 03-Mvt3/m03_v17_music_TrombonoI.ily
+    698    1738    8185 03-Mvt3/m03_v17_music_TrombonoI.ily
     654    1558    7318 03-Mvt3/m03_v18_music_TrombonoII_C.ily
-    654    1551    7278 03-Mvt3/m03_v18_music_TrombonoII.ily
+    694    1716    8064 03-Mvt3/m03_v18_music_TrombonoII.ily
     672    1640    8690 03-Mvt3/m03_v19_music_TrombonoIII_C.ily
-    672    1572    7424 03-Mvt3/m03_v19_music_TrombonoIII.ily
+    704    1705    8057 03-Mvt3/m03_v19_music_TrombonoIII.ily
     660    1498    6970 03-Mvt3/m03_v20_music_Tuba_C.ily
-    656    1472    6914 03-Mvt3/m03_v20_music_Tuba.ily
+    682    1649    7748 03-Mvt3/m03_v20_music_Tuba.ily
     645    1652    8020 03-Mvt3/m03_v21_music_Timpani_C.ily
     644    1648    7961 03-Mvt3/m03_v21_music_Timpani.ily
     483    1107    4709 03-Mvt3/m03_v22_music_Triangolo_C.ily
@@ -199,4 +199,4 @@
     913    2930   15319 03-Mvt3/m03_v28_music_Violoncello.ily
     865    2409   12193 03-Mvt3/m03_v29_music_Contrabasso_C.ily
     865    2375   11992 03-Mvt3/m03_v29_music_Contrabasso.ily
-  83030  308358 1670721 total
+  83696  311301 1686637 total

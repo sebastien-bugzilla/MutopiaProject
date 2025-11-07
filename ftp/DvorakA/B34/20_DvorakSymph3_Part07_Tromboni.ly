@@ -67,7 +67,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -139,7 +139,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -211,7 +211,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -276,14 +276,14 @@
 				\keepWithTag #'(tuba) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTubaMvtI
+				\InCueContext \cueVoiceTubaMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \nameTubaMvtIII \musicTubaMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
