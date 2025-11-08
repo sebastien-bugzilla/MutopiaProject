@@ -37,7 +37,7 @@ musicTimpaniMvtIII = \relative c {
 	bes\fz r
 	bes\fz r
 	bes\fz r
-	R2*40
+	R2*36
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -53,10 +53,10 @@ musicTimpaniMvtIII = \relative c {
 % Bars 56 to 60
 	
 % Bars 61 to 65
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \mark \default
 	ees4-^\ff ees-^
 % Bars 66 to 70
 	ees-^ r
@@ -217,7 +217,7 @@ musicTimpaniMvtIII = \relative c {
 	bes4 r
 	R2
 	bes4 r
-	R2*76
+	R2*72
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -248,6 +248,10 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 271 to 275
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 276 to 280
 	ees4-^\f r
 	r r8. ees16
@@ -287,13 +291,17 @@ musicTimpaniMvtIII = \relative c {
 % Bars 306 to 310
 	bes:
 	ees4-^\f r
-	R2*14
+	R2*11
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-6 R
 % Bars 321 to 325
-	\mark \default
+	\mmrPos #-6 R \no \mark \default
 	ees4\ff ees
 	ees r
 	ees ees
@@ -313,7 +321,7 @@ musicTimpaniMvtIII = \relative c {
 % Bars 336 to 340
 	r ees
 	ees2:16
-	R2*51
+	R2*43
 % Bars 341 to 345
 	
 % Bars 346 to 350
@@ -331,11 +339,15 @@ musicTimpaniMvtIII = \relative c {
 % Bars 376 to 380
 	
 % Bars 381 to 385
-	
+	\ni \mmrPos #-4 R2 \no
+	R
+	\ni \mmrPos #-4 R \no
+	R
+	\ni \mmrPos #-4 R \no
 % Bars 386 to 390
-	
-	
-	
+	R
+	\ni \mmrPos #-4 R \no
+	R
 	ees2:16-^\f
 	ees:
 % Bars 391 to 395
@@ -366,7 +378,7 @@ musicTimpaniMvtIII = \relative c {
 	bes-^ ees
 	bes-^ ees-^
 	ees\brack\fz r
-	R2*47
+	R2*42
 % Bars 416 to 420
 	
 % Bars 421 to 425
@@ -384,7 +396,11 @@ musicTimpaniMvtIII = \relative c {
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 461 to 465
 	bes4\f r8 bes16 bes
 	bes4 r
@@ -432,7 +448,7 @@ musicTimpaniMvtIII = \relative c {
 	e-^ e-^ e-^ 
 	e-^ e-^ e-^ }
 	b-^ r^\mutaeineshinb
-	R2*19
+	R2*16
 % Bars 506 to 510
 	
 % Bars 511 to 515
@@ -440,9 +456,9 @@ musicTimpaniMvtIII = \relative c {
 % Bars 516 to 520
 	
 % Bars 521 to 525
-	
-	
-	\section
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	ees2:16\ff
 	ees4 r
 % Bars 526 to 530
@@ -488,7 +504,7 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 571 to 575
 	\mark \default
-	R2*60
+	R2*56
 % Bars 576 to 580
 	
 % Bars 581 to 585
@@ -511,8 +527,12 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 626 to 630
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 631 to 635
-	\section
+	\mmrPos #-4 R \no \section
 	ees8\brack\f r r4
 	R2
 	ees8-> r r4
@@ -548,7 +568,7 @@ musicTimpaniMvtIII = \relative c {
 	bes bes
 	bes r
 % Bars 666 to 670
-	R2*25
+	R2*20
 % Bars 671 to 675
 	
 % Bars 676 to 680
@@ -556,7 +576,11 @@ musicTimpaniMvtIII = \relative c {
 % Bars 681 to 685
 	
 % Bars 686 to 690
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 691 to 695
 	bes4-.\f r
 	bes-. r

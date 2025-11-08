@@ -92,13 +92,17 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 76 to 80
 	\mark \default
-	R2.*19
+	R2.*17
 % Bars 81 to 85
 	
 % Bars 86 to 90
 	
 % Bars 91 to 95
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 % Bars 96 to 100
 	bes4.:\brack\ff bes8 r r
 	bes4.:\fz bes8 r r
@@ -127,7 +131,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 121 to 125
 	ees4 r8 ees4 r16 bes
 	ees4 r8 r4 r8
-	R2.*26
+	R2.*24
 % Bars 126 to 130
 	
 % Bars 131 to 135
@@ -138,8 +142,8 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 146 to 150
 	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \no
 	bes2.:->\f\>
 	bes4\! r8 r4 r8
 % Bars 151 to 155
@@ -249,7 +253,7 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*23
+	R2.*21
 % Bars 256 to 260
 	
 % Bars 261 to 265
@@ -259,8 +263,8 @@ musicTimpaniMvtI = \relative c {
 % Bars 271 to 275
 	
 % Bars 276 to 280
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	bes2.:\p
 	bes:
 	bes:

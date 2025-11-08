@@ -1804,16 +1804,139 @@ cueVoiceTubaMvtIII = \relative c {
 %#               C U E   V O I C E   F O R   P E R C U S S I O N               #
 %###############################################################################
 cueVoiceTimpaniMvtI = \relative c {
-	
+	s2.*18 s4.*1 s2.*22 s4.*1 s2.*51
+	% bars 94 - 95
+	\clef treble \voiceOne aes''4.(^\markup {Trbe.} ges4 ees8
+	des4 ges8 f4 aes8) \clef bass \oneVoice
+	s2.*51
+	% bars 147 - 148
+	\clef treble \voiceOne a4.^\markup {Cor.I.} g
+	f e4 ees8 \clef bass \oneVoice
+	s2.*80 s4.*1 s2.*46
+	% bars 276 - 277
+	\clef treble \voiceOne e8-.^\markup {Cor.I.} f-. g-. a-.[ b-. r16 c-.]
+	c2. \clef bass \oneVoice
 }
 cueVoiceTimpaniMvtII = \relative c {
-	
+	s2*10
+	% bars 11 - 12
+	<< {
+		\InCueContext \clef treble <b'' d!>4~^\markup {Cl.,Ob.} q16 <c f> <b c>-. <a c>-.
+		g4( g') \clef bass
+	} \\ {
+		\InCueContext s2
+		g,8. fisis32 g b16 a a g
+	} >>
+	s2*21 s4*1 s2*9
+	% bars 44 - 45
+	\clef treble \voiceOne r8^\markup {Cl.} fis'8(~ \tuplet 6/4 4 {fis16 eis fis a gis fis)}
+	fis8 fis(~\f \tuplet 3/2 8 { fis16 eis fis} a32[ gis r32 gis]) \oneVoice \clef bass
+	s2*13
+	% bars 59 - 62
+	\clef treble \voiceOne g8.(^\markup {Cl.} e32 fis g8 e)
+	g8.( e32 fis g8 e)
+	g8.( e32 fis g16. fis32 e16. d32)
+	cis4(~ \tuplet 6/4 4 { cis16 bis cis dis e dis)} \clef bass
+	s2*25
+	% bar 88
+	<>^\markup {Cor.I.}
+	s2*10
+	% bar 98
+	<>^\markup {Arpa}
+	s2*15
+	% bar 113
+	\clef treble <c, aes'>4^\markup {Cl.} q8 q16. <des bes'>32 \clef bass
 }
 cueVoiceTimpaniMvtIII = \relative c {
-	
+	s2*60
+	% bars 61 - 64
+	\clef treble \voiceOne aes''2^\markup {Cor.I.}
+	f
+	ees~
+	ees8 r r4 \clef bass \oneVoice
+	s2*207
+	% bars 272 - 275
+	r4^\markup {Tba} b,
+	r a
+	r g
+	r f
+	s2*43
+	% bars 319 - 321
+	\clef treble aes''2^\markup {Cor.I.}
+	f
+	ees \clef bass
+	s2*59
+	% bars 381 - 388
+	\voiceOne <e, b' d>4^\markup {\column {\lower #1.5 "Cor." "Trbni" }} r
+	s2
+	q4 r
+	s2
+	q4 r
+	s2
+	q4 r
+	s2 \oneVoice
+	s2*67
+	% bars 456 - 460
+	\voiceOne r4^\markup {Cor.III.IV.} <f f'>4~
+	q2~
+	q~
+	q~
+	q \oneVoice
+	s2*60
+	% bars 521 - 523
+	\clef treble \once \voiceOne r8.^\markup {Fl.} fis'''16[( dis8) r16 b](
+	cis4) \voiceOne r
+	r8. \oneVoice gis'16[( e8) r16 cis-.] \clef bass \oneVoice
+	s2*104
+	% bars 628 - 631
+	\voiceOne fis,,2^\markup {Cor.I.,II.}
+	e
+	ees
+	des \oneVoice
+	s2*54
+	% bars 686 - 690
+	\voiceOne ees,2^\markup {Trbne}
+	des
+	ces
+	a!
+	aes \oneVoice
 }
 cueVoiceTriangoloMvtIII = \relative c {
-	
+	s2*45
+	% bars 46 - 47
+	\clef bass \voiceOne r4^\markup {Fg.I.} r8. a'16(\pp
+	c8)[ r16 bes( d8)] r \clef treble \oneVoice
+	s2*163
+	% bars 211 - 216
+	\voiceTwo c2^\markup {Viol.I.}
+	g'
+	ees
+	d
+	c8 r16 g'16[(^\markup {Viol.II} ees8) r16 d](
+	c8) r16 g'[(^\markup {Viol.I.} ees8) r16 d]\laissezVibrer \oneVoice
+	s2*86
+	% bars 303 - 306
+	\clef bass \voiceOne r4^\markup {Fag.I.II.} r8. ces16
+	aes4.. g16
+	f8.[ f'16 d8. c16]
+	b!8 r r4 \clef treble \oneVoice
+	s2*47
+	% bar 354
+	<>^\markup {Trbni}
+	s2*126
+	% bars 480 - 483
+	\voiceTwo r4^\markup {Cor.I.II.} r8. b16
+	e4.. b16
+	e4 r8.^\markup {Cor.III.IV.} b16
+	e4.. b16^\markup {Cor.I.II.} \oneVoice
+	s2*202
+	% bars 686 - 690
+	\clef bass \voiceOne ees,2^\markup {Trbne III.}
+	des
+	ces
+	a
+	aes
+	<>^\markup {Timpani} \clef treble
 }
 %###############################################################################
 %#                     C U E   V O I C E   F O R   A R P A                     #

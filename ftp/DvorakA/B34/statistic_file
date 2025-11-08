@@ -16,8 +16,8 @@
     119     313    3199 20_DvorakSymph3_Part13_Violoncello.ly
     118     311    3181 20_DvorakSymph3_Part14_Contrabasso.ly
     205     873    5408 test.ly
-    129    1118    5638 00-Common/DvorakSymph3_Corrections.ily
-   1886    6903   43014 00-Common/DvorakSymph3_CueVoice.ily
+    133    1143    5771 00-Common/DvorakSymph3_Corrections.ily
+   2009    7380   45775 00-Common/DvorakSymph3_CueVoice.ily
     314    1998   15106 00-Common/DvorakSymph3_Format_Cond_Mvt01.ily
     274    1612   12836 00-Common/DvorakSymph3_Format_Cond_Mvt02.ily
     418    2464   19292 00-Common/DvorakSymph3_Format_Cond_Mvt03.ily
@@ -84,7 +84,7 @@
     322    1167    5715 01-Mvt1/m01_v19_music_TrombonoIII_C.ily
     338    1207    5854 01-Mvt1/m01_v19_music_TrombonoIII.ily
     338    1294    6199 01-Mvt1/m01_v21_music_Timpani_C.ily
-    338    1276    6095 01-Mvt1/m01_v21_music_Timpani.ily
+    342    1300    6211 01-Mvt1/m01_v21_music_Timpani.ily
     485    3511   17955 01-Mvt1/m01_v25_music_ViolinoI_C.ily
     484    3288   16540 01-Mvt1/m01_v25_music_ViolinoI.ily
     496    4467   20673 01-Mvt1/m01_v26_music_ViolinoII_C.ily
@@ -132,7 +132,7 @@
     188     486    2423 02-Mvt2/m02_v19_music_TrombonoIII_C.ily
     196     552    2715 02-Mvt2/m02_v19_music_TrombonoIII.ily
     246     793    4050 02-Mvt2/m02_v21_music_Timpani_C.ily
-    246     793    4050 02-Mvt2/m02_v21_music_Timpani.ily
+    250     828    4211 02-Mvt2/m02_v21_music_Timpani.ily
     230    1963   10624 02-Mvt2/m02_v23_music_ArpaUp_C.ily
     230    1555    8737 02-Mvt2/m02_v23_music_ArpaUp.ily
     221     734    3852 02-Mvt2/m02_v24_music_ArpaDown_C.ily
@@ -186,9 +186,9 @@
     660    1498    6970 03-Mvt3/m03_v20_music_Tuba_C.ily
     682    1649    7748 03-Mvt3/m03_v20_music_Tuba.ily
     645    1652    8020 03-Mvt3/m03_v21_music_Timpani_C.ily
-    644    1648    7961 03-Mvt3/m03_v21_music_Timpani.ily
+    668    1770    8529 03-Mvt3/m03_v21_music_Timpani.ily
     483    1107    4709 03-Mvt3/m03_v22_music_Triangolo_C.ily
-    483    1107    4722 03-Mvt3/m03_v22_music_Triangolo.ily
+    499    1181    5069 03-Mvt3/m03_v22_music_Triangolo.ily
     911    3505   19426 03-Mvt3/m03_v25_music_ViolinoI_C.ily
     911    3440   19091 03-Mvt3/m03_v25_music_ViolinoI.ily
     902    3864   20899 03-Mvt3/m03_v26_music_ViolinoII_C.ily
@@ -199,4 +199,4 @@
     913    2930   15319 03-Mvt3/m03_v28_music_Violoncello.ily
     865    2409   12193 03-Mvt3/m03_v29_music_Contrabasso_C.ily
     865    2375   11992 03-Mvt3/m03_v29_music_Contrabasso.ily
-  83696  311301 1686637 total
+  83871  312058 1690723 total

@@ -127,3 +127,7 @@ CorrectionTrombone = \markup {
 	% bar 456 / MVt III
 	"Bar 456, Mvt III: for trombone III, the cue voice of cor III/IV indicate a g pitch instead of f."
 }
+CorrectionPercussion = \markup {
+	% bar 47 / Mvt III
+	"Bar 47, Mvt III: for triangle, a missing accidental in cue voice is added."
+}

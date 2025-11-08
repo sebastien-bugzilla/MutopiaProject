@@ -5,11 +5,11 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicTriangoloMvtIII = \relative c {
-	\clef bass
+	\clef treble
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2*48
+	R2*45
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -27,10 +27,10 @@ musicTriangoloMvtIII = \relative c {
 % Bars 41 to 45
 	
 % Bars 46 to 50
-	
-	
-	
-	c2-^\p
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
+	R2
+	c''2-^\p
 	R
 % Bars 51 to 55
 	c-^
@@ -95,7 +95,7 @@ musicTriangoloMvtIII = \relative c {
 % Bars 166 to 170
 	
 	\mark \default
-	R2*49
+	R2*43
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -113,9 +113,13 @@ musicTriangoloMvtIII = \relative c {
 % Bars 206 to 210
 	
 % Bars 211 to 215
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 216 to 220
-	
+	\mmrPos #4 R \no
 	c4\pp r
 	R2
 	c4 r
@@ -182,7 +186,7 @@ musicTriangoloMvtIII = \relative c {
 	c c
 % Bars 271 to 275
 	c r
-	R2*35
+	R2*31
 % Bars 276 to 280
 	
 % Bars 281 to 285
@@ -195,8 +199,12 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 301 to 305
 	
-% Bars 306 to 310
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 306 to 310
+	\mmrPos #-4 R \no
 	c2-^\p
 	R
 	c-^
@@ -254,7 +262,7 @@ musicTriangoloMvtIII = \relative c {
 % Bars 391 to 395
 	
 	\mark \default
-	R2*91
+	R2*87
 % Bars 396 to 400
 	
 % Bars 401 to 405
@@ -289,10 +297,14 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 476 to 480
 	
+	
+	
+	
+	\ni \mmrPos #4 R2
 % Bars 481 to 485
-	
-	
-	\mark \default
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	c2:16\brack\f
 	c:
 % Bars 486 to 490
@@ -388,7 +400,7 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 651 to 655
 	\mark \default
-	R2*48
+	R2*34
 % Bars 656 to 660
 	
 % Bars 661 to 665
@@ -402,7 +414,11 @@ musicTriangoloMvtIII = \relative c {
 % Bars 681 to 685
 	
 % Bars 686 to 690
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 691 to 695
 	
 % Bars 696 to 700

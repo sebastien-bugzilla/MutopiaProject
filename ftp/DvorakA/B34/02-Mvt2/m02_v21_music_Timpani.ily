@@ -9,12 +9,12 @@ musicTimpaniMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*12
+	R2*10
 % Bars 6 to 10
 	
 % Bars 11 to 15
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-9 R \no
 	r4 r8. \tuplet 3/2 16 {gis32\p gis gis}
 	cis8 r r8. \tuplet 3/2 16 {gis32 gis gis}
 	cis8 r r8. \tuplet 3/2 16 {gis32 gis gis}
@@ -34,26 +34,30 @@ musicTimpaniMvtII = \relative c {
 	cis8 r r4
 	cis8 r r4
 	\time 2/8 R4
-	\time 4/8 R2*11
+	\time 4/8 R2*9
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no \mark \default
 % Bars 46 to 50
 	r4 r16 \tuplet 3/2 16 {gis32\mf gis gis} gis16\noBeam r
 	r4 r16 \tuplet 3/2 16 {gis32 gis gis} gis16\noBeam r
-	R2*15
+	R2*11
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 61 to 65
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	<< cis2:32\p\< {s8 s\! s\> s\!}>>
 	cis8 r r8. \tuplet 3/2 16 {cis32\pp cis cis}
 	cis8 r r8. \tuplet 3/2 16 {cis32 cis cis}
@@ -75,7 +79,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 96 to 100
 	
 	R2\fermata \section
-	R2*16
+	R2*15
 % Bars 101 to 105
 	
 % Bars 106 to 110
@@ -83,7 +87,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 111 to 115
 	
 	
-	
+	\ni \mmrPos #-8 R2 \no
 	<< aes2:32 {s8\pp\< s\! s\> s\!}>>
 	aes8 r r4
 % Bars 116 to 120
