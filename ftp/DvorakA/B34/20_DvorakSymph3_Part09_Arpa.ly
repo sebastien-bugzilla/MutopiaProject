@@ -44,8 +44,8 @@
 		}
 	}
 	\score {
-		\new PianoStaff \with { \nameGrandStaffVMvtII } <<
-			\new Staff << 
+		\new PianoStaff \with { \nameGrandStaffIVMvtII } <<
+			\new Staff = "up" <<
 				\new Voice {
 					\formatArpaUpMvtII
 				}
@@ -59,7 +59,7 @@
 					\timeMvtII \nameArpaUpMvtII \musicArpaUpMvtII
 				}
 			>>
-			\new Staff <<
+			\new Staff = "down" <<
 				\new Voice {
 					\InCueContext \cueVoiceArpaDownMvtII
 				}
@@ -69,7 +69,7 @@
 			>>
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}

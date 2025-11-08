@@ -131,3 +131,7 @@ CorrectionPercussion = \markup {
 	% bar 47 / Mvt III
 	"Bar 47, Mvt III: for triangle, a missing accidental in cue voice is added."
 }
+CorrectionArpa = \markup {
+	% bar 63 / Mvt II
+	"Bar 63, Mvt II: an additional rest in clarinet cue voice is removed."
+}

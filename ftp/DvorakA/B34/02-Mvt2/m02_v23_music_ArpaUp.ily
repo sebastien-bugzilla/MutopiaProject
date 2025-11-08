@@ -35,15 +35,19 @@ musicArpaUpMvtII = \relative c {
 	
 	\mark \default
 % Bars 46 to 50
-	R2*18
+	R2*13
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 61 to 65
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	<e' g cis>4\p\arpeggio r
 	q4\arpeggio r
 % Bars 66 to 70
@@ -184,15 +188,19 @@ musicArpaUpMvtII = \relative c {
 	
 	
 	\section \mark \default
-	\key cis \minor R2*14
+	\key cis \minor R2*10
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
-% Bars 226 to 230
 	
-	\section
-	\time 2/8 R4 \section
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 226 to 230
+	\mmrPos #-4 R
+	\mmrPos #-4 R  \section
+	\time 2/8 \mmrPos #-4 R4 \no \section
 	\time 4/8 <d fis a>8[-.\p\> <cis e a>-. <d fis a>-. <cis e a>-.]\!
 	<d fis a>8 r r4
 % Bars 231 to 235
@@ -209,12 +217,12 @@ musicArpaUpMvtII = \relative c {
 	
 	
 	R2\fermata
-	R2*5
+	R2*2
 	
 % Bars 261 to 265
-	
-	
-	\section
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	\key des \major \staffDown f,32(^\pp des' f \staffUp aes des f des aes \staffDown f, des' f \staffUp aes des f des aes)
 	\staffDown f,( des' f \staffUp aes des f des aes \staffDown f, des' f \staffUp aes des f des aes)
 % Bars 266 to 270

@@ -1942,7 +1942,25 @@ cueVoiceTriangoloMvtIII = \relative c {
 %#                     C U E   V O I C E   F O R   A R P A                     #
 %###############################################################################
 cueVoiceArpaUpMvtII = \relative c {
-	
+	s2*33 s4*1 s2*24
+	% bars 59 - 63
+	\stemUp g'''8.(^\markup {Clar.} e32 fis g8 e)
+	g8.( e32 fis g8 e)
+	g8.( e32 fis g16. fis32 e16. dis32)
+	cis4(~ \tuplet 6/4 4 {cis16 bis cis dis e dis)}
+	cis4. r8 \stemNeutral
+	s2*160
+	% bars 224 - 228
+	\stemUp cis4(~^\markup {Viol.I.} \tuplet 6/4 4 {cis16 bis cis dis e dis)}
+	cis4(~ \tuplet 6/4 4 {cis16 bis cis dis e dis)}
+	cis4(~ \tuplet 6/4 4 {cis16 bis cis dis e dis)}
+	cis4(~ \tuplet 6/4 4 {cis16 bis cis dis e dis)}
+	\tuplet 3/2 8 {cis16( bis cis dis e cis)}
+	s2*32
+	% bars 261 - 263
+	\voiceOne r4^\markup {Fl.I.} cis'~
+	cis cis8. dis16
+	e4 fis8 g \oneVoice
 }
 cueVoiceArpaDownMvtII = \relative c {
 	

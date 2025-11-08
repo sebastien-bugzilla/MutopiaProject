@@ -35,15 +35,19 @@ musicArpaDownMvtII = \relative c {
 	
 	\mark \default
 % Bars 46 to 50
-	R2*18
+	R2*13
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
+	
+	
+	\ni R2
+	R
 % Bars 61 to 65
-	
-	
-	
+	R
+	R
+	R \no
 	<a e' a>4\arpeggio r
 	q\arpeggio r
 % Bars 66 to 70
@@ -176,15 +180,19 @@ musicArpaDownMvtII = \relative c {
 	
 	
 	\section
-	\key cis \minor R2*14
+	\key cis \minor R2*10
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
-% Bars 226 to 230
 	
-	\section
-	\time 2/8 R4 \clef bass \section
+	
+	\ni R2
+	R
+% Bars 226 to 230
+	R
+	R  \section
+	\time 2/8 R4 \no \clef bass \section
 	\time 4/8 <d, a'>8-.[ <a a'>-. <d a'>-. <a a'>-.]
 	<d a'> r r4
 % Bars 231 to 235
@@ -201,11 +209,11 @@ musicArpaDownMvtII = \relative c {
 	
 	
 	R2\fermata
-	R2*5
+	R2*2
 % Bars 261 to 265
-	
-	
-	\section
+	\ni R2
+	R
+	R \no \section
 	\key des \major \clef treble s2
 	s
 % Bars 266 to 270

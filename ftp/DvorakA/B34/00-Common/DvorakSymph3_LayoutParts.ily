@@ -11,6 +11,7 @@
 	\set Score.doubleRepeatBarType = #":|.|:"
 	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 	\set Voice.restNumberThreshold = #0
+	\set PianoStaff.connectArpeggios = ##t
 	\compressMMRests
 	\compressEmptyMeasures
 	\context {

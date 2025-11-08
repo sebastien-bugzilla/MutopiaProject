@@ -464,14 +464,19 @@ nameTriangoloMvtIII = {
 %#                      V O I C E   N A M E   :   A R P A                      #
 %###############################################################################
 nameArpaUpMvtII = {
-	\set Staff.instrumentName = "ArpaUp"
+	\set Staff.instrumentName = ""
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"orchestral harp"
 }
 nameArpaDownMvtII = {
-	\set Staff.instrumentName = "ArpaDown"
+	\set Staff.instrumentName = ""
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"orchestral harp"
+}
+nameGrandStaffIVMvtII = {
+	\set Staff.instrumentName = "Arpa"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #""
 }
 %###############################################################################
 %#                  V O I C E   N A M E   :   V I O L I N E I                  #
