@@ -45,22 +45,27 @@
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtI
+		\new GrandStaff \with {\RemoveAllEmptyStaves } <<
+			\new Staff {
+				\new Voice {
+					\formatViolinoIMvtI
+				}
+				\new Voice {
+					\keepWithTag #'(violinoI) \tempiPartMvtI
+				}
+				\new Voice {
+					\InCueContext \cueVoiceViolinoIMvtI
+				}
+				\new Voice {
+					\timeMvtI \nameViolinoIMvtI \musicViolinoIMvtI
+				}
 			}
-			\new Voice {
-				\keepWithTag #'(violinoI) \tempiPartMvtI
-			}
-			\new Voice {
-				\InCueContext \cueVoiceViolinoIMvtI
-			}
-			\new Voice {
-				\timeMvtI \nameViolinoIMvtI \musicViolinoIMvtI
+			\new Staff {
+				\timeMvtI \musicViolinoIDivisiMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}

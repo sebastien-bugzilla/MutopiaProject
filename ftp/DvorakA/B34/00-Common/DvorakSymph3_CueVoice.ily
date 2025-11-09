@@ -1963,19 +1963,19 @@ cueVoiceArpaUpMvtII = \relative c {
 	e4 fis8 g \oneVoice
 }
 cueVoiceArpaDownMvtII = \relative c {
-	
+	% no cue voice
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #
 %###############################################################################
 cueVoiceViolinoIMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceViolinoIMvtII = \relative c {
-	
+	% no cue voice
 }
 cueVoiceViolinoIMvtIII = \relative c {
-	
+	% no cue voice
 }
 %###############################################################################
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #
