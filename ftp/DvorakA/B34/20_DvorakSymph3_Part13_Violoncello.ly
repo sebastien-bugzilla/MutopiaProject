@@ -45,22 +45,29 @@
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtI
+		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
+			\new Staff {
+				\new Voice {
+					\formatVioloncelloMvtI
+				}
+				\new Voice {
+					\keepWithTag #'(violoncello) \tempiPartMvtI
+				}
+				\new Voice {
+					\InCueContext \cueVoiceVioloncelloMvtI
+				}
+				\new Voice {
+					\timeMvtI \nameVioloncelloMvtI \musicVioloncelloMvtI
+				}
 			}
-			\new Voice {
-				\keepWithTag #'(violoncello) \tempiPartMvtI
-			}
-			\new Voice {
-				\InCueContext \cueVoiceVioloncelloMvtI
-			}
-			\new Voice {
-				\timeMvtI \nameVioloncelloMvtI \musicVioloncelloMvtI
+			\new Staff {
+				\new Voice {
+					\timeMvtI \musicVioloncelloDivisiMvtI
+				}
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -69,18 +76,25 @@
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtII
+		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
+			\new Staff {
+				\new Voice {
+					\formatVioloncelloMvtII
+				}
+				\new Voice {
+					\keepWithTag #'(violoncello) \tempiPartMvtII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceVioloncelloMvtII
+				}
+				\new Voice {
+					\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
+				}
 			}
-			\new Voice {
-				\keepWithTag #'(violoncello) \tempiPartMvtII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceVioloncelloMvtII
-			}
-			\new Voice {
-				\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
+			\new Staff {
+				\new Voice {
+					\timeMvtII \musicVioloncelloDivisiMvtII
+				}
 			}
 		>>
 		\header {

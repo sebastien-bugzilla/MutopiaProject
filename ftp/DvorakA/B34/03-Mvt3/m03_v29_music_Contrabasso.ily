@@ -474,18 +474,26 @@ musicContrabassoMvtIII = \relative c {
 	g8-> r g4-^
 	\restPattern f8 c''16( a8) g16-.
 	f4 r
-	R2*20
+	R2*10
 	
 % Bars 426 to 430
 	
 % Bars 431 to 435
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-6 R
 % Bars 436 to 440
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R
 % Bars 441 to 445
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ees4\p^\pizz r
 	R2
 % Bars 446 to 450

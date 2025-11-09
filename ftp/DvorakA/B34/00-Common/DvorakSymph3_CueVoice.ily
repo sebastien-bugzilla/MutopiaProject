@@ -2018,23 +2018,34 @@ cueVoiceViolaMvtIII = \relative c {
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #
 %###############################################################################
 cueVoiceVioloncelloMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceVioloncelloMvtII = \relative c {
-	
+	% no cue voice
 }
 cueVoiceVioloncelloMvtIII = \relative c {
-	
+	% no cue voice
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   C O N T R A B A S S O              #
 %###############################################################################
 cueVoiceContrabassoMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceContrabassoMvtII = \relative c {
-	
+	% no cue voice
 }
 cueVoiceContrabassoMvtIII = \relative c {
-	
+	s2*433
+	% bars 434 - 443
+	\clef treble r8. g'''16[(^\markup {Viol.I.} e8) r16 d](
+	c2)~
+	\restPattern c8 b16( d8) b16(
+	c2)~
+	\restPattern c8 b16( d8) b16(
+	\restPattern c8) b16( d8) b16(
+	\restPattern c8) g'16( f8) ees!16(
+	\restPattern bes'8)\< a16( aes8) g16(\!
+	\restPattern ges8)\> f16( ees8) d16(\!
+	ees8) r r4 \clef bass
 }

@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.24.4"
 \include "./00-Common/DvorakSymph3_Header.ily"
 \include "./00-Common/DvorakSymph3_PaperParts.ily"
 \include "./00-Common/DvorakSymph3_timeMvt.ily"
@@ -59,7 +60,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -68,18 +69,25 @@
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtII
+		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
+			\new Staff {
+				\new Voice {
+					\formatContrabassoMvtII
+				}
+				\new Voice {
+					\keepWithTag #'(contrabasso) \tempiPartMvtII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceContrabassoMvtII
+				}
+				\new Voice {
+					\timeMvtII \nameContrabassoMvtII \musicContrabassoMvtII
+				}
 			}
-			\new Voice {
-				\keepWithTag #'(contrabasso) \tempiPartMvtII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceContrabassoMvtII
-			}
-			\new Voice {
-				\timeMvtII \nameContrabassoMvtII \musicContrabassoMvtII
+			\new Staff {
+				\new Voice {
+					\timeMvtII \musicContrabassoDivisiMvtII
+				}
 			}
 		>>
 		\header {
