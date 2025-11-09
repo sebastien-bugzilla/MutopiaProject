@@ -1981,13 +1981,21 @@ cueVoiceViolinoIMvtIII = \relative c {
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #
 %###############################################################################
 cueVoiceViolinoIIMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceViolinoIIMvtII = \relative c {
-	
+	% no cue voice
 }
 cueVoiceViolinoIIMvtIII = \relative c {
-	
+	s2*436
+	% bars 437 - 440
+	\stemUp c''2(~^\markup {Viol.I.}
+	\restPattern c8) b16( d8) b16(
+	\restPattern c8) b16( d8) b16(
+	\restPattern c8) g'16( f8) ees16\laissezVibrer \stemNeutral
+	s2*15
+	% bar 456
+	\voiceOne \slurDown r8.^\markup {Viol.I.} aes16[(\p f8) r16 ees] \oneVoice \slurNeutral
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   V I O L A                    #

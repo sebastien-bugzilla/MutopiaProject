@@ -511,28 +511,28 @@ musicViolinoIIMvtIII = \relative c {
 	r <g d'>-^
 	\restPattern <a f'>8 c16( a8) g16-.
 	f4 r
-	R2*16
+	R2*13
 % Bars 426 to 430
 	
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
-	
-	
-	
-	r4 r8. ees16(\brack\pp\<
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\voiceTwo r4 r8. ees16(\brack\pp\< \oneVoice
 % Bars 441 to 445
 	\restPattern bes'8) a16( aes8) g16(
 	\restPattern ges8)\! f16(\> ees8) d16(\!
 	ees8) r r4
-	R2*13
+	R2*12
 % Bars 446 to 450
 	
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	
+	\ni \mmrPos #-4 R2 \no
 	r8. aes16[(\p\< f8) r16 ees](\!
 	des8) r r4
 	R2
