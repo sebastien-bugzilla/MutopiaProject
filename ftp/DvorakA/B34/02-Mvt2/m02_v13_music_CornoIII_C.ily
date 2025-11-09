@@ -243,7 +243,7 @@ musicCornoIIIMvtII = \relative c {
 % Bars 211 to 215
 	cis2\f-^~ 
 	cis8 r r4^\mutaine \transposition e \changeStaffName #cornIII-IVine
-	R2 \section
+	R2 \section \mark \default
 	R2*12
 	
 % Bars 216 to 220

@@ -86,7 +86,7 @@ cueVoiceFlautoIMvtII = \relative c {
 	s2*58
 	% bars 104 - 105
 	\oneVoice \stemUp aes,4^\markup {Ob.I.} bes8. c16
-	des4->~ des8 des16. ees32-.
+	des4^>~ des8 des16. ees32-.
 	s2*122 s4*1 s2*18
 	% bar 247
 	<>^\markup {Archi}
@@ -94,8 +94,8 @@ cueVoiceFlautoIMvtII = \relative c {
 cueVoiceFlautoIMvtIII = \relative c {
 	s2*42
 	% bars 43 - 44
-	\voiceOne r4^\markup {Ob.I.}^\markup {Solo} r8. f''16[(\p
-	aes8)] r16 g([ bes8]) r
+	\voiceOne \slurDown r4^\markup {Ob.I.}^\markup {Solo} r8. f''16[(\p
+	aes8)] r16 g([ bes8]) r \oneVoice \slurNeutral
 	s2*17
 	% bars 62 - 64
 	\oneVoice \restPattern des8\repeatTie^\markup {Fl.pic.} f16( ees8) des16(
@@ -116,9 +116,9 @@ cueVoiceFlautoIMvtIII = \relative c {
 	a bes c d)
 	s2*53
 	% bar 230 - 232
-	\oneVoice \stemUp r8^\markup {Viol.I.} r16 d'16([ b8) r16 a](
+	\oneVoice \voiceOne r8^\markup {Viol.I.} r16 d'16([ b8) r16 a](
 	g8)[ r16 d( b8) r16 a](
-	g8)[ r16 d( b8) r16 a] \stemNeutral
+	g8)[ r16 d( b8) r16 a] \oneVoice
 	s2*74
 	% bar 307
 	<>^\markup {Fl.pic.}
@@ -141,7 +141,7 @@ cueVoiceFlautoIMvtIII = \relative c {
 	ges2~
 	ges~
 	ges4.. ges16
-	ges4.. ges16
+	ges4.. ges16 \oneVoice
 	s2*47
 	% bars 519 - 520
 	<< { \InCueContext 

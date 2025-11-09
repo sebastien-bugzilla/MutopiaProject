@@ -255,7 +255,7 @@ musicCornoIMvtII = \relative c {
 % Bars 211 to 215
 	e!2\f-^~
 	e8 r r4^\mutaine \transposition e \changeStaffName #cornI-IIine
-	R2 \section
+	R2 \section \mark \default
 	R2
 	\partCombineApart r8 d(~\f d16 c b a
 % Bars 216 to 220

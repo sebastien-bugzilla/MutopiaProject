@@ -88,12 +88,16 @@ correctionMvtIII = \markup {
 correctionFlauti = \markup {
 	% bar 254 / Mvt I
 	"Bar 254, Mvt I : a natural is not indicated in violin cue voice. Valid also for Flauto II"
-	
+	% bar 56 / Mvt II
+	"Bar 56, Mvt II : for Flauto I, a missing decrescendo is added."
+	% bar 67 / Mvt II
+	"Bar 67, Mvt II : for Flauto I, a decrescendo is printed instead of a crescendo."
 	% bar 230 / Mvt III
 	"Bar 230, Mvt III : In violin cue voice, the first note indicated f is actually a d."
-	
+	% bar 246 / Mvt III
+	"Bar 246, Mvt III : for Flauto I, the last note of the bar (a D) is replaced by a F."
 	% bar 520 / Mvt III
-	"Bar 520, Mvt III : a missing rest is added. Valid also for Flauto II at bars 521 and 523."
+	"Bar 520, Mvt III : for Flauto I, a missing rest is added in violin cue voice. Valid also for Flauto II at bars 521 and 523."
 }
 correctionClarinetti = \markup {
 	% bars 222

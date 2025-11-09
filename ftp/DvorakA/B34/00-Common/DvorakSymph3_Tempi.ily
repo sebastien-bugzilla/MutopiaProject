@@ -137,12 +137,387 @@ tempiMvtIII = {
 %#                            T E M P I   P A R T S                            #
 %###############################################################################
 tempiPartMvtI = {
-	
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo \markup {
+			\concat {
+				"Allegro moderato "
+				\fontsize #-4 \general-align #Y #DOWN { \note {4.} #1 }
+				" = 69"
+			}
+		}
+	}
+	s2.*18 s4.*1 s2.*7
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt1 : bar 27
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "[tranquillo]"
+	}
+	s2.*5
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt1 : bar 32
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "Grandioso"
+	}
+	s2.*10 s4.*1 s2.*33 s8
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt1 : bar 76.16
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "ritard."
+	}
+	s8 s2
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt1 : bar 77
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "[a tempo]"
+	}
+	s2.*83
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt1 : bar 160
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "L'istesso tempo"
+	}
+	s2.*56
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt1 : bar 216
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "Grandioso"
+	}
+	s2.*10
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt1 : bar 226
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "L'istesso tempo"
+	}
+	s2.*3 s4.*1
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt1 : bar 230
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "tranquillo"
+	}
+	s2.*107
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt1 : bar 337
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "ritard."
+	}
+	s2.
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt1 : bar 338
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+	\tempo "a tempo"
+	}
 }
+%-------------------------------------------------------------------------------
 tempiPartMvtII = {
-	
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo \markup {
+			\concat {
+				"Adagio molto, tempo di marcia "
+				\fontsize #-4 \general-align #Y #DOWN { \note {8} #1 }
+				" = 88"
+			}
+		}
+	}
+	s2*12
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 13
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "poco rit."
+	}
+	s2*1
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 14
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "a tempo"
+	}
+	s2*7 s4
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 21.5
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "accel. e cresc."
+	}
+	s4 s2*4
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 26
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "[a tempo]"
+	}
+	s2*8 s4*1 s2*16
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 51
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "stringendo"
+	}
+	s2*3 s4
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 54.5
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "accel."
+	}
+	s4 s2*3
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 58
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "poco rit."
+	}
+	s2
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 59
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "a tempo"
+	}
+	s2*21
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 80
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "poco string. e molto appassionato"
+	}
+	s2*4
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 84
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "[a tempo]"
+	}
+	s2*5
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 89
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "tranquillo molto"
+	}
+	s2*8 s8
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 97.25
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "rit."
+	}
+	s4.
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 98
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "a tempo"
+	}
+	s2*95
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 193
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "accelerando poco a poco"
+	}
+	s2*6
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 199
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "molto ritard."
+	}
+	s2*2
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 201
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "a tempo"
+	}
+	s2*18 s8
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 219.25
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "rit."
+	}
+	s4.
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 220
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "a tempo"
+	}
+	s2*8 s4*1 s2*8 s4
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 237.5
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "ritard."
+	}
+	s4
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 238
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "a tempo"
+	}
+	s2*20 s8
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 258.25
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "rit."
+	}
+	s4.
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt2 : bar 259
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "a tempo"
+	}
 }
+%-------------------------------------------------------------------------------
 tempiPartMvtIII = {
-	
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo \markup {
+			\concat {
+				"Allegro vivace "
+				\fontsize #-4 \general-align #Y #DOWN { \note {2} #1 }
+				" = 88"
+			}
+		}
+	}
+	s2*483
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt3 : bar 484
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "Più mosso"
+	}
+	s2*40
+	%%%%%%%%%%%%%%%%%%%%%%
+	% Mvt3 : bar 524
+	%%%%%%%%%%%%%%%%%%%%%%
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
+		violinoI violinoII viola violoncello contrabasso) {
+		\tempo "Tempo I."
+	}
 }
 

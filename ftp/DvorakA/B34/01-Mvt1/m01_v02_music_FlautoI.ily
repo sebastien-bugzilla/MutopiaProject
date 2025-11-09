@@ -332,7 +332,7 @@ musicFlautoIMvtI = \relative c {
 	e->
 	fis->
 % Bars 301 to 305
-	aes\ff~
+	aes!\ff~
 	<< aes {s8\< s s  s s s\!}>>
 	r aes( aes,) a'( a,) r
 	r bes'( bes,) b-^ c-^ d-^ 

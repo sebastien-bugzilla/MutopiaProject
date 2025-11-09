@@ -243,7 +243,7 @@ musicCornoIVMvtII = \relative c {
 % Bars 211 to 215
 	g2\f-^~
 	g8 r r4^\mutaine \transposition e
-	R2 \section
+	R2 \section \mark \default
 	R2*12
 	
 % Bars 216 to 220
