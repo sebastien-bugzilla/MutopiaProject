@@ -2001,13 +2001,18 @@ cueVoiceViolinoIIMvtIII = \relative c {
 %#                    C U E   V O I C E   F O R   V I O L A                    #
 %###############################################################################
 cueVoiceViolaMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceViolaMvtII = \relative c {
-	
+	% no cue voice
 }
 cueVoiceViolaMvtIII = \relative c {
-	
+	s2*439
+	% bars 440 - 443
+	\clef treble \voiceTwo \slurUp r4^\markup {Viol.II.} r8. ees'16(
+	\restPattern bes'8) a16( aes8) g16(
+	\restPattern ges8) f16( ees8) d16(
+	ees8) r r4 \clef alto
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #

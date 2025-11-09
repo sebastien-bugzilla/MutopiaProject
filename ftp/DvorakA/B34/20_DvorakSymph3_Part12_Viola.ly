@@ -45,22 +45,29 @@
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatViolaMvtI
+		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
+			\new Staff {
+				\new Voice {
+					\formatViolaMvtI
+				}
+				\new Voice {
+					\keepWithTag #'(viola) \tempiPartMvtI
+				}
+				\new Voice {
+					\InCueContext \cueVoiceViolaMvtI
+				}
+				\new Voice {
+					\timeMvtI \nameViolaMvtI \musicViolaMvtI
+				}
 			}
-			\new Voice {
-				\keepWithTag #'(viola) \tempiPartMvtI
-			}
-			\new Voice {
-				\InCueContext \cueVoiceViolaMvtI
-			}
-			\new Voice {
-				\timeMvtI \nameViolaMvtI \musicViolaMvtI
+			\new Staff {
+				\new Voice {
+					\timeMvtI \musicViolaDivisiMvtI
+				}
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -69,18 +76,25 @@
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatViolaMvtII
+		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
+			\new Staff {
+				\new Voice {
+					\formatViolaMvtII
+				}
+				\new Voice {
+					\keepWithTag #'(viola) \tempiPartMvtII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceViolaMvtII
+				}
+				\new Voice {
+					\timeMvtII \nameViolaMvtII \musicViolaMvtII
+				}
 			}
-			\new Voice {
-				\keepWithTag #'(viola) \tempiPartMvtII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceViolaMvtII
-			}
-			\new Voice {
-				\timeMvtII \nameViolaMvtII \musicViolaMvtII
+			\new Staff {
+				\new Voice {
+					\timeMvtII \musicViolaDivisiMvtII
+				}
 			}
 		>>
 		\header {

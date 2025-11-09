@@ -566,17 +566,21 @@ musicViolaMvtIII = \relative c {
 	r <b d>-^
 	\restPattern <c f>8 c16( a8) g16-.
 	f4 r
-	R2*20
+	R2*16
 % Bars 426 to 430
 	
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
+	
+	
+	
+	\ni \mmrPos #4 R2
 % Bars 441 to 445
-	
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	r8. bes16[(\brack\pp^\sola g8) r16 f](
 	ees2~
 % Bars 446 to 450
