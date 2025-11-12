@@ -9,7 +9,7 @@ musicFlautoIIMvtIII = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2*61
+	\mmrLength #30 R2*48
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -28,6 +28,9 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 46 to 50
 	
+	
+	
+	R2*13
 % Bars 51 to 55
 	
 % Bars 56 to 60
@@ -136,7 +139,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2
+	\ni \mmrPos #-6 R2
 	\mmrPos #-4 R
 % Bars 176 to 180
 	\mmrPos #-4 R \no
@@ -266,7 +269,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	aes'4(_\brackfffz aes,8) r
+	\startMeasureCount aes'4(_\brackfffz aes,8) r
 	aes'4(\fz aes,8) r
 % Bars 356 to 360
 	aes'4(\fz aes,8) r
@@ -275,7 +278,7 @@ musicFlautoIIMvtIII = \relative c {
 	aes'4(\fz aes,8) r
 	aes'4(\fz aes,8) r
 % Bars 361 to 365
-	aes'4(\fz aes,8) r
+	aes'4(\fz aes,8) r \stopMeasureCount
 	R2
 	aes'4(\fz aes,8) r
 	R2*25
@@ -330,8 +333,8 @@ musicFlautoIIMvtIII = \relative c {
 	d8)\! r r4
 	R2
 % Bars 421 to 425
-	<< b2->\<( {s8 s s s\!}>>
-	c8) r r4
+	<< b2->\<( {s8 s s s}>>
+	c8)\! r r4
 	R2*44
 	
 	
@@ -372,9 +375,9 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 481 to 485
 	gis fis e\!}
 	R2*2
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	\scaleDurations 2/3 { 
-		\timeSignature 3/4 b'2.\ff~
+		\tempoXoffset #12 \timeSignature 3/4 b'2.\ff~
 		b
 % Bars 486 to 490
 		\key e \major c2.~
@@ -452,7 +455,7 @@ musicFlautoIIMvtIII = \relative c {
 	\key b \major R2*3
 	
 % Bars 571 to 575
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	R2*9
 % Bars 576 to 580
 	
@@ -464,7 +467,7 @@ musicFlautoIIMvtIII = \relative c {
 	\mmrPos #-4 R
 % Bars 586 to 590
 	\mmrPos #-4 R \no
-	<< cis'2\fz\>~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) cis'2-\offset X-offset -1 \fz\>~ {s8 s s s\!}>>
 	cis2~
 	cis4 r
 	R2
@@ -490,7 +493,7 @@ musicFlautoIIMvtIII = \relative c {
 	bis!\<
 	cis
 	dis)\!
-	<< e\f\<~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) e-\offset X-offset -1 \f\<~ {s8 s s s\!}>>
 	e2~\>
 % Bars 611 to 615
 	<< e~ {s4 s\!}>>
@@ -530,7 +533,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 651 to 655
 	\mark \default
-	bes2->\ff~
+	bes!2->\ff~
 	bes8 r ces r
 	bes2->~
 	bes8 r ces r
@@ -573,14 +576,14 @@ musicFlautoIIMvtIII = \relative c {
 	f8 ees!16 des f8 ees16 des)\!
 % Bars 691 to 695
 	ges8(\f f aes ges)
-	\flattrill << fes2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	fes2^\trillflat
 	ees8( des fes ees)
-	<< des2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	des2\trill
 	ces8( bes des ces)
 % Bars 696 to 700
-	\naturaltrill << a2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	a2^\trillnatural
 	aes!8( g bes! aes)
-	<< ges2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	ges2\trill
 	bes8( a c bes
 	ees) r r4
 % Bars 701 to 705
@@ -628,7 +631,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 746 to 750
 	ees~
 	ees
-	\restPattern ees8-._\ffbrackp d16( f8) d16(
+	\startMeasureCount \markEO #'(0 . 1) \restPattern ees8-._\ffbrackp d16( f8) d16(
 	\restPattern ees8-.)_\pocoapococresc d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 % Bars 751 to 755
@@ -636,7 +639,7 @@ musicFlautoIIMvtIII = \relative c {
 	\restPattern ees8-.) d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
-	\restPattern ees8-.) d16( f8) d16(
+	\restPattern ees8-.) d16( f8) d16( \stopMeasureCount
 % Bars 756 to 760
 	ees8) r r8. bes16\ff
 	g'2->\fz~

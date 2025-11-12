@@ -4,11 +4,6 @@
 %###############################################################################
 %#                    V O I C E   N A M E   :   F L A U T I                    #
 %###############################################################################
-namePiccoloMvtIII = {
-	\set Staff.instrumentName = "Piccolo"
-	\set Staff.shortInstrumentName = ""
-	\set Staff.midiInstrument = #"flute"
-}
 nameFlautoIMvtI = {
 	\set Staff.instrumentName = "Flauto I"
 	\set Staff.shortInstrumentName = ""
@@ -36,6 +31,21 @@ nameFlautoIIMvtII = {
 }
 nameFlautoIIMvtIII = {
 	\set Staff.instrumentName = "Flauto II"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"flute"
+}
+namePiccoloMvtI = {
+	\set Staff.instrumentName = "Piccolo"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"flute"
+}
+namePiccoloMvtII = {
+	\set Staff.instrumentName = "Piccolo"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"flute"
+}
+namePiccoloMvtIII = {
+	\set Staff.instrumentName = "Piccolo"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"flute"
 }

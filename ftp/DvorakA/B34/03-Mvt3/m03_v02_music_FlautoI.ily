@@ -9,7 +9,7 @@ musicFlautoIMvtIII = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2*42
+	\mmrLength #32 R2*42
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -68,7 +68,7 @@ musicFlautoIMvtIII = \relative c {
 	R2*2
 	
 % Bars 86 to 90
-	bes4-!_\fbrackcresc r
+	bes4-!-\offset X-offset -2 _\fbrackcresc r
 	c-! r
 	des-! r
 	ees-! r
@@ -120,7 +120,7 @@ musicFlautoIMvtIII = \relative c {
 	R2*2
 	
 % Bars 141 to 145
-	r8. ees'16[(\p^\solo c8) r16 bes](
+	r8. ees'16[(\p-\offset X-offset -5 ^\solo c8) r16 bes](
 	a8) r r4
 	R2*2
 	
@@ -148,7 +148,7 @@ musicFlautoIMvtIII = \relative c {
 	R2*6
 % Bars 166 to 170
 	
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	R2*6
 % Bars 171 to 175
 	
@@ -204,7 +204,7 @@ musicFlautoIMvtIII = \relative c {
 	\ni \mmrPos #-4 R2
 % Bars 231 to 235
 	\mmrPos #-4 R
-	\mmrPos #4 R \no
+	\mmrPos #7 R \no
 	r8. d16[(\p b8) r16 a](
 	g2~
 	\restPattern g8) g16(\< b8) d16(
@@ -223,11 +223,11 @@ musicFlautoIMvtIII = \relative c {
 % Bars 246 to 250
 	ees4..->)\fz f16(
 	ees8 d c bes)
-	ees4..->_\fzpococresc d16(
+	ees4..->_\fzpoco_cresc d16(
 	cis4..->)\fz a16(
 	d4..->)\fz\< f16(
 % Bars 251 to 255
-	e4.._\fzmarkup)-> c!16(\!
+	\markEO #'(0 . 2) e4.._\fzmarkup)-> c!16(\!
 	f8) r r4
 	R2*3
 	
@@ -316,7 +316,7 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 	
-	aes'4(_\brackfffz aes,8) r
+	\startMeasureCount aes'4(_\brackfffz aes,8) r
 	aes'4(\fz aes,8) r
 % Bars 356 to 360
 	aes'4(\fz aes,8) r
@@ -325,14 +325,17 @@ musicFlautoIMvtIII = \relative c {
 	aes'4(\fz aes,8) r
 	aes'4(\fz aes,8) r
 % Bars 361 to 365
-	aes'4(\fz aes,8) r
+	aes'4(\fz aes,8) r \stopMeasureCount
 	R2
 	aes'4(\fz aes,8) r
-	R2*25
+	R2*10
 % Bars 366 to 370
 	
 % Bars 371 to 375
 	
+	
+	
+	\mmrLength #12 R2*15
 % Bars 376 to 380
 	
 % Bars 381 to 385
@@ -472,7 +475,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 521 to 525
 	r8. fis'16[(\brack\f dis8) r16 b16](
 	cis4) r
-	r8. gis'16([ e8) r16 cis-.] \section \break
+	r8. gis'16([ e8) r16 cis-.] \section
 	\key ees \major ees!2->\ff~
 	ees8 f,( d ees)
 % Bars 526 to 530
@@ -516,7 +519,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 566 to 570
 	
 	
-	\section \break
+	\section
 	\key b \major R2*3
 	
 % Bars 571 to 575
@@ -533,7 +536,7 @@ musicFlautoIMvtIII = \relative c {
 	\mmrPos #-4 R
 % Bars 586 to 590
 	\mmrPos #-4 R \no
-	<< fis2\fz\>~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -0.5) fis2-\offset X-offset -1 \fz\>~ {s8 s s s\!}>>
 	fis2~
 	fis4 r
 	R2
@@ -559,7 +562,7 @@ musicFlautoIMvtIII = \relative c {
 	dis!\<
 	e
 	fis)\!
-	<< gis\f\<~ {s8 s s s\!}>>
+	<< gis\f\<~ {s8 s s s}>>
 	gis2~\>
 % Bars 611 to 615
 	<< gis~ {s4 s\!}>>
@@ -705,7 +708,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 746 to 750
 	bes~
 	bes
-	\restPattern ees,8-._\ffbrackp d16( f8) d16(
+	\startMeasureCount \restPattern ees,8-._\ffbrackp d16( f8) d16(
 	\restPattern ees8-.)_\pocoapococresc d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 % Bars 751 to 755
@@ -713,7 +716,7 @@ musicFlautoIMvtIII = \relative c {
 	\restPattern ees8-.) d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
-	\restPattern ees8-.) d16( f8) d16(
+	\restPattern ees8-.) d16( f8) d16( \stopMeasureCount
 % Bars 756 to 760
 	ees8) r r8. bes'16\ff
 	g2->\fz~

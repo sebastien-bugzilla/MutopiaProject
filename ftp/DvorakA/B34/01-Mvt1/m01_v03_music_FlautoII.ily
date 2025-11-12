@@ -9,12 +9,12 @@ musicFlautoIIMvtI = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #35 R2.*13
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-	R2.*2
+	
 	
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R \no
@@ -31,8 +31,8 @@ musicFlautoIIMvtI = \relative c {
 	a4.\brack\fz r4 r8
 	a4.\brack\fz r4 r8
 % Bars 26 to 30
-	R2.*6
-	
+	R2.
+	\mmrLength #22 R2.*5
 	
 	
 	
@@ -91,7 +91,7 @@ musicFlautoIIMvtI = \relative c {
 	ees'4.~ ees4 f,16( ges
 	ees'8) f,16(\< ges ees'8) f,16( ges ees'8) c,!16([ des]
 % Bars 76 to 80
-	ees8) fes-.\! f-.\> ges-.[ aes-. r16 bes]\! \mark \default
+	ees8) fes-.\! f-.\> ges-.[ aes-. r16 bes]\! \markXoffset #-0.2 \mark \default \break
 	bes2.\pp~
 	bes4.~ bes8 r r
 	ees4.->( des)
@@ -105,12 +105,12 @@ musicFlautoIIMvtI = \relative c {
 % Bars 86 to 90
 	
 	
-	aes4.->(\brack\fz\< << ges) { s8 s s\!}>>
+	\hairpinShorten #'(0 . -1.5) aes4.->(\brack\fz\< << ges) { s8 s s\!}>>
 	f4.(\> ees4 ces8)\!
 	bes4.(\brack\pp aes4 ces8)
 % Bars 91 to 95
-	aes'4.(->_\pocoapococresc bes)
-	aes( ges4 ees8)\<
+	aes'4.(->-\offset X-offset -1 _\pocoapococresc bes)
+	aes( ges4 \hairpinShorten #'(0.5 . 0) ees8)\<
 	des4( ges8 f4 aes8)\!
 	f'4.( ees4\< ces8)
 	bes4. aes4( ces8)\!
@@ -124,7 +124,7 @@ musicFlautoIIMvtI = \relative c {
 	ees4.->~ ees8 d4->
 	c4 bes8~ bes c-. d-.
 	c-. r r r4 r8
-	R2.*10
+	R2.*11
 	
 % Bars 106 to 110
 	
@@ -136,7 +136,7 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	
-	R2.
+	
 	\ni \mmrPos #4 R2.
 % Bars 116 to 120
 	\mmrPos #4 R
@@ -159,21 +159,15 @@ musicFlautoIIMvtI = \relative c {
 	b\! a-. g-.\> fis-. e-. dis-.\!
 	e4\p r8 r4 r8
 % Bars 136 to 140
-	R2.*3
+	R2.*22
 	
 	
-	R2.*9
+	
 	
 % Bars 141 to 145
 	
-	
-	
-	
-	
 % Bars 146 to 150
 	
-	
-	R2.*10
 % Bars 151 to 155
 	
 % Bars 156 to 160
@@ -183,8 +177,8 @@ musicFlautoIIMvtI = \relative c {
 	\mmrPos #-4 R \no
 	\time 3/4 a16(\f bes c bes) a( bes c bes) a( bes c bes)
 % Bars 161 to 165
-	\time 6/8 a( bes) c( bes) bes( aes!) aes( g) g( f) f( ees)
-	\time 3/4 a16( bes c bes) a( bes c bes) a( bes c bes)
+	\textMark "Vi-" \time 6/8 a( bes) c( bes) bes( aes!) aes( g) g( f) f( ees)
+	\time 3/4 a16( bes c bes) a( bes c bes) a( bes c bes) \textEndMark "-de"
 	\time 6/8 a16( bes) c( bes) bes( aes!) aes( g) g( f) f( ees)
 	a4.-^\brack\fz r4 r8
 	a4.-^\brack\fz r4 r8
@@ -197,9 +191,9 @@ musicFlautoIIMvtI = \relative c {
 % Bars 171 to 175
 	
 	
-	a,2._\fpdim~
-	<< a~ {s8\> s s  s s s\!}>>
-	a r r r4 r8
+	a,2.-\offset X-offset #-1 _\fpdim~
+	<< a~ {s8\> s s  s s s}>>
+	a\! r r r4 r8
 % Bars 176 to 180
 	aes'!2.~\fz\>
 	<< aes {s4. s\!}>>
@@ -207,7 +201,7 @@ musicFlautoIIMvtI = \relative c {
 	gis fis
 	e dis
 % Bars 181 to 185
-	d!4) \tuplet 3/2 8 {cis16(\< d e)\!} d4.(~\fz
+	d!4) \tuplet 3/2 8 {\once \tupletUp \hairpinShorten #'(0 . 0.5) cis16(\< d e)\!} d4.(~\fz
 	<< d4.\> {s8. s_\dimmarkup}>> cis4.)\!
 	b2.\pp~
 	b4 r8 r4 r8
@@ -241,7 +235,7 @@ musicFlautoIIMvtI = \relative c {
 	d-. d-. r d-. d-. r
 	d-. d-. r d-. d-. r
 	<< d'2.~ {s8\< s s  s s s\!}>>
-	<< d2. {s8\> s s  s s s\!}>>
+	<< d2. {s8\> s s  s s s\!}>> \break
 % Bars 211 to 215
 	ees2._\ppcrescpocoapoco~
 	ees(
@@ -300,7 +294,7 @@ musicFlautoIIMvtI = \relative c {
 	g4.~ g8. g16-. g-. g-.
 	g4.-! e-!
 	c~ c8. c16-. c-. c-.
-	c4.\<_\pocoapococresc << c {s8 s s\!}>>
+	c4.\<^\pocoapococresc << c {s8 s s\!}>>
 % Bars 276 to 280
 	c4.~ c8. c16-. c-. c-.
 	c4. c
@@ -326,7 +320,7 @@ musicFlautoIIMvtI = \relative c {
 	c
 	des\fz\<~
 % Bars 296 to 300
-	<< des_\pocoapococresc {s4 s s\!}>>
+	<< des^\pocoapococresc {s4 s s\!}>>
 	aes8-> bes bes-> ces ces-> aes
 	a-> bes bes-> c! c-> a
 	bes-> c c-> des des-> bes
@@ -369,7 +363,7 @@ musicFlautoIIMvtI = \relative c {
 	bes4. bes8\f-^ bes-^ bes-^
 % Bars 331 to 335
 	bes2.\p~
-	bes_\brackpocoapococresc~
+	bes-\offset X-offset -1.5 _\brackpocoapococresc~
 	bes~
 	bes~
 	<< bes {s8\< s s  s s s\!}>>

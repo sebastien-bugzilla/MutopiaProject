@@ -49,12 +49,14 @@
 		\Staff
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f
-%		\override MultiMeasureRest.space-increment = 0
+		\override MultiMeasureRest.space-increment = 0
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 		\override CueClef.font-size = #-1 
 		\override CueEndClef.font-size = #-1 
 		\override MeasureCounter.font-size = #-3
 		\override DoublePercentRepeatCounter.font-size = #-3
+		\override Accidental.avoid-slur = #'ignore
+		
 %		\override StaffSymbol.transparent = ##t
 	}
 	\context {
@@ -68,8 +70,10 @@
 		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
+		\override TextMark.font-size = #2
 		
 %		\override BarNumber.break-visibility = ##(#f #t #t)
+		
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
 	}

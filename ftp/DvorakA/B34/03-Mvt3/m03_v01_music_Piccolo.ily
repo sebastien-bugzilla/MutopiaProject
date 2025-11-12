@@ -9,7 +9,7 @@ musicPiccoloMvtIII = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2*45
+	\mmrLength #25 R2*45
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -180,11 +180,11 @@ musicPiccoloMvtIII = \relative c {
 % Bars 246 to 250
 	ees4..)->\fz f16(
 	ees8 d c bes)
-	ees4..->_\fzpococresc d16(
+	ees4..->_\fzpoco_cresc d16(
 	cis4..)->\fz a16(
 	d4..)\fz->\< f16(
 % Bars 251 to 255
-	e4..)->_\fzmarkup c!16(\!
+	\markEO #'(0 . 2.3) e4..)->_\fzmarkup c!16(\!
 	f8) r r4
 	R2*50
 % Bars 256 to 260
@@ -230,9 +230,9 @@ musicPiccoloMvtIII = \relative c {
 	\restPattern des8) c16( ees8) c16(
 	\restPattern des8) f16( ees8) des16(
 % Bars 321 to 325
-	\restPattern c8) bes16( ees8) g,16( \mark \default
+	\restPattern c8) bes16( ees8) g,16( \markWhiteout \markXoffset #-0.2 \mark \default
 	aes8) r r4
-	R2*70
+	R2*51
 % Bars 326 to 330
 	
 % Bars 331 to 335
@@ -253,15 +253,22 @@ musicPiccoloMvtIII = \relative c {
 	
 % Bars 371 to 375
 	
+	
+	
+	\mmrLength #12 R2*15
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
 % Bars 386 to 390
 	
-% Bars 391 to 395
 	
-	\mark \default
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 391 to 395
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	c2->\ff~
 	c8 r r4
 	ees2->~
@@ -315,7 +322,7 @@ musicPiccoloMvtIII = \relative c {
 	
 	\mark \default
 	\scaleDurations 2/3 { 
-		\timeSignature 3/4 R2.*2
+		\timeSignature 3/4 \tempoXoffset #2.5 R2.*2
 	
 % Bars 486 to 490
 		\key e \major R2.*18
@@ -383,7 +390,7 @@ musicPiccoloMvtIII = \relative c {
 	\restPattern b8\< b16( dis8) fis16-.\!
 % Bars 576 to 580
 	b2\fz~
-	\restPattern b8\> b16( ais8) fisis16\!
+	\restPattern b8\> b16( ais8) fisis16-.\!
 	gis2\p~
 	\restPattern gis8 b16( ais8) fisis16(
 	\restPattern gis8) gis16( fis!8) b,16(
@@ -395,8 +402,8 @@ musicPiccoloMvtIII = \relative c {
 	dis4..)-> fis16(
 % Bars 586 to 590
 	eis4..)-> cis16\!
-	<< fis2\fz\>~ {s8 s s s\!}>>
-	fis2~
+	<< \hairpinShorten #'(-0.5 . 0) fis2\fz\>~ {s8 s s s}>>
+	fis2\!~
 	fis4 r
 	R2*19
 % Bars 591 to 595
@@ -438,14 +445,14 @@ musicPiccoloMvtIII = \relative c {
 % Bars 631 to 635
 	\section
 	\key ees \major R2
-	r4 d,16(\brack\f\< ees e f
+	r4 d,!16(\brack\f\< ees e f
 	ges8)\! r r4
-	r4 dis16(\< e f fis
+	r4 dis16(\< e f! fis
 % Bars 636 to 640
 	g!8)\! r r4
-	r ees!16(\< e f fis
+	r ees!16(\< e f! fis
 	g8)\! r r4
-	r \tuplet 3/2 4 {ees8(\< f g\!}
+	r \tuplet 3/2 4 {ees!8(\< f g\!}
 	aes) r r4
 % Bars 641 to 645
 	r ees16(\< f g aes\!
@@ -501,14 +508,14 @@ musicPiccoloMvtIII = \relative c {
 	f8 ees!16 des f8 ees16 des)\!
 % Bars 691 to 695
 	ges8(\f f aes ges)
-	\flattrill << fes2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	fes2^\trillflat
 	ees8( des fes ees)
-	<< des2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	des2\trill
 	ces8( bes des ces)
 % Bars 696 to 700
-	\naturaltrill << a2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	a2^\trillnatural
 	aes!8( g bes! aes)
-	<< ges2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	ges2
 	bes8( a c bes
 	ees) r r4
 % Bars 701 to 705
@@ -542,7 +549,7 @@ musicPiccoloMvtIII = \relative c {
 	ees-. r r4
 	r8 ees-. d-. bes-.
 % Bars 736 to 740
-	ees2\brack\ff-^~
+	\dynEO #'(0 . 2) ees2\brack\ff-^~
 	ees~
 	ees~
 	ees
@@ -556,7 +563,7 @@ musicPiccoloMvtIII = \relative c {
 % Bars 746 to 750
 	bes~
 	bes
-	\restPattern ees,8-._\ffbrackp d16( f8) d16(
+	\startMeasureCount \restPattern ees,8-._\ffbrackp d16( f8) d16(
 	\restPattern ees8-.)_\pocoapococresc d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 % Bars 751 to 755
@@ -564,11 +571,11 @@ musicPiccoloMvtIII = \relative c {
 	\restPattern ees8-.) d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
-	\restPattern ees8-.) d16( f8) d16(
+	\restPattern ees8-.) d16( f8) d16( \stopMeasureCount
 % Bars 756 to 760
 	ees8) r r4
 	R2*3
 	
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

@@ -9,15 +9,15 @@ musicFlautoIMvtI = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #35 R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-	f''4(\brack\p\< des'16)[\! r32 c-.] c4( bes8)
+	\hairpinShorten #'(-0.5 . 0) f''4(-\offset X-offset -1 \brack\p\< des'16)[\! r32 c-.] c4( bes8)
 	bes4(\<_\crescmarkup ges'16)[\! r32 f-.] f4( ees8)
 	ees4.(~\brack\fz ees16 d f ees ces aes)
-	ges4._\dimmarkup f4(\brack\p bes8)
+	ges4.-\offset X-offset -2 _\dimmarkup f4(\brack\p bes8)
 % Bars 16 to 20
 	ees,4.->\ff d16( ees f ees d ees)
 	bes'4.-^\fz f16( ges aes ges f ges)
@@ -113,7 +113,7 @@ musicFlautoIMvtI = \relative c {
 	f( ees4 ces8)\<
 	bes4.( aes4)\! r8
 	aes'4.( ges4\< ees8)
-	des4( ges8) f4( aes8)\! \break
+	des4( ges8) f4( aes8)\!
 % Bars 96 to 100
 	ges4.-^\ff r4 r8
 	bes,4.-^ r4 r8
@@ -128,7 +128,7 @@ musicFlautoIMvtI = \relative c {
 	f8-^-. r r b,16( c d c b c)
 % Bars 106 to 110
 	f8-^-. r r b,16( c d c b c)
-	aes'8-._\fzpocoapococresc r r c,16(\< des ees des c des)\!
+	aes'8-.\fz^\pocoapococresc r r c,16(\< des ees des c des)\!
 	aes'8-.\fz r r c,16(\< des ees des c des)\!
 	ces'8-.\fz r r e,16( f g f e f)
 	ces'8\brack\fz r r e,16( f g f e f)
@@ -197,7 +197,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 171 to 175
 	
 	
-	e,2._\fpdim~
+	e,2.-\offset X-offset -1 _\fpdim~
 	<< e~ {s8\> s s  s s s\!}>>
 	e r r r4 r8
 % Bars 176 to 180
@@ -207,7 +207,7 @@ musicFlautoIMvtI = \relative c {
 	gis fis
 	e dis
 % Bars 181 to 185
-	d!4) \tuplet 3/2 8 {cis16(\< d e)\!} d4.(~\fz
+	d!4) \tuplet 3/2 8 {\hairpinShorten #'(0 . 1) \once \tupletUp cis16(\< d e)\!} d4.(~\fz
 	<< d4.\> {s8. s_\dimmarkup}>> cis4.)\!
 	fis2.\pp~
 	fis4 r8 r4 r8
@@ -326,7 +326,7 @@ musicFlautoIMvtI = \relative c {
 	c
 	des\fz\<~
 % Bars 296 to 300
-	<< des_\pocoapococresc {s4 s s\!}>>
+	<< des^\pocoapococresc {s4 s s\!}>>
 	d!2.->
 	ees->
 	e->
@@ -372,7 +372,7 @@ musicFlautoIMvtI = \relative c {
 	g_\brackpocoapococresc~
 	g~
 	g~
-	<< g {s8\< s s  s s s\!}>> \break
+	<< g {s8\< s s  s s s\!}>> 
 % Bars 336 to 340
 	g2.-^\f~
 	g4 aes8~ aes aes-^ aes-^

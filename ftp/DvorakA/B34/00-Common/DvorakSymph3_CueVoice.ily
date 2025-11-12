@@ -4,62 +4,6 @@
 %###############################################################################
 %#                   C U E   V O I C E   F O R   F L A U T I                   #
 %###############################################################################
-cueVoicePiccoloMvtIII = \relative c {
-	s2*45
-	% bars 46 - 47
-	\clef bass \voiceOne r4 r8.^\markup {Fag.I.}  a'16(\pp
-	c8)[ r16 bes( d8)] s \clef treble \oneVoice
-	s2*51
-	% bars 99 - 101
-	bes''8.[^\markup {Viol.I.} ees16( bes8) r16 aes-.]
-	bes8.[ ees16( bes8) r16 aes-.]
-	bes8.[ ees16( bes8) r16 aes-.]
-	s2*13
-	% bars 115 - 117
-	g'4->\fz(^\markup {Viol.I.} fis8) r
-	f!4\fz(-> e8) r
-	ees!( d16) r des8( bes16) r
-	s2*93
-	% bars 211 - 215
-	<< {
-		\InCueContext s2*4
-		r8. \oneVoice g,16[(^\markup {Viol.II} e8) r16 d]\laissezVibrer
-	} \\ {
-		\InCueContext c2(_\markup {Viol.I.}
-		g'
-		e
-		d)
-		c8 s s4
-	} >>
-	s2*87
-	% bars 303 - 305
-	\voiceOne r4 r8.^\markup {Ob. Cl. Fag.} ces'16
-	aes4.. g16
-	f8.[ f'16 d8. c16] \oneVoice
-	s2*215
-	% bars 521 - 523
-	r8.^\markup {Fl.I} fis'16[(\f dis8) r16 b](
-	cis4) r
-	r8. gis'16[( e8) r16 cis-.]
-	s2*48
-	% bar 572
-	\voiceTwo \restPattern f,,8\pp^\markup {Viol.I.} f16( d8) c16 \oneVoice
-	s2*36
-	% bars 609 - 611
-	\voiceOne \restPattern e''8\repeatTie^\markup {Viol.I.} b16( gis8) fis16(
-	e8) r16 b[(^\markup {Viol.II.} gis8) r16 fis](
-	e8) \oneVoice r r4
-	s2*66
-	% bars 678 - 680
-	r4^\markup {Fl.I.} e''(\f
-	dis d8 cis
-	e8) r r4
-	s2*39
-	% bars 720 - 722
-	\voiceTwo r4^\markup {Trbe} r8. bes,16
-	g4.. f16
-	\voiceTwo ees8 s s4
-}
 cueVoiceFlautoIMvtI = \relative c {
 	s2.*18 s4.*1 s2.*22 s4.*1 s2.*115
 	% bars 158 - 159
@@ -77,11 +21,11 @@ cueVoiceFlautoIMvtI = \relative c {
 cueVoiceFlautoIMvtII = \relative c {
 	s2*11
 	% bars 12 - 13
-	\voiceOne gis''4(^\markup {\column {\lower #1.5 "Cl." "Fg."}} gis'~
+	\voiceOne gis''4(-\offset X-offset -1.5 ^\markup {\column {\lower #1.5 "Cl." "Fg."}} gis'~
 	gis8. fis32 e) e16( dis bis16. cis32)
 	s2*20 s4*1 s2*9
 	% bars 44 - 45
-	r8^\markup {"Cl.I."} fis(~\p \tuplet 6/4 4 {fis16 eis fis a gis fis)}
+	r8-\offset X-offset -1 ^\markup {"Cl.I."} fis(~\p \tuplet 6/4 4 {fis16 eis fis a gis fis)}
 	fis8 fis(~ \tuplet 3/2 8 {fis16 eis fis} a32[ gis) r gis]
 	s2*58
 	% bars 104 - 105
@@ -98,12 +42,12 @@ cueVoiceFlautoIMvtIII = \relative c {
 	aes8)] r16 g([ bes8]) r \oneVoice \slurNeutral
 	s2*17
 	% bars 62 - 64
-	\oneVoice \restPattern des8\repeatTie^\markup {Fl.pic.} f16( ees8) des16(
+	\oneVoice \restPattern des8\repeatTie-\offset X-offset -1.5 ^\markup {Fl.pic.} f16( ees8) des16(
 	\restPattern c8) bes16( ees8) g,16(
 	aes8) r r4
 	s2*50
 	% bars 115 - 117
-	g'4->(^\markup {Viol.I.} fis8) r
+	g'4->(-\offset X-offset -5 ^\markup {Viol.I.} fis8) r
 	f!4(-> e8) r
 	ees!( d16) r des8( bes16) r
 	s2*50
@@ -116,15 +60,15 @@ cueVoiceFlautoIMvtIII = \relative c {
 	a bes c d)
 	s2*53
 	% bar 230 - 232
-	\oneVoice \voiceOne r8^\markup {Viol.I.} r16 d'16([ b8) r16 a](
+	\oneVoice \voiceOne r8-\offset X-offset -1 ^\markup {Viol.I.} r16 d'16([ b8) r16 a](
 	g8)[ r16 d( b8) r16 a](
 	g8)[ r16 d( b8) r16 a] \oneVoice
 	s2*74
 	% bar 307
-	<>^\markup {Fl.pic.}
+	<>-\offset X-offset #-4 ^\markup {Fl.pic.}
 	s2*13
 	% bars 320 - 321
-	\restPattern des''8\repeatTie^\markup {Fl.pic.} f16( ees8) des16(
+	\restPattern des''8\repeatTie-\offset X-offset #-1 ^\markup {Fl.pic.} f16( ees8) des16(
 	\restPattern c8) bes16( ees8) g,16
 	s2*52
 	% bar 374
@@ -174,7 +118,7 @@ cueVoiceFlautoIMvtIII = \relative c {
 cueVoiceFlautoIIMvtI = \relative c {
 	s2.*13
 	% bars 14 - 15
-	ees'''4.(~^\markup {Fl.I.} ees16 d f ees ces aes)
+	ees'''4.(~-\offset X-offset -4 ^\markup {Fl.I.} ees16 d f ees ces aes)
 	ges4. f4( bes8)
 	s2.*3 s4.*1 s2.*22 s4.*1 s2.*72
 	% bars 115 - 117
@@ -197,42 +141,42 @@ cueVoiceFlautoIIMvtI = \relative c {
 cueVoiceFlautoIIMvtII = \relative c {
 	s2*13
 	% bar 14
-	<>^\markup {Fl.I.}
+	<>-\offset X-offset #-1.5 ^\markup {Fl.I.}
 	s2*20 s4*1 s2*9
 	% bars 44 - 45
-	\voiceOne r8^\markup {"Cl.I."} fis''(~\p \tuplet 6/4 4 {fis16 eis fis a gis fis)}
+	\voiceOne r8-\offset X-offset -1 ^\markup {"Cl.I."} fis''(~\p \tuplet 6/4 4 {fis16 eis fis a gis fis)}
 	fis8 fis(~ \tuplet 3/2 8 {fis16 eis fis} a32[ gis) r gis] \oneVoice
 	s2*58
 	% bars 104 - 106
-	\stemUp aes,4^\markup {Ob.I.} bes8. c16
-	des4->~ des8 des16. ees32-.
+	\stemUp aes,4-\offset X-offset -1 ^\markup {Ob.I.} bes8. c16
+	des4^>~ des8 des16. ees32-.
 	des4 des8 r
 	s2*121 s4*1 s2*18
 	% bar 247
 	<>^\markup {Archi}
 }
 cueVoiceFlautoIIMvtIII = \relative c {
-	s2*47
-	% bar 48
-	<>^\markup {Fl.picc.}
-	s2*14
+	s2*48
+	% bar 49
+	<>-\offset X-offset -2 _\markup {Fl.picc.}
+	s2*13
 	% bars 62 - 64
-	\oneVoice \restPattern des'''8\repeatTie^\markup {Fl.pic.} f16( ees8) des16(
+	\oneVoice \restPattern des'''8\repeatTie-\offset X-offset #-1 ^\markup {Fl.pic.} f16( ees8) des16(
 	\restPattern c8) bes16( ees8) g,16(
 	aes8) r r4
 	s2*34
 	% bars 99 - 101
-	bes8.[^\markup {Viol.I.} ees16( bes8) r16 aes-.]
+	bes8.[-\offset X-offset -3 ^\markup {Viol.I.} ees16( bes8) r16 aes-.]
 	bes8.[ ees16( bes8) r16 aes-.]
 	bes8.[ ees16( bes8) r16 aes-.]
 	s2*13
 	% bars 115 - 117
-	g'4->\fz(^\markup {Viol.I.} fis8) r
+	\voiceOne \stemDown g'4->\fz(-\offset X-offset -5 ^\markup {Viol.I.} fis8) r
 	f!4\fz(-> e8) r
-	ees!( d16) r des8( bes16) r
+	ees!( d16) r des8( bes16) r \oneVoice \stemNeutral
 	s2*50
 	% bar 168
-	<>^\markup {Ob.,Viol.I.}
+	<>-\offset X-offset 0.5 ^\markup {Ob.,Viol.I.}
 	s2*6
 	% bar 174 - 176
 	\voiceOne aes,8(\repeatTie^\markup {Ob.} ees bes'4->~
@@ -254,14 +198,14 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	<>^\markup {Fl.pic.}
 	s2*13
 	% bars 320 - 321
-	\restPattern des8\repeatTie^\markup {Fl.pic.} f16( ees8) des16(
+	\restPattern des8\repeatTie-\offset X-offset -1 ^\markup {Fl.pic.} f16( ees8) des16(
 	\restPattern c8) bes16( ees8) g,16
 	s2*52
 	% bar 374
-	<>^\markup {Cor.,Trbne I.}
+	<>-\offset X-offset -1.5 ^\markup {Cor.,Trbne I.}
 	s2*15
 	% bars 389 - 392
-	\voiceOne f2(~^\markup {Ob.I.}
+	\voiceOne f2(~-\offset X-offset -4 ^\markup {Ob.I.}
 	f~
 	f~
 	f8 fes ees des) \oneVoice
@@ -274,9 +218,9 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	ges4.. ges16 \oneVoice
 	s2*49
 	% bars 521 - 523
-	r8.^\markup {Fl.I} fis''16[(\f dis8) r16 b](
+	\voiceOne \stemDown r8.-\offset X-offset -1 ^\markup {Fl.I} fis''16[(-\offset X-offset -1 \f dis8) r16 b](
 	cis4) r
-	r8. gis'16[( e8) r16 cis-.]
+	r8. gis'16[( e8) r16 cis-.] \oneVoice \stemNeutral
 	s2*57
 	% bars 581 - 586
 	\voiceOne e,4..^\markup {Fl.pic.} fis16(
@@ -293,10 +237,82 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	cis( b ais gis)
 	s2*88
 	% bars 720 - 722
-	r4^\markup {Trbe} r8. bes,16
+	\voiceTwo r4^\markup {Trbe} r8. bes,16
+	g4.. f16
+	ees8 s s4 \oneVoice
+}
+cueVoicePiccoloMvtI = \relative c {
+	% no Cue Voice
+}
+cueVoicePiccoloMvtII = \relative c {
+	% no Cue Voice
+}
+cueVoicePiccoloMvtIII = \relative c {
+	s2*45
+	% bars 46 - 47
+	\clef bass \voiceOne r4 r8.-\offset X-offset -3 ^\markup {Fag.I.}  a'16(\pp
+	c8)[ r16 bes( d8)] s \clef treble \oneVoice
+	s2*51
+	% bars 99 - 101
+	bes''8.[-\offset X-offset -2 ^\markup {Viol.I.} ees16( bes8) r16 aes-.]
+	bes8.[ ees16( bes8) r16 aes-.]
+	bes8.[ ees16( bes8) r16 aes-.]
+	s2*13
+	% bars 115 - 117
+	\voiceOne \stemDown g'4->\fz(-\offset X-offset -5 ^\markup {Viol.I.} fis8) r
+	f!4\fz(-> e8) r
+	ees!( d16) r des8( bes16) r \oneVoice \stemNeutral
+	s2*93
+	% bars 211 - 215
+	<< {
+		\InCueContext s2*4
+		r8. \oneVoice g,16[(^\markup {Viol.II} e8) r16 d]\laissezVibrer
+	} \\ {
+		\InCueContext c2(-\offset X-offset -5 _\markup {Viol.I.}
+		g'
+		e
+		d)
+		c8 s s4
+	} >>
+	s2*87
+	% bars 303 - 305
+	r4 r8.^\markup { \override #'(baseline-skip . 1.4) \column { "Ob." "Cl." "Fag." } } \voiceOne ces'16
+	aes4.. g16
+	f8.[ f'16 d8. c16] \oneVoice
+	s2*68
+	% bar 374
+	<>^\markup {Corn.,Tbrne I.}
+	s2*15
+	% bar 389 - 392
+	\voiceOne f2(~^\markup {Ob.I.}
+	f~
+	f~
+	f8 fes ees des) \oneVoice
+	s2*128
+	% bars 521 - 523
+	r8.-\offset X-offset -1 ^\markup {Fl.I} fis'16[(\f dis8) r16 b](
+	cis4) r
+	r8. gis'16[( e8) r16 cis-.]
+	s2*48
+	% bar 572
+	\voiceTwo \restPattern fis,,8\pp^\markup {Viol.I.} fis16( dis8) cis16 \oneVoice
+	s2*36
+	% bars 609 - 611
+	\voiceOne \restPattern e''8\repeatTie-\offset X-offset -6.5 ^\markup {Viol.I.} b16( gis8) fis16(
+	e8) r16 b[(^\markup {Viol.II.} gis8) r16 fis](
+	e8) \oneVoice r r4
+	s2*66
+	% bars 678 - 680
+	r4-\offset X-offset -1.5 ^\markup {Fl.I.} e''(\f
+	dis d8 cis
+	e8) r r4
+	s2*39
+	% bars 720 - 722
+	\voiceTwo r4^\markup {Trbe} r8. bes,16
 	g4.. f16
 	\voiceTwo ees8 s s4
 }
+
 %###############################################################################
 %#                     C U E   V O I C E   F O R   O B O I                     #
 %###############################################################################

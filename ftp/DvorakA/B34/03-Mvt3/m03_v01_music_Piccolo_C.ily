@@ -367,7 +367,7 @@ musicPiccoloMvtIII = \relative c {
 	\restPattern b8\< b16( dis8) fis16-.\!
 % Bars 576 to 580
 	b2\fz~
-	\restPattern b8\> b16( ais8) fisis16\!
+	\restPattern b8\> b16( ais8) fisis16-.\!
 	gis2\p~
 	\restPattern gis8 b16( ais8) fisis16(
 	\restPattern gis8) gis16( fis!8) b,16(

@@ -9,25 +9,26 @@ musicFlautoIMvtII = \relative c {
 	\key cis \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*11
+	\mmrLength #35 \mmrnDown R2*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no
-	r4 r16 \tuplet 3/2 16 {gis'''32(\p^\solo b a} gis16) r
+	r4 r16 \tuplet 3/2 16 {gis'''32(\p-\offset X-offset -5 ^\solo b a} gis16) r
 	R2
 % Bars 16 to 20
 	r4 r16 a64(\pp d cis b a16) r
 	R2*2
 	
 	d,8(\p\< fis\! a\> gis)\!
-	R2*14
+	R2
 % Bars 21 to 25
-	
+	R
+	\mmrLength #10 R2*4
 % Bars 26 to 30
-	
+	\mmrLength #12 R2*8
 % Bars 31 to 35
 	
 	
@@ -47,9 +48,9 @@ musicFlautoIMvtII = \relative c {
 	cis4(\mf\> dis8)\! r
 	cis4(\< fis16.\! e32 d16. cis32)
 	bis4.(\fp cis8->)
-	bis4.(_\fppocoapococresc cis8->)
+	bis4.(-\offset X-offset -1 _\fppocoa_pococresc  cis8->)
 % Bars 51 to 55
-	bis4.(\fp c8->)
+	\tempoXoffset #-2 bis4.(\fp c8->)
 	b!4.(\brack\fp c8->)
 	b4.(\brack\fp c8->)
 	r8 b->\mf\< r b->\!
@@ -57,8 +58,8 @@ musicFlautoIMvtII = \relative c {
 % Bars 56 to 60
 	d4(~\f d16\> cis b a)\!
 	gis8 r r4
-	R2*5
-	
+	\mmrLength #10 R2
+	R2*4
 	
 % Bars 61 to 65
 	
@@ -76,7 +77,7 @@ musicFlautoIMvtII = \relative c {
 	e'4\<~ \tuplet 6/4 4 {e16 dis\! e fis\> e dis\!)}
 	e4(~\< \tuplet 6/4 4 {e16 dis\! e fis\> e dis\!)}
 	e4(~\< \tuplet 6/4 4 {e16 dis\! e fis\> e dis\!)
-	r dis(\p\> e fis e dis) r dis( e fis e dis)\!
+	\tupletOffset #-1.3 r dis(\p\> e fis e dis) \tupletOffset #-1.3 r dis( e fis e dis)\!
 	r dis(\pp e fis e dis) r dis( e fis e dis)}
 % Bars 76 to 80
 	e8([\f\> dis e dis]
@@ -87,8 +88,8 @@ musicFlautoIMvtII = \relative c {
 % Bars 81 to 85
 	a4. b8)\!
 	c4.\f r8
-	R2*6
-	
+	R2
+	\mmrLength #12 \mmrnDown R2*5
 	
 % Bars 86 to 90
 	
@@ -104,7 +105,7 @@ musicFlautoIMvtII = \relative c {
 	
 % Bars 96 to 100
 	
-	R2\fermata \section
+	\once \ni R2\fermata \section
 	\key des \major R2*6
 % Bars 101 to 105
 	
@@ -115,11 +116,11 @@ musicFlautoIMvtII = \relative c {
 % Bars 106 to 110
 	r4 r8 bes,32(\brack\p\< des ges bes)\!
 	des4->\fp~ des8 des16.-. ees32-.
-	des4\fp\> des8-.\! r
+	\hairpinShorten #'(-0.5 . -1) des4\fp\> des8-.\! r
 	des4\< ees8. f16\!
 	ges4->(~ ges16 bes aes ges)
 % Bars 111 to 115
-	f4(\fp\> ees)\!
+	\hairpinShorten #'(-0.5 . -1) f4(\fp\> ees)\!
 	ees(~\> ees16 d des bes)\!
 	aes8\p r r4
 	R2*6
@@ -129,11 +130,11 @@ musicFlautoIMvtII = \relative c {
 	
 	
 	
-	<< a4.\fp\> {s8 s\! s}>> gis8-.
+	<< \hairpinShorten #'(-0.5 . 0) a4.\fp\> {s8 s s}>> gis8-.\!
 % Bars 121 to 125
-	<< a4.\fp\>^\pococrescendo {s8 s\! s}>> a8-.
-	<< bes4.\fp\> {s8 s\! s}>> bes8-.
-	<< b4.\fp\> {s8 s\!}>> b8-.
+	<< \hairpinShorten #'(-0.5 . 0) a4.\fp\>^\pococrescendo {s8 s s}>> a8-.\!
+	<< \hairpinShorten #'(-0.5 . 0) bes4.\fp\> {s8 s s}>> bes8-.\!
+	<< \hairpinShorten #'(-0.5 . 0) b4.\fp\> {s8 s s}>> b8-.\!
 	c2\fp~
 	c8[\< c-> c-> c->\!] \mark \default
 % Bars 126 to 130
@@ -177,8 +178,8 @@ musicFlautoIMvtII = \relative c {
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	des'4.(\mf\< eeses8\fz\>)
-	<< des4.(\< {s4 s8_\brackM\crescmarkup} >> eeses8->)\!
+	\hairpinShorten #'(-0.5 . 0) des'4.(-\offset X-offset -1.5 \mf\< \hairpinShorten #'(-0.5 . -1)  eeses8\fz\>)
+	<< \hairpinShorten #'(1 . 0) des4.(\< {s4 s8_\brackM\crescmarkup} >> eeses8->)\!
 	des[(\< eeses des ces)]
 	bes( ees!) f16( ees c! aes)\!
 	des4~\ff des8.. ees32
@@ -199,11 +200,13 @@ musicFlautoIMvtII = \relative c {
 	ges16-. r r8 ges16-.[ r ges16.-> des32-.]
 	ges16-. r r16. des32[ ges16] r r16. des32
 	ges16 r r8 r4
-	R2*12
+	R2*8
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
+	
+	\tempoXoffset -1 \mmrLength #14 \mmrnDown R2*4
 % Bars 196 to 200
 	
 	bes,2->\ff\<
@@ -247,9 +250,11 @@ musicFlautoIMvtII = \relative c {
 	gis4.\> fisis8)\!
 	fis!4(~\pp\> fis16 d cis b)\!
 	fis'8 r r4
-	R2*8
+	R2*2
 % Bars 236 to 240
 	
+	<< R2 {s4 \tempoXoffset #-2 s}>>
+	R2*5
 % Bars 241 to 245
 	
 	
@@ -278,9 +283,9 @@ musicFlautoIMvtII = \relative c {
 	
 	
 	aes,8-.\pp aes16.-. bes32-. aes8-. r
-	<< aes4\< {s8 s\!}>> bes8.\> c16\!
+	<< aes4\< {s8 s}>> bes8.\> c16\!
 % Bars 271 to 273
-	<< des2\p\> {s4 s8.. s32\!}>>
-	des4\pp des
+	<< \hairpinShorten #'(-0.5 . -0.5) des2-\offset X-offset -1 \p\> {s4 s8.. s32\!}>>
+	des4-\offset X-offset 0.5 \pp des
 	des2\fermata \fine
 }

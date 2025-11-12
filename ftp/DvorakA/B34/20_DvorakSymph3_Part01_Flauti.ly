@@ -22,14 +22,17 @@
 \include "./00-Common/DvorakSymph3_Shortcuts.ily"
 \include "./00-Common/DvorakSymph3_Tempi.ily"
 \include "./00-Common/DvorakSymph3_Format_Part01_Flauti.ily"
+%\include "./00-Common/DvorakSymph3_Format_temp.ily"
 \include "./00-Common/DvorakSymph3_CueVoice.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoI.ily"
 \include "./01-Mvt1/m01_v03_music_FlautoII.ily"
 \include "./02-Mvt2/m02_v02_music_FlautoI.ily"
 \include "./02-Mvt2/m02_v03_music_FlautoII.ily"
-\include "./03-Mvt3/m03_v01_music_Piccolo.ily"
 \include "./03-Mvt3/m03_v02_music_FlautoI.ily"
 \include "./03-Mvt3/m03_v03_music_FlautoII.ily"
+\include "./01-Mvt1/m01_v01_music_Piccolo.ily"
+\include "./02-Mvt2/m02_v01_music_Piccolo.ily"
+\include "./03-Mvt3/m03_v01_music_Piccolo.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -42,17 +45,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34)"
+			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34) — Flauti"
 		}
 		instrument = \markup {
-			"Flauti"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtI
-%			}
+			\new Voice {
+				\formatFlautoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtI
 			}
@@ -74,9 +77,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtII
-%			}
+			\new Voice {
+				\formatFlautoIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtII
 			}
@@ -90,7 +93,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.7 \bold 2.
 			}
 		}
 		\layout {
@@ -98,9 +101,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtIII
-%			}
+			\new Voice {
+				\formatFlautoIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtIII
 			}
@@ -114,106 +117,170 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
+				\vspace #1.8 \bold 3.
+			}
+		}
+		\layout {
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFlautoIIMvtI \musicFlautoIIMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold 1.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFlautoIIMvtII \musicFlautoIIMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #4.5 \bold 2.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFlautoIIMvtIII \musicFlautoIIMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #1.5 \bold 3.
+			}
+		}
+		\layout {
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPiccoloMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(piccolo) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoicePiccoloMvtI
+			}
+			\new Voice {
+				\timeMvtI \namePiccoloMvtI \musicPiccoloMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "1. Tacet"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPiccoloMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(piccolo) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoicePiccoloMvtII
+			}
+			\new Voice {
+				\timeMvtII \namePiccoloMvtII \musicPiccoloMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold "2. Tacet"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPiccoloMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(piccolo) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoicePiccoloMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \namePiccoloMvtIII \musicPiccoloMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
 				\bold 3.
 			}
 		}
 		\layout {
 		}
 	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIIMvtI
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtI
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIIMvtI
-%			}
-%			\new Voice {
-%				\timeMvtI \nameFlautoIIMvtI \musicFlautoIIMvtI
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\bold 1.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIIMvtII
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtII
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIIMvtII
-%			}
-%			\new Voice {
-%				\timeMvtII \nameFlautoIIMvtII \musicFlautoIIMvtII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\bold 2.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIIMvtIII
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtIII
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIIMvtIII
-%			}
-%			\new Voice {
-%				\timeMvtIII \nameFlautoIIMvtIII \musicFlautoIIMvtIII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\bold 3.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatPiccoloMvtIII
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(piccolo) \tempiPartMvtIII
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoicePiccoloMvtIII
-%			}
-%			\new Voice {
-%				\timeMvtIII \namePiccoloMvtIII \musicPiccoloMvtIII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\bold 3.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
 }

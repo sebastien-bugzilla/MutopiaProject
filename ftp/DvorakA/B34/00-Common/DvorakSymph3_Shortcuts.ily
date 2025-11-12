@@ -147,6 +147,12 @@ fzcresc = \markup {\hspace #-0.55 \dynamic fz \italic cresc.}
 fzdim = \markup {\hspace #-0.55 \dynamic fz \normal-text \italic dim.}
 fzdimD = \tweak DynamicText.self-alignment-X #-0.82 #(make-dynamic-script fzdim)
 fzpococresc = \markup {\hspace #-0.55 \dynamic fz \italic "poco cresc."}
+fzpoco_cresc = \markup {
+	 \hspace #-0.55 \center-column { 
+		\lower #1.5 \line { \dynamic fz \italic "poco" }
+		\italic "cresc."
+	}
+}
 fzbrackcresc = \markup {\hspace #-0.55 \dynamic fz \bracket \with-true-dimensions \italic cresc.}
 fzbrackp = \markup {\hspace #-0.55 \dynamic fz \bracket \with-true-dimensions \dynamic p }
 fbrackz = \markup {\hspace #-0.55 \dynamic f \hspace #-0.45 \bracket \with-true-dimensions \dynamic z }
@@ -442,6 +448,18 @@ sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	}
 }
 
+flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
+	\concat { 
+		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
+	}
+}
+
+naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
+	\concat { 
+		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \natural 
+	}
+}
+
 setSextolet = {
 	\set subdivideBeams = ##t
 	\set baseMoment = #(ly:make-moment 1/8)
@@ -461,18 +479,6 @@ resetBeam = {
 pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
 div = \markup {div.}
-
-flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-	\concat { 
-		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
-	}
-}
-
-naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-	\concat { 
-		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \natural 
-	}
-}
 
 stemOffset = #(define-music-function
 	(offset)
@@ -621,6 +627,56 @@ ni = {
 	\omit MultiMeasureRestNumber
 }
 
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.minimum-length = #length
+	#}
+)
+
+tempoXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.X-offset = #offset
+	#}
+)
+
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
+tupletOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override TupletNumber.Y-offset = #offset 
+	#}
+)
+
+trillflat = \markup { 
+	\general-align #X #CENTER 
+	\concat { 
+		\hspace #2.4 \musicglyph #"scripts.trill" 
+		\translate #'(0.5 . 0.49) \tiny \flat 
+	}
+}
+
+trillnatural = \markup { 
+	\general-align #X #CENTER 
+	\concat { 
+		\hspace #2.4 \musicglyph #"scripts.trill" 
+		\translate #'(0.5 . 1.1) \tiny \natural 
+	}
+}
+
+markWhiteout = {
+	\once \override Score.RehearsalMark.layer = #3
+	\once \override Score.RehearsalMark.whiteout = #0.75
+	\once \override Score.RehearsalMark.whiteout-style = #'outline
+}
+
 
 
 %ottavaEO = #(define-music-function
@@ -701,33 +757,6 @@ ni = {
 %	\set stemRightBeamCount = #1
 %}
 
-%markWhiteout = {
-%	\once \override Score.RehearsalMark.layer = #3
-%	\once \override Score.RehearsalMark.whiteout = #0.75
-%	\once \override Score.RehearsalMark.whiteout-style = #'outline
-%}
-
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
-
-%% à supprimer
-%mmrLengthOld = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.space-increment = #length
-%	#}
-%)
-
-%mmrLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.minimum-length = #length
-%	#}
-%)
-
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 %omitMMRN = \omit MultiMeasureRestNumber
@@ -799,14 +828,6 @@ ni = {
 
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
-%tempoXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.MetronomeMark.X-offset = #offset
-%	#}
-%)
-
 %tempoExtraOffset = #(define-music-function
 %	(offset)
 %	(pair?)
@@ -822,14 +843,6 @@ ni = {
 %	#}
 %)
 
-
-%tupletOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override TupletNumber.Y-offset = #offset 
-%	#}
-%)
 
 %tupletExtraOffset = #(define-music-function
 %	(offset)
@@ -884,11 +897,11 @@ ni = {
 %	}
 %}
 
-%trillflat = \markup { 
+%trillsharp = \markup { 
 %	\general-align #X #CENTER 
 %	\concat { 
 %		\hspace #2.4 \musicglyph #"scripts.trill" 
-%		\translate #'(0.5 . 0.49) \tiny \flat 
+%		\translate #'(0.5 . 1.1) \tiny \sharp 
 %	}
 %}
 
