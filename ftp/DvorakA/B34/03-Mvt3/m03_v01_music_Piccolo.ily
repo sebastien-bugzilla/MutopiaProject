@@ -180,7 +180,7 @@ musicPiccoloMvtIII = \relative c {
 % Bars 246 to 250
 	ees4..)->\fz f16(
 	ees8 d c bes)
-	ees4..->_\fzpoco_cresc d16(
+	\markEO #'(0 . 0.3) ees4..->_\fzpoco_cresc d16(
 	cis4..)->\fz a16(
 	d4..)\fz->\< f16(
 % Bars 251 to 255

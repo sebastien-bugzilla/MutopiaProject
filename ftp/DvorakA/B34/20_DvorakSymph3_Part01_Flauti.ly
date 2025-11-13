@@ -22,7 +22,6 @@
 \include "./00-Common/DvorakSymph3_Shortcuts.ily"
 \include "./00-Common/DvorakSymph3_Tempi.ily"
 \include "./00-Common/DvorakSymph3_Format_Part01_Flauti.ily"
-%\include "./00-Common/DvorakSymph3_Format_temp.ily"
 \include "./00-Common/DvorakSymph3_CueVoice.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoI.ily"
 \include "./01-Mvt1/m01_v03_music_FlautoII.ily"
@@ -93,7 +92,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #1.7 \bold 2.
+				\vspace #0.8 \bold 2.
 			}
 		}
 		\layout {

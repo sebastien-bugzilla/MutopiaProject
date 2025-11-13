@@ -364,7 +364,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 326 to 330
 	f-^ r r f-^ r r
 	des-.\p des-. r des-. des-. r
-	des-. des-. r d-^\f d-^ d-^
+	des-. des-. r \dynEO #'(0 . 2) d-^\f d-^ d-^
 	des2.\p~
 	des4. d8\f-^ d-^ d-^
 % Bars 331 to 335
