@@ -9,7 +9,7 @@ musicCornoIngleseMvtI = \relative c {
 	\key bes \major
 	\transposition f
 % Bars 1 to 5
-	R2.*18
+	\mmrnDown R2.*18
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -18,7 +18,7 @@ musicCornoIngleseMvtI = \relative c {
 	
 	
 	
-	\time 3/8 R4.
+	\time 3/8 \mmrnDown R4.
 	\time 3/4 R2.
 % Bars 21 to 25
 	\time 6/8 R
@@ -48,8 +48,8 @@ musicCornoIngleseMvtI = \relative c {
 	\time 6/8 R
 	\time 3/8 R4. \mark \default
 	\time 6/8 aes4\fz aes16.-. g32-. g4(-> f8)
-	aes4\fz a16.-. g32-. g4(-> f8)
-	bes4\fz bes16.-. a!32-. a4(-> g8)
+	aes4\fz aes16.-. g32-. g4(-> f8)
+	bes4-\offset X-offset #0.3 \fz bes16.-. a!32-. a4(-> g8)
 % Bars 46 to 50
 	bes4\fz-> bes16.-. a32-. a4->( g8)
 	R2.*5
@@ -69,7 +69,7 @@ musicCornoIngleseMvtI = \relative c {
 	\mmrPos #-4 R \no
 	\voiceTwo r4 r8 r4 \oneVoice g16(\p\< aes
 % Bars 76 to 80
-	bes8)\! b-. c-.\> des-.[ ees-. r16 f]\! \mark \default
+	bes!8)\! b-. c-.\> des-.[ ees-. r16 f]\! \mark \default
 	f2.\pp~
 	f4. c16(\< des ees des c des)\!
 	ges2.
@@ -89,7 +89,7 @@ musicCornoIngleseMvtI = \relative c {
 	bes4.-^ ges-^
 	<< aes2.-^ {s8\< s s  s s s\!}>>
 % Bars 96 to 100
-	des,4.-^\brack\ff r4 r8
+	des,4.^^\brack\ff r4 r8
 	des4.-^ r4 r8
 	des4.-^ r4 r8
 	R2.*8
@@ -97,7 +97,7 @@ musicCornoIngleseMvtI = \relative c {
 	
 % Bars 106 to 110
 	
-	c2.->_\brackfppocoapococresc~
+	c2.->\brack\fp^\pocoapococresc~
 	c\<~
 	<< c~ {s8 s s  s s s\!}>>
 	c2.
@@ -117,7 +117,7 @@ musicCornoIngleseMvtI = \relative c {
 	f'4.->~ f8 r r
 	R2.
 	aes,2.->\p~
-	<< aes {s4. s8\> s s\!}>>
+	<< aes {s4.\> s8 s s\!}>>
 	des4._\pmarcato^\solo c-!
 % Bars 126 to 130
 	bes-! aes-!
@@ -153,21 +153,21 @@ musicCornoIngleseMvtI = \relative c {
 	
 	\time 3/4 R2.
 % Bars 161 to 165
-	\time 6/8 R
-	\time 3/4 R
+	\textMark "Vi-" \time 6/8 R
+	\time 3/4 \mmrLength #12 R \textEndMark "-de"
 	\time 6/8 R2.*5
 	
 	
 % Bars 166 to 170
 	
 	\mark \default
-	e4.(\fzpD\> d!\!
+	\hairpinShorten #'(-0.5 . -2) e4.(\fzpD\> d!\!
 	c\< b
 	a g4)\! \tuplet 3/2 8 {fis16( g a)}
 % Bars 171 to 175
-	<< g2.(~ {s8\fz\> s s  s s s\!}>>
+	<< g2.(~ {\hairpinShorten #'(-0.5 . -1) s8\fz\> s s  s s s\!}>>
 	g4._\dimmarkup a)
-	b2.~_\fpdim
+	b2.~-\offset X-offset -1.5 _\fpdim
 	<< b~ {s8\> s s  s s s\!}>>
 	b8 r r r4 r8
 % Bars 176 to 180
@@ -203,21 +203,21 @@ musicCornoIngleseMvtI = \relative c {
 % Bars 201 to 205
 	
 	
-	<< d2.\brack\pp~ {s8\< s s  s s s\!}>>
+	<< d2.-\offset X-offset -1 \brack\pp~ {\hairpinShorten #'(-0.5 . -1.3) s8\< s s  s s s\!}>>
 	<< d2. {s8\> s s  s s s\!}>>
 	R2.*4
 % Bars 206 to 210
 	
 	
 	
-	<< ees2.~ {s8\pp\< s s s s s\!}>>
+	<< ees2.~ { \hairpinShorten #'(-0.5 . -1.2) s8-\offset X-offset -1 \pp\< s s s s s\!}>>
 	<< ees2. {s8\> s s  s s s\!}>>
 % Bars 211 to 215
-	bes'2._\brackpcrescpocoapoco~
+	bes'2.\brack\p^\crescpocoapoco~
 	bes4.\< a16( bes ces bes a bes)\!
 	e,2.\fz
 	b'4.( ais16_\crescmarkup b c! b ais b)
-	<< fis2. {s8\< s s  s s s\!}>> \mark \default
+	<< fis2. {s8\< s s  s s s\!}>> \mark \default \break
 % Bars 216 to 220
 	d'2.-^\ff~
 	d
@@ -267,7 +267,7 @@ musicCornoIngleseMvtI = \relative c {
 % Bars 271 to 275
 	a'4.-^\fz~ a4 d,16-. e-.
 	fis8-.\< g-. a-. b-.[ cis-. r16 d]\!
-	<< d2.->~ {s8\fz\> s s  s s s\!}>>
+	<< d2.->~ {\hairpinShorten #'(-0.5 . -1.5) s8\fz\> s s  s s s\!}>>
 	d8 r r r4 r8
 	R2.*12
 % Bars 276 to 280
@@ -285,9 +285,9 @@ musicCornoIngleseMvtI = \relative c {
 	f
 	g\fz~
 	g
-	aes\fz\<~
+	aes\fz\<~ \break
 % Bars 296 to 300
-	<< aes_\pocoapococrescendo {s8 s s s s s\!}>>
+	<< aes^\pocoapococrescendo {s8 s s s s s\!}>>
 	a!2.\fz
 	bes\fz
 	b\fz

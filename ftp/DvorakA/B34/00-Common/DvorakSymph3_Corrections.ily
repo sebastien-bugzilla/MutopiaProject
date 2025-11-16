@@ -99,6 +99,18 @@ correctionFlauti = \markup {
 	% bar 520 / Mvt III
 	"Bar 520, Mvt III : for Flauto I, a missing rest is added in violin cue voice. Valid also for Flauto II at bars 521 and 523."
 }
+correctionOboi = \markup {
+	% bar 260 / Mvt I 
+	"Bar 260, Mvt I : for oboe I, a piano indication is replaced by a pianissimo."
+	% bar 26 -27 / Mvt II
+	"Bars 26 - 27, Mvt II : for oboe II, missing accent is added."
+	% bar 36 / Mvt II
+	"Bar 36, Mvt II : for oboe II, missing crescendo is added."
+	% bar 183 / Mvt II
+	"Bar 183, Mvt II : for oboe II, the last note of the measure is a 32th."
+	% bar 264 / Mvt III
+	"Bar 264, Mvt III : for oboe III, the accentuation from conductor is kept, the dynamic fz indicated in part score is removed."
+}
 correctionClarinetti = \markup {
 	% bars 222
 	"Bar 222, Mvt III : In Flauti piccolo cue voice, missing rest are added."

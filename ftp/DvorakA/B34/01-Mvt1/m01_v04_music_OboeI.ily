@@ -16,20 +16,20 @@ musicOboeIMvtI = \relative c {
 	g8->\< aes-> bes-> c->[ d-> r16 ees->]
 % Bars 6 to 10
 	ees4.->(~\fz\> ees8. d16 f ees)\!
-	d4.(\> c)\pp
+	\hairpinShorten #'(0 . -0.5) d4.(\> c)-\offset X-offset #0.5 \pp
 	bes( d,16 ees f ees\< d ees)
 	<< c'4.~ {s8 s s\!}>> c4~\> c16 ees,\!
 	ees4.( d16 ees f\< ees d ees)\!
 % Bars 11 to 15
 	c'4.\brack\fz~ c4\>~ c16\! ees,
 	f4(\< des'16\!)[ r32 c-.] c4( bes8)
-	bes4(\<_\crescmarkup ges'16)\![ r32 f-.] f4( ees8)
+	\hairpinShorten #'(0.5 . -0.5) bes4(\<_\crescmarkup ges'16)\![ f32\rest f-.] f4( ees8)
 	ees4.\fz(~ ees16 d f ees ces aes)
-	ges4._\brackM\dimmarkup f4(\p bes8)
+	ges4.-\offset X-offset -2.5 _\brackM\dimmarkup f4(-\offset X-offset 0.5 \p bes8)
 % Bars 16 to 20
 	ees,4.->\ff d16( ees f ees d ees)
 	bes'4.-^\fz f16( ges aes ges f ges)
-	des'4.-^\fz c16( des ees des c des)
+	des'4.-^\fz c16( des! ees des c des)
 	\time 3/8 bes'4.->\ff
 	\time 3/4 a16(-> bes c bes) a->( bes c bes) a->( bes c bes)
 % Bars 21 to 25
@@ -113,7 +113,7 @@ musicOboeIMvtI = \relative c {
 % Bars 86 to 90
 	
 % Bars 91 to 95
-	aes4.(->_\brackpppocoapococresc ges)
+	aes4.(->_\brackpppocoa_pococresc ges)
 	f( ees4 ces8)\<
 	bes4.( aes4 ces8)\!
 	aes'4.( ges4\< ees8)
@@ -132,7 +132,7 @@ musicOboeIMvtI = \relative c {
 	f8-.-^ r r b,16( c d c b c)
 % Bars 106 to 110
 	f8-.-^ r r b,16( c d c b c)
-	aes'!8-.\brack\fz r_\pocoapococresc r c,16(\< des ees des c des)\!
+	aes'!8-.\brack\fz^\pocoapococresc r r c,16(\< des ees des c des)\!
 	aes'8-.\fz r r c,16(\< des ees des c des)\!
 	ces'8-.\fz r r e,16( f g f e f)
 	ces'8-.\fz r r e,16( f g f e f)
@@ -162,7 +162,7 @@ musicOboeIMvtI = \relative c {
 % Bars 131 to 135
 	e4.\> << a~ {s8 s s\!}>>
 	a4 r8 r4^\soli g'16(\p fis
-	g8)\< a-. b-.\> b r\! r
+	g8)\< a-. \hairpinShorten #'(0 . -1) b-.\> b r\! r
 	R2.
 	e,4.(\pp d
 % Bars 136 to 140
@@ -170,21 +170,21 @@ musicOboeIMvtI = \relative c {
 	e( dis
 	c! b)
 	fis'(->\mf e~\<
-	e)\! c4(\> a8)\!
+	e)\! \hairpinShorten #'(0.5 . -0.5) c4(\> a8)\!
 % Bars 141 to 145
-	b4.(\< d~\>
-	d4 b8 a4 g8)\!
-	b2.(~\p
+	\hairpinShorten #'(0.5 . -0.5) b4.(\< \hairpinShorten #'(0.5 . 0) d~\>
+	d4 \once \stemUp b8 a4 g8)\!
+	b2.(~-\offset X-offset 0.3 \p
 	b4.~ b8 e d)
 	c2.~
 % Bars 146 to 150
 	c4.~ c8\< d-> e->\!
 	f4->\brack\f r8 r4 r8
-	R2.*3
+	R2.*10
 	
 	
 % Bars 151 to 155
-	R2.*7
+	
 % Bars 156 to 160
 	
 	
@@ -192,21 +192,21 @@ musicOboeIMvtI = \relative c {
 	\mmrPos #-4 R \no
 	\time 3/4 a16(\f bes c bes) a( bes c bes) a( bes c bes)
 % Bars 161 to 165
-	\time 6/8 a( bes) c( bes) bes( aes) aes( g) g( f) f( ees)
-	\time 3/4 a( bes c bes) a( bes c bes) a( bes c bes)
+	\textMark "Vi-" \time 6/8 a( bes) c( bes) bes( aes) aes( g) g( f) f( ees)
+	\time 3/4 a( bes c bes) a( bes c bes) a( bes c bes) \textEndMark "-de"
 	\time 6/8 a( bes) c( bes) bes( aes) aes( g) g( f) f( ees)
 	a4.\brack\fz d,16( ees f ees d ees)
-	a4.\brack\fz d,16( ees f ees d ees)
+	a4.\brack\fz d,16( ees f! ees d ees)
 % Bars 166 to 170
-	a4.\brack\fz f16( ges aes ges f ges)
-	a4.\brack\fz f16( ges aes ges f ges) \mark \default
-	a4.(\fzpD\> g!\!
+	a4.\brack\fz f!16( ges aes ges f ges)
+	a4.\brack\fz f!16( ges aes ges f ges) \mark \default
+	\hairpinShorten #'(-0.5 . -1.5) a4.(\fzpD\> g!\!
 	f\< e
 	d c4)\! \tuplet 3/2 8 {b16( c d)}
 % Bars 171 to 175
-	<< c2.(~\fz\> {s8 s s s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) c2.(~\fz\> {s8 s s s s s\!}>>
 	c4._\dimmarkup b)
-	e2._\fpdim~
+	e2.-\offset X-offset -1.5 _\fpdim~
 	<< e~ {s8\> s s  s s s\!}>>
 	e8 r r r4 r8
 % Bars 176 to 180
@@ -216,7 +216,7 @@ musicOboeIMvtI = \relative c {
 	gis fis
 	e dis
 % Bars 181 to 185
-	d!4) \tuplet 3/2 8 {cis16(\< d e)\!} d4.\fz(~
+	d!4) \tuplet 3/2 8 {\once \tupletUp cis16(\< d e)\!} d4.\fz(~
 	<< d\> {s8. s_\dimmarkup}>> cis4.)
 	fis2.\pp~
 	fis4 r8 r4 r8
@@ -252,7 +252,7 @@ musicOboeIMvtI = \relative c {
 	<< f~ {s8\< s s s s s\!}>>
 	<< f2. {s8\> s s  s s s\!}>>
 % Bars 211 to 215
-	fis2._\ppcrescpocoapoco~
+	fis2.-\offset X-offset -0.5 _\ppcrescpocoapoco~
 	fis~
 	fis
 	g(\<
@@ -285,13 +285,13 @@ musicOboeIMvtI = \relative c {
 	ees4\< aes16)\![ r32 g-.] f4(\> ees8)\!
 	ees2.(~\brack\pp
 	ees4\< aes16)\![ r32 g-.] f4(\> ees8)\!
-	f4(\<_\fppocoapococrescendo des'16)\![ r32 c-.] c4( bes8)
-	bes4(\fz\< ges'16)[\! r32 f-.] f4( ees8)
+	f4(\<_\pocoapococrescendo des'16)\![ r32 c-.] c4( bes8)
+	bes4(\< ges'16)[\! r32 f-.] f4( ees8)
 % Bars 241 to 245
-	ees4(\fz\< ges16)[\! r32 f-.] f4( ees8)
-	ees4(\fz\< ges16)[\! r32 f-.] f4( ees8)
-	e4(\fz\< g!16)[\! r32 f-.] f4( e8)
-	f4(_\fzmarkup\< aes16)[\! r32 g-.] g4( f8)\!
+	ees4(\< ges16)[\! r32 f-.] f4( ees8)
+	ees4(\< ges16)[\! r32 f-.] f4( ees8)
+	e4(\< g!16)[\! r32 f-.] f4( e8)
+	f4(\< aes16)[\! r32 g-.] g4( f8)\!
 	fis2.\fz\<~
 % Bars 246 to 250
 	<< fis { s8 s s  s s s\!}>>
@@ -308,8 +308,8 @@ musicOboeIMvtI = \relative c {
 % Bars 256 to 260
 	e4.~ e4\! a,16-.\pp b-.
 	cis8-.\< d-. e fis-.[ gis-. r16 a-.]\!
-	a4.\fp\>~ a8.\! gis16-.( b-. a-.)
-	gis4.\> fis\!
+	\hairpinShorten #'(-0.5 . -0.5) a4.\fp\>~ a8.\! gis16-.( b-. a-.)
+	gis4.\> fis
 	e4.\pp~ e8. dis16-.( fis-. e-.)
 % Bars 261 to 265
 	d!4.-! cis-!
@@ -328,7 +328,7 @@ musicOboeIMvtI = \relative c {
 	
 	
 	g4.\brack\pp~ g8. fis16-. a-. g-.
-	g4.\<_\pocoapococresc << e {s8 s s\!}>>
+	g4.\<^\pocoapococresc << e {s8 s s\!}>>
 % Bars 276 to 280
 	g4.~ g8. fis16-. a-. g-.
 	g4. e
@@ -354,7 +354,7 @@ musicOboeIMvtI = \relative c {
 	c
 	des\fz\<~
 % Bars 296 to 300
-	<< des_\pocoapococrescendo {s8 s s s s s\!}>>
+	<< des^\pocoapococrescendo {s8 s s s s s\!}>>
 	f,2.->
 	ges->
 	g!->
@@ -376,7 +376,7 @@ musicOboeIMvtI = \relative c {
 	ges-.-^ r r r4 r8
 	g!-. r r aes!-. r r
 	a-. r r bes!-. r r
-	aes!2._\pcresc~
+	aes!2.-\offset X-offset -2 _\pcresc~
 % Bars 316 to 320
 	aes4. aes8-.\f r r
 	g4.\ff-^ d16( ees f ees d ees)

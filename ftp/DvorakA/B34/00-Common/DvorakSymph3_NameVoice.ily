@@ -83,12 +83,23 @@ nameOboeIIMvtIII = {
 	\set Staff.midiInstrument = #"oboe"
 }
 nameCornoIngleseMvtI = {
-	\set Staff.instrumentName = "Corno Inglese"
+	\set Staff.instrumentName = \markup {
+		\center-column { \lower #1.5 "Corno" "inglese" }
+	}
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"oboe"
 }
 nameCornoIngleseMvtII = {
-	\set Staff.instrumentName = "Corno Inglese"
+	\set Staff.instrumentName = \markup {
+		\center-column { \lower #1.5 "Corno" "inglese" }
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"oboe"
+}
+nameCornoIngleseMvtIII = {
+	\set Staff.instrumentName = \markup {
+		\center-column { \lower #1.5 "Corno" "inglese" }
+	}
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"oboe"
 }

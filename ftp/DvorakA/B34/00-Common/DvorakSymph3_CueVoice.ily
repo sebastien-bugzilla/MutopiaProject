@@ -281,7 +281,7 @@ cueVoicePiccoloMvtIII = \relative c {
 	f8.[ f'16 d8. c16] \oneVoice
 	s2*68
 	% bar 374
-	<>^\markup {Corn.,Tbrne I.}
+	<>-\offset X-offset #-3 ^\markup {Corn.,Tbrne I.}
 	s2*15
 	% bar 389 - 392
 	\voiceOne f2(~^\markup {Ob.I.}
@@ -328,10 +328,10 @@ cueVoiceOboeIMvtII = \relative c {
 cueVoiceOboeIMvtIII = \relative c {
 	s2*38
 	% bars 39 - 42
-	\voiceOne r4^\markup {Viol.I.} r8. f'16(
+	\voiceOne \slurDown r4^\markup {Viol.I.} r8. f'16(
 	\restPattern a8) gis16( bes8) gis16(
 	\restPattern bes8) a16( c8) bes16(
-	\restPattern d8) cis16( ees8) d16\laissezVibrer \oneVoice
+	\restPattern d8) cis16( ees8) d16\laissezVibrer \oneVoice \slurNeutral
 	s2*72
 	% bars 115 - 117
 	g'4(\fz^\markup {Viol.I.} fis8) r
@@ -350,7 +350,7 @@ cueVoiceOboeIMvtIII = \relative c {
 	\restPattern bes8) a16( c8) a16
 	s2*75
 	% bar 374
-	<>^\markup {Cor. TrbneI.}
+	<>-\offset X-offset -2 ^\markup {Cor. TrbneI.}
 	s2*198
 	% bar 572
 	\restPattern fis'8^\markup {Viol.I.} fis16( dis8) cis16
@@ -374,7 +374,7 @@ cueVoiceOboeIIMvtII = \relative c {
 cueVoiceOboeIIMvtIII = \relative c {
 	s2*48
 	% bar 49
-	<>^\markup {Ob.I.}
+	<>-\offset X-offset -3 ^\markup {Ob.I.}
 	s2*13
 	% bars 62 - 64
 	\voiceOne \restPattern des''8\repeatTie f16( ees8) des16(
@@ -382,16 +382,16 @@ cueVoiceOboeIIMvtIII = \relative c {
 	aes8 r r4
 	s2*50
 	% bars 115 - 117
-	g''4(^\markup {Viol.I.} fis8) r
+	\voiceOne \stemDown g''4(-\offset X-offset -5 ^\markup {Viol.I.} fis8) r
 	f!4( e8) r
-	ees!8( d16) r des8( bes16) r
+	ees!8( d16) r des8( bes16) r \oneVoice \stemNeutral
 	s2*36
 	% bars 154 - 155
 	\voiceOne f2^\markup {Ob.I.}
 	aes \oneVoice
 	s2*77
 	% bar 233
-	<>^\markup {Fl.p.,Fl.I.}
+	<>-\offset X-offset -1 ^\markup {Fl.p.,Fl.I.}
 	s2*4
 	% bar 237
 	<>^\markup {Ob.I.}
@@ -405,7 +405,7 @@ cueVoiceOboeIIMvtIII = \relative c {
 	\restPattern c8) bes16( ees8) g,16 \stemNeutral
 	s2*52
 	% bar 374
-	<>^\markup {Cor.Trbne I.}
+	<>-\offset X-offset -1.5 ^\markup {Cor.Trbne I.}
 	s2*207
 	% bars 581 - 586
 	\voiceOne e'4..->^\markup {Ob.I.} fis16(
@@ -435,7 +435,7 @@ cueVoiceCornoIngleseMvtI = \relative c {
 		\relative c'' {
 			\voiceOne ees4.^\markup {Ob.I.II.} d16( ees f ees d ees)
 			a4. d,16( ees f ees d ees)
-			des4. c16( des f ees des f) \oneVoice
+			des4. c16( des f ees des f,) \oneVoice
 		}
 	}
 	s2.*15 s4.*1 s2.*29
@@ -459,19 +459,19 @@ cueVoiceCornoIngleseMvtI = \relative c {
 	% bars 287 - 288
 	\transpose f c {
 		\relative c'' {
-			\voiceOne <bes bes'>4(^\markup {\column { \lower #1.5 "Fl." "Ob."} } <g g'>16) r <cis cis'>4( <bes bes'>16) r
+			\voiceOne <bes bes'>4(-\offset X-offset -2 ^\markup {\column { \lower #1.5 "Fl." "Ob."} } <g g'>16) r <cis cis'>4( <bes bes'>16) r
 			<cis cis'>4( <bes bes'>16) r r4 r8
 		}
 	}
 }
 cueVoiceCornoIngleseMvtII = \relative c {
-	s2*25
-	% bars 26 - 27
-	\voiceOne d''8.(^\markup {Cl.I.} b32 cis! d8 b)
+	s2*33 s4*1 s2*24
+	% bars 59 - 60
+	\oneVoice d''8.(-\offset X-offset -3 ^\markup {Cl.I.} b32 cis! d8 b)
 	d8.( b32 cis! d8 b) \oneVoice
-	s2*6 s4*1 s2*166
+	s2*140
 	% bars 201 - 204
-	\voiceOne ees4^\markup {Ob.I.} ees8 ees16. f32
+	\voiceOne ees4-\offset X-offset -1 ^\markup {Ob.I.} ees8 ees16. f32
 	ees4 ees
 	g g8 g16. aes32
 	g4 g \oneVoice
@@ -483,6 +483,9 @@ cueVoiceCornoIngleseMvtII = \relative c {
 			d8 r r4 \oneVoice
 		}
 	}
+}
+cueVoiceCornoIngleseMvtIII = \relative c {
+	% no Cue Voice
 }
 %###############################################################################
 %#               C U E   V O I C E   F O R   C L A R I N E T T I               #

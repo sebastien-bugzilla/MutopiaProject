@@ -31,6 +31,7 @@
 \include "./02-Mvt2/m02_v06_music_CornoInglese.ily"
 \include "./03-Mvt3/m03_v04_music_OboeI.ily"
 \include "./03-Mvt3/m03_v05_music_OboeII.ily"
+\include "./03-Mvt3/m03_v06_music_CornoInglese.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -43,10 +44,18 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34)"
+			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34) — Oboi & Corno inglese"
 		}
 		instrument = \markup {
-			"Oboi"
+			""
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
@@ -89,7 +98,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -115,7 +124,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.3 \bold 3.
 			}
 		}
 		\layout {
@@ -163,7 +172,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.5 \bold 2.
 			}
 		}
 		\layout {
@@ -187,7 +196,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #2 \bold 3.
 			}
 		}
 		\layout {
@@ -235,10 +244,35 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.7 \bold 2.
 			}
 		}
 		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatCornoIngleseMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(cornoinglese) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceCornoIngleseMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameCornoIngleseMvtIII \musicCornoIngleseMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #0.7 \bold "3. Tacet"
+			}
+		}
+		\layout {
+			ragged-right = ##f 
 		}
 	}
 }

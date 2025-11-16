@@ -140,8 +140,8 @@ musicOboeIIMvtII = \relative c {
 	
 % Bars 116 to 120
 	
-	aes4-\offset X-offset 0.8 \fp~ aes8 r
-	aes4\fp~ aes8 r
+	aes4-\offset X-offset 0.8 \fp~ aes8-. r
+	aes4\fp~ aes8-. r
 	c8\trill\< c16.-. des32-. ees8\trill ees16.-. f32-.\!
 	<< a,4.-\offset X-offset 0.8 \fp\> {s8 s\! s}>> r8
 % Bars 121 to 125

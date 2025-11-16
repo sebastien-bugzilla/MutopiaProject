@@ -9,7 +9,7 @@ musicOboeIIMvtIII = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2*42
+	R2*61
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -26,15 +26,7 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 41 to 45
 	
-	
-	R2*2
-	
-	R2*3
 % Bars 46 to 50
-	
-	
-	R2*14
-	
 	
 % Bars 51 to 55
 	
@@ -71,7 +63,7 @@ musicOboeIIMvtIII = \relative c {
 	f4(\brack\fz d!8) r
 	\restPattern aes'8-> g16-. f8-> ees16-.
 % Bars 86 to 90
-	bes'4(_\fzbrackcresc g8) r
+	bes'4(-\offset X-offset -2 _\fzbrackcresc g8) r
 	c4(\fz aes8) r
 	des4(\fz bes8) r
 	ees4(\fz c8) r
@@ -128,13 +120,9 @@ musicOboeIIMvtIII = \relative c {
 	bes( a aes g)
 	g( f ees d)
 	ees r r4
-	R2
-	R2*2
+	R2*15
+	
 % Bars 141 to 145
-	
-	R2*2
-	
-	R2*10
 	
 % Bars 146 to 150
 	
@@ -145,10 +133,10 @@ musicOboeIIMvtIII = \relative c {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no
 % Bars 156 to 160
-	f'4(\brack\mf\<_\crescmarkup d
+	f'4(\brack\mf\<^\crescmarkup d
 	bes)\! ces->\fz(
 	aes f)
-	d(\fz ces'
+	\shape #'((0 . 2)(0 . -0.6)(0 . -0.5)(0 . 2)) Slur d(\fz ces'
 	aes f
 % Bars 161 to 165
 	d8) r r4
@@ -192,32 +180,24 @@ musicOboeIIMvtIII = \relative c {
 % Bars 196 to 200
 	R2
 	e8 r r4
-	R2*3
+	R2*54
 	
 	
 % Bars 201 to 205
-	R2*15
+	
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
 % Bars 216 to 220
-	R2*15
-	
-	
-	
 	
 % Bars 221 to 225
 	
 % Bars 226 to 230
 	
 % Bars 231 to 235
-	R2*6
+	
 % Bars 236 to 240
-	
-	R2*15
-	
-	
 	
 % Bars 241 to 245
 	
@@ -274,10 +254,10 @@ musicOboeIIMvtIII = \relative c {
 	\ni \mmrPos #4 R2
 	\mmrPos #4 R \no
 	r4 r8. f,16\f
-	d4..->\fz c16
+	d4..^>-\offset X-offset -0.5 \fz c16
 % Bars 301 to 305
 	b8 r r4
-	R2
+	R2 
 	r4 r8. ces'16
 	aes4..\fz g16
 	f8.[\< f'16 d8. c16]
@@ -322,7 +302,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 341 to 345
 	aes4->( g!8) r
 	ces4-> d!->
-	ees8-> r ees[-> r16 des]
+	ees8-> r ees[-> r16 des]-.
 	\restPattern ces8-> des16-. ees8-> des16-.
 	ces4(-> bes8) r
 % Bars 346 to 350
@@ -335,7 +315,7 @@ musicOboeIIMvtIII = \relative c {
 	a\fz
 	a\brack\fz
 	a\fz
-	aes'!4(\fz aes,!8) r
+	\startMeasureCount aes'!4(\fz aes,!8) r
 	aes'4(\fz aes,8) r
 % Bars 356 to 360
 	aes'4(\fz aes,8) r
@@ -344,13 +324,13 @@ musicOboeIIMvtIII = \relative c {
 	aes'4(\fz aes,8) r
 	aes'4(\fz aes,8) r
 % Bars 361 to 365
-	aes'4(\fz aes,8) r
+	aes'4(\fz aes,8) r \stopMeasureCount
 	R2
 	aes'4(\fz aes,8) r
 	R2*2
 	
 % Bars 366 to 370
-	a4\fp r8. g16(
+	a4\fp r8. gis16(
 	a4) r8. gis16(
 	a4) r8. gis16(
 	a4.) r8
@@ -407,7 +387,7 @@ musicOboeIIMvtIII = \relative c {
 	g8)\! r r4
 	R2
 % Bars 421 to 425
-	<< g2->(\< {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -1) g2->(\< {s8 s s s\!}>>
 	a8) r r4
 	R2*10
 	
@@ -430,14 +410,14 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	r4 bes-!\brack\pp
-	bes-! bes-!
+	\startMeasureCount bes-! bes-!
 	bes-! bes-!
 % Bars 446 to 450
 	bes-! bes-!
 	bes-! bes-!
 	bes-! bes-!
 	bes-! bes-!
-	bes-! bes-!
+	bes-! bes-! \stopMeasureCount
 % Bars 451 to 455
 	aes-! aes-!
 	aes-! aes-!
@@ -454,7 +434,7 @@ musicOboeIIMvtIII = \relative c {
 	r4 r8. bes16
 	bes2\fz~
 	bes~
-	bes~\<_\pocoapococresc
+	bes~\<^\pocoapococresc
 	bes~
 % Bars 466 to 470
 	<< bes {s4 s\!}>>
@@ -469,17 +449,17 @@ musicOboeIIMvtIII = \relative c {
 	R2*2
 	
 % Bars 476 to 480
-	\tuplet 3/2 2 {des'4\p\< des des
-	des des des\!}
+	\tuplet 3/2 2 {\tupletUp des'4\p\< des des
+	des des des\!} \tupletNeutral
 	R2*2
 	
-	\tuplet 3/2 2 {b4\p\< b b
+	\tuplet 3/2 2 {\tupletUp b4\p\< b b
 % Bars 481 to 485
-	b b b\!}
+	b b b\!} \tupletNeutral
 	R2*2
 	\mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 e2.\ff~
+		\timeSignature 3/4 \tempoXoffset #4 e2.\ff~
 		e
 % Bars 486 to 490
 		\key e \major e2( dis4
@@ -509,7 +489,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 506 to 510
 	
 	r8. a'16[(\p fis8) r16 e](
-	dis4)_\pocoapococresc r
+	dis4)-\offset X-offset -1.5 _\pocoapococresc r
 	R2*2
 	
 % Bars 511 to 515
@@ -553,17 +533,11 @@ musicOboeIIMvtIII = \relative c {
 	f( e ees d)
 	des( c bes a)
 	bes r r4
-	R2*2
+	R2*24
 % Bars 546 to 550
 	
-	R2*2
-	
-	R2*2
-	
 % Bars 551 to 555
-	R2*2
 	
-	R2*16
 % Bars 556 to 560
 	
 % Bars 561 to 565
@@ -576,8 +550,8 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 571 to 575
 	\mark \default
-	R2
-	R2*8
+	R2*9
+	
 	
 	
 % Bars 576 to 580
@@ -590,7 +564,7 @@ musicOboeIIMvtIII = \relative c {
 	\mmrPos #-4 R
 % Bars 586 to 590
 	\mmrPos #-4 R \no
-	<< fis2\fz\>~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) fis2-\offset X-offset -1 \fz\>~ {s8 s s s\!}>>
 	fis2~
 	fis4 r
 	R2
@@ -612,7 +586,7 @@ musicOboeIIMvtIII = \relative c {
 	bis\<
 	cis
 	dis)\!
-	<< e\f\<~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) e-\offset X-offset -1 \f\<~ {s8 s s s\!}>>
 	e2~\>
 % Bars 611 to 615
 	<< e~ {s4 s\!}>>
@@ -656,7 +630,7 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 651 to 655
 	\mark \default
-	bes2->\ff~
+	bes!2->\ff~
 	bes8 r ces r
 	bes2->~
 	bes8 r ces r
@@ -664,7 +638,7 @@ musicOboeIIMvtIII = \relative c {
 	bes r bes r
 	bes8( ges' ees bes)
 	f'(\< ees ces aes)
-	ges( f ees' des)\!
+	\stemUp ges( f ees' des)\! \stemNeutral
 	bes2->~
 % Bars 661 to 665
 	bes8 r ces r 
@@ -704,14 +678,14 @@ musicOboeIIMvtIII = \relative c {
 	f8 ees!16 des! f8 ees16 des)\!
 % Bars 691 to 695
 	ges8(\f f aes ges)
-	\flattrill << fes2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	fes2^\trillflat
 	ees8( des fes ees)
-	<< des2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	des2\trill
 	ces8( bes des ces)
 % Bars 696 to 700
-	\naturaltrill << a2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	a2 ^\trillnatural
 	aes!8( g bes! aes)
-	<< ges2\startTrillSpan {s8 s s s\stopTrillSpan}>>
+	ges2\trill
 	bes8( a c bes
 	ees) r r4
 % Bars 701 to 705
@@ -759,7 +733,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 746 to 750
 	g~
 	g
-	\restPattern ees8-._\ffbrackp d16( f8) d16(
+	\startMeasureCount \restPattern ees8-._\ffbrackp d16( f8) d16(
 	\restPattern ees8-.)_\pocoapococresc d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 % Bars 751 to 755
@@ -767,7 +741,7 @@ musicOboeIIMvtIII = \relative c {
 	\restPattern ees8-.) d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
 	\restPattern ees8-.) d16( f8) d16(
-	\restPattern ees8-.) d16( f8) d16(
+	\restPattern ees8-.) d16( f8) d16( \stopMeasureCount
 % Bars 756 to 760
 	ees8) r r 8. bes'16\ff
 	g2->\fz~

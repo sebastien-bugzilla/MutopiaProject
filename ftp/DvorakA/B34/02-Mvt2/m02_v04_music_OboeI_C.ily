@@ -143,7 +143,7 @@ musicOboeIMvtII = \relative c {
 	\partCombineApart ees8->-. ees16.-. f32-. ees8-. \once \partCombineAutomatic r
 	ees8->-. ees16.-. f32-. ees8-. \partCombineAutomatic r 
 	ees8\trill\< ees16.-. f32-. ges8\trill ges16.-. aes32-.\!
-	<< \once \partCombineChords a4.\> {s8 s\! s}>> \partCombineApart gis8
+	<< \once \partCombineChords a4.\> {s8 s\! s}>> \partCombineApart gis8-.
 % Bars 121 to 125
 	<< a4.-\offset X-offset 3 ^\pococrescendo {s8 s s}>> a8-.
 	<< bes4. {s8 s s}>> bes8-.

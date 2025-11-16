@@ -27,9 +27,10 @@ musicOboeIMvtII = \relative c {
 	cis,)\pp r r4
 	r4 r16 \tuplet 3/2 16 {a''32(\pp c b} a16) r
 % Bars 16 to 20
-	R2*10
+	R2*5
 % Bars 21 to 25
-	
+	R2
+	\mmrLength #11 R2*4
 % Bars 26 to 30
 	cis,4->\pp r
 	cis-> r
@@ -55,11 +56,11 @@ musicOboeIMvtII = \relative c {
 	<< cis2\> {s4 s8. s16\!}>>
 	<< bis2\< {s4 s8. s16\!}>> \mark \default
 % Bars 46 to 50
-	cis4(\mf\> dis8)\! r
-	cis4(\mf\> dis8)\! r
+	\hairpinShorten #'(-0.2 . -1) cis4(\mf\> dis8)\! r
+	\hairpinShorten #'(-0.2 . -1) cis4(\mf\> dis8)\! r
 	cis4(\< fis16.\! e32 d16. cis32)
 	bis4.(\fp cis8->)
-	bis4.(_\fppocoapococresc cis8->)
+	bis4.(-\offset X-offset -2 _\fppocoa_pococresc cis8->)
 % Bars 51 to 55
 	bis4.(\brack\fp c8)->
 	b!4.(\brack\fp c8->)
@@ -88,7 +89,7 @@ musicOboeIMvtII = \relative c {
 	e'4~\< \tuplet 6/4 4 {e16 dis\! e fis\> e dis\!)}
 	e4(~\< \tuplet 6/4 4 {e16 dis\! e fis\> e dis\!)}
 	e4(~\< \tuplet 6/4 4 {e16 dis\! e fis\> e dis\!)
-	r dis(\p\> e fis e dis) r dis( e fis e dis)\!
+	\tupletUp r dis(\p\> e fis e dis) r dis( e fis e dis)\! \tupletNeutral
 	r dis(\pp e fis e dis) r dis( e fis e dis)}
 % Bars 76 to 80
 	e8[(\f\> dis e dis]
@@ -99,8 +100,8 @@ musicOboeIMvtII = \relative c {
 % Bars 81 to 85
 	a4. b8)\!
 	c4.\f r8
-	R2*6
-	
+	R2
+	\mmrLength #15 R2*5
 	
 % Bars 86 to 90
 	
@@ -116,7 +117,7 @@ musicOboeIMvtII = \relative c {
 	
 % Bars 96 to 100
 	
-	R2\fermata \section
+	\once \ni R2\fermata \section
 	\key des \major R2*6
 	
 	
@@ -133,7 +134,7 @@ musicOboeIMvtII = \relative c {
 	ges4\< ges8. bes16\!
 	ces4->( des8 bes)
 % Bars 111 to 115
-	<< aes2(\fp\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.3 . -1) aes2(-\offset X-offset -1 \fp\> {s8 s s s\!}>>
 	<< g2)\> {s4 s8. s16\!}>>
 	aes8\p r r4
 	R2*3
@@ -143,11 +144,11 @@ musicOboeIMvtII = \relative c {
 	ees8->-.\fp ees16.-. f32-. ees8-. r
 	ees8->-.\fp ees16.-. f32-. ees8-. r
 	ees8\trill\< ees16.-. f32-. ges8\trill ges16.-. aes32-.\!
-	<< a4.\fp\> {s8 s\! s}>> gis8
+	<< a4.\fp\> {s8 s s}>> gis8-.\!
 % Bars 121 to 125
-	<< a4.\fp\>^\pococrescendo {s8 s\! s}>> a8-.
-	<< bes4.\fp\> {s8 s\! s}>> bes8-.
-	<< b4.\fp\> {s8 s\! s}>> b8-.
+	<< a4.\fp\>^\pococrescendo {s8 s s}>> a8-.\!
+	<< bes4.\fp\> {s8 s s}>> bes8-.\!
+	<< b4.\fp\> {s8 s s}>> b8-.\!
 	a2\fp~
 	a8[\< a-> a-> a->]\! \mark \default
 % Bars 126 to 130
@@ -183,24 +184,24 @@ musicOboeIMvtII = \relative c {
 % Bars 151 to 155
 	des2->
 	ees4.\> ees8\!~
-	ees4.\p \bar "!" aes8
+	ees4.\p \textMark "Vi-" \bar "!" aes8
 	aes4\< aes8. aes16\!
 	ces4(~\> ces16\! bes ces f,)
 % Bars 156 to 160
 	ges4.\> des8\!
 	des4(\pp d8.\< d16\!
 	cis4\> d\!)
-	cis4. \bar "!" \tuplet 3/2 8 {\divideBeam ges'!16\fp ges ges \mark \default
+	cis4. \textEndMark "-de" \noBreak \bar "!" \tuplet 3/2 8 {\divideBeam ges'!16\fp ges ges \mark \default
 	ges ges ges  ges ges ges  ges ges ges  f f f
 % Bars 161 to 165
 	ges ges ges  ges ges ges  ges ges ges  f f f} \resetBeam
 	ges8 r r \tuplet 3/2 8 {\divideBeam f16 f f
 	ges ges ges  ges ges ges  ges ges ges  ges ges ges
 	ges ges ges  ges ges ges  ges ges ges  ges ges ges} \resetBeam
-	ges8 r r4
+	ges8 r r4 
 % Bars 166 to 170
-	des4.(\mf\< eeses8\fz\>)
-	<< des4.(\< {s4 s8_\brackM\crescmarkup }>> eeses8->)\!
+	\hairpinShorten #'(-0.5 . -0.5) des4.(-\offset X-offset -1.5 \mf\< \hairpinShorten #'(-0.5 . -1.5) eeses8\fz\>)
+	<< \hairpinShorten #'(1.5 . -0.5) des4.(\< {s4 s8^\brackM\crescmarkup }>> eeses8->)\!
 	des8([\< eeses des ces)]
 	bes( ees!) f16( ees c! aes)\!
 	aes'4\ff~ aes8.. aes32
@@ -225,8 +226,8 @@ musicOboeIMvtII = \relative c {
 % Bars 186 to 190
 	r16 cis,,(\p^\solo e gis a fisis gis) r
 	r cis,( e gis a fisis gis) r
-	R2
-	R2*2
+	R2*3
+	
 	
 % Bars 191 to 195
 	e'4.(_\brackmpcresc f8->)\<
@@ -283,10 +284,10 @@ musicOboeIMvtII = \relative c {
 	fis'8([\> d cis b])\!
 	a\pp r r4
 % Bars 236 to 240
-	R2*3
-	
-	
-	r4 r32 gis\brack\p\<(-. dis'-.\! b-.\> gis16)\!\noBeam r
+	R2
+	<< R {s4 \tempoXoffset #-2 s}>>
+	R2
+	r4 r32 \stemUp \hairpinShorten #'(-0.3 . -0.6) gis-\offset X-offset -1 \brack\p\<(-. dis'-.\! \hairpinShorten #'(0.6 . 0) b-.\> \stemNeutral gis16)\!\noBeam r
 	R2*3
 % Bars 241 to 245
 	
@@ -309,7 +310,7 @@ musicOboeIMvtII = \relative c {
 % Bars 256 to 260
 	gis8) r r4
 	R2
-	R\fermata
+	\once \ni R\fermata
 	R2*2
 	
 % Bars 261 to 265
@@ -323,9 +324,9 @@ musicOboeIMvtII = \relative c {
 	
 	
 	des,4\pp~ des8 r
-	<< {des4 des8. c16} {s8\< s\! s8.\> s16\!} >>
+	<< {des4 des8. c16} {\hairpinShorten #'(0 . -1) s8\< s\! s8.\> s16\!} >>
 % Bars 271 to 273
-	<< des2\p\> {s4 s8. s16\!}>>
+	<< \hairpinShorten #'(-0.5 . -0.5) des2\p\> {s4 s8. s16\!}>>
 	des4\pp des
 	des2\fermata \fine
 }

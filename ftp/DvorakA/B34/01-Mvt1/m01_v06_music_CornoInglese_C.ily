@@ -48,7 +48,7 @@ musicCornoIngleseMvtI = \relative c {
 	\time 6/8 R
 	\time 3/8 R4. \mark \default
 	\time 6/8 aes4\fz aes16.-. g32-. g4(-> f8)
-	aes4\fz a16.-. g32-. g4(-> f8)
+	aes4\fz aes16.-. g32-. g4(-> f8)
 	bes4\fz bes16.-. a!32-. a4(-> g8)
 % Bars 46 to 50
 	bes4\fz-> bes16.-. a32-. a4->( g8)

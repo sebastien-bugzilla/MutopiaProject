@@ -199,13 +199,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt1 : bar 160
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII cornoinglese clarinettoI 
+	\tag #'(flautoI flautoII oboeI oboeII  clarinettoI 
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
 		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
 		violinoI violinoII viola violoncello contrabasso) {
 		\tempo "L'istesso tempo"
 	}
-	\tag #'(piccolo) {
+	\tag #'(piccolo cornoinglese) {
 		\tempo \markup {
 			\column {\lower #1.5 "L'istesso" "tempo" }
 		}
@@ -368,12 +368,19 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt2 : bar 58
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+	\tag #'(flautoI flautoII piccolo oboeI oboeII clarinettoI 
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
 		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
 		violinoI violinoII viola violoncello contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "poco rit."
+		}
+	}
+	\tag #'(cornoinglese) {
+		\tempo \markup {
+			\normal-weight \italic {
+				\column { \lower #1.5 "poco" "rit."}
+			}
 		}
 	}
 	s2
@@ -392,7 +399,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt2 : bar 80
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI   oboeI oboeII cornoinglese clarinettoI 
+	\tag #'(flautoI   oboeI   clarinettoI 
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
 		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
 		violinoI violinoII viola violoncello contrabasso) {
@@ -400,10 +407,17 @@ tempiPartMvtII = {
 			\normal-weight \italic "poco string. e molto appassionato"
 		}
 	}
-	\tag #'(flautoII piccolo) {
+	\tag #'(flautoII piccolo oboeII) {
 		\tempo \markup {
 			\normal-weight \italic {
 				\column { \lower #1.5 "poco string. e" "molto appassionato"}
+			}
+		}
+	}
+	\tag #'(cornoinglese) {
+		\tempo \markup {
+			\normal-weight \italic {
+				\column { \lower #1.5 "poco string. e molto" "appassionato"}
 			}
 		}
 	}
@@ -423,12 +437,19 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt2 : bar 89
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+	\tag #'(flautoI flautoII piccolo oboeI oboeII  clarinettoI 
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
 		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
 		violinoI violinoII viola violoncello contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "tranquillo molto"
+		}
+	}
+	\tag #'(cornoinglese) {
+		\tempo \markup {
+			\normal-weight \italic {
+				\column { \lower #1 "tranquillo" "molto"}
+			}
 		}
 	}
 	s2*8 s8
@@ -459,7 +480,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt2 : bar 193
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(   oboeI oboeII cornoinglese clarinettoI 
+	\tag #'(    oboeII  clarinettoI 
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
 		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
 		violinoI violinoII viola violoncello contrabasso) {
@@ -467,7 +488,7 @@ tempiPartMvtII = {
 			\normal-weight \italic "accelerando poco a poco"
 		}
 	}
-	\tag #'(flautoI flautoII piccolo) {
+	\tag #'(flautoI flautoII piccolo oboeI cornoinglese) {
 		\tempo \markup {
 			\normal-weight \italic {
 				\column { \lower #1.5 "accelerando" "poco a poco"}
@@ -478,12 +499,19 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt2 : bar 199
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+	\tag #'(flautoI flautoII piccolo oboeI oboeII  clarinettoI 
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
 		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
 		violinoI violinoII viola violoncello contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "molto ritard."
+		}
+	}
+	\tag #'(cornoinglese) {
+		\tempo \markup {
+			\normal-weight \italic {
+				\column { \lower #1 "molto" "ritard."}
+			}
 		}
 	}
 	s2*2

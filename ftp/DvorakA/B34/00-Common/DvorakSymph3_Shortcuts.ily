@@ -48,6 +48,12 @@ brackpppocoapococresc = \markup {
 	\hspace #-0.83 \bracket \with-true-dimensions \dynamic pp
 	\italic "poco a poco cresc."
 }
+brackpppocoa_pococresc = \markup {
+	\hspace #-0.83 \column {
+		\lower #1.2 \line { \bracket \with-true-dimensions \dynamic pp \italic "poco a" }
+		\line { \italic "poco cresc."}
+	}
+}
 pbrackp = \markup {
 	\hspace #-0.83 \concat { \dynamic p \bracketItalic \with-true-dimensions \dynamic p }
 }
@@ -176,6 +182,12 @@ fppD = \tweak DynamicText.self-alignment-X #-0.52 #(make-dynamic-script fpp)
 %--------------------
 fpdim = \markup {\hspace #-0.69 \dynamic fp \italic "dim."}
 fpsempredim = \markup {\hspace #-0.69 \dynamic fp \italic "sempre dim."}
+fpsempre_dim = \markup {
+	\hspace #-0.69 \dynamic fp \translate #'(0 . 2.3) \column { \lower #1.5 
+		\line {  \italic "sempre" } 
+		\line { \italic "dim."}
+	}
+}
 fppocoapococrescendo = \markup {\hspace #-0.69 \dynamic fp \italic "poco a poco crescendo"}
 brackfppocoapococresc = \markup {
 	\hspace #-0.69 \bracket \with-true-dimensions \dynamic fp
@@ -677,6 +689,13 @@ markWhiteout = {
 	\once \override Score.RehearsalMark.whiteout-style = #'outline
 }
 
+tempoEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
 
 
 %ottavaEO = #(define-music-function
@@ -829,13 +848,6 @@ markWhiteout = {
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
 %tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-%tempoEO = #(define-music-function
 %	(offset)
 %	(pair?)
 %	#{

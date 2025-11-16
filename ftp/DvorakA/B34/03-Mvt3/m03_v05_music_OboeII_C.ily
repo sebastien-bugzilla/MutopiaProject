@@ -310,7 +310,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 341 to 345
 	aes4->( g!8) r
 	ces4-> d!->
-	ees8-> r ees[-> r16 des]
+	ees8-> r ees[-> r16 des]-.
 	\restPattern ces8-> des16-. ees8-> des16-.
 	ces4(-> bes8) r
 % Bars 346 to 350
@@ -338,7 +338,7 @@ musicOboeIIMvtIII = \relative c {
 	R2*2
 	
 % Bars 366 to 370
-	a4\fp r8. g16(
+	a4\fp r8. gis16(
 	a4) r8. gis16(
 	a4) r8. gis16(
 	a4.) r8
