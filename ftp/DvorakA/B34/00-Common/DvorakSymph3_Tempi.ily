@@ -344,12 +344,17 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt2 : bar 51
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
+	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese  
 		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
 		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
 		violinoI violinoII viola violoncello contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "stringendo"
+		}
+	}
+	\tag #'(clarinettoI) {
+		\tempo \markup {
+			\normal-weight \italic "string."
 		}
 	}
 	s2*3 s4
@@ -400,14 +405,14 @@ tempiPartMvtII = {
 	% Mvt2 : bar 80
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flautoI   oboeI   clarinettoI 
-		clarinettoII fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
+		 fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI 
 		trombeII trombonoI trombonoII trombonoIII tuba timpani triangolo arpa 
 		violinoI violinoII viola violoncello contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "poco string. e molto appassionato"
 		}
 	}
-	\tag #'(flautoII piccolo oboeII) {
+	\tag #'(flautoII piccolo oboeII clarinettoII) {
 		\tempo \markup {
 			\normal-weight \italic {
 				\column { \lower #1.5 "poco string. e" "molto appassionato"}

@@ -155,7 +155,7 @@ musicClarinettoIMvtII = \relative c {
 	gis2\fp~
 	gis8[\< gis-> gis-> gis->]\! \mark \default
 % Bars 126 to 130
-	\partCombineApart f!4.(-\offset X-offset -2 \fp e8)
+	\partCombineApart f!4.( e8)
 	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur f([\< e f fis]\!
 	g) r r4
 	\partCombineChords ees8\< ees16.( f32) ees8 ees16.( f32)\!

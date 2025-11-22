@@ -89,9 +89,22 @@ brackpcrescpocoapoco = \markup {
 }
 pmarc = \markup {\hspace #-0.09 \dynamic p \italic "marc."}
 pcrescpocoapoco = \markup {\hspace #-0.09 \dynamic p \italic "cresc. poco a poco"}
+pcrescpoco_apoco = \markup {
+	\hspace #-0.09 \dynamic p \italic {
+		\translate #'(0 . 2) \column { \lower #1.5 "cresc. poco" "a poco" }
+	}
+}
 pbrackpocoapococresc = \markup {
 	\hspace #-0.09 \dynamic p \italic {
 		\bracket \with-true-dimensions "poco a poco" cresc.
+	}
+}
+pbrackpocoapoco_cresc = \markup {
+	\hspace #-0.09 \dynamic p \italic {
+		\column { \lower #1.5 \translate #'(0 . 2)
+			\line { \bracket \with-true-dimensions "poco a poco"} 
+			\translate #'(0 . 2) \line { cresc. }
+		}
 	}
 }
 pbrackcresc = \markup {
@@ -276,6 +289,11 @@ sempredim = \markup {\italic "sempre dim."}
 crescpocoapoco = \markup {\italic "cresc. poco a poco"}
 dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pococrescendo = \markup {\italic "poco crescendo"}
+poco_crescendo = \markup {
+	\italic {
+		\column {\lower #1.5 "poco" "crescendo"}
+	}
+}
 dimin = \markup {\italic dimin.}
 moltocresc = \markup {\italic "molto cresc."}
 %--------------------
@@ -378,6 +396,8 @@ cornIII-IVine = \markup {
 		}
 	}
 }
+inb = \markup {in B}
+ina = \markup {in A}
 %--------------------
 % functions
 %--------------------

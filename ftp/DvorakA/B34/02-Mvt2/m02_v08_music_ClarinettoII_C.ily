@@ -38,7 +38,7 @@ musicClarinettoIIMvtII = \relative c {
 	g8.(\pp e16 g8 e)
 	g8.( e16\< g8 e)\!
 	g8.(\f e32\> f g16. f32 e16. d32)\!
-	c4(\brack\fp\> b!8) a-.\p
+	c4->(\brack\fp\> b!8) a-.\p
 	g8-. r r4
 % Bars 31 to 35
 	R2*3
@@ -155,7 +155,7 @@ musicClarinettoIIMvtII = \relative c {
 	\dynEO #'(0 . 2) f!2\fp~
 	f8[\< f-> f-> f->]\! \mark \default
 % Bars 126 to 130
-	\beamOffset #'(1.3 . 1.3) bes,8 bes16.( des32) bes8 r
+	\beamOffset #'(1.3 . 1.3) bes,8-\offset X-offset -2 \fp bes16.( des32) bes8 r
 	bes8 bes16.( a32) bes8 r
 	ees8 ees16.(_\crescmarkup c32) ees8 r
 	bes8\< bes16.( des32) bes8 bes16.( des32)\!

@@ -509,25 +509,25 @@ cueVoiceClarinettoIMvtIII = \relative c {
 	% bars 115 - 117
 	\transpose bes c' {
 		\relative c'''' {
-			g4(^\markup {Viol.I.} fis8) r
+			\ottava #1 g4(-\offset X-offset 1 ^\markup {Viol.I.} fis8) r
 			f!4( e8) r
-			ees!8( d16) r des8( bes16) r
+			ees!8( d16) r des8( bes16) \ottava #0 r 
 		}
 	}
 	s2*56
 	% bars 174 - 176
 	\transpose bes c' {
 		\relative c'' {
-			aes8_(^\markup {Ob.} ees bes'4->~
+			aes8_(-\offset X-offset -2^\markup {Ob.} ees bes'4->~
 			\voiceTwo bes8 a c bes
 			a bes c d) \oneVoice
 		}
 	}
 	s2*44
 	% bars 221 - 223
-	\voiceOne b'''2~^\markup {Fl.p.}
+	b'''2~-\offset X-offset -5 ^\markup {Fl.p.}
 	\restPattern b8 d16( cis8) ais16(
-	bes8)[ r16 b] s4 \oneVoice
+	b8)[ r16 b] s4
 	s2*73
 	% bars 297 - 298
 	\transpose bes c' {
@@ -538,12 +538,12 @@ cueVoiceClarinettoIMvtIII = \relative c {
 	}
 	s2*75
 	% bar 374
-	<>^\markup {Cor.,Trbne I.}
+	<>-\offset X-offset -2 ^\markup {Cor.,Trbne I.}
 	s2*198
 	% bar 572
 	\transpose bes c' {
-		\relative c' {
-			\stemDown \restPattern f8^\markup {Viol.} f16( d8) c16 \stemNeutral
+		\relative c'' {
+			\stemDown \restPattern ges8^\markup {Viol.} ges16( ees8) des16 \stemNeutral
 		}
 	}
 	s2*147
@@ -559,7 +559,7 @@ cueVoiceClarinettoIMvtIII = \relative c {
 cueVoiceClarinettoIIMvtI = \relative c {
 	s2.*18 s4.*1 s2.*22 s4.*1 s2.*186 s4.*1 s2.*11
 	% bars 241 - 244
-	\voiceOne f''4(^\markup {Cl.I.} aes16)[ r32 g-.] g4( f8)
+	\voiceOne f''4(-\offset X-offset -1 ^\markup {Cl.I.} aes16)[ r32 g-.] g4( f8)
 	f4( aes16)[ r32 g-.] g4( f8)
 	fis4( a!16)[ r32 g-.] g4( fis8)
 	g4( bes16)[ r32 a-.] a4( g8) \oneVoice
@@ -580,8 +580,8 @@ cueVoiceClarinettoIIMvtIII = \relative c {
 	% bars 115 - 117
 	\transpose bes c' {
 		\relative c'''' {
-			g4(^\markup {Viol.I.} fis8) r
-			f!4( e8) r
+			g4(\fz-\offset X-offset #-5 ^\markup {Viol.I.} fis8) r
+			f!4(\fz e8) r
 			ees!8( d16) r des8( bes16) r
 		}
 	}
@@ -597,8 +597,8 @@ cueVoiceClarinettoIIMvtIII = \relative c {
 	% bars 174 - 176
 	\transpose bes c' {
 		\relative c'' {
-			aes8_(^\markup {Ob.} ees bes'4->~
-			\voiceTwo bes8 a c bes
+			\voiceTwo aes8_(^\markup {Ob.} ees bes'4->~
+			bes8 a c bes
 			a bes c d) \oneVoice
 		}
 	}
@@ -615,15 +615,15 @@ cueVoiceClarinettoIIMvtIII = \relative c {
 	% bars 297 - 298
 	\transpose bes c' {
 		\relative c' {
-			\restPattern bes8^\markup {Archi} a16( c8) a16(
+			\restPattern bes8\repeatTie^\markup {Archi} a16( c8) a16(
 			\restPattern bes8) a16( c8) a16\laissezVibrer
 		}
 	}
 	s2*282
 	% bars 581- 584
-	\voiceOne g'4..\repeatTie aes16(
+	\voiceOne ges'4..\repeatTie^\markup {Cl.I.} aes16(
 	bes4..) aes16(
-	g4..) f16(
+	ges4..) f16(
 	e4..) c16 \oneVoice
 	s2*135
 	% bar 720 - 721

@@ -9,7 +9,7 @@ musicClarinettoIIMvtIII = \relative c {
 	\key f \major
 	\transposition bes
 % Bars 1 to 5
-	R2*26
+	\mmrnDown R2*26
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -94,7 +94,7 @@ musicClarinettoIIMvtIII = \relative c {
 	d-! r
 	R2
 % Bars 91 to 95
-	c4\fp r8. d16(
+	c4-\offset X-offset -1.5 \fp r8. d16(
 	c4) r8. d16(
 	c4) r8. d16(
 	c4.)\fz r8
@@ -131,7 +131,7 @@ musicClarinettoIIMvtIII = \relative c {
 	R2
 % Bars 126 to 130
 	r4 g,8(\< c
-	e[ g] \tuplet 3/2 4 {bes d c)\!}
+	e[ g] \tuplet 3/2 4 {\once \tupletUp bes d c)\!}
 	d2-^~
 	d8 c( a bes)
 	d2-^~
@@ -145,15 +145,19 @@ musicClarinettoIIMvtIII = \relative c {
 	c( b bes a)
 	a( g f e)
 	f r r4
-	R2*17
+	R2*15
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no 
 % Bars 156 to 160
-	g'4(\brack\mf\<_\crescmarkup e
+	g'4(\brack\mf\<-\offset X-offset 4 _\crescmarkup e
 	c)\! des(\fz
 	bes g)
 	e(\fz des
@@ -200,11 +204,9 @@ musicClarinettoIIMvtIII = \relative c {
 	cis8 r r4
 	R2
 	c!8 r r4
-	R2
+	R2*44
 % Bars 201 to 205
-	R2*2
 	
-	R2*20
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -213,24 +215,12 @@ musicClarinettoIIMvtIII = \relative c {
 	
 % Bars 221 to 225
 	
-	
-	R2*8
-	
-	
 % Bars 226 to 230
 	
 % Bars 231 to 235
-	R2*2
-	
-	R2*5
-	
 	
 % Bars 236 to 240
 	
-	
-	R2*2
-	
-	R2*4
 % Bars 241 to 245
 	
 	
@@ -247,7 +237,7 @@ musicClarinettoIIMvtIII = \relative c {
 	<< a) {s8 s s s\!}>>
 	d2\fz~
 	d~
-	<< d~ {s8\> s s s\!}>>
+	<< d~ {\hairpinShorten #'(0 . -0.5) s8\> s s s\!}>>
 	d8 r r4
 % Bars 256 to 260
 	R2*4
@@ -349,7 +339,7 @@ musicClarinettoIIMvtIII = \relative c {
 	
 	
 	
-	bes'4(_\brackfffz bes,8) r
+	\startMeasureCount bes'4(_\brackfffz bes,8) r
 	bes'4(\fz bes,8) r
 % Bars 356 to 360
 	bes'4(\fz bes,8) r
@@ -358,7 +348,7 @@ musicClarinettoIIMvtIII = \relative c {
 	bes'4(\fz bes,8) r
 	bes'4(\fz bes,8) r
 % Bars 361 to 365
-	bes'4(\fz bes,8) r
+	bes'4(\fz bes,8) r \stopMeasureCount
 	R2
 	bes'4(\fz bes,8) r
 	R2*2
@@ -368,7 +358,7 @@ musicClarinettoIIMvtIII = \relative c {
 	cis4) r8. dis16(
 	cis4) r8. dis16(
 	cis4.)\fz r8
-	cis4\fp r8. dis16(
+	cis4-\offset X-offset 0.3 \fp r8. dis16(
 % Bars 371 to 375
 	cis4) r8. dis16(
 	des4) r8. ees16(
@@ -421,10 +411,10 @@ musicClarinettoIIMvtIII = \relative c {
 	e8)\! r r4
 	R2
 % Bars 421 to 425
-	<< cis2(->\< {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -0.5) cis2(->\< {s8 s s s\!}>>
 	d8) r r4
 	r b-!\p
-	b-! b-!
+	\startMeasureCount b-! b-!
 	b-! b-!
 % Bars 426 to 430
 	b-!_\brackM\semprep b-!
@@ -434,9 +424,9 @@ musicClarinettoIIMvtIII = \relative c {
 	b-! b-!
 % Bars 431 to 435
 	b-! b-!
-	b-! b-!
+	b-! b-! \stopMeasureCount
 	b-! a-!
-	a-! a-!\pp
+	\startMeasureCount a-! a-!\pp
 	a-! a-!
 % Bars 436 to 440
 	a-! a-!
@@ -445,7 +435,7 @@ musicClarinettoIIMvtIII = \relative c {
 	a-! a-!
 	a-! a-!\<
 % Bars 441 to 445
-	a-! a-!
+	a-! a-! \stopMeasureCount 
 	g-! c-!\>
 	c-!\! r
 	R2*7
@@ -453,11 +443,11 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 446 to 450
 	
 % Bars 451 to 455
-	bes4-!\pp bes-!
+	\startMeasureCount bes4-!\pp bes-!
 	bes-! bes-!
 	bes-! bes-!
 	bes-! bes-!
-	bes-! bes-!
+	bes-! bes-! \stopMeasureCount
 % Bars 456 to 460
 	bes-! bes~\fp
 	bes2~\<
@@ -478,8 +468,8 @@ musicClarinettoIIMvtIII = \relative c {
 	ees~
 % Bars 471 to 475
 	ees\!
-	\tuplet 3/2 2 {aes,4\brack\p\< ees' des
-	c bes aes\!}
+	\tupletUp \tuplet 3/2 2 {aes,4\brack\p\< ees' des
+	c bes aes\!} \tupletNeutral
 	R2*2
 	
 % Bars 476 to 480
@@ -493,7 +483,7 @@ musicClarinettoIIMvtIII = \relative c {
 	R2*2
 	\mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 cis'2.\ff~
+		\timeSignature 3/4 \tempoXoffset #4 cis'2.\ff~
 		cis
 % Bars 486 to 490
 		\key c \major d!~
@@ -567,16 +557,11 @@ musicClarinettoIIMvtIII = \relative c {
 	g'( fis f e)
 	ees( d c b)
 	c r r4
-	R2
+	R2*24
 % Bars 546 to 550
-	R2*2
 	
-	R2*2
-	
-	R2*2
 % Bars 551 to 555
 	
-	R2*17
 % Bars 556 to 560
 	
 % Bars 561 to 565
@@ -589,8 +574,8 @@ musicClarinettoIIMvtIII = \relative c {
 	
 % Bars 571 to 575
 	\mark \default
-	R2
-	R2*8
+	R2*9
+	
 	
 	
 % Bars 576 to 580
@@ -603,7 +588,7 @@ musicClarinettoIIMvtIII = \relative c {
 	c2(\brack\p\<
 % Bars 586 to 590
 	<< des) {s8 s s s\!}>>
-	<< ees2\fz\>~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) ees2\fz\>~ {s8 s s s\!}>>
 	ees2~
 	ees4 r
 	R2
@@ -629,20 +614,20 @@ musicClarinettoIIMvtIII = \relative c {
 	bes!\< r
 	ees! r 
 	f\! r
-	<< des2\f\<~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) des2\f\<~ {s8 s s s\!}>>
 	des2~\>
 % Bars 611 to 615
 	<< des~ {s4 s\!}>>
 	des8\p r r4
-	\tuplet 3/2 4 {bes8[\pp bes bes]  bes bes bes
+	\startMeasureCount \tuplet 3/2 4 {bes8[-\offset X-offset -1 \pp bes bes]  bes bes bes
 	bes[ bes bes]  bes bes bes
 	bes[ bes bes]  bes bes bes
 % Bars 616 to 620
 	bes[ bes bes]  bes bes bes
-	bes[ bes bes]  bes bes bes
+	bes[ bes bes]  bes bes bes \stopMeasureCount
 	bes[ bes bes]  aes aes aes
 	aes[ aes aes]  aes aes aes 
-	bes[_\pocoapococrescendo bes bes]  bes bes bes
+	bes[^\pocoapococrescendo bes bes]  bes bes bes
 % Bars 621 to 625
 	bes[ bes bes]  bes bes bes
 	bes[ bes bes]  aes aes aes
@@ -650,7 +635,7 @@ musicClarinettoIIMvtIII = \relative c {
 	bes[ bes bes]  aes aes aes
 	aes[ aes aes]  aes aes aes
 % Bars 626 to 630
-	bes[\< bes bes]  aes aes aes
+	\once \tupletUp bes[\< bes bes]  aes aes aes
 	aes[ aes aes]  aes aes aes\!}
 	aes'(\f ges f ees)
 	ges( f ees des)
@@ -721,19 +706,19 @@ musicClarinettoIIMvtIII = \relative c {
 	r8 ges[( f fes16 ees]
 	ges8) r r4
 	r r8 ges(
-	f!8\< fes16 ees ges8 fes16 ees
+	f!8\< fes16 ees ges8 fes!16 ees!
 	g!8 f!16 ees g8 f16 ees)\!
 % Bars 691 to 695
 	aes8(\f g bes aes)
-	\naturaltrill ges2\startTrillSpan
-	f8(\stopTrillSpan ees ges f)
-	ees2\startTrillSpan
-	des8(\stopTrillSpan c ees des)
+	ges2^\trillflat
+	f8( ees ges f)
+	ees2\trill
+	des8( c ees des)
 % Bars 696 to 700
-	\flattrill ces2\startTrillSpan
-	bes!8(\stopTrillSpan a c! bes)
-	aes2\startTrillSpan
-	c8(\stopTrillSpan b d c
+	ces2^\trillflat
+	bes!8( a c! bes)
+	aes2\trill
+	c8( b d c
 	f) r r4
 % Bars 701 to 705
 	R2*19
@@ -780,7 +765,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 746 to 750
 	f~
 	f
-	f_\ffbrackp~
+	\startMeasureCount f_\ffbrackp~
 	f~_\pocoapococresc
 	f~
 % Bars 751 to 755
@@ -788,7 +773,7 @@ musicClarinettoIIMvtIII = \relative c {
 	f~
 	f~
 	f~
-	f~
+	f~ \stopMeasureCount
 % Bars 756 to 760
 	f8 r r8. c16\ff
 	a'2->\fz

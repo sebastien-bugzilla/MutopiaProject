@@ -109,7 +109,7 @@ nameCornoIngleseMvtIII = {
 nameClarinettoIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto I" "in B"
+			\lower #1 "Clarinetto I" \concat { "in B" \text-flat}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -127,7 +127,7 @@ nameClarinettoIMvtII = {
 nameClarinettoIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto I" "in B"
+			\lower #1 "Clarinetto I" \concat { "in B" \text-flat}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -136,7 +136,7 @@ nameClarinettoIMvtIII = {
 nameClarinettoIIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto II" "in B"
+			\lower #1 "Clarinetto II" \concat { "in B" \text-flat}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -154,7 +154,7 @@ nameClarinettoIIMvtII = {
 nameClarinettoIIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto II" "in B"
+			\lower #1 "Clarinetto II" \concat { "in B" \text-flat}
 		}
 	}
 	\set Staff.shortInstrumentName = ""

@@ -9,19 +9,19 @@ musicClarinettoIMvtI = \relative c {
 	\key f \major
 	\transposition bes
 % Bars 1 to 5
-	R2.*5
+	\mmrnDown R2.*5
 % Bars 6 to 10
-	<< a''2.->~ {s8\fp\> s s  s s s\!}>>
-	a4.\> bes\pp
+	<< a''2.^>~ {s8\fp\> s s  s s s}>>
+	a4. bes\pp
 	c( e,16 f g f\< e f)
 	<< d'4.~ {s8 s s\!}>> d4~\> d16 f,\!
 	f4.( e16 f g f\< e f)\!
 % Bars 11 to 15
-	d'4.~\brack\fz d4~ d16 f,
+	d'4.~\brack\fz d4~\> d16 f,\!
 	g4(\< ees'16)[\! r32 d-.] d4( c8)
-	c4(\<_\crescmarkup aes'16)[\! r32 g-.] g4( f8)
+	\hairpinShorten #'(0.5 . -0.5) c4(\<_\crescmarkup aes'16)[\! g32\rest g-.] g4( f8)
 	f4.\fz(~ f16 e g f des bes)
-	aes4._\brackM\dimmarkup g4(\p c8)
+	aes4.-\offset X-offset -1.5 _\brackM\dimmarkup g4(\p c8)
 % Bars 16 to 20
 	f,4.->\ff e16( f g f e f)
 	c'4.-^\fz g16( aes bes aes g aes)
@@ -32,14 +32,14 @@ musicClarinettoIMvtI = \relative c {
 	\time 6/8 b(\< c) d( c) c(bes) bes( a) a( g) g( f)\!
 	\time 3/4 b(-> c d c) b->( c d c) b->( c d c)
 	\time 6/8 b(\< c) d( c) c(bes) bes( a) a( g) g( f)\! \mark \default
-	g'4.\fz e16( f g f e f)
+	\dynEO #'(3 . 0) g'4.-\offset X-offset -3 \fz e16( f g f e f)
 	gis4.\fz e16( f g f e f)
 % Bars 26 to 30
 	ees4.(\> d16 ees g f ees g,)\!
 	aes4\p r8 r4 r8
 	ees'2.\pp~
 	ees
-	f4.\p( << ees\< {s8 s s\!}>>
+	f4.\p\<( << ees {s8 s s\!}>>
 % Bars 31 to 35
 	f2.)_\brackM\crescmarkup
 	f4.->~\ff f8 g4->
@@ -59,7 +59,7 @@ musicClarinettoIMvtI = \relative c {
 	ees4\fz ees16.-. d32-. d4->( c8)
 	f4\fz f16.-. e!32-. e4->( d8)
 % Bars 46 to 50
-	f4\fz f16.-. e32-. e4->( d8)
+	\dynEO #'(0 . -7.9) f4^\fz f16.-. e32-. e4->( d8)
 	r r f16.-> e32-. e8([ d)] f16.-> e32-.
 	e8([ d)] f16.-> e32-. e8( d) f(
 	d) f( d) f( d) f
@@ -68,8 +68,8 @@ musicClarinettoIMvtI = \relative c {
 	<< g2. {s8\< s s  s s s\!}>> \mark \default
 	a4.\ff e16( f g f e f)
 	f4.~ f
-	<< f2.~ { s4. s8\< s s\!}>>
-	<< f2. {s4. s8\> s s\!}>>
+	<< f2.~ { s4.\< s8 s s\!}>>
+	<< f2. {s4.\> s8 s s\!}>>
 % Bars 56 to 60
 	e4.(\> d)\!
 	c e,16(\< f g f e f)\!
@@ -84,7 +84,7 @@ musicClarinettoIMvtI = \relative c {
 	fis4(\< a!16)[ r32 g-.]\! g4( fis8) 
 % Bars 66 to 70
 	g4(\< bes16)[ r32 a-.]\! a4( g8) 
-	aes2.\ff~
+	\dynEO #'(-3 . 0) aes2.-\offset X-offset 3 \ff~
 	aes~
 	aes8 r r r4 r8
 	r4^\solo d,16(\p e f8) d16( e f8)
@@ -93,7 +93,7 @@ musicClarinettoIMvtI = \relative c {
 	
 	
 	
-	r4 r8 r4 b,16(\p\< c
+	r4 r8 r4 \hairpinShorten #'(-0.5 . -0.5) b,16(-\offset X-offset -1 \p\< c
 % Bars 76 to 80
 	des8)\! ees-. e-.\> f-.[ g-. r16 aes-.]\! \mark \default
 	aes2.\pp~
@@ -110,7 +110,7 @@ musicClarinettoIMvtI = \relative c {
 	f4.->\p(\> ees4)\! r8
 	R2.
 	des4.\brack\fz\<(-> << c) {s8 s s\!}>>
-	bes4.(\> aes4 f8)\!
+	\hairpinShorten #'(1 . 0) bes4.(\> aes4 f8)\!
 	ees4(\pp aes8 g4 bes8)
 % Bars 91 to 95
 	des4.->(_\pocoapococresc c)
@@ -132,7 +132,7 @@ musicClarinettoIMvtI = \relative c {
 	g8-.-^ r r cis,16( d e d cis d)
 % Bars 106 to 110
 	g8-.-^ r r cis,16( d e d cis d)
-	bes'8-._\fzpocoapococresc r r d,16(\< ees f ees d ees)\!
+	bes'!8-.\fz r^\pocoapococresc r d,16(\< ees f ees d ees)\!
 	bes'8-.\fz r r d,16(\< ees f ees d ees)\!
 	des8-.\fz r r fis16( g a! g fis g)
 	des8-.\fz r r fis16( g a g fis g)
@@ -173,7 +173,7 @@ musicClarinettoIMvtI = \relative c {
 	<< cis2.->\mf(~ {s4. s\<}>>
 	cis4.\! << b) {s8\> s s\!}>>
 % Bars 141 to 145
-	<< a2.(~ {s8\< s s\! s\> s s\!}>>
+	<< a2.(~ {\hairpinShorten #'(0 . -0.2) s8\< s s\! \hairpinShorten #'(-0.2 . 0) s\> s s\!}>>
 	a4.\> << gis) {s8 s s\!}>>
 	a4.->_\pmarc gis->
 	fis-> e->
@@ -197,21 +197,21 @@ musicClarinettoIMvtI = \relative c {
 	c4.( bes4 d8)
 	\time 3/4 b16(\f c d c) b( c d c) b( c d c)
 % Bars 161 to 165
-	\time 6/8 b16( c) d( c) c( bes!) bes( a) a( g) g( f)
-	\time 3/4 b( c d c) b( c d c) b( c d c)
+	\textMark "Vi-" \time 6/8 b16( c) d( c) c( bes!) bes( a) a( g) g( f)
+	\time 3/4 b( c d c) b( c d c) b( c d c) \textEndMark "-de"
 	\time 6/8 b( c) d( c) c( bes!) bes( a) a( g) g( f)
 	f'4.\brack\fz e16( f g f e f)
 	f4.\brack\fz e16( f g f e f)
 % Bars 166 to 170
 	ees4.\brack\fz g16( aes bes! aes g aes)
 	d,4.\brack\fz g16( aes bes aes g aes) \mark \default
-	b4.(\fzpD\> a!\!
+	\hairpinShorten #'(-0.5 . -1.5) b4.(\fzpD\> a!\!
 	g\< fis
 	e d4)\! \tuplet 3/2 8 {cis16( d e)}
 % Bars 171 to 175
-	<< d2.(~\fz\> {s8 s s  s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) d2.(~\fz\> {s8 s s  s s s\!}>>
 	d4._\dimmarkup cis)
-	d2._\fpdim~
+	d2.-\offset X-offset -1.5 _\fpdim~
 	<< d~ {s8\> s s  s s s\!}>>
 	d8 r r r4 r8
 % Bars 176 to 180
@@ -221,7 +221,7 @@ musicClarinettoIMvtI = \relative c {
 	bes4.(\pp aes
 	ges f
 % Bars 181 to 185
-	e4) \tuplet 3/2 8 { dis16(\< e fis)\!} e4.\fz(~
+	e4) \tuplet 3/2 8 { \once \tupletUp \hairpinShorten #'(0 . 0.5) dis16(\< e fis)\!} e4.\fz(~
 	e\>_\dimmarkup dis)\!
 	cis2.\pp~
 	cis4 r8 r4 r8
@@ -254,12 +254,12 @@ musicClarinettoIMvtI = \relative c {
 	b-. c-. r b-. c-. r 
 	b-. c-. r b-. c-. r 
 	b-. c-. r b-. c-. r 
-	<< des2.~ {s8\brack\fz\< s s  s s s\!}>>
+	<< des2.~ {\hairpinShorten #'(-0.5 . -0.5) s8-\offset X-offset -1.5 \brack\fz\< s s  s s s\!}>>
 	<< des2. {s8\> s s  s s s\!}>>
 % Bars 211 to 215
-	c_\pcrescpocoapoco-. des-. aes-. c-. des-. aes-.
+	c_\pcrescpoco_apoco-. des-. aes-. c-. des-. aes-.
 	c-. des-. aes-. c-. des-. aes-.
-	cis-. d-. gis,-. cis-. d-. gis,-.
+	cis-. d!-. gis,-. cis-. d-. gis,-.
 	cis-. d-. a-._\crescmarkup cis-. d-. a-.
 	dis\<-. e-. ais,-. dis-. e-. ais,-.\! \mark \default
 % Bars 216 to 220
@@ -279,7 +279,7 @@ musicClarinettoIMvtI = \relative c {
 	\time 6/8 << c,2.~ {s8\> s s  s s s\!}>>
 	c4 r8 r4 r8
 	\time 3/8 e,4._\pbrackp
-	\time 6/8 f4.^\leggiero( e16 f g f e f)
+	\time 6/8 f4._\leggiero( e16 f g f e f)
 % Bars 231 to 235
 	c'4.~ c4 f,16-. g-.
 	a8-> bes-> c->_\crescmarkup d->[ e-> r16 f-.]
@@ -313,7 +313,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 256 to 260
 	fis'4.\p~ fis4 b,16-.\pp cis-.
 	dis8-.\< e!-. fis-. gis-.[ ais-. r16 b-.]\!
-	b4.\fp\>~ b8.\! ais16(-. cis-. b-.)
+	\hairpinShorten #'(-0.5 . -0.5) b4.\fp\>~ b8.\! ais16(-. cis-. b-.)
 	ais4.\> << gis {s8 s s\!}>>
 	fis4.\p~ fis8. eis16-.( gis-. fis-.)
 % Bars 261 to 265
@@ -333,7 +333,7 @@ musicClarinettoIMvtI = \relative c {
 	fis4.~ fis8. fis16-. fis-. fis-.
 	fis4.-! fis-!
 	d4.~ d8. d16-. d-. d-.
-	d4.\<_\pocoapococresc << d {s8 s s\!}>>
+	d4.\<^\pocoapococresc << d {s8 s s\!}>>
 % Bars 276 to 280
 	d4.~ d8. d16-. d-. d-.
 	d4. d4.
@@ -359,7 +359,7 @@ musicClarinettoIMvtI = \relative c {
 	d
 	ees\fz~\<
 % Bars 296 to 300
-	<< ees_\pocoapococrescendo {s8 s s  s s s\!}>>
+	<< ees-\offset X-offset 3 ^\pocoapococrescendo {s8 s s  s s s\!}>>
 	g,2.->
 	aes->
 	a!->
@@ -401,8 +401,8 @@ musicClarinettoIMvtI = \relative c {
 	g(_\leggiero aes ees g aes ees)
 	g( aes ees) g\f-^ g-^ g-^
 % Bars 331 to 335
-	e(\p f c e f c)
-	e( f c) a'4.~_\pbrackpocoapococresc
+	e!(\p f c e f c)
+	e( f c) a'4.~_\pbrackpocoapoco_cresc
 	a2.~
 	a~
 	<< a {s8\< s s  s s s\!}>>

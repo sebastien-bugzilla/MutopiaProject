@@ -112,7 +112,21 @@ correctionOboi = \markup {
 	"Bar 264, Mvt III : for oboe III, the accentuation from conductor is kept, the dynamic fz indicated in part score is removed."
 }
 correctionClarinetti = \markup {
-	% bars 222
+	% bar 111 / Mvt I 
+	"Bar 111, Mvt I : For clarinetto I, a missing hairpin is added."
+	% bar 139 / Mvt I
+	"Bar 139, Mvt I : For clarinetto I, a missing slur is added."
+	% bar 51 / Mvt II
+	"Bar 51, Mvt II : For Clarinetto I, the tempo indication is moved one measure later, as in conductor score."
+	% Bar 9 / Mvt II
+	"Bar 9, Mvt II : For Clarinetto II, the second note is a G as in conductor (instead of F)."
+	% bars 90 - 93 / Mvt II
+	"Bar 90-93, Mvt II : The music indicated for clarinetto II in conductor score in printed here for Clarinetto I. It is removed." 
+	% bars 142 / Mvt II
+	"Bar 142, Mvt II : For Clarinetto II, last beat is a C instead of an ees (as in conductor)."
+	% bar 172 / Mvt II
+	"Bar 172, Mvt II : For clarinetto II, a missing dot is added."
+	% bars 222 / Mvt III
 	"Bar 222, Mvt III : In Flauti piccolo cue voice, missing rest are added."
 }
 correctionFagotto = \markup {

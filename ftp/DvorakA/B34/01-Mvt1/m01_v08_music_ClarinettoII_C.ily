@@ -193,7 +193,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 156 to 160
 	f
 	f4.( ees4 g8)
-	g4.( f4 a8)
+	g4.( f4 aes8)
 	aes4.( g4 bes8)
 	\time 3/4 b16(\f c d c) b( c d c) b( c d c)
 % Bars 161 to 165

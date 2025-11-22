@@ -77,9 +77,6 @@
 							\formatConductorMvtII
 						}
 						\new Voice {
-							\displayFilterVoice
-						}
-						\new Voice {
 							\tempiMvtII
 						}
 						\new Voice {
