@@ -768,7 +768,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 756 to 760
 	ees8 r r4 \clef bass
 	R2
-	g,,8 r r4
+	g,,8\ff r r4
 	bes8-. r r4
 	ees,8-. r r4\fermata \fine
 }

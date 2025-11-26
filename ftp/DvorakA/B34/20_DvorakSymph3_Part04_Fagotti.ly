@@ -41,10 +41,18 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34)"
+			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34) — Fagotti"
 		}
 		instrument = \markup {
-			"Fagotti"
+			""
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
@@ -87,7 +95,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -113,7 +121,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.3 \bold 3.
 			}
 		}
 		\layout {
@@ -161,7 +169,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2 \bold 2.
 			}
 		}
 		\layout {
@@ -185,7 +193,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1 \bold 3.
 			}
 		}
 		\layout {

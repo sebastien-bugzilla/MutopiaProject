@@ -130,8 +130,18 @@ correctionClarinetti = \markup {
 	"Bar 222, Mvt III : In Flauti piccolo cue voice, missing rest are added."
 }
 correctionFagotto = \markup {
+	% bar 26 / Mvt I :
+	"Bar 26, Mvt I : for fagotto I, instead of 6 8th, 6 16th are printed."
+	% bar 86 / Mvt I :
+	"Bar 86, Mvt I : for fagotto I, a missing flat on the second beat is added."
+	% bar 98 / Mvt I :
+	"Bar 98, Mvt I : for fagotto I, a missing flat on the first beat is added."
+	% bar 132 / Mvt I :
+	"Bar 132, Mvt I : for fagotto I, a missing natural is added before the first e."
+	% bar 329, Mvt III :
+	"Bar 329, MVt III : for fagotto I, the rhythm is specified as in conductor."
 	% bar 524 / Mvt III
-	"Bar 524, Mvt III : a missing f clef is added."
+	"Bar 524, Mvt III : for fagotto I, a missing f clef is added."
 }
 correctionCorni = \markup {
 	% bar 218 / Mvt III

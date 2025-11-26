@@ -62,8 +62,8 @@ musicFagottoIMvtII = \relative c {
 	cis4(\mf\> b!8)\! r
 	\hairpinShorten #'(-0.5 . -1) cis4(\mf\> b8)\! r
 	\partCombineApart cis4( \beamOffset #'(-0.5 . -0.5) fis16. e32 d16. cis32)
-	bis4.( cis8->)
-	bis4.(_\fppocoapococresc cis8->)
+	bis4.(\fp cis8->)
+	bis4.(^\fppocoapococresc cis8->)
 % Bars 51 to 55
 	bis4.( c8->)
 	\dynEO #'(-2 . -2) b!4.(\brack\fp c8->)

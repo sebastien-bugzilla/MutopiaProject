@@ -219,7 +219,7 @@ musicFagottoIMvtI = \relative c {
 	R2.*5
 % Bars 181 to 185
 	e,2.\fz~
-	<< e {s8 s s  s s s\!}>> \clef tenor
+	<< e {s8\> s s  s s s\!}>> \clef tenor
 	b'8-.\pp b-. b-. r4 r8
 	b8-. b-. b-. r4 r8
 	b8-. b-. b-. r4 r8
@@ -252,9 +252,9 @@ musicFagottoIMvtI = \relative c {
 	f2.-^
 	d4.( cis16 d ees d cis d)
 	aes!2._\brack\fz~
-	aes \partCombineAutomatic
+	<< aes {s8_\> s s  s s s\!}>> \partCombineAutomatic
 % Bars 211 to 215
-	\aIIXoffset #-4 bes8-._\pcrescpocoapoco ces-. ges-. bes-. ces-. bes-.
+	\aIIXoffset #-4 bes8-._\pcrescpocoapoco ces-. ges-. bes-. ces-. ges-.
 	bes-. ces-. ges-. bes-. ces-. ges-.
 	b-. c!-. fis,-. b-. c-. fis,-.
 	b-. c-. g-._\crescmarkup b-. c-. g-.

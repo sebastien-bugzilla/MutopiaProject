@@ -62,7 +62,7 @@ musicFagottoIIMvtII = \relative c {
 	cis4(\mf\> b!8)\! r
 	cis4(\mf\> b8)\! r
 	cis4(\< fis,8)\! r
-	gis4\fp r
+	gis4 r
 	gis4 r
 % Bars 51 to 55
 	gis4 r

@@ -219,7 +219,7 @@ musicFagottoIIMvtI = \relative c {
 	R2.*5
 % Bars 181 to 185
 	e,2.\fz~
-	<< e {s8 s s  s s s\!}>> \clef tenor
+	<< e {s8\> s s  s s s\!}>> \clef tenor
 	fis'8-.\pp fis-. fis-. r4 r8
 	fis8-. fis-. fis-. r4 r8
 	fis8-. fis-. fis-. r4 r8
@@ -254,7 +254,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 % Bars 211 to 215
-	bes8-._\pcrescpocoapoco ces-. ges-. bes-. ces-. bes-.
+	bes8-._\pcrescpocoapoco ces-. ges-. bes-. ces-. ges-.
 	bes-. ces-. ges-. bes-. ces-. ges-.
 	b-. c!-. fis,-. b-. c-. fis,-.
 	b-. c-. g-._\crescmarkup b-. c-. g-.

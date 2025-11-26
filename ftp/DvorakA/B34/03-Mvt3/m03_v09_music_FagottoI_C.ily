@@ -47,7 +47,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	aes8-.\pp aes-. aes-. aes-.
+	a8-.\pp a-. a-. a-.
 % Bars 41 to 45
 	\once \partCombineApart bes-. r r4
 	R2*4
@@ -788,7 +788,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 756 to 760
 	g8 r r4 \clef bass
 	R2
-	g,8 r r4
+	g,8\ff r r4
 	bes8-. r r4
 	ees,8-. r r4\fermata \fine
 }

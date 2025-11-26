@@ -668,7 +668,7 @@ cueVoiceFagottoIMvtIII = \relative c {
 	\restPattern bes8) a16( c8) a16\laissezVibrer \clef bass
 	s2*75
 	% bar 374
-	<>^\markup {Cor.,Trbne I.}
+	<>-\offset X-offset -2 ^\markup {Cor.,Trbne I.}
 	s2*12
 	% bars 386 - 388
 	\clef treble \voiceOne f''4(\fz^\markup {Ob.I.II} d8) r
@@ -676,9 +676,9 @@ cueVoiceFagottoIMvtIII = \relative c {
 	f4(\fz d8) r \oneVoice \clef bass
 	s2*130
 	% bars 519 - 523
-	\clef treble \voiceOne r8.^\markup {Ob.I.II} cis'16[(\f a8) r16 e](
+	\clef treble \voiceOne r8.-\offset X-offset #-2.5 ^\markup {Ob.I.II} cis'16[(\f a8) r16 e](
 	fis4) r
-	r8.^\markup {Fl.I.} fis'16[( dis8) r16 b](
+	r8.-\offset X-offset #-2 ^\markup {Fl.I.} fis'16[( dis8) r16 b](
 	cis4) r
 	r8. gis'16[( e8) r16 cis] \clef bass \oneVoice
 	s2*98
@@ -712,11 +712,11 @@ cueVoiceFagottoIIMvtIII = \relative c {
 	}
 	s2*116
 	% bar 154 - 155
-	\voiceOne f'2^\markup {Fag.I.}
-	aes \oneVoice
+	f'2-\offset X-offset #-4.5 ^\markup {Fag.I.}
+	aes
 	s2*18
 	% bars 174 - 176
-	\clef treble \voiceOne aes8(\repeatTie ees bes'4~
+	\clef treble \voiceOne aes8(\repeatTie^\markup {Ob.I.II.} ees bes'4~
 	bes8 a c bes
 	a bes c d) \oneVoice \clef bass
 	s2*40
@@ -740,16 +740,16 @@ cueVoiceFagottoIIMvtIII = \relative c {
 	<>^\markup {Cor.,Trbne I.}
 	s2*12
 	% bars 386 - 388
-	\clef treble \voiceOne f''4(\fz^\markup {Ob.I.II} d8) r
+	\clef treble \voiceOne \slurDown  f''4(\fz^\markup {Ob.I.II} d8) r
 	f4(\fz d8) r
-	f4(\fz d8) r \oneVoice \clef bass
+	f4(\fz d8) r \oneVoice \slurNeutral \clef bass
 	s2*130
 	% bars 519 - 523
-	\clef treble \voiceOne r8.^\markup {Ob.I.II} cis'16[(\f a8) r16 e](
+	\clef treble \slurDown \voiceOne r8.-\offset X-offset -4 ^\markup {Ob.I.II} cis'16[(\f a8) r16 e](
 	fis4) r
 	r8. fis16[( dis8) r16 b](
 	cis4) r
-	r8. gis'16[( e8) r16 cis] \clef bass \oneVoice
+	r8. gis'16[( e8) r16 cis]-. \clef bass \oneVoice \slurNeutral
 	s2*98
 	% bars 622 - 627
 	\voiceOne \clef treble b4\repeatTie^\markup {Cor.I.} ais->
@@ -757,7 +757,7 @@ cueVoiceFagottoIIMvtIII = \relative c {
 	b-> ais->
 	cis-> fis,->
 	b-> ais->\<
-	cis-> fis,->\! \oneVoice \clef tenor
+	cis-> fis,->\! \oneVoice \clef bass
 	s2*92
 	% bars 720 - 722
 	\clef tenor \voiceTwo r4^\markup {Trbni.} r8. bes,16

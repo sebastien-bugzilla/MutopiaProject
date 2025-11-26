@@ -75,6 +75,12 @@ brackppespress = \markup {
 }
 ppmorendo = \markup {\hspace #-0.83 \dynamic pp \italic morendo}
 pppococresc = \markup {\hspace #-0.83 \dynamic pp \italic "poco cresc."}
+pppoco_cresc = \markup {
+	\column {
+		\lower #1.5 \line { \hspace #-0.83 \dynamic pp \italic "poco"}
+		\line { \italic "cresc."}
+	}
+}
 semprepp = \markup {\hspace #-1.33 \italic sempre \dynamic pp }
 ppbracknaturale = \markup {\hspace #-0.83 \dynamic pp \bracket \with-true-dimensions \italic naturale}
 ppsulponticello = \markup {\hspace #-0.83 \dynamic pp \italic "sul ponticello"}
@@ -283,6 +289,8 @@ pocoapococrescendo = \markup {\italic "poco a poco crescendo"}
 pocoapoco_crescendo = \markup {
 	\italic { \column { \lower #1.5 "poco a poco" "crescendo" } }
 }
+pocoa = \markup {\italic "poco a"}
+pococrescendo = \markup {\italic "poco crescendo"}
 pococresc = \markup {\italic "poco cresc."}
 dimp = \markup {\italic "dim." \dynamic p}
 sempredim = \markup {\italic "sempre dim."}
@@ -717,6 +725,18 @@ tempoEO = #(define-music-function
 	#}
 )
 
+noteHeadEsw = #(define-music-function
+	(spacing)
+	(pair?)
+	#{
+		\override NoteHead.extra-spacing-width = #spacing
+	#}
+)
+
+revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
+
+
+
 
 %ottavaEO = #(define-music-function
 %	(offset)
@@ -817,17 +837,6 @@ tempoEO = #(define-music-function
 %		\once \override Score.RehearsalMark.Y-offset = #offset
 %	#}
 %)
-
-%noteHeadEsw = #(define-music-function
-%	(spacing)
-%	(pair?)
-%	#{
-%		\override NoteHead.extra-spacing-width = #spacing
-%	#}
-%)
-
-%revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
-
 
 %ottavaShorten = #(define-music-function
 %	(value)
