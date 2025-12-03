@@ -109,7 +109,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 86 to 90
 	
 % Bars 91 to 95
-	r4 r8 des,8-.\p des-. des-.
+	r4 r8 des,8-. des-. des-.
 	r4 r8 des-. des-. des-.
 	r4 r8 ges-. ges-. ges-.
 	r f-. f-. r ges-.\< ges-.

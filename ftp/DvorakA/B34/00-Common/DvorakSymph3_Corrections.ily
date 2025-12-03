@@ -144,14 +144,24 @@ correctionFagotto = \markup {
 	"Bar 524, Mvt III : for fagotto I, a missing f clef is added."
 }
 correctionCorni = \markup {
+	% bar 155 / Mvt I :
+	"Bar 155, Mvt I : For corno I, in conformity with conductor score, the last rest is an 8th."
 	% bar 218 / Mvt III
 	"Bar 218, Mvt III : in flauti cue voice, missing rests and slur are added."
+	% bar 35 / Mvt I
+	"Bar 35, Mvt I : for corno II, the last note is switch from a to a flat in accordance with other voices (faggot, trombone III)."
+	% Bar 168 / Mvt II :
+	"Bar 168, Mvt II : for corno II, the second f is marked as 16th in conformity with conductor score."
+	% Bar 353 / Mvt III :
+	"Bar 353, Mvt III : for corno III, a missing rest is added."
 }
 correctionTrombe = \markup {
 	% bar 225 / Mvt II
 	"Bar 228, Mvt II : a a-flat indicated in cue voice for Corno I is in actually a e-flat."
 	% bar 481 / Mvt III
 	"Bar 481, Mvt III : the indication of the cor III/IV is indicated bar 481 but they start at bar 482."
+	% bar 77 / Mvt III
+	"Bar 77, Mvt III : For Corno I, a missing flat is added on the first note."
 }
 CorrectionTrombone = \markup {
 	% bar 246 / Mvt I

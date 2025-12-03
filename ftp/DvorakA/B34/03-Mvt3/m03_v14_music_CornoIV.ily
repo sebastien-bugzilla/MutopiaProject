@@ -57,7 +57,7 @@ musicCornoIVMvtIII = \relative c {
 	bes'2\fp
 	r4 f-.
 % Bars 51 to 55
-	bes2\fp
+	bes2-\offset X-offset 0.5 \fp
 	r4 f-.
 	bes-. f-._\dimmarkup
 	g8 r r4
@@ -329,7 +329,7 @@ musicCornoIVMvtIII = \relative c {
 	r8. c'16[\< a8.-> g16]
 % Bars 306 to 310
 	fis8\! r r4
-	bes2\fp
+	bes2-\offset X-offset 0.7 \fp
 	r4 f-.\p
 	bes2\brack\fp
 	r4 f-.\brack\p
@@ -390,9 +390,9 @@ musicCornoIVMvtIII = \relative c {
 % Bars 356 to 360
 	
 % Bars 361 to 365
-	\ni \mmrPos #-4 R2 \no
+	\ni \mmrPos #-6 R2 \no
 	R
-	\ni \mmrPos #-4 R \no
+	\ni \mmrPos #-6 R \no
 	R2*2
 % Bars 366 to 370
 	fis4\fp r
@@ -435,7 +435,7 @@ musicCornoIVMvtIII = \relative c {
 % Bars 401 to 405
 	c,-^ f-^ r4
 	R2
-	ees2-^\ff~
+	ees2^^\ff~
 	ees8 r r4
 	g2-^~
 % Bars 406 to 410
@@ -471,13 +471,13 @@ musicCornoIVMvtIII = \relative c {
 % Bars 441 to 445
 	
 	
-	d4-!\pp d-!
+	\startMeasureCount d4-!\pp d-!
 	d-! d-!
 	d-! d-!
 % Bars 446 to 450
 	d-! d-!
 	d-! d-!
-	d-! d-!
+	d-! d-! \stopMeasureCount
 	d-! des-!
 	des-! des-!
 % Bars 451 to 455
@@ -513,7 +513,7 @@ musicCornoIVMvtIII = \relative c {
 % Bars 476 to 480
 	
 	r4 r8. aes16\f
-	b4..->\fz fis16
+	b!4..->\fz fis16
 	b4..->\fz fis16
 	b4-> r
 % Bars 481 to 485
@@ -521,7 +521,7 @@ musicCornoIVMvtIII = \relative c {
 	r4 r8. fis16
 	b4..->\fz fis16 \mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 b,2.\ff~
+		\timeSignature 3/4 \tempoXoffset #4 b,2.\ff~
 		b
 % Bars 486 to 490
 		e\fz~
@@ -595,7 +595,7 @@ musicCornoIVMvtIII = \relative c {
 	
 	b2->\fp
 	R
-	<< b->\> {s4 s\!}>>
+	<< \hairpinShorten #'(0 . -2) b->\> {s4 s\!}>>
 % Bars 556 to 560
 	R2*13
 % Bars 561 to 565
@@ -649,15 +649,15 @@ musicCornoIVMvtIII = \relative c {
 % Bars 611 to 615
 	
 	
-	\tuplet 3/2 4 {b8[\pp b b] b b b
+	\tuplet 3/2 4 {\startMeasureCount b8[-\offset X-offset -1 \pp b b] b b b
 	b[ b b] b b b
 	b[ b b] b b b
 % Bars 616 to 620
 	b[ b b] b b b
-	b[ b b] b b b
+	b[ b b] b b b \stopMeasureCount 
 	gis[ gis gis] cis, cis cis
 	fis[ fis fis] fis fis fis
-	b[_\pocoapococrescendo b b] b b b
+	b[^\pocoapococrescendo b b] b b b
 % Bars 621 to 625
 	b[ b b] b b b
 	gis[ gis gis] cis, cis cis
@@ -678,7 +678,7 @@ musicCornoIVMvtIII = \relative c {
 	bes2\fz~
 % Bars 636 to 640
 	bes8 r r4
-	bes2\fz~
+	\dynEO #'(-2.7 . -8.7) bes2^\fz~
 	bes8 r r4
 	bes2\fz~
 	bes8 r r4

@@ -132,6 +132,12 @@ pespress = \markup {\hspace #-0.09 \dynamic p \italic espress.}
 semprep = \markup {\hspace #-0.62 \italic sempre \dynamic p}
 ppococresc = \markup {\hspace #-0.09 \dynamic p \italic "poco cresc."}
 pdimin = \markup {\hspace #-0.09 \dynamic p \italic dimin.}
+brackppocoa_pococresc = \markup {
+	\hspace #-0.09 \column {
+		\lower #1.2 \line { \bracket \with-true-dimensions \dynamic p \italic "poco a" }
+		\line { \italic "poco cresc."}
+	}
+}
 %--------------------
 % dynamics mp
 %--------------------
@@ -284,12 +290,15 @@ pocoapococresc = \markup {\italic "poco a poco cresc."}
 pocoapoco_cresc = \markup {
 	\italic { \column { \lower #1.5 "poco a poco" "cresc."} }
 }
+pocoa_pococresc = \markup {
+	\italic { \column { \lower #1.5 "poco a" "poco cresc."} }
+}
 brackpocoapococresc = \markup { \italic { \bracket \with-true-dimensions  "poco a poco" cresc }}
 pocoapococrescendo = \markup {\italic "poco a poco crescendo"}
 pocoapoco_crescendo = \markup {
 	\italic { \column { \lower #1.5 "poco a poco" "crescendo" } }
 }
-pocoa = \markup {\italic "poco a"}
+pocoa = \markup {\italic "poco a-"}
 pococrescendo = \markup {\italic "poco crescendo"}
 pococresc = \markup {\italic "poco cresc."}
 dimp = \markup {\italic "dim." \dynamic p}
@@ -406,6 +415,8 @@ cornIII-IVine = \markup {
 }
 inb = \markup {in B}
 ina = \markup {in A}
+ine = \markup {in E}
+inf = \markup {in F}
 %--------------------
 % functions
 %--------------------

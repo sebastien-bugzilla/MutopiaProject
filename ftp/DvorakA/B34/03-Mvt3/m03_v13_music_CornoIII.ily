@@ -9,17 +9,17 @@ musicCornoIIIMvtIII = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R2
-	a''2\fp\>~
+	\mmrnDown R2
+	\hairpinShorten #'(-0.5 . -0.5) a''2\fp\>~
 	a8\! r r4
 	R2*2
 	
 % Bars 6 to 10
-	a2\fp\>~
+	\hairpinShorten #'(-0.5 . -0.5) a2\fp\>~
 	a8\! r r4
 	R2*2
 	
-	a2\fp\>~
+	\hairpinShorten #'(-0.5 . -0.5) a2\fp\>~
 % Bars 11 to 15
 	a8\! r r4
 	R2*2
@@ -166,7 +166,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 % Bars 141 to 145
 	
-	bes4-.\fz r
+	bes4-.-\offset X-offset 0.5 \fz r
 	R2*3
 	
 	
@@ -189,7 +189,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 	\tuplet 3/2 4 {f,8\brack\ff-^ a-^ c-^ } ees4\fz~
 % Bars 161 to 165
-	<< ees2\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -1) ees2\> {s8 s s s\!}>>
 	R2*6
 % Bars 166 to 170
 	
@@ -277,8 +277,8 @@ musicCornoIIIMvtIII = \relative c {
 	r g-.\!
 	c2\fz~
 	c~
-	<< c~\> {s8 s s s\!}>>
-	c8 r r4
+	<< c~\> {s8 s s s}>>
+	c8\! r r4
 % Bars 256 to 260
 	R2*4
 	
@@ -479,13 +479,13 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 441 to 445
 	
 	
-	d'4-!\pp d-!
+	\startMeasureCount d'4-!\pp d-!
 	d-! d-!
 	d-! d-!
 % Bars 446 to 450
 	d-! d-!
 	d-! d-!
-	d-! d-!
+	d-! d-! \stopMeasureCount
 	d-! des-!
 	des-! des-!
 % Bars 451 to 455
@@ -529,7 +529,7 @@ musicCornoIIIMvtIII = \relative c {
 	r4 r8. fis16
 	b4..->\fz fis16 \mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 fis2.\ff~
+		\timeSignature 3/4 \tempoXoffset #4 fis2.\ff~
 		fis
 % Bars 486 to 490
 		b\fz~
@@ -657,15 +657,15 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 611 to 615
 	
 	
-	\tuplet 3/2 4 {b8[\pp b b] b b b
+	\tuplet 3/2 4 {\startMeasureCount b8[-\offset X-offset -1 \pp b b] b b b
 	b[ b b] b b b
 	b[ b b] b b b
 % Bars 616 to 620
 	b[ b b] b b b
 	b[ b b] b b b
-	b[ b b] b b b
+	b[ b b] b b b \stopMeasureCount
 	ais[ ais ais] ais ais ais
-	b[_\pocoapococrescendo b b] b b b
+	b[^\pocoapococrescendo b b] b b b
 % Bars 621 to 625
 	b[ b b] b b b
 	b[ b b] b b b
@@ -673,7 +673,7 @@ musicCornoIIIMvtIII = \relative c {
 	b[ b b] b b b
 	ais[ ais ais] ais ais ais
 % Bars 626 to 630
-	b[\< b b] b b b
+	\tupletUp b[\< b b] b b b \tupletNeutral
 	ais[ ais ais] ais ais ais\!}
 	R2*4
 	
@@ -740,13 +740,13 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 691 to 695
 	f4-.\f r
 	f-. r
-	aes-. r
+	\startMeasureCount aes-. r
 	aes-. r
 	aes-. r
 % Bars 696 to 700
 	aes-. r 
 	aes-. r
-	aes-. r
+	aes-. r \stopMeasureCount
 	a!-. r
 	d2->_\fzbrackp~
 % Bars 701 to 705

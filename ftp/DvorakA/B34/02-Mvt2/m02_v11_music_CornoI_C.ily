@@ -46,8 +46,8 @@ musicCornoIMvtII = \relative c {
 	a8_\pbrackespress e'16.-> d32-. d8( c)
 % Bars 31 to 35
 	r e16.-> d32-. d8( c)
-	r e16.-> d32-. d8( c)
-	r g'16.-> f32-. f8( e)
+	r e16.->_\< d32-. d8( c)
+	r g'16.-> f32-. f8( e)\!
 	\time 2/8 ees4 \partCombineAutomatic
 	\time 4/8 d8[-. ees-.\> d-. ees-.\!]
 % Bars 36 to 40
@@ -138,7 +138,7 @@ musicCornoIMvtII = \relative c {
 	\partCombineApart des8-.-\offset X-offset -1 \p des16.-. aes32-. des8-. r
 	des4\fp des8-. des16.-. ees32-.
 	des8-.^\marc des16.-. aes32-. des8-. r
-	des4\< des8. aes16\!
+	des4\< des8. c16\!
 	des4.(\fp f8)
 % Bars 111 to 115
 	c4->\fp ees-> \partCombineAutomatic

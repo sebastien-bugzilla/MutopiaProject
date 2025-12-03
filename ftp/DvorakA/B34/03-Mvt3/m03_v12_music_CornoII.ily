@@ -44,7 +44,7 @@ musicCornoIIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	\ni \mmrPos #4 R2
-	\mmrPos #4 R
+	\mmrPos #4 R \no
 	R2*2
 	
 	c2(\pp
@@ -59,8 +59,8 @@ musicCornoIIMvtIII = \relative c {
 	R
 % Bars 51 to 55
 	bes\fp
-	R
-	R2*4
+	R2*5
+	
 	
 	
 % Bars 56 to 60
@@ -68,9 +68,9 @@ musicCornoIIMvtIII = \relative c {
 	aes2\fp
 	R
 	aes\fp
-	R
+	R2*5
 % Bars 61 to 65
-	R2*4
+	
 	
 	
 	\mark \default
@@ -100,8 +100,8 @@ musicCornoIIMvtIII = \relative c {
 	ees4.-> r8
 	ees4-> ees->
 % Bars 86 to 90
-	r bes-^_\fbrackcresc
-	r bes-^
+	r bes^^_\fbrackcresc
+	r bes^^
 	r bes-^
 	r bes-^
 	r bes-^
@@ -127,7 +127,7 @@ musicCornoIIMvtIII = \relative c {
 	bes,2\fp~
 	bes~
 	bes~
-	bes_\pocoapococresc
+	bes^\pocoapococresc
 	r8. bes16\brack\f bes4~
 % Bars 111 to 115
 	bes2~
@@ -251,9 +251,9 @@ musicCornoIIMvtIII = \relative c {
 	\mmrPos #-4 R \no
 	\once \voiceTwo r4 g,-.\brack\pp
 	c-. r
-	R2
+	R2*3
 % Bars 226 to 230
-	R2*2
+	
 	
 	fis4-.\brack\pp r
 	a-. r
@@ -349,9 +349,9 @@ musicCornoIIMvtIII = \relative c {
 	bes2\fp
 	R
 	bes\fp
-	R
+	R2*5
 % Bars 311 to 315
-	R2*4
+	
 	
 	
 	
@@ -359,8 +359,8 @@ musicCornoIIMvtIII = \relative c {
 % Bars 316 to 320
 	R
 	aes\fp
-	R
-	R2*3
+	R2*4
+	
 	
 % Bars 321 to 325
 	\mark \default
@@ -481,14 +481,14 @@ musicCornoIIMvtIII = \relative c {
 	<< a2->(\< {s8 s s s\!}>>
 	c8-.) r r4
 	r e,-!\p
-	e-! e-!
+	\startMeasureCount e-! e-!
 	e-! e-!
 % Bars 426 to 430
 	e-!_\brackM\semprep e-!
 	e-! e-!
 	e-! e-!
 	e-! e-!
-	e-! e-!
+	e-! e-! \stopMeasureCount
 % Bars 431 to 435
 	a-! a-!
 	a-! a-!
@@ -500,7 +500,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 441 to 445
 	
 	
-	bes4-!\brack\pp bes-!
+	\startMeasureCount bes4-!\brack\pp bes-!
 	bes-! bes-!
 	bes-! bes-!
 % Bars 446 to 450
@@ -508,7 +508,7 @@ musicCornoIIMvtIII = \relative c {
 	bes-! bes-!
 	bes-! bes-!
 	bes-! bes-!
-	bes-! bes-!
+	bes-! bes-! \stopMeasureCount
 % Bars 451 to 455
 	bes-! des-!
 	c-! c-!
@@ -522,7 +522,7 @@ musicCornoIIMvtIII = \relative c {
 	r4 r8. c,16
 	c2\fz~
 	c~
-	c~\<_\pocoapococresc
+	c~\<^\pocoapococresc
 	c~
 % Bars 466 to 470
 	<< c {s4 s\!}>>
@@ -544,7 +544,7 @@ musicCornoIIMvtIII = \relative c {
 	b4-> r
 	r r8. fis16 \mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 b2.\ff~
+		\timeSignature 3/4 \tempoXoffset #4 b2.\ff~
 		b
 % Bars 486 to 490
 		g\fz~
@@ -627,15 +627,11 @@ musicCornoIIMvtIII = \relative c {
 	
 % Bars 571 to 575
 	\mark \default
-	R2*4
+	R2*12
 	
 	
 	
 % Bars 576 to 580
-	R2*8
-	
-	
-	
 	
 % Bars 581 to 585
 	
@@ -645,15 +641,11 @@ musicCornoIIMvtIII = \relative c {
 	\mmrPos #-4 R
 % Bars 586 to 590
 	\mmrPos #-4 R \no
-	<< des'2\fz\>~ {s8 s s s\!}>>
-	des2~
+	<< des'2\fz\>~ {s8 s s s}>>
+	des2~\!
 	des4 r
-	R2
+	R2*7
 % Bars 591 to 595
-	R2*6
-	
-	
-	
 	
 % Bars 596 to 600
 	
@@ -671,19 +663,15 @@ musicCornoIIMvtIII = \relative c {
 	r\< dis->
 	r dis->
 	r fis->\!
-	<< b,2\f\<~ {s8 s s s\!}>>
+	<< b,2\f\<~ {s8 s s s}>>
 	b2~\>
 % Bars 611 to 615
 	<< b~ {s4 s\!}>>
 	b8\p r r4
-	R2*3
+	R2*9
 	
 	
 % Bars 616 to 620
-	R2*6
-	
-	
-	
 	
 % Bars 621 to 625
 	

@@ -9,10 +9,10 @@ musicCornoIVMvtII = \relative c {
 	\key a \minor
 	\transposition e
 % Bars 1 to 5
-	R2*3
+	R2*8
 	
 	
-	R2*5
+	
 	
 % Bars 6 to 10
 	
@@ -22,9 +22,9 @@ musicCornoIVMvtII = \relative c {
 	r g-> r g->\!
 % Bars 11 to 15
 	g8.\mf r16 r4
-	R2*10
-	
-	
+	R2
+	\tempoXoffset #-1.5 R
+	R2*7
 	
 % Bars 16 to 20
 	
@@ -33,21 +33,21 @@ musicCornoIVMvtII = \relative c {
 	
 	
 % Bars 21 to 25
-	
+	R2
 	r4 e'\fp\<~
 	e8\! r r4
-	R2*6
+	R2*2
 	
 % Bars 26 to 30
+	\tempoXoffset #-2 R2*4
 	
 	
 	
-	
-	c2\pp~
+	c2-\offset X-offset -1.5 \pp~
 % Bars 31 to 35
 	c
 	c\fp~
-	<< c~\< {s8 s s s\!}>>
+	<< \hairpinShorten #'(-2 . -1) c~\< {s8 s s s\!}>>
 	\time 2/8 c8 r
 	\time 4/8 f8[-. f-.\> f-. f-.\!]
 % Bars 36 to 40
@@ -61,80 +61,79 @@ musicCornoIVMvtII = \relative c {
 	
 	c,4.-^_\pbrackp r8
 	f4.-^ r8
-	<< e2\< {s8 s s s\!}>> \mark \default
+	<< \hairpinShorten #'(0 . -1.5) e2\< {s8 s s s\!}>> \mark \default
 % Bars 46 to 50
-	a4\mf\>( g8)\! r
-	a4\mf\>( g8)\! r
+	\hairpinShorten #'(-0.5 . -0.5) a4\mf\>( g8)\! r
+	\hairpinShorten #'(-0.5 . -0.5) a4\mf\>( g8)\! r
 	a4(\< bes8)\! r
 	R2*3
 	
 % Bars 51 to 55
 	
-	ees,4\brack\p r
+	ees,4_\brackppocoa_pococresc r
 	ees r
-	r8 g,->\mf\< r g->\!
+	r8 \hairpinShorten #'(-0.5 . 0) g,->\mf\< r g->\!
 	r g->\< r g->\!
 % Bars 56 to 60
-	g4\f r
-	R2*2
-	
+	g4-\offset X-offset #-2.5 \f r
+	R2
+	\tempoXoffset #-1 R
 	f'4\p r
 	f r
 % Bars 61 to 65
 	fis r
-	d4(\p\> e8)-. e-.\!
+	d4(-\tweak extra-offset #'(0 . 0.5) \p\> e8)-. e-.\!
 	e4.\p r8
-	R2*3
+	\mmrLength #12 R2*3
 	
 % Bars 66 to 70
 	
 	r4 a8-.\p b-.
 	a r r4 \mark \default
-	R2*9
+	R2*11
 	
 % Bars 71 to 75
-	
-	
-	
-	
 	
 % Bars 76 to 80
 	
 	
-	R2*2
+	
 	
 	aes16\fz r r8 r4
 % Bars 81 to 85
 	R2
 	g,4.\f r8
-	g4. r8
-	R2*13^\mutainf \transposition f
+	g4. r8_\mutainf
+	\mmrLength #11 \tempoXoffset #-1.5 R2*5 \transposition f
 	
 % Bars 86 to 90
 	
+	
+	
+	\mmrLength #12 \mmrnDown R2*8
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
-	R2\fermata \section
+	\once \ni R2\fermata \section
 	R2*4
 	
 	
 % Bars 101 to 105
 	
-	ees'8-.\p\< ees16.-. ees32-. ees8-.\! r
+	ees'8-.\p\<^\inf ees16.-. ees32-. ees8-.\! r
 	aes,-.\< aes16.-. aes32-. aes8-.\! r
 	aes4->\< f'8. ees16\!
 	des4.->\fp r8
 % Bars 106 to 110
-	R2
-	R2*3
+	R2*6
 	
 	
-	R2*2
+	
+	
 % Bars 111 to 115
 	
-	<< bes2\brack\p\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -2) bes2\brack\p\> {s8 s s s\!}>>
 	bes4->\p bes8-. bes16.-. bes32-.
 	bes4->\fp bes->
 	ees,4-> ees8-. ees16.-. bes'32-.
@@ -143,25 +142,25 @@ musicCornoIVMvtII = \relative c {
 	ees4.\fp r8
 	ees4.-> r8
 	<< ees4.\< {s8 s s\!}>> r8
-	<< g4.\fp\> {s8 s\! s}>> r8
+	<< \hairpinShorten #'(-0.5 . -1) g4.\fp\> {s8 s s}>> r8\!
 % Bars 121 to 125
-	<< g4.\fp\>^\pococrescendo {s8 s\! s}>> r8
-	<< g4.\fp\> {s8 s\! s}>> r8
-	<< g4.\fp\> {s8 s\! s}>> r8
+	<< \hairpinShorten #'(-0.5 . -1) g4.\fp\>^\pococrescendo {s8 s s}>> r8\!
+	<< \hairpinShorten #'(-0.5 . -1) g4.\fp\> {s8 s s}>> r8\!
+	<< \hairpinShorten #'(-0.5 . -1) g4.\fp\> {s8 s s}>> r8\!
 	g2\fp~
 	g8[\< bes-> bes-> bes]->\! \mark \default
 % Bars 126 to 130
 	aes,8-.[\fp aes-. aes-.] r
 	aes8-.[ aes-. aes-.] r
-	ees'8 ees16.(_\crescmarkup d32) ees8 r
+	ees'8 ees16.(_\crescmarkup d!32) ees8 r
 	aes,8-.[\< aes-. aes-. aes-.]\!
 	aes[-. aes-. aes-.] r
 % Bars 131 to 135
-	R2*4
+	R2*15
 	
 	
 	
-	R2*11
+	
 % Bars 136 to 140
 	
 % Bars 141 to 145
@@ -169,20 +168,20 @@ musicCornoIVMvtII = \relative c {
 % Bars 146 to 150
 	ees'4.->\pp r8
 	ees4.-> r8
-	R2
-	R
+	R2*2
+	
 	ees4.(\p\< ges8)\!
 % Bars 151 to 155
 	des4(-> aes')
 	R2
-	r4 r8 \bar "!" r
-	R2*2
+	r4 r8 \textMark "Vi-" \bar "!" r
+	R2*5
 	
 % Bars 156 to 160
-	R2*3
 	
 	
-	r4 r8 \bar "!" \tuplet 3/2 8 {e!16\fp e e \mark \default
+	
+	r4 r8 \textEndMark "-de" \bar "!" \tuplet 3/2 8 {e!16\fp e e \mark \default
 	\divideBeam ees16\brack\p ees ees  ees ees ees} \resetBeam ees r r8
 % Bars 161 to 165
 	\tuplet 3/2 8 {\divideBeam ees16 ees ees  ees ees ees} \resetBeam ees r r8
@@ -229,25 +228,25 @@ musicCornoIVMvtII = \relative c {
 	d2_\ffbrackp~
 	d8 r r4
 % Bars 201 to 205
-	R2*7
+	R2*10
 	
 	
 	
 	
 % Bars 206 to 210
 	
-	
-	R2*3
-	
-	
 % Bars 211 to 215
 	g2\f-^~
 	g8 r r4^\mutaine \transposition e
 	R2 \section \mark \default
-	R2*10
+	R2*5
 	
 % Bars 216 to 220
 	
+	
+	
+	R2
+	\tempoXoffset #-2 R2*4
 % Bars 221 to 225
 	
 	
@@ -255,7 +254,7 @@ musicCornoIVMvtII = \relative c {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no
 % Bars 226 to 230
-	c,2\fp~
+	c,2\fp~^\ine
 	c \section
 	\time 2/8 f4\pp \section
 	\time 4/8 f8-.\>[ f-. f-. f-.]\!
@@ -282,7 +281,7 @@ musicCornoIVMvtII = \relative c {
 % Bars 256 to 260
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*5
 	
 % Bars 261 to 265
@@ -298,7 +297,7 @@ musicCornoIVMvtII = \relative c {
 	
 	
 % Bars 271 to 273
-	<< e,2\p\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -0.5) e,2\p\> {s8 s s s}>>
 	e4\pp e
 	e2\fermata \fine
 }

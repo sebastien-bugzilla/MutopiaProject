@@ -352,7 +352,7 @@ musicCornoIMvtIII = \relative c {
 	R
 % Bars 311 to 315
 	\partCombineApart f->\fp
-	d->\fp
+	d->^\fpdim
 	c->\fp~
 	c8 r r4 \partCombineAutomatic
 	ees2\fp

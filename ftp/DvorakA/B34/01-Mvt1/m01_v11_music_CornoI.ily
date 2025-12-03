@@ -25,7 +25,7 @@ musicCornoIMvtI = \relative c {
 	c
 	des_\crescmarkup
 	bes\fz
-	bes4.(_\dimmarkup a)\p
+	bes4.(-\offset X-offset #-1 _\dimmarkup a)\p
 % Bars 16 to 20
 	d!-^\ff r4 r8
 	des4.-^ r4 r8
@@ -101,8 +101,8 @@ musicCornoIMvtI = \relative c {
 	c2.~
 	c4 r8 r4 r8
 % Bars 81 to 85
-	r4 r8 << des4.\p\<(~ {s8 s s\!}>>
-	des2.~
+	r4 r8 << des4.\p\<(~ {s8 s s}>>
+	des2.~\!
 	des4.\> c4 ees8)\pp
 	des4.->\p^\soli c->
 	bes-> aes->
@@ -113,7 +113,7 @@ musicCornoIMvtI = \relative c {
 	R2.*2
 	
 % Bars 91 to 95
-	r4 r8 des8-.\p des-. des-.
+	r4 r8 des8-._\ppocoapococresc des-. des-.
 	r4 r8 des-. des-. des-.
 	r4 r8 c-. c-. c-.
 	r des-. des-. r des-.\< des-.
@@ -134,7 +134,7 @@ musicCornoIMvtI = \relative c {
 	c
 	c~_\fppocoapococresc
 	c
-	<< c~ {s8\< s s  s s s\!}>>
+	<< c~ {\hairpinShorten #'(0 . -1) s8\< s s  s s s\!}>>
 	c2.
 % Bars 111 to 115
 	<< c->~ {s4. s\<}>>
@@ -156,23 +156,23 @@ musicCornoIMvtI = \relative c {
 	dis4.->\f cis->
 	b\< ais4( a8)\!
 % Bars 131 to 135
-	a4(\brack\fp gis8 g4.)~
-	g d4(\> e8)\!
+	a4(\brack\fp gis8 g4.~
+	g) d4(\> e8)\!
 	fis2.\fp~
 	<< fis {s8\> s s  s s s\!}>>
-	b,4\brack\pp r8 r4 r8
+	b,!4\brack\pp r8 r4 r8
 % Bars 136 to 140
 	R2.
 	cis'4-! r8 r4 r8
 	R2.
-	r4 r8 b4.\fp\>
+	r4 r8 b4.~\fp\>
 	<< b2. {s8 s s\! s4.}>>
 % Bars 141 to 145
 	fis2.\p~
 	fis4.\> << g {s8 s s\!}>>
 	fis4\pp r8 r4 r8
-	R2.
-	R2.*2
+	R2.*3
+	
 % Bars 146 to 150
 	
 	e'4.->\f\< d->
@@ -192,8 +192,8 @@ musicCornoIMvtI = \relative c {
 	R2.
 	\time 3/4 ees8->\f r d-> r c-> r
 % Bars 161 to 165
-	\time 6/8 c-> d-> ees-> d-> c-> bes->
-	\time 3/4 ees-> r d-> r c-> r
+	\textMark "Vi-" \time 6/8 c-> d-> ees-> d-> c-> bes->
+	\time 3/4 ees-> r d-> r c-> r \textEndMark "-de"
 	\time 6/8 ees-> d-> c-> f-> ees-> d->
 	c4.\ff r4 r8
 	cis4.-^\ff r4 r8
@@ -204,7 +204,7 @@ musicCornoIMvtI = \relative c {
 	R2.*2
 	
 % Bars 171 to 175
-	<< ees2.\fz\>~ {s8\> s s  s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1.5) ees2.\fz\>~ {s8\> s s  s s s\!}>>
 	ees2._\dimmarkup
 	r4 r8 r4 e!8-.\p
 	r4 r8 r4 e8-.
@@ -216,7 +216,7 @@ musicCornoIMvtI = \relative c {
 	R2.*2
 	
 % Bars 181 to 185
-	<< d!2.\fz~ {s4. s\>}>>
+	<< d!2.\fz~ {s4.\> s}>>
 	<< d2. {s8 s s  s s s\!}>>
 	r4 r8 r4 fis8-.\p
 	r4 r8 r4 fis8-.
@@ -242,14 +242,14 @@ musicCornoIMvtI = \relative c {
 % Bars 201 to 205
 	R2.
 	r8 e-.\p b-. dis-. r r
-	e-.^\solo f!-. d!-. << d4.~ {s8\< s s\!}>>
+	e-.^\solo f!-. d!-. << d4.~ {\hairpinShorten #'(0 . -1.5) s8\< s s\!}>>
 	<< d2. {s8\> s s  s s s\!}>>
 	c8\brack\pp r r r4 r8
 % Bars 206 to 210
 	R2.*3
 	
 	
-	f8-^^\solo\brack\p ges-^ ees-^~ << ees4.~ {s8\< s s\!}>>
+	f8-^^\solo\brack\p ges-^ ees-^~ << ees4.~ {\hairpinShorten #'(0 . -1.5) s8\< s s\!}>>
 	<< ees2. {s8\> s s  s s s\!}>>
 % Bars 211 to 215
 	des2.~_\ppcrescpocoapoco
@@ -271,27 +271,27 @@ musicCornoIMvtI = \relative c {
 	ees8 r r ees r r
 % Bars 226 to 230
 	\time 3/4 ees-. r ees-. r ees-. r
-	\time 6/8 << c2.~ {s8\> s s  s s s\!}>>
+	\time 6/8 << c2.~ {\hairpinShorten #'(0 . -1.5) s8\> s s  s s s\!}>>
 	c4 r8 r4 r8
 	\time 3/8 R4.
 	\time 6/8 R2.*3
 % Bars 231 to 235
 	
 	
-	bes2._\fpsempredim~
+	bes2.\fp^\sempredim~
 	bes
 	bes\brack\p~
 % Bars 236 to 240
 	bes
 	bes\brack\pp~
 	bes
-	c->_\fppocoapococrescendo
+	c->\fp^\pocoapococrescendo
 	bes\fp
 % Bars 241 to 245
 	bes\fp
 	bes\fp
 	b!\fp
-	<< c\fp\< {s8 s s  s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) c\fp\< {s8 s s  s s s\!}>>
 	cis2.~\f\<
 % Bars 246 to 250
 	<< cis {s8 s s  s s s\!}>>
@@ -325,7 +325,7 @@ musicCornoIMvtI = \relative c {
 	d4.~ d8. d16-. d-. d-.
 	d4.-! d-!
 	g,4.-^\brack\mp^\marcato g4-^~ g16. g32-.
-	d'4.->~_\pocoapococresc d4 g,16-. a-.
+	d'4.->~_\pocoapoco_cresc d4 g,16-. a-.
 % Bars 276 to 280
 	b8-.\< c-. d-. e-.[ fis-. r16 g]\!
 	g2.\fz
@@ -351,7 +351,7 @@ musicCornoIMvtI = \relative c {
 	d4.-^ c-^
 	c-^ f4-^~ f16. ees32-.
 % Bars 296 to 300
-	ees4->_\pocoapococrescendo des-> c->
+	ees4->^\pocoapococrescendo des-> c->
 	c2.\fz
 	des\fz
 	d!\fz

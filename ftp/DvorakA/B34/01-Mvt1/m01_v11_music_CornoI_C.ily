@@ -113,7 +113,7 @@ musicCornoIMvtI = \relative c {
 	R2.*2
 	
 % Bars 91 to 95
-	r4 r8 des8-.\p des-. des-.
+	r4 r8 des8-._\ppocoapococresc des-. des-.
 	r4 r8 des-. des-. des-.
 	r4 r8 c-. c-. c-.
 	r des-. des-. r des-.\< des-.
@@ -161,7 +161,7 @@ musicCornoIMvtI = \relative c {
 	R2.
 	\partCombineApart cis'4-! r8 r4 r8
 	\once \partCombineAutomatic R2.
-	r4 r8 b4.\fp\>
+	r4 r8 b4.~\fp\>
 	<< b2. {s8 s s\! s4.}>>
 % Bars 141 to 145
 	fis2.\p~

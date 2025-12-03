@@ -43,7 +43,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	\ni \mmrPos #-4 R2
+	\ni \mmrPos #-4 \tweak extra-offset #'(1 . 0) R2
 	\mmrPos #-4 R \no
 	R2*2
 	
@@ -127,7 +127,7 @@ musicCornoIMvtIII = \relative c {
 	bes2\fp~
 	bes~
 	bes~
-	bes_\pocoapococresc
+	bes-\offset X-offset -2 _\pocoa_pococresc
 	r8. bes16\brack\f bes4~
 % Bars 111 to 115
 	bes2~
@@ -279,7 +279,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 246 to 250
 	r c-.
 	r c-.
-	r d-._\ppococresc
+	r d-.-\offset X-offset -1 _\ppococresc
 	r e-.
 	r\< e-.
 % Bars 251 to 255
@@ -352,7 +352,7 @@ musicCornoIMvtIII = \relative c {
 	R
 % Bars 311 to 315
 	f->\fp
-	d->\fp
+	d->-\offset X-offset -1.5 _\fpdim
 	c->\fp~
 	c8 r r4
 	ees2\fp
@@ -481,7 +481,7 @@ musicCornoIMvtIII = \relative c {
 	<< d2->(\< {s8 s s s\!}>>
 	e8-.) r r4
 	r c-!\p
-	c-! c-!
+	\startMeasureCount c-! c-!
 	c-! c-!
 % Bars 426 to 430
 	c-!_\brackM\semprep c-!
@@ -491,31 +491,29 @@ musicCornoIMvtIII = \relative c {
 	c-! c-!
 % Bars 431 to 435
 	c-! c-!
-	c-! c-!
+	c-! c-! \stopMeasureCount 
 	c-! a-!
 	b-! r
-	R2*8
+	R2*21
 % Bars 436 to 440
 	
 % Bars 441 to 445
 	
-	
-	R2*13
 % Bars 446 to 450
 	
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\ni \mmrPos #6 R2
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
 % Bars 461 to 465
 	r4 r8. c16
 	c2\fz~
 	c~
-	c~\<_\pocoapococresc
+	c~\<^\pocoapococresc
 	c~
 % Bars 466 to 470
 	<< c {s4 s\!}>>
@@ -537,7 +535,7 @@ musicCornoIMvtIII = \relative c {
 	b4-> r
 	r r8. fis16 \mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 dis'2.\ff~
+		\timeSignature 3/4 \tempoXoffset #4 dis'2.\ff~
 		dis
 % Bars 486 to 490
 		cis\fz~
@@ -547,13 +545,13 @@ musicCornoIMvtIII = \relative c {
 		cis\fz->~
 % Bars 491 to 495
 		cis
-		dis4-> dis-> dis->
+		\startMeasureCount dis4-> dis-> dis->
 		dis-> dis-> dis->
 		dis-> dis-> dis->
 		dis-> dis-> dis->
 % Bars 496 to 500
 		dis-> dis-> dis->
-		dis-> dis-> dis->
+		dis-> dis-> dis-> \stopMeasureCount 
 		cis-> cis-> cis->
 		dis-> dis-> dis->
 		e-> e-> e->
@@ -638,8 +636,8 @@ musicCornoIMvtIII = \relative c {
 	des
 % Bars 586 to 590
 	<< ees) {s8 s s s\!}>>
-	<< f2\fz\>~ {s8 s s s\!}>>
-	f2~
+	<< f2\fz\>~ {s8 s s s}>>
+	f2~\!
 	f4 r
 	R2
 % Bars 591 to 595
@@ -664,7 +662,7 @@ musicCornoIMvtIII = \relative c {
 	r\< dis->
 	r dis->
 	r fis->\!
-	<< fis2\f\<~ {s8 s s s\!}>>
+	<< fis2\f\<~ {s8 s s s}>>
 	fis2~\>
 % Bars 611 to 615
 	<< fis~ {s4 s\!}>>
@@ -673,11 +671,11 @@ musicCornoIMvtIII = \relative c {
 	
 	
 % Bars 616 to 620
-	<< fis2\fz\>~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -0.5) fis2-\offset X-offset #-1 \fz\>~ {s8 s s s\!}>>
 	fis2~
 	fis4 eis->
 	gis-> cis,->
-	<< fis2->\fz\>_\pocoapococrescendo~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -0.5) fis2->-\offset X-offset #-1 \fz\>^\pocoapococrescendo~ {s8 s s s\!}>>
 % Bars 621 to 625
 	fis2~
 	fis4 eis->

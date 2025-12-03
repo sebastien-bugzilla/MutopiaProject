@@ -49,7 +49,7 @@ musicCornoIIMvtI = \relative c {
 	bes4.->\ff~ bes8 aes4->
 	bes->\< c8->~ c bes-> aes->\!
 	bes4.->\ff~ bes8 aes4->
-	bes4-> c8->~\< c bes-> a->\!
+	bes4-> c8->~\< c bes-> aes->\!
 % Bars 36 to 40
 	f4.->\ff f->
 	ees-> ees-> 
@@ -113,7 +113,7 @@ musicCornoIIMvtI = \relative c {
 	R2.*2
 	
 % Bars 91 to 95
-	r4 r8 f8-.\p f-. f-.
+	r4 r8 f8-. f-. f-.
 	r4 r8 ges-. ges-. ges-.
 	r4 r8 ees-. ees-. ees-.
 	r f-. f-. r bes-.\< bes-.
