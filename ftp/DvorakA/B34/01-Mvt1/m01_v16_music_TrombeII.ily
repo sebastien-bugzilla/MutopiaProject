@@ -9,7 +9,7 @@ musicTrombeIIMvtI = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #33 R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -17,7 +17,7 @@ musicTrombeIIMvtI = \relative c {
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 % Bars 16 to 20
 	d'4.-^\ff r4 r8
 	des4.-^ r4 r8
@@ -31,8 +31,8 @@ musicTrombeIIMvtI = \relative c {
 	e!4.\fz r4 r8
 	e4.\fz r4 r8
 % Bars 26 to 30
-	R2.*6
-	
+	R2.
+	\mmrLength #12 \tempoXoffset #-1.5 R2.*5
 	
 	
 	
@@ -51,9 +51,9 @@ musicTrombeIIMvtI = \relative c {
 % Bars 41 to 45
 	\time 6/8 c->\< des-> ges-> f-> ees-> ees->\!
 	\time 3/8 des->\< ees-> des->\! \mark \default
-	\time 6/8 c4->\fz( b!8) r4 r8
-	c4->\fz( b8) r4 r8
-	des4->\fz( c8) r4 r8
+	\time 6/8 c4\fz( b!8) r4 r8
+	c4\fz( b8) r4 r8
+	des4\fz( c8) r4 r8
 % Bars 46 to 50
 	des4.->\fz r4 r8
 	R2.*3
@@ -70,7 +70,7 @@ musicTrombeIIMvtI = \relative c {
 	d4.->\> << ees-> {s8 s s\!}>>
 	bes2.->
 	bes4\brack\fz( ees16)[ r32 d-.] c4( bes8)
-	<< bes2. {s4. s8\< s s\!}>>
+	<< bes2. {s4.\< s8 s s\!}>>
 	bes4(\fp ees16)[ r32 d-.] c4( bes8)
 % Bars 61 to 65
 	c4.\fz~ c4 r8
@@ -88,13 +88,13 @@ musicTrombeIIMvtI = \relative c {
 	
 % Bars 76 to 80
 	\mark \default
-	R2.*17
+	\mmrnDown R2.*14
 % Bars 81 to 85
 	
 % Bars 86 to 90
 	
 % Bars 91 to 95
-	
+	\mmrnDown R2.*3
 	
 	
 	\ni \mmrPos #4 R2.
@@ -145,8 +145,8 @@ musicTrombeIIMvtI = \relative c {
 	\mmrPos #-4 R \no
 	\time 3/4 ees8-^\f r d-^ r ees-^ r
 % Bars 161 to 165
-	\time 6/8 ees-> d-> ees-> f-> f-> f->
-	\time 3/4 ees-^ r d-^ r ees-^ r 
+	\textMark "Vi-" \time 6/8 ees-> d-> ees-> f-> f-> f->
+	\time 3/4 ees-^ r d-^ r ees-^ r \textEndMark "-de"
 	\time 6/8 c-> d-> ees-> f-> g-> f->
 	e!4._\fbrackf r4 r8
 	e4.\ff r4 r8
@@ -236,7 +236,7 @@ musicTrombeIIMvtI = \relative c {
 	\mmrPos #4 R \no
 	bes4.-^\mf bes4-^~ bes16. bes32-.
 	f'4.-^~ f4 bes,16-. c-.
-	d8-^-.\< ees-^-. f-^-. g-^-.[ a-^-. r16 bes-^-.]\!
+	d8-^-.\< ees-^-. f-^-. g-^-.[ a-^-. r16 bes-.]\!
 % Bars 281 to 285
 	bes2.-^\fz
 	<< bes {s8\< s s  s s s\!}>>
@@ -251,12 +251,12 @@ musicTrombeIIMvtI = \relative c {
 	\marcatoUpperSlur e2.-^(
 % Bars 291 to 295
 	f8-.) r r r4 r8
-	\marcatoUpperSlur f2.(-^
+	\marcatoUpperSlur \shape #'((-0.3 . 1)(0 . 0.8)(0 . 0.5)(0 . 0)) Slur f2.(-^
 	g8-.) r r r4 r8
 	g2.\fz(
 	\marcatoUpperSlur aes8)-^ r r r4 r8
 % Bars 296 to 300
-	aes2.\fz
+	aes2.\fz^\pocoapococresc
 	ees4->\mf f-> ges->
 	e!-> f-> g!->
 	f-> g-> aes->

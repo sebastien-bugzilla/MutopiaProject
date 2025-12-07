@@ -9,7 +9,7 @@ musicTrombeIMvtIII = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R2*12
+	\mmrLength #28 R2*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -45,10 +45,10 @@ musicTrombeIMvtIII = \relative c {
 % Bars 56 to 60
 	
 % Bars 61 to 65
-	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no \mark \default
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	ees4->\ff f->
 % Bars 66 to 70
 	g8-> r r4
@@ -87,7 +87,7 @@ musicTrombeIMvtIII = \relative c {
 	
 	
 	
-	bes4-^\f r
+	\startMeasureCount bes4-^\f r
 	bes-^ r
 % Bars 101 to 105
 	bes-^ r
@@ -99,12 +99,12 @@ musicTrombeIMvtIII = \relative c {
 	bes-^\f r
 	bes-^ r
 	bes-^ r
-	bes-^ r
+	bes-^_\pocoapococresc r
 	bes-^ r
 % Bars 111 to 115
 	bes-^ r
 	bes-^ r
-	bes-^ r
+	bes-^ r \stopMeasureCount
 	r bes-^
 	r bes-^
 % Bars 116 to 120
@@ -324,14 +324,14 @@ musicTrombeIMvtIII = \relative c {
 	
 	
 	
-	ees4-^\brack\ff r
+	\startMeasureCount ees4-^\brack\ff r
 	ees-^ r
 % Bars 356 to 360
 	ees-^ r
 	ees-^ r
 	ees-^ r
 	ees-^ r
-	ees-^ r
+	ees-^ r \stopMeasureCount
 % Bars 361 to 365
 	R2
 	ees4\f r
@@ -434,11 +434,11 @@ musicTrombeIMvtIII = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R \no \mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 fis2.-^\ff~
+		\timeSignature 3/4 \tempoXoffset #4 fis2.-^\ff~
 		fis
 	}
 % Bars 486 to 490
-	\unsetTimeSignature r4 r8. g16-.
+	\unsetTimeSignature r4 r8. g!16-.
 	e4..-> cis16-.
 	fis2-^~
 	fis
@@ -623,7 +623,7 @@ musicTrombeIMvtIII = \relative c {
 	b4-> bes->
 	a-> aes->)
 % Bars 691 to 695
-	aes2->\f
+	\startMeasureCount aes2->\f
 	aes->
 	aes->
 	aes->
@@ -631,7 +631,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 696 to 700
 	aes->
 	aes->
-	aes->
+	aes-> \stopMeasureCount
 	a!->
 	bes->_\fzbrackp~
 % Bars 701 to 705

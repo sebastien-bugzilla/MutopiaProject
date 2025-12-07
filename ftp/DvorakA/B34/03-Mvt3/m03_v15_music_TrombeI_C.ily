@@ -99,7 +99,7 @@ musicTrombeIMvtIII = \relative c {
 	bes-^\f r
 	bes-^ r
 	bes-^ r
-	bes-^ r
+	bes-^_\pocoapococresc r
 	bes-^ r
 % Bars 111 to 115
 	bes-^ r

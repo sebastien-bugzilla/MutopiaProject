@@ -228,7 +228,7 @@ musicTrombeIIMvtI = \relative c {
 	
 	bes4.-^\mf bes4-^~ bes16. bes32-.
 	f'4.-^~ f4 bes,16-. c-.
-	d8-^-.\< ees-^-. f-^-. g-^-.[ a-^-. r16 bes-^-.]\!
+	d8-^-.\< ees-^-. f-^-. g-^-.[ a-^-. r16 bes-.]\!
 % Bars 281 to 285
 	bes2.-^\fz
 	<< bes {s8\< s s  s s s\!}>>

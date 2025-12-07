@@ -9,7 +9,7 @@ musicTrombeIIMvtIII = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R2*12
+	\mmrLength #30 R2*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -87,7 +87,7 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	
-	bes,4-^\f r
+	\startMeasureCount bes,4-^\f r
 	bes-^ r
 % Bars 101 to 105
 	bes-^ r
@@ -104,7 +104,7 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 111 to 115
 	bes-^ r
 	bes-^ r
-	bes-^ r
+	bes-^ r \stopMeasureCount
 	r bes-^
 	r bes-^
 % Bars 116 to 120
@@ -152,12 +152,12 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 151 to 155
 	f4\fz r
 	R2
-	f4\fz r
+	f4-\offset X-offset -2.5 \fz r
 	r fis-^\fz
 	r fis-^\fz
 % Bars 156 to 160
 	r fis-^\fz
-	r fis-^\fz
+	r fis-^-\offset X-offset -1 \fz
 	r \tuplet 3/2 4 {a8-^\ff^\sole c-^ ees-^}
 	ges2\fz
 	R2
@@ -324,14 +324,14 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	
-	ees4-^\brack\ff r
+	\startMeasureCount ees4-^\brack\ff r
 	ees-^ r
 % Bars 356 to 360
 	ees-^ r
 	ees-^ r
 	ees-^ r
 	ees-^ r
-	ees-^ r
+	ees-^ r \stopMeasureCount
 % Bars 361 to 365
 	R2
 	ees4\f r
@@ -432,26 +432,26 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 481 to 485
 	\mmrPos #4 R
 	\mmrPos #4 R
-	\mmrPos #4 R \no \mark \default
+	\mmrPos #4 R \no \tempoXoffset #4 \mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 dis2.-^\ff~
+		\timeSignature 3/4 dis2.^^\ff~
 		dis
 	}
 % Bars 486 to 490
-	\unsetTimeSignature r4 r8. g16-.
+	\unsetTimeSignature r4 r8. g!16-.
 	e4..-> cis16-.
 	dis2-^~
 	dis
 	r4 r8. g16-.
 % Bars 491 to 495
 	e4..-> cis16-.
-	\tuplet 3/2 2 { dis4-> dis-> dis->
+	\tuplet 3/2 2 { \startMeasureCount dis4-> dis-> dis->
 	dis-> dis-> dis->
 	dis-> dis-> dis->
 	dis-> dis-> dis->
 % Bars 496 to 500
 	dis-> dis-> dis->
-	dis-> dis-> dis->}
+	dis-> dis-> dis->} \stopMeasureCount
 	cis2->
 	dis->
 	\tuplet 3/2 2 {e4-> e-> e->
@@ -566,7 +566,7 @@ musicTrombeIIMvtIII = \relative c {
 	R2
 	d8\fz r r4
 	R2
-	ees8-.\fz r r4
+	ees8-.-\offset X-offset -1 \fz r r4
 % Bars 641 to 645
 	R2
 	e!8\fz r r4
@@ -623,7 +623,7 @@ musicTrombeIIMvtIII = \relative c {
 	b4-> bes->
 	a-> aes->)
 % Bars 691 to 695
-	aes,2->\f
+	\startMeasureCount aes,2->\f
 	aes->
 	aes->
 	aes->
@@ -631,7 +631,7 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 696 to 700
 	aes->
 	aes->
-	aes->
+	aes-> \stopMeasureCount
 	a!->
 	bes->_\fzbrackp~
 % Bars 701 to 705

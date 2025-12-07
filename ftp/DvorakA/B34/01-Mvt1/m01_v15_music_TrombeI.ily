@@ -9,7 +9,7 @@ musicTrombeIMvtI = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #33 R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -17,7 +17,7 @@ musicTrombeIMvtI = \relative c {
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 % Bars 16 to 20
 	bes''4.-^\ff r4 r8
 	aes4.-^ r4 r8
@@ -31,8 +31,8 @@ musicTrombeIMvtI = \relative c {
 	c4.\fz r4 r8
 	bes4.\fz r4 r8
 % Bars 26 to 30
-	R2.*6
-	
+	R2.
+	\mmrLength #13 \tempoXoffset #-1.5  R2.*5
 	
 	
 	
@@ -70,10 +70,10 @@ musicTrombeIMvtI = \relative c {
 	a4.->\> << g-> {s8 s s\!}>>
 	f2.->
 	g\brack\fz
-	f4.( << fis) {s8\< s s\!}>>
+	f4.( << fis) {\hairpinShorten #'(0 . -2) s8\< s s\!}>>
 	g2.->
 % Bars 61 to 65
-	f4.\fz~ f4 r8
+	f!4.\fz~ f4 r8
 	f4.\fz~ f4 r8
 	e!4.\fz~ e4 r8
 	f4.\brack\fz~ f8 r r
@@ -113,7 +113,7 @@ musicTrombeIMvtI = \relative c {
 	e-.\fz r r r4 r8
 % Bars 106 to 110
 	e-.\fz r r r4 r8
-	ees-._\fzpocoapococresc r r r4 r8
+	ees-._\fzpocoa_pococresc r r r4 r8
 	ees-. r r r4 r8
 	ges-. r r r4 r8
 	a-. r r r4 r8
@@ -145,8 +145,8 @@ musicTrombeIMvtI = \relative c {
 	\mmrPos #-4 R \no
 	\time 3/4 f8-^\f r f-^ r f-^ r
 % Bars 161 to 165
-	\time 6/8 c'-> bes-> a-> bes-> f-> f->
-	\time 3/4 f-^ r f-^ r f-^ r 
+	\time 6/8 \textMark "Vi-" c'-> bes-> a-> bes-> f-> f->
+	\time 3/4 f-^ r f-^ r f-^ r \textEndMark "-de" 
 	\time 6/8 f-> f-> f-> bes-> bes-> bes->
 	bes4._\fbrackf r4 r8
 	bes4.\ff r4 r8
@@ -236,7 +236,7 @@ musicTrombeIMvtI = \relative c {
 	\mmrPos #4 R \no
 	bes,4.-^\mf bes4-^~ bes16. bes32-.
 	f'4.-^~ f4 bes,16-. c-.
-	d8-^-.\< ees-^-. f-^-. g-^-.[ a-^-. r16 bes-^-.]\!
+	d8-^-.\< ees-^-. f-^-. g-^-.[ a-^-. r16 bes-.]\!
 % Bars 281 to 285
 	bes2.-^\fz
 	<< d {s8\< s s  s s s\!}>>
@@ -251,12 +251,12 @@ musicTrombeIMvtI = \relative c {
 	\marcatoUpperSlur e2.-^(
 % Bars 291 to 295
 	f8-.) r r r4 r8
-	\marcatoUpperSlur f2.(-^
+	\marcatoUpperSlur \shape #'((-0.3 . 1)(0 . 0.8)(0 . 0.5)(0 . 0)) Slur f2.(-^
 	g8-.) r r r4 r8
 	g2.\fz(
 	\marcatoUpperSlur aes8)-^ r r r4 r8
 % Bars 296 to 300
-	aes2.\fz
+	aes2.\fz^\pocoapococrescendo
 	ees4->\mf f-> ges->
 	e!-> f-> g!->
 	f-> g-> aes->

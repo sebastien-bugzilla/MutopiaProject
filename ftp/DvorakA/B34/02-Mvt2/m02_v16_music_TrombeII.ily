@@ -9,17 +9,25 @@ musicTrombeIIMvtII = \relative c {
 	\key a \minor
 	\transposition e
 % Bars 1 to 5
-	R2*29
+	\mmrLength #27 \mmrnDown R2*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	\mmrLength #10 R2
+	R2*7
+	
 % Bars 16 to 20
 	
 % Bars 21 to 25
+	R2
+	R2*4
+	
+	
 	
 % Bars 26 to 30
-	
+	\mmrLength #11 \tempoXoffset #-1.5 R2*4
 	
 	
 	
@@ -40,31 +48,49 @@ musicTrombeIIMvtII = \relative c {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no \mark \default
 % Bars 46 to 50
-	R2*23
+	R2*5
 % Bars 51 to 55
+	\mmrnDown R2*3
 	
+	
+	R2
+	R2*3
 % Bars 56 to 60
 	
+	
+	\mmrLength #10 R2
+	\mmrLength #16 R2*10
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
 	
 	\mark \default
-	R2*28
+	R2*11
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
+	
+	
+	
+	\mmrLength #21 \mmrnDown R2*4
 % Bars 81 to 85
+	
+	
+	
+	\mmrLength #10 R2*5
 	
 % Bars 86 to 90
 	
+	
+	
+	\mmrLength #13 \mmrnDown R2*8
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
-	R2\fermata \section
+	\once \ni R2\fermata \section
 	R2*22
 % Bars 101 to 105
 	
@@ -82,7 +108,7 @@ musicTrombeIIMvtII = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R
 	\mmrPos #4 R \no
-	g8-.\f r r4
+	g8-.-\offset X-offset -2 \f^\inf r r4
 	R2 \mark \default
 % Bars 126 to 130
 	c8.\fz r16 r4
@@ -98,14 +124,14 @@ musicTrombeIIMvtII = \relative c {
 % Bars 151 to 155
 	
 	
-	r4 r8 \bar "!" r
+	r4 r8 \textMark "Vi-" \bar "!" r
 	R2*5
 	
 % Bars 156 to 160
 	
 	
 	
-	r4 r8 \bar "!" r \mark \default
+	r4 r8 \textEndMark "-de" \bar "!" r \mark \default
 	R2*6
 % Bars 161 to 165
 	
@@ -114,7 +140,7 @@ musicTrombeIIMvtII = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R
 	\mmrPos #4 R \no
-	aes8\ff r aes8->^\marc aes16.-> bes32-.->
+	aes8\ff r aes8->^\marc aes16.-> bes32->
 % Bars 171 to 175
 	aes8 r aes r
 	aes r aes aes16. bes32
@@ -132,19 +158,21 @@ musicTrombeIIMvtII = \relative c {
 	f f16. ges32 f8 r
 	r16. ges32[ f16] r r16. ges32[ f16] r
 	r16. ges32[ f16] r r4
-	R2*12
+	R2*8
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
+	
+	\mmrLength #13 \tempoXoffset #-1  R2*4
 % Bars 196 to 200
 	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no
 	g,2_\ffbrackp~
-	g8 r r4^\mutaine \transposition e
+	g8 r r4_\mutaine \transposition e
 % Bars 201 to 205
-	R2*13
+	\mmrLength #12 R2*13
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -164,7 +192,7 @@ musicTrombeIIMvtII = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R \section
 	\time 2/8 \mmrPos #4 R4 \no \section
-	\time 4/8 f'2\fp~
+	\time 4/8 f'2\fp~^\ine
 	f8 r r4
 % Bars 231 to 235
 	R2*12
@@ -184,7 +212,7 @@ musicTrombeIIMvtII = \relative c {
 % Bars 256 to 260
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*5
 	
 % Bars 261 to 265
@@ -197,5 +225,5 @@ musicTrombeIIMvtII = \relative c {
 % Bars 271 to 273
 	
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

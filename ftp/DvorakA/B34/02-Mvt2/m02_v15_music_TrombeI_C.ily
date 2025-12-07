@@ -106,7 +106,7 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	\aIIXoffset #-3 \dynEO #'(-3.8 . 2.5) aes,8\ff r aes8->^\marc aes16.-> bes32-.->
+	\aIIXoffset #-3 \dynEO #'(-3.8 . 2.5) aes,8\ff r aes8->^\marc aes16.-> bes32->
 % Bars 171 to 175
 	aes8 r aes r
 	c r c c16. des32

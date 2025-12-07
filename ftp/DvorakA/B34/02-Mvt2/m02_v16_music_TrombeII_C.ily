@@ -106,7 +106,7 @@ musicTrombeIIMvtII = \relative c {
 	
 	
 	
-	aes8\ff r aes8->^\marc aes16.-> bes32-.->
+	aes8\ff r aes8->^\marc aes16.-> bes32->
 % Bars 171 to 175
 	aes8 r aes r
 	aes r aes aes16. bes32

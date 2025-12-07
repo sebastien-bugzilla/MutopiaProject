@@ -159,6 +159,13 @@ mfcresc = \markup {\hspace #-0.79 \dynamic mf \italic cresc. }
 % dynamics fz
 %--------------------
 fzpocoapococresc = \markup {\hspace #-0.55 \dynamic fz \italic "poco a poco cresc."}
+fzpocoa_pococresc = \markup {
+	\column {
+		\lower #1.5 
+		\line { \hspace #-0.55 \dynamic fz \italic "poco a" }
+		\line { \italic "poco cresc."}
+	}
+}
 fzmarkup = \markup {\hspace #-0.55 \dynamic fz}
 fffz = \markup {\hspace #-3.3 \concat { \dynamic ff \hspace #0.4 \dynamic fz }}
 fzsempredim = \markup {\dynamic fz \italic "sempre dim."}
