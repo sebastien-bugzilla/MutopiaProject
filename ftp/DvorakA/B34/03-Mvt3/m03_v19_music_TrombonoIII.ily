@@ -9,7 +9,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2*60
+	\mmrLength #30 R2*60
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -287,9 +287,9 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
+	\mmrPos #-6 R
 % Bars 321 to 325
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-6 R \no \mark \default
 	ees4->\ff ees->
 	ees-> r
 	ees-> ees->
@@ -413,11 +413,11 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 461 to 465
 	f4-^\f r
 	R2*5
@@ -441,7 +441,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R \no \mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 gis2.-^\ff~
+		\timeSignature 3/4 \tempoXoffset #7 gis2.-^\ff~
 		gis
 	}
 % Bars 486 to 490
@@ -452,7 +452,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	a4 r
 % Bars 491 to 495
 	R2
-	e4-> e->
+	\startMeasureCount e4-> e->
 	e-> e->
 	e-> e->
 	e-> e->
@@ -465,7 +465,7 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 501 to 505
 	e-> e->
 	e-> e->
-	e-> e->
+	e-> e-> \stopMeasureCount
 	e-> r
 	R2*16
 % Bars 506 to 510
@@ -606,10 +606,10 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	\ni \mmrPos #-6 R2
 % Bars 681 to 685
-	\mmrPos #-8 R \no
+	\mmrPos #-8.5 R \no
 	R2
 	\ni \mmrPos #-6 R2
-	\mmrPos #-8 R \no
+	\mmrPos #-8.5 R \no
 	R
 % Bars 686 to 690
 	ees2-^\f
@@ -643,7 +643,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	ees4\f r
 % Bars 711 to 715
 	R2
-	ees4-^\f r
+	\startMeasureCount ees4-^\f r
 	ees-^ r
 	ees-^ r
 	ees-^ r
@@ -651,7 +651,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	ees-^ r
 	ees-^ r
 	ees-^ r
-	ees-^ r
+	ees-^ r \stopMeasureCount
 	ees2->\fz(
 % Bars 721 to 725
 	des)

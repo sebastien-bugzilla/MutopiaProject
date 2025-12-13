@@ -33,10 +33,10 @@ musicTubaMvtIII = \relative c {
 % Bars 56 to 60
 	
 % Bars 61 to 65
-	\ni \mmrPos #-4 R2
-	\mmrPos #-6 R
-	\mmrPos #-7 R
-	\mmrPos #-6 R \no \mark \default
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	aes4->\ff aes->
 % Bars 66 to 70
 	aes8-> r r4
@@ -75,16 +75,16 @@ musicTubaMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
 % Bars 101 to 105
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	ees,4\mf r
 	ees r
 	ees r
 % Bars 106 to 110
-	ees4-^\f r
+	ees4-^-\offset X-offset -2.5 \f r
 	R2
 	ees4-^_\pocoapococresc r
 	R2
@@ -128,25 +128,17 @@ musicTubaMvtIII = \relative c {
 % Bars 141 to 145
 	
 	c!4-.\fz r
-	R2*3
+	R2*17
 	
 	
 % Bars 146 to 150
-	R2
-	R2
-	R2
-	R2
-	R
+	
 % Bars 151 to 155
-	R2
-	R
-	R2
-	R2*4
 	
 % Bars 156 to 160
 	
 	
-	R2*2
+	
 	
 	\ni \mmrPos #-4 R2 \no
 % Bars 161 to 165
@@ -165,12 +157,12 @@ musicTubaMvtIII = \relative c {
 	r4 f-^\f
 	ees2~\ff
 	ees8 r r4
-	R2
-	R2*6
+	R2*8
+	
 % Bars 181 to 185
 	
 % Bars 186 to 190
-	R2
+	
 	bes'4-^\fz r
 	R2*3
 	
@@ -220,7 +212,7 @@ musicTubaMvtIII = \relative c {
 	
 	\ni \mmrPos #4 R2
 % Bars 256 to 260
-	\mmrPos #-4 R \no
+	\mmrPos #4 R \no
 	R2*9
 % Bars 261 to 265
 	
@@ -259,19 +251,13 @@ musicTubaMvtIII = \relative c {
 	bes-^ r
 	bes-^ r
 	bes-^ r
-	R2*6
+	R2*24
 % Bars 296 to 300
 	
 % Bars 301 to 305
-	R2*3
-	
-	
-	R2*3
 	
 % Bars 306 to 310
 	
-	R2
-	R2*11
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -301,16 +287,16 @@ musicTubaMvtIII = \relative c {
 % Bars 336 to 340
 	aes,4-^ bes4-^
 	ees4.-^ r8
-	R2*8
+	R2*9
 	
 	
 % Bars 341 to 345
 	
 % Bars 346 to 350
+	
+	\ni \mmrPos #-6 R2 \no
 	R2
-	\ni \mmrPos #-4 R2 \no
-	R2
-	\ni \mmrPos #-4 R2 \no
+	\ni \mmrPos #-6 R2 \no
 	R2*4
 % Bars 351 to 355
 	
@@ -332,21 +318,17 @@ musicTubaMvtIII = \relative c {
 	ges r
 % Bars 366 to 370
 	b-^ r
-	R2*14
+	R2*22
 % Bars 371 to 375
 	
 % Bars 376 to 380
 	
 % Bars 381 to 385
-	R2
-	R2
-	R
-	R2
-	R
+	
 % Bars 386 to 390
-	R2
-	R
-	R2
+	
+	
+	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R
 % Bars 391 to 395
@@ -387,7 +369,7 @@ musicTubaMvtIII = \relative c {
 	R2
 % Bars 421 to 425
 	r4 g8-.-^ r
-	<< f2-^~\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -2) f2-^~\> {s8 s s s\!}>>
 	f8 r r4
 	R2*32
 % Bars 426 to 430
@@ -403,11 +385,11 @@ musicTubaMvtIII = \relative c {
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 461 to 465
 	bes4-^\f r
 	R2*5
@@ -431,7 +413,7 @@ musicTubaMvtIII = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R \no \mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 e2.-^\ff~
+		\timeSignature 3/4 \tempoXoffset #12 e2.-^\ff~
 		e
 	}
 % Bars 486 to 490
@@ -442,7 +424,7 @@ musicTubaMvtIII = \relative c {
 	a,4 r
 % Bars 491 to 495
 	R2
-	e4-> e->
+	\startMeasureCount e4-> e->
 	e-> e->
 	e-> e->
 	e-> e->
@@ -455,7 +437,7 @@ musicTubaMvtIII = \relative c {
 % Bars 501 to 505
 	e-> e->
 	e-> e->
-	e-> e->
+	e-> e-> \stopMeasureCount
 	e-> r
 	R2*16
 % Bars 506 to 510
@@ -593,8 +575,8 @@ musicTubaMvtIII = \relative c {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 691 to 695
 	ges,4-.\f r
 	ges-. r

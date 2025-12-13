@@ -140,7 +140,7 @@ musicTrombonoIIIMvtI = \relative c {
 % Bars 161 to 165
 	\time 6/8 d-^ ees-^ f-^ g-^ aes-^ g-^ 
 	\time 3/4 f-^ r ees-^ r d-^ r 
-	\time 6/8 d-> ees-> f-> g-> aes-> bes->
+	\time 6/8 d-^ ees-^ f-^ g-^ aes-^ bes-^
 	c,4.-^\ff r4 r8
 	c4.\brack\ff r4 r8
 % Bars 166 to 170

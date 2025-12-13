@@ -84,6 +84,9 @@ correctionMvtIII = \markup {
 	
 	% bar 722 / Cello & Contrabass
 	"Bar 722, Cello & Contrabass : an accent is printed in conductor score, a marcato in the part score. The part score is more coherent with adjacent measures."
+	
+	% bar 758 / Trombone I
+	"Bar 758, Trombone I : a missing fortissimo is added (same as trombone II & III)."
 }
 correctionFlauti = \markup {
 	% bar 254 / Mvt I
@@ -170,6 +173,8 @@ CorrectionTrombone = \markup {
 	"Bar 30, MvtII : the cue voice of cor I is not in the right tune. The same error is reproduced for Trombone II."
 	% bar 168 / Mvt II
 	"Bar 168, Mvt II: for trombone I, the rhythm of the last beat of the cue voice is not correct."
+	% bar 214 / Mvt II
+	"Bar 214, Mvt II : for trombone I, bar 214, missing, is added."
 	% bar 99 / Mvt III
 	"Bar 99, Mvt III: for trombone I, missing rest are added."
 	% bar 245 / Mvt I

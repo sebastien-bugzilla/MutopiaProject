@@ -9,17 +9,21 @@ musicTrombonoIIIMvtII = \relative c {
 	\key cis \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*29
+	\mmrLength #33 \mmrnDown R2*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	\mmrLength #10 R2
+	R2*7
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	
+	\mmrLength #10 R2
+	R2*4
 % Bars 26 to 30
-	
+	\mmrLength #12 R2*4
 	
 	
 	
@@ -27,7 +31,7 @@ musicTrombonoIIIMvtII = \relative c {
 % Bars 31 to 35
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #4 R \no
+	\mmrPos #-4 R \no
 	\time 2/8 R4
 	\time 4/8 R2*9
 % Bars 36 to 40
@@ -39,31 +43,48 @@ musicTrombonoIIIMvtII = \relative c {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no \mark \default
 % Bars 46 to 50
-	R2*23
+	R2*5
 % Bars 51 to 55
+	R2*3
 	
+	
+	R2
+	R2*3
 % Bars 56 to 60
 	
+	
+	R2
+	\mmrLength #13 R2*10
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
 	
 	\mark \default
-	R2*28
+	R2*11
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
+	
+	
+	
+	\mmrLength #20 \tempoXoffset #-2.5 R2*4
 % Bars 81 to 85
 	
+	
+	
+	\mmrLength #12 \tempoXoffset #-0.5 R2*5
 % Bars 86 to 90
 	
+	
+	
+	\mmrLength #12 \tempoXoffset #-1 R2*8
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
-	R2\fermata \section
+	\once \ni R2\fermata \section
 	\key des \major R2*22
 % Bars 101 to 105
 	
@@ -97,14 +118,14 @@ musicTrombonoIIIMvtII = \relative c {
 % Bars 151 to 155
 	
 	
-	r4 r8 \bar "!" r
+	r4 r8 \textMark "Vi-" \bar "!" r
 	R2*5
 	
 % Bars 156 to 160
 	
 	
 	
-	r4 r8 \bar "!" r \mark \default
+	r4 r8 \textEndMark "-de" \bar "!" r \mark \default
 	R2*6
 % Bars 161 to 165
 	
@@ -131,11 +152,13 @@ musicTrombonoIIIMvtII = \relative c {
 	ges ges16. des32 ges8 r
 	r16. ces,32[ ges16] r r16. ces32[ ges16] r
 	r16. ces32[ ges16] r r4
-	R2*12
+	R2*8
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
+	
+	\mmrLength #12 \tempoXoffset #-1 R2*4
 % Bars 196 to 200
 	
 	\ni \mmrPos #-4 R2
@@ -179,7 +202,7 @@ musicTrombonoIIIMvtII = \relative c {
 % Bars 256 to 260
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*5
 	
 % Bars 261 to 265
@@ -192,5 +215,5 @@ musicTrombonoIIIMvtII = \relative c {
 % Bars 271 to 273
 	
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

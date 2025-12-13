@@ -32,6 +32,8 @@
 \include "./03-Mvt3/m03_v17_music_TrombonoI.ily"
 \include "./03-Mvt3/m03_v18_music_TrombonoII.ily"
 \include "./03-Mvt3/m03_v19_music_TrombonoIII.ily"
+\include "./01-Mvt1/m01_v20_music_Tuba.ily"
+\include "./02-Mvt2/m02_v20_music_Tuba.ily"
 \include "./03-Mvt3/m03_v20_music_Tuba.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
@@ -45,10 +47,10 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34)"
+			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34) — Tromboni & Tuba"
 		}
 		instrument = \markup {
-			"Tromboni"
+			""
 		}
 	}
 	\score {
@@ -91,7 +93,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -115,7 +117,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -163,7 +165,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -187,7 +189,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -235,7 +237,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -259,9 +261,57 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTubaMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(tuba) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTubaMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTubaMvtI \musicTubaMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "1. Tacet"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTubaMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(tuba) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTubaMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTubaMvtII \musicTubaMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #0.8 \bold "2. Tacet"
 			}
 		}
 		\layout {
@@ -273,7 +323,7 @@
 				\formatTubaMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(tuba) \tempiPartMvtI
+				\keepWithTag #'(tuba) \tempiPartMvtIII
 			}
 			\new Voice {
 				\InCueContext \cueVoiceTubaMvtIII
@@ -283,9 +333,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.5 \bold 3.
 			}
 		}
 		\layout {

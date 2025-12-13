@@ -9,7 +9,7 @@ musicTrombonoIIMvtI = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*11
+	\mmrLength #35 \mmrnDown R2.*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -31,7 +31,8 @@ musicTrombonoIIMvtI = \relative c {
 	f4.\fz r4 r8
 	ges4.\fz r4 r8
 % Bars 26 to 30
-	R2.*6
+	R2.
+	\mmrLength #13 \tempoXoffset #-1 R2.*5
 % Bars 31 to 35
 	
 	ees4.->\ff~ ees8 f4->
@@ -57,7 +58,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 	f,4->\mf\< f8->~ f << f4-> {s8 s\!}>>
 % Bars 51 to 55
-	<< f2.\< {s8 s s  s s s\!}>> \mark \default
+	<< \hairpinShorten #'(0 . -1.5) f2.\< {s8 s s  s s s\!}>> \mark \default
 	g2.\ff
 	g\fz
 	g\fz
@@ -66,11 +67,11 @@ musicTrombonoIIMvtI = \relative c {
 	<< ees->\> {s8 s s  s s s\!}>>
 	ees2.->
 	ees\fp
-	<< ees\fp {s4. s8\< s s\!}>>
+	<< ees\fp {\hairpinShorten #'(-0.5 . -0.5) s4.\< s8 s s}>>
 	ees2.\fp
 % Bars 61 to 65
 	f4.\fz~ f4 r8
-	ees4.\fz~ ees4 r8
+	\dynEO #'(0 . -7.9) ees4.^\fz~ ees4 r8
 	f4.\fz~ f4 r8
 	ges4.\fz~ ges8 r r
 	g!4.\fz~ g8 r r
@@ -84,7 +85,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 76 to 80
 	\mark \default
-	R2.*17
+	\mmrnDown R2.*17
 % Bars 81 to 85
 	
 % Bars 86 to 90
@@ -108,7 +109,7 @@ musicTrombonoIIMvtI = \relative c {
 	a-.\fz r r r4 r8
 	a-.\fz r r r4 r8
 % Bars 106 to 110
-	a-.\fz r r r4 r8
+	a-.-\offset X-offset 0.5 \fz r r r4 r8
 	aes!-._\fzpocoapococresc r r r4 r8
 	aes-. r r r4 r8
 	b-. r r r4 r8
@@ -148,10 +149,10 @@ musicTrombonoIIMvtI = \relative c {
 	
 	
 	
-	\time 3/4 bes8\f-^ r bes-^ r bes-^ r
+	\time 3/4 \tempoXoffset #6.5 bes8\f-^ r bes-^ r bes-^ r
 % Bars 161 to 165
-	\time 6/8 f-^ g-^ aes-^ g-^ bes-^ bes-^ 
-	\time 3/4 bes-^ r bes-^ r bes-^ r 
+	\textMark "Vi-" \time 6/8 f-^ g-^ aes-^ g-^ bes-^ bes-^ 
+	\time 3/4 bes-^ r bes-^ r bes-^ r \textEndMark "-de"
 	\time 6/8 bes-> bes-> bes-> bes-> c-> bes->
 	f4.-^\ff r4 r8
 	fis4.\ff r4 r8
@@ -162,13 +163,13 @@ musicTrombonoIIMvtI = \relative c {
 	R2.*2
 	
 % Bars 171 to 175
-	<< c,2.->\pp\>~ {s8 s s  s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -2.5) c,2.->\pp\>~ {s8 s s  s s s\!}>>
 	c4 r8 r4 r8
 	R2.*8
 % Bars 176 to 180
 	
 % Bars 181 to 185
-	<< g'2.\fp~ {s4. s\>}>>
+	<< g'2.\fp~ {s4.\> s}>>
 	g4.~ g4\! r8
 	R2.*3
 	
@@ -239,7 +240,7 @@ musicTrombonoIIMvtI = \relative c {
 	gis-. r r r4 r8
 % Bars 251 to 255
 	gis-. r r r4 r8
-	g!-.\< r\! r r4 r8
+	\hairpinShorten #'(0 . -1) g!-.\< r\! r r4 r8
 	f!-^\f r r bes-^ r r
 	a-^ r r a-. r r \mark \default
 	R2.*7

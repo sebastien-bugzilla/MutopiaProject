@@ -4,38 +4,38 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombonoIIMvtII = \relative c {
-	\clef tenor
-	\key cis \minor
+musicTubaMvtI = \relative c {
+	\clef bass
+	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2*33
+	R2.*18 
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
+	
+	
+	\time 3/8 R4.*1 
+	\time 6/8 R2.*7
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
+	\mmrLength #11 \tempoXoffset #-2 R2.*5
 % Bars 31 to 35
 	
-	
-	
-	\time 2/8 R4
-	\time 4/8 R2*11
+	R2.*10
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
-	
-	
-	
-	\mark \default
+	\time 3/8 R4.*1
+	\time 6/8 R2.*33
 % Bars 46 to 50
-	R2*23
+	
 % Bars 51 to 55
 	
 % Bars 56 to 60
@@ -44,13 +44,11 @@ musicTrombonoIIMvtII = \relative c {
 	
 % Bars 66 to 70
 	
-	
-	\mark \default
-	R2*28
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	
+	R2.
+	R2.*83
 % Bars 81 to 85
 	
 % Bars 86 to 90
@@ -59,8 +57,6 @@ musicTrombonoIIMvtII = \relative c {
 	
 % Bars 96 to 100
 	
-	R2\fermata \section
-	\key des \major R2*26
 % Bars 101 to 105
 	
 % Bars 106 to 110
@@ -71,13 +67,8 @@ musicTrombonoIIMvtII = \relative c {
 	
 % Bars 121 to 125
 	
-	
-	
-	a'8-.\f r r4
-	R2 \mark \default
 % Bars 126 to 130
-	aes8.-\tweak X-offset 0.3 \fz r16 r4
-	R2*26
+	
 % Bars 131 to 135
 	
 % Bars 136 to 140
@@ -88,101 +79,90 @@ musicTrombonoIIMvtII = \relative c {
 	
 % Bars 151 to 155
 	
-	
-	r4 r8 \bar "!" r
-	R2*5
-	
 % Bars 156 to 160
 	
 	
 	
-	r4 r8 \bar "!" r \mark \default
-	R2*10
+	
+	R2.*56
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	
-	
-	
-	
-	f8\ff r f8 f16. ges32
 % Bars 171 to 175
-	f8 r f r
-	f r f f16. ees32
-	f8  r f r
-	aes aes16. aes32 aes8 r
-	aes aes16. aes32 aes8 r
+	
 % Bars 176 to 180
-	aes4->\< bes8.-> aes16\!
-	ges8\brack\fz r bes bes16. aes32
-	bes8 r bes r
-	bes r bes bes16. aes32
-	bes8 r bes r
+	
 % Bars 181 to 185
-	bes bes16. ces32 bes8 r
-	bes bes16. ces32 bes8 r
-	r16. ces32[ ges16] r r16. ces32[ ges16] r
-	r16. ces32[ ges16] r r4
-	R2*14
+	
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
 % Bars 196 to 200
 	
-	
-	
-	g2~
-	g8 r r4
 % Bars 201 to 205
-	R2*12
+	
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
-	
-	a4.\pp r8 \section \mark \default
-	\key cis \minor fis4. r8
-	R2*13
 % Bars 216 to 220
-	
+	\mmrLength #14 R2.*10
 % Bars 221 to 225
 	
 % Bars 226 to 230
+	R2.*3
 	
-	\section
-	\time 2/8 R4 \section
-	\time 4/8 R2*16
+	
+	\time 3/8 R4.*1
+	\time 6/8 R2.*114
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
-	
-	
-	
-	r4 r8 gis16\f r
 % Bars 246 to 250
-	r8 gis16 r r8 gis16 r
-	R2*11
+	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
-	
-	R2\fermata
-	R2*5
-	
 % Bars 261 to 265
 	
-	
-	\section
-	R2*9
 % Bars 266 to 270
 	
-% Bars 271 to 273
+% Bars 271 to 275
+	
+% Bars 276 to 280
+	
+% Bars 281 to 285
+	
+% Bars 286 to 290
+	
+% Bars 291 to 295
+	
+% Bars 296 to 300
+	
+% Bars 301 to 305
+	
+% Bars 306 to 310
+	
+% Bars 311 to 315
+	
+% Bars 316 to 320
+	
+% Bars 321 to 325
+	
+% Bars 326 to 330
+	
+% Bars 331 to 335
+	
+% Bars 336 to 340
+	
+% Bars 341 to 343
 	
 	
-	R2\fermata \fine
+	\fine
 }
