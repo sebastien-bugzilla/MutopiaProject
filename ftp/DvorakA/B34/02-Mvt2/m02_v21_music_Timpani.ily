@@ -9,7 +9,7 @@ musicTimpaniMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*10
+	\mmrLength #25 \mmrnDown R2*10
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,11 +20,12 @@ musicTimpaniMvtII = \relative c {
 	cis8 r r8. \tuplet 3/2 16 {gis32 gis gis}
 % Bars 16 to 20
 	cis8 r r4
-	R2*9
+	\mmrLength #11 R2*4
 % Bars 21 to 25
-	
+	R2
+	\mmrLength #11 R2*4
 % Bars 26 to 30
-	cis8\pp r r8. \tuplet 3/2 16 {cis32^\solo cis cis}
+	\tempoXoffset #-2.5 cis8\pp r r8. \tuplet 3/2 16 {cis32^\solo cis cis}
 	cis8 r r8. \tuplet 3/2 16 {cis32 cis cis}
 	cis8 r r8. \tuplet 3/2 16 {cis32 cis cis}
 	cis8[ r16 cis] gis_\dimmarkup r gis r
@@ -42,7 +43,7 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-4 \tweak extra-offset #'(0.5 . 0) R \no \mark \default
 % Bars 46 to 50
 	r4 r16 \tuplet 3/2 16 {gis32\mf gis gis} gis16\noBeam r
 	r4 r16 \tuplet 3/2 16 {gis32 gis gis} gis16\noBeam r
@@ -57,28 +58,39 @@ musicTimpaniMvtII = \relative c {
 	\mmrPos #-4 R
 % Bars 61 to 65
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no
-	<< cis2:32\p\< {s8 s\! s\> s\!}>>
+	\mmrPos #-6 R \no
+	<< \hairpinShorten #'(-0.5 . -0.7) cis2:32-\offset X-offset -1.5 \p\< {s8 s\! \hairpinShorten #'(-0.2 . 0) s\> s\!}>>
 	cis8 r r8. \tuplet 3/2 16 {cis32\pp cis cis}
 	cis8 r r8. \tuplet 3/2 16 {cis32 cis cis}
 % Bars 66 to 70
 	cis8 r r8. \tuplet 3/2 16 {cis32 cis cis}
 	cis8[ r16 cis32 cis] gis8 gis
 	cis r r4 \mark \default
-	R2*28
+	R2*11
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
+	
+	
+	
+	\mmrLength #24 \mmrnDown R2*4
 % Bars 81 to 85
+	
+	
+	
+	\mmrLength #12 R2*5
 	
 % Bars 86 to 90
 	
+	
+	
+	\mmrLength #14 R2*8
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
-	R2\fermata \section
+	\once \ni R2\fermata \section
 	R2*15
 % Bars 101 to 105
 	
@@ -88,10 +100,10 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	\ni \mmrPos #-8 R2 \no
-	<< aes2:32 {s8\pp\< s\! s\> s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1.7) aes2:32 {s8-\offset X-offset #-1.5 \pp\< s\! \hairpinShorten #'(0.7 . -1) s\> s\!}>>
 	aes8 r r4
 % Bars 116 to 120
-	<< aes2:32 {s8\< s\! s\> s\!}>>
+	<< \hairpinShorten #'(0 . -0.3) aes2:32 {s8\< s\! \hairpinShorten #'(-0.3 . 0) s\> s\!}>>
 	aes8->\pp aes16. des32 aes8 r
 	aes aes16. des32 aes8 r
 	<< aes2:32\< {s8 s s s\!}>>
@@ -131,21 +143,21 @@ musicTimpaniMvtII = \relative c {
 % Bars 151 to 155
 	
 	
-	r4 r8 \bar "!" r
+	r4 r8 \textMark "Vi-" \bar "!" r
 	R2*5
 	
 % Bars 156 to 160
 	
 	
 	
-	r4 r8 \bar "!" r \mark \default
-	aes8[\p aes aes] r16. aes32
+	r4 r8 \textEndMark "-de" \bar "!" r \mark \default
+	\startMeasureCount aes8[\p aes aes] r16. aes32
 % Bars 161 to 165
 	aes8[ aes aes] r16. aes32
 	aes8[ aes aes] r16. aes32
 	aes8[ aes aes] r16. aes32
 	aes8[ aes aes] r16. aes32
-	aes8[ aes aes] r16. aes32
+	aes8[ aes aes] r16. aes32 \stopMeasureCount
 % Bars 166 to 170
 	des16_\crescmarkup des des des des8[ r16 aes]
 	des16\< des des des des8[ r16 aes]\!
@@ -160,7 +172,7 @@ musicTimpaniMvtII = \relative c {
 	des8 des16. aes32 des4:
 % Bars 176 to 180
 	des8 r r4
-	des2:64-^\ff
+	\dynEO #'(-2 . -10.5) des2:64-^^\ff
 	des8-^ des16.-^ des32-^ des4:64
 	des2:
 	des8-^ des16.-^ des32-^ des4:
@@ -169,22 +181,27 @@ musicTimpaniMvtII = \relative c {
 	R2
 	r8 des16-. r r8 des16-. r
 	r8 des16-. r r4
-	R2*16
+	R2*8
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
+	
+	\mmrLength #14 \mmrnDown R2*6
 % Bars 196 to 200
 	
+	
+	
+	\mmrnDown R2*2
 % Bars 201 to 205
-	aes2:64\pp
+	\startMeasureCount aes2:64\pp
 	aes:
 	aes:
 	aes:
 	aes:
 % Bars 206 to 210
 	aes:
-	<< aes: {s8\< s s s\!}>>
+	<< aes: {s8\< s s s\!}>> \stopMeasureCount 
 	aes8 r r4
 	R2*5
 	
@@ -217,7 +234,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 241 to 245
 	
 	
-	r4 r8 r16 \tuplet 3/2 16 {gis32\f-^ gis-^ gis-^}
+	r4 r8 r16 \tuplet 3/2 16 {gis32-\offset X-offset -1.5 \f-^ gis-^ gis-^}
 	cis8-> r r8. \tuplet 3/2 16 {gis32-^ gis-^ gis-^}
 	cis8-> r r32 gis-^ gis-^ gis-^ cis16->\noBeam r
 % Bars 246 to 250
@@ -228,23 +245,23 @@ musicTimpaniMvtII = \relative c {
 % Bars 256 to 260
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*5
 	
 % Bars 261 to 265
 	
 	
 	\section
-	cis2:64\brack\pp
+	\startMeasureCount cis2:64\brack\pp
 	cis:
 % Bars 266 to 270
 	cis:
 	cis:
 	cis:
-	cis:
+	cis: \stopMeasureCount 
 	cis8 r r4
 % Bars 271 to 273
 	cis2:64\ppp
 	cis8 r r4
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

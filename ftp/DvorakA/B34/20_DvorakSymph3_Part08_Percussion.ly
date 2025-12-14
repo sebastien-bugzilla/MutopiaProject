@@ -26,6 +26,8 @@
 \include "./01-Mvt1/m01_v21_music_Timpani.ily"
 \include "./02-Mvt2/m02_v21_music_Timpani.ily"
 \include "./03-Mvt3/m03_v21_music_Timpani.ily"
+\include "./01-Mvt1/m01_v22_music_Triangolo.ily"
+\include "./02-Mvt2/m02_v22_music_Triangolo.ily"
 \include "./03-Mvt3/m03_v22_music_Triangolo.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
@@ -39,10 +41,18 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34)"
+			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34) — Percussion"
 		}
 		instrument = \markup {
-			"Percussion"
+			""
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
@@ -111,7 +121,55 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #2.1 \bold 3.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTriangoloMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(triangolo) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTriangoloMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTriangoloMvtI \musicTriangoloMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold 1.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTriangoloMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(triangolo) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTriangoloMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTriangoloMvtII \musicTriangoloMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #0.6 \bold 2.
 			}
 		}
 		\layout {
@@ -133,9 +191,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.9 \bold 3.
 			}
 		}
 		\layout {

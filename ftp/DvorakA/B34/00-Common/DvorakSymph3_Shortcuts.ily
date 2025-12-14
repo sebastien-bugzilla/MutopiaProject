@@ -151,6 +151,16 @@ brackmfpocoapococrescendo = \markup {
 	\hspace #-0.79 \bracket \with-true-dimensions \dynamic mf
 	\italic "poco a poco crescendo"
 }
+brackmfpocoapoco_crescendo = \markup {
+	\hspace #-0.79 
+	\concat {
+		\bracket \with-true-dimensions \dynamic mf
+		\translate #'(0.3 . 2) \column { 
+			\lower #1.2 \line { \italic "poco a poco" }
+			\line {\italic "crescendo"}
+		}
+	}
+}
 mfbrackcresc = \markup {
 	\hspace #-0.79 \dynamic mf \bracket \with-true-dimensions \italic "cresc."
 }
@@ -356,6 +366,12 @@ mutaine = \markup {"muta in E"}
 mutaeineshinb = \markup {
 	\concat { "muta E in E" \text-flat ", H in B" \text-flat}
 }
+mutaeines_hinb = \markup {
+	"muta" \translate #'(0 . 2.5) \column {
+		\lower #1.5 \concat { "E in E" \text-flat ","}
+		\concat { "H in B" \text-flat}
+	}
+}
 timpindb = \markup {
 	\center-column {
 		\lower #1 "Timp." "in D, B"
@@ -367,6 +383,12 @@ timpinesb = \markup {
 	}
 }
 mutaesinebinh = \markup {"muta Es in E, B in H"}
+mutaesine_binh = \markup {
+	"muta" \translate #'(0 . 2.5) \column { 
+		\lower #1.5 \concat { "E" \text-flat " in E,"}
+		\concat { "B" \text-flat " in H"}
+	}
+}
 
 clinbes = \markup {
 	\center-column { \lower #1 "Cl." \concat {"in B" \text-flat}}

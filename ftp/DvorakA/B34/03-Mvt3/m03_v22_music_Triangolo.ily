@@ -9,7 +9,7 @@ musicTriangoloMvtIII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2*45
+	\mmrLength #30 R2*45
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -128,13 +128,13 @@ musicTriangoloMvtIII = \relative c {
 	c4 r
 	R2*2
 	
-	c4 r
+	\startMeasureCount c4 r
 	c r
 % Bars 226 to 230
 	c r
 	c r
 	c r
-	c r
+	c r \stopMeasureCount
 	c2:16\ppp
 % Bars 231 to 235
 	c:
@@ -150,13 +150,13 @@ musicTriangoloMvtIII = \relative c {
 	c4\p r
 % Bars 241 to 245
 	c r
-	r c
+	\startMeasureCount r c
 	r c
 	r c
 	r c
 % Bars 246 to 250
 	r c
-	r c
+	r c \stopMeasureCount
 	R2
 	c4 r
 	R2
@@ -250,7 +250,7 @@ musicTriangoloMvtIII = \relative c {
 % Bars 371 to 375
 	c r
 	c r
-	<< c2:16 {s8\< s\! s\> s\!}>>
+	<< c2:16 {\hairpinShorten #'(0.5 . -0.5) s8\< s\! s\> s\!}>>
 	c4-> r
 	R2*18
 % Bars 376 to 380
@@ -315,7 +315,7 @@ musicTriangoloMvtIII = \relative c {
 	c4 r
 % Bars 491 to 495
 	R2
-	c2:16\brack\f
+	\startMeasureCount c2:16\brack\f
 	c:
 	c:
 	c:
@@ -328,7 +328,7 @@ musicTriangoloMvtIII = \relative c {
 % Bars 501 to 505
 	c:
 	c:
-	c:
+	c: \stopMeasureCount
 	c4-^ r
 	R2*19
 % Bars 506 to 510
@@ -420,7 +420,7 @@ musicTriangoloMvtIII = \relative c {
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no
 % Bars 691 to 695
-	
+	R2*9
 % Bars 696 to 700
 	
 	
@@ -467,7 +467,7 @@ musicTriangoloMvtIII = \relative c {
 	c4-^ r
 	r8 c-^ c-^ c-^
 % Bars 736 to 740
-	c2:16\brack\ff
+	\startMeasureCount c2:16\brack\ff
 	c:
 	c:
 	c:
@@ -483,17 +483,17 @@ musicTriangoloMvtIII = \relative c {
 	c:
 	c:\p
 	c:_\pocoapococresc
-	c:_\crescmarkup
+	c:
 % Bars 751 to 755
 	c:
 	c:
 	c:
 	c:
-	c:
+	c: \stopMeasureCount
 % Bars 756 to 760
 	c8 r r4
 	R2*3
 	
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

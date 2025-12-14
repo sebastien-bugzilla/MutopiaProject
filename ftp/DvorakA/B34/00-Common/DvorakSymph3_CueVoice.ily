@@ -1872,23 +1872,23 @@ cueVoiceTimpaniMvtII = \relative c {
 	} >>
 	s2*21 s4*1 s2*9
 	% bars 44 - 45
-	\clef treble \voiceOne r8^\markup {Cl.} fis'8(~ \tuplet 6/4 4 {fis16 eis fis a gis fis)}
-	fis8 fis(~\f \tuplet 3/2 8 { fis16 eis fis} a32[ gis r32 gis]) \oneVoice \clef bass
+	\clef treble r8-\offset X-offset -2 ^\markup {Cl.} fis'8(~ \tuplet 6/4 4 {fis16 eis fis a gis fis)}
+	fis8 fis(~\f \tuplet 3/2 8 { fis16 eis fis} a32[ gis r32 gis]) \clef bass
 	s2*13
 	% bars 59 - 62
-	\clef treble \voiceOne g8.(^\markup {Cl.} e32 fis g8 e)
+	\clef treble g8.(-\offset X-offset -2.5 ^\markup {Cl.} e32 fis g8 e)
 	g8.( e32 fis g8 e)
 	g8.( e32 fis g16. fis32 e16. d32)
 	cis4(~ \tuplet 6/4 4 { cis16 bis cis dis e dis)} \clef bass
-	s2*25
-	% bar 88
-	<>^\markup {Cor.I.}
-	s2*10
+	s2*26
+	% bar 89
+	<>-\offset X-offset -1.5 _\markup {Cor.I.}
+	s2*9
 	% bar 98
-	<>^\markup {Arpa}
+	<>-\offset X-offset -1.5 _\markup {Arpa}
 	s2*15
 	% bar 113
-	\clef treble <c, aes'>4^\markup {Cl.} q8 q16. <des bes'>32 \clef bass
+	\clef treble \voiceOne <c, aes'>4^\markup {Cl.} q8 q16. <des bes'>32 \clef bass
 }
 cueVoiceTimpaniMvtIII = \relative c {
 	s2*60
@@ -1910,7 +1910,7 @@ cueVoiceTimpaniMvtIII = \relative c {
 	ees \clef bass
 	s2*59
 	% bars 381 - 388
-	\voiceOne <e, b' d>4^\markup {\column {\lower #1.5 "Cor." "Trbni" }} r
+	\voiceOne <e, b' d>4-\offset X-offset #-4 ^\markup {\column {\lower #1.5 "Cor." "Trbni" }} r
 	s2
 	q4 r
 	s2
@@ -1920,22 +1920,22 @@ cueVoiceTimpaniMvtIII = \relative c {
 	s2 \oneVoice
 	s2*67
 	% bars 456 - 460
-	\voiceOne r4^\markup {Cor.III.IV.} <f f'>4~
+	r4-\offset X-offset #-4 ^\markup { "Cor." \translate #'(0 . 2) \column { \lower #1.5 "III." "IV."}} <f f'>4~
 	q2~
 	q~
 	q~
-	q \oneVoice
+	q
 	s2*60
 	% bars 521 - 523
-	\clef treble \once \voiceOne r8.^\markup {Fl.} fis'''16[( dis8) r16 b](
+	\clef treble \once \voiceOne r8.-\offset X-offset -2 ^\markup {Fl.} fis'''16[( dis8) r16 b](
 	cis4) \voiceOne r
 	r8. \oneVoice gis'16[( e8) r16 cis-.] \clef bass \oneVoice
 	s2*104
 	% bars 628 - 631
-	\voiceOne fis,,2^\markup {Cor.I.,II.}
+	fis,,2-\offset X-offset #-7 ^\markup {"Cor." \translate #'(0 . 2) \column {\lower #1.5 "I." "II."}}
 	e
 	ees
-	des \oneVoice
+	des
 	s2*54
 	% bars 686 - 690
 	\voiceOne ees,2^\markup {Trbne}
@@ -1943,6 +1943,12 @@ cueVoiceTimpaniMvtIII = \relative c {
 	ces
 	a!
 	aes \oneVoice
+}
+cueVoiceTriangoloMvtI = \relative c {
+	
+}
+cueVoiceTriangoloMvtII = \relative c {
+	
 }
 cueVoiceTriangoloMvtIII = \relative c {
 	s2*45
@@ -1959,7 +1965,7 @@ cueVoiceTriangoloMvtIII = \relative c {
 	c8) r16 g'[(^\markup {Viol.I.} ees8) r16 d]\laissezVibrer \oneVoice
 	s2*86
 	% bars 303 - 306
-	\clef bass \voiceOne r4^\markup {Fag.I.II.} r8. ces16
+	\clef bass \voiceOne r4-\offset X-offset -1 ^\markup {Fag.I.II.} r8. ces16
 	aes4.. g16
 	f8.[ f'16 d8. c16]
 	b!8 r r4 \clef treble \oneVoice
@@ -1971,8 +1977,11 @@ cueVoiceTriangoloMvtIII = \relative c {
 	\voiceTwo r4^\markup {Cor.I.II.} r8. b16
 	e4.. b16
 	e4 r8.^\markup {Cor.III.IV.} b16
-	e4.. b16^\markup {Cor.I.II.} \oneVoice
-	s2*202
+	e4.. \markEO #'(-1 . -8.5) b16^\markup {Cor.I.II.} \oneVoice
+	s2*168
+	% bar 652
+	<>_\markup {Tutti}
+	s2*34
 	% bars 686 - 690
 	\clef bass \voiceOne ees,2^\markup {Trbne III.}
 	des

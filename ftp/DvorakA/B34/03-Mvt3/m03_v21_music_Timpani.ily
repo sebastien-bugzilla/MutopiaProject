@@ -68,13 +68,13 @@ musicTimpaniMvtIII = \relative c {
 	ees-^ ees-^ 
 	ees-^ r
 	R2
-	r4 ees-^\brack\ff
+	\startMeasureCount r4 ees-^\brack\ff
 	r ees-^ 
 % Bars 76 to 80
 	r ees-^ 
 	r ees-^ 
 	r ees-^ 
-	r ees-^ 
+	r ees-^ \stopMeasureCount
 	ees2:16
 % Bars 81 to 85
 	ees4-.\brack\fp r
@@ -107,7 +107,7 @@ musicTimpaniMvtIII = \relative c {
 	ees4-> ees8-> bes->
 	ees4-> ees8-> bes->
 % Bars 106 to 110
-	ees2:16\fp
+	\startMeasureCount ees2:16\fp
 	ees:
 	ees:
 	ees:_\pocoapococresc
@@ -120,7 +120,7 @@ musicTimpaniMvtIII = \relative c {
 	ees:
 % Bars 116 to 120
 	ees:\<
-	<< ees: {s8 s s s\!}>> \mark \default
+	<< \noteHeadEsw #'(0 . 2.5) ees: {s8 s s s\!}>> \stopMeasureCount \revertNoteHeadEsw \mark \default
 	ees8-^\ff ees-^ ees-^ ees-^
 	ees4-^ r
 	ees8-^ ees-^ ees-^ ees-^ 
@@ -132,7 +132,7 @@ musicTimpaniMvtIII = \relative c {
 	bes-> bes->
 % Bars 126 to 130
 	bes-> r
-	<< bes2:16\< {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -0.5) bes2:32\< {s8 s s s\!}>>
 	ees8-^ ees-^ ees-^ ees-^ 
 	ees4-^ r
 	ees8-^ ees-^ ees-^ ees-^ 
@@ -249,9 +249,9 @@ musicTimpaniMvtIII = \relative c {
 % Bars 271 to 275
 	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
 	\mmrPos #-6 R
-	\mmrPos #-6 R \no
+	\mmrPos #-6 R
+	\mmrPos #-7 R \no
 % Bars 276 to 280
 	ees4-^\f r
 	r r8. ees16
@@ -262,7 +262,7 @@ musicTimpaniMvtIII = \relative c {
 	r r8. ees16
 	ees4\fz r8. ees16
 	ees4 r8. ees16
-	bes2:16\ff
+	bes2:16\ff 
 	bes4..: bes16
 % Bars 286 to 290
 	bes4 r8. bes16
@@ -274,7 +274,7 @@ musicTimpaniMvtIII = \relative c {
 	bes r
 	bes r
 	bes r
-	bes2:16
+	\startMeasureCount bes2:16
 	bes:
 % Bars 296 to 300
 	bes:\>
@@ -289,7 +289,7 @@ musicTimpaniMvtIII = \relative c {
 	bes:
 	bes:
 % Bars 306 to 310
-	bes:
+	bes: \stopMeasureCount
 	ees4-^\f r
 	R2*11
 % Bars 311 to 315
@@ -416,7 +416,7 @@ musicTimpaniMvtIII = \relative c {
 % Bars 471 to 475
 	bes4 r8 bes16 bes\!
 	bes4\f r
-	R2*11^\mutaesinebinh
+	\mmrnDown R2*11-\offset X-offset -4 ^\mutaesine_binh
 % Bars 476 to 480
 	
 % Bars 481 to 485
@@ -430,7 +430,7 @@ musicTimpaniMvtIII = \relative c {
 	e-^ e-^ e-^ }
 	e2:16
 	e:
-	\tuplet 3/2 2 {e4-^ e-^ e-^ 
+	\startMeasureCount \tuplet 3/2 2 {e4-^ e-^ e-^ 
 % Bars 491 to 495
 	e-^ e-^ e-^ 
 	e-^ e-^ e-^ 
@@ -446,9 +446,9 @@ musicTimpaniMvtIII = \relative c {
 % Bars 501 to 505
 	e-^ e-^ e-^ 
 	e-^ e-^ e-^ 
-	e-^ e-^ e-^ }
-	b-^ r^\mutaeineshinb
-	R2*16
+	e-^ e-^ e-^ } \stopMeasureCount
+	b-^ r^\mutaeines_hinb
+	\mmrnDown R2*16
 % Bars 506 to 510
 	
 % Bars 511 to 515
@@ -579,10 +579,10 @@ musicTimpaniMvtIII = \relative c {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 % Bars 691 to 695
-	bes4-.\f r
+	\startMeasureCount bes4-.\f r
 	bes-. r
 	bes-. r
 	bes r
@@ -591,8 +591,8 @@ musicTimpaniMvtIII = \relative c {
 	bes r
 	bes r
 	bes r
-	bes r
-	ees r
+	bes r \stopMeasureCount
+	ees r 
 % Bars 701 to 705
 	R2
 	r4 r8 ees16\mf ees
@@ -607,7 +607,7 @@ musicTimpaniMvtIII = \relative c {
 	ees4 r
 % Bars 711 to 715
 	R2
-	ees4\f r
+	\startMeasureCount ees4\f r
 	ees r
 	ees r
 	ees r
@@ -615,7 +615,7 @@ musicTimpaniMvtIII = \relative c {
 	ees r
 	ees r
 	ees r
-	ees r
+	ees r \stopMeasureCount
 	ees2:16\f
 % Bars 721 to 725
 	ees:
@@ -636,7 +636,7 @@ musicTimpaniMvtIII = \relative c {
 	\tuplet 3/2 2 {ees4-^ ees-^ ees-^}
 	ees-^ r
 % Bars 736 to 740
-	ees2:16\brack\ff
+	\startMeasureCount ees2:16\brack\ff
 	ees:
 	ees:
 	ees:
@@ -651,14 +651,14 @@ musicTimpaniMvtIII = \relative c {
 	ees:
 	ees:
 	ees:_\ffbrackp
-	ees:_\pocoapococresc
-	ees:
+	ees:_\pocoa
+	ees:_\pococresc
 % Bars 751 to 755
 	ees:
 	ees:
 	ees:
 	ees:
-	ees:
+	ees: \stopMeasureCount
 % Bars 756 to 760
 	ees8 r r4
 	R2

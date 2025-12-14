@@ -183,8 +183,14 @@ CorrectionTrombone = \markup {
 	"Bar 456, Mvt III: for trombone III, the cue voice of cor III/IV indicate a g pitch instead of f."
 }
 CorrectionPercussion = \markup {
+	% bar 168 / Mvt III
+	"Bar 168, Mvt III : for timpani, the tremolo indicated in part score, is in fact a measured 16th group of note."
+	% bar 287 / Mvt III
+	"Bar 287, Mvt III : for timpani, the tremolo indicated in part score, is in fact a double pointed crotchet."
 	% bar 47 / Mvt III
-	"Bar 47, Mvt III: for triangle, a missing accidental in cue voice is added."
+	"Bar 47, Mvt III : for triangle, a missing accidental in cue voice is added."
+	% bar 484 / Mvt III
+	"Bar 484, Mvt III : for triangle, the indication of 3/4 is removed."
 }
 CorrectionArpa = \markup {
 	% bar 63 / Mvt II

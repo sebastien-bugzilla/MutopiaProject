@@ -466,7 +466,7 @@ nameTubaMvtIII = {
 nameTimpaniMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in Es B"
+			\lower #1 "Timpani" \concat { "in E" \text-flat "/B" \text-flat }
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -482,7 +482,21 @@ nameTimpaniMvtII = {
 	\set Staff.midiInstrument = #"timpani"
 }
 nameTimpaniMvtIII = {
-	\set Staff.instrumentName = "Timpani"
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Timpani" \concat { "in E" \text-flat "/B" \text-flat }
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
+nameTriangoloMvtI = {
+	\set Staff.instrumentName = "Triangolo"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
+nameTriangoloMvtII = {
+	\set Staff.instrumentName = "Triangolo"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }

@@ -15,7 +15,7 @@ musicTimpaniMvtI = \relative c {
 	ees4 r8 ees4 r16 bes
 	ees4\< r8 ees4 r16 bes\!
 % Bars 6 to 10
-	<< ees2.:32 {s8\fp\> s s  s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) ees2.:32 {s8\fp\> s s  s s s\!}>>
 	ees2.:
 	ees4\pp r8 r4 r8
 	ees4 r8 ees4 r16 ees
@@ -39,7 +39,8 @@ musicTimpaniMvtI = \relative c {
 	ees4.:\brack\fz r4 r8
 	ees4.:\brack\fz r4 r8
 % Bars 26 to 30
-	R2.*6
+	R2.
+	\mmrLength #10 R2.*5
 % Bars 31 to 35
 	
 	ees4.:\ff ees8 r r
@@ -66,15 +67,15 @@ musicTimpaniMvtI = \relative c {
 	bes2.:\p\<
 % Bars 51 to 55
 	<< bes: {s8 s s  s s s\!}>> \mark \default
-	ees2.:\ff
+	\startMeasureCount ees2.:\ff
 	ees:
 	ees:
 	ees:
 % Bars 56 to 60
 	<< ees:\> {s8 s s  s s s\!}>>
-	<< ees2.:\< {s8 s s s s s\!}>>
+	<< ees2.:\< {s8 s s s s s\!}>> \stopMeasureCount
 	ees4\fp r8 ees4 r16 ees
-	<< ees2.: {s4. s8\< s s\!}>>
+	<< ees2.: {s4.\< s8 s s\!}>> 
 	ees4 r8 ees4 r16 ees
 % Bars 61 to 65
 	bes4 r8 r4 r8
@@ -155,8 +156,8 @@ musicTimpaniMvtI = \relative c {
 	<< bes: {s8 s s  s s s\!}>>
 	\time 3/4 bes8-^\f r bes-^ r bes-^ r
 % Bars 161 to 165
-	\time 6/8 bes-^ bes-^ bes-^ bes-^ bes-^ bes-^ 
-	\time 3/4 bes-^ r bes-^  r bes-^ r 
+	\textMark "Vi-" \time 6/8 bes-^ bes-^ bes-^ bes-^ bes-^ bes-^ 
+	\time 3/4 bes-^ r bes-^  r bes-^ r \textEndMark "-de"
 	\time 6/8 bes-^ bes-^ bes-^ bes-^ ees-^ ees-^
 	ees4.:\brack\ff r4 r8
 	ees4.:\fz r4 r8 
@@ -169,18 +170,18 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 176 to 180
 	ees2.:->\f
-	<< ees2.: {s8\> s s  s s s\!}>>
+	<< ees2.: {\hairpinShorten #'(0 . -0.5) s8\> s s  s s s\!}>>
 	ees2.:\ppp
 	ees:
 	ees:
 % Bars 181 to 185
 	bes:\fz
-	<< bes: {s8\> s s  s s s\!}>>
+	<< bes: {\hairpinShorten #'(0 . -1) s8\> s s  s s s\!}>>
 	ees8-.\pp ees-. ees-. r4 r8
 	ees8-. ees-. ees-. r4 r8
 	ees-. ees-. ees-. r4 r8
 % Bars 186 to 190
-	bes\f \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r
+	\startMeasureCount bes\f \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r
 	bes \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r
 	bes \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r
 	bes \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r
@@ -188,7 +189,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 191 to 195
 	bes \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r
 	bes \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r
-	bes \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r
+	bes \tuplet 3/2 8 {bes16 bes bes} bes8 bes r r \stopMeasureCount
 	bes2.:\ff-^
 	bes:
 % Bars 196 to 200
@@ -200,9 +201,9 @@ musicTimpaniMvtI = \relative c {
 % Bars 201 to 205
 	
 	
-	<< bes2.:\pp\< {s8 s s  s s s\!}>>
+	<< \hairpinShorten #'(0 . -2.3) bes2.:\pp\< {s8 s s  s s s\!}>>
 	<< bes2.:\> {s8 s s  s s s\!}>>
-	bes8\pp r r r4^\mutaindb r8 \changeStaffName #timpindb
+	bes8\pp r r r4_\mutaindb r8
 % Bars 206 to 210
 	R2.*10
 % Bars 211 to 215
@@ -226,7 +227,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 226 to 230
 	\time 3/4 bes-. r bes-. r bes-. r
 	\time 6/8 << bes2.: {s8\> s s  s s s\!}>>
-	bes4 r8 r4^\mutainesb r8 \changeStaffName #timpinesb
+	bes4 r8 r4_\mutainesb r8
 	\time 3/8 R4.
 	\time 6/8 R2.*9
 % Bars 231 to 235
@@ -235,7 +236,7 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	bes4_\ppocoapococrescendo r8 r4 r8
+	bes4_\ppocoapococrescendo  r8 r4 r8
 	bes4 r8 r4 r8
 % Bars 241 to 245
 	ees4 r8 r4 r8
@@ -283,13 +284,13 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 296 to 300
 	
-	bes2.:_\brackmfpocoapococrescendo
+	\startMeasureCount bes2.:_\brackmfpocoapoco_crescendo
 	bes:
 	bes:
 	bes:
 % Bars 301 to 305
 	bes:
-	<< bes: {s8\< s s  s s s\!}>>
+	<< bes: {s8\< s s  s s s\!}>> \stopMeasureCount
 	bes8 r r r4 r8
 	bes r r r bes-^ bes-^
 	ees2.:\ff
