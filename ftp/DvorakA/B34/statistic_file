@@ -9,7 +9,7 @@
     194     465    4384 20_DvorakSymph3_Part06_Trombe.ly
     344     773    7039 20_DvorakSymph3_Part07_Tromboni.ly
     202     486    4574 20_DvorakSymph3_Part08_Percussion.ly
-     80     244    2558 20_DvorakSymph3_Part09_Arpa.ly
+    153     415    4040 20_DvorakSymph3_Part09_Arpa.ly
     124     326    3262 20_DvorakSymph3_Part10_ViolineI.ly
     126     329    3308 20_DvorakSymph3_Part11_ViolineII.ly
     133     345    3367 20_DvorakSymph3_Part12_Viola.ly
@@ -17,7 +17,7 @@
     126     329    3356 20_DvorakSymph3_Part14_Contrabasso.ly
     222     917    5748 test.ly
     198    1891    9154 00-Common/DvorakSymph3_Corrections.ily
-   2103    8202   51048 00-Common/DvorakSymph3_CueVoice.ily
+   2115    8224   51191 00-Common/DvorakSymph3_CueVoice.ily
     314    1998   15111 00-Common/DvorakSymph3_Format_Cond_Mvt01.ily
     274    1612   12836 00-Common/DvorakSymph3_Format_Cond_Mvt02.ily
     418    2464   19292 00-Common/DvorakSymph3_Format_Cond_Mvt03.ily
@@ -29,23 +29,23 @@
     622    1458   18487 00-Common/DvorakSymph3_Format_Part06_Trombe.ily
    1090    2542   32366 00-Common/DvorakSymph3_Format_Part07_Tromboni.ily
     470    1117   14128 00-Common/DvorakSymph3_Format_Part08_Percussion.ily
-     14      71     705 00-Common/DvorakSymph3_Format_Part09_Arpa.ily
+    120     459    5729 00-Common/DvorakSymph3_Format_Part09_Arpa.ily
      18      85     869 00-Common/DvorakSymph3_Format_Part10_ViolineI.ily
      18      85     872 00-Common/DvorakSymph3_Format_Part11_ViolineII.ily
      18      85     860 00-Common/DvorakSymph3_Format_Part12_Viola.ily
      18      85     878 00-Common/DvorakSymph3_Format_Part13_Violoncello.ily
      18      85     878 00-Common/DvorakSymph3_Format_Part14_Contrabasso.ily
-    339     666   11033 00-Common/DvorakSymph3_Format_temp.ily
+    372     374    5650 00-Common/DvorakSymph3_Format_temp.ily
      34     283    1846 00-Common/DvorakSymph3_Header.ily
     101     373    3365 00-Common/DvorakSymph3_LayoutConductors.ily
      81     295    2891 00-Common/DvorakSymph3_LayoutParts.ily
     107     402    3529 00-Common/DvorakSymph3_NameGrandStaff.ily
     476    1482   11278 00-Common/DvorakSymph3_NameStaff.ily
-    615    2142   17811 00-Common/DvorakSymph3_NameVoice.ily
+    645    2242   18639 00-Common/DvorakSymph3_NameVoice.ily
      67     181    1605 00-Common/DvorakSymph3_PaperConductors.ily
      65     186    1554 00-Common/DvorakSymph3_PaperParts.ily
    1021    3624   26986 00-Common/DvorakSymph3_Shortcuts.ily
-    680    2399   19525 00-Common/DvorakSymph3_Tempi.ily
+    678    2399   19510 00-Common/DvorakSymph3_Tempi.ily
      20      91     600 00-Common/DvorakSymph3_timeMvt.ily
     170     439    2092 01-Mvt1/m01_v01_music_Piccolo.ily
     386    1996   10015 01-Mvt1/m01_v02_music_FlautoI_C.ily
@@ -88,6 +88,8 @@
     338    1294    6199 01-Mvt1/m01_v21_music_Timpani_C.ily
     343    1325    6439 01-Mvt1/m01_v21_music_Timpani.ily
     168     432    2035 01-Mvt1/m01_v22_music_Triangolo.ily
+    168     432    2034 01-Mvt1/m01_v23_music_ArpaUp.ily
+    168     432    2034 01-Mvt1/m01_v24_music_ArpaDown.ily
     485    3511   17955 01-Mvt1/m01_v25_music_ViolinoI_C.ily
     484    3288   16540 01-Mvt1/m01_v25_music_ViolinoI.ily
     496    4467   20673 01-Mvt1/m01_v26_music_ViolinoII_C.ily
@@ -140,9 +142,9 @@
     267     913    4918 02-Mvt2/m02_v21_music_Timpani.ily
     135     350    1660 02-Mvt2/m02_v22_music_Triangolo.ily
     230    1963   10624 02-Mvt2/m02_v23_music_ArpaUp_C.ily
-    238    1599    8951 02-Mvt2/m02_v23_music_ArpaUp.ily
+    264    2100   11372 02-Mvt2/m02_v23_music_ArpaUp.ily
     221     734    3852 02-Mvt2/m02_v24_music_ArpaDown_C.ily
-    229     739    3831 02-Mvt2/m02_v24_music_ArpaDown.ily
+    229     757    3941 02-Mvt2/m02_v24_music_ArpaDown.ily
     331    2462   12808 02-Mvt2/m02_v25_music_ViolinoI_C.ily
     331    2355   12125 02-Mvt2/m02_v25_music_ViolinoI.ily
     342    2515   12883 02-Mvt2/m02_v26_music_ViolinoII_C.ily
@@ -196,6 +198,8 @@
     668    1798    8907 03-Mvt3/m03_v21_music_Timpani.ily
     483    1107    4709 03-Mvt3/m03_v22_music_Triangolo_C.ily
     499    1198    5264 03-Mvt3/m03_v22_music_Triangolo.ily
+    319     816    3486 03-Mvt3/m03_v23_music_ArpaUp.ily
+    319     816    3486 03-Mvt3/m03_v24_music_ArpaDown.ily
     911    3505   19426 03-Mvt3/m03_v25_music_ViolinoI_C.ily
     911    3440   19091 03-Mvt3/m03_v25_music_ViolinoI.ily
     902    3864   20899 03-Mvt3/m03_v26_music_ViolinoII_C.ily
@@ -206,4 +210,4 @@
     913    2930   15319 03-Mvt3/m03_v28_music_Violoncello.ily
     865    2409   12193 03-Mvt3/m03_v29_music_Contrabasso_C.ily
     873    2407   12147 03-Mvt3/m03_v29_music_Contrabasso.ily
-  93591  334606 1941541 total
+  94843  338010 1957191 total

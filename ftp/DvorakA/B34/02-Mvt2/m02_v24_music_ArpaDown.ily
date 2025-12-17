@@ -67,7 +67,7 @@ musicArpaDownMvtII = \relative c {
 	
 % Bars 96 to 100
 	
-	R2\fermata \section
+	\once \ni R2\fermata \section
 	\key des \major <des aes' des>4\arpeggio r
 	q\arpeggio q\arpeggio
 	q\arpeggio r
@@ -82,7 +82,7 @@ musicArpaDownMvtII = \relative c {
 	s2
 	s
 	R
-	\staffUp s8\brack\p s\< s8 s16 s32 s\! \staffDown
+	\staffUp s8-\offset X-offset -1.5 \brack\p s-\tweak rotation #'(-1 -1 0) \< s8 s16 s32 s\! \staffDown
 % Bars 111 to 115
 	s2 \clef bass
 	s
@@ -114,7 +114,7 @@ musicArpaDownMvtII = \relative c {
 	<des, aes' des>[\arpeggio <des' aes' des>\arpeggio <f aes des>]\arpeggio r
 	<des, aes' des>[\arpeggio <des' aes'>\arpeggio <des aes'>\arpeggio] r
 % Bars 136 to 140
-	<des, aes' des>[\arpeggio <des' aes'>\arpeggio <des aes'>\arpeggio] r
+	\beamOffset #'(-0.3 . -0.3) <des, aes' des>[\arpeggio <des' aes'>\arpeggio <des aes'>\arpeggio] r
 	R2*9
 % Bars 141 to 145
 	
@@ -208,7 +208,7 @@ musicArpaDownMvtII = \relative c {
 % Bars 256 to 260
 	
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*2
 % Bars 261 to 265
 	\ni R2
@@ -225,5 +225,5 @@ musicArpaDownMvtII = \relative c {
 % Bars 271 to 273
 	
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

@@ -1993,14 +1993,20 @@ cueVoiceTriangoloMvtIII = \relative c {
 %###############################################################################
 %#                     C U E   V O I C E   F O R   A R P A                     #
 %###############################################################################
+cueVoiceArpaUpMvtI = \relative c {
+	
+}
+cueVoiceArpaDownMvtI = \relative c {
+	
+}
 cueVoiceArpaUpMvtII = \relative c {
 	s2*33 s4*1 s2*24
 	% bars 59 - 63
-	\stemUp g'''8.(^\markup {Clar.} e32 fis g8 e)
+	g'''8.(^\markup {Clar.} e32 fis g8 e)
 	g8.( e32 fis g8 e)
 	g8.( e32 fis g16. fis32 e16. dis32)
 	cis4(~ \tuplet 6/4 4 {cis16 bis cis dis e dis)}
-	cis4. r8 \stemNeutral
+	cis4. r8
 	s2*160
 	% bars 224 - 228
 	\stemUp cis4(~^\markup {Viol.I.} \tuplet 6/4 4 {cis16 bis cis dis e dis)}
@@ -2016,6 +2022,12 @@ cueVoiceArpaUpMvtII = \relative c {
 }
 cueVoiceArpaDownMvtII = \relative c {
 	% no cue voice
+}
+cueVoiceArpaUpMvtIII = \relative c {
+	
+}
+cueVoiceArpaDownMvtIII = \relative c {
+	
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #

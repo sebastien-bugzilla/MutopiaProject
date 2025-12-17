@@ -508,6 +508,21 @@ nameTriangoloMvtIII = {
 %###############################################################################
 %#                      V O I C E   N A M E   :   A R P A                      #
 %###############################################################################
+nameArpaUpMvtI = {
+	\set Staff.instrumentName = ""
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"orchestral harp"
+}
+nameArpaDownMvtI = {
+	\set Staff.instrumentName = ""
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"orchestral harp"
+}
+nameGrandStaffIVMvtI = {
+	\set Staff.instrumentName = "Arpa"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #""
+}
 nameArpaUpMvtII = {
 	\set Staff.instrumentName = ""
 	\set Staff.shortInstrumentName = ""
@@ -519,6 +534,21 @@ nameArpaDownMvtII = {
 	\set Staff.midiInstrument = #"orchestral harp"
 }
 nameGrandStaffIVMvtII = {
+	\set Staff.instrumentName = "Arpa"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #""
+}
+nameArpaUpMvtIII = {
+	\set Staff.instrumentName = ""
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"orchestral harp"
+}
+nameArpaDownMvtIII = {
+	\set Staff.instrumentName = ""
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"orchestral harp"
+}
+nameGrandStaffIVMvtIII = {
 	\set Staff.instrumentName = "Arpa"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #""
