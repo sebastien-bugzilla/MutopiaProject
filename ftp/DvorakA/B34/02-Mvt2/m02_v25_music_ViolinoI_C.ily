@@ -173,7 +173,7 @@ musicViolinoIMvtII = \relative c {
 % Bars 136 to 140
 	
 	
-	r4 r8 bes16-.\p bes32( des)
+	r4^\tranquillo r8 bes16-.\p bes32( des)
 	<< aes4. {s8 s_\morendo s}>> \acciaccatura aes8 ges32( f ges bes)
 	f4. \tuplet 3/2 8 {ees16( bes c)}
 % Bars 141 to 145
@@ -239,7 +239,7 @@ musicViolinoIMvtII = \relative c {
 	cis'16( b32 a a16 gis32 fis) e16( d32 cis cis16 b32 a)
 	des'!16( ces32 bes! bes16 aes!32 ges!) ges16( f!32 ees! des!16 ces32 aes!)
 % Bars 196 to 200
-	des'16(-\tweak rotation #'(-3 1 0) \< ces32 bes bes16 aes32 ges) ges16( f32 ees des16 ces32 aes!)\!
+	des'16(-\tweak rotation #'(-3 1 0) \< ces32 bes bes16 aes32 ges) ges16( f32 ees des16 ces32 aes)\!
 	f''16(->\ff ees32 d) d16(-> c32 bes) bes16(-> a32 g) f16->( ees32 d)
 	f'16(-> e32 d) d16->( c32 b) b16->( a32 g) f16->( e32 d)
 	\stemDown \dynEO #'(-3 . 2) c->\ff g''-> fis-> f-> \stemNeutral e( ees) d( des) r16 c32( b) r bes-> a-> aes->
@@ -260,7 +260,7 @@ musicViolinoIMvtII = \relative c {
 	a4\f(~  a16 gis fis e)
 % Bars 216 to 220
 	dis4(~\> \tuplet 6/4 4 {dis16 cis\p dis fis e cis)}
-	b8(\> b~ \tuplet 6/4 4 {b16 a b cis b a)\!}
+	cis8(\> b~ \tuplet 6/4 4 {b16 a b cis b a)\!}
 	a8( gis~ \tuplet 6/4 4 {gis16\pp fis gis b a e)}
 	gis4( fis8 e16. cis32)
 	cis2\ppp~

@@ -34,19 +34,19 @@
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
 			\center-column {
-				"Part for ViolineI"
+				"Part for Violine I"
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34)"
+			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34) — Violine I"
 		}
 		instrument = \markup {
-			"ViolineI"
+			""
 		}
 	}
 	\score {
 		\new GrandStaff \with {\RemoveAllEmptyStaves } <<
-			\new Staff {
+			\new Staff = "up" <<
 				\new Voice {
 					\formatViolinoIMvtI
 				}
@@ -59,8 +59,8 @@
 				\new Voice {
 					\timeMvtI \nameViolinoIMvtI \musicViolinoIMvtI
 				}
-			}
-			\new Staff {
+			>>
+			\new Staff = "down" {
 				\timeMvtI \musicViolinoIDivisiMvtI
 			}
 		>>
@@ -74,22 +74,27 @@
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(violinoI) \tempiPartMvtII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceViolinoIMvtII
-			}
-			\new Voice {
-				\timeMvtII \nameViolinoIMvtII \musicViolinoIMvtII
+		\new GrandStaff \with {\RemoveAllEmptyStaves } <<
+			\new Staff <<
+				\new Voice {
+					\formatViolinoIMvtII
+				}
+				\new Voice {
+					\keepWithTag #'(violinoI) \tempiPartMvtII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceViolinoIMvtII
+				}
+				\new Voice {
+					\timeMvtII \nameViolinoIMvtII \musicViolinoIMvtII
+				}
+			>>
+			\new Staff {
+				\timeMvtII \musicViolinoIDivisiMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -98,22 +103,27 @@
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(violinoI) \tempiPartMvtIII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceViolinoIMvtIII
-			}
-			\new Voice {
-				\timeMvtIII \nameViolinoIMvtIII \musicViolinoIMvtIII
+		\new GrandStaff \with {\RemoveAllEmptyStaves } <<
+			\new Staff <<
+				\new Voice {
+					\formatViolinoIMvtIII
+				}
+				\new Voice {
+					\keepWithTag #'(violinoI) \tempiPartMvtIII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceViolinoIMvtIII
+				}
+				\new Voice {
+					\timeMvtIII \nameViolinoIMvtIII \musicViolinoIMvtIII
+				}
+			>>
+			\new Staff {
+				\timeMvtIII \musicViolinoIDivisiMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}

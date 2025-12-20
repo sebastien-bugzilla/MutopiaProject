@@ -126,19 +126,19 @@ musicViolinoIMvtIII = \relative c {
 	
 	
 	bes,,16(\p\< c d ees f g aes bes)\!
-	<g bes>8.->[\f <ees ees'>16( <g bes>8) r16 <f aes>-.]
-	<g bes>8.->[\f <ees ees'>16( <g bes>8) r16 <f aes>-.]
+	bes8.->\f[ ees16( bes8) r16 aes-.]
+	bes8.->\f[ ees16( bes8) r16 aes-.]
 % Bars 101 to 105
-	<g bes>8.->[ <ees ees'>16( <g bes>8) r16 <f aes>-.]
-	<g bes>4-> r8 ees32(\< f g aes)\!
-	<g bes>8.[\fz <ees ees'>16( <g bes>8) r16 <f aes>-.]
-	<g bes>8.->[ <ees ees'>16( <g bes>8) r16 <f aes>-.]
-	<g bes>8.->[ <ees ees'>16( <g bes>8) r16 <f aes>-.]
+	bes8.->[ ees16( bes8) r16 aes-.]
+	bes4-> r8 ees,32(\< f g aes)\!
+	bes8.->[\fz ees16( bes8) r16 aes-.]
+	bes8.->[ ees16( bes8) r16 aes-.]
+	bes8.->[ ees16( bes8) r16 aes-.]
 % Bars 106 to 110
 	bes4(->\fz g8) r
 	c4(->\fz a8) r
 	des4(->\fz bes8) r
-	d!4(->_\fzpocoapococresc b8) r
+	\markEO #'(0 . 1) d!4(->_\fzpocoa_pococresc b8) r
 	ees4(->\fz c8) r
 % Bars 111 to 115
 	e4(->\fz cis8) r
@@ -148,7 +148,7 @@ musicViolinoIMvtIII = \relative c {
 	g4(->\fz fis8) r
 % Bars 116 to 120
 	f!4(->\fz\< e8) r
-	ees!8( d16) r des8( bes16)\! r \mark \default
+	ees!8( d16) r des8( bes16)\! r \mark \default 
 	c2:32->\ff
 	c8 bes( g aes)
 	ees'2:32->
@@ -160,7 +160,7 @@ musicViolinoIMvtIII = \relative c {
 	c( bes) aes!-. f-.
 % Bars 126 to 130
 	d[( bes)] f-^ bes-^
-	d(\< f \tuplet 3/2 4 { aes c bes)\!}
+	d[(\< f] \tuplet 3/2 4 { aes c bes)\!}
 	c2:32->\ff
 	c8 bes( g aes)
 	ees'2:32->
@@ -178,7 +178,7 @@ musicViolinoIMvtIII = \relative c {
 	ees4) r
 % Bars 141 to 145
 	r r8. a,16\<
-	<< ges'2\fp\<~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.3 . -1) ges'2\fp\<~ {s8 s s s\!}>>
 	\restPattern ges8 f16( aes!8) f16(
 	ges8) r r4
 	r4 r8. ees16(
@@ -186,7 +186,7 @@ musicViolinoIMvtIII = \relative c {
 	\restPattern bes'8)\fp a16( ces8) a16(
 	bes4) r8. des,16(
 	\restPattern b'8)\fp ais16( cis8) ais16(
-	b4) r8. d,16(
+	b4) r8. d,!16(
 	\restPattern c'!8)\fp b16(_\brackM\crescmarkup d8) b16(
 % Bars 151 to 155
 	c4) r8. ees,16(
@@ -310,10 +310,10 @@ musicViolinoIMvtIII = \relative c {
 	\restPattern d8)\< a16( f8) d'16(
 % Bars 251 to 255
 	c!8)[ r16 g( e8)]\! r
-	r8. c'16[(\mf a8) r16 g](
+	r8. \dynEO #'(0 . 0.5) c'16[(\mf a8) r16 g](
 	f8) r r4
 	R2
-	r8. <c c'>16[(\p <a a'>8) r16 <g g'>](
+	r8. <c c'>16[(-\offset X-offset -1.5 \p <a a'>8) r16 <g g'>](
 % Bars 256 to 260
 	<f f'>2~
 	\restPattern q8) q16( <a a'>8) <c c'>16(
@@ -343,7 +343,7 @@ musicViolinoIMvtIII = \relative c {
 	ees!4..->\fz ees16-.
 	ees8( c bes a)
 	ges' r r4
-	R2
+	R2 
 % Bars 281 to 285
 	ces4..->\fz ces16-.
 	ces8(\< ges fes ees)
@@ -363,7 +363,7 @@ musicViolinoIMvtIII = \relative c {
 	\restPattern c8) e,16( g8) f16(
 	\restPattern aes8) cis,16( ees8) d16(
 % Bars 296 to 300
-	\restPattern f8)_\brackM\dimmarkup a,16( c8) a16(
+	\restPattern f8)-\offset X-offset -1 _\brackM\dimmarkup a,16( c!8) a16(
 	\restPattern bes8) a16( c8) a16(
 	\restPattern bes8) a16( c8) a16(
 	bes8:16) b:\p\< c: cis:
@@ -393,7 +393,7 @@ musicViolinoIMvtIII = \relative c {
 	\restPattern des8) c16( ees8) c16(
 	\restPattern des8) f16( ees8) des16(
 % Bars 321 to 325
-	\restPattern c8) bes16( ees8) g,16( \mark \default
+	\restPattern c8) bes16( ees8) g,16( \markWhiteout \mark \default
 	aes4)\ff bes,-^
 	\restPattern c8-. ees16( c8) bes16-.
 	aes4-> bes->
@@ -505,7 +505,7 @@ musicViolinoIMvtIII = \relative c {
 	ges: f: ees: d:
 	\restPattern ees8 ges16( ees8) des16-^
 	ces8-^ r r4
-	r <ees, ces' ges'>-^
+	r <ees,! ces' ges'>-^
 % Bars 416 to 420
 	\restPattern <e c'! a'>8 e'16( c8) b16-^
 	a8-^ r r4
@@ -579,7 +579,7 @@ musicViolinoIMvtIII = \relative c {
 	e4( b'
 	gis fis8 e) \mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 e'2.:16\ff
+		\timeSignature 3/4 \tempoXoffset #11 e'2.:16\ff
 		e:
 % Bars 486 to 490
 		\key e \major e2: dis4:
@@ -723,7 +723,7 @@ musicViolinoIMvtIII = \relative c {
 	d8 cis b a)
 	d4..->\p cis16(
 % Bars 606 to 610
-	b4..)->\< gis16(
+	bis4..)->\< gis16(
 	cis4..)-> e16(
 	dis4..)-> b16(\!
 	\restPattern e8)\ff b16( gis8) fis16(
@@ -733,23 +733,23 @@ musicViolinoIMvtIII = \relative c {
 	
 	
 	
-	r8. <e gis>16[(\brack\p\< <gis b>8) r16 <b e>](\!
+	r8. gis16[(\brack\p\< b8) r16 e](\!
 % Bars 616 to 620
-	<gis gis'>2\pp~
-	q~
-	q4 <fis fis'>~
-	q4.. <dis dis'>16)
-	<< <b b'>2(\<_\pocoapococrescendo { s4 s^\turn_\turn}>>
+	gis2\pp~
+	gis~
+	gis4 fis~
+	fis4.. dis16)
+	b2(\<\turn_\pocoapococrescendo
 % Bars 621 to 625
-	<gis' gis'>2~\!
-	q4 <fis fis'>\>~
-	<< q4.. {s4 s8.\!}>> <dis dis'>16)
-	<b b'>4( <gis' gis'>\<
-	<fis fis'>4.. <dis dis'>16)
+	gis'\!~
+	gis4 fis\>~
+	fis4..\! dis16)
+	b4( gis'\<
+	fis4.. dis16)
 % Bars 626 to 630
-	<b b'>4( <gis' gis'>
-	<< <fis fis'>4.. {s4 s8.\!}>> <dis dis'>16)
-	fis'8(->\f e dis cis)
+	b4( gis'
+	fis4..\! dis16)
+	\dynEO #'(-1 . -11.5) fis8(->^\f e dis cis)
 	e(-> dis cis b)
 	dis(-> cis b ais)
 % Bars 631 to 635
@@ -797,35 +797,35 @@ musicViolinoIMvtIII = \relative c {
 % Bars 666 to 670
 	des( f ges g)
 	bes( aes ges ees)
-	<des, des'>2:16\ff
-	q:
-	q:
+	\startMeasureCount des2:16\ff
+	des:
+	des:
 % Bars 671 to 675
-	q:
-	q:
-	q:
-	q:
-	q:
+	des:
+	des:
+	des:
+	des:
+	des:
 % Bars 676 to 680
-	q:
-	q:
-	q:
-	q:
-	q:
+	des:
+	des:
+	des:
+	des:
+	des:
 % Bars 681 to 685
-	q:
-	q:
-	q:
-	q:
-	q:
+	des:
+	des:
+	des:
+	des:
+	des:
 % Bars 686 to 690
-	q:
-	q:
-	q:\<
-	q:
-	<< q: {s4 s\!}>>
+	des:
+	des:
+	des:\<
+	des:
+	<< des: {s4 s\!}>> \stopMeasureCount \break
 % Bars 691 to 695
-	ges'8:16->\brack\ff f: aes: ges:
+	ges8:16->\brack\ff f: aes: ges:
 	fes:-> ees: ges: fes:
 	ees:-> des: fes: ees:
 	des:-> c: ees: des:
@@ -893,7 +893,7 @@ musicViolinoIMvtIII = \relative c {
 % Bars 746 to 750
 	bes: a: c: bes:
 	bes: a: c: bes:
-	\restPattern ees8_\ffbrackp d16( f8) d16(
+	\startMeasureCount \restPattern ees8_\ffbrackp d16( f8) d16(
 	\restPattern ees8)-._\pocoapococresc d16( f8) d16(
 	\restPattern ees8)-. d16( f8) d16(
 % Bars 751 to 755
@@ -901,11 +901,92 @@ musicViolinoIMvtIII = \relative c {
 	\restPattern ees8)-. d16( f8) d16(
 	\restPattern ees8)-. d16( f8) d16(
 	\restPattern ees8)-. d16( f8) d16(
-	\restPattern ees8)-. d16( f8) d16(
+	\restPattern ees8)-. d16( f8) d16( \stopMeasureCount
 % Bars 756 to 760
 	ees8)\ff r r8. bes'16-.\ff
 	g2->\fz~
 	g8 r r4
 	f8-. r r4
 	ees8-. r r4\fermata \fine
+}
+musicViolinoIDivisiMvtIII = \relative c {
+	\clef treble
+	\key ees \major
+	s2*97
+% Bars 98 to 100
+	bes''16(\p\< c d ees f g aes bes)\!
+	g8.[->\f ees16( g8) r16 f-.]
+	g8.[->\f ees16( g8) r16 f-.]
+% Bars 101 to 105
+	g8.[->\f ees16( g8) r16 f-.]
+	g4-> r8 ees32(\< f g aes)\!
+	g8.[->\fz ees16( g8) r16 f-.]
+	g8.[-> ees16( g8) r16 f-.]
+	g8.[-> ees16( g8) r16 f-.]
+% Bars 106 to 108 
+	bes4(->\fz g8) r
+	c4(->\fz a8) r
+	des4(->\fz bes8) r
+% Bars 106 to 569 
+	s2*460
+% Bars 569 to 614
+	\key b \major s2*46
+% Bar 615
+	r8. e,16[(\brack\p\< gis8) r16 b](\!
+% Bars 616 to 620
+	gis2\pp~
+	gis~
+	gis4 fis~
+	fis4.. dis16)
+	b2(\<_\pocoapococrescendo\turn
+% Bars 621 to 625
+	gis'2~\!
+	gis4 fis\>~
+	fis4..\! dis 16)
+	b4( gis'\<
+	fis4.. dis16)
+% Bars 626 to 630
+	b4( gis'
+	fis4..\! dis16)
+	fis'8(->\f e dis cis)
+	e(-> dis cis b)
+	dis(-> cis b ais)
+% Bar 631
+	cis(-> b ais gis) \section \key ees \major
+% Bars 632 to 662
+	s2*31
+% Bars 663 to 665
+	\restPattern ges'8 f16( aes8) f16(
+	\restPattern ges8) f16( aes8) ges16(
+	bes8 ges ees bes)
+% Bars 668 to 670
+	des( f ges g)
+	bes( aes ges ees)
+	\startMeasureCount des,2:16\ff
+	des:
+	des:
+% Bars 671 to 675
+	des:
+	des:
+	des:
+	des:
+	des:
+% Bars 676 to 680
+	des:
+	des:
+	des:
+	des:
+	des:
+% Bars 681 to 685
+	des:
+	des:
+	des:
+	des:
+	des:
+% Bars 686 to 690
+	des:
+	des:
+	des:\<
+	des:
+	<< des: {s4 s\!}>> \stopMeasureCount
 }

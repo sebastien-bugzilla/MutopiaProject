@@ -160,7 +160,7 @@ musicViolinoIMvtIII = \relative c {
 	c( bes) aes!-. f-.
 % Bars 126 to 130
 	d[( bes)] f-^ bes-^
-	d(\< f \tuplet 3/2 4 { aes c bes)\!}
+	d[(\< f] \tuplet 3/2 4 { aes c bes)\!}
 	c2:32->\ff
 	c8 bes( g aes)
 	ees'2:32->
@@ -723,7 +723,7 @@ musicViolinoIMvtIII = \relative c {
 	d8 cis b a)
 	d4..->\p cis16(
 % Bars 606 to 610
-	b4..)->\< gis16(
+	bis4..)->\< gis16(
 	cis4..)-> e16(
 	dis4..)-> b16(\!
 	\restPattern e8)\ff b16( gis8) fis16(

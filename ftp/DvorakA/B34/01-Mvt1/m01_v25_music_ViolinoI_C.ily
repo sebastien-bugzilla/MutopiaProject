@@ -177,7 +177,7 @@ musicViolinoIMvtI = \relative c {
 	fis'(->\mf e~\<
 	e)\! c4(\> a8)\!
 % Bars 141 to 145
-	<< b4.( {s8 s s\!}>> d4.\>~
+	<< b4.(\< {s8 s s\!}>> d4.\>~
 	d4 b8 a4 g8)\!
 	b4\p r8 b,,16(\brack\pp d g \liiri d \tuplet 3/2 8 {\lirii b'16 g d)}
 	r4 r8 b16( d g \liiri d \tuplet 3/2 8 {\lirii b'16 g d)}

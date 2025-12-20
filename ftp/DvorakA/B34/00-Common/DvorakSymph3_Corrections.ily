@@ -196,3 +196,13 @@ CorrectionArpa = \markup {
 	% bar 63 / Mvt II
 	"Bar 63, Mvt II: an additional rest in clarinet cue voice is removed."
 }
+CorrectionViolinI = \markup {
+	% bar 153 / Mvt II
+	"Bar 153, Mvt II: a missing tie is added on the third beat."
+	% bar 172 / Mvt III
+	"Bar 172, Mvt III : this measure is missing in part score and it is added."
+	% bar 240 / Mvt III
+	"Bar 240, Mvt III : 'naturale' indication is dedicated to Violin II and is removed."
+	% bar 283 / Mvt III
+	"Bar 283, Mvt III :  a missing rest is added."
+}

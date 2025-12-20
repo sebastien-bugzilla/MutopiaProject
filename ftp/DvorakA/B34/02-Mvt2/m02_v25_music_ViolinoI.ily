@@ -29,7 +29,7 @@ musicViolinoIMvtII = \relative c {
 % Bars 16 to 20
 	cis4\<^\ivcorda fis16.( e32\! d16. cis32)
 	b8(\f\< b'~ b16\! \liiri fis\> \tuplet 3/2 8 {\lirii a g e)\!}
-	d8[(\p\< fis\! a\> gis!\!)]
+	\hairpinShorten #'(0 . -1) d8[(\p\< fis\! \hairpinShorten #'(-1 . 0) a\> gis!\!)]
 	R2
 	d8[(\p\< fis cis'\fz bis]~
 % Bars 21 to 25
@@ -65,17 +65,17 @@ musicViolinoIMvtII = \relative c {
 % Bars 46 to 50
 	cis,8\p r r4
 	R2
-	r8 r32 e[(\p\<^\brackM\arco gis cis] d e fis e d16)\! r
-	\tuplet 6/4 4 {r16 <fis, fis'>\>( <gis gis'> <a a'> <eis eis'> <fis fis'>)\!} <fis fis'>4
-	\tuplet 6/4 4 {r16_\pocoapococresc <fis fis'>( <gis gis'> <a a'> <eis eis'> <fis fis'>)} <fis fis'>4
+	r8 r32 e[(\p\<-\offset X-offset #-4.5 ^\brackM\arco gis cis] d e fis e d16)\! r
+	\tuplet 6/4 4 {r16 fis(\> gis a eis fis)\!} fis4
+	\tuplet 6/4 4 {r16_\pocoapococresc fis( gis a eis fis)} fis4
 % Bars 51 to 55
-	\tuplet 6/4 4 {r16 <fis fis'>( <gis gis'> <a a'> <gis gis'> <fis fis'>)} <f f'>4
-	\tuplet 6/4 4 {r16 <f f'>( <g g'> <aes aes'> <e e'> <f f'>)} <f f'>4
-	\tuplet 6/4 4 {r16 <f f'>( <g g'> <aes aes'> <e e'> <f f'>)} <f f'>4
-	<f f'>4->\fz <e e'>->
-	<dis! dis'!>->\< << <d d'>-> {s8 s\!}>>
+	\tuplet 6/4 4 {r16 fis( gis a eis fis)} f4
+	\tuplet 6/4 4 {r16 f( g aes e f)} f4
+	\tuplet 6/4 4 {r16 f( g aes e f)} f4
+	f->\fz e->
+	dis->\< d->\!
 % Bars 56 to 60
-	<d d'~>4\f\> d'16 cis( b a)\!
+	d4\f\>~ d16 cis( b a)\!
 	gis8.(\< fisis32 gis) b16( a) a( gis)\!
 	gis8[ \acciaccatura b a~ a\> gis]\!
 	g8\pp r16 e[^\pizz cis' e,] r e
@@ -88,7 +88,7 @@ musicViolinoIMvtII = \relative c {
 	r8. <e, g>32( <cis' e>)\< q8.\! r16
 % Bars 66 to 70
 	r8. <e, g>32(\< <cis' e>) e16.( d32 cis16. b32)\!
-	a4(\f\> gis8\!) \afterGrace gis(\trill {fisis16 gis}
+	a4(\f\> gis8\!) \afterGrace gis(\trill {\stemDown fisis16 gis \stemNeutral}
 	cis,8)\p r r gis'( \mark \default
 	e'4~\< \tuplet 6/4 4 {e16) dis( e fis e dis)\!}
 	e4. r8
@@ -99,7 +99,7 @@ musicViolinoIMvtII = \relative c {
 	r8 \tuplet 3/2 8 {r16 e,,-._\ppdim e-.} r8 \tuplet 3/2 8 {r16 e-. e-.} 
 	r8 \tuplet 3/2 8 {r16 e-. e-.} r8 \tuplet 3/2 8 {r16 e-. e-.} 
 % Bars 76 to 80
-	<g, e'>2\fp\>~
+	\hairpinShorten #'(0 . 1.5) <g, e'>2\fp\>~
 	q\!
 	e'4(\ppp fis
 	g gis)
@@ -107,8 +107,8 @@ musicViolinoIMvtII = \relative c {
 % Bars 81 to 85
 	r4 r8 b32(\< dis fis b)\!
 	c4\mf~ c8. c,32( c')
-	<< cis!4~ {s8 s\<}>> cis8. d,32( d')\!
-	dis!8( a'\f~ a16 gis fis e)
+	\ottava #1 << cis!4~ {s8 s\<}>> cis8. d,32( d')\!
+	dis!8( a'\f~ a16 gis fis e) \ottava #0
 	dis4(~ \tuplet 6/4 4 {dis16_\dimmarkup cis dis fis\p e cis)}
 % Bars 86 to 90
 	cis8( b~ \tuplet 6/4 4 {b16_\dimmarkup a b cis b a)}
@@ -135,7 +135,7 @@ musicViolinoIMvtII = \relative c {
 	R2*2
 	
 % Bars 106 to 110
-	r4 r16 <ges,, ges'>32\((\pp <ges' ges'>) q16-.\) r
+	r4 r16 <ges,, ges'>32\((-\offset X-offset #-2.5 \pp <ges' ges'>) q16-.\) r
 	R2
 	r4 r16 <ges, ges'>32\(( <ges' ges'>) q16-.\) r
 	R2*2
@@ -159,13 +159,13 @@ musicViolinoIMvtII = \relative c {
 	r16 <a, a'>32\((\brack\f <a' a'>) q16-.\) r r4
 	R2 \mark \default
 % Bars 126 to 130
-	\divideBeam f,32(\fp ees') ees( f,) f( ees') ees( f,) f( ees') ees( f,) f( d') d( f,)
-	f( ees') ees( f,) f( d') d( f,) f( ees') ees( f,) f( e') e( f,)
+	\divideBeam f,32(\fp ees') ees( f,) f( ees') ees( f,) f( ees') ees( f,) \stemDown f( d') d( f,) \stemNeutral
+	f( ees') ees( f,) \stemDown f( d') d( f,) \stemNeutral f( ees') ees( f,) f( e') e( f,)
 	aes( f') f( aes,) aes( f') f( g,)_\crescmarkup aes( f') f( aes,) aes( e') e( aes,)
 	aes( f') f( aes,) aes( ges'!) ges( aes,) aes( g') g( aes,) aes( aes') aes( ces,)
 	ces(\< aes') aes( ces,) ces( aes') aes( ces,) ces( a') a( ces,)\! bes(\f bes') bes( bes') \resetBeam
 % Bars 131 to 135
-	<< <aes,! aes'!>4.\fp {s8 s_\dimmarkup s}>> <ges ges'>8-.
+	<aes,! aes'!>4._\fpdim <ges ges'>8-.
 	<f f'>4. \tuplet 3/2 8 {<ees ees'>16( <bes bes'> <c c'>)}
 	<des des'>4.(\> <bes bes'>16)\! q32( <des des'>)
 	<aes aes'>4. r8
@@ -173,7 +173,7 @@ musicViolinoIMvtII = \relative c {
 % Bars 136 to 140
 	
 	
-	r4 r8 bes16-.\p bes32( des)
+	r4^\tranquillo r8 bes16-.\p bes32( des)
 	<< aes4. {s8 s_\morendo s}>> \acciaccatura aes8 ges32( f ges bes)
 	f4. \tuplet 3/2 8 {ees16( bes c)}
 % Bars 141 to 145
@@ -187,27 +187,27 @@ musicViolinoIMvtII = \relative c {
 	aes( c,) ees-. aes( c,) ees-. aes( c,) ees-. aes( c,) f-.
 	g(\fp\< c,) ees-. g( c,) ees-. g( c,) ees-. g( ees) des-.\!
 	aes'(\> c,) ees-. aes( c,) ees-. aes( c,) ees-.\! aes( des,) f-.
-	aes(\< c,) ees-. aes( c,) ees-. aes( c,) ees-. ges(\! ees) ces'-.
+	aes(\< c,) ees-. aes( c,) ees-. aes( c,) ees-. ges!(\! ees) ces'-.
 % Bars 151 to 155
 	bes(\f des,) ges-. bes( des,) ges-. aes( des,) f-. aes( des,) f-.
 	aes(\> c,) ees-. aes( c,) ees-. g( c,) ees-. g( ees) des-.\!
-	aes'( c,) ees-. aes( c,) ees-. << {aes s s}\\{aes( c,) ees-.}>> \bar "!" ees(\pp aes, ces)
+	aes'( c,) ees-. aes( c,) ees-. << {aes s s}\\{aes( c,) ees^.}>> \textMark "Vi-" \bar "!" ees(\pp aes, ces)
 	ees( aes, ces\< ees aes, ces) fes( aes, ces fes aes, ces)\!
 	ees( ges, ces ees ges, ces_\dimin des f,! aes des f, aes)
 % Bars 156 to 160
 	des( ges, bes des ges, bes des ges, bes des ges, beses)
 	cis(\pp fis, a cis fis, a d fis, a d fis, a)
 	cis( e, a cis e, a d e, gis b e, <gis e'>)
-	e'( a, cis e a, cis) } \resetBeam e8[-> \bar "!" cis']\fz \mark \default
+	e'( a, cis e a, cis) } \resetBeam e8[-> \textEndMark "-de" \bar "!" cis']\fz \mark \default
 	c!4.( b8->)
 % Bars 161 to 165
 	c4.( b8->)
 	c([\< ees)\! des(\> b)]\!
 	c4.( des8)\fz\>
-	c4.(\! des8)\fz\>
-	c8\<([ f ees eeses)]\!
+	c4.(\! \hairpinShorten #'(-0.3 . -1.5) des8)\fz\>
+	\hairpinShorten #'(1.5 . 0) c8\<([ f ees eeses)]\!
 % Bars 166 to 170
-	des(_\espress ges~\mf ges) f16( ges32 aes)
+	des(_\mfespress ges~ ges) f16( ges32 aes)
 	ges4~ ges8_\brackM\crescmarkup f16( ges32 aes)
 	ges8 f16( ges32 aes) ges8 d16( ees32 f)
 	ees4 aes8.(\f c,16)
@@ -239,10 +239,10 @@ musicViolinoIMvtII = \relative c {
 	cis'16( b32 a a16 gis32 fis) e16( d32 cis cis16 b32 a)
 	des'!16( ces32 bes! bes16 aes!32 ges!) ges16( f!32 ees! des!16 ces32 aes!)
 % Bars 196 to 200
-	des'16(\< ces32 bes bes16 aes32 ges) ges16( f32 ees des16 ces32 aes!)\!
+	des'16(-\tweak rotation #'(-3 1 0) \< ces32 bes bes16 aes32 ges) ges16( f32 ees des16 ces32 aes)\!
 	f''16(->\ff ees32 d) d16(-> c32 bes) bes16(-> a32 g) f16->( ees32 d)
 	f'16(-> e32 d) d16->( c32 b) b16->( a32 g) f16->( e32 d)
-	c->\ff g''-> fis-> f-> e( ees) d( des) r16 c32( b) r bes-> a-> aes->
+	\stemDown c->-\offset X-offset -2.5 \ff g''-> fis-> f-> \stemNeutral e( ees) d( des) r16 c32( b) r bes-> a-> aes->
 	g( fis) f( e) r16 ees32( d) r16 des32-> c-> \tuplet 3/2 8 {b16-> bes-> a->}
 % Bars 201 to 205
 	R2*7
@@ -251,7 +251,7 @@ musicViolinoIMvtII = \relative c {
 	
 	r16. a'32\p ees'( f ges f ees16) r r8
 	r16. bes32\pp e( f g f e16) r r8
-	r16. b32\< f'( g aes g f16)\! r r8
+	r16. b32 f'(\< g aes g f16)\! r r8
 % Bars 211 to 215
 	r16. c32\f fis( g a fis) dis( e fis dis) c!( d ees c)
 	a16 r r8 r \tuplet 5/4 {fis'32( eis fis a d)} \resetBeam
@@ -260,7 +260,7 @@ musicViolinoIMvtII = \relative c {
 	a4\f(~  a16 gis fis e)
 % Bars 216 to 220
 	dis4(~\> \tuplet 6/4 4 {dis16 cis\p dis fis e cis)}
-	b8(\> b~ \tuplet 6/4 4 {b16 a b cis b a)\!}
+	cis8(\> b~ \tuplet 6/4 4 {b16 a b cis b a)\!}
 	a8( gis~ \tuplet 6/4 4 {gis16\pp fis gis b a e)}
 	gis4( fis8 e16. cis32)
 	cis2\ppp~
@@ -296,14 +296,14 @@ musicViolinoIMvtII = \relative c {
 	r4 r32 gis-> d'-> b-> gis16->\noBeam r
 % Bars 246 to 250
 	r32 gis-> d'-> b-> gis16->\noBeam r r32 gis-> d'-> b-> gis16->\noBeam r
-	r32 gis'([\ppp^\soli d' b] gis d' b gis d'[ b gis d'] b gis d'16~
+	r32 gis'([\ppp^\soli d' b] \stemDown gis d' b gis \stemNeutral d'[ b gis d'] b gis d'16~
 	d2)
 	cis4( c
 	b bes
 % Bars 251 to 255
 	a\< gis!8 fis)\!
 	fis8.[(_\moltocresc eis16) d8.( cis16)]
-	cis8\f << cis4.\fz\> {s8 s s\!}>>
+	cis8\f << \hairpinShorten #'(-0.3 . -3) cis4.\fz\> {s8 s s\!}>>
 	r4 bis\pp
 	cis8 r r4
 % Bars 256 to 260
@@ -328,4 +328,23 @@ musicViolinoIMvtII = \relative c {
 	r4 r8 f32(\pp aes des ees)
 	f2\pp~
 	f\fermata \fine
+}
+musicViolinoIDivisiMvtII = \relative c {
+	\clef treble
+	\key cis \minor
+	s2*33 s4*1 s2*14
+% Bars 49 to 50
+	\tuplet 6/4 4 {r16 fis'(\> gis a eis fis)\!} fis4
+	\tuplet 6/4 4 {r16_\pocoapococresc fis( gis a eis fis)} fis4
+% Bars 51 to 55
+	\tuplet 6/4 4 {r16^\stringendo fis( gis a eis fis)} f4
+	\tuplet 6/4 4 {r16 f( g aes e f)} f4
+	\tuplet 6/4 4 {r16 f( g aes e f)} f4
+	f->\fz e->^\accel
+	dis->\< d->\!
+% Bars 56 to 59
+	d4\f\> d'16 cis( b a)\!
+	gis8.(\< fisis32 gis) b16( a) a( gis)\!
+	gis8[^\pocorit \acciaccatura b a~ a\> gis]\!
+	g8\pp^\atempo r16 e[^\pizz cis' e,] r e
 }

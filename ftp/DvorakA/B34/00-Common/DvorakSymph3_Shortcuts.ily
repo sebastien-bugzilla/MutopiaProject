@@ -84,6 +84,11 @@ pppoco_cresc = \markup {
 semprepp = \markup {\hspace #-1.33 \italic sempre \dynamic pp }
 ppbracknaturale = \markup {\hspace #-0.83 \dynamic pp \bracket \with-true-dimensions \italic naturale}
 ppsulponticello = \markup {\hspace #-0.83 \dynamic pp \italic "sul ponticello"}
+pppocoa_pococresc = \markup {
+	\hspace #-0.83 \dynamic pp \italic {
+		\translate #'(0 . 2) \column { \lower #1.5 "poco a" "poco cresc"}
+	}
+}
 %--------------------
 % dynamics p
 %--------------------
@@ -165,6 +170,7 @@ mfbrackcresc = \markup {
 	\hspace #-0.79 \dynamic mf \bracket \with-true-dimensions \italic "cresc."
 }
 mfcresc = \markup {\hspace #-0.79 \dynamic mf \italic cresc. }
+mfespress = \markup {\hspace #-0.79 \dynamic mf \italic espress. }
 %--------------------
 % dynamics fz
 %--------------------
@@ -311,6 +317,12 @@ pocoa_pococresc = \markup {
 	\italic { \column { \lower #1.5 "poco a" "poco cresc."} }
 }
 brackpocoapococresc = \markup { \italic { \bracket \with-true-dimensions  "poco a poco" cresc }}
+brackpocoa_pococresc = \markup { 
+	\italic { \column { \lower #1.5
+		\line { \bracket \with-true-dimensions "poco a" }
+		\line { \bracket \with-true-dimensions "poco" cresc }}
+	}
+}
 pocoapococrescendo = \markup {\italic "poco a poco crescendo"}
 pocoapoco_crescendo = \markup {
 	\italic { \column { \lower #1.5 "poco a poco" "crescendo" } }
@@ -354,6 +366,11 @@ espr = \markup {\italic espr.}
 marcatissimo = \markup {\italic marcatissimo}
 naturale = \markup {\italic naturale}
 tutti = \markup {Tutti}
+tranquillo = \markup {\italic tranquillo}
+stringendo = \markup {\italic stringendo}
+accel = \markup {\italic accel.}
+pocorit = \markup {\italic "poco rit."}
+atempo = \markup {\italic "a tempo"}
 %--------------------
 % instrument modification
 %--------------------
@@ -775,7 +792,13 @@ noteHeadEsw = #(define-music-function
 
 revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
 
+pathSlur = #'(
+	(curveto 1.5 1  3.8 1  5.5 0)
+)
 
+fakeSlur = \markup {
+	\path #0.15 #pathSlur
+}
 
 
 %ottavaEO = #(define-music-function
