@@ -91,7 +91,7 @@ musicViolinoIIMvtI = \relative c {
 	<c a'>2.:32\fff
 	q:
 	q8 r r <fis, a>4.:32-\offset X-offset -2 \fppD\>
-	<< q2.:8 {s8 s s\! s4.}>>
+	<< q2.:32 {s8 s s\! s4.}>>
 % Bars 71 to 75
 	q2.:
 	q:
@@ -215,7 +215,7 @@ musicViolinoIIMvtI = \relative c {
 	e,( a c\< a e' c  a e e' c a c)\!
 % Bars 176 to 180
 	<c, f>2.:32\f
-	q4.-\tweak extra-offset #'(0 . 1) \> << <b f'>: {s8 s s\!}>>
+	q4.:-\tweak extra-offset #'(0 . 1) \> << <b f'>: {s8 s s\!}>>
 	dis16(\pp fis dis fis dis fis  dis fis dis fis dis fis
 	dis fis dis fis dis fis  dis fis dis fis dis fis 
 	dis fis dis fis dis fis  dis fis dis fis dis fis)
@@ -369,13 +369,13 @@ musicViolinoIIMvtI = \relative c {
 	<< q: {s8\< s s  s s s\!}>>
 	<c a'>2.:\ff
 	q:
-	<ges des' bes'>8 r bes16.-. aes32-. aes4( ges8)
+	<ges des' bes'>8 r bes16.-. aes32-. aes4( ges!8)
 % Bars 311 to 315
 	r4 ces16.-. bes32-. bes4(\< aes8)\!
 	r4 des16.-. ces32-. ces4(\< bes8)\!
 	des16.-.[ ces32-.] ces8( bes16) r d16.-.[ cis32-.] cis8( b16) r
 	ees!16.-.[ d32-.] d8( c!16) r e16.-.[ d32-.] d8( cis16) r
-	f16.-.->_\pcresc e32 e8 f16.-> e32 e8 f16.-> e32 e8
+	f16.->_\pcresc e32 e8 f16.-> e32 e8 f16.-> e32 e8
 % Bars 316 to 320
 	<d, b' f'>8 r r <f d' bes'!> r r
 	<bes, g' ees'>4.\arpeggio-\offset X-offset -0.5 \ff d'16( ees f ees d ees)
@@ -395,7 +395,7 @@ musicViolinoIIMvtI = \relative c {
 	\beamOffset #'(0.5 . 0.5) <f f'>(\p <bes bes'> <ges ges'> <bes bes'> <ges ges'> <bes bes'>   <f f'> <bes bes'> <ges ges'> <bes bes'> <ges ges'> <bes bes'>)
 	<f f'>( <bes bes'> <ges ges'> <bes bes'> <ges ges'> <bes bes'>) \beamOffset #'(1 . 0) aes'-^\ff f-^ d!-^ bes-^ aes-^ f-^
 % Bars 331 to 335
-	<g': bes>2.:32\pp
+	<g'! bes>2.:32\pp
 	q:_\brackpocoapococresc
 	q:
 	q:\mf\<

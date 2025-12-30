@@ -171,6 +171,9 @@ mfbrackcresc = \markup {
 }
 mfcresc = \markup {\hspace #-0.79 \dynamic mf \italic cresc. }
 mfespress = \markup {\hspace #-0.79 \dynamic mf \italic espress. }
+mfbrackespress = \markup {
+	\hspace #-0.79 \dynamic mf \bracket \with-true-dimensions \italic "espress."
+}
 %--------------------
 % dynamics fz
 %--------------------
@@ -265,6 +268,7 @@ brackfppocoapococrescendo = \markup {
 	\italic "poco a poco crescendo"
 }
 fpmarkup = \markup {\hspace #-0.69 \dynamic fp}
+fpcresc = \markup {\hspace #-0.69 \dynamic fp \italic "cresc."}
 %--------------------
 % dynamics f
 %--------------------
@@ -800,6 +804,9 @@ fakeSlur = \markup {
 	\path #0.15 #pathSlur
 }
 
+tupletBracketOff = \override TupletBracket.bracket-visibility = ##f
+
+tupletBracketOn = \override TupletBracket.bracket-visibility = ##t
 
 %ottavaEO = #(define-music-function
 %	(offset)

@@ -9,7 +9,7 @@ musicViolinoIIMvtIII = \relative c {
 	\key ees \major
 %	\transposition a
 % Bars 1 to 5
-	R2
+	\mmrnDown R2
 	\repeat tremolo 4 {d'16(\fp\> f}
 	\repeat tremolo 4 {d\! f}
 	\repeat tremolo 4 {d f}
@@ -137,7 +137,7 @@ musicViolinoIIMvtIII = \relative c {
 	bes4(->\fz g8) r
 	c4->(\fz a8) r
 	des4->(\fz bes8) r
-	d!4->(_\fzpocoapococresc b8) r
+	d!4->(_\fzpocoa_pococresc b8) r
 	ees4(->\fz c8) r
 % Bars 111 to 115
 	e4(->\fz cis8) r
@@ -182,7 +182,7 @@ musicViolinoIIMvtIII = \relative c {
 	q:
 	q:
 % Bars 146 to 150
-	bes16\fp des des des  des des des des
+	bes!16\fp des des des  des des des des
 	des2:16
 	b16\fp d! d d  d d d d
 	d!2:16
@@ -192,10 +192,10 @@ musicViolinoIIMvtIII = \relative c {
 	cis16\fp e e e  e e e e
 	e2:16
 	f16(\fp\< aes) aes aes  aes aes aes aes
-	f(_\fpmarkup aes) aes aes  aes aes aes aes
+	\markEO #'(0 . 2) f(_\fpmarkup aes) aes aes  aes aes aes aes
 % Bars 156 to 160
-	f(_\fpmarkup_\crescmarkup aes) aes aes  aes aes aes aes
-	f(_\fpmarkup aes) aes aes  aes aes aes aes\!
+	\markEO #'(0 . 2) f(_\fpcresc aes) aes aes  aes aes aes aes
+	\markEO #'(0 . 1.3) f(_\fpmarkup aes) aes aes  aes aes aes aes\!
 	<aes, f'>2:16\ff
 	q:
 	q:
@@ -343,7 +343,7 @@ musicViolinoIIMvtIII = \relative c {
 	ces' r r4
 	R2*2
 	
-	\repeat tremolo 4 {<bes,, aes'>16(\ff <d f>}
+	\startMeasureCount \repeat tremolo 4 {<bes,, aes'>16(\ff <d f>}
 	\repeat tremolo 4 {<bes aes'> <d f>)}
 % Bars 286 to 290
 	\repeat tremolo 4 {<bes aes'>( <d f>}
@@ -352,13 +352,13 @@ musicViolinoIIMvtIII = \relative c {
 	\repeat tremolo 4 {<bes aes'> <d f>)}
 	\repeat tremolo 4 {<bes aes'>( <d f>}
 % Bars 291 to 295
-	\repeat tremolo 4 {<bes aes'> <d f>)}
+	\repeat tremolo 4 {<bes aes'> <d f>)} \stopMeasureCount
 	<aes d>2:16->
 	q:->
 	q:->
 	\restPattern <aes d>8 cis16( ees8) d16(
 % Bars 296 to 300
-	\restPattern f8)_\brackM\dimmarkup a,16( c8) a16(
+	\restPattern f8)-\offset X-offset -0.5 _\brackM\dimmarkup a,16( c8) a16(
 	\restPattern bes8) a16( c8) a16(
 	\restPattern bes8) a16( c8) a16(
 	bes8)\p r r4
@@ -463,7 +463,7 @@ musicViolinoIIMvtIII = \relative c {
 	b4(->\fz gis8) r
 	cis4(->\fz ais8) r
 	d4(->\fz b8) r
-	ees!4(->\fz c8) r
+	ees!4(->\fz c!8) r
 	e4(->\fz cis8) r
 % Bars 386 to 390
 	f4(->\fz d8) r
@@ -473,7 +473,7 @@ musicViolinoIIMvtIII = \relative c {
 	f:
 % Bars 391 to 395
 	f:
-	f16 f e e  ees ees des des \mark \default
+	f16 f e e  ees ees des des \markXoffset #-0.2 \mark \default
 	<ees, c'>2:16->\brack\ff
 	q8-. bes'( g aes)
 	<f ees'>2:16->
@@ -566,7 +566,7 @@ musicViolinoIIMvtIII = \relative c {
 	e4( b'
 	gis fis8 e) \mark \default
 	\scaleDurations 2/3 {
-		\timeSignature 3/4 e8\brack\ff\< e gis gis b b
+		\timeSignature 3/4 \tempoXoffset #4 e8\brack\ff\< e gis gis b b
 		e e gis gis b b\!
 % Bars 486 to 490
 		\key e \major c-> c a-> a fis-> fis
@@ -632,7 +632,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 536 to 540
 	<bes g'>2:16->
 	q8 a( fis g)
-	f'2:16->
+	f'!2:16->
 	f8( ees) d-. c-.
 	ees( d) c-. bes-.
 % Bars 541 to 545
@@ -669,7 +669,7 @@ musicViolinoIIMvtIII = \relative c {
 	g'
 	e\<
 	fis\!) \section
-	\key b \major fis2:32\pp\<
+	\key b \major \hairpinShorten #'(-0.3 . -1) fis2:32\pp\<
 	fis:\f\>
 % Bars 571 to 575
 	fis:\! \mark \default
@@ -752,7 +752,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 636 to 640
 	c8:16->\f g: f!: ees:
 	c'8 r r4
-	c8:16-> g: f!: ees:
+	c8:16-> g: f: ees:
 	c'8 r r4
 	c8:16->\f bes: aes: ees:
 % Bars 641 to 645
@@ -764,7 +764,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 646 to 650
 	c':-> aes: f: c:
 	d':-> aes: g: f:
-	d':-> bes!: g: d:->
+	d':-> bes!: g: d:
 	cis':-> a: e: cis:
 	b':-> gis: e: b:
 % Bars 651 to 655
@@ -788,7 +788,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 666 to 670
 	des( f ges g)
 	bes( aes ges ees)
-	<f aes>2:16\ff
+	\startMeasureCount <f aes>2:16\ff
 	q:
 	q:
 % Bars 671 to 675
@@ -796,15 +796,15 @@ musicViolinoIIMvtIII = \relative c {
 	q:
 	q:
 	q:
-	q:
+	q: \stopMeasureCount
 % Bars 676 to 680
-	<e a>:
+	\startMeasureCount <e a>:
 	q:
 	q:
 	q:
 	q:
 % Bars 681 to 685
-	q:
+	q: \stopMeasureCount
 	<ges bes>:
 	q:
 	<g! bes>:
@@ -884,7 +884,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 746 to 750
 	bes: a: c: bes:
 	bes: a: c: bes:
-	\restPattern ees8_\ffbrackp d16( f8) d16(
+	\startMeasureCount \restPattern ees8_\ffbrackp d16( f8) d16(
 	\restPattern ees8)-._\pocoapococresc d16( f8) d16(
 	\restPattern ees8)-. d16( f8) d16(
 % Bars 751 to 755
@@ -892,7 +892,7 @@ musicViolinoIIMvtIII = \relative c {
 	\restPattern ees8)-. d16( f8) d16(
 	\restPattern ees8)-. d16( f8) d16(
 	\restPattern ees8)-. d16( f8) d16(
-	\restPattern ees8)-. d16( f8) d16(
+	\restPattern ees8)-. d16( f8) d16( \stopMeasureCount
 % Bars 756 to 760
 	ees8)\ff r r8. bes'16-.\ff
 	g2->\fz~

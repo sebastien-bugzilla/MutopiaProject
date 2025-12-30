@@ -38,15 +38,23 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34)"
+			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34) — Violine II"
 		}
 		instrument = \markup {
-			"ViolineII"
+			""
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
 		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
-			\new Staff {
+			\new Staff <<
 				\new Voice {
 					\formatViolinoIIMvtI
 				}
@@ -59,7 +67,7 @@
 				\new Voice {
 					\timeMvtI \nameViolinoIIMvtI \musicViolinoIIMvtI
 				}
-			}
+			>>
 			\new Staff {
 				\new Voice {
 					\timeMvtI \musicViolinoIIDivisiMvtI
@@ -91,7 +99,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -115,7 +123,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}

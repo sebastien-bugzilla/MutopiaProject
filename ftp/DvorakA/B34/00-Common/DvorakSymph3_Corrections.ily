@@ -82,6 +82,9 @@ correctionMvtIII = \markup {
 	% bar 633 / Cello & Contrabass
 	"Bar 633, Cello & Contrabass : a rest is printed in total contradiction with rhythm."
 	
+	% bar 648 / Violin II
+	"Bar 648, Violin II : an accent is indicated on the last beat and not replicated in part score nore in viola part. The accent is removed."
+	
 	% bar 722 / Cello & Contrabass
 	"Bar 722, Cello & Contrabass : an accent is printed in conductor score, a marcato in the part score. The part score is more coherent with adjacent measures."
 	
@@ -205,4 +208,12 @@ CorrectionViolinI = \markup {
 	"Bar 240, Mvt III : 'naturale' indication is dedicated to Violin II and is removed."
 	% bar 283 / Mvt III
 	"Bar 283, Mvt III :  a missing rest is added."
+}
+CorrectionViolinII = \markup {
+	% bar 20 / Mvt II
+	"Bar 20, Mvt II : on the second beat, the sharp is positioned on the f whereas it should be on the d."
+	% bar 31 - 33 / MvtII
+	"Bars 31-33, Mvt II : there is an incoherence in the rhythm. If the 24 is correct, notes should be dotted. Otherwise, the number should not be printed and thus correspond to 32th."
+	% bar 174 / Mvt II
+	"Bar 174, Mvt II : a missing slur is added on the last two notes."
 }

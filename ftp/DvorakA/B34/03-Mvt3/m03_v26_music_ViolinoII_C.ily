@@ -764,7 +764,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 646 to 650
 	c':-> aes: f: c:
 	d':-> aes: g: f:
-	d':-> bes!: g: d:->
+	d':-> bes!: g: d:
 	cis':-> a: e: cis:
 	b':-> gis: e: b:
 % Bars 651 to 655
