@@ -22,7 +22,7 @@ musicViolaMvtII = \relative c {
 	r <ees g>-> r_\crescmarkup <d f>->
 % Bars 11 to 15
 	<eis gis!>(\f <gis b> <fis a>16\> <a cis> <gis b> <fis  a>)\!
-	<cis e>4(\p\< <e gis>)\!
+	<cis e!>4(\p\< <e! gis>)\!
 	<e gis>8( <a cis>\> <fis a> <e gis>16 <dis fis>)\!
 	e4(\pp dis8) r
 	e4( <dis fis>8) r
@@ -32,9 +32,9 @@ musicViolaMvtII = \relative c {
 		a16.( g32 fis16. e32) \oneVoice dis8( e)
 		fis2
 	} \\ {
-		e4(\< d8 fis)\!
+		\shape #'((0.5 . 2)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur e4(\< d8 fis)\!
 		d4\f\> s8 s\!
-		<< { fis4(\p dis) } {s8\< s\! s\> s\!}>>
+		<< {\hairpinShorten #'(-0.5 . 0.9) fis4(\p dis) } {s8\< s \hairpinShorten #'(-0.9 . 0) s\> s\!}>>
 	} >>
 	R2
 	fis4\p \tuplet 6/4 4 {r16 fis(\< gis a eis fis)\!}
@@ -78,10 +78,10 @@ musicViolaMvtII = \relative c {
 	<dis fis>8.( <bis dis>32 <dis fis>) <c f>16( <aes c!> <c f>) r
 	<d f>4~ q16\( <b! d!>32( <d f>) <c f>16[( <aes c!>)]\)
 	<d f>4~ q16\( <b d!>32( <d f>) <c f>16([ <aes c!>])\)
-	\tuplet 6/4 4 {r16 b( cis! d ais b) r b( cis d ais b)
-	r g(\< a! b fis g) r f( g aes e f)\!}
+	\tupletBracketOn \tuplet 6/4 4 {r16 b( cis! d ais b) r b( cis d ais b)
+	r g(\< a! b fis g) r f( g aes e f)\!} \tupletBracketOff
 % Bars 56 to 60
-	r32 e[(\f\> f g] \tuplet 6/4 8 {aes e f g aes f) r fis( gis a cis,\! a'} gis[ cis, fis cis)]
+	r32 e[(\f\> f g] \tuplet 6/4 8 {aes e f g aes f) \once \tupletBracketOn r fis( gis a cis,!\! a'} gis[ cis, fis cis)]
 	e8(\trill\< \tuplet 6/4 8 {dis32 e fis e dis e)} gis8( cis)\!
 	<e, gis>(\< <a cis>)\! <fis a>(\> <e gis>16 <dis fis>)\!
 	r <e g>32(\pp <cis' e>) q16( <e, g>) r <e g>32( <cis' e>) q16( <e, g>) 
@@ -90,20 +90,20 @@ musicViolaMvtII = \relative c {
 	r <e g>32( <cis' e>) q16( <e, g>) r <d fis>32( <b' d>) q16( <d, fis>)
 	r <cis a'>32(\> <a' cis>) q16( <cis, a'>) r <e gis>32( <gis cis>) <gis bis>16( <e fis>)\!
 	r <e gis>32( <gis cis>) q16( <e gis>) <cis cis'>-.\noBeam r r8 
-	\tuplet 6/4 4 {r16 g'(\brack\pp cis e cis g) r g( cis e cis g)
+	\tupletBracketOn \tuplet 6/4 4 {r16 g'(\brack\pp cis e cis g) r g( cis e cis g)
 	r g( cis e cis g) r g(\< cis e cis g)\!
 % Bars 66 to 70
 	r g( cis e cis g) r fis( b d b fis)
-	r fis(\f\> a cis a fis)} \tuplet 3/2 8 {cis'( gis e)\!} <fis bis>16\noBeam r
+	r fis(\f\> a cis a fis)} \once \tupletBracketOff \tuplet 3/2 8 {cis'( gis e)\!} <fis bis>16\noBeam r
 	\repeat tremolo 8 { <cis e>32(\p <e gis>)} \mark \default
 	\tuplet 3/2 8 {r16 <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) 
 	r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) 
 % Bars 71 to 75
 	r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) 
 	r <e gis>-.(\< <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.)\!
-	r <e gis>-.( <gis e'>-.)\> r <e ais>-.( <ais e'>-.) r <e ais>-.( <ais e'>-.) r <e b'>-.( <b' e>-.)\!}
+	r <e gis>-.( <gis e'>-.)\> r <e ais>-.( <ais! e'>-.) r <e ais>-.( <ais e'>-.) r <e b'>-.( <b' e>-.)\!}
 	r8 \tuplet 3/2 8 {r16 g-._\ppdim g-.} r8 \tuplet 3/2 8 {r16 g-. g-.} 
-	r8 \tuplet 3/2 8 {r16 g-. g-.} r8 \tuplet 3/2 8 {r16 gis-. gis-.} 
+	r8 \tuplet 3/2 8 {r16 g-. g-.} r8 \tuplet 3/2 8 {r16 gis-. gis-.} \tupletBracketOff
 % Bars 76 to 80
 	<c, g'>2\fp\>~
 	q\!
@@ -114,7 +114,7 @@ musicViolaMvtII = \relative c {
 		c\ppp c!~
 		c2
 	} >>
-	<dis! fis!>16\fz r \tuplet 3/2 8 {dis16->\f fis-> dis-> c->[ ees-> c->] a-> c-> a->
+	<dis! fis!>16\fz r \tuplet 3/2 8 {dis16->\f fis-> dis-> c->[ ees-> c->] \stemDown a-> c-> a-> \stemNeutral
 % Bars 81 to 85
 	fis-> a-> fis-> dis!->[ fis-> dis->] c-> ees-> c->} b'16\noBeam r
 	a32(\mf fis a \liiirii fis \liiriii a fis a fis  a fis a \liiirii fis \liiriii a fis dis fis)
@@ -129,9 +129,9 @@ musicViolaMvtII = \relative c {
 	<cis e>32[( e cis' gis]) r e[( cis' gis]) r dis[( b' fis]) r dis[( bis' fis)]
 % Bars 91 to 95
 	<cis e>8-.[(\pp <e gis>-. <dis fis>-. <fis gis>-.])
-	<cis >32( gis' cis gis) r\> e( cis' gis) r dis( b'! fis) r dis( bis' fis)\!
+	<cis e>32( gis' cis gis) r\> e( cis' gis) r dis( b'! fis) r dis( bis' fis)\!
 	<e gis>8-.[\pp <fis gis>-. <e gis>-._\dimmarkup <fis gis>-.]
-	\tuplet 6/4 4 {r16 fisis( gis a b a)} <e gis>[ r <fis gis>] r
+	\once \tupletBracketOn \tuplet 6/4 4 {r16 fisis( gis a b a)} <e gis>[ r <fis gis>] r
 	<e gis>\ppp r <fis a>-> r <e gis> r <fis a>-> r
 % Bars 96 to 100
 	e8 r e r
@@ -202,14 +202,14 @@ musicViolaMvtII = \relative c {
 % Bars 151 to 155
 	bes,16\f des ges! bes des8 r
 	aes,16\> ees' aes c g c ees, bes'\!
-	r aes, ees' aes c8 \bar "!" r^\brackM\arco
+	r aes, ees' aes c8 \textMark "Vi-" \bar "!" r^\brackM\arco
 	\tuplet 3/2 8 {\divideBeam ees,16( aes,) ces-. ees( aes,) ces-. e( gis,) b-. e( gis,) b-.
 	ees!( ges,!\> ces ees ges, ces des f,! aes des f, aes)\!
 % Bars 156 to 160
 	des( ges, bes des ges, bes des ges, bes des ges, beses)
 	cis(\pp fis, a cis fis, a} d16) r \tuplet 3/2 8 {r fis,( a)
-	cis( e, a} cis) r r8 \tuplet 3/2 8 {r16 e,( e')
-	e( a, cis e a, cis)} e8->[ \bar "!" fis->] \mark \default
+	cis( e, a} cis) r r8 \once \tupletBracketOn \tuplet 3/2 8 {r16 e,( e')
+	e( a, cis e a, cis)} e8->[ \textEndMark "-de" \bar "!" fis->] \mark \default
 	r16. ees!32\p c!( ees aes! ees ges!16) r r8
 % Bars 161 to 165
 	r16. ees32 c( ees aes ees ges16) r r8
@@ -250,24 +250,24 @@ musicViolaMvtII = \relative c {
 % Bars 191 to 195
 	r e,^\pizz a b cis r d r
 	r e,\< a b cis r d\! r
-	\divideBeam e(_\mfbrackcresc^\arco d32 cis cis16 b32 a) a16( gis32 fis f16 ees!32 des!)
+	\divideBeam e(_\mfbrackcresc^\arco d32 cis \stemDown cis16 b32 a) \stemNeutral a16( gis32 fis f16 ees!32 des!)
 	cis'16( b32 a a16 gis32 fis) e16( d32 cis) cis16 r
 	des'!16( ces32 bes! bes16 aes!32 ges!) ges16( f!32 ees!) des!16 r
 % Bars 196 to 200
 	des'16(\< ces32 bes bes16 aes32 ges) ges16( f32 ees) des16\! r
 	f'(->\ff ees32 d) d16(-> c32 bes) bes16(-> a32 g) f16(-> ees32 d)
 	f'16(-> e32 d) d16(-> c32 b) b16(-> a32 g) f16(-> e32 d)
-	c->\ff g''-> fis-> f-> e( ees) d( des) r16 c32( b) r bes-> a-> aes->
+	\stemDown c->-\offset X-offset -2.5 \ff g''-> fis-> f-> \stemNeutral e( ees) d( des) r16 c32( b) r bes-> a-> aes->
 	g( fis) f( e) r16 ees32( d) r16 des'!32-> c-> b16 r \resetBeam
 % Bars 201 to 205
 	ees,!32(_\ppsubito f ges! \liiiri f \liriii ges f ges f  ges f ges \liiiri f \liriii ges f aes ees)
-	ges( f ees \liiiri f \liriii ges f ges f  ges f ges \liiiri f \liriii ges f aes ees)
+	\startMeasureCount ges( f ees \liiiri f \liriii ges f ges f  ges f ges \liiiri f \liriii ges f aes ees)
 	ges( f ees \liiiri f \liriii ges f ges f  ges f ges \liiiri f \liriii ges f aes ees)
 	ges( f ees \liiiri f \liriii ges f ges f  ges f ges \liiiri f \liriii ges f aes ees)
 	ges( f ees \liiiri f \liriii ges f ges f  ges f ges \liiiri f \liriii ges f aes ees)
 % Bars 206 to 210
 	ges(\< f ees \liiiri f \liriii ges f ges f  ges f ges \liiiri f \liriii ges f aes ees)\!
-	ges(\< f ees \liiiri f \liriii ges f ges f  ges f ges \liiiri f \liriii ges f aes ees)\!
+	ges(\< f ees \liiiri f \liriii ges f ges f  ges f ges \liiiri f \liriii ges f aes ees)\! \stopMeasureCount 
 	ees'!2(\fppD
 	e
 	<< f)\< {s8 s s s\!}>>
@@ -282,7 +282,7 @@ musicViolaMvtII = \relative c {
 	r e(\> gis e gis e) cis( e a e a e)\!
 	r dis( gis dis gis dis)} e4\pp
 	\tuplet 6/4 4 {r16 e( gis e gis e)} <dis fis>4
-	r16 <e g>32(\pp <g! e'>) q16( <e g>) r q32( <g e'>) q16( <e g>) 
+	r16 \beamOffset #'(-0.7 . -0.7) <e g>32(\pp <g! e'>) q16( <e g>) r q32( <g e'>) q16( <e g>) 
 % Bars 221 to 225
 	r q32( <g! e'>) q16( <e g>) r q32( <g e'>) q16( <e g>) 
 	r q32(\< <g! e'>) q16( <e g>) r <d fis>32( <fis d'>) q16( <d fis>)\!
@@ -292,8 +292,8 @@ musicViolaMvtII = \relative c {
 % Bars 226 to 230
 	\repeat tremolo 8 {e( <a cis>)}
 	\repeat tremolo 8 {e( <gis b>)} \section
-	\time 2/8 <e a>4(\fp \section
-	\time 4/8 <d a'>8)\> <a' e'>^\pizz <a d> <a e'>\!
+	\time 2/8 <e a^~>4_(\fp \section
+	\time 4/8 <d a'>8)\noBeam\> <a' e'>^\pizz <a d> <a e'>\!
 	<a d>\noBeam fis'[(^\brackM\arco\< gis! a])\!
 % Bars 231 to 235
 	R2*4
@@ -311,7 +311,7 @@ musicViolaMvtII = \relative c {
 		a16.( g32 fis16. e32 dis8-.) e-.
 	} \\ {
 		cis4.(\< d8)\!
-		d4\mf\< dis8-. e-.\!
+		d4-\tweak extra-offset #'(0 . 1) \mf\< dis8-. e-.\!
 	} >>
 % Bars 242 to 245
 	<< fis2 {s8\< s s s\!}>>
@@ -326,16 +326,16 @@ musicViolaMvtII = \relative c {
 	d cis!
 % Bars 251 to 255
 	d\< a!)\!
-	<< {gis!2} \\ {gis4(_\brackM\moltocresc eis)} >>
-	<fis a>8\f << e4.->\fz\> {s8 s s\!}>>
+	<< {gis!2} \\ {gis4(^\brackM\moltocresc eis)} >>
+	<fis a>8\f << \hairpinShorten #'(-0.5 . -1.5) e4.->\fz\> {s8 s s\!}>>
 	r4 <dis fis>\pp
 	<cis e>8 r r4
 % Bars 256 to 260
-	r8 <e gis>[(\p\< <fis a>\> <dis fis>])\!
+	r8 \hairpinShorten #'(-0.3 . -0.7) <e gis>[(-\tweak extra-offset #'(0 . 0.5) \p\< \hairpinShorten #'(0.7 . 0) <fis a>\> <dis fis>])\!
 	<cis e>\p r r4
 	r8 gis'[(\pp e]~ e16)_\dimin fis\fermata
 	e4 <cis fis>->\fz\>~
-	q\! <cis_~ fis>\pp^(
+	q <cis_~ fis>\pp^(
 % Bars 261 to 265
 	<cis e>) r
 	R2*2
@@ -349,16 +349,22 @@ musicViolaMvtII = \relative c {
 	f16 r f32( des f ges) f16\noBeam r f32( des f aes)
 	f8 r r4
 % Bars 271 to 273
-	r16. f,32(\pp\noBeam aes des f ees) des16\noBeam r r8
+	r16. \shape #'((-0.9 . 2.5)(0 . 2.5)(0 . 1)(0 . 0)) Slur f,32(\pp\noBeam aes des f ees) des16\noBeam r r8
 	<f, des'>2\pp~
 	q8 r r4\fermata \fine
 }
 musicViolaDivisiMvtII = \relative c {
 	\clef alto
 	\key des \major
-% Bars 1 to 105
-	s2*33 s4*1 s2*70
-	ges'32(\pp bes ges \liiirii bes \liiriii ges bes ges bes  ges bes ges \liiirii bes \liiriii ges bes ges des)
+% Bars 1 to 99
+	s2*33 s4*1 s2*65
+% Bars 100 to 105
+	R2*2
+	
+	r4 r16 des'32\((\pp des') des16-.\) r
+	R2*2
+	
+	ges,,32(\pp bes ges \liiirii bes \liiriii ges bes ges bes  ges bes ges \liiirii bes \liiriii ges bes ges des)
 % Bars 106 to 110
 	ges( bes ges \liiirii bes \liiriii ges bes ges bes  ges bes ges \liiirii bes \liiriii ges bes ges des) \clef treble
 	ges( bes des \liiirii ges \liiriii bes ges bes ges  bes ges bes \liiirii ges \liiriii bes ges des aes')
@@ -377,20 +383,23 @@ musicViolaDivisiMvtII = \relative c {
 	r16 c,32[( ees aes16-.]) aes32[( des c16-.]) r r8
 	R2
 	r4 r8 c,32(\pp ees ges c,)
-% Bars 121 to 123
+% Bars 121 to 125
 	ees8 r r c32( ees ges ees)
 	e8 r r c32( e g c,)
 	f8 r r d32( f aes d,)
-% Bars 124 to 145
-	s2*22
+	ees16\brack\f^\unis r c32( ees ges f ees[ ges ees c] a ees' c a)
+	ges!(\< c a \liiirii ges \liiriii ees a ges ees) c( ges' ees \liiirii c) \liiriii a'-> gis-> g-> fis->\! 
+% Bars 126 to 145
+	s2*20
 % Bars 146 to 150
 	\tuplet 3/2 8 {\divideBeam aes'16(\p c,) ees-. aes( c,) ees-. aes( c,) ees-. aes( des,) f-. 
 	aes( c,) ees-. aes( c,) ees-. aes( c,) ees-. aes( c,) f-. 
 	g( c,)\< ees-. g( c,) ees-. g( c,) ees-. g( ees) des-.\!
 	aes'(\> c,) ees-. aes( c,) ees-. aes( c,) ees-.\! aes( des,) f-. 
 	aes(\< c,) ees-. aes( c,) ees-. aes( c,) ees ges!( ees)\! ces'-.
-% Bars 151 to 155
+% Bars 151 to 154
 	bes(\f des,) ges-. bes( des,) ges-. aes( des,) f-. aes( des,) f-.
 	aes( c,) ees-. aes( c,) ees-. g( c,) ees-. g( ees) des-.
 	aes'( c,) ees-. aes( c,) ees-. << {aes8*3/2} \\ {aes16^( c,) ees^.} >> ees( aes,) ces-.}
+	\tuplet 3/2 8 {\divideBeam ees16( aes,) ces-. ees( aes,) ces-. e( gis,) b-. e( gis,) b-.}
 }

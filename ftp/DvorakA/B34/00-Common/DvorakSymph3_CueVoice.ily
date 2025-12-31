@@ -2077,6 +2077,10 @@ cueVoiceViolaMvtIII = \relative c {
 	\restPattern bes'8) a16( aes8) g16(
 	\restPattern ges8) f16( ees8) d16(
 	ees8) r r4 \clef alto
+	s2*236
+	% bars 680 - 681
+	\voiceOne e4(-\offset X-offset -3.5 ^\markup {\column {\lower #1.5 "Cor." "Trbe."}} ees
+	d cis) \oneVoice
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #

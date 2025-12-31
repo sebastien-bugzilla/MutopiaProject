@@ -38,15 +38,15 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34)"
+			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34) — Viola"
 		}
 		instrument = \markup {
-			"Viola"
+			""
 		}
 	}
 	\score {
 		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
-			\new Staff {
+			\new Staff <<
 				\new Voice {
 					\formatViolaMvtI
 				}
@@ -59,7 +59,7 @@
 				\new Voice {
 					\timeMvtI \nameViolaMvtI \musicViolaMvtI
 				}
-			}
+			>>
 			\new Staff {
 				\new Voice {
 					\timeMvtI \musicViolaDivisiMvtI
@@ -77,7 +77,7 @@
 	}
 	\score {
 		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
-			\new Staff {
+			\new Staff <<
 				\new Voice {
 					\formatViolaMvtII
 				}
@@ -90,7 +90,7 @@
 				\new Voice {
 					\timeMvtII \nameViolaMvtII \musicViolaMvtII
 				}
-			}
+			>>
 			\new Staff {
 				\new Voice {
 					\timeMvtII \musicViolaDivisiMvtII
@@ -100,7 +100,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #0.7 \bold 2.
 			}
 		}
 		\layout {

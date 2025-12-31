@@ -81,7 +81,7 @@ musicViolaMvtII = \relative c {
 	\tuplet 6/4 4 {r16 b( cis! d ais b) r b( cis d ais b)
 	r g(\< a! b fis g) r f( g aes e f)\!}
 % Bars 56 to 60
-	r32 e[(-\offset X-offset -2 \f f\> g] \tuplet 6/4 8 {aes e f g aes f) r fis( gis a cis,\! a'} gis[ cis, fis cis)]
+	r32 e[(-\offset X-offset -2 \f f\> g] \tuplet 6/4 8 {aes e f g aes f) r fis( gis a cis,!\! a'} gis[ cis, fis cis)]
 	e8(\trill\< \tuplet 6/4 8 {dis32 e fis e dis e)} gis8( cis)\!
 	<e, gis>(\< <a cis>)\! <fis a>(\> <e gis>16 <dis fis>)\!
 	r <e g>32(\pp <cis' e>) q16( <e, g>) r <e g>32( <cis' e>) q16( <e, g>) 
@@ -101,7 +101,7 @@ musicViolaMvtII = \relative c {
 % Bars 71 to 75
 	r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) 
 	r <e gis>-.(\< <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.) r <e gis>-.( <gis e'>-.)\!
-	r <e gis>-.( <gis e'>-.)\> r <e ais>-.( <ais e'>-.) r <e ais>-.( <ais e'>-.) r <e b'>-.( <b' e>-.)\!}
+	r <e gis>-.( <gis e'>-.)\> r <e ais>-.( <ais! e'>-.) r <e ais>-.( <ais e'>-.) r <e b'>-.( <b' e>-.)\!}
 	r8 \tuplet 3/2 8 {r16 g-._\ppdim g-.} r8 \tuplet 3/2 8 {r16 g-. g-.} 
 	r8 \tuplet 3/2 8 {r16 g-. g-.} r8 \tuplet 3/2 8 {r16 gis-. gis-.} 
 % Bars 76 to 80
@@ -129,7 +129,7 @@ musicViolaMvtII = \relative c {
 	<cis e>32[( e cis' gis]) r e[( cis' gis]) r dis[( b' fis]) r dis[( bis' fis)]
 % Bars 91 to 95
 	<cis e>8-.[(\pp <e gis>-. <dis fis>-. <fis gis>-.])
-	<cis >32( gis' cis gis) r\> e( cis' gis) r dis( b'! fis) r dis( bis' fis)\!
+	<cis e>32( gis' cis gis) r\> e( cis' gis) r dis( b'! fis) r dis( bis' fis)\!
 	<e gis>8-.[\pp <fis gis>-. <e gis>-._\dimmarkup <fis gis>-.]
 	\tuplet 6/4 4 {r16 fisis( gis a b a)} <e gis>[ r <fis gis>] r
 	<e gis>\ppp r <fis a>-> r <e gis> r <fis a>-> r

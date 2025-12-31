@@ -67,7 +67,7 @@ musicViolaMvtI = \relative c {
 	<a, c ees! fis>2.:32
 	q:
 	q:
-	<aes! f'>4->\< q8->~ q << q4-> {s8 s\!}>>
+	<aes! f'!>4->\< q8->~ q << q4-> {s8 s\!}>>
 % Bars 51 to 55
 	f'16(\< d bes) f-. <d f>-> <ees g>-> <f aes>-> <g bes>-> <aes c>-> <bes d>-> <c ees>-> <d f>->\! \mark \default
 	\dynEO #'(-0.5 . 0) <ees g>(\ff bes g bes g bes  g bes g bes g bes)
@@ -177,7 +177,7 @@ musicViolaMvtI = \relative c {
 	<< <g, b>2.\mf~ {s4. s8\< s s}>>
 	<< { q4. <a c>} {s8 s\! s  s\> s s16 s\!}>>
 % Bars 141 to 145
-	<g e'>2.(
+	<g_~ e'>2.^(
 	<g b>4.) <fis c' d>4.
 	d16(\pp g b \liiri g \tuplet 3/2 8 {\lirii d' b g)} r4 r8
 	d16( g b \liiri g \tuplet 3/2 8 {\lirii d' b g)} r4 r8
@@ -220,7 +220,7 @@ musicViolaMvtI = \relative c {
 	r4 r8 q\< q q\!
 % Bars 176 to 180
 	<f aes! d>2.:32\f-\offset X-offset -4 ^\arco
-	q:
+	<< q: {s8. s\> s s16 s s\!}>>
 	dis16(\pp fis b \liiri fis \tuplet 3/2 8 {\lirii dis' b fis)} r4 r8
 	dis16( fis b \liiri fis \tuplet 3/2 8 {\lirii dis' b fis)} r4 r8 
 	dis16( fis b \liiri fis \tuplet 3/2 8 {\lirii dis' b fis)} r4 r8 
@@ -261,7 +261,7 @@ musicViolaMvtI = \relative c {
 	<< <d, f>2.~\< {s8 s s  s s s\!}>>
 	<< q2.\> {s8 s s  s s s\!}>>
 % Bars 211 to 215
-	<ees ges>8 r r^\arco r \beamOffset #'(0.5 . 0.5) <ces ces'>16(\brack\pp <ges ges'> <ces ces'> <ges ges'>
+	<ees ges>8-\offset X-offset -7 ^\pizz r r^\arco r \beamOffset #'(0.5 . 0.5) <ces ces'>16(\brack\pp <ges ges'> <ces ces'> <ges ges'>
 	<bes bes'>8) r r r <ces ces'>16( <ges ges'> <ces ces'> <ges ges'>
 	<a a'>8) r r r4-\alterBroken shorten-pair #'(()(2 . 0)) \< r8
 	r \beamOffset #'(0.5 . 0.5) <c! c'!>16( <g! g'!> <c c'> <g g'> <b b'>8) r r
@@ -388,7 +388,7 @@ musicViolaMvtI = \relative c {
 	des:\fz c: c: bes: bes: des:
 	\dynEO #'(-2.5 . 2) ees:\fz d!: d: c: c: ees:}
 % Bars 301 to 305
-	<f aes!>2.:
+	<f aes!>2.:32
 	<< q:\< {s8 s s  s s s\!}>>
 	q8 r r r a( a,)
 	bes'( bes,) r r c-^ bes-^ 
@@ -483,7 +483,7 @@ musicViolaDivisiMvtI = \relative c {
 	e, a c e[ r a]
 	e,\< a c e[ r a]\!
 % Bars 176 to 180
-	<aes,! f'>4^\arco r8 aes16( f) c'-.\< aes-. f'( c)
+	<aes,! f'>4\f^\arco r8 aes16( f) c'-.\< aes-. f'( c)
 	aes'-.\! f-. c'( aes)\> f-. c-. aes'( f) d-. b-. aes-. f-.\!
 	dis16(\pp fis b \liiri fis \tuplet 3/2 8 {\lirii dis' b fis)} r4 r8
 	dis16( fis b \liiri fis \tuplet 3/2 8 {\lirii dis' b fis)} r4 r8 

@@ -46,6 +46,9 @@ correctionMvtII = \markup {
 	
 	% bar 43 / cello
 	"Bar 43, Cello : a supplementary 8th rest is printed and removed in the present version."
+	
+	% bar 211 / Viola
+	"Bar 211, Viola : a 'pizz.' indication is added on the first beat. It is based on Cello voice and considered as a variation of measure 205, and also by the indication of 'arco' at measure 211."
 }
 correctionMvtIII = \markup {
 	
@@ -216,4 +219,10 @@ CorrectionViolinII = \markup {
 	"Bars 31-33, Mvt II : there is an incoherence in the rhythm. If the 24 is correct, notes should be dotted. Otherwise, the number should not be printed and thus correspond to 32th."
 	% bar 174 / Mvt II
 	"Bar 174, Mvt II : a missing slur is added on the last two notes."
+}
+CorrectionViola = \markup {
+	% bar 105 / Mvt II
+	"Bar 105, Mvt II : the slur in the upper voice embrace the whole measure as in the lower voice and the conductor."
+	% bars 146 -154 / Mvt II
+	"Bars 146 - 154, Mvt II : the slur embrace only the first two notes instead all of the groups."
 }
