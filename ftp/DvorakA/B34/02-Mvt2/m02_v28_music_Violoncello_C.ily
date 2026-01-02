@@ -295,9 +295,9 @@ musicVioloncelloMvtII = \relative c {
 	e(~\ff\> \tuplet 6/4 4 {e16 dis e fis e cis\pp)}
 	cis4(\ppp dis8) r
 	cis,4(\< b8\!) r
-	<< {gis'4( a)} \\ {\hairpinShorten #'(0 . -5.2) cis,(\< fis,)\!} >>
+	\hairpinShorten #'(0 . -5.2) gis'4(\< a)\!
 % Bars 241 to 245
-	a'16.(\mf\< g32 fis16. e32 dis!8-.) e-.\!
+	a16.(\mf\< g32 fis16. e32 dis!8-.) e-.\!
 	fis4\< a8( gis)\!
 	r4 r32 gis,->\ff b-> a-> gis16->\noBeam r
 	r4 r32 gis-> dis'-> b-> gis16->\noBeam r

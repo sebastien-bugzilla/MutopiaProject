@@ -38,15 +38,23 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34)"
+			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34) — Violoncello"
 		}
 		instrument = \markup {
-			"Violoncello"
+			""
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
 		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
-			\new Staff {
+			\new Staff <<
 				\new Voice {
 					\formatVioloncelloMvtI
 				}
@@ -59,7 +67,7 @@
 				\new Voice {
 					\timeMvtI \nameVioloncelloMvtI \musicVioloncelloMvtI
 				}
-			}
+			>>
 			\new Staff {
 				\new Voice {
 					\timeMvtI \musicVioloncelloDivisiMvtI
@@ -76,8 +84,8 @@
 		}
 	}
 	\score {
-		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
-			\new Staff {
+		\new GrandStaff \with {\RemoveAllEmptyStaves \nameVioloncelloMvtII} <<
+			\new Staff <<
 				\new Voice {
 					\formatVioloncelloMvtII
 				}
@@ -88,9 +96,9 @@
 					\InCueContext \cueVoiceVioloncelloMvtII
 				}
 				\new Voice {
-					\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
+					\timeMvtII  \musicVioloncelloMvtII
 				}
-			}
+			>>
 			\new Staff {
 				\new Voice {
 					\timeMvtII \musicVioloncelloDivisiMvtII
@@ -100,7 +108,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.7 \bold 2.
 			}
 		}
 		\layout {
@@ -124,7 +132,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.3 \bold 3.
 			}
 		}
 		\layout {

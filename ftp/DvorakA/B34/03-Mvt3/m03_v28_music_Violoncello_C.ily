@@ -769,7 +769,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 641 to 645
 	ees,4..\fz ees16
 	ees'8 r r4
-	ees,4.. ees16
+	ees,4..\fz ees16
 	d8 r r4
 	d'4..\fz d16
 % Bars 646 to 650

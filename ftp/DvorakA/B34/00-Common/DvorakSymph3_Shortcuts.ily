@@ -267,6 +267,13 @@ brackfppocoapococrescendo = \markup {
 	\hspace #-0.69 \bracket \with-true-dimensions \dynamic fp
 	\italic "poco a poco crescendo"
 }
+brackfppocoapoco_crescendo = \markup {
+	\column {
+		\lower #1 
+		\line {\hspace #-0.69 \bracket \with-true-dimensions \dynamic fp \italic "poco a poco"}
+		\line {\italic "crescendo"}
+	}
+}
 fpmarkup = \markup {\hspace #-0.69 \dynamic fp}
 fpcresc = \markup {\hspace #-0.69 \dynamic fp \italic "cresc."}
 %--------------------
@@ -375,6 +382,7 @@ stringendo = \markup {\italic stringendo}
 accel = \markup {\italic accel.}
 pocorit = \markup {\italic "poco rit."}
 atempo = \markup {\italic "a tempo"}
+legato = \markup {\italic "legato"}
 %--------------------
 % instrument modification
 %--------------------
@@ -807,6 +815,9 @@ fakeSlur = \markup {
 tupletBracketOff = \override TupletBracket.bracket-visibility = ##f
 
 tupletBracketOn = \override TupletBracket.bracket-visibility = ##t
+
+measureCounterDown = \override Staff.MeasureCounter.direction = #-1
+measureCounterReset = \revert Staff.MeasureCounter.direction
 
 %ottavaEO = #(define-music-function
 %	(offset)

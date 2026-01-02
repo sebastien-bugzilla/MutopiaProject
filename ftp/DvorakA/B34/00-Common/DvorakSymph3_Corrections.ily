@@ -49,6 +49,9 @@ correctionMvtII = \markup {
 	
 	% bar 211 / Viola
 	"Bar 211, Viola : a 'pizz.' indication is added on the first beat. It is based on Cello voice and considered as a variation of measure 205, and also by the indication of 'arco' at measure 211."
+	
+	% bar 240 / Cello
+	"Bar 240, Violoncello : the lower voice appear in upper voice, which is not the case in part score. The part score is choosen as a reference."
 }
 correctionMvtIII = \markup {
 	
@@ -225,4 +228,12 @@ CorrectionViola = \markup {
 	"Bar 105, Mvt II : the slur in the upper voice embrace the whole measure as in the lower voice and the conductor."
 	% bars 146 -154 / Mvt II
 	"Bars 146 - 154, Mvt II : the slur embrace only the first two notes instead all of the groups."
+}
+CorrectionVioloncello = \markup {
+	% bar 203 / Mvt I
+	"Bar 203, Mvt I : a missing 'arco' indication on lower voice is added."
+	% bar 212 / Mvt I
+	"Bar 212, Mvt I : a missing 'arco' indication on upper voice is added."
+	% bar 119 / Mvt II
+	"Bar 119, Mvt II : a g-sharp is indicated for grace note in the part score whereas it is a g natural in conductor. The version of the conductor is reconducted."
 }

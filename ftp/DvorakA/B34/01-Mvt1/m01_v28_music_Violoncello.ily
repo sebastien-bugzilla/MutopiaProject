@@ -22,10 +22,10 @@ musicVioloncelloMvtI = \relative c {
 	des'4.-> b4(~\< b16 c)\!
 % Bars 11 to 15
 	c4\((\fz aes16)[\> r32 g-.]\) f4( ees8)\! \clef tenor
-	f4\((\< des'16)[\! r32 c-.]\) c4( bes8)
-	bes4\((\<_\crescmarkup ges'16)[\! r32 f-.]\) f4( ees8) 
+	f4\((\< des'16)[\! c32\rest c-.]\) c4( bes8)
+	\markEO #'(0.5 . 3) bes4\((\<_\crescmarkup ges'16)[\! f32\rest f-.]\) f4( ees8) 
 	ees4.(~\fz ees16 d f ees ces aes)
-	ges4.(\> f4\brack\p bes8) \clef bass
+	\hairpinShorten #'(-0.5 . -0.5) ges4.(\> f4\brack\p bes8) \clef bass
 % Bars 16 to 20
 	ees,4.\ff-^ d16( ees f ees d ees)
 	bes'4.-^\brack\fz f16( ges aes ges f ges)
@@ -43,9 +43,9 @@ musicVioloncelloMvtI = \relative c {
 	ges,2.\pp~
 	ges4 r8 \clef tenor \marcatoUpperSlur ges''4.\p-^(
 	f)\< ees->\fz~
-	ees << des\fz\< {s8 s s\!}>>
+	ees << des\fz\< {s8 s s}>>
 % Bars 31 to 35
-	ces4._\fzcresc bes\fz \clef bass
+	ces4.\fz^\crescmarkup bes\fz \clef bass
 	aes,4.:32\ff c16( ees f ees des f)
 	ges(\< f ees ges aes ges) f( aes bes aes f des)\!
 	aes4.:32->\ff c16( ees f ees des f)
@@ -73,7 +73,7 @@ musicVioloncelloMvtI = \relative c {
 	ees4->_\ffmarcatissimo r8 ees4-> r16 bes->
 	ees4-> r8 ees4-> r16 bes-.
 	d4->\< r8 c4-> r16 g-.\!
-	c4-> r8 bes4.\ffzD\>~
+	c4-> r8 \hairpinShorten #'(-0.5 . -0.5) bes4.\ffzD\>~
 % Bars 56 to 60
 	bes\! aes4-> r16 ees-.
 	g4->\f\< r16 ees-. g4-> r16 ees-.\!
@@ -131,7 +131,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 101 to 105
 	f8->\noBeam a16( c d c) a(\< c d c bes d)
 	ees( d c ees f ees) d( f g f d bes)\!
-	ees8-. r r r4 r8
+	ees8-. r r r4 r8 
 	r ees16-.\pp[ f-. ges8-. a-.] r r
 	r a,16-.\p c-. ees8-. f-. a-. c-.
 % Bars 106 to 110
@@ -156,14 +156,14 @@ musicVioloncelloMvtI = \relative c {
 	\repeat tremolo 6 {ees( ges}
 	\repeat tremolo 6 {ees\< ges)\!}
 	des2.(\p
-	<< des,) {s8\< s s\! s\> s s\!}>>
+	<< des,) {\hairpinShorten #'(0 . 0.3) s8\< s s \hairpinShorten #'(-0.3 . 0) s\> s s\!}>>
 	ges4 r8 r4 r8
 % Bars 126 to 130
 	R2.
 	aes4\pp r8 r4 r8
 	R2.
 	gis16(\p\< b e b gis' e b' gis e' b)\! r8 \clef tenor
-	e4.--\fz\<_\espressivo dis4( d8)
+	e4.--\fz\<^\espressivo dis4( d8)
 % Bars 131 to 135
 	d4( cis8\! c4.\fz\>~
 	c) g4( a8)\!
@@ -196,13 +196,13 @@ musicVioloncelloMvtI = \relative c {
 	des( c
 % Bars 156 to 160
 	bes aes)
-	ees'4 des8~ des\<_\brackM\pococresc c-. bes-.\!
+	ees'4 des8~ des\<^\brackM\pococresc c-. bes-.\!
 	f'4 ees8~ ees des-. c-.
 	ges'4-^ f-^ ees-^
 	\time 3/4 a16(\f bes c bes) a( bes c bes) a( bes c bes)
 % Bars 161 to 165
-	\time 6/8 a(\< bes) c( bes) bes( aes'!) aes(\! g) g(\> f) f( ees)\!
-	\time 3/4 a,( bes c bes) a( bes c bes) a( bes c bes)
+	\textMark "Vi-" \time 6/8 a(\< bes) c( bes) bes( aes'!) aes(\! g) g(\> f) f( ees)\!
+	\time 3/4 a,( bes c bes) a( bes c bes) a( bes c bes) \textEndMark "-de"
 	\time 6/8 a( bes) c( bes) bes( aes'!) aes( g) g( f) f( ees)
 	f,(\< a c a ees' c)\! r4 r8
 	fis,16(\< a c a ees' c)\! r4 r8
@@ -221,24 +221,24 @@ musicVioloncelloMvtI = \relative c {
 % Bars 176 to 180
 	f,,16(^\arco aes!) c-.\< aes-. f'( c) aes'!-. f-. c'( aes) f'-. c-.\!
 	aes'8-. r r r4 r8
-	fis,16(\pp b fis b fis b  fis b fis b fis b
-	fis b fis b fis b  fis b fis b fis b
-	fis b fis b fis b  fis b fis b fis b)
+	\repeat tremolo 6 {fis,16(\pp b} % fis,16(\pp b fis b fis b  fis b fis b fis b
+	\repeat tremolo 6 {fis b} % fis b fis b fis b  fis b fis b fis b
+	\repeat tremolo 6 {fis b)} % fis b fis b fis b  fis b fis b fis b)
 % Bars 181 to 185
 	e,,(\f g) bes!-. g-. e'( bes) g'-.\< e-. bes'( g) d'-. bes-.\!
 	g'8-. r r r4 r8
-	ees,8\pp^\pizz ges ces ges'[ r ces]
+	ees,8\pp-\offset X-offset -4 ^\pizz ges ces ges'[ r ces]
 	ees,, ces' ees ges[ r ces]
 	ees,, ces' ees ges[ r ces]
 % Bars 186 to 190
 	<g,,! e'>8\fz^\arco \tuplet 3/2 8 {q16 q q} q8 r4 r8
 	\tuplet 3/2 8 {f8.:16\< ges: aes!: aes: bes: ces:\!}
-	<g e'>8\fz \tuplet 3/2 8 {q16 q q} q8 r4 r8
+	<g! e'>8\fz \tuplet 3/2 8 {q16 q q} q8 r4 r8
 	\tuplet 3/2 8 {f8.:16\< ges: aes: aes: bes: ces:\!}
-	d8\fz \tuplet 3/2 8 {<f d'>16 q q} q8 r4 r8
+	d!8\fz \tuplet 3/2 8 {<f d'>16 q q} q8 r4 r8
 % Bars 191 to 195
 	\tuplet 3/2 8 {g8.:16\< a: bes: bes: c: des:\!}
-	d,!8\brack\fz \tuplet 3/2 8 {<f d'>16 q q} q8 r4 r8
+	d,!8\brack\fz \tuplet 3/2 8 {<f d'!>16 q q} q8 r4 r8
 	\tuplet 3/2 8 {g8.:16\< aes!: a: bes: c: des:\!} \clef tenor
 	bes'4.\ff \acciaccatura bes8 aes!4->( g8)
 	aes4. \acciaccatura bes8 aes4->( g8)
@@ -259,7 +259,7 @@ musicVioloncelloMvtI = \relative c {
 	f2.-^
 	d4. cis16( d ees d cis d)
 	<< aes!2.\brack\fz\<~ {s8 s s  s s s\!}>>
-	<< aes2. {s8\> s s  s s s\!}>> \clef bass
+	<< aes2. {\hairpinShorten #'(0.5 . 0) s8\> s s  s s s\!}>> \clef bass
 % Bars 211 to 215
 	<ees ces' ges'>8\p^\pizz r r r4 r8 \clef tenor
 	ees'4.-^^\arco\brack\mf\< d16( ees fes ees d ees)\!
@@ -282,7 +282,7 @@ musicVioloncelloMvtI = \relative c {
 	\time 3/4 q-. r q-. r q-. r
 	\time 6/8 << bes2.~\> {s8 s s  s s s\!}>>
 	bes4 r8 r4 r8
-	\time 3/8 << bes(\p\> {s8 s s\!}>>
+	\time 3/8 << bes4.(\p\> {s8 s s}>>
 	\time 6/8 ees4)\brack\p r8 ees4^\pizz r16 bes
 % Bars 231 to 235
 	ees4 r8 ees4 r16 bes
@@ -292,15 +292,15 @@ musicVioloncelloMvtI = \relative c {
 	g4.\p~^\arco g4 ees8
 % Bars 236 to 240
 	aes2.
-	des'4.(\pp\< b)\!
+	\hairpinShorten #'(-0.5 . -0.5) des'4.(\pp\< b)\!
 	c2.
-	f,4\((_\brackfppocoapococrescendo des'16)[ r32 c-.]\) c4( bes8) \clef tenor
-	bes4\((\fp ges'16)[ r32 f-.]\) f4( ees8)
+	f,4\((_\brackfppocoapoco_crescendo des'16)[ c32\rest c-.]\) c4( bes8) \clef tenor
+	bes4\((\fp ges'16)[ f32\rest f-.]\) f4( ees8)
 % Bars 241 to 245
-	ees4\((\fz ges16)[ r32 f-.]\) f4( ees8)
-	ees4\((\fz ges16)[ r32 f-.]\) f4( ees8)
-	e4\((\fz g!16)[ r32 f-.]\) f4(\< e8)
-	f4\((_\fzmarkup aes16)[ r32 g-.]\) g4( f8)\! \clef bass
+	ees4\((\fz ges16)[ f32\rest f-.]\) f4( ees8)
+	ees4\((\fz ges16)[ f32\rest f-.]\) f4( ees8)
+	e4\((\fz g!16)[ f32\rest f-.]\) f4(\< e8)
+	\markEO #'(0 . 1.2) f4\((_\fzmarkup aes16)[ g32\rest g-.]\) g4( f8)\! \clef bass
 	a,,4-^\f c16[ r32 b] b8-^ d-^ c-^
 % Bars 246 to 250
 	ees!-^\< d-^ fis16 ees a-> fis-> c'-> a-> ees'-> c->\!
@@ -327,7 +327,7 @@ musicVioloncelloMvtI = \relative c {
 	R2.*2
 	
 % Bars 266 to 270
-	fis'8\fz^\pizz r r r4 r8
+	fis'8\fz-\offset X-offset -6 ^\pizz r r r4 r8
 	R2.
 	b,8\p r r r4 r8
 	R2.
@@ -346,7 +346,7 @@ musicVioloncelloMvtI = \relative c {
 	g,16( bes ees bes g' ees) bes'4-^ r8
 % Bars 281 to 285
 	g,\f-^ aes-^ a-^ bes-^[ b-^ r16 c-.]
-	c8-^\<_\molto cis-^ d-^ ees16-^ e-^ f-^ fis-^ g-^ aes!-^\!
+	\hairpinShorten #'(0 . 2.5) c8-^\<^\molto cis-^ d-^ ees16-^ e-^ f-^ fis-^ g-^ aes!-^\!
 	a8-^_\brackfffz r r r4 r8
 	aes,!8\fz r r r4 r8
 	aes'\fz r r r4 r8
@@ -363,17 +363,17 @@ musicVioloncelloMvtI = \relative c {
 	aes-> r r r4 r8
 	ces4\fz r8 r4 r8
 % Bars 296 to 300
-	ces4->_\pocoapococrescendo r8 r4 r8
+	ces4->-\offset X-offset -1 ^\pocoapococrescendo r8 r4 r8
 	bes4\fz r8 bes'4-> r16 bes,
 	bes4-> r8 bes'4-> r16 bes,
 	bes4-> r8 bes'4-> r16 bes,
 	bes4-> r8 bes'4-> r16 bes,
 % Bars 301 to 305
-	bes8-^_\marcatiss c-^ cis-^ d-^\< ees-^ f16-^ g-^
+	bes8-^^\marcatiss c-^ cis-^ d-^\< ees-^ f16-^ g-^
 	aes8-> a-> bes16-> a-> bes-> b-> c-> d-> ees-> e->\!
 	f8 r r <e, e'>-^ r r
 	<d d'>-^ r r <des des'>-^ <c c'>-^ <bes bes'>-^
-	ees4.-^\ff d16( ees f ees d ees)
+	ees4.-^\ff d!16( ees f ees d ees)
 % Bars 306 to 310
 	bes'4.~ bes4 ees,16-. f-.
 	g8\<-^ aes-^ bes-^ c-^ d-^ ees-^\!
@@ -411,8 +411,8 @@ musicVioloncelloMvtI = \relative c {
 	d,:\mf\< ees: bes: d: ees: bes:
 	d: ees: bes: d: ees: bes:\!}
 % Bars 336 to 340
-	<d, d'>4.\f-^^\brackM\div <ees ees'>-^
-	ces'4.:32 aes8-^ aes-^ aes-^
+	d4.-^\f ees-^
+	ces4.:32 aes8-^ aes-^ aes-^
 	ees2.:32\ff
 	ees4 r8 r4 r8
 	<ees bes' g'>4 r8 r4 r8
@@ -431,7 +431,7 @@ musicVioloncelloDivisiMvtI = \relative c {
 	bes4.(~\> bes4~\! bes16. aes32)
 	aes4.(~ aes4~\< aes16. bes32)\!
 	ces4.(~\> ces4~\! ces16. bes32)
-% Bars 81 to 8596
+% Bars 81 to 85
 	bes2.(\<
 	<< ces) {s8 s s  s s s\!}>>
 	des4.(_\dimmarkup des,)
@@ -449,10 +449,14 @@ musicVioloncelloDivisiMvtI = \relative c {
 	bes(\< des ges des ges des  des f aes f aes f)\!
 	ees( ges bes ges ees ges  ces, ees ges ees ces ees)
 	bes( des ges des ges des  des f aes f ces' aes)
-% Bars 96 to 167
-	s2.*72
-% Bars 168 to 170
-	e16(\brack\fp a e a e a  e a e a e a)
+% Bars 96 to 165
+	ges4.-^\ff r4 r8
+	s2.*68
+	fis16(\< a c a ees' c)\! r4 r8
+% Bars 166 to 170
+	fis,16(\< a cis a fis' cis)\! r4 r8
+	fis,16(\< a c! a fis' c)\! r4 r8
+	e,16(\brack\fp a e a e a  e a e a e a)
 	e( a e a e a  e a e a e a)
 	e(\< a e a e a  e a e a e a)\!
 % Bars 171 to 175
@@ -462,59 +466,71 @@ musicVioloncelloDivisiMvtI = \relative c {
 	r4 r8 q8 q q
 	r4 r8 q\< q q\!
 % Bars 176 to 180
-	<< {
-		d2.:32^\arco
-		d:
-	} \\ {
-		<< f,2.:\f {s8\< s s  s s s\!}>>
-		<< f2.: {s8\> s s  s s s\!}>>
-	} >>
-	dis'16(\pp fis dis fis dis fis  dis fis dis fis dis fis
-	dis fis dis fis dis fis  dis fis dis fis dis fis
-	dis fis dis fis dis fis  dis fis dis fis dis fis)
+	<< <f, d'>2.:32\f\<^\arco {s8 s s  s s s\!}>>
+	<< q2.:\> {s8 s s  s s s\!}>>
+	\repeat tremolo 6 {dis'16(\pp fis } 
+	\repeat tremolo 6 {dis fis} 
+	\repeat tremolo 6 {dis fis)}
 % Bars 181 to 185
 	<e g>8\f \tuplet 3/2 8 {q16 q q} q8 r4 r8
 	q8\> \tuplet 3/2 8 {q16 q q} q8\! r4 r8
-	r4 r8 ees!\pp^\pizz ees'! ees
+	r4 r8 ees!\pp-\offset X-offset -4 ^\pizz ees'! ees
 	r4 r8 ees, ees' ees
 	r4 r8 ees, ees' ees
-% Bars 186 to 198
-	s2.*13
-% Bars 199 to 200
-	cis8^\pizz_\ppsempre cis r cis cis r
+% Bars 186 to 190
+	<g,,! e'>8\fz^\arco \tuplet 3/2 8 {q16 q q} q8 r4 r8
+	\tuplet 3/2 8 {f8.:16\< ges: aes!: aes: bes: ces:\!}
+	<g! e'>8\fz \tuplet 3/2 8 {q16 q q} q8 r4 r8
+	\tuplet 3/2 8 {f8.:16\< ges: aes: aes: bes: ces:\!}
+	s2.*5
+% Bars 191 to 195
+	
+	
+	
+	
+	\clef tenor aes''4. \acciaccatura bes8 aes4->( g8)
+% Bars 196 to 200
+	\acciaccatura bes8 aes4(-> g8) \acciaccatura bes8 aes4(-> g8) 
+	\acciaccatura bes8 aes4(-> g8) r4 r8
+	R2. \clef bass
+	cis,8^\pizz_\ppsempre cis r cis cis r
 	cis cis r r4 r8
 % Bars 201 to 205
 	cis cis r cis cis r
 	cis cis r r4 r8
-	r16^\arco g!16(\< bes! g bes g  bes g bes g bes g
-	bes8)\! e,16( g bes cis bes8)\fz r r^\pizz
+	r16-\offset X-offset -4 ^\arco g!16(\< bes! g bes g  bes g bes g bes g
+	bes8)\! e,16( g bes cis bes8)\fz r r-\offset X-offset -2 ^\pizz
 	d\pp d r d d r
 % Bars 206 to 210
 	d d r r4 r8
 	d8 d r d d r
 	d d r r4 r8
-	r16^\arco aes( ces aes ces aes  ces aes ces aes ces aes
+	r16-\offset X-offset -4 ^\arco aes( ces aes ces aes  ces aes ces aes ces aes
 	ces8)\< f,16( aes b d! f8)\brack\fz r r
 % Bars 211 to 215
-	ees,8\p^\pizz ges ces ees, ges ces
+	\markEO #'(0 . 0) ees,8\p-\offset X-offset -4 ^\pizz ges ces ees, ges ces
 	ees, ges ces ees, ges ces
 	ees,! fis c'! ees,\< fis c'
 	e, g! c e, g c
 	f, aes! d f, aes d\!
 % Bars 216 to 219
-	d,16(\ff^\arco \liiri cis \tuplet 3/2 8 {\lirii d cis \liiri d \lirii cis d cis \setSextolet d cis d cis d c b a g)
+	d,16(\ff-\offset X-offset 2 ^\arco \liiri cis \tuplet 3/2 8 {\lirii d cis \liiri d \lirii cis d cis \setSextolet d cis d cis d c b a g)
 	d'( cis d cis d cis d cis d  cis d cis d cis d} \unsetSextolet c32[ b a g])
 	\tuplet 3/2 8 {\setSextolet d'16( cis d cis d cis d cis d  cis d cis d cis d c b a)
 	d( cis d cis d cis d cis d  cis d cis d cis d c b a)} \unsetSextolet
 % Bars 220 to 328
-	s2.*9 s4.*1 s2.*99
-% Bars 329 to 330
+	s2.*9 s4.*1 s2.*97
+% Bars 327 to 330
+	R2.
+	r4 r8 bes16\f-^ bes-^ bes-^ bes-^ bes-^ bes-^
 	bes'16(\p des bes des bes des  bes des bes des bes des)
 	bes( des bes des bes des) bes,\ff-^ bes-^ bes-^ bes-^ bes-^ bes-^
 % Bars 331 to 335
 	R2.
-	r4 r8 \tuplet 3/2 8 {d8.:16_\pcresc ees: bes:
+	r4 r8 \tuplet 3/2 8 { d8.:16_\pcresc ees: bes:
 	d: ees: bes: d: ees: bes:
 	d,:\mf\< ees: bes': d,: ees: bes':
 	d,: ees: bes': d,: ees: bes':\!}
+% Bars 336
+	d,4.-^\f ees-^
 }
