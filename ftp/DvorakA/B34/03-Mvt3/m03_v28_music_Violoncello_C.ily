@@ -842,7 +842,7 @@ musicVioloncelloMvtIII = \relative c {
 	R2*2
 	
 	r4 r8. ees16
-	ees'2_\fzbrackp~
+	\markEO #'(0 . 1) ees'2_\fzbrackp~
 	ees4 r
 % Bars 706 to 710
 	R2

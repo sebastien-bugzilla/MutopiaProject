@@ -282,7 +282,7 @@ musicContrabassoMvtI = \relative c {
 	\time 3/4 bes-. r bes-. r bes-. r
 	\time 6/8 << bes2.~\> {s8 s s  s s s\!}>>
 	bes4 r8 r4 r8
-	\time 3/8 << bes(\p\> {s8 s s\!}>>
+	\time 3/8 << bes4.(\p\> {s8 s s\!}>>
 	\time 6/8 ees4)\p r8 ees4^\pizz r16 bes
 % Bars 231 to 235
 	ees4 r8 ees4 r16 bes

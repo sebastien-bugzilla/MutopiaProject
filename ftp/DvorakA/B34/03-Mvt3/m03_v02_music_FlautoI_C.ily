@@ -539,7 +539,7 @@ musicFlautoIMvtIII = \relative c {
 	e4..->) dis16(
 	e4..-> fis16
 	e8 dis cis b)
-	e4..->_\pocoapococresc dis16(
+	e4..->_\pocoapococrescendo dis16(
 % Bars 621 to 625
 	e4..)-> dis16(
 	e4..-> fis16

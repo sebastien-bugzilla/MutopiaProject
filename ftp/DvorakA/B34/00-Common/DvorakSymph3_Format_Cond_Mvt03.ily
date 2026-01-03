@@ -365,7 +365,7 @@ formatConductorMvtIII = {
 	s2*8 \pageBreak
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
 		(Y-offset . 10)
-		(alignment-distances . (11 10.5 9.5 10.5 10 13 8.5 9.5 9 8.5 8.5 13 13 8.5 9 9 8.5)))
+		(alignment-distances . (11 10.5 9.5 10.5 10 13 8.5 9.5 9 8.5 8.5 13 13 8.5 9 10 8.5)))
 	s2*8 \pageBreak
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
 		(Y-offset . 8.7)

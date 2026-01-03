@@ -145,7 +145,7 @@ musicContrabassoMvtII = \relative c {
 	R2
 	c8\p[ c' c,] r
 % Bars 121 to 125
-	c[_\pocoapococrescendo c' c,] r
+	c[_\pococrescendo c' c,] r
 	c[ c' c,] r
 	c[ c' c,] r
 	c16\brack\f^\arco r r8 r4
