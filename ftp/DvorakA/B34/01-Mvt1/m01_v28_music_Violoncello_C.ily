@@ -497,7 +497,7 @@ musicVioloncelloDivisiMvtI = \relative c {
 	r16-\offset X-offset -3 ^\arco aes( ces aes ces aes  ces aes ces aes ces aes
 	ces8)\< f,16( aes b d! f8)\brack\fz r r
 % Bars 211 to 215
-	ees,8\p-\offset X-offset -6 ^\pizz ges ces ees, ges ces
+	ees,8\p-\offset X-offset -6 ^\pizz ges ces ees,_\crescpocoapoco ges ces
 	ees, ges ces ees, ges ces
 	ees,! fis c'! ees,-\alterBroken shorten-pair #'(()(4 . 0)) \< fis c'
 	e, g! c e, g c

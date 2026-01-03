@@ -52,6 +52,9 @@ correctionMvtII = \markup {
 	
 	% bar 240 / Cello
 	"Bar 240, Violoncello : the lower voice appear in upper voice, which is not the case in part score. The part score is choosen as a reference."
+	
+	% bar 172 / Contrabasso
+	"Bar 172, Contrabasso : The 8th rest on the last beat of second voice should be on the second beat to follow cello rhythm (as in measure 170)."
 }
 correctionMvtIII = \markup {
 	
@@ -236,4 +239,8 @@ CorrectionVioloncello = \markup {
 	"Bar 212, Mvt I : a missing 'arco' indication on upper voice is added."
 	% bar 119 / Mvt II
 	"Bar 119, Mvt II : a g-sharp is indicated for grace note in the part score whereas it is a g natural in conductor. The version of the conductor is reconducted."
+}
+CorrectionContrabasso = \markup {
+	% bar 172 / Contrabasso
+	"Bar 172, Mvt II : The 8th rest on the last beat of second voice should be on the second beat to follow cello rhythm (as in measure 170)."
 }

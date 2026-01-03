@@ -338,8 +338,8 @@ musicContrabassoDivisiMvtII = \relative c {
 	ges'16 r r8 aes16\f r r8
 	des,16\ff^\arco r r8 \acciaccatura {aes32 bes c} des16 r \acciaccatura {aes32 bes c} des16 r
 % Bars 171 to 175
-	\acciaccatura {aes16 bes c} des16 r r8 \acciaccatura {a32 bes c} des16 r r8
-	\acciaccatura {aes32 bes c} des16 r \acciaccatura {aes32 bes c} des16 r \acciaccatura {aes32 bes c} des16 r r8
+	\acciaccatura {aes32 bes c} des16 r r8 \acciaccatura {a32 bes c} des16 r r8
+	\acciaccatura {aes32 bes c} des16 r r8 \acciaccatura {aes32 bes c} des16 r \acciaccatura {aes32 bes c} des16 r 
 	\acciaccatura {aes32 bes c} des16 r r8 \acciaccatura {aes32 bes c} des16 r r8
 	\acciaccatura {aes32 bes c} des16 r \acciaccatura {aes32 bes c} des16 r \acciaccatura {aes32 bes c} des16 r r8
 	\acciaccatura {aes32 bes c} des16 r \acciaccatura {aes32 bes c} des16 r \acciaccatura {aes32 bes c} des16 r r8

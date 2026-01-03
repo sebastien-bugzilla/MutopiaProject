@@ -178,13 +178,13 @@ tempiPartMvtI = {
 	\tag #'(flautoI flautoII piccolo oboeI oboeII cornoinglese clarinettoI 
 		clarinettoII        
 		    tuba  triangolo arpa 
-		violinoI violinoII viola violoncello contrabasso) {
+		violinoI violinoII viola violoncello ) {
 		\tempo \markup {
 			\normal-weight \italic "ritard."
 		}
 	}
 	\tag #'(fagottoI fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII
-		trombonoI trombonoII trombonoIII timpani) {
+		trombonoI trombonoII trombonoIII timpani contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "rit."
 		}
@@ -419,7 +419,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flautoI   oboeI   clarinettoI 
 		   cornoI     
-		 violinoII viola violoncello contrabasso) {
+		 violinoII viola violoncello ) {
 		\tempo \markup {
 			\normal-weight \italic "poco string. e molto appassionato"
 		}
@@ -432,7 +432,7 @@ tempiPartMvtII = {
 		}
 	}
 	\tag #'(fagottoII trombeI trombeII trombonoI trombonoII trombonoIII tuba 
-		timpani triangolo ) {
+		timpani triangolo contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic {
 				\center-column { \lower #1.5 "poco string. e" "molto appassionato"}

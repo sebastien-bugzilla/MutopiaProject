@@ -177,7 +177,7 @@ musicContrabassoMvtIII = \relative c {
 	bes4-^\fz\< r
 	\markEO #'(0 . 2) bes-^_\fzmarkup r
 % Bars 156 to 160
-	\markEO #'(0 . 2) bes-^_\fzmarkup r
+	<< \markEO #'(0 . 2) bes-^_\fzmarkup {s16 s_\crescmarkup s s}>> r4
 	\markEO #'(0 . 2) bes-^_\fzmarkup r\!
 	R2*3
 	
@@ -721,7 +721,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 641 to 645
 	ees,4..\fz ees16
 	ees'8 r r4
-	ees,4.. ees16
+	ees,4..\fz ees16
 	d8 r r4
 	d'4..\fz d16
 % Bars 646 to 650
@@ -848,7 +848,7 @@ musicContrabassoMvtIII = \relative c {
 	ees-. ees-. ees-. ees-.
 	ees-. ees-. ees-. ees-.
 	ees\ff r r4
-	R2
+	R2_\pocoapococresc
 	r4 r8. bes'16-.\ff
 % Bars 751 to 755
 	g4..-> f16-.

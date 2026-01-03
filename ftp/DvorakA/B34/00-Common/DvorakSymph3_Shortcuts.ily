@@ -127,6 +127,10 @@ brackpespressivo = \markup {\hspace #-0.09 \bracket \with-true-dimensions \dynam
 	\italic espressivo
 }
 ppocoapococresc = \markup {\hspace #-0.09 \dynamic p \italic "poco a poco cresc."}
+ppocoa_pococresc = \markup {
+	\hspace #-0.09 \dynamic p \translate #'(0 . 2) \italic
+	\column { \lower #1.5 "poco a" "poco cresc."}
+}
 pbrackespress = \markup {
 	\hspace #-0.09 \dynamic p
 	\bracket \with-true-dimensions \italic espress.
@@ -291,6 +295,11 @@ fbrackf = \markup {
 ffmarcatissimo = \markup {\hspace #-0.54 \dynamic ff \italic marcatissimo}
 brackfflegato = \markup {\hspace #-0.54 \bracket \with-true-dimensions \dynamic ff \italic legato }
 fflegato = \markup {\hspace #-0.54 \dynamic ff \italic legato }
+ffpocoapoco_cresc = \markup {
+	\hspace #-0.54 \dynamic ff \italic \translate #'(0 . 2) \column {
+		\lower #1.5 "poco a poco" "cresc."
+	}
+}
 %--------------------
 % dynamics ffz
 %--------------------
@@ -819,6 +828,14 @@ tupletBracketOn = \override TupletBracket.bracket-visibility = ##t
 measureCounterDown = \override Staff.MeasureCounter.direction = #-1
 measureCounterReset = \revert Staff.MeasureCounter.direction
 
+textOsp = #(define-music-function
+	(prio)
+	(number?)
+	#{
+		\once \override TextScript.outside-staff-priority = #prio
+	#}
+)
+
 %ottavaEO = #(define-music-function
 %	(offset)
 %	(pair?)
@@ -946,14 +963,6 @@ measureCounterReset = \revert Staff.MeasureCounter.direction
 %	\once \override TextScript.slur-padding = #0
 %	\once \override TextScript.avoid-slur = #'around
 %}
-
-%textOsp = #(define-music-function
-%	(prio)
-%	(number?)
-%	#{
-%		\once \override TextScript.outside-staff-priority = #prio
-%	#}
-%)
 
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 

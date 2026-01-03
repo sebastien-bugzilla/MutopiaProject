@@ -131,7 +131,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 116 to 120
 	ees'4-^\< r8. ees,16
 	ees'4-^ r8. ees,16\! \mark \default
-	\tuplet 3/2 4 {aes,8[\ff aes' aes]  aes aes aes}
+	\tuplet 3/2 4 {aes,8[-\offset X-offset -1 \ff aes' aes]  aes aes aes}
 	aes r r4
 	\tuplet 3/2 4 {f,8[ f' f]  f f f}
 % Bars 121 to 125
@@ -175,10 +175,10 @@ musicContrabassoMvtIII = \relative c {
 	bes4-^ r
 	R2
 	bes4-^\fz\< r
-	bes-^_\fzmarkup r
+	\markEO #'(0 . 2) bes-^_\fzmarkup r
 % Bars 156 to 160
-	bes-^_\fzmarkup r
-	bes-^_\fzmarkup r\!
+	\markEO #'(0 . 2.1) bes-^_\fzmarkup-\tweak extra-offset #'(0 . 0) ^\crescmarkup r
+	\markEO #'(0 . 2.2) bes-^_\fzmarkup r\!
 	R2*3
 	
 	
@@ -304,7 +304,7 @@ musicContrabassoMvtIII = \relative c {
 	
 % Bars 271 to 275
 	
-	d'4\fp^\arco \acciaccatura {d16 c} b4->
+	d'4\fp-\offset X-offset -1.5 ^\arco \acciaccatura {d16 c} b4->
 	c \acciaccatura {c16 b} a4->
 	b \acciaccatura {b16 a} g4->
 	a \acciaccatura {a16 g} f4->
@@ -340,7 +340,7 @@ musicContrabassoMvtIII = \relative c {
 	r \acciaccatura {bes16 c} d4\fz
 % Bars 301 to 305
 	r \acciaccatura {d16 ees} f4\fz
-	r \acciaccatura {f16 g} aes4\fz
+	r \acciaccatura {f16 g} aes!4\fz
 	R2
 	ces4-^\f aes!-^
 	d-^ r
@@ -414,14 +414,14 @@ musicContrabassoMvtIII = \relative c {
 	
 	
 	
-	e4\f r8 b
+	\startMeasureCount e4\f r8 b
 	e4 r8 b
 % Bars 376 to 380
 	e4 r8 b
 	e4 r8 b
 	e4 r8 b
 	e4 r8 b
-	e4 r8 b
+	e4 r8 b \stopMeasureCount
 % Bars 381 to 385
 	e4-^ r
 	e'-> r8. e,16
@@ -485,11 +485,11 @@ musicContrabassoMvtIII = \relative c {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-6 R
 % Bars 436 to 440
+	\mmrPos #-7 R
 	\mmrPos #-6 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
 	\mmrPos #-6 R
-	\mmrPos #-6 R
-	\mmrPos #-6 R
-	\mmrPos #-4 R
 % Bars 441 to 445
 	\mmrPos #-4 R
 	\mmrPos #-4 R
@@ -510,7 +510,7 @@ musicContrabassoMvtIII = \relative c {
 	aes r
 % Bars 456 to 460
 	des8 r r4
-	des4-^^\brackM\tutti\p_\marcato\< ees-^
+	des4-^^\brackM\tutti\p-\tweak extra-offset #'(3.7 . 3.3) _\marcato\< ees-^
 	f-^ ges-^
 	aes-^ bes-^
 	c-^ des-^\!
@@ -518,7 +518,7 @@ musicContrabassoMvtIII = \relative c {
 	R2
 	bes,4-^\mf\< c-^
 	d!-^ ees-^
-	f-^_\pocoapococresc g-^
+	f-^^\pocoapococresc g-^
 	aes-^ bes-^
 % Bars 466 to 470
 	c-^ d-^\!
@@ -542,8 +542,8 @@ musicContrabassoMvtIII = \relative c {
 	
 	\tuplet 3/2 2 {gis,4-^\f\< a-^ b-^
 	cis-^ dis-^ e-^\!} \mark \default
-	e,,4(_\fflegato gis\<
-	b e)\!
+	e,,4(-\offset X-offset -3.5 \ff_\legato gis\<
+	b \stemOffset #-1 e)\!
 % Bars 486 to 490
 	\key e \major fis(\< a
 	c\! gis'8 fis)
@@ -552,7 +552,7 @@ musicContrabassoMvtIII = \relative c {
 	fis(\< a
 % Bars 491 to 495
 	c\! gis'8 fis)
-	e4\ff(-> e,)
+	\measureCounterDown \startMeasureCount e4-\offset X-offset -1 \ff(-> e,)
 	e'(-> e,)
 	e'(-> e,)
 	e'(-> e,)
@@ -565,13 +565,13 @@ musicContrabassoMvtIII = \relative c {
 % Bars 501 to 505
 	e'(-> e,)
 	e'(-> e,)
-	e'(-> e,)
-	\tuplet 3/2 2 {e2\fp( dis4
+	e'(-> e,) \stopMeasureCount \measureCounterReset
+	\tuplet 3/2 2 {e2-\offset X-offset -1 \fp( dis4
 	fis2 eis4)
 % Bars 506 to 510
 	fis2( a4
 	gis2 fis4)
-	gis2(_\pocoapococresc fis4
+	gis2(^\pocoapococresc fis4
 	a2 fis4)
 	gis2( b4
 % Bars 511 to 515
@@ -659,7 +659,7 @@ musicContrabassoMvtIII = \relative c {
 	gis4 dis'-. 
 	gis,-. b-.
 % Bars 581 to 585
-	e4-. r^\pizz
+	\noteHeadEsw #'(0 . 2.5) e4-. \revertNoteHeadEsw r-\offset X-offset -1 ^\pizz
 	e' r
 	gis, r
 	ais\< r
@@ -729,7 +729,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 641 to 645
 	ees,4..\fz ees16
 	ees'8 r r4
-	ees,4.. ees16
+	ees,4..\fz ees16
 	d8 r r4
 	d'4..\fz d16
 % Bars 646 to 650
@@ -812,7 +812,7 @@ musicContrabassoMvtIII = \relative c {
 	ees'2\fz~
 % Bars 711 to 715
 	ees4 r8. ees,16
-	ees4->\brack\f r
+	\startMeasureCount ees4->\brack\f r
 	ees-> r
 	ees-> r
 	ees-> r
@@ -820,7 +820,7 @@ musicContrabassoMvtIII = \relative c {
 	ees-> r
 	ees-> r
 	ees-> r
-	ees-> r
+	ees-> r \stopMeasureCount
 	ees'-^ f-^
 % Bars 721 to 725
 	des-^ ees-^
@@ -841,7 +841,7 @@ musicContrabassoMvtIII = \relative c {
 	ees-> f ees des
 	ces-> des ces bes
 % Bars 736 to 740
-	ees-.\ff ees-. ees-. ees-.
+	\startMeasureCount ees-.\ff ees-. ees-. ees-.
 	ees-. ees-. ees-. ees-.
 	ees-. ees-. ees-. ees-.
 	ees-. ees-. ees-. ees-.
@@ -854,8 +854,8 @@ musicContrabassoMvtIII = \relative c {
 	ees-. ees-. ees-. ees-.
 % Bars 746 to 750
 	ees-. ees-. ees-. ees-.
-	ees-. ees-. ees-. ees-.
-	ees\ff r r4
+	ees-. ees-. ees-. ees-. \stopMeasureCount
+	ees_\ffpocoapoco_cresc r r4
 	R2
 	r4 r8. bes'16-.\ff
 % Bars 751 to 755

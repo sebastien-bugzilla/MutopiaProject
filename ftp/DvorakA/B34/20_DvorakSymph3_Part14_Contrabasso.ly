@@ -38,10 +38,10 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34)"
+			"Antonín Dvořák — Symphony No. 3 in E-flat Major Op.10 (B.34) — Contrabasso"
 		}
 		instrument = \markup {
-			"Contrabasso"
+			""
 		}
 	}
 	\score {
@@ -70,7 +70,7 @@
 	}
 	\score {
 		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
-			\new Staff {
+			\new Staff <<
 				\new Voice {
 					\formatContrabassoMvtII
 				}
@@ -83,7 +83,7 @@
 				\new Voice {
 					\timeMvtII \nameContrabassoMvtII \musicContrabassoMvtII
 				}
-			}
+			>>
 			\new Staff {
 				\new Voice {
 					\timeMvtII \musicContrabassoDivisiMvtII
@@ -93,7 +93,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.5 \bold 2.
 			}
 		}
 		\layout {

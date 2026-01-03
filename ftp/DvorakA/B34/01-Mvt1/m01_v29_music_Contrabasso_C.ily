@@ -261,7 +261,7 @@ musicContrabassoMvtI = \relative c {
 	r4 r8 aes'4-^\p r8 
 	R2.
 % Bars 211 to 215
-	ees4\fz-^ r8 r4 r8
+	ees4\fz-^ r8 r4_\crescpocoapoco r8
 	R2.
 	a4-^ r8 r4\< r8
 	e4 r8 r4 r8

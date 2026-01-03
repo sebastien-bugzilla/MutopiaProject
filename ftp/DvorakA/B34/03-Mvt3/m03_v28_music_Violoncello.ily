@@ -896,7 +896,7 @@ musicVioloncelloMvtIII = \relative c {
 	ees-. ees-. ees-. ees-.
 	ees-. ees-. ees-. ees-. \stopMeasureCount
 	ees\ff r r4
-	R2
+	R2_\pocoapococresc
 	r4 r8. bes'16-.\ff
 % Bars 751 to 755
 	g4..-> f16-.
