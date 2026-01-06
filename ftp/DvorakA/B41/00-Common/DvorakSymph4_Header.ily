@@ -15,7 +15,7 @@
 	title = \markup { 
 		\abs-fontsize #18 \sans
 		\center-column {
-			Symphony No. 4 in D Minor Op.13 (B.41)
+			"Symphony No. 4 in D Minor Op.13 (B.41)"
 		}
 	}
 	copyright = \markup {

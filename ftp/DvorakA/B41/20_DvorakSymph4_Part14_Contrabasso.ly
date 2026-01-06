@@ -4,15 +4,16 @@
 %
 %  Composer           : Antonín Dvořák(1841 - 1904)
 %  work               : Symphony No. 4 in D Minor Op.13 (B.41)
-%  Source             : Souborné vydání díla, series 3, vol.4 Prague
 %  Source             : Souborné vydání díla, series 3, vol.4 Prague SHV, 1962.
 %                       Plate H 3431. 
+%  Type of score      : Score for Contrabasso
 %  Typesetter         : Sébastien MANEN
 %  date of initiation : Sunday 04 January 2026, 08:21
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.25.30"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
