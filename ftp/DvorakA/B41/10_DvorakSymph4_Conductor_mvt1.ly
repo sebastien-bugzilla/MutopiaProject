@@ -25,8 +25,8 @@
 \include "./00-Common/DvorakSymph4_Format_Cond_Mvt01.ily"
 \include "./01-Mvt1/m01_v01_music_FlautoI.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoII.ily"
-\include "./01-Mvt1/m01_v03_music_OboeI.ily"
-\include "./01-Mvt1/m01_v04_music_OboeII.ily"
+\include "./01-Mvt1/m01_v03_music_OboeI_C.ily"
+\include "./01-Mvt1/m01_v04_music_OboeII_C.ily"
 \include "./01-Mvt1/m01_v05_music_ClarinettoI.ily"
 \include "./01-Mvt1/m01_v06_music_ClarinettoII.ily"
 \include "./01-Mvt1/m01_v07_music_FagottoI.ily"
@@ -67,30 +67,32 @@
 	\score {
 		<<
 %			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
-					\new Staff <<
+%				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
+%					\new Staff <<
+%%						\new Voice {
+%%							\formatConductorMvtI
+%%						}
 %						\new Voice {
-%							\formatConductorMvtI
+%							\tempiMvtI
 %						}
-						\new Voice {
-							\tempiMvtI
-						}
-						\new Voice {
-							\timeMvtI \nameStaffIMvtI \musicFlautoIMvtI
-						}
-					>>
-					\new Staff {
-						\timeMvtI \nameStaffIIMvtI \musicFlautoIIMvtI
-					}
-				>>
+%						\new Voice {
+%							\timeMvtI \nameStaffIMvtI \musicFlautoIMvtI
+%						}
+%					>>
+%					\new Staff {
+%						\timeMvtI \nameStaffIIMvtI \musicFlautoIIMvtI
+%					}
+%				>>
 %				\new Staff {
 %					\timeMvtI \nameStaffIIIMvtI
-%					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
+%					\partCombine #'(0 . 14) \musicOboeIMvtI \musicOboeIIMvtI
+%%					\musicOboeIIMvtI 
 %				}
-%				\new Staff {
-%					\timeMvtI \nameStaffIVMvtI
+				\new Staff {
+					\timeMvtI \nameStaffIVMvtI
 %					\partCombine \musicClarinettoIMvtI \musicClarinettoIIMvtI
-%				}
+					\musicClarinettoIMvtI 
+				}
 %				\new Staff {
 %					\timeMvtI \nameStaffVMvtI
 %					\partCombine \musicFagottoIMvtI \musicFagottoIIMvtI

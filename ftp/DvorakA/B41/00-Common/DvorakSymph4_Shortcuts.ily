@@ -8,7 +8,7 @@
 %--------------------
 % dynamics pp
 %--------------------
-
+pplegato = \markup {\dynamic pp \italic legato}
 %--------------------
 % dynamics p
 %--------------------
@@ -32,7 +32,7 @@ pcresc = \markup {\dynamic p \italic cresc.}
 %--------------------
 % dynamics f
 %--------------------
-
+fcresc = \markup {\dynamic f \italic cresc.}
 %--------------------
 % dynamics ff
 %--------------------
@@ -85,6 +85,11 @@ brack = #(define-event-function
 	)
 )
 brackM = -\markup \bracketMarkup \etc
+
+omitFlag = \once \omit Flag
+omitBeam = \once \omit Beam
+omitDots = \once \omit Dots
+omitStem = \once \omit Stem
 
 
 
@@ -287,10 +292,6 @@ brackM = -\markup \bracketMarkup \etc
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 %omitMMRN = \omit MultiMeasureRestNumber
-%omitFlag = \once \omit Flag
-%omitBeam = \once \omit Beam
-%omitDots = \once \omit Dots
-%omitStem = \once \omit Stem
 %omitTupletNumber = \once \omit Voice.TupletNumber
 
 
