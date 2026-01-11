@@ -100,7 +100,7 @@ mmrPos = #(define-music-function
 	#}
 )
 
-
+dotsPosition = \once \override Dots.staff-position = \etc
 
 %aIIXoffset = #(define-music-function
 %	(offset)
