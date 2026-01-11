@@ -40,7 +40,7 @@ musicClarinettoIMvtI = \relative c {
 		b-. r r4 r
 		r c8(\fz b16) r b(\f\< dis fis b)\! \mark \default
 % Bars 26 to 30
-		g2->\ff g8.-> e16
+		g2->\ff \partCombineApart g8.-> e16 \partCombineAutomatic
 		a2\fz~ a8 r
 		a4..\fz fis16-.[ dis8.-> a16-.]
 		g4.->\fz( b16 g e8) r
@@ -50,54 +50,54 @@ musicClarinettoIMvtI = \relative c {
 		bes4..\fz fis!16-. e(\< d cis g')\!
 		fis!8-.-> r fis-.-> r g-.\brack\fz r
 		fis-.-> r fis-.-> r g-.\fz r
-		fis-. r b,->[ r16 ais gis8-> r16 fis]
+		fis-. r b,->[ r16 ais gis!8-> r16 fis]
 % Bars 36 to 40
 		e4->-. cis'-.-> fis-.->
 		fis8-.-> r fis-.-> r g-.\brack\fz r
 		fis-.-> r fis-.-> r g-.\fz r
-		fis-.-> r b,[ r16 ais\> gis8 r16 fis]
+		fis-.-> r b,[ r16 ais\> gis!8 r16 fis]
 		e8-.\! r cis'-._\dimmarkup r fis-. r
 % Bars 41 to 45
 		fis-. r dis-.\p r cis-. r
 		dis-. r dis-._\dimmarkup r cis-. r
-		dis-. r b[ r16 ais gis8 r16 fis]
-		e4-. cis-.\pp fis-.
+		dis-. r b[ r16 ais gis!8 r16 fis]
+		e4-. cis!-.\pp fis-.
 		r r fis-.->
 % Bars 46 to 50
 		r r fis->-.
 		r fis'4..^\soli e16(
-		dis8.)\>[ cis16( b8.) ais16( gis8.) fis16]\!
+		dis8.)\>[ cis16( b8.) ais!16( gis!8.) fis16]\!
 		R2.*2
 		
 % Bars 51 to 55
 		r4 d'4.\fz c8(
-		b8.)[ a16( g8.) f16( e8.) d16](
+		b8.)[ a16( g8.) f!16( e8.) d16](
 		e8) r r4 r
 		R2.*3
 		
 % Bars 56 to 60
 		
-		r4 e'4.(\p\< f8
+		\partCombineApart r4 e'4.(\p\< f8
 		a4 g d\!
 		f2\> e4~
 		e)\! c4.\p( d8)
 % Bars 61 to 65
-		e2 r4
+		e2 r4 \partCombineAutomatic
 		R2.
-		c2.\pp(
+		\partCombineApart c2.\pp(
 		b
 		c
 % Bars 66 to 70
 		b)
-		e2(~\brack\pp e8\< f
+		e2(~ e8\< f
 		a4 gis d
 		f e c\!~
 		c b a)
 % Bars 71 to 75
-		g r r
+		g r r \partCombineAutomatic
 		R2.*4
 % Bars 76 to 80
-		<< a'2.(\mf\< {s4 s s8 s\!}>>
+		\partCombineApart << a'2.(\mf\< {s4 s s8 s\!}>>
 		g2.\>
 		<< cis,) {s4 s s\!}>>
 		d4(\p g4._\crescmarkup fis8
@@ -105,7 +105,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 81 to 85
 		g4) g4.( fis8
 		e4. d8 e fis
-		g4->) r r
+		g4->) \partCombineAutomatic r r
 		c,->\mf r r
 		d->_\crescmarkup r r
 % Bars 86 to 90
@@ -116,10 +116,10 @@ musicClarinettoIMvtI = \relative c {
 		e(
 % Bars 91 to 95
 		f)
-		e(
+		\partCombineApart e(
 		a4 g d)
 		f2( e4~
-		e c4. d8)
+		e c4. d8) \partCombineAutomatic
 % Bars 96 to 100
 		<< e2.( {s4 s s\<}>>
 		g2 f4)\!
@@ -135,13 +135,13 @@ musicClarinettoIMvtI = \relative c {
 % Bars 106 to 110
 		ais'\fz r r
 		R2.
-		fis2\fp~ fis8\> cis-.
+		fis2\fp~ fis8\> cis!-.
 		cis8. fis16 fis4-.\! r
-		R2.*4
+		\partCombineApart R2.*4
 % Bars 111 to 115
 		
 		
-		
+		\partCombineAutomatic
 		\alternative {
 			\volta 1 {
 				R2.*5
@@ -159,12 +159,12 @@ musicClarinettoIMvtI = \relative c {
 				
 			}
 			\volta 2 {
-				ges'2\ff~ ges8 ees-.
+				ges'2\ff~ ges8 ees!-.
 				ees8.-> ges16 ges4-. r
 			}
 		}
 	}
-	ges2\fz~ ges8 ees-.\>
+	ges2\fz~ ges8 ees!-.\>
 % Bars 131 to 135
 	ees8. ges16 ges4-.\! r
 	bes,8.\p ees16 ees4-. r
@@ -185,7 +185,7 @@ musicClarinettoIMvtI = \relative c {
 	
 	
 	
-	f2\fz~ f8\> des-.
+	f2\fz~ f8\> des!-.
 % Bars 151 to 155
 	des8. f16 f4-.\! r
 	f2\fz~ f8\> c-.
@@ -195,17 +195,17 @@ musicClarinettoIMvtI = \relative c {
 % Bars 156 to 160
 	
 	
-	f2.\p\<(~
-	f\!~
-	f4 c_\pdim aes
+	\partCombineApart f2.(~
+	f~
+	f4 c-\pdim aes
 % Bars 161 to 165
 	f c aes
-	g) r r
+	g) r r \partCombineAutomatic 
 	R2.*3
 % Bars 166 to 170
-	r4 e''4.(->_\mfcresc d8
+	r4 \partCombineApart e''4.(->_\mfcresc d8
 	c d c b a b
-	c) r e4.->( d8
+	c) \partCombineAutomatic r e4.->( d8
 	c d c b a b)
 	e(_\fcresc g f e c d
 % Bars 171 to 175
@@ -213,7 +213,7 @@ musicClarinettoIMvtI = \relative c {
 	e-.\ff r g-. r d-.\fz r
 	e-. r g-. r d-.\fz r
 	e-. r c'4..->\fz b16
-	a8->[ r16 g] f8->[ r16 e] d8->[ r16 g]
+	a8->[ r16 g] f!8->[ r16 e] d8->[ r16 g]
 % Bars 176 to 180
 	e8-. r g-. r d-.\fz r
 	e-. r g-. r d-.\fz r
@@ -224,10 +224,10 @@ musicClarinettoIMvtI = \relative c {
 	gis-> r gis-> r fis-> r
 	gis-. r r4 r
 	R2.
-	aes2->\f~ aes8 ees-.
+	aes2->\f~ aes8 ees!-.
 	ees8.-> aes16 aes4-. r
 % Bars 186 to 190
-	aes2->\fz~ aes8 ees-.
+	aes2->\fz~ aes8 ees!-.
 	ees8.-> aes16 aes4-. r
 	aes2.\ff~
 	aes~
@@ -258,8 +258,8 @@ musicClarinettoIMvtI = \relative c {
 % Bars 211 to 215
 	
 % Bars 216 to 220
-	R2.*2
-	
+	\partCombineApart R2.*2
+	\partCombineAutomatic
 	g'2\ff~ g8 e-.
 	e8. g16 g4-. r
 	g2~ g8 e-.
@@ -312,7 +312,7 @@ musicClarinettoIMvtI = \relative c {
 	R2.
 	r4 r b'16(\f\< dis fis b)\!
 % Bars 261 to 265
-	g2->\ff g8.-> e16-.
+	g2->\ff \partCombineApart g8.-> e16-. \partCombineAutomatic
 	a2\fz~ a8 r
 	a4..\fz fis16[ dis8.-> a16]-.
 	g4.->( b16 g e8) r
@@ -322,18 +322,18 @@ musicClarinettoIMvtI = \relative c {
 	bes4..\fz fis!16 e( d cis g')
 	fis8-. r fis-. r g-.\fz r
 	fis-. r fis-. r g-.\fz r
-	fis-. r b,[-> r16 ais-. gis8-> r16 fis-.]
+	fis-. r b,[-> r16 ais-. gis!8-> r16 fis-.]
 % Bars 271 to 275
 	e4-. cis'-. fis-.
 	fis8-. r fis-. r g-.\fz r
 	fis-. r fis-. r g-.\fz r
-	fis-. r b,8[-> r16 ais-. gis8-> r16 fis-.]
+	fis-. r b,8[-> r16 ais-. gis!8-> r16 fis-.]
 	e4-. cis'-. fis-.
 % Bars 276 to 280
 	fis8-.\f r dis-. r cis-. r
 	dis-. r dis-. r cis-.\> r
-	dis\!-. r b8.[\> ais16 gis8. fis16]
-	e4-. cis-. fis-.\!
+	dis\!-. r b8.[\> ais16 gis!8. fis16]
+	e4-. cis!-. fis-.\!
 	R2.*8
 % Bars 281 to 285
 	
@@ -410,11 +410,11 @@ musicClarinettoIMvtI = \relative c {
 	
 	
 	
-	dis,2.\fp\>->(
+	\partCombineApart dis,2.\fp\>->(
 % Bars 351 to 355
 	e4)\! r r
 	dis2.->\fp\>(
-	e4)\! r r
+	e4)\! r r \partCombineAutomatic
 	R2.*5
 % Bars 356 to 360
 	
@@ -430,8 +430,8 @@ musicClarinettoIMvtI = \relative c {
 	gis(\< e4. b'8)
 % Bars 366 to 370
 	b2( a4)\!
-	gis2.(\mf~
-	gis8 b a gis e fis)
+	\partCombineApart gis2.(~
+	gis8 b a gis e fis) \partCombineAutomatic
 	<< gis2.(~\<_\moltocresc {s4 s s\!}>>
 	gis8 b a gis e fis)
 % Bars 371 to 375
@@ -468,7 +468,7 @@ musicClarinettoIMvtI = \relative c {
 	d8. g16 g4-.\! r
 	R2.*2
 	
-	b,2\pp~ b8 gis-.
+	b,2\pp~ b8 gis!-.
 	gis8. b16 b4-. r
 % Bars 401 to 405
 	R2.*6
@@ -513,7 +513,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 441 to 445
 	c!2-> r4
 	bes2-> r4 
-	b!2-> b,8. b'16
+	b!2-> \partCombineApart b,8. b'16 \partCombineAutomatic
 	g4-^ r r
 	fis-^ r r
 % Bar 446

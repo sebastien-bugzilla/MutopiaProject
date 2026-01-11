@@ -13,6 +13,7 @@ pplegato = \markup {\dynamic pp \italic legato}
 % dynamics p
 %--------------------
 pcresc = \markup {\dynamic p \italic cresc.}
+pdim = \markup {\dynamic p \italic dim.}
 %--------------------
 % dynamics mp
 %--------------------
@@ -20,7 +21,7 @@ pcresc = \markup {\dynamic p \italic cresc.}
 %--------------------
 % dynamics mf
 %--------------------
-
+mfcresc = \markup {\dynamic mf \italic cresc.}
 %--------------------
 % dynamics fz
 %--------------------
@@ -51,7 +52,7 @@ moltocresc = \markup {\italic "molto cresc."}
 %--------------------
 % text indications
 %--------------------
-
+soli = \markup {Soli}
 
 %--------------------
 % instrument modification
@@ -90,6 +91,14 @@ omitFlag = \once \omit Flag
 omitBeam = \once \omit Beam
 omitDots = \once \omit Dots
 omitStem = \once \omit Stem
+
+mmrPos = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)
 
 
 
@@ -259,14 +268,6 @@ omitStem = \once \omit Stem
 %	\once \override Score.RehearsalMark.whiteout = #0.75
 %	\once \override Score.RehearsalMark.whiteout-style = #'outline
 %}
-
-%mmrPos = #(define-music-function
-%	(position)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.staff-position = #(- position 2)
-%	#}
-%)
 
 %mmrnDown = {
 %	\once \override MultiMeasureRestNumber.direction = #-1 
