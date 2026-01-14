@@ -19,7 +19,7 @@ musicCornoIIMvtI = \relative c {
 		R2.
 		e2~ e8 r
 		R2.
-		c'2~_\crescmarkup c8 e,-.
+		c'2~ c8 e,-.
 		e8.\< c'16 c4 a8. c16
 % Bars 11 to 15
 		b4.\fz a8->\< b-> b->\!
@@ -56,7 +56,7 @@ musicCornoIIMvtI = \relative c {
 		gis8-.-> r gis-.-> r gis-.\fz r
 		gis-.-> r gis-.-> r gis-.\fz r
 		gis-. r gis4-.\> a-.\!
-		r a-._\dimmarkup a-.
+		r a-. a-.
 % Bars 41 to 45
 		gis8-. r r4 r
 		R2.*2
@@ -159,12 +159,12 @@ musicCornoIIMvtI = \relative c {
 	
 % Bars 136 to 140
 	des2->\ff~ des8 aes-.
-	aes8.-> des16 des4-. r
+	aes8.-> des!16 des4-. r
 	des2->~ des8 aes-.
-	aes8.-> des16 des4-. r
-	aes8.-> des16 des4-. r
+	aes8.-> des!16 des4-. r
+	aes8.-> des!16 des4-. r
 % Bars 141 to 145
-	aes8.-> des16 des4-. r
+	aes8.-> des!16 des4-. r
 	R2.*8
 % Bars 146 to 150
 	
@@ -407,14 +407,14 @@ musicCornoIIMvtI = \relative c {
 % Bars 361 to 365
 	
 	
-	a'4(_\crescmarkup cis4. cis8)
+	a'4( cis!4. cis8)
 	cis2( b4)
-	a(\< cis4. cis8)
+	a(\< cis!4. cis8)
 % Bars 366 to 370
 	cis2( b4)\!
 	a2.->\mf~
 	a2 b4
-	<< a2.~\<_\moltocresc {s4 s s8 s\!}>>
+	<< a2.~\< {s4 s s8 s\!}>>
 	a2 b4
 % Bars 371 to 375
 	cis2(->\< b4)
@@ -453,10 +453,10 @@ musicCornoIIMvtI = \relative c {
 	R2.*2
 	
 % Bars 401 to 405
-	R2.*4
-	
-	
-	
+	R2.
+	R
+	R
+	\mmrPos #-6 R
 	R2.*17
 % Bars 406 to 410
 	

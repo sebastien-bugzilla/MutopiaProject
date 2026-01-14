@@ -9,6 +9,7 @@
 % dynamics pp
 %--------------------
 pplegato = \markup {\dynamic pp \italic legato}
+ppdim = \markup {\dynamic pp \italic dim.}
 %--------------------
 % dynamics p
 %--------------------
@@ -25,7 +26,7 @@ mfcresc = \markup {\dynamic mf \italic cresc.}
 %--------------------
 % dynamics fz
 %--------------------
-
+fzmarkup = \markup {\dynamic fz}
 %--------------------
 % dynamics fp
 %--------------------
@@ -53,7 +54,7 @@ moltocresc = \markup {\italic "molto cresc."}
 % text indications
 %--------------------
 soli = \markup {Soli}
-
+solo = \markup {Solo}
 %--------------------
 % instrument modification
 %--------------------
