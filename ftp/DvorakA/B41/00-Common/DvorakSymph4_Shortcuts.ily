@@ -27,6 +27,7 @@ mfcresc = \markup {\dynamic mf \italic cresc.}
 % dynamics fz
 %--------------------
 fzmarkup = \markup {\dynamic fz}
+fzcresc = \markup {\dynamic fz \italic cresc.}
 %--------------------
 % dynamics fp
 %--------------------
@@ -35,6 +36,7 @@ fzmarkup = \markup {\dynamic fz}
 % dynamics f
 %--------------------
 fcresc = \markup {\dynamic f \italic cresc.}
+fbenmarc = \markup {\dynamic f \italic "ben marc."}
 %--------------------
 % dynamics ff
 %--------------------

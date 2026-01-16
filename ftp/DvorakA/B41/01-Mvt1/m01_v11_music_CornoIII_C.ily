@@ -32,9 +32,9 @@ musicCornoIIIMvtI = \relative c {
 		g2\fz->~ g8 a-.
 		a4->\< g-> f->
 		e-> g-> f->\!
-		b2\ff~ b8 b,-.
+		\partCombineApart b2~ b8 b,-. 
 % Bars 21 to 25
-		b r r4 e8.-> gis16
+		b \partCombineAutomatic r r4 e8.-> gis16
 		gis8 r r4 r
 		r f8-. d-. b'-.\noBeam r
 		R2.*2
@@ -93,11 +93,11 @@ musicCornoIIIMvtI = \relative c {
 		bes2 bes4
 		a2.->(
 		g)->
-		f~
-		f
+		\partCombineApart f~
+		f \partCombineAutomatic
 % Bars 96 to 100
-		c'~
-		c2\< c,4\!
+		\partCombineApart c'~
+		c2 c,4 \partCombineAutomatic
 		f4-.\f f4.-> f8-.
 		c2-> c4
 		f f4.-> f8
@@ -166,11 +166,11 @@ musicCornoIIIMvtI = \relative c {
 	
 % Bars 161 to 165
 	
-	R2.*10
+	\partCombineApart R2.*10
 % Bars 166 to 170
 	
 % Bars 171 to 175
-	\mark \default
+	\partCombineAutomatic \mark \default
 	a8-.\ff r a-. r g-.\fz r
 	a-. r a-. r g-.\fz r
 	a-. r a2\fz
@@ -179,7 +179,7 @@ musicCornoIIIMvtI = \relative c {
 	a8-. r a-. r g-.\fz r
 	a-. r a-. r g-.\fz r
 	a r b2\fz
-	r4 e,-^ e-^
+	r4 \partCombineApart e,-^ e-^ \partCombineAutomatic
 	cis'8-. r r4 b8-. r
 % Bars 181 to 185
 	cis-. r r4 b8-. r
@@ -228,17 +228,17 @@ musicCornoIIIMvtI = \relative c {
 % Bars 231 to 235
 	
 	
-	r4 g->\f g->
-	r fis-> fis->
+	\partCombineApart r4 g->\f g->
+	r fis-> fis-> \partCombineAutomatic
 	R2.*5
 % Bars 236 to 240
 	
 	
 	
 	
-	r4 c'->\f c->
+	\partCombineApart r4 c'->\f c->
 % Bars 241 to 245
-	r b-> b->
+	r b-> b-> \partCombineAutomatic
 	R2.
 	r4 r gis->\fz
 	R2.
@@ -294,9 +294,9 @@ musicCornoIIIMvtI = \relative c {
 	<< a_\fzmarkup {s4 s s8 s\!}>> \mark \default
 % Bars 296 to 300
 	b4\f r r
-	a2~_\fbenmarc a8 fis-.
+	a2~_\fbenmarc a8 fis!-.
 	e8. a16 a2->
-	b2~ b8 gis-.
+	b2~ b8 gis!-.
 	fis8. b16 b2->_\crescmarkup
 % Bars 301 to 305
 	g8. cis16 cis2->
@@ -337,7 +337,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 331 to 335
 	d4 r r
 	R2.
-	e,4\f r r
+	\once \partCombineApart e,4 r r
 	R2.
 	aes2->\ff ees8.-> aes16->
 % Bars 336 to 340
@@ -432,11 +432,11 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	
-	e2\p~ e8 a-.
+	\partCombineApart e2\p~ e8 a-.
 	a8. e16 e4-. r
 % Bars 431 to 435
 	e2~ e8 a-.
-	a8. e16 e4-. r
+	a8. e16 e4-. r \partCombineAutomatic
 	R2.*6
 % Bars 436 to 440
 	
