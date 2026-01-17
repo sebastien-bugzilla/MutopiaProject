@@ -31,7 +31,7 @@ fzcresc = \markup {\dynamic fz \italic cresc.}
 %--------------------
 % dynamics fp
 %--------------------
-
+fpdim = \markup {\dynamic fp \italic dim.}
 %--------------------
 % dynamics f
 %--------------------
@@ -52,16 +52,19 @@ fbenmarc = \markup {\dynamic f \italic "ben marc."}
 dimmarkup = \markup {\italic dim.}
 crescmarkup = \markup {\italic cresc.}
 moltocresc = \markup {\italic "molto cresc."}
+dimin = \markup {\italic "dimin."}
+semprediminuendo = \markup {\italic "sempre diminuendo"}
 %--------------------
 % text indications
 %--------------------
 soli = \markup {Soli}
 solo = \markup {Solo}
 sole = \markup {Sole}
+poco = \markup {\italic poco}
 %--------------------
 % instrument modification
 %--------------------
-
+amutainh = \markup {"A muta in H"}
 
 
 markk = \mark #11
