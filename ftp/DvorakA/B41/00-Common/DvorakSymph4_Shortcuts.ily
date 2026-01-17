@@ -57,6 +57,7 @@ moltocresc = \markup {\italic "molto cresc."}
 %--------------------
 soli = \markup {Soli}
 solo = \markup {Solo}
+sole = \markup {Sole}
 %--------------------
 % instrument modification
 %--------------------

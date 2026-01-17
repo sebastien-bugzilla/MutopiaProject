@@ -77,15 +77,15 @@ musicTrombeIMvtI = \relative c {
 % Bars 96 to 100
 		
 		
-		f4-.\f f4.-> f8-.
+		\partCombineApart f4-. f4.-> f8-. \partCombineAutomatic
 		c'2.->
-		f,4-. f4.-> f8-.
+		\partCombineApart f,4-. f4.-> f8-. \partCombineAutomatic
 % Bars 101 to 105
 		c'2.->
 		c->\fz
 		c->\fz
 		c->\fz
-		e,->
+		\once \partCombineApart e,->
 % Bars 106 to 110
 		b'4-^ r r
 		R2.*7
@@ -129,7 +129,7 @@ musicTrombeIMvtI = \relative c {
 	cis r r
 	gis r r
 	fis r r
-	fis r r
+	\once \partCombineApart fis r r
 	cis'\fz r r
 % Bars 151 to 155
 	R2.
@@ -151,7 +151,7 @@ musicTrombeIMvtI = \relative c {
 	a8-. r r4 g8-.\fz r
 	a-. r r4 g8-.\fz r
 	a r gis2\fz
-	r4 e-^ e-^
+	r4 \partCombineApart e-^ e-^ \partCombineAutomatic
 	a8-. r r4 gis8-. r
 % Bars 181 to 185
 	a-. r r4 gis8-. r
@@ -307,7 +307,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 331 to 335
 	b4 r r
 	R2.
-	e,4\f r r
+	\once \partCombineApart e,4 r r
 	R2.
 	aes2->\ff ees8.-> aes16->
 % Bars 336 to 340
@@ -331,9 +331,9 @@ musicTrombeIMvtI = \relative c {
 	
 % Bars 366 to 370
 	
-	e2->\p~ e8 cis-.
+	e2->\p~ e8 cis!-.
 	cis8. e16 e4-. r
-	e2\<_\moltocresc~ e8 cis-.
+	e2\<_\moltocresc~ e8 cis!-.
 	cis8. e16 e4-.\! r
 % Bars 371 to 375
 	e2->\< e4->
@@ -360,10 +360,10 @@ musicTrombeIMvtI = \relative c {
 	r a\brack\fz r
 	r a\brack\fz r
 % Bars 391 to 395
-	e2~ e8 r
+	\partCombineApart e2~ e8 \partCombineAutomatic r
 	R2.
-	a2\p^\sole e8. a16-.
-	gis2( f8) r
+	\partCombineApart a2^\sole e8. a16-.
+	gis2( f8) \partCombineAutomatic r
 	R2.*2
 % Bars 396 to 400
 	
@@ -399,7 +399,7 @@ musicTrombeIMvtI = \relative c {
 	aes2-> r4
 	gis2-> r4
 	a4-^ r r
-	e-^ r r
+	\once \partCombineApart e-^ r r
 % Bar 446
 	a-^ r r\fermata \fine
 }
