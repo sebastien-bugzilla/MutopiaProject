@@ -15,10 +15,11 @@ ppdim = \markup {\dynamic pp \italic dim.}
 %--------------------
 pcresc = \markup {\dynamic p \italic cresc.}
 pdim = \markup {\dynamic p \italic dim.}
+ppocoapococresc = \markup {\dynamic p \italic "poco a poco cresc."}
 %--------------------
 % dynamics mp
 %--------------------
-
+mpespressivomolto = \markup {\dynamic mp \italic "espressivo molto"}
 %--------------------
 % dynamics mf
 %--------------------
@@ -28,6 +29,8 @@ mfcresc = \markup {\dynamic mf \italic cresc.}
 %--------------------
 fzmarkup = \markup {\dynamic fz}
 fzcresc = \markup {\dynamic fz \italic cresc.}
+fzdim = \markup {\dynamic fz \italic dim.}
+sfzmarkup = \markup {\dynamic sfz}
 %--------------------
 % dynamics fp
 %--------------------
@@ -37,6 +40,8 @@ fpdim = \markup {\dynamic fp \italic dim.}
 %--------------------
 fcresc = \markup {\dynamic f \italic cresc.}
 fbenmarc = \markup {\dynamic f \italic "ben marc."}
+fmoltoespress = \markup {\dynamic f \italic "molto espress."}
+fdolce = \markup {\dynamic f \italic dolce}
 %--------------------
 % dynamics ff
 %--------------------
@@ -61,6 +66,9 @@ soli = \markup {Soli}
 solo = \markup {Solo}
 sole = \markup {Sole}
 poco = \markup {\italic poco}
+pizz = \markup {\italic pizz.}
+arco = \markup {\italic arco}
+dolce = \markup {\italic dolce}
 %--------------------
 % instrument modification
 %--------------------
