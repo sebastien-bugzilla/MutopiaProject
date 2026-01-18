@@ -69,6 +69,7 @@ poco = \markup {\italic poco}
 pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
 dolce = \markup {\italic dolce}
+div = \markup { div.}
 %--------------------
 % instrument modification
 %--------------------
