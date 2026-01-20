@@ -24,6 +24,7 @@ mpespressivomolto = \markup {\dynamic mp \italic "espressivo molto"}
 % dynamics mf
 %--------------------
 mfcresc = \markup {\dynamic mf \italic cresc.}
+fzmf = \markup {\concat {\dynamic fz \hspace #0.4 \dynamic mf}}
 %--------------------
 % dynamics fz
 %--------------------
@@ -45,7 +46,7 @@ fdolce = \markup {\dynamic f \italic dolce}
 %--------------------
 % dynamics ff
 %--------------------
-
+ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
 %--------------------
 % dynamics fff
 %--------------------
@@ -69,7 +70,8 @@ poco = \markup {\italic poco}
 pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
 dolce = \markup {\italic dolce}
-div = \markup { div.}
+div = \markup {div.}
+marcato = \markup {\italic marcato}
 %--------------------
 % instrument modification
 %--------------------
@@ -117,6 +119,35 @@ mmrPos = #(define-music-function
 )
 
 dotsPosition = \once \override Dots.staff-position = \etc
+
+trillsharp = \markup { 
+	\general-align #X #CENTER 
+	\concat { 
+		\hspace #2.4 \musicglyph #"scripts.trill" 
+		\translate #'(0.5 . 1.1) \tiny \sharp 
+	}
+}
+
+
+
+%trillflat = \markup { 
+%	\general-align #X #CENTER 
+%	\concat { 
+%		\hspace #2.4 \musicglyph #"scripts.trill" 
+%		\translate #'(0.5 . 0.49) \tiny \flat 
+%	}
+%}
+
+%trillnatural = \markup { 
+%	\general-align #X #CENTER 
+%	\concat { 
+%		\hspace #2.4 \musicglyph #"scripts.trill" 
+%		\translate #'(0.5 . 1.1) \tiny \natural 
+%	}
+%}
+
+
+
 
 %aIIXoffset = #(define-music-function
 %	(offset)
@@ -511,29 +542,6 @@ dotsPosition = \once \override Dots.staff-position = \etc
 %	}
 %}
 
-%trillflat = \markup { 
-%	\general-align #X #CENTER 
-%	\concat { 
-%		\hspace #2.4 \musicglyph #"scripts.trill" 
-%		\translate #'(0.5 . 0.49) \tiny \flat 
-%	}
-%}
-
-%trillnatural = \markup { 
-%	\general-align #X #CENTER 
-%	\concat { 
-%		\hspace #2.4 \musicglyph #"scripts.trill" 
-%		\translate #'(0.5 . 1.1) \tiny \natural 
-%	}
-%}
-
-%trillsharp = \markup { 
-%	\general-align #X #CENTER 
-%	\concat { 
-%		\hspace #2.4 \musicglyph #"scripts.trill" 
-%		\translate #'(0.5 . 1.1) \tiny \sharp 
-%	}
-%}
 
 
 

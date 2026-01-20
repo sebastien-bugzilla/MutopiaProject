@@ -12,4 +12,9 @@ correctionsMvtI = \markup {
 	% bar 108 and 128, Cor I II
 	"Bar 108 and 128, for Corni I II : a F clef is replaced by a G clef (based on part score)."
 	
+	% bar 39, Viola
+	"Bar 39, for Viola, on second beat <f ais> is indicated but it's more probably <fis a> as in bar 35."
+	
+	% bar 125, Viola
+	"Bar 125, for Viola, a missing "pizz." indication is added."
 }
