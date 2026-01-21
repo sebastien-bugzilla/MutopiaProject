@@ -20,11 +20,14 @@ ppocoapococresc = \markup {\dynamic p \italic "poco a poco cresc."}
 % dynamics mp
 %--------------------
 mpespressivomolto = \markup {\dynamic mp \italic "espressivo molto"}
+mpespress = \markup {\dynamic mp \italic espress.}
 %--------------------
 % dynamics mf
 %--------------------
 mfcresc = \markup {\dynamic mf \italic cresc.}
 fzmf = \markup {\concat {\dynamic fz \hspace #0.4 \dynamic mf}}
+mfespress = \markup {\dynamic mf \italic espress.}
+mfespressivo = \markup {\dynamic mf \italic espressivo}
 %--------------------
 % dynamics fz
 %--------------------
@@ -43,10 +46,16 @@ fcresc = \markup {\dynamic f \italic cresc.}
 fbenmarc = \markup {\dynamic f \italic "ben marc."}
 fmoltoespress = \markup {\dynamic f \italic "molto espress."}
 fdolce = \markup {\dynamic f \italic dolce}
+fmoltomarc = \markup {\dynamic f \italic "molto marc."}
 %--------------------
 % dynamics ff
 %--------------------
 ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
+%--------------------
+% dynamics ffz
+%--------------------
+ffz = \markup {\dynamic ffz}
+ffzD = #(make-dynamic-script ffz)
 %--------------------
 % dynamics fff
 %--------------------
