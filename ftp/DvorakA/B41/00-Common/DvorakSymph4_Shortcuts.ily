@@ -10,6 +10,7 @@
 %--------------------
 pplegato = \markup {\dynamic pp \italic legato}
 ppdim = \markup {\dynamic pp \italic dim.}
+pptranquillo = \markup {\dynamic pp \italic tranquillo}
 %--------------------
 % dynamics p
 %--------------------
