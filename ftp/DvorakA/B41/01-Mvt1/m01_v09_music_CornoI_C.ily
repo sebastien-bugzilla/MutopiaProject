@@ -189,7 +189,7 @@ musicCornoIMvtI = \relative c {
 	\partCombineApart c2\fp~ c8 a-.
 	bes8. d16 d4 r
 	c2\fp~ c8 a-.
-	bes8. des16 des4 r \partCombineAutomatic
+	bes8. d16 d4 r \partCombineAutomatic
 % Bars 166 to 170
 	R2.*6
 % Bars 171 to 175

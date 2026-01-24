@@ -5,7 +5,13 @@
 %#                       T E M P I   C O N D U C T O R S                       #
 %###############################################################################
 tempiMvtI = {
-	\tempo "Allegro"
+	\tempo \markup {
+		\concat {
+			"Allegro "
+			\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+			" = 152"
+		}
+	}
 	s2.*25
 	% bar 26
 	\tempo "grandioso"
@@ -26,7 +32,22 @@ tempiMvtI = {
 	\tempo "Tempo I."
 }
 tempiMvtII = {
-	\tempo "Andante sostenunto e molto cantabile"
+	\tempo \markup {
+		\concat {
+			"Andante sostenunto e molto cantabile "
+			\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+			" = 63 - 69"
+		}
+	}
+	s1*90 s4. 
+	% bar 91.375
+	\tempo "poco ritard."
+	s8 s2 s1*2 s2*1
+	% bar 95
+	\tempo "Tempo I."
+	s1*45 s2
+	% bar 140.5
+	\tempo "rit."
 }
 tempiMvtIII = {
 	\tempo "Allegro feroce"

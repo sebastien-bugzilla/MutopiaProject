@@ -11,6 +11,7 @@
 pplegato = \markup {\dynamic pp \italic legato}
 ppdim = \markup {\dynamic pp \italic dim.}
 pptranquillo = \markup {\dynamic pp \italic tranquillo}
+ppbracklegato = \markup {\dynamic pp \bracket \with-true-dimensions \italic legato}
 %--------------------
 % dynamics p
 %--------------------
@@ -70,6 +71,7 @@ crescmarkup = \markup {\italic cresc.}
 moltocresc = \markup {\italic "molto cresc."}
 dimin = \markup {\italic "dimin."}
 semprediminuendo = \markup {\italic "sempre diminuendo"}
+crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 %--------------------
 % text indications
 %--------------------

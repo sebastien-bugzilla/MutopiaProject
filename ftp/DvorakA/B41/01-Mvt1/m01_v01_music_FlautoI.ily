@@ -460,7 +460,7 @@ musicFlautoIMvtI = \relative c {
 	f'8.\pp a16 a4-. r
 	f8. a16 a4-. r
 	d2->\ff a8. d16-.
-	cis2(-> b8) r
+	cis2(-> bes8) r
 % Bars 441 to 445
 	fis'2-> cis8. fis16
 	eis2(-> cis8) r
