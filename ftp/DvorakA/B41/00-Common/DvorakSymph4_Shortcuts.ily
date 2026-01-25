@@ -12,6 +12,7 @@ pplegato = \markup {\dynamic pp \italic legato}
 ppdim = \markup {\dynamic pp \italic dim.}
 pptranquillo = \markup {\dynamic pp \italic tranquillo}
 ppbracklegato = \markup {\dynamic pp \bracket \with-true-dimensions \italic legato}
+ppcresc = \markup {\dynamic pp \italic cresc.}
 %--------------------
 % dynamics p
 %--------------------
@@ -140,6 +141,25 @@ trillsharp = \markup {
 	}
 }
 
+setStemOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\offset length #offset Stem
+	#}
+)
+
+unsetStemOffset = \revert Stem.length
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+
 
 
 %trillflat = \markup { 
@@ -184,14 +204,6 @@ trillsharp = \markup {
 %	(number?)
 %	#{
 %		\once \override Voice.Arpeggio.padding = #padding
-%	#}
-%)
-
-%beamOffset = #(define-music-function
-%	(position)
-%	(pair?)
-%	#{
-%		\once \offset positions #position Beam
 %	#}
 %)
 
@@ -429,14 +441,6 @@ trillsharp = \markup {
 %	\revert TupletNumber.avoid-slur
 %}
 
-
-%stemOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \offset length #offset Stem
-%	#}
-%)
 
 %textInSlur = {
 %	%\once \override TextScript.outside-staff-priority = 0

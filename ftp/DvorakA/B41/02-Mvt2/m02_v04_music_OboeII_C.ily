@@ -41,10 +41,10 @@ musicOboeIIMvtII = \relative c {
 % Bars 36 to 40
 	R1*5
 % Bars 41 to 45
-	R1*4
-	
-	
-	
+	R1
+	R
+	\mmrPos #-7 R
+	R
 	R1
 % Bars 46 to 50
 	R1*3
@@ -54,20 +54,20 @@ musicOboeIIMvtII = \relative c {
 	
 % Bars 51 to 55
 	\mark \default
-	bes16_\ppbracklegato bes8 bes bes bes16~ bes aes8 aes aes aes16~
+	bes16 bes8 bes bes bes16~ bes aes8 aes aes aes16~
 	aes f8 f\< g g16~ g g8 g\! g\> g16\!~
-	g aes8\p aes ees ees16~ ees ees8 ees ees ees16~
-	ees f8 f fis fis16~ fis_\crescmarkup fis8 fis fis a!16~
+	g aes8\p aes ees ees16~ \stemUp \omitBeam ees ees8 ees ees ees16~
+	\stemDown ees f8 f fis fis16~ fis fis8 fis fis a!16~
 % Bars 56 to 60
-	a g8 g_\dimmarkup g g16~ g g8 g g a16~
+	a g8 g g g16~ g g8 g g a16~
 	a\p a8 a a a16~ a bes8 bes bes bes16~
 	bes g8 g aes aes16~ aes\pp aes8 aes aes g16~
-	g\< ees8 ees ees ees16\!~ ees_\crescmarkup d8 d ees ees16~
-	ees\< ees8 ees e e16~ e f8 f16\!~ f fis(\> g a\!~
+	\stemUp \omitBeam g\< ees8 ees ees ees16\!~ \omitBeam ees d8 d ees ees16~
+	\omitBeam ees\< ees8 ees e e16~ \stemDown e f8 f16\!~ f fis(\> g a\!~
 % Bars 61 to 65
-	a)\p g8 g_\dimmarkup g g16~ g g8 g g g16~
+	a)\p g8 g g g16~ g g8 g g g16~
 	g g8\pp g g g16~ g g8 g g g16~
-	g g8 g g g16~ g_\crescmarkup g8 g g g16~
+	g g8 g g g16~ g g8 g g g16~
 	g\< g8 g g g16\!~ g\> g8 g g g16~\!
 	g g8 g g\pp g16~ g g8~ g f f16~
 % Bars 66 to 70
@@ -89,7 +89,7 @@ musicOboeIIMvtII = \relative c {
 	
 	R1
 % Bars 81 to 85
-	bes2(\p b_\crescmarkup)
+	bes2(\p b)
 	c4( des~ des8 c~ c b
 	c) r r4 r2
 	bes8-^\mf a!-^ aes-^[ r16 aes-.] des8-> c->(~ c \tuplet 3/2 8 {bes16 c des)}
@@ -146,7 +146,7 @@ musicOboeIIMvtII = \relative c {
 	<< a1->\crescD\< {s4 s s s\!}>>
 	bes2(\f << aes!)\> {s8 s s s16 s\!}>>
 	ges4(\p f\< e) r8 e\!
-	g!4\< f\!(~ \tuplet 3/2 4 {f8 d c} ees4)_\dimmarkup
+	g!4\< f\!(~ \tuplet 3/2 4 {f8 d c} ees4)
 	d4\p r r2
 % Bars 131 to 135
 	R1*3
