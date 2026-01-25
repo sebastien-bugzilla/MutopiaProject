@@ -18,3 +18,8 @@ correctionsMvtI = \markup {
 	% bar 125, Viola
 	"Bar 125, for Viola, a missing "pizz." indication is added."
 }
+correctionsMvtII = \markup {
+	
+	% bar 105
+	"Bar 105, for clarinetto I, on the last beat a missing bes is indicated based on Fl.I."
+}

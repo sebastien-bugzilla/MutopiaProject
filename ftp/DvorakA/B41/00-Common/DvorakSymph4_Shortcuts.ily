@@ -122,6 +122,9 @@ omitFlag = \once \omit Flag
 omitBeam = \once \omit Beam
 omitDots = \once \omit Dots
 omitStem = \once \omit Stem
+omitTupletNumber = \once \omit Voice.TupletNumber
+hideNoteHead = \once \hide NoteHead
+omitStemTremolo = \once \omit StemTremolo
 
 mmrPos = #(define-music-function
 	(position)
@@ -159,7 +162,13 @@ beamOffset = #(define-music-function
 	#}
 )
 
-
+%noteShift = #(define-music-function
+%	(shift)
+%	(number?)
+%	#{
+%		\once \override NoteColumn.force-hshift = #shift
+%	#}
+%)
 
 
 %trillflat = \markup { 
@@ -364,7 +373,6 @@ beamOffset = #(define-music-function
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 %omitMMRN = \omit MultiMeasureRestNumber
-%omitTupletNumber = \once \omit Voice.TupletNumber
 
 
 %mmrEO = #(define-music-function
@@ -389,14 +397,6 @@ beamOffset = #(define-music-function
 %	(number?)
 %	#{
 %		\once \override Score.RehearsalMark.Y-offset = #offset
-%	#}
-%)
-
-%noteShift = #(define-music-function
-%	(shift)
-%	(number?)
-%	#{
-%		\once \override NoteColumn.force-hshift = #shift
 %	#}
 %)
 
