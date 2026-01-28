@@ -43,7 +43,7 @@
 	}
 	\context {
 		\Staff
-%		\RemoveEmptyStaves
+		\RemoveEmptyStaves
 %		\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f

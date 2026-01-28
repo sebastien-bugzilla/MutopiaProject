@@ -31,7 +31,7 @@ musicFagottoIIMvtII = \relative c {
 	a4(\p\> d, c f)\pp \mark \default
 	bes r r2
 	R1
-	aes'4(\p\< << ges2.)\> {s4 s s\!}>>
+	aes'4\p\< << ges2.\> {s4 s s\!}>>
 % Bars 21 to 25
 	f4( fis2~\< fis8 a)\!
 	<< g2.\<~ {s4 s\! s\>}>> g8\! r
@@ -39,9 +39,9 @@ musicFagottoIIMvtII = \relative c {
 	g2(\> aes4. g8)\!
 	aes2\pp\> << g(~ {s8 s s s\!}>>
 % Bars 26 to 30
-	g2\<~ g4\! \tuplet 3/2 4 {fis8\> g a)}
-	<< g2._\dimmarkup {s4 s\! s}>> r4
-	<< g2.\pp\< {s4 s s_\crescmarkup}>> g4\!
+	g2\<~ g4\! \tuplet 3/2 4 {\omitTupletNumber fis8\> g a!)}
+	<< g2. {s4 s\! s}>> r4
+	<< g2.\pp\< {s4 s s}>> g4\!
 	<< g1\mf\< {s4 s s s8 s\!}>>
 	c,2(\mf\< e,4\! g)\>
 % Bars 31 to 35
@@ -54,8 +54,8 @@ musicFagottoIIMvtII = \relative c {
 	bes4(\pp ees2.
 	aes4 ges2.)
 	f4(\< fis2 a4)\!
-	g2.\fz\> g8( a)\!
-	a2.(_\dimmarkup bes8)\pp r
+	g2.\fz\> g8 a\!
+	a2.( bes8)\pp r
 % Bars 41 to 45
 	R1*3
 	
@@ -70,24 +70,24 @@ musicFagottoIIMvtII = \relative c {
 	r2 f,\pp~
 % Bars 51 to 55
 	f\> ees!\! \mark \default
-	d16_\ppbracklegato bes'8 bes bes bes16~ bes f8 f f f16~
+	d16 bes'8 bes bes bes16~ bes f8 f f f16~
 	f bes8 bes\< ees, ees16~ ees ees8 ees\! ees\> ees16\!~
 	ees aes8\p aes ges ges16~ ges ges8 ges ges ges16~
-	ges f8 f d d16~ d_\crescmarkup d8 d d d16~
+	ges f8 f d d16~ d d8 d d d16~
 % Bars 56 to 60
-	d e8 e_\dimmarkup ees ees16~ ees ees8 ees ees c16~
+	d e8 e ees ees16~ ees ees8 ees ees c16~
 	c\p d8 d d d16~ d g8 g g g16~
 	g c,8 c f f16~ f\pp f8 f f g16~
-	g\< aes8 aes aes aes16\!~ aes_\crescmarkup bes8 bes c c16~
-	c\< c8 c cis cis16~ cis d8 d\! d\> d16\!~
+	g\< aes8 aes aes aes16\!~ aes bes8 bes c c16~
+	c\< c8 c cis cis16~ cis d8 d\! d\> d16\!
 % Bars 61 to 65
-	d\p g,8 g_\dimmarkup g g16~ g g8 g g g16~
+	d\p g,8 g g g16~ g g8 g g g16~
 	g b,8\pp b c c16~ c d8 d d d16~
-	d b8 b c c16~ c_\crescmarkup e8 e g g16~
+	d b8 b c c16~ c e8 e g g16~
 	g\< c,8 c e e16~\! e\> g8 g g g16~\!
 	g c,8 c g'\pp g16~ g g8 g bes bes16~
 % Bars 66 to 70
-	bes ees,8 ees c c16~ c_\crescmarkup c8 c ees ees16~
+	bes ees,8 ees c c16~ c c8 c ees ees16~
 	ees d8\> d d d16~ d f8 f f f16\!
 	a4(\pp\> d c f,)\!
 	a r r2
@@ -99,7 +99,7 @@ musicFagottoIIMvtII = \relative c {
 	b2(\pp\< bes4 g
 	<< a1)\! {s4 s s\> s8 s\!}>>
 % Bars 76 to 80
-	<< bes1\p {s4 s s_\crescmarkup s}>>
+	<< bes1\p {s4 s s s}>>
 	a2.~ a8 r \mark \default
 	R1*4
 	
@@ -120,7 +120,7 @@ musicFagottoIIMvtII = \relative c {
 	c8-.\> b-. aes-.\! r r2
 	R1*2
 	\section
-	\time 2/4 c'8(_\pdim bes4 aes8 \section \mark \default
+	\time 2/4 c'8( bes4 aes8 \section \mark \default
 	\time 4/4 g8) r r4 r2
 % Bars 96 to 100
 	R1
@@ -141,7 +141,7 @@ musicFagottoIIMvtII = \relative c {
 	r r8 beses,4.(\pp
 	aes8) r r4 r2
 % Bars 111 to 115
-	R1\fermata
+	R1_\fermata
 	R1*2
 	\mark \default
 	R1
@@ -150,20 +150,20 @@ musicFagottoIIMvtII = \relative c {
 	bes8) r r4 r2
 	<< b2( {s4 s\<} >> bes4) g\!
 	<< a1( {s4 s s\> s }>>
-	<< bes1)\pp {s4 s s\< s_\crescmarkup\!}>>
+	<< bes1)\pp {s4 s s\< s\!}>>
 	a2.~ a8\! r \mark \default
 % Bars 121 to 125
 	R1
 	b2(\brack\pp\< c4\! a)\>
 	bes!\pp r r2
-	<< bes2.(\< {s4 s\! s\>}>> \tuplet 3/2 4 {c8 d ees\!}
-	d) r r4 r2
+	<< bes2.\< {s4 s\! s\>}>> \tuplet 3/2 4 {c8 d ees\!}
+	d r r4 r2
 % Bars 126 to 130
 	R1*2
 	
-	ges,2\p\< << g {s4 s8_\crescmarkup s\!}>>
-	e4\< << f2 {s4\! s\>}>> c'4(\!
-	bes)\p r r2
+	ges,2\p\< << g {s4 s8 s\!}>>
+	e4\< << f2 {s4\! s\>}>> c'4\!
+	bes\p r r2
 % Bars 131 to 135
 	R1*5
 % Bars 136 to 140

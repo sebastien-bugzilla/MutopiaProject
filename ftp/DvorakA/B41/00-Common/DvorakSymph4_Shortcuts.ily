@@ -31,6 +31,7 @@ mfcresc = \markup {\dynamic mf \italic cresc.}
 fzmf = \markup {\concat {\dynamic fz \hspace #0.4 \dynamic mf}}
 mfespress = \markup {\dynamic mf \italic espress.}
 mfespressivo = \markup {\dynamic mf \italic espressivo}
+mfmarcato = \markup {\dynamic mf \italic marcato}
 %--------------------
 % dynamics fz
 %--------------------
@@ -73,6 +74,7 @@ moltocresc = \markup {\italic "molto cresc."}
 dimin = \markup {\italic "dimin."}
 semprediminuendo = \markup {\italic "sempre diminuendo"}
 crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
+dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 %--------------------
 % text indications
 %--------------------
@@ -85,6 +87,7 @@ arco = \markup {\italic arco}
 dolce = \markup {\italic dolce}
 div = \markup {div.}
 marcato = \markup {\italic marcato}
+aII = \markup { \bold a2 }
 %--------------------
 % instrument modification
 %--------------------
@@ -161,6 +164,7 @@ beamOffset = #(define-music-function
 		\once \offset positions #position Beam
 	#}
 )
+
 
 %noteShift = #(define-music-function
 %	(shift)
