@@ -87,7 +87,7 @@ arco = \markup {\italic arco}
 dolce = \markup {\italic dolce}
 div = \markup {div.}
 marcato = \markup {\italic marcato}
-aII = \markup { \bold a2 }
+aII = \markup {\bold a2}
 %--------------------
 % instrument modification
 %--------------------
@@ -164,6 +164,8 @@ beamOffset = #(define-music-function
 		\once \offset positions #position Beam
 	#}
 )
+
+marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
 
 
 %noteShift = #(define-music-function

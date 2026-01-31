@@ -12,18 +12,22 @@ musicCornoIIMvtII = \relative c {
 	R1*3
 	
 	
-	R1*11
-	
+	R1
+	R
 % Bars 6 to 10
-	
+	R
+	R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-8 R
 % Bars 11 to 15
-	
-	
-	
-	
-	r4 bes''\pp\< a8-^ g-^ d-^ d-^
+	\mmrPos #-6 R
+	R
+	R
+	R
+	r4 bes''!\< \stemUp \omitBeam a8 g d d
 % Bars 16 to 20
-	d4 f\! << e2 {s8\> s s s\!}>>
+	\stemDown d4 f\! << e2 {s8\> s s s\!}>>
 	R1 \mark \default
 	R1
 	R1
@@ -33,7 +37,7 @@ musicCornoIIMvtII = \relative c {
 	
 	
 	
-	<< bes2\pp\> {s8\> s s s\!}>> r2
+	<< bes2 {s8 s s s}>> r2
 % Bars 26 to 30
 	R1*2
 	
@@ -62,24 +66,24 @@ musicCornoIIMvtII = \relative c {
 	R1*2
 % Bars 51 to 55
 	\mark \default
-	r16 f'8_\ppbracklegato f f f16~ f c8 c c c16~
-	c f8 f\< bes bes16~ bes bes8 bes\! bes\> bes16\!~
-	bes ees,8\p ees des des16~ des des8 des des des16~
-	des g8 g a a16~ a_\crescmarkup a8 a a a16~
+	r16 \stemUp \omitBeam f'8 f f f16~ \omitBeam f c8 c c c16~
+	\omitBeam c f8 f\< bes bes16~ \stemDown bes bes8 bes\! bes\> bes16\!~
+	\stemUp \omitBeam bes ees,8\p ees des des16~ \omitBeam \beamOffset #'(1.5 . 1.5) des des8 des des des16~
+	\omitBeam des g8 g a a16~ \stemDown a a8 a a a16~
 % Bars 56 to 60
-	a b8 b_\dimmarkup bes bes16~ bes bes8 bes bes bes16~
+	a b8 b bes bes16~ bes bes8 bes bes bes16~
 	bes\p a8 a a a16~ a d,8 d d d16~
-	d g8 g bes bes16~ bes\pp bes8 bes bes bes16~
-	bes\< ees,8 ees ees ees16~\! ees_\crescmarkup f8 f f g16~
-	g\< g8 g gis gis16~ gis a8 a\! a\> a16\!(
+	\stemUp \omitBeam d g8 g bes bes16~ \stemDown bes\pp bes8 bes bes bes16~
+	\stemUp \omitBeam bes\< ees,8 ees ees ees16~\! \omitBeam ees f8 f f g16~
+	\omitBeam g\< g8 g gis gis16~ \stemDown gis a8 a\! a\> a16\!(
 % Bars 61 to 65
-	d,)\p d8 d_\dimmarkup d d16~ d d8 d d d16~
-	d d8\pp d d d16~ d d8 d d d16~
-	d d8 d d d16~ d_\crescmarkup d8 d d d16~
-	d\< g8 g b b16~\! b\> d,8 d d d16\!~
-	d g8 g bes\pp bes16~ bes bes8 a a a16~
+	\stemUp \omitBeam d,)\p d8 d d d16~ \omitBeam d d8 d d d16~
+	\omitBeam d d8\pp d d d16~ \omitBeam d d8 d d d16~
+	\omitBeam d d8 d d d16~ \omitBeam \beamOffset #'(1.5 . 1.5) d d8 d d d16~
+	\omitBeam d\< g8 g b b16~\! \omitBeam b\> d,8 d d d16\!~
+	\stemDown d g8 g bes\pp bes16~ bes bes8 a a a16~
 % Bars 66 to 70
-	a bes8 bes g g16~ g_\crescmarkup g8 g a g16~
+	a bes8 bes g g16~ g g8 g a g16~
 	g a8\> a a a16~ a c8 c c c16\!~
 	c4\pp r r2
 	R1*2
@@ -118,7 +122,7 @@ musicCornoIIMvtII = \relative c {
 	r16 d'8\pp d d d16 r ees8 ees ees ees16
 	r f8\< f bes bes16 r bes8 bes bes bes16\!
 % Bars 101 to 105
-	r ees,8 ees ees ees16~_\crescmarkup ees ees8 ees ees ees16
+	r ees,8 ees ees ees16~ ees ees8 ees ees ees16
 	ees1-^\mf
 	f2-^\> \marcatoUpperSlur e!(-^\!
 	ees8)\p r r4 r2
@@ -128,7 +132,7 @@ musicCornoIIMvtII = \relative c {
 	aes2:\> aes:\p\>
 	aes8\pp r r4 r2
 	R1
-	c,2(->\pp des)
+	c,2(\pp des)
 % Bars 111 to 115
 	ees8-._\dimmarkup r f-. r r2\fermata
 	R1*2
