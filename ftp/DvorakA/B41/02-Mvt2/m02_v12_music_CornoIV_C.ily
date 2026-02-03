@@ -12,17 +12,17 @@ musicCornoIVMvtII = \relative c {
 	R1*3
 	
 	
-	r4 e'2\pp\< cis4
-	d\! d2\>~ d8 e\!
+	r4 \stemUp e'2\pp\< cis4
+	\stemDown d\! d2\>~ d8 e\!
 % Bars 6 to 10
 	e4\> e\!( f2)\pp
 	d2 ees4. d8
 	bes2 a4\<( bes)
-	bes4-> b->\! a\> a
+	\stemUp bes4 b\! a\> a
 	a2\dimD~ a4 r
 % Bars 11 to 15
 	c2\pp-> c->
-	d2->\< d->
+	\stemDown d2->\< d->
 	d4\! b!2\mf\> d4
 	d4\! f4.\pp f8 ees4 
 	d d2->\< c8 bes
@@ -48,7 +48,7 @@ musicCornoIVMvtII = \relative c {
 	d4\! r8 d\pp d4 r8 f8
 	f4 r8 d\< d4 r8 d\!
 	f4\< r8 f\! e4\> r8 e\!
-	e4\p r8 e_\dimmarkup d4 r8 e \mark \default
+	e4\p r8 e d4 r8 e \mark \default
 	f4\pp r r2
 % Bars 36 to 40
 	R1*16
@@ -106,7 +106,7 @@ musicCornoIVMvtII = \relative c {
 	r16\pp bes8 bes bes bes16 r c8 c c c16
 	r d8\< d ees ees16 r f8 f f f16\! 
 % Bars 101 to 105
-	r ees8 ees ees ees16~_\crescmarkup ees ees8 ees ees ees16
+	r ees8 ees ees ees16~ ees ees8 ees ees ees16
 	ees4\mf r r2
 	R1
 	R1*3
@@ -116,9 +116,9 @@ musicCornoIVMvtII = \relative c {
 	R1
 	aes,1\pp~
 	aes8 r r4 r2
-	R1
+	\mmrPos #-7 R1
 % Bars 111 to 115
-	R1\fermata
+	\mmrPos #-7 R1_\fermata
 	R1*2
 	\mark \default
 	f1\pp~
