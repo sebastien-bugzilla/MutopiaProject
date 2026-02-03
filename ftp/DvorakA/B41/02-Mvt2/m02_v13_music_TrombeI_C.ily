@@ -45,8 +45,8 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	<< g''2.(^\sole~\< {s4 s s\!}>> g8\> f\!
-	e4) r r2 \mark \default
+	\partCombineApart << g''2.(^\sole~ {s4 s s}>> g8 f
+	e4) \partCombineAutomatic r r2 \mark \default
 % Bars 71 to 75
 	R1*7
 % Bars 76 to 80

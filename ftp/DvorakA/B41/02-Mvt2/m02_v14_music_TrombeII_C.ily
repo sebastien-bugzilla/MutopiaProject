@@ -4,10 +4,10 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIMvtII = \relative c {
+musicTrombeIIMvtII = \relative c {
 	\clef treble
 	\key c \major
-	\transposition f
+%	\transposition a
 % Bars 1 to 5
 	R1*17
 % Bars 6 to 10
@@ -45,8 +45,8 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	<< g''2.(^\sole~\< {s4 s s\!}>> g8\> f\!
-	e4) r r2 \mark \default
+	c'2(~\< d4\! e8\> f\!
+	c4) r r2 \mark \default
 % Bars 71 to 75
 	R1*7
 % Bars 76 to 80
@@ -57,7 +57,7 @@ musicTrombeIMvtII = \relative c {
 	
 % Bars 86 to 90
 	
-	r2 r4 r8 c'16\f\< c\!
+	r2 r4 r8 c16\f\< c\!
 	g8-> r r4 r2
 	R1*5
 % Bars 91 to 95
@@ -93,9 +93,9 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	<< f1\pp\<~ {s4 s\! s\> s\!}>>
-	f4 r r2
+	<< a1\pp\<~ {s4 s\! s\> s\!}>>
+	a4 r r2
 % Bars 141 and 142
 	R1
-	f1\pp\fermata \fine
+	f'1\pp\fermata \fine
 }
