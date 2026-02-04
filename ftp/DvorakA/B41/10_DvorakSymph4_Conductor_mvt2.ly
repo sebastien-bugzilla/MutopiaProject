@@ -131,9 +131,9 @@
 					}
 				>>
 			>>
-%			\new Staff {
-%				\timeMvtII \nameStaffXIIMvtII \musicTimpaniMvtII
-%			}
+			\new Staff {
+				\timeMvtII \nameStaffXIIMvtII \musicTimpaniMvtII
+			}
 %			\new PianoStaff <<
 %				\new Staff = "up" {
 %					\timeMvtII \nameStaffXIIIMvtII \musicArpaUpMvtII

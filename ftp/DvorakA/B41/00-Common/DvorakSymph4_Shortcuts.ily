@@ -44,6 +44,11 @@ sfzmarkup = \markup {\dynamic sfz}
 %--------------------
 fpdim = \markup {\dynamic fp \italic dim.}
 %--------------------
+% dynamics fpp
+%--------------------
+fpp = \markup {\dynamic fpp}
+fppD = #(make-dynamic-script fpp)
+%--------------------
 % dynamics f
 %--------------------
 fcresc = \markup {\dynamic f \italic cresc.}
@@ -75,6 +80,7 @@ dimin = \markup {\italic "dimin."}
 semprediminuendo = \markup {\italic "sempre diminuendo"}
 crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
+pococresc = \markup {\italic "poco cresc."}
 %--------------------
 % text indications
 %--------------------
@@ -92,7 +98,9 @@ aII = \markup {\bold a2}
 % instrument modification
 %--------------------
 amutainh = \markup {"A muta in H"}
-
+mutafines = \markup {"muta F in Es"}
+mutaesindes = \markup {"muta Es in Des"}
+mutadesinf = \markup {"muta Des in F"}
 
 markk = \mark #11
 
