@@ -134,14 +134,14 @@
 			\new Staff {
 				\timeMvtII \nameStaffXIIMvtII \musicTimpaniMvtII
 			}
-%			\new PianoStaff <<
-%				\new Staff = "up" {
-%					\timeMvtII \nameStaffXIIIMvtII \musicArpaUpMvtII
-%				}
-%				\new Staff = "down" {
-%					\timeMvtII \nameStaffXIVMvtII \musicArpaDownMvtII
-%				}
-%			>>
+			\new PianoStaff <<
+				\new Staff = "up" {
+					\timeMvtII \nameStaffXIIIMvtII \musicArpaUpMvtII
+				}
+				\new Staff = "down" {
+					\timeMvtII \nameStaffXIVMvtII \musicArpaDownMvtII
+				}
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIVMvtII } <<
 %					\new Staff {

@@ -175,6 +175,9 @@ beamOffset = #(define-music-function
 
 marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
 
+staffDown = \change Staff = "down"
+staffUp = \change Staff = "up"
+
 
 %noteShift = #(define-music-function
 %	(shift)
