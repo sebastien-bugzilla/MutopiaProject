@@ -13,6 +13,7 @@ ppdim = \markup {\dynamic pp \italic dim.}
 pptranquillo = \markup {\dynamic pp \italic tranquillo}
 ppbracklegato = \markup {\dynamic pp \bracket \with-true-dimensions \italic legato}
 ppcresc = \markup {\dynamic pp \italic cresc.}
+ppdolce = \markup {\dynamic pp \italic dolce}
 %--------------------
 % dynamics p
 %--------------------
@@ -56,6 +57,8 @@ fbenmarc = \markup {\dynamic f \italic "ben marc."}
 fmoltoespress = \markup {\dynamic f \italic "molto espress."}
 fdolce = \markup {\dynamic f \italic dolce}
 fmoltomarc = \markup {\dynamic f \italic "molto marc."}
+fmarkup = \markup {\dynamic f}
+fespress = \markup {\dynamic f \italic espress.}
 %--------------------
 % dynamics ff
 %--------------------
@@ -94,6 +97,9 @@ dolce = \markup {\italic dolce}
 div = \markup {div.}
 marcato = \markup {\italic marcato}
 aII = \markup {\bold a2}
+tranquillo = \markup {tranquillo}
+benmarcato = \markup {\italic "ben marcato"}
+espress = \markup {\italic espress.}
 %--------------------
 % instrument modification
 %--------------------
