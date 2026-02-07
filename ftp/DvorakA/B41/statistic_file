@@ -1,5 +1,5 @@
    161    433   5234 10_DvorakSymph4_Conductor_mvt1.ly
-   171    476   5622 10_DvorakSymph4_Conductor_mvt2.ly
+   171    471   5617 10_DvorakSymph4_Conductor_mvt2.ly
    174    466   5826 10_DvorakSymph4_Conductor_mvt3.ly
    152    413   5062 10_DvorakSymph4_Conductor_mvt4.ly
    244    563   5215 20_DvorakSymph4_Part01_Flauti.ly
@@ -38,7 +38,7 @@
     22     91   1032 00-Common/DvorakSymph4_Format_Part13_Violoncello.ily
     22     91   1032 00-Common/DvorakSymph4_Format_Part14_Contrabasso.ily
     37    300   2079 00-Common/DvorakSymph4_Header.ily
-    73    262   2551 00-Common/DvorakSymph4_LayoutConductors.ily
+    73    261   2559 00-Common/DvorakSymph4_LayoutConductors.ily
     71    255   2501 00-Common/DvorakSymph4_LayoutParts.ily
     95    376   3309 00-Common/DvorakSymph4_NameGrandStaff.ily
    646   1947  14908 00-Common/DvorakSymph4_NameStaff.ily
@@ -116,7 +116,7 @@
    132    812   3874 02-Mvt2/m02_v22_music_ArpaUp.ily
    109    367   1862 02-Mvt2/m02_v23_music_ArpaDown.ily
    170   1327   6449 02-Mvt2/m02_v24_music_ViolinoI.ily
-    69    199   1007 02-Mvt2/m02_v25_music_ViolinoII.ily
+   170   1278   5969 02-Mvt2/m02_v25_music_ViolinoII.ily
     69    199   1001 02-Mvt2/m02_v26_music_Viola.ily
     69    199   1007 02-Mvt2/m02_v27_music_Violoncello.ily
     69    199   1007 02-Mvt2/m02_v28_music_Contrabasso.ily
@@ -171,4 +171,4 @@
    287    744   3178 04-Mvt4/m04_v26_music_Viola.ily
    287    744   3184 04-Mvt4/m04_v27_music_Violoncello.ily
    287    744   3184 04-Mvt4/m04_v28_music_Contrabasso.ily
- 40526 125735 691530 total
+ 40627 126808 696495 total

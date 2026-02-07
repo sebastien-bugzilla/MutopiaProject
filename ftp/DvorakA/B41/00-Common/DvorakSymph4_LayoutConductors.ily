@@ -15,7 +15,7 @@
 	\compressEmptyMeasures
 	\context {
 		\Voice
-		\override TupletBracket.bracket-visibility = ##f
+		\override TupletBracket.bracket-visibility = #'if-no-beam
 		\override Hairpin.to-barline = ##f
 		\override Hairpin.height = 0.55
 		\override TrillSpanner.bound-details.right.padding = #1
@@ -43,7 +43,7 @@
 	}
 	\context {
 		\Staff
-%		\RemoveEmptyStaves
+		\RemoveEmptyStaves
 %		\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f
