@@ -20,6 +20,7 @@ ppdolce = \markup {\dynamic pp \italic dolce}
 pcresc = \markup {\dynamic p \italic cresc.}
 pdim = \markup {\dynamic p \italic dim.}
 ppocoapococresc = \markup {\dynamic p \italic "poco a poco cresc."}
+pmolto = \markup {\dynamic p \italic molto}
 %--------------------
 % dynamics mp
 %--------------------
@@ -40,6 +41,7 @@ fzmarkup = \markup {\dynamic fz}
 fzcresc = \markup {\dynamic fz \italic cresc.}
 fzdim = \markup {\dynamic fz \italic dim.}
 sfzmarkup = \markup {\dynamic sfz}
+mffz = \markup {\concat {\dynamic mf \hspace #0.4 \dynamic fz}}
 %--------------------
 % dynamics fp
 %--------------------
@@ -184,6 +186,14 @@ marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
 staffDown = \change Staff = "down"
 staffUp = \change Staff = "up"
 
+liiri = {
+	\set stemLeftBeamCount = #2
+	\set stemRightBeamCount = #1
+}
+liriii = {
+	\set stemLeftBeamCount = #1
+	\set stemRightBeamCount = #3
+}
 
 %noteShift = #(define-music-function
 %	(shift)
