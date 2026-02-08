@@ -63,6 +63,7 @@ fdolce = \markup {\dynamic f \italic dolce}
 fmoltomarc = \markup {\dynamic f \italic "molto marc."}
 fmarkup = \markup {\dynamic f}
 fespress = \markup {\dynamic f \italic espress.}
+fmarcato = \markup {\dynamic f \italic marcato}
 %--------------------
 % dynamics ff
 %--------------------
