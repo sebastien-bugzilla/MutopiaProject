@@ -154,9 +154,16 @@
 				\new Staff {
 					\timeMvtII \nameStaffXVIIMvtII \musicViolaMvtII
 				}
-%				\new Staff {
-%					\timeMvtII \nameStaffXVIIIMvtII \musicVioloncelloMvtII
-%				}
+				\new GrandStaff << 
+					\new Staff {
+						\timeMvtII \nameStaffXVIIIMvtII \musicVioloncelloMvtII
+					}
+					\new Staff  \with {
+						\RemoveAllEmptyStaves
+						\remove Time_Signature_engraver } {
+						\timeMvtII \nameStaffXVIIIMvtII \musicVioloncelloDivisiMvtII
+					}
+				>>
 %				\new Staff {
 %					\timeMvtII \nameStaffXIXMvtII \musicContrabassoMvtII
 %				}

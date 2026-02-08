@@ -23,3 +23,8 @@ correctionsMvtII = \markup {
 	% bar 105
 	"Bar 105, for clarinetto I, on the last beat a missing bes is indicated based on Fl.I."
 }
+correctionsMvtII = \markup {
+	
+	% bar 31, cello
+	"Bar 31, for Cello, second voice, a missing dot on the bes minim is added."
+}

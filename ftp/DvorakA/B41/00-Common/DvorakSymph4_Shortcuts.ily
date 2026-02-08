@@ -14,11 +14,13 @@ pptranquillo = \markup {\dynamic pp \italic tranquillo}
 ppbracklegato = \markup {\dynamic pp \bracket \with-true-dimensions \italic legato}
 ppcresc = \markup {\dynamic pp \italic cresc.}
 ppdolce = \markup {\dynamic pp \italic dolce}
+ppmaespress = \markup {\dynamic pp \italic "ma espress."}
 %--------------------
 % dynamics p
 %--------------------
 pcresc = \markup {\dynamic p \italic cresc.}
 pdim = \markup {\dynamic p \italic dim.}
+pdimD = #(make-dynamic-script (markup #:normal-text pdim))
 ppocoapococresc = \markup {\dynamic p \italic "poco a poco cresc."}
 pmolto = \markup {\dynamic p \italic molto}
 %--------------------
@@ -102,6 +104,10 @@ aII = \markup {\bold a2}
 tranquillo = \markup {tranquillo}
 benmarcato = \markup {\italic "ben marcato"}
 espress = \markup {\italic espress.}
+dolcemaespress = \markup {\italic "dolce ma espress."}
+ileggio = \markup {"I. leggio"}
+unis = \markup {unis}
+molto = \markup {\italic molto}
 %--------------------
 % instrument modification
 %--------------------
