@@ -123,7 +123,7 @@ musicViolinoIMvtII = \relative c {
 	f8)\p r r4 r2
 	R1
 % Bars 106 to 110
-	d,8-.\p c-. ces-. r16 beses(\< beses8 ges'4\! \tuplet 3/2 8 {ees16\> f ges\!}
+	des,8-.\p c-. ces-. r16 beses(\< beses8 ges'4\! \tuplet 3/2 8 {ees16\> f ges\!}
 	f8) r r4 r2
 	r r8 ges(~\p\> ges \tuplet 3/2 8 {ees16 f ges\!}
 	f8) r r4 r8 ges,4(\pp\> \tuplet 3/2 8 {ees16 f ges}

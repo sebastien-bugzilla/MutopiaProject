@@ -42,7 +42,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 18 to 20
 		f,2\pp aes
 		f4(\<  << g2.) {s4\! s\> s\!}>>
-		aes4(\< << g2.) {s4\! s\> s\!}>>
+		aes4(\< << ges2.) {s4\! s\> s\!}>>
 % Bars 21 to 25
 		f4( fis2\< a4)\!
 		g2.(~ g8 c)

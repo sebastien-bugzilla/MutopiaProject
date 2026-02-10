@@ -101,7 +101,7 @@ musicFlautoIMvtII = \relative c {
 	ees4(\pp d des4.) r8
 	ees4(--\< ees-- ees4.--)\! r8
 % Bars 101 to 105
-	ges4(\mf bes8\< ees, g[ c, ees bes16 c]\!
+	ges4(\mf bes8\< ees, ges[ c, ees bes16 c]\!
 	des8) r r4 r2
 	R1
 	des4(\p c ces) r8. ces16-.\<
