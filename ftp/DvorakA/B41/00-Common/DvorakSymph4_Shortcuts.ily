@@ -44,6 +44,8 @@ fzcresc = \markup {\dynamic fz \italic cresc.}
 fzdim = \markup {\dynamic fz \italic dim.}
 sfzmarkup = \markup {\dynamic sfz}
 mffz = \markup {\concat {\dynamic mf \hspace #0.4 \dynamic fz}}
+fzf = \markup {\concat {\dynamic fz \hspace #0.8 \dynamic f}}
+fffz = \markup {\concat {\dynamic ff \hspace #0.4 \dynamic fz}}
 %--------------------
 % dynamics fp
 %--------------------
@@ -116,6 +118,9 @@ amutainh = \markup {"A muta in H"}
 mutafines = \markup {"muta F in Es"}
 mutaesindes = \markup {"muta Es in Des"}
 mutadesinf = \markup {"muta Des in F"}
+mutainflautopiccoloi = \markup {"muta in Flauto piccolo I."}
+mutainflautopiccoloii = \markup {"muta in Flauto piccolo II."}
+mutainfliiigrande = \markup {"muta in Fl.I.II grande"}
 
 markk = \mark #11
 
@@ -201,6 +206,8 @@ liriii = {
 	\set stemLeftBeamCount = #1
 	\set stemRightBeamCount = #3
 }
+
+flag = \once \override Flag.stroke-style = #"grace"
 
 %noteShift = #(define-music-function
 %	(shift)

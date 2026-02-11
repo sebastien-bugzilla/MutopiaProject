@@ -4,9 +4,9 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 16)
+#(set-global-staff-size 19)
 \layout {
-	#(layout-set-staff-size 16) 
+	#(layout-set-staff-size 19) 
 %	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatBarType = #":|.|:"
 	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
@@ -18,9 +18,10 @@
 		\override TupletBracket.bracket-visibility = #'if-no-beam
 		\override Hairpin.to-barline = ##f
 		\override Hairpin.height = 0.55
-		\override TrillSpanner.bound-details.right.padding = #1
+%		\override TrillSpanner.bound-details.right.padding = #1
 		\override Arpeggio.padding = #0.25
 		\override TupletNumber.avoid-slur = #'ignore
+		\override TrillSpanner.bound-details.right.attach-dir = 1
 		
 %		\override NoteHead.transparent = ##t
 %		\override Stem.transparent = ##t

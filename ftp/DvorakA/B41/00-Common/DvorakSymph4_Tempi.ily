@@ -51,6 +51,42 @@ tempiMvtII = {
 }
 tempiMvtIII = {
 	\tempo "Allegro feroce"
+	s1.*19 s1
+	% bar 20.66
+	\tempo "rit."
+	s2 s1.
+	% bar 22
+	\tempo "a tempo"
+	s1.*52 s1
+	% bar 74.66
+	\tempo "poco ritard."
+	s2 s1.
+	% bar 76
+	\tempo "a tempo"
+	s1.*64
+	% bar 140
+	\tempo "L'istesso tempo"
+	s2*102
+	% bar 242
+	\tempo "Un pochettino poco meno mosso, molto tranquillo"
+	s2*15 s4
+	% bar 257.5
+	\tempo "poco a poco accel. e cresc."
+	s4 s2*8
+	% bar 266
+	\tempo "Allegro feroce"
+	s1.*73 s1
+	% bar 339.66
+	\tempo "poco ritard"
+	s2 s1.*1
+	% bar 341
+	\tempo "a tempo (L'istesso tempo)"
+	s2*24
+	% bar 365
+	\tempo "Poco meno mosso"
+	s2*6
+	% bar 375
+	\tempo "poco stringendo"
 }
 tempiMvtIV = {
 	\tempo "Allegro con brio"
