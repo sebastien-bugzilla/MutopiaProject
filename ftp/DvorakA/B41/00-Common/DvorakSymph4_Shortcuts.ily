@@ -15,6 +15,7 @@ ppbracklegato = \markup {\dynamic pp \bracket \with-true-dimensions \italic lega
 ppcresc = \markup {\dynamic pp \italic cresc.}
 ppdolce = \markup {\dynamic pp \italic dolce}
 ppmaespress = \markup {\dynamic pp \italic "ma espress."}
+ppcrescpoco = \markup {\dynamic pp \italic "cresc. poco"}
 %--------------------
 % dynamics p
 %--------------------
@@ -91,6 +92,7 @@ semprediminuendo = \markup {\italic "sempre diminuendo"}
 crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pococresc = \markup {\italic "poco cresc."}
+pocoapococresc = \markup {\italic "poco a poco cresc."}
 %--------------------
 % text indications
 %--------------------
@@ -156,6 +158,7 @@ omitStem = \once \omit Stem
 omitTupletNumber = \once \omit Voice.TupletNumber
 hideNoteHead = \once \hide NoteHead
 omitStemTremolo = \once \omit StemTremolo
+omitTupletBracket = \once \omit TupletBracket
 
 mmrPos = #(define-music-function
 	(position)

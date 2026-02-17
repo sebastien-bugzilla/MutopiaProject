@@ -91,7 +91,7 @@ musicOboeIMvtIII = \relative c {
 	r2 b4-. b2-> b4-.
 	r2 b4-.\< b2-> b4-.
 	b2-> b4-. b2-> b4-.\!
-	a\f r a,\p~ a bes!2~_\crescmarkup
+	\once \partCombineApart a r a,\p~ a bes!2~_\crescmarkup
 % Bars 71 to 75
 	bes4 b2~ b4 bes2~
 	bes4 a2~ a4 bes2~
@@ -177,24 +177,24 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	r4 \tuplet 6/4 4 {r16\brack\p\< g,( a b c d)\!} \mark \default
+	r4 \partCombineApart \tuplet 6/4 4 {\once \oneVoice r16 g,( a b c d)} \partCombineAutomatic \mark \default
 % Bars 156 to 160
 	e4~_\mffz\startTrillSpan e8\stopTrillSpan[ r16 d]
 	e4~\fz\startTrillSpan e8[\stopTrillSpan r16 d]
 	e4-> g->
 	f-> e->
-	d\fz~\startTrillSpan d8[\stopTrillSpan r16 cis]
+	\partCombineApart d~\startTrillSpan d8[\stopTrillSpan r16 cis]
 % Bars 161 to 165
-	d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 cis]
+	d4\startTrillSpan~ d8[\stopTrillSpan r16 cis] \partCombineAutomatic
 	d4-> f!->
 	e-> c->
-	b4\fz\startTrillSpan~ b8[\stopTrillSpan r16 a]
-	b4\fz\startTrillSpan~ b8[\stopTrillSpan r16 a]
+	\partCombineApart b4\startTrillSpan~ b8[\stopTrillSpan r16 a]
+	b4\startTrillSpan~ b8[\stopTrillSpan r16 a] \partCombineAutomatic
 % Bars 166 to 170
 	b4-> c->
 	b-> g->
-	d'\fz\startTrillSpan~ d8[\stopTrillSpan r16 c]
-	d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c]
+	\partCombineApart d'\startTrillSpan~ d8[\stopTrillSpan r16 c]
+	d4\startTrillSpan~ d8[\stopTrillSpan r16 c] \partCombineAutomatic
 	d4-> e->
 % Bars 171 to 175
 	d-> b16\< b32( c d e f g)\!
@@ -244,21 +244,21 @@ musicOboeIMvtIII = \relative c {
 	\tuplet 3/2 4 {e8 dis e)} e4(~
 	\tuplet 3/2 4 {e8 dis e g e c
 	a c f e c g)}
-	f'4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	\partCombineApart f'4\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 % Bars 216 to 220
-	f4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	f4\startTrillSpan~ f8[\stopTrillSpan r16 e-.] \partCombineAutomatic
 	f4-^ aes-^
 	g-^ f-^ \mark \default
-	f4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
-	f4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	\partCombineApart f4\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	f4\startTrillSpan~ f8[\stopTrillSpan r16 e-.] \partCombineAutomatic
 % Bars 221 to 225
-	f4-^ aes-^
-	g-^ f-^
-	f8.->[\ff e16 f8.-> e16]
+	f4-^ \partCombineApart aes-^
+	g-^ f-^ 
+	f8.->[ e16 f8.-> e16]
 	f8-.[ aes-. g-. f-.]
 	f8.[-> e16 f8.-> e16]
 % Bars 226 to 230
-	f8[-. aes-. g-. f-.]
+	f8[-. aes-. g-. f-.] \partCombineAutomatic
 	f-. r r4
 	R2*38
 % Bars 231 to 235
@@ -362,7 +362,7 @@ musicOboeIMvtIII = \relative c {
 	r2 b4-. b2-> b4-.
 	r2 b4-.\< b2-> b4-.
 	b2-> b4-. b2-> b4-.\!
-	a\f r a,\p~ a bes!2_\crescmarkup~
+	\once \partCombineApart a r a,\p~ a bes!2_\crescmarkup~
 % Bars 336 to 340
 	bes4 b2~ b4 bes2~
 	bes4 a2~ a4 bes2~
@@ -384,7 +384,7 @@ musicOboeIMvtIII = \relative c {
 % Bars 351 to 355
 	fis4-> fis->
 	fis-> g->
-	fis8 r r4
+	\partCombineApart fis8 r r4
 	R2*11
 % Bars 356 to 360
 	
@@ -392,7 +392,7 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	
+	\partCombineAutomatic
 	R2*10
 % Bars 366 to 370
 	
