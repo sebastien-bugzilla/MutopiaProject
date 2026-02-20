@@ -158,9 +158,9 @@ musicClarinettoIMvtIII = \relative c {
 	R1.*6
 % Bars 131 to 135
 	
-	r2 r4 c2.(\pp
+	\partCombineApart r2 r4 c2.(\pp
 	d ees
-	a,4) r r r2 r4 
+	a,4) r r r2 r4 \partCombineAutomatic
 	R1.*4
 % Bars 136 to 140
 	
@@ -176,16 +176,16 @@ musicClarinettoIMvtIII = \relative c {
 	f4\fp\startTrillSpan~ f8\stopTrillSpan r16 e-.
 % Bars 146 to 150
 	f4-> aes->
-	g-> ees!->
-	d4\fp\startTrillSpan~ d8\stopTrillSpan r16 c-.
-	d4\fp\startTrillSpan~ d8\stopTrillSpan r16 c-.
+	g-> ees!-> 
+	\partCombineApart d4\startTrillSpan~ d8\stopTrillSpan \once \oneVoice r16 c-.
+	d4\startTrillSpan~ d8\stopTrillSpan \once \oneVoice r16 c-. \partCombineAutomatic
 	d4-> ees->
 % Bars 151 to 155
-	d-> bes->
+	d-> \once \partCombineApart bes-> 
 	f'4\fp\startTrillSpan~ f8\stopTrillSpan r16 ees
 	f4\fz\startTrillSpan~ f8\stopTrillSpan r16 ees
 	f4-> g->
-	f-> \tuplet 6/4 4 {d16(\< bes' c d ees f)\!} \mark \default
+	f-> \tuplet 6/4 4 {d16\< bes'( c d ees f)\!} \mark \default
 % Bars 156 to 160
 	g4_\mffz\startTrillSpan~ g8[\stopTrillSpan r16 f]
 	g4\fz\startTrillSpan~ g8[\stopTrillSpan r16 f]
@@ -196,8 +196,8 @@ musicClarinettoIMvtIII = \relative c {
 	f4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e]
 	f4-> aes!->
 	g-> ees->
-	d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c]
-	d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c]
+	\partCombineApart d4\startTrillSpan~ d8[\stopTrillSpan r16 c]
+	d4\startTrillSpan~ d8[\stopTrillSpan r16 c] \partCombineAutomatic
 % Bars 166 to 170
 	d!4-> ees->
 	d-> bes->
@@ -233,8 +233,8 @@ musicClarinettoIMvtIII = \relative c {
 	f4\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 	f4-> aes->
 	g-> ees->
-	d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
-	d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
+	\partCombineApart d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
+	d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.] \partCombineAutomatic
 % Bars 201 to 205
 	d4-> ees->
 	d-> bes->
@@ -252,19 +252,19 @@ musicClarinettoIMvtIII = \relative c {
 	bes4\brack\fz\startTrillSpan~ bes8[\stopTrillSpan r16 a-.]
 	bes4-> d->
 	c-> bes->
-	aes4\brack\fz\startTrillSpan~ aes8[\stopTrillSpan r16 g-.]
+	\partCombineApart aes4\startTrillSpan~ aes8[\stopTrillSpan \once \voiceOne r16 g-.]
 % Bars 216 to 220
-	aes4\brack\fz\startTrillSpan~ aes8[\stopTrillSpan r16 g-.]
+	aes4\startTrillSpan~ aes8[\stopTrillSpan \once \voiceOne r16 g-.] \partCombineAutomatic
 	aes4-^ ces-^
 	bes-^ aes-^ \mark \default
-	aes4\fz\startTrillSpan~ aes8[\stopTrillSpan r16 g-.]
-	aes4\fz\startTrillSpan~ aes8[\stopTrillSpan r16 g-.]
+	\partCombineApart aes4\startTrillSpan~ aes8[\stopTrillSpan \once \voiceOne r16 g-.]
+	aes4\startTrillSpan~ aes8[\stopTrillSpan r16 g-.] \partCombineAutomatic
 % Bars 221 to 225
 	aes4-^ ces-^
 	bes-^ aes-^
-	aes8.->[\ff g16 aes8.-> g16]
+	\partCombineApart aes8.->[ g16 aes8.-> g16]
 	aes8-^ r r4
-	aes8.->[ g16 aes8.-> g16]
+	aes8.->[ g16 aes8.-> g16] \partCombineAutomatic
 % Bars 226 to 230
 	aes8-^ r r4
 	aes8-. r r4
@@ -398,10 +398,10 @@ musicClarinettoIMvtIII = \relative c {
 	g4--(\< bes--\!
 	a--\> f--\!)
 % Bars 361 to 365
+	\partCombineApart e4->\startTrillSpan~ e8[\stopTrillSpan r16 d-.]
 	e4->\startTrillSpan~ e8[\stopTrillSpan r16 d-.]
-	e4->\startTrillSpan~ e8[\stopTrillSpan r16 d-.]
-	e4(--\p\> f--
-	e-- c--)\!
+	e4(-- f--
+	e-- c--)\! \partCombineAutomatic
 	R2*10
 % Bars 366 to 370
 	
