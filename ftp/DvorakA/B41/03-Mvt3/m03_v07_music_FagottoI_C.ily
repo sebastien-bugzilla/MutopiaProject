@@ -72,7 +72,7 @@ musicFagottoIMvtIII = \relative c {
 	\afterGrace 99/100 a1.-> {\flag e8(}
 	gis2)->~ gis8 a b2->~ b8 gis \mark \default
 % Bars 56 to 60
-	a4\f r r r2 r4
+	\once \partCombineApart a4 r r r2 r4
 	r2 r4 \clef tenor e'2.->\fz
 	e->\fz e->\fz
 	e4\f r r r2 r4
@@ -84,7 +84,7 @@ musicFagottoIMvtIII = \relative c {
 	r2 r4 aes2.->\<_\fzmarkup
 	aes->_\fzmarkup aes->_\fzmarkup\!
 % Bars 66 to 70
-	r2 e4-._\pcresc e2-> e4-.
+	r2 e!4-._\pcresc e2-> e4-.
 	r2 e4-. e2-> e4-.
 	r2 e4-.\< e2-> e4-.
 	e2-> e4-. e2-> e4-.\!
@@ -159,9 +159,9 @@ musicFagottoIMvtIII = \relative c {
 	R1.*6
 % Bars 131 to 135
 	
-	r2 r4 a'2.(\pp
+	\partCombineApart r2 r4 a'2.(\pp
 	b c
-	fis,4) r r r2 r4
+	fis,4) r r r2 r4 \partCombineAutomatic
 	R1.*4
 % Bars 136 to 140
 	
@@ -176,7 +176,7 @@ musicFagottoIMvtIII = \relative c {
 	d4.\fp r8
 	d4.->\fp r8
 % Bars 146 to 150
-	g,4-> d'->
+	\once \partCombineApart g,4-> d'->
 	e-> e->
 	d4.\fp r8
 	d4.\fp r8
@@ -186,7 +186,7 @@ musicFagottoIMvtIII = \relative c {
 	d4.\fp r8
 	d4.\fp r8
 	d4-> d->
-	d-> \tuplet 6/4 {r16 g(\< a b c d)\!} \mark \default
+	\partCombineApart d-> \tuplet 6/4 {r16 g(\< a b c d)\!} \partCombineAutomatic \mark \default 
 % Bars 156 to 160
 	e4_\mffz\startTrillSpan~ e8\stopTrillSpan r
 	e4\fz\startTrillSpan~ e8\stopTrillSpan r
@@ -207,8 +207,8 @@ musicFagottoIMvtIII = \relative c {
 	d4-> c->
 % Bars 171 to 175
 	b-> b8 r
-	f4\fz~ f8[ r16 c-.]
-	f4\fz~ f8[ r16 c-.]
+	\partCombineApart f4~ f8[ \once \oneVoice r16 c-.]
+	f4~ f8[ \once \oneVoice r16 c-.] \partCombineAutomatic
 	f4 r
 	f r
 % Bars 176 to 180
@@ -220,7 +220,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 181 to 185
 	bes4.\brack\fz r8
 	bes4-> b-> \mark \default
-	g8\fz r r4
+	\once \partCombineApart g8 r r4
 	R2*7
 % Bars 186 to 190
 	
@@ -243,7 +243,7 @@ musicFagottoIMvtIII = \relative c {
 	d4.-> r8
 	d4-> d->
 % Bars 206 to 210
-	d-> g,8-. r
+	d-> \once \partCombineApart g,8-. r
 	f4\brack\fz~ f8[ r16 c-.]
 	f4\brack\fz~ f8[ r16 c-.]
 	f4-> a,->
@@ -256,7 +256,7 @@ musicFagottoIMvtIII = \relative c {
 	d,4.\brack\fz r8
 % Bars 216 to 220
 	bes4.\brack\fz r8
-	aes4-> r
+	\once \partCombineApart aes4-> r
 	R2 \mark \default
 	bes4.-^\brack\fz r8
 	aes4.-^ r8
@@ -362,7 +362,7 @@ musicFagottoIMvtIII = \relative c {
 	\afterGrace 99/100 a1.-> {\flag e8(}
 	gis2->)~ gis8 a b2->~ b8 gis \mark \default
 % Bars 321 to 325
-	a4\f r r r2 r4
+	\once \partCombineApart a4 r r r2 r4
 	r2 r4 \clef tenor e'2.->\fz
 	e->\fz e->\fz
 	e4\f r r r2 r4
@@ -390,9 +390,9 @@ musicFagottoIMvtIII = \relative c {
 	d4.->\fz r16 a-.
 	d4-> d->
 	d-> d->
-	a'4.->\fz r16 a,-.
+	a'4.->\fz r16 \once \partCombineApart a,-.
 % Bars 346 to 350
-	a'4.->\fz r16 a,-.
+	a'4.->\fz r16 \once \partCombineApart a,-.
 	a'4-> a->
 	a-> a->
 	b4.->\fz r16 fis-.
@@ -405,15 +405,15 @@ musicFagottoIMvtIII = \relative c {
 	<< fis'2(\p\< {s8 s s s\!}>>
 % Bars 356 to 360
 	g4\> fis)\!
-	e4\fp~ e8[ r16 fis-.]
-	e4\fp~ e8[ r16 fis-.]
+	\partCombineApart e4~ e8[ r16 fis-.]
+	e4~ e8[ r16 fis-.] \partCombineAutomatic
 	e4\< e\!
 	e\> d\!
 % Bars 361 to 365
-	e4->_\dimmarkup\startTrillSpan~ e8[\stopTrillSpan r16 d-.]
+	\partCombineApart e4->_\dimmarkup\startTrillSpan~ e8[\stopTrillSpan r16 d-.]
 	e4->\startTrillSpan~ e8[\stopTrillSpan r16 d-.]
-	e4--\p\> fis--
-	e-- e--\! \clef bass
+	e4-- fis--
+	e-- e-- \partCombineAutomatic \clef bass
 	R2*10
 % Bars 366 to 370
 	

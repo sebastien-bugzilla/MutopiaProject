@@ -16,6 +16,7 @@ ppcresc = \markup {\dynamic pp \italic cresc.}
 ppdolce = \markup {\dynamic pp \italic dolce}
 ppmaespress = \markup {\dynamic pp \italic "ma espress."}
 ppcrescpoco = \markup {\dynamic pp \italic "cresc. poco"}
+pbrackp = \markup {\concat {\dynamic p \bracket \with-true-dimensions \dynamic p} }
 %--------------------
 % dynamics p
 %--------------------
