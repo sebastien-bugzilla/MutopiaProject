@@ -94,6 +94,7 @@ crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pococresc = \markup {\italic "poco cresc."}
 pocoapococresc = \markup {\italic "poco a poco cresc."}
+crescpoco = \markup {\italic "cresc. poco"}
 %--------------------
 % text indications
 %--------------------

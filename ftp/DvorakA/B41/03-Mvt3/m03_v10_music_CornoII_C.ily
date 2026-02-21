@@ -58,18 +58,18 @@ musicCornoIIMvtIII = \relative c {
 	r2 r4 f2.\fz
 % Bars 61 to 65
 	f\fz f\fz
-	r2 r4 c'2.\<_\fzmarkup
-	c_\fzmarkup c_\fzmarkup\!
-	r2 r4 ees2.->\<_\fzmarkup
-	ees->_\fzmarkup ees->_\fzmarkup\!
+	r2 r4 c'2.\<
+	c c\!
+	r2 r4 ees2.->\<
+	ees-> ees->\!
 % Bars 66 to 70
-	r2 b4-._\pcresc b2-> b4-.
+	r2 b4-. b2-> b4-.
 	r2 b4-. b2-> b4-.
 	r2 b4-.\< b2-> b4-.
 	b2-> b4-. b2-> b4-.\!
 	b\f r r r2 r4
 % Bars 71 to 75
-	b1._\pcresc~
+	b1.~
 	b~
 	b
 	b~
@@ -183,7 +183,7 @@ musicCornoIIMvtIII = \relative c {
 	b4\fz\startTrillSpan~ b8[\stopTrillSpan r16 ais-.]
 	b4-> d->
 	c-> b->
-	a4._\mffz\startTrillSpan r8\stopTrillSpan
+	a4.\startTrillSpan r8\stopTrillSpan
 % Bars 181 to 185
 	a4.\brack\fz\startTrillSpan r8\stopTrillSpan
 	a4-> c-> \mark \default
@@ -252,7 +252,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 261 to 265
 	
 	fis2\p~
-	fis_\crescmarkup
+	fis
 	a~
 	a \section
 % Bars 266 to 270
@@ -305,26 +305,26 @@ musicCornoIIMvtIII = \relative c {
 	r2 r4 f2.\fz
 % Bars 326 to 330
 	f\fz f\fz
-	r2 r4 c'2.\<_\fzmarkup
-	c_\fzmarkup c_\fzmarkup\!
-	r2 r4 ees2.->\<_\fzmarkup
-	ees->_\fzmarkup ees->_\fzmarkup\!
+	r2 r4 c'2.\<
+	c c\!
+	r2 r4 ees2.->\<
+	ees-> ees->\!
 % Bars 331 to 335
-	r2 b4-._\pcresc b2-> b4-.
+	r2 b4-. b2-> b4-.
 	r2 b4-. b2-> b4-.
 	r2 b4-.\< b2-> b4-.
 	b2-> b4-. b2-> b4-.\!
 	b4\f r r r2 r4
 % Bars 336 to 340
-	b1._\pcresc~
+	b1.~
 	b~
 	b
 	b~
 	b \section
 % Bars 341 to 345
-	\time 2/4 a4->_\fffz~ a8[ r16 gis-.]
+	\time 2/4 a4->~ a8[ r16 gis-.]
 	a4.->\fz r16 gis-.
-	a4-> cis->
+	a4-> cis!->
 	b-> a->
 	b4.->\fz r16 ais-.
 % Bars 346 to 350
@@ -341,12 +341,12 @@ musicCornoIIMvtIII = \relative c {
 	a4-- cis--\<
 % Bars 356 to 360
 	b--\> a--\!
-	b4->\fp~ b8[ r16 cis-.]
-	b4->\fp~ b8[ r16 cis-.]
+	b4->\fp~ b8[ s16 cis-.]
+	b4->\fp~ b8[ s16 cis-.]
 	b4\< b\!
 	gis\> a\!
 % Bars 361 to 365
-	b4.->_\dimmarkup r8
+	b4.-> r8
 	b4.-> r8
 	b4\p\> cis
 	b gis8( b)\!
@@ -358,16 +358,16 @@ musicCornoIIMvtIII = \relative c {
 	e4. r8
 	e4.\> r8
 % Bars 371 to 375
-	e4-- fis--\!
-	e--_\dimmarkup e--
+	\stemUp e4-- fis--\!
+	e-- e--
 	a4 r8. e16
 	a4 r8. e16
-	a4 r
+	\stemDown a4 r
 % Bars 376 to 380
 	R2*3
 	
 	
-	a4->_\crescmarkup a->
+	a4-> a->
 	a-> a->
 % Bars 381 to 385
 	a-> a->
