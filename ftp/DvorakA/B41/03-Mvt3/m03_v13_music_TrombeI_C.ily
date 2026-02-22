@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIIMvtIII = \relative c {
+musicTrombeIMvtIII = \relative c {
 	\clef treble
 	\key a \minor
 	\transposition f
@@ -30,8 +30,8 @@ musicTrombeIIMvtIII = \relative c {
 	e\p r r r2 r4
 	R1.*4
 % Bars 21 to 25
-	r2 r4 << e2.\p\< {s8 s s  s s s\!}>>
-	e4-.\f r r r2 r4
+	r2 r4 << gis2.\p\< {s8 s s  s s s\!}>>
+	a4-.\f r r r2 r4
 	R1.*33
 % Bars 26 to 30
 	
@@ -57,9 +57,9 @@ musicTrombeIIMvtIII = \relative c {
 	R1.*2
 % Bars 61 to 65
 	
-	c4-.\f r r r2 r4
+	g4-.\f r r r2 r4
 	R1.
-	ees4\f-. r r r2 r4
+	ges4\f-. r r r2 r4
 	R1.*11
 % Bars 66 to 70
 	
@@ -70,52 +70,52 @@ musicTrombeIIMvtIII = \relative c {
 	
 	\section
 % Bars 76 to 80
-	cis4\f r r cis-. r r
-	r2 r4 cis-. r r
-	r2 r4 e-. r r
-	r2 r4 e-. r r
-	r2 r4 e-. r r
-% Bars 81 to 85
-	r2 r4 dis-. r r
-	r2 r4 e-. r r
-	r2 r4 e-. r r
-	r2 r4 cis-. r r
-	r2 r4 cis-. r r
-% Bars 86 to 90
-	r2 r4 cis-. r r
+	a4\f r r a-. r r
 	r2 r4 a-. r r
-	r2 r4 cis-. r r
-	r2 r4 dis-. r r
+	r2 r4 gis-. r r
+	r2 r4 gis-. r r
+	r2 r4 gis-. r r
+% Bars 81 to 85
+	r2 r4 gis-. r r
+	r2 r4 gis-. r r
+	r2 r4 gis-. r r
+	r2 r4 a-. r r
+	r2 r4 a-. r r
+% Bars 86 to 90
+	r2 r4 gis-. r r
+	r2 r4 cis,-. r r
+	r2 r4 e-. r r
+	r2 r4 fis-. r r
 	r2 r4 e-. r r
 % Bars 91 to 95
 	r2 r4 e-. r r
-	r2 r4 fis-. r r
-	r2 r4 fis-. r r
-	r2 r4 cis-. r r
-	r2 r4 cis-. r r
+	r2 r4 a-. r r
+	r2 r4 a-. r r
+	r2 r4 a-. r r
+	r2 r4 a-. r r
 % Bars 96 to 100
-	r2 r4 cis-. r r 
-	r2 r4 bis-. r r
-	r2 r4 e-. r r
-	r2 r4 e-. r r
-	r2 r4 fis-. r r
+	r2 r4 gis-. r r 
+	r2 r4 gis-. r r
+	r2 r4 gis-. r r
+	r2 r4 gis-. r r
+	r2 r4 a-. r r
 % Bars 101 to 105
-	r2 r4 d-. r r
-	r2 r4 cis-. r r
-	r2 r4 cis-. r r
-	r2 r4 bis-. r r
-	r2 r4 des-. r r
+	r2 r4 a-. r r
+	r2 r4 a-. r r
+	r2 r4 gis-. r r
+	r2 r4 gis-. r r
+	r2 r4 aes-. r r
 % Bars 106 to 110
-	r2 r4 cis-. r r
-	r2 r4 d-. r r
-	r2 r4 cis-. r r
-	r2 r4 bis-. r r \mark \default
-	des r r r2 r4
+	r2 r4 a!-. r r
+	r2 r4 a-. r r
+	r2 r4 e-. r r
+	r2 r4 gis-. r r \mark \default
+	aes r r r2 r4
 % Bars 111 to 115
-	r2 r8 des-.\f\< f2 r8\! c(
+	r2 r8 des,-.\f\< f2 r8\! c(
 	des2) r4 r2 r4
 	R1.
-	des4-. r r r2 r4
+	aes'4-. r r r2 r4
 	R1.*24
 % Bars 116 to 120
 	
@@ -142,26 +142,26 @@ musicTrombeIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 156 to 160
-	b4.->\mf r8
-	b4.-> r8
-	b4-> d->
+	g4.->\mf r8
+	g4.-> r8
+	g4-> d->
 	d-> d->
 	d4.-> r16 d
 % Bars 161 to 165
 	d4.-> r16 d
 	d4-> e->
-	b-> e->
-	cis4.->\brack\fz r8
-	cis4.->\brack\fz r8
+	b'-> \once \partCombineApart e,->
+	fis4.->\brack\fz r8
+	fis4.->\brack\fz r8
 % Bars 166 to 170
-	cis4->\brack\p cis->
-	cis-> d->
-	a4.\brack\fz r8
+	fis4->\brack\p g->
+	fis-> \once \partCombineApart d->
+	a'4.\brack\fz r8
 	a4.\brack\fz r8
 	a4-> a->
 % Bars 171 to 175
-	a-> d8 r
-	g,4.-> r8
+	a-> \once \partCombineApart d,8 r
+	g4.-> r8
 	g4.-> r8
 	g4-> g->
 	g-> g->
@@ -170,43 +170,43 @@ musicTrombeIIMvtIII = \relative c {
 	g4. r8
 	g4-> g->
 	g-> g->
-	e'4.-> r8
+	e4.-> r8
 % Bars 181 to 185
 	R2*2
 	\mark \default
-	d8\fz r r4
+	\once \partCombineApart d8 r r4
 	R2*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	r4 b->\ff
-	r b->
-	r b->
-	r b->
-	r d->
+	r4 g->\ff
+	r g->
+	r g->
+	r g->
+	r fis->
 % Bars 196 to 200
-	r d->
-	r c->
-	b-> b->
-	r cis->
-	r cis->
+	r fis->
+	r a->
+	fis-> g->
+	r a->
+	r a->
 % Bars 201 to 205
-	r cis->
-	cis-> d->
-	r cis->
-	r cis->
-	r cis->
+	r b->
+	a-> a->
+	r a->
+	r a->
+	r b->
 % Bars 206 to 210
-	cis-> d->
-	r e->
-	r e->
-	r e->
-	e-> e->
+	a-> fis->
+	r g->
+	r g->
+	r g->
+	g-> g->
 % Bars 211 to 215
-	r b-^
-	r b-^
-	r b-^
-	b-^ b-^
+	r g-^
+	r g-^
+	r g-^
+	g-^ g-^
 	e4.-^ r8
 % Bars 216 to 220
 	a4.-^ r8
@@ -264,8 +264,8 @@ musicTrombeIIMvtIII = \relative c {
 	e\p r r r2 r4
 	R1.*4
 % Bars 286 to 290
-	r2 r4 << e2.\p\< {s8 s s s s s\!}>>
-	e4-.\f r r r2 r4
+	r2 r4 << gis2.\p\< {s8 s s s s s\!}>>
+	a4-.\f r r r2 r4
 	R1.*33
 % Bars 291 to 295
 	
@@ -291,9 +291,9 @@ musicTrombeIIMvtIII = \relative c {
 	R1.*2
 % Bars 326 to 330
 	
-	c4-.\f r r r2 r4
+	g4-.\f r r r2 r4
 	R1.
-	ees4-.\f r r r2 r4
+	ges4-.\f r r r2 r4
 	R1.*11
 % Bars 331 to 335
 	
@@ -313,12 +313,12 @@ musicTrombeIIMvtIII = \relative c {
 	e4.->\fz r16 e-.
 	e4-> e->
 	e-> e->
-	fis4.\fz r16 eis-.
-	fis4.\fz r16 eis-.
+	a4.\fz r16 gis-.
+	a4.\fz r16 gis-.
 % Bars 351 to 355
-	fis4-> cis->
-	cis-> d->
-	cis-> r
+	a4-> a->
+	gis-> fis->
+	e-> r
 	R2*24
 % Bars 356 to 360
 	
@@ -331,7 +331,7 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 376 to 380
 	
 	
-	a'4._\pcresc e8
+	a4._\pcresc e8
 	e8.\< a16 a8\! r
 	a4.->\mf\< e8\!
 % Bars 381 to 385
