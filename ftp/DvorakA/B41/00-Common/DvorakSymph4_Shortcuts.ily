@@ -52,6 +52,7 @@ fffz = \markup {\concat {\dynamic ff \hspace #0.4 \dynamic fz}}
 % dynamics fp
 %--------------------
 fpdim = \markup {\dynamic fp \italic dim.}
+fpbrackp = \markup {\concat {\dynamic fp \bracket \with-true-dimensions \dynamic p}}
 %--------------------
 % dynamics fpp
 %--------------------

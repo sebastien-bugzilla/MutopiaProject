@@ -150,10 +150,10 @@ musicCornoIIIMvtIII = \relative c {
 	d4\fp~ d8 r
 	d4-> d->
 	d-> d->
-	d4.\fp r16 d-.
-	d4.\fp r16 d-.
+	\partCombineApart d4. \once \partCombineAutomatic r16 d-.
+	d4. \once \partCombineAutomatic r16 d-.
 % Bars 146 to 150
-	d4-> e->
+	d4-> \partCombineAutomatic e->
 	dis-> e->
 	a,4.\fp r8
 	a4.\fp r8
@@ -197,7 +197,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 181 to 185
 	f4.\brack\fz r8
 	f4-> fis-> \mark \default
-	d8\fz r r4
+	\once \partCombineApart d8 r r4
 	R2*7
 % Bars 186 to 190
 	
@@ -233,7 +233,7 @@ musicCornoIIIMvtIII = \relative c {
 	a4.-^ r8
 % Bars 216 to 220
 	a4.-^ r8
-	g4-> r
+	\once \partCombineApart g4-> r
 	R2 \mark \default
 	aes4.-^ r8
 	g4.-^ r8
@@ -280,12 +280,12 @@ musicCornoIIIMvtIII = \relative c {
 	ges \section
 % Bars 266 to 270
 	\time 6/4 b4\ff r r r2 r4
-	r2 r4 b2.->\fz
-	b->\fz b->\fz
+	r2 r4 \partCombineApart b2.->
+	b-> b-> \partCombineAutomatic
 	b4 r r r2 r4
-	r2 r4 b2.->\fz
+	r2 r4 \partCombineApart b2.->
 % Bars 271 to 275
-	b->\fz b->\fz
+	b-> b-> \partCombineAutomatic
 	gis4 r r r2 r4
 	aes r r r2 r4
 	aes\p r r8. b16(\< c4)\! r r
@@ -361,7 +361,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 351 to 355
 	fis4-> fis->
 	e-> fis->
-	cis'4\fp~ cis8[ r16 b-.]
+	\partCombineApart cis'4\fp~ cis8[ r16 b-.]
 	cis4\fp~ cis8[ r16 b-.]
 	cis4-- a--\<
 % Bars 356 to 360
@@ -374,7 +374,7 @@ musicCornoIIIMvtIII = \relative c {
 	b,4.->_\dimmarkup r8
 	b4.-> r8
 	b2~\p
-	b4\> e\!
+	b4\> e\! \partCombineAutomatic
 	R2*11
 % Bars 366 to 370
 	
@@ -395,5 +395,5 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 386 to 388
 	
 	r4 \tuplet 3/2 4 {r8 r b-.\ff}
-	a-. r r4\fermata \fine
+	\once \partCombineApart a-. r r4\fermata \fine
 }
