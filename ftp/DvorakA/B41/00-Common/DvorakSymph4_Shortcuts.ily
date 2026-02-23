@@ -96,6 +96,7 @@ dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pococresc = \markup {\italic "poco cresc."}
 pocoapococresc = \markup {\italic "poco a poco cresc."}
 crescpoco = \markup {\italic "cresc. poco"}
+crescpocoapoco = \markup {\italic "cresc poco a poco"}
 %--------------------
 % text indications
 %--------------------
@@ -126,6 +127,9 @@ mutadesinf = \markup {"muta Des in F"}
 mutainflautopiccoloi = \markup {"muta in Flauto piccolo I."}
 mutainflautopiccoloii = \markup {"muta in Flauto piccolo II."}
 mutainfliiigrande = \markup {"muta in Fl.I.II grande"}
+mutaainh = \markup {"muta A in H"}
+mutaincg = \markup {"muta in C, G"}
+mutainda = \markup {"muta in D, A"}
 
 markk = \mark #11
 

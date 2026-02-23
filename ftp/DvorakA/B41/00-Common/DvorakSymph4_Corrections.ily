@@ -30,4 +30,11 @@ correctionsMvtIII = \markup {
 	
 	% bar 166, clarinette II
 	"Bar 166, for Clarinette II, a missing natural is added on first note."
+	
+	% bar 110, timpani
+	"Bar 110, for timpani, the missing indication of tune modification A => H is added."
+	
+	% bar 140, timpani
+	"Bar 140, for timpani, the missing indication of tune modification H,D => C,G is added."
+	
 }

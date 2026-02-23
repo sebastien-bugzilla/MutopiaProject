@@ -9,7 +9,7 @@ musicPiattiMvtIII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	
+	R1.*55
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -30,16 +30,24 @@ musicPiattiMvtIII = \relative c {
 	
 % Bars 51 to 55
 	
-% Bars 56 to 60
 	
+	
+	
+	\mark \default
+% Bars 56 to 60
+	R1.*20
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
-% Bars 76 to 80
 	
+	
+	
+	\section
+% Bars 76 to 80
+	R1.*34
 % Bars 81 to 85
 	
 % Bars 86 to 90
@@ -52,6 +60,10 @@ musicPiattiMvtIII = \relative c {
 	
 % Bars 106 to 110
 	
+	
+	
+	\mark \default
+	R1.*29
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -64,42 +76,103 @@ musicPiattiMvtIII = \relative c {
 	
 % Bars 136 to 140
 	
+	
+	
+	R1.\fermata \section
+	\time 2/4 R2*16
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	
+	
+	
+	\mark \default
 % Bars 156 to 160
-	
+	e4\pp r
+	e r
+	e r
+	e r
+	e r
 % Bars 161 to 165
-	
+	e r
+	e r
+	e e
+	e r
+	e r
 % Bars 166 to 170
-	
+	e r
+	e e
+	e r
+	e r
+	e r
 % Bars 171 to 175
-	
+	e r
+	e r
+	e r
+	e r
+	e r
 % Bars 176 to 180
-	
+	e r
+	e r
+	e r
+	e r
+	e r
 % Bars 181 to 185
-	
+	e r
+	e e \mark \default
+	e8-> r r4
+	R2*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	
+	r4 e\f
+	r e
+	r e
+	r e
+	r e
 % Bars 196 to 200
-	
+	r e
+	r e
+	r e
+	r e
+	r e
 % Bars 201 to 205
-	
+	r e
+	r e
+	r e
+	r e
+	r e
 % Bars 206 to 210
-	
+	r e
+	r e
+	r e
+	r e
+	r e
 % Bars 211 to 215
-	
+	r e
+	r e
+	r e
+	r e
+	r e\f
 % Bars 216 to 220
-	
+	r e
+	R2*2
+	\mark \default
+	r4 e
+	r e
 % Bars 221 to 225
+	R2*3
 	
+	
+	e4 r
+	R2
 % Bars 226 to 230
-	
+	e4 r
+	e r
+	R2*38
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -114,8 +187,12 @@ musicPiattiMvtIII = \relative c {
 	
 % Bars 261 to 265
 	
-% Bars 266 to 270
 	
+	
+	
+	\section
+% Bars 266 to 270
+	\time 6/4 R1.*55
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -136,16 +213,24 @@ musicPiattiMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
-% Bars 321 to 325
 	
+	
+	
+	\mark \default
+% Bars 321 to 325
+	R1.*20
 % Bars 326 to 330
 	
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
-% Bars 341 to 345
 	
+	
+	
+	\section
+% Bars 341 to 345
+	\time 2/4 R2*48
 % Bars 346 to 350
 	
 % Bars 351 to 355
@@ -163,5 +248,5 @@ musicPiattiMvtIII = \relative c {
 % Bars 381 to 385
 	
 % Bars 386 to 388
-	
+	\fine
 }

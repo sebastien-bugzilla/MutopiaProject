@@ -134,18 +134,18 @@
 					}
 				>>
 			>>
-%			\new Staff {
-%				\timeMvtIII \nameStaffXIIMvtIII \musicTimpaniMvtIII
-%			}
-%			\new RhythmicStaff {
-%				\timeMvtIII \nameStaffXIIIMvtIII \musicTriangoloMvtIII
-%			}
-%			\new RhythmicStaff {
-%				\timeMvtIII \nameStaffXIVMvtIII \musicPiattiMvtIII
-%			}
-%			\new RhythmicStaff {
-%				\timeMvtIII \nameStaffXVMvtIII \musicGranCassaMvtIII
-%			}
+			\new Staff {
+				\timeMvtIII \nameStaffXIIMvtIII \musicTimpaniMvtIII
+			}
+			\new RhythmicStaff {
+				\timeMvtIII \nameStaffXIIIMvtIII \musicTriangoloMvtIII
+			}
+			\new RhythmicStaff {
+				\timeMvtIII \nameStaffXIVMvtIII \musicPiattiMvtIII
+			}
+			\new RhythmicStaff {
+				\timeMvtIII \nameStaffXVMvtIII \musicGranCassaMvtIII
+			}
 %			\new PianoStaff <<
 %				\new Staff = "up" {
 %					\timeMvtIII \nameStaffXVIMvtIII \musicArpaUpMvtIII
