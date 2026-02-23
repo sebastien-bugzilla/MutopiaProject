@@ -1,6 +1,6 @@
    161    433   5234 10_DvorakSymph4_Conductor_mvt1.ly
    178    479   5811 10_DvorakSymph4_Conductor_mvt2.ly
-   183    533   6117 10_DvorakSymph4_Conductor_mvt3.ly
+   183    522   6106 10_DvorakSymph4_Conductor_mvt3.ly
    152    413   5062 10_DvorakSymph4_Conductor_mvt4.ly
    244    563   5215 20_DvorakSymph4_Part01_Flauti.ly
    244    563   5111 20_DvorakSymph4_Part02_Oboi.ly
@@ -146,9 +146,9 @@
    347   1040   4514 03-Mvt3/m03_v13_music_TrombeI.ily
    347   1040   4536 03-Mvt3/m03_v14_music_TrombeII_C.ily
    347   1040   4536 03-Mvt3/m03_v14_music_TrombeII.ily
-   167    444   1983 03-Mvt3/m03_v15_music_TrombonoI.ily
-   167    444   1985 03-Mvt3/m03_v16_music_TrombonoII.ily
-   167    444   1985 03-Mvt3/m03_v17_music_TrombonoIII.ily
+   337   1030   4471 03-Mvt3/m03_v15_music_TrombonoI.ily
+   337   1026   4429 03-Mvt3/m03_v16_music_TrombonoII.ily
+   365   1103   4781 03-Mvt3/m03_v17_music_TrombonoIII.ily
    167    444   1981 03-Mvt3/m03_v18_music_Timpani.ily
    167    444   1985 03-Mvt3/m03_v19_music_Triangolo.ily
    167    444   1982 03-Mvt3/m03_v20_music_Piatti.ily
@@ -183,4 +183,4 @@
    287    744   3178 04-Mvt4/m04_v26_music_Viola.ily
    287    744   3184 04-Mvt4/m04_v27_music_Violoncello.ily
    287    744   3184 04-Mvt4/m04_v28_music_Contrabasso.ily
- 49273 159635 871445 total
+ 49811 161451 879162 total

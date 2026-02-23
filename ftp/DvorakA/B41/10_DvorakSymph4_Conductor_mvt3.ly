@@ -122,17 +122,17 @@
 					\partCombine \musicTrombeIMvtIII \musicTrombeIIMvtIII
 %					\musicTrombeIIMvtIII 
 				}
-%				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
-%					\new Staff {
-%						\timeMvtIII \nameStaffIXMvtIII \musicTrombonoIMvtIII
-%					}
-%					\new Staff {
-%						\timeMvtIII \nameStaffXMvtIII \musicTrombonoIIMvtIII
-%					}
-%					\new Staff {
-%						\timeMvtIII \nameStaffXIMvtIII \musicTrombonoIIIMvtIII
-%					}
-%				>>
+				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
+					\new Staff {
+						\timeMvtIII \nameStaffIXMvtIII \musicTrombonoIMvtIII
+					}
+					\new Staff {
+						\timeMvtIII \nameStaffXMvtIII \musicTrombonoIIMvtIII
+					}
+					\new Staff {
+						\timeMvtIII \nameStaffXIMvtIII \musicTrombonoIIIMvtIII
+					}
+				>>
 			>>
 %			\new Staff {
 %				\timeMvtIII \nameStaffXIIMvtIII \musicTimpaniMvtIII
