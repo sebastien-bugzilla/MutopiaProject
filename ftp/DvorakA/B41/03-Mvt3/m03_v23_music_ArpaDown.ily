@@ -9,7 +9,7 @@ musicArpaDownMvtIII = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	
+	R1.*55
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -30,16 +30,28 @@ musicArpaDownMvtIII = \relative c {
 	
 % Bars 51 to 55
 	
-% Bars 56 to 60
 	
+	
+	
+	\mark \default
+% Bars 56 to 60
+	R1.*14
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
+	
+	
+	\clef treble
+	<g' cis e g>4\arpeggio r r q\arpeggio r r
 % Bars 71 to 75
-	
+	q\arpeggio r r q\arpeggio r r
+	q\arpeggio r r q\arpeggio r r
+	q\arpeggio r r q\arpeggio r r
+	q\arpeggio r r <g c e g>\arpeggio r r
+	<g cis e g>\arpeggio r r q\arpeggio r r \section
 % Bars 76 to 80
-	
+	\key d \major s1.*34
 % Bars 81 to 85
 	
 % Bars 86 to 90
@@ -52,8 +64,12 @@ musicArpaDownMvtIII = \relative c {
 	
 % Bars 106 to 110
 	
-% Bars 111 to 115
 	
+	
+	\mark \default
+	<fis' ais cis>4\arpeggio r r r2 r4 \clef bass
+% Bars 111 to 115
+	R1.*28
 % Bars 116 to 120
 	
 % Bars 121 to 125
@@ -64,24 +80,55 @@ musicArpaDownMvtIII = \relative c {
 	
 % Bars 136 to 140
 	
+	
+	
+	R1.\fermata \section
+	\time 2/4 \key c \major R2*16
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	
+	
+	
+	\mark \default
 % Bars 156 to 160
-	
+	<c,, e g c>4\arpeggio <c' e g c>\arpeggio
+	<c, e g c>\arpeggio <c' e g c>\arpeggio
+	<c, e g c>\arpeggio <e' g c e>\arpeggio
+	<d g b d>\arpeggio <c e g c>\arpeggio
+	<g b d g>\arpeggio <g' b d>\arpeggio
 % Bars 161 to 165
-	
+	<g, b d g>\arpeggio <g' b d>\arpeggio
+	<g, b d g>\arpeggio <d f a d>\arpeggio
+	<e gis b e>\arpeggio <a c e a>\arpeggio
+	<d, b' d>\arpeggio <d' fis b>\arpeggio
+	<d, b' d>\arpeggio <d' fis b>\arpeggio
 % Bars 166 to 170
-	
+	<d, b' d>\arpeggio <d' a' c>\arpeggio
+	<d fis b>\arpeggio <g, d'>\arpeggio
+	<d fis b d>\arpeggio <d' fis b d>\arpeggio
+	<d, fis b d>\arpeggio <d' fis b d>\arpeggio
+	<d, fis b d>\arpeggio <d' fis a c>\arpeggio
 % Bars 171 to 175
-	
+	<d fis b>\arpeggio <g, b d g>8\arpeggio r
+	<f! a c f!>4\arpeggio <f' a c>\arpeggio
+	<f, a c f>\arpeggio <f' a c>\arpeggio
+	<f, a c f>\arpeggio <f' a c>\arpeggio
+	<a, c f a>\arpeggio <f' a c f>\arpeggio
 % Bars 176 to 180
-	
+	<c, g' c>\arpeggio <c' e g c>\arpeggio
+	<c, g' c>\arpeggio <c' e g c>\arpeggio
+	<c, g' c>\arpeggio <e' g c e>\arpeggio
+	<f a c f>\arpeggio <e g c e>\arpeggio
+	<d, f a d>\arpeggio <d' f a d>\arpeggio
 % Bars 181 to 185
-	
+	<bes, bes'>\arpeggio <d' f bes d>\arpeggio
+	<bes d f bes>\arpeggio <b d f b>\arpeggio \mark \default
+	<g b d g>8\arpeggio r r4
+	R2*35
 % Bars 186 to 190
 	
 % Bars 191 to 195
@@ -96,6 +143,9 @@ musicArpaDownMvtIII = \relative c {
 	
 % Bars 216 to 220
 	
+	
+	\mark \default
+	R2*47
 % Bars 221 to 225
 	
 % Bars 226 to 230
@@ -114,8 +164,12 @@ musicArpaDownMvtIII = \relative c {
 	
 % Bars 261 to 265
 	
-% Bars 266 to 270
 	
+	
+	
+	\section
+% Bars 266 to 270
+	\time 6/4 \key d \minor R1.*55
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -136,16 +190,28 @@ musicArpaDownMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
-% Bars 321 to 325
 	
+	
+	
+	\mark \default
+% Bars 321 to 325
+	R1.*14
 % Bars 326 to 330
 	
 % Bars 331 to 335
 	
+	
+	
+	
+	\clef treble <g' cis e g>4\arpeggio r r q\arpeggio r r
 % Bars 336 to 340
-	
+	q\arpeggio r r q\arpeggio r r
+	q\arpeggio r r q\arpeggio r r
+	q\arpeggio r r q\arpeggio r r
+	q\arpeggio r r <g c e g>\arpeggio r r
+	<g cis e g>\arpeggio r r q\arpeggio r r \clef bass \section
 % Bars 341 to 345
-	
+	\time 2/4 \key d \major R2*47
 % Bars 346 to 350
 	
 % Bars 351 to 355
@@ -164,4 +230,6 @@ musicArpaDownMvtIII = \relative c {
 	
 % Bars 386 to 388
 	
+	
+	R2\fermata \fine
 }

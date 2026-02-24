@@ -146,14 +146,14 @@
 			\new RhythmicStaff {
 				\timeMvtIII \nameStaffXVMvtIII \musicGranCassaMvtIII
 			}
-%			\new PianoStaff <<
-%				\new Staff = "up" {
-%					\timeMvtIII \nameStaffXVIMvtIII \musicArpaUpMvtIII
-%				}
-%				\new Staff = "down" {
-%					\timeMvtIII \nameStaffXVIIMvtIII \musicArpaDownMvtIII
-%				}
-%			>>
+			\new PianoStaff <<
+				\new Staff = "up" {
+					\timeMvtIII \nameStaffXVIMvtIII \musicArpaUpMvtIII
+				}
+				\new Staff = "down" {
+					\timeMvtIII \nameStaffXVIIMvtIII \musicArpaDownMvtIII
+				}
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIVMvtIII } <<
 %					\new Staff {

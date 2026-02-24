@@ -56,6 +56,10 @@
 %		\override StaffSymbol.transparent = ##t
 	}
 	\context {
+		\RhythmicStaff
+		\RemoveEmptyStaves
+	}
+	\context {
 		\Score
 %		scriptDefinitions = #my-script-alist
 		\override RehearsalMark.font-size = #4
