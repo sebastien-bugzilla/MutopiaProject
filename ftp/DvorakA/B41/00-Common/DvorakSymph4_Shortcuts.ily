@@ -16,15 +16,18 @@ ppcresc = \markup {\dynamic pp \italic cresc.}
 ppdolce = \markup {\dynamic pp \italic dolce}
 ppmaespress = \markup {\dynamic pp \italic "ma espress."}
 ppcrescpoco = \markup {\dynamic pp \italic "cresc. poco"}
-pbrackp = \markup {\concat {\dynamic p \bracket \with-true-dimensions \dynamic p} }
+pbrackp = \markup {\concat {\dynamic p \bracket \with-true-dimensions \dynamic p}}
+ppcrescpocoapoco = \markup {\dynamic pp \italic "cresc poco a poco"}
 %--------------------
 % dynamics p
 %--------------------
 pcresc = \markup {\dynamic p \italic cresc.}
+pcrescD = #(make-dynamic-script (markup #:normal-text pcresc))
 pdim = \markup {\dynamic p \italic dim.}
 pdimD = #(make-dynamic-script (markup #:normal-text pdim))
 ppocoapococresc = \markup {\dynamic p \italic "poco a poco cresc."}
 pmolto = \markup {\dynamic p \italic molto}
+pdolce = \markup {\dynamic p \italic dolce}
 %--------------------
 % dynamics mp
 %--------------------
@@ -48,6 +51,13 @@ sfzmarkup = \markup {\dynamic sfz}
 mffz = \markup {\concat {\dynamic mf \hspace #0.4 \dynamic fz}}
 fzf = \markup {\concat {\dynamic fz \hspace #0.8 \dynamic f}}
 fffz = \markup {\concat {\dynamic ff \hspace #0.4 \dynamic fz}}
+fzmarcatobrackpocoapococresc = \markup {
+	\concat { \bracket \with-true-dimensions \dynamic fz
+		\italic { 
+			" marcato " \bracket \with-true-dimensions "poco a poco" " cresc."
+		}
+	}
+}
 %--------------------
 % dynamics fp
 %--------------------
@@ -73,6 +83,7 @@ fmarcato = \markup {\dynamic f \italic marcato}
 % dynamics ff
 %--------------------
 ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
+menoff = \markup {\italic meno \dynamic ff}
 %--------------------
 % dynamics ffz
 %--------------------
