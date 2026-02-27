@@ -108,6 +108,8 @@ pococresc = \markup {\italic "poco cresc."}
 pocoapococresc = \markup {\italic "poco a poco cresc."}
 crescpoco = \markup {\italic "cresc. poco"}
 crescpocoapoco = \markup {\italic "cresc poco a poco"}
+sempredim = \markup {\italic "sempre dim."}
+sempredimD = #(make-dynamic-script (markup #:normal-text #:italic "sempre dim."))
 %--------------------
 % text indications
 %--------------------
@@ -128,6 +130,7 @@ dolcemaespress = \markup {\italic "dolce ma espress."}
 ileggio = \markup {"I. leggio"}
 unis = \markup {unis}
 molto = \markup {\italic molto}
+secco = \markup {\italic secco}
 %--------------------
 % instrument modification
 %--------------------
