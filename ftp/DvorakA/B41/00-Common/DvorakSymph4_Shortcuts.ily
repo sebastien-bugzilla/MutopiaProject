@@ -18,6 +18,7 @@ ppmaespress = \markup {\dynamic pp \italic "ma espress."}
 ppcrescpoco = \markup {\dynamic pp \italic "cresc. poco"}
 pbrackp = \markup {\concat {\dynamic p \bracket \with-true-dimensions \dynamic p}}
 ppcrescpocoapoco = \markup {\dynamic pp \italic "cresc poco a poco"}
+pppocoapococresc = \markup {\dynamic pp \italic "poco a poco cresc."}
 %--------------------
 % dynamics p
 %--------------------
@@ -110,6 +111,11 @@ crescpoco = \markup {\italic "cresc. poco"}
 crescpocoapoco = \markup {\italic "cresc poco a poco"}
 sempredim = \markup {\italic "sempre dim."}
 sempredimD = #(make-dynamic-script (markup #:normal-text #:italic "sempre dim."))
+brackpocoapococresc = \markup {
+	\italic {
+		\bracket \with-true-dimensions "poco a poco" "cresc"
+	}
+}
 %--------------------
 % text indications
 %--------------------
@@ -131,6 +137,7 @@ ileggio = \markup {"I. leggio"}
 unis = \markup {unis}
 molto = \markup {\italic molto}
 secco = \markup {\italic secco}
+sim = \markup {\italic sim.}
 %--------------------
 % instrument modification
 %--------------------

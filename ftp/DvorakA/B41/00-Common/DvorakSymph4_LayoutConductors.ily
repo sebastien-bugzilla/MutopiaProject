@@ -6,7 +6,7 @@
 %###############################################################################
 #(set-global-staff-size 16)
 \layout {
-	#(layout-set-staff-size 16) 
+	#(layout-set-staff-size 16)
 %	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatBarType = #":|.|:"
 	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
