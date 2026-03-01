@@ -29,6 +29,7 @@ pdimD = #(make-dynamic-script (markup #:normal-text pdim))
 ppocoapococresc = \markup {\dynamic p \italic "poco a poco cresc."}
 pmolto = \markup {\dynamic p \italic molto}
 pdolce = \markup {\dynamic p \italic dolce}
+pbrackdim = \markup {\dynamic p \bracket \with-true-dimensions \italic dim.}
 %--------------------
 % dynamics mp
 %--------------------
