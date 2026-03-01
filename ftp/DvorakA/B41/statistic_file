@@ -130,10 +130,10 @@
    430   1548   9205 03-Mvt3/m03_v05_music_ClarinettoI.ily
    430   1517   8501 03-Mvt3/m03_v06_music_ClarinettoII_C.ily
    430   1517   8660 03-Mvt3/m03_v06_music_ClarinettoII.ily
-   442   1552   8300 03-Mvt3/m03_v07_music_FagottoI_C.ily
-   442   1522   7899 03-Mvt3/m03_v07_music_FagottoI.ily
-   442   1498   7551 03-Mvt3/m03_v08_music_FagottoII_C.ily
-   442   1498   7768 03-Mvt3/m03_v08_music_FagottoII.ily
+   442   1552   8298 03-Mvt3/m03_v07_music_FagottoI_C.ily
+   442   1522   7897 03-Mvt3/m03_v07_music_FagottoI.ily
+   442   1498   7549 03-Mvt3/m03_v08_music_FagottoII_C.ily
+   442   1498   7766 03-Mvt3/m03_v08_music_FagottoII.ily
    386   1262   7148 03-Mvt3/m03_v09_music_CornoI_C.ily
    386   1230   6653 03-Mvt3/m03_v09_music_CornoI.ily
    382   1191   6032 03-Mvt3/m03_v10_music_CornoII_C.ily
@@ -183,4 +183,5 @@
    287    744   3178 04-Mvt4/m04_v26_music_Viola.ily
    287    744   3184 04-Mvt4/m04_v27_music_Violoncello.ily
    287    744   3184 04-Mvt4/m04_v28_music_Contrabasso.ily
- 51998 174333 939064 total
+    83    244   1611 05-Midi/DvorakSymph4_Tempi.ily
+ 52081 174577 940667 total

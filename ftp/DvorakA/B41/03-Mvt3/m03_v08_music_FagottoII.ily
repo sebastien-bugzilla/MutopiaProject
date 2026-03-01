@@ -33,7 +33,7 @@ musicFagottoIIMvtIII = \relative c {
 	r2 r4 r2 cis4-^\fz
 	d1.-^\mf~
 	d2 e4-. f-. e-. d-.
-	<< cis1.(->\> {s4 s s s s s\!}>>
+	<< c1.(->\> {s4 s s s s s\!}>>
 	a2.) r2 r8 a->
 % Bars 26 to 30
 	<< a1.\fz~ {s4 s s\> s s s}>>
