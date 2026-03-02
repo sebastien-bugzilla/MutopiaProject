@@ -15,4 +15,9 @@ timeMvtIII = {
 }
 timeMvtIV = {
 	\time 2/4
+	\set Timing.beatBase = #1/2
+	\set Timing.beamExceptions = \beamExceptions {
+		8[ 8 8 8] |
+		16[ 16 16 16] 16[ 16 16 16]
+	}
 }

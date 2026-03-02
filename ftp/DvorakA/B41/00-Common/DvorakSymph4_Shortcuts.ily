@@ -87,6 +87,7 @@ fmarcato = \markup {\dynamic f \italic marcato}
 ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
 menoff = \markup {\italic meno \dynamic ff}
 ffmarcatiss = \markup {\dynamic ff \italic marcatiss.}
+brackfffz = \markup {\bracket \with-true-dimensions \dynamic ff \dynamic fz}
 %--------------------
 % dynamics ffz
 %--------------------
@@ -141,6 +142,8 @@ molto = \markup {\italic molto}
 secco = \markup {\italic secco}
 sim = \markup {\italic sim.}
 simile = \markup {\italic simile}
+gp = \markup {G.P.}
+moltoespr = \markup {\italic "molto espr."}
 %--------------------
 % instrument modification
 %--------------------

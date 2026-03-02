@@ -4,9 +4,9 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 16)
+#(set-global-staff-size 19)
 \layout {
-	#(layout-set-staff-size 16)
+	#(layout-set-staff-size 19)
 %	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatBarType = #":|.|:"
 	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet

@@ -90,6 +90,60 @@ tempiMvtIII = {
 }
 tempiMvtIV = {
 	\tempo "Allegro con brio"
+	s2*21
+	% bar 22
+	\tempo "rit."
+	s2*112
+	% bar 134
+	\tempo "rit."
+	s2*2
+	% bar 136
+	\tempo "a tempo"
+	s2*20
+	% bar 156
+	\tempo "poco rit."
+	s2*2
+	% bar 158
+	\tempo "Poco meno mosso"
+	s2*30
+	% bar 188
+	\tempo "poco a poco accelerando"
+	s2*10
+	% bar 198
+	\tempo "a tempo"
+	s2*32
+	% bar 230
+	\tempo "poco a poco accel."
+	s2*12
+	% bar 242
+	\tempo "Tempo I."
+	s2*86
+	% bar 328
+	\tempo "Poco meno mosso"
+	s2*16
+	% bar 344
+	\tempo "poco a poco stringendo"
+	s2*8
+	% bar 352
+	\tempo "Tempo I."
+	s2*57 s4
+	% bar 409.5
+	\tempo "rit."
+	s4 s2
+	% bar 411
+	\tempo "Andante"
+	s2*2
+	% bar 413
+	\tempo "Tempo I."
+	s2*146
+	% bar 559
+	\tempo "rit."
+	s2*2
+	% bar 561
+	\tempo "a tempo"
+	s2*90
+	% bar 651
+	\tempo "Più mosso"
 }
 %###############################################################################
 %#                            T E M P I   P A R T S                            #
