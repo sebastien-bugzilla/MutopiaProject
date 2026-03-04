@@ -36,5 +36,12 @@ correctionsMvtIII = \markup {
 	
 	% bar 140, timpani
 	"Bar 140, for timpani, the missing indication of tune modification H,D => C,G is added."
+}
+correctionsMvtIV = \markup {
 	
+	% bar 26, all
+	"The indication of bar numbers are shifted from bar 25 to the end of the score. The present edition correct this."
+	
+	% bar 648 (649), oboe I
+	"Bar 648 (649), for oboe I, the rhythm is corrected based on part score."
 }

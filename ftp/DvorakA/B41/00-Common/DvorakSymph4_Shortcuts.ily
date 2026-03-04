@@ -43,6 +43,7 @@ fzmf = \markup {\concat {\dynamic fz \hspace #0.4 \dynamic mf}}
 mfespress = \markup {\dynamic mf \italic espress.}
 mfespressivo = \markup {\dynamic mf \italic espressivo}
 mfmarcato = \markup {\dynamic mf \italic marcato}
+mfbenmarc = \markup {\dynamic mf \italic "ben marc."}
 %--------------------
 % dynamics fz
 %--------------------
@@ -60,6 +61,7 @@ fzmarcatobrackpocoapococresc = \markup {
 		}
 	}
 }
+f-fz = \markup {\concat {\dynamic f \hspace #0.4 \dynamic fz}}
 %--------------------
 % dynamics fp
 %--------------------
@@ -81,6 +83,7 @@ fmoltomarc = \markup {\dynamic f \italic "molto marc."}
 fmarkup = \markup {\dynamic f}
 fespress = \markup {\dynamic f \italic espress.}
 fmarcato = \markup {\dynamic f \italic marcato}
+fsecco = \markup {\dynamic f \italic secco}
 %--------------------
 % dynamics ff
 %--------------------
@@ -144,6 +147,7 @@ sim = \markup {\italic sim.}
 simile = \markup {\italic simile}
 gp = \markup {G.P.}
 moltoespr = \markup {\italic "molto espr."}
+marcatissimo = \markup {\italic marcatissimo}
 %--------------------
 % instrument modification
 %--------------------

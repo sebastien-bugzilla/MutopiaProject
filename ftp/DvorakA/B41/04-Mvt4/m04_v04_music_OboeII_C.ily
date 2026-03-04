@@ -9,7 +9,7 @@ musicOboeIIMvtIV = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	f'4-._\fsecco g-.
+	f'4-. g-.
 	a-. r
 	f4-. g-.
 	a-. r
@@ -45,7 +45,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 36 to 40
 	
 	
-	R2*30
+	R2*29
 	
 	
 % Bars 41 to 45
@@ -60,9 +60,9 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 66 to 70
 	
-	
+	\mmrPos #-6 R2
 	R2 \mark \default
-	e4-._\mfbenmarc f-.
+	e4-. f-.
 	e2\fz
 % Bars 71 to 75
 	f4-. e-.
@@ -72,7 +72,7 @@ musicOboeIIMvtIV = \relative c {
 	f4-. e-.
 % Bars 76 to 80
 	<< f2\fz\> {s8 s s s}>>
-	e4-.\mp f-._\dimmarkup
+	e4-.\mp f-.
 	e-. r
 	f4-. e-.
 	f-. r
@@ -86,15 +86,15 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 91 to 95
 	
-	R2*8
-	
-	
-	
+	\mmrPos #-7 R2
+	\mmrPos #-9 R
+	\mmrPos #-9 R
+	\mmrPos #-7 R
 % Bars 96 to 100
-	
-	
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	R
+	R
 	g2~\mf
 % Bars 101 to 105
 	g~
@@ -136,13 +136,13 @@ musicOboeIIMvtIV = \relative c {
 	g,8-.\p g-. g-. g-.
 	g-. g-. g-. g-. 
 	g-. g-. g-. g-. 
-	g-._\crescmarkup g-. g-. g-. 
+	g-. g-. g-. g-. 
 	g-. g-. g-. g-. 
 % Bars 141 to 145
 	g-. g-. g-. g-. 
 	g-. g-. g-. g-. 
 	g-. g-. g-. g-. 
-	g-. g-. g-._\dimmarkup g-. 
+	g-. g-. g-. g-. 
 	g-. g-. g-. g-. 
 % Bars 146 to 150
 	g-. g-. g-. g-. 
@@ -172,18 +172,26 @@ musicOboeIIMvtIV = \relative c {
 % Bars 196 to 200
 	
 	
-	R2*20
+	R2*9
 	
 	
 % Bars 201 to 205
 	
 % Bars 206 to 210
 	
+	\mmrPos #-6 R2
+	\mmrPos #-8 R
+	\mmrPos #-8 R
+	\mmrPos #-6 R
 % Bars 211 to 215
-	
+	\mmrPos #-6 R
+	\mmrPos #-7 R
+	\mmrPos #-8 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 216 to 220
-	
-	
+	\mmrPos #-7 R
+	\mmrPos #-8 R
 	e2(\mf
 	fis)\<
 	<< g\!(~ {s4 s\>}>>
@@ -198,13 +206,21 @@ musicOboeIIMvtIV = \relative c {
 	<< fis2) {s8 s s s\!}>>
 	g2\f~
 	g4\> r\!
-	R2*12
+	\mmrPos #-8 R2
 % Bars 231 to 235
-	
+	\mmrPos #-6 R
+	\mmrPos #-8 R
+	\mmrPos #-6 R
+	\mmrPos #-8 R
+	R
 % Bars 236 to 240
-	
+	\mmrPos #-8 R
+	R
+	\mmrPos #-6 R
+	R
+	R
 % Bars 241 to 245
-	
+	R
 	g'8(\ff fis e d
 	cis b ais b
 	ais g' fis e
@@ -234,7 +250,7 @@ musicOboeIIMvtIV = \relative c {
 	des) r r4
 	R2
 % Bars 266 to 270
-	e,!2~_\f-fz
+	e,!2~
 	e
 	e\fz~
 	e
@@ -345,7 +361,7 @@ musicOboeIIMvtIV = \relative c {
 	cis-. cis-. cis-. cis-. 
 % Bars 366 to 370
 	cis-. cis-. cis-. cis-. 
-	cis-._\crescmarkup cis-. cis-. cis-. 
+	cis-. cis-. cis-. cis-. 
 	cis-. cis-. cis-. cis-. 
 	cis-. cis-. cis-. cis-. 
 	cis-. cis-. cis-. cis-. 
@@ -356,7 +372,7 @@ musicOboeIIMvtIV = \relative c {
 	d2~
 	d
 % Bars 376 to 380
-	cis(_\crescmarkup
+	cis(
 	d)
 	e4( fis
 	g2) \mark \default
@@ -401,7 +417,7 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 	
-	R2*30
+	R2*29
 % Bars 426 to 430
 	
 % Bars 431 to 435
@@ -416,10 +432,10 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 	
-	
+	\mmrPos #-6 R2
 	R2 \mark \default
 % Bars 456 to 460
-	e4-._\mfmarcato f-.
+	e4-. f-.
 	e2->
 	f4-. e-.
 	f2->
@@ -454,7 +470,7 @@ musicOboeIIMvtIV = \relative c {
 	
 	
 	
-	fis2_\fffz~
+	fis2~
 % Bars 496 to 500
 	fis
 	b\fz~
@@ -476,14 +492,14 @@ musicOboeIIMvtIV = \relative c {
 % Bars 511 to 515
 	R2*2
 	
-	f,2_\fffz
+	f,2
 	bes\fz
 	R2*2
 % Bars 516 to 520
 	
-	c2_\fffz
+	c2
 	d\fz
-	g,4->_\fcresc g->
+	g,4-> g->
 	aes-> aes->
 % Bars 521 to 525
 	c4-> c->
@@ -492,7 +508,7 @@ musicOboeIIMvtIV = \relative c {
 	f-> f->
 	e-> e->
 % Bars 526 to 530
-	f-> f---._\dimmarkup
+	f-> f---.
 	d---. d---.
 	d---. d---.
 	b2\p~
@@ -517,7 +533,7 @@ musicOboeIIMvtIV = \relative c {
 	a8.-. gis16 a4->\<
 	a-> a->\! \section
 % Bars 561 to 565
-	\key d \major a,2~\ff_\moltoespr
+	\key d \major a,2~\ff
 	<< a\< {s8 s s s\!}>>
 	ais2~
 	ais

@@ -211,7 +211,7 @@ musicFlautoIMvtIV = \relative c {
 	d cis b cis
 	ais) r r4
 	R2
-	bes''8(\ff ais g f
+	bes''8(\ff aes g f
 	ees des c des
 % Bars 256 to 260
 	c bes aes g
