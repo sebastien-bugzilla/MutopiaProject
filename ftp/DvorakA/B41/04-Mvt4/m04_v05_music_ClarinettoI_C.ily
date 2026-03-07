@@ -9,7 +9,7 @@ musicClarinettoIMvtIV = \relative c {
 	\key f \minor
 	\transposition a
 % Bars 1 to 5
-	f''4-._\fsecco f-.
+	\partCombineApart f''4-._\fsecco f-.
 	f8.-. e16 g4->
 	f4-. f-.
 	f8.-. e16 c4->
@@ -27,7 +27,7 @@ musicClarinettoIMvtIV = \relative c {
 	ees8.-. d16 f4->
 	ees4-. ees-.
 % Bars 16 to 20
-	ees8.-. d16( bes'4)\fermata 
+	ees8.-. d16( bes'4)\fermata \partCombineAutomatic
 	R2
 	c,8. bes16( f'4)->\fermata
 	R2
@@ -43,7 +43,7 @@ musicClarinettoIMvtIV = \relative c {
 	
 	
 	
-	R2*10
+	\partCombineApart R2*10
 % Bars 31 to 35
 	
 % Bars 36 to 40
@@ -51,28 +51,28 @@ musicClarinettoIMvtIV = \relative c {
 	
 	
 	
-	R2
+	\once \partCombineAutomatic R2
 % Bars 41 to 45
 	R2*3
 	
 	
-	R2
+	\once \partCombineAutomatic R2
 	R2*3
 % Bars 46 to 50
 	
 	
-	R2
+	\once \partCombineAutomatic R2
 	R2*3
 	
 % Bars 51 to 55
 	
-	R2
+	\once \partCombineAutomatic R2
 	R
 	c2(\p~
 	c~
 % Bars 56 to 60
 	c
-	<< des) {s4 s_\pocoapococresc}>>
+	<< des) {s4 s_\pocoapococresc}>> \partCombineAutomatic
 	c2(~
 	c~
 	c
@@ -85,7 +85,7 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 66 to 70
 	R2*2
 	
-	bes'8(\p\> aes f des)\! \mark \default
+	\partCombineApart bes'8(\p\> aes f des)\! \mark \default
 	des4_\mfbenmarc-. des-.
 	des8.-. c16 ees4->
 % Bars 71 to 75
@@ -96,14 +96,14 @@ musicClarinettoIMvtIV = \relative c {
 	des4-. des-.
 % Bars 76 to 80
 	des8.-. bes16 aes4->
-	bes-.\mp bes-._\dimmarkup
+	bes-. bes-._\dimmarkup
 	bes8.-. aes16 c4->
 	bes4-. bes-.
 	bes8. aes16 fes4->
 % Bars 81 to 85
 	bes4-. bes-.
 	bes8.-. aes16 c4->
-	bes4-. bes-.
+	bes4-. bes-. \partCombineAutomatic
 	bes,2\pp~
 	bes~
 % Bars 86 to 90
@@ -114,10 +114,10 @@ musicClarinettoIMvtIV = \relative c {
 	bes~
 % Bars 91 to 95
 	bes
-	bes~(_\pocoapococresc
+	\partCombineApart bes~(_\pocoapococresc
 	bes
 	b~
-	b)
+	b) \partCombineAutomatic
 % Bars 96 to 100
 	d~
 	d~
@@ -135,7 +135,7 @@ musicClarinettoIMvtIV = \relative c {
 	\mark \default
 	f'4-.\ff f-.
 	f8.-. e16 g4->
-	f-. f-.
+	\partCombineApart f-. f-.
 % Bars 111 to 115
 	g-. r
 	f4-. f-.
@@ -143,7 +143,7 @@ musicClarinettoIMvtIV = \relative c {
 	f-. f-.
 	g-. r
 % Bars 116 to 120
-	e-. e-.
+	e-. e-. \partCombineAutomatic
 	fis-. r
 	e-. e-.
 	fis-. r
@@ -356,10 +356,10 @@ musicClarinettoIMvtIV = \relative c {
 	f2~
 	f
 % Bars 376 to 380
-	e_\crescmarkup(
+	\partCombineApart e_\crescmarkup(
 	f)
 	g4( a
-	bes2) \mark \default
+	bes2) \partCombineAutomatic \mark \default
 	aes!4-^\ff r
 % Bars 381 to 385
 	bes-^ r
@@ -380,15 +380,15 @@ musicClarinettoIMvtIV = \relative c {
 	fis-^ r
 	fis-^ r
 % Bars 396 to 400
+	\partCombineApart e-> e->
+	fis-> \once \partCombineAutomatic r
 	e-> e->
-	fis-> r
-	e-> e->
-	fis-> r
+	fis-> \once \partCombineAutomatic r
 	d-> d->
 % Bars 401 to 405
-	e-> r
+	e-> \once \partCombineAutomatic r
 	d-> d->
-	e-> r
+	e-> \partCombineAutomatic r
 	R2*13
 % Bars 406 to 410
 	
@@ -396,45 +396,45 @@ musicClarinettoIMvtIV = \relative c {
 	
 % Bars 416 to 420
 	
-	R2*10
+	\partCombineApart R2*10
 % Bars 421 to 425
 	
 % Bars 426 to 430
 	
-	R2
+	\once \partCombineAutomatic R2
 	R2*3
 	
 	
 % Bars 431 to 435
-	r4 b-.\brack\p
+	\partCombineAutomatic r4 b-.\brack\p
 	b-. c-.
 	aes-. aes-.
-	g2(
+	\partCombineApart g2(
 	aes
 % Bars 436 to 440
-	g)
+	g) \partCombineAutomatic
 	aes4-. aes-.
-	g2(
-	aes)
+	\partCombineApart g2(
+	aes) \partCombineAutomatic 
 	g4-. g-.
 % Bars 441 to 445
 	aes2_\crescpocoapoco
-	c(~
+	\partCombineApart c(~
 	c
 	des)
 	c(~
 % Bars 446 to 450
-	<< c~ {s4 s\<}>>
+	<< c~ {s4 s}>>
 	c2
-	<< des) {s4 s\!}>>
+	<< des) {s4 s}>>
 	c2(
 	des)
 % Bars 451 to 455
 	c(
-	des8) r r4
+	des8) \partCombineAutomatic r r4
 	R2*2
 	
-	bes'8(\p\> aes f des)\! \mark \default
+	\partCombineApart bes'8(\p\> aes f des)\! \mark \default
 % Bars 456 to 460
 	des4-._\mfmarcato des-.
 	des8.-. c16 ees4->
@@ -444,15 +444,15 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 461 to 465
 	des8.-. c16 ees4->
 	des4-. des-.
-	des8.-.\> bes16 aes4->\!
-	bes4-.\p bes-._\dimmarkup
+	des8.-. bes16 aes4->
+	bes4-. bes-._\dimmarkup
 	bes8.-. aes16 ces4->
 % Bars 466 to 470
 	bes-. bes-.
 	bes8.-. aes16 fes4->
-	bes-.\> bes-.
+	bes-. bes-.
 	bes8. aes16 ces4->
-	bes-. bes-.\!
+	bes-. bes-. \partCombineAutomatic 
 % Bars 471 to 475
 	bes,2\pp~
 	bes~
@@ -547,7 +547,7 @@ musicClarinettoIMvtIV = \relative c {
 	c8.-. b16 c4->\<
 	c-> c->\! \section
 % Bars 561 to 565
-	\key f \major c2_\fmaespr(~
+	\key f \major \partCombineApart c2-\fmaespr(~
 	c8[\< d] \tuplet 3/2 4 {e f g)\!}
 	a2(->
 	f4. cis8)
@@ -560,8 +560,8 @@ musicClarinettoIMvtIV = \relative c {
 	a g)
 % Bars 571 to 575
 	f2(~
-	f8[\< e] \tuplet 3/2 4 {f g a\!)}
-	a2(~\fz
+	f8[ e] \tuplet 3/2 4 {f g a)}
+	a2(~
 	a4 g)
 	f2(~
 % Bars 576 to 580
@@ -572,26 +572,33 @@ musicClarinettoIMvtIV = \relative c {
 	f8 e f a)
 % Bars 581 to 585
 	g2(
-	f2~\< 
-	<<f~\! {s4 s\>}>>
-	f4)\! r
-	<<g2( {s4 s\<}>>
+	f2~
+	<<f~ {s4 s}>>
+	f4) \once \partCombineAutomatic r
+	<<g2( {s4 s}>>
 % Bars 586 to 590
-	<<f2~ {s8 s s s\!}>>
-	f4) r
-	R2
-	<<f2~ {s4 s\< }>>
+	<<f2~ {s8 s s s}>>
+	f4) \partCombineAutomatic r
+	R2 \partCombineApart
+	<<f2~ {s4 s }>>
 	f2~
 % Bars 591 to 595
-	f4\! r
-	R2*13
+	f4 r
+	\mmrPos #6 R2
+	R
+	R
+	R
 % Bars 596 to 600
-	
+	R
+	R
+	R
+	R
+	R
 % Bars 601 to 605
-	
-	
-	
-	\markk 
+	R
+	\mmrPos #6 R
+	\mmrPos #6 R 
+	\mmrPos #6 R \partCombineAutomatic \markk 
 	a2\ff~
 % Bars 606 to 610
 	a~
@@ -619,9 +626,9 @@ musicClarinettoIMvtIV = \relative c {
 	g
 	a4-. r
 % Bars 631 to 635
-	a,2-^
+	\partCombineApart a,2-^
 	c-^
-	ees4-.-^ r
+	ees4-.-^ \partCombineAutomatic r
 	R2*5
 	
 % Bars 636 to 640

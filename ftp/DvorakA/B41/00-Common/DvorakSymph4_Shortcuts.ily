@@ -30,6 +30,7 @@ ppocoapococresc = \markup {\dynamic p \italic "poco a poco cresc."}
 pmolto = \markup {\dynamic p \italic molto}
 pdolce = \markup {\dynamic p \italic dolce}
 pbrackdim = \markup {\dynamic p \bracket \with-true-dimensions \italic dim.}
+pstaccato = \markup {\dynamic p \italic staccato}
 %--------------------
 % dynamics mp
 %--------------------
@@ -84,6 +85,8 @@ fmarkup = \markup {\dynamic f}
 fespress = \markup {\dynamic f \italic espress.}
 fmarcato = \markup {\dynamic f \italic marcato}
 fsecco = \markup {\dynamic f \italic secco}
+fmaespr = \markup {\dynamic f \italic "ma espr."}
+fsempre = \markup {\dynamic f \italic sempre}
 %--------------------
 % dynamics ff
 %--------------------

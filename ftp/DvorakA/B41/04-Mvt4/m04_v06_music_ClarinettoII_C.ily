@@ -9,7 +9,7 @@ musicClarinettoIIMvtIV = \relative c {
 	\key f \minor
 	\transposition a
 % Bars 1 to 5
-	aes''4-._\fsecco bes-.
+	aes''4-. bes-.
 	c-. r
 	aes4-. bes-.
 	c-. r
@@ -76,7 +76,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ges~
 % Bars 56 to 60
 	ges
-	<< f) {s4 s_\pocoapococresc}>>
+	<< f) {s4 s}>>
 	ges2(~
 	ges~
 	ges
@@ -90,7 +90,7 @@ musicClarinettoIIMvtIV = \relative c {
 	R2*2
 	
 	R2 \mark \default
-	ees4_\mfbenmarc-. fes-.
+	ees4-. fes-.
 	ees2\fz
 % Bars 71 to 75
 	fes4-. ees-.
@@ -100,7 +100,7 @@ musicClarinettoIIMvtIV = \relative c {
 	fes4-. ees-.
 % Bars 76 to 80
 	<< fes2\fz\> {s8 s s s\!}>>
-	ees4-.\mp fes-._\dimmarkup
+	ees4-.\mp fes-.
 	ees-. r
 	fes4-. ees-.
 	fes-. r
@@ -118,7 +118,7 @@ musicClarinettoIIMvtIV = \relative c {
 	aes~
 % Bars 91 to 95
 	aes
-	aes~_\pocoapococresc
+	aes~
 	aes
 	aes~
 	aes
@@ -127,7 +127,7 @@ musicClarinettoIIMvtIV = \relative c {
 	b~
 	b~
 	b
-	e_\crescmarkup~
+	e~
 % Bars 101 to 105
 	e~
 	e~
@@ -168,13 +168,13 @@ musicClarinettoIIMvtIV = \relative c {
 	e8-.\p e-. e-. e-.
 	e-. e-. e-. e-.
 	e-. e-. e-. e-.
-	e-._\crescmarkup e-. e-. e-.
+	e-. e-. e-. e-.
 	e-. e-. e-. e-.
 % Bars 141 to 145
 	e-. e-. e-. e-.
 	e-. e-. e-. e-.
 	e-. e-. e-. e-.
-	e-. e-. e-._\dimmarkup e-.
+	e-. e-. e-. e-.
 	e-. e-. e-. e-.
 % Bars 146 to 150
 	e-. e-. e-. e-.
@@ -238,7 +238,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	g,2_\f-fz~
+	g,2~
 	g
 	g\fz~
 	g
@@ -349,7 +349,7 @@ musicClarinettoIIMvtIV = \relative c {
 	e-. e-. e-. e-.
 % Bars 366 to 370
 	e-. e-. e-. e-.
-	e-._\crescmarkup e-. e-. e-.
+	e-. e-. e-. e-.
 	e-. e-. e-. e-.
 	e-. e-. e-. e-.
 	e-. e-. e-. e-.
@@ -360,7 +360,7 @@ musicClarinettoIIMvtIV = \relative c {
 	c2~
 	c
 % Bars 376 to 380
-	c_\crescmarkup~
+	c~
 	c
 	c(
 	g') \mark \default
@@ -429,7 +429,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ees
 	ees4-. ees-.
 % Bars 441 to 445
-	ees2_\crescpocoapoco
+	ees2
 	aes~
 	aes~
 	aes
@@ -447,7 +447,7 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	R2 \mark \default
 % Bars 456 to 460
-	ees4-.\mf fes-.
+	ees4-. fes-.
 	ees2->
 	fes4-. ees-.
 	fes2->
@@ -456,7 +456,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ees2->
 	fes4-. ees-.
 	<< fes2->\> {s4 s\!}>>
-	ees4-.\p fes-._\dimmarkup
+	ees4-.\p fes-.
 	ees-. r
 % Bars 466 to 470
 	fes-. ees-.
@@ -477,7 +477,7 @@ musicClarinettoIIMvtIV = \relative c {
 	g~
 	g~
 % Bars 481 to 485
-	g~_\pocoapococresc
+	g~
 	g
 	cis~
 	cis~
@@ -512,14 +512,14 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 511 to 515
 	R2*2
 	
-	c2_\fffz
+	c2
 	des\fz
 	R2*2
 % Bars 516 to 520
 	
-	c2_\fffz
+	c2
 	bes\fz
-	ees4->_\fcresc ees->
+	ees4-> ees->
 	f-> f->
 % Bars 521 to 525
 	ees4-> ees->
@@ -528,7 +528,7 @@ musicClarinettoIIMvtIV = \relative c {
 	d-> d->
 	ees-> ees->
 % Bars 526 to 530
-	d-> d---._\dimmarkup
+	d-> d---.
 	d-.-- d-.--
 	b-.-- b-.--
 	b2\p~
