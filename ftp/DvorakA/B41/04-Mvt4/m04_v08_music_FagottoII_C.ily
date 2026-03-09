@@ -43,7 +43,7 @@ musicFagottoIIMvtIV = \relative c {
 	
 	
 	
-	d'4-._\pstaccato cis-.
+	d'4-. cis-.
 % Bars 31 to 35
 	d-. r
 	d4-. des-.
@@ -76,7 +76,7 @@ musicFagottoIIMvtIV = \relative c {
 	f2~
 % Bars 56 to 60
 	f
-	bes4-. bes-._\pocoapococresc
+	bes4-. bes-.
 	f-. f-.
 	f2~
 	f
@@ -90,7 +90,7 @@ musicFagottoIIMvtIV = \relative c {
 	R2*3
 	
 	\mark \default
-	c4-._\mfbenmarc g-.
+	c4-. g-.
 	c2\fz
 % Bars 71 to 75
 	g4-. c-.
@@ -100,7 +100,7 @@ musicFagottoIIMvtIV = \relative c {
 	g4-. c-.
 % Bars 76 to 80
 	<< g2\fz\> {s8 s s s\!}>>
-	c4-.\mp bes-._\dimmarkup
+	c4-.\mp bes-.
 	c-. r
 	bes-. c-.
 	bes-. r
@@ -118,7 +118,7 @@ musicFagottoIIMvtIV = \relative c {
 	bes~
 % Bars 91 to 95
 	bes
-	b~_\pocoapococresc
+	b~
 	b
 	d~
 	d
@@ -127,7 +127,7 @@ musicFagottoIIMvtIV = \relative c {
 	e~
 	e~
 	e
-	a,~_\crescmarkup
+	a,~
 % Bars 101 to 105
 	a~
 	a~
@@ -170,13 +170,13 @@ musicFagottoIIMvtIV = \relative c {
 	a,!8-.\p a-. a-. a-.
 	a-. a-. a-. a-.
 	a-. a-. a-. a-.
-	a-._\crescmarkup a-. a-. a-.
+	a-. a-. a-. a-.
 	a-. a-. a-. a-.
 % Bars 141 to 145
 	a-. a-. a-. a-.
 	a-. a-. a-. a-.
 	a-. a-. a-. a-.
-	a-. a-. a-._\dimmarkup a-.
+	a-. a-. a-. a-.
 	a-. a-. a-. a-.
 % Bars 146 to 150
 	a-. a-. a-. a-.
@@ -249,7 +249,7 @@ musicFagottoIIMvtIV = \relative c {
 	g4\! r
 	g2\fz\>~
 	g4\! r
-	a2\fz\>~_\crescmarkup
+	a2\fz\>~
 	a4\! r
 % Bars 236 to 240
 	a2\fz\>~
@@ -273,7 +273,7 @@ musicFagottoIIMvtIV = \relative c {
 	R2*3
 	
 	
-	ees2_\f-fz~
+	ees2~
 	ees~
 % Bars 256 to 260
 	ees8 r r4
@@ -288,7 +288,7 @@ musicFagottoIIMvtIV = \relative c {
 	
 	
 % Bars 266 to 270
-	cis!2_\f-fz~
+	cis!2~
 	cis
 	b\fz~
 	b
@@ -376,7 +376,7 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 346 to 350
 	d!2(\fz
 	ees4.) r8
-	e!2(_\fzcresc 
+	e!2( 
 	f4.) r8
 	g4-.\f r
 % Bars 351 to 355
@@ -399,7 +399,7 @@ musicFagottoIIMvtIV = \relative c {
 	a-. a-. a-. a-.
 % Bars 366 to 370
 	a-. a-. a-. a-.
-	a-._\crescmarkup a-. a-. a-.
+	a-. a-. a-. a-.
 	a-. a-. a-. a-.
 	a-. a-. a-. a-.
 	a-. a-. a-. a-.
@@ -482,7 +482,7 @@ musicFagottoIIMvtIV = \relative c {
 	f
 	f4-. f-.
 % Bars 441 to 445
-	f-._\crescpocoapoco f-.
+	f-. f-.
 	f2~
 	f
 	bes4-. bes-.
@@ -509,7 +509,7 @@ musicFagottoIIMvtIV = \relative c {
 	c2->
 	g4-. c-.
 	<< g2->\> {s8 s s s\!}>>
-	c4-.\p bes-._\dimmarkup
+	c4-.\p bes-.
 	c-. r
 % Bars 466 to 470
 	bes-. c-.
@@ -530,7 +530,7 @@ musicFagottoIIMvtIV = \relative c {
 	a~
 	a~
 % Bars 481 to 485
-	a~_\pocoapococresc
+	a~
 	a
 	g~
 	g~
@@ -568,12 +568,12 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 511 to 515
 	
 	
-	f,2_\fffz
+	f,2
 	g\fz
 	R2*2
 % Bars 516 to 520
 	
-	a2_\fffz
+	a2
 	bes\fz
 	R2*10
 % Bars 521 to 525
@@ -593,7 +593,7 @@ musicFagottoIIMvtIV = \relative c {
 	
 % Bars 541 to 545
 	bes!2\pp(~
-	<< bes~ {s4 s_\crescpocoapoco}>>
+	<< bes~ {s4 s}>>
 	bes4 a~
 	a2)
 	bes(~
@@ -616,7 +616,7 @@ musicFagottoIIMvtIV = \relative c {
 	a8.-. gis16 a4->\<
 	a-> a->\! \section
 % Bars 561 to 565
-	\key d \major d,2_\fsempre~
+	\key d \major d,2~
 	d
 	d~
 	d

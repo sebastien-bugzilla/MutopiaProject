@@ -1,7 +1,7 @@
     161     433    5234 10_DvorakSymph4_Conductor_mvt1.ly
     178     479    5811 10_DvorakSymph4_Conductor_mvt2.ly
     183     483    6067 10_DvorakSymph4_Conductor_mvt3.ly
-    157     475    5223 10_DvorakSymph4_Conductor_mvt4.ly
+    158     476    5262 10_DvorakSymph4_Conductor_mvt4.ly
     244     563    5215 20_DvorakSymph4_Part01_Flauti.ly
     244     563    5111 20_DvorakSymph4_Part02_Oboi.ly
     244     563    5423 20_DvorakSymph4_Part03_Clarinetti.ly
@@ -170,8 +170,10 @@
     695    1659    8126 04-Mvt4/m04_v05_music_ClarinettoI.ily
     713    1715    7963 04-Mvt4/m04_v06_music_ClarinettoII_C.ily
     713    1715    8171 04-Mvt4/m04_v06_music_ClarinettoII.ily
-    287     744    3181 04-Mvt4/m04_v07_music_FagottoI.ily
-    287     744    3182 04-Mvt4/m04_v08_music_FagottoII.ily
+    770    1891    9417 04-Mvt4/m04_v07_music_FagottoI_C.ily
+    770    1863    8991 04-Mvt4/m04_v07_music_FagottoI.ily
+    770    1866    8727 04-Mvt4/m04_v08_music_FagottoII_C.ily
+    770    1866    8956 04-Mvt4/m04_v08_music_FagottoII.ily
     287     744    3181 04-Mvt4/m04_v09_music_CornoI.ily
     287     744    3182 04-Mvt4/m04_v10_music_CornoII.ily
     287     744    3183 04-Mvt4/m04_v11_music_CornoIII.ily
@@ -188,4 +190,4 @@
     287     744    3184 04-Mvt4/m04_v27_music_Violoncello.ily
     287     744    3184 04-Mvt4/m04_v28_music_Contrabasso.ily
      83     244    1611 05-Midi/DvorakSymph4_Tempi.ily
-  57237  187768 1006761 total
+  59744  193767 1036528 total
