@@ -31,8 +31,8 @@
 \include "./04-Mvt4/m04_v06_music_ClarinettoII_C.ily"
 \include "./04-Mvt4/m04_v07_music_FagottoI_C.ily"
 \include "./04-Mvt4/m04_v08_music_FagottoII_C.ily"
-\include "./04-Mvt4/m04_v09_music_CornoI.ily"
-\include "./04-Mvt4/m04_v10_music_CornoII.ily"
+\include "./04-Mvt4/m04_v09_music_CornoI_C.ily"
+\include "./04-Mvt4/m04_v10_music_CornoII_C.ily"
 \include "./04-Mvt4/m04_v11_music_CornoIII.ily"
 \include "./04-Mvt4/m04_v12_music_CornoIV.ily"
 \include "./04-Mvt4/m04_v13_music_TrombeI.ily"
@@ -99,17 +99,18 @@
 %					\musicFagottoIIMvtIV 
 				}
 			>>
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
-%					\new Staff {
-%						\timeMvtIV \nameStaffVIMvtIV
-%						\partCombine \musicCornoIMvtIV \musicCornoIIMvtIV
-%					}
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
+					\new Staff {
+						\timeMvtIV \nameStaffVIMvtIV
+						\partCombine \musicCornoIMvtIV \musicCornoIIMvtIV
+%						\musicCornoIIMvtIV
+					}
 %					\new Staff {
 %						\timeMvtIV \nameStaffVIIMvtIV
 %						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
 %					}
-%				>>
+				>>
 %				\new Staff {
 %					\timeMvtIV \nameStaffVIIIMvtIV
 %					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
@@ -125,7 +126,7 @@
 %						\timeMvtIV \nameStaffXIMvtIV \musicTrombonoIIIMvtIV
 %					}
 %				>>
-%			>>
+			>>
 %			\new Staff {
 %				\timeMvtIV \nameStaffXIIMvtIV \musicTimpaniMvtIV
 %			}

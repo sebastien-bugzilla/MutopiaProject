@@ -45,6 +45,7 @@ mfespress = \markup {\dynamic mf \italic espress.}
 mfespressivo = \markup {\dynamic mf \italic espressivo}
 mfmarcato = \markup {\dynamic mf \italic marcato}
 mfbenmarc = \markup {\dynamic mf \italic "ben marc."}
+mfpocoapococresc = \markup {\dynamic mf \italic "poco a poco cresc."}
 %--------------------
 % dynamics fz
 %--------------------
@@ -151,6 +152,7 @@ simile = \markup {\italic simile}
 gp = \markup {G.P.}
 moltoespr = \markup {\italic "molto espr."}
 marcatissimo = \markup {\italic marcatissimo}
+pocomarcato = \markup {\italic "poco marcato"}
 %--------------------
 % instrument modification
 %--------------------
