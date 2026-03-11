@@ -170,12 +170,12 @@ musicFagottoIIMvtIV = \relative c {
 	a,!8-.\p a-. a-. a-.
 	a-. a-. a-. a-.
 	a-. a-. a-. a-.
-	a-._\crescmarkup a-. a-. a-.
+	a-._\crescmarkup a-. bes-. bes-.
 	a-. a-. a-. a-.
 % Bars 141 to 145
 	a-. a-. a-. a-.
 	a-. a-. a-. a-.
-	a-. a-. a-. a-.
+	a-. a-. bes-. bes-.
 	a-. a-. a-._\dimmarkup a-.
 	a-. a-. a-. a-.
 % Bars 146 to 150

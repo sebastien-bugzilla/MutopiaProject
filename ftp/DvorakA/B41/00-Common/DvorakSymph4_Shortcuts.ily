@@ -153,6 +153,7 @@ gp = \markup {G.P.}
 moltoespr = \markup {\italic "molto espr."}
 marcatissimo = \markup {\italic marcatissimo}
 pocomarcato = \markup {\italic "poco marcato"}
+stacc = \markup {\italic stacc.}
 %--------------------
 % instrument modification
 %--------------------

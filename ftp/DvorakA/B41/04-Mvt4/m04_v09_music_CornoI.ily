@@ -293,7 +293,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 286 to 290
 	e~
 	e
-	e2->\brack\f
+	e2->\f
 	e->
 	e->
 % Bars 291 to 295

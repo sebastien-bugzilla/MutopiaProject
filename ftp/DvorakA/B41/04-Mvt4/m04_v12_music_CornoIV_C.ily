@@ -9,7 +9,7 @@ musicCornoIVMvtIV = \relative c {
 	\key a \minor
 	\transposition a
 % Bars 1 to 5
-	f'4-.^\secco\f f-.
+	f'4-.\f f-.
 	e-. r
 	f-. f-.
 	e-. r
@@ -74,7 +74,7 @@ musicCornoIVMvtIV = \relative c {
 	
 % Bars 86 to 90
 	
-	d4-.\p^\stacc d-.
+	d4-.\p d-.
 	d-. r
 	R2*2
 	
@@ -89,7 +89,7 @@ musicCornoIVMvtIV = \relative c {
 	b'->\mf b->
 	b-> r
 	b-> b->
-	e,2_\crescmarkup
+	e,2
 % Bars 101 to 105
 	e4 e
 	e2
@@ -136,13 +136,13 @@ musicCornoIVMvtIV = \relative c {
 	e!8-.\p e-. e-. e-.
 	e-. e-. e-. e-.
 	e-. e-. e-. e-.
-	e-._\crescmarkup e-. f-. f-.
+	e-. e-. f-. f-.
 	e-. e-. e-. e-.
 % Bars 141 to 145
 	e-. e-. e-. e-.
 	e-. e-. e-. e-.
 	e-. e-. f-. f-.
-	e-. e-. e-._\dimmarkup e-.
+	e-. e-. e-. e-.
 	e-. e-. e-. e-.
 % Bars 146 to 150
 	e-. e-. e-. e-.
@@ -208,7 +208,7 @@ musicCornoIVMvtIV = \relative c {
 	R2*3
 	
 	
-	bes,2_\f-fz~
+	bes,2~
 	bes~
 % Bars 256 to 260
 	bes8 r r4
@@ -223,7 +223,7 @@ musicCornoIVMvtIV = \relative c {
 	
 	
 % Bars 266 to 270
-	gis'2_\f-fz~
+	gis'2~
 	gis
 	fis\fz~
 	fis
@@ -259,7 +259,7 @@ musicCornoIVMvtIV = \relative c {
 	b~
 	b
 % Bars 296 to 300
-	b_\f-fz
+	b
 	b\fz
 	b\fz
 	b\fz
@@ -268,7 +268,7 @@ musicCornoIVMvtIV = \relative c {
 	b~
 	b~
 	b
-	b_\f-fz
+	b
 	b\fz
 % Bars 306 to 310
 	b\fz
@@ -334,7 +334,7 @@ musicCornoIVMvtIV = \relative c {
 	e-. e-. e-. e-.
 % Bars 366 to 370
 	e-. e-. e-. e-.
-	e-._\crescmarkup e-. e-. e-.
+	e-. e-. e-. e-.
 	e-. e-. e-. e-.
 	e-. e-. e-. e-.
 	e-. e-. e-. e-.
@@ -377,7 +377,7 @@ musicCornoIVMvtIV = \relative c {
 % Bars 401 to 405
 	cis-> r
 	d-> d->
-	des2_\fzdim~
+	des2~
 	des~
 	des~
 % Bars 406 to 410
@@ -437,7 +437,7 @@ musicCornoIVMvtIV = \relative c {
 	d2~
 	d4 d-.
 % Bars 481 to 485
-	d2_\pocoapococresc~
+	d2~
 	d4 d-.
 	d2~
 	d4 d-.
@@ -475,14 +475,14 @@ musicCornoIVMvtIV = \relative c {
 % Bars 511 to 515
 	
 	
-	c,2_\fffz
+	c,2
 	d\fz
 	R2*2
 % Bars 516 to 520
 	
 	e2_\fffz
 	f\fz
-	g4->_\fcresc g->
+	g4-> g->
 	g-> g->
 % Bars 521 to 525
 	g-> g->
@@ -545,13 +545,13 @@ musicCornoIVMvtIV = \relative c {
 	e~
 	e
 % Bars 571 to 575
-	fis->(
+	\stemUp fis(
 	<< e)\< {s8 s s s\!}>>
-	d2\fz~
+	\stemDown d2\fz~
 	<< d\> {s8 s s s\!}>> 
-	fis2(->
+	fis2(
 % Bars 576 to 580
-	e)->
+	e)
 	cis2(\fz
 	d)
 	fis2~

@@ -33,8 +33,8 @@
 \include "./04-Mvt4/m04_v08_music_FagottoII_C.ily"
 \include "./04-Mvt4/m04_v09_music_CornoI_C.ily"
 \include "./04-Mvt4/m04_v10_music_CornoII_C.ily"
-\include "./04-Mvt4/m04_v11_music_CornoIII.ily"
-\include "./04-Mvt4/m04_v12_music_CornoIV.ily"
+\include "./04-Mvt4/m04_v11_music_CornoIII_C.ily"
+\include "./04-Mvt4/m04_v12_music_CornoIV_C.ily"
 \include "./04-Mvt4/m04_v13_music_TrombeI.ily"
 \include "./04-Mvt4/m04_v14_music_TrombeII.ily"
 \include "./04-Mvt4/m04_v15_music_TrombonoI.ily"
@@ -106,10 +106,11 @@
 						\partCombine \musicCornoIMvtIV \musicCornoIIMvtIV
 %						\musicCornoIIMvtIV
 					}
-%					\new Staff {
-%						\timeMvtIV \nameStaffVIIMvtIV
-%						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
-%					}
+					\new Staff {
+						\timeMvtIV \nameStaffVIIMvtIV
+						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
+%						\musicCornoIVMvtIV 
+					}
 				>>
 %				\new Staff {
 %					\timeMvtIV \nameStaffVIIIMvtIV
