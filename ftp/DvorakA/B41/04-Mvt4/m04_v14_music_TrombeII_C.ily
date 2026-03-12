@@ -156,7 +156,7 @@ musicTrombeIIMvtIV = \relative c {
 	R2*3
 	
 	
-	d2_\f-fz~
+	d2~
 	d~
 % Bars 256 to 260
 	d8 r r4
@@ -344,7 +344,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	g4->_\fcresc g->
+	g4-> g->
 	g-> g->
 % Bars 521 to 525
 	g-> g->

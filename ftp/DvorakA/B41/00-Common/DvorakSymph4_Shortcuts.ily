@@ -95,6 +95,7 @@ ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
 menoff = \markup {\italic meno \dynamic ff}
 ffmarcatiss = \markup {\dynamic ff \italic marcatiss.}
 brackfffz = \markup {\bracket \with-true-dimensions \dynamic ff \dynamic fz}
+fbrackf = \markup {\concat {\dynamic f \bracket \with-true-dimensions \dynamic f}}
 %--------------------
 % dynamics ffz
 %--------------------
