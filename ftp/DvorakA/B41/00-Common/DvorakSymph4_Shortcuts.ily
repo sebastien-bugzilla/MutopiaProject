@@ -64,6 +64,7 @@ fzmarcatobrackpocoapococresc = \markup {
 	}
 }
 f-fz = \markup {\concat {\dynamic f \hspace #0.4 \dynamic fz}}
+brackf-fz = \markup {\concat {\bracket \with-true-dimensions \dynamic f \hspace #0.4 \dynamic fz}}
 %--------------------
 % dynamics fp
 %--------------------
