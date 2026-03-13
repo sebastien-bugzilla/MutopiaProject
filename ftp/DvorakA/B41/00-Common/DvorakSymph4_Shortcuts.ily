@@ -19,6 +19,7 @@ ppcrescpoco = \markup {\dynamic pp \italic "cresc. poco"}
 pbrackp = \markup {\concat {\dynamic p \bracket \with-true-dimensions \dynamic p}}
 ppcrescpocoapoco = \markup {\dynamic pp \italic "cresc poco a poco"}
 pppocoapococresc = \markup {\dynamic pp \italic "poco a poco cresc."}
+ppsempre = \markup {\dynamic pp \italic sempre}
 %--------------------
 % dynamics p
 %--------------------
