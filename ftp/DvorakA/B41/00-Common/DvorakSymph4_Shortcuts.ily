@@ -20,6 +20,7 @@ pbrackp = \markup {\concat {\dynamic p \bracket \with-true-dimensions \dynamic p
 ppcrescpocoapoco = \markup {\dynamic pp \italic "cresc poco a poco"}
 pppocoapococresc = \markup {\dynamic pp \italic "poco a poco cresc."}
 ppsempre = \markup {\dynamic pp \italic sempre}
+ppmoltoespress = \markup {\dynamic pp \italic "molto espress."}
 %--------------------
 % dynamics p
 %--------------------
@@ -47,6 +48,7 @@ mfespressivo = \markup {\dynamic mf \italic espressivo}
 mfmarcato = \markup {\dynamic mf \italic marcato}
 mfbenmarc = \markup {\dynamic mf \italic "ben marc."}
 mfpocoapococresc = \markup {\dynamic mf \italic "poco a poco cresc."}
+mfbrackmarcato = \markup {\dynamic mf \bracket \with-true-dimensions \italic marcato}
 %--------------------
 % dynamics fz
 %--------------------
@@ -79,7 +81,8 @@ fppD = #(make-dynamic-script fpp)
 %--------------------
 % dynamics f
 %--------------------
-fcresc = \markup {\dynamic f \italic cresc.}
+fcresc = \markup {\dynamic f \normal-text \italic cresc.}
+fcrescD = #(make-dynamic-script fcresc)
 fbenmarc = \markup {\dynamic f \italic "ben marc."}
 fmoltoespress = \markup {\dynamic f \italic "molto espress."}
 fdolce = \markup {\dynamic f \italic dolce}
@@ -98,6 +101,7 @@ menoff = \markup {\italic meno \dynamic ff}
 ffmarcatiss = \markup {\dynamic ff \italic marcatiss.}
 brackfffz = \markup {\bracket \with-true-dimensions \dynamic ff \dynamic fz}
 fbrackf = \markup {\concat {\dynamic f \bracket \with-true-dimensions \dynamic f}}
+ffconforzaemoltomarcato = \markup {\dynamic ff \italic "con forza e molto marcato"}
 %--------------------
 % dynamics ffz
 %--------------------
@@ -129,6 +133,7 @@ brackpocoapococresc = \markup {
 		\bracket \with-true-dimensions "poco a poco" "cresc"
 	}
 }
+crescmolto = \markup {\italic "cresc. molto"}
 %--------------------
 % text indications
 %--------------------
@@ -157,6 +162,8 @@ moltoespr = \markup {\italic "molto espr."}
 marcatissimo = \markup {\italic marcatissimo}
 pocomarcato = \markup {\italic "poco marcato"}
 stacc = \markup {\italic stacc.}
+leg = \markup {\italic leg.}
+moltoespressivo = \markup {\italic "molto espressivo"}
 %--------------------
 % instrument modification
 %--------------------
@@ -258,6 +265,13 @@ liriii = {
 }
 
 flag = \once \override Flag.stroke-style = #"grace"
+
+flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
+	\concat { 
+		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
+	}
+}
+
 
 %noteShift = #(define-music-function
 %	(shift)
@@ -642,11 +656,6 @@ flag = \once \override Flag.stroke-style = #"grace"
 %naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 %	\concat { 
 %		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \natural 
-%	}
-%}
-%flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
 %	}
 %}
 %sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {

@@ -40,8 +40,11 @@ correctionsMvtIII = \markup {
 correctionsMvtIV = \markup {
 	
 	% bar 26, all
-	"The indication of bar numbers are shifted from bar 25 to the end of the score. The present edition correct this."
+	"The indication of bar numbers are shifted of one unit from bar 25 to the end of the score. Bar number 25, is in fact bar 26. The present edition correct this."
 	
 	% bar 648 (649), oboe I
 	"Bar 648 (649), for oboe I, the rhythm is corrected based on part score."
+	
+	% bar 130, Violin I
+	"Bar 129 (128), for violin I, a missing flat is added on the a."
 }
