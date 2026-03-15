@@ -45,6 +45,9 @@ correctionsMvtIV = \markup {
 	% bar 648 (649), oboe I
 	"Bar 648 (649), for oboe I, the rhythm is corrected based on part score."
 	
-	% bar 130, Violin I
+	% bar 129, Violin I
 	"Bar 129 (128), for violin I, a missing flat is added on the a."
+	
+	% bar 634, violin II
+	"Bar 634 (633), for violin II, last three notes cis d e are replace by d e fis based on all other strings."
 }

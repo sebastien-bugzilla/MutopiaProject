@@ -102,6 +102,7 @@ ffmarcatiss = \markup {\dynamic ff \italic marcatiss.}
 brackfffz = \markup {\bracket \with-true-dimensions \dynamic ff \dynamic fz}
 fbrackf = \markup {\concat {\dynamic f \bracket \with-true-dimensions \dynamic f}}
 ffconforzaemoltomarcato = \markup {\dynamic ff \italic "con forza e molto marcato"}
+ffconforzaemoltomarc = \markup {\dynamic ff \italic "con forza e molto marc."}
 %--------------------
 % dynamics ffz
 %--------------------
@@ -134,6 +135,7 @@ brackpocoapococresc = \markup {
 	}
 }
 crescmolto = \markup {\italic "cresc. molto"}
+dimsempre = \markup {\italic "dim. sempre"}
 %--------------------
 % text indications
 %--------------------
@@ -164,6 +166,8 @@ pocomarcato = \markup {\italic "poco marcato"}
 stacc = \markup {\italic stacc.}
 leg = \markup {\italic leg.}
 moltoespressivo = \markup {\italic "molto espressivo"}
+nonlegato = \markup {\italic "non legato"}
+legato = \markup {\italic legato}
 %--------------------
 % instrument modification
 %--------------------
@@ -179,6 +183,12 @@ mutaincg = \markup {"muta in C, G"}
 mutainda = \markup {"muta in D, A"}
 
 markk = \mark #11
+
+prallsharp = \markup {
+	\combine 
+		\translate #'(0.7 . 0) \musicglyph "scripts.prall" 
+		\translate #'(0.2 . 0.7) \text-sharp
+}
 
 %--------------------
 % functions

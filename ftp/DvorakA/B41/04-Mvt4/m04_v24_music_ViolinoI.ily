@@ -239,7 +239,7 @@ musicViolinoIMvtIV = \relative c {
 	fis4 e)\!
 	d2(~\p
 	d8[\< cis] \tuplet 3/2 4 {d e fis)\!}
-	<< fis2(~\fz {s4 s\<}>>
+	<< fis2(~\fz {s4 s\>}>>
 	fis4 e)\!
 % Bars 216 to 220
 	d2(~_\crescmarkup
