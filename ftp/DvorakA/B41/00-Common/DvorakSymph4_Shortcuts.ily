@@ -21,6 +21,7 @@ ppcrescpocoapoco = \markup {\dynamic pp \italic "cresc poco a poco"}
 pppocoapococresc = \markup {\dynamic pp \italic "poco a poco cresc."}
 ppsempre = \markup {\dynamic pp \italic sempre}
 ppmoltoespress = \markup {\dynamic pp \italic "molto espress."}
+ppsecco = \markup {\dynamic pp \italic "secco"}
 %--------------------
 % dynamics p
 %--------------------
@@ -168,6 +169,7 @@ leg = \markup {\italic leg.}
 moltoespressivo = \markup {\italic "molto espressivo"}
 nonlegato = \markup {\italic "non legato"}
 legato = \markup {\italic legato}
+semprestaccato = \markup {\italic "sempre staccato"}
 %--------------------
 % instrument modification
 %--------------------
@@ -188,6 +190,11 @@ prallsharp = \markup {
 	\combine 
 		\translate #'(0.7 . 0) \musicglyph "scripts.prall" 
 		\translate #'(0.2 . 0.7) \text-sharp
+}
+prallnatural = \markup {
+	\combine 
+		\translate #'(0.7 . 0) \musicglyph "scripts.prall" 
+		\translate #'(0.2 . 0.8) \text-natural
 }
 
 %--------------------
@@ -282,6 +289,17 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	}
 }
 
+subdiviseBeam = {
+	\set Timing.beatBase = #1/4
+	\set Timing.beamExceptions = #'()
+}
+unSubdiviseBeam = {
+	\set Timing.beatBase = #1/4
+	\set Timing.beamExceptions = \beamExceptions {
+		8[ 8 8 8] |
+		16[ 16 16 16] 16[ 16 16 16] |
+	}
+}
 
 %noteShift = #(define-music-function
 %	(shift)
