@@ -298,12 +298,12 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 }
 
 subdiviseBeam = {
-	\set Timing.beatBase = #1/4
-	\set Timing.beamExceptions = #'()
+	\set Voice.beatBase = #1/4
+	\set Voice.beamExceptions = #'()
 }
 unSubdiviseBeam = {
-	\set Timing.beatBase = #1/4
-	\set Timing.beamExceptions = \beamExceptions {
+	\set Voice.beatBase = #1/4
+	\set Voice.beamExceptions = \beamExceptions {
 		8[ 8 8 8] |
 		16[ 16 16 16] 16[ 16 16 16] |
 	}

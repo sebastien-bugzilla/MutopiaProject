@@ -349,7 +349,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	a4..-> g16
 	bes2->
 	c4->\f c->
-	c8. b16 d4---^
+	c8. b16 c4---^
 % Bars 521 to 525
 	c-> c->
 	c8. b16 c4---^

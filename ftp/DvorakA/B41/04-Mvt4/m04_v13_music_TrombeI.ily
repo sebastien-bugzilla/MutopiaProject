@@ -194,7 +194,7 @@ musicTrombeIMvtIV = \relative c {
 	
 	e2->_\fbrackf
 	e->
-	e4..-> d16-.
+	e4..-> dis16-.
 	g4..-> fis16-.
 % Bars 296 to 300
 	e4-. r

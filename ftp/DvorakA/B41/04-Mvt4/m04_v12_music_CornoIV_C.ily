@@ -7,7 +7,7 @@
 musicCornoIVMvtIV = \relative c {
 	\clef treble
 	\key a \minor
-	\transposition a
+	\transposition f
 % Bars 1 to 5
 	f'4-.\f f-.
 	e-. r
@@ -16,8 +16,8 @@ musicCornoIVMvtIV = \relative c {
 	f-. f-.
 % Bars 6 to 10
 	e-. r
-	ees-. ees-. 
-	d-. r
+	f-. f-. 
+	e-. r
 	ees-. ees-.
 	d-. r
 % Bars 11 to 15
