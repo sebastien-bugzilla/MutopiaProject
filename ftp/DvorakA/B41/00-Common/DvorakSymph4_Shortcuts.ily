@@ -23,6 +23,7 @@ ppsempre = \markup {\dynamic pp \italic sempre}
 ppmoltoespress = \markup {\dynamic pp \italic "molto espress."}
 ppsecco = \markup {\dynamic pp \italic secco}
 ppsemprestaccato = \markup {\dynamic pp \italic "sempre staccato"}
+ppsempresecco = \markup {\dynamic pp \italic "sempre secco"}
 %--------------------
 % dynamics p
 %--------------------
@@ -143,6 +144,7 @@ brackpocoapococresc = \markup {
 }
 crescmolto = \markup {\italic "cresc. molto"}
 dimsempre = \markup {\italic "dim. sempre"}
+moltodim = \markup {\italic "molto dim."}
 %--------------------
 % text indications
 %--------------------
