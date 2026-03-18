@@ -417,12 +417,12 @@ musicVioloncelloMvtI = \relative c {
 	g-> e-> cis-> bes-> g-> r
 	a'4\f r r
 	r r r8. a,32(\< b\!
-	cis4\ffzD) r r
+	cis4\ffz) r r
 % Bars 336 to 340
 	r r r8. cis32( b
 	a4)\fz r r
 	r r r8. a32(\< b\!
-	cis4\ffzD) r r
+	cis4\ffz) r r
 	r r r8. cis32( b \mark \default
 % Bars 341 to 345
 	a2.\fp\>

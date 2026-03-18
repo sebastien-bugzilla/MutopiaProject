@@ -21,6 +21,7 @@
 		\override TrillSpanner.bound-details.right.padding = #1
 		\override Arpeggio.padding = #0.25
 		\override TupletNumber.avoid-slur = #'ignore
+		\override DynamicTextSpanner.font-size = #0
 		
 %		\override NoteHead.transparent = ##t
 %		\override Stem.transparent = ##t

@@ -113,7 +113,7 @@ musicFagottoIIMvtII = \relative c {
 % Bars 86 to 90
 	r4 e->\f f-> bes->
 	bes16 bes bes bes  bes\< bes bes bes  bes bes bes bes  bes bes bes b\!
-	c8\ffzD r r4 r2
+	c8\ffz r r4 r2
 	c,,8-.-^\f b-.-^ bes-.-^ r r2
 	c'8-.\p b-. bes-. r r2
 % Bars 91 to 95

@@ -97,7 +97,7 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 86 to 90
 	r4 fis->\f g-> c->
 	c16 c c c  c\< c c c  c c c c  c c c cis\!
-	d8\ffzD r r4 r2
+	d8\ffz r r4 r2
 	R1
 	R1*4
 % Bars 91 to 95

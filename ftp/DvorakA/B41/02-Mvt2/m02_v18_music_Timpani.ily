@@ -45,7 +45,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 66 to 70
 	
 	
-	f'1:32->\fppD
+	f'1:32->\fpp
 	<< f:\> {s4 s s s8 s\!}>>
 	<< f1:\> {s4 s s s8 s\!}>> \mark \default
 % Bars 71 to 75
