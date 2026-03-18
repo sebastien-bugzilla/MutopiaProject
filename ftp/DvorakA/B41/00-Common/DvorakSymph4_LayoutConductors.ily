@@ -24,6 +24,7 @@
 		\override TrillSpanner.bound-details.right.attach-dir = 1
 		\override DynamicTextSpanner.font-size = #0
 		
+		
 %		\override NoteHead.transparent = ##t
 %		\override Stem.transparent = ##t
 %		\override Beam.transparent = ##t
@@ -74,6 +75,13 @@
 		
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
+
+		% !!! for dynamic check only !!!
+		\override DynamicText.color = #red
+		\override Hairpin.color = #red
+		\override TextScript.color = #red
+		% end dynamic check
+
 	}
 }
 

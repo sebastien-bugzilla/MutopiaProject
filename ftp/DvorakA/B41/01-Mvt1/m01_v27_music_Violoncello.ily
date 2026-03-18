@@ -38,7 +38,7 @@ musicVioloncelloMvtI = \relative c {
 		e\fz cis e cis) cis( e cis e g\fz e g e)
 		cis( e cis e bes g bes g \clef bass \tuplet 5/4 4 {e g e cis bes)}
 		a->(\< e' f e) bes'(-> a bes a)\! r4
-		r4 r8 bes16(\> a) a( cis e a)\! \mark \default
+		r4 r8 bes16(\< a) a( cis e a)\! \mark \default
 % Bars 26 to 30
 		d,,4..->\ff f32( a d8) r
 		e,4..-> g32( bes e8) r
@@ -476,7 +476,7 @@ musicVioloncelloMvtI = \relative c {
 	c8. f16 f4 r
 	f2~ f8 c-.
 	c8. f16 f4 r
-	f'2-^\f c8.-> f16-.
+	f'2-^\fz c8.-> f16-.
 	e!2(\fz des8) r
 % Bars 386 to 390
 	g4..->\fz e16[ des8. bes16]

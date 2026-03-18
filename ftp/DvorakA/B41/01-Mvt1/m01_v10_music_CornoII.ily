@@ -20,7 +20,7 @@ musicCornoIIMvtI = \relative c {
 		e2~ e8 r
 		R2.
 		c'2~_\crescmarkup c8 e,-.
-		e8.\< c'16 c4 a8. c16
+		e8.\< c'16 c4 a8. c16\!
 % Bars 11 to 15
 		b4.\fz a8->\< b-> b->\!
 		g4->\f\< a-> b->\!

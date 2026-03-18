@@ -130,7 +130,7 @@ musicFagottoIMvtI = \relative c {
 		a->\fz
 		a->\fz
 % Bars 106 to 110
-		\partCombineApart gis'\fz\>~
+		\partCombineApart gis'\>~
 		<< gis {s4 s\! s}>> \partCombineAutomatic \clef tenor
 		e2\fp~ e8\> b!-.
 		b8. e16 e4-.\! r4 \clef bass
@@ -141,7 +141,7 @@ musicFagottoIMvtI = \relative c {
 		gis
 		\alternative {
 			\volta 1 {
-				\once \partCombineApart a4\brack\p r r
+				\once \partCombineApart a4 r r
 				R2.*6
 % Bars 116 to 120
 				

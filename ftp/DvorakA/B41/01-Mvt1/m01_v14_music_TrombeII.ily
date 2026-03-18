@@ -48,7 +48,7 @@ musicTrombeIIMvtI = \relative c {
 		e8-. r r4 dis8-.\fz r
 		e-. r r4 dis8-.\fz r
 		e-. r e4-.\> cis-.\!
-		r b-._\dimmarkup b-.
+		r b-._\brackM\dimmarkup b-.
 % Bars 41 to 45
 		e8-. r r4 r
 		R2.*46
@@ -168,7 +168,7 @@ musicTrombeIIMvtI = \relative c {
 % Bars 191 to 195
 	des2 r4
 	des2.\fz
-	des->\<
+	des->\>
 	des->
 	<< des->~ {s4 s s\!}>>
 % Bars 196 to 200

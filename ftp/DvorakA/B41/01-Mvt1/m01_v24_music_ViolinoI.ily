@@ -286,7 +286,7 @@ musicViolinoIMvtI = \relative c {
 	R2.*2
 	
 % Bars 231 to 235
-	r4 e''4.(-> dis8-.)
+	r4 e''4.(\fz-> dis8-.)
 	e( f e d! c b)
 	a4( c4.\< d8)\!
 	e2->( b4)
@@ -377,7 +377,7 @@ musicViolinoIMvtI = \relative c {
 	f!-^ r f-^
 % Bars 306 to 310
 	r f-^ r
-	f4..->\fz d16[( aes8. f16])
+	f4..->\ff d16[( aes8. f16])
 	f'4..->\fz d16[( aes8. f16])
 	f'4..->\fz d16[( aes8. f16])
 	f'2->\ff c8.-> f16-.
@@ -478,7 +478,7 @@ musicViolinoIMvtI = \relative c {
 	r f-^ r
 	r gis-^ r
 % Bars 391 to 395
-	a,,,8(\ff\< bes! cis d e f
+	a,,,8(\ff\> bes! cis d e f
 	g e d\! cis\p bes a)
 	R2.*2
 	
@@ -499,7 +499,7 @@ musicViolinoIMvtI = \relative c {
 	cis2( bes8) r
 	R2.*2
 	
-	cis2(\p bes8. cis16-.)
+	cis2(\pp bes8. cis16-.)
 	cis2( bes8) r
 % Bars 411 to 415
 	R2.*4

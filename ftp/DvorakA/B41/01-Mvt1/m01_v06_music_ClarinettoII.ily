@@ -234,8 +234,8 @@ musicClarinettoIIMvtI = \relative c {
 	ees~
 % Bars 191 to 195
 	ees~
-	ees~
 	ees~\>
+	ees~
 	ees~
 	<< ees~ {s4 s s\!}>>
 % Bars 196 to 200

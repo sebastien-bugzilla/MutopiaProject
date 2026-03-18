@@ -215,7 +215,7 @@ musicOboeIMvtI = \relative c {
 	ais2->\f~ ais8 fis-.
 	fis8.-> ais16 ais4-. r
 % Bars 186 to 190
-	ais2->~ ais8 fis-.
+	ais2->\fz~ ais8 fis-.
 	fis8.-> ais16 ais4-. r
 	ais2.\ff~
 	ais~
@@ -385,7 +385,7 @@ musicOboeIMvtI = \relative c {
 	gis8. cis16 cis4-. r \partCombineAutomatic
 	R2.*2
 	
-	\partCombineApart cis2\ff~ cis8 gis-.
+	\partCombineApart cis2~ cis8 gis-.
 	gis8. cis16 cis4-. r \partCombineAutomatic \mark \default
 % Bars 341 to 345
 	R2.*8

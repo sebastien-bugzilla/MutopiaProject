@@ -215,7 +215,7 @@ musicOboeIIMvtI = \relative c {
 	ais,2->\f~ ais8 fis-.
 	fis8.-> ais16 ais4-. r
 % Bars 186 to 190
-	ais2->~ ais8 fis-.
+	ais2->\fz~ ais8 fis-.
 	fis8.-> ais16 ais4-. r
 	fis'2.\ff~
 	fis~

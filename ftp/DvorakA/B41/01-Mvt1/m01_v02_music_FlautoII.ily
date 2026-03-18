@@ -126,7 +126,7 @@ musicFlautoIIMvtI = \relative c {
 	e8. gis16 gis4-.\! r
 	R2.*4
 % Bars 136 to 140
-	cis2->~ cis8 ais-.
+	cis2->\ff~ cis8 ais-.
 	ais8.-> cis16 cis4-. r
 	cis2->~ cis8 ais-.
 	ais8.-> cis16 cis4-. r
@@ -142,9 +142,9 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	
-	b2->\fz~ b8\> fis-.\!
+	b2->\fz~ b8\> fis-.
 % Bars 151 to 155
-	fis8.\> b16 b4-.\! r
+	fis8. b16 b4-.\! r
 	bes!2\fz->~ bes8\> ges!-.
 	ges!8. bes16 bes4-.\! r
 	R2.*4

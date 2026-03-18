@@ -205,7 +205,7 @@ musicViolaMvtI = \relative c {
 	<g! b>:\fz
 	<fis b>8 r <fis' b>\brack\fz\>^\pizz r <dis fis!> r
 % Bars 151 to 155
-	<b dis> r <fis b!> r <dis fis!>\! r
+	<b dis>^\dimmarkup r <fis b!> r <dis fis!>\! r
 	r4 <ges' bes!>8\fz\> r <ees ges!> r
 	<bes ees> r <ges bes> r <ees ges>\! r
 	a!(\f\<^\arco f! a f a f\!

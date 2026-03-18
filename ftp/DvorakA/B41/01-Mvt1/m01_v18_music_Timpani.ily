@@ -18,8 +18,8 @@ musicTimpaniMvtI = \relative c {
 % Bars 6 to 10
 		d:
 		d:_\crescmarkup
-		<< d: {s4 s s8 s\!}>>
-		d2.:\<
+		d:\<
+		d2.:
 		<< d: {s4 s s8 s\!}>>
 % Bars 11 to 15
 		a4\f r r

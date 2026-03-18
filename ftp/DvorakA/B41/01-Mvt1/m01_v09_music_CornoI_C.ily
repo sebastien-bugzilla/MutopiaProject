@@ -20,7 +20,7 @@ musicCornoIMvtI = \relative c {
 		e2~ e8 r
 		R2.
 		e2~_\crescmarkup e8 c-.
-		c8.\< e16 e4 c8. e16
+		c8.\< e16 e4 c8. e16\!
 % Bars 11 to 15
 		g4.\fz f8->\< e-> d->\!
 		c4->\f\< d-> d->\!
@@ -105,7 +105,7 @@ musicCornoIMvtI = \relative c {
 		c2 c4
 		c2.
 		\partCombineApart d4(-> c2)
-		<< f2.->~ {s8\> s s\! s4. }>>
+		<< f2.->~ {s8 s s s4. }>>
 		f2. \partCombineAutomatic
 % Bars 96 to 100
 		f2.~

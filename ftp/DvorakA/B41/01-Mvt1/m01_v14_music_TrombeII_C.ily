@@ -168,7 +168,7 @@ musicTrombeIIMvtI = \relative c {
 % Bars 191 to 195
 	des2 r4
 	des2.\fz
-	des->\<
+	des->\>
 	des->
 	<< des->~ {s4 s s\!}>>
 % Bars 196 to 200
