@@ -10,7 +10,7 @@ musicTrombonoIIIMvtII = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	bes2\pp f4 r8 f
-	bes4(\< ees) <<ees,2(\> {s8 s s\! s\>}>>
+	bes4(\< ees) <<ees,2( {s8 s s\! s\>}>>
 	aes4)\! ges2 ges4(
 	f4) d!2\< d4
 	ees!\! ees2\>~ ees8 c'\!

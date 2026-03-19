@@ -54,7 +54,7 @@ musicFagottoIMvtII = \relative c {
 	f4(\pp g2.
 	c4 bes2.)
 	a4(\< a2 c4)\!
-	b(\fz\> c2) c8( e)\!
+	b(\fz\> c2) c8( ees)\!
 	d2.~_\dimmarkup d8\pp r
 % Bars 41 to 45
 	R1*3

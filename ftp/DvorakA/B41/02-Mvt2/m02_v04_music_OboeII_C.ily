@@ -30,7 +30,7 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	r4 r g''2_\ppcresc~
-	<< g1\< {s4 s s s8 s\!}>>
+	<< g1\crescD\< {s4 s s s8 s\!}>>
 	<< g1\mf\< {s4 s s8 s\! s4\>}>>
 % Bars 31 to 35
 	<< g2. {s4 s\pp\> s}>> aes\!(

@@ -55,7 +55,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 56 to 60
 	fis g8 g_\dimmarkup g g16~ g g8 g16( c bes a! g~
 	g)\p f8 f f f16~ f f8 f16( bes a g f~
-	f) ees8 ees ees ees16~ ees\pp ees8 ees16(~ ees d f ees
+	f) ees8 ees ees ees16~ ees\pp ees8 ees16(~ ees d f ees 
 	d)\< c8 c c c16\!~ c_\crescmarkup bes8 bes bes a16~
 	a\< a8 a a a16~ a bes8 bes\! d\> d16\!~
 % Bars 61 to 65
@@ -132,7 +132,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 126 to 130
 	ges2(\crescD\< f4 ees)\!
 	<< des2.\f(~ {s4 s s\>}>> des8._\dimmarkup ces16)\!
-	bes2.\pp a!8.(\<_\crescmarkup bes16)\!
+	bes2.\p a!8.(\<_\crescmarkup bes16)\!
 	bes4(\< d!\! f4.\> a,8)\!
 	bes4\p r r2
 % Bars 131 to 135

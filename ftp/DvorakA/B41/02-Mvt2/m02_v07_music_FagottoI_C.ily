@@ -54,7 +54,7 @@ musicFagottoIMvtII = \relative c {
 	f4(\pp g2.
 	c4 bes2.)
 	a4(\< a2 c4)\!
-	\partCombineApart b( c2) \stemDown \omitBeam c8( e)
+	\partCombineApart b( c2) \stemDown \omitBeam c8( ees)
 	d2.~_\dimmarkup \omitFlag d8 \partCombineAutomatic r
 % Bars 41 to 45
 	R1*3
@@ -155,7 +155,7 @@ musicFagottoIMvtII = \relative c {
 % Bars 121 to 125
 	R1
 	\partCombineApart \mmrPos #10 R
-	f2. c8.(-\crescmarkup d16)
+	f2.\pp c8.(-\crescmarkup d16)
 	<< ees2.( {s4 s s}>> \tuplet 3/2 4 {\stemDown \omitBeam \omitTupletNumber ees8 f ges}
 	f) \partCombineAutomatic r r4 r2
 % Bars 126 to 130

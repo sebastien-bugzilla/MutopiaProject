@@ -162,7 +162,7 @@ musicCornoIMvtII = \relative c {
 	c)\! r r2
 	R1*2
 	
-	\tuplet 3/2 4 {r8 c(-- b!--} d4 c8) r r4
+	\tuplet 3/2 4 {r8 c(--\pp b!--} d4 c8) r r4
 % Bars 136 to 140
 	R1*4
 	

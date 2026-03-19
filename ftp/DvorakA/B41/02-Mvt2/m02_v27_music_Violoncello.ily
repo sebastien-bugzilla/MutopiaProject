@@ -51,7 +51,7 @@ musicVioloncelloMvtII = \relative c {
 		aes2(\pp g)
 % Bars 26 to 30
 		<< g2\< {s8 s s s\!}>> bes4(\> \tuplet 3/2 4 {a!8 bes c)\!}
-		<< bes1\pdimD\< {s4 s s s8 s\!}>>
+		<< bes1\pdimD\> {s4 s s s8 s\!}>>
 		<< g1\pp\<~ {s4 s s s8 s\!}>>
 		g1_\crescmarkup
 		g2\mf c4.(\< b8)\>
@@ -61,7 +61,7 @@ musicVioloncelloMvtII = \relative c {
 		<< d1 {s4 s_\crescmarkup s s8\> s\!}>>
 		c4( d_\dimmarkup ees!2)
 	} >> \mark \default
-	bes4(_\mpespress^\unis a aes) r8 aes(\<
+	bes4(_\mpespress^\unis^\tranquillo a aes) r8 aes(\<
 % Bars 36 to 40
 	des4\! c2) \tuplet 3/2 4 {bes8( c des}
 	c4) ees2( bes8. c16
@@ -269,7 +269,7 @@ musicVioloncelloDivisiMvtII = \relative c {
 	bes,[ f'] bes,\< aes' bes,[ g'!] bes, bes'\!
 	bes,[ a'!] bes, a' bes,[_\dimmarkup f'] bes, f'
 % Bars 76 to 80
-	bes,16[\pp r bes r bes r bes] r bes[ r bes_\crescmarkup r bes r bes] r
+	bes,16[\pp^\arco r bes r bes r bes] r bes[ r bes_\crescmarkup r bes r bes] r
 	bes[\< r bes r bes r bes] r bes[ r bes]\! r g'32(\f\> f) f( ees) ees( d) d( c)\!
 	s1*16
 % Bars 81 to 85
