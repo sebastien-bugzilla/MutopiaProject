@@ -32,7 +32,7 @@ musicClarinettoIMvtIII = \relative c {
 	r2 r4 r2 e,4-^\fz
 	f1.\mf-^~
 	f2 g4-. aes-. g-. f-.
-	<< ees1.(-> {s4 s s s s s\!}>>
+	<< ees1.(->\> {s4 s s s s s\!}>>
 	c2.) r2 r8 c->
 % Bars 26 to 30
 	<< c1.\fz~ {s4 s s\> s s s}>>
@@ -42,7 +42,7 @@ musicClarinettoIMvtIII = \relative c {
 	<< f1.\fz\>~ {s4 s s s s s\!}>>
 % Bars 31 to 35
 	f2 g4-. aes-. g-. f-.
-	<< ees1.->( {s4 s s s s s\!}>>
+	<< ees1.->(\> {s4 s s s s s\!}>>
 	\afterGrace 99/100 c1.)  {\flag c8(}
 	ees1.)\fz\>~
 	ees2 f4-> g-> f-> d->\!
@@ -311,7 +311,7 @@ musicClarinettoIMvtIII = \relative c {
 	r2 r4 r2 e,4-^\fz
 	f1.-^\mf~
 	f2 g4-. aes-. g-. f-.
-	<< ees1.->( {s4 s s s s s\!}>>
+	<< ees1.->(\> {s4 s s s s s\!}>>
 	c2.) r2 r8 c->
 % Bars 291 to 295
 	<< c1.\fz~ {s4 s s s\> s s}>>
@@ -321,7 +321,7 @@ musicClarinettoIMvtIII = \relative c {
 	<< f1.\fz\>~ {s4 s s s s s\!}>>
 % Bars 296 to 300
 	f2 g4-. aes-. g-. f-.
-	<< ees1.(-> {s4 s s s s s\!}>>
+	<< ees1.(->\> {s4 s s s s s\!}>>
 	\afterGrace 99/100 c1.) {\flag c8(}
 	ees1.)\fz\>~
 	ees2 f4-> g-> f-> d->\!

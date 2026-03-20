@@ -199,8 +199,8 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 201 to 205
 	fis4-> fis->
 	fis-> g->
-	b4\f\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
-	b4\f\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
+	b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
+	b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
 	b4-> c->
 % Bars 206 to 210
 	b-> g16-.\< g32( a b c d e)\!

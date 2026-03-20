@@ -216,8 +216,8 @@ musicCornoIIMvtIII = \relative c {
 	c4-> e->
 	d-> c->
 % Bars 211 to 215
-	b4\fz\startTrillSpan~ b8[\stopTrillSpan r16 ais-.]
-	b4\fz\startTrillSpan~ b8[\stopTrillSpan r16 ais-.]
+	b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 ais-.]
+	b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 ais-.]
 	b4-> d->
 	c-> b->
 	a4.\fz r8

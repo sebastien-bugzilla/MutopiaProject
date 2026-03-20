@@ -69,7 +69,7 @@ musicViolinoIMvtIII = \relative c {
 	gis->_\crescmarkup b-> c-> cis( d) ais->-.
 	b-> d-> e-> e( f) d-.
 	g( aes) f-. ais( b) gis-.
-	a!4\f a2->~ a4_\crescmarkup bes!2->~
+	a!4\f a2->~\p a4_\crescmarkup bes!2->~
 % Bars 71 to 75
 	bes4 b2->~ b4 bes2->~
 	bes4 a2->~ a4 bes2->~

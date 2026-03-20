@@ -27,7 +27,7 @@ musicOboeIIMvtIII = \relative c {
 	fis( g) r a( bes) r
 	a( bes)\! r a(\f bes) r
 % Bars 16 to 20
-	a,2 bes4~ bes2 b4~
+	a,2\p bes4~ bes2 b4~
 	b2_\pocoapococresc bes4~ bes2 a4~
 	a2 bes!4~ bes2 b4~
 	b2 bes4~ bes2 a4~

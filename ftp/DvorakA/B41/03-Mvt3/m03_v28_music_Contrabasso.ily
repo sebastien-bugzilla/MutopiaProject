@@ -95,7 +95,7 @@ musicContrabassoMvtIII = \relative c {
 	a2 r4 a2 r4 
 	a2 r4 a2 r4 \section
 % Bars 76 to 80
-	\key d \major d4\ff^\pizz r r r2 r4
+	\key d \major d4\ff r r r2 r4
 	d'2-> r4 r2 r8 d,-.
 	a2-> r4 r2 r4
 	a'2-> r4 r2 r8 a,-.

@@ -18,7 +18,7 @@ musicViolinoIIMvtIII = \relative c {
 	R1.
 	r2 des4-.\f des( f) a,!-.
 	bes-. r c-. des( f) a,-.
-	bes!->\pcrescD\< des-> e!-> e( f) c-.
+	bes!-> des->\pcrescD\< e!-> e( f) c-.
 	des-> f-> a-> a( bes) e,-.
 % Bars 11 to 15
 	f-> bes-> c-> c( des)\! cis,-.\p
@@ -28,7 +28,7 @@ musicViolinoIIMvtIII = \relative c {
 	a( bes) gis-. a( bes) gis-.
 % Bars 16 to 20
 	r e,8(\p g cis4) r e,8( g cis4)
-	r e,8( g cis4) r e,8(_\crescmarkup g cis4)
+	r e,8( g cis4) r_\crescmarkup e,8( g cis4)
 	r e,8( g cis4) r e,8( g cis4)
 	r e,8( g cis4) r e,8( g cis4)
 	r e,8( g cis4) r e,8( g cis4)
@@ -208,7 +208,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 181 to 185
 	\tuplet 3/2 4 {d8 cis d)} d4(~
 	\tuplet 3/2 4 {d8\< cis d) f( e f)\!} \mark \default
-	g,8_\fzmarcatobrackpocoapococresc f->[ a-> g->]
+	g,8_\fzmarcatobrackpocoapococresc f->[^\mf a-> g->]
 	f[-> c'-> b-> a]->
 	e'[-> d-> c-> a']->
 % Bars 186 to 190
@@ -298,7 +298,7 @@ musicViolinoIIMvtIII = \relative c {
 	e( f) d-.\! e(_\crescmarkup f) d-.
 	e( f) d-. g( aes) f-.} \section
 % Bars 266 to 270
-	\time 6/4 \key d \minor <e, cis' a'>4-^ r d-. cis( e) a,-.
+	\time 6/4 \key d \minor <e, cis' a'>4-^\ff r d-. cis( e) a,-.
 	bes-> r r r2 r4
 	R1.
 	<e cis' a'>4-^ r d-. cis( e) a,-.

@@ -165,7 +165,7 @@ musicTrombonoIMvtIII = \relative c {
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	r4 c->\ff
+	r4 c->\f
 	r c->
 	r c->
 	r c->
