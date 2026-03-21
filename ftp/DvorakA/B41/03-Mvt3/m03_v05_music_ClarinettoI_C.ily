@@ -238,8 +238,8 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 201 to 205
 	d4-> ees->
 	d-> bes->
-	f'4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 ees]
-	f4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 ees]
+	f'4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 ees-.]
+	f4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 ees-.]
 	f4-> g->
 % Bars 206 to 210
 	f-> d16-.\< d32( ees f g aes bes)\!

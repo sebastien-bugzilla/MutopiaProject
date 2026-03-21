@@ -294,7 +294,7 @@ musicTrombonoIIMvtIII = \relative c {
 	e~\<
 	<< e_\molto {s4 s s s s s\!}>> \section
 % Bars 341 to 345
-	\time 2/4 \key d \major a4._\fffz r16 a-.
+	\time 2/4 \key d \major a4._\fffz-> r16 a-.
 	a4.->\fz r16 a-.
 	a4-> a->
 	g-> fis->

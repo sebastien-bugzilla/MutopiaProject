@@ -357,7 +357,7 @@ musicContrabassoMvtIII = \relative c {
 	ees->\fz r r r2 r4
 	r2 aes4-.\< aes( ces) ees,-.\!
 % Bars 331 to 335
-	e!->\p r r r2 r4
+	e!\p r r r2 r4
 	R1.*3
 	
 	

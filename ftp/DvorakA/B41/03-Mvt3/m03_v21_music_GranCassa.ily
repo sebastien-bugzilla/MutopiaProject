@@ -123,7 +123,7 @@ musicGranCassaMvtIII = \relative c {
 % Bars 181 to 185
 	e r
 	e e \mark \default
-	e8-> r r4
+	e8 r r4
 	R2*7
 % Bars 186 to 190
 	

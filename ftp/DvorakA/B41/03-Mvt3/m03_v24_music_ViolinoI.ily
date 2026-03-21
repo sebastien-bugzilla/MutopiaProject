@@ -337,7 +337,7 @@ musicViolinoIMvtIII = \relative c {
 	\time 6/4 \key d \minor <e,, cis' a'>4-^\ff r d-. cis( e) a,-.
 	bes-> r r r2 r4
 	R1.
-	<e cis' a'>4-^ r d-. cis( e) a,
+	<e cis' a'>4-^ r d-. cis( e) a,-.
 	bes-> r r r2 r4
 % Bars 271 to 275
 	R1.
@@ -394,7 +394,7 @@ musicViolinoIMvtIII = \relative c {
 	gis->_\crescmarkup b-> c-> cis( d) ais-.->
 	b-> d-> e-> e( f) d-.
 	g( aes) f-. ais( b) gis-.
-	a!-.\f a2\p->~ a4_\crescmarkup bes!2->~
+	a!\f a2\p->~ a4_\crescmarkup bes!2->~
 % Bars 336 to 340
 	bes4 b2->~ b4 bes2->~
 	bes4 a2->~ a4 bes2->~

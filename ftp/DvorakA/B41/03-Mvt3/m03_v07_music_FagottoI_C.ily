@@ -62,7 +62,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 46 to 50
 	bes!1.->\fz\>~
 	bes2 c4-> d-> c-> bes->\!
-	a1.(
+	a1.(->
 	\afterGrace 99/100 e) {\flag e8(}
 	gis2)~ gis8 a b2~ b8 gis
 % Bars 51 to 55

@@ -152,7 +152,7 @@ musicTrombeIMvtIII = \relative c {
 	d4-> e->
 	b'-> e,->
 	fis4.->\brack\fz r8
-	fis4.->\brack\fz r8
+	fis4.\brack\fz r8
 % Bars 166 to 170
 	fis4->\brack\p g->
 	fis-> d->
@@ -304,7 +304,7 @@ musicTrombeIMvtIII = \relative c {
 	
 	\section
 % Bars 341 to 345
-	\time 2/4 e4._\fffz r16 e-.
+	\time 2/4 e4.->_\fffz r16 e-.
 	e4.->\fz r16 e-.
 	e4-> e->
 	e-> e->

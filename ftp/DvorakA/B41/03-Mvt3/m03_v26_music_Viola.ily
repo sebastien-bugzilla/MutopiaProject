@@ -10,7 +10,7 @@ musicViolaMvtIII = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	<e cis' a'>4-^\ff r d-. cis( e) a-.
-	bes-. r r r2 r4
+	bes-> r r r2 r4
 	R1.
 	<e, cis' a'>4-^ r d-. cis( e) a-.
 	bes-> r r r2 r4
@@ -400,7 +400,7 @@ musicViolaMvtIII = \relative c {
 	}>>
 % Bars 266 to 270
 	\time 6/4 \key d \minor <e cis' a'>4-^\ff r d-. cis( e) a-.
-	bes-. r r r2 r4
+	bes-> r r r2 r4
 	R1.
 	<e, cis' a'>4-^ r d-. cis( e) a-.
 	bes-> r r r2 r4
@@ -408,7 +408,7 @@ musicViolaMvtIII = \relative c {
 	R1.
 	r2 des,4-.\f des( f) a!-.
 	bes-. r c,-. des( f) a-.
-	bes-> des,\pcrescD\< e!-> e( f) c-.
+	bes-> des,->\pcrescD\< e!-> e( f) c-.
 	des-> f-> a-> a( bes) e,-.
 % Bars 276 to 280
 	f-> bes-> c-> c( des)\! cis,-.\p

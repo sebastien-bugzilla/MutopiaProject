@@ -34,7 +34,7 @@ musicTimpaniMvtIII = \relative c {
 	a:
 % Bars 21 to 25
 	a:
-	d4-.\f r r r2 r4
+	d4\f r r r2 r4
 	R1.*6
 % Bars 26 to 30
 	
@@ -223,7 +223,7 @@ musicTimpaniMvtIII = \relative c {
 	c-^ g-^
 % Bars 226 to 230
 	c-^ r
-	g8-. r r4^\mutainda
+	g8 r r4^\mutainda
 	R2*34
 % Bars 231 to 235
 	

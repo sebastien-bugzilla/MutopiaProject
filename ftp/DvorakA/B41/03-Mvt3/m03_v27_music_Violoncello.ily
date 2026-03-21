@@ -293,7 +293,7 @@ musicVioloncelloMvtIII = \relative c {
 	r d\pp
 % Bars 241 to 245
 	R2
-	c4..\pp g16(
+	c4..\pp-> g16(
 	c4..->) g16(
 	c4) e,(\<
 	f g)\!
