@@ -22,7 +22,7 @@ musicTrombonoIIMvtII = \relative c {
 	g2.\dimD r4
 % Bars 11 to 15
 	f!2\pp f4 r8 f\<
-	g4\! g2\< g4->
+	g4\! g2->\< g4->
 	g4\! g2->\mf\> g4
 	g\! g4.\pp g8 f4
 	ees\< ees2-> f8-> ees->\!

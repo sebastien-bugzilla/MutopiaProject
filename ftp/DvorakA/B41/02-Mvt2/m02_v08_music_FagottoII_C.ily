@@ -64,7 +64,7 @@ musicFagottoIIMvtII = \relative c {
 	R1
 % Bars 46 to 50
 	r4 \clef tenor c2(\pp \tuplet 3/2 4 {b8\< c d}
-	c4)\! e->(\fz~ e8\> c g4\!
+	c4)\! e(\fz~ e8\> c g4\!
 	c8)\p r r4 r2
 	R1 \clef bass
 	r2 f,\pp~

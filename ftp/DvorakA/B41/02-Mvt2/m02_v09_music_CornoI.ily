@@ -98,7 +98,7 @@ musicCornoIMvtII = \relative c {
 	
 	
 % Bars 81 to 85
-	des'8-^\mf c-^ b!-^[ r16 b] ees8-> d->\brack\fz~ d16 c-> d-> ees->
+	des'8-^\mf c-^ b!-^[ r16 b]-. ees8-> d->\brack\fz~ d16 c-> d-> ees->
 	d4. r8 r2
 	R1
 	f4->\mf g-> ees-> d->

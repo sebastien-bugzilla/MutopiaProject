@@ -73,7 +73,7 @@ musicFlautoIIMvtII = \relative c {
 % Bars 86 to 90
 	
 	
-	r4 r8 f'->\f(~ f16 e f g f8 e)
+	r4 r8 f'\f(~ f16 e f g f8 e)
 	r4 r8 f\fz\>(~ f16 e f g f8 e)\!
 	R1*4
 % Bars 91 to 95

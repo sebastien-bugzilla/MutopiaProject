@@ -84,7 +84,7 @@
     555    2553   12052 01-Mvt1/m01_v27_music_Violoncello.ily
     555    2085    9924 01-Mvt1/m01_v28_music_Contrabasso.ily
     149     585    3012 02-Mvt2/m02_v01_music_FlautoI.ily
-    137     516    2605 02-Mvt2/m02_v02_music_FlautoII.ily
+    137     516    2603 02-Mvt2/m02_v02_music_FlautoII.ily
     166     968    5388 02-Mvt2/m02_v03_music_OboeI_C.ily
     166     855    4292 02-Mvt2/m02_v03_music_OboeI.ily
     166     596    2921 02-Mvt2/m02_v04_music_OboeII_C.ily
@@ -95,10 +95,10 @@
     165     664    3186 02-Mvt2/m02_v06_music_ClarinettoII.ily
     178     969    5376 02-Mvt2/m02_v07_music_FagottoI_C.ily
     178     867    4258 02-Mvt2/m02_v07_music_FagottoI.ily
-    178     816    3914 02-Mvt2/m02_v08_music_FagottoII_C.ily
+    178     816    3912 02-Mvt2/m02_v08_music_FagottoII_C.ily
     178     815    4072 02-Mvt2/m02_v08_music_FagottoII.ily
-    175     871    4646 02-Mvt2/m02_v09_music_CornoI_C.ily
-    175     814    3884 02-Mvt2/m02_v09_music_CornoI.ily
+    175     871    4648 02-Mvt2/m02_v09_music_CornoI_C.ily
+    175     814    3886 02-Mvt2/m02_v09_music_CornoI.ily
     175     615    3103 02-Mvt2/m02_v10_music_CornoII_C.ily
     171     558    2813 02-Mvt2/m02_v10_music_CornoII.ily
     149     538    3015 02-Mvt2/m02_v11_music_CornoIII_C.ily
@@ -109,8 +109,8 @@
     101     264    1418 02-Mvt2/m02_v13_music_TrombeI.ily
     101     261    1399 02-Mvt2/m02_v14_music_TrombeII_C.ily
     101     261    1405 02-Mvt2/m02_v14_music_TrombeII.ily
-    123     380    2056 02-Mvt2/m02_v15_music_TrombonoI.ily
-    123     360    1968 02-Mvt2/m02_v16_music_TrombonoII.ily
+    123     380    2058 02-Mvt2/m02_v15_music_TrombonoI.ily
+    123     360    1970 02-Mvt2/m02_v16_music_TrombonoII.ily
     127     373    2060 02-Mvt2/m02_v17_music_TrombonoIII.ily
     129     400    2211 02-Mvt2/m02_v18_music_Timpani.ily
     132     812    3874 02-Mvt2/m02_v22_music_ArpaUp.ily
@@ -196,4 +196,4 @@
     831    3240   14737 04-Mvt4/m04_v27_music_Violoncello.ily
     802    2314   11293 04-Mvt4/m04_v28_music_Contrabasso.ily
      83     244    1611 05-Midi/DvorakSymph4_Tempi.ily
-  69631  220306 1170577 total
+  69631  220306 1170581 total

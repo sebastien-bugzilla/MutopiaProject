@@ -25,7 +25,7 @@ musicTrombonoIIIMvtII = \relative c {
 	b4\! c2\< g4
 	c4\! e,2->\mf\> g4
 	c\! g4.\pp g8( bes4)
-	ees,\< c'2-> ees,8-> ees->\!
+	ees,\< c'2 ees,8-> ees->\!
 % Bars 16 to 20
 	d2_\dimmarkup << f\> {s8 s s s\!}>>
 	a4(\p\> d c f,)\! \mark \default
@@ -74,7 +74,7 @@ musicTrombonoIIIMvtII = \relative c {
 	aes8-^\mf g-^ fis-^[ r16 fis16-.] b8-> bes->~ bes16\< aes-.-> bes-.-> ces-.->\!
 % Bars 86 to 90
 	bes4->\f c!-> des8-^ c-^ bes-^[ r16 bes-.]
-	g'8-> f->~ f16 e-.\< f-. fis-. g8-^ f-^ e-^ d16-^ des-^\!
+	g'8-> f->~ f16 e-.\< f-. fis-. g8-.-^ f-^ e-^ d16-^ des-^\!
 	c8-^\ff b-^ bes-^ r r2
 	c8-^\ff b-^ bes-^ r r2
 	R1*4
