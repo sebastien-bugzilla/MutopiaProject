@@ -99,7 +99,7 @@ musicClarinettoIMvtIV = \relative c {
 	bes-. bes-._\dimmarkup
 	bes8.-. aes16 c4->
 	bes4-. bes-.
-	bes8. aes16 fes4->
+	bes8. aes16 fes!4->
 % Bars 81 to 85
 	bes4-. bes-.
 	bes8.-. aes16 c4->
@@ -487,7 +487,7 @@ musicClarinettoIMvtIV = \relative c {
 	a2_\brackfffz~
 	a
 % Bars 501 to 505
-	d~
+	d~\fz
 	d
 	R2*4
 	

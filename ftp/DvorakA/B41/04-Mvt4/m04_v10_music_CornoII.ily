@@ -68,7 +68,7 @@ musicCornoIIMvtIV = \relative c {
 	c2~
 % Bars 56 to 60
 	c~
-	c
+	<< c {s4 s_\pocoapococresc}>>
 	c4-. c-.
 	c2~
 	c~

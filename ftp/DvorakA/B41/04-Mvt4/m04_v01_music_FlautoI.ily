@@ -218,7 +218,7 @@ musicFlautoIMvtIV = \relative c {
 	f ees d! ees
 	des) r r4
 	R2
-	bes''8( aes g f
+	bes''8(\ff aes g f
 % Bars 261 to 265
 	ees des c des
 	c bes aes g
@@ -415,7 +415,7 @@ musicFlautoIMvtIV = \relative c {
 	fis'2_\brackfffz~
 	fis
 % Bars 501 to 505
-	b~
+	b~\fz
 	b
 	R2*4
 	
@@ -441,7 +441,7 @@ musicFlautoIMvtIV = \relative c {
 	f-> aes->
 	g-> e->
 % Bars 526 to 530
-	d-> f---.
+	d-> f---._\dimmarkup
 	b,---. d---.
 	gis,---. b---.
 	f2\p~

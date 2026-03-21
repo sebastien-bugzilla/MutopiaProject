@@ -211,7 +211,7 @@ musicFagottoIIMvtIV = \relative c {
 	<< d2~ {s8 s\> s s}>>
 % Bars 201 to 205
 	<< d2 {s8 s s s\!}>>
-	d2\pp~
+	d2\p~
 	<< d {s8 s\< s s}>>
 	e2(
 	<< g) {s4 s\!}>>

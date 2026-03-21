@@ -123,7 +123,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 121 to 125
 	cis8.-. bis16 dis4->
 	cis-. cis-.
-	cis8.-.\< bis16\! gis'4\fermata
+	cis8.-.\< bis16\! gis'4\ff\fermata
 	R2
 	bes,!8.-.\ff aes16( ees'4)\fermata
 % Bars 126 to 130
@@ -226,7 +226,7 @@ musicOboeIIMvtIV = \relative c {
 	f ees d! ees
 	des) r r4
 	R2
-	bes'8( aes g f
+	bes'8(\ff aes g f
 % Bars 261 to 265
 	ees des c des
 	c bes' aes g

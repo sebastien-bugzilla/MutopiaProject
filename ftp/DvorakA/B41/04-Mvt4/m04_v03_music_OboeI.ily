@@ -266,7 +266,7 @@ musicOboeIMvtIV = \relative c {
 	f ees d! ees
 	des) r r4
 	R2
-	bes'8( aes g f
+	bes'8(\ff aes g f
 % Bars 261 to 265
 	ees des c des
 	c bes' aes g

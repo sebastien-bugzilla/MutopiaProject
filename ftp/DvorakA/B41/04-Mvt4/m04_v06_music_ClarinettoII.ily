@@ -498,7 +498,7 @@ musicClarinettoIIMvtIV = \relative c {
 	a2_\brackfffz~
 	a
 % Bars 501 to 505
-	d~
+	d~\fz
 	d
 	R2*4
 	
@@ -637,7 +637,7 @@ musicClarinettoIIMvtIV = \relative c {
 	e
 	f4-. r
 % Bars 631 to 635
-	a,2-^
+	a,2-^\ff
 	c-^
 	ees4-.-^ r
 	R2*5

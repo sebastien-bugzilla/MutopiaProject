@@ -100,8 +100,8 @@ musicVioloncelloMvtIV = \relative c {
 	f( g f e f g)
 % Bars 76 to 80
 	g( a bes c\> des bes)\!
-	e,( f g des ees f
-	e!_\dimmarkup f g f g f)
+	e,( f g des_\dimmarkup ees f
+	e! f g f g f)
 	des( ees f e f g
 	des ees g f g f)
 % Bars 81 to 85
@@ -118,7 +118,7 @@ musicVioloncelloMvtIV = \relative c {
 	bes:
 % Bars 91 to 95
 	<< bes:\< {s8 s s s\!}>>
-	b2:
+	b2:^\pocoapococresc
 	b:
 	d:
 	d:
@@ -380,7 +380,7 @@ musicVioloncelloMvtIV = \relative c {
 	R2*2
 	
 % Bars 316 to 320
-	ees4->\f ees->
+	ees4->\ff ees->
 	ees8.-. d16-. ees4->
 	ees8-. ees-. \tuplet 3/2 4 {ees8( d ees)}
 	g-. g-. \tuplet 3/2 4 {g( fis! g)}
@@ -425,14 +425,14 @@ musicVioloncelloMvtIV = \relative c {
 	aes-. r
 	des,->\ff des->
 	des8.-. c16 ees4->
-	des16(->\f bes aes8) f'16(->\f ees des8)
+	des16(->\f bes aes8) f'16(-> ees des8)
 	aes'16(->\< ges f8) des'16(-> bes aes8)
 % Bars 356 to 360
 	f'16(-> ees\! des8) des16( bes aes8)
 	aes16(\> ges f8) f16( ees des8)\!
 	cis4->\ff cis->
 	cis8.-. bis16 dis4->
-	cis16(->\f a gis8) e'16(->\f\< dis cis8)
+	cis16(->\f a gis8) e'16(->\< dis cis8)
 % Bars 361 to 365
 	gis'16(-> fis e8) cis'16(-> a gis8)
 	e'16(-> dis cis8)\! cis16(\> a gis8)
@@ -656,7 +656,7 @@ musicVioloncelloMvtIV = \relative c {
 	r a
 	r a
 	a' a,
-	r cis
+	r_\crescmolto cis
 	cis' cis,
 % Bars 551 to 555
 	r e

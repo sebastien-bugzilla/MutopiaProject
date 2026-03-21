@@ -30,7 +30,7 @@ musicViolaMvtIV = \relative c {
 	<g d'>-> r^\fermata
 	c8.\fz b16 g4-.
 	R2\fermata
-	a8.->\fz g16 d4-.
+	a8.->\f g16 d4-.
 	d-^ r\fermata
 % Bars 21 to 25
 	R2*2
@@ -132,7 +132,7 @@ musicViolaMvtIV = \relative c {
 	q:
 % Bars 91 to 95
 	<< q:\< {s8 s s s\!}>>
-	q2:
+	q2:^\pocoapococresc
 	q:
 	<f gis>:
 	q:
@@ -735,7 +735,7 @@ musicViolaMvtIV = \relative c {
 	fis8.-> e16 d4-.--
 	a8.-> g16 fis4-.-- \clef treble
 % Bars 511 to 515
-	f''!2-^
+	f''!2-^\ff
 	c8.-> bes16 a4-.-- \clef alto
 	a8.-.-> g16 f4-.--
 	f2->
@@ -744,7 +744,7 @@ musicViolaMvtIV = \relative c {
 	e8.-> d16 c4-.--
 	c8.-> bes16 a4-.--
 	bes2->
-	<c, e>8.->\f <d f>16 <e g>4
+	<c, e>8.->\ff <d f>16 <e g>4
 	<f aes>2\fz
 % Bars 521 to 525
 	<< {

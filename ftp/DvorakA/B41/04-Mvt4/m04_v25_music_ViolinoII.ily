@@ -513,7 +513,7 @@ musicViolinoIIMvtIV = \relative c {
 	bes8.) a16( e'4\!~
 	e8 d\> c a)\!
 	a4-.\p a-.
-	a8.( g16 bes4~
+	a8.( g16 bes4~\<
 	bes8.) a16( c4\!~
 % Bars 436 to 440
 	c8 bes\> g e)\!
