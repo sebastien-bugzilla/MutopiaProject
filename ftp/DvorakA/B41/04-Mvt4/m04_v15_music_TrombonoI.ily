@@ -433,7 +433,7 @@ musicTrombonoIMvtIV = \relative c {
 	d2-^\ff
 % Bars 606 to 610
 	d-^
-	e4..-^ cis16-^
+	d4..-^ cis16-^
 	e2-^
 	d-^
 	d-^

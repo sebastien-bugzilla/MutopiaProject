@@ -31,7 +31,7 @@ musicOboeIMvtIV = \relative c {
 	R2
 	a,8. g16( d'4)->\fermata
 	R2
-	c,8. b16( g'4)\fermata
+	c,8. b16( g'4)->\fermata
 % Bars 21 to 25
 	R2*2
 	
@@ -64,7 +64,7 @@ musicOboeIMvtIV = \relative c {
 	a8.( g16 bes4~
 	bes8.\< a16 d4~\!
 	d8\> c bes g)\!
-	c4-.\p c-.
+	c4-. c-.
 	c8.( b16 d4~\<
 % Bars 56 to 60
 	d8. c16 g'4\!~

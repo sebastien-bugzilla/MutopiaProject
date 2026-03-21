@@ -23,7 +23,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 11 to 15
 	f!4-. fis-.
 	g-. r
-	f!-. fis
+	f!-. fis-.
 	g-. r
 	f!4-. fis-.
 % Bars 16 to 20
@@ -31,7 +31,7 @@ musicOboeIIMvtIV = \relative c {
 	R2 
 	a8. g16( d'4)->\fermata
 	R2
-	c,8. b16( g'4)\fermata
+	c,8. b16( g'4)->\fermata
 % Bars 21 to 25
 	R2*2
 	
@@ -111,7 +111,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 111 to 115
 	d8.-. cis16 a4->
 	d4-. d-.
-	d8. cis16 e4->
+	d8.-. cis16 e4->
 	d4-. d-.
 	d8.-. cis16 a4->
 % Bars 116 to 120

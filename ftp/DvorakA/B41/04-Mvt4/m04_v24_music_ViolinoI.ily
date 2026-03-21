@@ -625,7 +625,7 @@ musicViolinoIMvtIV = \relative c {
 % Bars 541 to 545
 	g!8._\pocoapococresc f16-.) e4(~
 	e8. d16-.) cis4(~
-	cis8. bes!16) a4(~
+	cis8. bes!16-.) a4(~
 	a8 cis\< e a)\!
 	g8.( f16-.) e4(~
 % Bars 546 to 550

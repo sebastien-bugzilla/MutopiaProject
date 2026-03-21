@@ -180,8 +180,8 @@ musicContrabassoMvtIV = \relative c {
 	a-. a-._\dimmarkup
 	a8.-. g16 e4->--\>
 % Bars 146 to 150
-	a8. g16 e4-.--
-	a8. g16 e4-.--\!
+	a8. g16 e4--
+	a8. g16 e4--\!
 	a8\pp r r4
 	R2*9
 	

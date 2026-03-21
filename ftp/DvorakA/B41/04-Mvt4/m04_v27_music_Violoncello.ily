@@ -180,8 +180,8 @@ musicVioloncelloMvtIV = \relative c {
 	a-. a-._\dimmarkup
 	a8.-. g16 e4->--\>
 % Bars 146 to 150
-	a8. g16 e4-.--
-	a8. g16 e4-.--\!
+	a8. g16 e4--
+	a8. g16 e4--\!
 	a8[(\pp g e bes')]
 	a[( cis e g]
 	bes a) r4

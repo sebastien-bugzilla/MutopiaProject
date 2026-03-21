@@ -437,7 +437,7 @@ musicTrombeIMvtIV = \relative c {
 	cis->~
 	cis
 	cis4-. r
-	cis,\f r
+	cis,->\f r
 	e-> r
 % Bars 616 to 620
 	g!-> r

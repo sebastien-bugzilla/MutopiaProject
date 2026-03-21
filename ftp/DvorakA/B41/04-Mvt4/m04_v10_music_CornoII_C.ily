@@ -214,7 +214,7 @@ musicCornoIIMvtIV = \relative c {
 % Bars 226 to 230
 	<< \stemDown g2~ {s4 s\< }>>
 	<< g2 {s8 s s s\!}>>
-	fis2->\f~
+	fis2\f~
 	<< fis\> {s4 s\!}>>
 	fis2\fz\>~
 % Bars 231 to 235
