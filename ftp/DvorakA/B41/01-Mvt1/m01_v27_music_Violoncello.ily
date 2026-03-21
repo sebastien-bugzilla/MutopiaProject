@@ -55,7 +55,7 @@ musicVioloncelloMvtI = \relative c {
 		b8 r e,4-.-> e->-.
 		a,8-.[ r32 e'( fis gis] a8)[ r16 a32( b] cis8) r
 		a,-.[ r32 e'( fis gis] a8)[ r16 a32( b] cis8) r
-		a, r fis''->[ r16 e\> d8-> r16 cis]
+		a, r fis''[ r16 e\> d8 r16 cis]
 		b8\! r e,4-._\brackM\dimmarkup e-.
 % Bars 41 to 45
 		a,8 r r4 cis8->\p^\pizz r
@@ -342,8 +342,8 @@ musicVioloncelloMvtI = \relative c {
 	a,-. r fis''->[ r16 e-. d8-> r16 cis-.]
 % Bars 271 to 275
 	b8 r e,4-^ e-^
-	a,8[ r32 e'( fis gis] a8-.)[ r16 a32( b] cis8)-. r
-	a,8[ r32 e'( fis gis] a8-.)[ r16 a32( b] cis8)-. r
+	a,8-.[ r32 e'( fis gis] a8-.)[ r16 a32( b] cis8)-. r
+	a,8-.[ r32 e'( fis gis] a8-.)[ r16 a32( b] cis8)-. r
 	a,-. r fis''->[ r16 e-. d8-> r16 cis-.]
 	b8 r e,4-^ e-^
 % Bars 276 to 280
@@ -387,7 +387,7 @@ musicVioloncelloMvtI = \relative c {
 	b,4.(->\ff d16 c) b8 r 
 	b4.->( d16 c) b8 r
 	b4.->( d16 c) b8 r
-	<f' aes>4_\ffmarcatissimo <g bes>-> <aes! c>->
+	<f' aes>4->_\ffmarcatissimo <g bes>-> <aes! c>->
 % Bars 311 to 315
 	<g bes>8. <bes des>16 q2
 	<g bes>4-> <aes c>-> <bes des>->

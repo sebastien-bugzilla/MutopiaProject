@@ -16,7 +16,7 @@ musicOboeIIMvtI = \relative c {
 		
 		
 		f''2~_\pcresc f8 a,-.
-		a8.-.\< f'16 f4 d8. f16\!
+		a8.\< f'16 f4 d8. f16\!
 % Bars 11 to 15
 		e4.\fz d8->\< c-> bes->\!
 		a4->\f\< bes-> bes->\!
@@ -45,7 +45,7 @@ musicOboeIIMvtI = \relative c {
 		bes2\fz~ bes8 r
 		f'4..\fz e16-. d(\< c b f')\!
 		cis8-.-> r cis-.-> r b-.\brack\fz r
-		cis-.-> r cis-.-> r b-.->\fz r
+		cis-.-> r cis-.-> r b-.\fz r
 		cis-. r fis->[ r16 e d8-> r16 cis]
 % Bars 36 to 40
 		b4-.-> gis-.-> b-.->
@@ -305,7 +305,7 @@ musicOboeIIMvtI = \relative c {
 	cis2~\fz cis8 r
 	g'4..\f e16[ cis8.-> g16-.]
 	f4.(-> a16 f d8) r
-	c'4..->\fz bes16 \tuplet 3/2 {a8( fis ees')}
+	c'4..->\fz bes16-. \tuplet 3/2 {a8( fis ees')}
 % Bars 266 to 270
 	bes2->~ bes8 r
 	f'4..\fz e16-. d( c b f')

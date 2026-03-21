@@ -37,12 +37,12 @@ musicFlautoIMvtI = \relative c {
 		d2\fz~ d8 r
 		f4..\fz e16-. d(\< c b f')\!
 		e8-.-> r a-.-> r f-.->\brack\fz r
-		e-.-> r a-.-> r f-.->\fz r
+		e-.-> r a-.-> r f-.\fz r
 		e-. r a8[-> r16 gis fis8-> r16 e]
 % Bars 36 to 40
 		d4-.-> b-.-> e-.->
 		a,8-.-> r a'-.-> r f-.\brack\fz r
-		e-.-> r a-.-> r f-.->\brack\fz r
+		e-.-> r a-.-> r f-.\brack\fz r
 		e-.-> r a8[ r16 gis\> fis8 r16 e]
 		d8-.\! r b-._\dimmarkup r e-. r
 % Bars 41 to 45

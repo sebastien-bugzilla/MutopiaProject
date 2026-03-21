@@ -347,10 +347,10 @@ musicViolaMvtI = \relative c {
 	<gis f'>4..->\fz e'16-. d( c b f'
 	<cis e>8)[ r32 e,( fis gis] a8-.)[ r16 a32( b] cis8)-. r
 	<cis e a> r32 e,( fis gis a8-.)[ r16 a32( b] cis8)-. r
-	<cis e a>8-. r <fis a>[-> r16 <e gis> <d fis!>8-> r16 <cis e>-.]
+	<cis e a>8-. r <fis a>[-> r16 <e gis>-. <d fis!>8-> r16 <cis e>-.]
 % Bars 271 to 275
 	<b d>4-. <gis b!>-. <b gis'>-.
-	<cis e>8-.[ r32 e,( fis gis] a8)[ r16 a32( b] cis8)-. r
+	<cis e>8-.[ r32 e,( fis gis] a8-.)[ r16 a32( b] cis8)-. r
 	<cis e a>8-. r32 e,( fis gis a8-.)[ r16 a32( b] cis8)-. r
 	<cis e a>-. r <fis a>->[ r16 <e gis>-. <d fis!>8-> r16 <cis e>-.]
 	<b d>4-. <gis b!>-. <b gis'>-.
@@ -411,7 +411,7 @@ musicViolaMvtI = \relative c {
 % Bars 321 to 325
 	aes8: aes: f: des: c: aes: \clef alto
 	f: des: c: aes: f8\noBeam r
-	<c b' aes'>4\ff r r
+	<c b' aes'>4->\ff r r
 	r r b'16(\< c d e)\!
 	<c, b' aes'>4-^ r r
 % Bars 326 to 330

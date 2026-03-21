@@ -36,13 +36,13 @@ musicFlautoIIMvtI = \relative c {
 % Bars 31 to 35
 		bes2\fz~ bes8 r
 		b4..\fz e,16-. d(\< c b f')\!
-		e8-.-> r e'-.-> r b-.->\brack\fz r
-		cis-.-> r e-.-> r b-.->\fz r
+		e8-.-> r e'-.-> r b-.\brack\fz r
+		cis-.-> r e-.-> r b-.\fz r
 		cis-. r fis8[-> r16 e d8-> r16 cis]
 % Bars 36 to 40
 		b4-.-> gis-.-> b-.->
 		a8-.-> r e'-.-> r b-.\brack\fz r
-		cis-.-> r e-.-> r b-.->\brack\fz r
+		cis-.-> r e-.-> r b-.\brack\fz r
 		cis-.-> r fis8[ r16 e\> d8 r16 cis]
 		b8-.\! r gis-._\dimmarkup r b-. r
 % Bars 41 to 45
@@ -126,7 +126,7 @@ musicFlautoIIMvtI = \relative c {
 	e8. gis16 gis4-.\! r
 	R2.*4
 % Bars 136 to 140
-	cis2->\ff~ cis8 ais-.
+	cis2\ff~ cis8 ais-.
 	ais8.-> cis16 cis4-. r
 	cis2->~ cis8 ais-.
 	ais8.-> cis16 cis4-. r

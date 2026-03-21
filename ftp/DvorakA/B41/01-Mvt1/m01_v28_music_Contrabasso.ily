@@ -35,7 +35,7 @@ musicContrabassoMvtI = \relative c {
 		a8.(\ff\< b32 cis d16 e fis gis) a8\! r
 % Bars 21 to 25
 		e8->\f a-> cis\fz r a-. cis-.
-		e\fz r cis[-. e-. g-.]\brack\fz r
+		e\fz r cis[-. e-. g]\brack\fz r
 		r4 r \tuplet 3/2 4 {e,8(\f cis bes}
 		a) r r4 r
 		R2. \mark \default
@@ -55,7 +55,7 @@ musicContrabassoMvtI = \relative c {
 		b8 r e,4-.-> e->-.
 		a,8-.[ r32 e'( fis gis] a8) r r4
 		a,8-.[ r32 e'( fis gis] a8) r r4
-		a,8 r fis''->[ r16 e\> d8-> r16 cis]
+		a,8 r fis''[ r16 e\> d8 r16 cis]
 		b8\! r e,4-._\brackM\dimmarkup e-.
 % Bars 41 to 45
 		a,8 r r4 cis8->\p^\pizz r
@@ -342,8 +342,8 @@ musicContrabassoMvtI = \relative c {
 	a,8-. r fis''->[ r16 e-. d8-> r16 cis-.]
 % Bars 271 to 275
 	b8 r e,4-^ e-^
-	a,8[ r32 e'( fis gis] a8-.) r r4
-	a,8[ r32 e'( fis gis] a8-.) r r4
+	a,8-.[ r32 e'( fis gis] a8-.) r r4
+	a,8-.[ r32 e'( fis gis] a8-.) r r4
 	a,8-. r fis''->[ r16 e-. d8-> r16 cis-.]
 	b8 r e,4-^ e-^
 % Bars 276 to 280

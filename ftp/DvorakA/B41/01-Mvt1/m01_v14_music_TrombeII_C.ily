@@ -29,7 +29,7 @@ musicTrombeIIMvtI = \relative c {
 		r4 e8-.\fz r r4
 		gis8-.\fz r r4 b8-.\fz r
 		R2.
-		e,8-.\fz r r4 r
+		e,8\fz r r4 r
 		R2. \mark \default
 % Bars 26 to 30
 		a,2->\ff~ a8 r

@@ -212,7 +212,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 176 to 180
 	d'8-. r f-. r c-.\fz r
 	d-. r f-. r c-.\fz r
-	d-. r e2\fz
+	d r e2\fz
 	r4 a,-^ a-^ \clef bass
 	d,8-. r d'-. r fis,-. r
 % Bars 181 to 185
@@ -314,8 +314,8 @@ musicFagottoIMvtI = \relative c {
 % Bars 266 to 270
 	d2\fz~ d8 r
 	d2\fz~ d8 r
-	a8-. r a-. r cis\fz r
-	a-. r a-. r cis\fz r
+	a8-. r a-. r cis-.\fz r
+	a-. r a-. r cis-.\fz r
 	a-. r fis-. r b-. r
 % Bars 271 to 275
 	r4 e-. e-.

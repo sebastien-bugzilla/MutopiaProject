@@ -319,7 +319,7 @@ musicClarinettoIMvtI = \relative c {
 	f'4..->\fz c16-. \tuplet 3/2 4 {b8( gis f'!)}
 % Bars 266 to 270
 	g!2->~ g8 r
-	bes4..\fz fis!16 e( d cis g')
+	bes4..\fz fis!16-. e( d cis g')
 	fis8-. r fis-. r g-.\fz r
 	fis-. r fis-. r g-.\fz r
 	fis-. r b,[-> r16 ais-. gis8-> r16 fis-.]

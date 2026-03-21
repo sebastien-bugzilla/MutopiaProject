@@ -387,8 +387,8 @@ musicViolinoIIMvtI = \relative c {
 % Bars 311 to 315
 	e2->( des4)
 	bes'4..-> g16[( e8. bes16]-.)
-	a4.( c16 bes) a8 r
-	ees'4..(-> des16) c( bes a ges')
+	a4.(-> c16 bes) a8 r
+	ees'4..(-> des16-.) c( bes a ges')
 	<des f>2->\ff r4
 % Bars 316 to 320
 	q2-> r4

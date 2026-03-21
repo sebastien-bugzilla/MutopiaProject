@@ -221,7 +221,7 @@ musicViolinoIMvtI = \relative c {
 	<< bes2 {s8 s s s\!}>> g a) \mark \default
 	bes-.\ff r <bes, bes'>-. r <a ges'>-.\fz r
 	<d, bes' f'>-.\arpeggio r <bes' bes'>-. r <a ges'>-.\fz r
-	<d, bes' f'>-.\arpeggio r <d bes' bes'>4..(-> a''16-.)
+	<d, bes' f'>-.\arpeggio r <d bes' bes'>4..(->\arpeggio a''16-.)
 	g8->[ r16 f] ees8->[ r16 d] c8->[ r16 f]
 % Bars 176 to 180
 	bes,8 r <bes bes'>-. r <a ges'>-.\sfz r
