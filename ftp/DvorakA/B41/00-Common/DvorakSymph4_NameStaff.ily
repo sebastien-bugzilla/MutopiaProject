@@ -22,7 +22,7 @@ nameStaffIIIMvtI = {
 nameStaffIVMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetti" "I. II. In B"
+			\lower #1 "Clarinetti" "I. II. in B"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
@@ -78,7 +78,7 @@ nameStaffVIIMvtI = {
 nameStaffVIIIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Trombe" "I. II. In F"
+			\lower #1 "Trombe" "I. II. in F"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
@@ -174,7 +174,7 @@ nameStaffIIIMvtII = {
 nameStaffIVMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetti" "I. II. In B"
+			\lower #1 "Clarinetti" "I. II. in B"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
@@ -230,7 +230,7 @@ nameStaffVIIMvtII = {
 nameStaffVIIIMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Trombe" "I. II. In F"
+			\lower #1 "Trombe" "I. II. in F"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
@@ -336,7 +336,7 @@ nameStaffIIIMvtIII = {
 nameStaffIVMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetti" "I. II. In A"
+			\lower #1 "Clarinetti" "I. II. in A"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
@@ -392,7 +392,7 @@ nameStaffVIIMvtIII = {
 nameStaffVIIIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Trombe" "I. II. In F"
+			\lower #1 "Trombe" "I. II. in F"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
@@ -513,7 +513,7 @@ nameStaffIIIMvtIV = {
 nameStaffIVMvtIV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetti" "I. II. In A"
+			\lower #1 "Clarinetti" "I. II. in A"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
@@ -569,7 +569,7 @@ nameStaffVIIMvtIV = {
 nameStaffVIIIMvtIV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Trombe" "I. II. In F"
+			\lower #1 "Trombe" "I. II. in F"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
