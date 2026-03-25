@@ -20,13 +20,13 @@ musicFlautoIMvtI = \relative c {
 		
 		
 		
-		e'''2\ff~ e8 e,-.
+		\dynEO #'(0 . 2) e'''2\ff~ e8 e,-.
 % Bars 21 to 25
 		e8.-> a16 a8 r a8.-> cis16
 		cis8 r cis8.-> e16 e8-> g->
 		e-> cis-> bes-> g-> \tuplet 3/2 4 {e-> cis-> bes->}
 		a-. r r4 r
-		r r a'16(\f\< cis e a)\! \mark \default
+		r r \dynEO #'(0 . 2) a'16(\f-\tweak extra-offset #'(0 . 2) \< cis e a)\! \mark \default
 % Bars 26 to 30
 		d,2->\ff a8.-> d16
 		cis2\fz( bes8) r
@@ -34,15 +34,15 @@ musicFlautoIMvtI = \relative c {
 		f4.(->\fz a16 f d8) r
 		c'4..\fz bes16-. \tuplet 3/2 4 {a8( fis ees')}
 % Bars 31 to 35
-		d2\fz~ d8 r
-		f4..\fz e16-. d(\< c b f')\!
-		e8-.-> r a-.-> r f-.->\brack\fz r
-		e-.-> r a-.-> r f-.\fz r
+		\dynEO #'(0 . 1) d2\fz~ d8 r
+		\dynEO #'(0 . 2) f4..\fz e16-. d(\< c b f')\!
+		e8-.-> r a-.-> r \dynEO #'(0 . 1) f-.->\brack\fz r
+		e-.-> r a-.-> r \dynEO #'(0 . 1) f-.\fz r
 		e-. r a8[-> r16 gis fis8-> r16 e]
 % Bars 36 to 40
 		d4-.-> b-.-> e-.->
-		a,8-.-> r a'-.-> r f-.\brack\fz r
-		e-.-> r a-.-> r f-.\brack\fz r
+		a,8-.-> r a'-.-> r \dynEO #'(0 . 1) f-.\brack\fz r
+		e-.-> r a-.-> r \dynEO #'(0 . 1) f-.\brack\fz r
 		e-.-> r a8[ r16 gis\> fis8 r16 e]
 		d8-.\! r b-._\dimmarkup r e-. r
 % Bars 41 to 45
@@ -53,7 +53,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 46 to 50
 	
 % Bars 51 to 55
-		r4 c'4.->\fz bes8(
+		r4 \dynEO #'(0 . 2) c'4.->\fz bes8(
 		a8.) g16( f8.) ees16( d8.) c16(
 		bes8) r r4 r
 		R2.*7
@@ -87,7 +87,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 86 to 90
 		f4)-.\! r r
 		R2. \mark \default
-		bes,4(\f d4. ees8
+		\dynEO #'(0 . 2) bes,4(\f d4. ees8
 		f2 c4)
 		bes( d4. ees8
 % Bars 91 to 95
@@ -99,7 +99,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 96 to 100
 		<< d2.(~ {s2 s4\<}>>
 		d8 a bes d c g)\!
-		bes4-.\f bes4.-> c8-.
+		\dynEO #'(0 . 2) bes4-.\f bes4.-> c8-.
 		d2-> a4-.
 		bes-. bes4.-> c8-.
 % Bars 101 to 105
@@ -109,7 +109,7 @@ musicFlautoIMvtI = \relative c {
 		d2(->\fz a4)
 		dis2(->\fz a4)
 % Bars 106 to 110
-		e'2\fz~ e8\> b-.
+		\dynEO #'(0 . 2) e'2\fz~ e8\> b-.
 		b8. e16 e4->\! r
 		R2.*6
 % Bars 111 to 115
@@ -128,17 +128,17 @@ musicFlautoIMvtI = \relative c {
 			
 			}
 			\volta 2 {
-				cis2\ff~ cis8 gis-.
+				\dynEO #'(0 . 2) cis2\ff~ cis8 gis-.
 				gis8.-> cis16 cis4-. r
 			}
 		}
 	}
-	cis2\fz~ cis8 gis-.\>
+	\dynEO #'(0 . 2) cis2\fz~ cis8 gis-.\>
 % Bars 131 to 135
 	gis8. cis16 cis4-.\! r
 	R2.*4
 % Bars 136 to 140
-	fis2->\ff~ fis8 cis-.
+	\dynEO #'(0 . 2) fis2->\ff~ fis8 cis-.
 	cis8.-> fis16 fis4-. r
 	fis2->~ fis8 cis-.
 	cis8.-> fis16 fis4-. r
@@ -154,10 +154,10 @@ musicFlautoIMvtI = \relative c {
 	gis\! fis cis)
 	e2(\< dis4~
 	dis b4.\! cis8)
-	dis2->\fz~ dis8\> b-.
+	\dynEO #'(0 . 2) dis2->\fz~ dis8\> b-.
 % Bars 151 to 155
 	b8. dis16 dis4-.\! r
-	ees2\fz->~ ees8\> bes!-.
+	\dynEO #'(0 . 2) ees2\fz->~ ees8\> bes!-.
 	bes!8. ees16 ees4-.\! r
 	R2.*4
 	
@@ -165,7 +165,7 @@ musicFlautoIMvtI = \relative c {
 	
 	
 	a,4(\p\< c4. ees8)
-	ees2.(~\!
+	\shape #'((0 . 0)(0 . 1)(0 . -0.6)(-0.4 . -2)) Slur ees2.(~\!
 	ees4 bes\p ges\>
 % Bars 161 to 165
 	ees bes ges\!
@@ -179,26 +179,26 @@ musicFlautoIMvtI = \relative c {
 	d''8(\f\< f ees d bes c
 % Bars 171 to 175
 	d f ees d bes c)\! \mark \default
-	d8-.\ff r bes'-. r ges-.\fz r
-	f-. r bes-. r ges-.\fz r
-	f-. r bes4..->\fz a16-.
+	\dynEO #'(0 . 2) d8-.\ff r bes'-. r \dynEO #'(0 . 2) ges-.\fz r
+	f-. r \dynEO #'(0 . 2) bes-. r \dynEO #'(0 . 2) ges-.\fz r
+	f-. r \dynEO #'(0 . 2) bes4..->\fz a16-.
 	g8->[ r16 f] ees8->[ r16 d] c8[-> r16 f]
 % Bars 176 to 180
-	bes,8-. r bes'-. r ges-.\sfz r
-	f-. r bes-. r ges-.\sfz r
-	f r a4..\sfz g!16
+	bes,8-. r bes'-. r \dynEO #'(0 . 2) ges-.\sfz r
+	f-. r bes-. r \dynEO #'(0 . 2) ges-.\sfz r
+	f r \dynEO #'(0 . 2) a4..\sfz g!16
 	fis8->[ r16 g] fis8[-> r16 e] d8[-> r16 e]
 	d8-> r d-> r bes-> r
 % Bars 181 to 185
 	a-> r d-> r bes-> r
 	a-. r r4 r
 	R2.
-	cis2->\f~ cis8 ais-.
+	\dynEO #'(0 . 2) cis2->\f~ cis8 ais-.
 	ais8.-> cis16 cis4-. r
 % Bars 186 to 190
-	cis2->~\fz cis8 ais-.
+	\dynEO #'(0 . 2) cis2->~\fz cis8 ais-.
 	ais8.-> cis16 cis4-. r
-	fis2.\ff~
+	\dynEO #'(0 . 2) fis2.\ff~
 	fis~
 	fis~
 % Bars 191 to 195
@@ -208,7 +208,7 @@ musicFlautoIMvtI = \relative c {
 	fis~
 	<< fis~ {s8 s s s s s\!}>>
 % Bars 196 to 200
-	fis4\p cis2(
+	\dynEO #'(0 . 2) fis4\p cis2(
 	ais_\dimmarkup fis4~
 	fis cis2
 	ais fis4)
@@ -233,7 +233,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 216 to 220
 	bes( d4. ees8
 	f2 c4)\!
-	f2~\ff f8 d-.
+	\dynEO #'(0 . 2) f2~\ff f8 d-.
 	d8. f16 f4-. r
 	f2~ f8 d-.
 % Bars 221 to 225
@@ -245,7 +245,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 226 to 230
 	d8. f16 f4-. r
 	d8. f16 f4-. r \mark \default
-	d8.->\ff f16 f2\fz\>~
+	\dynEO #'(0 . 2) d8.->\ff f16 \dynEO #'(0 . 2) f2\fz-\alterBroken extra-offset #'((0 . 2)()) \>~
 	<< f2. {s4 s s\!}>>
 	r4 r gis,8.->\f b16
 % Bars 231 to 235
@@ -256,16 +256,16 @@ musicFlautoIMvtI = \relative c {
 	
 % Bars 241 to 245
 	
-	r4 cis4..(\fz\< bis16
+	r4 \dynEO #'(0 . 1) cis4..(\fz-\tweak extra-offset #'(0 . 1) \< bis16
 	cis8 d cis b a fis)\!
-	r4 d'4..(\fz\< cis16
+	r4 \dynEO #'(0 . 1) d'4..(\fz-\tweak extra-offset #'(0 . 1) \< cis16
 	d8 ees d c! bes! a)\!
 % Bars 246 to 250
-	r4 d4..(\fz\< cis16
+	r4 \dynEO #'(0 . 1) d4..(\fz-\tweak extra-offset #'(0 . 1) \< cis16
 	d8 ees d c! bes g)\!
-	r4 ees'4..(\fz\< d16
+	r4 \dynEO #'(0 . 1) ees'4..(\fz-\tweak extra-offset #'(0 . 1) \< d16
 	ees8 f ees d c bes)\!
-	r4 ees4..(\fz\< d16
+	r4 \dynEO #'(0 . 1) ees4..(\fz-\tweak extra-offset #'(0 . 1) \< d16
 % Bars 251 to 255
 	ees8 f ees d c bes)\! 
 	\time 2/4 f'[(-> g f ees]
@@ -277,7 +277,7 @@ musicFlautoIMvtI = \relative c {
 	a4) r r
 	R2. \mark \default
 	R
-	r4 r a'16(\f\< cis e a\!)
+	r4 r \dynEO #'(0 . 2) a'16(\f-\tweak extra-offset #'(0 . 2) \< cis e a\!)
 % Bars 261 to 265
 	d,2->\ff a8.-> d16-.
 	cis2(\fz bes!8) r
@@ -286,18 +286,18 @@ musicFlautoIMvtI = \relative c {
 	c'4..->\fz bes16-. \tuplet 3/2 4 {a8( fis ees')}
 % Bars 266 to 270
 	d2->~ d8 r
-	f4..\fz e16-. d( c b f')
-	e8-. r a-. r f-.\fz r
-	e-. r a-. r f-.\fz r
+	\dynEO #'(0 . 2) f4..\fz e16-. d( c b f')
+	e8-. r a-. r \dynEO #'(0 . 2) f-.\fz r
+	e-. r a-. r \dynEO #'(0 . 2) f-.\fz r
 	e-. r a->[ r16 gis-. fis8-> r16 e-.]
 % Bars 271 to 275
 	d4-. b-. e-.
-	e8-. r a-. r f!-.\fz r
-	e-. r a-. r f-.\fz r
+	e8-. r a-. r \dynEO #'(0 . 2) f!-.\fz r
+	e-. r a-. r \dynEO #'(0 . 2) f-.\fz r
 	e-. r a->[ r16 gis-. fis8-> r16 e-.]
 	d4-. b-. e-.
 % Bars 276 to 280
-	a,8-.\f r a-. r f-. r
+	\dynEO #'(0 . 2) a,8-.\f r a-. r f-. r
 	e-. r a-. r f-.\> r
 	e-.\! r r4 r
 	R2.*9
@@ -310,17 +310,17 @@ musicFlautoIMvtI = \relative c {
 	c2(\> fis,4)\!
 	fis(\< a4. c8)\!
 % Bars 291 to 295
-	d2(\fz gis,4)
+	\dynEO #'(0 . 2) d2(\fz gis,4)
 	gis4(\f b4._\crescmarkup e8)
 	a,4( c4. e8)
 	a,4( c4. fis8)
 	b,4( d4. f!8) \mark \default
 % Bars 296 to 300
-	e4\ff r r
+	\dynEO #'(0 . 2) e4\ff r r
 	R2.*3
 	
 	
-	r4 e-^\ff r
+	r4 \dynEO #'(0 . 2) e-^\ff r
 % Bars 301 to 305
 	fis-^ r fis-^
 	r fis-^ r
@@ -329,45 +329,45 @@ musicFlautoIMvtI = \relative c {
 	f!-^ r f-^
 % Bars 306 to 310
 	r f-^ r
-	f2\fz r4
-	f2\fz r4
-	f2\fz r4
+	\dynEO #'(0 . 2) f2\fz r4
+	\dynEO #'(0 . 2) f2\fz r4
+	\dynEO #'(0 . 2) f2\fz r4
 	f2-> c8.-> f16-.
 % Bars 311 to 315
 	e2(-> des4)
 	bes'4..---^ g16[-> e8.-> bes16]->
 	a4.->( c16 bes a8) r
 	ees'4..-> des16-. c( bes a ges')
-	f2->\ff r4
+	\dynEO #'(0 . 2) f2->\ff r4
 % Bars 316 to 320
 	f2-> r4
 	f2-> r4
 	f2-> r4
-	f2.\ff~
+	\dynEO #'(0 . 2) f2.\ff~
 	f~
 % Bars 321 to 325
 	f4 r r
 	R2.
-	f4\ff-. r r
+	\dynEO #'(0 . 2) f4\ff-. r r
 	r r b,16(\< c d e\!
-	f4)-.\ff r r
+	\dynEO #'(0 . 2) f4)-.\ff r r
 % Bars 326 to 330
 	r r c16(\< d e f\!
-	fis4)-.\ff r r
+	\dynEO #'(0 . 2) fis4)-.\ff r r
 	r r c16(\< d e fis\!
-	g2.\ff~
+	\dynEO #'(0 . 2) g2.\ff~
 	g~
 % Bars 331 to 335
 	g4) r r
 	R2.*3
 	
 	
-	cis,2\ff~ cis8 gis-.
+	\dynEO #'(0 . 2) cis,2\ff~ cis8 gis-.
 % Bars 336 to 340
 	gis8. cis16 cis4-. r
 	R2.*2
 	
-	cis2\ff~ cis8 gis-.
+	\dynEO #'(0 . 2) cis2\ff~ cis8 gis-.
 	gis8. cis16 cis4-. r \mark \default
 % Bars 341 to 345
 	R2.*18
@@ -391,12 +391,12 @@ musicFlautoIMvtI = \relative c {
 	a2( g4)\!
 	fis(\mf d' fis~
 	fis8 a g fis d e)
-	<< fis2.(~\<_\moltocresc {s8 s s  s s s\!}>>
+	<< \markEO #'(0 . 3.5) fis2.(~\<_\moltocresc {s8 s s  s s s\!}>>
 	fis8 a g fis d e)
 % Bars 371 to 375
 	fis( a g fis d e)
 	fis( a g fis d e)
-	fis4\f r r
+	\dynEO #'(0 . 2) fis4\f r r
 	R2.*2
 	
 % Bars 376 to 380
@@ -404,21 +404,21 @@ musicFlautoIMvtI = \relative c {
 	e-. r
 	f-. r
 	g-.\! r 
-	\time 3/4 a2.\ff~
+	\time 3/4 \dynEO #'(0 . 2) a2.\ff~
 % Bars 381 to 385
 	a~
 	a~
 	a
 	r4 f\fz r
-	r g\fz r
+	r \dynEO #'(0 . 2) g\fz r
 % Bars 386 to 390
-	r g\fz r
-	r f\fz r
-	r ees\brack\fz r
-	r f\brack\fz r
-	r gis\brack\fz r
+	r \dynEO #'(0 . 2) g\fz r
+	r \dynEO #'(0 . 2) f\fz r
+	r \dynEO #'(0 . 2) ees\brack\fz r
+	r \dynEO #'(0 . 2) f\brack\fz r
+	r \dynEO #'(0 . 2) gis\brack\fz r
 % Bars 391 to 395
-	a2\ff~ a8 e-.
+	\dynEO #'(0 . 2) a2\ff~ a8 e-.
 	e8. a16 a4-. r
 	R2.*2
 	
@@ -459,7 +459,7 @@ musicFlautoIMvtI = \relative c {
 	
 	f'8.\pp a16 a4-. r
 	f8. a16 a4-. r
-	d2->\ff a8. d16-.
+	\dynEO #'(0 . 2) d2->\ff a8. d16-.
 	cis2(-> bes8) r
 % Bars 441 to 445
 	fis'2-> cis8. fis16

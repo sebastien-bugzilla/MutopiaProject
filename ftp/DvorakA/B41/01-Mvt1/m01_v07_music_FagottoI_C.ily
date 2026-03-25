@@ -34,7 +34,7 @@ musicFagottoIMvtI = \relative c {
 		a-> g-> bes->\!
 		\partCombineApart \once \stemDown a2~ a8 e-. \partCombineAutomatic
 % Bars 21 to 25
-		e8.-> a16 a8 r a8.-> cis16
+		\aIIXoffset #-3 e8.-> a16 a8 r a8.-> cis16
 		cis8 r cis8.-> e16 e8-> g->
 		e-> cis-> bes-> g-> \tuplet 3/2 4 {e-> cis-> bes->}
 		a-. r bes'(\fz a16) r d8(\fz cis16) r
@@ -71,7 +71,7 @@ musicFagottoIMvtI = \relative c {
 	
 % Bars 56 to 60
 		
-		\partCombineApart r4 d'4.(\p\< ees8
+		\partCombineApart r4 \shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . -0.5)) Slur d'4.(\p\< ees8
 		g4 f c\!
 		ees2\> d4~
 		d\!) bes4.(\p c8) \partCombineAutomatic
@@ -130,11 +130,11 @@ musicFagottoIMvtI = \relative c {
 		a->\fz
 		a->\fz
 % Bars 106 to 110
-		\partCombineApart gis'\>~
+		\partCombineApart \hairpinShorten #'(1 . 0) gis'\>~
 		<< gis {s4 s\! s}>> \partCombineAutomatic \clef tenor
 		e2\fp~ e8\> b!-.
 		b8. e16 e4-.\! r4 \clef bass
-		<< gis,2.\pp~ {s4 s s_\dimmarkup}>>
+		<< gis,2.-\tweak X-offset -3 \pp~ {s4 s s_\dimmarkup}>>
 % Bars 111 to 115
 		gis2.~
 		gis~
@@ -187,18 +187,18 @@ musicFagottoIMvtI = \relative c {
 	R2.
 	<< \once \partCombineChords ees\fz\> {s4 s s8 s\!}>>
 	R2.
-	\partCombineApart a,4(\f\< c4. ees8)\!
-	ees2(\> bes4)\!
+	\partCombineApart a,4(_\f_\< c4. ees8)\!
+	ees2(_\> bes4)\!
 % Bars 156 to 160
-	a4(\< c4. ees8)\!
-	ees2(\> bes4)\! \clef tenor
-	f'2.(\p\<
+	a4(_\< c4. ees8)\!
+	ees2(_\> bes4)\! \clef tenor
+	f'2.(_\p_\<
 	ges~\!
 	ges4) r r \partCombineAutomatic \clef bass
 % Bars 161 to 165
 	R2.*5
 % Bars 166 to 170
-	d2.(_\mfcresc
+	\shape #'((0 . -0.2)(0 . -1)(0 . -1)(0 . -0.2)) Slur d2.(_\mfcresc
 	ees)
 	d(
 	ees) \clef tenor
@@ -242,7 +242,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 206 to 210
 	
 	\clef tenor
-	\partCombineApart g''2\p~ g8 d
+	\partCombineApart g''2-\offset X-offset -0.5 \p~ g8 d
 	d8. fis16 fis4-. r
 	g2~ g8 d
 % Bars 211 to 215
@@ -344,7 +344,7 @@ musicFagottoIMvtI = \relative c {
 	c)
 	d \mark \default
 % Bars 296 to 300
-	c,2\ff( g8.) c16-.
+	\aIIXoffset -4 c,2\ff( g8.) c16-.
 	b2( aes4)
 	d2( a!8.) d16-.
 	cis2(-> bes!4)
@@ -418,17 +418,17 @@ musicFagottoIMvtI = \relative c {
 	
 	
 	\mark \default
-	\partCombineApart d4(\p\< fis4. a8
+	\partCombineApart \clef tenor d4(\p\< fis4. a8
 	a2 g4)\!
 % Bars 361 to 365
-	d4(\< fis4. a8
+	\shape #'((0 . 1.5)(0 . -0.5)(0 . -0.5)(0 . 1.5)) Slur d4(\< fis4. a8
 	a2 g4)\!
 	fis4 r r \partCombineAutomatic
 	R2.*3
 	
 % Bars 366 to 370
 	
-	\partCombineApart d2.(~
+	\partCombineApart \clef bass d2.(~
 	d2 b8 cis)
 	<< d2.(~_\moltocresc {s4 s s8 s}>>
 	d2 b8 cis)
@@ -463,7 +463,7 @@ musicFagottoIMvtI = \relative c {
 	
 	
 	
-	\partCombineApart fis''2\pp~ fis8 d-.
+	\partCombineApart fis''2-\offset X-offset -2.8 \pp~ fis8 d-.
 	d8. fis16 fis4-. r \partCombineAutomatic
 % Bars 401 to 405
 	R2.*14
@@ -486,7 +486,7 @@ musicFagottoIMvtI = \relative c {
 	r a-^\f r
 	R2.*2
 	\markk
-	\partCombineApart d2( cis4
+	\partCombineApart \tempoXoffset #1.5 d2( cis4
 % Bars 426 to 430
 	d a cis)
 	d2( cis4

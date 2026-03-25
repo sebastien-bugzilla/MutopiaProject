@@ -134,7 +134,7 @@ musicFagottoIIMvtI = \relative c {
 		R2. \clef tenor
 		b'2\fp~ b8\> gis-.
 		gis8. b!16 b4-.\! r4 \clef bass
-		<< e,2.\pp~ {s4 s s_\dimmarkup}>>
+		<< e,2.-\tweak X-offset -3 \pp~ {s4 s s_\dimmarkup}>>
 % Bars 111 to 115
 		e2.~
 		e~

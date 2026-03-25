@@ -118,9 +118,9 @@ musicTrombeIIMvtI = \relative c {
 	cis2 r4
 	cis2.->~
 	cis2 r4
-	cis2\fz r4
+	cis2-\tweak X-offset 0 \fz r4
 % Bars 141 to 145
-	cis2->\fz r4
+	cis2->-\tweak X-offset 0 \fz r4
 	cis4\f r r
 	cis r r
 	cis r r
@@ -143,13 +143,13 @@ musicTrombeIIMvtI = \relative c {
 	
 % Bars 171 to 175
 	\mark \default
-	f8-.\ff r r4 e8-.\fz r
-	f-. r r4 e8-.\fz r
+	f8-.\ff r r4 e8-.-\tweak X-offset 0 \fz r
+	f-. r r4 e8-.-\tweak X-offset 0 \fz r
 	f-. r f2\fz
 	bes4-. r c,-.
 % Bars 176 to 180
-	f8-. r r4 e8-.\fz r
-	f-. r r4 e8-.\fz r
+	f8-. r r4 e8-.-\tweak X-offset 0 \fz r
+	f-. r r4 e8-.-\tweak X-offset 0 \fz r
 	f r e2\fz
 	r4 e-^ e-^
 	cis8-. r r4 cis8-. r
@@ -158,7 +158,7 @@ musicTrombeIIMvtI = \relative c {
 	cis-. r r4 r
 	R2.*2
 	
-	r4 r c!-.\fz
+	r4 r c!-.-\tweak X-offset -1.5 \fz
 % Bars 186 to 190
 	R2.
 	r4 r c-.\fz
@@ -168,8 +168,8 @@ musicTrombeIIMvtI = \relative c {
 % Bars 191 to 195
 	des2 r4
 	des2.\fz
-	des->\>
-	des->
+	<< des-> {s8 s\> s4 s}>>
+	des2.->
 	<< des->~ {s4 s s\!}>>
 % Bars 196 to 200
 	des4\p r r
@@ -210,17 +210,17 @@ musicTrombeIIMvtI = \relative c {
 % Bars 241 to 245
 	
 	
-	r4 r cis->\fz
+	r4 r cis->-\tweak X-offset -1 \fz
 	R2.
 	r4 r cis->
 % Bars 246 to 250
 	R2.
-	r4 r d->\fz
+	r4 r d->-\tweak X-offset -1 \fz
 	R2.
-	r4 r d->\fz
+	r4 r d->-\tweak X-offset -2.5 \fz
 	R2.
 % Bars 251 to 255
-	r4 r d->\f
+	r4 r d->-\tweak X-offset -2 \f
 	\time 2/4 c4-> r
 	cis-> r
 	f-> r
@@ -235,11 +235,11 @@ musicTrombeIIMvtI = \relative c {
 	a,2->\ff~ a8 r
 	d2\fz~ d8 r
 	d2\fz~ d8 r
-	a2\fz~ a8 r
-	a2\fz~ a8 r
+	a2-\tweak X-offset -1 \fz~ a8 r
+	a2-\tweak X-offset -1 \fz~ a8 r
 % Bars 266 to 270
-	a2\fz~ a8 r
-	a2\fz~ a8 r
+	a2-\tweak X-offset -1.5 \fz~ a8 r
+	a2-\tweak X-offset -1.5 \fz~ a8 r
 	e'-. r r4 dis8-.\fz r
 	e-. r r4 dis8-.\fz r
 	e-. r e4-. cis-.
@@ -295,12 +295,12 @@ musicTrombeIIMvtI = \relative c {
 % Bars 321 to 325
 	c4 r r
 	R2.
-	c4-.\ff r r
+	c4-.-\tweak X-offset -1 \ff r r
 	R2.
-	c4-.\ff r r
+	c4-.-\tweak X-offset -1 \ff r r
 % Bars 326 to 330
 	R2.
-	g4-.\ff r r
+	g4-.-\tweak X-offset -3 \ff r r
 	R2.
 	b2.->\ff~
 	b~

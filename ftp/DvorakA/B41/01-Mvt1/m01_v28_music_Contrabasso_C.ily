@@ -23,9 +23,9 @@ musicContrabassoMvtI = \relative c {
 		c!-> b-> bes->
 % Bars 11 to 15
 		a4.\fz bes8-> c-> c->
-		\afterGrace c2.\f\<^\startTrillSpan {b16(\! c)\stopTrillSpan}
+		\afterGrace 15/16 c2.\f\<^\startTrillSpan {b16(\! c)\stopTrillSpan}
 		f4 r r
-		r r f,16->(\f\< g32 a bes c d e)\!
+		r r f,16->(-\offset X-offset -2 \f\< g32 a bes c d e)\!
 		f4 r r
 % Bars 16 to 20
 		r r f16->(\f\< g32 a bes c d e)\!
@@ -36,7 +36,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 21 to 25
 		e8->\f a-> cis\fz r a-. cis-.
 		e\fz r cis[-. e-. g]\brack\fz r
-		r4 r \tuplet 3/2 4 {e,8(\f cis bes}
+		r4 r \tupletExtraOffset #'(0.5 . 0) \tuplet 3/2 4 {e,8(\f cis bes}
 		a) r r4 r
 		R2. \mark \default
 % Bars 26 to 30
@@ -58,7 +58,7 @@ musicContrabassoMvtI = \relative c {
 		a,8 r fis''[ r16 e\> d8 r16 cis]
 		b8\! r e,4-._\brackM\dimmarkup e-.
 % Bars 41 to 45
-		a,8 r r4 cis8->\p^\pizz r
+		a,8 r r4 cis8->\p-\offset X-offset -4 ^\pizz r
 		a r r4 cis->_\dimmarkup
 		a8 r fis'4 b
 		r e,\pp e'
@@ -109,7 +109,7 @@ musicContrabassoMvtI = \relative c {
 		c r c
 		r c c
 		f-> r r
-		f->\mf^\arco r r
+		\markEO #'(-5 . -1) f->\mf^\arco r r
 		f->_\crescmarkup r r
 % Bars 86 to 90
 		f-> r f->
@@ -174,7 +174,7 @@ musicContrabassoMvtI = \relative c {
 	R2.*2
 % Bars 131 to 135
 	
-	cis4^\pizz\p\> r r
+	\markEO #'(-5 . -0.5) cis4^\pizz\p\> r r
 	cis\! r r
 	cis\pp\> r r
 	cis\! r r
@@ -210,7 +210,7 @@ musicContrabassoMvtI = \relative c {
 	
 % Bars 161 to 165
 	
-	f'4\p^\pizz r f
+	\markEO #'(-5.5 . 0) f'4\p^\pizz r f
 	r f f
 	f r f
 	r f f
@@ -236,10 +236,10 @@ musicContrabassoMvtI = \relative c {
 	d-. r r4 fis8-. r
 	d-. r cis2\ff
 	r4 cis16-> cis-. cis8-. cis16-> cis-. cis8-.
-	fis4-. fis'4..\fz eis16
+	fis4-. \dynEO #'(0 . 2) fis'4..\fz eis16
 	dis8->[ r16 cis] b8->[ r16 ais] gis8->[ r16 cis]
 % Bars 186 to 190
-	fis,4-. fis'4..->\fz eis16
+	fis,4-. \dynEO #'(0 . 2) fis'4..->\fz eis16
 	dis8->[ r16 cis] b8->[ r16 ais] gis8->[ r16 cis]-.
 	fis,2\ff~ fis8 cis-.
 	cis8. fis16 fis4-. r
@@ -347,7 +347,7 @@ musicContrabassoMvtI = \relative c {
 	a,8-. r fis''->[ r16 e-. d8-> r16 cis-.]
 	b8 r e,4-^ e-^
 % Bars 276 to 280
-	a,-.\f r cis->_\brackM\dimmarkup^\pizz
+	a,-.\f r cis->_\brackM\dimmarkup-\offset X-offset -5 ^\pizz
 	a r cis->\fz
 	a8 r fis'4\p\> d
 	b e e,\!
@@ -428,8 +428,8 @@ musicContrabassoMvtI = \relative c {
 	a2.\fp\>
 	g~
 	g
-	fis)\!
-	e\pp~
+	<< fis) {s4 s s\!}>>
+	e2.\pp~
 % Bars 346 to 350
 	e~
 	e4 r r
@@ -439,7 +439,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 351 to 355
 	d r d
 	r a a 
-	d r d'(\<^\arco
+	d r d'(\<-\offset X-offset -4 ^\arco
 	<< cis2.) {s4 s s\!}>>
 	b2.(\fz\>
 % Bars 356 to 360

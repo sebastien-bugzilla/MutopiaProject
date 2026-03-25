@@ -168,8 +168,8 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 191 to 195
 	fis4 r r
 	fis2.->
-	fis->\>
-	fis
+	<< fis-> {s8 s\> s4 s}>>
+	fis2.
 	<< fis~ {s4 s s\!}>>
 % Bars 196 to 200
 	fis4\p r r
@@ -276,7 +276,7 @@ musicTrombonoIIMvtI = \relative c {
 	aes2-> r4
 	aes2-> r4
 	aes2-> r4
-	c,4-^\ff des-^ f-^
+	c,4-^-\offset X-offset -0.5 \ff des-^ f-^
 	aes-^ c-^ des-^
 % Bars 321 to 325
 	f-^-. r r

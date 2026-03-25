@@ -29,7 +29,7 @@ musicCornoIIIMvtI = \relative c {
 		g2\fz~ g8 r
 % Bars 16 to 20
 		R2.
-		g2\fz->~ g8 a-.
+		\dynEO #'(-1 . 0) g2\fz->~ g8 a-.
 		a4->\< g-> f->
 		e-> g-> f->\!
 		\partCombineApart b2~ b8 b,-. 
@@ -40,10 +40,10 @@ musicCornoIIIMvtI = \relative c {
 		R2.*2
 		\mark \default
 % Bars 26 to 30
-		c2->\ff~ c8 r
+		\dynEO #'(-1 . 0) c2->\ff~ c8 r
 		b2\fz~ b8 r 
 		b2\fz~ b8 r
-		c2\fz~ c8 r
+		\dynEO #'(0.5 . 1) c2\fz~ c8 r
 		bes2\fz~ bes8 r
 % Bars 31 to 35
 		a2\fz~ a8 r
@@ -135,14 +135,14 @@ musicCornoIIIMvtI = \relative c {
 % Bars 131 to 135
 	
 % Bars 136 to 140
-	cis2.->\ff~
+	\dynEO #'(-2.5 . 0.5) cis2.->\ff~
 	cis2 r4
 	cis2.->~
 	cis2 r4
-	cis2->\fz r4
+	cis2->-\tweak X-offset -1.5 \fz r4
 % Bars 141 to 145
-	cis2->\fz r4
-	cis2.->\f~
+	cis2->-\tweak X-offset -1.5 \fz r4
+	cis2.->-\tweak X-offset -1.5 \f~
 	cis
 	cis2.->~
 	cis
@@ -189,15 +189,15 @@ musicCornoIIIMvtI = \relative c {
 	r4 r ees-.\fz
 % Bars 186 to 190
 	R2.
-	r4 r ees-.\fz
+	r4 r ees-.-\tweak X-offset 0 \fz
 	des2.\fz~
 	des2 r4
 	des2.\fz~
 % Bars 191 to 195
 	des2 r4
 	des2.\fz
-	des->\>
-	des->
+	<< des-> {s8 s\> s4 s}>>
+	des2.->
 	<< des->~ {s4 s s\!}>>
 % Bars 196 to 200
 	des4\p r r
@@ -211,7 +211,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 216 to 220
 	
 	
-	c2\ff~ c8 a-.
+	\aIIXoffset -5 c2\ff~ c8 a-.
 	a8. c16 c4-. r
 	c2~ c8 a-.
 % Bars 221 to 225
@@ -228,7 +228,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 231 to 235
 	
 	
-	\partCombineApart r4 g->\f g->
+	\partCombineApart r4 g->-\tweak X-offset -1.3 \f g->
 	r fis-> fis-> \partCombineAutomatic
 	R2.*5
 % Bars 236 to 240
@@ -236,7 +236,7 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	
-	\partCombineApart r4 c'->\f c->
+	\partCombineApart r4 c'->-\offset X-offset -2 \f c->
 % Bars 241 to 245
 	r b-> b-> \partCombineAutomatic
 	R2.
@@ -254,7 +254,7 @@ musicCornoIIIMvtI = \relative c {
 	\time 2/4 c-> r
 	a-> r
 	a-> r 
-	\time 3/4 d->\ff r b->
+	\time 3/4 \aIIXoffset #-4 d->\ff r b->
 % Bars 256 to 260
 	r gis-> r
 	e-> r r
@@ -262,9 +262,9 @@ musicCornoIIIMvtI = \relative c {
 	e\f r r
 	R2.
 % Bars 261 to 265
-	c'2->\ff~ c8 r
+	c'2->-\tweak X-offset -1 \ff~ c8 r
 	b2\fz~ b8 r
-	d2\fz~ d8 r
+	d2-\tweak X-offset 0 \fz~ d8 r
 	c2\fz~ c8 r
 	bes2\fz~ bes8 r
 % Bars 266 to 270
@@ -288,10 +288,10 @@ musicCornoIIIMvtI = \relative c {
 	
 % Bars 291 to 295
 	
-	b2.\fz_\crescmarkup~
-	b~
+	<< b2.\fz~ {s4 s2_\crescmarkup}>>
+	b2.~
 	b\<
-	<< a_\fzmarkup {s4 s s8 s\!}>> \mark \default
+	<< \markEO #'(0 . 2) a_\fzmarkup {s4 s s8 s\!}>> \mark \default
 % Bars 296 to 300
 	b4\f r r
 	a2~_\fbenmarc a8 fis!-.
@@ -315,36 +315,36 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	
-	aes2->\ff r4
+	aes2->-\tweak X-offset -1.5 \ff r4
 % Bars 316 to 320
 	aes2-> r4
 	aes2-> r4
 	aes2-> r4
-	aes2.\ff~
+	aes2.-\tweak X-offset -1.5 \ff~
 	aes~
 % Bars 321 to 325
 	aes4 r r
 	R2.
-	a!4-.\ff r r
+	a!4-.-\tweak X-offset -1.5 \ff r r
 	R2.
-	a4-.\ff r r
+	a4-.-\tweak X-offset -1.5 \ff r r
 % Bars 326 to 330
 	R2.
 	bes4-.\ff r r
 	R2.
-	d2.->\ff~
+	d2.->-\tweak X-offset 0 \ff~
 	d~
 % Bars 331 to 335
 	d4 r r
 	R2.
 	\once \partCombineApart e,4 r r
 	R2.
-	aes2->\ff ees8.-> aes16->
+	\aIIXoffset #-3 aes2->\ff ees8.-> aes16->
 % Bars 336 to 340
 	aes2( ees4)
 	gis4-. r r
 	R2.
-	aes2->\ff ees8.-> aes16->
+	\aIIXoffset #-3 aes2->\ff ees8.-> aes16->
 	aes2( ees4) \mark \default
 % Bars 341 to 345
 	e!2.\p\>~
@@ -377,7 +377,7 @@ musicCornoIIIMvtI = \relative c {
 	e~
 % Bars 366 to 370
 	e
-	a2->\mf~ a8 e-.
+	\aIIXoffset #-2.2 a2->\mf~ a8 e-.
 	e8. a16 a4-. r
 	a2~\<_\moltocresc a8 e-.
 	e8. a16 a4-.\! r
@@ -392,7 +392,7 @@ musicCornoIIIMvtI = \relative c {
 	gis-. r
 	a-. r
 	b-.\! r
-	\time 3/4 c2.\ff~
+	\time 3/4 c2.-\tweak X-offset -1 \ff~
 % Bars 381 to 385
 	c~
 	c~
@@ -401,7 +401,7 @@ musicCornoIIIMvtI = \relative c {
 	r b\fz r
 % Bars 386 to 390
 	r b\fz r
-	r c\fz r
+	r \dynEO #'(0 . 0.3) c\fz r
 	r bes\brack\fz r
 	r c\brack\fz r
 	r a\brack\fz r
@@ -442,7 +442,7 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	
-	c'2->\ff r4
+	c'2->-\tweak X-offset 0 \ff r4
 	d2-> r4
 % Bars 441 to 445
 	aes2-> r4

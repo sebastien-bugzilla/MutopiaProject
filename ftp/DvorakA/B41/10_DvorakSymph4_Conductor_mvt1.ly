@@ -22,8 +22,8 @@
 \include "./00-Common/DvorakSymph4_NameStaff.ily"
 \include "./00-Common/DvorakSymph4_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-\include "./00-Common/DvorakSymph4_Format_temp.ily"
-%\include "./00-Common/DvorakSymph4_Format_Cond_Mvt01.ily"
+%\include "./00-Common/DvorakSymph4_Format_temp.ily"
+\include "./00-Common/DvorakSymph4_Format_Cond_Mvt01.ily"
 \include "./01-Mvt1/m01_v01_music_FlautoI_C.ily"
 \include "./01-Mvt1/m01_v02_music_FlautoII_C.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI_C.ily"
@@ -77,9 +77,9 @@
 						\new Voice {
 							\displayFilterVoice
 						}
-%						\new Voice {
-%							\tempiMvtI
-%						}
+						\new Voice {
+							\tempiMvtI
+						}
 						\new Voice {
 							\timeMvtI \nameStaffIMvtI \musicFlautoIMvtI
 						}

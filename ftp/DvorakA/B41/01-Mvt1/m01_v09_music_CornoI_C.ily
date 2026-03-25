@@ -40,8 +40,8 @@ musicCornoIMvtI = \relative c {
 		R2.*2
 		\mark \default
 % Bars 26 to 30
-		e'2->\ff~ e8 r
-		f2\fz~ f8 r
+		\dynEO #'(-1 . 0) e'2->\ff~ e8 r
+		\dynEO #'(0.5 . 1) f2\fz~ f8 r
 		f2\fz~ f8 r
 		e2\fz~ e8 r
 		e2\fz~ e8 r
@@ -49,19 +49,19 @@ musicCornoIMvtI = \relative c {
 		f2\fz~ f8 r
 		dis2\fz~ dis8 r
 		e8-.-> r e-.-> r fis-.\brack\fz r
-		e->-. r e-.-> r fis-.\fz r
+		e->-. r e-.-> r \dynEO #'(-1 . 0) fis-.\fz r
 		e-. r e4-. cis-.
 % Bars 36 to 40
 		r dis-. dis-.
-		e8-.-> r e-.-> r fis-.\fz r
-		e-.-> r e-.-> r fis-.\fz r
+		e8-.-> r e-.-> r \dynEO #'(-1 . 0) fis-.\fz r
+		e-.-> r e-.-> r \dynEO #'(-1 . 0) fis-.\fz r
 		e-. r e4-.\> cis-.\!
 		r dis-._\dimmarkup dis-.
 % Bars 41 to 45
 		e8-. r r4 r
 		R2.*2
 		
-		\partCombineApart r4 r b->\pp
+		\partCombineApart r4 r b->-\offset X-offset -2.5 \pp
 		r r b->
 % Bars 46 to 50
 		r r b-> \partCombineAutomatic
@@ -124,7 +124,7 @@ musicCornoIMvtI = \relative c {
 		R2.*3
 		
 		
-		\partCombineApart b2->\p~^\solo b8 fis-.
+		\partCombineApart b2->-\offset X-offset -2 \p~^\solo b8 fis-.
 % Bars 111 to 115
 		fis8.\> b16 b4-.\! r
 		fis8.-\ppdim b16 b4-. r
@@ -153,7 +153,7 @@ musicCornoIMvtI = \relative c {
 	R2.*2
 % Bars 131 to 135
 	
-	\partCombineApart b2->\p r4
+	\partCombineApart b2->-\offset X-offset -2 \p r4
 	b2-> r4 \partCombineAutomatic
 	R2.*2
 	
@@ -171,10 +171,10 @@ musicCornoIMvtI = \relative c {
 	
 	
 	
-	<< cis2.->\fz\> {s4 s s8 s\!}>>
+	<< cis2.->-\tweak X-offset -1.5 \fz\> {s4 s s8 s\!}>>
 % Bars 151 to 155
 	R2.
-	<< cis2.\fz\> {s4 s s8 s\!}>>
+	<< cis2.-\tweak X-offset -1.5 \fz\> {s4 s s8 s\!}>>
 	R2.
 	bes\fz->
 	bes->\fz
@@ -213,13 +213,13 @@ musicCornoIMvtI = \relative c {
 % Bars 186 to 190
 	des2\fz->~ des8 aes-.
 	aes8. des16 des4-. r
-	f2.\fz~
+	f2.-\tweak X-offset 0 \fz~
 	f2 r4
-	f2.\fz~
+	f2.-\tweak X-offset 0 \fz~
 % Bars 191 to 195
 	f2 r4
-	f2.\fz
-	<< f-> {s4 s\> s}>>
+	f2.-\tweak X-offset 0 \fz
+	<< f-> {s8 s\> s4 s}>>
 	f2.->
 	<< f->~ {s4 s s\!}>>
 % Bars 196 to 200
@@ -258,11 +258,11 @@ musicCornoIMvtI = \relative c {
 	c8. c16 c4-. r \mark \default
 	c4-> r r
 	R2.
-	\partCombineApart r4 r b8.->\f b16
+	\partCombineApart r4 r b8.->-\offset X-offset -1.5 \f b16
 % Bars 231 to 235
 	b2.\fz\>~
 	b\! \partCombineAutomatic
-	r4 b->\f b->
+	r4 b->-\tweak X-offset -2 \f b->
 	r b-> b->
 	R2.*5
 % Bars 236 to 240
@@ -296,21 +296,21 @@ musicCornoIMvtI = \relative c {
 	e\f r r
 	R2.
 % Bars 261 to 265
-	e'2->\ff~ e8 r
-	f2\fz~ f8 r
-	f2\fz~ f8 r
-	e2\fz~ e8 r
-	e2\fz~ e8 r
+	e'2->-\tweak X-offset 0 \ff~ e8 r
+	f2-\tweak X-offset 0 \fz~ f8 r
+	f2-\tweak X-offset 0 \fz~ f8 r
+	e2-\tweak X-offset 0 \fz~ e8 r
+	e2-\tweak X-offset 0 \fz~ e8 r
 % Bars 266 to 270
 	f2\fz~ f8 r
-	dis2\fz~ dis8 r
-	e8-. r e-. r fis-.\fz r
-	e-. r e-. r fis-.\fz r
+	dis2-\tweak X-offset 0 \fz~ dis8 r
+	e8-. r e-. r fis-.-\tweak X-offset 0 \fz r
+	e-. r e-. r fis-.-\tweak X-offset 0 \fz r
 	e-. r e4-. cis-.
 % Bars 271 to 275
 	r dis-. dis-.
-	e8-. r e-. r fis-.\fz r
-	e-. r e-. r fis-.\fz r
+	e8-. r e-. r fis-.-\tweak X-offset 0 \fz r
+	e-. r e-. r fis-.-\tweak X-offset 0 \fz r
 	e-. r e4-. cis-.
 	r dis-. dis-.
 % Bars 276 to 280
@@ -325,13 +325,13 @@ musicCornoIMvtI = \relative c {
 	<< b2.->\fz {s4 s2_\crescmarkup}>>
 	c2.\fz
 	cis->\fz\<
-	<< dis->_\fzmarkup {s4 s s8 s\!}>> \mark \default
+	<< \markEO #'(0 . 2) dis->_\fzmarkup {s4 s s8 s\!}>> \mark \default
 % Bars 296 to 300
 	d!4\f r r
 	R2.*3
 	
 	
-	b2->\ff fis8.-. b16-.
+	b2->-\tweak X-offset 0 \ff fis8.-. b16-.
 % Bars 301 to 305
 	ais2->( g8) r
 	cis4..-> ais16[ e8. cis16]
@@ -366,22 +366,22 @@ musicCornoIMvtI = \relative c {
 	R2.
 	e!4-.\ff r r
 	R2.
-	f!2.->\ff~
+	f!2.->-\tweak X-offset 0 \ff~
 	f~
 % Bars 331 to 335
 	f4 r r
 	R2.
 	b,4\f r r
 	R2.
-	dis2.\ff~
+	dis2.-\tweak X-offset 0.5 \ff~
 % Bars 336 to 340
 	dis2 r4
 	b4-. r r
 	R2.
-	dis2.\ff~
+	dis2.-\tweak X-offset 0.5 \ff~
 	dis2 r4 \mark \default
 % Bars 341 to 345
-	\partCombineApart e2->\fp^\solo-\dimmarkup b8. e16
+	\partCombineApart e2->-\offset X-offset -2.3 \fp-\offset X-offset -4 ^\solo -\offset X-offset 1 -\dimmarkup b8. e16
 	e2( b4)
 	e2-\dimmarkup b8. e16
 	e2( b4)
@@ -397,7 +397,7 @@ musicCornoIMvtI = \relative c {
 	e2->(\> d4)\!
 	cis r r
 	R2.
-	a2.->\fp\>~
+	a2.->-\tweak X-offset -2 \fp\>~
 % Bars 356 to 360
 	a~
 	a4\! r r
@@ -405,7 +405,7 @@ musicCornoIMvtI = \relative c {
 	\partCombineApart a4(\p\< cis4. e8
 	e2 d4)\!
 % Bars 361 to 365
-	a4(\< cis4. e8
+	\shape #'((0 . 1.5)(0 . -0.5)(0 . -0.5)(0 . 1.5)) Slur a4(\< cis4. e8
 	e2 d4)\! \partCombineAutomatic
 	cis(_\crescmarkup e4. e8)
 	e2( d4)
@@ -427,7 +427,7 @@ musicCornoIMvtI = \relative c {
 	d-. r
 	e-. r
 	d-.\! r
-	\time 3/4 e2.\ff~
+	\time 3/4 e2.-\tweak X-offset 0 \ff~
 % Bars 381 to 385
 	e~
 	e~
@@ -436,7 +436,7 @@ musicCornoIMvtI = \relative c {
 	r d\fz r
 % Bars 386 to 390
 	r d\fz r
-	r e\fz r
+	r e-\tweak X-offset 0 \fz r
 	r e!\brack\fz r
 	r f\brack\fz r
 	r ees\brack\fz r
@@ -453,7 +453,7 @@ musicCornoIMvtI = \relative c {
 	R2.*2
 	
 % Bars 401 to 405
-	\partCombineApart e2\pp^\solo c8. e16
+	\partCombineApart e2-\offset X-offset -1 \pp^\solo c8. e16
 	d2( b4)
 	c2 g8. c16
 	b2( gis4) \partCombineAutomatic
@@ -474,7 +474,7 @@ musicCornoIMvtI = \relative c {
 	
 	
 	
-	e2\p~ e8 c-.
+	e2-\tweak X-offset 0.5 \p~ e8 c-.
 	c8. e16 e4-. r
 % Bars 431 to 435
 	e2~ e8 c-.

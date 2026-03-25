@@ -47,7 +47,7 @@ musicTimpaniMvtI = \relative c {
 		d2.:
 % Bars 31 to 35
 		d:
-		<< d: {s4\< s s\!}>>
+		<< d: {s4\< s s8 s16 s\!}>>
 		a8-> r r4 r
 		a8 r r4 r
 		a4-. a-. a-.

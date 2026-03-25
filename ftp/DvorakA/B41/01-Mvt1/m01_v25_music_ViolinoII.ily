@@ -433,7 +433,7 @@ musicViolinoIIMvtI = \relative c {
 	a'4(\pp\< d4. d8)\!
 	fis2(\> cis4)\!
 % Bars 351 to 355
-	a( d4. d8)
+	a(\< d4. d8)\!
 	fis2(\> cis4)\!
 	a(\< d2
 	<< e2.) {s4 s s\!}>>

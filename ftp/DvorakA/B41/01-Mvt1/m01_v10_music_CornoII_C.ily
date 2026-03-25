@@ -32,7 +32,7 @@ musicCornoIIMvtI = \relative c {
 		c2->~\fz c8 f,-.
 		f4->\< g-> bes->
 		a-> bes-> a->\!
-		gis2\ff~ gis8 b-.
+		gis2-\offset X-offset 0.5 \ff~ gis8 b-.
 % Bars 21 to 25
 		b8.-> e16 e8 r r4
 		r gis,8.-> b16 b8-.-> d-.->
@@ -171,10 +171,10 @@ musicCornoIIMvtI = \relative c {
 	
 	
 	
-	<< cis,2.->\fz\> {s4 s s8 s\!}>>
+	<< cis,2.->-\tweak X-offset -1.5 \fz\> {s4 s s8 s\!}>>
 % Bars 151 to 155
 	R2.
-	<< cis2.\fz\> {s4 s s8 s\!}>>
+	<< cis2.-\tweak X-offset -1.5 \fz\> {s4 s s8 s\!}>>
 	R2.
 	e\fz->
 	f->\fz
@@ -211,15 +211,15 @@ musicCornoIIMvtI = \relative c {
 	des2\f->~ des8 aes-.
 	aes8.-> des16 des4-. r
 % Bars 186 to 190
-	des2\fz->~ des8 aes-.
+	des2-\tweak X-offset 0 \fz->~ des8 aes-.
 	aes8. des16 des4-. r
-	aes2.\fz~
+	aes2.-\tweak X-offset 0 \fz~
 	aes2 r4
-	aes2.\fz~
+	aes2.-\tweak X-offset 0 \fz~
 % Bars 191 to 195
 	aes2 r4
-	aes2.\fz
-	<< aes-> {s4 s\> s}>>
+	aes2.-\tweak X-offset 0 \fz
+	<< aes-> {s8 s\> s4 s}>>
 	aes2.->
 	<< aes->~ {s4 s s\!}>>
 % Bars 196 to 200
@@ -262,7 +262,7 @@ musicCornoIIMvtI = \relative c {
 % Bars 231 to 235
 	
 	
-	r4 e->\f e->
+	r4 e->-\tweak X-offset -2 \f e->
 	r dis-> dis->
 	R2.*5
 % Bars 236 to 240
@@ -296,21 +296,21 @@ musicCornoIIMvtI = \relative c {
 	e\f r r
 	R2.
 % Bars 261 to 265
-	a2->\ff~ a8 r
-	gis2\fz~ gis8 r
-	gis2\fz~ gis8 r
-	a2\fz~ a8 r
-	cis2\fz~ cis8 r
+	a2->-\tweak X-offset 0 \ff~ a8 r
+	gis2-\tweak X-offset 0 \fz~ gis8 r
+	gis2-\tweak X-offset 0 \fz~ gis8 r
+	a2-\tweak X-offset 0 \fz~ a8 r
+	cis2-\tweak X-offset 0 \fz~ cis8 r
 % Bars 266 to 270
 	c!2\fz~ c8 r
-	a2\fz~ a8 r
-	gis8-. r gis-. r gis-.\fz r
-	gis-. r gis-. r gis-.\fz r
+	a2-\tweak X-offset 0 \fz~ a8 r
+	gis8-. r gis-. r gis-.-\tweak X-offset 0 \fz r
+	gis-. r gis-. r gis-.-\tweak X-offset 0 \fz r
 	gis-. r gis4-. a-.
 % Bars 271 to 275
 	r a-. a-.
-	gis8-. r gis-. r gis-.\fz r
-	gis-. r gis-. r gis-.\fz r
+	gis8-. r gis-. r gis-.-\tweak X-offset 0 \fz r
+	gis-. r gis-. r gis-.-\tweak X-offset 0 \fz r
 	gis-. r gis4-. a-.
 	r a-. a-.
 % Bars 276 to 280
@@ -331,7 +331,7 @@ musicCornoIIMvtI = \relative c {
 	R2.*3
 	
 	
-	b2->\ff fis8.-. b16-.
+	b2->-\tweak X-offset 0 \ff fis8.-. b16-.
 % Bars 301 to 305
 	ais2->( g8) r
 	cis4..-> ais16[ e8. cis16]
@@ -366,19 +366,19 @@ musicCornoIIMvtI = \relative c {
 	R2.
 	cis4-.\ff r r
 	R2.
-	b!2.->\ff~
+	b!2.->-\tweak X-offset 0 \ff~
 	b~
 % Bars 331 to 335
 	b4 r r
 	R2.
 	gis4\f r r
 	R2.
-	gis2.\ff~
+	gis2.-\tweak X-offset 0.5 \ff~
 % Bars 336 to 340
 	gis2 r4
 	gis4-. r r
 	R2.
-	gis2.\ff~
+	gis2.-\tweak X-offset 0.5 \ff~
 	gis2 r4 \mark \default
 % Bars 341 to 345
 	R2.*8
@@ -397,7 +397,7 @@ musicCornoIIMvtI = \relative c {
 	cis2->(\> b4)\!
 	a r r
 	R2.
-	a,2.->\fp\>~
+	a,2.->-\tweak X-offset -2 \fp\>~
 % Bars 356 to 360
 	a~
 	a4\! r r
@@ -427,7 +427,7 @@ musicCornoIIMvtI = \relative c {
 	b!-. r
 	c-. r
 	b-.\! r
-	\time 3/4 g2.\ff~
+	\time 3/4 g2.-\tweak X-offset 0 \ff~
 % Bars 381 to 385
 	g~
 	g~
@@ -436,12 +436,12 @@ musicCornoIIMvtI = \relative c {
 	r f\fz r
 % Bars 386 to 390
 	r f\fz r
-	r g\fz r
+	r g-\tweak X-offset 0 \fz r
 	r des'\brack\fz r
 	r c\brack\fz r
 	r c\brack\fz r
 % Bars 391 to 395
-	e,!2\ff~ e8 r
+	e,!2-\offset X-offset 0.5 \ff~ e8 r
 	R2.
 	c'2\p c4
 	b2~ b8 r
@@ -474,7 +474,7 @@ musicCornoIIMvtI = \relative c {
 	
 	
 	
-	c2\p~ c8 e,-.
+	c2-\tweak X-offset 0.5 \p~ c8 e,-.
 	e8. c'16 c4-. r
 % Bars 431 to 435
 	c2~ c8 e,-.

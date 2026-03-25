@@ -34,7 +34,7 @@ musicOboeIIMvtI = \relative c {
 		cis8 r cis8.-> e16 e8-> g->
 		e-> cis-> bes'-> g-> \tuplet 3/2 4 {e-> cis-> bes->}
 		a8-. r bes(\fz a16) r d8(\fz cis16) r
-		f8(\fz e16) r bes'8(\fz a16) r a,(\f\< cis e a)\! \mark \default
+		f8(\fz e16) r bes'8(\fz a16) r a,(-\tweak X-offset #-2 \f\< cis e a)\! \mark \default
 % Bars 26 to 30
 		d,2->\ff d8.-> d16
 		cis2\fz( bes8) r 
@@ -71,13 +71,13 @@ musicOboeIIMvtI = \relative c {
 % Bars 61 to 65
 		R2.*2
 		
-		f2.\pp(
+		f2.-\offset X-offset -2.3 \pp(
 		g4. f8) f4(~
 		f2.
 % Bars 66 to 70
 		g4. f8) f4
 		f2( bes4)\<
-		\stemUp a2.\p(\<
+		\stemUp \dynEO #'(0 . 0.6) a2.\p(\<
 		<< g~ {s4 s s\!}>>
 		\stemDown g2.)
 % Bars 71 to 75
@@ -88,12 +88,12 @@ musicOboeIIMvtI = \relative c {
 		f2.(\< 
 % Bars 76 to 80
 		<< g) {s4 s s\!}>>
-		f2.\>~
-		<< f~ {s4 s\! s}>>
-		f8\p r f4.(_\crescmarkup e8
+		\hairpinShorten #'(1 . -2) f2.\>~
+		<< f~ {s4 s s\!}>>
+		f8-\offset X-offset -1.5 \p r \shape #'((0 . 0.5)(0 . 0.8)(0 . 0.8)(0 . 0.5)) Slur f4.(-\tweak extra-offset #'(2 . 3.2) _\crescmarkup e8
 		d4. c8 d e
 % Bars 81 to 85
-		f4) f4.( e8
+		f4) \shape #'((0 . 0.5)(0 . 0.8)(0 . 0.8)(0 . 0.5)) Slur f4.( e8
 		d4. c8 d e
 		f4)-> r r
 		f4->\mf r r
@@ -121,9 +121,9 @@ musicOboeIIMvtI = \relative c {
 		d2.\fz
 		d\fz
 		d\fz
-		a\fz
+		a-\tweak X-offset 0.5 \fz
 % Bars 106 to 110
-		b2\fz~ b8\> gis-.
+		b2-\tweak X-offset 0.5 \fz~ b8\> gis-.
 		gis8. b16 b4->\! r
 		R2.*6
 % Bars 111 to 115
@@ -146,12 +146,12 @@ musicOboeIIMvtI = \relative c {
 				
 			}
 			\volta 2 {
-				gis,2\ff~ gis8 e-.
+				gis,2-\tweak X-offset 0.5 \ff~ gis8 e-.
 				e8.-> gis16 gis4-. r
 			}
 		}
 	}
-	gis2~\fz gis8 e-.\>
+	gis2~-\tweak X-offset 0.5 \fz gis8 e-.\>
 % Bars 131 to 135
 	e8. gis16 gis4-.\! r
 	R2.*4
@@ -215,7 +215,7 @@ musicOboeIIMvtI = \relative c {
 	ais,2->\f~ ais8 fis-.
 	fis8.-> ais16 ais4-. r
 % Bars 186 to 190
-	ais2->\fz~ ais8 fis-.
+	ais2->-\tweak X-offset 0 \fz~ ais8 fis-.
 	fis8.-> ais16 ais4-. r
 	fis'2.\ff~
 	fis~
@@ -263,17 +263,17 @@ musicOboeIIMvtI = \relative c {
 	b8. b16 b4-. r \mark \default
 	d8.->\ff f16 f2~\fz\>
 	<< f2.\! {s4 s s\!}>>
-	r4 r b,8.->\f b16
+	r4 r b,8.->-\tweak X-offset -2 \f b16
 % Bars 231 to 235
 	b2.\fz\>~
 	b\!
 	R2.*2
 	
-	a8.\ff cis16 cis2~
+	a8.-\tweak X-offset -2 \ff cis16 cis2~
 % Bars 236 to 240
 	cis2.
 	r4 r e,8. a16
-	a2.\fz\>~
+	a2.-\tweak X-offset 0 \fz\>~
 	a\!
 	R2.*2
 % Bars 241 to 245
@@ -380,12 +380,12 @@ musicOboeIIMvtI = \relative c {
 	R2.
 	e,4\f r r
 	R2.
-	cis'2.\ff~
+	cis'2.-\offset X-offset 0.5 \ff~
 % Bars 336 to 340
 	cis2 r4
 	R2.*2
 	
-	cis2.\ff~
+	cis2.-\offset X-offset 0.5 \ff~
 	cis2 r4 \mark \default
 % Bars 341 to 345
 	R2.*8
@@ -415,8 +415,8 @@ musicOboeIIMvtI = \relative c {
 % Bars 366 to 370
 	<< a {s4 s s\!}>>
 	d2.~\mf
-	d4. d8( b cis)
-	<< d2.(~\< {s4 s s\!}>>
+	d4. \beamOffset #'(0.5 . 0.5) d8( b cis)
+	<< d2.(~\< {s4 s s8 s\!}>>
 	d8 fis e d b cis)
 % Bars 371 to 375
 	d( fis! e d b cis)
@@ -443,11 +443,11 @@ musicOboeIIMvtI = \relative c {
 	r f\brack\fz r
 	r d\brack\fz r
 % Bars 391 to 395
-	cis2\ff~ cis8 a-.
+	cis2-\tweak X-offset 0 \ff~ cis8 a-.
 	a8. cis16 cis4-. r
 	R2.*2
 	
-	a2~\fp a8\> f-.
+	a2~-\tweak X-offset 0 \fp a8\> f-.
 % Bars 396 to 400
 	f8. a16 a4-.\! r
 	R2.*2

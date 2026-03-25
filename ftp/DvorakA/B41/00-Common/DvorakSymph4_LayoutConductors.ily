@@ -51,8 +51,8 @@
 	}
 	\context {
 		\Staff
-%		\RemoveEmptyStaves
-		\RemoveAllEmptyStaves
+		\RemoveEmptyStaves
+%		\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f
 		\override MultiMeasureRest.space-increment = 0
@@ -70,6 +70,10 @@
 		\RemoveEmptyStaves
 	}
 	\context {
+		\StaffGroup
+		\override SystemStartBracket.collapse-height = #4
+	}
+	\context {
 		\Score
 %		scriptDefinitions = #my-script-alist
 		\override MetronomeMark.font-size = #2 % 2
@@ -81,6 +85,7 @@
 		\override BarNumber.font-size = #3 % 3
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
+		\override Beam.damping = #3
 		
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t

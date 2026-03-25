@@ -309,6 +309,64 @@ unSubdiviseBeam = {
 	}
 }
 
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = ##t
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+aIIXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override CombineTextScript.X-offset = #offset
+	#}
+)
+
+tupletExtraOffset = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TupletNumber.extra-offset = #offset 
+	#}
+)
+
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
+
+markEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TextScript.layer = #3
+		\once \override TextScript.extra-offset = #offset
+		\once \override TextScript.whiteout = ##t
+		\once \override TextScript.whiteout-style = #'outline
+	#}
+)
+
+tempoXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.X-offset = #offset
+	#}
+)
+
+
+%###############################################################################
+%  Fonctions sur étagère
+%###############################################################################
+
 %noteShift = #(define-music-function
 %	(shift)
 %	(number?)
@@ -333,17 +391,6 @@ unSubdiviseBeam = {
 %		\translate #'(0.5 . 1.1) \tiny \natural 
 %	}
 %}
-
-
-
-
-%aIIXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override CombineTextScript.X-offset = #offset
-%	#}
-%)
 
 %aIIOmit = \once \omit Voice.CombineTextScript
 
@@ -422,24 +469,6 @@ unSubdiviseBeam = {
 %	#}
 %)
 
-%dynEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override DynamicText.extra-offset = #offset
-%		\once \override DynamicText.whiteout = ##t
-%		\once \override DynamicText.whiteout-style = #'outline
-%	#}
-%)
-
-%hairpinShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.shorten-pair = #shortLength
-%	#}
-%)
-
 %hairpinEO = #(define-music-function
 %	(offset)
 %	(pair?)
@@ -479,16 +508,6 @@ unSubdiviseBeam = {
 %	\set stemRightBeamCount = #1
 %}
 
-%markEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TextScript.layer = #3
-%		\once \override TextScript.extra-offset = #offset
-%		\once \override TextScript.whiteout = ##t
-%		\once \override TextScript.whiteout-style = #'outline
-%	#}
-%)
 
 %markWhiteout = {
 %	\once \override Score.RehearsalMark.layer = #3
@@ -605,14 +624,6 @@ unSubdiviseBeam = {
 
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
-%tempoXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.MetronomeMark.X-offset = #offset
-%	#}
-%)
-
 %tempoExtraOffset = #(define-music-function
 %	(offset)
 %	(pair?)
@@ -634,14 +645,6 @@ unSubdiviseBeam = {
 %	(number?)
 %	#{
 %		\once \override TupletNumber.Y-offset = #offset 
-%	#}
-%)
-
-%tupletExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TupletNumber.extra-offset = #offset 
 %	#}
 %)
 

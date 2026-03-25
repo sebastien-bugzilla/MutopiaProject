@@ -139,10 +139,10 @@ musicCornoIVMvtI = \relative c {
 	cis2 r4
 	cis2.->~
 	cis2 r4
-	cis2->\fz r4
+	cis2->-\tweak X-offset -1.5 \fz r4
 % Bars 141 to 145
-	cis2->\fz r4
-	cis2.->\f~
+	cis2->-\tweak X-offset -1.5 \fz r4
+	cis2.->-\tweak X-offset -1.5 \f~
 	cis
 	cis2.->~
 	cis
@@ -166,7 +166,7 @@ musicCornoIVMvtI = \relative c {
 	
 % Bars 161 to 165
 	
-	c2.\p~
+	c2.-\offset X-offset -1.7 \p~
 	c~
 	c~
 	c~
@@ -196,15 +196,15 @@ musicCornoIVMvtI = \relative c {
 	r4 r aes-.\fz
 % Bars 186 to 190
 	R2.
-	r4 r aes-.\fz
+	r4 r aes-.-\tweak X-offset 0 \fz
 	des,2.\fz~
 	des2 r4
 	des2.\fz~
 % Bars 191 to 195
 	des2 r4
 	des2.\fz
-	des->\>
-	des->
+	<< des-> {s8 s\> s4 s}>>
+	des2.->
 	<< des->~ {s4 s s\!}>>
 % Bars 196 to 200
 	des4\p r r
@@ -269,9 +269,9 @@ musicCornoIVMvtI = \relative c {
 	e\f r r
 	R2.
 % Bars 261 to 265
-	e2->\ff~ e8 r
+	e2->-\tweak X-offset -1 \ff~ e8 r
 	f2\fz~ f8 r
-	b2\fz~ b8 r
+	b2-\tweak X-offset 0 \fz~ b8 r
 	a2\fz~ a8 r
 	g2\fz~ g8 r
 % Bars 266 to 270
@@ -295,8 +295,8 @@ musicCornoIVMvtI = \relative c {
 	
 % Bars 291 to 295
 	
-	b2.\fz~
-	b~
+	<< b2.~\fz {s4 s2 }>>
+	b2.~
 	b\<
 	<< fis' {s4 s s8 s\!}>> \mark \default
 % Bars 296 to 300
@@ -322,24 +322,24 @@ musicCornoIVMvtI = \relative c {
 	
 	
 	
-	ees2->\ff r4
+	ees2->-\tweak X-offset -1.5 \ff r4
 % Bars 316 to 320
 	ees2-> r4
 	ees2-> r4
 	ees2-> r4
-	ees2.\ff~
+	ees2.-\tweak X-offset -1.5 \ff~
 	ees~
 % Bars 321 to 325
 	ees4 r r
 	R2.
-	fis4-.\ff r r
+	fis4-.-\tweak X-offset -1.5 \ff r r
 	R2.
-	fis4-.\ff r r
+	fis4-.-\tweak X-offset -1.5 \ff r r
 % Bars 326 to 330
 	R2.
 	g4-.\ff r r
 	R2.
-	b!2.->\ff~
+	b!2.->-\tweak X-offset 0 \ff~
 	b~
 % Bars 331 to 335
 	b4 r r
@@ -399,7 +399,7 @@ musicCornoIVMvtI = \relative c {
 	e-. r
 	e-. r
 	g-.\! r
-	\time 3/4 c,2.\ff~
+	\time 3/4 c,2.-\tweak X-offset -1 \ff~
 % Bars 381 to 385
 	c~
 	c~
@@ -449,7 +449,7 @@ musicCornoIVMvtI = \relative c {
 	
 	
 	
-	a2->\ff r4
+	a2->-\tweak X-offset 0 \ff r4
 	gis2-> r4
 % Bars 441 to 445
 	f2-> r4

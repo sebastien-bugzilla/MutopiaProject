@@ -23,9 +23,9 @@ musicVioloncelloMvtI = \relative c {
 		\tuplet 6/4 4 {c!-> c c c c c  b-> b b b b b  bes!-> bes bes bes bes bes}
 % Bars 11 to 15
 		a(\fz bes a bes  a bes a bes  c b c b)
-		c(\f\< b c b  c b c b  \tuplet 5/4 4 {c b c d e\!)}
+		c(-\offset X-offset #-1 \f\< b c b  c b c b  \tuplet 5/4 4 {c b c d e\!)}
 		f4 r r
-		r r f,16->(\f\< g32 a bes c d e)\!
+		r r f,16->(-\offset X-offset -2 \f\< g32 a bes c d e)\!
 		f4 r r
 % Bars 16 to 20
 		r r f16->(\f\< g32 a bes c d e)\!
@@ -35,8 +35,8 @@ musicVioloncelloMvtI = \relative c {
 		a8.(\ff\< b32 cis d16 e fis gis) a8\! r
 % Bars 21 to 25
 		e16(\f a e a cis\fz a cis a) a( cis a cis \clef tenor
-		e\fz cis e cis) cis( e cis e g\fz e g e)
-		cis( e cis e bes g bes g \clef bass \tuplet 5/4 4 {e g e cis bes)}
+		e\fz cis e cis) cis( e cis e \dynEO #'(0 . 1) g\fz e g e)
+		cis( e cis e bes g bes g \clef bass \tupletExtraOffset #'(-0.5 . 0) \tuplet 5/4 4 {e g e cis bes)}
 		a->(\< e' f e) bes'(-> a bes a)\! r4
 		r4 r8 bes16(\< a) a( cis e a)\! \mark \default
 % Bars 26 to 30
@@ -58,7 +58,7 @@ musicVioloncelloMvtI = \relative c {
 		a, r fis''[ r16 e\> d8 r16 cis]
 		b8\! r e,4-._\brackM\dimmarkup e-.
 % Bars 41 to 45
-		a,8 r r4 cis8->\p^\pizz r
+		a,8 r r4 cis8->\p-\offset X-offset -4 ^\pizz r
 		a r r4 cis->_\dimmarkup
 		a8 r fis4 b
 		r e\pp e
@@ -72,7 +72,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 51 to 55
 		f~
 		f(
-		bes4)-.\mp d'8^\pizz bes f4
+		bes4)-.\mp d'8-\offset X-offset 0.5 ^\pizz bes f4
 		f ees'8 c f,4
 		f d'8 bes f4
 % Bars 56 to 60
@@ -176,7 +176,7 @@ musicVioloncelloMvtI = \relative c {
 	<< q2. {s4 s\! s}>>
 	q2\p\> r4
 	q2\! r4
-	q2\pp\> r4
+	q2-\offset X-offset -1 \pp\> r4
 	q2\! r4
 % Bars 136 to 140
 	fis4\ff fis''-^ cis-^
@@ -236,10 +236,10 @@ musicVioloncelloMvtI = \relative c {
 	d,8-.[ r32 a'( b cis] d8)[ r16 d32( e] fis8) r
 	d,8-. r cis2\ff
 	r4 cis16-> cis-. cis8-. cis16-> cis-. cis8-.
-	fis4-. fis'4..\fz eis16
+	fis4-. \dynEO #'(0 . 2) fis'4..\fz eis16
 	dis8->[ r16 cis] b8->[ r16 ais] gis8->[ r16 cis]
 % Bars 186 to 190
-	fis,4-. fis'4..->\fz eis16
+	fis,4-. \dynEO #'(0 . 2) fis'4..->\fz eis16
 	dis8->[ r16 cis] b8->[ r16 ais] gis8->[ r16 cis]-.
 	fis,2\ff~ fis8 cis-.
 	cis8. fis16 fis4-. r
@@ -277,7 +277,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 216 to 220
 	r f,( d' bes f' d)
 	r f,( c' a f' c)\!
-	bes2(\ff a4)
+	\dynEO #'(0 . 2) bes2(\ff a4)
 	bes( f a)
 	bes2(\fz a4)
 % Bars 221 to 225
@@ -335,8 +335,8 @@ musicVioloncelloMvtI = \relative c {
 	d,4.->\fz f16( a d8) r
 	d,4.->\fz fis16( a c8) r
 % Bars 266 to 270
-	d,4.->\fz f!16( bes d8) r
-	d,4.->\fz gis16( b d8) r
+	d,4.->-\offset X-offset 0.5 \fz f!16( bes d8) r
+	d,4.->-\offset X-offset 0.5 \fz gis16( b d8) r
 	a,8[ r32 e'( fis gis] a8-.)[ r16 a32( b] cis8)-. r
 	a,8[ r32 e'( fis gis] a8-.)[ r16 a32( b] cis8)-. r
 	a,-. r fis''->[ r16 e-. d8-> r16 cis-.]
@@ -347,7 +347,7 @@ musicVioloncelloMvtI = \relative c {
 	a,-. r fis''->[ r16 e-. d8-> r16 cis-.]
 	b8 r e,4-^ e-^
 % Bars 276 to 280
-	a,-.\f r cis->_\brackM\dimmarkup^\pizz
+	a,-.\f r cis->_\brackM\dimmarkup-\offset X-offset -5 ^\pizz
 	a r cis->\fz
 	a8 r fis'4\p\> d
 	b e e,\!
@@ -360,8 +360,8 @@ musicVioloncelloMvtI = \relative c {
 	r d8-> fis fis4
 % Bars 286 to 290
 	r dis r
-	dis'\f r r \clef tenor
-	e2->\((_\mfespressivo^\arco b8.) e16-.\)
+	\dynEO #'(0 . 1) dis'\f r r \clef tenor
+	e2->\((_\mfespressivo-\offset X-offset -5 ^\arco b8.) e16-.\)
 	dis2( c!4)
 	fis4..->\fz dis16[( a8. fis16])
 % Bars 291 to 295
@@ -375,15 +375,15 @@ musicVioloncelloMvtI = \relative c {
 	b2(\< gis4)
 	d'2( a8.) d16-.
 	cis2( ais4)\!
-	e''2->\ff b8.-> e16->
+	\dynEO #'(0 . 2) e''2->\ff b8.-> e16->
 % Bars 301 to 305
 	dis2->( c8) r
-	fis4..\fz dis16[ a8. fis16]
+	\dynEO #'(0 . 2) fis4..\fz dis16[ a8. fis16]
 	gis,4.->( b16 a) gis8 r
-	gis''4..\fz e16[ b8. gis16]
+	\dynEO #'(0 . 2) gis''4..\fz e16[ b8. gis16]
 	a,4.->( c16 b) a8 r
 % Bars 306 to 310
-	a''4..\fz f!16[ c8. a16]
+	\dynEO #'(0 . 2) a''4..\fz f!16[ c8. a16]
 	b,4.(->\ff d16 c) b8 r 
 	b4.->( d16 c) b8 r
 	b4.->( d16 c) b8 r
@@ -428,8 +428,8 @@ musicVioloncelloMvtI = \relative c {
 	a2.\fp\>
 	g~
 	g
-	fis)\!
-	e\pp~
+	<< fis) {s4 s s\!}>>
+	e2.\pp~
 % Bars 346 to 350
 	e~
 	e4 r r
@@ -439,7 +439,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 351 to 355
 	d r d
 	r a a 
-	d r d'(\<^\arco
+	d r d'(\<-\offset X-offset -4 ^\arco
 	<< cis2.) {s4 s s\!}>>
 	b2.(\fz\>
 % Bars 356 to 360
@@ -476,14 +476,14 @@ musicVioloncelloMvtI = \relative c {
 	c8. f16 f4 r
 	f2~ f8 c-.
 	c8. f16 f4 r
-	f'2-^\fz c8.-> f16-.
-	e!2(\fz des8) r
+	\dynEO #'(0 . 2) f'2-^\fz c8.-> f16-.
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur \dynEO #'(0 . 2) e!2(\fz des8) r
 % Bars 386 to 390
-	g4..->\fz e16[ des8. bes16]
+	\dynEO #'(0 . 2) g4..->\fz e16[ des8. bes16]
 	a4.(\fz c16 bes) a8 r
 	c4.-^\fz bes8 \tuplet 3/2 4 {a8( fis ees')}
 	d2\fz~ d8 r
-	f4.-^\fz e!8 \tuplet 3/2 4 {d8( b f')}
+	\dynEO #'(0 . 2) f4.-^\fz e!8 \tuplet 3/2 4 {d8( b f')}
 % Bars 391 to 395
 	a,,8(\ff\> bes! cis d e f
 	g e d\! cis\p bes a)
@@ -541,7 +541,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 436 to 440
 	\repeat tremolo 6 {d cis}
 	\repeat tremolo 6 {d cis}
-	d16 cis d cis  d cis d cis d8)\noBeam \tuplet 3/2 8 {d,16(\f\< f a\!}
+	d16 cis d cis  d cis d cis d8)\noBeam \once \tupletUp \tuplet 3/2 8 {d,16(-\offset X-offset -1 \f\< f a\!}
 	d2)\ff r4
 	e,2-^ r4
 % Bars 441 to 445

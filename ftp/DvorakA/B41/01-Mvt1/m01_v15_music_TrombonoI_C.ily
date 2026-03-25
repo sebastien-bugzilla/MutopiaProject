@@ -271,7 +271,7 @@ musicTrombonoIMvtI = \relative c {
 	
 	
 	
-	c2->\ff r4
+	c2->-\offset X-offset 0.5 \ff r4
 % Bars 316 to 320
 	c2-> r4
 	c2-> r4

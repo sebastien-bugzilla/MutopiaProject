@@ -38,7 +38,7 @@ musicClarinettoIIMvtI = \relative c {
 		dis8 r dis8.-> fis16 fis8-> a->
 		fis-> dis-> c-> a-> \tuplet 3/2 4 {fis'-> dis-> c->}
 		b-. r r4 r
-		r c8(\fz b16) r b(\f\< dis fis b)\! \mark \default
+		r c8(\fz b16) r b(-\tweak X-offset #-2 \f\< dis fis b)\! \mark \default
 % Bars 26 to 30
 		e,2->\ff e8.-> e16
 		c2\fz~ c8 r
@@ -133,11 +133,11 @@ musicClarinettoIIMvtI = \relative c {
 		e2->(\fz b4)
 		eis2->(\fz b4)
 % Bars 106 to 110
-		cis\fz r r
+		cis-\tweak X-offset -2 \fz r r
 		R2.
 		cis2\fp~ cis8\> ais-.
 		ais8. cis!16 cis4-.\! r
-		<< cis,2.\pp~ {s4 s s_\dimmarkup }>>
+		<< \dynEO #'(-2.5 . 1) cis,2.\pp~ {s4 s s_\dimmarkup }>>
 % Bars 111 to 115
 		cis2.~
 		cis~
@@ -172,7 +172,7 @@ musicClarinettoIIMvtI = \relative c {
 	R2.*2
 	
 % Bars 136 to 140
-	c2\ff~ c8 aes-.
+	c2-\tweak X-offset 0 \ff~ c8 aes-.
 	aes8.-> c16 c4-. r
 	c2->~ c8 aes-.
 	aes8.-> c16 c4-. r
@@ -188,7 +188,7 @@ musicClarinettoIIMvtI = \relative c {
 	des2\fz~ des8\> aes-.
 % Bars 151 to 155
 	aes8. des!16 des4-.\! r
-	c2\fz~ c8\> aes-.
+	c2-\tweak X-offset 0 \fz~ c8\> aes-.
 	aes8. c16 c4-.\! r
 	R2.*4
 	
@@ -258,7 +258,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 211 to 215
 	
 % Bars 216 to 220
-	c2.(_\mfcresc
+	\markEO #'(0 . 1) c2.(-\offset X-offset -3 _\mfcresc
 	b8 c b a g b)
 	e2\ff~ e8 c-.
 	c8. e16 e4-. r
@@ -274,13 +274,13 @@ musicClarinettoIIMvtI = \relative c {
 	cis8. e16 e4-. r \mark \default
 	R2.*2
 	
-	r4 r cis8.->\f cis16 
+	r4 r cis8.->-\tweak X-offset -2 \f cis16 
 % Bars 231 to 235
 	cis2.\fz\>~
 	cis\!
 	R2.*2
 	
-	b8.\ff dis16 dis2~
+	b8.-\tweak X-offset -2 \ff dis16 dis2~
 % Bars 236 to 240
 	dis2.
 	r4 r b8. fis'16
@@ -394,7 +394,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 331 to 335
 	fis4 r r
 	R2.
-	b,,4\f r r
+	b,,4-\tweak extra-offset #'(0.5 . 1) \f r r   % TBC
 	R2. 
 	fis''2.\ff~
 % Bars 336 to 340
@@ -430,9 +430,9 @@ musicClarinettoIIMvtI = \relative c {
 	e(\< b4. gis'!8)
 % Bars 366 to 370
 	gis2( fis4)\!
-	e2.(\mf~
+	e2.(-\offset X-offset -1 \mf~
 	e4. e8 cis dis)
-	<< e2.(~\< {s4 s s\!}>>
+	<< e2.(~\< {s4 s s8 s\!}>>
 	e8 gis fis e cis dis)
 % Bars 371 to 375
 	e( gis! fis e cis dis)
@@ -463,7 +463,7 @@ musicClarinettoIIMvtI = \relative c {
 	dis8. fis16 fis4-. r
 	R2.*2
 	
-	g,2\fp~ g8\> g-.
+	g,2-\tweak X-offset 0 \fp~ g8\> g-.
 % Bars 396 to 400
 	g8. g16 g4-.\! r
 	R2.*2

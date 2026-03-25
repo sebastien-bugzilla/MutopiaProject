@@ -8,15 +8,19 @@
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
 	left-margin = 20 \mm
-	indent = 0
+%	indent = 0
 %	annotate-spacing = ##t
 %	max-systems-per-page = 1
 %	first-page-number = 0
 	slashSeparator = \markup {
 		\center-align \hspace #-6
-		\vcenter \combine
+		\vcenter \combine 
 		\beam #3.3 #0.5 #0.54
 		\raise #1.24 \beam #3.3 #0.5 #0.54
+		\hspace #125 
+		\combine
+		\lower #1.24 \beam #3.3 #0.5 #0.54
+		\raise #0 \beam #3.3 #0.5 #0.54 
 	}
 	system-separator-markup = \slashSeparator
 	bookTitleMarkup = \markup {
