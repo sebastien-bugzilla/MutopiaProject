@@ -34,7 +34,7 @@ tempiMvtI = {
 tempiMvtII = {
 	\tempo \markup {
 		\concat {
-			"Andante sostenunto e molto cantabile "
+			"Andante sostenuto e molto cantabile "
 			\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
 			" = 63 - 69"
 		}

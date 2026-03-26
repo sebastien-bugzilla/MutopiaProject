@@ -69,14 +69,15 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIMvtII
+					\consists Keep_alive_together_engraver } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtII
-%						}
 						\new Voice {
-							\tempiMvtII
+							\formatConductorMvtII
 						}
+%						\new Voice {
+%							\tempiMvtII
+%						}
 						\new Voice {
 							\timeMvtII \nameStaffIMvtII \musicFlautoIMvtII
 						}
@@ -102,7 +103,8 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtII 
+					\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtII \nameStaffVIMvtII
 						\partCombine \musicCornoIMvtII \musicCornoIIMvtII
@@ -143,7 +145,8 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIVMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIVMvtII 
+					\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtII \nameStaffXVMvtII \musicViolinoIMvtII
 					}
@@ -173,6 +176,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+			system-count = 41
 		}
 	}
 }

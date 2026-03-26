@@ -1,7 +1,7 @@
 displayFilterVoice = {
-%\set Score.skipTypesetting = ##t s2.*251 s2*3 s2.*121 s2*4 s2.*58 \set Score.currentBarNumber = #438
-%\set Score.skipTypesetting = ##f s2.*9
-%\set Score.skipTypesetting = ##t 
+%\set Score.skipTypesetting = ##t  \set Score.currentBarNumber = #1
+%\set Score.skipTypesetting = ##f s1*8
+%\set Score.skipTypesetting = ##t s1*85 s2*1 s1*48
 }
 formatConductorMvtI = {
 \override Score.NonMusicalPaperColumn.line-break-permission = ##f
@@ -77,52 +77,52 @@ formatConductorMvtI = {
 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 6.4)(alignment-distances . (9 9 10.5 9.5 13 10 9 11 9 9 13 15 11 11 11 10))) s2.*9 \pageBreak
 
 }
+formatConductorMvtII = {
+\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*6 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*7 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*5 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*2 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*4 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*2 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*5 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*2 s2*1 s1*1 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*5 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*4 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*5 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*2 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*2 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*5 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9))) s1*6 \pageBreak
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
