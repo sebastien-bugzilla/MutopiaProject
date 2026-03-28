@@ -21,7 +21,7 @@ musicCornoIIMvtII = \relative c {
 	\mmrPos #-6 R
 	\mmrPos #-8 R
 % Bars 11 to 15
-	\mmrPos #-6 R
+	\mmrPos #-7 R
 	R
 	R
 	R
@@ -67,7 +67,7 @@ musicCornoIIMvtII = \relative c {
 % Bars 51 to 55
 	\mark \default
 	r16 \stemUp \omitBeam f'8 f f f16~ \omitBeam f c8 c c c16~
-	\omitBeam c f8 f\< bes bes16~ \stemDown bes bes8 bes\! bes\> bes16\!~
+	\omitBeam c f8 f\< bes bes16~ \stemDown bes bes8 bes\! \hairpinShorten #'(-1 . 0) bes\> bes16\!~
 	\stemUp \omitBeam bes ees,8\p ees des des16~ \omitBeam \beamOffset #'(1.5 . 1.5) des des8 des des des16~
 	\omitBeam des g8 g a a16~ \stemDown a a8 a a a16~
 % Bars 56 to 60
@@ -75,7 +75,7 @@ musicCornoIIMvtII = \relative c {
 	bes\p a8 a a a16~ a d,8 d d d16~
 	\stemUp \omitBeam d g8 g bes bes16~ \stemDown bes\pp bes8 bes bes bes16~
 	\stemUp \omitBeam bes\< ees,8 ees ees ees16~\! \omitBeam ees f8 f f g16~
-	\omitBeam g\< g8 g gis gis16~ \stemDown gis a8 a\! a\> a16\!(
+	\omitBeam g\< g8 g gis gis16~ \stemDown gis a8 a\! \hairpinShorten #'(-1.5 . 0) a\> a16\!(
 % Bars 61 to 65
 	\stemUp \omitBeam d,)\p d8 d d d16~ \omitBeam d d8 d d d16~
 	\omitBeam d d8\pp d d d16~ \omitBeam d d8 d d d16~
@@ -106,7 +106,7 @@ musicCornoIIMvtII = \relative c {
 % Bars 86 to 90
 	des-^_\marcato c-^ b!-^ r r2
 	g,16\f g g g  g g g g\<  g g g g  g g g g\!
-	g8\ff r r4 r2
+	g8-\tweak X-offset -1 \ff r r4 r2
 	R1
 	R1*4
 % Bars 91 to 95
@@ -119,20 +119,20 @@ musicCornoIIMvtII = \relative c {
 	
 	R1*2
 	
-	r16 d'8\pp d d d16 r ees8 ees ees ees16
+	r16 d'8-\offset X-offset -2.5 \pp d d d16 r ees8 ees ees ees16
 	r f8\< f bes bes16 r bes8 bes bes bes16\!
 % Bars 101 to 105
 	r ees,8 ees ees ees16~ ees ees8 ees ees ees16
 	ees1-^\mf
 	f2-^\> \marcatoUpperSlur e!(-^\!
-	ees8)\p r r4 r2
+	ees8)-\offset X-offset 1 \p r r4 r2
 	R1
 % Bars 106 to 110
 	aes2:16\mp\< << aes: {s4 s\!}>>
 	aes2:\> aes:\p\>
 	aes8\pp r r4 r2
 	R1
-	c,2(\pp des)
+	c,2(-\offset X-offset 1.5 \pp des)
 % Bars 111 to 115
 	ees8-._\dimmarkup r f-. r r2\fermata
 	R1*2
@@ -155,8 +155,8 @@ musicCornoIIMvtII = \relative c {
 	
 	
 	des2\p\< << d {s8 s s s\!}>>
-	b!4 << c2.\> {s4 s_\dimmarkup s8 s\!}>>
-	f4\p r r2
+	b!4 << \hairpinShorten #'(1.5 . 0) c2.\> {s4 \markEO #'(0 . 4) s_\dimmarkup s8 s\!}>>
+	f4-\offset X-offset 0.5 \p r r2
 % Bars 131 to 135
 	R1*2
 	

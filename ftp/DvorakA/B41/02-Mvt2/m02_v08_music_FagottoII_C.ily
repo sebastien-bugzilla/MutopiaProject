@@ -13,7 +13,7 @@ musicFagottoIIMvtII = \relative c {
 	bes,4\< ees2 ees4\>
 	aes\! ges2 ges4
 	f d2 d4\<
-	ees!\! ees2\>~ ees8\! c
+	ees!\! ees2\>~ ees8 c\!
 % Bars 6 to 10
 	d2\> g\pp
 	c, f4. g8
@@ -22,7 +22,7 @@ musicFagottoIIMvtII = \relative c {
 	<< g2~ {s8 s\dimD s s}>> g4 r8 g\pp
 % Bars 11 to 15
 	b,4( c d) r8 d\<
-	b4\< c2 g'4\!
+	b4 c2 g'4\!
 	c,4\mf e2->\> g4
 	c,4\! g'4.\pp g8( bes,4)
 	ees\< c2 ees8-> ees->\!
@@ -31,7 +31,7 @@ musicFagottoIIMvtII = \relative c {
 	a4(\p\> d, c f)\pp \mark \default
 	bes r r2
 	R1
-	aes'4\p\< << ges2.\> {s4 s s\!}>>
+	aes'4\p\< << \hairpinShorten #'(3 . 5) ges2.\> {s4 s s\!}>>
 % Bars 21 to 25
 	f4( fis2~\< fis8 a)\!
 	<< g2.\<~ {s4 s\! s\>}>> g8\! r
@@ -45,7 +45,7 @@ musicFagottoIIMvtII = \relative c {
 	<< g1\mf\< {s4 s s s8 s\!}>>
 	c,2(\mf\< e,4\! g)\>
 % Bars 31 to 35
-	c4\! g2\pp bes!4(
+	c4\! g2-\offset X-offset 1.3 \pp bes!4(
 	ees)\< c2( ees,4)\!
 	d2( << f)\fz\> {s8 s s s\!}>>
 	a4( d_\dimmarkup c f,)\pp \mark \default
@@ -63,15 +63,15 @@ musicFagottoIIMvtII = \relative c {
 	R1
 	R1
 % Bars 46 to 50
-	r4 \clef tenor c2(\pp \tuplet 3/2 4 {b8\< c d}
-	c4)\! e(\fz~ e8\> c g4\!
+	r4 \clef tenor c2\pp \tuplet 3/2 4 {b8\< c d}
+	c4\! e(\fz~ e8\> c g4\!
 	c8)\p r r4 r2
 	R1 \clef bass
 	r2 f,\pp~
 % Bars 51 to 55
 	f\> ees!\! \mark \default
 	d16 bes'8 bes bes bes16~ bes f8 f f f16~
-	f bes8 bes\< ees, ees16~ ees ees8 ees\! ees\> ees16\!~
+	f bes8 bes\< ees, ees16~ ees ees8 ees\! \hairpinShorten #'(-1 . 0) ees\> ees16\!~
 	ees aes8\p aes ges ges16~ ges ges8 ges ges ges16~
 	ges f8 f d d16~ d d8 d d d16~
 % Bars 56 to 60
@@ -79,7 +79,7 @@ musicFagottoIIMvtII = \relative c {
 	c\p d8 d d d16~ d g8 g g g16~
 	g c,8 c f f16~ f\pp f8 f f g16~
 	g\< aes8 aes aes aes16\!~ aes bes8 bes c c16~
-	c\< c8 c cis cis16~ cis d8 d\! d\> d16\!
+	c\< c8 c cis cis16~ cis d8 d\! \hairpinShorten #'(-1.5 . 0) d\> d16\!
 % Bars 61 to 65
 	d\p g,8 g g g16~ g g8 g g g16~
 	g b,8\pp b c c16~ c d8 d d d16~
@@ -150,11 +150,11 @@ musicFagottoIIMvtII = \relative c {
 	bes8) r r4 r2
 	<< b2( {s4 s\<} >> bes4) g\!
 	<< a1( {s4 s s\> s }>>
-	<< bes1)\pp {s4 s s\< s\!}>>
+	<< bes1)\pp {s4 s s\< s\crescD}>>
 	a2.~ a8\! r \mark \default
 % Bars 121 to 125
 	R1
-	b2(\brack\pp\< c4\! a)\>
+	b2(-\offset X-offset -2 \brack\pp\< c4\! a)\>
 	bes!\pp r r2
 	<< bes2.\< {s4 s\! s\>}>> \tuplet 3/2 4 {c8 d ees\!}
 	d r r4 r2

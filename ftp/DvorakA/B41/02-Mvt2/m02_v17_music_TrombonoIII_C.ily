@@ -89,7 +89,7 @@ musicTrombonoIIIMvtII = \relative c {
 % Bars 101 to 105
 	
 	des1-^\mf
-	<< \marcatoUpperSlur des1-^~\> {s4 s s s\!}>>
+	<< \marcatoUpperSlur des1-^~\> {s4 s s s8 s\!}>>
 	des8\p r r4 r2
 	R1*4
 % Bars 106 to 110
@@ -119,7 +119,7 @@ musicTrombonoIIIMvtII = \relative c {
 	
 	
 	
-	<< bes'1\pp\<~ {s8 s s s\! s\> s s s\!}>>
+	<< \hairpinShorten #'(0 . -0.5) bes'1\pp\<~ {s8 s s s\! \hairpinShorten #'(-0.5 . 0) s\> s s s\!}>>
 	bes4 r r2
 % Bars 141 and 142
 	R1

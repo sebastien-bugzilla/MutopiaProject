@@ -270,7 +270,7 @@ musicVioloncelloDivisiMvtII = \relative c {
 	bes,[ a'!] bes, a' bes,[_\dimmarkup f'] bes, f'
 % Bars 76 to 80
 	bes,16[\pp^\arco r bes r bes r bes] r bes[ r bes_\crescmarkup r bes r bes] r
-	bes[\< r bes r bes r bes] r bes[ r bes]\! r g'32(\f\> f) f( ees) ees( d) d( c)\!
+	bes[\< r bes r bes r bes] r bes[ r bes]\! r g'32(\f\< f) f( ees) ees( d) d( c)\!
 	s1*16
 % Bars 81 to 85
 	

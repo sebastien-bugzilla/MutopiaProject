@@ -45,7 +45,7 @@ musicTrombeIIMvtII = \relative c {
 	
 	
 	
-	c'2(^\sole\< d4\! e8\> f\!
+	c'2(^\sole\pp\< d4\! e8\> f\!
 	c4) r r2 \mark \default
 % Bars 71 to 75
 	R1*7

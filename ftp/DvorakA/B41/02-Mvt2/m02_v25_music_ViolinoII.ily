@@ -100,7 +100,7 @@ musicViolinoIIMvtII = \relative c {
 	c8(\f aes a4_\crescmarkup~ a8) bes->(~ bes16 ces8 des16)
 % Bars 86 to 90
 	des4-^~ des8 c!-^ bes-^[ r16 bes-.] ges8-> f->~
-	f16\< e-> f-> fis->\! g8->_\crescmarkup f-> e16-> f-> g-> a-> bes-> a-> bes-> b->
+	f16\< e-> f-> fis->\! g8->_\crescmarkup f-> e!16-> f-> g-> a-> bes-> a-> bes-> b->
 	c\ff <g, e'>-> q-> q->  <g f'>-> q-> q-> q->  q-> q-> q-> q->  q-> q-> <g e'>-> q->
 	q-> q-> q-> q->  <g f'> q q q  q\> q q q  q q <g e'!> q\!
 	e'-.\fp c-. c-. c-.  des-.\> des-. des-. des-.  des-. des-. des-. des-.\!  des-. des-. c-. c-.

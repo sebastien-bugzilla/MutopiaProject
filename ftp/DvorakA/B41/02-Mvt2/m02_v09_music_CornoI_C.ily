@@ -18,7 +18,7 @@ musicCornoIMvtII = \relative c {
 	d4(\> c!4.) c8(\! f16\pp e d c)
 	c4( bes2) \tuplet 3/2 4 {a8( c bes)}
 	a4( g) f4.\< e8
-	e4-> e->\! f(\> a)\!
+	e4-> e->\! \hairpinShorten #'(0 . -4) f(\> a)\!
 	a4.\>-\dimmarkup f8 d4\! r8 d\pp
 % Bars 11 to 15
 	a'4( g fis) r8 fis\<
@@ -28,7 +28,7 @@ musicCornoIMvtII = \relative c {
 	bes( d) c8-^ bes-^ a-^ g-^
 % Bars 16 to 20
 	f4( << a2 {s4 s}>> \tuplet 3/2 4 {g8 a e)}
-	g2.-\pdim\>~ g8\pp f \mark \default
+	\markEO #'(3 . -3.5) g2.\p\>-\dimmarkup~ g8\pp f \mark \default
 	f4 r r2 \partCombineAutomatic
 	R1
 	bes4\p r8 bes bes4 r
@@ -39,13 +39,13 @@ musicCornoIMvtII = \relative c {
 	c4(\p bes4.) r8 r4
 	bes2(\pp\> a4.\! bes8)
 % Bars 26 to 30
-	bes4->\< b->\! a2~\>
+	\hairpinShorten #'(0 . -3) bes4->\< b->\! a2~\>
 	a2.\! r4 \partCombineAutomatic
 	R1*3
 	
 	
 % Bars 31 to 35
-	\partCombineApart r4 f'2.->\pp~
+	\partCombineApart r4 f'2.->-\offset X-offset -2.3 \pp~
 	f4 r r2 \partCombineAutomatic
 	R1
 	\partCombineApart c2(\p\>-\dimmarkup << bes {s4 s\!}>> \mark \default
@@ -106,7 +106,7 @@ musicCornoIMvtII = \relative c {
 % Bars 86 to 90
 	des-^_\marcato c-^ b!-^ r r2
 	g16\f g g g  g g g g\<  g g g g  g g g g\!
-	g8\ff r r4 r2
+	g8-\tweak X-offset -1 \ff r r4 r2
 	R1
 	\partCombineApart r4 r8 c\p(~^\solo c16 b c d c8 b)
 % Bars 91 to 95
@@ -118,8 +118,8 @@ musicCornoIMvtII = \relative c {
 % Bars 96 to 100
 	
 	\partCombineApart bes,4(\p a aes)\< r8 aes
-	ees'4(\! d2\f \tuplet 3/2 4 {c8\> d ees\!}
-	d16)\pp bes8 bes bes bes16 \partCombineAutomatic r bes8 bes bes bes16
+	ees'4(\! \dynEO #'(-1.5 . -3.5) d2\f \tuplet 3/2 4 {c8\> d ees\!}
+	d16)-\offset X-offset -1.5 \pp bes8 bes bes bes16 \partCombineAutomatic r bes8 bes bes bes16
 	r bes8\< bes ees ees16 r d8 d d d16\!
 % Bars 101 to 105
 	r des8 des des des16~_\crescmarkup des des8 des des des16

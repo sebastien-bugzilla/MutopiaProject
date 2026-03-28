@@ -45,7 +45,7 @@ musicTrombeIIMvtII = \relative c {
 	
 	
 	
-	c'2(\< d4\! e8\> f\!
+	\shape #'( ((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) ()) Slur c'2(\pp\< d4\! e8\> f\!
 	c4) r r2 \mark \default
 % Bars 71 to 75
 	R1*7
@@ -93,7 +93,7 @@ musicTrombeIIMvtII = \relative c {
 	
 	
 	
-	<< a1\pp\<~ {s4 s\! s\> s\!}>>
+	<< a1\pp\<~ {s8 s s s\! s\> s s s\!}>>
 	a4 r r2
 % Bars 141 and 142
 	R1

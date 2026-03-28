@@ -17,7 +17,7 @@ musicOboeIMvtII = \relative c {
 % Bars 16 to 20
 	
 	\mark \default
-	\partCombineApart bes''4(\p a aes) r8 aes(
+	\partCombineApart bes''4(-\offset X-offset 1 \p a aes) r8 aes(
 	des4\< << c2) {s4\! s\>}>> \tuplet 3/2 4 {bes8( c des)\!}
 	c4(\< << ees2) {s4\! s\>}>> bes8.( c16)\!
 % Bars 21 to 25
@@ -27,28 +27,28 @@ musicOboeIMvtII = \relative c {
 	f4( ees2)-\dimmarkup \tuplet 3/2 4 {d8( f ees)}
 	d4(\pp\> c bes4. a8)\!
 % Bars 26 to 30
-	a4->\< a->\! bes4(\> d)\!
+	\hairpinShorten #'(0 . -3) a4->\< a->\! bes4(\> d)\!
 	d4.(\> bes8 g4)\! r8 g\pp
 	d'4->( c\< b) r8\! g(
 	f'4 e2 \tuplet 3/2 4 {d8 e f}
 	e4) g4(~ \tuplet 3/2 4 {g8 e d} f4)
 % Bars 31 to 35
 	e( g~ \tuplet 3/2 4 {g8 ees! d} f4)
-	ees!( g f8->_\crescmarkup ees-> d-> c->)
+	ees!( g \markEO #'(0 . 2.5) f8->_\crescmarkup ees-> d-> c->)
 	bes4(\< d2->\! \tuplet 3/2 4 {c8\> d a\!)}
 	c2.(~ c8 bes) \mark \default
 	bes4 \partCombineAutomatic r r2
 % Bars 36 to 40
 	R1*5
 % Bars 41 to 45
-	\partCombineApart r2 aes'4(~\pp \tuplet 3/2 4 {aes4 g8)}
+	\partCombineApart r2 aes'4(~-\offset X-offset -4 \pp \omitTupletBracket \tuplet 3/2 4 {aes4 g8)}
 	f4( ees d4.\< c8)\!
 	<< g2(\< {s8 s s s\!}>> << d2\fz\>~ {s8 s s s\!}>>
 	d4)\pp r r2 \partCombineAutomatic
 	R1
 % Bars 46 to 50
 	\partCombineApart r2 g'\p\<~
-	<< g1~ {s4 s\! s\> s-\dimmarkup}>>
+	<< g1~ {s4 s\! s\> \markEO #'(0 . -3) s-\dimmarkup}>>
 	g8\! r r4 r2 \partCombineAutomatic
 	R1*3
 	
@@ -73,17 +73,17 @@ musicOboeIMvtII = \relative c {
 % Bars 66 to 70
 	\omitBeam \beamOffset #'(-2 . -2) aes g8 g g g16~ \omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~
 	\omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~ \omitBeam g f8 f f f16
-	\stemUp f2( << ees {s4 s}>>
+	\stemUp \shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . 0)) Slur f2( << ees { s4-\tweak extra-offset #'(2.5 . -2.7) \> s\!}>>
 	c4) \partCombineAutomatic r r2 
 	R1 \mark \default
 % Bars 71 to 75
-	\partCombineApart bes4(\p^\solo a aes) r8 aes
+	\partCombineApart \dynEO #'(-1.8 . 4.5) bes4(_\p-\offset X-offset 1 ^\solo a aes) r8 aes
 	c4( << bes2 {s4\< s\!}>> \tuplet 3/2 4 {a!8\> bes c}
 	bes4)\! ees2(\p\< c8. d16
 	b4)\! d2(~ d16\< ees f g)
 	g4(~\! g16 f ees d) c4(~-\dimmarkup c16 d ees f)
 % Bars 76 to 80
-	f4(\< fis g\!~-\crescmarkup g16 f ees d)
+	f4(\< fis g~\crescD g16 f ees d)
 	c4(~\< c16 bes\! a g f4~ f8) r \partCombineAutomatic \mark \default
 	R1*2
 	
@@ -92,12 +92,12 @@ musicOboeIMvtII = \relative c {
 	des2( d4_\crescmarkup ees8 f)
 	ees4( e f8 g aes4~
 	aes8) g-^ fis-^ r \once \partCombineAutomatic r2 
-	\mmrPos #7 R1
+	\mmrPos #8 R1
 	R
 % Bars 86 to 90
-	r4 des8-^\f c-^ bes-^[ r16 bes-.] ges'8-> f~
+	r4 des8-^-\offset X-offset -1.5 \f c-^ bes-^[ r16 bes-.] ges'8-> f~
 	f16 e( f fis) g8-> f-> e-> r r4
-	r r8 f(~\fz f16 e f g f8 e)
+	r r8 f(~-\offset X-offset -2 \fz f16 e f g f8 e)
 	r4 r8 f(~\fz\> f16 e f g f8 e)\! \partCombineAutomatic
 	R1*4
 % Bars 91 to 95
@@ -109,7 +109,7 @@ musicOboeIMvtII = \relative c {
 % Bars 96 to 100
 	R1
 	g,1\pp(
-	<< des'2\< {s8 s s s\!}>> << ces2)\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(1 . 0) des'2\< {s8 s s s\!}>> << \hairpinShorten #'(1 . 0) ces2)\> {s8 s s s\!}>>
 	\partCombineApart ees4--( ees-- ees4.--) \once \partCombineAutomatic r8
 	ees4--( ees-- ees4.--) \once \partCombineAutomatic r8 
 % Bars 101 to 105
@@ -117,10 +117,10 @@ musicOboeIMvtII = \relative c {
 	des8) \partCombineAutomatic r r4 r2
 	R1
 	f2.(\p ges8.\< aes16)
-	ges4(\! ees2->)\> ees4(\!
+	ges4(\! \hairpinShorten #'(0 . -5) ees2->)\> ees4(\!
 % Bars 106 to 110
 	f8) r r4 r2
-	\partCombineApart des8-.-^\mp c-.-^ ces-.-^ r16 beses\< beses8( ges'4\! \tuplet 3/2 8 {ees16\> f ges\!}
+	\partCombineApart des8-.-^\mp c-.-^ ces-.-^ r16 beses\< \shape #'((-0.8 . 1.5)(0 . -0.5)(0 . -0.5)(0 . 1.5)) Slur beses8( ges'4\! \tuplet 3/2 8 {ees16\> f ges\!}
 	f8)\p r r4 r2 \partCombineAutomatic
 	R1*2
 	
@@ -128,7 +128,7 @@ musicOboeIMvtII = \relative c {
 	R1\fermata
 	R1*2
 	\mark \default
-	\partCombineApart bes,4(\pp a! aes) r8 aes(
+	\partCombineApart bes,4(-\offset X-offset 2.5 \pp a! aes) r8 aes(
 	c4 bes2 \tuplet 3/2 4 {a!8 bes c}
 % Bars 116 to 120
 	bes4) ees2( c8. d16)
@@ -144,10 +144,10 @@ musicOboeIMvtII = \relative c {
 	r4 \partCombineApart \tuplet 3/2 4 {ees'8( f ges} f) \once \partCombineAutomatic r \tuplet 3/2 4 {ees( f ges)}
 % Bars 126 to 130
 	ges2( f4 ees)
-	<< des2.(~ {s4 s s}>> des8. ces16)
+	<< \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur des2.(~ {s4 s s}>> des8. ces16)
 	<< bes2.( {s4 s s }>> a8. bes16)
-	bes4(\< d!\! << f2~ {s4 s_\dimmarkup}>>
-	f4)\p \partCombineAutomatic r r2
+	bes4( d! << f2~ {s4 s_\dimmarkup}>>
+	f4) \partCombineAutomatic r r2
 % Bars 131 to 135
 	R1*3
 	

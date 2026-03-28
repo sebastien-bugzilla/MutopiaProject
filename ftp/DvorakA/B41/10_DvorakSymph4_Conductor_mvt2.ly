@@ -22,9 +22,10 @@
 \include "./00-Common/DvorakSymph4_NameStaff.ily"
 \include "./00-Common/DvorakSymph4_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
+%\include "./00-Common/DvorakSymph4_Format_temp.ily"
 \include "./00-Common/DvorakSymph4_Format_Cond_Mvt02.ily"
-\include "./02-Mvt2/m02_v01_music_FlautoI.ily"
-\include "./02-Mvt2/m02_v02_music_FlautoII.ily"
+\include "./02-Mvt2/m02_v01_music_FlautoI_C.ily"
+\include "./02-Mvt2/m02_v02_music_FlautoII_C.ily"
 \include "./02-Mvt2/m02_v03_music_OboeI_C.ily"
 \include "./02-Mvt2/m02_v04_music_OboeII_C.ily"
 \include "./02-Mvt2/m02_v05_music_ClarinettoI_C.ily"
@@ -37,17 +38,17 @@
 \include "./02-Mvt2/m02_v12_music_CornoIV_C.ily"
 \include "./02-Mvt2/m02_v13_music_TrombeI_C.ily"
 \include "./02-Mvt2/m02_v14_music_TrombeII_C.ily"
-\include "./02-Mvt2/m02_v15_music_TrombonoI.ily"
-\include "./02-Mvt2/m02_v16_music_TrombonoII.ily"
-\include "./02-Mvt2/m02_v17_music_TrombonoIII.ily"
-\include "./02-Mvt2/m02_v18_music_Timpani.ily"
-\include "./02-Mvt2/m02_v22_music_ArpaUp.ily"
-\include "./02-Mvt2/m02_v23_music_ArpaDown.ily"
-\include "./02-Mvt2/m02_v24_music_ViolinoI.ily"
-\include "./02-Mvt2/m02_v25_music_ViolinoII.ily"
-\include "./02-Mvt2/m02_v26_music_Viola.ily"
-\include "./02-Mvt2/m02_v27_music_Violoncello.ily"
-\include "./02-Mvt2/m02_v28_music_Contrabasso.ily"
+\include "./02-Mvt2/m02_v15_music_TrombonoI_C.ily"
+\include "./02-Mvt2/m02_v16_music_TrombonoII_C.ily"
+\include "./02-Mvt2/m02_v17_music_TrombonoIII_C.ily"
+\include "./02-Mvt2/m02_v18_music_Timpani_C.ily"
+\include "./02-Mvt2/m02_v22_music_ArpaUp_C.ily"
+\include "./02-Mvt2/m02_v23_music_ArpaDown_C.ily"
+\include "./02-Mvt2/m02_v24_music_ViolinoI_C.ily"
+\include "./02-Mvt2/m02_v25_music_ViolinoII_C.ily"
+\include "./02-Mvt2/m02_v26_music_Viola_C.ily"
+\include "./02-Mvt2/m02_v27_music_Violoncello_C.ily"
+\include "./02-Mvt2/m02_v28_music_Contrabasso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -73,11 +74,14 @@
 					\consists Keep_alive_together_engraver } <<
 					\new Staff <<
 						\new Voice {
+							\displayFilterVoice
+						}
+						\new Voice {
 							\formatConductorMvtII
 						}
-%						\new Voice {
-%							\tempiMvtII
-%						}
+						\new Voice {
+							\tempiMvtII
+						}
 						\new Voice {
 							\timeMvtII \nameStaffIMvtII \musicFlautoIMvtII
 						}
@@ -136,7 +140,7 @@
 			\new Staff {
 				\timeMvtII \nameStaffXIIMvtII \musicTimpaniMvtII
 			}
-			\new PianoStaff <<
+			\new PianoStaff \with { \nameGrandStaffIVMvtII } <<
 				\new Staff = "up" {
 					\timeMvtII \nameStaffXIIIMvtII \musicArpaUpMvtII
 				}
@@ -145,7 +149,7 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIVMvtII 
+				\new GrandStaff \with { \nameGrandStaffVMvtII 
 					\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtII \nameStaffXVMvtII \musicViolinoIMvtII
@@ -157,14 +161,14 @@
 				\new Staff {
 					\timeMvtII \nameStaffXVIIMvtII \musicViolaMvtII
 				}
-				\new GrandStaff << 
+				\new GrandStaff \with { \nameStaffXVIIIMvtII } << 
 					\new Staff {
-						\timeMvtII \nameStaffXVIIIMvtII \musicVioloncelloMvtII
+						\timeMvtII \musicVioloncelloMvtII
 					}
 					\new Staff  \with {
 						\RemoveAllEmptyStaves
 						\remove Time_Signature_engraver } {
-						\timeMvtII \nameStaffXVIIIMvtII \musicVioloncelloDivisiMvtII
+						\timeMvtII  \musicVioloncelloDivisiMvtII
 					}
 				>>
 				\new Staff {

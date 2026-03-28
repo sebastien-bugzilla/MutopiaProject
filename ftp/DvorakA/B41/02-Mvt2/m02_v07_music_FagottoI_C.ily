@@ -13,7 +13,7 @@ musicFagottoIMvtII = \relative c {
 	bes4\< ees2 ees4\>
 	ees\! ees2 ees4
 	c d2 d4\<
-	ees!\! ees2\>~ ees8\! c
+	ees!\! ees2\>~ ees8 c\!
 % Bars 6 to 10
 	d2\> d\pp
 	c f4. g8
@@ -22,12 +22,12 @@ musicFagottoIMvtII = \relative c {
 	<< d2~ {s8 s\dimD s s}>> d4 r8 g\pp
 % Bars 11 to 15
 	b,4( c d) r8 d\<
-	b4\< c2 d4\!
-	c4\mf e2->\> d4
+	b4 c2 d4\!
+	c4\mf \hairpinShorten #'(2.5 . 0) e2->\> d4
 	c4\! ees!4.\pp ees8( bes4)
 	ees\< c2 f8-> ees->\!
 % Bars 16 to 20
-	\partCombineChords d2\< << f\> {s8 s s s\!}>>
+	\partCombineChords d2\< << \hairpinShorten #'(0 . -2) f\> {s8 s s s\!}>>
 	\partCombineApart a,4( d c f,) \mark \default
 	bes \partCombineAutomatic r r2
 	R1
@@ -40,14 +40,14 @@ musicFagottoIMvtII = \relative c {
 	c2 bes!4.( a!8)
 % Bars 26 to 30
 	a2( bes4 \tuplet 3/2 4 {\stemDown \omitBeam a!8 bes c)}
-	<< bes2._\dimmarkup {s4 s s}>> \once \partCombineAutomatic r4
+	<< \markEO #'(0 . 3.2) bes2._\dimmarkup {s4 s s}>> \once \partCombineAutomatic r4
 	\stemUp d4( c << b2)_\crescmarkup {s4 s}>>
 	d4 c2( \tuplet 3/2 4 {b8 c d)}
-	<< c2.(\<~ {s4 s s\!}>> c8\> b
+	<< c2.(~ {s4 s s}>> c8 b
 % Bars 31 to 35
-	c4)\! ees!2( d4)
-	ees2( d8->_\crescmarkup c-> f-> ees->)
-	d2 << a\fz\>(~ {s8 s s s\!}>>
+	c4) ees!2( d4)
+	ees2( \markEO #'(0 . 2.8) d8->_\crescmarkup c-> f-> ees->)
+	d2 << \shape #'( () ((0 . -1.5)(0 . 0)(0 . 0)(0 . 0))) Slur a-\offset X-offset -1 \fz\>(~ {s8 s s s\!}>>
 	<< a2 {s4 s\> }>> g4 a)\pp \partCombineAutomatic \mark \default
 	bes r r2
 % Bars 36 to 40
@@ -60,16 +60,16 @@ musicFagottoIMvtII = \relative c {
 	R1*3
 	
 	
-	\partCombineApart \stemUp r2 r8 d-.\pp g4-> \partCombineAutomatic
+	\partCombineApart \stemUp r2 r8 d-.-\offset X-offset -1.5 \pp g4-> \partCombineAutomatic
 	R1
 % Bars 46 to 50
-	r4 \clef tenor e2( \tuplet 3/2 4 {d8 e f}
-	e4) \partCombineApart g->(~ \tuplet 3/2 4 {g8 e d~} d4
+	r4 \partCombineApart \stemDown \clef tenor e2( \omitTupletNumber \tuplet 3/2 4 {\omitBeam d8 e f}
+	e4) \stemUp g->(~ \tuplet 3/2 4 {g8 e d~} d4
 	e8) \partCombineAutomatic r r4 r2
 	R1 \clef bass
-	r2 \partCombineApart \stemDown a,\pp~
+	r2 \partCombineApart \stemDown a,~
 % Bars 51 to 55
-	a\> \stemUp g4(\! a8 bes) \mark \default \partCombineAutomatic
+	a \stemUp g4( a8 bes) \mark \default \partCombineAutomatic
 	\partCombineApart \stemDown \omitBeam f16_\ppbracklegato bes8^\aII bes bes bes16~ \omitBeam bes des8 des des des16~
 	\omitBeam des des8 des c c16~ \omitBeam c c8 c des des16~
 	\omitBeam des c8 c bes bes16~ \omitBeam bes bes8 bes bes bes16~
@@ -91,7 +91,7 @@ musicFagottoIMvtII = \relative c {
 	\omitBeam ees d8 d d d16~ \omitBeam d d8 d d d16 \partCombineAutomatic
 	c4(\pp\> f g f)\!
 	f r r2
-	a,,4(\pp d c f,) \mark \default
+	\shape #'((0 . -1.5)(0 . -1)(0 . -1)(0 . -1.5)) Slur \aIIXoffset #-3 a,,4(\pp d c f,) \mark \default
 % Bars 71 to 75
 	bes8 r r4 r2
 	bes'2(\pp ees
@@ -106,9 +106,9 @@ musicFagottoIMvtII = \relative c {
 	
 % Bars 81 to 85
 	
-	\partCombineApart \stemUp c8-^-\mfmarcato b-^ bes-^[ r16 bes-.] f'8-> e->~ e \tuplet 3/2 8 {d16( e f}
+	\partCombineApart \stemUp \markEO #'(-2 . -0.9) c8-^-\mfmarcato b-^ bes-^[ r16 bes-.] f'8-> e->~ e \tuplet 3/2 8 {d16( e f}
 	e8) r r4 r2 \partCombineAutomatic
-	g,4->\mf f-> ees!-> des\startTrillSpan
+	\aIIXoffset -4 g,4->\mf f-> ees!-> des\startTrillSpan
 	c8\stopTrillSpan r r4 r2
 % Bars 86 to 90
 	r4 g'->\f bes-> des->
@@ -120,7 +120,7 @@ musicFagottoIMvtII = \relative c {
 	c8-.\> b-. aes-.\! r r2
 	R1*2
 	\section
-	\time 2/4 ees''8(_\pdim des4 ces8 \section \mark \default
+	\time 2/4 \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur ees''8(_\pdim des4 ces8 \section \mark \default
 	\time 4/4 bes8) r r4 r2
 % Bars 96 to 100
 	R1
@@ -133,7 +133,7 @@ musicFagottoIMvtII = \relative c {
 	des1~
 	<< des {s4 s s s8 s\!}>>
 	des1~
-	des4 << des2.->~\> {s4 s s8 s\!}>>
+	des4 << \hairpinShorten #'(2 . -2) des2.->~\> {s4 s s8 s\!}>>
 % Bars 106 to 110
 	des8 \partCombineAutomatic r r4 \partCombineApart ees2->(
 	des8) \partCombineAutomatic r r4 \partCombineApart ees2(->
@@ -141,7 +141,7 @@ musicFagottoIMvtII = \relative c {
 	r r8 ees,4.(\pp
 	f8) r r4 r2
 % Bars 111 to 115
-	\partCombineApart r2 r4 bes(~\ppp\fermata
+	\partCombineApart r2 r4 \shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -2)) Slur bes(~-\offset X-offset -2.5 \ppp\fermata
 	bes d! bes g!
 	<< f1)\> {s4 s s s\!}>> \partCombineAutomatic \mark \default
 	R1
@@ -150,12 +150,12 @@ musicFagottoIMvtII = \relative c {
 	d8) r r4 r2
 	\partCombineApart << d2~ {s4 s} >> d4 bes
 	<< c1( {s4 s s s }>>
-	<< d2. {s4 s s }>> ees4_\crescmarkup~
+	<< d2. {s4 s s }>> ees4~
 	ees2.~ ees8)\! \partCombineAutomatic r \mark \default
 % Bars 121 to 125
 	R1
 	\partCombineApart \mmrPos #10 R
-	f2.\pp c8.(-\crescmarkup d16)
+	f2.-\offset X-offset #-2 \pp c8.(-\offset X-offset -5 -\crescmarkup d16)
 	<< ees2.( {s4 s s}>> \tuplet 3/2 4 {\stemDown \omitBeam \omitTupletNumber ees8 f ges}
 	f) \partCombineAutomatic r r4 r2
 % Bars 126 to 130

@@ -70,10 +70,10 @@ musicArpaUpMvtII = \relative c {
 	<f a c f>4\arpeggio r r2
 	R1
 	\tuplet 5/4 4 {
-		\staffDown a,,,16^([^\brack\p a'] \staffUp f' a c  
-		\staffDown d,,[ d'] \staffUp f a d
-		\staffDown c,,[ c'] \staffUp g' c ees
-		\staffDown f,,,[ f'] \staffUp a' c f } \mark \default
+		\omitTupletBracket \staffDown \shape #'((0 . 3.5)(3 . -2)(-2 . -7)(0 . 2)) Slur a,,,16^([^\brack\p a'] \staffUp f' a c  
+		\omitTupletBracket \staffDown d,,[ d'] \staffUp f a d
+		\omitTupletBracket \staffDown c,,[ c'] \staffUp g' c ees
+		\omitTupletBracket \staffDown f,,,[ f'] \staffUp a' c f } \mark \default
 % Bars 71 to 75
 	<f, bes d f>4)\arpeggio r r2
 	R1*6
@@ -93,13 +93,13 @@ musicArpaUpMvtII = \relative c {
 	\time 4/4 R1*2
 % Bars 96 to 100
 	
-	\staffDown \tuplet 3/2 8 {ees,16^\p([ bes' ees]} \staffUp g32 des' ees g
+	\staffDown \shape #'((0 . 2)(0 . -1)(-2 . -8)(0 . 0)) Slur \tuplet 3/2 8 {ees,16^\p([ bes' ees]} \staffUp g32 des' ees g
 		\staffDown \tuplet 3/2 8 {ees,,16[ bes' ees]} \staffUp g32 des' ees g
 		\staffDown \tuplet 3/2 8 {bes,,16[ ees g]} \staffUp bes32 des ees bes'
 		\staffDown \tuplet 3/2 8 {bes,,16[ ees g]} \staffUp bes32 des ees bes')
-	\staffDown \tuplet 3/2 8 {ees,,16([ bes'^\crescmarkup des]} \staffUp fes32 aes bes fes'
+	\staffDown \shape #'((0 . 2)(0 . 3)(-6 . -5)(0 . 0)) Slur \tuplet 3/2 8 {ees,,16([ bes'-\tweak extra-offset #'(-1 . 3) ^\crescmarkup des]} \staffUp fes32 aes bes fes'
 		\staffDown \tuplet 3/2 8 {ees,,16[ bes' des]} \staffUp ees32 g bes ees
-		\staffDown \tuplet 3/2 8 {aes,,16[ ces d!]} \staffUp f!32_\dimmarkup ces' d! f!
+		\staffDown \tuplet 3/2 8 {aes,,16[ ces d!]} \staffUp f!32-\tweak extra-offset #'(0 . -3.3) _\dimmarkup ces' d! f!
 		\staffDown \tuplet 3/2 8 {ces,!16[ d! f]} \staffUp aes32 d f aes)
 	<g, bes ees g>4 r r2
 	R1*11

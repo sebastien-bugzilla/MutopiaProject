@@ -93,9 +93,9 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	<< f1\pp\<~ {s4 s\! s\> s\!}>>
+	<< \hairpinShorten #'(0 . -0.5) f1\pp\<~ {s8 s s s\! \hairpinShorten #'(-0.5 . 0) s\> s s s\!}>>
 	f4 r r2
 % Bars 141 and 142
 	R1
-	f1\pp\fermata \fine
+	\aIIXoffset #-4 f1\pp\fermata \fine
 }

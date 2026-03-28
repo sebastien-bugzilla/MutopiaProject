@@ -15,7 +15,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	r2 << f,2:32\brack\pp\< {s8 s\> s s}>>
+	r2 << f,2:32-\offset X-offset #-1.5 \brack\pp\< {s8 s s s\>}>>
 	f1:\dimD \mark \default
 	bes4 r r2
 	R1*16
@@ -121,7 +121,7 @@ musicTimpaniMvtII = \relative c {
 	
 	<< bes1:32\fz {s4 s s s8\> s}>>
 	bes1:\dimD
-	<< bes:\pp\< {s4 s\! s\> s\!}>>
+	<< \hairpinShorten #'(0 . -0.5) bes:\pp\< {s8 s s s\! \hairpinShorten #'(-0.5 . 0) s\> s s s\!}>>
 	bes4 r r2
 % Bars 141 and 142
 	R1

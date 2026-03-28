@@ -10,7 +10,7 @@ musicClarinettoIMvtII = \relative c {
 	\transposition bes
 % Bars 1 to 5
 	\partCombineApart c'4-- b-- bes-- \once \partCombineAutomatic r8 bes
-	ees4 d2( \tuplet 3/2 4 {c8 d ees}
+	ees4 \shape #'((0 . 2)(0 . -0.5)(0 . -0.5)(0 . 2)) Slur d2( \tuplet 3/2 4 {c8 d ees}
 	d4) f2-> c8.( d16
 	b!4) e2 \tuplet 3/2 4 {e8 fis gis}
 	a2~ a8 a( d16 c b a)
@@ -44,7 +44,7 @@ musicClarinettoIMvtII = \relative c {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	\partCombineApart r4 r8 d'-.\pp^\solo bes'4-> r \partCombineAutomatic
+	\partCombineApart r4 r8 d'-.-\offset X-offset -1.5 \pp-\offset X-offset -1.5 ^\solo bes'4-> r \partCombineAutomatic
 	R1*2
 	
 	\partCombineApart r8^\solo e,8-.\pp a4-> r2 \partCombineAutomatic
@@ -74,9 +74,9 @@ musicClarinettoIMvtII = \relative c {
 	\omitBeam g) fis8 fis fis fis16~ \omitBeam fis fis8 e g g16~
 	\omitBeam g fis8 fis f f16~ \omitBeam f f8 e g g16~
 % Bars 66 to 70
-	\omitBeam g f8 f a a16~ \stemUp a_\crescmarkup g8 f e d16~
+	\omitBeam g f8 f a a16~ \stemUp a_\crescmarkup g8 f e d16_~
 	d e8 e e e16~ e e8 e16~ e d-. e-. b-.
-	d4( g a g~
+	\shape #'((0 . 1.5)(0 . -0.5)(0 . -0.5)(0 . 1)) Slur d4( g a g~
 	g) \partCombineAutomatic r r2
 	\partCombineApart b,,2( a4 b \mark \default
 % Bars 71 to 75
@@ -97,7 +97,7 @@ musicClarinettoIMvtII = \relative c {
 % Bars 86 to 90
 	r4 a->\f c-> ees->
 	d16 d d d  d\< d d d  d d d d  d d d d\!
-	\once \partCombineApart d8 r \partCombineApart r g->\f(~ g16 fis g a g8 fis)
+	\once \partCombineApart d8 r \partCombineApart r g->-\offset X-offset -2 \f(~ g16 fis g a g8 fis)
 	r4 r8 g\fz\>(~ g16 fis g a g8 fis)\! \partCombineAutomatic
 	R1*4
 % Bars 91 to 95
@@ -108,8 +108,8 @@ musicClarinettoIMvtII = \relative c {
 	\time 4/4 R1*2
 % Bars 96 to 100
 	
-	\partCombineApart f4(\p e ees) r8\< ees
-	bes'4( a2)\f \tuplet 3/2 4 {g8(\> a bes\!}
+	\partCombineApart f4(_\p e ees) r8_\< ees
+	bes'4( a2)_\f \tuplet 3/2 4 {g8(\> a bes\!}
 	a4) r r2 \partCombineAutomatic
 	R1*4
 % Bars 101 to 105
@@ -120,9 +120,9 @@ musicClarinettoIMvtII = \relative c {
 	c4(\! ces2)->\> \tuplet 3/2 4 {aes8( bes ces\!}
 % Bars 106 to 110
 	bes2:16) << ces: {s4 s}>>
-	bes2: \partCombineAutomatic << ces:\p\> {s8 s s s\!}>>
+	bes2: \partCombineAutomatic << \hairpinShorten #'(0 . -1) ces:-\tweak X-offset -2 \p-\tweak extra-offset #'(1 . 1) \> {s8 s s s\!}>>
 	bes8\pp r r4 r2
-	r2 r8 ces,4.\pp(
+	r2 r8 ces,4.-\tweak X-offset -1.5 \pp(
 	bes8) r r4 r2
 % Bars 111 to 115
 	R1\fermata
@@ -138,14 +138,14 @@ musicClarinettoIMvtII = \relative c {
 % Bars 121 to 125
 	R1*2
 	
-	\partCombineApart c''4( b bes) r8_\crescmarkup bes\<
+	\partCombineApart c''4( b bes) r8-\offset X-offset -5 _\crescmarkup bes\<
 	a4( << aes2\! {s4 s\> }>> \tuplet 3/2 4 {f8 g aes\!}
 	g8) \partCombineAutomatic r r4 r d\p
 % Bars 126 to 130
 	\partCombineApart << d1-> {s4 s s s}>>
 	\stemDown ees2( << g) {s8 s s s}>> \stemUp
-	aes4( g fis) r8 fis
-	a!4 g(~ \tuplet 3/2 4 {g8_\dimmarkup e d} f!4) \partCombineAutomatic
+	\shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . -0.5)) Slur aes4( g fis) r8 fis
+	a!4 \shape #'((0 . -0.3)(0 . -0.2)(0 . -0.2)(0 . -0.3)) Slur g(~ \tuplet 3/2 4 {\beamOffset #'(-0.5 . -0.5) g8_\dimmarkup e d} f!4) \partCombineAutomatic
 	e4(\p\< g~\! \tuplet 3/2 4 {g8\> e d} f4\!
 % Bars 131 to 135
 	e8) r g4(~\pp \tuplet 3/2 4 {g8 e d} f4
@@ -156,7 +156,7 @@ musicClarinettoIMvtII = \relative c {
 % Bars 136 to 140
 	R1*2
 	
-	<< c1~\p\> {s4 s s s\!}>>
+	<< \dynEO #'(0 . 0.5) c1~\p-\tweak extra-offset #'(1 . 2.5) \> {s4 s s s\!}>>
 	c4 r r2
 	\partCombineApart c8-.\p d-. e-. r16 f-. e4 e \partCombineChords
 % Bars 141 and 142

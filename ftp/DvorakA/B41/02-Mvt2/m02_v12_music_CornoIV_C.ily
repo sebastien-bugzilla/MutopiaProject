@@ -42,7 +42,7 @@ musicCornoIVMvtII = \relative c {
 	d4\< r8 d d4\! r8 a\>
 	d4\p r8 d\> d4\! r
 	d\pp\< r8 d d4 r8 d\!
-	d4\cresc r8 d\< d4 r8 d\!
+	d4\crescD\< r8 d d4 r8 d\!
 	d4\mf r8\< d d4->\! r8 d\>
 % Bars 31 to 35
 	d4\! r8 d\pp d4 r8 f8
@@ -125,8 +125,8 @@ musicCornoIVMvtII = \relative c {
 	f~
 % Bars 116 to 120
 	f8 f4 f f f8~
-	f f4 f_\crescmarkup f f8
-	<< f1~ {s2 s_\dimmarkup}>>
+	f f4 f-\offset X-offset 0.5 _\crescmarkup f f8
+	<< f1~ {s2 \markEO #'(0 . 3) s_\dimmarkup}>>
 	f8\pp f4 f f_\crescmarkup f8~
 	f16 f8 f f\< f16~ f f8 f f\! f16~ \mark \default
 % Bars 121 to 125
@@ -145,7 +145,7 @@ musicCornoIVMvtII = \relative c {
 	R1*6
 % Bars 136 to 140
 	
-	f,1\fp~
+	f,1-\tweak X-offset #-3 \fp~
 	f~
 	f4 r r2
 	R1*2

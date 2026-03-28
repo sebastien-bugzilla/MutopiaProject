@@ -74,7 +74,7 @@ musicTrombonoIMvtII = \relative c {
 	c2_\brack\mf^\fzmarkup ees4-> des->
 % Bars 86 to 90
 	des( c8) r r4 r8. bes16
-	g'!8-> f->~ f16\< e-. f-. fis-. g8-.-^ f-^ e-^ d!16-^ des-^\!
+	g'!8-> f->~ f16 e-.\< f-. fis-. g8-.-^ f-^ e-^ d!16-^ des-^\!
 	c8-^\ff b-^ bes-^ r r2
 	c8-^\ff b-^ bes-^ r r2
 	R1*4

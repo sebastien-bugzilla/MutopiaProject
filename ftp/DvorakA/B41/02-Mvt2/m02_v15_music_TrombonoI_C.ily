@@ -71,10 +71,10 @@ musicTrombonoIMvtII = \relative c {
 	
 	
 	
-	c2_\brack\mf^\fzmarkup ees4-> des->
+	c2_\brackmffz ees4-> des->
 % Bars 86 to 90
 	des( c8) r r4 r8. bes16
-	g'!8-> f->~ f16\< e-. f-. fis-. g8-.-^ f-^ e-^ d!16-^ des-^\!
+	g'!8-> f->~ f16 e-.\< f-. fis-. g8-.-^ f-^ e-^ d!16-^ des-^\!
 	c8-^\ff b-^ bes-^ r r2
 	c8-^\ff b-^ bes-^ r r2
 	R1*4
@@ -115,7 +115,7 @@ musicTrombonoIMvtII = \relative c {
 	
 	
 	
-	<< bes1\pp\<~ {s8 s s s\! s\> s s s\!}>>
+	<< \hairpinShorten #'(0 . -0.5) bes1\pp\<~ {s8 s s s\! \hairpinShorten #'(-0.5 . 0) s\> s s s\!}>>
 	bes4 r r2
 % Bars 141 and 142
 	R1

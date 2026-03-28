@@ -115,8 +115,8 @@ crescmarkup = \markup {\italic cresc.}
 moltocresc = \markup {\italic "molto cresc."}
 dimin = \markup {\italic "dimin."}
 semprediminuendo = \markup {\italic "sempre diminuendo"}
-crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
-dimD = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
+crescD = \tweak DynamicText.self-alignment-X #-0.77 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
+dimD = \tweak DynamicText.self-alignment-X #-0.72 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pococresc = \markup {\italic "poco cresc."}
 pocoapococresc = \markup {\italic "poco a poco cresc."}
 crescpoco = \markup {\italic "cresc. poco"}
@@ -144,6 +144,7 @@ brackf-fz = \markup {\hspace #-3.15 \concat {\bracket \with-true-dimensions \dyn
 fpbrackp = \markup {\hspace #-0.7 \concat {\dynamic fp \bracket \with-true-dimensions \dynamic p}}
 brackfffz = \markup {\hspace #-4.45 \bracket \with-true-dimensions \dynamic ff \dynamic fz}
 fbrackf = \markup {\hspace #-2 \concat {\dynamic f \bracket \with-true-dimensions \dynamic f}}
+brackmffz = \markup {\hspace #-4.77 \concat {\bracket \with-true-dimensions \dynamic mf \hspace #0.4 \dynamic fz}}
 
 %--------------------
 % text indications
@@ -358,23 +359,33 @@ tempoXoffset = #(define-music-function
 	(offset)
 	(number?)
 	#{
-		\once \override Score.MetronomeMark.X-offset = #offset
+		\once \offset X-offset #offset Score.MetronomeMark 
 	#}
 )
+
+noteShift = #(define-music-function
+	(shift)
+	(number?)
+	#{
+		\once \override NoteColumn.force-hshift = #shift
+	#}
+)
+
+hairpinEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Hairpin.extra-offset = #offset
+		\once \override Hairpin.whiteout = ##t
+		\once \override Hairpin.whiteout-style = #'outline
+	#}
+)
+
 
 
 %###############################################################################
 %  Fonctions sur étagère
 %###############################################################################
-
-%noteShift = #(define-music-function
-%	(shift)
-%	(number?)
-%	#{
-%		\once \override NoteColumn.force-hshift = #shift
-%	#}
-%)
-
 
 %trillflat = \markup { 
 %	\general-align #X #CENTER 
@@ -466,16 +477,6 @@ tempoXoffset = #(define-music-function
 %	(number?)
 %	#{
 %		\once \override DynamicTextSpanner.bound-details.right.Y = #offset
-%	#}
-%)
-
-%hairpinEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.extra-offset = #offset
-%		\once \override Hairpin.whiteout = ##t
-%		\once \override Hairpin.whiteout-style = #'outline
 %	#}
 %)
 

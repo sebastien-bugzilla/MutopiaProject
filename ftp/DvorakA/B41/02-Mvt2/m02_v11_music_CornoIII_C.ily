@@ -42,7 +42,7 @@ musicCornoIIIMvtII = \relative c {
 	e4\< r8 e f4\! r8 a\>
 	a4\p r8 a\> a4\! r
 	c\pp\< r8 c c4 r8 c\!
-	c4\cresc r8 b!\< b4 r8 c\!
+	c4\crescD\< r8 b b4 r8 c\!
 	b4\mf r8\< b b4->\! r8 c\>
 % Bars 31 to 35
 	b4\! r8 bes\pp bes4 r8 c8
@@ -67,7 +67,7 @@ musicCornoIIIMvtII = \relative c {
 	
 	
 	
-	\partCombineApart c4(\pp\<^\solo e << bes2\> {s8 s s s\!}>>
+	\partCombineApart c4(\pp\<-\offset X-offset -4 ^\solo e << bes2\> {s8 s s s\!}>>
 	g4) r r2 \mark \default
 % Bars 71 to 75
 	R1*7
@@ -104,7 +104,7 @@ musicCornoIIIMvtII = \relative c {
 	r bes8 bes bes bes16~_\crescmarkup bes bes8 bes bes bes16
 	aes4\mf r r2
 	R1
-	\partCombineApart aes1\p~
+	\partCombineApart \dynEO #'(0 . -1) aes1\p~
 	aes4 aes2.->~_\dimmarkup
 % Bars 106 to 110
 	aes8 r r4 r2 \partCombineAutomatic
@@ -132,14 +132,14 @@ musicCornoIIIMvtII = \relative c {
 % Bars 126 to 130
 	R1*2
 	
-	\partCombineApart des'4(^\solo\mp\< c b!) r8 b\!
-	d!4 << c2.\>~ {s4 s_\dimmarkup s}>>
+	\partCombineApart des'4(-\offset X-offset -6 ^\solo\mp\< c b!) r8 b\!
+	d!4 << \hairpinShorten #'(2.3 . 0) c2.\>~ {s4 s_\dimmarkup s8 s\!}>>
 	c4\p r r2 \partCombineAutomatic
 % Bars 131 to 135
 	R1*6
 % Bars 136 to 140
 	
-	f,1\fp~
+	f,1-\tweak X-offset #-3 \fp~
 	f~
 	f4 r r2
 	R1*2

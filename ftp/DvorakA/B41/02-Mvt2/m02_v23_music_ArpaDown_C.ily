@@ -51,7 +51,7 @@ musicArpaDownMvtII = \relative c {
 	<b, b'> r <d d'> r
 	<b b'> <c c'> r <g' g'>
 	<c, c'> r <e e'>-> <g g'>->
-	<c, c'> <g' g'>\p r <bes, bes'>\pp
+	<c, c'> <g' g'>\p r <bes, bes'>-\offset X-offset -2.3 \pp
 % Bars 66 to 70
 	<ees! ees'!> <c c'> r <ees ees'>8 q
 	<d' g bes d>4\arpeggio r r2

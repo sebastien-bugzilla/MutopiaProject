@@ -90,7 +90,7 @@ musicContrabassoMvtII = \relative c {
 	bes16[\pp^\arco r bes r bes r bes] r bes[ r bes_\crescmarkup r bes r bes] r
 	bes[\< r bes r bes r bes] r bes[ r bes]\! r r4 \mark \default
 	bes2(\fp\> f)\!
-	bes4(\> ees2.)\pp
+	\hairpinShorten #'(-1.5 . -0.5) bes4(\> ees2.)\pp
 	aes,8 r r4 r2
 % Bars 81 to 85
 	R1*4
@@ -142,7 +142,7 @@ musicContrabassoMvtII = \relative c {
 	bes[ r bes r bes_\crescmarkup r bes] r bes[ r bes] r r4 \mark \default
 % Bars 121 to 125
 	<< bes1\fp\> {s4 s s s8 s\!}>>
-	<< bes1\pp\< {s8 s s s\! s\> s s s\!}>>
+	<< \hairpinShorten #'(0 . -3) bes1\pp\< {s8 s s s\! \hairpinShorten #'(3 . -2) s\> s s s\!}>>
 	\tuplet 6/4 4 {bes16(\pp a bes a bes a  bes a bes a bes a)} bes8 r r4
 	R1*5
 	
@@ -160,7 +160,7 @@ musicContrabassoMvtII = \relative c {
 	bes2 \tuplet 3/2 4 {bes8_\molto\<( d c)\!} ees4(~\fz
 % Bars 136 to 140
 	ees2\p\> d4 c)\!
-	\tuplet 3/2 4 {bes8-.\mf bes'-. a!-.} aes-.[ r16 g!-.] ges8-.\> f-. \tuplet 3/2 4 { r fes-. ees-.\!}
+	\tuplet 3/2 4 {bes8-.-\offset X-offset -1 \mf bes'-. a!-.} aes-.[ r16 g!-.] ges8-.\> f-. \tuplet 3/2 4 { r fes-. ees-.\!}
 	des4-^\p\> c!-^\! r ces-.\pp
 	bes r r2
 	R1
