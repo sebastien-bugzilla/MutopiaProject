@@ -22,7 +22,8 @@
 \include "./00-Common/DvorakSymph4_NameStaff.ily"
 \include "./00-Common/DvorakSymph4_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-\include "./00-Common/DvorakSymph4_Format_Cond_Mvt03.ily"
+%\include "./00-Common/DvorakSymph4_Format_Cond_Mvt03.ily"
+\include "./00-Common/DvorakSymph4_Format_temp.ily"
 \include "./03-Mvt3/m03_v01_music_FlautoI.ily"
 \include "./03-Mvt3/m03_v02_music_FlautoII.ily"
 \include "./03-Mvt3/m03_v03_music_OboeI_C.ily"
@@ -72,14 +73,15 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
+				\new GrandStaff \with { \nameGrandStaffIMvtIII
+					\consists Keep_alive_together_engraver } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtIII
-%						}
 						\new Voice {
-							\tempiMvtIII
+							\formatConductorMvtIII
 						}
+%						\new Voice {
+%							\tempiMvtIII
+%						}
 						\new Voice {
 							\timeMvtIII \nameStaffIMvtIII \musicFlautoIMvtIII
 						}
@@ -105,7 +107,8 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtIII
+					\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtIII \nameStaffVIMvtIII
 						\partCombine \musicCornoIMvtIII \musicCornoIIMvtIII
@@ -146,7 +149,7 @@
 			\new RhythmicStaff {
 				\timeMvtIII \nameStaffXVMvtIII \musicGranCassaMvtIII
 			}
-			\new PianoStaff <<
+			\new PianoStaff \with { \nameGrandStaffIVMvtIII } <<
 				\new Staff = "up" {
 					\timeMvtIII \nameStaffXVIMvtIII \musicArpaUpMvtIII
 				}
@@ -155,7 +158,8 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIVMvtIII } <<
+				\new GrandStaff \with { \nameGrandStaffVMvtIII
+					\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtIII \nameStaffXVIIIMvtIII \musicViolinoIMvtIII
 					}
@@ -178,6 +182,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+			system-count = 66  % 63
 		}
 	}
 }

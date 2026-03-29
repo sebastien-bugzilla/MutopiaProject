@@ -166,7 +166,7 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	R1.\fermata \section
+	R1.\fermata \section \newSpacingSection \break
 	\time 2/4 \key c \major R2*15
 % Bars 141 to 145
 	
@@ -278,7 +278,7 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	\section
+	\section \break \newSpacingSection
 % Bars 266 to 270
 	\time 6/4 \key d \minor a4\ff r r r2 r4
 	r2 r4 g2.->\fz
@@ -368,7 +368,7 @@ musicOboeIMvtIII = \relative c {
 	bes4 a2~ a4 bes2~
 	bes4 b2~ b4 bes2~
 	bes4 b2~ b4 c2~
-	c4 cis2~ cis d4-. \section
+	c4 cis2~ cis d4-. \section \newSpacingSection
 % Bars 341 to 345
 	\time 2/4 \key d \major fis4_\fffz->~ fis8[ r16 e-.]
 	fis4->\fz~ fis8[ r16 e-.]
