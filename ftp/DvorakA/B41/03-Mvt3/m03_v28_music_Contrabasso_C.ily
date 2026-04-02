@@ -191,7 +191,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 181 to 185
 	
 	\mark \default
-	g4..->\mf^\arco fis16(
+	g4..->\mf-\offset X-offset -6 ^\arco fis16(
 	g4..)->_\brackpocoapococresc fis16(
 	g4..)-> fis16(
 % Bars 186 to 190
@@ -199,7 +199,7 @@ musicContrabassoMvtIII = \relative c {
 	g8.) fis16( g8) r
 	R2 
 	d''16->\brack\f c-> b-> a-> g(\< fis g a
-	\tuplet 5/4 {b a b c d)} e8-^ d-^\!
+	\once \tupletUp \tupletOffset #4 \tuplet 5/4 {b a b c d)} e8-^ d-^\!
 % Bars 191 to 195
 	c,4->\ff~ c8[ r16 g]
 	c4->~ c8[ r16 g]

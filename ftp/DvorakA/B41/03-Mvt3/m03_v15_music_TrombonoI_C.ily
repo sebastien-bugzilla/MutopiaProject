@@ -9,7 +9,7 @@ musicTrombonoIMvtIII = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	cis'4-^\ff r r r2 r4
+	cis'4-^-\offset X-offset 0.5 \ff r r r2 r4
 	R1.*2
 	
 	cis4-^\f r r r2 r4

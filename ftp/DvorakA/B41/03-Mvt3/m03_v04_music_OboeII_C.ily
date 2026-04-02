@@ -22,7 +22,7 @@ musicOboeIIMvtIII = \relative c {
 	des4)\! r r r2 r8. e16(\<
 % Bars 11 to 15
 	f4)\! r r r2 r4
-	r2 r8. g16(\p\< e4)\! r r
+	r2 r8. g16(-\tweak X-offset -1 \p\< e4)\! r r
 	r2 r4 dis'(\< e) r
 	fis( g) r a( bes) r
 	a( bes)\! r a(\f bes) r
@@ -76,12 +76,12 @@ musicOboeIIMvtIII = \relative c {
 	gis2)->~ gis8 a b2->~ b8 gis \mark \default
 % Bars 56 to 60
 	cis4\f r r r2 r4
-	r2 r4 cis2.->\fz
-	cis->\fz cis->\fz
-	cis4\f r r r2 r4
-	r2 r4 cis2.->\fz
+	r2 r4 cis2.->-\tweak X-offset #0 \fz
+	cis->-\tweak X-offset #0 \fz cis->-\tweak X-offset #0 \fz
+	cis4-\tweak X-offset #0 \f r r r2 r4
+	r2 r4 cis2.->-\tweak X-offset #0 \fz
 % Bars 61 to 65
-	cis->\fz cis->\fz
+	cis->-\tweak X-offset #0 \fz cis->-\tweak X-offset #0 \fz
 	r2 r4 c!2.->\< 
 	des-> c->\!
 	r2 r4 aes2.->\<
@@ -177,24 +177,24 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	r4 \omitTupletNumber \omitTupletBracket \tuplet 6/4 4 {s16\brack\p\< g,( a b c d)\!} \mark \default
+	r4 \omitTupletNumber \omitTupletBracket \tuplet 6/4 4 {s16\brack\p\< \shape #'((0 . 0)(0 . 0.6)(0 . 0.6)(0 . 0)) Slur g,( a b c d)\!} \mark \default
 % Bars 156 to 160
 	c4~\startTrillSpan c8\stopTrillSpan[ r16 b]
-	c4~\fz\startTrillSpan c8[\stopTrillSpan r16 b]
+	c4~-\tweak X-offset 0 \fz\startTrillSpan c8[\stopTrillSpan r16 b]
 	c4-> g->
 	g-> g->
-	g\fz~ g8 r
+	g-\offset X-offset 0.5 \fz~ g8 r
 % Bars 161 to 165
-	g4\fz~ g8 r
+	g4-\offset X-offset 0.5 \fz~ g8 r
 	g4-> a->
 	gis-> a->
-	fis4.\fz r8
-	fis4.\fz r8
+	fis4.-\offset X-offset 0.5 \fz r8
+	fis4.-\offset X-offset 0.5 \fz r8
 % Bars 166 to 170
 	fis4-> e->
 	d-> b->
-	fis'4.\fz r8
-	fis4.\fz r8
+	fis'4.-\offset X-offset 0.5 \fz r8
+	fis4.-\offset X-offset 0.5 \fz r8
 	fis4-> fis->
 % Bars 171 to 175
 	fis-> g16\< g32( a b c d e)\!
@@ -211,12 +211,12 @@ musicOboeIIMvtIII = \relative c {
 % Bars 181 to 185
 	d4\brack\fz\startTrillSpan~ d8[\stopTrillSpan r16 cis-.]
 	d4-> f-> \mark \default
-	g,8\fz r r4
+	g,8-\tweak X-offset #0.5 \fz r r4
 	R2*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	\tuplet 3/2 4 {g8(\ff fis g)} g4(~
+	\tuplet 3/2 4 {g8(-\tweak X-offset -2.8 \ff fis g)} g4(~
 	\tuplet 3/2 4 {g8 fis g)} g4(~
 	\tuplet 3/2 4 {g8 fis g) r gis( a)
 	r ais( b) r b( c)
@@ -244,17 +244,17 @@ musicOboeIIMvtIII = \relative c {
 	\tuplet 3/2 4 {e8 dis e)} e4(~
 	\tuplet 3/2 4 {e8 dis e g e c
 	a c f e c g)}
-	d'4.\brack\fz r8
+	\dynEO #'(0.6 . 2.5) d'4.\brack\fz r8
 % Bars 216 to 220
-	d4.\brack\fz r8
+	\dynEO #'(0.6 . 2.5) d4.\brack\fz r8
 	d4-^ aes-^
 	g-^ f-^ \mark \default
-	des'4.\brack\fz r8
-	c4.\fz r8
+	\dynEO #'(0.6 . 2.5) des'4.\brack\fz r8
+	\dynEO #'(0.5 . 2) c4.\fz r8
 % Bars 221 to 225
 	b!4-^ aes'
 	g f
-	b,-^\ff c-^
+	\dynEO #'(-2.5 . 3.5) b,-^\ff c-^
 	b-^ r
 	c-^ b-^
 % Bars 226 to 230
@@ -280,13 +280,13 @@ musicOboeIIMvtIII = \relative c {
 	
 	\section
 % Bars 266 to 270
-	\time 6/4 \key d \minor cis4\ff r r r2 r4
-	r2 r4 cis2.->\fz
-	cis->\fz cis->\fz
+	\time 6/4 \key d \minor cis4-\tweak X-offset 0 \ff r r r2 r4
+	r2 r4 cis2.->-\tweak X-offset 0 \fz
+	cis->-\tweak X-offset 0 \fz cis->-\tweak X-offset 0 \fz
 	cis4 r r r2 r4
-	r2 r4 cis2.->\fz
+	r2 r4 cis2.->-\tweak X-offset 0 \fz
 % Bars 271 to 275
-	cis->\fz cis->\fz
+	cis->-\tweak X-offset 0 \fz cis->-\tweak X-offset 0 \fz
 	cis4\brack\f r r r2 r4
 	des r r r2 r4
 	des\p r r r2 r8. c,16(\< 
@@ -347,7 +347,7 @@ musicOboeIIMvtIII = \relative c {
 	gis2->)~ gis8 a b2->~ b8 gis \mark \default
 % Bars 321 to 325
 	cis4\f r r r2 r4
-	r2 r4 cis2.->\fz 
+	r2 r4 cis2.->-\tweak X-offset 0 \fz 
 	cis->\fz cis->\fz
 	cis4\f r r r2 r4
 	r2 r4 cis2.->\fz
@@ -374,9 +374,9 @@ musicOboeIIMvtIII = \relative c {
 	d4->\fz~ d8[ r16 cis-.]
 	d4-> fis->
 	e-> d->
-	cis4.->\fz r16 bis-.
+	cis4.->-\tweak X-offset 0 \fz r16 bis-.
 % Bars 346 to 350
-	cis4.->\fz r16 bis-.
+	cis4.->-\tweak X-offset 0 \fz r16 bis-.
 	cis4-> e->
 	e-> e->
 	d4.->\fz r16 cis-.
@@ -384,7 +384,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 351 to 355
 	d4-> d->
 	cis-> d->
-	a2\fp~
+	a2-\offset X-offset 0.8 \fp~
 	a->~
 	a->~
 % Bars 356 to 360
@@ -397,7 +397,7 @@ musicOboeIIMvtIII = \relative c {
 	gis2->(~
 	gis->~
 	gis4 fis
-	<< e2)\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(1 . 0) e2)\> {s8 s s s\!}>>
 	R2*10
 % Bars 366 to 370
 	

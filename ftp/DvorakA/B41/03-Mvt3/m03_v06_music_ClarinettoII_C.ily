@@ -22,7 +22,7 @@ musicClarinettoIIMvtIII = \relative c {
 	e4)\! r r r2 r8. g16(\<
 % Bars 11 to 15
 	aes!4)\! r r r2 r4
-	r2 r8. bes16(\p\< g4)\! r r
+	r2 r8. bes16(-\tweak X-offset -1 \p\< g4)\! r r
 	r2 r4 fis'(\< g) r
 	a( bes) r c,( des!) r
 	c( des!)\! r c(\f des) r
@@ -35,7 +35,7 @@ musicClarinettoIIMvtIII = \relative c {
 	<< ees1.(->\> {s4 s s s s s\!}>>
 	c2.) r2 r8 c->
 % Bars 26 to 30
-	<< c1.\fz~ {s4 s s\> s s s}>>
+	<< c1.\fz~ {s4 s s s\> s s}>>
 	c2 c4-. ees-. des-. bes-.\!
 	c1.->~
 	c2. r2 r8 c
@@ -131,7 +131,7 @@ musicClarinettoIIMvtIII = \relative c {
 	gis2~ gis8 a-. b2~ b8 gis-.
 	a2~ a8 b-. c2~ c8 a-.
 % Bars 106 to 110
-	d1.\fz~->
+	d1.-\tweak X-offset #-1 \fz~->
 	d2 e4-> f-> e-> d->
 	\afterGrace 99/100 c1.-> {\flag a8}
 	gis2->~ gis8 a b2->~ b8 gis \mark \default
@@ -177,8 +177,8 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 146 to 150
 	d4-> c!->
 	b-> c->
-	a4.\fp s16 c-.
-	a4.\fp s16 c-.
+	a4.-\offset X-offset 0.8 \fp s16 c-.
+	a4.-\offset X-offset 0.8 \fp s16 c-.
 	a4-> a->
 % Bars 151 to 155
 	a-> bes->
@@ -188,7 +188,7 @@ musicClarinettoIIMvtIII = \relative c {
 	d-> \tuplet 6/4 4 {bes16\< bes( c d ees f)\!} \mark \default
 % Bars 156 to 160
 	g4\startTrillSpan~ g8[\stopTrillSpan r16 f]
-	g4\fz\startTrillSpan~ g8[\stopTrillSpan r16 f]
+	g4-\tweak X-offset 0 \fz\startTrillSpan~ g8[\stopTrillSpan r16 f]
 	g4-> bes->
 	aes-> g->
 	d'4\fz\startTrillSpan~ d8[\stopTrillSpan r16 cis]
@@ -196,8 +196,8 @@ musicClarinettoIIMvtIII = \relative c {
 	d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 cis]
 	d4-> c!->
 	b-> c->
-	a4.\fz r8
-	a4.\fz r8
+	a4.-\tweak X-offset 0 \fz r8
+	a4.-\tweak X-offset 0 \fz r8
 % Bars 166 to 170
 	a4-> a->
 	a-> f->
@@ -238,11 +238,11 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 201 to 205
 	a4-> a->
 	a-> f->
-	d'4\brack\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
-	d4\brack\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
+	d'4-\tweak X-offset -0.5 \brack\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
+	d4-\tweak X-offset -0.5 \brack\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
 	d4-> ees->
 % Bars 206 to 210
-	d-> bes16-.\< bes32( c d ees f g)\!
+	d-> bes16-. bes32(\< c d ees f g)\!
 	aes4\fz\startTrillSpan~ aes8[\stopTrillSpan r16 g-.]
 	aes4\fz\startTrillSpan~ aes8[\stopTrillSpan r16 g-.]
 	aes4-> c->
@@ -258,11 +258,11 @@ musicClarinettoIIMvtIII = \relative c {
 	f4-^ ces-^
 	bes-^ aes-^ \mark \default
 	fes'4\fz~ fes8[ s16 g-.]
-	ees4.\fz r8
+	\dynEO #'(0.5 . 2) ees4.\fz r8
 % Bars 221 to 225
 	d4-^ ces-^
 	bes-^ aes-^
-	d-^\ff ees-^
+	\dynEO #'(-2 . 2) d-^\ff ees-^
 	d-^ r
 	ees-^ d-^
 % Bars 226 to 230
@@ -388,9 +388,9 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 351 to 355
 	d4-> d->
 	c-> bes->
-	f'4\fp\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	f'4\fp-\tweak extra-offset #'(0 . -0.8) \startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 	f4\fp\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
-	f4--( f--\<
+	f4--(\< f--\!
 % Bars 356 to 360
 	e--\> f--\!)
 	e4\fp\startTrillSpan~ e8[\stopTrillSpan r16 dis-.]
@@ -398,7 +398,7 @@ musicClarinettoIIMvtIII = \relative c {
 	e4--(\< d!--\!
 	cis--\> d--\!)
 % Bars 361 to 365
-	g,4.->_\dimmarkup r8
+	\markEO #'(0.5 . 3) g,4.->_\dimmarkup r8
 	g4.-> r8
 	b2\p\>~ 
 	b4 c--\!

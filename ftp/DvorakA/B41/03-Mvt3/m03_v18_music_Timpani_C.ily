@@ -125,8 +125,8 @@ musicTimpaniMvtIII = \relative c {
 	r2 r4 d-. r r
 	r2 r4 d-. r r
 	r2 r4 d-. r r
-	R1. \mark \default
-	R1.*12^\mutaainh
+	R1.^\mutaainh \changeStaffName \timpinhd \mark \default
+	R1.*12 
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -145,8 +145,8 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	b1.:16\pp
-	b:\fermata \section
-	\time 2/4 R2*16^\mutaincg
+	b:\fermata-\offset X-offset 3 ^\mutaincg \section \changeStaffName \timpincg
+	\time 2/4 R2*16
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -180,7 +180,7 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 % Bars 191 to 195
-	c4:\f c8 r
+	\dynEO #'(0 . 1) c4:\f c8 r
 	c4: c8 r
 	c4: c8 r
 	c4: c8 r
@@ -218,12 +218,12 @@ musicTimpaniMvtIII = \relative c {
 % Bars 221 to 225
 	g4 r
 	R2
-	g4-^\ff c-^
+	\dynEO #'(-2.5 . 2) g4-^\ff c-^
 	g-^ r
 	c-^ g-^
 % Bars 226 to 230
 	c-^ r
-	g8 r r4^\mutainda
+	g8 r r4^\mutainda \changeStaffName \timpinda
 	R2*34
 % Bars 231 to 235
 	

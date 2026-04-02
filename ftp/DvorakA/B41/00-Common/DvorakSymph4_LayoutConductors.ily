@@ -68,6 +68,7 @@
 	\context {
 		\RhythmicStaff
 		\RemoveEmptyStaves
+%		\RemoveAllEmptyStaves
 	}
 	\context {
 		\StaffGroup

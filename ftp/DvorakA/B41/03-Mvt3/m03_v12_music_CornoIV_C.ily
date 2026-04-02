@@ -10,12 +10,12 @@ musicCornoIVMvtIII = \relative c {
 	\transposition f
 % Bars 1 to 5
 	e'4\ff r r r2 r4
-	r2 r4 b'2.->\fz
-	b->\fz b->\fz
+	r2 r4 b'2.->-\tweak X-offset 0 \fz
+	b->-\tweak X-offset 0 \fz b->-\tweak X-offset 0 \fz
 	e,4 r r r2 r4
-	r2 r4 b'2.->\fz
+	r2 r4 b'2.->-\tweak X-offset 0 \fz
 % Bars 6 to 10
-	b->\fz b->\fz
+	b->-\tweak X-offset 0 \fz b->-\tweak X-offset 0 \fz
 	gis4 r r r2 r4
 	f4 r r r2 r4
 	f4\p r r8. b16(\< c4)\! r r
@@ -145,13 +145,13 @@ musicCornoIVMvtIII = \relative c {
 	
 	
 	R1.\fermata \section 
-	\time 2/4 g4\fp~ g8 r
+	\time 2/4 g4-\tweak X-offset -1 \fp~ g8 r
 % Bars 141 to 145
-	g4\fp~ g8 r
+	g4-\tweak X-offset -1 \fp~ g8 r
 	g4-> b->
 	a-> g->
-	d'4.\fp r16 d-.
-	d4.\fp r16 d-.
+	d'4.-\tweak X-offset 0 \fp r16 d-.
+	d4.-\offset X-offset 0.8 \fp r16 d-.
 % Bars 146 to 150
 	d4-> a->
 	b-> b->
@@ -193,11 +193,11 @@ musicCornoIVMvtIII = \relative c {
 	g4.\fz r8
 	g4\mp r
 	g r
-	a4.\brack\fz r8
+	a4.-\tweak X-offset 0.5 \brack\fz r8
 % Bars 181 to 185
 	f4.\brack\fz r8
 	f4-> fis-> \mark \default
-	d'8\fz r r4
+	d'8-\offset X-offset #1 \fz r r4
 	R2*7
 % Bars 186 to 190
 	
@@ -211,7 +211,7 @@ musicCornoIVMvtIII = \relative c {
 	fis4.-> r8
 	fis4-> a->
 	fis-> e->
-	a,4.\fz r8
+	a,4.-\tweak X-offset 1 \fz r8
 	a4.\fz r8
 % Bars 201 to 205
 	a4-> a->

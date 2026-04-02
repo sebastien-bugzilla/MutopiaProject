@@ -142,7 +142,7 @@ musicTrombeIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 156 to 160
-	b4.->\mf r8
+	b4.->-\tweak X-offset -1.5 \mf r8
 	b4.-> r8
 	b4-> d->
 	d-> d->
@@ -174,12 +174,12 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 181 to 185
 	R2*2
 	\mark \default
-	d8\fz r r4
+	d8-\offset X-offset #1 \fz r r4
 	R2*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	r4 b->\ff
+	r4 b->-\tweak X-offset -3 \ff
 	r b->
 	r b->
 	r b->

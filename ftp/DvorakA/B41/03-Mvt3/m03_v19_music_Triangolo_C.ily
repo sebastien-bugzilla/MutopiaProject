@@ -99,11 +99,11 @@ musicTriangoloMvtIII = \relative c {
 	e e
 	e e \mark \default
 % Bars 156 to 160
-	e4:32\mf e8 r
+	e4:32-\offset X-offset -0.8 \mf e8 r
 	e4: e8 r
 	e4-> e->
 	e-> e->
-	e4:\mf e8 r
+	e4:-\offset X-offset -0.8 \mf e8 r
 % Bars 161 to 165
 	e4: e8 r
 	e4-> e->
@@ -118,7 +118,7 @@ musicTriangoloMvtIII = \relative c {
 	e4-> e->
 % Bars 171 to 175
 	e-> e->
-	e4:\f e8 r
+	e4:-\offset X-offset -0.5 \f e8 r
 	e4: e8 r
 	e4-> e->
 	e-> e->

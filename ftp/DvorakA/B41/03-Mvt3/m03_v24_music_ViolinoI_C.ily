@@ -9,7 +9,7 @@ musicViolinoIMvtIII = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	<e' cis' a'>4-^\ff r d-. cis( e) a,-.
+	\dynEO #'(-3 . 0) <e' cis' a'>4-^-\offset X-offset 0.5 \ff r d-. cis( e) a,-.
 	bes-> r r r2 r4
 	R1.
 	<e cis' a'>4-^ r d-. cis( e) a,-.
@@ -22,7 +22,7 @@ musicViolinoIMvtIII = \relative c {
 	des-> f-> a-> a( bes) e,-.
 % Bars 11 to 15
 	f-> bes-> c-> c( des)\! cis,-.\p
-	cis( e g e g bes)
+	cis( e g e g \once \stemUp bes)
 	g( bes_\crescmarkup cis dis e cis)
 	fis( g) e-. a( bes) gis-.
 	a( bes) gis-. a( bes) gis-.
@@ -34,7 +34,7 @@ musicViolinoIMvtIII = \relative c {
 	q2 <bes! cis e bes'!>4->~ q2 <b cis e b'>4->~
 % Bars 21 to 25
 	q2 <c! e g c!>4->~ q2 <cis e g cis>4-^
-	\arpeggioNormal <d, d' f d'>4-.\ff\arpeggio r r r2 r4
+	\arpeggioNormal <d, d' f d'>4-.-\offset X-offset 0.5 \ff\arpeggio r r r2 r4
 	R1.*33
 % Bars 26 to 30
 	
@@ -69,7 +69,7 @@ musicViolinoIMvtIII = \relative c {
 	gis->_\crescmarkup b-> c-> cis( d) ais->-.
 	b-> d-> e-> e( f) d-.
 	g( aes) f-. ais( b) gis-.
-	a!4\f a2->~\p a4_\crescmarkup bes!2->~
+	\dynEO #'(0 . 1) a!4\f a2->~\p a4_\crescmarkup bes!2->~
 % Bars 71 to 75
 	bes4 b2->~ b4 bes2->~
 	bes4 a2->~ a4 bes2->~
@@ -78,14 +78,14 @@ musicViolinoIMvtIII = \relative c {
 	c4 cis2->~ cis d4-. \section
 % Bars 76 to 80
 	\key d \major << {
-		\oneVoice <d,, d' d'>4\arpeggio\ff r r \voiceOne a'8( d a d fis a)
+		\oneVoice <d,, d' d'>4\arpeggio-\offset X-offset -2.5 \ff r r \voiceOne a'8( d a d fis a)
 		\oneVoice r2 r4 \voiceOne a,8( d a d fis a)
 		\oneVoice r2 r4 \voiceOne a,8( cis a cis e a)
 		\oneVoice r2 r4 \voiceOne a,8( cis a cis e a)
 		\oneVoice r2 r4 \voiceOne cis,8( fis cis fis a cis)
 % Bars 81 to 85
 		\oneVoice r2 r4 \voiceOne cis,8( eis cis eis gis cis)
-		\oneVoice r2 r4 \voiceOne fis,8( a fis a cis a)
+		\oneVoice r2 r4 \voiceOne \beamOffset #'(-0.5 . -0.5) fis,8( a fis a cis a)
 		cis,( fis cis fis a fis a, cis a cis fis cis)
 		\oneVoice r2 r4 \voiceOne a8( d a d fis a)
 		\oneVoice r2 r4 \voiceOne b,8( d b d fis b)
@@ -120,7 +120,7 @@ musicViolinoIMvtIII = \relative c {
 		\oneVoice r2 r4 \voiceOne cis8( eis cis eis gis cis)
 	} \\ {
 % Bars 76 to 80
-		s2. fis,,8(_\brackM\menoff d fis d d' a)
+		s2. \shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur \beamOffset #'(0.5 . 0.5) fis,,8(-\offset X-offset -5.5 _\brackM\menoff d fis d d' a)
 		s2. fis8( d fis d d' a)
 		s2. a8( e a e cis' a)
 		s2. a8( e a e cis' a)
@@ -133,32 +133,32 @@ musicViolinoIMvtIII = \relative c {
 		s2. fis8( d fis d b' fis)
 % Bars 86 to 90
 		s2. fis8( cis fis cis a' fis)
-		s2. d8( a d a fis' d)
+		s2. \shape #'((0 . 0)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur d8( a d a fis' d)
 		s2. fis8( cis fis cis a' fis)
 		s2. e8( b e b b' gis!)
 		s2. cis8( a cis a e' cis)
 % Bars 91 to 95
 		a( e a e cis' a e cis e cis a' e)
-		s2. d8( b d b b' g)
-		s2. d8( b d b b' g)
-		s2. d8( a d a a' fis)
+		s2. \beamOffset #'(0.3 . 0.3) \shape #'((0 . 0)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur d8( b d b b' g)
+		s2. \beamOffset #'(0.3 . 0.3) \shape #'((0 . 0)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur d8( b d b b' g)
+		s2. \beamOffset #'(0.3 . 0.3) \shape #'((0 . 0)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur d8( a d a a' fis)
 		s2. fis8( d fis d d' a)
 % Bars 96 to 100
 		s2. a8( fis a fis fis' cis)
 		s2. gis8( eis gis eis eis'! cis)
 		s2. a8( cis a cis a cis)
 		fis,( a fis a fis a cis, fis cis fis cis fis)
-		s2. d8( b d b b' fis)
+		s2. \beamOffset #'(0.3 . 0.3) \shape #'((0 . 0)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur d8( b d b b' fis)
 % Bars 101 to 105
-		s2. d8( b d b b' g)
-		s2. d8( a d a a' fis)
+		s2. \beamOffset #'(0.3 . 0.3) \shape #'((0 . 0)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur d8( b d b b' g)
+		s2. \beamOffset #'(0.3 . 0.3) \shape #'((0 . 0)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur d8( a d a a' fis)
 		s2. fis8( cis fis cis cis' a)
 		s2. gis8( eis gis eis eis'! cis)
 		s2. fis,8( cis fis cis cis' a)
 % Bars 106 to 110
 		s2. d,8( b d b b' fis)
 		s2. d8( b d b b' g)
-		s2. d8( a d a a' fis)
+		s2. \beamOffset #'(0.3 . 0.3) \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur d8( a d a a' fis)
 		s2. gis8( eis gis eis eis'! cis)
 	}>> \mark \default
 	<cis fis>8\ff q q q q q  q q q q q q
@@ -202,7 +202,7 @@ musicViolinoIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 156 to 160
-	\tuplet 3/2 4 {c'8(_\pdolce e g)} g4(~
+	\once \tupletUp \tuplet 3/2 4 {c'8(_\pdolce e g)} g4(~
 	\tuplet 3/2 4 {g8 fis g)} g4(~
 	\tuplet 3/2 4 {g8 fis g) r gis(\< a)
 	r ais( b) r b( c)\!
@@ -234,7 +234,7 @@ musicViolinoIMvtIII = \relative c {
 % Bars 181 to 185
 	\tuplet 3/2 4 {d8 cis d)} d4(~
 	\tuplet 3/2 4 {d8\< cis d) f( e f)\!} \mark \default
-	g,-.\noBeam_\fzmarcatobrackpocoapococresc fis,[->^\mf d'-> c]->
+	g,-.\noBeam-\offset X-offset -1 _\fzmarcatobrackpocoapococresc \dynEO #'(-0.8 . -1.5) fis,[->^\mf d'-> c]->
 	b->[ f'-> e-> d->]
 	a'[-> g-> f-> d'->]
 % Bars 186 to 190
@@ -242,9 +242,9 @@ musicViolinoIMvtIII = \relative c {
 	e-> d-> c->} b16-> a'-> g-> f->
 	e->\f d-> c-> b-> a-> g-> f-> e->
 	d-> c-> b-> a-> g(\< fis g a
-	\tuplet 5/4 4 {b a b c d)} \tuplet 7/4 {e( f! g a b c d)\!}
+	\tupletUp \beamOffset #'(0.3 . 0.3) \tuplet 5/4 4 {b a b c d)} \tuplet 7/4 {e( f! g a b c d)\!} \tupletNeutral
 % Bars 191 to 195
-	e4\ff~\startTrillSpan e8[\stopTrillSpan r16 d-.]
+	\dynEO #'(0.5 . 3) \trillSpanPadding #1 e4\ff~\startTrillSpan e8[\stopTrillSpan r16 d-.]
 	e4~\startTrillSpan e8[\stopTrillSpan r16 d-.]
 	e4\< a8( g)\!
 	f4-> e->
@@ -253,36 +253,36 @@ musicViolinoIMvtIII = \relative c {
 	d4\startTrillSpan~ d8[\stopTrillSpan r16 cis-.]
 	d4-> f->
 	e-> c->
-	b4\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
-	b4\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
+	\dynEO #'(0 . 2) b4\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
+	\dynEO #'(0 . 2) b4\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
 % Bars 201 to 205
 	b4-> c->
 	b-> g->
-	d'4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
-	d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
+	\dynEO #'(0 . 2) d'4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
+	\dynEO #'(0 . 2) d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
 	d4-> e->
 % Bars 206 to 210
 	d-> b16-. b32(\< c d e f g)\!
-	a4\fz\startTrillSpan~ a8[\stopTrillSpan r16 gis-.]
-	a4\fz\startTrillSpan~ a8[\stopTrillSpan r16 gis-.]
+	\dynEO #'(0.5 . 3) a4\fz\startTrillSpan~ a8[\stopTrillSpan r16 gis-.]
+	\dynEO #'(0.5 . 3) a4\fz\startTrillSpan~ a8[\stopTrillSpan r16 gis-.]
 	a4-> c->
 	b-> a8-. c,32(\< d e f)\!
 % Bars 211 to 215
-	g4\fz\startTrillSpan~ g8[\stopTrillSpan r16 fis-.]
-	g4\fz\startTrillSpan~ g8[\stopTrillSpan r16 fis-.]
+	\dynEO #'(0.5 . 3) g4\fz\startTrillSpan~ g8[\stopTrillSpan r16 fis-.]
+	\dynEO #'(0.5 . 3) g4\fz\startTrillSpan~ g8[\stopTrillSpan r16 fis-.]
 	g4-> b->
 	a-> g->
-	f4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	\dynEO #'(0 . 2) f4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 % Bars 216 to 220
-	f4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	\dynEO #'(0 . 2) f4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 	f4-^ aes-^
 	g-^ f-^ \mark \default
-	f4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
-	f4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	\dynEO #'(0 . 2) f4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	\dynEO #'(0 . 2) f4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 % Bars 221 to 225
 	f4-^ aes-^
 	g-^ f-^
-	f8.->[\ff e16 f8.-> e16]
+	\dynEO #'(0 . 2) f8.->[\ff e16 f8.-> e16]
 	f8-.[ aes-. g-. f-.]
 	f8.->[ e16 f8.-> e16]
 % Bars 226 to 230
@@ -334,7 +334,7 @@ musicViolinoIMvtIII = \relative c {
 	e( f) d-.\! e(_\crescmarkup f) d-.
 	e( f) d-. g( aes) f-.} \section
 % Bars 266 to 270
-	\time 6/4 \key d \minor <e,, cis' a'>4-^\ff r d-. cis( e) a,-.
+	\time 6/4 \key d \minor <e,, cis' a'>4-^-\offset X-offset 0.5 \ff r d-. cis( e) a,-.
 	bes-> r r r2 r4
 	R1.
 	<e cis' a'>4-^ r d-. cis( e) a,-.
@@ -347,7 +347,7 @@ musicViolinoIMvtIII = \relative c {
 	des-> f-> a-> a( bes) e,-.
 % Bars 276 to 280
 	f-> bes-> c-> c( des)\! cis,-.\p
-	cis( e g e g bes)
+	cis( e g e g \once \stemUp bes)
 	g( bes_\crescmarkup cis dis e cis)
 	fis( g) e-. a( bes) gis-.
 	a( bes) gis-. a( bes) gis-.
@@ -359,7 +359,7 @@ musicViolinoIMvtIII = \relative c {
 	q2 <bes! cis e bes'!>4->~ q2 <b cis e b'>4->~
 % Bars 286 to 290
 	q2 <c e g c!>4->~ q2 <cis e g cis>4-^
-	\arpeggioNormal <d, d' f d'>\ff\arpeggio-. r r r2 r4
+	\arpeggioNormal <d, d' f d'>-\offset X-offset 0.5 \ff\arpeggio-. r r r2 r4
 	R1.*33
 % Bars 291 to 295
 	
@@ -394,7 +394,7 @@ musicViolinoIMvtIII = \relative c {
 	gis->_\crescmarkup b-> c-> cis( d) ais-.->
 	b-> d-> e-> e( f) d-.
 	g( aes) f-. ais( b) gis-.
-	a!\f a2\p->~ a4_\crescmarkup bes!2->~
+	\dynEO #'(0 . 2) a!\f a2\p->~ a4_\crescmarkup bes!2->~
 % Bars 336 to 340
 	bes4 b2->~ b4 bes2->~
 	bes4 a2->~ a4 bes2->~
@@ -406,17 +406,17 @@ musicViolinoIMvtIII = \relative c {
 	d4:->\fz d8[ r16 cis-.]
 	d4-^ fis-^
 	e-^ d-^
-	cis4:->\fz cis8[ r16 bis-.]
+	\dynEO #'(0 . 2) cis4:->\fz cis8[ r16 bis-.]
 % Bars 346 to 350
-	cis4:->\fz cis8[ r16 bis-.]
+	\dynEO #'(0 . 2) cis4:->\fz cis8[ r16 bis-.]
 	cis4-^ e-^
 	d-^ cis-^
-	b4:->\fz b8[ r16 ais-.]
-	b4:->\fz b8[ r16 ais-.]
+	\dynEO #'(0 . 2) b4:->\fz b8[ r16 ais-.]
+	\dynEO #'(0 . 2) b4:->\fz b8[ r16 ais-.]
 % Bars 351 to 355
 	b4-^ d-^
 	cis-^ b-^
-	a2\fp(~\startTrillSpan
+	\dynEO #'(0 . 2) a2\fp(~\startTrillSpan
 	a~
 	a~
 % Bars 356 to 360

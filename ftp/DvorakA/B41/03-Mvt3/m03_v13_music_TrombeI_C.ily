@@ -9,10 +9,10 @@ musicTrombeIMvtIII = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	e'4-^\ff r r r2 r4
+	\aIIXoffset #-5 \dynEO #'(1 . 1) e'4-^\ff r r r2 r4
 	R1.*2
 	
-	e4-^\f r r r2 r4
+	\dynEO #'(1 . 1) e4-^\f r r r2 r4
 	R1.*2
 % Bars 6 to 10
 	
@@ -50,7 +50,7 @@ musicTrombeIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 56 to 60
-	e4-.\f r r r2 r4
+	\aIIXoffset #-3.5 e4-.\f r r r2 r4
 	R1.*2
 	
 	e4-.\f r r r2 r4
@@ -142,7 +142,7 @@ musicTrombeIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 156 to 160
-	g4.->\mf r8
+	g4.->-\tweak X-offset -1.5 \mf r8
 	g4.-> r8
 	g4-> d->
 	d-> d->
@@ -170,7 +170,7 @@ musicTrombeIMvtIII = \relative c {
 	g4. r8
 	g4-> g->
 	g-> g->
-	e4.-> r8
+	\aIIXoffset #-3 e4.-> r8
 % Bars 181 to 185
 	R2*2
 	\mark \default
@@ -179,7 +179,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	r4 g->\ff
+	r4 g->-\tweak X-offset -3 \ff
 	r g->
 	r g->
 	r g->
@@ -203,7 +203,7 @@ musicTrombeIMvtIII = \relative c {
 	r g->
 	g-> g->
 % Bars 211 to 215
-	r g-^
+	r g^^
 	r g-^
 	r g-^
 	g-^ g-^
@@ -284,7 +284,7 @@ musicTrombeIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 321 to 325
-	e4-.\f r r r2 r4
+	\aIIXoffset #-3.5 e4-.\f r r r2 r4
 	R1.*2
 	
 	e4-.\f r r r2 r4
@@ -304,7 +304,7 @@ musicTrombeIMvtIII = \relative c {
 	
 	\section
 % Bars 341 to 345
-	\time 2/4 e4._\fffz-> r16 e-.
+	\time 2/4 \aIIXoffset #0.5 e4._\fffz-> r16 e-.
 	e4.->\fz r16 e-.
 	e4-> e->
 	e-> e->

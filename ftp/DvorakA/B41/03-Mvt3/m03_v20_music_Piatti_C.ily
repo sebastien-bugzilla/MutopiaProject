@@ -91,7 +91,7 @@ musicPiattiMvtIII = \relative c {
 	
 	\mark \default
 % Bars 156 to 160
-	e4\pp r
+	e4-\offset X-offset -0.5 \pp r
 	e r
 	e r
 	e r
@@ -128,7 +128,7 @@ musicPiattiMvtIII = \relative c {
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	r4 e\f
+	r4 e-\offset X-offset -0.5 \f
 	r e
 	r e
 	r e
@@ -156,7 +156,7 @@ musicPiattiMvtIII = \relative c {
 	r e
 	r e
 	r e
-	r e\f
+	r e-\offset X-offset -0.5 \f
 % Bars 216 to 220
 	r e
 	R2*2

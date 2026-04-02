@@ -9,16 +9,16 @@ musicFlautoIIMvtIII = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	cis'''4\ff r r r2 r4
+	\dynEO #'(0 . 2) cis'''4\ff r r r2 r4
 	R1.*2
 	
-	cis4\f r r r2 r4
+	\dynEO #'(0 . 2) cis4\f r r r2 r4
 	R1.*2
 % Bars 6 to 10
 	
-	des4\f r r r2 r4
+	\dynEO #'(0 . 2) des4\f r r r2 r4
 	des4 r r r2 r4
-	des4\p r r r2 r4
+	\dynEO #'(0 . 2) des4\p r r r2 r4
 	R1.*46
 % Bars 11 to 15
 	
@@ -43,23 +43,23 @@ musicFlautoIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 56 to 60
-	cis4\f r r r2 r4
+	\dynEO #'(0 . 2) cis4\f r r r2 r4
 	R1.*2
 	
-	cis4\f r r r2 r4
+	\dynEO #'(0 . 2) cis4\f r r r2 r4
 	R1.*2
 % Bars 61 to 65
 	
-	r2 r4 aes2.->\<_\fzmarkup
-	aes->_\fzmarkup aes->_\fzmarkup\!
-	r2 r4 aes2.->\<_\fzmarkup
-	aes->_\fzmarkup aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 2) aes2.->\<_\fzmarkup
+	\markEO #'(0 . 2) aes->_\fzmarkup \markEO #'(0 . 2) aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 2) aes2.->\<_\fzmarkup
+	\markEO #'(0 . 2) aes->_\fzmarkup \markEO #'(0 . 2) aes->_\fzmarkup\!
 % Bars 66 to 70
 	r2 b!4-._\pcresc b2-> b4-.
 	r2 b4-. b2-> b4-.
 	r2 b4-.\< b2-> b4-.
 	b2-> b4-. b2-> b4-.\!
-	cis\f r r r2 r4
+	\dynEO #'(0 . 2) cis\f r r r2 r4
 % Bars 71 to 75
 	R1.*5
 	
@@ -67,7 +67,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	\section
 % Bars 76 to 80
-	\key d \major d1.->_\fmarcato~
+	\key d \major \markEO #'(0 . 2) d1.->_\fmarcato~
 	d2 e4-> fis-> e-> d->
 	cis1.-^
 	\afterGrace 99/100 a-^ {\flag a8}
@@ -151,33 +151,33 @@ musicFlautoIIMvtIII = \relative c {
 	e4~\fz\startTrillSpan e8\stopTrillSpan r
 	R2*2
 	
-	b4\fz\startTrillSpan~ b8\stopTrillSpan r
+	b4-\offset X-offset 0.5 \fz\startTrillSpan~ b8\stopTrillSpan r
 % Bars 161 to 165
-	b4\fz\startTrillSpan~ b8\stopTrillSpan r
+	b4-\offset X-offset 0.5 \fz\startTrillSpan~ b8\stopTrillSpan r
 	R2*2
 	
-	b4\fz\startTrillSpan~ b8\stopTrillSpan r
-	b4\fz\startTrillSpan~ b8\stopTrillSpan r
+	b4-\offset X-offset 0.5 \fz\startTrillSpan~ b8\stopTrillSpan r
+	b4-\offset X-offset 0.5 \fz\startTrillSpan~ b8\stopTrillSpan r
 % Bars 166 to 170
 	R2*2
 	
-	b4\fz\startTrillSpan~ b8\stopTrillSpan r
-	b4\fz\startTrillSpan~ b8\stopTrillSpan r
+	b4-\offset X-offset 0.5 \fz\startTrillSpan~ b8\stopTrillSpan r
+	b4-\offset X-offset 0.5 \fz\startTrillSpan~ b8\stopTrillSpan r
 	R2
 % Bars 171 to 175
 	r4 r16 b32(\< c d e f g)\!
-	f4_\fzf\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
-	f4\fz~\startTrillSpan f8[\stopTrillSpan r16 e-.]
+	\markEO #'(0 . 1) f4_\fzf\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	\dynEO #'(0 . 1) f4\fz~\startTrillSpan f8[\stopTrillSpan r16 e-.]
 	f4-> a->
 	g-> f->
 % Bars 176 to 180
-	e4\fz\startTrillSpan~ e8[\stopTrillSpan r16 dis-.]
-	e4\fz\startTrillSpan~ e8[\stopTrillSpan r16 dis-.]
+	\dynEO #'(0 . 1) e4\fz\startTrillSpan~ e8[\stopTrillSpan r16 dis-.]
+	\dynEO #'(0.5 . 1) e4\fz\startTrillSpan~ e8[\stopTrillSpan r16 dis-.]
 	e4-> g->
 	f!-> e->
-	d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 cis-.]
+	\dynEO #'(0.5 . 1) d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 cis-.]
 % Bars 181 to 185
-	d4\brack\fz\startTrillSpan~ d8[\stopTrillSpan r16 cis-.]
+	\dynEO #'(0.5 . 1) d4\brack\fz\startTrillSpan~ d8[\stopTrillSpan r16 cis-.]
 	d4-> f-> \mark \default
 	g8\fz r r4
 	R2*7^\mutainfliiigrande
@@ -185,7 +185,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	c4\ff~\startTrillSpan c8[\stopTrillSpan r16 b-.]
+	\dynEO #'(0 . 2) c4\ff~\startTrillSpan c8[\stopTrillSpan r16 b-.]
 	c4\startTrillSpan~ c8[\stopTrillSpan r16 b-.]
 	c4->\< c->\!
 	b-> c->
@@ -199,31 +199,31 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 201 to 205
 	fis4-> fis->
 	fis-> g->
-	b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
-	b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
+	\dynEO #'(0 . 2) b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
+	\dynEO #'(0 . 2) b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
 	b4-> c->
 % Bars 206 to 210
 	b-> g16-.\< g32( a b c d e)\!
-	f!4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
-	f4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	\dynEO #'(0 . 3) f!4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	\dynEO #'(0 . 3) f4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 	f4-> a->
 	g-> f8-.\< a,32( b c d)\!
 % Bars 211 to 215
-	e4\brack\fz\startTrillSpan~ e8[\stopTrillSpan r16 dis-.]
-	e4\brack\fz\startTrillSpan~ e8[\stopTrillSpan r16 dis-.]
+	\dynEO #'(0 . 3) e4\brack\fz\startTrillSpan~ e8[\stopTrillSpan r16 dis-.]
+	\dynEO #'(0 . 3) e4\brack\fz-\tweak extra-offset #'(0 . -0.5) \startTrillSpan~ e8[\stopTrillSpan r16 dis-.]
 	e4-> g->
 	f-> e->
-	d4.\brack\fz-^ r8
+	\dynEO #'(0 . 3) d4.\brack\fz-^ r8
 % Bars 216 to 220
-	d4.\brack\fz-^ r8
+	\dynEO #'(0 . 3) d4.\brack\fz-^ r8
 	c4-^ aes'-^
 	g-^ f-^ \mark \default
-	des4.\brack\fz r8
-	c4.\fz r8
+	\dynEO #'(0 . 3) des4.\brack\fz r8
+	\dynEO #'(0 . 3) c4.\fz r8
 % Bars 221 to 225
 	b4-^ aes'-^
 	g-^ f-^
-	b,-^\ff c-^
+	\dynEO #'(0 . 3) b,-^\ff c-^
 	b-^ r
 	c-^ b-^
 % Bars 226 to 230
@@ -249,14 +249,14 @@ musicFlautoIIMvtIII = \relative c {
 	
 	\section
 % Bars 266 to 270
-	\time 6/4 \key d \minor cis4\ff r r r2 r4
+	\time 6/4 \key d \minor \dynEO #'(0 . 2) cis4\ff r r r2 r4
 	R1.*2
 	
-	cis4\f r r r2 r4
+	\dynEO #'(0 . 2) cis4\f r r r2 r4
 	R1.*2
 % Bars 271 to 275
 	
-	des4\f r r r2 r4
+	\dynEO #'(0 . 2) des4\f r r r2 r4
 	des4 r r r2 r4
 	des\p r r r2 r4
 	R1.*46
@@ -290,16 +290,16 @@ musicFlautoIIMvtIII = \relative c {
 	R1.*2
 % Bars 326 to 330
 	
-	r2 r4 aes2.->_\fzmarkup\< 
-	aes->_\fzmarkup aes->_\fzmarkup\!
-	r2 r4 aes2.->\<_\fzmarkup
-	aes->_\fzmarkup aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.5) aes2.->_\fzmarkup\< 
+	\markEO #'(0 . 1.75) aes->_\fzmarkup \markEO #'(0 . 2) aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.5) aes2.->\<_\fzmarkup
+	\markEO #'(0 . 1.75) aes->_\fzmarkup \markEO #'(0 . 2) aes->_\fzmarkup\!
 % Bars 331 to 335
 	r2 b4-._\pcresc b2-> b4-.
 	r2 b4-. b2-> b4-.
 	r2 b4-.\< b2-> b4-.
 	b2-> b4-. b2-> b4-.\!
-	cis\f r r r2 r4
+	\dynEO #'(0 . 2) cis\f r r r2 r4
 % Bars 336 to 340
 	R1.*5
 	
@@ -307,17 +307,17 @@ musicFlautoIIMvtIII = \relative c {
 	
 	\section \sectionLabel "CODA"
 % Bars 341 to 345
-	\key d \major \time 2/4 a4.->_\fffz r8
-	a4.->\fz r8
+	\key d \major \time 2/4 \markEO #'(0 . 2) a4.->_\fffz r8
+	\dynEO #'(0 . 2) a4.->\fz r8
 	a4-> a->
 	a-> a->
-	a4.->\fz r8
+	\dynEO #'(0 . 2) a4.->\fz r8
 % Bars 346 to 350
-	a4.->\fz r8
+	\dynEO #'(0 . 2) a4.->\fz r8
 	a4-> a->
 	a-> a->
-	b4.->\fz r16 ais-.
-	b4.\fz r16 ais-.
+	\dynEO #'(0 . 2) b4.->\fz r16 ais-.
+	\dynEO #'(0 . 2) b4.\fz r16 ais-.
 % Bars 351 to 355
 	b4-> b->
 	a!-> b->

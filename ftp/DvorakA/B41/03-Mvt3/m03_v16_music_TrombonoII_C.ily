@@ -9,10 +9,10 @@ musicTrombonoIIMvtIII = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	e4-^\ff r r r2 r4
+	\dynEO #'(1 . 1) e4-^\ff r r r2 r4
 	R1.*2
 	
-	e4-^\f r r r2 r4
+	\dynEO #'(1 . 1) e4-^\f r r r2 r4
 	R1.*2
 % Bars 6 to 10
 	

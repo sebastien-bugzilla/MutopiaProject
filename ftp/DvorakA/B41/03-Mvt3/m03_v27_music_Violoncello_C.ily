@@ -9,7 +9,7 @@ musicVioloncelloMvtIII = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	a4-^\ff r d-. cis( e) a,-.
+	\dynEO #'(1 . 1) a4-^\ff r d-. cis( e) a,-.
 	bes-> r r r2 r4
 	R1.
 	a4-^ r d-. cis( e) a,-.
@@ -34,7 +34,7 @@ musicVioloncelloMvtIII = \relative c {
 	e,8( g cis4) r e,8( g cis4) r 
 % Bars 21 to 25
 	e,8( g c!4) e,8( g c4) e,8( g cis4)
-	d,\fp^\pizz a'-. a-. r2 r4
+	d,\fp-\offset X-offset -1.5 ^\pizz a'-. a-. r2 r4
 	d, a' a r2 r4
 	a, f' f r2 r4
 	a, e' e r2 r4
@@ -99,7 +99,7 @@ musicVioloncelloMvtIII = \relative c {
 	a( e' cis') cis( e, a,) a( e' cis') cis( e, a,) 
 	a( e' cis') cis( e, a,) a( e' cis') cis( e, a,) \section
 % Bars 76 to 80
-	\key d \major d4\ff^\pizz fis a\< d fis d\!
+	\key d \major d4\ff-\offset X-offset #-5 ^\pizz fis a\< d fis d\!
 	d, fis a\< d fis d\!
 	a, e' a\< cis e cis\!
 	a, e' a\< cis e cis\!
@@ -170,7 +170,7 @@ musicVioloncelloMvtIII = \relative c {
 	R1.
 	b4\pp r r r2 r4
 	R1.\fermata \clef tenor \section
-	\time 2/4 \key c \major \tuplet 6/4 {e'16(\fp\>^\arco f e f e f} \tuplet 3/2 {e d e)\!} r8
+	\time 2/4 \key c \major \tuplet 6/4 {e'16(\fp\>-\offset X-offset -5 ^\arco f e f e f} \tuplet 3/2 {e d e)\!} r8
 % Bars 141 to 145
 	\tuplet 6/4 {e16(\fp\> f e f e f} \tuplet 3/2 {e d e)\!} r8
 	R2
@@ -229,10 +229,10 @@ musicVioloncelloMvtIII = \relative c {
 	c-> d-> \tuplet 3/2 4 {e-> f-> g,->
 	a-> b-> c->} d-> r
 	R2 \clef bass
-	d16->\f c-> b-> a-> g(\< fis g a
-	\tuplet 5/4 {b a b c d)} e8-^ d-^\!
+	\dynEO #'(0 . 1) d16->\f c-> b-> a-> g(\< fis g a
+	\once \tupletUp \tupletOffset #4 \tuplet 5/4 {b a b c d)} e8-^ d-^\!
 % Bars 191 to 195
-	\tuplet 3/2 4 {c->_\ffmarcatiss g-> e-> c'-> g-> e'->
+	\tuplet 3/2 4 {c->-\offset X-offset -1 _\ffmarcatiss g-> e-> c'-> g-> e'->
 	r g,-> e-> c'-> g-> e'->
 	r g,-> e-> c'-> g-> e'->
 	r b-> g-> c-> g-> e'->
@@ -347,7 +347,7 @@ musicVioloncelloMvtIII = \relative c {
 	e,8( g cis4) r e,8( g cis4) r 
 % Bars 286 to 290
 	e,8( g c!4) e,8( g c4) e,8( g cis4)
-	d,\fp^\pizz a'-. a-. r2 r4
+	d,\fp-\offset X-offset -6 ^\pizz a'-. a-. r2 r4
 	d, a' a r2 r4
 	a, f' f r2 r4
 	a, e' e r2 r4
@@ -426,7 +426,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 351 to 355
 	b4-^ b-^
 	a-^ g-^
-	d''\fp^\pizz r8. a16\p
+	\markEO #'(0 . -0.5) d''\fp^\pizz r8. a16\p
 	d4-> r8. a16
 	d4\< d\!
 % Bars 356 to 360
@@ -463,7 +463,7 @@ musicVioloncelloMvtIII = \relative c {
 	<< d4..( {s4 s8._\crescmarkup}>> cis16
 	d4 a8 cis)
 	d-. r r4
-	d'8.[(\ff cis16) d8.( cis16)]
+	\dynEO #'(0 . 2) d'8.[(\ff cis16) d8.( cis16)]
 	d8.[(\< cis16) d8.( cis16)]\!
 % Bars 386 to 388
 	d8[-^ f-^ e-^ d-^]

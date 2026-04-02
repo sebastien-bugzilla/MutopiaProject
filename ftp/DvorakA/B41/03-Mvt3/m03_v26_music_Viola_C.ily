@@ -9,7 +9,7 @@ musicViolaMvtIII = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	<e cis' a'>4-^\ff r d-. cis( e) a-.
+	<e cis' a'>4-^-\offset X-offset 0.5 \ff r d-. cis( e) a-.
 	bes-> r r r2 r4
 	R1.
 	<e, cis' a'>4-^ r d-. cis( e) a-.
@@ -21,7 +21,7 @@ musicViolaMvtIII = \relative c {
 	bes-> des,\pcrescD\< e!-> e( f) c-.
 	des-> f-> a-> a( bes) e,-.
 % Bars 11 to 15
-	f-> bes-> c-> c( des)\! cis,-.\p
+	f-> bes-> c-> c(\! des) cis,-.\p
 	cis( e g e g bes)
 	g( bes_\crescmarkup cis dis e cis)
 	fis( g) e-. a( bes) gis-.
@@ -87,7 +87,7 @@ musicViolaMvtIII = \relative c {
 	ees->\fz r r r2 r4
 	r2 aes4-.\< aes( ces) ees,-.\!
 % Bars 66 to 70
-	e!->\p gis-> a!-> ais( b) fisis
+	e!->\p gis-> a!-> ais( b) fisis-.
 	gis->_\crescmarkup b-> c-> cis( d) ais-.
 	b-> d-> e-> e( f) d-.
 	g( aes) f-. ais( b) gis-.
@@ -126,7 +126,7 @@ musicViolaMvtIII = \relative c {
 % Bars 96 to 100
 		a,8( cis a cis fis a) \oneVoice r2 r4 \voiceOne
 		a,8( cis a cis fis a) \oneVoice r2 r4 \voiceOne
-		fis,8( a fis a fis a cis a cis a cis a
+		\shape #'(()((0 . -1)(0 . -0.5)(0 . -0.5)(0 . 0))) Slur fis,8( a fis a fis a cis a cis a cis a
 		cis fis cis fis cis fis a fis a fis a fis)
 		fis,( b fis b d fis) \oneVoice r2 r4 \voiceOne
 % Bars 101 to 105
@@ -142,8 +142,8 @@ musicViolaMvtIII = \relative c {
 		b,8( cis b cis eis gis) \oneVoice r2 r4 \voiceOne
 	} \\ {
 % Bars 76 to 80
-		fis,8(\ff\> d fis d d' a)\! s2.
-		fis8(_\brackM\menoff d fis d d' a) s2.
+		\shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur \beamOffset #'(0.5 . 0.5)fis,8(-\offset X-offset -2.5 \ff d\> fis d d' a)\! s2.
+		\shape #'((0 . 0)(0 . 1)(0 . 1)(0 . 0)) Slur \beamOffset #'(0.5 . 0.5)fis8(-\offset X-offset -5.5 _\brackM\menoff d fis d d' a) s2.
 		a8( e a e cis' a) s2.
 		a8( e a e cis' a) s2.
 		a8( e a e cis' a) s2.
@@ -154,7 +154,7 @@ musicViolaMvtIII = \relative c {
 		fis( d fis d d' a) s2.
 		fis8( d fis d d' b) s2.
 % Bars 86 to 90
-		fis8( cis fis cis cis' a) s2.
+		\beamOffset #'(0.5 . 0.5) \shape #'((0 . 0)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur fis8( cis fis cis cis' a) s2.
 		fis8( d fis d d' a) s2.
 		fis8( cis fis cis cis' a) s2.
 		e8( gis! e gis b e) s2.
@@ -167,8 +167,8 @@ musicViolaMvtIII = \relative c {
 		fis8( d fis d d' a) s2.
 % Bars 96 to 100
 		fis8( cis fis cis cis' a) s2.
-		fis8( cis fis cis cis' a) s2.
-		cis,8( fis cis fis cis fis  a fis a fis a fis
+		\beamOffset #'(0.3 . 0.3) \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur fis8( cis fis cis cis' a) s2.
+		\shape #'(()((0 . 0)(0 . 1)(0 . 1)(0 . 0))) Slur cis,8( fis cis fis cis fis  a fis a fis a fis
 		a cis a cis a cis  fis cis fis cis fis cis)
 		d,( b' d, b' b d) s2.
 % Bars 101 to 105
@@ -176,11 +176,11 @@ musicViolaMvtIII = \relative c {
 		fis8( d fis d d' a) s2.
 		fis8( cis fis cis cis' a) s2.
 		eis8( cis eis cis cis' b) s2.
-		fis8( cis fis cis cis' a) s2.
+		\beamOffset #'(0.3 . 0.3) \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur fis8( cis fis cis cis' a) s2.
 % Bars 106 to 110
 		d,8( b' d, b' b d) s2.
 		g,8( d g d d' b) s2.
-		fis8( cis fis cis cis' a) s2.
+		\beamOffset #'(0.3 . 0.3) \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur fis8( cis fis cis cis' a) s2.
 		gis8( eis gis eis cis' b) s2. \mark \default
 	}>>
 	<fis' ais>8\ff q q q q q  q q q q q q
@@ -239,7 +239,7 @@ musicViolaMvtIII = \relative c {
 	R2*2
 	\mark \default
 % Bars 156 to 160
-	<e, c'>8\p[^\pizz r <c g' e'>\arpeggio] r
+	<e, c'>8-\offset X-offset -2 \p[-\offset X-offset -4.5 ^\pizz r <c g' e'>\arpeggio] r
 	<e c'>[ r <c g' e'>\arpeggio] r
 	<e c'>[ r <e c' g'>\arpeggio] r
 	<d g d'>\arpeggio[ r <c g' e'>\arpeggio] r
@@ -270,7 +270,7 @@ musicViolaMvtIII = \relative c {
 	<d a' d>[ r <d a' f'>] r
 % Bars 181 to 185
 	<d bes' d>[ r <d bes' f'>] r
-	<d bes' d>[ r <d g f'>] r \mark \default
+	\beamOffset #'(-0.8 . -0.8) <d bes' d>[ r <d g f'>] r \mark \default
 	r <a' c>[->_\mfmarcato f'-> e]->
 	d[_\brackpocoapococresc a'-> g-> f->]
 	c'[-> b-> a-> f'->]
@@ -278,10 +278,10 @@ musicViolaMvtIII = \relative c {
 	e-> d-> \tuplet 3/2 4 { c-> b-> b,->
 	c-> d-> e->} f-> r
 	r4 a16->\f g-> f-> e->
-	d-> c-> b-> a-> g( fis\< g a
-	\tuplet 5/4 {b a b c d)} \tuplet 7/4 {e( f! g a b c d)\!}
+	d-> c-> b-> a-> g(\< fis g a
+	\tuplet 5/4 {b a b c d)} \tuplet 7/4 {\shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur e( f! g a b c d)\!}
 % Bars 191 to 195
-	\tuplet 3/2 4 {e8_\ffmarcatissimo g,, e c'-> g-> e'->
+	\tuplet 3/2 4 {\beamGap #2 e8_\ffmarcatissimo g,, e c'-> g-> e'->
 	r g,-> e-> c'-> g-> e'->
 	r g,-> e-> c'-> g-> e'->
 	r b-> g-> c-> g-> e'->
@@ -367,7 +367,7 @@ musicViolaMvtIII = \relative c {
 		c-- b--)
 		b(-- d--
 		c-- b--)
-		b(-- d--
+		\shape #'((0 . 0)(0 . -0.8)(0 . -0.8)(0 . 0)) Slur b(-- d--
 % Bars 261 to 265
 		c-- b--)
 		<b! d>2:32
@@ -381,14 +381,14 @@ musicViolaMvtIII = \relative c {
 		<c f>4.->\> r8
 % Bars 251 to 255
 		<c f>4.-> r8\!
-		<c f>4--( q--_\dimmarkup
+		<c f>4--( \markEO #'(1 . 2.5) q--_\dimmarkup
 		q-- q--)
 		q4.\brack\pp r8
 		q4. r8
 % Bars 256 to 260
-		q4--(_\dimmarkup q--
+		\markEO #'(-3.5 . 2) q4--(_\dimmarkup q--
 		q-- q--)
-		q--(\< q--\!
+		\hairpinShorten #'(2 . 2) q--(-\tweak extra-offset #'(0 . 2.5) \< q--\!
 		q-- q--)_\crescmarkup
 		q--( q--
 % Bars 261 to 265
@@ -399,7 +399,7 @@ musicViolaMvtIII = \relative c {
 		q: \section
 	}>>
 % Bars 266 to 270
-	\time 6/4 \key d \minor <e cis' a'>4-^\ff r d-. cis( e) a-.
+	\time 6/4 \key d \minor <e cis' a'>4-^-\offset X-offset 0.5 \ff r d-. cis( e) a-.
 	bes-> r r r2 r4
 	R1.
 	<e, cis' a'>4-^ r d-. cis( e) a-.
@@ -408,7 +408,7 @@ musicViolaMvtIII = \relative c {
 	R1.
 	r2 des,4-.\f des( f) a!-.
 	bes-. r c,-. des( f) a-.
-	bes-> des,->\pcrescD\< e!-> e( f) c-.
+	bes-> \hairpinShorten #'(0 . 1) des,->\pcrescD\< e!-> e( f) c-.
 	des-> f-> a-> a( bes) e,-.
 % Bars 276 to 280
 	f-> bes-> c-> c( des)\! cis,-.\p
@@ -493,17 +493,17 @@ musicViolaMvtIII = \relative c {
 	<d fis>4:\fz q8[ r16 <cis e>-.]
 	<d fis>4-^ <a fis' a>-^\arpeggio
 	<d, a' g'>-^\arpeggio q-^\arpeggio
-	<a' g'>4:\fz-> q8[ r16 <a fis'>16-.]
+	<a' g'>4:-\offset X-offset 1 \fz-> q8[ r16 <a fis'>16-.]
 % Bars 346 to 350
-	<a g'>4:\fz-> q8[ r16 <a fis'>16-.]
+	<a g'>4:-\offset X-offset 1 \fz-> q8[ r16 <a fis'>16-.]
 	<a g'>4-^\arpeggio <e a g'>-^\arpeggio
 	q-^\arpeggio q-^\arpeggio
-	<b' d>4:->\fz q8[ r16 <ais cis>-.]
-	<b d>4:->\fz q8[ r16 <ais cis>-.]
+	<b' d>4:->-\offset X-offset 1 \fz q8[ r16 <ais cis>-.]
+	<b d>4:->-\offset X-offset 1 \fz q8[ r16 <ais cis>-.]
 % Bars 351 to 355
 	<b d>4-^ <d, b' d>\arpeggio-^
 	<d a' d>\arpeggio-^ <d b' d>\arpeggio-^
-	<d' fis>\fp^\pizz r8. <cis e>16\p
+	\dynEO #'(0 . 2) <d' fis>-\offset X-offset 1 \fp^\pizz r8. <cis e>16\p
 	<d fis>4-> r8. <cis e>16
 	<d fis>4\< <fis a>\!
 % Bars 356 to 360

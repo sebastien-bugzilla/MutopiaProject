@@ -9,20 +9,20 @@ musicFagottoIMvtIII = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	a'4\ff r r r2 r4
-	r2 r4 e'2.->\fz
-	e->\fz e->\fz
+	a'4-\tweak X-offset 0 \ff r r r2 r4
+	r2 r4 \dynEO #'(0 . 2) e'2.->\fz
+	\dynEO #'(0 . 2) e->\fz \dynEO #'(0 . 2) e->\fz
 	a,4 r r r2 r4
-	r2 r4 e'2.->\fz
+	r2 r4 \dynEO #'(0 . 2) e'2.->\fz
 % Bars 6 to 10
-	e->\fz e->\fz
+	\dynEO #'(0 . 2) e->\fz \dynEO #'(0 . 2) e->\fz
 	bes4\brack\f r r r2 r4
 	bes r r r2 r4
-	bes\p r r r2 r8. c,16(\<
+	bes\p r r r2 r8. \aIIXoffset #-4 c,16(\<
 	des4)\! r r r2 r8. e16(\<
 % Bars 11 to 15
 	f4)\! r r r2 r4
-	r2 r8. g16(\p\< e4)\! r r
+	r2 r8. \hairpinShorten #'(-0.5 . -1) g16(-\tweak X-offset -1 \p\< e4)\! r r
 	r2 r4 dis'(\< e) r
 	fis( g) r r2 gis,4(
 	a)\! r gis(\f a) r gis(
@@ -30,13 +30,13 @@ musicFagottoIMvtIII = \relative c {
 	a)\p r r r2 r4
 	R1.*4
 % Bars 21 to 25
-	r2 r4 r2 cis4-^\fz
+	r2 r4 r2 \aIIXoffset #-5 cis4-^\fz
 	d1.-^\mf~
 	d2 e4-. f-. e-. d-.
 	<< c1.(->\> {s4 s s s s s\!}>>
 	a2.) r2 r8 a->
 % Bars 26 to 30
-	<< a1.\fz~ {s4 s s\> s s s}>>
+	<< a1.\fz~ {s4 s s s\> s s}>>
 	a2 a4-. c-. bes-. g-.\!
 	a1.->~
 	a2. r2 r8 a
@@ -79,10 +79,10 @@ musicFagottoIMvtIII = \relative c {
 	r2 r4 e2.\fz
 % Bars 61 to 65
 	e\fz e\fz
-	r2 r4 f2.\<_\fzmarkup
-	f_\fzmarkup f_\fzmarkup\!
-	r2 r4 aes2.->\<_\fzmarkup
-	aes->_\fzmarkup aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0.6 . 1.5) f2.\<_\fzmarkup
+	\markEO #'(0.6 . 1.5) f_\fzmarkup \markEO #'(0.6 . 1.5) f_\fzmarkup\!
+	r2 r4 \markEO #'(0.6 . 1.5) aes2.->\<_\fzmarkup
+	\markEO #'(0.6 . 1.5) aes->_\fzmarkup \markEO #'(0.6 . 1.5) aes->_\fzmarkup\!
 % Bars 66 to 70
 	r2 e!4-._\pcresc e2-> e4-.
 	r2 e4-. e2-> e4-.
@@ -96,7 +96,7 @@ musicFagottoIMvtIII = \relative c {
 	cis~
 	cis \section 
 % Bars 76 to 80
-	\key d \major d1.->_\fmarcato~
+	\key d \major \aIIXoffset #-4 d1.->_\fmarcato~
 	d2 e4-> fis-> e-> d->
 	cis1.-^
 	\afterGrace 99/100 a1.-^ {\flag a8}
@@ -168,9 +168,9 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	R1.\fermata \section
-	\time 2/4 \key c \major g4\fp~ g8 r16 g-.
+	\time 2/4 \key c \major g4-\tweak X-offset 0 \fp~ g8 r16 g-.
 % Bars 141 to 145
-	g4\fp~ g8 r16 g-.
+	g4-\tweak X-offset 0 \fp~ g8 r16 g-.
 	g4-> e->
 	d-> c->
 	d4.\fp r8
@@ -186,7 +186,7 @@ musicFagottoIMvtIII = \relative c {
 	d4.\fp r8
 	d4.\fp r8
 	d4-> d->
-	\partCombineApart d-> \tuplet 6/4 {r16 g(\< a b c d)\!} \partCombineAutomatic \mark \default 
+	\partCombineApart d-> \omitTupletBracket \tuplet 6/4 {r16 \shape #'((0 . 0)(0 . -0.6)(0 . -0.6)(0 . 0)) Slur g(_\< a b c d)\!} \partCombineAutomatic \mark \default 
 % Bars 156 to 160
 	e4_\mffz\startTrillSpan~ e8\stopTrillSpan r
 	e4\fz\startTrillSpan~ e8\stopTrillSpan r
@@ -225,7 +225,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	c4.->\ff r8
+	c4.->-\tweak X-offset -2 \ff r8
 	c4.-> r8
 	c4-> e->
 	d-> c->
@@ -253,13 +253,13 @@ musicFagottoIMvtIII = \relative c {
 	c4.-> r8
 	c4-^ e-^
 	g-^ c-^
-	d,4.\brack\fz r8
+	\dynEO #'(-3 . 2) d,4.\brack\fz r8
 % Bars 216 to 220
-	bes4.\brack\fz r8
+	\dynEO #'(-2.7 . 1) bes4.\brack\fz r8
 	\once \partCombineApart aes4-> r
 	R2 \mark \default
-	bes4.-^\brack\fz r8
-	aes4.-^ r8
+	\dynEO #'(-2.8 . 2) bes4.-^\brack\fz r8
+	\aIIXoffset #-3 aes4.-^ r8
 % Bars 221 to 225
 	g4->-. r
 	R2
@@ -308,11 +308,11 @@ musicFagottoIMvtIII = \relative c {
 	e->\fz e->\fz
 	bes4\brack\f r r r2 r4
 	bes r r r2 r4
-	bes\p r r r2 r8. c,16(\<
+	bes\p r r r2 r8. \aIIXoffset #-3 c,16(\<
 	des4)\! r r r2 r8. e16(\<
 % Bars 276 to 280
 	f4)\! r r r2 r4
-	r2 r8. g16(\p\< e4)\! r r
+	r2 r8. \hairpinShorten #'(-0.3 . -1) g16(\p\< e4)\! r r
 	r2 r4 dis'(\< e) r
 	fis( g) r r2 gis,4(
 	a)\! r gis(\f a) r gis(
@@ -369,10 +369,10 @@ musicFagottoIMvtIII = \relative c {
 	r2 r4 e2.\fz
 % Bars 326 to 330
 	e\fz e\fz
-	r2 r4 f2.\<_\fzmarkup
-	f_\fzmarkup f_\fzmarkup\!
-	r2 r4 aes2.->\<_\fzmarkup
-	aes->_\fzmarkup aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.5) f2.\<_\fzmarkup
+	\markEO #'(0 . 1.75) f_\fzmarkup \markEO #'(0 . 2) f_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.5) aes2.->\<_\fzmarkup
+	\markEO #'(0 . 1.75) aes->_\fzmarkup \markEO #'(0 . 2) aes->_\fzmarkup\!
 % Bars 331 to 335
 	r2 e!4-._\pcresc e2-> e4-.
 	r2 e4-. e2-> e4-.
@@ -386,17 +386,17 @@ musicFagottoIMvtIII = \relative c {
 	cis~
 	cis \section
 % Bars 341 to 345
-	\key d \major \time 2/4 d,4._\fffz-> r16 a-.
+	\key d \major \time 2/4 \aIIXoffset #-3 d,4._\fffz-> r16 a-.
 	d4.->\fz r16 a-.
 	d4-> d->
 	d-> d->
-	a'4.->\fz r16 \once \partCombineApart a,-.
+	a'4.->-\tweak X-offset 0 \fz r16 \once \partCombineApart a,-.
 % Bars 346 to 350
-	a'4.->\fz r16 \once \partCombineApart a,-.
+	a'4.->-\tweak X-offset 0 \fz r16 \once \partCombineApart a,-.
 	a'4-> a->
 	a-> a->
-	b4.->\fz r16 fis-.
-	b4.\fz r16 fis-.
+	b4.->-\tweak X-offset 0 \fz r16 fis-.
+	b4.-\tweak X-offset 0 \fz r16 fis-.
 % Bars 351 to 355
 	b4-> b->
 	a-> g->

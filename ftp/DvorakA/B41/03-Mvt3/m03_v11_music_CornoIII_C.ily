@@ -10,12 +10,12 @@ musicCornoIIIMvtIII = \relative c {
 	\transposition f
 % Bars 1 to 5
 	b''4\ff r r r2 r4
-	r2 r4 b2.->\fz
-	b->\fz b->\fz
+	r2 r4 \aIIXoffset #-4 b2.->-\tweak X-offset 0 \fz
+	b->-\tweak X-offset 0 \fz b->-\tweak X-offset 0 \fz
 	b4 r r r2 r4
-	r2 r4 b2.->\fz
+	r2 r4 \aIIXoffset #-4 b2.->-\tweak X-offset 0 \fz
 % Bars 6 to 10
-	b->\fz b->\fz
+	b->-\tweak X-offset 0 \fz b->-\tweak X-offset 0 \fz
 	gis4 r r r2 r4
 	aes4 r r r2 r4
 	aes4\p r r8. b16(\< c4)\! r r
@@ -54,16 +54,16 @@ musicCornoIIIMvtIII = \relative c {
 	\mark \default
 % Bars 56 to 60
 	b4\f r r r2 r4
-	r2 r4 b2.->\fz
+	r2 r4 \aIIXoffset #-4 b2.->\fz
 	b->\fz b->\fz
 	b4\f r r r2 r4
 	r2 r4 b2.\fz
 % Bars 61 to 65
 	b\fz b\fz
-	r2 r4 g2.\<_\fzmarkup
-	g_\fzmarkup g_\fzmarkup\!
-	r2 r4 bes2.->\<_\fzmarkup
-	bes->_\fzmarkup bes->_\fzmarkup\!
+	r2 r4 \markEO #'(0.6 . 1.5) g2.\<_\fzmarkup
+	\markEO #'(0.6 . 1.5) g_\fzmarkup \markEO #'(0.6 . 1.5) g_\fzmarkup\!
+	r2 r4 \markEO #'(0.6 . 1.5) bes2.->\<_\fzmarkup
+	\markEO #'(0.6 . 1.5) bes->_\fzmarkup \markEO #'(0.6 . 1.5) bes->_\fzmarkup\!
 % Bars 66 to 70
 	R1.*4
 	
@@ -145,9 +145,9 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 	R1.\fermata \section
-	\time 2/4 d4\fp~ d8 r
+	\time 2/4 d4-\tweak X-offset -1 \fp~ d8 r
 % Bars 141 to 145
-	d4\fp~ d8 r
+	d4-\tweak X-offset -1 \fp~ d8 r
 	d4-> d->
 	d-> d->
 	\partCombineApart d4. \once \partCombineAutomatic r16 d-.
@@ -155,12 +155,12 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 146 to 150
 	d4-> \partCombineAutomatic e->
 	dis-> e->
-	a,4.\fp r8
+	\aIIXoffset #-3 a,4.\fp r8
 	a4.\fp r8
 	a4-> b->
 % Bars 151 to 155
 	a-> a->
-	a4.\fp r8 
+	\aIIXoffset #-3.5 a4.\fp r8 
 	a4.\fp r8
 	a4-> a->
 	a-> d8 r \mark \default
@@ -193,7 +193,7 @@ musicCornoIIIMvtIII = \relative c {
 	g4.\fz r8
 	g4\mp r
 	g r
-	a4.\brack\fz r8
+	a4.-\tweak X-offset 0.5 \brack\fz r8
 % Bars 181 to 185
 	f4.\brack\fz r8
 	f4-> fis-> \mark \default
@@ -211,7 +211,7 @@ musicCornoIIIMvtIII = \relative c {
 	a4.-> r8
 	a4-> c!->
 	b-> b->
-	a4.\fz r8
+	a4.-\tweak X-offset 1 \fz r8
 	a4.\fz r8
 % Bars 201 to 205
 	a4-> b->
@@ -227,7 +227,7 @@ musicCornoIIIMvtIII = \relative c {
 	g-> g->
 % Bars 211 to 215
 	g4.\brack\fz r8
-	g4.\brack\fz r8
+	\dynEO #'(-3 . 2) g4.\brack\fz r8
 	g4-> g->
 	g-> g->
 	a4.-^ r8
@@ -240,7 +240,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 221 to 225
 	a!4-> r
 	R2
-	a4-^\ff g-^
+	\dynEO #'(-2.5 . 2) a4-^\ff g-^
 	a-^ r
 	g4-^ a-^
 % Bars 226 to 230
@@ -324,16 +324,16 @@ musicCornoIIIMvtIII = \relative c {
 	\mark \default
 % Bars 321 to 325
 	b4\f r r r2 r4
-	r2 r4 b2.->\fz
+	r2 r4 \aIIXoffset #-4 b2.->\fz
 	b->\fz b->\fz
 	b4\f r r r2 r4
 	r2 r4 b2.\fz
 % Bars 326 to 330
 	b\fz b\fz
-	r2 r4 g2.\<_\fzmarkup
-	g_\fzmarkup g_\fzmarkup\!
-	r2 r4 bes2.->\<_\fzmarkup
-	bes->_\fzmarkup bes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.5) g2.\<_\fzmarkup
+	\markEO #'(0 . 1.75) g_\fzmarkup \markEO #'(0 . 2) g_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.5) bes2.->\<_\fzmarkup
+	\markEO #'(0 . 1.75) bes->_\fzmarkup \markEO #'(0 . 2) bes->_\fzmarkup\!
 % Bars 331 to 335
 	R1.*4
 	
@@ -347,7 +347,7 @@ musicCornoIIIMvtIII = \relative c {
 	gis~
 	gis \section
 % Bars 341 to 345
-	\time 2/4 a4->_\fffz~ a8[ r16 gis-.]
+	\time 2/4 a4->-\offset X-offset -0.5 -\tweak extra-offset #'(0 . 0.3) _\fffz~ a8[ r16 gis-.]
 	a4.->\fz r16 gis-.
 	a4-> a->
 	a-> a->
@@ -361,7 +361,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 351 to 355
 	fis4-> fis->
 	e-> fis->
-	\partCombineApart cis'4\fp~ cis8[ r16 b-.]
+	\partCombineApart \dynEO #'(-1.5 . -1.3) cis'4\fp~ cis8[ r16 b-.]
 	cis4\fp~ cis8[ r16 b-.]
 	cis4-- a--\<
 % Bars 356 to 360

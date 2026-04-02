@@ -87,7 +87,7 @@ musicViolaMvtIII = \relative c {
 	ees->\fz r r r2 r4
 	r2 aes4-.\< aes( ces) ees,-.\!
 % Bars 66 to 70
-	e!->\p gis-> a!-> ais( b) fisis
+	e!->\p gis-> a!-> ais( b) fisis-.
 	gis->_\crescmarkup b-> c-> cis( d) ais-.
 	b-> d-> e-> e( f) d-.
 	g( aes) f-. ais( b) gis-.

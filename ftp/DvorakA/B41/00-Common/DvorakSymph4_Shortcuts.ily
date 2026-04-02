@@ -122,7 +122,7 @@ pocoapococresc = \markup {\italic "poco a poco cresc."}
 crescpoco = \markup {\italic "cresc. poco"}
 crescpocoapoco = \markup {\italic "cresc poco a poco"}
 sempredim = \markup {\italic "sempre dim."}
-sempredimD = #(make-dynamic-script (markup #:normal-text #:italic "sempre dim."))
+sempredimD = \tweak DynamicText.self-alignment-X #-0.89 #(make-dynamic-script (markup #:normal-text #:italic "sempre dim."))
 brackpocoapococresc = \markup {
 	\italic {
 		\bracket \with-true-dimensions "poco a poco" "cresc"
@@ -192,6 +192,22 @@ mutainfliiigrande = \markup {"muta in Fl.I.II grande"}
 mutaainh = \markup {"muta A in H"}
 mutaincg = \markup {"muta in C, G"}
 mutainda = \markup {"muta in D, A"}
+
+timpinhd = \markup {
+	\center-column {
+		\lower #1 "Timp." "in H D"
+	}
+}
+timpincg = \markup {
+	\center-column {
+		\lower #1 "Timp." "in C G"
+	}
+}
+timpinda = \markup {
+	\center-column {
+		\lower #1 "Timp." "in D A"
+	}
+}
 
 markk = \mark #11
 
@@ -315,7 +331,7 @@ dynEO = #(define-music-function
 	(pair?)
 	#{
 		\once \override DynamicText.extra-offset = #offset
-		\once \override DynamicText.whiteout = ##t
+		\once \override DynamicText.whiteout = #0.85
 		\once \override DynamicText.whiteout-style = #'outline
 	#}
 )
@@ -350,7 +366,7 @@ markEO = #(define-music-function
 	#{
 		\once \override TextScript.layer = #3
 		\once \override TextScript.extra-offset = #offset
-		\once \override TextScript.whiteout = ##t
+		\once \override TextScript.whiteout = #0.85
 		\once \override TextScript.whiteout-style = #'outline
 	#}
 )
@@ -376,10 +392,62 @@ hairpinEO = #(define-music-function
 	(pair?)
 	#{
 		\once \override Hairpin.extra-offset = #offset
-		\once \override Hairpin.whiteout = ##t
+		\once \override Hairpin.whiteout = #0.85
 		\once \override Hairpin.whiteout-style = #'outline
 	#}
 )
+
+
+noteHeadEsw = #(define-music-function
+	(spacing)
+	(pair?)
+	#{
+		\override NoteHead.extra-spacing-width = #spacing
+	#}
+)
+
+revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
+
+aIIExtraOffset = #(define-music-function
+	(extraoffset)
+	(pair?)
+	#{
+		\once \override CombineTextScript.extra-offset = #extraoffset
+	#}
+)
+
+beamGap = #(define-music-function
+	(gap)
+	(number?)
+	#{
+		\once \override Beam.auto-knee-gap = #gap
+	#}
+)
+
+trillSpanPadding = #(define-music-function
+	(padding)
+	(number?)
+	#{
+		\once \override TrillSpanner.bound-details.right.padding = #padding
+	#}
+)
+
+tupletOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override TupletNumber.Y-offset = #offset 
+	#}
+)
+
+changeStaffName = #(define-music-function
+	(staffName)
+	(markup?)
+	#{
+		\set Staff.shortInstrumentName = #staffName
+	#}
+)
+
 
 
 
@@ -405,27 +473,11 @@ hairpinEO = #(define-music-function
 
 %aIIOmit = \once \omit Voice.CombineTextScript
 
-%aIIExtraOffset = #(define-music-function
-%	(extraoffset)
-%	(pair?)
-%	#{
-%		\once \override CombineTextScript.extra-offset = #extraoffset
-%	#}
-%)
-
 %arpeggioPadding = #(define-music-function
 %	(padding)
 %	(number?)
 %	#{
 %		\once \override Voice.Arpeggio.padding = #padding
-%	#}
-%)
-
-%beamGap = #(define-music-function
-%	(gap)
-%	(number?)
-%	#{
-%		\once \override Beam.auto-knee-gap = #gap
 %	#}
 %)
 
@@ -445,14 +497,6 @@ hairpinEO = #(define-music-function
 %	\set baseMoment = #(ly:make-moment 1/8)
 %	\set beatStructure = 2,2,2
 %}
-
-%changeStaffName = #(define-music-function
-%	(staffName)
-%	(markup?)
-%	#{
-%		\set Staff.shortInstrumentName = #staffName
-%	#}
-%)
 
 %crescText = #(define-music-function
 %	(cresctext)
@@ -567,17 +611,6 @@ hairpinEO = #(define-music-function
 %	#}
 %)
 
-%noteHeadEsw = #(define-music-function
-%	(spacing)
-%	(pair?)
-%	#{
-%		\override NoteHead.extra-spacing-width = #spacing
-%	#}
-%)
-
-%revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
-
-
 %no = {
 %	\undo \omit MultiMeasureRestNumber
 %}
@@ -641,14 +674,6 @@ hairpinEO = #(define-music-function
 %)
 
 
-%tupletOffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override TupletNumber.Y-offset = #offset 
-%	#}
-%)
-
 %tupletAvoidSlur = \once \override TupletNumber.avoid-slur = #'ignore
 
 
@@ -658,14 +683,6 @@ hairpinEO = #(define-music-function
 %	(number?)
 %	#{
 %		\once \override StemTremolo.Y-offset = #position
-%	#}
-%)
-
-%trillSpanPadding = #(define-music-function
-%	(padding)
-%	(number?)
-%	#{
-%		\once \override TrillSpanner.bound-details.right.padding = #padding
 %	#}
 %)
 

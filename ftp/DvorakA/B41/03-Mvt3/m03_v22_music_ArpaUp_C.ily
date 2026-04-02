@@ -51,7 +51,7 @@ musicArpaUpMvtIII = \relative c {
 	<b cis e b'>\arpeggio r r <c e g c!>\arpeggio r r
 	<cis e g cis>\arpeggio r r q\arpeggio r r \section
 % Bars 76 to 80
-	\key d \major \staffDown \tuplet 14/12 {d,8[(^\ff fis a d \staffUp a' d fis a fis d a \staffDown d, a fis)]}
+	\key d \major \staffDown \tuplet 14/12 {d,8[(-\offset X-offset -2 ^\ff fis a d \staffUp a' d fis a fis d a \staffDown d, a fis)]}
 	\tuplet 14/12 {d[( fis a d \staffUp a' d fis a fis d a \staffDown a, fis d)]}
 	\tuplet 15/12 {a( cis e a \staffUp e' a cis e cis a e \staffDown a, e cis a)}
 	\tuplet 15/12 {a( cis e a \staffUp e' a cis e cis a e \staffDown cis a e cis)}
@@ -138,7 +138,7 @@ musicArpaUpMvtIII = \relative c {
 	<d fis b d>\arpeggio <e fis a e'>\arpeggio
 % Bars 171 to 175
 	<d fis b d>\arpeggio <b d g b>8\arpeggio r
-	<c f! a c>4\f\arpeggio <f a c f>\arpeggio
+	<c f! a c>4-\offset X-offset -0.5 \f\arpeggio <f a c f>\arpeggio
 	<c f a c>\arpeggio <f a c f>\arpeggio
 	<c f a c>\arpeggio <f a c f>\arpeggio
 	<a c f a>\arpeggio <c f a c>\arpeggio

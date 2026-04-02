@@ -10,32 +10,32 @@ musicClarinettoIMvtIII = \relative c {
 	\transposition a
 % Bars 1 to 5
 	g'''4\ff r r r2 r4
-	r2 r4 bes2.->\fz
-	ces->\fz bes->\fz
+	r2 r4 \dynEO #'(0.7 . 2.3) bes2.->\fz
+	\dynEO #'(0.7 . 2.3) ces->\fz \dynEO #'(0.7 . 2.3) bes->\fz
 	g4 r r r2 r4
-	r2 r4 bes2.->\fz
+	r2 r4 \dynEO #'(0.7 . 2.3) bes2.->\fz
 % Bars 6 to 10
-	ces->\fz bes->\fz
+	\dynEO #'(0.7 . 2.3) ces->\fz \dynEO #'(0.7 . 2.3) bes->\fz
 	gis4\brack\f r r r2 r4
 	gis r r r2 r4
-	gis\p r r r2 r8. dis,16(\<
+	gis\p r r r2 r8. \aIIXoffset #-4 dis,16(\<
 	e4)\! r r r2 r8. g16(\<
 % Bars 11 to 15
 	aes!4)\! r r r2 r4
-	r2 r8. bes16(\p\< g4)\! r r
+	r2 r8. \hairpinShorten #'(-0.5 . -1) bes16(-\tweak X-offset -1 \p\< g4)\! r r
 	r2 r4 fis'(\< g) r
 	a( bes) r c( des!) r
 	c( des!)\! r c(\f des) r
 % Bars 16 to 20
 	R1.*5
 % Bars 21 to 25
-	r2 r4 r2 e,4-^\fz
-	f1.\mf-^~
+	r2 r4 r2 \aIIXoffset #-4 e,4-^\fz
+	\dynEO #'(0 . 1) f1.\mf-^~
 	f2 g4-. aes-. g-. f-.
 	<< ees1.(->\> {s4 s s s s s\!}>>
 	c2.) r2 r8 c->
 % Bars 26 to 30
-	<< c1.\fz~ {s4 s s\> s s s}>>
+	<< c1.\fz~ {s4 s s s\> s s}>>
 	c2 c4-. ees-. des-. bes-.\!
 	c1.->~
 	c2. r2 r8 c
@@ -78,10 +78,10 @@ musicClarinettoIMvtIII = \relative c {
 	r2 r4 bes!2.->\fz
 % Bars 61 to 65
 	ces->\fz bes->\fz
-	r2 r4 b2.\<_\fzmarkup
-	b_\fzmarkup b_\fzmarkup\!
-	r2 r4 fis2.->\<_\fzmarkup
-	g!->_\fzmarkup fis->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 2) b2.\<_\fzmarkup
+	\markEO #'(0 . 2) b_\fzmarkup \markEO #'(0 . 2) b_\fzmarkup\!
+	r2 r4 \markEO #'(0.6 . 2.5) fis2.->\<_\fzmarkup
+	\markEO #'(0.6 . 2.5) g!->_\fzmarkup \markEO #'(0.6 . 2.5) fis->_\fzmarkup\!
 % Bars 66 to 70
 	r2 g4-._\pcresc aes2-> g4-.
 	r2 g4-. aes2-> g4-.
@@ -95,7 +95,7 @@ musicClarinettoIMvtIII = \relative c {
 	
 	\section
 % Bars 76 to 80
-	\key f \major f1._\fmarcato->~
+	\key f \major \aIIXoffset #-4 \markEO #'(0 . 1) f1._\fmarcato->~
 	f2 g4-> a-> g-> f->
 	e1.-^
 	\afterGrace 99/100 c-^ {\flag c8}
@@ -131,7 +131,7 @@ musicClarinettoIMvtIII = \relative c {
 	gis2~ gis8 a-. b2~ b8 gis-.
 	a2~ a8 b-. c2~ c8 a-.
 % Bars 106 to 110
-	d1.\fz~->
+	d1.-\tweak X-offset #-1 \fz~->
 	d2 e4-> f-> e-> d->
 	\afterGrace 99/100 c1.-> {\flag a8}
 	gis2->~ gis8 a b2->~ b8 gis \mark \default
@@ -185,10 +185,10 @@ musicClarinettoIMvtIII = \relative c {
 	f'4\fp\startTrillSpan~ f8\stopTrillSpan r16 ees
 	f4\fz\startTrillSpan~ f8\stopTrillSpan r16 ees
 	f4-> g->
-	f-> \tuplet 6/4 4 {d16\< bes'( c d ees f)\!} \mark \default
+	f-> \tuplet 6/4 4 {d16\< \shape #'((0 . 0)(0 . 0.6)(0 . 0.6)(0 . 0)) Slur bes'( c d ees f)\!} \mark \default
 % Bars 156 to 160
 	g4_\mffz\startTrillSpan~ g8[\stopTrillSpan r16 f]
-	g4\fz\startTrillSpan~ g8[\stopTrillSpan r16 f]
+	g4-\tweak X-offset 0 \fz\startTrillSpan~ g8[\stopTrillSpan r16 f]
 	g4-> bes->
 	aes-> g->
 	f4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e]
@@ -206,12 +206,12 @@ musicClarinettoIMvtIII = \relative c {
 	f4-> g->
 % Bars 171 to 175
 	f4-> d16\< d32( ees f g aes bes)\!
-	c4\fz\startTrillSpan~ c8[\stopTrillSpan r16 bes]-.
-	c4\fz\startTrillSpan~ c8[\stopTrillSpan r16 bes-.]
+	\dynEO #'(0 . 1) c4\fz\startTrillSpan~ c8[\stopTrillSpan r16 bes]-.
+	\dynEO #'(0 . 1) c4\fz\startTrillSpan~ c8[\stopTrillSpan r16 bes-.]
 	c4-> c->
 	d-> c->
 % Bars 176 to 180
-	bes4\fz\startTrillSpan~ bes8[\stopTrillSpan r16 a-.]
+	\dynEO #'(0 . 1) bes4\fz\startTrillSpan~ bes8[\stopTrillSpan r16 a-.]
 	bes4\fz\startTrillSpan~ bes8[\stopTrillSpan r16 a-.]
 	bes4-> bes->
 	c-> bes->
@@ -233,18 +233,18 @@ musicClarinettoIMvtIII = \relative c {
 	f4\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 	f4-> aes->
 	g-> ees->
-	\partCombineApart d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
-	d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.] \partCombineAutomatic
+	\partCombineApart \dynEO #'(-1.5 . -5) d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.]
+	\dynEO #'(-1.5 . -5) d4\fz\startTrillSpan~ d8[\stopTrillSpan r16 c-.] \partCombineAutomatic
 % Bars 201 to 205
 	d4-> ees->
 	d-> bes->
-	f'4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 ees-.]
-	f4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 ees-.]
+	f'4-\tweak X-offset -0.5 \brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 ees-.]
+	f4-\tweak X-offset -0.5 \brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 ees-.]
 	f4-> g->
 % Bars 206 to 210
-	f-> d16-.\< d32( ees f g aes bes)\!
-	c4\fz\startTrillSpan~ c8[\stopTrillSpan r16 b-.]
-	c4\fz\startTrillSpan~ c8[\stopTrillSpan r16 b-.]
+	f-> \beamOffset #'(0.5 . 0) d16-. d32(\<  ees f g aes bes)\!
+	\dynEO #'(0 . 1) c4\fz\startTrillSpan~ c8[\stopTrillSpan r16 b-.]
+	\dynEO #'(0 . 1) c4\fz\startTrillSpan~ c8[\stopTrillSpan r16 b-.]
 	c4-> ees->
 	d-> c8-. ees,32(\< f g aes)\!
 % Bars 211 to 215
@@ -258,7 +258,7 @@ musicClarinettoIMvtIII = \relative c {
 	aes4-^ ces-^
 	bes-^ aes-^ \mark \default
 	\partCombineApart aes4\startTrillSpan~ aes8[\stopTrillSpan \once \voiceOne r16 g-.]
-	aes4\startTrillSpan~ aes8[\stopTrillSpan r16 g-.] \partCombineAutomatic
+	aes4-\tweak extra-offset #'(-0.5 . -1) \startTrillSpan~ aes8[\stopTrillSpan r16 g-.] \partCombineAutomatic
 % Bars 221 to 225
 	aes4-^ ces-^
 	bes-^ aes-^
@@ -297,19 +297,19 @@ musicClarinettoIMvtIII = \relative c {
 	ces->\fz bes->\fz
 	gis4\brack\f r r r2 r4
 	gis r r r2 r4
-	gis\p r r r2 r8. dis,16(\<
+	gis\p r r r2 r8. \aIIXoffset #-3 dis,16(\<
 	e4)\! r r r2 r8. g16(\<
 % Bars 276 to 280
 	aes!4)\! r4 r r2 r4
-	r2 r8. bes16(\p\< g4)\! r r 
+	r2 r8. \hairpinShorten #'(-0.3 . -1) bes16(\p\< g4)\! r r 
 	r2 r4 fis'(\< g) r
 	a( bes) r c( des!) r
 	c( des!)\! r c(\f des) r
 % Bars 281 to 285
 	R1.*5
 % Bars 286 to 290
-	r2 r4 r2 e,4-^\fz
-	f1.-^\mf~
+	r2 r4 r2 \aIIXoffset #-4 e,4-^\fz
+	\dynEO #'(0 . 2) f1.-^\mf~
 	f2 g4-. aes-. g-. f-.
 	<< ees1.->(\> {s4 s s s s s\!}>>
 	c2.) r2 r8 c->
@@ -357,10 +357,10 @@ musicClarinettoIMvtIII = \relative c {
 	r2 r4 bes!2.->\fz
 % Bars 326 to 330
 	ces->\fz bes->\fz
-	r2 r4 b2.\<_\fzmarkup
-	b_\fzmarkup b_\fzmarkup\!
-	r2 r4 fis2.->\<_\fzmarkup
-	g!->_\fzmarkup fis->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.5) b2.\<_\fzmarkup
+	\markEO #'(0 . 1.75) b_\fzmarkup \markEO #'(0 . 2) b_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.5) fis2.->\<_\fzmarkup
+	\markEO #'(0 . 1.75) g!->_\fzmarkup \markEO #'(0 . 2) fis->_\fzmarkup\!
 % Bars 331 to 335
 	r2 g4-._\pcresc aes2-> g4-.
 	r2 g4-. aes2-> g4-.
@@ -374,23 +374,23 @@ musicClarinettoIMvtIII = \relative c {
 	
 	\section
 % Bars 341 to 345
-	\key f \major \time 2/4 a4._\fffz-> r16 g-.
+	\key f \major \time 2/4 \markEO #'(0 . 1) a4._\fffz-> r16 g-.
 	a4.->\fz r16 g-.
 	a4-> a->
 	bes-> a->
-	g4.->\fz r16 fis-.
+	\dynEO #'(0.5 . 1) g4.->\fz r16 fis-.
 % Bars 346 to 350
-	g4.->\fz r16 fis-.
+	\dynEO #'(0.5 . 1) g4.->\fz r16 fis-.
 	g4-> bes->
 	g-> g->
-	f4.->\fz r16 e-.
-	f4.\fz r16 e-.
+	\dynEO #'(0.5 . 1) f4.->\fz r16 e-.
+	\dynEO #'(0.5 . 1) f4.\fz r16 e-.
 % Bars 351 to 355
 	f4-> f->
 	e-> d->
-	a'4\fp\startTrillSpan~ a8[\stopTrillSpan r16 g-.]
+	\dynEO #'(0.5 . 1) a'4\fp-\tweak extra-offset #'(0 . -0.8) \startTrillSpan~ a8[\stopTrillSpan r16 g-.]
 	a4\fp\startTrillSpan~ a8[\stopTrillSpan r16 g-.]
-	a4--( c--\<
+	a4--(\< c--\!
 % Bars 356 to 360
 	bes--\> a--\!)
 	g4\fp\startTrillSpan~ g8[\stopTrillSpan r16 fis-.]

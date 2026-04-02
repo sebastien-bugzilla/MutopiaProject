@@ -9,7 +9,7 @@ musicFagottoIIMvtIII = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	a4\ff r r r2 r4
+	a4-\tweak X-offset 0 \ff r r r2 r4
 	r2 r4 bes'2.->\fz
 	bes->\fz bes->\fz
 	a,4 r r r2 r4
@@ -22,7 +22,7 @@ musicFagottoIIMvtIII = \relative c {
 	des4)\! r r r2 r8. e16(\<
 % Bars 11 to 15
 	f4)\! r r r2 r4
-	r2 r8. g16(\p\< e4)\! r r
+	r2 r8. g16(-\tweak X-offset -1 \p\< e4)\! r r
 	r2 r4 dis'(\< e) r
 	fis( g) r r2 gis,4(
 	a)\! r gis(\f a) r gis(
@@ -36,7 +36,7 @@ musicFagottoIIMvtIII = \relative c {
 	<< c1.(->\> {s4 s s s s s\!}>>
 	a2.) r2 r8 a->
 % Bars 26 to 30
-	<< a1.\fz~ {s4 s s\> s s s}>>
+	<< a1.\fz~ {s4 s s s\> s s}>>
 	a2 a4-. c-. bes-. g-.\!
 	a1.->~
 	a2. r2 r8 a
@@ -168,9 +168,9 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	R1.\fermata \section
-	\time 2/4 \key c \major c'4\fp~ c8 r16 g-.
+	\time 2/4 \key c \major c'4-\tweak X-offset 0 \fp~ c8 r16 g-.
 % Bars 141 to 145
-	c4\fp~ c8 r16 g-.
+	c4-\tweak X-offset 0 \fp~ c8 r16 g-.
 	c4-> e,->
 	d-> c->
 	g'4.\fp r8
@@ -207,8 +207,8 @@ musicFagottoIIMvtIII = \relative c {
 	d4-> d->
 % Bars 171 to 175
 	d-> g8 r
-	f,4\fz~ f8[ s16 c'-.]
-	f,4\fz~ f8[ s16 c'-.]
+	f,4-\offset X-offset 0.5 \fz~ f8[ s16 c'-.]
+	f,4-\offset X-offset 0.5 \fz~ f8[ s16 c'-.]
 	f,4 r
 	f r
 % Bars 176 to 180
@@ -220,12 +220,12 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 181 to 185
 	bes4.\brack\fz r8
 	bes4-> b-> \mark \default
-	g'8\fz r r4
+	g'8-\offset X-offset #0.5 \fz r r4
 	R2*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	c,4.->\ff r8
+	c,4.->-\tweak X-offset -2 \ff r8
 	c4.-> r8
 	c4-> e->
 	d-> c->
@@ -390,13 +390,13 @@ musicFagottoIIMvtIII = \relative c {
 	d4.->\fz r16 a-.
 	d4-> d->
 	d-> d->
-	a4.->\fz r16 a-.
+	a4.->-\tweak X-offset 0 \fz r16 a-.
 % Bars 346 to 350
-	a4.->\fz r16 a-.
+	a4.->-\tweak X-offset 0 \fz r16 a-.
 	a4-> a->
 	a-> a->
-	b4.->\fz r16 fis-.
-	b4.\fz r16 fis-.
+	b4.->-\tweak X-offset 0 \fz r16 fis-.
+	b4.-\tweak X-offset 0 \fz r16 fis-.
 % Bars 351 to 355
 	b4-> b->
 	a-> g->

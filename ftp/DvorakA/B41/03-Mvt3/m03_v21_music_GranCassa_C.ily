@@ -128,7 +128,7 @@ musicGranCassaMvtIII = \relative c {
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	r4 e\f
+	r4 e-\offset X-offset 0.5 \f
 	r e
 	r e
 	r e
