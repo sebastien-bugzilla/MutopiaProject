@@ -173,7 +173,7 @@ musicOboeIMvtIV = \relative c {
 	
 % Bars 156 to 160
 	
-	\section \mark \default
+	\section \mark \default \break
 	\key d \major R2*40
 % Bars 161 to 165
 	
@@ -347,7 +347,7 @@ musicOboeIMvtIV = \relative c {
 	
 % Bars 326 to 330
 	
-	\section
+	\section \break
 	\key d \minor R2*16
 % Bars 331 to 335
 	
@@ -575,7 +575,7 @@ musicOboeIMvtIV = \relative c {
 	a'8.-.\f gis16 a4->
 	a8.-. gis16 a4->
 	a8.-. gis16 a4->\<
-	a-> a->\! \section
+	a-> a->\! \section \break
 % Bars 561 to 565
 	\key d \major \partCombineApart a,2(~_\moltoespr
 	a8[ b] \tuplet 3/2 4 {cis d e)}
