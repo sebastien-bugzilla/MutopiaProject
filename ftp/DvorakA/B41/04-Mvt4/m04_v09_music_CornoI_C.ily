@@ -9,7 +9,7 @@ musicCornoIMvtIV = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	c''4-.^\secco\f d-.
+	\dynEO #'(-2 . 0) c''4-.^\secco\f d-.
 	e-. r
 	c-. d-.
 	e-. r
@@ -29,7 +29,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 16 to 20
 	d-> r\fermata
 	R2
-	a4->\f r\fermata
+	\dynEO #'(-1 . 0) a4->\f r\fermata
 	R2
 	d,4\f r\fermata
 % Bars 21 to 25
@@ -91,7 +91,7 @@ musicCornoIMvtIV = \relative c {
 	b2\fz 
 	c4-. b-.
 % Bars 76 to 80
-	<< c2->\fz\>( {s8 s s s\!}>>
+	<< c2->-\tweak X-offset 0 \fz\>( {s8 s s s\!}>>
 	b8)\p r r4
 	R2*26
 % Bars 81 to 85
@@ -111,7 +111,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 106 to 110
 	R2*2
 	\mark \default
-	c4-.\ff d-.
+	c4-.-\tweak X-offset 0 \ff d-.
 	e-. r
 	c-. d-.
 % Bars 111 to 115
@@ -159,7 +159,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 146 to 150
 	d-. d-. d-. d-.
 	d-. d-. d-. d-.
-	d\pp r r4 \partCombineAutomatic
+	d-\offset X-offset -1 \pp r r4 \partCombineAutomatic
 	R2*9
 	
 % Bars 151 to 155
@@ -186,7 +186,7 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	\partCombineChords a2\pp~
-	<< a~\< {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -2) a~\< {s8 s s s\!}>>
 	<< a2~ {s4 s\>}>>
 % Bars 201 to 205
 	<< a2 {s8 s s s\!}>>
@@ -228,7 +228,7 @@ musicCornoIMvtIV = \relative c {
 	b4) \once \partCombineAutomatic r
 	ais2(
 	b4) \once \partCombineAutomatic r
-	c!2(_\crescmarkup
+	c!2(-\offset X-offset 2.5 _\crescmarkup
 	des4) \once \partCombineAutomatic r
 % Bars 236 to 240
 	c2(
@@ -267,9 +267,9 @@ musicCornoIMvtIV = \relative c {
 	
 	
 % Bars 266 to 270
-	dis2_\f-fz~
+	\markEO #'(0.4 . 0.5) dis2_\f-fz~
 	dis
-	dis\fz~
+	dis-\tweak X-offset 0 \fz~
 	dis
 	e\fz~
 % Bars 271 to 275
@@ -288,7 +288,7 @@ musicCornoIMvtIV = \relative c {
 	e->
 	e->
 	e->
-	e\ff~
+	e-\tweak X-offset 0 \ff~
 	e~
 % Bars 286 to 290
 	e~
@@ -298,25 +298,25 @@ musicCornoIMvtIV = \relative c {
 	e->
 % Bars 291 to 295
 	e->
-	e2\ff~
+	e2-\tweak X-offset 0 \ff~
 	e~
 	e~
 	e
 % Bars 296 to 300
-	e_\f-fz
-	e\fz
-	e\fz
-	e\fz
-	e\ff~
+	\markEO #'(0.5 . 1) e_\f-fz
+	e-\tweak X-offset 0 \fz
+	e-\tweak X-offset 0 \fz
+	e-\tweak X-offset 0 \fz
+	e-\tweak X-offset 0 \ff~
 % Bars 301 to 305
 	e~
 	e~
 	e
-	e_\f-fz
-	e\fz
+	\markEO #'(0.5 . 1) e_\f-fz
+	e-\tweak X-offset 0 \fz
 % Bars 306 to 310
-	e\fz
-	e\fz \mark \default
+	e-\tweak X-offset 0 \fz
+	e-\tweak X-offset 0 \fz \mark \default
 	R2*2
 	
 	\partCombineApart \tuplet 3/2 4 {cis8\f[ cis cis] cis cis cis
@@ -350,7 +350,7 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	
-	b!2(\fz
+	b!2(-\tweak X-offset 0 \fz
 	c4.) r8
 % Bars 346 to 350
 	c4(\fz des
@@ -360,20 +360,20 @@ musicCornoIMvtIV = \relative c {
 	bes4-.\f r
 % Bars 351 to 355
 	bes-. r
-	ees2\ff~
+	ees2-\tweak X-offset 0 \ff~
 	ees
-	ees\fz
-	ees4..\fz ees16
+	ees-\tweak X-offset 0 \fz
+	ees4..-\tweak X-offset 0 \fz ees16
 % Bars 356 to 360
-	ees2\fz~
+	ees2-\tweak X-offset 0 \fz~
 	ees
-	ees\ff~
+	ees-\tweak X-offset 0 \ff~
 	ees
-	ees\fz
+	ees-\tweak X-offset 0 \fz
 % Bars 361 to 365
-	ees4..\fz ees16
-	\partCombineChords ees2\fz~
-	<< ees\> {s8 s s s\!}>>
+	ees4..-\tweak X-offset 0 \fz ees16
+	\partCombineChords ees2-\tweak X-offset 0 \fz~
+	<< \hairpinShorten #'(1 . 0) ees\> {s8 s s s\!}>>
 	\partCombineApart d8-.\p d-. d-. d-. 
 	d-. d-. d-. d-. 
 % Bars 366 to 370
@@ -393,7 +393,7 @@ musicCornoIMvtIV = \relative c {
 	cis)
 	d4 e(
 	d2) \mark \default
-	c!4-^\ff r
+	c!4-^-\tweak X-offset 0 \ff r
 % Bars 381 to 385
 	d-^ r
 	e-^ r
@@ -645,7 +645,7 @@ musicCornoIMvtIV = \relative c {
 	e\! g-^\fz~
 	g r
 	R2
-	d\ff->
+	d-\tweak X-offset 0 \ff->
 % Bars 636 to 640
 	d->
 	d4..-> \once \partCombineApart b16-.

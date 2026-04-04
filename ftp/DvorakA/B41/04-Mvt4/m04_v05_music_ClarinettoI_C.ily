@@ -9,7 +9,7 @@ musicClarinettoIMvtIV = \relative c {
 	\key f \minor
 	\transposition a
 % Bars 1 to 5
-	\partCombineApart f''4-._\fsecco f-.
+	\partCombineApart f''4-.-\tweak extra-offset #'(0 . 0.3) _\fsecco f-.
 	f8.-. e16 g4->
 	f4-. f-.
 	f8.-. e16 c4->
@@ -86,7 +86,7 @@ musicClarinettoIMvtIV = \relative c {
 	R2*2
 	
 	\partCombineApart bes'8(\p\> aes f des)\! \mark \default
-	des4_\mfbenmarc-. des-.
+	des4-\offset X-offset -1 _\mfbenmarc-. des-.
 	des8.-. c16 ees4->
 % Bars 71 to 75
 	des4-. des-.
@@ -104,7 +104,7 @@ musicClarinettoIMvtIV = \relative c {
 	bes4-. bes-.
 	bes8.-. aes16 c4->
 	bes4-. bes-. \partCombineAutomatic
-	bes,2\pp~
+	bes,2-\tweak X-offset -3.5 \pp~
 	bes~
 % Bars 86 to 90
 	bes~
@@ -114,7 +114,7 @@ musicClarinettoIMvtIV = \relative c {
 	bes~
 % Bars 91 to 95
 	bes
-	\partCombineApart bes~(_\pocoapococresc
+	\partCombineApart bes~(^\pocoapococresc
 	bes
 	b~
 	b) \partCombineAutomatic
@@ -133,13 +133,13 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 106 to 110
 	R2*2
 	\mark \default
-	f'4-.\ff f-.
+	\aIIXoffset #-3 f'4-.\ff f-.
 	f8.-. e16 g4->
 	\partCombineApart f-. f-.
 % Bars 111 to 115
 	g-. r
 	f4-. f-.
-	g-. r
+	g-. \tweak extra-offset #'(0 . -1) r
 	f-. f-.
 	g-. r
 % Bars 116 to 120
@@ -217,14 +217,14 @@ musicClarinettoIMvtIV = \relative c {
 	
 % Bars 241 to 245
 	
-	bes2\f~
+	\dynEO #'(0 . 1) bes2\f~
 	bes~
 	bes8 r r4
 	R2 \mark \default
 % Bars 246 to 250
 	R2*2
 	
-	bes2\f~
+	\dynEO #'(0 . 1) bes2\f~
 	bes~
 	bes8 r r4
 % Bars 251 to 255
@@ -241,16 +241,16 @@ musicClarinettoIMvtIV = \relative c {
 	c\fz~
 % Bars 271 to 275
 	c
-	d\fz~
+	d-\tweak X-offset 0 \fz~
 	d
-	d\fz
+	d-\tweak X-offset 0 \fz
 	fis\fz
 % Bars 276 to 280
-	ges\ff~
+	ges-\tweak X-offset -1 \ff~
 	ges~
 	ges~
 	ges
-	ges4->_\marcatissimo ges->
+	\aIIXoffset #-4 ges4->_\marcatissimo ges->
 % Bars 281 to 285
 	ges8. f16 ges4->
 	ees8. d16 ees4->
@@ -260,7 +260,7 @@ musicClarinettoIMvtIV = \relative c {
 % Bars 286 to 290
 	ges~
 	ges
-	ges4->_\marcatissimo ges->
+	\aIIXoffset #-4 ges4->_\marcatissimo ges->
 	ges8. f16 ges4->
 	ees8. d16 ees4->
 % Bars 291 to 295
@@ -270,7 +270,7 @@ musicClarinettoIMvtIV = \relative c {
 	g~
 	g
 % Bars 296 to 300
-	g4->\ff g->
+	\aIIXoffset #-4 \dynEO #'(0 . 2) g4->\ff g->
 	g8. fis16 g4->
 	ees8. d16 ees4->
 	c8. b16 c4->
@@ -317,22 +317,22 @@ musicClarinettoIMvtIV = \relative c {
 	
 	
 	
-	g,2(\fz
+	\aIIXoffset #-4 g,2(\fz
 	aes!4.) r8
 % Bars 346 to 350
 	aes!4(\fz a
 	bes4.) r8
-	bes4(\fz\< ces~
+	bes4(-\tweak X-offset 0 \fz\< ces~
 	ces4.)\! r8
 	R2*2
 % Bars 351 to 355
 	
 	gis'2~\ff
 	gis
-	gis\fz
-	gis4..\fz gis16
+	gis-\tweak X-offset 0 \fz
+	gis4..-\tweak X-offset 0 \fz gis16
 % Bars 356 to 360
-	gis2\fz~
+	gis2-\tweak X-offset 0 \fz~
 	gis
 	g!\ff~
 	g
@@ -360,7 +360,7 @@ musicClarinettoIMvtIV = \relative c {
 	f)
 	g4( a
 	bes2) \partCombineAutomatic \mark \default
-	aes!4-^\ff r
+	\dynEO #'(0.3 . 2) aes!4-^\ff r
 % Bars 381 to 385
 	bes-^ r
 	g-^ r
@@ -436,7 +436,7 @@ musicClarinettoIMvtIV = \relative c {
 	
 	\partCombineApart bes'8(\p\> aes f des)\! \mark \default
 % Bars 456 to 460
-	des4-._\mfmarcato des-.
+	\markEO #'(0 . 0.5) des4-.-\offset X-offset -1 _\mfmarcato des-.
 	des8.-. c16 ees4->
 	des4-. des-.
 	des8.-. bes16 aes4->
@@ -445,7 +445,7 @@ musicClarinettoIMvtIV = \relative c {
 	des8.-. c16 ees4->
 	des4-. des-.
 	des8.-. bes16 aes4->
-	bes4-. bes-._\dimmarkup
+	bes4-. bes-.-\offset X-offset 0.5 _\dimmarkup
 	bes8.-. aes16 ces4->
 % Bars 466 to 470
 	bes-. bes-.
@@ -454,7 +454,7 @@ musicClarinettoIMvtIV = \relative c {
 	bes8. aes16 ces4->
 	bes-. bes-. \partCombineAutomatic 
 % Bars 471 to 475
-	bes,2\pp~
+	\dynEO #'(0 . 0.3) bes,2-\tweak X-offset 0 \pp~
 	bes~
 	bes~
 	bes~
@@ -466,7 +466,7 @@ musicClarinettoIMvtIV = \relative c {
 	bes~
 	bes~
 % Bars 481 to 485
-	bes~_\pocoapococresc
+	bes~^\pocoapococresc
 	bes
 	e~
 	e~
@@ -484,7 +484,7 @@ musicClarinettoIMvtIV = \relative c {
 	
 	
 	
-	a2_\brackfffz~
+	\aIIXoffset #-4 a2_\brackfffz~
 	a
 % Bars 501 to 505
 	d~\fz
@@ -520,11 +520,11 @@ musicClarinettoIMvtIV = \relative c {
 	f-> f---._\dimmarkup
 	f-.-- f-.--
 	d-.-- d-.--
-	d2\p~
+	d2-\tweak X-offset 0.5 \p~
 	d~
 % Bars 531 to 535
 	d~
-	<< d\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(1 . 0) d\> {s8 s s s\!}>>
 	d2\pp~
 	d~
 	d~
@@ -547,8 +547,8 @@ musicClarinettoIMvtIV = \relative c {
 	c8.-. b16 c4->\<
 	c-> c->\! \section
 % Bars 561 to 565
-	\key f \major \partCombineApart c2-\fmaespr(~
-	c8[\< d] \tuplet 3/2 4 {e f g)\!}
+	\key f \major \partCombineApart \markEO #'(-2 . -1.5) c2-\fmaespr(~
+	\hairpinShorten #'(1.5 . 0) c8[_\< d] \tuplet 3/2 4 {e f g)\!}
 	a2(->
 	f4. cis8)
 	d2(~
@@ -583,7 +583,7 @@ musicClarinettoIMvtIV = \relative c {
 	<<f2~ {s4 s }>>
 	f2~
 % Bars 591 to 595
-	f4 r
+	f4 d'\rest
 	\mmrPos #6 R2
 	R
 	R

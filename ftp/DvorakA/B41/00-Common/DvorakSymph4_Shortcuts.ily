@@ -23,6 +23,7 @@ ppmoltoespress = \markup {\hspace #-0.82 \dynamic pp \italic "molto espress."}
 ppsecco = \markup {\hspace #-0.82 \dynamic pp \italic secco}
 ppsemprestaccato = \markup {\hspace #-0.82 \dynamic pp \italic "sempre staccato"}
 ppsempresecco = \markup {\hspace #-0.82 \dynamic pp \italic "sempre secco"}
+brackpppocoapococresc = \markup {\hspace #-0.82 \bracket \with-true-dimensions \dynamic pp \italic "poco a poco cresc."}
 %--------------------
 % dynamics p
 %--------------------
@@ -103,6 +104,7 @@ fflegato = \markup {\hspace #-0.53 \dynamic ff \italic legato}
 ffmarcato = \markup {\hspace #-0.53 \dynamic ff \italic marcato}
 ffmoltomarcato = \markup {\hspace #-0.53 \dynamic ff \italic "molto marcato"}
 menoff = \markup {\hspace #-4.5 \italic meno \dynamic ff}
+ffmoltoespr = \markup {\hspace #-0.53 \dynamic ff \italic "molto espr."}
 %--------------------
 % dynamics ffz
 %--------------------
@@ -448,6 +450,14 @@ changeStaffName = #(define-music-function
 	#}
 )
 
+markXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
+
 
 
 
@@ -594,14 +604,6 @@ changeStaffName = #(define-music-function
 %	#}
 %)
 
-
-%markXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
-%	#}
-%)
 
 %markYoffset = #(define-music-function
 %	(offset)

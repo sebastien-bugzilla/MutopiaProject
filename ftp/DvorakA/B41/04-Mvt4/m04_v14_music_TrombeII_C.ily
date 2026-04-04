@@ -238,7 +238,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 351 to 355
 	
-	c2\ff~
+	c2-\tweak X-offset -2 \ff~
 	c~
 	c4 r4
 	R2*3
@@ -426,7 +426,7 @@ musicTrombeIIMvtIV = \relative c {
 	a4.\< r8
 	b4. r8
 	bis4.\! r8 \markk
-	a2-^\ff
+	\dynEO #'(-2.3 . 2) a2-^\ff
 % Bars 606 to 610
 	a-^
 	a4..-^ gis16-^
@@ -447,7 +447,7 @@ musicTrombeIIMvtIV = \relative c {
 	d4..-> b16->
 % Bars 621 to 625
 	e2->
-	a4.->\ff a16-> a->
+	a4.->-\tweak X-offset 0 \ff a16-> a->
 	a4-> a->
 	cis,2->~
 	cis

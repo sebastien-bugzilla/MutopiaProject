@@ -99,7 +99,7 @@ musicCornoIVMvtIV = \relative c {
 % Bars 106 to 110
 	R2*2
 	\mark \default
-	a4-.\ff f-.
+	a4-.-\tweak X-offset 0.5 \ff f-.
 	e-. r
 	f-. f-.
 % Bars 111 to 115
@@ -316,7 +316,7 @@ musicCornoIVMvtIV = \relative c {
 	f4-.\f r
 % Bars 351 to 355
 	ees-. r
-	aes2\ff~
+	aes2-\tweak X-offset 0 \ff~
 	aes
 	c,\fz
 	c4..\fz c16
@@ -325,7 +325,7 @@ musicCornoIVMvtIV = \relative c {
 	c
 	gis'\ff~
 	gis
-	b,\fz
+	b,-\tweak X-offset 0 \fz
 % Bars 361 to 365
 	b4..\fz b16
 	b2\fz~
@@ -547,12 +547,12 @@ musicCornoIVMvtIV = \relative c {
 % Bars 571 to 575
 	\stemUp fis(
 	<< e)\< {s8 s s s\!}>>
-	\stemDown d2\fz~
+	\stemDown d2-\offset X-offset 0.5 \fz~
 	<< d\> {s8 s s s\!}>> 
 	fis2(
 % Bars 576 to 580
 	e)
-	cis2(\fz
+	cis2(-\offset X-offset 0.5 \fz
 	d)
 	fis2~
 	fis
@@ -585,7 +585,7 @@ musicCornoIVMvtIV = \relative c {
 	fis4.\< r8
 	gis4. r8
 	gis4.\! r8 \markk
-	a2-^\ff
+	\dynEO #'(-2.3 . 2) a2-^\ff
 % Bars 606 to 610
 	a-^
 	des,->~
@@ -606,7 +606,7 @@ musicCornoIVMvtIV = \relative c {
 	b->
 % Bars 621 to 625
 	b2->
-	a'2->\ff~
+	a'2->-\tweak X-offset 0 \ff~
 	a
 	gis->~
 	gis

@@ -9,7 +9,7 @@ musicViolaMvtIV = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	<bes' d>4-.\f^\secco q-.
+	\dynEO #'(-2 . 0) <bes' d>4-.\f^\secco q-.
 	<a e'>-. r
 	<bes d>-. q-.
 	<a e'>-. r
@@ -56,7 +56,7 @@ musicViolaMvtIV = \relative c {
 		a8.-. g16 e4--
 	} \\ {
 % Bar 30
-		f-._\ppsecco f-.
+		\markEO #'(0 . 0) f-._\ppsecco f-.
 % Bars 31 to 35
 		f-. r
 		f-. f-. 
@@ -113,7 +113,7 @@ musicViolaMvtIV = \relative c {
 	e( f g a bes g)
 	f( g f e f g)
 % Bars 76 to 80
-	g( a bes c\> des bes)\!
+	g( a bes \once \tupletUp c\> des bes)\!
 	e,( f g des ees f
 	e!_\dimmarkup f g f g f)
 	des( ees f e f g
@@ -132,7 +132,7 @@ musicViolaMvtIV = \relative c {
 	q:
 % Bars 91 to 95
 	<< q:\< {s8 s s s\!}>>
-	q2:^\pocoapococresc
+	q2:_\pocoapococresc
 	q:
 	<f gis>:
 	q:
@@ -150,7 +150,7 @@ musicViolaMvtIV = \relative c {
 	<g cis e>-> r
 % Bars 106 to 110
 	R2
-	a8(\f\< cis e a)\! \mark \default
+	a8(\f cis\< e a)\! \mark \default
 	<f a>4-.\ff <bes, d d'>-.\arpeggio
 	<a e' a>-.\arpeggio r
 	<bes d bes'>-.\arpeggio <bes d d'>-.\arpeggio
@@ -229,10 +229,10 @@ musicViolaMvtIV = \relative c {
 	fis)
 	<< g(~\< {s8 s s s\!}>>
 % Bars 181 to 185
-	g4\> d)\!
+	\hairpinShorten #'(0 . -3) g4\> d)\!
 	c'2\pp~
-	c\<~
-	c4\! b(~\>
+	c-\alterBroken shorten-pair #'(() (0 . 2)) \<~
+	c4 b(~\>
 	b e,)\!
 % Bars 186 to 190
 	<d fis>2_\crescmarkup~
@@ -260,7 +260,7 @@ musicViolaMvtIV = \relative c {
 % Bars 196 to 200
 	
 	
-	\subdiviseBeam \tuplet 3/2 4 {fis8\p( d fis a fis d'
+	\subdiviseBeam \tuplet 3/2 4 {\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) fis8\p( d fis a fis d'
 	fis, d fis a fis d'
 	fis, d fis a fis d'
 % Bars 201 to 205
@@ -294,7 +294,7 @@ musicViolaMvtIV = \relative c {
 	r g,( d b' g d'
 	g,\> d g b g d')\!
 % Bars 226 to 230
-	r a(\< e c' a e'
+	r a(\< e \once \tupletUp c' a e'
 	fis, d fis c' d, d')\!
 	r g,(\f d b' g d'
 	b\> g dis' b g e')\!} \unSubdiviseBeam
@@ -318,28 +318,28 @@ musicViolaMvtIV = \relative c {
 	q:
 	q: \mark \default
 % Bars 246 to 250
-	q:\f
+	\dynEO #'(0 . 1) q:\f
 	q:
 	q:\ff
 	q:
 	q:
 % Bars 251 to 255
 	q:
-	q:\f
+	\dynEO #'(0 . 1) q:\f
 	q:
-	q:\ff
+	q:-\offset X-offset -0.8 \ff
 	q:
 % Bars 256 to 260
 	q:
 	q:
-	q:\f
+	\dynEO #'(0 . 2) q:\f
 	q:
-	q:\ff
+	q:-\offset X-offset -0.8 \ff
 % Bars 261 to 265
 	q:
 	q:
 	q:
-	q:\f
+	\dynEO #'(0 . 1) q:\f
 	q:
 % Bars 266 to 270
 	\tuplet 6/4 2 { <e, cis'!>2.:8\fz
@@ -349,17 +349,17 @@ musicViolaMvtIV = \relative c {
 	q:\fz
 % Bars 271 to 275
 	q:
-	<b' dis>:\fz
+	<b' dis>:-\offset X-offset -1.8 \fz
 	q:
-	<b e>:\fz
+	<b e>:-\offset X-offset -1.8 \fz
 	<a dis>:\fz }
 % Bars 276 to 280
 	<ees' a>2:32\ff
 	q:
 	q:
-	q: \subdiviseBeam
+	q: 
 	<< {
-		\tuplet 3/2 4 {a,8-> c-> c-> a-> c-> c-> 
+		\subdiviseBeam \tuplet 3/2 4 {a,8-> c-> c-> a-> c-> c-> 
 % Bars 281 to 285
 		a-> c-> c-> a-> c-> c->
 		a-> c-> c-> a-> c-> c->
@@ -395,7 +395,7 @@ musicViolaMvtIV = \relative c {
 		c-> e-> e-> c-> e-> e->}
 	} \\ {
 % Bar 280
-		\tuplet 3/2 4 {f,8-> a-> a-> f-> a-> a->
+		\subdiviseBeam \tuplet 3/2 4 {f,8-> a-> a-> f-> a-> a->
 % Bars 281 to 285
 		f-> a-> a-> f-> a-> a-> 
 		f-> a-> a-> f-> a-> a-> 
@@ -429,8 +429,8 @@ musicViolaMvtIV = \relative c {
 % Bars 306 to 310
 		a-> c!-> c-> a-> c-> c-> 
 		a-> c!-> c-> a-> c-> c-> }
-	}>> \mark \default
-	<ees, c'>2:16_\fffz
+	}>> \subdiviseBeam \mark \default 
+	\markEO #'(0 . 0) <ees, c'>2:16_\fffz
 	q:
 	<fis! ees'>:\brack\fz
 % Bars 311 to 315
@@ -510,7 +510,7 @@ musicViolaMvtIV = \relative c {
 	aes16(\> ges f8) f16( ees des8)\!
 	cis4->\ff cis->
 	cis8.-. bis16 dis4->
-	cis8 r e16(->\f\< dis cis8)
+	cis8 r e16(->\f dis-\tweak rotation #'(1.5 -1 0) \< cis8)
 % Bars 361 to 365
 	gis'16(-> fis e8) cis'16(-> a gis8)
 	e'16(-> dis cis8)\! cis16(\> a gis8)
@@ -594,7 +594,7 @@ musicViolaMvtIV = \relative c {
 		a8.-. g16 e4->
 	} \\ {
 % Bars 417 to 420
-		f!4-.\pp f-.
+		f!4-.-\offset X-offset -2.5 \pp f-.
 		f-. r
 		f-. f-.
 		e-. r
@@ -624,7 +624,7 @@ musicViolaMvtIV = \relative c {
 	c,( a' f c' a f
 	c bes' g e' c bes)
 % Bars 441 to 445
-	ees,(_\crescpocoapoco c' a f' c a)
+	ees,(_\crescpocoapoco c' a \once \tupletUp f' c a)
 	ees( c' a f' c a)
 	ees( c' a f' c a)
 	d,( d' bes f' d bes)
@@ -636,7 +636,7 @@ musicViolaMvtIV = \relative c {
 	ees,( c' a f' c a)
 	d,( d' bes f' d bes)
 % Bars 451 to 455
-	ees,(\f\< c' a f' c a)\!}
+	ees,(-\offset X-offset -2 \f\< c' a \once \tupletUp f' c a)\!}
 	<bes d>8-> r r4
 	R2*3
 	
@@ -650,7 +650,7 @@ musicViolaMvtIV = \relative c {
 % Bars 461 to 465
 	e( f g a bes g)
 	f( g f e f g)
-	f( a bes c\> des bes)\!
+	f( a bes \once \tupletUp c\> des bes)\!
 	e,( f g des_\dimmarkup ees f)
 	e!( f g f g f)
 % Bars 466 to 470
@@ -698,7 +698,7 @@ musicViolaMvtIV = \relative c {
 		cis:
 		cis:
 % Bars 481 to 485
-		cis:_\pocoapococresc
+		cis:^\pocoapococresc
 		cis:
 		cis:
 		cis:
@@ -717,7 +717,7 @@ musicViolaMvtIV = \relative c {
 	cis-.-> b'-.-> ais-.-> fis-.->
 	<b d>4\ff r
 % Bars 496 to 500
-	fis'8.->_\ffconforzaemoltomarc e16 d4-.--
+	\markEO #'(0 . 0.6) fis'8.->_\ffconforzaemoltomarc e16 d4-.--
 	d8.-> cis16 b4-.--
 	fis8.-. e16 d4-.--
 	<b' d>4-. r
@@ -841,14 +841,14 @@ musicViolaMvtIV = \relative c {
 % Bars 591 to 595
 	g,:-> g': d:-> g:
 	b:-> g: d: g:
-	dis,2\fz(\startTrillSpan
+	dis,2-\offset X-offset -1 \fz(\startTrillSpan
 	e4-.)\stopTrillSpan r8. g16-.
-	dis2(\fz\startTrillSpan
+	dis2(-\offset X-offset -1 \fz\startTrillSpan
 % Bars 596 to 600
 	e4-.)\stopTrillSpan r8. g16-.
-	eis2(\fz\startTrillSpan
+	eis2(-\offset X-offset -1 \fz\startTrillSpan
 	fis4-.)\stopTrillSpan r8. a16-.
-	eis2(\fz\startTrillSpan
+	eis2(-\offset X-offset -1 \fz\startTrillSpan
 	fis4-.)\stopTrillSpan r8. a16-.
 % Bars 601 to 605
 	fis4->(\startTrillSpan g8)[\stopTrillSpan r16 a-.]
@@ -896,7 +896,7 @@ musicViolaMvtIV = \relative c {
 	R2*3
 	
 	
-	r4 \tuplet 3/2 4 {g,8(\ff a b)}
+	r4 \tuplet 3/2 4 {g,8(-\offset X-offset -0.5 \ff a b)}
 	r4 \tuplet 3/2 4 {e,8( fis g)}
 % Bars 641 to 645
 	r4 \tuplet 3/2 4 {c,8( d e)}
@@ -911,7 +911,7 @@ musicViolaMvtIV = \relative c {
 	r4 e,16( fis g c)
 	r4 e,16( fis g cis!) \mark \default
 % Bars 651 to 655
-	d4->\ff d->
+	d4->-\offset X-offset 0.5 \ff d->
 	d8.-> cis16-. e4->
 	d4-> d->
 	d8.-> cis16-. a4->

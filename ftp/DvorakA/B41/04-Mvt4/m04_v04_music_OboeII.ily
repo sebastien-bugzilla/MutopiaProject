@@ -71,7 +71,7 @@ musicOboeIIMvtIV = \relative c {
 	e2\fz
 	f4-. e-.
 % Bars 76 to 80
-	<< f2\fz\> {s8 s s s}>>
+	<< f2\fz\> {s8 s s s\!}>>
 	e4-.\mp f-._\dimmarkup
 	e-. r
 	f4-. e-.

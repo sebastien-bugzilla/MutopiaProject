@@ -87,7 +87,7 @@ musicFlautoIIMvtIV = \relative c {
 	bes!8.-.\ff aes16( ees'4)\fermata
 % Bars 126 to 130
 	R2
-	des,8.-.\f\< c16( aes'4)\!\fermata
+	des,8.-.-\offset X-offset -2 \f\< c16( aes'4)\!\fermata
 	R2*30
 % Bars 131 to 135
 	
@@ -137,28 +137,28 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 241 to 245
 	
-	ais2\ff~
+	\dynEO #'(0 . 2) ais2\ff~
 	ais~
 	ais8 r r4
 	R2 \mark \default
 % Bars 246 to 250
 	R2*2
 	
-	ais2\ff~
+	\dynEO #'(0 . 2) ais2\ff~
 	ais2~
 	ais8 r r4
 % Bars 251 to 255
 	R2*3
 	
 	
-	bes'8(\ff aes g f
+	\dynEO #'(0 . 2) bes'8(\ff aes g f
 	ees des c des
 % Bars 256 to 260
 	c bes aes g
 	f ees d! ees
 	des) r r4
 	R2
-	bes''8(\ff aes g f
+	\dynEO #'(0 . 2) bes''8(\ff aes g f
 % Bars 261 to 265
 	ees des c des
 	c bes aes g
@@ -170,7 +170,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 271 to 275
 	
 % Bars 276 to 280
-	c'2\ff~
+	\dynEO #'(0 . 2) c'2\ff~
 	c~
 	c~
 	c~
@@ -179,7 +179,7 @@ musicFlautoIIMvtIV = \relative c {
 	R2*3
 	
 	
-	c2\ff~
+	\dynEO #'(0 . 2) c2\ff~
 	c~
 % Bars 286 to 290
 	c~
@@ -189,7 +189,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 291 to 295
 	
-	a2\ff~
+	\dynEO #'(0 . 2) a2\ff~
 	a~
 	a~
 	a~
@@ -198,7 +198,7 @@ musicFlautoIIMvtIV = \relative c {
 	R2*3
 	
 	
-	a2\ff~
+	\dynEO #'(0 . 2) a2\ff~
 % Bars 301 to 305
 	a~
 	a~
@@ -229,14 +229,14 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 351 to 355
 	
-	des2\ff~
+	\dynEO #'(0 . 2) des2\ff~
 	des~
 	des4 r
 	R2*3
 % Bars 356 to 360
 	
 	
-	cis2\ff~
+	\dynEO #'(0 . 2) cis2\ff~
 	cis~
 	cis4 r
 % Bars 361 to 365
@@ -250,7 +250,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	
 	\mark \default
-	a4-^\ff r
+	\dynEO #'(0 . 2) a4-^\ff r
 % Bars 381 to 385
 	g-^ r
 	a-^ r
@@ -331,7 +331,7 @@ musicFlautoIIMvtIV = \relative c {
 	fis2_\brackfffz~
 	fis
 % Bars 501 to 505
-	b~\fz
+	\dynEO #'(0 . 2) b~\fz
 	b
 	R2*4
 	
@@ -340,7 +340,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	a2~_\fffz
 	a
-	d\fz~
+	\dynEO #'(0 . 2) d\fz~
 	d
 % Bars 511 to 515
 	R2*8
@@ -383,7 +383,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	\section
 % Bars 561 to 565
-	\key d \major a'2(~\ff\<_\moltoespr
+	\key d \major \markEO #'(3 . 3.5) a'2(~\ff\<_\moltoespr
 	a8[ b] \tuplet 3/2 4 {cis d e)\!}
 	fis2->(
 	d4. ais8)
@@ -396,7 +396,7 @@ musicFlautoIIMvtIV = \relative c {
 	fis e)
 % Bars 571 to 575
 	d2(~
-	d8[\< cis] \tuplet 3/2 4 {d e fis)\!}
+	d8[\< cis] \once \tupletUp \tuplet 3/2 4 {d e fis)\!}
 	fis2(~\fz
 	fis4 e)
 	d2(~
@@ -451,7 +451,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 621 to 625
 	
-	d2->\ff~
+	\dynEO #'(0 . 2) d2->\ff~
 	d
 	cis~->
 	cis
@@ -471,7 +471,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	
 	
-	r4 b-.\ff
+	r4 \dynEO #'(0 . 2) b-.\ff
 	r b-.
 % Bars 641 to 645
 	r c-.

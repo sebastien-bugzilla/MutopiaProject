@@ -89,7 +89,13 @@ tempiMvtIII = {
 	\tempo "poco stringendo"
 }
 tempiMvtIV = {
-	\tempo "Allegro con brio"
+	\tempo \markup {
+		\concat {
+			"Allegro con brio "
+			\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+			" = 152"
+		}
+	}
 	s2*21
 	% bar 22
 	\tempo "rit."

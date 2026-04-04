@@ -490,7 +490,7 @@ musicTimpaniMvtIV = \relative c {
 	
 	
 % Bars 621 to 625
-	<< a2:\f\< {s8 s s s\!}>>
+	<< a2:\f\< {s8 s s s}>>
 	d2:\ff
 	d:
 	d:

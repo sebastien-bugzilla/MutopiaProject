@@ -316,7 +316,7 @@ musicCornoIIIMvtIV = \relative c {
 	aes4-.\f r
 % Bars 351 to 355
 	g-. r
-	c2\ff~
+	c2-\tweak X-offset 0 \ff~
 	c
 	c\fz
 	c4..\fz c16
@@ -325,7 +325,7 @@ musicCornoIIIMvtIV = \relative c {
 	c
 	b\ff~
 	b
-	b\fz
+	b-\tweak X-offset 0 \fz
 % Bars 361 to 365
 	b4..\fz b16
 	b2\fz~
@@ -349,7 +349,7 @@ musicCornoIIIMvtIV = \relative c {
 	e \partCombineAutomatic
 	e~
 	e \mark \default
-	a2->\ff
+	\aIIXoffset #-3.5 a2->\ff
 % Bars 381 to 385
 	a->
 	a4.-> gis8->
@@ -566,7 +566,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 591 to 595
 	fis4\f r
 	R2
-	ais(\fz
+	\aIIXoffset #-4 ais(\fz
 	b4) r
 	ais2\brack\fz(
 % Bars 596 to 600
@@ -601,7 +601,7 @@ musicCornoIIIMvtIV = \relative c {
 	b->
 % Bars 621 to 625
 	b2->
-	cis2->\ff~
+	cis2->-\tweak X-offset 0 \ff~
 	cis
 	b->~
 	b

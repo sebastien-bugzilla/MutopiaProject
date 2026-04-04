@@ -72,12 +72,12 @@ musicFagottoIMvtIV = \relative c {
 	c2~
 	c
 	c4-. c-.
-	\partCombineApart c'2(
+	\partCombineApart \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur c'2(
 	ees~
 % Bars 56 to 60
 	ees
 	<< d) {s4 s_\pocoapococresc}>>
-	c2(
+	\shape #'(()((0 . -0.8)(0 . -0.5)(0 . 0)(0 . 0))) Slur c2(
 	ees~
 	ees
 % Bars 61 to 65
@@ -99,7 +99,7 @@ musicFagottoIMvtIV = \relative c {
 	c2\fz
 	des4-. c-.
 % Bars 76 to 80
-	<< des2\fz\> {s8 s s s\!}>>
+	<< des2-\tweak X-offset 0 \fz\> {s8 s s s\!}>>
 	c4-.\mp des-._\dimmarkup
 	c-. r
 	des-. c-.
@@ -249,7 +249,7 @@ musicFagottoIMvtIV = \relative c {
 	g4\! r
 	g2\fz\>~
 	g4\! r
-	a2\fz\>~_\crescmarkup
+	a2\fz\>~-\offset X-offset 2.5 _\crescmarkup
 	a4\! r
 % Bars 236 to 240
 	a2\fz\>~
@@ -304,7 +304,7 @@ musicFagottoIMvtIV = \relative c {
 	f~
 	f~
 	f
-	ees'4->_\brackM\marcatissimo ees->
+	\aIIXoffset #-4 ees'4->_\brackM\marcatissimo ees->
 % Bars 281 to 285
 	ees8. d16 ees4->
 	c8. b16 c4->
@@ -314,7 +314,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 286 to 290
 	f~
 	f
-	ees'4->_\brackM\marcatissimo ees->
+	\aIIXoffset #-4 ees'4->_\brackM\marcatissimo ees->
 	ees8. d16 ees4->
 	c8. b16 c4->
 % Bars 291 to 295
@@ -324,7 +324,7 @@ musicFagottoIMvtIV = \relative c {
 	c~
 	c
 % Bars 296 to 300
-	e'4->\ff e->
+	\aIIXoffset #-4 e'4->\ff e->
 	e8. dis16 e4->
 	c8. b16 c4->
 	a8. gis16 a4->
@@ -611,7 +611,7 @@ musicFagottoIMvtIV = \relative c {
 	cis
 % Bars 556 to 560
 	cis \partCombineAutomatic \mark \default
-	a8.-.\f gis16 a4->
+	\aIIXoffset #-4 a8.-.\f gis16 a4->
 	a8.-. gis16 a4->
 	a8.-. gis16 a4->\<
 	a-> a->\! \section
@@ -670,11 +670,11 @@ musicFagottoIMvtIV = \relative c {
 	cis4\! r \markk
 	d2(\ff\<~
 % Bars 606 to 610
-	d8[ cis] \tuplet 3/2 4 {d e fis)\!}
+	d8[ cis] \once \tupletUp \tuplet 3/2 4 {d e fis)\!}
 	fis2\fz~
 	fis4 e->
 	d2->(~
-	d8\<[ cis] \tuplet 3/2 4 {d e fis)\!}
+	d8\<[ cis] \once \tupletUp \tuplet 3/2 4 {d e fis)\!}
 % Bars 611 to 615
 	fis2\fz~
 	fis4 e->

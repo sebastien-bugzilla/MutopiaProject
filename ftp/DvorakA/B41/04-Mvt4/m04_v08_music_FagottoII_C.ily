@@ -99,7 +99,7 @@ musicFagottoIIMvtIV = \relative c {
 	c2\fz
 	g4-. c-.
 % Bars 76 to 80
-	<< g2\fz\> {s8 s s s\!}>>
+	<< g2-\tweak X-offset 0 \fz\> {s8 s s s\!}>>
 	c4-.\mp bes-.
 	c-. r
 	bes-. c-.
@@ -207,8 +207,8 @@ musicFagottoIIMvtIV = \relative c {
 	
 	
 	d,2\pp~
-	<< d~\< {s8 s s s\!}>>
-	<< d2~ {s8 s\> s s}>>
+	<< \hairpinShorten #'(0 . -2) d~\< {s8 s s s\!}>>
+	<< d2~ {s8 s s\> s}>>
 % Bars 201 to 205
 	<< d2 {s8 s s s\!}>>
 	d2\p~
@@ -220,10 +220,10 @@ musicFagottoIIMvtIV = \relative c {
 	<< a {s4 s\!}>>
 	b2(\p\<
 	<< a) {s4 s\!}>>
-	g2~\brack\fz\>
+	<< g2~\brack\fz {s4 s\>}>>
 % Bars 211 to 215
-	<< g {s4 s\!}>>
-	b2\brack\p\<(
+	<< g2 {s4 s\!}>>
+	\hairpinShorten #'(0 . -2) b2\brack\p\<(
 	<< a) {s8 s s s\!}>>
 	fis2(\brack\fz\>
 	<< g) {s4 s\!}>>

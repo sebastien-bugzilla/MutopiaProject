@@ -403,8 +403,8 @@ musicViolinoIIMvtIV = \relative c {
 		f2~
 		f
 	} \\ {
-		f(
-		des)
+		f(\<
+		<< des) {s4 s\!}>>
 	}>>
 	e!2(\fz\startTrillSpan
 	f4.)\stopTrillSpan r8

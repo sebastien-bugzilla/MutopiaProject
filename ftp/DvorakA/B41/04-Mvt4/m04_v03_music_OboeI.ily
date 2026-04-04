@@ -76,7 +76,7 @@ musicOboeIMvtIV = \relative c {
 	g8\> f d bes)\!
 	b8.(\< c16 g'4~
 	g8 f d bes!)\!
-	b8.(\< c16\! g'4~
+	b8.(\< c16 g'4~\!
 	g8\f f d bes!-\dimmarkup
 % Bars 66 to 70
 	e d bes f
@@ -459,7 +459,7 @@ musicOboeIMvtIV = \relative c {
 	a4-. a-.
 	a8.( g16 bes4\<~
 	bes8. a16 d4\!~
-	d8\> c bes g)\!
+	d8 c\> bes g)\!
 % Bars 441 to 445
 	c4-._\crescpocoapoco c-.
 	c8.( b16 d4~

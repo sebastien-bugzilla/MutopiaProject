@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.25.80"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperConductors.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -22,9 +22,10 @@
 \include "./00-Common/DvorakSymph4_NameStaff.ily"
 \include "./00-Common/DvorakSymph4_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
+%\include "./00-Common/DvorakSymph4_Format_temp.ily"
 \include "./00-Common/DvorakSymph4_Format_Cond_Mvt04.ily"
-\include "./04-Mvt4/m04_v01_music_FlautoI.ily"
-\include "./04-Mvt4/m04_v02_music_FlautoII.ily"
+\include "./04-Mvt4/m04_v01_music_FlautoI_C.ily"
+\include "./04-Mvt4/m04_v02_music_FlautoII_C.ily"
 \include "./04-Mvt4/m04_v03_music_OboeI_C.ily"
 \include "./04-Mvt4/m04_v04_music_OboeII_C.ily"
 \include "./04-Mvt4/m04_v05_music_ClarinettoI_C.ily"
@@ -37,15 +38,15 @@
 \include "./04-Mvt4/m04_v12_music_CornoIV_C.ily"
 \include "./04-Mvt4/m04_v13_music_TrombeI_C.ily"
 \include "./04-Mvt4/m04_v14_music_TrombeII_C.ily"
-\include "./04-Mvt4/m04_v15_music_TrombonoI.ily"
-\include "./04-Mvt4/m04_v16_music_TrombonoII.ily"
-\include "./04-Mvt4/m04_v17_music_TrombonoIII.ily"
-\include "./04-Mvt4/m04_v18_music_Timpani.ily"
-\include "./04-Mvt4/m04_v24_music_ViolinoI.ily"
-\include "./04-Mvt4/m04_v25_music_ViolinoII.ily"
-\include "./04-Mvt4/m04_v26_music_Viola.ily"
-\include "./04-Mvt4/m04_v27_music_Violoncello.ily"
-\include "./04-Mvt4/m04_v28_music_Contrabasso.ily"
+\include "./04-Mvt4/m04_v15_music_TrombonoI_C.ily"
+\include "./04-Mvt4/m04_v16_music_TrombonoII_C.ily"
+\include "./04-Mvt4/m04_v17_music_TrombonoIII_C.ily"
+\include "./04-Mvt4/m04_v18_music_Timpani_C.ily"
+\include "./04-Mvt4/m04_v24_music_ViolinoI_C.ily"
+\include "./04-Mvt4/m04_v25_music_ViolinoII_C.ily"
+\include "./04-Mvt4/m04_v26_music_Viola_C.ily"
+\include "./04-Mvt4/m04_v27_music_Violoncello_C.ily"
+\include "./04-Mvt4/m04_v28_music_Contrabasso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -70,9 +71,12 @@
 				\new GrandStaff \with { \nameGrandStaffIMvtIV 
 					\consists Keep_alive_together_engraver } <<
 					\new Staff <<
-%						\new Voice {
-%							\formatConductorMvtIV
-%						}
+						\new Voice {
+							\displayFilterVoice
+						}
+						\new Voice {
+							\formatConductorMvtIV
+						}
 						\new Voice {
 							\tempiMvtIV
 						}
@@ -159,7 +163,7 @@
 			breakbefore = ##t
 		}
 		\layout {
-			system-count = 80
+%			system-count = 80
 		}
 	}
 }

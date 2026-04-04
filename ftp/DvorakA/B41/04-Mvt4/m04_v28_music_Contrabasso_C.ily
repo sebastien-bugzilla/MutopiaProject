@@ -118,7 +118,7 @@ musicContrabassoMvtIV = \relative c {
 	r bes
 % Bars 91 to 95
 	r bes\<
-	r\!^\pocoapococresc b
+	r\!_\pocoapococresc b
 	r b
 	r d
 	r d
@@ -137,7 +137,7 @@ musicContrabassoMvtIV = \relative c {
 % Bars 106 to 110
 	R2*2
 	\mark \default
-	\subdiviseBeam \tuplet 3/2 4 {d8(->_\fflegato e fis bes,-> cis d)
+	\subdiviseBeam \tuplet 3/2 4 {\once \tupletUp d8(->_\fflegato e fis bes,-> cis d)
 	a->( b cis a b cis)
 	bes!->( c! d bes-> c d)
 % Bars 111 to 115
@@ -217,7 +217,7 @@ musicContrabassoMvtIV = \relative c {
 	d4-.~ d-.\!
 	<< d2 {s4 s\<}>>
 	d4-.~ d-.
-	e2\!
+	<< e2 {s8 s s s\!}>>
 	g,4-.~ g-.
 % Bars 206 to 210
 	a2_\dimmarkup
@@ -235,7 +235,7 @@ musicContrabassoMvtIV = \relative c {
 	b2_\crescmarkup
 	b4-.~\< b-.\!
 	a2\mf
-	d4-.~\< d-.\!
+	\hairpinShorten #'(0 . -3) d4-.~\< d-.\!
 	g,2~
 % Bars 221 to 225
 	g4\> b-.\!
@@ -248,7 +248,7 @@ musicContrabassoMvtIV = \relative c {
 	d4-.~ d-.\!
 	g,2\f~
 	g4 r
-	g2\fz\>_\crescmarkup~
+	g2\fz\>-\offset X-offset 2.5 _\crescmarkup~
 % Bars 231 to 235
 	g4\! r
 	g2\fz\>~
@@ -370,7 +370,7 @@ musicContrabassoMvtIV = \relative c {
 	aes
 	aes\<~
 % Bars 331 to 335
-	<< aes {s4 s\!}>>
+	<< aes {s4 s8 s\!}>>
 	bes2\fp~
 	bes
 	<< bes~ {s4 s_\dimmarkup}>>
@@ -384,7 +384,7 @@ musicContrabassoMvtIV = \relative c {
 % Bars 341 to 345
 	des
 	bes2(\<
-	g)\!
+	<< g) {s4 s\!}>> 
 	c2(\fz
 	des4.) r8
 % Bars 346 to 350
@@ -416,7 +416,7 @@ musicContrabassoMvtIV = \relative c {
 % Bars 371 to 375
 	
 	a4-.\p a-.
-	a8.-. a16-. a4-.\<
+	a8.-. a16-. \hairpinShorten #'(0 . -4) a4-.\<
 	a-. a-.\!
 	a8.-. a16-. a4-.
 % Bars 376 to 380
@@ -453,7 +453,7 @@ musicContrabassoMvtIV = \relative c {
 	fis-> r
 	g-> g->
 	fis2:16
-	<< fis: {s8 s\> s s\!}>>
+	<< fis: {s8 \hairpinShorten #'(0 . -2) s\> s s\!}>>
 	fis2:_\dimmarkup
 % Bars 406 to 410
 	fis:
@@ -696,11 +696,11 @@ musicContrabassoMvtIV = \relative c {
 	cis4.-> r8\! \markk
 	d2(~\ff\<
 % Bars 606 to 610
-	d8[ cis] \tuplet 3/2 4 {d e fis)\!}
+	d8[ cis] \once \tupletUp \tuplet 3/2 4 {d e fis)\!}
 	fis2\fz-^~
 	fis4 e-^
 	d2(~\<
-	d8[ cis] \tuplet 3/2 4 {d e fis)\!}
+	d8[ cis] \once \tupletUp \tuplet 3/2 4 {d e fis)\!}
 % Bars 611 to 615
 	fis2\fz-^~
 	fis4 e-^

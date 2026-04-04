@@ -43,7 +43,7 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	
 	
-	aes,4-._\pstaccato aes-.
+	\markEO #'(0 . 8) aes,4-._\pstaccato aes-.
 % Bars 31 to 35
 	aes-. r
 	aes-. aes-.
@@ -63,7 +63,7 @@ musicClarinettoIIMvtIV = \relative c {
 	R2
 	f4-.\mf\> ees-.\!
 % Bars 46 to 50
-	c-.\p c-.
+	c-.-\offset X-offset 0.5 \p c-.
 	des-. r
 	R2
 	des4-. des-.
@@ -72,7 +72,7 @@ musicClarinettoIIMvtIV = \relative c {
 	des-. r
 	R2
 	des4-. des-.
-	aes'2(
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur aes'2(
 	ges~
 % Bars 56 to 60
 	ges
@@ -99,7 +99,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ees2\fz
 	fes4-. ees-.
 % Bars 76 to 80
-	<< fes2\fz\> {s8 s s s\!}>>
+	<< fes2-\offset X-offset 0.5 \fz\> {s8 s s s\!}>>
 	ees4-.\mp fes-.
 	ees-. r
 	fes4-. ees-.
@@ -108,7 +108,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ees-. fes-.
 	ees-. r
 	fes4-. ees-.
-	aes,2\pp~
+	aes,2-\tweak X-offset -3.5 \pp~
 	aes~
 % Bars 86 to 90
 	aes~
@@ -245,12 +245,12 @@ musicClarinettoIIMvtIV = \relative c {
 	g\fz~
 % Bars 271 to 275
 	g
-	a\fz~
+	a-\tweak X-offset 0 \fz~
 	a
-	b\fz
+	b-\tweak X-offset 0 \fz
 	d\fz
 % Bars 276 to 280
-	ees\ff~
+	ees-\tweak X-offset -1 \ff~
 	ees~
 	ees~
 	ees
@@ -326,17 +326,17 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 346 to 350
 	aes!4(\fz a
 	bes4.) r8
-	bes4(\fz\< ces~
+	bes4(-\tweak X-offset 0 \fz\< ces~
 	ces4.)\! r8
 	R2*2
 % Bars 351 to 355
 	
 	e2~\ff
 	e
-	e\fz
-	e4..\fz e16
+	e-\tweak X-offset 0 \fz
+	e4..-\tweak X-offset 0 \fz e16
 % Bars 356 to 360
-	e2\fz~
+	e2-\tweak X-offset 0 \fz~
 	e
 	e\ff~
 	e
@@ -400,7 +400,7 @@ musicClarinettoIIMvtIV = \relative c {
 	
 % Bars 416 to 420
 	
-	aes,4-.\pp aes-.
+	aes,4-.-\offset X-offset -2.5 \pp aes-.
 	aes-. r
 	aes-. aes-.
 	g-. r
@@ -455,8 +455,8 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 461 to 465
 	ees2->
 	fes4-. ees-.
-	<< fes2->\> {s4 s\!}>>
-	ees4-.\p fes-.
+	<< \hairpinShorten #'(1.5 . 0) fes2->\> {s4 s8 s\!}>>
+	ees4-.-\offset X-offset 1 \p fes-.
 	ees-. r
 % Bars 466 to 470
 	fes-. ees-.
@@ -465,7 +465,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ees-. r
 	fes-. ees-.\!
 % Bars 471 to 475
-	aes,2\pp~
+	aes,2-\tweak X-offset 0 \pp~
 	aes~
 	aes~
 	aes~
@@ -531,7 +531,7 @@ musicClarinettoIIMvtIV = \relative c {
 	d-> d---.
 	d-.-- d-.--
 	b-.-- b-.--
-	b2\p~
+	b2-\tweak X-offset 0.5 \p~
 	b~
 % Bars 531 to 535
 	b~
@@ -637,7 +637,7 @@ musicClarinettoIIMvtIV = \relative c {
 	e
 	f4-. r
 % Bars 631 to 635
-	a,2-^\ff
+	\dynEO #'(-2.3 . 1) a,2-^\ff
 	c-^
 	ees4-.-^ r
 	R2*5

@@ -455,7 +455,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 461 to 465
 	ees2->
 	fes4-. ees-.
-	<< fes2->\> {s4 s\!}>>
+	<< fes2->\> {s4 s8 s\!}>>
 	ees4-.\p fes-._\dimmarkup
 	ees-. r
 % Bars 466 to 470
