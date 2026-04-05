@@ -71,7 +71,7 @@ musicOboeIMvtII = \relative c {
 	\omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~ \omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~
 	\omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~ \omitBeam \beamOffset #'(-2 . -2) g g8~ g aes aes16~
 % Bars 66 to 70
-	\omitBeam \beamOffset #'(-2 . -2) aes g8 g g g16~ \omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~
+	\omitBeam \beamOffset #'(-2 . -2) aes g8 g g g16~ \omitBeam \beamOffset #'(-2 . -2) g_\crescmarkup g8 g g g16~
 	\omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~ \omitBeam g f8 f f f16
 	\stemUp \shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . 0)) Slur f2( << ees { s4-\tweak extra-offset #'(2.5 . -2.7) \> s\!}>>
 	c4) \partCombineAutomatic r r2 

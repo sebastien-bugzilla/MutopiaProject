@@ -483,6 +483,44 @@ markXoffset = #(define-music-function
 	#}
 )
 
+InCueContext = {
+	\override Beam.beam-thickness = #0.30 % 0.30
+	\override StemTremolo.beam-thickness = #0.35 % 0.30
+	\override Beam.length-fraction = #0.67 % 0.8
+	\override Stem.length-fraction = #0.8 % 0.8
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\set fontSize = #-3 %-3
+	\override NoteHead.color = #darkgreen
+	\override Stem.color = #darkgreen
+	\override Beam.color = #darkgreen
+	\override TextScript.color = #darkgreen
+	\override DynamicText.color = #darkgreen
+	\override Slur.color = #darkgreen
+	\override Tie.color = #darkgreen
+	\override Script.color = #darkgreen
+	\override Accidental.color = #darkgreen
+	\override Hairpin.color = #darkgreen
+	\override Rest.color = #darkgreen
+}
+
+OutCueContext = {
+	\revert Beam.beam-thickness
+	\revert StemTremolo.beam-thickness
+	\revert Beam.length-fraction
+	\revert Stem.length-fraction
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\unset fontSize
+}
+
+no = {
+	\undo \omit MultiMeasureRestNumber
+}
+
+ni = {
+	\omit MultiMeasureRestNumber
+}
 
 
 
@@ -559,26 +597,6 @@ markXoffset = #(define-music-function
 %	#}
 %)
 
-%InCueContext = {
-%	\override Beam.beam-thickness = #0.30 % 0.30
-%	\override StemTremolo.beam-thickness = #0.35 % 0.30
-%	\override Beam.length-fraction = #0.67 % 0.8
-%	\override Stem.length-fraction = #0.8 % 0.8
-%%	\override Stem.length = #7
-%%	\override Beam.length = #7
-%	\set fontSize = #-3 %-3
-%}
-
-%OutCueContext = {
-%	\revert Beam.beam-thickness
-%	\revert StemTremolo.beam-thickness
-%	\revert Beam.length-fraction
-%	\revert Stem.length-fraction
-%%	\override Stem.length = #7
-%%	\override Beam.length = #7
-%	\unset fontSize
-%}
-
 %liriii = {
 %	\set stemLeftBeamCount = #1
 %	\set stemRightBeamCount = #3
@@ -637,15 +655,6 @@ markXoffset = #(define-music-function
 %		\once \override Score.RehearsalMark.Y-offset = #offset
 %	#}
 %)
-
-%no = {
-%	\undo \omit MultiMeasureRestNumber
-%}
-
-
-%ni = {
-%	\omit MultiMeasureRestNumber
-%}
 
 %ottavaShorten = #(define-music-function
 %	(value)

@@ -19,7 +19,7 @@ musicFlautoIMvtIII = \relative c {
 	f4\f r r r2 r4
 	f4 r r r2 r4
 	f4\p r r r2 r4
-	R1.*46
+	R1.*42
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -38,10 +38,10 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 51 to 55
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 56 to 60
 	a4\f r r r2 r4
 	R1.*2
@@ -135,7 +135,7 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 	R1.\fermata \section \sectionLabel "TRIO"
-	\key c \major \time 2/4 R2*16
+	\key c \major \time 2/4 R2*15
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -145,7 +145,7 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 	
-	\mark \default %%%%%%%%%%%%%%%%%%%%%%%%%%
+	\ni \mmrPos #-4 R2 \no \mark \default
 % Bars 156 to 160
 	e,4_\mffz\startTrillSpan~ e8\stopTrillSpan r
 	e4~\fz\startTrillSpan e8\stopTrillSpan r
@@ -259,7 +259,7 @@ musicFlautoIMvtIII = \relative c {
 	f4\f r r r2 r4
 	f4 r r r2 r4
 	f\p r r r2 r4
-	R1.*46
+	R1.*42
 % Bars 276 to 280
 	
 % Bars 281 to 285
@@ -278,10 +278,10 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 321 to 325
 	a4\f r r r2 r4
 	R1.*2
@@ -322,7 +322,7 @@ musicFlautoIMvtIII = \relative c {
 	b4-> d->
 	cis-> b->
 	a-> r
-	R2*28
+	R2*25
 % Bars 356 to 360
 	
 % Bars 361 to 365
@@ -333,8 +333,12 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 376 to 380
 	
-% Bars 381 to 385
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 381 to 385
+	\mmrPos #-4 R \no
 	d4->\f\< a->\!
 	f'8\fz r r4
 	R2*3

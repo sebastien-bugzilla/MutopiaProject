@@ -57,3 +57,11 @@ correctionsMvtIV = \markup {
 	% bar 634, violin II
 	"Bar 634 (633), for violin II, last three notes cis d e are replace by d e fis based on all other strings."
 }
+%###############################################################################
+%#                        C O R R E C T I O N   P A R T S                      #
+%###############################################################################
+correctionsFlauti = \markup {
+	
+	% bar 19, Flauti I
+	"Bar 19 for Flauti I, in cue voice, bes on the second beat, is replaced by c."
+}

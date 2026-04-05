@@ -46,7 +46,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	
 	\mark \default
-	R2*39
+	R2*35
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -61,9 +61,13 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 101 to 105
 	
-% Bars 106 to 110
 	
-	\mark \default
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 106 to 110
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	f''4-.\ff g-.
 	a-. r
 	f4-. g-.
@@ -102,7 +106,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 156 to 160
 	
 	\section \mark \default
-	\key d \major R2*84
+	\key d \major R2*80
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -135,8 +139,12 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 236 to 240
 	
-% Bars 241 to 245
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 241 to 245
+	\mmrPos #-4 R \no
 	ais2\ff~
 	ais~
 	ais8 r r4
@@ -218,17 +226,25 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 326 to 330
 	
 	\section
-	\key d \minor R2*24
+	\key d \minor R2*16
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 346 to 350
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 351 to 355
-	
+	\mmrPos #-4 R \no
 	des2\ff~
 	des~
 	des4 r
@@ -279,7 +295,7 @@ musicFlautoIIMvtIV = \relative c {
 	b8. ais16 cis4->
 	b-> b->
 	b8. ais16 fis4->
-	R2*52
+	R2*47
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -299,11 +315,11 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 446 to 450
 	
 % Bars 451 to 455
-	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 456 to 460
 	R2*35
 % Bars 461 to 465
@@ -323,11 +339,15 @@ musicFlautoIIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 491 to 495
-	R2*8
+	R2*4
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 496 to 500
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
 	fis2_\brackfffz~
 	fis
 % Bars 501 to 505
@@ -378,10 +398,10 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 556 to 560
 	\mark \default
-	R2*4
-	
-	
-	\section
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 % Bars 561 to 565
 	\key d \major a'2(~\ff\<_\moltoespr
 	a8[ b] \tuplet 3/2 4 {cis d e)\!}

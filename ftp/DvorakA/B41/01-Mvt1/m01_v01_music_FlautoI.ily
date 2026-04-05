@@ -10,7 +10,7 @@ musicFlautoIMvtI = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*19
+		R2.*17
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -18,8 +18,8 @@ musicFlautoIMvtI = \relative c {
 % Bars 16 to 20
 		
 		
-		
-		
+		\ni R2.
+		R \no
 		e'''2\ff~ e8 e,-.
 % Bars 21 to 25
 		e8.-> a16 a8 r a8.-> cis16

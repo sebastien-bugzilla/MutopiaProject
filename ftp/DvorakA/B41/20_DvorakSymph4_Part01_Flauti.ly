@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.25.80"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -46,14 +46,14 @@
 			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41)"
 		}
 		instrument = \markup {
-			"Flauti"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtI
-			}
+%			\new Voice {
+%				\formatFlautoIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtI
 			}
@@ -65,7 +65,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtII
-			}
+%			\new Voice {
+%				\formatFlautoIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtII
 			}
@@ -99,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtIII
-			}
+%			\new Voice {
+%				\formatFlautoIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtIII
 			}
@@ -123,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtIV
-			}
+%			\new Voice {
+%				\formatFlautoIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtIV
 			}
@@ -147,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtI
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtI
 			}
@@ -161,7 +161,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -171,9 +171,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtII
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtII
 			}
@@ -195,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtIII
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtIII
 			}
@@ -219,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtIV
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(flautoII) \tempiPartMvtIV
 			}

@@ -27,15 +27,19 @@ musicFlautoIIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1*17
+	R1*14
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 51 to 55
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	bes''16_\ppbracklegato f'8  f f f16~ f f8 f f f16~
 	f bes8 bes\< g g16~ g g8 g\> g g16~\!
 	g c8\p c bes bes16~ bes bes8 bes bes bes16~
@@ -112,11 +116,11 @@ musicFlautoIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 121 to 125
-	R1*4
+	R1*2
 	
-	
-	
-	r2 r4 << a~\p\< {s16 s s s\!}>>
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
+	\voiceTwo r2 r4 \oneVoice << a~\p\< {s16 s s s\!}>>
 % Bars 126 to 130
 	<< a1\crescD\< {s4 s s s\!}>>
 	bes2(\f << f2\>) {s8 s s_\dimmarkup s16 s\!}>>

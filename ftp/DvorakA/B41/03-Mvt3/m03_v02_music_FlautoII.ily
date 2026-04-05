@@ -19,7 +19,7 @@ musicFlautoIIMvtIII = \relative c {
 	des4\f r r r2 r4
 	des4 r r r2 r4
 	des4\p r r r2 r4
-	R1.*46
+	R1.*42
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -38,10 +38,10 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 51 to 55
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 56 to 60
 	cis4\f r r r2 r4
 	R1.*2
@@ -135,7 +135,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	R1.\fermata \section \sectionLabel "TRIO"
-	\key c \major \time 2/4 R2*16
+	\key c \major \time 2/4 R2*15
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -145,7 +145,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	\mark \default
+	\ni \mmrPos #-4 R2 \no \mark \default
 % Bars 156 to 160
 	e,4_\mffz\startTrillSpan~ e8\stopTrillSpan r
 	e4~\fz\startTrillSpan e8\stopTrillSpan r
@@ -229,7 +229,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 226 to 230
 	c-^ r
 	b8-. r r4
-	R2*38
+	R2*36
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -246,8 +246,8 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	
-	\section
+	\ni \mmrPos #-4 R2 
+	\mmrPos #-4 R \no \section
 % Bars 266 to 270
 	\time 6/4 \key d \minor cis4\ff r r r2 r4
 	R1.*2
@@ -259,7 +259,7 @@ musicFlautoIIMvtIII = \relative c {
 	des4\f r r r2 r4
 	des4 r r r2 r4
 	des\p r r r2 r4
-	R1.*46
+	R1.*42
 % Bars 276 to 280
 	
 % Bars 281 to 285
@@ -278,10 +278,10 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 321 to 325
 	cis4\f r r r2 r4
 	R1.*2
@@ -335,8 +335,8 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 381 to 385
 	
-	R2*2
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	R2*3
 	
 % Bars 386 to 388

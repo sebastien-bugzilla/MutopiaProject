@@ -5,28 +5,233 @@
 %#                   C U E   V O I C E   F O R   F L A U T I                   #
 %###############################################################################
 cueVoiceFlautoIMvtI = \relative c {
-	
+	s2.*17
+	% bars 18 - 19
+	\voiceOne r4^\markup {Viol.} f''-> g->
+	a-> c-> d-> \oneVoice
 }
 cueVoiceFlautoIMvtII = \relative c {
-	
+	s1*34
+	% bars 35 - 37
+	\voiceOne \clef bass bes'4(^\markup {Vclo} a aes) r8 aes(
+	des4 c2) \tuplet 3/2 4 {bes8( c des}
+	c4) \clef treble s s2 \oneVoice
+	s1*33
+	% bar 71
+	<>^\markup {Ob.I}
+	s1*7
+	% bar 78
+	<>^\markup {Archi}
+	s1*16 s2*1
+	% bar 95
+	<>^\markup {Vclo}
+	s1*19
+	% bar 114
+	<>^\markup {Oboe.I}
+	s1*9
+	% bars 123 - 125
+	\voiceOne bes''4(^\markup {Cl.I.} a aes) r8 aes
+	g4( ges2 \tuplet 3/2 4 {ees8 f ges}
+	f) r r4 r s \oneVoice
 }
 cueVoiceFlautoIMvtIII = \relative c {
-	
+	s1.*51
+	% bars 52 - 55
+	\voiceOne bes''!1.->~\fz^\markup {Ob.}
+	bes2 c4->_\crescmarkup d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
+	s1.*84 s2*15
+	% bar 155
+	\voiceOne r4 \tuplet 6/4 4 {r16^\markup {Ob.} g(\< a b c d)\!} \oneVoice
+	s2*110 s1.*51
+	% bars 317 - 320
+	\voiceOne bes1.->\fz~^\markup {Ob.I.}
+	bes2 c4->_\crescmarkup d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
+	s1.*20 s2*38
+	% bars 379 - 381
+	\voiceOne d'4->^\markup {Ob.I.} a'->
+	g-> f->
+	a-> f-> \oneVoice
 }
 cueVoiceFlautoIMvtIV = \relative c {
-	
+	s2*29
+	% bar 30
+	<>^\markup {Fag.Vla}
+	s2*70
+	% bars 100 - 107
+	\voiceOne e''8.(\mf^\markup {\column {\lower #1.5 "Ob.I." "Viol."}} d16 cis4~\<
+	cis8 e g bes!)\!
+	e,8.( d16\< cis4~
+	cis8 e g bes)\!
+	cis,(->_\fcresc e g bes)
+	e,(\< g bes cis)
+	g( a bes e)
+	a,( cis e a)\! \oneVoice
+	s2*50
+	% bar 158
+	<>^\markup {Archi}
+	s2*36
+	% bars 194 - 197
+	\oneVoice gis,,,8(\p^\markup {Viol.I.} a cis a
+	e' cis g'! e) 
+	\voiceOne dis(\< e g cis
+	e[ g b) r16 a-.]\! \oneVoice
+	s2*130
+	% bar 328
+	<>^\markup {Archi}
+	s2*16
+	% bars 344 - 351
+	\voiceOne \subdiviseBeam aes,2(~\fz^\markup {Viol.I.}
+	aes8 bes c16\< des ees f)\!
+	bes,2(~\fz\trill
+	bes8 c d!16\< ees f g)\!
+	\flattrill c,2(~\fz\<\startTrillSpan
+	c8\stopTrillSpan des e!16 f  g aes)\!
+	ees8(\f f \tuplet 3/2 4 {g aes bes)}
+	f( g \tuplet 3/2 4 {aes bes c)} \oneVoice
+	s2*104
+	% bar 456
+	<>^\markup {Ob.Cl.Viol.}
+	s2*39
+	% bars 495 - 498
+	\voiceOne fis,8.->\ff^\markup {Viol.I.} e16 d4-.--
+	d8.-> cis16 b4-.--
+	b2->
+	fis-> \oneVoice
+	s2*58
+	% bars 557 - 560
+	\voiceOne a'8.^\markup {Tutti} gis16 a4->
+	a8. gis16 a4->
+	a8. gis16 a4->
+	a-> a-> \oneVoice
 }
 cueVoiceFlautoIIMvtI = \relative c {
-	
+	s2.*17
+	% bars 18 - 19
+	\voiceOne r4^\markup {Viol.} f''-> g->
+	a-> c-> d-> \oneVoice
+	s2.*65
+	% bars 85 - 86
+	\voiceOne c8(^\markup {Fl.I.} ees d c a c)
+	d4-. r r \oneVoice
 }
 cueVoiceFlautoIIMvtII = \relative c {
-	
+	s1*17
+	% bar 18
+	<>^\markup {Ob.}
+	s1*17
+	% bar 35
+	<>^\markup {Viol.}
+	s1*14
+	% bars 49 - 51
+	\voiceOne \clef bass ees'4(^\markup {Vcl.} g) f8( ees d c)
+	bes4( d2 \tuplet 3/2 4 {c8 d a)}
+	c2.(~ c8 bes) \clef treble \oneVoice
+	s1*19
+	% bar 71
+	<>^\markup {Ob.I}
+	s1*23 s2*1 s1*19
+	% bar 114
+	<>^\markup {Ob.I}
+	s1*9
+	% bars 123 - 125
+	\voiceOne bes''4(^\markup {Cl.I.} a aes) r8 aes
+	g4( ges2 \tuplet 3/2 4 {ees8 f ges}
+	f) r r4 r s \oneVoice
 }
 cueVoiceFlautoIIMvtIII = \relative c {
-	
+	s1.*51
+	% bars 52 - 55
+	\voiceOne bes''!1.->~\fz^\markup {Ob.}
+	bes2 c4->_\crescmarkup d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
+	s1.*58
+	% bar 114
+	<>^\markup {Fl.I.}
+	s1.*26 s2*15
+	% bar 155
+	\voiceOne r4 \tuplet 6/4 4 {r16^\markup {Ob.} g(\< a b c d)\!} \oneVoice
+	s2*108
+	% bars 264 - 265
+	\voiceOne \tuplet 3/2 4 {e'8(^\markup {Viol.I.} f) d-. e( f) d-.
+	e( f) d-. g( aes) f-.}
+	s1.*51
+	% bars 317 - 320
+	\voiceOne bes,,!1.->\fz~^\markup {Ob.I.}
+	bes2 c4->_\crescmarkup d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
+	s1.*20 s2*41
+	% bars 382 - 383
+	\voiceOne d''4->^\markup {Fl.I.} a->
+	f'8-. r r4 \oneVoice
 }
 cueVoiceFlautoIIMvtIV = \relative c {
-	
+	s2*29
+	% bar 30
+	<>^\markup { \column { \lower #1.5 "Fag." "Vla"}}
+	s2*8
+	% bar 38
+	<>^\markup { \column { \lower #1.5 "Fl.I." "Ob.I." }}
+	s2*66
+	% bars 104 - 107
+	\voiceOne cis'8(-> e g bes)
+	e,( g bes cis)
+	g( a bes e)
+	a,( cis e a) \oneVoice
+	s2*50
+	% bar 158
+	<>^\markup {Archi}
+	s2*80
+	% bar 238 - 241
+	\voiceOne a8(^\markup {Fl.I.} g fis g)
+	d'( b a g)
+	e'( cis b a)
+	fis'( e d a) \oneVoice
+	s2*86
+	% bar 328
+	<>^\markup {Archi}
+	s2*16
+	% bars 344 - 351
+	\voiceOne \subdiviseBeam aes,2(~\fz^\markup {Viol.I.}
+	aes8 bes c16\< des ees f)\!
+	bes,2(~\fz\trill
+	bes8 c d!16\< ees f g)\!
+	\flattrill c,2(~\fz\<\startTrillSpan
+	c8\stopTrillSpan des e!16 f  g aes)\!
+	ees8(\f f \tuplet 3/2 4 {g aes bes)}
+	f( g \tuplet 3/2 4 {aes bes c)} \oneVoice
+	s2*65
+	% bar 417
+	<>^\markup {\column { \lower #1.5 "Fag." "Vla" } }
+	s2*8
+	% bar 425
+	<>^\markup {\column { \lower #1.5 "Fl.I.Ob.I" "Viol."}}
+	s2*26
+	% bar 451 - 455
+	\voiceOne \unSubdiviseBeam b8.(^\markup {Fl.I.} c16 g'4~
+	g8) f( d bes!
+	e d bes f
+	c' bes_\dimmarkup f d
+	g f d bes) \oneVoice
+	% bar 456
+	<>^\markup {\column {\lower #1.5 "Ob.Cl." "Viol."}}
+	s2*39
+	% bars 495 - 498
+	\voiceOne fis'8.->\ff^\markup {Viol.I.} e16 d4-.--
+	d8.-> cis16 b4-.--
+	b2->
+	fis-> \oneVoice
+	s2*58
+	% bars 557 - 560
+	\voiceOne a'8.^\markup {Tutti} gis16 a4->
+	a8. gis16 a4->
+	a8. gis16 a4->
+	a-> a-> \oneVoice
 }
 %###############################################################################
 %#                     C U E   V O I C E   F O R   O B O I                     #

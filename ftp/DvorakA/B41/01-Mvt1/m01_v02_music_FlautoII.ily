@@ -10,7 +10,7 @@ musicFlautoIIMvtI = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*19
+		R2.*17
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -18,8 +18,8 @@ musicFlautoIIMvtI = \relative c {
 % Bars 16 to 20
 		
 		
-		
-		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 		cis'''2\ff~ cis8 e,-.
 % Bars 21 to 25
 		e8.-> a16 a8 r a8.-> cis16
@@ -67,14 +67,18 @@ musicFlautoIIMvtI = \relative c {
 % Bars 66 to 70
 	
 % Bars 71 to 75
-		R2.*17
+		R2.*14
 % Bars 76 to 80
 		
 % Bars 81 to 85
 		
-% Bars 86 to 90
 		
-		\mark \default
+		
+		
+		\ni \mmrPos #-4 R2.
+% Bars 86 to 90
+		\mmrPos #-4 R \no
+		R \mark \default
 		bes'2.\f(
 		a)
 		bes(

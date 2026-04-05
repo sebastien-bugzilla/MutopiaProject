@@ -27,9 +27,9 @@ musicFlautoIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1*2
+	\ni \mmrPos #-4 R1
 % Bars 36 to 40
-	
+	\mmrPos #-4 R \no
 	r4 r8 bes''-.\p bes'4-> r
 	R1
 	r4 r8 c,-.\mp c'4-> r
@@ -124,11 +124,11 @@ musicFlautoIMvtII = \relative c {
 	
 	\mark \default
 % Bars 121 to 125
-	R1*4
+	R1*2
 	
-	
-	
-	r2 r4 \tuplet 3/2 4 {ees'8(\p\< f ges)\!}
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
+	\voiceTwo r2 r4 \oneVoice \tuplet 3/2 4 {ees'8(\p\< f ges)\!}
 % Bars 126 to 130
 	ges2(\crescD\< f4 ees)\!
 	<< des2.\f(~ {s4 s s\>}>> des8._\dimmarkup ces16)\!
