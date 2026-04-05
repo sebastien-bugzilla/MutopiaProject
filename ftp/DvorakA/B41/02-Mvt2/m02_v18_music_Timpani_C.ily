@@ -65,7 +65,7 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	bes8-^\ff bes-^ bes-^ r r2
-	bes8-^ bes-^ bes-^ r r2^\mutafines
+	bes8-^ bes-^ bes-^ r r2^\mutafines \changeStaffName \timpinbes
 	R1*4
 % Bars 91 to 95
 	
@@ -80,14 +80,14 @@ musicTimpaniMvtII = \relative c {
 	ees:
 	ees:
 % Bars 101 to 105
-	ees4 r r2^\mutaesindes
+	ees4 r r2^\mutaesindes \changeStaffName \timpinbdes
 	R1*6
 % Bars 106 to 110
 	
 	
 	des16\pp des des des  des4:16 des: des:
 	des: des: des: des:
-	des8 r r4^\mutadesinf r2
+	des8 r r4^\mutadesinf r2 \changeStaffName \timpinbf
 % Bars 111 to 115
 	R1\fermata
 	R1*2

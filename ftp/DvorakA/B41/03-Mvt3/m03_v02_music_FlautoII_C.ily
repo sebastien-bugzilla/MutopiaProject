@@ -125,9 +125,9 @@ musicFlautoIIMvtIII = \relative c {
 	c'1.\pp~
 	c~
 	c~
-	c4 r r r2 r4
+	c4 r r r2 r4^\mutainflautopiccoloii
 % Bars 126 to 130
-	R1.*13^\mutainflautopiccoloii
+	R1.*13
 % Bars 131 to 135
 	
 % Bars 136 to 140
@@ -179,8 +179,8 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 181 to 185
 	\dynEO #'(0.5 . 1) d4\brack\fz\startTrillSpan~ d8[\stopTrillSpan r16 cis-.]
 	d4-> f-> \mark \default
-	g8\fz r r4
-	R2*7^\mutainfliiigrande
+	g8\fz r r4^\mutainfliiigrande
+	R2*7
 	
 % Bars 186 to 190
 	

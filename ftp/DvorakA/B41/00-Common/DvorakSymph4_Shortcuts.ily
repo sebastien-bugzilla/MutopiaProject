@@ -184,7 +184,6 @@ semprestaccato = \markup {\italic "sempre staccato"}
 %--------------------
 % instrument modification
 %--------------------
-amutainh = \markup {"A muta in H"}
 mutafines = \markup {"muta F in Es"}
 mutaesindes = \markup {"muta Es in Des"}
 mutadesinf = \markup {"muta Des in F"}
@@ -194,6 +193,22 @@ mutainfliiigrande = \markup {"muta in Fl.I.II grande"}
 mutaainh = \markup {"muta A in H"}
 mutaincg = \markup {"muta in C, G"}
 mutainda = \markup {"muta in D, A"}
+
+timpinbes = \markup {
+	\center-column {
+		\lower #1 "Timp." "in B Es"
+	}
+}
+timpinbdes = \markup {
+	\center-column {
+		\lower #1 "Timp." "in B Des"
+	}
+}
+timpinbf = \markup {
+	\center-column {
+		\lower #1 "Timp." "in B F"
+	}
+}
 
 timpinhd = \markup {
 	\center-column {
@@ -210,6 +225,8 @@ timpinda = \markup {
 		\lower #1 "Timp." "in D A"
 	}
 }
+
+flpicc = \markup {Fl.picc.}
 
 markk = \mark #11
 
@@ -447,6 +464,14 @@ changeStaffName = #(define-music-function
 	(markup?)
 	#{
 		\set Staff.shortInstrumentName = #staffName
+	#}
+)
+
+changeGrandStaffName = #(define-music-function
+	(staffName)
+	(markup?)
+	#{
+		\set GrandStaff.shortInstrumentName = #staffName
 	#}
 )
 

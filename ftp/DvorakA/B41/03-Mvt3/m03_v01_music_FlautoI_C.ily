@@ -125,9 +125,9 @@ musicFlautoIMvtIII = \relative c {
 	fis1.\pp~
 	fis~
 	fis~
-	fis4 r r r2 r4
+	fis4 r r r2 r4^\mutainflautopiccoloi \changeGrandStaffName \flpicc
 % Bars 126 to 130
-	R1.*13^\mutainflautopiccoloi
+	R1.*13
 % Bars 131 to 135
 	
 % Bars 136 to 140
@@ -179,8 +179,8 @@ musicFlautoIMvtIII = \relative c {
 % Bars 181 to 185
 	\dynEO #'(0.5 . 2) f4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 	f4-> a-> \mark \default
-	g8\fz r r4
-	R2*7^\mutainfliiigrande
+	g8\fz r r4^\mutainfliiigrande \changeGrandStaffName "Fl."
+	R2*7
 	
 % Bars 186 to 190
 	

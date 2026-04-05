@@ -19,7 +19,10 @@ correctionsMvtI = \markup {
 	"Bar 125, for Viola, a missing "pizz." indication is added."
 	
 	% bar 351, Violin II
-	"Bar 351, For violin II, a missing hairpin is added."
+	"Bar 351, for violin II, a missing hairpin is added."
+	
+	% bar 310, timpani
+	"Bar 310, for timpani, the indication \"A muta in H\" has been removed because it appears to be erroneous and it does not feature in the part score."
 }
 correctionsMvtII = \markup {
 	

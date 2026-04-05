@@ -266,7 +266,7 @@ musicTimpaniMvtI = \relative c {
 	d2:16\ff d8 r
 	d2: d8 r
 	d2: d8 r
-	R2.*13^\amutainh
+	R2.*13
 % Bars 311 to 315
 	
 % Bars 316 to 320

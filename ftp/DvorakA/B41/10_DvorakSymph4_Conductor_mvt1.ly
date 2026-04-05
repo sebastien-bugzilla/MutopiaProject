@@ -74,9 +74,9 @@
 						\new Voice {
 							\formatConductorMvtI
 						}
-						\new Voice {
-							\displayFilterVoice
-						}
+%						\new Voice {
+%							\displayFilterVoice
+%						}
 						\new Voice {
 							\tempiMvtI
 						}

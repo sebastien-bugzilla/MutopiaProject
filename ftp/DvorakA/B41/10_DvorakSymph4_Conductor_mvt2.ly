@@ -73,9 +73,9 @@
 				\new GrandStaff \with { \nameGrandStaffIMvtII
 					\consists Keep_alive_together_engraver } <<
 					\new Staff <<
-						\new Voice {
-							\displayFilterVoice
-						}
+%						\new Voice {
+%							\displayFilterVoice
+%						}
 						\new Voice {
 							\formatConductorMvtII
 						}
