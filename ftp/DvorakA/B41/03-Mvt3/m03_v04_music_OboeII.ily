@@ -167,16 +167,16 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	R1.\fermata \section
-	\time 2/4 \key c \major R2*15
+	\time 2/4 \key c \major R2*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	r4 \tuplet 6/4 4 {r16\brack\p\< g,( a b c d)\!} \mark \default
 % Bars 156 to 160
 	c4~_\mffz\startTrillSpan c8\stopTrillSpan[ r16 b]
@@ -260,7 +260,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 226 to 230
 	c-^ r
 	b8-. r r4
-	R2*38
+	R2*36
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -277,8 +277,8 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	
-	\section
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no \section
 % Bars 266 to 270
 	\time 6/4 \key d \minor cis4\ff r r r2 r4
 	r2 r4 cis2.->\fz

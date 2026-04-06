@@ -174,7 +174,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 156 to 160
 	
 	\section \mark \default
-	\key d \major R2*40
+	\key d \major R2*36
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -189,9 +189,13 @@ musicOboeIMvtIV = \relative c {
 	
 % Bars 191 to 195
 	
+	
+	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
 % Bars 196 to 200
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 	a,2(\p~
 	a8[\< b] \tuplet 3/2 4 {cis d e)\!}
 	<< fis2( {s4 s\>}>>
@@ -477,7 +481,7 @@ musicOboeIMvtIV = \relative c {
 	g8\!) f( d bes!
 	e d bes f
 	c'_\dimmarkup bes f d)
-	R2 \mark \default
+	\ni \mmrPos #-4 R2 \no \mark \default
 % Bars 456 to 460
 	bes'4-._\mfmarcato bes-.
 	bes8.-. a16 c4->
@@ -510,10 +514,10 @@ musicOboeIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 491 to 495
-	R2*4
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	fis2_\fffz~
 % Bars 496 to 500
 	fis

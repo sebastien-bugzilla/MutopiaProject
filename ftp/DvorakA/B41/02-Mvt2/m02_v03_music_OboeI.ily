@@ -9,14 +9,18 @@ musicOboeIMvtII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*17
+	R1*14
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-% Bars 16 to 20
 	
-	\mark \default
+	
+	
+	\ni \mmrPos #4 R1
+% Bars 16 to 20
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	bes''4(\p a aes) r8 aes(
 	des4\< << c2) {s4\! s\>}>> \tuplet 3/2 4 {bes8( c des)\!}
 	c4(\< << ees2) {s4\! s\>}>> bes8.( c16)\!
@@ -50,10 +54,10 @@ musicOboeIMvtII = \relative c {
 	r2 g'\p\<~
 	<< g1~ {s4 s\! s\> s_\dimmarkup}>>
 	g8\! r r4 r2
-	R1*3
-	
+	R1
+	\ni \mmrPos #-4 R1
 % Bars 51 to 55
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	bes,16_\ppbracklegato d8 d d d16~ d des8 des des des16~
 	des f8 f\< g g16~ g g8 g\! g\> g16\!~
 	g aes8\p aes ees ees16~ ees ees8 ees ees ees16~
@@ -137,10 +141,10 @@ musicOboeIMvtII = \relative c {
 	f4(\p fis g~ g16\< f_\crescmarkup ees d
 	c4~ c16 bes a g\! f4~ f8) r \mark \default
 % Bars 121 to 125
-	R1*4
+	R1*2
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	r4 \tuplet 3/2 4 {ees'8(\pp f ges} f) r \tuplet 3/2 4 {ees\p\<( f ges)\!}
 % Bars 126 to 130
 	ges2(\crescD\< f4 ees)\!

@@ -17,7 +17,7 @@ musicOboeIIMvtII = \relative c {
 % Bars 16 to 20
 	
 	\mark \default
-	R1*10
+	R1*8
 	
 	
 % Bars 21 to 25
@@ -27,8 +27,8 @@ musicOboeIIMvtII = \relative c {
 	
 	
 % Bars 26 to 30
-	
-	
+	\ni \mmrPos #4 R1 
+	\mmrPos #4 R \no
 	r4 r g''2_\ppcresc~
 	<< g1\crescD\< {s4 s s s8 s\!}>>
 	<< g1\mf\< {s4 s s8 s\! s4\>}>>
@@ -50,10 +50,10 @@ musicOboeIIMvtII = \relative c {
 	R1*3
 	
 	
-	R1*3
-	
+	R1
+	\ni \mmrPos #-4 R1
 % Bars 51 to 55
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	bes16_\ppbracklegato bes8 bes bes bes16~ bes aes8 aes aes aes16~
 	aes f8 f\< g g16~ g g8 g\! g\> g16\!~
 	g aes8\p aes ees ees16~ ees ees8 ees ees ees16~
@@ -87,7 +87,7 @@ musicOboeIIMvtII = \relative c {
 	\mark \default
 	R1*2
 	
-	R1
+	\ni \mmrPos #-4 R1 \no
 % Bars 81 to 85
 	bes2(\p b_\crescmarkup)
 	c4( des~ des8 c~ c b
@@ -137,11 +137,11 @@ musicOboeIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 121 to 125
-	R1*4
+	R1*2
 	
-	
-	
-	r4 a(\pp bes8) r a4\p\<
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
+	\once \voiceTwo r4 a(\pp bes8) r a4\p\<
 % Bars 126 to 130
 	<< a1->\crescD\< {s4 s s s\!}>>
 	bes2(\f << aes!)\> {s8 s s s16 s\!}>>

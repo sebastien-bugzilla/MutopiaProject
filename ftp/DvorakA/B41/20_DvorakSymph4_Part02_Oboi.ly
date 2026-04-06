@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-\include "./00-Common/DvorakSymph4_Format_Part02_Oboi.ily"
+%\include "./00-Common/DvorakSymph4_Format_Part02_Oboi.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI.ily"
 \include "./01-Mvt1/m01_v04_music_OboeII.ily"
@@ -51,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtI
-			}
+%			\new Voice {
+%				\formatOboeIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtI
 			}
@@ -65,7 +65,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtII
-			}
+%			\new Voice {
+%				\formatOboeIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtII
 			}
@@ -99,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtIII
-			}
+%			\new Voice {
+%				\formatOboeIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtIII
 			}
@@ -123,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtIV
-			}
+%			\new Voice {
+%				\formatOboeIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtIV
 			}
@@ -147,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtI
-			}
+%			\new Voice {
+%				\formatOboeIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
@@ -161,7 +161,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -171,9 +171,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtII
-			}
+%			\new Voice {
+%				\formatOboeIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
@@ -195,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtIII
-			}
+%			\new Voice {
+%				\formatOboeIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
@@ -219,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtIV
-			}
+%			\new Voice {
+%				\formatOboeIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
