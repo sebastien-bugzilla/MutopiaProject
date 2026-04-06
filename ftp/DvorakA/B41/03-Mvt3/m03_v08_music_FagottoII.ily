@@ -285,15 +285,19 @@ musicFagottoIIMvtIII = \relative c {
 	r e-.
 	r d-.
 % Bars 241 to 245
-	R2*21
+	R2*18
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
-% Bars 261 to 265
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 261 to 265
+	\mmrPos #-4 R \no
 	f2\p~
 	f_\crescmarkup~
 	f~

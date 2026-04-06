@@ -535,28 +535,40 @@ cueVoiceClarinettoIIMvtIV = \relative c {
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #
 %###############################################################################
 cueVoiceFagottoIMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceFagottoIMvtII = \relative c {
-	
+	% no cue voice
 }
 cueVoiceFagottoIMvtIII = \relative c {
-	
+	s1.*139 s2*119
+	% bars 259 - 261
+	\clef treble \voiceOne \tuplet 3/2 4 {aes''8[^\markup {Viol.} r b!] cis( d!) ais-.
+	b-. d-. e-. e( f) d-.
+	d-. f-. g-. g( aes) f-.} \oneVoice \clef bass
 }
 cueVoiceFagottoIMvtIV = \relative c {
-	
+	s2*327
+	% bar 328
+	<>^\markup {Archi}
 }
 cueVoiceFagottoIIMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceFagottoIIMvtII = \relative c {
-	
+	% no cue voice
 }
 cueVoiceFagottoIIMvtIII = \relative c {
-	
+	s1.*139 s2*119
+	% bars 259 - 261
+	\clef treble \voiceOne \tuplet 3/2 4 {aes''8[^\markup {Viol.} r b!] cis( d!) ais-.
+	b-. d-. e-. e( f) d-.
+	d-. f-. g-. g( aes) f-.} \oneVoice \clef bass
 }
 cueVoiceFagottoIIMvtIV = \relative c {
-	
+	s2*327
+	% bar 328
+	<>^\markup {Archi}
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   C O R N I                    #

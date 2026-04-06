@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-\include "./00-Common/DvorakSymph4_Format_Part04_Fagotti.ily"
+%\include "./00-Common/DvorakSymph4_Format_Part04_Fagotti.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v07_music_FagottoI.ily"
 \include "./01-Mvt1/m01_v08_music_FagottoII.ily"
@@ -51,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtI
-			}
+%			\new Voice {
+%				\formatFagottoIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtI
 			}
@@ -65,7 +65,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtII
-			}
+%			\new Voice {
+%				\formatFagottoIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtII
 			}
@@ -99,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtIII
-			}
+%			\new Voice {
+%				\formatFagottoIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtIII
 			}
@@ -123,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtIV
-			}
+%			\new Voice {
+%				\formatFagottoIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtIV
 			}
@@ -147,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtI
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtI
 			}
@@ -161,7 +161,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -171,9 +171,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtII
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtII
 			}
@@ -195,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtIII
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtIII
 			}
@@ -219,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtIV
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtIV
 			}
