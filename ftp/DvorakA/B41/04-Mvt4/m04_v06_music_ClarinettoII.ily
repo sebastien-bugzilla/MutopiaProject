@@ -186,7 +186,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 156 to 160
 	
 	\section \mark \default
-	\key f \major R2*84
+	\key f \major R2*80
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -219,8 +219,12 @@ musicClarinettoIIMvtIV = \relative c {
 	
 % Bars 236 to 240
 	
-% Bars 241 to 245
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 241 to 245
+	\mmrPos #-4 R \no
 	e2\f~
 	e~
 	e8 r r4

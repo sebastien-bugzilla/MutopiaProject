@@ -44,10 +44,10 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	R1
+	\ni \mmrPos #-4 R1 \no
 	R1*2
 	
-	R1
+	\ni \ni \mmrPos #-4 R1 \no
 	R1
 % Bars 46 to 50
 	r4 d'2(\pp \tuplet 3/2 4 {cis8\< d e}
@@ -116,8 +116,8 @@ musicClarinettoIIMvtII = \relative c {
 	
 	
 	
-	R1*2
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 % Bars 106 to 110
 	g,2:16\mp\< << aes: {s4 s\!}>>
 	g2: << aes:\p\> {s8 s s s\!}>>
@@ -136,8 +136,8 @@ musicClarinettoIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 121 to 125
-	R1*2
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no
 	e''2.\pp d8.(_\crescmarkup c16)
 	c4(\< << b!2. {s4\! s\> s8 s\!}>>
 	c8) r r4 r b\p
@@ -151,14 +151,14 @@ musicClarinettoIIMvtII = \relative c {
 	c8) r e4(~\pp \tuplet 3/2 4 {e8 c b} d4
 	c8) r r4 r2
 	R1
-	R1*2
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 % Bars 136 to 140
 	R1*2
 	
 	<< c,1~\p\> {s4 s s s\!}>>
 	c4 r r2
-	R1
+	\ni \mmrPos #-4 R1 \no
 % Bars 141 and 142
 	c1\pp
 	c\fermata \fine

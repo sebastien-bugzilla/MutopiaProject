@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-\include "./00-Common/DvorakSymph4_Format_Part03_Clarinetti.ily"
+%\include "./00-Common/DvorakSymph4_Format_Part03_Clarinetti.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v05_music_ClarinettoI.ily"
 \include "./01-Mvt1/m01_v06_music_ClarinettoII.ily"
@@ -51,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtI
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtI
 			}
@@ -65,7 +65,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtII
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtII
 			}
@@ -99,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtIII
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtIII
 			}
@@ -123,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtIV
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtIV
 			}
@@ -147,9 +147,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtI
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtI
 			}
@@ -161,7 +161,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -171,9 +171,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtII
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtII
 			}
@@ -195,9 +195,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtIII
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtIII
 			}
@@ -219,9 +219,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtIV
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtIV
 			}

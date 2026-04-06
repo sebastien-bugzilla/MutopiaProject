@@ -268,7 +268,7 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 226 to 230
 	aes8-^ r r4
 	aes8-. r r4
-	R2*38
+	R2*36
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -285,8 +285,8 @@ musicClarinettoIMvtIII = \relative c {
 	
 	
 	
-	
-	\section
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no \section
 % Bars 266 to 270
 	\time 6/4 \key f \minor g4\ff r r r2 r4
 	r2 r4 bes2.->\fz

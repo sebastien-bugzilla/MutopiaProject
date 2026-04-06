@@ -40,9 +40,13 @@ musicClarinettoIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1*6
+	R1*2
 % Bars 36 to 40
 	
+	\ni \mmrPos #-4 R1 \no
+	R1
+	\ni \mmrPos #-4 R \no
+	R1
 % Bars 41 to 45
 	r4 r8 d'-.\pp^\solo bes'4-> r
 	R1*2
@@ -136,8 +140,8 @@ musicClarinettoIMvtII = \relative c {
 	
 	\mark \default
 % Bars 121 to 125
-	R1*2
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no
 	c''4(\pp b bes) r8_\crescmarkup bes\<
 	a4( << aes2\! {s4 s\> }>> \tuplet 3/2 4 {f8 g aes\!}
 	g8) r r4 r d\p

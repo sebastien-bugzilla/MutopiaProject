@@ -398,28 +398,138 @@ cueVoiceOboeIIMvtIV = \relative c {
 %#               C U E   V O I C E   F O R   C L A R I N E T T I               #
 %###############################################################################
 cueVoiceClarinettoIMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceClarinettoIMvtII = \relative c {
-	
+	s1*17
+	% bar 18
+	<>^\markup {Ob.I.}
+	s1*17
+	% bar 35
+	<>^\markup {Vcl.}
+	s1*2
+	% bar 37
+	\voiceOne r4 r8^\markup {Fl.} c''-. c'4-> r \oneVoice
+	s1*1
+	% bar 39
+	\voiceOne r4 r8 d,-. d'4-> r
+	s1*38
+	% bar 78
+	<>^\markup {Archi}
+	s1*16 s2*1
+	% bar 95
+	<>^\markup {Vlc.}
+	s1*19
+	% bar 114
+	<>^\markup {Ob.I.}
+	s1*7
+	% bars 121 - 122
+	\oneVoice c,,4(^\markup {Viol.I.} b bes) r8 bes
+	f'4( e2 \tuplet 3/2 4 {d8 e f)}
 }
 cueVoiceClarinettoIMvtIII = \relative c {
-	
+	s1.*139 s2*124
+	% bars 264 - 265
+	\transpose a c' {
+		\relative c {
+			\voiceOne \tuplet 3/2 4 {e'''8(^\markup {Viol.I.} f) d-. e( f) d-.
+			e( f) d-. g( aes) f-.} \oneVoice
+		}
+	}
 }
 cueVoiceClarinettoIMvtIV = \relative c {
-	
+	s2*29
+	% bar 30
+	<>^\markup {Fag.Vla}
+	s2*8
+	% bar 38
+	<>^\markup {Fl.I.Viol.}
+	s2*120
+	% bar 158
+	<>^\markup {Archi}
+	s2*40
+	% bar 198
+	<>^\markup {\column {\lower #1.5 "Fl.I.Ob.I." "Viol."}}
+	s2*40
+	% bars 238 - 241
+	\voiceOne c''8(^\markup {Ob.I.} bes a bes
+	f' d c bes)
+	g'( e d c)
+	a'( g f c) \oneVoice
+	s2*86
+	% bar 328
+	<>^\markup {Archi}
+	s2*89
+	% bar 417
+	<>^\markup {\column {\lower #1.5 "Fag.Vla" "Cl.II."}}
 }
 cueVoiceClarinettoIIMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceClarinettoIIMvtII = \relative c {
-	
+	s1*17
+	% bar 18
+	<>^\markup {Ob.I.}
+	s1*17
+	% bar 35
+	<>^\markup {Vcl.}
+	s1*6
+	% bar 41
+	\voiceOne r4 r8^\markup {Cl.I.} d''-. bes'4-> r \oneVoice
+	s1*2
+	% bar 44
+	\voiceOne r4 r8 e,-. a4-> r \oneVoice
+	s1*33
+	% bar 78
+	<>^\markup {Archi}
+	s1*16 s2*1 s1*2
+	% bar 97
+	<>^\markup {Cl.I}
+	s1*7
+	% bars 104 - 105
+	\voiceOne ees4(^\markup {Cl.I.} d des) r8 des
+	c4( ces2) \tuplet 3/2 4 {aes8( bes ces)} \oneVoice
+	s1*8
+	% bar 114
+	<>^\markup {Ob.I.}
+	s1*7
+	% bars 121 - 122
+	\voiceTwo c,4(^\markup {Viol.I.} b bes) r8 bes
+	f'4( e2 \tuplet 3/2 4 {d8 e f)}
+	s1*11
+	% bars 134 - 135
+	\voiceOne r2 \tuplet 3/2 4 {r8^\markup {Cl.I.} c'(-- b--} d4
+	c8) r r4 r2 \oneVoice
+	s1*4
+	% bar 140
+	\voiceOne c8-.^\markup {Cl.I.} d-. e-. r16 f e4 e \oneVoice
 }
 cueVoiceClarinettoIIMvtIII = \relative c {
-	
+	s1.*139 s2*124
+	% bars 264 - 265
+	\transpose a c' {
+		\relative c {
+			\voiceOne \tuplet 3/2 4 {e'''8(^\markup {Viol.I.} f) d-. e( f) d-.
+			e( f) d-. g( aes) f-.} \oneVoice
+		}
+	}
 }
 cueVoiceClarinettoIIMvtIV = \relative c {
-	
+	s2*157
+	% bar 158
+	<>^\markup {Archi}
+	s2*40
+	% bar 198
+	<>^\markup {\column {\lower #1.5 "Fl.I.Ob.I." "Viol."}}
+	s2*40
+	% bars 238 - 241
+	\voiceOne c''8(^\markup {Ob.I.} bes a bes
+	f' d c bes)
+	g'( e d c)
+	a'( g f c) \oneVoice
+	s2*86
+	% bar 328
+	<>^\markup {Archi}
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #
