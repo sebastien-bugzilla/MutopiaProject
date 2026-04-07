@@ -537,8 +537,8 @@ musicCornoIIMvtIV = \relative c {
 	
 % Bars 556 to 560
 	\mark \default
-	R2*2
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	e'8.\f dis16 e4->\<
 	e-> e->\! \section
 % Bars 561 to 565

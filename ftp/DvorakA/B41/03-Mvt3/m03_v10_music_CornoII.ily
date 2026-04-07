@@ -33,7 +33,7 @@ musicCornoIIMvtIII = \relative c {
 	r2 r4 << b2.\p\< {s8 s s s s s\!}>>
 	a1.->\fz~
 	a4 r r r2 r4
-	R1.*32
+	R1.*28
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -46,10 +46,10 @@ musicCornoIIMvtIII = \relative c {
 	
 % Bars 51 to 55
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 56 to 60
 	gis4\f r r r2 r4
 	r2 r4 f2.->\fz
@@ -280,7 +280,7 @@ musicCornoIIMvtIII = \relative c {
 	r2 r4 << b2.\p\< {s8 s s s s s\!}>>
 	a1.->\fz~
 	a4 r r r2 r4
-	R1.*32
+	R1.*28
 % Bars 291 to 295
 	
 % Bars 296 to 300
@@ -293,10 +293,10 @@ musicCornoIIMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 321 to 325
 	gis4\f r r r2 r4
 	r2 r4 f2.->\fz

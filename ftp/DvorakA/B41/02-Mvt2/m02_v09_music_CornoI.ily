@@ -94,9 +94,9 @@ musicCornoIMvtII = \relative c {
 % Bars 76 to 80
 	
 	\mark \default
-	R1*3
+	R1*2
 	
-	
+	\ni \mmrPos #-4 R1 \no
 % Bars 81 to 85
 	des'8-^\mf c-^ b!-^[ r16 b]-. ees8-> d->\brack\fz~ d16 c-> d-> ees->
 	d4. r8 r2

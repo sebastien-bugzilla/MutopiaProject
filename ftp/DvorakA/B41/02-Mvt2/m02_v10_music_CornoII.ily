@@ -12,15 +12,15 @@ musicCornoIIMvtII = \relative c {
 	R1*3
 	
 	
-	R1*11
+	R1*8
 	
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r4 bes''\pp\< a8-^ g-^ d-^ d-^
 % Bars 16 to 20
 	d4 f\! << e2 {s8\> s s s\!}>>
@@ -59,9 +59,9 @@ musicCornoIIMvtII = \relative c {
 	
 	
 	
-	R1*2
+	\ni \mmrPos #-4 R1
 % Bars 51 to 55
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	r16 f'8_\ppbracklegato f f f16~ f c8 c c c16~
 	c f8 f\< bes bes16~ bes bes8 bes\! bes\> bes16\!~
 	bes ees,8\p ees des des16~ des des8 des des des16~
@@ -90,12 +90,12 @@ musicCornoIIMvtII = \relative c {
 % Bars 76 to 80
 	
 	\mark \default
-	R1*3
-	
-	
-% Bars 81 to 85
 	R1*2
 	
+	\ni \mmrPos #-4 R1
+% Bars 81 to 85
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	R1
 	a4->\mf g-> c-> f,->
 	bes2->\fz des4.->\fz c8
@@ -144,12 +144,12 @@ musicCornoIIMvtII = \relative c {
 % Bars 121 to 125
 	R1*2
 	
-	R1*5
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 126 to 130
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	des2\p\< << d {s8 s s s\!}>>
 	b!4 << c2.\> {s4 s_\dimmarkup s8 s\!}>>
 	f4\p r r2

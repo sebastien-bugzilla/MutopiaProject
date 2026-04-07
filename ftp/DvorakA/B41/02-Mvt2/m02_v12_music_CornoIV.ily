@@ -58,7 +58,7 @@ musicCornoIVMvtII = \relative c {
 	
 % Bars 51 to 55
 	\mark \default
-	R1*17
+	R1*16
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -66,9 +66,9 @@ musicCornoIVMvtII = \relative c {
 % Bars 66 to 70
 	
 	
-	
-	R1*2
-	\mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 71 to 75
 	f,1\pp^\solo~
 	f~
@@ -79,12 +79,12 @@ musicCornoIVMvtII = \relative c {
 	f8 f4\p f f_\crescmarkup f8~
 	f16 f8 f_\crescmarkup f f16~ f f8 f f f16~ \mark \default
 	f8\f r r4 r2
-	R1*5
+	R1*2
 	
 % Bars 81 to 85
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
+	R1
 	d'4->\mf c-> bes-> aes->
 	g8 r r4 r2
 % Bars 86 to 90
@@ -142,9 +142,13 @@ musicCornoIVMvtII = \relative c {
 	
 	
 % Bars 131 to 135
-	R1*6
-% Bars 136 to 140
+	R1*4
 	
+	
+	
+	\ni \mmrPos #-4 R1 \no
+% Bars 136 to 140
+	R1
 	f,1\fp~
 	f~
 	f4 r r2

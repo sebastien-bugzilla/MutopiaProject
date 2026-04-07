@@ -173,7 +173,7 @@ musicCornoIVMvtIV = \relative c {
 % Bars 196 to 200
 	
 	
-	R2*44
+	R2*40
 	
 	
 % Bars 201 to 205
@@ -192,8 +192,12 @@ musicCornoIVMvtIV = \relative c {
 	
 % Bars 236 to 240
 	
-% Bars 241 to 245
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 241 to 245
+	\mmrPos #-4 R \no
 	gis2\f~
 	gis~
 	gis8 r r4
@@ -393,7 +397,7 @@ musicCornoIVMvtIV = \relative c {
 	
 	
 	
-	R2*31
+	R2*26
 % Bars 426 to 430
 	
 % Bars 431 to 435
@@ -405,11 +409,11 @@ musicCornoIVMvtIV = \relative c {
 % Bars 446 to 450
 	
 % Bars 451 to 455
-	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 456 to 460
 	d4-.\mf d-.
 	d2->

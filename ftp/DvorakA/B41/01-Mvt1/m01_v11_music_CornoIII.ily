@@ -70,17 +70,21 @@ musicCornoIIIMvtI = \relative c {
 		c2.\pp~
 		c~
 		c4 r r
-		R2.*20
+		R2.*16
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	
+		
+		
+		
+		
+		\ni \mmrPos #-4 R2.
 % Bars 81 to 85
-		
-		
-		
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		c4->\mf r r
 		c->_\crescmarkup r r
 % Bars 86 to 90
@@ -415,15 +419,19 @@ musicCornoIIIMvtI = \relative c {
 	b
 	g
 	f
-	R2.*17
+	R2.*15
 % Bars 406 to 410
 	
 % Bars 411 to 415
 	
 % Bars 416 to 420
 	
-% Bars 421 to 425
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 421 to 425
+	\mmrPos #-4 R \no
 	r4 aes\f r
 	R2.*2
 	\markk

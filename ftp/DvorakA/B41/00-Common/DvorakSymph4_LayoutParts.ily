@@ -46,7 +46,7 @@
 		\Staff
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f
-		\override MultiMeasureRest.space-increment = 0
+%		\override MultiMeasureRest.space-increment = 0
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 		\override CueClef.font-size = #-1 
 		\override CueEndClef.font-size = #-1 

@@ -65,3 +65,8 @@ correctionsFlauti = \markup {
 	% bar 19, Flauti I
 	"Bar 19 for Flauti I, in cue voice, bes on the second beat, is replaced by c."
 }
+correctionsCor = \markup {
+	
+	% bar 239, mvt IV, Cor III
+	"Bar 239 of the fourth movement, for Corno III the cue voice <b d> is replaced by <a d>."
+}

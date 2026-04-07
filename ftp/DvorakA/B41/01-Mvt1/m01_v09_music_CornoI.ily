@@ -457,15 +457,19 @@ musicCornoIMvtI = \relative c {
 	d2( b4)
 	c2 g8. c16
 	b2( gis4)
-	R2.*17
+	R2.*15
 % Bars 406 to 410
 	
 % Bars 411 to 415
 	
 % Bars 416 to 420
 	
-% Bars 421 to 425
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 421 to 425
+	\mmrPos #-4 R \no
 	r4 d'\f r
 	R2.*2
 	\markk
