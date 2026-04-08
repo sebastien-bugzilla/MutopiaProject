@@ -52,11 +52,15 @@ musicTrombeIIMvtII = \relative c {
 % Bars 76 to 80
 	
 	\mark \default
-	R1*9
+	R1*7
 % Bars 81 to 85
 	
-% Bars 86 to 90
 	
+	
+	
+	\ni \mmrPos #-4 R1 \no
+% Bars 86 to 90
+	R1
 	r2 r4 r8 c16\f\< c\!
 	g8-> r r4 r2
 	R1*5
@@ -84,15 +88,15 @@ musicTrombeIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 121 to 125
-	R1*18
+	R1*16
 % Bars 126 to 130
 	
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
-	
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no
 	<< a1\pp\<~ {s4 s\! s\> s\!}>>
 	a4 r r2
 % Bars 141 and 142

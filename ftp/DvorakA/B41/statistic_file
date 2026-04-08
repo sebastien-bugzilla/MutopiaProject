@@ -7,7 +7,7 @@
     244     587    5448 20_DvorakSymph4_Part03_Clarinetti.ly
     244     587    5292 20_DvorakSymph4_Part04_Fagotti.ly
     444    1011    8580 20_DvorakSymph4_Part05_Corni.ly
-    244     563    5215 20_DvorakSymph4_Part06_Trombe.ly
+    244     587    5240 20_DvorakSymph4_Part06_Trombe.ly
     344     763    7087 20_DvorakSymph4_Part07_Tromboni.ly
     219     513    4825 20_DvorakSymph4_Part08_Percussion.ly
     116     317    3209 20_DvorakSymph4_Part09_Arpa.ly
@@ -18,7 +18,7 @@
     144     363    3635 20_DvorakSymph4_Part14_Contrabasso.ly
       7       6      40 test.ly
      72     475    2727 00-Common/DvorakSymph4_Corrections.ily
-   1132    3998   25620 00-Common/DvorakSymph4_CueVoice.ily
+   1474    5100   32045 00-Common/DvorakSymph4_CueVoice.ily
     286    1687   13176 00-Common/DvorakSymph4_Format_Cond_Mvt01.ily
     174     952    7909 00-Common/DvorakSymph4_Format_Cond_Mvt02.ily
     274    1631   12644 00-Common/DvorakSymph4_Format_Cond_Mvt03.ily
@@ -74,9 +74,9 @@
     462    1287    6306 01-Mvt1/m01_v12_music_CornoIV_C.ily
     470    1240    6095 01-Mvt1/m01_v12_music_CornoIV.ily
     405    1253    6257 01-Mvt1/m01_v13_music_TrombeI_C.ily
-    405    1129    5323 01-Mvt1/m01_v13_music_TrombeI.ily
+    413    1161    5483 01-Mvt1/m01_v13_music_TrombeI.ily
     405    1188    5671 01-Mvt1/m01_v14_music_TrombeII_C.ily
-    405    1129    5339 01-Mvt1/m01_v14_music_TrombeII.ily
+    413    1161    5499 01-Mvt1/m01_v14_music_TrombeII.ily
     385    1070    5131 01-Mvt1/m01_v15_music_TrombonoI_C.ily
     385    1067    5109 01-Mvt1/m01_v15_music_TrombonoI.ily
     393    1075    5208 01-Mvt1/m01_v16_music_TrombonoII_C.ily
@@ -120,9 +120,9 @@
     155     592    2888 02-Mvt2/m02_v12_music_CornoIV_C.ily
     159     599    2907 02-Mvt2/m02_v12_music_CornoIV.ily
     101     280    1532 02-Mvt2/m02_v13_music_TrombeI_C.ily
-    101     264    1421 02-Mvt2/m02_v13_music_TrombeI.ily
+    105     278    1488 02-Mvt2/m02_v13_music_TrombeI.ily
     101     278    1465 02-Mvt2/m02_v14_music_TrombeII_C.ily
-    101     261    1408 02-Mvt2/m02_v14_music_TrombeII.ily
+    105     275    1473 02-Mvt2/m02_v14_music_TrombeII.ily
     123     388    2107 02-Mvt2/m02_v15_music_TrombonoI_C.ily
     123     380    2058 02-Mvt2/m02_v15_music_TrombonoI.ily
     123     369    2031 02-Mvt2/m02_v16_music_TrombonoII_C.ily
@@ -170,9 +170,9 @@
     399    1311    6096 03-Mvt3/m03_v12_music_CornoIV_C.ily
     403    1307    6096 03-Mvt3/m03_v12_music_CornoIV.ily
     347    1072    4768 03-Mvt3/m03_v13_music_TrombeI_C.ily
-    347    1040    4514 03-Mvt3/m03_v13_music_TrombeI.ily
+    347    1104    4797 03-Mvt3/m03_v13_music_TrombeI.ily
     347    1049    4599 03-Mvt3/m03_v14_music_TrombeII_C.ily
-    347    1040    4536 03-Mvt3/m03_v14_music_TrombeII.ily
+    347    1104    4815 03-Mvt3/m03_v14_music_TrombeII.ily
     337    1033    4494 03-Mvt3/m03_v15_music_TrombonoI_C.ily
     337    1030    4472 03-Mvt3/m03_v15_music_TrombonoI.ily
     337    1034    4465 03-Mvt3/m03_v16_music_TrombonoII_C.ily
@@ -226,9 +226,9 @@
     693    1553    7340 04-Mvt4/m04_v12_music_CornoIV_C.ily
     697    1560    7455 04-Mvt4/m04_v12_music_CornoIV.ily
     534    1227    6088 04-Mvt4/m04_v13_music_TrombeI_C.ily
-    534    1192    5714 04-Mvt4/m04_v13_music_TrombeI.ily
+    547    1299    6201 04-Mvt4/m04_v13_music_TrombeI.ily
     534    1204    5687 04-Mvt4/m04_v14_music_TrombeII_C.ily
-    534    1194    5642 04-Mvt4/m04_v14_music_TrombeII.ily
+    547    1301    6122 04-Mvt4/m04_v14_music_TrombeII.ily
     538    1241    5889 04-Mvt4/m04_v15_music_TrombonoI_C.ily
     538    1241    5889 04-Mvt4/m04_v15_music_TrombonoI.ily
     538    1218    5697 04-Mvt4/m04_v16_music_TrombonoII_C.ily
@@ -248,4 +248,4 @@
     802    2344   11472 04-Mvt4/m04_v28_music_Contrabasso_C.ily
     802    2314   11289 04-Mvt4/m04_v28_music_Contrabasso.ily
      83     244    1611 05-Midi/DvorakSymph4_Tempi.ily
-  92713  319742 1692995 total
+  93105  321302 1701426 total

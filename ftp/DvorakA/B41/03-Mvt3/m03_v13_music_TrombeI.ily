@@ -32,7 +32,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 21 to 25
 	r2 r4 << gis2.\p\< {s8 s s  s s s\!}>>
 	a4-.\f r r r2 r4
-	R1.*33
+	R1.*29
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -45,10 +45,10 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 51 to 55
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 56 to 60
 	e4-.\f r r r2 r4
 	R1.*2
@@ -130,17 +130,17 @@ musicTrombeIMvtIII = \relative c {
 	
 	
 	R1.\fermata \section
-	\time 2/4 R2*16
+	\time 2/4 R2*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 156 to 160
 	g4.->\mf r8
 	g4.-> r8
@@ -223,7 +223,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 226 to 230
 	g-^ r
 	a8-. r r4
-	R2*38
+	R2*34
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -238,10 +238,10 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 261 to 265
 	
-	
-	
-	
-	\section
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 % Bars 266 to 270
 	\time 6/4 e4\ff r r r2 r4
 	R1.*2
@@ -266,7 +266,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 286 to 290
 	r2 r4 << gis2.\p\< {s8 s s s s s\!}>>
 	a4-.\f r r r2 r4
-	R1.*33
+	R1.*29
 % Bars 291 to 295
 	
 % Bars 296 to 300
@@ -279,10 +279,10 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 321 to 325
 	e4-.\f r r r2 r4
 	R1.*2
@@ -319,7 +319,7 @@ musicTrombeIMvtIII = \relative c {
 	a4-> a->
 	gis-> fis->
 	e-> r
-	R2*24
+	R2*22
 % Bars 356 to 360
 	
 % Bars 361 to 365
@@ -329,8 +329,8 @@ musicTrombeIMvtIII = \relative c {
 % Bars 371 to 375
 	
 % Bars 376 to 380
-	
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	a4._\pcresc e8
 	e8.\< a16 a8\! r
 	a4.->\mf\< e8\!

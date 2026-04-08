@@ -71,12 +71,12 @@ musicTrombeIMvtI = \relative c {
 % Bars 86 to 90
 		
 		\mark \default 
-		R2.*10
+		R2.*8
 % Bars 91 to 95
 	
 % Bars 96 to 100
-		
-		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 		f4-.\f f4.-> f8-.
 		c'2.->
 		f,4-. f4.-> f8-.
@@ -134,15 +134,19 @@ musicTrombeIMvtI = \relative c {
 % Bars 151 to 155
 	R2.
 	cis4\fz r r
-	R2.*19
+	R2.*17
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 171 to 175
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	a8-.\ff r r4 g8-.\fz r
 	a-. r r4 g8-.\fz r
 	a-. r d2\fz
@@ -369,7 +373,7 @@ musicTrombeIMvtI = \relative c {
 	
 	g!2\pp d8. g16-.
 	f2( c8) r
-	R2.*23
+	R2.*21
 % Bars 401 to 405
 	
 % Bars 406 to 410
@@ -378,20 +382,24 @@ musicTrombeIMvtI = \relative c {
 	
 % Bars 416 to 420
 	
-% Bars 421 to 425
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 421 to 425
+	\mmrPos #-4 R \no
 	r4 f\f r
 	R2.*2
 	\markk
-	R2.*14
+	R2.*12
 % Bars 426 to 430
 	
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	a2->\ff r4
 	f2-> r4
 % Bars 441 to 445
