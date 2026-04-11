@@ -49,7 +49,7 @@ musicTrombonoIIIMvtII = \relative c {
 	
 % Bars 51 to 55
 	\mark \default
-	R1*19
+	R1*17
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -58,18 +58,18 @@ musicTrombonoIIIMvtII = \relative c {
 	
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no \mark \default
 % Bars 71 to 75
 	R1*7
 % Bars 76 to 80
 	
 	\mark \default
-	R1*7
+	R1*3
 % Bars 81 to 85
-	
-	
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #-4 R \no
+	R1*2
 	
 	aes8-^\mf g-^ fis-^[ r16 fis16-.] b8-> bes->~ bes16\< aes-.-> bes-.-> ces-.->\!
 % Bars 86 to 90
@@ -110,15 +110,15 @@ musicTrombonoIIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 121 to 125
-	R1*18
+	R1*16
 % Bars 126 to 130
 	
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	<< bes'1\pp\<~ {s8 s s s\! s\> s s s\!}>>
 	bes4 r r2
 % Bars 141 and 142

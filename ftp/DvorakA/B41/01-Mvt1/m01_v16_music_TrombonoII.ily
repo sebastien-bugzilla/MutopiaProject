@@ -71,12 +71,12 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 86 to 90
 		
 		\mark \default
-		R2.*10
+		R2.*8
 % Bars 91 to 95
 	
 % Bars 96 to 100
-		
-		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 		bes4-.\f bes2->
 		d2(-> c4)
 		bes4-. bes2->
@@ -134,15 +134,19 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 151 to 155
 	R2.
 	bes!4-^\fz r r
-	R2.*19
+	R2.*17
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 171 to 175
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	bes8-.\ff r r4 d8-.\fz r
 	bes-. r r4 d8-.\fz r
 	bes-. r d2\fz-^
@@ -257,11 +261,15 @@ musicTrombonoIIMvtI = \relative c {
 	
 	\mark \default
 % Bars 296 to 300
-	R2.*11
+	R2.*9
 % Bars 301 to 305
 	
-% Bars 306 to 310
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 306 to 310
+	\mmrPos #-4 R \no
 	aes2->\f r4
 	aes2-> r4
 	aes2-> r4
@@ -339,14 +347,14 @@ musicTrombonoIIMvtI = \relative c {
 	f4.\fz d8-.\noBeam b( f')
 % Bars 391 to 395
 	a,2-^~ a8 r
-	R2.*13
+	R2.*11
 % Bars 396 to 400
 	
 % Bars 401 to 405
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	g2.\ppp~
 % Bars 406 to 410
 	g2 r4
@@ -355,11 +363,11 @@ musicTrombonoIIMvtI = \relative c {
 	g2.\pp~
 	g2 r4
 % Bars 411 to 415
-	R2.*11
+	R2.*10
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	
+	\ni \mmrPos #4 R2. \no
 	r4 g\f r
 	R2.*2
 	\markk

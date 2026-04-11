@@ -65,11 +65,11 @@ musicTrombonoIMvtII = \relative c {
 % Bars 76 to 80
 	
 	\mark \default
-	R1*7
+	R1*3
 % Bars 81 to 85
-	
-	
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no
+	R1*2 
 	
 	c2_\brack\mf^\fzmarkup ees4-> des->
 % Bars 86 to 90
@@ -106,15 +106,15 @@ musicTrombonoIMvtII = \relative c {
 	
 	\mark \default
 % Bars 121 to 125
-	R1*18
+	R1*16
 % Bars 126 to 130
 	
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
-	
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no
 	<< bes1\pp\<~ {s8 s s s\! s\> s s s\!}>>
 	bes4 r r2
 % Bars 141 and 142

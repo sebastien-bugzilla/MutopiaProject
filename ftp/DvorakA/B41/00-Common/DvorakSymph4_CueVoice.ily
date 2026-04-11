@@ -1323,40 +1323,375 @@ cueVoiceTrombeIIMvtIV = \relative c {
 %#                 C U E   V O I C E   F O R   T R O M B O N I                 #
 %###############################################################################
 cueVoiceTrombonoIMvtI = \relative c {
-	
+	s2.*95
+	% bars 96 - 97
+	\voiceOne \clef treble d'''2.~^\markup {Viol.}
+	d8 a( bes! d c g) \clef alto \oneVoice
+	s2.*72
+	% bars 170 - 171
+	\voiceOne \clef bass d,8(^\markup {Legni} f ees d bes c
+	d f ees d bes c) \clef alto \oneVoice
+	s2.*80 s2*3 s2.*50
+	% bars 305 - 306
+	\voiceOne a'8.^\markup {Trbe} c16 c2
+	a8. c16 c2 \oneVoice
+	s2.*69 s2*4 s2.*23
+	% bars 403 - 404
+	\voiceOne f,2^\markup {Cor.I.} c8. f16
+	e2( cis4) \oneVoice
+	s2.*16
+	% bar 421
+	\voiceTwo \clef bass a,4->_\markup {Cb.} r a-> \clef alto \oneVoice
+	s2.*15
+	% bar 437 - 438
+	\voiceOne \clef treble f'''8.^\markup {Fl.} a16 a4 r
+	f8. a16 a4 r \oneVoice \clef alto
 }
 cueVoiceTrombonoIMvtII = \relative c {
-	
+	s1*34
+	% bar 35
+	<>^\markup {Vcl.}
+	s1*16
+	% bar 51
+	<>^\markup {Timp.}
+	s1*30
+	% bars 81 - 82
+	\voiceTwo \clef treble ges''8-^\mf^\markup {Cor.I.} f-^ ees[ r16 ees] aes8 g~ g16 f g aes
+	g4. r8 r2 \clef alto \oneVoice
+	s1*11 s2*1
+	% bar 95
+	<>^\markup {Vcl.}
+	s1*42
+	% bars 137 - 138
+	<bes,, bes'>1~^\markup {Cor.III-IV.}
+	q
 }
 cueVoiceTrombonoIMvtIII = \relative c {
-	
+	s1.*51
+	% bars 52 - 55
+	\voiceOne \clef bass bes'!1.->~^\markup {Fag.}
+	bes2 c4->_\crescmarkup d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \clef alto \oneVoice
+	s1.*84
+	% bar 140
+	<>^\markup {Trbne.II.}
+	s2*43
+	% bars 183 - 187
+	\voiceTwo \clef bass g,4\mf^\markup {Timp.} r8 \tuplet 3/2 8 {g16 g g}
+	g4 r8 \tuplet 3/2 8 {g16 g g}
+	g4 r8 \tuplet 3/2 8 {g16 g g}
+	g2:32
+	g4: g8 r \clef alto \oneVoice
+	s2*74
+	% bars 262 - 265
+	\voiceTwo \clef bass d'2:32^\markup {Timp.}
+	d:
+	d:
+	d: \oneVoice \clef alto
+	s1.*51
+	% bars 317 - 320
+	\voiceOne \clef bass bes'!1.->~^\markup {Fag.}
+	bes2 c4->_\crescmarkup d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \clef alto \oneVoice
+	s1.*20 s2*37
+	% bars 378 - 379
+	\transpose c f {
+		\relative c {
+			\clef treble \voiceOne a''4.^\markup {Trbe} e8
+			e8.\< a16 a8\! r \clef alto \oneVoice
+		}
+	}
 }
 cueVoiceTrombonoIMvtIV = \relative c {
-	
+	s2*29
+	% bar 30
+	<>^\markup {Fag.Vla}
+	s2*8
+	% bar 38
+	<>^\markup {\column {\lower #1.5 "Fl.I." "Ob.I."}}
+	s2*62
+	% bar 100
+	<>^\markup {Timp.}
+	s2*58
+	% bar 158
+	<>^\markup {Archi}
+	s2*170
+	% bar 328
+	<>^\markup {Archi}
+	s2*16
+	% bar 344
+	<>^\markup {Cor.I-IV.}
+	s2*28
+	% bars 372 - 379
+	\clef bass \voiceTwo a4^\markup {Vcl.Cb.} a
+	a8. a16 a4
+	a a
+	a8. a16 a4
+	a a
+	a8. a16 a4
+	a a
+	a8. a16 a4 \clef alto \oneVoice
+	s2*107
+	% bars 487 - 491
+	\transpose c f {
+		\relative c {
+			\voiceOne \clef treble <f' f'>2~^\markup {Cor.I-II.}
+			q4 q
+			q2~
+			q4 q~
+			q8 r r4 \voiceOne \clef alto
+		}
+	}
+	s2*7
+	% bar 499
+	<>^\markup {Trbne II.}
+	s2*12
+	% bar 511
+	<>^\markup {Trb.III.}
+	s2*46
+	% bar 557 - 558
+	\voiceOne a''8.->^\markup {Tutti} gis16 a4->
+	a8.-> gis16 a4-> \oneVoice
 }
 cueVoiceTrombonoIIMvtI = \relative c {
-	
+	s2.*95
+	% bars 96 - 97
+	\voiceOne \clef treble d'''2.~^\markup {Viol.}
+	d8 a( bes! d c g) \clef tenor \oneVoice
+	s2.*72
+	% bars 170 - 171
+	\voiceOne \clef bass d,8(^\markup {Legni} f ees d bes! c
+	d f ees d bes! c) \clef tenor \oneVoice
+	s2.*80 s2*3 s2.*50
+	% bars 305 - 306
+	\voiceOne a'8.^\markup {Trbe} c16 c2
+	a8. c16 c2 \oneVoice
+	s2.*69 s2*4 s2.*23
+	% bars 403 - 404
+	\voiceOne f,2^\markup {Cor.I.} c8. f16
+	e2( cis4) \oneVoice
+	s2.*16
+	% bar 421
+	\voiceTwo \clef bass a,4->_\markup {Cb.} r a-> \clef tenor \oneVoice
 }
 cueVoiceTrombonoIIMvtII = \relative c {
-	
+	s1*34
+	% bar 35
+	<>^\markup {Vlc.}
+	s1*34
+	% bars 69 - 70
+	\voiceOne a'4(^\markup {Trb.I.} d c f,
+	a) r r2 \oneVoice
+	s1*10
+	% bars 81 - 82
+	\clef treble \voiceTwo ges'8-^\mf^\markup {Cor.I.} f-^ ees[ r16 ees] aes8 g~ g16 f g aes
+	g4. r8 r2 \clef tenor \voiceOne
+	s1*11 s2*1 s1*42
+	% bar 137 - 138
+	\voiceTwo <bes,, bes'>1~^\markup {Cor.III-IV.}
+	q \oneVoice
 }
 cueVoiceTrombonoIIMvtIII = \relative c {
-	
+	s1.*51
+	% bars 52 - 55
+	\voiceOne \clef bass bes'!1.->~^\markup {Fag.}
+	bes2 c4->_\crescmarkup d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \clef tenor \oneVoice
+	s1.*84
+	% bar 140
+	<>^\markup {Trb.III.}
+	s2*43
+	% bars 183 - 187
+	\voiceTwo \clef bass g,4\mf^\markup {Timp.} r8 \tuplet 3/2 8 {g16 g g}
+	g4 r8 \tuplet 3/2 8 {g16 g g}
+	g4 r8 \tuplet 3/2 8 {g16 g g}
+	g2:32
+	g4: g8 r \clef tenor \oneVoice
+	s2*74
+	% bars 262 - 265
+	\voiceTwo \clef bass d'2:32^\markup {Timp.}
+	d:
+	d:
+	d: \oneVoice \clef tenor
+	s1.*51
+	% bars 317 - 320
+	\voiceOne \clef bass bes'!1.->~^\markup {Fag.}
+	bes2 c4->_\crescmarkup d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \clef tenor \oneVoice
+	s1.*20 s2*37
+	% bars 378 - 379
+	\transpose c f {
+		\relative c {
+			\clef treble \voiceOne a''4.^\markup {Trbe} e8
+			e8.\< a16 a8\! r \clef tenor \oneVoice
+		}
+	}
 }
 cueVoiceTrombonoIIMvtIV = \relative c {
-	
+	s2*29
+	% bar 30
+	<>^\markup {Fag.Vla}
+	s2*8
+	% bar 38
+	<>^\markup {\column {\lower #1.5 "Fl.I." "Ob.I."}}
+	s2*62
+	% bar 100
+	<>^\markup {Timp.}
+	s2*58
+	% bar 158
+	<>^\markup {Archi}
+	s2*170
+	% bar 328
+	<>^\markup {Archi}
+	s2*16
+	% bar 344
+	<>^\markup {Cor.I-IV.}
+	s2*28
+	% bars 372 - 379
+	\clef bass \voiceTwo a4^\markup {Vcl.Cb.} a
+	a8. a16 a4
+	a a
+	a8. a16 a4
+	a a
+	a8. a16 a4
+	a a
+	a8. a16 a4 \clef tenor \oneVoice
+	s2*107
+	% bars 487 - 491
+	\transpose c f {
+		\relative c {
+			\voiceOne \clef treble <f' f'>2~^\markup {Cor.I-II.}
+			q4 q
+			q2~
+			q4 q~
+			q8 r r4 \voiceOne \clef tenor
+		}
+	}
+	s2*19
+	% bar 511
+	<>^\markup {Trb.III.}
+	s2*46
+	% bar 557 - 558
+	\voiceOne a''8.->^\markup {Tutti} gis16 a4->
+	a8.-> gis16 a4-> \oneVoice
 }
 cueVoiceTrombonoIIIMvtI = \relative c {
-	
+	s2.*95
+	% bars 96 - 97
+	\voiceOne \clef treble d'''2.~^\markup {Viol.}
+	d8 a( bes! d c g) \clef bass \oneVoice
+	s2.*72
+	% bars 170 - 171
+	\voiceOne d,8(^\markup {Legni} f ees d bes! c
+	d f ees d bes! c) \oneVoice
+	s2.*80 s2*3 s2.*50
+	% bars 305 - 306
+	\voiceOne \clef treble a'8.^\markup {Trbe} c16 c2
+	a8. c16 c2 \clef bass \oneVoice
+	s2.*69 s2*4 s2.*23
+	% bars 403 - 404
+	\voiceOne f,2^\markup {Cor.I.} c8. f16
+	e2( cis4) \oneVoice
+	s2.*16
+	% bar 421
+	\voiceTwo a,4->_\markup {Cb.} r a-> \oneVoice
 }
 cueVoiceTrombonoIIIMvtII = \relative c {
-	
+	s1*34
+	% bar 35
+	<>^\markup {Vlc.}
+	s1*34
+	% bars 69 - 70
+	\voiceOne a'4(^\markup {Trb.I.} d c f,
+	a) r r2 \oneVoice
+	s1*10
+	% bars 81 - 82
+	\clef treble \voiceTwo ges'8-^\mf^\markup {Cor.I.} f-^ ees[ r16 ees] aes8 g~ g16 f g aes
+	g4. r8 r2 \clef bass \voiceOne
+	s1*11 s2*1
+	% bar 95
+	<>^\markup {Vcl.}
+	s1*42
+	% bar 137 - 138
+	\voiceOne <bes,, bes'>1~^\markup {Cor.III-IV.}
+	q \oneVoice
 }
 cueVoiceTrombonoIIIMvtIII = \relative c {
-	
+	s1.*51
+	% bars 52 - 55
+	\voiceOne bes'!1.->\fz~^\markup {Fag.}
+	bes2 c4-> d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
+	s1.*84 s2*122
+	% bars 262 - 265
+	\voiceTwo d2:32^\markup {Timp.}
+	d:
+	d:
+	d: \oneVoice
+	s1.*51
+	% bars 317 - 320
+	\voiceOne bes'!1.->\fz~^\markup {Fag.}
+	bes2 c4->_\crescmarkup d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
+	s1.*20 s2*39
+	% bars 380 - 382
+	\voiceOne d'4.^\markup {Trb.II} a8
+	a8. d16 d8 r
+	a8. d16 d8 r
 }
 cueVoiceTrombonoIIIMvtIV = \relative c {
-	
+	s2*29
+	% bar 30
+	<>^\markup {Fag.Vla}
+	s2*8
+	% bar 38
+	<>^\markup {\column {\lower #1.5 "Fl.I." "Ob.I."}}
+	s2*62
+	% bar 100
+	<>^\markup {Timp.}
+	s2*58
+	% bar 158
+	<>^\markup {Archi}
+	s2*170
+	% bar 328
+	<>^\markup {Archi}
+	s2*16
+	% bar 344
+	<>^\markup {Cor.I-IV.}
+	s2*28
+	% bars 372 - 379
+	\voiceTwo a4^\markup {Vcl.Cb.} a
+	a8. a16 a4
+	a a
+	a8. a16 a4
+	a a
+	a8.\< a16 a4
+	a a
+	a8. a16 a4\! \oneVoice
+	s2*107
+	% bars 487 - 491
+	\transpose c f {
+		\relative c {
+			\voiceOne \clef treble <f' f'>2~^\markup {Cor.I-II.}
+			q4 q
+			q2~
+			q4 q~
+			q8 r r4 \voiceOne \clef bass
+		}
+	}
+	s2*15
+	% bar 507
+	<>^\markup {Trbne I.}
+	s2*50
+	% bar 557 - 558
+	\voiceOne a'8.->^\markup {Tutti} gis16 a4->
+	a8.-> gis16 a4-> \oneVoice
 }
 %###############################################################################
 %#               C U E   V O I C E   F O R   P E R C U S S I O N               #

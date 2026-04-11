@@ -82,16 +82,16 @@ formatConductorMvtII = {
 \override Score.NonMusicalPaperColumn.page-break-permission = ##f
 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 9.8)(alignment-distances . (8.5 8.5 8.5 12 14 8.5 9.5 9 9 9 13 13 8.5 13 8.5 8.5 8.5 8.5))) s1*6 \pageBreak
 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (13 16 9 11.5 10.5 9))) s1*7 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (8.5 13 16 10 11 9 9.5 13 13 9.5 9 10 9 9))) s1*5 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 9.7)(alignment-distances . (10 13 9.5 13 9 9 11.5 9 9))) s1*3 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 7.3)(alignment-distances . (10 13 8.5 13 10.5 9 12 8.5 9.5))) s1*3 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 13 9 13 9.5 10 11 9 9))) s1*3 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (12.5 13 8.5 13 10 10 13 9 9.5))) s1*3 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 9.1)(alignment-distances . (13 15 9 13 10.5 9.5 13.5 9 9))) s1*3 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 8.5)(alignment-distances . (16 17 9 14 10 14 10 10 13 10 10))) s1*3 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (8.5 8.5 13 9 13 9 10.5 10.5 8.5 10))) s1*3 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 8.8)(alignment-distances . (10 8.5 13 8.5 13 8.5 9.5 11.5 8.5 10))) s1*3 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (8.5 8.5 9.5 11 13 8.5 13 9.5 13 9 9 9.5 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((alignment-distances . (8.5 13 16 10 11 9 9.5 13 13 9.5 9 10 9 9))) s1*5 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((alignment-distances . (10 13 9.5 13 9 9 11.5 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((alignment-distances . (10 13 8.5 13 10.5 9 12 8.5 9.5))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((alignment-distances . (9 13 9 13 9.5 10 11 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((alignment-distances . (12.5 13 8.5 13 10 10 13 9 9.5))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((alignment-distances . (13 15 9 13 10.5 9.5 13.5 9 9))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((alignment-distances . (16 17 9 14 10 14 10 10 13 10 10))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((alignment-distances . (8.5 8.5 13 9 13 9 10.5 10.5 8.5 10))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((alignment-distances . (10 8.5 13 8.5 13 8.5 9.5 11.5 8.5 10))) s1*3 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((alignment-distances . (8.5 8.5 9.5 11 13 8.5 13 9.5 13 9 9 9.5 9 9))) s1*3 \pageBreak
 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 9.1)(alignment-distances . (8.5 9.5 9.5 12 13 10 13 9 11.5 11.5 8.5 10))) s1*3 \pageBreak
 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9 13 8.5 13 9 13 9 11 11 9 10))) s1*3 \pageBreak
 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10)(alignment-distances . (9.5 10 11.5 11.5 13 9 13 9 14 9 11 10 10))) s1*3 \pageBreak

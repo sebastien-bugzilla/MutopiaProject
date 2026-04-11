@@ -70,3 +70,8 @@ correctionsCor = \markup {
 	% bar 239, mvt IV, Cor III
 	"Bar 239 of the fourth movement, for Corno III the cue voice <b d> is replaced by <a d>."
 }
+correctionTromboni = \markup {
+	
+	% bar 98, mvt I, trombone I
+	"Bar 98, Mvt I for trombone I, a missing alto clef is added."
+}
