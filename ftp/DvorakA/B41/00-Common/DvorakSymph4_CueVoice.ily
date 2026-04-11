@@ -1884,16 +1884,40 @@ cueVoiceGranCassaMvtIII = \relative c {
 %#                     C U E   V O I C E   F O R   A R P A                     #
 %###############################################################################
 cueVoiceArpaUpMvtII = \relative c {
-	
-}
-cueVoiceArpaUpMvtIII = \relative c {
-	
+	s1*17
+	% bar 18
+	<>^\markup {Ob.}
+	s1*76 s2*1
+	% bars 95 - 96
+	\voiceTwo ees'4(_\markup {Vclo} d ees) r8 des
+	aes'4( g2) \tuplet 3/2 4 {f8( g aes)} \oneVoice
 }
 cueVoiceArpaDownMvtII = \relative c {
-	
+	s1*34
+	% bar 35
+	\voiceOne bes'4(^\markup {Vclo} a aes) r8 aes \oneVoice
+}
+cueVoiceArpaUpMvtIII = \relative c {
+	s1.*139 s2*12
+	% bars 152 - 155
+	<b' d>4~\startTrillSpan^\markup {Cl.} q8\stopTrillSpan r16 <a c>
+	<b d>4~\startTrillSpan q8\stopTrillSpan r16 <a c>
+	<b d>4 <c e>
+	<b d> r
 }
 cueVoiceArpaDownMvtIII = \relative c {
-	
+	s1.*65
+	% bars 66 - 69
+	\voiceTwo d1.:16^\markup {Timp.}
+	d:
+	d:
+	d: \oneVoice
+	s1.*70 s2*126 s1.*65
+	% bars 331 - 334
+	\voiceTwo d1.:_\markup {Timp.}
+	d:
+	d:
+	d: \oneVoice
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #

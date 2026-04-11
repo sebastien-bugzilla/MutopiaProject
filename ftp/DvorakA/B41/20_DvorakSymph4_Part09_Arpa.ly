@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-\include "./00-Common/DvorakSymph4_Format_Part09_Arpa.ily"
+%\include "./00-Common/DvorakSymph4_Format_Part09_Arpa.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./02-Mvt2/m02_v22_music_ArpaUp.ily"
 \include "./02-Mvt2/m02_v23_music_ArpaDown.ily"
@@ -48,9 +48,9 @@
 	\score {
 		\new PianoStaff <<
 			\new Staff = "up" <<
-				\new Voice {
-					\formatArpaUpMvtII
-				}
+%				\new Voice {
+%					\formatArpaUpMvtII
+%				}
 				\new Voice {
 					\keepWithTag #'(arpa) \tempiPartMvtII
 				}
@@ -71,7 +71,7 @@
 			>>
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -82,9 +82,9 @@
 	\score {
 		\new PianoStaff <<
 			\new Staff = "up" <<
-				\new Voice {
-					\formatArpaUpMvtIII
-				}
+%				\new Voice {
+%					\formatArpaUpMvtIII
+%				}
 				\new Voice {
 					\keepWithTag #'(arpa) \tempiPartMvtIII
 				}

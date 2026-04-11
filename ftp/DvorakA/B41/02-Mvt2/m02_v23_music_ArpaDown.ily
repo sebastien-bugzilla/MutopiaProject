@@ -27,9 +27,9 @@ musicArpaDownMvtII = \relative c {
 	
 	
 	\mark \default
-	R1*17
+	\ni \mmrPos #-4 R1 \no
 % Bars 36 to 40
-	
+	R1*16
 % Bars 41 to 45
 	
 % Bars 46 to 50

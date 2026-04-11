@@ -107,17 +107,17 @@ musicArpaUpMvtIII = \relative c {
 	
 	
 	R1.\fermata \section
-	\time 2/4 \key c \major R2*16
+	\time 2/4 \key c \major R2*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 % Bars 156 to 160
 	<c, e g c>4\mf\arpeggio <e g c e>\arpeggio
 	<c e g c>\arpeggio <e g c e>\arpeggio

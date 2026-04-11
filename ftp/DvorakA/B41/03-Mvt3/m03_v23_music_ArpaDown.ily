@@ -35,14 +35,14 @@ musicArpaDownMvtIII = \relative c {
 	
 	\mark \default
 % Bars 56 to 60
-	R1.*14
+	R1.*10
 % Bars 61 to 65
 	
 % Bars 66 to 70
-	
-	
-	
-	\clef treble
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \clef treble
 	<g' cis e g>4\arpeggio r r q\arpeggio r r
 % Bars 71 to 75
 	q\arpeggio r r q\arpeggio r r
@@ -195,14 +195,14 @@ musicArpaDownMvtIII = \relative c {
 	
 	\mark \default
 % Bars 321 to 325
-	R1.*14
+	R1.*10
 % Bars 326 to 330
 	
 % Bars 331 to 335
-	
-	
-	
-	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	\clef treble <g' cis e g>4\arpeggio r r q\arpeggio r r
 % Bars 336 to 340
 	q\arpeggio r r q\arpeggio r r

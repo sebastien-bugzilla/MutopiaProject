@@ -27,7 +27,7 @@ musicArpaUpMvtII = \relative c {
 	
 	
 	\mark \default
-	R1
+	\once \ni R1
 % Bars 36 to 40
 	r4 <g' c ees g>\pp\arpeggio r2
 	r4 <bes ees ges bes>\arpeggio r2
@@ -90,9 +90,9 @@ musicArpaUpMvtII = \relative c {
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1*2
+	\time 4/4 \ni \mmrPos #4 R1
 % Bars 96 to 100
-	
+	\ni \mmrPos #4 R \no
 	\staffDown \tuplet 3/2 8 {ees,16^\p([ bes' ees]} \staffUp g32 des' ees g
 		\staffDown \tuplet 3/2 8 {ees,,16[ bes' ees]} \staffUp g32 des' ees g
 		\staffDown \tuplet 3/2 8 {bes,,16[ ees g]} \staffUp bes32 des ees bes'
