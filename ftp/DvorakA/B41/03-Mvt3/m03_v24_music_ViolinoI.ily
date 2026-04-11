@@ -35,7 +35,7 @@ musicViolinoIMvtIII = \relative c {
 % Bars 21 to 25
 	q2 <c! e g c!>4->~ q2 <cis e g cis>4-^
 	\arpeggioNormal <d, d' f d'>4-.\ff\arpeggio r r r2 r4
-	R1.*33
+	R1.*29
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -48,10 +48,10 @@ musicViolinoIMvtIII = \relative c {
 	
 % Bars 51 to 55
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1. 
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 56 to 60
 	<e cis' a'>4\f r d-.\< cis( e) a,-.\!
 	bes-.\fz r r r2 r4
@@ -167,13 +167,13 @@ musicViolinoIMvtIII = \relative c {
 	q q q q q q  q q q q q q
 	eis4( fis) cis!-. a'( bes) ges-.
 	<ais, fis' cis'!>-.\arpeggio r r r2 r4
-	R1.*9
+	R1.*8
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
 	
-	
+	\ni \mmrPos #4 R1. \no
 	r2 r4 dis4(\pp\< fis a,
 	c dis fis a c fis,)\!
 % Bars 126 to 130
@@ -190,7 +190,7 @@ musicViolinoIMvtIII = \relative c {
 	
 	
 	R1.\fermata \section
-	\time 2/4 \key c \major R2*16
+	\time 2/4 \key c \major R2*15
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -200,7 +200,7 @@ musicViolinoIMvtIII = \relative c {
 	
 	
 	
-	\mark \default
+	\ni \mmrPos #4 R2 \no \mark \default
 % Bars 156 to 160
 	\tuplet 3/2 4 {c'8(_\pdolce e g)} g4(~
 	\tuplet 3/2 4 {g8 fis g)} g4(~
@@ -360,7 +360,7 @@ musicViolinoIMvtIII = \relative c {
 % Bars 286 to 290
 	q2 <c e g c!>4->~ q2 <cis e g cis>4-^
 	\arpeggioNormal <d, d' f d'>\ff\arpeggio-. r r r2 r4
-	R1.*33
+	R1.*29
 % Bars 291 to 295
 	
 % Bars 296 to 300
@@ -373,10 +373,10 @@ musicViolinoIMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 % Bars 321 to 325
 	<e cis' a'>4\f r d-.\< cis( e) a,-.\!
 	bes-.\fz r r r2 r4

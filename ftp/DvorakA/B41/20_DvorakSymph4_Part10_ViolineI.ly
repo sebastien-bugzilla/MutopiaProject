@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-\include "./00-Common/DvorakSymph4_Format_Part10_ViolineI.ily"
+%\include "./00-Common/DvorakSymph4_Format_Part10_ViolineI.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v24_music_ViolinoI.ily"
 \include "./02-Mvt2/m02_v24_music_ViolinoI.ily"
@@ -47,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtI
-			}
+%			\new Voice {
+%				\formatViolinoIMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(violinoI) \tempiPartMvtI
 			}
@@ -61,7 +61,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -71,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtII
-			}
+%			\new Voice {
+%				\formatViolinoIMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(violinoI) \tempiPartMvtII
 			}
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtIII
-			}
+%			\new Voice {
+%				\formatViolinoIMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(violinoI) \tempiPartMvtIII
 			}
@@ -119,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtIV
-			}
+%			\new Voice {
+%				\formatViolinoIMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(violinoI) \tempiPartMvtIV
 			}

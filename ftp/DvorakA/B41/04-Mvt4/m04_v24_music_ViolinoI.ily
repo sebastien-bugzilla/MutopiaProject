@@ -156,15 +156,19 @@ musicViolinoIMvtIV = \relative c {
 	f8.->\fz ees16 c4->
 % Bars 131 to 135
 	des8.->\fz c16 aes4->
-	R2*20
+	R2*17
 % Bars 136 to 140
 	
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
-% Bars 151 to 155
 	
+	
+	\ni \mmrPos #-7 R2
+	\mmrPos #-7 R
+% Bars 151 to 155
+	\mmrPos #-4 R \no
 	bes'8(\pp\< a e g
 	a cis e g)
 	bes4(\! g

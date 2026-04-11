@@ -1923,16 +1923,47 @@ cueVoiceArpaDownMvtIII = \relative c {
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #
 %###############################################################################
 cueVoiceViolinoIMvtI = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceViolinoIMvtII = \relative c {
-	
+	s1*14
+	% bars 15 - 17
+	ees'4(_\markup {Cl.} g) f8-^ ees-^ d-^ c-^
+	bes4( d2 \tuplet 3/2 4 {c8 d a)}
+	c2.~ c8 bes
 }
 cueVoiceViolinoIMvtIII = \relative c {
-	
+	s1.*51
+	% bars 52 - 55
+	\voiceOne bes''1.->~\fz^\markup {Ob.}
+	bes2 c4->_\crescmarkup d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
+	s1.*67
+	% bar 123
+	\voiceTwo r2_\markup {Viol.II} r4 fis( a dis,) \oneVoice
+	s1.*16 s2*15
+	% bar 155
+	\voiceTwo r4 \tuplet 6/4 4 {r16_\markup {Ob.} g(\< a b c d)\!}
+	s2*110 s1.*51
+	% bar 317 - 320
+	\voiceOne bes1.->~\fz^\markup {Ob.}
+	bes2 c4->_\crescmarkup d-> c-> bes->
+	\afterGrace 99/100 a1.-> {\flag e8(}
+	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
 }
 cueVoiceViolinoIMvtIV = \relative c {
-	
+	s2*25
+	% bar 26
+	<>^\markup {Vlc.Cb.}
+	s2*4
+	% bar 30
+	<>^\markup {Vlc.}
+	s2*119
+	% bars 149 - 151
+	\clef alto \voiceOne r4^\markup {Vla} e8( g
+	bes a e g
+	a cis e g) \clef treble \oneVoice
 }
 %###############################################################################
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #
