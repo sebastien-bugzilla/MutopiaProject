@@ -164,7 +164,7 @@ musicViolinoIIMvtIII = \relative c {
 	
 	
 	R1.\fermata \section
-	\time 2/4 \key c \major R2*16
+	\time 2/4 \key c \major R2*15
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -174,7 +174,7 @@ musicViolinoIIMvtIII = \relative c {
 	
 	
 	
-	\mark \default
+	\ni \mmrPos #4 R2 \no \mark \default
 % Bars 156 to 160
 	\tuplet 3/2 4 {c8(_\pdolce e g)} g4(~
 	\tuplet 3/2 4 {g8 fis g)} g4(~
@@ -262,13 +262,17 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 226 to 230
 	f8-.[ aes-. g-. f-.]
 	<b, f'>-. r r4
-	R2*14
+	R2*10
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
-% Bars 241 to 245
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+% Bars 241 to 245
+	\mmrPos #4 R \no
 	e,4.->(\pp r16 d-.)
 	e4.->( r16 d-.)
 	e4(\< g\!)

@@ -154,7 +154,7 @@ musicViolinoIIMvtIV = \relative c {
 	q\fz r
 % Bars 131 to 135
 	q\fz r
-	R2*26
+	R2*22
 % Bars 136 to 140
 	
 % Bars 141 to 145
@@ -163,9 +163,13 @@ musicViolinoIIMvtIV = \relative c {
 	
 % Bars 151 to 155
 	
-% Bars 156 to 160
 	
-	\section \mark \default
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 156 to 160
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section \mark \default
 	\key d \major d2\pp~
 	d
 	fis~\<

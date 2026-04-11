@@ -1969,16 +1969,39 @@ cueVoiceViolinoIMvtIV = \relative c {
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #
 %###############################################################################
 cueVoiceViolinoIIMvtI = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceViolinoIIMvtII = \relative c {
-	
+	s1*14
+	% bars 15 - 17
+	ees'4(_\markup {Cl.} g) f8-^ ees-^ d-^ c-^
+	bes4( d2 \tuplet 3/2 4 {c8 d a)}
+	c2.~ c8 bes
 }
 cueVoiceViolinoIIMvtIII = \relative c {
-	
+	s1.*139 s2*15
+	% bar 155
+	\voiceTwo r4 \tuplet 6/4 4 {r16_\markup {Ob.} g''(\< a b c d)\!} \oneVoice
+	s2*82
+	% bars 238 - 241
+	c,4..(^\markup {Viol.I.} b16
+	c4.. b16)
+	c4..(\> b16
+	c4.. b16)\!
 }
 cueVoiceViolinoIIMvtIV = \relative c {
-	
+	s2*25
+	% bar 26
+	<>^\markup {Vlc.Cb.}
+	s2*4
+	% bar 30
+	<>^\markup {Fag.Vla}
+	s2*124
+	% bars 154 - 157
+	\voiceOne bes'''4(^\markup {Viol.I} g
+	e cis)
+	bes( a
+	c! bes) \oneVoice
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   V I O L A                    #
