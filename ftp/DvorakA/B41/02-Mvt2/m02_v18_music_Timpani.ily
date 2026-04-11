@@ -9,13 +9,17 @@ musicTimpaniMvtII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R1*15
+	R1*14
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	
+	
+	\ni \mmrPos #4 R1 \no
 % Bars 16 to 20
-	r2 << f,2:32\brack\pp\< {s8 s\> s s}>>
+	\once \voiceOne r2 << f,2:32\brack\pp\< {s8 s\> s s}>>
 	f1:\dimD \mark \default
 	bes4 r r2
 	R1*16
@@ -37,14 +41,14 @@ musicTimpaniMvtII = \relative c {
 	
 % Bars 51 to 55
 	\mark \default
-	R1*16
+	R1*14
 % Bars 56 to 60
 	
 % Bars 61 to 65
 	
 % Bars 66 to 70
-	
-	
+	\no \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	f'1:32->\fpp
 	<< f:\> {s4 s s s8 s\!}>>
 	<< f1:\> {s4 s s s8 s\!}>> \mark \default
@@ -100,8 +104,8 @@ musicTimpaniMvtII = \relative c {
 	
 	\mark \default
 % Bars 121 to 125
-	R1*2
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	<< bes1:32\pp {s4 s s s\<}>>
 	<< bes1: {s4 s\! s\> s8_\dimmarkup s\!}>>
 	bes4 r r2

@@ -5,7 +5,7 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicPiattiMvtIII = \relative c {
-	\clef treble
+	\clef bass
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
@@ -63,7 +63,7 @@ musicPiattiMvtIII = \relative c {
 	
 	
 	\mark \default
-	R1.*29
+	R1.*28
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -77,19 +77,19 @@ musicPiattiMvtIII = \relative c {
 % Bars 136 to 140
 	
 	
-	
-	R1.\fermata \section
-	\time 2/4 R2*16
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R1.\fermata \no \section
+	\time 2/4 R2*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #6 R2
+	\mmrPos #6 R
+	\mmrPos #6 R 
+	\mmrPos #6 R \no \mark \default
 % Bars 156 to 160
 	e4\pp r
 	e r
@@ -230,7 +230,7 @@ musicPiattiMvtIII = \relative c {
 	
 	\section
 % Bars 341 to 345
-	\time 2/4 R2*48
+	\time 2/4 R2*47
 % Bars 346 to 350
 	
 % Bars 351 to 355
@@ -248,5 +248,5 @@ musicPiattiMvtIII = \relative c {
 % Bars 381 to 385
 	
 % Bars 386 to 388
-	\fine
+	R2\fermata \fine
 }

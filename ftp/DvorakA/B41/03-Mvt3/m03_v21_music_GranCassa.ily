@@ -63,7 +63,7 @@ musicGranCassaMvtIII = \relative c {
 	
 	
 	\mark \default
-	R1.*29
+	R1.*28
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -77,101 +77,101 @@ musicGranCassaMvtIII = \relative c {
 % Bars 136 to 140
 	
 	
-	
-	R1.\fermata \section
-	\time 2/4 R2*16
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R1.\fermata \no \section
+	\time 2/4 R2*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	
-	
-	
-	\mark \default
+	\ni \mmrPos #6 R2
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no \mark \default
 % Bars 156 to 160
-	e4\pp r
-	e r
-	e r
-	e r
-	e r
+	a4\pp r
+	a r
+	a r
+	a r
+	a r
 % Bars 161 to 165
-	e r
-	e r
-	e e
-	e r
-	e r
+	a r
+	a r
+	a a
+	a r
+	a r
 % Bars 166 to 170
-	e r
-	e e
-	e r
-	e r
-	e r
+	a r
+	a a
+	a r
+	a r
+	a r
 % Bars 171 to 175
-	e r
-	e r
-	e r
-	e r
-	e r
+	a r
+	a r
+	a r
+	a r
+	a r
 % Bars 176 to 180
-	e r
-	e r
-	e r
-	e r
-	e r
+	a r
+	a r
+	a r
+	a r
+	a r
 % Bars 181 to 185
-	e r
-	e e \mark \default
-	e8 r r4
+	a r
+	a a \mark \default
+	a8 r r4
 	R2*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	r4 e\f
-	r e
-	r e
-	r e
-	r e
+	r4 a\f
+	r a
+	r a
+	r a
+	r a
 % Bars 196 to 200
-	r e
-	r e
-	r e
-	r e
-	r e
+	r a
+	r a
+	r a
+	r a
+	r a
 % Bars 201 to 205
-	r e
-	r e
-	r e
-	r e
-	r e
+	r a
+	r a
+	r a
+	r a
+	r a
 % Bars 206 to 210
-	r e
-	r e
-	r e
-	r e
-	r e
+	r a
+	r a
+	r a
+	r a
+	r a
 % Bars 211 to 215
-	r e
-	r e
-	r e
-	r e
-	r e\f
+	r a
+	r a
+	r a
+	r a
+	r a\f
 % Bars 216 to 220
-	r e
+	r a
 	R2*2
 	\mark \default
-	r4 e
-	r e
+	r4 a
+	r a
 % Bars 221 to 225
 	R2*3
 	
 	
-	e4 r
+	a4 r
 	R2
 % Bars 226 to 230
-	e4 r
-	e r
+	a4 r
+	a r
 	R2*38
 % Bars 231 to 235
 	

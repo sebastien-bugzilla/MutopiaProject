@@ -79,13 +79,17 @@ musicTimpaniMvtI = \relative c {
 % Bars 86 to 90
 		
 		\mark \default
-		R2.*14
+		R2.*10
 % Bars 91 to 95
 	
 % Bars 96 to 100
-	
-% Bars 101 to 105
 		
+		
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R
+		\mmrPos #4 R
+% Bars 101 to 105
+		\mmrPos #4 R \no
 		d4-^\f r r
 		d-^ r r
 		d-^ r r
@@ -121,7 +125,7 @@ musicTimpaniMvtI = \relative c {
 			}
 		}
 	}
-	R2.*42
+	R2.*40
 % Bars 131 to 135
 	
 % Bars 136 to 140
@@ -138,8 +142,12 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 166 to 170
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 171 to 175
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	d4->\ff r d->\fz
 	d-> r d->\fz
 	d8-> r d2:->
@@ -153,7 +161,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 181 to 185
 	d r r
 	d8-. r r4 r
-	R2.*35
+	R2.*31
 % Bars 186 to 190
 	
 % Bars 191 to 195
@@ -166,9 +174,13 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 211 to 215
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 216 to 220
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	d2:\ff d8 d
 	d8. d16 d4 r
 	d2: d8 d
@@ -254,7 +266,11 @@ musicTimpaniMvtI = \relative c {
 	
 	\mark \default
 % Bars 296 to 300
-	R2.*5
+	R2.*4
+	
+	
+	
+	\ni \mmrPos #-4 R2. \no
 % Bars 301 to 305
 	a4-^\ff r a-^
 	r a-^ r

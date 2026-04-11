@@ -43,15 +43,15 @@ musicTimpaniMvtIII = \relative c {
 	r2 r4 r2 a4\pp
 	d\fz r r r2 r4
 % Bars 31 to 35
-	R1.*14
+	R1.*11
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
-	
-	
-	
-	r2 r4 r2 a4-.\p
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\voiceTwo r2 r4 \oneVoice r2 a4-.\p
 % Bars 46 to 50
 	d-.\fz r r r2 r4
 	R1.*4
@@ -138,12 +138,16 @@ musicTimpaniMvtIII = \relative c {
 	b:
 	b4 r r r2 r4
 % Bars 126 to 130
-	R1.*12
+	R1.*8
 % Bars 131 to 135
 	
+	
+	
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R
 % Bars 136 to 140
-	
-	
+	\mmrPos #4 R \no
+	R1.
 	b1.:16\pp
 	b:\fermata \section
 	\time 2/4 R2*16^\mutaincg
@@ -158,7 +162,7 @@ musicTimpaniMvtIII = \relative c {
 	
 	\mark \default
 % Bars 156 to 160
-	R2*27
+	R2*24
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -167,9 +171,13 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 176 to 180
 	
-% Bars 181 to 185
 	
-	\mark \default
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 181 to 185
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	g4\mf r8 \tuplet 3/2 8 {g16 g g}
 	g4_\pocoapococresc r8 \tuplet 3/2 8 {g16 g g}
 	g4 r8 \tuplet 3/2 8 {g16 g g}
@@ -224,7 +232,7 @@ musicTimpaniMvtIII = \relative c {
 % Bars 226 to 230
 	c-^ r
 	g8 r r4^\mutainda
-	R2*34
+	R2*31
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -237,8 +245,12 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 256 to 260
 	
-% Bars 261 to 265
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 261 to 265
+	\mmrPos #-4 R \no
 	d'2:32\p
 	d:_\crescmarkup
 	d:
@@ -278,15 +290,15 @@ musicTimpaniMvtIII = \relative c {
 	r2 r4 r2 a4\pp
 	d\fz r r r2 r4
 % Bars 296 to 300
-	R1.*14
+	R1.*11
 % Bars 301 to 305
 	
 % Bars 306 to 310
 	
-	
-	
-	
-	r2 r4 r2 a4-.\p
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\voiceTwo r2 r4 \oneVoice r2 a4-.\p
 % Bars 311 to 315
 	d-.\fz r r r2 r4
 	R1.*4
@@ -332,13 +344,20 @@ musicTimpaniMvtIII = \relative c {
 	d2:
 	d:
 	d4->\fp r
-	R2*19
+	R2*11
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
-% Bars 366 to 370
 	
+	
+	
+	\ni \mmrPos #-4 R2
+% Bars 366 to 370
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*4
 % Bars 371 to 375
 	
 	

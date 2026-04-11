@@ -63,7 +63,7 @@ musicTriangoloMvtIII = \relative c {
 	
 	
 	\mark \default
-	R1.*29
+	R1.*28
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -77,9 +77,9 @@ musicTriangoloMvtIII = \relative c {
 % Bars 136 to 140
 	
 	
-	
-	R1.\fermata \section
-	\time 2/4 e4\p r
+	\ni \mmrPos #4 R1.
+	\mmrPos #4 R1.\fermata \no \section
+	\time 2/4 e''4\p r
 % Bars 141 to 145
 	e r
 	e r

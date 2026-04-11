@@ -1697,25 +1697,188 @@ cueVoiceTrombonoIIIMvtIV = \relative c {
 %#               C U E   V O I C E   F O R   P E R C U S S I O N               #
 %###############################################################################
 cueVoiceTimpaniMvtI = \relative c {
-	
+	s2.*97
+	% bars 98 - 101
+	\voiceTwo bes4-.\f^\markup {Trb.3} bes2->
+	f2.->
+	bes4-. bes2->
+	f2.-> \oneVoice
+	s2.*68
+	% bars 170 - 171
+	\voiceOne d''8(^\markup {Legni} f ees d bes c
+	d f ees d bes c) \oneVoice
+	s2.*42
+	% bars 214 - 217
+	\voiceOne f2->~^\markup {Cor.} f8 d-.
+	c8. f16 f4 r
+	f2->~ f8 d-.
+	c8. f16 f4 r \oneVoice
+	s2.*34 s2*3 s2.*45
+	% bar 300
+	\voiceOne e2->^\markup {Cor.I.II.Cb.} b!8.-> e16-> \oneVoice
 }
 cueVoiceTimpaniMvtII = \relative c {
-	
+	s1*14
+	% bars 15 - 16
+	\clef treble \voiceTwo ees'4(^\markup {Cor.I.} g) f8-^ ees-^ d-^ c-^
+	bes4 r \clef bass \oneVoice s2 
+	s1*49
+	% bars 66 - 67
+	\clef tenor \voiceOne bes4(^\markup {Vcl.} ees d8 c f ees)
+	d4( g) f( d8. c16) \clef bass \oneVoice
+	s1*26 s2*1 s1*26
+	% bars 121 - 122
+	\voiceOne bes4(^\markup {Archi} a aes) r8 aes
+	ees'4( d2 \tuplet 3/2 4 {c8 d ees)} \oneVoice
 }
 cueVoiceTimpaniMvtIII = \relative c {
-	
+	s1.*41
+	% bars 42 - 45
+	\voiceOne a'1.->~^\markup {Fag.}
+	a2 b!4 c( b) gis
+	a1.->~
+	a2. \oneVoice s2 s4
+	s1.*88
+	% bars 134 - 136
+	\voiceTwo r2^\markup {Cb.} r4 a,->\mf r r
+	b-> r r c!-> r r
+	r2 r4 f,->\p r r \oneVoice
+	s1.*3 s2*40
+	% bars 180 - 182
+	\transpose c f {
+		\relative c {
+			\clef treble \voiceOne <a'' c>4.\mf\trill^\markup {Cor.I-II} r8
+			q4.\trill r8
+			q4-> <c e>-> \clef bass \oneVoice
+		}
+	}
+	s2*76
+	% bars 259 - 261
+	\voiceOne \clef treble \tuplet 3/2 4 {aes''8[-.^\markup {Viol.I} r b!]-. cis( d!) ais-.
+	b-. d-. e-. e( f) d-.
+	d-. f-. g-. g( aes) f-.} \clef bass \oneVoice
+	s2*4 s1.*41
+	% bars 307 - 310
+	\voiceOne a,,1.->~^\markup {Fag.}
+	a2 b!4 c( b) gis
+	a1.->~
+	a2. s2 s4
+	s1.*30 s2*24
+	% bars 365 - 368
+	\transpose c f {
+		\relative c {
+			\clef treble \voiceOne <a'' cis>4~^\markup {Cor.I-II} q8[ r16 <e b'>]
+			<a cis>4~ q8[ r16 <e b'>]
+			<a cis>4-- <cis e>--
+			<b d>-- <a cis>-- \clef bass
+		}
+	}
 }
 cueVoiceTimpaniMvtIV = \relative c {
-	
+	s2*20
+	% bars 21 - 23
+	\clef treble \voiceTwo c'8.^\markup {Viol.I.} b16 g4
+	c8. b16 g4
+	c8. b16 g4\fermata \oneVoice \clef bass
+	s2*99
+	% bar 123 - 127
+	\voiceOne \clef treble cis'8.^\markup {\column {\lower #1.5 "Fl.Ob." "Viol.I."}} bis16 gis'4\fermata
+	s2
+	bes,8. aes16 ees'4\fermata
+	s2
+	des8. c16 aes'4\fermata \oneVoice
+	s2*4
+	% bars 132 -135
+	\voiceTwo \clef alto bes,,8.\mp^\markup {Vla} aes16 ees4
+	bes'8. aes16 ees4
+	bes'8. aes16 ees4
+	bes'8. aes16 ees4 \clef bass \oneVoice
+	s2*138
+	% bars 274 - 275
+	\clef treble a''16(^\markup {Viol.I.} gis gis' fis e dis cis b)
+	a( a' gis fis eis dis cis b) \clef bass
+	s2*52
+	% bar 328
+	<>^\markup {Archi}
+	s2*24
+	% bars 352 - 354
+	\voiceOne des,,,4->^\markup {Trbne} des->
+	des8.-. c16-. ees4->
+	des-. r \oneVoice
+	s2*3
+	% bars 358 - 360
+	\voiceOne des4->^\markup {Trbne} des->
+	d8.-. c16-. ees4->
+	des-> r
+	s2*46
+	% bars 407 - 412
+	\clef treble \voiceTwo gis'8.\p^\markup {Viol.I.} fis16( cis4)
+	gis'8. fis16( cis4)
+	gis'8. fis16( cis4)
+	gis'8. fis16( cis4)
+	gis'2(
+	fis) \clef bass \oneVoice
+	s2*120
+	% bars 533 - 539
+	\clef treble r4^\markup {Fl.I.} d''8-. r
+	d-. r d8.-. cis16
+	e8-. r r4
+	s2
+	r4 d8-. r
+	d-. r d8.-. cis16
+	e8-. r r4 \clef bass
 }
 cueVoiceTriangoloMvtIII = \relative c {
-	
+	s1.*21
+	% bars 22
+	<>^\markup {Ob.Cl.Fag.}
+	s1.*116
+	% bars 138 - 139
+	\voiceTwo \clef bass b1.:32\pp^\markup {Timp.}
+	b:\fermata \clef treble \oneVoice
+	s2*126 s1.*75 s2*25
+	% bar 366
+	<>^\markup {Fl.Ob.Cl.Fag.}
 }
 cueVoicePiattiMvtIII = \relative c {
-	
+	s1.*21
+	% bar 22
+	<>^\markup {\column {\lower #1.5 "Ob.Cl." "Fag."}}
+	s1.*116
+	% bars 138 - 139
+	\voiceTwo \clef bass b1.:32\pp^\markup {Timp.}
+	b:\fermata \clef treble \oneVoice
+	% bar 140
+	<>^\markup {Trgl.}
+	s2*12
+	% bars 152 - 155
+	\voiceTwo \clef treble <b'' d>4~\startTrillSpan q8\stopTrillSpan r16 <a c>
+	<b d>4\startTrillSpan~ q8\stopTrillSpan r16 <a c>
+	<b d>4 <c e>
+	<b d> r \clef bass \oneVoice
+	s2*110 s1.*75 s2*24
+	% bar 365
+	<>^\markup {Fl.Ob.Cl.Fag.}
 }
 cueVoiceGranCassaMvtIII = \relative c {
-	
+	s1.*21
+	% bar 22
+	<>^\markup {\column {\lower #1.5 "Ob.Cl." "Fag."}}
+	s1.*116
+	% bars 138 - 139
+	\voiceTwo \clef bass b1.:32\pp^\markup {Timp.}
+	b:\fermata \clef treble \oneVoice
+	% bar 140
+	<>^\markup {Trgl.}
+	s2*12
+	% bars 152 - 155
+	\voiceTwo \clef treble <b'' d>4~\startTrillSpan q8\stopTrillSpan r16 <a c>
+	<b d>4\startTrillSpan~ q8\stopTrillSpan r16 <a c>
+	<b d>4 <c e>
+	<b d> r \clef bass \oneVoice
+	s2*110 s1.*75 s2*24
+	% bar 365
+	<>^\markup {Fl.Ob.Cl.Fag.}
 }
 %###############################################################################
 %#                     C U E   V O I C E   F O R   A R P A                     #

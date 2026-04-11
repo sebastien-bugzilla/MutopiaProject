@@ -21,9 +21,9 @@ musicTimpaniMvtIV = \relative c {
 	R
 	R\fermata
 % Bars 21 to 25
-	R2*2
-	
-	R2\fermata
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R\fermata \no
 	R2*2^\gp
 	
 % Bars 26 to 30
@@ -118,17 +118,21 @@ musicTimpaniMvtIV = \relative c {
 % Bars 121 to 125
 	
 	
-	R2\fermata
+	\ni \mmrPos #-4 R2\fermata \no
 	R
-	R\fermata
+	\ni \mmrPos #-4 R\fermata \no
 % Bars 126 to 130
 	R
-	R\fermata
-	R2*30
+	\ni \mmrPos #-4 R\fermata \no
+	R2*4
 % Bars 131 to 135
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 136 to 140
-	
+	R2*22
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -180,7 +184,7 @@ musicTimpaniMvtIV = \relative c {
 	
 	\mark \default
 % Bars 246 to 250
-	R2*30
+	R2*28
 % Bars 251 to 255
 	
 % Bars 256 to 260
@@ -191,6 +195,10 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 271 to 275
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 276 to 280
 	a2:\ff
 	a:
@@ -246,7 +254,7 @@ musicTimpaniMvtIV = \relative c {
 % Bars 326 to 330
 	
 	\section
-	R2*36
+	R2*24
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -257,10 +265,18 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 351 to 355
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*3
 % Bars 356 to 360
 	
-% Bars 361 to 365
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+% Bars 361 to 365
+	R2*3
 	
 	
 	a2:_\ppsempre
@@ -292,7 +308,7 @@ musicTimpaniMvtIV = \relative c {
 % Bars 386 to 390
 	d r
 	a r
-	R2*25
+	R2*19
 % Bars 391 to 395
 	
 % Bars 396 to 400
@@ -301,9 +317,13 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 406 to 410
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 411 to 415
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	f4-.\pp^\solo f-.
 	f-. f-.
 	f-. f-.
@@ -374,7 +394,7 @@ musicTimpaniMvtIV = \relative c {
 	
 	\mark \default
 % Bars 491 to 495
-	R2*50
+	R2*42
 % Bars 496 to 500
 	
 % Bars 501 to 505
@@ -391,8 +411,16 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 531 to 535
 	
-% Bars 536 to 540
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+% Bars 536 to 540
+	R
+	\ni \mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R
 % Bars 541 to 545
 	a2:16\p
 	a:

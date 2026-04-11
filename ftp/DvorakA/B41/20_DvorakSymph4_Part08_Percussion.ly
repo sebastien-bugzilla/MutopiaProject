@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-\include "./00-Common/DvorakSymph4_Format_Part08_Percussion.ily"
+%\include "./00-Common/DvorakSymph4_Format_Part08_Percussion.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v18_music_Timpani.ily"
 \include "./02-Mvt2/m02_v18_music_Timpani.ily"
@@ -50,9 +50,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtI
-			}
+%			\new Voice {
+%				\formatTimpaniMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtI
 			}
@@ -64,7 +64,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -74,9 +74,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtII
-			}
+%			\new Voice {
+%				\formatTimpaniMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtII
 			}
@@ -98,9 +98,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtIII
-			}
+%			\new Voice {
+%				\formatTimpaniMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtIII
 			}
@@ -122,9 +122,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtIV
-			}
+%			\new Voice {
+%				\formatTimpaniMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtIV
 			}
@@ -146,9 +146,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTriangoloMvtIII
-			}
+%			\new Voice {
+%				\formatTriangoloMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(triangolo) \tempiPartMvtIII
 			}
@@ -160,7 +160,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -170,9 +170,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatPiattiMvtIII
-			}
+%			\new Voice {
+%				\formatPiattiMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(piatti) \tempiPartMvtIII
 			}
@@ -184,7 +184,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
@@ -194,9 +194,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatGranCassaMvtIII
-			}
+%			\new Voice {
+%				\formatGranCassaMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(grancassa) \tempiPartMvtIII
 			}
@@ -208,7 +208,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
