@@ -9,14 +9,18 @@ musicViolaMvtII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*17
+	R1*14
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-% Bars 16 to 20
 	
-	\mark \default
+	
+	
+	\ni \mmrPos #4 R1
+% Bars 16 to 20
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	r2 des'16(\pp f, aes f aes f des f)
 	r2 ees'16( g, c g des' g, ees g)
 	r2 ees'16( bes ees ges, bes ges ees ges)

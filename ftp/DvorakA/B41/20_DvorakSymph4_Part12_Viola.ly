@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-\include "./00-Common/DvorakSymph4_Format_Part12_Viola.ily"
+%\include "./00-Common/DvorakSymph4_Format_Part12_Viola.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v26_music_Viola.ily"
 \include "./02-Mvt2/m02_v26_music_Viola.ily"
@@ -47,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtI
-			}
+%			\new Voice {
+%				\formatViolaMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtI
 			}
@@ -61,7 +61,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -71,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtII
-			}
+%			\new Voice {
+%				\formatViolaMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtII
 			}
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtIII
-			}
+%			\new Voice {
+%				\formatViolaMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIII
 			}
@@ -119,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtIV
-			}
+%			\new Voice {
+%				\formatViolaMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIV
 			}

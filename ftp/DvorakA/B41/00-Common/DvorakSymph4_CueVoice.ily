@@ -2007,16 +2007,22 @@ cueVoiceViolinoIIMvtIV = \relative c {
 %#                    C U E   V O I C E   F O R   V I O L A                    #
 %###############################################################################
 cueVoiceViolaMvtI = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceViolaMvtII = \relative c {
-	
+	s1*14
+	% bars 15 - 17
+	\clef treble \voiceTwo ees'4(_\markup {Cl.} g) f8-^ ees-^ d-^ c-^
+	bes4( d2 \tuplet 3/2 4 {c8 d a)}
+	c2.~ c8 bes \clef alto \oneVoice
 }
 cueVoiceViolaMvtIII = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceViolaMvtIV = \relative c {
-	
+	s2*25
+	% bar 26
+	<>^\markup {Vlc.Cb.}
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #
