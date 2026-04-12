@@ -2028,16 +2028,33 @@ cueVoiceViolaMvtIV = \relative c {
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #
 %###############################################################################
 cueVoiceVioloncelloMvtI = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceVioloncelloMvtII = \relative c {
-	
+	s1*14
+	% bars 15 - 17
+	\clef treble \voiceTwo ees'4(_\markup {Cl.} g) f8-^ ees-^ d-^ c-^
+	bes4( d2 \tuplet 3/2 4 {c8 d a)}
+	c2.~ c8 bes \clef bass \oneVoice
 }
 cueVoiceVioloncelloMvtIII = \relative c {
-	
+	s1.*131
+	% bars 132 - 134
+	\voiceOne r2^\markup {Fag.} r4 a'2.(
+	b c
+	fis,4) \oneVoice s s s2 s4
+	s1.*5 s2*14
+	% bars 154 - 155
+	\clef bass << { \InCueContext 
+		d4->^\markup {Fag.I-II.} d->
+		d-> \tuplet 6/4 4 {r16 g( a b c d)}
+	} \\ {
+		\InCueContext d,,4-> d->
+		d->( g8) r
+	}>>
 }
 cueVoiceVioloncelloMvtIV = \relative c {
-	
+	% no Cue Voice
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   C O N T R A B A S S O              #

@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-\include "./00-Common/DvorakSymph4_Format_Part13_Violoncello.ily"
+%\include "./00-Common/DvorakSymph4_Format_Part13_Violoncello.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v27_music_Violoncello.ily"
 \include "./02-Mvt2/m02_v27_music_Violoncello.ily"
@@ -47,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtI
-			}
+%			\new Voice {
+%				\formatVioloncelloMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtI
 			}
@@ -61,7 +61,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -70,19 +70,26 @@
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(violoncello) \tempiPartMvtII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceVioloncelloMvtII
-			}
-			\new Voice {
-				\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
-			}
+		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
+			\new Staff <<
+%				\new Voice {
+%					\formatVioloncelloMvtII
+%				}
+				\new Voice {
+					\keepWithTag #'(violoncello) \tempiPartMvtII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceVioloncelloMvtII
+				}
+				\new Voice {
+					\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
+				}
+			>>
+			\new Staff <<
+				\new Voice {
+					\timeMvtII \musicVioloncelloDivisiMvtII
+				}
+			>>
 		>>
 		\header {
 			breakbefore = ##f
@@ -95,9 +102,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtIII
-			}
+%			\new Voice {
+%				\formatVioloncelloMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtIII
 			}
@@ -119,9 +126,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtIV
-			}
+%			\new Voice {
+%				\formatVioloncelloMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtIV
 			}

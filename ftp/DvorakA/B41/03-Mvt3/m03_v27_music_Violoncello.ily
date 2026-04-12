@@ -156,14 +156,14 @@ musicVioloncelloMvtIII = \relative c {
 	ees
 	b'!4(\pp dis fis a c fis,
 	a c dis) r2 r4
-	R1.*10
+	R1.*8
 % Bars 126 to 130
 	
 % Bars 131 to 135
 	
-	
-	
-	r2 r4 a,->\mf^\pizz r r
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no
+	\once \voiceTwo r2 r4 a,->\mf^\pizz r r
 	b-> r r c-> r r
 % Bars 136 to 140
 	r2 r4 fis,->\p r  r
@@ -187,8 +187,8 @@ musicVioloncelloMvtIII = \relative c {
 	r4 r8. g16-.
 	\tuplet 6/4 {d'(\fp\> e d e d e} \tuplet 3/2 {d cis d)\!} r8
 	\tuplet 6/4 {d16(\fp\> e d e d e} \tuplet 3/2 {d cis d)\!} r8
-	R2*2
-	\mark \default \clef bass
+	\ni \mmrPos #-2 R2
+	\mmrPos #-2 R \no \mark \default \clef bass
 % Bars 156 to 160
 	\tuplet 6/4 {c16(->\mf d c d c d} \tuplet 3/2 {c b c)} r8
 	\tuplet 6/4 {c16(-> d c d c d} \tuplet 3/2 {c b c)} r8
