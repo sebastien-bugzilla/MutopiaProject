@@ -18,9 +18,13 @@
 		\override TupletBracket.bracket-visibility = #'if-no-beam
 		\override Hairpin.to-barline = ##f
 		\override Hairpin.height = 0.55
-		\override TrillSpanner.bound-details.right.padding = #1
+%		\override TrillSpanner.bound-details.right.padding = #1
+		\override TrillSpanner.bound-details.right.attach-dir = 1
 		\override Arpeggio.padding = #0.25
 		\override TupletNumber.avoid-slur = #'ignore
+		\override DynamicTextSpanner.font-size = #0
+		\override Beam.breakable = ##t
+		\override Beam.damping = #3
 		\override DynamicTextSpanner.font-size = #0
 		
 %		\override NoteHead.transparent = ##t
@@ -39,17 +43,19 @@
 		\CueVoice
 		fontSize = #-3
 		\override Stem.length-fraction = #0.85
-		\override TupletBracket.bracket-visibility = ##f
+		\override TupletBracket.bracket-visibility = ##'if-no-beam
 		\override StemTremolo.beam-thickness = #0.35 
 	}
 	\context {
 		\Staff
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f
-%		\override MultiMeasureRest.space-increment = 0
+		\override MultiMeasureRest.space-increment = 0
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 		\override CueClef.font-size = #-1 
 		\override CueEndClef.font-size = #-1 
+		\override MeasureCounter.font-size = #-3
+		\override DoublePercentRepeatCounter.font-size = #-3
 		\override Accidental.avoid-slur = #'ignore
 		
 %		\override StaffSymbol.transparent = ##t
@@ -62,13 +68,14 @@
 		\override RehearsalMark.extra-spacing-height = #'(-10 . 10)
 		\override RehearsalMark.outside-staff-priority = ##f
 %		\override RehearsalMark.font-family = #'sans
-%		\override BarNumber.font-size = #0.1
+		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
 		
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
-		\override BarNumber.break-visibility = ##(#f #t #t)
+
+%		\override BarNumber.break-visibility = ##(#f #t #t)
 	}
 }
 

@@ -2,7 +2,7 @@
     185     499    6068 10_DvorakSymph4_Conductor_mvt2.ly
     190     503    6345 10_DvorakSymph4_Conductor_mvt3.ly
     168     448    5537 10_DvorakSymph4_Conductor_mvt4.ly
-    244     587    5233 20_DvorakSymph4_Part01_Flauti.ly
+    244     736    5412 20_DvorakSymph4_Part01_Flauti.ly
     244     587    5136 20_DvorakSymph4_Part02_Oboi.ly
     244     587    5448 20_DvorakSymph4_Part03_Clarinetti.ly
     244     587    5292 20_DvorakSymph4_Part04_Fagotti.ly
@@ -40,14 +40,14 @@
     372    5443   45522 00-Common/DvorakSymph4_Format_temp.ily
      37     300    2079 00-Common/DvorakSymph4_Header.ily
      95     346    3153 00-Common/DvorakSymph4_LayoutConductors.ily
-     74     273    2659 00-Common/DvorakSymph4_LayoutParts.ily
+     81     297    2937 00-Common/DvorakSymph4_LayoutParts.ily
     105     408    3854 00-Common/DvorakSymph4_NameGrandStaff.ily
     646    1947   14908 00-Common/DvorakSymph4_NameStaff.ily
     732    2478   20394 00-Common/DvorakSymph4_NameVoice.ily
      71     196    1702 00-Common/DvorakSymph4_PaperConductors.ily
      67     188    1609 00-Common/DvorakSymph4_PaperParts.ily
-    795    2750   21464 00-Common/DvorakSymph4_Shortcuts.ily
-    169     472    2889 00-Common/DvorakSymph4_Tempi.ily
+    795    2761   21475 00-Common/DvorakSymph4_Shortcuts.ily
+    604    2314   19004 00-Common/DvorakSymph4_Tempi.ily
      23      94     612 00-Common/DvorakSymph4_timeMvt.ily
     472    1923    9246 01-Mvt1/m01_v01_music_FlautoI_C.ily
     472    1600    7772 01-Mvt1/m01_v01_music_FlautoI.ily
@@ -248,4 +248,4 @@
     802    2344   11472 04-Mvt4/m04_v28_music_Contrabasso_C.ily
     802    2322   11324 04-Mvt4/m04_v28_music_Contrabasso.ily
      83     244    1611 05-Midi/DvorakSymph4_Tempi.ily
-  93894  325132 1721924 total
+  94336  327158 1738507 total
