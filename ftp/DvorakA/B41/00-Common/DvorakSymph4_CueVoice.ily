@@ -2060,14 +2060,44 @@ cueVoiceVioloncelloMvtIV = \relative c {
 %#              C U E   V O I C E   F O R   C O N T R A B A S S O              #
 %###############################################################################
 cueVoiceContrabassoMvtI = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceContrabassoMvtII = \relative c {
-	
+	s1*14
+	% bars 15 - 17
+	\clef treble \voiceTwo ees'4(_\markup {Cl.} g) f8-^ ees-^ d-^ c-^
+	bes4( d2 \tuplet 3/2 4 {c8 d a)}
+	c2.~ c8 bes \clef bass \oneVoice
 }
 cueVoiceContrabassoMvtIII = \relative c {
-	
+	s1.*131
+	% bars 132 - 134
+	\voiceOne r2^\markup {Fag.} r4 a'2.(\pp
+	b c
+	fis,4) \oneVoice s s s2 s4
+	s1.*5 s2*14
+	% bars 154 - 155
+	\voiceOne d4->^\markup {Fag.} d->
+	d-> \tuplet 6/4 4 {r16 g(\< a b c d)\!} \oneVoice
+	s2*23
+	% bars 179 - 182
+	\voiceOne r4 r8^\markup {Vcl.} c,32( d e f)
+	\tuplet 6/4 4 {g16( a g a g a} \tuplet 3/2 8 {g fis g)} r8
+	\tuplet 6/4 4 {g16( a g a g a} \tuplet 3/2 8 {g fis g)} r8
+	\tuplet 3/2 8 {g16( fis g)} r8 \tuplet 3/2 8 {b16( a b)} r8 \oneVoice
+	s2*55
+	% bars 238 - 240
+	\voiceOne r4^\markup {Vcl.} f\p
+	r e
+	r d \oneVoice
+	s2*25 s1.*75 s2*32
+	% bars 373 - 374
+	\voiceOne d2:32\pp^\markup {Timp.}
+	d: \oneVoice
 }
 cueVoiceContrabassoMvtIV = \relative c {
-	
+	s2*195
+	% bars 196 - 197
+	\clef treble \voiceOne dis'8(^\markup {Viol.I.} e g cis
+	e[ g b) r16 a-.] \clef bass \oneVoice
 }

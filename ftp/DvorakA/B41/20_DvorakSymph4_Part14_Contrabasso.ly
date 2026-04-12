@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-\include "./00-Common/DvorakSymph4_Format_Part14_Contrabasso.ily"
+%\include "./00-Common/DvorakSymph4_Format_Part14_Contrabasso.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v28_music_Contrabasso.ily"
 \include "./02-Mvt2/m02_v28_music_Contrabasso.ily"
@@ -47,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtI
-			}
+%			\new Voice {
+%				\formatContrabassoMvtI
+%			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtI
 			}
@@ -61,7 +61,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -71,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtII
-			}
+%			\new Voice {
+%				\formatContrabassoMvtII
+%			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtII
 			}
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtIII
-			}
+%			\new Voice {
+%				\formatContrabassoMvtIII
+%			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtIII
 			}
@@ -119,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtIV
-			}
+%			\new Voice {
+%				\formatContrabassoMvtIV
+%			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtIV
 			}

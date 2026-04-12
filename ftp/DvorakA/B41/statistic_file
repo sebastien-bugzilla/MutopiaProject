@@ -15,10 +15,10 @@
     144     375    3592 20_DvorakSymph4_Part11_ViolineII.ly
     144     375    3480 20_DvorakSymph4_Part12_Viola.ly
     151     391    3809 20_DvorakSymph4_Part13_Violoncello.ly
-    144     363    3635 20_DvorakSymph4_Part14_Contrabasso.ly
+    144     375    3648 20_DvorakSymph4_Part14_Contrabasso.ly
       7       6      40 test.ly
      77     500    2854 00-Common/DvorakSymph4_Corrections.ily
-   2073    7494   45992 00-Common/DvorakSymph4_CueVoice.ily
+   2103    7680   46925 00-Common/DvorakSymph4_CueVoice.ily
     286    1687   13176 00-Common/DvorakSymph4_Format_Cond_Mvt01.ily
     174     952    7909 00-Common/DvorakSymph4_Format_Cond_Mvt02.ily
     274    1631   12644 00-Common/DvorakSymph4_Format_Cond_Mvt03.ily
@@ -144,7 +144,7 @@
     307    1745    9185 02-Mvt2/m02_v27_music_Violoncello_C.ily
     311    1591    8283 02-Mvt2/m02_v27_music_Violoncello.ily
     170    1016    4949 02-Mvt2/m02_v28_music_Contrabasso_C.ily
-    170    1001    4842 02-Mvt2/m02_v28_music_Contrabasso.ily
+    174    1012    4896 02-Mvt2/m02_v28_music_Contrabasso.ily
     346    1283    7442 03-Mvt3/m03_v01_music_FlautoI_C.ily
     350    1065    6378 03-Mvt3/m03_v01_music_FlautoI.ily
     346    1191    6781 03-Mvt3/m03_v02_music_FlautoII_C.ily
@@ -200,7 +200,7 @@
     472    2500   11032 03-Mvt3/m03_v27_music_Violoncello_C.ily
     472    2482   10902 03-Mvt3/m03_v27_music_Violoncello.ily
     417    1657    7193 03-Mvt3/m03_v28_music_Contrabasso_C.ily
-    417    1650    7139 03-Mvt3/m03_v28_music_Contrabasso.ily
+    425    1702    7389 03-Mvt3/m03_v28_music_Contrabasso.ily
     632    1931    9119 04-Mvt4/m04_v01_music_FlautoI_C.ily
     656    1821    8600 04-Mvt4/m04_v01_music_FlautoI.ily
     538    1366    6354 04-Mvt4/m04_v02_music_FlautoII_C.ily
@@ -246,6 +246,6 @@
     831    3355   15363 04-Mvt4/m04_v27_music_Violoncello_C.ily
     831    3240   14733 04-Mvt4/m04_v27_music_Violoncello.ily
     802    2344   11472 04-Mvt4/m04_v28_music_Contrabasso_C.ily
-    802    2314   11289 04-Mvt4/m04_v28_music_Contrabasso.ily
+    802    2322   11324 04-Mvt4/m04_v28_music_Contrabasso.ily
      83     244    1611 05-Midi/DvorakSymph4_Tempi.ily
-  93856  324849 1720372 total
+  93898  325118 1721657 total

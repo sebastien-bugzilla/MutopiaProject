@@ -150,23 +150,23 @@ musicContrabassoMvtIII = \relative c {
 	ees, r r ees'\> r r
 % Bars 121 to 125
 	ees, r r ees'\! r r
-	R1.*12
+	R1.*10
 	
 	
 % Bars 126 to 130
 	
 % Bars 131 to 135
 	
-	
-	
-	r2 r4 a,,->\mf r r
+	\ni \mmrPos #-4 R1.
+	\mmrPos #-4 R \no
+	\once \voiceTwo r2 r4 a,,->\mf r r
 	b-> r r c-> r r
 % Bars 136 to 140
 	r2 r4 fis,->\p r  r
 	R1.
 	b4\pp r r r2 r4
 	R1.\fermata \section
-	\time 2/4 \key c \major R2*16
+	\time 2/4 \key c \major R2*14
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -175,10 +175,10 @@ musicContrabassoMvtIII = \relative c {
 	
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no \mark \default
 % Bars 156 to 160
-	R2*27
+	R2*23
 	
 % Bars 161 to 165
 	
@@ -188,9 +188,13 @@ musicContrabassoMvtIII = \relative c {
 	
 % Bars 176 to 180
 	
-% Bars 181 to 185
 	
-	\mark \default
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 181 to 185
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	g4..->\mf^\arco fis16(
 	g4..)->_\brackpocoapococresc fis16(
 	g4..)-> fis16(
@@ -245,15 +249,19 @@ musicContrabassoMvtIII = \relative c {
 % Bars 226 to 230
 	aes-^ r
 	g8-. r r4
-	R2*14
+	R2*10
 	
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
-% Bars 241 to 245
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+% Bars 241 to 245
+	R
 	c4\pp^\pizz r
 	c r
 	c\< r 
@@ -384,7 +392,7 @@ musicContrabassoMvtIII = \relative c {
 	b4-^ b-^
 	a-^ g-^
 	d'-> r
-	R2*21
+	R2*19
 	
 % Bars 356 to 360
 	
@@ -395,8 +403,8 @@ musicContrabassoMvtIII = \relative c {
 % Bars 371 to 375
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	d4..(\pp cis16_\crescpocoapoco
 % Bars 376 to 380
 	d4 a8 cis)

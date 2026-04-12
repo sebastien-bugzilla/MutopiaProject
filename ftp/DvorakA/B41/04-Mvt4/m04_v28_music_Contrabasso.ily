@@ -190,7 +190,7 @@ musicContrabassoMvtIV = \relative c {
 % Bars 156 to 160
 	
 	\section \mark \default
-	\key d \major R2*40
+	\key d \major R2*38
 	
 	
 % Bars 161 to 165
@@ -208,8 +208,8 @@ musicContrabassoMvtIV = \relative c {
 % Bars 191 to 195
 	
 % Bars 196 to 200
-	
-	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-4 R \no
 	d2\p
 	d4-.~\< d-.
 	<< d2\! {s4 s8 s\>}>>

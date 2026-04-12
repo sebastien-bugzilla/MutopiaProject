@@ -9,14 +9,18 @@ musicContrabassoMvtII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*17
+	R1*14
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-% Bars 16 to 20
 	
-	\mark \default
+	
+	
+	\ni \mmrPos #4 R1
+% Bars 16 to 20
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	bes4\pp^\pizz r8 bes f'4 r8 f
 	bes,4 r8 bes ees4 r8 ees
 	aes,4 r8 ges ges'4 r8 ges,
