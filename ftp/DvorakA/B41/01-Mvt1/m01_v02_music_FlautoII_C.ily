@@ -54,7 +54,7 @@ musicFlautoIIMvtI = \relative c {
 	
 % Bars 51 to 55
 		r4 a4.->\fz g8(
-		f8.) ees16( d8.) c16( bes8.) a16(
+		f8.)[ ees16( d8.) c16( bes8.) a16](
 		bes8) r r4 r
 		R2.*7
 % Bars 56 to 60
@@ -81,9 +81,9 @@ musicFlautoIIMvtI = \relative c {
 % Bars 91 to 95
 		a)
 		bes(
-		a)
-		bes(
-		a)
+		c)
+		bes~
+		bes
 % Bars 96 to 100
 		<< bes2.(~ {s2 s4\<}>>
 		bes2 g4)\!
@@ -271,7 +271,7 @@ musicFlautoIIMvtI = \relative c {
 	bes2\fz~ bes8 r
 	bes4..\fz e16[ cis8.-> g16]-.
 	f4.->( a16 f d8) r
-	fis4..->\fz bes16-. \tuplet 3/2 4 {a8( fis ees')}
+	fis4..->\fz bes16-. \tuplet 3/2 4 {a8( fis! ees')}
 % Bars 266 to 270
 	bes2->~ bes8 r
 	\dynEO #'(0 . 2) b4..\fz e,16-. d( c b f')
@@ -410,7 +410,7 @@ musicFlautoIIMvtI = \relative c {
 	cis8. e16 e4-. r
 	R2.*2
 	
-	c,2\fp~ c8\> a-.
+	c,!2\fp~ c8\> a-.
 % Bars 396 to 400
 	a8. c16 c4-.\! r
 	R2.*2

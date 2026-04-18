@@ -64,6 +64,21 @@ correctionsFlauti = \markup {
 	
 	% bar 19, Flauti I
 	"Bar 19 for Flauti I, in cue voice, bes on the second beat, is replaced by c."
+	
+	% Mvt I bar 376 - 379, Flauto I
+	"In Mvt I, Bar 376-379 for Flauti I, a missing hairpin is added."
+	
+	% Mvt II, bar 57, Flauto I
+	"In Mvt II, Bar 57, for Flauto I, a missing slur is added."
+	
+	% Mvt IV, bar 220, Flauto I
+	"In Mvt III, bar 220, for Flauto I, the third note (d) is replace by cis."
+	
+	% Mvt IV, bar 229, Flauto I
+	"In Mvt III, bar 229, for Flauto I, a missing hairpin is added."
+	
+	% Mvt I, bar 365, Flauto IU
+	"In Mvt I, bar 365, for flauto II, the notes (d a fis) are taken from conductor rather than in part score (a d fis), by similitude with Fl.I and other instruments."
 }
 correctionsCor = \markup {
 	

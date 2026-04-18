@@ -41,7 +41,7 @@ musicFlautoIIMvtIII = \relative c {
 	\ni \mmrPos #-4 R1.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-4 R \no \markXoffset #-0.2 \mark \default
 % Bars 56 to 60
 	cis4\f r r r2 r4
 	R1.*2
@@ -50,10 +50,10 @@ musicFlautoIIMvtIII = \relative c {
 	R1.*2
 % Bars 61 to 65
 	
-	r2 r4 aes2.->\<_\fzmarkup
-	aes->_\fzmarkup aes->_\fzmarkup\!
-	r2 r4 aes2.->\<_\fzmarkup
-	aes->_\fzmarkup aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) aes2.->\<_\fzmarkup
+	\markEO #'(0 . 1.45) aes->_\fzmarkup \markEO #'(0 . 1.7) aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) aes2.->\<_\fzmarkup
+	\markEO #'(0 . 1.45) aes->_\fzmarkup \markEO #'(0 . 1.7) aes->_\fzmarkup\!
 % Bars 66 to 70
 	r2 b!4-._\pcresc b2-> b4-.
 	r2 b4-. b2-> b4-.
@@ -61,10 +61,10 @@ musicFlautoIIMvtIII = \relative c {
 	b2-> b4-. b2-> b4-.\!
 	cis\f r r r2 r4
 % Bars 71 to 75
-	R1.*5
+	R1.*3
 	
 	
-	
+	\tempoXoffset #-2 R1.*2
 	\section
 % Bars 76 to 80
 	\key d \major d1.->_\fmarcato~
@@ -125,17 +125,17 @@ musicFlautoIIMvtIII = \relative c {
 	c'1.\pp~
 	c~
 	c~
-	c4 r r r2 r4
+	c4 r r r2^\mutainflpiccii r4
 % Bars 126 to 130
-	R1.*13^\mutainflautopiccoloii
+	R1.*13
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
 	
 	
-	R1.\fermata \section \sectionLabel "TRIO"
-	\key c \major \time 2/4 R2*15
+	\once \ni R1.\fermata \section \sectionLabel "TRIO" \newSpacingSection
+	\keyExtraSpace #'(extra-space . 2.5) \key c \major \time 2/4 \mmrLength #20 R2*15
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -145,9 +145,9 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2 \no \mark \default
+	\ni \mmrPos #6 R2 \no \markEsw #'(-0.5 . 0.5) \mark \default
 % Bars 156 to 160
-	e,4_\mffz\startTrillSpan~ e8\stopTrillSpan r
+	e,4^\flpicc_\mffz\startTrillSpan~ e8\stopTrillSpan r
 	e4~\fz\startTrillSpan e8\stopTrillSpan r
 	R2*2
 	
@@ -179,8 +179,8 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 181 to 185
 	d4\brack\fz\startTrillSpan~ d8[\stopTrillSpan r16 cis-.]
 	d4-> f-> \mark \default
-	g8\fz r r4
-	R2*7^\mutainfliiigrande
+	g8\fz r r4^\mutainfliigrande
+	R2*7
 	
 % Bars 186 to 190
 	
@@ -199,12 +199,12 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 201 to 205
 	fis4-> fis->
 	fis-> g->
-	b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
-	b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
+	\dynEO #'(0 . 2) b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
+	\dynEO #'(0 . 2) b4\brack\fz\startTrillSpan~ b8[\stopTrillSpan r16 a-.]
 	b4-> c->
 % Bars 206 to 210
 	b-> g16-.\< g32( a b c d e)\!
-	f!4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	\dynEO #'(0 . 1) f!4\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 	f4\brack\fz\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 	f4-> a->
 	g-> f8-.\< a,32( b c d)\!
@@ -229,19 +229,21 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 226 to 230
 	c-^ r
 	b8-. r r4
-	R2*36
+	R2*14
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
+	\mmrLength #35 R2*15
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
+	\mmrLength #19 R2*7
 % Bars 261 to 265
 	
 	
@@ -249,7 +251,7 @@ musicFlautoIIMvtIII = \relative c {
 	\ni \mmrPos #-4 R2 
 	\mmrPos #-4 R \no \section
 % Bars 266 to 270
-	\time 6/4 \key d \minor cis4\ff r r r2 r4
+	\time 6/4 \key d \minor \newSpacingSection cis4\ff r r r2 r4
 	R1.*2
 	
 	cis4\f r r r2 r4
@@ -281,7 +283,7 @@ musicFlautoIIMvtIII = \relative c {
 	\ni \mmrPos #-4 R1.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-4 R \no \markXoffset #-0.2 \mark \default
 % Bars 321 to 325
 	cis4\f r r r2 r4
 	R1.*2
@@ -290,10 +292,10 @@ musicFlautoIIMvtIII = \relative c {
 	R1.*2
 % Bars 326 to 330
 	
-	r2 r4 aes2.->_\fzmarkup\< 
-	aes->_\fzmarkup aes->_\fzmarkup\!
-	r2 r4 aes2.->\<_\fzmarkup
-	aes->_\fzmarkup aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) aes2.->_\fzmarkup\< 
+	\markEO #'(0 . 1.45) aes->_\fzmarkup \markEO #'(0 . 1.7) aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) aes2.->\<_\fzmarkup
+	\markEO #'(0 . 1.45) aes->_\fzmarkup \markEO #'(0 . 1.7) aes->_\fzmarkup\!
 % Bars 331 to 335
 	r2 b4-._\pcresc b2-> b4-.
 	r2 b4-. b2-> b4-.
@@ -305,7 +307,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	\section \sectionLabel "CODA"
+	\section \sectionLabel "CODA" \newSpacingSection
 % Bars 341 to 345
 	\key d \major \time 2/4 a4.->_\fffz r8
 	a4.->\fz r8
@@ -322,15 +324,23 @@ musicFlautoIIMvtIII = \relative c {
 	b4-> b->
 	a!-> b->
 	a-> r
-	R2*28
+	R2*11
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
+	
+	
+	
+	\mmrLength #15 \mmrnDown R2*10
 % Bars 366 to 370
 	
 % Bars 371 to 375
 	
+	
+	
+	
+	\mmrLength #15 \mmrnDown R2*7
 % Bars 376 to 380
 	
 % Bars 381 to 385

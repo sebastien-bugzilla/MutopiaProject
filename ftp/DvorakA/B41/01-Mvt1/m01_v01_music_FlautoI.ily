@@ -10,7 +10,7 @@ musicFlautoIMvtI = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*17
+		\mmrLength #25 R2.*17
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -18,15 +18,15 @@ musicFlautoIMvtI = \relative c {
 % Bars 16 to 20
 		
 		
-		\ni R2.
-		R \no
-		e'''2\ff~ e8 e,-.
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
+		\dynEO #'(0 . 2) e'''2\ff~ e8 e,-.
 % Bars 21 to 25
 		e8.-> a16 a8 r a8.-> cis16
 		cis8 r cis8.-> e16 e8-> g->
 		e-> cis-> bes-> g-> \tuplet 3/2 4 {e-> cis-> bes->}
 		a-. r r4 r
-		r r a'16(\f\< cis e a)\! \mark \default
+		r r a'16(\f-\tweak extra-offset #'(0 . 0.5) \< cis e a)\! \mark \default
 % Bars 26 to 30
 		d,2->\ff a8.-> d16
 		cis2\fz( bes8) r
@@ -53,7 +53,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 46 to 50
 	
 % Bars 51 to 55
-		r4 c'4.->\fz bes8(
+		\tempoXoffset #-1 r4 c'4.->\fz bes8(
 		a8.) g16( f8.) ees16( d8.) c16(
 		bes8) r r4 r
 		R2.*7
@@ -82,7 +82,7 @@ musicFlautoIMvtI = \relative c {
 		a2.(~
 		a8 c bes a f g)
 		a( c bes a f a)
-		bes(\mf d c_\brackM\crescmarkup bes g a)
+		bes(\mf d c_\brackM\crescmarkup bes g bes)
 		c(\< ees d c a c
 % Bars 86 to 90
 		f4)-.\! r r
@@ -128,7 +128,7 @@ musicFlautoIMvtI = \relative c {
 			
 			}
 			\volta 2 {
-				cis2\ff~ cis8 gis-.
+				\noteHeadEsw #'(-3.5 . 0) cis2\ff~ \revertNoteHeadEsw cis8 gis-.
 				gis8.-> cis16 cis4-. r
 			}
 		}
@@ -165,10 +165,10 @@ musicFlautoIMvtI = \relative c {
 	
 	
 	a,4(\p\< c4. ees8)
-	ees2.(~\!
+	\shape #'((0 . 0)(0 . 0)(0 . -0.5)(0 . -1)) Slur ees2.(~\!
 	ees4 bes\p ges\>
 % Bars 161 to 165
-	ees bes ges\!
+	ees \once \stemUp bes ges\!
 	f) r r
 	R2.*7
 % Bars 166 to 170
@@ -178,11 +178,11 @@ musicFlautoIMvtI = \relative c {
 	
 	d''8(\f\< f ees d bes c
 % Bars 171 to 175
-	d f ees d bes c)\! \mark \default
+	d f ees d bes c)\! \markXoffset #-0.2 \mark \default
 	d8-.\ff r bes'-. r ges-.\fz r
 	f-. r bes-. r ges-.\fz r
 	f-. r bes4..->\fz a16-.
-	g8->[ r16 f] ees8->[ r16 d] c8[-> r16 f]
+	g!8->[ r16 f] ees8->[ r16 d] c8[-> r16 f]
 % Bars 176 to 180
 	bes,8-. r bes'-. r ges-.\sfz r
 	f-. r bes-. r ges-.\sfz r
@@ -198,7 +198,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 186 to 190
 	cis2->~\fz cis8 ais-.
 	ais8.-> cis16 cis4-. r
-	fis2.\ff~
+	\startMeasureCount fis2.\ff~
 	fis~
 	fis~
 % Bars 191 to 195
@@ -206,7 +206,7 @@ musicFlautoIMvtI = \relative c {
 	fis~\>
 	fis~
 	fis~
-	<< fis~ {s8 s s s s s\!}>>
+	<< fis~ {s8 s s s s s\!}>> \stopMeasureCount
 % Bars 196 to 200
 	fis4\p cis2(
 	ais_\dimmarkup fis4~
@@ -250,7 +250,7 @@ musicFlautoIMvtI = \relative c {
 	r4 r gis,8.->\f b16
 % Bars 231 to 235
 	b2.\fz\>~
-	b\!
+	<< b {s4 s s\!}>>
 	R2.*9
 % Bars 236 to 240
 	
@@ -281,12 +281,12 @@ musicFlautoIMvtI = \relative c {
 % Bars 261 to 265
 	d,2->\ff a8.-> d16-.
 	cis2(\fz bes!8) r
-	g'4..\fz e16[ cis8.-> g16]-.
+	\dynEO #'(0 . 1) g'4..\fz e16[ cis8.-> g16]-.
 	f4.->( a16 f d8) r
-	c'4..->\fz bes16-. \tuplet 3/2 4 {a8( fis ees')}
+	\dynEO #'(0 . 1) c'4..->\fz bes16-. \tuplet 3/2 4 {a8( fis ees')}
 % Bars 266 to 270
 	d2->~ d8 r
-	f4..\fz e16-. d( c b f')
+	\dynEO #'(0 . 1) f4..\fz e16-. d( c b f')
 	e8-. r a-. r f-.\fz r
 	e-. r a-. r f-.\fz r
 	e-. r a->[ r16 gis-. fis8-> r16 e-.]
@@ -379,7 +379,7 @@ musicFlautoIMvtI = \relative c {
 	
 	
 	\mark \default
-	a,4(\p\< d4. fis8)
+	\hairpinShorten #'(0 . 1) a,4(\p\< d4. fis8)
 	fis2( e4)\!
 % Bars 361 to 365
 	a,(\< d4. fis8)
@@ -391,7 +391,7 @@ musicFlautoIMvtI = \relative c {
 	a2( g4)\!
 	fis(\mf d' fis~
 	fis8 a g fis d e)
-	<< fis2.(~\<_\moltocresc {s8 s s  s s s\!}>>
+	<< fis2.(~\<-\tweak extra-offset #'(0 . -0.2) ^\moltocresc {s8 s s  s s s\!}>>
 	fis8 a g fis d e)
 % Bars 371 to 375
 	fis( a g fis d e)
@@ -442,13 +442,13 @@ musicFlautoIMvtI = \relative c {
 	e8. g16 g4-. r
 	g2~ g8 e-.
 	e8. g16 g4-. r
-	R2.*10
+	R2.*8
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	
 	
-	
+	\mmrLength #17 \mmrnDown R2.*2
 	\markk
 	R2.*12
 % Bars 426 to 430

@@ -7,7 +7,7 @@
 cueVoiceFlautoIMvtI = \relative c {
 	s2.*17
 	% bars 18 - 19
-	\voiceOne r4^\markup {Viol.} f''-> g->
+	\oneVoice r4^\markup {Viol.} f''-> g->
 	a-> c-> d-> \oneVoice
 }
 cueVoiceFlautoIMvtII = \relative c {
@@ -21,10 +21,10 @@ cueVoiceFlautoIMvtII = \relative c {
 	<>^\markup {Ob.I}
 	s1*7
 	% bar 78
-	<>^\markup {Archi}
+	<>-\offset X-offset 0.5 ^\markup {Archi}
 	s1*16 s2*1
 	% bar 95
-	<>^\markup {Vclo}
+	<>-\offset X-offset -3.5 ^\markup {Vclo}
 	s1*19
 	% bar 114
 	<>^\markup {Oboe.I}
@@ -43,7 +43,7 @@ cueVoiceFlautoIMvtIII = \relative c {
 	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
 	s1.*84 s2*15
 	% bar 155
-	\voiceOne r4 \tuplet 6/4 4 {r16^\markup {Ob.} g(\< a b c d)\!} \oneVoice
+	r4^\markup {Ob.} \tuplet 6/4 4 {r16 g(\< a b c d)\!} \oneVoice
 	s2*110 s1.*51
 	% bars 317 - 320
 	\voiceOne bes1.->\fz~^\markup {Ob.I.}
@@ -52,7 +52,7 @@ cueVoiceFlautoIMvtIII = \relative c {
 	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
 	s1.*20 s2*38
 	% bars 379 - 381
-	\voiceOne d'4->^\markup {Ob.I.} a'->
+	\voiceOne d'4->-\offset X-offset -1 ^\markup {Ob.I.} a'->
 	g-> f->
 	a-> f-> \oneVoice
 }
@@ -62,7 +62,7 @@ cueVoiceFlautoIMvtIV = \relative c {
 	<>^\markup {Fag.Vla}
 	s2*70
 	% bars 100 - 107
-	\voiceOne e''8.(\mf^\markup {\column {\lower #1.5 "Ob.I." "Viol."}} d16 cis4~\<
+	\voiceOne e''8.(\mf-\offset X-offset -3 ^\markup {\column {\lower #1.5 "Ob.I." "Viol."}} d16 cis4~\<
 	cis8 e g bes!)\!
 	e,8.( d16\< cis4~
 	cis8 e g bes)\!
@@ -92,7 +92,10 @@ cueVoiceFlautoIMvtIV = \relative c {
 	c8\stopTrillSpan des e!16 f  g aes)\!
 	ees8(\f f \tuplet 3/2 4 {g aes bes)}
 	f( g \tuplet 3/2 4 {aes bes c)} \oneVoice
-	s2*104
+	s2*65
+	% bar 417
+	<>^\markup {\column {\lower #1.5 "Fag." "Vla"}}
+	s2*39
 	% bar 456
 	<>^\markup {Ob.Cl.Viol.}
 	s2*39
@@ -111,12 +114,12 @@ cueVoiceFlautoIMvtIV = \relative c {
 cueVoiceFlautoIIMvtI = \relative c {
 	s2.*17
 	% bars 18 - 19
-	\voiceOne r4^\markup {Viol.} f''-> g->
-	a-> c-> d-> \oneVoice
+	r4-\offset X-offset -1 ^\markup {Viol.} f''-> g->
+	a-> c-> d->
 	s2.*65
 	% bars 85 - 86
-	\voiceOne c8(^\markup {Fl.I.} ees d c a c)
-	d4-. r r \oneVoice
+	c8(-\offset X-offset -3 ^\markup {Fl.I.} ees d c a c)
+	f4-. r r
 }
 cueVoiceFlautoIIMvtII = \relative c {
 	s1*17
@@ -124,12 +127,12 @@ cueVoiceFlautoIIMvtII = \relative c {
 	<>^\markup {Ob.}
 	s1*17
 	% bar 35
-	<>^\markup {Viol.}
+	<>-\offset X-offset 0.5 ^\markup {Vcl.}
 	s1*14
 	% bars 49 - 51
-	\voiceOne \clef bass ees'4(^\markup {Vcl.} g) f8( ees d c)
+	\clef bass ees'4(-\offset X-offset -3 ^\markup {Vcl.} g) f8( ees d c)
 	bes4( d2 \tuplet 3/2 4 {c8 d a)}
-	c2.(~ c8 bes) \clef treble \oneVoice
+	c2.(~ c8 bes) \clef treble 
 	s1*19
 	% bar 71
 	<>^\markup {Ob.I}
@@ -154,10 +157,10 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	<>^\markup {Fl.I.}
 	s1.*26 s2*15
 	% bar 155
-	\voiceOne r4 \tuplet 6/4 4 {r16^\markup {Ob.} g(\< a b c d)\!} \oneVoice
+	r4^\markup {Ob.} \tuplet 6/4 4 {r16 g(\< a b c d)\!}
 	s2*108
 	% bars 264 - 265
-	\voiceOne \tuplet 3/2 4 {e'8(^\markup {Viol.I.} f) d-. e( f) d-.
+	\tuplet 3/2 4 {e'8(^\markup {Viol.I.} f) d-. e( f) d-.
 	e( f) d-. g( aes) f-.}
 	s1.*51
 	% bars 317 - 320
@@ -167,19 +170,19 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
 	s1.*20 s2*41
 	% bars 382 - 383
-	\voiceOne d''4->^\markup {Fl.I.} a->
-	f'8-. r r4 \oneVoice
+	d''4->^\markup {Fl.I.} a->
+	f'8-. r r4
 }
 cueVoiceFlautoIIMvtIV = \relative c {
 	s2*29
 	% bar 30
-	<>^\markup { \column { \lower #1.5 "Fag." "Vla"}}
+	<>-\offset X-offset -3 ^\markup { \column { \lower #1.5 "Fag." "Vla"}}
 	s2*8
 	% bar 38
-	<>^\markup { \column { \lower #1.5 "Fl.I." "Ob.I." }}
+	<>-\offset X-offset -3 ^\markup { \column { \lower #1.5 "Fl.I." "Ob.I." }}
 	s2*66
 	% bars 104 - 107
-	\voiceOne cis'8(-> e g bes)
+	\voiceOne cis'8(->^\markup {Viol.I.Ob.II.} e g bes)
 	e,( g bes cis)
 	g( a bes e)
 	a,( cis e a) \oneVoice
@@ -188,10 +191,10 @@ cueVoiceFlautoIIMvtIV = \relative c {
 	<>^\markup {Archi}
 	s2*80
 	% bar 238 - 241
-	\voiceOne a8(^\markup {Fl.I.} g fis g)
+	a8(-\offset X-offset -4 ^\markup {Fl.I.} g fis g)
 	d'( b a g)
 	e'( cis b a)
-	fis'( e d a) \oneVoice
+	fis'( e d a)
 	s2*86
 	% bar 328
 	<>^\markup {Archi}
@@ -213,11 +216,11 @@ cueVoiceFlautoIIMvtIV = \relative c {
 	<>^\markup {\column { \lower #1.5 "Fl.I.Ob.I" "Viol."}}
 	s2*26
 	% bar 451 - 455
-	\voiceOne \unSubdiviseBeam b8.(^\markup {Fl.I.} c16 g'4~
+	\unSubdiviseBeam b8.(^\markup {Fl.I.} c16 g'4~
 	g8) f( d bes!
 	e d bes f
 	c' bes_\dimmarkup f d
-	g f d bes) \oneVoice
+	g f d bes)
 	% bar 456
 	<>^\markup {\column {\lower #1.5 "Ob.Cl." "Viol."}}
 	s2*39

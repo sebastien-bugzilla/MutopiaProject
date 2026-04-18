@@ -45,7 +45,7 @@ musicFlautoIIMvtII = \relative c {
 	a16)\p a8 a a a16~ a bes8 bes bes bes16~
 	bes c8 c c b16~ b\pp b8 b b b16~
 	b\< c8 c c c16\!~ c_\crescmarkup g8 g g g16~
-	g\< g8 g g g16~ g f8 f16\! f \hairpinShorten #'(-1.5 . 0) a(\> bes c\!~
+	g\< g8 g g g16~ g f8 f16\!~ f \hairpinShorten #'(-1.5 . 0) a(\> bes c\!~
 % Bars 61 to 65
 	c)\p bes8 bes_\dimmarkup bes g16~ g g8 g g g16~
 	g g8\pp g g g16~ g g8 g g g16~
@@ -73,7 +73,7 @@ musicFlautoIIMvtII = \relative c {
 % Bars 86 to 90
 	
 	
-	r4 r8 \dynEO #'(0 . 2) f'\f(~ f16 e f g f8 e)
+	r4 r8 \dynEO #'(0 . 2) f'-\tweak extra-offset #'(0 . -0.3) ->\f(~ f16 e f g f8 e)
 	r4 r8 \dynEO #'(0 . 2) \hairpinEO #'(0 . 2) f\fz\>(~ f16 e f g f8 e)\!
 	R1*4
 % Bars 91 to 95
@@ -92,7 +92,7 @@ musicFlautoIIMvtII = \relative c {
 	\dynEO #'(0 . 2) ees4(\mf \hairpinEO #'(0 . 2) des8\< c bes aes g! ges\!
 	f) r r4 r2
 	R1
-	g2.(\p ges8.\< aes16)\!
+	f2.(\p ges8.\< aes16)\!
 	\hairpinShorten #'(0 . -5) ges4(\> ees2)-> ees4(\!
 % Bars 106 to 110
 	f8) r r4 r2

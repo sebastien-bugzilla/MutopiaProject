@@ -188,8 +188,16 @@ mutafines = \markup {"muta F in Es"}
 mutaesindes = \markup {"muta Es in Des"}
 mutadesinf = \markup {"muta Des in F"}
 mutainflautopiccoloi = \markup {"muta in Flauto piccolo I."}
+mutainflpicci = \markup {"muta in Fl. picc. I."}
+mutainflpiccii = \markup {"muta in Fl. picc. II."}
 mutainflautopiccoloii = \markup {"muta in Flauto piccolo II."}
 mutainfliiigrande = \markup {"muta in Fl.I.II grande"}
+mutainfligrande = \markup {
+	\column {\lower #1.2 "muta in" "Fl.I grande"}
+}
+mutainfliigrande = \markup {
+	\column {\lower #1.2 "muta in" "Fl.II grande"}
+}
 mutaainh = \markup {"muta A in H"}
 mutaincg = \markup {"muta in C, G"}
 mutainda = \markup {"muta in D, A"}
@@ -240,7 +248,6 @@ prallnatural = \markup {
 		\translate #'(0.7 . 0) \musicglyph "scripts.prall" 
 		\translate #'(0.2 . 0.8) \text-natural
 }
-
 %--------------------
 % functions
 %--------------------
@@ -522,7 +529,27 @@ ni = {
 	\omit MultiMeasureRestNumber
 }
 
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.minimum-length = #length
+	#}
+)
 
+keyExtraSpace = \once \override Staff.KeyCancellation.space-alist.time-signature = \etc
+
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
+markEsw = #(define-music-function
+	(width)
+	(pair?)
+	#{
+		\once \override Score.RehearsalMark.extra-spacing-width = #width
+	#}
+)
 
 %###############################################################################
 %  Fonctions sur étagère
@@ -612,27 +639,6 @@ ni = {
 %	\once \override Score.RehearsalMark.whiteout = #0.75
 %	\once \override Score.RehearsalMark.whiteout-style = #'outline
 %}
-
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
-
-%% à supprimer
-%mmrLengthOld = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.space-increment = #length
-%	#}
-%)
-
-%mmrLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.minimum-length = #length
-%	#}
-%)
 
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 

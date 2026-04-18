@@ -10,7 +10,7 @@ musicFlautoIIMvtI = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*17
+		\mmrLength #22 R2.*17
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -28,14 +28,14 @@ musicFlautoIIMvtI = \relative c {
 		a-. r r4 r
 		r r a'16(\f\< cis e a)\! \mark \default
 % Bars 26 to 30
-		a,2->\ff a8.-> d16
+		\tempoXoffset #0.5 a,2->\ff a8.-> d16
 		bes2\fz~ bes8 r
 		bes4..\fz e16[-. cis8.-> g16]-.
 		f4.(->\fz a16 f d8) r
-		fis4..\fz bes16-. \tuplet 3/2 4 {a8( fis ees')}
+		fis4..\fz bes16-. \tuplet 3/2 4 {a8( fis! ees')}
 % Bars 31 to 35
 		bes2\fz~ bes8 r
-		b4..\fz e,16-. d(\< c b f')\!
+		b4..\fz e,!16-. d(\< c b f')\!
 		e8-.-> r e'-.-> r b-.\brack\fz r
 		cis-.-> r e-.-> r b-.\fz r
 		cis-. r fis8[-> r16 e d8-> r16 cis]
@@ -53,21 +53,18 @@ musicFlautoIIMvtI = \relative c {
 % Bars 46 to 50
 	
 % Bars 51 to 55
-		r4 a4.->\fz g8(
-		f8.) ees16( d8.) c16( bes8.) a16(
+		\tempoXoffset #-0.8 r4 a4.->\fz g8(
+		f8.)[ ees16( d8.) c16( bes8.) a16](
 		bes8) r r4 r
-		R2.*7
+		R2.*31
 % Bars 56 to 60
-	
+		
 % Bars 61 to 65
-		R2.*3
 		
-		
-		R2.*7
 % Bars 66 to 70
-	
+		
 % Bars 71 to 75
-		R2.*14
+		
 % Bars 76 to 80
 		
 % Bars 81 to 85
@@ -85,9 +82,9 @@ musicFlautoIIMvtI = \relative c {
 % Bars 91 to 95
 		a)
 		bes(
-		a)
-		bes(
-		a)
+		c)
+		bes~
+		bes
 % Bars 96 to 100
 		<< bes2.(~ {s2 s4\<}>>
 		bes2 g4)\!
@@ -151,18 +148,12 @@ musicFlautoIIMvtI = \relative c {
 	fis8. b16 b4-.\! r
 	bes!2\fz->~ bes8\> ges!-.
 	ges!8. bes16 bes4-.\! r
-	R2.*4
+	R2.*16
 	
 % Bars 156 to 160
 	
-	
-	R2.*5
-	
-	
 % Bars 161 to 165
 	
-	
-	R2.*7
 % Bars 166 to 170
 	
 	
@@ -190,7 +181,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 186 to 190
 	ais2->~\fz ais8 fis-.
 	fis8.-> ais16 ais4-. r
-	cis2.\ff~
+	\startMeasureCount cis2.\ff~
 	cis~
 	cis~
 % Bars 191 to 195
@@ -198,7 +189,7 @@ musicFlautoIIMvtI = \relative c {
 	cis~\>
 	cis~
 	cis~
-	<< cis~ {s8 s s s s s\!}>>
+	<< cis~ {s8 s s s s s\!}>> \stopMeasureCount
 % Bars 196 to 200
 	cis4\p ais2(
 	fis_\dimmarkup cis4~
@@ -210,17 +201,13 @@ musicFlautoIIMvtI = \relative c {
 	ais2->~ ais8 fis-.
 	fis8. ais16 ais4-. r
 	R2.
-	c!2\pp~ c8 a-.
+	c!2\pp~ c8 a!-.
 % Bars 206 to 210
 	a8. c16 c4-. r
 	c2~ c8. a16
 	bes4 r r
-	R2.*5
+	R2.*9
 % Bars 211 to 215
-	
-	
-	
-	R2.*4
 	
 % Bars 216 to 220
 	
@@ -275,7 +262,7 @@ musicFlautoIIMvtI = \relative c {
 	bes2\fz~ bes8 r
 	bes4..\fz e16[ cis8.-> g16]-.
 	f4.->( a16 f d8) r
-	fis4..->\fz bes16-. \tuplet 3/2 4 {a8( fis ees')}
+	fis4..->\fz bes16-. \tuplet 3/2 4 {a8( fis! ees')}
 % Bars 266 to 270
 	bes2->~ bes8 r
 	b4..\fz e,16-. d( c b f')
@@ -370,7 +357,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 356 to 360
 	
 	
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	fis,,4(\p\< a4. d8)
 	cis2 cis4\!
 % Bars 361 to 365
@@ -383,7 +370,7 @@ musicFlautoIIMvtI = \relative c {
 	fis2( e4)\!
 	d(\mf a' d~
 	d4. d8 b cis)
-	<< d2.(~\<_\moltocresc {s8 s s  s s s\!}>>
+	<< d2.(~\<-\tweak extra-offset #'(0 . -0.2) ^\moltocresc {s8 s s  s s s\!}>>
 	d8 fis e d b cis)
 % Bars 371 to 375
 	d( fis e d b cis)
@@ -408,13 +395,13 @@ musicFlautoIIMvtI = \relative c {
 	r c\fz r
 	r c\brack\fz r
 	r bes\brack\fz r
-	r d\brack\fz r
+	r d!\brack\fz r
 % Bars 391 to 395
 	e2\ff~ e8 cis-.
 	cis8. e16 e4-. r
 	R2.*2
 	
-	c,2\fp~ c8\> a-.
+	c,!2\fp~ c8\> a-.
 % Bars 396 to 400
 	a8. c16 c4-.\! r
 	R2.*2
@@ -434,13 +421,13 @@ musicFlautoIIMvtI = \relative c {
 	cis8. e16 e4-. r
 	e2~ e8 cis-.
 	cis8. e16 e4-. r
-	R2.*10
+	R2.*8
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	
 	
-	
+	\mmrLength #17 \mmrnDown R2.*2
 	\markk
 	R2.*12
 % Bars 426 to 430

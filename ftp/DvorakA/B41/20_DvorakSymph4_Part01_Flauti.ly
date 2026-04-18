@@ -51,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtI
-%			}
+			\new Voice {
+				\formatFlautoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtI
 			}
@@ -73,172 +73,180 @@
 		\layout {
 		}
 	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIMvtII
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoI) \tempiPartMvtII
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIMvtII
-%			}
-%			\new Voice {
-%				\timeMvtII \nameFlautoIMvtII \musicFlautoIMvtII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\bold 2.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIMvtIII
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoI) \tempiPartMvtIII
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIMvtIII
-%			}
-%			\new Voice {
-%				\timeMvtIII \nameFlautoIMvtIII \musicFlautoIMvtIII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\bold 3.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIMvtIV
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoI) \tempiPartMvtIV
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIMvtIV
-%			}
-%			\new Voice {
-%				\timeMvtIV \nameFlautoIMvtIV \musicFlautoIMvtIV
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\bold 4.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIIMvtI
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtI
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIIMvtI
-%			}
-%			\new Voice {
-%				\timeMvtI \nameFlautoIIMvtI \musicFlautoIIMvtI
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\bold 1.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIIMvtII
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtII
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIIMvtII
-%			}
-%			\new Voice {
-%				\timeMvtII \nameFlautoIIMvtII \musicFlautoIIMvtII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\bold 2.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIIMvtIII
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtIII
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIIMvtIII
-%			}
-%			\new Voice {
-%				\timeMvtIII \nameFlautoIIMvtIII \musicFlautoIIMvtIII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\bold 3.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIIMvtIV
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtIV
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIIMvtIV
-%			}
-%			\new Voice {
-%				\timeMvtIV \nameFlautoIIMvtIV \musicFlautoIIMvtIV
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\bold 4.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFlautoIMvtII \musicFlautoIMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold 2.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFlautoIMvtIII \musicFlautoIMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "3. SCHERZO"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFlautoIMvtIV \musicFlautoIMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "4. FINALE"
+			}
+		}
+		\layout {
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFlautoIIMvtI \musicFlautoIIMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold 1.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFlautoIIMvtII \musicFlautoIIMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #2.5 \bold 2.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFlautoIIMvtIII \musicFlautoIIMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #3 \bold "3. SCHERZO"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFlautoIIMvtIV \musicFlautoIIMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #3.5 \bold "4. FINALE"
+			}
+		}
+		\layout {
+		}
+	}
 }

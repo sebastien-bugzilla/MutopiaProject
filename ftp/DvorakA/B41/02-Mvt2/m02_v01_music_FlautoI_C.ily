@@ -85,7 +85,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 86 to 90
 	
 	
-	r4 r8 \dynEO #'(0 . 2) f'->\f(~ f16 e f g f8 e)
+	r4 r8 \dynEO #'(-1.3 . 2) f'->\f(~ f16 e f g f8 e)
 	r4 r8 \dynEO #'(0 . 2) \hairpinEO #'(0 . 2) f\fz\>(~ f16 e f g f8 e)\!
 	R1*4
 % Bars 91 to 95

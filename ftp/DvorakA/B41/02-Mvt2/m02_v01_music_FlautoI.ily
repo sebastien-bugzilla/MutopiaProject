@@ -9,7 +9,7 @@ musicFlautoIMvtII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*17
+	\mmrLength #43 R1*17
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -37,7 +37,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 41 to 45
 	
 	
-	r4 r8 g-.\p\< d'4->\! r
+	r4 r8 \hairpinShorten #'(-0.3 . -1) g-.-\offset X-offset -0.5 \p\< d'4->\! r
 	R1*2
 	
 % Bars 46 to 50
@@ -47,16 +47,16 @@ musicFlautoIMvtII = \relative c {
 	R1*3
 	
 % Bars 51 to 55
-	\mark \default
-	bes,16_\ppbracklegato bes'8  bes a a16~ a aes8 aes aes aes16~
+	\markXoffset #-0.3 \mark \default
+	\beamOffset #'(1.3 . 1.3) bes,16_\ppbracklegato bes'8  bes a a16~ a aes8 aes aes aes16~
 	aes des8 des\< c c16~ c c8 c16\!(~ c\> bes-. c-. des-.)\!
 	c ees8\p ees ees ees16~ ees ees8 bes bes c16~
-	c a8 a d d16~ d_\crescmarkup d8 d16~ d d e fis~
+	c a8 a d d16~ d_\crescmarkup d8 d16~ d d e \shape #'(() ((0 . -0.6)(0 . -0.6)(0 . -0.6)(0 . -0.6))) Tie fis~
 % Bars 56 to 60
 	fis g8 g_\dimmarkup g g16~ g g8 g16( c bes a! g~
 	g)\p f8 f f f16~ f f8 f16( bes a g f~
 	f) ees8 ees ees ees16~ ees\pp ees8 ees16(~ ees d f ees 
-	d)\< c8 c c c16\!~ c_\crescmarkup bes8 bes bes a16~
+	d)\< c8 c c c16~ c\crescD bes8 bes bes a16~
 	a\< a8 a a a16~ a bes8 bes\! d\> d16\!~
 % Bars 61 to 65
 	d\p d8 d_\dimmarkup d bes16~ bes g8 g g g16~
@@ -67,7 +67,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 66 to 70
 	f ees8 ees g g16~ g_\crescmarkup f8 ees d c16~
 	c bes8\> bes d d16~ d d8 d16~ d c-. d-. a-.\!
-	<< c2.(~\pp {s4 s s\>}>> c8 bes\!
+	<< c2.(~\pp\> {s4 s s}>> c8 bes\!
 	a4) r r2
 	R1 \mark \default
 % Bars 71 to 75
@@ -86,14 +86,14 @@ musicFlautoIMvtII = \relative c {
 	
 	
 	r4 r8 f'->\f(~ f16 e f g f8 e)
-	r4 r8 f\fz\>(~ f16 e f g f8 e)\!
+	r4 r8 \dynEO #'(0 . 1) f\fz-\tweak extra-offset #'(0 . 0.7) \>(~ f16 e f g f8 e)\!
 	R1*4
 % Bars 91 to 95
 	
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1*4
+	\time 4/4 \mmrLength #14 \tempoXoffset #1.5 R1*4
 % Bars 96 to 100
 	
 	
@@ -113,7 +113,7 @@ musicFlautoIMvtII = \relative c {
 	R1*2
 	
 % Bars 111 to 115
-	R1\fermata
+	\once \ni R1\fermata
 	R1*2
 	\mark \default
 	R1*7
@@ -142,7 +142,7 @@ musicFlautoIMvtII = \relative c {
 	bes1\fp->~
 	bes_\dimmarkup~
 	bes4 r r2
-	r4 r8. ees,16-.\p f8-. g-. \tuplet 3/2 4 {a-. bes-. c-.}
+	\tempoXoffset #8 r4 r8. ees,16-.\p f8-. g-. \tuplet 3/2 4 {a-. bes-. c-.}
 % Bars 141 and 142
 	d1\pp
 	d\fermata \fine

@@ -71,6 +71,7 @@
 		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
+		\override SectionLabel.font-size = #-1
 		
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t

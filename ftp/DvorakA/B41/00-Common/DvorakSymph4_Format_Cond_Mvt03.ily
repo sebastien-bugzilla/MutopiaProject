@@ -212,7 +212,7 @@ formatConductorMvtIII = {
 		(alignment-distances . (9 10 13 9 9 9 9 9 13 13 9 9 9 9)))
 	s1.*4 \pageBreak
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 9.8)
+		(Y-offset . 9.2)
 		(alignment-distances . (10 10 13 9 9 9 9 9 13 13 10 9 9 9)))
 	s1.*6 \pageBreak
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -260,11 +260,11 @@ formatConductorMvtIII = {
 		(alignment-distances . (14.5 14 15 14 13 11 8.5 13 8.5 8.5 9)))
 	s2*10 \pageBreak
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 9.8)
+		(Y-offset . 10)
 		(alignment-distances . (11 10.5 13 10.5 13 13 9.5 10 10)))
 	s2*10 \pageBreak
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
-		(Y-offset . 9.9)
+		(Y-offset . 9.1)
 		(alignment-distances . (9 9 13 9 9 9 9 13 13 9.5 9 10 9.5)))
 	s2*7 \pageBreak
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(

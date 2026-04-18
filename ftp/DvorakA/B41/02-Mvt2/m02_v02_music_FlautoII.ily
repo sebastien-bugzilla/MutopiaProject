@@ -9,7 +9,7 @@ musicFlautoIIMvtII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*17
+	\mmrLength #42 R1*17
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -49,7 +49,7 @@ musicFlautoIIMvtII = \relative c {
 	a16)\p a8 a a a16~ a bes8 bes bes bes16~
 	bes c8 c c b16~ b\pp b8 b b b16~
 	b\< c8 c c c16\!~ c_\crescmarkup g8 g g g16~
-	g\< g8 g g g16~ g f8 f16\! f a(\> bes c\!~
+	g\< g8 g g g16~ g f8 f16\!~ f a(\> bes c\!~
 % Bars 61 to 65
 	c)\p bes8 bes_\dimmarkup bes g16~ g g8 g g g16~
 	g g8\pp g g g16~ g g8 g g g16~
@@ -66,7 +66,7 @@ musicFlautoIIMvtII = \relative c {
 	R1*7
 % Bars 76 to 80
 	
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	R1*3
 % Bars 81 to 85
 	bes,2(\p << b2)\< {s8 s s s\!}>>
@@ -77,7 +77,7 @@ musicFlautoIIMvtII = \relative c {
 % Bars 86 to 90
 	
 	
-	r4 r8 f'\f(~ f16 e f g f8 e)
+	r4 r8 f'\f->(~ f16 e f g f8 e)
 	r4 r8 f\fz\>(~ f16 e f g f8 e)\!
 	R1*4
 % Bars 91 to 95
@@ -85,7 +85,7 @@ musicFlautoIIMvtII = \relative c {
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1*4
+	\time 4/4 \tempoXoffset #1 R1*4
 % Bars 96 to 100
 	
 	
@@ -96,7 +96,7 @@ musicFlautoIIMvtII = \relative c {
 	ees4(\mf des8\< c bes aes g! ges\!
 	f) r r4 r2
 	R1
-	g2.(\p ges8.\< aes16)\!
+	f2.(\p ges8.\< aes16)\!
 	ges4(\> ees2)-> ees4(\!
 % Bars 106 to 110
 	f8) r r4 r2
@@ -105,7 +105,7 @@ musicFlautoIIMvtII = \relative c {
 	
 	
 % Bars 111 to 115
-	R1\fermata
+	\once \ni R1\fermata
 	R1*2
 	\mark \default
 	R1*7
@@ -120,9 +120,9 @@ musicFlautoIIMvtII = \relative c {
 	
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R \no
-	\voiceTwo r2 r4 \oneVoice << a~\p\< {s16 s s s\!}>>
+	\voiceTwo r2 r4 \oneVoice << \hairpinShorten #'(-0.3 . -0.3) a~-\offset X-offset -1 \p\< {s16 s s s}>>
 % Bars 126 to 130
-	<< a1\crescD\< {s4 s s s\!}>>
+	<< a1\crescD {s4 s s s}>>
 	bes2(\f << f2\>) {s8 s s_\dimmarkup s16 s\!}>>
 	ges4(\p\< f e) r8_\crescmarkup e\!
 	g4(\< bes~\! bes4.\>_\dimmarkup a8)\!

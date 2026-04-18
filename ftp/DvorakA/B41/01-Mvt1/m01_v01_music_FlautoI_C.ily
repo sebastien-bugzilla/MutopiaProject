@@ -54,7 +54,7 @@ musicFlautoIMvtI = \relative c {
 	
 % Bars 51 to 55
 		r4 \dynEO #'(0 . 2) c'4.->\fz bes8(
-		a8.) g16( f8.) ees16( d8.) c16(
+		a8.)[ g16( f8.) ees16( d8.) c16](
 		bes8) r r4 r
 		R2.*7
 % Bars 56 to 60
@@ -82,7 +82,7 @@ musicFlautoIMvtI = \relative c {
 		a2.(~
 		a8 c bes a f g)
 		a( c bes a f a)
-		bes(\mf d c_\brackM\crescmarkup bes g a)
+		bes(\mf d c_\brackM\crescmarkup bes g bes)
 		c(\< ees d c a c
 % Bars 86 to 90
 		f4)-.\! r r
