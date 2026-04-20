@@ -123,7 +123,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 121 to 125
 	cis8.-. bis16 dis4->
 	cis-. cis-.
-	cis8.-.\< bis16\! gis'4\ff\fermata
+	cis8.-.\< bis16\!( gis'4)\ff\fermata
 	R2
 	bes,!8.-.\ff aes16( ees'4)\fermata
 % Bars 126 to 130
@@ -435,7 +435,7 @@ musicOboeIIMvtIV = \relative c {
 	\mmrPos #-6 R2
 	R2 \mark \default
 % Bars 456 to 460
-	e4-. f-.
+	e4-.-\offset X-offset -3 \mf f-.
 	e2->
 	f4-. e-.
 	f2->
@@ -533,7 +533,7 @@ musicOboeIIMvtIV = \relative c {
 	a8.-. gis16 a4->\<
 	a-> a->\! \section
 % Bars 561 to 565
-	\key d \major a,2~-\offset X-offset -3 _\ffmoltoespr
+	\key d \major a,2~-\offset X-offset 0.5 _\fsempre
 	<< \hairpinShorten #'(1.5 . 0) a\< {s8 s s s\!}>>
 	ais2~
 	ais

@@ -69,7 +69,7 @@ musicOboeIIMvtII = \relative c {
 	g g8\pp g g g16~ g g8 g g g16~
 	g g8 g g g16~ g g8 g g g16~
 	g\< g8 g g g16\!~ g\> g8 g g g16~\!
-	g g8 g g\pp g16~ g g8~ g f f16~
+	g g8 g g\pp g16~ g g8 g f f16~
 % Bars 66 to 70
 	f g8 g g g16~ g g8 g g g16~
 	g g8\> g g g16~ g f8 f f f16\!

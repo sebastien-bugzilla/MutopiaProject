@@ -69,7 +69,7 @@ musicOboeIMvtII = \relative c {
 	\omitBeam d f8 f f f16~ \omitBeam f f8 f f f16(
 	\omitBeam \beamOffset #'(-2 . -2) g) g8 g g g16~ \omitBeam \beamOffset #'(-2 . -2) g_\crescmarkup g8 g g g16~
 	\omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~ \omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~
-	\omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~ \omitBeam \beamOffset #'(-2 . -2) g g8~ g aes aes16~
+	\omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~ \omitBeam \beamOffset #'(-2 . -2) g g8 g aes aes16~
 % Bars 66 to 70
 	\omitBeam \beamOffset #'(-2 . -2) aes g8 g g g16~ \omitBeam \beamOffset #'(-2 . -2) g_\crescmarkup g8 g g g16~
 	\omitBeam \beamOffset #'(-2 . -2) g g8 g g g16~ \omitBeam g f8 f f f16

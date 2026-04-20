@@ -447,7 +447,7 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	R2 \mark \default
 % Bars 456 to 460
-	ees4-. fes-.
+	ees4-.-\offset X-offset -3 \mf fes-.
 	ees2->
 	fes4-. ees-.
 	fes2->

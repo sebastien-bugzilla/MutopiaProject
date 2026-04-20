@@ -80,6 +80,17 @@ correctionsFlauti = \markup {
 	% Mvt I, bar 365, Flauto IU
 	"In Mvt I, bar 365, for flauto II, the notes (d a fis) are taken from conductor rather than in part score (a d fis), by similitude with Fl.I and other instruments."
 }
+correctionsOboe = \markup {
+	
+	% Mvt I, bar 259, Oboe I
+	"In Mvt 1, bar 259, for Oboe I a missing bar just after the mark E is added."
+	
+	% Mvt II, bar 89, Oboe I
+	"In Mvt II, bar 89, for Oboe I, a cresc. hairpin is added."
+	
+	% Mvt II, bar 136, Oboe I
+	"In Mvt II, bar 136, for Oboe I, a flat is added on the g."
+}
 correctionsCor = \markup {
 	
 	% bar 239, mvt IV, Cor III

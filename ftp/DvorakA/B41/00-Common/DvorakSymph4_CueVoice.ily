@@ -258,10 +258,10 @@ cueVoiceOboeIMvtII = \relative c {
 	}
 	s1*26
 	% bar 78
-	<>^\markup {Archi}
+	<>-\offset X-offset 0.5 ^\markup {Archi}
 	s1*16 s2*1 s1*28
 	% bars 123 - 124
-	\voiceOne bes''4(^\markup {Cl.I.} a aes) r8 aes
+	\voiceOne bes''4(-\offset X-offset #-3 ^\markup {Cl.I.} a aes) r8 aes
 	g4( ges2 \tuplet 3/2 4 {ees8 f ges)} \oneVoice
 }
 cueVoiceOboeIMvtIII = \relative c {
@@ -272,8 +272,8 @@ cueVoiceOboeIMvtIII = \relative c {
 	d4 e \oneVoice
 	s2*109
 	% bars 264 - 265
-	\voiceOne \tuplet 3/2 4 {e''8(^\markup {Viol.I.} f) d-. e( f) d-.
-	e( f) d-. g( aes) f-.} \oneVoice
+	\tuplet 3/2 4 {e''8(-\offset X-offset -5 ^\markup {Viol.I.} f) d-. e( f) d-.
+	e( f) d-. g( aes) f-.}
 }
 cueVoiceOboeIMvtIV = \relative c {
 	s2*25
@@ -296,10 +296,10 @@ cueVoiceOboeIMvtIV = \relative c {
 	<>^\markup {\column {\lower #1.5 "Fag." "Vla"}}
 	s2*38
 	% bar 455
-	\voiceOne g8(^\markup {Fl.} f d bes) \oneVoice
+	g8(^\markup {Fl.} f d bes)
 	s2*35
 	% bars 491 - 494
-	\voiceOne fis'8.[ e16 d8. cis16]
+	\voiceOne fis'8.[^\markup {Viol.I.} e16 d8. cis16]
 	b8.[ ais16 g8. fis16]
 	g8 fis e d
 	cis b ais fis' \oneVoice
@@ -310,11 +310,11 @@ cueVoiceOboeIIMvtI = \relative c {
 cueVoiceOboeIIMvtII = \relative c {
 	s1*25
 	% bars 26 - 27
-	\voiceTwo a''4->\<^\markup {Ob.I.} a->\! b(\> d)\!
-	d4.(\> b8 g4)\! r8 g \oneVoice
+	\voiceOne a''4->\<^\markup {Ob.I.} a->\! bes(\> d)\!
+	d4.(\> bes8 g4)\! r8 g \oneVoice
 	s1*13
 	% bar 41
-	<>^\markup {Ob.I.}
+	<>-\offset X-offset -1.5 ^\markup {Ob.I.}
 	s1*9
 	% bars 50 - 51
 	\transpose c bes, {
@@ -328,7 +328,7 @@ cueVoiceOboeIIMvtII = \relative c {
 	<>^\markup {Ob.I}
 	s1*7
 	% bar 78
-	<>^\markup {Archi}
+	<>-\offset X-offset 0.5 ^\markup {Archi}
 	s1*2
 	% bar 80
 	\voiceOne aes4(\p^\markup {Ob.I.} a2 bes8 ees) \oneVoice
@@ -337,7 +337,7 @@ cueVoiceOboeIIMvtII = \relative c {
 	<>^\markup {Ob.I.}
 	s1*9
 	% bars 123 - 125
-	\voiceOne bes'4(^\markup {Cl.I.} a aes) r8 aes
+	\voiceOne bes'4(-\offset X-offset -3 ^\markup {Cl.I.} a aes) r8 aes
 	g4( ges2 \tuplet 3/2 4 {ees8 f ges} 
 	f8) r s4 s2 \oneVoice
 }
@@ -349,13 +349,13 @@ cueVoiceOboeIIMvtIII = \relative c {
 	d4 e \oneVoice
 	s2*109
 	% bars 264 - 265
-	\voiceOne \tuplet 3/2 4 {e''8(^\markup {Viol.I.} f) d-. e( f) d-.
-	e( f) d-. g( aes) f-.} \oneVoice
+	\tuplet 3/2 4 {e''8(-\offset X-offset -5 ^\markup {Viol.I.} f) d-. e( f) d-.
+	e( f) d-. g( aes) f-.}
 }
 cueVoiceOboeIIMvtIV = \relative c {
 	s2*25
 	% bar 26
-	<>^\markup {\column {\lower #1.5 "Fag." "Vla"}}
+	<>-\offset X-offset -2 ^\markup {\column {\lower #1.5 "Fag." "Vla"}}
 	s2*12
 	% bar 38
 	<>^\markup {Ob.I.}
@@ -389,10 +389,10 @@ cueVoiceOboeIIMvtIV = \relative c {
 	g8) f( d bes!
 	e d bes f
 	c' bes f d)
-	g'(^\markup {Fl.} f d bes) \oneVoice
+	g'(-\offset X-offset -2 ^\markup {Fl.} f d bes) \oneVoice
 	s2*35
 	% bars 491 - 494
-	\voiceTwo fis'8.[ e16 d8. cis16]
+	\voiceTwo fis'8.[^\markup {Viol.I.} e16 d8. cis16]
 	b8.[ ais16 g8. fis16]
 	g8 fis e d
 	cis b ais fis' \oneVoice

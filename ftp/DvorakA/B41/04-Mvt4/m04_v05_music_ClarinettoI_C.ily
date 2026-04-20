@@ -436,7 +436,7 @@ musicClarinettoIMvtIV = \relative c {
 	
 	\partCombineApart bes'8(\p\> aes f des)\! \mark \default
 % Bars 456 to 460
-	\markEO #'(0 . 0.5) des4-.-\offset X-offset -1 _\mfmarcato des-.
+	des4-.-\offset X-offset 1 ^\brackM\marcato des-.
 	des8.-. c16 ees4->
 	des4-. des-.
 	des8.-. bes16 aes4->

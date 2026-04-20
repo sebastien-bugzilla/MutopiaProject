@@ -17,7 +17,7 @@ musicOboeIMvtII = \relative c {
 	
 	
 	
-	\ni \mmrPos #4 R1
+	\ni \mmrPos #6 R1
 % Bars 16 to 20
 	\mmrPos #4 R
 	\mmrPos #4 R \no \mark \default
@@ -25,7 +25,7 @@ musicOboeIMvtII = \relative c {
 	des4\< << c2) {s4\! s\>}>> \tuplet 3/2 4 {bes8( c des)\!}
 	c4(\< << ees2) {s4\! s\>}>> bes8.( c16)\!
 % Bars 21 to 25
-	a4( d2)_\crescmarkup \tuplet 3/2 4 {d8(\< e fis)}
+	a4( d2)-\offset X-offset #-1 _\crescmarkup \tuplet 3/2 4 {d8(\< e fis)}
 	<< g2~ {s8 s s s\!}>> g8 g(\> c16 bes a g)\!
 	g4( f!\>~ f8) f\!( bes16\p a g f)
 	f4( ees2)_\dimmarkup \tuplet 3/2 4 {d8( f ees)}
@@ -34,20 +34,20 @@ musicOboeIMvtII = \relative c {
 	a4->\< a->\! bes4(\> d)\!
 	d4.(\> bes8 g4)\! r8 g\pp
 	d'4->( c\< b) r8\! g(
-	f'4\crescD\< e2 \tuplet 3/2 4 {d8 e f\!}
+	f'4\crescD\< e2 \once \tupletUp \tuplet 3/2 4 {d8 e f\!}
 	e4)\mf\< g4(~ \tuplet 3/2 4 {g8 e d\!} f4)\>
 % Bars 31 to 35
 	e(\! g\pp\>~ \tuplet 3/2 4 {g8 ees! d} f4)\!
 	ees!( g\< f8->_\crescmarkup ees-> d-> c->)\!
 	bes4(\< d2->\! \tuplet 3/2 4 {c8\> d a\!)}
-	c2.(~\p\> c8\pp bes) \mark \default
+	\hairpinShorten #'(-0.4 . -0.3) c2.(~-\offset X-offset -1.2 \p\> c8\pp bes) \mark \default
 	bes4 r r2
 % Bars 36 to 40
 	R1*5
 % Bars 41 to 45
 	r2 aes'4(~\pp \tuplet 3/2 4 {aes4 g8)}
 	f4( ees d4.\< c8)\!
-	<< g2(\< {s8 s s s\!}>> << d2\fz\>~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.7 . 0.7) g2(\< {s8 s s s\!}>> << \hairpinShorten #'(-0.5 . -0.5) d2-\offset X-offset #-0.5 \fz\>~ {s8 s s s}>>
 	d4)\pp r r2
 	R1
 % Bars 46 to 50
@@ -73,7 +73,7 @@ musicOboeIMvtII = \relative c {
 	d f8\pp f f f16~ f f8 f f f16(
 	g) g8 g g g16~ g_\crescmarkup g8 g g g16~
 	g\< g8 g g g16\!~ g\> g8 g g g16~\!
-	g g8 g g\pp g16~ g g8~ g aes aes16~
+	g g8 g g\pp g16~ g g8 g aes aes16~
 % Bars 66 to 70
 	aes g8 g g g16~ g_\crescmarkup g8 g g g16~
 	g g8\> g g g16~ g f8 f f f16\!
@@ -82,12 +82,12 @@ musicOboeIMvtII = \relative c {
 	R1 \mark \default
 % Bars 71 to 75
 	bes4(\p^\solo a aes) r8 aes
-	c4( << bes2 {s4\< s\!}>> \tuplet 3/2 4 {a!8\> bes c}
-	bes4)\! ees2(\p\< c8. d16
+	c4( << bes2 {\hairpinShorten #'(-0.5 . -0.5) s4\< s\!}>> \once \tupletUp \tuplet 3/2 4 {a!8\> bes c}
+	bes4)\! ees2(-\tweak extra-offset #'(0 . -8) ^\p -\tweak extra-offset #'(0 . -8.3) ^\< c8. d16
 	b4)\! d2(~ d16\< ees f g)
 	g4(~\! g16 f ees d) c4(~_\dimmarkup c16 d ees f)
 % Bars 76 to 80
-	f4(\< fis g\!~_\crescmarkup g16 f ees d)
+	f4(\< fis g~\crescD g16 f ees d)
 	c4(~\< c16 bes\! a g f4~ f8) r \mark \default
 	R1*2
 	
@@ -109,9 +109,9 @@ musicOboeIMvtII = \relative c {
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1
+	\time 4/4 \tempoXoffset #1 R1*2
 % Bars 96 to 100
-	R1
+	
 	g,1\pp(
 	<< des'2\< {s8 s s s\!}>> << ces2)\> {s8 s s s\!}>>
 	ees4--(\pp ees-- ees4.--) r8
@@ -129,7 +129,7 @@ musicOboeIMvtII = \relative c {
 	R1*2
 	
 % Bars 111 to 115
-	R1\fermata
+	\once \ni R1\fermata
 	R1*2
 	\mark \default
 	bes,4(\pp a! aes) r8 aes(
@@ -147,7 +147,7 @@ musicOboeIMvtII = \relative c {
 	\mmrPos #-4 R \no
 	r4 \tuplet 3/2 4 {ees'8(\pp f ges} f) r \tuplet 3/2 4 {ees\p\<( f ges)\!}
 % Bars 126 to 130
-	ges2(\crescD\< f4 ees)\!
+	\hairpinShorten #'(-0.5 . -1) ges2(\crescD\< f4 ees)\!
 	<< des2.(\f~ {s4 s s\>}>> des8. ces16\!)
 	<< bes2.(\p {s4 s\< s }>> a8. bes16)\!
 	bes4(\< d!\! << f2~ {s4 s_\dimmarkup}>>

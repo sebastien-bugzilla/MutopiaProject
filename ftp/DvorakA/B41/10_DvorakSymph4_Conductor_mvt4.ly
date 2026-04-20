@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph4_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
 \include "./00-Common/DvorakSymph4_Format_Cond_Mvt04.ily"
+%\include "./00-Common/DvorakSymph4_Format_temp.ily"
 \include "./04-Mvt4/m04_v01_music_FlautoI_C.ily"
 \include "./04-Mvt4/m04_v02_music_FlautoII_C.ily"
 \include "./04-Mvt4/m04_v03_music_OboeI_C.ily"

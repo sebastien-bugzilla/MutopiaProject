@@ -163,6 +163,7 @@ marcato = \markup {\italic marcato}
 aII = \markup {\bold a2}
 tranquillo = \markup {tranquillo}
 benmarcato = \markup {\italic "ben marcato"}
+benmarc = \markup {\italic "ben marc."}
 espress = \markup {\italic espress.}
 dolcemaespress = \markup {\italic "dolce ma espress."}
 ileggio = \markup {"I. leggio"}
@@ -495,6 +496,7 @@ InCueContext = {
 	\override StemTremolo.beam-thickness = #0.35 % 0.30
 	\override Beam.length-fraction = #0.67 % 0.8
 	\override Stem.length-fraction = #0.8 % 0.8
+	\override Hairpin.height = 0.4
 %	\override Stem.length = #7
 %	\override Beam.length = #7
 	\set fontSize = #-3 %-3
@@ -519,6 +521,7 @@ OutCueContext = {
 %	\override Stem.length = #7
 %	\override Beam.length = #7
 	\unset fontSize
+	\revert Hairpin.height
 }
 
 no = {

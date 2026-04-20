@@ -479,7 +479,7 @@ musicOboeIMvtIV = \relative c {
 	c'_\dimmarkup bes f d) \partCombineAutomatic
 	R2 \mark \default
 % Bars 456 to 460
-	\partCombineApart bes'4-.-\offset X-offset -1 _\mfmarcato bes-.
+	\partCombineApart bes'4-.^\marcato bes-.
 	bes8.-. a16 c4->
 	bes-. bes-.
 	bes8.-. g16 f4->
@@ -577,7 +577,7 @@ musicOboeIMvtIV = \relative c {
 	a8.-. gis16 a4->\<
 	a-> a->\! \section \break
 % Bars 561 to 565
-	\key d \major \partCombineApart a,2(~
+	\key d \major \partCombineApart \markEO #'(0 . -2.5) a,2(~^\moltoespr
 	a8[ b] \tuplet 3/2 4 {cis d e)}
 	fis2->(
 	d4. ais8)

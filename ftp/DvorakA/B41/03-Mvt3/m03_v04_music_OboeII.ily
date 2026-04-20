@@ -22,7 +22,7 @@ musicOboeIIMvtIII = \relative c {
 	des4)\! r r r2 r8. e16(\<
 % Bars 11 to 15
 	f4)\! r r r2 r4
-	r2 r8. g16(\p\< e4)\! r r
+	r2 r8. \hairpinShorten #'(-0.5 . -0.5) g16(-\offset X-offset -1 \p\< e4)\! r r
 	r2 r4 dis'(\< e) r
 	fis( g) r a( bes) r
 	a( bes)\! r a(\f bes) r
@@ -31,7 +31,7 @@ musicOboeIIMvtIII = \relative c {
 	b2_\pocoapococresc bes4~ bes2 a4~
 	a2 bes!4~ bes2 b4~
 	b2 bes4~ bes2 a4~
-	a2 bes4~ bes2 b4~
+	\tempoXoffset #9 a2 bes4~ bes2 b4~
 % Bars 21 to 25
 	b2 c4~ c2 cis4-^\fz
 	d1.-^\mf~
@@ -82,10 +82,10 @@ musicOboeIIMvtIII = \relative c {
 	r2 r4 cis2.->\fz
 % Bars 61 to 65
 	cis->\fz cis->\fz
-	r2 r4 c!2.->\<_\fzmarkup 
-	des->_\fzmarkup c->_\fzmarkup\!
-	r2 r4 aes2.->\<_\fzmarkup
-	aes->_\fzmarkup aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) c!2.->\<_\fzmarkup 
+	\markEO #'(0 . 1.45) des->_\fzmarkup \markEO #'(0 . 1.7) c->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) aes2.->\<_\fzmarkup
+	\markEO #'(0 . 1.45) aes->_\fzmarkup \markEO #'(0 . 1.7) aes->_\fzmarkup\!
 % Bars 66 to 70
 	r2 gis'4-._\pcresc gis2-> gis4-.
 	r2 gis4-. gis2-> gis4-.
@@ -96,7 +96,7 @@ musicOboeIIMvtIII = \relative c {
 	bes4 b2~ b4 bes2~
 	bes4 a2~ a4 bes2~
 	bes4 b2~ b4 bes2~
-	bes4 b2~ b4 c2~
+	\tempoXoffset #10 bes4 b2~ b4 c2~
 	c4 cis2~ cis d4-. \section
 % Bars 76 to 80
 	\key d \major d1.->_\fmarcato~
@@ -166,8 +166,8 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	R1.\fermata \section
-	\time 2/4 \key c \major R2*12
+	\once \ni R1.\fermata \section \newSpacingSection
+	\sectionLabel "TRIO" \time 2/4 \key c \major \tempoXoffset #1 R2*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -177,7 +177,7 @@ musicOboeIIMvtIII = \relative c {
 	\ni \mmrPos #4 R2
 	\mmrPos #4 R
 	\mmrPos #4 R \no
-	r4 \tuplet 6/4 4 {r16\brack\p\< g,( a b c d)\!} \mark \default
+	r4 \tuplet 6/4 4 {r16\brack\p\< g,( a b c d)\!} \markEsw #'(-0.3 . 0.3) \mark \default
 % Bars 156 to 160
 	c4~_\mffz\startTrillSpan c8\stopTrillSpan[ r16 b]
 	c4~\fz\startTrillSpan c8[\stopTrillSpan r16 b]
@@ -236,7 +236,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 206 to 210
 	r fis( b)} g r
 	\tuplet 3/2 4 {f,!( a c)} c4(~
-	\tuplet 3/2 4 {c8 d a)} c4(~
+	\tuplet 3/2 4 {c8 d a)} \shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -0.5)) Slur c4(~
 	\tuplet 3/2 4 {c8 d a c a' g~
 	g f a,)} c4~
 % Bars 211 to 215
@@ -250,7 +250,7 @@ musicOboeIIMvtIII = \relative c {
 	d4-^ aes-^
 	g-^ f-^ \mark \default
 	des'4.\brack\fz r8
-	c4.\fz r8
+	c4.-\offset X-offset 0.5 \fz r8
 % Bars 221 to 225
 	b!4-^ aes'-^
 	g-^ f-^
@@ -260,25 +260,27 @@ musicOboeIIMvtIII = \relative c {
 % Bars 226 to 230
 	c-^ r
 	b8-. r r4
-	R2*36
+	R2*14
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
+	\mmrLength #33 \mmrnDown R2*15
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
+	\mmrLength #18 \mmrnDown R2*7
 % Bars 261 to 265
 	
 	
 	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R \no \section
+	\mmrPos #-4 R \no \section \newSpacingSection
 % Bars 266 to 270
 	\time 6/4 \key d \minor cis4\ff r r r2 r4
 	r2 r4 cis2.->\fz
@@ -290,10 +292,10 @@ musicOboeIIMvtIII = \relative c {
 	cis4\brack\f r r r2 r4
 	des r r r2 r4
 	des\p r r r2 r8. c,16(\< 
-	des4)\! r r r2 r8. e16(\<
+	des4)\! r r r2 r8. e16(-\alterBroken shorten-pair #'(()(0 . 2)) \<
 % Bars 276 to 280
-	f4)\! r r r2 r4
-	r2 r8. g16(\p\< e4)\! r r
+	f4) r\! r r2 r4
+	r2 r8. \hairpinShorten #'(-0.5 . -0.5) g16(-\offset X-offset -1 \p\< e4)\! r r
 	r2 r4 dis'(\< e) r
 	fis( g) r a( bes) r
 	a( bes)\! r a(\f bes) r
@@ -302,7 +304,7 @@ musicOboeIIMvtIII = \relative c {
 	b2_\pocoapococresc bes4~ bes2 a4~
 	a2 bes!4~ bes2 b4~
 	b2 bes4~ bes2 a4~
-	a2 bes4~ bes2 b4~
+	\tempoXoffset #8 a2 bes4~ bes2 b4~
 % Bars 286 to 290
 	b2 c4~ c2 cis4-^\fz
 	d1.-^\mf~
@@ -353,24 +355,24 @@ musicOboeIIMvtIII = \relative c {
 	r2 r4 cis2.->\fz
 % Bars 326 to 330
 	cis->\fz cis->\fz
-	r2 r4 c!2.->\<_\fzmarkup
-	des->_\fzmarkup c->_\fzmarkup\!
-	r2 r4 aes2.->_\fzmarkup\<
-	aes->_\fzmarkup aes->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) c!2.->\<_\fzmarkup
+	\markEO #'(0 . 1.45) des->_\fzmarkup \markEO #'(0 . 1.7) c->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) aes2.->_\fzmarkup\<
+	\markEO #'(0 . 1.45) aes->_\fzmarkup \markEO #'(0 . 1.7) aes->_\fzmarkup\!
 % Bars 331 to 335
 	r2 gis'4-._\pcresc gis2-> gis4-.
 	r2 gis4-. gis2-> gis4-.
 	r2 gis4-.\< gis2-> gis4-.
 	gis2-> gis4-. gis2-> gis4-.\!
-	a\f r a,\p~ a bes!2_\crescmarkup~
+	a\f r a,\p~ a bes!2-\offset X-offset 0.2 _\crescmarkup~
 % Bars 336 to 340
 	bes4 b2~ b4 bes2~
 	bes4 a2~ a4 bes2~
 	bes4 b2~ b4 bes2~
-	bes4 b2~ b4 c2~
-	c4 cis2~ cis d4-. \section
+	\tempoXoffset #11 bes4 b2~ b4 c2~
+	c4 cis2~ cis d4-. \section \newSpacingSection
 % Bars 341 to 345
-	\time 2/4 \key d \major d4_\fffz->~ d8[ r16 cis-.]
+	\sectionLabel "CODA" \time 2/4 \key d \major \tempoXoffset #1 d4_\fffz->~ d8[ r16 cis-.]
 	d4->\fz~ d8[ r16 cis-.]
 	d4-> fis->
 	e-> d->
@@ -384,13 +386,13 @@ musicOboeIIMvtIII = \relative c {
 % Bars 351 to 355
 	d4-> d->
 	cis-> d->
-	a2\fp~
+	\startMeasureCount a2\fp~
 	a->~
 	a->~
 % Bars 356 to 360
 	a->~
 	a->~
-	a->~
+	a->~ \stopMeasureCount
 	a4\< b\!(
 	ais\> b)\!
 % Bars 361 to 365
@@ -398,7 +400,7 @@ musicOboeIIMvtIII = \relative c {
 	gis->~
 	gis4 fis
 	<< e2)\> {s8 s s s\!}>>
-	R2*10
+	\tempoXoffset #-2 R2*10
 % Bars 366 to 370
 	
 % Bars 371 to 375
@@ -422,5 +424,5 @@ musicOboeIIMvtIII = \relative c {
 % Bars 386 to 388
 	
 	r4 \tuplet 3/2 4 {r8 r a,-.\ff}
-	d8-. r r4\fermata \fine
+	d8-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

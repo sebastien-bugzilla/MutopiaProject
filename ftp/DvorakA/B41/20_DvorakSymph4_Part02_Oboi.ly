@@ -21,7 +21,8 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-%\include "./00-Common/DvorakSymph4_Format_Part02_Oboi.ily"
+\include "./00-Common/DvorakSymph4_Format_Part02_Oboi.ily"
+%\include "./00-Common/DvorakSymph4_Format_temp.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI.ily"
 \include "./01-Mvt1/m01_v04_music_OboeII.ily"
@@ -43,17 +44,20 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41)"
+			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41) — Oboi"
 		}
 		instrument = \markup {
-			"Oboi"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatOboeIMvtI
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatOboeIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtI
 			}
@@ -71,13 +75,17 @@
 			}
 		}
 		\layout {
+%			system-count = 26
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatOboeIMvtII
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatOboeIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtII
 			}
@@ -89,19 +97,23 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
 		}
 		\layout {
+%			system-count = 6
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatOboeIMvtIII
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatOboeIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtIII
 			}
@@ -115,17 +127,21 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.2 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
+%			system-count = 18
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatOboeIMvtIV
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatOboeIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(oboeI) \tempiPartMvtIV
 			}
@@ -139,17 +155,29 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.8 \bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 13
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatOboeIIMvtI
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatOboeIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
@@ -167,13 +195,14 @@
 			}
 		}
 		\layout {
+%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtII
-%			}
+			\new Voice {
+				\formatOboeIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
@@ -185,19 +214,23 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
 		}
 		\layout {
+%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatOboeIIMvtIII
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatOboeIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
@@ -209,19 +242,23 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 3.
+				\bold "3. SCHERZO"
 			}
 		}
 		\layout {
+%			system-count = 15
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatOboeIIMvtIV
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatOboeIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
@@ -235,10 +272,11 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1 \bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 26
 		}
 	}
 }

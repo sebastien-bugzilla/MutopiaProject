@@ -262,7 +262,7 @@ musicOboeIMvtI = \relative c {
 	b8. b16 b4-. r
 	b8. b16 b4-. r \mark \default
 	d,8.->\ff f16 f2~\fz\>
-	<< f2.\! {s4 s s\!}>>
+	<< f2. {s4 s s\!}>>
 	r4 r gis8.->-\tweak X-offset -2 \f b16
 % Bars 231 to 235
 	b2.\fz\>~

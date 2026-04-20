@@ -352,5 +352,5 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 386 to 388
 	
 	r4 \tuplet 3/2 4 {r8 r a\ff-.}
-	d-. r r4\fermata \fine
+	d-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }
