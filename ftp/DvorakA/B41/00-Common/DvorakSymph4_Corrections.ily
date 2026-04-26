@@ -91,6 +91,32 @@ correctionsOboe = \markup {
 	% Mvt II, bar 136, Oboe I
 	"In Mvt II, bar 136, for Oboe I, a flat is added on the g."
 }
+correctionClarinetti = \markup {
+	
+	% Mvt I, bar 196 - 197, Clarinetto I & II
+	"In Mvt I, bar 196-197, for Clarinetto I & II a different slur is printed in conductor and part score. The conductor version is kept."
+	
+	% Mvt I, bar 377, Clarinetto I
+	"In Mvt I, bar 377, for clarinetto I, a natural is print on the f in part score, but not replicated in conductor score. A f natural would sound like a ees, which is completely out of tune of other parts. The natural sign is removed."
+	
+	% Mvt II, bar 44, Clarinetto I
+	"In Mvt II, bar 44, for clarinetto I, a rest is indicated in part score, not in conductor score. The conductor version is prefered as it seems more coherent with Oboe, clarinetti, Contrabass and faggot."
+	
+	% Mvt II, bar 123 - 124, Clarinetto I
+	"In Mvt II, bar 123-124, for Clarinetto I a different slur is printed in conductor and part score. The conductor version is kept."
+	
+	% Mvt III, bar 132 - 134, Clarinetto I
+	"In Mvt III, bar 132-134, for clarinetto I, the note (duplicate with faggot) is missing in part score. Conductor version is kept."
+	
+	% Mvt I, bar 373, Clarinetto II
+	"In Mvt I, bar 373, for clarinetto II, a missing dynamic f is added."
+	
+	% Mvt II, bar 87, Clarinetto II
+	"In Mvt II, bar 87, for Clarinetto II, a missing sharp on the last note is added."
+	
+	% Mvt IV, bar 585, Clarinetto II
+	"In Mvt IV, bar 585-586, for Clarinetto II, a missing hairpin is added."
+}
 correctionsCor = \markup {
 	
 	% bar 239, mvt IV, Cor III

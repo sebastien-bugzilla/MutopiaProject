@@ -22,7 +22,7 @@ musicClarinettoIIMvtII = \relative c {
 	<< c2\> {s4 s_\dimmarkup}>> a4\! r8 a\pp
 % Bars 11 to 15
 	a2 a4 r8 a\<
-	e'4(_\crescmarkup\! d2)\< \tuplet 3/2 4 {cis8( d e)\!}
+	e'4(^\crescmarkup\! d2)\< \tuplet 3/2 4 {cis8( d e)\!}
 	d4\mf << d2~ {s4 s\>}>> d8 cis(
 	d4)\! f4(~\pp \tuplet 3/2 4 {f8 f e)} e4
 	c2 d4_\crescmarkup e8-^ d-^ 
@@ -53,8 +53,8 @@ musicClarinettoIIMvtII = \relative c {
 	r4 d'2(\pp \tuplet 3/2 4 {cis8\< d e}
 	d4)\! fis->\fz(~ fis8[\> d]~ d cis\!
 	d)\p r r4 r2
-	R1
-	R1*2
+	R1*3
+	
 % Bars 51 to 55
 	\mark \default
 	c16_\ppbracklegato g8 g g g16~ g g8 g g g16~
@@ -98,20 +98,16 @@ musicClarinettoIIMvtII = \relative c {
 	r4 fis->\f g-> c->
 	c16 c c c  c\< c c c  c c c c  c c c cis\!
 	d8\ffz r r4 r2
-	R1
-	R1*4
+	R1*5
+	
 % Bars 91 to 95
 	
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1*2
+	\time 4/4 \tempoXoffset #1 R1*9
 % Bars 96 to 100
 	
-	R1*3
-	
-	
-	R1*4
 % Bars 101 to 105
 	
 	
@@ -119,13 +115,13 @@ musicClarinettoIIMvtII = \relative c {
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R \no
 % Bars 106 to 110
-	g,2:16\mp\< << aes: {s4 s\!}>>
-	g2: << aes:\p\> {s8 s s s\!}>>
+	g,16\mp\< g g g  g g g g  aes aes aes aes  aes aes aes aes\! %g,2:16\mp\< << aes: {s4 s\!}>>
+	g g g g  g g g g  aes\p\> aes aes aes   aes aes aes aes\! %g2: << aes:\p\> {s8 s s s\!}>>
 	g8\pp r r4 r2
 	r2 r8 aes,4.\pp(
 	g8) r r4 r2
 % Bars 111 to 115
-	R1\fermata
+	\once \ni R1\fermata
 	R1*2
 	\mark \default
 	R1*7
@@ -139,14 +135,14 @@ musicClarinettoIIMvtII = \relative c {
 	\ni \mmrPos #4 R1
 	\mmrPos #4 R \no
 	e''2.\pp d8.(_\crescmarkup c16)
-	c4(\< << b!2. {s4\! s\> s8 s\!}>>
-	c8) r r4 r b\p
+	c4(\< << b!2. {s4\! \hairpinShorten #'(0 . 1) s\> s8 s}>>
+	c8)\! r r4 r b\p
 % Bars 126 to 130
-	<< b1->\crescD\< {s4 s s s\!}>>
+	<< \hairpinShorten #'(-0.7 . 0) b1->-\offset X-offset -2 \crescD\< {s4 s s s}>>
 	c2(\f << des)\> {s8 s s s\!}>>
 	c2\p\< << ees~ {s8 s s s\!}>> 
 	ees4\< e\!(~ e8_\dimmarkup c4 b8)
-	c4(\p\< e~\! \tuplet 3/2 4 {e8\> c b} d4\!
+	\hairpinShorten #'(0 . -1.5) c4(\p\< e~\! \once \tupletUp \tuplet 3/2 4 {e8\> c b} d4\!
 % Bars 131 to 135
 	c8) r e4(~\pp \tuplet 3/2 4 {e8 c b} d4
 	c8) r r4 r2
@@ -158,7 +154,7 @@ musicClarinettoIIMvtII = \relative c {
 	
 	<< c,1~\p\> {s4 s s s\!}>>
 	c4 r r2
-	\ni \mmrPos #-4 R1 \no
+	\tempoXoffset #10 \ni \mmrPos #-4 R1 \no
 % Bars 141 and 142
 	c1\pp
 	c\fermata \fine

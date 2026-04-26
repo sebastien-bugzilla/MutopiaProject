@@ -251,7 +251,7 @@ musicClarinettoIIMvtIII = \relative c {
 	g4\brack\fz\startTrillSpan~ g8[\stopTrillSpan r16 fis-.]
 	g4\brack\fz\startTrillSpan~ g8[\stopTrillSpan r16 fis-.]
 	g4-> bes->
-	a-> g->
+	aes-> g->
 	f4\brack\fz~ f8[ s16 g-.]
 % Bars 216 to 220
 	f4\brack\fz~ f8[ s16 g-.] 

@@ -10,7 +10,7 @@ musicClarinettoIMvtI = \relative c {
 	\transposition bes
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\mmrnDown R2.*4
 		
 		
 		
@@ -40,7 +40,7 @@ musicClarinettoIMvtI = \relative c {
 		b-. r r4 r
 		r c8(\fz b16) r b(\f\< dis fis b)\! \mark \default
 % Bars 26 to 30
-		g2->\ff g8.-> e16
+		\tempoXoffset #0.5 g2->\ff g8.-> e16
 		a2\fz~ a8 r
 		a4..\fz fis16-.[ dis8.-> a16-.]
 		g4.->\fz( b16 g e8) r
@@ -65,7 +65,7 @@ musicClarinettoIMvtI = \relative c {
 		r r fis-.->
 % Bars 46 to 50
 		r r fis->-.
-		r fis'4..^\soli e16(
+		r fis'4..^\solo e16(
 		dis8.)\>[ cis16( b8.) ais16( gis8.) fis16]\!
 		R2.*2
 		
@@ -97,7 +97,7 @@ musicClarinettoIMvtI = \relative c {
 		g r r
 		R2.*4
 % Bars 76 to 80
-		<< a'2.(\mf\< {s4 s s8 s\!}>>
+		<< \hairpinShorten #'(-0.5 . -1.5) a'2.(-\offset X-offset -1 \mf\< {s4 s s8 s\!}>>
 		g2.\>
 		<< cis,) {s4 s s\!}>>
 		d4(\p g4._\crescmarkup fis8
@@ -229,7 +229,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 186 to 190
 	aes2->\fz~ aes8 ees-.
 	ees8.-> aes16 aes4-. r
-	aes2.\ff~
+	\startMeasureCount aes2.\ff~
 	aes~
 	aes~
 % Bars 191 to 195
@@ -237,7 +237,7 @@ musicClarinettoIMvtI = \relative c {
 	aes~\>
 	aes~
 	aes~
-	<< aes~ {s4 s s\!}>>
+	<< aes~ {s4 s s\!}>> \stopMeasureCount
 % Bars 196 to 200
 	aes4\p ees2~
 	ees_\dimmarkup c4(~
@@ -254,11 +254,11 @@ musicClarinettoIMvtI = \relative c {
 	d8. e16 e4-. r
 	e2~ e8. d16
 	c4 r r
-	R2.*7
+	R2.*9
 % Bars 211 to 215
 	
 % Bars 216 to 220
-	R2.*2
+	
 	
 	g'2\ff~ g8 e-.
 	e8. g16 g4-. r
@@ -271,7 +271,7 @@ musicClarinettoIMvtI = \relative c {
 	e8. g16 g4-. r
 % Bars 226 to 230
 	e8. g16 g4-. r
-	e8. g16 g4-. r \mark \default
+	e8. g16 g4-. r \markXoffset #-0.2 \mark \default
 	R2.*2
 	
 	r4 r fis8.->\f fis16 
@@ -308,7 +308,7 @@ musicClarinettoIMvtI = \relative c {
 % Bars 256 to 260
 	fis e dis e dis c!
 	b4) r r
-	R2. \mark \default
+	R2. \markXoffset #-0.2 \mark \default
 	R2.
 	r4 r b'16(\f\< dis fis b)\!
 % Bars 261 to 265
@@ -413,8 +413,8 @@ musicClarinettoIMvtI = \relative c {
 	dis,2.\fp\>->(
 % Bars 351 to 355
 	e4)\! r r
-	dis2.->\fp\>(
-	e4)\! r r
+	dis2.->\fp-\alterBroken shorten-pair #'(()(0 . 2)) \>(
+	e4) r\! r
 	R2.*5
 % Bars 356 to 360
 	
@@ -432,7 +432,7 @@ musicClarinettoIMvtI = \relative c {
 	b2( a4)\!
 	gis2.(\mf~
 	gis8 b a gis e fis)
-	<< gis2.(~\<_\moltocresc {s4 s s\!}>>
+	<< \hairpinShorten #'(0 . -1) gis2.(~\<^\moltocresc {s4 s s\!}>>
 	gis8 b a gis e fis)
 % Bars 371 to 375
 	gis( b a gis e fis)
@@ -468,7 +468,7 @@ musicClarinettoIMvtI = \relative c {
 	d8. g16 g4-.\! r
 	R2.*2
 	
-	b,2\pp~ b8 gis-.
+	b,2\pp^~ b8 gis-.
 	gis8. b16 b4-. r
 % Bars 401 to 405
 	R2.*6
@@ -492,8 +492,8 @@ musicClarinettoIMvtI = \relative c {
 	c'4.(\< a8 g fis\!
 % Bars 421 to 425
 	dis)\f r r4 r
-	R2.*3
-	
+	R2.
+	\mmrLength #17 \mmrnDown R2.*2
 	\markk
 	R2.*8
 % Bars 426 to 430

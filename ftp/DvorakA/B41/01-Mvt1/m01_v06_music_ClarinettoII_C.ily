@@ -430,8 +430,8 @@ musicClarinettoIIMvtI = \relative c {
 	e(\< b4. gis'!8)
 % Bars 366 to 370
 	gis2( fis4)\!
-	e2.(-\offset X-offset -1 \mf~
-	e4. e8 cis dis)
+	e2.-\offset X-offset -1 \mf~
+	e4. e8( cis dis)
 	<< e2.(~\< {s4 s s8 s\!}>>
 	e8 gis fis e cis dis)
 % Bars 371 to 375

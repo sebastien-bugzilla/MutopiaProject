@@ -412,16 +412,16 @@ cueVoiceClarinettoIMvtII = \relative c {
 	<>^\markup {Vcl.}
 	s1*2
 	% bar 37
-	\voiceOne r4 r8^\markup {Fl.} c''-. c'4-> r \oneVoice
+	r4 r8^\markup {Fl.} c''-. c'4-> r
 	s1*1
 	% bar 39
-	\voiceOne r4 r8 d,-. d'4-> r
+	r4 r8 d,-. d'4-> r
 	s1*38
 	% bar 78
-	<>^\markup {Archi}
+	<>-\offset X-offset 0.5 ^\markup {Archi}
 	s1*16 s2*1
 	% bar 95
-	<>^\markup {Vlc.}
+	<>-\offset X-offset -3 ^\markup {Vlc.}
 	s1*19
 	% bar 114
 	<>^\markup {Ob.I.}
@@ -435,8 +435,8 @@ cueVoiceClarinettoIMvtIII = \relative c {
 	% bars 264 - 265
 	\transpose a c' {
 		\relative c {
-			\voiceOne \tuplet 3/2 4 {e'''8(^\markup {Viol.I.} f) d-. e( f) d-.
-			e( f) d-. g( aes) f-.} \oneVoice
+			\tuplet 3/2 4 {e'''8(-\tweak extra-offset #'(-4.5 . 10.5) _\markup {Viol.I.} f) d-. e( f) d-.
+			e( f) d-. g( aes) f-.}
 		}
 	}
 }
@@ -452,10 +452,10 @@ cueVoiceClarinettoIMvtIV = \relative c {
 	<>^\markup {Archi}
 	s2*40
 	% bar 198
-	<>^\markup {\column {\lower #1.5 "Fl.I.Ob.I." "Viol."}}
+	<>-\offset X-offset -2 ^\markup {\column {\lower #1.5 "Fl.I.Ob.I." "Viol."}}
 	s2*40
 	% bars 238 - 241
-	\voiceOne c''8(^\markup {Ob.I.} bes a bes
+	\voiceOne c''8(-\offset X-offset -3 ^\markup {Ob.I.} bes a bes
 	f' d c bes)
 	g'( e d c)
 	a'( g f c) \oneVoice
@@ -512,8 +512,8 @@ cueVoiceClarinettoIIMvtIII = \relative c {
 	% bars 264 - 265
 	\transpose a c' {
 		\relative c {
-			\voiceOne \tuplet 3/2 4 {e'''8(^\markup {Viol.I.} f) d-. e( f) d-.
-			e( f) d-. g( aes) f-.} \oneVoice
+			\ottava #1 \tuplet 3/2 4 {e'''8(-\offset X-offset -5 ^\markup {Viol.I.} f) d-. e( f) d-.
+			e( f) d-. g( aes) f-.} \ottava #0
 		}
 	}
 }
@@ -523,10 +523,10 @@ cueVoiceClarinettoIIMvtIV = \relative c {
 	<>^\markup {Archi}
 	s2*40
 	% bar 198
-	<>^\markup {\column {\lower #1.5 "Fl.I.Ob.I." "Viol."}}
+	<>-\offset X-offset -3 ^\markup {\column {\lower #1.5 "Fl.I.Ob.I." "Viol."}}
 	s2*40
 	% bars 238 - 241
-	\voiceOne c''8(^\markup {Ob.I.} bes a bes
+	\voiceOne c''8(-\offset X-offset -3 ^\markup {Ob.I.} bes a bes
 	f' d c bes)
 	g'( e d c)
 	a'( g f c) \oneVoice

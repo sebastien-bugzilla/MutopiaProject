@@ -35,7 +35,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 21 to 25
 	R2*2
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*2^\gp
 	
 % Bars 26 to 30
@@ -61,7 +61,7 @@ musicClarinettoIIMvtIV = \relative c {
 	c-. c-.
 	des-. r
 	R2
-	f4-.\mf\> ees-.\!
+	\hairpinShorten #'(-0.5 . -1.5) f4-.\mf\> ees-.\!
 % Bars 46 to 50
 	c-.\p c-.
 	des-. r
@@ -87,10 +87,10 @@ musicClarinettoIIMvtIV = \relative c {
 	ges(
 	f8)\f r r4
 % Bars 66 to 70
-	R2*2
+	R2*3
 	
-	R2 \mark \default
-	ees4_\mfbenmarc-. fes-.
+	\mark \default
+	ees4\mf^\benmarc-. fes-.
 	ees2\fz
 % Bars 71 to 75
 	fes4-. ees-.
@@ -99,7 +99,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ees2\fz
 	fes4-. ees-.
 % Bars 76 to 80
-	<< fes2\fz\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1.5) fes2\fz\> {s8 s s s}>>
 	ees4-.\mp fes-._\dimmarkup
 	ees-. r
 	fes4-. ees-.
@@ -108,7 +108,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ees-. fes-.
 	ees-. r
 	fes4-. ees-.
-	aes,2\pp~
+	\startMeasureCount aes,2\pp~
 	aes~
 % Bars 86 to 90
 	aes~
@@ -118,8 +118,8 @@ musicClarinettoIIMvtIV = \relative c {
 	aes~
 % Bars 91 to 95
 	aes
-	aes~_\pocoapococresc
-	aes
+	aes~-\offset X-offset #1 _\pocoapococresc
+	aes \stopMeasureCount
 	aes~
 	aes
 % Bars 96 to 100
@@ -136,7 +136,7 @@ musicClarinettoIIMvtIV = \relative c {
 	e8 r r4
 % Bars 106 to 110
 	R2*2
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	f'4-.\ff f-.
 	f8.-. e16 g4->
 	f-. f-.
@@ -157,15 +157,15 @@ musicClarinettoIIMvtIV = \relative c {
 	e-. e-.
 	fis-. r\fermata
 	R2
-	R\fermata
+	\once \ni R\fermata
 % Bars 126 to 130
 	R
-	R\fermata
+	\once \ni R\fermata
 	R2*8
 % Bars 131 to 135
 	
 % Bars 136 to 140
-	e8-.\p e-. e-. e-.
+	\startMeasureCount e8-.\p e-. e-. e-.
 	e-. e-. e-. e-.
 	e-. e-. e-. e-.
 	e-._\crescmarkup e-. e-. e-.
@@ -178,15 +178,15 @@ musicClarinettoIIMvtIV = \relative c {
 	e-. e-. e-. e-.
 % Bars 146 to 150
 	e-. e-. e-. e-.
-	e-. e-. e-. e-.
+	e-. e-. e-. e-. \stopMeasureCount
 	e\pp r r4
-	R2*9
+	R2*7
 % Bars 151 to 155
 	
 % Bars 156 to 160
-	
+	\mmrLength #12 \tempoXoffset -1 R2*2
 	\section \mark \default
-	\key f \major R2*80
+	\key f \major \mmrLength #27 R2*30
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -199,10 +199,14 @@ musicClarinettoIIMvtIV = \relative c {
 	
 % Bars 186 to 190
 	
+	
+	\mmrLength #17 \mmrnDown R2*10
 % Bars 191 to 195
 	
 % Bars 196 to 200
 	
+	
+	\mmrLength #11 R2*32
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -215,6 +219,10 @@ musicClarinettoIIMvtIV = \relative c {
 	
 % Bars 226 to 230
 	
+	
+	
+	
+	R2*8
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -291,32 +299,32 @@ musicClarinettoIIMvtIV = \relative c {
 	g8. fis16 g4->
 % Bars 306 to 310
 	ees8. d16 ees4->
-	c8. b16 c4-> \mark \default
+	c8. b16 c4-> \markXoffset #-0.2 \mark \default
 	R2*2
 	
-	\tuplet 3/2 4 {c8[\f c c] c c c
+	\tuplet 3/2 4 {c8[-\offset X-offset -1.5 \f c c] c c c
 % Bars 311 to 315
 	c[ c c] c c c}
 	R2*2
 	
-	\tuplet 3/2 4 {c8[\f c c] c c c
+	\tuplet 3/2 4 {c8[-\offset X-offset -2 \f c c] c c c
 	c[ c c] c c c}
 % Bars 316 to 320
 	cis2\f\<~
 	<< cis {s8 s s s\!}>>
-	des4-^ r
+	\startMeasureCount des4-^ r
 	des-^ r
 	des-^ r
 % Bars 321 to 325
 	des-^ r
 	des-^ r
-	des-^ r
+	des-^ r \stopMeasureCount
 	R2*4
 	
 % Bars 326 to 330
 	
 	\section
-	\key f \minor R2*16
+	\key f \minor \mmrLength #28 \tempoXoffset #-2 R2*16
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -348,8 +356,8 @@ musicClarinettoIIMvtIV = \relative c {
 % Bar 361 to 365
 	e4..\fz e16
 	e2\fz~
-	<< e\> {s8 s s s\!}>>
-	e8-.\p e-. e-. e-.
+	<< \hairpinShorten #'(0 . -1) e\> {s8 s s s\!}>>
+	\startMeasureCount e8-.\p e-. e-. e-.
 	e-. e-. e-. e-.
 % Bars 366 to 370
 	e-. e-. e-. e-.
@@ -358,7 +366,7 @@ musicClarinettoIIMvtIV = \relative c {
 	e-. e-. e-. e-.
 	e-. e-. e-. e-.
 % Bars 371 to 375
-	e-. e-. e-. e-.
+	e-. e-. e-. e-. \stopMeasureCount
 	e2\p~
 	<<e {s4 s_\crescmarkup}>>
 	c2~
@@ -397,10 +405,18 @@ musicClarinettoIIMvtIV = \relative c {
 	d-> r
 	d-> d->
 	d-> r
-	R2*13
+	R2*5
 % Bars 406 to 410
 	
+	
+	
+	R2*2
+	
 % Bars 411 to 415
+	\mmrLength #18 \tempoXoffset #-3 R2*2
+	
+	\mmrLength #12 \tempoXoffset #-0.5 R2*4
+	
 	
 % Bars 416 to 420
 	
@@ -447,9 +463,9 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 451 to 455
 	aes~
 	aes8 r r4
-	R2*2
+	R2*3
 	
-	R2 \mark \default
+	\mark \default
 % Bars 456 to 460
 	ees4-.\mf fes-.
 	ees2->
@@ -459,7 +475,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 461 to 465
 	ees2->
 	fes4-. ees-.
-	<< fes2->\> {s4 s8 s\!}>>
+	<< \hairpinShorten #'(0 . -1) fes2->\> {s4 s8 s\!}>>
 	ees4-.\p fes-._\dimmarkup
 	ees-. r
 % Bars 466 to 470
@@ -469,7 +485,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ees-. r
 	fes-. ees-.\!
 % Bars 471 to 475
-	aes,2\pp~
+	\startMeasureCount aes,2\pp~
 	aes~
 	aes~
 	aes~
@@ -477,7 +493,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 476 to 480
 	aes~
 	aes~
-	aes
+	aes \stopMeasureCount
 	g~
 	g~
 % Bars 481 to 485
@@ -540,7 +556,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 531 to 535
 	b~
 	<< b\> {s8 s s s\!}>>
-	b2\pp~
+	\startMeasureCount b2\pp~
 	b~
 	b~
 % Bars 536 to 540
@@ -548,7 +564,7 @@ musicClarinettoIIMvtIV = \relative c {
 	b~
 	b~
 	b~
-	b
+	b \stopMeasureCount
 % Bars 541 to 545
 	R2*16
 % Bars 546 to 550
@@ -693,7 +709,7 @@ musicClarinettoIIMvtIV = \relative c {
 	g2->
 	f4-. f-.
 	g2->
-	f8 f f f
+	\startMeasureCount f8 f f f
 % Bars 676 to 680
 	f f f f
 	f f f f
@@ -702,7 +718,7 @@ musicClarinettoIIMvtIV = \relative c {
 	f f f f
 % Bars 681 to 685
 	f f f f
-	f f f f
+	f f f f \stopMeasureCount
 	f4-. r
 	R2^\gp
 	e4-> r

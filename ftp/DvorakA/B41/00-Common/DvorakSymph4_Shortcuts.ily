@@ -182,6 +182,7 @@ moltoespressivo = \markup {\italic "molto espressivo"}
 nonlegato = \markup {\italic "non legato"}
 legato = \markup {\italic legato}
 semprestaccato = \markup {\italic "sempre staccato"}
+marc = \markup {\italic marc.}
 %--------------------
 % instrument modification
 %--------------------

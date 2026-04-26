@@ -99,7 +99,7 @@ musicClarinettoIMvtIV = \relative c {
 	bes-. bes-._\dimmarkup
 	bes8.-. aes16 c4->
 	bes4-. bes-.
-	bes8. aes16 fes!4->
+	bes8.-. aes16 fes!4->
 % Bars 81 to 85
 	bes4-. bes-.
 	bes8.-. aes16 c4->
@@ -451,7 +451,7 @@ musicClarinettoIMvtIV = \relative c {
 	bes-. bes-.
 	bes8.-. aes16 fes4->
 	bes-. bes-.
-	bes8. aes16 ces4->
+	bes8.-. aes16 ces4->
 	bes-. bes-. \partCombineAutomatic 
 % Bars 471 to 475
 	\dynEO #'(0 . 0.3) bes,2-\tweak X-offset 0 \pp~

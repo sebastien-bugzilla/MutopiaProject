@@ -22,7 +22,7 @@ musicClarinettoIIMvtIII = \relative c {
 	e4)\! r r r2 r8. g16(\<
 % Bars 11 to 15
 	aes!4)\! r r r2 r4
-	r2 r8. bes16(\p\< g4)\! r r
+	r2 r8. bes16(-\offset X-offset -1.5 \p\< g4)\! r r
 	r2 r4 fis'(\< g) r
 	a( bes) r c,( des!) r
 	c( des!)\! r c(\f des) r
@@ -35,11 +35,11 @@ musicClarinettoIIMvtIII = \relative c {
 	<< ees1.(->\> {s4 s s s s s\!}>>
 	c2.) r2 r8 c->
 % Bars 26 to 30
-	<< c1.\fz~ {s4 s s\> s s s}>>
+	<< c1.\fz\>~ {s4 s s s s s}>>
 	c2 c4-. ees-. des-. bes-.\!
 	c1.->~
 	c2. r2 r8 c
-	<< f1.\fz\>~ {s4 s s s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1.5) f1.\fz\>~ {s4 s s s s s\!}>>
 % Bars 31 to 35
 	f2 g4-. aes-. g-. f-.
 	<< ees1.->(\> {s4 s s s s s\!}>>
@@ -78,10 +78,10 @@ musicClarinettoIIMvtIII = \relative c {
 	r2 r4 e2.->\fz
 % Bars 61 to 65
 	e->\fz e->\fz
-	r2 r4 gis2.\<_\fzmarkup
-	gis_\fzmarkup gis_\fzmarkup\!
-	r2 r4 d2.->\<_\fzmarkup
-	d->_\fzmarkup d->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) gis2.\<_\fzmarkup
+	\markEO #'(0 . 1.45) gis_\fzmarkup \markEO #'(0 . 1.7) gis_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) d2.->\<_\fzmarkup
+	\markEO #'(0 . 1.45) d->_\fzmarkup \markEO #'(0 . 1.7) d->_\fzmarkup\!
 % Bars 66 to 70
 	r2 f!4-._\pcresc f2-> f4-.
 	r2 f4-. f2-> f4-.
@@ -89,10 +89,10 @@ musicClarinettoIIMvtIII = \relative c {
 	f2-> f4-. f2-> f4-.\!
 	e\f r r r2 r4
 % Bars 71 to 75
-	R1.*5
+	R1.*3
 	
 	
-	
+	\tempoXoffset -2.5 R1.*2
 	\section
 % Bars 76 to 80
 	\key f \major f1._\fmarcato->~
@@ -155,19 +155,15 @@ musicClarinettoIIMvtIII = \relative c {
 	c~
 	c4 r r r2 r4
 % Bars 126 to 130
-	R1.*6
+	R1.*13
 % Bars 131 to 135
 	
-	R1.*3
-	
-	
-	R1.*4
 % Bars 136 to 140
 	
 	
 	
-	R1.\fermata \section
-	\time 2/4 \key ees \major ees,4\startTrillSpan\fp~ ees8\stopTrillSpan r16 d-.
+	\once \ni R1.\fermata \section \newSpacingSection
+	\sectionLabel "TRIO" \key ees \major \time 2/4 ees,4\startTrillSpan\fp~ ees8\stopTrillSpan r16 d-.
 % Bars 141 to 145
 	ees4\fp\startTrillSpan~ ees8\stopTrillSpan r16 d-.
 	ees4-> ees->
@@ -185,7 +181,7 @@ musicClarinettoIIMvtIII = \relative c {
 	d4\fp\startTrillSpan~ d8\stopTrillSpan r16 c
 	d4\fz\startTrillSpan~ d8\stopTrillSpan r16 c
 	d4-> ees->
-	d-> \tuplet 6/4 4 {bes16\< bes( c d ees f)\!} \mark \default
+	d-> \tuplet 6/4 4 {bes16\< bes( c d ees f)\!} \markEsw #'(-0.5 . 0.5) \mark \default
 % Bars 156 to 160
 	g4_\mffz\startTrillSpan~ g8[\stopTrillSpan r16 f]
 	g4\fz\startTrillSpan~ g8[\stopTrillSpan r16 f]
@@ -251,7 +247,7 @@ musicClarinettoIIMvtIII = \relative c {
 	g4\brack\fz\startTrillSpan~ g8[\stopTrillSpan r16 fis-.]
 	g4\brack\fz\startTrillSpan~ g8[\stopTrillSpan r16 fis-.]
 	g4-> bes->
-	a-> g->
+	aes-> g->
 	f4\brack\fz~ f8[ r16 g-.]
 % Bars 216 to 220
 	f4\brack\fz~ f8[ r16 g-.] 
@@ -268,25 +264,29 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 226 to 230
 	ees8-^ r r4
 	d8-. r r4
-	R2*36
+	R2*14
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
+	
+	\mmrLength #38 \mmrnDown R2*15
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
+	
+	\mmrLength #18 \mmrnDown R2*7
 % Bars 261 to 265
 	
 	
 	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R \no \section
+	\mmrPos #-4 R \no \section \newSpacingSection
 % Bars 266 to 270
 	\time 6/4 \key f \minor e4\ff r r r2 r4
 	r2 r4 e2.->\fz
@@ -301,7 +301,7 @@ musicClarinettoIIMvtIII = \relative c {
 	e4)\! r r r2 r8. g16(\<
 % Bars 276 to 280
 	aes!4)\! r4 r r2 r4
-	r2 r8. bes16(\p\< g4)\! r r 
+	r2 r8. \hairpinShorten #'(0 . -1) bes16(-\offset X-offset #-1.5 \p\< g4)\! r r 
 	r2 r4 fis'(\< g) r
 	a( bes) r c,( des!) r
 	c( des!)\! r c(\f des) r
@@ -318,7 +318,7 @@ musicClarinettoIIMvtIII = \relative c {
 	c2 c4-. ees-. des-. bes-.\!
 	c1.->~
 	c2. r2 r8 c
-	<< f1.\fz\>~ {s4 s s s s s\!}>>
+	<< \hairpinShorten #'(-0.3 . -2) f1.\fz\>~ {s4 s s s s s\!}>>
 % Bars 296 to 300
 	f2 g4-. aes-. g-. f-.
 	<< ees1.(->\> {s4 s s s s s\!}>>
@@ -357,10 +357,10 @@ musicClarinettoIIMvtIII = \relative c {
 	r2 r4 e2.->\fz
 % Bars 326 to 330
 	e->\fz e->\fz
-	r2 r4 gis2.\<_\fzmarkup
-	gis_\fzmarkup gis_\fzmarkup\!
-	r2 r4 d2.->\<_\fzmarkup
-	d->_\fzmarkup d->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) gis2.\<_\fzmarkup
+	\markEO #'(0 . 1.45) gis_\fzmarkup \markEO #'(0 . 1.7) gis_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) d2.->\<_\fzmarkup
+	\markEO #'(0 . 1.45) d->_\fzmarkup \markEO #'(0 . 1.7) d->_\fzmarkup\!
 % Bars 331 to 335
 	r2 f4-._\pcresc f2-> f4-.
 	r2 f4-. f2-> f4-.
@@ -368,13 +368,13 @@ musicClarinettoIIMvtIII = \relative c {
 	f2-> f4-. f2-> f4-.\!
 	e\f r r r2 r4
 % Bars 336 to 340
-	R1.*5
+	R1.*3
 	
 	
-	
-	\section
+	\tempoXoffset #-3 R1.*2
+	\section \newSpacingSection
 % Bars 341 to 345
-	\key f \major \time 2/4 f4._\fffz-> r16 e-.
+	\sectionLabel "CODA" \key f \major \time 2/4 f4._\fffz-> r16 e-.
 	f4.->\fz r16 e-.
 	f4-> f->
 	g-> f->
@@ -402,7 +402,7 @@ musicClarinettoIIMvtIII = \relative c {
 	g4.-> r8
 	b2\p\>~ 
 	b4 c--\!
-	R2*10
+	\mmrLength #18 \mmrnDown \tempoXoffset -2 R2*10
 % Bars 366 to 370
 	
 % Bars 371 to 375
@@ -426,5 +426,5 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 386 to 388
 	
 	r4 \tuplet 3/2 4 {r8 r e-.\ff}
-	f-. r r4\fermata \fine
+	f-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

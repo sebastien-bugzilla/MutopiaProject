@@ -21,7 +21,8 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-%\include "./00-Common/DvorakSymph4_Format_Part03_Clarinetti.ily"
+\include "./00-Common/DvorakSymph4_Format_Part03_Clarinetti.ily"
+%\include "./00-Common/DvorakSymph4_Format_temp.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v05_music_ClarinettoI.ily"
 \include "./01-Mvt1/m01_v06_music_ClarinettoII.ily"
@@ -43,17 +44,20 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41)"
+			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41) — Clarinetti"
 		}
 		instrument = \markup {
-			"Clarinetti"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatClarinettoIMvtI
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatClarinettoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtI
 			}
@@ -71,13 +75,17 @@
 			}
 		}
 		\layout {
+%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatClarinettoIMvtII
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatClarinettoIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtII
 			}
@@ -89,19 +97,23 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
 		}
 		\layout {
+%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatClarinettoIMvtIII
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatClarinettoIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtIII
 			}
@@ -115,17 +127,21 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.9 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
+%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatClarinettoIMvtIV
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatClarinettoIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoI) \tempiPartMvtIV
 			}
@@ -139,17 +155,21 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.3 \bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 11
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatClarinettoIIMvtI
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatClarinettoIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtI
 			}
@@ -167,13 +187,17 @@
 			}
 		}
 		\layout {
+%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatClarinettoIIMvtII
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatClarinettoIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtII
 			}
@@ -185,19 +209,23 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
 		}
 		\layout {
+%			system-count = 3
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatClarinettoIIMvtIII
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatClarinettoIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtIII
 			}
@@ -211,17 +239,21 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.8 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
+%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatClarinettoIIMvtIV
+%				\displayFilterVoice
 %			}
+			\new Voice {
+				\formatClarinettoIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(clarinettoII) \tempiPartMvtIV
 			}
@@ -235,10 +267,11 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.8 \bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 26
 		}
 	}
 }
