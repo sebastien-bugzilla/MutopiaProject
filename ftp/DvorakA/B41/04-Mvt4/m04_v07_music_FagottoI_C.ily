@@ -656,7 +656,7 @@ musicFagottoIMvtIV = \relative c {
 	R2
 	g2->\fz~
 	g4 r
-	g2->~\fz
+	g2~\fz
 % Bars 596 to 600
 	g4 r
 	a2\brack\fz~

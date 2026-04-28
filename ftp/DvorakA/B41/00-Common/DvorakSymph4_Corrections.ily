@@ -117,6 +117,20 @@ correctionClarinetti = \markup {
 	% Mvt IV, bar 585, Clarinetto II
 	"In Mvt IV, bar 585-586, for Clarinetto II, a missing hairpin is added."
 }
+correctionFaggot = \markup {
+	
+	% Mvt I, Bar 88, Fagotto I & II
+	"In Mvt I, Bar 88, for fagotto I & II, a decrescendo which appear only in part score is removed."
+	
+	% Mvt IV, Bar 468, Fagotto I
+	"In Mvt IV, Bar 88, for fagotto I, a missing decrescendo is added."
+	
+	% Mvt IV, Bar 94 - 95, Fagotto II
+	"In Mvt IV, Bar 94-95, for fagotto II, a 'd' is printed instead of a 'b', in relation with conductor."
+	
+	% In Mvt IV, Bar 157, Fagotto II
+	"In Mvt IV, Bar 157, for fagotto II, the change of key signature is corrected."
+}
 correctionsCor = \markup {
 	
 	% bar 239, mvt IV, Cor III

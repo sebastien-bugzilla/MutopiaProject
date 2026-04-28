@@ -124,7 +124,7 @@ musicFagottoIIMvtI = \relative c {
 		a2-> a4
 		bes4-. bes4.-> bes8-.
 % Bars 101 to 105
-		a2.
+		a2.->
 		bes2.\fz
 		f->\fz
 		f->\fz

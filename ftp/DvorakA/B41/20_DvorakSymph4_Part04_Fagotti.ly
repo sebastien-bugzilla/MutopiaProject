@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.26"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-%\include "./00-Common/DvorakSymph4_Format_Part04_Fagotti.ily"
+\include "./00-Common/DvorakSymph4_Format_Part04_Fagotti.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v07_music_FagottoI.ily"
 \include "./01-Mvt1/m01_v08_music_FagottoII.ily"
@@ -43,17 +43,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41)"
+			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41) — Fagotti"
 		}
 		instrument = \markup {
-			"Fagotti"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIMvtI
-%			}
+			\new Voice {
+				\formatFagottoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtI
 			}
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIMvtII
-%			}
+			\new Voice {
+				\formatFagottoIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtII
 			}
@@ -89,7 +89,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -99,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIMvtIII
-%			}
+			\new Voice {
+				\formatFagottoIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtIII
 			}
@@ -115,7 +115,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.3 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
@@ -123,9 +123,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIMvtIV
-%			}
+			\new Voice {
+				\formatFagottoIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoI) \tempiPartMvtIV
 			}
@@ -139,17 +139,25 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIIMvtI
-%			}
+			\new Voice {
+				\formatFagottoIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtI
 			}
@@ -171,9 +179,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIIMvtII
-%			}
+			\new Voice {
+				\formatFagottoIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtII
 			}
@@ -185,7 +193,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -195,9 +203,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIIMvtIII
-%			}
+			\new Voice {
+				\formatFagottoIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtIII
 			}
@@ -211,7 +219,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
@@ -219,9 +227,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIIMvtIV
-%			}
+			\new Voice {
+				\formatFagottoIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(fagottoII) \tempiPartMvtIV
 			}
@@ -235,7 +243,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.8 \bold "4. FINALE"
 			}
 		}
 		\layout {

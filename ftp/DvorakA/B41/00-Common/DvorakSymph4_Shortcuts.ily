@@ -42,6 +42,7 @@ plegato = \markup {\hspace #-0.1 \dynamic p \italic legato}
 %--------------------
 mpespressivomolto = \markup {\hspace #-1.07 \dynamic mp \italic "espressivo molto"}
 mpespress = \markup {\hspace #-1.07 \dynamic mp \italic espress.}
+mpdim = \markup {\hspace #-1.07 \dynamic mp \italic dim.}
 %--------------------
 % dynamics mf
 %--------------------
@@ -183,6 +184,9 @@ nonlegato = \markup {\italic "non legato"}
 legato = \markup {\italic legato}
 semprestaccato = \markup {\italic "sempre staccato"}
 marc = \markup {\italic marc.}
+pocoapoco = \markup {\italic "poco a poco"}
+pocoa = \markup {\italic "poco a"}
+apococresc = \markup {\italic "a poco cresc."}
 %--------------------
 % instrument modification
 %--------------------
@@ -555,6 +559,13 @@ markEsw = #(define-music-function
 	#}
 )
 
+markWhiteout = {
+	\once \override Score.RehearsalMark.layer = #3
+	\once \override Score.RehearsalMark.whiteout = #1
+	\once \override Score.RehearsalMark.whiteout-style = #'outline
+}
+
+
 %###############################################################################
 %  Fonctions sur étagère
 %###############################################################################
@@ -637,12 +648,6 @@ markEsw = #(define-music-function
 %	\set stemRightBeamCount = #1
 %}
 
-
-%markWhiteout = {
-%	\once \override Score.RehearsalMark.layer = #3
-%	\once \override Score.RehearsalMark.whiteout = #0.75
-%	\once \override Score.RehearsalMark.whiteout-style = #'outline
-%}
 
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 

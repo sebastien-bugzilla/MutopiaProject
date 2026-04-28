@@ -124,7 +124,7 @@ musicFagottoIIMvtII = \relative c {
 	\time 4/4 g8) r r4 r2
 % Bars 96 to 100
 	R1
-	ees,1~
+	ees,1\pp~
 	<< ees {s8\< s s s\! s\> s s s\!}>>
 	ees'2(\pp f)
 	bes(\< g)\!
