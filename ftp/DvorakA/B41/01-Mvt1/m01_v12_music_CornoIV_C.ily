@@ -100,7 +100,7 @@ musicCornoIVMvtI = \relative c {
 		c2\< \stemDown c4\!
 		f4-.\f f4.-> f8-.
 		c2-> c4
-		f f4.-> f8
+		f-. f4.-> f8-.
 % Bars 101 to 105
 		c2-> c4
 		f2.\fz->

@@ -31,9 +31,9 @@ musicCornoIIIMvtIII = \relative c {
 	r4 d'2\p d_\crescmarkup d4~
 	d d2 d d4~
 	d d2 d d4~
-	d d2 d d4~
+	\tempoXoffset #6 d d2 d d4~
 % Bars 21 to 25
-	d d2 << b2.\p\< {s8 s s s s s\!}>>
+	d d2 << \hairpinShorten #'(-0.5 . -0.5) b2.-\offset X-offset -1.5 \p\< {s8 s s s s s\!}>>
 	c4-.\f r r r2 r4
 	R1.*29
 % Bars 26 to 30
@@ -57,13 +57,13 @@ musicCornoIIIMvtIII = \relative c {
 	r2 r4 b2.->\fz
 	b->\fz b->\fz
 	b4\f r r r2 r4
-	r2 r4 b2.\fz
+	r2 r4 b2.-\offset X-offset 0.5 \fz
 % Bars 61 to 65
-	b\fz b\fz
-	r2 r4 g2.\<_\fzmarkup
-	g_\fzmarkup g_\fzmarkup\!
-	r2 r4 bes2.->\<_\fzmarkup
-	bes->_\fzmarkup bes->_\fzmarkup\!
+	b-\offset X-offset 0.5 \fz b-\offset X-offset 0.5 \fz
+	r2 r4 \markEO #'(0 . 1.2) g2.\<_\fzmarkup
+	\markEO #'(0 . 1.45) g_\fzmarkup \markEO #'(0 . 1.7) g_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) bes2.->\<_\fzmarkup
+	\markEO #'(0 . 1.45) bes->_\fzmarkup \markEO #'(0 . 1.7) bes->_\fzmarkup\!
 % Bars 66 to 70
 	R1.*4
 	
@@ -74,7 +74,7 @@ musicCornoIIIMvtIII = \relative c {
 	gis_\crescmarkup
 	gis~
 	gis
-	gis~
+	\tempoXoffset #3.5 gis~
 	gis \section
 % Bars 76 to 80
 	a4\f r r a-. r r
@@ -84,14 +84,14 @@ musicCornoIIIMvtIII = \relative c {
 	r2 r4 cis-. r r
 % Bars 81 to 85
 	r2 r4 c!-. r r
-	r2 r4 cis-. r r
+	\startMeasureCount r2 r4 cis-. r r
 	r2 r4 cis-. r r
 	r2 r4 cis-. r r
 	r2 r4 cis-. r r
 % Bars 86 to 90
 	r2 r4 cis-. r r
 	r2 r4 cis-. r r
-	r2 r4 cis-. r r
+	r2 r4 cis-. r r \stopMeasureCount
 	r2 r4 b-. r r
 	r2 r4 b-. r r 
 % Bars 91 to 95
@@ -144,8 +144,8 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 	
-	R1.\fermata \section
-	\time 2/4 d4\fp~ d8 r
+	\once \ni R1.\fermata \section
+	\sectionLabel "TRIO" \time 2/4 d4\fp~ d8 r
 % Bars 141 to 145
 	d4\fp~ d8 r
 	d4-> d->
@@ -180,7 +180,7 @@ musicCornoIIIMvtIII = \relative c {
 	a4->\p a->
 	a-> a->
 	a4.->\fz r8
-	a4.->\fz r8
+	\dynEO #'(0 . -8.8) a4.->^\fz r8
 	a4-> a->
 % Bars 171 to 175
 	a-> a8 r
@@ -277,9 +277,9 @@ musicCornoIIIMvtIII = \relative c {
 	ees2\p~
 	ees_\crescmarkup
 	ges~
-	ges \section
+	ges \section \newSpacingSection
 % Bars 266 to 270
-	\time 6/4 b4\ff r r r2 r4
+	\time 6/4 b!4\ff r r r2 r4
 	r2 r4 b2.->\fz
 	b->\fz b->\fz
 	b4 r r r2 r4
@@ -294,16 +294,16 @@ musicCornoIIIMvtIII = \relative c {
 	r2 r8. g16(\mf\< aes4)\! r r
 	r2 r4 r2 r8. f16(\p
 	d4) r r r2 r4
-	r2 r4 r2 dis4(\mf\<
+	r2 r4 r2 dis4(-\offset X-offset -1.5 \mf\<
 	e)\! r dis(\f e) r dis(
 % Bars 281 to 285
 	e)\p r r r2 r4
 	r4 d'2\p d_\crescmarkup d4~
 	d d2 d d4~
 	d d2 d d4~
-	d d2 d d4~
+	\tempoXoffset #6 d d2 d d4~
 % Bars 286 to 290
-	d d2 << b2.\< {s8 s s s s s\!}>>
+	d d2 << b2.\< {s8 s s s s s}>>
 	c4-.\f r r r2 r4
 	R1.*29
 % Bars 291 to 295
@@ -327,13 +327,13 @@ musicCornoIIIMvtIII = \relative c {
 	r2 r4 b2.->\fz
 	b->\fz b->\fz
 	b4\f r r r2 r4
-	r2 r4 b2.\fz
+	r2 r4 b2.-\offset X-offset 0.5 \fz
 % Bars 326 to 330
-	b\fz b\fz
-	r2 r4 g2.\<_\fzmarkup
-	g_\fzmarkup g_\fzmarkup\!
-	r2 r4 bes2.->\<_\fzmarkup
-	bes->_\fzmarkup bes->_\fzmarkup\!
+	b-\offset X-offset 0.5 \fz b-\offset X-offset 0.5 \fz
+	r2 r4 \markEO #'(0 . 1.2) g2.\<_\fzmarkup
+	\markEO #'(0 . 1.45) g_\fzmarkup \markEO #'(0 . 1.7) g_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) bes2.->\<_\fzmarkup
+	\markEO #'(0 . 1.45) bes->_\fzmarkup \markEO #'(0 . 1.7) bes->_\fzmarkup\!
 % Bars 331 to 335
 	R1.*4
 	
@@ -344,10 +344,10 @@ musicCornoIIIMvtIII = \relative c {
 	gis_\crescmarkup
 	gis~
 	gis
-	gis~
-	gis \section
+	\tempoXoffset #3 gis~
+	gis \section \newSpacingSection
 % Bars 341 to 345
-	\time 2/4 a4->_\fffz~ a8[ r16 gis-.]
+	\sectionLabel "CODA" \time 2/4 a4->_\fffz~ a8[ r16 gis-.]
 	a4.->\fz r16 gis-.
 	a4-> a->
 	a-> a->
@@ -360,9 +360,9 @@ musicCornoIIIMvtIII = \relative c {
 	fis4.\fz r16 eis16-.
 % Bars 351 to 355
 	fis4-> fis->
-	e-> fis->
+	e!-> fis->
 	cis'4\fp~ cis8[ r16 b-.]
-	cis4\fp~ cis8[ r16 b-.]
+	cis4-\offset X-offset 0.5 \fp~ cis8[ r16 b-.]
 	cis4-- a--\<
 % Bars 356 to 360
 	a--\> a--\!
@@ -371,7 +371,7 @@ musicCornoIIIMvtIII = \relative c {
 	e4\< b\!
 	cis\> fis\!
 % Bars 361 to 365
-	b,4.->_\dimmarkup r8
+	b,4.->-\offset X-offset 1.5 _\dimmarkup r8
 	b4.-> r8
 	b2~\p
 	b4\> e\!
@@ -403,5 +403,5 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 386 to 388
 	
 	r4 \tuplet 3/2 4 {r8 r b-.\ff}
-	a-. r r4\fermata \fine
+	a-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

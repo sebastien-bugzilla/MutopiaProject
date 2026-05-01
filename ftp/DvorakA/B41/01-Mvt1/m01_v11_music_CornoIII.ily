@@ -10,7 +10,7 @@ musicCornoIIIMvtI = \relative c {
 	\transposition f
 % Bars 1 to 5
 	\repeat volta 2 {
-		e'2.\pp~
+		\startMeasureCount e'2.\pp~
 		e~
 		e~
 		e~
@@ -18,7 +18,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 6 to 10
 		e~
 		e~
-		e~
+		e~ \stopMeasureCount
 		e4 r r
 		R2.*2
 % Bars 11 to 15
@@ -40,7 +40,7 @@ musicCornoIIIMvtI = \relative c {
 		R2.*2
 		\mark \default
 % Bars 26 to 30
-		c2->\ff~ c8 r
+		\tempoXoffset #0.5 c2->\ff~ c8 r
 		b2\fz~ b8 r 
 		b2\fz~ b8 r
 		c2\fz~ c8 r
@@ -104,7 +104,7 @@ musicCornoIIIMvtI = \relative c {
 		c2\< c,4\!
 		f4-.\f f4.-> f8-.
 		c2-> c4
-		f f4.-> f8
+		f-. f4.-> f8-.
 % Bars 101 to 105
 		c2-> c4
 		f2.\fz->
@@ -155,22 +155,21 @@ musicCornoIIIMvtI = \relative c {
 	cis
 	fis->
 	fis,2->~ fis8. ais16
-	<< bes2.->\fz\> {s4 s s8 s\!}>>
+	<< \hairpinShorten #'(-0.5 . -0.5) bes2.->-\offset X-offset -1.5 \fz\> {s4 s s8 s\!}>>
 % Bars 151 to 155
 	R2.
-	<< bes2.\fz\> {s4 s s8 s\!}>>
+	<< \hairpinShorten #'(-0.5 . -0.5) bes2.-\offset X-offset -1.5 \fz\> {s4 s s8 s\!}>>
 	R2.
 	g\fz
 	f\fz
 % Bars 156 to 160
 	g\fz
 	f\fz
-	R2.*4
+	R2.*14
 	
 	
 % Bars 161 to 165
 	
-	R2.*10
 % Bars 166 to 170
 	
 % Bars 171 to 175
@@ -292,10 +291,10 @@ musicCornoIIIMvtI = \relative c {
 	
 % Bars 291 to 295
 	
-	b2.\fz_\crescmarkup~
+	b2._\fzcresc~
 	b~
 	b\<
-	<< a_\fzmarkup {s4 s s8 s\!}>> \mark \default
+	<< \markEO #'(0 . 2) a_\fzmarkup {s4 s s8 s\!}>> \mark \default
 % Bars 296 to 300
 	b4\f r r
 	a2~_\fbenmarc a8 fis-.
@@ -351,13 +350,13 @@ musicCornoIIIMvtI = \relative c {
 	aes2->\ff ees8.-> aes16->
 	aes2( ees4) \mark \default
 % Bars 341 to 345
-	e!2.\p\>~
+	\startMeasureCount e!2.\p\>~
 	e~
 	<< e~ {s4 s s8 s\!}>>
 	e2.\pp~
 	e~
 % Bars 346 to 350
-	e~
+	e~ \stopMeasureCount
 	e4 r r
 	R2.*2
 	
@@ -371,7 +370,7 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	\mark \default
-	e2.\p~
+	\startMeasureCount e2.\p~
 	e~
 % Bars 361 to 365
 	e~
@@ -380,10 +379,10 @@ musicCornoIIIMvtI = \relative c {
 	e~
 	e~
 % Bars 366 to 370
-	e
+	e \stopMeasureCount
 	a2->\mf~ a8 e-.
 	e8. a16 a4-. r
-	a2~\<_\moltocresc a8 e-.
+	a2~\<^\moltocresc a8 e-.
 	e8. a16 a4-.\! r
 % Bars 371 to 375
 	e'2->\< e,4->
@@ -429,13 +428,13 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 % Bars 421 to 425
 	\mmrPos #-4 R \no
 	r4 aes\f r
-	R2.*2
+	\mmrLength #17 \mmrnDown R2.*2
 	\markk
-	R2.*4
+	\mmrnDown R2.*4
 % Bars 426 to 430
 	
 	

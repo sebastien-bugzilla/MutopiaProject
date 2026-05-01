@@ -112,7 +112,7 @@ musicCornoIMvtI = \relative c {
 		f2\< d4\!
 		c4-.\f c4.-> c8-.
 		c2->( bes4)
-		a c4.-> c8
+		a-. c4.-> c8-.
 % Bars 101 to 105
 		c2->( bes4)
 		a2.->\fz
@@ -180,7 +180,7 @@ musicCornoIMvtI = \relative c {
 	bes->\fz
 % Bars 156 to 160
 	bes->\fz
-	bes->\fz
+	bes\fz
 	R2.*4
 	
 	
@@ -407,9 +407,9 @@ musicCornoIMvtI = \relative c {
 % Bars 361 to 365
 	\shape #'((0 . 1.5)(0 . -0.5)(0 . -0.5)(0 . 1.5)) Slur a4(\< cis4. e8
 	e2 d4)\! \partCombineAutomatic
-	cis(_\crescmarkup e4. e8)
+	cis(_\crescmarkup e4. e8-.)
 	e2( d4)
-	cis(\< e4. e8)
+	cis(\< e4. e8-.)
 % Bars 366 to 370
 	e2( d4)\!
 	cis2.->\mf~

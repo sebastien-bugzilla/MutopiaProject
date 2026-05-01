@@ -10,7 +10,7 @@ musicCornoIMvtI = \relative c {
 	\transposition f
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\mmrnDown R2.*4
 		
 		
 		
@@ -105,14 +105,14 @@ musicCornoIMvtI = \relative c {
 		c2 c4
 		c2.
 		d4(-> c2)
-		<< f2.->~ {s8\> s s\! s4. }>>
+		<< f2.->~ {s8\> s s  s s s\! }>>
 		f2.
 % Bars 96 to 100
 		f2.~
 		f2\< d4\!
 		c4-.\f c4.-> c8-.
 		c2->( bes4)
-		a c4.-> c8
+		a-. c4.-> c8-.
 % Bars 101 to 105
 		c2->( bes4)
 		a2.->\fz
@@ -171,16 +171,16 @@ musicCornoIMvtI = \relative c {
 	
 	
 	
-	<< cis2.->\fz\> {s4 s s8 s\!}>>
+	<< \hairpinShorten #'(0 . -1) cis2.->\fz\> {s4 s s8 s\!}>>
 % Bars 151 to 155
 	R2.
-	<< cis2.\fz\> {s4 s s8 s\!}>>
+	<< \hairpinShorten #'(0 . -1) cis2.\fz\> {s4 s s8 s\!}>>
 	R2.
 	bes\fz->
 	bes->\fz
 % Bars 156 to 160
 	bes->\fz
-	bes->\fz
+	bes\fz
 	R2.*4
 	
 	
@@ -193,7 +193,7 @@ musicCornoIMvtI = \relative c {
 % Bars 166 to 170
 	R2.*6
 % Bars 171 to 175
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	c8-.\ff r c-. r des-.\fz r
 	c-. r c-. r des-.\fz r
 	c-. r d!2\fz
@@ -239,7 +239,7 @@ musicCornoIMvtI = \relative c {
 	
 	
 	
-	c2->\mf~ c8 a-.\<
+	c!2->\mf~ c8 a-.\<
 	g8. c16 c4-. r
 % Bars 216 to 220
 	c2->~ c8 a
@@ -261,7 +261,7 @@ musicCornoIMvtI = \relative c {
 	r4 r b8.->\f b16
 % Bars 231 to 235
 	b2.\fz\>~
-	b\!
+	<< b {s4 s s\!}>>
 	r4 b->\f b->
 	r b-> b->
 	R2.*5
@@ -281,7 +281,7 @@ musicCornoIMvtI = \relative c {
 	f2.\fz\<~
 	f4\! f2\fz
 	d2.\fz\<~
-	d4\! d2\fz
+	d4 d2\fz
 	d2.\fz\<~
 % Bars 251 to 255
 	d4\! d2\fz
@@ -322,10 +322,10 @@ musicCornoIMvtI = \relative c {
 	
 % Bars 291 to 295
 	
-	<< b2.->\fz {s4 s2_\crescmarkup}>>
+	b2.->-\offset X-offset -2 _\fzcresc
 	c2.\fz
 	cis->\fz\<
-	<< dis->_\fzmarkup {s4 s s8 s\!}>> \mark \default
+	<< \markEO #'(0 . -8.8) dis->^\fzmarkup {s4 s s8 s\!}>> \mark \default
 % Bars 296 to 300
 	d!4\f r r
 	R2.*3
@@ -381,7 +381,7 @@ musicCornoIMvtI = \relative c {
 	dis2.\ff~
 	dis2 r4 \mark \default
 % Bars 341 to 345
-	e2->\fp^\solo-\dimmarkup b8. e16
+	e2->_\fpdim^\solo b8. e16
 	e2( b4)
 	e2-\dimmarkup b8. e16
 	e2( b4)
@@ -407,14 +407,14 @@ musicCornoIMvtI = \relative c {
 % Bars 361 to 365
 	a4(\< cis4. e8
 	e2 d4)\!
-	cis(_\crescmarkup e4. e8)
+	cis(_\crescmarkup e4. e8-.)
 	e2( d4)
-	cis(\< e4. e8)
+	cis(\< e4. e8-.)
 % Bars 366 to 370
 	e2( d4)\!
 	cis2.->\mf~
 	cis2 d4
-	<< cis2.~\<_\moltocresc {s4 s s8 s\!}>>
+	<< cis2.~\<^\moltocresc {s4 s s8 s\!}>>
 	cis2 d4
 % Bars 371 to 375
 	e2(->\< d4)
@@ -437,7 +437,7 @@ musicCornoIMvtI = \relative c {
 % Bars 386 to 390
 	r d\fz r
 	r e\fz r
-	r e!\brack\fz r
+	r e\brack\fz r
 	r f\brack\fz r
 	r ees\brack\fz r
 % Bars 391 to 395
@@ -467,11 +467,11 @@ musicCornoIMvtI = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 % Bars 421 to 425
 	\mmrPos #-4 R \no
 	r4 d'\f r
-	R2.*2
+	\mmrLength #17 \mmrnDown R2.*2
 	\markk
 	R2.*4
 % Bars 426 to 430

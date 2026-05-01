@@ -21,7 +21,7 @@ musicCornoIMvtIII = \relative c {
 	c4\p r r8. b16(\< c4)\! r r
 	r2 r8. e16(\< f4)\! r r
 % Bars 11 to 15
-	r2 r8. g,16(\mf\< aes4)\! r r
+	r2 r8. \hairpinShorten #'(-0.5 . -0.5) g,16(\mf\< aes4)\! r r
 	r2 r4 r2 r8. f'16(\p
 	d4) r r r2 r4
 	r2 r4 r2 dis4(\mf\<
@@ -30,7 +30,7 @@ musicCornoIMvtIII = \relative c {
 	e)\p r r r2 r4
 	R1.*4
 % Bars 21 to 25
-	r2 r4 << d2.\p\< {s8 s s s s s\!}>>
+	r2 r4 << \hairpinShorten #'(-0.5 . -1.5) d2.\p\< {s8 s s s s s\!}>>
 	a1.->\fz~
 	a4 r r r2 r4
 	R1.*28
@@ -58,10 +58,10 @@ musicCornoIMvtIII = \relative c {
 	r2 r4 d2.\fz
 % Bars 61 to 65
 	ees\fz d\fz
-	r2 r4 ees2.\<_\fzmarkup
-	ees_\fzmarkup ees_\fzmarkup\!
-	r2 r4 ges2.->\<_\fzmarkup
-	ges->_\fzmarkup ges->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) ees2.\<_\fzmarkup
+	\markEO #'(0 . 1.45) ees_\fzmarkup \markEO #'(0 . 1.7) ees_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) ges2.->\<_\fzmarkup
+	\markEO #'(0 . 1.45) ges->_\fzmarkup \markEO #'(0 . 1.7) ges->_\fzmarkup\!
 % Bars 66 to 70
 	r2 fis4-._\pcresc fis2-> fis4-.
 	r2 fis4-. fis2-> fis4-.
@@ -72,7 +72,7 @@ musicCornoIMvtIII = \relative c {
 	d1._\pcresc~
 	d~
 	d
-	d~
+	\tempoXoffset #2.5 d~
 	d \section
 % Bars 76 to 80
 	cis4\f r r a2.~
@@ -142,8 +142,8 @@ musicCornoIMvtIII = \relative c {
 	
 	
 	
-	R1.\fermata \section
-	\time 2/4 b4\fp~ b8 r16 a-.
+	\once \ni R1.\fermata \section \newSpacingSection
+	\sectionLabel "TRIO" \time 2/4 b4\fp~ b8 r16 a-.
 % Bars 141 to 145
 	b4\fp~ b8 r16 a-.
 	b4-> d->
@@ -228,7 +228,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 216 to 220
 	c4\fz\startTrillSpan~ c8[\stopTrillSpan r16 b-.]
 	c4-^ ees-^
-	d-^ c-^ \mark \default
+	d-^ c-^ \markEsw #'(-0.5 . 0.5) \mark \default
 	c4\brack\fz\startTrillSpan~ c8[\stopTrillSpan r16 b-.]
 	c4\fz\startTrillSpan~ c8[\stopTrillSpan r16 b-.]
 % Bars 221 to 225
@@ -240,25 +240,27 @@ musicCornoIMvtIII = \relative c {
 % Bars 226 to 230
 	c4-> r
 	c8-. r r4
-	R2*34
+	R2*14
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
+	\mmrLength #32 \tempoXoffset #-1.5 \mmrnDown R2*15
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
+	\mmrLength #17 \mmrnDown R2*5
 % Bars 261 to 265
 	
 	a2\p~
 	a_\crescmarkup
 	c~
-	c \section
+	c \section \newSpacingSection
 % Bars 266 to 270
 	\time 6/4 e4\ff r r r2 r4
 	r2 r4 d2.->\fz
@@ -309,10 +311,10 @@ musicCornoIMvtIII = \relative c {
 	r2 r4 d2.\fz
 % Bars 326 to 330
 	ees\fz d\fz
-	r2 r4 ees2.\<_\fzmarkup
-	ees_\fzmarkup ees_\fzmarkup\!
-	r2 r4 ges2.->\<_\fzmarkup
-	ges->_\fzmarkup ges->_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) ees2.\<_\fzmarkup
+	\markEO #'(0 . 1.45) ees_\fzmarkup \markEO #'(0 . 1.7) ees_\fzmarkup\!
+	r2 r4 \markEO #'(0 . 1.2) ges2.->\<_\fzmarkup
+	\markEO #'(0 . 1.45) ges->_\fzmarkup \markEO #'(0 . 1.7) ges->_\fzmarkup\!
 % Bars 331 to 335
 	r2 fis4-._\pcresc fis2-> fis4-.
 	r2 fis4-. fis2-> fis4-.
@@ -323,10 +325,10 @@ musicCornoIMvtIII = \relative c {
 	d1._\pcresc~
 	d~
 	d
-	d~
-	d \section
+	\tempoXoffset #4.5 d~
+	d \section \newSpacingSection
 % Bars 341 to 345
-	\time 2/4 cis4->_\fffz~ cis8[ r16 b-.]
+	\sectionLabel "CODA" \time 2/4 cis4->_\fffz~ cis8[ r16 b-.]
 	cis4.->\fz r16 b-.
 	cis4-> e->
 	d-> cis->
@@ -382,5 +384,5 @@ musicCornoIMvtIII = \relative c {
 % Bars 386 to 388
 	
 	r4 \tuplet 3/2 4 {r8 r d-.\ff}
-	c-. r r4\fermata \fine
+	c-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

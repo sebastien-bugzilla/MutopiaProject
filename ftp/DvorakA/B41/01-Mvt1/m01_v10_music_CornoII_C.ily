@@ -112,7 +112,7 @@ musicCornoIIMvtI = \relative c {
 		a2\< bes4\!
 		a4-.\f a4.-> a8-.
 		a2->( g4)
-		f a4.-> a8
+		f-. a4.-> a8-.
 % Bars 101 to 105
 		a2->( g4)
 		f2.->\fz
@@ -180,7 +180,7 @@ musicCornoIIMvtI = \relative c {
 	f->\fz
 % Bars 156 to 160
 	e->\fz
-	f->\fz
+	f\fz
 	R2.*4
 	
 	
@@ -407,9 +407,9 @@ musicCornoIIMvtI = \relative c {
 % Bars 361 to 365
 	
 	
-	a'4( cis!4. cis8)
+	a'4( cis!4. cis8-.)
 	cis2( b4)
-	a(\< cis!4. cis8)
+	a(\< cis!4. cis8-.)
 % Bars 366 to 370
 	cis2( b4)\!
 	a2.->\mf~

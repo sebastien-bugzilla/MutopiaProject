@@ -35,7 +35,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 21 to 25
 	R2*2
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*2^\gp
 	
 % Bars 26 to 30
@@ -67,7 +67,7 @@ musicCornoIIIMvtIV = \relative c {
 	d2\fz 
 	d4-. d-.
 % Bars 76 to 80
-	<< d2->\fz\>~ {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -0.5) d2->-\offset X-offset -1.5 \fz\>~ {s8 s s s\!}>>
 	d8\brack\p r r4
 	R2*9
 % Bars 81 to 85
@@ -119,10 +119,10 @@ musicCornoIIIMvtIV = \relative c {
 	aes-. aes-.
 	bes-. r\fermata
 	g\ff r
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 126 to 130
 	g4\ff r
-	R2\fermata
+	\once \ni R2\fermata
 	g4\fz r
 	g\fz r
 	g\fz r
@@ -133,7 +133,7 @@ musicCornoIIIMvtIV = \relative c {
 	
 	
 % Bars 136 to 140
-	b8-.\p b-. b-. b-.
+	\startMeasureCount b8-.\p b-. b-. b-.
 	b-. b-. b-. b-.
 	b-. b-. b-. b-.
 	b-._\crescmarkup b-. b-. b-.
@@ -146,16 +146,16 @@ musicCornoIIIMvtIV = \relative c {
 	b-. b-. b-. b-.
 % Bars 146 to 150
 	b-. b-. b-. b-.
-	b-. b-. b-. b-.
+	b-. b-. b-. b-. \stopMeasureCount
 	b\pp r r4
-	R2*9
+	R2*7
 	
 % Bars 151 to 155
 	
 % Bars 156 to 160
-	
+	\mmrLength #13 R2*2
 	\section \mark \default
-	R2*40
+	\mmrLength #17 \mmrnDown R2*30
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -168,12 +168,14 @@ musicCornoIIIMvtIV = \relative c {
 	
 % Bars 186 to 190
 	
+	
+	\mmrLength #14 \tempoXoffset #-1 \mmrnDown R2*10
 % Bars 191 to 195
 	
 % Bars 196 to 200
 	
 	
-	R2*40
+	\mmrLength #11 \tempoXoffset #-1 \mmrnDown R2*32
 	
 	
 % Bars 201 to 205
@@ -188,6 +190,10 @@ musicCornoIIIMvtIV = \relative c {
 	
 % Bars 226 to 230
 	
+	
+	
+	
+	\mmrnDown R2*8
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -258,7 +264,7 @@ musicCornoIIIMvtIV = \relative c {
 	bes->
 % Bars 291 to 295
 	bes->
-	b!2\ff~
+	b!2-\offset X-offset 0.5 \ff~
 	b~
 	b~
 	b
@@ -279,29 +285,29 @@ musicCornoIIIMvtIV = \relative c {
 	b\fz \mark \default
 	R2*2
 	
-	\tuplet 3/2 4 {bes8[\f bes bes] bes bes bes
+	\tuplet 3/2 4 {bes8[-\offset X-offset -1 \f bes bes] bes bes bes
 % Bars 311 to 315
 	bes[ bes bes] bes bes bes}
 	R2*2
 	
-	\tuplet 3/2 4 {bes8[\f bes bes] bes bes bes
+	\tuplet 3/2 4 {\dynEO #'(0 . 0.2) bes8[-\offset X-offset -1 \f bes bes] bes bes bes
 	bes[ bes bes] bes bes bes}
 % Bars 316 to 320
 	bes2\f\<~
 	<< bes {s8 s s s\!}>>
-	aes4-> r
+	\startMeasureCount aes4-> r
 	aes-> r
 	aes-> r
 % Bars 321 to 325
 	aes-> r
 	aes-> r
-	aes-> r
+	aes-> r \stopMeasureCount
 	R2*4
 	
 % Bars 326 to 330
 	
 	\section
-	R2*16
+	\mmrLength #25 R2*16
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -333,8 +339,8 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 361 to 365
 	b4..\fz b16
 	b2\fz~
-	<< b\> {s8 s s s\!}>>
-	b8-.\p b-. b-. b-.
+	<< b\> {s8 s s s}>>
+	\startMeasureCount b8-.\p b-. b-. b-.
 	b-. b-. b-. b-.
 % Bars 366 to 370
 	b-. b-. b-. b-.
@@ -343,9 +349,9 @@ musicCornoIIIMvtIV = \relative c {
 	b-. b-. b-. b-.
 	b-. b-. b-. b-.
 % Bars 371 to 375
-	b-. b-. b-. b-.
+	b-. b-. b-. b-. \stopMeasureCount
 	b2\p~
-	<< b {s4 s_\crescmarkup}>>
+	<< b {s4 s-\offset X-offset -1 _\crescmarkup}>>
 	a2~
 	a
 % Bars 376 to 380
@@ -387,9 +393,13 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 406 to 410
 	aes~
 	aes4\pp r
-	R2*17
-% Bars 411 to 415
+	R2
+	R2*2
 	
+% Bars 411 to 415
+	\mmrLength #12 R2*2
+	
+	\mmrLength #12 R2*12
 % Bars 416 to 420
 	
 % Bars 421 to 425
@@ -397,7 +407,7 @@ musicCornoIIIMvtIV = \relative c {
 	
 	
 	
-	R2*26
+	\mmrLength #12 R2*26
 % Bars 426 to 430
 	
 % Bars 431 to 435
@@ -423,7 +433,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 461 to 465
 	d2->
 	d4-. d-.
-	<< d2->~ {s8 s s s\!}>>
+	<< d2->\>~ {s8 s s s\!}>>
 	d8 r r4
 	R2*6
 % Bars 466 to 470
@@ -441,7 +451,7 @@ musicCornoIIIMvtIV = \relative c {
 	d2~
 	d4 d-.
 % Bars 481 to 485
-	d2_\pocoapococresc~
+	d2~ % _\pocoapococresc
 	d4 d-.
 	d2~
 	d4 d-.
@@ -498,12 +508,9 @@ musicCornoIIIMvtIV = \relative c {
 	c->\dimD\> c---.
 	c-.-- c-.--
 	c-.-- c-.--\!
-	R2*4
+	R2*12
 	
 % Bars 531 to 535
-	
-	
-	R2*8
 	
 % Bars 536 to 540
 	
@@ -545,7 +552,7 @@ musicCornoIIIMvtIV = \relative c {
 	gis
 % Bars 571 to 575
 	a->(
-	<< gis)\< {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -1) gis)\< {s8 s s s\!}>>
 	a2\fz(~
 	a4\> b\!)
 	a2(->
@@ -562,7 +569,7 @@ musicCornoIIIMvtIV = \relative c {
 	fis4\! r
 	g2~
 % Bars 586 to 590
-	<< g\< {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -1) g\< {s8 s s s\!}>>
 	fis4 r
 	R2
 	g2~\mf\<
@@ -668,7 +675,7 @@ musicCornoIIIMvtIV = \relative c {
 	b2->
 	a4-. a-.
 	b2->
-	cis8 cis cis cis
+	\startMeasureCount cis8 cis cis cis
 % Bars 676 to 680
 	cis cis cis cis
 	cis cis cis cis
@@ -677,7 +684,7 @@ musicCornoIIIMvtIV = \relative c {
 	cis cis cis cis
 % Bars 681 to 685
 	cis cis cis cis
-	cis cis cis cis
+	cis cis cis cis \stopMeasureCount
 	cis4-. r
 	R2^\gp
 	b4-> r

@@ -111,7 +111,7 @@ musicCornoIIIMvtII = \relative c {
 	R1
 	\partCombineApart R1*2
 	
-	ees2(-> e)
+	\dynEO #'(-2.3 . -1) ees2(->\pp e)
 % Bars 111 to 115
 	b!8-._\dimmarkup r d-. r r2\fermata \partCombineAutomatic
 	R1*2

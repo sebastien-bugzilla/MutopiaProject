@@ -128,13 +128,37 @@ correctionFaggot = \markup {
 	% Mvt IV, Bar 94 - 95, Fagotto II
 	"In Mvt IV, Bar 94-95, for fagotto II, a 'd' is printed instead of a 'b', in relation with conductor."
 	
-	% In Mvt IV, Bar 157, Fagotto II
+	% Mvt IV, Bar 157, Fagotto II
 	"In Mvt IV, Bar 157, for fagotto II, the change of key signature is corrected."
 }
-correctionsCor = \markup {
+correctionsCorni = \markup {
 	
-	% bar 239, mvt IV, Cor III
+	% Mvt II, Bar 68, Corno I
+	"In Mvt II, Bar 68, for Corno I a missing decrescendo is added."
+	
+	% Mvt II, Bar 100, Corno I
+	"In Mvt II; Bar 100, for Corno II, bes in part score are replaced by d from conductor score in the whole second half of the measure."
+	
+	% MvtIII, Bar 369 - 370, Corno I
+	"In Mvt III, Bar 369-370, for corno I, the rhythm in conductor and part score is similar but different. The version from conductor is kept. Same thing for bars 373-374."
+	
+	% Mvt IV, Bar 602-604, Corno II
+	"In Mvt IV, Bar 602-604, for Corno II, a missing crescendo hairpin is added."
+	
+	% Mvt I, Bar 221, Corno III IV
+	"In Mvt I, Bar 221, for corno III and IV, part score and conductor score have different notes. f and a for conductor score, a and c for part score. Conductor version si kept as reference."
+	
+	% Mvt III, Bar 355-356, Corno III
+	"In Mvt III, Bar 355-356, for Corno III, a missing crescendo decrescendo is added."
+	
+	% bar 239, mvt IV, Corno III
 	"Bar 239 of the fourth movement, for Corno III the cue voice <b d> is replaced by <a d>."
+	
+	% bar 24, Mvt II, Corno IV
+	"In Mvt II, Bar 24, for corno IV the last note in part score in conductor is d whereas it is a ees in part score. The conductor version is kept as it is coherent with cello."
+	
+	% bar 117, Mvt II, Corno IV
+	"In Mvt II, Bar 117, for corno IV, a slur is indicated in part score but not reproduced in conductor score. The conductor version is kept as reference."
 }
 correctionTromboni = \markup {
 	

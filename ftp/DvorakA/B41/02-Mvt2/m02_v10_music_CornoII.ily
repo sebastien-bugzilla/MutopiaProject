@@ -9,10 +9,10 @@ musicCornoIIMvtII = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R1*3
+	R1*11
 	
 	
-	R1*8
+	
 	
 % Bars 6 to 10
 	
@@ -21,39 +21,35 @@ musicCornoIIMvtII = \relative c {
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	r4 bes''\pp\< a8-^ g-^ d-^ d-^
+	r4 bes''\pp\< a8^^ g^^ d^^ d^^
 % Bars 16 to 20
 	d4 f\! << e2 {s8\> s s s\!}>>
 	R1 \mark \default
-	R1
-	R1
+	R1*2
+	
 	bes4\p r8 bes bes4 r
 % Bars 21 to 25
 	R1*4
 	
 	
 	
-	<< bes2\pp\> {s8\> s s s\!}>> r2
+	<< \hairpinShorten #'(-0.5 . -1) bes2-\offset X-offset -1.5 \pp\> {s8\> s s s\!}>> r2
 % Bars 26 to 30
-	R1*2
+	R1*9
 	
-	R1*3
+	
 	
 	
 % Bars 31 to 35
-	R1*2
 	
-	R1
-	R1 \mark \default
-	R1
+	
+	
+	\mark \default
+	R1*15
 % Bars 36 to 40
-	R1*7
+	
 % Bars 41 to 45
 	
-	
-	R1*2
-	
-	R1*5
 % Bars 46 to 50
 	
 	
@@ -85,8 +81,8 @@ musicCornoIIMvtII = \relative c {
 	R1*2
 	\mark \default
 % Bars 71 to 75
-	R1
-	R1*6
+	R1*7
+	
 % Bars 76 to 80
 	
 	\mark \default
@@ -98,22 +94,22 @@ musicCornoIIMvtII = \relative c {
 	\mmrPos #-4 R \no
 	R1
 	a4->\mf g-> c-> f,->
-	bes2->\fz des4.->\fz c8
+	bes2->-\offset X-offset 0.5 \fz des4.->\fz c8
 % Bars 86 to 90
 	des-^_\marcato c-^ b!-^ r r2
 	g,16\f g g g  g g g g\<  g g g g  g g g g\!
 	g8\ff r r4 r2
-	R1
-	R1*4
+	R1*5
+	
 % Bars 91 to 95
 	
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1*2
+	\time 4/4 \tempoXoffset #1 R1*4
 % Bars 96 to 100
 	
-	R1*2
+	
 	
 	r16 d'8\pp d d d16 r ees8 ees ees ees16
 	r f8\< f bes bes16 r bes8 bes bes bes16\!
@@ -124,8 +120,8 @@ musicCornoIIMvtII = \relative c {
 	ees8)\p r r4 r2
 	R1
 % Bars 106 to 110
-	aes2:16\mp\< << aes: {s4 s\!}>>
-	aes2:\> aes:\p\>
+	aes16\mp\< aes aes aes  aes aes aes aes  aes aes aes aes  aes aes aes aes\! 
+	aes\> aes aes aes  aes aes aes aes\!  aes\p\> aes aes aes  aes aes aes aes\!
 	aes8\pp r r4 r2
 	R1
 	c,2(->\pp des)
@@ -133,8 +129,8 @@ musicCornoIIMvtII = \relative c {
 	ees8-._\dimmarkup r f-. r r2\fermata
 	R1*2
 	\mark \default
-	R1
-	R1*6
+	R1*7
+	
 % Bars 116 to 120
 	
 	
@@ -154,17 +150,17 @@ musicCornoIIMvtII = \relative c {
 	b!4 << c2.\> {s4 s_\dimmarkup s8 s\!}>>
 	f4\p r r2
 % Bars 131 to 135
-	R1*2
+	R1*9
 	
-	R1*2
 	
-	R1
+	
+	
 % Bars 136 to 140
-	R1*4
 	
 	
 	
-	r2 f4\pp f
+	
+	\tempoXoffset #4.5 r2 f4\pp f
 % Bars 141 and 142
 	f1
 	f\fermata \fine

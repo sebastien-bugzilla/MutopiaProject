@@ -581,8 +581,8 @@ cueVoiceCornoIMvtI = \relative c {
 	% bars 420 - 421
 	\transpose f c' {
 		\relative c {
-			\voiceOne bes'''4.(^\markup {Ob.Cl.} g8 f e
-			cis') r r4 r \oneVoice
+			\ottava #1 bes'''4.(-\offset X-offset 0.8 ^\markup {Ob.Cl.} g8 f e
+			cis') \ottava #0 r r4 r
 		}
 	}
 }
@@ -624,16 +624,16 @@ cueVoiceCornoIMvtIV = \relative c {
 	<>^\markup {\column {\lower #1.5 "Fag." "Vla"}}
 	s2*57
 	% bar 87
-	<>^\markup {Cor.III-IV}
+	<>-\offset X-offset -1.5 ^\markup {Cor.III-IV}
 	s2*13
 	% bar 100
 	<>^\markup {Timp.}
 	s2*228
 	% bar 328
-	<>^\markup {Archi}
+	<>-\offset X-offset -3 ^\markup {Archi}
 	s2*85
 	% bar 413
-	<>^\markup {\column {\lower #1.5 "Fag." "Vla"}}
+	<>-\offset X-offset -1.5 ^\markup {\column {\lower #1.5 "Fag." "Vla"}}
 	s2*144
 	% bars 557 - 558
 	\voiceOne e''8.^\markup {Tutti} dis16 e4->
@@ -644,8 +644,8 @@ cueVoiceCornoIIMvtI = \relative c {
 	% bars 420 - 421
 	\transpose f c' {
 		\relative c {
-			\voiceOne bes'''4.(^\markup {Ob.Cl.} g8 f e
-			cis') r r4 r \oneVoice
+			\ottava #1 bes'''4.(^\markup {Ob.Cl.} g8 f e
+			cis') r r4 r \ottava #0
 		}
 	}
 }
@@ -667,7 +667,7 @@ cueVoiceCornoIIMvtII = \relative c {
 		}
 	}
 	% bars 81 - 82
-	\voiceOne des8-^^\markup {Cor.I.} c-^ b-^[ r16 b]-. ees8-> d->\brack\fz~ d16 c-> d-> e->
+	\voiceOne des8-^^\markup {Cor.I.} c-^ b!-^[ r16 b]-. ees8-> d->\brack\fz~ d16 c-> d-> ees->
 	d4. r8 r2 \oneVoice
 	s1*11 s2*1 s1*28
 	% bars 123 - 127
@@ -717,7 +717,7 @@ cueVoiceCornoIIMvtIV = \relative c {
 	<>^\markup {Archi}
 	s2*85
 	% bar 413
-	<>^\markup {\column {\lower #1.5 "Fag." "Vla"}}
+	<>-\offset X-offset -1.5 ^\markup {\column {\lower #1.5 "Fag." "Vla"}}
 	s2*144
 	% bars 557 - 558
 	\voiceOne e''8.^\markup {Tutti} dis16 e4->
@@ -734,8 +734,8 @@ cueVoiceCornoIIIMvtI = \relative c {
 	% bars 420 - 421
 	\transpose f c' {
 		\relative c {
-			\voiceOne bes'''4.(\<^\markup {Ob.Cl.} g8 f e
-			cis')\f r r4 r \oneVoice
+			\ottava #1 bes'''4.(\<-\offset X-offset -3.5 ^\markup {\column { \lower #1.5 "Ob." "Cl."}} g8 f e
+			cis')\f \ottava #0 r r4 r 
 		}
 	}
 }
@@ -749,7 +749,7 @@ cueVoiceCornoIIIMvtII = \relative c {
 	\voiceOne e2(^\markup {Cor.I.} d4 c) \oneVoice
 	s1*12
 	% bars 81 - 82
-	\voiceOne des8-^^\markup {Cor.I.} c-^ b-^[ r16 b] ees8-> d->\fz~ d16 c d ees
+	\voiceOne des8-^^\markup {Cor.I.} c-^ b!-^[ r16 b] ees8-> d->\fz~ d16 c d ees
 	d4. r8 r2 \oneVoice
 	s1*11 s2*1 s1*40
 	% bar 135
@@ -770,7 +770,7 @@ cueVoiceCornoIIIMvtIII = \relative c {
 	% bars 242 - 243
 	\transpose f c' {
 		\relative c {
-			\voiceTwo <c' e>4.->_\markup {Viol.I.II.} r16 <b d>16-.
+			\voiceTwo <c' e>4.->^\markup {Viol.I.II.} r16 <b d>16-.
 			<c e>4.-> r16 <b d>-. \oneVoice
 		}
 	}
@@ -786,7 +786,7 @@ cueVoiceCornoIIIMvtIII = \relative c {
 	}
 	s1.*20 s2*24
 	% bars 365 - 368
-	\voiceOne cis''4~\pp^\markup {Cor.I.} cis8[ r16 b]
+	\voiceOne cis''4~\pp-\offset X-offset -4.5 ^\markup {Cor.I.} cis8[ r16 b]
 	cis4~ cis8[ r16 b]
 	cis4-- e--
 	d-- cis-- \oneVoice
@@ -805,10 +805,10 @@ cueVoiceCornoIIIMvtIV = \relative c {
 	<>^\markup {\column {\lower #1.5 "Fag." "Vla"}}
 	s2*8
 	% bar 38
-	<>^\markup {Viol.I Ob.I.}
+	<>-\offset X-offset -2 ^\markup {Viol.I Ob.I.}
 	s2*120
 	% bar 158
-	<>^\markup {Archi}
+	<>-\offset X-offset -1 ^\markup {Archi}
 	s2*80
 	% bars 238 - 241
 	\voiceOne <a'' cis>2\f\<(^\markup {Cor.I.II.}
@@ -820,15 +820,15 @@ cueVoiceCornoIIIMvtIV = \relative c {
 	<>^\markup {Archi}
 	s2*97
 	% bar 425
-	<>^\markup {Fl.I.Ob.I.Viol.}
+	<>-\offset X-offset -1.5 ^\markup {Fl.I.Ob.I.Viol.}
 	s2*26
-	% bars 450 - 454
+	% bars 451 - 455
 	\transpose f c' {
 		\relative c {
-			\voiceOne b''8.(\f\<^\markup {Fl.Ob.Viol.} c16 g'4~
+			\oneVoice b''8.(\f\<^\markup {"Fl.Ob.Viol."} c16 g'4~
 			g8)\! f( d bes!
 			e d bes f)
-			c'(_\dimmarkup bes f d
+			\voiceOne c'(_\dimmarkup bes f d
 			g f d bes) \oneVoice
 		}
 	}
@@ -850,8 +850,8 @@ cueVoiceCornoIVMvtI = \relative c {
 	% bars 420 - 421
 	\transpose f c' {
 		\relative c {
-			\voiceOne bes'''4.(\<^\markup {Ob.Cl.} g8 f e
-			cis')\f r r4 r \oneVoice
+			\ottava #1 bes'''4.(\<-\offset X-offset -3.5 ^\markup {\column { \lower #1.5 "Ob." "Cl."}} g8 f e
+			cis')\f \ottava #0 r r4 r 
 		}
 	}
 }
@@ -887,7 +887,7 @@ cueVoiceCornoIVMvtIII = \relative c {
 	% bars 242 - 243
 	\transpose f c' {
 		\relative c {
-			\voiceTwo <c' e>4.->_\markup {Viol.I.II.} r16 <b d>16-.
+			\voiceTwo <c' e>4.->^\markup {Viol.I.II.} r16 <b d>16-.
 			<c e>4.-> r16 <b d>-. \oneVoice
 		}
 	}
@@ -922,10 +922,10 @@ cueVoiceCornoIVMvtIV = \relative c {
 	<>^\markup {\column {\lower #1.5 "Fag." "Vla"}}
 	s2*8
 	% bar 38
-	<>^\markup {Fl.I Ob.I.}
+	<>-\offset X-offset -1 ^\markup {Fl.I Ob.I.}
 	s2*120
 	% bar 158
-	<>^\markup {Archi}
+	<>-\offset X-offset -1 ^\markup {Archi}
 	s2*80
 	% bars 238 - 241
 	\voiceOne <a''_~ cis>2\f\<^(^\markup {Cor.I.II.}
@@ -937,18 +937,18 @@ cueVoiceCornoIVMvtIV = \relative c {
 	<>^\markup {Archi}
 	s2*85
 	% bar 413
-	<>^\markup {Fag.Vla.Cl.II}
+	<>-\offset X-offset #-3 ^\markup {\override #'(baseline-skip . 1.5) \column {"Fag." "Vla." "Cl.II"}}
 	s2*12
 	% bar 425
-	<>^\markup {Fl.I.Ob.I.Viol.}
+	<>-\offset X-offset -2 ^\markup {\override #'(baseline-skip . 1.5) \column { "Fl.I." "Ob.I." "Viol."}}
 	s2*26
 	% bars 450 - 454
 	\transpose f c' {
 		\relative c {
-			\voiceOne b''8.(\f\<^\markup {Fl.Ob.Viol.} c16 g'4~
+			\oneVoice b''8.(\f\<^\markup {Fl.Ob.Viol.} c16 g'4~
 			g8)\! f( d bes!
 			e d bes f)
-			c'(_\dimmarkup bes f d
+			\voiceOne c'(_\dimmarkup bes f d
 			g f d bes) \oneVoice
 		}
 	}

@@ -12,23 +12,23 @@ musicCornoIMvtII = \relative c {
 	R1*3
 	
 	
-	r4 a''2\pp \tuplet 3/2 4 {a8\< b cis}
+	r4 a''2\pp \stemUp \tuplet 3/2 4 {a8\< b cis} \stemNeutral
 	d2\!~ d8 d(\> g16 f e d)\!
 % Bars 6 to 10
 	d4(\> c!4.) c8(\! f16\pp e d c)
 	c4( bes2) \tuplet 3/2 4 {a8( c bes)}
 	a4( g) f4.\< e8
 	e4-> e->\! f(\> a)\!
-	a4.\>-\dimmarkup f8 d4\! r8 d\pp
+	a4.\>^\dimmarkup f8 d4\! r8 d\pp
 % Bars 11 to 15
-	a'4( g fis) r8 fis\<
+	a'4( g fis) r8 \hairpinShorten #'(-0.5 . -0.5) fis\<
 	c'4(\crescD b2) \tuplet 3/2 4 {a8( b c)}
-	b4\mf d->(~ \tuplet 3/2 4 {d8\> b a} c4
-	b)\! d(~\pp \tuplet 3/2 4 {d8 bes\> a)} c4\!
+	b4\mf d->(~ \once \tupletUp \tuplet 3/2 4 {d8\> b a} c4
+	b)\! d(~\pp \tuplet 3/2 4 {d8 \hairpinShorten #'(0.5 . -0.5) bes\> a)} c4\!
 	bes( d)\< c8-^ bes-^ a-^ g-^
 % Bars 16 to 20
 	f4( << a2\! {s4 s\>}>> \tuplet 3/2 4 {g8 a e\!)}
-	g2.-\pdim\>~ g8\pp f \mark \default
+	\hairpinShorten #'(-0.5 . -0.5) g2.-\offset X-offset -1 \p-\dimmarkup\>~ g8-\offset X-offset 1 \pp f \mark \default
 	f4 r r2
 	R1
 	bes4\p r8 bes bes4 r
@@ -37,7 +37,7 @@ musicCornoIMvtII = \relative c {
 	d2~ d8\! d(\> g16 f! e d)\!
 	d4( c!\>~ c8) c\!( f16 e d c)
 	c4(\p bes4.) r8 r4
-	bes2(\pp\> a4.\! bes8)
+	\hairpinShorten #'(-0.5 . -1) bes2(\pp\> a4.\! bes8)
 % Bars 26 to 30
 	bes4->\< b->\! a2~\>
 	a2.\! r4
@@ -48,7 +48,7 @@ musicCornoIMvtII = \relative c {
 	r4 f'2.->\pp~
 	f4 r r2
 	R1
-	c2(\p\>-\dimmarkup << bes {s4 s\!}>> \mark \default
+	c2(-\offset X-offset -1 \p\> -\offset X-offset 1 -\dimmarkup << bes {s4 s\!}>> \mark \default
 	a4)\pp r r2
 % Bars 36 to 40
 	R1*7
@@ -65,7 +65,7 @@ musicCornoIMvtII = \relative c {
 	
 	r2 c\p~
 % Bars 51 to 55
-	<< c1\> {s4 s s\! s}>> \mark \default
+	<< c1\> {s4 s s s\!}>> \mark \default
 	r16 c8_\ppbracklegato c c c16~ c c8 c c c16~
 	c c8 c\< d d16~ d d8 d\! d\> d16\!~
 	d bes8\p bes des des16~ des des8 des des des16~
@@ -85,9 +85,9 @@ musicCornoIMvtII = \relative c {
 % Bars 66 to 70
 	f d8 d d d16~ d_\crescmarkup d8 d d d16~
 	d d8\> d d d16~ d e8 e e e16\!(~
-	<< e2\pp {s4 s\>}>> d4 c~
+	<< e2\pp {s4\> s}>> d4 c~
 	c)\! r r2
-	<< g2.~ {s4\< s\! s\> }>> g8 f\! \mark \default
+	<< g2.~ {\hairpinShorten #'(0 . -1) s4\< s \hairpinShorten #'(1 . 0) s\> }>> g8 f\! \mark \default
 % Bars 71 to 75
 	f r r4 r2
 	R1*6
@@ -110,11 +110,11 @@ musicCornoIMvtII = \relative c {
 	R1
 	r4 r8 c\p(~^\solo c16 b c d c8 b)
 % Bars 91 to 95
-	r4 r8 c(~-\dimmarkup c16 b c d c4~
+	\tempoXoffset #8 r4 r8 c(~-\dimmarkup c16 b c d c4~
 	c16) b(\pp c d c4~ c16) b( c d c\< b c d)
 	c( b c d\! ees d\> ees e) e4( f8)\! r \section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1*2
+	\time 4/4 \tempoXoffset #1 R1*2
 % Bars 96 to 100
 	
 	bes,4(\p a aes)\< r8 aes
@@ -126,12 +126,12 @@ musicCornoIMvtII = \relative c {
 	c1-^\mf
 	<< \marcatoUpperSlur des(-^\> {s4 s s s\!}>>
 	c8)\p r r4 r2
-	R1
+	R1*5
 % Bars 106 to 110
-	R1*3
 	
 	
-	R1
+	
+	
 	aes1->\pp~
 % Bars 111 to 115
 	aes\fermata
@@ -149,14 +149,14 @@ musicCornoIMvtII = \relative c {
 	R1*2
 	
 	r2 r4 bes8.(\pp\< c16
-	d4\! << g,2.\> {s4 s s\!}>>
+	d4\! << \hairpinShorten #'(0 . -1) g,2.\> {s4 s s\!}>>
 	f8) r r4 r c'\p
 % Bars 126 to 130
-	<< c1->\crescD\< {s4 s s s\!}>>
-	des2(\f << aes)\>~ {s8 s s s\!}>>
-	<< aes1\p~ {s4 s\< s s8 s\!}>>
-	aes4 << a2( {s4\> s_\dimmarkup}>> c4~
-	<< c2.)\p {s4 s\> s}>> des4\dimD(
+	<< \hairpinShorten #'(-0.7 . -0.3) c1->-\offset X-offset -1 \crescD\< {s4 s s s}>>
+	des2(\f << aes)\>~ {s8 s s s}>>
+	<< aes1\p~ {s4\< s s s8 s}>>
+	aes4\! << a2( {s4\> s_\dimmarkup}>> c4~
+	<< \hairpinShorten #'(-0.5 . -0.5) c2.)\p {s4\> s s}>> des4\dimD(
 % Bars 131 to 135
 	c2.) des4(\pp\>
 	c)\! r r2
@@ -168,7 +168,7 @@ musicCornoIMvtII = \relative c {
 	
 	
 	
-	c2\pp c4 c
+	\tempoXoffset #4.5 c2\pp c4 c
 % Bars 141 and 142
 	c1
 	c\fermata \fine

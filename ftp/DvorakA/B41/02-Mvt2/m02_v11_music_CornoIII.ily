@@ -15,19 +15,19 @@ musicCornoIIIMvtII = \relative c {
 	r4 g''2\pp\< g4
 	f\! d2\>( g8) bes\!
 % Bars 6 to 10
-	a4\> a2\pp a4
+	\hairpinShorten #'(-1 . -0.5) a4\> a2\pp a4
 	a2 fis4. fis8
 	ees2 d4.\< d8
 	d4-> d->\! d\> cis
 	d2\dimD~ d4 r
 % Bars 11 to 15
-	d2\pp-> d->
+	d2\pp^> d^>
 	a'4(\< g2) \tuplet 3/2 4 {fis8( g a)}
 	g4\! g2\mf\>->~ g8 fis(
-	g4)\! bes4.\pp f8 f4
+	g4)\! bes4.\pp f!8 f4
 	f d2->\< d8 d
 % Bars 16 to 20
-	d4 f\! << e2 {s8\> s s s\!}>>
+	d4 f\! << e2 {\hairpinShorten #'(0 . -0.5) s8\> s s s\!}>>
 	r2 r4 c\pp \mark \default
 	c'2--~ c--
 	c4(\< << d2 {s4\! s\>}>> d4)\!
@@ -71,7 +71,7 @@ musicCornoIIIMvtII = \relative c {
 	
 	
 	\ni \mmrPos #-4 R1 \no
-	c4(\pp\<^\solo e << bes2\> {s8 s s s\!}>>
+	\hairpinShorten #'(0 . 1.2) c4(\pp\<^\solo e << \hairpinShorten #'(-1.2 . 0) bes2\> {s8 s s s\!}>>
 	g4) r r2 \mark \default
 % Bars 71 to 75
 	R1*7
@@ -89,34 +89,34 @@ musicCornoIIIMvtII = \relative c {
 	R1
 	r4 g8.\f g16-. b!8\< c d c16 c\!
 	b8\ff r16. d32-. d2->\fz\>~ d8\! r
-	r8.. d32\brack\ff d2->\fz\>~ d8\! r
-	r8.. d,32\mp d2->\>~ d8\! r
+	r8.. d32 \hairpinShorten #'(2 . 0) d2->_\brackfffz\>~ d8\! r
+	r8.. d,32\mp\> d2->~ d8\! r
 % Bars 91 to 95
-	R1*3
+	\tempoXoffset #-2 R1*3
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1
+	\time 4/4 \tempoXoffset #1 R1*2
 % Bars 96 to 100
-	R
+	
 	f1(\pp
 	aes2\< << a)\> {s8 s s s\!}>>
 	bes16\pp bes8 bes a! a16 r aes8 aes aes aes16
 	r aes8\< aes aes aes16 r aes8 aes aes aes16\!
 % Bars 101 to 105
-	r bes8 bes bes bes16~_\crescmarkup bes bes8 bes bes bes16
+	r bes8 bes bes bes16~^\crescmarkup bes bes8 bes bes bes16
 	aes4\mf r r2
 	R1
 	aes1\p~
 	aes4 aes2.->~_\dimmarkup
 % Bars 106 to 110
 	aes8 r r4 r2
-	R1
-	R1*2
+	R1*3
 	
-	ees2(-> e)
+	
+	ees2(->\pp e)
 % Bars 111 to 115
-	b8-._\dimmarkup r d-. r r2\fermata
+	b!8-._\dimmarkup r d-. r r2\fermata
 	R1*2
 	\mark \default
 	R1*7
@@ -127,16 +127,16 @@ musicCornoIIIMvtII = \relative c {
 	
 	\mark \default
 % Bars 121 to 125
-	R1
-	R
-	R1*3
+	R1*7
+	
+	
 	
 	
 % Bars 126 to 130
-	R1*2
+	
 	
 	des'4(^\solo\mp\< c b!) r8 b\!
-	d!4 << c2.\>~ {s4 s_\dimmarkup s}>>
+	d!4 << c2.\>~ {s4 s^\dimmarkup s}>>
 	c4\p r r2
 % Bars 131 to 135
 	R1*4

@@ -565,6 +565,14 @@ markWhiteout = {
 	\once \override Score.RehearsalMark.whiteout-style = #'outline
 }
 
+tempoEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
 
 %###############################################################################
 %  Fonctions sur étagère
@@ -710,13 +718,6 @@ markWhiteout = {
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
 %tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-%tempoEO = #(define-music-function
 %	(offset)
 %	(pair?)
 %	#{

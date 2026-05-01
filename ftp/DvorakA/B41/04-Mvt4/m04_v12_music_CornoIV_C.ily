@@ -419,7 +419,7 @@ musicCornoIVMvtIV = \relative c {
 % Bars 461 to 465
 	d2->
 	d4-. d-.
-	<< d2->~ {s8 s s s\!}>>
+	<< d2->\>~ {s8 s s s\!}>>
 	d8 r r4
 	R2*6
 % Bars 466 to 470

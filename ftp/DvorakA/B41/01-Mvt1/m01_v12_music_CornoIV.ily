@@ -10,7 +10,7 @@ musicCornoIVMvtI = \relative c {
 	\transposition f
 % Bars 1 to 5
 	\repeat volta 2 {
-		e2.\pp~
+		\startMeasureCount \clef bass e2.\pp~
 		e~
 		e~
 		e~
@@ -18,15 +18,15 @@ musicCornoIVMvtI = \relative c {
 % Bars 6 to 10
 		e~
 		e~
-		e~
-		e4 r r
+		e~ \stopMeasureCount
+		e4 \clef treble r r
 		R2.*2
 % Bars 11 to 15
 		
 		g4->\f\< g-> g->\!
 		c2->~\f c8 r
 		R2.
-		c2\fz~ c8 r
+		c2-\offset X-offset -2 \fz~ c8 r
 % Bars 16 to 20
 		R2.
 		c2\fz->~ c8 f-.
@@ -44,7 +44,7 @@ musicCornoIVMvtI = \relative c {
 		f2\fz~ f8 r 
 		gis2\fz~ gis8 r
 		a2\fz~ a8 r
-		g2\fz~ g8 r
+		g!2\fz~ g8 r
 % Bars 31 to 35
 		f2\fz~ f8 r
 		fis2\fz~ fis8 r
@@ -59,11 +59,13 @@ musicCornoIVMvtI = \relative c {
 		r fis-._\dimmarkup fis-.
 % Bars 41 to 45
 		e8-. r r4 r
-		R2.*19
+		R2.*9
 % Bars 46 to 50
 	
 % Bars 51 to 55
-	
+		R2.*2
+		
+		\tempoXoffset #-1.5 R2.*8
 % Bars 56 to 60
 		
 % Bars 61 to 65
@@ -104,7 +106,7 @@ musicCornoIVMvtI = \relative c {
 		c2\< c4\!
 		f4-.\f f4.-> f8-.
 		c2-> c4
-		f f4.-> f8
+		f-. f4.-> f8-.
 % Bars 101 to 105
 		c2-> c4
 		f2.\fz->
@@ -155,22 +157,22 @@ musicCornoIVMvtI = \relative c {
 	cis
 	fis->
 	fis2->~ fis8. ais16
-	<< ges2.->\fz\> {s4 s s8 s\!}>>
+	<< \hairpinShorten #'(-0.5 . -0.5) ges2.->-\offset X-offset -1.5 \fz\> {s4 s s8 s\!}>>
 % Bars 151 to 155
 	R2.
-	<< f2.\fz\> {s4 s s8 s\!}>>
+	<< \hairpinShorten #'(-0.5 . -0.5) f2.-\offset X-offset -1.5 \fz\> {s4 s s8 s\!}>>
 	R2.
 	c\fz
 	des\fz
 % Bars 156 to 160
-	c\fz
+	\dynEO #'(0.5 . -9.3) c^\fz
 	des\fz
 	R2.*4
 	
 	
 % Bars 161 to 165
 	
-	c2.\p~
+	\startMeasureCount c2.\p~
 	c~
 	c~
 	c~
@@ -178,10 +180,10 @@ musicCornoIVMvtI = \relative c {
 	c~_\crescmarkup
 	c~
 	c~
-	c
+	c \stopMeasureCount
 	c\brack\f\<~
 % Bars 171 to 175
-	c4\! r r \mark \default
+	c4\! r r \markXoffset #-0.2 \mark \default
 	f8-.\ff r f-. r e-.\fz r
 	f-. r f-. r e-.\fz r
 	f-. r d2\fz
@@ -206,8 +208,8 @@ musicCornoIVMvtI = \relative c {
 	des2.\fz~
 % Bars 191 to 195
 	des2 r4
-	des2.\fz
-	des->\>
+	des2.-\tweak extra-offset #'(0 . -8.7) ^\fz
+	des->-\tweak extra-offset #'(0 . -8.5) ^\>
 	des->
 	<< des->~ {s4 s s\!}>>
 % Bars 196 to 200
@@ -222,7 +224,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 216 to 220
 	
 	
-	c'2\ff~ c8 a-.
+	c'2-\offset X-offset 0.5 \ff~ c8 a-.
 	a8. c16 c4-. r
 	c2~ c8 a-.
 % Bars 221 to 225
@@ -235,22 +237,14 @@ musicCornoIVMvtI = \relative c {
 	fis2~-> fis8 fis-.
 	fis8. fis16 fis4-. r \mark \default
 	fis-> r r
-	R2.*4
+	R2.*14
 % Bars 231 to 235
 	
-	
-	R2.*2
-	
-	R2.*5
 % Bars 236 to 240
 	
-	
-	
-	
-	R2.*2
 % Bars 241 to 245
 	
-	R2.
+	
 	r4 r e->\fz
 	R2.
 	r4 r e->_\fzcresc
@@ -299,10 +293,10 @@ musicCornoIVMvtI = \relative c {
 	
 % Bars 291 to 295
 	
-	b2.\fz_\crescmarkup~
+	b2._\fzcresc~
 	b~
 	b\<
-	<< fis'_\fzmarkup {s4 s s8 s\!}>> \mark \default
+	<< \markEO #'(0 . -7.8) fis'^\fzmarkup {s4 s s8 s\!}>> \mark \default
 % Bars 296 to 300
 	g4\f r r
 	fis2~_\fbenmarc fis8 c!-.
@@ -343,7 +337,7 @@ musicCornoIVMvtI = \relative c {
 	R2.
 	g4-.\ff r r
 	R2.
-	b!2.->\ff~
+	b!2.->-\offset X-offset 0.5 \ff~
 	b~
 % Bars 331 to 335
 	b4 r r
@@ -358,13 +352,13 @@ musicCornoIVMvtI = \relative c {
 	aes2->\ff ees8.-> aes16->
 	aes2( ees4) \mark \default
 % Bars 341 to 345
-	e,!2.\p\>~
+	\startMeasureCount \clef bass e,!2.\p\>~
 	e~
 	<< e~ {s4 s s8 s\!}>>
 	e2.\pp~
 	e~
 % Bars 346 to 350
-	e~
+	e~ \stopMeasureCount
 	e4 r r
 	R2.*2
 	
@@ -378,7 +372,7 @@ musicCornoIVMvtI = \relative c {
 	
 	
 	\mark \default
-	e2.\p~
+	\startMeasureCount e2.\p~
 	e~
 % Bars 361 to 365
 	e~
@@ -387,10 +381,10 @@ musicCornoIVMvtI = \relative c {
 	e~
 	e~
 % Bars 366 to 370
-	e
+	e \stopMeasureCount \clef treble
 	a'2->\mf~ a8 e-.
 	e8. a16 a4-. r
-	a2~\<_\moltocresc a8 e-.
+	a2~\<^\moltocresc a8 e-.
 	e8. a16 a4-.\! r
 % Bars 371 to 375
 	e'2->\< e,4->
@@ -413,9 +407,9 @@ musicCornoIVMvtI = \relative c {
 % Bars 386 to 390
 	r gis\fz r
 	r c,\fz r
-	r g'\brack\fz r
+	r g'!\brack\fz r
 	r a\brack\fz r
-	r fis\brack\fz r
+	r fis-\offset X-offset -0.7 \brack\fz r
 % Bars 391 to 395
 	gis2~ gis8 r
 	R2.*9
@@ -436,23 +430,17 @@ musicCornoIVMvtI = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 % Bars 421 to 425
 	\mmrPos #-4 R \no
 	r4 f\f r
-	R2.*2
-	\markk
-	R2.*4
+	\mmrnDown R2.*2
+	\markXoffset #-0.2 \markk
+	\mmrLength 28 R2.*14
 % Bars 426 to 430
-	
-	
-	
-	R2.*4
 	
 % Bars 431 to 435
 	
-	
-	R2.*6
 % Bars 436 to 440
 	
 	

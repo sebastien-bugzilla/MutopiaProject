@@ -18,8 +18,8 @@ musicCornoIVMvtII = \relative c {
 	e4\> e\!( f2)\pp
 	d2 ees4. d8
 	bes2 a4\<( bes)
-	bes4-> b->\! a\> a
-	a2\dimD~ a4 r
+	bes4-> b->\! a\> a\!
+	a2-\tweak extra-offset #'(0.5 . -10) ^\dimmarkup~ a4 r
 % Bars 11 to 15
 	c2\pp-> c->
 	d2->\< d->
@@ -28,7 +28,7 @@ musicCornoIVMvtII = \relative c {
 	d d2->\< c8 bes
 % Bars 16 to 20
 	a4 d\! << c2 {s8\> s s s\!}>>
-	r2 r4 c\pp \mark \default
+	r2 r4 c\pp \markXoffset #-0.2 \mark \default
 	a'2--( aes--)
 	aes4(\< << bes2 {s4\! s\>}>> bes4)\!
 	r2 r4 r8 f\p
@@ -43,9 +43,9 @@ musicCornoIVMvtII = \relative c {
 	d4\p r8 d\> d4\! r
 	d\pp\< r8 d d4 r8 d\!
 	d4\cresc r8 d\< d4 r8 d\!
-	d4\mf r8\< d d4->\! r8 d\>
+	d4\mf r8\< d d4->\! r8 d-\alterBroken shorten-pair #'(()(0 . 2)) \>
 % Bars 31 to 35
-	d4\! r8 d\pp d4 r8 f8
+	d4 r8\! d\pp d4 r8 f8
 	f4 r8 d\< d4 r8 d\!
 	f4\< r8 f\! e4\> r8 e\!
 	e4\p r8 e_\dimmarkup d4 r8 e \mark \default
@@ -70,7 +70,7 @@ musicCornoIVMvtII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no \mark \default
 % Bars 71 to 75
-	f,1\pp^\solo~
+	\clef bass f,1\pp^\solo~
 	f~
 	f8 f4\pp f f f8~
 	f f4 f\< f f8~
@@ -82,7 +82,7 @@ musicCornoIVMvtII = \relative c {
 	R1*2
 	
 % Bars 81 to 85
-	\ni \mmrPos #-4 R1
+	\ni \clef treble \mmrPos #-4 R1
 	\mmrPos #-4 R \no
 	R1
 	d'4->\mf c-> bes-> aes->
@@ -91,58 +91,58 @@ musicCornoIVMvtII = \relative c {
 	R1
 	r4 g'8.\f g16-. g8\< g g g16 g\!
 	g8\ff r16. d32-. d2->\fz\>~ d8\! r
-	r8.. d32\brack\ff d2->\fz\>~ d8\! r
-	r8.. d,32\mp d2->\>~ d8\! r
+	r8.. d32 \hairpinShorten #'(2.5 . -1) d2->_\brackfffz\>~ d8\! r
+	\clef bass r8.. d,32\mp\> d2->~ d8\! r \clef treble
 % Bars 91 to 95
-	R1*3
+	\tempoXoffset #-2 R1*3
 	
 	\section
-	\time 2/4 << bes'2\pp\>~ {s8 s s s\!}>> \section \mark \default
-	\time 4/4 bes4 r r2
+	\time 2/4 << \hairpinShorten #'(-0.5 . -1.5) bes'2\pp\>~ {s8 s s s\!}>> \section \mark \default
+	\time 4/4 \tempoXoffset #1 bes4 r r2
 % Bars 96 to 100
 	R1
 	bes1\pp~
-	<< bes1\< {s8 s s s\! s\> s s s\!}>>
-	r16\pp bes8 bes bes bes16 r c8 c c c16
+	<< bes1\< {s8 s s s\! s-\tweak extra-offset #'(0 . -1.95) \> s s s\!}>>
+	r16 bes8\pp bes bes bes16 r c8 c c c16
 	r d8\< d ees ees16 r f8 f f f16\! 
 % Bars 101 to 105
 	r ees8 ees ees ees16~_\crescmarkup ees ees8 ees ees ees16
 	ees4\mf r r2
-	R1
-	R1*3
+	R1*5
+	
 	
 % Bars 106 to 110
 	
-	R1
+	
 	aes,1\pp~
 	aes8 r r4 r2
 	R1
 % Bars 111 to 115
-	R1\fermata
+	\once \ni R1\fermata
 	R1*2
 	\mark \default
-	f1\pp~
+	\clef bass f1\pp~
 	f~
 % Bars 116 to 120
 	f8 f4 f f f8~
 	f f4 f_\crescmarkup f f8
-	<< f1~ {s2 s_\dimmarkup}>>
+	<< f1~ {s2_\dimmarkup s}>>
 	f8\pp f4 f f_\crescmarkup f8~
 	f16 f8 f f\< f16~ f f8 f f\! f16~ \mark \default
 % Bars 121 to 125
 	f8\f r r4 r2
-	R1
-	<< f'1\pp~ {s4 s s\< s8 s\!}>>
-	<< f1~ {s4 s s\> s8 s\!}>>
+	R1 \clef treble
+	<< \hairpinShorten #'(-0.5 . -1.5) f'1\pp~ {s4\< s s s8 s\!}>>
+	<< f1~ {\hairpinShorten #'(0.5 . 0) s4\> s s s8 s\!}>>
 	f8 r r4 r2
 % Bars 126 to 130
-	R1*2
+	R1*9
 	
-	R1*3
+	
 	
 	
 % Bars 131 to 135
-	R1*4
+	
 	
 	
 	
