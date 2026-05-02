@@ -214,7 +214,7 @@ tempiPartMvtI = {
 	% Mvt1 : bar 423
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(       
-		     trombeI trombeII trombonoI 
+		       trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
@@ -222,7 +222,7 @@ tempiPartMvtI = {
 		}
 	}
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI
-		fagottoII cornoI cornoII cornoIII cornoIV) {
+		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight \center-column {
 				\lower #1.5 "poco a" "poco ritard."
@@ -286,7 +286,7 @@ tempiPartMvtII = {
 	% Mvt2 : bar 91.375 shifted to 91
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(    
-		     trombeI trombeII trombonoI 
+		       trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
@@ -294,7 +294,7 @@ tempiPartMvtII = {
 		}
 	}
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI
-		fagottoII cornoI cornoII cornoIII cornoIV) {
+		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight "poco ritard."
 		}
@@ -314,7 +314,7 @@ tempiPartMvtII = {
 	% Mvt2 : bar 140.5 shifted to 140
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(    
-		     trombeI trombeII trombonoI 
+		       trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
@@ -322,7 +322,7 @@ tempiPartMvtII = {
 		}
 	}
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
-		fagottoII cornoI cornoII cornoIII cornoIV) {
+		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight "rit."
 		}
@@ -341,7 +341,7 @@ tempiPartMvtIII = {
 	% Mvt3 : bar 20.66 shifted to 20
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
-		     trombeI trombeII trombonoI 
+		       trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
@@ -349,7 +349,7 @@ tempiPartMvtIII = {
 		}
 	}
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI
-		fagottoII cornoI cornoII cornoIII cornoIV) {
+		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight "rit."
 		}
@@ -371,7 +371,7 @@ tempiPartMvtIII = {
 	% Mvt3 : bar 74.66 shifted to 74
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(    
-		    trombeI trombeII trombonoI 
+		      trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
@@ -387,6 +387,13 @@ tempiPartMvtIII = {
 	\tag #'(cornoII cornoIII cornoIV) {
 		\tempo \markup {
 			\italic \normal-weight "poco rit."
+		}
+	}
+	\tag #'(trombeI trombeII) {
+		\tempo \markup {
+			\italic \normal-weight \column {
+				\lower #1.5 "poco" "ritard."
+			}
 		}
 	}
 	s1.*2
@@ -416,13 +423,13 @@ tempiPartMvtIII = {
 	% Mvt3 : bar 242
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(      
-		   cornoIII  trombeI trombeII trombonoI 
+		   cornoIII    trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo "Un pochettino poco meno mosso, molto tranquillo"
 	}
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
-		fagottoII cornoI cornoII cornoIV) {
+		fagottoII cornoI cornoII cornoIV trombeI trombeII) {
 		\tempo \markup {
 			\column {
 				\lower #1.5 "Un pochettino poco meno" "mosso, molto tranquillo"
@@ -434,20 +441,20 @@ tempiPartMvtIII = {
 	% Mvt3 : bar 257.5 shifted to 257
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
-		    trombeI trombeII trombonoI 
+		      trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
 			\with-color "red" \italic \normal-weight "poco a poco accel. e cresc."
 		}
 	}
-	\tag #'( vide cornoIII ) {
+	\tag #'(cornoIII ) {
 		\tempo \markup {
 			\italic \normal-weight "poco a poco accel. e cresc."
 		}
 	}
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI
-		fagottoII cornoI cornoII cornoIV) {
+		fagottoII cornoI cornoII cornoIV trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight \column {
 				\lower #1.5 "poco a poco" "accel. e cresc."
@@ -469,7 +476,7 @@ tempiPartMvtIII = {
 	% Mvt3 : bar 285.5 shifted to 285
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(    
-		     trombeI trombeII trombonoI 
+		       trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
@@ -477,7 +484,7 @@ tempiPartMvtIII = {
 		}
 	}
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI
-		fagottoII cornoI cornoII cornoIII cornoIV) {
+		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight "rit."
 		}
@@ -499,7 +506,7 @@ tempiPartMvtIII = {
 	% Mvt3 : bar 339.66 shifted to 339
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(    
-		     trombeI trombeII trombonoI 
+		       trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
@@ -507,12 +514,12 @@ tempiPartMvtIII = {
 		}
 	}
 	\tag #'(flautoI oboeI oboeII clarinettoI clarinettoII fagottoI cornoI 
-		cornoII) {
+		cornoII ) {
 		\tempo \markup {
 			\italic \normal-weight "poco ritard."
 		}
 	}
-	\tag #'(flautoII) {
+	\tag #'(flautoII trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight 
 			\column { \lower #1.5 "poco" "ritard." }
@@ -543,12 +550,13 @@ tempiPartMvtIII = {
 	% Mvt3 : bar 365
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flautoI   oboeII    
-		 cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
+		 cornoI cornoII cornoIII cornoIV   trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo "Poco meno mosso"
 	}
-	\tag #'( flautoII oboeI clarinettoI clarinettoII fagottoI fagottoII) {
+	\tag #'( flautoII oboeI clarinettoI clarinettoII fagottoI fagottoII trombeI 
+		trombeII) {
 		\tempo \markup {
 			\center-column {
 				\lower #1.5 "Poco meno" "mosso"
@@ -560,14 +568,14 @@ tempiPartMvtIII = {
 	% Mvt3 : bar 375
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'( oboeI oboeII clarinettoI clarinettoII fagottoI 
-		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
+		fagottoII cornoI cornoII cornoIII cornoIV   trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
 			\italic \normal-weight "poco stringendo"
 		}
 	}
-	\tag #'(flautoI flautoII) {
+	\tag #'(flautoI flautoII trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight \center-column {
 				\lower #1.5 "poco" "stringendo"
@@ -657,7 +665,7 @@ tempiPartMvtIV = {
 	% Mvt4 : bar 188
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flautoI  oboeI     
-		     trombeI trombeII trombonoI 
+		       trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
@@ -665,7 +673,7 @@ tempiPartMvtIV = {
 		}
 	}
 	\tag #'( flautoII oboeII clarinettoI clarinettoII fagottoI fagottoII cornoI
-		cornoII cornoIII cornoIV) {
+		cornoII cornoIII cornoIV trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight \column {
 				\lower #1.5 "poco a poco" "accelerando"
@@ -689,14 +697,14 @@ tempiPartMvtIV = {
 	% Mvt4 : bar 230
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flautoI  oboeI  clarinettoI clarinettoII fagottoI 
-		fagottoII cornoI cornoII   trombeI trombeII trombonoI 
+		fagottoII cornoI cornoII     trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
 			\italic \normal-weight "poco a poco accel."
 		}
 	}
-	\tag #'( flautoII oboeII cornoIII cornoIV) {
+	\tag #'( flautoII oboeII cornoIII cornoIV trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight \column {
 				\lower #1.5 "poco a" "poco accel."
@@ -718,12 +726,12 @@ tempiPartMvtIV = {
 	% Mvt4 : bar 328
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
-		fagottoII  cornoII cornoIII cornoIV trombeI trombeII trombonoI 
+		fagottoII  cornoII cornoIII cornoIV   trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo "Poco meno mosso"
 	}
-	\tag #'(cornoI ) {
+	\tag #'(cornoI trombeI trombeII) {
 		\tempo \markup {
 			\center-column {
 				\lower #1.5 "Poco meno" "mosso"
@@ -735,14 +743,14 @@ tempiPartMvtIV = {
 	% Mvt4 : bar 344
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(flautoI flautoII oboeI oboeII  clarinettoII fagottoI 
-		fagottoII cornoI cornoII  cornoIV trombeI trombeII trombonoI 
+		fagottoII cornoI cornoII  cornoIV   trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
 			\italic \normal-weight "poco a poco stringendo"
 		}
 	}
-	\tag #'(clarinettoI cornoIII) {
+	\tag #'(clarinettoI cornoIII trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight \column {
 				\lower #1.5 "poco a poco" "stringendo"
@@ -764,7 +772,7 @@ tempiPartMvtIV = {
 	% Mvt4 : bar 409.5 shifted to 409
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(    
-		     trombeI trombeII trombonoI 
+		       trombonoI 
 		trombonoII trombonoIII timpani triangolo piatti grancassa arpa violinoI
 		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
@@ -772,7 +780,7 @@ tempiPartMvtIV = {
 		}
 	}
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
-		fagottoII cornoI cornoII cornoIII cornoIV) {
+		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII) {
 		\tempo \markup {
 			\italic \normal-weight "rit."
 		}

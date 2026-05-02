@@ -160,6 +160,17 @@ correctionsCorni = \markup {
 	% bar 117, Mvt II, Corno IV
 	"In Mvt II, Bar 117, for corno IV, a slur is indicated in part score but not reproduced in conductor score. The conductor version is kept as reference."
 }
+correctionTromba = \markup {
+	
+	% bar 228, Mvt I, Tromba I
+	"In Mvt I, Bar 228, for tromba I, the pitch are different in conductor (c) and part score (a). Conductor version is kept."
+	
+	% Mvt III, Bar 111, Tromba II
+	"In Mvt III, Bar 111, for tromba II a missing crescendo hairpin is added."
+	
+	% Mvt IV, Bar 158, Tromba II
+	"In Mvt IV, Bar 158, for tromba missing mark C is added."
+}
 correctionTromboni = \markup {
 	
 	% bar 98, mvt I, trombone I

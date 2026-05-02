@@ -15,15 +15,15 @@ musicTrombeIMvtIV = \relative c {
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R2\fermata
+	\once \ni R2\fermata
 	R2
-	R\fermata
+	\once \ni R\fermata
 	R
-	R\fermata
+	\once \ni R\fermata
 % Bars 21 to 25
 	R2*2
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*2^\gp
 	
 % Bars 26 to 30
@@ -84,18 +84,21 @@ musicTrombeIMvtIV = \relative c {
 	aes-. aes-.
 	ees-. r\fermata
 	ees\ff r
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 126 to 130
 	ees4\ff r
-	R2\fermata
+	\once \ni R2\fermata
 	ees4\fz r
 	ees\fz r
 	ees\fz r
 % Bars 131 to 135
 	ees\fz r
-	R2*26
-% Bars 136 to 140
+	R2*2
 	
+	R2*2
+	
+% Bars 136 to 140
+	\tempoXoffset -1 R2*20
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -103,9 +106,9 @@ musicTrombeIMvtIV = \relative c {
 % Bars 151 to 155
 	
 % Bars 156 to 160
-	
+	\mmrLength #13 R2*2
 	\section \mark \default
-	R2*40
+	\mmrLength #27 \mmrnDown R2*30
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -118,12 +121,14 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 186 to 190
 	
+	
+	\mmrLength #16 \tempoXoffset #-1.5 \mmrnDown R2*10
 % Bars 191 to 195
 	
 % Bars 196 to 200
 	
 	
-	R2*40
+	\tempoXoffset #-1 \mmrnDown R2*32
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -138,6 +143,7 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 231 to 235
 	
+	\mmrLength #13 \mmrnDown R2*8
 % Bars 236 to 240
 	
 	
@@ -205,7 +211,7 @@ musicTrombeIMvtIV = \relative c {
 	R2*3
 	
 	
-	e2->\ff
+	e2->-\offset X-offset -2.5 \ff
 % Bars 301 to 305
 	e->
 	e4..-> dis16
@@ -231,13 +237,16 @@ musicTrombeIMvtIV = \relative c {
 % Bars 326 to 330
 	
 	\section
-	R2*24
+	\mmrLength #14 \tempoXoffset #-2 \mmrnDown R2*16
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
+	
+	
+	\mmrLength #12 \mmrnDown \tempoXoffset #-1 R2*8
 % Bars 346 to 350
 	
 % Bars 351 to 355
@@ -297,9 +306,13 @@ musicTrombeIMvtIV = \relative c {
 	fis-> fis->
 	cis-> r
 % Bars 406 to 410
-	R2*47
+	R2*5
 % Bars 411 to 415
+	R2*2
 	
+	\mmrLength #11 \tempoXoffset #-1 R2*2
+	
+	\mmrLength #14 \tempoXoffset #-1 R2*38
 % Bars 416 to 420
 	
 % Bars 421 to 425
@@ -357,7 +370,7 @@ musicTrombeIMvtIV = \relative c {
 	\mmrPos #4 R 
 	\mmrPos #4 R 
 	\mmrPos #4 R \no
-	g'4->_\fcresc g->
+	\startMeasureCount g'4->_\fcresc g->
 	g-> g->
 % Bars 521 to 525
 	g-> g->
@@ -368,7 +381,7 @@ musicTrombeIMvtIV = \relative c {
 % Bars 526 to 530
 	g->\dimD\> g-.--
 	g-.-- g-.--
-	g-.-- g-.--\!
+	g-.-- g-.--\! \stopMeasureCount
 	R2*28
 % Bars 531 to 535
 	
@@ -437,8 +450,8 @@ musicTrombeIMvtIV = \relative c {
 % Bars 601 to 605
 	a2->~
 	a4.\< r8
-	b4. r8
-	bis4.\! r8 \markk
+	b4.-> r8
+	bis4.->\! r8 \markk
 	cis2->\ff~
 % Bars 606 to 610
 	cis
@@ -475,7 +488,7 @@ musicTrombeIMvtIV = \relative c {
 	e\! g-^\fz~
 	g r
 	R2
-	d2->\ff
+	d2->-\offset X-offset -1 \ff
 % Bars 636 to 640
 	d->
 	d4..-> b16-.
@@ -523,7 +536,7 @@ musicTrombeIMvtIV = \relative c {
 	b2->
 	a4-. a-.
 	b2->
-	cis8 cis cis cis 
+	\startMeasureCount cis8 cis cis cis 
 % Bars 676 to 680
 	cis cis cis cis
 	cis cis cis cis
@@ -532,7 +545,7 @@ musicTrombeIMvtIV = \relative c {
 	cis cis cis cis
 % Bars 681 to 685
 	cis cis cis cis
-	cis cis cis cis
+	cis cis cis cis \stopMeasureCount
 	cis4-. r
 	R2^\gp
 	b4-> r

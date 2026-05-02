@@ -30,7 +30,7 @@ musicTrombeIMvtIII = \relative c {
 	e\p r r r2 r4
 	R1.*4
 % Bars 21 to 25
-	r2 r4 << gis2.\p\< {s8 s s  s s s\!}>>
+	r2 r4 << gis2.\p\< {s8 s s  s s s}>>
 	a4-.\f r r r2 r4
 	R1.*29
 % Bars 26 to 30
@@ -72,13 +72,13 @@ musicTrombeIMvtIII = \relative c {
 % Bars 76 to 80
 	a4\f r r a-. r r
 	r2 r4 a-. r r
-	r2 r4 gis-. r r
+	\startMeasureCount r2 r4 gis-. r r
 	r2 r4 gis-. r r
 	r2 r4 gis-. r r
 % Bars 81 to 85
 	r2 r4 gis-. r r
 	r2 r4 gis-. r r
-	r2 r4 gis-. r r
+	r2 r4 gis-. r r \stopMeasureCount
 	r2 r4 a-. r r
 	r2 r4 a-. r r
 % Bars 86 to 90
@@ -129,18 +129,18 @@ musicTrombeIMvtIII = \relative c {
 	
 	
 	
-	R1.\fermata \section
-	\time 2/4 R2*12
+	\once \ni R1.\fermata \section \newSpacingSection
+	\sectionLabel "TRIO" \time 2/4 R2*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no \mark \default
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 % Bars 156 to 160
 	g4.->\mf r8
 	g4.-> r8
@@ -223,25 +223,27 @@ musicTrombeIMvtIII = \relative c {
 % Bars 226 to 230
 	g-^ r
 	a8-. r r4
-	R2*34
+	R2*14
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
+	\mmrLength #33 \tempoXoffset #-3 \mmrnDown R2*15
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
+	\mmrLength #15 \mmrnDown R2*5
 % Bars 261 to 265
 	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \section
+	\mmrPos #-4 R \no \section \newSpacingSection
 % Bars 266 to 270
 	\time 6/4 e4\ff r r r2 r4
 	R1.*2
@@ -264,7 +266,7 @@ musicTrombeIMvtIII = \relative c {
 	e\p r r r2 r4
 	R1.*4
 % Bars 286 to 290
-	r2 r4 << gis2.\p\< {s8 s s s s s\!}>>
+	r2 r4 << gis2.\p\< {s8 s s s s s}>>
 	a4-.\f r r r2 r4
 	R1.*29
 % Bars 291 to 295
@@ -302,13 +304,13 @@ musicTrombeIMvtIII = \relative c {
 	
 	
 	
-	\section
+	\section \newSpacingSection
 % Bars 341 to 345
-	\time 2/4 e4.->_\fffz r16 e-.
+	\sectionLabel "CODA" \time 2/4 e4.->_\fffz r16 e-.
 	e4.->\fz r16 e-.
 	e4-> e->
 	e-> e->
-	e4.->\fz r16 e-.
+	e4.->-\tweak extra-offset #'(0 . -9) ^\fz r16 e-.
 % Bars 346 to 350
 	e4.->\fz r16 e-.
 	e4-> e->
@@ -319,15 +321,23 @@ musicTrombeIMvtIII = \relative c {
 	a4-> a->
 	gis-> fis->
 	e-> r
-	R2*22
+	R2*11
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
+	
+	
+	
+	\mmrLength #13 \tempoXoffset #-2 \mmrnDown R2*10
 % Bars 366 to 370
 	
 % Bars 371 to 375
 	
+	
+	
+	
+	\mmrLength #13 \mmrnDown R2
 % Bars 376 to 380
 	\ni \mmrPos #4 R2
 	\mmrPos #4 R \no
@@ -343,5 +353,5 @@ musicTrombeIMvtIII = \relative c {
 % Bars 386 to 388
 	
 	r4 \tuplet 3/2 4 {r8 r e-.\ff}
-	a-. r r4\fermata \fine
+	a-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

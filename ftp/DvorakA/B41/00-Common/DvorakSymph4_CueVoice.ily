@@ -961,32 +961,32 @@ cueVoiceTrombeIMvtI = \relative c {
 	% bars 96 - 97
 	\transpose f c' {
 		\relative c {
-			\voiceOne d'''2.~^\markup {Viol.}
-			d8 a( bes d c g) \oneVoice
+			\ottava #1 d'''2.~^\markup {Viol.}
+			d8 a( bes d c g) \ottava #0
 		}
 	}
 	s2.*72
 	% bars 170 - 171
 	\transpose f c' {
 		\relative c {
-			\voiceOne bes'''2(^\markup {Viol.} g8 a)
-			bes2( g8 a) \oneVoice
+			\ottava #1 bes'''2(^\markup {Viol.} g8 a)
+			bes2( g8 a) \ottava #0
 		}
 	}
 	s2.*80 s2*3 s2.*121 s2*4 s2.*40
 	% bars 420 - 421
 	\transpose f c' {
 		\relative c {
-			\voiceOne bes'''4.(^\markup {\column {\lower #1.5 "Ob." "Cl."}} g8 f e
-			cis') r r4 r \oneVoice
+			\ottava #1 bes'''4.(-\offset X-offset -3.5 ^\markup {\column {\lower #1.5 "Ob." "Cl."}} g8 f e
+			cis') \ottava #0 r r4 r 
 		}
 	}
 	s2.*15
 	% bars 437 - 438
 	\transpose f c' {
 		\relative c {
-			\voiceOne f''8.\pp^\markup {Fl.} a16 a4-. r
-			f8. a16 a4-. r \oneVoice
+			\ottava #1 f''8.\pp-\offset X-offset -3 ^\markup {Fl.} a16 a4-. r
+			f8. a16 a4-. \ottava #0 r 
 		}
 	}
 }
@@ -1012,13 +1012,13 @@ cueVoiceTrombeIMvtII = \relative c {
 	}
 	s1*8 s2*1
 	% bar 95
-	<>^\markup {Vcl.}
+	<>-\offset X-offset -3 ^\markup {Vcl.}
 	s1*7
 	% bar 102
-	<>^\markup {Trbni}
+	<>-\offset X-offset -2 ^\markup {Trbni}
 	s1*10
 	% bar 112
-	<>^\markup {Cor.I.}
+	<>-\offset X-offset -2 ^\markup {Cor.I.}
 	s1*25
 	% bars 137 - 138
 	f1~^\markup {Cor.III-IV.}
@@ -1048,7 +1048,7 @@ cueVoiceTrombeIMvtIII = \relative c {
 	% bars 262 - 265
 	\transpose f c' {
 		\relative c {
-			\clef bass \voiceOne d2:16\p^\markup {Timp.}
+			\clef bass \voiceOne d2:32\p^\markup {Timp.}
 			d:_\crescmarkup
 			d:
 			d: \clef treble \oneVoice
@@ -1066,7 +1066,7 @@ cueVoiceTrombeIMvtIII = \relative c {
 	}
 	s1.*20 s2*35
 	% bars 376 - 377
-	\voiceTwo a4._\markup {Cor.III-IV.} e8
+	\voiceTwo a4.^\markup {Cor.III-IV.} e8
 	e8. a16 a8 r
 }
 cueVoiceTrombeIMvtIV = \relative c {
@@ -1091,12 +1091,12 @@ cueVoiceTrombeIMvtIV = \relative c {
 	}
 	s2*86
 	% bar 328
-	<>^\markup {Archi}
+	<>-\offset X-offset -4 ^\markup {Archi}
 	s2*44
 	% bars 372 - 379
 	\transpose f c' {
 		\relative c {
-			\voiceOne cis''16(\p^\markup {Viol.I.} b) d8-. cis16( b) d8-.
+			\oneVoice cis''16(\p^\markup {Viol.I.} b) d8-. cis16( b) d8-.
 			cis16( b) d8-. cis16(\< b) d8-.
 			d16( cis) e8-. d16( cis) e8-.\!
 			d16( cis) e8-. d16( cis) e8-.
@@ -1110,10 +1110,10 @@ cueVoiceTrombeIMvtIV = \relative c {
 	% bars 451 - 455
 	\transpose f c' {
 		\relative c {
-			\voiceOne b''8.(\f^\markup {Fl.Ob.Viol.} c16 g'4~
+			\oneVoice b''8.(\f-\offset X-offset -3 -\tweak extra-offset #'(0 . 10) _\markup {\override #'(baseline-skip . 1.5) \column {"Fl." "Ob." "Viol."}} c16 g'4~
 			g8) f( d bes
 			e d bes f)
-			c'(_\dimmarkup bes f d
+			\voiceOne c'(_\dimmarkup bes f d
 			g f d bes) \oneVoice
 		}
 	}
@@ -1126,7 +1126,7 @@ cueVoiceTrombeIMvtIV = \relative c {
 	q8 r r4 \oneVoice
 	s2*19
 	% bars 511 - 518
-	\voiceTwo c'2->\f^\markup {Trbne III.}
+	\voiceTwo c'2->-\offset X-offset -1.5 \f-\offset X-offset -2 ^\markup {Trbne III.}
 	c->
 	c4..-> b16
 	d2->
@@ -1144,32 +1144,32 @@ cueVoiceTrombeIIMvtI = \relative c {
 	% bars 96 - 97
 	\transpose f c' {
 		\relative c {
-			\voiceOne d'''2.~^\markup {Viol.}
-			d8 a( bes d c g) \oneVoice
+			\ottava #1 d'''2.~^\markup {Viol.}
+			d8 a( bes d c g) \ottava #0
 		}
 	}
 	s2.*72
 	% bars 170 - 171
 	\transpose f c' {
 		\relative c {
-			\voiceOne bes'''2(^\markup {Viol.} g8 a)
-			bes2( g8 a) \oneVoice
+			\ottava #1 bes'''2(^\markup {Viol.} g8 a)
+			bes2( g8 a) \ottava #0
 		}
 	}
 	s2.*80 s2*3 s2.*121 s2*4 s2.*40
 	% bars 420 - 421
 	\transpose f c' {
 		\relative c {
-			\voiceOne bes'''4.(^\markup {\column {\lower #1.5 "Ob." "Cl."}} g8 f e
-			cis') r r4 r \oneVoice
+			\ottava #1 bes'''4.(-\offset X-offset -3.5 ^\markup {\column {\lower #1.5 "Ob." "Cl."}} g8 f e
+			cis') \ottava #0 r r4 r 
 		}
 	}
 	s2.*15
 	% bars 437 - 438
 	\transpose f c' {
 		\relative c {
-			\voiceOne f''8.\pp^\markup {Fl.} a16 a4-. r
-			f8. a16 a4-. r \oneVoice
+			\ottava #1 f''8.\pp^\markup {Fl.} a16 a4-. r
+			f8. a16 a4-. \ottava #0 r
 		}
 	}
 }
@@ -1190,18 +1190,18 @@ cueVoiceTrombeIIMvtII = \relative c {
 	% bar 85
 	\transpose f c' {
 		\relative c {
-			\voiceOne \clef bass aes'8^\markup {Trb.III} g fis[ r16 fis] b!8 bes~ bes16 aes bes ces \oneVoice \clef treble
+			\voiceOne \clef bass aes8^\markup {Trb.III} g fis[ r16 fis] b!8 bes~ bes16 aes bes ces \oneVoice \clef treble
 		}
 	}
 	s1*8 s2*1
 	% bar 95
-	<>^\markup {Vcl.}
+	<>-\offset X-offset -3 ^\markup {Vcl.}
 	s1*7
 	% bar 102
-	<>^\markup {Trbni}
+	<>-\offset X-offset -2 ^\markup {Trbni}
 	s1*10
 	% bar 112
-	<>^\markup {Cor.I.}
+	<>-\offset X-offset -2 ^\markup {Cor.I.}
 	s1*25
 	% bars 137 - 138
 	f1~^\markup {Cor.III-IV.}
@@ -1231,7 +1231,7 @@ cueVoiceTrombeIIMvtIII = \relative c {
 	% bars 262 - 265
 	\transpose f c' {
 		\relative c {
-			\clef bass \voiceOne d2:16\p^\markup {Timp.}
+			\clef bass \voiceOne d2:32\p^\markup {Timp.}
 			d:_\crescmarkup
 			d:
 			d: \clef treble \oneVoice
@@ -1274,30 +1274,30 @@ cueVoiceTrombeIIMvtIV = \relative c {
 	}
 	s2*86
 	% bar 328
-	<>^\markup {Archi}
+	<>-\offset X-offset -2 ^\markup {Archi}
 	s2*44
 	% bars 372 - 379
 	\transpose f c' {
 		\relative c {
-			\voiceOne cis''16(\p^\markup {Viol.I.} b) d8-. cis16( b) d8-.
+			\oneVoice cis''16(\p^\markup {Viol.I.} b) d8-. cis16( b) d8-.
 			cis16( b) d8-. cis16(\< b) d8-.
 			d16( cis) e8-. d16( cis) e8-.\!
 			d16( cis) e8-. d16( cis) e8-.
 			e16( d) fis8-. e16( d) fis8-.
 			fis16(\< e) g8-. fis16( e) g8-.
 			g16( fis) a8-. a16( g) b8-.
-			b16( a) cis8-. cis16( b) d8-.\! \oneVoice
+			b16( a) cis8-. cis16( b) d8-.\!
 		}
 	}
 	s2*71
 	% bars 451 - 455
 	\transpose f c' {
 		\relative c {
-			\voiceOne b''8.(\f^\markup {Fl.Ob.Viol.} c16 g'4~
+			\oneVoice b''8.(\f-\offset X-offset -3.5 ^\markup { \override #'(baseline-skip . 1.5) \column {"Fl." "Ob." "Viol."}} c16 g'4~
 			g8) f( d bes
 			e d bes f)
 			c'(_\dimmarkup bes f d
-			g f d bes) \oneVoice
+			g f d bes) 
 		}
 	}
 	s2*31
@@ -1309,7 +1309,7 @@ cueVoiceTrombeIIMvtIV = \relative c {
 	q8 r r4 \oneVoice
 	s2*19
 	% bars 511 - 518
-	\voiceTwo c'2->\f^\markup {Trbne III.}
+	\voiceTwo c'2->-\offset X-offset -2 \f^\markup {Trbne III.}
 	c->
 	c4..-> b16
 	d2->

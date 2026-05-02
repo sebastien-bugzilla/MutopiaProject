@@ -250,7 +250,7 @@ musicTrombeIMvtI = \relative c {
 	e-. r gis4-. a-.
 	r b-. b-.
 % Bars 276 to 280
-	b\f r r
+	b-.\f r r
 	R2.*19
 % Bars 281 to 285
 	

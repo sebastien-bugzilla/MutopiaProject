@@ -423,8 +423,8 @@ musicTrombeIIMvtIV = \relative c {
 	gis4 r
 % Bars 601 to 605
 	a2->~
-	a4.\< r8
-	b4. r8
+	a4.->\< r8
+	b4.-> r8
 	bis4.\! r8 \markk
 	\dynEO #'(-2.3 . 2) a2-^\ff
 % Bars 606 to 610

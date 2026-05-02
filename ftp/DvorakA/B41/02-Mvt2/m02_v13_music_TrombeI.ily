@@ -17,7 +17,7 @@ musicTrombeIMvtII = \relative c {
 % Bars 16 to 20
 	
 	\mark \default
-	R1*17
+	\mmrLength #18 R1*17
 % Bars 21 to 25
 	
 % Bars 26 to 30
@@ -27,7 +27,7 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	\mark \default
-	R1*17
+	\mmrLength #18 R1*17
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -45,7 +45,7 @@ musicTrombeIMvtII = \relative c {
 	
 	
 	
-	<< g''2.(^\sole~\pp\< {s4 s s\!}>> g8\> f\!
+	<< g''2.(^\sole~\pp\< {s4 s s}>> g8\> f\!
 	e4) r r2 \mark \default
 % Bars 71 to 75
 	R1*7
@@ -61,15 +61,16 @@ musicTrombeIMvtII = \relative c {
 	\ni \mmrPos #-4 R1 \no
 % Bars 86 to 90
 	R1
-	r2 r4 r8 c'16\f\< c\!
+	r2 r4 r8 c'16-\offset X-offset -2 \f\< c\!
 	g8-> r r4 r2
-	R1*5
-% Bars 91 to 95
+	R1*2
 	
+% Bars 91 to 95
+	\tempoXoffset #-1 R1*3
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1*16
+	\time 4/4 \tempoXoffset #1 R1*16
 % Bars 96 to 100
 	
 % Bars 101 to 105
@@ -77,7 +78,7 @@ musicTrombeIMvtII = \relative c {
 % Bars 106 to 110
 	
 % Bars 111 to 115
-	R1\fermata
+	\once \ni R1\fermata
 	R1*2
 	\mark \default
 	R1*7
@@ -88,17 +89,17 @@ musicTrombeIMvtII = \relative c {
 	
 	\mark \default
 % Bars 121 to 125
-	R1*18
+	\mmrLength #28 R1*16
 % Bars 126 to 130
 	
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
-	\ni \mmrPos #-4 R1
-	\mmrPos #-4 R \no
-	<< f1\pp\<~ {s4 s\! s\> s\!}>>
-	f4 r r2
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no
+	<< \hairpinShorten #'(-0.5 . -0.5) f1\pp\<~ {s4 s \hairpinShorten #'(0.5 . -1) s\> s\!}>>
+	\tempoXoffset #9 f4 r r2
 % Bars 141 and 142
 	R1
 	f1\pp\fermata \fine

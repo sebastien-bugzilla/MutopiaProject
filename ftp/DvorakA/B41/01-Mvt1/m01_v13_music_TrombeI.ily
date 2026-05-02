@@ -10,7 +10,7 @@ musicTrombeIMvtI = \relative c {
 	\transposition f
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*12
+		\mmrnDown R2.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -32,7 +32,7 @@ musicTrombeIMvtI = \relative c {
 		e,8\fz r r4 r
 		R2. \mark \default
 % Bars 26 to 30
-		a2->\ff~ a8 r
+		\tempoXoffset #0.5 a2->\ff~ a8 r
 		d2\fz~ d8 r
 		d2\fz~ d8 r
 		a2\fz~ a8 r
@@ -41,21 +41,23 @@ musicTrombeIMvtI = \relative c {
 		a2\fz~ a8 r
 		a2\fz~ a8 r
 		e8-. r r4 dis8-.\brack\fz r
-		e-. r r4 dis8-.\fz r
+		e-. r r4 dis8-.-\tweak extra-offset #'(0 . -9.2) ^\fz r
 		e-. r gis4-. a-.
 % Bars 36 to 40
 		r b-. b-.
-		e,8-. r r4 dis8-.\fz r
-		e-. r r4 dis8-.\fz r
+		e,8-. r r4 dis8-.-\tweak extra-offset #'(0 . -9.2) ^\fz r
+		e-. r r4 dis8-.-\tweak extra-offset #'(0 . -9.2) ^\fz r
 		e-. r gis4-.\> a-.\!
 		r b-._\brackM\dimmarkup b-.
 % Bars 41 to 45
 		e,8-. r r4 r
-		R2.*46
+		R2.*9
 % Bars 46 to 50
-	
+		
 % Bars 51 to 55
-	
+		R2.*2
+		
+		\mmrLength #14 R2.*35
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -121,12 +123,12 @@ musicTrombeIMvtI = \relative c {
 	cis2\fz r4
 % Bars 141 to 145
 	cis2->\fz r4
-	cis4\f r r
+	\startMeasureCount cis4\f r r
 	cis r r
 	cis r r
 	cis r r
 % Bars 146 to 150
-	cis r r
+	cis r r \stopMeasureCount
 	gis r r
 	fis r r
 	fis r r
@@ -146,7 +148,7 @@ musicTrombeIMvtI = \relative c {
 	
 	\ni \mmrPos #-4 R2.
 % Bars 171 to 175
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-4 R \no \markEsw #'(-0.5 . 0) \mark \default
 	a8-.\ff r r4 g8-.\fz r
 	a-. r r4 g8-.\fz r
 	a-. r d2\fz
@@ -193,7 +195,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 216 to 220
 	
 	
-	a2\ff~ a8 a-.
+	a2-\tweak extra-offset #'(0 . -8.2) ^\ff~ a8 a-.
 	a8. a16 a4-. r
 	a2~ a8 a-.
 % Bars 221 to 225
@@ -219,7 +221,7 @@ musicTrombeIMvtI = \relative c {
 	r4 r e->_\fzcresc
 % Bars 246 to 250
 	R2.
-	r4 r f->\fz
+	r4 r f->-\tweak extra-offset #'(0 . -8.7) ^\fz
 	R2.
 	r4 r f->\fz
 	R2.
@@ -245,7 +247,7 @@ musicTrombeIMvtI = \relative c {
 	a2\fz~ a8 r
 	a2\fz~ a8 r
 	e-. r r4 dis8-.\fz r
-	e-. r r4 dis8-.\fz r
+	e-. r r4 \dynEO #'(-1 . -0.6) dis8-.-\offset X-offset 1 \fz r
 	e-. r gis4-. a-.
 % Bars 271 to 275
 	r b-. b-.
@@ -254,7 +256,7 @@ musicTrombeIMvtI = \relative c {
 	e-. r gis4-. a-.
 	r b-. b-.
 % Bars 276 to 280
-	b\f r r
+	b-.\f r r
 	R2.*19
 % Bars 281 to 285
 	
@@ -337,7 +339,7 @@ musicTrombeIMvtI = \relative c {
 	
 	e2->\p~ e8 cis-.
 	cis8. e16 e4-. r
-	e2\<_\moltocresc~ e8 cis-.
+	e2\<^\moltocresc~ e8 cis-.
 	cis8. e16 e4-.\! r
 % Bars 371 to 375
 	e2->\< e4->
@@ -385,13 +387,13 @@ musicTrombeIMvtI = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
+	\ni \mmrPos #-6 R2.
 % Bars 421 to 425
 	\mmrPos #-4 R \no
 	r4 f\f r
-	R2.*2
+	\mmrLength #16 \tempoXoffset #-1 R2.*2
 	\markk
-	R2.*12
+	\mmrLength #25 \tempoXoffset #-1.5 R2.*12
 % Bars 426 to 430
 	
 % Bars 431 to 435

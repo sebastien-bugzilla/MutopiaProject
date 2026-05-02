@@ -30,7 +30,7 @@ musicTrombeIIMvtIII = \relative c {
 	e\p r r r2 r4
 	R1.*4
 % Bars 21 to 25
-	r2 r4 << e2.\p\< {s8 s s  s s s\!}>>
+	r2 r4 << \hairpinShorten #'(-0.3 . -0.3) e2.\p\< {s8 s s  s s s}>>
 	e4-.\f r r r2 r4
 	R1.*29
 % Bars 26 to 30
@@ -60,14 +60,14 @@ musicTrombeIIMvtIII = \relative c {
 	c4-.\f r r r2 r4
 	R1.
 	ees4\f-. r r r2 r4
-	R1.*11
+	R1.*9
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
 	
 	
-	
+	\mmrnDown R1.*2
 	\section
 % Bars 76 to 80
 	cis4\f r r cis-. r r
@@ -129,8 +129,8 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	
-	R1.\fermata \section
-	\time 2/4 R2*12
+	\once \ni R1.\fermata \section \newSpacingSection
+	\sectionLabel "TRIO" \time 2/4 R2*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -223,25 +223,27 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 226 to 230
 	g-^ r
 	a8-. r r4
-	R2*34
+	R2*14
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
+	\mmrLength #33 \mmrnDown R2*15
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
+	\mmrLength #15 \mmrnDown R2*5
 % Bars 261 to 265
 	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \section
+	\mmrPos #-4 R \no \section \newSpacingSection
 % Bars 266 to 270
 	\time 6/4 e4\ff r r r2 r4
 	R1.*2
@@ -264,7 +266,7 @@ musicTrombeIIMvtIII = \relative c {
 	e\p r r r2 r4
 	R1.*4
 % Bars 286 to 290
-	r2 r4 << e2.\p\< {s8 s s s s s\!}>>
+	r2 r4 << e2.\p\< {s8 s s s s s}>>
 	e4-.\f r r r2 r4
 	R1.*29
 % Bars 291 to 295
@@ -294,17 +296,17 @@ musicTrombeIIMvtIII = \relative c {
 	c4-.\f r r r2 r4
 	R1.
 	ees4-.\f r r r2 r4
-	R1.*11
+	R1.*9
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
 	
 	
-	
-	\section
+	\mmrnDown R1.*2
+	\section \newSpacingSection
 % Bars 341 to 345
-	\time 2/4 e4._\fffz-> r16 e-.
+	\sectionLabel "CODA" \time 2/4 e4._\fffz-> r16 e-.
 	e4.->\fz r16 e-.
 	e4-> e->
 	e-> e->
@@ -319,21 +321,29 @@ musicTrombeIIMvtIII = \relative c {
 	fis4-> cis->
 	cis-> d->
 	cis-> r
-	R2*22
+	R2*11
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
+	
+	
+	
+	\mmrLength #14 \mmrnDown R2*10
 % Bars 366 to 370
 	
 % Bars 371 to 375
 	
+	
+	
+	
+	\mmrLength #14 \mmrnDown R2
 % Bars 376 to 380
 	\ni \mmrPos #4 R2
 	\mmrPos #4 R \no
 	a'4._\pcresc e8
 	e8.\< a16 a8\! r
-	a4.->\mf\< e8\!
+	\hairpinShorten #'(-0.5 . -0.5) a4.->\mf\< e8\!
 % Bars 381 to 385
 	e8.\< a16 a8\! r
 	e8.\< a16 a8\! r
@@ -343,5 +353,5 @@ musicTrombeIIMvtIII = \relative c {
 % Bars 386 to 388
 	
 	r4 \tuplet 3/2 4 {r8 r e-.\ff}
-	a-. r r4\fermata \fine
+	a-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

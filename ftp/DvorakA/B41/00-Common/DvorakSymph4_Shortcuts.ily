@@ -497,14 +497,14 @@ markXoffset = #(define-music-function
 )
 
 InCueContext = {
-	\override Beam.beam-thickness = #0.30 % 0.30
-	\override StemTremolo.beam-thickness = #0.35 % 0.30
-	\override Beam.length-fraction = #0.67 % 0.8
-	\override Stem.length-fraction = #0.8 % 0.8
+	\override Beam.beam-thickness = #0.30 % 0.30 (Ref 0.35)
+	\override StemTremolo.beam-thickness = #0.35 % 0.35 (Ref 0.35)
+	\override Beam.length-fraction = #0.67 % 0.67 (Ref 0.63)
+	\override Stem.length-fraction = #0.8 % 0.8 (Ref 0.63)
 	\override Hairpin.height = 0.4
 %	\override Stem.length = #7
 %	\override Beam.length = #7
-	\set fontSize = #-3 %-3
+	\set fontSize = #-3 %-4
 %	\override NoteHead.color = #darkgreen
 %	\override Stem.color = #darkgreen
 %	\override Beam.color = #darkgreen
