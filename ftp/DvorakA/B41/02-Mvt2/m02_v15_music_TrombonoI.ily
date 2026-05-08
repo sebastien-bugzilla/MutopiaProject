@@ -13,16 +13,16 @@ musicTrombonoIMvtII = \relative c {
 	des4\< c2) \tuplet 3/2 4 {bes8(\! c des\>}
 	c4) ees2->\! bes8.( c16
 	a!4) c2\< c4
-	bes(\! b c4.\> ees8)\!
+	bes!(\! b c4.\> ees8)\!
 % Bars 6 to 10
 	d4\> d(\! g,2)\pp
 	c2 b4.\> b8\!
 	aes2 g4.\< g8
-	g4-> g->\! bes(\> \tuplet 3/2 4 {a8 bes c)}
+	g4-> g->\! bes(\> \tuplet 3/2 4 {a!8 bes c)}
 	bes2.\dimD r4
 % Bars 11 to 15
 	g2\pp g4 r8 g\<
-	d'4(\! c2)\< \tuplet 3/2 4 {b8( c d)}
+	d'4(\! c2)\< \once \tupletUp \tuplet 3/2 4 {b8( c d)}
 	c4\! c2->\mf\> d4
 	c\! bes4.\pp bes8 aes4
 	g\< g2-> g8-> g->\!
@@ -70,20 +70,20 @@ musicTrombonoIMvtII = \relative c {
 	\ni \mmrPos #4 R1
 	\mmrPos #4 R \no
 	R1*2 
-	
-	c2_\brack\mf^\fzmarkup ees4-> des->
+	\clef alto 
+	c2_\brack\mf^\fzmarkup ees!4-> des->
 % Bars 86 to 90
 	des( c8) r r4 r8. bes16
 	g'!8-> f->~ f16 e-.\< f-. fis-. g8-.-^ f-^ e-^ d!16-^ des-^\!
 	c8-^\ff b-^ bes-^ r r2
 	c8-^\ff b-^ bes-^ r r2
-	R1*4
+	R1
 % Bars 91 to 95
-	
+	\tempoXoffset #-2 \mmrnDown R1*3
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1*7
+	\time 4/4 \tempoXoffset #1 R1*7
 % Bars 96 to 100
 	
 % Bars 101 to 105
@@ -95,7 +95,7 @@ musicTrombonoIMvtII = \relative c {
 % Bars 106 to 110
 	
 % Bars 111 to 115
-	R1\fermata
+	\once \ni R1\fermata
 	R1*2
 	\mark \default
 	R1*7
@@ -115,8 +115,8 @@ musicTrombonoIMvtII = \relative c {
 	
 	\ni \mmrPos #4 R1
 	\mmrPos #4 R \no
-	<< bes1\pp\<~ {s8 s s s\! s\> s s s\!}>>
-	bes4 r r2
+	<< \hairpinShorten #'(-0.5 . -1.6) bes1-\offset X-offset -1.5 \pp\<~ {s8 s s s \hairpinShorten #'(1.6 . 0) s\> s s s}>>
+	\tempoXoffset #4.5 bes4\! r r2
 % Bars 141 and 142
 	R1
 	d1\pp\fermata \fine

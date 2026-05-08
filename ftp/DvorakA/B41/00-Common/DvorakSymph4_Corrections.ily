@@ -175,4 +175,16 @@ correctionTromboni = \markup {
 	
 	% bar 98, mvt I, trombone I
 	"Bar 98, Mvt I for trombone I, a missing alto clef is added."
+	
+	% Mvt I, bar 347, trombone I
+	"In Mvt I, bar 347, for trombone I, a fortissimo is replaced by a forte."
+	
+	% Mvt II, bar 103, trombone I
+	"In MvtII, bar 103, for trombone I, a different sluring is proposed in conductor and part score. The conductor version is kept because it correspond to the articulation."
+	
+	% Mvt III, bar 4, trombone III
+	"In Mvt III, bar 4, for trombone III, a fortissimo is replaced by a forte."
+	
+	% Mvt IV, bar 129 - 131, trombone III
+	"In Mvt III, bar 129-131, for trombone III, a fz is added.
 }

@@ -21,7 +21,7 @@ musicTrombonoIIMvtIII = \relative c {
 	f4\p r r8. e16(\< f4)\! r r
 	r2 r8. a16(\< bes4)\! r r
 % Bars 11 to 15
-	r2 r8. c16\mf\<( des4)\! r r
+	r2 r8. \hairpinShorten #'(-0.5 . 0) c16-\offset X-offset -1 \mf\<( des4)\! r r
 	R1.*2
 	
 	r2 r4 a-.\mf\< r r
@@ -30,7 +30,7 @@ musicTrombonoIIMvtIII = \relative c {
 	a\p r r r2 r4
 	R1.*4
 % Bars 21 to 25
-	r2 r4 << e2.\p\< {s8 s s  s s s\!}>>
+	r2 r4 << e2.\p\< {s8 s s  s s s}>>
 	f4-.\f r r r2 r4
 	R1.*29
 % Bars 26 to 30
@@ -71,7 +71,7 @@ musicTrombonoIIMvtIII = \relative c {
 	e_\crescmarkup
 	e~
 	e
-	e~\<
+	\tempoXoffset #4 e~\<
 	<< e_\molto {s4 s s s s\!}>> \section
 % Bars 76 to 80
 	\key d \major a4\f r r a-. r r
@@ -133,8 +133,8 @@ musicTrombonoIIMvtIII = \relative c {
 	
 	
 	
-	R1.\fermata \section
-	\time 2/4 \key c \major R2*16
+	\once \ni R1.\fermata \section \newSpacingSection
+	\sectionLabel "TRIO" \time 2/4 \key c \major \mmrLength #25 R2*16
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -168,13 +168,13 @@ musicTrombonoIIMvtIII = \relative c {
 	\mmrPos #4 R \no
 	R2*3
 % Bars 191 to 195
-	r4 g->\f
+	\startMeasureCount r4 g->\f
 	r g->
 	r g->
 	r g->
 	r g->\f
 % Bars 196 to 200
-	r g->
+	r g-> \stopMeasureCount
 	r a->
 	gis-> a->
 	r b->
@@ -198,8 +198,8 @@ musicTrombonoIIMvtIII = \relative c {
 	g-> g->
 	a4.-^ r8
 % Bars 216 to 220
-	f4.-^ r8
-	f4-.-^ r
+	f4.^^ r8
+	f4-.^^ r
 	R2 \mark \default
 	f4.-^ r8
 	f4.-^ r8
@@ -212,25 +212,27 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 226 to 230
 	f-^ r
 	d8-. r r4
-	R2*34
+	R2*14
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
+	\mmrLength #35 R2*15
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
+	\mmrLength #16 R2*5
 % Bars 261 to 265
 	
 	\ni \mmrPos #4 R2
 	\mmrPos #4 R
 	\mmrPos #4 R
-	\mmrPos #4 R \no \section
+	\mmrPos #4 R \no \section \newSpacingSection
 % Bars 266 to 270
 	\time 6/4 \key d \minor e4\ff r r r2 r4
 	R1.*2
@@ -244,16 +246,16 @@ musicTrombonoIIMvtIII = \relative c {
 	f\p r r8. e16(\< f4)\! r r
 	r2 r8. a16(\< bes4)\! r r
 % Bars 276 to 280
-	r2 r8. c16(\mf\< des4)\! r r
+	r2 r8. \hairpinShorten #'(-0.5 . 0) c16(-\offset X-offset -1 \mf\< des4)\! r r
 	R1.*2
 	
 	r2 r4 a-.\mf\< r r
 	a-. r r a-.\! r r
 % Bars 281 to 285
-	a\p r r r2 r4
+	a-\offset X-offset 0.5 \p r r r2 r4
 	R1.*4
 % Bars 286 to 290
-	r2 r4 << e2.\p\< {s8 s s s s s\!}>>
+	r2 r4 << e2.\p\< {s8 s s s s s}>>
 	f4-.\f r r r2 r4
 	R1.*29
 % Bars 291 to 295
@@ -294,14 +296,14 @@ musicTrombonoIIMvtIII = \relative c {
 	e_\crescmarkup
 	e~
 	e
-	e~\<
-	<< e_\molto {s4 s s s s s\!}>> \section
+	\tempoXoffset #3 e~\<
+	<< e_\molto {s4 s s s s s\!}>> \section \newSpacingSection
 % Bars 341 to 345
-	\time 2/4 \key d \major a4._\fffz-> r16 a-.
+	\sectionLabel "CODA" \time 2/4 \key d \major a4._\fffz-> r16 a-.
 	a4.->\fz r16 a-.
 	a4-> a->
 	g-> fis->
-	a4.->\fz r16 a-.
+	a4.->-\offset X-offset 0.5 \fz r16 a-.
 % Bars 346 to 350
 	a4.->\fz r16 a-.
 	a4-> a->
@@ -312,15 +314,23 @@ musicTrombonoIIMvtIII = \relative c {
 	fis4-> fis->
 	fis-> d->
 	fis-> r
-	R2*24
+	R2*11
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
+	
+	
+	
+	\mmrLength #15 \mmrnDown R2*10
 % Bars 366 to 370
 	
 % Bars 371 to 375
 	
+	
+	
+	
+	\mmrLength #15 \mmrnDown R2*3
 % Bars 376 to 380
 	
 	
@@ -336,5 +346,5 @@ musicTrombonoIIMvtIII = \relative c {
 % Bars 386 to 388
 	
 	r4 \tuplet 3/2 4 {r8 r a-.\ff}
-	a-. r r4\fermata \fine
+	a-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

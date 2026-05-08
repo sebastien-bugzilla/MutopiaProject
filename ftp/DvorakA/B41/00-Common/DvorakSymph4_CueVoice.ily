@@ -1328,12 +1328,12 @@ cueVoiceTrombeIIMvtIV = \relative c {
 cueVoiceTrombonoIMvtI = \relative c {
 	s2.*95
 	% bars 96 - 97
-	\voiceOne \clef treble d'''2.~^\markup {Viol.}
-	d8 a( bes! d c g) \clef alto \oneVoice
+	\clef treble d'''2.~^\markup {Viol.}
+	d8 a( bes! d c g) \clef alto
 	s2.*72
 	% bars 170 - 171
-	\voiceOne \clef bass d,8(^\markup {Legni} f ees d bes c
-	d f ees d bes c) \clef alto \oneVoice
+	\clef bass d,8(^\markup {Legni} f ees d bes c
+	d f ees d bes c) \clef alto
 	s2.*80 s2*3 s2.*50
 	% bars 305 - 306
 	\voiceOne a'8.^\markup {Trbe} c16 c2
@@ -1354,16 +1354,16 @@ cueVoiceTrombonoIMvtII = \relative c {
 	s1*34
 	% bar 35
 	<>^\markup {Vcl.}
-	s1*16
-	% bar 51
+	s1*33
+	% bar 68
 	<>^\markup {Timp.}
-	s1*30
+	s1*13
 	% bars 81 - 82
 	\voiceTwo \clef treble ges''8-^\mf^\markup {Cor.I.} f-^ ees[ r16 ees] aes8 g~ g16 f g aes
-	g4. r8 r2 \clef alto \oneVoice
+	g4. r8 r2 \oneVoice
 	s1*11 s2*1
 	% bar 95
-	<>^\markup {Vcl.}
+	<>-\offset X-offset -3 ^\markup {Vcl.}
 	s1*42
 	% bars 137 - 138
 	<bes,, bes'>1~^\markup {Cor.III-IV.}
@@ -1378,14 +1378,14 @@ cueVoiceTrombonoIMvtIII = \relative c {
 	gis2)->~ gis8 a b2->~ b8 gis \clef alto \oneVoice
 	s1.*84
 	% bar 140
-	<>^\markup {Trbne.II.}
+	<>-\offset X-offset -3 ^\markup {Trbne.II.}
 	s2*43
 	% bars 183 - 187
 	\voiceTwo \clef bass g,4\mf^\markup {Timp.} r8 \tuplet 3/2 8 {g16 g g}
 	g4 r8 \tuplet 3/2 8 {g16 g g}
 	g4 r8 \tuplet 3/2 8 {g16 g g}
 	g2:32
-	g4: g8 r \clef alto \oneVoice
+	g4: g8 r \oneVoice
 	s2*74
 	% bars 262 - 265
 	\voiceTwo \clef bass d'2:32^\markup {Timp.}
@@ -1410,22 +1410,22 @@ cueVoiceTrombonoIMvtIII = \relative c {
 cueVoiceTrombonoIMvtIV = \relative c {
 	s2*29
 	% bar 30
-	<>^\markup {Fag.Vla}
+	<>-\offset X-offset -3 ^\markup {\column {\lower #1.5 "Fag." "Vla"}}
 	s2*8
 	% bar 38
-	<>^\markup {\column {\lower #1.5 "Fl.I." "Ob.I."}}
+	<>-\offset X-offset -3 ^\markup {\column {\lower #1.5 "Fl.I." "Ob.I."}}
 	s2*62
 	% bar 100
 	<>^\markup {Timp.}
 	s2*58
 	% bar 158
-	<>^\markup {Archi}
+	<>-\offset X-offset -5 ^\markup {Archi}
 	s2*170
 	% bar 328
-	<>^\markup {Archi}
+	<>-\offset X-offset -3 _\markup {Archi}
 	s2*16
 	% bar 344
-	<>^\markup {Cor.I-IV.}
+	<>-\offset X-offset -3.5 _\markup {Cor.I-IV.}
 	s2*28
 	% bars 372 - 379
 	\clef bass \voiceTwo a4^\markup {Vcl.Cb.} a
@@ -1461,16 +1461,16 @@ cueVoiceTrombonoIMvtIV = \relative c {
 cueVoiceTrombonoIIMvtI = \relative c {
 	s2.*95
 	% bars 96 - 97
-	\voiceOne \clef treble d'''2.~^\markup {Viol.}
-	d8 a( bes! d c g) \clef tenor \oneVoice
+	\clef treble d'''2.~-\offset X-offset -4 ^\markup {Viol.}
+	d8 a( bes! d c g) \clef tenor
 	s2.*72
 	% bars 170 - 171
-	\voiceOne \clef bass d,8(^\markup {Legni} f ees d bes! c
-	d f ees d bes! c) \clef tenor \oneVoice
+	\clef bass d,8(-\offset X-offset -5 ^\markup {Legni} f ees d bes! c
+	d f ees d bes! c) \clef tenor
 	s2.*80 s2*3 s2.*50
 	% bars 305 - 306
-	\voiceOne a'8.^\markup {Trbe} c16 c2
-	a8. c16 c2 \oneVoice
+	a'8.^\markup {Trbe} c16 c2
+	a8. c16 c2
 	s2.*69 s2*4 s2.*23
 	% bars 403 - 404
 	\voiceOne f,2^\markup {Cor.I.} c8. f16
@@ -1505,7 +1505,7 @@ cueVoiceTrombonoIIMvtIII = \relative c {
 	gis2)->~ gis8 a b2->~ b8 gis \clef tenor \oneVoice
 	s1.*84
 	% bar 140
-	<>^\markup {Trb.III.}
+	<>-\offset X-offset -3 ^\markup {Trb.III.}
 	s2*43
 	% bars 183 - 187
 	\voiceTwo \clef bass g,4\mf^\markup {Timp.} r8 \tuplet 3/2 8 {g16 g g}
@@ -1537,22 +1537,22 @@ cueVoiceTrombonoIIMvtIII = \relative c {
 cueVoiceTrombonoIIMvtIV = \relative c {
 	s2*29
 	% bar 30
-	<>^\markup {Fag.Vla}
+	<>-\offset X-offset -3 ^\markup {\column {\lower #1.5 "Fag." "Vla"}}
 	s2*8
 	% bar 38
-	<>^\markup {\column {\lower #1.5 "Fl.I." "Ob.I."}}
+	<>-\offset X-offset -2.5 ^\markup {\column {\lower #1.5 "Fl.I." "Ob.I."}}
 	s2*62
 	% bar 100
 	<>^\markup {Timp.}
 	s2*58
 	% bar 158
-	<>^\markup {Archi}
+	<>-\offset X-offset -5 ^\markup {Archi}
 	s2*170
 	% bar 328
 	<>^\markup {Archi}
 	s2*16
 	% bar 344
-	<>^\markup {Cor.I-IV.}
+	<>-\offset X-offset -3.5 ^\markup {Cor.I-IV.}
 	s2*28
 	% bars 372 - 379
 	\clef bass \voiceTwo a4^\markup {Vcl.Cb.} a
@@ -1571,7 +1571,7 @@ cueVoiceTrombonoIIMvtIV = \relative c {
 			q4 q
 			q2~
 			q4 q~
-			q8 r r4 \voiceOne \clef tenor
+			q8 r r4 \voiceOne
 		}
 	}
 	s2*19
@@ -1585,20 +1585,20 @@ cueVoiceTrombonoIIMvtIV = \relative c {
 cueVoiceTrombonoIIIMvtI = \relative c {
 	s2.*95
 	% bars 96 - 97
-	\voiceOne \clef treble d'''2.~^\markup {Viol.}
-	d8 a( bes! d c g) \clef bass \oneVoice
+	\clef treble d'''2.~-\offset X-offset -3 ^\markup {Viol.}
+	d8 a( bes! d c g) \clef bass
 	s2.*72
 	% bars 170 - 171
-	\voiceOne d,8(^\markup {Legni} f ees d bes! c
-	d f ees d bes! c) \oneVoice
+	d,8(-\offset X-offset -2 ^\markup {Legni} f ees d bes! c
+	d f ees d bes! c)
 	s2.*80 s2*3 s2.*50
 	% bars 305 - 306
 	\voiceOne \clef treble a'8.^\markup {Trbe} c16 c2
 	a8. c16 c2 \clef bass \oneVoice
 	s2.*69 s2*4 s2.*23
 	% bars 403 - 404
-	\voiceOne f,2^\markup {Cor.I.} c8. f16
-	e2( cis4) \oneVoice
+	f,2^\markup {Cor.I.} c8. f16
+	e2( cis4)
 	s2.*16
 	% bar 421
 	\voiceTwo a,4->_\markup {Cb.} r a-> \oneVoice
@@ -1609,15 +1609,15 @@ cueVoiceTrombonoIIIMvtII = \relative c {
 	<>^\markup {Vlc.}
 	s1*34
 	% bars 69 - 70
-	\voiceOne a'4(^\markup {Trb.I.} d c f,
-	a) r r2 \oneVoice
+	a'4(-\offset X-offset -3 ^\markup {Trb.I.} d c f,
+	a) r r2
 	s1*10
 	% bars 81 - 82
 	\clef treble \voiceTwo ges'8-^\mf^\markup {Cor.I.} f-^ ees[ r16 ees] aes8 g~ g16 f g aes
 	g4. r8 r2 \clef bass \voiceOne
 	s1*11 s2*1
 	% bar 95
-	<>^\markup {Vcl.}
+	<>-\offset X-offset -3 ^\markup {Vcl.}
 	s1*42
 	% bar 137 - 138
 	\voiceOne <bes,, bes'>1~^\markup {Cor.III-IV.}
@@ -1651,22 +1651,22 @@ cueVoiceTrombonoIIIMvtIII = \relative c {
 cueVoiceTrombonoIIIMvtIV = \relative c {
 	s2*29
 	% bar 30
-	<>^\markup {Fag.Vla}
+	<>-\offset X-offset -3 ^\markup {\column {\lower #1.5 "Fag." "Vla"}}
 	s2*8
 	% bar 38
-	<>^\markup {\column {\lower #1.5 "Fl.I." "Ob.I."}}
+	<>-\offset X-offset -2.5 ^\markup {\column {\lower #1.5 "Fl.I." "Ob.I."}}
 	s2*62
 	% bar 100
 	<>^\markup {Timp.}
 	s2*58
 	% bar 158
-	<>^\markup {Archi}
+	<>-\offset X-offset -3 ^\markup {Archi}
 	s2*170
 	% bar 328
 	<>^\markup {Archi}
 	s2*16
 	% bar 344
-	<>^\markup {Cor.I-IV.}
+	<>-\offset X-offset #-3 ^\markup {Cor.I-IV.}
 	s2*28
 	% bars 372 - 379
 	\voiceTwo a4^\markup {Vcl.Cb.} a

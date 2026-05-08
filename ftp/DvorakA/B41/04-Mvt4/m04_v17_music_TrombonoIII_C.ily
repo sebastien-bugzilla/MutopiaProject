@@ -352,12 +352,12 @@ musicTrombonoIIIMvtIV = \relative c {
 	c8. b16 c4---^
 % Bars 521 to 525
 	c-> c->
-	c8. b16 c4---^
+	c8.-> b16 c4---^
 	c-> c->
-	c8. b16 c4---^
+	c8.-< b16 c4---^
 	c-> c->
 % Bars 526 to 530
-	c8. b16 c4---^~\>
+	c8.-> b16 c4---^~\>
 	c8\! r r4
 	R2*29
 % Bars 531 to 535
@@ -493,7 +493,7 @@ musicTrombonoIIIMvtIV = \relative c {
 % Bars 656 to 660
 	d-. a-.
 	d-. d-.
-	a-. a-.
+	d-. a-.
 	d8-^ cis-^ d-^ e-^
 	fis8-^ e-^ fis-^ g-^
 % Bars 661 to 665
@@ -522,7 +522,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	d d d d 
 % Bars 681 to 685
 	d d d d 
-	d d d d 
+	d d d d
 	d4-. r
 	R2^\gp
 	a4-> r

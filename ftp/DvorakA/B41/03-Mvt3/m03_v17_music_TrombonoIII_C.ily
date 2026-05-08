@@ -193,7 +193,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	r4 c->\f
 	r c->
 	r e->
-	d c->
+	d-> c->
 	r g->\f
 % Bars 196 to 200
 	r g->

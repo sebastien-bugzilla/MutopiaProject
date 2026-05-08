@@ -573,6 +573,7 @@ tempoEO = #(define-music-function
 	#}
 )
 
+mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 %###############################################################################
 %  Fonctions sur étagère
@@ -657,7 +658,7 @@ tempoEO = #(define-music-function
 %}
 
 
-%mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
+
 
 %omitMMRN = \omit MultiMeasureRestNumber
 

@@ -27,7 +27,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	a-. r r a-. r r
 	a-._\crescmarkup r r a-. r r
 	a-. r r a-. r r
-	a-. r r a-. r r
+	\tempoXoffset #8 a-. r r a-. r r
 % Bars 21 to 25
 	a-. r r << a2.\< {s8 s s  s s s\!}>>
 	d4-.\f r r r2 r4
@@ -70,7 +70,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	a_\crescmarkup
 	a~
 	a
-	a~\<
+	\tempoXoffset #4 a~\<
 	<< a_\molto {s4 s s s s\!}>> \section
 % Bars 76 to 80
 	\key d \major d4\f r r d-. r r
@@ -132,8 +132,8 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 	
-	R1.\fermata \section
-	\time 2/4 \key c \major c,4.\fp r8
+	\once \ni R1.\fermata \section \newSpacingSection
+	\sectionLabel "TRIO" \time 2/4 \key c \major c,4.\fp r8
 % Bars 141 to 145
 	c4.\fp r8
 	c4-> e->
@@ -193,7 +193,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	r4 c->\f
 	r c->
 	r e->
-	d c->
+	d-> c->
 	r g->\f
 % Bars 196 to 200
 	r g->
@@ -234,25 +234,27 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 226 to 230
 	aes-^ r
 	g8-. r r4
-	R2*34
+	R2*14
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
+	\mmrLength #35 R2*15
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
+	\mmrLength #15 \tempoXoffset #-1.5 R2*5
 % Bars 261 to 265
 	
 	\ni \mmrPos #4 R2
 	\mmrPos #4 R
 	\mmrPos #4 R
-	\mmrPos #4 R \no \section
+	\mmrPos #4 R \no \section \newSpacingSection
 % Bars 266 to 270
 	\time 6/4 \key d \minor a4\ff r r r2 r4
 	R1.*2
@@ -272,13 +274,13 @@ musicTrombonoIIIMvtIII = \relative c {
 	
 	
 % Bars 281 to 285
-	a4-.\p r r a-. r r
+	\startMeasureCount a4-.\p r r a-. r r
 	a-. r r a-. r r
 	a-._\crescmarkup r r a-. r r
 	a-. r r a-. r r
-	a-. r r a-. r r
+	\tempoXoffset #7.5 a-. r r a-. r r \stopMeasureCount
 % Bars 286 to 290
-	a-. r r << a2.\p\< {s8 s s s s s\!}>>
+	a-. r r << a2.\p\< {s8 s s s s s}>>
 	d4-.\f r r r2 r4
 	R1.*29
 % Bars 291 to 295
@@ -319,10 +321,10 @@ musicTrombonoIIIMvtIII = \relative c {
 	a_\crescmarkup
 	a~
 	a
-	a~\<
-	<< a_\molto {s4 s s s s s\!}>> \section
+	\tempoEO #'(3.5 . 0) \hairpinShorten #'(0 . -3) a~\<
+	a_\molto\! \section \newSpacingSection
 % Bars 341 to 345
-	\time 2/4 \key d \major d4._\fffz-> r16 a-.
+	\sectionLabel "CODA" \time 2/4 \key d \major d4._\fffz-> r16 a-.
 	d4.->\fz r16 a-.
 	d4-> d->
 	d-> d->
@@ -337,15 +339,23 @@ musicTrombonoIIIMvtIII = \relative c {
 	b4-> b->
 	a-> g->
 	d'-> r
-	R2*26
+	R2*11
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
+	
+	
+	
+	\mmrLength #20 R2*10
 % Bars 366 to 370
 	
 % Bars 371 to 375
 	
+	
+	
+	
+	\mmrLength #15 R2*5
 % Bars 376 to 380
 	
 	
@@ -361,5 +371,5 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 386 to 388
 	
 	r4 \tuplet 3/2 4 {r8 r a-.\ff}
-	d-. r r4\fermata \fine
+	d-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

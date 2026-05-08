@@ -23,11 +23,11 @@ musicTrombonoIIMvtII = \relative c {
 % Bars 11 to 15
 	f!2\pp f4 r8 f\<
 	g4\! g2->\< g4->
-	g4\! g2->\mf\> g4
+	g4->\! g2->\mf\> g4
 	g\! g4.\pp g8 f4
 	ees\< ees2-> f8-> ees->\!
 % Bars 16 to 20
-	g2_\dimmarkup << f\> {s8 s s s\!}>>
+	g2-\offset X-offset -1 _\dimmarkup << f\> {s8 s s s\!}>>
 	f2(\p\> << ees) {s4 s\!}>> \mark \default
 	d4\pp r r2
 	R1*16
@@ -77,13 +77,13 @@ musicTrombonoIIMvtII = \relative c {
 	R1
 	c8-^\ff b-^ bes-^ r r2
 	c8-^\ff b-^ bes-^ r r2
-	R1*4
+	R1
 % Bars 91 to 95
-	
+	\tempoXoffset #-2 R1*3
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1*7
+	\time 4/4 \tempoXoffset #1 R1*7
 % Bars 96 to 100
 	
 % Bars 101 to 105
@@ -95,7 +95,7 @@ musicTrombonoIIMvtII = \relative c {
 % Bars 106 to 110
 	
 % Bars 111 to 115
-	R1\fermata
+	\once \ni R1\fermata
 	R1*2
 	\mark \default
 	R1*7
@@ -115,8 +115,8 @@ musicTrombonoIIMvtII = \relative c {
 	
 	\ni \mmrPos #4 R1
 	\mmrPos #4 R \no
-	<< f1\pp\<~ {s8 s s s\! s\> s s s\!}>>
-	f4 r r2
+	<< \hairpinShorten #'(-0.5 . -0.5) f1-\offset X-offset -1 \pp\<~ {s8 s s s \hairpinShorten #'(0.5 . 0) s\> s s s\!}>>
+	\tempoXoffset #6 f4 r r2
 % Bars 141 and 142
 	R1
 	f1\pp\fermata \fine

@@ -10,7 +10,7 @@ musicTrombonoIIMvtI = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*12
+		\mmrnDown R2.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -32,7 +32,7 @@ musicTrombonoIIMvtI = \relative c {
 		a,8\fz r r4 r
 		R2. \mark \default
 % Bars 26 to 30
-		a2->\ff~ a8 r
+		\tempoXoffset #0.5 a2->\ff~ a8 r
 		bes2\fz~ bes8 r
 		bes2\fz~ bes8 r
 		a2\fz~ a8 r
@@ -51,11 +51,13 @@ musicTrombonoIIMvtI = \relative c {
 		r b_\brackM\dimmarkup-. b-.
 % Bars 41 to 45
 		a8-. r r4 r
-		R2.*46
+		R2.*9
 % Bars 46 to 50
 	
 % Bars 51 to 55
-	
+		R2.*2
+		
+		\mmrLength #14 R2.*35
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -187,7 +189,7 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 216 to 220
 	
 	
-	bes2\ff-> a4->
+	bes2-\tweak extra-offset #'(0 . -9) ^\ff-> a4->
 	bes-> f-> a->
 	bes2->-- a4->
 % Bars 221 to 225
@@ -369,7 +371,7 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 421 to 425
 	\ni \mmrPos #4 R2. \no
 	r4 g\f r
-	R2.*2
+	\mmrLength #17 R2.*2
 	\markk
 	d2(\pp cis4
 % Bars 426 to 430

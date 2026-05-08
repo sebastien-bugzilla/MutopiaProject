@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-%\include "./00-Common/DvorakSymph4_Format_Part07_Tromboni.ily"
+\include "./00-Common/DvorakSymph4_Format_Part07_Tromboni.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v15_music_TrombonoI.ily"
 \include "./01-Mvt1/m01_v16_music_TrombonoII.ily"
@@ -47,17 +47,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41)"
+			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41) — Tromboni"
 		}
 		instrument = \markup {
-			"Tromboni"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIMvtI
-%			}
+			\new Voice {
+				\formatTrombonoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoI) \tempiPartMvtI
 			}
@@ -79,9 +79,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIMvtII
-%			}
+			\new Voice {
+				\formatTrombonoIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoI) \tempiPartMvtII
 			}
@@ -95,7 +95,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.3 \bold 2.
 			}
 		}
 		\layout {
@@ -103,9 +103,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIMvtIII
-%			}
+			\new Voice {
+				\formatTrombonoIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoI) \tempiPartMvtIII
 			}
@@ -119,7 +119,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.9 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
@@ -127,9 +127,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIMvtIV
-%			}
+			\new Voice {
+				\formatTrombonoIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoI) \tempiPartMvtIV
 			}
@@ -143,7 +143,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.1 \bold "4. FINALE"
 			}
 		}
 		\layout {
@@ -151,9 +151,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIMvtI
-%			}
+			\new Voice {
+				\formatTrombonoIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtI
 			}
@@ -175,9 +175,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIMvtII
-%			}
+			\new Voice {
+				\formatTrombonoIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtII
 			}
@@ -191,7 +191,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.6 \bold 2.
 			}
 		}
 		\layout {
@@ -199,9 +199,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIMvtIII
-%			}
+			\new Voice {
+				\formatTrombonoIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtIII
 			}
@@ -215,7 +215,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.8 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
@@ -223,9 +223,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIMvtIV
-%			}
+			\new Voice {
+				\formatTrombonoIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoII) \tempiPartMvtIV
 			}
@@ -239,7 +239,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
@@ -247,9 +247,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIIMvtI
-%			}
+			\new Voice {
+				\formatTrombonoIIIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoIII) \tempiPartMvtI
 			}
@@ -271,9 +271,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIIMvtII
-%			}
+			\new Voice {
+				\formatTrombonoIIIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoIII) \tempiPartMvtII
 			}
@@ -287,7 +287,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.6 \bold 2.
 			}
 		}
 		\layout {
@@ -295,9 +295,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIIMvtIII
-%			}
+			\new Voice {
+				\formatTrombonoIIIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoIII) \tempiPartMvtIII
 			}
@@ -311,7 +311,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.9 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
@@ -319,9 +319,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombonoIIIMvtIV
-%			}
+			\new Voice {
+				\formatTrombonoIIIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(trombonoIII) \tempiPartMvtIV
 			}
@@ -335,7 +335,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
