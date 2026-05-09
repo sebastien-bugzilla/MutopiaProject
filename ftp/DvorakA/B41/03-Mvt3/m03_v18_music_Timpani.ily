@@ -22,7 +22,7 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 11 to 15
 	
-	a1.:32\p
+	\startMeasureCount a1.:32\p
 	a:_\crescmarkup
 	a:
 	<< a: {s4 s s\f s s s}>>
@@ -31,9 +31,9 @@ musicTimpaniMvtIII = \relative c {
 	a:
 	a:_\crescmarkup
 	a:
-	a:
+	\tempoXoffset #3.5 a:
 % Bars 21 to 25
-	a:
+	a: \stopMeasureCount
 	d4\f r r r2 r4
 	R1.*6
 % Bars 26 to 30
@@ -60,7 +60,7 @@ musicTimpaniMvtIII = \relative c {
 	d-.\fz r r r2 r4
 	R1.*3
 	
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 % Bars 56 to 60
 	a4-.\f r r r2 r4
 	R1.*2
@@ -78,23 +78,23 @@ musicTimpaniMvtIII = \relative c {
 	d:_\crescmarkup
 	d:
 	d:
-	a:\fp
+	\startMeasureCount a:\fp
 % Bars 71 to 75
 	a:_\crescmarkup
 	a:
 	a:
-	a:
-	a: \section
+	\tempoXoffset #3.5 a:
+	a: \stopMeasureCount \section
 % Bars 76 to 80
 	d4\f r r r2 r4
 	d r r r2 r4
-	r2 r4 a-. r r
+	\startMeasureCount r2 r4 a-. r r
 	r2 r4 a-. r r
 	r2 r4 a-. r r
 % Bars 81 to 85
 	r2 r4 a-. r r
 	r2 r4 a-. r r
-	r2 r4 a-. r r
+	r2 r4 a-. r r \stopMeasureCount
 	r2 r4 d-. r r
 	r2 r4 d-. r r
 % Bars 86 to 90
@@ -126,7 +126,7 @@ musicTimpaniMvtIII = \relative c {
 	r2 r4 d-. r r
 	r2 r4 d-. r r
 	R1. \mark \default
-	R1.*12^\mutaainh
+	\mmrLength #18 R1.*12^\mutaainh
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -149,8 +149,8 @@ musicTimpaniMvtIII = \relative c {
 	\mmrPos #4 R \no
 	R1.
 	b1.:16\pp
-	b:\fermata \section
-	\time 2/4 R2*16^\mutaincg
+	b:\fermata \section \newSpacingSection
+	\sectionLabel "TRIO" \time 2/4 \mmrLength #25 R2*16_\mutaincg
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -207,7 +207,7 @@ musicTimpaniMvtIII = \relative c {
 	c4: c8 r
 % Bars 206 to 210
 	g4: g8 r
-	c4: c8 r
+	\startMeasureCount c4: c8 r
 	c4: c8 r
 	c4: c8 r
 	c4: c8 r
@@ -215,7 +215,7 @@ musicTimpaniMvtIII = \relative c {
 	c4: c8 r
 	c4: c8 r
 	c4: c8 r
-	c4: c8 r
+	c4: c8 r \stopMeasureCount
 	c2:
 % Bars 216 to 220
 	c:
@@ -232,20 +232,21 @@ musicTimpaniMvtIII = \relative c {
 % Bars 226 to 230
 	c-^ r
 	g8 r r4^\mutainda
-	R2*31
+	R2*14
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
+	\mmrLength #33 R2*15
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
-	
+	\mmrLength #16 \tempoXoffset #-2 \mmrnDown R2*2
 	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R
@@ -254,7 +255,7 @@ musicTimpaniMvtIII = \relative c {
 	d'2:32\p
 	d:_\crescmarkup
 	d:
-	d: \section
+	d: \section \newSpacingSection
 % Bars 266 to 270
 	\time 6/4 a4\ff r r r2 r4
 	R1.*2
@@ -269,7 +270,7 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 276 to 280
 	
-	a1.:32\p
+	\startMeasureCount a1.:32\p
 	a:_\crescmarkup
 	a:
 	<< a: {s4 s s\f s s s}>>
@@ -278,9 +279,9 @@ musicTimpaniMvtIII = \relative c {
 	a:
 	a:_\crescmarkup
 	a:
-	a:
+	\tempoXoffset #3.5 a:
 % Bars 286 to 290
-	a:
+	a: \stopMeasureCount
 	d4\f r r r2 r4
 	R1.*6
 % Bars 291 to 295
@@ -312,7 +313,7 @@ musicTimpaniMvtIII = \relative c {
 	a4-.\f r r r2 r4
 	R1.*2
 	
-	a4-.\f r r r2 r4
+	a4-.-\tweak extra-offset #'(0 . -8) ^\f r r r2 r4
 	R1.*6
 % Bars 326 to 330
 	
@@ -321,15 +322,15 @@ musicTimpaniMvtIII = \relative c {
 	d:_\crescmarkup
 	d:
 	d:
-	a:\fp
+	\startMeasureCount a:\fp
 % Bars 336 to 340
 	a:_\crescmarkup
 	a:
 	a:
-	a:
-	a: \section
+	\tempoXoffset #3.5 a:
+	a: \stopMeasureCount \section \newSpacingSection
 % Bars 341 to 345
-	\time 2/4 d4:32->_\fffz d8 r
+	\sectionLabel "CODA" \time 2/4 \markEO #'(0 . 0.5) d4:32->_\fffz d8 r
 	d4:->\fz d8 r
 	d2:
 	d:
@@ -338,8 +339,8 @@ musicTimpaniMvtIII = \relative c {
 	a4:->\fz a8 r
 	a2:
 	a:
-	d4:\fz d8 r
-	d4:\fz d8 r
+	d4:-\tweak extra-offset #'(0.5 . -8.5) ^\fz d8 r
+	d4:-\tweak extra-offset #'(0.5 . -8.5) ^\fz d8 r
 % Bars 351 to 355
 	d2:
 	d:
@@ -352,16 +353,16 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2
+	\ni \mmrPos #-8 R2
 % Bars 366 to 370
-	\mmrPos #-4 R
+	\mmrPos #-8 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 	R2*4
 % Bars 371 to 375
 	
-	
-	d2:32\pp
+	\clef bass
+	\startMeasureCount d2:32\pp
 	d:
 	d:
 % Bars 376 to 380
@@ -372,12 +373,12 @@ musicTimpaniMvtIII = \relative c {
 	d:
 % Bars 381 to 385
 	<< d:\< {s8 s s s\!}>>
-	<< d2:\< {s8 s s s\!}>>
+	<< d2:\< {s8 s s s\!}>> \stopMeasureCount
 	d8\fz r r4
 	R2*3
 	
 % Bars 386 to 388
 	
 	r4 \tuplet 3/2 4 {r8 r a-.\ff}
-	d-. r r4\fermata \fine
+	d-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -21,15 +21,21 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-%\include "./00-Common/DvorakSymph4_Format_Part08_Percussion.ily"
+\include "./00-Common/DvorakSymph4_Format_Part08_Percussion.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v18_music_Timpani.ily"
+\include "./01-Mvt1/m01_v19_music_Triangolo.ily"
+\include "./01-Mvt1/m01_v20_music_Piatti.ily"
 \include "./02-Mvt2/m02_v18_music_Timpani.ily"
+\include "./02-Mvt2/m02_v19_music_Triangolo.ily"
+\include "./02-Mvt2/m02_v20_music_Piatti.ily"
 \include "./03-Mvt3/m03_v18_music_Timpani.ily"
 \include "./03-Mvt3/m03_v19_music_Triangolo.ily"
 \include "./03-Mvt3/m03_v20_music_Piatti.ily"
 \include "./03-Mvt3/m03_v21_music_GranCassa.ily"
 \include "./04-Mvt4/m04_v18_music_Timpani.ily"
+\include "./04-Mvt4/m04_v19_music_Triangolo.ily"
+\include "./04-Mvt4/m04_v20_music_Piatti.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -42,17 +48,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41)"
+			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41) — Percussion"
 		}
 		instrument = \markup {
-			"Percussion"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtI
-%			}
+			\new Voice {
+				\formatTimpaniMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtI
 			}
@@ -74,9 +80,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtII
-%			}
+			\new Voice {
+				\formatTimpaniMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtII
 			}
@@ -90,7 +96,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2 \bold 2.
 			}
 		}
 		\layout {
@@ -98,9 +104,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtIII
-%			}
+			\new Voice {
+				\formatTimpaniMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtIII
 			}
@@ -114,7 +120,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.2 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
@@ -122,9 +128,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtIV
-%			}
+			\new Voice {
+				\formatTimpaniMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(timpani) \tempiPartMvtIV
 			}
@@ -136,9 +142,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
@@ -146,9 +152,57 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTriangoloMvtIII
-%			}
+			\new Voice {
+				\formatTriangoloMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(triangolo) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTriangoloMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTriangoloMvtI \musicTriangoloMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "1. TACET"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTriangoloMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(triangolo) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTriangoloMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTriangoloMvtII \musicTriangoloMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold "2. TACET"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTriangoloMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(triangolo) \tempiPartMvtIII
 			}
@@ -160,9 +214,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.1 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
@@ -170,9 +224,81 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatPiattiMvtIII
-%			}
+			\new Voice {
+				\formatTriangoloMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(triangolo) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTriangoloMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameTriangoloMvtIV \musicTriangoloMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #2.5 \bold "4. FINALE - TACET"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPiattiMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(piatti) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoicePiattiMvtI
+			}
+			\new Voice {
+				\timeMvtI \namePiattiMvtI \musicPiattiMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "1. TACET"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPiattiMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(piatti) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoicePiattiMvtII
+			}
+			\new Voice {
+				\timeMvtII \namePiattiMvtII \musicPiattiMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #0.8 \bold "2. TACET"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff \with { \consists Merge_rests_engraver } <<
+			\new Voice {
+				\formatPiattiMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(piatti) \tempiPartMvtIII
 			}
@@ -180,13 +306,14 @@
 				\InCueContext \cueVoicePiattiMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \namePiattiMvtIII \musicPiattiMvtIII
+				\timeMvtIII \namePiattiMvtIII \partCombine \musicPiattiMvtIII 
+				\musicGranCassaMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
@@ -194,23 +321,23 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatGranCassaMvtIII
-%			}
 			\new Voice {
-				\keepWithTag #'(grancassa) \tempiPartMvtIII
+				\formatPiattiMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceGranCassaMvtIII
+				\keepWithTag #'(piatti) \tempiPartMvtIV
 			}
 			\new Voice {
-				\timeMvtIII \nameGranCassaMvtIII \musicGranCassaMvtIII
+				\InCueContext \cueVoicePiattiMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \namePiattiMvtIV \musicPiattiMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #7.3 \bold "4. FINALE - TACET"
 			}
 		}
 		\layout {

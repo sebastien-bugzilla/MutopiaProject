@@ -191,8 +191,26 @@ apococresc = \markup {\italic "a poco cresc."}
 % instrument modification
 %--------------------
 mutafines = \markup {"muta F in Es"}
+mutafineflat = \markup {
+	\column { 
+		\lower #1.5 "muta F" 
+		\line {\concat { "in E" \text-flat }}
+	}
+}
 mutaesindes = \markup {"muta Es in Des"}
+mutaeflatindflat = \markup {
+	\column {
+		\lower #1.5 \concat { "muta E" \text-flat } 
+		\concat { "in D" \text-flat}
+	}
+}
 mutadesinf = \markup {"muta Des in F"}
+mutadflatinf = \markup {
+	\column {
+		\lower #1.5 "muta" 
+		\concat { "D" \text-flat " in F"}
+	}
+}
 mutainflautopiccoloi = \markup {"muta in Flauto piccolo I."}
 mutainflpicci = \markup {"muta in Fl. picc. I."}
 mutainflpiccii = \markup {"muta in Fl. picc. II."}
@@ -575,6 +593,10 @@ tempoEO = #(define-music-function
 
 mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
+tempoDown = \once \override Score.MetronomeMark.direction = #-1 
+
+
+
 %###############################################################################
 %  Fonctions sur étagère
 %###############################################################################
@@ -715,8 +737,6 @@ mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::se
 %		\once \override TextScript.outside-staff-priority = #prio
 %	#}
 %)
-
-%tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
 %tempoExtraOffset = #(define-music-function
 %	(offset)

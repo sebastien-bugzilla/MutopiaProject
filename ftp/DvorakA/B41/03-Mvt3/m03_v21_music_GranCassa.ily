@@ -78,7 +78,7 @@ musicGranCassaMvtIII = \relative c {
 	
 	
 	\ni \mmrPos #4 R1.
-	\mmrPos #4 R1.\fermata \no \section
+	\mmrPos #4 R1. \no \section
 	\time 2/4 R2*12
 % Bars 141 to 145
 	

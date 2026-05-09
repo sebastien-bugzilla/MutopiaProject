@@ -76,8 +76,8 @@ musicTimpaniMvtII = \relative c {
 % Bars 96 to 100
 	ees:
 	ees:
-	ees:
-	ees:
+	<< ees: {s8\< s s s\! s\> s s s\!}>>
+	ees1:
 	ees:
 % Bars 101 to 105
 	ees4 r r2^\mutaesindes \changeStaffName \timpinbdes

@@ -544,7 +544,7 @@ nameTrombonoIIIMvtIV = {
 nameTimpaniMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in D A"
+			\lower #1 "Timpani" "in D, A"
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -553,7 +553,7 @@ nameTimpaniMvtI = {
 nameTimpaniMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in B F"
+			\lower #1 "Timpani" "in B, F"
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -562,7 +562,7 @@ nameTimpaniMvtII = {
 nameTimpaniMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in A D"
+			\lower #1 "Timpani" "in A, D"
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -571,9 +571,19 @@ nameTimpaniMvtIII = {
 nameTimpaniMvtIV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in D A F"
+			\lower #1 "Timpani" "in D, A, F"
 		}
 	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
+nameTriangoloMvtI = {
+	\set Staff.instrumentName = "Triangolo"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
+nameTriangoloMvtII = {
+	\set Staff.instrumentName = "Triangolo"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
@@ -582,8 +592,44 @@ nameTriangoloMvtIII = {
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
+nameTriangoloMvtIV = {
+	\set Staff.instrumentName = "Triangolo"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
+namePiattiMvtI = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Piatti &" "Gran Cassa"
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
+namePiattiMvtII = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Piatti &" "Gran Cassa"
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
 namePiattiMvtIII = {
-	\set Staff.instrumentName = "Piatti"
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Piatti &" "Gran Cassa"
+		}
+	}
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
+namePiattiMvtIV = {
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Piatti &" "Gran Cassa"
+		}
+	}
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }

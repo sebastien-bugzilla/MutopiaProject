@@ -9,15 +9,20 @@ musicTriangoloMvtIII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R1.*55
+	R1.*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
+	
+	
+	
+	R1.*2
 % Bars 21 to 25
 	
+	\mmrLength #16 \tempoXoffset #1.5 R1.*34
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -79,7 +84,7 @@ musicTriangoloMvtIII = \relative c {
 	
 	\ni \mmrPos #4 R1.
 	\mmrPos #4 R1.\fermata \no \section
-	\time 2/4 e''4\p r
+	\sectionLabel "TRIO" \time 2/4 \startMeasureCount e''4\p r
 % Bars 141 to 145
 	e r
 	e r
@@ -95,7 +100,7 @@ musicTriangoloMvtIII = \relative c {
 % Bars 151 to 155
 	e r
 	e r
-	e r
+	e r \stopMeasureCount
 	e e
 	e e \mark \default
 % Bars 156 to 160
@@ -180,19 +185,21 @@ musicTriangoloMvtIII = \relative c {
 % Bars 226 to 230
 	e8 r r4
 	e8 r r4
-	R2*38
+	R2*14
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
+	R2*15
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
+	\mmrLength #19 \mmrnDown R2*9
 % Bars 261 to 265
 	
 	
@@ -238,12 +245,20 @@ musicTriangoloMvtIII = \relative c {
 	
 	\section
 % Bars 341 to 345
-	\time 2/4 R2*12
+	\sectionLabel "CODA" \time 2/4 \ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 346 to 350
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 351 to 355
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	e4\p r
 	e r
 	e r
@@ -257,15 +272,20 @@ musicTriangoloMvtIII = \relative c {
 	e4 r
 	e r
 	e r
-	R2*25
+	R2
+	\mmrLength #14 \tempoXoffset #-2 R
 % Bars 366 to 370
-	
+	R2*9
 % Bars 371 to 375
 	
+	
+	
+	
+	R2*14
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
 % Bars 386 to 388
-	\fine
+	\tweak direction #-1 \textEndMark "Fine" \fine
 }

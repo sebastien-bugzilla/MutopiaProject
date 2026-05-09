@@ -9,17 +9,17 @@ musicTimpaniMvtIV = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R2*15
+	\tempoDown \tempoEO #'(0 . 10.3) R2*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R2\fermata
+	\once \ni R2\fermata
 	R
-	R\fermata
+	\once \ni R\fermata
 	R
-	R\fermata
+	\once \ni R\fermata
 % Bars 21 to 25
 	\ni \mmrPos #4 R2
 	\mmrPos #4 R
@@ -27,7 +27,7 @@ musicTimpaniMvtIV = \relative c {
 	R2*2^\gp
 	
 % Bars 26 to 30
-	f,4-.\pp f-.
+	\startMeasureCount f,4-.\pp f-.
 	f-. f-.
 	f-. f-.
 	f-. f-.
@@ -41,7 +41,7 @@ musicTimpaniMvtIV = \relative c {
 % Bars 36 to 40
 	f-. f-.
 	f-. f-.
-	f-. f-.
+	f-. f-. \stopMeasureCount
 	f-. r
 	R2
 % Bars 41 to 45
@@ -94,7 +94,7 @@ musicTimpaniMvtIV = \relative c {
 	
 	
 	
-	a2:32_\pcresc
+	a2:32-\offset X-offset -1.5 _\pcresc
 % Bars 101 to 105
 	a:
 	a:\<
@@ -118,12 +118,12 @@ musicTimpaniMvtIV = \relative c {
 % Bars 121 to 125
 	
 	
-	\ni \mmrPos #-4 R2\fermata \no
+	\ni \mmrPos #-4 R2_\fermata \no
 	R
-	\ni \mmrPos #-4 R\fermata \no
+	\ni \mmrPos #-4 R_\fermata \no
 % Bars 126 to 130
 	R
-	\ni \mmrPos #-4 R\fermata \no
+	\ni \mmrPos #-4 R_\fermata \no
 	R2*4
 % Bars 131 to 135
 	
@@ -132,7 +132,7 @@ musicTimpaniMvtIV = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R \no
 % Bars 136 to 140
-	R2*22
+	R2*20
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -140,9 +140,9 @@ musicTimpaniMvtIV = \relative c {
 % Bars 151 to 155
 	
 % Bars 156 to 160
-	
+	\mmrLength #13 R2*2
 	\section \mark \default
-	R2*40
+	\mmrLength #16 \mmrnDown R2*30
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -155,12 +155,14 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 186 to 190
 	
+	
+	\mmrLength #16 \mmrnDown R2*10
 % Bars 191 to 195
 	
 % Bars 196 to 200
 	
 	
-	R2*48
+	\mmrnDown R2*32
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -173,13 +175,17 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 226 to 230
 	
+	
+	
+	
+	\mmrLength #13 \mmrnDown R2*12
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
-	
+	\mmrLength #14 \mmrnDown R2*4
 	
 	
 	\mark \default
@@ -197,8 +203,8 @@ musicTimpaniMvtIV = \relative c {
 	
 	
 	
-	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R \no
+	\ni \mmrPos #-8 R2
+	\mmrPos #-6 R \no
 % Bars 276 to 280
 	a2:\ff
 	a:
@@ -228,7 +234,7 @@ musicTimpaniMvtIV = \relative c {
 	R2*3
 	
 	
-	a2:\ff
+	a2:-\tweak extra-offset #'(0 . -8) ^\ff
 % Bars 301 to 305
 	a:
 	a:
@@ -254,13 +260,16 @@ musicTimpaniMvtIV = \relative c {
 % Bars 326 to 330
 	
 	\section
-	R2*24
+	\mmrLength #14 \mmrnDown R2*16
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
+	
+	
+	\mmrLength #16 \mmrnDown R2*8
 % Bars 346 to 350
 	
 % Bars 351 to 355
@@ -279,7 +288,7 @@ musicTimpaniMvtIV = \relative c {
 	R2*3
 	
 	
-	a2:_\ppsempre
+	\startMeasureCount a2:_\ppsempre
 	a:
 % Bars 366 to 370
 	a:
@@ -297,7 +306,7 @@ musicTimpaniMvtIV = \relative c {
 	a:
 	a:
 	a:
-	a: \mark \default
+	\noteHeadEsw #'(0 . 2.3) a: \stopMeasureCount \mark \default \revertNoteHeadEsw
 	d4\ff r
 % Bars 381 to 385
 	d r
@@ -319,12 +328,12 @@ musicTimpaniMvtIV = \relative c {
 	
 	\ni \mmrPos #4 R2
 	\mmrPos #4 R
-	\mmrPos #4 R
+	\tempoXoffset #6 \mmrPos #4 R
 	\mmrPos #4 R
 % Bars 411 to 415
 	\mmrPos #4 R
 	\mmrPos #4 R \no
-	f4-.\pp^\solo f-.
+	\startMeasureCount f4-.\pp-\offset X-offset -4 ^\solo f-.
 	f-. f-.
 	f-. f-.
 % Bars 416 to 420
@@ -338,7 +347,7 @@ musicTimpaniMvtIV = \relative c {
 	f-. f-.
 	f-. f-.
 	f-. f-.
-	f-. f-.
+	f-. f-. \stopMeasureCount
 % Bars 426 to 430
 	f-. r
 	R2
@@ -358,8 +367,8 @@ musicTimpaniMvtIV = \relative c {
 	R2
 	f4-. f-.
 % Bars 441 to 445
-	f-._\crescpocoapoco f-.
-	f-. r
+	f-. _\crescpocoapoco f-.
+	f-. r 
 	R2
 	f4-. f-.
 	f-. f-.
@@ -422,7 +431,7 @@ musicTimpaniMvtIV = \relative c {
 	\mmrPos #-4 R \no
 	R
 % Bars 541 to 545
-	a2:16\p
+	\startMeasureCount a2:16\p
 	a:
 	a:
 	a:_\crescpocoapoco
@@ -440,7 +449,7 @@ musicTimpaniMvtIV = \relative c {
 	a:
 	a:
 % Bars 556 to 560
-	a: \mark \default
+	a: \stopMeasureCount \mark \default
 	a8.-.\f a16 a4->
 	a8.-. a16 a4->
 	a8.-. a16 a4->\<
@@ -498,7 +507,7 @@ musicTimpaniMvtIV = \relative c {
 	d8.\< d16 d4
 	d r
 	d8. d16 d4\! \markk
-	d2:32\ff
+	\startMeasureCount d2:32\ff
 % Bars 606 to 610
 	d:
 	d:
@@ -507,7 +516,7 @@ musicTimpaniMvtIV = \relative c {
 	d:
 % Bars 611 to 615
 	d:
-	d:
+	d: \stopMeasureCount
 	d4-. r
 	d4->\f r
 	d-> r
@@ -518,8 +527,8 @@ musicTimpaniMvtIV = \relative c {
 	
 	
 % Bars 621 to 625
-	<< a2:\f\< {s8 s s s\!}>>
-	d2:\ff
+	<< \hairpinShorten #'(-0.5 . -2) a2:\f\< {s8 s s s\!}>>
+	\startMeasureCount d2:\ff
 	d:
 	d:
 	d:
@@ -527,7 +536,7 @@ musicTimpaniMvtIV = \relative c {
 	d:
 	d:
 	d:
-	d:
+	d: \stopMeasureCount
 	d4 r
 % Bars 631 to 635
 	R2*20
@@ -540,7 +549,7 @@ musicTimpaniMvtIV = \relative c {
 	
 	
 	
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 % Bars 651 to 655
 	d4-.\ff d-.
 	d-. a-.
@@ -570,7 +579,7 @@ musicTimpaniMvtIV = \relative c {
 	a2:->
 	d4-. d-.
 	a2:->
-	d8 d d d 
+	\startMeasureCount d8 d d d 
 % Bars 676 to 680
 	d d d d
 	d d d d
@@ -579,7 +588,7 @@ musicTimpaniMvtIV = \relative c {
 	d d d d
 % Bars 681 to 685
 	d d d d
-	d d d d
+	d d d d \stopMeasureCount
 	d4-. r
 	R2^\gp
 	a4-> r

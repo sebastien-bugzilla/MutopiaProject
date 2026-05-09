@@ -4,25 +4,21 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicPiattiMvtIII = \relative c {
-	\clef bass
+musicTriangoloMvtIV = \relative c {
+	\clef treble
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	\partCombineApart R1.*19
+	R2*21
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
-	
-	
-	
-	R1.*2
 % Bars 21 to 25
 	
-	\mmrLength #20 R1.*34
+	R2*112
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -35,24 +31,16 @@ musicPiattiMvtIII = \relative c {
 	
 % Bars 51 to 55
 	
-	
-	
-	
-	\mark \default
 % Bars 56 to 60
-	R1.*20
+	
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
-	
-	
-	
-	\section
 % Bars 76 to 80
-	R1.*34
+	
 % Bars 81 to 85
 	
 % Bars 86 to 90
@@ -65,10 +53,6 @@ musicPiattiMvtIII = \relative c {
 	
 % Bars 106 to 110
 	
-	
-	
-	\mark \default
-	R1.*28
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -79,127 +63,75 @@ musicPiattiMvtIII = \relative c {
 	
 % Bars 131 to 135
 	
+	
+	
+	R2*2
+	
 % Bars 136 to 140
-	
-	
-	\ni \mmrPos #4 R1.
-	\mmrPos #4 R1.\fermata \no \section
-	\time 2/4 \mmrLength #25 R2*12
+	R2*20
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	\ni \mmrPos #6 R2
-	\mmrPos #6 R
-	\mmrPos #6 R 
-	\mmrPos #6 R \no \mark \default
 % Bars 156 to 160
-	\startMeasureCount e4 r
-	e r
-	e r
-	e r
-	e r
+	R2*2
+	
+	\mmrLength #30 R2*30
 % Bars 161 to 165
-	e r
-	e r \stopMeasureCount 
-	e e
-	e r
-	e r
+	
 % Bars 166 to 170
-	e r
-	e e
-	\startMeasureCount e r
-	e r
-	e r
+	
 % Bars 171 to 175
-	e r
-	e r
-	e r
-	e r
-	e r
+	
 % Bars 176 to 180
-	e r
-	e r
-	e r
-	e r
-	e r
+	
 % Bars 181 to 185
-	e r \stopMeasureCount
-	e e \mark \default
-	e8 r r4
-	R2*7
+	
 % Bars 186 to 190
 	
+	
+	R2*10
 % Bars 191 to 195
-	\startMeasureCount r4 e
-	r e
-	r e
-	r e
-	r e
+	
 % Bars 196 to 200
-	r e
-	r e
-	r e
-	r e
-	r e
+	
+	
+	R2*32
 % Bars 201 to 205
-	r e
-	r e
-	r e
-	r e
-	r e
+	
 % Bars 206 to 210
-	r e
-	r e
-	r e
-	r e
-	r e
+	
 % Bars 211 to 215
-	r e
-	r e
-	r e
-	r e
-	r e
+	
 % Bars 216 to 220
-	r e \stopMeasureCount
-	R2*2
-	\mark \default
-	r4 e
-	r e
+	
 % Bars 221 to 225
-	R2*3
 	
-	
-	e4 r
-	R2
 % Bars 226 to 230
-	e4 r
-	e r
-	R2*14
+	
+	
+	
+	
+	R2*12
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
-	\mmrLength #35 R2*15
+	R2*86
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
-	\mmrLength #17 R2*9
 % Bars 261 to 265
 	
-	
-	
-	
-	\section
 % Bars 266 to 270
-	\time 6/4 R1.*55
+	
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -220,48 +152,170 @@ musicPiattiMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
-	
-	
-	
-	\mark \default
 % Bars 321 to 325
-	R1.*18
+	
 % Bars 326 to 330
 	
+	
+	\mmrLength #30 R2*16
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
-	
-	
-	\mmrLength #13 R1.*2
-	\section
 % Bars 341 to 345
-	\sectionLabel "CODA" \time 2/4 \mmrLength #30 R2*24
+	
+	
+	
+	R2*8
 % Bars 346 to 350
 	
 % Bars 351 to 355
 	
+	R2*57
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
-	
-	
-	
-	\mmrLength #20 R2*10
 % Bars 366 to 370
 	
 % Bars 371 to 375
 	
-	
-	
-	
-	\mmrLength #28 R2*13
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
-% Bars 386 to 388
-	\once \ni R2\fermata \tweak direction #-1 \textEndMark "Fine" \fine
+% Bars 386 to 390
+	
+% Bars 391 to 395
+	
+% Bars 396 to 400
+	
+% Bars 401 to 405
+	
+% Bars 406 to 410
+	
+	
+	
+	R2*2
+	
+% Bars 411 to 415
+	R2*2
+	
+	R2*146
+% Bars 416 to 420
+	
+% Bars 421 to 425
+	
+% Bars 426 to 430
+	
+% Bars 431 to 435
+	
+% Bars 436 to 440
+	
+% Bars 441 to 445
+	
+% Bars 446 to 450
+	
+% Bars 451 to 455
+	
+% Bars 456 to 460
+	
+% Bars 461 to 465
+	
+% Bars 466 to 470
+	
+% Bars 471 to 475
+	
+% Bars 476 to 480
+	
+% Bars 481 to 485
+	
+% Bars 486 to 490
+	
+% Bars 491 to 495
+	
+% Bars 496 to 500
+	
+% Bars 501 to 505
+	
+% Bars 506 to 510
+	
+% Bars 511 to 515
+	
+% Bars 516 to 520
+	
+% Bars 521 to 525
+	
+% Bars 526 to 530
+	
+% Bars 531 to 535
+	
+% Bars 536 to 540
+	
+% Bars 541 to 545
+	
+% Bars 546 to 550
+	
+% Bars 551 to 555
+	
+% Bars 556 to 560
+	
+	
+	
+	R2*2
+	
+% Bars 561 to 565
+	R2*90
+% Bars 566 to 570
+	
+% Bars 571 to 575
+	
+% Bars 576 to 580
+	
+% Bars 581 to 585
+	
+% Bars 586 to 590
+	
+% Bars 591 to 595
+	
+% Bars 596 to 600
+	
+% Bars 601 to 605
+	
+% Bars 606 to 610
+	
+% Bars 611 to 615
+	
+% Bars 616 to 620
+	
+% Bars 621 to 625
+	
+% Bars 626 to 630
+	
+% Bars 631 to 635
+	
+% Bars 636 to 640
+	
+% Bars 641 to 645
+	
+% Bars 646 to 650
+	
+% Bars 651 to 655
+	R2*41
+% Bars 656 to 660
+	
+% Bars 661 to 665
+	
+% Bars 666 to 670
+	
+% Bars 671 to 675
+	
+% Bars 676 to 680
+	
+% Bars 681 to 685
+	
+% Bars 686 to 690
+	
+% Bar 691
+	\fine
 }

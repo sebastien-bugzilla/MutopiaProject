@@ -1702,23 +1702,23 @@ cueVoiceTrombonoIIIMvtIV = \relative c {
 cueVoiceTimpaniMvtI = \relative c {
 	s2.*97
 	% bars 98 - 101
-	\voiceTwo bes4-.\f^\markup {Trb.3} bes2->
+	\voiceTwo bes4-.-\offset X-offset -2 \f^\markup {Trb.3} bes2->
 	f2.->
 	bes4-. bes2->
 	f2.-> \oneVoice
 	s2.*68
 	% bars 170 - 171
-	\voiceOne d''8(^\markup {Legni} f ees d bes c
-	d f ees d bes c) \oneVoice
+	d''8(-\offset X-offset -4 ^\markup {Legni} f ees d bes c
+	d f ees d bes c)
 	s2.*42
 	% bars 214 - 217
-	\voiceOne f2->~^\markup {Cor.} f8 d-.
+	f2->~-\offset X-offset -3.5 ^\markup {Cor.} f8 d-.
 	c8. f16 f4 r
 	f2->~ f8 d-.
-	c8. f16 f4 r \oneVoice
+	c8. f16 f4 r
 	s2.*34 s2*3 s2.*45
 	% bar 300
-	\voiceOne e2->^\markup {Cor.I.II.Cb.} b!8.-> e16-> \oneVoice
+	e2->-\offset X-offset #-3 ^\markup {\column { \lower #1.5 "Cor.I.II." "Cb."}} b!8.-> e16-> 
 }
 cueVoiceTimpaniMvtII = \relative c {
 	s1*14
@@ -1731,8 +1731,8 @@ cueVoiceTimpaniMvtII = \relative c {
 	d4( g) f( d8. c16) \clef bass \oneVoice
 	s1*26 s2*1 s1*26
 	% bars 121 - 122
-	\voiceOne bes4(^\markup {Archi} a aes) r8 aes
-	ees'4( d2 \tuplet 3/2 4 {c8 d ees)} \oneVoice
+	bes4(^\markup {Archi} a aes) r8 aes
+	ees'4( d2 \tuplet 3/2 4 {c8 d ees)}
 }
 cueVoiceTimpaniMvtIII = \relative c {
 	s1.*41
@@ -1743,21 +1743,21 @@ cueVoiceTimpaniMvtIII = \relative c {
 	a2. \oneVoice s2 s4
 	s1.*88
 	% bars 134 - 136
-	\voiceTwo r2^\markup {Cb.} r4 a,->\mf r r
+	\voiceTwo r2^\markup {Cb.} r4 a,->-\offset X-offset -2.2 \mf r r
 	b-> r r c!-> r r
 	r2 r4 f,->\p r r \oneVoice
 	s1.*3 s2*40
 	% bars 180 - 182
 	\transpose c f {
 		\relative c {
-			\clef treble \voiceOne <a'' c>4.\mf\trill^\markup {Cor.I-II} r8
+			\clef treble <a'' c>4.\mf\trill-\offset X-offset -4 ^\markup {Cor.I-II} r8
 			q4.\trill r8
-			q4-> <c e>-> \clef bass \oneVoice
+			q4-> <c e>-> \clef bass 
 		}
 	}
 	s2*76
 	% bars 259 - 261
-	\voiceOne \clef treble \tuplet 3/2 4 {aes''8[-.^\markup {Viol.I} r b!]-. cis( d!) ais-.
+	\voiceOne \clef treble \tuplet 3/2 4 {aes''8[-.-\offset X-offset -2.5 ^\markup {Viol.I} r b!]-. cis( d!) ais-.
 	b-. d-. e-. e( f) d-.
 	d-. f-. g-. g( aes) f-.} \clef bass \oneVoice
 	s2*4 s1.*41
@@ -1765,24 +1765,24 @@ cueVoiceTimpaniMvtIII = \relative c {
 	\voiceOne a,,1.->~^\markup {Fag.}
 	a2 b!4 c( b) gis
 	a1.->~
-	a2. s2 s4
+	a2. s2 s4 \oneVoice
 	s1.*30 s2*24
 	% bars 365 - 368
 	\transpose c f {
 		\relative c {
-			\clef treble \voiceOne <a'' cis>4~^\markup {Cor.I-II} q8[ r16 <e b'>]
+			\clef treble <a'' cis>4~-\offset X-offset -4 ^\markup { \column { \lower #1.5 "Cor." "I-II"}} q8[ r16 <e b'>]
 			<a cis>4~ q8[ r16 <e b'>]
 			<a cis>4-- <cis e>--
-			<b d>-- <a cis>-- \clef bass
+			<b d>-- <a cis>-- 
 		}
 	}
 }
 cueVoiceTimpaniMvtIV = \relative c {
 	s2*20
 	% bars 21 - 23
-	\clef treble \voiceTwo c'8.^\markup {Viol.I.} b16 g4
+	\clef treble c'8.^\markup {Viol.I.} b16 g4
 	c8. b16 g4
-	c8. b16 g4\fermata \oneVoice \clef bass
+	c8. b16 g4_\fermata \clef bass
 	s2*99
 	% bar 123 - 127
 	\voiceOne \clef treble cis'8.^\markup {\column {\lower #1.5 "Fl.Ob." "Viol.I."}} bis16 gis'4\fermata
@@ -1798,11 +1798,11 @@ cueVoiceTimpaniMvtIV = \relative c {
 	bes'8. aes16 ees4 \clef bass \oneVoice
 	s2*138
 	% bars 274 - 275
-	\clef treble a''16(^\markup {Viol.I.} gis gis' fis e dis cis b)
-	a( a' gis fis eis dis cis b) \clef bass
+	\clef treble \ottava #1 a''16(-\offset X-offset -4 ^\markup {Viol.I.} gis gis' fis e dis cis b)
+	a( a' gis fis eis dis cis b) \ottava #0 \clef bass
 	s2*52
 	% bar 328
-	<>^\markup {Archi}
+	<>-\offset X-offset #-3 ^\markup {Archi}
 	s2*24
 	% bars 352 - 354
 	\voiceOne des,,,4->^\markup {Trbne} des->
@@ -1823,7 +1823,7 @@ cueVoiceTimpaniMvtIV = \relative c {
 	fis) \clef bass \oneVoice
 	s2*120
 	% bars 533 - 539
-	\clef treble r4^\markup {Fl.I.} d''8-. r
+	\clef treble r4-\offset X-offset -1 ^\markup {Fl.I.} d''8-. r
 	d-. r d8.-. cis16
 	e8-. r r4
 	s2
@@ -1831,17 +1831,46 @@ cueVoiceTimpaniMvtIV = \relative c {
 	d-. r d8.-. cis16
 	e8-. r r4 \clef bass
 }
+cueVoiceTriangoloMvtI = \relative c {
+	% no Cue Voice
+}
+cueVoiceTriangoloMvtII = \relative c {
+	% no Cue Voice
+}
 cueVoiceTriangoloMvtIII = \relative c {
 	s1.*21
 	% bars 22
-	<>^\markup {Ob.Cl.Fag.}
+	<>-\offset X-offset #-2 ^\markup { \override #'(baseline-skip . 1.5) \column { "Ob." "Cl." "Fag."}}
 	s1.*116
 	% bars 138 - 139
 	\voiceTwo \clef bass b1.:32\pp^\markup {Timp.}
 	b:\fermata \clef treble \oneVoice
-	s2*126 s1.*75 s2*25
+	s2*126 s1.*75
+	% bar 341 - 352
+	\voiceTwo \clef bass d4:32->-\offset X-offset 1 _\fffz^\markup {Timp.} d8 r
+	d4:32-> d8 r
+	d2:
+	d:
+	a4:->\fz a8 r
+	a4:->\fz a8 r
+	a2:
+	a:
+	d4:\fz d8 r
+	d4:\fz d8 r
+	d2:
+	d: \oneVoice \clef treble
+	s2*13
 	% bar 366
-	<>^\markup {Fl.Ob.Cl.Fag.}
+	<>\offset X-offset -2 ^\markup {\override #'(baseline-skip . 1.5) \column { "Fl." "Ob." "Cl." "Fag."}}
+}
+cueVoiceTriangoloMvtIV = \relative c {
+	% no Cue Voice
+}
+cueVoicePiattiMvtI = \relative c {
+	% no Cue Voice
+}
+cueVoicePiattiMvtII = \relative c {
+	% no Cue Voice
 }
 cueVoicePiattiMvtIII = \relative c {
 	s1.*21
@@ -1861,7 +1890,10 @@ cueVoicePiattiMvtIII = \relative c {
 	<b d> r \clef bass \oneVoice
 	s2*110 s1.*75 s2*24
 	% bar 365
-	<>^\markup {Fl.Ob.Cl.Fag.}
+	<>-\offset X-offset -3 ^\markup {\override #'(baseline-skip . 1.5) \column { "Fl." "Ob." "Cl." "Fag."}}
+}
+cueVoicePiattiMvtIV = \relative c {
+	% no Cue Voice
 }
 cueVoiceGranCassaMvtIII = \relative c {
 	s1.*21

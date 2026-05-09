@@ -186,5 +186,10 @@ correctionTromboni = \markup {
 	"In Mvt III, bar 4, for trombone III, a fortissimo is replaced by a forte."
 	
 	% Mvt IV, bar 129 - 131, trombone III
-	"In Mvt III, bar 129-131, for trombone III, a fz is added.
+	"In Mvt III, bar 129-131, for trombone III, a fz is added."
+}
+correctionTriangolo = \markup {
+	
+	% Mvt III, bar 353 - 363, triangolo
+	"In Mvt III, bar 353-363, for triangolo bars are added."
 }

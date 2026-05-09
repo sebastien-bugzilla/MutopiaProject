@@ -9,7 +9,7 @@ musicTimpaniMvtII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R1*14
+	\mmrLength #22 R1*14
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -19,7 +19,7 @@ musicTimpaniMvtII = \relative c {
 	
 	\ni \mmrPos #4 R1 \no
 % Bars 16 to 20
-	\once \voiceOne r2 << f,2:32\brack\pp\< {s8 s\> s s}>>
+	\once \voiceOne r2 << \hairpinShorten #'(-0.5 . -2.8) f,2:32-\offset X-offset -2 \brack\pp\< {s8 \hairpinShorten #'(2.8 . 0) s\> s s}>>
 	f1:\dimD \mark \default
 	bes4 r r2
 	R1*16
@@ -47,7 +47,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 61 to 65
 	
 % Bars 66 to 70
-	\no \mmrPos #-4 R1
+	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R \no
 	f'1:32->\fpp
 	<< f:\> {s4 s s s8 s\!}>>
@@ -69,31 +69,31 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	bes8-^\ff bes-^ bes-^ r r2
-	bes8-^ bes-^ bes-^ r r2^\mutafines
+	bes8-^ bes-^ bes-^ r r2^\mutafineflat
 	R1*4
 % Bars 91 to 95
 	
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 ees1:32\pp
+	\time 4/4 \tempoXoffset #1 \startMeasureCount ees1:32\pp
 % Bars 96 to 100
 	ees:
 	ees:
-	ees:
-	ees:
-	ees:
+	<< ees: {s8\< s s s\! s\> s s s\!}>>
+	ees1:
+	ees: \stopMeasureCount
 % Bars 101 to 105
-	ees4 r r2^\mutaesindes
+	ees4 r r2^\mutaeflatindflat
 	R1*6
 % Bars 106 to 110
 	
 	
-	des16\pp des des des  des4:16 des: des:
+	des16-\offset X-offset -2.5 \pp des des des  des4:16 des: des:
 	des: des: des: des:
-	des8 r r4^\mutadesinf r2
+	des8 r r4^\mutadflatinf r2
 % Bars 111 to 115
-	R1\fermata
+	\once \ni R1\fermata
 	R1*2
 	\mark \default
 	R1*7
@@ -107,26 +107,26 @@ musicTimpaniMvtII = \relative c {
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R \no
 	<< bes1:32\pp {s4 s s s\<}>>
-	<< bes1: {s4 s\! s\> s8_\dimmarkup s\!}>>
+	<< bes1: {s4 s\! \hairpinShorten #'(-0.5 . 0) s\> s8_\dimmarkup s\!}>>
 	bes4 r r2
 % Bars 126 to 130
 	R1*2
 	
-	<< bes1:32\pp\< {s4 s s_\pococresc s8 s\!}>>
+	<< \hairpinShorten #'(-0.3 . -1.5) bes1:32\pp\< {s4 s s^\pococresc s8 s\!}>>
 	bes2:\> << f': {s8 s s s\!}>>
 	bes,4_\dimmarkup r bes r
 % Bars 131 to 135
 	bes\pp r bes r
 	bes r bes r
 	bes\> r bes\! r
-	R1*3
+	\mmrCondens R1*3
 	
 % Bars 136 to 140
 	
 	<< bes1:32\fz {s4 s s s8\> s}>>
 	bes1:\dimD
-	<< bes:\pp\< {s4 s\! s\> s\!}>>
-	bes4 r r2
+	<< \hairpinShorten #'(-0.5 . -1.3) bes:-\offset X-offset -1 \pp\< {s4 s \hairpinShorten #'(1.3 . -1) s\> s\!}>>
+	\tempoXoffset #4.5 bes4 r r2
 % Bars 141 and 142
 	R1
 	bes1:32\pp\fermata \fine
