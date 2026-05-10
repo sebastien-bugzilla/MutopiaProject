@@ -1918,13 +1918,19 @@ cueVoiceGranCassaMvtIII = \relative c {
 %###############################################################################
 %#                     C U E   V O I C E   F O R   A R P A                     #
 %###############################################################################
+cueVoiceArpaUpMvtI = \relative c {
+	% no cue voice
+}
+cueVoiceArpaDownMvtI = \relative c {
+	% no cue voice
+}
 cueVoiceArpaUpMvtII = \relative c {
 	s1*17
 	% bar 18
 	<>^\markup {Ob.}
 	s1*76 s2*1
 	% bars 95 - 96
-	\voiceTwo ees'4(_\markup {Vclo} d ees) r8 des
+	\voiceTwo ees'4(_\markup {Vclo} d des) r8 des
 	aes'4( g2) \tuplet 3/2 4 {f8( g aes)} \oneVoice
 }
 cueVoiceArpaDownMvtII = \relative c {
@@ -1953,6 +1959,12 @@ cueVoiceArpaDownMvtIII = \relative c {
 	d:
 	d:
 	d: \oneVoice
+}
+cueVoiceArpaUpMvtIV = \relative c {
+	% no cue voice
+}
+cueVoiceArpaDownMvtIV = \relative c {
+	% no cue voice
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #

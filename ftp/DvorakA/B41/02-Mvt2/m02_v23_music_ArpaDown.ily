@@ -9,7 +9,7 @@ musicArpaDownMvtII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*17
+	\mmrnStaffPadding #2 R1*17
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,13 +29,13 @@ musicArpaDownMvtII = \relative c {
 	\mark \default
 	\ni \mmrPos #-4 R1 \no
 % Bars 36 to 40
-	R1*16
+	\ni R1*16 \no
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
 % Bars 51 to 55
-	\mark \default
+	\mmrnStaffPadding #1.5 \mark \default
 	<bes f' bes>4^\brack\p r <f des' f> r 
 	<bes, bes'> <ees ees'> r q
 	<aes, aes'> <ges ges'> r <ges' ges'>
@@ -74,7 +74,7 @@ musicArpaDownMvtII = \relative c {
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 R1*2
+	\time 4/4 \ni R1*2 \no
 % Bars 96 to 100
 	s1
 	s2 \clef treble s
@@ -85,7 +85,7 @@ musicArpaDownMvtII = \relative c {
 % Bars 106 to 110
 	
 % Bars 111 to 115
-	R1\fermata
+	\once \ni R1\fermata
 	R1*2
 	\mark \default
 	R1*7
@@ -105,5 +105,5 @@ musicArpaDownMvtII = \relative c {
 	
 % Bars 141 and 142
 	
-	R1\fermata \fine
+	\once \ni R1\fermata \fine
 }

@@ -193,3 +193,14 @@ correctionTriangolo = \markup {
 	% Mvt III, bar 353 - 363, triangolo
 	"In Mvt III, bar 353-363, for triangolo bars are added."
 }
+correctionArpa = \markup {
+	
+	% Mvt II, bar 70, left hand
+	"In Mvt II, bar 70, for left hand, different pitch are given in conductor score and part score. Part score indicate 'a f' whereas conductor score gives 'a a'. The conductor score is prefered because other couple of notes are also octaves."
+	
+	% Mvt III, bar 74 and 339, left hand
+	"In Mvt III, bar 74, for left hand, the second beat chords contains a c sharp in part score, a c natural in conductor score. The c sharp is in contradiction with right hand. The version kept is conductor score with a c natural on both left and right hand. The incoherence is repeated in bar 339."
+	
+	% Mvt III, bar 180, right hand
+	"In Mvt III, bar 180, for right hand, the second beat, chords is different in conductor and part score (there is a d in conductor version, a c in part score). The c is in contradiction with left hand. The conductor version is kept."
+}

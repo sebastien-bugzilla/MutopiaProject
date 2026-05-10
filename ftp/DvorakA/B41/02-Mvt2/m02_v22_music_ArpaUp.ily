@@ -9,7 +9,7 @@ musicArpaUpMvtII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*17
+	\ni \mmrLength #42 \mmrnDown R1*17
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -47,7 +47,7 @@ musicArpaUpMvtII = \relative c {
 	r4 <g c ees g>\arpeggio r2
 	r <f a d f>4\arpeggio r
 % Bars 51 to 55
-	r <f a c f>\arpeggio <g c ees g>\arpeggio <a c ees a>\arpeggio \mark \default
+	r <f a c f>\arpeggio <g c ees g>\arpeggio <a c ees a>\arpeggio \markXoffset #-0.2 \mark \default
 	r8 <d f bes> <f bes d> <f bes d f> r <des f  aes> <f aes des> <f aes des f>
 	r <f bes des> <g c ees> <g c ees g> r <ees g c> <g c ees> <g bes ees g>
 	r <ees aes c> <ges bes ees> <bes ees ges> r <ees, ges bes> <ges bes ees> <ges bes ees ges>
@@ -65,41 +65,41 @@ musicArpaUpMvtII = \relative c {
 	r <c e g>\< <e g c> <g c e>\! r <c, e g>\> <d g c> <g d' f>\!
 	r <c, e g> <ees! g bes!>\pp <g bes ees!> r <bes,! ees! g> <d f bes> <f aes d>
 % Bars 66 to 70
-	r <bes,!\< ees g>\< <ees g c> <g c ees>\! r <g ees' g>_\crescmarkup <f d' f> <ees g c ees>
+	r <bes,!\< ees g>\< <ees g c> <g c ees>\! r <g ees' g>-\offset X-offset #-1.5 _\crescmarkup <f d' f> <ees g c ees>
 	<g bes d g>4\arpeggio r r2
 	<f a c f>4\arpeggio r r2
 	R1
 	\tuplet 5/4 4 {
-		\staffDown a,,,16^([^\brack\p a'] \staffUp f' a c  
-		\staffDown d,,[ d'] \staffUp f a d
-		\staffDown c,,[ c'] \staffUp g' c ees
-		\staffDown f,,,[ f'] \staffUp a' c f } \mark \default
+		\shape #'((0 . 4)(2 . -1.5)(0 . -8.5)(0 . 0)) Slur \omitTupletBracket \staffDown a,,,16^([^\brack\p a'] \staffUp f' a c  
+		\omitTupletBracket \staffDown d,,[ d'] \staffUp f a d
+		\omitTupletBracket \staffDown c,,[ c'] \staffUp g' c ees
+		\omitTupletBracket \staffDown f,,,[ f'] \staffUp a' c f } \mark \default
 % Bars 71 to 75
 	<f, bes d f>4)\arpeggio r r2
 	R1*6
 % Bars 76 to 80
 	
 	\mark \default
-	R1*16
+	R1*13
 % Bars 81 to 85
 	
 % Bars 86 to 90
 	
 % Bars 91 to 95
-	
+	\tempoXoffset -3 R1*3
 	
 	\section
 	\time 2/4 R2 \section \mark \default
-	\time 4/4 \ni \mmrPos #4 R1
+	\time 4/4 \ni \mmrPos #4 \tempoXoffset 1 R1
 % Bars 96 to 100
-	\ni \mmrPos #4 R \no
-	\staffDown \tuplet 3/2 8 {ees,16^\p([ bes' ees]} \staffUp g32 des' ees g
+	\ni \mmrPos #4 R
+	\staffDown \shape #'((0 . 3)(2 . -1)(-2 . -9)(0 . 0)) Slur \tuplet 3/2 8 {ees,16^\p([ bes' ees]} \staffUp \beamOffset #'(-1 . 0) g32 des' ees g
 		\staffDown \tuplet 3/2 8 {ees,,16[ bes' ees]} \staffUp g32 des' ees g
 		\staffDown \tuplet 3/2 8 {bes,,16[ ees g]} \staffUp bes32 des ees bes'
 		\staffDown \tuplet 3/2 8 {bes,,16[ ees g]} \staffUp bes32 des ees bes')
-	\staffDown \tuplet 3/2 8 {ees,,16([ bes'^\crescmarkup des]} \staffUp fes32 aes bes fes'
+	\staffDown \shape #'((0 . 2)(0 . 3)(-5 . -6)(0 . 0)) Slur \tuplet 3/2 8 {ees,,16([ \markEO #'(-1 . 3) bes'^\crescmarkup des]} \staffUp fes32 aes bes fes'
 		\staffDown \tuplet 3/2 8 {ees,,16[ bes' des]} \staffUp ees32 g bes ees
-		\staffDown \tuplet 3/2 8 {aes,,16[ ces d!]} \staffUp f!32_\dimmarkup ces' d! f!
+		\staffDown \tuplet 3/2 8 {aes,,16[ ces d!]} \staffUp \markEO #'(0 . -2.7) f!32_\dimmarkup ces' d! f!
 		\staffDown \tuplet 3/2 8 {ces,!16[ d! f]} \staffUp aes32 d f aes)
 	<g, bes ees g>4 r r2
 	R1*11
@@ -108,7 +108,7 @@ musicArpaUpMvtII = \relative c {
 % Bars 106 to 110
 	
 % Bars 111 to 115
-	R1\fermata
+	\once \ni R1\fermata
 	R1*2
 	\mark \default
 	R1*7
@@ -128,5 +128,5 @@ musicArpaUpMvtII = \relative c {
 	
 % Bars 141 and 142
 	
-	R1\fermata \fine
+	\once \ni R1\fermata \fine
 }

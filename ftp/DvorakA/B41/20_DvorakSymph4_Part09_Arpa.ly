@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -21,12 +21,16 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-%\include "./00-Common/DvorakSymph4_Format_Part09_Arpa.ily"
+\include "./00-Common/DvorakSymph4_Format_Part09_Arpa.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
+\include "./01-Mvt1/m01_v22_music_ArpaUp.ily"
+\include "./01-Mvt1/m01_v23_music_ArpaDown.ily"
 \include "./02-Mvt2/m02_v22_music_ArpaUp.ily"
 \include "./02-Mvt2/m02_v23_music_ArpaDown.ily"
 \include "./03-Mvt3/m03_v22_music_ArpaUp.ily"
 \include "./03-Mvt3/m03_v23_music_ArpaDown.ily"
+\include "./04-Mvt4/m04_v22_music_ArpaUp.ily"
+\include "./04-Mvt4/m04_v23_music_ArpaDown.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -39,18 +43,52 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41)"
+			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41) — Arpa"
 		}
 		instrument = \markup {
-			"Arpa"
+			""
 		}
 	}
 	\score {
-		\new PianoStaff <<
+		\new PianoStaff \with { \nameArpaMvtI } <<
 			\new Staff = "up" <<
-%				\new Voice {
-%					\formatArpaUpMvtII
-%				}
+				\new Voice {
+					\formatArpaUpMvtI
+				}
+				\new Voice {
+					\keepWithTag #'(arpa) \tempiPartMvtI
+				}
+				\new Voice {
+					\InCueContext \cueVoiceArpaUpMvtI
+				}
+				\new Voice {
+					\timeMvtI \musicArpaUpMvtI
+				}
+			>>
+			\new Staff = "down" <<
+				\new Voice {
+					\InCueContext \cueVoiceArpaDownMvtI
+				}
+				\new Voice {
+					\timeMvtI \musicArpaDownMvtI
+				}
+			>>
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "1. TACET"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new PianoStaff \with { \nameArpaMvtII } <<
+			\new Staff = "up" <<
+				\new Voice {
+					\formatArpaUpMvtII
+				}
 				\new Voice {
 					\keepWithTag #'(arpa) \tempiPartMvtII
 				}
@@ -58,7 +96,7 @@
 					\InCueContext \cueVoiceArpaUpMvtII
 				}
 				\new Voice {
-					\timeMvtII \nameArpaUpMvtII \musicArpaUpMvtII
+					\timeMvtII \musicArpaUpMvtII
 				}
 			>>
 			\new Staff = "down" <<
@@ -66,12 +104,12 @@
 					\InCueContext \cueVoiceArpaDownMvtII
 				}
 				\new Voice {
-					\timeMvtII \nameArpaDownMvtII \musicArpaDownMvtII
+					\timeMvtII \musicArpaDownMvtII
 				}
 			>>
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold 2.
 			}
@@ -80,11 +118,11 @@
 		}
 	}
 	\score {
-		\new PianoStaff <<
+		\new PianoStaff \with { \nameArpaMvtIII } <<
 			\new Staff = "up" <<
-%				\new Voice {
-%					\formatArpaUpMvtIII
-%				}
+				\new Voice {
+					\formatArpaUpMvtIII
+				}
 				\new Voice {
 					\keepWithTag #'(arpa) \tempiPartMvtIII
 				}
@@ -92,7 +130,7 @@
 					\InCueContext \cueVoiceArpaUpMvtIII
 				}
 				\new Voice {
-					\timeMvtIII \nameArpaUpMvtIII \musicArpaUpMvtIII
+					\timeMvtIII \musicArpaUpMvtIII
 				}
 			>>
 			\new Staff = "down" <<
@@ -100,14 +138,48 @@
 					\InCueContext \cueVoiceArpaDownMvtIII
 				}
 				\new Voice {
-					\timeMvtIII \nameArpaDownMvtIII \musicArpaDownMvtIII
+					\timeMvtIII \musicArpaDownMvtIII
+				}
+			>>
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "3. SCHERZO"
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new PianoStaff \with { \nameArpaMvtIV } <<
+			\new Staff = "up" <<
+				\new Voice {
+					\formatArpaUpMvtIV
+				}
+				\new Voice {
+					\keepWithTag #'(arpa) \tempiPartMvtIV
+				}
+				\new Voice {
+					\InCueContext \cueVoiceArpaUpMvtIV
+				}
+				\new Voice {
+					\timeMvtIV \musicArpaUpMvtIV
+				}
+			>>
+			\new Staff = "down" <<
+				\new Voice {
+					\InCueContext \cueVoiceArpaDownMvtIV
+				}
+				\new Voice {
+					\timeMvtIV \musicArpaDownMvtIV
 				}
 			>>
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1 \bold "4. FINALE - TACET"
 			}
 		}
 		\layout {

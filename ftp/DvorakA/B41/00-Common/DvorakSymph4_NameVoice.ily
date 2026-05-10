@@ -641,25 +641,25 @@ nameGranCassaMvtIII = {
 %###############################################################################
 %#                      V O I C E   N A M E   :   A R P A                      #
 %###############################################################################
-nameArpaUpMvtII = {
-	\set Staff.instrumentName = "ArpaUp"
-	\set Staff.shortInstrumentName = ""
-	\set Staff.midiInstrument = #"orchestral harp"
+nameArpaMvtI = {
+	\set PianoStaff.instrumentName = "Arpa"
+	\set PianoStaff.shortInstrumentName = ""
+	\set PianoStaff.midiInstrument = #"orchestral harp"
 }
-nameArpaUpMvtIII = {
-	\set Staff.instrumentName = "ArpaUp"
-	\set Staff.shortInstrumentName = ""
-	\set Staff.midiInstrument = #"orchestral harp"
+nameArpaMvtII = {
+	\set PianoStaff.instrumentName = "Arpa"
+	\set PianoStaff.shortInstrumentName = ""
+	\set PianoStaff.midiInstrument = #"orchestral harp"
 }
-nameArpaDownMvtII = {
-	\set Staff.instrumentName = "ArpaDown"
-	\set Staff.shortInstrumentName = ""
-	\set Staff.midiInstrument = #"orchestral harp"
+nameArpaMvtIII = {
+	\set PianoStaff.instrumentName = "Arpa"
+	\set PianoStaff.shortInstrumentName = ""
+	\set PianoStaff.midiInstrument = #"orchestral harp"
 }
-nameArpaDownMvtIII = {
-	\set Staff.instrumentName = "ArpaDown"
-	\set Staff.shortInstrumentName = ""
-	\set Staff.midiInstrument = #"orchestral harp"
+nameArpaMvtIV = {
+	\set PianoStaff.instrumentName = "Arpa"
+	\set PianoStaff.shortInstrumentName = ""
+	\set PianoStaff.midiInstrument = #"orchestral harp"
 }
 %###############################################################################
 %#                  V O I C E   N A M E   :   V I O L I N E I                  #

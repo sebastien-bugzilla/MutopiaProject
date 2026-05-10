@@ -9,7 +9,7 @@ musicArpaDownMvtIII = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	R1.*55
+	\mmrnStaffPadding #1 R1.*55
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -37,7 +37,7 @@ musicArpaDownMvtIII = \relative c {
 % Bars 56 to 60
 	R1.*10
 % Bars 61 to 65
-	
+	\mmrnStaffPadding #1.5
 % Bars 66 to 70
 	\ni \mmrPos #4 R1.
 	\mmrPos #4 R
@@ -67,7 +67,7 @@ musicArpaDownMvtIII = \relative c {
 	
 	
 	\mark \default
-	<fis' ais cis>4\arpeggio r r r2 r4 \clef bass
+	<fis' ais cis>4\arpeggio r r r2 r4 
 % Bars 111 to 115
 	R1.*28
 % Bars 116 to 120
@@ -82,18 +82,18 @@ musicArpaDownMvtIII = \relative c {
 	
 	
 	
-	R1.\fermata \section
-	\time 2/4 \key c \major R2*16
+	\once \ni R1.\fermata \section \newSpacingSection
+	\time 2/4 \key c \major R2*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-	
-	
-	
-	\mark \default
+	\ni R2
+	R
+	R
+	R \no \mark \default \clef bass
 % Bars 156 to 160
 	<c,, e g c>4\arpeggio <c' e g c>\arpeggio
 	<c, e g c>\arpeggio <c' e g c>\arpeggio
@@ -167,7 +167,7 @@ musicArpaDownMvtIII = \relative c {
 	
 	
 	
-	\section
+	\section \newSpacingSection
 % Bars 266 to 270
 	\time 6/4 \key d \minor R1.*55
 % Bars 271 to 275
@@ -209,21 +209,36 @@ musicArpaDownMvtIII = \relative c {
 	q\arpeggio r r q\arpeggio r r
 	q\arpeggio r r q\arpeggio r r
 	q\arpeggio r r <g c e g>\arpeggio r r
-	<g cis e g>\arpeggio r r q\arpeggio r r \clef bass \section
+	<g cis e g>\arpeggio r r q\arpeggio r r \clef bass \section \newSpacingSection
 % Bars 341 to 345
-	\time 2/4 \key d \major R2*47
+	\time 2/4 \key d \major R2*12
 % Bars 346 to 350
 	
 % Bars 351 to 355
 	
-% Bars 356 to 360
 	
+	\ni R2
+	R
+	R \no
+% Bars 356 to 360
+	R
+	\ni R
+	R \no
+	R2*6
 % Bars 361 to 365
 	
+	
+	
+	
+	R2*10
 % Bars 366 to 370
 	
 % Bars 371 to 375
 	
+	
+	
+	
+	R2*13
 % Bars 376 to 380
 	
 % Bars 381 to 385
@@ -231,5 +246,5 @@ musicArpaDownMvtIII = \relative c {
 % Bars 386 to 388
 	
 	
-	R2\fermata \fine
+	\ni R2\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

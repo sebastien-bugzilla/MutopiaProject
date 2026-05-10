@@ -595,7 +595,23 @@ mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::se
 
 tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
+setSpacingIncrement = #(define-music-function
+	(increment)
+	(number?)
+	#{
+		\override Score.SpacingSpanner.spacing-increment = #increment
+	#}
+)
 
+resetSpacingIncrement = \revert Score.SpacingSpanner.spacing-increment
+
+mmrnStaffPadding = #(define-music-function
+	(padding)
+	(number?)
+	#{
+		\override MultiMeasureRestNumber.staff-padding = #padding
+	#}
+)
 
 %###############################################################################
 %  Fonctions sur étagère
