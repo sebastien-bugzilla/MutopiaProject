@@ -40,7 +40,7 @@ musicViolinoIMvtI = \relative c {
 		a(-> e' f e)  bes'(-> a bes a)  d(->_\crescmarkup cis d cis)
 		f(->\< e f e)  bes'(-> a bes a)  a( cis e a)\! \mark \default
 % Bars 26 to 30
-		<d,, d'>2->\ff a'8.-> d16-.
+		\tempoDown \tempoXoffset #0.5 <d,, d'>2->-\offset X-offset -2.5 \ff a'8.-> d16-.
 		cis2\fz( bes8) r
 		g'4..\fz e16[-. cis8.-> g16-.]
 		f4.(->\fz a16 f) d8 r
@@ -69,7 +69,7 @@ musicViolinoIMvtI = \relative c {
 % Bars 51 to 55
 		
 		
-		bes'4(^\brackM\arco_\mpespressivomolto d4. ees8)
+		bes'4(-\offset X-offset -3 ^\brackM\arco_\mpespressivomolto d4. ees8)
 		f4.( ees8 c4)
 		bes( d4. ees8)
 % Bars 56 to 60
@@ -163,7 +163,7 @@ musicViolinoIMvtI = \relative c {
 				r r r16 a(\pp^\arco b cis)
 			}
 			\volta 2 {
-				r4 gis''8\f^\pizz r e r
+				r4 gis''8\f-\offset X-offset 0.5 ^\pizz r e r
 				cis r gis r e r
 			}
 		}
@@ -176,7 +176,7 @@ musicViolinoIMvtI = \relative c {
 	gis'\pp r e\> r cis r\!
 	gis' r e r cis r
 % Bars 136 to 140
-	\tuplet 3/2 4 {fis\ff^\arco fis fis  fis' fis fis  cis cis cis
+	\tuplet 3/2 4 {fis\ff-\offset X-offset -2 ^\arco fis fis  fis' fis fis  cis cis cis
 	ais ais ais  fis fis fis  cis cis cis
 	fis fis fis  ais' ais ais  fis fis fis
 	cis cis cis  ais ais ais  fis fis fis
@@ -197,7 +197,7 @@ musicViolinoIMvtI = \relative c {
 	dis r b r fis\! r
 	r4 bes'!8\fz\> r ges r
 	ees r bes r ges\! r
-	a4(_\fdolce^\arco\< c4. ees8)\!
+	a4(\f-\offset X-offset 1 _\dolce^\arco\< c4. ees8)\!
 	ees2(\> bes4)\!
 % Bars 156 to 160
 	a4( c4.\< ees8)\!
@@ -216,9 +216,9 @@ musicViolinoIMvtI = \relative c {
 	bes( c bes a g a)
 	bes4( d4. c8)
 	bes( c bes a g a)
-	bes2(\f\< g8 a
+	bes2(\f\< g8 a)
 % Bars 171 to 175
-	<< bes2 {s8 s s s\!}>> g a) \mark \default
+	<< bes2( {s8 s s s\!}>> g a) \mark \default
 	bes-.\ff r <bes, bes'>-. r <a ges'>-.\fz r
 	<d, bes' f'>-.\arpeggio r <bes' bes'>-. r <a ges'>-.\fz r
 	<d, bes' f'>-.\arpeggio r <d bes' bes'>4..(->\arpeggio a''16-.)
@@ -233,7 +233,7 @@ musicViolinoIMvtI = \relative c {
 	a-.-> r d-.-> r bes-.-> r
 	a-> r cis4..->\ff b16
 	a8->[ r16 b] a8->[ r16 gis] fis8->[ r16 gis]
-	ais8 r <ais, fis' cis'>4-.\fz r
+	ais8 r <ais, fis' cis'>4-.-\offset X-offset 0.5 \fz r
 	R2.
 % Bars 186 to 190
 	r4 q-.\fz r
@@ -322,7 +322,7 @@ musicViolinoIMvtI = \relative c {
 	a16( e' f e) bes'(-> a bes a) d->(\< cis d cis)
 	f->( e f e) bes'(-> a bes a) a( cis e a)\!
 % Bars 261 to 265
-	<d,,, d' d'>2->\arpeggio\ff a''8.-> d16-.
+	<d,,, d' d'>2->\arpeggio-\offset X-offset 0.5 \ff a''8.-> d16-.
 	cis2->(\fz bes!8) r
 	g'4..->\fz e16-.[ cis8.-> g16-.]
 	f4.(-> a16 f) d8 r
@@ -330,7 +330,7 @@ musicViolinoIMvtI = \relative c {
 % Bars 266 to 270
 	d2->~ d8 r
 	f4..->\fz e16-. d( c b f')
-	e8-. r a-. r f-.\fz r
+	e8-. r a-. r \dynEO #'(0 . 1) f-.\fz r
 	e-. r a-. r f-.\fz r
 	e-. r a->[ r16 gis-. fis8-> r16 e-.]
 % Bars 271 to 275
@@ -359,7 +359,7 @@ musicViolinoIMvtI = \relative c {
 	
 % Bars 291 to 295
 	
-	r4 r e8.(\f\< e'16)\!
+	r4 r e8.(-\offset X-offset -2 \f\< e'16)\!
 	e4..->_\crescmarkup c16([ a8. e16])
 	e'4..-> c16[( a8. e16])
 	f'4..-> d16[( b8. f16]) \mark \default
@@ -408,12 +408,12 @@ musicViolinoIMvtI = \relative c {
 % Bars 331 to 335
 	g8: bes: g: e: cis: bes:
 	g: e: cis': bes: g': e:
-	\acciaccatura <e, cis'> a'2\f~ a8 <a, cis e>-.
+	\acciaccatura <e, cis'> a'2\f~ a8 <a, cis! e>-.
 	q8.->\< <a cis e a>16-> q4->\! r
 	<gis e' cis'>4-^\ff r r
 % Bars 336 to 340
 	R2.
-	\acciaccatura <e cis'>8 a'2\f\<~ a8 <a, cis e>-.
+	\acciaccatura <e cis'>8 a'2\f\<~ a8 <a, cis! e>-.
 	q8.-> <a cis e a>16-> q4->\! r
 	<gis e' cis'>4-^\ff r r
 	R2. \mark \default
@@ -438,8 +438,8 @@ musicViolinoIMvtI = \relative c {
 % Bars 356 to 360
 	fis) d4.( e8)\!
 	fis2.\p~
-	fis8_\dimmarkup g( fis e d e \mark \default
-	fis) r a,,(\pp gis a gis
+	fis8_\dimmarkup g( fis e d e \markWhiteout \mark \default
+	fis) r a,,(-\offset X-offset -1.5 \pp gis a gis
 	a gis a gis a gis)
 % Bars 361 to 365
 	a( gis a gis a gis
@@ -460,10 +460,10 @@ musicViolinoIMvtI = \relative c {
 	g( bes a g d g)
 	a( c bes a f a)\!
 % Bars 376 to 380
-	\time 2/4 d([_\fzmarkup\< bes f bes)]
-	e_\fzmarkup[( cis a cis)]
-	f_\fzmarkup[( d a d)]
-	g_\fzmarkup[( e\! c! e)]
+	\time 2/4 \markEO #'(0 . 1) d([_\fzmarkup\< bes f bes)]
+	\markEO #'(0 . 1.2) e_\fzmarkup[( cis a cis)]
+	\markEO #'(0 . 1.4) f_\fzmarkup[( d a d)]
+	\markEO #'(0 . 1.6) g_\fzmarkup[( e\! c! e)]
 	\time 3/4 a2.:16\ff
 % Bars 381 to 385
 	a:
@@ -515,7 +515,7 @@ musicViolinoIMvtI = \relative c {
 	bes'4.(\< g8 f e)
 % Bars 421 to 425
 	cis'( bes a g) e'([ cis]
-	bes[ a])\! g'4.(\f_\sfzmarkup e8)
+	bes[ a])\! \markEO #'(0 . 5) g'4.(\f_\sfzmarkup e8)
 	cis( bes\> g e cis bes\!
 	g_\dimmarkup e cis) r r4 \markk
 	d16(\pp a d a  d a d a  cis a cis a
@@ -526,16 +526,16 @@ musicViolinoIMvtI = \relative c {
 	d( a d a  d a d a  cis a cis a
 	d a d a  a' a, a' a,  cis a cis a)
 % Bars 431 to 435
-	d( a d a  d a d a  cis a cis a
+	\shape #'((0 . 0.3)(0 . 0.6)(0 . 0.6)(0 . 0.3)) Slur d( a d a  d a d a  cis a cis a
 	d a d a  a' a, a' a,  cis a cis a)
 	\repeat tremolo 6 {d(\pp cis}
 	\repeat tremolo 6 {d cis}
 	\repeat tremolo 6 {d cis)}
 % Bars 436 to 440
-	d4(\pp f a
+	\shape #'((0 . 1.3)(0 . -0.8)(0 . -0.8)(0.5 . 1)) Slur d4(\pp f a
 	d a cis)
-	d( f a8)\noBeam \tuplet 3/2 8 {d,16(\f\< f a\!}
-	d2->)\ff a8.-> d16-.
+	d( f a8)\noBeam \tuplet 3/2 8 {d,16(-\offset X-offset -1 \f\< f a\!}
+	\tempoEO #'(0 . -0.3) d2->)\ff a8.-> d16-.
 	cis2->( bes8) r
 % Bars 441 to 445
 	\acciaccatura fis8 fis'2-> cis8. fis16

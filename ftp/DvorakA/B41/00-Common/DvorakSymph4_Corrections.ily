@@ -204,3 +204,23 @@ correctionArpa = \markup {
 	% Mvt III, bar 180, right hand
 	"In Mvt III, bar 180, for right hand, the second beat, chords is different in conductor and part score (there is a d in conductor version, a c in part score). The c is in contradiction with left hand. The conductor version is kept."
 }
+correctionViolinI = \markup {
+	
+	% Mvt I, bar 334 - 337
+	"In Mvt I, bar 334 and 337, a missing hairpin is added."
+	
+	% Mvt II, bar 40
+	"In Mvt II, bar 40, the first note is different in conductor (ees) and in part score (d). Conductor version is prefered based on recordings."
+	
+	% Mvt II, bar 50
+	"In Mvt II, bar 50, the first note is different in concuctor (g) and in part score (f). Conductor version is prefered based on recordings."
+	
+	% Mvt II, bar 87
+	"In Mvt II, bar 87, a missing natural is added for the e (the second quarter note) as it is in conductor score. It is based on other voice (violin II and cello)."
+	
+	% Mvt III, bar 103
+	"In Mvt III, bar 103, conductor and part score have different notes for the lower voice. In conductor score, the last two notes are "cis a" whereas it is "a fis" for part score. Conductor version is kept."
+	
+	% Mvt III, bar 232
+	"In Mvt III, bar 232, conductor and part scrore have different notes. Last two notes in conductor score are 'd c', whereas it is 'e d' in part score. Conductor score is prefered."
+}

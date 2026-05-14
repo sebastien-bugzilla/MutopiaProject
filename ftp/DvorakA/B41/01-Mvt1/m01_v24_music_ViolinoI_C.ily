@@ -216,9 +216,9 @@ musicViolinoIMvtI = \relative c {
 	bes( c bes a g a)
 	bes4( d4. c8)
 	bes( c bes a g a)
-	bes2(\f\< g8 a
+	bes2(\f\< g8 a)
 % Bars 171 to 175
-	<< bes2 {s8 s s s\!}>> g a) \mark \default
+	<< bes2( {s8 s s s\!}>> g a) \mark \default
 	bes-.\ff r <bes, bes'>-. r <a ges'>-.-\offset X-offset -1 \fz r
 	<d, bes' f'>-.\arpeggio r <bes' bes'>-. r <a ges'>-.-\offset X-offset -1 \fz r
 	<d, bes' f'>-.\arpeggio r <d bes' bes'>4..(->\arpeggio a''16-.)

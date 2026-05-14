@@ -114,7 +114,7 @@ musicViolinoIMvtIV = \relative c {
 	gis8 b d a')\!
 % Bars 96 to 100
 	gis8.(\< f16 e4~
-	e8 fis gis d')\!
+	e8 f gis d')\!
 	c8.( b16 gis4~
 	gis8)[ a]( b f')
 	e8.(\mf d16 cis4~\<

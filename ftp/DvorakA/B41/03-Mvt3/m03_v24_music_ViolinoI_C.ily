@@ -352,7 +352,7 @@ musicViolinoIMvtIII = \relative c {
 	fis( g) e-. a( bes) gis-.
 	a( bes) gis-. a( bes) gis-.
 % Bars 281 to 285
-	\arpeggioBracket <a, cis e a>2->\arpeggio^\div <bes cis e bes'>4->~ q2 <b cis e b'>4->~
+	\arpeggioBracket <a, cis e a>2->\arpeggio\p^\div <bes cis e bes'>4->~ q2 <b cis e b'>4->~
 	q2 <bes cis e bes'>4->~ q2_\crescmarkup <a cis e a>4->~
 	q2 <bes! cis e bes'!>4->~ q2 <b cis e b'>4->~
 	q2 <bes! cis e bes'!>4->~ q2 <a cis e a>4->~

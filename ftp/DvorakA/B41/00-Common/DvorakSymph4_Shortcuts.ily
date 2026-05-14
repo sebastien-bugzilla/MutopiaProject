@@ -67,6 +67,15 @@ fzmarcatobrackpocoapococresc = \markup {
 		}
 	}
 }
+fzmarcatobrackpoco_apococresc = \markup {
+	\hspace #-0.55 \overlay {
+		\bracket \with-true-dimensions \dynamic fz
+		\translate #'(3.5 . 2.5) \column {
+			\lower #1.5 \line { \italic { "marcato" \concat { \small "[" "poco"} } }
+			\line { \italic { \concat { "a poco" \small "]" } "cresc."} }
+		}
+	}
+}
 %--------------------
 % dynamics sfz
 %--------------------
@@ -162,7 +171,7 @@ dolce = \markup {\italic dolce}
 div = \markup {div.}
 marcato = \markup {\italic marcato}
 aII = \markup {\bold a2}
-tranquillo = \markup {tranquillo}
+tranquillo = \markup {\italic tranquillo}
 benmarcato = \markup {\italic "ben marcato"}
 benmarc = \markup {\italic "ben marc."}
 espress = \markup {\italic espress.}
@@ -187,6 +196,8 @@ marc = \markup {\italic marc.}
 pocoapoco = \markup {\italic "poco a poco"}
 pocoa = \markup {\italic "poco a"}
 apococresc = \markup {\italic "a poco cresc."}
+pocoritard = \markup {\italic "poco ritard"}
+atempo = \markup {\italic "a tempo"}
 %--------------------
 % instrument modification
 %--------------------
@@ -333,6 +344,14 @@ setStemOffset = #(define-music-function
 )
 
 unsetStemOffset = \revert Stem.length
+
+stemOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \offset length #offset Stem
+	#}
+)
 
 beamOffset = #(define-music-function
 	(position)

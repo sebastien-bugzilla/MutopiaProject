@@ -1975,7 +1975,7 @@ cueVoiceViolinoIMvtI = \relative c {
 cueVoiceViolinoIMvtII = \relative c {
 	s1*14
 	% bars 15 - 17
-	ees'4(_\markup {Cl.} g) f8-^ ees-^ d-^ c-^
+	ees'!4(_\markup {Cl.} g) f8-^ ees-^ d-^ c-^
 	bes4( d2 \tuplet 3/2 4 {c8 d a)}
 	c2.~ c8 bes
 }
@@ -1988,10 +1988,10 @@ cueVoiceViolinoIMvtIII = \relative c {
 	gis2)->~ gis8 a b2->~ b8 gis \oneVoice
 	s1.*67
 	% bar 123
-	\voiceTwo r2_\markup {Viol.II} r4 fis( a dis,) \oneVoice
+	\voiceTwo r2 r4 fis(^\markup {Viol.II} a dis,) \oneVoice
 	s1.*16 s2*15
 	% bar 155
-	\voiceTwo r4 \tuplet 6/4 4 {r16_\markup {Ob.} g(\< a b c d)\!}
+	r4 \tuplet 6/4 4 {r16-\offset X-offset -1 ^\markup {Ob.} g(\< a b c d)\!}
 	s2*110 s1.*51
 	% bar 317 - 320
 	\voiceOne bes1.->~\fz^\markup {Ob.}
