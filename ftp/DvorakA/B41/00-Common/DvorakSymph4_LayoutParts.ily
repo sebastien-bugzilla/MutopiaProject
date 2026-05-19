@@ -20,6 +20,7 @@
 		\override Hairpin.height = 0.55
 %		\override TrillSpanner.bound-details.right.padding = #1
 		\override TrillSpanner.bound-details.right.attach-dir = 1
+%		\override TrillSpanner.to-barline = ##f
 		\override Arpeggio.padding = #0.25
 		\override TupletNumber.avoid-slur = #'ignore
 		\override DynamicTextSpanner.font-size = #0

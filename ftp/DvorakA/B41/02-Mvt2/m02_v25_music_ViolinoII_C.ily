@@ -83,7 +83,7 @@ musicViolinoIIMvtII = \relative c {
 % Bars 71 to 75
 	r16 <bes d>\pp^\arco[ r q r q r q] r q[ r q r q r q]
 	r <bes ees>[ r q r q r q] r <c ees>[ r q r q r q]
-	r <bes ees>[ r q r <c ees> r q] r q[ r q r <f aes> r q]
+	r <bes d>[ r q r <c ees> r q] r q[ r q r <f aes> r q]
 	r <d f>[ r q r <aes' ces>\< r q] r <g bes>[ r q r <ees g> r q]\!
 	r <c! ees>[ r q r q r q] r <a! f'>[ r q_\dimmarkup r q r q]
 % Bars 76 to 80
@@ -150,7 +150,7 @@ musicViolinoIIMvtII = \relative c {
 	<f, c' a'>8\fz^\pizz r r4 r2
 	r8 <ges bes>\mf <bes des> <ges bes> r\> <f aes> <aes! ces> <f aes>\!
 	r <des ges>\pp <f! bes> <des f> r\< <des! e> <e! bes'>_\crescmarkup <des e>\!
-	r <des g!>\< <f bes> <d f>\! r <d f>\< <f bes> <ees f>\!
+	r <des g!>\< <f bes> <d f>\! r <d f>\> <f bes> <ees f>\!
 	d16-\offset X-offset -1 \p(-.^\arco f-. f-. f-.) f(-. f-. f-. f-.) f-.( f-. f-. f-.) <c ees>-.(\>^\div q-. q-. q-.)\!
 % Bars 131 to 135
 	<bes d>-.(\pp q-. q-. q-.) q-.( q-. q-. q-.) q-.( q-. q-. q-.) <a c>-.(^\div q-. q-. q-.)

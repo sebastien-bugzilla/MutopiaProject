@@ -9,7 +9,7 @@ musicViolinoIIMvtII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R1*14
+	\mmrnDown R1*14
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -17,7 +17,7 @@ musicViolinoIIMvtII = \relative c {
 	
 	
 	
-	\ni \mmrPos #4 R1
+	\ni \mmrPos #6 R1
 % Bars 16 to 20
 	\mmrPos #4 R
 	\mmrPos #4 R \no \mark \default
@@ -25,7 +25,7 @@ musicViolinoIIMvtII = \relative c {
 	des'16( f, bes f g ees c ees) r2
 	c'16( ees, aes ees bes' ges ees ges) r2
 % Bars 21 to 25
-	a16( c, f c a' fis d fis) r2
+	a!16( c, f c a' fis d fis) r2
 	g'16(\< b, e g, c g ees! g)\! r2
 	g'16(_\brackM\dimmarkup a, d a d a f a) r2
 	f'16( g, c g c\p g ees g) r2
@@ -40,8 +40,8 @@ musicViolinoIIMvtII = \relative c {
 	e'16(_\brackM\pdim g, c g bes\pp g ees! g) r2
 	ees'16( g, bes g ees' g, ees g) r2
 	bes16(\< d, g d g d bes d)\! r2
-	c'16(\p\> f, a f a f a, f')\! r2 \mark \default
-	R1^\tranquillo
+	c'16(\p\> f, a f a f a, f')\! r2 \markXoffset #-0.4 \mark \default
+	\mmrLength #12 R1-\offset X-offset 1 ^\tranquillo
 % Bars 36 to 40
 	r4 <g, ees'>4\pp^\pizz\arpeggio r2
 	r4 <bes ees>\p\arpeggio r2
@@ -61,7 +61,7 @@ musicViolinoIIMvtII = \relative c {
 	r4 <g ees'>\p\arpeggio r2
 	r2 <a f'>4\arpeggio r
 % Bars 51 to 55
-	r q\p\> <g f'>\! <a f'>\pp \mark \default
+	r \hairpinShorten #'(-0.5 . -0.5) q\p\> <g f'>\! <a f'>\pp \markXoffset #-0.2 \mark \default
 	r8 <bes d>\p <d f> <bes d> r <aes des> <des! f> <aes des>
 	r <des f> <ees g> <c ees> r q <ees g> <des ees>
 	r <c ees> <ees bes'> <bes ees> r q <ees bes'> <bes ees>
@@ -83,11 +83,11 @@ musicViolinoIIMvtII = \relative c {
 	\tuplet 3/2 4 {r8 <bes g'>\> q} q4\! \tuplet 3/2 4 {r8 <a f'>\p\> q} q4\!
 	<c f>8 r r4 r2
 	R1*2
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 % Bars 71 to 75
 	r16 <bes d>\pp^\arco[ r q r q r q] r q[ r q r q r q]
 	r <bes ees>[ r q r q r q] r <c ees>[ r q r q r q]
-	r <bes ees>[ r q r <c ees> r q] r q[ r q r <f aes> r q]
+	r <bes d>[ r q r <c ees> r q] r q[ r q r <f aes> r q]
 	r <d f>[ r q r <aes' ces>\< r q] r <g bes>[ r q r <ees g> r q]\!
 	r <c! ees>[ r q r q r q] r <a! f'>[ r q_\dimmarkup r q r q]
 % Bars 76 to 80
@@ -100,20 +100,20 @@ musicViolinoIIMvtII = \relative c {
 	ges'8-^\p^\benmarcato f-^ e[ r16 e-.] aes8-> g!->\fz~ g16 f-> g-> aes!->
 	g2\< bes!4( c8 d!)\!
 	c4(\< a! fis)\! d8( \tuplet 3/2 8 {c'16 bes a)}
-	bes8-^\mf\< a!-^ aes-^[ r16 aes-.] des8-> c->(~_\fzmarkup c \tuplet 3/2 8 {bes16 c des)\!}
+	bes8-^\mf\< a!-^ aes-^[ r16 aes-.] des8-> \markEO #'(0 . -9) c->(~^\fzmarkup c \once \tupletUp \tuplet 3/2 8 {bes16 c des)\!}
 	c8(\f aes a4_\crescmarkup~ a8) bes->(~ bes16 ces8 des16)
 % Bars 86 to 90
 	des4-^~ des8 c!-^ bes-^[ r16 bes-.] ges8-> f->~
 	f16\< e-> f-> fis->\! g8->_\crescmarkup f-> e!16-> f-> g-> a-> bes-> a-> bes-> b->
-	c\ff <g, e'>-> q-> q->  <g f'>-> q-> q-> q->  q-> q-> q-> q->  q-> q-> <g e'>-> q->
+	c-\offset X-offset -1 \ff <g, e'>-> q-> q->  <g f'>-> q-> q-> q->  q-> q-> q-> q->  q-> q-> <g e'>-> q->
 	q-> q-> q-> q->  <g f'> q q q  q\> q q q  q q <g e'!> q\!
 	e'-.\fp c-. c-. c-.  des-.\> des-. des-. des-.  des-. des-. des-. des-.\!  des-. des-. c-. c-.
 % Bars 91 to 95
-	c-._\dimmarkup c-. c-. c-.  d!-. d-. d-. d-.  d-. d-. d-. d-.  d-. d-. d-. d-.
-	d-.\> d-. d-. d-.  des-. des-. des-. des-.  des-. des-. des-. des-.\! des4\pp~
-	des8 r r4 << g,2\pp\<~ {s8 s s s\!}>> \section
-	\time 2/4 g8 g'4(\> f8\! \section \mark \default
-	\time 4/4 ees)\pp r r4 r2
+	\tempoXoffset #13 c-._\dimmarkup c-. c-. c-.  d!-. d-. d-. d-.  d-. d-. d-. d-.  d-. d-. d-. d-.
+	d-.\> d-. d-. d-.  des-. des-. des-. des-.  des-. des-. des-. des-. des4\pp~
+	des8 r r4 << g,2\pp\<~ {s8 s s s}>> \section
+	\time 2/4 g8\! g'4(\> f8\! \section \mark \default
+	\time 4/4 \tempoXoffset #1 ees)\pp r r4 r2
 % Bars 96 to 100
 	R1*3
 	
@@ -146,15 +146,15 @@ musicViolinoIIMvtII = \relative c {
 	c4~ c16 bes32(_\crescmarkup a) a( g) g( f) f4 g32(\f\< f) f( ees) ees( d) d( c)\! \mark \default
 % Bars 121 to 125
 	bes8\fz r r4 r2
-	aes(\pp\< << a)\> {s8 s s s\!}>>
+	\hairpinShorten #'(-0.5 . 0.6) aes(-\offset X-offset -1.5 \pp\< << \hairpinShorten #'(-0.6 . 0) a)\> {s8 s s s\!}>>
 	bes4( f'2\< c8. d16)\!
-	bes4(\< << ees2^~ {s8 s\! s\> s}>> \tuplet 3/2 4 {<c ees>8 <d f> <ees ges>\!}
+	\hairpinShorten #'(0 . -1) bes4(\< << ees2^~ {s8 s\! \hairpinShorten #'(1 . 0) s\> s}>> \tuplet 3/2 4 {<c ees>8 <d f> <ees ges>\!}
 	<d f>) r r4 \tuplet 6/4 4 {bes'16\((\brack\pp\< c) c( d) d( ees)\)\!} ees8 r
 % Bars 126 to 130
 	<f, c' a'>8\fz^\pizz r r4 r2
 	r8 <ges bes>\mf <bes des> <ges bes> r\> <f aes> <aes! ces> <f aes>\!
 	r <des ges>\pp <f! bes> <des f> r\< <des! e> <e! bes'>_\crescmarkup <des e>\!
-	r <des g!>\< <f bes> <d f>\! r <d f>\< <f bes> <ees f>\!
+	r <des g!>\< <f bes> <d f>\! r <d f>\> <f bes> <ees f>\!
 	d16\p(-.^\arco f-. f-. f-.) f(-. f-. f-. f-.) f-.( f-. f-. f-.) <c ees>-.(\>^\div q-. q-. q-.)\!
 % Bars 131 to 135
 	<bes d>-.(\pp q-. q-. q-.) q-.( q-. q-. q-.) q-.( q-. q-. q-.) <a c>-.(^\div q-. q-. q-.)
@@ -165,7 +165,7 @@ musicViolinoIIMvtII = \relative c {
 % Bars 136 to 140
 	<c ees>8\fz^\pizz r r4 r2
 	R1
-	bes4->\p\> bes->\! r bes\pp
+	\hairpinShorten #'(-0.5 . 0) bes4->-\offset X-offset -1 \p\> bes->\! r bes\pp
 	bes r r2
 	R1
 % Bars 141 and 142

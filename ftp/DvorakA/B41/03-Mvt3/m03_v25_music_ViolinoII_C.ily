@@ -353,7 +353,7 @@ musicViolinoIIMvtIII = \relative c {
 	c( e) e-. <c e>( <e a>) q-.
 % Bars 311 to 315
 	<d f>(\fp <f bes>) q-. <d f>( <f bes>) q-. 
-	<d f>(_\crescmarkup <f bes>) q-. <d f>( <f bes>) q-. 
+	<d f>(_\dimmarkup <f bes>) q-. <d f>( <f bes>) q-. 
 	<c e>( <e a>) q-. <c e>( <e a>) q-. 
 	<c e>( <e a>) q-. c( e) e-.
 	d( e) e-. d( e) e-.

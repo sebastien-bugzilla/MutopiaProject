@@ -415,7 +415,7 @@ musicViolinoIIMvtIV = \relative c {
 	aes4.) r8
 	<ees bes'>4-.\f r
 % Bars 351 to 355
-	q-. r
+	<ees c'>-. r
 	<f des'>2:32\ff
 	q:
 	q8 r f16(->\f ees des8)

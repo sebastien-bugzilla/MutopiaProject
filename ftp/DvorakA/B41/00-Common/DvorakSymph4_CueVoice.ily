@@ -2028,7 +2028,7 @@ cueVoiceViolinoIIMvtII = \relative c {
 cueVoiceViolinoIIMvtIII = \relative c {
 	s1.*139 s2*15
 	% bar 155
-	\voiceTwo r4 \tuplet 6/4 4 {r16_\markup {Ob.} g''(\< a b c d)\!} \oneVoice
+	r4 \tuplet 6/4 4 {r16-\offset X-offset -3.3 _\markup {Ob.} g''(\< a b c d)\!}
 	s2*82
 	% bars 238 - 241
 	c,4..(^\markup {Viol.I.} b16

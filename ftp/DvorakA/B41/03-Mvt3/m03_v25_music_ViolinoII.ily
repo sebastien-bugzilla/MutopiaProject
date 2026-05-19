@@ -21,17 +21,17 @@ musicViolinoIIMvtIII = \relative c {
 	bes!-> des->\pcrescD\< e!-> e( f) c-.
 	des-> f-> a-> a( bes) e,-.
 % Bars 11 to 15
-	f-> bes-> c-> c( des)\! cis,-.\p
-	cis( e g e g bes)
+	f-> bes-> c-> c( des) cis,-.\p
+	cis( e g e g \once \stemUp bes)
 	g( bes_\crescmarkup cis dis e cis)
 	fis( g) e-. a( bes) gis-.
 	a( bes) gis-. a( bes) gis-.
 % Bars 16 to 20
-	r e,8(\p g cis4) r e,8( g cis4)
+	\startMeasureCount r e,8(\p g cis4) r e,8( g cis4)
 	r e,8( g cis4) r_\crescmarkup e,8( g cis4)
 	r e,8( g cis4) r e,8( g cis4)
 	r e,8( g cis4) r e,8( g cis4)
-	r e,8( g cis4) r e,8( g cis4)
+	\tempoXoffset #13.5 r e,8( g cis4) r e,8( g cis4) \stopMeasureCount
 % Bars 21 to 25
 	r e,8( g c!4) e,8( g c4) cis-^
 	d-.\fp <f, a>-. q-. <d f>-. <f a>-. q-. 
@@ -69,7 +69,7 @@ musicViolinoIIMvtIII = \relative c {
 	<c e>( <e a>) q-. c( e) e-.
 	d( e) e-. d( e) e-.
 % Bars 51 to 55
-	c(\< e) e-. <c e>( <e a>) q-.\!
+	\hairpinShorten #'(0 . 2) c(\< e) e-. <c e>( <e a>) q-.\!
 	<d f>_\fzmf( <f bes>) q-. <d f>( <f bes>) q-. 
 	<d f>( <f bes>) q-._\crescmarkup <d f>( <f bes>) q-. 
 	<c e>( <e a>) q-. c( e) e-.
@@ -91,24 +91,24 @@ musicViolinoIIMvtIII = \relative c {
 	gis->_\crescmarkup b-> c-> cis( d) ais-.->
 	b-> d-> e-> e( f) d-.
 	g( aes) f-. ais( b) gis-.
-	a!\f a,2\p~ a4_\crescmarkup bes!2->~
+	a!-\offset X-offset -0.5 \f a,2_\pcresc~ a4 bes!2->~
 % Bars 71 to 75
 	bes4 b2->~ b4 bes2->~
 	bes4 a2->~ a4 bes2->~
 	bes4 b2->~ b4 bes2->~
-	bes4 b2->~ b4 c2->~
+	\tempoXoffset #8.5 bes4 b2->~ b4 c2->~
 	c4 cis2->~ cis d4-. \section
 % Bars 76 to 80
 	\key d \major <d, d'>4\ff r r r2 r4
 	<d a' fis'>\arpeggio r r r2 r4
 	<e cis' e>\arpeggio r r r2 r4
 	q4\arpeggio r r r2 r4
-	<fis a fis'>\arpeggio r r r2 r4
+	\startMeasureCount <fis a fis'>\arpeggio r r r2 r4
 % Bars 81 to 85
 	q\arpeggio r r r2 r4
 	q\arpeggio r r r2 r4
 	q\arpeggio r r r2 r4
-	q\arpeggio r r r2 r4
+	q\arpeggio r r r2 r4 \stopMeasureCount
 	<fis d' b'>\arpeggio r r r2 r4
 % Bars 86 to 90
 	<fis cis' a'>\arpeggio r r r2 r4
@@ -163,8 +163,8 @@ musicViolinoIIMvtIII = \relative c {
 	
 	
 	
-	R1.\fermata \section
-	\time 2/4 \key c \major R2*15
+	\once \ni R1.\fermata \section
+	\sectionLabel "TRIO" \time 2/4 \key c \major \mmrnDown R2*15
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -174,7 +174,7 @@ musicViolinoIIMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #4 R2 \no \mark \default
+	\ni \mmrPos #6 R2 \no \mark \default
 % Bars 156 to 160
 	\tuplet 3/2 4 {c8(_\pdolce e g)} g4(~
 	\tuplet 3/2 4 {g8 fis g)} g4(~
@@ -188,7 +188,7 @@ musicViolinoIIMvtIII = \relative c {
 	fis(\! b\< d)} d4(~
 	\tuplet 3/2 4 {d8 cis d)} d4(~\!
 % Bars 166 to 170
-	\tuplet 3/2 4 {d8\mf cis d) r dis( e)
+	\tuplet 3/2 4 {d8-\offset X-offset -1 \mf cis d) r dis( e)
 	r cis( d!) r ais( b)
 	b(_\crescmarkup d fis)} fis4(~
 	\tuplet 3/2 4 {fis8 eis fis)} fis4(~
@@ -208,12 +208,12 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 181 to 185
 	\tuplet 3/2 4 {d8 cis d)} d4(~
 	\tuplet 3/2 4 {d8\< cis d) f( e f)\!} \mark \default
-	g,8_\fzmarcatobrackpocoapococresc f->[^\mf a-> g->]
+	g,8-\offset X-offset -1 _\fzmarcatobrackpocoapococresc f->[^\mf a-> g->]
 	f[-> c'-> b-> a]->
 	e'[-> d-> c-> a']->
 % Bars 186 to 190
 	g-> f-> \tuplet 3/2 4 {e-> d-> <a' c>->
-	<g b>-> <f a>-> <e g>->} <d f>-> r
+	<g b>-> <f a>-> <e g>->} <d f>-> r 
 	r4 a'16->\f g-> f-> e->
 	d-> c-> b-> a-> g(\< fis g a
 	\tuplet 5/4 {b a b c d)} \tuplet 7/4 {e( f! g <a, a'> <b b'> <c c'> <d d'>\!)}
@@ -227,8 +227,8 @@ musicViolinoIIMvtIII = \relative c {
 	<d b'>4\startTrillSpan~ q8[\stopTrillSpan r16 <cis ais'>-.]
 	<d b'>4-> <f a!>->
 	<e gis>-> <c a'>->
-	<b d>4\fz\startTrillSpan~ q8[\stopTrillSpan r16 <a c>-.]
-	<b d>4\fz\startTrillSpan~ q8[\stopTrillSpan r16 <a c>-.]
+	<b d>4-\offset X-offset 0.5 \fz\startTrillSpan~ q8[\stopTrillSpan r16 <a c>-.]
+	<b d>4-\offset X-offset 0.5 \fz\startTrillSpan~ q8[\stopTrillSpan r16 <a c>-.]
 % Bars 201 to 205
 	<b d>4-> <c e>->
 	<b d>-> <g b>->
@@ -243,7 +243,7 @@ musicViolinoIIMvtIII = \relative c {
 	<b g'>-> <a f'>8-.\< <c, a'>32( <d b'> <e c'> <f d'>)\!
 % Bars 211 to 215
 	<g e'>4\fz\startTrillSpan~ q8[\stopTrillSpan r16 <fis dis'>-.]
-	<g e'>4\fz\startTrillSpan~ q8[\stopTrillSpan r16 <fis dis'>-.]
+	<g e'>4\fz-\tweak extra-offset #'(0 . -0.3) \startTrillSpan~ q8[\stopTrillSpan r16 <fis dis'>-.]
 	<g e'>4-> <b g'>->
 	<a f'>-> <g e'>->
 	f4\fz~\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
@@ -251,7 +251,7 @@ musicViolinoIIMvtIII = \relative c {
 	f4\fz~\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 	f4-^ aes-^
 	g-^ f-^ \mark \default
-	f4\brack\fz~\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
+	\noteHeadEsw #'(-0.5 . 0) f4\brack\fz~\startTrillSpan~ \revertNoteHeadEsw f8[\stopTrillSpan r16 e-.]
 	f4\fz~\startTrillSpan~ f8[\stopTrillSpan r16 e-.]
 % Bars 221 to 225
 	f4-^ aes-^
@@ -291,8 +291,8 @@ musicViolinoIIMvtIII = \relative c {
 	aes4. r8
 % Bars 256 to 260
 	aes4--(_\dimmarkup aes--
-	aes-- aes--)
-	aes--(\< aes--\!
+	\tempoXoffset #3.7 aes-- aes--)
+	\shape #'((0 . 0.3)(0 . 1)(0 . 1)(0 . 0.3)) Slur aes--(\< aes--\!
 	aes-- aes--)_\crescmarkup
 	aes(-- aes--
 % Bars 261 to 265
@@ -302,29 +302,29 @@ musicViolinoIIMvtIII = \relative c {
 	e( f) d-.\! e(_\crescmarkup f) d-.
 	e( f) d-. g( aes) f-.} \section
 % Bars 266 to 270
-	\time 6/4 \key d \minor <e, cis' a'>4-^\ff r d-. cis( e) a,-.
+	\time 6/4 \key d \minor \tempoEO #'(-1 . -0.5) <e, cis' a'!>4-^\ff r d-. cis( e) a,-.
 	bes-> r r r2 r4
 	R1.
 	<e cis' a'>4-^ r d-. cis( e) a,-.
 	bes-> r r r2 r4
 % Bars 271 to 275
 	R1.
-	r2 des4-.\f des( f) a,!-.
+	r2 des4-.\f des( f) a,-.
 	bes-. r c-. des( f) a,-.
 	bes!-> des->\pcrescD\< e!-> e( f) c-.
 	des-> f-> a-> a( bes) e,-.
 % Bars 276 to 280
-	f-> bes-> c-> c( des)\! cis,-.\p
-	cis( e g e g bes)
+	f-> bes-> c-> c( des) cis,-.\p
+	cis( e g e g \once \stemUp bes)
 	g( bes_\crescmarkup cis dis e cis)
 	fis( g) e-.  a( bes) gis-.
 	a( bes) gis-. a( bes) gis-.
 % Bars 281 to 285
-	r e,8(\p g! cis4) r e,8( g cis4) 
+	\startMeasureCount r e,8(\p g! cis4) r e,8( g cis4) 
 	r e,8( g cis4) r e,8(_\crescmarkup g cis4) 
 	r e,8( g cis4) r e,8( g cis4) 
 	r e,8( g cis4) r e,8( g cis4) 
-	r e,8( g cis4) r e,8( g cis4) 
+	\tempoXoffset #14 r e,8( g cis4) r e,8( g cis4)  \stopMeasureCount
 % Bars 286 to 290
 	r e,8( g c!4) e,8( g c4) cis-^ 
 	d-.\fp <f, a>-. q-. <d f>-. <f a>-. q-. 
@@ -357,12 +357,12 @@ musicViolinoIIMvtIII = \relative c {
 	c( e) e-. <c e>( <e a>) q-.
 % Bars 311 to 315
 	<d f>(\fp <f bes>) q-. <d f>( <f bes>) q-. 
-	<d f>(_\crescmarkup <f bes>) q-. <d f>( <f bes>) q-. 
+	<d f>(_\dimmarkup <f bes>) q-. <d f>( <f bes>) q-. 
 	<c e>( <e a>) q-. <c e>( <e a>) q-. 
 	<c e>( <e a>) q-. c( e) e-.
 	d( e) e-. d( e) e-.
 % Bars 316 to 320
-	c(\< e) e-. <c e>( <e a>) q-.\!
+	\hairpinShorten #'(0 . 2) c(\< e) e-. <c e>( <e a>) q-.\!
 	<d f>_\fzmf( <f bes>) q-. <d f>( <f bes>) q-. 
 	<d f>( <f bes>) q-._\crescmarkup <d f>( <f bes>) q-. 
 	<c e>( <e a>) q-. c( e) e-.
@@ -384,15 +384,15 @@ musicViolinoIIMvtIII = \relative c {
 	gis->_\crescmarkup b-> c-> cis( d) ais-.->
 	b-> d-> e-> e( f) d-.
 	g( aes) f-. ais( b) gis-.
-	a!\f a,2\p~ a4_\crescmarkup bes!2->~
+	\dynEO #'(0 . 2) a!\f a,2_\pcresc~ a4 bes!2->~
 % Bars 336 to 340
 	bes4 b2->~ b4 bes2->~
 	bes4 a2->~ a4 bes2->~
 	bes4 b2->~ b4 bes2->~
-	bes4 b2->~ b4 c2->~
+	\tempoXoffset #9.5 bes4 b2->~ b4 c2->~
 	c4 cis2->~ cis d4-. \section
 % Bars 341 to 345
-	\time 2/4 \key d \major <a fis'>4:32->_\fffz q8[ r16 <a e'>16-.]
+	\sectionLabel "CODA" \time 2/4 \key d \major \tempoXoffset #0.5 <a fis'>4:32->_\fffz q8[ r16 <a e'>16-.]
 	<a fis'>4:->\fz q8[ r16 <a e'>-.]
 	<d, a' fis'>4-^\arpeggio <d d' a'>-^\arpeggio
 	<d a' g'>-^\arpeggio <d a' fis'>-^\arpeggio
@@ -415,7 +415,7 @@ musicViolinoIIMvtIII = \relative c {
 	
 	
 	
-	<d a'>2\pp^\div~
+	<d a'>2\pp-\offset X-offset -3 ^\div~
 % Bars 366 to 370
 	q~\sempredimD\>
 	q~
@@ -442,6 +442,6 @@ musicViolinoIIMvtIII = \relative c {
 	d8.[(\< cis16) d8.( cis16)]\!
 % Bars 386 to 388
 	d8-^[ f-^ e-^ d-^]
-	a'-.[ r16 d,\ff] \tuplet 3/2 4 {d8( a') a,-.}
-	<d, d'>-. r r4\fermata \fine
+	a'-.[ r16 d,-\offset X-offset -0.6 \ff] \tuplet 3/2 4 {d8( a') a,-.}
+	<d, d'>-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

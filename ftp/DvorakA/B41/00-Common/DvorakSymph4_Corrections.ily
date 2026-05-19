@@ -224,3 +224,17 @@ correctionViolinI = \markup {
 	% Mvt III, bar 232
 	"In Mvt III, bar 232, conductor and part scrore have different notes. Last two notes in conductor score are 'd c', whereas it is 'e d' in part score. Conductor score is prefered."
 }
+correctionViolinII = \markup {
+	
+	% Mvt I, Bar 37
+	"In Mvt I, Bar 37, a missing accidental is added on the c of the chord on the first beat. It is confirmed by the other voices."
+	
+	% Mvt I, Bar 183
+	"In Mvt I, Bar 183, conductor and part score have different notes (eis in conductor score, e in part score). Conductor version is kept."
+	
+	% Mvt I, Bar 285
+	"In Mvt I, Bar 185, the natural sign is placed on the d whereas it should be on the b, as it is in conductor version. This measure is in b minor, and a b natural is needed. Conductor version is kept."
+	
+	% Mvt II, Bar 119
+	"In Mvt II, Bar 119, a eight rest is replaced by a sixtyeenth rest."
+}
