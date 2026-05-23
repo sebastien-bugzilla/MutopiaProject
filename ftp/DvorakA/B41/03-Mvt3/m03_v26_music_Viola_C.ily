@@ -492,7 +492,7 @@ musicViolaMvtIII = \relative c {
 	\time 2/4 \key d \major <d' fis>4:32->_\fffz q8[ r16 <cis e>-.]
 	<d fis>4:\fz q8[ r16 <cis e>-.]
 	<d fis>4-^ <a fis' a>-^\arpeggio
-	<d, a' g'>-^\arpeggio q-^\arpeggio
+	<d, a' g'>-^\arpeggio <d a' fis'>-^\arpeggio
 	<a' g'>4:-\offset X-offset 1 \fz-> q8[ r16 <a fis'>16-.]
 % Bars 346 to 350
 	<a g'>4:-\offset X-offset 1 \fz-> q8[ r16 <a fis'>16-.]

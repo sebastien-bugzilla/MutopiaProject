@@ -76,7 +76,7 @@ musicViolaMvtII = \relative c {
 % Bars 52 to 55
 	r16 <d f>(\p <f bes> <bes d> <d f>4) r16 <f, aes>( <aes! des> <des! f> <f aes>4)
 	r16 <f, bes>( <bes des> <des! f> <ees g>4) r16 <ees, g>( <g c> <c ees> <ees g>4)
-	r16 <c, ees>( <ees aes> <aes! c> <bes f'>4) r16 << {ees,( ges bes \once \hideNotes ees4)} \\ {ees,16 ees ges! <bes ees>4}>>
+	r16 <c, ees>( <ees aes> <aes! c> <bes ees>4) r16 << {ees,( ges bes \once \hideNotes ees4)} \\ {ees,16 ees ges! <bes ees>4}>>
 	r16 <f a!>( <a! c> <c ees> <c fis>4)_\crescmarkup r16 <d, fis>( <fis! a> <a c> <c fis>4)
 % Bars 56 to 60
 	r16 <e, g>( <g b> <b! e> <e! g>4)\> r16 <ees,! g>( <g c> <c ees!> <ees! g>4)\!

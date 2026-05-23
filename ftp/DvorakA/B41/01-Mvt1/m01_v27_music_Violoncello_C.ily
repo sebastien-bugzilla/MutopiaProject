@@ -58,7 +58,7 @@ musicVioloncelloMvtI = \relative c {
 		a, r fis''[ r16 e\> d8 r16 cis]
 		b8\! r e,4-._\brackM\dimmarkup e-.
 % Bars 41 to 45
-		a,8 r r4 cis8->\p-\offset X-offset -4 ^\pizz r
+		a,8 r r4 cis8->\p-\offset X-offset -5 ^\pizz r
 		a r r4 cis->_\dimmarkup
 		a8 r fis4 b
 		r e\pp e

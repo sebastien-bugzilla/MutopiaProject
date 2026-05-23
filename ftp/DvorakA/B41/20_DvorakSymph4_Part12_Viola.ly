@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-%\include "./00-Common/DvorakSymph4_Format_Part12_Viola.ily"
+\include "./00-Common/DvorakSymph4_Format_Part12_Viola.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v26_music_Viola.ily"
 \include "./02-Mvt2/m02_v26_music_Viola.ily"
@@ -39,17 +39,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41)"
+			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41) — Viola"
 		}
 		instrument = \markup {
-			"Viola"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtI
-%			}
+			\new Voice {
+				\formatViolaMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtI
 			}
@@ -70,24 +70,58 @@
 		}
 	}
 	\score {
-		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtII
-%			}
-			\new Voice {
-				\keepWithTag #'(viola) \tempiPartMvtII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceViolaMvtII
-			}
-			\new Voice {
-				\timeMvtII \nameViolaMvtII \musicViolaMvtII
+		\new GrandStaff \with { \RemoveAllEmptyStaves } << 
+			\new Staff <<
+				\new Voice {
+					\formatViolaMvtII
+				}
+				\new Voice {
+					\keepWithTag #'(viola) \tempiPartMvtII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceViolaMvtII
+				}
+				\new Voice {
+					\timeMvtII \nameViolaMvtII \musicViolaMvtII
+				}
+			>>
+			\new Staff {
+				\timeMvtII \nameViolaMvtII \musicViolaMvtIIDivisi
 			}
 		>>
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.5 \bold 2.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new GrandStaff \with { \RemoveAllEmptyStaves } <<
+			\new Staff <<
+				\new Voice {
+					\formatViolaMvtIII
+				}
+				\new Voice {
+					\keepWithTag #'(viola) \tempiPartMvtIII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceViolaMvtIII
+				}
+				\new Voice {
+					\timeMvtIII \nameViolaMvtIII \musicViolaMvtIII
+				}
+			>>
+			\new Staff {
+				\timeMvtIII \nameViolaMvtIII \musicViolaMvtIIIDivisi
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold "3. SCHERZO"
 			}
 		}
 		\layout {
@@ -95,33 +129,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIII
-%			}
 			\new Voice {
-				\keepWithTag #'(viola) \tempiPartMvtIII
+				\formatViolaMvtIV
 			}
-			\new Voice {
-				\InCueContext \cueVoiceViolaMvtIII
-			}
-			\new Voice {
-				\timeMvtIII \nameViolaMvtIII \musicViolaMvtIII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\bold 3.
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-%			\new Voice {
-%				\formatViolaMvtIV
-%			}
 			\new Voice {
 				\keepWithTag #'(viola) \tempiPartMvtIV
 			}
@@ -135,7 +145,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2.5 \bold "4. FINALE"
 			}
 		}
 		\layout {

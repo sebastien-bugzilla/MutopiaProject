@@ -837,7 +837,7 @@ musicViolaMvtIV = \relative c {
 	b:-> g': d:-> g:
 	b:-> g: d: g:
 	c,:-> fis: d:-> a':
-	d,: a': fis:-> c':
+	d,:-> a': fis:-> c':
 % Bars 591 to 595
 	g,:-> g': d:-> g:
 	b:-> g: d: g:

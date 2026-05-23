@@ -58,7 +58,7 @@ musicViolaMvtI = \relative c {
 		<cis e a> r <fis a>[ r16 <e gis>\> <d fis!>8 r16 <cis e>]
 		<b d>4-.\! <gis b!>-._\brackM\dimmarkup <b e>-.
 % Bars 41 to 45
-		<a e'>8 r r4 \dynEO #'(-0.5 . 0.3) \afterGrace cis,\p(^\trill {bis16 cis)}
+		<a e'>8 r r4 \dynEO #'(0 . 0.3) \afterGrace cis,->\p(^\trill {bis16 cis)}
 		r4 r \afterGrace cis\fz(^\trill {bis16 cis)}
 		r4 cis^\pizz d
 		r r-\offset X-offset -2.5 _\arco e->\pp^\trillsharp

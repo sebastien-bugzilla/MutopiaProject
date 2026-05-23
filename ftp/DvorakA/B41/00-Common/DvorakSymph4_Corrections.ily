@@ -238,3 +238,23 @@ correctionViolinII = \markup {
 	% Mvt II, Bar 119
 	"In Mvt II, Bar 119, a eight rest is replaced by a sixtyeenth rest."
 }
+correctionViola = \markup {
+	
+	% Mvt I, Bar 174
+	"In Mvt I, Bar 174, a missing f is added as a chord with the last note a."
+	
+	% Mvt II, Bar 47
+	"In Mvt II, Bar 47, the cresc indication is replaced by a dim indication, in accordance with conductor score."
+	
+	% Mvt II, Bar 53
+	"In Mvt II, Bar 53, the second chords is indicated as 'bes d' in part score and as 'bes des' in conductor score. Conductor version is kept (des is played by flauto I."
+	
+	% Mvt II, Bar 117 - 118
+	"In Mvt II, Bar 117 - 118, a missing crescendo and diminuendo are added."
+	
+	% Mvt III, Bar 127
+	"In Mvt III, Bar 127, a missing rest is added."
+	
+	% Mvt IV, Bar 24
+	"In Mvt IV, Bar 24, a General Pause is indicated for only one measure instead for 2 measures for all other instrument."
+}

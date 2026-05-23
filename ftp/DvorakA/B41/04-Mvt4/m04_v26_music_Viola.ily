@@ -9,7 +9,7 @@ musicViolaMvtIV = \relative c {
 	\key d \minor
 %	\transposition a
 % Bars 1 to 5
-	<bes' d>4-.\f^\secco q-.
+	<bes' d>4-._\fsecco q-.
 	<a e'>-. r
 	<bes d>-. q-.
 	<a e'>-. r
@@ -29,13 +29,13 @@ musicViolaMvtIV = \relative c {
 % Bars 16 to 20
 	<g d'>-> r^\fermata
 	c8.\fz b16 g4-.
-	R2\fermata
+	\once \ni R2\fermata
 	a8.->\f g16 d4-.
 	d-^ r\fermata
 % Bars 21 to 25
 	R2*2
 	
-	R2\fermata
+	\once \ni R2\fermata
 	R2*2^\gp
 	
 % Bars 26 to 30
@@ -56,7 +56,7 @@ musicViolaMvtIV = \relative c {
 		a8.-. g16 e4--
 	} \\ {
 % Bar 30
-		f-._\ppsecco f-.
+		\stemOffset #-1 f-._\ppsecco \stemOffset #-1 f-.
 % Bars 31 to 35
 		f-. r
 		f-. f-. 
@@ -90,8 +90,8 @@ musicViolaMvtIV = \relative c {
 	ees a f c' a f)
 % Bars 56 to 60
 	ees(\< a f c' a f\!
-	d\> bes' f d'_\pocoapococresc bes f)\!
-	ees( a f c' a f
+	d\> bes' f d' bes f)\!
+	ees(-\offset X-offset -2 _\pocoapococresc a f c' a f
 	ees a f c' a f)
 	ees( a f c' a f
 % Bars 61 to 65
@@ -103,7 +103,7 @@ musicViolaMvtIV = \relative c {
 % Bars 66 to 70
 	R2*3
 	
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	\tuplet 3/2 4 {e,8(\mf f g f g f)
 	e( f g a bes g)
 % Bars 71 to 75
@@ -122,7 +122,7 @@ musicViolaMvtIV = \relative c {
 	e!( f g des ees f
 	e! f g f g f)
 	des( ees f e f g)} \unSubdiviseBeam
-	<f g>2:32\pp
+	\startMeasureCount <f g>2:32\pp
 	q:
 % Bars 86 to 90
 	q:
@@ -133,7 +133,7 @@ musicViolaMvtIV = \relative c {
 % Bars 91 to 95
 	<< q:\< {s8 s s s\!}>>
 	q2:^\pocoapococresc
-	q:
+	q: \stopMeasureCount
 	<f gis>:
 	q:
 % Bars 96 to 100
@@ -171,21 +171,21 @@ musicViolaMvtIV = \relative c {
 	cis-. cis-.
 	dis-. r\fermata
 	<c, ees>\ff r
-	R2\fermata
+	\once \ni R2\fermata
 % Bars 126 to 130
 	<c ees>4\ff r
-	R2\fermata
-	<ees, aes>4\fz r
+	\once \ni R2\fermata
+	<ees, aes>4-\tweak extra-offset #'(0 . -8.5) ^\fz r
 	q\fz r
 	q\fz r
 % Bars 131 to 135
 	q\fz r
-	bes'8.\mp aes16 ees4 
+	bes'!8.\mp aes16 ees4 
 	bes'8. aes16 ees4 
 	bes'8. aes16 ees4 
 	bes'8. aes16 ees4 
 % Bars 136 to 140
-	R2*13
+	\tempoXoffset #-1.5 R2*13
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -197,10 +197,12 @@ musicViolaMvtIV = \relative c {
 % Bars 151 to 155
 	a cis e g
 	bes a) r4
-	R2*5
-% Bars 156 to 160
+	R2*3
 	
-	\section \mark \default
+	
+% Bars 156 to 160
+	\tempoXoffset #-2.5 R2*2
+	\section \markXoffset #-0.2 \mark \default
 	\key d \major fis,2\pp~
 	fis
 	a(\<
@@ -212,7 +214,7 @@ musicViolaMvtIV = \relative c {
 	b2\p
 % Bars 166 to 170
 	e,4.( fis8
-	<< g2)\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -1) g2)\> {s8 s s s\!}>>
 	fis2\pp~
 	fis\<
 	d(\>
@@ -252,7 +254,7 @@ musicViolaMvtIV = \relative c {
 		\stemDown dis(
 % Bars 191 to 195
 		e)
-		e2~\fz\>
+		e2~-\offset X-offset 0.5 \fz\>
 		e4\! s
 	}>>
 	R2*4
@@ -298,25 +300,25 @@ musicViolaMvtIV = \relative c {
 	fis, d fis c' d, d')\!
 	r g,(\f d b' g d'
 	b\> g dis' b g e')\!} \unSubdiviseBeam
-	dis,2->(_\crescpocoapoco\startTrillSpan
+	\trillSpanPadding #-3 dis,2->(_\crescpocoapoco\startTrillSpan
 % Bars 231 to 235
 	e4)\stopTrillSpan r8. g16
-	dis2->(\startTrillSpan
+	\trillSpanPadding #-3 dis2->(\startTrillSpan
 	e4)\stopTrillSpan r8. g16
-	eis2->(\startTrillSpan
+	\trillSpanPadding #-3 eis2->(\startTrillSpan
 	fis4)\stopTrillSpan r8. a16
 % Bars 236 to 240
-	eis2->(\startTrillSpan
+	\trillSpanPadding #-3 eis2->(\startTrillSpan
 	fis4)\stopTrillSpan r8. a16
-	fis2->(\startTrillSpan_\crescmarkup
+	\trillSpanPadding #-3 fis2->(\startTrillSpan_\crescmarkup
 	g4)\stopTrillSpan r8. b16
 	a4->\startTrillSpan r8.\stopTrillSpan b16
 % Bars 241 to 245
 	a4->\startTrillSpan r8.\stopTrillSpan b16
-	bes16\ff <g' bes> q q  q q q q
-	q2:16
+	\tempoXoffset #1 \tempoEO #'(0 . -0.3) bes16\ff <g' bes> q q  q q q q
+	\startMeasureCount q2:16
 	q:
-	q: \mark \default
+	q: \markEsw #'(-1.5 . 0) \mark \default
 % Bars 246 to 250
 	q:\f
 	q:
@@ -340,15 +342,15 @@ musicViolaMvtIV = \relative c {
 	q:
 	q:
 	q:\f
-	q:
+	q: \stopMeasureCount
 % Bars 266 to 270
-	\tuplet 6/4 2 { <e, cis'!>2.:8\fz
+	\startMeasureCount \tuplet 6/4 2 { <e, cis'!>2.:8\fz
 	q:
 	q:\fz
 	q:
 	q:\fz
 % Bars 271 to 275
-	q:
+	q: \stopMeasureCount
 	<b' dis>:\fz
 	q:
 	<b e>:\fz
@@ -357,79 +359,41 @@ musicViolaMvtIV = \relative c {
 	<ees' a>2:32\ff
 	q:
 	q:
-	q: \subdiviseBeam
-	<< {
-		\tuplet 3/2 4 {a,8-> c-> c-> a-> c-> c-> 
+	q: 
+	\subdiviseBeam \tuplet 3/2 4 {<f, a>8-> <a c>-> q-> <f a>-> <a c>-> q-> 
 % Bars 281 to 285
-		a-> c-> c-> a-> c-> c->
-		a-> c-> c-> a-> c-> c->
-		a-> c-> c-> a-> c-> c-> }
-		\oneVoice <ees a>2:32\ff
-		q:
+	<f a>-> <a c>-> q-> <f a>-> <a c>-> q-> 
+	<f a>-> <a c>-> q-> <f a>-> <a c>-> q-> 
+	<f a>-> <a c>-> q-> <f a>-> <a c>-> q-> }
+	<ees' a>2:32\ff
+	q:
 % Bars 286 to 290
-		q:
-		q:
-		\voiceOne \tuplet 3/2 4 {a,8-> c-> c-> a-> c-> c->
-		a-> c-> c-> a-> c-> c->
-		a-> c-> c-> a-> c-> c->
+	q:
+	q:
+	\tuplet 3/2 4 {<f, a>8-> <a c>-> q-> <f a>-> <a c>-> q-> 
+	<f a>-> <a c>-> q-> <f a>-> <a c>-> q-> 
+	<f a>-> <a c>-> q-> <f a>-> <a c>-> q-> 
 % Bars 291 to 295
-		a-> c-> c-> a-> c-> c->}
-		\oneVoice <e a>2:32\ff
-		q:
-		q:
-		q:
+	<f a>-> <a c>-> q-> <f a>-> <a c>-> q-> }
+	<e' a>2:32\ff
+	q:
+	q:
+	q:
 % Bars 296 to 300
-		\voiceOne \tuplet 3/2 4 {c8-> e-> e-> c-> e-> e->
-		c-> e-> e-> c-> e-> e->
-		c-> e-> e-> c-> e-> e->
-		c-> e-> e-> c-> e-> e->}
-		\oneVoice <e a>2:\ff
+	\tuplet 3/2 4 {<a, c>8-> <c! e>-> q-> <a c>-> <c e>-> q->
+	<a c>-> <c! e>-> q-> <a c>-> <c e>-> q->
+	<a c>-> <c! e>-> q-> <a c>-> <c e>-> q->
+	<a c>-> <c! e>-> q-> <a c>-> <c e>-> q-> }
+	<e a>2:\ff
 % Bars 301 to 305
-		q:
-		q:
-		q:
-		\voiceOne \tuplet 3/2 4 {c8-> e-> e-> c-> e-> e->
-		c-> e-> e-> c-> e-> e->
+	q:
+	q:
+	q:
+	\tuplet 3/2 4 {<a, c>8-> <c! e>-> q-> <a c>-> <c e>-> q->
+	<a c>-> <c! e>-> q-> <a c>-> <c e>-> q->
 % Bars 306 to 307
-		c-> e-> e-> c-> e-> e->
-		c-> e-> e-> c-> e-> e->}
-	} \\ {
-% Bar 280
-		\tuplet 3/2 4 {f,8-> a-> a-> f-> a-> a->
-% Bars 281 to 285
-		f-> a-> a-> f-> a-> a-> 
-		f-> a-> a-> f-> a-> a-> 
-		f-> a-> a-> f-> a-> a-> }
-		s2
-		s
-% Bars 286 to 290
-		s
-		s
-		\tuplet 3/2 4 {f8-> a-> a-> f-> a-> a-> 
-		f-> a-> a-> f-> a-> a-> 
-		f-> a-> a-> f-> a-> a-> 
-% Bars 291 to 295
-		f-> a-> a-> f-> a-> a-> }
-		s2
-		s
-		s
-		s
-% Bars 296 to 300
-		\tuplet 3/2 4 {a8-> c!-> c-> a-> c-> c-> 
-		a-> c!-> c-> a-> c-> c-> 
-		a-> c!-> c-> a-> c-> c-> 
-		a-> c!-> c-> a-> c-> c-> }
-		s2
-% Bars 301 to 305
-		s
-		s
-		s
-		\tuplet 3/2 4 {a8-> c!-> c-> a-> c-> c-> 
-		a-> c!-> c-> a-> c-> c-> 
-% Bars 306 to 310
-		a-> c!-> c-> a-> c-> c-> 
-		a-> c!-> c-> a-> c-> c-> }
-	}>> \mark \default
+	<a c>-> <c! e>-> q-> <a c>-> <c e>-> q->
+	<a c>-> <c! e>-> q-> <a c>-> <c e>-> q-> } \markXoffset #-0.2 \mark \default
 	<ees, c'>2:16_\fffz
 	q:
 	<fis! ees'>:\brack\fz
@@ -471,14 +435,14 @@ musicViolaMvtIV = \relative c {
 		aes
 	} \\ {
 % Bars 332 to 335
-		f2\fp~
+		f2-\offset X-offset 0.8 \fp~
 		f
 		<< g( {s4 s_\dimmarkup}>>
 		ees2)
 % Bars 336 to 340
 		ees\p~
-		<< ees\< {s8 s s s\!}>>
-		ees2(\fp\>
+		<< \hairpinShorten #'(0 . -1) ees\< {s8 s s s\!}>>
+		ees2(-\tweak extra-offset #'(0.5 . -10) ^\fp-\tweak extra-offset #'(0.5 . -10) ^\>
 		<< e!) {s8 s s s\!}>>
 	}>>
 	<f aes>2\mp~
@@ -490,33 +454,33 @@ musicViolaMvtIV = \relative c {
 		aes2~
 		aes4. \oneVoice r8
 	} \\ {
-		c,2(\fz
+		c,2(-\offset X-offset 0.5 \fz
 		des4.) s8
 	}>>
 % Bars 346 to 350
 	<d! aes'>2\fz(
 	<ees g!>4.) r8
-	<e! c'>2->_(^~_\crescmarkup\startTrillSpan
+	\trillSpanPadding #-3 <e! c'>2->_(^~_\crescmarkup\startTrillSpan
 	<f c'>4.)\stopTrillSpan r8
 	<g ees'>4-.\f r
 % Bars 351 to 355
 	<aes ees'>-. r
-	des,->\ff des->
+	\tempoEO #'(0 . -0.3) des,->\ff des->
 	des8.-. c16 ees4->
 	des8 r f16(->\f ees des8)
 	aes'16(->\< ges f8) des'16(-> bes aes8)
 % Bars 356 to 360
 	f'16(-> ees\! des8) des16( bes aes8)
 	aes16(\> ges f8) f16( ees des8)\!
-	cis4->\ff cis->
+	cis4->-\tweak extra-offset #'(-1.5 . -10.5) ^\ff cis->
 	cis8.-. bis16 dis4->
 	cis8 r e16(->\f\< dis cis8)
 % Bars 361 to 365
 	gis'16(-> fis e8) cis'16(-> a gis8)
-	e'16(-> dis cis8)\! cis16(\> a gis8)
+	e'16(-> dis cis8)\! cis16(-\tweak extra-offset #'(0 . -10) ^\> a gis8)
 	gis16( fis e8) e16( dis cis8)\!
 	a'4-.->\p\< a-.->
-	a8.^\prallnatural gis16 b4->\!
+	a8.-\offset X-offset 0.5 ^\prallnatural gis16 b4->\!
 % Bars 366 to 370
 	a8-. r r4
 	R2*5
@@ -565,14 +529,14 @@ musicViolaMvtIV = \relative c {
 % Bars 401 to 405
 	cis-> d-> e-> ais,-> b-> cis->
 	e-> fis-> g-> d-> e-> f->
-	cis-> dis-> e-> ais,(_\legato b cis
+	cis-> dis-> e-> \once \tupletDown ais,(^\legato b cis
 	fis, gis ais\> fis gis ais\!
 	fis_\dimmarkup gis ais fis gis ais
 % Bars 406 to 410
 	fis gis ais fis gis ais)}
 	fis4\p( gis8_\dimmarkup ais
 	fis4 gis8 ais)
-	fis4( gis8 ais
+	\tempoXoffset #4 fis4( gis8 ais
 	fis4 gis8 ais)
 % Bars 411 to 415
 	fis\pp r r4
@@ -661,7 +625,7 @@ musicViolaMvtIV = \relative c {
 	des( ees f e f g)}
 % Bars 471 to 475
 	<< {
-		g2:32
+		\startMeasureCount g2:32
 		g:
 		g:
 		g:
@@ -669,8 +633,8 @@ musicViolaMvtIV = \relative c {
 % Bars 476 to 480
 		g:
 		g:
-		g:
-		<e g>:
+		g: \stopMeasureCount
+		\startMeasureCount <e g>:
 		q:
 % Bars 481 to 485
 		q:
@@ -679,7 +643,7 @@ musicViolaMvtIV = \relative c {
 		q:
 		q:
 % Bars 486 to 490
-		q:
+		q: \stopMeasureCount
 		<fis ais>:
 		q:
 		q:
@@ -837,18 +801,18 @@ musicViolaMvtIV = \relative c {
 	b:-> g': d:-> g:
 	b:-> g: d: g:
 	c,:-> fis: d:-> a':
-	d,: a': fis:-> c':
+	d,:-> a': fis:-> c':
 % Bars 591 to 595
 	g,:-> g': d:-> g:
 	b:-> g: d: g:
-	dis,2\fz(\startTrillSpan
-	e4-.)\stopTrillSpan r8. g16-.
-	dis2(\fz\startTrillSpan
+	dis,2-\offset X-offset -0.7 \fz(\startTrillSpan
+	e4-.) r8.\stopTrillSpan g16-.
+	\trillSpanPadding #-3 dis2(\fz\startTrillSpan
 % Bars 596 to 600
 	e4-.)\stopTrillSpan r8. g16-.
-	eis2(\fz\startTrillSpan
+	\trillSpanPadding #-3 eis2(\fz\startTrillSpan
 	fis4-.)\stopTrillSpan r8. a16-.
-	eis2(\fz\startTrillSpan
+	\trillSpanPadding #-3 eis2(\fz\startTrillSpan
 	fis4-.)\stopTrillSpan r8. a16-.
 % Bars 601 to 605
 	fis4->(\startTrillSpan g8)[\stopTrillSpan r16 a-.]
@@ -974,3 +938,76 @@ musicViolaMvtIV = \relative c {
 % Bar 691
 	<d, a' fis'>->\arpeggio r\fermata \fine
 }
+
+%	<< {
+%		\subdiviseBeam \tuplet 3/2 4 {a,8-> c-> c-> a-> c-> c-> 
+%% Bars 281 to 285
+%		a-> c-> c-> a-> c-> c->
+%		a-> c-> c-> a-> c-> c->
+%		a-> c-> c-> a-> c-> c-> }
+%		\oneVoice <ees a>2:32\ff
+%		q:
+%% Bars 286 to 290
+%		q:
+%		q:
+%		\voiceOne \tuplet 3/2 4 {a,8-> c-> c-> a-> c-> c->
+%		a-> c-> c-> a-> c-> c->
+%		a-> c-> c-> a-> c-> c->
+%% Bars 291 to 295
+%		a-> c-> c-> a-> c-> c->}
+%		\oneVoice <e a>2:32\ff
+%		q:
+%		q:
+%		q:
+%% Bars 296 to 300
+%		\voiceOne \tuplet 3/2 4 {c8-> e-> e-> c-> e-> e->
+%		c-> e-> e-> c-> e-> e->
+%		c-> e-> e-> c-> e-> e->
+%		c-> e-> e-> c-> e-> e->}
+%		\oneVoice <e a>2:\ff
+%% Bars 301 to 305
+%		q:
+%		q:
+%		q:
+%		\voiceOne \tuplet 3/2 4 {c8-> e-> e-> c-> e-> e->
+%		c-> e-> e-> c-> e-> e->
+%% Bars 306 to 307
+%		c-> e-> e-> c-> e-> e->
+%		c-> e-> e-> c-> e-> e->}
+%	} \\ {
+%% Bar 280
+%		\subdiviseBeam \tuplet 3/2 4 {f,8-> a-> a-> f-> a-> a->
+%% Bars 281 to 285
+%		f-> a-> a-> f-> a-> a-> 
+%		f-> a-> a-> f-> a-> a-> 
+%		f-> a-> a-> f-> a-> a-> }
+%		s2
+%		s
+%% Bars 286 to 290
+%		s
+%		s
+%		\tuplet 3/2 4 {f8-> a-> a-> f-> a-> a-> 
+%		f-> a-> a-> f-> a-> a-> 
+%		f-> a-> a-> f-> a-> a-> 
+%% Bars 291 to 295
+%		f-> a-> a-> f-> a-> a-> }
+%		s2
+%		s
+%		s
+%		s
+%% Bars 296 to 300
+%		\tuplet 3/2 4 {a8-> c!-> c-> a-> c-> c-> 
+%		a-> c!-> c-> a-> c-> c-> 
+%		a-> c!-> c-> a-> c-> c-> 
+%		a-> c!-> c-> a-> c-> c-> }
+%		s2
+%% Bars 301 to 305
+%		s
+%		s
+%		s
+%		\tuplet 3/2 4 {a8-> c!-> c-> a-> c-> c-> 
+%		a-> c!-> c-> a-> c-> c-> 
+%% Bars 306 to 310
+%		a-> c!-> c-> a-> c-> c-> 
+%		a-> c!-> c-> a-> c-> c-> }
+%	}>> \mark \default

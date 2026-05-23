@@ -2059,9 +2059,9 @@ cueVoiceViolaMvtI = \relative c {
 cueVoiceViolaMvtII = \relative c {
 	s1*14
 	% bars 15 - 17
-	\clef treble \voiceTwo ees'4(_\markup {Cl.} g) f8-^ ees-^ d-^ c-^
+	\clef treble ees'!4(^\markup {Cl.} g) f8-^ ees-^ d-^ c-^
 	bes4( d2 \tuplet 3/2 4 {c8 d a)}
-	c2.~ c8 bes \clef alto \oneVoice
+	c2.~ c8 bes \clef alto 
 }
 cueVoiceViolaMvtIII = \relative c {
 	% no Cue Voice
