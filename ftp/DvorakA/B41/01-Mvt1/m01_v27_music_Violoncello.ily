@@ -72,7 +72,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 51 to 55
 		f~
 		f(
-		bes4)-.\mp d'8^\pizz bes f4
+		\tempoXoffset #-2 bes4)-.\mp d'8^\pizz bes f4
 		f ees'8 c f,4
 		f d'8 bes f4
 % Bars 56 to 60
@@ -84,7 +84,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 61 to 65
 		f d' bes
 		f\pp d ees
-		d(_\mpespress\<^\arco d'4. ees8)\!
+		d(_\mpespress\<-\offset X-offset -4 ^\arco d'4. ees8)\!
 		g4.(\> f8 a,4)\!
 		bes(\< d4. ees8)\!
 % Bars 66 to 70
@@ -114,7 +114,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 86 to 90
 		f-> r f->
 		r f-> r \mark \default
-		d8(\f\< f bes d\! g f)
+		d8(-\offset X-offset -2 \f\< f bes d\! g f)
 		ees( c a f ees c)
 		d(\< f bes d\! g f)
 % Bars 91 to 95
@@ -126,28 +126,28 @@ musicVioloncelloMvtI = \relative c {
 % Bars 96 to 100
 		<< d2. {s4 s s\<}>>
 		f2( ees4)\!
-		d-.\ff bes,4.-> bes8-.
+		d-.-\offset X-offset -0.8 \ff bes,4.-> bes8-.
 		f2.->
 		bes4-. bes4.-> bes8-.
 % Bars 101 to 105
-		f2.->
-		bes2.->\fz
-		f\fz->
-		f->\fz
-		f->\fz
+		f2.^>
+		bes2.^>\fz
+		f\fz^>
+		f^>\fz
+		f^>-\tweak extra-offset #'(0 . -9) ^\fz
 % Bars 106 to 110
-		e4-^\brack\fz r r
+		e4^^-\tweak extra-offset #'(0 . -9) ^\brack\fz r r
 		R2.
-		gis'8(\fp\> b gis b gis b)
+		\startMeasureCount gis'8(\fp\> b gis b gis b)
 		gis( b gis b gis b)\!
 		gis(\pp b gis b gis b)
 % Bars 111 to 115
 		gis(_\dimmarkup b gis b gis b)
 		gis( b gis b gis b)
-		gis( b gis b gis b)
+		gis( b gis b gis b) \stopMeasureCount
 		\alternative {
 			\volta 1 {
-				a,(\pp bes! cis e g! a
+				\beamOffset #'(0.5 . 0) a,(-\offset X-offset -2.5 -\tweak extra-offset #'(2.5 . -1.4) \pp bes! cis e g! a
 				bes! a) r4 r
 % Bars 116 to 120
 				r r cis8( bes
@@ -163,10 +163,10 @@ musicVioloncelloMvtI = \relative c {
 				a\ppp^\pizz r a
 % Bars 126 to 130
 				r a r
-				r r r16 a(\pp^\arco b cis)
+				r r r16 a(-\offset X-offset -1 \pp^\arco b cis)
 			}
 			\volta 2 {
-				<cis, gis'>2.\f~
+				<cis, gis'>2.-\tweak extra-offset #'(-1.7 . -10) ^\f~
 				q
 			}
 		}
@@ -176,8 +176,8 @@ musicVioloncelloMvtI = \relative c {
 	<< q2. {s4 s\! s}>>
 	q2\p\> r4
 	q2\! r4
-	q2\pp\> r4
-	q2\! r4
+	q2\pp-\alterBroken shorten-pair #'(()(0 . 2.5)) \> r4
+	q2 r4\!
 % Bars 136 to 140
 	fis4\ff fis''-^ cis-^
 	ais-^ fis-^ cis-^
@@ -186,10 +186,10 @@ musicVioloncelloMvtI = \relative c {
 	\tuplet 3/2 4 {fis,8-> gis-> ais->  fis-> gis-> ais->  fis-> gis-> ais-> 
 % Bars 141 to 145
 	fis-> gis-> ais->  fis-> gis-> ais->  fis-> gis-> ais-> }
-	b4\f\< \clef tenor dis'4.( e8)
-	fis2(\> cis4)\!
-	b(\< dis4. e8)
-	fis2(\> cis4)\!
+	\hairpinShorten #'(0 . 2) b4\f\< \clef tenor dis'4.( e8)
+	\hairpinShorten #'(-2 . 0) fis2(\> cis4)\!
+	\hairpinShorten #'(0 . 2) b(\< dis4. e8)
+	\hairpinShorten #'(-2 . 0) fis2(\> cis4)\!
 % Bars 146 to 150
 	b4(\< dis e)
 	gis( fis\! cis)
@@ -210,7 +210,7 @@ musicVioloncelloMvtI = \relative c {
 	
 % Bars 161 to 165
 	\clef tenor
-	bes4(_\mfespress\< d4. ees8)\!
+	bes4(\mf^\espress\< d4. ees8)\!
 	g4.(\> f8 a,4)\!
 	bes(\< d4. ees8)\!
 	g4.(\> f8 a,4)\!
@@ -252,7 +252,7 @@ musicVioloncelloMvtI = \relative c {
 	ais8. cis16 cis4-.\! r
 % Bars 196 to 200
 	fis,2.:16\p\>
-	fis:\!_\dimmarkup
+	fis:\dimD
 	fis:
 	fis:
 	fis4\pp r r
@@ -261,7 +261,7 @@ musicVioloncelloMvtI = \relative c {
 	
 	
 	
-	d!4(\pp fis a!
+	d!4(-\offset X-offset 1 \pp fis a!
 % Bars 206 to 210
 	d fis a
 	d fis a)
@@ -283,7 +283,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 221 to 225
 	bes(\< f aes\!)
 	a!2(\fz gis4)
-	a( d,\< aes')\!
+	a( d,\< aes')
 	aes2(\fz g4)
 	aes(\fz d,) g8( aes)
 % Bars 226 to 230
@@ -300,13 +300,13 @@ musicVioloncelloMvtI = \relative c {
 	R2.*2
 % Bars 236 to 240
 	
-	a,8.->\ff cis16 cis2\fz\<~
+	a,8.->\ff cis16 \hairpinShorten #'(-0.5 . 0) cis2\fz\<~
 	cis4\! r r
 	R2. \clef tenor
-	d'4( f4.\< g8)\!
+	d'4(\< f4. g8)\!
 % Bars 241 to 245
 	a2(-> e4) \clef bass
-	a,,2_\fmoltomarc~ a8 fis-.
+	a,,2-\offset X-offset -2 _\fmolto_marc~ a8 fis-.
 	fis8.->\< a16 a4-.\! r
 	a2~ a8\< fis-.
 	fis8.-> a16 a4-.\! r
@@ -333,7 +333,7 @@ musicVioloncelloMvtI = \relative c {
 	e,4.->\fz g16( bes e8) r
 	cis,4.->\fz e16( g cis8) r
 	d,4.->\fz f16( a d8) r
-	d,4.->\fz fis16( a c8) r
+	d,4.->-\tweak extra-offset #'(0 . -9) ^\fz fis16( a c8) r
 % Bars 266 to 270
 	d,4.->\fz f!16( bes d8) r
 	d,4.->\fz gis16( b d8) r
@@ -369,7 +369,7 @@ musicVioloncelloMvtI = \relative c {
 	gis'4..\fz e16[(_\crescmarkup b8. gis16)]
 	a4.( c16 b) a8 r
 	a4.->( c16 b) a8 r
-	b4.(-> d16 c) b8 r \clef bass \mark \default
+	b4.(-> d16 c) b8 r \clef bass \markXoffset #-0.2 \mark \default
 % Bars 296 to 300
 	c,2\f( g8.) c16-.
 	b2(\< gis4)
@@ -425,7 +425,7 @@ musicVioloncelloMvtI = \relative c {
 	cis4\ffz) r r
 	r r r8. cis32( b \mark \default
 % Bars 341 to 345
-	a2.\fp\>
+	a2.\fp-\alterBroken shorten-pair #'(()(2.5 . 0)) \>
 	g~
 	g
 	fis)\!
@@ -445,25 +445,25 @@ musicVioloncelloMvtI = \relative c {
 % Bars 356 to 360
 	<< bes!) {s4 s s\!}>>
 	a2.\p\>~
-	<< a {s4 s s8 s\!}>> \mark \default
-	a,8(\pp gis a gis a gis
-	a gis a gis a gis)
+	<< a {s4 s s8 s\!}>> \markXoffset #-0.4 \mark \default
+	\repeat tremolo 3 {a,8(\pp gis }
+	\repeat tremolo 3 {a gis)}
 % Bars 361 to 365
-	a( gis a gis a gis
-	a gis a gis a gis)
-	a16( d a_\crescmarkup d  a d a d  a d a d
-	a cis a cis  a cis a cis  a cis a cis)
-	a( d a d  a d a d  a d a d
+	\repeat tremolo 3 {a( gis} 
+	\repeat tremolo 3 {a gis)}
+	\repeat tremolo 6 {a16(_\crescmarkup d }
+	\repeat tremolo 6 {a cis)}
+	\repeat tremolo 6 {a16( d }
 % Bars 366 to 370
-	a cis a cis  a cis a cis  a cis a cis)
+	\repeat tremolo 6 {a cis)}
 	a4(\mf\< fis'4. g8)\!
 	a2(-> a,4)
-	a4(\<_\moltocresc fis'4. g8)\!
+	a4(\<^\moltocresc fis'4. g8)\!
 	a2->( a,4)
 % Bars 371 to 375
+	a'2->(-\tweak extra-offset #'(0 . -9.5) ^\fz a,4)
 	a'2->(\fz a,4)
-	a'2->(\fz a,4)
-	d->\f r r
+	d->-\tweak extra-offset #'(0 . -9) ^\f r r
 	g-> r r
 	f-> r r
 % Bars 376 to 380
@@ -516,14 +516,14 @@ musicVioloncelloMvtI = \relative c {
 	e4.( g16 f e8) r
 % Bars 416 to 420
 	R2.
-	a,2~_\crescmarkup a8 f-.
+	a,2~-\tweak extra-offset #'(0 . -6.5) ^\crescmarkup a8 f-.
 	f8. a16\< a4-. r
 	a2~ a8 f-.
 	f8. a16 a4-. r
 % Bars 421 to 425
 	a4-^ r a-^\!
 	r a-^\f r
-	R2.
+	\tempoXoffset #-1.5 \mmrLength #13 \mmrnDown R2.
 	r8 e''(\p\> cis bes g e)\! \markk
 	d16(\pp a d a  d a d a  cis a cis a
 % Bars 426 to 430
@@ -541,7 +541,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 436 to 440
 	\repeat tremolo 6 {d cis}
 	\repeat tremolo 6 {d cis}
-	d16 cis d cis  d cis d cis d8)\noBeam \tuplet 3/2 8 {d,16(\f\< f a\!}
+	d16 cis d cis  d cis d cis d8)\noBeam \tuplet 3/2 8 {d,16(-\offset X-offset #-2 \f\< f a\!}
 	d2)\ff r4
 	e,2-^ r4
 % Bars 441 to 445

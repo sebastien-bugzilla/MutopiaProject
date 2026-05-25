@@ -2080,9 +2080,9 @@ cueVoiceVioloncelloMvtI = \relative c {
 cueVoiceVioloncelloMvtII = \relative c {
 	s1*14
 	% bars 15 - 17
-	\clef treble \voiceTwo ees'4(_\markup {Cl.} g) f8-^ ees-^ d-^ c-^
+	\clef treble ees'4(_\markup {Cl.} g) f8-^ ees-^ d-^ c-^
 	bes4( d2 \tuplet 3/2 4 {c8 d a)}
-	c2.~ c8 bes \clef bass \oneVoice
+	c2.~ c8 bes \clef bass
 }
 cueVoiceVioloncelloMvtIII = \relative c {
 	s1.*131
@@ -2094,7 +2094,7 @@ cueVoiceVioloncelloMvtIII = \relative c {
 	% bars 154 - 155
 	\clef bass << { \InCueContext 
 		d4->^\markup {Fag.I-II.} d->
-		d-> \tuplet 6/4 4 {r16 g( a b c d)}
+		d-> \once \omitTupletBracket \tuplet 6/4 4 {r16 g( a b c d)}
 	} \\ {
 		\InCueContext d,,4-> d->
 		d->( g8) r

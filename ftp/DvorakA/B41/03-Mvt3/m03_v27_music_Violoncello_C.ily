@@ -416,9 +416,9 @@ musicVioloncelloMvtIII = \relative c {
 	d4:->\fz d8[ r16 a-.]
 	d4-> d->
 	d-> d->
-	a4:\fz a8[ r16 a-.]
+	a4:->\fz a8[ r16 a-.]
 % Bars 346 to 350
-	a4:\fz a8[ r16 a-.]
+	a4:->\fz a8[ r16 a-.]
 	a4-> a->
 	a-> a->
 	b4:->\fz b8[ r16 fis-.]

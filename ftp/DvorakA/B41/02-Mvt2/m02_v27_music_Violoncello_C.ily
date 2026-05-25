@@ -23,7 +23,7 @@ musicVioloncelloMvtII = \relative c {
 		c4( bes2.)
 % Bars 21 to 25
 		a4( c2.)
-		\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur b4( c2~ \beamOffset #'(-0.3 . -0.3) c8 ees!)
+		b4 \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur c2(~ \beamOffset #'(-0.3 . -0.3) c8 ees!)
 		d1
 		c2( b)
 		c2 d4.( ees8)
@@ -46,7 +46,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 21 to 25
 		f4( \hairpinShorten #'(0 . -4) fis2\< a4)\!
 		g2.(~ g8 c)
-		<< a2(\> {s8 s s s\!}>> bes4)_\dimmarkup bes
+		<< a2(\> {s8 s s s\!}>> bes!4)_\dimmarkup bes
 		g2\> aes4.( g8)\!
 		aes2(\pp g)
 % Bars 26 to 30
@@ -129,7 +129,7 @@ musicVioloncelloMvtII = \relative c {
 		des_\marcato c!8 s s4 s
 	}>>
 % Bars 87 to 90
-	g8->\< f->~ f16 e->-. f-.-> fis-.-> g8-^ f-^ e-^ d16-^ des-^\!
+	g!8->\< f->~ f16 e->-. f-.-> fis-.-> g8-^ f-^ e!-^ d16-^ des-^\!
 	c8-.-^\ff b-^-. bes-.-^ r r2
 	c8-.-^\ff b-^-. bes-.-^ r r2
 	c8\p^\pizz b bes r r2

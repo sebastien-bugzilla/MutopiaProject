@@ -60,6 +60,12 @@ fzmarkup = \markup {\hspace #-0.55 \dynamic fz}
 fzcresc = \markup {\hspace #-0.55 \dynamic fz \italic cresc.}
 fzdim = \markup {\hspace #-0.55 \dynamic fz \italic dim.}
 fzcrescpocoapoco = \markup {\hspace #-0.55 \dynamic fz \italic "cresc. poco a poco"}
+fzcresc_pocoapoco = \markup {
+	\hspace #-0.55 \dynamic fz 
+	\translate #'(0 . 2.3) \column {
+		\lower #1.5 \italic "cresc. poco" \italic "a poco"
+	}
+}
 fzmarcatobrackpocoapococresc = \markup {
 	\hspace #-0.55 \concat { \bracket \with-true-dimensions \dynamic fz
 		\italic { 
@@ -97,6 +103,12 @@ fbenmarc = \markup {\hspace #0.02 \dynamic f \italic "ben marc."}
 fmoltoespress = \markup {\hspace #0.02 \dynamic f \italic "molto espress."}
 fdolce = \markup {\hspace #0.02 \dynamic f \italic dolce}
 fmoltomarc = \markup {\hspace #0.02 \dynamic f \italic "molto marc."}
+fmolto_marc = \markup {
+	\concat { 
+		\hspace #0.02 \dynamic f 
+		\translate #'(0.5 . 2.3) \italic \column {\lower #1.5 "molto" "marc."}
+	}
+}
 fmarkup = \markup {\hspace #0.02 \dynamic f}
 fespress = \markup {\hspace #0.02 \dynamic f \italic espress.}
 fmarcato = \markup {\hspace #0.02 \dynamic f \italic marcato}

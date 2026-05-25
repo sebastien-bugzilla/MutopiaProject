@@ -258,3 +258,23 @@ correctionViola = \markup {
 	% Mvt IV, Bar 24
 	"In Mvt IV, Bar 24, a General Pause is indicated for only one measure instead for 2 measures for all other instrument."
 }
+correctionVioloncello = \markup {
+	
+	% Mvt I, Bar 301
+	"In Mvt I, Bar 301, conductor and part score have different pitch for the last note (c in conductor, dis in part score). Conductor version is kept because based on other voice having the same melody (bass and faggot)."
+	
+	% Mvt I, Bar 416
+	"In Mvt I, Bar 416, a missing void measure is added."
+	
+	% Mvt I, Bar 446
+	"In Mvt I, Bar 446, a d medium is indicated in part score whereas it is a d bass in conductor score. The conductor version is kept."
+	
+	% Mvt II, Bar 23
+	"In Mvt II, Bar 23, a decrescendo is indicated in conductor score and a crescendo is indicated in part score. The conductor version is prefered (coherence between voices)."
+	
+	% Mvt II, Bar 65
+	"In Mvt II, Bar 65, the indication of 'I. leggio' is indicated in this bar for part score and bar 68 for conductor. Conductor version is more logical as there is only one voice remaining in bar 68 to bar 70."
+	
+	% Mvt IV, Bar 43 - 51
+	"In Mvt IV, Bar 43 and 51, the first note is different in conductor score (a c is printed) and in part score where a 'e' is printed. Conductor version is kept in correlation with viola part."
+}

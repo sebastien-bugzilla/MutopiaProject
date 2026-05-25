@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-%\include "./00-Common/DvorakSymph4_Format_Part13_Violoncello.ily"
+\include "./00-Common/DvorakSymph4_Format_Part13_Violoncello.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v27_music_Violoncello.ily"
 \include "./02-Mvt2/m02_v27_music_Violoncello.ily"
@@ -39,17 +39,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41)"
+			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41) — Violoncello"
 		}
 		instrument = \markup {
-			"Violoncello"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncelloMvtI
-%			}
+			\new Voice {
+				\formatVioloncelloMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtI
 			}
@@ -70,11 +70,11 @@
 		}
 	}
 	\score {
-		\new GrandStaff \with {\RemoveAllEmptyStaves} <<
+		\new GrandStaff \with {\RemoveAllEmptyStaves \nameVioloncelloMvtII } <<
 			\new Staff <<
-%				\new Voice {
-%					\formatVioloncelloMvtII
-%				}
+				\new Voice {
+					\formatVioloncelloMvtII
+				}
 				\new Voice {
 					\keepWithTag #'(violoncello) \tempiPartMvtII
 				}
@@ -82,7 +82,7 @@
 					\InCueContext \cueVoiceVioloncelloMvtII
 				}
 				\new Voice {
-					\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
+					\timeMvtII \musicVioloncelloMvtII
 				}
 			>>
 			\new Staff <<
@@ -92,7 +92,7 @@
 			>>
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
@@ -102,9 +102,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncelloMvtIII
-%			}
+			\new Voice {
+				\formatVioloncelloMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtIII
 			}
@@ -118,7 +118,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\bold "3. SCHERZO"
 			}
 		}
 		\layout {
@@ -126,9 +126,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncelloMvtIV
-%			}
+			\new Voice {
+				\formatVioloncelloMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(violoncello) \tempiPartMvtIV
 			}
@@ -142,7 +142,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #2.2 \bold "4. FINALE"
 			}
 		}
 		\layout {

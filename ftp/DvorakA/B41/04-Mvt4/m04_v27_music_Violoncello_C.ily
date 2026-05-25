@@ -137,7 +137,7 @@ musicVioloncelloMvtIV = \relative c {
 % Bars 106 to 110
 	R2
 	a'8(\f\< cis e a)\! \mark \default
-	\subdiviseBeam \tuplet 3/2 4 {\once \tupletUp d,,8(->-\offset X-offset -2 _\fflegato e fis bes,-> cis d)
+	\subdiviseBeam \tuplet 3/2 4 {\once \tupletUp d,,8(->-\offset X-offset -2 _\fflegato e f bes,-> c d)
 	a->( b cis a b cis)
 	bes!->( c! d bes-> c d)
 % Bars 111 to 115
@@ -674,7 +674,7 @@ musicVioloncelloMvtIV = \relative c {
 	\key d \major \unSubdiviseBeam a8:16_\fsempre-> fis': d: fis:
 	a:-> fis: d: fis:
 	ais,:-> fis': d: fis:
-	ais:-> fis: dis: fis:
+	ais:-> fis: d: fis:
 	b,:-> fis': d: fis:
 % Bars 566 to 570
 	b:-> fis: d: fis:
@@ -798,7 +798,7 @@ musicVioloncelloMvtIV = \relative c {
 	a-^ b-^ cis-^ d-^
 % Bars 666 to 670
 	dis-^ e-^ cis-^ a-^
-	d,4-. bes-.
+	d,!4-. bes-.
 	a2->
 	bes4-. bes-.
 	a2->
