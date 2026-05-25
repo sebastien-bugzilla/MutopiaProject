@@ -278,3 +278,11 @@ correctionVioloncello = \markup {
 	% Mvt IV, Bar 43 - 51
 	"In Mvt IV, Bar 43 and 51, the first note is different in conductor score (a c is printed) and in part score where a 'e' is printed. Conductor version is kept in correlation with viola part."
 }
+correctionContrabasso = \markup {
+	
+	% Mvt II, bar 110
+	"In Mvt II, bar 110, two triplets are indicated whereas it should be eigth."
+	
+	% Mvt IV, bar 599 - 600
+	"In Mvt IV, bars 599 and 600 are missing in part score. They are added."
+}

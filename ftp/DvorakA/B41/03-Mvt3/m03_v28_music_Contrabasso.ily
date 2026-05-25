@@ -23,13 +23,13 @@ musicContrabassoMvtIII = \relative c {
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	a2\p r4 a2 r4 
+	\startMeasureCount a2\p r4 a2 r4 
 	a2 r4 a2_\crescmarkup r4 
 	a2 r4 a2 r4 
 	a2 r4 a2 r4 
-	a2 r4 a2 r4 
+	\tempoXoffset #7.5 a2 r4 a2 r4 
 % Bars 21 to 25
-	a2 r4 a2 r4 
+	a2 r4 a2 r4 \stopMeasureCount
 	d\f r r r2 r4
 	d\brack\p^\pizz r r r2 r4
 	a r r r2 r4
@@ -87,15 +87,15 @@ musicContrabassoMvtIII = \relative c {
 	R1.*3
 	
 	
-	a,2\f r4 a2\p r4 
+	\startMeasureCount a,2\f r4 a2\p r4 
 % Bars 71 to 75
 	<< a2 {s8 s s s_\crescmarkup}>> r4 a2 r4 
 	a2 r4 a2 r4 
 	a2 r4 a2 r4 
-	a2 r4 a2 r4 
-	a2 r4 a2 r4 \section
+	\tempoXoffset #8 a2 r4 a2 r4 
+	a2 r4 a2 r4 \stopMeasureCount \section
 % Bars 76 to 80
-	\key d \major d4\ff r r r2 r4
+	\key d \major d4-\offset X-offset 0.5 \ff r r r2 r4
 	d'2-> r4 r2 r8 d,-.
 	a2-> r4 r2 r4
 	a'2-> r4 r2 r8 a,-.
@@ -134,7 +134,7 @@ musicContrabassoMvtIII = \relative c {
 	b,,2 r4 b'8-> b-> b-> r r4
 	g,2 r4 g'8-> g-> g-> r r4
 	a,8-> a-> a-> r r4 d8-> d-> d-> r r4
-	cis2 r4 cis'8-> cis-> cis-> r r4 \mark \default
+	cis2 r4 cis'8-> cis-> cis-> r r4 \markXoffset #-0.2 \mark \default
 	fis,,\ff r ais-. ais( cis) gis-.
 % Bars 111 to 115
 	ais-. r cis-. fis( ais) cis,-.
@@ -159,14 +159,14 @@ musicContrabassoMvtIII = \relative c {
 	
 	\ni \mmrPos #-4 R1.
 	\mmrPos #-4 R \no
-	\once \voiceTwo r2 r4 a,,->\mf r r
+	\once \voiceTwo r2 r4 a,,->\mf^\pizz r r
 	b-> r r c-> r r
 % Bars 136 to 140
 	r2 r4 fis,->\p r  r
 	R1.
 	b4\pp r r r2 r4
-	R1.\fermata \section
-	\time 2/4 \key c \major R2*14
+	\once \ni R1.\fermata \section
+	\sectionLabel "TRIO" \time 2/4 \key c \major \tempoXoffset 0.5 R2*14
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -194,7 +194,7 @@ musicContrabassoMvtIII = \relative c {
 	\mmrPos #-4 R
 % Bars 181 to 185
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-4 R \no \markXoffset #-0.2 \mark \default
 	g4..->\mf^\arco fis16(
 	g4..)->_\brackpocoapococresc fis16(
 	g4..)-> fis16(
@@ -237,7 +237,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 216 to 220
 	bes4:\fz bes8 r
 	aes4-. r
-	R2 \mark \default
+	R2 \markXoffset #-0.2 \mark \default
 	bes4:\fz bes8 r
 	aes4:\brack\fz aes8 r
 % Bars 221 to 225
@@ -305,13 +305,13 @@ musicContrabassoMvtIII = \relative c {
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	a2\p r4 a2 r4 
+	\startMeasureCount a2\p r4 a2 r4 
 	a2 r4 a2_\crescmarkup r4 
 	a2 r4 a2 r4 
 	a2 r4 a2 r4 
-	a2 r4 a2 r4 
+	\tempoXoffset #8 a2 r4 a2 r4 
 % Bars 286 to 290
-	a2 r4 a2 r4 
+	a2 r4 a2 r4 \stopMeasureCount
 	d\f r r r2 r4
 	d\brack\p^\pizz r r r2 r4
 	a r r r2 r4
@@ -369,16 +369,16 @@ musicContrabassoMvtIII = \relative c {
 	R1.*3
 	
 	
-	a,2\f r4 a2\p r4 
+	\startMeasureCount a,2\f r4 a2\p r4 
 % Bars 336 to 340
 	<< a2 {s8 s s s_\crescmarkup}>> r4 a2 r4 
 	a2 r4 a2 r4 
 	a2 r4 a2 r4 
-	a2 r4 a2 r4 
-	a2 r4 a2 r4 \section
+	\tempoXoffset #8 a2 r4 a2 r4 
+	a2 r4 a2 r4 \stopMeasureCount \section
 % Bars 341 to 345
-	\time 2/4 \key d \major d4:32->_\fffz d8[ r16 a-.]
-	d4:->\fz d8[ r16 a-.]
+	\sectionLabel "CODA" \time 2/4 \key d \major d4:32->_\fffz d8[ r16 a-.]
+	d4:->-\offset X-offset -2 -\tweak extra-offset #'(2 . -0.8) \fz d8[ r16 a-.]
 	d4-> d->
 	d-> d->
 	a4:\fz a8[ r16 a-.]
@@ -392,12 +392,16 @@ musicContrabassoMvtIII = \relative c {
 	b4-^ b-^
 	a-^ g-^
 	d'-> r
-	R2*19
+	R2*11
 	
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
+	
+	
+	
+	\mmrLength #13 \mmrnDown \tempoXoffset -2 R2*8
 % Bars 366 to 370
 	
 % Bars 371 to 375
@@ -405,7 +409,7 @@ musicContrabassoMvtIII = \relative c {
 	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no
-	d4..(\pp cis16_\crescpocoapoco
+	d4..(-\tweak extra-offset #'(0 . 0.5) _\ppcrescpoco_apoco cis16
 % Bars 376 to 380
 	d4 a8 cis)
 	d4..( cis16
@@ -421,5 +425,5 @@ musicContrabassoMvtIII = \relative c {
 % Bars 386 to 388
 	d8[-^ f-^ e-^ d-^]
 	a'-. r \tuplet 3/2 4 {r8 r a,,-.\ff}
-	d-. r r4\fermata \textEndMark "Fine" \fine
+	d-. r r4\fermata \tweak direction #-1 \textEndMark "Fine" \fine
 }

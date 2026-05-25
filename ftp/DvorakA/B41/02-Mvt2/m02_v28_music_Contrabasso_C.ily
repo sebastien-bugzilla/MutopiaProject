@@ -100,7 +100,7 @@ musicContrabassoMvtII = \relative c {
 	aes8-^_\fmarcato g-^ fis-^[ r16 fis-.] ces'8-> bes!->~ bes16 a-.-> bes-.-> ces!-.->
 % Bars 86 to 90
 	bes4->_\crescmarkup c!-> des8-^ c-^ bes[-^ r16 bes-.]
-	g'8->\< f->~ f16 e-.-> f-.-> fis-.-> g8-^ f-^ e-^ d16-^ des-^\!
+	g'!8->\< f->~ f16 e-.-> f-.-> fis-.-> g8-^ f-^ e!-^ d16-^ des-^\!
 	c8-.-^\ff b-.-^ bes-.-^ r r2
 	c8-.-^\ff b-.-^ bes-.-^ r r2
 	c8\p^\pizz b bes r r2

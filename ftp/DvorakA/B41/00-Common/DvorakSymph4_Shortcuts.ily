@@ -17,6 +17,12 @@ ppdolce = \markup {\hspace #-0.82 \dynamic pp \italic dolce}
 ppmaespress = \markup {\hspace #-0.82 \dynamic pp \italic "ma espress."}
 ppcrescpoco = \markup {\hspace #-0.82 \dynamic pp \italic "cresc. poco"}
 ppcrescpocoapoco = \markup {\hspace #-0.82 \dynamic pp \italic "cresc poco a poco"}
+ppcrescpoco_apoco = \markup {
+	\hspace #-0.82 \overlay {
+		\dynamic pp \italic 
+		\translate #'(3.5 . 2) \column { \lower #1.5 "cresc poco" "a poco" }
+	}
+}
 pppocoapococresc = \markup {\hspace #-0.82 \dynamic pp \italic "poco a poco cresc."}
 ppsempre = \markup {\hspace #-0.82 \dynamic pp \italic sempre}
 ppmoltoespress = \markup {\hspace #-0.82 \dynamic pp \italic "molto espress."}
@@ -210,6 +216,8 @@ pocoa = \markup {\italic "poco a"}
 apococresc = \markup {\italic "a poco cresc."}
 pocoritard = \markup {\italic "poco ritard"}
 atempo = \markup {\italic "a tempo"}
+moltomarc = \markup {\italic "molto marc."}
+staccato = \markup {\italic staccato}
 %--------------------
 % instrument modification
 %--------------------

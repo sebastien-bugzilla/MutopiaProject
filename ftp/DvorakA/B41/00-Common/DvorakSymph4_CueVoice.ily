@@ -2112,20 +2112,20 @@ cueVoiceContrabassoMvtI = \relative c {
 cueVoiceContrabassoMvtII = \relative c {
 	s1*14
 	% bars 15 - 17
-	\clef treble \voiceTwo ees'4(_\markup {Cl.} g) f8-^ ees-^ d-^ c-^
+	\clef treble ees'!4(^\markup {Cl.} g) f8-^ ees-^ d-^ c-^
 	bes4( d2 \tuplet 3/2 4 {c8 d a)}
-	c2.~ c8 bes \clef bass \oneVoice
+	c2.~ c8 bes \clef bass
 }
 cueVoiceContrabassoMvtIII = \relative c {
 	s1.*131
 	% bars 132 - 134
 	\voiceOne r2^\markup {Fag.} r4 a'2.(\pp
 	b c
-	fis,4) \oneVoice s s s2 s4
+	fis,4) r \oneVoice s s2 s4
 	s1.*5 s2*14
 	% bars 154 - 155
-	\voiceOne d4->^\markup {Fag.} d->
-	d-> \tuplet 6/4 4 {r16 g(\< a b c d)\!} \oneVoice
+	\voiceOne d4->-\offset X-offset -4 ^\markup {Fag.} d->
+	d-> \omitTupletBracket \tuplet 6/4 4 {r16 g(\< a b c d)\!} \oneVoice
 	s2*23
 	% bars 179 - 182
 	\voiceOne r4 r8^\markup {Vcl.} c,32( d e f)
@@ -2145,6 +2145,6 @@ cueVoiceContrabassoMvtIII = \relative c {
 cueVoiceContrabassoMvtIV = \relative c {
 	s2*195
 	% bars 196 - 197
-	\clef treble \voiceOne dis'8(^\markup {Viol.I.} e g cis
-	e[ g b) r16 a-.] \clef bass \oneVoice
+	\clef treble dis'8(^\markup {Viol.I.} e g cis
+	e[ g b) r16 a-.] \clef bass
 }

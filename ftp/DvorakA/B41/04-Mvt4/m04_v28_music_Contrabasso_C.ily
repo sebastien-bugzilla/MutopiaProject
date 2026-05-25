@@ -735,7 +735,7 @@ musicContrabassoMvtIV = \relative c {
 	R2*3
 	
 	
-	g,4-^ r
+	g,4-^\ff r
 	e'-^ r
 % Bars 641 to 645
 	c-^ r
@@ -769,7 +769,7 @@ musicContrabassoMvtIV = \relative c {
 	a-^ b-^ cis-^ d-^
 % Bars 666 to 670
 	dis-^ e-^ cis-^ a-^
-	d,4-. bes-.
+	d,!4-. bes-.
 	a2->
 	bes4-. bes-.
 	a2->

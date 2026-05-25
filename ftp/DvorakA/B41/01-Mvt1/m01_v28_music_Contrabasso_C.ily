@@ -124,7 +124,7 @@ musicContrabassoMvtI = \relative c {
 		g r g
 		ges r ges
 % Bars 96 to 100
-		<< f2. {s4 s s\<}>>
+		<< f2.~ {s4 s s\<}>>
 		<< f2. {s4 s s\!}>>
 		bes4-.\ff bes4.-> bes8-.
 		f2.->
@@ -324,8 +324,8 @@ musicContrabassoMvtI = \relative c {
 	\time 3/4 a8.-^\ff cis16 cis2->
 % Bars 256 to 260
 	a8.-^ cis16 cis2->
-	a8\ff bes a gis a bes
-	a gis a bes a gis \mark \default
+	a8(\ff bes a gis a bes)
+	a( gis a bes a gis) \mark \default
 	a8 r r4 r
 	R2.
 % Bars 261 to 265

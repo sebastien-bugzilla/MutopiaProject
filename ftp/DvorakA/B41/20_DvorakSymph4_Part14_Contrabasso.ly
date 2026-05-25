@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph4_NameVoice.ily"
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
-%\include "./00-Common/DvorakSymph4_Format_Part14_Contrabasso.ily"
+\include "./00-Common/DvorakSymph4_Format_Part14_Contrabasso.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v28_music_Contrabasso.ily"
 \include "./02-Mvt2/m02_v28_music_Contrabasso.ily"
@@ -39,17 +39,17 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41)"
+			"Antonín Dvořák — Symphony No. 4 in D Minor Op.13 (B.41) — Contrabasso"
 		}
 		instrument = \markup {
-			"Contrabasso"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatContrabassoMvtI
-%			}
+			\new Voice {
+				\formatContrabassoMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtI
 			}
@@ -71,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatContrabassoMvtII
-%			}
+			\new Voice {
+				\formatContrabassoMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtII
 			}
@@ -87,7 +87,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.7 \bold 2.
 			}
 		}
 		\layout {
@@ -95,9 +95,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatContrabassoMvtIII
-%			}
+			\new Voice {
+				\formatContrabassoMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtIII
 			}
@@ -111,7 +111,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.0 \bold "3. SCHERZO"
 			}
 		}
 		\layout {
@@ -119,9 +119,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatContrabassoMvtIV
-%			}
+			\new Voice {
+				\formatContrabassoMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(contrabasso) \tempiPartMvtIV
 			}
@@ -133,9 +133,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {

@@ -17,11 +17,11 @@ musicContrabassoMvtII = \relative c {
 	
 	
 	
-	\ni \mmrPos #4 R1
+	\ni \mmrPos #6 R1
 % Bars 16 to 20
 	\mmrPos #4 R
 	\mmrPos #4 R \no \mark \default
-	bes4\pp^\pizz r8 bes f'4 r8 f
+	bes4\pp-\offset X-offset 0.5 ^\pizz r8 bes f'4 r8 f
 	bes,4 r8 bes ees4 r8 ees
 	aes,4 r8 ges ges'4 r8 ges,
 % Bars 21 to 25
@@ -43,7 +43,7 @@ musicContrabassoMvtII = \relative c {
 	a4 r8 d c4 r8 f,\! \mark \default
 	bes4 r r2
 % Bars 36 to 40
-	r4 r8^\brackM\arco ees-.\pp ees'4-> r4
+	r4 r8-\offset X-offset -1 ^\brackM\arco ees-.\pp ees'4-> r4
 	R1
 	r4 r8 d,-.\< d'4->\! r
 	R1
@@ -62,10 +62,10 @@ musicContrabassoMvtII = \relative c {
 	R1*2
 % Bars 51 to 55
 	\mark \default
-	bes,4^\pizz\p \tuplet 3/2 4 {r8 bes bes} f'4 \tuplet 3/2 4 {r8 f f}
+	bes,4-\offset X-offset 0.5 ^\pizz\p \tuplet 3/2 4 {r8 bes bes} f'4 \tuplet 3/2 4 {r8 f f}
 	bes,4 \tuplet 3/2 4 {r8 ees ees} ees4 \tuplet 3/2 4 {r8 ees ees}
 	aes,4 \tuplet 3/2 4 {r8 ges ges} ges'4 \tuplet 3/2 4 {r8 ges ges}
-	f4 \tuplet 3/2 4 {r8 d d} d'4_\crescmarkup \tuplet 3/2 4 {r8 d, d}
+	f4 \tuplet 3/2 4 {r8 d d} d'4-\tweak extra-offset #'(-1 . 3.2) _\crescmarkup \tuplet 3/2 4 {r8 d, d}
 % Bars 56 to 60
 	e4 \tuplet 3/2 4 {r8 ees ees} ees4_\dimmarkup \tuplet 3/2 4 {r8 c c}
 	d4\p\> \tuplet 3/2 4 {r8 d d} g,4\! \tuplet 3/2 4 {r8 g g}
@@ -83,18 +83,18 @@ musicContrabassoMvtII = \relative c {
 	d4\> \tuplet 3/2 4 {r8 d d\!} f4_\pdim \tuplet 3/2 4 {r8 f f}
 	a\pp r r4 r2
 	R1*2
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 % Bars 71 to 75
-	bes,8^\pizz\pp r bes r bes r bes r
+	\startMeasureCount bes,8^\pizz\pp r bes r bes r bes r
 	bes r bes r bes r bes r 
 	bes r bes r bes r bes r 
 	bes r bes\< r bes r bes\! r 
-	bes r bes r bes_\dimmarkup r bes r 
+	bes r bes r bes_\dimmarkup r bes r \stopMeasureCount
 % Bars 76 to 80
 	bes16[\pp^\arco r bes r bes r bes] r bes[ r bes_\crescmarkup r bes r bes] r
 	bes[\< r bes r bes r bes] r bes[ r bes]\! r r4 \mark \default
-	bes2(\fp\> f)\!
-	bes4(\> ees2.)\pp
+	\hairpinShorten #'(-0.5 . -1) bes2(\fp\> f)\!
+	\hairpinShorten #'(-1 . -0.5) bes4(\> ees2.)\pp
 	aes,8 r r4 r2
 % Bars 81 to 85
 	R1*4
@@ -104,16 +104,16 @@ musicContrabassoMvtII = \relative c {
 	aes8-^_\fmarcato g-^ fis-^[ r16 fis-.] ces'8-> bes!->~ bes16 a-.-> bes-.-> ces!-.->
 % Bars 86 to 90
 	bes4->_\crescmarkup c!-> des8-^ c-^ bes[-^ r16 bes-.]
-	g'8->\< f->~ f16 e-.-> f-.-> fis-.-> g8-^ f-^ e-^ d16-^ des-^\!
+	g'!8->\< f->~ f16 e-.-> f-.-> fis-.-> g8-^ f-^ e!-^ d16-^ des-^\!
 	c8-.-^\ff b-.-^ bes-.-^ r r2
-	c8-.-^\ff b-.-^ bes-.-^ r r2
+	c8-.-^-\offset X-offset -2 \ff b-.-^ bes-.-^ r r2
 	c8\p^\pizz b bes r r2
 % Bars 91 to 95
-	c8\> b aes\! r r4 r8 aes\>
+	\tempoXoffset #8 c8\> b aes\! r r4 r8 aes\>
 	r g r g\! r f\pp~^\arco f4~
 	f8 r r4 ees'!8^\pizz\pp r r4 \section
-	\time 2/4 r ees!8-.->\mp r \section \mark \default
-	\time 4/4 R1*3
+	\time 2/4 r ees!8-.->\mp r \section \markXoffset #-0.2 \mark \default
+	\time 4/4 \tempoXoffset #1 R1*3
 % Bars 96 to 100
 	
 	
@@ -135,37 +135,37 @@ musicContrabassoMvtII = \relative c {
 % Bars 111 to 115
 	e\> r ees'!\! r^\arco r4 ges,4\ppp\fermata
 	f2:16 f:
-	f: f: \mark \default
-	bes8\pp r bes r bes r bes r 
+	f: f: \markXoffset #-0.2 \mark \default
+	\startMeasureCount bes8\pp r bes r bes r bes r 
 	bes r bes r bes r bes r 
 % Bars 116 to 120
 	bes r bes r bes r bes r 
 	bes\< r bes r bes_\crescmarkup r bes\! r 
-	bes r bes r bes_\dimmarkup r bes r 
+	bes r bes r bes_\dimmarkup r bes r \stopMeasureCount 
 	bes16\pp[ r bes r bes r bes] r bes[ r bes r bes_\crescmarkup r bes] r
 	bes[ r bes r bes_\crescmarkup r bes] r bes[ r bes] r r4 \mark \default
 % Bars 121 to 125
-	<< bes1\fp\> {s4 s s s8 s\!}>>
-	<< bes1\pp\< {s8 s s s\! s\> s s s\!}>>
-	\tuplet 6/4 4 {bes16(\pp a bes a bes a  bes a bes a bes a)} bes8 r r4
+	<< \hairpinShorten #'(-0.5 . 1) bes1-\offset X-offset -2 \fp\> {s4 s s s8 s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) bes1-\offset X-offset -1.5 \pp\< {s8 s s s \hairpinShorten #'(1 . -0.5) s\> s s s}>>
+	\tuplet 6/4 4 {bes16(-\offset X-offset 1 \pp a bes a bes a  bes a bes a bes a)} bes8 r r4
 	R1*5
 	
 % Bars 126 to 130
 	
 	
 	
-	e4-^\mp\<^\pizz f\! r f\p\>
+	\hairpinShorten #'(-0.5 . -0.5) e4-^\mp\<^\pizz f\! r \hairpinShorten #'(-0.5 . -0.5) f\p\>
 	bes,\p r bes\> r\!
 % Bars 131 to 135
 	bes\pp r bes r
 	bes r bes r
 	bes\> r bes r\!
 	bes1\ppp~^\arco
-	bes2 \tuplet 3/2 4 {bes8_\molto\<( d c)\!} ees4(~\fz
+	bes2 \tuplet 3/2 4 {bes8-\offset X-offset -1 _\molto\<( d c)\!} ees4(~\fz
 % Bars 136 to 140
 	ees2\p\> d4 c)\!
-	\tuplet 3/2 4 {bes8-.\mf bes'-. a!-.} aes-.[ r16 g!-.] ges8-.\> f-. \tuplet 3/2 4 { r fes-. ees-.\!}
-	des4-^\p\> c!-^\! r ces-.\pp
+	\tuplet 3/2 4 {bes8-.-\offset X-offset -1 \mf bes'-. a!-.} aes-.[ r16 g!-.] ges8-.\> f-. \tuplet 3/2 4 { r fes-. ees-.\!}
+	\hairpinShorten #'(-0.5 . -0.5) des4-^\p\> c!-^\! r ces-.\pp
 	bes r r2
 	R1
 % Bars 141 and 142
