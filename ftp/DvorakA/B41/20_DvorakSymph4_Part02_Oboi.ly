@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -22,7 +22,6 @@
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
 \include "./00-Common/DvorakSymph4_Format_Part02_Oboi.ily"
-%\include "./00-Common/DvorakSymph4_Format_temp.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI.ily"
 \include "./01-Mvt1/m01_v04_music_OboeII.ily"
@@ -52,9 +51,6 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIMvtI
 			}
@@ -75,14 +71,10 @@
 			}
 		}
 		\layout {
-%			system-count = 26
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIMvtII
 			}
@@ -103,14 +95,10 @@
 			}
 		}
 		\layout {
-%			system-count = 6
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIMvtIII
 			}
@@ -131,14 +119,10 @@
 			}
 		}
 		\layout {
-%			system-count = 18
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIMvtIV
 			}
@@ -159,7 +143,6 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\pageBreak
@@ -172,9 +155,6 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIIMvtI
 			}
@@ -195,7 +175,6 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\score {
@@ -220,14 +199,10 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIIMvtIII
 			}
@@ -248,14 +223,10 @@
 			}
 		}
 		\layout {
-%			system-count = 15
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIIMvtIV
 			}
@@ -276,7 +247,6 @@
 			}
 		}
 		\layout {
-%			system-count = 26
 		}
 	}
 }

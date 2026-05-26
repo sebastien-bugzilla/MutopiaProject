@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -22,7 +22,6 @@
 \include "./00-Common/DvorakSymph4_Shortcuts.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
 \include "./00-Common/DvorakSymph4_Format_Part03_Clarinetti.ily"
-%\include "./00-Common/DvorakSymph4_Format_temp.ily"
 \include "./00-Common/DvorakSymph4_CueVoice.ily"
 \include "./01-Mvt1/m01_v05_music_ClarinettoI.ily"
 \include "./01-Mvt1/m01_v06_music_ClarinettoII.ily"
@@ -52,9 +51,6 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIMvtI
 			}
@@ -75,14 +71,10 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIMvtII
 			}
@@ -103,14 +95,10 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIMvtIII
 			}
@@ -131,14 +119,10 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIMvtIV
 			}
@@ -159,14 +143,10 @@
 			}
 		}
 		\layout {
-%			system-count = 11
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIIMvtI
 			}
@@ -187,14 +167,10 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIIMvtII
 			}
@@ -215,14 +191,10 @@
 			}
 		}
 		\layout {
-%			system-count = 3
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIIMvtIII
 			}
@@ -243,14 +215,10 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIIMvtIV
 			}
@@ -271,7 +239,6 @@
 			}
 		}
 		\layout {
-%			system-count = 26
 		}
 	}
 }

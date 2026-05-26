@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.80"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperParts.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -243,7 +243,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #3.5 \bold "4. FINALE"
+				\vspace #2.7 \bold "4. FINALE"
 			}
 		}
 		\layout {

@@ -93,7 +93,7 @@ nameOboeIIMvtIV = {
 nameClarinettoIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto I" "in B"
+			\lower #1 "Clarinetto I" \concat { "in B" \text-flat }
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -102,7 +102,7 @@ nameClarinettoIMvtI = {
 nameClarinettoIMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto I" "in B"
+			\lower #1 "Clarinetto I" \concat { "in B" \text-flat }
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -129,7 +129,7 @@ nameClarinettoIMvtIV = {
 nameClarinettoIIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto II" "in B"
+			\lower #1 "Clarinetto II" \concat { "in B" \text-flat }
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -138,7 +138,7 @@ nameClarinettoIIMvtI = {
 nameClarinettoIIMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto II" "in B"
+			\lower #1 "Clarinetto II" \concat { "in B" \text-flat }
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -544,7 +544,7 @@ nameTrombonoIIIMvtIV = {
 nameTimpaniMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in D, A"
+			\lower #1 "Timpani" "in D/A"
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -553,7 +553,7 @@ nameTimpaniMvtI = {
 nameTimpaniMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in B, F"
+			\lower #1 "Timpani" \concat { "in B" \text-flat "/F" }
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -562,7 +562,7 @@ nameTimpaniMvtII = {
 nameTimpaniMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in A, D"
+			\lower #1 "Timpani" "in A/D"
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -571,7 +571,7 @@ nameTimpaniMvtIII = {
 nameTimpaniMvtIV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in D, A, F"
+			\lower #1 "Timpani" "in D/A/F"
 		}
 	}
 	\set Staff.shortInstrumentName = ""

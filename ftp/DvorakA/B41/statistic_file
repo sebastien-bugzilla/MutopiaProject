@@ -1,11 +1,11 @@
-    168     447    5464 10_DvorakSymph4_Conductor_mvt1.ly
-    185     499    6068 10_DvorakSymph4_Conductor_mvt2.ly
-    190     503    6345 10_DvorakSymph4_Conductor_mvt3.ly
-    169     450    5590 10_DvorakSymph4_Conductor_mvt4.ly
-    252     590    5412 20_DvorakSymph4_Part01_Flauti.ly
-    282     680    5872 20_DvorakSymph4_Part02_Oboi.ly
-    277     675    6130 20_DvorakSymph4_Part03_Clarinetti.ly
-    252     590    5461 20_DvorakSymph4_Part04_Fagotti.ly
+    158     424    5230 10_DvorakSymph4_Conductor_mvt1.ly
+    175     476    5828 10_DvorakSymph4_Conductor_mvt2.ly
+    180     478    6091 10_DvorakSymph4_Conductor_mvt3.ly
+    158     424    5295 10_DvorakSymph4_Conductor_mvt4.ly
+    252     590    5411 20_DvorakSymph4_Part01_Flauti.ly
+    252     590    5307 20_DvorakSymph4_Part02_Oboi.ly
+    244     577    5517 20_DvorakSymph4_Part03_Clarinetti.ly
+    252     590    5463 20_DvorakSymph4_Part04_Fagotti.ly
     452     998    8790 20_DvorakSymph4_Part05_Corni.ly
     244     579    5320 20_DvorakSymph4_Part06_Trombe.ly
     344     785    7239 20_DvorakSymph4_Part07_Tromboni.ly
@@ -42,12 +42,12 @@
      95     346    3153 00-Common/DvorakSymph4_LayoutConductors.ily
      84     311    3070 00-Common/DvorakSymph4_LayoutParts.ily
     105     408    3854 00-Common/DvorakSymph4_NameGrandStaff.ily
-    646    1947   14908 00-Common/DvorakSymph4_NameStaff.ily
-    778    2618   21527 00-Common/DvorakSymph4_NameVoice.ily
+    646    1961   15050 00-Common/DvorakSymph4_NameStaff.ily
+    778    2634   21640 00-Common/DvorakSymph4_NameVoice.ily
      71     196    1702 00-Common/DvorakSymph4_PaperConductors.ily
      67     188    1609 00-Common/DvorakSymph4_PaperParts.ily
-    887    3083   23832 00-Common/DvorakSymph4_Shortcuts.ily
-    803    2815   22614 00-Common/DvorakSymph4_Tempi.ily
+    653    2449   19064 00-Common/DvorakSymph4_Shortcuts.ily
+    786    2806   22460 00-Common/DvorakSymph4_Tempi.ily
      23      94     612 00-Common/DvorakSymph4_timeMvt.ily
     472    1923    9250 01-Mvt1/m01_v01_music_FlautoI_C.ily
     472    1668    8200 01-Mvt1/m01_v01_music_FlautoI.ily
@@ -257,5 +257,4 @@
     834    3322   15400 04-Mvt4/m04_v27_music_Violoncello.ily
     802    2344   11476 04-Mvt4/m04_v28_music_Contrabasso_C.ily
     807    2421   12204 04-Mvt4/m04_v28_music_Contrabasso.ily
-     83     244    1611 05-Midi/DvorakSymph4_Tempi.ily
- 109463  365386 2150483 total
+ 109025  364244 2142005 total

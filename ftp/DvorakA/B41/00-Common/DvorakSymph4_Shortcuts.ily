@@ -221,21 +221,21 @@ staccato = \markup {\italic staccato}
 %--------------------
 % instrument modification
 %--------------------
-mutafines = \markup {"muta F in Es"}
+mutafines = \markup {"muta F in" \concat { "E" \text-flat}}
 mutafineflat = \markup {
 	\column { 
 		\lower #1.5 "muta F" 
 		\line {\concat { "in E" \text-flat }}
 	}
 }
-mutaesindes = \markup {"muta Es in Des"}
+mutaesindes = \markup {\concat {"muta E" \text-flat " in D" \text-flat}}
 mutaeflatindflat = \markup {
 	\column {
 		\lower #1.5 \concat { "muta E" \text-flat } 
 		\concat { "in D" \text-flat}
 	}
 }
-mutadesinf = \markup {"muta Des in F"}
+mutadesinf = \markup {\concat { "muta D" \text-flat " in F"} }
 mutadflatinf = \markup {
 	\column {
 		\lower #1.5 "muta" 
@@ -259,33 +259,33 @@ mutainda = \markup {"muta in D, A"}
 
 timpinbes = \markup {
 	\center-column {
-		\lower #1 "Timp." "in B Es"
+		\lower #1 "Timp." \concat { "in B" \text-flat "/E" \text-flat }
 	}
 }
 timpinbdes = \markup {
 	\center-column {
-		\lower #1 "Timp." "in B Des"
+		\lower #1 "Timp." \concat { "in B" \text-flat "/D" \text-flat }
 	}
 }
 timpinbf = \markup {
 	\center-column {
-		\lower #1 "Timp." "in B F"
+		\lower #1 "Timp." \concat { "in B" \text-flat "/F" }
 	}
 }
 
 timpinhd = \markup {
 	\center-column {
-		\lower #1 "Timp." "in H D"
+		\lower #1 "Timp." "in H/D"
 	}
 }
 timpincg = \markup {
 	\center-column {
-		\lower #1 "Timp." "in C G"
+		\lower #1 "Timp." "in C/G"
 	}
 }
 timpinda = \markup {
 	\center-column {
-		\lower #1 "Timp." "in D A"
+		\lower #1 "Timp." "in D/A"
 	}
 }
 
@@ -651,237 +651,3 @@ mmrnStaffPadding = #(define-music-function
 		\override MultiMeasureRestNumber.staff-padding = #padding
 	#}
 )
-
-%###############################################################################
-%  Fonctions sur étagère
-%###############################################################################
-
-%trillflat = \markup { 
-%	\general-align #X #CENTER 
-%	\concat { 
-%		\hspace #2.4 \musicglyph #"scripts.trill" 
-%		\translate #'(0.5 . 0.49) \tiny \flat 
-%	}
-%}
-
-%trillnatural = \markup { 
-%	\general-align #X #CENTER 
-%	\concat { 
-%		\hspace #2.4 \musicglyph #"scripts.trill" 
-%		\translate #'(0.5 . 1.1) \tiny \natural 
-%	}
-%}
-
-%aIIOmit = \once \omit Voice.CombineTextScript
-
-%arpeggioPadding = #(define-music-function
-%	(padding)
-%	(number?)
-%	#{
-%		\once \override Voice.Arpeggio.padding = #padding
-%	#}
-%)
-
-
-%beamLeftTwoRightOne = {
-%	\set stemLeftBeamCount = #2
-%	\set stemRightBeamCount = #1
-%}
-
-%beamLeftOneRightTwo = {
-%	\set stemLeftBeamCount = #1
-%	\set stemRightBeamCount = #2
-%}
-
-%setBeamTriple = { 
-%	\set subdivideBeams = ##t
-%	\set baseMoment = #(ly:make-moment 1/8)
-%	\set beatStructure = 2,2,2
-%}
-
-%crescText = #(define-music-function
-%	(cresctext)
-%	(markup?)
-%	#{
-%		\once \set crescendoText = \markup {\italic { #cresctext } }
-%		\once \set crescendoSpanner = #'text
-%	#}
-%)
-%dimText = #(define-music-function
-%	(cresctext)
-%	(markup?)
-%	#{
-%		\once \set decrescendoText = \markup {\italic { #cresctext } }
-%		\once \set decrescendoSpanner = #'text
-%	#}
-%)
-
-
-%dynSpanYoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override DynamicTextSpanner.bound-details.right.Y = #offset
-%	#}
-%)
-
-%liriii = {
-%	\set stemLeftBeamCount = #1
-%	\set stemRightBeamCount = #3
-%}
-%liiiri = {
-%	\set stemLeftBeamCount = #3
-%	\set stemRightBeamCount = #1
-%}
-
-
-
-
-%omitMMRN = \omit MultiMeasureRestNumber
-
-
-%mmrEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override MultiMeasureRest.extra-offset = #offset
-%	#}
-%)
-
-
-%markYoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.Y-offset = #offset
-%	#}
-%)
-
-%ottavaShorten = #(define-music-function
-%	(value)
-%	(pair?)
-%	#{
-%		\once \override Staff.OttavaBracket.shorten-pair = #value
-%	#}
-%)
-
-%setSextolet = {
-%	\set subdivideBeams = ##t
-%	\set baseMoment = #(ly:make-moment 1/8)
-%	\set beatStructure = 2,2,2,2
-%	\override TupletNumber.Y-offset = #-3
-%	\override TupletNumber.avoid-slur = #'ignore
-%}
-%unsetSextolet = {
-%	\set subdivideBeams = ##f
-%	\revert TupletNumber.Y-offset
-%	\revert TupletNumber.avoid-slur
-%}
-
-
-%textInSlur = {
-%	%\once \override TextScript.outside-staff-priority = 0
-%	\once \override TextScript.slur-padding = #0
-%	\once \override TextScript.avoid-slur = #'around
-%}
-
-%textOsp = #(define-music-function
-%	(prio)
-%	(number?)
-%	#{
-%		\once \override TextScript.outside-staff-priority = #prio
-%	#}
-%)
-
-%tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-
-
-%tupletAvoidSlur = \once \override TupletNumber.avoid-slur = #'ignore
-
-
-
-%tremoloPosition = #(define-music-function
-%	(position)
-%	(number?)
-%	#{
-%		\once \override StemTremolo.Y-offset = #position
-%	#}
-%)
-
-%trillSpanCustom = #(define-music-function
-%	(length markup)
-%	(number? markup?)
-%	% function to create a trill spanner with :
-%	%	- specified length
-%	%	- specified markup
-%	#{
-%		\once \override TrillSpanner.minimum-length = #length
-%		\once \override TrillSpanner.springs-and-rods = #ly:spanner::set-spacing-rods
-%		\once \override Score.TrillSpanner.bound-details.left.text = #markup
-%	#}
-%)
-
-%trillSpanPadding = #(define-music-function
-%	(padding)
-%	(number?)
-%	% function to create a trill spanner with :
-%	%	- specified padding to avoid overlap
-%	#{
-%		\once \override TrillSpanner.bound-details.right.padding = #padding
-%	#}
-%)
-
-
-%naturaltrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \natural 
-%	}
-%}
-%sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
-%	\concat { 
-%		\musicglyph #"scripts.trill" \translate #'(0.5 . 1.05) \tiny \sharp  
-%	}
-%}
-
-
-
-
-%voltaShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Score.VoltaBracket.shorten-pair = #shortLength
-%	#}
-%)
-
-%whiteoutRehearsalMark = {
-%	\override Score.StaffSymbol.layer = #4
-%	\override Score.RehearsalMark.layer = #3
-%	\once \override Score.RehearsalMark.whiteout = ##t
-%	%\once \override Score.RehearsalMark.whiteout-style = #'outline
-%}
-
-
-%whiteoutMarkup = {
-%	\once \override Hairpin.layer = #4
-%	\once \override TextScript.layer = #3
-%	\once \override TextScript.whiteout = ##t
-%	\once \override TextScript.whiteout-style = #'outline
-%}
-
-%whiteoutDynamic = {
-%	\once \override DynamicText.whiteout = ##t
-%	\once \override DynamicText.whiteout-style = #'outline
-%}
-
-%whiteoutMetronomeMark = {
-%	\once \override Score.MetronomeMark.whiteout = ##t
-%	\once \override Score.MetronomeMark.whiteout-style = #'outline
-%}
-

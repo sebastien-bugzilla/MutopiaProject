@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.80"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperConductors.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -23,7 +23,6 @@
 \include "./00-Common/DvorakSymph4_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph4_Tempi.ily"
 \include "./00-Common/DvorakSymph4_Format_Cond_Mvt04.ily"
-%\include "./00-Common/DvorakSymph4_Format_temp.ily"
 \include "./04-Mvt4/m04_v01_music_FlautoI_C.ily"
 \include "./04-Mvt4/m04_v02_music_FlautoII_C.ily"
 \include "./04-Mvt4/m04_v03_music_OboeI_C.ily"
@@ -71,9 +70,6 @@
 				\new GrandStaff \with { \nameGrandStaffIMvtIV 
 					\consists Keep_alive_together_engraver } <<
 					\new Staff <<
-%						\new Voice {
-%							\displayFilterVoice
-%						}
 						\new Voice {
 							\formatConductorMvtIV
 						}
@@ -91,17 +87,14 @@
 				\new Staff {
 					\timeMvtIV \nameStaffIIIMvtIV
 					\partCombine \musicOboeIMvtIV \musicOboeIIMvtIV
-%					\musicOboeIIMvtIV
 				}
 				\new Staff {
 					\timeMvtIV \nameStaffIVMvtIV
 					\partCombine \musicClarinettoIMvtIV \musicClarinettoIIMvtIV
-%					\musicClarinettoIIMvtIV
 				}
 				\new Staff {
 					\timeMvtIV \nameStaffVMvtIV
 					\partCombine #'(0 . 11) \musicFagottoIMvtIV \musicFagottoIIMvtIV
-%					\musicFagottoIIMvtIV 
 				}
 			>>
 			\new StaffGroup <<
@@ -110,18 +103,15 @@
 					\new Staff {
 						\timeMvtIV \nameStaffVIMvtIV
 						\partCombine \musicCornoIMvtIV \musicCornoIIMvtIV
-%						\musicCornoIIMvtIV
 					}
 					\new Staff {
 						\timeMvtIV \nameStaffVIIMvtIV
 						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
-%						\musicCornoIVMvtIV 
 					}
 				>>
 				\new Staff {
 					\timeMvtIV \nameStaffVIIIMvtIV
 					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
-%					\musicTrombeIIMvtIV 
 				}
 				\new GrandStaff \with { \nameGrandStaffIIIMvtIV } <<
 					\new Staff {
@@ -163,7 +153,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-%			system-count = 80
 		}
 	}
 }

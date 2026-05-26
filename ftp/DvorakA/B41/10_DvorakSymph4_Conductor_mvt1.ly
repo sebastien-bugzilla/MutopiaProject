@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.25.30"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph4_Header.ily"
 \include "./00-Common/DvorakSymph4_PaperConductors.ily"
 \include "./00-Common/DvorakSymph4_timeMvt.ily"
@@ -73,9 +73,6 @@
 						\new Voice {
 							\formatConductorMvtI
 						}
-%						\new Voice {
-%							\displayFilterVoice
-%						}
 						\new Voice {
 							\tempiMvtI
 						}
@@ -90,17 +87,14 @@
 				\new Staff {
 					\timeMvtI \nameStaffIIIMvtI
 					\partCombine #'(0 . 14) \musicOboeIMvtI \musicOboeIIMvtI
-%					\musicOboeIIMvtI 
 				}
 				\new Staff {
 					\timeMvtI \nameStaffIVMvtI
 					\partCombine \musicClarinettoIMvtI \musicClarinettoIIMvtI
-%					\musicClarinettoIIMvtI 
 				}
 				\new Staff {
 					\timeMvtI \nameStaffVMvtI
 					\partCombine \musicFagottoIMvtI \musicFagottoIIMvtI
-%					\musicFagottoIIMvtI
 				}
 			>>
 			\new StaffGroup <<
@@ -109,18 +103,15 @@
 					\new Staff {
 						\timeMvtI \nameStaffVIMvtI
 						\partCombine \musicCornoIMvtI \musicCornoIIMvtI
-%						\musicCornoIIMvtI
 					}
 					\new Staff {
 						\timeMvtI \nameStaffVIIMvtI
 						\partCombine \musicCornoIIIMvtI \musicCornoIVMvtI
-%						\musicCornoIVMvtI
 					}
 				>>
 				\new Staff {
 					\timeMvtI \nameStaffVIIIMvtI
 					\partCombine \musicTrombeIMvtI \musicTrombeIIMvtI
-%					\musicTrombeIIMvtI
 				}
 				\new GrandStaff \with { \nameGrandStaffIIIMvtI } <<
 					\new Staff {
@@ -162,7 +153,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-			system-count = 69
 		}
 	}
 }
