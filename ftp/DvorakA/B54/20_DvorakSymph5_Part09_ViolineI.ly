@@ -1,0 +1,143 @@
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Antonín Dvořák (1841 - 1904)
+%  work               : Symphony No. 5 in F Major Op.76 (B.54)
+%  Source             : František Bartoš Souborné vydání díla, series 3, volume
+%                       5 Prague SNKLHU, 1960. Plate H 3000. 
+%  Type of score      : Score for ViolineI
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Wednesday 27 May 2026, 21:09
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.26.0"
+\include "./00-Common/DvorakSymph5_Header.ily"
+\include "./00-Common/DvorakSymph5_PaperParts.ily"
+\include "./00-Common/DvorakSymph5_timeMvt.ily"
+\include "./00-Common/DvorakSymph5_LayoutParts.ily"
+\include "./00-Common/DvorakSymph5_NameVoice.ily"
+\include "./00-Common/DvorakSymph5_Shortcuts.ily"
+\include "./00-Common/DvorakSymph5_Format_Part09_ViolineI.ily"
+\include "./00-Common/DvorakSymph5_CueVoice.ily"
+\include "./01-Mvt1/m01_v20_music_ViolinoI.ily"
+\include "./02-Mvt2/m02_v20_music_ViolinoI.ily"
+\include "./03-Mvt3/m03_v20_music_ViolinoI.ily"
+\include "./04-Mvt4/m04_v20_music_ViolinoI.ily"
+%###############################################################################
+%#                          S C O R E   S E C T I O N                          #
+%###############################################################################
+\book {
+	\header {
+		subtitle = \markup { 
+			\abs-fontsize #12 \sans
+			\center-column {
+				"Part for ViolineI"
+			}
+		}
+		subsubtitle = \markup { 
+			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54)"
+		}
+		instrument = \markup {
+			"ViolineI"
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatViolinoIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolinoIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameViolinoIMvtI \musicViolinoIMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold 1.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatViolinoIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolinoIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameViolinoIMvtII \musicViolinoIMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold 2.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatViolinoIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolinoIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameViolinoIMvtIII \musicViolinoIMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold 3.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatViolinoIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceViolinoIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameViolinoIMvtIV \musicViolinoIMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold 4.
+			}
+		}
+		\layout {
+		}
+	}
+}
