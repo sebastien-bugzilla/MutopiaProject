@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFlautoIIMvtI = \relative c {
+musicFlautoIMvtI = \relative c {
 	\clef treble
 	\key f \major
 %	\transposition a
@@ -17,47 +17,47 @@ musicFlautoIIMvtI = \relative c {
 		
 		
 		
-		d'2\p\<
-		e4..( f16)\!
+		f'2\p\<
+		g4..( a16)\!
 % Bars 11 to 15
-		f2\fz\>~
-		<< f~ {s8 s s s\!}>>
-		f2~\pp
-		f4.. a'16-.\pp
-		a2->~
+		a2\fz\>~
+		<< a~ {s8 s s s\!}>>
+		a2~\pp
+		a4.. f''16-.\pp
+		f2->~
 % Bars 16 to 20
-		a8. a16-.\< f-.( a-. c-. f-.)\!
-		c4\brack\fz\> c8. a16\!
-		d4.(_\dimmarkup a8)
-		a2~\p
-		a8.\< f16-. f(-. f-. a-. c-.)\!
+		f8. c16-.\< a-.( c-. f-. a-.)\!
+		f4\brack\fz\> f8. c16\!
+		f4.(_\dimmarkup c8)
+		\partCombineApart \stemDown c2~
+		\omitBeam c8. a16-. \stemUp f(-. a-. c-. f-.)\! \partCombineAutomatic
 % Bars 21 to 25
-		a4 a8.\> f16-.
-		a4.( f8)\!
-		a2\p\<
-		<< b {s8 s s s\!}>>
-		c2\fz~
+		c4 c8.\> a16-.
+		c4.( a8)\!
+		\partCombineApart \stemDown c2
+		\stemUp d4..( e16) \partCombineAutomatic
+		e2\fz~
 % Bars 26 to 30
-		c8 r r4
-		d2->~\fz
-		d8 r r4
-		g,4\fz r
+		e8 r r4
+		f2->~\fz
+		f8 r r4
+		\once \partCombineApart g,4 r
 		r r8_\crescmarkup g
 % Bars 31 to 35
 		bes4->\brack\fz r
 		r r8 bes
 		c4\f c8. g16
-		bes8 r r4
+		d'8 r r4
 		c4\f c8. g16
 % Bars 36 to 40
 		bes8 r r4
 		c8\f r r4
 		R2*2
 		
-		r4 bes\f\<~
+		r4 d\f\<~
 % Bars 41 to 45
-		bes2\!
-		c8 r r4
+		d2\!
+		e8 r r4
 		R2*2
 		\mark \default
 		R2*7
@@ -65,7 +65,7 @@ musicFlautoIIMvtI = \relative c {
 		
 % Bars 51 to 55
 		
-		r4 r8 g\f
+		r4 r8 g,\f
 		f4->\ff a16-. g-. f8-.
 		g4-> bes16-. a-. g8-.
 		a-. c4-> bes8
@@ -73,8 +73,8 @@ musicFlautoIIMvtI = \relative c {
 		a( aes) g16-. e-. c-. r
 		f4-> a16-. g-. f8-.
 		g4-> bes16-. a-. g8-.
-		a8-. e'4-> e8~
-		e e-. a,-. r
+		a8-. e'4-> \partCombineApart d8~
+		d c16-. b-. a8-. \partCombineAutomatic r
 % Bars 61 to 65
 		R2
 		r8 e4.\fp->~
@@ -93,9 +93,9 @@ musicFlautoIIMvtI = \relative c {
 % Bars 86 to 90
 		
 		
-		e'4->\f gis16( fis e8)
-		gis4-> b16( a gis8)
-		r8 e'4->\ff e8~
+		gis'4->\f b16( a gis8)
+		b4-> d16( cis b!8)
+		r8 e4->\ff e8~
 % Bars 91 to 95
 		e e-. e-. e-.
 		a, r r4
@@ -114,59 +114,59 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	
-		r4 g--\pp^\ten
-		r4 bes--
+		r4 bes--\pp^\ten
+		r4 d--
 % Bars 121 to 125
-		r g--
 		r bes--
-		r f--
-		r e--
-		r ees--
-% Bars 126 to 130
 		r d--
-		c-- r
+		r gis,--
+		r a--
+		r ges--
+% Bars 126 to 130
+		r f--
+		e-- r
 		R2*5
 		
 		
 % Bars 131 to 135
 		
 		
-		e,4\p e16( g c) r
-		c4 c16( d e) r
-		e(\< g c) r c( d e)\! r
+		c4\p c16( d e) r
+		e4 e16( f g) r
+		c(\< d e) r e( f g)\! r
 % Bars 136 to 140
-		e(\> d c) r c( g e)\! r
-		e(\p d c) r r4
+		g(\> f e) r e( d c)\! r
+		c(\p g e) r r4
 		R2
-		e'2\ff~
-		e
+		g'2\ff~
+		g
 % Bars 141 to 145
 		R2*4
 		
 		
 		\mark \default
-		e2\ff~
+		g2\ff~
 % Bars 146 to 150
-		e
-		cis8 r r4
+		g
+		a8 r r4
 		R2*3
 		
 		
 % Bars 151 to 155
-		cis,16(\p\< e a) r a( b cis)\! r
-		cis(\> b a) r a( e cis)\! r
+		a,16(\p\< b cis) r cis( d e)\! r
+		e(\> d cis!) r cis( b! a)\! r
 		R2*2
 		
-		cis'2\ff~
+		a'2\ff~
 % Bars 156 to 160
-		cis
+		a
 		R2*10
 % Bars 161 to 165
 	
 % Bars 166 to 170
 		
-		d2\ff~
-		d4 r
+		fis2\ff~
+		fis4 r
 		R2*16
 % Bars 171 to 175
 	
@@ -177,86 +177,90 @@ musicFlautoIIMvtI = \relative c {
 		
 		
 		
-		c2->\fp~
+		e2->\fp~
 % Bars 186 to 190
-		c8 r g-. r
-		g-. r e-. r
-		c-. r g-. r
-		\subdiviseBeam \tuplet 3/2 4 {e8(\pp g c~ c g e~
-		e g c~ c g e)~}
+		e8 r c-. r
+		bes-. r g-. r
+		e-. r d-. r
+		\subdiviseBeam \tuplet 3/2 4 {c8(\pp d e~ e d c~
+		c d e~ e d c)~}
 % Bars 191 to 195
-		e( g4 c8~
-		c g4 e8)
+		c( d4 e8~
+		e d4 c8)
 		\alternative {
 			\volta 1 {
-				a2~
-				a8 r r4
+				f2~
+				f8 r r4
 			}
 			\volta 2 {
-				\tuplet 3/2 4 {ees8\pp( bes' c~ c bes ees,~}
+				\partCombineApart \tuplet 3/2 4 {\subdiviseBeam \omitBeam c8 des ees~ ees des c~}
 			}
 		}
 	}
 % Bars 196 to 200
-	\tuplet 3/2 4 {ees bes' c~ c bes ees,~)
-	ees( bes' c~ c bes ees,~
-	ees bes' c~ c bes ees,)~
-	ees( aes bes~ bes aes ees~
-	ees aes bes~ bes aes ees)~
+	\tuplet 3/2 4 {\omitBeam c des ees~ ees des c~
+	\omitBeam c des ees~ ees des c~
+	\omitBeam c des ees~ ees des c
+	bes c des~ des c bes~
+	bes c des~ des c bes~
 % Bars 201 to 205
-	ees( aes bes~ bes aes ees~
-	ees aes bes~ bes aes ees) }
-	f r r4
+	bes c des~ des c bes~
+	bes c des~ des c bes } \partCombineAutomatic
+	aes r r4
 	R2*3
 	
 % Bars 206 to 210
 	
-	\tuplet 3/2 4 {e'!8(\p g c~ c g e~
-	e g c~ c g e)~
-	e\( b' c~ c b e,~
-	e b' c~ c b e,(} \unSubdiviseBeam 
+	\tuplet 3/2 4 {\partCombineApart \stemDown \omitTupletNumber \omitBeam c'8( d e!~ \omitTupletNumber \omitBeam e d c~
+	\omitTupletNumber \omitBeam c d e~ \omitTupletNumber \omitBeam e d c)~
+	\omitTupletNumber \omitBeam c( d e~ \omitTupletNumber \omitBeam e d c~
+	\omitTupletNumber \omitBeam c d e~ \omitTupletNumber \omitBeam e d c~} \unSubdiviseBeam
 % Bars 211 to 215
-	fis)\)\fz r r4
+	\omitFlag c) \partCombineAutomatic r r4
 	R2
-	c'2\fp->~
+	c2\fp->~
 	c8 r a-. r
-	R2*8
+	\partCombineApart \stemUp g2->~\p 
 % Bars 216 to 220
-	
+	g8. d16 b-.( d-. g-. b-.)
+	g4-> g8. d16
+	g4.-> d8
+	d2~
+	d8. b16 g-.( b-. d-. g-.)
 % Bars 221 to 225
-	
-	
-	e,2\p
-	fis4..( g16)
-	<< g2~ {s8\< s s s\!}>>
+	d4  d8. b16
+	d4.( b8) \partCombineAutomatic
+	g2\p
+	a4..( b16)
+	<< b2~ {s8\< s s s\!}>>
 % Bars 226 to 230
-	<< g4. {s8\> s s\!}>> r8 \mark \default
+	<< b4. {s8\> s s\!}>> r8 \mark \default
 	R2*14
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	e''2->\ff
-	e4-> e8.-> c16
-	e4.-> c8
-	e4 e8. c16
-	e8 r r4
+	g''2->\ff
+	g4-> g8.-> e16
+	g4.-> e8
+	g4 g8. e16
+	g8 r r4
 % Bars 246 to 250
 	R2
-	r8 c,-.\p r e-.
-	r g-. r c-.
+	r8 e,-.\p r g-.
+	r c-. r e-.
 	R2*2
 	
 % Bars 251 to 255
-	r8 c,-.\p r e-.
-	r g-. r c-.
-	cis4 r
+	r8 e,-.\p r g-.
+	r c-. r e-.
+	e4 r
 	R2*3
 	
 % Bars 256 to 260
 	\mark \default
-	e,2\p~
+	e2\p~
 	e~
 	e~
 	e
@@ -275,14 +279,14 @@ musicFlautoIIMvtI = \relative c {
 % Bars 271 to 275
 	f~
 	f
-	ees->\f~
-	ees8 r r4
-	R2*2
+	\partCombineApart \once \stemDown ees->~
+	ees8. bes!16( g bes d ees)
+	e!4-> e8.-> cis16-.
 % Bars 276 to 280
-	
+	e4-. r \partCombineAutomatic
 	R2*4
 % Bars 281 to 285
-	bes'4->\f r
+	bes4->\f r
 	b-> r
 	b-> r
 	c-> r
@@ -317,25 +321,25 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	\mark \default
-	\tuplet 3/2 4 {a8\pp a a  a[ a a] 
-	a4.:8 a:
+	\tuplet 3/2 4 {c8\pp c c  c[ c c] 
+	c4.:8 c:
 % Bars 331 to 335
-	a: a:
-	a: a:
-	a: a:
-	a: a:
-	a: a:
+	c: c:
+	c: c:
+	c: c:
+	c: c:
+	c: c:
 % Bars 336 to 340
-	a: a: }
-	f4\p r
-	e r
-	c'2\pp~
-	c
+	c: c: }
+	a4\p r
+	c r
+	\partCombineApart c2~
+	c \partCombineAutomatic
 % Bars 341 to 345
-	a(\pp
-	c
-	c~
-	c8) r r4
+	d(\pp
+	e
+	f~
+	f8) r r4
 	R2*16
 % Bars 346 to 350
 	
@@ -352,9 +356,9 @@ musicFlautoIIMvtI = \relative c {
 % Bars 366 to 370
 	R2*2
 	
-	r4 bes_\pcresc~
-	bes2
-	c8-.\f r r4
+	r4 d_\pcresc~
+	d2
+	e8-.\f r r4
 % Bars 371 to 375
 	R2*2
 	\mark \default
@@ -364,11 +368,11 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	
-	r4 r8 g-.\f
+	r4 r8 g,-.\f
 % Bars 381 to 385
 	f4->\fp a16-. g-. f8-.
 	g4-> bes16-. a-. g8-.
-	a8-.\noBeam c->(\fz b bes
+	a8-.\noBeam c->[(\fz b bes]
 	a aes) g16-. e-. c8-.
 	R2*8
 % Bars 386 to 390
@@ -376,23 +380,23 @@ musicFlautoIIMvtI = \relative c {
 % Bars 391 to 395
 	
 	
-	r8 f-.\p r a-.
-	r g-. r bes-.
-	r a-. r g-.
+	r8 a'-.\p r c-.
+	r c-. r c-.
+	r c-. r c-.
 % Bars 396 to 400
-	r f-. r a-.
-	r a-. r g-.
-	r_\crescmarkup f-. r a-.
-	r a-. r g-.
-	r f-. r a-.
+	r c-. r c-.
+	r c-. r c-.
+	r_\crescmarkup c-. r c-.
+	r c-. r c-.
+	r c-. r c-.
 % Bars 401 to 405
 	R2*2
 	
-	e4->\f b'16-. a-. e8-.
-	a4-> c16-. b-. a8-.
+	b4->\f d16-. c-. b8-.
+	c4-> e16-. d-. c8-.
 	R2
 % Bars 406 to 410
-	r8 e'4.->\fz
+	r8 e4.->\fz
 	R2
 	r8 e4.->\fz
 	R2*8
@@ -406,45 +410,49 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	
-	R2*6
+	\partCombineApart c4(\mf\< cis
 % Bars 426 to 430
-	
+	d8\! g4\> des8)\!
+	c4( cis\<
+	d8\! g4\> des8)\!
+	c4(-\crescmarkup cis
+	d e8 f)
 % Bars 431 to 435
-	f,4( fis\<
-	g8\! c4\> g8)\!
-	f4( fis\<
-	g8\! c4\> g8)\!
-	bes2~
+	f4( dis
+	<< e2) {s8 s s s}>>
+	f4( dis
+	<< e2)~ {s8 s s s}>>
+	e2~
 % Bars 436 to 440
-	bes~_\dimmarkup
-	bes~\>
-	bes4( f)\!
-	g8\p r r4
-	R2*3
+	e_\dimmarkup
+	f2(~
+	f4 des8 bes)
+	des2\p~
+	des4 f8.( des16)
 % Bars 441 to 445
-	
-	
-	r4 aes\p
-	r_\dimmarkup g
-	r\> beses
+	des2~
+	des4 f8.( des16) \partCombineAutomatic
+	r4 b\p
+	r_\dimmarkup c
+	r\> c
 % Bars 446 to 450
-	r aes\!
+	r des\!
 	R2*5
 % Bars 451 to 455
 	
 	r4 bes,\p(
 	<< c2\> {s8 s s s\!}>>
 	bes2) \markk
-	<< a(\mf\< {s8 s s s\!}>>
+	\partCombineApart a4( c
 % Bars 456 to 460
-	<< g2) {s8\> s s s\!}>>
-	f4(\< a\!
-	<< g2)\> {s8 s s\! s_\crescmarkup }>>
-	f4(\f a
-	g2)\<
+	<< bes2) {s8 s s s}>> \partCombineAutomatic
+	a4(\< c\!
+	<< bes2)\> {s8 s s\! s_\crescmarkup }>>
+	a4(\f c
+	bes2)\<
 % Bars 461 to 465
-	f4( a 
-	<< g2) {s8 s s s\!}>>
+	a4( c 
+	<< bes2) {s8 s s s\!}>>
 	f'4(\ff fis)
 	g8( d'4 g,8)
 	a( e'4 a,8)
@@ -454,17 +462,17 @@ musicFlautoIIMvtI = \relative c {
 % Bars 471 to 475
 	
 	
-	a,2\ff~
-	a8. a16 a8 r
-	a4 a8. a16
+	f2\ff~
+	f8. c16 \partCombineApart a(-. c-. f-. a-.) \partCombineAutomatic
+	f4 f8. c16
 % Bars 476 to 480
-	a4. a8
-	a2~
-	a8. f16 f8 r
-	a4_\dimmarkup a8. a16
-	a4. a8
+	f4. c8
+	c2~
+	c8. a16 \partCombineApart f-.( a-. c-. f-.)
+	c4_\dimmarkup c8. a16
+	c4. a8
 % Bars 481 to 485
-	a\p r r4
+	f \partCombineAutomatic r r4
 	R2*7
 % Bars 486 to 490
 	
@@ -481,12 +489,12 @@ musicFlautoIIMvtI = \relative c {
 % Bars 496 to 500
 	
 	
-	R2
-	a'2(\pp
-	c
+	\partCombineApart r4 c'16(\p f a c
+	f2
+	g4.. a16)
 % Bars 501 to 505
-	f2~
-	f8) r r4
+	a2~
+	a8 \partCombineAutomatic r r4
 	R2*2
 	
 	R2\fermata \fine

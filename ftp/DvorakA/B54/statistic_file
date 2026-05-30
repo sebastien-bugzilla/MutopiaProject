@@ -1,20 +1,20 @@
-   145    396   4825 10_DvorakSymph5_Conductor_mvt1.ly
-   145    396   4883 10_DvorakSymph5_Conductor_mvt2.ly
-   149    405   5069 10_DvorakSymph5_Conductor_mvt3.ly
-   145    396   4883 10_DvorakSymph5_Conductor_mvt4.ly
-   243    564   5188 20_DvorakSymph5_Part01_Flauti.ly
-   243    564   5088 20_DvorakSymph5_Part02_Oboi.ly
-   243    564   5400 20_DvorakSymph5_Part03_Clarinetti.ly
-   243    564   5244 20_DvorakSymph5_Part04_Fagotti.ly
-   443    964   8508 20_DvorakSymph5_Part05_Corni.ly
-   243    564   5192 20_DvorakSymph5_Part06_Trombe.ly
-   343    764   7064 20_DvorakSymph5_Part07_Tromboni.ly
-   168    414   3944 20_DvorakSymph5_Part08_Percussion.ly
-   143    364   3528 20_DvorakSymph5_Part09_ViolineI.ly
-   143    364   3556 20_DvorakSymph5_Part10_ViolineII.ly
-   143    364   3444 20_DvorakSymph5_Part11_Viola.ly
-   143    364   3612 20_DvorakSymph5_Part12_Violoncello.ly
-   143    364   3612 20_DvorakSymph5_Part13_Contrabasso.ly
+   150    469   5010 10_DvorakSymph5_Conductor_mvt1.ly
+   145    397   4884 10_DvorakSymph5_Conductor_mvt2.ly
+   149    406   5070 10_DvorakSymph5_Conductor_mvt3.ly
+   145    397   4884 10_DvorakSymph5_Conductor_mvt4.ly
+   243    565   5189 20_DvorakSymph5_Part01_Flauti.ly
+   243    565   5089 20_DvorakSymph5_Part02_Oboi.ly
+   243    565   5401 20_DvorakSymph5_Part03_Clarinetti.ly
+   243    565   5245 20_DvorakSymph5_Part04_Fagotti.ly
+   443    965   8509 20_DvorakSymph5_Part05_Corni.ly
+   243    565   5193 20_DvorakSymph5_Part06_Trombe.ly
+   343    765   7065 20_DvorakSymph5_Part07_Tromboni.ly
+   168    415   3945 20_DvorakSymph5_Part08_Percussion.ly
+   143    365   3529 20_DvorakSymph5_Part09_ViolineI.ly
+   143    365   3557 20_DvorakSymph5_Part10_ViolineII.ly
+   143    365   3445 20_DvorakSymph5_Part11_Viola.ly
+   143    365   3613 20_DvorakSymph5_Part12_Violoncello.ly
+   143    365   3613 20_DvorakSymph5_Part13_Contrabasso.ly
    321    877   7227 00-Common/DvorakSymph5_CueVoice.ily
     10     60    539 00-Common/DvorakSymph5_Format_Cond_Mvt01.ily
     10     60    540 00-Common/DvorakSymph5_Format_Cond_Mvt02.ily
@@ -33,19 +33,21 @@
     22     91   1007 00-Common/DvorakSymph5_Format_Part11_Viola.ily
     22     91   1031 00-Common/DvorakSymph5_Format_Part12_Violoncello.ily
     22     91   1031 00-Common/DvorakSymph5_Format_Part13_Contrabasso.ily
-    34    291   2015 00-Common/DvorakSymph5_Header.ily
-    71    255   2500 00-Common/DvorakSymph5_LayoutConductors.ily
+    34    291   2017 00-Common/DvorakSymph5_Header.ily
+    71    259   2513 00-Common/DvorakSymph5_LayoutConductors.ily
     71    255   2500 00-Common/DvorakSymph5_LayoutParts.ily
     75    312   2976 00-Common/DvorakSymph5_NameGrandStaff.ily
    560   1692  12769 00-Common/DvorakSymph5_NameStaff.ily
    699   2359  19276 00-Common/DvorakSymph5_NameVoice.ily
-    71    196   1701 00-Common/DvorakSymph5_PaperConductors.ily
+    71    197   1702 00-Common/DvorakSymph5_PaperConductors.ily
     67    187   1607 00-Common/DvorakSymph5_PaperParts.ily
-     6     44    379 00-Common/DvorakSymph5_Shortcuts.ily
-    19     78    580 00-Common/DvorakSymph5_Tempi.ily
-    18     71    487 00-Common/DvorakSymph5_timeMvt.ily
-   213    559   2440 01-Mvt1/m01_v01_music_FlautoI.ily
-   213    559   2441 01-Mvt1/m01_v02_music_FlautoII.ily
+   119    267   2365 00-Common/DvorakSymph5_Shortcuts.ily
+    37    124    841 00-Common/DvorakSymph5_Tempi.ily
+    23     94    611 00-Common/DvorakSymph5_timeMvt.ily
+   501   1454   7374 01-Mvt1/m01_v01_music_FlautoI_C.ily
+   501   1395   6527 01-Mvt1/m01_v01_music_FlautoI.ily
+   493   1369   6650 01-Mvt1/m01_v02_music_FlautoII_C.ily
+   493   1338   6269 01-Mvt1/m01_v02_music_FlautoII.ily
    213    559   2438 01-Mvt1/m01_v03_music_OboeI.ily
    213    559   2439 01-Mvt1/m01_v04_music_OboeII.ily
    213    559   2444 01-Mvt1/m01_v05_music_ClarinettoI.ily
@@ -137,4 +139,4 @@
    177    469   2077 04-Mvt4/m04_v22_music_Viola.ily
    177    469   2083 04-Mvt4/m04_v23_music_Violoncello.ily
    177    469   2083 04-Mvt4/m04_v24_music_Contrabasso.ily
- 20463  55558 332798 total
+ 22166  60382 357325 total

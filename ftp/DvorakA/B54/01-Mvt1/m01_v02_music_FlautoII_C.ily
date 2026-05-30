@@ -28,14 +28,14 @@ musicFlautoIIMvtI = \relative c {
 % Bars 16 to 20
 		a8. a16-.\< f-.( a-. c-. f-.)\!
 		c4\brack\fz\> c8. a16\!
-		d4.(_\dimmarkup a8)
+		d4.( a8)
 		a2~\p
-		a8.\< f16-. f(-. f-. a-. c-.)\!
+		a8.\< f16 f(-. f-. a-. c-.)\!
 % Bars 21 to 25
 		a4 a8.\> f16-.
 		a4.( f8)\!
 		a2\p\<
-		<< b {s8 s s s\!}>>
+		<< b {s8 s s8. s16\!}>>
 		c2\fz~
 % Bars 26 to 30
 		c8 r r4
@@ -93,8 +93,8 @@ musicFlautoIIMvtI = \relative c {
 % Bars 86 to 90
 		
 		
-		e'4->\f gis16( fis e8)
-		gis4-> b16( a gis8)
+		e'4->\f gis!16( fis e8)
+		gis4-> b!16( a gis8)
 		r8 e'4->\ff e8~
 % Bars 91 to 95
 		e e-. e-. e-.
@@ -114,7 +114,7 @@ musicFlautoIIMvtI = \relative c {
 	
 	
 	
-		r4 g--\pp^\ten
+		r4 g--\pp
 		r4 bes--
 % Bars 121 to 125
 		r g--
@@ -153,7 +153,7 @@ musicFlautoIIMvtI = \relative c {
 		
 		
 % Bars 151 to 155
-		cis,16(\p\< e a) r a( b cis)\! r
+		cis,16(\p\< e a) r a( b! cis!)\! r
 		cis(\> b a) r a( e cis)\! r
 		R2*2
 		
@@ -193,30 +193,30 @@ musicFlautoIIMvtI = \relative c {
 				a8 r r4
 			}
 			\volta 2 {
-				\tuplet 3/2 4 {ees8\pp( bes' c~ c bes ees,~}
+				\stemUp \omitTupletNumber \tuplet 3/2 4 {\subdiviseBeam ees8\pp( bes' c~ \omitBeam \omitTupletNumber c bes ees,~}
 			}
 		}
 	}
 % Bars 196 to 200
-	\tuplet 3/2 4 {ees bes' c~ c bes ees,~)
-	ees( bes' c~ c bes ees,~
-	ees bes' c~ c bes ees,)~
-	ees( aes bes~ bes aes ees~
-	ees aes bes~ bes aes ees)~
+	\tuplet 3/2 4 {\omitTupletNumber ees bes' c~ \omitBeam \omitTupletNumber c bes ees,~)
+	\omitTupletNumber ees( bes' c~ \omitBeam \omitTupletNumber c bes ees,~
+	\omitTupletNumber ees bes' c~ \omitBeam \omitTupletNumber c bes ees,)~
+	\omitTupletNumber \omitBeam ees( aes bes~ \omitBeam \omitTupletNumber bes aes ees~
+	\omitTupletNumber \omitBeam ees aes bes~ \omitBeam \omitTupletNumber bes aes ees)~
 % Bars 201 to 205
-	ees( aes bes~ bes aes ees~
-	ees aes bes~ bes aes ees) }
+	\omitTupletNumber \omitBeam ees( aes bes~ \omitBeam \omitTupletNumber bes aes ees~
+	\omitTupletNumber \omitBeam ees aes bes~ \omitBeam \omitTupletNumber bes aes ees) } 
 	f r r4
 	R2*3
 	
 % Bars 206 to 210
 	
-	\tuplet 3/2 4 {e'!8(\p g c~ c g e~
-	e g c~ c g e)~
-	e\( b' c~ c b e,~
-	e b' c~ c b e,(} \unSubdiviseBeam 
+	\tuplet 3/2 4 {\stemDown e'!8\p g c~ c g e~
+	e g c~ c g e~
+	e b' c~ c b e,~
+	e b' c~ c b e,} \unSubdiviseBeam 
 % Bars 211 to 215
-	fis)\)\fz r r4
+	fis\fz r r4
 	R2
 	c'2\fp->~
 	c8 r a-. r
@@ -271,11 +271,11 @@ musicFlautoIIMvtI = \relative c {
 	fis~
 	fis
 	f!~
-	f_\crescmarkup
+	f
 % Bars 271 to 275
 	f~
 	f
-	ees->\f~
+	ees\f~
 	ees8 r r4
 	R2*2
 % Bars 276 to 280
@@ -352,7 +352,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 366 to 370
 	R2*2
 	
-	r4 bes_\pcresc~
+	r4 bes~
 	bes2
 	c8-.\f r r4
 % Bars 371 to 375
@@ -368,7 +368,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 381 to 385
 	f4->\fp a16-. g-. f8-.
 	g4-> bes16-. a-. g8-.
-	a8-.\noBeam c->(\fz b bes
+	a8-.\noBeam c->[(\fz b bes]
 	a aes) g16-. e-. c8-.
 	R2*8
 % Bars 386 to 390
@@ -416,7 +416,7 @@ musicFlautoIIMvtI = \relative c {
 	g8\! c4\> g8)\!
 	bes2~
 % Bars 436 to 440
-	bes~_\dimmarkup
+	bes~
 	bes~\>
 	bes4( f)\!
 	g8\p r r4
@@ -461,7 +461,7 @@ musicFlautoIIMvtI = \relative c {
 	a4. a8
 	a2~
 	a8. f16 f8 r
-	a4_\dimmarkup a8. a16
+	a4 a8. a16
 	a4. a8
 % Bars 481 to 485
 	a\p r r4

@@ -15,7 +15,7 @@
 	title = \markup { 
 		\abs-fontsize #18 \sans
 		\center-column {
-			Symphony No. 5 in F Major Op.76 (B.54)
+			"Symphony No. 5 in F Major Op.76 (B.54)"
 		}
 	}
 %	mutopiatitle = "Concerto for Violin and Cello in A Minor"

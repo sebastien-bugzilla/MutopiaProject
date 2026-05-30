@@ -22,7 +22,7 @@
 		\lower #1.24 \beam #3.3 #0.5 #0.54
 		\raise #0 \beam #3.3 #0.5 #0.54 
 	}
-	system-separator-markup = \slashSeparator
+%	system-separator-markup = \slashSeparator
 	bookTitleMarkup = \markup {
 		\column {
 			\vspace #15
