@@ -13,6 +13,7 @@
 %	\set Voice.restNumberThreshold = #0
 	\compressMMRests
 	\compressEmptyMeasures
+	\mergeDifferentlyDottedOn
 	\context {
 		\Voice
 		\override TupletBracket.bracket-visibility = #'if-no-beam
