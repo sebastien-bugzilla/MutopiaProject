@@ -9,14 +9,14 @@ musicClarinettoIIMvtI = \relative c {
 	\key g \major
 	\transposition bes
 % Bars 1 to 5
-	b''2\p^\solo~
+	b''2\p~
 	b8.\< b16-. g(-. b-. d-. g-.)\!
 	\repeat volta 2 {
 		b,4--\f b8.-- b16--
 		b4.->(\> b8)\!
 		b2~\p
 % Bars 6 to 10
-		b8.\< g16-. g-.( g-. b-. d-.)\!
+		\dotsPosition #1 b8.\< g16 g-.( g-. b-. d-.)\!
 		b4-> b8.\> g16
 		b4.( g8)\!
 		e2\p\<
@@ -102,12 +102,12 @@ musicClarinettoIIMvtI = \relative c {
 		r8 bes4\fz( g8)
 		r bes4(\fz f8)
 		r bes4(\fz f8)
-		r bes4(\brack\fz_\crescmarkup f8)
+		r bes4(\brack\fz f8)
 % Bars 86 to 90
 		r bes4.\brack\fz->
 		r8 bes4.\brack\fz-> 
-		ges4->\f bes16( aes ges8)
-		bes4-> des16( ces bes8)
+		ges4->\f bes!16( aes ges8)
+		bes4-> des!16( ces bes8)
 		r ges4->\ff ges8~
 % Bars 91 to 95
 		ges ges-. ges-. ges-.
@@ -130,10 +130,10 @@ musicClarinettoIIMvtI = \relative c {
 		
 		r4 fis''\p
 % Bars 116 to 120
-		r fis_\dimmarkup
+		r fis
 		r e\>
 		r e\!
-		r a,--^\ten\pp
+		r a,--\pp
 		r c--
 % Bars 121 to 125
 		r a--
@@ -179,7 +179,7 @@ musicClarinettoIIMvtI = \relative c {
 		
 		
 		
-		fis,!2_\pcrescmolto~
+		fis,!2~
 % Bars 166 to 170
 		fis
 		e'2\ff~
@@ -216,19 +216,19 @@ musicClarinettoIIMvtI = \relative c {
 				b8.\< b16-. g-.( b-. d-. g-.)\!
 			}
 			\volta 2 {
-				\subdiviseBeam \tuplet 3/2 4 {f,8(\pp c' d~ d c f,~}
+				\subdiviseBeam \tuplet 3/2 4 {f,8\pp c' d~ d c f,~}
 			}
 		}
 	}
 % Bars 196 to 200
-	\tuplet 3/2 4 {f c' d~ d c f,)~
-	f( c' d~ d c f,~
-	f c' d~ d c f,)~
-	f( bes c~ c bes f~
-	f bes c~ c bes f)~
+	\tuplet 3/2 4 {f c' d~ d c f,~
+	f c' d~ d c f,~
+	f c' d~ d c f,~
+	f bes c~ c bes f~
+	f bes c~ c bes f~
 % Bars 201 to 205
-	f( bes c~ c bes f~
-	f bes c~ c bes f)} \unSubdiviseBeam
+	f bes c~ c bes f~
+	f bes c~ c bes f} \unSubdiviseBeam
 	g r r4
 	R2*5
 	
@@ -340,9 +340,9 @@ musicClarinettoIIMvtI = \relative c {
 	
 	c!4(\f\< g'\!~
 	g) f~
-	f\> d8.( bes16)\!
+	f\> d8. bes16\!
 % Bars 301 to 305
-	<< a2(~ {s8 s4_\dimmarkup s8}>>
+	<< a2(~ {s8 s4 s8}>>
 	a8 c4.)
 	f2->\ff~
 	f4 e->
@@ -362,7 +362,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 316 to 320
 	
 	R2
-	r8 b,!(\p c) r
+	\unSubdiviseBeam r8 b,!(\p c) r
 	R2
 	r8 b(\p c) r
 % Bars 321 to 325
@@ -394,7 +394,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 346 to 350
 	b4.( b8)\!
 	b2\p~
-	b8. g16-.\< g8( b16-. d-.)\!
+	\dotsPosition #1 b8. g16\< g8( b16-. d-.)\!
 	b4->\> b8. g16
 	b4.( g8)\!
 % Bars 351 to 355
@@ -424,7 +424,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 371 to 375
 	b-. [ a-. d]-. c-._\crescmarkup b-. a-.}
 	g16( fis e d') \tuplet 3/2 4 {d8-. d-. d-.} \mark \default
-	b4->\ff b
+	b4\ff b
 	a-> c16-. b-. a8-.
 	b8-.\noBeam d(\fz cis c)
 % Bars 376 to 380
@@ -460,7 +460,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 401 to 405
 	R2*2
 	
-	fis4->\f cis'16-. b-. fis8-.
+	fis4->\f cis'!16-. b-. fis8-.
 	b4-> d16-. cis-. b8-.
 	R2
 % Bars 406 to 410
@@ -472,7 +472,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 411 to 415
 	
 	
-	fis,2\pp~
+	\stemUp fis,2\pp~
 	fis~
 	fis~
 % Bars 416 to 420
@@ -492,7 +492,7 @@ musicClarinettoIIMvtI = \relative c {
 	
 	
 	
-	c'2~_\brackM\piuf
+	\stemDown c'2~_\brackM\piuf
 % Bars 436 to 440
 	c_\dimmarkup
 	c2~\>
@@ -512,7 +512,7 @@ musicClarinettoIIMvtI = \relative c {
 	
 	d4(\brack\p\< a'\!~
 % Bars 451 to 455
-	a\f g_\dimmarkup~
+	a\f g~
 	g e8. c16)
 	<< b2( {s8\> s s s\!}>>
 	a2)\p \markk
@@ -520,7 +520,7 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 456 to 460
 	<< a2)\> {s4 s\!}>>
 	g4(\< gis\!
-	a2)_\crescmarkup
+	a2)
 	g4(\f gis
 	a2)\<
 % Bars 461 to 465
@@ -542,7 +542,7 @@ musicClarinettoIIMvtI = \relative c {
 	b4. b8
 	b2~
 	b8. g16 g-.( b-. d-. g-.)
-	d4_\dimmarkup d8. b16
+	d4 d8. b16
 	d4. b8
 % Bars 481 to 485
 	b2\fp~

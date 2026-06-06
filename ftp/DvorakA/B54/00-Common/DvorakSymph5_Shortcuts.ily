@@ -15,6 +15,7 @@
 pcresc = \markup {\dynamic p \italic cresc.}
 pcrescmolto = \markup {\dynamic p \italic "cresc. molto"}
 brackpdolce = \markup {\bracket \with-true-dimensions \dynamic p \italic dolce }
+plegato = \markup {\dynamic p \italic legato}
 %--------------------
 % dynamics mp
 %--------------------
@@ -22,7 +23,7 @@ brackpdolce = \markup {\bracket \with-true-dimensions \dynamic p \italic dolce }
 %--------------------
 % dynamics mf
 %--------------------
-
+mfcresc = \markup {\dynamic mf \italic cresc.}
 %--------------------
 % dynamics fz
 %--------------------
@@ -44,6 +45,7 @@ fzmarcato = \markup {\dynamic fz \italic marcato}
 %--------------------
 piuf = \markup {\italic più \dynamic f}
 piufD = #(make-dynamic-script (markup #:normal-text piuf))
+fcresc = \markup {\dynamic f \italic cresc.}
 %--------------------
 % dynamics ff
 %--------------------
@@ -65,11 +67,14 @@ dimmarkup = \markup {\italic dim.}
 % text indications
 %--------------------
 ten = \markup {\italic ten.}
-
+solo = \markup {Solo}
+marc = \markup {\italic marc.}
+marcato = \markup {\italic marcato}
 %--------------------
 % instrument modification
 %--------------------
-
+mutaina = \markup {"muta in A"}
+mutainb = \markup {"muta in B"}
 
 markk = \mark #11
 
@@ -135,6 +140,8 @@ stemOffset = #(define-music-function
 		\once \offset length #offset Stem
 	#}
 )
+
+dotsPosition = \once \override Dots.staff-position = \etc
 
 
 
