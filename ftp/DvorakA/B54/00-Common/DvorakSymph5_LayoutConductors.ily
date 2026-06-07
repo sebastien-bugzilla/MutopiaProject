@@ -4,7 +4,7 @@
 %###############################################################################
 %#                         L A Y O U T   S E C T I O N                         #
 %###############################################################################
-#(set-global-staff-size 16)
+#(set-global-staff-size 16) % 16
 \layout {
 	#(layout-set-staff-size 16) 
 %	\set Score.alternativeNumberingStyle = #'numbers

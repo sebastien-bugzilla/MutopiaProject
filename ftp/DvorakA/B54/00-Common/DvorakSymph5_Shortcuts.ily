@@ -16,6 +16,7 @@ pcresc = \markup {\dynamic p \italic cresc.}
 pcrescmolto = \markup {\dynamic p \italic "cresc. molto"}
 brackpdolce = \markup {\bracket \with-true-dimensions \dynamic p \italic dolce }
 plegato = \markup {\dynamic p \italic legato}
+pdim = \markup {\dynamic p \italic dim.}
 %--------------------
 % dynamics mp
 %--------------------
@@ -70,6 +71,8 @@ ten = \markup {\italic ten.}
 solo = \markup {Solo}
 marc = \markup {\italic marc.}
 marcato = \markup {\italic marcato}
+sempremarc = \markup {\italic "sempre marc."}
+morendo = \markup {\italic morendo}
 %--------------------
 % instrument modification
 %--------------------
