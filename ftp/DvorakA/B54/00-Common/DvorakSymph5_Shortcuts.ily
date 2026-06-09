@@ -20,7 +20,7 @@ pdim = \markup {\dynamic p \italic dim.}
 %--------------------
 % dynamics mp
 %--------------------
-
+mpcresc = \markup {\dynamic mp \italic cresc.}
 %--------------------
 % dynamics mf
 %--------------------
@@ -36,7 +36,7 @@ fzmarcato = \markup {\dynamic fz \italic marcato}
 %--------------------
 % dynamics fp
 %--------------------
-
+fpdim = \markup {\dynamic fp \italic dim.}
 %--------------------
 % dynamics fpp
 %--------------------
@@ -51,6 +51,7 @@ fcresc = \markup {\dynamic f \italic cresc.}
 % dynamics ff
 %--------------------
 fbrackf = \markup { \concat { \dynamic f \bracket \with-true-dimensions \dynamic f }}
+ffmarc = \markup {\dynamic ff \italic marc.}
 %--------------------
 % dynamics ffz
 %--------------------
