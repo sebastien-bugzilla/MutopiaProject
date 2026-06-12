@@ -29,6 +29,7 @@ mfcresc = \markup {\dynamic mf \italic cresc.}
 % dynamics fz
 %--------------------
 fzmarcato = \markup {\dynamic fz \italic marcato}
+fbrackz = \markup {\concat { \dynamic f \bracket \with-true-dimensions \dynamic z}}
 %--------------------
 % dynamics sfz
 %--------------------
