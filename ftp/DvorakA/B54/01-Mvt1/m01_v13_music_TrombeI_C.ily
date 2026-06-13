@@ -40,7 +40,7 @@ musicTrombeIMvtI = \relative c {
 		g4-> e16-. d-. c8-.
 		d4-> f16-. e-. d8-.
 % Bars 51 to 55
-		e-. b'4-> b8
+		\once \partCombineApart e-. b'4-> b8
 		b-. b-. b-. g-.
 		e r r4
 		R2*28
@@ -68,7 +68,7 @@ musicTrombeIMvtI = \relative c {
 		r b-.\f b-. b-.
 % Bars 91 to 95
 		b-. b-. b-. b-.
-		e, r r4
+		\once \partCombineApart e, r r4
 		R2*3
 		
 		\mark \default
@@ -141,19 +141,19 @@ musicTrombeIMvtI = \relative c {
 				c8 r r4
 			}
 			\volta 2 {
-				\tuplet 3/2 4 {g8(\pp aes bes~ bes aes g~}
+				\subdiviseBeam \partCombineApart \tuplet 3/2 4 {g8 aes bes~ bes aes g~}
 			}
 		}
 	}
 % Bars 196 to 200
-	\tuplet 3/2 4 {g aes bes~ bes aes g~)
-	g( aes bes~ bes aes g~
-	g aes bes~ bes aes g)
-	f( g aes~ aes g f~
-	f g aes~ aes g f)~
+	\tuplet 3/2 4 {g aes bes~ bes aes g~
+	g aes bes~ bes aes g~
+	g aes bes~ bes aes g
+	f g aes~ aes g f~
+	f g aes~ aes g f~
 % Bars 201 to 205
-	f( g aes~ aes g f~
-	f g aes~ aes g f)} \unSubdiviseBeam
+	f g aes~ aes g f~
+	f g aes~ aes g f} \unSubdiviseBeam \partCombineAutomatic
 	ees( f ees4~
 	ees8 f ees4~
 	ees8 f ees4~
@@ -161,7 +161,7 @@ musicTrombeIMvtI = \relative c {
 	ees8 f ees4)
 	d2~
 	d4. r8
-	R2*18
+	R2*18 
 % Bars 211 to 215
 	
 % Bars 216 to 220
@@ -186,11 +186,11 @@ musicTrombeIMvtI = \relative c {
 	
 	g2\p~
 % Bars 246 to 250
-	g8. d16 b-.( d-. g-. b-.)
+	g8. d16 \partCombineApart b-.( d-. g-. b-.) \partCombineAutomatic
 	g4 g8. d16
 	g4. d8
-	d2~
-	d8. b16 g-.( b-. d-. g-.)
+	\partCombineApart d2~
+	d8. b16 g-.( b-. d-. g-.) \partCombineAutomatic
 % Bars 251 to 255
 	d4 d8. b16
 	d4. b8
@@ -342,7 +342,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 461 to 465
 	
 	
-	e,2->\ff
+	\partCombineApart e,2-> \partCombineAutomatic
 	fis->
 	gis->
 % Bars 466 to 470
@@ -350,14 +350,14 @@ musicTrombeIMvtI = \relative c {
 	R2*5
 % Bars 471 to 475
 	
-	r4 g8\f r
+	r4 \once \partCombineApart g8 r
 	c2->\ff~
-	c8. g16 e-. g-. c-. e-.
+	c8. g16 \partCombineApart e-. g-. c-. e-. \partCombineAutomatic
 	c4 c8. g16
 % Bars 476 to 480
 	c4. g8
 	g2->~
-	g8. e16 c-. e-. g-. c-.
+	g8. e16 \partCombineApart c-. e-. g-. c-. \partCombineAutomatic
 	g4_\dimmarkup g8. e16
 	g4. e8
 % Bars 481 to 485
