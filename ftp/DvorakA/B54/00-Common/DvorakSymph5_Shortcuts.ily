@@ -41,7 +41,8 @@ fpdim = \markup {\dynamic fp \italic dim.}
 %--------------------
 % dynamics fpp
 %--------------------
-
+fpp = \markup {\dynamic fpp}
+fppD = #(make-dynamic-script (markup #:normal-text fpp))
 %--------------------
 % dynamics f
 %--------------------
@@ -82,6 +83,39 @@ morendo = \markup {\italic morendo}
 %--------------------
 mutaina = \markup {"muta in A"}
 mutainb = \markup {"muta in B"}
+mutainea = \markup {"muta in E, A"}
+mutainfc = \markup {"muta in F, C"}
+cmutainh = \markup {"C muta in H"}
+hmutainb = \markup {"H muta in B"}
+bmutainc = \markup {"B muta in C"}
+fmutaine = \markup {"F muta in E"}
+emutainf = \markup {"E muta in F"}
+
+timpinea = \markup {
+	\center-column {
+		\lower #1 "Timp." "in E A"
+	}
+}
+timpinfc = \markup {
+	\center-column {
+		\lower #1 "Timp." "in F C"
+	}
+}
+timpinfh = \markup {
+	\center-column {
+		\lower #1 "Timp." "in F H"
+	}
+}
+timpinfb = \markup {
+	\center-column {
+		\lower #1 "Timp." "in F B"
+	}
+}
+timpinec = \markup {
+	\center-column {
+		\lower #1 "Timp." "in E C"
+	}
+}
 
 markk = \mark #11
 
@@ -150,6 +184,14 @@ stemOffset = #(define-music-function
 
 dotsPosition = \once \override Dots.staff-position = \etc
 
+changeStaffName = #(define-music-function
+	(staffName)
+	(markup?)
+	#{
+		\set Staff.shortInstrumentName = #staffName
+	#}
+)
+
 
 
 %aIIXoffset = #(define-music-function
@@ -210,14 +252,6 @@ dotsPosition = \once \override Dots.staff-position = \etc
 %	\set baseMoment = #(ly:make-moment 1/8)
 %	\set beatStructure = 2,2,2
 %}
-
-%changeStaffName = #(define-music-function
-%	(staffName)
-%	(markup?)
-%	#{
-%		\set Staff.shortInstrumentName = #staffName
-%	#}
-%)
 
 %crescText = #(define-music-function
 %	(cresctext)
