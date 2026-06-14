@@ -8,7 +8,7 @@
 %--------------------
 % dynamics pp
 %--------------------
-
+pptranquillo = \markup {\dynamic pp \italic tranquillo}
 %--------------------
 % dynamics p
 %--------------------
@@ -48,11 +48,13 @@ fpdim = \markup {\dynamic fp \italic dim.}
 piuf = \markup {\italic più \dynamic f}
 piufD = #(make-dynamic-script (markup #:normal-text piuf))
 fcresc = \markup {\dynamic f \italic cresc.}
+fmarkup = \markup {\dynamic f}
 %--------------------
 % dynamics ff
 %--------------------
 fbrackf = \markup { \concat { \dynamic f \bracket \with-true-dimensions \dynamic f }}
 ffmarc = \markup {\dynamic ff \italic marc.}
+ffmarcato = \markup {\dynamic ff \italic marcato}
 %--------------------
 % dynamics ffz
 %--------------------

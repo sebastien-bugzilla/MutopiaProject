@@ -4,15 +4,15 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombonoIIIMvtI = \relative c {
-	\clef bass
+musicTrombonoIIMvtI = \relative c {
+	\clef alto
 	\key f \major
 %	\transposition a
 % Bars 1 to 5
 	R2*2
 	
 	\repeat volta 2 {
-		R2*39
+		R2*40
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,20 +29,20 @@ musicTrombonoIIIMvtI = \relative c {
 	
 % Bars 41 to 45
 		
-		r4 \tuplet 3/2 4 {c8-.\mf d-. e-.
-		f-.[ dis-. e-.] f-.\< g-. a-.}
-		bes-._\fmarkup r \tuplet 3/2 4 {c,8-. d!-. e-.\!} \mark \default
-		f->\ff a,-. c-> cis-.
-% Bars 46 to 50
-		d-> des-. c-> r 
-		r4 r8 e-.
-		f-> d-. e-> c-.
-		f-> a,-. c-> cis-.
-		d-> des-. c-> r
-% Bars 51 to 55
+		
+		r4 \tuplet 3/2 4 {f8-.\f\< g-. a-.
+		bes-.[ a-. bes-.]} c-. r\! \mark \default
 		R2
-		r4 r8 c-.\f
+% Bars 46 to 50
+		r4 r8 bes-.
+		a-> aes-. g-> e-.
 		f r r4
+		R2
+		r4 r8 bes-.\f
+% Bars 51 to 55
+		a gis e fis16 gis
+		a8-. b-. c-. bes-.
+		a r r4
 		R2*28
 % Bars 56 to 60
 	
@@ -56,19 +56,19 @@ musicTrombonoIIIMvtI = \relative c {
 	
 % Bars 81 to 85
 		
-		r4 des8->\f r
-		r4 c8->\f r
-		r4 c8->\f r
-		r4 ces8_\crescmarkup r
+		r4 f8->\f r
+		r4 ees8->\f r
+		r4 ees8->\f r
+		r4 ees8 r
 % Bars 86 to 90
-		r4 b8-> r
+		r4 b'!8-> r
 		r4 b8 r
-		e\f r e r
-		e r e r
-		r e,-.\brack\f f-. fis-.
+		r e,\f r e
+		r e r e
+		r e-.\f e-. e-.
 % Bars 91 to 95
-		g-. gis-. a-. b-.
-		a r r4
+		e-. e-. e-. e-.
+		e r r4
 		R2*3
 		
 		\mark \default
@@ -92,37 +92,37 @@ musicTrombonoIIIMvtI = \relative c {
 		
 		
 		
-		bes2\ff~
-		bes
+		g2\ff~
+		g
 % Bars 141 to 145
 		R2*4
 		
 		
 		\mark \default
-		bes2\ff~
+		g2\ff~
 % Bars 146 to 150
-		bes
-		a8 r r4
+		g
+		g8 r r4
 		R2*7
 % Bars 151 to 155
 		
 		
 		
 		
-		g'2\ff~
+		cis2\ff~
 % Bars 156 to 160
-		g
+		cis
 		R2*10
 % Bars 161 to 165
 	
 % Bars 166 to 170
 		
-		fis2\ff~
-		fis4 r
+		b2\ff~
+		b4 r
 		R2*2
 		
 % Bars 171 to 175
-		d'2-^\f~
+		d2-^\f~
 		d4 c->
 		a->_\dimmarkup fis->
 		d-> a8. d16
@@ -143,31 +143,31 @@ musicTrombonoIIIMvtI = \relative c {
 				
 			}
 			\volta 2 {
-				aes,2\pp~
+				ees2\pp~
 			}
 		}
 	}
 % Bars 196 to 200
-	aes4. r8
+	ees4. r8
 	R2*2
 	
-	g2\pp~
-	g4. r8
+	ees2\pp~
+	ees4. r8
 % Bars 201 to 205
 	R2*2
 	
-	f2\pp~
-	f4. r8
+	c2\pp~
+	c4. r8
 	R2*2
 % Bars 206 to 210
 	
-	c'2_\pptranquillo~
-	c
-	a~
-	a
+	e2~
+	e
+	e~
+	e
 % Bars 211 to 215
-	d~
-	d
+	fis~
+	fis
 	R2*14
 % Bars 216 to 220
 	
@@ -175,18 +175,22 @@ musicTrombonoIIIMvtI = \relative c {
 	
 % Bars 226 to 230
 	\mark \default
-	e2-.\pp
-	d-.
-	b~
-	b~
+	g2-.\pp
+	fis-.
+	fis~
+	fis~
 % Bars 231 to 235
-	b8 r r4
-	R2*9
+	fis8 r r4
+	R2*5
 % Bars 236 to 240
 	
+	R2
+	\mmrPos #-7 R
+	R
+	R
 % Bars 241 to 245
-	bes'2->\ff~
-	bes8 r r4
+	c'2->\ff~
+	c8 r r4
 	R2*14
 % Bars 246 to 250
 	
@@ -202,26 +206,26 @@ musicTrombonoIIIMvtI = \relative c {
 % Bars 271 to 275
 	
 	
-	ees,4->\ff ees8.-> bes16-.
+	ees4->\ff ees8.-> bes16-.
 	ees4-> r
-	cis2\fz~
+	gis,2\fz~
 % Bars 276 to 280
-	cis8 r r4
+	gis8 r r4
 	c!4->\ff c8.-> a16-.
 	c4-> r
 	b2\fz~
 	b8 r r4
 % Bars 281 to 285
-	bes!4-> r
-	aes-> r
-	g-> r
-	fis-> r
-	gis'2\ff~
+	d4-> r
+	d-> r
+	d-> r
+	c-> r
+	d2\ff~
 % Bars 286 to 290
-	gis~
-	gis~
-	gis~
-	gis8 r r4
+	d~
+	d~
+	d~
+	d8 r r4
 	R2 \mark \default
 % Bars 291 to 295
 	R2*12
@@ -230,23 +234,23 @@ musicTrombonoIIIMvtI = \relative c {
 % Bars 301 to 305
 	
 	
-	ees8->\ff g-> bes-> b->
-	c-> ces-> bes-> aes->
-	g-. ges-. f-. d-.
+	R2*2
+	
+	r8 bes4->\ff bes8~
 % Bars 306 to 310
-	ees-. a,!-. bes-. d-.
-	ees8-. r r4
-	R2*5
-	
-	
-% Bars 311 to 315
-	
-	
-	r8 << bes4.->\p\>~ {s8 s s\!}>>
-	bes4. r8
-	r bes4.\pp~
-% Bars 316 to 320
+	bes bes4 bes8
+	bes8 r r4
+	R2
+	r8 bes4.->\fz~
 	bes r8
+% Bars 311 to 315
+	r bes4.\fz\>~
+	bes\! r8
+	R2*4
+	
+	
+% Bars 316 to 320
+	
 	R2*12
 % Bars 321 to 325
 	
@@ -254,7 +258,7 @@ musicTrombonoIIIMvtI = \relative c {
 	
 	
 	\mark \default
-	R2*41
+	R2*42
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -271,24 +275,20 @@ musicTrombonoIIIMvtI = \relative c {
 	
 % Bars 366 to 370
 	
-	
-	
-	
-	r4 \tuplet 3/2 4 {c8-.->\f d-. e-.
 % Bars 371 to 375
-	f-.[ dis-. e-.] f-._\crescmarkup g-. a-.}
-	bes-. r \tuplet 3/2 4 {c,-. d-. e-.} \mark \default
-	f->\ff a-. c-> cis-.
+	r4 \tuplet 3/2 4 {f8-._\fcresc g-. a-.
+	bes-.[ a-. bes-.] } c-. r \mark \default
+	f,->\ff a-. c-> cis-.
 	d-> des-. c-> bes-.
-	a-> aes-> g-> e->
+	a r r4
 % Bars 376 to 380
-	f-> b, c-> d16-. e-.
-	f8 r r4
 	R2
-	r8 gis-.\f e-> fis16 gis
-	a8-. b-. c-. g!-.
+	r8 a-. c-> cis-.
+	d-> des-. c-> bes-.
+	a-> r r4
+	a8-. b-. c-. bes-.
 % Bars 381 to 385
-	f r r4
+	a r r4
 	R2*35
 % Bars 386 to 390
 	
@@ -328,23 +328,23 @@ musicTrombonoIIIMvtI = \relative c {
 % Bars 461 to 465
 	
 	
-	f4->_\ffmarc ees->
-	d-> f->
-	e-> g->
+	a4-> a->
+	b2->
+	cis->
 % Bars 466 to 470
-	f-> aes->
+	d->
 	R2*5
 % Bars 471 to 475
 	
-	r4 c,8\f r
-	f,4_\ffmarcato g
+	r4 bes8\f r
+	f4_\ffmarcato g
 	a8 c4 g8
 	f4 g
 % Bars 476 to 480
 	a8 c4 g8
 	f4 g
 	a8 c4 g8
-	f4_\dimmarkup g
+	f4 g
 	a8 c4 g8
 % Bars 481 to 485
 	f8\p r r4
@@ -355,8 +355,8 @@ musicTrombonoIIIMvtI = \relative c {
 	
 % Bars 496 to 500
 	
-	f2\pp~
-	f4. r8
+	c2\pp~
+	c4. r8
 	R2*6
 	
 % Bars 501 to 505
