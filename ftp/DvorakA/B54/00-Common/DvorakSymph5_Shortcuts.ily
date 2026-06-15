@@ -9,6 +9,8 @@
 % dynamics pp
 %--------------------
 pptranquillo = \markup {\dynamic pp \italic tranquillo}
+semprepp = \markup {\italic sempre \dynamic pp}
+ppmoltotranquillo = \markup {\dynamic pp \italic "molto tranquillo"}
 %--------------------
 % dynamics p
 %--------------------
@@ -68,7 +70,8 @@ ffmarcato = \markup {\dynamic ff \italic marcato}
 %--------------------
 crescmarkup = \markup {\italic cresc.}
 dimmarkup = \markup {\italic dim.}
-
+crescmolto = \markup {\italic "cresc. molto"}
+pocoapocodim = \markup {\italic "poco a poco dim."}
 %--------------------
 % text indications
 %--------------------
@@ -78,6 +81,10 @@ marc = \markup {\italic marc.}
 marcato = \markup {\italic marcato}
 sempremarc = \markup {\italic "sempre marc."}
 morendo = \markup {\italic morendo}
+dolce = \markup {\italic dolce}
+marcatissimo = \markup {\italic marcatissimo}
+fourthcorda = \markup {\italic "4a corda"}
+espressivo = \markup {\italic espressivo}
 %--------------------
 % instrument modification
 %--------------------
@@ -191,6 +198,9 @@ changeStaffName = #(define-music-function
 		\set Staff.shortInstrumentName = #staffName
 	#}
 )
+
+marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
+
 
 
 
@@ -352,9 +362,6 @@ changeStaffName = #(define-music-function
 %	\once \override Score.RehearsalMark.whiteout = #0.75
 %	\once \override Score.RehearsalMark.whiteout-style = #'outline
 %}
-
-%marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
-
 
 %mmrnDown = {
 %	\once \override MultiMeasureRestNumber.direction = #-1 
