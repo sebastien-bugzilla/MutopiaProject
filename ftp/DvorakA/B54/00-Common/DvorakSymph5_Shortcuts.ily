@@ -11,6 +11,8 @@
 pptranquillo = \markup {\dynamic pp \italic tranquillo}
 semprepp = \markup {\italic sempre \dynamic pp}
 ppmoltotranquillo = \markup {\dynamic pp \italic "molto tranquillo"}
+pbrackp = \markup {\dynamic p \bracket \with-true-dimensions \dynamic p}
+pplegato = \markup {\dynamic pp \italic legato}
 %--------------------
 % dynamics p
 %--------------------

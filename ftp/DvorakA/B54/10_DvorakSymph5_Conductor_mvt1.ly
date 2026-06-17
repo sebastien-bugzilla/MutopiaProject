@@ -133,9 +133,9 @@
 					\new Staff {
 						\timeMvtI \nameStaffXIMvtI \musicViolinoIMvtI
 					}
-%					\new Staff {
-%						\timeMvtI \nameStaffXIIMvtI \musicViolinoIIMvtI
-%					}
+					\new Staff {
+						\timeMvtI \nameStaffXIIMvtI \musicViolinoIIMvtI
+					}
 				>>
 %				\new Staff {
 %					\timeMvtI \nameStaffXIIIMvtI \musicViolaMvtI
