@@ -87,6 +87,8 @@ dolce = \markup {\italic dolce}
 marcatissimo = \markup {\italic marcatissimo}
 fourthcorda = \markup {\italic "4a corda"}
 espressivo = \markup {\italic espressivo}
+pizz = \markup {\italic pizz.}
+arco = \markup {\italic arco}
 %--------------------
 % instrument modification
 %--------------------
