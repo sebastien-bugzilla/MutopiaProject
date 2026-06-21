@@ -63,7 +63,8 @@ ffmarcato = \markup {\dynamic ff \italic marcato}
 %--------------------
 % dynamics ffz
 %--------------------
-
+ffz = \markup {\dynamic ffz}
+ffzD = #(make-dynamic-script (markup #:normal-text ffz))
 
 
 
@@ -74,6 +75,7 @@ crescmarkup = \markup {\italic cresc.}
 dimmarkup = \markup {\italic dim.}
 crescmolto = \markup {\italic "cresc. molto"}
 pocoapocodim = \markup {\italic "poco a poco dim."}
+dimin = \markup {\italic dimin.}
 %--------------------
 % text indications
 %--------------------

@@ -1,4 +1,4 @@
-   157    432   5184 10_DvorakSymph5_Conductor_mvt1.ly
+   157    429   5181 10_DvorakSymph5_Conductor_mvt1.ly
    145    397   4884 10_DvorakSymph5_Conductor_mvt2.ly
    149    406   5070 10_DvorakSymph5_Conductor_mvt3.ly
    145    397   4884 10_DvorakSymph5_Conductor_mvt4.ly
@@ -15,7 +15,7 @@
    143    365   3445 20_DvorakSymph5_Part11_Viola.ly
    143    365   3613 20_DvorakSymph5_Part12_Violoncello.ly
    143    365   3613 20_DvorakSymph5_Part13_Contrabasso.ly
-    28     80    395 test.ly
+    28     81    396 test.ly
     12     88    582 00-Common/DvorakSymph5_Corrections.ily
    321    877   7227 00-Common/DvorakSymph5_CueVoice.ily
     10     60    539 00-Common/DvorakSymph5_Format_Cond_Mvt01.ily
@@ -43,7 +43,7 @@
    699   2359  19276 00-Common/DvorakSymph5_NameVoice.ily
     71    197   1702 00-Common/DvorakSymph5_PaperConductors.ily
     67    187   1607 00-Common/DvorakSymph5_PaperParts.ily
-   633   1880  13974 00-Common/DvorakSymph5_Shortcuts.ily
+   635   1896  14092 00-Common/DvorakSymph5_Shortcuts.ily
     37    124    841 00-Common/DvorakSymph5_Tempi.ily
     23     94    611 00-Common/DvorakSymph5_timeMvt.ily
    501   1454   7374 01-Mvt1/m01_v01_music_FlautoI_C.ily
@@ -82,8 +82,8 @@
    429   1089   5064 01-Mvt1/m01_v18_music_Timpani.ily
    581   2121   9907 01-Mvt1/m01_v20_music_ViolinoI.ily
    594   2363  10759 01-Mvt1/m01_v21_music_ViolinoII.ily
-   625   2725  13048 01-Mvt1/m01_v22_music_Viola.ily
-   213    559   2442 01-Mvt1/m01_v23_music_Violoncello.ily
+   625   2726  13049 01-Mvt1/m01_v22_music_Viola.ily
+   625   2055  10041 01-Mvt1/m01_v23_music_Violoncello.ily
    213    559   2442 01-Mvt1/m01_v24_music_Contrabasso.ily
     93    257   1233 02-Mvt2/m02_v01_music_FlautoI.ily
     93    257   1234 02-Mvt2/m02_v02_music_FlautoII.ily
@@ -155,4 +155,4 @@
    177    469   2077 04-Mvt4/m04_v22_music_Viola.ily
    177    469   2083 04-Mvt4/m04_v23_music_Violoncello.ily
    177    469   2083 04-Mvt4/m04_v24_music_Contrabasso.ily
- 35184  96657 547190 total
+ 35598  98168 554906 total

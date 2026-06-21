@@ -235,11 +235,11 @@ musicViolaMvtI = \relative c {
 		g8( bes c~ c bes g)~
 		g8( bes c~ c bes g)~
 		g8( bes c~ c bes g)}
-		\repeat tremolo 4 {bes16(\pp c}
+		{ \repeat tremolo 4 {bes16(\pp c}
 		\repeat tremolo 4 {bes c}
 % Bars 191 to 195
 		\repeat tremolo 4 {bes c}
-		\repeat tremolo 4 {bes c)} <>
+		\repeat tremolo 4 {bes c)} }
 		\alternative {
 			\volta 1 {
 				\tuplet 12/8 2 { \repeat tremolo 6 {f,16( c'}
