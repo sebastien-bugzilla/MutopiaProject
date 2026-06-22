@@ -62,7 +62,7 @@ musicClarinettoIMvtI = \relative c {
 		c8 r \tuplet 3/2 4 {e8-.\f d-. c-.
 		b-.[ a-. d-.] c-.\< b-. a-. }
 		g16( fis e d') \tuplet 3/2 4 {d8-. d-. d-.\!} \mark \default
-		g4->\ff \partCombineApart bes16-. a-. g8-.
+		g4->\ff \partCombineApart b16-. a-. g8-.
 % Bars 46 to 50
 		g4( fis8) fis \partCombineAutomatic
 		g-.\noBeam d'(->\fz cis c)

@@ -83,7 +83,7 @@ musicViolaMvtI = \relative c {
 		
 % Bars 61 to 65
 		a8-.\f e'4->(\fp\> d8)\!
-		c16( e des e c8) b-.
+		c16( e d e c8) b-.
 		a-. e'4->(\fp\> d8)\!
 		c16( e d e c8) b-.
 		a8( e'4->_\dimmarkup d8)

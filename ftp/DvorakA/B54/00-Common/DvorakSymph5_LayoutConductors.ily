@@ -44,6 +44,8 @@
 	}
 	\context {
 		\Staff
+		\RemoveEmptyStaves
+%		\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f
 %		\override MultiMeasureRest.space-increment = 0
@@ -52,6 +54,10 @@
 		\override CueEndClef.font-size = #-1 
 		
 %		\override StaffSymbol.transparent = ##t
+	}
+	\context {
+		\StaffGroup
+		\override SystemStartBracket.collapse-height = #4
 	}
 	\context {
 		\Score

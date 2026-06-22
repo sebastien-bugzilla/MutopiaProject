@@ -507,7 +507,7 @@ musicVioloncelloMvtI = \relative c {
 	e, e'4-> d8
 	c16( e c d c8-.) b-.
 	a( e'4-> d8)
-	a8(_\dimmarkup e'4-> d8)
+	a8(_\dimmarkup e'4 d8)
 % Bars 411 to 415
 	a(\> e4 d8)\!
 	a(\p e'4 d8)
