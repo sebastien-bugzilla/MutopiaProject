@@ -91,6 +91,8 @@ fourthcorda = \markup {\italic "4a corda"}
 espressivo = \markup {\italic espressivo}
 pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
+espress = \markup {\italic espress.}
+secco = \markup {\italic secco}
 %--------------------
 % instrument modification
 %--------------------

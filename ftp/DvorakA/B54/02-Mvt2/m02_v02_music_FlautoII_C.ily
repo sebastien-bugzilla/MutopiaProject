@@ -122,8 +122,8 @@ musicFlautoIIMvtII = \relative c {
 	R4.*6
 % Bars 121 to 125
 	
-	ces8(_\brackM\fcresc bes aes)
-	bes-.\ff^\secco c!-. c-.
+	ces8( bes aes)
+	bes-.\ff c!-. c-.
 	c-. c-. c-.
 	b!-. c-. c-. \mark \default
 % Bars 126 to 130
@@ -162,7 +162,7 @@ musicFlautoIIMvtII = \relative c {
 	d32-.\fp bes-. bes-. bes-.  bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. 
 	bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. 
 % Bars 166 to 170
-	gis-._\crescmarkup gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. 
+	gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. 
 	a-. a-. a-. a-. a-. a-. a-. a-. a-. a-. a-. a-. 
 	b4\f~ b16 b-.
 	c4~ c16 c-.
@@ -170,7 +170,7 @@ musicFlautoIIMvtII = \relative c {
 % Bars 171 to 175
 	d4\ff( c8)
 	d4( c8)
-	d-. c-._\dimmarkup c-.\p
+	d-. c-. c-.\p
 	c4(\pp gis8
 	a) r r 
 % Bars 176 to 180

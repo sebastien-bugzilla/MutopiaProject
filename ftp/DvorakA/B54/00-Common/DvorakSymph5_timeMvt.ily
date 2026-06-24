@@ -14,6 +14,10 @@ timeMvtI = {
 }
 timeMvtII = {
 	\time 3/8
+	\set Timing.beamExceptions = \beamExceptions {
+		32[ 32 32 32] 32[ 32 32 32] 32[ 32 32 32] |
+		8[ 8 8]
+	}
 }
 timeMvtIII = {
 	\time 3/8
