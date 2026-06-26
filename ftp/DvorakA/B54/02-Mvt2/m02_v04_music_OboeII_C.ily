@@ -94,7 +94,7 @@ musicOboeIIMvtII = \relative c {
 	
 % Bars 101 to 105
 	
-	<< ees'4.->\fz\>( {s8 s s\!}>>
+	<< ees'4.->\fz\>_( {s8 s s\!}>>
 	d4.)\p
 	R4.*2
 	
@@ -119,7 +119,7 @@ musicOboeIIMvtII = \relative c {
 % Bars 121 to 125
 	c( d ees)
 	d( ees f)
-	ees-.\ff^\secco ees-. ees-.
+	ees-.\ff ees-. ees-.
 	ees-. ees-. ees-.
 	ees-. ees-. ees-. \mark \default
 % Bars 126 to 130
@@ -138,9 +138,9 @@ musicOboeIIMvtII = \relative c {
 % Bars 141 to 145
 	R4.
 	R \section \mark \default
-	R4.*10
-	
-	
+	R4.
+	\mmrPos #-6 R
+	R4.*8
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -187,5 +187,5 @@ musicOboeIIMvtII = \relative c {
 	a4.\fp
 	R4.
 % Bar 201
-	R\fermata \fine
+	R_\fermata \fine
 }
