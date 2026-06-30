@@ -34,6 +34,7 @@ mfcresc = \markup {\dynamic mf \italic cresc.}
 %--------------------
 fzmarcato = \markup {\dynamic fz \italic marcato}
 fbrackz = \markup {\concat { \dynamic f \bracket \with-true-dimensions \dynamic z}}
+fzcresc = \markup {\dynamic fz \italic cresc.}
 %--------------------
 % dynamics sfz
 %--------------------
@@ -175,8 +176,8 @@ unSubdiviseBeam = {
 omitBeam = \once \omit Beam
 omitTupletNumber = \once \omit Voice.TupletNumber
 omitFlag = \once \omit Flag
+omitStem = \once \omit Stem
 %omitDots = \once \omit Dots
-%omitStem = \once \omit Stem
 %hideNoteHead = \once \hide NoteHead
 %omitStemTremolo = \once \omit StemTremolo
 %omitTupletBracket = \once \omit TupletBracket
@@ -208,6 +209,14 @@ changeStaffName = #(define-music-function
 )
 
 marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
+
+noteShift = #(define-music-function
+	(shift)
+	(number?)
+	#{
+		\once \override NoteColumn.force-hshift = #shift
+	#}
+)
 
 
 
@@ -407,14 +416,6 @@ marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
 %	(number?)
 %	#{
 %		\once \override Score.RehearsalMark.Y-offset = #offset
-%	#}
-%)
-
-%noteShift = #(define-music-function
-%	(shift)
-%	(number?)
-%	#{
-%		\once \override NoteColumn.force-hshift = #shift
 %	#}
 %)
 

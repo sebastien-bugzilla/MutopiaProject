@@ -33,17 +33,17 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 36 to 40
 	
 	g8.\fz r16 g-. bes-.
-	g8._\fzcresc r16 g-. bes-.
+	g8. r16 g-. bes-.
 	g4(\f\< aes8)\!
-	g( f)_\dimmarkup f\p
+	g( f) f\p
 % Bars 41 to 45
 	R4.*3
 	
 	
-	b8(\p a-\dimmarkup g)
+	b8(\p a g)
 	d'(\> c) aes!16-.( aes-.)\!
 % Bars 46 to 50
-	g-.( aes-.-\dimmarkup g8-. g-.)
+	g-.( aes-. g8-. g-.)
 	g16\pp r r8 r
 	R4.
 	c8(\pp ees8. d16)
@@ -61,7 +61,7 @@ musicClarinettoIIMvtII = \relative c {
 	gis4\! gis8\p
 	a r r
 	r r r16. d32
-	d4.->\fz\<~
+	d4.\fz\<~
 	d8.\! e16(--\> e-- d--)\!
 % Bars 66 to 70
 	c8\p r r
@@ -97,8 +97,8 @@ musicClarinettoIIMvtII = \relative c {
 	aes4.->\fp
 	ees4\>~ ees16. ees32-.\!
 % Bars 96 to 100
-	ees4.->\fp(
-	d8.) d16-.(\> d-. d-.)\!
+	\omitStem ees4.\fp(
+	d8.) d16 d d
 	ees8 r r
 	R4.*3
 	
@@ -124,12 +124,12 @@ musicClarinettoIIMvtII = \relative c {
 	
 	
 	ges4.(->\mf~
-	ges8 f-\crescmarkup ees)
+	ges8 f ees)
 	aes( ges f)
 % Bars 121 to 125
 	ges( f ees)
 	f( ges f)
-	ges-.\ff^\secco ees-. ees-.
+	ges-.\ff ees-. ees-.
 	ees-. ees-. ees-.
 	d!-. ees-. ees-. \mark \default
 % Bars 126 to 130
@@ -139,7 +139,7 @@ musicClarinettoIIMvtII = \relative c {
 	R4.
 	r8 r r16 f'\mf
 % Bars 131 to 135
-	f4-> r16 d-\dimmarkup
+	f4-> r16 d
 	d4-> r16 b\p
 	b4 r8
 	R4.*6
@@ -161,7 +161,7 @@ musicClarinettoIIMvtII = \relative c {
 	d4.(\p
 	<< c)\< {s8 s s\!}>>
 	c4(\fz d8)
-	c\> r r\!
+	c r r
 % Bars 151 to 155
 	r ees-.(\pp d-.)
 	ees16 r r8 r
@@ -181,7 +181,7 @@ musicClarinettoIIMvtII = \relative c {
 	r32 des-.\fp des-. des-.  des-. des-. des-. des-. des-. des-. des-. des-. 
 	des-. des-. des-. des-. des-. des-. des-. des-. des-. des-. des-. des-. 
 % Bars 166 to 170
-	b-.-\crescmarkup b-. b-. b-.  b-. b-. b-. b-. b-. b-. b-. b-. 
+	b-. b-. b-. b-.  b-. b-. b-. b-. b-. b-. b-. b-. 
 	c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. 
 	g8.\f( bes16 a g)
 	a8.( c16 bes a)
@@ -189,7 +189,7 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 171 to 175
 	f'4(\ff ees8)
 	f4( ees8)
-	f8-.-\dimmarkup ees-. ees-.\p
+	f8-. ees-. ees-.\p
 	ees-.\pp ees-. d-.
 	c r r
 % Bars 176 to 180

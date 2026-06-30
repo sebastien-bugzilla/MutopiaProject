@@ -27,8 +27,8 @@
 \include "./02-Mvt2/m02_v02_music_FlautoII_C.ily"
 \include "./02-Mvt2/m02_v03_music_OboeI_C.ily"
 \include "./02-Mvt2/m02_v04_music_OboeII_C.ily"
-\include "./02-Mvt2/m02_v05_music_ClarinettoI.ily"
-\include "./02-Mvt2/m02_v06_music_ClarinettoII.ily"
+\include "./02-Mvt2/m02_v05_music_ClarinettoI_C.ily"
+\include "./02-Mvt2/m02_v06_music_ClarinettoII_C.ily"
 \include "./02-Mvt2/m02_v07_music_FagottoI.ily"
 \include "./02-Mvt2/m02_v08_music_FagottoII.ily"
 \include "./02-Mvt2/m02_v09_music_CornoI.ily"
@@ -66,34 +66,35 @@
 	}
 	\score {
 		<<
-			\new StaffGroup <<
-				\new Staff <<
+%			\new StaffGroup <<
+%				\new Staff <<
+%%					\new Voice {
+%%						\formatConductorMvtII
+%%					}
 %					\new Voice {
-%						\formatConductorMvtII
+%						\tempiMvtII
 %					}
-					\new Voice {
-						\tempiMvtII
-					}
-					\new Voice {
-						\timeMvtII \nameStaffIMvtII
-						\partCombine \musicFlautoIMvtII \musicFlautoIIMvtII
-%						\musicFlautoIIMvtII
-					}
-				>>
-				\new Staff {
-					\timeMvtII \nameStaffIIMvtII
-					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
-%					\musicOboeIIMvtII
-				}
+%					\new Voice {
+%						\timeMvtII \nameStaffIMvtII
+%						\partCombine \musicFlautoIMvtII \musicFlautoIIMvtII
+%%						\musicFlautoIIMvtII
+%					}
+%				>>
 %				\new Staff {
-%					\timeMvtII \nameStaffIIIMvtII
-%					\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
+%					\timeMvtII \nameStaffIIMvtII
+%					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
+%%					\musicOboeIIMvtII
 %				}
+				\new Staff {
+					\timeMvtII \nameStaffIIIMvtII
+					\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
+%					\musicClarinettoIIMvtII
+				}
 %				\new Staff {
 %					\timeMvtII \nameStaffIVMvtII
 %					\partCombine \musicFagottoIMvtII \musicFagottoIIMvtII
 %				}
-			>>
+%			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
 %					\new Staff {
