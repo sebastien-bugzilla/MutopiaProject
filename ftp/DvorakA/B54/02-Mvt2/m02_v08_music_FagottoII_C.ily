@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFagottoIMvtII = \relative c {
+musicFagottoIIMvtII = \relative c {
 	\clef bass
 	\key a \minor
 %	\transposition a
@@ -12,16 +12,16 @@ musicFagottoIMvtII = \relative c {
 	R4.*3
 	
 	
-	a'8[(\p c] b16 a)
-	b4 r8
+	e8.(\p fis16~ fis8)\noBeam
+	g4 r8
 % Bars 6 to 10
 	R4.
-	a4.->\fz\<
-	r8 << b4( {s8 s\!}>>
-	d8\> c b16 a)\!
-	c16-.(-\dimmarkup b-. a8-. gis-.)
+	f!4(\fz\< e8)
+	r8 fis( gis)\!
+	a4(\> e8)\!
+	f!-\dimmarkup c e
 % Bars 11 to 15
-	a4\pp r8
+	a,4\pp r8
 	R4.*13
 % Bars 16 to 20
 	
@@ -32,40 +32,40 @@ musicFagottoIMvtII = \relative c {
 	
 	e4.\f(~
 % Bars 26 to 30
-	e8 f16) r f'16.(\< e32)\!
-	dis4\brack\fz e16( d)
-	d8(\> c b16 a)\!
-	c16-.(_\pdim bes-. a8-. gis-.)
-	a16 r r e'(\p c b)
+	e8 f16) r r8
+	b4\fz( e,8)
+	a4(\> c8)\!
+	d c d
+	a r r 
 % Bars 31 to 35
-	a8.( b32 c b16 a)
-	g8(\p e) r16 e(
-	a8 bes a16 g!
-	a8.) c16( a g)
-	f8.(\< g32 a g16 f)\!
+	R4.
+	b8(\p c8. b16)
+	a8( g) c-.
+	f,4.
+	R4.
 % Bars 36 to 40
-	ees8( ees'\p\< d)\!
-	a8.\fz r16 a-. e!-.
-	a8._\fzcresc r16 a-. e-.
+	r8 c'\p\< d\!
+	a8.\fz r16 r8
+	a8. r16 r8
 	a4.(~\f
-	a8 bes-\dimmarkup gis)\p
+	a8 bes b)\p
 % Bars 41 to 45
-	a4.\fz~ 
-	a
-	a8(\> bes4)\!
-	b!8(\p a-\dimmarkup b)
-	d(\> c) b16-.(\! a-.)
+	c4(\fz\> b!8)\! 
+	c4(\fz\> b8)\!
+	c(\> cis d)\!
+	e8(\p fis gis)
+	b(\> a) f!16-.(\! f-.)
 % Bars 46 to 50
-	a(-. bes-.-\brackM\dimmarkup a8-. gis-.)
-	e4.\p~
-	e~-\dimmarkup
-	e8\pp r r
+	a-. d,-.-\brackM\dimmarkup e8-. e-.
+	a,4.\p~
+	a~
+	a8\pp r r
 	R4.*3
 % Bars 51 to 55
 	
 	
-	r8 r16 e'(\p c b
-	a) r r8 r
+	R4.*2
+	
 	R4.*3
 % Bars 56 to 60
 	
@@ -76,59 +76,59 @@ musicFagottoIMvtII = \relative c {
 % Bars 66 to 70
 	
 	
-	c4.\fp\>~
-	c4\! c8\p(
-	d4.->)
+	R4.*3
+	
+	
 % Bars 71 to 75
 	R4.*3
 	
 	
-	gis,!4.\pp~
-	gis
+	fis'4.\pp~
+	fis
 % Bars 76 to 80
-	cis(\fp
-	d8\< cis\> b)\!
-	d4.\pp(~
-	d
-	cis8) r r
+	gis(~\fp
+	gis8\< a\> gis)\!
+	gis4.\pp~
+	gis~
+	gis8 r r
 % Bars 81 to 85
-	gis'(\p fis e)
-	<< d4.\p~ {s8 s s\<}>>
-	<< d4. {s8 s s\!}>>
-	g,,4._\fzcresc~
+	R4.
+	<< b,4.\p~ {s8 s s\<}>>
+	<< b4. {s8 s s\!}>>
+	g4._\fzcresc~
 	g~
 % Bars 86 to 90
 	g~
 	g~ \section \key a \minor
 	g
-	d''16(\> c b a g f\! \mark \default
-	e8)\p r r
+	b'16(\> a g f e d\! \mark \default
+	c8)\p r r
 % Bars 91 to 95
 	R4.*11
 % Bars 96 to 100
 	
 % Bars 101 to 105
 	
-	bes'4.->\fz\>~
-	bes\p
-	R4.*6
+	R4.*2
 	
-% Bars 106 to 110
-	
-	
-	
-	
-	<< c4.\fp\> {s8 s s\!}>>
-% Bars 111 to 115
-	bes8( a-\dimmarkup g)
-	g4.\pp~
+	g4.\p~
 	g
-	<< bes4.~ {s8 s4-\crescmarkup}>>
-	bes4.
+% Bars 106 to 110
+	<< c,\fp\<~ {s8 s s\!}>>
+	<< c4.\> {s8 s s\!}>>
+	g'4.\pp~
+	g
+	<< c,4.\fp\> {s8 s s\!}>>
+% Bars 111 to 115
+	R4.*7
+	
+	
+	
+	
 % Bars 116 to 120
-	<< g\fz~ { s8 s4-\crescmarkup}>>
-	g4.
-	f,\mf~
+	
+	
+	f4.\mf~
 	<< f~ {s8 s4-\crescmarkup}>>
 	f4.~
 % Bars 121 to 125
@@ -138,7 +138,7 @@ musicFagottoIMvtII = \relative c {
 	f-. f-. f-.
 	f-. f-. f-. \mark \default
 % Bars 126 to 130
-	e''4.\f
+	e'4.\f
 	<< b4->~ {s8 s-\dimmarkup}>> b16. e,32
 	e4\p r8
 	R4.*13
@@ -148,22 +148,22 @@ musicFagottoIMvtII = \relative c {
 	
 % Bars 141 to 145
 	
-	R4. \section \mark \default
-	R4.*2
-	
-	c'4(\p d16 c
+	r8 r r16 e'\pp \section \mark \default
+	a,8-. a-. r16 a
+	b8-. c-. r16 b
+	a8(\p d4
 % Bars 146 to 150
-	b4) r8
-	R4.
-	r8 d(\< c)\!
-	b4.\fz
-	<< a~\> {s8 s s\!}>>
+	g4) r8
+	b,8-. g-. r16 g
+	d'8\< d( c)\!
+	b\fz[ r e]
+	a,[\> r d]\p
 % Bars 151 to 155
-	a16-. a-. a8-.\pp b-.
-	a16 r r e( fis gis
-	a8) r r
-	r g!8.(\p gis16)
-	a8([ bes)] a16( g!)
+	c16-. d-. e8-.\pp e-.
+	a,16 r r8 r
+	R4.
+	r8 c8.(\p b16)
+	a8( g c)
 % Bars 156 to 160
 	f32( c' a g f a g f e g f e)
 	d( e f g a c bes a d c b g
@@ -179,24 +179,24 @@ musicFagottoIMvtII = \relative c {
 % Bars 166 to 170
 	r16-\crescmarkup b,-. b'-. r r8
 	r16 c, fis,4
-	g'4\f~ g16 g-.
+	g4\f~ g16 g-.
 	a4~ a16 a-.
 	b4~ b16 b-.
 % Bars 171 to 175
 	c,-.\ff c-. c-. c-. c-. c-.
 	c-. c-. c-. c-. c-. c-.
-	c-. c-.-\dimmarkup c-. c-. f-.[\p f-.]
+	c-. c-. c-. c-. f-.[\p f-.]
 	e-.\pp e-. e-. e-. e-. e-.
-	r e'8 e( d16
+	r c''8 c( b16
 % Bars 176 to 180
-	c) e8 e16( d8)
-	r16 e8( e d16
-	c) e8( e16 d8\noBeam
-	c) r r
+	a) c8 c16( b8)
+	r16 c8( c b16
+	a) c8( c16 b8\noBeam
+	a) r r
 	R4.
 % Bars 181 to 185
-	c4(\fp\> b8)\!
-	c r r
+	a4(\fp\> gis8)\!
+	a r r
 	R4.*15
 % Bars 186 to 190
 	
@@ -205,8 +205,8 @@ musicFagottoIMvtII = \relative c {
 % Bars 196 to 200
 	
 	
-	a4(\f b8)
-	c r r
+	fis4(\f gis8)
+	a r r
 	R4.
 % Bar 201
 	R\fermata \fine
