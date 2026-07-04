@@ -23,11 +23,11 @@ musicCornoIIIMvtII = \relative c {
 	
 	b''4.\f
 % Bars 26 to 30
-	r8 r c16.(\p\< b32)\!
+	\partCombineApart r8 r c16.(\p\< b32)\!
 	ais4(\fz b8)~
 	b4~\> b16\! r
 	R4.*2
-	
+	\partCombineAutomatic
 % Bars 31 to 35
 	R4.*5
 % Bars 36 to 40
@@ -49,9 +49,9 @@ musicCornoIIIMvtII = \relative c {
 	
 	
 % Bars 51 to 55
-	b4\pp b8~
+	\partCombineApart b4\pp b8~
 	b b4~
-	b8 r r
+	b8 r r \partCombineAutomatic
 	R4.*4
 % Bars 56 to 60
 	
@@ -61,14 +61,14 @@ musicCornoIIIMvtII = \relative c {
 	
 	
 	
-	<< b4.->\fz~ {s8 s s\>}>>
+	\partCombineApart << b4.->\fz~ {s8 s s\>}>>
 	b8. b16\! b b
 % Bars 66 to 70
-	b8 r r
+	b8 r r \partCombineAutomatic
 	R4.*3
 	
 	
-	d,4.->\fp
+	\once \partCombineApart d,4.->\fp
 % Bars 71 to 75
 	R4.*9
 % Bars 76 to 80
@@ -76,11 +76,11 @@ musicCornoIIIMvtII = \relative c {
 	
 	
 	
-	b'4.->\pp~
+	\partCombineApart b'4.->\pp~
 % Bars 81 to 85
-	b
-	<< a\p~ {s8 s s\<}>>
-	<< a4. {s8 s s\!}>>
+	b \partCombineAutomatic
+	\partCombineChords << a\p~ {s8 s s\<}>>
+	<< a4. {s8 s s\!}>> \partCombineAutomatic
 	R4.*4
 	
 % Bars 86 to 90
@@ -93,7 +93,7 @@ musicCornoIIIMvtII = \relative c {
 	
 	
 	
-	c4.\fp
+	\once \partCombineApart c4.\fp
 	R4.*9
 % Bars 96 to 100
 	
@@ -101,7 +101,7 @@ musicCornoIIIMvtII = \relative c {
 	
 	
 	
-	b4.\p\<~
+	\partCombineApart b4.\p\<~
 	b4~ b16\! b-.
 % Bars 106 to 110
 	<< b4.\fp\<~ {s8 s s\!}>>
@@ -111,7 +111,7 @@ musicCornoIIIMvtII = \relative c {
 	b4.->\fp~
 % Bars 111 to 115
 	b4-\dimmarkup~ b16 b-.
-	c8 r r
+	c8 r r \partCombineAutomatic
 	R4.*5
 % Bars 116 to 120
 	
@@ -126,8 +126,8 @@ musicCornoIIIMvtII = \relative c {
 	bes-. bes-. bes-.
 	bes-. bes-. bes-. \mark \default
 % Bars 126 to 130
-	<< b!4.\fp\>~ {s8 s s\!}>>
-	b8 r r
+	\partCombineApart << b!4.~ {s8 s s}>>
+	b8 \partCombineAutomatic r r 
 	R4.*15
 % Bars 131 to 135
 	
@@ -141,9 +141,9 @@ musicCornoIIIMvtII = \relative c {
 	a4\pp r8
 	R4.*4
 % Bars 151 to 155
-	R4.
+	\partCombineApart R4.
 	r8 r b!~\brack\pp
-	b4.
+	b4. \partCombineAutomatic
 	d4~ d16 b
 	b8(-- c-- b--)
 % Bars 156 to 160
@@ -151,10 +151,10 @@ musicCornoIIIMvtII = \relative c {
 	R4.*5
 % Bars 161 to 165
 	
-	fis,8.->\fz r16 r fis
+	\partCombineApart fis,8.->\fz r16 r fis
 	g8.->\fz r16 r gis\f \mark \default
 	a32-.\fp c-. c-. c-.  c-. c-. c-. c-. c-. c-. c-. c-. 
-	c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. 
+	c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. \partCombineAutomatic
 % Bars 166 to 170
 	R4.*2
 	
@@ -182,12 +182,12 @@ musicCornoIIIMvtII = \relative c {
 % Bars 191 to 195
 	
 	
-	R4.*2
-	
+	\partCombineApart R4.*2
+	\partCombineAutomatic
 	R4.
 % Bars 196 to 200
-	R4.*2
-	
+	\partCombineApart R4.*2
+	\partCombineAutomatic
 	b4.\f
 	b\fp
 	R
