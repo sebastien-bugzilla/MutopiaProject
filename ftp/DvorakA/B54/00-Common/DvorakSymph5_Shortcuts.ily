@@ -21,6 +21,7 @@ pcrescmolto = \markup {\dynamic p \italic "cresc. molto"}
 brackpdolce = \markup {\bracket \with-true-dimensions \dynamic p \italic dolce }
 plegato = \markup {\dynamic p \italic legato}
 pdim = \markup {\dynamic p \italic dim.}
+brackpmarkup = \markup {\bracket \with-true-dimensions \dynamic p}
 %--------------------
 % dynamics mp
 %--------------------

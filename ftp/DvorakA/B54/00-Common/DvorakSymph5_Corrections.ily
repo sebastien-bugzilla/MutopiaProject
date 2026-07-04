@@ -13,4 +13,7 @@ correctionMvtII = \markup {
 	
 	% bar 33, Clarinette I
 	"In Mvt II, bar 33, for clarinette I, the rhythm is not correct on the second beat. Instead of three 16th, a 16th and 2 32th is printed as mentionned in part score."
+	
+	% bar 58 - 62, Horn I - III
+	"In Mvt II, bars 58-62 are indicated to Horn III in conductor score but attributed to Horn I in part score. Other versions attribute this measure to Horn I. In this version, the measure will be attributed to Horn I. The same error is reproduced later (at bar 88-89, 98, 102)"
 }
