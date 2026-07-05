@@ -128,15 +128,15 @@
 			\new Staff {
 				\timeMvtII \nameStaffXMvtII \musicTimpaniMvtII
 			}
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
-%					\new Staff {
-%						\timeMvtII \nameStaffXIMvtII \musicViolinoIMvtII
-%					}
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
+					\new Staff {
+						\timeMvtII \nameStaffXIMvtII \musicViolinoIMvtII
+					}
 %					\new Staff {
 %						\timeMvtII \nameStaffXIIMvtII \musicViolinoIIMvtII
 %					}
-%				>>
+				>>
 %				\new Staff {
 %					\timeMvtII \nameStaffXIIIMvtII \musicViolaMvtII
 %				}
@@ -146,7 +146,7 @@
 %				\new Staff {
 %					\timeMvtII \nameStaffXVMvtII \musicContrabassoMvtII
 %				}
-%			>>
+			>>
 		>>
 		\header {
 			breakbefore = ##t

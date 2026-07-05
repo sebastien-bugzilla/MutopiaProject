@@ -19,4 +19,7 @@ correctionMvtII = \markup {
 	
 	% bar 76 - 77 & 80 - 81, Timpani
 	"In Mvt II, bar 76-77 & 80-81 for timpani, a tremolo is indicated with 64th notes instead of 64th in part score. Part score is prefered in this version."
+	
+	% bar 13, Violin I
+	"In Mvt II, bar 13, for violino I the rhythm is not correct for the last beat. \rhythm {8[ 8 8. 16]} is replaced by \rhythm {8[ 8 16. 32]}. It is comforted by part score."
 }
