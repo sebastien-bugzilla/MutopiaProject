@@ -7,9 +7,9 @@
 musicTrombeIMvtII = \relative c {
 	\clef treble
 	\key a \minor
-%	\transposition a
+	\transposition f
 % Bars 1 to 5
-	
+	R4.*57
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -32,6 +32,8 @@ musicTrombeIMvtII = \relative c {
 	
 % Bars 56 to 60
 	
+	\section \mark \default
+	R4.*30
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -44,6 +46,10 @@ musicTrombeIMvtII = \relative c {
 	
 % Bars 86 to 90
 	
+	\section
+	R4.*2
+	\mark \default
+	R4.*33
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -58,14 +64,24 @@ musicTrombeIMvtII = \relative c {
 	
 % Bars 121 to 125
 	
+	
+	r8 g''-.\ff g-.
+	g-. g-. g-.
+	fis-. g-. e-. \mark \default
 % Bars 126 to 130
-	
+	b' r r
+	R4.
+	b4.\fp\>
+	<< fis4\p~ {s8 s-\dimmarkup}>> fis16. b,32
+	b4\pp r8
 % Bars 131 to 135
-	
+	R4.*12
 % Bars 136 to 140
 	
 % Bars 141 to 145
 	
+	\section \mark \default
+	R4.*21
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -74,12 +90,24 @@ musicTrombeIMvtII = \relative c {
 	
 % Bars 161 to 165
 	
+	
+	\mark \default
+	R4.*4
+	
 % Bars 166 to 170
 	
+	
+	fis'4.->\f
+	g->
+	a->
 % Bars 171 to 175
-	
+	a4(\ff g8)
+	c4( b8)
+	c-.-\dimmarkup b-. g-.\p
+	g-.\pp g-. fis-.
+	e r r
 % Bars 176 to 180
-	
+	R4.*22
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -88,6 +116,10 @@ musicTrombeIMvtII = \relative c {
 	
 % Bars 196 to 200
 	
-% Bar 201
 	
+	b'16\f r r8 b16 r
+	b r r8 r
+	R4.
+% Bar 201
+	R\fermata \fine
 }

@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombonoIMvtII = \relative c {
+musicTrombonoIIMvtII = \relative c {
 	\clef alto
 	\key a \minor
 %	\transposition a
@@ -65,11 +65,11 @@ musicTrombonoIMvtII = \relative c {
 % Bars 121 to 125
 	
 	
-	r8^\secco ees'-.\ff ees-.
-	ees-. ees-. ees-.
-	ees-. ees-. ees-. \mark \default
+	r8^\secco c'-.\ff c-.
+	c-. c-. c-.
+	b!-. c-. a-. \mark \default
 % Bars 126 to 130
-	e! r r
+	b r r
 	R4.
 	e4.\fp\> 
 	<< b4\p~ {s8 s-\dimmarkup}>> b16. e,32
@@ -87,28 +87,28 @@ musicTrombonoIMvtII = \relative c {
 % Bars 151 to 155
 	
 % Bars 156 to 160
-	c'4(\p cis8)
-	d16.( bes32 c!8 a16 d)
-	g,8[(\< bes16. c32]\! f,16.\> g32)\!
-	a4.\p~
-	a~
+	R4.*8
+	
+	
+	
+	
 % Bars 161 to 165
-	a
-	b!4( e8
-	c a) r \mark \default
+	
+	
+	\mark \default
 	R4.*4
 	
 % Bars 166 to 170
 	
 	
-	b8->\f e-> d->
-	c-> fis-> e->
-	d-> gis-> fis->
+	g4.->\f
+	a->
+	b->
 % Bars 171 to 175
-	f!4(\ff e8)
-	b4( c8)
-	b-.-\dimmarkup c-. c-.\p
-	c-.\pp c-. b-.
+	gis4(\ff a8)
+	gis4( a8)
+	gis-. a-. a-.\p
+	a-.\pp a-. gis-.
 	a r r
 % Bars 176 to 180
 	R4.*22
@@ -121,7 +121,7 @@ musicTrombonoIMvtII = \relative c {
 % Bars 196 to 200
 	
 	
-	c16\f r r8 b16 r
+	fis16\f r r8 gis16 r
 	a r r8 r
 	R4.
 % Bar 201

@@ -4,10 +4,10 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombonoIMvtII = \relative c {
-	\clef alto
+musicTrombeIMvtII = \relative c {
+	\clef treble
 	\key a \minor
-%	\transposition a
+	\transposition f
 % Bars 1 to 5
 	R4.*57
 % Bars 6 to 10
@@ -33,7 +33,7 @@ musicTrombonoIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section \mark \default
-	\key a \major R4.*30
+	R4.*30
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -47,7 +47,7 @@ musicTrombonoIMvtII = \relative c {
 % Bars 86 to 90
 	
 	\section
-	\key a \minor R4.*2
+	R4.*2
 	\mark \default
 	R4.*33
 % Bars 91 to 95
@@ -65,15 +65,15 @@ musicTrombonoIMvtII = \relative c {
 % Bars 121 to 125
 	
 	
-	r8^\secco ees'-.\ff ees-.
-	ees-. ees-. ees-.
-	ees-. ees-. ees-. \mark \default
+	r8 g''-.\ff g-.
+	g-. g-. g-.
+	fis-. g-. e-. \mark \default
 % Bars 126 to 130
-	e! r r
+	b' r r
 	R4.
-	e4.\fp\> 
-	<< b4\p~ {s8 s-\dimmarkup}>> b16. e,32
-	e4\pp r8
+	b4.\fp\>
+	<< fis4\p~ {s8 s-\dimmarkup}>> fis16. b,32
+	b4\pp r8
 % Bars 131 to 135
 	R4.*12
 % Bars 136 to 140
@@ -81,35 +81,31 @@ musicTrombonoIMvtII = \relative c {
 % Bars 141 to 145
 	
 	\section \mark \default
-	R4.*13
+	R4.*21
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
 % Bars 156 to 160
-	c'4(\p cis8)
-	d16.( bes32 c!8 a16 d)
-	g,8[(\< bes16. c32]\! f,16.\> g32)\!
-	a4.\p~
-	a~
+	
 % Bars 161 to 165
-	a
-	b!4( e8
-	c a) r \mark \default
+	
+	
+	\mark \default
 	R4.*4
 	
 % Bars 166 to 170
 	
 	
-	b8->\f e-> d->
-	c-> fis-> e->
-	d-> gis-> fis->
+	\partCombineApart fis'4.->
+	g->
+	a-> \partCombineAutomatic
 % Bars 171 to 175
-	f!4(\ff e8)
-	b4( c8)
-	b-.-\dimmarkup c-. c-.\p
-	c-.\pp c-. b-.
-	a r r
+	a4(\ff g8)
+	c4( b8)
+	c-.-\dimmarkup b-. g-.\p
+	g-.\pp g-. fis-.
+	\once \partCombineApart e r r
 % Bars 176 to 180
 	R4.*22
 % Bars 181 to 185
@@ -121,8 +117,8 @@ musicTrombonoIMvtII = \relative c {
 % Bars 196 to 200
 	
 	
-	c16\f r r8 b16 r
-	a r r8 r
+	b'16\f r r8 b16 r
+	b r r8 r
 	R4.
 % Bar 201
 	R\fermata \fine

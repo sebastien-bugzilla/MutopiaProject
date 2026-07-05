@@ -87,7 +87,7 @@ musicTrombonoIMvtII = \relative c {
 % Bars 151 to 155
 	
 % Bars 156 to 160
-	c'4(\p cis8)
+	\partCombineApart c'4(\p cis8)
 	d16.( bes32 c!8 a16 d)
 	g,8[(\< bes16. c32]\! f,16.\> g32)\!
 	a4.\p~
@@ -95,21 +95,21 @@ musicTrombonoIMvtII = \relative c {
 % Bars 161 to 165
 	a
 	b!4( e8
-	c a) r \mark \default
+	c a) r \partCombineAutomatic \mark \default
 	R4.*4
 	
 % Bars 166 to 170
 	
 	
-	b8->\f e-> d->
+	\partCombineApart b8-> e-> d->
 	c-> fis-> e->
-	d-> gis-> fis->
+	d-> gis-> fis-> \partCombineAutomatic
 % Bars 171 to 175
 	f!4(\ff e8)
 	b4( c8)
 	b-.-\dimmarkup c-. c-.\p
 	c-.\pp c-. b-.
-	a r r
+	\once \partCombineApart a r r
 % Bars 176 to 180
 	R4.*22
 % Bars 181 to 185
@@ -122,7 +122,7 @@ musicTrombonoIMvtII = \relative c {
 	
 	
 	c16\f r r8 b16 r
-	a r r8 r
+	\once \partCombineApart a r r8 r
 	R4.
 % Bar 201
 	R\fermata \fine
