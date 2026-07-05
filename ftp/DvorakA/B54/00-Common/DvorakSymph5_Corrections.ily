@@ -16,4 +16,7 @@ correctionMvtII = \markup {
 	
 	% bar 58 - 62, Horn I - III
 	"In Mvt II, bars 58-62 are indicated to Horn III in conductor score but attributed to Horn I in part score. Other versions attribute this measure to Horn I. In this version, the measure will be attributed to Horn I. The same error is reproduced later (at bar 88-89, 98, 102)"
+	
+	% bar 76 - 77 & 80 - 81, Timpani
+	"In Mvt II, bar 76-77 & 80-81 for timpani, a tremolo is indicated with 64th notes instead of 64th in part score. Part score is prefered in this version."
 }
