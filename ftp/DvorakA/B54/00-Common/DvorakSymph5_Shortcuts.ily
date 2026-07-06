@@ -36,6 +36,7 @@ mpcresc = \markup {\dynamic mp \italic cresc.}
 % dynamics mf
 %--------------------
 mfcresc = \markup {\dynamic mf \italic cresc.}
+mfbrackespress = \markup {\dynamic mf \bracket \with-true-dimensions \italic espress. }
 %--------------------
 % dynamics fz
 %--------------------
@@ -104,6 +105,7 @@ pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
 espress = \markup {\italic espress.}
 secco = \markup {\italic secco}
+divisi = \markup {\italic divisi}
 %--------------------
 % instrument modification
 %--------------------
