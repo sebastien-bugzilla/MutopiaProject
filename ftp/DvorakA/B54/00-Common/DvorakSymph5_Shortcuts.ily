@@ -36,7 +36,9 @@ mpcresc = \markup {\dynamic mp \italic cresc.}
 % dynamics mf
 %--------------------
 mfcresc = \markup {\dynamic mf \italic cresc.}
-mfbrackespress = \markup {\dynamic mf \bracket \with-true-dimensions \italic espress. }
+mfbrackespress = \markup {\dynamic mf \bracket \with-true-dimensions \italic espress.}
+mfespressivoedolente = \markup {\dynamic mf \italic "espressivo e dolente"}
+mfespress = \markup {\dynamic mf \italic espress.}
 %--------------------
 % dynamics fz
 %--------------------
@@ -64,6 +66,7 @@ piuf = \markup {\italic più \dynamic f}
 piufD = #(make-dynamic-script (markup #:normal-text piuf))
 fcresc = \markup {\dynamic f \italic cresc.}
 fmarkup = \markup {\dynamic f}
+fpesante = \markup {\dynamic f \italic pesante}
 %--------------------
 % dynamics ff
 %--------------------
@@ -71,6 +74,7 @@ fbrackf = \markup { \concat { \dynamic f \bracket \with-true-dimensions \dynamic
 ffmarc = \markup {\dynamic ff \italic marc.}
 ffmarcato = \markup {\dynamic ff \italic marcato}
 ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
+ffdim = \markup {\dynamic ff \italic dim.}
 %--------------------
 % dynamics ffz
 %--------------------
