@@ -1,5 +1,5 @@
    157    426   5178 10_DvorakSymph5_Conductor_mvt1.ly
-   162    441   5403 10_DvorakSymph5_Conductor_mvt2.ly
+   162    438   5400 10_DvorakSymph5_Conductor_mvt2.ly
    149    406   5070 10_DvorakSymph5_Conductor_mvt3.ly
    145    397   4884 10_DvorakSymph5_Conductor_mvt4.ly
    243    565   5189 20_DvorakSymph5_Part01_Flauti.ly
@@ -123,7 +123,7 @@
    242   1109   4860 02-Mvt2/m02_v21_music_ViolinoII.ily
    264   1618   6437 02-Mvt2/m02_v22_music_Viola.ily
    373   1611   6965 02-Mvt2/m02_v23_music_Violoncello.ily
-    93    257   1235 02-Mvt2/m02_v24_music_Contrabasso.ily
+   246    974   4214 02-Mvt2/m02_v24_music_Contrabasso.ily
    141    379   1724 03-Mvt3/m03_v01_music_FlautoI.ily
    141    379   1725 03-Mvt3/m03_v02_music_FlautoII.ily
    141    379   1722 03-Mvt3/m03_v03_music_OboeI.ily
@@ -171,4 +171,4 @@
    177    469   2077 04-Mvt4/m04_v22_music_Viola.ily
    177    469   2083 04-Mvt4/m04_v23_music_Violoncello.ily
    177    469   2083 04-Mvt4/m04_v24_music_Contrabasso.ily
- 41566 117349 655049 total
+ 41719 118063 658025 total

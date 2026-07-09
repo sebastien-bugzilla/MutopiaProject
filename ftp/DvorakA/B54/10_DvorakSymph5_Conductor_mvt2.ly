@@ -148,9 +148,9 @@
 						\timeMvtII \musicVioloncelloDivisiMvtII
 					}
 				>>
-%				\new Staff {
-%					\timeMvtII \nameStaffXVMvtII \musicContrabassoMvtII
-%				}
+				\new Staff {
+					\timeMvtII \nameStaffXVMvtII \musicContrabassoMvtII
+				}
 			>>
 		>>
 		\header {
