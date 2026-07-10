@@ -65,7 +65,7 @@ musicViolinoIMvtII = \relative c {
 	a8 r r
 	R4.
 % Bars 51 to 55
-	a8(\pp fis16 gis e8
+	a8(\pp fis16 gis a8
 	fis16 gis a8 fis16 gis)
 	a32( e' c b a e' c b a e' c b
 	a16) r r8 r

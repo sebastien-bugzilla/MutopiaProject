@@ -177,7 +177,7 @@ musicClarinettoIMvtII = \relative c {
 % Bars 161 to 165
 	bes8) r r
 	R4.
-	r8 r d16-.\f des-. \mark \default
+	r8 r des16-.\f des-. \mark \default
 	r32 f-.\fp f-. f-.  f-. f-. f-. f-.  f-. f-. f-. f-.
 	f-. f-. f-. f-. f-. f-. f-. f-. f-. f-. f-. f-.
 % Bars 166 to 170
