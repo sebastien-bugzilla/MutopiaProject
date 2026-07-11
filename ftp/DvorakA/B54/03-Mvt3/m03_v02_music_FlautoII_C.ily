@@ -11,14 +11,14 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 1 to 5
 	r8 ees''(-- ees--
 	ees--) r r
-	r ees---\crescmarkup r
+	r ees-- r
 	r ees-- r
 	r a-- a--
 % Bars 6 to 10
 	r c\mf r
-	r c-\dimmarkup r
+	r c r
 	r c-.\p r
-	a-\dimmarkup[-. r ees-.]
+	a[-. r ees-.]
 	r8 f4\pp
 % Bars 11 to 15
 	f f8~
@@ -159,10 +159,10 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 166 to 170
 	
 % Bars 171 to 175
-	R4.*4
-	
-	
-	
+	\mmrPos #-9 R4.
+	\mmrPos #-6 R
+	R
+	R
 	d,4.\pp~
 % Bars 176 to 180
 	d~
@@ -192,14 +192,14 @@ musicFlautoIIMvtIII = \relative c {
 		aes4.->\fz
 % Bars 201 to 205
 		f8->[ r16-\crescmarkup des-. des8-.]
-		des->[ r16 g-. g8-.]
+		des->[ r16 g!-. g8-.]
 		g\mf r r
 		r8 r c-.\f\<
 		c4\fz r8
 % Bars 206 to 210
 		r r bes\mf\<
 		bes4->\fz r8
-		r8 r_\pdim aes-.
+		r8 r aes-.
 		aes4 r8
 		R4.*2
 % Bars 211 to 215
@@ -238,10 +238,10 @@ musicFlautoIIMvtIII = \relative c {
 		
 		
 		r8. aes16-.\p aes8-.
-		aes4.-\crescmarkup~
+		aes4.~
 		aes8\<[ r16 aes-. aes8-.]
 % Bars 241 to 245
-		aes( ces) bes-.\!
+		aes( ces!) bes-.\!
 		aes[\f r16 c!-. c8-.]
 		c4.->~
 		c8[ r16 c-. c8-.]
@@ -253,7 +253,7 @@ musicFlautoIIMvtIII = \relative c {
 		aes( c) bes-.
 		aes[ r16 aes-. aes8-.]
 % Bars 251 to 255
-		aes(-\dimmarkup c) bes-.
+		aes( c) bes-.
 		aes8-.[\> r16 aes-. aes8-.]
 		aes( c) bes-.\! \mark \default
 		aes\p r r

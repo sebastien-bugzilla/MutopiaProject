@@ -28,6 +28,7 @@ brackpmarkup = \markup {\bracket \with-true-dimensions \dynamic p}
 pmoltoespress = \markup {\dynamic p \italic "molto espress."}
 pdolce = \markup {\dynamic p \italic dolce}
 pdolceD = #(make-dynamic-script (markup #:normal-text pdolce))
+pmoltocresc = \markup { \dynamic p \italic "molto cresc."}
 %--------------------
 % dynamics mp
 %--------------------
@@ -234,8 +235,15 @@ noteShift = #(define-music-function
 	#}
 )
 
-
-
+startVoltaI = {
+	\set Score.repeatCommands = #`((volta , #{ \markup \volta-number "1" #} ))
+}
+startVoltaII = {
+	\set Score.repeatCommands = #`((volta #f)(volta ,#{ \markup \volta-number "2" #}))
+}
+endVolta = {
+	\set Score.repeatCommands = #'((volta #f))
+}
 
 %aIIXoffset = #(define-music-function
 %	(offset)
