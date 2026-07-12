@@ -4,15 +4,15 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicOboeIMvtIII = \relative c {
+musicOboeIIMvtIII = \relative c {
 	\clef treble
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
 	R4.*5
 % Bars 6 to 10
-	r8 a'''\mf r
-	r a-\dimmarkup r
+	r8 a''\mf r
+	r a r
 	r a-.\p r
 	R4.*7
 % Bars 11 to 15
@@ -24,23 +24,19 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	r8 r8. f16\f
-	<< f4.\mf\>~ {s8 s s\!}>>
+	R4.*9
+	
 % Bars 26 to 30
-	f8\p f-. f-.
-	f4.->
-	g4-> g8
-	fis4.\fp
-	g4 g8
+	
 % Bars 31 to 35
-	e4 e8
-	d4 r8
+	
+	
 	R4.*4
 	
 	
 % Bars 36 to 40
 	
-	g,4.->\fp~
+	g4.->\fp~
 	g
 	f->~
 	f4 r8
@@ -51,7 +47,7 @@ musicOboeIMvtIII = \relative c {
 % Bars 51 to 55
 	
 	
-	g'4.->\fp~
+	g4.->\fp~
 	g
 	f->\fp~
 % Bars 56 to 60
@@ -68,43 +64,43 @@ musicOboeIMvtIII = \relative c {
 % Bars 71 to 75
 	
 	
-	ees16(\p d c b c8)
+	R4.
 	R4.*3
 	
 % Bars 76 to 80
 	
-	a'8->\mf e-. a-.
 	R4.
-	R4.*5
-	
+	R4.
+	a4.\p~
+	a8 a-. a-.
 % Bars 81 to 85
+	c4.~
+	c8\< c-. c-.
+	b4->\fz b8
+	R4.*2
 	
-	
-	
-	fis8->\fz b,-. fis'-.
-	b-.\fp fis-. b-.
 % Bars 86 to 90
 	R4.
-	b8-.\fp fis-. b-.
+	R
 	R4.
-	b,8-.\p fis-. b-.
+	\mmrPos #-6 R
 	R4.*8
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
 	
-	e4(->\mf b16 dis
-	e8) b-. e-.
-	fis-. c-. fis-.
+	R4.*4
+	
+	
 % Bars 101 to 105
-	g16( fis e dis e8)
+	
 	a4.->\mf
-	b->_\brackM\pocoapococresc
+	b->
 	b->
 	b->
 % Bars 106 to 110
-	c,16(\f b a gis a c)
+	c16(\f b a gis a c)
 	d(-\crescmarkup c b ais b d)
 	e( d c b c e)
 	f(->\f e d cis d e)
@@ -114,10 +110,10 @@ musicOboeIMvtIII = \relative c {
 	f( e d cis d e)\!
 	f8\ff r r
 	R4.
-	r8 r16 ees!(\f d ees
+	R4.*3
 % Bars 116 to 120
-	g f ees d ees f)
-	ees( d c bes c d)
+	
+	
 	g4\fz g8\fz~
 	g8. g16 g8\fz~
 	g8. g16 g8~\fz
@@ -126,18 +122,18 @@ musicOboeIMvtIII = \relative c {
 	R4.*5
 % Bars 126 to 130
 	\mark \default
-	bes,4(\ff f16 a
-	bes8) f-. bes-.
-	c( f, c')
-	ees16( d c b c8)
+	f,4.\ff(~
+	f~
+	f
+	g)
 % Bars 131 to 135
-	d4( a16 c
-	bes8) a-. g-.
-	c g(\prall bes)
-	a16( bes a g f8)-.
-	bes4 r8
+	fis(
+	g)
+	e(
+	f)
+	f\fp~
 % Bars 136 to 140
-	R4.
+	f4 r8
 	R4.*6
 % Bars 141 to 145
 	
@@ -158,9 +154,9 @@ musicOboeIMvtIII = \relative c {
 % Bars 161 to 165
 	
 	\mark \default
-	R4.*3
-	
-	
+	f4.\fp~
+	f~
+	f8 r r
 % Bars 166 to 170
 	R4.*13
 % Bars 171 to 175
@@ -169,12 +165,12 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	d'8-.\fz[ r e-.]
-	f-.[\> r ees!-.]\!
+	R4.*3
+	
 % Bars 181 to 185
-	d\p r r
-	ees\ff r r
-	\startVoltaI d r r
+	
+	c'8\ff r r
+	\startVoltaI bes r r
 	R4.*11
 % Bars 186 to 190
 	
@@ -183,44 +179,44 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	\section
-	\startVoltaII d8\ff r r \endVolta \section
+	\startVoltaII bes8\ff r r \endVolta \section
 % Bars 196 to 200
 	\repeat volta 2 {
-		\key des \major \time 3/8 \sectionLabel "TRIO" f4.->\fp
-		f8.-> des16-. des8-.
-		ges4 r8
-		r r aes-.
-		aes4.->\fz
+		\key des \major \time 3/8 \sectionLabel "TRIO" des4.->\fp
+		R4.*2
+		
+		r8 r aes-.
+		f'4.->\fz
 % Bars 201 to 205
-		aes8->[ r16-\crescmarkup f-. f8-.]
-		f8->[ r16 f-. f8-.]
-		e\mf r r
-		r8. g16-.\f\< g8-.\!
-		aes4\fz r8
+		f8->[ r16-\crescmarkup des-. des8-.]
+		des8->[ r16 des-. des8-.]
+		c\mf r r
+		r8. e16-.\f\< e8-.\!
+		f4\fz r8
 % Bars 206 to 210
-		r8 r aes-.\mf\<
-		ges!4->\fz r8
-		r r ges-.-\pdim
-		f4 r8
-		r r e-.\p
+		r8 r f-.\mf\<
+		ees!4->\fz r8
+		r r ees-.
+		des4 r8
+		r r des-.\p
 % Bars 211 to 215
-		f4-- r8
+		des4-- r8
 		des,4.\pp~
 		des8 r r \mark \default
 	}
 	\repeat volta 2 {
-		f'4.->\pp
-		f4 r8
+		R4.*4
+		
 % Bars 216 to 220
-		r8. ges16-.\< ges8-.
-		ges4->\! r8
+		
+		
 		R4.*2
 		
-		<< f4.->\p\< {s8 s s\!}>>
+		R4.*4
 % Bars 221 to 225
-		f4 r8
-		r8. ges16-.\< ges8-.\!
-		ges8->\mf r r
+		
+		
+		
 		R4.*10
 % Bars 226 to 230
 	
@@ -228,31 +224,31 @@ musicOboeIMvtIII = \relative c {
 		
 		
 		
-		r8. gis16-.\p gis8-.
-		gis4.~
+		R4.*2
+		
 % Bars 236 to 240
-		gis8[ r16 gis-. gis8-.]
-		gis(\< b)\> a-.\!
-		gis4 r8
+		r8. e'16-.\p e8-.
+		e(\< gis!)\> fis-.\!
+		e4 r8
 		R4.*3
 		
 % Bars 241 to 245
 		
-		r8. ees!16-.\f ees8-.
-		ees4.->~
-		ees8[ r16 ees-. ees8]-.
-		ees8( g) f-.
-% Bars 246 to 250
-		ees[ r16 c-. c8-.]
+		r8. c!16-.\f c8-.
 		c4.->~
-		c8[ r16 c-. c8-.]
+		c8[ r16 c-. c8]-.
 		c8( ees) des-.
-		c[ r16 c-. c8-.]
+% Bars 246 to 250
+		c[ r16 aes-. aes8-.]
+		aes4.->~
+		aes8[ r16 aes-. aes8-.]
+		aes8( c) bes-.
+		aes[ r16 aes-. aes8-.]
 % Bars 251 to 255
-		c(-\dimmarkup ees) des-.
-		c[\> r16 c-. c8-.]
-		c( ees) des-.\! \mark \default
-		c\p r r
+		aes( c) bes-.
+		aes[\> r16 aes-. aes8-.]
+		aes( c) bes-.\! \mark \default
+		aes\p r r
 		R4.*10
 % Bars 256 to 260
 	
@@ -261,9 +257,9 @@ musicOboeIMvtIII = \relative c {
 		
 		
 		
-		c8(\pp ees) des-.
+		aes8(\pp c) bes-.
 % Bars 266 to 270
-		c r r
+		aes r r
 		R4.*10
 % Bars 271 to 275
 	
@@ -278,39 +274,39 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	des4(\p f8
+	R4.*3
 % Bars 291 to 295
-	ees4\f\> des8\!
-	c4)\mf r8
+	
+	
 	R4.*4
 	
 	
 % Bars 296 to 300
 	
-	f4.\p\<~
-	<< f~ {s8 s s\!}>>
-	f4.\f(
-	ges!4\>-\dimmarkup ees8)\!
+	f'4.(\p\<
+	<< ees) {s8 s s\!}>>
+	d4.\f
+	des!8(\>-\dimmarkup bes c)\!
 % Bars 301 to 305
-	f4.\p(
-	ees4)\> r8\!
-	r8. aes,16-.\p aes8-.
-	aes4 r8
-	r8. aes16-.\pp aes8-.
+	des4.\p(
+	c4)\> s8\!
+	R4.*4
+	
+	
 % Bars 306 to 310
-	aes4 r8
+	
 	R4.*10
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
-	r8. a16-\mpcresc a8
-	a8.\< f'16 f8\!
-	f8.\f\< a16 a8
+	r8. f,16 f8
+	f8.\< a!16 a8\!
+	a8.\f\< a16 a8
 	a8.\! a16\ff a8
 % Bars 321 to 324
 	a8 r r
 	R4.
-	r8. f16-.\pp f8-.
-	f8 r r \section \key bes \major s8
+	R4.*2
+	\section \key bes \major s8
 }

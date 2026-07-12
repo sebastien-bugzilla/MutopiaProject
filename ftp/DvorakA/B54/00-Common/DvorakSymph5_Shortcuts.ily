@@ -93,6 +93,7 @@ dimmarkup = \markup {\italic dim.}
 crescmolto = \markup {\italic "cresc. molto"}
 pocoapocodim = \markup {\italic "poco a poco dim."}
 dimin = \markup {\italic dimin.}
+pocoapococresc = \markup {\italic "poco a poco cresc."}
 %--------------------
 % text indications
 %--------------------
@@ -236,10 +237,10 @@ noteShift = #(define-music-function
 )
 
 startVoltaI = {
-	\set Score.repeatCommands = #`((volta , #{ \markup \volta-number "1" #} ))
+	\set Score.repeatCommands = #`((volta , #{ \markup \volta-number "1." #} ))
 }
 startVoltaII = {
-	\set Score.repeatCommands = #`((volta #f)(volta ,#{ \markup \volta-number "2" #}))
+	\set Score.repeatCommands = #`((volta #f)(volta ,#{ \markup \volta-number "2." #}))
 }
 endVolta = {
 	\set Score.repeatCommands = #'((volta #f))
