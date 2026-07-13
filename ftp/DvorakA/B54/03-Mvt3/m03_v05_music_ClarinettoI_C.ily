@@ -28,7 +28,7 @@ musicClarinettoIMvtIII = \relative c {
 	
 % Bars 16 to 20
 	R4.\fermata \section
-	\time 3/8 c4->(\fp g16 b
+	\time 3/8 \partCombineApart c4->(\fp g16 b
 	c8) g-. c-.
 	d-. g,-. d'-.
 	f16( e d cis d8)
@@ -36,11 +36,11 @@ musicClarinettoIMvtIII = \relative c {
 	e4(\fp b16 d
 	c8) b-. a-.
 	d-. a-. c-.
-	b16( c b a g f')\f
-	<< e4.\mf\>~ {s8 s s\!}>>
+	b16( c b a g f')
+	<< e4.~ {s8 s s}>>
 % Bars 26 to 30
-	e8\p e-. e-.
-	d4.->
+	\stemDown \omitBeam e8 e-. e-.
+	\stemUp d4.-> \partCombineAutomatic
 	f4-> d8
 	e4.\fp
 	e4 e8
@@ -63,11 +63,11 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 51 to 55
 	
 	
-	e4(\fp a,16 e'
+	\partCombineApart e4(\fp a,16 e'
 	f8) a,-. f'-.
 	d-. g,-. d'-.
 % Bars 56 to 60
-	e16( d c b c8)
+	e16( d c b c8) \partCombineAutomatic
 	R4.*4
 	
 	
@@ -85,24 +85,24 @@ musicClarinettoIMvtIII = \relative c {
 	
 	
 	
-	g'16(\p\< fis e dis e8)\!
+	\partCombineApart g'16(\p\< fis e dis e8)\!
 % Bars 76 to 80
-	fis-.\mf b,-. fis'-.
+	fis-.\mf b,-. fis'-. \partCombineAutomatic
 	R4.*8
 % Bars 81 to 85
 	
 	
 	
 	
-	R4.
+	\partCombineApart R4.
 % Bars 86 to 90
-	gis8-.\fp cis,-. gis'-.
+	gis8-.\fp cis,-. gis'-. \partCombineAutomatic
 	R4.
-	gis8-.\fp cis,-. gis'-.
+	\partCombineApart gis8-.\fp cis,-. gis'-. \partCombineAutomatic
 	R4.*2
 	
 % Bars 91 to 95
-	R4.
+	\partCombineApart R4. \partCombineAutomatic
 	R4.*10
 % Bars 96 to 100
 	
@@ -121,8 +121,8 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 111 to 115
 	g->\fz
 	g->\fz
-	f8\ff r d,16-.\f^\marc e-.
-	f8-. d-. f-.
+	f8\ff r \partCombineApart  d,16-.^\marc e-.
+	f8-. d-. f-. \partCombineAutomatic
 	a-. f-. a-.
 % Bars 116 to 120
 	c16( b a g a b)
@@ -135,7 +135,7 @@ musicClarinettoIMvtIII = \relative c {
 	R4.*5
 % Bars 126 to 130
 	\mark \default
-	g4.(~\ff
+	\partCombineApart g4.(~
 	g~
 	g
 	a)
@@ -153,22 +153,22 @@ musicClarinettoIMvtIII = \relative c {
 	c8) b-. a-.
 % Bars 141 to 145
 	b( fis a)
-	g16( a g fis e8)
+	g16( a g fis e8) \partCombineAutomatic
 	bes''4\ff g16( bes
 	a8) f-. a-.
 	bes-. g-. bes-.
 % Bars 146 to 150
-	a16( g f e f8)
+	\partCombineApart a16( g f e f8) \partCombineAutomatic
 	g4 e16( g
 	f8) d-. f-.
 	d-. b-. d-.
-	e16( d c b c8)
+	\partCombineApart e16( d c b c8)
 % Bars 151 to 155
-	g'4\fp c,16( g'
+	g'4 c,16( g'
 	a8) c,-. a'-.
 	g-. c,-. g'-.
 	a16( g f e f8)
-	e4->(-\fpdim a,16 e'
+	e4->( a,16 e'
 % Bars 156 to 160
 	f8) a,-. f'-.
 	d-. g,-. d'-.
@@ -180,7 +180,7 @@ musicClarinettoIMvtIII = \relative c {
 	e g c!\p g c e) \mark \default
 	g4.\fp~
 	g~
-	g8 r r
+	g8 r r \partCombineAutomatic
 % Bars 166 to 170
 	R4.
 	f,8\pp r r
@@ -202,7 +202,7 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 181 to 185
 	c\p r r
 	d\ff r r 
-	\startVoltaI c4.\fp(~
+	\startVoltaI \partCombineApart c4.(~
 	c~\pp
 	c4 g16 b
 % Bars 186 to 190
@@ -214,9 +214,9 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 191 to 195
 	bes4.)~\pp
 	bes~
-	bes4 r8
+	bes4 r8 \partCombineAutomatic
 	R4. \section
-	\startVoltaII c,8\ff r r \section \endVolta
+	\startVoltaII \once \partCombineApart c,8 r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
 		\key ees \major \time 3/8 \sectionLabel "TRIO" bes4.->\fp
@@ -257,8 +257,8 @@ musicClarinettoIMvtIII = \relative c {
 		R4.*2
 		
 % Bars 226 to 230
-		r8. g16-.\pp g8-.
-		g4 r8
+		\partCombineApart r8. g16-.\pp g8-.
+		g4 r8 \partCombineAutomatic
 		r8. g16-.\pp g8-.
 		g8(\< bes)\> aes-.\!
 		g4-. r8
@@ -317,7 +317,7 @@ musicClarinettoIMvtIII = \relative c {
 	
 	
 	
-	r8 r bes-.\p
+	\partCombineApart r8 r bes-.\p
 	ees4.->
 % Bars 286 to 290
 	bes8. g16 g8
@@ -328,7 +328,7 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 291 to 295
 	a f d a) f'[-. f,-.]
 	bes(\mf d bes f d bes)
-	ees8. bes'16-. bes8-.
+	ees8. bes'16-. bes8-. \partCombineAutomatic
 	bes4 r8
 	r8. c16-. c8-.
 % Bars 296 to 300
@@ -338,14 +338,14 @@ musicClarinettoIMvtIII = \relative c {
 	r8. c16-.\f c8-.
 	c4(\> c8)\!
 % Bars 301 to 305
-	bes4.\p
+	\partCombineApart bes4.
 	bes
-	bes-\pdim
 	bes
-	bes\pp
+	bes
+	bes
 % Bars 306 to 310
 	bes
-	bes4 r8
+	bes4 \partCombineAutomatic r8
 	R4.*3
 	
 	

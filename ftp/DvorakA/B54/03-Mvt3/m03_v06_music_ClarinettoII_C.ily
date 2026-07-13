@@ -11,14 +11,14 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 1 to 5
 	r b''--(\pp b--
 	b--) r r
-	r b---\crescmarkup r
+	r b-- r
 	r d-- r
 	r d-- d--
 % Bars 6 to 10
 	r d\mf r
-	r d-\dimmarkup r
+	r d r
 	r d-.\p r
-	d-.[-\dimmarkup r b-.]
+	d-.[ r b-.]
 	r b4\pp
 % Bars 11 to 15
 	b b8~
@@ -109,7 +109,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 101 to 105
 	
 	fis'4.->\mf
-	fis->_\brackM\pocoapococresc
+	fis->
 	eis->
 	fis->
 % Bars 106 to 110
@@ -121,7 +121,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 111 to 115
 	g->\fz
 	g->\fz
-	d8\ff r d,16-.\f^\marc e-.
+	d8\ff r d,16-.\f e-.
 	f8-. d-. f-.
 	f-. d-. f-.
 % Bars 116 to 120
@@ -144,12 +144,12 @@ musicClarinettoIIMvtIII = \relative c {
 	c8) b-. a-.
 	d a(\prall c)
 	b16( c b a g) r
-	R4.*8
+	R4.*6
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	
-	
+	\mmrPos #-6 R4.
+	\mmrPos #-6 R
 	g'4\ff c,16( g'
 	f8) c-. f-.
 	g-. c,-. g'-.
@@ -225,7 +225,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 206 to 210
 		r r c-.\mf\<
 		c4\fz r8
-		r r bes-.-\pdim
+		r r bes-.
 		bes4 r8
 		r r fis-.\p
 % Bars 211 to 215
@@ -264,7 +264,7 @@ musicClarinettoIIMvtIII = \relative c {
 		r8. ges16-.\p ges8-.
 		ges(\< bes)\> aes!-.\!
 		ges r16 bes-.\p bes8-.
-		bes4.-\crescmarkup~
+		bes4.~
 		bes8\<[ r16 bes-. bes8-.]
 % Bars 241 to 245
 		bes( des) c-.\!
@@ -279,7 +279,7 @@ musicClarinettoIIMvtIII = \relative c {
 		bes( d) c-.
 		bes[ r16 bes-. bes8-.]
 % Bars 251 to 255
-		bes(-\dimmarkup d) c-.
+		bes( d) c-.
 		bes[\> r16 bes-. bes8-.]
 		bes( d) c-.\! \mark \default
 		bes[\p r16 bes-. bes8-.]
@@ -322,7 +322,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 296 to 300
 	aes4 r8
 	r8. g16-.\< g8-.\!
-	g4-\crescmarkup r8
+	g4 r8
 	r8. g16-.\f g8-.
 	aes!4(\> f8)\!
 % Bars 301 to 305
@@ -341,11 +341,11 @@ musicClarinettoIIMvtIII = \relative c {
 	r8. g16-.\p g8-.
 	g8. g16-. g8-.
 	g r r
-	r8. g16-.-\crescmarkup g8-.
+	r8. g16-. g8-.
 	g8. g16-.\< g8-.\!
 % Bars 316 to 320
 	g4\mf r8
-	r8. g16-\crescmarkup g8
+	r8. g16 g8
 	g8.\< g16 g8\!
 	g8.\f\< g16 g8
 	g8.\! g16\ff g8
