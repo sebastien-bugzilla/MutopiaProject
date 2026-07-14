@@ -4,12 +4,12 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFagottoIIMvtIII = \relative c {
+musicFagottoIMvtIII = \relative c {
 	\clef bass
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	r8 f,--(\pp f--
+	r8 f--(\pp f--
 	f--) r r
 	r f---\crescmarkup r
 	r f-- r
@@ -30,7 +30,7 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	r8 r8. f16\f
-	bes8 r r
+	f8 r r
 % Bars 26 to 30
 	R4.*7
 % Bars 31 to 35
@@ -43,18 +43,18 @@ musicFagottoIIMvtIII = \relative c {
 	ees[ r ees]
 	g4\fp r8
 	c,[ r c]\p
-	f[ r f]
-	bes,4 r8
+	\partCombineApart f,[ \once \partCombineAutomatic f\rest f] \partCombineAutomatic
+	bes4 r8
 % Bars 41 to 45
 	R4.*4
 	
 	
 	
-	R4.*4
+	\partCombineApart d'4\p g,16( d'
 % Bars 46 to 50
-	
-	
-	
+	ees8) g,-. ees'-.
+	c-. f,-. c'-.
+	d16( c bes a bes8) \partCombineAutomatic
 	R4.*17
 % Bars 51 to 55
 	
@@ -71,38 +71,42 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	
-	R4.*7
+	\partCombineApart bes4(-> f16 a
 % Bars 71 to 75
-	
+	bes8) f-. bes-.
+	c-. f,-. c'-.
+	ees16( d c b c8)
+	d8-.-\crescmarkup g,-. d'-.
+	f16(\< e d cis d8)
 % Bars 76 to 80
-	
+	e8-.\mf a,-. e'-. \partCombineAutomatic
 	R4.*9
 % Bars 81 to 85
 	
 % Bars 86 to 90
+	\partCombineApart fis8-.\fp b,-. fis'-. \partCombineAutomatic
 	R4.
-	R4.
+	\partCombineApart fis8-.\fp b,-. fis'-.
+	\mmrPos #7 R4. \partCombineAutomatic
 	R
-	b''8-.\p fis-. b-.
-	R4.
 % Bars 91 to 95
-	b,8-.\pp fis-. b-.
-	R4.
-	e4->\fp b16( dis
-	e8-.) b-. e-.
-	fis-. b,-. fis'-.
+	\partCombineApart R \partCombineAutomatic
+	R
+	\partCombineApart R4.
+	R
+	R
 % Bars 96 to 100
-	g16(\< fis e dis e8)
-	a-. fis-. a-.\!
+	\mmrPos #6 R
+	\mmrPos #7 R \partCombineAutomatic
 	R4.*4
 % Bars 101 to 105
 	
-	e4(->\f b16 dis
+	e,4(->\f b16 dis
 	e8)_\pocoapococresc b-. e-.
 	fis-. b,-. fis'-.
 	g16(-> fis e dis e8)
 % Bars 106 to 110
-	a,-.\f c16( b c a
+	a-.\f c16( b c a
 	b8)-\crescmarkup d16( cis d b
 	c!8) e16( dis e c
 	d!8)\f f16( e f e
@@ -111,7 +115,7 @@ musicFagottoIIMvtIII = \relative c {
 	d8) f16( e f e
 	d8) f16( e f e)\!
 	f,8\ff r r
-	f4.->\ff~
+	f,4.->\ff~
 	f~
 % Bars 116 to 120
 	f~
@@ -123,99 +127,107 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	
-	R4.*3
-	
+	\partCombineApart r8 r f''16(\f ees
+	d\< c bes a g f
 % Bars 126 to 130
-	\mark \default
-	bes,4\ff bes8
+	ees d c bes a f)\! \partCombineAutomatic \mark \default
+	bes4\ff bes8
 	bes4 bes8
-	a'4 a8
-	c,4 ees8
+	\partCombineApart a4 a8 \partCombineAutomatic
+	c4 ees8
 % Bars 131 to 135
 	d4 d8
-	g4 g8
-	c,4 c8
-	f4 f8
-	bes, r r
-% Bars 136 to 140
-	R4.*7
-	
-	
-	
-	
-% Bars 141 to 145
-	
-	
-	bes4\ff bes8
-	ees4 ees8
-	bes4 bes8
-% Bars 146 to 150
-	ees4 ees8
-	g4 g8
+	\partCombineApart g,4 g8 \partCombineAutomatic
 	c4 c8
-	f,4 f8
-	bes4 bes8
+	\partCombineApart f,4 f8 \partCombineAutomatic
+	bes \partCombineApart r bes'\p-.
+% Bars 136 to 140
+	bes,[-. r bes'-.]
+	a[ r a]
+	c[ r ees,]
+	d[ r d']
+	g,[ r d']
+% Bars 141 to 145
+	a[ r a]
+	d, r r
+	d16( f aes f aes d)
+	g,( bes ees g f ees)
+	d( c bes aes g f)
+% Bars 146 to 150
+	g( aes g bes ees, g)
+	f( g b g f g)
+	ees( g c ees g f)
+	ees( d c a! f ees)
+	d( f bes f bes d)
 % Bars 151 to 155
-	bes\fp bes' bes
-	bes, bes' bes
-	bes, bes' bes
-	ees, bes' bes
-	g,-\dimmarkup g' g
+	\mmrPos #8 R4.
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #6 R
 % Bars 156 to 160
-	c, g' g
-	f, f' f
-	bes, f' f
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R \partCombineAutomatic
 	R4.*4
 % Bars 161 to 165
 	
 	\mark \default
 	R4.*2
 	
-	f,8\pp r r
+	ees,8\pp r r
 % Bars 166 to 170
-	bes r r
+	d r r
 	f r r
-	bes r r
+	f r r
 	R4.*2
 	
 % Bars 171 to 175
-	d8-.\p bes-. d-.
+	f8-.\p d-. f-.
 	R4.*7
 % Bars 176 to 180
 	
 	
 	
-	g8->\fp[ r c,-.]
-	f-.[\> r f-.]\!
+	\partCombineApart R4.*3
+	
 % Bars 181 to 185
-	bes,\p r r
+	\partCombineAutomatic
 	f8\ff r r
-	\startVoltaI bes8 r r
-	R4.*8
-	
+	\startVoltaI \partCombineApart bes4.\fp(~
+	bes\pp~
+	bes4 f8
 % Bars 186 to 190
-	
+	bes) r r
+	ces4( ges8
+	ces8) r r
+	c![ r c](
+	ees)[ r ees](
 % Bars 191 to 195
-	
+	aes)\pp r r \partCombineAutomatic
 	R4.*3
 	
 	\section
-	\startVoltaII bes8\f r r \section \endVolta
+	\startVoltaII bes,8\f r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
 		\sectionLabel "TRIO" \time 3/8 \key des \major R4.*5
 % Bars 201 to 205
-		R4.*9
+		\partCombineApart r8.-\crescmarkup des16-.\p des8-.
+		bes->[ r16 bes-. bes8-.]
+		c\mf r r
+		r8. c16-.\f\< c8-.\!
+		f,4\fz r8
 % Bars 206 to 210
-		
-		
-		
-		
-		r8 r g'\p-.
+		r8 r bes-.\mf\<
+		ees4\fz r8
+		r r aes,-.-\pdim
+		des4 r8 \partCombineAutomatic
+		r r des\p-.
 % Bars 211 to 215
-		aes4-- r8
-		r r aes,\pp
-		des,4 r8 \mark \default
+		des4-- r8
+		r r \once \partCombineApart aes,
+		des4 r8 \mark \default
 	}
 	\repeat volta 2 {
 		R4.*12
@@ -224,16 +236,16 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 221 to 225
 	
 % Bars 226 to 230
-		des'4\p r8
-		c4 r8
+		aes'4\p r8
+		a4 r8
 		bes4 r8
-		aes4 r8
-		des4-. r8
+		aes!4 r8
+		aes4-. r8
 % Bars 231 to 235
-		c4-. r8
+		a4-. r8
 		bes4-. r8
 		aes!4 r8
-		des4 r8
+		aes4 r8
 		R4.*7
 % Bars 236 to 240
 	
@@ -242,7 +254,7 @@ musicFagottoIIMvtIII = \relative c {
 		aes16(\f g f ees f g
 		aes g f ees f g)
 		aes( g f ees c bes)
-		r c( des ees f g)
+		\partCombineApart aes( c des ees f g) \partCombineAutomatic
 % Bars 246 to 250
 		aes( g f ees f g)
 		aes( g f e f g)
@@ -259,22 +271,22 @@ musicFagottoIIMvtIII = \relative c {
 	
 % Bars 261 to 265
 		
-		aes'8(\p c) bes-.
-		aes r r
+		c8(\p ees) des-.
+		c r r
 		R4.*2
 		
 % Bars 266 to 270
-		aes8(\pp c) bes-.
-		aes( c) bes-.
-		aes( c) bes-.
-		aes( c) bes-.
-		aes( c) bes-.
+		c8(\pp ees) des-.
+		c( ees) des-.
+		c( ees) des-.
+		c( ees) des-.
+		c( ees) des-.
 % Bars 271 to 275
-		aes r r
-		r8. aes16-.\pp aes8-.
-		aes4 r8
-		r8. aes16-. aes8-.
-		aes4 r8
+		c r r
+		r8. c16-.\pp c8-.
+		c4 r8
+		r8. c16-. c8-.
+		c4 r8
 % Bars 276 to 280
 		R4. \mark \default
 	}
@@ -284,43 +296,43 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	
-	r8 aes-.\p r
+	r8 des-.\p r
 % Bars 286 to 290
-	r aes-. r
+	r des-. r
+	r des-. r
+	r c-. r
+	r des-. r
 	r bes-. r
-	r aes-. r
-	r aes-. r
-	r f-. r
 % Bars 291 to 295
-	r ees-. r
-	r aes,-. r
-	des r r
+	r g-. r
+	r aes-. r
+	\once \partCombineApart des, r r
 	R4.*4
 	
 % Bars 296 to 300
 	
 	
-	f,4.-\pcresc(
-	bes)
+	f4.-\pcresc(
+	f)
 	ges!4(\f\> g8)\!
 % Bars 301 to 305
-	aes4.~\p
-	aes\>
-	des8\! r r
+	\partCombineApart aes4.(~
+	aes4 bes16 c) 
+	\once \stemDown \omitFlag des8 \partCombineAutomatic r r
 	R4.*3
 	
 % Bars 306 to 310
 	
-	R4.*8
-	
-	
-	
+	\partCombineApart f,4.(\pp
+	ees
+	f
+	ees)
 % Bars 311 to 315
-	
-	
-	
-	
-	r8. des16-.\brack\p\< des8-.\!
+	r8. des'16-.\p des8-.
+	des8. des16-. des8-.
+	des8 r r
+	r8. des16-\crescmarkup-. des8-.
+	des8. des16-. des8-. \partCombineAutomatic
 % Bars 316 to 320
 	des4\mf r8
 	r8. des16-\crescmarkup des8

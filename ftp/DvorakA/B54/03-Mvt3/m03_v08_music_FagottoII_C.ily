@@ -11,14 +11,14 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 1 to 5
 	r8 f,--(\pp f--
 	f--) r r
-	r f---\crescmarkup r
+	r f-- r
 	r f-- r
 	r f-- f--
 % Bars 6 to 10
 	r f\mf r
-	r f-\dimmarkup r
+	r f r
 	r f-.\p r
-	f-.-\dimmarkup[ r f-.]
+	f-.[ r f-.]
 	R4.*6
 % Bars 11 to 15
 	
@@ -103,7 +103,7 @@ musicFagottoIIMvtIII = \relative c {
 	g16(-> fis e dis e8)
 % Bars 106 to 110
 	a,-.\f c16( b c a
-	b8)-\crescmarkup d16( cis d b
+	b8) d16( cis d b
 	c!8) e16( dis e c
 	d!8)\f f16( e f e
 	d8)\< f16( e f e
@@ -250,7 +250,7 @@ musicFagottoIIMvtIII = \relative c {
 		aes( ges! f ees! f g)
 		aes8 e4->
 % Bars 251 to 255
-		f4-\dimmarkup g8
+		f4 g8
 		aes\> e4->
 		f g8\! \mark \default
 		aes\p r r
@@ -300,7 +300,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 296 to 300
 	
 	
-	f,4.-\pcresc(
+	f,4.(
 	bes)
 	ges!4(\f\> g8)\!
 % Bars 301 to 305
@@ -323,7 +323,7 @@ musicFagottoIIMvtIII = \relative c {
 	r8. des16-.\brack\p\< des8-.\!
 % Bars 316 to 320
 	des4\mf r8
-	r8. des16-\crescmarkup des8
+	r8. des16 des8
 	des8.\< des16 des8\!
 	des8.\f\< des16 des8
 	des8.\! f,16\ff f8
