@@ -25,7 +25,7 @@ musicCornoIMvtIII = \relative c {
 	
 	
 	
-	r8 des4\pp~
+	\partCombineApart r8 des4\pp~
 % Bars 16 to 20
 	des c8~\fermata \section
 	\time 3/8 c4.~
@@ -36,7 +36,7 @@ musicCornoIMvtIII = \relative c {
 	cis
 	d)
 	b!
-	c4~ c16 c
+	c4~ c16 c \partCombineAutomatic 
 	<< c4.~\fp\> {s8 s s\!}>>
 % Bars 26 to 30
 	c8\p c-. c-.
@@ -61,11 +61,11 @@ musicCornoIMvtIII = \relative c {
 	
 	
 	
-	d4.->\p~
+	\partCombineApart d4.->\p~
 % Bars 46 to 50
 	d
 	c~
-	c4 r8
+	c4 r8 \partCombineAutomatic
 	R4.*17
 % Bars 51 to 55
 	
@@ -91,7 +91,7 @@ musicCornoIMvtIII = \relative c {
 	e8-.\< e-. e-.\!
 % Bars 76 to 80
 	e4.->\fp
-	e8-.\mf b-. e-.
+	\partCombineApart e8-.\mf b-. e-. \partCombineAutomatic
 	R4.*5
 % Bars 81 to 85
 	
@@ -104,11 +104,11 @@ musicCornoIMvtIII = \relative c {
 	
 	
 	
-	b4->\fp b8~
+	\partCombineApart b4->\fp b8~
 	b4.
 % Bars 96 to 100
 	b4\fp b8->~
-	b4.
+	b4. \partCombineAutomatic
 	b\fz~
 	b~
 	b~
@@ -131,7 +131,7 @@ musicCornoIMvtIII = \relative c {
 	bes8-. g-. bes-.
 	d-. bes-. d-.
 % Bars 116 to 120
-	f8.-> d16 d8
+	\partCombineApart f8.-> d16 d8 \partCombineAutomatic
 	d4.~
 	d8 r r
 	R4.*8
@@ -172,11 +172,11 @@ musicCornoIMvtIII = \relative c {
 	d4 d8
 	ees4 ees8
 	d4 d8
-	c4 c8
+	\partCombineApart c4 c8
 % Bars 156 to 160
 	bes4 bes8
 	bes4 bes8
-	a4 a8
+	a4 a8 \partCombineAutomatic
 	R4.*4
 	
 % Bars 161 to 165
@@ -194,30 +194,30 @@ musicCornoIMvtIII = \relative c {
 	
 	
 	
-	f8-.\fp[ r d-.]
+	\partCombineApart f8-.\fp[ r d-.]
 	<< c4.\>~ {s8 s s\!}>>
 % Bars 181 to 185
-	c8\p r r
+	c8\p r r \partCombineAutomatic
 	c\ff r r
 	\startVoltaI c r r
 	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	ees4.\pp~
+	\partCombineApart ees4.\pp~
 	ees~
-	ees4 r8
+	ees4 r8 \partCombineAutomatic
 	R4. \section
 	\startVoltaII c8\ff r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
-		\time 3/8 \sectionLabel "TRIO" ees4.->\fp~
-		ees4 r8
+		\time 3/8 \sectionLabel "TRIO" \partCombineApart ees4.->\fp~
+		ees4 r8 \partCombineAutomatic
 		R4.*2
 		
-		ees4.->\fp
+		\partCombineApart ees4.->\fp
 % Bars 201 to 205
-		ees4 r8
+		ees4 r8 \partCombineAutomatic
 		R4.*2
 		
 		r8. d16-.\f\< d8-.\!
@@ -237,37 +237,37 @@ musicCornoIMvtIII = \relative c {
 		R4.*2
 		
 % Bars 216 to 220
-		r8. des16-.\p\< des8-.
-		des4->\! r8
+		\partCombineApart r8. des16-.\p\< des8-.
+		des4->\! r8 \partCombineAutomatic
 		R4.*4
 		
 		
 % Bars 221 to 225
 		
-		r8. des16-.\brack\p\< des8-.\!
-		des8->\mf r r
+		\partCombineApart r8. des16-.\brack\p\< des8-.\!
+		des8->\mf r r \partCombineAutomatic
 		R4.*3
 		
 % Bars 226 to 230
 		
-		r8. c16-.\pp c8-.
+		\partCombineApart r8. c16-.\pp c8-.
 		c4 r8
 		r8. ees16-. ees8-.
 		ees-.[ r16 c-. c8-.]
 % Bars 231 to 235
 		c4.
-		c8[ r16 c-. c8-.]
+		c8[ r16 c-. c8-.] \partCombineAutomatic
 		c( ees) des-.
 		c4 r8
-		ees4 r8
+		\partCombineApart ees4 r8 \partCombineAutomatic
 % Bars 236 to 240
 		R4.*2
 		
-		b!4.\p~
+		\partCombineApart b!4.\p~
 		b8[-\crescmarkup r16 b-. b8-.]
 		b4.\<
 % Bars 241 to 245
-		r8. bes16-. bes8-.\!
+		r8. bes16-. bes8-.\! \partCombineAutomatic
 		bes8[\ff r16 bes-. bes8-.]
 		bes4.->
 		bes8[ r16 bes-. bes8-.]
@@ -313,20 +313,20 @@ musicCornoIMvtIII = \relative c {
 	r c-. r
 	r c-. r
 % Bars 291 to 295
-	r bes-. bes,-.
-	ees r r
+	r \partCombineApart bes-. bes,-. 
+	ees \partCombineAutomatic r r
 	R4.*8
 % Bars 296 to 300
 	
 % Bars 301 to 305
-	r8. ees'16-.\p ees8-.
-	ees4.\>
-	c\pp(
-	bes
+	\partCombineApart r8. ees'16-.\p ees8-.
+	ees4.\> 
+	c(\!
+	\noteShift #0.9 \omitStem bes
 	c
 % Bars 306 to 310
-	bes
-	c8) r r
+	\noteShift #0.9 \omitStem bes
+	c8) \partCombineAutomatic r r
 	R4.*3
 	
 	
@@ -343,8 +343,8 @@ musicCornoIMvtIII = \relative c {
 	e8.\f\< e16 e8
 	e8.\! e16\ff e8
 % Bars 321 to 324
-	r8. c16-.\ff c8-.
-	c r r
+	r8. \partCombineApart c16-. c8-.
+	c \partCombineAutomatic r r
 	R4.*2
 	\section s8
 }

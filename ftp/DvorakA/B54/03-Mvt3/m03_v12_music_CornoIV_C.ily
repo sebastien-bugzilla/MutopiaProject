@@ -11,14 +11,14 @@ musicCornoIVMvtIII = \relative c {
 % Bars 1 to 5
 	r8 c--(\pp c--
 	c--) r r
-	r c---\crescmarkup r
+	r c-- r
 	r c-- r
 	r c-- c--
 % Bars 6 to 10
 	r c\mf r
-	r c-\dimmarkup r
+	r c r
 	r c-.\p r 
-	c-.[-\dimmarkup r c-.]
+	c-.[ r c-.]
 	R4.*3
 % Bars 11 to 15
 	
@@ -100,11 +100,11 @@ musicCornoIVMvtIII = \relative c {
 	
 	
 	
-	R4.*4
-	
+	\mmrPos #-9 R4.
+	\mmrPos #-9 R
 % Bars 101 to 105
-	
-	
+	\mmrPos #-9 R
+	\mmrPos #-9 R
 	R4.*10
 	
 	
@@ -136,14 +136,14 @@ musicCornoIVMvtIII = \relative c {
 	e4 e8
 	f8 r r
 % Bars 136 to 140
-	R4.*7
-	
-	
-	
-	
+	\mmrPos #-6 R4.
+	\mmrPos #-6 R
+	R
+	R
+	R
 % Bars 141 to 145
-	
-	
+	R
+	R
 	f4\ff f8
 	f4 f8
 	f4 f8
@@ -280,9 +280,13 @@ musicCornoIVMvtIII = \relative c {
 	
 	
 	
-	R4.*6
+	\mmrPos #-6 R4.
 % Bars 286 to 290
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 291 to 295
 	R4.*2
 	
@@ -294,7 +298,7 @@ musicCornoIVMvtIII = \relative c {
 	r8. g16-.\< g8-.
 	g4\! r8
 	r8. a!16-.\f a8-.
-	aes4\>-\dimmarkup aes8\!
+	aes4\> aes8\!
 % Bars 301 to 305
 	aes4.(\p
 	g4)(\> aes16 bes)\!

@@ -11,14 +11,14 @@ musicCornoIIMvtIII = \relative c {
 % Bars 1 to 5
 	r8 g''--(\pp g--
 	g--) r r
-	r g---\crescmarkup r
+	r g-- r
 	r g-- r
 	r g-- g--
 % Bars 6 to 10
 	r g\mf r
-	r g-\dimmarkup r
+	r g r
 	r g-.\p r 
-	g-.[-\dimmarkup r g-.]
+	g-.[ r g-.]
 	R4.*5
 % Bars 11 to 15
 	
@@ -27,7 +27,7 @@ musicCornoIIMvtIII = \relative c {
 	
 	R4.
 % Bars 16 to 20
-	R\fermata \section
+	R_\fermata \section
 	\time 3/8 R4.*7
 	
 	
@@ -87,7 +87,7 @@ musicCornoIIMvtIII = \relative c {
 	f8 f-. f-.
 	e4.->
 	g8-. g-. g-.
-	fis4.->-\fpcresc
+	fis4.->
 	a8-.\< a-. a-.\!
 % Bars 76 to 80
 	gis4.->\fp
@@ -225,7 +225,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 206 to 210
 		R4.*2
 		
-		r8 r ees,-.-\pdim
+		r8 r ees,-.
 		aes4 r8
 		R4.*4
 % Bars 211 to 215
@@ -279,7 +279,7 @@ musicCornoIIMvtIII = \relative c {
 		ees( g) f-.
 		ees[ r16 ees-. ees8-.]
 % Bars 251 to 255
-		ees(-\dimmarkup g) f-.
+		ees( g) f-.
 		ees[\> r16 ees-. ees8-.]
 		ees( g) f-.\! \mark \default
 		ees\p r r
@@ -321,12 +321,12 @@ musicCornoIIMvtIII = \relative c {
 % Bars 301 to 305
 	R4.*2
 	
-	aes4.\pp
-	aes
+	\stemUp aes4.\pp
+	\stemOffset #1 aes
 	aes
 % Bars 306 to 310
-	aes
-	aes8 r r
+	\stemOffset #1 aes
+	\omitFlag aes8 r r
 	R4.*3
 	
 	
@@ -334,16 +334,16 @@ musicCornoIIMvtIII = \relative c {
 	r8. c16-.\p c8-.
 	c8. c16-. c8-.
 	c r r
-	r8. c16-.-\crescmarkup c8-.
+	r8. c16-. c8-.
 	c8. c16-.\< c8-.\!
 % Bars 316 to 320
 	c4\mf r8
-	r8. c16-\crescmarkup c8
+	r8. c16 c8
 	c8.\< c16 c8\!
 	c8.\f\< c16 c8
 	c8.\! c16\ff c8
 % Bars 321 to 324
-	r8. c16-.\ff c8-.
+	r8. \stemDown c16-.\ff c8-.
 	c r r
 	R4.*2
 	\section s8

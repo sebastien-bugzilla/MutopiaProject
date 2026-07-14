@@ -55,6 +55,7 @@ fzbrackespres = \markup {\dynamic fz \bracket \with-true-dimensions \italic espr
 % dynamics fp
 %--------------------
 fpdim = \markup {\dynamic fp \italic dim.}
+fpcresc = \markup {\dynamic fp \italic cresc.}
 %--------------------
 % dynamics fpp
 %--------------------

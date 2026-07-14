@@ -353,5 +353,5 @@ musicClarinettoIIMvtIII = \relative c {
 	g8 r r
 	R4.*3
 	
-	\section \key ees \major s8
+	\section \key c \major s8
 }

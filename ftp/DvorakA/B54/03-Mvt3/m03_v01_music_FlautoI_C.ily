@@ -319,5 +319,5 @@ musicFlautoIMvtIII = \relative c {
 	f r r \partCombineAutomatic
 	R4.
 	\partCombineApart r8. f16-.\pp f8-.
-	f8 r r \partCombineAutomatic \section \key ees \major s8
+	f8 r r \partCombineAutomatic \section \key bes \major s8
 }

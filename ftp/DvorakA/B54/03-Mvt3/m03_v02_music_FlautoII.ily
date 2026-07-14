@@ -319,5 +319,5 @@ musicFlautoIIMvtIII = \relative c {
 	a r r
 	R4.
 	R4.*2
-	\section \key ees \major s8
+	\section \key bes \major s8
 }

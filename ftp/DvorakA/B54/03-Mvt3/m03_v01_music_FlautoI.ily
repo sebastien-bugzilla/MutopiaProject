@@ -315,5 +315,5 @@ musicFlautoIMvtIII = \relative c {
 	f r r
 	R4.
 	r8. f16-.\pp f8-.
-	f8 r r \section \key ees \major s8
+	f8 r r \section \key bes \major s8
 }
