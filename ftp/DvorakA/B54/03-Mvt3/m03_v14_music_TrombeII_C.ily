@@ -57,7 +57,7 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	r8 fis-.\mf r
-	r fis-.-\crescmarkup r
+	r fis-. r
 	r fis-. r
 % Bars 106 to 110
 	r b\f r
