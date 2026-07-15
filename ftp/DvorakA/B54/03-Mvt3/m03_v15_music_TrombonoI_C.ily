@@ -154,11 +154,11 @@ musicTrombonoIMvtIII = \relative c {
 		c4.~
 		c8[ r16 c-. c8-.]
 		c( ees) des-.
-		c r r
+		\partCombineApart c r r
 % Bars 251 to 255
 		R4.
 		c8 r r
-		R4. \mark \default
+		R4. \partCombineAutomatic \mark \default
 		c8\p r r
 		R4.*22
 % Bars 256 to 260

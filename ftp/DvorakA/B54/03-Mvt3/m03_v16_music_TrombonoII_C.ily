@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombonoIMvtIII = \relative c {
+musicTrombonoIIMvtIII = \relative c {
 	\clef alto
 	\key bes \major
 %	\transposition a
@@ -60,7 +60,7 @@ musicTrombonoIMvtIII = \relative c {
 % Bars 111 to 115
 	
 	
-	ees'8\f r r
+	c'8\f r r
 	R4.*13
 % Bars 116 to 120
 	
@@ -68,30 +68,30 @@ musicTrombonoIMvtIII = \relative c {
 	
 % Bars 126 to 130
 	\mark \default
-	bes4\f bes8
-	bes4 bes8
-	a4 a8
-	c4 c8
+	f,4\f f8
+	f4 f8
+	f4 f8
+	g4 g8
 % Bars 131 to 135
-	d4 d8
-	d4 d8
-	c4 c8
-	c4 c8
-	d r r
+	a4 a8
+	bes4 bes8
+	g4 g8
+	a4 f8
+	f r r
 % Bars 136 to 140
 	R4.*7
 % Bars 141 to 145
 	
 	
-	bes4->\ff bes8
-	bes4 bes8
-	bes4 bes8
+	f4->\ff f8
+	g4 g8
+	f4 f8
 % Bars 146 to 150
-	bes4 bes8
-	b4-> b8
-	c4-> c8
-	c4-> c8
-	bes4 bes8
+	g4 g8
+	g4-> g8
+	g4-> g8
+	f4-> f8
+	f4 f8
 % Bars 151 to 155
 	R4.*12
 % Bars 156 to 160
@@ -108,8 +108,8 @@ musicTrombonoIMvtIII = \relative c {
 	
 % Bars 181 to 185
 	
-	c8\ff r r
-	\startVoltaI d r r 
+	a8\ff r r
+	\startVoltaI f r r 
 	R4.*11
 % Bars 186 to 190
 	
@@ -118,7 +118,7 @@ musicTrombonoIMvtIII = \relative c {
 	
 	
 	\section
-	\startVoltaII d8\ff r r \section \endVolta
+	\startVoltaII f8\ff r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
 		\time 3/8 \key des \major \sectionLabel "TRIO" R4.*18
@@ -145,21 +145,21 @@ musicTrombonoIMvtIII = \relative c {
 	
 % Bars 241 to 245
 		
-		r8. ees16-.\ff ees8-.
-		ees4.->
-		r8. ees16-. ees8-.
-		ees( g) f-.
-% Bars 246 to 250
-		ees8[ r16 c-. c8-.]
-		c4.~
-		c8[ r16 c-. c8-.]
+		r8. c'16-.\ff c8-.
+		c4.->
+		r8. c16-. c8-.
 		c( ees) des-.
-		c r r
+% Bars 246 to 250
+		c8[ r16 aes-. aes8-.]
+		aes4.~
+		aes8[ r16 aes-. aes8-.]
+		aes( c) bes-.
+		aes e4->
 % Bars 251 to 255
-		R4.
-		c8 r r
-		R4. \mark \default
-		c8\p r r
+		f->-\dimmarkup g8
+		aes8\> e4->
+		f-> g8\! \mark \default
+		aes8\p r r
 		R4.*22
 % Bars 256 to 260
 	
@@ -180,19 +180,19 @@ musicTrombonoIMvtIII = \relative c {
 % Bars 291 to 295
 	
 	
-	aes4.\pp
-	r8 des4
-	des4.
+	f4.\pp
+	r8 aes4
+	ges4.
 % Bars 296 to 300
-	r8 c4
-	c4.->\pp\<
-	<< a-> {s8 s s\!}>>
-	bes4.->\fz
-	bes4->(-\dimmarkup\> bes8
+	r8 ees4
+	f4.->\pp\<
+	<< ees-> {s8 s s\!}>>
+	d4.->\fz
+	des!4->(\> ees8
 % Bars 301 to 305
-	aes!4)\p r8
-	aes4\pp\> aes8-.
-	aes-.\! r r
+	f4)\p r8
+	ges4\pp\> ges8-.
+	f-.\! r r
 	R4.*16
 % Bars 306 to 310
 	
@@ -203,9 +203,9 @@ musicTrombonoIMvtIII = \relative c {
 	
 	
 	
-	r8. ees'16-.\ff ees8-.
+	r8. c'16-.\ff c8-.
 % Bars 321 to 324
-	ees8 r r
+	c8 r r
 	R4.*3
 	
 	\section \key bes \major s8
