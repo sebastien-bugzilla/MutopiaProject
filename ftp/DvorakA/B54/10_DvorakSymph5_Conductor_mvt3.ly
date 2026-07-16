@@ -126,12 +126,12 @@
 					}
 				>>
 			>>
-%			\new Staff {
-%				\timeMvtIII \nameStaffXMvtIII \musicTimpaniMvtIII
-%			}
-%			\new Staff {
-%				\timeMvtIII \nameStaffXIMvtIII \musicTriangoloMvtIII
-%			}
+			\new Staff {
+				\timeMvtIII \nameStaffXMvtIII \musicTimpaniMvtIII
+			}
+			\new RhythmicStaff {
+				\timeMvtIII \nameStaffXIMvtIII \musicTriangoloMvtIII
+			}
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
 %					\new Staff {

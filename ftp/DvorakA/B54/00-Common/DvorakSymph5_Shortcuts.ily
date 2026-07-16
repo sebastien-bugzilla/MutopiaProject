@@ -125,6 +125,8 @@ hmutainb = \markup {"H muta in B"}
 bmutainc = \markup {"B muta in C"}
 fmutaine = \markup {"F muta in E"}
 emutainf = \markup {"E muta in F"}
+mutainasdes = \markup {"muta in As, Des"}
+mutainbf = \markup {"muta in B, F"}
 
 timpinea = \markup {
 	\center-column {
@@ -149,6 +151,11 @@ timpinfb = \markup {
 timpinec = \markup {
 	\center-column {
 		\lower #1 "Timp." "in E C"
+	}
+}
+timpinasdes = \markup {
+	\center-column {
+		\lower #1 "Timp." "in As, Des"
 	}
 }
 
