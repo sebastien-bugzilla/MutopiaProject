@@ -48,6 +48,7 @@ fzmarcato = \markup {\dynamic fz \italic marcato}
 fbrackz = \markup {\concat { \dynamic f \bracket \with-true-dimensions \dynamic z}}
 fzcresc = \markup {\dynamic fz \italic cresc.}
 fzbrackespres = \markup {\dynamic fz \bracket \with-true-dimensions \italic espres.}
+fzpocoapococresc = \markup {\dynamic fz \italic "poco a poco cresc."}
 %--------------------
 % dynamics sfz
 %--------------------
