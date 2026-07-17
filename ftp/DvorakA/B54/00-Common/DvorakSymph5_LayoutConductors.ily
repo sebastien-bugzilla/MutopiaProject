@@ -44,7 +44,7 @@
 	}
 	\context {
 		\Staff
-%		\RemoveEmptyStaves
+		\RemoveEmptyStaves
 %		\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f
@@ -54,6 +54,11 @@
 		\override CueEndClef.font-size = #-1 
 		
 %		\override StaffSymbol.transparent = ##t
+	}
+	\context {
+		\RhythmicStaff
+		\RemoveEmptyStaves
+%		\RemoveAllEmptyStaves
 	}
 	\context {
 		\StaffGroup

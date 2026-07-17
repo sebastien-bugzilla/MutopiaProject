@@ -132,15 +132,15 @@
 			\new RhythmicStaff {
 				\timeMvtIII \nameStaffXIMvtIII \musicTriangoloMvtIII
 			}
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
-%					\new Staff {
-%						\timeMvtIII \nameStaffXIIMvtIII \musicViolinoIMvtIII
-%					}
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
+					\new Staff {
+						\timeMvtIII \nameStaffXIIMvtIII \musicViolinoIMvtIII
+					}
 %					\new Staff {
 %						\timeMvtIII \nameStaffXIIIMvtIII \musicViolinoIIMvtIII
 %					}
-%				>>
+				>>
 %				\new Staff {
 %					\timeMvtIII \nameStaffXIVMvtIII \musicViolaMvtIII
 %				}
@@ -150,7 +150,7 @@
 %				\new Staff {
 %					\timeMvtIII \nameStaffXVIMvtIII \musicContrabassoMvtIII
 %				}
-%			>>
+			>>
 		>>
 		\header {
 			breakbefore = ##t

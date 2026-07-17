@@ -16,6 +16,7 @@ pplegato = \markup {\dynamic pp \italic legato}
 ppdolente = \markup {\dynamic pp \italic dolente}
 ppdolce = \markup {\dynamic pp \italic dolce}
 ppdolceD = #(make-dynamic-script (markup #:normal-text ppdolce))
+ppdim = \markup {\dynamic pp \italic dim.}
 %--------------------
 % dynamics p
 %--------------------
@@ -91,6 +92,7 @@ ffzD = #(make-dynamic-script (markup #:normal-text ffz))
 crescmarkup = \markup {\italic cresc.}
 crescD = #(make-dynamic-script (markup #:normal-text crescmarkup))
 dimmarkup = \markup {\italic dim.}
+dimD = #(make-dynamic-script (markup #:normal-text dimmarkup))
 crescmolto = \markup {\italic "cresc. molto"}
 pocoapocodim = \markup {\italic "poco a poco dim."}
 dimin = \markup {\italic dimin.}
@@ -113,6 +115,7 @@ arco = \markup {\italic arco}
 espress = \markup {\italic espress.}
 secco = \markup {\italic secco}
 divisi = \markup {\italic divisi}
+stacc = \markup {\italic stacc.}
 %--------------------
 % instrument modification
 %--------------------
