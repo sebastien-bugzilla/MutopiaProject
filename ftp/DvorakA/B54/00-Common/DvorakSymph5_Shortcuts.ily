@@ -35,6 +35,10 @@ pmoltocresc = \markup { \dynamic p \italic "molto cresc."}
 %--------------------
 mpcresc = \markup {\dynamic mp \italic cresc.}
 %--------------------
+% dynamics mfp
+%--------------------
+mfp = #(make-dynamic-script "mfp")
+%--------------------
 % dynamics mf
 %--------------------
 mfcresc = \markup {\dynamic mf \italic cresc.}
@@ -71,6 +75,7 @@ piufD = #(make-dynamic-script (markup #:normal-text piuf))
 fcresc = \markup {\dynamic f \italic cresc.}
 fmarkup = \markup {\dynamic f}
 fpesante = \markup {\dynamic f \italic pesante}
+fmarc = \markup {\dynamic f \italic marc.}
 %--------------------
 % dynamics ff
 %--------------------
