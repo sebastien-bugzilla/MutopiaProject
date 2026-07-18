@@ -30,6 +30,7 @@ pmoltoespress = \markup {\dynamic p \italic "molto espress."}
 pdolce = \markup {\dynamic p \italic dolce}
 pdolceD = #(make-dynamic-script (markup #:normal-text pdolce))
 pmoltocresc = \markup { \dynamic p \italic "molto cresc."}
+pbrackdim = \markup {\dynamic p \bracket \with-true-dimensions \italic dim.}
 %--------------------
 % dynamics mp
 %--------------------

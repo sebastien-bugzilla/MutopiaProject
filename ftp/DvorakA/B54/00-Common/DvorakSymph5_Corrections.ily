@@ -23,3 +23,8 @@ correctionMvtII = \markup {
 	% bar 13, Violin I
 	"In Mvt II, bar 13, for violino I the rhythm is not correct for the last beat. \rhythm {8[ 8 8. 16]} is replaced by \rhythm {8[ 8 16. 32]}. It is comforted by part score."
 }
+correctionMvtIII = \markup {
+	
+	% bar 274, violoncello
+	"In Mvt III, bar 274, for violoncello & contrabasso, the rest is replaced by a half rest."
+}
