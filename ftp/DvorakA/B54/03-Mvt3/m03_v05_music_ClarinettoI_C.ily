@@ -234,7 +234,7 @@ musicClarinettoIMvtIII = \relative c {
 		r r e-.\mf\<
 		f4\fz r8
 		r r d-.-\pdim
-		e4 r8
+		ees4 r8
 		r r c-.\p
 % Bars 211 to 215
 		bes4-- r8

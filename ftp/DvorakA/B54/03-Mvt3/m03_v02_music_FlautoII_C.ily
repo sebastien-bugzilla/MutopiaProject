@@ -185,7 +185,7 @@ musicFlautoIIMvtIII = \relative c {
 	\startVoltaII bes8\ff r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
-		\key des \major \time 3/8 \sectionLabel "TRIO" a4.->\fp
+		\key des \major \time 3/8 \sectionLabel "TRIO" aes4.->\fp
 		des,8.-> des16-. des8-.
 		des4 r8
 		r r aes'
