@@ -35,7 +35,7 @@ musicFlautoIMvtIV = \relative c {
 % Bars 21 to 25
 	e, e' r e
 	e,8-. fis-. gis-. a-. b-. c-. d-. dis-.
-	e-.\f e-.\p e,-. e'-. e,-. e'-. e,-. e'-.
+	\partCombineApart e-.\f e-.\p e,-. e'-. e,-. e'-. e,-. e'-. \partCombineAutomatic
 	a,-.\brack\p c-. a-. c-.a-. c-. a-. c-.
 	e,-. c'-. a-. c-. a-. c-. a-. c-.
 % Bars 26 to 30
@@ -54,7 +54,7 @@ musicFlautoIMvtIV = \relative c {
 	
 	
 	
-	g,2.->\fp r4
+	\partCombineApart g,2.->\fp r4
 	g2.->-\dimmarkup r4
 % Bars 41 to 45
 	g2.-> r4
@@ -65,7 +65,7 @@ musicFlautoIMvtIV = \relative c {
 % Bars 46 to 50
 	r g
 	r g
-	r g
+	r g \partCombineAutomatic
 	R1*4
 	
 % Bars 51 to 55
@@ -92,20 +92,20 @@ musicFlautoIMvtIV = \relative c {
 	
 	e,8-.\f\< f-. g-. a-. bes-. c-. d-. e-.\!
 % Bars 71 to 75
-	f,4(\ff f'~ f8 e16 d) cis8-.( d-.)
-	a4( a'~ a8 g16 f) e8(-. f-.)
+	\partCombineApart f,4( f'~ f8 e16 d) cis8-.( d-.)
+	a4( a'~ a8 g16 f) e8(-. f-.) \partCombineAutomatic
 	a r a4->\fp r f-\dimmarkup
 	r c r g\p
-	f(\ff f'~ f8 e16 d) cis8(-. d-.)
+	\partCombineApart f( f'~ f8 e16 d) cis8(-. d-.)
 % Bars 76 to 80
-	a4( a'~ a8 g16 f) e8-.( f-.)
+	a4( a'~ a8 g16 f) e8-.( f-.) \partCombineAutomatic
 	a r a4\p r f
-	r ees-\dimmarkup r d--
-	r d\> r c
-	r a( g bes)\!
+	\partCombineApart r ees r d--
+	r d r c
+	r a( g bes) \partCombineAutomatic
 % Bars 81 to 85
-	r a'(-\pdim e f
-	b, c gis a)
+	r a'\(-\pdim e f
+	b, c gis a\)
 	a( bes! fis g
 	dis e c! des)
 	c r fis(\pp g
@@ -126,7 +126,7 @@ musicFlautoIMvtIV = \relative c {
 	
 	
 	
-	bes'2.\p bes4(
+	\partCombineApart bes'2.\p bes4(
 % Bars 106 to 110
 	beses2.) aes4
 	aes2(\< ges'4\f f~
@@ -140,16 +140,16 @@ musicFlautoIMvtIV = \relative c {
 	des2(\> ces)\!
 	bes2.(-\pdim bes4--)
 % Bars 116 to 120
-	bes2(\> aes4. ges8)\! \mark \default
+	bes2(\> aes4. ges8)\! \partCombineAutomatic \mark \default
 	des'2.\pp des4~
-	des des-.( bes-. des-.)
-	ges2.\< des4~
-	des bes-.( ges-. bes-.)\!
+	des \partCombineApart \stemDown des-.( \stemUp bes-. \stemDown des-.) 
+	ges2. des4~
+	des \stemUp bes-.( ges-. bes-.) \partCombineAutomatic
 % Bars 121 to 125
 	cis2.\fp\> cis4~
-	cis\! cis4-.(\< a-. cis-.)\! \section
+	cis\! \partCombineApart cis4-.( a-. cis-.) \partCombineAutomatic \section
 	\key f \major fis2.\fp cis4~
-	cis a(-.\> fis-. a-.)\!
+	cis \partCombineApart a(-. fis-. a-.) \partCombineAutomatic
 	gis2.\p gis4
 % Bars 126 to 130
 	eis2.-\dimmarkup eis4
@@ -179,11 +179,11 @@ musicFlautoIMvtIV = \relative c {
 	
 	r8. c16-.[\ff d8-. ees]-. a,8.[-> a16-. b8-. c-.]
 	fis, r r4 r2
-	r4 c'(~\fz c8 b16 a) gis8-. a-.
-	r4 ees'\fz(~ ees8 d16 c) b8-. c-.
+	r4 \partCombineApart c'(~ c8 b16 a) gis8-. a-. \partCombineAutomatic
+	r4 \partCombineApart ees'(~ ees8 d16 c) b8-. c-. \partCombineAutomatic
 % Bars 151 to 155
 	r8. g'16[-.\ff a8-. b]-. e,!8.[-> e16-. fis8-. g]-.
-	r8. e!16[-. fis8-. g]-. b,8.[-> b16-. dis8-. e]-.
+	r8. e!16[-. fis8-. g]-. \partCombineApart b,8.[-> b16-. dis8-. e]-. \partCombineAutomatic
 	R1*14
 % Bars 156 to 160
 	
@@ -197,14 +197,14 @@ musicFlautoIMvtIV = \relative c {
 % Bars 176 to 180
 	
 	ees2.\pp ees4~
-	ees ees-.(\< c-. ees-.)\!
+	ees \partCombineApart ees-.( c-. ees-.) \partCombineAutomatic
 	aes2.\fz\> ees4\p~
-	ees c-.(\> aes-. c-.)\!
+	ees \partCombineApart c-.( aes-. c-.) \partCombineAutomatic
 % Bars 181 to 185
 	ees2.\pp ees4~
 	ees ees-.(\< ces-. ees-.)\!
 	aes2.\fz ees4~
-	ees ces-.(\> aes-. ces-.)\!
+	ees \partCombineApart ces-.( aes-. ces-.) \partCombineAutomatic
 	bes2.-\dimmarkup bes4
 % Bars 186 to 190
 	g2. g4
@@ -217,10 +217,10 @@ musicFlautoIMvtIV = \relative c {
 	R1*3
 	
 	
-	cis'1\ff
+	\once \partCombineApart cis'1
 % Bars 196 to 200
 	r4 e-> r cis->
-	cis1->
+	\once \partCombineApart cis1->
 	r4 e-> r cis->
 	\cutBeamEachBeat cis8 r a'( g) g( f) f( e)
 	e( d) d( c!) c( bes) bes( a) \revertCutBeam
@@ -234,8 +234,8 @@ musicFlautoIMvtIV = \relative c {
 % Bars 211 to 215
 	
 	
-	r2 r4 r8 dis-.\f
-	e-. r r4 r f!8-.\ff r
+	r2 r4 r8 \partCombineApart dis-.
+	e-. \partCombineAutomatic r r4 r f!8-.\ff r
 	r2 r4 f8-. r
 % Bars 216 to 220
 	r2 r4 f8-. r
@@ -249,19 +249,19 @@ musicFlautoIMvtIV = \relative c {
 	
 % Bars 231 to 235
 	
-	b,1\p~
+	\partCombineApart b,1~
 	b~
 	b~
-	<< b\< {s4 s s s\!}>>
+	<< b {s4 s s s}>>
 % Bars 236 to 240
-	b1\pp
-	cis~
+	b1 \partCombineAutomatic
+	\partCombineApart cis~
 	cis
-	ees\pp~
+	ees~
 	ees
 % Bars 241 to 245
 	d(
-	c)
+	c) \partCombineAutomatic
 	c(
 	bes!)
 	r8 des-.\mf\< ges,-. aes-. bes4\! r
@@ -269,16 +269,16 @@ musicFlautoIMvtIV = \relative c {
 	R1
 	r8 g'!-.\mf c,!-. d!-. e!4-. r
 	r8 g-.\f c,-. d-. e4 r
-	r8 g16-.\mf g-. cis,8-. d-. e-. g,-. a-. bes-.
-	cis,-. r r4 r2 \mark \default
+	\partCombineApart r8 g16-.\mf g-. cis,8-. d-. e-. g,-. a-. bes-.
+	cis,-. r r4 d'2\rest \partCombineAutomatic \mark \default
 % Bars 251 to 255
 	R1*3
 	
 	
-	r2 a'\f~
+	r2 \partCombineApart a~
 	a4 g c2->\fz~
 % Bars 256 to 260
-	c8-\crescmarkup bes e4.-> d8 g4->
+	c8 bes e4.-> d8 g4-> \partCombineAutomatic
 	f,8(\ff a16 c f4~ f8) e16( d cis8-.) d-.
 	b8( c!16) r a8( bes!16) r gis8( a16) r fis8( g16) r
 	f!8( a16 c f4~ f8) e16( d cis8-.) d-.
@@ -293,21 +293,21 @@ musicFlautoIMvtIV = \relative c {
 	R1*6
 % Bars 271 to 275
 	
-	e,8-.\p\< f-. g-. a-. bes-. c-. d-. e-.\! \markk
-	f,4(\ff f'->~ f8) e16( d cis8 d)
-	c!4( a'->~ a8) g16( f e8 f)
+	\partCombineApart e,8-.\p\< f-. g-. a-. bes-. c-. d-. e-.\! \markk
+	f,4( f'->~ f8) e16( d cis8 d)
+	c!4( a'->~ a8) g16( f e8 f) \partCombineAutomatic
 	c'-. r a4-.\p r f-.
 % Bars 276 to 280
 	r c-. r g-.
-	f(\ff f'->~ f8) e16( d cis8 d)
-	c!4( a'->~ a8) g16( f e8 f)
+	\partCombineApart f( f'->~ f8) e16( d cis8 d)
+	c!4( a'->~ a8) g16( f e8 f) \partCombineAutomatic
 	c' r a4-.\p r f-.
-	r ees-. r d-.
+	\partCombineApart r ees-. r d-.
 % Bars 281 to 285
-	r d-.-\dimmarkup r c-.
+	r d-. r c-.
 	r a( g bes)
-	r a'(\p e f
-	b,-\dimmarkup c gis a)
+	r a'( e f
+	b, c gis a) \partCombineAutomatic
 	a( bes! fis g
 % Bars 286 to 290
 	dis e c des)
@@ -322,7 +322,7 @@ musicFlautoIMvtIV = \relative c {
 	
 	
 	
-	a'2.->\fp a4
+	\partCombineApart a'2.->\fp a4
 % Bars 301 to 305
 	aes2.\pp aes4
 	g2(\< d'4\! c
@@ -337,17 +337,17 @@ musicFlautoIMvtIV = \relative c {
 	ees)\< ees\!~
 % Bars 311 to 315
 	ees\> ees(\!
-	d)\p\< a4( c~\!
-	c\> bes a4. g8)\!
-	g2(\p c~
+	d)\p\< \stemDown a4( c~\!
+	c bes a4. \omitFlag g8)
+	\stemUp g2( c~
 	c) c
 % Bars 316 to 320
-	bes4 r r2
+	bes4 \partCombineAutomatic r r2
 	R1*5
 % Bars 321 to 325
 	\mark \default
-	r4 f\p r f
-	r f\< r g8( a)\!
+	r4 \once \partCombineApart f r \once \partCombineApart f
+	r \once \partCombineApart f r \partCombineApart g8( a) \partCombineAutomatic
 	bes2(\fz a\>
 	d, g)\!
 % Bars 326 to 330
@@ -366,12 +366,12 @@ musicFlautoIMvtIV = \relative c {
 	
 	\mark \default
 	c2.\pp c4~
-	c c-.(\< a-. c-.)\!
+	c \partCombineApart c-.( a-. c-.) \partCombineAutomatic
 	f2.->\fp c4~
 % Bars 341 to 345
-	c a-.(\> f-. a-.)\!
-	c2.\pp c4~
-	c\< c-.( aes-. c-.)\!
+	c \partCombineApart a-.( f-. a-.) \partCombineAutomatic
+	c2.\pp \partCombineApart \stemDown c4~
+	c \stemUp c-.( aes-. c-.) \partCombineAutomatic
 	f2.->\fp c4\>~
 	c aes-.( f-. aes-.)\!
 % Bars 346 to 350
@@ -382,16 +382,16 @@ musicFlautoIMvtIV = \relative c {
 	a'''1\pp~
 % Bars 351 to 355
 	a
-	<< a~\< {s4 s s s8 s\!}>>
-	<< a2\> {s8 s s s\!}>> r2
-	f1(\pp
-	g2.. a8)
+	\partCombineChords << a~\< {s4 s s s8 s\!}>>
+	<< a2\> {s8 s s s\!}>> \partCombineAutomatic r2
+	\partCombineApart f1(
+	g2.. a8) \partCombineAutomatic
 % Bars 356 to 360
 	a1\pp
 	f
 	c
-	a
-	f4 r r2
+	\partCombineApart a
+	f4 \partCombineAutomatic r r2
 % Bars 361 to 365
 	R1 \mark \default
 	R1*10
@@ -399,18 +399,18 @@ musicFlautoIMvtIV = \relative c {
 	
 % Bars 371 to 375
 	
-	c'8\f r r4 r r8 c-.
-	c-. r r4 r r8 c-.
-	c-. r c2-> d4->~
-	d e2-> f4->\ff~
+	\once \partCombineApart c'8 r r4 r r8 \once \partCombineApart c-.
+	\once \partCombineApart c-. r r4 r r8 \once \partCombineApart c-.
+	\once \partCombineApart c-. r \partCombineApart c2-> d4->~
+	d \partCombineAutomatic e2-> f4->\ff~
 % Bars 376 to 380
 	f1~
 	f4 r r2
 	R1
-	r2 d16(\f\< bes g a bes c d e)\! \mark \default
-	f8\f r f2.\p
+	\partCombineApart r2 d16(\f\< bes g a bes c d e)\! \mark \default
+	f8 \once \partCombineAutomatic r f2.
 % Bars 381 to 385
-	r4 f4.(->-\pocoapococresc e16 d cis8-.) d-.
+	\once \partCombineAutomatic r4 f4.(->-\pocoapococresc e16 d cis8-.) d-. \partCombineAutomatic
 	r4 a'4.(-> g16 f e8-.) f-.
 	r4 a4.(-> g16 f e8-.) f-.
 	r8 g16(\f f e8-.) f-. r g16( f e8-.) f-.
@@ -426,7 +426,7 @@ musicFlautoIMvtIV = \relative c {
 	d8 r d2-> e4
 	f, f'4.->( e16 d cis8 d-.)
 	c!4 a'4.->( g16 f e8 f-.)
-	c4 a' r g
+	\once \partCombineAutomatic c4 a' r g
 % Bars 396 to 400
 	r fis r e
 	r g r fis
@@ -435,7 +435,7 @@ musicFlautoIMvtIV = \relative c {
 	r e r f
 % Bars 401 to 405
 	r8 e r ees r d r des
-	r c-.\f\< b-. c-. cis-. d-. dis-. e-.\! \mark \default
+	\partCombineApart r c-. b-. c-. \stemDown cis-. d-. dis-. e-. \partCombineAutomatic \mark \default
 	f1\ff~
 	f
 	a~
@@ -443,11 +443,11 @@ musicFlautoIMvtIV = \relative c {
 	a
 	f4-. r g-. r
 	a-. r g-. r
-	f-. r g-. r
+	\once \partCombineApart \stemUp f-. r g-. r
 	a-. r g-. r
 % Bars 411 to 415
-	f-. g-. f-. g-.
-	f-. g-. a-. c-.
+	\once \partCombineApart f-. g-. \once \partCombineApart f-. g-.
+	\once \partCombineApart f-. g-. a-. c-.
 	a r r2
 	a4 r r2
 	R1\fermata \fine

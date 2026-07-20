@@ -77,6 +77,36 @@ tempiMvtIII = {
 	\tempo "Tempo I."
 }
 tempiMvtIV = {
-	\tempo "Allegro molto"
+	\tempo \markup {
+		\concat {
+			"Allegro molto " 
+			\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+			" = 122"
+		}
+	}
+	s1*3
+	% bar 4
+	\tempo "rit."
+	s1
+	% bar 5
+	\tempo "a tempo"
+	s1*1 s2*1 s1*167
+	% bar 174
+	\tempo "ritard."
+	s1*3
+	% bar 177
+	\tempo "in tempo"
+	s1*18
+	% bar 195
+	\tempo "grandioso"
+	s1*24
+	% bar 219
+	\tempo "Poco meno mosso"
+	s1*4
+	% bar 223
+	\tempo "Quasi andante"
+	s1*5
+	% bar 228
+	\tempo "Tempo I."
 }
 

@@ -209,6 +209,21 @@ unSubdiviseBeam = {
 	}
 }
 
+cutBeamEachBeat = {
+	\set Voice.beamExceptions = #'()
+	\set Voice.beatBase = #1/4
+	\set Voice.beatStructure = 1,1,1,1
+}
+revertCutBeam = {
+	\set Voice.beatBase = #1/2
+	\set Voice.beatStructure = 1,1
+	\set Voice.beamExceptions = \beamExceptions {
+		8[ 16 16] 8[ 8] 8[ 16 16] 8[ 8] |
+		8[ 16 16] 8[ 16 16] 8[ 16 16] 8[ 16 16] 
+	}
+}
+
+
 omitBeam = \once \omit Beam
 omitTupletNumber = \once \omit Voice.TupletNumber
 omitFlag = \once \omit Flag

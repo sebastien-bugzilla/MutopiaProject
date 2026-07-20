@@ -39,8 +39,8 @@ musicFlautoIIMvtIV = \relative c {
 	e,8-.\brack\p a-. e-. a-. e-. a-. e-. a-.
 	c,-. e-. e-. a-. e-. a-. e-. a-.
 % Bars 26 to 30
-	ees-. aes-. ees-. a-. ees-. a-. ees-. a-.
-	g-. bes-.-\crescmarkup a-. c-. g-. bes-. fis-. a-.
+	ees-. aes!-. ees-. a!-. ees-. a-. ees-. a-.
+	g-. bes!-. a-. c-. g-. bes-. fis-. a-.
 	g4\f( g'->~\fz g8 f!16 ees) d8-. ees-.
 	cis-. d-. r d-. r d-. r d-.
 	R1*5
@@ -67,7 +67,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 51 to 55
 	
 	
-	r4 g,-^-\fcresc r a-^
+	r4 g,-^ r a-^
 	r8 bes-^ r c-^ r d-^ r e-^ \mark \default
 	f\ff a,16( c f4~ f8) e16( d cis8-.) d-.
 % Bars 56 to 60
@@ -90,7 +90,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 71 to 75
 	f,2->\ff a->
 	a-> b->
-	f'8 r c4->\fp r a-\dimmarkup
+	f'8 r c4->\fp r a
 	r a r e\p
 	f2->\ff a->
 % Bars 76 to 80
@@ -100,8 +100,8 @@ musicFlautoIIMvtIV = \relative c {
 	a(\> bes! fis g!
 	dis e d e)\!
 % Bars 81 to 85
-	r c'(-\pdim gis a
-	b c gis a)
+	r c'\( gis a
+	b c gis a\)
 	a( bes! fis g
 	dis e c! des)
 	c r dis(\pp e
@@ -130,7 +130,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 116 to 120
 	\mark \default
 	bes'2.\pp bes4~
-	bes bes-.( bes-. bes-.)
+	bes bes( bes-. bes)
 	bes2.\< bes4~
 	bes bes-.( bes-. bes-.)\!
 % Bars 121 to 125
@@ -140,7 +140,7 @@ musicFlautoIIMvtIV = \relative c {
 	a fis(-.\> fis-. fis-.)\!
 	eis2.\p eis4
 % Bars 126 to 130
-	d!2.-\dimmarkup d4
+	d!2. d4
 	d2.\pp d4
 	cis2. cis4
 	b2. b4
@@ -193,7 +193,7 @@ musicFlautoIIMvtIV = \relative c {
 	aes aes-.(\< aes-. aes-.)\!
 	aes2.\fz aes4~
 	aes aes-.(\> aes-. aes-.)\!
-	g2.-\dimmarkup g4
+	g2. g4
 % Bars 186 to 190
 	fes2. fes4
 	des2.\pp des4
@@ -321,8 +321,8 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 311 to 315
 	
-	r2 fis4(\p\< a\!~
-	a\> g f!4. e8)\!
+	r2 fis4\p\< a\!~
+	a\> g \dotsPosition #2 f!4. e8\!
 	e2(\p c'~
 	c) c
 % Bars 316 to 320
@@ -394,7 +394,7 @@ musicFlautoIIMvtIV = \relative c {
 	bes16(\f\< g e f g a bes c)\! d8 r r4 \mark \default
 	f8\f r f4.(\p e16 d cis8-.) d-.
 % Bars 381 to 385
-	r4 f2.-\pocoapococresc 
+	r4 f2. 
 	r4 a4.(-> g16 f e8-.) f-.
 	r4 a4.(-> g16 f e8-.) f-.
 	r8 g16(\f f e8-.) f-. r g16( f e8-.) f-.
@@ -419,7 +419,7 @@ musicFlautoIIMvtIV = \relative c {
 	r c' r d
 % Bars 401 to 405
 	r8 c r c r bes r bes
-	r c-.\f\< b-. c-. bes-. bes-. bes-. bes-.\! \mark \default
+	r c-.\f\< b-. c-. \noteShift #-1 \omitStem \omitBeam bes bes bes bes\! \mark \default
 	a1\ff~
 	a
 	f'~
