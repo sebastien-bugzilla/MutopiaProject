@@ -31,10 +31,12 @@ pdolce = \markup {\dynamic p \italic dolce}
 pdolceD = #(make-dynamic-script (markup #:normal-text pdolce))
 pmoltocresc = \markup { \dynamic p \italic "molto cresc."}
 pbrackdim = \markup {\dynamic p \bracket \with-true-dimensions \italic dim.}
+brackpcresc = \markup {\bracket \with-true-dimensions {\dynamic p \italic cresc.}}
 %--------------------
 % dynamics mp
 %--------------------
 mpcresc = \markup {\dynamic mp \italic cresc.}
+mpespressivo = \markup {\dynamic mp \italic espressivo}
 %--------------------
 % dynamics mfp
 %--------------------
@@ -55,9 +57,9 @@ fzcresc = \markup {\dynamic fz \italic cresc.}
 fzbrackespres = \markup {\dynamic fz \bracket \with-true-dimensions \italic espres.}
 fzpocoapococresc = \markup {\dynamic fz \italic "poco a poco cresc."}
 %--------------------
-% dynamics sfz
+% dynamics ffz
 %--------------------
-
+ffz = #(make-dynamic-script "ffz")
 %--------------------
 % dynamics fp
 %--------------------
@@ -77,6 +79,7 @@ fcresc = \markup {\dynamic f \italic cresc.}
 fmarkup = \markup {\dynamic f}
 fpesante = \markup {\dynamic f \italic pesante}
 fmarc = \markup {\dynamic f \italic marc.}
+sempref = \markup {\italic sempre \dynamic f}
 %--------------------
 % dynamics ff
 %--------------------
@@ -88,8 +91,6 @@ ffdim = \markup {\dynamic ff \italic dim.}
 %--------------------
 % dynamics ffz
 %--------------------
-ffz = \markup {\dynamic ffz}
-ffzD = #(make-dynamic-script (markup #:normal-text ffz))
 
 
 

@@ -350,7 +350,7 @@ musicVioloncelloMvtI = \relative c {
 	cis8. gis16-. e( gis cis e)
 	c!4->\fz c8.-> a16-.
 	c4-> r
-	b2\ffzD~
+	b2\ffz~
 	b8. gis16( b, dis gis b)
 % Bars 281 to 285
 	bes!4-> r
