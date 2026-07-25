@@ -138,6 +138,8 @@ fmutaine = \markup {"F muta in E"}
 emutainf = \markup {"E muta in F"}
 mutainasdes = \markup {"muta in As, Des"}
 mutainbf = \markup {"muta in B, F"}
+cliimutainclarinettobassob = \markup {"Cl.II. muta in Clarinetto basso B"}
+mutainclii = \markup {"muta in Cl.II."}
 
 timpinea = \markup {
 	\center-column {

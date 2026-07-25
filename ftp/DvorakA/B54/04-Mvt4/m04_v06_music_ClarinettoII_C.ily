@@ -28,20 +28,20 @@ musicClarinettoIIMvtIV = \relative c {
 	fis,-. fis'-. fis,-. fis'-.
 % Bars 16 to 20
 	r b,\ff~ b8 r r4
-	r b->-\fbrackz r2
-	r4 b->-\fbrackz r2
+	r b-> r2
+	r4 b-> r2
 	cis4-^ cis-^ d-^ cis-^
 	fis fis r fis
 % Bars 21 to 25
-	fis,8-> gis-> ais-> b-> cis-> d-> e-> eis->
+	fis,8-> gis-> ais!-> b-> cis!-> d-> e-> eis->
 	fis-. gis,-. ais-. b-. cis-. d-. e!-. eis-. 
-	fis r r4 r2
+	fis r r4 r2 
 	fis,8-.\p b-. fis-. b-. fis-. b-. fis-. b-.
 	d,-. fis-. fis-. b-. fis-. b-. fis-. b-.
 % Bars 26 to 30
-	f-. bes-. f-. b-. f-. b-. f-. b-.
-	a-. c!-.-\crescmarkup b-. d-. a-. c-. gis-. b-.
-	a4(\f a\fz~ a8 g!16 f) e8-. f-.
+	f-. bes!-. f-. b!-. f-. b-. f-. b-.
+	a-. c!-. b-. d-. a-. c-. gis-. b-.
+	a4\f a\fz~ a8 g!16 f e8-. f-.
 	dis-. e-. r c'-. r c-. r c-. 
 	r c-. r c-. r c-. r c-.
 % Bars 31 to 35
@@ -57,7 +57,7 @@ musicClarinettoIIMvtIV = \relative c {
 	c1->\fz
 	c->\fp
 % Bars 41 to 45
-	c->-\dimmarkup
+	c->
 	c->
 	R1
 	R1*3
@@ -95,7 +95,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 71 to 75
 	b2->\ff b->
 	d-> cis->
-	d8 r d4\fp r b-\dimmarkup
+	d8 r d4\fp r b
 	r b r fis\p
 	b2->\ff b->
 % Bars 76 to 80
@@ -153,7 +153,7 @@ musicClarinettoIIMvtIV = \relative c {
 	ces ces-.(\> ces-. ces-.)\!
 	cis2.\p cis4
 % Bars 126 to 130
-	ais2.-\dimmarkup ais4
+	ais2. ais4
 	g!2.\pp g4
 	g2. g4
 	g2. g4
@@ -179,7 +179,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 146 to 150
 	
 	r8. b16-.[\ff cis8-. d-.] gis,8.->[ gis16-. ais8-. b-.]
-	r8. eis,16-.[ fisis8-. gis-.] d! r r4
+	r8. eis,16-.[ fisis8-. gis!-.] d! r r4
 	R1*3
 	
 % Bars 151 to 155
@@ -191,24 +191,24 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 156 to 160
 	
 	r8. fis16-.[\mf g8.-> a16-.] eis4( fis)
-	r8. a16-.[-\crescmarkup b8.-> c16-.] gis4( a)
-	r8. c16-.[\mf d8-. ees-.] a,8.[-> a16-. b!8-. c-.]
-	f,8.[ f16-. g8-.-\dimmarkup a-.] gis4( a)
+	r8. a16-.[ b8.-> c16-.] gis4( a)
+	r8. c16-.[\mf d8-. ees!-.] a,8.[-> a16-. b!8-. c-.]
+	f,8.[ f16-. g8-. a-.] gis4( a)
 % Bars 161 to 165
-	gis(\p a-\dimmarkup gis a)
+	gis(\p a gis a)
 	gis(\pp a gis a)
 	b( c b c
-	b-\crescmarkup c b c)
+	b c b c)
 	b(\< c cis d\!
 % Bars 166 to 170
 	ees\f\> d cis c)\! \mark \default
 	bes(\f d) r8. bes16([\< c8.) d16-.]\!
 	a4(\> bes)\! r8. bes16([\< cis8. d16)]\!
-	b!4(\> c)\! r8. c16([\< d8. ees16)]\!
-	b!4( c) r8. c16[(\< d8. ees16)]\!
+	b!4(\> c)\! r8. c16([\< d8. ees!16)]\!
+	b!4( c) r8. c16[(\< d8. ees!16)]\!
 % Bars 171 to 175
-	d4(\mf f) r8. d16([\< ees8. f16)]\!
-	cis4(-\crescmarkup d) r8. d16[(\< ees8. f16)]\!
+	d4(\mf f!) r8. d16([\< ees8. f16)]\!
+	cis4( d) r8. d16[(\< ees8. f!16)]\!
 	g2.\fz ees4(~->
 	ees c2\> bes4)\!
 	bes1(\p
@@ -223,7 +223,7 @@ musicClarinettoIIMvtIV = \relative c {
 	bes bes(-.\< bes-. bes-.)\!
 	bes2.\fz bes4~
 	bes bes-.(\> bes-. bes-.)\!
-	ees2.-\dimmarkup ees4
+	ees2. ees4
 % Bars 186 to 190
 	c2. c4
 	a2.\pp a4
@@ -232,7 +232,7 @@ musicClarinettoIIMvtIV = \relative c {
 	a2. a4 \mark \default
 % Bars 191 to 195
 	c1\p~
-	c-\crescmarkup
+	c
 	c
 	<< c\f\< {s4 s s s\!}>>
 	fis!2\ff r
@@ -253,10 +253,10 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	
 	
-	r8. ais16\f b8-. cis-. fis, r r4
-	r8. ais16 b8-. cis-. fis, r r4
+	r8. ais16\f b8-. cis!-. fis, r r4
+	r8. ais16 b8-. cis!-. fis, r r4
 % Bars 216 to 220
-	r8. ais16 b8-. cis-. fis, r r4
+	r8. ais16 b8-. cis!-. fis, r r4
 	r d'!-.\ff d-. ees-.
 	ees r fes-. fes-.
 	d!8-. r r4 r2
@@ -290,16 +290,16 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	
 	
-	r4 aes\p r aes-\crescmarkup
+	r4 aes\p r aes
 % Bars 246 to 250
 	r b! r b
 	r a\mf r a
 	r a->\< r a->\!
 	r8 a16-.\mf a-. a8-. a-. a-. a-. a-. a-. 
-	r fis-.\f\> r fis-. r a-. r dis-.\! \mark \default
+	r fis-.\f\> r fis-. r a-. r dis!-.\! \mark \default
 % Bars 251 to 255
 	r4 b4\p r a
-	r b-\crescmarkup r c
+	r b r c
 	r d r e
 	r fis r b,\f
 	c2.-> b4
@@ -316,14 +316,14 @@ musicClarinettoIIMvtIV = \relative c {
 	a4.(\fz fis4 a fis8) \mark \default
 	a4 r r2
 % Bars 266 to 270
-	r8 c-.\ff gis-. a-. eis-. fis-. dis-. e-.
+	\revertCutBeam r8 c-.\ff gis-. a-. eis-. fis-. dis-. e-.
 	cis-. d!-. r4 r2
 	R1*4
 	
 	
 % Bars 271 to 275
 	
-	d8-.-\pcresc e-. fis-. g-. a-. b-. c-. d-. \markk
+	d8-. e-. fis-. g-. a-. b-. c-. d-. \markk
 	b2->\ff b->
 	d-> cis->
 	d8-. r b4-.\p r b-.
@@ -371,7 +371,7 @@ musicClarinettoIIMvtIV = \relative c {
 	r4 f\< r f8 f\!
 % Bars 311 to 315
 	r4 f\> r f8 f\!
-	r4 e(\p\< gis b~\!
+	r4 e(\p\< gis! b~\!
 	b\> a g!4. fis!8)\!
 	fis2( d'~
 	d) d
@@ -380,17 +380,17 @@ musicClarinettoIIMvtIV = \relative c {
 	e\> g fis4.\! e8)
 	d2.(\fz c4~
 	c2\> a4 g\!
-	fis2.)-\dimmarkup fis4\pp
+	fis2.) fis4\pp
 % Bars 321 to 325
 	e2( d) \mark \default
 	g4\pp g r fis
-	r f r a8(\< b)
-	e2\fz( f\>
-	e c)\!
+	r f r a8(\< b)\!
+	e2\fz \omitStem f\>
+	e \omitStem c\!
 % Bars 326 to 330
 	r4 b\pp r b
 	r d r d
-	r cis-\crescmarkup r cis
+	r cis r cis
 	r c! r c
 	<< {b2( c)} {s8\p\< s s s\! s\> s s s\!}>>
 % Bars 331 to 335
@@ -413,7 +413,7 @@ musicClarinettoIIMvtIV = \relative c {
 	bes bes-.( bes-. bes-.)\!
 % Bars 346 to 350
 	c1->\fp
-	c->-\dimmarkup
+	c->
 	a\pp
 	R
 	g'\pp~
@@ -437,7 +437,7 @@ musicClarinettoIIMvtIV = \relative c {
 	r4 b->(~ b8 a16 g) fis8-. g-.
 % Bars 366 to 370
 	r4 g(~\mf g8 fis16 e) dis8-. e-.
-	r4 b'(~-\crescmarkup b8 a16 g) fis8-. g-.
+	r4 b'(~ b8 a16 g) fis8-. g-.
 	R1
 	b8(\f a16 g fis8 g) r2
 	b8( a16 g fis8 g) r2
@@ -449,7 +449,7 @@ musicClarinettoIIMvtIV = \relative c {
 	b b2-> ais4->\ff~
 % Bars 376 to 380
 	ais1~
-	ais4 r fis2-\fbrackz~
+	ais4 r fis2~
 	fis4 r fis r
 	a r r2 \mark \default
 	g8\f r g'4.(\p fis16 e dis8-.) e-.

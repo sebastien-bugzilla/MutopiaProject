@@ -1,7 +1,7 @@
    157    426   5178 10_DvorakSymph5_Conductor_mvt1.ly
    162    438   5400 10_DvorakSymph5_Conductor_mvt2.ly
    161    429   5424 10_DvorakSymph5_Conductor_mvt3.ly
-   151    463   5087 10_DvorakSymph5_Conductor_mvt4.ly
+   152    461   5117 10_DvorakSymph5_Conductor_mvt4.ly
    243    565   5189 20_DvorakSymph5_Part01_Flauti.ly
    243    565   5089 20_DvorakSymph5_Part02_Oboi.ly
    243    565   5401 20_DvorakSymph5_Part03_Clarinetti.ly
@@ -43,7 +43,7 @@
    699   2359  19276 00-Common/DvorakSymph5_NameVoice.ily
     71    197   1702 00-Common/DvorakSymph5_PaperConductors.ily
     67    187   1607 00-Common/DvorakSymph5_PaperParts.ily
-   697   2238  16611 00-Common/DvorakSymph5_Shortcuts.ily
+   699   2253  16726 00-Common/DvorakSymph5_Shortcuts.ily
    112    330   1964 00-Common/DvorakSymph5_Tempi.ily
     34    157    945 00-Common/DvorakSymph5_timeMvt.ily
    501   1454   7374 01-Mvt1/m01_v01_music_FlautoI_C.ily
@@ -172,8 +172,10 @@
    478   1971   9339 04-Mvt4/m04_v03_music_OboeI.ily
    465   1714   7928 04-Mvt4/m04_v04_music_OboeII_C.ily
    465   1711   8008 04-Mvt4/m04_v04_music_OboeII.ily
-   177    469   2085 04-Mvt4/m04_v05_music_ClarinettoI.ily
-   177    469   2086 04-Mvt4/m04_v06_music_ClarinettoII.ily
+   495   1992  10629 04-Mvt4/m04_v05_music_ClarinettoI_C.ily
+   492   1885   9018 04-Mvt4/m04_v05_music_ClarinettoI.ily
+   498   1926   9095 04-Mvt4/m04_v06_music_ClarinettoII_C.ily
+   498   1923   9286 04-Mvt4/m04_v06_music_ClarinettoII.ily
    177    469   2080 04-Mvt4/m04_v07_music_FagottoI.ily
    177    469   2081 04-Mvt4/m04_v08_music_FagottoII.ily
    177    469   2080 04-Mvt4/m04_v09_music_CornoI.ily
@@ -191,4 +193,4 @@
    177    469   2077 04-Mvt4/m04_v22_music_Viola.ily
    177    469   2083 04-Mvt4/m04_v23_music_Violoncello.ily
    177    469   2083 04-Mvt4/m04_v24_music_Contrabasso.ily
- 53736 154677 847441 total
+ 55368 161478 881443 total
