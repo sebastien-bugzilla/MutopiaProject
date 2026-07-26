@@ -28,3 +28,8 @@ correctionMvtIII = \markup {
 	% bar 274, violoncello
 	"In Mvt III, bar 274, for violoncello & contrabasso, the rest is replaced by a half rest."
 }
+correctionMvtIV = \markup {
+	
+	% bar 165, Faggot I & II
+	"In Mvt IV, bar 165, a missing dot is added."
+}

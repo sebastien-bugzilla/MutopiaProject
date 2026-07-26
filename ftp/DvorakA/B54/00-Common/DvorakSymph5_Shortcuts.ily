@@ -56,6 +56,7 @@ fbrackz = \markup {\concat { \dynamic f \bracket \with-true-dimensions \dynamic 
 fzcresc = \markup {\dynamic fz \italic cresc.}
 fzbrackespres = \markup {\dynamic fz \bracket \with-true-dimensions \italic espres.}
 fzpocoapococresc = \markup {\dynamic fz \italic "poco a poco cresc."}
+fzdim = \markup {\dynamic fz \italic dim. }
 %--------------------
 % dynamics ffz
 %--------------------
@@ -88,6 +89,7 @@ ffmarc = \markup {\dynamic ff \italic marc.}
 ffmarcato = \markup {\dynamic ff \italic marcato}
 ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
 ffdim = \markup {\dynamic ff \italic dim.}
+ffmarcatosempre = \markup {\dynamic ff \italic "marcato sempre"}
 %--------------------
 % dynamics ffz
 %--------------------
