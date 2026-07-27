@@ -4,10 +4,10 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIMvtIV = \relative c {
+musicTrombeIIMvtIV = \relative c {
 	\clef treble
 	\key c \major
-	\transposition f
+	\transposition a
 % Bars 1 to 5
 	R1*5
 % Bars 6 to 10
@@ -17,17 +17,17 @@ musicTrombeIMvtIV = \relative c {
 	
 	
 	
-	r4 b''-.\f r b-.
+	r4 b'-.\f r b-.
 	r b-. r b-.
 % Bars 16 to 20
-	r b\ff~ b8 r r4
-	r b-\fbrackz r2
-	r4 b-\fbrackz r2
-	fis4-^ b-^ b-^ fis-^
-	b, b' r b
+	r e\ff~ e8 r r4
+	r e r2
+	r4 e r2
+	fis4-^ b,-^ b-^ fis'-^
+	b, b r b
 % Bars 21 to 25
-	b, b' r b
-	b,8-. b'-. b-. b-.  b-. b-. b-. b-.
+	b b r b
+	b8-. b-. b-. b-.  b-. b-. b-. b-.
 	b r r4 r2
 	R1
 	r4 g2.\p~
@@ -49,24 +49,24 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 46 to 50
 	
-	d,1\pp(~
-	d
-	b!4) r r2
+	bes1\pp(~
+	bes
+	gis4) r r2
 	R1*5
 % Bars 51 to 55
 	
 	
 	
 	\mark \default
-	g'2\ff a
+	e'2\ff f
 % Bars 56 to 60
 	R1
-	g2\ff a
+	e2\ff f
 	R1*3
 	
 	
 % Bars 61 to 65
-	fis2->\ff fis->
+	fis,2->\ff fis->
 	g4.-> \tuplet 3/2 8 {g16 g g} g4-> g->
 	g r r2
 	R1*5
@@ -75,16 +75,16 @@ musicTrombeIMvtIV = \relative c {
 	
 	
 	g8 r r4 r2
-	r8 g-.\f\< g-. g-.  g-. g-. g-. g-.\!
+	r8 g'-.\f\< g-. g-.  g-. g-. g-. g-.\!
 % Bars 71 to 75
-	c2->\ff e,->
-	e-> e->
-	g8 r r4 r2
+	e2->\ff c->
+	c-> c->
+	e8 r r4 r2
 	R1
-	c2->\ff e,->
+	e2->\ff c->
 % Bars 76 to 80
-	e-> e->
-	g8 r r4 r2
+	c-> c->
+	e8 r r4 r2
 	R1*15
 % Bars 81 to 85
 	
@@ -116,12 +116,12 @@ musicTrombeIMvtIV = \relative c {
 	
 	
 	g,8\f\< c16 ees g4~ g8 ees-. c-. ees-.\!
-	fis2-^\ff r
+	ees2-^\ff r
 % Bars 136 to 140
-	r4 a-^ r fis-^
-	fis2-^\ff r
-	r4 a-^ r fis-^
-	a8 r r4 r2
+	r4 d-^ r d-^
+	ees2-^\ff r
+	r4 d-^ r d-^
+	fis8 r r4 r2
 	R1*2
 % Bars 141 to 145
 	
@@ -165,12 +165,12 @@ musicTrombeIMvtIV = \relative c {
 	
 	
 	a,8-.\f d16-. f-. a4~ a8 f-. d-. f-.
-	aes2\ff r
+	f2\ff r
 % Bars 196 to 200
-	r4 b-> r gis->
-	gis2-> r
-	r4 b-> r gis->
-	b8 r r4 r2
+	r4 e-> r e->
+	f!2-> r
+	r4 e-> r e->
+	gis8 r r4 r2
 	R1
 % Bars 201 to 205
 	r4 b,->\ff c-> d->
@@ -185,13 +185,13 @@ musicTrombeIMvtIV = \relative c {
 	
 	
 	
-	b'8-.\f r r4 r g8-. r
-	r2 r4 g8-. r
+	b'8-.\f r r4 r ees,8-. r
+	r2 r4 ees8-. r
 % Bars 216 to 220
-	r2 r4 g8-. r
-	r4 g-.\ff g-. aes-.
-	aes8 r r4 a-. b!-.
-	b8-. r r4 r2
+	r2 r4 ees8-. r
+	r4 ees-.\ff ees-. ees-.
+	des8 r r4 fis-. b,!-.
+	e8-. r r4 r2
 	R1*26
 % Bars 221 to 225
 	
@@ -204,7 +204,7 @@ musicTrombeIMvtIV = \relative c {
 % Bars 241 to 245
 	
 % Bars 246 to 250
-	r4 b8-.\mf r e,-. r fis-. r
+	r4 b'8-.\mf r e,-. r fis-. r
 	g2\fz r4 r8. d16\<
 	g2\!-> r4 r8. d16
 	<< f1\>~ {s4 s s s\!}>>
@@ -213,29 +213,29 @@ musicTrombeIMvtIV = \relative c {
 	R1*6
 % Bars 256 to 260
 	
-	g2->\ff a->
+	e2->\ff f->
 	R1
-	g2-> a->
+	e2-> f->
 	R1*3
 % Bars 261 to 265
 	
 	
-	fis2->\ff^\solo fis->
+	fis,2->\ff fis->
 	g4.-> g16-. g-. g4-> g-> \mark \default
 	g4 r r2
 % Bars 266 to 270
 	R1*5
 % Bars 271 to 275
 	g4-. r r2
-	r8 g-.-\pcresc g-. g-.  g-. g-. g-. g-. \markk
-	c2->\ff e,->
-	e-> fis->
-	g8 r r4 r2
+	r8 g'-.-\pcresc g-. g-.  g-. g-. g-. g-. \markk
+	e2->\ff c->
+	c-> c->
+	e8 r r4 r2
 % Bars 276 to 280
 	R1
-	c2->\ff e,->
-	e-> fis->
-	g8 r r4 r2
+	e2->\ff c->
+	c-> c->
+	e8 r r4 r2
 	R1*24
 % Bars 281 to 285
 	
@@ -263,8 +263,8 @@ musicTrombeIMvtIV = \relative c {
 	
 	
 	
-	g1\pp
-	<< {g2 g~} {s8\< s s s\! s\> s s s\!}>>
+	R1
+	<< {g,2 g~} {s8\pp\< s s s\! s\> s s s\!}>>
 % Bars 331 to 335
 	g2 g\pp~
 	<< {g g~} {s8\< s s s\! s\> s s s\!}>>
@@ -284,8 +284,8 @@ musicTrombeIMvtIV = \relative c {
 % Bars 356 to 360
 	g1\pp~
 	g
-	e~
-	e
+	c~
+	c
 	R1*2
 % Bars 361 to 365
 	\mark \default
@@ -295,15 +295,15 @@ musicTrombeIMvtIV = \relative c {
 % Bars 371 to 375
 	
 % Bars 376 to 380
-	c'1\ff~
-	c4 r f,2-\fbrackz~
-	f4 r f r
-	f r r2 \mark \default
-	e8\f r r4 r2
+	c1\ff~
+	c4 r d2~
+	d4 r d r
+	d r r2 \mark \default
+	c8\f r r4 r2
 % Bars 381 to 385
 	R1*2
 	
-	r2 r4 a->\f
+	r2 r4 a'->\f
 	gis->\f a-> g-> a->
 	fis->-\crescmarkup a-> f-> aes->
 % Bars 386 to 390
@@ -313,10 +313,10 @@ musicTrombeIMvtIV = \relative c {
 	g r g2-> g8-. g-.
 	g-. r g-. g-. g-. r g-. g-.
 % Bars 391 to 395
-	g-. r g2-> a4->~
-	a a2-> b4
-	c2-> c->
-	g-> fis->
+	g-. r e2-> e4->~
+	e f2-> f4
+	e2-> e->
+	c-> c->
 	g4 r g r
 % Bars 396 to 400
 	g r g r
@@ -326,20 +326,20 @@ musicTrombeIMvtIV = \relative c {
 	g r g r
 % Bars 401 to 405
 	g r r2
-	r2 r4 r8 g\ff \mark \default
-	c8 r c4.-> c16-. g-. e8-. g-.
-	e r c'4.-> c16-. g-. e8-. g-.
-	e r e'4.-> e16-. d-. c8-. d-.
+	r2 r4 r8 g'\ff \mark \default
+	e8 r e4.-> e16-. d-. c8-. d-.
+	c r e4.-> e16-. d-. c8-. d-.
+	c r c'4.-> c16-. g-. e8-. g-.
 % Bars 406 to 410
-	c e16 d c8 d c e16 d c8 d
-	r c16 c g8 c g4 r
-	r8 c16 c g8 c g4 r
-	r8 c16 c g8 c g4 r
-	r8 c16 c g8 c g4 r
+	e c'16 g e8 g e c'16 g e8 g
+	r e16 e d8 e d4 r
+	r8 e16 e d8 e d4 r
+	r8 e16 e d8 e d4 r
+	r8 e16 e d8 e d4 r
 % Bars 411 to 415
 	g-. g-. g-. g-.
 	g-. g-. g-. g-.
 	g r r2
 	g4 r r2
-	c1\fermata \fine
+	e1\fermata \fine
 }
