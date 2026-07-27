@@ -48,6 +48,7 @@ mfcresc = \markup {\dynamic mf \italic cresc.}
 mfbrackespress = \markup {\dynamic mf \bracket \with-true-dimensions \italic espress.}
 mfespressivoedolente = \markup {\dynamic mf \italic "espressivo e dolente"}
 mfespress = \markup {\dynamic mf \italic espress.}
+mfmarkup = \markup {\dynamic mf}
 %--------------------
 % dynamics fz
 %--------------------
@@ -81,6 +82,7 @@ fmarkup = \markup {\dynamic f}
 fpesante = \markup {\dynamic f \italic pesante}
 fmarc = \markup {\dynamic f \italic marc.}
 sempref = \markup {\italic sempre \dynamic f}
+fdim = \markup {\dynamic f \italic dim.}
 %--------------------
 % dynamics ff
 %--------------------
@@ -90,6 +92,7 @@ ffmarcato = \markup {\dynamic ff \italic marcato}
 ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
 ffdim = \markup {\dynamic ff \italic dim.}
 ffmarcatosempre = \markup {\dynamic ff \italic "marcato sempre"}
+ffrinforz = \markup {\dynamic ff \italic rinforz.}
 %--------------------
 % dynamics ffz
 %--------------------

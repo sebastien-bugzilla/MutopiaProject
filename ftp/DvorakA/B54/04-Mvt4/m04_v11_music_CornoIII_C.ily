@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicCornoIVMvtIV = \relative c {
+musicCornoIIIMvtIV = \relative c {
 	\clef treble
 	\key c \major
 	\transposition f
@@ -13,24 +13,24 @@ musicCornoIVMvtIV = \relative c {
 	
 	
 	
-	d'1->\ff\>~
+	f'1->\ff\>~
 % Bars 6 to 10
-	\time 2/4 d4\! r
-	\timeMvtIV r8. a'16\mf a4-> r2
-	r8. a16 a4-> r2
+	\time 2/4 f4\! r
+	\timeMvtIV r8. \partCombineApart a16 a4-> \partCombineAutomatic r2
+	r8. \partCombineApart a16 a4-> \partCombineAutomatic r2
 	R1*3
 	
 % Bars 11 to 15
 	
-	r8. e16(\f a4) r8. g16( c4)
+	r8. b16(\f \once \stemUp c4) r8. d16( e4)
 	R1
 	b,4-.\f r b-. r
 	b-. r b-. r
 % Bars 16 to 20
-	r e\ff~ e8 r r4
-	r e-\fbrackz r2
-	r4 e-\fbrackz r2
-	cis4-^ d-^ e-^ fis-^
+	r b'\ff~ b8 r r4
+	r b-\fbrackz r2
+	r4 b-\fbrackz r2
+	e,4-^ fis-^ g-^ fis!-^
 	b, b r b
 % Bars 21 to 25
 	b b r b
@@ -54,30 +54,30 @@ musicCornoIVMvtIV = \relative c {
 	
 	
 	
-	R1*4
-	
+	\partCombineApart b!1\fz
+	bes\fp->
 % Bars 41 to 45
-	
-	
+	a->-\dimmarkup
+	g-> \partCombineAutomatic
 	R1*4
 	
 	
 % Bars 46 to 50
 	
-	g,1\pp
-	f
+	bes1\pp
+	bes
 	e,\pp~
 	e~-\pocoapococresc
 % Bars 51 to 55
 	e~
 	<< e {s4 s\< s s\!}>>
 	e1->\f~
-	<< e2.\< {s4 s s8 s\!}>> d'8-. g-. \mark \default
-	c,2\ff f
+	<< e2.\< {s4 s s8 s\!}>> \partCombineApart d8-. g-. \partCombineAutomatic \mark \default
+	g2\ff a
 % Bars 56 to 60
-	r8 g,-.\f r g-. r g-. r g-.
-	c2\ff f
-	r8 g,-.\f r g-. r g-. r g-.
+	r8 g-.\f r g-. r g-. r g-.
+	g2\ff a
+	r8 g-.\f r g-. r g-. r g-.
 	r8 g-. r g-. r g-. r g-.
 	r8 g-. r g-. r g-. r g-.
 % Bars 61 to 65
@@ -90,17 +90,17 @@ musicCornoIVMvtIV = \relative c {
 	
 	
 	
-	g1\fp
+	g,1\fp
 	r8 g'-.\f\< g-. g-. g-. g-. g-. g-.\!
 % Bars 71 to 75
-	g2->\ff a->
-	g-> fis->
-	g8 r g,4\fp r g-\dimmarkup
+	c2->\ff c->
+	\partCombineApart g-> fis->
+	g8 \partCombineAutomatic r g4\fp r g-\dimmarkup
 	r g r g
-	g'2->\ff a->
+	c2->\ff c->
 % Bars 76 to 80
-	g-> fis->
-	g,8 r r4 r g8-.\p g-.
+	\partCombineApart g-> fis-> \partCombineAutomatic
+	g8 r r4 r g8-.\p g-.
 	r2 r4 g8-. g-.
 	r2 r4 g8-.-\dimmarkup g-.
 	r2 r4 g8-. g-.
@@ -112,52 +112,56 @@ musicCornoIVMvtIV = \relative c {
 	c4 r r2
 % Bars 86 to 90
 	R1 \clef treble
-	R1*2
-	
+	\partCombineApart r2 c'4-\pp( c'
+	c2.~ c8) r \partCombineAutomatic
 	R1*4
 	
 % Bars 91 to 95
 	
 	\section \mark \default
 	R1
-	R1*8
-	
+	\partCombineApart aes4\pp r r aes8-.\< aes-.\!
+	g2 r4 g8-. g-.
 % Bars 96 to 100
-	
+	f2\fz r4 f8-. f-.
+	f2\p r4 f8-. f-.
+	ees2 r4 ees8-. ees-.
+	des2 r4 des8-. des-.
+	f2\fz r4 f\p(
 % Bars 101 to 105
-	
+	e!) r r2 \partCombineAutomatic
 	R1*3
 	
 	
-	r2 r4 des''8-.\pp des-.
+	r2 r4 aes8-.\pp aes-.
 % Bars 106 to 110
-	des4-. r r ees8-. ees-.
-	ees4-. r r ees8-. ees-.
-	e!4\fz r r e8-.\p e-.
-	ees4 r r ees8-. ees-.
-	c4 r r c8-. c-.
+	ges4-. r r g8-. g-.
+	aes4-. r r aes8-. aes-.
+	aes4\fz r r aes8-.\p aes-.
+	ges4 r r ges8-. ges-.
+	f4 r r f8-. f-.
 % Bars 111 to 115
-	bes4 r r bes8-.\< bes-.
-	c4\! r r c8-.\> c-.\!
-	des4 r r des8-. des-.
-	f4\p\> r r ees8-. ees-.\!
-	f4\pp r r f8-. f-.
+	ees4 r r ees8-.\< ees-.
+	ges4\! r r ges8-.\> ges-.\!
+	f4 r r f8-. f-.
+	aes4\p\> r r ges8-. ges-.\!
+	aes4\pp r r aes8-. aes-.
 % Bars 116 to 120
-	ees4 r r ees8-. ees-. \mark \default
-	f4 r r2
+	g!4 r r g8-. g-. \mark \default
+	aes4 r r2
 	R1*5
 	
 	
 % Bars 121 to 125
 	
 	\section
-	aes,2.\fp r4
+	aes2.\fp r4
 	R1*7
 	
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	c'2..->\ff c8
+	c2..->\ff c8
 	b!2..-> b8\<
 	c4.-> c8 b4.-> b8\!
 	<< c1-^\< {s4 s s s\!}>>
@@ -181,7 +185,7 @@ musicCornoIVMvtIV = \relative c {
 	
 	
 	\clef bass
-	<< bes,,1\fz\>~ {s4 s s s\!}>>
+	<< bes,1\fz\>~ {s4 s s s\!}>>
 	<< bes1~\p\> {s4 s s s\!}>>
 % Bars 161 to 165
 	bes1\pp \clef treble
@@ -202,14 +206,14 @@ musicCornoIVMvtIV = \relative c {
 	
 	
 	
-	bes2.\fz\> r4\!
+	\partCombineApart R1 \partCombineAutomatic
 	R1
 % Bars 181 to 185
-	bes2.\pp r4
+	\partCombineApart R1 \partCombineAutomatic
 	R1
-	bes2.-^\brack\fz r4
+	\partCombineApart R1 \partCombineAutomatic
 	R1
-	bes2-^\pp r
+	\partCombineApart R1 \partCombineAutomatic
 % Bars 186 to 190
 	R1*5
 	
@@ -217,7 +221,7 @@ musicCornoIVMvtIV = \relative c {
 	
 	\mark \default
 % Bars 191 to 195
-	d'2..->\f d8
+	d2..->\f d8
 	cis2..->-\crescmarkup cis8
 	d4-> cis-> d-> e->
 	d1->
@@ -232,27 +236,27 @@ musicCornoIVMvtIV = \relative c {
 	f-> r r2
 	r8 e-. e-. e-.  e-. e-. e-. e-.
 	a r r4 r2
-	r4 a-\fbrackz r2
-	r4 a-\fbrackz r2
+	r4 c-\fbrackz r2
+	r4 c-\fbrackz r2
 % Bars 206 to 210
-	r4 a-\fbrackz r2
+	r4 c-\fbrackz r2
 	R1*6
 % Bars 211 to 215
 	
 	
-	r2 r4 r8 ais-.\f
-	b-. r r4 r ees,8-. r
-	r2 r4 c8-. r
+	r2 r4 r8 \partCombineApart ais-.
+	b-. \partCombineAutomatic r r4 r g8-. r
+	r2 r4 g8-. r
 % Bars 216 to 220
-	r2 r4 c8-. r
-	r4 c-.\ff c-. c-.
-	cis8 r r4 cis-. dis-.
-	e8-. r e2.->\fz\>~
-	e1\p
+	r2 r4 g8-. r
+	r4 g-.\ff g-. ges-.
+	e!8 r r4 fis-. fis-.
+	\once \partCombineApart e8-. r g2.->\fz\>~
+	g1\p
 % Bars 221 to 225
-	r4 e2\pp r4
-	r e2 r4
-	r b2.\pp
+	r4 g2\pp r4
+	r g2 r4
+	r b,2.\pp
 	r4 b2.
 	r4 b2.
 % Bars 226 to 230
@@ -276,16 +280,16 @@ musicCornoIVMvtIV = \relative c {
 	
 	\mark \default
 % Bars 251 to 255
-	e,1\p~
+	e1\p~
 	<< e~ {s4 s-\crescmarkup s s}>>
 	e1~
 	e
 	e~
 % Bars 256 to 260
-	e2.-\crescmarkup d'8-. g-.
-	c,2->\ff c->
+	e2.-\crescmarkup \partCombineApart d8-. g-. \partCombineAutomatic
+	g2->\ff a->
 	R1
-	c2-> c->
+	g2-> a->
 	R1
 % Bars 261 to 265
 	r8 g\f r g r g r g
@@ -296,20 +300,20 @@ musicCornoIVMvtIV = \relative c {
 % Bars 266 to 270
 	R1*5
 % Bars 271 to 275
-	g1\fp
+	g,1\fp
 	r8 g-.-\pcresc g-. g-.  g-. g-. g-. g-. \markk
-	e'2->\ff a->
-	g-> fis->
-	g8 r g,4\p r g
+	c'2->\ff c->
+	c-> c->
+	c8 r g4\p r g
 % Bars 276 to 280
 	r g r g
-	e'2->\ff a->
-	g-> fis->
-	g,8 r r4 r2
-	g1\p~
+	c2->\ff c->
+	c-> c->
+	g8 r r4 r2
+	\partCombineApart R1*3
 % Bars 281 to 285
-	<< g~ {s4 s-\brackM\dimmarkup s s}>>
-	g1
+	
+	\partCombineAutomatic
 	r4 \clef bass c,,2.\pp~
 	c4 c2.~
 	c4 c2.~
@@ -318,37 +322,37 @@ musicCornoIVMvtIV = \relative c {
 	R1*5
 % Bars 291 to 295
 	
-	R1*3
-	
-	
-	a'''1->\fp~
+	\partCombineApart c''1\pp~
+	c2. a4
+	<< d1\< {s4 s s s\!}>>
+	c1->~
 % Bars 296 to 300
-	a4 r r2
-	R1*4
-	
-	
-	
+	c(
+	b)\pp
+	a~
+	a
+	e2\pp r \partCombineAutomatic
 % Bars 301 to 305
 	R1*3
 	
 	\mark \default
-	r4 c,\pp r c8 c
-	r4 d r f8 f
+	r4 f\pp r f8 f
+	r4 f r aes8 aes
 % Bars 306 to 310
-	r4 e\< r e8 e\!
-	r4 fis\fz\> r fis8 fis\!
-	r4 f!\pp r f8 f
-	r4 e r e8 e
-	r4 d\< r d8 d\!
+	r4 g\< r g8 g\!
+	r4 d'\fz\> r c8 c\!
+	r4 bes\pp r bes8 bes
+	r4 a r a8 a
+	r4 bes\< r bes8 bes\!
 % Bars 311 to 315
-	r4 e\> r e8 e\!
-	r4 cis\p r cis8 cis
-	r4 d r d8 d
-	r4 d r d8 d
-	r4 e r e8 e
+	r4 bes\> r bes8 bes\!
+	r4 e,\p r e8 e
+	r4 f r f8 f
+	r4 g r g8 g
+	r4 g r g8 g
 % Bars 316 to 320
-	R1*2
-	
+	\partCombineApart r4 d\p\> r d8 d
+	r4 d r d8 d\! \partCombineAutomatic
 	g,1\fp~
 	g~
 	g~
@@ -356,23 +360,23 @@ musicCornoIVMvtIV = \relative c {
 	g \mark \default
 	R1*4
 % Bars 326 to 330
-	r4 \clef bass c,,\pp r c
+	r4 \clef bass c,\pp r c
 	r c r c
 	r c-\crescmarkup r c
 	r c r c \clef treble
-	<< c''1 {s8\< s s s\! s\> s s s\!}>>
+	<< g''1 {s8\< s s s\! s\> s s s\!}>>
 % Bars 331 to 335
-	c1\pp
-	<< c1 {s8\< s s s\! s\> s s s\!}>>
-	c1\pp
-	e2(\pp f
-	e f)
+	g1\pp
+	<< g1 {s8\< s s s\! s\> s s s\!}>>
+	g1\pp
+	\partCombineApart g2 g~
+	g g~
 % Bars 336 to 340
-	e4( f2) f4(
-	e f2) f4( \mark \default
-	c2.)\pp c4~
-	c c-.(\< c-. c-.)\!
-	c2.\fp r4
+	g4 g2 g4~
+	g g2 g4 \mark \default
+	g2. \partCombineAutomatic g4~
+	g g-.(\< g-. g-.)\!
+	g2.\fp r4
 % Bars 341 to 345
 	R1
 	g2.\pp g4~
@@ -383,22 +387,22 @@ musicCornoIVMvtIV = \relative c {
 	g r r2
 	R1*2
 	
-	g1\pp \clef bass
-	c,,\pp~
+	\once \partCombineApart g,1 \clef bass
+	c,\pp~
 % Bars 351 to 355
 	c
-	<< c\<~ {s4 s s s\!}>>
-	<< c2\> {s8 s s s\!}>> r2 \clef treble
-	a'''1\pp
-	g
+	\partCombineChords << c\<~ {s4 s s s\!}>>
+	<< c2\> {s8 s s s\!}>> \partCombineAutomatic r2 \clef treble
+	\partCombineApart R1
+	d''\brack\pp \partCombineAutomatic
 % Bars 356 to 360
-	c,1\pp~
-	c
-	c~
-	c
-	R1
+	g,1\pp~
+	g
+	g~
+	g
+	R1 
 % Bars 361 to 365
-	R \mark \default
+	\partCombineApart g\pp \partCombineAutomatic \mark \default
 	r4 \clef bass c,,2.\pp~
 	c8 r c2.~-\pocoapococresc
 	c8 r c2.~->
@@ -406,21 +410,21 @@ musicCornoIVMvtIV = \relative c {
 % Bars 366 to 370
 	c8 r c2.~->
 	c8 r c2.->
-	r4 \clef treble c''\brack\f r2
-	r4 c r2
-	r4 c r2
+	r4 \clef treble e'\brack\f r2
+	r4 e r2
+	r4 e r2
 % Bars 371 to 375
-	r8 c r4 r8 c r4
-	c8\f r r4 r r8 g-.
-	e'-. r r4 r r8 g,-.
-	g r e'2-> e4->~
-	e g2-> a4->~\ff
+	r8 e r4 r8 e r4
+	e8\f r r4 r r8 g-.
+	g-. r r4 r r8 g-.
+	g r g2-> a4->~
+	a b2-> c4->~\ff
 % Bars 376 to 380
-	a1~
-	a4 r aes2-\fbrackz~
-	aes4 r g r
-	g r r2 \mark \default
-	g8\f r c4(\p gis a)
+	c1~
+	c4 r b2-\fbrackz~
+	b4 r b r
+	b r r2 \mark \default
+	c8\f r c4(\p gis a)
 % Bars 381 to 385
 	r c(-\crescmarkup gis a)
 	r c(\mf gis a)
@@ -430,15 +434,15 @@ musicCornoIVMvtIV = \relative c {
 % Bars 386 to 390
 	e-> g-> d-> f->
 	c-> e-> b8-. d-. a-. c-.
-	g r e'4.\ff r8 e-. g-.
-	e r e4.-> r8 e-. g-.
-	e-. r e-. g-. e-. r e-. g-.
+	g r g'4.\ff r8 \partCombineApart g-. g-. \partCombineAutomatic
+	g r g4.-> r8 \partCombineApart g-. g-.
+	g-. \once \partCombineAutomatic r g-. g-. g-. \once \partCombineAutomatic r g-. g-. \partCombineAutomatic
 % Bars 391 to 395
-	e-. r e2-> e4->~
-	e f2-> g4
-	e2-> a->
-	g-> fis->
-	r4 g,-> r a->
+	g-. r g2-> a4->~
+	a a2-> b4
+	c2-> c->
+	c-> c->
+	r4 g-> r a->
 % Bars 396 to 400
 	r bes-> r b->
 	r a-> r bes->
@@ -447,13 +451,13 @@ musicCornoIVMvtIV = \relative c {
 	r d-> r ees->
 % Bars 401 to 405
 	r8 d r cis r d r b
-	r4 g'8-.\f\< g-. d-. d-. d-. d-.\! \mark \default
-	c1\ff~
-	c
-	c~
+	r4 \partCombineApart g8-. g-. f f f f \partCombineAutomatic \mark \default
+	g1\ff~
+	g
+	g~
 % Bars 406 to 410
-	c~
-	c4 r g-. r
+	g~
+	g4 r g-. r
 	g-. r g-. r
 	g-. r g-. r
 	g-. r g-. r
@@ -462,5 +466,5 @@ musicCornoIVMvtIV = \relative c {
 	g-. g-. g-. g-.
 	g r r2
 	g4 r r2
-	c1\fermata \fine
+	g1\fermata \fine
 }

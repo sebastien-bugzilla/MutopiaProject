@@ -21,15 +21,15 @@ musicCornoIIMvtIV = \relative c {
 	e'1-^\ff
 	r4 e\fz r2
 % Bars 11 to 15
-	r4 e-\fbrackz r2
+	r4 e r2
 	R1
 	r8. b'16(\f\< e,4)\! r8. d'16(\< g,4)\!
 	r4 b-. r b-.
 	r b-. r b-.
 % Bars 16 to 20
 	r e,\ff~ e8 r r4
-	r e-\fbrackz r2
-	r4 e-\fbrackz r2
+	r e r2
+	r4 e r2
 	ais4-^ b-^ cis-^ fis,-^
 	b b r b
 % Bars 21 to 25
@@ -72,7 +72,7 @@ musicCornoIIMvtIV = \relative c {
 	
 	r4 b'\f\< r c\!
 	R1
-	\cutBeamEachBeat g8-\crescmarkup f a g b a c b \revertCutBeam \mark \default
+	\cutBeamEachBeat g8 f a g b a c b \revertCutBeam \mark \default
 	c2\ff a
 % Bars 56 to 60
 	r8 bes-.\f r a-. r g-. r f-.
@@ -131,7 +131,7 @@ musicCornoIIMvtIV = \relative c {
 % Bars 106 to 110
 	
 	
-	<< bes1->\fz\> {s4 s s s\!}>>
+	<< bes1\fz\> {s4 s s s\!}>>
 	bes2.\pp bes4(
 	aes2.) aes4(
 % Bars 111 to 115
@@ -271,7 +271,7 @@ musicCornoIIMvtIV = \relative c {
 	r4 b\mf\< r c\!
 	R1
 % Bars 256 to 260
-	g8-.-\fcresc f-. a-. g-. b-. a-. c-. b-.
+	g8-. f-. a-. g-. b-. a-. c-. b-.
 	c2->\ff a->
 	r8 bes r a r g r f
 	c'2-> a->
@@ -341,7 +341,7 @@ musicCornoIIMvtIV = \relative c {
 % Bars 326 to 330
 	r4 g\pp r g
 	r bes r bes
-	r a-\crescmarkup r c!
+	r a r c!
 	r g r g
 	R1*8
 % Bars 331 to 335
@@ -381,7 +381,7 @@ musicCornoIIMvtIV = \relative c {
 	R1
 	R1
 	r4 c2->\p r4
-	r c2->-\crescmarkup r4
+	r c2-> r4
 % Bars 366 to 370
 	r c2-> r4
 	r c2-> r4
@@ -396,12 +396,12 @@ musicCornoIIMvtIV = \relative c {
 	c b2-> fis4->\ff~
 % Bars 376 to 380
 	fis1~
-	fis4 r f2-\fbrackz~
+	fis4 r f2~
 	f4 r f r
 	f r r2 \mark \default
 	c'8\f r c2.\p~
 % Bars 381 to 385
-	c8 r c2.-\pocoapococresc~
+	c8 r c2.~
 	c8 r c2.~
 	c8 r c2.~
 	c4\f c2-> c4~

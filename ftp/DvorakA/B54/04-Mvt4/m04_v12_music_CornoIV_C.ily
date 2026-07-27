@@ -28,8 +28,8 @@ musicCornoIVMvtIV = \relative c {
 	b-. r b-. r
 % Bars 16 to 20
 	r e\ff~ e8 r r4
-	r e-\fbrackz r2
-	r4 e-\fbrackz r2
+	r e r2
+	r4 e r2
 	cis4-^ d-^ e-^ fis-^
 	b, b r b
 % Bars 21 to 25
@@ -67,7 +67,7 @@ musicCornoIVMvtIV = \relative c {
 	g,1\pp
 	f
 	e,\pp~
-	e~-\pocoapococresc
+	e~
 % Bars 51 to 55
 	e~
 	<< e {s4 s\< s s\!}>>
@@ -95,14 +95,14 @@ musicCornoIVMvtIV = \relative c {
 % Bars 71 to 75
 	g2->\ff a->
 	g-> fis->
-	g8 r g,4\fp r g-\dimmarkup
+	g8 r g,4\fp r g
 	r g r g
 	g'2->\ff a->
 % Bars 76 to 80
 	g-> fis->
 	g,8 r r4 r g8-.\p g-.
 	r2 r4 g8-. g-.
-	r2 r4 g8-.-\dimmarkup g-.
+	r2 r4 g8-. g-.
 	r2 r4 g8-. g-.
 % Bars 81 to 85
 	r4 \clef bass c,,2.\pp~
@@ -112,8 +112,8 @@ musicCornoIVMvtIV = \relative c {
 	c4 r r2
 % Bars 86 to 90
 	R1 \clef treble
-	R1*2
-	
+	\mmrPos #-8 R1
+	R
 	R1*4
 	
 % Bars 91 to 95
@@ -232,10 +232,10 @@ musicCornoIVMvtIV = \relative c {
 	f-> r r2
 	r8 e-. e-. e-.  e-. e-. e-. e-.
 	a r r4 r2
-	r4 a-\fbrackz r2
-	r4 a-\fbrackz r2
+	r4 a r2
+	r4 a r2
 % Bars 206 to 210
-	r4 a-\fbrackz r2
+	r4 a r2
 	R1*6
 % Bars 211 to 215
 	
@@ -282,7 +282,7 @@ musicCornoIVMvtIV = \relative c {
 	e
 	e~
 % Bars 256 to 260
-	e2.-\crescmarkup d'8-. g-.
+	e2. d'8-. g-.
 	c,2->\ff c->
 	R1
 	c2-> c->
@@ -347,8 +347,8 @@ musicCornoIVMvtIV = \relative c {
 	r4 d r d8 d
 	r4 e r e8 e
 % Bars 316 to 320
-	R1*2
-	
+	\mmrPos #-6 R1
+	\mmrPos #-6 R
 	g,1\fp~
 	g~
 	g~
@@ -358,7 +358,7 @@ musicCornoIVMvtIV = \relative c {
 % Bars 326 to 330
 	r4 \clef bass c,,\pp r c
 	r c r c
-	r c-\crescmarkup r c
+	r c r c
 	r c r c \clef treble
 	<< c''1 {s8\< s s s\! s\> s s s\!}>>
 % Bars 331 to 335
@@ -400,7 +400,7 @@ musicCornoIVMvtIV = \relative c {
 % Bars 361 to 365
 	R \mark \default
 	r4 \clef bass c,,2.\pp~
-	c8 r c2.~-\pocoapococresc
+	c8 r c2.~
 	c8 r c2.~->
 	c8 r c2.~->
 % Bars 366 to 370
@@ -417,7 +417,7 @@ musicCornoIVMvtIV = \relative c {
 	e g2-> a4->~\ff
 % Bars 376 to 380
 	a1~
-	a4 r aes2-\fbrackz~
+	a4 r aes2~
 	aes4 r g r
 	g r r2 \mark \default
 	g8\f r c4(\p gis a)
@@ -447,7 +447,7 @@ musicCornoIVMvtIV = \relative c {
 	r d-> r ees->
 % Bars 401 to 405
 	r8 d r cis r d r b
-	r4 g'8-.\f\< g-. d-. d-. d-. d-.\! \mark \default
+	r4 g'8-.\f\< g-. \stemUp \omitBeam d-. d-. d-. d-.\! \mark \default
 	c1\ff~
 	c
 	c~
