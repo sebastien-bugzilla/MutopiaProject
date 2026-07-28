@@ -51,20 +51,6 @@ mfespressivoedolente = \markup {\dynamic mf \italic "espressivo e dolente"}
 mfespress = \markup {\dynamic mf \italic espress.}
 mfmarkup = \markup {\dynamic mf}
 %--------------------
-% dynamics fz
-%--------------------
-fzmarcato = \markup {\dynamic fz \italic marcato}
-fbrackz = \markup {\concat { \dynamic f \bracket \with-true-dimensions \dynamic z}}
-fzcresc = \markup {\dynamic fz \italic cresc.}
-fzbrackespres = \markup {\dynamic fz \bracket \with-true-dimensions \italic espres.}
-fzpocoapococresc = \markup {\dynamic fz \italic "poco a poco cresc."}
-fzdim = \markup {\dynamic fz \italic dim. }
-%--------------------
-% dynamics ffz
-%--------------------
-ffz = #(make-dynamic-script "ffz")
-ffbrackz = \markup {\concat {\dynamic ff \bracket \with-true-dimensions \dynamic z}}
-%--------------------
 % dynamics fp
 %--------------------
 fpdim = \markup {\dynamic fp \italic dim.}
@@ -74,6 +60,15 @@ fpcresc = \markup {\dynamic fp \italic cresc.}
 %--------------------
 fpp = \markup {\dynamic fpp}
 fppD = #(make-dynamic-script (markup #:normal-text fpp))
+%--------------------
+% dynamics fz
+%--------------------
+fzmarcato = \markup {\dynamic fz \italic marcato}
+fbrackz = \markup {\concat { \dynamic f \bracket \with-true-dimensions \dynamic z}}
+fzcresc = \markup {\dynamic fz \italic cresc.}
+fzbrackespres = \markup {\dynamic fz \bracket \with-true-dimensions \italic espres.}
+fzpocoapococresc = \markup {\dynamic fz \italic "poco a poco cresc."}
+fzdim = \markup {\dynamic fz \italic dim. }
 %--------------------
 % dynamics f
 %--------------------
@@ -86,6 +81,15 @@ fmarc = \markup {\dynamic f \italic marc.}
 sempref = \markup {\italic sempre \dynamic f}
 fdim = \markup {\dynamic f \italic dim.}
 %--------------------
+% dynamics rf
+%--------------------
+rf = #(make-dynamic-script "rf")
+%--------------------
+% dynamics ffz
+%--------------------
+ffz = #(make-dynamic-script "ffz")
+ffbrackz = \markup {\concat {\dynamic ff \bracket \with-true-dimensions \dynamic z}}
+%--------------------
 % dynamics ff
 %--------------------
 fbrackf = \markup { \concat { \dynamic f \bracket \with-true-dimensions \dynamic f }}
@@ -95,6 +99,7 @@ ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
 ffdim = \markup {\dynamic ff \italic dim.}
 ffmarcatosempre = \markup {\dynamic ff \italic "marcato sempre"}
 ffrinforz = \markup {\dynamic ff \italic rinforz.}
+ffcresc = \markup {\dynamic ff \italic cresc.}
 %--------------------
 % dynamics ffp
 %--------------------
@@ -130,6 +135,7 @@ espress = \markup {\italic espress.}
 secco = \markup {\italic secco}
 divisi = \markup {\italic divisi}
 stacc = \markup {\italic stacc.}
+pesante = \markup {\italic pesante}
 %--------------------
 % instrument modification
 %--------------------
