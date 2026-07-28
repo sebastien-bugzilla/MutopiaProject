@@ -37,8 +37,8 @@
 \include "./04-Mvt4/m04_v12_music_CornoIV_C.ily"
 \include "./04-Mvt4/m04_v13_music_TrombeI_C.ily"
 \include "./04-Mvt4/m04_v14_music_TrombeII_C.ily"
-\include "./04-Mvt4/m04_v15_music_TrombonoI.ily"
-\include "./04-Mvt4/m04_v16_music_TrombonoII.ily"
+\include "./04-Mvt4/m04_v15_music_TrombonoI_C.ily"
+\include "./04-Mvt4/m04_v16_music_TrombonoII_C.ily"
 \include "./04-Mvt4/m04_v17_music_TrombonoIII.ily"
 \include "./04-Mvt4/m04_v18_music_Timpani.ily"
 \include "./04-Mvt4/m04_v20_music_ViolinoI.ily"
@@ -114,15 +114,16 @@
 					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
 %					\musicTrombeIIMvtIV 
 				}
-%				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
-%					\new Staff {
-%						\timeMvtIV \nameStaffVIIIMvtIV
-%						\partCombine \musicTrombonoIMvtIV \musicTrombonoIIMvtIV
-%					}
-%					\new Staff {
-%						\timeMvtIV \nameStaffIXMvtIV \musicTrombonoIIIMvtIV
-%					}
-%				>>
+				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
+					\new Staff {
+						\timeMvtIV \nameStaffVIIIMvtIV
+						\partCombine \musicTrombonoIMvtIV \musicTrombonoIIMvtIV
+%						\musicTrombonoIIMvtIV 
+					}
+					\new Staff {
+						\timeMvtIV \nameStaffIXMvtIV \musicTrombonoIIIMvtIV
+					}
+				>>
 			>>
 %			\new Staff {
 %				\timeMvtIV \nameStaffXMvtIV \musicTimpaniMvtIV

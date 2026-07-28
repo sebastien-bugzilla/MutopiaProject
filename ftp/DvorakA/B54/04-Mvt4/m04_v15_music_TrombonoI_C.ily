@@ -20,21 +20,21 @@ musicTrombonoIMvtIV = \relative c {
 	e'4-.\f r e-. r
 	e-. r e-. r
 % Bars 16 to 20
-	r8 c-.\ff r c-. r c-. r c-.
+	\partCombineApart r8 c-. r c-. r c-. r c-.
 	r c-. r a-. r a-. r a-.
-	r a-. r a-. r a-. r a-.
+	r a-. r a-. r a-. r a-. \partCombineAutomatic
 	fis-. a-. g-. b-. a-. c-. b-. b-.
 	e,4 e' r e
 % Bars 21 to 25
-	e,  e'  r e
+	\once \partCombineApart e,  e'  r e
 	e8-.-> dis-.-> d-.-> c-.-> b-. a-. gis-. fis-.
-	e r r4 r2
+	\once \partCombineApart e r r4 r2
 	R1*4
 	
 % Bars 26 to 30
 	
 	
-	r2 g4-^\f g'-^~
+	r2 \once \partCombineApart g4-^ g'-^~
 	g8 r cis,\ff d-> a bes!-> fis-. g->
 	r ees'-. r d-. r bes!-. r g-.
 % Bars 31 to 35
@@ -49,9 +49,9 @@ musicTrombonoIMvtIV = \relative c {
 	
 % Bars 46 to 50
 	
-	c1(\pp
+	\partCombineApart c1
 	bes
-	a4) r r2
+	a4 \partCombineAutomatic r r2
 	R1*5
 % Bars 51 to 55
 	
@@ -73,9 +73,9 @@ musicTrombonoIMvtIV = \relative c {
 	
 % Bars 66 to 70
 	
-	bes1->\ff
+	\partCombineApart bes1->\ff
 	b->-\ffbrackz
-	c8\ff r r4 r2
+	c8 \partCombineAutomatic r r4 r2
 	r2 r4 r8 c\f
 % Bars 71 to 75
 	c2->\ff d->
@@ -134,23 +134,23 @@ musicTrombonoIMvtIV = \relative c {
 	r4 b-^ r d-^
 	d2-^\ff r
 	r4 b-^ r d-^
-	d-^ ees-^ f-^ b,-^\ff
+	\partCombineApart d-^ ees-^ f-^ \partCombineAutomatic b,-^\ff
 	c-^ d-^ f,-^ g-^
 % Bars 141 to 145
 	aes-^ d-^ ees-^ f-^
 	fis8-> g-. g-. f-. f-. ees-. ees-. d-. \mark \default
-	c4 r r2
+	\once \partCombineApart c4 r r2
 	R1*3
 	
 % Bars 146 to 150
 	
-	r2 ees,->\f
-	ees'-> r
+	r2 \partCombineApart ees,->
+	ees'-> \partCombineAutomatic r
 	R1*2
 	
 % Bars 151 to 155
-	r2 b,->\f
-	b'-> r
+	r2 \partCombineApart b,->
+	b'-> \partCombineAutomatic r
 	R1*14
 % Bars 156 to 160
 	
@@ -181,12 +181,12 @@ musicTrombonoIMvtIV = \relative c {
 	r4 cis,-> r e->
 	e2-> r
 	r4 cis-> r e->
-	e-> f-> g-> cis,->
+	\partCombineApart e-> f-> g-> cis,->
 	d-> e-> g,-> a->
 % Bars 201 to 205
 	bes-> r r2
-	r8 a'-. a-. g-. g-. f-. f-. e-.
-	d r r4 r2
+	r8 a'-. a-. g-. \partCombineAutomatic g-. f-. f-. e-.
+	\once \partCombineApart d r r4 r2
 	r4 f->-\fbrackz r2
 	r4 f->-\fbrackz r2
 % Bars 206 to 210
@@ -205,7 +205,7 @@ musicTrombonoIMvtIV = \relative c {
 	r2 r4 aes8-. r
 	r4 c-.\ff c-. b-.
 	a! r b-. b-.
-	a8-. r r4 r2
+	\once \partCombineApart a8-. r r4 r2
 	R1*3
 % Bars 221 to 225
 	
@@ -253,11 +253,11 @@ musicTrombonoIMvtIV = \relative c {
 	R1*3
 	
 	
-	bes!1\ff
-	b!\ffz
+	\partCombineApart bes!1\ff
+	b!\ffz 
 % Bars 271 to 275
-	c4-.\f r r2
-	r2 r4 r8 c-.\f \markk
+	c4-. \partCombineAutomatic r r2
+	r2 r4 r8 \once \partCombineApart c-. \markk
 	c2->\ff a->
 	a-> b->
 	c8 r r4 r2
@@ -317,8 +317,8 @@ musicTrombonoIMvtIV = \relative c {
 	a
 	a\pp
 % Bars 361 to 365
-	c~ \mark \default
-	c4 r r2
+	\partCombineApart c~ \mark \default
+	c4 \partCombineAutomatic r r2
 	R1*13
 % Bars 366 to 370
 	
@@ -329,22 +329,22 @@ musicTrombonoIMvtIV = \relative c {
 	d4 r e2-\fbrackz~
 	e4 r e r
 	e r r2 \mark \default
-	c8\f r f4(\p cis d)
+	c8\f r \partCombineApart f4(\p cis d)
 % Bars 381 to 385
 	r f(-\crescmarkup cis d)
 	r f(\mf cis d)
-	r f( cis d)\f
+	r f( cis d) \partCombineAutomatic
 	cis-> d-> c-> d->
 	b->-\crescmarkup d-> bes-> des->
 % Bars 386 to 390
 	a-> c-> g-> bes->
-	f-> a-> r8 g'-> d-> f->
+	f-> a-> \partCombineApart r8 g'-> d-> f->
 	c r a2->\ff a8-. c-.
-	a r a2-> a8-. c-.
-	a-. r a-. c-. a-. r a-. c-.
+	a \once \partCombineAutomatic r a2-> a8-. c-.
+	a-. r a-. c-. a-. r a-. c-. \partCombineAutomatic
 % Bars 391 to 395
 	a-. r d2-> c4->~
-	c bes-> a-> g->
+	c \partCombineApart bes-> a-> g-> \partCombineAutomatic
 	c2-> d->
 	c-> b->
 	r4 c->-\marc r d->
@@ -356,12 +356,12 @@ musicTrombonoIMvtIV = \relative c {
 	r g-> r aes->
 % Bars 401 to 405
 	g8 r fis4-^ g-^ e-^
-	r c8->\f\< c-> cis-> d-> dis-> e->\! \mark \default
-	f4.->\ff c!8 a-> c-> f-> a->
+	r \partCombineApart c8-> c-> cis-> d-> dis-> e-> \mark \default
+	f4.-> c!8 a-> c-> f-> a->
 	f4-> f8.-> c16-> f4.-> c8-.
 	c4.-> a8 f-> a-> c-> f->
 % Bars 406 to 410
-	c4-> c8.-> a16-. c4.-> a8-.
+	c4-> c8.-> a16-. c4.-> a8-. \partCombineAutomatic
 	c4-. r e-. r
 	c-. r e-. r
 	c-. r e-. r
