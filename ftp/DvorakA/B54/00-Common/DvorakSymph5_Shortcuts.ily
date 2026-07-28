@@ -95,6 +95,10 @@ ffmarcatissimo = \markup {\dynamic ff \italic marcatissimo}
 ffdim = \markup {\dynamic ff \italic dim.}
 ffmarcatosempre = \markup {\dynamic ff \italic "marcato sempre"}
 ffrinforz = \markup {\dynamic ff \italic rinforz.}
+%--------------------
+% dynamics ffp
+%--------------------
+ffp = #(make-dynamic-script "ffp")
 
 %--------------------
 % dynamics text
@@ -142,6 +146,12 @@ mutainasdes = \markup {"muta in As, Des"}
 mutainbf = \markup {"muta in B, F"}
 cliimutainclarinettobassob = \markup {"Cl.II. muta in Clarinetto basso B"}
 mutainclii = \markup {"muta in Cl.II."}
+mutaincf = \markup {"muta in C, F"}
+cmutaindes = \markup {"C muta in Des"}
+mutaincg = \markup {"muta in C, G"}
+mutainaes = \markup {"muta in A, Es"}
+esmutaind = \markup {"Es muta in D"}
+dmutaine = \markup {"D muta in E"}
 
 timpinea = \markup {
 	\center-column {
