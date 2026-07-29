@@ -31,8 +31,11 @@ correctionMvtIII = \markup {
 correctionMvtIV = \markup {
 	
 	% bar 165, Faggot I & II
-	"In Mvt IV, bar 165, a missing dot is added."
+	"In Mvt IV, bar 165, for faggoto I & II, a missing dot is added."
 	
 	% bar 250, violin II
-	"In Mvt IV, bar 250, the half rest at the beginning of the measure is dotted, whereas it should not be. It is similar to the first faggot solo part."
+	"In Mvt IV, bar 250, for violin II, the half rest at the beginning of the measure is dotted, whereas it should not be. It is similar to the first faggot solo part."
+	
+	% bar 250, viola
+	"In Mvt IV, bar 250, for viola, the half rest at the beginning of the measure is dotted, whereas it should not be. It is similar to the first faggot solo part."
 }
