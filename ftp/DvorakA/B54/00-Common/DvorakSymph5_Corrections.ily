@@ -32,4 +32,7 @@ correctionMvtIV = \markup {
 	
 	% bar 165, Faggot I & II
 	"In Mvt IV, bar 165, a missing dot is added."
+	
+	% bar 250, violin II
+	"In Mvt IV, bar 250, the half rest at the beginning of the measure is dotted, whereas it should not be. It is similar to the first faggot solo part."
 }

@@ -69,6 +69,7 @@ fzcresc = \markup {\dynamic fz \italic cresc.}
 fzbrackespres = \markup {\dynamic fz \bracket \with-true-dimensions \italic espres.}
 fzpocoapococresc = \markup {\dynamic fz \italic "poco a poco cresc."}
 fzdim = \markup {\dynamic fz \italic dim. }
+fzmarkup = \markup {\dynamic fz}
 %--------------------
 % dynamics f
 %--------------------
@@ -136,6 +137,7 @@ secco = \markup {\italic secco}
 divisi = \markup {\italic divisi}
 stacc = \markup {\italic stacc.}
 pesante = \markup {\italic pesante}
+trem = \markup {\italic trem.}
 %--------------------
 % instrument modification
 %--------------------

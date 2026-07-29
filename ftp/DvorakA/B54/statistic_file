@@ -1,7 +1,7 @@
     157     426    5178 10_DvorakSymph5_Conductor_mvt1.ly
     162     438    5400 10_DvorakSymph5_Conductor_mvt2.ly
     161     429    5424 10_DvorakSymph5_Conductor_mvt3.ly
-    157     432    5235 10_DvorakSymph5_Conductor_mvt4.ly
+    157     429    5232 10_DvorakSymph5_Conductor_mvt4.ly
     243     565    5189 20_DvorakSymph5_Part01_Flauti.ly
     243     565    5089 20_DvorakSymph5_Part02_Oboi.ly
     243     565    5401 20_DvorakSymph5_Part03_Clarinetti.ly
@@ -16,7 +16,7 @@
     143     365    3613 20_DvorakSymph5_Part12_Violoncello.ly
     143     365    3613 20_DvorakSymph5_Part13_Contrabasso.ly
      24      80     546 test.ly
-     35     319    1752 00-Common/DvorakSymph5_Corrections.ily
+     38     354    1927 00-Common/DvorakSymph5_Corrections.ily
     321     877    7227 00-Common/DvorakSymph5_CueVoice.ily
      10      60     539 00-Common/DvorakSymph5_Format_Cond_Mvt01.ily
      10      60     540 00-Common/DvorakSymph5_Format_Cond_Mvt02.ily
@@ -43,7 +43,7 @@
     699    2359   19276 00-Common/DvorakSymph5_NameVoice.ily
      71     197    1702 00-Common/DvorakSymph5_PaperConductors.ily
      67     187    1607 00-Common/DvorakSymph5_PaperParts.ily
-    717    2372   17521 00-Common/DvorakSymph5_Shortcuts.ily
+    719    2382   17585 00-Common/DvorakSymph5_Shortcuts.ily
     112     330    1964 00-Common/DvorakSymph5_Tempi.ily
      34     157     945 00-Common/DvorakSymph5_timeMvt.ily
     501    1454    7374 01-Mvt1/m01_v01_music_FlautoI_C.ily
@@ -199,8 +199,8 @@
     369    1052    4747 04-Mvt4/m04_v17_music_TrombonoIII.ily
     399    1139    4979 04-Mvt4/m04_v18_music_Timpani.ily
     503    2548   12265 04-Mvt4/m04_v20_music_ViolinoI.ily
-    177     469    2083 04-Mvt4/m04_v21_music_ViolinoII.ily
+    513    2707   12670 04-Mvt4/m04_v21_music_ViolinoII.ily
     177     469    2077 04-Mvt4/m04_v22_music_Viola.ily
     177     469    2083 04-Mvt4/m04_v23_music_Violoncello.ily
     177     469    2083 04-Mvt4/m04_v24_music_Contrabasso.ily
-  62931  187992 1007511 total
+  63272  190272 1018334 total
