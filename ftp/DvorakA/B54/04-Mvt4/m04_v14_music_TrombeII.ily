@@ -7,7 +7,7 @@
 musicTrombeIIMvtIV = \relative c {
 	\clef treble
 	\key c \major
-	\transposition a
+	\transposition f
 % Bars 1 to 5
 	R1*5
 % Bars 6 to 10

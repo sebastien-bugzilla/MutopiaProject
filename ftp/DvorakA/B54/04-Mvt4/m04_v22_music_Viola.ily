@@ -36,7 +36,7 @@ musicViolaMvtIV = \relative c {
 	<e gis> r r4 r2
 	e8:16 fis: gis: a: b: c: d: dis:
 	e8 r r e,[-.\p e,]-. r r e'-.
-	a,4(\p e'\<~ e8 d16 c)\! bes8(-.\brack\mf c-.)
+	a,4(\p e'\<~ e8 d16 c)\! b8(-.\brack\mf c-.)
 	gis4(->\> a)\! r8. a16[ b8. c16]
 % Bars 26 to 30
 	gis4(-> a) r8. a16[ bes!8. c16]

@@ -38,4 +38,10 @@ correctionMvtIV = \markup {
 	
 	% bar 250, viola
 	"In Mvt IV, bar 250, for viola, the half rest at the beginning of the measure is dotted, whereas it should not be. It is similar to the first faggot solo part."
+	
+	% bar 168, clarinetto II
+	"In Mvt IV, bar 168, for clarinetto II, a missing natural is added on the c at the end of the bars. It is based on part score."
+	
+	% bar 24, Viola / violoncello
+	"In Mvt IV, bar 24, a 'bes' is replaced by a 'b' in the main theme. In all audio version I have it is played with a b."
 }

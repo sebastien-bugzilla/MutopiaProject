@@ -203,7 +203,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 166 to 170
 	ees\f\> d cis c)\! \mark \default
 	bes(\f d) r8. bes16([\< c8.) d16-.]\!
-	a4(\> bes)\! r8. bes16([\< cis8. d16)]\!
+	a4(\> bes)\! r8. bes16([\< c8. d16)]\!
 	b!4(\> c)\! r8. c16([\< d8. ees16)]\!
 	b!4( c) r8. c16[(\< d8. ees16)]\!
 % Bars 171 to 175

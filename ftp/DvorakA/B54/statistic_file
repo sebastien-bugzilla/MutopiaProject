@@ -16,7 +16,7 @@
     143     365    3613 20_DvorakSymph5_Part12_Violoncello.ly
     143     365    3613 20_DvorakSymph5_Part13_Contrabasso.ly
      24      80     546 test.ly
-     41     398    2144 00-Common/DvorakSymph5_Corrections.ily
+     47     465    2455 00-Common/DvorakSymph5_Corrections.ily
     321     877    7227 00-Common/DvorakSymph5_CueVoice.ily
      10      60     539 00-Common/DvorakSymph5_Format_Cond_Mvt01.ily
      10      60     540 00-Common/DvorakSymph5_Format_Cond_Mvt02.ily
@@ -174,8 +174,8 @@
     465    1711    8008 04-Mvt4/m04_v04_music_OboeII.ily
     495    1992   10629 04-Mvt4/m04_v05_music_ClarinettoI_C.ily
     492    1885    9018 04-Mvt4/m04_v05_music_ClarinettoI.ily
-    498    1926    9095 04-Mvt4/m04_v06_music_ClarinettoII_C.ily
-    498    1923    9286 04-Mvt4/m04_v06_music_ClarinettoII.ily
+    498    1926    9093 04-Mvt4/m04_v06_music_ClarinettoII_C.ily
+    498    1923    9284 04-Mvt4/m04_v06_music_ClarinettoII.ily
     497    1799    9407 04-Mvt4/m04_v07_music_FagottoI_C.ily
     496    1717    8267 04-Mvt4/m04_v07_music_FagottoI.ily
     500    1693    7913 04-Mvt4/m04_v08_music_FagottoII_C.ily
@@ -200,7 +200,7 @@
     399    1139    4979 04-Mvt4/m04_v18_music_Timpani.ily
     503    2548   12265 04-Mvt4/m04_v20_music_ViolinoI.ily
     513    2707   12670 04-Mvt4/m04_v21_music_ViolinoII.ily
-    518    2948   13654 04-Mvt4/m04_v22_music_Viola.ily
+    518    2948   13652 04-Mvt4/m04_v22_music_Viola.ily
     512    2313   10397 04-Mvt4/m04_v23_music_Violoncello.ily
     478    1844    8158 04-Mvt4/m04_v24_music_Contrabasso.ily
-  64254  196019 1044623 total
+  64260  196086 1044928 total
