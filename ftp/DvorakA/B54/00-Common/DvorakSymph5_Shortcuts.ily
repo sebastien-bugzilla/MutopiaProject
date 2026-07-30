@@ -33,6 +33,7 @@ pdolceD = #(make-dynamic-script (markup #:normal-text pdolce))
 pmoltocresc = \markup { \dynamic p \italic "molto cresc."}
 pbrackdim = \markup {\dynamic p \bracket \with-true-dimensions \italic dim.}
 brackpcresc = \markup {\bracket \with-true-dimensions {\dynamic p \italic cresc.}}
+pmoltotranquillo = \markup {\dynamic p \italic "molto tranquillo"}
 %--------------------
 % dynamics mp
 %--------------------
@@ -117,6 +118,7 @@ crescmolto = \markup {\italic "cresc. molto"}
 pocoapocodim = \markup {\italic "poco a poco dim."}
 dimin = \markup {\italic dimin.}
 pocoapococresc = \markup {\italic "poco a poco cresc."}
+crescsempre = \markup {\italic "cresc. sempre"}
 %--------------------
 % text indications
 %--------------------
