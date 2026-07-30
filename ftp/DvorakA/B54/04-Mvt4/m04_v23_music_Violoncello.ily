@@ -442,7 +442,7 @@ musicVioloncelloMvtIV = \relative c {
 	
 	
 	
-	d4^\pizz\pp r r2
+	d4^\pizz r r2
 % Bars 361 to 365
 	c4 r r2 \mark \default
 	f,2(\pp^\arco cis4 d)
