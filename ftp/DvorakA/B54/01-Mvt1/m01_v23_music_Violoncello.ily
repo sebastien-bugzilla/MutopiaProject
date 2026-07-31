@@ -182,7 +182,7 @@ musicVioloncelloMvtI = \relative c {
 		bes4 r8 bes
 		bes4 r8 bes
 		bes4 r8 bes \mark \default
-		bes,2:32\ff
+		bes,2:32^\arco\ff
 % Bars 146 to 150
 		bes:
 		g'4\pp^\pizz r8 g
@@ -305,7 +305,7 @@ musicVioloncelloMvtI = \relative c {
 	b\fz~
 	b
 % Bars 241 to 245
-	r8 bes!->\fz r c->
+	r8 bes!->\f r c->
 	r e->\< r g->
 	r bes-> r c->
 	r e-> r g->\!

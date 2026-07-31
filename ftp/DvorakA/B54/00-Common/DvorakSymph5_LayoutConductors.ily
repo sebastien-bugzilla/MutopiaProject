@@ -23,6 +23,19 @@
 		\override Arpeggio.padding = #0.25
 		\override TupletNumber.avoid-slur = #'ignore
 		
+%		% !!! for script check only !!!
+%		\override Script.color = #red
+%		\override Script.font-size = #4
+%		\override MultiMeasureRestScript.color = #red
+%		\override MultiMeasureRestScript.font-size = #4
+%		% end script check
+
+		% !!! for dynamic check only !!!
+		\override DynamicText.color = #red
+		\override Hairpin.color = #red
+		\override TextScript.color = #red
+		% end dynamic check
+
 %		\override NoteHead.transparent = ##t
 %		\override Stem.transparent = ##t
 %		\override Beam.transparent = ##t

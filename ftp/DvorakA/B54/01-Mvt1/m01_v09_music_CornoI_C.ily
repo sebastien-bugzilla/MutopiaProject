@@ -115,7 +115,7 @@ musicCornoIMvtI = \relative c {
 		a,2\p~
 		a
 		\partCombineChords << e\<~ {s8 s s s\!}>>
-		<< e2\> {s8 s s s\p}>> \partCombineAutomatic
+		<< e2\> {s8 s s s\!}>> \partCombineAutomatic
 		R2*5
 % Bars 106 to 110
 		

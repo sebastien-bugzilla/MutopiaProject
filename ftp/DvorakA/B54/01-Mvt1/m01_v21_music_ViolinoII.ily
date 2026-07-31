@@ -128,7 +128,7 @@ musicViolinoIIMvtI = \relative c {
 		fis e~
 		e\! a~\>
 		<< a2) {s8 s s s\!}>>
-		a4(\p ais)
+		a4(\p\< ais)
 % Bars 106 to 110
 		b8(\! e4\> bes8)\!
 		a4(\< ais)\!
@@ -345,7 +345,7 @@ musicViolinoIIMvtI = \relative c {
 	dis4-> r
 % Bars 281 to 285
 	bes!8->[\fz r16 f'!] bes,( d! f bes)
-	b8[-> r16 f]-. b,( d f b)
+	b8[->\fz r16 f]-. b,( d f b)
 	b8[-> r16 f]-. b,( d f b)
 	c8[-> r16 a]-. c,( ees a c)
 	<b, b'>2:32\ff
@@ -364,7 +364,7 @@ musicViolinoIIMvtI = \relative c {
 % Bars 296 to 300
 	f\< g aes f g aes f g)
 	aes( f g aes f g aes f\!
-	g\brack\fz aes f g aes f g aes)
+	g\brack\f aes f g aes f g aes)
 	f(\> ees f g ees f g ees\!
 	f_\dimmarkup c d ees c d ees c)
 % Bars 301 to 305
@@ -442,7 +442,7 @@ musicViolinoIIMvtI = \relative c {
 	r4 bes16(\fp d f bes)
 	r4 d,16(_\fcresc f bes d)
 	d,( f bes d) d,( f bes d)
-	e,( g c e) \tuplet 3/2 4 {d8->\f c-> bes->
+	e,( g c e) \tuplet 3/2 4 {d8->-\piuf c-> bes->
 % Bars 371 to 375
 	\subdiviseBeam a-> g c bes->_\crescmarkup a g}
 	f16( e d c') \tuplet 7/4 {bes16( a g f e d c)} \mark \default

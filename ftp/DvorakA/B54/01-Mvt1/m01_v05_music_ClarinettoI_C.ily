@@ -410,7 +410,7 @@ musicClarinettoIMvtI = \relative c {
 	e2\fz~
 	e8 r r4
 % Bars 361 to 365
-	\partCombineApart d\ff d8. a16 \partCombineAutomatic
+	\partCombineApart d d8. a16 \partCombineAutomatic
 	e'4 r
 	\partCombineApart d d8. a16 \partCombineAutomatic
 	e'4 r

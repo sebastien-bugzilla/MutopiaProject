@@ -410,7 +410,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 426 to 430
 	
 % Bars 431 to 435
-	f,4( fis\<
+	f,4(-\piuf fis\<
 	g8\! c4\> g8)\!
 	f4( fis\<
 	g8\! c4\> g8)\!

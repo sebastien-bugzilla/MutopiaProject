@@ -96,7 +96,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 71 to 75
 		g4\pp r
 		R2
-		f4(_\pplegato a16 g f8)
+		f4(_\pplegato^\arco a16 g f8)
 		f4( e8) r
 		f4( a16 g f8)
 % Bars 76 to 80
@@ -293,7 +293,7 @@ musicContrabassoMvtI = \relative c {
 	b\fz~
 	b
 % Bars 241 to 245
-	r8 bes!->\fz r c->
+	r8 bes!->\f r c->
 	r e->\< r g->
 	r bes-> r c->
 	r e-> r g->\!

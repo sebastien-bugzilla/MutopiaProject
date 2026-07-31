@@ -36,7 +36,7 @@
      22      91    1031 00-Common/DvorakSymph5_Format_Part12_Violoncello.ily
      22      91    1031 00-Common/DvorakSymph5_Format_Part13_Contrabasso.ily
      34     291    2017 00-Common/DvorakSymph5_Header.ily
-     83     280    2750 00-Common/DvorakSymph5_LayoutConductors.ily
+     96     336    3140 00-Common/DvorakSymph5_LayoutConductors.ily
      71     255    2500 00-Common/DvorakSymph5_LayoutParts.ily
      75     312    2976 00-Common/DvorakSymph5_NameGrandStaff.ily
     560    1692   12769 00-Common/DvorakSymph5_NameStaff.ily
@@ -47,29 +47,29 @@
     112     330    1964 00-Common/DvorakSymph5_Tempi.ily
      34     157     945 00-Common/DvorakSymph5_timeMvt.ily
     501    1454    7374 01-Mvt1/m01_v01_music_FlautoI_C.ily
-    501    1395    6527 01-Mvt1/m01_v01_music_FlautoI.ily
-    493    1369    6650 01-Mvt1/m01_v02_music_FlautoII_C.ily
-    493    1338    6269 01-Mvt1/m01_v02_music_FlautoII.ily
+    501    1395    6533 01-Mvt1/m01_v01_music_FlautoI.ily
+    493    1369    6656 01-Mvt1/m01_v02_music_FlautoII_C.ily
+    493    1338    6275 01-Mvt1/m01_v02_music_FlautoII.ily
     525    1466    8380 01-Mvt1/m01_v03_music_OboeI_C.ily
     523    1375    6845 01-Mvt1/m01_v03_music_OboeI.ily
     500    1168    5820 01-Mvt1/m01_v04_music_OboeII_C.ily
     500    1159    5825 01-Mvt1/m01_v04_music_OboeII.ily
-    581    1880   10518 01-Mvt1/m01_v05_music_ClarinettoI_C.ily
+    581    1880   10515 01-Mvt1/m01_v05_music_ClarinettoI_C.ily
     581    1762    8660 01-Mvt1/m01_v05_music_ClarinettoI.ily
     577    1658    7950 01-Mvt1/m01_v06_music_ClarinettoII_C.ily
     577    1651    7988 01-Mvt1/m01_v06_music_ClarinettoII.ily
-    602    1697    9264 01-Mvt1/m01_v07_music_FagottoI_C.ily
-    602    1617    7922 01-Mvt1/m01_v07_music_FagottoI.ily
-    592    1447    7060 01-Mvt1/m01_v08_music_FagottoII_C.ily
-    592    1447    7240 01-Mvt1/m01_v08_music_FagottoII.ily
+    602    1697    9265 01-Mvt1/m01_v07_music_FagottoI_C.ily
+    602    1617    7923 01-Mvt1/m01_v07_music_FagottoI.ily
+    592    1447    7049 01-Mvt1/m01_v08_music_FagottoII_C.ily
+    592    1447    7241 01-Mvt1/m01_v08_music_FagottoII.ily
     516    1387    7530 01-Mvt1/m01_v09_music_CornoI_C.ily
     516    1340    6627 01-Mvt1/m01_v09_music_CornoI.ily
     483    1113    5456 01-Mvt1/m01_v10_music_CornoII_C.ily
     483    1105    5487 01-Mvt1/m01_v10_music_CornoII.ily
     538    1232    6665 01-Mvt1/m01_v11_music_CornoIII_C.ily
-    538    1188    5856 01-Mvt1/m01_v11_music_CornoIII.ily
-    548    1230    5956 01-Mvt1/m01_v12_music_CornoIV_C.ily
-    548    1220    6004 01-Mvt1/m01_v12_music_CornoIV.ily
+    538    1188    5854 01-Mvt1/m01_v11_music_CornoIII.ily
+    548    1230    5954 01-Mvt1/m01_v12_music_CornoIV_C.ily
+    548    1220    6002 01-Mvt1/m01_v12_music_CornoIV.ily
     378    1058    5067 01-Mvt1/m01_v13_music_TrombeI_C.ily
     378    1039    4755 01-Mvt1/m01_v13_music_TrombeI.ily
     378    1075    5222 01-Mvt1/m01_v14_music_TrombeII_C.ily
@@ -81,10 +81,10 @@
     368     917    4434 01-Mvt1/m01_v17_music_TrombonoIII.ily
     429    1089    5064 01-Mvt1/m01_v18_music_Timpani.ily
     581    2121    9907 01-Mvt1/m01_v20_music_ViolinoI.ily
-    594    2363   10759 01-Mvt1/m01_v21_music_ViolinoII.ily
-    625    2726   13047 01-Mvt1/m01_v22_music_Viola.ily
-    625    2055   10038 01-Mvt1/m01_v23_music_Violoncello.ily
-    605    1752    8328 01-Mvt1/m01_v24_music_Contrabasso.ily
+    594    2363   10767 01-Mvt1/m01_v21_music_ViolinoII.ily
+    625    2726   13050 01-Mvt1/m01_v22_music_Viola.ily
+    625    2055   10043 01-Mvt1/m01_v23_music_Violoncello.ily
+    605    1752    8333 01-Mvt1/m01_v24_music_Contrabasso.ily
     228     775    4406 02-Mvt2/m02_v01_music_FlautoI_C.ily
     228     745    3847 02-Mvt2/m02_v01_music_FlautoI.ily
     204     502    2698 02-Mvt2/m02_v02_music_FlautoII_C.ily
@@ -203,4 +203,4 @@
     518    2948   13652 04-Mvt4/m04_v22_music_Viola.ily
     512    2313   10397 04-Mvt4/m04_v23_music_Violoncello.ily
     478    1844    8158 04-Mvt4/m04_v24_music_Contrabasso.ily
-  64260  196086 1044928 total
+  64273  196142 1045340 total

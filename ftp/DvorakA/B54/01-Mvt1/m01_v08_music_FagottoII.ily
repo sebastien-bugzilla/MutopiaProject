@@ -109,7 +109,7 @@ musicFagottoIIMvtI = \relative c {
 		b4\p b8\f r
 		b4\p b8\f r
 		e4->\f gis16( fis e8)
-		gis4->\f b16( a gis8)
+		gis4-> b16( a gis8)
 		r e,-.\ff f!-. fis-.
 % Bars 91 to 95
 		g-. gis-. a-. b-.
@@ -278,7 +278,7 @@ musicFagottoIIMvtI = \relative c {
 	<< g\pp\<~ {s8 s s s\!}>>
 % Bars 226 to 230
 	<< g2\> {s8 s s s\!}>> \mark \default
-	e2(
+	e2(\pp
 	d)
 	b~
 	b

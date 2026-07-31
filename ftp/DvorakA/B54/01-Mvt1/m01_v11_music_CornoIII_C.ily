@@ -53,7 +53,7 @@ musicCornoIIIMvtI = \relative c {
 		f4\f r
 % Bars 36 to 40
 		f4-> f8. c16
-		f8\f r r4
+		f8 r r4
 		R2
 		g,2_\pcresc~
 		g~
@@ -394,7 +394,7 @@ musicCornoIIIMvtI = \relative c {
 	
 	\partCombineApart b2->~
 	b4 r
-	c2->~
+	c2->\f~
 % Bars 356 to 360
 	c4 r \partCombineAutomatic
 	b2\f~

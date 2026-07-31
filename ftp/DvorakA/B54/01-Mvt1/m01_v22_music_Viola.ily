@@ -463,7 +463,7 @@ musicViolaMvtI = \relative c {
 % Bars 371 to 375
 	\subdiviseBeam a-> g c bes->_\crescmarkup a g}
 	f16( e d c') \tuplet 7/4 4 {bes( a g f e d c)} \mark \default
-	<a f'>4-> a'16-. g-. f8-.
+	<a f'>4->\ff a'16-. g-. f8-.
 	g4-> bes16-. a-. g8-.
 	\unSubdiviseBeam a8-.\noBeam c(->\brack\fz b bes)
 % Bars 376 to 380

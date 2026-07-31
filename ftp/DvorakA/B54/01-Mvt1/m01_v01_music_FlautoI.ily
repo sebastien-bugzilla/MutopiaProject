@@ -418,7 +418,7 @@ musicFlautoIMvtI = \relative c {
 	c4(_\crescmarkup cis
 	d e8 f)
 % Bars 431 to 435
-	f4( dis\<
+	f4(-\piuf dis\<
 	<< e2)\> {s8 s s s\!}>>
 	f4( dis\<
 	<< e2)~\> {s8 s s s\!}>>
