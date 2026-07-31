@@ -9,7 +9,7 @@ musicFlautoIIMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	r8 ees''(-- ees--
+	r8 ees''(\pp-- ees--
 	ees--) r r
 	r ees-- r
 	r ees-- r

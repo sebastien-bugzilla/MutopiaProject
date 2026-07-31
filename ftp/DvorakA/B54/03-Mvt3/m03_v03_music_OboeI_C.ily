@@ -278,10 +278,10 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart des4(\p f8
+	\partCombineApart des4(\p\< f8\!
 % Bars 291 to 295
 	ees4\f\> des8\!
-	c4)\mf r8 \partCombineAutomatic
+	c4) r8 \partCombineAutomatic
 	R4.*4
 	
 	

@@ -278,7 +278,7 @@ musicContrabassoMvtIII = \relative c {
 	R4.*3
 	
 	
-	des8\p r r
+	des8\pp r r
 % Bars 286 to 290
 	f-. r r
 	ees-. r r

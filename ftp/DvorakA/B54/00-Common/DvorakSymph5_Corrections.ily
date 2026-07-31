@@ -27,6 +27,9 @@ correctionMvtIII = \markup {
 	
 	% bar 274, violoncello
 	"In Mvt III, bar 274, for violoncello & contrabasso, the rest is replaced by a half rest."
+	
+	% bar 70, viola
+	"In Mvt III, bar 70, a missing 'pp' indication is added, as in part score."
 }
 correctionMvtIV = \markup {
 	

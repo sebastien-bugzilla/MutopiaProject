@@ -326,7 +326,7 @@ musicClarinettoIMvtIII = \relative c {
 	g4( d'8)
 	ees16(\< bes g bes ees g\!
 % Bars 291 to 295
-	a f d a) f'[-. f,-.]
+	a\f f d a) f'[-. f,-.]
 	bes(\mf d bes f d bes)
 	ees8. bes'16-. bes8-.
 	bes4 r8

@@ -200,7 +200,7 @@ musicFagottoIIMvtIII = \relative c {
 	R4.*3
 	
 	\section
-	\startVoltaII bes8\f r r \section \endVolta
+	\startVoltaII bes8\ff r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
 		\sectionLabel "TRIO" \time 3/8 \key des \major R4.*5

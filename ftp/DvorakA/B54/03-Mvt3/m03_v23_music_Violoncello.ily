@@ -140,7 +140,7 @@ musicVioloncelloMvtIII = \relative c {
 	b8-.-\crescmarkup d16(\fz-> cis d b)
 	c!8-. e16(->\fz dis e c)
 	d8-.\f f16( e f e)
-	d8-. f16( e f e)
+	d8-.\< f16( e f e)
 % Bars 111 to 115
 	d8-. f16( e f e)
 	d8-. f16( e f e)\!

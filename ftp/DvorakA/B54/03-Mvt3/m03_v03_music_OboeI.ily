@@ -278,10 +278,10 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	des4(\p f8
+	des4(\p\< f8\!
 % Bars 291 to 295
 	ees4\f\> des8\!
-	c4)\mf r8
+	c4) r8
 	R4.*4
 	
 	

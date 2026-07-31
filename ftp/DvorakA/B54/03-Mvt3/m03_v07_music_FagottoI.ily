@@ -71,7 +71,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	bes4(-> f16 a
+	bes4(\p-> f16 a
 % Bars 71 to 75
 	bes8) f-. bes-.
 	c-. f,-. c'-.
@@ -202,7 +202,7 @@ musicFagottoIMvtIII = \relative c {
 	R4.*3
 	
 	\section
-	\startVoltaII bes,8\f r r \section \endVolta
+	\startVoltaII bes,8\ff r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
 		\sectionLabel "TRIO" \time 3/8 \key des \major R4.*5

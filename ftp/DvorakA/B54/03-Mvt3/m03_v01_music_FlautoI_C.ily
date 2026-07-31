@@ -9,7 +9,7 @@ musicFlautoIMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	r8 a'''(-- a--
+	r8 a'''(\pp-- a--
 	a--) r r
 	r a---\crescmarkup r
 	r a-- r

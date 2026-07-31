@@ -14,7 +14,7 @@ musicViolinoIIMvtIII = \relative c {
 	
 % Bars 11 to 15
 	
-	c''8(~[\p c] c[~
+	c''8(~[\pp c] c[~
 	c]) c(~[ c]
 	c~ c) c[(~
 	c] cis~ cis)
@@ -240,7 +240,7 @@ musicViolinoIIMvtIII = \relative c {
 	}
 	\repeat volta 2 {
 		R4.
-		r8. aes'16-. aes8-.
+		r8. aes'16-.\pp aes8-.
 % Bars 216 to 220
 		ges4-- r8
 		r8. ees16-. ees8-.

@@ -320,7 +320,7 @@ musicViolaMvtIII = \relative c {
 		e(\< b cis dis e dis
 % Bars 241 to 245
 		cis e ees des! ces bes!)\!
-		aes!( g f! ees! f g
+		aes!(\ff g f! ees! f g
 		aes g f ees f g)
 		aes( g f ees c bes'
 		aes c, des ees f g)
