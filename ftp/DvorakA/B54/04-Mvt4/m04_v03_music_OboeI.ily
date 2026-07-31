@@ -344,7 +344,7 @@ musicOboeIMvtIV = \relative c {
 	d2 f,\p
 	g\< g\!
 % Bars 306 to 310
-	c2.\brack\mf c4(\<
+	c2.\brack\mf-\crescmarkup c4(\<
 	f2\f\> g)\!
 	g(\p\> bes,)\!
 	c( f

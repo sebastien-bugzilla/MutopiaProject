@@ -127,7 +127,7 @@ musicViolinoIIMvtIV = \relative c {
 	\section \mark \default
 	\key des \major R1*2
 	
-	ees2(\p\< des'4) c\fz~
+	ees2(\p\< des'4)\! c\fz~
 % Bars 96 to 100
 	c\> bes( aes g\!
 	ges!2)\pp r
@@ -398,7 +398,7 @@ musicViolinoIIMvtIV = \relative c {
 	r c,(-\dimmarkup e g g e) r g-.
 % Bars 321 to 325
 	r bes,(\pp d f f d) r e-. \mark \default
-	c2:16\pp c:
+	c2:16\p c:
 	<< <c ees>1:\< {s4 s s s\!}>>
 	d2: ees:-\dimmarkup
 	d: c:

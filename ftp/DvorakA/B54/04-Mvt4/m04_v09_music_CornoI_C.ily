@@ -270,7 +270,7 @@ musicCornoIMvtIV = \relative c {
 	R1
 	r4 d!\mf r d
 	r d\< r d\!
-	\partCombineApart r8 b16-. b-. b8-. b-.  b-. b-. b-. b-.
+	\partCombineApart r8 b16-.\mf b-. b8-. b-.  b-. b-. b-. b-.
 	r b-\fdim-. r b-. r d-. r f-. \partCombineAutomatic \mark \default
 % Bars 251 to 255
 	R1*3

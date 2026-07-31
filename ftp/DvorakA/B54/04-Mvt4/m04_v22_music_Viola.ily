@@ -218,7 +218,7 @@ musicViolaMvtIV = \relative c {
 	ees( bes' <des ees>~ q bes ees,)~ ees( bes' <des ees>~ q bes ees,)~
 	ees( bes' <des ees>~ q bes ees,)~ ees( bes' <des ees>~ q bes ees,)~
 % Bars 171 to 175
-	ees( c' ees~ ees c aes)~ aes( c ees~ ees c aes)~
+	ees( c' ees~ ees c aes)~ aes(-\crescmarkup c ees~ ees c aes)~
 	aes( c ees~ ees c aes)~ aes( c ees~ ees c aes)
 	aes(-\fdim des f aes, des f aes, des f f, aes des)
 	f,(\> aes des f, aes des f, aes des\! des, f bes)} \revertCutBeam

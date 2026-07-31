@@ -318,7 +318,7 @@ musicOboeIMvtIV = \relative c {
 	a r a4-.\p r f-.
 	\partCombineApart r ees-. r d-.
 % Bars 281 to 285
-	r d-.-\dimmarkup r c-. \partCombineAutomatic
+	r d-. r c-. \partCombineAutomatic
 	R1
 	\partCombineApart r4 c2\brack\pp c4
 	r ees r ees
@@ -344,7 +344,7 @@ musicOboeIMvtIV = \relative c {
 	d2 f,\p
 	g\< g\!
 % Bars 306 to 310
-	c2.\brack\mf c4(\<
+	c2.\brack\mf-\crescmarkup c4(\<
 	f2\f\> g)\!
 	g(\p\> bes,)\!
 	c( f

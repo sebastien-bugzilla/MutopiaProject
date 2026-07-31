@@ -202,7 +202,7 @@ musicClarinettoIMvtIV = \relative c {
 	d(\< ees e f\!
 % Bars 166 to 170
 	ges\f\> f e! ees)\! \mark \default
-	d(\f f) r8. d16([\< ees8.) f16-.]\!
+	d(\p f) r8. d16([\< ees8.) f16-.]\!
 	cis4(\> d)\! r8. d16([\< ees8. f16)]\!
 	d4(\> ees)\! r8. ees16([\< f8. g16)]\!
 	d4( ees) r8. ees16[(\< f8. g16)]\!
@@ -344,7 +344,7 @@ musicClarinettoIMvtIV = \relative c {
 	R1*2
 % Bars 291 to 295
 	
-	r4 g\p r g
+	r4 g\pp r g
 	r e r e
 	r fis r fis
 	r g\fz\> r g\!

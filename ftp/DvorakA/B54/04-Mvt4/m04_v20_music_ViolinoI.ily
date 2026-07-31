@@ -121,7 +121,7 @@ musicViolinoIMvtIV = \relative c {
 	\section \mark \default
 	\key des \major R1*2
 	
-	ees'2(\< des'4)\! c\fz~
+	ees'2(\p\< des'4)\! c\fz~
 % Bars 96 to 100
 	c\> bes( aes g\!
 	ges!2)\pp r
@@ -312,7 +312,7 @@ musicViolinoIMvtIV = \relative c {
 	a8 a16( g fis8-.) g-. bes-. bes16( a gis8-.) a-.
 % Bars 256 to 260
 	c16(-\crescmarkup bes a bes) d( c b c) e( d cis d) f( e dis e)
-	f,8( a16 c! f4~ f8) e16( d cis8-.) d-.
+	f,8(\ff a16 c! f4~ f8) e16( d cis8-.) d-.
 	b( c!16) r a8( bes16) r gis8( a16) r fis8( g16) r
 	f!8( a16 c f4~ f8) e16( d cis8-.) d-.
 	b( c!16) r a8( bes16) r gis8( a16) r fis8( g16) r

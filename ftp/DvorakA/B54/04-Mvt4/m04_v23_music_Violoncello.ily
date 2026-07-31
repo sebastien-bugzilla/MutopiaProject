@@ -180,7 +180,7 @@ musicVioloncelloMvtIV = \relative c {
 	b4(\fz c) r8. ees16[ f8. g16]
 % Bars 146 to 150
 	d4(\fz ees) r8. b16[ c8. ees16]
-	fis,8-. r c'4->(~ c8 b16 a) gis8-.( a-.)
+	fis,8-. r c'4->\f(~ c8 b16 a) gis8-.( a-.)
 	fis r ees'4->(~ ees8 d16 c) b8-.( c-.)
 	R1*2
 	\clef tenor
