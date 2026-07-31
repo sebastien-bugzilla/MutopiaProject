@@ -185,7 +185,7 @@ musicTrombonoIMvtI = \relative c {
 % Bars 236 to 240
 	
 	b2~
-	b8. g16 e-.( g-. b-. e-.)
+	b8. g16-. e-.( g-. b-. e-.)
 	b4-> b8.-> g16
 	b4.-> g8
 % Bars 241 to 245

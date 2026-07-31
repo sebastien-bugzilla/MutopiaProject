@@ -399,7 +399,7 @@ musicCornoIVMvtI = \relative c {
 	R2*2
 	
 	g'4->\f g8.-> d16
-	f4.-> d8
+	f4.-> d8-.
 	f4-> f8.-> c16
 % Bars 356 to 360
 	f4.-> c8-.

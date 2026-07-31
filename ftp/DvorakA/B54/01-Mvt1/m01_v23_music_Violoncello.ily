@@ -90,7 +90,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 66 to 70
 		a( e'4 d8)
 		a(\> e'4 d8)
-		a( e'4-> d8)\!
+		a( e'4 d8)\!
 		a\pp r r4
 		R2*3
 % Bars 71 to 75

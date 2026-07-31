@@ -102,7 +102,7 @@ musicClarinettoIMvtI = \relative c {
 		r8 bes'4\fz( g8)
 		r bes4(\fz f8)
 		r bes4(\fz f8)
-		r bes4(\brack\fz_\crescmarkup f8)
+		r bes4(\brack\fz->_\crescmarkup f8)
 % Bars 86 to 90
 		r bes4(\brack\fz-> e,8)
 		r bes'4(\brack\fz-> e,8)

@@ -344,7 +344,7 @@ musicViolinoIIMvtI = \relative c {
 	dis4->\ff dis8.-> b16-.
 	dis4-> r
 % Bars 281 to 285
-	bes!8->[\fz r16 f'!] bes,( d! f bes)
+	bes!8->[\fz r16 f'!]-. bes,( d! f bes)
 	b8[->\fz r16 f]-. b,( d f b)
 	b8[-> r16 f]-. b,( d f b)
 	c8[-> r16 a]-. c,( ees a c)

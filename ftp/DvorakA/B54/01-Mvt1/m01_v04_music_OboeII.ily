@@ -55,7 +55,7 @@ musicOboeIIMvtI = \relative c {
 		f16( e d c') \tuplet 3/2 4 {c8-. c-. c-.\!} \mark \default
 		a4->\ff a8-. a-.
 % Bars 46 to 50
-		f'4( e8) e-.
+		f'4( e8) e
 		f-.\noBeam c(->\fz b c)
 		c2
 		a4-> a8-. a-.

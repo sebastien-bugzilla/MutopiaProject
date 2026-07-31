@@ -320,7 +320,7 @@ musicFagottoIMvtI = \relative c {
 	cis \clef bass
 % Bars 261 to 265
 	\partCombineApart b\mf~
-	b8. gis16 e(-.\< gis-. b-. e-.) 
+	b8. gis16-. e(-.\< gis-. b-. e-.) 
 	\once \stemDown b4\! \partCombineAutomatic b8.\> gis!16
 	b4.->( gis!8)\!
 	fis2\pp~

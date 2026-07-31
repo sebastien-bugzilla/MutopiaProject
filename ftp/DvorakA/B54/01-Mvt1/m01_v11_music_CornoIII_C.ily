@@ -416,7 +416,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 371 to 375
 	g-.[ g-. g-.]  g-._\crescmarkup g-. g-.
 	g-.[ g-. g-.]  g-. g-. g-.} \mark \default
-	g'4->\ff c8-. c-.
+	g'4\ff c8-. c-.
 	\partCombineApart c4-> b
 	c8-. g4-> g8~
 % Bars 376 to 380

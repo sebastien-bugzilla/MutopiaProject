@@ -320,7 +320,7 @@ musicFagottoIMvtI = \relative c {
 	cis \clef bass
 % Bars 261 to 265
 	b\mf~
-	b8. gis16 e(-.\< gis-. b-. e-.)
+	b8. gis16-. e(-.\< gis-. b-. e-.)
 	b4\! b8.\> gis16
 	b4.->( gis8)\!
 	fis2\pp~

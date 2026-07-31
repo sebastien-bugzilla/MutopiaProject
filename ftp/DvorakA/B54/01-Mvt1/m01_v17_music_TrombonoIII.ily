@@ -62,7 +62,7 @@ musicTrombonoIIIMvtI = \relative c {
 		r4 ces8_\crescmarkup r
 % Bars 86 to 90
 		r4 b8-> r
-		r4 b8 r
+		r4 b8-> r
 		e\f r e r
 		e r e r
 		r e,-.\brack\f f-. fis-.
