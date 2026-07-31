@@ -39,7 +39,7 @@ musicClarinettoIMvtIII = \relative c {
 	b16( c b a g f')
 	<< e4.~ {s8 s s}>>
 % Bars 26 to 30
-	\stemDown \omitBeam e8 e-. e-.
+	\stemDown \omitBeam e8 e e
 	\stemUp d4.-> \partCombineAutomatic
 	f4-> d8
 	e4.\fp
@@ -198,7 +198,7 @@ musicClarinettoIMvtIII = \relative c {
 	
 	e8-.\p\< c-. e-.\!
 	c'16(\fz\> b a gis a8-.)\!
-	g!8\>[ r g-.]\!
+	g!8\>[-. r g-.]\!
 % Bars 181 to 185
 	c\p r r
 	d\ff r r 
@@ -220,7 +220,7 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 196 to 200
 	\repeat volta 2 {
 		\key ees \major \time 3/8 \sectionLabel "TRIO" bes4.->\fp
-		bes8.-> bes16 bes8
+		bes8.-> bes16-. bes8-.
 		c4 r8
 		R4.
 		ees->\fz

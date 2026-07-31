@@ -89,7 +89,7 @@ musicFagottoIIMvtIII = \relative c {
 	b,8-.\pp fis-. b-.
 	R4.
 	e4->\fp b16( dis
-	e8-.) b-. e-.
+	e8) b-. e-.
 	fis-. b,-. fis'-.
 % Bars 96 to 100
 	g16(\< fis e dis e8)

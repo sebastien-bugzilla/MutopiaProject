@@ -83,7 +83,7 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 141 to 145
 	
 	
-	bes4->\ff bes8
+	bes4\ff bes8
 	ees4 ees8
 	bes4 bes8
 % Bars 146 to 150
@@ -188,7 +188,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	a4.\pp\<
 	<< f {s8 s s\!}>>
 	bes4.\fz
-	ges!4->(-\dimmarkup\> g8
+	ges!4(-\dimmarkup\> g8
 % Bars 301 to 305
 	aes4)\p r8
 	aes4\pp\> aes8-.

@@ -121,7 +121,7 @@ musicVioloncelloMvtIII = \relative c {
 	R4.
 	b,8\pp fis b
 	e4(->\fp^\arco b16 dis
-	e8-.) b-. e-.
+	e8) b-. e-.
 	fis-. b,-. fis'-.
 % Bars 96 to 100
 	g16(\< fis e dis e8)

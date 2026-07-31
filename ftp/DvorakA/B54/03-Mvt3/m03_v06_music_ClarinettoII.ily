@@ -194,7 +194,7 @@ musicClarinettoIIMvtIII = \relative c {
 	
 	e8-.\p\< c-. e-.\!
 	c'16(\fz\> b a gis a8-.)\!
-	g!8\>[ r g-.]\!
+	g!8\>[-. r g-.]\!
 % Bars 181 to 185
 	c\p r r
 	b\ff r r 
@@ -212,7 +212,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 196 to 200
 	\repeat volta 2 {
 		\key ees \major \time 3/8 \sectionLabel "TRIO" ees,4.->\fp
-		ees8.-> g16 g8
+		ees8.-> g16-. g8-.
 		f4 r8
 		R4.
 		ees->\fz
