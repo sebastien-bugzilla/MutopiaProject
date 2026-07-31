@@ -143,7 +143,7 @@ musicOboeIMvtII = \relative c {
 	R4.
 	\partCombineApart r8 r16 e(\p^\dolce c b) \section \mark \default
 	a8.( b32 c b16 a)
-	gis8( e) r16 e
+	gis8( e) r16 e-.
 	a8( c b16 a)
 % Bars 146 to 150
 	g!8.( d'16 b a

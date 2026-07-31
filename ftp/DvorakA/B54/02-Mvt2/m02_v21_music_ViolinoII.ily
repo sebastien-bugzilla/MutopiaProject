@@ -214,7 +214,7 @@ musicViolinoIIMvtII = \relative c {
 % Bars 176 to 180
 	R4.*5
 % Bars 181 to 185
-	a,16-.\f r r8 b16-. r
+	a,16\f r r8 b16-. r
 	c\f r r8 r 
 	R4.*2
 	

@@ -220,7 +220,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 196 to 200
 	a8. b32 c b16\prall a)
 	a8 r r
-	R4. \partCombineAutomatic
+	\mmrPos #10 R4. \partCombineAutomatic
 	a4.\fp~
 	<< a~\> {s8 s s\!}>>
 % Bar 201

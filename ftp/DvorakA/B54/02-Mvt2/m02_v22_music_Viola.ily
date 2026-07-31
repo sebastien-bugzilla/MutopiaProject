@@ -201,8 +201,8 @@ musicViolaMvtII = \relative c {
 	r cis,(\fz\> e! g bes16)\! r r8
 	r32 cis,(\fz\> e g bes16)\! r r8
 % Bars 161 to 165
-	<e, g>32\p\< q-. q-. q-.  q-. q-. q-. q-. q-. q-. q-. q-.\!
-	<d gis>-\crescmarkup q-. q-. q-. q-. q-. q-. q-. q-. q-. q-. q-.
+	<e, g>32-.\p\< q-. q-. q-.  q-. q-. q-. q-. q-. q-. q-. q-.\!
+	<d gis>-.-\crescmarkup q-. q-. q-. q-. q-. q-. q-. q-. q-. q-. q-.
 	<e a>-. q-. q-. q-. q-. q-. q-. q-. <g! bes>-.\f q-. q-. q-. \mark \default
 	<f bes>16 r r f'(_\mfbrackespress d c)
 	bes8.( c32 d) bes16( a)

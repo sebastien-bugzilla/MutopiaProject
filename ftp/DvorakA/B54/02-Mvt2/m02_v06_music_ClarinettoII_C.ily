@@ -197,7 +197,7 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 181 to 185
 	
 	
-	e4.->\pp
+	e4.\pp
 	c4~ c16 g
 	bes4.->\fp~
 % Bars 186 to 190
