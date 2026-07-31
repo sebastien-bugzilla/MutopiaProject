@@ -189,7 +189,7 @@ musicVioloncelloMvtII = \relative c {
 	fis(\mf\< c' a g fis dis' b a gis b e, gis)\!
 	a( e' c b a c a g! f! a d, f)
 % Bars 151 to 155
-	e(\> a f a\! e a c a e gis b gis)
+	e(\> a f a\! e\pp a c a e gis b gis)
 	a16 r r e'(\p c b)
 	a8.(-\espress b32\< c) b16( a)\!
 	g!8(\mf e) r16 e
@@ -316,7 +316,7 @@ musicVioloncelloDivisiMvtII = \relative c {
 	
 	
 	
-	<< g4.\p~ {s8 s4\<}>>
+	<< g4.\p~^\arco {s8 s4\<}>>
 	<< g4. {s8 s s\!}>>
 % Bars 106 to 110
 	c,4.
@@ -337,7 +337,7 @@ musicVioloncelloDivisiMvtII = \relative c {
 % Bars 121 to 125
 	f16 f-. f4~-\crescmarkup
 	f16 f-. f4~
-	f8_\ffmarcatissimo f-. f-.
+	f8_\ffmarcatissimo^\secco f-. f-.
 % Bars 126 to 130
 	
 % Bars 131 to 135

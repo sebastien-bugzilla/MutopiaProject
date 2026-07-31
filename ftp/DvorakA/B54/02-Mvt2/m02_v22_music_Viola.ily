@@ -137,7 +137,7 @@ musicViolaMvtII = \relative c {
 % Bars 106 to 110
 	c( c' a e c c' a e c c' a e)
 	c8--(\> c-- c--)\!
-	f32( d' bes g f d' bes g f d' bes g)
+	f32(\pp d' bes g f d' bes g f d' bes g)
 	f( d' bes g f d' bes g f d' bes g)
 	c,4.
 % Bars 111 to 115
@@ -149,7 +149,7 @@ musicViolaMvtII = \relative c {
 % Bars 116 to 120
 	f32(^\arco d' bes g f d' bes g f d' bes g)
 	f( d' bes g f d' bes g f d' bes g)
-	r16 <g bes>[^\pizz r <bes! ees> r <ees! g>]
+	r16 <g bes>[\mf^\pizz r <bes! ees> r <ees! g>]
 	ees,32(^\arco g ees g d-\crescmarkup f d f c ees c ees)
 	f( aes f aes ees g ees g d f d f)
 % Bars 121 to 125

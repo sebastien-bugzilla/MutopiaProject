@@ -132,7 +132,7 @@ musicViolinoIIMvtII = \relative c {
 	<c e>[\> r q r q]\! r
 	<d f>8\pp r r
 	R4.
-	c32(^\arco c' a e c c' a e c c' a e
+	c32(\p^\arco c' a e c c' a e c c' a e
 % Bars 111 to 115
 	bes g' e bes a e' c a g e' bes g
 	<bes d>16) r <d f>[^\pizz r <f bes>] r

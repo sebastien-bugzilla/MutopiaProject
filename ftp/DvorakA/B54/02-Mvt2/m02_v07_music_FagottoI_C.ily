@@ -109,8 +109,8 @@ musicFagottoIMvtII = \relative c {
 	
 % Bars 101 to 105
 	
-	\partCombineApart bes'4.->~
-	bes\p
+	\partCombineApart << bes'4.->\fz\>~ {s8 s s\!}>>
+	bes4.\p
 	R4.*6
 	
 % Bars 106 to 110

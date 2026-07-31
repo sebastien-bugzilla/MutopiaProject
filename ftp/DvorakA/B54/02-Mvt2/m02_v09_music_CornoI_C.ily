@@ -38,8 +38,8 @@ musicCornoIMvtII = \relative c {
 	b8 r r \partCombineAutomatic
 % Bars 31 to 35
 	\partCombineApart R4.
-	d4\p~ d16 dis
-	e-. b-. d!8-. b-.
+	d4\p~ d16 dis\<
+	e-.\! b-. d!8-.\> b-.\!
 	c4. \partCombineAutomatic
 	R4.*4
 % Bars 36 to 40
@@ -183,7 +183,7 @@ musicCornoIMvtII = \relative c {
 	d8.\fz r16 r d
 	dis8.->\fz r16 r dis
 	e8.->\fz r16 r d!\f \mark \default
-	c16\fp r r8 r
+	c16 r r8 r
 	R4.
 % Bars 166 to 170
 	\partCombineApart R4.

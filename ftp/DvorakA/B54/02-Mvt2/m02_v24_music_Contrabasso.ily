@@ -148,7 +148,7 @@ musicContrabassoMvtII = \relative c {
 % Bars 121 to 125
 	f16 f-. f4~-\crescmarkup
 	f16 f-. f4~
-	f8_\ffmarcatissimo f-. f-.
+	f8_\ffmarcatissimo^\secco f-. f-.
 	f'-. f-. f-.
 	f-. f-. f-. \mark \default
 % Bars 126 to 130
@@ -161,8 +161,8 @@ musicContrabassoMvtII = \relative c {
 	<< e\p\>~ {s8 s s\!}>>
 	e4.~
 	e\pp~
-	e~
 	<< e~ {s8 s4-\dimmarkup}>>
+	e4.~
 % Bars 136 to 140
 	e8 r r
 	R4.*2

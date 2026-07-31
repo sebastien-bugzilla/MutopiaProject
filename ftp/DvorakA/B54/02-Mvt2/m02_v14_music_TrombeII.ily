@@ -65,7 +65,7 @@ musicTrombeIIMvtII = \relative c {
 % Bars 121 to 125
 	
 	
-	r8 e'!-.\ff e-.
+	r8^\secco e'!-.\ff e-.
 	d-. dis-. e-.
 	fis-. g-. e-. \mark \default
 % Bars 126 to 130

@@ -109,9 +109,9 @@ musicClarinettoIMvtII = \relative c {
 	des~
 	des
 % Bars 106 to 110
-	ees->\fp~
-	ees
-	des\p(~
+	<< ees->\fp\<~ {s8 s s\!}>>
+	<< ees4.\> {s8 s s\!}>>
+	des4.\p(~
 	des4\<~ des16. c32)\!
 	g'4.(->\fp\>~
 % Bars 111 to 115

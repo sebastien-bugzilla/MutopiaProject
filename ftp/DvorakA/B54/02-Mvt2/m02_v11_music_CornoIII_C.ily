@@ -25,7 +25,7 @@ musicCornoIIIMvtII = \relative c {
 % Bars 26 to 30
 	\partCombineApart r8 r c16.(\p\< b32)\!
 	ais4(\fz b8)~
-	b4~\> b16\! r
+	b4~ b16 r
 	R4.*2
 	\partCombineAutomatic
 % Bars 31 to 35

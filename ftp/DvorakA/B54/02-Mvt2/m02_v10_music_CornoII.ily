@@ -182,7 +182,7 @@ musicCornoIIMvtII = \relative c {
 	b8.\fz r16 r b
 	a8.->\fz r16 r a
 	b8.->\fz r16 r b\f \mark \default
-	a16\fp r r8 r
+	a16 r r8 r
 	R4.
 % Bars 166 to 170
 	b32-._\pcresc b-. b-. b-.  b-. b-. b-. b-. b-. b-. b-. b-. 

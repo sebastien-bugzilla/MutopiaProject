@@ -113,7 +113,7 @@ musicClarinettoIIMvtII = \relative c {
 	R4.*3
 	
 	
-	ees4.(->\fp\>~
+	<< ees4.(->\fp\>~ {s8 s s\!}>>
 % Bars 111 to 115
 	<< ees4. {s8 s4-\dimmarkup }>>
 	f16)\pp r r8 r
