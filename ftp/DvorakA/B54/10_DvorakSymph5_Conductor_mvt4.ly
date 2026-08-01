@@ -97,7 +97,7 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
+				\new GrandStaff \with { \nameGrandStaffIMvtIV \consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtIV \nameStaffVMvtIV
 						\partCombine \musicCornoIMvtIV \musicCornoIIMvtIV
@@ -129,7 +129,7 @@
 				\timeMvtIV \nameStaffXMvtIV \musicTimpaniMvtIV
 			}
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIIMvtIV } <<
+				\new GrandStaff \with { \nameGrandStaffIIIMvtIV \consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtIV \nameStaffXIMvtIV \musicViolinoIMvtIV
 					}
