@@ -242,7 +242,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 	
 	\mark \default
-	c4->\f r r2
+	c4\f r r2
 % Bars 266 to 270
 	R1*5
 	
@@ -332,7 +332,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	f f
 % Bars 386 to 390
 	f f
-	f'4-> a-> e8-> g-> d-> f->
+	f'4 a e8-. g-. d-. f-.
 	c r r4 r2
 	a8 r r4 r2
 	a4 r a r

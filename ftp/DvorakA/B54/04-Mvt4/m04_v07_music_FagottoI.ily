@@ -303,7 +303,7 @@ musicFagottoIMvtIV = \relative c {
 	r bes, r c
 % Bars 256 to 260
 	r8 d-.-\crescmarkup r e-. r f-. r g-. \clef bass
-	f,2->\ff bes,
+	f,2->\ff bes,->
 	ges''4(\fz f) e!8( ees) d( des)
 	f,2-> bes,->
 	ges''4( f) e!8( ees) d( des)

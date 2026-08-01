@@ -35,7 +35,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 21 to 25
 	e, e' r e
 	e,8-. fis-. gis-. a-. b-. c-. d-. dis-.
-	e-. r r4 r2
+	e r r4 r2
 	e,8-.\brack\p a-. e-. a-. e-. a-. e-. a-.
 	c,-. e-. e-. a-. e-. a-. e-. a-.
 % Bars 26 to 30

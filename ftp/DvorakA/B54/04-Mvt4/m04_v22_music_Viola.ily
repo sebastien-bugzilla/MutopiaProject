@@ -95,7 +95,7 @@ musicViolaMvtIV = \relative c {
 	e: fis: g: a: bes: e,: fis: g:\!
 	bes1\ffz
 	b\ffz
-	c8-. r <e,, g>8:16-.\p\< <f a>:-. <g bes!>:-. <a c>:-. <bes des>:-. <b d>:\!
+	c8-. r <e,, g>8:16-.\p\< <f a>:-. <g bes!>:-. <a c>:-. <bes des>:-. <b d>:-.\!
 	<c e>:-.-\fcresc <d f>:-. <e g>:-. <f a>:-. <g bes>:-. <a c>:-. <bes d>:-. <g, e'>-.\noBeam
 % Bars 71 to 75
 	<a f'>2->\ff q->\fz
@@ -482,7 +482,7 @@ musicViolaMvtIV = \relative c {
 % Bars 386 to 390
 	<f, a>4:\< <f' a>:-\fzmarkup <f, a>: <f' a>:-\fzmarkup
 	<f, a>: <f' a>:-\fzmarkup <f, a>: <f' a>:\!-\fzmarkup
-	q8->\ff r c'2.:32-\trem
+	q8\ff r c'2.:32->-\trem
 	c1:
 	c:
 % Bars 391 to 395

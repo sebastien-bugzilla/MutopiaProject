@@ -41,7 +41,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 26 to 30
 	
 	
-	d,4->\f d'2.-^~
+	d,4-^\f d'2.-^~
 	d8 r r4 r2
 	r8 d-.\ff r d-. r d-. r d-.
 % Bars 31 to 35

@@ -192,7 +192,7 @@ musicViolinoIMvtIV = \relative c {
 	<b, b'>8 r r4 r2
 	R1
 	r4 <e g>->\fz(~ q8 fis16 e) dis8(-. e-.)
-	r4 <g b>->\fz(~ q8 a16 g) fis8-.( g-.)
+	r4 <g b>\fz(~ q8 a16 g) fis8-.( g-.)
 	a,8.(\p cis32 e a8) r g,8.( cis32 e g8) r
 % Bars 156 to 160
 	cis,8.( e32 g bes8) r cis,8.( e32 g bes8) r
