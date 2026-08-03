@@ -61,7 +61,7 @@ musicFlautoIIMvtII = \relative c {
 % Bars 66 to 70
 	a'4.\fz
 	e4\>~ e16. c32\!
-	c4.\fp\>~
+	c4.-\tweak X-offset #0.2 \fp\>~
 	c4\! c8(\p
 	d4.)
 % Bars 71 to 75
@@ -85,7 +85,7 @@ musicFlautoIIMvtII = \relative c {
 % Bars 86 to 90
 	
 	\section
-	\key a \minor r8 r16 c32(\f d c16) b32(_\dimmarkup c
+	\key a \minor r8 r16 c32(-\offset X-offset -1 \f d c16)_\dimmarkup b32( c
 	b16) a32( b a16) g32( a g16)-. f-. \mark \default
 	e8\p r r
 % Bars 91 to 95
@@ -102,7 +102,7 @@ musicFlautoIIMvtII = \relative c {
 	
 % Bars 101 to 105
 	
-	<< bes'4.->\fz\>~ {s8 s s\!}>>
+	<< bes'4.->\fz\>~ {s8 s s16 s\!}>>
 	bes4.\p
 	R4.*4
 	
@@ -148,7 +148,7 @@ musicFlautoIIMvtII = \relative c {
 % Bars 146 to 150
 	
 % Bars 151 to 155
-	r8 a-.(\pp gis)-.
+	r8 a-.(-\offset X-offset -2 \pp gis)-.
 	a16 r r8 r
 	R4.*3
 	
@@ -159,7 +159,7 @@ musicFlautoIIMvtII = \relative c {
 	
 	
 	r8 r16 e'(\mf\< d cis)\! \mark \default
-	d32-.\fp bes-. bes-. bes-.  bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. 
+	\dynEO #'(-2.3 . 2) d32-.\fp bes-. bes-. bes-.  bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. 
 	bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. 
 % Bars 166 to 170
 	gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. gis-. 

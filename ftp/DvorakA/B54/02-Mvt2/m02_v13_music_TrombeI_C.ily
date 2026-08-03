@@ -65,13 +65,13 @@ musicTrombeIMvtII = \relative c {
 % Bars 121 to 125
 	
 	
-	r8^\secco g''-.\ff g-.
+	r8^\secco g''-.-\tweak X-offset #-4 \ff g-.
 	g-. g-. g-.
 	fis-. g-. e-. \mark \default
 % Bars 126 to 130
 	b' r r
 	R4.
-	b4.\fp\>
+	b4.-\tweak X-offset 0.5 \fp\>
 	<< fis4\p~ {s8 s-\dimmarkup}>> fis16. b,32
 	b4\pp r8
 % Bars 131 to 135
@@ -103,7 +103,7 @@ musicTrombeIMvtII = \relative c {
 % Bars 171 to 175
 	a4(\ff g8)
 	c4( b8)
-	c-.-\dimmarkup b-. g-.\p
+	c-.-\tweak X-offset 5.5 -\dimmarkup b-. g-.\p
 	g-.\pp g-. fis-.
 	\once \partCombineApart e r r
 % Bars 176 to 180

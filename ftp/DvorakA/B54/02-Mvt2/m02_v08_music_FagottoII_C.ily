@@ -95,8 +95,8 @@ musicFagottoIIMvtII = \relative c {
 	R4.
 	<< b,4.\p~ {s8 s s\<}>>
 	<< b4. {s8 s s\!}>>
-	g4._\fzcresc~
-	g~
+	<< g4.~\fz {s16 s-\crescmarkup s4}>>
+	g4.~
 % Bars 86 to 90
 	g~
 	g~ \section \key a \minor
@@ -118,7 +118,7 @@ musicFagottoIIMvtII = \relative c {
 	<< c4.\> {s8 s s\!}>>
 	g'4.\pp~
 	g
-	<< c,4.\fp\> {s8 s s\!}>>
+	<< c,4.-\offset X-offset 0.5 \fp\> {s8 s s16 s\!}>>
 % Bars 111 to 115
 	R4.*7
 	

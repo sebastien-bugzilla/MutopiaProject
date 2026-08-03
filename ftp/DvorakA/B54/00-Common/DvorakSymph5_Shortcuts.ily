@@ -153,6 +153,11 @@ divisi = \markup {\italic divisi}
 stacc = \markup {\italic stacc.}
 pesante = \markup {\italic pesante}
 trem = \markup {\italic trem.}
+dopounapiccolapausasicontinua = \markup {
+	\italic \column { 
+		\lower #1.5 "Dopo una piccola" "pausa si continua"
+	}
+}
 %--------------------
 % instrument modification
 %--------------------
@@ -380,6 +385,12 @@ markXoffset = #(define-music-function
 	#}
 )
 
+markWhiteout = {
+	\once \override Score.RehearsalMark.layer = #3
+	\once \override Score.RehearsalMark.whiteout = #0.75
+	\once \override Score.RehearsalMark.whiteout-style = #'outline
+}
+
 
 
 
@@ -489,12 +500,6 @@ markXoffset = #(define-music-function
 %liiiri = {
 %	\set stemLeftBeamCount = #3
 %	\set stemRightBeamCount = #1
-%}
-
-%markWhiteout = {
-%	\once \override Score.RehearsalMark.layer = #3
-%	\once \override Score.RehearsalMark.whiteout = #0.75
-%	\once \override Score.RehearsalMark.whiteout-style = #'outline
 %}
 
 %mmrnDown = {

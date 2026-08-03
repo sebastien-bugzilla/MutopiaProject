@@ -52,7 +52,7 @@ musicCornoIMvtII = \relative c {
 	\partCombineApart << e4.~ {s8 s s}>>
 	e4 e8
 	e( d c) \partCombineAutomatic
-	<< b4.\p(~ {s8 s4-\dimmarkup}>>
+	<< b4.\p(~ {s8 \markEO #'(0 . 4) s4-\dimmarkup}>>
 	b4 c8)
 % Bars 46 to 50
 	b16-. c-.\> e8-. dis-.\!
@@ -65,7 +65,7 @@ musicCornoIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section \mark \default
-	\partCombineApart e4.->\fp
+	\partCombineApart \dynEO #'(-1.3 . -3.5) e4.->\fp
 	b4~ b16. gis32-.
 	gis4.->\fz\>~
 % Bars 61 to 65
@@ -96,7 +96,7 @@ musicCornoIMvtII = \relative c {
 	
 	\partCombineApart << dis4.~ {s8 s s}>>
 	<< dis4. {s8 s s}>> \partCombineAutomatic
-	e4._\fzcresc~
+	<< e4.\fz~ {s16 s-\crescmarkup s4}>>
 	e8 d!-> c->
 % Bars 86 to 90
 	d-> c-> b->
@@ -114,7 +114,7 @@ musicCornoIMvtII = \relative c {
 	
 % Bars 101 to 105
 	
-	\partCombineApart << c4.\fz\>( {s8 s s\!}>>
+	\partCombineApart << c4.\fz\>( {s8 s s16 s\!}>>
 	a4)\p~ a16. f32-.
 	f4.->~
 	f8 r r \partCombineAutomatic
@@ -126,7 +126,7 @@ musicCornoIMvtII = \relative c {
 	R4.*2
 % Bars 111 to 115
 	
-	c4.\p~
+	c4.-\tweak X-offset 0.5 \p~
 	c4~ c16 c-.
 	c4.\fz~
 	c4~ c16 c-.
@@ -139,7 +139,7 @@ musicCornoIMvtII = \relative c {
 % Bars 121 to 125
 	d--( c-- bes--)
 	ees--( d-- ees--)
-	f-.\ff^\secco bes,-. bes-.
+	f-.-\tweak X-offset #-3 \ff^\secco bes,-. bes-.
 	d-. dis-. e-.
 	dis-. e-. e-. \mark \default
 % Bars 126 to 130
@@ -181,8 +181,8 @@ musicCornoIMvtII = \relative c {
 	d8.\fz r16 r8
 % Bars 161 to 165
 	d8.\fz r16 r d
-	dis8.->\fz r16 r dis
-	e8.->\fz r16 r d!\f \mark \default
+	dis8.->-\tweak X-offset 0.5 \fz r16 r dis
+	e8.->-\tweak X-offset 0.5 \fz r16 r d!\f \mark \default
 	c16 r r8 r
 	R4.
 % Bars 166 to 170
@@ -193,10 +193,10 @@ musicCornoIMvtII = \relative c {
 	cis8.-> e16-. d-. cis-.
 	dis8.-> fis16-. e-. dis-.
 % Bars 171 to 175
-	dis4(\ff e8)
+	dis4(-\tweak X-offset 0.5 \ff e8)
 	dis4( e8)
-	dis-.-\dimmarkup e-. e-.\p
-	e4(\pp dis8
+	dis-.-\tweak X-offset 5.5 -\dimmarkup e-. e-.\p
+	e4(-\tweak X-offset 0.8 \pp dis8
 	e) r r
 % Bars 176 to 180
 	R4.*7
@@ -222,7 +222,7 @@ musicCornoIMvtII = \relative c {
 	b8 cis dis16 e
 	b8) r r \partCombineAutomatic
 	cis16\f r r8 dis16 r
-	e4.\fp
+	e4.-\tweak X-offset 0.5 \fp
 	r8 b-.\pp b-.
 % Bar 201
 	b4.\fermata \fine

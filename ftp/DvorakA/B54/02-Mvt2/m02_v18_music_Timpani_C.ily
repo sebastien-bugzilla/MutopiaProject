@@ -4,12 +4,12 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIIMvtII = \relative c {
-	\clef treble
+musicTimpaniMvtII = \relative c {
+	\clef bass
 	\key a \minor
-	\transposition f
+%	\transposition a
 % Bars 1 to 5
-	R4.*57
+	R4.*28
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,20 +20,32 @@ musicTrombeIIMvtII = \relative c {
 	
 % Bars 26 to 30
 	
-% Bars 31 to 35
 	
+	
+	r8 e\pp e
+	a, r r
+% Bars 31 to 35
+	R4.*16
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
+	a16\pp^\solo e' a, r r8
+	a16 e' a, r r8
+	a16\ppp e' a, r r8
+	a16 e' a, r r8
 % Bars 51 to 55
-	
+	a8 r a
+	r a r
+	a r e'16 e
+	a,8 r e'16 e
+	a,8 r e'16 e
 % Bars 56 to 60
-	
-	\section \mark \default
-	R4.*30
+	a,8\pp r a
+	r a-. r \section \mark \default
+	R4.*18
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -41,15 +53,21 @@ musicTrombeIIMvtII = \relative c {
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	
+	<< e'4.:32\pp\< {s8 s s\!}>>
+	<< e4.:32\> {s8 s s\!}>>
+	e8 r r
+	R4.
+	e4.:\pp
 % Bars 81 to 85
-	
+	e:
+	e8 r r
+	R4.*5
 % Bars 86 to 90
 	
 	\section
 	R4.*2
 	\mark \default
-	R4.*33
+	R4.*29
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -62,63 +80,88 @@ musicTrombeIIMvtII = \relative c {
 	
 % Bars 116 to 120
 	
+	
+	
+	<< a,4.\p\startTrillSpan {s8 s4-\crescmarkup}>>
+	a4.\startTrillSpan
 % Bars 121 to 125
-	
-	
-	r8^\secco e'!-.-\tweak X-offset #-4 \ff e-.
-	d-. dis-. e-.
-	fis-. g-. e-. \mark \default
+	<< a\startTrillSpan {s8 s4-\crescmarkup}>>
+	<< a4.\startTrillSpan {s8 s s\stopTrillSpan}>>
+	a8-.\ff^\secco a-. a-.
+	a-. a-. a-.
+	a-. a-. a-. \mark \default
 % Bars 126 to 130
-	b' r r
+	e'-. r r
 	R4.
-	b4.-\tweak X-offset 0.5 \fp\>
-	<< fis4\p~ {s8 s-\dimmarkup}>> fis16. b,32
-	b4\pp r8
+	e4:32\fp\> e16 r\!
+	R4.
+	<< e4.:32\fp\> {s8 s s\!}>>
 % Bars 131 to 135
-	R4.*12
+	e4.:32\pp
+	e:
+	e:
+	e:
+	e:
 % Bars 136 to 140
-	
+	e8 r r
+	R4.*6
 % Bars 141 to 145
 	
 	\section \mark \default
-	R4.*21
+	R4.*16
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
 % Bars 156 to 160
 	
+	
+	
+	r16 a,\p a r r8
+	r16 a a r r8
 % Bars 161 to 165
-	
-	
+	r16 a a r r8
+	R4.*2
 	\mark \default
 	R4.*4
 	
 % Bars 166 to 170
 	
 	
-	b8.-\tweak X-offset -2 \f d16-. cis-. b-.
-	cis8. e16-. d-. cis-.
-	dis8. fis16-. e-. dis-.
+	e'4.:32\p
+	<< e: {s8 s4-\crescmarkup}>>
+	<< e4.:\< {s8 s s\!}>>
 % Bars 171 to 175
-	fis4(\ff e8)
-	a4( g8)
-	fis-. g-. e-.\p
-	e-.\pp e-. dis-.
-	e r r
+	a,16-.\ff a-. a-. a-. a-. a-.
+	a-. a-. a-. a-. a-. a-.
+	a-. a-.-\dimmarkup a-. a-. a-.\p a-.
+	e'-.\pp e-. e-. e-. e-. e-.
+	a,8 r r
 % Bars 176 to 180
-	R4.*22
+	R4.*8
 % Bars 181 to 185
 	
-% Bars 186 to 190
 	
+	
+	r16 a\pp a r r8
+	a4.:32
+% Bars 186 to 190
+	a8 r r
+	a r r
+	r16 a-. a-. r r8
+	a4.:32
+	a8 r r
 % Bars 191 to 195
+	a r r
+	R4.*6
+	
+	
 	
 % Bars 196 to 200
 	
 	
-	b16\f r r8 b16 r
-	b r r8 r
+	e'16\f r r8 e16 r
+	a,8 r r
 	R4.
 % Bar 201
 	R\fermata \fine

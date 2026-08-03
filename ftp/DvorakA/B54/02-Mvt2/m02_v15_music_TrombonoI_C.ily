@@ -65,7 +65,7 @@ musicTrombonoIMvtII = \relative c {
 % Bars 121 to 125
 	
 	
-	r8^\secco ees'-.\ff ees-.
+	r8^\secco ees'-.-\tweak X-offset #-3 \ff ees-.
 	ees-. ees-. ees-.
 	ees-. ees-. ees-. \mark \default
 % Bars 126 to 130
@@ -105,9 +105,9 @@ musicTrombonoIMvtII = \relative c {
 	c-> fis-> e->
 	d-> gis-> fis-> \partCombineAutomatic
 % Bars 171 to 175
-	f!4(\ff e8)
+	f!4(-\tweak X-offset 0.5 \ff e8)
 	b4( c8)
-	b-.-\dimmarkup c-. c-.\p
+	b-.-\tweak X-offset 5.5 -\dimmarkup c-. c-.\p
 	c-.\pp c-. b-.
 	\once \partCombineApart a r r
 % Bars 176 to 180

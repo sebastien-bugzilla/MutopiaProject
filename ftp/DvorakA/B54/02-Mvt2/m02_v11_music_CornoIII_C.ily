@@ -23,7 +23,7 @@ musicCornoIIIMvtII = \relative c {
 	
 	b''4.\f
 % Bars 26 to 30
-	\partCombineApart r8 r c16.(\p\< b32)\!
+	\partCombineApart r8 r \dynEO #'(0.5 . -2.5) c16.(-\offset X-offset #-1.4 \p\< b32)\!
 	ais4(\fz b8)~
 	b4~ b16 r
 	R4.*2
@@ -151,20 +151,20 @@ musicCornoIIIMvtII = \relative c {
 	R4.*5
 % Bars 161 to 165
 	
-	\partCombineApart fis,8.->\fz r16 r fis
-	g8.->\fz r16 r gis\f \mark \default
+	\partCombineApart fis,8.->-\tweak X-offset -1.5 \fz r16 r fis
+	g8.->-\tweak X-offset -1.5 \fz r16 r gis\f \mark \default
 	a32-.\fp c-. c-. c-.  c-. c-. c-. c-. c-. c-. c-. c-. 
 	c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. c-. \partCombineAutomatic
 % Bars 166 to 170
 	R4.*2
 	
-	b4.->\f
+	b4.->-\tweak X-offset -2 \f
 	b->
 	b->
 % Bars 171 to 175
 	c4(\ff b8)
 	c4( b8)
-	c-.-\dimmarkup b-. bes-.\p
+	c-.-\tweak X-offset 5.5 -\dimmarkup b-. bes-.\p
 	b!-.\pp b-. b-.
 	b16 b8 b b16
 % Bars 176 to 180

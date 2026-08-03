@@ -32,14 +32,14 @@ musicFagottoIMvtII = \relative c {
 	
 	e4.\f(~
 % Bars 26 to 30
-	e8 f16) r \partCombineApart f'16.(\< e32)\!
+	e8 f16) r \partCombineApart \hairpinShorten #'(0 . -4) f'16.(\< e32)\!
 	dis4\brack\fz e16( d)
 	d8( c b16 a)
 	c16-.(_\pdim bes-. a8-. gis-.)
 	a16 r r e'(\p c b)
 % Bars 31 to 35
 	a8.( b32 c b16 a)
-	g8( e) r16 e(
+	g8( e) r16 \shape #'(()((0 . -1)(0 . -0.5)(0 . -0.5)(0 . 0))) Slur e(
 	a8 bes a16 g!
 	a8.) c16( a g)
 	f8.(\< g32 a g16 f)\!
@@ -56,7 +56,7 @@ musicFagottoIMvtII = \relative c {
 	b!8(\p a-\dimmarkup b)
 	d(\> c) b16-.(\! a-.)
 % Bars 46 to 50
-	\partCombineApart a(-. bes-. a8-. gis-.) \partCombineAutomatic
+	\partCombineApart \shape #'((0 . 0)(0 . -0.9)(0 . -0.9)(0 . 0)) Slur \beamOffset #'(-0.5 . -0.5) a(-. bes-. a8-. gis-.) \partCombineAutomatic
 	e4.\p~
 	e~-\dimmarkup
 	e8\pp r r
@@ -64,7 +64,7 @@ musicFagottoIMvtII = \relative c {
 % Bars 51 to 55
 	
 	
-	\partCombineApart r8 r16 e'(\p c b
+	\partCombineApart r8 r16 e'(-\offset X-offset -1 \p c b
 	a) r r8 r \partCombineAutomatic
 	R4.*3
 % Bars 56 to 60
@@ -92,11 +92,11 @@ musicFagottoIMvtII = \relative c {
 	d
 	cis8) \partCombineAutomatic r r
 % Bars 81 to 85
-	\partCombineApart gis'(\p fis e) \partCombineAutomatic
+	\partCombineApart \beamOffset #'(-0.3 . -0.3) gis'(-\offset X-offset -1 \p fis e) \partCombineAutomatic
 	<< d4.\p~ {s8 s s\<}>>
 	<< d4. {s8 s s\!}>>
-	g,,4._\fzcresc~
-	g~
+	<< g,,4.\fz~ {s16 s-\crescmarkup s4}>>
+	g4.~
 % Bars 86 to 90
 	g~
 	g~ \section \key a \minor
@@ -109,7 +109,7 @@ musicFagottoIMvtII = \relative c {
 	
 % Bars 101 to 105
 	
-	\partCombineApart << bes'4.->\fz\>~ {s8 s s\!}>>
+	\partCombineApart << bes'4.->\fz\>~ {s8 s s16 s\!}>>
 	bes4.\p
 	R4.*6
 	
@@ -118,10 +118,10 @@ musicFagottoIMvtII = \relative c {
 	
 	
 	
-	<< c4.\fp\> {s8 s s\!}>>
+	<< c4.-\offset X-offset -2 \fp {s8 \hairpinShorten #'(-3.5 . 0) s\> s16 s\!}>>
 % Bars 111 to 115
-	bes8( a-\dimmarkup g)
-	g4.\pp~
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur bes8( a-\dimmarkup g)
+	g4.-\offset X-offset -1.5 \pp~
 	g
 	<< bes4.~ {s8 s4-\crescmarkup}>>
 	bes4.
@@ -139,7 +139,7 @@ musicFagottoIMvtII = \relative c {
 	f-. f-. f-. \mark \default
 % Bars 126 to 130
 	e''4.\f
-	<< b4->~ {s8 s-\dimmarkup}>> b16. e,32
+	<< b4->~ {s8 s-\dimmarkup}>> \beamOffset #'(-0.3 . -0.3) b16. e,32
 	e4\p r8
 	R4.*13
 % Bars 131 to 135
@@ -160,10 +160,10 @@ musicFagottoIMvtII = \relative c {
 	<< a~ {s8 s s}>>
 % Bars 151 to 155
 	a16-. a-. a8-. b-.
-	a16 r r e( fis gis
+	a16 \once \partCombineAutomatic r r e( fis gis
 	a8) r r \partCombineAutomatic
 	r g!8.(\p gis16)
-	\partCombineApart a8([ bes)] a16( g!) \partCombineAutomatic
+	\partCombineApart a8([ bes)] \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur a16( g!) \partCombineAutomatic
 % Bars 156 to 160
 	f32( c' a g f a g f e g f e)
 	d( e f g a c bes a d c b g

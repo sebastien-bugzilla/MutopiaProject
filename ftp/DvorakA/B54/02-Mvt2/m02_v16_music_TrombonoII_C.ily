@@ -65,7 +65,7 @@ musicTrombonoIIMvtII = \relative c {
 % Bars 121 to 125
 	
 	
-	r8^\secco c'-.\ff c-.
+	r8^\secco c'-.-\tweak X-offset #-3 \ff c-.
 	c-. c-. c-.
 	b!-. c-. a-. \mark \default
 % Bars 126 to 130
@@ -101,11 +101,11 @@ musicTrombonoIIMvtII = \relative c {
 % Bars 166 to 170
 	
 	
-	g4.->\f
+	g4.->-\tweak X-offset -2 \f
 	a->
 	b->
 % Bars 171 to 175
-	gis4(\ff a8)
+	gis4(-\tweak X-offset 0.5 \ff a8)
 	gis4( a8)
 	gis-. a-. a-.\p
 	a-.\pp a-. gis-.

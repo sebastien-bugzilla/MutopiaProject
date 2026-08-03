@@ -4,10 +4,10 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIIMvtII = \relative c {
-	\clef treble
+musicTrombonoIIIMvtII = \relative c {
+	\clef bass
 	\key a \minor
-	\transposition f
+%	\transposition a
 % Bars 1 to 5
 	R4.*57
 % Bars 6 to 10
@@ -33,7 +33,7 @@ musicTrombeIIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section \mark \default
-	R4.*30
+	\key a \major R4.*30
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -47,7 +47,7 @@ musicTrombeIIMvtII = \relative c {
 % Bars 86 to 90
 	
 	\section
-	R4.*2
+	\key a \minor R4.*2
 	\mark \default
 	R4.*33
 % Bars 91 to 95
@@ -65,15 +65,15 @@ musicTrombeIIMvtII = \relative c {
 % Bars 121 to 125
 	
 	
-	r8^\secco e'!-.-\tweak X-offset #-4 \ff e-.
-	d-. dis-. e-.
-	fis-. g-. e-. \mark \default
+	r8^\secco f-.\ff f-.
+	f-. f-. f-.
+	f-. f-. f-. \mark \default
 % Bars 126 to 130
-	b' r r
+	e-. r r
 	R4.
-	b4.-\tweak X-offset 0.5 \fp\>
-	<< fis4\p~ {s8 s-\dimmarkup}>> fis16. b,32
-	b4\pp r8
+	e4.\fp\> 
+	<< b4\p~ {s8 s-\dimmarkup}>> b16. e,32
+	e4\pp r8
 % Bars 131 to 135
 	R4.*12
 % Bars 136 to 140
@@ -81,12 +81,16 @@ musicTrombeIIMvtII = \relative c {
 % Bars 141 to 145
 	
 	\section \mark \default
-	R4.*21
+	R4.*13
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
 % Bars 156 to 160
+	R4.*8
+	
+	
+	
 	
 % Bars 161 to 165
 	
@@ -97,15 +101,15 @@ musicTrombeIIMvtII = \relative c {
 % Bars 166 to 170
 	
 	
-	b8.-\tweak X-offset -2 \f d16-. cis-. b-.
-	cis8. e16-. d-. cis-.
-	dis8. fis16-. e-. dis-.
+	g4.->\f
+	a->
+	b->
 % Bars 171 to 175
-	fis4(\ff e8)
-	a4( g8)
-	fis-. g-. e-.\p
-	e-.\pp e-. dis-.
-	e r r
+	c4\ff c8
+	c4 c8
+	c-.-\offset X-offset 5.5 -\dimmarkup c-. f-.\p
+	e-.\pp e-. e-.
+	a, r r
 % Bars 176 to 180
 	R4.*22
 % Bars 181 to 185
@@ -117,8 +121,8 @@ musicTrombeIIMvtII = \relative c {
 % Bars 196 to 200
 	
 	
-	b16\f r r8 b16 r
-	b r r8 r
+	e'16\f r r8 e16 r
+	a, r r8 r
 	R4.
 % Bar 201
 	R\fermata \fine

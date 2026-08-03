@@ -122,7 +122,7 @@ musicCornoIVMvtII = \relative c {
 	g-. g-. g-.
 	fis-. g-. g-. \mark \default
 % Bars 126 to 130
-	<< b!4.\fp\>~ {s8 s s\!}>>
+	<< b!4.-\offset X-offset 0.5 \fp\>~ {s8 s s\!}>>
 	b8 r r
 	R4.*15
 % Bars 131 to 135
@@ -137,9 +137,9 @@ musicCornoIVMvtII = \relative c {
 	d,4\pp r8
 	R4.*4
 % Bars 151 to 155
-	r8 b-.\pp b-.
+	r8 \dynEO #'(-2.5 . 2.5) b-.\pp b-.
 	e16 r r8 r
-	b4.\pp
+	b4.-\offset X-offset 1.5 \pp
 	d4~ d16 b
 	b8(-- d-- g--)
 % Bars 156 to 160
@@ -154,7 +154,7 @@ musicCornoIVMvtII = \relative c {
 % Bars 166 to 170
 	R4.*2
 	
-	b4.->\f
+	b4.->-\tweak X-offset -2 \f
 	b->
 	b->
 % Bars 171 to 175
