@@ -35,7 +35,7 @@ musicOboeIIMvtI = \relative c {
 		d'2\fz~
 		d8 r r4
 		g,2\fz~
-		g8 r_\crescmarkup r4
+		g8 r r4-\crescmarkup
 % Bars 31 to 35
 		bes2\fz~
 		bes8 r r4
@@ -50,10 +50,10 @@ musicOboeIIMvtI = \relative c {
 		r4 bes~\f\<
 % Bars 41 to 45
 		bes2\!
-		c8 r \tuplet 3/2 4 {d-.\f c-. bes-.
+		c8 r \tuplet 3/2 4 {d-.-\tweak X-offset #-0.5 \f c-. bes-.
 		a-.[ g-. c-.] bes-.\< a-. g-.}
 		f16( e d c') \tuplet 3/2 4 {c8-. c-. c-.\!} \mark \default
-		a4->\ff a8-. a-.
+		a4->-\tweak X-offset 0 \ff a8-. a-.
 % Bars 46 to 50
 		f'4( e8) e
 		f-.\noBeam c(->\fz b c)
@@ -88,8 +88,8 @@ musicOboeIIMvtI = \relative c {
 	
 % Bars 81 to 85
 		
-		r8 aes,4.\fz
-		r8 aes4.\fz
+		r8 aes,4.-\offset X-offset 0.5 \fz
+		r8 aes4.-\offset X-offset 0.5 \fz
 		r8 aes4.->\brack\fz
 		r8 aes4.->\brack\fz
 % Bars 86 to 90
@@ -232,7 +232,7 @@ musicOboeIIMvtI = \relative c {
 	
 	<< d,2\pp\<~ {s8 s s s\!}>>
 % Bars 226 to 230
-	<< d2 {s4\> s\!}>> \mark \default
+	<< d2 {s8\> s\! s s}>> \mark \default
 	R2*8
 % Bars 231 to 235
 	
@@ -313,9 +313,9 @@ musicOboeIIMvtI = \relative c {
 % Bars 311 to 315
 	r ees(\fz\> d bes
 	ees a, bes)\! r
-	g-.-\dimmarkup ges( f d
+	g-. ges(^\dimmarkup f d
 	ees4 d8) r
-	g(\p ges-\dimmarkup f d
+	g(-\offset X-offset -1 \p ges^\dimmarkup f d
 % Bars 316 to 320
 	ees4 d8) r
 	R2*12
@@ -325,7 +325,7 @@ musicOboeIIMvtI = \relative c {
 	
 	
 	\mark \default
-	\tuplet 3/2 4 {c'8[\pp c c]  c c c
+	\tuplet 3/2 4 {c'8[-\tweak X-offset -1.5 \pp c c]  c c c
 	c4.:16 c:
 % Bars 331 to 335
 	c: c:
@@ -360,7 +360,7 @@ musicOboeIIMvtI = \relative c {
 	d2\fz~
 	d8 r r4
 % Bars 361 to 365
-	c4\ff c8. g16
+	c4-\offset X-offset #-0.5 \ff c8. g16
 	d'4 r
 	c4 c8. g16
 	d'4 r
@@ -374,7 +374,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 371 to 375
 	a-.[ g-. c-.] bes-._\crescmarkup a-. g-.}
 	f16( e d c') \tuplet 3/2 4 {c8-. c-. c-.} \mark \default
-	a4\ff~ a8 f'8-.
+	a4-\offset X-offset 0.5 \ff~ a8 f'8-.
 	f4( e)
 	f8-.\noBeam c(\fz b c)
 % Bars 376 to 380
@@ -386,7 +386,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 381 to 385
 	f2\fp(~
 	f4 e)
-	f8-.\noBeam << c4.\fz\<~ {s8 s s\!}>>
+	f8-.\noBeam << c4.-\offset X-offset 0.5 \fz\<~ {s8 s s\!}>>
 	c8 d\> e-.\!\noBeam r
 	R2*8
 % Bars 386 to 390
@@ -445,12 +445,12 @@ musicOboeIIMvtI = \relative c {
 	r\> ees
 % Bars 446 to 450
 	r f\!
-	g,2\pp~
+	\dynEO #'(-2.5 . 1.5) g,2\pp~
 	g~
-	g~_\crescmarkup
+	g~-\offset X-offset #3 _\crescmarkup
 	g~
 % Bars 451 to 455
-	g4\brack\f f_\dimmarkup~
+	g4\brack\f f-\offset X-offset 0.5 _\dimmarkup~
 	f2~
 	f
 	e(\p \markk
@@ -460,7 +460,7 @@ musicOboeIIMvtI = \relative c {
 % Bars 461 to 465
 	
 	
-	a2->\ff
+	a2->-\tweak X-offset #0.3 \ff
 	b->
 	cis->
 % Bars 466 to 470

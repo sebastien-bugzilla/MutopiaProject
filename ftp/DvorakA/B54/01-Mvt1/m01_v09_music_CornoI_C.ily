@@ -34,10 +34,10 @@ musicCornoIMvtI = \relative c {
 		d8 r r4
 		R2*2
 		
-		d4\fz d8.-> b16-.
-		d4._\crescmarkup b8
+		d4-\tweak X-offset 0.2 \fz d8.-> b16-.
+		d4.-\offset X-offset 5.6 -\crescmarkup b8
 % Bars 31 to 35
-		f'4\fz f8. c16
+		f'4-\tweak X-offset 0.2 \fz f8. c16
 		f4. c8
 		b\f r r4
 		c8 r r4
@@ -70,7 +70,7 @@ musicCornoIMvtI = \relative c {
 		
 		
 		
-		\partCombineApart r8 fis-.\mf dis-. e-.
+		\partCombineApart r8 fis-.-\offset X-offset -1.5 \mf dis-. e-.
 		fis-. b,-. e-. r
 % Bars 61 to 65
 		r b4.->\fp~
@@ -96,7 +96,7 @@ musicCornoIMvtI = \relative c {
 		\partCombineApart r8 ees4->\fz r8
 		r ees4->\fz r8 \partCombineAutomatic
 		r ees4\fz r8
-		r ees4.\fz_\brackM\crescmarkup
+		r \markEO #'(3 . 2) ees4.\fz_\brackM\crescmarkup
 % Bars 86 to 90
 		r8 dis4.->\brack\fz
 		r8 dis4.->\brack\fz
@@ -157,7 +157,7 @@ musicCornoIMvtI = \relative c {
 		d~
 		d~
 		d \partCombineAutomatic \mark \default
-		d2\ff~
+		d2-\tweak X-offset #0.2 \ff~
 % Bars 146 to 150
 		d
 		d8 r r4
@@ -187,7 +187,7 @@ musicCornoIMvtI = \relative c {
 % Bars 181 to 185
 		
 		
-		\partCombineApart f2->\fp~
+		\partCombineApart \dynEO #'(-2.5 . -2.5) f2->\fp~
 		f8 r d-. r
 		b-. r g-. r \partCombineAutomatic
 % Bars 186 to 190
@@ -307,7 +307,7 @@ musicCornoIMvtI = \relative c {
 % Bars 296 to 300
 	ees~_\crescmarkup
 	ees
-	f,8(\brack\f c'4 f,8)~
+	f,8(-\offset X-offset -2 \brack\f c'4 f,8)~
 	f bes4( f8)~
 	f bes4(_\dimmarkup g8)
 % Bars 301 to 305
@@ -364,7 +364,7 @@ musicCornoIMvtI = \relative c {
 	
 % Bars 351 to 355
 	\partCombineApart b2\p\<
-	<< d {s8 s s s\!}>> \partCombineAutomatic
+	<< d {s8 s s s16 s\!}>> \partCombineAutomatic
 	d2->\f~
 	d4 r
 	f2->\f~
@@ -439,7 +439,7 @@ musicCornoIMvtI = \relative c {
 	c4 b)
 	c8(\< e d c~\!
 	c4\> b\!)
-	c4(-\crescmarkup e~
+	\shape #'((0 . 2)(0 . -0.5)(0 . -0.5)(0 . 2)) Slur c4(-\crescmarkup e~
 	e8 d4 c8)
 % Bars 431 to 435
 	c4(-\piuf cis
@@ -451,10 +451,10 @@ musicCornoIMvtI = \relative c {
 	d-\dimmarkup
 	c\>~
 	<< c {s8 s s s\!}>>
-	bes4(\p\< b\!
+	\hairpinShorten #'(0 . -3) bes4(\p\< b\!
 	c8 ees4\> c8)\!
 % Bars 441 to 445
-	bes4(\< b\!
+	\hairpinShorten #'(0 . -3) bes4(\< b\!
 	c8 ees4\> c8)\!
 	aes4( a
 	bes8-\dimmarkup d4 bes8)
@@ -484,7 +484,7 @@ musicCornoIMvtI = \relative c {
 	d2->
 	e-> \partCombineAutomatic
 % Bars 466 to 470
-	f\fz
+	f-\tweak X-offset #0.3 \fz
 	R2*5
 % Bars 471 to 475
 	

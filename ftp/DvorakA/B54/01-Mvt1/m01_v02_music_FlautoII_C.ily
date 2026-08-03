@@ -41,10 +41,10 @@ musicFlautoIIMvtI = \relative c {
 		c8 r r4
 		d2->~\fz
 		d8 r r4
-		g,4\fz r
+		\dynEO #'(0 . 2) g,4\fz r
 		r r8_\crescmarkup g
 % Bars 31 to 35
-		bes4->\brack\fz r
+		\dynEO #'(0 . 2) bes4->\brack\fz r
 		r r8 bes
 		c4\f c8. g16
 		bes8 r r4
@@ -73,7 +73,7 @@ musicFlautoIIMvtI = \relative c {
 		a( aes) g16-. e-. c-. r
 		f4-> a16-. g-. f8-.
 		g4-> bes16-. a-. g8-.
-		a8-. e'4-> e8~
+		a8-. e'4-> \shape #'((0 . -0.3)(0 . -0.3)(0 . -0.3)(0.0 . -0.3)) Tie e8~
 		e e-. a,-. r
 % Bars 61 to 65
 		R2
@@ -216,7 +216,7 @@ musicFlautoIIMvtI = \relative c {
 	e b' c~ c b e,~
 	e b' c~ c b e,} \unSubdiviseBeam 
 % Bars 211 to 215
-	fis\fz r r4
+	\dynEO #'(0.5 . 2) fis\fz r r4
 	R2
 	c'2\fp->~
 	c8 r a-. r
@@ -230,7 +230,7 @@ musicFlautoIIMvtI = \relative c {
 	fis4..( g16)
 	<< g2~ {s8\< s s s\!}>>
 % Bars 226 to 230
-	<< g4. {s8\> s s\!}>> r8 \mark \default
+	<< g4. {s8\> s\! s}>> r8 \mark \default
 	R2*14
 % Bars 231 to 235
 	
@@ -410,14 +410,14 @@ musicFlautoIIMvtI = \relative c {
 % Bars 426 to 430
 	
 % Bars 431 to 435
-	f,4(-\piuf fis\<
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . -2)) Slur f,4(-\piuf fis\<
 	g8\! c4\> g8)\!
-	f4( fis\<
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . -2)) Slur f4( fis\<
 	g8\! c4\> g8)\!
 	bes2~
 % Bars 436 to 440
 	bes~
-	bes~\>
+	\hairpinShorten #'(0 . -3) bes~\>
 	bes4( f)\!
 	g8\p r r4
 	R2*3
@@ -435,11 +435,11 @@ musicFlautoIIMvtI = \relative c {
 	r4 bes,\p(
 	<< c2\> {s8 s s s\!}>>
 	bes2) \markk
-	<< a(\mf\< {s8 s s s\!}>>
+	<< a(\mf\< {s8 s s s16 s\!}>>
 % Bars 456 to 460
 	<< g2) {s8\> s s s\!}>>
 	f4(\< a\!
-	<< g2)\> {s8 s s\! s_\crescmarkup }>>
+	<< g2)\> {s8 s\crescD s s }>>
 	f4(\f a
 	g2)\<
 % Bars 461 to 465

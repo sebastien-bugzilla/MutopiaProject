@@ -29,7 +29,7 @@ musicTrombonoIIIMvtI = \relative c {
 	
 % Bars 41 to 45
 		
-		r4 \tuplet 3/2 4 {c8-.\mf d-. e-.
+		r4 \tuplet 3/2 4 {c8-.-\offset X-offset -1 \mf d-. e-.
 		f-.[ dis-. e-.] f-.\< g-. a-.}
 		bes-._\fmarkup r \tuplet 3/2 4 {c,8-. d!-. e-.\!} \mark \default
 		f->\ff a,-. c-> cis-.
@@ -274,7 +274,7 @@ musicTrombonoIIIMvtI = \relative c {
 	
 	
 	
-	r4 \tuplet 3/2 4 {c8-.->\f d-. e-.
+	r4 \tuplet 3/2 4 {c8-.->-\offset X-offset -1 \f d-. e-.
 % Bars 371 to 375
 	f-.[ dis-. e-.] f-._\crescmarkup g-. a-.}
 	bes-. r \tuplet 3/2 4 {c,-. d-. e-.} \mark \default

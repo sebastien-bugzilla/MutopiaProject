@@ -33,10 +33,10 @@ musicTimpaniMvtI = \relative c {
 		c8 r r4
 		c2:\<
 		c8\! r r4
-		<< c2:\< {s8 s s s\!}>>
+		<< c2:\< {s8 s s s16 s\!}>>
 		c4 r
 % Bars 31 to 35
-		<< c2:\fz\< {s8 s s s\!}>>
+		<< c2:\fz\< {s8 s s s16 s\!}>>
 		c4 r
 		c\fz r
 		c r
@@ -372,8 +372,8 @@ musicTimpaniMvtI = \relative c {
 % Bars 456 to 460
 	c:
 	c:
-	c:_\crescmarkup
-	c:\f\<
+	<< c: {s8 s4._\crescmarkup}>>
+	c2:\f\<
 	c:
 % Bars 461 to 465
 	c:

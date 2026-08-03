@@ -30,7 +30,7 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 41 to 45
 		
 		
-		r4 \tuplet 3/2 4 {f8-.\f\< g-. a-.
+		r4 \tuplet 3/2 4 {f8-.-\offset X-offset -1 \f g-. \hairpinShorten #'(-1 . 0) a-.\<
 		bes-.[ a-. bes-.]} c-. r\! \mark \default
 		R2
 % Bars 46 to 50
@@ -236,7 +236,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 	R2*2
 	
-	r8 bes4->\ff bes8~
+	r8 \dynEO #'(0.5 . 0.3) bes4->\ff bes8~
 % Bars 306 to 310
 	bes bes4 bes8
 	bes8 r r4
@@ -276,9 +276,9 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 366 to 370
 	
 % Bars 371 to 375
-	r4 \tuplet 3/2 4 {f8-._\fcresc g-. a-.
+	r4 \tuplet 3/2 4 {f8-.-\offset X-offset -1 _\fcresc g-. a-.
 	bes-.[ a-. bes-.] } c-. r \mark \default
-	f,->\ff a-. c-> cis-.
+	\dynEO #'(-2.5 . 3) f,->\ff a-. c-> cis-.
 	d-> des-. c-> bes-.
 	a r r4
 % Bars 376 to 380

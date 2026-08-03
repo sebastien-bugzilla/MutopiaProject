@@ -342,7 +342,7 @@ musicTrombeIIMvtI = \relative c {
 % Bars 461 to 465
 	
 	
-	c4\ff cis
+	c4-\tweak X-offset #0.3 \ff cis
 	d2->
 	e->
 % Bars 466 to 470

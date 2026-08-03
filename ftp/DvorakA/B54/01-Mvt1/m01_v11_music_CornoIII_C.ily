@@ -20,7 +20,7 @@ musicCornoIIIMvtI = \relative c {
 		g~
 		g
 		e\<
-		<< g {s8 s s s\!}>>
+		<< g {s8 s s s16 s\!}>>
 % Bars 11 to 15
 		g2\fz\>~
 		<< g~ {s8 s s s\!}>>
@@ -74,12 +74,12 @@ musicCornoIIIMvtI = \relative c {
 		b b-. b-. g'-.
 		g \partCombineAutomatic r r4
 		R2
-		\partCombineApart r8 e'(\mf ees d)
+		\partCombineApart r8 e'(-\offset X-offset -2 \mf ees d)
 % Bars 56 to 60
 		c4( b8) r \partCombineAutomatic
 		R2*2
 		
-		\partCombineApart r8 dis-.\mf b-. cis-. \partCombineAutomatic
+		\partCombineApart r8 dis-.-\offset X-offset -1.5 \mf b-. cis-. \partCombineAutomatic
 		dis-. b-. e-. r
 % Bars 61 to 65
 		R2
@@ -106,7 +106,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 86 to 90
 		r4 a!8-> r
 		r4 a8-> r
-		b,->\f b'-> b,-> b'->
+		\aIIXoffset #-1 b,->\f b'-> b,-> b'->
 		b,-> b'-> b,-> b'->
 		b,-. b'-. b-. b-.
 % Bars 91 to 95
@@ -121,7 +121,7 @@ musicCornoIIIMvtI = \relative c {
 		
 		
 		
-		\partCombineApart r4 fis8\p gis
+		\partCombineApart r4 \dynEO #'(-1 . -1) fis8\p gis
 		<< a2\< {s8 s s s\!}>>
 % Bars 106 to 110
 		a4.(\> gis8)\!
@@ -192,7 +192,7 @@ musicCornoIIIMvtI = \relative c {
 		gis2~_\pcrescmolto
 % Bars 166 to 170
 		gis
-		fis2\ff~
+		fis2-\tweak X-offset #-1.5 \ff~
 		fis4 r
 		R2*4
 		
@@ -220,7 +220,7 @@ musicCornoIIIMvtI = \relative c {
 		\alternative {
 			\volta 1 {
 				g2\pp~
-				g\laissezVibrer
+				g2*7/8~ \once \hideNotes g16
 			}
 			\volta 2 {
 				bes2~\pp
@@ -338,7 +338,7 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	
-	r8 f4.->\fz~
+	r8 \dynEO #'(-2 . 3) f4.->\fz~
 % Bars 306 to 310
 	f4 f
 	bes2\f~
@@ -394,7 +394,7 @@ musicCornoIIIMvtI = \relative c {
 	
 	\partCombineApart b2->~
 	b4 r
-	c2->\f~
+	\dynEO #'(-1 . -4.5) c2->\f~
 % Bars 356 to 360
 	c4 r \partCombineAutomatic
 	b2\f~
@@ -412,7 +412,7 @@ musicCornoIIIMvtI = \relative c {
 	g~
 	<< g~ {s4 s_\crescmarkup}>>
 	g2~
-	g8-. r \tuplet 3/2 4 {r8 g-.\f g-.
+	g8-. r \tuplet 3/2 4 {r8 \dynEO #'(-2 . 3) g-.\f g-.
 % Bars 371 to 375
 	g-.[ g-. g-.]  g-._\crescmarkup g-. g-.
 	g-.[ g-. g-.]  g-. g-. g-.} \mark \default
@@ -481,15 +481,15 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	\markk
-	g'4(\mf\< bes\!
+	\hairpinShorten #'(0 . -3) g'4(\mf\< bes\!
 % Bars 456 to 460
 	<< b!2)\> {s8 s s s\!}>>
 	c4(\< bes\!
-	<< b!2)\> {s8 s s\! s_\crescmarkup}>> 
-	c4(\f\< bes\!
+	<< b!2)\> {s8 s\crescD s s}>> 
+	\hairpinShorten #'(0 . -3) c4(\f\< bes\!
 	<< b!2)\> {s8 s s s\!}>>
 % Bars 461 to 465
-	c4(\< bes
+	\hairpinShorten #'(0 . -9) c4(\< bes
 	b!2)\!
 	g2\ff
 	\partCombineApart c4-> a->
@@ -500,7 +500,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 471 to 475
 	
 	r4 \once \partCombineApart g8 r
-	g2->\ff~
+	g2->-\tweak X-offset #-1 \ff~
 	g4 g4->
 	g2->~
 % Bars 476 to 480

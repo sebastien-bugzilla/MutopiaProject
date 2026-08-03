@@ -76,7 +76,7 @@ musicContrabassoMvtI = \relative c {
 		f4 r
 		R2
 % Bars 56 to 60
-		r4 r8. \tuplet 3/2 16 {c32(\f\< d e)\!}
+		r4 r8. \tuplet 3/2 16 {c32(-\offset X-offset -1 \f\< d e)\!}
 		f2\fp\>~
 		f8\! r r4
 		R2
@@ -86,7 +86,7 @@ musicContrabassoMvtI = \relative c {
 		r e8\p^\pizz r
 		a r r4
 		r e8 r
-		a r r_\dimmarkup e
+		a r_\dimmarkup r e
 % Bars 66 to 70
 		a r r e
 		a\> r r e
@@ -110,7 +110,7 @@ musicContrabassoMvtI = \relative c {
 		des4\p des8->\f r
 		c4\p c8->\f r
 		c4\p c8->\f r
-		ces4\p ces8\f_\brackM\crescmarkup r
+		ces4\p ces8-\offset X-offset #-2 -\fbrackcresc r
 % Bars 86 to 90
 		b4\p b8\f r
 		b4\p b8\f r
@@ -128,7 +128,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 101 to 105
 		d2(\p\<
 		gis,)
-		g!\>
+		<< g! {s4\! s\>}>>
 		g4 g\!
 		fis\p\< r8 fis'
 % Bars 106 to 110
@@ -389,12 +389,12 @@ musicContrabassoMvtI = \relative c {
 	r des
 	R2
 	r4 des
-	r des_\dimmarkup
+	r des-\offset X-offset #-3 _\dimmarkup
 % Bars 326 to 330
 	r des
 	R2*2
 	\mark \default
-	c2\pp~^\arco
+	c2\pp~-\offset X-offset -4 ^\arco
 	c~
 % Bars 331 to 335
 	c~
@@ -443,7 +443,7 @@ musicContrabassoMvtI = \relative c {
 	c_\crescmarkup~
 	c
 	c\fz~
-	c4 \tuplet 3/2 4 {c8->_\piuf d-> e->
+	c4 \tuplet 3/2 4 {\markEO #'(-1 . 1) c8->_\piuf d-> e->
 % Bars 371 to 375
 	\subdiviseBeam f-> dis e f->_\crescmarkup g a
 	bes-> a bes c-> d e} \mark \default
@@ -541,9 +541,9 @@ musicContrabassoMvtI = \relative c {
 	bes,4\> r8 bes
 	c4 r8 c\!
 	c4\p r8 c \markk
-	f,2\mf\<
+	\hairpinShorten #'(0 . -1.5) f,2\mf\<
 % Bars 456 to 460
-	f4.\> f8\!
+	\hairpinShorten #'(3 . 0) f4.\> f8\!
 	f2
 	<< f4. {s8 s4_\crescmarkup}>> f8
 	f'2:16\f
@@ -567,7 +567,7 @@ musicContrabassoMvtI = \relative c {
 	a8(\! c4\> g8)\!
 	f4(\< g)
 % Bars 476 to 480
-	a8(\! c4\> g8)\!
+	a8(\! \hairpinShorten #'(0 . -5) c4\> g8)\!
 	f4( g)
 	a8( c4 g8)
 	f4(_\dimmarkup g)

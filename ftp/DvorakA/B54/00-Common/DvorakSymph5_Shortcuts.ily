@@ -68,6 +68,7 @@ fzbrackespres = \markup {\hspace #-0.55 \dynamic fz \bracket \with-true-dimensio
 fzpocoapococresc = \markup {\hspace #-0.55 \dynamic fz \italic "poco a poco cresc."}
 fzdim = \markup {\hspace #-0.55 \dynamic fz \italic dim. }
 fzmarkup = \markup {\hspace #-0.55 \dynamic fz}
+fzbrackcresc = \markup {\hspace #-0.55 \dynamic fz \bracket \with-true-dimensions \italic cresc. }
 %--------------------
 % dynamics f
 %--------------------
@@ -79,6 +80,7 @@ fmarkup = \markup {\hspace #0.02 \dynamic f}
 fpesante = \markup {\hspace #0.02 \dynamic f \italic pesante}
 fmarc = \markup {\hspace #0.02 \dynamic f \italic marc.}
 fdim = \markup {\hspace #0.02 \dynamic f \italic dim.}
+fbrackcresc = \markup {\hspace #0.02 \dynamic f \bracket \with-true-dimensions \italic cresc.}
 %--------------------
 % dynamics rf
 %--------------------
@@ -204,6 +206,16 @@ timpinasdes = \markup {
 		\lower #1 "Timp." "in As, Des"
 	}
 }
+clina = \markup {
+	\center-column {
+		\lower #1 "Cl. in" "A"
+	}
+}
+clinb = \markup {
+	\center-column {
+		\lower #1 "Cl. in" "B"
+	}
+}
 
 markk = \mark #11
 
@@ -315,13 +327,61 @@ endVolta = {
 	\set Score.repeatCommands = #'((volta #f))
 }
 
-%aIIXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override CombineTextScript.X-offset = #offset
-%	#}
-%)
+hairpinShorten = #(define-music-function
+	(shortLength)
+	(pair?)
+	#{
+		\once \override Hairpin.shorten-pair = #shortLength
+	#}
+)
+
+dynEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-offset = #offset
+		\once \override DynamicText.whiteout = #1.5
+		\once \override DynamicText.whiteout-style = #'outline
+	#}
+)
+
+markEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TextScript.layer = #3
+		\once \override TextScript.extra-offset = #offset
+		\once \override TextScript.whiteout = #1.5
+		\once \override TextScript.whiteout-style = #'outline
+	#}
+)
+
+aIIXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override CombineTextScript.X-offset = #offset
+	#}
+)
+
+beamOffset = #(define-music-function
+	(position)
+	(pair?)
+	#{
+		\once \offset positions #position Beam
+	#}
+)
+
+markXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
+
+
+
 
 %aIIOmit = \once \omit Voice.CombineTextScript
 
@@ -338,14 +398,6 @@ endVolta = {
 %	(number?)
 %	#{
 %		\once \override Voice.Arpeggio.padding = #padding
-%	#}
-%)
-
-%beamOffset = #(define-music-function
-%	(position)
-%	(pair?)
-%	#{
-%		\once \offset positions #position Beam
 %	#}
 %)
 
@@ -400,24 +452,6 @@ endVolta = {
 %	#}
 %)
 
-%dynEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override DynamicText.extra-offset = #offset
-%		\once \override DynamicText.whiteout = ##t
-%		\once \override DynamicText.whiteout-style = #'outline
-%	#}
-%)
-
-%hairpinShorten = #(define-music-function
-%	(shortLength)
-%	(pair?)
-%	#{
-%		\once \override Hairpin.shorten-pair = #shortLength
-%	#}
-%)
-
 %hairpinEO = #(define-music-function
 %	(offset)
 %	(pair?)
@@ -457,17 +491,6 @@ endVolta = {
 %	\set stemRightBeamCount = #1
 %}
 
-%markEO = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TextScript.layer = #3
-%		\once \override TextScript.extra-offset = #offset
-%		\once \override TextScript.whiteout = ##t
-%		\once \override TextScript.whiteout-style = #'outline
-%	#}
-%)
-
 %markWhiteout = {
 %	\once \override Score.RehearsalMark.layer = #3
 %	\once \override Score.RehearsalMark.whiteout = #0.75
@@ -496,14 +519,6 @@ endVolta = {
 %	#}
 %)
 
-
-%markXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
-%	#}
-%)
 
 %markYoffset = #(define-music-function
 %	(offset)

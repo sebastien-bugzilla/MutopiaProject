@@ -29,7 +29,7 @@ musicTrombeIMvtI = \relative c {
 	
 % Bars 41 to 45
 		
-		r4 \tuplet 3/2 4 {r8 g''\f g
+		r4 \tuplet 3/2 4 {r8 \aIIXoffset #-3 g''\f g
 		g[ g g] g\< g g
 		g[ g g] g g g\!} \mark \default
 		g4\ff e16-. d-. c8-.
@@ -280,7 +280,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 371 to 375
 	g-.[ g-. g-.] g-._\crescmarkup g-. g-.
 	g-.[ g-. g-.] g-. g-. g-.} \mark \default
-	g4->\ff e16-. d-. c8-.
+	\dynEO #'(-1 . 0) g4->\ff e16-. d-. c8-.
 	d4-> f16-. e-. d8-.
 	e8-. g4-> g8~
 % Bars 376 to 380

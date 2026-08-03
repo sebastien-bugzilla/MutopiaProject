@@ -58,7 +58,8 @@
 		\override TupletBracket.staff-padding = ##f
 		\override MultiMeasureRest.space-increment = 0
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
-		
+		\override AccidentalCautionary.avoid-slur = #'ignore
+		\override Accidental.avoid-slur = #'ignore
 %		\override StaffSymbol.transparent = ##t
 	}
 	\context {

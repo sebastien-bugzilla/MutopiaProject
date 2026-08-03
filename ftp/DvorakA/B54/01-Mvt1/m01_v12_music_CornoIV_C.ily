@@ -20,7 +20,7 @@ musicCornoIVMvtI = \relative c {
 		c~
 		c
 		a\<
-		<< g {s8 s s s\!}>>
+		<< g {s8 s s s16 s\!}>>
 % Bars 11 to 15
 		g2\fz\>~
 		<< g~ {s8 s s s\!}>>
@@ -43,10 +43,10 @@ musicCornoIVMvtI = \relative c {
 		g8 r r g
 		a2\fz~
 		a4 r8 a
-		g,2_\fbrackz~
+		g,2-\offset X-offset 1 _\fbrackz~
 		g4 r8_\crescmarkup g8
 % Bars 31 to 35
-		g2\fz~
+		g2-\offset X-offset 0.5 \fz~
 		g4 r8 g
 		g\f r r4
 		f'4-> f8. c16
@@ -62,7 +62,7 @@ musicCornoIVMvtI = \relative c {
 		g8\f r \tuplet 3/2 4 {r8 g g
 		g[ g g]  g\< g g
 		g[ g g]  g g g\!} \mark \default
-		c4\ff g'8-> gis-.
+		c4-\tweak X-offset 0 \ff g'8-> gis-.
 % Bars 46 to 50
 		a-> aes-. g-> f-.
 		e-. g,4-> g8~
@@ -128,7 +128,7 @@ musicCornoIVMvtI = \relative c {
 		R
 		R
 		R
-		R
+		\mmrPos #-6 R
 % Bars 111 to 115
 		e2->\mf~
 		e
@@ -192,14 +192,14 @@ musicCornoIVMvtI = \relative c {
 		d2~
 % Bars 166 to 170
 		d
-		cis2\ff~
+		cis2-\tweak X-offset #-1.5 \ff~
 		cis4 r
 		R2*4
 		
 % Bars 171 to 175
 		
 		
-		r4 cis->\f
+		r4 \dynEO #'(-2.5 . 2) cis->\f
 		a-> e8.-> a16
 		<< cis2\fp\>~ {s8 s s s\!}>>
 % Bars 176 to 180
@@ -226,7 +226,7 @@ musicCornoIVMvtI = \relative c {
 		\alternative {
 			\volta 1 {
 				c2\pp~
-				c\laissezVibrer
+				c2*7/8~ \once \hideNotes c16
 			}
 			\volta 2 {
 				bes2~\pp
@@ -432,7 +432,7 @@ musicCornoIVMvtI = \relative c {
 	e8-. b'4-> b8~
 	b b-. b-. b-.
 % Bars 381 to 385
-	c,\fp e g-> gis
+	c,-\offset X-offset -1.5 \fp e g-> gis
 	a-> aes g-> f
 	e->\< ees d-> b
 	c-.\! fis,-. g( a16 b
@@ -495,7 +495,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 456 to 460
 	<< f2)\> {s8 s s s\!}>>
 	e4(\< g\!
-	<< f2)\> {s8 s s\! s_\crescmarkup}>>
+	<< f2)\> {s8 s\crescD s s}>>
 	e4(\f\< g\!
 	<< f2)\> {s8 s s s\!}>>
 % Bars 461 to 465
@@ -510,7 +510,7 @@ musicCornoIVMvtI = \relative c {
 % Bars 471 to 475
 	
 	r4 g8\f r
-	c,2->\ff~
+	c,2->-\tweak X-offset #-1 \ff~
 	c4 c4->
 	c2->~
 % Bars 476 to 480
@@ -535,7 +535,7 @@ musicCornoIVMvtI = \relative c {
 	
 % Bars 496 to 500
 	
-	c2\p~
+	c2-\offset X-offset #-1.5 \p~
 	c4. r8
 	R2*6
 	

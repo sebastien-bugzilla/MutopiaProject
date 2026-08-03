@@ -34,10 +34,10 @@ musicCornoIIMvtI = \relative c {
 		g8 r r4
 		R2*2
 		
-		b4\fz b8.-> g16-.
+		b4-\tweak X-offset 0.2 \fz b8.-> g16-.
 		b4. g8
 % Bars 31 to 35
-		c4\fz c8. a16
+		c4-\tweak X-offset 0.2 \fz c8. a16
 		c4. a8
 		g\f r r4
 		a8 r r4
@@ -56,7 +56,7 @@ musicCornoIIMvtI = \relative c {
 		c4->\ff e16-. d-. c8-.
 % Bars 46 to 50
 		d4-> f16-. e-. d8-.
-		e-.\noBeam g,4\fz g8~
+		e-.\noBeam g,4-\tweak X-offset 0 \fz g8~
 		g g g4
 		c4-> e!16-. d-. c8-.
 		d4-> f16-. e-. d8-.
@@ -124,7 +124,7 @@ musicCornoIIMvtI = \relative c {
 		
 		R2
 % Bars 111 to 115
-		a'4(\mf\< ais\!
+		\hairpinShorten #'(-0.3 . -3) a'4(\mf\< ais\!
 		<< b2)\> {s8 s s s\!}>>
 		a4(\< ais\!
 		<< b2)\> {s8 s s s\!}>>
@@ -157,7 +157,7 @@ musicCornoIIMvtI = \relative c {
 		
 		
 		\mark \default
-		b2\ff~
+		b2-\tweak X-offset #0.2 \ff~
 % Bars 146 to 150
 		b
 		b8 r r4
@@ -208,7 +208,7 @@ musicCornoIIMvtI = \relative c {
 				c8 r r4
 			}
 			\volta 2 {
-				g2~\pp
+				\dynEO #'(-1 . 0) g2~\pp
 			}
 		}
 	}
@@ -216,10 +216,14 @@ musicCornoIIMvtI = \relative c {
 	g
 	g~
 	g
-	R2*7
-	
+	R2
+	R
 % Bars 201 to 205
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	R
+	R
+	R
 % Bars 206 to 210
 	R2
 	d'2->\fp~
@@ -261,15 +265,15 @@ musicCornoIIMvtI = \relative c {
 	
 % Bars 256 to 260
 	\mark \default
-	R2*8
-	
-	
-	
+	R2
+	\mmrPos #-6 R
+	R
+	R
 % Bars 261 to 265
-	
-	
-	
-	
+	R
+	R
+	R
+	R
 	cis2-!\pp
 % Bars 266 to 270
 	cis-!
@@ -451,7 +455,7 @@ musicCornoIIMvtI = \relative c {
 	d2->\fz
 	e->
 % Bars 466 to 470
-	f,\fz
+	f,-\tweak X-offset #0.3 \fz
 	R2*5
 % Bars 471 to 475
 	

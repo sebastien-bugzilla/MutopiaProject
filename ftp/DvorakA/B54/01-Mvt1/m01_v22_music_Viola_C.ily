@@ -9,7 +9,7 @@ musicViolaMvtI = \relative c {
 	\key f \major
 %	\transposition a
 % Bars 1 to 5
-	\tuplet 6/4 4 {f16(\pp c' f, c' f, c'  f, c' f, c' f, c'
+	\tuplet 6/4 4 {f16(-\offset X-offset -1 \pp c' f, c' f, c'  f, c' f, c' f, c'
 	f, c' f, c' f, c' f, c' f, c' f, c')}
 	\repeat volta 2 {
 		\tuplet 12/8 2 { \repeat tremolo 6 {f,( c'}
@@ -19,8 +19,8 @@ musicViolaMvtI = \relative c {
 		\repeat tremolo 6 {f, c')}
 		\repeat tremolo 6 {f,( c'}
 		\repeat tremolo 6 {f, c')}
-		\repeat tremolo 6 {d,(\< a'\!}
-		\repeat tremolo 6 {c,\> bes')\!}
+		\repeat tremolo 6 {\hairpinShorten #'(0 . -2.5) d,(\< a'\!}
+		\repeat tremolo 6 {\hairpinShorten #'(0 . -2.5) c,\> bes')\!}
 % Bars 11 to 15
 		\repeat tremolo 6 {f(\pp c'}
 		\repeat tremolo 6 {f, c')}
@@ -48,7 +48,7 @@ musicViolaMvtI = \relative c {
 % Bars 31 to 35
 		f2\fz~
 		f8. d16-.\< a( bes d f)\!
-		e8[\f r16 c-.] b(\< c e g)\!
+		e8[-\offset X-offset -1 \f r16 c-.] b(\< c e g)\!
 		<f bes!>8-. r r4
 		<g, e'>8\f r r4
 % Bars 36 to 40
@@ -62,7 +62,7 @@ musicViolaMvtI = \relative c {
 		bes8._\piuf g16 \tuplet 3/2 4 {d'8-> c-> bes->
 		\subdiviseBeam a-> g-> c-> bes->\< a-> g->}
 		f16( e d c') \tuplet 7/4 4 {bes( a g f e d c)\!} \mark \default
-		f\brack\ff f a, a c c cis cis
+		\beamOffset #'(0.5 . 0.3) f-\offset X-offset -1.5 \brack\ff f a, a c c cis cis
 % Bars 46 to 50
 		d d des des c c bes bes
 		a a aes aes g g e e
@@ -76,13 +76,13 @@ musicViolaMvtI = \relative c {
 		R2*2
 		
 % Bars 56 to 60
-		r4 r8. \tuplet 3/2 16 {c32(\f\< d e)\!}
+		r4 r8. \tuplet 3/2 16 {c32(-\offset X-offset -1.5 \f\< d e)\!}
 		f8 r r4
 		R2*3
 		
 		
 % Bars 61 to 65
-		a8-.\f e'4->(\fp\> d8)\!
+		a8-.\f \hairpinShorten #'(-0.5 . -0.5) e'4->(\fp\> d8)\!
 		c16( e d e c8) b-.
 		a-. e'4->(\fp\> d8)\!
 		c16( e d e c8) b-.
@@ -110,7 +110,7 @@ musicViolaMvtI = \relative c {
 		des f des f) aes\f aes aes aes
 		aes4:16\p aes:\f
 		aes:\p aes:\f
-		aes:\p aes:\f_\brackM\crescmarkup
+		aes:\p aes:-\offset X-offset #-2 -\fbrackcresc
 % Bars 86 to 90
 		gis:\p gis:\f
 		gis:\p gis:\f
@@ -125,15 +125,15 @@ musicViolaMvtI = \relative c {
 		a8(\pp e) r4 \mark \default
 % Bars 96 to 100
 		R2
-		<< fis2(\pp\< {s8 s s s\!}>>
+		<< fis2(\pp\< {s8 s s s}>>
 		<e g>2)\fpp
-		<< fis2(\< {s8 s s s\!}>>
+		<< fis2(\< {s8 s s s}>>
 		<e g>2)\fpp
 % Bars 101 to 105
 		fis2\p\<(~
 		fis4 e)
-		e2\>~ 
-		<< e {s8 s s s\!}>>
+		<< e2~ {s4\! s\>}>> 
+		<< e2 {s8 s s s\!}>>
 		\repeat tremolo 4 {fis16(\p\< a}
 % Bars 106 to 110
 		\repeat tremolo 4 {e\> g\!)}
@@ -142,7 +142,7 @@ musicViolaMvtI = \relative c {
 		\repeat tremolo 4 {fis(\< a}
 		\repeat tremolo 4 {e gis)\!}
 % Bars 111 to 115
-		\repeat tremolo 4 {fis(\mf\< a\!}
+		\hairpinShorten #'(-0.3 . -3) \repeat tremolo 4 {fis(\mf\< a\!}
 		\repeat tremolo 4 {e\> g!)\!}
 		\repeat tremolo 4 {fis(\< a\!}
 		\repeat tremolo 4 {e\> g)\!}
@@ -178,11 +178,11 @@ musicViolaMvtI = \relative c {
 		<e g>2:32\ff
 		q:
 % Bars 141 to 145
-		<bes g'>4\pp^\pizz r8 q
+		\dynEO #'(1.5 . 2) <bes g'>4\pp^\pizz r8 q
 		q4 r8 q
 		q4 r8 q
 		q4 r8 q \mark \default
-		<g e' g>2:32\ff^\arco
+		<g e' g>2:32-\offset X-offset 1 \ff^\arco
 % Bars 146 to 150
 		q:
 		a4\pp^\brackM\pizz r8 a
@@ -192,18 +192,18 @@ musicViolaMvtI = \relative c {
 % Bars 151 to 155
 		a4 r8 a
 		a4 r8 a
-		\repeat tremolo 4 {g16(\pp^\brackM\arco a}
+		\repeat tremolo 4 {\dynEO #'(-1 . 0.5) g16(\pp^\brackM\arco a}
 		\repeat tremolo 4 {g a)}
 		<g a>2:32\ff
 % Bars 156 to 160
 		q:
-		\tuplet 3/2 4 {g8(\pp e' g~ g e g,)~
-		g( e' g~ g e g,)~
-		g( e' g~ g e g,)~
-		g( e' g~ g e g,)~
+		\tuplet 3/2 4 {\dynEO #'(-2.5 . 1.5) \shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur g8(\pp e' g~ g e g,)~
+		\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur g( e' g~ g e g,)~
+		\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur g( e' g~ g e g,)~
+		\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur g( e' g~ g e g,)~
 % Bars 161 to 165
-		g( e' g~ g e g,)~
-		g( e' g~ g e g,)}
+		\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur g( e' g~ g e g,)~
+		\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur g( e' g~ g e g,)}
 		\repeat tremolo 4 {<ais cis>16( <cis! e>)}
 		\repeat tremolo 4 {<ais cis>(\< <cis! e>)\!}
 		\repeat tremolo 4 {<ais cis>16(_\crescmolto <cis! e>)}
@@ -226,7 +226,7 @@ musicViolaMvtI = \relative c {
 		\repeat tremolo 4 {fis,(_\dimmarkup a}
 		\repeat tremolo 4 {fis a}
 % Bars 181 to 185
-		\repeat tremolo 4 {fis\> a}
+		\repeat tremolo 4 {\hairpinShorten #'(0 . -4) fis\> a}
 		\repeat tremolo 4 {fis a)\!}
 		\tuplet 3/2 4 {g8(\pp bes d~ d bes g)~
 		g8( bes d~ d bes g)~
@@ -294,7 +294,7 @@ musicViolaMvtI = \relative c {
 	b8. fis16( dis fis b dis)
 % Bars 231 to 235
 	\tuplet 12/8 2 { \repeat tremolo 6 {dis,16(\pp fis)}
-	\repeat tremolo 6 {dis(\< fis)\!}
+	\repeat tremolo 6 {\hairpinShorten #'(0 . -6) dis(\< fis)\!}
 	\repeat tremolo 6 {dis( fis)}
 	\repeat tremolo 6 {dis(_\crescmarkup fis)}
 	\repeat tremolo 6 {fis( a)}
@@ -345,7 +345,7 @@ musicViolaMvtI = \relative c {
 	\repeat tremolo 4 {<bes des> <des! f>)}
 	ees4->\f ees8.-> bes16-.
 	ees4-> r
-	cis2\fz^~
+	cis2-\offset X-offset 0.5 \fz^~
 % Bars 276 to 280
 	cis8. gis16-. e( gis cis e)
 	a2->~_\fbrackz
@@ -384,7 +384,7 @@ musicViolaMvtI = \relative c {
 	
 % Bars 306 to 310
 	
-	ees4->_\fbrackf g16-. f-. ees8-.
+	\markEO #'(0 . 0.3) ees4->_\fbrackf g16-. f-. ees8-.
 	f4-> aes16-. g-. f8-.
 	g8 bes4(\fz aes8)
 	g(_\pocoapocodim ges f16 d bes'8)
@@ -457,13 +457,13 @@ musicViolaMvtI = \relative c {
 % Bars 366 to 370
 	c8.-> a16 d8.->_\crescmarkup bes16
 	e8.-> c16 f8.-> d16
-	g8.-> e16 bes'8.->_\fcresc f16
+	g8.-> e16 \markEO #'(0 . 1) bes'8.->_\fcresc f16
 	bes8.-> f16 bes8.-> f16
 	bes8. g16 \tuplet 3/2 4 {d'8->_\piuf c-> bes->
 % Bars 371 to 375
 	\subdiviseBeam a-> g c bes->_\crescmarkup a g}
 	f16( e d c') \tuplet 7/4 4 {bes( a g f e d c)} \mark \default
-	<a f'>4->\ff a'16-. g-. f8-.
+	<a f'>4->-\offset X-offset 0.5 \ff a'16-. g-. f8-.
 	g4-> bes16-. a-. g8-.
 	\unSubdiviseBeam a8-.\noBeam c(->\brack\fz b bes)
 % Bars 376 to 380
@@ -557,8 +557,8 @@ musicViolaMvtI = \relative c {
 	r\< g( bes g bes g)
 	r g( bes g bes g)\!
 % Bars 451 to 455
-	r f(\mf c' a c a)
-	c(\> f, c' f, bes g)
+	r f(-\offset X-offset -2 \mf c' a c a)
+	c(-\tweak rotation #'(-5 1 0) \> f, c' f, bes g)
 	r c,( f c f c)\!
 	e(\p c e c e c)
 	f(\mf\< c' a ees' c a)

@@ -32,7 +32,7 @@ musicTrombonoIMvtI = \relative c {
 		
 		r4 \partCombineApart \tuplet 3/2 4 {r8 r a'-.\f
 		bes-.[ a-. bes-.] c-. d-. e-.} \mark \default
-		f->\ff a,-. c-> cis-.
+		f->-\offset X-offset -2.5 \ff a,-. c-> cis-.
 % Bars 46 to 50
 		d-> des-. c-> bes-.
 		a r r4
@@ -206,12 +206,12 @@ musicTrombonoIMvtI = \relative c {
 % Bars 271 to 275
 	
 	
-	ees4->\ff ees8.-> bes16-.
+	\aIIXoffset #-3.5 ees4->\ff ees8.-> bes16-.
 	ees4-> r
 	cis2\fz~
 % Bars 276 to 280
 	cis8 r r4
-	c!4->\ff c8.-> a16-.
+	\aIIXoffset #-3.5 c!4->\ff c8.-> a16-.
 	c4-> r
 	b2\fz~
 	b8 r r4
@@ -234,7 +234,7 @@ musicTrombonoIMvtI = \relative c {
 % Bars 301 to 305
 	
 	
-	\partCombineApart ees,8->\ff g-> bes-> b->
+	\partCombineApart ees,8->_\ff g-> bes-> b->
 	c-> ces-> bes-> aes->
 	g-. ees'4->( f8)
 % Bars 306 to 310
@@ -276,7 +276,7 @@ musicTrombonoIMvtI = \relative c {
 % Bars 366 to 370
 	
 % Bars 371 to 375
-	r4 \partCombineApart \tuplet 3/2 4 {r8 r a-.\f
+	r4 \partCombineApart \tuplet 3/2 4 {r8 r \dynEO #'(-0.6 . -3.5) a-.\f
 	bes-.[ a-. bes-.] c-. d-. e-.} \mark \default
 	f r r4 
 	R2*2

@@ -18,7 +18,7 @@ musicFagottoIIMvtI = \relative c {
 		
 		
 		d2(\p\< 
-		<< c) {s8 s s s\!}>>
+		<< c) {s8 s s s16 s\!}>>
 % Bars 11 to 15
 		f,2\fz\>~
 		<< f~ {s8 s s s\!}>>
@@ -104,7 +104,7 @@ musicFagottoIIMvtI = \relative c {
 		des4\p des8\f r
 		c4\p c8\f r
 		c4\p c8\f r
-		ces4\p ces8\f_\brackM\crescmarkup r
+		ces4\p ces8-\tweak X-offset #-1.5 -\fbrackcresc r
 % Bars 86 to 90
 		b4\p b8\f r
 		b4\p b8\f r
@@ -277,7 +277,7 @@ musicFagottoIIMvtI = \relative c {
 	d)
 	<< g\pp\<~ {s8 s s s\!}>>
 % Bars 226 to 230
-	<< g2\> {s8 s s s\!}>> \mark \default
+	<< g2\> {s8 s\! s s}>> \mark \default
 	e2(\pp
 	d)
 	b~
@@ -403,7 +403,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 336 to 340
 	
 	d2(\p\<
-	<< c) {s8 s s s\!}>>
+	<< c) {s8 s s s16 s\!}>>
 	f,2\fp~
 	f
 % Bars 341 to 345
@@ -441,7 +441,7 @@ musicFagottoIIMvtI = \relative c {
 	r4 f8.->\mf\< d16\!
 	g4-> r
 	R2
-	r4 \tuplet 3/2 4 {c,,8-.\f d-. e-.
+	r4 \tuplet 3/2 4 {c,,8-.-\tweak X-offset -1 \f d-. e-.
 % Bars 371 to 375
 	f-.[ dis-. e-.] f-._\crescmarkup g-. a-.
 	bes-.[ a-. bes-.] c,-. d!-. e-.} \mark \default
