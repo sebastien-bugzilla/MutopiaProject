@@ -37,7 +37,7 @@ musicCornoIIMvtIII = \relative c {
 	
 	
 	r8 r r16 c,\f
-	<< f4.~\fp\> {s8 s s\!}>>
+	<< f4.~\fp\> {s8 s s16 s\!}>>
 % Bars 26 to 30
 	f8\p f-. f-.
 	e4.
@@ -127,7 +127,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 111 to 115
 	c->\fz
 	c->\fz
-	bes4->-\ffmarc g16-. a-.
+	bes4->-\tweak X-offset 0.5 -\ffmarc g16-. a-.
 	bes8-. g-. bes-.
 	bes-. g-. bes-.
 % Bars 116 to 120
@@ -148,7 +148,7 @@ musicCornoIIMvtIII = \relative c {
 	a4 a8
 	b4 b8
 	c4 bes8
-	a4.\fp~
+	a4.-\tweak X-offset 0.5 \fp~
 % Bars 136 to 140
 	a8\pp a-. a-.
 	g4 g8
@@ -158,7 +158,7 @@ musicCornoIIMvtIII = \relative c {
 % Bars 141 to 145
 	e[ r e]
 	a r r
-	a4\ff a8
+	a4-\tweak X-offset 0.5 \ff a8
 	bes4 bes8
 	a4 a8
 % Bars 146 to 150
@@ -208,7 +208,7 @@ musicCornoIIMvtIII = \relative c {
 	
 	
 	R4. \section
-	\startVoltaII a8\ff r r \section \endVolta
+	\startVoltaII a8-\tweak X-offset 0.5 \ff r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
 		\time 3/8 \sectionLabel "TRIO" R4.*2
@@ -220,7 +220,7 @@ musicCornoIIMvtIII = \relative c {
 		
 		R4.*2
 		
-		r8. g16-.\f\< g8-.\!
+		r8. g16-.-\tweak X-offset -2 \f\< g8-.\!
 		c4\fz r8
 % Bars 206 to 210
 		R4.*2
@@ -305,7 +305,7 @@ musicCornoIIMvtIII = \relative c {
 	
 	
 	
-	r8 aes-.\p r
+	r8 aes-.-\tweak X-offset 1 \p r
 % Bars 286 to 290
 	r aes-. r
 	r aes-. r
@@ -331,11 +331,11 @@ musicCornoIIMvtIII = \relative c {
 	
 	
 % Bars 311 to 315
-	r8. c16-.\p c8-.
+	r8. c16-.-\tweak X-offset -2 \p c8-.
 	c8. c16-. c8-.
 	c r r
 	r8. c16-. c8-.
-	c8. c16-.\< c8-.\!
+	c8. c16-.\< c8-.
 % Bars 316 to 320
 	c4\mf r8
 	r8. c16 c8

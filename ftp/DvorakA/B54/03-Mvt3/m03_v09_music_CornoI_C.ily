@@ -37,7 +37,7 @@ musicCornoIMvtIII = \relative c {
 	d)
 	b!
 	c4~ c16 c \partCombineAutomatic 
-	<< c4.~\fp\> {s8 s s\!}>>
+	<< c4.~\fp\> {s8 s s16 s\!}>>
 % Bars 26 to 30
 	c8\p c-. c-.
 	c4.
@@ -127,7 +127,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 111 to 115
 	c->\fz
 	c->\fz
-	bes4->-\ffmarc g16-. a-.
+	bes4->-\tweak X-offset 0.5 -\ffmarc g16-. a-.
 	bes8-. g-. bes-.
 	d-. bes-. d-.
 % Bars 116 to 120
@@ -148,7 +148,7 @@ musicCornoIMvtIII = \relative c {
 	d4 d8
 	d4 d8
 	e4 c8
-	c4.\fp~
+	c4.-\tweak X-offset 0.5 \fp~
 % Bars 136 to 140
 	c8\pp c-. c-.
 	c4 c8
@@ -158,7 +158,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 141 to 145
 	b[ r b]
 	c r r
-	ees4\ff ees8
+	ees4-\tweak X-offset 0.5 \ff ees8
 	d4 d8
 	ees4 ees8
 % Bars 146 to 150
@@ -194,7 +194,7 @@ musicCornoIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart f8-.\fp[ r d-.]
+	\partCombineApart f8-.-\offset X-offset -1.5 \fp[ r d-.]
 	<< c4.\>~ {s8 s s\!}>>
 % Bars 181 to 185
 	c8\p r r \partCombineAutomatic
@@ -208,7 +208,7 @@ musicCornoIMvtIII = \relative c {
 	ees~
 	ees4 r8 \partCombineAutomatic
 	R4. \section
-	\startVoltaII c8\ff r r \section \endVolta
+	\startVoltaII c8-\tweak X-offset 0.5 \ff r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
 		\time 3/8 \sectionLabel "TRIO" \partCombineApart ees4.->\fp~
@@ -220,7 +220,7 @@ musicCornoIMvtIII = \relative c {
 		ees4 r8 \partCombineAutomatic
 		R4.*2
 		
-		r8. d16-.\f\< d8-.\!
+		r8. \hairpinShorten #'(-0.3 . -2.5) d16-.-\tweak X-offset -2 \f\< d8-.\!
 		ees4\fz r8
 % Bars 206 to 210
 		R4.*2
@@ -244,7 +244,7 @@ musicCornoIMvtIII = \relative c {
 		
 % Bars 221 to 225
 		
-		\partCombineApart r8. des16-.\brack\p\< des8-.\!
+		\partCombineApart r8. des16-.\brack\p\< des8-.
 		des8->\mf r r \partCombineAutomatic
 		R4.*3
 		
@@ -305,7 +305,7 @@ musicCornoIMvtIII = \relative c {
 	
 	
 	
-	r8 c-.\p r
+	r8 c-.-\tweak X-offset 1 \p r
 % Bars 286 to 290
 	r c-. r
 	r des-. r
@@ -321,7 +321,7 @@ musicCornoIMvtIII = \relative c {
 % Bars 301 to 305
 	\partCombineApart r8. ees'16-.\p ees8-.
 	ees4.\> 
-	c(\!
+	\shape #'(()((0 . 2)(0 . 1)(0 . 1)(0 . -1))) Slur c(\!
 	\noteShift #0.9 \omitStem bes
 	c
 % Bars 306 to 310
@@ -331,11 +331,11 @@ musicCornoIMvtIII = \relative c {
 	
 	
 % Bars 311 to 315
-	r8. ees16-.\p ees8-.
+	r8. ees16-.-\tweak X-offset -2 \p ees8-.
 	ees8. ees16-. ees8-.
 	ees r r
 	r8. e!16-.-\crescmarkup e8-.
-	e8. e16-.\< e8-.\!
+	e8. e16-.\< e8-.
 % Bars 316 to 320
 	e4\mf r8
 	r8. e16-\crescmarkup e8

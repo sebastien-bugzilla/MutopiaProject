@@ -85,7 +85,7 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart \mmrPos #13 R4. \partCombineAutomatic
+	\partCombineApart \mmrPos #14 R4. \partCombineAutomatic
 	R4.*24
 % Bars 86 to 90
 	
@@ -182,14 +182,14 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 	\section
-	\startVoltaII bes8\ff r r \section \endVolta
+	\startVoltaII bes8\ff r r \section \textEndMark \finemarkup \endVolta 
 % Bars 196 to 200
 	\repeat volta 2 {
 		\key des \major \time 3/8 \sectionLabel "TRIO" des4.->\fp
 		aes8.-> f16-. f8-.
 		ges4 r8
 		r r \once \partCombineApart aes
-		des4.->\fz
+		\dynEO #'(0 . 1) des4.->\fz
 % Bars 201 to 205
 		aes8->[ r16-\crescmarkup f-. f8-.]
 		g->[ r16 des'-. des8-.]
@@ -205,10 +205,10 @@ musicFlautoIMvtIII = \relative c {
 % Bars 211 to 215
 		aes4-- r8 \partCombineAutomatic
 		R4.
-		\partCombineApart r8 r aes\p \partCombineAutomatic \mark \default
+		\partCombineApart r8 r aes\p \partCombineAutomatic \mark \default 
 	}
 	\repeat volta 2 {
-		ces4.->\pp
+		\dynEO #'(0 . 1) ces4.->\pp
 		ces4 r8
 % Bars 216 to 220
 		r8. bes16-.\< bes8-.
@@ -219,11 +219,11 @@ musicFlautoIMvtIII = \relative c {
 % Bars 221 to 225
 		ces4 r8
 		r8. bes16-.\< bes8-.
-		beses->\mf r r
+		\dynEO #'(0 . 2) beses->\mf r r
 		R4.*2
 		
 % Bars 226 to 230
-		\partCombineApart r8. f'16-.\pp f8-.
+		\partCombineApart r8. f'16-.-\offset X-offset -1 \pp f8-.
 		f4 r8 \partCombineAutomatic
 		r8. f16-.\pp\< f8-.
 		f(\! aes)\> ges-.\!
@@ -271,7 +271,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 271 to 275
 	
 % Bars 276 to 280
-		\mark \default
+		\markXoffset #-0.2 \mark \default
 	}
 	R4.*7
 % Bars 281 to 285
@@ -288,7 +288,7 @@ musicFlautoIMvtIII = \relative c {
 	des4 f8)\!
 % Bars 291 to 295
 	ees4(\> des8
-	c4)\! r8 \partCombineAutomatic
+	c4)\! \partCombineAutomatic r8
 	R4.*4
 	
 	
@@ -316,8 +316,8 @@ musicFlautoIMvtIII = \relative c {
 	\partCombineApart r8. a16 a8
 	a8. f'16 f8
 % Bars 321 to 324
-	f r r \partCombineAutomatic
+	f \partCombineAutomatic r r 
 	R4.
-	\partCombineApart r8. f16-.\pp f8-.
+	\partCombineApart r8. f16-.-\offset X-offset -2 \pp f8-.
 	f8 r r \partCombineAutomatic \section \key bes \major s8
 }

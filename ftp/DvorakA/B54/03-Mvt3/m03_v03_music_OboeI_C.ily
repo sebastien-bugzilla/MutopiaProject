@@ -25,7 +25,7 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	\partCombineApart r8 r8. f16\f
-	<< f4.\mf\>~ {s8 s s\!}>>
+	<< f4.-\offset X-offset -1 \mf\>~ {s8 s s16 s\!}>>
 % Bars 26 to 30
 	f8\p f-. f-.
 	f4.->
@@ -51,9 +51,9 @@ musicOboeIMvtIII = \relative c {
 % Bars 51 to 55
 	
 	
-	g'4.->\fp~
+	g'4.->-\tweak X-offset 0.5 \fp~
 	g
-	f->\fp~
+	f->-\tweak X-offset 0.5 \fp~
 % Bars 56 to 60
 	f
 	R4.*9
@@ -73,7 +73,7 @@ musicOboeIMvtIII = \relative c {
 	
 % Bars 76 to 80
 	
-	\partCombineApart a'8->\mf e-. a-.
+	\partCombineApart a'8->-\offset X-offset -2.5 \mf e-. a-.
 	\once \partCombineAutomatic R4.
 	R4.*5
 	
@@ -81,8 +81,8 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	fis8->\fz b,-. fis'-.
-	b-.\fp fis-. b-. 
+	fis8->-\offset X-offset -2.5 \fz b,-. fis'-.
+	b-.-\offset X-offset -2.5 \fp fis-. b-. 
 % Bars 86 to 90
 	\once \partCombineAutomatic R4.
 	b8-.\fp fis-. b-.
@@ -142,7 +142,7 @@ musicOboeIMvtIII = \relative c {
 % Bars 141 to 145
 	
 	
-	bes4.->\ff~
+	\aIIXoffset #-3 bes4.->-\tweak X-offset 0.5 \ff~
 	bes~
 	bes~
 % Bars 146 to 150
@@ -169,7 +169,7 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart d'8-.\fz[ r e-.]
+	\partCombineApart d'8-.-\offset X-offset -1.5 \fz[ r e-.]
 	f-.[\> r ees!-.]\!
 % Bars 181 to 185
 	d\p r r \partCombineAutomatic
@@ -195,7 +195,7 @@ musicOboeIMvtIII = \relative c {
 		aes8->[ r16-\crescmarkup f-. f8-.]
 		f8->[ r16 f-. f8-.]
 		e\mf r r
-		r8. g16-.\f\< g8-.\!
+		r8. g16-.\f\< g8-.
 		aes4\fz r8
 % Bars 206 to 210
 		r8 r aes-.\mf\<
@@ -216,11 +216,11 @@ musicOboeIMvtIII = \relative c {
 		ges4->\! r8 \partCombineAutomatic
 		R4.*2
 		
-		\partCombineApart << f4.->\p\< {s8 s s\!}>>
+		\partCombineApart << f4.->-\offset X-offset -1 \p\< {s8 s s\!}>>
 % Bars 221 to 225
 		f4 r8
-		r8. ges16-.\< ges8-.\!
-		ges8->\mf r r \partCombineAutomatic
+		r8. ges16-.\< ges8-.
+		ges8->-\offset X-offset -3 \mf r r \partCombineAutomatic
 		R4.*10
 % Bars 226 to 230
 	
@@ -278,7 +278,7 @@ musicOboeIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart des4(\p\< f8\!
+	\partCombineApart \shape #'((0 . 2)(0 . -0.5)(0 . -0.5)(0 . 2)) Slur des4(\p\< f8\!
 % Bars 291 to 295
 	ees4\f\> des8\!
 	c4) r8 \partCombineAutomatic
@@ -304,13 +304,13 @@ musicOboeIMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
-	r8. a16-\mpcresc a8
+	r8. a16-\offset X-offset -1 -\mpcresc a8
 	a8.\< f'16 f8\!
 	f8.\f\< a16 a8
 	a8.\! a16\ff a8
 % Bars 321 to 324
 	a8 r r
 	R4.
-	\partCombineApart r8. f16-.\pp f8-.
+	\partCombineApart r8. f16-.-\offset X-offset -2 \pp f8-.
 	f8 r r \partCombineAutomatic \section \key bes \major s8
 }

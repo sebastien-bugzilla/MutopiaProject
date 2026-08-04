@@ -188,7 +188,7 @@ musicTrombonoIMvtIII = \relative c {
 	c4.->\pp\<
 	<< a-> {s8 s s\!}>>
 	bes4.->\fz
-	bes4->(-\dimmarkup\> bes8
+	bes4->(\dimD\> bes8
 % Bars 301 to 305
 	aes!4)\p r8
 	aes4\pp\> aes8-.

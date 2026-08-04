@@ -9,13 +9,13 @@ musicClarinettoIMvtIII = \relative c {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	r d''--(\pp d--
+	r d''--(-\tweak X-offset #-2 \pp d--
 	d--) r r
 	r d---\crescmarkup r
 	r f-- r
 	r f-- f--
 % Bars 6 to 10
-	r f\mf r
+	r f-\tweak X-offset #-1.5 \mf r
 	r f-\dimmarkup r
 	r f-.\p r
 	f-.[-\dimmarkup r d-.]
@@ -63,7 +63,7 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 51 to 55
 	
 	
-	\partCombineApart e4(\fp a,16 e'
+	\partCombineApart e4(-\offset X-offset -1.5 \fp a,16 e'
 	f8) a,-. f'-.
 	d-. g,-. d'-.
 % Bars 56 to 60
@@ -96,9 +96,9 @@ musicClarinettoIMvtIII = \relative c {
 	
 	\partCombineApart R4.
 % Bars 86 to 90
-	gis8-.\fp cis,-. gis'-. \partCombineAutomatic
+	gis8-.-\offset X-offset -2 \fp cis,-. gis'-. \partCombineAutomatic
 	R4.
-	\partCombineApart gis8-.\fp cis,-. gis'-. \partCombineAutomatic
+	\partCombineApart gis8-.-\offset X-offset -2 \fp cis,-. gis'-. \partCombineAutomatic
 	R4.*2
 	
 % Bars 91 to 95
@@ -116,7 +116,7 @@ musicClarinettoIMvtIII = \relative c {
 	R4.*3
 	
 	
-	g4.->\fz
+	\aIIXoffset #-3 g4.->\fz
 	g->\fz
 % Bars 111 to 115
 	g->\fz
@@ -142,11 +142,11 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 131 to 135
 	gis(
 	a)
-	fis(
+	\shape #'((0 . -1)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur fis(
 	g!4~ g16 g,)
-	c4->\fp g16( b
+	c4->-\offset X-offset -2 \fp \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . -0.6)) Slur g16( b
 % Bars 136 to 140
-	c8)\p g-. c-.
+	c8)-\offset X-offset 1.3 \p g-. c-.
 	d( g, d')
 	f16(-> e d cis d8)
 	e4->( b16 d
@@ -178,7 +178,7 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 161 to 165
 	f(\> d b g f d
 	e g c!\p g c e) \mark \default
-	g4.\fp~
+	g4.-\offset X-offset -1 \fp~
 	g~
 	g8 r r \partCombineAutomatic
 % Bars 166 to 170
@@ -228,7 +228,7 @@ musicClarinettoIMvtIII = \relative c {
 		ees8[-> r16-\crescmarkup bes-. bes8-.]
 		c->[ r16 c-. c8-.]
 		c\mf r r
-		r8. d16-.\f\< d8-.\!
+		r8. \stemUp \hairpinShorten #'(-0.3 . -2.5) d16-.\f\< d8-.\! \stemNeutral
 		d4\fz r8
 % Bars 206 to 210
 		r r e-.\mf\<
@@ -252,12 +252,12 @@ musicClarinettoIMvtIII = \relative c {
 		<< des4.->\p\< {s8 s s\!}>>
 % Bars 221 to 225
 		des4 r8
-		r8. ees16-.\< ees8-.\!
+		r8. ees16-.\< ees8-.
 		d!8->\mf r r
 		R4.*2
 		
 % Bars 226 to 230
-		\partCombineApart r8. g16-.\pp g8-.
+		\partCombineApart r8. g16-.-\offset X-offset -1 \pp g8-.
 		g4 r8 \partCombineAutomatic
 		r8. g16-.\pp g8-.
 		g8(\< bes)\> aes-.\!
@@ -276,7 +276,7 @@ musicClarinettoIMvtIII = \relative c {
 		des8\<[ r16 des-. des8-.]
 % Bars 241 to 245
 		des( f) ees-.\!
-		d![\f r16 f-. f8-.]
+		d![-\tweak X-offset -1 \f r16 f-. f8-.]
 		f4.->~
 		f8[ r16 f-. f8-.]
 		f( a) g-.

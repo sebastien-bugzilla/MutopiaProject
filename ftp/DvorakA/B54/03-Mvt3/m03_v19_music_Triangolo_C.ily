@@ -4,10 +4,10 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIMvtIII = \relative c {
+musicTriangoloMvtIII = \relative c {
 	\clef treble
 	\key c \major
-	\transposition f
+%	\transposition a
 % Bars 1 to 5
 	R4.*15
 % Bars 6 to 10
@@ -16,17 +16,33 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 16 to 20
 	R4.\fermata \section
-	\time 3/8 R4.*49
+	\time 3/8 R4.*8
 % Bars 21 to 25
 	
+	
+	
+	
+	e''4\mf r8
 % Bars 26 to 30
-	
+	e4 r8
+	e4 r8
+	e4 r8
+	e4 r8
+	e4 e8
 % Bars 31 to 35
-	
+	e4 e8
+	e4 r8
+	e4.:32->\fp
+	e8[ r e]
+	e[ r e]
 % Bars 36 to 40
-	
+	e4 r8
+	e4.:32->\fp
+	e8[ r e]
+	e[ r e]
+	e4 r8
 % Bars 41 to 45
-	
+	R4.*25
 % Bars 46 to 50
 	
 % Bars 51 to 55
@@ -40,11 +56,20 @@ musicTrombeIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 66 to 70
-	R4.*37
+	R4.*4
+	
+	
+	
+	e4\pp r8
 % Bars 71 to 75
-	
+	r e e
+	e4 r8
+	r e e
+	e4 r8
+	r e e
 % Bars 76 to 80
-	
+	e4 r8
+	R4.*50
 % Bars 81 to 85
 	
 % Bars 86 to 90
@@ -55,59 +80,50 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 101 to 105
 	
-	
-	r8 fis'-.\mf r
-	r fis-.-\crescmarkup r
-	r fis-. r
 % Bars 106 to 110
-	r b\f r
-	r-\crescmarkup d r
-	r d r
-	r c r
-	r c r
+	
 % Bars 111 to 115
-	r c r
-	r c r
-	c\ff r r
-	R4.*13
+	
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	\mark \default
-	\dynEO #'(-0.5 . 0) f,4\ff f8
-	f4 f8
-	g4 g8
-	g4 g8
+	R4.*8
 % Bars 131 to 135
-	e4 e8
-	f4 f8
-	f4 f8
-	e4 e8
-	f r r
+	
+	
+	
+	
+	e4\p r8
 % Bars 136 to 140
-	R4.*7
+	e8[ r e]
+	e4 r8
+	e[ r e]
+	e4 r8
+	e[ r e]
 % Bars 141 to 145
-	
-	
-	f4->\ff f16-. f-.
-	f8-. f-. f-.
-	f4 f16-. f-.
+	e[ r e]
+	e4 r8
+	R4.*8
 % Bars 146 to 150
-	f8-. f-. f-.
-	fis4-> d8
-	d4-> d8
-	e4 c8
-	f!4 r8
-% Bars 151 to 155
-	R4.*12
-% Bars 156 to 160
 	
+% Bars 151 to 155
+	e4\p r8
+	e4 r8
+	e4 r8
+	e4 r8
+	e4 r8
+% Bars 156 to 160
+	e4 r8
+	e4 r8
+	e4 r8
+	R4.*4
 % Bars 161 to 165
 	
 	\mark \default
-	R4.*19
+	R4.*20
 % Bars 166 to 170
 	
 % Bars 171 to 175
@@ -116,9 +132,8 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 181 to 185
 	
-	e8-\tweak X-offset -1 \ff r r
-	\startVoltaI f r r
-	R4.*11
+	
+	\startVoltaI R4.*12
 % Bars 186 to 190
 	
 % Bars 191 to 195
@@ -126,10 +141,10 @@ musicTrombeIMvtIII = \relative c {
 	
 	
 	\section
-	\startVoltaII f8-\tweak X-offset -1 \ff r r \endVolta \section
+	\startVoltaII R4. \endVolta \section
 % Bars 196 to 200
 	\repeat volta 2 {
-		\sectionLabel "TRIO" \time 3/8 R4.*18
+		\time 3/8 \sectionLabel "TRIO" R4.*18
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -140,7 +155,7 @@ musicTrombeIMvtIII = \relative c {
 		\mark \default
 	}
 	\repeat volta 2 {
-		R4.*28
+		R4.*40
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -152,23 +167,14 @@ musicTrombeIMvtIII = \relative c {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-		
-		\aIIXoffset #-4 ees4.\ff
-		r8. ees16-. ees8-.
-		ees4.->
-		r8. ees16-. ees8-.
+	
 % Bars 246 to 250
-		ees8->[ r16 bes-. bes8-.]
-		b!4.->
-		c->
-		cis4 d8
-		ees r r
+	
 % Bars 251 to 255
-		R4.
-		ees8 r r
-		R4. \mark \default
-		ees8\p r r
-		R4.*22
+		
+		
+		\mark \default
+		R4.*23
 % Bars 256 to 260
 	
 % Bars 261 to 265
@@ -180,7 +186,7 @@ musicTrombeIMvtIII = \relative c {
 % Bars 276 to 280
 		\mark \default
 	}
-	R4.*43
+	R4.*48
 % Bars 281 to 285
 	
 % Bars 286 to 290
@@ -197,13 +203,9 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
-	
-	
-	
-	r8. g16-.\ff g8-.
 % Bars 321 to 324
-	g8 r r
-	R4.*3
+	
+	
 	
 	\section s8
 }

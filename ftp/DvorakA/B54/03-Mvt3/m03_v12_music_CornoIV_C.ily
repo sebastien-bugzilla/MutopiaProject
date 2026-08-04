@@ -9,7 +9,7 @@ musicCornoIVMvtIII = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	r8 c--(\pp c--
+	r8 c--(-\tweak X-offset #-3 \pp c--
 	c--) r r
 	r c-- r
 	r c-- r
@@ -17,7 +17,7 @@ musicCornoIVMvtIII = \relative c {
 % Bars 6 to 10
 	r c\mf r
 	r c r
-	r c-.\p r 
+	r c-.-\tweak X-offset #-1.5 \p r 
 	c-.[ r c-.]
 	R4.*3
 % Bars 11 to 15
@@ -113,7 +113,7 @@ musicCornoIVMvtIII = \relative c {
 % Bars 111 to 115
 	
 	
-	bes'4->-\ffmarc g16-. a-.
+	bes'4->-\tweak X-offset 0.5 -\ffmarc g16-. a-.
 	bes8-. g-. bes-.
 	bes-. g-. bes-.
 % Bars 116 to 120
@@ -284,7 +284,7 @@ musicCornoIVMvtIII = \relative c {
 % Bars 286 to 290
 	\mmrPos #-6 R
 	\mmrPos #-6 R
-	\mmrPos #-6 R
+	\mmrPos #-4 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 % Bars 291 to 295
@@ -312,7 +312,7 @@ musicCornoIVMvtIII = \relative c {
 	
 	
 	
-	r8. aes,16-.\brack\p\< aes8-.\!
+	r8. aes,16-.\brack\p\< aes8-.
 % Bars 316 to 320
 	aes4\mf r8
 	r8. aes'16-\crescmarkup aes8

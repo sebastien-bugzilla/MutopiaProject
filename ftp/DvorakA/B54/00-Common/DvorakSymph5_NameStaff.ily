@@ -385,7 +385,7 @@ nameStaffXMvtIII = {
 	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
-			\lower #1 "Timp." "in A E"
+			\lower #1 "Timp." "in B F"
 		}
 	}
 	\set Staff.midiInstrument = #""

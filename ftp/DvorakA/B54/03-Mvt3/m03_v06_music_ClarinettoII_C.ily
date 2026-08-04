@@ -9,13 +9,13 @@ musicClarinettoIIMvtIII = \relative c {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	r b''--(\pp b--
+	r b''--(-\tweak X-offset #-2 \pp b--
 	b--) r r
 	r b-- r
 	r d-- r
 	r d-- d--
 % Bars 6 to 10
-	r d\mf r
+	r d-\tweak X-offset #-1.5 \mf r
 	r d r
 	r d-.\p r
 	d-.[ r b-.]
@@ -37,7 +37,7 @@ musicClarinettoIIMvtIII = \relative c {
 	
 	
 	r8 r8. d16\f
-	<< c4.\mf\>~ {s8 s s\!}>>
+	<< c4.\mf\>~ {s8 s s16 s\!}>>
 % Bars 26 to 30
 	c8\p c-. c-.
 	d4.->
@@ -102,7 +102,7 @@ musicClarinettoIIMvtIII = \relative c {
 	R4.*2
 	
 % Bars 91 to 95
-	cis,8-.\pp gis-. cis-.
+	cis,8-.-\offset X-offset -2.5 \pp gis-. cis-.
 	R4.*10
 % Bars 96 to 100
 	
@@ -135,7 +135,7 @@ musicClarinettoIIMvtIII = \relative c {
 	R4.*5
 % Bars 126 to 130
 	\mark \default
-	c4\ff( g16 b
+	c4-\offset X-offset -1.5 \ff( g16 b
 	c8) g-. c-.
 	d( g, d')
 	f16( e d cis d8)
@@ -198,7 +198,7 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 181 to 185
 	c\p r r
 	b\ff r r 
-	\startVoltaI c8\fp r r
+	\startVoltaI c8-\offset X-offset 1 \fp r r
 	R4.*10
 	
 % Bars 186 to 190
@@ -244,7 +244,7 @@ musicClarinettoIIMvtIII = \relative c {
 		<< bes4.->\p\< {s8 s s\!}>>
 % Bars 221 to 225
 		bes4 r8
-		r8. c16-.\< c8-.\!
+		r8. c16-.\< c8-.
 		b8->\mf r r
 		R4.*2
 		
@@ -268,7 +268,7 @@ musicClarinettoIIMvtIII = \relative c {
 		bes8\<[ r16 bes-. bes8-.]
 % Bars 241 to 245
 		bes( des) c-.\!
-		bes[\f r16 d!-. d8-.]
+		bes[-\tweak X-offset -1 \f r16 d!-. d8-.]
 		d4.->~
 		d8[ r16 d-. d8-.]
 		d( f) ees-.
@@ -309,14 +309,18 @@ musicClarinettoIIMvtIII = \relative c {
 	
 	
 	
-	R4.*9
-	
+	R4.
+	R
 % Bars 286 to 290
-	
+	R
+	R
+	R
+	R
+	R
 % Bars 291 to 295
-	
-	
-	ees8.\mf g16-. g8-.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	ees8.-\offset X-offset -1 \mf g16-. g8-.
 	g4 r8
 	r8. aes16-. aes8-.
 % Bars 296 to 300

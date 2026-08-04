@@ -116,7 +116,7 @@ musicTrombeIIMvtIII = \relative c {
 	
 % Bars 181 to 185
 	
-	c8\ff r r
+	c8-\tweak X-offset -1 \ff r r
 	\startVoltaI c r r
 	R4.*11
 % Bars 186 to 190
@@ -126,7 +126,7 @@ musicTrombeIIMvtIII = \relative c {
 	
 	
 	\section
-	\startVoltaII c8\ff r r \endVolta \section
+	\startVoltaII c8-\tweak X-offset -1 \ff r r \endVolta \section
 % Bars 196 to 200
 	\repeat volta 2 {
 		\sectionLabel "TRIO" \time 3/8 R4.*18

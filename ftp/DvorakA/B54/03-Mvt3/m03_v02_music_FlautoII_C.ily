@@ -85,7 +85,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	fis'8->\fz b,-. fis'-.
+	\dynEO #'(-2.5 . 2) fis'8->\fz b,-. fis'-.
 	R4.*24
 % Bars 86 to 90
 	
@@ -137,7 +137,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 141 to 145
 	
 	
-	bes4\ff bes8(
+	\dynEO #'(0 . 2) bes4\ff bes8(
 	ees8) bes-. ees-.
 	bes4 bes8
 % Bars 146 to 150
@@ -194,7 +194,7 @@ musicFlautoIIMvtIII = \relative c {
 		f8->[ r16-\crescmarkup des-. des8-.]
 		des->[ r16 g!-. g8-.]
 		g\mf r r
-		r8 r c-.\f\<
+		r8 r \hairpinShorten #'(-0.3 . -0.3) c-.-\offset X-offset -2 \f\<
 		c4\fz r8
 % Bars 206 to 210
 		r r bes\mf\<

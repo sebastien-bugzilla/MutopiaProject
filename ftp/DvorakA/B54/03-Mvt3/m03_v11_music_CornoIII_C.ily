@@ -9,7 +9,7 @@ musicCornoIIIMvtIII = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	r8 c'--(\pp c--
+	r8 c'--(-\tweak X-offset #-3 \pp c--
 	c--) r r
 	r c---\crescmarkup r
 	r c-- r
@@ -17,7 +17,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 6 to 10
 	r c\mf r
 	r c-\dimmarkup r
-	r c-.\p r 
+	r c-.-\tweak X-offset #-1.5 \p r 
 	c-.[-\dimmarkup r c-.]
 	\partCombineApart bes'4.\pp~
 % Bars 11 to 15
@@ -83,15 +83,15 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart a4.->\fp~
+	\partCombineApart a4.->-\offset X-offset -2.5 \fp~
 % Bars 71 to 75
 	a8 a-. a-.
 	g4.->
 	bes8-. bes-. bes-.
-	a4.->-\fpcresc
+	a4.->-\offset X-offset -2.5 \fp-\crescmarkup
 	c8-.\< c-. c-.\!
 % Bars 76 to 80
-	b!4.->\fp \partCombineAutomatic
+	b!4.->-\offset X-offset -2.5 \fp \partCombineAutomatic
 	R4.*22
 	
 % Bars 81 to 85
@@ -117,7 +117,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 111 to 115
 	
 	
-	bes'4->-\ffmarc g16-. a-.
+	\aIIXoffset #-3 bes'4->-\tweak X-offset 0.5 -\ffmarc g16-. a-.
 	bes8-. g-. bes-.
 	d-. bes!-. d-.
 % Bars 116 to 120
@@ -203,9 +203,9 @@ musicCornoIIIMvtIII = \relative c {
 	\startVoltaII a8\ff r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
-		\time 3/8 \sectionLabel "TRIO" \partCombineApart R4.*3
-		
-		\partCombineAutomatic
+		\time 3/8 \sectionLabel "TRIO" \partCombineApart R4.
+		R
+		R \partCombineAutomatic
 		R4.
 		\partCombineApart R4.*2
 % Bars 201 to 205
@@ -236,7 +236,7 @@ musicCornoIIIMvtIII = \relative c {
 		\partCombineApart << aes4.->\p\< {s8 s s\!}>>
 % Bars 221 to 225
 		aes4 r8
-		r8. aes16-.\< aes8-.\!
+		r8. aes16-.\< aes8-.
 		aes8->\mf r r \partCombineAutomatic
 		R4.*18
 		
@@ -248,7 +248,7 @@ musicCornoIIIMvtIII = \relative c {
 		
 % Bars 241 to 245
 		
-		ees4.\ff
+		\aIIXoffset #-4 ees4.\ff
 		r8. ees16-. ees8-.
 		ees4.->
 		r8. ees16-. ees8-.
@@ -284,7 +284,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart r8 ees-.\p r
+	\partCombineApart r8 \dynEO #'(-0.5 . -1) ees-.\p r
 % Bars 286 to 290
 	r ees-. r
 	r f-. r
@@ -302,7 +302,7 @@ musicCornoIIIMvtIII = \relative c {
 	r8. c16-.\< c8-.
 	bes4\! r8
 	r8. c16-.\f c8-.
-	\partCombineChords des4(\>-\dimmarkup bes8)\! \partCombineAutomatic
+	\partCombineChords \markEO #'(1 . 3.5) des4(\>-\dimmarkup bes8)\! \partCombineAutomatic
 % Bars 301 to 305
 	\partCombineApart \once \stemDown c4.(
 	bes8) << des4( {s8 s}>>
@@ -312,7 +312,7 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 306 to 310
 	
 % Bars 311 to 315
-	\partCombineApart r8. aes16-.\p aes8-.
+	\partCombineApart r8. aes16-.-\offset X-offset -1 \p aes8-.
 	aes8. aes16-. aes8-.
 	aes r r
 	r8. aes16-. aes8-.

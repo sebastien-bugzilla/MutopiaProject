@@ -36,7 +36,7 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	
-	g4.->\fp~
+	g4.->-\offset X-offset -1.6 \fp~
 	g
 	f->~
 	f4 r8
@@ -47,9 +47,9 @@ musicOboeIIMvtIII = \relative c {
 % Bars 51 to 55
 	
 	
-	g4.->\fp~
+	g4.->-\tweak X-offset 0.5 \fp~
 	g
-	f->\fp~
+	f->-\tweak X-offset 0.5 \fp~
 % Bars 56 to 60
 	f
 	R4.*9
@@ -122,7 +122,7 @@ musicOboeIIMvtIII = \relative c {
 	R4.*5
 % Bars 126 to 130
 	\mark \default
-	f,4.\ff(~
+	f,4.-\offset X-offset -1.5 \ff(~
 	f~
 	f
 	g)
@@ -131,14 +131,14 @@ musicOboeIIMvtIII = \relative c {
 	g)
 	e(
 	f)
-	f\fp~
+	f-\offset X-offset 1 \fp~
 % Bars 136 to 140
 	f4 r8
 	R4.*6
 % Bars 141 to 145
 	
 	
-	bes4.->\ff~
+	bes4.->-\tweak X-offset 0.5 \ff~
 	bes~
 	bes~
 % Bars 146 to 150
@@ -154,7 +154,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 161 to 165
 	
 	\mark \default
-	f4.\fp~
+	f4.-\offset X-offset 1 \fp~
 	f~
 	f8 r r
 % Bars 166 to 170
@@ -191,7 +191,7 @@ musicOboeIIMvtIII = \relative c {
 		f8->[ r16-\crescmarkup des-. des8-.]
 		des8->[ r16 des-. des8-.]
 		c\mf r r
-		r8. e16-.\f\< e8-.\!
+		r8. e16-.\f\< e8-.
 		f4\fz r8
 % Bars 206 to 210
 		r8 r f-.\mf\<
@@ -286,7 +286,7 @@ musicOboeIIMvtIII = \relative c {
 	f'4.(\p\<
 	<< ees) {s8 s s\!}>>
 	d4.\f
-	des!8(\>-\dimmarkup bes c)\!
+	des!8(\dimD\> bes c)\!
 % Bars 301 to 305
 	des4.\p(
 	c4)\> s8\!

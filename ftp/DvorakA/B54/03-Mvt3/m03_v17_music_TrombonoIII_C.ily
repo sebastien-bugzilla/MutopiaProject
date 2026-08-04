@@ -4,10 +4,10 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIMvtIII = \relative c {
-	\clef treble
-	\key c \major
-	\transposition f
+musicTrombonoIIIMvtIII = \relative c {
+	\clef bass
+	\key bes \major
+%	\transposition a
 % Bars 1 to 5
 	R4.*15
 % Bars 6 to 10
@@ -40,7 +40,7 @@ musicTrombeIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 66 to 70
-	R4.*37
+	R4.*47
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -55,20 +55,12 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 101 to 105
 	
-	
-	r8 fis'-.\mf r
-	r fis-.-\crescmarkup r
-	r fis-. r
 % Bars 106 to 110
-	r b\f r
-	r-\crescmarkup d r
-	r d r
-	r c r
-	r c r
+	
 % Bars 111 to 115
-	r c r
-	r c r
-	c\ff r r
+	
+	
+	f8\f r r
 	R4.*13
 % Bars 116 to 120
 	
@@ -76,30 +68,30 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 126 to 130
 	\mark \default
-	\dynEO #'(-0.5 . 0) f,4\ff f8
-	f4 f8
-	g4 g8
-	g4 g8
+	bes,4\ff bes8
+	bes4 bes8
+	a4 a8
+	c4 ees8
 % Bars 131 to 135
-	e4 e8
-	f4 f8
-	f4 f8
-	e4 e8
-	f r r
+	d4 d8
+	g4 g8
+	c,4 c8
+	f4 f,8
+	bes r r
 % Bars 136 to 140
 	R4.*7
 % Bars 141 to 145
 	
 	
-	f4->\ff f16-. f-.
-	f8-. f-. f-.
-	f4 f16-. f-.
+	bes4\ff bes8
+	ees4 ees8
+	bes4 bes8
 % Bars 146 to 150
-	f8-. f-. f-.
-	fis4-> d8
-	d4-> d8
-	e4 c8
-	f!4 r8
+	ees4 ees8
+	g,4-> g8
+	c4-> c8
+	f,4-> f8
+	bes4 bes8
 % Bars 151 to 155
 	R4.*12
 % Bars 156 to 160
@@ -116,8 +108,8 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 181 to 185
 	
-	e8-\tweak X-offset -1 \ff r r
-	\startVoltaI f r r
+	f'8\ff r r
+	\startVoltaI bes, r r 
 	R4.*11
 % Bars 186 to 190
 	
@@ -126,10 +118,10 @@ musicTrombeIMvtIII = \relative c {
 	
 	
 	\section
-	\startVoltaII f8-\tweak X-offset -1 \ff r r \endVolta \section
+	\startVoltaII bes8\ff r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
-		\sectionLabel "TRIO" \time 3/8 R4.*18
+		\time 3/8 \key des \major \sectionLabel "TRIO" R4.*18
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -153,21 +145,21 @@ musicTrombeIMvtIII = \relative c {
 	
 % Bars 241 to 245
 		
-		\aIIXoffset #-4 ees4.\ff
-		r8. ees16-. ees8-.
-		ees4.->
-		r8. ees16-. ees8-.
+		r8. aes16-.\ff aes8-.
+		aes4.->
+		r8. aes16-. aes8-.
+		aes des4
 % Bars 246 to 250
-		ees8->[ r16 bes-. bes8-.]
-		b!4.->
-		c->
-		cis4 d8
-		ees r r
+		aes8[ r16 ees'-. ees8-.]
+		e4.
+		f
+		fis4 g8
+		aes e,4->
 % Bars 251 to 255
-		R4.
-		ees8 r r
-		R4. \mark \default
-		ees8\p r r
+		f->-\dimmarkup g8
+		aes8\> e4->
+		f-> g8\! \mark \default
+		aes8\p r r
 		R4.*22
 % Bars 256 to 260
 	
@@ -180,17 +172,28 @@ musicTrombeIMvtIII = \relative c {
 % Bars 276 to 280
 		\mark \default
 	}
-	R4.*43
+	R4.*16
 % Bars 281 to 285
 	
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
+	
+	des4.\pp
+	r8 f4
+	ees4.
 % Bars 296 to 300
-	
+	r8 aes,4
+	a4.\pp\<
+	<< f {s8 s s\!}>>
+	bes4.\fz
+	ges!4(\dimD\> g8
 % Bars 301 to 305
-	
+	aes4)\p r8
+	aes4\pp\> aes8-.
+	des-.\! r r
+	R4.*16
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -200,10 +203,10 @@ musicTrombeIMvtIII = \relative c {
 	
 	
 	
-	r8. g16-.\ff g8-.
+	r8. f16-.\ff f8-.
 % Bars 321 to 324
-	g8 r r
+	f8 r r
 	R4.*3
 	
-	\section s8
+	\section \key bes \major s8
 }

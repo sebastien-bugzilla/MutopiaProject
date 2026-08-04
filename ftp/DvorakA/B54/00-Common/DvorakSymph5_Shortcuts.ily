@@ -66,6 +66,10 @@ fzmarcato = \markup {\hspace #-0.55 \dynamic fz \italic marcato}
 fzcresc = \markup {\hspace #-0.55 \dynamic fz \italic cresc.}
 fzbrackespres = \markup {\hspace #-0.55 \dynamic fz \bracket \with-true-dimensions \italic espres.}
 fzpocoapococresc = \markup {\hspace #-0.55 \dynamic fz \italic "poco a poco cresc."}
+fzpocoa_pococresc = \markup {
+	\hspace #-0.55 
+	\dynamic fz \translate #'(0 . 2.3) \italic \column { \lower #1.5 "poco a" "poco cresc."}
+}
 fzdim = \markup {\hspace #-0.55 \dynamic fz \italic dim. }
 fzmarkup = \markup {\hspace #-0.55 \dynamic fz}
 fzbrackcresc = \markup {\hspace #-0.55 \dynamic fz \bracket \with-true-dimensions \italic cresc. }
@@ -131,6 +135,7 @@ crescmolto = \markup {\italic "cresc. molto"}
 pocoapocodim = \markup {\italic "poco a poco dim."}
 dimin = \markup {\italic dimin.}
 pocoapococresc = \markup {\italic "poco a poco cresc."}
+pocoa_pococresc = \markup {\italic \column { \lower #1.5 "poco a" "poco cresc."}}
 crescsempre = \markup {\italic "cresc. sempre"}
 %--------------------
 % text indications
@@ -158,6 +163,19 @@ dopounapiccolapausasicontinua = \markup {
 		\lower #1.5 "Dopo una piccola" "pausa si continua"
 	}
 }
+dacapoallegroscherzandosinalsegnopoifine = \markup {
+	\italic \column { 
+		\general-align #X #RIGHT {
+			\lower #1.5 "Da Capo Allegro scherzando" 
+			\concat { 
+				\general-align #Y #CENTER {
+					"sin' all segno " \musicglyph "scripts.coda" " poi Fine"
+				}
+			}
+		}
+	}
+}
+finemarkup = \markup {\italic Fine}
 %--------------------
 % instrument modification
 %--------------------
@@ -209,6 +227,11 @@ timpinec = \markup {
 timpinasdes = \markup {
 	\center-column {
 		\lower #1 "Timp." "in As, Des"
+	}
+}
+timpinbf = \markup {
+	\center-column {
+		\lower #1 "Timp." "in B F"
 	}
 }
 clina = \markup {

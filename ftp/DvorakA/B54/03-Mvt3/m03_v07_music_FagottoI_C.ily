@@ -77,16 +77,16 @@ musicFagottoIMvtIII = \relative c {
 	c-. f,-. c'-.
 	ees16( d c b c8)
 	d8-.-\crescmarkup g,-. d'-.
-	f16(\< e d cis d8)
+	f16(\< e d cis d8)\!
 % Bars 76 to 80
 	e8-.\mf a,-. e'-. \partCombineAutomatic
 	R4.*9
 % Bars 81 to 85
 	
 % Bars 86 to 90
-	\partCombineApart fis8-.\fp b,-. fis'-. \partCombineAutomatic
+	\partCombineApart fis8-.-\offset X-offset -2 \fp b,-. fis'-. \partCombineAutomatic
 	R4.
-	\partCombineApart fis8-.\fp b,-. fis'-.
+	\partCombineApart fis8-.-\offset X-offset -2 \fp b,-. fis'-.
 	\mmrPos #7 R4. \partCombineAutomatic
 	R
 % Bars 91 to 95
@@ -101,7 +101,7 @@ musicFagottoIMvtIII = \relative c {
 	R4.*4
 % Bars 101 to 105
 	
-	e,4(->\f b16 dis
+	\aIIXoffset #-3 e,4(->\f b16 dis
 	e8)_\pocoapococresc b-. e-.
 	fis-. b,-. fis'-.
 	g16(-> fis e dis e8)
@@ -127,7 +127,7 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart r8 r f''16(\f ees
+	\partCombineApart r8 r f''16(-\offset X-offset -1 \f ees
 	d\< c bes a g f
 % Bars 126 to 130
 	ees d c bes a f)\! \partCombineAutomatic \mark \default
@@ -140,7 +140,7 @@ musicFagottoIMvtIII = \relative c {
 	\partCombineApart g,4 g8 \partCombineAutomatic
 	c4 c8
 	\partCombineApart f,4 f8 \partCombineAutomatic
-	bes \partCombineApart r bes'\p-.
+	bes \partCombineApart r bes'-\offset X-offset -1 \p-.
 % Bars 136 to 140
 	bes,[-. r bes'-.]
 	a[ r a]
@@ -194,7 +194,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 181 to 185
 	\partCombineAutomatic
 	f8\ff r r
-	\startVoltaI \partCombineApart bes4.\fp(~
+	\startVoltaI \partCombineApart bes4.-\offset X-offset -1.5 \fp(~
 	bes\pp~
 	bes4 f8
 % Bars 186 to 190
@@ -204,7 +204,7 @@ musicFagottoIMvtIII = \relative c {
 	c![ r c](
 	ees)[ r ees](
 % Bars 191 to 195
-	aes)\pp r r \partCombineAutomatic
+	aes)-\offset X-offset -1.5 \pp r r \partCombineAutomatic
 	R4.*3
 	
 	\section
@@ -215,12 +215,12 @@ musicFagottoIMvtIII = \relative c {
 % Bars 201 to 205
 		\partCombineApart r8.-\crescmarkup des16-.\p des8-.
 		bes->[ r16 bes-. bes8-.]
-		c\mf r r
-		r8. c16-.\f\< c8-.\!
+		c-\offset X-offset -2 \mf r r
+		r8. \hairpinShorten #'(-0.3 . -2.5) c16-.\f\< c8-.\!
 		f,4\fz r8
 % Bars 206 to 210
-		r8 r bes-.\mf\<
-		ees4\fz r8
+		r8 r bes-.-\offset X-offset -1 \mf\<
+		ees4-\offset X-offset -1 \fz r8
 		r r aes,-.-\pdim
 		des4 r8 \partCombineAutomatic
 		r r des\p-.
@@ -328,10 +328,10 @@ musicFagottoIMvtIII = \relative c {
 	f
 	ees)
 % Bars 311 to 315
-	r8. des'16-.\p des8-.
+	r8. des'16-.-\offset X-offset -1.5 \p des8-.
 	des8. des16-. des8-.
 	des8 r r
-	r8. des16-\crescmarkup-. des8-.
+	r8. des16-\offset X-offset -5 -\crescmarkup-. des8-.
 	des8. des16-. des8-. \partCombineAutomatic
 % Bars 316 to 320
 	des4\mf r8
