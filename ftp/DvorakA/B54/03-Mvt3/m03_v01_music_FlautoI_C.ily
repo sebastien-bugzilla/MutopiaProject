@@ -181,7 +181,7 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 	
-	\section
+	\textEndMark \attaccatrio \section
 	\startVoltaII bes8\ff r r \section \textEndMark \finemarkup \endVolta 
 % Bars 196 to 200
 	\repeat volta 2 {

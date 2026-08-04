@@ -176,6 +176,7 @@ dacapoallegroscherzandosinalsegnopoifine = \markup {
 	}
 }
 finemarkup = \markup {\italic Fine}
+attaccatrio = \markup {\italic "attacca Trio"}
 %--------------------
 % instrument modification
 %--------------------
