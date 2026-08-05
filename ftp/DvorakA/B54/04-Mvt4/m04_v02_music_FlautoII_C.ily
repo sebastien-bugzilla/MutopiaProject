@@ -67,7 +67,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 51 to 55
 	
 	
-	r4 g,-^ r a-^
+	r4 g,-^\f r-\crescmarkup a-^
 	r8 bes-^ r c-^ r d-^ r e-^ \mark \default
 	f\ff a,16( c f4~ f8) e16( d cis8-.) d-.
 % Bars 56 to 60
@@ -167,8 +167,8 @@ musicFlautoIIMvtIV = \relative c {
 	
 	r8. a16-.[\ff b8-. c]-. fis,8.[-> fis16-. gis8-. a-.]
 	dis, r r4 r2
-	r4 a'(~\fz a8 b16 a) gis8-. a-.
-	r4 c\fz(~ c8 d16 c) b8-. c-.
+	r4  \dynEO #'(0 . 1) a'(~\fz a8 b16 a) gis8-. a-.
+	r4 \dynEO #'(0 . 1) c\fz(~ c8 d16 c) b8-. c-.
 % Bars 151 to 155
 	r8. e!16[-.\ff fis8-. g]-. b,!8.[-> b16-. b8-. b]-.
 	r8. g16[-. b8-. e]-. g,8.[-> b16-. b8-. b]-.
@@ -205,7 +205,7 @@ musicFlautoIIMvtIV = \relative c {
 	R1*3
 	
 	
-	cis'1\ff
+	\dynEO #'(-2 . 2) cis'1\ff
 % Bars 196 to 200
 	r4 a-> r a->
 	cis1->
@@ -245,7 +245,7 @@ musicFlautoIIMvtIV = \relative c {
 	fis1)\pp
 	a(
 	gis)
-	b(\pp
+	\dynEO #'(0 . 2) b(\pp
 	bes!)
 % Bars 241 to 245
 	a~
@@ -263,7 +263,7 @@ musicFlautoIIMvtIV = \relative c {
 	R1*3
 	
 	
-	r2 a\f
+	r2 \dynEO #'(0 . 3) a\f
 	bes2.-> a4
 % Bars 256 to 260
 	d4.->-\crescmarkup c8 f4.-> e8
@@ -282,19 +282,19 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 271 to 275
 	
 	R1 \markk
-	f2->\ff a->
+	f2->-\offset X-offset -1 \ff a->
 	a-> b->
 	c8-. r c4-.\p r a-.
 % Bars 276 to 280
 	r a-. r e-.
-	f2->\ff a->
+	f2->-\offset X-offset -1 \ff a->
 	a-> b->
 	f'8 r c4-.\p r a-.
 	b( c gis a)
 % Bars 281 to 285
 	a(-\dimmarkup bes! fis g!)
 	dis( e d e)
-	r c'(\p gis a
+	r \dynEO #'(-1 . 1) c'(\p gis a
 	b-\dimmarkup c gis a)
 	a( bes! fis g
 % Bars 286 to 290
@@ -321,7 +321,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 % Bars 311 to 315
 	
-	r2 fis4\p\< a\!~
+	r2 \hairpinShorten #'(0 . -1.5) fis4\p\< a\!~
 	a\> g \dotsPosition #2 f!4. e8\!
 	e2(\p c'~
 	c) c

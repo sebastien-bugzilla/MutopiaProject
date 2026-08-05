@@ -20,7 +20,7 @@ musicTrombeIIMvtIV = \relative c {
 	r4 b'-.\f r b-.
 	r b-. r b-.
 % Bars 16 to 20
-	r e\ff~ e8 r r4
+	r e-\tweak X-offset 0 \ff~ e8 r r4
 	r e r2
 	r4 e r2
 	fis4-^ b,-^ b-^ fis'-^
@@ -133,12 +133,12 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	r2 bes,->\f
+	r2 bes,->-\offset X-offset -2 \f
 	bes'-> r
 % Bars 151 to 155
 	R1*2
 	
-	r2 ges,->\f
+	r2 ges,->-\offset X-offset -2 \f
 	ges'-> r
 	R1*12
 % Bars 156 to 160
@@ -164,7 +164,7 @@ musicTrombeIIMvtIV = \relative c {
 	R1*3
 	
 	
-	a,8-.\f d16-. f-. a4~ a8 f-. d-. f-.
+	a,8-.-\tweak X-offset 0.5 \f d16-. f-. a4~ a8 f-. d-. f-.
 	f2\ff r
 % Bars 196 to 200
 	r4 e-> r e->
@@ -173,7 +173,7 @@ musicTrombeIIMvtIV = \relative c {
 	gis8 r r4 r2
 	R1
 % Bars 201 to 205
-	r4 b,->\ff c-> d->
+	r4 b,->-\tweak X-offset -3 \ff c-> d->
 	dis8 e-. e-. e-.  e-. e-. e-. e-.
 	a r r4 r2
 	r4 e->-\fbrackz r2
@@ -213,7 +213,7 @@ musicTrombeIIMvtIV = \relative c {
 	R1*6
 % Bars 256 to 260
 	
-	e2->\ff f->
+	e2->-\tweak X-offset -1.5 \ff f->
 	R1
 	e2-> f->
 	R1*3
@@ -228,12 +228,12 @@ musicTrombeIIMvtIV = \relative c {
 % Bars 271 to 275
 	g4-. r r2
 	r8 g'-.-\pcresc g-. g-.  g-. g-. g-. g-. \markk
-	e2->\ff c->
+	e2->-\tweak X-offset #-1 \ff c->
 	c-> c->
 	e8 r r4 r2
 % Bars 276 to 280
 	R1
-	e2->\ff c->
+	e2->-\tweak X-offset #-1 \ff c->
 	c-> c->
 	e8 r r4 r2
 	R1*24
@@ -304,7 +304,7 @@ musicTrombeIIMvtIV = \relative c {
 	R1*2
 	
 	r2 r4 a'->\f
-	gis->\f a-> g-> a->
+	gis->-\tweak X-offset -1.5 \f a-> g-> a->
 	fis->-\crescmarkup a-> f-> aes->
 % Bars 386 to 390
 	e-> g-> d-> f->
@@ -326,7 +326,7 @@ musicTrombeIIMvtIV = \relative c {
 	g r g r
 % Bars 401 to 405
 	g r r2
-	r2 r4 r8 g'\ff \mark \default
+	r2 r4 r8 \dynEO #'(-2.8 . 2) g'\ff \mark \default
 	e8 r e4.-> e16-. d-. c8-. d-.
 	c r e4.-> e16-. d-. c8-. d-.
 	c r c'4.-> c16-. g-. e8-. g-.

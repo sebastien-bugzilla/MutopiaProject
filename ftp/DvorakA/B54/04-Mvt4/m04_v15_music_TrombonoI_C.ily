@@ -232,7 +232,7 @@ musicTrombonoIMvtIV = \relative c {
 % Bars 246 to 250
 	r2 e!4-. r
 	g1\pp~
-	<< g {s4\< s s s\!}>>
+	<< g {s4\< s s s8 s\!}>>
 	g8\fz r8 r4 r2
 	R1 \mark \default
 % Bars 251 to 255

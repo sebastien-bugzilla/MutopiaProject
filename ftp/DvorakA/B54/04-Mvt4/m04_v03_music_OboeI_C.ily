@@ -18,7 +18,7 @@ musicOboeIMvtIV = \relative c {
 	\time 2/4 d8 c16 bes) \partCombineAutomatic a8-. bes-.
 	\timeMvtIV fis4(\fz g) r8. g16[ a8. bes16]
 	fis4(->\fz g) r8. g16[ a8. bes16]
-	\partCombineApart e,1(~-^
+	\partCombineApart \marcatoUpperSlur \shape #'((0 . -1.5)(0 . -0.5)(0 . 0)(0 . 0)) Slur e,1(~-^
 	e4 f) r8. e16[ a,8. a'16]
 % Bars 11 to 15
 	e4->( f) r8. e16[-\crescmarkup a,8. a'16]
@@ -46,7 +46,7 @@ musicOboeIMvtIV = \relative c {
 	r g-. r g-. r d-. r d-.
 % Bars 31 to 35
 	r d-> r d-> r d-> r d->
-	r4 d->\ff r d->
+	r4 d->-\tweak X-offset 0 \ff r d->
 	r a-> bes-> fis->
 	r g-> r a-> \mark \default
 	r d\p r2
@@ -109,7 +109,7 @@ musicOboeIMvtIV = \relative c {
 	r ees r ees
 	r d r des \partCombineAutomatic
 	R1
-	\partCombineApart r2 bes\pp(
+	\partCombineApart r2 bes-\offset X-offset -1.5 \pp(
 % Bars 86 to 90
 	a4) r bes2(
 	a4) r r2 \partCombineAutomatic
@@ -137,7 +137,7 @@ musicOboeIMvtIV = \relative c {
 	ces2.\p ces4(
 	bes2.) bes4
 % Bars 111 to 115
-	aes2(\< aes'4\f ges~
+	\shape #'((0 . -1)(0 . -0.5)(0 . -0.5)(0 . -1)) Slur aes2(\< aes'4\f ges~
 	ges) f(\> ees4. des8)\!
 	des2.(-\dimmarkup des4--)
 	des2(\> ces)\!
@@ -151,7 +151,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 121 to 125
 	fis1\fp\>~
 	fis4\! fis-.(\< fis-. fis-.)\! \section
-	\key f \major a2.\fp fis4~
+	\key f \major a2.-\tweak X-offset 0 \fp fis4~
 	fis fis(-.\> fis-. fis-.)\!
 	eis2.\p eis4
 % Bars 126 to 130
@@ -259,27 +259,27 @@ musicOboeIMvtIV = \relative c {
 	
 % Bars 231 to 235
 	
-	e4\p b'(~ b8 a16 g fis8-.) g-.
+	e4\p \once \stemUp b'(~ b8 a16 g fis8-.) g-.
 	dis4( e) r8. e16[ fis8. g16]
 	dis4( e) r8. e16[ fis8. g16]
 	dis4(\< e b cis\!
 % Bars 236 to 240
 	d!8) r r4 r2
-	\partCombineApart r4 fis'8-.\mf r cis-. r dis-. r
+	\partCombineApart r4 fis'8-.-\offset X-offset -2 \mf r cis-. r dis-. r
 	e2-> r
-	r4 aes8-.\mf r ees-. r f-. r 
+	r4 aes8-.-\offset X-offset -3.5 \mf r ees-. r f-. r 
 	ges2 r \partCombineAutomatic
 % Bars 241 to 245
 	R1
 	r4 c8-.\mf r f,-. r g-. r
 	aes-. r ees-. r c-. r d-. r
 	ees2 r
-	r8 des-.\mf\< gis,-. a-. bes4\! r
+	r8 \aIIXoffset #-3 des-.\mf\< gis,-. a-. bes4\! r
 % Bars 246 to 250
 	R1
 	r8 g'!-.\mf c,!-. d!-. e!4 r
 	r8 g-.\f c,-. d-. e4 r
-	\partCombineApart r8 g16-.\mf g-. g8-. g-. g-. g-. cis,-. cis-.
+	\partCombineApart r8 g16-.-\offset X-offset -2 \mf g-. g8-. g-. g-. g-. cis,-. cis-.
 	cis-. cis-. \once \partCombineAutomatic r e-. \once \partCombineAutomatic r e-. \once \partCombineAutomatic r g-. \partCombineAutomatic \mark \default
 % Bars 251 to 255
 	r4 \partCombineApart a,( bes2~
@@ -288,8 +288,8 @@ musicOboeIMvtIV = \relative c {
 	f4) e(\< a2)\! \partCombineAutomatic
 	r4 bes\f r c
 % Bars 256 to 260
-	r8 d,-.-\crescmarkup r e-. r f-. r g-.
-	f,(\ff a16 c f4~ f8) e16( d cis8-.) d-.
+	r8 d,-.-\offset X-offset -1 -\crescmarkup r e-. r f-. r g-.
+	\aIIXoffset #-2 f,(\ff a16 c f4~ f8) e16( d cis8-.) d-.
 	b( c!16) r a8( bes!16) r gis8( a16) r fis8( g16) r
 	f!8( a16 c f4~ f8) e16( d cis8-.) d-.
 	b( c!16) r a8( bes16) r gis8( a16) r fis8( g16) r
@@ -344,7 +344,7 @@ musicOboeIMvtIV = \relative c {
 	d2 f,\p
 	g\< g\!
 % Bars 306 to 310
-	c2.\brack\mf-\crescmarkup c4(\<
+	c2.\brack\mf c4(\<-\tweak extra-offset #'(-1 . -3) -\crescmarkup
 	f2\f\> g)\!
 	g(\p\> bes,)\!
 	c( f
@@ -353,7 +353,7 @@ musicOboeIMvtIV = \relative c {
 	ees\> ees\!(
 	d)\p r \partCombineAutomatic
 	R1
-	r2 g4(\p\< bes\!~
+	r2 \hairpinShorten #'(0 . -1.5) g4(\p\< bes\!~
 	bes\> a g4.\! f8)
 % Bars 316 to 320
 	\partCombineApart d2( bes'~
@@ -372,7 +372,7 @@ musicOboeIMvtIV = \relative c {
 	r fis r fis
 	r g-\crescmarkup r gis
 	r bes! r bes
-	\partCombineApart c,(-\brackpcresc a'8 g f e d c)
+	\partCombineApart c,(-\brackM\pcresc a'8 g f e d c)
 % Bars 331 to 335
 	c1
 	c4( a'8 g f e d c)
@@ -432,7 +432,7 @@ musicOboeIMvtIV = \relative c {
 	gis4 r \partCombineApart des2~
 	des4 \once \partCombineAutomatic r c \once \partCombineAutomatic r
 	e \once \partCombineAutomatic r d16(\f\< bes g a bes c d e)\! \partCombineAutomatic \mark \default
-	f8\f r f2.\p~
+	f8\f r f2.-\tweak X-offset 0.5 \p~
 % Bars 381 to 385
 	f8 r f2.~-\pocoapococresc
 	f8 r a4.(-> g16 f e8-.) f-.

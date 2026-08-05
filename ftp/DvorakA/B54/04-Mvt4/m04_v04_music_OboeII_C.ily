@@ -41,12 +41,12 @@ musicOboeIIMvtIV = \relative c {
 % Bars 26 to 30
 	
 	r8-\pcresc g,-. g-. g-. g-. g-. fis-. fis-.
-	g4\f g\fz~ g8 r r4
+	g4\f g-\offset X-offset 0.5 \fz~ g8 r r4
 	r r8 d'-. r d-. r d-.
 	r bes!-. r bes-. r bes-. r bes-.
 % Bars 31 to 35
 	r bes-> r bes-> r bes-> r bes->
-	r4 bes->\ff r bes->
+	r4 bes->-\tweak X-offset 0 \ff r bes->
 	r a-> bes-> fis->
 	r g-> r a-> \mark \default
 	r bes\p r2
@@ -143,7 +143,7 @@ musicOboeIIMvtIV = \relative c {
 % Bars 121 to 125
 	a1\fp\>~
 	a4\! a-.(\< a-. a-.)\! \section
-	\key f \major cis2.\fp a4~
+	\key f \major cis2.-\tweak X-offset 0 \fp a4~
 	a a(-.\> a-. a-.)\!
 	gis2.\p gis4
 % Bars 126 to 130
@@ -275,9 +275,9 @@ musicOboeIIMvtIV = \relative c {
 	r8 g'!-.\mf c,!-. d!-. e!4 r
 	r8 g-.\f c,-. d-. e4 r
 	R1
-	r8\mf\> g,-. r bes-. r bes-. r cis-.\! \mark \default
+	r8-\offset X-offset -1 \mf \hairpinShorten #'(1 . 0) g,-.\> r bes-. r bes-. r cis-.\! \mark \default
 % Bars 251 to 255
-	r4 a2(\p g4)
+	r4 a2(-\offset X-offset 1 \p g4)
 	c2.(-\crescmarkup bes4)
 	e2.( d4)
 	g2.( f4)
@@ -303,12 +303,12 @@ musicOboeIIMvtIV = \relative c {
 % Bars 271 to 275
 	c4-.\f r r2
 	r2 r4 r8 bes-.\f \markk
-	a2->\ff a->
+	a2->-\offset X-offset -2.5 \ff a->
 	a-> b->
 	a'8-. r f4-.\p r c-.
 % Bars 276 to 280
 	r2 d,8( dis e c)
-	a'2->\ff a->
+	a'2->-\offset X-offset -2.5 \ff a->
 	a-> b->
 	f'8 r f4-.\p r c-.
 	b( c gis a)
@@ -330,7 +330,7 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 301 to 305
 	R1
-	<< g1\pp\<( {s4 s s s\!}>>
+	<< \shape #'((0 . 2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur g1\pp\<( {s4 s s s\!}>>
 	f2\> g4 a)\! \mark \default
 	bes r r2
 	R1*8
@@ -419,7 +419,7 @@ musicOboeIIMvtIV = \relative c {
 	d4 r des2-\fbrackz~
 	des4 r c r
 	e r r2 \mark \default
-	a,8\f r f2.\p~
+	a,8\f r f2.-\tweak X-offset 0.5 \p~
 % Bars 381 to 385
 	f8 r f2.~
 	f8 r a'4.(-> g16 f e8-.) f-.

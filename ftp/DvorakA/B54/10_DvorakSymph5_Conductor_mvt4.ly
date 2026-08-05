@@ -23,6 +23,7 @@
 \include "./00-Common/DvorakSymph5_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Cond_Mvt04.ily"
+%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./04-Mvt4/m04_v01_music_FlautoI_C.ily"
 \include "./04-Mvt4/m04_v02_music_FlautoII_C.ily"
 \include "./04-Mvt4/m04_v03_music_OboeI_C.ily"
@@ -39,13 +40,13 @@
 \include "./04-Mvt4/m04_v14_music_TrombeII_C.ily"
 \include "./04-Mvt4/m04_v15_music_TrombonoI_C.ily"
 \include "./04-Mvt4/m04_v16_music_TrombonoII_C.ily"
-\include "./04-Mvt4/m04_v17_music_TrombonoIII.ily"
-\include "./04-Mvt4/m04_v18_music_Timpani.ily"
-\include "./04-Mvt4/m04_v20_music_ViolinoI.ily"
-\include "./04-Mvt4/m04_v21_music_ViolinoII.ily"
-\include "./04-Mvt4/m04_v22_music_Viola.ily"
-\include "./04-Mvt4/m04_v23_music_Violoncello.ily"
-\include "./04-Mvt4/m04_v24_music_Contrabasso.ily"
+\include "./04-Mvt4/m04_v17_music_TrombonoIII_C.ily"
+\include "./04-Mvt4/m04_v18_music_Timpani_C.ily"
+\include "./04-Mvt4/m04_v20_music_ViolinoI_C.ily"
+\include "./04-Mvt4/m04_v21_music_ViolinoII_C.ily"
+\include "./04-Mvt4/m04_v22_music_Viola_C.ily"
+\include "./04-Mvt4/m04_v23_music_Violoncello_C.ily"
+\include "./04-Mvt4/m04_v24_music_Contrabasso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -69,8 +70,11 @@
 			\new StaffGroup <<
 				\new Staff <<
 %					\new Voice {
-%						\formatConductorMvtIV
+%						\displayFilterVoice
 %					}
+					\new Voice {
+						\formatConductorMvtIV
+					}
 					\new Voice {
 						\tempiMvtIV
 					}
@@ -114,7 +118,7 @@
 					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
 %					\musicTrombeIIMvtIV 
 				}
-				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtIV \consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtIV \nameStaffVIIIMvtIV
 						\partCombine \musicTrombonoIMvtIV \musicTrombonoIIMvtIV
@@ -152,6 +156,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+%			system-count = 74
 		}
 	}
 }

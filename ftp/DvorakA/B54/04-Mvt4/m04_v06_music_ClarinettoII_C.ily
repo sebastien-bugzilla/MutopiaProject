@@ -27,7 +27,7 @@ musicClarinettoIIMvtIV = \relative c {
 	fis4-.\f fis'-. fis,-. fis'-.
 	fis,-. fis'-. fis,-. fis'-.
 % Bars 16 to 20
-	r b,\ff~ b8 r r4
+	r b,-\tweak X-offset 0.5 \ff~ b8 r r4
 	r b-> r2
 	r4 b-> r2
 	cis4-^ cis-^ d-^ cis-^
@@ -49,7 +49,7 @@ musicClarinettoIIMvtIV = \relative c {
 	r4 c->\ff r c->
 	r e,-> r e->
 	r e-> r e-> \mark \default
-	r c'\p r2
+	r c'-\tweak X-offset 0 \p r2
 % Bars 36 to 40
 	R1*3
 	
@@ -113,7 +113,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 86 to 90
 	R1*5
 % Bars 91 to 95
-	bes,2\pp bes~
+	bes,2-\offset X-offset 1.5 \pp bes~
 	bes1~ \section \mark \default
 	\key ees \major bes4 r r2
 	R1*2
@@ -138,7 +138,7 @@ musicClarinettoIIMvtIV = \relative c {
 	
 	
 	
-	a2(\p bes)
+	a2(-\offset X-offset 0.5 \p bes)
 	ees,1-\ppdim(
 % Bars 116 to 120
 	d!) \mark \default
@@ -234,7 +234,7 @@ musicClarinettoIIMvtIV = \relative c {
 	c1\p~
 	c
 	c
-	<< c\f\< {s4 s s s\!}>>
+	<< c\f\< {s4 s s s8 s\!}>>
 	fis!2\ff r
 % Bars 196 to 200
 	r4 fis-> r fis->
@@ -270,7 +270,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 226 to 230
 	ais1(~\fz\>
 	ais\pp
-	b4)^\brackM\mutainclii r r2
+	b4) r r2^\brackM\mutainclii
 	r8. fis'16\p fis4 r2
 	r8. fis16 fis4 r2
 % Bars 231 to 235
@@ -305,7 +305,7 @@ musicClarinettoIIMvtIV = \relative c {
 	c2.-> b4
 % Bars 256 to 260
 	e4.->-\crescmarkup d8 g4.-> fis8
-	g,8(\ff b16 d g4~ g8) fis16( e dis8-.) e-.
+	g,8(-\tweak X-offset -1.5 \ff b16 d g4~ g8) fis16( e dis8-.) e-.
 	cis8( d!16) r b8( c16) r ais8( b16) r gis8( a16) r
 	g!8( b16 d g4~ g8) fis16( e dis8-.) e-.
 	cis( d!16) r b8( c16) r ais8( b16) r gis8( a16) r
@@ -326,7 +326,7 @@ musicClarinettoIIMvtIV = \relative c {
 	d8-. e-. fis-. g-. a-. b-. c-. d-. \markk
 	b2->\ff b->
 	d-> cis->
-	d8-. r b4-.\p r b-.
+	d8-. r b4-.-\tweak X-offset 0.5 \p r b-.
 % Bars 276 to 280
 	r b-. r c-.
 	b2->\ff b->
@@ -383,12 +383,12 @@ musicClarinettoIIMvtIV = \relative c {
 	fis2.) fis4\pp
 % Bars 321 to 325
 	e2( d) \mark \default
-	g4\pp g r fis
+	\dynEO #'(-2.5 . 1) g4\pp g r fis
 	r f r a8(\< b)\!
 	e2\fz \omitStem f\>
 	e \omitStem c\!
 % Bars 326 to 330
-	r4 b\pp r b
+	r4 b-\tweak X-offset -2 \pp r b
 	r d r d
 	r cis r cis
 	r c! r c
@@ -436,7 +436,7 @@ musicClarinettoIIMvtIV = \relative c {
 	b4 b'->(~ b8 a16 g) fis8-. g-.
 	r4 b->(~ b8 a16 g) fis8-. g-.
 % Bars 366 to 370
-	r4 g(~\mf g8 fis16 e) dis8-. e-.
+	r4 g(~-\tweak X-offset -1 \mf g8 fis16 e) dis8-. e-.
 	r4 b'(~ b8 a16 g) fis8-. g-.
 	R1
 	b8(\f a16 g fis8 g) r2

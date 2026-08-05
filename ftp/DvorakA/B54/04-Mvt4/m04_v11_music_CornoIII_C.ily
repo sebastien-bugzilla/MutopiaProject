@@ -27,7 +27,7 @@ musicCornoIIIMvtIV = \relative c {
 	b,4-.\f r b-. r
 	b-. r b-. r
 % Bars 16 to 20
-	r b'\ff~ b8 r r4
+	r b'-\tweak X-offset -1 \ff~ b8 r r4
 	r b-\fbrackz r2
 	r4 b-\fbrackz r2
 	e,4-^ fis-^ g-^ fis!-^
@@ -75,9 +75,9 @@ musicCornoIIIMvtIV = \relative c {
 	<< e2.\< {s4 s s8 s\!}>> \partCombineApart d8-. g-. \partCombineAutomatic \mark \default
 	g2\ff a
 % Bars 56 to 60
-	r8 g-.\f r g-. r g-. r g-.
+	r8 g-.-\tweak X-offset -2 \f r g-. r g-. r g-.
 	g2\ff a
-	r8 g-.\f r g-. r g-. r g-.
+	r8 g-.-\tweak X-offset -2 \f r g-. r g-. r g-.
 	r8 g-. r g-. r g-. r g-.
 	r8 g-. r g-. r g-. r g-.
 % Bars 61 to 65
@@ -90,7 +90,7 @@ musicCornoIIIMvtIV = \relative c {
 	
 	
 	
-	g,1\fp
+	g,1-\tweak X-offset -1.5 \fp
 	r8 g'-.\f\< g-. g-. g-. g-. g-. g-.\!
 % Bars 71 to 75
 	c2->\ff c->
@@ -292,7 +292,7 @@ musicCornoIIIMvtIV = \relative c {
 	g2-> a->
 	R1
 % Bars 261 to 265
-	r8 g\f r g r g r g
+	r8 g-\tweak X-offset -2 \f r g r g r g
 	r g r g r g r g
 	r g r g r g r g
 	r g r g r g r g \mark \default
@@ -300,7 +300,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 266 to 270
 	R1*5
 % Bars 271 to 275
-	g,1\fp
+	\dynEO #'(-1.5 . .5) g,1\fp
 	r8 g-.-\pcresc g-. g-.  g-. g-. g-. g-. \markk
 	c'2->\ff c->
 	c-> c->
@@ -364,10 +364,10 @@ musicCornoIIIMvtIV = \relative c {
 	r c r c
 	r c-\crescmarkup r c
 	r c r c \clef treble
-	<< g''1 {s8\< s s s\! s\> s s s\!}>>
+	<< g''1 {s8\< s s s\! s-\tweak extra-offset #'(0 . -1) \> s s s\!}>>
 % Bars 331 to 335
 	g1\pp
-	<< g1 {s8\< s s s\! s\> s s s\!}>>
+	<< g1 {s8\< s s s\! s-\tweak extra-offset #'(0 . -1) \> s s s\!}>>
 	g1\pp
 	\partCombineApart g2 g~
 	g g~
@@ -452,7 +452,7 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 401 to 405
 	r8 d r cis r d r b
 	r4 \partCombineApart g8-. g-. f f f f \partCombineAutomatic \mark \default
-	g1\ff~
+	g1-\tweak X-offset #-1.5 \ff~
 	g
 	g~
 % Bars 406 to 410

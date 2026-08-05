@@ -32,7 +32,6 @@ pmoltotranquillo = \markup {\hspace #-0.08 \dynamic p \italic "molto tranquillo"
 pbrackdim = \markup {\hspace #-0.08 \dynamic p \bracket \with-true-dimensions \italic dim.}
 brackpmarkup = \markup {\hspace #-0.08 \bracket \with-true-dimensions \dynamic p}
 brackpdolce = \markup {\hspace #-0.08 \bracket \with-true-dimensions \dynamic p \italic dolce }
-brackpcresc = \markup {\hspace #-0.08 \bracket \with-true-dimensions {\dynamic p \italic cresc.}}
 %--------------------
 % dynamics mp
 %--------------------
@@ -245,6 +244,37 @@ clinb = \markup {
 		\lower #1 "Cl. in" "B"
 	}
 }
+timpincf = \markup {
+	\center-column {
+		\lower #1 "Timp." "in C F"
+	}
+}
+timpindesf = \markup {
+	\center-column {
+		\lower #1 "Timp." "in Des F"
+	}
+}
+timpincg = \markup {
+	\center-column {
+		\lower #1 "Timp." "in C G"
+	}
+}
+timpinaes = \markup {
+	\center-column {
+		\lower #1 "Timp." "in A Es"
+	}
+}
+timpinad = \markup {
+	\center-column {
+		\lower #1 "Timp." "in A D"
+	}
+}
+timpinae = \markup {
+	\center-column {
+		\lower #1 "Timp." "in A E"
+	}
+}
+
 
 markk = \mark #11
 
@@ -415,7 +445,13 @@ markWhiteout = {
 	\once \override Score.RehearsalMark.whiteout-style = #'outline
 }
 
-
+tremoloPosition = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override StemTremolo.Y-offset = #position
+	#}
+)
 
 
 %aIIOmit = \once \omit Voice.CombineTextScript

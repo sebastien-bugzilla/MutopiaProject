@@ -23,11 +23,11 @@ musicCornoIIMvtIV = \relative c {
 % Bars 11 to 15
 	r4 e r2
 	R1
-	r8. b'16(\f\< e,4)\! r8. d'16(\< g,4)\!
+	r8. b'16(-\offset X-offset -2 \f\< e,4)\! r8. d'16(\< g,4)\!
 	r4 b-. r b-.
 	r b-. r b-.
 % Bars 16 to 20
-	r e,\ff~ e8 r r4
+	r e,-\tweak X-offset -1 \ff~ e8 r r4
 	r e r2
 	r4 e r2
 	ais4-^ b-^ cis-^ fis,-^
@@ -93,11 +93,11 @@ musicCornoIIMvtIV = \relative c {
 	g,8\f r r4 r2
 	r8 g-.\f\< g-. g-.  g-. g-. g-. d'-.\!\noBeam
 % Bars 71 to 75
-	g,2->\ff a->
+	g,2->-\tweak X-offset 0 \ff a->
 	c-> c->
 	c8 r r4 r2
 	R1
-	g2->\ff a->
+	g2->-\tweak X-offset 0 \ff a->
 % Bars 76 to 80
 	c-> c->
 	c8 r r4 r2
@@ -114,14 +114,14 @@ musicCornoIIMvtIV = \relative c {
 	
 	\section \mark \default
 	aes4\pp r r aes8-. aes-.
-	ces4\pp r r bes8-.\< bes-.\!
+	ces4-\tweak X-offset 1 \pp r r bes8-.\< bes-.\!
 	bes2 r4 bes8-. bes-.
 % Bars 96 to 100
-	aes2\fz r4 aes8-. aes-.
-	aes2\p r4 aes8-. aes-.
+	aes2-\offset X-offset 0.5 \fz r4 aes8-. aes-.
+	aes2-\offset X-offset 0.5 \p r4 aes8-. aes-.
 	g2 r4 g8-. g-.
 	f2 r4 f8-. f-.
-	aes2\fz r4 g8-.\p g-.
+	aes2-\offset X-offset 0.5 \fz r4 g8-.-\offset X-offset -2 \p g-.
 % Bars 101 to 105
 	g4 r r2
 	R1*6
@@ -287,12 +287,12 @@ musicCornoIIMvtIV = \relative c {
 % Bars 271 to 275
 	g,4-.\f r r2
 	r8 g-.-\pcresc g-. g-.  g-. g-. g-. g-. \markk
-	g2->\ff a->
+	g2->-\tweak X-offset #0.5 \ff a->
 	c-> c->
 	c8 r r4 r2
 % Bars 276 to 280
 	R1
-	g2->\ff a->
+	g2->-\tweak X-offset #0.5 \ff a->
 	c-> c->
 	c8 r r4 r2
 	R1*10
@@ -311,7 +311,7 @@ musicCornoIIMvtIV = \relative c {
 	
 	
 	b1\fp
-	b2\pp r
+	b2-\offset X-offset 1.5 \pp r
 % Bars 301 to 305
 	R1*2
 	
@@ -399,7 +399,7 @@ musicCornoIIMvtIV = \relative c {
 	fis4 r f2~
 	f4 r f r
 	f r r2 \mark \default
-	c'8\f r c2.\p~
+	c'8\f r c2.-\tweak X-offset 0.5 \p~
 % Bars 381 to 385
 	c8 r c2.~
 	c8 r c2.~

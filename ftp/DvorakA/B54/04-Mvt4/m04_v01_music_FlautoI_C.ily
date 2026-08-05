@@ -9,7 +9,7 @@ musicFlautoIMvtIV = \relative c {
 	\key f \major
 %	\transposition a
 % Bars 1 to 5
-	R1*4
+	\sectionLabel "FINALE" R1*4
 	
 	
 	
@@ -24,10 +24,10 @@ musicFlautoIMvtIV = \relative c {
 	R1*3
 	
 	
-	e4-.\f e'-. e,-. e'-.
+	\aIIXoffset #-1 e4-.\f e'-. e,-. e'-.
 	e,-. e'-. e,-. e'-.
 % Bars 16 to 20
-	r e\ff~ e8 r r4
+	r \dynEO #'(0 . 2) e\ff~ e8 r r4
 	r e->-\fbrackz r2
 	r4 e->-\fbrackz r2
 	dis4-^ e-^ fis-^ dis-^
@@ -41,7 +41,7 @@ musicFlautoIMvtIV = \relative c {
 % Bars 26 to 30
 	aes-. c-. a-. c-. a-. c-. a-. c-.
 	bes!-. d-.-\crescmarkup c-. ees-. bes-. d-. a-. d-.
-	g,4\f( g'->~\fz g8 f!16 ees) d8-. ees-.
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur g,4\f( \dynEO #'(0 . 2) g'->~\fz g8 f!16 ees) d8-. ees-.
 	cis-. d-. r d-. r d-. r d-.
 	R1*5
 % Bars 31 to 35
@@ -71,9 +71,9 @@ musicFlautoIMvtIV = \relative c {
 % Bars 51 to 55
 	
 	
-	r4 bes,-^-\fcresc r c-^
-	r8 d-^ r e-^ r f-^ r g-^ \mark \default
-	f\ff a,16( c f4~ f8) e16( d cis8-.) d-.
+	r4 \dynEO #'(0 . 2) bes,-^\f r-\crescmarkup c-^
+	r8 d-^ r e-^ r f-^ r g-^ \markXoffset #-0.2 \mark \default
+	\dynEO #'(0 . 2) f\ff a,16( c f4~ f8) e16( d cis8-.) d-.
 % Bars 56 to 60
 	\cutBeamEachBeat b( c!)-> a( bes!->) gis( a)-> fis( g)->
 	f! a16( c f4~ f8) e16( d cis8-.) d-.
@@ -129,12 +129,12 @@ musicFlautoIMvtIV = \relative c {
 	\partCombineApart bes'2.\p bes4(
 % Bars 106 to 110
 	beses2.) aes4
-	aes2(\< ges'4\f f~
+	\shape #'((0 . -2)(0 . -0.5)(0 . -0.5)(0 . -1)) Slur aes2(\< ges'4\f f~
 	f ees\> des c!)\!
 	ces2.\p ces4(
 	bes2.) bes4
 % Bars 111 to 115
-	aes2(\< aes'4\f ges~
+	\shape #'((0 . -2)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur aes2(\< aes'4\f ges~
 	ges) f(\> ees4. des8)\!
 	des2.(-\dimmarkup des4--)
 	des2(\> ces)\!
@@ -162,12 +162,12 @@ musicFlautoIMvtIV = \relative c {
 	R1*3
 	
 	
-	b'1\ff
+	\dynEO #'(0 . 2) b'1\ff
 % Bars 136 to 140
 	r4 d-^ r b-^
-	b1\ff
+	\dynEO #'(0 . 2) b1\ff
 	r4 d-^ r b-^
-	b8 r g'(\ff f) f( ees) ees( d)
+	b8 r \dynEO #'(0 . 2) g'(\ff f) f( ees) ees( d)
 	d( c) c( bes!) bes( aes) aes( g)
 % Bars 141 to 145
 	g r r4 r2
@@ -182,7 +182,7 @@ musicFlautoIMvtIV = \relative c {
 	r4 \partCombineApart c'(~ c8 b16 a) gis8-. a-. \partCombineAutomatic
 	r4 \partCombineApart ees'(~ ees8 d16 c) b8-. c-. \partCombineAutomatic
 % Bars 151 to 155
-	r8. g'16[-.\ff a8-. b]-. e,!8.[-> e16-. fis8-. g]-.
+	r8. \dynEO #'(0 . 1) g'16[-.\ff a8-. b]-. e,!8.[-> e16-. fis8-. g]-.
 	r8. e!16[-. fis8-. g]-. \partCombineApart b,8.[-> b16-. dis8-. e]-. \partCombineAutomatic
 	R1*14
 % Bars 156 to 160
@@ -269,17 +269,17 @@ musicFlautoIMvtIV = \relative c {
 	R1
 	r8 g'!-.\mf c,!-. d!-. e!4-. r
 	r8 g-.\f c,-. d-. e4 r
-	\partCombineApart r8 g16-.\mf g-. cis,8-. d-. e-. g,-. a-. bes-.
+	\partCombineApart r8 g16-.-\offset X-offset -2 \mf g-. cis,8-. d-. e-. g,-. a-. bes-.
 	cis,-. r r4 d'2\rest \partCombineAutomatic \mark \default
 % Bars 251 to 255
 	R1*3
 	
 	
 	r2 \partCombineApart a~
-	a4 g c2->\fz~
+	a4 g c2->-\offset X-offset -2 \fz~
 % Bars 256 to 260
 	c8 bes e4.-> d8 g4-> \partCombineAutomatic
-	f,8(\ff a16 c f4~ f8) e16( d cis8-.) d-.
+	\dynEO #'(0 . 1) f,8(\ff a16 c f4~ f8) e16( d cis8-.) d-.
 	b8( c!16) r a8( bes!16) r gis8( a16) r fis8( g16) r
 	f!8( a16 c f4~ f8) e16( d cis8-.) d-.
 	b( c!16) r a8( bes!16) r gis8( a16) r fis8( g16) r
@@ -293,7 +293,7 @@ musicFlautoIMvtIV = \relative c {
 	R1*6
 % Bars 271 to 275
 	
-	\partCombineApart e,8-.\p\< f-. g-. a-. bes-. c-. d-. e-.\! \markk
+	\partCombineApart e,8-.\p\< f-. g-. a-. bes-. c-. d-. e-.\! \markXoffset #-0.2 \markk
 	f,4( f'->~ f8) e16( d cis8 d)
 	c!4( a'->~ a8) g16( f e8 f) \partCombineAutomatic
 	c'-. r a4-.\p r f-.
@@ -306,7 +306,7 @@ musicFlautoIMvtIV = \relative c {
 % Bars 281 to 285
 	r d-. r c-.
 	r a( g bes)
-	r a'( e f
+	\once \partCombineAutomatic r a'( e f
 	b, c gis a) \partCombineAutomatic
 	a( bes! fis g
 % Bars 286 to 290
@@ -322,15 +322,15 @@ musicFlautoIMvtIV = \relative c {
 	
 	
 	
-	\partCombineApart a'2.->\fp a4
+	\partCombineApart a'2.->-\offset X-offset -2 \fp a4
 % Bars 301 to 305
 	aes2.\pp aes4
 	g2(\< d'4\! c
 	bes a\> g f)\! \mark \default
-	f2\p f
+	f2-\offset X-offset 0.5 \p f
 	g\< g\!
 % Bars 306 to 310
-	c2.\mf c4(-\crescmarkup\<
+	c2.\mf c4(-\tweak extra-offset #'(-1 . 12.5) _\crescmarkup\<
 	f2.\f\> g4)\!
 	g2(\p\> bes,)\!
 	a( f'
@@ -348,7 +348,7 @@ musicFlautoIMvtIV = \relative c {
 	\mark \default
 	r4 \once \partCombineApart f r \once \partCombineApart f
 	r \once \partCombineApart f r \partCombineApart g8( a) \partCombineAutomatic
-	bes2(\fz a\>
+	\dynEO #'(0 . 2) bes2(\fz a\>
 	d, g)\!
 % Bars 326 to 330
 	r4 f\pp r f
@@ -402,7 +402,7 @@ musicFlautoIMvtIV = \relative c {
 	\once \partCombineApart c'8 r r4 r r8 \once \partCombineApart c-.
 	\once \partCombineApart c-. r r4 r r8 \once \partCombineApart c-.
 	\once \partCombineApart c-. r \partCombineApart c2-> d4->~
-	d \partCombineAutomatic e2-> f4->\ff~
+	d \partCombineAutomatic e2-> \dynEO #'(0 . 2) f4->\ff~
 % Bars 376 to 380
 	f1~
 	f4 r r2
@@ -410,14 +410,14 @@ musicFlautoIMvtIV = \relative c {
 	\partCombineApart r2 d16(\f\< bes g a bes c d e)\! \mark \default
 	f8 \once \partCombineAutomatic r f2.
 % Bars 381 to 385
-	\once \partCombineAutomatic r4 f4.(->-\pocoapococresc e16 d cis8-.) d-. \partCombineAutomatic
+	\once \partCombineAutomatic r4 f4.(->_\pocoapococresc e16 d cis8-.) d-. \partCombineAutomatic
 	r4 a'4.(-> g16 f e8-.) f-.
 	r4 a4.(-> g16 f e8-.) f-.
-	r8 g16(\f f e8-.) f-. r g16( f e8-.) f-.
+	r8 \dynEO #'(0 . 2) g16(\f f e8-.) f-. r g16( f e8-.) f-.
 	r g16(-\crescmarkup f e8-.) f-. r g16( f e8-.) f-.
 % Bars 386 to 390
 	r g16( f e8-.) f-. r g16( f e8-.) f-.
-	a8(\ff e16 f a8 e16 f a8 e16 f a8 e16 f)
+	\dynEO #'(0 . 2) a8(\ff e16 f a8 e16 f a8 e16 f a8 e16 f)
 	c8-. r a4.( c16 bes a8-.) bes-.
 	a r a4.(-> c16 bes a8-.) bes-.
 	a-. r a-. bes-. a-. r a-. bes-.
@@ -435,7 +435,7 @@ musicFlautoIMvtIV = \relative c {
 	r e r f
 % Bars 401 to 405
 	r8 e r ees r d r des
-	\partCombineApart r c-. b-. c-. \stemDown cis-. d-. dis-. e-. \partCombineAutomatic \mark \default
+	r \partCombineApart c-. b-. c-. \stemDown cis-. d-. dis-. e-. \partCombineAutomatic \mark \default
 	f1\ff~
 	f
 	a~

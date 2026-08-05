@@ -20,7 +20,7 @@ musicTrombeIMvtIV = \relative c {
 	r4 b''-.\f r b-.
 	r b-. r b-.
 % Bars 16 to 20
-	r b\ff~ b8 r r4
+	r b-\tweak X-offset 0 \ff~ b8 r r4
 	r b-\fbrackz r2
 	r4 b-\fbrackz r2
 	\once \partCombineApart fis4-^ b-^ b-^ \partCombineApart fis-^
@@ -66,7 +66,7 @@ musicTrombeIMvtIV = \relative c {
 	
 	
 % Bars 61 to 65
-	fis2->\ff fis->
+	\dynEO #'(-4 . 3) fis2->\ff fis->
 	g4.-> \tuplet 3/2 8 {g16 g g} g4-> g->
 	g r r2
 	R1*5
@@ -164,7 +164,7 @@ musicTrombeIMvtIV = \relative c {
 	R1*3
 	
 	
-	a,8-.\f d16-. f-. a4~ a8 f-. d-. f-.
+	a,8-.-\tweak X-offset 0.5 \f d16-. f-. a4~ a8 f-. d-. f-.
 	aes2\ff r
 % Bars 196 to 200
 	r4 b-> r gis->
@@ -173,7 +173,7 @@ musicTrombeIMvtIV = \relative c {
 	b8 r r4 r2
 	R1
 % Bars 201 to 205
-	r4 b,->\ff c-> d->
+	r4 b,->-\tweak X-offset -3 \ff c-> d->
 	dis8 e-. e-. e-.  e-. e-. e-. e-.
 	a r r4 r2
 	r4 e->-\fbrackz r2
@@ -213,27 +213,27 @@ musicTrombeIMvtIV = \relative c {
 	R1*6
 % Bars 256 to 260
 	
-	g2->\ff a->
+	g2->-\tweak X-offset -1.5 \ff a->
 	R1
 	g2-> a->
 	R1*3
 % Bars 261 to 265
 	
 	
-	fis2->\ff^\solo fis->
+	\dynEO #'(-4 . 3) fis2->\ff^\solo fis->
 	g4.-> g16-. g-. g4-> g-> \mark \default
 	g4 r r2
 % Bars 266 to 270
 	R1*5
 % Bars 271 to 275
 	g4-. r r2
-	r8 g-.-\pcresc g-. g-.  g-. g-. g-. g-. \markk
-	c2->\ff e,->
+	r8 \aIIXoffset #-3.5 g-.-\pcresc g-. g-.  g-. g-. g-. g-. \markk
+	c2->-\tweak X-offset #-1 \ff e,->
 	e-> fis->
 	g8 r r4 r2
 % Bars 276 to 280
 	R1
-	c2->\ff e,->
+	c2->-\tweak X-offset #-1 \ff e,->
 	e-> fis->
 	g8 r r4 r2
 	R1*24
@@ -304,12 +304,12 @@ musicTrombeIMvtIV = \relative c {
 	R1*2
 	
 	r2 r4 a->\f
-	gis->\f a-> g-> a->
+	gis->-\tweak X-offset -1.5 \f a-> g-> a->
 	fis->-\crescmarkup a-> f-> aes->
 % Bars 386 to 390
 	e-> g-> d-> f->
 	c-> e-> b8-. d-. a-. c-.
-	g r g'2-^\ff g8-. g-.
+	g r \dynEO #'(0 . 1) g'2^^\ff g8-. g-.
 	g r g2-> g8-. g-.
 	g-. r g-. g-. g-. r g-. g-.
 % Bars 391 to 395

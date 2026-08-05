@@ -239,7 +239,7 @@ musicFagottoIIMvtIV = \relative c {
 	cis1\p~
 	cis
 	bes!~
-	<< bes\f\< {s4 s s s\!}>>
+	<< bes\f\< {s4 s s s8 s\!}>>
 	a1\ff
 % Bars 196 to 200
 	r4 a-> r a->
@@ -456,8 +456,8 @@ musicFagottoIIMvtIV = \relative c {
 	c r r2 \mark \default
 	f1\fp~
 % Bars 381 to 385
-	f~-\pocoapococresc
-	f~
+	<< f~ {s4 s2.-\pocoapococresc}>>
+	f1~
 	f~
 	f\f~
 	f~

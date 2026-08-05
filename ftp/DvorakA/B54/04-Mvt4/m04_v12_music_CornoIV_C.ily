@@ -27,7 +27,7 @@ musicCornoIVMvtIV = \relative c {
 	b,4-.\f r b-. r
 	b-. r b-. r
 % Bars 16 to 20
-	r e\ff~ e8 r r4
+	r e-\tweak X-offset -1 \ff~ e8 r r4
 	r e r2
 	r4 e r2
 	cis4-^ d-^ e-^ fis-^
@@ -75,9 +75,9 @@ musicCornoIVMvtIV = \relative c {
 	<< e2.\< {s4 s s8 s\!}>> d'8-. g-. \mark \default
 	c,2\ff f
 % Bars 56 to 60
-	r8 g,-.\f r g-. r g-. r g-.
+	r8 g,-.-\tweak X-offset -2 \f r g-. r g-. r g-.
 	c2\ff f
-	r8 g,-.\f r g-. r g-. r g-.
+	r8 g,-.-\tweak X-offset -2 \f r g-. r g-. r g-.
 	r8 g-. r g-. r g-. r g-.
 	r8 g-. r g-. r g-. r g-.
 % Bars 61 to 65
@@ -90,7 +90,7 @@ musicCornoIVMvtIV = \relative c {
 	
 	
 	
-	g1\fp
+	g1-\tweak X-offset -1.5 \fp
 	r8 g'-.\f\< g-. g-. g-. g-. g-. g-.\!
 % Bars 71 to 75
 	g2->\ff a->
@@ -288,7 +288,7 @@ musicCornoIVMvtIV = \relative c {
 	c2-> c->
 	R1
 % Bars 261 to 265
-	r8 g\f r g r g r g
+	r8 g-\tweak X-offset -2 \f r g r g r g
 	r g r g r g r g
 	r g r g r g r g
 	r g r g r g r g \mark \default
@@ -448,7 +448,7 @@ musicCornoIVMvtIV = \relative c {
 % Bars 401 to 405
 	r8 d r cis r d r b
 	r4 g'8-.\f\< g-. \stemUp \omitBeam d-. d-. d-. d-.\! \mark \default
-	c1\ff~
+	c1-\tweak X-offset #-1.5 \ff~
 	c
 	c~
 % Bars 406 to 410

@@ -22,7 +22,7 @@ musicFagottoIMvtIV = \relative c {
 	r8. cis16(\mf d4) r2
 % Bars 11 to 15
 	r8. cis16(\f d4) r2
-	r8. \partCombineApart cis16( d4) \partCombineAutomatic r8. e16( f4)
+	r8. \partCombineApart cis16( d4) \partCombineAutomatic r8. \aIIXoffset #-2.5 e16( f4)
 	r8. gis16( a4) r2
 	e,4-.\f r e8-. e'-. e,-. e'-.
 	e,4-. r e8-. e'-. e,-. e'-.
@@ -140,7 +140,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 111 to 115
 	
 	
-	bes1(-\fzdim
+	\shape #'((0 . -2)(0 . -0.5)(0 . 0)(0 . 0)) Slur bes1(-\fzdim
 	des!2 ces)
 	bes1(
 % Bars 116 to 120
@@ -156,8 +156,8 @@ musicFagottoIMvtIV = \relative c {
 	cis cis-.(\> cis-. cis-.)\!
 	\partCombineApart cis2. cis4
 % Bars 126 to 130
-	cis2.-\dimmarkup cis4
-	cis\pp r r2 \partCombineAutomatic
+	cis2.-\offset X-offset -4 -\dimmarkup cis4
+	cis-\offset X-offset -2 \pp r r2 \partCombineAutomatic
 	R1*3
 	
 	
@@ -195,7 +195,7 @@ musicFagottoIMvtIV = \relative c {
 	\partCombineApart c!
 	des~
 	des~
-	\once \stemDown des2 r8. c16[(\mf des8) ees]-.
+	\once \stemDown des2 r8. c16[(-\offset X-offset -2 \mf des8) ees]-.
 % Bars 161 to 165
 	r8. c16[(\p des8)-\dimmarkup ees]-. r8. c16[(-\dimmarkup des8) ees]-.
 	r8. c16[(\pp des8) ees]-. r8. c16[( des8) ees]-. \partCombineAutomatic
@@ -236,7 +236,7 @@ musicFagottoIMvtIV = \relative c {
 	e!1\p~
 	e-\crescmarkup
 	d~
-	<< d\f\< {s4 s s s\!}>>
+	<< d\f\< {s4 s s s8 s\!}>>
 	cis1\ff
 % Bars 196 to 200
 	r4 cis-> r cis->
@@ -283,10 +283,10 @@ musicFagottoIMvtIV = \relative c {
 	r4 r8. cis16(\p fis8-.) fis-. r4
 	\mmrPos #10 R1
 	r4 r8. ees16(\p aes8-.) aes-. r4
-	\mmrPos #8 R1
+	\mmrPos #9 R1
 % Bars 241 to 245
 	r4 r8. fis,16( a8-.) a-. r4
-	\mmrPos #8 R1 \partCombineAutomatic
+	\mmrPos #9 R1 \partCombineAutomatic
 	R1*2
 	
 	r4 des\p r-\crescmarkup des
@@ -295,7 +295,7 @@ musicFagottoIMvtIV = \relative c {
 	r g\mf r g
 	r g\< r g\!
 	R1
-	\partCombineApart r8^\solo g16-.\f\> g-. cis,8-. d-. e-. g,-. a-. bes-.\! \partCombineAutomatic \mark \default
+	\partCombineApart r8-\offset X-offset -4 ^\solo g16-.-\offset X-offset -1.5 \f g-. \hairpinShorten #'(-1 . 0)  cis,8-.\> d-. e-. g,-. a-. bes-.\! \partCombineAutomatic \mark \default
 % Bars 251 to 255
 	r4 \once \partCombineApart a r bes
 	r c-\crescmarkup r d
@@ -325,7 +325,7 @@ musicFagottoIMvtIV = \relative c {
 	c-. b-.-\crescmarkup bes-. a-. g-. f-. e-. c'-. \markk
 	f,2->\ff d->
 	a'-> des,->
-	c8-. r c4-.\p r c-.
+	c8-. r \aIIXoffset #-2 c4-.\p r c-.
 % Bars 276 to 280
 	r c-. r c-.
 	f2->\ff d->
@@ -420,7 +420,7 @@ musicFagottoIMvtIV = \relative c {
 	f
 	\partCombineUnisono << f~\< {s4 s s s\!}>>
 	<< f2\> {s8 s s s\!}>> \partCombineAutomatic r2
-	\partCombineApart d''1(\pp
+	\partCombineApart d''1(-\offset X-offset -2.5 \pp
 	c) \partCombineAutomatic
 % Bars 356 to 360
 	c~
@@ -453,8 +453,8 @@ musicFagottoIMvtIV = \relative c {
 	c r r2 \mark \default
 	f,1\fp~
 % Bars 381 to 385
-	f~-\pocoapococresc
-	f~
+	<< f~ {s4 s2.-\pocoapococresc}>>
+	f1~
 	f~
 	f\f~
 	f~
