@@ -28,7 +28,7 @@ musicClarinettoIMvtIII = \relative c {
 	
 % Bars 16 to 20
 	R4.\fermata \section
-	\time 3/8 \partCombineApart c4->(\fp g16 b
+	\time 3/8 \partCombineApart c4->(-\offset X-offset -2.5 \fp g16 b
 	c8) g-. c-.
 	d-. g,-. d'-.
 	f16( e d cis d8)

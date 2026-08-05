@@ -28,7 +28,7 @@ musicFlautoIMvtIII = \relative c {
 	
 % Bars 16 to 20
 	R4.\fermata \section
-	\time 3/8 \partCombineApart bes4(->\fp f16 a
+	\time 3/8 \partCombineApart bes4(->-\offset X-offset -2.5 \fp f16 a
 	bes8) f-. bes-.
 	c-. f,-. c'-.
 	ees16( d c b c8)

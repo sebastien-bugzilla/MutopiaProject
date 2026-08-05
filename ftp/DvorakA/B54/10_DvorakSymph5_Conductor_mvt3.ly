@@ -23,7 +23,6 @@
 \include "./00-Common/DvorakSymph5_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Cond_Mvt03.ily"
-%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./03-Mvt3/m03_v01_music_FlautoI_C.ily"
 \include "./03-Mvt3/m03_v02_music_FlautoII_C.ily"
 \include "./03-Mvt3/m03_v03_music_OboeI_C.ily"
