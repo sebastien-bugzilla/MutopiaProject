@@ -168,7 +168,7 @@ dacapoallegroscherzandosinalsegnopoifine = \markup {
 			\lower #1.5 "Da Capo Allegro scherzando" 
 			\concat { 
 				\general-align #Y #CENTER {
-					"sin' all segno " \musicglyph "scripts.coda" " poi Fine"
+					"sin' all segno " \coda " poi Fine"
 				}
 			}
 		}
@@ -180,58 +180,58 @@ attaccatrio = \markup {\italic "attacca Trio"}
 % instrument modification
 %--------------------
 mutaina = \markup {"muta in A"}
-mutainb = \markup {"muta in B"}
+mutainb = \markup {\concat {"muta in B" \text-flat}}
 mutainea = \markup {"muta in E, A"}
 mutainfc = \markup {"muta in F, C"}
 cmutainh = \markup {"C muta in H"}
-hmutainb = \markup {"H muta in B"}
-bmutainc = \markup {"B muta in C"}
+hmutainb = \markup {\concat {"H muta in B" \text-flat}}
+bmutainc = \markup {\concat {"B" \text-flat " muta in C"}}
 fmutaine = \markup {"F muta in E"}
 emutainf = \markup {"E muta in F"}
-mutainasdes = \markup {"muta in As, Des"}
-mutainbf = \markup {"muta in B, F"}
-cliimutainclarinettobassob = \markup {"Cl.II. muta in Clarinetto basso B"}
+mutainasdes = \markup {\concat {"muta in A" \text-flat ", D" \text-flat}}
+mutainbf = \markup {\concat {"muta in B" \text-flat ", F"}}
+cliimutainclarinettobassob = \markup {\concat {"Cl.II. muta in Clarinetto basso B" \text-flat}}
 mutainclii = \markup {"muta in Cl.II."}
 mutaincf = \markup {"muta in C, F"}
-cmutaindes = \markup {"C muta in Des"}
+cmutaindes = \markup {\concat {"C muta in D" \text-flat}}
 mutaincg = \markup {"muta in C, G"}
-mutainaes = \markup {"muta in A, Es"}
-esmutaind = \markup {"Es muta in D"}
+mutainaes = \markup {\concat {"muta in A, E" \text-flat}}
+esmutaind = \markup {\concat {"E" \text-flat " muta in D"}}
 dmutaine = \markup {"D muta in E"}
 
 timpinea = \markup {
 	\center-column {
-		\lower #1 "Timp." "in E A"
+		\lower #1 "Timp." "in E/A"
 	}
 }
 timpinfc = \markup {
 	\center-column {
-		\lower #1 "Timp." "in F C"
+		\lower #1 "Timp." "in F/C"
 	}
 }
 timpinfh = \markup {
 	\center-column {
-		\lower #1 "Timp." "in F H"
+		\lower #1 "Timp." "in F/H"
 	}
 }
 timpinfb = \markup {
 	\center-column {
-		\lower #1 "Timp." "in F B"
+		\lower #1 "Timp." \concat {"in F/B" \text-flat}
 	}
 }
 timpinec = \markup {
 	\center-column {
-		\lower #1 "Timp." "in E C"
+		\lower #1 "Timp." "in E/C"
 	}
 }
 timpinasdes = \markup {
 	\center-column {
-		\lower #1 "Timp." "in As, Des"
+		\lower #1 "Timp." \concat {"in A" \text-flat "/D" \text-flat}
 	}
 }
 timpinbf = \markup {
 	\center-column {
-		\lower #1 "Timp." "in B F"
+		\lower #1 "Timp." \concat {"in B" \text-flat "/F"}
 	}
 }
 clina = \markup {
@@ -241,37 +241,37 @@ clina = \markup {
 }
 clinb = \markup {
 	\center-column {
-		\lower #1 "Cl. in" "B"
+		\lower #1 "Cl. in" \concat { "B" \text-flat}
 	}
 }
 timpincf = \markup {
 	\center-column {
-		\lower #1 "Timp." "in C F"
+		\lower #1 "Timp." "in C/F"
 	}
 }
 timpindesf = \markup {
 	\center-column {
-		\lower #1 "Timp." "in Des F"
+		\lower #1 "Timp." \concat {"in D" \text-flat "/F"}
 	}
 }
 timpincg = \markup {
 	\center-column {
-		\lower #1 "Timp." "in C G"
+		\lower #1 "Timp." "in C/G"
 	}
 }
 timpinaes = \markup {
 	\center-column {
-		\lower #1 "Timp." "in A Es"
+		\lower #1 "Timp." \concat {"in A/E" \text-flat}
 	}
 }
 timpinad = \markup {
 	\center-column {
-		\lower #1 "Timp." "in A D"
+		\lower #1 "Timp." "in A/D"
 	}
 }
 timpinae = \markup {
 	\center-column {
-		\lower #1 "Timp." "in A E"
+		\lower #1 "Timp." "in A/E"
 	}
 }
 
@@ -363,6 +363,14 @@ changeStaffName = #(define-music-function
 	(markup?)
 	#{
 		\set Staff.shortInstrumentName = #staffName
+	#}
+)
+
+changeGrandStaffName = #(define-music-function
+	(staffName)
+	(markup?)
+	#{
+		\set GrandStaff.shortInstrumentName = #staffName
 	#}
 )
 

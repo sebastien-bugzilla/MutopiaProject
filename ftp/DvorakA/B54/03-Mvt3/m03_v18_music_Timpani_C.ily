@@ -231,8 +231,8 @@ musicTimpaniMvtIII = \relative c {
 	des4 r8
 	r8. des16-. des8-.
 % Bars 311 to 315
-	des4 r8
-	R4.*8^\mutainbf \changeStaffName \timpinbf
+	des4 r8^\mutainbf \changeStaffName \timpinbf
+	R4.*8 
 % Bars 316 to 320
 	
 	

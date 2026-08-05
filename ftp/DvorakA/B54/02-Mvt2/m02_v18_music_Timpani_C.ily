@@ -86,8 +86,8 @@ musicTimpaniMvtII = \relative c {
 	a4.\startTrillSpan
 % Bars 121 to 125
 	<< a\startTrillSpan {s8 s4-\crescmarkup}>>
-	<< a4.\startTrillSpan {s8 s s\stopTrillSpan}>>
-	a8-.\ff^\secco a-. a-.
+	<< a4.\startTrillSpan {s8 s s}>>
+	a8-.\ff^\secco\stopTrillSpan a-. a-.
 	a-. a-. a-.
 	a-. a-. a-. \mark \default
 % Bars 126 to 130

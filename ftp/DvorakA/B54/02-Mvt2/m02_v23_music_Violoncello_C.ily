@@ -93,7 +93,7 @@ musicVioloncelloMvtII = \relative c {
 	r16 g' g r r8
 	g,8 r r
 % Bars 71 to 75
-	R4.
+	R4. \changeStaffName "" \changeGrandStaffName "Vlc."
 	e8\p r r
 	R4.
 	b'^\arco\brack\p
@@ -114,7 +114,7 @@ musicVioloncelloMvtII = \relative c {
 	g( f e)
 	a( g fis!)\! \section
 	\key a \minor << g4.\f~ {s4 s8-\dimmarkup}>>
-	g4. \mark \default
+	g4. \mark \default \changeStaffName "Vlc." \changeGrandStaffName ""
 	c,,,16-\offset X-offset -0.5 \brack\pp r c'^\pizz[ r e] r
 % Bars 91 to 95
 	g[ r e r c] r
@@ -125,8 +125,8 @@ musicVioloncelloMvtII = \relative c {
 % Bars 96 to 100
 	r8 g,16[\< r d'\!] r
 	g[\> r d r\! g,] r
-	r8 g'16[\p r c] r
-	e[ r c r g] r
+	r8 g'16[\p r c] r 
+	e[ r c r g] r \changeStaffName "" \changeGrandStaffName "Vlc."
 	r8 ees16[\fz\< r bes'] r\!
 % Bars 101 to 105
 	ees[ r\> bes r ees,\p] r
@@ -155,7 +155,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 121 to 125
 	ees( g ees g d f d f c ees c ees)
 	aes( ces aes ces g bes g bes f aes f aes)
-	g8_\ffmarcatissimo^\secco\noBeam f-. f-.
+	g8_\ffmarcatissimo^\secco\noBeam f-. f-. \changeStaffName "Vlc." \changeGrandStaffName ""
 	f-. f-. f-.
 	f-. f-. f-. \mark \default
 % Bars 126 to 130

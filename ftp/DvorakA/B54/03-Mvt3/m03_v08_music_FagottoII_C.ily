@@ -320,7 +320,7 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	
-	r8. des16-.\brack\p\< des8-.\!
+	r8. des16-.\brack\p\< des8-.
 % Bars 316 to 320
 	des4\mf r8
 	r8. des16 des8
