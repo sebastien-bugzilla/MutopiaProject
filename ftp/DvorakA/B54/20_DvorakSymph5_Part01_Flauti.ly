@@ -53,9 +53,9 @@
 			\new Voice {
 				\formatFlautoIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(flautoI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(flautoI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtI
 			}
@@ -64,7 +64,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -77,9 +77,9 @@
 			\new Voice {
 				\formatFlautoIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(flautoI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(flautoI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtII
 			}
@@ -101,9 +101,9 @@
 			\new Voice {
 				\formatFlautoIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(flautoI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(flautoI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtIII
 			}
@@ -125,9 +125,9 @@
 			\new Voice {
 				\formatFlautoIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(flautoI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(flautoI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtIV
 			}
@@ -149,18 +149,18 @@
 			\new Voice {
 				\formatFlautoIIMvtI
 			}
+%			\new Voice {
+%				\keepWithTag #'(flautoII) \tempiPartMvtI
+%			}
 			\new Voice {
-				\keepWithTag #'(flautoII) \tempiPartMvtI
-			}
-			\new Voice {
-				\InCueContext \cueVoiceFlautoIMvtI
+				\InCueContext \cueVoiceFlautoIIMvtI
 			}
 			\new Voice {
 				\timeMvtI \nameFlautoIIMvtI \musicFlautoIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -173,11 +173,11 @@
 			\new Voice {
 				\formatFlautoIIMvtII
 			}
+%			\new Voice {
+%				\keepWithTag #'(flautoII) \tempiPartMvtII
+%			}
 			\new Voice {
-				\keepWithTag #'(flautoII) \tempiPartMvtII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceFlautoIMvtII
+				\InCueContext \cueVoiceFlautoIIMvtII
 			}
 			\new Voice {
 				\timeMvtII \nameFlautoIIMvtII \musicFlautoIIMvtII
@@ -197,11 +197,11 @@
 			\new Voice {
 				\formatFlautoIIMvtIII
 			}
+%			\new Voice {
+%				\keepWithTag #'(flautoII) \tempiPartMvtIII
+%			}
 			\new Voice {
-				\keepWithTag #'(flautoII) \tempiPartMvtIII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceFlautoIMvtIII
+				\InCueContext \cueVoiceFlautoIIMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \nameFlautoIIMvtIII \musicFlautoIIMvtIII
@@ -221,11 +221,11 @@
 			\new Voice {
 				\formatFlautoIIMvtIV
 			}
+%			\new Voice {
+%				\keepWithTag #'(flautoII) \tempiPartMvtIV
+%			}
 			\new Voice {
-				\keepWithTag #'(flautoII) \tempiPartMvtIV
-			}
-			\new Voice {
-				\InCueContext \cueVoiceFlautoIMvtIV
+				\InCueContext \cueVoiceFlautoIIMvtIV
 			}
 			\new Voice {
 				\timeMvtIV \nameFlautoIIMvtIV \musicFlautoIIMvtIV

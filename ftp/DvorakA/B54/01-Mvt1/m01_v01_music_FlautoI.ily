@@ -83,16 +83,20 @@ musicFlautoIMvtI = \relative c {
 		c16( d b_\dimmarkup c a8) r
 % Bars 66 to 70
 		c16( d_\dimmarkup b c a8) r
-		R2*21
+		R2*15
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	
+		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 86 to 90
-		
-		
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		gis'4->\f b16( a gis8)
 		b4-> d16( cis b!8)
 		r8 e4->\ff e8~
@@ -103,17 +107,21 @@ musicFlautoIMvtI = \relative c {
 		
 		\mark \default
 % Bars 96 to 100
-		R2*23
+		R2*19
 % Bars 101 to 105
 	
 % Bars 106 to 110
 	
 % Bars 111 to 115
-	
+		
+		
+		
+		
+		\ni \mmrPos #-4 R2
 % Bars 116 to 120
-	
-	
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		r4 bes--\pp^\ten
 		r4 d--
 % Bars 121 to 125
@@ -160,14 +168,18 @@ musicFlautoIMvtI = \relative c {
 		a'2\ff~
 % Bars 156 to 160
 		a
-		R2*10
+		R2*8
 % Bars 161 to 165
-	
-% Bars 166 to 170
 		
+		
+		
+		
+		\ni \mmrPos #-4 R2
+% Bars 166 to 170
+		\mmrPos #-4 R \no
 		fis2\ff~
 		fis4 r
-		R2*16
+		R2*14
 % Bars 171 to 175
 	
 % Bars 176 to 180
@@ -175,8 +187,8 @@ musicFlautoIMvtI = \relative c {
 % Bars 181 to 185
 		
 		
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R \no
 		e2->\fp~
 % Bars 186 to 190
 		e8 r c-. r
@@ -235,11 +247,15 @@ musicFlautoIMvtI = \relative c {
 	<< b2~ {s8\< s s s\!}>>
 % Bars 226 to 230
 	<< b4. {s8\> s s\!}>> r8 \mark \default
-	R2*14
+	R2*10
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 241 to 245
 	g''2->\ff
 	g4-> g8.-> e16
@@ -298,29 +314,37 @@ musicFlautoIMvtI = \relative c {
 	d8 r r4
 	R2 \mark \default
 % Bars 291 to 295
-	R2*18
+	R2*14
 % Bars 296 to 300
 	
 % Bars 301 to 305
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 306 to 310
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 ees(\f d bes
 	ees_\dimmarkup a,! bes) r
 % Bars 311 to 315
 	r ees(\fz\> d bes
 	ees a, bes)\! r
-	R2*16
+	R2*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
+	
+	
+	
+	\ni \mmrPos #4 R2
 % Bars 326 to 330
-	
-	
-	\mark \default
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	\tuplet 3/2 4 {c8\pp c c  c[ c c] 
 	c4.:8 c:
 % Bars 331 to 335
@@ -340,13 +364,17 @@ musicFlautoIMvtI = \relative c {
 	e
 	f~
 	f8) r r4
-	R2*16
+	R2*12
 % Bars 346 to 350
 	
 % Bars 351 to 355
 	
 % Bars 356 to 360
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 361 to 365
 	c4\ff c8. g16
 	d'4 r
@@ -362,13 +390,13 @@ musicFlautoIMvtI = \relative c {
 % Bars 371 to 375
 	R2*2
 	\mark \default
-	R2*7
+	R2*6
 % Bars 376 to 380
 	
 	
 	
-	
-	r4 r8 g,-.\f
+	\ni \mmrPos #-4 R2 \no
+	\voiceTwo r4 r8 \oneVoice g,-.\f
 % Bars 381 to 385
 	f4->\fp a16-. g-. f8-.
 	g4-> bes16-. a-. g8-.
@@ -404,12 +432,12 @@ musicFlautoIMvtI = \relative c {
 	
 % Bars 416 to 420
 	\mark \default
-	R2*8
+	R2*4
 % Bars 421 to 425
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	c4(\mf\< cis
 % Bars 426 to 430
 	d8\! g4\> des8)\!

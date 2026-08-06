@@ -28,7 +28,7 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 16 to 20
 	R4.\fermata \section
-	\time 3/8 R4.*9
+	\time 3/8 R4.*7
 	
 	
 	
@@ -36,13 +36,17 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 26 to 30
-	R4.*7
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 31 to 35
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	bes4->\fz bes8(\mf
 	ees8) g,-.\p ees'-.
 	bes-. bes-. bes-.
@@ -71,22 +75,22 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 	
-	R4.*7
+	\ni \mmrPos #-4 R4.
 % Bars 71 to 75
-	
-	
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 76 to 80
-	
+	\mmrPos #-4 R \no
 	R4.*7
 % Bars 81 to 85
 	
 	
 	
 	fis'8->\fz b,-. fis'-.
-	R4.*24
+	R4.*21
 % Bars 86 to 90
 	
 % Bars 91 to 95
@@ -96,9 +100,9 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f!4.->\fz
 	f->\fz
 % Bars 111 to 115
@@ -129,14 +133,14 @@ musicFlautoIIMvtIII = \relative c {
 	a16( bes a g f8-.)
 	bes4\fp  r8
 % Bars 136 to 140
-	R4.*7
+	R4.*5
 	
 	
 	
 	
 % Bars 141 to 145
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 	bes4\ff bes8(
 	ees8) bes-. ees-.
 	bes4 bes8
@@ -153,11 +157,11 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 161 to 165
 	
 	\mark \default
-	R4.*8
-	
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 166 to 170
-	
+	R4.*5
 % Bars 171 to 175
 	R4.*4
 	
@@ -174,14 +178,14 @@ musicFlautoIIMvtIII = \relative c {
 	bes8\p r r
 	a\ff r r 
 	\startVoltaI bes r r
-	R4.*11
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	
-	
-	
-	\section
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	\startVoltaII bes8\ff r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
@@ -223,8 +227,8 @@ musicFlautoIIMvtIII = \relative c {
 		R4.*2
 		
 % Bars 226 to 230
-		R4.*2
-		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R \no
 		r8. des'16-.\pp\< des8-.
 		des(\! f)\> ees-.\!
 		des4-. r8
@@ -257,34 +261,38 @@ musicFlautoIIMvtIII = \relative c {
 		aes8-.[\> r16 aes-. aes8-.]
 		aes( c) bes-.\! \mark \default
 		aes\p r r
-		R4.*9
+		R4.*7
 % Bars 256 to 260
 	
 % Bars 261 to 265
 		
-		
-		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R \no
 		aes8(\pp c) bes-.
 		aes-. r r
 % Bars 266 to 270
-		R4.*11
+		R4.*9
 % Bars 271 to 275
-	
+		
+		
+		
+		
+		\ni \mmrPos #-4 R4.
 % Bars 276 to 280
-		\mark \default
+		\mmrPos #-4 R \no \mark \default
 	}
 	R4.*7
 % Bars 281 to 285
 	
 	
 	
-	R4.*6
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 286 to 290
-	
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 r des(\brack\p
 % Bars 291 to 295
 	c4\> bes8
@@ -306,13 +314,13 @@ musicFlautoIIMvtIII = \relative c {
 	
 % Bars 306 to 310
 	
-	R4.*12
+	R4.*10
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 	r8. a16\f\< a8
 	a8.\! a16\ff a8
 % Bars 321 to 324

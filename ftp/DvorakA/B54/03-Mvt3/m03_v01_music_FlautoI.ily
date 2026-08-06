@@ -67,10 +67,10 @@ musicFlautoIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 66 to 70
-	R4.*4
-	
-	
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #-4 R \no
 	bes4->(\p f16 a
 % Bars 71 to 75
 	bes8) f-. bes-.
@@ -86,7 +86,7 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 	R4.
-	R4.*24
+	R4.*21
 % Bars 86 to 90
 	
 % Bars 91 to 95
@@ -96,9 +96,9 @@ musicFlautoIMvtIII = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f!4.->\fz
 	f->\fz
 % Bars 111 to 115
@@ -106,11 +106,15 @@ musicFlautoIMvtIII = \relative c {
 	f->\fz
 	f8\ff r r
 	R4.
-	R4.*7
+	\ni \mmrPos #-4 R4.
 % Bars 116 to 120
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 121 to 125
-	
+	\mmrPos #-4 R \no
 	R4.*5
 % Bars 126 to 130
 	\mark \default
@@ -149,11 +153,11 @@ musicFlautoIMvtIII = \relative c {
 % Bars 161 to 165
 	
 	\mark \default
-	R4.*8
-	
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 166 to 170
-	
+	R4.*5
 % Bars 171 to 175
 	f,16(\pp ees d cis d f
 	bes a g f a bes
@@ -170,14 +174,14 @@ musicFlautoIMvtIII = \relative c {
 	bes!8\p r r
 	a\ff r r 
 	\startVoltaI bes r r
-	R4.*11
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	
-	
-	
-	\section
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	\startVoltaII bes8\ff r r \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
@@ -253,28 +257,32 @@ musicFlautoIMvtIII = \relative c {
 		c8-.[\> r16 c-. c8-.]
 		c( ees) des-.\! \mark \default
 		c\p r r
-		R4.*9
+		R4.*7
 % Bars 256 to 260
 	
 % Bars 261 to 265
 		
-		
-		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R \no
 		c8(\pp ees) des-.
 		c-. r r
 % Bars 266 to 270
-		R4.*11
+		R4.*9
 % Bars 271 to 275
-	
+		
+		
+		
+		
+		\ni \mmrPos #-4 R4.
 % Bars 276 to 280
-		\mark \default
+		\mmrPos #-4 R \no \mark \default
 	}
-	R4.*7
+	R4.*4
 % Bars 281 to 285
-	
-	
-	
-	r8 r aes-.\p
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\voiceTwo r8 \oneVoice r aes-.\p
 	des4.->
 % Bars 286 to 290
 	aes8. f16 f8
@@ -302,14 +310,14 @@ musicFlautoIMvtIII = \relative c {
 	r8. aes16-.\pp aes8-.
 % Bars 306 to 310
 	aes4 r8
-	R4.*12
+	R4.*10
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
-	
-	
-	r8. a16\f\< a8
+	\ni \mmrPos #-6 R4.
+	\mmrPos #-6 R \no
+	\voiceTwo r8. \oneVoice a16\f\< a8
 	a8.\! f'16\ff f8
 % Bars 321 to 324
 	f r r

@@ -23,21 +23,23 @@ musicFlautoIIMvtII = \relative c {
 	
 	
 	
-	R4.*12
+	\ni \mmrPos #-4 R4.
 % Bars 31 to 35
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R4.*9
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
 	R4.*2
 	
-	R4.*5
+	R4.*3
 	
 % Bars 46 to 50
 	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 	e''4.\pp~
 	e~
 % Bars 51 to 55
@@ -49,11 +51,11 @@ musicFlautoIIMvtII = \relative c {
 % Bars 56 to 60
 	
 	R4. \section \mark \default
-	\key a \major R4.*4
-	
-	
+	\key a \major \ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 61 to 65
-	
+	\mmrPos #-4 R \no
 	d4.->\fz\>
 	a4~ a16.\! a32
 	a4.\fz\<(
@@ -73,18 +75,18 @@ musicFlautoIIMvtII = \relative c {
 % Bars 76 to 80
 	
 	
-	R4.*2
-	
+	\ni \mmrPos #-4 R4. 
+	\mmrPos #-4 R \no
 	gis4.(~\pp
 % Bars 81 to 85
 	gis8 a b)
-	R4.*6
+	R4.*2
 	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 86 to 90
-	
-	\section
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	\key a \minor r8 r16 c32(\f d c16) b32(_\dimmarkup c
 	b16) a32( b a16) g32( a g16)-. f-. \mark \default
 	e8\p r r
@@ -109,19 +111,23 @@ musicFlautoIIMvtII = \relative c {
 % Bars 106 to 110
 	
 	
-	R4.*4
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 111 to 115
-	
+	\mmrPos #-4 R \no
 	bes4\pp~ bes16 r
 	R4.*3
 	
 	
 % Bars 116 to 120
-	R4.*6
-% Bars 121 to 125
+	R4.*2
 	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 121 to 125
+	\mmrPos #-4 R \no
 	ces8(_\brackM\fcresc bes aes)
 	bes-.\ff^\secco c!-. c-.
 	c-. c-. c-.
@@ -141,12 +147,16 @@ musicFlautoIIMvtII = \relative c {
 	
 % Bars 141 to 145
 	R4.
-	R \section \mark \default
-	R4.*8
+	\ni \mmrPos #-4 R \no \section \mark \default
+	R4.*5
 	
 	
 % Bars 146 to 150
 	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 151 to 155
 	r8 a-.(\pp gis)-.
 	a16 r r8 r
@@ -154,10 +164,10 @@ musicFlautoIIMvtII = \relative c {
 	
 	
 % Bars 156 to 160
-	R4.*7
+	R4.*5
 % Bars 161 to 165
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 	r8 r16 e'(\mf\< d cis)\! \mark \default
 	d32-.\fp bes-. bes-. bes-.  bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. 
 	bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. bes-. 
@@ -190,11 +200,11 @@ musicFlautoIIMvtII = \relative c {
 % Bars 191 to 195
 	
 	R4.
-	R4.*4
+	R4.*2
 	
-	
+	\ni \mmrPos #-4 R4.
 % Bars 196 to 200
-	
+	\mmrPos #-4 R \no
 	r8 r16 e'(\f c b)
 	a8.(\< b32 c b16. a32)\!
 	a4.\fp~

@@ -9,7 +9,7 @@ musicFlautoIMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R4.*29
+	R4.*24
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -18,12 +18,16 @@ musicFlautoIMvtII = \relative c {
 	
 % Bars 21 to 25
 	
+	
+	
+	
+	\ni \mmrPos #4 R4.
 % Bars 26 to 30
-	
-	
-	
-	
-	r8 r16 e'''(\p^\espress c b)
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	\voiceOne r8 r16 \oneVoice e'''(\p^\espress c b)
 % Bars 31 to 35
 	a8.( b32 c b16 a)
 	g8( e) r16 e(
@@ -142,13 +146,13 @@ musicFlautoIMvtII = \relative c {
 	e!4.\f
 	<< b4->~ {s8 s_\dimmarkup}>> b16. e,32
 	e4\p r8
-	R4.*10
+	R4.*7
 % Bars 131 to 135
 	
 % Bars 136 to 140
-	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	e'4.\pp~
 	e8 r r
 % Bars 141 to 145

@@ -118,14 +118,14 @@ musicFlautoIMvtIV = \relative c {
 % Bars 91 to 95
 	e,4(\pp f e f
 	e f e f) \section \mark \default
-	\key des \major R1*12
+	\key des \major R1*9
 % Bars 96 to 100
 	
 % Bars 101 to 105
 	
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	bes'2.\p bes4(
 % Bars 106 to 110
 	beses2.) aes4
@@ -191,11 +191,15 @@ musicFlautoIMvtIV = \relative c {
 	
 % Bars 166 to 170
 	\mark \default
-	R1*10
+	R1*5
 % Bars 171 to 175
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 176 to 180
-	
+	\mmrPos #-4 R \no
 	ees2.\pp ees4~
 	ees ees-.(\< c-. ees-.)\!
 	aes2.\fz\> ees4\p~
@@ -394,11 +398,15 @@ musicFlautoIMvtIV = \relative c {
 	f4 r r2
 % Bars 361 to 365
 	R1 \mark \default
-	R1*10
+	R1*6
 % Bars 366 to 370
 	
-% Bars 371 to 375
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 371 to 375
+	\mmrPos #-4 R \no
 	c'8\f r r4 r r8 c-.
 	c-. r r4 r r8 c-.
 	c-. r c2-> d4->~
