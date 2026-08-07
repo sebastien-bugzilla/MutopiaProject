@@ -24,13 +24,17 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	R4.*9
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 26 to 30
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 31 to 35
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	R4.*4
 	
 	
@@ -64,12 +68,12 @@ musicOboeIIMvtIII = \relative c {
 % Bars 71 to 75
 	
 	
-	R4.
+	\ni \mmrPos #-4 R4. \no
 	R4.*3
 	
 % Bars 76 to 80
 	
-	R4.
+	\ni \mmrPos #-4 R4. \no
 	R4.
 	a4.\p~
 	a8 a-. a-.
@@ -90,11 +94,11 @@ musicOboeIIMvtIII = \relative c {
 % Bars 96 to 100
 	
 	
-	R4.*4
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 101 to 105
-	
+	\mmrPos #-4 R \no
 	a4.->\mf
 	b->_\brackM\pocoapococresc
 	b->
@@ -148,12 +152,12 @@ musicOboeIIMvtIII = \relative c {
 	f~
 	f
 % Bars 151 to 155
-	R4.*12
+	R4.*10
 % Bars 156 to 160
 	
 % Bars 161 to 165
-	
-	\mark \default
+	\ni \mmrPos #-6 R4.
+	\mmrPos #-6 R \no \mark \default
 	f4.\fp~
 	f~
 	f8 r r
@@ -165,20 +169,20 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	R4.*3
-	
+	\ni \mmrPos #-6 R4.
+	\mmrPos #-6 R
 % Bars 181 to 185
-	
+	\mmrPos #-6 R \no
 	c'8\ff r r
 	\startVoltaI bes r r
-	R4.*11
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	
-	
-	
-	\section
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	\startVoltaII bes8\ff r r \endVolta \section
 % Bars 196 to 200
 	\repeat volta 2 {
@@ -224,8 +228,8 @@ musicOboeIIMvtIII = \relative c {
 		
 		
 		
-		R4.*2
-		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R \no
 % Bars 236 to 240
 		r8. e'16-.\p e8-.
 		e(\< gis)\> fis-.\!
@@ -249,35 +253,43 @@ musicOboeIIMvtIII = \relative c {
 		aes[\> r16 aes-. aes8-.]
 		aes( c) bes-.\! \mark \default
 		aes\p r r
-		R4.*10
+		R4.*7
 % Bars 256 to 260
 	
 % Bars 261 to 265
 		
-		
-		
-		
+		\ni \mmrPos #4 R4.
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		aes8(\pp c) bes-.
 % Bars 266 to 270
 		aes r r
-		R4.*10
+		R4.*8
 % Bars 271 to 275
-	
+		
+		
+		
+		
+		\ni \mmrPos #-4 R4.
 % Bars 276 to 280
-		\mark \default
+		\mmrPos #-4 R \no \mark \default
 	}
-	R4.*13
+	R4.*7
 % Bars 281 to 285
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 286 to 290
-	
-	
-	
-	
-	R4.*3
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 291 to 295
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	R4.*4
 	
 	

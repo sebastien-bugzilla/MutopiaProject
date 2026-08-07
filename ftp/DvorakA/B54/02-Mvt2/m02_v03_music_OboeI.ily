@@ -9,7 +9,7 @@ musicOboeIMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R4.*36
+	R4.*29
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,8 +20,14 @@ musicOboeIMvtII = \relative c {
 	
 % Bars 26 to 30
 	
-% Bars 31 to 35
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+% Bars 31 to 35
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R4.*4
 % Bars 36 to 40
 	
 	cis''8.(\fz g'16 e-\crescmarkup d)
@@ -130,12 +136,12 @@ musicOboeIMvtII = \relative c {
 	e!4.\f
 	<< b'4->~ {s8 s-\dimmarkup}>> b16. e,32
 	e4\p r8
-	R4.*10
+	R4.*7
 % Bars 131 to 135
 	
 % Bars 136 to 140
-	
-	
+	\ni \mmrPos #-4 R4. \no
+	R4.*2
 	
 	e4.~\pp
 	e8 r r
@@ -191,13 +197,17 @@ musicOboeIMvtII = \relative c {
 	e8.(\f\> f32 g f16. e32)\!
 	<< e4(~ {s8 s-\dimmarkup}>> e16 a,~
 	a8)\p r r
-	R4.*13
+	R4.*11
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
-% Bars 196 to 200
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+% Bars 196 to 200
+	\mmrPos #-4 R \no
 	r8 r16 e'(\f c b)
 	a8.(\< b32 c b16. a32)\!
 	a4.\fp

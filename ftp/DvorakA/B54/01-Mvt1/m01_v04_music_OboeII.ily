@@ -12,14 +12,18 @@ musicOboeIIMvtI = \relative c {
 	R2*2
 	
 	\repeat volta 2 {
-		R2*11
+		R2*6
 % Bars 6 to 10
-	
+		
+		
+		
+		\ni \mmrPos #4 R2
+		\mmrPos #4 R
 % Bars 11 to 15
-		
-		
-		
-		r4 r8. c''16\pp
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R \no
+		\voiceOne r4 r8. \oneVoice c''16\pp
 		c2~
 % Bars 16 to 20
 		c8 r r4
@@ -81,11 +85,15 @@ musicOboeIIMvtI = \relative c {
 % Bars 66 to 70
 		
 		
-		R2*14
+		R2*6
 % Bars 71 to 75
 		
+		
+		
+		\ni \mmrPos #4 R2
+		\mmrPos #4 R \no
 % Bars 76 to 80
-	
+		R2*6
 % Bars 81 to 85
 		
 		r8 aes,4.\fz
@@ -127,13 +135,17 @@ musicOboeIIMvtI = \relative c {
 % Bars 126 to 130
 		
 		
-		R2*11
+		R2*5
 % Bars 131 to 135
-	
+		
+		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R \no
+		R2*2
 % Bars 136 to 140
 		
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R \no
 		c2\ff~
 		c
 % Bars 141 to 145
@@ -154,15 +166,15 @@ musicOboeIIMvtI = \relative c {
 		e'2~\ff
 % Bars 156 to 160
 		e
-		R2*8
+		R2*4
 		
 		
 		
 % Bars 161 to 165
-		
-		
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		e,2_\pcrescmolto~
 % Bars 166 to 170
 		e
@@ -209,36 +221,41 @@ musicOboeIIMvtI = \relative c {
 % Bars 201 to 205
 	
 	
-	R2*4
-	
-	
+	\ni \mmrPos #-4 R2 
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 206 to 210
-	
+	\mmrPos #-4 R \no
 	c'2->\p~
 	c
 	R2*2
 	
 % Bars 211 to 215
-	R2*3
+	R2*2
 	
-	
-	R2*11
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 216 to 220
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 221 to 225
-	
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	<< d,2\pp\<~ {s8 s s s\!}>>
 % Bars 226 to 230
 	<< d2 {s4\> s\!}>> \mark \default
-	R2*8
+	R2*6
 % Bars 231 to 235
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	dis'4->\f dis8. c!16
 % Bars 236 to 240
 	dis4.-> c8
@@ -258,7 +275,7 @@ musicOboeIIMvtI = \relative c {
 	
 % Bars 256 to 260
 	\mark \default
-	R2*16
+	R2*12
 	
 	
 	
@@ -266,9 +283,13 @@ musicOboeIIMvtI = \relative c {
 	
 % Bars 266 to 270
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-6 R
 % Bars 271 to 275
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ees,2\f~
 	ees8 r r4
 	e'!4-> e8.-> cis16-.
@@ -297,10 +318,14 @@ musicOboeIIMvtI = \relative c {
 	
 	
 % Bars 296 to 300
-	R2*7
+	R2*2
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 301 to 305
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ees4->\ff g16-. f-. ees8-.
 	f4-> aes16-. g-. f8-.
 	g8-. bes,4.->~
@@ -318,13 +343,17 @@ musicOboeIIMvtI = \relative c {
 	g(\p ges-\dimmarkup f d
 % Bars 316 to 320
 	ees4 d8) r
-	R2*12
+	R2*8
 % Bars 321 to 325
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 326 to 330
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	\tuplet 3/2 4 {c'8[\pp c c]  c c c
 	c4.:16 c:
 % Bars 331 to 335
@@ -394,11 +423,15 @@ musicOboeIIMvtI = \relative c {
 % Bars 391 to 395
 	
 	
-	R2*8
+	R2*4
 	
 	
 % Bars 396 to 400
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 401 to 405
 	e,2->\f
 	a->\fz
@@ -417,17 +450,21 @@ musicOboeIIMvtI = \relative c {
 	
 % Bars 416 to 420
 	\mark \default
-	R2*9
+	R2*8
 	
 	
 	
 % Bars 421 to 425
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 426 to 430
-	R2*4
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 g4.->\mf
 % Bars 431 to 435
 	a2(\piufD\<
@@ -456,10 +493,10 @@ musicOboeIIMvtI = \relative c {
 	e(\p \markk
 	f8) r r4
 % Bars 456 to 460
-	R2*7
+	R2*5
 % Bars 461 to 465
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	a2->\ff
 	b->
 	cis->
@@ -480,15 +517,15 @@ musicOboeIIMvtI = \relative c {
 	f2~
 % Bars 481 to 485
 	f8\p r r4
-	R2*17
+	R2*15
 % Bars 486 to 490
 	
 % Bars 491 to 495
 	
 % Bars 496 to 500
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	d2(\pp
 	e
 % Bars 501 to 505

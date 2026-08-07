@@ -53,9 +53,9 @@
 			\new Voice {
 				\formatOboeIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(oboeI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtI
 			}
@@ -64,7 +64,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -77,9 +77,9 @@
 			\new Voice {
 				\formatOboeIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(oboeI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtII
 			}
@@ -101,9 +101,9 @@
 			\new Voice {
 				\formatOboeIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(oboeI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtIII
 			}
@@ -125,9 +125,9 @@
 			\new Voice {
 				\formatOboeIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(oboeI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtIV
 			}
@@ -149,9 +149,9 @@
 			\new Voice {
 				\formatOboeIIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(oboeII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtI
 			}
@@ -160,7 +160,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -173,9 +173,9 @@
 			\new Voice {
 				\formatOboeIIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(oboeII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtII
 			}
@@ -197,9 +197,9 @@
 			\new Voice {
 				\formatOboeIIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(oboeII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtIII
 			}
@@ -221,9 +221,9 @@
 			\new Voice {
 				\formatOboeIIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(oboeII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtIV
 			}

@@ -113,12 +113,12 @@ musicOboeIMvtIV = \relative c {
 % Bars 86 to 90
 	a4) r bes2(
 	a4) r r2
-	R1*5
+	R1*3
 	
 	
 % Bars 91 to 95
-	
-	\section \mark \default
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no \section \mark \default
 	\key des \major aes1(\pp
 	<< bes~\< {s4 s s s\!}>>
 	bes4\> aes)\! r2
@@ -196,11 +196,15 @@ musicOboeIMvtIV = \relative c {
 	
 % Bars 166 to 170
 	\mark \default
-	R1*10
+	R1*5
 % Bars 171 to 175
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 176 to 180
-	
+	\mmrPos #-4 R \no
 	aes2.\pp aes4~
 	aes aes(-.\< aes-. aes-.)\!
 	aes2.\fz\> aes4\p~
@@ -237,10 +241,10 @@ musicOboeIMvtIV = \relative c {
 	
 % Bars 206 to 210
 	
-	R1*6
+	R1*5
 % Bars 211 to 215
 	
-	
+	\ni \mmrPos #-4 R1 \no
 	r2 r4 r8 dis-.\f
 	gis-. r r4 r aes8-.\ff r
 	r2 r4 aes8-. r

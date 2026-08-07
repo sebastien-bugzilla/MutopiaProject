@@ -9,7 +9,7 @@ musicOboeIIMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R4.*36
+	R4.*29
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,12 +20,18 @@ musicOboeIIMvtII = \relative c {
 	
 % Bars 26 to 30
 	
-% Bars 31 to 35
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+% Bars 31 to 35
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R4.*4
 % Bars 36 to 40
 	
-	R4.*2
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 	cis''4(\f\< c8)\!
 	cis( d4)_\dimmarkup 
 % Bars 41 to 45
@@ -45,12 +51,12 @@ musicOboeIIMvtII = \relative c {
 % Bars 56 to 60
 	
 	R4. \section \mark \default
-	\key a \major R4.*5
-	
-	
+	\key a \major \ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 61 to 65
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	R4.*3
 	
 	
@@ -61,7 +67,11 @@ musicOboeIIMvtII = \relative c {
 	
 	
 % Bars 71 to 75
-	R4.*5
+	R4.*3
+	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 % Bars 76 to 80
 	e,4.~\fp
 	<< e {s8\< s\> s\!}>>
@@ -73,10 +83,10 @@ musicOboeIIMvtII = \relative c {
 	R4.*3
 	
 	
-	R4.*3
+	\ni \mmrPos #-4 R4.
 % Bars 86 to 90
-	
-	\section 
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section 
 	\key a \minor << g4.~\f {s4 s8-\dimmarkup}>>
 	<< g4.~\> {s8 s s\!}>> \mark \default
 	g\p r r
@@ -99,13 +109,13 @@ musicOboeIIMvtII = \relative c {
 	R4.*2
 	
 % Bars 106 to 110
-	R4.*6
+	R4.*2
 	
-	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 111 to 115
-	
+	\mmrPos #-4 R \no
 	bes4\pp~ bes16 r
 	R4.*3
 	
@@ -137,10 +147,10 @@ musicOboeIIMvtII = \relative c {
 	
 % Bars 141 to 145
 	R4.
-	R \section \mark \default
-	R4.*10
-	
-	
+	\ni \mmrPos #-4 R4. \section \mark \default
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
+	R4.*8
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -150,13 +160,15 @@ musicOboeIIMvtII = \relative c {
 	
 	
 % Bars 156 to 160
-	R4.*5
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R \no
+	R4.*3
 % Bars 161 to 165
 	R4.*3
 	
 	\mark \default
-	R4.*4
-	
+	\ni \mmrPos #-4 R4. \no
+	R4.*3
 % Bars 166 to 170
 	
 	
@@ -175,13 +187,17 @@ musicOboeIIMvtII = \relative c {
 	
 	
 	
-	R4.*13
+	R4.*11
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
-% Bars 196 to 200
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+% Bars 196 to 200
+	\mmrPos #-4 R \no
 	r8 r16 e(\f c b)
 	a8.(\< b32 c b16. a32)\!
 	a4.\fp

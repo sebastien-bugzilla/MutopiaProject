@@ -449,7 +449,7 @@ markXoffset = #(define-music-function
 
 markWhiteout = {
 	\once \override Score.RehearsalMark.layer = #3
-	\once \override Score.RehearsalMark.whiteout = #0.75
+	\once \override Score.RehearsalMark.whiteout = #1.5
 	\once \override Score.RehearsalMark.whiteout-style = #'outline
 }
 
@@ -469,17 +469,17 @@ InCueContext = {
 %	\override Stem.length = #7
 %	\override Beam.length = #7
 	\set fontSize = #-3 %-3
-	\override NoteHead.color = #darkgreen
-	\override Stem.color = #darkgreen
-	\override Beam.color = #darkgreen
-	\override TextScript.color = #darkgreen
-	\override DynamicText.color = #darkgreen
-	\override Slur.color = #darkgreen
-	\override Tie.color = #darkgreen
-	\override Script.color = #darkgreen
-	\override Accidental.color = #darkgreen
-	\override Hairpin.color = #darkgreen
-	\override Rest.color = #darkgreen
+	\override NoteHead.color = #blue
+	\override Stem.color = #blue
+	\override Beam.color = #blue
+	\override TextScript.color = #blue
+	\override DynamicText.color = #blue
+	\override Slur.color = #blue
+	\override Tie.color = #blue
+	\override Script.color = #blue
+	\override Accidental.color = #blue
+	\override Hairpin.color = #blue
+	\override Rest.color = #blue
 }
 
 OutCueContext = {

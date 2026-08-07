@@ -12,14 +12,18 @@ musicOboeIMvtI = \relative c {
 	R2*2
 	
 	\repeat volta 2 {
-		R2*11
+		R2*6
 % Bars 6 to 10
-	
+		
+		
+		
+		\ni \mmrPos #4 R2
+		\mmrPos #4 R
 % Bars 11 to 15
-		
-		
-		
-		r4 r8. c'''16\pp
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R \no
+		\voiceOne r4 r8. \oneVoice c'''16\pp
 		c2~
 % Bars 16 to 20
 		c8 r r4
@@ -81,11 +85,15 @@ musicOboeIMvtI = \relative c {
 % Bars 66 to 70
 		a4.-\dimmarkup a8~
 		a4 r
-		R2*14
+		R2*6
 % Bars 71 to 75
 		
+		
+		
+		\ni \mmrPos #4 R2
+		\mmrPos #4 R \no
 % Bars 76 to 80
-	
+		R2*6
 % Bars 81 to 85
 		
 		r8 aes'4(-> f8)
@@ -135,13 +143,13 @@ musicOboeIMvtI = \relative c {
 % Bars 126 to 130
 		r bes!--
 		g-- r
-		R2*11
+		R2*9
 % Bars 131 to 135
 	
 % Bars 136 to 140
 		
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R \no
 		c'2\ff~
 		c
 % Bars 141 to 145
@@ -213,10 +221,14 @@ musicOboeIMvtI = \relative c {
 		}
 	}
 % Bars 196 to 200
-	R2*7
+	R2*3
+	
+	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
 % Bars 201 to 205
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	c'2->_\fzmarcato~
 	c8 r aes-. r
 	f-. r c-. r
@@ -241,12 +253,12 @@ musicOboeIMvtI = \relative c {
 	R2*2
 % Bars 226 to 230
 	\mark \default
-	R2*8
+	R2*6
 % Bars 231 to 235
 	
 	
-	
-	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R \no
 	dis4->\f dis8. c!16
 % Bars 236 to 240
 	dis4.-> c8
@@ -261,11 +273,15 @@ musicOboeIMvtI = \relative c {
 	g4 g8. e16
 	g8 r r4
 % Bars 246 to 250
-	R2*11
+	R2*7
 % Bars 251 to 255
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 256 to 260
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	e2\p~
 	e~
 	e~
@@ -313,10 +329,14 @@ musicOboeIMvtI = \relative c {
 	c8 f4 ces8
 	bes!) r r4
 % Bars 296 to 300
-	R2*7
+	R2*2
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 301 to 305
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ees4->\ff g16-. f-. ees8-.
 	f4-> aes16-. g-. f8-.
 	g8-. bes4.->~
@@ -332,13 +352,17 @@ musicOboeIMvtI = \relative c {
 	R2*4
 % Bars 316 to 320
 	
-	R2*12
+	R2*8
 % Bars 321 to 325
 	
+	
+	
+	
+	\ni \mmrPos #4 R2
 % Bars 326 to 330
-	
-	
-	\mark \default
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 	\tuplet 3/2 4 {a'8[\pp a a]  a a a
 	a4.:16 a:
 % Bars 331 to 335
@@ -479,10 +503,10 @@ musicOboeIMvtI = \relative c {
 	\markk
 	R2
 % Bars 456 to 460
-	R2*7
+	R2*5
 % Bars 461 to 465
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	c,2->\ff
 	d->
 	e->
@@ -503,15 +527,15 @@ musicOboeIMvtI = \relative c {
 	a2~
 % Bars 481 to 485
 	a8\p r r4
-	R2*17
+	R2*15
 % Bars 486 to 490
 	
 % Bars 491 to 495
 	
 % Bars 496 to 500
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	f2(\pp
 	g4.. a16)
 % Bars 501 to 505

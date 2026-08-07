@@ -113,12 +113,12 @@ musicOboeIIMvtIV = \relative c {
 % Bars 86 to 90
 	
 	
-	R1*5
+	R1*3
 	
 	
 % Bars 91 to 95
-	
-	\section \mark \default
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no \section \mark \default
 	\key des \major f1\((\pp
 	ges2.)\< g4\!~
 	g\> aes\)\! r2
@@ -127,15 +127,19 @@ musicOboeIIMvtIV = \relative c {
 % Bars 101 to 105
 	f2.->\p r4
 	R1
-	R1*14
+	R1*11
 	
 	
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 116 to 120
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	bes2.\pp bes4~
 	bes bes-.( bes-. bes-.)
 	bes2.\< bes4~
@@ -188,11 +192,15 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 166 to 170
 	\mark \default
-	R1*10
+	R1*5
 % Bars 171 to 175
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 176 to 180
-	
+	\mmrPos #-4 R \no
 	c,2.\pp c4~
 	c c(-.\< c-. c-.)\!
 	c2.\fz\> c4\p~
@@ -333,13 +341,13 @@ musicOboeIIMvtIV = \relative c {
 	<< g1\pp\<( {s4 s s s\!}>>
 	f2\> g4 a)\! \mark \default
 	bes r r2
-	R1*8
+	R1*7
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
-	
-	R1
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	r2 e4(\p\< g\!~
 	g\> f e4.\! d8)
 % Bars 316 to 320
@@ -350,10 +358,10 @@ musicOboeIIMvtIV = \relative c {
 	
 % Bars 321 to 325
 	\mark \default
-	R1*4
+	R1*2
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 % Bars 326 to 330
 	r4 a\pp r a
 	r ees' r ees

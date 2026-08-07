@@ -162,9 +162,10 @@ musicOboeIMvtIII = \relative c {
 	
 	
 % Bars 166 to 170
-	R4.*13
+	R4.*5
 % Bars 171 to 175
-	
+	\ni \mmrPos #8 R4. \no
+	R4.*7
 % Bars 176 to 180
 	
 	
@@ -175,14 +176,14 @@ musicOboeIMvtIII = \relative c {
 	d\p r r
 	ees\ff r r
 	\startVoltaI d r r
-	R4.*11
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	
-	
-	
-	\section
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section
 	\startVoltaII d8\ff r r \endVolta \section
 % Bars 196 to 200
 	\repeat volta 2 {
@@ -253,31 +254,39 @@ musicOboeIMvtIII = \relative c {
 		c[\> r16 c-. c8-.]
 		c( ees) des-.\! \mark \default
 		c\p r r
-		R4.*10
+		R4.*7
 % Bars 256 to 260
 	
 % Bars 261 to 265
 		
-		
-		
-		
+		\ni \mmrPos #4 R4.
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		c8(\pp ees) des-.
 % Bars 266 to 270
 		c r r
-		R4.*10
+		R4.*8
 % Bars 271 to 275
-	
+		
+		
+		
+		
+		\ni \mmrPos #-4 R4.
 % Bars 276 to 280
-		\mark \default
+		\mmrPos #-4 R \no \mark \default
 	}
-	R4.*13
+	R4.*7
 % Bars 281 to 285
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 286 to 290
-	
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	des4(\p\< f8\!
 % Bars 291 to 295
 	ees4\f\> des8\!
