@@ -1158,28 +1158,182 @@ cueVoiceClarinettoIIMvtIV = \relative c {
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #
 %###############################################################################
 cueVoiceFagottoIMvtI = \relative c {
-	
+	% no cue voice
 }
 cueVoiceFagottoIMvtII = \relative c {
-	
+	s4.*18
+	% bars 19 - 22
+	\voiceOne d'4.~^\pp^\markup {Cor.} 
+	d8 r r
+	d4.~
+	d8 r r \oneVoice
+	s4.*43
+	% bars 66 - 67
+	\clef treble \voiceOne cis''4.^\fz^\markup {Fl.}
+	a4~ a16. e32 \clef bass \oneVoice
+	s4.*30
+	% bars 98 - 101
+	\clef treble \voiceOne e'4.^\fp^\markup {Viol.}
+	c4(~ c16 g)
+	g4.(~
+	g4 a!8) \clef bass \oneVoice
+	s4.*6
+	% bars 108 - 109
+	\voiceTwo g,,,4.\pp~^\markup {Fg.II.}
+	g \oneVoice
+	s4.*32
+	% bars 142 - 144
+	\voiceTwo r8 r r16^\markup {Fag.II.} e'\pp
+	a,8-. a-. r16 a
+	b8-. c-. r16 b \oneVoice
+	s4.*50
+	% bars 195 - 197
+	\voiceOne \clef treble a'''8(^\pp^\markup {Fl.} e' d16 c
+	a8. b32 c b16\prall a)
+	a8 r16 e'(^\f c b) \clef bass
 }
 cueVoiceFagottoIMvtIII = \relative c {
-	
+	s4.*16
+	% bar 17
+	<>^\markup {Fl.Cl.}
+	s4.*36
+	% bar 53
+	<>^\markup {Clar.Ob.}
+	s4.*4
+	% bar 57
+	<>^\markup {Viol.}
+	s4.*4
+	% bar 61
+	<>^\markup {Vle}
+	s4.*5
+	% bars 66 - 69
+	\stemDown \clef treble ees'16(\pp^\markup {Viol.} d c b c ees
+	g f ees d ees g
+	bes! a g f a bes
+	\stemUp c d ees f g a) \clef bass \stemNeutral
+	s4.*14
+	% bars 84 - 85
+	\clef treble \voiceOne fis'8->^\fz^\markup {Fl.} b,-. fis'-.
+	b,-.^\fp^\markup {Ob.} fis-. b-. \clef bass \voiceOne
+	s4.*3
+	% bar 89
+	<>^\markup {Fag.II.}
+	s4.*9
+	% bar 98
+	<>^\markup {Ob.}
+	s4.*53
+	% bar 151
+	<>^\markup {Fg.II.}
+	s4.*8
+	% bar 159
+	<>^\markup {Cl.}
+	s4.*20
+	% bar 179
+	<>^\markup {Fg.II.}
 }
 cueVoiceFagottoIMvtIV = \relative c {
-	
+	s1*5 s2*1 s1*147
+	% bar 154
+	\clef treble \voiceOne r4^\markup {Viol.} b'''4(~^\fz b8 a16 g) fis8-.( g-.) \clef bass \oneVoice
+	s1*54
+	% bar 209
+	\clef treble \voiceTwo cis,,4(\f^\markup {Oboe} d cis d) \oneVoice \clef bass
+	s1*26
+	% bar 236
+	\voiceOne r4^\markup {Fg.II.} r8. fis,16^\p( b8)-. b-. r4 \oneVoice
 }
 cueVoiceFagottoIIMvtI = \relative c {
-	
+	s2*60
+	% bars 61 - 65
+	\voiceOne r8^\markup {Fg.I.} e'4->^\fp( d8)
+	c16( e d e) c8-. b-.
+	a e'4->( d8)
+	c16( e d e) c8-. b-.
+	a r s4 \oneVoice
+	s2*37
+	% bars 103 - 104
+	\voiceOne d8\repeatTie(^\markup {Fg.I.} dis fis e
+	d! cis b cis) \oneVoice
+	s2*224
+	% bar 329
+	<>^\markup {Fg.I.}
+	s2*64
+	% bars 393 - 394
+	\voiceOne f,16(^\mf^\markup {Fg.I.} a g f c' bes a f
+	bes c bes a g f e d) \oneVoice
+	<>^\markup {Fg.I.}
 }
 cueVoiceFagottoIIMvtII = \relative c {
-	
+	s4.*18
+	% bars 19 - 22
+	\voiceOne d'4.~^\pp^\markup {Cor.} 
+	d8 r r
+	d4.~
+	d8 r r \oneVoice
+	s4.*47
+	% bars 70 - 73
+	\clef treble \voiceTwo gis4.\fp^\markup {Cor.}
+	d4~ d16. b32
+	b4.~
+	b4 cis!8\laissezVibrer \clef bass \oneVoice
+	s4.*24
+	% bar 98
+	<>^\markup {Viol.}
+	s4.*4
+	% bars 102 - 103
+	\voiceOne bes4.^\markup {Fag.I.}^\fz^\>~
+	bes\! \oneVoice
+	s4.*91
+	% bars 195 - 197
+	\voiceOne \clef treble a''8(^\pp^\markup {Fl.} e' d16 c
+	a8. b32 c b16\prall a)
+	a8 r16 e'(^\f c b) \clef bass
 }
 cueVoiceFagottoIIMvtIII = \relative c {
-	
+	s4.*16
+	% bar 17
+	<>^\markup {Fl.Cl.}
+	s4.*28
+	% bar 45
+	<>^\markup {Fg.I.}
+	s4.*16
+	% bar 61
+	<>^\markup {Cl.}
+	s4.*5
+	% bars 66
+	<>^\markup {Viol.}
+	s4.*4
+	% bar 70
+	<>^\markup {Fg.I.}
+	s4.*7
+	% bar 77
+	\clef treble \voiceOne a'''8->^\mf^\markup {Ob.} e-. a-. \oneVoice 
+	s4.*6
+	% bars 84 - 86
+	\clef treble \voiceOne fis'8->^\fz^\markup {Fl.} b,-. fis'-.
+	b,,-.^\fp^\markup {Cl.} fis-. b-. \clef bass
+	fis-.^\fp^\markup {Fg.I.} b,-. fis'-. \oneVoice
+	s4.*1
+	% bar 88
+	\voiceOne fis8-. b,-. fis'-. \oneVoice
+	s4.*95
+	% bar 184
+	<>^\markup {Fg.I.}
+	s4.*17
+	% bar 201
+	<>^\markup {Fg.I.}
+	s4.*23
+	% bars 224 - 225
+	\voiceOne \clef treble aes8-.^\markup {Viol.} des,16(^\mf c des ees
+	\tuplet 7/6 {f ges aes bes c des ees)} \clef bass \oneVoice
+	s4.*81
+	% bar 307
+	<>^\markup {Fg.I.}
 }
 cueVoiceFagottoIIMvtIV = \relative c {
-	
+	s1*5 s2*1 s1*147
+	% bar 154
+	\clef treble \voiceOne r4^\markup {Viol.} b'''4(~^\fz b8 a16 g) fis8-.( g-.) \clef bass \oneVoice
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   C O R N I                    #

@@ -67,10 +67,10 @@ musicFagottoIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 66 to 70
-	R4.*4
-	
-	
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #-4 R \no
 	bes4(\p-> f16 a
 % Bars 71 to 75
 	bes8) f-. bes-.
@@ -80,9 +80,13 @@ musicFagottoIMvtIII = \relative c {
 	f16(\< e d cis d8)
 % Bars 76 to 80
 	e8-.\mf a,-. e'-.
-	R4.*9
+	R4.*7
 % Bars 81 to 85
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 % Bars 86 to 90
 	fis8-.\fp b,-. fis'-.
 	R4.

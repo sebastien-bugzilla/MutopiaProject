@@ -76,13 +76,18 @@ musicFagottoIIMvtIII = \relative c {
 	
 % Bars 76 to 80
 	
-	R4.*9
+	\ni \mmrPos #-4 R4. \no
+	R4.*6
 % Bars 81 to 85
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-6 R
 % Bars 86 to 90
+	\mmrPos #-4 R \no
 	R4.
-	R4.
-	R
+	\ni \mmrPos #-4 R4. \no
 	b''8-.\p fis-. b-.
 	R4.
 % Bars 91 to 95
@@ -218,11 +223,15 @@ musicFagottoIIMvtIII = \relative c {
 		des,4 r8 \mark \default
 	}
 	\repeat volta 2 {
-		R4.*12
+		R4.*10
 % Bars 216 to 220
 	
 % Bars 221 to 225
-	
+		
+		
+		
+		\ni \mmrPos #-8 R4.
+		\mmrPos #-4 R \no
 % Bars 226 to 230
 		des'4\p r8
 		c4 r8

@@ -182,12 +182,12 @@ musicFagottoIMvtIV = \relative c {
 	
 	
 	r2 \clef tenor r8. dis'16[-.\f eis8-. fis]-. \clef bass
-	R1*6
+	R1*5
 % Bars 151 to 155
 	
 	
 	
-	
+	\ni \mmrPos #-4 R1 \no
 	r8. cis16[(\mf d8.) e16]-. cis4( d)
 % Bars 156 to 160
 	R1
@@ -247,13 +247,13 @@ musicFagottoIMvtIV = \relative c {
 	bes-> e,-> f-> g->
 	gis8-> a-. a-. g-. g-. f-. f-. e-.
 	d r r4 r2
-	R1*6
+	R1*5
 	
 % Bars 206 to 210
 	
 	
 	
-	
+	\ni \mmrPos #4 R1 \no
 	a'1-\fcresc(
 % Bars 211 to 215
 	bes2.)\< b4\!
@@ -278,7 +278,7 @@ musicFagottoIMvtIV = \relative c {
 % Bars 231 to 235
 	R1*5
 % Bars 236 to 240
-	R1
+	\ni \mmrPos #-4 R1 \no
 	r4 r8. cis16(\p fis8-.) fis-. r4
 	R1
 	r4 r8. ees16(\p aes8-.) aes-. r4

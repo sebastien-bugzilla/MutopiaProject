@@ -22,13 +22,17 @@ musicFagottoIIMvtII = \relative c {
 	f!-\dimmarkup c e
 % Bars 11 to 15
 	a,4\pp r8
-	R4.*13
+	R4.*7
 % Bars 16 to 20
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 21 to 25
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R4.*2
 	
 	e4.\f(~
 % Bars 26 to 30
@@ -76,13 +80,13 @@ musicFagottoIIMvtII = \relative c {
 % Bars 66 to 70
 	
 	
-	R4.*3
+	R4.*2
 	
-	
+	\ni \mmrPos #4 R4.
 % Bars 71 to 75
-	R4.*3
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	fis'4.\pp~
 	fis
 % Bars 76 to 80
@@ -109,8 +113,8 @@ musicFagottoIIMvtII = \relative c {
 	
 % Bars 101 to 105
 	
-	R4.*2
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 	g4.\p~
 	g
 % Bars 106 to 110
@@ -197,14 +201,18 @@ musicFagottoIIMvtII = \relative c {
 % Bars 181 to 185
 	a4(\fp\> gis8)\!
 	a r r
-	R4.*15
+	R4.*12
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
+	
+	
+	
+	\ni \mmrPos #-4 R4.
 % Bars 196 to 200
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	fis4(\f gis8)
 	a r r
 	R4.

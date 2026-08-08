@@ -22,13 +22,17 @@ musicFagottoIMvtII = \relative c {
 	c16-.(-\dimmarkup b-. a8-. gis-.)
 % Bars 11 to 15
 	a4\pp r8
-	R4.*13
+	R4.*7
 % Bars 16 to 20
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 21 to 25
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R4.*2
 	
 	e4.\f(~
 % Bars 26 to 30
@@ -70,12 +74,12 @@ musicFagottoIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section \mark \default 
-	\key a \major R4.*10
+	\key a \major R4.*8
 % Bars 61 to 65
 	
 % Bars 66 to 70
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 	c4.\fp\>~
 	c4\! c8\p(
 	d4.->)
@@ -104,20 +108,24 @@ musicFagottoIMvtII = \relative c {
 	d''16(\> c b a g f\! \mark \default
 	e8)\p r r
 % Bars 91 to 95
-	R4.*11
+	R4.*7
 % Bars 96 to 100
 	
-% Bars 101 to 105
 	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 101 to 105
+	\mmrPos #-4 R \no
 	bes'4.->\fz\>~
 	bes\p
-	R4.*6
+	R4.*4
 	
 % Bars 106 to 110
 	
 	
-	
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R \no
 	<< c4.\fp\> {s8 s s\!}>>
 % Bars 111 to 115
 	bes8( a-\dimmarkup g)
@@ -148,9 +156,9 @@ musicFagottoIMvtII = \relative c {
 	
 % Bars 141 to 145
 	
-	R4. \section \mark \default
-	R4.*2
-	
+	\ni \mmrPos #4 R4. \section \mark \default
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	c'4(\p d16 c
 % Bars 146 to 150
 	b4) r8
@@ -197,14 +205,18 @@ musicFagottoIMvtII = \relative c {
 % Bars 181 to 185
 	c4(\fp\> b8)\!
 	c r r
-	R4.*15
+	R4.*12
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
+	
+	
+	
+	\ni \mmrPos #-4 R4.
 % Bars 196 to 200
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	a4(\f b8)
 	c r r
 	R4.

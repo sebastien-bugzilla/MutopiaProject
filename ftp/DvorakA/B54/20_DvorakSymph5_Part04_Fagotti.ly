@@ -53,9 +53,9 @@
 			\new Voice {
 				\formatFagottoIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(fagottoI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(fagottoI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtI
 			}
@@ -64,7 +64,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -77,9 +77,9 @@
 			\new Voice {
 				\formatFagottoIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(fagottoI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(fagottoI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtII
 			}
@@ -101,9 +101,9 @@
 			\new Voice {
 				\formatFagottoIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(fagottoI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(fagottoI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtIII
 			}
@@ -125,9 +125,9 @@
 			\new Voice {
 				\formatFagottoIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(fagottoI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(fagottoI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtIV
 			}
@@ -149,9 +149,9 @@
 			\new Voice {
 				\formatFagottoIIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(fagottoII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(fagottoII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtI
 			}
@@ -160,7 +160,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -173,9 +173,9 @@
 			\new Voice {
 				\formatFagottoIIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(fagottoII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(fagottoII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtII
 			}
@@ -197,9 +197,9 @@
 			\new Voice {
 				\formatFagottoIIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(fagottoII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(fagottoII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtIII
 			}
@@ -221,9 +221,9 @@
 			\new Voice {
 				\formatFagottoIIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(fagottoII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(fagottoII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtIV
 			}

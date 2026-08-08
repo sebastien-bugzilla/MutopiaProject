@@ -12,7 +12,7 @@ semprepp = \markup {\italic sempre \dynamic pp}
 pptranquillo = \markup {\hspace #-0.82 \dynamic pp \italic tranquillo}
 ppmoltotranquillo = \markup {\hspace #-0.82 \dynamic pp \italic "molto tranquillo"}
 pplegato = \markup {\hspace #-0.82 \dynamic pp \italic legato}
-ppdolente = \markup {\dynamic pp \italic dolente}
+ppdolente = \markup {\hspace #-0.82 \dynamic pp \italic dolente}
 ppdolce = \markup {\hspace #-0.82 \dynamic pp \italic dolce}
 ppdolceD = \tweak DynamicText.self-alignment-X #-0.835 #(make-dynamic-script (markup #:normal-text ppdolce))
 ppdim = \markup {\hspace #-0.82 \dynamic pp \italic dim.}
@@ -99,7 +99,7 @@ ffmarc = \markup {\hspace #-0.54 \dynamic ff \italic marc.}
 ffmarcato = \markup {\hspace #-0.54 \dynamic ff \italic marcato}
 ffmarcatissimo = \markup {\hspace #-0.54 \dynamic ff \italic marcatissimo}
 ffdim = \markup {\hspace #-0.54 \dynamic ff \italic dim.}
-ffmarcatosempre = \markup {\dynamic ff \italic "marcato sempre"}
+ffmarcatosempre = \markup {\hspace #-0.54 \dynamic ff \italic "marcato sempre"}
 ffrinforz = \markup {\hspace #-0.54 \dynamic ff \italic rinforz.}
 ffcresc = \markup {\hspace #-0.54 \dynamic ff \italic cresc.}
 %--------------------

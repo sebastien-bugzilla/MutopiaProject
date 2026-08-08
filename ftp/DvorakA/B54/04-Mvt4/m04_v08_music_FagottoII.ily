@@ -186,12 +186,12 @@ musicFagottoIIMvtIV = \relative c {
 	
 	
 	r2 \clef tenor r8. fis'16[-.\f gis8-. a]-. \clef bass
-	R1*6
+	R1*5
 % Bars 151 to 155
 	
 	
 	
-	
+	\ni \mmrPos #-4 R1 \no
 	r8. a16[(\mf b8.) cis16]-. a4( bes)
 % Bars 156 to 160
 	R1
