@@ -9,7 +9,7 @@ musicClarinettoIMvtII = \relative c {
 	\key c \minor
 	\transposition a
 % Bars 1 to 5
-	R4.*28
+	R4.*24
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -18,12 +18,16 @@ musicClarinettoIMvtII = \relative c {
 	
 % Bars 21 to 25
 	
+	
+	
+	
+	\ni \mmrPos #-4 R4.
 % Bars 26 to 30
-	
-	
-	
-	R4.*2
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 31 to 35
 	r32 c''(\p g' ees d ees64 d c32) r r8
 	bes16( f'\prall ees32 f g f ees16) r
@@ -54,11 +58,11 @@ musicClarinettoIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section \mark \default
-	\key c \major R4.*4
-	
-	
+	\key c \major \ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 61 to 65
-	
+	\mmrPos #-4 R \no
 	c4.->\fz
 	a4\>~ a16. f32\!
 	f4.->\fz\<~
@@ -153,11 +157,11 @@ musicClarinettoIMvtII = \relative c {
 % Bars 141 to 145
 	g8 r r
 	R4. \section \mark \default
-	R4.*4
+	R4.*2
 	
-	
+	\ni \mmrPos #-4 R4.
 % Bars 146 to 150
-	
+	\mmrPos #-4 R \no
 	f4.(~\p
 	f4\< g8)\!
 	a4(\fz b8)

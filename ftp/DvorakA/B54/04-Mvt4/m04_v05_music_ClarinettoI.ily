@@ -246,13 +246,13 @@ musicClarinettoIMvtIV = \relative c {
 	b( a) a( g) g( fis) fis( e) \revertCutBeam
 	e dis'-. dis-. dis-. dis-. dis-. dis-. dis-.
 	e r r4 r2
-	R1*10
+	R1*9
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
 	
-	
+	\ni \mmrPos #-4 R1 \no
 	r8. cis16\f d8-. e-. ais, r r4
 	r8. cis16 d8-. e-. ais, r r4
 % Bars 216 to 220

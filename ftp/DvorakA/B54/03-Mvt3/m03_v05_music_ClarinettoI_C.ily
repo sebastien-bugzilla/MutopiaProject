@@ -9,7 +9,7 @@ musicClarinettoIMvtIII = \relative c {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	r d''--(-\tweak X-offset #-2 \pp d--
+	r8 d''--(-\tweak X-offset #-2 \pp d--
 	d--) r r
 	r d---\crescmarkup r
 	r f-- r

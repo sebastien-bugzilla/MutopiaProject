@@ -9,7 +9,7 @@ musicClarinettoIMvtIII = \relative c {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	r d''--(\pp d--
+	r8 d''--(\pp d--
 	d--) r r
 	r d---\crescmarkup r
 	r f-- r
@@ -79,22 +79,25 @@ musicClarinettoIMvtIII = \relative c {
 	g4 r8
 	R4. \mark \default
 % Bars 66 to 70
-	R4.*9
+	R4.*7
 % Bars 71 to 75
 	
 	
-	
-	
+	\ni \mmrPos #-4 R4. \no
+	R4.
 	g'16(\p\< fis e dis e8)\!
 % Bars 76 to 80
 	fis-.\mf b,-. fis'-.
-	R4.*8
+	\ni \mmrPos #-4 R4. \no
+	R4.*6
+	
+	
 % Bars 81 to 85
 	
 	
 	
-	
-	R4.
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R4. \no
 % Bars 86 to 90
 	gis8-.\fp cis,-. gis'-.
 	R4.
@@ -294,10 +297,10 @@ musicClarinettoIMvtIII = \relative c {
 		d( f) ees-.
 % Bars 256 to 260
 		d r r
-		R4.*6
+		R4.*5
 % Bars 261 to 265
 		
-		
+		\ni \mmrPos #4 R4. \no
 		d8(\p\< f) ees-.
 		d\! r r
 		R4.*7

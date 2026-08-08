@@ -9,7 +9,7 @@ musicClarinettoIIMvtIII = \relative c {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	r b''--(\pp b--
+	r8 b''--(\pp b--
 	b--) r r
 	r b---\crescmarkup r
 	r d-- r
@@ -36,7 +36,7 @@ musicClarinettoIIMvtIII = \relative c {
 	
 	
 	
-	r8 r8. d16\f
+	\voiceTwo r8 r8. \oneVoice d16\f
 	<< c4.\mf\>~ {s8 s s\!}>>
 % Bars 26 to 30
 	c8\p c-. c-.
@@ -68,10 +68,10 @@ musicClarinettoIIMvtIII = \relative c {
 	
 % Bars 56 to 60
 	
-	R4.*4
-	
-	
-	
+	R4.
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 61 to 65
 	g,4.->\pp~
 	g4 r8
@@ -88,12 +88,13 @@ musicClarinettoIIMvtIII = \relative c {
 	R4.*2
 % Bars 76 to 80
 	
-	R4.*8
+	\ni \mmrPos #-4 R4. \no
+	R4.*6
 % Bars 81 to 85
 	
 	
 	
-	
+	\ni \mmrPos #-4 R4. \no
 	cis'8-.\fp gis-. cis-.
 % Bars 86 to 90
 	R4.
@@ -144,12 +145,12 @@ musicClarinettoIIMvtIII = \relative c {
 	c8) b-. a-.
 	d a(\prall c)
 	b16( c b a g) r
-	R4.*8
+	R4.*6
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R \no
 	g'4\ff c,16( g'
 	f8) c-. f-.
 	g-. c,-. g'-.
@@ -249,8 +250,8 @@ musicClarinettoIIMvtIII = \relative c {
 		R4.*2
 		
 % Bars 226 to 230
-		R4.*2
-		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R \no
 		r8. ees16-.\pp ees8-.
 		ees8(\< g)\> f-.\!
 		ees4-. r8
@@ -286,10 +287,10 @@ musicClarinettoIIMvtIII = \relative c {
 		bes( d) c-.
 % Bars 256 to 260
 		bes r r
-		R4.*6
+		R4.*5
 % Bars 261 to 265
 		
-		
+		\ni \mmrPos #4 R4. \no
 		bes8(\p\< d) c-.
 		bes\! r r
 		R4.*7
@@ -309,13 +310,17 @@ musicClarinettoIIMvtIII = \relative c {
 	
 	
 	
-	R4.*9
+	R4.*6
 	
 % Bars 286 to 290
 	
+	
+	
+	
+	\ni \mmrPos #-4 R4.
 % Bars 291 to 295
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ees8.\mf g16-. g8-.
 	g4 r8
 	r8. aes16-. aes8-.

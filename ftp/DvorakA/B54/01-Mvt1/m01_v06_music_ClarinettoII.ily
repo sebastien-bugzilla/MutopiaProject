@@ -82,13 +82,17 @@ musicClarinettoIIMvtI = \relative c {
 		b( d ais cis fis, ais gis b)
 		ais8-.\mf fis-. b-.\noBeam r
 % Bars 61 to 65
-		R2*13
+		R2*8
 % Bars 66 to 70
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
 % Bars 71 to 75
-		
-		
-		
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		\subdiviseBeam \tuplet 3/2 4 {a8\fp a a  a a a}
 		g8 r r4
 % Bars 76 to 80
@@ -118,16 +122,16 @@ musicClarinettoIIMvtI = \relative c {
 % Bars 96 to 100
 		<< b~ {s8 s s s\!}>>
 		b4 r
-		R2*17
+		R2*13
 % Bars 101 to 105
 	
 % Bars 106 to 110
 	
 % Bars 111 to 115
-		
-		
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		r4 fis''\p
 % Bars 116 to 120
 		r fis_\dimmarkup
@@ -294,10 +298,10 @@ musicClarinettoIIMvtI = \relative c {
 	\mark \default
 	R2*4
 % Bars 261 to 265
-	R2*4
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	R2*4
 % Bars 266 to 270
 	
@@ -334,10 +338,10 @@ musicClarinettoIIMvtI = \relative c {
 	
 	
 	
-	R2*3
+	\ni \mmrPos #-4 R2
 % Bars 296 to 300
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	c!4(\f\< g'\!~
 	g) f~
 	f\> d8.( bes16)\!
@@ -366,11 +370,15 @@ musicClarinettoIIMvtI = \relative c {
 	R2
 	r8 b(\p c) r
 % Bars 321 to 325
-	R2*8
+	R2*4
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 326 to 330
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	\tuplet 3/2 4 {b'8[\pp b b]  b b b 
 	b4.:8 b:
 % Bars 331 to 335
@@ -484,9 +492,10 @@ musicClarinettoIIMvtI = \relative c {
 	
 	
 	
-	R2*10
+	\ni \mmrPos #-4 R2
 % Bars 426 to 430
-	
+	\mmrPos #-4 R \no
+	R2*8
 % Bars 431 to 435
 	
 	

@@ -53,9 +53,9 @@
 			\new Voice {
 				\formatClarinettoIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(clarinettoI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(clarinettoI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtI
 			}
@@ -64,7 +64,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -77,9 +77,9 @@
 			\new Voice {
 				\formatClarinettoIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(clarinettoI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(clarinettoI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtII
 			}
@@ -101,9 +101,9 @@
 			\new Voice {
 				\formatClarinettoIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(clarinettoI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(clarinettoI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtIII
 			}
@@ -125,9 +125,9 @@
 			\new Voice {
 				\formatClarinettoIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(clarinettoI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(clarinettoI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtIV
 			}
@@ -149,9 +149,9 @@
 			\new Voice {
 				\formatClarinettoIIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(clarinettoII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(clarinettoII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtI
 			}
@@ -160,7 +160,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -173,9 +173,9 @@
 			\new Voice {
 				\formatClarinettoIIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(clarinettoII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(clarinettoII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtII
 			}
@@ -197,9 +197,9 @@
 			\new Voice {
 				\formatClarinettoIIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(clarinettoII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(clarinettoII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtIII
 			}
@@ -221,9 +221,9 @@
 			\new Voice {
 				\formatClarinettoIIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(clarinettoII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(clarinettoII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtIV
 			}
