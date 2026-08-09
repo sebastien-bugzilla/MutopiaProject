@@ -78,10 +78,10 @@ musicCornoIIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 66 to 70
-	R4.*4
-	
-	
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #-4 R \no
 	f4.->\fp~
 % Bars 71 to 75
 	f8 f-. f-.
@@ -91,7 +91,7 @@ musicCornoIIMvtIII = \relative c {
 	a8-.\< a-. a-.\!
 % Bars 76 to 80
 	gis4.->\fp
-	R4.
+	\ni \mmrPos #-4 R4. \no
 	R4.*5
 % Bars 81 to 85
 	
@@ -187,17 +187,17 @@ musicCornoIIMvtIII = \relative c {
 	g8\pp r r
 % Bars 166 to 170
 	f r r
-	R4.*12
+	R4.*9
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	
-	
-	
-	R4.*3
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 181 to 185
-	
+	\mmrPos #-4 R \no
 	g8\ff r r
 	\startVoltaI a r r
 	R4.*7
@@ -244,18 +244,18 @@ musicCornoIIMvtIII = \relative c {
 		
 % Bars 221 to 225
 		
-		R4.*2
-		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R \no
 		R4.*3
 		
 % Bars 226 to 230
 		
-		R4.*5
-		
-		
-		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 231 to 235
-		
+		\mmrPos #-4 R \no
 		r8. c16-.\pp c8-.
 		aes( c) bes-.
 		aes4 r8
@@ -283,15 +283,19 @@ musicCornoIIMvtIII = \relative c {
 		ees[\> r16 ees-. ees8-.]
 		ees( g) f-.\! \mark \default
 		ees\p r r
-		R4.*17
+		R4.*11
 % Bars 256 to 260
 	
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	
+		\ni \mmrPos #4 R4.
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R
 % Bars 271 to 275
-		
+		\mmrPos #4 R \no
 		r8. bes'16-.\pp bes8-.
 		bes4 r8
 		r8. bes16-. bes8-.
@@ -319,8 +323,8 @@ musicCornoIIMvtIII = \relative c {
 % Bars 296 to 300
 	
 % Bars 301 to 305
-	R4.*2
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 	aes4.\pp
 	aes
 	aes
@@ -346,5 +350,5 @@ musicCornoIIMvtIII = \relative c {
 	r8. c16-.\ff c8-.
 	c r r
 	R4.*2
-	\section s8
+	\section 
 }

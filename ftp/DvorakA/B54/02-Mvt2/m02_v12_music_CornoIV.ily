@@ -9,11 +9,15 @@ musicCornoIVMvtII = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R4.*24
+	R4.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
+	R4.*10
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -68,15 +72,15 @@ musicCornoIVMvtII = \relative c {
 	R4.*3
 	
 	
-	R4.
+	\ni \mmrPos #4 R4. \no
 % Bars 71 to 75
-	R4.*9
+	R4.*5
 % Bars 76 to 80
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R \no
+	R4.*2
 	
-	
-	
-	
-	R4.
+	\ni \mmrPos #-4 R4. \no
 % Bars 81 to 85
 	b\brack\pp
 	<< fis'\p~ {s8 s s\<}>>
@@ -101,10 +105,10 @@ musicCornoIVMvtII = \relative c {
 	
 	
 	
-	R4.*9
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 % Bars 106 to 110
-	
+	R4.*7
 % Bars 111 to 115
 	
 	
@@ -132,7 +136,9 @@ musicCornoIVMvtII = \relative c {
 % Bars 141 to 145
 	
 	\section \mark \default
-	R4.*3
+	R4.*2
+	
+	\ni \mmrPos #-4 R4. \no
 % Bars 146 to 150
 	d,4\pp r8
 	R4.*4
@@ -149,11 +155,11 @@ musicCornoIVMvtII = \relative c {
 	
 	R4.*2
 	\mark \default
-	R4.*2
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 166 to 170
-	R4.*2
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	b4.->\f
 	b->
 	b->
@@ -172,12 +178,12 @@ musicCornoIVMvtII = \relative c {
 % Bars 181 to 185
 	b4.->\fp~
 	b8 r r
-	R4.*10
+	R4.*8
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 	e4.\pp~
 	e8 r r
 	R4.

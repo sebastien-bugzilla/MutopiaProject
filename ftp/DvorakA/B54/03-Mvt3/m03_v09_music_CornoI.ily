@@ -78,10 +78,10 @@ musicCornoIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 66 to 70
-	R4.*4
-	
-	
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #-4 R \no
 	c4.->\fp~
 % Bars 71 to 75
 	c8 c-. c-.
@@ -97,13 +97,13 @@ musicCornoIMvtIII = \relative c {
 	
 	
 	cis4->\fp cis8
-	R4.*10
+	R4.*9
 % Bars 86 to 90
 	
 % Bars 91 to 95
 	
 	
-	
+	\ni \mmrPos #4 R4. \no
 	b4->\fp b8~
 	b4.
 % Bars 96 to 100
@@ -187,13 +187,13 @@ musicCornoIMvtIII = \relative c {
 	c8\pp r r
 % Bars 166 to 170
 	c r r
-	R4.*12
+	R4.*9
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	
-	
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	f8-.\fp[ r d-.]
 	<< c4.\>~ {s8 s s\!}>>
 % Bars 181 to 185
@@ -283,15 +283,19 @@ musicCornoIMvtIII = \relative c {
 		g[\> r16 g-. g8-.]
 		g( bes) aes-.\! \mark \default
 		g\p r r
-		R4.*17
+		R4.*11
 % Bars 256 to 260
 	
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	
+		\ni \mmrPos #4 R4.
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R
 % Bars 271 to 275
-		
+		\mmrPos #4 R \no
 		r8. des'16-.\pp des8-.
 		des4 r8
 		r8. des16-. des8-.
@@ -346,5 +350,5 @@ musicCornoIMvtIII = \relative c {
 	r8. c16-.\ff c8-.
 	c r r
 	R4.*2
-	\section s8
+	\section
 }

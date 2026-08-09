@@ -176,22 +176,33 @@ musicCornoIIIMvtIV = \relative c {
 	ees-^ r r2
 	r8 fis-. fis-. fis-.  fis-. fis-. fis-. fis-. \mark \default
 	g4 r r2
-	R1*15
+	R1*3
 % Bars 146 to 150
 	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 151 to 155
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	R1
 % Bars 156 to 160
-	
-	
+	\ni \mmrPos #-4 R1 \no
+	R1*2
 	\clef bass
 	<< bes,1\fz\>~ {s4 s s s\!}>>
 	<< bes1~\p\> {s4 s s s\!}>>
 % Bars 161 to 165
 	bes1\pp \clef treble
-	R1*5
+	R1*3
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 166 to 170
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	bes'1\p~
 	bes4 bes2.
 	bes1~

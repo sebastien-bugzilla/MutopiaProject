@@ -9,12 +9,16 @@ musicCornoIMvtII = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R4.*12
+	R4.*9
 % Bars 6 to 10
 	
+	
+	
+	
+	\ni \mmrPos #-4 R4.
 % Bars 11 to 15
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	b''4(\p cis8
 	d4.)
 	R4.*4
@@ -64,10 +68,11 @@ musicCornoIMvtII = \relative c {
 	R4.*3
 	
 	
-	R4.*4
+	R4.
+	\ni \mmrPos #-4 R4.
 % Bars 56 to 60
-	
-	\section \mark \default
+	\mmrPos #-4 R \no
+	R4. \section \mark \default
 	e4.->\fp
 	b4~ b16. gis32-.
 	gis4.->\fz\>~

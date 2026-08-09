@@ -54,11 +54,11 @@ musicCornoIVMvtIV = \relative c {
 	
 	
 	
-	R1*4
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
 % Bars 41 to 45
-	
-	
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	R1*4
 	
 	
@@ -126,9 +126,9 @@ musicCornoIVMvtIV = \relative c {
 	
 % Bars 101 to 105
 	
-	R1*3
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r2 r4 des''8-.\pp des-.
 % Bars 106 to 110
 	des4-. r r ees8-. ees-.
@@ -172,22 +172,34 @@ musicCornoIVMvtIV = \relative c {
 	ees-^ r r2
 	r8 fis-. fis-. fis-.  fis-. fis-. fis-. fis-. \mark \default
 	g4 r r2
-	R1*15
+	R1*3
+	
 % Bars 146 to 150
 	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 151 to 155
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	R1
 % Bars 156 to 160
-	
-	
+	\ni \mmrPos #-4 R1 \no
+	R1*2
 	\clef bass
 	<< bes,,1\fz\>~ {s4 s s s\!}>>
 	<< bes1~\p\> {s4 s s s\!}>>
 % Bars 161 to 165
 	bes1\pp \clef treble
-	R1*5
+	R1*3
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 166 to 170
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	bes'1\p~
 	bes4 bes2.
 	bes1~
@@ -197,11 +209,11 @@ musicCornoIVMvtIV = \relative c {
 	R1
 	<< c1\fp\>~ {s4 s s s\!}>>
 	c2. r4
-	R1*4
+	R1*2
 % Bars 176 to 180
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	bes2.\fz\> r4\!
 	R1
 % Bars 181 to 185
@@ -236,10 +248,10 @@ musicCornoIVMvtIV = \relative c {
 	r4 a-\fbrackz r2
 % Bars 206 to 210
 	r4 a-\fbrackz r2
-	R1*6
+	R1*4
 % Bars 211 to 215
-	
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no
 	r2 r4 r8 ais-.\f
 	b-. r r4 r ees,8-. r
 	r2 r4 c8-. r

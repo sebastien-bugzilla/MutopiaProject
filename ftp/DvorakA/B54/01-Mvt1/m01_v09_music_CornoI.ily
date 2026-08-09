@@ -12,9 +12,13 @@ musicCornoIMvtI = \relative c {
 	R2*2
 	
 	\repeat volta 2 {
-		R2*8
+		R2*6
 % Bars 6 to 10
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R \no
 % Bars 11 to 15
 		c''2\fz\>~
 		<< c~ {s8 s s s\!}>>
@@ -143,13 +147,13 @@ musicCornoIMvtI = \relative c {
 		R
 % Bars 126 to 130
 		c
-		R2*12
+		R2*10
 % Bars 131 to 135
 	
 % Bars 136 to 140
 		
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R \no
 		d2\ff~
 		d
 % Bars 141 to 145
@@ -181,12 +185,16 @@ musicCornoIMvtI = \relative c {
 		cis'-. a8. cis16
 % Bars 171 to 175
 		e2->
-		R2*11
+		R2*7
 % Bars 176 to 180
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
 % Bars 181 to 185
-		
-		
+		\mmrPos #4 R
+		\mmrPos #4 R \no
 		f2->\fp~
 		f8 r d-. r
 		b-. r g-. r
@@ -235,8 +243,8 @@ musicCornoIMvtI = \relative c {
 	\mark \default
 	R2*4
 % Bars 231 to 235
-	R2*2
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	des2\fz~
 	des
 	des\fz~
@@ -406,9 +414,13 @@ musicCornoIMvtI = \relative c {
 	R2*2
 % Bars 386 to 390
 	
-	R2*14
+	R2*6
 % Bars 391 to 395
 	
+	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
+	R2*6
 % Bars 396 to 400
 	
 % Bars 401 to 405
@@ -500,13 +512,16 @@ musicCornoIMvtI = \relative c {
 	e~
 % Bars 481 to 485
 	e8\p r r4
-	R2*20
+	R2*15
 % Bars 486 to 490
 	
 % Bars 491 to 495
 	
 % Bars 496 to 500
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
+	R2*3
 % Bars 501 to 505
 	
 	c2\p~

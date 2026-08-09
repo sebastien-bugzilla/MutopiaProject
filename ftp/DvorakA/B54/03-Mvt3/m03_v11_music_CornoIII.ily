@@ -92,14 +92,20 @@ musicCornoIIIMvtIII = \relative c {
 	c8-.\< c-. c-.\!
 % Bars 76 to 80
 	b!4.->\fp
-	R4.*22
-	
+	\ni \mmrPos #-4 R4. \no
+	R4.*5
 % Bars 81 to 85
 	
+	
+	\ni \mmrPos #4 R4. \no
+	R4.*9
 % Bars 86 to 90
 	
 % Bars 91 to 95
 	
+	
+	\ni \mmrPos #4 R4. \no
+	R4.*5
 % Bars 96 to 100
 	
 	
@@ -210,10 +216,10 @@ musicCornoIIIMvtIII = \relative c {
 		R4.*2
 % Bars 201 to 205
 		
-		R4.*4
+		R4.*2
 		
-		
-		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R \no
 % Bars 206 to 210
 		r8 r c-.\mf\<
 		des4->\fz r8
@@ -238,16 +244,24 @@ musicCornoIIIMvtIII = \relative c {
 		aes4 r8
 		r8. aes16-.\< aes8-.\!
 		aes8->\mf r r
-		R4.*18
+		R4.*3
 		
 % Bars 226 to 230
 		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R4.*8
 % Bars 231 to 235
 		
 % Bars 236 to 240
 		
-% Bars 241 to 245
 		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+% Bars 241 to 245
+		\mmrPos #-4 R \no
 		ees4.\ff
 		r8. ees16-. ees8-.
 		ees4.->
@@ -263,7 +277,7 @@ musicCornoIIIMvtIII = \relative c {
 		ees\> b!4
 		c4 d8\! \mark \default
 		ees\p r r
-		R4.*22
+		R4.*17
 % Bars 256 to 260
 	
 % Bars 261 to 265
@@ -272,8 +286,12 @@ musicCornoIIIMvtIII = \relative c {
 	
 % Bars 271 to 275
 		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 % Bars 276 to 280
-		\mark \default
+		R4. \mark \default
 	}
 	R4.*4
 % Bars 281 to 285
@@ -324,5 +342,5 @@ musicCornoIIIMvtIII = \relative c {
 	g r r
 	R4.*3
 	
-	\section s8
+	\section
 }

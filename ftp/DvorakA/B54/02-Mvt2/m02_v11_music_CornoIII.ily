@@ -9,11 +9,15 @@ musicCornoIIIMvtII = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R4.*24
+	R4.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
+	R4.*10
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -70,11 +74,11 @@ musicCornoIIIMvtII = \relative c {
 	
 	d,4.->\fp
 % Bars 71 to 75
-	R4.*9
+	R4.*5
 % Bars 76 to 80
-	
-	
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R \no
+	R4.*2
 	
 	b'4.->\pp~
 % Bars 81 to 85
@@ -128,15 +132,21 @@ musicCornoIIIMvtII = \relative c {
 % Bars 126 to 130
 	<< b!4.\fp\>~ {s8 s s\!}>>
 	b8 r r
-	R4.*15
+	R4.*12
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
-% Bars 141 to 145
 	
-	\section \mark \default
-	R4.*3
+	
+	
+	\ni \mmrPos #-4 R4.
+% Bars 141 to 145
+	\mmrPos #-4 R \no
+	R4. \section \mark \default
+	R4.*2
+	
+	\ni \mmrPos #-4 R4. \no
 % Bars 146 to 150
 	a4\pp r8
 	R4.*4
@@ -182,12 +192,12 @@ musicCornoIIIMvtII = \relative c {
 % Bars 191 to 195
 	
 	
-	R4.*2
-	
-	R4.
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #-4 R
 % Bars 196 to 200
-	R4.*2
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	b4.\f
 	b\fp
 	R

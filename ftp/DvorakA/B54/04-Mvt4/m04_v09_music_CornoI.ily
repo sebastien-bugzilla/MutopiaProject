@@ -178,18 +178,30 @@ musicCornoIMvtIV = \relative c {
 	ees-^ r r2
 	cis'8-. d-. d-. ees-. ees-. d-. d-. c-. \mark \default
 	d4 r r2
-	R1*12
+	R1*3
 % Bars 146 to 150
 	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 151 to 155
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	R1
 % Bars 156 to 160
 	r8. b16[(\mp c8.) d16]-. b4( c)
-	R1*10
+	R1*8
 % Bars 161 to 165
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 166 to 170
-	\mark \default
+	\mmrPos #-4 R \no \mark \default
 	R1*4
 % Bars 171 to 175
 	r4 ees2.\p~
