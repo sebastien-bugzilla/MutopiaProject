@@ -108,13 +108,13 @@ musicTrombeIMvtIV = \relative c {
 % Bars 121 to 125
 	
 	\section
-	R1*11
+	R1*8
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g,8\f\< c16 ees g4~ g8 ees-. c-. ees-.\!
 	fis2-^\ff r
 % Bars 136 to 140
@@ -161,9 +161,9 @@ musicTrombeIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 191 to 195
-	R1*3
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	a,8-.\f d16-. f-. a4~ a8 f-. d-. f-.
 	aes2\ff r
 % Bars 196 to 200
@@ -180,11 +180,11 @@ musicTrombeIMvtIV = \relative c {
 	r4 e->-\fbrackz r2
 % Bars 206 to 210
 	r4 e->-\fbrackz r2
-	R1*7
+	R1*6
 % Bars 211 to 215
 	
 	
-	
+	\ni \mmrPos #-4 R1 \no
 	b'8-.\f r r4 r g8-. r
 	r2 r4 g8-. r
 % Bars 216 to 220
@@ -192,7 +192,7 @@ musicTrombeIMvtIV = \relative c {
 	r4 g-.\ff g-. aes-.
 	aes8 r r4 a-. b!-.
 	b8-. r r4 r2
-	R1*26
+	R1*16
 % Bars 221 to 225
 	
 % Bars 226 to 230
@@ -200,7 +200,8 @@ musicTrombeIMvtIV = \relative c {
 % Bars 231 to 235
 	
 % Bars 236 to 240
-	
+	\ni \mmrPos #-4 R1 \no
+	R1*9
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -274,9 +275,12 @@ musicTrombeIMvtIV = \relative c {
 % Bars 336 to 340
 	
 	\mark \default
-	R1*18
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 341 to 345
-	
+	\mmrPos #-4 R \no
+	R1*14
 % Bars 346 to 350
 	
 % Bars 351 to 355
@@ -289,11 +293,16 @@ musicTrombeIMvtIV = \relative c {
 	R1*2
 % Bars 361 to 365
 	\mark \default
-	R1*14
+	R1*6
 % Bars 366 to 370
 	
-% Bars 371 to 375
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 371 to 375
+	\mmrPos #-4 R \no
+	R1*4
 % Bars 376 to 380
 	c'1\ff~
 	c4 r f,2-\fbrackz~

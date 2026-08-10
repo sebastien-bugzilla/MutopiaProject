@@ -53,9 +53,9 @@
 			\new Voice {
 				\formatTrombeIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(trombeI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombeI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtI
 			}
@@ -64,7 +64,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -77,9 +77,9 @@
 			\new Voice {
 				\formatTrombeIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(trombeI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombeI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtII
 			}
@@ -101,9 +101,9 @@
 			\new Voice {
 				\formatTrombeIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(trombeI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombeI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtIII
 			}
@@ -125,9 +125,9 @@
 			\new Voice {
 				\formatTrombeIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(trombeI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombeI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtIV
 			}
@@ -149,9 +149,9 @@
 			\new Voice {
 				\formatTrombeIIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(trombeII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombeII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtI
 			}
@@ -160,7 +160,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -173,9 +173,9 @@
 			\new Voice {
 				\formatTrombeIIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(trombeII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombeII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtII
 			}
@@ -197,9 +197,9 @@
 			\new Voice {
 				\formatTrombeIIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(trombeII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombeII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtIII
 			}
@@ -221,9 +221,9 @@
 			\new Voice {
 				\formatTrombeIIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(trombeII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombeII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtIV
 			}
