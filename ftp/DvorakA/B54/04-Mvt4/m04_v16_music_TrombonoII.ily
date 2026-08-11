@@ -5,7 +5,7 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicTrombonoIIMvtIV = \relative c {
-	\clef alto
+	\clef tenor
 	\key f \major
 %	\transposition a
 % Bars 1 to 5
@@ -73,8 +73,8 @@ musicTrombonoIIMvtIV = \relative c {
 	
 % Bars 66 to 70
 	
-	R1*2
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	c8\ff r r4 r2
 	r2 r4 r8 g\f
 % Bars 71 to 75
@@ -121,14 +121,14 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 121 to 125
 	
 	\section
-	\key f \major R1*12
+	\key f \major R1*8
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	b2-^\ff r
 % Bars 136 to 140
 	r4 g-^ r g-^
@@ -172,10 +172,10 @@ musicTrombonoIIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 191 to 195
-	R1*4
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #6 R \no
 	cis2\ff r
 % Bars 196 to 200
 	r4 a-> r a->
@@ -253,8 +253,8 @@ musicTrombonoIIMvtIV = \relative c {
 	R1*3
 	
 	
-	R1*2
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 % Bars 271 to 275
 	c4-.\f r r2
 	r2 r4 r8 c-.\f \markk
@@ -266,7 +266,7 @@ musicTrombonoIIMvtIV = \relative c {
 	f2->\ff f->
 	f-> f->
 	a8 r r4 r2
-	R1*24
+	R1*20
 % Bars 281 to 285
 	
 % Bars 286 to 290
@@ -275,10 +275,14 @@ musicTrombonoIIMvtIV = \relative c {
 	
 % Bars 296 to 300
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 301 to 305
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	f2\pp r
 	ees r
 % Bars 306 to 310
@@ -303,9 +307,12 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 336 to 340
 	
 	\mark \default
-	R1*18
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 341 to 345
-	
+	\mmrPos #-4 R \no
+	R1*14
 % Bars 346 to 350
 	
 % Bars 351 to 355
@@ -319,21 +326,26 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 361 to 365
 	e( \mark \default
 	f4) r r2
-	R1*13
+	R1*5
 % Bars 366 to 370
 	
-% Bars 371 to 375
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 371 to 375
+	\mmrPos #-4 R \no
+	R1*4
 % Bars 376 to 380
 	gis1\ff~
 	gis4 r g2-\fbrackz~
 	g4 r g r
 	g r r2 \mark \default
-	a8\f r r4 r2
+	a8\f r \voiceTwo r4 r2 \oneVoice
 % Bars 381 to 385
-	R1*2
-	
-	r2 r4 d\f
+	\ni \mmrPos #-4 R1 
+	\mmrPos #-4 R \no
+	\voiceTwo r2 r4 \oneVoice d\f
 	cis-> d-> c-> d->
 	b->-\crescmarkup d-> bes-> des->
 % Bars 386 to 390

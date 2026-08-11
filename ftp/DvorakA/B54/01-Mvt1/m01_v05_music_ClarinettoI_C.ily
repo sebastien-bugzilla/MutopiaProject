@@ -316,9 +316,9 @@ musicClarinettoIMvtI = \relative c {
 	fis!2->\f~
 	fis8 r r4
 	fis4->\ff fis8.-> d16-.
-	fis4-> r
+	fis4-> r^\mutainb \transposition bes \changeStaffName \clinb
 % Bars 281 to 285
-	R2*4^\mutainb \transposition bes \changeStaffName \clinb
+	R2*4 
 	
 	
 	

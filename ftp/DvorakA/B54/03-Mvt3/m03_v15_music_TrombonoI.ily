@@ -40,30 +40,47 @@ musicTrombonoIMvtIII = \relative c {
 	
 	\mark \default
 % Bars 66 to 70
-	R4.*47
+	R4.*18
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
 % Bars 81 to 85
 	
-% Bars 86 to 90
 	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
+% Bars 86 to 90
+	R4.*7
 % Bars 91 to 95
 	
+	
+	\ni \mmrPos #4 R4. \no
+	R4.*5
 % Bars 96 to 100
 	
-% Bars 101 to 105
 	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+% Bars 101 to 105
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R4.*10
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
 	
-	ees'8\f r r
-	R4.*13
+	ees'8\f r \once \voiceTwo r
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 116 to 120
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R4.*8
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -99,15 +116,19 @@ musicTrombonoIMvtIII = \relative c {
 % Bars 161 to 165
 	
 	\mark \default
-	R4.*19
+	R4.*13
 % Bars 166 to 170
 	
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	
+	\ni \mmrPos #-6 R4.
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 181 to 185
-	
+	R4.
 	c8\ff r r
 	\startVoltaI d r r 
 	R4.*11
@@ -132,7 +153,7 @@ musicTrombonoIMvtIII = \relative c {
 		\mark \default
 	}
 	\repeat volta 2 {
-		R4.*28
+		R4.*24
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -142,9 +163,13 @@ musicTrombonoIMvtIII = \relative c {
 % Bars 231 to 235
 	
 % Bars 236 to 240
-	
-% Bars 241 to 245
 		
+		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+% Bars 241 to 245
+		\mmrPos #-4 R \no
 		r8. ees16-.\ff ees8-.
 		ees4.->
 		r8. ees16-. ees8-.
@@ -160,13 +185,17 @@ musicTrombonoIMvtIII = \relative c {
 		c8 r r
 		R4. \mark \default
 		c8\p r r
-		R4.*22
+		R4.*7
 % Bars 256 to 260
 	
 % Bars 261 to 265
-	
+		
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 % Bars 266 to 270
-	
+		R4.*11
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -193,11 +222,16 @@ musicTrombonoIMvtIII = \relative c {
 	aes!4)\p r8
 	aes4\pp\> aes8-.
 	aes-.\! r r
-	R4.*16
+	R4.*4
 % Bars 306 to 310
 	
-% Bars 311 to 315
 	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 311 to 315
+	\mmrPos #-4 R \no
+	R4.*8
 % Bars 316 to 320
 	
 	

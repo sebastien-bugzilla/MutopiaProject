@@ -5,14 +5,14 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicTrombonoIIMvtI = \relative c {
-	\clef alto
+	\clef tenor
 	\key f \major
 %	\transposition a
 % Bars 1 to 5
 	R2*2
 	
 	\repeat volta 2 {
-		R2*40
+		R2*39
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -29,8 +29,8 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 41 to 45
 		
-		
-		r4 \tuplet 3/2 4 {f8-.\f\< g-. a-.
+		\ni \mmrPos #4 R2 \no
+		\once \voiceOne r4 \tuplet 3/2 4 {f8-.\f\< g-. a-.
 		bes-.[ a-. bes-.]} c-. r\! \mark \default
 		R2
 % Bars 46 to 50
@@ -43,7 +43,7 @@ musicTrombonoIIMvtI = \relative c {
 		a gis e fis16 gis
 		a8-. b-. c-. bes-.
 		a r r4
-		R2*28
+		R2*19
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -51,9 +51,14 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 66 to 70
 	
 % Bars 71 to 75
-	
+		
+		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 76 to 80
-	
+		\mmrPos #-4 R \no
+		R2*5
 % Bars 81 to 85
 		
 		r4 f8->\f r
@@ -73,7 +78,7 @@ musicTrombonoIIMvtI = \relative c {
 		
 		\mark \default
 % Bars 96 to 100
-		R2*43
+		R2*41
 % Bars 101 to 105
 	
 % Bars 106 to 110
@@ -90,8 +95,8 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 136 to 140
 		
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R \no
 		g2\ff~
 		g
 % Bars 141 to 145
@@ -112,11 +117,15 @@ musicTrombonoIIMvtI = \relative c {
 		cis2\ff~
 % Bars 156 to 160
 		cis
-		R2*10
+		R2*8
 % Bars 161 to 165
-	
-% Bars 166 to 170
 		
+		
+		
+		
+		\ni \mmrPos #4 R2
+% Bars 166 to 170
+		\mmrPos #4 R \no
 		b2\ff~
 		b4 r
 		R2*2
@@ -129,18 +138,22 @@ musicTrombonoIIMvtI = \relative c {
 		fis2\p\>~
 % Bars 176 to 180
 		fis4\! r
-		R2*16
+		R2*12
 % Bars 181 to 185
 	
 % Bars 186 to 190
-	
+		
+		
+		
+		\ni \mmrPos #6 R2
+		\mmrPos #6 R
 % Bars 191 to 195
-		
-		
+		\mmrPos #6 R
+		\mmrPos #6 R
 		\alternative {
 			\volta 1 {
-				R2*2
-				
+				\mmrPos #-4 R
+				\mmrPos #-4 R \no
 			}
 			\volta 2 {
 				ees2\pp~
@@ -168,13 +181,17 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 211 to 215
 	fis~
 	fis
-	R2*14
+	R2*10
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
+	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 226 to 230
-	\mark \default
+	\mmrPos #4 R \no \mark \default
 	g2-.\pp
 	fis-.
 	fis~
@@ -184,10 +201,10 @@ musicTrombonoIIMvtI = \relative c {
 	R2*5
 % Bars 236 to 240
 	
-	R2*4
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 241 to 245
 	c'2->\ff~
 	c8 r r4
@@ -198,14 +215,18 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 256 to 260
 	\mark \default
-	R2*16
+	R2*12
 % Bars 261 to 265
 	
 % Bars 266 to 270
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 271 to 275
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ees4->\ff ees8.-> bes16-.
 	ees4-> r
 	gis,2\fz~
@@ -228,14 +249,18 @@ musicTrombonoIIMvtI = \relative c {
 	d8 r r4
 	R2 \mark \default
 % Bars 291 to 295
-	R2*12
+	R2*7
 % Bars 296 to 300
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 301 to 305
-	
-	
-	R2*2
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 bes4->\ff bes8~
 % Bars 306 to 310
 	bes bes4 bes8
@@ -258,7 +283,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 	
 	\mark \default
-	R2*42
+	R2*38
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -275,8 +300,12 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 366 to 370
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\mmrPos #-4 r4 \voiceOne r
 % Bars 371 to 375
-	r4 \tuplet 3/2 4 {f8-._\fcresc g-. a-.
+	r4 \oneVoice \tuplet 3/2 4 {f8-._\fcresc g-. a-.
 	bes-.[ a-. bes-.] } c-. r \mark \default
 	f,->\ff a-. c-> cis-.
 	d-> des-. c-> bes-.
@@ -322,9 +351,10 @@ musicTrombonoIIMvtI = \relative c {
 	
 	
 	\markk
-	R2*8
+	\ni \mmrPos #4 R2
 % Bars 456 to 460
-	
+	\mmrPos #4 R \no
+	R2*6
 % Bars 461 to 465
 	
 	
@@ -348,13 +378,17 @@ musicTrombonoIIMvtI = \relative c {
 	a8 c4 g8
 % Bars 481 to 485
 	f8\p r r4
-	R2*15
+	R2*11
 % Bars 486 to 490
 	
 % Bars 491 to 495
 	
-% Bars 496 to 500
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+% Bars 496 to 500
+	\mmrPos #4 R \no
 	c2\pp~
 	c4. r8
 	R2*6

@@ -9,7 +9,7 @@ musicTrombonoIIMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R4.*57
+	R4.*54
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -30,9 +30,13 @@ musicTrombonoIIMvtII = \relative c {
 	
 % Bars 51 to 55
 	
-% Bars 56 to 60
 	
-	\section \mark \default
+	
+	
+	\ni \mmrPos #-4 R4.
+% Bars 56 to 60
+	\mmrPos #-4 R \no
+	R4. \section \mark \default
 	\key a \major R4.*30
 % Bars 61 to 65
 	
@@ -49,7 +53,7 @@ musicTrombonoIIMvtII = \relative c {
 	\section
 	\key a \minor R4.*2
 	\mark \default
-	R4.*33
+	R4.*26
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -61,10 +65,14 @@ musicTrombonoIIMvtII = \relative c {
 % Bars 111 to 115
 	
 % Bars 116 to 120
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 121 to 125
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8^\secco c'-.\ff c-.
 	c-. c-. c-.
 	b!-. c-. a-. \mark \default
@@ -96,11 +104,11 @@ musicTrombonoIIMvtII = \relative c {
 	
 	
 	\mark \default
-	R4.*4
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 166 to 170
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g4.->\f
 	a->
 	b->
@@ -111,16 +119,20 @@ musicTrombonoIIMvtII = \relative c {
 	a-.\pp a-. gis-.
 	a r r
 % Bars 176 to 180
-	R4.*22
+	R4.*18
 % Bars 181 to 185
 	
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 196 to 200
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	fis16\f r r8 gis16 r
 	a r r8 r
 	R4.

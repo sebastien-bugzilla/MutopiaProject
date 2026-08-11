@@ -57,9 +57,9 @@
 			\new Voice {
 				\formatTrombonoIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIMvtI
 			}
@@ -68,7 +68,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -81,9 +81,9 @@
 			\new Voice {
 				\formatTrombonoIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIMvtII
 			}
@@ -105,9 +105,9 @@
 			\new Voice {
 				\formatTrombonoIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIMvtIII
 			}
@@ -129,9 +129,9 @@
 			\new Voice {
 				\formatTrombonoIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIMvtIV
 			}
@@ -153,9 +153,9 @@
 			\new Voice {
 				\formatTrombonoIIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIMvtI
 			}
@@ -164,7 +164,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -177,9 +177,9 @@
 			\new Voice {
 				\formatTrombonoIIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIMvtII
 			}
@@ -201,9 +201,9 @@
 			\new Voice {
 				\formatTrombonoIIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIMvtIII
 			}
@@ -225,9 +225,9 @@
 			\new Voice {
 				\formatTrombonoIIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIMvtIV
 			}
@@ -249,9 +249,9 @@
 			\new Voice {
 				\formatTrombonoIIIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoIII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoIII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIIMvtI
 			}
@@ -260,7 +260,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -273,9 +273,9 @@
 			\new Voice {
 				\formatTrombonoIIIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoIII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoIII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIIMvtII
 			}
@@ -297,9 +297,9 @@
 			\new Voice {
 				\formatTrombonoIIIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoIII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoIII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIIMvtIII
 			}
@@ -321,9 +321,9 @@
 			\new Voice {
 				\formatTrombonoIIIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(trombonoIII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(trombonoIII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIIMvtIV
 			}
