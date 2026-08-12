@@ -3944,16 +3944,20 @@ cueVoiceViolaMvtIV = \relative c {
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #
 %###############################################################################
 cueVoiceVioloncelloMvtI = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceVioloncelloMvtII = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceVioloncelloMvtIII = \relative c {
-	
+	s4.*76
+	% bar 77
+	<>^\markup {Ob.Cor.I.}
 }
 cueVoiceVioloncelloMvtIV = \relative c {
-	
+	s1*5 s2*1 s1*116
+	% bar 123
+	<>^\markup {\column {\lower #1.5 "Legni" "Cor."}}
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   C O N T R A B A S S O              #
