@@ -9,7 +9,7 @@ musicTimpaniMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R4.*28
+	R4.*24
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -18,20 +18,28 @@ musicTimpaniMvtII = \relative c {
 	
 % Bars 21 to 25
 	
+	
+	
+	
+	\ni \mmrPos #-4 R4.
 % Bars 26 to 30
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 e\pp e
 	a, r r
 % Bars 31 to 35
-	R4.*16
+	R4.*14
 % Bars 36 to 40
 	
 % Bars 41 to 45
 	
-% Bars 46 to 50
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+% Bars 46 to 50
+	\mmrPos #-4 R \no
 	a16\pp^\solo e' a, r r8
 	a16 e' a, r r8
 	a16\ppp e' a, r r8
@@ -45,13 +53,17 @@ musicTimpaniMvtII = \relative c {
 % Bars 56 to 60
 	a,8\pp r a
 	r a-. r \section \mark \default
-	R4.*18
+	R4.*16
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
+	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 % Bars 76 to 80
 	<< e'4.:32\pp\< {s8 s s\!}>>
 	<< e4.:32\> {s8 s s\!}>>
@@ -67,7 +79,7 @@ musicTimpaniMvtII = \relative c {
 	\section
 	R4.*2
 	\mark \default
-	R4.*29
+	R4.*26
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -79,9 +91,9 @@ musicTimpaniMvtII = \relative c {
 % Bars 111 to 115
 	
 % Bars 116 to 120
-	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	<< a,4.\p\startTrillSpan {s8 s4-\crescmarkup}>>
 	a4.\startTrillSpan
 % Bars 121 to 125
@@ -108,15 +120,15 @@ musicTimpaniMvtII = \relative c {
 % Bars 141 to 145
 	
 	\section \mark \default
-	R4.*16
+	R4.*13
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
 % Bars 156 to 160
-	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r16 a,\p a r r8
 	r16 a a r r8
 % Bars 161 to 165

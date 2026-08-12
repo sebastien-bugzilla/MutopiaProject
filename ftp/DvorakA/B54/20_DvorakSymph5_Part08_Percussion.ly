@@ -50,9 +50,9 @@
 			\new Voice {
 				\formatTimpaniMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(timpani) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(timpani) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtI
 			}
@@ -61,7 +61,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -74,9 +74,9 @@
 			\new Voice {
 				\formatTimpaniMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(timpani) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(timpani) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtII
 			}
@@ -98,9 +98,9 @@
 			\new Voice {
 				\formatTimpaniMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(timpani) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(timpani) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtIII
 			}
@@ -122,9 +122,9 @@
 			\new Voice {
 				\formatTimpaniMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(timpani) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(timpani) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtIV
 			}
@@ -146,18 +146,18 @@
 			\new Voice {
 				\formatTriangoloMvtIII
 			}
+%			\new Voice {
+%				\keepWithTag #'(triangolo) \tempiPartMvtI
+%			}
 			\new Voice {
-				\keepWithTag #'(triangolo) \tempiPartMvtI
-			}
-			\new Voice {
-				\InCueContext \cueVoiceTriangoloMvtI
+				\InCueContext \cueVoiceTriangoloMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \nameTriangoloMvtIII \musicTriangoloMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}

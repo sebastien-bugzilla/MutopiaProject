@@ -56,10 +56,10 @@ musicTriangoloMvtIII = \relative c {
 	
 	\mark \default
 % Bars 66 to 70
-	R4.*4
-	
-	
-	
+	\ni \mmrPos #-10 R4.
+	\mmrPos #-8 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 	e4\pp r8
 % Bars 71 to 75
 	r e e
@@ -69,7 +69,8 @@ musicTriangoloMvtIII = \relative c {
 	r e e
 % Bars 76 to 80
 	e4 r8
-	R4.*50
+	\ni \mmrPos #-4 R4. \no
+	R4.*21
 % Bars 81 to 85
 	
 % Bars 86 to 90
@@ -78,14 +79,27 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 96 to 100
 	
-% Bars 101 to 105
 	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+% Bars 101 to 105
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R4.*10
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
-% Bars 116 to 120
 	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 116 to 120
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R4.*8
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -123,25 +137,29 @@ musicTriangoloMvtIII = \relative c {
 % Bars 161 to 165
 	
 	\mark \default
-	R4.*20
+	R4.*13
 % Bars 166 to 170
 	
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 181 to 185
+	R4.*2
 	
-	
-	\startVoltaI R4.*12
+	\startVoltaI R4.*8
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	
-	
-	
-	\section
-	\startVoltaII R4. \endVolta \section
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \section
+	\startVoltaII \mmrPos #-4 R4. \no \endVolta \section
 % Bars 196 to 200
 	\repeat volta 2 {
 		\time 3/8 \sectionLabel "TRIO" R4.*18
@@ -186,7 +204,7 @@ musicTriangoloMvtIII = \relative c {
 % Bars 276 to 280
 		\mark \default
 	}
-	R4.*48
+	R4.*31
 % Bars 281 to 285
 	
 % Bars 286 to 290
@@ -199,13 +217,25 @@ musicTriangoloMvtIII = \relative c {
 	
 % Bars 306 to 310
 	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 311 to 315
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 316 to 320
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 321 to 324
+	\mmrPos #4 R \no
+	R4.*3
 	
-	
-	
-	\section s8
+	\section
 }

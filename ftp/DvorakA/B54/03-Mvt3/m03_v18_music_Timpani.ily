@@ -44,7 +44,7 @@ musicTimpaniMvtIII = \relative c {
 	
 	\mark \default
 % Bars 66 to 70
-	R4.*44
+	R4.*40
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -60,10 +60,10 @@ musicTimpaniMvtIII = \relative c {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	
-	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f4.:32-\pcresc
 % Bars 111 to 115
 	f:
@@ -120,15 +120,19 @@ musicTimpaniMvtIII = \relative c {
 % Bars 161 to 165
 	
 	\mark \default
-	R4.*19
+	R4.*13
 % Bars 166 to 170
 	
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	
+	\ni \mmrPos #-6 R4.
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 181 to 185
-	
+	R4.
 	f8\ff r r
 	\startVoltaI bes r r
 	R4.*11^\mutainasdes
@@ -196,16 +200,20 @@ musicTimpaniMvtIII = \relative c {
 		aes r r
 		r r aes \mark \default
 		aes\p r r
-		R4.*20
+		R4.*11
 % Bars 256 to 260
 	
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	
+		\ni \mmrPos #-4 R4.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 271 to 275
-		
-		
+		\mmrPos #-4 R \no
+		R4.*3
 		
 		
 		r8. aes16-.\pp aes8-.
@@ -232,16 +240,16 @@ musicTimpaniMvtIII = \relative c {
 	r8. des16-. des8-.
 % Bars 311 to 315
 	des4 r8
-	R4.*8^\mutainbf
+	R4.*4^\mutainbf
 % Bars 316 to 320
-	
-	
-	
-	
+	\ni \mmrPos #4 R4.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	r8. f,16-.\ff f8-.
 % Bars 321 to 324
 	f8 r r
 	R4.*3
 	
-	\section s8
+	\section
 }

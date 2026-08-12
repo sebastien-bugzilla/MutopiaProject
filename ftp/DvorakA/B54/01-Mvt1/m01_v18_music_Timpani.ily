@@ -68,7 +68,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 56 to 60
 		r4 r8. \tuplet 3/2 16 {c32\f\< c c\!}
 		f8 r r4
-		R2*30^\mutainea \changeStaffName \timpinea
+		R2*24^\mutainea
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -78,10 +78,14 @@ musicTimpaniMvtI = \relative c {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	
+		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 86 to 90
-		
-		
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		r8 e\f r e
 		r e r e
 		r e e e
@@ -92,11 +96,19 @@ musicTimpaniMvtI = \relative c {
 		
 		\mark \default
 % Bars 96 to 100
-		R2*15
+		R2*8
 % Bars 101 to 105
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
 % Bars 106 to 110
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 % Bars 111 to 115
 		<< a2:32\pp\< {s8 s s s\!}>>
 		<< a2:\> {s8 s s s\!}>>
@@ -104,7 +116,7 @@ musicTimpaniMvtI = \relative c {
 		a:\>
 		a4\p r
 % Bars 116 to 120
-		R2*23^\mutainfc \changeStaffName \timpinfc
+		R2*21^\mutainfc
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -113,8 +125,8 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 136 to 140
 		
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R \no
 		c2:32\ff
 		c:
 % Bars 141 to 145
@@ -125,7 +137,7 @@ musicTimpaniMvtI = \relative c {
 		c2:\ff
 % Bars 146 to 150
 		c:
-		R2*38
+		R2*24
 % Bars 151 to 155
 	
 % Bars 156 to 160
@@ -135,9 +147,14 @@ musicTimpaniMvtI = \relative c {
 % Bars 166 to 170
 	
 % Bars 171 to 175
-	
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 176 to 180
-	
+		\mmrPos #-4 R \no
+		R2*8
 % Bars 181 to 185
 		
 		
@@ -180,15 +197,15 @@ musicTimpaniMvtI = \relative c {
 % Bars 211 to 215
 	c:
 	c:
-	R2*14^\cmutainh \changeStaffName \timpinfh
+	R2*14^\cmutainh
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
 % Bars 226 to 230
 	\mark \default
-	R2*2
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	b2:32\pp
 	b:
 % Bars 231 to 235
@@ -205,22 +222,27 @@ musicTimpaniMvtI = \relative c {
 	b:
 % Bars 241 to 245
 	b8 r r4
-	R2*15^\hmutainb \changeStaffName \timpinfb
+	R2*15^\hmutainb 
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	\mark \default
-	R2*28
+	R2*16
 % Bars 261 to 265
 	
 % Bars 266 to 270
 	
 % Bars 271 to 275
 	
-% Bars 276 to 280
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 276 to 280
+	\mmrPos #-4 R \no
+	R2*8
 % Bars 281 to 285
 	
 	
@@ -234,14 +256,14 @@ musicTimpaniMvtI = \relative c {
 	f8 r r4
 	R2 \mark \default
 % Bars 291 to 295
-	R2*14
+	R2*12
 % Bars 296 to 300
 	
 % Bars 301 to 305
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r8 bes,4.:\f
 % Bars 306 to 310
 	bes2:
@@ -262,7 +284,7 @@ musicTimpaniMvtI = \relative c {
 	bes:\!
 	bes4:\> bes8\! r
 % Bars 321 to 325
-	R2*8^\bmutainc \changeStaffName \timpinfc
+	R2*8^\bmutainc 
 % Bars 326 to 330
 	
 	
@@ -330,8 +352,8 @@ musicTimpaniMvtI = \relative c {
 	f-. r r4
 	r r8 c
 % Bars 381 to 385
-	f r^\fmutaine r4 \changeStaffName \timpinec
-	R2*24
+	f r^\fmutaine r4
+	R2*21
 % Bars 386 to 390
 	
 % Bars 391 to 395
@@ -340,17 +362,21 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 401 to 405
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 406 to 410
 	r8 e4\f e8
 	e r r4
 	r8 e4 e8
-	e r^\emutainf r4 \changeStaffName \timpinfc
+	e r^\emutainf r4 
 	R2*7
 % Bars 411 to 415
 	
 % Bars 416 to 420
 	\mark \default
-	R2*38
+	R2*32
 % Bars 421 to 425
 	
 % Bars 426 to 430
@@ -363,11 +389,15 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 446 to 450
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 451 to 455
-	
-	
-	
-	\markk
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \markk
 	c2:32\p
 % Bars 456 to 460
 	c:

@@ -115,12 +115,12 @@ musicTimpaniMvtIV = \relative c {
 % Bars 126 to 130
 	des
 	des4\stopTrillSpan r^\mutaincg r2
-	R1*7
+	R1*6
 % Bars 131 to 135
 	
 	
 	
-	
+	\ni \mmrPos #4 R1 \no
 	g,2:32\ff r4 g
 % Bars 136 to 140
 	r g r g
