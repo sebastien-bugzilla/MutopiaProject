@@ -3922,16 +3922,23 @@ cueVoiceViolinoIIMvtIV = \relative c {
 %#                    C U E   V O I C E   F O R   V I O L A                    #
 %###############################################################################
 cueVoiceViolaMvtI = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceViolaMvtII = \relative c {
-	
+	% no Cue Voice
 }
 cueVoiceViolaMvtIII = \relative c {
-	
+	s4.*7
+	% bars 8 - 11
+	\voiceOne \clef bass f4(^\p^\markup {Vlc.} a8~
+	a c4
+	ees4.~
+	ees) \oneVoice \clef alto
 }
 cueVoiceViolaMvtIV = \relative c {
-	
+	s1*5 s2*1 s1*84
+	% bar 91
+	<>^\markup {Fl.}
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #

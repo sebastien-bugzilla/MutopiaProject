@@ -49,9 +49,9 @@
 			\new Voice {
 				\formatViolaMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(viola) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(viola) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtI
 			}
@@ -60,7 +60,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -73,9 +73,9 @@
 			\new Voice {
 				\formatViolaMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(viola) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(viola) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtII
 			}
@@ -97,9 +97,9 @@
 			\new Voice {
 				\formatViolaMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(viola) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(viola) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtIII
 			}
@@ -121,9 +121,9 @@
 			\new Voice {
 				\formatViolaMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(viola) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(viola) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtIV
 			}

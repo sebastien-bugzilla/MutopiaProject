@@ -9,11 +9,15 @@ musicViolaMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*11
+	R4.*7
 % Bars 6 to 10
 	
-% Bars 11 to 15
 	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 11 to 15
+	\mmrPos #-4 R \no
 	a''8\pp(~ a aes~[
 	aes]) g(~ g
 	ges~ ges) ges([~
