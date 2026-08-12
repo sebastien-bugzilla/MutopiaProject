@@ -49,9 +49,9 @@
 			\new Voice {
 				\formatViolinoIIMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(violinoII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(violinoII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtI
 			}
@@ -60,7 +60,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -73,9 +73,9 @@
 			\new Voice {
 				\formatViolinoIIMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(violinoII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(violinoII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtII
 			}
@@ -97,9 +97,9 @@
 			\new Voice {
 				\formatViolinoIIMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(violinoII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(violinoII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtIII
 			}
@@ -121,9 +121,9 @@
 			\new Voice {
 				\formatViolinoIIMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(violinoII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(violinoII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtIV
 			}

@@ -191,12 +191,12 @@ musicViolinoIIMvtI = \relative c {
 		<a' e'>2:32\ff
 % Bars 156 to 160
 		q:
-		R2*8
+		R2*4
 % Bars 161 to 165
-		
-		
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		\unSubdiviseBeam cis,8(_\pcrescmolto e g! ais
 % Bars 166 to 170
 		cis e g ais)
@@ -420,14 +420,18 @@ musicViolinoIIMvtI = \relative c {
 	c4.. f16)
 	f2~
 	f8 r r4
-	R2*13
+	R2*8
 % Bars 346 to 350
 	
 % Bars 351 to 355
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 356 to 360
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g,,4.\fz e8
 	bes'4-> bes8. f16
 	bes4.-> f8
@@ -465,12 +469,16 @@ musicViolinoIIMvtI = \relative c {
 	d f e d ees f g ees)
 	d( fis a fis g bes g d
 	cis e a g f a f d)
-	R2*8
+	R2*4
 	
 % Bars 391 to 395
 	
-% Bars 396 to 400
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+% Bars 396 to 400
+	\mmrPos #4 R \no
 	c16(\p d e f g f e d'
 	c_\crescmarkup e g f d c a f)
 	c( d e f g f e d'
@@ -492,9 +500,13 @@ musicViolinoIIMvtI = \relative c {
 	R2*5
 % Bars 416 to 420
 	\mark \default
-	R2*9
+	R2*4
 % Bars 421 to 425
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 426 to 430
 	bes,2\fz
 	R
@@ -583,11 +595,11 @@ musicViolinoIIMvtI = \relative c {
 	e
 	f~
 	f4. r8
-	R2*4
+	R2*2
 	
 % Bars 501 to 505
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	a,8-.\pp r r4
 	a a
 	a2\fermata \fine

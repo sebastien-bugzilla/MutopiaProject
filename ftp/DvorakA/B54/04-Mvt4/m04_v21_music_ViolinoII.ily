@@ -355,13 +355,17 @@ musicViolinoIIMvtIV = \relative c {
 		a(-\dimmarkup bes! fis g!)
 		dis(\p e d e)
 	}>>
-	R1*9
+	R1*7
 	
 	
 % Bars 286 to 290
 	
-% Bars 291 to 295
 	
+	
+	
+	\ni \mmrPos #-4 R1
+% Bars 291 to 295
+	\mmrPos #-4 R \no
 	r4 <a, f'>\pp^\pizz r q
 	r <bes d> r <b d>\<
 	r <c e!> r q\!

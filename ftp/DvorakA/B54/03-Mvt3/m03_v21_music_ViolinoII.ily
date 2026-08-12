@@ -9,11 +9,15 @@ musicViolinoIIMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*11
+	R4.*7
 % Bars 6 to 10
 	
-% Bars 11 to 15
 	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 11 to 15
+	\mmrPos #-4 R \no
 	c''8(~[\pp c] c[~
 	c]) c(~[ c]
 	c~ c) c[(~
@@ -85,8 +89,8 @@ musicViolinoIIMvtIII = \relative c {
 	f a f a f a)
 % Bars 76 to 80
 	e(\mf a e a e a)
-	R4.*2
-	
+	\ni \mmrPos #-4 R4. \no
+	R4.
 	e16(\pp a e a e a
 	f a f a f a)
 % Bars 81 to 85
