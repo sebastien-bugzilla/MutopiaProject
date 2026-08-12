@@ -343,12 +343,16 @@ musicViolinoIMvtI = \relative c {
 	q8\fz r r4
 	R2 \mark \default
 % Bars 291 to 295
-	R2*12
+	R2*7
 % Bars 296 to 300
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 301 to 305
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	ees4->\ff g16-. f-. ees8-.
 	f4-> aes16-. g-. f8-.
 	g-. bes4(\fz aes8
@@ -444,13 +448,17 @@ musicViolinoIMvtI = \relative c {
 	d16 c( b c a8) <bes,! g'>-^
 % Bars 381 to 385
 	<a f'>\f r r4
-	R2*15
+	R2*11
 % Bars 386 to 390
 	
 % Bars 391 to 395
 	
-% Bars 396 to 400
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R
+% Bars 396 to 400
+	\mmrPos #4 R \no
 	r8 c4(\p\< c'8~\!
 	c)_\crescmarkup c4(\> a8)\!
 	r c,4(\< c'8\!~

@@ -3785,15 +3785,67 @@ cueVoiceTriangoloMvtIII = \relative c {
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #
 %###############################################################################
 cueVoiceViolinoIMvtI = \relative c {
-	
+	s2*297
+	% bars 298 - 302
+	\voiceOne bes''4^\f^\markup {Cl.} <f' aes>(~
+	q <ees g>~
+	q) <c f>8.( <aes c>16)
+	<< {
+		\voiceOne ees'2(
+		d)
+	}
+	\new Voice {
+		\voiceTwo \InCueContext g,2~
+		g8 bes4.
+	}>>
+	s2*90
+	% bars 393 - 396
+	\voiceTwo \clef bass f,,4(^\markup {Vc.Cb.} a16 g f8)
+	g4( bes16 a g8)
+	a( c4->) bes8~
+	bes a4( f8) \oneVoice \clef treble
 }
 cueVoiceViolinoIMvtII = \relative c {
-	
+	s4.*6
+	% bars 7 - 9
+	\voiceOne \clef bass f8(^\fz^\markup {Vlc.} f' e)
+	dis4( e16 d)
+	d8( c) b16( a) \oneVoice \clef treble
+	s4.*48
+	% bars 58 - 59
+	\voiceOne e''4.^\fp^\markup {Ob.}
+	cis4~ cis16. a32-. \oneVoice
 }
 cueVoiceViolinoIMvtIII = \relative c {
-	
+	s4.*7
+	% bars 8 - 11
+	\voiceOne \clef bass f4(^\p^\markup {Vlc.} a8~
+	a c4
+	ees4.~
+	ees) \oneVoice \clef treble
+	s4.*65
+	% bar 77
+	\voiceOne a'8->^\mf^\markup {Ob.} e-. a-. \oneVoice
+	s4.*15
+	% bar 93
+	<>^\markup {Fg.Vla.}
+	s4.*58
+	% bar 151
+	<>^\markup {Cl.Fg.Cor.}
+	s4.*8
+	% bar 159
+	<>^\markup {Cl.Vlc.}
 }
 cueVoiceViolinoIMvtIV = \relative c {
+	s1*5 s2*1 s1*84
+	% bar 91
+	<>^\markup {Fl.}
+	s1*201
+	% bar 292
+	<>^\markup {Ob.}
+	s1*8
+	% bar 300
+	<>^\markup {Fl.}
 	
 }
 %###############################################################################

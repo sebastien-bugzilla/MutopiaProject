@@ -9,12 +9,12 @@ musicViolinoIMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R4.*9
+	R4.*6
 % Bars 6 to 10
 	
-	
-	
-	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 r16 e''(_\ppdolente c b)
 % Bars 11 to 15
 	a8.( b32 c b16 a)
@@ -73,8 +73,8 @@ musicViolinoIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section \mark \default
-	\key a \major R4.*2
-	
+	\key a \major \ni \mmrPos #-4 R4.
+	\mmrPos #-4 R \no
 	r8 cis,16\<[\p^\pizz r eis] r\!
 % Bars 61 to 65
 	a[\> r eis r\! cis] r
