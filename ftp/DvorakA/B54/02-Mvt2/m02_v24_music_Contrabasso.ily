@@ -22,14 +22,14 @@ musicContrabassoMvtII = \relative c {
 	d-.-\pdim e-. e,-.
 % Bars 11 to 15
 	a\pp r r
-	R4.*13
+	R4.*9
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	
-	
-	
-	
+	\ni \mmrPos #6 R4.
+	\mmrPos #6 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	e'4\f e8
 % Bars 26 to 30
 	e( f16) r a,-. r

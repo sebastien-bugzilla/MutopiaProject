@@ -3963,14 +3963,106 @@ cueVoiceVioloncelloMvtIV = \relative c {
 %#              C U E   V O I C E   F O R   C O N T R A B A S S O              #
 %###############################################################################
 cueVoiceContrabassoMvtI = \relative c {
-	
+	s2*20
+	% bars 21 - 24
+	\voiceOne f'4^\markup {Vlc.} r
+	r r8 f
+	a4 r 
+	g r8 g, \oneVoice
+	s2*138
+	% bars 163 - 165
+	\voiceOne <g e'>8^\markup {Vlc.} r g,!(^\p^\arco ais
+	cis^\< e g! ais
+	cis\! e) r4 \oneVoice
+	s2*61
+	% bar 227 - 228
+	\voiceOne \clef treble \ottava #1 g''2(^\markup {Viol.I.}
+	a4.. b16) \ottava #0 \clef bass \oneVoice
+	s2*160
+	% bars 389 - 392
+	\voiceOne d,,,4->(^\mf^\markup {Fg.} f16 e d8)
+	e4(-> g16 f e8)
+	d-. g4(-> f8~
+	f e4 c8) \oneVoice
+	s2*24
+	% bar 417
+	<>^\markup {Viol.I.}
+	s2*4
+	% bars 421 - 424
+	\voiceTwo \clef treble a8(^\markup {Viol.I.} f'~ f4)
+	d8( f e d)
+	c4 d(~
+	d8 e) \clef bass s4 \oneVoice
 }
 cueVoiceContrabassoMvtII = \relative c {
-	
+	s4.*20
+	% bars 21 - 24
+	\voiceTwo fis,8(^\markup {Vlc.} fis') fis-.
+	g,( g') f!-.
+	e( e,) f 
+	e'( e,) f \oneVoice
 }
 cueVoiceContrabassoMvtIII = \relative c {
-	
+	s4.*16
+	% bar 17
+	<>^\markup {Fl.Cl.}
+	s4.*10
+	% bar 27
+	<>^\markup {Archi}
+	s4.*6
+	% bar 33
+	<>^\markup {Fl.}
+	s4.*33
+	% bar 66
+	<>^\markup {Viol.}
+	s4.*4
+	% bar 70
+	<>^\markup {Legni.Cor.}
+	s4.*9
+	% bar 79
+	<>^\markup {Archi}
+	s4.*5
+	% bar 84
+	<>^\markup {Legni}
+	s4.*6
+	% bar 90
+	\voiceOne b'8^\p^\pizz^\markup {Vlc.} fis b \oneVoice
+	s4.*1
+	% bar 92
+	\voiceOne b,8^\pp fis b \oneVoice
+	s4.*1
+	% bar 94
+	<>^\markup {Fg.}
+	s4.*5
+	% bars 99 - 101
+	\voiceOne r8^\markup {Vlc.} e'^\pizz e,
+	e' e, r
+	r e' e, \oneVoice
+	s4.*50
+	% bar 152
+	<>^\markup {Cl.Fg.}
+	s4.*17
+	% bar 169
+	<>^\markup {Viol.I.}
+	s4.*7
+	% bar 176
+	<>^\markup {Viola}
 }
 cueVoiceContrabassoMvtIV = \relative c {
-	
+	s1*5 s2*1 s1*28
+	% bars 35 - 38
+	\voiceOne r4 bes-.^\p^\markup {Vlc.} fis-. g-.
+	a-. bes-. d-. e-.
+	fis-. bes-. g-. a-.
+	bes-. d-. e-. fis-. \oneVoice
+	s1*261
+	% bars 300 - 303
+	\voiceOne a,,4^\markup {Vlc.} r r a'8^\> a\!
+	d,4 r r d8 d
+	ees4 r r ees8^\< ees\!
+	f4 r f, r \oneVoice
+	s1*54
+	% bars 358 - 359
+	\voiceOne r2 r4 \clef alto f''8(^\pp^\markup {Vle} d
+	c d f d c a g f) \clef bass \oneVoice
 }

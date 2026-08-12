@@ -28,16 +28,16 @@ musicContrabassoMvtI = \relative c {
 		R2
 		f'8^\pizz r r4
 % Bars 16 to 20
-		R2*9
+		R2*5
 		
 		
 		
 		
 % Bars 21 to 25
-		
-		
-		
-		
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		c16->\mf^\arco c c c  c c c c
 % Bars 26 to 30
 		c4-> r8 c
@@ -193,18 +193,18 @@ musicContrabassoMvtI = \relative c {
 		g2:32\ff
 % Bars 156 to 160
 		g:
-		R2*10
+		R2*6
 		
 		
 		
 % Bars 161 to 165
 		
 		
-		
-		
-		
+		\ni \mmrPos #-7 R2
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 % Bars 166 to 170
-		
+		R2
 		fis2-^\ff~
 		fis4 r
 		R2*2
@@ -276,8 +276,8 @@ musicContrabassoMvtI = \relative c {
 	
 % Bars 226 to 230
 	\mark \default
-	R2*2
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	b2\pp^\arco~
 	b
 % Bars 231 to 235
@@ -458,15 +458,19 @@ musicContrabassoMvtI = \relative c {
 	a8-. b-. c-. c,->\noBeam
 % Bars 381 to 385
 	f\f r r4
-	R2*11
+	R2*7
 	
 	
 	
 % Bars 386 to 390
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 391 to 395
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f,4\p( a16 g f8)
 	g4( bes16 a g8)
 	a8( c4->)\< bes8\!~
@@ -496,15 +500,15 @@ musicContrabassoMvtI = \relative c {
 	
 % Bars 416 to 420
 	\mark \default
-	R2*7
+	R2*4
 	
 	
 	
 % Bars 421 to 425
-	
-	
-	
-	r4 bes(\p
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	\once \voiceOne r4 bes(\p
 	a2)\mf
 % Bars 426 to 430
 	g4.( g8-.)

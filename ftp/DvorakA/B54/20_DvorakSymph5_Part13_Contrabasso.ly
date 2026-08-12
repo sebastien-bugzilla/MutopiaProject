@@ -49,9 +49,9 @@
 			\new Voice {
 				\formatContrabassoMvtI
 			}
-			\new Voice {
-				\keepWithTag #'(contrabasso) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\keepWithTag #'(contrabasso) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtI
 			}
@@ -60,7 +60,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 1.
 			}
@@ -73,9 +73,9 @@
 			\new Voice {
 				\formatContrabassoMvtII
 			}
-			\new Voice {
-				\keepWithTag #'(contrabasso) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\keepWithTag #'(contrabasso) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtII
 			}
@@ -97,9 +97,9 @@
 			\new Voice {
 				\formatContrabassoMvtIII
 			}
-			\new Voice {
-				\keepWithTag #'(contrabasso) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\keepWithTag #'(contrabasso) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtIII
 			}
@@ -121,9 +121,9 @@
 			\new Voice {
 				\formatContrabassoMvtIV
 			}
-			\new Voice {
-				\keepWithTag #'(contrabasso) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\keepWithTag #'(contrabasso) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtIV
 			}

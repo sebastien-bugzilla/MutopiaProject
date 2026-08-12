@@ -61,7 +61,7 @@ musicContrabassoMvtIII = \relative c {
 	bes4 r8
 	f r r \mark \default
 % Bars 66 to 70
-	R4.*27
+	R4.*24
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -70,16 +70,24 @@ musicContrabassoMvtIII = \relative c {
 	
 % Bars 86 to 90
 	
+	
+	
+	
+	\ni \mmrPos #-4 R4. \no
 % Bars 91 to 95
-	
-	
+	R4.
+	\ni \mmrPos #-7 R4. \no
 	e4\fp^\arco r8
-	R4.*8
+	R4.*5
 	
 % Bars 96 to 100
 	
-% Bars 101 to 105
 	
+	
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
+% Bars 101 to 105
+	\mmrPos #-4 R \no
 	e'4(->\f b16 dis
 	e8)-\pocoapococresc b-. e-.
 	fis-. b,-. fis'-.

@@ -49,9 +49,12 @@ musicContrabassoMvtIV = \relative c {
 	a4->\ff bes-> fis-> g->
 	r a-> bes-> fis->
 	r g-> r a-> \mark \default
-	R1*12
+	\ni \mmrPos #-8 R1
 % Bars 36 to 40
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R1*8
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -335,16 +338,20 @@ musicContrabassoMvtIV = \relative c {
 	f4 r r f8-. f-.
 	f4 r r f8-. f-.
 	f4 f r f
-	R1*15
+	R1*11
 	
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 301 to 305
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-7 R \no \mark \default
 	bes4\p^\pizz r r bes
 	bes r r bes
 % Bars 306 to 310
@@ -402,12 +409,12 @@ musicContrabassoMvtIV = \relative c {
 	c r c r
 	f, r r2
 % Bars 351 to 355
-	R1*9
+	R1*7
 % Bars 356 to 360
 	
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	d'4\pp r r2
 % Bars 361 to 365
 	c4 r r2 \mark \default
