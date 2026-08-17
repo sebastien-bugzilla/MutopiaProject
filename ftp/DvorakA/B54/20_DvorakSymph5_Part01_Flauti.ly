@@ -20,6 +20,7 @@
 \include "./00-Common/DvorakSymph5_LayoutParts.ily"
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
+\include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part01_Flauti.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v01_music_FlautoI.ily"
@@ -42,10 +43,10 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54)"
+			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54) — Flauti"
 		}
 		instrument = \markup {
-			"Flauti"
+			""
 		}
 	}
 	\score {
@@ -53,9 +54,9 @@
 			\new Voice {
 				\formatFlautoIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(flautoI) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtI
 			}
@@ -77,9 +78,9 @@
 			\new Voice {
 				\formatFlautoIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(flautoI) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtII
 			}
@@ -90,7 +91,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.1 \bold 2.
 			}
 		}
 		\layout {
@@ -101,9 +102,9 @@
 			\new Voice {
 				\formatFlautoIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(flautoI) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtIII
 			}
@@ -125,9 +126,9 @@
 			\new Voice {
 				\formatFlautoIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(flautoI) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(flautoI) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtIV
 			}
@@ -136,9 +137,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
@@ -149,9 +150,9 @@
 			\new Voice {
 				\formatFlautoIIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIIMvtI
 			}
@@ -173,9 +174,9 @@
 			\new Voice {
 				\formatFlautoIIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIIMvtII
 			}
@@ -186,7 +187,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #3.2 \bold 2.
 			}
 		}
 		\layout {
@@ -197,9 +198,9 @@
 			\new Voice {
 				\formatFlautoIIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIIMvtIII
 			}
@@ -210,7 +211,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #2.8 \bold 3.
 			}
 		}
 		\layout {
@@ -221,9 +222,9 @@
 			\new Voice {
 				\formatFlautoIIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIIMvtIV
 			}
@@ -232,9 +233,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {

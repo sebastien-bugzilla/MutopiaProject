@@ -42,7 +42,7 @@ musicFlautoIMvtI = \relative c {
 		f2->~\fz
 		f8 r r4
 		g,4\fz r
-		r r8_\crescmarkup g
+		r r8-\offset X-offset -1 _\crescmarkup g
 % Bars 31 to 35
 		bes4->\brack\fz r
 		r r8 bes
@@ -71,7 +71,7 @@ musicFlautoIMvtI = \relative c {
 		a-. c4-> bes8
 % Bars 56 to 60
 		a( aes) g16-. e-. c-. r
-		f4-> a16-. g-. f8-.
+		f4-> a!16-. g-. f8-.
 		g4-> bes16-. a-. g8-.
 		a8-. e'4-> d8~
 		d c16-. b-. a8-. r
@@ -152,7 +152,7 @@ musicFlautoIMvtI = \relative c {
 		R2*4
 		
 		
-		\mark \default
+		\markXoffset #-0.2 \mark \default
 		g2\ff~
 % Bars 146 to 150
 		g
@@ -246,7 +246,7 @@ musicFlautoIMvtI = \relative c {
 	a4..( b16)
 	<< b2~ {s8\< s s s\!}>>
 % Bars 226 to 230
-	<< b4. {s8\> s s\!}>> r8 \mark \default
+	<< b4. {\hairpinShorten #'(0 . -2) s8\> s s\!}>> r8 \mark \default
 	R2*10
 % Bars 231 to 235
 	
@@ -345,7 +345,7 @@ musicFlautoIMvtI = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R
 	\mmrPos #4 R \no \mark \default
-	\tuplet 3/2 4 {c8\pp c c  c[ c c] 
+	\tuplet 3/2 4 {\startMeasureCount c8\pp c c  c[ c c] 
 	c4.:8 c:
 % Bars 331 to 335
 	c: c:
@@ -354,7 +354,7 @@ musicFlautoIMvtI = \relative c {
 	c: c:
 	c: c:
 % Bars 336 to 340
-	c: c: }
+	c: c: } \stopMeasureCount
 	a4\p r
 	c r
 	c2\pp~
@@ -390,7 +390,7 @@ musicFlautoIMvtI = \relative c {
 % Bars 371 to 375
 	R2*2
 	\mark \default
-	R2*6
+	\mmrLength #12 R2*6
 % Bars 376 to 380
 	
 	
@@ -409,14 +409,14 @@ musicFlautoIMvtI = \relative c {
 	
 	
 	r8 a'-.\p r c-.
-	r c-. r c-.
+	\startMeasureCount r c-. r c-.
 	r c-. r c-.
 % Bars 396 to 400
 	r c-. r c-.
 	r c-. r c-.
 	r_\crescmarkup c-. r c-.
 	r c-. r c-.
-	r c-. r c-.
+	r c-. r c-. \stopMeasureCount
 % Bars 401 to 405
 	R2*2
 	
@@ -446,10 +446,10 @@ musicFlautoIMvtI = \relative c {
 	c4(_\crescmarkup cis
 	d e8 f)
 % Bars 431 to 435
-	f4(-\piuf dis\<
-	<< e2)\> {s8 s s s\!}>>
+	f4(-\offset X-offset -1 \piufD\< dis
+	<< \hairpinShorten #'(0 . -2) e2)\> {s8 s s s\!}>>
 	f4( dis\<
-	<< e2)~\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -2.5) e2)~\> {s8 s s s\!}>>
 	e2~
 % Bars 436 to 440
 	e_\dimmarkup
@@ -469,13 +469,13 @@ musicFlautoIMvtI = \relative c {
 % Bars 451 to 455
 	
 	r4 bes,\p(
-	<< c2\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(0.5 . -2) c2\> {s8 s s s\!}>>
 	bes2) \markk
-	a4(\mf\< c\!
+	\hairpinShorten #'(-0.3 . -2) a4(\mf\< c\!
 % Bars 456 to 460
-	<< bes2) {s8\> s s s\!}>>
+	<< bes2) {\hairpinShorten #'(0 . -0.5) s8\> s s s\!}>>
 	a4(\< c\!
-	<< bes2)\> {s8 s s\! s_\crescmarkup }>>
+	<< \hairpinShorten #'(-0.3 . -2) bes2)\> {s8 s s\! s^\crescmarkup }>>
 	a4(\f c
 	bes2)\<
 % Bars 461 to 465
@@ -512,11 +512,11 @@ musicFlautoIMvtI = \relative c {
 	f g
 	f g
 	f) r
-	R2*4
+	R2*3
 	
 % Bars 496 to 500
 	
-	
+	\tempoXoffset #-2  R2
 	r4 c'16(\p f a c
 	f2\pp
 	g4.. a16)
@@ -525,5 +525,5 @@ musicFlautoIMvtI = \relative c {
 	a8 r r4
 	R2*2
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

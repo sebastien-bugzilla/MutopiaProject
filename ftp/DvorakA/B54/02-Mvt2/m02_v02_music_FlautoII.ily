@@ -9,7 +9,7 @@ musicFlautoIIMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R4.*29
+	\mmrLength #30 R4.*29
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -27,14 +27,10 @@ musicFlautoIIMvtII = \relative c {
 % Bars 31 to 35
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	R4.*9
+	R4.*14
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	
-	R4.*2
-	
-	R4.*3
 	
 % Bars 46 to 50
 	
@@ -44,13 +40,13 @@ musicFlautoIIMvtII = \relative c {
 	e~
 % Bars 51 to 55
 	e16 r r8 r
-	R4.*3
+	R4.*6
 	
 	
-	R4.*2
+	
 % Bars 56 to 60
 	
-	R4. \section \mark \default
+	\section \mark \default
 	\key a \major \ni \mmrPos #-4 R4.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
@@ -82,12 +78,12 @@ musicFlautoIIMvtII = \relative c {
 	gis8 a b)
 	R4.*2
 	
-	\ni \mmrPos #-4 R4.
+	\ni \tempoXoffset #3.5 \mmrPos #-4 R4.
 	\mmrPos #-4 R
 % Bars 86 to 90
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no \section
-	\key a \minor r8 r16 c32(\f d c16) b32(_\dimmarkup c
+	\key a \minor \once \voiceTwo r8 r16 c32(\f d c16) b32(_\dimmarkup c
 	b16) a32( b a16) g32( a g16)-. f-. \mark \default
 	e8\p r r
 % Bars 91 to 95
@@ -104,7 +100,7 @@ musicFlautoIIMvtII = \relative c {
 	
 % Bars 101 to 105
 	
-	<< bes'4.->\fz\>~ {s8 s s\!}>>
+	bes'4.->\fz\>~
 	bes4.\p
 	R4.*4
 	
@@ -117,11 +113,11 @@ musicFlautoIIMvtII = \relative c {
 % Bars 111 to 115
 	\mmrPos #-4 R \no
 	bes4\pp~ bes16 r
-	R4.*3
+	\mmrLength #22 R4.*5
 	
 	
 % Bars 116 to 120
-	R4.*2
+	
 	
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R
@@ -130,25 +126,21 @@ musicFlautoIIMvtII = \relative c {
 	\mmrPos #-4 R \no
 	ces8(_\brackM\fcresc bes aes)
 	bes-.\ff^\secco c!-. c-.
-	c-. c-. c-.
+	\tempoXoffset #7 c-. c-. c-.
 	b!-. c-. c-. \mark \default
 % Bars 126 to 130
 	e!4.\f
 	<< b4->~ {s8 s_\dimmarkup}>> b16. e,32
 	e4\p r8
-	R4.*10
+	R4.*12
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
-	
-	
-	R4.*2
-	
 % Bars 141 to 145
-	R4.
-	\ni \mmrPos #-4 R \no \section \mark \default
-	R4.*5
+	\tempoXoffset #3 R4.
+	\ni \mmrPos #-4 R4. \no \section \mark \default
+	\mmrLength #20 R4.*5
 	
 	
 % Bars 146 to 150
@@ -160,11 +152,11 @@ musicFlautoIIMvtII = \relative c {
 % Bars 151 to 155
 	r8 a-.(\pp gis)-.
 	a16 r r8 r
-	R4.*3
+	R4.*8
 	
 	
 % Bars 156 to 160
-	R4.*5
+	
 % Bars 161 to 165
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R \no
@@ -180,27 +172,19 @@ musicFlautoIIMvtII = \relative c {
 % Bars 171 to 175
 	d4\ff( c8)
 	d4( c8)
-	d-. c-._\dimmarkup c-.\p
+	d-. c-.-\offset X-offset -2 _\dimmarkup c-.\p
 	c4(\pp gis8
 	a) r r 
 % Bars 176 to 180
-	R4.*8
+	R4.*19
 % Bars 181 to 185
-	
-	
-	
-	R4.*5
 	
 % Bars 186 to 190
 	
-	
-	
-	R4.*3
-	
 % Bars 191 to 195
 	
-	R4.
-	R4.*2
+	
+	
 	
 	\ni \mmrPos #-4 R4.
 % Bars 196 to 200
@@ -208,7 +192,7 @@ musicFlautoIIMvtII = \relative c {
 	r8 r16 e'(\f c b)
 	a8.(\< b32 c b16. a32)\!
 	a4.\fp~
-	<< a~\> {s8 s s\!}>>
+	a~\>
 % Bar 201
-	a4.\pp\fermata \fine
+	a4.\pp\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

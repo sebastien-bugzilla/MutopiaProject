@@ -9,11 +9,11 @@ musicFlautoIIMvtIV = \relative c {
 	\key f \major
 %	\transposition a
 % Bars 1 to 5
-	R1*4
+	\mmrLength #30 R1*3
 	
 	
-	
-	r2 d''4(\ff d'->~
+	R1
+	\tempoXoffset #-2 r2 d''4(\ff d'->~
 % Bars 6 to 10
 	\time 2/4 d8 c16 bes) a8-. bes-.
 	\timeMvtIV fis4(\fz g) r8. g16[ a8. bes16]
@@ -40,29 +40,21 @@ musicFlautoIIMvtIV = \relative c {
 	c,-. e-. e-. a-. e-. a-. e-. a-.
 % Bars 26 to 30
 	ees-. aes-. ees-. a-. ees-. a-. ees-. a-.
-	g-. bes-.-\crescmarkup a-. c-. g-. bes-. fis-. a-.
-	g4\f( g'->~\fz g8 f!16 ees) d8-. ees-.
+	g-. bes!-.-\crescmarkup a-. c-. g-. bes-. fis-. a-.
+	\shape #'((0 . -2)(0 . 0.8)(0 . 0.5)(0 . 0)) Slur g4\f( g'->~\fz g8 f!16 ees) d8-. ees-.
 	cis-. d-. r d-. r d-. r d-.
 	R1*5
 % Bars 31 to 35
 	
 	
 	
-	\mark \default
-	R1*4
+	\markXoffset #-0.2 \mark \default
+	R1*18
 % Bars 36 to 40
-	
-	
-	
-	R1*10
 	
 % Bars 41 to 45
 	
 % Bars 46 to 50
-	
-	
-	
-	R1*4
 	
 % Bars 51 to 55
 	
@@ -102,7 +94,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 81 to 85
 	r c'(-\pdim gis a
 	b c gis a)
-	a( bes! fis g
+	a( bes! fis g!
 	dis e c! des)
 	c r dis(\pp e
 % Bars 86 to 90
@@ -114,15 +106,11 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 91 to 95
 	e,4(\pp f e f
 	e f e f) \section \mark \default
-	\key des \major R1*12
+	\key des \major R1*22
 % Bars 96 to 100
 	
 % Bars 101 to 105
 	
-	
-	
-	
-	R1*10
 % Bars 106 to 110
 	
 % Bars 111 to 115
@@ -132,7 +120,7 @@ musicFlautoIIMvtIV = \relative c {
 	
 	\ni \mmrPos #-4 R1
 % Bars 116 to 120
-	\mmrPos #-4 R \no \mark \default
+	\mmrPos #-4 R \no \markXoffset #-0.2 \mark \default
 	bes'2.\pp bes4~
 	bes bes-.( bes-. bes-.)
 	bes2.\< bes4~
@@ -163,7 +151,7 @@ musicFlautoIIMvtIV = \relative c {
 	d( c) c( bes!) bes( aes) aes( g)
 % Bars 141 to 145
 	g r r4 r2
-	r8 b-. b-. b-.  b-. b-. b-. b-. \mark \default
+	r8 b-. b-. b-.  b-. b-. b-. b-. \markXoffset #-0.2 \mark \default
 	c4 r r2
 	R1*3
 	
@@ -194,7 +182,7 @@ musicFlautoIIMvtIV = \relative c {
 	\mmrPos #-4 R \no
 	c2.\pp c4~
 	c c-.(\< c-. c-.)\!
-	c2.\fz\> c4\p~
+	\hairpinShorten #'(-0.5 . -0.5) c2.\fz\> c4\p~
 	c c-.(\> aes-. c-.)\!
 % Bars 181 to 185
 	aes2.\pp aes4~
@@ -238,11 +226,15 @@ musicFlautoIIMvtIV = \relative c {
 	r4 c-. c-. b-.
 	a-. r d!-. d-.
 	c8-. r r4 r2
-	R1*12
+	R1*3
 % Bars 221 to 225
 	
+	
+	\mmrLength #12 R1*5
 % Bars 226 to 230
 	
+	
+	R1*4
 % Bars 231 to 235
 	
 	g1\p
@@ -312,17 +304,13 @@ musicFlautoIIMvtIV = \relative c {
 	c des c des
 	c) r r2
 % Bars 291 to 295
-	R1*9 
+	R1*13 
 % Bars 296 to 300
 	
-	
-	
-	
-	R1*4
 % Bars 301 to 305
 	
 	
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	R1*6
 	
 % Bars 306 to 310
@@ -333,7 +321,7 @@ musicFlautoIIMvtIV = \relative c {
 	\ni \mmrPos #-4 R1
 % Bars 311 to 315
 	\mmrPos #-4 R \no
-	r2 fis4(\p\< a\!~
+	r2 \hairpinShorten #'(0 . -1) fis4(\p\< a\!~
 	a\> g f!4. e8)\!
 	e2(\p c'~
 	c) c
@@ -351,7 +339,7 @@ musicFlautoIIMvtIV = \relative c {
 	r a r a
 	r b-\crescmarkup r b
 	r c r c
-	<< c1~\pp\< {s4 s s\> s}>>
+	<< \hairpinShorten #'(-0.5 . -0.5) c1~-\offset X-offset -2 \pp\< {s4 s \hairpinShorten #'(0.5 . 0) s\> s}>>
 % Bars 331 to 335
 	c1\pp~
 	<< c~\< {s4 s s\> s}>>
@@ -379,7 +367,7 @@ musicFlautoIIMvtIV = \relative c {
 % Bars 351 to 355
 	f
 	<< f~\< {s4 s s s8 s\!}>>
-	<< f2\> {s8 s s s\!}>> r2
+	<< \hairpinShorten #'(0 . -1) f2\> {s8 s s s\!}>> r2
 	d1(\pp
 	e)
 % Bars 356 to 360
@@ -389,7 +377,7 @@ musicFlautoIIMvtIV = \relative c {
 	f~
 	f4 r r2
 % Bars 361 to 365
-	R1 \mark \default
+	R1 \markXoffset #-0.2 \mark \default
 	R1*6
 % Bars 366 to 370
 	
@@ -450,5 +438,5 @@ musicFlautoIIMvtIV = \relative c {
 	f-. e-. f-. e-.
 	f r r2
 	f4 r r2
-	R1\fermata \fine
+	\once \ni R1\fermata \fine
 }

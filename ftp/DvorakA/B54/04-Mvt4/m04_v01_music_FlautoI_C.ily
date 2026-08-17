@@ -100,8 +100,8 @@ musicFlautoIMvtIV = \relative c {
 % Bars 76 to 80
 	a4( a'~ a8 g16 f) e8-.( f-.) \partCombineAutomatic
 	a r a4\p r f
-	\partCombineApart r ees r d--
-	r d r c
+	\partCombineApart r ees-- r d--
+	r d-- r c--
 	r a( g bes) \partCombineAutomatic
 % Bars 81 to 85
 	r a'\(-\pdim e f

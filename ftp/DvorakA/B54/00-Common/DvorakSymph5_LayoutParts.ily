@@ -15,12 +15,15 @@
 	\compressEmptyMeasures
 	\context {
 		\Voice
-		\override TupletBracket.bracket-visibility = ##f
+		\override TupletBracket.bracket-visibility = #'if-no-beam
 		\override Hairpin.to-barline = ##f
 		\override Hairpin.height = 0.55
-		\override TrillSpanner.bound-details.right.padding = #1
+		\override TrillSpanner.bound-details.right.attach-dir = 1
 		\override Arpeggio.padding = #0.25
 		\override TupletNumber.avoid-slur = #'ignore
+		\override DynamicTextSpanner.font-size = #0
+		\override Beam.breakable = ##t
+		\override Beam.damping = #3
 		
 %		\override NoteHead.transparent = ##t
 %		\override Stem.transparent = ##t
@@ -38,17 +41,20 @@
 		\CueVoice
 		fontSize = #-3
 		\override Stem.length-fraction = #0.85
-		\override TupletBracket.bracket-visibility = ##f
-		\override StemTremolo.beam-thickness = #0.35 
+		\override TupletBracket.bracket-visibility = #'if-no-beam
+		\override StemTremolo.beam-thickness = #0.35
+		\override Hairpin.height = 0.4
 	}
 	\context {
 		\Staff
 		\consists #Measure_counter_engraver
 		\override TupletBracket.staff-padding = ##f
-%		\override MultiMeasureRest.space-increment = 0
+		\override MultiMeasureRest.space-increment = 0
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 		\override CueClef.font-size = #-1 
 		\override CueEndClef.font-size = #-1 
+		\override AccidentalCautionary.avoid-slur = #'ignore
+		\override Accidental.avoid-slur = #'ignore
 		
 %		\override StaffSymbol.transparent = ##t
 	}
@@ -57,17 +63,20 @@
 %		scriptDefinitions = #my-script-alist
 		\override RehearsalMark.font-size = #4
 		\override RehearsalMark.extra-spacing-width = #'(-0.1 . 0.1)
-		\override RehearsalMark.extra-spacing-height = #'(-10 . 10)
+		\override RehearsalMark.extra-spacing-height = #'(-1 . 10)
 		\override RehearsalMark.outside-staff-priority = ##f
 %		\override RehearsalMark.font-family = #'sans
 %		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
 		\override Footnote.annotation-line = ##f
+		\override BarNumber.font-size = #0.1
+		\override MeasureCounter.outside-staff-priority = #390
+%		\override SectionLabel.font-size = #-1
 		
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
 
-		\override BarNumber.break-visibility = ##(#f #t #t)
+%		\override BarNumber.break-visibility = ##(#f #t #t)
 	}
 }
 

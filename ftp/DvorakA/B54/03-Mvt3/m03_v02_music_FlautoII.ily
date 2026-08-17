@@ -27,8 +27,8 @@ musicFlautoIIMvtIII = \relative c {
 	
 	
 % Bars 16 to 20
-	R4.\fermata \section
-	\time 3/8 R4.*7
+	\once \ni R4.\fermata \section
+	\time 3/8 \mmrLength #23 \mmrnDown R4.*7
 	
 	
 	
@@ -84,7 +84,7 @@ musicFlautoIIMvtIII = \relative c {
 	\mmrPos #-4 R
 % Bars 76 to 80
 	\mmrPos #-4 R \no
-	R4.*7
+	\mmrLength #11 R4.*7
 % Bars 81 to 85
 	
 	
@@ -161,9 +161,9 @@ musicFlautoIIMvtIII = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R \no
 % Bars 166 to 170
-	R4.*5
+	R4.*9
 % Bars 171 to 175
-	R4.*4
+	
 	
 	
 	
@@ -176,20 +176,20 @@ musicFlautoIIMvtIII = \relative c {
 	bes-.[\> r a-.]\!
 % Bars 181 to 185
 	bes8\p r r
-	a\ff r r 
+	a\ff r r \markCoda
 	\startVoltaI bes r r
 	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	\ni \mmrPos #-4 R4.
+	\ni \tempoOsf #290 \mmrPos #-4 R4.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \section
-	\startVoltaII bes8\ff r r \section \endVolta
+	\mmrPos #-4 R \tweak direction #-1 \textEndMark \attaccatrio \no \section
+	\startVoltaII bes8\ff r r \offset X-offset #2 \tweak direction #-1 \textEndMark \finemarkup \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
-		\key des \major \time 3/8 \sectionLabel "TRIO" aes4.->\fp
+		\key des \major \removeTimeSignatureEoL \time 3/8 \sectionLabel "TRIO" aes4.->\fp
 		des,8.-> des16-. des8-.
 		des4 r8
 		r r aes'
@@ -198,18 +198,18 @@ musicFlautoIIMvtIII = \relative c {
 		f8->[ r16-\crescmarkup des-. des8-.]
 		des->[ r16 g-. g8-.]
 		g\mf r r
-		r8 r c-.\f\<
-		c4\fz r8
+		r8 r \hairpinShorten #'(-0.5 . -0.5) c-.-\offset X-offset #-0.5 \f\<
+		c4-\offset X-offset #0.5 \fz r8
 % Bars 206 to 210
-		r r bes\mf\<
-		bes4->\fz r8
-		r8 r_\pdim aes-.
+		r r \hairpinShorten #'(-0.5 . -0.5) bes-.-\offset X-offset #-1 \mf\<
+		bes4->-\offset X-offset #1 \fz r8
+		r8 r aes-._\pdim
 		aes4 r8
-		R4.*2
+		R4.*4
 % Bars 211 to 215
 		
-		R4.
-		R \mark \default
+		
+		\mark \default
 	}
 	\repeat volta 2 {
 		aes4.->\pp
@@ -219,9 +219,9 @@ musicFlautoIIMvtIII = \relative c {
 		ges4->\! r8
 		R4.*2
 		
-		<< aes4.->\p\< {s8 s s\!}>>
+		aes4.->\p\< 
 % Bars 221 to 225
-		aes4 r8
+		aes4\! r8
 		r8. ges16-.\< ges8-.
 		ges->\mf r r
 		R4.*2
@@ -242,8 +242,8 @@ musicFlautoIIMvtIII = \relative c {
 		
 		
 		r8. aes16-.\p aes8-.
-		aes4.-\crescmarkup~
-		aes8\<[ r16 aes-. aes8-.]
+		aes4.\crescD\<~
+		aes8[ r16 aes-. aes8-.]
 % Bars 241 to 245
 		aes( ces) bes-.\!
 		aes[\f r16 c!-. c8-.]
@@ -279,7 +279,7 @@ musicFlautoIIMvtIII = \relative c {
 		
 		\ni \mmrPos #-4 R4.
 % Bars 276 to 280
-		\mmrPos #-4 R \no \mark \default
+		\mmrPos #-4 R \no \markXoffset #-0.2 \mark \default
 	}
 	R4.*7
 % Bars 281 to 285
@@ -309,23 +309,22 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 301 to 305
 	des4.\p(
 	aes4) r8
-	R4.*4
+	\mmrLength #13 R4.*14
 	
 	
 % Bars 306 to 310
 	
-	R4.*10
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
-	\ni \mmrPos #-4 R4.
+	\ni \mmrPos #-6 R4.
 	\mmrPos #-4 R \no
 	r8. a16\f\< a8
 	a8.\! a16\ff a8
 % Bars 321 to 324
 	a r r
-	R4.
-	R4.*2
-	\section \key bes \major s8
+	R4.*3
+	
+	\tweak direction #-1 \textEndMark \dacapoallegro_scherzandosinal_segnopoifine \section \key bes \major s8
 }

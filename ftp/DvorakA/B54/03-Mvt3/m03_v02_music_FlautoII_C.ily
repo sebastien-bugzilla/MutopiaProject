@@ -197,7 +197,7 @@ musicFlautoIIMvtIII = \relative c {
 		r8 r \hairpinShorten #'(-0.3 . -0.3) c-.-\offset X-offset -2 \f\<
 		c4\fz r8
 % Bars 206 to 210
-		r r bes\mf\<
+		r r bes-.\mf\<
 		bes4->\fz r8
 		r8 r aes-.
 		aes4 r8

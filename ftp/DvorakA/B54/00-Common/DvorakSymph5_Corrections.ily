@@ -33,6 +33,9 @@ correctionMvtIII = \markup {
 }
 correctionMvtIV = \markup {
 	
+	% bar 78 - 79, Fl I & Ob I
+	"In Mvt IV, bar 78 & 79, for Fl.I and Ob.I a tenuto indication are added on each quarter note. It is based on the violin parts."
+	
 	% bar 165, Faggot I & II
 	"In Mvt IV, bar 165, for faggoto I & II, a missing dot is added."
 	
@@ -47,4 +50,9 @@ correctionMvtIV = \markup {
 	
 	% bar 24, Viola / violoncello
 	"In Mvt IV, bar 24, a 'bes' is replaced by a 'b' in the main theme. In all audio version I have it is played with a b."
+}
+correctionFlauti = \markup {
+	
+	% Mvt III, bar 303 & 305, Flauto I
+	"In MVt III, bars 303 & 305, for flauto I, a missing dot is added to the eighth rest. It is based on conductor score."
 }

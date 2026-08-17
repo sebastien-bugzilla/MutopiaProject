@@ -32,6 +32,7 @@ pmoltotranquillo = \markup {\hspace #-0.08 \dynamic p \italic "molto tranquillo"
 pbrackdim = \markup {\hspace #-0.08 \dynamic p \bracket \with-true-dimensions \italic dim.}
 brackpmarkup = \markup {\hspace #-0.08 \bracket \with-true-dimensions \dynamic p}
 brackpdolce = \markup {\hspace #-0.08 \bracket \with-true-dimensions \dynamic p \italic dolce }
+pdimD = \tweak DynamicText.self-alignment-X #-0.82 #(make-dynamic-script (markup #:normal-text pdim))
 %--------------------
 % dynamics mp
 %--------------------
@@ -158,7 +159,7 @@ stacc = \markup {\italic stacc.}
 pesante = \markup {\italic pesante}
 trem = \markup {\italic trem.}
 dopounapiccolapausasicontinua = \markup {
-	\italic \column { 
+	\italic \right-column { 
 		\lower #1.5 "Dopo una piccola" "pausa si continua"
 	}
 }
@@ -168,14 +169,35 @@ dacapoallegroscherzandosinalsegnopoifine = \markup {
 			\lower #1.5 "Da Capo Allegro scherzando" 
 			\concat { 
 				\general-align #Y #CENTER {
-					"sin' all segno " \coda " poi Fine"
+					"sin' al segno " \coda " poi Fine"
 				}
+			}
+		}
+	}
+}
+dacapoallegro_scherzandosinal_segnopoifine = \markup {
+	\italic \override #'(baseline-skip . 1.5) 
+	\column { 
+		\general-align #X #RIGHT {
+			"Da Capo Allegro" 
+			"scherzando sin' al"
+			\concat { 
+					" segno " \coda " poi Fine"
 			}
 		}
 	}
 }
 finemarkup = \markup {\italic Fine}
 attaccatrio = \markup {\italic "attacca Trio"}
+
+
+markk = \mark #11
+
+markCoda = 
+	\tweak self-alignment-X #1.1 
+	\tweak break-visibility ##(#t #t #f)
+	\mark \markup { \coda }
+
 %--------------------
 % instrument modification
 %--------------------
@@ -274,9 +296,6 @@ timpinae = \markup {
 		\lower #1 "Timp." "in A/E"
 	}
 }
-
-
-markk = \mark #11
 
 %--------------------
 % functions
@@ -388,7 +407,10 @@ startVoltaI = {
 	\set Score.repeatCommands = #`((volta , #{ \markup \volta-number "1." #} ))
 }
 startVoltaII = {
-	\set Score.repeatCommands = #`((volta #f)(volta ,#{ \markup \volta-number "2." #}))
+	\set Score.repeatCommands = 
+		#`(
+			(volta #f)
+			(volta ,#{ \markup \volta-number "2." #}))
 }
 endVolta = {
 	\set Score.repeatCommands = #'((volta #f))
@@ -465,21 +487,24 @@ InCueContext = {
 	\override Beam.beam-thickness = #0.30 % 0.30
 	\override StemTremolo.beam-thickness = #0.35 % 0.30
 	\override Beam.length-fraction = #0.67 % 0.8
-	\override Stem.length-fraction = #0.8 % 0.8
+	\override Stem.length-fraction = #0.80 % 0.8
+	\override Hairpin.height = 0.4
+	\set fontSize = #-3 %-3
+	\override TupletBracket.bracket-visibility = #'if-no-beam
 %	\override Stem.length = #7
 %	\override Beam.length = #7
-	\set fontSize = #-3 %-3
-	\override NoteHead.color = #blue
-	\override Stem.color = #blue
-	\override Beam.color = #blue
-	\override TextScript.color = #blue
-	\override DynamicText.color = #blue
-	\override Slur.color = #blue
-	\override Tie.color = #blue
-	\override Script.color = #blue
-	\override Accidental.color = #blue
-	\override Hairpin.color = #blue
-	\override Rest.color = #blue
+
+%	\override NoteHead.color = #blue
+%	\override Stem.color = #blue
+%	\override Beam.color = #blue
+%	\override TextScript.color = #blue
+%	\override DynamicText.color = #blue
+%	\override Slur.color = #blue
+%	\override Tie.color = #blue
+%	\override Script.color = #blue
+%	\override Accidental.color = #blue
+%	\override Hairpin.color = #blue
+%	\override Rest.color = #blue
 }
 
 OutCueContext = {
@@ -500,8 +525,43 @@ ni = {
 	\omit MultiMeasureRestNumber
 }
 
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.minimum-length = #length
+	#}
+)
 
+tempoXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \offset X-offset #offset Score.MetronomeMark 
+	#}
+)
 
+mmrnDown = {
+	\once \override MultiMeasureRestNumber.direction = #-1 
+}
+
+tempoEO = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
+
+tempoOsf = #(define-music-function
+	(priority)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.outside-staff-priority = #priority
+	#}
+)
+
+removeTimeSignatureEoL = \once \override Staff.TimeSignature.break-visibility = ##(#f #t #t) 
 
 %aIIOmit = \once \omit Voice.CombineTextScript
 
@@ -591,18 +651,6 @@ ni = {
 %	\set stemRightBeamCount = #1
 %}
 
-%mmrnDown = {
-%	\once \override MultiMeasureRestNumber.direction = #-1 
-%}
-
-%mmrLength = #(define-music-function
-%	(length)
-%	(number?)
-%	#{
-%		\once \override MultiMeasureRest.minimum-length = #length
-%	#}
-%)
-
 %mmrCondens = \once \override MultiMeasureRest.springs-and-rods = #ly:spanner::set-spacing-rods 
 
 %mmrEO = #(define-music-function
@@ -671,22 +719,7 @@ ni = {
 
 %tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 
-%tempoXoffset = #(define-music-function
-%	(offset)
-%	(number?)
-%	#{
-%		\once \offset X-offset #offset Score.MetronomeMark 
-%	#}
-%)
-
 %tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-%tempoEO = #(define-music-function
 %	(offset)
 %	(pair?)
 %	#{

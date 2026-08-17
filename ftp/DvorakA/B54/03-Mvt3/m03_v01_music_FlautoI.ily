@@ -27,7 +27,7 @@ musicFlautoIMvtIII = \relative c {
 	
 	
 % Bars 16 to 20
-	R4.\fermata \section
+	\once \ni R4.\fermata \section
 	\time 3/8 bes4(->\fp f16 a
 	bes8) f-. bes-.
 	c-. f,-. c'-.
@@ -80,13 +80,9 @@ musicFlautoIMvtIII = \relative c {
 	f16(\< e d cis d8)\!
 % Bars 76 to 80
 	e8-.\mf a,-. e'-.
-	R4.*7
+	R4.*29
 % Bars 81 to 85
 	
-	
-	
-	R4.
-	R4.*21
 % Bars 86 to 90
 	
 % Bars 91 to 95
@@ -172,20 +168,21 @@ musicFlautoIMvtIII = \relative c {
 	ees16(\> d c b c8)\!
 % Bars 181 to 185
 	bes!8\p r r
-	a\ff r r 
+	\dynEO #'(0 . 1) a\ff r r \markCoda
 	\startVoltaI bes r r
-	R4.*7
+	R4.
+	\mmrLength #10 R4.*6
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	\ni \mmrPos #-4 R4.
+	\ni \tempoOsf #290 \mmrPos #-4 R4.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \section
-	\startVoltaII bes8\ff r r \section \endVolta
+	\mmrPos #-4 R \no \tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII bes8\ff r r \tweak direction #-1 \textEndMark \finemarkup \section \endVolta
 % Bars 196 to 200
 	\repeat volta 2 {
-		\key des \major \time 3/8 \sectionLabel "TRIO" des4.->\fp
+		\key des \major \removeTimeSignatureEoL \time 3/8 \sectionLabel "TRIO" des4.->\fp
 		aes8.-> f16-. f8-.
 		ges4 r8
 		r r aes
@@ -194,10 +191,10 @@ musicFlautoIMvtIII = \relative c {
 		aes8->[ r16-\crescmarkup f-. f8-.]
 		g->[ r16 des'-. des8-.]
 		c\mf r r
-		r8. e16-.\f\< e8-.\!
+		r8. \hairpinShorten #'(-0.3 . -1.5) e16-.\f\< e8-.\!
 		f4\fz r8
 % Bars 206 to 210
-		r8. d16-.\mf\< d8-.\!
+		r8. d16-.\mf\< d8-.
 		ees!4->\fz r8
 		r8. c16-._\pdim c8-.
 		des4 r8
@@ -215,7 +212,7 @@ musicFlautoIMvtIII = \relative c {
 		beses4->\! r8
 		R4.*2
 		
-		<< ces4.->\p\< {s8 s s\!}>>
+		<< \hairpinShorten #'(-0.3 . -1.5) ces4.->\p\< {s8 s s\!}>>
 % Bars 221 to 225
 		ces4 r8
 		r8. bes16-.\< bes8-.
@@ -322,6 +319,6 @@ musicFlautoIMvtIII = \relative c {
 % Bars 321 to 324
 	f r r
 	R4.
-	r8. f16-.\pp f8-.
-	f8 r r \section \key bes \major s8
+	r8. f16-.-\offset X-offset -2.5 ^\pp f8-.
+	f8 r r \tweak direction #-1 \textEndMark \dacapoallegroscherzandosinalsegnopoifine \section \key bes \major s8
 }

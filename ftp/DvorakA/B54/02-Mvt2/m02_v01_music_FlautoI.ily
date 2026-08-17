@@ -39,13 +39,13 @@ musicFlautoIMvtII = \relative c {
 	cis8.(\fz g'16 e!-\crescmarkup d)
 	cis8.(\fz g'16 e d)
 	cis8(\f bes' a
-	g f_\dimmarkup e)\p
+	g f-\offset X-offset -2.5 _\dimmarkup e)\p
 % Bars 41 to 45
 	e4\fz r8
 	R4.*2
 	
-	<< e4.(~\p {s8 s_\dimmarkup s}>>
-	e4\> f8)\!
+	\hairpinShorten #'(-0.6 . -0.5) e4.(~\pdimD\>
+	e4 f8)\!
 % Bars 46 to 50
 	e16-. f-.-\brackM\dimmarkup e8-. e-.
 	e8.(\p e16 c b
@@ -61,7 +61,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 56 to 60
 	a8) r a-.
 	R4. \section \mark \default
-	\key a \major R4.*4
+	\key a \major \tempoXoffset #-3 R4.*4
 	
 	
 % Bars 61 to 65
@@ -85,14 +85,14 @@ musicFlautoIMvtII = \relative c {
 % Bars 76 to 80
 	
 	
-	fis'4.(\pp
+	\dynEO #'(0 . 2) fis'4.(\pp
 	d4~ d16.\< cis32-.)\!
 	cis4.(\pp
 % Bars 81 to 85
 	b8 cis d)
 	<< fis4.(\p {s4 s8\<}>>
 	d4~ d16. c32)\!
-	c4.->_\crescmarkup
+	\tempoXoffset #3.5 c4.->_\crescmarkup
 	b8( c d)
 % Bars 86 to 90
 	c( d e)
@@ -114,7 +114,7 @@ musicFlautoIMvtII = \relative c {
 	
 % Bars 101 to 105
 	
-	<< bes'4.->\fz\>~ {s8 s s\!}>>
+	bes'4.->\fz\>~
 	bes4.\p
 	R4.*4
 	
@@ -123,15 +123,15 @@ musicFlautoIMvtII = \relative c {
 	
 	d4.(\p
 	bes4\<~ bes16. a32)\!
-	<< a4.\fp\> {s8 s s\!}>>
+	<< a4.\fp\> {s8 s s}>>
 % Bars 111 to 115
-	g8( a-\dimmarkup bes)
+	g8( a\dimD bes)
 	d4\pp~ d16 r
-	R4.*3
+	\tempoXoffset #-1 \mmrLength #17 \mmrnDown R4.*3
 	
 	
 % Bars 116 to 120
-	<< f4.->\fz {s8 s4_\crescmarkup}>>
+	f4.->-\fzcresc
 	d4~ d16 bes
 	bes4.\mf(
 	a8 bes_\crescmarkup c)
@@ -140,7 +140,7 @@ musicFlautoIMvtII = \relative c {
 	c( d ees)
 	d(_\brackM\fcresc ees f)
 	ees-.\ff^\secco ees-. ees-.
-	ees-. ees-. ees-.
+	\tempoXoffset #6 ees-. ees-. ees-.
 	ees-. ees-. ees-. \mark \default
 % Bars 126 to 130
 	e!4.\f
@@ -156,7 +156,7 @@ musicFlautoIMvtII = \relative c {
 	e'4.\pp~
 	e8 r r
 % Bars 141 to 145
-	R4.
+	\tempoXoffset #3 R4.
 	r8 r16 e(\p^\dolce c b) \section \mark \default
 	a8.( b32 c b16 a)
 	gis8( e) r16 e-.
@@ -183,7 +183,7 @@ musicFlautoIMvtII = \relative c {
 	r r16 cis(\p bes a
 	gis) r r d'( c! b!
 	a) r r8 r \mark \default
-	r32 f'-. d-. c-. bes-. f'-. d-. c-. bes-. f'-. d-. c-.
+	r32 f'-.\fp d-. c-. bes-. f'-. d-. c-. bes-. f'-. d-. c-.
 	bes-. f'-. d-. c-. bes-. f'-. d-. c-. bes-. f'-. d-. bes-.
 % Bars 166 to 170
 	gis-._\crescmarkup e'-. b!-. a-. gis-. e'-. b-. a-. gis-. e'-. b-. gis-.
@@ -194,7 +194,7 @@ musicFlautoIMvtII = \relative c {
 % Bars 171 to 175
 	d4\ff( c8)
 	f!4( e8)
-	gis-. a-._\dimmarkup dis,-.\p
+	gis-. a-.-\offset X-offset -2.5 _\dimmarkup dis,-.\p
 	e4(\pp gis,8
 	a) r16 e'(\p c b
 % Bars 176 to 180
@@ -202,7 +202,7 @@ musicFlautoIMvtII = \relative c {
 	a8.( e'16\pp c b
 	a8._\dimmarkup b32 c b16. a32)
 	a8 r r
-	r r16 g'16(\< f16. e32)\!
+	r r16 g'16([\< f16. e32)]\!
 % Bars 181 to 185
 	e8.(\f\> f32 g f16. e32)\!
 	<< e4(~ {s8 s_\dimmarkup}>> e16 a,~
@@ -228,5 +228,5 @@ musicFlautoIMvtII = \relative c {
 	a4.\fp~
 	<< a~\> {s8 s s\!}>>
 % Bar 201
-	a4.\pp\fermata \fine
+	a4.\pp\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

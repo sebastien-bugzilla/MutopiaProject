@@ -101,8 +101,8 @@ musicOboeIMvtIV = \relative c {
 % Bars 76 to 80
 	a'2(~ a8 g16 f) e8-. f-.
 	a r a4\p r f
-	r ees-\dimmarkup r d--
-	r d r c
+	r ees-\dimmarkup-- r d--
+	r d-- r c--
 	R1
 % Bars 81 to 85
 	r4 c2-\pdim c4

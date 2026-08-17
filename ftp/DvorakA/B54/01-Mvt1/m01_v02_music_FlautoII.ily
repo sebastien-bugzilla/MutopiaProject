@@ -42,7 +42,7 @@ musicFlautoIIMvtI = \relative c {
 		d2->~\fz
 		d8 r r4
 		g,4\fz r
-		r r8_\crescmarkup g
+		r r8-\offset X-offset #-1 _\crescmarkup g
 % Bars 31 to 35
 		bes4->\brack\fz r
 		r r8 bes
@@ -71,7 +71,7 @@ musicFlautoIIMvtI = \relative c {
 		a-. c4-> bes8
 % Bars 56 to 60
 		a( aes) g16-. e-. c-. r
-		f4-> a16-. g-. f8-.
+		f4-> a!16-. g-. f8-.
 		g4-> bes16-. a-. g8-.
 		a8-. e'4-> e8~
 		e e-. a,-. r
@@ -223,7 +223,7 @@ musicFlautoIIMvtI = \relative c {
 	
 % Bars 206 to 210
 	
-	\tuplet 3/2 4 {e'!8(\p g c~ c g e~
+	\tuplet 3/2 4 {\shape #'((0 . -1)(0 . 1)(0 . 1)(0 . -1)) Slur e'!8(\p g c~ c g e~
 	e g c~ c g e)~
 	e\( b' c~ c b e,~
 	e b' c~ c b e,(} \unSubdiviseBeam 
@@ -240,9 +240,9 @@ musicFlautoIIMvtI = \relative c {
 	
 	e,2\p
 	fis4..( g16)
-	<< g2~ {s8\< s s s\!}>>
+	<< g2~ {\hairpinShorten #'(0 . -1) s8\< s s s\!}>>
 % Bars 226 to 230
-	<< g4. {s8\> s s\!}>> r8 \mark \default
+	<< g4. {\hairpinShorten #'(0 . -1.5) s8\> s s\!}>> r8 \mark \default
 	R2*10
 % Bars 231 to 235
 	
@@ -293,10 +293,9 @@ musicFlautoIIMvtI = \relative c {
 	f
 	ees->\f~
 	ees8 r r4
-	R2*2
+	R2*6
 % Bars 276 to 280
 	
-	R2*4
 % Bars 281 to 285
 	bes'4->\f r
 	b-> r
@@ -341,7 +340,7 @@ musicFlautoIIMvtI = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R
 	\mmrPos #4 R \no \mark \default
-	\tuplet 3/2 4 {a8\pp a a  a[ a a] 
+	\tuplet 3/2 4 {\startMeasureCount a8\pp a a  a[ a a] 
 	a4.:8 a:
 % Bars 331 to 335
 	a: a:
@@ -350,7 +349,7 @@ musicFlautoIIMvtI = \relative c {
 	a: a:
 	a: a:
 % Bars 336 to 340
-	a: a: }
+	a: a: } \stopMeasureCount
 	f4\p r
 	e r
 	c'2\pp~
@@ -386,7 +385,7 @@ musicFlautoIIMvtI = \relative c {
 % Bars 371 to 375
 	R2*2
 	\mark \default
-	R2*6
+	\mmrLength #12 R2*6
 % Bars 376 to 380
 	
 	
@@ -428,13 +427,9 @@ musicFlautoIIMvtI = \relative c {
 	
 % Bars 416 to 420
 	\mark \default
-	R2*8
+	R2*12
 % Bars 421 to 425
 	
-	
-	
-	
-	R2*4
 % Bars 426 to 430
 	
 	
@@ -442,8 +437,8 @@ musicFlautoIIMvtI = \relative c {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no
 % Bars 431 to 435
-	f,4(-\piuf fis\<
-	g8\! c4\> g8)\!
+	f,4(\piufD\< fis
+	g8\! c4-\tweak extra-offset #'(0 . -0.7) \> g8)\!
 	f4( fis\<
 	g8\! c4\> g8)\!
 	bes2~
@@ -467,11 +462,11 @@ musicFlautoIIMvtI = \relative c {
 	r4 bes,\p(
 	<< c2\> {s8 s s s\!}>>
 	bes2) \markk
-	<< a(\mf\< {s8 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1.5) a(\mf\< {s8 s s s\!}>>
 % Bars 456 to 460
 	<< g2) {s8\> s s s\!}>>
 	f4(\< a\!
-	<< g2)\> {s8 s s\! s_\crescmarkup }>>
+	<< g2)\> {s8 s-\tweak extra-offset #'(1.5 . 0) _\crescmarkup s s\! }>>
 	f4(\f a
 	g2)\<
 % Bars 461 to 465
@@ -508,11 +503,11 @@ musicFlautoIIMvtI = \relative c {
 	f g
 	f g
 	f) r
-	R2*4
+	R2*3
 	
 % Bars 496 to 500
 	
-	
+	\mmrLength #12 \tempoXoffset #-2.5 \mmrnDown R2
 	\ni \mmrPos #-4 R2 \no
 	a'2(\pp
 	c
@@ -521,5 +516,5 @@ musicFlautoIIMvtI = \relative c {
 	f8) r r4
 	R2*2
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

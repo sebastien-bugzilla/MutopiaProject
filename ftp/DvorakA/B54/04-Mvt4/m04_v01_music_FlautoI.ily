@@ -9,10 +9,10 @@ musicFlautoIMvtIV = \relative c {
 	\key f \major
 %	\transposition a
 % Bars 1 to 5
-	R1*4
+	\mmrLength #30 R1*3
 	
 	
-	
+	R1
 	r2 d''4(\ff d'->~
 % Bars 6 to 10
 	\time 2/4 d8 c16 bes) a8-. bes-.
@@ -41,7 +41,7 @@ musicFlautoIMvtIV = \relative c {
 % Bars 26 to 30
 	aes-. c-. a-. c-. a-. c-. a-. c-.
 	bes!-. d-.-\crescmarkup c-. ees-. bes-. d-. a-. d-.
-	g,4\f( g'->~\fz g8 f!16 ees) d8-. ees-.
+	\shape #'((0 . -2)(0 . 0.8)(0 . 0.5)(0 . 0)) Slur g,4\f( g'->~\fz g8 f!16 ees) d8-. ees-.
 	cis-. d-. r d-. r d-. r d-.
 	R1*5
 % Bars 31 to 35
@@ -59,13 +59,13 @@ musicFlautoIMvtIV = \relative c {
 % Bars 41 to 45
 	g2.-> r4
 	g2.-> r4
-	r2 g'\p
+	\startMeasureCount r2 g'\p
 	r g-\dimmarkup
 	r g\pp
 % Bars 46 to 50
 	r g
 	r g
-	r g
+	r g \stopMeasureCount
 	R1*4
 	
 % Bars 51 to 55
@@ -92,7 +92,7 @@ musicFlautoIMvtIV = \relative c {
 	
 	e,8-.\f\< f-. g-. a-. bes-. c-. d-. e-.\!
 % Bars 71 to 75
-	f,4(\ff f'~ f8 e16 d) cis8-.( d-.)
+	\dynEO #'(0 . 1) f,4(\ff f'~ f8 e16 d) cis8-.( d-.)
 	a4( a'~ a8 g16 f) e8(-. f-.)
 	a r a4->\fp r f-\dimmarkup
 	r c r g\p
@@ -100,8 +100,8 @@ musicFlautoIMvtIV = \relative c {
 % Bars 76 to 80
 	a4( a'~ a8 g16 f) e8-.( f-.)
 	a r a4\p r f
-	r ees-\dimmarkup r d--
-	r d\> r c
+	r ees-\dimmarkup-- r d--
+	r d--\> r c--
 	r a( g bes)\!
 % Bars 81 to 85
 	r a'(-\pdim e f
@@ -117,7 +117,7 @@ musicFlautoIMvtIV = \relative c {
 	
 % Bars 91 to 95
 	e,4(\pp f e f
-	e f e f) \section \mark \default
+	e f e f) \section \markXoffset #-0.2 \mark \default
 	\key des \major R1*9
 % Bars 96 to 100
 	
@@ -171,7 +171,7 @@ musicFlautoIMvtIV = \relative c {
 	d( c) c( bes!) bes( aes) aes( g)
 % Bars 141 to 145
 	g r r4 r2
-	r8 b-. b-. b-.  b-. b-. b-. b-. \mark \default
+	r8 b-. b-. b-.  b-. b-. b-. b-. \markXoffset #-0.2 \mark \default
 	c4 r r2
 	R1*3
 	
@@ -246,17 +246,21 @@ musicFlautoIMvtIV = \relative c {
 	r4 f-. f-. f-.
 	fis-. r fis-. gis-.
 	a8-. r r4 r2
-	R1*12
+	R1*3
 % Bars 221 to 225
 	
+	
+	\mmrLength #18 \tempoXoffset #-2 \mmrnDown R1*5
 % Bars 226 to 230
 	
+	
+	R1*4
 % Bars 231 to 235
 	
 	b,1\p~
 	b~
 	b~
-	<< b\< {s4 s s s\!}>>
+	<< b\< {s4 s s s8 s\!}>>
 % Bars 236 to 240
 	b1\pp
 	cis~
@@ -334,7 +338,7 @@ musicFlautoIMvtIV = \relative c {
 	f2\p f
 	g\< g\!
 % Bars 306 to 310
-	c2.\mf c4(-\crescmarkup\<
+	c2.\mf c4(-\offset X-offset -1.5 -\crescmarkup\<
 	f2.\f\> g4)\!
 	g2(\p\> bes,)\!
 	a( f'
@@ -359,10 +363,10 @@ musicFlautoIMvtIV = \relative c {
 	r a r a
 	r b-\crescmarkup r b
 	r c r c
-	<< c1~\pp\< {s4 s s\> s}>>
+	<< \hairpinShorten #'(-0.5 . -1) c1~-\offset X-offset #-1.5 \pp\< {s4 s \hairpinShorten #'(1 . 0) s\> s}>>
 % Bars 331 to 335
 	c1\pp~
-	<< c~\< {s4 s s\> s}>>
+	<< \hairpinShorten #'(0 . -0.5) c~\< {s4 s \hairpinShorten #'(0.5 . 0) s\> s}>>
 	c1\pp~
 	c4 r r2
 	R1*3
@@ -387,7 +391,7 @@ musicFlautoIMvtIV = \relative c {
 % Bars 351 to 355
 	a
 	<< a~\< {s4 s s s8 s\!}>>
-	<< a2\> {s8 s s s\!}>> r2
+	<< \hairpinShorten #'(0 . -1.5) a2\> {s8 s s s\!}>> r2
 	f1(\pp
 	g2.. a8)
 % Bars 356 to 360
@@ -458,5 +462,5 @@ musicFlautoIMvtIV = \relative c {
 	f-. g-. a-. c-.
 	a r r2
 	a4 r r2
-	R1\fermata \fine
+	\once \ni R1\fermata \fine
 }

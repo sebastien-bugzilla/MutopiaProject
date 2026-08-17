@@ -198,7 +198,7 @@ musicFlautoIMvtII = \relative c {
 	a8.( e'16\pp c b
 	a8.-\dimmarkup b32 c b16. a32)
 	a8 r r
-	r r16 g'16(\< f16. e32)\!
+	r r16 g'16[(\< f16. e32)]\!
 % Bars 181 to 185
 	e8.(\f\> f32 g f16. e32)\!
 	<< e4(~ {s8 s-\dimmarkup}>> e16 a,~
