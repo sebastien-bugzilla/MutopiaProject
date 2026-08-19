@@ -20,7 +20,9 @@
 \include "./00-Common/DvorakSymph5_LayoutParts.ily"
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
+\include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part02_Oboi.ily"
+%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI.ily"
 \include "./01-Mvt1/m01_v04_music_OboeII.ily"
@@ -42,20 +44,31 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54)"
+			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54) — Oboi"
 		}
 		instrument = \markup {
-			"Oboi"
+			""
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatOboeIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(oboeI) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtI
 			}
@@ -70,16 +83,20 @@
 			}
 		}
 		\layout {
+%			system-count = 19
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatOboeIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(oboeI) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtII
 			}
@@ -90,10 +107,11 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.4 \bold 2.
 			}
 		}
 		\layout {
+%			system-count = 8
 		}
 	}
 	\score {
@@ -101,9 +119,9 @@
 			\new Voice {
 				\formatOboeIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(oboeI) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtIII
 			}
@@ -118,16 +136,20 @@
 			}
 		}
 		\layout {
+%			system-count = 17
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatOboeIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(oboeI) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtIV
 			}
@@ -136,22 +158,26 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 26
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatOboeIIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(oboeII) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtI
 			}
@@ -166,6 +192,7 @@
 			}
 		}
 		\layout {
+%			system-count = 2
 		}
 	}
 	\score {
@@ -173,9 +200,9 @@
 			\new Voice {
 				\formatOboeIIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(oboeII) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtII
 			}
@@ -186,20 +213,24 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #3 \bold 2.
 			}
 		}
 		\layout {
+%			system-count = 10
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatOboeIIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(oboeII) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtIII
 			}
@@ -208,22 +239,26 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
 		}
 		\layout {
+%			system-count = 2
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatOboeIIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(oboeII) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtIV
 			}
@@ -234,10 +269,11 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 24
 		}
 	}
 }

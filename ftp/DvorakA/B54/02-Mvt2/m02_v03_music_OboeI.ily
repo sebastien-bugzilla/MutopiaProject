@@ -9,7 +9,7 @@ musicOboeIMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R4.*29
+	\mmrLength #33 R4.*29
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -33,7 +33,7 @@ musicOboeIMvtII = \relative c {
 	cis''8.(\fz g'16 e-\crescmarkup d)
 	cis8.(\fz g'16 e d)
 	cis8(\f\< bes' a\!
-	g f-\dimmarkup e)\p
+	g f-\offset X-offset -2.5 -\dimmarkup e)\p
 % Bars 41 to 45
 	e4(\fz\> dis8)\!
 	e4(\fz\> dis8)\!
@@ -54,7 +54,7 @@ musicOboeIMvtII = \relative c {
 	r8 r16 e'(\pp c b
 % Bars 56 to 60
 	a8) r a-.
-	R4. \section \mark \default
+	R4. \section  \mark \default
 	\key a \major e'4.\fp
 	cis4~ cis16. a32-.
 	a4.(~->\fz\>
@@ -73,16 +73,16 @@ musicOboeIMvtII = \relative c {
 % Bars 71 to 75
 	R4.*5
 % Bars 76 to 80
-	gis4.(~\fp
+	gis!4.(~\fp
 	gis8\< a\> b)\!
 	R4.
 	r8 r16 a'(\p\< fis e)\!
 	e8.( fis32 gis fis16 e)
 % Bars 81 to 85
 	d8(\p cis b)
-	R4.*3
+	R4.*2
 	
-	
+	\tempoXoffset #3.5 R4.
 	r8 r16 g'32[(\p a g16 f)]
 % Bars 86 to 90
 	e-\crescmarkup r r a32[( bes a16 g!)]
@@ -95,33 +95,29 @@ musicOboeIMvtII = \relative c {
 	
 	
 	c4->\fp~ c16 r
-	R4.
+	R4.*7
 % Bars 96 to 100
-	R4.*3
-	
-	
-	R4.*3
 	
 % Bars 101 to 105
 	
-	<< f4.->\fz\>~ {s8 s s\!}>>
+	f4.->\fz\>~
 	f4.\p
 	R4.*2
 	
 % Bars 106 to 110
-	<< a,4.(->\fp\< {s8 s s\!}>>
+	a,4.(->-\offset X-offset -1.5 \fp\< 
 	g8\> a bes)\!
 	d4.(\p
 	bes4~\< bes16. a32)\!
-	<< a4.->\fp\> {s8 s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1.5) a4.->\fp\> {s8 s s\!}>>
 % Bars 111 to 115
 	g8( a-\dimmarkup bes)
 	d4\pp~ d16 r
-	R4.*3
+	\mmrLength #17 \tempoXoffset #-1 \mmrnDown R4.*3
 	
 	
 % Bars 116 to 120
-	<< f4.->\fz {s8 s4-\crescmarkup}>>
+	f4.->-\offset X-offset -1.5 -\fzcresc
 	d4~ d16 bes
 	bes4.\mf(
 	a8 bes-\crescmarkup c)
@@ -130,24 +126,24 @@ musicOboeIMvtII = \relative c {
 	c( d ees)
 	aes( g aes)
 	g-.\ff^\secco a!-. a-.
-	g-. gis-. a-.
+	\tempoXoffset #6 g-. gis-. a-.
 	gis-. a-. a-. \mark \default
 % Bars 126 to 130
-	e!4.\f
+	\dynEO #'(0 . -6.6) e!4.^\f
 	<< b'4->~ {s8 s-\dimmarkup}>> b16. e,32
 	e4\p r8
 	R4.*7
 % Bars 131 to 135
 	
 % Bars 136 to 140
-	\ni \mmrPos #-4 R4. \no
+	\ni \mmrPos #-6 R4. \no
 	R4.*2
 	
 	e4.~\pp
 	e8 r r
 % Bars 141 to 145
-	R4.
-	r8 r16 e(\p^\dolce c b) \section \mark \default
+	\tempoXoffset #3 R4.
+	r8 r16 e(-\pdolce c b) \section \mark \default
 	a8.( b32 c b16 a)
 	gis8( e) r16 e-.
 	a8( c b16 a)
@@ -188,7 +184,7 @@ musicOboeIMvtII = \relative c {
 	a4(\pp gis8
 	a) r16 e(\p c b
 % Bars 176 to 180
-	a8. b32 c b16. a32)
+	a8. b32 c b16. a32) 
 	a8.( e'16\pp c b
 	a8.-\dimmarkup b32 c b16. a32)
 	a8 r r
@@ -213,5 +209,5 @@ musicOboeIMvtII = \relative c {
 	a4.\fp
 	r8 a-.\pp a-.
 % Bar 201
-	a4.\fermata \fine
+	a4.\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

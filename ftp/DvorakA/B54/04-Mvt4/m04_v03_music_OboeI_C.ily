@@ -165,10 +165,10 @@ musicOboeIMvtIV = \relative c {
 	R1*2
 	
 	\partCombineApart << aes'1 {s4 s s s}>>
-	aes8( b, d aes') aes( g) r g
+	aes8( b, d aes') aes( g) r g-.
 % Bars 136 to 140
 	g( fis) r fis-. fis( f) r f-.
-	aes b,( d aes') aes( g) r g-.
+	aes( b, d aes') aes( g) r g-.
 	g( fis) r fis-. fis( f) r f-.
 	aes( g) \partCombineAutomatic g[( f)] f( ees) ees( d)
 	d( c) c( bes!) bes'( aes) aes( g)
@@ -226,7 +226,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 196 to 200
 	a( gis) r gis-. gis( g) r g-.
 	bes cis,( e g) bes( a) r a-.
-	a( gis) r gis-. gis g r g-.
+	a( gis) r gis-. gis( g) r g-.
 	\cutBeamEachBeat bes( a) \partCombineAutomatic a( g) g( f) f( e)
 	e( d) d( c!) c( bes) bes'( a)
 % Bars 201 to 205
@@ -274,7 +274,7 @@ musicOboeIMvtIV = \relative c {
 	r4 c8-.\mf r f,-. r g-. r
 	aes-. r ees-. r c-. r d-. r
 	ees2 r
-	r8 \aIIXoffset #-3 des-.\mf\< gis,-. a-. bes4\! r
+	r8 \aIIXoffset #-3 des-.\mf\< ges,-. aes-. bes4\! r
 % Bars 246 to 250
 	R1
 	r8 g'!-.\mf c,!-. d!-. e!4 r

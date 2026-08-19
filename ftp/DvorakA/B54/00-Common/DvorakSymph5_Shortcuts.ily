@@ -73,6 +73,7 @@ fzpocoa_pococresc = \markup {
 fzdim = \markup {\hspace #-0.55 \dynamic fz \italic dim. }
 fzmarkup = \markup {\hspace #-0.55 \dynamic fz}
 fzbrackcresc = \markup {\hspace #-0.55 \dynamic fz \bracket \with-true-dimensions \italic cresc. }
+brackfzcresc = \markup {\hspace #-0.55 \bracket \with-true-dimensions \dynamic fz \italic cresc. }
 %--------------------
 % dynamics f
 %--------------------
@@ -137,6 +138,7 @@ dimin = \markup {\italic dimin.}
 pocoapococresc = \markup {\italic "poco a poco cresc."}
 pocoa_pococresc = \markup {\italic \column { \lower #1.5 "poco a" "poco cresc."}}
 crescsempre = \markup {\italic "cresc. sempre"}
+pocoapoco = \markup {\italic "poco a poco"}
 %--------------------
 % text indications
 %--------------------
@@ -183,6 +185,18 @@ dacapoallegro_scherzandosinal_segnopoifine = \markup {
 			"scherzando sin' al"
 			\concat { 
 					" segno " \coda " poi Fine"
+			}
+		}
+	}
+}
+dacapoallegroscherzan_dosinalsegnopoifine = \markup {
+	\italic \column { 
+		\general-align #X #RIGHT {
+			\lower #1.5 "Da Capo Allegro scherzan-" 
+			\concat { 
+				\general-align #Y #CENTER {
+					"do sin' al segno " \coda " poi Fine"
+				}
 			}
 		}
 	}
@@ -562,6 +576,9 @@ tempoOsf = #(define-music-function
 )
 
 removeTimeSignatureEoL = \once \override Staff.TimeSignature.break-visibility = ##(#f #t #t) 
+
+textMarkAlignKeySignature = \once \override Score.TextMark.break-align-symbols = #'(key-signature staff-bar clef)
+
 
 %aIIOmit = \once \omit Voice.CombineTextScript
 

@@ -309,7 +309,7 @@ musicFlautoIIMvtIII = \relative c {
 % Bars 301 to 305
 	des4.\p(
 	aes4) r8
-	\mmrLength #13 R4.*14
+	R4.*14
 	
 	
 % Bars 306 to 310
@@ -324,7 +324,7 @@ musicFlautoIIMvtIII = \relative c {
 	a8.\! a16\ff a8
 % Bars 321 to 324
 	a r r
-	R4.*3
+	\mmrLength #13 R4.*3
 	
-	\tweak direction #-1 \textEndMark \dacapoallegro_scherzandosinal_segnopoifine \section \key bes \major s8
+	\textMarkAlignKeySignature \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key bes \major s8
 }

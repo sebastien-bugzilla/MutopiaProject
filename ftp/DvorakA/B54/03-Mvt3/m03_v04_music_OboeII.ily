@@ -18,8 +18,8 @@ musicOboeIIMvtIII = \relative c {
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R4.\fermata \section
-	\time 3/8 R4.*7
+	\once \ni R4.\fermata \section
+	\time 3/8 \mmrLength #28 R4.*7
 % Bars 21 to 25
 	
 	
@@ -40,7 +40,7 @@ musicOboeIIMvtIII = \relative c {
 	
 % Bars 36 to 40
 	
-	g4.->\fp~
+	g4.->-\tweak extra-offset #'(0 . -8.7) ^\fp~
 	g
 	f->~
 	f4 r8
@@ -81,14 +81,10 @@ musicOboeIIMvtIII = \relative c {
 	c4.~
 	c8\< c-. c-.
 	b4->\fz b8
-	R4.*2
+	R4.*14
 	
 % Bars 86 to 90
-	R4.
-	R
-	R4.
-	R
-	R4.*8
+	
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -100,9 +96,9 @@ musicOboeIIMvtIII = \relative c {
 % Bars 101 to 105
 	\mmrPos #-4 R \no
 	a4.->\mf
-	b->_\brackM\pocoapococresc
+	b->_\brackM\pocoapoco
 	b->
-	b->
+	b->-\offset X-offset -1 _\brackM\crescmarkup
 % Bars 106 to 110
 	c16(\f b a gis a c)
 	d(-\crescmarkup c b ais b d)
@@ -113,8 +109,8 @@ musicOboeIIMvtIII = \relative c {
 	f( e d cis d e)
 	f( e d cis d e)\!
 	f8\ff r r
-	R4.
-	R4.*3
+	R4.*4
+	
 % Bars 116 to 120
 	
 	
@@ -134,7 +130,7 @@ musicOboeIIMvtIII = \relative c {
 	fis(
 	g)
 	e(
-	f)
+	f!)
 	f\fp~
 % Bars 136 to 140
 	f4 r8
@@ -158,7 +154,7 @@ musicOboeIIMvtIII = \relative c {
 % Bars 161 to 165
 	\ni \mmrPos #-6 R4.
 	\mmrPos #-6 R \no \mark \default
-	f4.\fp~
+	f4.-\offset X-offset 1 ^\fp~
 	f~
 	f8 r r
 % Bars 166 to 170
@@ -169,24 +165,25 @@ musicOboeIIMvtIII = \relative c {
 	
 	
 	
-	\ni \mmrPos #-6 R4.
-	\mmrPos #-6 R
+	\ni \mmrPos #-4 R4.
+	\mmrPos #-4 R
 % Bars 181 to 185
-	\mmrPos #-6 R \no
-	c'8\ff r r
+	\mmrPos #-4 R \no
+	c'8\ff r r \markCoda
 	\startVoltaI bes r r
-	R4.*7
+	R4.
+	\mmrLength #11 \mmrnDown R4.*6
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \section
-	\startVoltaII bes8\ff r r \endVolta \section
+	\mmrPos #-4 R \no \tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII bes8\ff r r \tweak direction #-1 \textEndMark \finemarkup \endVolta \section \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\key des \major \time 3/8 \sectionLabel "TRIO" des4.->\fp
+		\key des \major \removeTimeSignatureEoL \time 3/8 \sectionLabel "TRIO" des4.->\fp
 		R4.*2
 		
 		r8 r aes-.
@@ -195,11 +192,11 @@ musicOboeIIMvtIII = \relative c {
 		f8->[ r16-\crescmarkup des-. des8-.]
 		des8->[ r16 des-. des8-.]
 		c\mf r r
-		r8. e16-.\f\< e8-.\!
+		r8. \hairpinShorten #'(-0.5 . -0.5) e16-.\f\< e8-.
 		f4\fz r8
 % Bars 206 to 210
-		r8 r f-.\mf\<
-		ees!4->\fz r8
+		r8 r \hairpinShorten #'(-0.5 . -0.5) f-.-\offset X-offset -1 \mf\<
+		ees!4->-\offset X-offset 0.5 \fz r8
 		r r ees-.-\pdim
 		des4 r8
 		r r des-.\p
@@ -209,21 +206,14 @@ musicOboeIIMvtIII = \relative c {
 		des8 r r \mark \default
 	}
 	\repeat volta 2 {
-		R4.*4
+		R4.*20
 		
 % Bars 216 to 220
 		
-		
-		R4.*2
-		
-		R4.*4
 % Bars 221 to 225
 		
-		
-		
-		R4.*10
 % Bars 226 to 230
-	
+		
 % Bars 231 to 235
 		
 		
@@ -238,7 +228,7 @@ musicOboeIIMvtIII = \relative c {
 		
 % Bars 241 to 245
 		
-		r8. c!16-.\f c8-.
+		r8. c!16-.-\offset X-offset -2 \f c8-.
 		c4.->~
 		c8[ r16 c-. c8]-.
 		c8( ees) des-.
@@ -249,7 +239,7 @@ musicOboeIIMvtIII = \relative c {
 		aes8( c) bes-.
 		aes[ r16 aes-. aes8-.]
 % Bars 251 to 255
-		aes(-\dimmarkup c) bes-.
+		aes(^\dimmarkup c) bes-.
 		aes[\> r16 aes-. aes8-.]
 		aes( c) bes-.\! \mark \default
 		aes\p r r
@@ -261,7 +251,7 @@ musicOboeIIMvtIII = \relative c {
 		\ni \mmrPos #4 R4.
 		\mmrPos #-4 R
 		\mmrPos #-4 R \no
-		aes8(\pp c) bes-.
+		aes8(-\tweak extra-offset #'(0 . -8) ^\pp c) bes-.
 % Bars 266 to 270
 		aes r r
 		R4.*8
@@ -302,23 +292,22 @@ musicOboeIIMvtIII = \relative c {
 % Bars 301 to 305
 	des4.\p(
 	c4)\> r8\!
-	R4.*4
+	R4.*14
 	
 	
 % Bars 306 to 310
 	
-	R4.*10
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
-	r8. f,16-\mpcresc f8
+	r8. f,16-\offset X-offset -2.5 -\mpcresc f8
 	f8.\< a16 a8\!
 	a8.\f\< a16 a8
 	a8.\! a16\ff a8
 % Bars 321 to 324
 	a8 r r
-	R4.
-	R4.*2
-	\section \key bes \major s8
+	\mmrLength #15 R4.*3
+	
+	\textMarkAlignKeySignature \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key bes \major s8
 }

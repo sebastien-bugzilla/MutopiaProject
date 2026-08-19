@@ -9,16 +9,16 @@ musicOboeIMvtIV = \relative c {
 	\key f \major
 %	\transposition a
 % Bars 1 to 5
-	R1*4
+	\mmrLength #30 R1*3
 	
 	
-	
-	r2 d''4(\ff d'->~
+	R1
+	\tempoXoffset #-2 r2 d''4(\ff d'->~
 % Bars 6 to 10
 	\time 2/4 d8 c16 bes) a8-. bes-.
 	\timeMvtIV fis4(\fz g) r8. g16[ a8. bes16]
 	fis4(->\fz g) r8. g16[ a8. bes16]
-	e,1(~\ff-^
+	\marcatoUpperSlur e,1(~\ff-^
 	e4 f) r8. e16[ a,8. a'16]
 % Bars 11 to 15
 	e4->( f)\f r8. e16[-\crescmarkup a,8. a'16]
@@ -54,23 +54,23 @@ musicOboeIMvtIV = \relative c {
 	R1
 	r4 bes-.\p\< g-. a-.
 	bes-. d-. e-. fis-.\!
-	g2.->\fp r4
+	\startMeasureCount g2.->\fp r4
 	g2.->-\dimmarkup r4
 % Bars 41 to 45
 	g2.->-\dimmarkup r4
-	g2.-> r4
-	r2 g\p
+	g2.-> r4 \stopMeasureCount
+	\startMeasureCount r2 g\p
 	r g-\dimmarkup
 	r g\pp
 % Bars 46 to 50
 	r g
 	r g
-	r g
+	r g \stopMeasureCount
 	r4 a,4(\p bes2)
 	r4-\pocoapococresc c( d2) 
 % Bars 51 to 55
 	r4 e( f2)
-	r4 g(\f\< a2)\!
+	r4 \hairpinShorten #'(-0.5 . -0.5) g(\f\< a2)\!
 	r4 bes-^ r-\crescmarkup c-^
 	r8 d,-^ r e-^ r f-^ r g-^ \mark \default
 	a8\ff\noBeam a,16( c f4~ f8) e16( d cis8-.) d-.
@@ -109,7 +109,7 @@ musicOboeIMvtIV = \relative c {
 	r ees r ees
 	r d r des
 	R1
-	r2 bes\pp(
+	r2 bes-\tweak extra-offset #'(0 . -8) ^\pp(
 % Bars 86 to 90
 	a4) r bes2(
 	a4) r r2
@@ -127,7 +127,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 101 to 105
 	c2.->\p r4
 	R1
-	<< ees(\brack\p\< {s4 s s s\!}>>
+	<< \hairpinShorten #'(-0.3 . -1.5) ees(\brack\p\< {s4 s s s\!}>>
 	ces2.\fz\> aes4)\!
 	bes2.\p bes4(
 % Bars 106 to 110
@@ -143,7 +143,7 @@ musicOboeIMvtIV = \relative c {
 	des2(\> ces)\!
 	bes2.(-\pdim bes4--)
 % Bars 116 to 120
-	bes2(\> aes4. ges8)\! \mark \default
+	bes2(\> aes4. ges8)\! \markXoffset #-0.2 \mark \default
 	ges'2.\pp ges4~
 	ges ges-.( ges-. ges-.)
 	ges2.\< ges4~
@@ -164,11 +164,11 @@ musicOboeIMvtIV = \relative c {
 	aes r r2
 	R1*2
 	
-	<< aes'1\f\< {s4 s s s\!}>>
-	aes8(\ff b, d aes') aes( g) r g
+	<< \hairpinShorten #'(-0.3 . -1.5) aes'1\f\< {s4 s s s\!}>>
+	aes8(\ff b, d aes') aes( g) r g-.
 % Bars 136 to 140
 	g( fis) r fis-. fis( f) r f-.
-	aes\ff b,( d aes') aes( g) r g-.
+	aes\ff( b, d aes') aes( g) r g-.
 	g( fis) r fis-. fis( f) r f-.
 	aes( g) g[( f)] f( ees) ees( d)
 	d( c) c( bes!) bes'( aes) aes( g)
@@ -230,18 +230,18 @@ musicOboeIMvtIV = \relative c {
 % Bars 196 to 200
 	a( gis) r gis-. gis( g) r g-.
 	bes cis,( e g) bes( a) r a-.
-	a( gis) r gis-. gis g r g-.
+	a( gis) r gis-. gis( g) r g-.
 	\cutBeamEachBeat bes( a) a( g) g( f) f( e)
 	e( d) d( c!) c( bes) bes'( a)
 % Bars 201 to 205
 	a( g) g( f) f( e) e( d) \revertCutBeam
 	d a'-. a-. bes-. bes-. a-. a-. g-.
 	f r r4 r2
-	R1*3
+	R1*8
 	
 % Bars 206 to 210
 	
-	R1*5
+	
 % Bars 211 to 215
 	
 	\ni \mmrPos #-4 R1 \no
@@ -263,7 +263,7 @@ musicOboeIMvtIV = \relative c {
 	
 % Bars 231 to 235
 	
-	e4\p b'(~ b8 a16 g fis8-.) g-.
+	e4\p b'_(~ b8 a16 g fis8-.) g-.
 	dis4( e) r8. e16[ fis8. g16]
 	dis4( e) r8. e16[ fis8. g16]
 	dis4(\< e b cis\!
@@ -278,7 +278,7 @@ musicOboeIMvtIV = \relative c {
 	r4 c8-.\mf r f,-. r g-. r
 	aes-. r ees-. r c-. r d-. r
 	ees2 r
-	r8 des-.\mf\< gis,-. a-. bes4\! r
+	r8 des-.\mf\< ges,-. aes-. bes4\! r
 % Bars 246 to 250
 	R1
 	r8 g'!-.\mf c,!-. d!-. e!4 r
@@ -343,7 +343,7 @@ musicOboeIMvtIV = \relative c {
 	<< cis1->\> {s4 s s s\!}>>
 % Bars 301 to 305
 	R1
-	<< ees1\pp\<~ {s4 s s s\!}>>
+	<< \hairpinShorten #'(-0.5 . -1) ees1-\offset X-offset -1 \pp\<~ {s4 s s s\!}>>
 	<< ees1\> {s4 s s s\!}>> \mark \default
 	d2 f,\p
 	g\< g\!
@@ -357,7 +357,7 @@ musicOboeIMvtIV = \relative c {
 	ees\> ees\!(
 	d)\p r
 	R1
-	r2 g4(\p\< bes\!~
+	r2 \hairpinShorten #'(0 . -1.5) g4(\p\< bes\!~
 	bes\> a g4.\! f8)
 % Bars 316 to 320
 	d2(\p bes'~
@@ -404,7 +404,7 @@ musicOboeIMvtIV = \relative c {
 % Bars 351 to 355
 	c
 	<< c\<~ {s4 s s s\!}>>
-	<< c2\> {s8 s s s\!}>> r2
+	<< \hairpinShorten #'(0 . -1) c2\> {s8 s s s\!}>> r2
 	a1\pp(
 	c)
 % Bars 356 to 360
@@ -435,7 +435,7 @@ musicOboeIMvtIV = \relative c {
 	gis1~
 	gis4 r des2-\fbrackz~
 	des4 r c r
-	e r d16(\f\< bes g a bes c d e)\! \mark \default
+	e r d!16(\f\< bes g a bes c d e)\! \mark \default
 	f8\f r f2.\p~
 % Bars 381 to 385
 	f8 r f2.~-\pocoapococresc

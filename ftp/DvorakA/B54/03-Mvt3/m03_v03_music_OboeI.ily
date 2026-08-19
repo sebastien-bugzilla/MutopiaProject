@@ -18,14 +18,14 @@ musicOboeIMvtIII = \relative c {
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R4.\fermata \section
+	\once \ni R4.\fermata \section
 	\time 3/8 R4.*7
 % Bars 21 to 25
 	
 	
 	
 	r8 r8. f16\f
-	<< f4.\mf\>~ {s8 s s\!}>>
+	\hairpinShorten #'(-0.5 . -0.5) f4.\mf\>~
 % Bars 26 to 30
 	f8\p f-. f-.
 	f4.->
@@ -74,8 +74,8 @@ musicOboeIMvtIII = \relative c {
 % Bars 76 to 80
 	
 	a'8->\mf e-. a-.
-	R4.
-	R4.*5
+	R4.*6
+	
 	
 % Bars 81 to 85
 	
@@ -137,8 +137,8 @@ musicOboeIMvtIII = \relative c {
 	a16( bes a g f8)-.
 	bes4 r8
 % Bars 136 to 140
-	R4.
-	R4.*6
+	R4.*7
+	
 % Bars 141 to 145
 	
 	
@@ -152,20 +152,21 @@ musicOboeIMvtIII = \relative c {
 	f~
 	f
 % Bars 151 to 155
-	R4.*12
+	\mmrLength #13 R4.*12
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 	\mark \default
-	R4.*3
+	R4.*8
 	
 	
 % Bars 166 to 170
-	R4.*5
+	
 % Bars 171 to 175
 	\ni \mmrPos #8 R4. \no
-	R4.*7
+	R4.
+	R4.*6
 % Bars 176 to 180
 	
 	
@@ -174,20 +175,21 @@ musicOboeIMvtIII = \relative c {
 	f-.[\> r ees!-.]\!
 % Bars 181 to 185
 	d\p r r
-	ees\ff r r
+	ees\ff r r \markCoda
 	\startVoltaI d r r
-	R4.*7
+	R4.
+	\mmrnDown \mmrLength #9 R4.*6
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no \section
-	\startVoltaII d8\ff r r \endVolta \section
+	\mmrPos #-4 R \tweak direction #-1 \textEndMark \attaccatrio \no \section
+	\startVoltaII d8\ff r r \endVolta \offset X-offset 1 \tweak direction #-1 \textEndMark \finemarkup \section \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\key des \major \time 3/8 \sectionLabel "TRIO" f4.->\fp
+		\key des \major \removeTimeSignatureEoL \time 3/8 \sectionLabel "TRIO" f4.->\fp
 		f8.-> des16-. des8-.
 		ges4 r8
 		r r aes-.
@@ -196,10 +198,10 @@ musicOboeIMvtIII = \relative c {
 		aes8->[ r16-\crescmarkup f-. f8-.]
 		f8->[ r16 f-. f8-.]
 		e\mf r r
-		r8. g16-.\f\< g8-.\!
+		r8. g16-.\f\< g8-.
 		aes4\fz r8
 % Bars 206 to 210
-		r8 r aes-.\mf\<
+		r8 r \hairpinShorten #'(-0.5 . -1) aes-.-\offset X-offset -1 \mf\<
 		ges!4->\fz r8
 		r r ges-.-\pdim
 		f4 r8
@@ -313,13 +315,13 @@ musicOboeIMvtIII = \relative c {
 	
 % Bars 316 to 320
 	
-	r8. a16-\mpcresc a8
+	r8. a16-\offset X-offset -1.7 -\mpcresc a8
 	a8.\< f'16 f8\!
 	f8.\f\< a16 a8
 	a8.\! a16\ff a8
 % Bars 321 to 324
 	a8 r r
 	R4.
-	r8. f16-.\pp f8-.
-	f8 r r \section \key bes \major s8
+	r8. f16-.-\offset X-offset -2 ^\pp f8-.
+	f8 r r \textMarkAlignKeySignature \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key bes \major s8
 }

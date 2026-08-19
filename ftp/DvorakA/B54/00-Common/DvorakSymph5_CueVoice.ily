@@ -451,7 +451,7 @@ cueVoiceFlautoIIMvtIV = \relative c {
 cueVoiceOboeIMvtI = \relative c {
 	s2*8
 	% bars 9 - 14
-	\voiceTwo f'2\p\<^\markup {Fl.} 
+	\voiceTwo f'2-\offset X-offset 0.5 \p\<^\markup {Fl.} 
 	g4..( a16)\!
 	a2\fz\>~
 	<< a~ {s8 s s s\!}>>
@@ -463,10 +463,10 @@ cueVoiceOboeIMvtI = \relative c {
 	<f a> r r4 \oneVoice
 	s2*43
 	% bar 119
-	<>^\markup {Fl.}
+	<>-\offset X-offset -1.5 ^\markup {Fl.}
 	s2*18
 	% bars 137 - 138
-	\voiceOne r4^\markup {Cl.} g'16(^\mp f e) r
+	\voiceOne r4-\offset X-offset -2.5 ^\markup {Cl.} g'16(-\offset X-offset -1 ^\mp f e) r
 	e( d c) r c( g e) r \oneVoice
 	s2*60
 	% bars 199 - 202
@@ -476,17 +476,17 @@ cueVoiceOboeIMvtI = \relative c {
 	g-> r bes8.-. ees16-. \oneVoice
 	s2*30
 	% bars 233 - 234
-	\voiceOne c'4->^\f^\markup {Cl.} c8. fis,16
+	\voiceOne c'4->-\offset X-offset -1.5 ^\f ^\markup {Cl.} c8. fis,16
 	c'4.-> fis,8 \oneVoice
 	s2*18
 	% bars 253 - 256
-	\voiceOne e'2^\fz~^\markup {Viol.}
+	\voiceOne e'2-\offset X-offset -1.5 ^\fz~^\markup {Viol.}
 	e8. cis16( a cis e g)
 	g2->~
 	g8. e16( cis e g cis) \oneVoice
 	s2*41
 	% bars 298 - 302
-	\voiceOne bes,4(^\f^\markup {Cl.} aes'~
+	\voiceOne bes,4(^\f-\offset X-offset -2.5 ^\markup {Cl.} aes'~
 	aes g~
 	g) f8.( c16)
 	ees2(
@@ -503,30 +503,30 @@ cueVoiceOboeIMvtI = \relative c {
 	g8 c4 g8) \oneVoice
 	s2*34
 	% bar 497 - 498
-	\voiceOne c,8.(\mp^\markup {Cl.} d16 c a f g
+	\voiceOne c,8.(\mp-\offset X-offset -2 ^\markup {Cl.} d16 c a f g
 	a c f d c8) r \oneVoice
 }
 cueVoiceOboeIMvtII = \relative c {
 	s4.*29
 	% bars 30 - 32
-	\voiceOne r8 r16 e'''(^\p^\markup {Fl.} c b)
+	\oneVoice r8 r16 e'''(-\offset X-offset -1.5 ^\p-\offset X-offset -2.5 ^\markup {Fl.} c b)
 	a8.( b32 c b16 a)
 	g8( e) r16 e \oneVoice
 	s4.*103
 	% bar 136
-	\voiceOne r32^\markup {Viol.} b'( gis f d b' gis f d b' gis f) \oneVoice
+	\oneVoice r32-\offset X-offset -2 ^\markup {Viol.} b'( gis f d b' gis f d b' gis f) \oneVoice
 	s4.*58
 	% bars 195 - 197
-	\voiceOne a8(^\pp^\markup {Fl.} e' d16 c
+	\oneVoice a8(-\offset X-offset -2 ^\pp-\offset X-offset -2 ^\markup {Fl.} e' d16 c
 	a8. b32 c b16\prall a)
 	a8 s4 \oneVoice
 }
 cueVoiceOboeIMvtIII = \relative c {
 	% bar 1
-	<>^\markup {Fl.Cl.}
+	<>-\offset X-offset -2.5 ^\markup {Fl.Cl.}
 	s4.*44
 	% bar 45
-	<>^\markup {Fag.}
+	<>-\offset X-offset -3 ^\markup {Fag.}
 	s4.*21
 	% bar 66
 	<>^\markup {Viol.}
@@ -544,10 +544,10 @@ cueVoiceOboeIMvtIII = \relative c {
 	\voiceOne f'16(^\markup {Fl.} ees d cis d f) \oneVoice
 	s4.*13
 	% bar 185
-	<>^\markup {Viol.Vle}
+	<>-\offset X-offset -1.5 ^\markup {Viol.Vle}
 	s4.*6
 	% bars 191 - 194
-	\voiceOne aes'8(^\pp ees aes
+	\oneVoice aes'8(-\offset X-offset -2.5 ^\pp ees aes
 	aes ees aes)
 	aes( ees aes
 	aes ees aes) \oneVoice
@@ -556,16 +556,16 @@ cueVoiceOboeIMvtIII = \relative c {
 	<>^\markup {Fl.}
 	s4.*36
 	% bars 262 - 264
-	\voiceTwo c,,8(\p^\markup {Fg.} ees) des-.
-	\voiceOne c'(^\markup {Cl.} ees) des-.
-	c'(^\markup {Fl.} ees) des-. \oneVoice
+	\oneVoice c,,8(-\offset X-offset -1.5 \p^\markup {Fg.} ees) des-.
+	\voiceOne c'(-\offset X-offset -1.5 ^\markup {Cl.} ees) des-.
+	\oneVoice c'(-\offset X-offset -1.5 ^\markup {Fl.} ees) des-. \oneVoice
 	s4.*10
 	% bars 275 - 276
-	\voiceOne r8^\markup {Viol.I.} ges,!( g
+	\voiceOne r8-\offset X-offset -2 ^\markup {Viol.I.} ges,!( g
 	aes bes ces) \oneVoice
 	s4.*7
 	% bars 284 - 289
-	\voiceOne r8 r aes^\p^\markup {Fl.}
+	\voiceOne r8 r aes-\offset X-offset -1 ^\p-\offset X-offset -2 ^\markup {Fl.}
 	des4.->
 	aes8. f16 f8
 	ges4( bes8
@@ -589,10 +589,10 @@ cueVoiceOboeIMvtIV = \relative c {
 	<>^\markup {Ob.II.}
 	s1*5
 	% bar 212
-	\voiceOne eis8(^\< fis16) r gis8( a16) r b8( c16) r d8( ees16)\! r \oneVoice
+	\voiceOne eis8(\<^\markup {Ob.II.} fis16) r gis8( a16) r b8( c16) r d8( ees16)\! r \oneVoice
 	s1*15
 	% bar 228
-	<>^\markup {Viol.I.}
+	<>-\offset X-offset -3 ^\markup {Viol.I.}
 }
 cueVoiceOboeIIMvtI = \relative c {
 	s2*8
@@ -622,26 +622,26 @@ cueVoiceOboeIIMvtI = \relative c {
 	e4 e16( f g) r \oneVoice
 	s2*2
 	% bars 137 - 138
-	\voiceOne r4^\markup {Cl.} g16(^\mp f e) r
+	\voiceOne r4-\offset X-offset -1 ^\markup {Cl.} g16(-\offset X-offset -1 ^\mp f e) r
 	e( d c) r c( g e) r \oneVoice
 	s2*22
 	% bars 161 - 164
 	\voiceOne r4 r8 bes'!^\p^\markup {Viol.}(~
 	bes e!4 bes8)~
-	bes( fis'4 ais,8~
+	\shape #'((0 . -1)(0 . -0.5)(0 . -0.5)(0 . -1)) Slur bes( fis'4 ais,8~
 	ais g'!4 ais,8)\laissezVibrer \oneVoice
 	s2*18
 	% bar 183
 	<>^\markup {Ob.I.}
 	s2*20
 	% bars 203 - 206
-	\voiceOne c'2~->^\fz^\marc^\markup {Ob.I.}
+	\voiceOne c'2~->-\offset X-offset -1.5 ^\fz-\offset X-offset 1.5 ^\marc-\offset X-offset -6 -\tweak extra-offset #'(2 . 0) ^\markup {Ob.I.}
 	c8 r aes-. r
 	f-. r c-. r
 	aes-. r f8.-. aes16-. \oneVoice
 	s2*6
 	% bars 213 - 224
-	\voiceOne c'2~^\fp^\markup {Fl.}
+	\voiceOne c'2~-\offset X-offset -1 ^\fp-\offset X-offset -4 -\tweak extra-offset #'(1.5 . 0) ^\markup {Fl.}
 	c8 r a-. r
 	g2->~
 	g8. d16 b(-. d-. g-. b-.)
@@ -655,11 +655,11 @@ cueVoiceOboeIIMvtI = \relative c {
 	a4..( b16) \oneVoice
 	s2*8
 	% bars 233 - 234
-	\voiceOne c4->^\f^\markup {Cl.} c8.-> fis,16
+	\voiceOne c4->-\offset X-offset -1.5 ^\f^\markup {Cl.} c8.-> fis,16
 	c'4.-> fis,8 \oneVoice
 	s2*34
 	% bars 269 - 272
-	\voiceOne des'2->~^\p^\markup {Cl.}
+	\voiceOne des'2->~-\offset X-offset -1.5 ^\p^\markup {Cl.}
 	des8. aes16( f aes des f)
 	f2~
 	f \oneVoice
@@ -678,55 +678,55 @@ cueVoiceOboeIIMvtI = \relative c {
 	aes4) g8( f) \oneVoice
 	s2*68
 	% bars 397 - 400
-	\voiceOne  r8 c'4(^\p^\markup {Viol.} c'8~
+	\voiceOne  r8 c'4(-\offset X-offset -0.5 ^\p-\offset X-offset -3 ^\markup {Viol.} c'8~
 	c) c4( a8)
 	r8 c,4( c'8~
 	c) c4( a8) \oneVoice
 	s2*24
 	% bars 425 - 429
-	\voiceOne c,4(^\mf^\markup {Cl.} cis
+	\voiceOne c,4(-\offset X-offset -1 ^\mf-\offset X-offset -4 ^\markup {Cl.} cis
 	d8 g4 des8)
 	c4( cis
 	d8 g4 des8)
 	c4( cis) \oneVoice
 	s2*31
 	% bar 461 - 462
-	\voiceOne f4(^\markup {Cl.} fis
+	\oneVoice f4(-\offset X-offset -2 ^\markup {Cl.} fis
 	g8 c4 g8) \oneVoice
 	s2*34
 	% bar 497 - 498
-	\voiceOne c,8.(\mp^\markup {Cl.} d16 c a f g
+	\oneVoice c,8.(\mp-\offset X-offset -2 ^\markup {Cl.} d16 c a f g
 	a c f d c8) r \oneVoice
 }
 cueVoiceOboeIIMvtII = \relative c {
 	s4.*29
 	% bars 30 - 32
-	\voiceOne r8 r16 e'''(^\p^\markup {Fl.} c b)
+	\voiceOne r8 r16 e'''(-\offset X-offset -0.5 ^\p -\offset X-offset -4 ^\markup {Fl.} c b)
 	a8.( b32 c b16 a)
 	g8( e) r16 e\laissezVibrer \oneVoice
 	s4.*4
 	% bars 37 - 38
-	\voiceOne cis8.(^\fz^\markup {Ob.I.} g'16 e d)
+	\voiceOne cis8.(-\offset X-offset -1 ^\fz -\offset X-offset -4 ^\markup {Ob.I.} g'16 e d)
 	cis8.( g'16 e d) \oneVoice
 	s4.*19
 	% bars 58 - 62
-	\voiceOne e4.^\fp^\markup {Ob.I.}
+	\voiceOne e4.-\offset X-offset -1 ^\fp -\offset X-offset -5 ^\markup {Ob.I.}
 	cis4~ cis16. a32
-	a4.->^\fz(~
+	a4.->-\offset X-offset -1.5 ^\fz(~
 	a4 gis8^\p
 	fis) r r \oneVoice
 	s4.*11
 	% bars 74 - 75
-	\voiceOne <fis' fis'>4.^\pp^\markup {Viol.}
+	\oneVoice <fis' fis'>4.\pp-\offset X-offset -4 ^\markup {Viol.}
 	<d d'>4(~ q16. <cis cis'>32) \oneVoice
 	s4.*9
 	% bars 85 - 87
-	\voiceOne r8 r16^\p g'32(^\markup {Ob.I.} a g16 f)
+	\voiceOne r8^\markup {Ob.I.} r16 g'32(-\offset X-offset -1 ^\p a g16 f)
 	e r r a32( bes a16 g)
-	fis r r bes32( c bes16 a) \oneVoice
+	fis! r r bes32( c bes16 a) \oneVoice
 	s4.*20
 	% bars 108 - 111
-	\voiceOne d,4.(^\p^\markup {Ob.I.}
+	\voiceOne d,4.(-\offset X-offset -0.5 ^\p^\markup {Ob.I.}
 	bes4~ bes16. a32)
 	a4.->^\fp^\>
 	g8(\dimD a bes) \oneVoice
@@ -741,20 +741,20 @@ cueVoiceOboeIIMvtII = \relative c {
 	f8.( g32 a g16 f) \oneVoice
 	s4.*6
 	% bar 164
-	\voiceOne r32^\markup {Fl.Ob.Cl.} f'-.^\fp f-. f-.  f-. f-. f-. f-.  f-. f-. f-. f-. \oneVoice
+	\voiceOne r32^\markup {Fl.Ob.Cl.} f'-.-\offset X-offset -1 ^\fp f-. f-.  f-. f-. f-. f-.  f-. f-. f-. f-. \oneVoice
 	s4.*30
 	% bars 195 - 197
-	\voiceOne a8(^\pp^\markup {Fl.} e' d16 c
+	\oneVoice a8(-\offset X-offset -2 ^\pp -\offset X-offset -2 ^\markup {Fl.} e' d16 c
 	a8. b32 c b16\prall a)
 	a8 s4 \oneVoice
 }
 cueVoiceOboeIIMvtIII = \relative c {
 	% bar 1
-	<>^\markup {Fl.Cl.}
+	<>-\offset X-offset -3 ^\markup {"Fl.Cl."}
 	s4.*23
 	% bar 24 - 32
-	\voiceOne r8 r8. f''16^\f^\markup {Ob.I.}
-	f4.^\mf^\>~
+	\voiceOne r8^\markup {Ob.I.} r8. f''16-\offset X-offset -0.5 ^\f
+	f4.-\offset X-offset -0.5 ^\mf^\>~
 	f8^\p f-. f-.
 	f4.->
 	g4-> g8
@@ -770,13 +770,13 @@ cueVoiceOboeIIMvtIII = \relative c {
 	<>^\markup {Viol.}
 	s4.*7
 	% bar 73
-	\voiceOne e16(^\p^\markup {Ob.I.} d c b c8) \oneVoice
+	\voiceOne ees16(^\p^\markup {Ob.I.} d c b c8) \oneVoice
 	s4.*3
 	% bar 77
 	\voiceOne a'8->^\markup {Ob.I.} e-. a-. \oneVoice
 	s4.*20
 	% bars 98 - 101
-	\voiceOne e4(->^\mf^\markup {Ob.I.} b16 dis
+	\voiceOne e4(->-\offset X-offset -2 ^\mf^\markup {Ob.I.} b16 dis
 	e8) b-. e-.
 	fis-. c-. fis-.
 	g16( fis e dis e8) \oneVoice
@@ -789,7 +789,7 @@ cueVoiceOboeIIMvtIII = \relative c {
 	<>^\markup {Fl.}
 	s4.*8
 	% bars 179 - 181
-	\voiceOne d8-.[^\fz^\markup {Ob.I.} r e-.]
+	\voiceOne d8-.[-\offset X-offset -1.5 ^\fz^\markup {Ob.I.} r e-.]
 	f[-. r ees!-.]
 	d^\p r r \oneVoice
 	s4.*3
@@ -797,7 +797,7 @@ cueVoiceOboeIIMvtIII = \relative c {
 	<>^\markup {Viol.Vle}
 	s4.*6
 	% bars 191 - 194
-	\voiceOne aes'8(^\pp ees aes
+	\oneVoice aes'8(-\offset X-offset -2.5 ^\pp ees aes
 	aes ees aes)
 	aes( ees aes
 	aes ees aes) \oneVoice
@@ -806,27 +806,27 @@ cueVoiceOboeIIMvtIII = \relative c {
 	<>^\markup {Fl.Cl.}
 	s4.*8
 	% bars 234 - 236
-	\voiceOne r8.^\markup {Ob.I.} gis16-. gis8-.
+	\voiceOne r8.-\offset X-offset -1 ^\markup {Ob.I.} gis16-.^\p gis8-.
 	gis4.~
 	gis8 s4
 	s4.*25
 	% bars 262 - 264
-	\voiceTwo c,,8(\p^\markup {Fg.} ees) des-.
-	\voiceOne c'(^\p^\markup {Cl.} ees) des-.
-	c'(^\pp^\markup {Fl.} ees) des-. \oneVoice
+	\oneVoice c,,8(-\offset X-offset -1.5 \p^\markup {Fg.} ees) des-.
+	\voiceOne c'(\p^\markup {Cl.} ees) des-.
+	\oneVoice c'(\pp^\markup {Fl.} ees) des-. \oneVoice
 	s4.*10
 	% bars 275 - 276
-	\voiceOne r8^\markup {Viol.I.} ges,!( g
+	\oneVoice r8^\markup {Viol.I.} ges,!(-\offset X-offset -2.5 ^\pp g
 	aes bes ces) \oneVoice
 	s4.*7
 	% bars 284 - 292
-	\voiceOne r8 r aes^\p^\markup {Fl.}
+	\voiceOne r8^\markup {Fl.} r aes-\offset X-offset -1 ^\p
 	des4.->
 	aes8. f16 f8
-	ges4( bes8
+	\shape #'((0 . -1)(0 . -0.5)(0 . -0.5)(0 . -1)) Slur ges4( bes8
 	aes4 ges8)
 	f4( c'8) 
-	des,4(^\p^\markup {Ob.I.} f8
+	\shape #'((0 . 1.3)(0 . -1)(0 . -1)(0 . 1.3)) Slur des,4(-\offset X-offset -0.5 ^\p^\markup {Ob.I.} f8
 	ees4 des8
 	c4) r8 \oneVoice
 }
@@ -852,7 +852,7 @@ cueVoiceOboeIIMvtIV = \relative c {
 	<g ees'>) \oneVoice
 	s1*51
 	% bar 228
-	<>^\markup {Viol.I.}
+	<>-\offset X-offset -3 ^\markup {Viol.I.}
 	s1*64
 	% bar 292
 	<>^\markup {Ob.I.}
@@ -861,7 +861,7 @@ cueVoiceOboeIIMvtIV = \relative c {
 	<>^\markup {Ob.I.}
 	s1*7
 	% bars 312 - 314
-	\voiceOne r2 a'4(^\p^\markup {Fl.} c~
+	\voiceOne r2 a'4(-\offset X-offset -1 ^\p-\offset X-offset -2 ^\markup {Fl.} c~
 	c bes a4. g8) 
 	g2\laissezVibrer s \oneVoice
 	s1*9

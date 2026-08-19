@@ -320,5 +320,5 @@ musicFlautoIMvtIII = \relative c {
 	f r r
 	R4.
 	r8. f16-.-\offset X-offset -2.5 ^\pp f8-.
-	f8 r r \tweak direction #-1 \textEndMark \dacapoallegroscherzandosinalsegnopoifine \section \key bes \major s8
+	f8 r r \textMarkAlignKeySignature \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key bes \major s8
 }

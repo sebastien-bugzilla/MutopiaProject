@@ -49,10 +49,33 @@ correctionMvtIV = \markup {
 	"In Mvt IV, bar 168, for clarinetto II, a missing natural is added on the c at the end of the bars. It is based on part score."
 	
 	% bar 24, Viola / violoncello
-	"In Mvt IV, bar 24, a 'bes' is replaced by a 'b' in the main theme. In all audio version I have it is played with a b."
+	"In Mvt IV, bar 24, for viola and cello, a 'bes' is replaced by a 'b' in the main theme. In all audio version I have it is played with a b."
+	
+	% bar 137, Oboe I
+	"In Mvt IV, bar 137, for oboe I, the slur on the first notes is corrected to copy the sluring of violins. It is based also on part score."
+	
+	% bar 198, Oboe I
+	"In Mvt IV, bar 137, for Oboe I, a slur is added on the third beat to match the same expression than for violins."
 }
 correctionFlauti = \markup {
 	
 	% Mvt III, bar 303 & 305, Flauto I
 	"In MVt III, bars 303 & 305, for flauto I, a missing dot is added to the eighth rest. It is based on conductor score."
+}
+correctionOboi = \markup {
+	
+	% Mvt II, bar 151, oboe I
+	"In Mvt II, bar 151, for Oboe I, a missing sharp is added on the last note. It is based on conductor score and other voices (flutes, viola and celli)."
+	
+	% Mvt IV, bar 149, Oboe I
+	"In Mvt IV, bar 149, for Oboe I, the notes on the third beat are not correct. Conductor score is prefered."
+	
+	% Mvt IV, bar 196, Oboe I
+	"In Mvt IV, bar 196, for Oboe I, the articulation on the third beat is different than in conductor score. Conductor score is version is prefered, as it is shared with violins."
+	
+	% Mvt IV, bar 221, Oboe I
+	"In Mvt IV, bar 221, for Oboe I, a b sharp is replaced by a b natural to match conductor score."
+	
+	% Mvt I, bar 305-306, Oboe II
+	"In Mvt I, bars 305 & 306, for Oboe II, the octave of the b is corrected. Conductor version is supposed correct."
 }
