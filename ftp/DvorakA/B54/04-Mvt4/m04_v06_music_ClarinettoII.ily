@@ -9,10 +9,10 @@ musicClarinettoIIMvtIV = \relative c {
 	\key g \major
 	\transposition bes
 % Bars 1 to 5
-	R1*4
+	\mmrLength #30 R1*3
 	
 	
-	
+	R1
 	r2 e'4(\ff e'->~
 % Bars 6 to 10
 	\time 2/4 e8 d16 c) b8-. c-.
@@ -59,12 +59,12 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 41 to 45
 	c->-\dimmarkup
 	c->
-	R1
-	R1*3
+	R1*6
+	
 	
 % Bars 46 to 50
 	
-	R1*2
+	
 	
 	r4 b\p r a
 	r-\pocoapococresc b r c
@@ -116,24 +116,20 @@ musicClarinettoIIMvtIV = \relative c {
 	bes,2\pp bes~
 	bes1~ \section \mark \default
 	\key ees \major bes4 r r2
-	R1*2
+	R1*7
 	
 % Bars 96 to 100
-	R1
-	R1*4
-	
-	
 	
 % Bars 101 to 105
 	b'2.\p b4(
 	dis2.) dis4(
 	ees!2\<~ ees4 des)\!
-	bes2.\fz\> g4\!
+	bes2.-\offset X-offset 0.5 \fz\> g4\!
 	aes1\pp~
 % Bars 106 to 110
 	aes4 r r2
-	R1
-	R1*6
+	R1*7
+	
 % Bars 111 to 115
 	
 	
@@ -162,7 +158,7 @@ musicClarinettoIIMvtIV = \relative c {
 	g r r2
 	R1*2
 	
-	<< bes1\f\< {s4 s s s\!}>>
+	bes1\f\<
 	e2\ff r 
 % Bars 136 to 140
 	r4 e-^ r e-^
@@ -216,7 +212,7 @@ musicClarinettoIIMvtIV = \relative c {
 	a)\pp
 	bes2.\pp bes4~
 	bes bes-.(\< bes-. bes-.)\!
-	bes2.\fz\> bes4\p~
+	\hairpinShorten #'(-0.3 . -0.3) bes2.\fz\> bes4\p~
 	bes bes-.(\> bes-. bes-.)\!
 % Bars 181 to 185
 	bes2.\pp bes4~
@@ -234,7 +230,7 @@ musicClarinettoIIMvtIV = \relative c {
 	c1\p~
 	c-\crescmarkup
 	c
-	<< c\f\< {s4 s s s\!}>>
+	c\f\<
 	fis!2\ff r
 % Bars 196 to 200
 	r4 fis-> r fis->
@@ -260,7 +256,7 @@ musicClarinettoIIMvtIV = \relative c {
 	r d'!-.\ff d-. ees-.
 	ees r fes-. fes-.
 	d!8-. r r4 r2
-	R1*3^\brackM\cliimutainclarinettobassob
+	R1*3_\mutainclar_bassob
 % Bars 221 to 225
 	
 	
@@ -270,12 +266,12 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 226 to 230
 	ais1(~\fz\>
 	ais\pp
-	b4)^\brackM\mutainclii r r2
+	b4) r_\brackM\mutainclii r2
 	r8. fis'16\p fis4 r2
 	r8. fis16 fis4 r2
 % Bars 231 to 235
-	R1
-	R
+	R1*2
+	
 	r8. cis'16\p cis4 r2
 	r8. cis16 cis4 r2
 	R1
@@ -293,7 +289,7 @@ musicClarinettoIIMvtIV = \relative c {
 	r4 aes\p r aes-\crescmarkup
 % Bars 246 to 250
 	r b! r b
-	r a\mf r a
+	r a!\mf r a
 	r a->\< r a->\!
 	r8 a16-.\mf a-. a8-. a-. a-. a-. a-. a-. 
 	r fis-.\f\> r fis-. r a-. r dis-.\! \mark \default
@@ -342,9 +338,9 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 286 to 290
 	r c'(\pp b! a)
 	r c( b a)
-	R1*2
+	R1*4
 	
-	R1*2
+	
 % Bars 291 to 295
 	
 	r4 d,\pp r d
@@ -380,7 +376,7 @@ musicClarinettoIIMvtIV = \relative c {
 	e\> g fis4.\! e8)
 	d2.(\fz c4~
 	c2\> a4 g\!
-	fis2.)-\dimmarkup fis4\pp
+	fis2.)-\offset X-offset -2.5 -\dimmarkup fis4\pp
 % Bars 321 to 325
 	e2( d) \mark \default
 	g4\pp g r fis
@@ -392,7 +388,7 @@ musicClarinettoIIMvtIV = \relative c {
 	r d r d
 	r cis-\crescmarkup r cis
 	r c! r c
-	<< {b2( c)} {s8\p\< s s s\! s\> s s s\!}>>
+	<< {b2( c)} {\hairpinShorten #'(-0.5 . 0.7) s8-\offset X-offset -1 \p\< s s s \hairpinShorten #'(-0.7 . 0) s\> s s s\!}>>
 % Bars 331 to 335
 	b2(\pp c)
 	<< {b2( c)} {s8\< s s s\! s\> s s s\!}>>
@@ -420,7 +416,7 @@ musicClarinettoIIMvtIV = \relative c {
 % Bars 351 to 355
 	g
 	<< g\<~ {s4 s s s\!}>>
-	<< g2 {s8\> s s s\!}>> r2
+	<< g2 {\hairpinShorten #'(0 . -1) s8\> s s s\!}>> r2
 	e1\pp(
 	fis)
 % Bars 356 to 360

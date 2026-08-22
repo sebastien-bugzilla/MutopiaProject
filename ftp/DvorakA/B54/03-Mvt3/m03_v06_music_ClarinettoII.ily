@@ -27,8 +27,8 @@ musicClarinettoIIMvtIII = \relative c {
 	
 	
 % Bars 16 to 20
-	R4.\fermata \section
-	\time 3/8 R4.*7
+	\once \ni R4.\fermata \section
+	\time 3/8 \mmrLength #22 \mmrnDown R4.*7
 	
 	
 	
@@ -37,7 +37,7 @@ musicClarinettoIIMvtIII = \relative c {
 	
 	
 	\voiceTwo r8 r8. \oneVoice d16\f
-	<< c4.\mf\>~ {s8 s s\!}>>
+	c4.\mf\>~
 % Bars 26 to 30
 	c8\p c-. c-.
 	d4.->
@@ -57,21 +57,17 @@ musicClarinettoIIMvtIII = \relative c {
 	d-. g,-. d'-.
 	c r r
 % Bars 41 to 45
-	R4.*12
+	R4.*17
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
-	
-	R4.*4
-	
-	
 % Bars 56 to 60
 	
-	R4.
+	
 	\ni \mmrPos #4 R4.
-	\mmrPos #4 R
-	\mmrPos #4 R \no
+	\mmrPos #6 R
+	\mmrPos #6 R \no
 % Bars 61 to 65
 	g,4.->\pp~
 	g4 r8
@@ -79,13 +75,9 @@ musicClarinettoIIMvtIII = \relative c {
 	g4 r8
 	R4. \mark \default
 % Bars 66 to 70
-	R4.*9
+	R4.*11
 % Bars 71 to 75
 	
-	
-	
-	
-	R4.*2
 % Bars 76 to 80
 	
 	\ni \mmrPos #-4 R4. \no
@@ -97,13 +89,13 @@ musicClarinettoIIMvtIII = \relative c {
 	\ni \mmrPos #-4 R4. \no
 	cis'8-.\fp gis-. cis-.
 % Bars 86 to 90
-	R4.
-	R4.
-	R
-	R4.*2
+	R4.*5
+	
+	
+	
 	
 % Bars 91 to 95
-	cis,8-.\pp gis-. cis-.
+	cis,8-.-\offset X-offset -1 \pp gis-. cis-.
 	R4.*10
 % Bars 96 to 100
 	
@@ -136,7 +128,7 @@ musicClarinettoIIMvtIII = \relative c {
 	R4.*5
 % Bars 126 to 130
 	\mark \default
-	c4\ff( g16 b
+	\shape #'((0 . -1)(0 . -0.5)(0 . 0)(0 . 0)) Slur c4\ff( g16 b
 	c8) g-. c-.
 	d( g, d')
 	f16( e d cis d8)
@@ -156,16 +148,16 @@ musicClarinettoIIMvtIII = \relative c {
 	g-. c,-. g'-.
 % Bars 146 to 150
 	c,4.
-	e4 c16( e
+	e4 a,16( e'
 	d8) a-. d-.
 	b-. g-. b-.
 	c r r
 % Bars 151 to 155
-	c4\fp c16( g'
-	f8) c-. f-.
+	c4\fp c8(
+	f) c-. f-.
 	c4 c8
 	c4.
-	a4->-\fpdim a8
+	a4-\fpdim a8
 % Bars 156 to 160
 	a4 a8
 	g4 g8
@@ -175,11 +167,11 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 161 to 165
 	
 	\mark \default
-	R4.*3
+	R4.*4
 	
 	
 % Bars 166 to 170
-	R4.
+	
 	d8\pp r r
 	c r r
 	R4.*4
@@ -198,21 +190,21 @@ musicClarinettoIIMvtIII = \relative c {
 	g!8\>[-. r g-.]\!
 % Bars 181 to 185
 	c\p r r
-	b\ff r r 
+	b\ff r r \markCoda
 	\startVoltaI c8\fp r r
-	R4.*10
+	R4.*7
 	
 % Bars 186 to 190
 	
 % Bars 191 to 195
+	\tempoXoffset #-1 R4.*4
 	
 	
-	
-	R4. \section
-	\startVoltaII c8\ff r r \section \endVolta
+	\tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII c8\ff r r \tweak direction #-1 \textEndMark \finemarkup \section \endVolta \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\key ees \major \time 3/8 \sectionLabel "TRIO" ees,4.->\fp
+		\key ees \major \removeTimeSignatureEoL \time 3/8 \sectionLabel "TRIO" ees,4.->\fp
 		ees8.-> g16-. g8-.
 		f4 r8
 		R4.
@@ -221,10 +213,10 @@ musicClarinettoIIMvtIII = \relative c {
 		ees8[-> r16-\crescmarkup g-. g8-.]
 		a->[ r16 a-. a8-.]
 		a\mf r r
-		r8. a16-.\f\< a8-.\!
+		r8. \hairpinShorten #'(-0.5 . -1) a16-.\f\< a8-.\!
 		bes4\fz r8
 % Bars 206 to 210
-		r r c-.\mf\<
+		r r \hairpinShorten #'(-0.5 . -1) c-.-\offset X-offset -1.5 \mf\<
 		c4\fz r8
 		r r bes-.-\pdim
 		bes4 r8
@@ -242,10 +234,10 @@ musicClarinettoIIMvtIII = \relative c {
 		b4\!-> r8
 		R4.*2
 		
-		<< bes4.->\p\< {s8 s s\!}>>
+		<< \hairpinShorten #'(-0.3 . -1.5) bes4.->\p\< {s8 s s\!}>>
 % Bars 221 to 225
 		bes4 r8
-		r8. c16-.\< c8-.\!
+		r8. c16-.\< c8-.
 		b8->\mf r r
 		R4.*2
 		
@@ -305,22 +297,18 @@ musicClarinettoIIMvtIII = \relative c {
 % Bars 276 to 280
 		R4. \mark \default
 	}
-	R4.*7
+	R4.*13
 % Bars 281 to 285
-	
-	
-	
-	R4.*6
 	
 % Bars 286 to 290
 	
 	
 	
 	
-	\ni \mmrPos #-4 R4.
+	\ni \mmrPos #-8 R4.
 % Bars 291 to 295
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-8 R
+	\mmrPos #8 R \no
 	ees8.\mf g16-. g8-.
 	g4 r8
 	r8. aes16-. aes8-.
@@ -356,7 +344,7 @@ musicClarinettoIIMvtIII = \relative c {
 	g8.\! g16\ff g8
 % Bars 321 to 324
 	g8 r r
-	R4.*3
+	\mmrLength #17 R4.*3
 	
-	\section \key c \major s8
+	\offset X-offset 3.5 \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key c \major s8
 }

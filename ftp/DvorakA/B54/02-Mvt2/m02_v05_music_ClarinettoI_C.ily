@@ -41,7 +41,7 @@ musicClarinettoIMvtII = \relative c {
 	c4.(~\fz
 	\hairpinShorten #'(0 . -4) c8\> des4\!) \partCombineAutomatic
 	d!8(\p c-\dimmarkup d)
-	f(\> ees) des16-.(\! c-.)
+	f(\> ees) d16-.(\! c-.)
 % Bars 46 to 50
 	\beamOffset #'(0.8 . 0.8) ees-.( des-.-\dimmarkup c8-. b-.)
 	c16\pp r r8 r

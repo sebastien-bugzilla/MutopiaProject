@@ -20,6 +20,8 @@
 \include "./00-Common/DvorakSymph5_LayoutParts.ily"
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
+\include "./00-Common/DvorakSymph5_Tempi.ily"
+%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_Format_Part03_Clarinetti.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v05_music_ClarinettoI.ily"
@@ -42,20 +44,23 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54)"
+			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54) — Clarinetti"
 		}
 		instrument = \markup {
-			"Clarinetti"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatClarinettoIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(clarinettoI) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(clarinettoI) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtI
 			}
@@ -70,16 +75,20 @@
 			}
 		}
 		\layout {
+%			system-count = 14
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatClarinettoIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(clarinettoI) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(clarinettoI) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtII
 			}
@@ -94,6 +103,7 @@
 			}
 		}
 		\layout {
+%			system-count = 11
 		}
 	}
 	\score {
@@ -101,9 +111,9 @@
 			\new Voice {
 				\formatClarinettoIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(clarinettoI) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(clarinettoI) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtIII
 			}
@@ -114,20 +124,24 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1 \bold 3.
 			}
 		}
 		\layout {
+%			system-count = 21
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatClarinettoIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(clarinettoI) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(clarinettoI) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtIV
 			}
@@ -136,22 +150,26 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 24
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatClarinettoIIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(clarinettoII) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(clarinettoII) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtI
 			}
@@ -166,6 +184,7 @@
 			}
 		}
 		\layout {
+%			system-count = 6
 		}
 	}
 	\score {
@@ -173,9 +192,9 @@
 			\new Voice {
 				\formatClarinettoIIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(clarinettoII) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(clarinettoII) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtII
 			}
@@ -186,20 +205,24 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.6 \bold 2.
 			}
 		}
 		\layout {
+%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatClarinettoIIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(clarinettoII) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(clarinettoII) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtIII
 			}
@@ -210,20 +233,24 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1.2 \bold 3.
 			}
 		}
 		\layout {
+%			system-count = 5
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatClarinettoIIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(clarinettoII) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(clarinettoII) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtIV
 			}
@@ -234,10 +261,11 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.1 \bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 13
 		}
 	}
 }

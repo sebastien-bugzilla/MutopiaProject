@@ -9,7 +9,7 @@ musicClarinettoIIMvtII = \relative c {
 	\key c \minor
 	\transposition a
 % Bars 1 to 5
-	R4.*24
+	\mmrLength #33 R4.*24
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -38,8 +38,8 @@ musicClarinettoIIMvtII = \relative c {
 	
 	g8.\fz r16 g-. bes-.
 	g8._\fzcresc r16 g-. bes-.
-	g4(\f\< aes8)\!
-	g( f)_\dimmarkup f\p
+	g4(-\offset X-offset -1 \f\< aes8)\!
+	g( f)-\offset X-offset -2.5 _\dimmarkup f\p
 % Bars 41 to 45
 	R4.*3
 	
@@ -58,11 +58,11 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section \mark \default
-	\key c \major e4.\fp
+	\key c \major \tempoXoffset -3 e4.\fp
 	c4~ c16. gis32-.
 	gis4.\fz\>~
 % Bars 61 to 65
-	gis4\! gis8\p
+	gis4 gis8-\tweak extra-offset #'(0 . 0.5) \p
 	a r r
 	r r r16. d32
 	d4.->\fz\<~
@@ -84,18 +84,18 @@ musicClarinettoIIMvtII = \relative c {
 	b4.(~\pp
 % Bars 81 to 85
 	b8 c d)
-	R4.*3
+	R4.*2
 	
-	
+	\tempoXoffset #3 R4.
 	d8(-\crescmarkup ees f)
 % Bars 86 to 90
 	ees( f g)
 	fis(\< g a!)\! \section
 	\key c \minor bes8\f r r
 	R4. \mark \default
-	R4.
+	R4.*4
 % Bars 91 to 95
-	R4.*3
+	
 	
 	
 	aes4.->\fp
@@ -104,11 +104,11 @@ musicClarinettoIIMvtII = \relative c {
 	ees4.->\fp(
 	d8.) d16-.(\> d-. d-.)\!
 	ees8 r r
-	R4.*3
+	R4.*5
 	
 % Bars 101 to 105
 	
-	R4.*2
+	
 	
 	g,4.\p(~
 	g
@@ -119,10 +119,10 @@ musicClarinettoIIMvtII = \relative c {
 	
 	ees4.(->\fp\>~
 % Bars 111 to 115
-	<< ees4. {s8 s4-\dimmarkup }>>
+	ees4.\dimD
 	f16)\pp r r8 r
-	R4.
-	R4.*4
+	R4.*5
+	
 	
 % Bars 116 to 120
 	
@@ -134,11 +134,11 @@ musicClarinettoIIMvtII = \relative c {
 	ges( f ees)
 	f( ges f)
 	ges-.\ff^\secco ees-. ees-.
-	ees-. ees-. ees-.
+	\tempoXoffset #5 ees-. ees-. ees-.
 	d!-. ees-. ees-. \mark \default
 % Bars 126 to 130
 	g!4.\f
-	<< d4->~ {s8 s-\dimmarkup }>> d16. g,32
+	<< d4->~ {s8 s-\dimmarkup }>> \stemUp d16. g,32 \stemNeutral
 	g4\p r8
 	R4.
 	r8 r r16 f'\mf
@@ -146,24 +146,20 @@ musicClarinettoIIMvtII = \relative c {
 	f4-> r16 d-\dimmarkup
 	d4-> r16 b\p
 	b4 r8
-	R4.*6
+	R4.*7
 	
 % Bars 136 to 140
 	
-	
-	
-	
-	R4.*2
 % Bars 141 to 145
-	
-	R4. \section \mark \default
-	R4.*2
+	\mmrLength #18 R4.*2
+	\section \mark \default
+	\mmrLength #25 \mmrnDown \tempoXoffset -1.5 R4.*2
 	
 	\ni \mmrPos #-4 R4.
 % Bars 146 to 150
 	\mmrPos #-4 R \no
 	d4.(\p
-	<< c)\< {s8 s s\!}>>
+	c)\< 
 	c4(\fz d8)
 	c\> r r\!
 % Bars 151 to 155
@@ -176,12 +172,12 @@ musicClarinettoIIMvtII = \relative c {
 	ees4~ ees16 r
 	R4.*2
 	
-	r8 r bes'16(\fp\> aes\!
-	g8) r bes16(\fp\> aes\!
+	r8 r bes'16(\fp\> aes
+	g8)\! r bes16(\fp\> aes
 % Bars 161 to 165
-	g8) r r
+	g8)\! r r
 	R4.
-	r8 r bes16-.\f bes-. \mark \default
+	r8 r bes16-.\f bes-. \markXoffset #-0.2 \mark \default
 	r32 des-.\fp des-. des-.  des-. des-. des-. des-. des-. des-. des-. des-. 
 	des-. des-. des-. des-. des-. des-. des-. des-. des-. des-. des-. des-. 
 % Bars 166 to 170
@@ -193,7 +189,7 @@ musicClarinettoIIMvtII = \relative c {
 % Bars 171 to 175
 	f'4(\ff ees8)
 	f4( ees8)
-	f8-.-\dimmarkup ees-. ees-.\p
+	f8-.-\offset X-offset -1 -\dimmarkup ees-. ees-.\p
 	ees-.\pp ees-. d-.
 	c r r
 % Bars 176 to 180
@@ -221,7 +217,7 @@ musicClarinettoIIMvtII = \relative c {
 	c8 r r
 	R4.*2
 	
-	r8 ees'-.\pp ees-.
+	r8 ees'-.^\pp ees-.
 % Bar 201
-	ees4.\fermata \fine
+	ees4.\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

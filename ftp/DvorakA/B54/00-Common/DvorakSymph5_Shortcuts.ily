@@ -22,6 +22,10 @@ ppsempre = \markup {\hspace #-0.82 \dynamic pp \italic sempre}
 %--------------------
 pcresc = \markup {\hspace #-0.08 \dynamic p \italic cresc.}
 pcrescmolto = \markup {\hspace #-0.08 \dynamic p \italic "cresc. molto"}
+pcresc_molto = \markup {
+	\hspace #-0.08 \dynamic p \italic \translate #'(0 . 2)
+	\column { \lower #1.5 "cresc." "molto"}
+}
 plegato = \markup {\hspace #-0.08 \dynamic p \italic legato}
 pdim = \markup {\hspace #-0.08 \dynamic p \italic dim.}
 pmoltoespress = \markup {\hspace #-0.08 \dynamic p \italic "molto espress."}
@@ -227,6 +231,11 @@ emutainf = \markup {"E muta in F"}
 mutainasdes = \markup {\concat {"muta in A" \text-flat ", D" \text-flat}}
 mutainbf = \markup {\concat {"muta in B" \text-flat ", F"}}
 cliimutainclarinettobassob = \markup {\concat {"Cl.II. muta in Clarinetto basso B" \text-flat}}
+mutainclar_bassob = \markup {
+	\center-column {
+		\lower #1.5 "[muta in Clar." \concat { "basso B" \text-flat "]"}
+	}
+}
 mutainclii = \markup {"muta in Cl.II."}
 mutaincf = \markup {"muta in C, F"}
 cmutaindes = \markup {\concat {"C muta in D" \text-flat}}
@@ -310,7 +319,7 @@ timpinae = \markup {
 		\lower #1 "Timp." "in A/E"
 	}
 }
-
+ina = \markup {\italic "[in A]"}
 %--------------------
 % functions
 %--------------------
@@ -577,8 +586,19 @@ tempoOsf = #(define-music-function
 
 removeTimeSignatureEoL = \once \override Staff.TimeSignature.break-visibility = ##(#f #t #t) 
 
-textMarkAlignKeySignature = \once \override Score.TextMark.break-align-symbols = #'(key-signature staff-bar clef)
+textMarkAlignKeySignature = 
+	\once \override Score.TextMark.break-align-symbols = #'(
+		key-cancellation key-signature staff-bar clef)
 
+tempoDown = \once \override Score.MetronomeMark.direction = #-1 
+
+tempoExtraOffset = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override Score.MetronomeMark.extra-offset = #offset
+	#}
+)
 
 %aIIOmit = \once \omit Voice.CombineTextScript
 
@@ -733,17 +753,6 @@ textMarkAlignKeySignature = \once \override Score.TextMark.break-align-symbols =
 %		\once \override TextScript.outside-staff-priority = #prio
 %	#}
 %)
-
-%tempoDown = \once \override Score.MetronomeMark.direction = #-1 
-
-%tempoExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override Score.MetronomeMark.extra-offset = #offset
-%	#}
-%)
-
 
 %tupletOffset = #(define-music-function
 %	(offset)

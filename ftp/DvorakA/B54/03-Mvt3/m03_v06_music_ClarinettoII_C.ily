@@ -155,16 +155,16 @@ musicClarinettoIIMvtIII = \relative c {
 	g-. c,-. g'-.
 % Bars 146 to 150
 	c,4.
-	e4 c16( e
+	e4 a,16( e'
 	d8) a-. d-.
 	b-. g-. b-.
 	c r r
 % Bars 151 to 155
-	c4\fp c16( g'
-	f8) c-. f-.
+	c4\fp c8( 
+	f) c-. f-.
 	c4 c8
 	c4.
-	a4->-\fpdim a8
+	a4-\fpdim a8
 % Bars 156 to 160
 	a4 a8
 	g4 g8

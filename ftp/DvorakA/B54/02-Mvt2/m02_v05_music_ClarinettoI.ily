@@ -9,7 +9,7 @@ musicClarinettoIMvtII = \relative c {
 	\key c \minor
 	\transposition a
 % Bars 1 to 5
-	R4.*24
+	\mmrLength #32 R4.*24
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -38,14 +38,14 @@ musicClarinettoIMvtII = \relative c {
 	ees32(\< f ges f ges aes bes16) a32( c a f)\!
 	bes,8.\fz r16 bes-. des-.
 	bes8._\fzcresc r16 bes-. des-.
-	bes4(\f\< c8)\!
-	bes( aes)_\dimmarkup g\p
+	\hairpinShorten #'(0 . -1) bes4(\f\< c8)\!
+	bes( aes)-\offset X-offset -3 _\dimmarkup g\p
 % Bars 41 to 45
-	<< c4.->\fz\> {s8 s s\!}>>
+	\hairpinShorten #'(-0.3 . -0.3) c4.->\fz\>
 	c4.(~\fz
 	c8\> des4\!)
 	d!8(\p c-\dimmarkup d)
-	f(\> ees) des16-.( c-.)\!
+	f(\> ees) d16-.( c-.)\!
 % Bars 46 to 50
 	ees-.( des-.-\dimmarkup c8-. b-.)
 	c16\pp r r8 r
@@ -62,10 +62,10 @@ musicClarinettoIMvtII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 % Bars 61 to 65
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 	c4.->\fz
 	a4\>~ a16. f32\!
-	f4.->\fz\<~
+	\hairpinShorten #'(-0.3 . -1) f4.->-\offset X-offset -1 \fz\<~
 	f8.\! e16(--\> g-- f--)\!
 % Bars 66 to 70
 	e8\p r r
@@ -86,7 +86,7 @@ musicClarinettoIMvtII = \relative c {
 	d8  e f)
 	<< a4.(\p {s8 s s\<}>>
 	f4~ f16. ees32)\!
-	<< ees4.-> {s8 s4-\crescmarkup}>>
+	<< \tempoXoffset #3.5  ees4.-> {s8 s4-\crescmarkup}>>
 	f8( g aes)
 % Bars 86 to 90
 	g( aes bes)
@@ -113,19 +113,19 @@ musicClarinettoIMvtII = \relative c {
 	des~
 	des
 % Bars 106 to 110
-	<< ees->\fp\<~ {s8 s s\!}>>
+	<< \hairpinShorten #'(-0.3 . -1) ees->-\offset X-offset -1 \fp\<~ {s8 s s\!}>>
 	<< ees4.\> {s8 s s\!}>>
 	des4.\p(~
 	des4\<~ des16. c32)\!
 	g'4.(->\fp\>~
 % Bars 111 to 115
-	<< g4. {s8 s4-\dimmarkup }>>
+	g4.\dimD
 	aes16)\pp r r8 r
 	R4.
 	aes->\f
 	f4(~ f16 des)
 % Bars 116 to 120
-	<< des4.->\fz~ {s8 s4-\crescmarkup}>>
+	des4.->-\fzcresc~
 	des4.
 	bes'4.(->\mf~
 	bes8 aes-\crescmarkup ges)
@@ -134,11 +134,11 @@ musicClarinettoIMvtII = \relative c {
 	bes( aes ges)
 	f( ges aes)
 	ges-.\ff^\secco ges-. ges-.
-	ges-. ges-. ges-.
+	\tempoXoffset #5.5 ges-. ges-. ges-.
 	ges-. ges-. ges-. \mark \default
 % Bars 126 to 130
 	g!4.\f
-	<< d4->~ {s8 s-\dimmarkup }>> d16. g,32
+	<< d4->~ {s8 s-\dimmarkup }>> \stemUp d16. g,32 \stemNeutral
 	g4\p r8
 	R4.
 	r8 r r16 aes'\mf
@@ -155,9 +155,9 @@ musicClarinettoIMvtII = \relative c {
 	
 	g4.~\pp
 % Bars 141 to 145
-	g8 r r
+	\tempoXoffset #5 g8 r r
 	R4. \section \mark \default
-	R4.*2
+	\mmrLength #25 \mmrnDown R4.*2
 	
 	\ni \mmrPos #-4 R4.
 % Bars 146 to 150
@@ -169,17 +169,17 @@ musicClarinettoIMvtII = \relative c {
 % Bars 151 to 155
 	g16(-. aes-. g8-.\pp g-.)
 	g16 r r8 r
-	R4.
+	\mmrLength #11 R4.
 	r8 g,8.\p g16
 	g8-.( aes-. g-.)
 % Bars 156 to 160
 	aes4~ aes16 r
 	R4.*2
 	
-	r8 r des16(\fp\> c\!
-	bes8) r des16(\fp\> c\!
+	r8 r des16(\fp\> c
+	bes8)\! r des16(\fp\> c
 % Bars 161 to 165
-	bes8) r r
+	bes8)\! r r
 	R4.
 	r8 r des16-.\f des-. \mark \default
 	r32 f-.\fp f-. f-.  f-. f-. f-. f-.  f-. f-. f-. f-.
@@ -221,7 +221,7 @@ musicClarinettoIMvtII = \relative c {
 	c8 r r
 	R4.*2
 	
-	r8 g'-.\pp g-.
+	r8 g'-.\offset X-offset -2 ^\pp g-.
 % Bar 201
-	g4.\fermata \fine
+	g4.\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

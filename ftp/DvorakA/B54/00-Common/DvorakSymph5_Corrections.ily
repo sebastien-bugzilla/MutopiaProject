@@ -79,3 +79,29 @@ correctionOboi = \markup {
 	% Mvt I, bar 305-306, Oboe II
 	"In Mvt I, bars 305 & 306, for Oboe II, the octave of the b is corrected. Conductor version is supposed correct."
 }
+correctionClarinetti = \markup {
+	
+	% MvtI, bar 261, Clarinetto I
+	"In Mvt I, bar 261, for Clarinetto I, the indication \'in A\' is moved at the correct position (bar 261 instead of bar 269)."
+	
+	% Mvt I, bar 307, Clarinetto I
+	"In Mvt I, bar 307, for Clarinetto I, the a flat on the first beat of the measure, is not mentionned in the conductor score. Based on other voices (Oboi and violins), a a natural is necessary."
+	
+	% Mvt I, bar 403, Clarinetto I
+	"In Mvt I, bar 403, for Clarinetto I, a missing sharp is added on the first note of the measure."
+	
+	% Mvt II, bar 82 - 83, Clarinetto I
+	"In Mvt II, bar 82 & 83, for Clarinetto I, a missing crescendo hairpin is added."
+	
+	% Mvt III, bar 55, Clarinetto I
+	"In Mvt III, bar 55, for Clarinetto I, a dynamic fp is not reproduced because it is never reproduced anywhere else in the theme. It is more likely concern the oboe just above."
+	
+	% Mvt IV, bar 285, Clarinetto I
+	"In Mvt IV, bar 285, for Clarinetto I, a flat is replaced by a natural on the last note of the measure. It is conforted by the fact that many other voices (violin, oboi, viola) that play a g at the same place."
+	
+	% Mvt IV, bar 295, Clarinetto II
+	"In Mvt IV, bar 295, for Clarinetto II, a missing decrescendo hairpin is added."
+	
+	% Mvt IV, bar 380, Clarinetto II
+	"In Mvt IV, bar 380, for Clarinetto II, a missing piano dynamic is added on the second beat of the measure."
+}

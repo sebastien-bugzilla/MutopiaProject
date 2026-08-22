@@ -27,7 +27,7 @@ musicClarinettoIMvtIII = \relative c {
 	
 	
 % Bars 16 to 20
-	R4.\fermata \section
+	\once \ni R4.\fermata \section
 	\time 3/8 c4->(\fp g16 b
 	c8) g-. c-.
 	d-. g,-. d'-.
@@ -37,9 +37,9 @@ musicClarinettoIMvtIII = \relative c {
 	c8) b-. a-.
 	d-. a-. c-.
 	b16( c b a g f')\f
-	<< e4.\mf\>~ {s8 s s\!}>>
+	\hairpinShorten #'(-0.5 . -0.5) e4.-\offset X-offset -0.5 \mf\>~
 % Bars 26 to 30
-	e8\p e-. e-.
+	e8-\offset X-offset 0.5 \p e-. e-.
 	d4.->
 	f4-> d8
 	e4.\fp
@@ -47,7 +47,7 @@ musicClarinettoIMvtIII = \relative c {
 % Bars 31 to 35
 	dis4 dis8
 	e4 r8
-	bes'4->\fz g16(\mf bes
+	bes'4->-\offset X-offset -1 \fz g16(\mf bes
 	a8-.) c,-.\p a'-.
 	bes-. g-. bes-.
 % Bars 36 to 40
@@ -97,16 +97,15 @@ musicClarinettoIMvtIII = \relative c {
 	
 	
 	\ni \mmrPos #-4 R4.
-	\mmrPos #-4 R4. \no
+	\mmrPos #-6 R4. \no
 % Bars 86 to 90
 	gis8-.\fp cis,-. gis'-.
 	R4.
 	gis8-.\fp cis,-. gis'-.
-	R4.*2
+	R4.*13
 	
 % Bars 91 to 95
-	R4.
-	R4.*10
+	
 % Bars 96 to 100
 	
 % Bars 101 to 105
@@ -200,12 +199,12 @@ musicClarinettoIMvtIII = \relative c {
 	
 	
 	e8-.\p\< c-. e-.\!
-	c'16(\fz\> b a gis a8-.)\!
+	c'16(-\tweak extra-offset #'(0 . 0.3) \fz-\tweak extra-offset #'(0 . 0.3) \> b a gis a8-.)\!
 	g!8\>[-. r g-.]\!
 % Bars 181 to 185
 	c\p r r
-	d\ff r r 
-	\startVoltaI c4.\fp(~
+	d\ff r r \markCoda
+	\startVoltaI c4.-\offset X-offset 0.5 \fp(~
 	c~\pp
 	c4 g16 b
 % Bars 186 to 190
@@ -215,14 +214,14 @@ musicClarinettoIMvtIII = \relative c {
 	d![ r d](
 	f)[ r f](
 % Bars 191 to 195
-	bes4.)~\pp
+	\tempoDown \tempoExtraOffset #'(0.5 . 12.3) bes4.)~\pp
 	bes~
 	bes4 r8
-	R4. \section
-	\startVoltaII c,8\ff r r \section \endVolta
+	R4. \tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII c,8\ff r r \offset X-offset 1 \tweak direction #-1 \textEndMark \finemarkup \section \endVolta \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\key ees \major \time 3/8 \sectionLabel "TRIO" bes4.->\fp
+		\key ees \major \removeTimeSignatureEoL \time 3/8 \sectionLabel "TRIO" bes4.->\fp
 		bes8.-> bes16-. bes8-.
 		c4 r8
 		R4.
@@ -231,11 +230,11 @@ musicClarinettoIMvtIII = \relative c {
 		ees8[-> r16-\crescmarkup bes-. bes8-.]
 		c->[ r16 c-. c8-.]
 		c\mf r r
-		r8. d16-.\f\< d8-.\!
+		r8. \hairpinShorten #'(-0.3 . -0.3) d16-.\f\< d8-.
 		d4\fz r8
 % Bars 206 to 210
-		r r e-.\mf\<
-		f4\fz r8
+		r r \hairpinShorten #'(-0.7 . -0.5) e-.-\offset X-offset #-1 \mf-\tweak height #0.40 \<
+		f4-\offset X-offset 0.5 \fz r8
 		r r d-.-\pdim
 		ees4 r8
 		r r c-.\p
@@ -252,9 +251,9 @@ musicClarinettoIMvtIII = \relative c {
 		d!4\!-> r8
 		R4.*2
 		
-		<< des4.->\p\< {s8 s s\!}>>
+		des4.->\p\<
 % Bars 221 to 225
-		des4 r8
+		des4\! r8
 		r8. ees16-.\< ees8-.\!
 		d!8->\mf r r
 		R4.*2
@@ -341,13 +340,13 @@ musicClarinettoIMvtIII = \relative c {
 	r8. c16-.\f c8-.
 	c4(\> c8)\!
 % Bars 301 to 305
-	bes4.\p
+	\startMeasureCount bes4.\p
 	bes
 	bes-\pdim
 	bes
 	bes\pp
 % Bars 306 to 310
-	bes
+	bes \stopMeasureCount
 	bes4 r8
 	R4.*3
 	
@@ -357,7 +356,7 @@ musicClarinettoIMvtIII = \relative c {
 	bes8. bes16-. bes8-.
 	bes r r
 	r8. b16-.-\crescmarkup b8-.
-	b8. b16-.\< b8-.\!
+	b8. b16-.\< b8-.
 % Bars 316 to 320
 	b4\mf r8
 	r8. b16-\crescmarkup b8
@@ -366,7 +365,7 @@ musicClarinettoIMvtIII = \relative c {
 	g8.\! g16\ff g8
 % Bars 321 to 324
 	g8 r r
-	R4.*3
+	\mmrLength #17 R4.*3
 	
-	\section \key c \major s8
+	\textMarkAlignKeySignature \tweak direction #-1 \offset X-offset 2.5 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key c \major s8
 }
