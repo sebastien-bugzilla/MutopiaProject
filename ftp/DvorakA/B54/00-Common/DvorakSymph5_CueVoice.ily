@@ -1166,17 +1166,17 @@ cueVoiceFagottoIMvtI = \relative c {
 cueVoiceFagottoIMvtII = \relative c {
 	s4.*18
 	% bars 19 - 22
-	\voiceOne d'4.~^\pp^\markup {Cor.} 
+	\voiceOne d'4.~-\offset X-offset -1.5 ^\pp^\markup {Cor.} 
 	d8 r r
 	d4.~
 	d8 r r \oneVoice
 	s4.*43
 	% bars 66 - 67
-	\clef treble \voiceOne cis''4.^\fz^\markup {Fl.}
+	\clef treble \voiceOne cis''4.-\offset X-offset -2 ^\fz^\markup {Fl.}
 	a4~ a16. e32 \clef bass \oneVoice
 	s4.*30
 	% bars 98 - 101
-	\clef treble \voiceOne e'4.^\fp^\markup {Viol.}
+	\clef treble \oneVoice e'4.-\offset X-offset -2 ^\fp^\markup {Viol.}
 	c4(~ c16 g)
 	g4.(~
 	g4 a!8) \clef bass \oneVoice
@@ -1186,19 +1186,19 @@ cueVoiceFagottoIMvtII = \relative c {
 	g \oneVoice
 	s4.*32
 	% bars 142 - 144
-	\voiceTwo r8 r r16^\markup {Fag.II.} e'\pp
+	\voiceTwo r8 r r16-\offset X-offset -3 ^\markup {Fag.II.} e'\pp
 	a,8-. a-. r16 a
 	b8-. c-. r16 b \oneVoice
 	s4.*50
 	% bars 195 - 197
-	\voiceOne \clef treble a'''8(^\pp^\markup {Fl.} e' d16 c
+	\oneVoice \clef treble a'''8(-\offset X-offset -1.5 ^\pp-\offset X-offset -2 ^\markup {Fl.} e' d16 c
 	a8. b32 c b16\prall a)
-	a8 r16 e'(^\f c b) \clef bass
+	a8 r16 e'(-\offset X-offset -1 ^\f c b) \clef bass
 }
 cueVoiceFagottoIMvtIII = \relative c {
 	s4.*16
 	% bar 17
-	<>^\markup {Fl.Cl.}
+	<>-\offset X-offset -2 ^\markup {Fl.Cl.}
 	s4.*36
 	% bar 53
 	<>^\markup {Clar.Ob.}
@@ -1210,14 +1210,14 @@ cueVoiceFagottoIMvtIII = \relative c {
 	<>^\markup {Vle}
 	s4.*5
 	% bars 66 - 69
-	\stemDown \clef treble ees'16(\pp^\markup {Viol.} d c b c ees
+	\oneVoice \clef treble ees'16(\pp-\offset X-offset 1.5 ^\markup {Viol.} d c b c ees
 	g f ees d ees g
 	bes! a g f a bes
-	\stemUp c d ees f g a) \clef bass \stemNeutral
+	c d ees f g a) \clef bass 
 	s4.*14
 	% bars 84 - 85
-	\clef treble \voiceOne fis'8->^\fz^\markup {Fl.} b,-. fis'-.
-	b,-.^\fp^\markup {Ob.} fis-. b-. \clef bass \voiceOne
+	\clef treble \oneVoice fis'8->-\offset X-offset -2.5 ^\fz-\offset X-offset -3.5 ^\markup {Fl.} b,-. fis'-.
+	b,-.-\offset X-offset -2.5 ^\fp^\markup {Ob.} fis-. b-. \clef bass \voiceOne
 	s4.*3
 	% bar 89
 	<>^\markup {Fag.II.}
@@ -1237,7 +1237,7 @@ cueVoiceFagottoIMvtIII = \relative c {
 cueVoiceFagottoIMvtIV = \relative c {
 	s1*5 s2*1 s1*147
 	% bar 154
-	\clef treble \voiceOne r4^\markup {Viol.} b'''4(~^\fz b8 a16 g) fis8-.( g-.) \clef bass \oneVoice
+	\clef treble \voiceOne r4-\offset X-offset -3 ^\markup {Viol.} b'''4(~-\offset X-offset -1 ^\fz b8 a16 g) fis8-.( g-.) \clef bass \oneVoice
 	s1*54
 	% bar 209
 	\clef treble \voiceTwo cis,,4(\f^\markup {Oboe} d cis d) \oneVoice \clef bass
@@ -1248,28 +1248,31 @@ cueVoiceFagottoIMvtIV = \relative c {
 cueVoiceFagottoIIMvtI = \relative c {
 	s2*60
 	% bars 61 - 65
-	\voiceOne r8^\markup {Fg.I.} e'4->^\fp( d8)
+	\oneVoice r8-\offset X-offset -3 ^\markup {Fg.I.} e'4->^\fp( d8)
 	c16( e d e) c8-. b-.
 	a e'4->( d8)
 	c16( e d e) c8-. b-.
-	a r s4 \oneVoice
+	\voiceOne a r s4 \oneVoice
 	s2*37
 	% bars 103 - 104
-	\voiceOne d8\repeatTie(^\markup {Fg.I.} dis fis e
+	\oneVoice d8\repeatTie(-\offset X-offset -5 ^\markup {Fg.I.} dis fis e
 	d! cis b cis) \oneVoice
 	s2*224
 	% bar 329
 	<>^\markup {Fg.I.}
 	s2*64
 	% bars 393 - 394
-	\voiceOne f,16(^\mf^\markup {Fg.I.} a g f c' bes a f
+	\voiceOne f,16(-\offset X-offset -1.5 ^\mf^\markup {Fg.I.} a g f c' bes a f
 	bes c bes a g f e d) \oneVoice
+	<>^\markup {Fg.I.}
+	s2*26
+	% bar 421
 	<>^\markup {Fg.I.}
 }
 cueVoiceFagottoIIMvtII = \relative c {
 	s4.*18
 	% bars 19 - 22
-	\voiceOne d'4.~^\pp^\markup {Cor.} 
+	\voiceOne d'4.~-\offset X-offset -1 ^\pp^\markup {Cor.} 
 	d8 r r
 	d4.~
 	d8 r r \oneVoice
@@ -1288,40 +1291,40 @@ cueVoiceFagottoIIMvtII = \relative c {
 	bes\! \oneVoice
 	s4.*91
 	% bars 195 - 197
-	\voiceOne \clef treble a''8(^\pp^\markup {Fl.} e' d16 c
+	\oneVoice \clef treble a''8(-\offset X-offset -1.5 ^\pp^\markup {Fl.} e' d16 c
 	a8. b32 c b16\prall a)
-	a8 r16 e'(^\f c b) \clef bass
+	a8 r16 e'(-\offset X-offset -1 ^\f c b) \clef bass
 }
 cueVoiceFagottoIIMvtIII = \relative c {
 	s4.*16
 	% bar 17
-	<>^\markup {Fl.Cl.}
+	<>-\offset X-offset -2 ^\markup {Fl.Cl.}
 	s4.*28
 	% bar 45
-	<>^\markup {Fg.I.}
+	<>-\offset X-offset -3 ^\markup {Fg.I.}
 	s4.*16
 	% bar 61
-	<>^\markup {Cl.}
+	<>-\offset X-offset -1 ^\markup {Cl.}
 	s4.*5
 	% bars 66
 	<>^\markup {Viol.}
 	s4.*4
 	% bar 70
-	<>^\markup {Fg.I.}
+	<>-\offset X-offset -2 ^\markup {Fg.I.}
 	s4.*7
 	% bar 77
-	\clef treble \voiceOne a'''8->^\mf^\markup {Ob.} e-. a-. \oneVoice 
+	\clef treble \oneVoice a'''8->-\offset X-offset -2 ^\mf^\markup {Ob.} e-. a-. \oneVoice 
 	s4.*6
 	% bars 84 - 86
-	\clef treble \voiceOne fis'8->^\fz^\markup {Fl.} b,-. fis'-.
+	\clef treble \oneVoice fis'8->-\offset X-offset -2.5 ^\fz-\tweak extra-offset #'(-1 . 11) _\markup {Fl.} b,-. fis'-.
 	b,,-.^\fp^\markup {Cl.} fis-. b-. \clef bass
-	fis-.^\fp^\markup {Fg.I.} b,-. fis'-. \oneVoice
+	fis-.\fp-\offset X-offset -5 -\tweak extra-offset #'(2.2 . 2.8) ^\markup {Fg.I.} b,-. fis'-. \oneVoice
 	s4.*1
 	% bar 88
-	\voiceOne fis8-. b,-. fis'-. \oneVoice
+	\oneVoice fis8-. b,-. fis'-. \oneVoice
 	s4.*95
 	% bar 184
-	<>^\markup {Fg.I.}
+	<>-\offset X-offset -2 ^\markup {Fg.I.}
 	s4.*17
 	% bar 201
 	<>^\markup {Fg.I.}
@@ -1336,7 +1339,7 @@ cueVoiceFagottoIIMvtIII = \relative c {
 cueVoiceFagottoIIMvtIV = \relative c {
 	s1*5 s2*1 s1*147
 	% bar 154
-	\clef treble \voiceOne r4^\markup {Viol.} b'''4(~^\fz b8 a16 g) fis8-.( g-.) \clef bass \oneVoice
+	\clef treble \voiceOne r4-\offset X-offset -1 ^\markup {Viol.} b'''4(~-\offset X-offset -1 ^\fz b8 a16 g) fis8-.( g-.) \clef bass \oneVoice
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   C O R N I                    #

@@ -48,14 +48,14 @@ musicFagottoIIMvtII = \relative c {
 	f,4.
 	R4.
 % Bars 36 to 40
-	r8 c'\p\< d\!
+	r8 c'\p\< d
 	a8.\fz r16 r8
 	a8._\fzcresc r16 r8
 	a4.(~\f
-	a8 bes-\dimmarkup b)\p
+	a8 bes-\offset X-offset -2 -\dimmarkup b)\p
 % Bars 41 to 45
-	c4(\fz\> b!8)\! 
-	c4(\fz\> b8)\!
+	\hairpinShorten #'(-0.5 . 0) c4(\fz\> b!8)\! 
+	\hairpinShorten #'(-0.5 . 0) c4(\fz\> b8)\!
 	c(\> cis d)\!
 	e8(\p fis-\dimmarkup gis)
 	b(\> a) f!16-.(\! f-.)
@@ -64,23 +64,19 @@ musicFagottoIIMvtII = \relative c {
 	a,4.\p~
 	a~-\dimmarkup
 	a8\pp r r
-	R4.*3
+	R4.*8
 % Bars 51 to 55
 	
-	
-	R4.*2
-	
-	R4.*3
 % Bars 56 to 60
 	
 	\section \mark \default 
-	\key a \major R4.*10
+	\key a \major \tempoXoffset #-4 \mmrnDown R4.*12
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
 	
-	R4.*2
+	
 	
 	\ni \mmrPos #4 R4.
 % Bars 71 to 75
@@ -99,7 +95,7 @@ musicFagottoIIMvtII = \relative c {
 	R4.
 	<< b,4.\p~ {s8 s s\<}>>
 	<< b4. {s8 s s\!}>>
-	g4._\fzcresc~
+	\tempoXoffset #4 g4._\fzcresc~
 	g~
 % Bars 86 to 90
 	g~
@@ -118,11 +114,11 @@ musicFagottoIIMvtII = \relative c {
 	g4.\p~
 	g
 % Bars 106 to 110
-	<< c,\fp\<~ {s8 s s\!}>>
+	<< \hairpinShorten #'(-0.3 . -1.5) c,-\offset X-offset -1 \fp\<~ {s8 s s\!}>>
 	<< c4.\> {s8 s s\!}>>
 	g'4.\pp~
 	g
-	<< c,4.\fp\> {s8 s s\!}>>
+	<< \hairpinShorten #'(-0.3 . -1) c,4.\fp\> {s8 s s\!}>>
 % Bars 111 to 115
 	R4.*7
 	
@@ -139,21 +135,21 @@ musicFagottoIIMvtII = \relative c {
 	f~
 	f~
 	f8\ff^\secco f-. f-.
-	f-. f-. f-.
+	\tempoXoffset #6 f-. f-. f-.
 	f-. f-. f-. \mark \default
 % Bars 126 to 130
 	e'4.\f
 	<< b4->~ {s8 s-\dimmarkup}>> b16. e,32
 	e4\p r8
-	R4.*13
+	R4.*12
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	
+	\tempoXoffset #3 R4.
 	r8 r r16 e'\pp \section \mark \default
-	a,8-. a-. r16 a
+	\tempoXoffset #1 a,8-. a-. r16 a
 	b8-. c-. r16 b
 	a8(\p d4
 % Bars 146 to 150
@@ -217,5 +213,5 @@ musicFagottoIIMvtII = \relative c {
 	a r r
 	R4.
 % Bar 201
-	R\fermata \fine
+	\once \ni R\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

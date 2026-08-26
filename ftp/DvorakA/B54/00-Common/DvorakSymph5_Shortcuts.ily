@@ -588,7 +588,7 @@ removeTimeSignatureEoL = \once \override Staff.TimeSignature.break-visibility = 
 
 textMarkAlignKeySignature = 
 	\once \override Score.TextMark.break-align-symbols = #'(
-		key-cancellation key-signature staff-bar clef)
+		 key-signature key-cancellation staff-bar clef)
 
 tempoDown = \once \override Score.MetronomeMark.direction = #-1 
 

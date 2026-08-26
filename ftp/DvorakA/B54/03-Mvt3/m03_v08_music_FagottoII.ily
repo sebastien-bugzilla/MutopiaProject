@@ -9,7 +9,7 @@ musicFagottoIIMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	r8 f,--(\pp f--
+	r8 f,--(-\offset X-offset -2 \pp f--
 	f--) r r
 	r f---\crescmarkup r
 	r f-- r
@@ -23,7 +23,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R4.\fermata \section
+	\once \ni R4.\fermata \section
 	\time 3/8 R4.*7
 % Bars 21 to 25
 	
@@ -46,16 +46,13 @@ musicFagottoIIMvtIII = \relative c {
 	f[ r f]
 	bes,4 r8
 % Bars 41 to 45
-	R4.*4
+	R4.*25
 	
 	
 	
-	R4.*4
+	
 % Bars 46 to 50
 	
-	
-	
-	R4.*17
 % Bars 51 to 55
 	
 % Bars 56 to 60
@@ -116,19 +113,15 @@ musicFagottoIIMvtIII = \relative c {
 	d8) f16( e f e
 	d8) f16( e f e)\!
 	f,8\ff r r
-	f4.->\ff~
+	\startMeasureCount f4.->-\offset X-offset -3 -\tweak extra-offset #'(3 . -1.5) \ff~
 	f~
 % Bars 116 to 120
 	f~
 	f~
-	f~
+	f~ \stopMeasureCount
 	f8 r r
-	R4.*4
+	R4.*7
 % Bars 121 to 125
-	
-	
-	
-	R4.*3
 	
 % Bars 126 to 130
 	\mark \default
@@ -151,7 +144,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 141 to 145
 	
 	
-	bes4\ff bes8
+	bes4-\tweak extra-offset #'(0 . -10.5) ^\ff bes8
 	ees4 ees8
 	bes4 bes8
 % Bars 146 to 150
@@ -194,23 +187,23 @@ musicFagottoIIMvtIII = \relative c {
 	f-.[\> r f-.]\!
 % Bars 181 to 185
 	bes,\p r r
-	f8\ff r r
-	\startVoltaI bes8 r r
-	R4.*8
+	f8-\tweak extra-offset #'(0 . -9) ^\ff r r \markCoda
+	\startVoltaI bes8 r r 
+	R4.*7
 	
 % Bars 186 to 190
 	
 % Bars 191 to 195
+	\tempoXoffset #-1 R4.*4
 	
-	R4.*3
 	
-	\section
-	\startVoltaII bes8\ff r r \section \endVolta
+	\tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII bes8\ff r r \tweak direction #-1 \textEndMark \finemarkup \section \endVolta \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\sectionLabel "TRIO" \time 3/8 \key des \major R4.*5
+		\sectionLabel "TRIO" \removeTimeSignatureEoL \time 3/8 \key des \major R4.*14
 % Bars 201 to 205
-		R4.*9
+		
 % Bars 206 to 210
 		
 		
@@ -260,7 +253,7 @@ musicFagottoIIMvtIII = \relative c {
 		aes8 e4->
 % Bars 251 to 255
 		f4-\dimmarkup g8
-		aes\> e4->
+		\hairpinShorten #'(0 . 1) aes-\tweak extra-offset #'(0 . -8.5) ^\> e4->
 		f g8\! \mark \default
 		aes\p r r
 		R4.*7
@@ -273,11 +266,11 @@ musicFagottoIIMvtIII = \relative c {
 		R4.*2
 		
 % Bars 266 to 270
-		aes8(\pp c) bes-.
+		\startMeasureCount aes8(\pp c) bes-.
 		aes( c) bes-.
 		aes( c) bes-.
 		aes( c) bes-.
-		aes( c) bes-.
+		aes( c) bes-. \stopMeasureCount
 % Bars 271 to 275
 		aes r r
 		r8. aes16-.\pp aes8-.
@@ -316,20 +309,16 @@ musicFagottoIIMvtIII = \relative c {
 	aes4.~\p
 	aes\>
 	des8\! r r
-	R4.*3
+	R4.*11
 	
 % Bars 306 to 310
-	
-	R4.*8
-	
-	
 	
 % Bars 311 to 315
 	
 	
 	
 	
-	r8. des16-.\brack\p\< des8-.\!
+	r8. \hairpinShorten #'(-0.5 . -0.5) des16-.\brack\p\< des8-.
 % Bars 316 to 320
 	des4\mf r8
 	r8. des16-\crescmarkup des8
@@ -338,7 +327,7 @@ musicFagottoIIMvtIII = \relative c {
 	des8.\! f,16\ff f8
 % Bars 321 to 324
 	f8 r r
-	R4.*3
+	\mmrLength #15 R4.*3
 	
-	\section \key bes \major s8
+	\textMarkAlignKeySignature \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key bes \major s8
 }

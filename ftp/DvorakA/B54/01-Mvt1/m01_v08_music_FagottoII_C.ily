@@ -449,7 +449,7 @@ musicFagottoIIMvtI = \relative c {
 	d-> des-> c-> bes->
 	a-> aes-> g-> e->
 % Bars 376 to 380
-	f-> b,-> c-> d16-. e-.
+	f-> b, c-> d16-. e-.
 	f8-> a c-> cis
 	d-> des c-> bes
 	a-> gis-. e-> fis16 gis

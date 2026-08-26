@@ -48,11 +48,11 @@ musicFagottoIMvtII = \relative c {
 	a8.) c16( a g)
 	f8.(\< g32 a g16 f)\!
 % Bars 36 to 40
-	ees8( ees'\p\< d)\!
+	ees8( ees'\p\< d)
 	a8.\fz r16 a-. e!-.
 	a8._\fzcresc r16 a-. e-.
 	a4.(~\f
-	a8 bes-\dimmarkup gis)\p
+	a8 bes-\offset X-offset -2.5 -\dimmarkup gis)\p
 % Bars 41 to 45
 	a4.\fz~ 
 	a
@@ -62,7 +62,7 @@ musicFagottoIMvtII = \relative c {
 % Bars 46 to 50
 	a(-. bes-.-\brackM\dimmarkup a8-. gis-.)
 	e4.\p~
-	e~-\dimmarkup
+	e~-\offset X-offset -1 -\dimmarkup
 	e8\pp r r
 	R4.*3
 % Bars 51 to 55
@@ -74,14 +74,14 @@ musicFagottoIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section \mark \default 
-	\key a \major R4.*8
+	\key a \major \mmrLength #20 \tempoXoffset #-3 \mmrnDown R4.*8
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R \no
 	c4.\fp\>~
-	c4\! c8\p(
+	c4 c8\p(
 	d4.->)
 % Bars 71 to 75
 	R4.*3
@@ -126,7 +126,7 @@ musicFagottoIMvtII = \relative c {
 	
 	\ni \mmrPos #4 R4.
 	\mmrPos #4 R \no
-	<< c4.\fp\> {s8 s s\!}>>
+	<< \hairpinShorten #'(-0.3 . -2) c4.\fp\> {s8 s s\!}>>
 % Bars 111 to 115
 	bes8( a-\dimmarkup g)
 	g4.\pp~
@@ -134,7 +134,7 @@ musicFagottoIMvtII = \relative c {
 	<< bes4.~ {s8 s4-\crescmarkup}>>
 	bes4.
 % Bars 116 to 120
-	<< g\fz~ { s8 s4-\crescmarkup}>>
+	g-\fzcresc~ 
 	g4.
 	f,\mf~
 	<< f~ {s8 s4-\crescmarkup}>>
@@ -143,21 +143,21 @@ musicFagottoIMvtII = \relative c {
 	f~
 	f~
 	f8\ff^\secco f-. f-.
-	f-. f-. f-.
+	\tempoXoffset #8 f-. f-. f-.
 	f-. f-. f-. \mark \default
 % Bars 126 to 130
 	e''4.\f
 	<< b4->~ {s8 s-\dimmarkup}>> b16. e,32
 	e4\p r8
-	R4.*13
+	R4.*12
 % Bars 131 to 135
 	
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	
+	\tempoXoffset #3 R4.
 	\ni \mmrPos #4 R4. \section \mark \default
-	\mmrPos #4 R
+	\tempoXoffset #1.5 \mmrPos #4 R
 	\mmrPos #4 R \no
 	c'4(\p d16 c
 % Bars 146 to 150
@@ -165,7 +165,7 @@ musicFagottoIMvtII = \relative c {
 	R4.
 	r8 d(\< c)\!
 	b4.\fz
-	<< a~\> {s8 s s\!}>>
+	<< \hairpinShorten #'(0 . -1.5) a~\> {s8 s s\!}>>
 % Bars 151 to 155
 	a16-. a-. a8-.\pp b-.
 	a16 r r e( fis gis
@@ -221,5 +221,5 @@ musicFagottoIMvtII = \relative c {
 	c r r
 	R4.
 % Bar 201
-	R\fermata \fine
+	\once \ni R\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

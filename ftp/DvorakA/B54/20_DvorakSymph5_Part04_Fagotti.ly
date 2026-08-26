@@ -20,6 +20,7 @@
 \include "./00-Common/DvorakSymph5_LayoutParts.ily"
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
+\include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part04_Fagotti.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v07_music_FagottoI.ily"
@@ -42,10 +43,10 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54)"
+			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54) — Fagotti"
 		}
 		instrument = \markup {
-			"Fagotti"
+			""
 		}
 	}
 	\score {
@@ -53,9 +54,9 @@
 			\new Voice {
 				\formatFagottoIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(fagottoI) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(fagottoI) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtI
 			}
@@ -77,9 +78,9 @@
 			\new Voice {
 				\formatFagottoIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(fagottoI) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(fagottoI) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtII
 			}
@@ -90,7 +91,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2.2 \bold 2.
 			}
 		}
 		\layout {
@@ -101,9 +102,9 @@
 			\new Voice {
 				\formatFagottoIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(fagottoI) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(fagottoI) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtIII
 			}
@@ -125,9 +126,9 @@
 			\new Voice {
 				\formatFagottoIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(fagottoI) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(fagottoI) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtIV
 			}
@@ -138,10 +139,18 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.5 \bold "4. FINALE"
 			}
 		}
 		\layout {
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
@@ -149,9 +158,9 @@
 			\new Voice {
 				\formatFagottoIIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(fagottoII) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(fagottoII) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtI
 			}
@@ -173,9 +182,9 @@
 			\new Voice {
 				\formatFagottoIIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(fagottoII) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(fagottoII) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtII
 			}
@@ -186,7 +195,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.2 \bold 2.
 			}
 		}
 		\layout {
@@ -197,9 +206,9 @@
 			\new Voice {
 				\formatFagottoIIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(fagottoII) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(fagottoII) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtIII
 			}
@@ -210,7 +219,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1. \bold 3.
 			}
 		}
 		\layout {
@@ -221,9 +230,9 @@
 			\new Voice {
 				\formatFagottoIIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(fagottoII) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(fagottoII) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtIV
 			}
@@ -232,9 +241,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {

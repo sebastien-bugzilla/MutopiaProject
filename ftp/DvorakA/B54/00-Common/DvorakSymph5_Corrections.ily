@@ -105,3 +105,20 @@ correctionClarinetti = \markup {
 	% Mvt IV, bar 380, Clarinetto II
 	"In Mvt IV, bar 380, for Clarinetto II, a missing piano dynamic is added on the second beat of the measure."
 }
+correctionFaggot = \markup {
+	
+	% Mvt I, bar 497, Fagotto I
+	"In Mvt I, bar 497, for Fagotto I, tempo indication is indicated bar 497 as in conductor score instead of bar 495 as in part score."
+	
+	% Mvt IV, bar 15, Fagotto I
+	"In Mvt IV, bar 15, for Fagotto I, e instead of c are printed for upper notes."
+	
+	% Mvt IV, bar 25, Fagotto I
+	"In Mvt IV, bar 25, for Fagotto I, a missing piano indication is added."
+	
+	% Mvt IV, bar 155, Fagotto I & II
+	"In Mvt IV, bar 155, for Fagotto I & II, a missing duration dot is added on the rest at the beginning of the measure."
+	
+	% Mvt I, bar 51, Fagotto II
+	"In Mvt I, bar 51, for fagotto II, a missing g sharp is added on the second note of the measure. It is present in conductor score and confirmed in other voices (trombone, viola and cello)."
+}
