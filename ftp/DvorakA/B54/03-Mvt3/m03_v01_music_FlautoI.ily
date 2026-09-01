@@ -175,7 +175,7 @@ musicFlautoIMvtIII = \relative c {
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	\ni \tempoOsf #290 \mmrPos #-4 R4.
+	\ni \tempoOsp #290 \mmrPos #-4 R4.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no \tweak direction #-1 \textEndMark \attaccatrio \section

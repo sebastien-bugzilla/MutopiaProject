@@ -9,10 +9,10 @@ musicCornoIIMvtI = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R2*2
+	\mmrLength #21 R2*2
 	
 	\repeat volta 2 {
-		R2*6
+		\mmrLength #17 R2*6
 % Bars 6 to 10
 		
 		
@@ -21,7 +21,7 @@ musicCornoIIMvtI = \relative c {
 		\mmrPos #-4 R \no
 % Bars 11 to 15
 		g''2\fz\>~
-		<< g~ {s8 s s s\!}>>
+		g~
 		g2~\pp
 		g4.. c16\pp
 		c2~
@@ -68,18 +68,14 @@ musicCornoIIMvtI = \relative c {
 		e8-. b4-> b8
 		b-. a-. g-. b-.
 		c r r4
-		R2*5
+		R2*10
 		
 % Bars 56 to 60
-		
-		
-		
-		R2*4
 		
 % Bars 61 to 65
 		
 		
-		R2
+		
 		\ni \mmrPos #4 R2
 		\mmrPos #4 R
 % Bars 66 to 70
@@ -100,7 +96,7 @@ musicCornoIIMvtI = \relative c {
 		\ni \mmrPos #-4 R2
 		\mmrPos #-4 R \no
 		r8 ees4\fz r8
-		r ees4.\fz_\brackM\crescmarkup
+		r ees4.\fz^\brackM\crescmarkup
 % Bars 86 to 90
 		r8 dis4.->\brack\fz
 		r8 dis4.->\brack\fz
@@ -128,7 +124,7 @@ musicCornoIIMvtI = \relative c {
 		
 		\ni \mmrPos #-4 R2 \no
 % Bars 111 to 115
-		a'4(\mf\< ais\!
+		\hairpinShorten #'(-0.5 . -1) a'4(\mf\< ais\!
 		<< b2)\> {s8 s s s\!}>>
 		a4(\< ais\!
 		<< b2)\> {s8 s s s\!}>>
@@ -192,17 +188,13 @@ musicCornoIIMvtI = \relative c {
 		cis'-. a8. cis16
 % Bars 171 to 175
 		e2->
-		R2*11
+		R2*17
 % Bars 176 to 180
 	
 % Bars 181 to 185
 		
-		
-		R2*3
-		
-		
 % Bars 186 to 190
-		R2*3
+		
 		
 		
 		\ni \mmrPos #4 R2
@@ -224,12 +216,12 @@ musicCornoIIMvtI = \relative c {
 	g
 	g~
 	g
-	R2*7
+	R2*8
 	
 % Bars 201 to 205
 	
 % Bars 206 to 210
-	R2
+	
 	d'2->\fp~
 	d8 r b-._\marc r
 	g-. r e-. r
@@ -243,7 +235,7 @@ musicCornoIIMvtI = \relative c {
 % Bars 221 to 225
 	
 % Bars 226 to 230
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	\ni \mmrPos #4 R2
 	\mmrPos #4 R
 	\mmrPos #4 R
@@ -258,7 +250,7 @@ musicCornoIIMvtI = \relative c {
 	bes
 	b!\f~
 	b
-	r8 dis,-. r fis-.
+	r8 d,-. r fis-.
 	r b-. r d-.
 % Bars 241 to 245
 	b2->\ff
@@ -365,11 +357,11 @@ musicCornoIIMvtI = \relative c {
 	g~
 	g
 % Bars 341 to 345
-	R2
-	R2*3
+	R2*10
 	
 	
-	R2*6
+	
+	
 % Bars 346 to 350
 	
 % Bars 351 to 355
@@ -413,9 +405,9 @@ musicCornoIIMvtI = \relative c {
 	R2*3
 	
 	
-	<< c2\fp\>~ {s8 s s s\!}>>
+	c2-\offset X-offset 0.5 \fp\>~
 % Bars 386 to 390
-	c8 r r4
+	c8\! r r4
 	R2*6
 % Bars 391 to 395
 	
@@ -457,19 +449,15 @@ musicCornoIIMvtI = \relative c {
 	
 	\ni \mmrPos #4 R2
 	\mmrPos #4 R
-	\mmrPos #4 R
-	\mmrPos #4 R
+	\mmrPos #7 R
+	\mmrPos #7 R
 % Bars 451 to 455
 	\mmrPos #4 R
 	\mmrPos #4 R \no
 	g,2\p~
 	g \markk
-	R2*4
+	R2*8
 % Bars 456 to 460
-	
-	
-	
-	R2*4
 	
 % Bars 461 to 465
 	
@@ -494,17 +482,18 @@ musicCornoIIMvtI = \relative c {
 	c~
 % Bars 481 to 485
 	c8\p r r4
-	R2*20
+	R2*15
 % Bars 486 to 490
 	
 % Bars 491 to 495
 	
 % Bars 496 to 500
 	
+	\mmrLength #14 \tempoXoffset #-1.5 \mmrnDown R2*6
 % Bars 501 to 505
 	
-	R2*3
 	
+	\tempoXoffset #-1 R2*2
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

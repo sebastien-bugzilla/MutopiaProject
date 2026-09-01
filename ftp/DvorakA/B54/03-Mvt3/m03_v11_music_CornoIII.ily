@@ -9,7 +9,7 @@ musicCornoIIIMvtIII = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	r8 c'--(\pp c--
+	r8 c'--(-\offset X-offset -2 \pp c--
 	c--) r r
 	r c---\crescmarkup r
 	r c-- r
@@ -27,8 +27,8 @@ musicCornoIIIMvtIII = \relative c {
 	
 	
 % Bars 16 to 20
-	R4.\fermata \section
-	\time 3/8 R4.*7
+	\once \ni R4.\fermata \section
+	\time 3/8 \mmrnDown R4.*7
 	
 	
 	
@@ -178,7 +178,7 @@ musicCornoIIIMvtIII = \relative c {
 	
 	c4.\fp\>~
 % Bars 166 to 170
-	<< c~ {s8 s s\!}>>
+	c~ 
 	c4.\pp~
 	c
 	R4.*6
@@ -192,37 +192,37 @@ musicCornoIIIMvtIII = \relative c {
 	c~
 	c~
 	c
-	R4.*2
+	R4.*3
 	
 % Bars 181 to 185
-	R4.
-	bes8\ff r r
+	
+	bes8\ff r r \markCoda
 	\startVoltaI a r r
-	R4.*11
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
+	\mmrLength #12 \tempoXoffset #-1.5 R4.*4
 	
 	
-	
-	\section
-	\startVoltaII a8\ff r r \section \endVolta
+	\tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII a8\ff r r \tweak direction #-1 \offset X-offset #0.5 \textEndMark \finemarkup \section \endVolta \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\time 3/8 \sectionLabel "TRIO" R4.*3
+		\tempoXoffset #3 \removeTimeSignatureEoL \time 3/8 \sectionLabel "TRIO" R4.*8
 		
 		
-		R4.
-		R4.*2
+		
+		
 % Bars 201 to 205
 		
-		R4.*2
+		
 		
 		\ni \mmrPos #-4 R4.
 		\mmrPos #-4 R \no
 % Bars 206 to 210
-		r8 r c-.\mf\<
-		des4->\fz r8
+		r8 r \hairpinShorten #'(-0.8 . -0.8) c-.-\offset X-offset -0.5 \mf-\tweak height #0.4 \<
+		des4->-\offset X-offset 0.5 \fz r8
 		R4.*6
 		
 		
@@ -239,9 +239,9 @@ musicCornoIIIMvtIII = \relative c {
 		aes4->\! r8
 		R4.*2
 		
-		<< aes4.->\p\< {s8 s s\!}>>
+		aes4.->\p\< 
 % Bars 221 to 225
-		aes4 r8
+		aes4\! r8
 		r8. aes16-.\< aes8-.\!
 		aes8->\mf r r
 		R4.*3
@@ -293,9 +293,9 @@ musicCornoIIIMvtIII = \relative c {
 % Bars 276 to 280
 		R4. \mark \default
 	}
-	R4.*4
+	R4.*8
 % Bars 281 to 285
-	R4.*4
+	
 	
 	
 	
@@ -320,7 +320,7 @@ musicCornoIIIMvtIII = \relative c {
 	des4(\>-\dimmarkup bes8)\!
 % Bars 301 to 305
 	c4.(\p
-	bes8)\> << des4( {s8 s\!}>>
+	bes8)\> des4(
 	c8)\pp r r
 	R4.*7
 	
@@ -340,7 +340,7 @@ musicCornoIIIMvtIII = \relative c {
 	aes8.\! g16\ff g8
 % Bars 321 to 324
 	g r r
-	R4.*3
+	\mmrLength #20 R4.*3
 	
-	\section
+	\tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section
 }

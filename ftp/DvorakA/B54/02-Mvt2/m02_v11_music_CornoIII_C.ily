@@ -105,7 +105,7 @@ musicCornoIIIMvtII = \relative c {
 	b4~ b16\! b-.
 % Bars 106 to 110
 	<< b4.\fp\<~ {s8 s s\!}>>
-	b4\> b16\! b-.
+	b4~\> b16\! b-.
 	c4.\pp~
 	c4~ c16 c-.
 	b4.->\fp~

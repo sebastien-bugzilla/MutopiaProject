@@ -37,7 +37,7 @@ musicCornoIMvtIII = \relative c {
 	d)
 	b!
 	c4~ c16 c
-	<< c4.~\fp\> {s8 s s\!}>>
+	\hairpinShorten #'(-0.5 . -0.5) c4.~\fp\>
 % Bars 26 to 30
 	c8\p c-. c-.
 	c4.
@@ -80,15 +80,15 @@ musicCornoIMvtIII = \relative c {
 % Bars 66 to 70
 	\ni \mmrPos #4 R4.
 	\mmrPos #4 R
-	\mmrPos #4 R
+	\mmrPos #7 R
 	\mmrPos #-4 R \no
 	c4.->\fp~
 % Bars 71 to 75
 	c8 c-. c-.
 	c4.->
 	d8-. d-. d-.
-	d4.->-\fpcresc
-	e8-.\< e-. e-.\!
+	d4.->-\offset X-offset -1.5 -\fpcresc
+	\hairpinShorten #'(1 . -1) e8-.\< e-. e-.\!
 % Bars 76 to 80
 	e4.->\fp
 	e8-.\mf b-. e-.
@@ -120,7 +120,7 @@ musicCornoIMvtIII = \relative c {
 	fis->\fz
 % Bars 106 to 110
 	b,4\f~ b16 b
-	d4.->-\fzcresc~
+	d4.->-\offset X-offset -1.5 -\fzcresc~
 	d
 	c->\fz
 	c->\fz
@@ -195,23 +195,23 @@ musicCornoIMvtIII = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R \no
 	f8-.\fp[ r d-.]
-	<< c4.\>~ {s8 s s\!}>>
+	c4.\>~
 % Bars 181 to 185
 	c8\p r r
-	c\ff r r
+	c\ff r r \markCoda
 	\startVoltaI c r r
 	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	ees4.\pp~
+	\tempoOsp #280 ees4.\pp~
 	ees~
 	ees4 r8
-	R4. \section
-	\startVoltaII c8\ff r r \section \endVolta
+	R4. \tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII c8\ff r r \tweak direction #-1 \textEndMark \finemarkup \section \endVolta \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\time 3/8 \sectionLabel "TRIO" ees4.->\fp~
+		\removeTimeSignatureEoL \time 3/8 \sectionLabel "TRIO" \tempoXoffset #5 ees4.->\fp~
 		ees4 r8
 		R4.*2
 		
@@ -220,7 +220,7 @@ musicCornoIMvtIII = \relative c {
 		ees4 r8
 		R4.*2
 		
-		r8. d16-.\f\< d8-.\!
+		r8. d16-.\f\< d8-.
 		ees4\fz r8
 % Bars 206 to 210
 		R4.*2
@@ -244,7 +244,7 @@ musicCornoIMvtIII = \relative c {
 		
 % Bars 221 to 225
 		
-		r8. des16-.\brack\p\< des8-.\!
+		r8. \hairpinShorten #'(-0.5 . -0.5) des16-.\brack\p\< des8-.
 		des8->\mf r r
 		R4.*3
 		
@@ -349,6 +349,6 @@ musicCornoIMvtIII = \relative c {
 % Bars 321 to 324
 	r8. c16-.\ff c8-.
 	c r r
-	R4.*2
-	\section
+	\mmrLength #21 R4.*2
+	\tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section
 }

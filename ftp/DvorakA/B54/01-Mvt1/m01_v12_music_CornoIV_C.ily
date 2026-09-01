@@ -130,11 +130,11 @@ musicCornoIVMvtI = \relative c {
 		R
 		\mmrPos #-6 R
 % Bars 111 to 115
-		e2->\mf~
-		e
-		e~
-		e~
-		e4 r
+		<< e2->\mf\<~ {s8 s s s\!}>>
+		<< e2\> {s8 s s s\!}>>
+		<< e2~\< {s8 s s s\!}>>
+		<< e2~\> {s8 s s s\!}>>
+		e4\p r
 % Bars 116 to 120
 		R2*4
 		

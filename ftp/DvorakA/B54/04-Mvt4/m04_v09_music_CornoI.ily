@@ -9,10 +9,10 @@ musicCornoIMvtIV = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R1*4
+	\mmrLength #28 R1*3
 	
 	
-	
+	R1
 	a''1->\ff\>~
 % Bars 6 to 10
 	\time 2/4 a4\! r
@@ -23,7 +23,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 11 to 15
 	r4 e-\fbrackz r2
 	R1
-	r8. b16(\f\< e4)\! r8. d16(\< g4)\!
+	r8. \hairpinShorten #'(-0.5 . -1) b16(\f\< e4)\! r8. d16(\< g4)\!
 	r4 b,-. r b-.
 	r b-. r b-.
 % Bars 16 to 20
@@ -55,7 +55,7 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	d1\fz
-	d->\fp~
+	d->-\offset X-offset -3 -\tweak extra-offset #'(3 . 0) \fp~
 % Bars 41 to 45
 	d-\dimmarkup~
 	d
@@ -105,7 +105,7 @@ musicCornoIMvtIV = \relative c {
 	r f!2.(\p\>
 	e2 d)\!
 % Bars 81 to 85
-	r4 c\pp r c
+	r4 c-\tweak extra-offset #'(0 . -8) ^\pp r c
 	r cis r cis
 	r c! r c
 	r b r b
@@ -127,7 +127,7 @@ musicCornoIMvtIV = \relative c {
 	bes1)\!
 	des2\fz r4 des8-.\p des-.
 % Bars 101 to 105
-	<< c1\> {s4 s s s\!}>>
+	c1\>
 	des2.\pp des8-. des-.
 	des2( d4 ees)
 	des( c2.)
@@ -135,17 +135,17 @@ musicCornoIMvtIV = \relative c {
 % Bars 106 to 110
 	des
 	ees(
-	<< d!)->\fz\> {s4 s s s\!}>>
+	d!)->\fz\>
 	des2.\pp des4(
 	c2.) c4(
 % Bars 111 to 115
 	bes2.)\< bes4\!
-	bes2(\fz << c)\> {s8 s s s\!}>>
-	des2.-\dimmarkup des4
-	d!2(\p\> ees)\!
+	bes2(\fz c)\>
+	des2.\dimD des4
+	d!2(\p\> ees)
 	des4\pp r r des8-. des-.
 % Bars 116 to 120
-	des4 r r des8-. des-. \mark \default
+	des4 r r des8-. des-. \markXoffset #-0.2 \mark \default
 	des2.\pp des4~
 	des des-.( des-. des-.)
 	des2.\< des4~
@@ -158,7 +158,7 @@ musicCornoIMvtIV = \relative c {
 	ees2\p r
 % Bars 126 to 130
 	R1
-	c2.\pp c4
+	c2.-\tweak extra-offset #'(0 . -8) ^\pp c4
 	c2. c4
 	c2. c4
 	c2. c4
@@ -167,10 +167,10 @@ musicCornoIMvtIV = \relative c {
 	
 	
 	
-	c4..-^-\ffrinforz c16 b4..-^ b16
+	c4..-^-\tweak extra-offset #'(0 . -8.8) ^\ffrinforz c16 b4..-^ b16
 % Bars 136 to 140
 	c4-^ d-^ ees-^ d-^
-	c4..-^\ff c16 b4..-^ b16
+	c4..-^-\tweak extra-offset #'(0 . -8.8) ^\ff c16 b4..-^ b16
 	c4-^ d-^ ees-^ c-^ 
 	a-^\ff bes-^ c-^ fis,-^
 	g-^ a-^ c,-^ d-^
@@ -213,10 +213,10 @@ musicCornoIMvtIV = \relative c {
 	
 	bes2.\pp bes4~
 	bes bes-.(\< bes-. bes-.)\!
-	bes2.\fz\> bes4\p~
+	\hairpinShorten #'(-0.5 . -0.5) bes2.\fz\> bes4\p~
 	bes bes-.(\> bes-. bes-.)\!
 % Bars 181 to 185
-	bes2.\pp bes4~
+	bes2.-\offset X-offset 1.5 \pp bes4~
 	bes bes-.(\< bes-. bes-.)\!
 	bes2.->\fz bes4~
 	bes bes-.(\> bes-. bes-.)\!
@@ -261,9 +261,11 @@ musicCornoIMvtIV = \relative c {
 % Bars 221 to 225
 	r4 b2\pp r4
 	r b2 r4
-	R1*14
+	\mmrLength #13 R1*5
 % Bars 226 to 230
 	
+	
+	R1*9
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -319,7 +321,7 @@ musicCornoIMvtIV = \relative c {
 % Bars 281 to 285
 	r4 f!2.(-\dimmarkup
 	e2 d)
-	r4 c--\pp r c--
+	r4 c---\offset X-offset -1 \pp r c--
 	r des-- r des--
 	r c-- r c--
 % Bars 286 to 290
@@ -327,17 +329,13 @@ musicCornoIMvtIV = \relative c {
 	r2 r4 b
 	r b r b
 	r b r b
-	R1*9
+	R1*13
 % Bars 291 to 295
 	
 % Bars 296 to 300
 	
-	
-	
-	R1*2
-	
 % Bars 301 to 305
-	R1*2
+	
 	
 	bes1\pp \mark \default
 	a2. a4(
@@ -347,7 +345,7 @@ musicCornoIMvtIV = \relative c {
 	e\> d c b)\!
 	bes2.-\pdim bes4
 	a2. a4
-	g2\<( g'4-\mfmarkup f\!~
+	g2\<( \markEO #'(0 . 4) g'4-\mfmarkup f\!~
 % Bars 311 to 315
 	f) e(\> d4. cis8)\!
 	cis4( a) r a8\p a
@@ -392,18 +390,18 @@ musicCornoIMvtIV = \relative c {
 	ees ees-.( ees-. ees-.)\!
 % Bars 346 to 350
 	d2->\fp r
-	R1
-	R1*2
+	R1*3
+	
 	
 	e1\pp~
 % Bars 351 to 355
 	e
-	<< e\<~ {s4 s s s\!}>>
-	<< e2\> {s8 s s s\!}>> r2
+	\hairpinShorten #'(0 . 2) e\<~
+	<< \hairpinShorten #'(-1 . -1) e2\> {s8 s s s\!}>> r2
 	e1\pp
 	g
 % Bars 356 to 360
-	e\pp
+	e
 	e
 	e
 	e

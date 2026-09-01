@@ -19,11 +19,11 @@ musicCornoIIIMvtI = \relative c {
 		g~
 		g~
 		g
-		e\<
-		<< g {s8 s s s\!}>>
+		\hairpinShorten #'(0 . 1.5) e\<
+		g
 % Bars 11 to 15
 		g2\fz\>~
-		<< g~ {s8 s s s\!}>>
+		g~
 		g2~\pp
 		g4. r8
 		R2*4
@@ -62,7 +62,7 @@ musicCornoIIIMvtI = \relative c {
 		g'8\f r \tuplet 3/2 4 {r8 g, g
 		g[ g g]  g\< g g
 		g[ g g]  g g g\!} \mark \default
-		g'4\ff c8 c
+		\tempoXoffset #1. g'4\ff c8 c
 % Bars 46 to 50
 		c4 b8 b
 		c-. g4-> g8~
@@ -82,17 +82,13 @@ musicCornoIIIMvtI = \relative c {
 		r8 dis-.\mf b-. cis-.
 		dis-. b-. e-. r
 % Bars 61 to 65
-		R2
-		R2
+		R2*2
+		
 		r8 b4.->\fp~
 		b8 r r4
-		R2*5
+		R2*8
 % Bars 66 to 70
 		
-		
-		
-		
-		R2*3
 % Bars 71 to 75
 		
 		
@@ -135,11 +131,11 @@ musicCornoIIIMvtI = \relative c {
 		a2(~\<
 		a8\! gis4\> fis8)\!
 % Bars 111 to 115
-		e2->\mf~
-		e
-		e~
-		e~
-		e4 r
+		<< \hairpinShorten #'(-0.5 . -1) e2->-\offset X-offset -1 \mf\<~ {s8 s s s\!}>>
+		<< e2\> {s8 s s s\!}>>
+		<< e2~\< {s8 s s s\!}>>
+		<< e2~\> {s8 s s s\!}>>
+		e4\p r
 % Bars 116 to 120
 		R2*4
 		
@@ -149,20 +145,20 @@ musicCornoIIIMvtI = \relative c {
 % Bars 121 to 125
 		R
 		a
-		R2
-		R
-		R
+		R2*3
+		
+		
 % Bars 126 to 130
-		a\pp
+		a2\pp
 		R2*4
 % Bars 131 to 135
-		g,2\pp~
+		\startMeasureCount g,2\pp~
 		g~
 		g~
 		g~
 		g~
 % Bars 136 to 140
-		g
+		g \stopMeasureCount 
 		R2*2
 		
 		b'2\ff~
@@ -199,12 +195,10 @@ musicCornoIIIMvtI = \relative c {
 		gis
 		fis2\ff~
 		fis4 r
-		R2*4
+		R2*10
 		
 % Bars 171 to 175
 		
-		
-		R2*6
 % Bars 176 to 180
 		
 		
@@ -252,16 +246,16 @@ musicCornoIIIMvtI = \relative c {
 	g
 	g~
 	g
-	b~
+	b!~
 	b
 % Bars 211 to 215
-	R2*2
+	R2*12
 	
-	R2*3
+	
 	
 	
 % Bars 216 to 220
-	R2*7
+	
 % Bars 221 to 225
 	
 	
@@ -324,7 +318,7 @@ musicCornoIIIMvtI = \relative c {
 	aes8 r r4
 	bes2->\f~
 	bes8 r r4
-	fis4->\ff fis8.-> dis16-.
+	fis4->-\tweak extra-offset #'(0 . -8.5) ^\ff fis8.-> dis16-.
 	fis8 r r4
 % Bars 281 to 285
 	c'4->\f r
@@ -365,7 +359,7 @@ musicCornoIIIMvtI = \relative c {
 	f2
 	r8 f4.\p\>~
 % Bars 316 to 320
-	f2\!
+	<< f2 {s8 s s s\!}>>
 	f,2\p~
 	f~
 	f~
@@ -393,7 +387,7 @@ musicCornoIIIMvtI = \relative c {
 % Bars 341 to 345
 	R2*2
 	
-	g2\pp~
+	\startMeasureCount g2\pp~
 	g~
 	g~
 % Bars 346 to 350
@@ -401,7 +395,7 @@ musicCornoIIIMvtI = \relative c {
 	g~
 	g~
 	g~
-	g
+	g \stopMeasureCount
 % Bars 351 to 355
 	R2*2
 	
@@ -419,17 +413,17 @@ musicCornoIIIMvtI = \relative c {
 	f r
 	f r
 	f r
-	g,2\p~
+	\startMeasureCount g,2\p~
 % Bars 366 to 370
 	g~
 	g~
-	<< g~ {s4 s_\crescmarkup}>>
-	g2~
+	g~_\crescmarkup
+	g2~ \stopMeasureCount
 	g8-. r \tuplet 3/2 4 {r8 g-.\f g-.
 % Bars 371 to 375
-	g-.[ g-. g-.]  g-._\crescmarkup g-. g-.
+	g-.[ g-. g-.]  g-.^\crescmarkup g-. g-.
 	g-.[ g-. g-.]  g-. g-. g-.} \mark \default
-	g'4->\ff c8-. c-.
+	\tempoXoffset #1.4 g'4->\ff c8-. c-.
 	c4 b
 	c8-. g4-> g8~
 % Bars 376 to 380
@@ -440,12 +434,12 @@ musicCornoIIIMvtI = \relative c {
 	b b-. b-. b-.
 % Bars 381 to 385
 	c r r4
-	R2*4
+	R2*19
 	
 	
 	
 % Bars 386 to 390
-	R2*15
+	
 % Bars 391 to 395
 	
 % Bars 396 to 400
@@ -498,13 +492,13 @@ musicCornoIIIMvtI = \relative c {
 	
 	
 	\markk
-	g'4(\mf\< bes\!
+	\hairpinShorten #'(-0.5 . -1) g'4(\mf\< bes\!
 % Bars 456 to 460
 	<< b!2)\> {s8 s s s\!}>>
 	c4(\< bes\!
-	<< b!2)\> {s8 s s s\!_\crescmarkup}>>
-	c4(\f\< bes\!
-	<< b!2)\> {s8 s s s\!}>>
+	<< \hairpinShorten #'(0 . -1.5) b!2)\> {s8 s s\! s-\offset X-offset -2 _\crescmarkup}>>
+	\hairpinShorten #'(-0.5 . -1) c4(\f\< bes\!
+	<< \hairpinShorten #'(0 . -0.5) b!2)\> {s8 s s s\!}>>
 % Bars 461 to 465
 	c4(\< bes
 	b!2)\!
@@ -527,7 +521,7 @@ musicCornoIIIMvtI = \relative c {
 	g_\dimmarkup~
 	g
 % Bars 481 to 485
-	g2\p~
+	\startMeasureCount g2\p~
 	g~
 	g~
 	g~
@@ -535,21 +529,18 @@ musicCornoIIIMvtI = \relative c {
 % Bars 486 to 490
 	g~
 	g~
-	g~
+	g~ \stopMeasureCount
 	g4 r
 	R2*7
 % Bars 491 to 495
 	
 % Bars 496 to 500
 	
-	R2*2
-	
-	R2*6
-	
+	\mmrLength #14 \tempoXoffset #-2 R2*6
 % Bars 501 to 505
 	
 	
+	\tempoXoffset #-1 R2*2
 	
-	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

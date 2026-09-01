@@ -9,7 +9,7 @@ musicCornoIVMvtIII = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	r8 c--(\pp c--
+	\clef bass r8 c--(-\offset X-offset -1 \pp c--
 	c--) r r
 	r c---\crescmarkup r
 	r c-- r
@@ -18,16 +18,12 @@ musicCornoIVMvtIII = \relative c {
 	r c\mf r
 	r c-\dimmarkup r
 	r c-.\p r 
-	c-.[-\dimmarkup r c-.]
-	R4.*3
+	c-.[-\dimmarkup r c-.] 
+	R4.*6
 % Bars 11 to 15
 	
-	
-	R4.*3
-	
-	
 % Bars 16 to 20
-	R4.\fermata \section
+	\once \ni R4.\fermata \section
 	\time 3/8 R4.*7
 	
 	
@@ -35,7 +31,7 @@ musicCornoIVMvtIII = \relative c {
 % Bars 21 to 25
 	
 	
-	
+	\clef treble
 	r8 r r16 g''\f
 	f8 r r
 % Bars 26 to 30
@@ -57,10 +53,10 @@ musicCornoIVMvtIII = \relative c {
 	r e r
 	r f r
 % Bars 41 to 45
-	f,4.\p~
+	\clef bass f,4.\p~
 	f~
 	f~
-	f
+	f 
 	R4.*14
 % Bars 46 to 50
 	
@@ -69,7 +65,7 @@ musicCornoIVMvtIII = \relative c {
 % Bars 56 to 60
 	
 	
-	
+	\clef treble
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R \no
 % Bars 61 to 65
@@ -79,16 +75,14 @@ musicCornoIVMvtIII = \relative c {
 	
 	\mark \default
 % Bars 66 to 70
-	R4.*4
+	R4.*17
 	
 	
 	
-	R4.*7
+	
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	
-	R4.*6
 	
 % Bars 81 to 85
 	
@@ -192,20 +186,20 @@ musicCornoIVMvtIII = \relative c {
 	c-. r r
 % Bars 181 to 185
 	R4.
-	g8\ff r r
+	g8\ff r r \markCoda
 	\startVoltaI f r r
-	R4.*11
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
+	\mmrLength #12 \tempoXoffset #-1.5 R4.*4
 	
 	
-	
-	\section
-	\startVoltaII f8\ff r r \section \endVolta
+	\tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII f8\ff r r \tweak direction #-1 \offset X-offset #0.5 \textEndMark \finemarkup \section \endVolta \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\time 3/8 \sectionLabel "TRIO" aes4.->\fp
+		\removeTimeSignatureEoL \tempoXoffset #3 \time 3/8 \sectionLabel "TRIO" aes4.->\fp
 		aes8.-> c16-. c8-.
 		bes4 r8
 		R4.
@@ -217,7 +211,7 @@ musicCornoIVMvtIII = \relative c {
 		
 		
 % Bars 206 to 210
-		r8 r f-.\mf\<
+		r8 r \hairpinShorten #'(-0.8 . -0.8) f-.\mf-\tweak height #0.4 \<
 		bes4->\fz r8
 		R4.*6
 		
@@ -228,19 +222,11 @@ musicCornoIVMvtIII = \relative c {
 		\mark \default
 	}
 	\repeat volta 2 {
-		R4.*4
+		R4.*24
 		
 % Bars 216 to 220
 		
-		
-		R4.*2
-		
-		R4.*4
 % Bars 221 to 225
-		
-		
-		
-		R4.*14
 		
 % Bars 226 to 230
 		
@@ -294,15 +280,15 @@ musicCornoIVMvtIII = \relative c {
 	aes~
 	aes
 % Bars 281 to 285
-	R4.*4
+	R4.*12
 	
 	
 	
-	R4.*6
+	
 % Bars 286 to 290
 	
 % Bars 291 to 295
-	R4.*2
+	
 	
 	\ni \mmrPos #4 R4.
 	\mmrPos #4 R \no
@@ -326,7 +312,7 @@ musicCornoIVMvtIII = \relative c {
 	\mmrPos #4 R
 	\mmrPos #4 R
 	\mmrPos #4 R \no
-	r8. aes,16-.\brack\p\< aes8-.\!
+	r8. aes,16-.\brack\p\< aes8-.
 % Bars 316 to 320
 	aes4\mf r8
 	r8. aes'16-\crescmarkup aes8
@@ -335,7 +321,7 @@ musicCornoIVMvtIII = \relative c {
 	aes8.\! c16\ff c8
 % Bars 321 to 324
 	c r r
-	R4.*3
+	\mmrLength #15 R4.*3
 	
-	\section
+	\tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section
 }

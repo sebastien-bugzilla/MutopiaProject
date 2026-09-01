@@ -27,22 +27,22 @@ musicCornoIIIMvtII = \relative c {
 	
 	b''4.\f
 % Bars 26 to 30
-	r8 r c16.(\p\< b32)\!
+	r8 r \hairpinShorten #'(-0.5 . -1) c16.(\p\< b32)\!
 	ais4(\fz b8)~
 	b4~\> b16\! r
-	R4.*2
+	R4.*7
 	
 % Bars 31 to 35
-	R4.*5
+	
 % Bars 36 to 40
-	r8 d(-.\pp\< cis)-.\!
+	r8 \hairpinShorten #'(-0.5 . -1) d(-.\pp\< cis)-.\!
 	d8.\fz r16 r8
 	d8.\fz r16 r8
 	R4.
 	r8 r b\p
 % Bars 41 to 45
-	b4->\fz\> r8\!
-	b8.\fz\> r16\! r8
+	\hairpinShorten #'(-0.5 . -1) b4->-\offset X-offset 0.5 \fz\> r8\!
+	\hairpinShorten #'(-0.5 . -1) b8.-\offset X-offset 0.5 \fz\> r16\! r8
 	R4.*3
 	
 	
@@ -60,12 +60,12 @@ musicCornoIIIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section \mark \default
-	R4.*6
+	\mmrnDown R4.*6
 % Bars 61 to 65
 	
 	
 	
-	<< b4.->\fz~ {s8 s s\>}>>
+	b4.->\fz\>~
 	b8. b16\! b b
 % Bars 66 to 70
 	b8 r r
@@ -83,21 +83,21 @@ musicCornoIIIMvtII = \relative c {
 	b'4.->\pp~
 % Bars 81 to 85
 	b
-	<< a\p~ {s8 s s\<}>>
+	<< a\p~ {s8\< s s}>>
 	<< a4. {s8 s s\!}>>
-	R4.*4
+	\mmrLength #12 \tempoXoffset #-1 \mmrnDown R4.*4
 	
 % Bars 86 to 90
 	
 	\section
-	R4.*2
+	\mmrLength #13 \tempoXoffset #-1 \mmrnDown R4.*2
 	\mark \default
 	R4.*4
 % Bars 91 to 95
 	
 	
 	
-	c4.\fp
+	c4.-\offset X-offset 0.5 \fp
 	R4.*9
 % Bars 96 to 100
 	
@@ -108,30 +108,30 @@ musicCornoIIIMvtII = \relative c {
 	b4.\p\<~
 	b4~ b16\! b-.
 % Bars 106 to 110
-	<< b4.\fp\<~ {s8 s s\!}>>
-	b4\> b16\! b-.
+	<< \hairpinShorten #'(-0.5 . -1.8) b4.\fp\<~ {s8 s s\!}>>
+	b4~\> b16\! b-.
 	c4.\pp~
 	c4~ c16 c-.
 	b4.->\fp~
 % Bars 111 to 115
 	b4-\dimmarkup~ b16 b-.
 	c8 r r
-	R4.*5
+	\mmrLength #16 \tempoXoffset #-1.5 \mmrnDown R4.*5
 % Bars 116 to 120
 	
 	
-	c,4.-^\mf
+	\startMeasureCount c,4.-^\mf
 	<< c-^ {s8 s4-\crescmarkup}>>
 	c4.-^
 % Bars 121 to 125
 	c-^
-	c-^
-	c8-.\noBeam^\secco bes'-.\ff bes-.
-	bes-. bes-. bes-.
+	c-^ \stopMeasureCount
+	c8-.\noBeam^\secco bes'-.-\offset X-offset -2.5 \ff bes-.
+	\tempoXoffset #6.5 bes-. bes-. bes-.
 	bes-. bes-. bes-. \mark \default
 % Bars 126 to 130
-	<< b!4.\fp\>~ {s8 s s\!}>>
-	b8 r r
+	\tempoXoffset #0.5 b!4.\fp\>~
+	b8\! r r
 	R4.*12
 % Bars 131 to 135
 	
@@ -142,16 +142,16 @@ musicCornoIIIMvtII = \relative c {
 	
 	\ni \mmrPos #-4 R4.
 % Bars 141 to 145
-	\mmrPos #-4 R \no
-	R4. \section \mark \default
-	R4.*2
+	\tempoXoffset #5 \mmrPos #-4 R \no
+	R4. \section \markXoffset #-0.2 \mark \default
+	\mmrLength #13 R4.*2
 	
 	\ni \mmrPos #-4 R4. \no
 % Bars 146 to 150
 	a4\pp r8
-	R4.*4
+	R4.*5
 % Bars 151 to 155
-	R4.
+	
 	r8 r b!~\brack\pp
 	b4.
 	d4~ d16 b
@@ -184,7 +184,7 @@ musicCornoIIIMvtII = \relative c {
 	b8 r r
 	R4.
 % Bars 181 to 185
-	b4.->\fp~
+	b4.->-\offset X-offset 0.5 \fp~
 	b8 r r
 	R4.*10
 % Bars 186 to 190
@@ -200,7 +200,7 @@ musicCornoIIIMvtII = \relative c {
 	\mmrPos #-4 R \no
 	b4.\f
 	b\fp
-	R
+	\mmrLength #8.5 R
 % Bar 201
-	R\fermata \fine
+	\once \ni \mmrLength #8.5 R\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

@@ -251,7 +251,7 @@ musicCornoIIMvtI = \relative c {
 	bes
 	b!\f~
 	b
-	r8 dis,-. r fis!-.
+	r8 d,-. r fis!-.
 	r b-. r d-.
 % Bars 241 to 245
 	b2->\ff

@@ -5,7 +5,7 @@
 %#                 C O N D U C T O R   S C O R E   F O R M A T                 #
 %###############################################################################
 formatConductorMvtIII = {
-	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+%	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
 		(Y-offset . 10.3)

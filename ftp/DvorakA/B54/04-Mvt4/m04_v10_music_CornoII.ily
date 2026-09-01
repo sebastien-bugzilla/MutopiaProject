@@ -9,10 +9,10 @@ musicCornoIIMvtIV = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R1*4
+	\mmrLength #28 R1*3
 	
 	
-	
+	R1
 	a'1->\ff\>~
 % Bars 6 to 10
 	\time 2/4 a4\! r
@@ -23,7 +23,7 @@ musicCornoIIMvtIV = \relative c {
 % Bars 11 to 15
 	r4 e-\fbrackz r2
 	R1
-	r8. b'16(\f\< e,4)\! r8. d'16(\< g,4)\!
+	r8. \hairpinShorten #'(-0.5 . -1.5) b'16(\f\< e,4)\! r8. d'16(\< g,4)\!
 	r4 b-. r b-.
 	r b-. r b-.
 % Bars 16 to 20
@@ -41,7 +41,7 @@ musicCornoIIMvtIV = \relative c {
 % Bars 26 to 30
 	
 	
-	d,4-^\f d'2.-^~
+	d,4-^-\tweak extra-offset #'(0.5 . -9.3) ^\f d'2.-^~
 	d8 r r4 r2
 	r8 d,-.\ff r d-. r d-. r d-.
 % Bars 31 to 35
@@ -101,15 +101,13 @@ musicCornoIIMvtIV = \relative c {
 % Bars 76 to 80
 	c-> c->
 	c8 r r4 r2
-	R1*10
+	R1*15
 	
 	
 % Bars 81 to 85
 	
 % Bars 86 to 90
 	
-	
-	R1*5
 % Bars 91 to 95
 	
 	\section \mark \default
@@ -131,7 +129,7 @@ musicCornoIIMvtIV = \relative c {
 % Bars 106 to 110
 	
 	
-	<< bes1->\fz\> {s4 s s s\!}>>
+	bes1->\fz\>
 	bes2.\pp bes4(
 	aes2.) aes4(
 % Bars 111 to 115
@@ -153,13 +151,13 @@ musicCornoIIMvtIV = \relative c {
 	cis cis-.(\> cis-. cis-.)\!
 	c!2\p r
 % Bars 126 to 130
-	R1
-	R1*4
+	R1*9
+	
 	
 	
 	
 % Bars 131 to 135
-	R1*4
+	
 	
 	
 	
@@ -207,10 +205,8 @@ musicCornoIIMvtIV = \relative c {
 	
 % Bars 176 to 180
 	
-	R1*13
 	
-	
-	
+	\mmrLength #14 R1*14
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -218,7 +214,7 @@ musicCornoIIMvtIV = \relative c {
 	
 	
 	
-	R1 \mark \default
+	\mark \default
 % Bars 191 to 195
 	R1*4
 	
@@ -253,9 +249,11 @@ musicCornoIIMvtIV = \relative c {
 % Bars 221 to 225
 	r4 b2\pp r4
 	r b2 r4
-	R1*14
+	\mmrLength #12 R1*5
 % Bars 226 to 230
 	
+	
+	\mmrLength #12 \tempoXoffset -1 R1*9
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -307,15 +305,11 @@ musicCornoIIMvtIV = \relative c {
 	g2->\ff a->
 	c-> c->
 	c8 r r4 r2
-	R1*10
+	R1*19
 % Bars 281 to 285
 	
 % Bars 286 to 290
 	
-	
-	
-	
-	R1*9
 % Bars 291 to 295
 	
 % Bars 296 to 300
@@ -365,8 +359,8 @@ musicCornoIIMvtIV = \relative c {
 % Bars 336 to 340
 	
 	\mark \default
-	R1
-	R1
+	R1*2
+	
 	c2.->\fp c4~
 % Bars 341 to 345
 	c c-.(\> c-. c-.)\!
@@ -383,7 +377,7 @@ musicCornoIIMvtIV = \relative c {
 % Bars 351 to 355
 	c
 	<< c\<~ {s4 s s s\!}>>
-	<< c2\> {s8 s s s\!}>> r2
+	<< \hairpinShorten #'(0 . -1) c2\> {s8 s s s\!}>> r2
 	R1*2
 	
 % Bars 356 to 360
@@ -394,8 +388,8 @@ musicCornoIIMvtIV = \relative c {
 	R1*2
 % Bars 361 to 365
 	\mark \default
-	R1
-	R1
+	R1*2
+	
 	r4 c2->\p r4
 	r c2->-\crescmarkup r4
 % Bars 366 to 370

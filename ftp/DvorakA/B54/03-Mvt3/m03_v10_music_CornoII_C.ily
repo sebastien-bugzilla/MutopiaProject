@@ -322,7 +322,7 @@ musicCornoIIMvtIII = \relative c {
 	R4.*2
 	
 	\stemUp aes4.\pp
-	\stemOffset #1 aes
+	\stemOffset #1 aes~
 	aes
 % Bars 306 to 310
 	\stemOffset #1 aes

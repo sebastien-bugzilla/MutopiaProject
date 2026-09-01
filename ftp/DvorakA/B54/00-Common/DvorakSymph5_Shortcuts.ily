@@ -576,7 +576,7 @@ tempoEO = #(define-music-function
 	#}
 )
 
-tempoOsf = #(define-music-function
+tempoOsp = #(define-music-function
 	(priority)
 	(number?)
 	#{

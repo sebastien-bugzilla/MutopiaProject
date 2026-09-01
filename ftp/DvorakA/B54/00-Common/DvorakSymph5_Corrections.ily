@@ -122,3 +122,23 @@ correctionFaggot = \markup {
 	% Mvt I, bar 51, Fagotto II
 	"In Mvt I, bar 51, for fagotto II, a missing g sharp is added on the second note of the measure. It is present in conductor score and confirmed in other voices (trombone, viola and cello)."
 }
+correctionCorni = \markup {
+	
+	% Mvt I, bar 85, Corno I
+	"In Mvt I, bar 85, for Corno I, a missing crescendo indication is added."
+	
+	% Mvt I, bar 203, Corno I
+	"In Mvt I, bar 203, for CornoI, the c sharp is replace by a c natural based on conductor score. It is confirmed by cello and fagotto."
+	
+	% Mvt I, bar 257, Corno I
+	"In Mvt I, bar 257, for Corno I, a missing 'fp' indication is added."
+	
+	% Mvt IV, bar 43-47, Corno I
+	"In Mvt IV, bar 43-47, for Corno I, the multi measure rest number indicated in part score is 3 whereas it should be equal to four as in conductor score."
+	
+	% Mvt IV, bar 237, Corno II
+	"In Mvt IV, bar 237, for Corno II, a missing rest is added to complete the measure."
+	
+	% Mvt IV, bar 137, corno IV
+	"In Mvt IV, bar 137, for Corno IV, missing duration dots are added."
+}

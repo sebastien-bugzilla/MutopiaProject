@@ -9,14 +9,14 @@ musicCornoIIIMvtIV = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R1*4
+	\mmrLength #28 R1*3
 	
 	
-	
+	R1
 	f'1->\ff\>~
 % Bars 6 to 10
 	\time 2/4 f4\! r
-	\timeMvtIV r8. a16\mf a4-> r2
+	\timeMvtIV r8. a16-\offset X-offset -0.5 \mf a4-> r2
 	r8. a16 a4-> r2
 	R1*3
 	
@@ -70,19 +70,19 @@ musicCornoIIIMvtIV = \relative c {
 	e~-\pocoapococresc
 % Bars 51 to 55
 	e~
-	<< e {s4 s\< s s\!}>>
+	<< e {s4\< s s s8 s\!}>>
 	e1->\f~
 	<< e2.\< {s4 s s8 s\!}>> d8-. g-. \mark \default
 	g2\ff a
 % Bars 56 to 60
 	r8 g-.\f r g-. r g-. r g-.
 	g2\ff a
-	r8 g-.\f r g-. r g-. r g-.
+	\startMeasureCount r8 g-.\f r g-. r g-. r g-.
 	r8 g-. r g-. r g-. r g-.
 	r8 g-. r g-. r g-. r g-.
 % Bars 61 to 65
 	r8 g-. r g-. r g-. r g-.
-	r8 g-. r g-. r g-. r g-.
+	r8 g-. r g-. r g-. r g-. \stopMeasureCount
 	g4 r r2
 	R1*5
 	
@@ -193,8 +193,8 @@ musicCornoIIIMvtIV = \relative c {
 	\ni \mmrPos #-4 R1 \no
 	R1*2
 	\clef bass
-	<< bes,1\fz\>~ {s4 s s s\!}>>
-	<< bes1~\p\> {s4 s s s\!}>>
+	bes,1\fz\>~
+	bes1~\p\>
 % Bars 161 to 165
 	bes1\pp \clef treble
 	R1*3
@@ -210,27 +210,19 @@ musicCornoIIIMvtIV = \relative c {
 % Bars 171 to 175
 	bes4 r r2
 	R1
-	<< c1\fp\>~ {s4 s s s\!}>>
-	c2. r4
-	R1*4
+	c1\fp\>~
+	c2.\! r4
+	R1*16
 % Bars 176 to 180
 	
-	
-	
-	R1
-	R1
 % Bars 181 to 185
-	R1
-	R1
-	R1
-	R1
-	R1
+	
 % Bars 186 to 190
-	R1*5
 	
 	
 	
-	\mark \default
+	
+	\markXoffset #-0.2 \mark \default
 % Bars 191 to 195
 	d2..->\f d8
 	cis2..->-\crescmarkup cis8
@@ -271,7 +263,9 @@ musicCornoIIIMvtIV = \relative c {
 	r4 b2.
 	r4 b2.
 % Bars 226 to 230
-	R1*7
+	R1*2
+	
+	\tempoXoffset #-1.5 R1*5
 % Bars 231 to 235
 	
 	
@@ -292,7 +286,7 @@ musicCornoIIIMvtIV = \relative c {
 	\mark \default
 % Bars 251 to 255
 	e1\p~
-	<< e~ {s4 s-\crescmarkup s s}>>
+	e~-\crescmarkup
 	e1~
 	e
 	e~
@@ -303,10 +297,10 @@ musicCornoIIIMvtIV = \relative c {
 	g2-> a->
 	R1
 % Bars 261 to 265
-	r8 g\f r g r g r g
+	\startMeasureCount r8 g\f r g r g r g
 	r g r g r g r g
 	r g r g r g r g
-	r g r g r g r g \mark \default
+	r g r g r g r g \stopMeasureCount \mark \default
 	g4 r r2
 % Bars 266 to 270
 	R1*5
@@ -335,7 +329,7 @@ musicCornoIIIMvtIV = \relative c {
 	
 	c''1\pp~
 	c2. a4
-	<< d1\< {s4 s s s\!}>>
+	\hairpinShorten #'(0 . 1.5) d1\<
 	c1->\fp~
 % Bars 296 to 300
 	c(
@@ -398,12 +392,12 @@ musicCornoIIIMvtIV = \relative c {
 	g r r2
 	R1*2
 	
-	g,1\pp \clef bass
+	g,1-\offset X-offset -2.5 \pp \clef bass
 	c,\pp~
 % Bars 351 to 355
 	c
 	<< c\<~ {s4 s s s\!}>>
-	<< c2\> {s8 s s s\!}>> r2 \clef treble
+	<< \hairpinShorten #'(0 . -1) c2\> {s8 s s s\!}>> r2 \clef treble
 	R1
 	d''\brack\pp
 % Bars 356 to 360

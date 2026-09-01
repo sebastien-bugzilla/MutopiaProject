@@ -198,7 +198,7 @@ musicFagottoIMvtIII = \relative c {
 	c![ r c](
 	ees)[ r ees](
 % Bars 191 to 195
-	\tempoXoffset #3 \tempoEO #'(-1 . 0) \tempoOsf #290 aes)\pp r r
+	\tempoXoffset #3 \tempoEO #'(-1 . 0) \tempoOsp #290 aes)\pp r r
 	\mmrLength #12 R4.*3 \clef bass
 	
 	\tweak direction #-1 \textEndMark \attaccatrio \section

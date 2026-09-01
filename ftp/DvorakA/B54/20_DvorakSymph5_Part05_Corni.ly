@@ -20,6 +20,8 @@
 \include "./00-Common/DvorakSymph5_LayoutParts.ily"
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
+\include "./00-Common/DvorakSymph5_Tempi.ily"
+%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_Format_Part05_Corni.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v09_music_CornoI.ily"
@@ -50,20 +52,31 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54)"
+			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54) — Corni"
 		}
 		instrument = \markup {
-			"Corni"
+			""
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatCornoIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoI) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtI
 			}
@@ -78,16 +91,20 @@
 			}
 		}
 		\layout {
+%			system-count = 19
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatCornoIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoI) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtII
 			}
@@ -98,10 +115,11 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.5 \bold 2.
 			}
 		}
 		\layout {
+%			system-count = 6
 		}
 	}
 	\score {
@@ -109,9 +127,9 @@
 			\new Voice {
 				\formatCornoIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoI) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtIII
 			}
@@ -122,20 +140,24 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #2 \bold 3.
 			}
 		}
 		\layout {
+%			system-count = 18
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatCornoIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoI) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoI) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtIV
 			}
@@ -144,22 +166,26 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatCornoIIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoII) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtI
 			}
@@ -174,6 +200,7 @@
 			}
 		}
 		\layout {
+%			system-count = 12
 		}
 	}
 	\score {
@@ -181,9 +208,9 @@
 			\new Voice {
 				\formatCornoIIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoII) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtII
 			}
@@ -192,12 +219,13 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
 		}
 		\layout {
+%			system-count = 12
 		}
 	}
 	\score {
@@ -205,9 +233,9 @@
 			\new Voice {
 				\formatCornoIIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoII) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtIII
 			}
@@ -216,22 +244,26 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
 		}
 		\layout {
+%			system-count = 16
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatCornoIIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoII) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoII) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtIV
 			}
@@ -242,10 +274,11 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #1.1 \bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 26
 		}
 	}
 	\score {
@@ -253,9 +286,9 @@
 			\new Voice {
 				\formatCornoIIIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoIII) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoIII) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtI
 			}
@@ -270,6 +303,7 @@
 			}
 		}
 		\layout {
+%			system-count = 26
 		}
 	}
 	\score {
@@ -277,9 +311,9 @@
 			\new Voice {
 				\formatCornoIIIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoIII) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoIII) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtII
 			}
@@ -288,12 +322,13 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
 		}
 		\layout {
+%			system-count = 10
 		}
 	}
 	\score {
@@ -301,9 +336,9 @@
 			\new Voice {
 				\formatCornoIIIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoIII) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoIII) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtIII
 			}
@@ -314,20 +349,24 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #1 \bold 3.
 			}
 		}
 		\layout {
+%			system-count = 14
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatCornoIIIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoIII) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoIII) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtIV
 			}
@@ -336,22 +375,34 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 4.
 			}
 		}
 		\layout {
+%			system-count = 13
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatCornoIVMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoIV) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoIV) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtI
 			}
@@ -366,6 +417,7 @@
 			}
 		}
 		\layout {
+%			system-count = 4
 		}
 	}
 	\score {
@@ -373,9 +425,9 @@
 			\new Voice {
 				\formatCornoIVMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoIV) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoIV) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtII
 			}
@@ -386,20 +438,24 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1.3 \bold 2.
 			}
 		}
 		\layout {
+%			system-count = 8
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatCornoIVMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoIV) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoIV) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtIII
 			}
@@ -410,20 +466,24 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 3.
+				\vspace #0.8 \bold 3.
 			}
 		}
 		\layout {
+%			system-count = 4
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatCornoIVMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(cornoIV) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(cornoIV) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtIV
 			}
@@ -434,10 +494,11 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 4.
+				\vspace #0.9 \bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 13
 		}
 	}
 }

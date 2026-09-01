@@ -168,7 +168,7 @@ musicCornoIIMvtII = \relative c {
 	R4.
 	r8 e\p\< e\!
 	fis4\fz( a8)
-	b4\> r8\!
+	b4\> r8\p
 % Bars 151 to 155
 	g16-. a-. g8-.\pp fis-.
 	e16 r r8 r
