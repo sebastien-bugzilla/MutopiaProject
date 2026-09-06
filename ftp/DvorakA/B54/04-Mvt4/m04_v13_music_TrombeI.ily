@@ -9,7 +9,11 @@ musicTrombeIMvtIV = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R1*5
+	\mmrLength #28 R1*3
+	
+	
+	R1
+	R
 % Bars 6 to 10
 	\time 2/4 R2
 	\timeMvtIV R1*7
@@ -115,7 +119,7 @@ musicTrombeIMvtIV = \relative c {
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	g,8\f\< c16 ees g4~ g8 ees-. c-. ees-.\!
+	g,8-\offset X-offset -2 \f c16\< ees g4~ g8 ees-. c-. ees-.\!
 	fis2-^\ff r
 % Bars 136 to 140
 	r4 a-^ r fis-^
@@ -147,11 +151,12 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 166 to 170
 	\mark \default
-	R1*24
+	R1*10
 % Bars 171 to 175
 	
 % Bars 176 to 180
 	
+	\mmrLength #18 R1*14
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -192,11 +197,15 @@ musicTrombeIMvtIV = \relative c {
 	r4 g-.\ff g-. aes-.
 	aes8 r r4 a-. b!-.
 	b8-. r r4 r2
-	R1*16
+	R1*3
 % Bars 221 to 225
 	
+	
+	\mmrLength #15 R1*5
 % Bars 226 to 230
 	
+	
+	R1*8
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -206,9 +215,9 @@ musicTrombeIMvtIV = \relative c {
 	
 % Bars 246 to 250
 	r4 b8-.\mf r e,-. r fis-. r
-	g2\fz r4 r8. d16\<
-	g2\!-> r4 r8. d16
-	<< f1\>~ {s4 s s s\!}>>
+	g2\fz r4 r8. d16-\alterBroken shorten-pair #'(()(0 . 2)) \<
+	g2-> r4\! r8. d16
+	f1\>~
 	f4\! r r2 \mark \default
 % Bars 251 to 255
 	R1*6
@@ -326,13 +335,13 @@ musicTrombeIMvtIV = \relative c {
 	a a2-> b4
 	c2-> c->
 	g-> fis->
-	g4 r g r
+	\startMeasureCount g4 r g r
 % Bars 396 to 400
 	g r g r
 	g r g r
 	g r g r
 	g r g r
-	g r g r
+	g r g r \stopMeasureCount
 % Bars 401 to 405
 	g r r2
 	r2 r4 r8 g\ff \mark \default

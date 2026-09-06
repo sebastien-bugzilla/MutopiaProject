@@ -20,6 +20,8 @@
 \include "./00-Common/DvorakSymph5_LayoutParts.ily"
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
+\include "./00-Common/DvorakSymph5_Tempi.ily"
+%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_Format_Part06_Trombe.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v13_music_TrombeI.ily"
@@ -42,10 +44,10 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54)"
+			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54) — Trombe"
 		}
 		instrument = \markup {
-			"Trombe"
+			""
 		}
 	}
 	\score {
@@ -53,9 +55,9 @@
 			\new Voice {
 				\formatTrombeIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(trombeI) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(trombeI) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtI
 			}
@@ -70,6 +72,7 @@
 			}
 		}
 		\layout {
+%			system-count = 19
 		}
 	}
 	\score {
@@ -77,9 +80,9 @@
 			\new Voice {
 				\formatTrombeIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(trombeI) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(trombeI) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtII
 			}
@@ -90,10 +93,11 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #4 \bold 2.
 			}
 		}
 		\layout {
+%			system-count = 5
 		}
 	}
 	\score {
@@ -101,9 +105,9 @@
 			\new Voice {
 				\formatTrombeIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(trombeI) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(trombeI) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtIII
 			}
@@ -112,22 +116,24 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
 		}
 		\layout {
+%			system-count = 12
 		}
 	}
 	\score {
 		\new Staff <<
+
 			\new Voice {
 				\formatTrombeIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(trombeI) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(trombeI) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtIV
 			}
@@ -136,12 +142,21 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 12
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
@@ -149,9 +164,9 @@
 			\new Voice {
 				\formatTrombeIIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(trombeII) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(trombeII) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtI
 			}
@@ -166,6 +181,7 @@
 			}
 		}
 		\layout {
+%			system-count = 19
 		}
 	}
 	\score {
@@ -173,9 +189,9 @@
 			\new Voice {
 				\formatTrombeIIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(trombeII) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(trombeII) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtII
 			}
@@ -186,10 +202,11 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #2 \bold 2.
 			}
 		}
 		\layout {
+%			system-count = 5
 		}
 	}
 	\score {
@@ -197,9 +214,9 @@
 			\new Voice {
 				\formatTrombeIIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(trombeII) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(trombeII) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtIII
 			}
@@ -208,22 +225,26 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
 		}
 		\layout {
+%			system-count = 12
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatTrombeIIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(trombeII) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(trombeII) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtIV
 			}
@@ -232,12 +253,13 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 12
 		}
 	}
 }

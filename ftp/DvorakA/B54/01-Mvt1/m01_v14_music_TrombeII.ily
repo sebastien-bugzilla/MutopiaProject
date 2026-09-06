@@ -12,7 +12,7 @@ musicTrombeIIMvtI = \relative c {
 	R2*2
 	
 	\repeat volta 2 {
-		R2*36
+		\mmrLength #25 R2*36
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -36,7 +36,7 @@ musicTrombeIIMvtI = \relative c {
 		r4 \tuplet 3/2 4 {r8 g''\f g
 		g[ g g] g\< g g
 		g[ g g] g g g\!} \mark \default
-		e4\ff e16-. d-. c8-.
+		\tempoXoffset #1.2 e4\ff e16-. d-. c8-.
 % Bars 46 to 50
 		d4-> f16-. e-. d8-.
 		e-. g4-> g8~
@@ -130,7 +130,7 @@ musicTrombeIIMvtI = \relative c {
 		\ni \mmrPos #4 R2
 % Bars 166 to 170
 		\mmrPos #4 R \no
-		cis2\ff~
+		cis2-\offset X-offset -1 \ff~
 		cis4 r
 		R2*14
 % Bars 171 to 175
@@ -148,7 +148,7 @@ musicTrombeIIMvtI = \relative c {
 		
 		
 		\subdiviseBeam \tuplet 3/2 4 {b8(\p d g~ g d b~
-		b d_\dimmarkup g~ g d b)~}
+		b d-\tweak extra-offset #'(0 . 3) _\dimmarkup g~ g d b)~}
 % Bars 191 to 195
 		b( d4\pp g8~
 		g d4 b8)
@@ -264,7 +264,7 @@ musicTrombeIIMvtI = \relative c {
 % Bars 301 to 305
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	bes,2->\ff
+	bes,2->-\tweak extra-offset #'(-1 . -10.5) ^\ff
 	bes4-> f'->
 	bes8-. f4-> f8~
 % Bars 306 to 310
@@ -285,7 +285,7 @@ musicTrombeIIMvtI = \relative c {
 	
 	
 	\mark \default
-	R2*38
+	\mmrLength #14 R2*38
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -309,7 +309,7 @@ musicTrombeIIMvtI = \relative c {
 % Bars 371 to 375
 	g-.[ g-. g-.] g-._\crescmarkup g-. g-.
 	g-.[ g-. g-.] g-. g-. g-.} \mark \default
-	e4->\ff e16-. d-. c8-.
+	\tempoXoffset 1.8 e4->\ff e16-. d-. c8-.
 	d4-> f16-. e-. d8-.
 	e8-. g4-> g8~
 % Bars 376 to 380
@@ -326,15 +326,15 @@ musicTrombeIIMvtI = \relative c {
 % Bars 391 to 395
 	
 	
-	r8 g-.\pp r g-.
+	\startMeasureCount r8 g-.\pp r g-.
 	r g-. r g-.
 	r g-. r g-.
 % Bars 396 to 400
 	r g-. r g-.
 	r g-. r g-.
-	r_\crescmarkup g-. r g-.
+	r-\offset X-offset -2.5 ^\crescmarkup g-. r g-.
 	r g-. r g-.
-	r g-. r g-.
+	r g-. r g-. \stopMeasureCount
 % Bars 401 to 405
 	R2*5
 % Bars 406 to 410
@@ -392,17 +392,18 @@ musicTrombeIIMvtI = \relative c {
 	e4. c8
 % Bars 481 to 485
 	e\p r r4
-	R2*23
+	R2*15
 % Bars 486 to 490
 	
 % Bars 491 to 495
 	
 % Bars 496 to 500
 	
+	\mmrLength #14 \tempoEO #'(-1.5 . 0) \mmrnDown R2*6
 % Bars 501 to 505
 	
 	
+	R2*2
 	
-	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

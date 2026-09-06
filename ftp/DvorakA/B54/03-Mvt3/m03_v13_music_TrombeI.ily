@@ -9,16 +9,20 @@ musicTrombeIMvtIII = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R4.*15
+	\mmrLength #30 \mmrnDown R4.*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R4.\fermata \section
-	\time 3/8 R4.*49
+	\once \ni R4.\fermata \section
+	\time 3/8 \mmrLength #30 R4.*8
 % Bars 21 to 25
 	
+	
+	
+	
+	R4.*41
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -128,20 +132,20 @@ musicTrombeIMvtIII = \relative c {
 	\mmrPos #-4 R \no
 % Bars 181 to 185
 	R4.
-	e8\ff r r
-	\startVoltaI f r r
-	R4.*11
+	e8\ff r r \markCoda
+	\startVoltaI f r r 
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
+	\mmrLength #12 \tempoXoffset #-1.5 R4.*4
 	
 	
-	
-	\section
-	\startVoltaII f8\ff r r \endVolta \section
+	\tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII f8\ff r r \endVolta \tweak direction #-1 \textEndMark \finemarkup \section \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\sectionLabel "TRIO" \time 3/8 R4.*18
+		\tempoXoffset #5 \sectionLabel "TRIO" \removeTimeSignatureEoL \time 3/8 \mmrLength #22 R4.*18
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -225,7 +229,7 @@ musicTrombeIMvtIII = \relative c {
 	r8. g16-.\ff g8-.
 % Bars 321 to 324
 	g8 r r
-	R4.*3
+	\mmrLength #15 R4.*3
 	
-	\section
+	\tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section
 }

@@ -9,7 +9,11 @@ musicTrombeIIMvtIV = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R1*5
+	\mmrLength #28 R1*3
+	
+	
+	R1
+	R
 % Bars 6 to 10
 	\time 2/4 R2
 	\timeMvtIV R1*7
@@ -115,8 +119,8 @@ musicTrombeIIMvtIV = \relative c {
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	g,8\f\< c16 ees g4~ g8 ees-. c-. ees-.\!
-	ees2-^\ff r
+	g,8\f c16\< ees g4~ g8 ees-. c-. ees-.\!
+	ees2^^\ff r
 % Bars 136 to 140
 	r4 d-^ r d-^
 	ees2-^\ff r
@@ -133,7 +137,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	
-	r2 bes,->\f
+	r2 bes,^>\f
 	bes'-> r
 % Bars 151 to 155
 	R1*2
@@ -147,11 +151,16 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 166 to 170
 	\mark \default
-	R1*24
+	R1*7
 % Bars 171 to 175
+	
+	
+	
+	R1*3
 	
 % Bars 176 to 180
 	
+	\mmrLength #15 R1*14
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -192,11 +201,15 @@ musicTrombeIIMvtIV = \relative c {
 	r4 ees-.\ff ees-. ees-.
 	des8 r r4 fis-. b,!-.
 	e8-. r r4 r2
-	R1*16
+	R1*3
 % Bars 221 to 225
 	
+	
+	\mmrLength #13 R1*5
 % Bars 226 to 230
 	
+	
+	\tempoXoffset #-1.5 R1*8
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -206,9 +219,9 @@ musicTrombeIIMvtIV = \relative c {
 	
 % Bars 246 to 250
 	r4 b'8-.\mf r e,-. r fis-. r
-	g2\fz r4 r8. d16\<
-	g2\!-> r4 r8. d16
-	<< f1\>~ {s4 s s s\!}>>
+	g2\fz r4 r8. d16-\alterBroken shorten-pair #'(()(0 . 2))\<
+	g2-> r4\! r8. d16
+	f1\>~
 	f4\! r r2 \mark \default
 % Bars 251 to 255
 	R1*6
@@ -265,7 +278,7 @@ musicTrombeIIMvtIV = \relative c {
 	
 	
 	\ni \mmrPos #4 R1 \no
-	<< {g,2 g~} {s8\< s s s\! s\> s s s\!}>>
+	<< {g,2 g~} {\hairpinShorten #'(-0.5 . -0.9) s8-\offset X-offset -1 \pp\< s s s\! \hairpinShorten #'(0.4 . 0) s\> s s s\!}>>
 % Bars 331 to 335
 	g2 g\pp~
 	<< {g g~} {s8\< s s s\! s\> s s s\!}>>
@@ -279,7 +292,7 @@ musicTrombeIIMvtIV = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 % Bars 341 to 345
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 	R1*14
 % Bars 346 to 350
 	
@@ -326,13 +339,13 @@ musicTrombeIIMvtIV = \relative c {
 	e f2-> f4
 	e2-> e->
 	c-> c->
-	g4 r g r
+	\startMeasureCount g4 r g r
 % Bars 396 to 400
 	g r g r
 	g r g r
 	g r g r
 	g r g r
-	g r g r
+	g r g r \stopMeasureCount
 % Bars 401 to 405
 	g r r2
 	r2 r4 r8 g'\ff \mark \default

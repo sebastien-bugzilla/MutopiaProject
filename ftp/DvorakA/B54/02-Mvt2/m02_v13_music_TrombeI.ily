@@ -9,7 +9,7 @@ musicTrombeIMvtII = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R4.*57
+	\mmrLength #33 R4.*24
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -18,6 +18,10 @@ musicTrombeIMvtII = \relative c {
 	
 % Bars 21 to 25
 	
+	
+	
+	
+	R4.*33
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -33,7 +37,7 @@ musicTrombeIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section \mark \default
-	R4.*30
+	\mmrLength #20.5 \tempoXoffset #-2 \mmrnDown R4.*26
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -44,12 +48,16 @@ musicTrombeIMvtII = \relative c {
 	
 % Bars 81 to 85
 	
+	
+	
+	\tempoXoffset #-1.5 R4.*4
+	
 % Bars 86 to 90
 	
 	\section
-	R4.*2
+	\mmrLength #14 R4.*2
 	\mark \default
-	R4.*26
+	R4.*23
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -60,6 +68,8 @@ musicTrombeIMvtII = \relative c {
 	
 % Bars 111 to 115
 	
+	
+	\mmrLength #20 R4.*3
 % Bars 116 to 120
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R
@@ -70,22 +80,22 @@ musicTrombeIMvtII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 	r8^\secco g''-.\ff g-.
-	g-. g-. g-.
+	\tempoXoffset #6 g-. g-. g-.
 	fis-. g-. e-. \mark \default
 % Bars 126 to 130
-	b' r r
+	\tempoXoffset #1 b' r r
 	R4.
 	b4.\fp\>
-	<< fis4\p~ {s8 s-\dimmarkup}>> fis16. b,32
+	fis4\pdimD~ fis16. b,32
 	b4\pp r8
 % Bars 131 to 135
-	R4.*12
+	R4.*10
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	
+	\mmrLength #12 R4.*2
 	\section \mark \default
-	R4.*21
+	\mmrnDown R4.*21
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -95,7 +105,7 @@ musicTrombeIMvtII = \relative c {
 % Bars 161 to 165
 	
 	
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R
 % Bars 166 to 170
@@ -129,5 +139,5 @@ musicTrombeIMvtII = \relative c {
 	b r r8 r
 	R4.
 % Bar 201
-	R\fermata \fine
+	\once \ni R\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

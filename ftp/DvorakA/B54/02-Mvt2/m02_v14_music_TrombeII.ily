@@ -9,7 +9,7 @@ musicTrombeIIMvtII = \relative c {
 	\key a \minor
 	\transposition f
 % Bars 1 to 5
-	R4.*57
+	\mmrLength #20 R4.*24
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -18,6 +18,10 @@ musicTrombeIIMvtII = \relative c {
 	
 % Bars 21 to 25
 	
+	
+	
+	
+	\mmrLength #16 R4.*33
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -33,7 +37,7 @@ musicTrombeIIMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section \mark \default
-	R4.*30
+	\mmrLength #18 \mmrnDown \tempoXoffset #-1 R4.*26
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -44,12 +48,15 @@ musicTrombeIIMvtII = \relative c {
 	
 % Bars 81 to 85
 	
+	
+	
+	R4.*4
 % Bars 86 to 90
 	
 	\section
 	R4.*2
 	\mark \default
-	R4.*26
+	R4.*23
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -60,6 +67,8 @@ musicTrombeIIMvtII = \relative c {
 	
 % Bars 111 to 115
 	
+	
+	\mmrLength #20 \mmrnDown \tempoXoffset #-1 R4.*3
 % Bars 116 to 120
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R
@@ -69,23 +78,23 @@ musicTrombeIIMvtII = \relative c {
 % Bars 121 to 125
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	r8^\secco e'!-.\ff e-.
-	d-. dis-. e-.
+	r8^\secco e'!-. e-.-\tweak extra-offset #'(-3.5 . -8.4) ^\ff
+	\tempoXoffset #7 d-. dis-. e-.
 	fis-. g-. e-. \mark \default
 % Bars 126 to 130
-	b' r r
+	\tempoXoffset #1 b' r r
 	R4.
 	b4.\fp\>
-	<< fis4\p~ {s8 s-\dimmarkup}>> fis16. b,32
+	fis4\pdimD~ fis16. b,32
 	b4\pp r8
 % Bars 131 to 135
-	R4.*12
+	R4.*10
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	
+	\mmrLength #11 R4.*2
 	\section \mark \default
-	R4.*21
+	\mmrLength #27 \mmrnDown R4.*21
 % Bars 146 to 150
 	
 % Bars 151 to 155
@@ -95,13 +104,13 @@ musicTrombeIIMvtII = \relative c {
 % Bars 161 to 165
 	
 	
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R
 % Bars 166 to 170
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	b8.\f d16-. cis-. b-.
+	b8.-\offset X-offset -2 \f d16-. cis-. b-.
 	cis8. e16-. d-. cis-.
 	dis8. fis16-. e-. dis-.
 % Bars 171 to 175
@@ -129,5 +138,5 @@ musicTrombeIIMvtII = \relative c {
 	b r r8 r
 	R4.
 % Bar 201
-	R\fermata \fine
+	\once \ni R\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

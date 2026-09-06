@@ -9,14 +9,14 @@ musicTrombeIIMvtIII = \relative c {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R4.*15
+	\mmrLength #28 \mmrnDown R4.*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R4.\fermata \section
-	\time 3/8 R4.*49
+	\once \ni R4.\fermata \section
+	\time 3/8 \mmrLength #30 R4.*49
 % Bars 21 to 25
 	
 % Bars 26 to 30
@@ -76,8 +76,8 @@ musicTrombeIIMvtIII = \relative c {
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R
 % Bars 116 to 120
-	\mmrPos #-4 R
-	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 	\mmrPos #-4 R \no
 	R4.*8
 % Bars 121 to 125
@@ -109,13 +109,13 @@ musicTrombeIIMvtIII = \relative c {
 	c4 c8
 	f!4 r8
 % Bars 151 to 155
-	R4.*12
+	\mmrLength #13 R4.*12
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 	\mark \default
-	R4.*13
+	\mmrLength #13 R4.*13
 % Bars 166 to 170
 	
 % Bars 171 to 175
@@ -128,20 +128,20 @@ musicTrombeIIMvtIII = \relative c {
 	\mmrPos #-4 R \no
 % Bars 181 to 185
 	R4.
-	c8\ff r r
+	c8\ff r r \markCoda
 	\startVoltaI c r r
-	R4.*11
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
+	\mmrLength #13 \tempoXoffset #-1.5 R4.*4
 	
 	
-	
-	\section
-	\startVoltaII c8\ff r r \endVolta \section
+	\tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII c8\ff r r \tweak direction #-1 \textEndMark \finemarkup \endVolta \section \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\sectionLabel "TRIO" \time 3/8 R4.*18
+		\removeTimeSignatureEoL \sectionLabel "TRIO" \time 3/8 \mmrLength #22 \tempoXoffset #5 R4.*18
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -225,7 +225,7 @@ musicTrombeIIMvtIII = \relative c {
 	r8. e!16-.\ff e8-.
 % Bars 321 to 324
 	e8 r r
-	R4.*3
+	\mmrLength #17 R4.*3
 	
-	\section
+	\tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section
 }

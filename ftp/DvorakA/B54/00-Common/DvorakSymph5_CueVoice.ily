@@ -2089,14 +2089,14 @@ cueVoiceCornoIVMvtIV = \relative c {
 cueVoiceTrombeIMvtI = \relative c {
 	s2*38
 	% bars 39 - 41
-	\voiceOne b''8.->^\pp^\markup {Cor.} g16 c8.-> a16
-	d8.-> b16 f'8.->^\f c16
+	\voiceOne b''8.->-\offset X-offset -2 ^\pp^\markup {Cor.} g16 c8.-> a16
+	d8.-> b16 f'8.->-\offset X-offset -1 ^\f c16
 	f8.-> c16 f8.-> c16 \oneVoice
 	s2*31
 	% bars 73 - 76
 	\transpose f c' {
 		\relative c {
-			\voiceOne \clef bass f4(^\pp^\markup {Vlc.Cb.} a16 g f8)
+			\voiceOne \clef bass f4(^\pp-\offset X-offset -3 ^\markup {\column {\lower #1.5 "Vlc." "Cb."}} a16 g f8)
 			f4( e8) r
 			f4( a16 g f8)
 			f4( e8) r \clef treble \oneVoice
@@ -2106,8 +2106,8 @@ cueVoiceTrombeIMvtI = \relative c {
 	% bars 137 - 138
 	\transpose f bes {
 		\relative c {
-			\voiceOne r4 a'''16(^\mp^\markup {Cl.} g fis) r
-			fis( e d) r d( a fis) r \oneVoice
+			\voiceOne \stemDown r4 a'''16(^\mp-\offset X-offset -2.7 ^\markup {Cl.} g fis) r
+			fis( e d) r d( a fis) r \oneVoice \stemNeutral
 		}
 	}
 	s2*26
@@ -2116,7 +2116,7 @@ cueVoiceTrombeIMvtI = \relative c {
 	q \oneVoice
 	s2*16
 	% bars 183 - 185
-	\voiceOne f'2->~^\fp^\markup {Cor.}
+	\voiceOne f'2->~-\offset X-offset -1.5 ^\fp^\markup {Cor.}
 	f8 r d-. r
 	b-. r g-. r
 	s2*47
@@ -2133,7 +2133,7 @@ cueVoiceTrombeIMvtI = \relative c {
 	% bars 269 - 272
 	\transpose f a {
 		\relative c {
-			\voiceOne fes''2->~^\p^\markup {Cl.}
+			\voiceOne fes''2->~-\offset X-offset -1.5 ^\p^\markup {Cl.}
 			fes8. ces16( aes ces fes aes)
 			aes2^\fz~
 			aes \oneVoice
@@ -2164,18 +2164,18 @@ cueVoiceTrombeIMvtI = \relative c {
 cueVoiceTrombeIMvtII = \relative c {
 	s4.*24
 	% bar 25
-	<>^\markup {\column {\lower #1.5 "Cor." "Fg."}}
+	<>-\offset X-offset -2 ^\markup {\column {\lower #1.5 "Cor." "Fg."}}
 	s4.*91
 	% bars 116 - 122
 	\transpose f c' {
 		\relative c {
-			\voiceOne f'''4.->^\fz^\markup {Fl.}
+			\voiceOne \stemDown \ottava #1 f'''4.->-\offset X-offset -2 ^\fz^\markup {Fl.}
 			d4~ d16 bes
 			bes4.(
 			a8 bes c)
 			b!( c d)
 			c( d ees)
-			d( ees f) \oneVoice
+			d( ees f) \oneVoice \ottava #0 \stemNeutral
 		}
 	}
 	s4.*41
@@ -2186,7 +2186,7 @@ cueVoiceTrombeIMvtII = \relative c {
 	b8: cis4: \oneVoice
 	s4.*26
 	% bars 194 - 197
-	\voiceOne b8(^\pp^\markup {Cor.} cis dis16 e
+	\voiceOne b8(-\offset X-offset -1.5 ^\pp^\markup {Cor.} cis dis16 e
 	b8 cis dis16 e
 	b8 cis dis16 e
 	b8) r r \oneVoice
@@ -2223,8 +2223,8 @@ cueVoiceTrombeIMvtIII = \relative c {
 	% bars 84 - 85
 	\transpose f c' {
 		\relative c {
-			\voiceOne fis'''8->^\markup {Fl.} b,-. fis'-.
-			b,-.^\markup {Ob.} fis-. b-. \oneVoice
+			\ottava #1 \voiceOne fis'''8->-\offset X-offset -3 ^\markup {Fl.} b,-. fis'-.
+			b,-.^\markup {Ob.} fis-. b-. \oneVoice \ottava #0
 		}
 	}
 	<>^\markup {Cl.Ob.}
@@ -2249,7 +2249,7 @@ cueVoiceTrombeIMvtIII = \relative c {
 	% bars 176 - 180
 	\transpose f c' {
 		\relative c {
-			\voiceOne \clef alto bes'4(^\pp^\markup {Viola} f16 a
+			\voiceOne \clef alto bes'4(-\offset X-offset -1.5 ^\pp^\markup {Viola} f16 a
 			bes8) f-. bes-.
 			d-. bes-. d-.
 			bes'16(-> a g fis g8)
@@ -2263,7 +2263,7 @@ cueVoiceTrombeIMvtIII = \relative c {
 			\voiceOne r8.^\markup {Fl.Cl.} <aes'' ces>16-.^\p q8-.
 			q4.~
 			q8[ r16 q-. q8-.]
-			q8( <ces ees>) <bes des>-. \oneVoice
+			q8( <ces! ees>) <bes! des>-. \oneVoice
 		}
 	}
 	s4.*24
@@ -2287,7 +2287,7 @@ cueVoiceTrombeIMvtIII = \relative c {
 	ees4.
 	<aes, c>^\pp(
 	<aes bes>
-	<aes c>
+	<aes~ c>
 	<aes bes>
 	<aes c>8) r r \oneVoice
 	<>^\markup {Timp.}
@@ -2313,7 +2313,7 @@ cueVoiceTrombeIMvtIV = \relative c {
 	<>^\markup {Timp.}
 	s1*14
 	% bars 131 - 133
-	\voiceOne c''2..->^\ff^\markup {Cor.III.IV.} c8
+	\voiceOne c''2..->-\offset X-offset -2 ^\ff^\markup {Cor.III.IV.} c8
 	b!2..-> b8
 	c4.-> c8 b4.-> b8 \oneVoice
 	s1*43
@@ -2321,21 +2321,21 @@ cueVoiceTrombeIMvtIV = \relative c {
 	<>^\markup {Fl.Cl.}
 	s1*14
 	% bars 191 - 193
-	\voiceOne d2..->^\f^\markup {Cor.III.IV.} d8
+	\voiceOne \noteHeadEsw #'(-3 . 0) d2..->-\offset X-offset -1.5 ^\f^\markup {Cor.III.IV.} \revertNoteHeadEsw d8
 	cis2..-> cis8
 	d4-> cis-> d-> e-> \oneVoice
 	s1*19
 	% bar 213
 	\transpose f c' {
 		\relative c {
-			\voiceOne eis''8(^\markup {Viol.} fis16) r gis8( a16) r b!8( c16) r d8( dis16) r \oneVoice
+			\voiceOne \stemDown eis''8(^\markup {Viol.} fis16) r gis8( a16) r b!8( c16) r d8( dis16) r \oneVoice \stemNeutral
 		}
 	}
 	s1*22
 	% bar 236
 	\transpose f c' {
 		\relative c {
-			\voiceOne r2 \clef bass <b d fis>4^\pp^\markup {Trbni} r \clef treble \oneVoice
+			\voiceOne r2 \clef bass <b d fis>4-\offset X-offset -2 ^\pp^\markup {Trbni} r \clef treble \oneVoice
 		}
 	}
 	s1*67
@@ -2343,7 +2343,7 @@ cueVoiceTrombeIMvtIV = \relative c {
 	<>^\markup {Trbni}
 	s1*9
 	% bar 313
-	<>^\markup {\column {\lower #1.5 "Legni" "Cor." }}
+	<>-\offset X-offset -1.5 ^\markup {\column {\lower #1.5 "Legni" "Cor." }}
 	s1*9
 	% bar 322
 	<>^\markup {Fl.Viol.I.}
@@ -2351,13 +2351,13 @@ cueVoiceTrombeIMvtIV = \relative c {
 	% bars 338 - 341
 	\transpose f c' {
 		\relative c {
-			\voiceOne c'''2.^\markup {Fl.} c4~
+			\voiceOne \ottava #1 c'''2.^\markup {Fl.} c4~
 			c c-.( a-. c-.)
 			f2.-> c4~
-			c a-.( f-. a-.)
+			c a-.( f-. a-.) \ottava #0
 		}
 	}
-	<>^\markup {\column {\lower #1.5 "Legni,Archi" "Cor."}}
+	<>-\offset X-offset -1.5 ^\markup {\column {\lower #1.5 "Legni,Archi" "Cor."}}
 	s1*26
 	% bars 368 - 371
 	\transpose f c' {
@@ -2372,15 +2372,15 @@ cueVoiceTrombeIMvtIV = \relative c {
 cueVoiceTrombeIIMvtI = \relative c {
 	s2*38
 	% bars 39 - 42
-	\voiceOne b''8.->^\pp^\markup {Cor.} g16 c8.-> a16
-	d8.-> b16 f'8.->^\f c16
+	\voiceOne b''8.->-\offset X-offset -2 ^\pp^\markup {Cor.} g16 c8.-> a16
+	d8.-> b16 f'8.->-\offset X-offset -1 ^\f c16
 	f8.-> c16 f8.-> c16
 	f8 r s4 \oneVoice
 	s2*30
 	% bars 73 - 76
 	\transpose f c' {
 		\relative c {
-			\voiceOne \clef bass f4(^\pp^\markup {Vlc.Cb.} a16 g f8)
+			\voiceOne \clef bass f4(^\pp-\offset X-offset -3 ^\markup {\column { \lower #1.5 "Vlc." "Cb."}} a16 g f8)
 			f4( e8) r
 			f4( a16 g f8)
 			f4( e8) r \clef treble \oneVoice
@@ -2390,26 +2390,26 @@ cueVoiceTrombeIIMvtI = \relative c {
 	% bars 137 - 138
 	\transpose f bes {
 		\relative c {
-			\voiceOne r4 a'''16(^\mp^\markup {Cl.} g fis) r
-			fis( e d) r d( a fis) r \oneVoice
+			\voiceOne \stemDown r4 a'''16(^\mp-\offset X-offset -3 ^\markup {Cl.} g fis) r
+			fis( e d) r d( a fis) r \stemNeutral \oneVoice
 		}
 	}
 	s2*26
 	% bars 165 - 166
-	\voiceTwo <d, gis b>2~\p^\markup {Cor.II.III.IV}
+	\voiceTwo <d, gis b>2~\p^\markup { \column { \lower #1.5 "Cor.II." "III.IV"}}
 	q \oneVoice
 	s2*16
 	% bars 183 - 185
-	\voiceOne f'2->~^\fp^\markup {Cor.}
+	\voiceOne f'2->~-\offset X-offset -1.5 ^\fp^\markup {Cor.}
 	f8 r d-. r
 	b-. r g-. r
 	s2*47
 	% bars 233 - 236
 	\transpose f c' {
 		\relative c {
-			\voiceOne c''4->^\markup {Cl.Fg.} c8.-> fis,16
+			\voiceOne c''4->-\offset X-offset -2.7 ^\markup {\column {\lower #1.5 "Cl." "Fg."}} c8.-> fis,16
 			c'4.-> fis,8
-			dis'4^\f^\markup {Oboe} dis8. c!16
+			dis'4-\offset X-offset -1.5 ^\f^\markup {Oboe} dis8. c!16
 			dis4. c8 \oneVoice
 		}
 	}
@@ -2417,15 +2417,15 @@ cueVoiceTrombeIIMvtI = \relative c {
 	% bars 269 - 272
 	\transpose f a {
 		\relative c {
-			\voiceOne fes''2->~^\p^\markup {Cl.}
+			\voiceOne fes''2->~-\offset X-offset -1.5 ^\p^\markup {Cl.}
 			fes8. ces16( aes ces fes aes)
-			aes2^\fz~
+			aes2-\offset X-offset -1 ^\fz~
 			aes \oneVoice
 		}
 	}
 	s2*25
 	% bars 298 - 302
-	\voiceOne f8(^\f^\markup {Cor.} c'4 f,8)~
+	\voiceOne f8(^\f-\offset X-offset -4.5 ^\markup {Cor.I.} c'4 f,8)~
 	f bes4( f8)~
 	f bes4( g8)
 	f d'4( bes8)
@@ -2440,7 +2440,7 @@ cueVoiceTrombeIIMvtI = \relative c {
 	% bars 455 - 456
 	\transpose f c' {
 		\relative c {
-			\clef bass \voiceOne c2:32\p^\markup {Timp.}
+			\clef bass \voiceOne c2:32\p-\tweak extra-offset #'(0 . 11) _\markup {Timp.}
 			c: \clef treble
 		}
 	}
@@ -2453,13 +2453,13 @@ cueVoiceTrombeIIMvtII = \relative c {
 	% bars 116 - 122
 	\transpose f c' {
 		\relative c {
-			\voiceOne f'''4.->^\fz^\markup {Fl.}
+			\voiceOne \stemDown \ottava #1 f'''4.->-\offset X-offset -2 ^\fz^\markup {Fl.}
 			d4~ d16 bes
 			bes4.(
 			a8 bes c)
 			b!( c d)
 			c( d ees)
-			d( ees f) \oneVoice
+			d( ees f) \oneVoice \ottava #0 \stemNeutral
 		}
 	}
 	s4.*41
@@ -2470,7 +2470,7 @@ cueVoiceTrombeIIMvtII = \relative c {
 	b8: cis4: \oneVoice
 	s4.*26
 	% bars 194 - 197
-	\voiceOne b8(^\pp^\markup {Cor.} cis dis16 e
+	\voiceOne b8(-\offset X-offset -1.5 ^\pp^\markup {Cor.} cis dis16 e
 	b8 cis dis16 e
 	b8 cis dis16 e
 	b8) r r \oneVoice
@@ -2502,16 +2502,16 @@ cueVoiceTrombeIIMvtIII = \relative c {
 	<>^\markup {Fl.}
 	s4.*9
 	% bar 79
-	<>^\markup {\column {\lower #1.5 "Archi." "Ob."}} 
+	<>-\offset X-offset -1.5 ^\markup {\column {\lower #1.5 "Archi." "Ob."}} 
 	s4.*5
 	% bars 84 - 85
 	\transpose f c' {
 		\relative c {
-			\voiceOne fis'''8->^\markup {Fl.} b,-. fis'-.
-			b,-.^\markup {Ob.} fis-. b-. \oneVoice
+			\voiceOne \ottava #1 fis'''8->-\offset X-offset -3 ^\markup {Fl.} b,-. fis'-.
+			b,-.^\markup {Ob.} fis-. b-. \oneVoice \ottava #0 
 		}
 	}
-	<>^\markup {\column {\lower #1.5 "Cl." "Ob."}}
+	<>-\offset X-offset -1.5 ^\markup {\column {\lower #1.5 "Cl." "Ob."}}
 	s4.*8
 	% bar 94
 	<>^\markup {Fg.}
@@ -2533,7 +2533,7 @@ cueVoiceTrombeIIMvtIII = \relative c {
 	% bars 176 - 180
 	\transpose f c' {
 		\relative c {
-			\voiceOne \clef alto bes'4(^\pp^\markup {Viola} f16 a
+			\voiceOne \clef alto bes'4(-\offset X-offset -1 ^\pp^\markup {Viola} f16 a
 			bes8) f-. bes-.
 			d-. bes-. d-.
 			bes'16(-> a g fis g8)
@@ -2544,7 +2544,7 @@ cueVoiceTrombeIIMvtIII = \relative c {
 	% bars 238 - 241
 	\transpose f c' {
 		\relative c {
-			\voiceOne r8.^\markup {Fl.Cl.} <aes'' ces>16-.^\p q8-.
+			\voiceOne r8.-\offset X-offset -1 ^\markup {Fl.Cl.} <aes'' ces>16-.-\offset X-offset -1 ^\p q8-.
 			q4.~
 			q8[ r16 q-. q8-.]
 			q8( <ces! ees>) <bes des>-. \oneVoice
@@ -2571,7 +2571,7 @@ cueVoiceTrombeIIMvtIII = \relative c {
 	ees4.
 	<aes, c>^\pp(
 	<aes bes>
-	<aes c>
+	<aes~ c>
 	<aes bes>
 	<aes c>8) r r \oneVoice
 	<>^\markup {Timp.}
@@ -2597,29 +2597,29 @@ cueVoiceTrombeIIMvtIV = \relative c {
 	<>^\markup {Timp.}
 	s1*14
 	% bars 131 - 133
-	\voiceOne c''2..->^\ff^\markup {Cor.III.IV.} c8
+	\voiceOne c''2..->-\offset X-offset -2 ^\ff^\markup {Cor.III.IV.} c8
 	b!2..-> b8
 	c4.-> c8 b4.-> b8 \oneVoice
 	s1*43
 	% bar 177
-	<>^\markup {Fl.Cl.}
+	<>-\offset X-offset -1 ^\markup {Fl.Cl.}
 	s1*14
 	% bars 191 - 193
-	\voiceOne d2..->^\f^\markup {Cor.III.IV.} d8
+	\voiceOne \noteHeadEsw #'(-3.5 . 0) d2..->-\offset X-offset -1.5 ^\f^\markup {Cor.III.IV.} \revertNoteHeadEsw d8
 	cis2..-> cis8
 	d4-> cis-> d-> e-> \oneVoice
 	s1*19
 	% bar 213
 	\transpose f c' {
 		\relative c {
-			\voiceOne eis''8(^\markup {Viol.} fis16) r gis8( a16) r b!8( c16) r d8( dis16) r \oneVoice
+			\voiceOne \stemDown eis''8(^\markup {Viol.} fis16) r gis8( a16) r b!8( c16) r d8( dis16) r \oneVoice \stemNeutral
 		}
 	}
 	s1*22
 	% bar 236
 	\transpose f c' {
 		\relative c {
-			\voiceOne r2 \clef bass <b d fis>4^\pp^\markup {Trbni} r \clef treble \oneVoice
+			\voiceOne r2 \clef bass <b d fis>4-\offset X-offset -1.7 ^\pp^\markup {Trbni} r \clef treble \oneVoice
 		}
 	}
 	s1*67
@@ -2627,7 +2627,7 @@ cueVoiceTrombeIIMvtIV = \relative c {
 	<>^\markup {Trbni}
 	s1*9
 	% bar 313
-	<>^\markup {\column {\lower #1.5 "Legni" "Cor." }}
+	<>-\offset X-offset -1 ^\markup {\column {\lower #1.5 "Legni" "Cor." }}
 	s1*9
 	% bar 322
 	<>^\markup {Fl.Viol.I.}
@@ -2638,13 +2638,13 @@ cueVoiceTrombeIIMvtIV = \relative c {
 	% bars 338 - 341
 	\transpose f c' {
 		\relative c {
-			\voiceOne c'''2.^\pp^\markup {Fl.} c4~
+			\voiceOne \stemDown \ottava #1 \noteHeadEsw #'(-2 . 0) c'''2.-\offset X-offset -1.3 ^\pp^\markup {Fl.} \revertNoteHeadEsw c4~
 			c c-.( a-. c-.)
 			f2.-> c4~
-			c a-.( f-. a-.)
+			c a-.( f-. a-.) \ottava #0 \stemNeutral
 		}
 	}
-	<>^\markup {\column {\lower #1.5 "Legni,Archi" "Cor."}}
+	<>-\offset X-offset -2 ^\markup {\column {\lower #1.5 "Legni,Archi" "Cor."}}
 	s1*26
 	% bars 368 - 371
 	\transpose f c' {

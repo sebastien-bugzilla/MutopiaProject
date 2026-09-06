@@ -12,7 +12,7 @@ musicTrombeIMvtI = \relative c {
 	R2*2
 	
 	\repeat volta 2 {
-		R2*36
+		\mmrLength #26 R2*36
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -36,7 +36,7 @@ musicTrombeIMvtI = \relative c {
 		r4 \tuplet 3/2 4 {r8 g''\f g
 		g[ g g] g\< g g
 		g[ g g] g g g\!} \mark \default
-		g4\ff e16-. d-. c8-.
+		\tempoXoffset #1 g4\ff e16-. d-. c8-.
 % Bars 46 to 50
 		d4-> f16-. e-. d8-.
 		e-. g4-> g8~
@@ -65,13 +65,13 @@ musicTrombeIMvtI = \relative c {
 		R2*5
 % Bars 81 to 85
 		
-		r4 ees8->\f r
+		\startMeasureCount r4 ees8->\f r
 		r4 ees8->\f r
 		r4 ees8\f r
 		r4 ees8_\crescmarkup r
 % Bars 86 to 90
 		r4 ees8-> r
-		r4 ees8-> r
+		r4 ees8-> r \stopMeasureCount
 		r b'!\f r b
 		r b r b
 		r b-.\f b-. b-.
@@ -309,7 +309,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 371 to 375
 	g-.[ g-. g-.] g-._\crescmarkup g-. g-.
 	g-.[ g-. g-.] g-. g-. g-.} \mark \default
-	g4->\ff e16-. d-. c8-.
+	\tempoXoffset #1.5 g4->\ff e16-. d-. c8-.
 	d4-> f16-. e-. d8-.
 	e8-. g4-> g8~
 % Bars 376 to 380
@@ -326,7 +326,7 @@ musicTrombeIMvtI = \relative c {
 % Bars 391 to 395
 	
 	
-	r8 g-.\pp r g-.
+	\startMeasureCount r8 g-.\pp r g-.
 	r g-. r g-.
 	r g-. r g-.
 % Bars 396 to 400
@@ -334,7 +334,7 @@ musicTrombeIMvtI = \relative c {
 	r g-. r g-.
 	r_\crescmarkup g-. r g-.
 	r g-. r g-.
-	r g-. r g-.
+	r g-. r g-. \stopMeasureCount
 % Bars 401 to 405
 	R2*5
 % Bars 406 to 410
@@ -364,7 +364,7 @@ musicTrombeIMvtI = \relative c {
 	
 	
 	
-	\markk
+	\markXoffset #-0.2 \markk
 	\ni \mmrPos #-4 R2
 % Bars 456 to 460
 	\mmrPos #-4 R \no
@@ -392,17 +392,18 @@ musicTrombeIMvtI = \relative c {
 	g4. e8
 % Bars 481 to 485
 	g\p r r4
-	R2*23
+	R2*15
 % Bars 486 to 490
 	
 % Bars 491 to 495
 	
 % Bars 496 to 500
 	
+	\mmrLength #13 \tempoXoffset #-2 \mmrnDown R2*6
 % Bars 501 to 505
 	
 	
+	\tempoXoffset #-1 R2*2
 	
-	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

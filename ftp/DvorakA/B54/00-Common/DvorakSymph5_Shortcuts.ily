@@ -600,6 +600,19 @@ tempoExtraOffset = #(define-music-function
 	#}
 )
 
+noteHeadEsw = #(define-music-function
+	(spacing)
+	(pair?)
+	#{
+		\override NoteHead.extra-spacing-width = #spacing
+	#}
+)
+
+revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
+
+
+
+
 %aIIOmit = \once \omit Voice.CombineTextScript
 
 %aIIExtraOffset = #(define-music-function
@@ -706,16 +719,6 @@ tempoExtraOffset = #(define-music-function
 %		\once \override Score.RehearsalMark.Y-offset = #offset
 %	#}
 %)
-
-%noteHeadEsw = #(define-music-function
-%	(spacing)
-%	(pair?)
-%	#{
-%		\override NoteHead.extra-spacing-width = #spacing
-%	#}
-%)
-
-%revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
 
 
 %ottavaShorten = #(define-music-function
