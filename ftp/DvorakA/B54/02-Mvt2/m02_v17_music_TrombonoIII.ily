@@ -9,7 +9,7 @@ musicTrombonoIIIMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R4.*54
+	\mmrLength #29 R4.*54
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -37,7 +37,7 @@ musicTrombonoIIIMvtII = \relative c {
 % Bars 56 to 60
 	\mmrPos #-4 R \no
 	R4. \section \mark \default
-	\key a \major R4.*30
+	\key a \major \mmrLength #23 \tempoXoffset -3 \mmrnDown R4.*26
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -48,12 +48,15 @@ musicTrombonoIIIMvtII = \relative c {
 	
 % Bars 81 to 85
 	
+	
+	
+	\tempoXoffset #-2 \mmrLength #14 R4.*4
 % Bars 86 to 90
 	
 	\section
-	\key a \minor R4.*2
+	\key a \minor \mmrLength #16  R4.*2
 	\mark \default
-	R4.*26
+	R4.*23
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -64,6 +67,8 @@ musicTrombonoIIIMvtII = \relative c {
 	
 % Bars 111 to 115
 	
+	
+	\mmrLength #14 \mmrnDown \tempoXoffset #-2 R4.*3
 % Bars 116 to 120
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R
@@ -73,14 +78,14 @@ musicTrombonoIIIMvtII = \relative c {
 % Bars 121 to 125
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	r8^\secco f-.\ff f-.
-	f-. f-. f-.
+	r8^\secco f-.-\tweak extra-offset #'(0 . 0.2) \ff f-.
+	\tempoXoffset #7 f-. f-. f-.
 	f-. f-. f-. \mark \default
 % Bars 126 to 130
-	e-. r r
+	\tempoXoffset #1 e-. r r
 	R4.
-	e4.\fp\> 
-	<< b4\p~ {s8 s-\dimmarkup}>> b16. e,32
+	e4.-\offset X-offset 0.5 \fp\> 
+	b4\pdimD~ b16. e,32
 	e4\pp r8
 % Bars 131 to 135
 	R4.*12
@@ -88,12 +93,13 @@ musicTrombonoIIIMvtII = \relative c {
 	
 % Bars 141 to 145
 	
-	\section \mark \default
-	R4.*13
+	\section \markXoffset #-0.2 \mark \default
+	\mmrLength #30 \tempoXoffset #2 \tempoEO #'(0 . -0.3) \mmrnDown R4.*9
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
+	R4.*4
 % Bars 156 to 160
 	R4.*8
 	
@@ -137,5 +143,5 @@ musicTrombonoIIIMvtII = \relative c {
 	a, r r8 r
 	R4.
 % Bar 201
-	R\fermata \fine
+	\once \ni R\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

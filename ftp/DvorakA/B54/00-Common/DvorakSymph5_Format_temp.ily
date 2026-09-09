@@ -1,89 +1,89 @@
 displayFilterVoice = {
-\set Score.skipTypesetting = ##t s1*5 s2*1 s1*206 \set Score.currentBarNumber = #213
-\set Score.skipTypesetting = ##f s1*203
+\set Score.skipTypesetting = ##t s1*5 s2*1 s1*204 \set Score.currentBarNumber = #211
+\set Score.skipTypesetting = ##f s1*205
 \set Score.skipTypesetting = ##t 
 }
-formatTrombeIIMvtI = {
+formatTrombonoIIIMvtI = {
 %\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 \override Score.NonMusicalPaperColumn.page-break-permission = ##f
 
 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 8.05))  s2*43 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 22.5))  s2*9 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 34.73))  s2*33 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 47.71))  s2*52 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 61.8))  s2*28 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 74.77))  s2*26 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 89.13))  s2*8 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 102.81))  s2*9 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 113.95))  s2*33 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 129.08))  s2*12 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 139.48))  s2*25 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 155.28))  s2*12 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 9.4))  s2*16 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20.49))  s2*63 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 33.8))  s2*9 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 47.09))  s2*20 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 58.2))  s2*57 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 71.63))  s2*20 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 82.26))  s2*30 
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 22.24))  s2*9 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 35.31))  s2*32 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 50.35))  s2*11 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 61.8))  s2*59 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 75.89))  s2*20 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 88.49))  s2*21 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 102.82))  s2*15 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 114.37))  s2*21 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 125.78))  s2*38 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140.68))  s2*9 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 155.28))  s2*10 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 9.4))  s2*15 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 23.11))  s2*13 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 33.57))  s2*56 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 45.89))  s2*8 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 58.66))  s2*86 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 72.53))  s2*14 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 82.91))  s2*25 
 }
-formatTrombeIIMvtII = {
+formatTrombonoIIIMvtII = {
 %\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 \override Score.NonMusicalPaperColumn.page-break-permission = ##f
 
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 102.91))  s4.*112 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 114.55))  s4.*12 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 128.61))  s4.*39 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140.91))  s4.*10 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 153.88))  s4.*28 
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 103.56))  s4.*87 
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 114.74))  s4.*35 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 128.77))  s4.*20 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140.71))  s4.*24 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 154.79))  s4.*27 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 7.7))  s4.*8 
 }
-formatTrombeIIMvtIII = {
+formatTrombonoIIIMvtIII = {
 %\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 \override Score.NonMusicalPaperColumn.page-break-permission = ##f
 
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 8.05))  s4.*60 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 19.53))  s4.*42 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 36.87))  s4.*8 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 49.64))  s4.*8 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 61.62))  s4.*15 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 76.34))  s4.*14 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 87.82))  s4.*31 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 98.49))  s4.*17 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 113.5))  s4.*48 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 129))  s4.*9 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140.56))  s4.*50 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 153.87))  s4.*22 
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 29.33))  s4.*52 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 40.39))  s4.*47 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 53.24))  s4.*28 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 68.87))  s4.*17 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 79.54))  s4.*33 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 90.39))  s4.*18 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 103.62))  s4.*49 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 116.68))  s4.*17 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 126.74))  s4.*14 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 139.85))  s4.*26 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 152.37))  s4.*23 
 }
-formatTrombeIIMvtIV = {
+formatTrombonoIIIMvtIV = {
 %\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 \override Score.NonMusicalPaperColumn.page-break-permission = ##f
 
 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 8.05))  s1*5 s2*1 s1*9 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 23.71))  s1*7 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 36.87))  s1*8 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 48.33))  s1*17 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 61.62))  s1*15 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 76.34))  s1*12 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 87.79))  s1*57 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 102.65))  s1*7 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 114.24))  s1*14 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 126.8))  s1*41 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 141.85))  s1*7 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 155.28))  s1*12 \pageBreak
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 5.95))  s1*6 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 18.6))  s1*29 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 34.25))  s1*17 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 47.53))  s1*13 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 60.81))  s1*54 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 72.2))  s1*25 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 84.64))  s1*19 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 100.62))  s1*10 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 115.46))  s1*7 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 128.74))  s1*9 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 139.73))  s1*6 \break
-\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 155.28))  s1*8 
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 23.71))  s1*6 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 36.9))  s1*9 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 48.32))  s1*17 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 61.6))  s1*22 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 76.32))  s1*23 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 87.81))  s1*20 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 100.46))  s1*23 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 115.8))  s1*7 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 126.78))  s1*50 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140.98))  s1*8 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 155.28))  s1*10 \pageBreak
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 5.95))  s1*8 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 16.48))  s1*20 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 30.81))  s1*10 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 41.69))  s1*21 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 54.14))  s1*10 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 66.59))  s1*31 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 77.29))  s1*38 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 90.77))  s1*20 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 103.92))  s1*12 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 117.94))  s1*9 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 129.36))  s1*9 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140.56))  s1*8 \break
+\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 155.28))  s1*9 
 }
-   
    
    
    

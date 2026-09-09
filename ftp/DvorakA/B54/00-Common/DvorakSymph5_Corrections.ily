@@ -142,3 +142,8 @@ correctionCorni = \markup {
 	% Mvt IV, bar 137, corno IV
 	"In Mvt IV, bar 137, for Corno IV, missing duration dots are added."
 }
+correctionTromboni = \markup {
+	
+	% Mvt I, bar 42, Trombono II
+	"In Mvt I, for trombono I, the number of measure after the repeat is 39 instead of 38."
+}

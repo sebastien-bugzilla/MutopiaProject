@@ -12,7 +12,7 @@ musicTrombonoIIMvtI = \relative c {
 	R2*2
 	
 	\repeat volta 2 {
-		R2*39
+		\mmrLength #25 R2*39
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -123,9 +123,9 @@ musicTrombonoIIMvtI = \relative c {
 		
 		
 		
-		\ni \mmrPos #4 R2
+		\ni \mmrPos #6 R2
 % Bars 166 to 170
-		\mmrPos #4 R \no
+		\mmrPos #6 R \no
 		b2\ff~
 		b4 r
 		R2*2
@@ -145,11 +145,11 @@ musicTrombonoIIMvtI = \relative c {
 		
 		
 		
-		\ni \mmrPos #6 R2
-		\mmrPos #6 R
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
 % Bars 191 to 195
-		\mmrPos #6 R
-		\mmrPos #6 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 		\alternative {
 			\volta 1 {
 				\mmrPos #-4 R
@@ -202,7 +202,7 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 236 to 240
 	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
+	\mmrPos #-6 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 % Bars 241 to 245
@@ -223,7 +223,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
+	\mmrPos #-6 R
 % Bars 271 to 275
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
@@ -271,12 +271,11 @@ musicTrombonoIIMvtI = \relative c {
 % Bars 311 to 315
 	r bes4.\fz\>~
 	bes\! r8
-	R2*4
+	R2*16
 	
 	
 % Bars 316 to 320
 	
-	R2*12
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -300,7 +299,7 @@ musicTrombonoIIMvtI = \relative c {
 	
 % Bars 366 to 370
 	
-	\ni \mmrPos #-4 R2
+	\ni \mmrPos #-6 R2
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 	\mmrPos #-4 r4 \voiceOne r
@@ -398,5 +397,5 @@ musicTrombonoIIMvtI = \relative c {
 	
 	
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

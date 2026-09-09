@@ -9,16 +9,20 @@ musicTrombonoIIIMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*15
+	\mmrLength #30 \mmrnDown R4.*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R4.\fermata \section
-	\time 3/8 R4.*49
+	\once \ni R4.\fermata \section
+	\time 3/8 \mmrLength #30 R4.*8
 % Bars 21 to 25
 	
+	
+	
+	
+	R4.*41
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -119,27 +123,27 @@ musicTrombonoIIIMvtIII = \relative c {
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	\ni \mmrPos #-4 R4.
-	\mmrPos #-4 R
+	\ni \mmrPos #-6 R4.
+	\mmrPos #-6 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 % Bars 181 to 185
 	R4.
-	f'8\ff r r
+	f'8\ff r r \markCoda
 	\startVoltaI bes, r r 
-	R4.*11
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
+	\mmrLength #15 R4.*4
 	
 	
-	
-	\section
-	\startVoltaII bes8\ff r r \section \endVolta
+	\tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII bes8\ff r r \tweak direction #-1 \textEndMark \finemarkup \section \endVolta \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\time 3/8 \key des \major \sectionLabel "TRIO" R4.*18
+		\removeTimeSignatureEoL \time 3/8 \key des \major \sectionLabel "TRIO" \mmrLength #26 \tempoXoffset #5 R4.*18
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -167,7 +171,7 @@ musicTrombonoIIIMvtIII = \relative c {
 		\mmrPos #-4 R
 % Bars 241 to 245
 		\mmrPos #-4 R \no
-		r8. aes16-.\ff aes8-.
+		r8. aes16-.-\offset X-offset -1 \ff aes8-.
 		aes4.->
 		r8. aes16-. aes8-.
 		aes des4
@@ -179,7 +183,7 @@ musicTrombonoIIIMvtIII = \relative c {
 		aes e,4->
 % Bars 251 to 255
 		f->-\dimmarkup g8
-		aes8\> e4->
+		\hairpinShorten #'(0 . 0.5) aes8-\tweak extra-offset #'(0 . -9) ^\> e4->
 		f-> g8\! \mark \default
 		aes8\p r r
 		R4.*7
@@ -218,7 +222,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	a4.\pp\<
 	<< f {s8 s s\!}>>
 	bes4.\fz
-	ges!4(-\dimmarkup\> g8
+	\hairpinShorten #'(-0.8 . -0.5) ges!4(-\offset X-offset -1.5 \dimD\> g8
 % Bars 301 to 305
 	aes4)\p r8
 	aes4\pp\> aes8-.
@@ -240,7 +244,7 @@ musicTrombonoIIIMvtIII = \relative c {
 	r8. f16-.\ff f8-.
 % Bars 321 to 324
 	f8 r r
-	R4.*3
+	\mmrLength #15 R4.*3
 	
-	\section \key bes \major s8
+	\textMarkAlignKeySignature \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key bes \major  s8
 }

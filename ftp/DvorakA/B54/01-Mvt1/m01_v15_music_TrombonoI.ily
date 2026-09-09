@@ -12,7 +12,7 @@ musicTrombonoIMvtI = \relative c {
 	R2*2
 	
 	\repeat volta 2 {
-		R2*39
+		\mmrLength #22 R2*39
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -123,9 +123,9 @@ musicTrombonoIMvtI = \relative c {
 		
 		
 		
-		\ni \mmrPos #4 R2
+		\ni \mmrPos #6 R2
 % Bars 166 to 170
-		\mmrPos #4 R \no
+		\mmrPos #6 R \no
 		d2\ff~
 		d4 r
 		R2*2
@@ -145,21 +145,21 @@ musicTrombonoIMvtI = \relative c {
 		
 		
 		
-		\ni \mmrPos #4 R2
-		\mmrPos #4 R
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
 % Bars 191 to 195
-		\mmrPos #4 R
-		\mmrPos #4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 		\alternative {
 			\volta 1 {
-				\mmrPos #4 R
-				\mmrPos #4 R \no
+				\mmrPos #-4 R
+				\mmrPos #-4 R \no
 			}
 			\volta 2 {
-				c'2\pp~
+				c'2\pp~  
 			}
 		}
-	}
+	} 
 % Bars 196 to 200
 	c4. r8
 	R2*2
@@ -253,12 +253,12 @@ musicTrombonoIMvtI = \relative c {
 % Bars 296 to 300
 	
 	
-	\ni \mmrPos #4 R2
-	\mmrPos #4 R
-	\mmrPos #4 R
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 301 to 305
-	\mmrPos #4 R
-	\mmrPos #4 R \no
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	ees,8->\ff g-> bes-> b->
 	c-> ces-> bes-> aes->
 	g-. ees'4->( f8)
@@ -300,18 +300,18 @@ musicTrombonoIMvtI = \relative c {
 	
 % Bars 366 to 370
 	
-	\ni \mmrPos #-8 R2
-	\mmrPos #-6 R
+	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R
-	\mmrPos #4 R \no
+	\mmrPos #-4 R \no
+	r4  \voiceOne  r
 % Bars 371 to 375
-	\voiceOne r4 \tuplet 3/2 4 {r8 r a-._\fcresc \oneVoice
+	r4 \tuplet 3/2 4 {r8 r a-._\fcresc \oneVoice
 	bes-.[ a-. bes-.] c-. d-. e-.} \mark \default
-	f\ff r r4
-	R2*2
+	\tempoXoffset #0.5 f\ff r r4
+	R2*3
 	
 % Bars 376 to 380
-	R2
+	
 	r8 a,-. c-> cis-.
 	d-> des-. c-> bes-.
 	a-> gis-. e-> fis16 gis
@@ -367,7 +367,7 @@ musicTrombonoIMvtI = \relative c {
 % Bars 471 to 475
 	
 	r4 e8\f r
-	c2\ff~
+	c2-\ffmarcato~
 	c
 	c->~
 % Bars 476 to 480
@@ -398,5 +398,5 @@ musicTrombonoIMvtI = \relative c {
 	
 	
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

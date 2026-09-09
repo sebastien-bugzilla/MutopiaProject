@@ -35,7 +35,7 @@ musicTrombonoIIMvtIV = \relative c {
 	
 	
 	r2 g4-^\f g-^~
-	g8 r cis\ff d-> a bes!-> fis-. g->
+	g8 r cis-.\ff d-> a-. bes!-> fis-. g->
 	r ees'-. r d-. r bes!-. r g-.
 % Bars 31 to 35
 	a-> bes-> fis-> g-> a-> bes-> fis-> g->

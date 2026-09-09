@@ -9,16 +9,20 @@ musicTrombonoIIMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*15
+	\mmrLength #30 \mmrnDown R4.*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R4.\fermata \section
-	\time 3/8 R4.*49
+	\once \ni R4.\fermata \section
+	\time 3/8 \mmrLength #30 R4.*8
 % Bars 21 to 25
 	
+	
+	
+	
+	R4.*41
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -126,20 +130,20 @@ musicTrombonoIIMvtIII = \relative c {
 	\mmrPos #-4 R \no
 % Bars 181 to 185
 	R4.
-	a8\ff r r
+	a8-\offset X-offset 0.5 \ff r r \markCoda
 	\startVoltaI f r r 
-	R4.*11
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
+	\mmrLength #15 R4.*4
 	
 	
-	
-	\section
-	\startVoltaII f8\ff r r \section \endVolta
+	\tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII f8\ff r r \tweak direction #-1 \textEndMark \finemarkup \section \endVolta \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\time 3/8 \key des \major \sectionLabel "TRIO" R4.*18
+		\removeTimeSignatureEoL \time 3/8 \key des \major \sectionLabel "TRIO" \mmrLength #26  \tempoXoffset #5 R4.*18
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -179,9 +183,9 @@ musicTrombonoIIMvtIII = \relative c {
 		aes e4->
 % Bars 251 to 255
 		f->-\dimmarkup g8
-		aes8\> e4->
+		\once \stemUp aes8\> e4->
 		f-> g8\! \mark \default
-		aes8\p r r
+		aes8-\offset X-offset 0.5 \p r r
 		R4.*7
 % Bars 256 to 260
 	
@@ -217,8 +221,8 @@ musicTrombonoIIMvtIII = \relative c {
 	r8 ees4
 	f4.->\pp\<
 	<< ees-> {s8 s s\!}>>
-	d4.->\fz
-	des!4->(-\dimmarkup\> ees8
+	d4.->-\tweak extra-offset #'(0 . -9) ^\fz
+	\hairpinShorten #'(-0.5 . -0.5) des!4->(-\offset X-offset -1 \dimD\> ees8
 % Bars 301 to 305
 	f4)\p r8
 	ges4\pp\> ges8-.
@@ -241,7 +245,7 @@ musicTrombonoIIMvtIII = \relative c {
 	r8. c'16-.\ff c8-.
 % Bars 321 to 324
 	c8 r r
-	R4.*3
+	\mmrLength #15 R4.*3
 	
-	\section \key bes \major s8
+	\textMarkAlignKeySignature \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key bes \major s8
 }

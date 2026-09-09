@@ -610,7 +610,7 @@ noteHeadEsw = #(define-music-function
 
 revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
 
-
+forceClef = \set Staff.forceClef = ##t
 
 
 %aIIOmit = \once \omit Voice.CombineTextScript

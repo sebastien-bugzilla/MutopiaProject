@@ -12,7 +12,7 @@ musicTrombonoIIIMvtI = \relative c {
 	R2*2
 	
 	\repeat volta 2 {
-		R2*36
+		\mmrLength #24 R2*36
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -33,10 +33,10 @@ musicTrombonoIIIMvtI = \relative c {
 		\mmrPos #-4 R
 % Bars 41 to 45
 		\mmrPos #-4 R \no
-		r4 \tuplet 3/2 4 {c8-.\mf d-. e-.
+		r4 \tuplet 3/2 4 {\stemUp c8-.\mf d-. e-. \stemNeutral
 		f-.[ dis-. e-.] f-.\< g-. a-.}
-		bes-._\fmarkup r \tuplet 3/2 4 {c,8-. d!-. e-.\!} \mark \default
-		f->\ff a,-. c-> cis-.
+		bes-.-\tweak extra-offset #'(0 . -9) ^\fmarkup r \tuplet 3/2 4 {c,8-. d!-. e-.\!} \mark \default
+		\tempoXoffset 1 f->\ff a,-. c-> cis-.
 % Bars 46 to 50
 		d-> des-. c-> r 
 		r4 r8 e-.
@@ -128,9 +128,9 @@ musicTrombonoIIIMvtI = \relative c {
 		
 		
 		
-		\ni \mmrPos #-4 R2
+		\ni \mmrPos #6 R2
 % Bars 166 to 170
-		\mmrPos #-4 R \no
+		\mmrPos #6 R \no
 		fis2\ff~
 		fis4 r
 		R2*2
@@ -211,7 +211,7 @@ musicTrombonoIIIMvtI = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 % Bars 241 to 245
-	bes'2->\ff~
+	bes'!2->\ff~
 	bes8 r r4
 	R2*14
 % Bars 246 to 250
@@ -228,7 +228,7 @@ musicTrombonoIIIMvtI = \relative c {
 	
 	
 	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
+	\mmrPos #-6 R
 % Bars 271 to 275
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
@@ -276,8 +276,8 @@ musicTrombonoIIIMvtI = \relative c {
 % Bars 311 to 315
 	
 	
-	r8 << bes4.->\p\>~ {s8 s s\!}>>
-	bes4. r8
+	r8 bes4.->\p\>~
+	bes4.\! r8
 	r bes4.\pp~
 % Bars 316 to 320
 	bes r8
@@ -305,13 +305,13 @@ musicTrombonoIIIMvtI = \relative c {
 	
 % Bars 366 to 370
 	
-	\ni \mmrPos #-4 R2
+	\ni \mmrPos #-6 R2
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	\once \voiceTwo r4 \tuplet 3/2 4 {c8-.->\f d-. e-.
+	\once \voiceTwo r4 \tuplet 3/2 4 {\stemUp c8-.->\f d-. e-. \stemNeutral
 % Bars 371 to 375
 	f-.[ dis-. e-.] f-._\crescmarkup g-. a-.}
-	bes-. r \tuplet 3/2 4 {c,-. d-. e-.} \mark \default
+	bes-. r \tuplet 3/2 4 {c,-. d!-. e-.} \markXoffset #-0.2 \mark \default
 	f->\ff a-. c-> cis-.
 	d-> des-. c-> bes-.
 	a-> aes-> g-> e->
@@ -365,7 +365,7 @@ musicTrombonoIIIMvtI = \relative c {
 	
 	f4->_\ffmarc ees->
 	d-> f->
-	e-> g->
+	e!-> g->
 % Bars 466 to 470
 	f-> aes->
 	R2*5
@@ -403,5 +403,5 @@ musicTrombonoIIIMvtI = \relative c {
 	
 	
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

@@ -9,7 +9,11 @@ musicTrombonoIIMvtIV = \relative c {
 	\key f \major
 %	\transposition a
 % Bars 1 to 5
-	R1*5
+	\mmrLength #30 R1*3
+	
+	
+	R1
+	R
 % Bars 6 to 10
 	\time 2/4 R2
 	\timeMvtIV R1*7
@@ -35,7 +39,7 @@ musicTrombonoIIMvtIV = \relative c {
 	
 	
 	r2 g4-^\f g-^~
-	g8 r cis\ff d-> a bes!-> fis-. g->
+	g8 r cis-.\ff d-> a-. bes!-> fis-. g->
 	r ees'-. r d-. r bes!-. r g-.
 % Bars 31 to 35
 	a-> bes-> fis-> g-> a-> bes-> fis-> g->
@@ -182,7 +186,7 @@ musicTrombonoIIMvtIV = \relative c {
 	cis2-> r
 	r4 a-> r a->
 	a8 r r4 r2
-	r4 e'->\ff g,-> a->
+	r4 e'->-\offset X-offset -1 \ff g,-> a->
 % Bars 201 to 205
 	bes-> e,-> f-> g->
 	gis8-. a-. a-. a-. a-. a-. a-. a-.
@@ -214,7 +218,9 @@ musicTrombonoIIMvtIV = \relative c {
 	r4 a2.
 	r4 a2.
 % Bars 226 to 230
-	R1*10
+	R1*2
+	
+	\mmrLength #12 R1*8
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -232,14 +238,14 @@ musicTrombonoIIMvtIV = \relative c {
 % Bars 246 to 250
 	r2 a!4-. r
 	c1\pp~
-	<< c {s4\< s s s\!}>>
+	c\<
 	cis8\fz r8 r4 r2
 	R1 \mark \default
 % Bars 251 to 255
 	R1*6
 % Bars 256 to 260
 	
-	a2->\ff bes->
+	a2->-\offset X-offset 0.5 \ff bes->
 	R1
 	a2-> bes->
 	R1*5
@@ -287,7 +293,7 @@ musicTrombonoIIMvtIV = \relative c {
 	ees r
 % Bars 306 to 310
 	f r
-	f->\fz r
+	f^>\fz r
 	g\pp r
 	f r
 	g r
@@ -359,7 +365,7 @@ musicTrombonoIIMvtIV = \relative c {
 	a f2-> g4->
 	f2-> a->
 	a-> f->
-	r4 c->-\marc r d->
+	r4 c->^\marc r d->
 % Bars 396 to 400
 	r dis-> r e->
 	r d!-> r dis->
