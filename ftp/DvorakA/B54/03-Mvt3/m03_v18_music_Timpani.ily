@@ -9,14 +9,14 @@ musicTimpaniMvtIII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*15
+	\mmrLength #28 R4.*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R4.\fermata \section
-	\time 3/8 R4.*7
+	\once \ni R4.\fermata \section
+	\time 3/8 \mmrLength #25 R4.*7
 % Bars 21 to 25
 	
 	
@@ -64,7 +64,7 @@ musicTimpaniMvtIII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	f4.:32-\pcresc
+	\startMeasureCount f4.:32-\pcresc
 % Bars 111 to 115
 	f:
 	f:
@@ -74,7 +74,7 @@ musicTimpaniMvtIII = \relative c {
 % Bars 116 to 120
 	f:
 	f:\ff
-	f:
+	f: \stopMeasureCount
 	f8 r r
 	R4.*7
 % Bars 121 to 125
@@ -133,20 +133,20 @@ musicTimpaniMvtIII = \relative c {
 	\mmrPos #-4 R \no
 % Bars 181 to 185
 	R4.
-	f8\ff r r
+	f8\ff r r \markCoda
 	\startVoltaI bes r r
-	R4.*11^\mutainasdes
+	\mmrLength #17 \mmrnDown R4.*7^\mutainasdes
 % Bars 186 to 190
 	
 % Bars 191 to 195
+	\mmrLength #15 R4.*4
 	
 	
-	
-	\section
-	\startVoltaII bes8\ff r r \section \endVolta
+	\tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII bes8\ff r r \tweak direction #-1 \textEndMark \finemarkup \section \endVolta \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\time 3/8 \sectionLabel "TRIO" R4.*3
+		\removeTimeSignatureEoL \time 3/8 \sectionLabel "TRIO" \tempoXoffset #3 R4.*3
 		
 		
 		r8. aes16\p aes8
@@ -240,7 +240,7 @@ musicTimpaniMvtIII = \relative c {
 	r8. des16-. des8-.
 % Bars 311 to 315
 	des4 r8
-	R4.*4^\mutainbf
+	\mmrLength #10  R4.*4^\mutainbf
 % Bars 316 to 320
 	\ni \mmrPos #4 R4.
 	\mmrPos #4 R
@@ -249,7 +249,7 @@ musicTimpaniMvtIII = \relative c {
 	r8. f,16-.\ff f8-.
 % Bars 321 to 324
 	f8 r r
-	R4.*3
+	\mmrLength #20 R4.*3
 	
-	\section
+	\tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section
 }

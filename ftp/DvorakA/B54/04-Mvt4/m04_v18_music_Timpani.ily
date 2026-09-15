@@ -9,7 +9,11 @@ musicTimpaniMvtIV = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R1*5
+	\mmrLength #28 \mmrnDown R1*3
+	
+	
+	R1
+	R
 % Bars 6 to 10
 	\time 2/4 R2
 	\timeMvtIV R1*7
@@ -20,16 +24,16 @@ musicTimpaniMvtIV = \relative c {
 	e4\f e r e
 	e e r e
 % Bars 16 to 20
-	a,\ff a a a
+	a,-\tweak extra-offset #'(0 . -8) ^\ff a a a
 	r a r2
 	r4 a r2
-	r4 e'\f e e
+	r4 e'-\tweak extra-offset #'(0 . -8) ^\f e e
 	e e r e
 % Bars 21 to 25
 	e e r e
 	e8 e e e  e e e e
-	e r r4 r2^\mutaincf
-	R1*11
+	e r r4 r2
+	\mmrLength #21 R1*11^\mutaincf
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -66,28 +70,28 @@ musicTimpaniMvtIV = \relative c {
 	
 	
 	
-	<< c1:\fp\< {s4 s s s\!}>>
-	<< c1:\f\<  {s4 s s s\!}>>
+	c1:\fp\<
+	c1:\f\<\breakDynamicSpan
 % Bars 71 to 75
 	f,4\ff r f r
 	f r f r
-	<< c'1:\fp {s2 s-\dimmarkup}>>
+	c'1:-\fpdim
 	c1:\p
 	f,4\ff r f r
 % Bars 76 to 80
 	f r f r
-	<< c'1:\fp {s2 s-\dimmarkup}>>
+	c'1:-\tweak extra-offset #'(0 . -8.5) ^\fpdim
 	c1:
 	c:
-	<< c:\> {s4 s s s\!}>>
+	c:\>\breakDynamicSpan
 % Bars 81 to 85
-	f,4\pp r r f8 f
+	f,4-\tweak extra-offset #'(0 . -8) ^\pp r r f8 f
 	f4 r r f8 f
 	f4 r r f8 f
 	f4 r r f8 f
-	f4 r r2^\cmutaindes
+	f4 r r2
 % Bars 86 to 90
-	R1*7
+	\mmrLength #18 R1*7^\cmutaindes
 % Bars 91 to 95
 	
 	\section \mark \default
@@ -102,7 +106,7 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 116 to 120
 	\mark \default
-	des'1\pp\startTrillSpan
+	\startMeasureCount \noteHeadEsw #'(-2 . 0) des'1\pp\startTrillSpan \revertNoteHeadEsw
 	des
 	des
 	des
@@ -113,9 +117,9 @@ musicTimpaniMvtIV = \relative c {
 	des
 	des
 % Bars 126 to 130
-	des
-	des4\stopTrillSpan r^\mutaincg r2
-	R1*6
+	des \stopMeasureCount
+	des4\stopTrillSpan r r2
+	\mmrLength #14 R1*6^\mutaincg
 % Bars 131 to 135
 	
 	
@@ -138,34 +142,39 @@ musicTimpaniMvtIV = \relative c {
 	r4 r8 c16 c c4 r
 	c8-^ c-^ r4 r2
 	R1
-	c8\ff c r4 r2
+	c8-\tweak extra-offset #'(0 . -8.3) ^\ff c r4 r2
 	R1
 % Bars 151 to 155
-	g8\ff g r4 r2
+	g8-\tweak extra-offset #'(0 . -8.3) ^\ff g r4 r2
 	R1
-	g8\ff g r4 r2^\mutainaes
-	R1*13
+	g8\ff g r4 r2
+	\mmrLength #19 R1*13^\mutainaes
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	\mark \default
-	R1*14
+	R1*7
 % Bars 171 to 175
+	
+	
+	
+	R1*3
 	
 % Bars 176 to 180
 	
+	\mmrLength #13 R1*4
 % Bars 181 to 185
-	ees'1:32\pp
-	<< ees:\<  {s4 s s s\!}>>
-	<< ees1:->\> {s4 s s s\!}>>
+	\startMeasureCount ees'1:32\pp
+	<< \hairpinShorten #'(0 . -0.5) ees:\<  {s4 s s s\!}>>
+	<< \hairpinShorten #'(0 . -0.5) ees1:->\> {s4 s s s\!}>>
 	ees1:-\dimmarkup
 	ees:-\pdim
 % Bars 186 to 190
-	ees:
-	ees4\pp r^\esmutaind r2
-	R1*3
+	ees: \stopMeasureCount
+	ees4\pp r r2
+	\mmrLength #19 R1*3^\esmutaind
 	
 	\mark \default
 % Bars 191 to 195
@@ -184,11 +193,11 @@ musicTimpaniMvtIV = \relative c {
 	
 	r8 a->\f a-> a->  a-> a-> a-> a->
 	d r r4 r2
-	r4 \grace {a16 a} a4->-\fbrackz r2
-	r4 \grace {a16 a} a4->-\fbrackz r2
+	r4 \grace {a16 a} a4->-\tweak extra-offset #'(0 . -8.2) ^\fbrackz r2
+	r4 \grace {a16 a} a4->-\tweak extra-offset #'(0 . -8.5) ^\fbrackz r2
 % Bars 206 to 210
-	r4 \grace {a16 a} a4->-\fbrackz r2^\dmutaine
-	R1*6
+	r4 \grace {a16 a} a4->-\fbrackz r2
+	\mmrLength #15 R1*6^\dmutaine
 % Bars 211 to 215
 	
 	
@@ -218,9 +227,9 @@ musicTimpaniMvtIV = \relative c {
 	e' r r2
 	r4 e r2
 	r4 e r2
-	r e4 r^\mutaincf
+	r e4 r
 % Bars 236 to 240
-	R1*15
+	\mmrLength #18 R1*15^\mutaincf
 % Bars 241 to 245
 	
 % Bars 246 to 250
@@ -246,13 +255,13 @@ musicTimpaniMvtIV = \relative c {
 % Bars 266 to 270
 	R1*5
 % Bars 271 to 275
-	<< c1:32\fp\< {s4 s s s\!}>>
-	c1:-\crescmarkup \markk
+	c1:32\fp\<
+	c1:\crescD \markk
 	f,4\ff r f r
 	f r f r
 	c'1:\ffp
 % Bars 276 to 280
-	<< c: {s4 s2.-\dimmarkup}>>
+	c:-\dimmarkup
 	f,4\ff r f r
 	f r f r
 	c'1:\fp
@@ -260,12 +269,12 @@ musicTimpaniMvtIV = \relative c {
 % Bars 281 to 285
 	c:-\brackM\dimmarkup
 	c:
-	f,4\pp r r f8 f
+	\startMeasureCount f,4\pp r r f8 f
 	f4 r r f8 f
 	f4 r r f8 f
 % Bars 286 to 290
 	f4 r r f8 f
-	f4 r r f8 f
+	f4 r r f8 f \stopMeasureCount
 	f4 r r2
 	R1*15
 % Bars 291 to 295
@@ -289,7 +298,7 @@ musicTimpaniMvtIV = \relative c {
 	c:
 % Bars 321 to 325
 	c: \mark \default
-	f,:\pp
+	\startMeasureCount f,:\pp
 	f:-\semprepp
 	f:
 	f:
@@ -298,11 +307,11 @@ musicTimpaniMvtIV = \relative c {
 	f:
 	f:
 	f:
-	<< f: {s8\< s s s\! s\> s s s\!}>>
+	<< f: {s8\< s s s\! s-\tweak extra-offset #'(0 . -0.95) \> s s s\!}>>
 % Bars 331 to 335
 	f1:\pp
-	<< f: {s8\< s s s\! s\> s s s\!}>>
-	f1:\pp
+	<< f: {s8\< s s s\! s-\tweak extra-offset #'(0 . -0.95) \> s s s\!}>>
+	f1:\pp \stopMeasureCount
 	f4 r r2
 	R1*3
 % Bars 336 to 340
@@ -332,7 +341,7 @@ musicTimpaniMvtIV = \relative c {
 	
 % Bars 361 to 365
 	c'1:\pp \mark \default
-	f,:
+	\startMeasureCount f,:
 	f:-\pocoapococresc
 	f:
 	f:
@@ -343,7 +352,7 @@ musicTimpaniMvtIV = \relative c {
 	f:
 	f:
 % Bars 371 to 375
-	f:
+	f: \stopMeasureCount
 	c'4\f r r r8 c
 	c r r4 r r8 c
 	c r r4 r2
@@ -353,7 +362,7 @@ musicTimpaniMvtIV = \relative c {
 	f4 r c'2:-\fbrackz
 	c4 r c r
 	c r r2 \mark \default
-	f,1:16\fp
+	\startMeasureCount f,1:16\fp
 % Bars 381 to 385
 	f:-\crescmarkup
 	f:
@@ -362,7 +371,7 @@ musicTimpaniMvtIV = \relative c {
 	f:-\crescmarkup
 % Bars 386 to 390
 	f:
-	f:
+	f: \stopMeasureCount
 	c'4\ff r r c8 c
 	c4 r r c8 c
 	c r c c c r c c
@@ -373,11 +382,11 @@ musicTimpaniMvtIV = \relative c {
 	f:
 	c'4 c r c
 % Bars 396 to 400
+	\startMeasureCount r c r c
 	r c r c
 	r c r c
 	r c r c
-	r c r c
-	r c r c
+	r c r c \stopMeasureCount
 % Bars 401 to 405
 	r8 c r c r c r c
 	c4 r r2 \mark \default

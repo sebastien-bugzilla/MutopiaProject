@@ -36,6 +36,7 @@
 %		\override MultiMeasureRestNumber.transparent = ##t
 %		\override Script.transparent = ##t
 %		\override Tie.transparent = ##t
+%		\override StemTremolo.transparent = ##t
 	}
 	\context {
 		\CueVoice

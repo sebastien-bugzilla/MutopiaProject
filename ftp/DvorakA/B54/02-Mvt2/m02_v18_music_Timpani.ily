@@ -9,7 +9,7 @@ musicTimpaniMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R4.*24
+	\mmrLength #35 R4.*24
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -53,7 +53,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 56 to 60
 	a,8\pp r a
 	r a-. r \section \mark \default
-	R4.*16
+	\mmrLength #33 R4.*16
 % Bars 61 to 65
 	
 % Bars 66 to 70
@@ -65,7 +65,7 @@ musicTimpaniMvtII = \relative c {
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R \no
 % Bars 76 to 80
-	<< e'4.:32\pp\< {s8 s s\!}>>
+	<< \hairpinShorten #'(0 . -2.5) e'4.:32\pp\< {s8 s s\!}>>
 	<< e4.:32\> {s8 s s\!}>>
 	e8 r r
 	R4.
@@ -73,13 +73,14 @@ musicTimpaniMvtII = \relative c {
 % Bars 81 to 85
 	e:
 	e8 r r
-	R4.*5
+	R4.
+	\mmrLength #13 R4.*4
 % Bars 86 to 90
 	
 	\section
-	R4.*2
+	\mmrLength #13 R4.*2
 	\mark \default
-	R4.*26
+	R4.*23
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -90,35 +91,37 @@ musicTimpaniMvtII = \relative c {
 	
 % Bars 111 to 115
 	
+	
+	\tempoEO #'(-1 . 0) R4.*3
 % Bars 116 to 120
 	\ni \mmrPos #-4 R4.
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	<< a,4.\p\startTrillSpan {s8 s4-\crescmarkup}>>
+	a,4.-\pcresc\startTrillSpan
 	a4.\startTrillSpan
 % Bars 121 to 125
-	<< a\startTrillSpan {s8 s4-\crescmarkup}>>
-	<< a4.\startTrillSpan {s8 s s\stopTrillSpan}>>
-	a8-.\ff^\secco a-. a-.
-	a-. a-. a-.
+	a\startTrillSpan-\crescmarkup
+	a4.\startTrillSpan
+	a8-.\ff^\secco\stopTrillSpan a-. a-.
+	\tempoXoffset #10 a-. a-. a-.
 	a-. a-. a-. \mark \default
 % Bars 126 to 130
-	e'-. r r
+	\tempoXoffset #0.5 e'-. r r
 	R4.
-	e4:32\fp\> e16 r\!
+	e4:32\fp\> e16\! r
 	R4.
-	<< e4.:32\fp\> {s8 s s\!}>>
+	\startMeasureCount e4.:32-\offset X-offset 0.5 \fp\>
 % Bars 131 to 135
 	e4.:32\pp
 	e:
 	e:
 	e:
-	e:
+	e: \stopMeasureCount
 % Bars 136 to 140
 	e8 r r
-	R4.*6
+	R4.*4
 % Bars 141 to 145
-	
+	\mmrLength #11 R4.*2
 	\section \mark \default
 	R4.*13
 % Bars 146 to 150
@@ -134,15 +137,15 @@ musicTimpaniMvtII = \relative c {
 % Bars 161 to 165
 	r16 a a r r8
 	R4.*2
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	R4.*4
 	
 % Bars 166 to 170
 	
 	
 	e'4.:32\p
-	<< e: {s8 s4-\crescmarkup}>>
-	<< e4.:\< {s8 s s\!}>>
+	e:-\crescmarkup
+	e4.:\< 
 % Bars 171 to 175
 	a,16-.\ff a-. a-. a-. a-. a-.
 	a-. a-. a-. a-. a-. a-.
@@ -176,5 +179,5 @@ musicTimpaniMvtII = \relative c {
 	a,8 r r
 	R4.
 % Bar 201
-	R\fermata \fine
+	\once \ni R\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

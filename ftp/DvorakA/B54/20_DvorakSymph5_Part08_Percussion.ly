@@ -20,13 +20,18 @@
 \include "./00-Common/DvorakSymph5_LayoutParts.ily"
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
+\include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part08_Percussion.ily"
+%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v18_music_Timpani.ily"
+\include "./01-Mvt1/m01_v19_music_Triangolo.ily"
 \include "./02-Mvt2/m02_v18_music_Timpani.ily"
+\include "./02-Mvt2/m02_v19_music_Triangolo.ily"
 \include "./03-Mvt3/m03_v18_music_Timpani.ily"
 \include "./03-Mvt3/m03_v19_music_Triangolo.ily"
 \include "./04-Mvt4/m04_v18_music_Timpani.ily"
+\include "./04-Mvt4/m04_v19_music_Triangolo.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -39,10 +44,10 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54)"
+			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54) — Percussion"
 		}
 		instrument = \markup {
-			"Percussion"
+			""
 		}
 	}
 	\score {
@@ -50,9 +55,9 @@
 			\new Voice {
 				\formatTimpaniMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(timpani) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtI
 			}
@@ -67,6 +72,7 @@
 			}
 		}
 		\layout {
+%			system-count = 24
 		}
 	}
 	\score {
@@ -74,9 +80,9 @@
 			\new Voice {
 				\formatTimpaniMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(timpani) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtII
 			}
@@ -85,12 +91,13 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
 		}
 		\layout {
+%			system-count = 12
 		}
 	}
 	\score {
@@ -98,62 +105,14 @@
 			\new Voice {
 				\formatTimpaniMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(timpani) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtIII
 			}
 			\new Voice {
 				\timeMvtIII \nameTimpaniMvtIII \musicTimpaniMvtIII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\bold 3.
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtIV
-			}
-%			\new Voice {
-%				\keepWithTag #'(timpani) \tempiPartMvtIV
-%			}
-			\new Voice {
-				\InCueContext \cueVoiceTimpaniMvtIV
-			}
-			\new Voice {
-				\timeMvtIV \nameTimpaniMvtIV \musicTimpaniMvtIV
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\bold 4.
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatTriangoloMvtIII
-			}
-%			\new Voice {
-%				\keepWithTag #'(triangolo) \tempiPartMvtI
-%			}
-			\new Voice {
-				\InCueContext \cueVoiceTriangoloMvtIII
-			}
-			\new Voice {
-				\timeMvtIII \nameTriangoloMvtIII \musicTriangoloMvtIII
 			}
 		>>
 		\header {
@@ -163,6 +122,132 @@
 			}
 		}
 		\layout {
+%			system-count = 12
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTimpaniMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(timpani) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTimpaniMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameTimpaniMvtIV \musicTimpaniMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "4. FINALE"
+			}
+		}
+		\layout {
+%			system-count = 26
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTriangoloMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(triangolo) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTriangoloMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameTriangoloMvtI \musicTriangoloMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold "1. TACET"
+			}
+		}
+		\layout {
+%			system-count = 2
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTriangoloMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(triangolo) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTriangoloMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameTriangoloMvtII \musicTriangoloMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold "2. TACET"
+			}
+		}
+		\layout {
+%			system-count = 3
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTriangoloMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(triangolo) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTriangoloMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameTriangoloMvtIII \musicTriangoloMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #0.8 \bold 3.
+			}
+		}
+		\layout {
+%			system-count = 14
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatTriangoloMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(triangolo) \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceTriangoloMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameTriangoloMvtIV \musicTriangoloMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\vspace #4.2 \bold "4. FINALE - TACET"
+			}
+		}
+		\layout {
+%			system-count = 3
 		}
 	}
 }

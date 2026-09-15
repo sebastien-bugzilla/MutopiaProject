@@ -9,25 +9,25 @@ musicTriangoloMvtIII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*15
+	\mmrLength #30 R4.*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R4.\fermata \section
-	\time 3/8 R4.*8
+	\once \ni R4.\fermata \section
+	\time 3/8 \mmrLength #30 R4.*8
 % Bars 21 to 25
 	
 	
 	
 	
-	e''4\mf r8
+	\startMeasureCount e''4\mf r8
 % Bars 26 to 30
 	e4 r8
 	e4 r8
 	e4 r8
-	e4 r8
+	e4 r8 \stopMeasureCount
 	e4 e8
 % Bars 31 to 35
 	e4 e8
@@ -42,7 +42,7 @@ musicTriangoloMvtIII = \relative c {
 	e[ r e]
 	e4 r8
 % Bars 41 to 45
-	R4.*25
+	\mmrLength #30 R4.*25
 % Bars 46 to 50
 	
 % Bars 51 to 55
@@ -70,7 +70,7 @@ musicTriangoloMvtIII = \relative c {
 % Bars 76 to 80
 	e4 r8
 	\ni \mmrPos #-4 R4. \no
-	R4.*21
+	\mmrLength #30 R4.*21
 % Bars 81 to 85
 	
 % Bars 86 to 90
@@ -86,9 +86,12 @@ musicTriangoloMvtIII = \relative c {
 % Bars 101 to 105
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	R4.*10
+	\mmrLength #15 R4.*6
 % Bars 106 to 110
 	
+	
+	
+	\mmrLength #15 R4.*4
 % Bars 111 to 115
 	
 	
@@ -99,12 +102,12 @@ musicTriangoloMvtIII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	R4.*8
+	\mmrLength #15 R4.*8
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	\mark \default
-	R4.*8
+	\mmrLength #15 R4.*8
 % Bars 131 to 135
 	
 	
@@ -120,11 +123,11 @@ musicTriangoloMvtIII = \relative c {
 % Bars 141 to 145
 	e[ r e]
 	e4 r8
-	R4.*8
+	\mmrLength #15 R4.*8
 % Bars 146 to 150
 	
 % Bars 151 to 155
-	e4\p r8
+	\startMeasureCount e4\p r8
 	e4 r8
 	e4 r8
 	e4 r8
@@ -132,37 +135,37 @@ musicTriangoloMvtIII = \relative c {
 % Bars 156 to 160
 	e4 r8
 	e4 r8
-	e4 r8
+	e4 r8 \stopMeasureCount
 	R4.*4
 % Bars 161 to 165
 	
 	\mark \default
-	R4.*13
+	\mmrLength #20 R4.*13
 % Bars 166 to 170
 	
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	\ni \mmrPos #4 R4.
+	\ni \mmrPos #6 R4.
 	\mmrPos #4 R
 	\mmrPos #4 R
-	\mmrPos #-4 R
+	\mmrPos #-6 R
 	\mmrPos #-4 R \no
 % Bars 181 to 185
-	R4.*2
-	
+	R4.
+	R \markCoda
 	\startVoltaI R4.*8
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	\ni \mmrPos #-4 R4.
+	\ni \tempoEO #'(0 . -2.8) \mmrPos #-4 R4.
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R \section
-	\startVoltaII \mmrPos #-4 R4. \no \endVolta \section
+	\mmrPos #-4 R \tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII \mmrPos #-4 R4. \tweak direction #-1 \textEndMark \finemarkup \no \endVolta \section \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\time 3/8 \sectionLabel "TRIO" R4.*18
+		\removeTimeSignatureEoL \time 3/8 \sectionLabel "TRIO" \mmrLength #22 \tempoXoffset #5 R4.*18
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -173,7 +176,7 @@ musicTriangoloMvtIII = \relative c {
 		\mark \default
 	}
 	\repeat volta 2 {
-		R4.*40
+		\mmrLength #25 R4.*40
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -192,7 +195,7 @@ musicTriangoloMvtIII = \relative c {
 		
 		
 		\mark \default
-		R4.*23
+		\mmrLength #18 R4.*23
 % Bars 256 to 260
 	
 % Bars 261 to 265
@@ -204,13 +207,15 @@ musicTriangoloMvtIII = \relative c {
 % Bars 276 to 280
 		\mark \default
 	}
-	R4.*31
+	\mmrLength #21 R4.*16
 % Bars 281 to 285
 	
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
+	
+	\mmrLength #18 R4.*15
 % Bars 296 to 300
 	
 % Bars 301 to 305
@@ -222,7 +227,7 @@ musicTriangoloMvtIII = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 % Bars 311 to 315
-	\mmrPos #-4 R
+	\mmrPos #-7 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R
@@ -235,7 +240,7 @@ musicTriangoloMvtIII = \relative c {
 	\mmrPos #-4 R
 % Bars 321 to 324
 	\mmrPos #4 R \no
-	R4.*3
+	\mmrLength #21 R4.*3
 	
-	\section
+	\tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section
 }

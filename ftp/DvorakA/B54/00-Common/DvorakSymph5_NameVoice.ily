@@ -577,7 +577,22 @@ nameTimpaniMvtIV = {
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
 }
+nameTriangoloMvtI = {
+	\set Staff.instrumentName = "Triangolo"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
+nameTriangoloMvtII = {
+	\set Staff.instrumentName = "Triangolo"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
 nameTriangoloMvtIII = {
+	\set Staff.instrumentName = "Triangolo"
+	\set Staff.shortInstrumentName = ""
+	\set Staff.midiInstrument = #"timpani"
+}
+nameTriangoloMvtIV = {
 	\set Staff.instrumentName = "Triangolo"
 	\set Staff.shortInstrumentName = ""
 	\set Staff.midiInstrument = #"timpani"
