@@ -20,7 +20,9 @@
 \include "./00-Common/DvorakSymph5_LayoutParts.ily"
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
+\include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part09_ViolineI.ily"
+%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v20_music_ViolinoI.ily"
 \include "./02-Mvt2/m02_v20_music_ViolinoI.ily"
@@ -34,24 +36,27 @@
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
 			\center-column {
-				"Part for ViolineI"
+				"Part for Violine I"
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54)"
+			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54) — Violine I"
 		}
 		instrument = \markup {
-			"ViolineI"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatViolinoIMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(violinoI) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtI
 			}
@@ -66,6 +71,7 @@
 			}
 		}
 		\layout {
+%			system-count = 24
 		}
 	}
 	\score {
@@ -73,9 +79,9 @@
 			\new Voice {
 				\formatViolinoIMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(violinoI) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtII
 			}
@@ -84,12 +90,13 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
 		}
 		\layout {
+%			system-count = 24
 		}
 	}
 	\score {
@@ -97,9 +104,9 @@
 			\new Voice {
 				\formatViolinoIMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(violinoI) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtIII
 			}
@@ -108,22 +115,26 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
 		}
 		\layout {
+%			system-count = 24
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatViolinoIMvtIV
 			}
-%			\new Voice {
-%				\keepWithTag #'(violinoI) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\keepWithTag #'(violinoI) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtIV
 			}
@@ -132,12 +143,13 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 12
 		}
 	}
 }

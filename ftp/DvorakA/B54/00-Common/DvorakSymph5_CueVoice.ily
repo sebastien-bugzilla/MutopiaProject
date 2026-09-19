@@ -3823,30 +3823,30 @@ cueVoiceViolinoIMvtI = \relative c {
 cueVoiceViolinoIMvtII = \relative c {
 	s4.*6
 	% bars 7 - 9
-	\voiceOne \clef bass f8(^\fz^\markup {Vlc.} f' e)
+	\voiceOne \stemDown \clef bass f8(-\offset X-offset -1 ^\fz -\offset X-offset -1.5 ^\markup {Vlc.} f' e)
 	dis4( e16 d)
-	d8( c) b16( a) \oneVoice \clef treble
+	d8( c) b16( a) \oneVoice \clef treble \stemNeutral
 	s4.*48
 	% bars 58 - 59
-	\voiceOne e''4.^\fp^\markup {Ob.}
+	\voiceOne e''4.-\offset X-offset -1 ^\fp-\offset X-offset -2.5 ^\markup {Ob.}
 	cis4~ cis16. a32-. \oneVoice
 }
 cueVoiceViolinoIMvtIII = \relative c {
 	s4.*7
 	% bars 8 - 11
-	\voiceOne \clef bass f4(^\p^\markup {Vlc.} a8~
+	\voiceOne \clef bass f4(-\offset X-offset -1 ^\p^\markup {Vlc.} a8~
 	a c4
 	ees4.~
 	ees) \oneVoice \clef treble
 	s4.*65
 	% bar 77
-	\voiceOne a'8->^\mf^\markup {Ob.} e-. a-. \oneVoice
+	\voiceOne a'8->-\offset X-offset -1.9 ^\mf^\markup {Ob.} e-. a-. \oneVoice
 	s4.*15
 	% bar 93
-	<>^\markup {Fg.Vla.}
+	<>-\offset X-offset -1 ^\markup {Fg.Vla.}
 	s4.*58
 	% bar 151
-	<>^\markup {Cl.Fg.Cor.}
+	<>-\offset X-offset -1.5 ^\markup {Cl.Fg.Cor.}
 	s4.*8
 	% bar 159
 	<>^\markup {Cl.Vlc.}

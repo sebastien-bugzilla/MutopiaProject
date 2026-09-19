@@ -419,7 +419,7 @@ musicViolinoIMvtIV = \relative c {
 % Bars 346 to 350
 	r8 e,( g bes bes g) r4
 	R1
-	r8 bes(\pp\< des g g e! d bes')
+	r8 bes(\pp\< des g g e! des bes')
 	bes( g e e'\! c\> bes g' e)\!
 	\acciaccatura c a'1\pp~
 % Bars 351 to 355

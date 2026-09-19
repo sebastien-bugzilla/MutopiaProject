@@ -367,7 +367,7 @@ musicViolinoIMvtI = \relative c {
 % Bars 316 to 320
 	ees a,! bes d,)
 	g(\p ges f d
-	e\> ces-> bes) bes
+	ees\> ces-> bes) bes
 	g'( ges f d\!
 	ees ces-> bes d16 f)
 % Bars 321 to 325

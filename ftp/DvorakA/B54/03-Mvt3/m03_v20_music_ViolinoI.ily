@@ -9,7 +9,7 @@ musicViolinoIMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*7
+	\mmrLength #29 \mmrnDown R4.*7
 % Bars 6 to 10
 	
 	
@@ -31,7 +31,7 @@ musicViolinoIMvtIII = \relative c {
 	
 	
 	r8 r8. a16\f
-	bes4(\mf\> f16 a\!
+	bes4(\mf\> f16 a
 % Bars 26 to 30
 	bes8)\p f-.( bes-.)
 	c-. f,-. c'-.
@@ -110,12 +110,12 @@ musicViolinoIMvtIII = \relative c {
 	
 	
 	e4(\fz b16 dis
-	e8)\mf b-. e-.
+	\beamOffset #'(0.5 . 0.5) e8)\mf b-. e-.
 	fis-. c-. fis-.
 % Bars 101 to 105
 	g16(-> fis e dis e8)
 	a4.->\mf
-	<< b\<-\pocoapococresc {s8 s s\!}>>
+	b\<^\pocoapococresc
 	b4.->\fz
 	b4-> g16( b)
 % Bars 106 to 110
@@ -162,7 +162,7 @@ musicViolinoIMvtIII = \relative c {
 	g
 % Bars 141 to 145
 	e)
-	a,8( d) d16[(\< d')]\!
+	a,8( d) d16[(\< d')]
 	f4\ff bes,16( f'
 	g8) bes,-. g'-.
 	f-. bes,-. f'-.
@@ -198,7 +198,7 @@ musicViolinoIMvtIII = \relative c {
 	R4.*6
 % Bars 181 to 185
 	
-	<f, c' a'>8\ff r r
+	<f, c' a'>8-\offset X-offset 0.5 \ff r r \markCoda
 	\startVoltaI <f d' bes'> r r
 	R4.
 	bes4(\pp f16 a
@@ -212,11 +212,11 @@ musicViolinoIMvtIII = \relative c {
 	aes(\pp ees aes
 	aes ees aes)
 	aes( ees aes
-	aes ees aes) \section
-	\startVoltaII <f, d' bes'>8\ff r r \endVolta \section
+	aes ees aes) \tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII <f, d' bes'>8\ff r r \endVolta \tweak direction #-1 \offset X-offset 1 \textEndMark \finemarkup \section \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\key des \major \time 3/8 \sectionLabel "TRIO" R4.*2
+		\removeTimeSignatureEoL \key des \major \time 3/8 \sectionLabel "TRIO" \tempoXoffset #4 R4.*2
 		
 		r8. bes16-.\p bes8-.
 		aes8--[ r ees-.]
@@ -248,11 +248,11 @@ musicViolinoIMvtIII = \relative c {
 		f ges aes bes c des)
 		R4.
 % Bars 221 to 225
-		r8. ces16-.\p\< ces8-.
-		bes4\! r8
+		r8. ces16-.\p-\alterBroken shorten-pair #'((-0.5 . 0)(0 . 1.5)) \< ces8-.
+		bes4 r8\!
 		r8. aes16-.\< aes8-.\!
 		aes8-. des,16(\mf c des ees
-		\tuplet 7/6 {f\< ges aes bes c des ees\!}
+		\tuplet 7/6 {\once \tupletUp f\< ges aes bes c des ees\!}
 % Bars 226 to 230
 		f8)\p r r
 		r8. a,16-.\pp a8-.
@@ -334,11 +334,11 @@ musicViolinoIMvtIII = \relative c {
 	aes4 ges8)
 	f4.(-\crescmarkup
 	ees'
-	d)\f
-	des!8(\> bes c)\p
+	d)\f\>
+	des!8( bes c)\p
 % Bars 301 to 305
-	des4.-\dimmarkup
-	ees4(\> des16 aes\!
+	des4.\dimD\>
+	ees4( des16 aes
 	des4)\pp r8
 	R4.*3
 	
@@ -362,7 +362,7 @@ musicViolinoIMvtIII = \relative c {
 	r8. f''16\ff f8
 % Bars 321 to 324
 	f8 r r
-	R4.*2
+	\mmrLength #10 R4.*2
 	
-	r8 r f,16(\p a) \section \key bes \major s8
+	r8 r f,16(-\offset X-offset -1 ^\p a) \textMarkAlignKeySignature \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key bes \major s8
 }

@@ -141,8 +141,10 @@ pocoapocodim = \markup {\italic "poco a poco dim."}
 dimin = \markup {\italic dimin.}
 pocoapococresc = \markup {\italic "poco a poco cresc."}
 pocoa_pococresc = \markup {\italic \column { \lower #1.5 "poco a" "poco cresc."}}
+pocoapoco_cresc = \markup {\italic \center-column { \lower #1.5 "poco a poco" "cresc."}}
 crescsempre = \markup {\italic "cresc. sempre"}
 pocoapoco = \markup {\italic "poco a poco"}
+moltoespress = \markup {\italic "molto espress."}
 %--------------------
 % text indications
 %--------------------

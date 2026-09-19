@@ -8,6 +8,9 @@ correctionsMvtI = \markup {
 	
 	% bar 81, faggot I & II
 	"In Mvt I, bar 81, for faggot I & II, a missing flat is printed for the e. It is present in part score and confirmed also for cellos and bass."
+	
+	% bar 318, Violin I
+	"In Mvt I, bar 318 a flat is added on the first note of the measure. It is confirmed in part score, and also by other voice such as viola and cello."
 }
 correctionMvtII = \markup {
 	

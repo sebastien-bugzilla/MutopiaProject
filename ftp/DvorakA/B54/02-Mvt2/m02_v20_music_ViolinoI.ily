@@ -9,7 +9,7 @@ musicViolinoIMvtII = \relative c {
 	\key a \minor
 %	\transposition a
 % Bars 1 to 5
-	R4.*6
+	\mmrLength #32 R4.*6
 % Bars 6 to 10
 	
 	\ni \mmrPos #-4 R4.
@@ -17,7 +17,7 @@ musicViolinoIMvtII = \relative c {
 	\mmrPos #-4 R \no
 	r8 r16 e''(_\ppdolente c b)
 % Bars 11 to 15
-	a8.( b32 c b16 a)
+	\stemUp a8.( b32 c \stemNeutral b16 a)
 	gis8( e) r16 e
 	a8([ c b16. a32]
 	g8.) d'16( b a)
@@ -31,7 +31,7 @@ musicViolinoIMvtII = \relative c {
 % Bars 21 to 25
 	d4( d8--)
 	d8.\p\< d'16( b a)\!
-	gis8.(\fz\> d'16\< b a)\!
+	\hairpinShorten #'(-0.5 . 0) gis8.(\fz\> d'16\< b a)\!
 	gis8.(\fz d'16\< b a)\!
 	gis8(\f\< f'! e)\!
 % Bars 26 to 30
@@ -82,31 +82,31 @@ musicViolinoIMvtII = \relative c {
 % Bars 66 to 70
 	
 	
-	r8 e16[\p r g\<] r\!
+	r8 e16[\p r \hairpinShorten #'(-1.5 . 0) g\<] r\!
 	c[\> r g\! r e] r
 	r8 g16[\pp\< r b] r\!
 % Bars 71 to 75
 	d[\> r b\! r g] r
 	R4.*2
 	
-	<< <fis' fis'>4.^\arco\ppdolceD\< {s8 s s16. s32\!}>>
+	<< <fis' fis'>4.^\arco-\ppdolce\< {s8 s s16. s32\!}>>
 	<d d'>4(~\< q16. <cis cis'>32)\!
 % Bars 76 to 80
-	<< q4.(\fz\> {s8 s s\!}>>
-	<b b'>8 <cis cis'>-\dimmarkup <d d'>)
+	q4.(\fz\>
+	<b b'>8\! <cis cis'>-\dimmarkup <d d'>)
 	<fis fis'>4\pp r8
-	R4.*3
+	\mmrLength #15 R4.*3
 	
 % Bars 81 to 85
 	
-	fis'4._\pmoltoespress
+	fis'4.-\pmoltoespress
 	d4(~\< d16. c32\!)
-	<< c4. {s16 s-\crescmarkup s4}>>
+	\tempoXoffset #2 c4.-\crescmarkup
 	b8( c\< d)
 % Bars 86 to 90
 	c( d e)
 	dis( e fis)\! \section
-	\key a \minor << g4.(~\f {s4 s8-\dimmarkup}>>
+	\key a \minor << \shape #'((0 . -0.75)(0 . 0.4)(0 . 0.1)(0 . 0)) Slur g4.(~\f {s4 s8-\dimmarkup}>>
 	g4 g,8)\p \mark \default
 	g4.\pp
 % Bars 91 to 95
@@ -118,13 +118,13 @@ musicViolinoIMvtII = \relative c {
 % Bars 96 to 100
 	g8) r r
 	R4.
-	<< e''4.\fp {s8 s s\>}>>
+	e''4.\fp\>
 	c4(~ c16 g)\!
-	<< g4.(~_\fbrackz {s8 s s\>}>>
+	\hairpinShorten #'(3.5 . 0) g4.(~_\fbrackz\>
 % Bars 101 to 105
 	g4 a!8\p)
-	<< bes4.\fp\>~ {s8 s s\!}>>
-	bes8 r r
+	bes4.\fp\>~
+	bes8\! r r
 	<d, d'>4.\pdolceD\<
 	<bes bes'>4(~ q16.\! <a a'>32)
 % Bars 106 to 110
@@ -140,7 +140,7 @@ musicViolinoIMvtII = \relative c {
 	q4.\fz~
 	q8 r r
 % Bars 116 to 120
-	<f' f'>4.->\fz
+	\dynEO #'(0.5 . 2) <f' f'>4.->\fz
 	<d d'>4(~ q16 <bes bes'>-.)
 	q4.\mf
 	a'8( bes-\crescmarkup c)
@@ -149,8 +149,8 @@ musicViolinoIMvtII = \relative c {
 	c( d-\crescmarkup ees)
 	d( ees f)
 	ees-._\ffmarcatissimo^\secco f-. fis-.
-	g-. gis-. a-.
-	b!-. c-. a-. \mark \default
+	\tempoXoffset #7 g-. gis-. a-.
+	b!-. c-. a-. \markXoffset #-0.2 \mark \default
 % Bars 126 to 130
 	e r r
 	r r32 d,(\p b a gis d' b a
@@ -178,7 +178,7 @@ musicViolinoIMvtII = \relative c {
 % Bars 146 to 150
 	g4.~
 	g
-	<< a {s8 s4-\crescmarkup}>>
+	a-\crescmarkup
 	b4(\mf\< e8\!~
 	e4\> f8\p)
 % Bars 151 to 155
@@ -192,7 +192,7 @@ musicViolinoIMvtII = \relative c {
 	f8.( g32 a g16 f)
 	ees8(\< ees'\> d)\!
 	cis8.\fp g'16(\> e! d)\!
-	cis8.\fz\> g'16(\p e d)
+	\hairpinShorten #'(-0.5 . -0.5) cis8.-\offset X-offset -0.5 \fz\> g'16(-\offset X-offset 0.5 \p e d)
 % Bars 161 to 165
 	cis8.(\< d32 e) d16( cis)\!
 	d8.(-\crescmarkup e32 f) e16( d)
@@ -239,8 +239,8 @@ musicViolinoIMvtII = \relative c {
 	e~
 	e16 r r e''(\f c b)
 	a8.(\< b32 c) b16.( a32)\!
-	<< a4.->\fp~ {s8 s s\!}>>
-	a8 r r
+	\hairpinShorten #'(0 . 1) a4.->\fp\>~
+	a8\! r r
 % Bar 201
-	R4.\fermata \fine
+	\once \ni R4.\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

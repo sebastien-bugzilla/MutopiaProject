@@ -35,7 +35,7 @@ musicViolinoIMvtI = \relative c {
 		f2\fz~
 		f8. d16-. a( bes d f)
 		g4->_\fbrackz g8.-> e16-.
-		g4.->\fz e8_\crescmarkup
+		g4.->-\offset X-offset -0.5 -\fzcresc e8
 % Bars 31 to 35
 		bes'4->\fz bes8. f16
 		bes4.->\fz f8
@@ -88,20 +88,20 @@ musicViolinoIMvtI = \relative c {
 		a( e'4 c8
 		a e'4 c8
 		f4) r
-		c8(\p\< c'4\> g8\!
+		\hairpinShorten #'(-0.3 . -1) c8(-\offset X-offset -1 \p\< \hairpinShorten #'(1 . 0) c'4\> g8\!
 		a4) r
 % Bars 76 to 80
-		c,8(\< c'4\> g8\!
+		\hairpinShorten #'(0 . -0.8) c,8(\< \hairpinShorten #'(0.8 . 0) c'4\> g8\!
 		bes4) r
-		bes,8(\< bes'4\> f8\!
+		\hairpinShorten #'(0 . -0.8) bes,8(\< \hairpinShorten #'(0.8 . 0) bes'4\> f8\!
 		g4) r
-		bes,8(\< bes'4\> f8\!
+		\hairpinShorten #'(0 . -0.8) bes,8(\< \hairpinShorten #'(0.8 . 0) bes'4\> f8\!
 % Bars 81 to 85
 		aes4) r
-		aes,8(\p aes'4->\fz\> f8)\!
-		aes,8(\p aes'4->\fz\> ees8)\!
-		aes,8( aes'4->\fz\> ees8)\!
-		aes,8( aes'4->\fz_\brackM\crescmarkup ees8)
+		aes,8(\p \hairpinShorten #'(-0.5 . 0) aes'4->\fz\> f8)\!
+		aes,8(\p \hairpinShorten #'(-0.5 . 0) aes'4->\fz\> ees8)\!
+		aes,8( \hairpinShorten #'(-0.5 . 0) aes'4->\fz\> ees8)\!
+		aes,8( aes'4->-\offset X-offset -1.5 -\fzbrackcresc ees8)
 % Bars 86 to 90
 		gis,8-.\p gis'4(->\fz d!8)
 		gis,8\p gis'4->(\fz d8)
@@ -111,7 +111,7 @@ musicViolinoIMvtI = \relative c {
 % Bars 91 to 95
 		dis d-. cis-. b-.
 		a4 r
-		a,4(\p cis16 b a8)
+		a,4(\p \stemUp cis16 b a8) \stemNeutral
 		R2
 		cis4(\p e16 d cis8) \mark \default
 % Bars 96 to 100
@@ -142,22 +142,22 @@ musicViolinoIMvtI = \relative c {
 		cis_\dimmarkup
 		d~
 		d
-		\subdiviseBeam \tuplet 3/2 4 {e8(\pp f g~ g e bes)~
-		bes( d f~ f d bes)
+		\subdiviseBeam \tuplet 3/2 4 { \shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur e8(\pp f g~ g e bes)~
+		\shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur bes( d f~ f d bes)
 % Bars 121 to 125
-		e( f g~ g e bes)~
-		bes( d f~ f d bes)~
-		bes( d f~ f d gis,)
-		a( c e~ e c g!)
-		fis( c' ees~ ees c fis,)
+		\shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur e( f g~ g e bes)~
+		\shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur bes( d f~ f d bes)~
+		\shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur bes( d f~ f d gis,)
+		\shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur a( c e~ e c g!)
+		\shape #'((0 . -1.5)(0 . 0.3)(0 . 0.3)(0 . -1.5)) Slur fis( c' ees~ ees c fis,)
 % Bars 126 to 130
-		f!(_\dimmarkup bes d~ d bes f)
-		e(\pp\> g c~ c g c,)~
-		c( e g~ g e g,)~\!
+		\shape #'((0 . -1.5)(0 . 0.3)(0 . 0.3)(0 . -1.5)) Slur f!(_\dimmarkup bes d~ d bes f)
+		\shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur e(\pp\> g c~ c g c,)~
+		\shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur c( e g~ g e g,)~\!
 		g( c e~ e c e,)~
 		e( g c~ c c, bes~}
 % Bars 131 to 135
-		bes)\pp r r4
+		bes)-\tweak extra-offset #'(1.8 . -8.8) ^\pp r r4
 		R2*7
 % Bars 136 to 140
 		
@@ -166,7 +166,7 @@ musicViolinoIMvtI = \relative c {
 		g''2:32\ff
 		g:
 % Bars 141 to 145
-		\tuplet 3/2 4 {bes,,8(\pp g' bes~ bes g bes,)~
+		\tuplet 3/2 4 {bes,,8(-\offset X-offset -1.5 \pp g' bes~ bes g bes,)~
 		bes( g' bes~ bes g bes,)~
 		bes( g' bes~ bes g bes,)~
 		bes( g' bes~ bes g bes,)} \mark \default
@@ -194,26 +194,26 @@ musicViolinoIMvtI = \relative c {
 		ais) g'!4( ais,8\!~
 		ais) g'16(_\crescmolto e~ e8) ais16( g~
 % Bars 166 to 170
-		g8) e'16( cis~ cis8) g'16( fis
+		g8) \ottava #1 e'16( cis~ cis8) g'16( fis
 		\marcatoUpperSlur b2:32)-^\ff
-		b4-._\marcatissimo fis-.
+		b4-._\marcatissimo fis-. \ottava #0
 		d-. b-.
 		fis-. d8. fis16
 % Bars 171 to 175
-		a2:32\fp
+		\startMeasureCount a2:32\fp
 		a:\>
 		a:
-		<< a: {s4 s\!}>>
-		\tuplet 3/2 4 {b,8(\p d fis~ fis d b~
+		<< a: {s4 s\!}>> \stopMeasureCount
+		\startMeasureCount \tuplet 3/2 4 {b,8(\p d fis~ fis d b~
 % Bars 176 to 180
 		b d fis~ fis d b)~
 		b( d fis~ fis d b~
-		b d fis~ fis d b)
+		b d fis~ fis d b) \stopMeasureCount
 		c!(_\dimmarkup fis a~ a fis d~
 		d fis a~ a fis d)~
 % Bars 181 to 185
-		d(\> fis a~ a fis d~
-		d fis a~ a fis d)\!}
+		\tupletUp d(\> fis a~ a fis d~
+		d fis a~ a fis d)\!} \tupletNeutral
 		d'2\pp~
 		d
 		e~
@@ -232,7 +232,7 @@ musicViolinoIMvtI = \relative c {
 				
 			}
 			\volta 2 {
-				aes''2_\semprepp~
+				\noteHeadEsw #'(-3 . 0) aes''2_\semprepp~ \revertNoteHeadEsw
 			}
 		}
 	}
@@ -246,16 +246,16 @@ musicViolinoIMvtI = \relative c {
 	R2*6
 % Bars 206 to 210
 	
-	\tuplet 3/2 4 {c8(\pp d e~ e d c)~
+	\startMeasureCount \tuplet 3/2 4 {c8(\pp d e~ e d c)~
 	c( d e~ e d c)~
 	c( d e~ e d c)~
 	c( d e~ e d c)~
 % Bars 211 to 215
 	c( d e~ e d c)~
-	c( d e~ e d c~}
+	c( d e~ e d c~} \stopMeasureCount
 	c) r r4
 	R2
-	b,2:32_\ppmoltotranquillo
+	\startMeasureCount b,2:32_\ppmoltotranquillo
 % Bars 216 to 220
 	b:
 	b:
@@ -264,7 +264,7 @@ musicViolinoIMvtI = \relative c {
 	b:
 % Bars 221 to 225
 	b:
-	b:
+	b: \stopMeasureCount
 	e,:
 	fis:
 	g8.(\pp a16 g d g a
@@ -298,19 +298,19 @@ musicViolinoIMvtI = \relative c {
 	
 	
 	e,2\fz~
-	e8. cis16( a\< cis e g)
+	e8. cis16( a-\tweak rotation #'(2 -1 0) \< cis e g)
 	g2->~
 % Bars 256 to 260
 	g8. e16( cis e g cis)\! \mark \default
-	\tuplet 3/2 4 {cis8(\fpp d e~ e d cis~)
+	\startMeasureCount \tuplet 3/2 4 {cis8(\fpp d e~ e d cis~)
 	cis( d e~ e d cis)~
 	cis( d e~ e d cis)~
-	cis( d e~ e d cis)
+	cis( d e~ e d cis) \stopMeasureCount
 % Bars 261 to 265
+	\startMeasureCount b( cis d~ d cis b)~
 	b( cis d~ d cis b)~
 	b( cis d~ d cis b)~
-	b( cis d~ d cis b)~
-	b( cis d~ d cis b) }
+	b( cis d~ d cis b) } \stopMeasureCount
 	cis2\pp~
 % Bars 266 to 270
 	cis8. a16( fis a cis fis)
@@ -335,11 +335,11 @@ musicViolinoIMvtI = \relative c {
 	b8[->\fz r16 f-.] b,( d f b)
 	b8[-> r16 f-.] b,( d f b)
 	c8[-> r16 a-.] c,( ees a c)
-	<d, d'>2:32\ff
+	\startMeasureCount <d, d'>2:32\ff
 % Bars 286 to 290
 	q:
 	q:
-	q:
+	q: \stopMeasureCount
 	q8\fz r r4
 	R2 \mark \default
 % Bars 291 to 295
@@ -351,8 +351,8 @@ musicViolinoIMvtI = \relative c {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 % Bars 301 to 305
-	\mmrPos #-6 R
-	\mmrPos #-6 R \no
+	\mmrPos #-8 R
+	\mmrPos #-7 R \no
 	ees4->\ff g16-. f-. ees8-.
 	f4-> aes16-. g-. f8-.
 	g-. bes4(\fz aes8
@@ -371,7 +371,7 @@ musicViolinoIMvtI = \relative c {
 % Bars 316 to 320
 	ees a,! bes d,)
 	g(\p ges f d
-	e\> ces-> bes) bes
+	ees\> ces-> bes) bes
 	g'( ges f d\!
 	ees ces-> bes d16 f)
 % Bars 321 to 325
@@ -384,16 +384,16 @@ musicViolinoIMvtI = \relative c {
 	aes ces4 bes8)
 	aes4(\> ces~
 	ces b)\! \mark \default 
-	c!2\pp~
+	\startMeasureCount c!2\pp~
 	c~
 % Bars 331 to 335
 	c~
-	c
-	f~
+	c \stopMeasureCount
+	\startMeasureCount f~
 	f~
 	f~
 % Bars 336 to 340
-	f
+	f \stopMeasureCount 
 	d16( e d a d e f d
 	e f e c e f g e)
 	f( g f c a c f g
@@ -412,7 +412,7 @@ musicViolinoIMvtI = \relative c {
 	r16 g,(\p f c a c f g
 % Bars 351 to 355
 	a\< b a e a b c a
-	b c b a b c d c)
+	b c b a b c d c)\!
 	c2->\f~
 	c8[ r16 c,]( g c d e)
 	<d f>2\fz~->
@@ -435,14 +435,14 @@ musicViolinoIMvtI = \relative c {
 	d,( f bes d) d,( f bes d)
 	e,( g c e) \tuplet 3/2 4 {d8->_\piuf c-> bes->
 % Bars 371 to 375
-	a->[ g c] bes->_\crescmarkup a g}
+	a->[ g c] bes->_\crescmarkup a g} 
 	f16( e d c') \tuplet 7/4 4 {bes16( a g f e d c)} \mark \default
 	<a f'>4->\ff a'16-. g-. f8-.
 	g4-> bes16-. a-. g8-.
 	a-.\noBeam c->(\fz b bes)
 % Bars 376 to 380
 	a( aes g16 e c8)
-	<a f'>4-> a'16-. g-. f8-.
+	<a f'>4-> a'!16-. g-. f8-.
 	g4-> bes16-. a-. g8-.
 	a8-. e'4->\fz d8~
 	d16 c( b c a8) <bes,! g'>-^
@@ -459,8 +459,8 @@ musicViolinoIMvtI = \relative c {
 	\mmrPos #4 R
 % Bars 396 to 400
 	\mmrPos #4 R \no
-	r8 c4(\p\< c'8~\!
-	c)_\crescmarkup c4(\> a8)\!
+	r8 \hairpinShorten #'(0 . -0.5) c4(\p\< c'8~
+	\hairpinShorten #'(-0.5 . -1) c)-\offset X-offset -1.5 \crescD\> c4( a8)\!
 	r c,4(\< c'8\!~
 	c) c4(\> a8)\!
 % Bars 401 to 405
@@ -509,16 +509,16 @@ musicViolinoIMvtI = \relative c {
 	e_\dimmarkup
 	f~\>
 	<< f {s8 s s s\!}>>
-	\subdiviseBeam \tuplet 3/2 4 {g8(\p aes bes~ bes g des)
-	f( g aes~ aes f des)
+	\subdiviseBeam \tuplet 3/2 4 {\shape #'((0 . -0.5)(0 . 0)(0 . 0)(0 . -0.5)) Slur g8(\p aes bes~ bes g des)
+	\shape #'((0 . -0.5)(0 . 0)(0 . 0)(0 . -0.5)) Slur f( g aes~ aes f des)
 % Bars 441 to 445
-	g( aes bes~ bes g des)
-	f( g aes~ aes f des)
-	des( f aes~ aes f b,)
-	c(_\dimmarkup ees g~ g ees c)
-	a!(\> ees' ges~ ges ees a,)
+	\shape #'((0 . -0.5)(0 . 0)(0 . 0)(0 . -0.5)) Slur g( aes bes~ bes g des)
+	\shape #'((0 . -0.5)(0 . 0)(0 . 0)(0 . -0.5)) Slur f( g aes~ aes f des)
+	\shape #'((0 . -0.5)(0 . 0)(0 . 0)(0 . -0.5)) Slur des( f aes~ aes f b,)
+	\shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur c(_\dimmarkup ees g~ g ees c)
+	\shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur a!(\> ees' ges~ ges ees a,)
 % Bars 446 to 450
-	aes( des f~ f des aes)\!}
+	\shape #'((0 . -0.5)(0 . 0)(0 . 0)(0 . -0.5)) Slur aes( des f~ f des aes)\!}
 	g8(\pp bes4 g8)
 	g( bes4 g8)
 	g(\< bes4 g8)
@@ -527,12 +527,12 @@ musicViolinoIMvtI = \relative c {
 	c2(~\mf
 	c4 bes)\>
 	<< a2 {s8 s s s\!}>>
-	g2\p \markk
+	g2\p \markXoffset #-0.2 \markk
 	f4(\mf\<^\espressivo fis)
 % Bars 456 to 460
 	g8\!( c4\> g8)\!
 	c2~
-	<< c {s8 s4_\crescmarkup s8}>>
+	c_\crescmarkup
 	f4(\f fis)
 	g8(\< c4 g8)
 % Bars 461 to 465
@@ -570,7 +570,7 @@ musicViolinoIMvtI = \relative c {
 	c8 r r4
 % Bars 491 to 495
 	R2
-	r4 g,,16(\pp bes des e)
+	r4 g,,16(\pp bes des e!)
 	f2~\pp
 	f
 	g(~
@@ -585,5 +585,5 @@ musicViolinoIMvtI = \relative c {
 	c8) r r4
 	R2*2
 	
-	R2\fermata \fine
+	\once \ni R2\fermata \fine
 }

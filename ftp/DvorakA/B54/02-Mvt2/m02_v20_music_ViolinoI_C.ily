@@ -239,7 +239,7 @@ musicViolinoIMvtII = \relative c {
 	e~
 	e16 r r e''(\f c b)
 	a8.(\< b32 c) b16.( a32)\!
-	<< a4.->\fp~ {s8 s s\!}>>
+	<< a4.->\fp\>~ {s8 s s\!}>>
 	a8 r r
 % Bar 201
 	R4.\fermata \fine
