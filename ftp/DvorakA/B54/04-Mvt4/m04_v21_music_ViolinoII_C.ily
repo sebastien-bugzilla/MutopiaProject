@@ -93,11 +93,11 @@ musicViolinoIIMvtIV = \relative c {
 	c8-. r r4 r2
 	e,8:-\fcresc f: g: a: g: a: bes: <bes, e>\noBeam
 % Bars 71 to 75
-	<a f'>-.\ff r f'4->(~ f8 e16 d) cis8-.( d-.)
+	<a f'>\ff r f'4->(~ f8 e16 d) cis8-.( d-.)
 	a4-. a'->(~ a8 g16 f) e8-.( f-.)
 	c' r <c, c'>4(-\offset X-offset 0.7 \fp <gis gis'>-\dimmarkup <a a'>
 	<gis gis'> <a a'>) <d, d'>8(\p <dis dis'> <e e'> <c c'>)
-	<a' f'>-.\ff r f'4->(~ f8 e16 d) cis8-.( d-.)
+	<a' f'>\ff r f'4->(~ f8 e16 d) cis8-.( d-.)
 % Bars 76 to 80
 	a4-. a'->(~ a8 g16 f) e8-.( f-.)
 	c'\f r <c, c'>4(\fp <gis gis'>-\dimmarkup <a a'>)
@@ -195,7 +195,7 @@ musicViolinoIIMvtIV = \relative c {
 	r4 <a c>4\fz(~ q8 b16\< a) gis8-.( a-.)\!
 	r4 <c ees>->\fz(~ q8 d16 c) b8(-. c-.)
 % Bars 151 to 155
-	<e,! b' e!>8 r r4 r2
+	<e,! b' e!>8\arpeggio r r4 r2
 	R1
 	r4 <e g>->-\offset X-offset -2 \fz(~ q8 fis16 e) dis8(-. e-.)
 	r4 <g b>\fz(~ q8 a16 g) fis8-.( g-.)

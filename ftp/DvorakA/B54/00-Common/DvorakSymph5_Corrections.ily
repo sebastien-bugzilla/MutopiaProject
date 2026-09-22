@@ -148,5 +148,16 @@ correctionCorni = \markup {
 correctionTromboni = \markup {
 	
 	% Mvt I, bar 42, Trombono II
-	"In Mvt I, for trombono I, the number of measure after the repeat is 39 instead of 38."
+	"In Mvt I, bar 42, the number of measure after the repeat is 39 instead of 38."
+}
+correctionViolinII = \markup {
+	
+	% Mvt II, bar 126
+	"In Mvt II, bar 126, the lowest note of the chords is corrected (e instead of d) as in conductor score."
+	
+	% Mvt IV, bar 124
+	"In Mvt IV, bar 124, a crescendo is replaced by a decrescendo. It is confirmed by conductor score."
+	
+	% Mvt IV, bar 250
+	"In Mvt IV, bar 250, the rhythm of the last four notes is corrected (eighth instead of sixteenth)
 }

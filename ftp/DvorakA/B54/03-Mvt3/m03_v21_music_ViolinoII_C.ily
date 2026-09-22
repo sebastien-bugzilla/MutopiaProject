@@ -116,7 +116,7 @@ musicViolinoIIMvtIII = \relative c {
 % Bars 101 to 105
 	b-. b16( a g b)
 	<c fis>4.->-\offset X-offset 0.5 \fz
-	<b fis'>-\offset X-offset -1.8 -\fzpocoa_pococresc
+	<b g'>-\offset X-offset -1.8 -\fzpocoa_pococresc
 	dis4->(\fz b16 dis
 	e8) b-. e-.
 % Bars 106 to 110
@@ -144,7 +144,7 @@ musicViolinoIIMvtIII = \relative c {
 	
 	bes,16(\fz\< a g a bes b)
 % Bars 126 to 130
-	\tuplet 7/6 {c( d ees e f g aes)\!} \mark \default
+	\tuplet 7/6 {c( d ees e f g a)\!} \mark \default
 	bes8\ff\noBeam d,,16( f d f
 	d f d f d f)
 	c( f c f c f

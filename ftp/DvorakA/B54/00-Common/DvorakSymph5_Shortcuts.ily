@@ -29,6 +29,10 @@ pcresc_molto = \markup {
 plegato = \markup {\hspace #-0.08 \dynamic p \italic legato}
 pdim = \markup {\hspace #-0.08 \dynamic p \italic dim.}
 pmoltoespress = \markup {\hspace #-0.08 \dynamic p \italic "molto espress."}
+pmolto_espress = \markup {
+	\hspace #-0.08 \dynamic p 
+	\translate #'(0 . 2.3) \italic \column {\lower #1.5 "molto" "espress."}
+}
 pdolce = \markup {\hspace #-0.08 \dynamic p \italic dolce}
 pdolceD = \tweak DynamicText.self-alignment-X #-0.82 #(make-dynamic-script (markup #:normal-text pdolce))
 pmoltocresc = \markup {\hspace #-0.08 \dynamic p \italic "molto cresc."}
@@ -614,6 +618,16 @@ revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
 
 forceClef = \set Staff.forceClef = ##t
 
+tupletExtraOffset = #(define-music-function
+	(offset)
+	(pair?)
+	#{
+		\once \override TupletNumber.extra-offset = #offset 
+	#}
+)
+
+measureCounterDown = \override Staff.MeasureCounter.direction = #-1
+revertMeasureCounter = \revert Staff.MeasureCounter.direction
 
 %aIIOmit = \once \omit Voice.CombineTextScript
 
@@ -764,14 +778,6 @@ forceClef = \set Staff.forceClef = ##t
 %	(number?)
 %	#{
 %		\once \override TupletNumber.Y-offset = #offset 
-%	#}
-%)
-
-%tupletExtraOffset = #(define-music-function
-%	(offset)
-%	(pair?)
-%	#{
-%		\once \override TupletNumber.extra-offset = #offset 
 %	#}
 %)
 

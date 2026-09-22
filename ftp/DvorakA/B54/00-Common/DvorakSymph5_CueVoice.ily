@@ -3869,23 +3869,23 @@ cueVoiceViolinoIMvtIV = \relative c {
 cueVoiceViolinoIIMvtI = \relative c {
 	s2*160
 	% bars 161 - 164
-	\voiceOne r4 r8^\markup {Viol.I.} bes''!8^\p(~
+	\voiceOne r4 r8-\offset X-offset -2.5 ^\markup {Viol.I.} bes''!8^\p(~
 	bes e!4 bes8~
 	bes) fis'4( ais,8~
 	ais) g'!4( ais,8) \oneVoice
 	s2*188
 	% bars 353 - 357
-	\voiceOne c'2->^\f~^\markup {Viol.I.}
+	\voiceOne c'2->-\offset X-offset -1.5 ^\f~-\offset X-offset -5 ^\markup {Viol.I.}
 	c8[ r16 c,]( g c d e)
 	<d f>2->~
 	q8. d16( a bes d f)
 	g4-> g8.( e16) \oneVoice
 	s2*35
 	% bars 393 - 396
-	\voiceTwo \clef bass f,,,4(\p^\markup {Vlc.} a16 g f8)
+	\voiceTwo \stemUp \clef bass f,,,4(-\offset X-offset -1.5 \p^\markup {Vlc.} a16 g f8)
 	g4( bes16 a g8)
 	a( c4)->\< bes8~\!
-	bes a4(\> f8)\! \clef treble \oneVoice
+	bes a4(\> f8)\! \clef treble \oneVoice \stemNeutral
 	s2*24
 	% bar 421 - 425
 	\voiceTwo a'8(^\markup {Viol.I.} f'~ f4)
@@ -3901,25 +3901,25 @@ cueVoiceViolinoIIMvtI = \relative c {
 cueVoiceViolinoIIMvtII = \relative c {
 	s4.*6
 	% bars 7 - 10
-	\voiceOne \clef bass f8(^\fz^\markup {Vlc.} f' e)
+	\voiceOne \stemDown \clef bass f8(-\offset X-offset -1.5 ^\fz -\offset X-offset -1 ^\markup {Vlc.} f' e)
 	dis4( e16 d)
 	d8( c) b16( a) 
-	c16-.( b-. a8-.) \clef treble s \oneVoice 
+	c16-.( b-. a8-.) \clef treble s \oneVoice \stemNeutral
 	s4.*47
 	% bars 58 - 59
-	\voiceOne e''4.^\fp^\markup {Ob.}
+	\voiceOne \noteHeadEsw #'(-2 . 0) e''4.-\offset X-offset -1.5 ^\fp^\markup {Ob.} \revertNoteHeadEsw
 	cis4~ cis16. a32-. \oneVoice
 }
 cueVoiceViolinoIIMvtIII = \relative c {
 	s4.*7
 	% bars 8 - 11
-	\voiceOne \clef bass f4(^\p^\markup {Vlc.} a8~
+	\voiceOne \clef bass f4(-\offset X-offset -1 ^\p^\markup {Vlc.} a8~
 	a c4
 	ees4.~
 	ees) \oneVoice \clef treble
 	s4.*65
 	% bar 77
-	\voiceOne a'8->^\mf^\markup {Ob.} e-. a-. \oneVoice
+	\voiceOne a'8->\mf^\markup {Ob.} e-. a-. \oneVoice
 	s4.*93
 	% bar 171
 	<>^\markup {Fl.}

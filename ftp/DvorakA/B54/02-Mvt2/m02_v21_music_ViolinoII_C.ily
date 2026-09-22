@@ -87,10 +87,10 @@ musicViolinoIIMvtII = \relative c {
 	r8 d16[\pp r\< g!] r\!
 % Bars 71 to 75
 	b[\> r g\! r d] r
-	r8 <b e>16[ r \hairpinShorten #'(0 . -1) <d g>]\< r\!
+	r8 <b e>16[ r \hairpinShorten #'(0 . -1) <e g>]\< r\!
 	<g b>[\> r <e g!>\! r <b e>] r
 	r8 <b d>16[ r <d fis>] r
-	<fis gis>[ r <d fis> r <b d>] r
+	<fis gis!>[ r <d fis> r <b d>] r
 % Bars 76 to 80
 	r8 \dynEO #'(-3 . 2) <gis cis>16[\mf r <cis e>] r
 	<e gis>[ r <e a>-\dimmarkup r <e b'>] r

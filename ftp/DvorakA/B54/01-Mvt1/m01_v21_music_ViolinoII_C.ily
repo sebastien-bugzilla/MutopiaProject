@@ -59,7 +59,7 @@ musicViolinoIIMvtI = \relative c {
 		<a f'>4->\ff a'16-. g-. f8-.
 % Bars 46 to 50
 		f4( e)
-		f8-.\noBeam c'->(\fz b bes)
+		f8-.\noBeam c'->[(\fz b bes)]
 		a( aes) g16-. e-. c8-.
 		f4-> a16-. g-. f8-.
 		f4( e)
@@ -353,7 +353,7 @@ musicViolinoIIMvtI = \relative c {
 	<d b'>:
 	q:
 	q:
-	aes8[\brack\fz r16 g-.] e!( f g aes)
+	aes8[\brack\fz r16 g-.] e!(-\dimin f g aes)
 	aes8[-> r16 g-.] e( f g aes) \mark \default
 % Bars 291 to 295
 	aes(\p f g aes f g aes f)
