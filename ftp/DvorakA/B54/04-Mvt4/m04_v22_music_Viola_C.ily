@@ -398,7 +398,7 @@ musicViolaMvtIV = \relative c {
 % Bars 316 to 320
 	r4 <bes d>\p r q8 q
 	r4 q r q8 q
-	r4 <c e>\mf r <bes d>
+	r4 <c e>\mf r <bes d>\p
 	r q r <f a>
 	r <e g>-\dimmarkup r q
 % Bars 321 to 325
@@ -487,7 +487,7 @@ musicViolaMvtIV = \relative c {
 	c:
 % Bars 391 to 395
 	c8 r <f, a>2-> q4->~
-	q8 r <bes, f'>2-> q4-.
+	q8 r <bes, f'>2-> <bes g'>4-.
 	<a f'>2-> q->
 	<c f>-> <f b>->
 	c,4-\marc <a'' c>-^ c,, <g'' bes!>-^
@@ -499,7 +499,7 @@ musicViolaMvtIV = \relative c {
 	c, <e' g>-^ c, <f' aes>-^
 % Bars 401 to 405
 	c,8 <e' g>-^ r <c' ees>-^ r <bes d>-^ r <bes des>-^
-	r \dynEO #'(0 . 1) <a c>-^\brack\ff\noBeam b-> c-> cis-> d-> dis-> e-> \clef treble
+	r \dynEO #'(0 . 1) <a c>-^\brack\ff\noBeam b-> c-> cis-> d-> dis-> e-> \clef treble  \mark \default
 	f1:16\ff
 	\tremoloPosition #1 a:
 	\tremoloPosition #1 c:

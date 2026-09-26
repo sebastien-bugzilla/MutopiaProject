@@ -9,7 +9,7 @@ musicViolaMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*7
+	\mmrLength #29 \mmrnDown R4.*7
 % Bars 6 to 10
 	
 	
@@ -25,9 +25,9 @@ musicViolaMvtIII = \relative c {
 % Bars 16 to 20
 	ges4( f8)\fermata \section
 	<< {
-		\time 3/8 f8( d) f-.
-		f( d) f-.
-		f( c) f-.
+		\time 3/8 \beamOffset #'(-0.5 . -0.5) f8( d) f-.
+		\beamOffset #'(-0.5 . -0.5) f( d) f-.
+		\beamOffset #'(-0.5 . -0.5) f( c) f-.
 		ees( g,) c-.
 	} \\ {
 		d(\pp bes) d-.
@@ -84,7 +84,7 @@ musicViolaMvtIII = \relative c {
 	c( g) c-.
 	a( f) a-.
 	bes( f) bes-.
-	g4.->\fp~
+	g4.->-\offset X-offset 3 -\tweak extra-offset #'(-2.5 . -0.3)  \fp~
 	g
 % Bars 51 to 55
 	f->~
@@ -103,7 +103,7 @@ musicViolaMvtIII = \relative c {
 	d16( c bes a bes8-.)
 	c8( f,) c'-.
 	d16( c bes a bes8-.)
-	c8( f,) c'-. \mark \default
+	c8( f,) c'-. \markXoffset #-0.2 \mark \default
 % Bars 66 to 70
 	R4.*4
 	
@@ -131,7 +131,7 @@ musicViolaMvtIII = \relative c {
 % Bars 86 to 90
 	b,16(\fz\> a g fis b8)\!
 	R4.
-	b16(->\> a g fis b8)\!
+	b16(^>\> a g fis b8)\!
 	R4.*2
 	
 % Bars 91 to 95
@@ -149,7 +149,7 @@ musicViolaMvtIII = \relative c {
 % Bars 101 to 105
 	g-. g16( fis e g)
 	e'4.\fz
-	e-\fzpocoapococresc
+	e\fz-\offset X-offset 15 -\tweak extra-offset #'(-15 . 0.5) ^\pocoapococresc
 	b->\fz
 	b->\fz
 % Bars 106 to 110
@@ -197,7 +197,7 @@ musicViolaMvtIII = \relative c {
 % Bars 141 to 145
 	e cis e
 	f d, d
-	d16(\ff^\arco f aes f aes d)
+	d16(-\offset X-offset -4 -\tweak extra-offset #'(4 . -0.4) \ff^\arco f aes f aes d)
 	g,( bes ees g f ees)
 	d( c bes aes g f)
 % Bars 146 to 150
@@ -211,7 +211,7 @@ musicViolaMvtIII = \relative c {
 	ees bes ees
 	q bes q
 	ees bes ees
-	d-\dimmarkup b d
+	d-\tweak extra-offset #'(0 . -7.7) ^\dimmarkup b d
 % Bars 156 to 160
 	c g c
 	c a c
@@ -221,7 +221,7 @@ musicViolaMvtIII = \relative c {
 % Bars 161 to 165
 	a r r
 	f r r \mark \default
-	a\pp^\arco r r
+	a\pp-\offset X-offset 1.2 ^\arco r r
 	bes r r
 	c-. f,-. c'-.
 % Bars 166 to 170
@@ -244,7 +244,7 @@ musicViolaMvtIII = \relative c {
 	f!8\p r r
 % Bars 181 to 185
 	R4.
-	<c ees>8\ff r r
+	<c ees>8-\offset X-offset 0.5 \ff r r \markCoda
 	\startVoltaI <bes d> r r
 	R4.
 	bes4(\pp f16 a
@@ -255,14 +255,14 @@ musicViolaMvtIII = \relative c {
 	c!( aes c
 	ees c ees)
 % Bars 191 to 195
-	aes(\pp ees aes
+	\tempoDown \tempoXoffset #2.5 aes(\pp ees aes
 	aes ees aes)
 	aes( ees aes
-	aes ees aes) \section
-	\startVoltaII <bes, d>\ff r r \endVolta \section 
+	aes ees aes) \tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII <bes, d>\ff r r \endVolta \offset X-offset #1.5 \tweak direction #-1 \textEndMark \finemarkup \section \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\key des \major \sectionLabel "TRIO" \time 3/8 R4.*2
+		\removeTimeSignatureEoL \key des \major \sectionLabel "TRIO" \time 3/8 \mmrnDown \tempoXoffset #4 R4.*2
 		
 		r8. des16-.\p des8-.
 		c8--[ r ges-.]
@@ -394,13 +394,13 @@ musicViolaMvtIII = \relative c {
 % Bars 306 to 311
 	r8. aes16-.\pp aes8-.
 	<< {
-		aes4.(
+		\shape #'((0 . 2)(0 . -0.3)(0 . -0.3)(0 . 2)) Slur aes4.(
 		aes
 		aes
 		aes
 		aes8)
 	} \\ {
-		f4.(
+		\shape #'((0 . -1.5)(0 . 0.3)(0 . 0.3)(0 . -1.5)) Slur f4.(
 		ges
 		f
 		ges
@@ -428,5 +428,5 @@ musicViolaMvtIII = \relative c {
 % Bars 322 to 324
 	r8. f,16-.\p f8-.
 	f r r
-	R4. \section \key bes \major s8
+	\mmrLength #13 R4. \textMarkAlignKeySignature \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key bes \major s8
 }

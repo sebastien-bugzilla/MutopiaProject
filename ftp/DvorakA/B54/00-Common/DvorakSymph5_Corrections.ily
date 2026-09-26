@@ -161,3 +161,8 @@ correctionViolinII = \markup {
 	% Mvt IV, bar 250
 	"In Mvt IV, bar 250, the rhythm of the last four notes is corrected (eighth instead of sixteenth)
 }
+correctionViola = \markup {
+	
+	% Mvt I, bar 451
+	"In Mvt I, bar 451, the note in the second beat of the measure is different in conductor score and part score, both version remains possible. Conductor version is kept."
+}

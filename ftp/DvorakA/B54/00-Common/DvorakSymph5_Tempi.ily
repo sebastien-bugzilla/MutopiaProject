@@ -211,7 +211,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(      
 		       
-		      viola
+		      
 		violoncello contrabasso) {
 		\tempo \markup {
 			\with-color "red" \italic \normal-weight "stringendo"
@@ -224,7 +224,7 @@ tempiPartMvtII = {
 			\italic \normal-weight "stringendo"
 		}
 	}
-	\tag #'(fagottoI cornoII cornoIV violinoI) {
+	\tag #'(fagottoI cornoII cornoIV violinoI viola) {
 		\tempo \markup {
 			\italic \normal-weight "string."
 		}
@@ -268,7 +268,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(      
 		       
-		      viola
+		      
 		violoncello contrabasso) {
 		\tempo \markup {
 			\with-color "red" \italic \normal-weight "ritard."
@@ -276,7 +276,7 @@ tempiPartMvtII = {
 	}
 	\tag #'(flautoI oboeI oboeII clarinettoI fagottoI fagottoII cornoI cornoII
 		cornoIII cornoIV trombonoI trombonoII trombonoIII triangolo violinoI
-		violinoII) {
+		violinoII viola) {
 		\tempo \markup {
 			\italic \normal-weight "ritard."
 		}
@@ -304,7 +304,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(      
 		       
-		      viola
+		      
 		violoncello contrabasso) {
 		\tempo \markup {
 			\with-color "red" \italic \normal-weight "ritard."
@@ -312,7 +312,7 @@ tempiPartMvtII = {
 	}
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI
 		fagottoII cornoI cornoIII trombeI trombeII trombonoI trombonoII 
-		trombonoIII timpani triangolo violinoI violinoII) {
+		trombonoIII timpani triangolo violinoI violinoII viola) {
 		\tempo \markup {
 			\italic \normal-weight "ritard."
 		}
@@ -343,12 +343,12 @@ tempiPartMvtII = {
 tempiPartMvtIII = {
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV   
-		      viola
+		      
 		violoncello contrabasso) {
 		\tempo "Andante con moto, quasi l'istesso Tempo"
 	}
 	\tag #'(trombeI trombeII trombonoI trombonoII trombonoIII timpani triangolo
-		violinoI violinoII) {
+		violinoI violinoII viola) {
 		\tempo \markup {
 			\column { \lower #1.5 
 				"Andante con moto," "quasi l'istesso Tempo"

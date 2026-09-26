@@ -33,8 +33,8 @@ musicViolaMvtII = \relative c {
 	a8.(\pp\< c16\! b\> ais\!
 	b4)\< r8\!
 % Bars 21 to 25
-	a8.(\< c16\! b\> ais\!
-	b4)\p\< gis16( a)\!
+	a!8.(\< c16\! b\> ais\!
+	b4)\p\< gis16( a!)\!
 	b(\fz\> c32 d\! b16 gis\< gis a)\!
 	b(\fz\> c32 d\! b16 gis\< gis a)\!
 	<b d>4(\f\< <c e>8)\!
@@ -52,7 +52,7 @@ musicViolaMvtII = \relative c {
 	f( c a' g f c a' g f a d a)
 % Bars 36 to 40
 	c(\< g ees' d c bes a g fis a d a)\!
-	cis16^\pizz\fz e cis e cis d
+	cis16^\pizz\fz e! cis e cis d
 	cis\fz e cis-\dimmarkup e cis d
 	cis\fz e\< cis e c f\!
 	cis e bes-\dimmarkup d gis,\p d'
@@ -60,7 +60,7 @@ musicViolaMvtII = \relative c {
 	e,32(\fz^\arco a e a e a e\> a dis, a' fis a)\!
 	e(\fz a e a e a e\> a dis, a' fis a)\!
 	e(\> a e a g bes g bes f! bes f bes)\!
-	e,( gis e gis e-\dimmarkup a e a e b' c b)
+	e,( gis e gis e-\dimmarkup a e a e b'! c b)
 	b(\> e, b' e, a e a e a\! f a f)
 % Bars 46 to 50
 	a(\p e f d c_\brackM\dimmarkup e c e d e d e)
@@ -108,17 +108,17 @@ musicViolaMvtII = \relative c {
 	r16 e^\pizz e r r8
 	fis32(\p^\arco d' b gis fis d' b gis fis d' b gis)
 	f( d' b aes f d' b aes f d' b aes)
-	d,( f d f d f d f d f d f)
+	\tempoXoffset #18.5 d,( f d f d f d f d f d f)
 	d( f d f\< e g e g f aes f aes)
 % Bars 86 to 90
 	e( g e g f a! f a g bes g bes)
 	fis!( a fis a g! bes g bes a\! c a c) \section
-	\key a \minor b(\f d b d a c a c g-\dimmarkup b g b
+	\key a \minor \shape #'((0 . -2)(0 . 1)(0 . 0.5)(0 . 0)) Slur b(\f d b d a c a c g-\dimmarkup b g b
 	b d a c g b f a e\p g d f) \mark \default
 	<c'' e>4.\pp^\divisi
 % Bars 91 to 95
 	<< <g c>4(~ {s8. s16-\<}>> q16. <e gis>32)\!
-	<< q4.\fz~ {s8 s4\>}>>
+	q4.\fz\>~
 	q4 <d gis>8\p(
 	<c a'>) r r
 	r16 f,\pp^\pizz f r r8
@@ -145,7 +145,7 @@ musicViolaMvtII = \relative c {
 	f,32(^\arco d' bes g f d' bes g f d' bes g)
 	f( d' bes g f d' bes g f d' bes g)
 	r8 <f bes>16^\pizz[ r <bes! d>] r
-	<d f>[ r <bes d> r <f bes>] r
+	<d f>[ r <bes d> r <f bes!>] r
 % Bars 116 to 120
 	f32(^\arco d' bes g f d' bes g f d' bes g)
 	f( d' bes g f d' bes g f d' bes g)
@@ -155,8 +155,8 @@ musicViolaMvtII = \relative c {
 % Bars 121 to 125
 	ees( g ees g d f d f c ees c ees)
 	aes( ces aes ces g bes g bes f aes f aes)
-	<g bes>8-.\noBeam_\ffmarcatissimo^\secco <c ees>-. q-.
-	q-. q-. q-.
+	<g bes>8-.\noBeam-\offset X-offset -2 _\ffmarcatissimo^\secco <c ees>-. q-.
+	\tempoXoffset #8 q-. q-. q-.
 	<gis ees'>-. <a ees'>-. <c ees>-. \mark \default
 % Bars 126 to 130
 	<b! e!> r r
@@ -177,9 +177,9 @@ musicViolaMvtII = \relative c {
 	e\pp^\pizz r e' r b r
 	e, r r8 r
 % Bars 141 to 145
-	R4.
+	\tempoXoffset #-1 \mmrLength #12 R4.
 	e32(\pp^\arco d' b gis e d' b gis e e' d b) \section \mark \default
-	e,(c' b a e c' b a e d' e, c')
+	\tempoXoffset #1. e,(c' b a e c' b a e d' e, c')
 	e,( gis fis e a c a e c e d e)
 	c( e a b c e d c d e c d)
 % Bars 146 to 150
@@ -216,7 +216,7 @@ musicViolaMvtII = \relative c {
 	b,32-.\ff f'!-. d-. c-. b-. f'-. d-. b-. c-. e-. c-. a-.
 	gis-. d'-. b-. a-. gis-. d'-. b-. gis-. a-. c-. a-. e-.
 	f! gis-\dimmarkup f d a' c a e c'\p ees c a
-	c(\pp e! c a a c a e gis b gis e)
+	\stemUp c(\pp e! c a \stemNeutral a c a e gis b gis e)
 	r16 e8 e16( fis gis
 % Bars 176 to 180
 	a) e8 e16( fis gis
@@ -258,7 +258,7 @@ musicViolaMvtII = \relative c {
 	}>> r r8 r
 	<a fis'>16\ff r r8 <b gis'>16 r
 	<a e' a>\arpeggio r r8 r
-	R4.
+	\mmrLength #11 R4.
 % Bar 201
-	a8\pp^\pizz r r\fermata \fine
+	a8^\offset X-offset -2.5 \pp^\pizz r r\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

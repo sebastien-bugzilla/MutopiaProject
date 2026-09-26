@@ -11,6 +11,10 @@
 semprepp = \markup {\italic sempre \dynamic pp}
 pptranquillo = \markup {\hspace #-0.82 \dynamic pp \italic tranquillo}
 ppmoltotranquillo = \markup {\hspace #-0.82 \dynamic pp \italic "molto tranquillo"}
+ppmolto_tranquillo = \markup {
+	\hspace #-0.82 \dynamic pp \translate #'(0 . 2) 
+	\italic \column { \lower #1.5 "molto" "tranquillo"}
+}
 pplegato = \markup {\hspace #-0.82 \dynamic pp \italic legato}
 ppdolente = \markup {\hspace #-0.82 \dynamic pp \italic dolente}
 ppdolce = \markup {\hspace #-0.82 \dynamic pp \italic dolce}

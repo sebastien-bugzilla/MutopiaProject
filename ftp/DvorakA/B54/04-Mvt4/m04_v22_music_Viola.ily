@@ -9,10 +9,10 @@ musicViolaMvtIV = \relative c {
 	\key f \major
 %	\transposition a
 % Bars 1 to 5
-	R1*4
+	\mmrLength #29 \mmrnDown R1*3
 	
 	
-	
+	R1
 	<g' bes>2:16\ffz q:
 % Bars 6 to 10
 	\time 2/4 q:
@@ -36,7 +36,7 @@ musicViolaMvtIV = \relative c {
 	<e gis> r r4 r2
 	e8:16 fis: gis: a: b: c: d: dis:
 	e8 r r e,[-.\p e,]-. r r e'-.
-	a,4(\p e'\<~ e8 d16 c)\! b8(-.\brack\mf c-.)
+	a,4(\p e'\<~ e8 d16 c)\! b8(-.-\offset X-offset 0.5 \brack\mf c-.)
 	gis4(->\> a)\! r8. a16[ b8. c16]
 % Bars 26 to 30
 	gis4(-> a) r8. a16[ bes!8. c16]
@@ -53,7 +53,7 @@ musicViolaMvtIV = \relative c {
 % Bars 36 to 40
 	a-. bes-. d,-. e-.
 	fis-.\< bes-. g-. a-.
-	bes-.-\fmarkup d-. e-. fis-.\!
+	\markEO #'(0 . 2.5) bes-.-\fmarkup d-. e-. fis-.\!
 	<g bes>2:32\ffz r
 	q:\fp r
 % Bars 41 to 45
@@ -67,29 +67,24 @@ musicViolaMvtIV = \relative c {
 	R1*2
 	
 	r4 a,->\fz~ a8\p a16( g fis8-.) g-.
-	r4-\pocoapococresc c\fz~ c8 c16( bes a8-.) bes-.
+	r4^\pocoapococresc c\fz~ c8 c16( bes a8-.) bes-.
 % Bars 51 to 55
 	r4 e\fz~ e8 e16( d cis8-.) d-.
 	r4 g\f~ g8-. g16( f e8-.) f-.
-	<< {
-		bes8 bes4 bes8( c) c4 c8( \clef treble
-		d) d( e) e( f) f( g) g 
-	} \\ {
-		a,8 a16( g fis8) g( bes) bes16( a gis8) a
-		c16(\< bes a bes) d( c b c) e( d cis d) f( e dis e)\!
-	}>> \mark \default
-	<f a>8 r r4 \clef alto <bes,, d>2\ff
+	bes8 bes4 bes8( c) c4 c8( \clef treble
+	d)\< d( e) e( f) f( g) g\! \mark \default
+	a8 r r4 \clef alto d,,2\ff
 % Bars 56 to 60
-	<ees ges>4:16->\fz <d f>:->\fz <c e!>16 q <c ees> q <bes d> q <bes des> q
-	<a c>2\ff <bes d!>
-	<ees ges>4:->\fz <d! f>:->\fz <c e!>8: <c ees>: <bes d>: <bes des>:
-	<f' aes>4.:\fz <e! g!>4:\fz <d f>:\fz <c e!>16\fz q
-	<g' bes>4.:\fz <f aes>4:\fz <e g>:\fz <d f>16\fz q
+	ges4:16->\fz f:->\fz e!16 e ees ees d d des des
+	c2\ff d!
+	ges4:->\fz f:->\fz e!8: ees: d: des:
+	aes'4.:\fz g!4:\fz f:\fz e!16\fz e
+	bes'4.:\fz aes4:\fz g:\fz f16\fz f
 % Bars 61 to 65
-	<f aes>4.:\fz <d f>4:\fz <f aes>:\fz <d f>16\fz q
-	<g bes>4.\fz <e! g>4:\fz <g bes>:\fz <e g>16\fz q
-	q4 r r2
-	r8 bes:\ff fis: g: dis: e: cis': d!:
+	aes4.:\fz f4:\fz aes:\fz f16\fz f
+	bes4.\fz g4:\fz bes:\fz g16\fz g
+	g4 r r2
+	r8 bes,:\ff fis: g: dis: e: cis': d!:
 	b:\< c!: fis,: g: a: bes!: cis: d:
 % Bars 66 to 70
 	e: fis: g: a: bes: e,: fis: g:\!
@@ -101,8 +96,8 @@ musicViolaMvtIV = \relative c {
 	<a f'>2->\ff q->\fz
 	<c f>->\fz <b f'>->\fz
 	<a f'>8 r e''-.\fp f-. b,-.\> c-. b,-. c-.\!
-	gis-. a-. e-. f-. << <g bes!>2\p\> {s8 s s s\!}>>
-	<a f'>2->\ff q->\fz
+	gis-. a-. e-. f-. << \hairpinShorten #'(-0.3 . -1.5) <g bes!>2\p\> {s8 s s s\!}>>
+	<a f'>2->-\offset X-offset 0.5 \ff q->\fz
 % Bars 76 to 80
 	<c f>->\fz <b f'>->\fz
 	<f' a>8\f r e'8-.\fp f-. b,-. c-.-\dimmarkup b,-. c-.
@@ -117,7 +112,7 @@ musicViolaMvtIV = \relative c {
 	<f a>\pp r r2
 % Bars 86 to 90
 	q4 r r2
-	c''4(\pp f c2
+	\shape #'((0 . -1.5)(0 . 0.6)(0 . 0.3)(0 . -1.5)) Slur c''4(\pp f c2
 	gis4 a d, c)
 	c2( gis4 a
 	gis a gis a)
@@ -173,7 +168,7 @@ musicViolaMvtIV = \relative c {
 	<b, d>1:32\pp
 	q:-\crescmarkup
 	<f aes>:
-	<< q:\f\< {s4 s s s\!}>>
+	q:\f\<
 	<g b>2:\ff q:
 % Bars 136 to 140
 	q1:
@@ -191,28 +186,28 @@ musicViolaMvtIV = \relative c {
 	ees:
 	fis,8-. r c'4(->\f~ c8 b16 a) gis8-.( a-.)
 	fis r  ees'4->(~ ees8 d16 c) b8(-. c-.)
-	r8. <c ees>16[-.\ff <d f>8-. <ees! ges>-.] <a, c>8.->[ q16-. <b d>8-. <c ees!>-.]
-	r8. <dis, fis>16[-. <eis gis>8-. <fis! a!>-.] <c! ees>8.->[ q16-. <d f>8-. <ees! ges>-.]
+	r8. ees16[-.\ff f8-. ges-.] c,8.->[ c16-. d8-. ees!-.]
+	r8. fis,16[-. gis8-. a!-.] ees8.->[ ees16-. f8-. ges-.]
 % Bars 151 to 155
-	<e! g!>\f r g'4\fz(~ g8 fis16 e) dis8-. e-.
+	g!\f r g'4\fz(~ g8 fis16 e) dis8-. e-.
 	b r  b'4\fz(~ b8 a16 g) fis8-. g-.
-	r8. <e g>16[\ff <fis a>8-. <g b>-.] <b, e>8.->[ q16 <b fis'!>8-. <b g'>-.]
-	r8. <g e'>16-.[ <b fis'>8-. <e g>-.] << {b!8.[-> b16-. dis8-. e-.]} \\ {g,8.->[ b16-. b8-. b-.]}>>
-	<e, g>2:16\p q:
+	r8. g16[\ff a8-. b-.] e,8.->[ e16 fis!8-. g-.]
+	r8. e16-.[ fis8-. g-.] b,!8.[-> b16-. dis8-. e-.]
+	g,2:16\p g:
 % Bars 156 to 160
-	<g bes!>: q:
-	\repeat tremolo 4 {bes16(\p c} \repeat tremolo 4 {bes c)}
-	\repeat tremolo 4 {bes(-\crescmarkup des} \repeat tremolo 4 {bes des)}
-	\repeat tremolo 4 {<g, bes>(\mf des'} \repeat tremolo 4 {<g, bes> des')}
-	\repeat tremolo 4 {<g, bes>(\p des')} r8. ees,32\pp( c' des8) r
+	bes!: bes:
+	bes16(\p c bes c bes c bes c bes c bes c bes c bes c)
+	bes(-\crescmarkup des bes des bes des bes des bes des bes des bes des bes des)
+	bes(\mf des bes des bes des bes des bes des bes des bes des bes des)
+	bes(\p des bes des bes des bes des) r8. ees,32\pp( c' des8) r
 % Bars 161 to 165
 	r8. ees,32( c' des8) r r8. ees,32( c' des8) r
 	r8. ees,32( c' des8) r r8. ees,32( c' des8) r 
 	r8. d!16[(\pp ees8) fes-.] r8. ees16[( e8) f-.]
 	r8. e!16[(-\crescmarkup f8) ges-.] r8. f16[( ges8) g-.]
-	r8. f16( << ges2.)\f\< {s4 s s\!}>>
+	r8. f16( << \hairpinShorten #'(0 . -2.3) ges2.)\f\< {s4 s s\!}>>
 % Bars 166 to 170
-	g!2.(\> fes4)\! \mark \default
+	g!2.(\> fes4)\! \markXoffset #-0.2 \mark \default
 	\cutBeamEachBeat \tuplet 3/2 4 { ees,8\pp( aes <c ees>~ q aes ees)~ ees( aes <c ees>~ q aes ees)~
 	ees( aes <c ees>~ q aes ees)~ ees( aes <c ees>~ q aes ees)~
 	ees( bes' <des ees>~ q bes ees,)~ ees( bes' <des ees>~ q bes ees,)~
@@ -245,13 +240,13 @@ musicViolaMvtIV = \relative c {
 	<cis, e>1:32\pp
 	q:-\brackM\crescmarkup
 	<g bes>:
-	<< q:\f\< {s4 s s s\!}>>
+	q:\f\<
 	<a cis>1:\ff
 % Bars 196 to 200
 	q:
 	q:
 	q:
-	q4 f'->\ff g-> cis,->
+	q4 f'->\ff g-> cis,!->
 	d-> e-> g,-> a->
 % Bars 201 to 205
 	bes-> e,-> f-> g->
@@ -276,9 +271,11 @@ musicViolaMvtIV = \relative c {
 	r4 <c' f aes>-^ q-^ <ces f aes>-^
 	<cis fis a!>-^ r <b fis' b>-.-^ <b gis' b>-.-^
 	<a e' a>8-. r r4 r2
-	R1*6
+	R1*3
 % Bars 221 to 225
 	
+	
+	\mmrLength #15 R1*3
 % Bars 226 to 230
 	r2 <c, f>4\pp^\pizz r
 	<des f> r e! r
@@ -305,27 +302,19 @@ musicViolaMvtIV = \relative c {
 	r4 r8. ges16( bes8-.) bes-. r4
 % Bars 246 to 250
 	r4 r8. a16( cis8-.) cis-. r4
-	<e, g>1:16\f
-	<< q:\< {s4 s s s\!}>>
-	<g e'>8\fz r r4 r2
-	r8 g'16\fz\>-. g-. cis,8-. d-. e-. g,-. a-. bes-.\! \mark \default
+	g1:16\f
+	g:\<
+	e'8\fz r r4 r2
+	r8 g16\fz\>-. g-. cis,8-. d-. e-. g,-. a-. bes-.\! \mark \default
 % Bars 251 to 255
-	<< {
-		\oneVoice r4 \voiceOne a4:16 bes2:
-		bes4: a:_\crescmarkup d2:
-		d4: c: f2:
-		f4: e: a2:
-		a4: g: c2:-> \clef treble
-	} \\ {
-		s4 a,2:16\pp g4:
-		c2: c4: bes:
-		ees2.:\< d4:\!
-		g2.: f4:
-		bes2.:-> a4:
-	}>>
+	r4 a4:16 bes2:
+	bes4: a:_\crescmarkup d2:
+	\hairpinShorten #'(0 . -2.6) d4:\< c: f2:\!
+	f4: e: a2:
+	a4: g: c2:-> \clef treble
 % Bars 256 to 260
-	<< {c16 c bes bes e-> e e e  e e d d  g g g g} \\ {d-\fzcresc d d d d d c c f f f f f f e e}>> \clef alto
-	<a,, f'>2->\ff <bes d>->
+	c16-\fzcresc c bes bes e-> e e e  e e d d  g g g g \clef alto
+	f,2->\ff d->
 	<ees ges>4:16 <d f>: <c e!>16 q <c ees> q <bes d> q <bes des> q
 	<a f'>2-> <bes d!>->
 	<ees ges>4: <d f>: <c e!>16 q <c ees> q <bes d> q <bes des> q
@@ -376,10 +365,10 @@ musicViolaMvtIV = \relative c {
 	r8 e( a c c a) r4
 	r8 d,(\< g bes bes g)\! r4
 	r8 e(\> g bes bes g)\! r4
-	e4\p^\pizz r r a8\> a\!
+	e4\p^\pizz r r a8\> a
 % Bars 301 to 305
 	bes4\pp r r bes8 bes
-	bes4 r b c8\< c\!
+	bes4 r b c8\< c
 	<c ees>4\fz r r q8\p q \mark \default
 	r4 <bes d> r q8 q
 	r4 <des ees> r q8 q
@@ -398,24 +387,24 @@ musicViolaMvtIV = \relative c {
 % Bars 316 to 320
 	r4 <bes d>\p r q8 q
 	r4 q r q8 q
-	r4 <c e>\mf r <bes d>
+	r4 <c e>\mf r <bes d>\p
 	r q r <f a>
 	r <e g>-\dimmarkup r q
 % Bars 321 to 325
 	r <d f>\pp r <c bes'> \mark \default
-	<f a>2:16\p^\arco q:
+	<f a>2:16\p-\offset X-offset 0.5 ^\arco q:
 	<< q1:\< {s4 s s s\!}>>
 	<f bes>2: <a c>:-\dimmarkup
 	<g bes>: q:
 % Bars 326 to 330
-	f4.\p f8( e4.)\< e8(\<
+	f4.\p f8( e!4.)\< e8(\<
 	ees4 d'8 c)\! bes(\> a g fis)\!
 	g2(\< gis\!
 	<< bes!1)\> {s4 s s s\!}>>
-	<< {a2( bes } {s8\p\< s s s\! s\> s s s\!}>>
+	<< {a2( bes } {\hairpinShorten #'(-0.5 . -1.1) s8\p\< s s s\! \hairpinShorten #'(0.6 . 0) s\> s s s\!}>>
 % Bars 331 to 335
 	a2\pp bes)
-	<< {a2( bes } {s8\p\< s s s\! s\> s s s\!}>>
+	<< {a2( bes } {\hairpinShorten #'(-0.5 . -1.1) s8\p\< s s s\! \hairpinShorten #'(0.6 . 0) s\> s s s\!}>>
 	a2\pp bes)
 	<f a>2(\pp <g bes>)
 	<f a>( <g bes>)
@@ -474,20 +463,20 @@ musicViolaMvtIV = \relative c {
 	q-. r r2 \mark \default
 	<f a>1:16\fp
 % Bars 381 to 385
-	<f' a>:-\pocoapococresc
+	<f' a>:-\pocoapoco_cresc
 	<f, a>:
 	<f' a>:\fz
 	<f, a>2:\f <f' a>:\fz
-	<f, a>:-\crescmarkup <f' a>:\fz
+	<f, a>:-\offset X-offset -1.5 -\crescmarkup <f' a>:\fz
 % Bars 386 to 390
-	<f, a>4:\< <f' a>:-\fzmarkup <f, a>: <f' a>:-\fzmarkup
-	<f, a>: <f' a>:-\fzmarkup <f, a>: <f' a>:\!-\fzmarkup
+	<f, a>4:\< \markEO #'(0 . 1.6) <f' a>:-\fzmarkup <f, a>: \markEO #'(0 . 1.8) <f' a>:-\fzmarkup
+	<f, a>: \markEO #'(0 . 2) <f' a>:-\fzmarkup <f, a>: \markEO #'(0 . 2.2) <f' a>:\!-\fzmarkup
 	q8\ff r c'2.:32->-\trem
 	c1:
 	c:
 % Bars 391 to 395
 	c8 r <f, a>2-> q4->~
-	q8 r <bes, f'>2-> q4-.
+	q8 r <bes, f'>2-> <bes g'>4-.
 	<a f'>2-> q->
 	<c f>-> <f b>->
 	c,4-\marc <a'' c>-^ c,, <g'' bes!>-^
@@ -499,12 +488,12 @@ musicViolaMvtIV = \relative c {
 	c, <e' g>-^ c, <f' aes>-^
 % Bars 401 to 405
 	c,8 <e' g>-^ r <c' ees>-^ r <bes d>-^ r <bes des>-^
-	r <a c>-^\brack\ff\noBeam b-> c-> cis-> d-> dis-> e-> \clef treble
+	r <a c>-^\brack\ff\noBeam b-> c-> cis-> d-> dis-> e-> \clef treble \mark \default
 	f1:16\ff
-	a:
-	c:
+	\tremoloPosition #1 a:
+	\tremoloPosition #1 c:
 % Bars 406 to 410
-	c:
+	\tremoloPosition #1 c:
 	f,4-. r \clef alto <c,, g' e'>-. r
 	<c a' f'>-. r <c g' e'>-. r
 	<c a' f'>-. r <c g' e'>-. r
@@ -515,4 +504,66 @@ musicViolaMvtIV = \relative c {
 	<a, f'> r r2
 	<c f a>4 r r2
 	<c, a' f'>1\fermata \fine
+}
+musicViolaDivisiMvtIV = \relative c {
+	\clef alto
+	\key f \major
+%	\transposition a
+% Bars 1 to 51
+	s1*5 s2*1 s1*45
+% bars 52 to 55
+	r4 g''\f~ g8-. g16( f e8-.) f-.
+	a8 a16( g fis8) g( bes) bes16( a gis8) a \clef treble
+	c16(\< bes a bes) d( c b c) e( d cis d) f( e dis e)\!
+	f8 r r4 \clef alto bes,,2\ff
+% Bars 56 to 60
+	ees4:16->\fz d:->\fz c16 c c c bes bes bes bes
+	a2\ff bes
+	ees4:->\fz d!:->\fz c8: c: bes: bes:
+	f'4.:\fz e!4:\fz d:\fz c16\fz c
+	g'4.:\fz f4:\fz e:\fz d16\fz d
+% Bars 61 to 65
+	f4.:\fz d4:\fz f:\fz d16\fz d
+	g4.\fz e!4:\fz g:\fz e16\fz e
+	e4 r r2
+	r8 bes:\ff fis: g: dis: e: cis': d!:
+	\hairpinShorten #'(0 . -1) b:-\tweak height #0.37 \< c!: fis,: g: a: bes!: cis: d:\!
+% Bars 66 to 146
+	s1*81
+% Bars 147 to 150
+	fis,8-. r c'4(->\f~ c8 b16 a) gis8-.( a-.)
+	fis r  ees'4->(~ ees8 d16 c) b8(-. c-.)
+	r8. c16[-.\ff d8-. ees-.] a,8.->[ a16-. b8-. c-.]
+	r8. dis,16[-. eis8-. fis-.] c!8.->[ c16-. d8-. ees!-.]
+% Bars 151 to 154
+	e!\f r g'4\fz(~ g8 fis16 e) dis8-. e-.
+	b r  b'4\fz(~ b8 a16 g) fis8-. g-.
+	r8. e16[\ff fis8-. g-.] b,8.->[ b16 b8-. b-.]
+	r8. g16-.[ b8-. e-.] g,8.->[ b16-. b8-. b-.]
+	e,2:16\p e:
+% Bars 156 to 161
+	g: g:
+	bes16(\p c bes c bes c bes c bes c bes c bes c bes c)
+	bes(-\crescmarkup des bes des bes des bes des bes des bes des bes des bes des)
+	g,(\mf des' g, des' g, des' g, des' g, des' g, des' g, des' g, des')
+	g,(\p des' g, des' g, des' g, des') r8. ees,32\pp( c' des8) r
+% Bar 161
+	r8. ees,32( c' des8) r r8. ees,32( c' des8) r
+% Bars 161 to 250
+	s1*84
+% Bars 246 to 250
+	r4 r8. a16( cis8-.) cis-. r4
+	e,1:16\f
+	e:\< 
+	g8\fz r r4 r2
+	r8 g'16\fz\>-. g-. cis,8-. d-. e-. g,-. a-. bes-.\! \mark \default
+% Bars 251 to 255
+	r4 a2:16\pp g4:
+	<< c2: {s4 s-\crescmarkup}>> c4: bes:
+	ees2.:\< d4:\!
+	g2.: f4:
+	bes2.:-> a4: \clef treble
+% Bars 256 to 261
+	d16-\fzcresc d d d d d c c f f f f f f e e \clef alto
+	a,,2->\ff bes->
 }

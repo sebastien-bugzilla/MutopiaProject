@@ -12,20 +12,20 @@ musicViolaMvtI = \relative c {
 	\tuplet 6/4 4 {f16(\pp c' f, c' f, c'  f, c' f, c' f, c'
 	f, c' f, c' f, c' f, c' f, c' f, c')}
 	\repeat volta 2 {
-		\tuplet 12/8 2 { \repeat tremolo 6 {f,( c'}
+		\startMeasureCount \tuplet 12/8 2 { \repeat tremolo 6 {f,( c'}
 		\repeat tremolo 6 {f, c')}
 		\repeat tremolo 6 {f,( c'}
 % Bars 6 to 10
 		\repeat tremolo 6 {f, c')}
 		\repeat tremolo 6 {f,( c'}
-		\repeat tremolo 6 {f, c')}
+		\repeat tremolo 6 {f, c')} \stopMeasureCount
 		\repeat tremolo 6 {d,(\< a'\!}
 		\repeat tremolo 6 {c,\> bes')\!}
 % Bars 11 to 15
-		\repeat tremolo 6 {f(\pp c'}
+		\startMeasureCount \repeat tremolo 6 {f(\pp c'}
 		\repeat tremolo 6 {f, c')}
 		\repeat tremolo 6 {f,( c'}
-		\repeat tremolo 6 {f, c')} }
+		\repeat tremolo 6 {f, c')} } \stopMeasureCount
 		f,8 r r4
 % Bars 16 to 20
 		R2
@@ -76,21 +76,21 @@ musicViolaMvtI = \relative c {
 		R2*2
 		
 % Bars 56 to 60
-		r4 r8. \tuplet 3/2 16 {c32(\f\< d e)\!}
+		r4 r8. \tuplet 3/2 16 {c32(-\offset X-offset -2 \f\< d e)\!}
 		f8 r r4
 		R2*3
 		
 		
 % Bars 61 to 65
-		a8-.\f e'4->(\fp\> d8)\!
+		a8-.\f \hairpinShorten #'(-0.5 . -0.5) e'4->(\fp\> d8)\!
 		c16( e d e c8) b-.
-		a-. e'4->(\fp\> d8)\!
+		a-. \hairpinShorten #'(-0.5 . -0.5) e'4->(\fp\> d8)\!
 		c16( e d e c8) b-.
-		a8( e'4->_\dimmarkup d8)
+		\startMeasureCount a8( e'4->_\dimmarkup d8)
 % Bars 66 to 70
 		a( e'4 d8)
 		a(\> e'4 d8)
-		a( e'4 d8)\!
+		a( e'4 d8)\! \stopMeasureCount
 		a\pp r r4
 		R2*3
 % Bars 71 to 75
@@ -110,7 +110,7 @@ musicViolaMvtI = \relative c {
 		des f des f) aes\f aes aes aes
 		aes4:16\p aes:\f
 		aes:\p aes:\f
-		aes:\p aes:\f_\brackM\crescmarkup
+		aes:\p aes:\f^\brackM\crescmarkup
 % Bars 86 to 90
 		gis:\p gis:\f
 		gis:\p gis:\f
@@ -125,9 +125,9 @@ musicViolaMvtI = \relative c {
 		a8(\pp e) r4 \mark \default
 % Bars 96 to 100
 		R2
-		<< fis2(\pp\< {s8 s s s\!}>>
+		fis2(\pp\< 
 		<e g>2)\fpp
-		<< fis2(\< {s8 s s s\!}>>
+		fis2(\< 
 		<e g>2)\fpp
 % Bars 101 to 105
 		fis2\p\<(~
@@ -137,13 +137,13 @@ musicViolaMvtI = \relative c {
 		\repeat tremolo 4 {fis16(\p\< a}
 % Bars 106 to 110
 		\repeat tremolo 4 {e\> g\!)}
-		\repeat tremolo 4 {fis(\< a\!}
-		\repeat tremolo 4 {e\> g)\!}
+		\hairpinShorten #'(0 . -1.5) \repeat tremolo 4 {fis(\< a\!}
+		\hairpinShorten #'(0 . -1.5) \repeat tremolo 4 {e\> g)\!}
 		\repeat tremolo 4 {fis(\< a}
 		\repeat tremolo 4 {e gis)\!}
 % Bars 111 to 115
-		\repeat tremolo 4 {fis(\mf\< a\!}
-		\repeat tremolo 4 {e\> g!)\!}
+		\hairpinShorten #'(0 . -1.5) \repeat tremolo 4 {fis(\mf\< a\!}
+		\hairpinShorten #'(0 . -1.5) \repeat tremolo 4 {e\> g!)\!}
 		\repeat tremolo 4 {fis(\< a\!}
 		\repeat tremolo 4 {e\> g)\!}
 		\repeat tremolo 4 {e(\p g}
@@ -178,32 +178,32 @@ musicViolaMvtI = \relative c {
 		<e g>2:32\ff
 		q:
 % Bars 141 to 145
-		<bes g'>4\pp^\pizz r8 q
+		\startMeasureCount <bes g'>4\pp^\pizz r8 q
 		q4 r8 q
 		q4 r8 q
-		q4 r8 q \mark \default
+		q4 r8 q \stopMeasureCount \mark \default
 		<g e' g>2:32\ff^\arco
 % Bars 146 to 150
 		q:
-		a4\pp^\brackM\pizz r8 a
+		\startMeasureCount a4\pp^\brackM\pizz r8 a
 		a4 r8 a
 		a4 r8 a
 		a4 r8 a
 % Bars 151 to 155
 		a4 r8 a
-		a4 r8 a
+		a4 r8 a \stopMeasureCount
 		\repeat tremolo 4 {g16(\pp^\brackM\arco a}
 		\repeat tremolo 4 {g a)}
 		<g a>2:32\ff
 % Bars 156 to 160
 		q:
-		\tuplet 3/2 4 {g8(\pp e' g~ g e g,)~
-		g( e' g~ g e g,)~
-		g( e' g~ g e g,)~
-		g( e' g~ g e g,)~
+		\shape #'((0 . -2)(0 . 0.5)(0 . 0.5	)(0 . -2)) Slur \tuplet 3/2 4 {\startMeasureCount g8(-\offset X-offset -1 \pp e' g~ g e g,)~
+		\shape #'((0 . -2)(0 . 0.5)(0 . 0.5	)(0 . -2)) Slur g( e' g~ g e g,)~
+		\shape #'((0 . -2)(0 . 0.5)(0 . 0.5	)(0 . -2)) Slur g( e' g~ g e g,)~
+		\shape #'((0 . -2)(0 . 0.5)(0 . 0.5	)(0 . -2)) Slur g( e' g~ g e g,)~
 % Bars 161 to 165
-		g( e' g~ g e g,)~
-		g( e' g~ g e g,)}
+		\shape #'((0 . -2)(0 . 0.5)(0 . 0.5	)(0 . -2)) Slur g( e' g~ g e g,)~
+		\shape #'((0 . -2)(0 . 0.5)(0 . 0.5	)(0 . -2)) Slur g( e' g~ g e g,)} \stopMeasureCount
 		\repeat tremolo 4 {<ais cis>16( <cis! e>)}
 		\repeat tremolo 4 {<ais cis>(\< <cis! e>)\!}
 		\repeat tremolo 4 {<ais cis>16(_\crescmolto <cis! e>)}
@@ -214,32 +214,32 @@ musicViolaMvtI = \relative c {
 		d-. b'-.
 		fis-. d8. fis16
 % Bars 171 to 175
-		d2:32\fp
+		\startMeasureCount d2:32\fp
 		d:\>
 		d:
-		<< d: {s4 s\!}>>
-		\repeat tremolo 4 {b16(\p d}
+		<< d: {s4 s\!}>> \stopMeasureCount 
+		\startMeasureCount \repeat tremolo 4 {b16(\p d}
 % Bars 176 to 180
 		\repeat tremolo 4 {b d}
 		\repeat tremolo 4 {b d}
-		\repeat tremolo 4 {b d)}
-		\repeat tremolo 4 {fis,(_\dimmarkup a}
+		\repeat tremolo 4 {b d)} \stopMeasureCount
+		\startMeasureCount \repeat tremolo 4 {fis,(_\dimmarkup a}
 		\repeat tremolo 4 {fis a}
 % Bars 181 to 185
 		\repeat tremolo 4 {fis\> a}
-		\repeat tremolo 4 {fis a)\!}
+		\repeat tremolo 4 {fis a)\!} \stopMeasureCount
 		\tuplet 3/2 4 {g8(\pp bes d~ d bes g)~
 		g8( bes d~ d bes g)~
-		g8( bes c~ c bes g)~
+		\startMeasureCount g8( bes c~ c bes g)~
 % Bars 186 to 190
 		g8( bes c~ c bes g)~
 		g8( bes c~ c bes g)~
-		g8( bes c~ c bes g)}
-		{ \repeat tremolo 4 {bes16(\pp c}
+		g8( bes c~ c bes g)} \stopMeasureCount
+		{ \startMeasureCount \repeat tremolo 4 {bes16(\pp c}
 		\repeat tremolo 4 {bes c}
 % Bars 191 to 195
 		\repeat tremolo 4 {bes c}
-		\repeat tremolo 4 {bes c)} }
+		\repeat tremolo 4 {bes c)} } \stopMeasureCount
 		\alternative {
 			\volta 1 {
 				\tuplet 12/8 2 { \repeat tremolo 6 {f,16( c'}
@@ -273,16 +273,16 @@ musicViolaMvtI = \relative c {
 	\repeat tremolo 4 {fis a)}
 	\tuplet 3/2 4 {<d a'>8( <g b> <a c>~ q <g b> <fis a>~
 	<fis a> <e g> <d fis>~ q <a e'> <fis d'>)}
-	\acciaccatura g d'2:32_\ppmoltotranquillo
+	\acciaccatura g d'2:32_\ppmolto_tranquillo
 % Bars 216 to 220
-	d:
+	\startMeasureCount d:
 	d:
 	d:
 	d:
 	d:
 % Bars 221 to 225
 	d:
-	d:
+	d: \stopMeasureCount
 	g,:
 	a:
 	b:
@@ -305,34 +305,34 @@ musicViolaMvtI = \relative c {
 	r <g, b>-^ r <b! e>-^
 	r <e g>-^ r <g b>-^
 % Bars 241 to 245
-	\tuplet 12/8 2 {\repeat tremolo 6 {<e, g>16\f( <g bes!>)}
+	\startMeasureCount \tuplet 12/8 2 {\repeat tremolo 6 {<e, g>16-\offset X-offset -1 \f( <g bes!>)}
 	\repeat tremolo 6 {<e g>( <g bes>)}
 	\repeat tremolo 6 {<e g>( <g bes>)}
-	\repeat tremolo 6 {<e g>( <g bes>)} }
-	\repeat tremolo 4 {bes(\fp\> c}
+	\repeat tremolo 6 {<e g>( <g bes>)} } \stopMeasureCount
+	\startMeasureCount \repeat tremolo 4 {\hairpinShorten #'(-0.5 . -0.5) bes(\fp\> c}
 % Bars 246 to 250
 	\repeat tremolo 4 {bes\pp c}
 	\repeat tremolo 4 {bes c}
-	\repeat tremolo 4 {bes c)}
-	\repeat tremolo 4 {bes( c}
+	\repeat tremolo 4 {bes c)} \stopMeasureCount 
+	\startMeasureCount \repeat tremolo 4 {bes( c}
 	\repeat tremolo 4 {bes c}
 % Bars 251 to 255
 	\repeat tremolo 4 {bes c}
-	\repeat tremolo 4 {bes c)}
-	\tuplet 12/8 2 { \repeat tremolo 6 {a(\f cis}
+	\repeat tremolo 4 {bes c)} \stopMeasureCount
+	\startMeasureCount \tuplet 12/8 2 { \repeat tremolo 6 {a(\f cis}
 	\repeat tremolo 6 {a\< cis)}
 	\repeat tremolo 6 {a( cis}
 % Bars 256 to 260
-	\repeat tremolo 6 {a cis)\!}} \mark \default
-	\tuplet 3/2 4 {e,8(\pp a e  a e a
+	\repeat tremolo 6 {a cis)\!}} \stopMeasureCount \mark \default
+	\startMeasureCount \tuplet 3/2 4 {e,8(\pp a e  a e a
 	e a e  a e a)
 	e( a e  a e a
-	e a e  a e a)
+	e a e  a e a) \stopMeasureCount
 % Bars 261 to 265
-	e( <gis b> e q e q
+	\startMeasureCount e( <gis b> e q e q
 	e q e q e q)
 	e( q e q e q
-	e q e q e <gis b>)
+	e q e q e <gis b>) \stopMeasureCount
 	<cis, a'>( <gis' b> <a  cis>~ q <gis b> <cis, a'>)~
 % Bars 266 to 270
 	q( <gis' b> <a  cis>~ q <gis b> <cis, a'>)~
@@ -357,13 +357,13 @@ musicViolaMvtI = \relative c {
 	q-> r
 	q-> r
 	<c ees>-> r
-	<f aes>2:32\ff
+	\startMeasureCount <f aes>2:32\ff
 % Bars 286 to 290
 	q:
 	q:
-	q:
+	q: \stopMeasureCount
 	<d f>8\brack\fz r r4
-	R2 \mark \default
+	R2 \markXoffset #-0.2 \mark \default
 % Bars 291 to 295
 	d4(\p r8 des-.)
 	c4( r8 cis-.)
@@ -410,7 +410,7 @@ musicViolaMvtI = \relative c {
 	aes e f g)
 	aes4(\> e
 	f g8 aes)\! \mark \default
-	a!2\pp~
+	\startMeasureCount \noteHeadEsw #'(-2 . 0) a!2\pp~ \revertNoteHeadEsw
 	a~
 % Bars 331 to 335
 	a~
@@ -420,14 +420,14 @@ musicViolaMvtI = \relative c {
 	a~
 % Bars 336 to 340
 	a~
-	a(
+	a( \stopMeasureCount
 	bes
 	a4) r
 	R2*3
 % Bars 341 to 345
 	
 	
-	\tuplet 6/4 4 {f16(\pp c' f, c' f, c'  f, c' f, c' f, c'
+	\startMeasureCount \tuplet 6/4 4 {f16(\pp c' f, c' f, c'  f, c' f, c' f, c'
 	f, c' f, c' f, c'  f, c' f, c' f, c')}
 	\tuplet 12/8 2 {\repeat tremolo 6 {f,( c'}
 % Bars 346 to 350
@@ -435,7 +435,7 @@ musicViolaMvtI = \relative c {
 	\repeat tremolo 6 {f,( c'}
 	\repeat tremolo 6 {f, c')}
 	\repeat tremolo 6 {f,( c'}
-	\repeat tremolo 6 {f, c')}
+	\repeat tremolo 6 {f, c')} \stopMeasureCount
 % Bars 351 to 355
 	\repeat tremolo 6 {a(\< c}
 	\repeat tremolo 6 {g d')\!} }
@@ -449,7 +449,7 @@ musicViolaMvtI = \relative c {
 	f2\fz~
 	f8. d16-. a( bes d f)
 % Bars 361 to 365
-	e8\brack\ff r16 c-. b( c e g)
+	e8[\brack\ff r16 c]-. b( c e g)
 	f8 r r4
 	<g, e'>-> r
 	<bes d>-> r
@@ -468,7 +468,7 @@ musicViolaMvtI = \relative c {
 	\unSubdiviseBeam a8-.\noBeam c(->\brack\fz b bes)
 % Bars 376 to 380
 	a( aes g16 e c8)
-	<a f'>4-> a'16-. g-. f8-.
+	<a f'>4-> a'!16-. g-. f8-.
 	g4-> bes16-. a-. g8-.
 	a-. e'4-> d8~
 	d16 c( b c a8) <bes,! g'>-^
@@ -515,7 +515,7 @@ musicViolaMvtI = \relative c {
 	R2*3
 	
 % Bars 416 to 420
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	a'2(\pp
 	b4 bes)
 	a2(
@@ -525,7 +525,7 @@ musicViolaMvtI = \relative c {
 	g
 	<e g>\<~
 	q4\! q
-	c8(\mf a' f cis)
+	c8(-\tweak extra-offset #'(-1.5 . -10.5) ^\mf a' f cis)
 % Bars 426 to 430
 	f( d' bes g)
 	c,!( a' f cis)
@@ -540,8 +540,8 @@ musicViolaMvtI = \relative c {
 	r bes'( g e g e)
 % Bars 436 to 440
 	r_\dimmarkup bes'( g e g e)
-	r des'(\> bes f bes f)
-	r des'( bes f bes f)\!}
+	\stemUp r des'(\> bes f bes f)
+	r des'( bes f bes f)\!} \stemNeutral
 	<g bes>2\p(
 	<aes des>)
 % Bars 441 to 445
@@ -561,10 +561,10 @@ musicViolaMvtI = \relative c {
 	c(\> f, c' f, bes g)
 	r c,( f c f c)\!
 	e(\p c e c e c)
-	f(\mf\< c' a ees' c a)
+	f(\mf\< c' a \stemUp ees' c a) \stemNeutral
 % Bars 456 to 460
 	g(\! e'! c\> bes g e)\!
-	f( c' a ees' c a)
+	f( c' a \stemUp ees' c a) \stemNeutral
 	g( e'!_\crescmarkup c bes g e)
 	f(\f c' a ees' c a
 	g\< e'! c bes g e)}
@@ -582,8 +582,8 @@ musicViolaMvtI = \relative c {
 	<c ees>-> r q-> r
 % Bars 471 to 475
 	q-> r <b d>-> r
-	<bes des>-> r <c, bes' g'>->\arpeggio r
-	<c' f a!>2:32
+	<bes! des>-> r <c, bes' g'>->\arpeggio r
+	\startMeasureCount <c' f a!>2:32
 	q:
 	q:
 % Bars 476 to 480
@@ -591,7 +591,7 @@ musicViolaMvtI = \relative c {
 	q:
 	q:
 	q:_\dimmarkup
-	q:
+	q: \stopMeasureCount
 % Bars 481 to 485
 	\repeat tremolo 4 {f,16(\p a}
 	f16\> a f a f a f bes)

@@ -20,7 +20,9 @@
 \include "./00-Common/DvorakSymph5_LayoutParts.ily"
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
+\include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part11_Viola.ily"
+%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v22_music_Viola.ily"
 \include "./02-Mvt2/m02_v22_music_Viola.ily"
@@ -38,20 +40,23 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54)"
+			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54) — Viola"
 		}
 		instrument = \markup {
-			"Viola"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatViolaMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(viola) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtI
 			}
@@ -66,16 +71,20 @@
 			}
 		}
 		\layout {
+%			system-count = 26
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatViolaMvtII
 			}
-%			\new Voice {
-%				\keepWithTag #'(viola) \tempiPartMvtII
-%			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtII
 			}
@@ -84,12 +93,21 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
 		}
 		\layout {
+%			system-count = 12 % 43
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
@@ -97,9 +115,9 @@
 			\new Voice {
 				\formatViolaMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(viola) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(viola) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtIII
 			}
@@ -108,36 +126,48 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
 		}
 		\layout {
+%			system-count = 26
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatViolaMvtIV
-			}
-%			\new Voice {
-%				\keepWithTag #'(viola) \tempiPartMvtIV
-%			}
-			\new Voice {
-				\InCueContext \cueVoiceViolaMvtIV
-			}
-			\new Voice {
-				\timeMvtIV \nameViolaMvtIV \musicViolaMvtIV
+		\new GrandStaff \with {\RemoveAllEmptyStaves \nameViolaMvtIV} <<
+			\new Staff <<
+%				\new Voice {
+%					\displayFilterVoice
+%				}
+				\new Voice {
+					\formatViolaMvtIV
+				}
+				\new Voice {
+					\keepWithTag #'(viola) \tempiPartMvtIV
+				}
+				\new Voice {
+					\InCueContext \cueVoiceViolaMvtIV
+				}
+				\new Voice {
+					\timeMvtIV \nameViolaMvtIV \musicViolaMvtIV
+				}
+			>>
+			\new Staff {
+				\new Voice {
+					\timeMvtIV \musicViolaDivisiMvtIV
+				}
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 24
 		}
 	}
 }
