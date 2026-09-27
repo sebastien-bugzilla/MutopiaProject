@@ -66,8 +66,8 @@ musicVioloncelloMvtII = \relative c {
 	e16-.(\p f-. e8-.\> e-.)\!
 	a,32(\pp e' a, e' a, e' a, e' a, e' a, e' 
 	a, e' a, e' a, e' a, e' a, e' a, e')
-	<a, e'>16 r q4
-	q16 r q4
+	<a, e'>16-. r q4
+	q16-. r q4
 % Bars 51 to 55
 	a16(\pp e' c b a e'
 	c b a e' c b

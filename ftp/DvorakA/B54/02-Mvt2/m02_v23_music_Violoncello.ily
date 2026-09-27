@@ -28,34 +28,34 @@ musicVioloncelloMvtII = \relative c {
 	b'( e,) r
 % Bars 16 to 20
 	b(\< g fis)
-	e\!( << a4->)\mf\> {s8 s\!}>>
+	e\!( a4->)\mf\>
 	d,8--\p\> d'-- r\!
 	fis,(\pp fis') fis-.
 	g,(\< g')\! r
 % Bars 21 to 25
 	fis,( fis')\> fis-.\!
 	g,(\p\< g') f!-.\!\noBeam
-	e(\fz\> e,)\< f\!
+	\hairpinShorten #'(-0.5 . 0) e(-\offset X-offset -1.5 \fz\> e,)\< f\!
 	e'(\fz e,)\< f\!
 	e4\f e8
 % Bars 26 to 30
-	e'8( f16) r f'16.(\f\< e32\!
+	e'8( f16) r f'16.(\f\< e32
 	dis4)\fz e16( d)
 	d8(\> c) b16( a)\!
 	c(-.\pp bes-. a8-. gis-.)
-	a16 r r8 r32 e'( c b)
+	a16 r r8 r32 e'( c b!)
 % Bars 31 to 35
 	a( e' c b a e' c b a e' c a)
-	g( d' b a g e' c g e g e gis)
+	\shape #'((0 . 0)(0 . 0)(0 . 0)(0 . -1)) Slur g( d' b a g e' c g e g e gis)
 	a( e c' a bes d bes g! c c, bes' c,)
 	a'( c a g f c' a g f c' a g)
 	f( c a' g f c a' g f a d a)
 % Bars 36 to 40
 	c(\< g ees' d c bes a g fis a d a)\!
 	cis4(~\fz cis16-\dimmarkup d)
-	<<cis4(~\fz {s8 s-\dimmarkup}>> cis16 d)
+	cis4(~-\fzdim cis16 d)
 	cis8(\fz\< \clef tenor bes' a)\!
-	g( f-\dimmarkup e)\p
+	g( f-\offset X-offset -2 -\dimmarkup e)\p
 % Bars 41 to 45
 	e8.\fz a16(\> fis dis)\!
 	e8.\fz a16(\> fis dis)\!
@@ -66,8 +66,8 @@ musicVioloncelloMvtII = \relative c {
 	e16-.(\p f-. e8-.\> e-.)\!
 	a,32(\pp e' a, e' a, e' a, e' a, e' a, e' 
 	a, e' a, e' a, e' a, e' a, e' a, e')
-	<a, e'>16 r q4
-	q16 r q4
+	<a, e'>16-. r q4
+	q16-. r q4
 % Bars 51 to 55
 	a16(\pp e' c b a e'
 	c b a e' c b
@@ -93,9 +93,9 @@ musicVioloncelloMvtII = \relative c {
 	r16 g' g r r8
 	g,8 r r
 % Bars 71 to 75
-	R4.
+	\once \ni R4.
 	e8\p r r
-	R4.
+	\once \ni R4.
 	b'^\arco\brack\p
 	r8 r16 a''(\brack\p\< fis e)\!
 % Bars 76 to 80
@@ -108,7 +108,7 @@ musicVioloncelloMvtII = \relative c {
 	d8( cis b)
 	d4.
 	r8 r16 aes'(\< f e)\!
-	d8.( e32 f) e16( d)
+	\tempoXoffset #10 d8.( e32 f) e16( d)
 	f8( e\< d)
 % Bars 86 to 90
 	g( f e)
@@ -141,14 +141,14 @@ musicVioloncelloMvtII = \relative c {
 	g
 	c,
 % Bars 111 to 115
-	R4.
+	\ni R4.
 	R4.*2
 	
 	f''4.->\fp
 	d4(~ d16 bes)
 % Bars 116 to 120
 	bes4 r8
-	R4.
+	R4. \no
 	g'->\fz
 	ees,32( g ees g d-\crescmarkup f d f c ees c ees)
 	f(\< aes f aes ees g ees g d f d f)\!
@@ -156,20 +156,20 @@ musicVioloncelloMvtII = \relative c {
 	ees( g ees g d f d f c ees c ees)
 	aes( ces aes ces g bes g bes f aes f aes)
 	g8_\ffmarcatissimo^\secco\noBeam f-. f-.
-	f-. f-. f-.
+	\tempoXoffset #6.5 f-. f-. f-.
 	f-. f-. f-. \mark \default
 % Bars 126 to 130
-	e r r
-	R4.*3
+	\tempoXoffset 1.5 e r r
+	\once \ni R4.*3
 	
 	
-	e,4._\ffdim~
+	\startMeasureCount e,4.-\offset X-offset -1 _\ffdim~
 % Bars 131 to 135
-	<< e~\p\> {s8 s s\!}>>
-	e4.~
+	\hairpinShorten #'(-0.5 . 3) e~\p\> 
+	e4.~\!
 	e~\pp
-	<< e~ {s8 s4-\dimmarkup}>>
-	e4.~
+	e~ -\tweak extra-offset #'(1.8 . 2.5) -\dimmarkup
+	e4.~ \stopMeasureCount
 % Bars 136 to 140
 	e8 r r
 	R4.*2
@@ -177,9 +177,9 @@ musicVioloncelloMvtII = \relative c {
 	e'16\pp^\pizz r e' r b r
 	e, r e r b r
 % Bars 141 to 145
-	e, r r8 e16 r
+	\tempoXoffset #8.5 e, r r8 e16 r
 	r8 e16 r r8 \section \mark \default
-	e'32(\p^\arco c' b a e c' b a e d' e, c')
+	e'32(\p-\offset X-offset 1 ^\arco c' b a e c' b a e d' e, c')
 	e,( gis fis e a c a e c e d e)
 	c( e a b c e d c d d, c' d,)
 % Bars 146 to 150
@@ -198,8 +198,8 @@ musicVioloncelloMvtII = \relative c {
 	f32(\brack\p c' a g f a g f e g f e)
 	d( e f g a c bes a d c b g
 	c,\< d ees f g c g a\! bes\> f d bes)\!
-	a(\fp\> cis e! g bes16)\! r r8
-	a,32(\fz\> cis e g bes16)\! r r8
+	\stemUp a(\fp\> cis e! g \stemNeutral bes16)\! r r8
+	\stemUp a,32(\fz\> cis e g \stemNeutral bes16)\! r r8
 % Bars 161 to 165
 	r16 a,\p^\pizz a' r r8
 	r16-\crescmarkup b, b' r r8
@@ -217,11 +217,11 @@ musicVioloncelloMvtII = \relative c {
 	c-. c-. c-. c-. c-. c-. 
 	c-. c-.-\dimmarkup c-. c-. f-.[\p f-.]
 	e-.\pp e-. e-. e-. e-. e-.
-	a,8-.[ a-. r16 a16]
+	\startMeasureCount a,8-.[ a-. r16 a16]
 % Bars 176 to 180
 	a8-.[ a-. r16 a]
 	a8-.[ a-. r16 a]
-	a8-.[ a-. r16 a]
+	a8-.[ a-. r16 a] \stopMeasureCount
 	<a c>4.(\pp
 	<b d>8\< <c e> <d f>\!
 % Bars 181 to 185
@@ -249,7 +249,7 @@ musicVioloncelloMvtII = \relative c {
 	<a, e' c'>16\arpeggio r r32 e'(\pp c b a e' c b
 	a16-.) r r8 r
 % Bar 201
-	R4.\fermata \fine
+	\once \ni R4.\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }
 musicVioloncelloDivisiMvtII = \relative c {
 	\clef bass
@@ -279,16 +279,17 @@ musicVioloncelloDivisiMvtII = \relative c {
 % Bars 56 to 60
 	
 	\section
-	\key a \major s4.*17
+	\key a \major s4.*11
 % Bars 61 to 65
 	
 % Bars 66 to 70
-	
+	r16 g' g r r8
+	g,8 r r
 % Bars 71 to 75
-	
-	
-	
-	
+	\mmrnStaffPadding #1.5 R4.
+	e8\p r r
+	R4.
+	b'^\arco\brack\p
 	b4.(
 % Bars 76 to 80
 	e,)
@@ -305,26 +306,35 @@ musicVioloncelloDivisiMvtII = \relative c {
 % Bars 86 to 90
 	g16 g-. g4~
 	g16 g-. << g4~ {s8 s\!}>> \section 
-	\key a \minor g16[\f g]-. g8. g16-\dimmarkup
+	\key a \minor g16[\f g]-. g8. g16-\offset X-offset -1.5 -\dimmarkup
 	g8.[ g16] g\p g
-	s4.*14
+	c,16\brack\pp r c'^\pizz[ r e] r
 % Bars 91 to 95
+	g[ r e r c] r
+	r8 e16[\fz\> r gis]\! r
+	c[-\dimmarkup r gis r e] r
+	r8 f16[\p r a] r
+	c[ r a r f] r
+% Bars 91 to 95
+	s4.*7
 	
 % Bars 96 to 100
 	
 % Bars 101 to 105
 	
 	
-	
-	<< g4.\p~^\arco {s8 s4\<}>>
+	d'16[\> r bes r f]\! r
+	<< g,4.\p~^\arco {s8 s4\<}>>
 	<< g4. {s8 s s\!}>>
 % Bars 106 to 110
 	c,4.
-	bes'32(\> g' e bes a e' c a g e' bes g)\!
-	s4.*3
+	\stemUp bes'32(\> g' e bes \stemNeutral a e' c a g e' bes g)\!
+	g4.\pp~
+	g
+	c,
 % Bars 111 to 115
 	R4.
-	g4.\p~
+	g'4.\p~
 	g
 	c,\fp~
 	c
@@ -338,8 +348,11 @@ musicVioloncelloDivisiMvtII = \relative c {
 	f16 f-. f4~-\crescmarkup
 	f16 f-. f4~
 	f8_\ffmarcatissimo^\secco f-. f-.
+	f'-. f-. f-.
+	f-. f-. f-. \mark \default
 % Bars 126 to 130
-	
+	e r r
+	R4.*3	
 % Bars 131 to 135
 	
 % Bars 136 to 140

@@ -3967,7 +3967,7 @@ cueVoiceVioloncelloMvtII = \relative c {
 cueVoiceVioloncelloMvtIII = \relative c {
 	s4.*76
 	% bar 77
-	<>^\markup {Ob.Cor.I.}
+	<>-\offset X-offset -1 ^\markup {Ob.Cor.I.}
 }
 cueVoiceVioloncelloMvtIV = \relative c {
 	s1*5 s2*1 s1*116

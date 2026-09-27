@@ -5,7 +5,7 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicVioloncelloMvtIII = \relative c {
-	\clef bass
+	\clef tenor
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
@@ -13,9 +13,9 @@ musicVioloncelloMvtIII = \relative c {
 	r8 r16 c'(\p\< a g
 	g f)\! r ees'(\< c bes
 	bes a)\! r g'(\f ees d)
-	d8[(\<\turn f] \tuplet 3/2 8 {ees16 b d)\!}
+	d8[(\<\turn f] \tuplet 3/2 8 {\once \tupletUp ees16 b d)\!}
 % Bars 6 to 10
-	c4 \tuplet 3/2 8 {c16(-\dimmarkup gis bes!)}
+	c4 \tuplet 3/2 8 {c16(-\offset X-offset -2 -\dimmarkup gis bes!)}
 	a4 \tuplet 3/2 8 {a16(\p e\> g!)}
 	f4(-\dimmarkup a8~
 	a c4\!
@@ -27,10 +27,10 @@ musicVioloncelloMvtIII = \relative c {
 	ees~ ees) d([~
 	d] cis~ cis)
 % Bars 16 to 20
-	c!4.\fermata \section
-	\time 3/8 bes,8(\pp f') bes,-.
+	c!4.\fermata \section \clef bass
+	\time 3/8 \stemDown bes,8(\pp f') bes,-.
 	bes( f') bes,-.
-	a( f') a,-.
+	a( f') a,-. \stemNeutral
 	c( g') ees-.
 % Bars 21 to 25
 	d( fis) d-.
@@ -81,7 +81,7 @@ musicVioloncelloMvtIII = \relative c {
 		ees8[ \once \oneVoice r ees]
 		d4 \once \oneVoice r8
 	} \\ {
-		f,8\pp[ s f]
+		\beamOffset #'(0.3 . 0.3) f,8\pp[ s f]
 		bes4 s8
 		f8[ s f]
 		bes4 s8
@@ -101,7 +101,7 @@ musicVioloncelloMvtIII = \relative c {
 	d' d d
 % Bars 76 to 80
 	cis\mf a r
-	R4.*2
+	\mmrnDown R4.*2
 	
 	cis8\pp cis cis
 	d d d
@@ -119,7 +119,7 @@ musicVioloncelloMvtIII = \relative c {
 	b8^\pizz\p fis b
 % Bars 91 to 95
 	R4.
-	b,8\pp fis b
+	b,8-\offset X-offset -0.5 ^\pp fis b
 	e4(->\fp^\arco b16 dis
 	e8) b-. e-.
 	fis-. b,-. fis'-.
@@ -133,13 +133,13 @@ musicVioloncelloMvtIII = \relative c {
 	r e' e,
 	e4->(\f^\arco b16 dis
 	e8)-\pocoapococresc b-. e-.
-	fis-. b,-. fis'-.
+	\stemUp fis-. b,-. fis'-. \stemNeutral
 	g16->( fis e dis e8)
 % Bars 106 to 110
 	a8-.\f c16(\fz b c a)
-	b8-.-\crescmarkup d16(\fz-> cis d b)
+	b8-. d16(-\fzcresc-> cis d b)
 	c!8-. e16(->\fz dis e c)
-	d8-.\f f16( e f e)
+	d!8-.\f f16( e f e)
 	d8-.\< f16( e f e)
 % Bars 111 to 115
 	d8-. f16( e f e)
@@ -180,7 +180,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 141 to 145
 	cis a cis
 	d d, d
-	d16(\ff^\arco f aes f aes d)
+	d16(-\offset X-offset -2.5 -\tweak extra-offset #'(2.2 . -1.3) \ff^\arco f aes f aes d)
 	g,( bes ees g f ees)
 	d( c bes aes g f)
 % Bars 146 to 150
@@ -190,7 +190,7 @@ musicVioloncelloMvtIII = \relative c {
 	ees( d c a f ees)
 	d( f bes f bes d)
 % Bars 151 to 155
-	bes,8\p^\pizz bes' bes,
+	bes,8-\offset X-offset -1.7 -\tweak extra-offset #'(1.4 . -1.5) \p^\pizz bes' bes,
 	bes' ees, bes'
 	bes, bes' bes,
 	bes' ees, bes'
@@ -211,8 +211,8 @@ musicVioloncelloMvtIII = \relative c {
 	d r r
 	c-. f,-. c'-.
 	d16( c bes a bes8)
-	f-.\pp r r
-	bes r r
+	\noteHeadEsw #'(-1.5 . 0) f-.-\offset X-offset -2.5 -\tweak extra-offset #'(0 . -8) ^\pp \revertNoteHeadEsw r r
+	bes-. r r
 % Bars 171 to 175
 	d^\pizz bes d
 	R4.
@@ -227,20 +227,20 @@ musicVioloncelloMvtIII = \relative c {
 	f[\> r f]\!
 % Bars 181 to 185
 	bes,\p r r
-	f\ff^\arco r r
+	f\ff-\offset X-offset -1 ^\arco r r \markCoda
 	\startVoltaI bes r r
-	R4.*11
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
+	\mmrLength #14 R4.*4
 	
 	
-	
-	\section
-	\startVoltaII bes8\ff r r \section \endVolta
+	\tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII bes8\ff r r \offset X-offset #1 \tweak direction #-1 \textEndMark \finemarkup \section \endVolta \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\key des \major \sectionLabel "TRIO" \time 3/8 R4.*2
+		\removeTimeSignatureEoL \key des \major \sectionLabel "TRIO" \time 3/8 \tempoXoffset #3  R4.*2
 		
 		r8. ees16-.\p ees8-.
 		aes,8[-- r16 aes-. aes8-.]
@@ -278,7 +278,7 @@ musicVioloncelloMvtIII = \relative c {
 		f8\mf r r
 		R4.
 % Bars 226 to 230
-		des,4-.\p r8
+		des,4-.-\offset X-offset 0.5 \p r8
 		c4-. r8
 		bes4-. r8
 		aes4-. r8
@@ -310,13 +310,13 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 251 to 255
 		aes-\dimmarkup g f e f g)
 		aes(\> g f e f g
-		aes g f e f g\! \mark \default
-		aes8)\fz e,4->
-		f4->-\pbrackdim g8
+		aes g f e f g\! \markWhiteout \mark \default
+		aes8)-\offset X-offset -1 \fz e,4->
+		f4->\p^\brackM\dimmarkup g8
 % Bars 256 to 260
 		aes16(\pp g f e f g
 		aes g f e f g)
-		aes8-.-\dimmarkup fis-. g-.
+		aes8-.^\dimmarkup fis-. g-.
 		aes-. fis-. g-.
 		aes-. fis-. g-.
 % Bars 261 to 265
@@ -367,7 +367,7 @@ musicVioloncelloMvtIII = \relative c {
 	c(\< ees f ees a f)
 	c'( a f' ees des c\!
 	bes\f d bes aes! ges! f)
-	des!(\> bes' ees, bes'\! ees,\p bes'
+	des!(\> bes' ees, bes' ees,\p bes'
 % Bars 301 to 305
 	des,-\dimmarkup f aes des ees f)
 	ges(\> ees c aes bes c\!
@@ -394,7 +394,7 @@ musicVioloncelloMvtIII = \relative c {
 	des8.\! f,16\ff f8
 % Bars 321 to 324
 	f8 r r
-	R4.*3
+	\mmrLength #13 R4.*3
 	
-	\section \key bes \major s8
+	\textMarkAlignKeySignature \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key bes \major s8
 }

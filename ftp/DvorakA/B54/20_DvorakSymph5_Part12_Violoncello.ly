@@ -20,7 +20,9 @@
 \include "./00-Common/DvorakSymph5_LayoutParts.ily"
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
+\include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part12_Violoncello.ily"
+%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v23_music_Violoncello.ily"
 \include "./02-Mvt2/m02_v23_music_Violoncello.ily"
@@ -38,20 +40,23 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54)"
+			"Antonín Dvořák — Symphony No. 5 in F Major Op.76 (B.54) — Violoncello"
 		}
 		instrument = \markup {
-			"Violoncello"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
+%			\new Voice {
+%				\displayFilterVoice
+%			}
 			\new Voice {
 				\formatVioloncelloMvtI
 			}
-%			\new Voice {
-%				\keepWithTag #'(violoncello) \tempiPartMvtI
-%			}
+			\new Voice {
+				\keepWithTag #'(violoncello) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceVioloncelloMvtI
 			}
@@ -66,30 +71,50 @@
 			}
 		}
 		\layout {
+%			system-count = 24
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtII
-			}
-%			\new Voice {
-%				\keepWithTag #'(violoncello) \tempiPartMvtII
-%			}
-			\new Voice {
-				\InCueContext \cueVoiceVioloncelloMvtII
-			}
-			\new Voice {
-				\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
+		\new GrandStaff \with {\RemoveAllEmptyStaves \nameVioloncelloMvtII} <<
+			\new Staff <<
+%				\new Voice {
+%					\displayFilterVoice
+%				}
+				\new Voice {
+					\formatVioloncelloMvtII
+				}
+				\new Voice {
+					\keepWithTag #'(violoncello) \tempiPartMvtII
+				}
+				\new Voice {
+					\InCueContext \cueVoiceVioloncelloMvtII
+				}
+				\new Voice {
+					\timeMvtII \nameVioloncelloMvtII \musicVioloncelloMvtII
+				}
+			>>
+			\new Staff {
+				\new Voice {
+					\timeMvtII \musicVioloncelloDivisiMvtII
+				}
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 2.
 			}
 		}
 		\layout {
+%			system-count = 18
+		}
+	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"Page intentionnaly left blank"
 		}
 	}
 	\score {
@@ -97,9 +122,9 @@
 			\new Voice {
 				\formatVioloncelloMvtIII
 			}
-%			\new Voice {
-%				\keepWithTag #'(violoncello) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\keepWithTag #'(violoncello) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceVioloncelloMvtIII
 			}
@@ -108,36 +133,46 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold 3.
 			}
 		}
 		\layout {
+%			system-count = 26
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtIV
-			}
-%			\new Voice {
-%				\keepWithTag #'(violoncello) \tempiPartMvtIV
-%			}
-			\new Voice {
-				\InCueContext \cueVoiceVioloncelloMvtIV
-			}
-			\new Voice {
-				\timeMvtIV \nameVioloncelloMvtIV \musicVioloncelloMvtIV
+		\new GrandStaff \with {\RemoveAllEmptyStaves \nameVioloncelloMvtII} <<
+			\new Staff <<
+%				\new Voice {
+%					\displayFilterVoice
+%				}
+				\new Voice {
+					\formatVioloncelloMvtIV
+				}
+				\new Voice {
+					\keepWithTag #'(violoncello) \tempiPartMvtIV
+				}
+				\new Voice {
+					\InCueContext \cueVoiceVioloncelloMvtIV
+				}
+				\new Voice {
+					\timeMvtIV \nameVioloncelloMvtIV \musicVioloncelloMvtIV
+				}
+			>>
+			\new Staff {
+				\timeMvtIV \musicVioloncelloDivisiMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\bold 4.
+				\bold "4. FINALE"
 			}
 		}
 		\layout {
+%			system-count = 12
 		}
 	}
 }

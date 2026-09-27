@@ -212,7 +212,7 @@ musicVioloncelloMvtIII = \relative c {
 	c-. f,-. c'-.
 	d16( c bes a bes8)
 	f-.\pp r r
-	bes r r
+	bes-. r r
 % Bars 171 to 175
 	d^\pizz bes d
 	R4.

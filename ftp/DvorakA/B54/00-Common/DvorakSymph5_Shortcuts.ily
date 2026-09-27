@@ -633,6 +633,21 @@ tupletExtraOffset = #(define-music-function
 measureCounterDown = \override Staff.MeasureCounter.direction = #-1
 revertMeasureCounter = \revert Staff.MeasureCounter.direction
 
+tieOver = \markup {
+	\overtie "       "
+}
+tieUnder = \markup {
+	\undertie "       "
+}
+
+mmrnStaffPadding = #(define-music-function
+	(padding)
+	(number?)
+	#{
+		\override MultiMeasureRestNumber.staff-padding = #padding
+	#}
+)
+
 %aIIOmit = \once \omit Voice.CombineTextScript
 
 %aIIExtraOffset = #(define-music-function
