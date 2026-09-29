@@ -21,7 +21,6 @@
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
-%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_Format_Part05_Corni.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v09_music_CornoI.ily"
@@ -63,14 +62,11 @@
 		\vspace #25.35
 		\abs-fontsize #20
 		\fill-line {
-			"Page intentionnaly left blank"
+			"This page left blank to facilitate page turns."
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatCornoIMvtI
 			}
@@ -91,14 +87,10 @@
 			}
 		}
 		\layout {
-%			system-count = 19
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatCornoIMvtII
 			}
@@ -119,7 +111,6 @@
 			}
 		}
 		\layout {
-%			system-count = 6
 		}
 	}
 	\score {
@@ -144,14 +135,10 @@
 			}
 		}
 		\layout {
-%			system-count = 18
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatCornoIMvtIV
 			}
@@ -172,14 +159,10 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatCornoIIMvtI
 			}
@@ -200,7 +183,6 @@
 			}
 		}
 		\layout {
-%			system-count = 12
 		}
 	}
 	\score {
@@ -225,7 +207,6 @@
 			}
 		}
 		\layout {
-%			system-count = 12
 		}
 	}
 	\score {
@@ -250,14 +231,10 @@
 			}
 		}
 		\layout {
-%			system-count = 16
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatCornoIIMvtIV
 			}
@@ -278,7 +255,6 @@
 			}
 		}
 		\layout {
-%			system-count = 26
 		}
 	}
 	\score {
@@ -303,7 +279,6 @@
 			}
 		}
 		\layout {
-%			system-count = 26
 		}
 	}
 	\score {
@@ -328,7 +303,6 @@
 			}
 		}
 		\layout {
-%			system-count = 10
 		}
 	}
 	\score {
@@ -353,14 +327,10 @@
 			}
 		}
 		\layout {
-%			system-count = 14
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatCornoIIIMvtIV
 			}
@@ -381,7 +351,6 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\pageBreak
@@ -389,14 +358,11 @@
 		\vspace #25.35
 		\abs-fontsize #20
 		\fill-line {
-			"Page intentionnaly left blank"
+			"This page left blank to facilitate page turns."
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatCornoIVMvtI
 			}
@@ -417,7 +383,6 @@
 			}
 		}
 		\layout {
-%			system-count = 4
 		}
 	}
 	\score {
@@ -442,14 +407,10 @@
 			}
 		}
 		\layout {
-%			system-count = 8
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatCornoIVMvtIII
 			}
@@ -470,14 +431,10 @@
 			}
 		}
 		\layout {
-%			system-count = 4
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatCornoIVMvtIV
 			}
@@ -498,7 +455,6 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 }

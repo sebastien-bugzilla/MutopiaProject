@@ -150,7 +150,7 @@
 		\vspace #25.35
 		\abs-fontsize #20
 		\fill-line {
-			"Page intentionnaly left blank"
+			"This page left blank to facilitate page turns."
 		}
 	}
 	\score {

@@ -22,7 +22,6 @@
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part13_Contrabasso.ily"
-%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v24_music_Contrabasso.ily"
 \include "./02-Mvt2/m02_v24_music_Contrabasso.ily"
@@ -48,9 +47,6 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatContrabassoMvtI
 			}
@@ -71,14 +67,10 @@
 			}
 		}
 		\layout {
-%			system-count = 18
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatContrabassoMvtII
 			}
@@ -99,14 +91,10 @@
 			}
 		}
 		\layout {
-%			system-count = 16
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatContrabassoMvtIII
 			}
@@ -127,14 +115,10 @@
 			}
 		}
 		\layout {
-%			system-count = 9
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatContrabassoMvtIV
 			}
@@ -155,7 +139,6 @@
 			}
 		}
 		\layout {
-%			system-count = 26
 		}
 	}
 }

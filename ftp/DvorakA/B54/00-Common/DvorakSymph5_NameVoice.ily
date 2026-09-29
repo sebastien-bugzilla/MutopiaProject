@@ -93,7 +93,7 @@ nameOboeIIMvtIV = {
 nameClarinettoIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto I" "in B"
+			\lower #1 "Clarinetto I" \concat { "in B" \text-flat}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -111,7 +111,7 @@ nameClarinettoIMvtII = {
 nameClarinettoIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto I" "in B"
+			\lower #1 "Clarinetto I" \concat { "in B" \text-flat}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -120,7 +120,7 @@ nameClarinettoIMvtIII = {
 nameClarinettoIMvtIV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto I" "in B"
+			\lower #1 "Clarinetto I" \concat { "in B" \text-flat}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -129,7 +129,7 @@ nameClarinettoIMvtIV = {
 nameClarinettoIIMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto II" "in B"
+			\lower #1 "Clarinetto II" \concat { "in B" \text-flat}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -147,7 +147,7 @@ nameClarinettoIIMvtII = {
 nameClarinettoIIMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto II" "in B"
+			\lower #1 "Clarinetto II" \concat { "in B" \text-flat}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -156,7 +156,7 @@ nameClarinettoIIMvtIII = {
 nameClarinettoIIMvtIV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Clarinetto II" "in B"
+			\lower #1 "Clarinetto II" \concat { "in B" \text-flat}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -544,7 +544,7 @@ nameTrombonoIIIMvtIV = {
 nameTimpaniMvtI = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in F C"
+			\lower #1 "Timpani" "in F/C"
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -553,7 +553,7 @@ nameTimpaniMvtI = {
 nameTimpaniMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in A E"
+			\lower #1 "Timpani" "in A/E"
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -562,7 +562,7 @@ nameTimpaniMvtII = {
 nameTimpaniMvtIII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in B F"
+			\lower #1 "Timpani" \concat { "in B" \text-flat "/F"}
 		}
 	}
 	\set Staff.shortInstrumentName = ""
@@ -571,7 +571,7 @@ nameTimpaniMvtIII = {
 nameTimpaniMvtIV = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in E A"
+			\lower #1 "Timpani" "in E/A"
 		}
 	}
 	\set Staff.shortInstrumentName = ""

@@ -21,7 +21,6 @@
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
-%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_Format_Part10_ViolineII.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v21_music_ViolinoII.ily"
@@ -51,14 +50,11 @@
 		\vspace #25.35
 		\abs-fontsize #20
 		\fill-line {
-			"Page intentionnaly left blank"
+			"This page left blank to facilitate page turns."
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatViolinoIIMvtI
 			}
@@ -79,14 +75,10 @@
 			}
 		}
 		\layout {
-%			system-count = 19
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatViolinoIIMvtII
 			}
@@ -107,14 +99,10 @@
 			}
 		}
 		\layout {
-%			system-count = 19
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatViolinoIIMvtIII
 			}
@@ -135,14 +123,10 @@
 			}
 		}
 		\layout {
-%			system-count = 20
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatViolinoIIMvtIV
 			}
@@ -163,7 +147,6 @@
 			}
 		}
 		\layout {
-%			system-count = 12
 		}
 	}
 }

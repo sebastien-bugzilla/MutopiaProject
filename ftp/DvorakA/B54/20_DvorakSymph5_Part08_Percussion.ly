@@ -22,7 +22,6 @@
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part08_Percussion.ily"
-%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v18_music_Timpani.ily"
 \include "./01-Mvt1/m01_v19_music_Triangolo.ily"
@@ -72,7 +71,6 @@
 			}
 		}
 		\layout {
-%			system-count = 24
 		}
 	}
 	\score {
@@ -97,7 +95,6 @@
 			}
 		}
 		\layout {
-%			system-count = 12
 		}
 	}
 	\score {
@@ -122,7 +119,6 @@
 			}
 		}
 		\layout {
-%			system-count = 12
 		}
 	}
 	\score {
@@ -147,7 +143,6 @@
 			}
 		}
 		\layout {
-%			system-count = 26
 		}
 	}
 	\score {
@@ -172,7 +167,6 @@
 			}
 		}
 		\layout {
-%			system-count = 2
 		}
 	}
 	\score {
@@ -197,7 +191,6 @@
 			}
 		}
 		\layout {
-%			system-count = 3
 		}
 	}
 	\score {
@@ -222,7 +215,6 @@
 			}
 		}
 		\layout {
-%			system-count = 14
 		}
 	}
 	\score {
@@ -247,7 +239,6 @@
 			}
 		}
 		\layout {
-%			system-count = 3
 		}
 	}
 }

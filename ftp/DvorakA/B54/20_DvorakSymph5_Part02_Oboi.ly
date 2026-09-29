@@ -22,7 +22,6 @@
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part02_Oboi.ily"
-%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI.ily"
 \include "./01-Mvt1/m01_v04_music_OboeII.ily"
@@ -55,14 +54,11 @@
 		\vspace #25.35
 		\abs-fontsize #20
 		\fill-line {
-			"Page intentionnaly left blank"
+			"This page left blank to facilitate page turns."
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIMvtI
 			}
@@ -83,14 +79,10 @@
 			}
 		}
 		\layout {
-%			system-count = 19
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIMvtII
 			}
@@ -111,7 +103,6 @@
 			}
 		}
 		\layout {
-%			system-count = 8
 		}
 	}
 	\score {
@@ -136,14 +127,10 @@
 			}
 		}
 		\layout {
-%			system-count = 17
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIMvtIV
 			}
@@ -164,14 +151,10 @@
 			}
 		}
 		\layout {
-%			system-count = 26
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIIMvtI
 			}
@@ -192,7 +175,6 @@
 			}
 		}
 		\layout {
-%			system-count = 2
 		}
 	}
 	\score {
@@ -217,14 +199,10 @@
 			}
 		}
 		\layout {
-%			system-count = 10
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIIMvtIII
 			}
@@ -245,14 +223,10 @@
 			}
 		}
 		\layout {
-%			system-count = 2
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatOboeIIMvtIV
 			}
@@ -273,7 +247,6 @@
 			}
 		}
 		\layout {
-%			system-count = 24
 		}
 	}
 }

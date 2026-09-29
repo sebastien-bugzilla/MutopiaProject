@@ -22,7 +22,6 @@
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part12_Violoncello.ily"
-%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v23_music_Violoncello.ily"
 \include "./02-Mvt2/m02_v23_music_Violoncello.ily"
@@ -48,9 +47,6 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatVioloncelloMvtI
 			}
@@ -71,15 +67,11 @@
 			}
 		}
 		\layout {
-%			system-count = 24
 		}
 	}
 	\score {
 		\new GrandStaff \with {\RemoveAllEmptyStaves \nameVioloncelloMvtII} <<
 			\new Staff <<
-%				\new Voice {
-%					\displayFilterVoice
-%				}
 				\new Voice {
 					\formatVioloncelloMvtII
 				}
@@ -106,7 +98,6 @@
 			}
 		}
 		\layout {
-%			system-count = 18
 		}
 	}
 	\pageBreak
@@ -114,7 +105,7 @@
 		\vspace #25.35
 		\abs-fontsize #20
 		\fill-line {
-			"Page intentionnaly left blank"
+			"This page left blank to facilitate page turns."
 		}
 	}
 	\score {
@@ -139,15 +130,11 @@
 			}
 		}
 		\layout {
-%			system-count = 26
 		}
 	}
 	\score {
 		\new GrandStaff \with {\RemoveAllEmptyStaves \nameVioloncelloMvtII} <<
 			\new Staff <<
-%				\new Voice {
-%					\displayFilterVoice
-%				}
 				\new Voice {
 					\formatVioloncelloMvtIV
 				}
@@ -172,7 +159,6 @@
 			}
 		}
 		\layout {
-%			system-count = 12
 		}
 	}
 }

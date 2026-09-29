@@ -18,6 +18,9 @@
 			"Symphony No. 5 in F Major Op.76 (B.54)"
 		}
 	}
+	copyright = \markup {
+		\italic "Engraved with LilyPond"
+	}
 %	mutopiatitle = "Concerto for Violin and Cello in A Minor"
 %	date = "1887"
 %	style = "Romantic"

@@ -3,18 +3,18 @@
     165     444    5630 10_DvorakSymph5_Conductor_mvt3.ly
     161     435    5427 10_DvorakSymph5_Conductor_mvt4.ly
     244     577    5301 20_DvorakSymph5_Part01_Flauti.ly
-    279     672    5813 20_DvorakSymph5_Part02_Oboi.ly
-    271     661    6035 20_DvorakSymph5_Part03_Clarinetti.ly
-    252     594    5482 20_DvorakSymph5_Part04_Fagotti.ly
-    504    1154    9741 20_DvorakSymph5_Part05_Corni.ly
-    265     632    5677 20_DvorakSymph5_Part06_Trombe.ly
-    391     912    8057 20_DvorakSymph5_Part07_Tromboni.ly
-    253     613    5578 20_DvorakSymph5_Part08_Percussion.ly
-    155     406    3828 20_DvorakSymph5_Part09_ViolineI.ly
-    169     443    4106 20_DvorakSymph5_Part10_ViolineII.ly
-    173     446    4084 20_DvorakSymph5_Part11_Viola.ly
-    178     457    4419 20_DvorakSymph5_Part12_Violoncello.ly
-    161     426    4044 20_DvorakSymph5_Part13_Contrabasso.ly
+    252     594    5316 20_DvorakSymph5_Part02_Oboi.ly
+    244     579    5520 20_DvorakSymph5_Part03_Clarinetti.ly
+    252     598    5499 20_DvorakSymph5_Part04_Fagotti.ly
+    460    1024    8942 20_DvorakSymph5_Part05_Corni.ly
+    252     594    5418 20_DvorakSymph5_Part06_Trombe.ly
+    360     822    7489 20_DvorakSymph5_Part07_Tromboni.ly
+    244     579    5352 20_DvorakSymph5_Part08_Percussion.ly
+    144     372    3591 20_DvorakSymph5_Part09_ViolineI.ly
+    152     397    3790 20_DvorakSymph5_Part10_ViolineII.ly
+    159     406    3808 20_DvorakSymph5_Part11_Viola.ly
+    164     419    4145 20_DvorakSymph5_Part12_Violoncello.ly
+    144     376    3712 20_DvorakSymph5_Part13_Contrabasso.ly
      46     114     628 test.ly
     168    1568    7991 00-Common/DvorakSymph5_Corrections.ily
    4083   15407   94555 00-Common/DvorakSymph5_CueVoice.ily
@@ -36,16 +36,16 @@
     674    1555   19793 00-Common/DvorakSymph5_Format_Part12_Violoncello.ily
     522    1213   15441 00-Common/DvorakSymph5_Format_Part13_Contrabasso.ily
     339     942   15240 00-Common/DvorakSymph5_Format_temp.ily
-     34     291    2017 00-Common/DvorakSymph5_Header.ily
+     37     300    2078 00-Common/DvorakSymph5_Header.ily
      92     340    3160 00-Common/DvorakSymph5_LayoutConductors.ily
      83     307    3000 00-Common/DvorakSymph5_LayoutParts.ily
      75     312    2976 00-Common/DvorakSymph5_NameGrandStaff.ily
     560    1708   12949 00-Common/DvorakSymph5_NameStaff.ily
-    714    2407   19704 00-Common/DvorakSymph5_NameVoice.ily
+    714    2425   19861 00-Common/DvorakSymph5_NameVoice.ily
      71     196    1701 00-Common/DvorakSymph5_PaperConductors.ily
      67     188    1608 00-Common/DvorakSymph5_PaperParts.ily
     921    3100   23542 00-Common/DvorakSymph5_Shortcuts.ily
-    510    1742   14048 00-Common/DvorakSymph5_Tempi.ily
+    498    1737   13957 00-Common/DvorakSymph5_Tempi.ily
      34     157     945 00-Common/DvorakSymph5_timeMvt.ily
     501    1522    7686 01-Mvt1/m01_v01_music_FlautoI_C.ily
     529    1569    7551 01-Mvt1/m01_v01_music_FlautoI.ily
@@ -236,4 +236,4 @@
     522    2400   11185 04-Mvt4/m04_v23_music_Violoncello.ily
     478    1873    8331 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     485    1938    8945 04-Mvt4/m04_v24_music_Contrabasso.ily
-  93013  301086 1797238 total
+  92780  300452 1793083 total

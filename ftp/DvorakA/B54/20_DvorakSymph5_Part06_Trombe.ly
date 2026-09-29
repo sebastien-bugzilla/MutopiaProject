@@ -21,7 +21,6 @@
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
-%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_Format_Part06_Trombe.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v13_music_TrombeI.ily"
@@ -72,7 +71,6 @@
 			}
 		}
 		\layout {
-%			system-count = 19
 		}
 	}
 	\score {
@@ -97,7 +95,6 @@
 			}
 		}
 		\layout {
-%			system-count = 5
 		}
 	}
 	\score {
@@ -122,12 +119,10 @@
 			}
 		}
 		\layout {
-%			system-count = 12
 		}
 	}
 	\score {
 		\new Staff <<
-
 			\new Voice {
 				\formatTrombeIMvtIV
 			}
@@ -148,7 +143,6 @@
 			}
 		}
 		\layout {
-%			system-count = 12
 		}
 	}
 	\pageBreak
@@ -156,7 +150,7 @@
 		\vspace #25.35
 		\abs-fontsize #20
 		\fill-line {
-			"Page intentionnaly left blank"
+			"This page left blank to facilitate page turns."
 		}
 	}
 	\score {
@@ -181,7 +175,6 @@
 			}
 		}
 		\layout {
-%			system-count = 19
 		}
 	}
 	\score {
@@ -206,7 +199,6 @@
 			}
 		}
 		\layout {
-%			system-count = 5
 		}
 	}
 	\score {
@@ -231,14 +223,10 @@
 			}
 		}
 		\layout {
-%			system-count = 12
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatTrombeIIMvtIV
 			}
@@ -259,7 +247,6 @@
 			}
 		}
 		\layout {
-%			system-count = 12
 		}
 	}
 }

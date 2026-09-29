@@ -22,7 +22,6 @@
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
 \include "./00-Common/DvorakSymph5_Format_Part09_ViolineI.ily"
-%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v20_music_ViolinoI.ily"
 \include "./02-Mvt2/m02_v20_music_ViolinoI.ily"
@@ -48,9 +47,6 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatViolinoIMvtI
 			}
@@ -71,7 +67,6 @@
 			}
 		}
 		\layout {
-%			system-count = 24
 		}
 	}
 	\score {
@@ -96,7 +91,6 @@
 			}
 		}
 		\layout {
-%			system-count = 24
 		}
 	}
 	\score {
@@ -121,14 +115,10 @@
 			}
 		}
 		\layout {
-%			system-count = 24
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatViolinoIMvtIV
 			}
@@ -149,7 +139,6 @@
 			}
 		}
 		\layout {
-%			system-count = 12
 		}
 	}
 }

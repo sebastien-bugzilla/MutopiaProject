@@ -21,7 +21,6 @@
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
-%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_Format_Part03_Clarinetti.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v05_music_ClarinettoI.ily"
@@ -52,9 +51,6 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIMvtI
 			}
@@ -75,14 +71,10 @@
 			}
 		}
 		\layout {
-%			system-count = 14
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIMvtII
 			}
@@ -103,7 +95,6 @@
 			}
 		}
 		\layout {
-%			system-count = 11
 		}
 	}
 	\score {
@@ -128,14 +119,10 @@
 			}
 		}
 		\layout {
-%			system-count = 21
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIMvtIV
 			}
@@ -156,14 +143,10 @@
 			}
 		}
 		\layout {
-%			system-count = 24
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIIMvtI
 			}
@@ -184,7 +167,6 @@
 			}
 		}
 		\layout {
-%			system-count = 6
 		}
 	}
 	\score {
@@ -209,14 +191,10 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIIMvtIII
 			}
@@ -237,14 +215,10 @@
 			}
 		}
 		\layout {
-%			system-count = 5
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatClarinettoIIMvtIV
 			}
@@ -265,7 +239,6 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 }

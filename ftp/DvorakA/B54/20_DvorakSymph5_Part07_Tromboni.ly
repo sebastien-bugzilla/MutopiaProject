@@ -21,7 +21,6 @@
 \include "./00-Common/DvorakSymph5_NameVoice.ily"
 \include "./00-Common/DvorakSymph5_Shortcuts.ily"
 \include "./00-Common/DvorakSymph5_Tempi.ily"
-%\include "./00-Common/DvorakSymph5_Format_temp.ily"
 \include "./00-Common/DvorakSymph5_Format_Part07_Tromboni.ily"
 \include "./00-Common/DvorakSymph5_CueVoice.ily"
 \include "./01-Mvt1/m01_v15_music_TrombonoI.ily"
@@ -76,14 +75,10 @@
 			}
 		}
 		\layout {
-%			system-count = 18
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatTrombonoIMvtII
 			}
@@ -104,7 +99,6 @@
 			}
 		}
 		\layout {
-%			system-count = 3
 		}
 	}
 	\score {
@@ -129,14 +123,10 @@
 			}
 		}
 		\layout {
-%			system-count = 11
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatTrombonoIMvtIV
 			}
@@ -157,7 +147,6 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\pageBreak
@@ -165,7 +154,7 @@
 		\vspace #25.35
 		\abs-fontsize #20
 		\fill-line {
-			"Page intentionnaly left blank"
+			"This page left blank to facilitate page turns."
 		}
 	}
 	\score {
@@ -190,14 +179,10 @@
 			}
 		}
 		\layout {
-%			system-count = 18
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatTrombonoIIMvtII
 			}
@@ -218,7 +203,6 @@
 			}
 		}
 		\layout {
-%			system-count = 6
 		}
 	}
 	\score {
@@ -243,14 +227,10 @@
 			}
 		}
 		\layout {
-%			system-count = 11
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatTrombonoIIMvtIV
 			}
@@ -271,7 +251,6 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 	\pageBreak
@@ -279,7 +258,7 @@
 		\vspace #25.35
 		\abs-fontsize #20
 		\fill-line {
-			"Page intentionnaly left blank"
+			"This page left blank to facilitate page turns."
 		}
 	}
 	\score {
@@ -304,14 +283,10 @@
 			}
 		}
 		\layout {
-%			system-count = 19
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatTrombonoIIIMvtII
 			}
@@ -332,7 +307,6 @@
 			}
 		}
 		\layout {
-%			system-count = 5
 		}
 	}
 	\score {
@@ -357,14 +331,10 @@
 			}
 		}
 		\layout {
-%			system-count = 11
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\displayFilterVoice
-%			}
 			\new Voice {
 				\formatTrombonoIIIMvtIV
 			}
@@ -385,7 +355,6 @@
 			}
 		}
 		\layout {
-%			system-count = 13
 		}
 	}
 }
