@@ -18,7 +18,7 @@ musicContrabassoMvtII = \relative c {
 	b e, r
 	d'4(^\arco_\fzcresc c8)
 	r b\mf e
-	a,[ r c]-\dimmarkup
+	a,[ r c]-\offset X-offset #-2 -\dimmarkup
 	d-.-\pdim e-. e,-.
 % Bars 11 to 15
 	a\pp r r
@@ -48,10 +48,10 @@ musicContrabassoMvtII = \relative c {
 	a\fz r a' r a-\dimmarkup e
 	a,\fz r a'-\dimmarkup r a e
 	a8\fz r a
-	a16 r bes-\dimmarkup r b\p r
+	a16 r bes-\offset X-offset -1 -\dimmarkup r b\p r
 % Bars 41 to 45
-	c,8.\fz^\arco c16\> b8\!
-	c8.\fz c16\> b8\!
+	c,8.\fz\>^\arco c16 b8\!
+	c8.\fz\> c16 b8\!
 	c(\> cis d\!
 	e fis,-\dimmarkup gis)
 	a4(\> d8)\!
@@ -101,7 +101,7 @@ musicContrabassoMvtII = \relative c {
 	r8 r r16 e\p
 	b8 r r
 	r16 b b r r8
-	<< g4.^\arco~ {s8 s4-\crescmarkup}>>
+	\tempoXoffset #3.5 g4.^\arco~-\crescmarkup
 	g16 g-.\< g4~
 % Bars 86 to 90
 	g16 g-. g4~
@@ -149,20 +149,20 @@ musicContrabassoMvtII = \relative c {
 	f16 f-. f4~-\crescmarkup
 	f16 f-. f4~
 	f8_\ffmarcatissimo^\secco f-. f-.
-	f'-. f-. f-.
+	\tempoXoffset #8 f'-. f-. f-.
 	f-. f-. f-. \mark \default
 % Bars 126 to 130
-	e r r
+	\tempoXoffset #1 e r r
 	R4.*3
 	
 	
-	e,4.-\ffdim~
+	\startMeasureCount e,4.-\offset X-offset -1 -\ffdim~
 % Bars 131 to 135
-	<< e\p\>~ {s8 s s\!}>>
-	e4.~
+	\hairpinShorten #'(0 . 3) e\p\>~
+	e4.~\!
 	e\pp~
-	<< e~ {s8 s4-\dimmarkup}>>
-	e4.~
+	e~-\dimmarkup
+	e4.~ \stopMeasureCount
 % Bars 136 to 140
 	e8 r r
 	R4.*2
@@ -170,9 +170,9 @@ musicContrabassoMvtII = \relative c {
 	e'8\pp r r
 	r e16^\pizz r b r 
 % Bars 141 to 145
-	e, r r8 r 
+	\tempoXoffset #8.5 e, r r8 r 
 	r r r16 e'\p \section \mark \default
-	a,8 a r16 a
+	\tempoXoffset #1 a,8 a r16 a
 	b8 c r16 b
 	a r r d d r
 % Bars 146 to 150
@@ -215,7 +215,7 @@ musicContrabassoMvtII = \relative c {
 	a8-.[ a-. r16 a]
 	a8-.[ a-. r16 a]
 	a8-.[ a-. r16 a]
-	a4.(\pp
+	\shape #'((0 . 2)(0 . 0)(0 . 0)(0 . 0.5)) Slur a4.(\pp
 	b8\< c d\!
 % Bars 181 to 185
 	e16)\f r r8 e16-. r
@@ -242,5 +242,5 @@ musicContrabassoMvtII = \relative c {
 	a, r r32 e'(\pp c b a e' c b
 	a16-.) r r8 r
 % Bar 201
-	R4.\fermata \fine
+	\once \ni \mmrLength #12 R4.\fermata \tweak direction #-1 \textEndMark \dopounapiccolapausasicontinua \fine
 }

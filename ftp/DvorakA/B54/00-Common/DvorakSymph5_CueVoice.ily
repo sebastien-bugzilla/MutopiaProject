@@ -3980,22 +3980,22 @@ cueVoiceVioloncelloMvtIV = \relative c {
 cueVoiceContrabassoMvtI = \relative c {
 	s2*20
 	% bars 21 - 24
-	\voiceOne f'4^\markup {Vlc.} r
+	\voiceOne \stemDown f'4^\markup {Vlc.} r
 	r r8 f
 	a4 r 
-	g r8 g, \oneVoice
+	g r8 g, \oneVoice \stemNeutral
 	s2*138
 	% bars 163 - 165
-	\voiceOne <g e'>8^\markup {Vlc.} r g,!(^\p^\arco ais
-	cis^\< e g! ais
+	\oneVoice <g e'>8^\markup {Vlc.} r g,!(^\p^\arco ais
+	cis\< e g! ais
 	cis\! e) r4 \oneVoice
 	s2*61
 	% bar 227 - 228
-	\voiceOne \clef treble \ottava #1 g''2(^\markup {Viol.I.}
+	\oneVoice \clef treble \ottava #1 \noteHeadEsw #'(-1 . 0) g''2(-\offset X-offset 0.5 ^\markup {Viol.I.} \revertNoteHeadEsw
 	a4.. b16) \ottava #0 \clef bass \oneVoice
 	s2*160
 	% bars 389 - 392
-	\voiceOne d,,,4->(^\mf^\markup {Fg.} f16 e d8)
+	\oneVoice d,,,4->(-\offset X-offset -2 ^\mf^\markup {Fg.} f16 e d8)
 	e4(-> g16 f e8)
 	d-. g4(-> f8~
 	f e4 c8) \oneVoice
@@ -4020,7 +4020,7 @@ cueVoiceContrabassoMvtII = \relative c {
 cueVoiceContrabassoMvtIII = \relative c {
 	s4.*16
 	% bar 17
-	<>^\markup {Fl.Cl.}
+	<>-\offset X-offset -3 ^\markup {Fl.Cl.}
 	s4.*10
 	% bar 27
 	<>^\markup {Archi}
@@ -4041,7 +4041,7 @@ cueVoiceContrabassoMvtIII = \relative c {
 	<>^\markup {Legni}
 	s4.*6
 	% bar 90
-	\voiceOne b'8^\p^\pizz^\markup {Vlc.} fis b \oneVoice
+	\voiceOne b'8-\offset X-offset -1 ^\p^\pizz^\markup {Vlc.} fis b \oneVoice
 	s4.*1
 	% bar 92
 	\voiceOne b,8^\pp fis b \oneVoice
@@ -4050,7 +4050,7 @@ cueVoiceContrabassoMvtIII = \relative c {
 	<>^\markup {Fg.}
 	s4.*5
 	% bars 99 - 101
-	\voiceOne r8^\markup {Vlc.} e'^\pizz e,
+	\voiceOne r8-\offset X-offset -2.3 ^\markup {Vlc.} e'^\pizz e,
 	e' e, r
 	r e' e, \oneVoice
 	s4.*50
@@ -4066,7 +4066,7 @@ cueVoiceContrabassoMvtIII = \relative c {
 cueVoiceContrabassoMvtIV = \relative c {
 	s1*5 s2*1 s1*28
 	% bars 35 - 38
-	\voiceOne r4 bes-.^\p^\markup {Vlc.} fis-. g-.
+	\oneVoice r4 bes-.^\p^\markup {Vlc.} fis-. g-.
 	a-. bes-. d-. e-.
 	fis-. bes-. g-. a-.
 	bes-. d-. e-. fis-. \oneVoice

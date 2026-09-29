@@ -9,13 +9,13 @@ musicContrabassoMvtIII = \relative c {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*15
+	\mmrLength #30 R4.*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	R4.\fermata \section
+	\once \ni R4.\fermata \section
 	\time 3/8 R4.*7
 % Bars 21 to 25
 	
@@ -76,8 +76,8 @@ musicContrabassoMvtIII = \relative c {
 	\ni \mmrPos #-4 R4. \no
 % Bars 91 to 95
 	R4.
-	\ni \mmrPos #-7 R4. \no
-	e4\fp^\arco r8
+	\ni \mmrPos #-8 R4. \no
+	e4-\tweak extra-offset #'(0.5 . 0.6) \fp^\arco r8
 	R4.*5
 	
 % Bars 96 to 100
@@ -90,11 +90,11 @@ musicContrabassoMvtIII = \relative c {
 	\mmrPos #-4 R \no
 	e'4(->\f b16 dis
 	e8)-\pocoapococresc b-. e-.
-	fis-. b,-. fis'-.
+	\stemUp fis-. b,-. fis'-. \stemNeutral
 	g16(-> fis e dis e8)
 % Bars 106 to 110
 	a8-.\f c16(\fz b c a)
-	b8-.-\crescmarkup d16(\fz-> cis d b)
+	b8-. d16(-\fzcresc-> cis d b)
 	c8-. e16(->\fz dis e c)
 	d!8-.\f f16( e f e)
 	d8-.\< f16( e f e)
@@ -152,7 +152,7 @@ musicContrabassoMvtIII = \relative c {
 	g8\p^\pizz r r
 	c r r
 % Bars 161 to 165
-	f,-\dimmarkup r r
+	f,-\tweak extra-offset #'(0.7 . 0.7) -\dimmarkup r r
 	bes\pp r r \mark \default
 	R4.*2
 	
@@ -168,20 +168,20 @@ musicContrabassoMvtIII = \relative c {
 	
 % Bars 181 to 185
 	
-	f8\ff^\brackM\arco r r
+	f8\ff-\offset X-offset -1.5 ^\brackM\arco r r \markCoda
 	\startVoltaI bes r r
-	R4.*11
+	R4.*7
 % Bars 186 to 190
 	
 % Bars 191 to 195
+	\mmrLength #14 R4.*4
 	
 	
-	
-	\section
-	\startVoltaII bes8\ff r r \endVolta \section
+	\tweak direction #-1 \textEndMark \attaccatrio \section
+	\startVoltaII bes8\ff r r \offset X-offset #1 \tweak direction #-1 \textEndMark \finemarkup \endVolta \section \break
 % Bars 196 to 200
 	\repeat volta 2 {
-		\sectionLabel "TRIO" \key des \major \time 3/8 R4.*3
+		\tempoXoffset #3 \removeTimeSignatureEoL \sectionLabel "TRIO" \key des \major \time 3/8 R4.*3
 		
 		
 		r8. aes16\brack\p-. aes8-.
@@ -248,7 +248,7 @@ musicContrabassoMvtIII = \relative c {
 		R4.*3
 		
 		\mark \default
-		aes,8\fz\> e4->\!
+		\hairpinShorten #'(-0.5 . -1) aes,8\fz\> e4->\!
 		f4->-\pbrackdim g8
 % Bars 256 to 260
 		aes8\pp e4->
@@ -331,7 +331,7 @@ musicContrabassoMvtIII = \relative c {
 	r8. f16\ff f8
 % Bars 321 to 324
 	f8 r r
-	R4.*3
+	\mmrLength #15 R4.*3
 	
-	\section \key bes \major s8
+	\textMarkAlignKeySignature \tweak direction #-1 \textEndMark \dacapoallegroscherzan_dosinalsegnopoifine \section \key bes \major s8
 }

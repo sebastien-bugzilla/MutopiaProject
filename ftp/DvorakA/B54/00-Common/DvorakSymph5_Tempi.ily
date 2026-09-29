@@ -209,17 +209,9 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt2 : bar 84.66 (rounded to 84)
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(      
-		       
-		      
-		 contrabasso) {
-		\tempo \markup {
-			\with-color "red" \italic \normal-weight "stringendo"
-		}
-	}
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoII
 		cornoI cornoIII trombeI trombeII trombonoI trombonoII trombonoIII
-		timpani triangolo violinoII violoncello) {
+		timpani triangolo violinoII violoncello contrabasso) {
 		\tempo \markup {
 			\italic \normal-weight "stringendo"
 		}
@@ -266,17 +258,9 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt2 : bar 124.66 (rounded to 124)
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(      
-		       
-		      
-		 contrabasso) {
-		\tempo \markup {
-			\with-color "red" \italic \normal-weight "ritard."
-		}
-	}
 	\tag #'(flautoI oboeI oboeII clarinettoI fagottoI fagottoII cornoI cornoII
 		cornoIII cornoIV trombonoI trombonoII trombonoIII triangolo violinoI
-		violinoII viola violoncello) {
+		violinoII viola violoncello contrabasso) {
 		\tempo \markup {
 			\italic \normal-weight "ritard."
 		}
@@ -302,17 +286,10 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt2 : bar 141.66 (rounded to 141)
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(      
-		       
-		      
-		 contrabasso) {
-		\tempo \markup {
-			\with-color "red" \italic \normal-weight "ritard."
-		}
-	}
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI
 		fagottoII cornoI cornoIII trombeI trombeII trombonoI trombonoII 
-		trombonoIII timpani triangolo violinoI violinoII viola violoncello) {
+		trombonoIII timpani triangolo violinoI violinoII viola violoncello
+		contrabasso) {
 		\tempo \markup {
 			\italic \normal-weight "ritard."
 		}
@@ -344,11 +321,11 @@ tempiPartMvtIII = {
 	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV   
 		      
-		violoncello contrabasso) {
+		violoncello ) {
 		\tempo "Andante con moto, quasi l'istesso Tempo"
 	}
 	\tag #'(trombeI trombeII trombonoI trombonoII trombonoIII timpani triangolo
-		violinoI violinoII viola) {
+		violinoI violinoII viola contrabasso) {
 		\tempo \markup {
 			\column { \lower #1.5 
 				"Andante con moto," "quasi l'istesso Tempo"
