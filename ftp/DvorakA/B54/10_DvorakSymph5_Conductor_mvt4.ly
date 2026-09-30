@@ -68,9 +68,6 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\displayFilterVoice
-%					}
 					\new Voice {
 						\formatConductorMvtIV
 					}
@@ -80,23 +77,19 @@
 					\new Voice {
 						\timeMvtIV \nameStaffIMvtIV
 						\partCombine \musicFlautoIMvtIV \musicFlautoIIMvtIV
-%						\musicFlautoIIMvtIV
 					}
 				>>
 				\new Staff {
 					\timeMvtIV \nameStaffIIMvtIV
 					\partCombine \musicOboeIMvtIV \musicOboeIIMvtIV
-%					\musicOboeIIMvtIV
 				}
 				\new Staff {
 					\timeMvtIV \nameStaffIIIMvtIV
 					\partCombine \musicClarinettoIMvtIV \musicClarinettoIIMvtIV
-%					\musicClarinettoIIMvtIV
 				}
 				\new Staff {
 					\timeMvtIV \nameStaffIVMvtIV
 					\partCombine \musicFagottoIMvtIV \musicFagottoIIMvtIV
-%					\musicFagottoIIMvtIV
 				}
 			>>
 			\new StaffGroup <<
@@ -104,24 +97,20 @@
 					\new Staff {
 						\timeMvtIV \nameStaffVMvtIV
 						\partCombine \musicCornoIMvtIV \musicCornoIIMvtIV
-%						\musicCornoIIMvtIV 
 					}
 					\new Staff {
 						\timeMvtIV \nameStaffVIMvtIV
 						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
-%						\musicCornoIVMvtIV
 					}
 				>>
 				\new Staff {
 					\timeMvtIV \nameStaffVIIMvtIV
 					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
-%					\musicTrombeIIMvtIV 
 				}
 				\new GrandStaff \with { \nameGrandStaffIIMvtIV \consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtIV \nameStaffVIIIMvtIV
 						\partCombine \musicTrombonoIMvtIV \musicTrombonoIIMvtIV
-%						\musicTrombonoIIMvtIV 
 					}
 					\new Staff {
 						\timeMvtIV \nameStaffIXMvtIV \musicTrombonoIIIMvtIV
@@ -155,7 +144,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-%			system-count = 74
 		}
 	}
 }
