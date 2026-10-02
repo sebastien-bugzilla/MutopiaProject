@@ -4,10 +4,11 @@
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
-%  Source             : Berlin N. Simrock, 1888. Plate 8215.
+%  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
+%                       1957. Plate H 2111.
 %  Type of score      : Score conductor mvt II
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Thursday 10th August 2023, 10:40
+%  date of initiation : Wednesday 30th September 2026, 23:23:45
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -22,26 +23,26 @@
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Format_Cond_Mvt02.ily"
-\include "./02-Mvt2/m02_v01_music_FloteI_C.ily"
-\include "./02-Mvt2/m02_v02_music_FloteII_C.ily"
+\include "./02-Mvt2/m02_v01_music_FlautoI_C.ily"
+\include "./02-Mvt2/m02_v02_music_FlautoII_C.ily"
 \include "./02-Mvt2/m02_v03_music_OboeI_C.ily"
 \include "./02-Mvt2/m02_v04_music_OboeII_C.ily"
-\include "./02-Mvt2/m02_v05_music_KlarinetteI_C.ily"
-\include "./02-Mvt2/m02_v06_music_KlarinetteII_C.ily"
-\include "./02-Mvt2/m02_v07_music_FagottI_C.ily"
-\include "./02-Mvt2/m02_v08_music_FagottII_C.ily"
-\include "./02-Mvt2/m02_v09_music_HornI_C.ily"
-\include "./02-Mvt2/m02_v10_music_HornII_C.ily"
-\include "./02-Mvt2/m02_v11_music_HornIII_C.ily"
-\include "./02-Mvt2/m02_v12_music_HornIV_C.ily"
-\include "./02-Mvt2/m02_v13_music_TrompeteI_C.ily"
-\include "./02-Mvt2/m02_v14_music_TrompeteII_C.ily"
-\include "./02-Mvt2/m02_v19_music_Pauken_C.ily"
-\include "./02-Mvt2/m02_v20_music_ViolinI_C.ily"
-\include "./02-Mvt2/m02_v21_music_ViolinII_C.ily"
-\include "./02-Mvt2/m02_v22_music_Bratsche_C.ily"
+\include "./02-Mvt2/m02_v05_music_ClarinettoI_C.ily"
+\include "./02-Mvt2/m02_v06_music_ClarinettoII_C.ily"
+\include "./02-Mvt2/m02_v07_music_FagottoI_C.ily"
+\include "./02-Mvt2/m02_v08_music_FagottoII_C.ily"
+\include "./02-Mvt2/m02_v09_music_CornoI_C.ily"
+\include "./02-Mvt2/m02_v10_music_CornoII_C.ily"
+\include "./02-Mvt2/m02_v11_music_CornoIII_C.ily"
+\include "./02-Mvt2/m02_v12_music_CornoIV_C.ily"
+\include "./02-Mvt2/m02_v13_music_TrombeI_C.ily"
+\include "./02-Mvt2/m02_v14_music_TrombeII_C.ily"
+\include "./02-Mvt2/m02_v19_music_Timpani_C.ily"
+\include "./02-Mvt2/m02_v20_music_ViolinoI_C.ily"
+\include "./02-Mvt2/m02_v21_music_ViolinoII_C.ily"
+\include "./02-Mvt2/m02_v22_music_Viola_C.ily"
 \include "./02-Mvt2/m02_v23_music_Violoncello_C.ily"
-\include "./02-Mvt2/m02_v24_music_Kontrabass_C.ily"
+\include "./02-Mvt2/m02_v24_music_Contrabasso_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -72,7 +73,7 @@
 					}
 					\new Voice {
 						\timeMvtII \nameStaffIMvtII
-						\partCombine \musicFloteIMvtII \musicFloteIIMvtII
+						\partCombine \musicFlautoIMvtII \musicFlautoIIMvtII
 					}
 				>>
 				\new Staff {
@@ -81,52 +82,50 @@
 				}
 				\new Staff {
 					\timeMvtII \nameStaffIIIMvtII
-					\partCombine \musicKlarinetteIMvtII \musicKlarinetteIIMvtII
+					\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII
 				}
 				\new Staff {
 					\timeMvtII \nameStaffIVMvtII
-					\partCombine \musicFagottIMvtII \musicFagottIIMvtII
+					\partCombine \musicFagottoIMvtII \musicFagottoIIMvtII
 				}
 			>>
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
 					\new Staff {
 						\timeMvtII \nameStaffVMvtII
-						\partCombine \musicHornIMvtII \musicHornIIMvtII
+						\partCombine \musicCornoIMvtII \musicCornoIIMvtII
 					}
 					\new Staff {
 						\timeMvtII \nameStaffVIMvtII
-						\partCombine \musicHornIIIMvtII \musicHornIVMvtII
+						\partCombine \musicCornoIIIMvtII \musicCornoIVMvtII
 					}
 				>>
 				\new Staff {
 					\timeMvtII \nameStaffVIIMvtII
-					\partCombine \musicTrompeteIMvtII \musicTrompeteIIMvtII
+					\partCombine \musicTrombeIMvtII \musicTrombeIIMvtII
 				}
 				\new Staff {
-					\timeMvtII \nameStaffVIIIMvtII \musicPaukenMvtII
+					\timeMvtII \nameStaffVIIIMvtII \musicTimpaniMvtII
 				}
 			>>
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
 					\new Staff {
-						\timeMvtII \nameStaffIXMvtII \musicViolinIMvtII
+						\timeMvtII \nameStaffIXMvtII \musicViolinoIMvtII
 					}
 					\new Staff {
-						\timeMvtII \nameStaffXMvtII \musicViolinIIMvtII
+						\timeMvtII \nameStaffXMvtII \musicViolinoIIMvtII
 					}
 				>>
 				\new Staff {
-					\timeMvtII \nameStaffXIMvtII \musicBratscheMvtII
+					\timeMvtII \nameStaffXIMvtII \musicViolaMvtII
 				}
-				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
-					\new Staff {
-						\timeMvtII \nameStaffXIIMvtII \musicVioloncelloMvtII
-					}
-					\new Staff {
-						\timeMvtII \nameStaffXIIIMvtII \musicKontrabassMvtII
-					}
-				>>
+				\new Staff {
+					\timeMvtII \nameStaffXIIMvtII \musicVioloncelloMvtII
+				}
+				\new Staff {
+					\timeMvtII \nameStaffXIIIMvtII \musicContrabassoMvtII
+				}
 			>>
 		>>
 		\header {

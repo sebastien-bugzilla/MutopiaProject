@@ -1,21 +1,25 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                          P A P E R   S E C T I O N                          #
 %###############################################################################
 \paper {
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
-	left-margin = 16 \mm
+	left-margin = 20 \mm
 %	first-page-number = 0
 %	annotate-spacing = ##t
 %	indent = 0
 	slashSeparator = \markup {
 		\center-align \hspace #-6
-		\vcenter \combine
+		\vcenter \combine 
 		\beam #3.3 #0.5 #0.54
 		\raise #1.24 \beam #3.3 #0.5 #0.54
+		\hspace #125 
+		\combine
+		\lower #1.24 \beam #3.3 #0.5 #0.54
+		\raise #0 \beam #3.3 #0.5 #0.54 
 	}
 	system-separator-markup = \slashSeparator
 	bookTitleMarkup = \markup {
