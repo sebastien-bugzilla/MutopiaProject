@@ -1,6 +1,6 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
@@ -139,6 +139,27 @@ flote = {
 
 
 % functions
+brack = #(define-event-function 
+	(dyn) (ly:event?)
+	(make-dynamic-script
+	#{
+		\markup {
+			\bracket \with-true-dimensions #(ly:music-property dyn 'text)
+		}
+	#}
+	)
+)
+
+#(define-markup-command (bracketMarkup layout props text) (markup?)
+	(interpret-markup layout props
+		#{
+			\markup \concat { 
+				\bracket \with-true-dimensions #text
+			}
+		#}
+	)
+)
+brackM = -\markup \bracketMarkup \etc
 
 mmrPos = #(define-music-function
 	(position)

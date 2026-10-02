@@ -15,9 +15,9 @@ tempiMvtI = {
 	s2.*22
 	\tempo \markup {  % bar 23
 		\concat {
-			"un poco più animato. ("
+			"un poco più animato. "
 			\smaller \general-align #Y #DOWN \note {4} #0.75
-			" = 144.)"
+			" = 144"
 		}
 	}
 	s2.*26

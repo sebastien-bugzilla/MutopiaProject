@@ -1,4 +1,4 @@
-    155     417    5105 10_DvorakSymph6_Conductor_mvt1.ly
+    155     479    5167 10_DvorakSymph6_Conductor_mvt1.ly
     141     376    4647 10_DvorakSymph6_Conductor_mvt2.ly
     147     389    4872 10_DvorakSymph6_Conductor_mvt3.ly
     155     410    5154 10_DvorakSymph6_Conductor_mvt4.ly
@@ -47,15 +47,15 @@
      65     280    2523 00-Common/DvorakSymph6_NameGrandStaff.ily
     505    1572   11777 00-Common/DvorakSymph6_NameStaff.ily
     667    2308   19026 00-Common/DvorakSymph6_NameVoice.ily
-     70     194    1698 00-Common/DvorakSymph6_PaperConductors.ily
+     70     205    1709 00-Common/DvorakSymph6_PaperConductors.ily
      60     163    1442 00-Common/DvorakSymph6_PaperParts.ily
-    476    1339   11521 00-Common/DvorakSymph6_Shortcuts.ily
-   1202    3750   28534 00-Common/DvorakSymph6_Tempi.ily
+    497    1382   11911 00-Common/DvorakSymph6_Shortcuts.ily
+   1202    3750   28531 00-Common/DvorakSymph6_Tempi.ily
      33     166    1171 00-Common/DvorakSymph6_timeMvt.ily
-    576    1811    9718 01-Mvt1/m01_v01_music_FlautoI_C.ily
-    575    1675    8085 01-Mvt1/m01_v01_music_FlautoI.ily
-    547    1497    7309 01-Mvt1/m01_v02_music_FlautoII_C.ily
-    518    1454    6984 01-Mvt1/m01_v02_music_FlautoII.ily
+    691    1809    9718 01-Mvt1/m01_v01_music_FlautoI_C.ily
+    691    1677    8125 01-Mvt1/m01_v01_music_FlautoI.ily
+    691    1494    7382 01-Mvt1/m01_v02_music_FlautoII_C.ily
+    691    1451    7047 01-Mvt1/m01_v02_music_FlautoII.ily
     645    2064   11105 01-Mvt1/m01_v03_music_OboeI_C.ily
     645    1944    9414 01-Mvt1/m01_v03_music_OboeI.ily
     612    1738    8164 01-Mvt1/m01_v04_music_OboeII_C.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2405   10460 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2408   10495 04-Mvt4/m04_v24_music_Contrabasso.ily
- 108321  335109 1938553 total
+ 108890  335219 1939189 total
