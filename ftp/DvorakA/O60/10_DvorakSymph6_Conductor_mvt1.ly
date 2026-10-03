@@ -88,10 +88,10 @@
 					\timeMvtI \nameStaffIIIMvtI
 					\partCombine \musicClarinettoIMvtI \musicClarinettoIIMvtI
 				}
-%				\new Staff {
-%					\timeMvtI \nameStaffIVMvtI
-%					\partCombine \musicFagottoIMvtI \musicFagottoIIMvtI
-%				}
+				\new Staff {
+					\timeMvtI \nameStaffIVMvtI
+					\partCombine \musicFagottoIMvtI \musicFagottoIIMvtI
+				}
 			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIMvtI } <<

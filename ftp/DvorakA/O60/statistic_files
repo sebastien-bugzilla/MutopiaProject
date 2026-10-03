@@ -1,4 +1,4 @@
-    155     469    5157 10_DvorakSymph6_Conductor_mvt1.ly
+    155     465    5153 10_DvorakSymph6_Conductor_mvt1.ly
     141     376    4647 10_DvorakSymph6_Conductor_mvt2.ly
     147     389    4872 10_DvorakSymph6_Conductor_mvt3.ly
     155     410    5154 10_DvorakSymph6_Conductor_mvt4.ly
@@ -42,7 +42,7 @@
     742    1709   21808 00-Common/DvorakSymph6_Format_Part14_Bassi.ily
     226    1330   20611 00-Common/DvorakSymph6_Format_temp.ily
      32     275    1781 00-Common/DvorakSymph6_Header.ily
-     56     200    2072 00-Common/DvorakSymph6_LayoutConductors.ily
+     56     203    2080 00-Common/DvorakSymph6_LayoutConductors.ily
      64     232    2200 00-Common/DvorakSymph6_LayoutParts.ily
      65     280    2523 00-Common/DvorakSymph6_NameGrandStaff.ily
     505    1572   11777 00-Common/DvorakSymph6_NameStaff.ily
@@ -64,10 +64,10 @@
     691    1805    8630 01-Mvt1/m01_v05_music_ClarinettoI.ily
     691    1758    8338 01-Mvt1/m01_v06_music_ClarinettoII_C.ily
     691    1654    7832 01-Mvt1/m01_v06_music_ClarinettoII.ily
-    631    2065   11183 01-Mvt1/m01_v07_music_FagottoI_C.ily
-    636    1949    9491 01-Mvt1/m01_v07_music_FagottoI.ily
-    630    1878    8697 01-Mvt1/m01_v08_music_FagottoII_C.ily
-    625    1930    9488 01-Mvt1/m01_v08_music_FagottoII.ily
+    691    2017   10707 01-Mvt1/m01_v07_music_FagottoI_C.ily
+    691    1946    9488 01-Mvt1/m01_v07_music_FagottoI.ily
+    691    1869    8816 01-Mvt1/m01_v08_music_FagottoII_C.ily
+    691    1927    9490 01-Mvt1/m01_v08_music_FagottoII.ily
     533    1482    7348 01-Mvt1/m01_v09_music_CornoI_C.ily
     529    1449    6866 01-Mvt1/m01_v09_music_CornoI.ily
     539    1440    6728 01-Mvt1/m01_v10_music_CornoII_C.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2405   10460 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2408   10495 04-Mvt4/m04_v24_music_Contrabasso.ily
- 109532  335106 1939022 total
+ 109774  335042 1938668 total

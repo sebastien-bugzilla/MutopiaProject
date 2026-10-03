@@ -1,16 +1,16 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFagottIIMvtI = \relative c {
+musicFagottoIIMvtI = \relative c {
 	\clef bass
 	\key d \major
 %	\transposition a
 % Bars 1 to 5
 	R2.*2
-	
+
 	\repeat volta 2 {
 		r4 r a(\p
 		d2) r4
@@ -38,12 +38,13 @@ musicFagottIIMvtI = \relative c {
 		eis
 		fis8)\pp r r4 r
 		R2.*3
+
 % Bars 26 to 30
-		
+
 		fis,8\f r g4.(\fz fis8)
 		e-. fis-. g-. g-. fis-. e-. 
 		dis4-. b-. r
-		e8_\rf-. fis-. g-. g-. fis-. e-. 
+		e8-\rinforz-. fis-. g-. g-. fis-. e-. 
 % Bars 31 to 35
 		a4-. fis-. r
 		g8-. a-. b-. b-. a-. g-. 
@@ -87,9 +88,9 @@ musicFagottIIMvtI = \relative c {
 		b8( a g4) r
 		R2.*4
 % Bars 66 to 70
-		
-		
-		
+
+
+
 		g4-.\f r g-.
 		r g-. r
 % Bars 71 to 75
@@ -102,14 +103,16 @@ musicFagottIIMvtI = \relative c {
 		e 
 		cis!)
 		R2.*5
+
+
 % Bars 81 to 85
-		
-		
+
+
 		fis,4\pp-. fis'-. r
 		fis,-. fis'-. r
 		R2.*2
 % Bars 86 to 90
-		
+
 		fis,4\pp r r
 		fis r8 dis'\<-. e-. fis-. 
 		g-. fis-. e-. d!-. cis-. fis-.\!
@@ -125,7 +128,7 @@ musicFagottIIMvtI = \relative c {
 		c,,2( e4)
 		g r r 
 		g2\fz b,8-. cis!-.
-		d4 r r 
+		d4-. r r 
 % Bars 101 to 105
 		d2\fz e8-. eis-.
 		fis-. r r4 r
@@ -133,7 +136,7 @@ musicFagottIIMvtI = \relative c {
 		fis8-.\p r r4 r
 		R2.*3
 % Bars 106 to 110
-		
+
 		\mark \default
 		ais4-.\p fis-. r
 		r b-. b-.
@@ -152,9 +155,13 @@ musicFagottIIMvtI = \relative c {
 		b,\p r r
 % Bars 121 to 125
 		R2.*7
+
+
+
+
 % Bars 126 to 130
-		
-		
+
+
 		b4--\p\< b-- b--
 		b--\! b--\> ees--\!
 		aes,\pp r bes
@@ -172,8 +179,8 @@ musicFagottIIMvtI = \relative c {
 		ges\f r r4 g(->
 % Bars 141 to 145
 		fis!8) r r4 g4(->
-		fis8) r r4 e-.
-		r cis-. fis-.
+		fis8) r r4 e-.\<
+		r cis-. fis-.\!
 		b,8-. dis'( e fis) e4->(
 		fis8-.) dis( e fis) e4->(
 % Bars 146 to 150
@@ -208,8 +215,12 @@ musicFagottIIMvtI = \relative c {
 		b r r
 % Bars 171 to 175
 		R2.*6
+
+
+
+
 % Bars 176 to 180
-		
+
 	}
 	\alternative {
 		{
@@ -229,397 +240,452 @@ musicFagottIIMvtI = \relative c {
 			d~
 			d4 r r
 			R2.
+% Bars 191 to 195
 		}
 		{
-% Bars 177 to 180
 			R2.*5
-% Bars 181 to 185
-			
+
+
+
+
+% Bars 196 to 200
 		}
 	}
 	R2.*18
-	
-	
-	
-% Bars 186 to 190
-	
-% Bars 191 to 195
-	
-% Bars 196 to 200
-	
-	
-	
-	
-	\ni \clef treble \voiceTwo R2.
+
+
+
+
 % Bars 201 to 205
+
+
+
+
+
+% Bars 206 to 210
+
+
+
+
+
+% Bars 211 to 215
+
+
+
+	\ni \clef treble \voiceTwo R2.
 	R \no \oneVoice 
-	\clef bass f2(\p\> e8 d)\!
+% Bars 216 to 220
+	\clef bass f2(->\p\> e8 d)\!
 	d2(\< c8 b)\!
 	b2 r4
 	r f'(\mf e8 d)
-% Bars 206 to 210
-	d2.->~
-	d2( c8_\dimmarkup b)
-	b2.->~
-	b2( a8 g)
-	g2.~->
-% Bars 211 to 215
-	g4( f8 e) e4~
-	e2( d8 c)
+	d2.->(~
+% Bars 221 to 225
+	d2 c8_\dimmarkup b)
+	b2.->(~
+	b2 a8 g)
+	g2.(~->
+	g4 f8 e) e4(~
+% Bars 226 to 230
+	e2 d8 c)
 	c4\pp( g c
 	g c g \mark \default
 	c) r r
-% Bars 216 to 220
 	R2.*7
-% Bars 221 to 225
-	
-	
+% Bars 231 to 235
+
+
+
+
+
+% Bars 236 to 240
+
 	e4(\p f g)
 	r g( f8 e)
 	e4 r r
-% Bars 226 to 230
 	R2.*2
-	
+% Bars 241 to 245
+
 	r4 gis!(\p fis8 eis)
 	eis4 r r
 	R2.
-% Bars 231 to 235
 	fis4(\p g! a)
+% Bars 246 to 250
 	r a( g!8 fis)
 	fis4 r r
 	R2.
 	g4(_\crescmarkup aes bes)
-% Bars 236 to 240
 	r4 bes( aes8 g)
+% Bars 251 to 255
 	g4 r r
 	R2.
 	a,2.\f->
 	b4.->_\marc b8-! cis!-! d-!
-% Bars 241 to 245
 	cis4-> r8 a'-! a-! e-!
+% Bars 256 to 260
 	f-. d16( e d8) b-. b-. d-.
 	cis2.(
 	d_\dimmarkup
 	e
-% Bars 246 to 250
 	fis\p
+% Bars 261 to 265
 	g4) r r
 	R2.*2
-	
+
 	<<d2.( {\hairpinShorten #'(-0.5 . -1) s8-\offset X-offset -1 \p\< s s s \hairpinShorten #'(1 . 0) s\> s} >>
-% Bars 251 to 255
 	g4)\! r r
+% Bars 266 to 270
 	R2.*2
-	
+
 	d2.\p
 	g2(\< f4)\!
-% Bars 256 to 260
 	\after 8*5 \! e2.\>
+% Bars 271 to 275
 	a4 r r
 	R2.*2
-	
+
 	<<e2.( {\hairpinShorten #'(-0.5 . -1) s8-\offset X-offset -1 \pp\< s s s \hairpinShorten #'(1 . 0) s\> s}>>
-% Bars 261 to 265
 	a4)\! r r
+% Bars 276 to 280
 	R2.*2
-	
+
 	e2.(\< \mark \default
 	dis4\f) r8 dis,-. e-. fis-.
-% Bars 266 to 270
 	b,2-> b'4-.
+% Bars 281 to 285
 	g!4-> r8 e'-. fis-. g-.
 	g4-> r8 e-. fis-. g-.
 	dis4 r r
 	R2.
-% Bars 271 to 275
 	b'4\f r8 e,-. fis-. gis-.
+% Bars 286 to 290
 	e2-> d'!4-.
 	cis r r
 	R2.*4
-% Bars 276 to 280
-	
-	
+
+
+% Bars 291 to 295
+
 	g'8-.\f d16( e d8) g,-. g-. g'-.
 	e,2.\ff~
 	e~
-% Bars 281 to 285
 	e
+% Bars 296 to 300
 	ees\fz~
 	ees~
 	ees
 	d\fz~ 
-% Bars 286 to 290
 	d~
+% Bars 301 to 305
 	d
 	c\fz~
 	c~
 	c
-% Bars 291 to 295
 	b\fz~
+% Bars 306 to 310
 	b4 r r
 	R2.*14
-% Bars 296 to 300
-	
-% Bars 301 to 305
-	
-% Bars 306 to 310
-	
+
+
+
+% Bars 311 to 315
+
+
+
+
+
+% Bars 316 to 320
+
+
+
+
+
+% Bars 321 to 325
 	eis2.\ff~
 	eis~
 	eis~
 	eis
-% Bars 311 to 315
 	e!8 r cis'2~-^
+% Bars 326 to 330
 	cis2.~
 	cis~
 	cis2 cis4-. \mark \default
 	d-. r r
-% Bars 316 to 320
 	R2.*5
-% Bars 321 to 325
+% Bars 331 to 335
+
+
+
+
 	r4 r \hairpinShorten #'(-0.5 . -0.5) d,-\offset X-offset -1.5 \p\<
+% Bars 336 to 340
 	b2.\fz\>(
 	e2)\! b4(\pp
 	e,2) r4
 	r r bes'(
-% Bars 326 to 330
 	e2) r4 
+% Bars 341 to 345
 	r r a,(
 	e2\< dis4
 	e2 g4\!)~
 	g(\> fis\! d\fp~
-% Bars 331 to 335
 	\hairpinShorten #'(0 . -0.5) \after 8*5 \! d2.)\<
+% Bars 346 to 350
 	g2.\f
 	b2.-\offset X-offset -1.5 _\dimmarkup
 	\shape #'((0 . 0.5)(0 . -0.5)(0 . -0.5)(0 . 0.5)) Slur e4\p\>( d' cis 
 	b cis b\!
-% Bars 336 to 340
 	fis8)\pp r r4 r
+% Bars 351 to 355
 	\mmrnDown R2.*3
-	
-	
+
+
 	fis,8-.\f r g4.\fz( fis8)
-% Bars 341 to 345
-	e!-. fis-. g-. g-. fis-. e-. 
+	e!-! fis-! g-! g-! fis-! e-! 
+% Bars 356 to 360
 	dis4-. b-. r
-	e8-. fis-. g-. g-. fis-. e-. 
-	a4-. fis-. r
-	g8-. a-. b-. b-. a-. g-. 
-% Bars 346 to 350
+	e8-! fis-! g-! g-! fis-! e-! 
+	a4-! fis-! r
+	g8-! a-! b-! b-! a-! g-! 
 	d'4_\fsempre-> g,-> r
+% Bars 361 to 365
 	d'2-> g,4->
 	d'-> d-> g,->
 	f'-> g,-> g'->
 	d-> g,-> r
-% Bars 351 to 355
 	d'2-> g,4->
+% Bars 366 to 370
 	d'-> d-> g,->
 	f'-> g,-> g'->
 	b,-. g'-.\fz g,-.
 	g'-.\fz e,-. g'-.\fz
-% Bars 356 to 360
 	ais,2\ff ais4~\fz
+% Bars 371 to 375
 	ais a2\fz
 	gis\fz g4~\fz
 	g fis2\fz \mark \default
 	f4-. r r
-% Bars 361 to 365
 	R2.*3
-	
-	
+% Bars 376 to 380
+
+
 	e''2.\pp~
 	e
-% Bars 366 to 370
 	d(
+% Bars 381 to 385
 	e4-.) r r
 	R2.*10
-% Bars 371 to 375
-	
-% Bars 376 to 380
-	
-	
+
+
+
+% Bars 386 to 390
+
+
+
+
+
+% Bars 391 to 395
+
 	r4 g,\mf r
 	r g_\crescmarkup r
 	g\f r r
-% Bars 381 to 385
 	g r r
+% Bars 396 to 400
 	bes8\<-. a-. g-. f-. e-. a-.\! 
 	d,4 r8 d'(\f cis c)
 	c( b) b( bes) a( g)
 	fis4 r8 d'-.\< e-. fis-.
-% Bars 386 to 390
 	g2\fz( fis8 e
+% Bars 401 to 405
 	d4) r r
 	g,,2.\fz(
 	bes4) r r
 	ees,2(\fz g4)
-% Bars 391 to 395
 	bes r r
+% Bars 406 to 410
 	bes,2\fz d8-. e!-.
 	f4-. r r
 	f2\fz g8-. gis-.
 	a-. r r4 r
-% Bars 396 to 400
 	a8-._\dimmarkup r r4 r
+% Bars 411 to 415
 	a8-.\p r r4 r
 	R2.*3
-	
+
 	\mark \default
-% Bars 401 to 405
 	cis4-.\p a-. r
+% Bars 416 to 420
 	r d-.\< d-.
 	e-.\! r c-.
 	r f-.\> f-.\!
 	g2.\p(
-% Bars 406 to 410
 	bes,)_\dimmarkup
+% Bars 421 to 425
 	ees\pp(
 	a,)~
 	a
 	gis~\<
-% Bars 411 to 415
 	gis
+% Bars 426 to 430
 	g!4(\! e\> a)\!
 	d\p r r
 	R2.*7
-% Bars 416 to 420
-	
-% Bars 421 to 425
+
+
+% Bars 431 to 435
+
+
+
+
 	d8\pp\< d d4 d8 d
+% Bars 436 to 440
 	d4\! d'(\> cis)\!
 	b\pp r cis,
 	dis r e
 	dis r b
-% Bars 426 to 430
 	b r b
+% Bars 441 to 445
 	b r b
 	b r b
 	b8 r r4 r
 	R2.
-% Bars 431 to 435
 	r4 e8-.\mf fis-. gis4->
+% Bars 446 to 450
 	gis8(\< a b bis cis b)\!
 	a-.\f r r4 bes->(
 	a8) r r4 bes->(
 	a8) r r4 g-.\<
-% Bars 436 to 440
 	r e-. e-.\!
+% Bars 451 to 455
 	d-. r ees->(
 	d8-.) r r4 ees->(
 	d8-.) r r4 r
 	R2.*5
-% Bars 441 to 445
-	
-	
-	
+
+% Bars 456 to 460
+
+
 	\mark \default
 	r4 r c-^\f
-% Bars 446 to 450
 	c-^ a8-. bes-. c4-^
+% Bars 461 to 465
 	r r c
 	c8( a) bes-. c-. fis,4
 	bes8( g) a-. bes-. e,4
 	a8(_\crescmarkup f) g-. a-. d,4~
-% Bars 451 to 455
 	d bes'8( g) a-. bes-.
+% Bars 466 to 470
 	bes,2-^ a'4
 	a\< a a\!
 	d,2.\ff
 	d'2-^ cis4-.
-% Bars 456 to 460
 	a8( fis) g-. a-. e4
+% Bars 471 to 475
 	d8-. fis-. a4-. g-.
 	fis2 e4
 	d8-. fis-. a4-. g-.
 	fis8-. a-. b4-. a-.
-% Bars 461 to 465
 	gis8-. b-. cis4-. b-.
+% Bars 476 to 480
 	ais8( cis ais'4) ais,8( cis
 	ais'4) ais,8( cis ais'4)
 	bes,8( d bes'4) bes,8( d
 	bes'4) bes,8( d bes'4)
-% Bars 466 to 470
 	a, r r
+% Bars 481 to 485
 	d'2\f-> cis4-.
 	b8-. g-. a-. b-. e,4->~
 	e fis-> d->
 	e8-. fis-. g-. cis,-. d-. e-. 
-% Bars 471 to 475
 	a,2.->~
+% Bars 486 to 490
 	a~
 	a~
 	a2 d,4->~
 	\startMeasureCount d2.~
-% Bars 476 to 480
 	d~
+% Bars 491 to 495
 	d~
 	d~
 	d~
 	d \stopMeasureCount 
-% Bars 481 to 485
 	d'4.\ff-> bes8-. cis!-. d-.
+% Bars 496 to 500
 	d4.-> bes8-. cis!-. d-.
 	d bes cis d g, a
 	bes e, fis g cis, d
 	d2.->~
-% Bars 486 to 490
 	d~
+% Bars 501 to 505
 	d~
 	d4 d d
 	d'4.\ff-^ cis-^
 	b8-. g-. a-. b-. e,4~
-% Bars 491 to 495
 	e-. a'4-. d-.
+% Bars 506 to 510
 	g,-. cis-. fis,-.
 	f4. r8 r4
 	f4. r8 r4 \mark #11
 	R2.*14
-% Bars 496 to 500
-	
-% Bars 501 to 505
-	
-% Bars 506 to 510
-	
-	
-	
+
+% Bars 511 to 515
+
+
+
+
+
+% Bars 516 to 520
+
+
+
+
+
+% Bars 521 to 525
+
+
 	r4 r e,\f-.
 	d_\marc-. fis-. a-.
-% Bars 511 to 515
 	d,-. fis-. a-. 
+% Bars 526 to 530
 	d,-. fis-. a-. 
 	d,-. fis-. a-. 
 	d, r r
 	R2.*2
-% Bars 516 to 520
-	
+
+% Bars 531 to 535
 	d4 r r
 	R2.
 	d4 r r
 	R2.
-% Bars 521 to 525
 	d4 r r
+% Bars 536 to 540
 	d2.\ff~
 	d~
 	d~\>
 	d~
-% Bars 526 to 530
 	d~\p
+% Bars 541 to 545
 	d~_\dimmarkup
 	d~
 	d~
 	d4 r r
-% Bars 531 to 535
 	R2.*1
+% Bars 546 to 550
 	\mmrLength #14 \mmrnDown R2.*11
-% Bars 536 to 540
-	
-% Bars 541 to 545
-	
-	
+
+
+
+
+% Bars 551 to 555
+
+
+
+
+
+% Bars 556 to 560
+
 	d''2-^\f cis4-.
 	a8-. fis-. g-. a-. e4
 	d8-. fis-. a4 a,->
-% Bar 546
 	d,-> r r \bar "|."
 }
