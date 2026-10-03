@@ -73,6 +73,8 @@ pdimD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim.
 pdolceD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce" ))
 pespressD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "espress." ))
 
+rinforz = \markup {\italic rinforz.}
+
 
 % tempo and expression
 
@@ -494,4 +496,6 @@ tremoloPosition = #(define-music-function
 		\once \override StemTremolo.Y-offset = #position
 	#}
 )
+
+marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
 
