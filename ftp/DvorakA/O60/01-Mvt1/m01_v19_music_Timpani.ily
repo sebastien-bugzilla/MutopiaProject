@@ -687,5 +687,5 @@ musicTimpaniMvtI = \relative c {
 	\ni \voiceTwo R2.
 	R \no
 	r4 r \oneVoice a->\f
-	d-> r r \bar "|."
+	d-> r r \fine
 }

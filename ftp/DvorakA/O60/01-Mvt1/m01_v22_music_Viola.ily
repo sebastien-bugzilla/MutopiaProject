@@ -1,10 +1,10 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicBratscheMvtI = \relative c {
+musicViolaMvtI = \relative c {
 	\clef alto
 	\key d \major
 %	\transposition a
@@ -356,7 +356,7 @@ musicBratscheMvtI = \relative c {
 	a8 a-. a2~
 % Bars 246 to 250
 	a8\p a-. a2
-	<g b>2.:32_\ppsubponticello
+	<g b>2.:32_\ppsulponticello
 	q:
 	q:
 	<< <d c'>: {\hairpinShorten #'(-3 . 2) s8\< s s \hairpinShorten #'(-2 . -0.5)  s\> s s\!} >>

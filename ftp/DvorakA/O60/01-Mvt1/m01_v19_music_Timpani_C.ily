@@ -687,5 +687,5 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	r4 r a->\f
-	d-> r r \bar "|."
+	d-> r r \fine
 }

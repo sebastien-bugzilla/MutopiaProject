@@ -49,7 +49,7 @@
     667    2308   19026 00-Common/DvorakSymph6_NameVoice.ily
      70     205    1709 00-Common/DvorakSymph6_PaperConductors.ily
      60     163    1442 00-Common/DvorakSymph6_PaperParts.ily
-    515    1394   12029 00-Common/DvorakSymph6_Shortcuts.ily
+    518    1415   12180 00-Common/DvorakSymph6_Shortcuts.ily
    1202    3750   28531 00-Common/DvorakSymph6_Tempi.ily
      33     166    1171 00-Common/DvorakSymph6_timeMvt.ily
     691    1809    9718 01-Mvt1/m01_v01_music_FlautoI_C.ily
@@ -88,12 +88,12 @@
     691    1075    5708 01-Mvt1/m01_v17_music_TrombonoIII.ily
     691     956    5022 01-Mvt1/m01_v18_music_Tuba_C.ily
     691    1051    5652 01-Mvt1/m01_v18_music_Tuba.ily
-    691     972    5368 01-Mvt1/m01_v19_music_Timpani_C.ily
-    691    1213    6812 01-Mvt1/m01_v19_music_Timpani.ily
-    669    2529   12637 01-Mvt1/m01_v20_music_ViolinoI_C.ily
-    675    2518   12652 01-Mvt1/m01_v20_music_ViolinoI.ily
-    662    2617   12793 01-Mvt1/m01_v21_music_ViolinoII_C.ily
-    664    2660   13180 01-Mvt1/m01_v21_music_ViolinoII.ily
+    691     971    5364 01-Mvt1/m01_v19_music_Timpani_C.ily
+    691    1212    6808 01-Mvt1/m01_v19_music_Timpani.ily
+    691    2525   12742 01-Mvt1/m01_v20_music_ViolinoI_C.ily
+    691    2514   12737 01-Mvt1/m01_v20_music_ViolinoI.ily
+    691    2617   12914 01-Mvt1/m01_v21_music_ViolinoII_C.ily
+    691    2649   13250 01-Mvt1/m01_v21_music_ViolinoII.ily
     732    2841   13995 01-Mvt1/m01_v22_music_Viola_C.ily
     735    2804   13856 01-Mvt1/m01_v22_music_Viola.ily
     689    2594   12943 01-Mvt1/m01_v23_music_Violoncello_Bassi.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2405   10460 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2408   10495 04-Mvt4/m04_v24_music_Contrabasso.ily
- 114831  334889 1946814 total
+ 114928  334889 1947338 total

@@ -118,9 +118,9 @@
 %						\partCombine \musicTrombonoIIIMvtI \musicTubaMvtI
 %					}
 %				>>
-				\new Staff {
-					\timeMvtI \nameStaffXMvtI \musicTimpaniMvtI
-				}
+%				\new Staff {
+%					\timeMvtI \nameStaffXMvtI \musicTimpaniMvtI
+%				}
 %			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtI } <<
@@ -131,9 +131,9 @@
 %						\timeMvtI \nameStaffXIIMvtI \musicViolinoIIMvtI
 %					}
 %				>>
-%				\new Staff {
-%					\timeMvtI \nameStaffXIIIMvtI \musicViolaMvtI
-%				}
+				\new Staff {
+					\timeMvtI \nameStaffXIIIMvtI \musicViolaMvtI
+				}
 %				\new Staff {
 %					\timeMvtI \nameStaffXIVMvtI \musicVioloncelloMvtI
 %				}

@@ -10,6 +10,7 @@
 ffgrandioso = \markup {\dynamic ff \italic grandioso}
 ffmarcatosempre = \markup {\dynamic ff \italic {marcato sempre}}
 ffmarc = \markup {\halign #0 \dynamic ff \italic marc.}
+ffmarcato = \markup {\halign #0 \dynamic ff \italic marcato}
 ffpesante = \markup {\dynamic ff \italic pesante}
 ffrinforz = \markup {\dynamic ff \italic rinforz.}
 ffgrandiosoD = #(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "grandioso"))
@@ -62,6 +63,7 @@ ppocoa-pococresc = \markup {
 ppdolce = \markup {\dynamic pp \italic dolce}
 ppespr = ^\markup {\dynamic pp \musicglyph "scripts.espr"}
 pplegg = \markup {\dynamic pp \italic legg.}
+ppleggiero = \markup {\dynamic pp \italic leggiero}
 ppsempre = \markup {\dynamic pp \italic sempre}
 ppsempremoltotranquillo = \markup {\dynamic pp \italic {sempre molto tranquillo}}
 ppsempre-moltotranquillo = \markup {
@@ -72,7 +74,7 @@ ppsempre-moltotranquillo = \markup {
 		\line { \italic "molto tranquillo"}
 	}
 }
-ppsubponticello = \markup {\dynamic pp \italic {sub ponticello}}
+ppsulponticello = \markup {\dynamic pp \italic {sul ponticello}}
 pptranquillo = \markup {\dynamic pp \italic tranquillo}
 
 
@@ -106,6 +108,7 @@ sempremarc = \markup {\italic {sempre marc.}}
 solo = \markup {Solo.}
 ten = \markup {\italic ten.}
 tranquillo = \markup {\italic tranquillo}
+leggiero = \markup {\italic leggiero}
 
 trio = {
 	\once \override Score.SectionLabel.break-align-symbols = #'(key-signature)
