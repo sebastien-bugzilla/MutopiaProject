@@ -1,10 +1,10 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrompeteIMvtI = \relative c'' {
+musicTrombeIMvtI = \relative c'' {
 	\clef treble
 	\key c \major
 	\transposition d
@@ -13,22 +13,42 @@ musicTrompeteIMvtI = \relative c'' {
 	
 	\repeat volta 2 {
 		\mmrnDown R2.*20
+	
+	
 % Bars 6 to 10
+	
+	
+	
+	
 	
 % Bars 11 to 15
 	
+	
+	
+	
+	
 % Bars 16 to 20
 	
+	
+	
+	
+	
 % Bars 21 to 25
-		
-		
+	
+	
 		\mmrnDown \mmrLength #15 R2.*11
+	
+	
 % Bars 26 to 30
 	
+	
+	
+	
+	
 % Bars 31 to 35
-		
-		
-		
+	
+	
+	
 		c8-.\f r c2\fz~
 		c2.~
 % Bars 36 to 40
@@ -69,50 +89,108 @@ musicTrompeteIMvtI = \relative c'' {
 		R2.*43
 % Bars 66 to 70
 	
+	
+	
+	
+	
 % Bars 71 to 75
+	
+	
+	
+	
 	
 % Bars 76 to 80
 	
+	
+	
+	
+	
 % Bars 81 to 85
+	
+	
+	
+	
 	
 % Bars 86 to 90
 	
+	
+	
+	
+	
 % Bars 91 to 95
+	
+	
+	
+	
 	
 % Bars 96 to 100
 	
+	
+	
+	
+	
 % Bars 101 to 105
 	
+	
+	
+	
+	
 % Bars 106 to 110
-		
+	
 		\mark \default
 		R2.*12
+	
+	
 % Bars 111 to 115
 	
+	
+	
+	
+	
 % Bars 116 to 120
-		
-		
-		
-		
+	
+	
+	
+	
 		\mmrLength #16 R2.*20
 % Bars 121 to 125
 	
+	
+	
+	
+	
 % Bars 126 to 130
+	
+	
+	
+	
 	
 % Bars 131 to 135
 	
+	
+	
+	
+	
 % Bars 136 to 140
-		
-		
-		
+	
+	
+	
 		\mark \default
 		R2.*12
 % Bars 141 to 145
 	
+	
+	
+	
+	
 % Bars 146 to 150
 	
+	
+	
+	
+	
 % Bars 151 to 155
-		
+	
 		\ni \voiceTwo R2.
 		R
 		R
@@ -121,7 +199,7 @@ musicTrompeteIMvtI = \relative c'' {
 		R
 		R
 		R \no \oneVoice 
-		r4 r e\f~
+		r4 r e->\f~
 		e\< e-> e->\!
 % Bars 161 to 165
 		\startMeasureCount e2.\ff
@@ -137,312 +215,477 @@ musicTrompeteIMvtI = \relative c'' {
 		e r r
 % Bars 171 to 175
 		R2.*6
+	
+	
+	
+	
 % Bars 176 to 180
-		
+	
 	}
 	\alternative {
 		{
 			R2.*14
-		
+	
+	
+	
 % Bars 181 to 185
 	
+	
+	
+	
+	
 % Bars 186 to 190
+	
+	
+	
+	
+	
+% Bars 191 to 195
 		}
-% Bars 177 to 180
 		{
 			R2.*5
-% Bars 181 to 185
-		
+	
+	
+	
+	
+% Bars 196 to 200
 		}
 	}
 	R2.*33
-% Bars 181 to 185
 	
-% Bars 186 to 190
 	
-% Bars 191 to 195
 	
-% Bars 196 to 200
 	
 % Bars 201 to 205
 	
+	
+	
+	
+	
 % Bars 206 to 210
+	
+	
+	
+	
 	
 % Bars 211 to 215
 	
 	
 	
-	\mark \default
-	R2.*22
+	
+	
 % Bars 216 to 220
+	
+	
+	
+	
 	
 % Bars 221 to 225
 	
+	
+	
+	
+	
 % Bars 226 to 230
+	
+	
+	\mark \default
+	R2.*22
 	
 % Bars 231 to 235
 	
+	
+	
+	
+	
 % Bars 236 to 240
 	
+	
+	
+	
+	
+% Bars 241 to 245
+	
+	
+	
+	
+	
+% Bars 246 to 250
+	
+	
+	
+	
+	
+% Bars 251 to 255
 	\ni \voiceTwo R2.
 	R \no \oneVoice 
 	g,4\f r r
 	R2.*25
-% Bars 241 to 245
-	
-% Bars 246 to 250
-	
-% Bars 251 to 255
 	
 % Bars 256 to 260
+	
+	
+	
+	
 	
 % Bars 261 to 265
 	
 	
 	
+	
+	
+% Bars 266 to 270
+	
+	
+	
+	
+	
+% Bars 271 to 275
+	
+	
+	
+	
+	
+% Bars 276 to 280
+	
+	
 	\mark \default
 	R2.
-% Bars 266 to 270
 	\ni \voiceTwo R2.
+% Bars 281 to 285
 	R
 	R \no \oneVoice 
 	a2.\f
 	R2.
-% Bars 271 to 275
 	d2.\f->~
+% Bars 286 to 290
 	d~
 	d4 r r
 	R2.*4
-% Bars 276 to 280
 	
+	
+% Bars 291 to 295
 	
 	r4 r f,-.\ff
 	bes2-> r4
 	r r f-.
-% Bars 281 to 285
 	bes-. bes-. r
+% Bars 296 to 300
 	r r f-.
 	bes2-> r4
 	r r f-.
 	bes-. bes-. r
-% Bars 286 to 290
 	r r e,-.
+% Bars 301 to 305
 	bes'2-> r4
 	r r ees,-.
 	bes'-. bes-. r
 	r r ees,-.
-% Bars 291 to 295
 	c'2.\fz~
+% Bars 306 to 310
 	c4 r r
 	R2.*14
-% Bars 296 to 300
 	
-% Bars 301 to 305
 	
-% Bars 306 to 310
 	
+% Bars 311 to 315
+	
+	
+	
+	
+	
+% Bars 316 to 320
+	
+	
+	
+	
+	
+% Bars 321 to 325
 	b2\ff fis4
 	b2 fis4
 	b b fis
 	b b fis
-% Bars 311 to 315
 	g8 r g'2-^~
+% Bars 326 to 330
 	g2.~
 	g~
 	g2 g4-. \mark \default
 	e-. r r
-% Bars 316 to 320
 	R2.*31
-% Bars 321 to 325
-	
-% Bars 326 to 330
-	
 % Bars 331 to 335
+	
+	
+	
+	
 	
 % Bars 336 to 340
 	
+	
+	
+	
+	
 % Bars 341 to 345
+	
+	
+	
+	
 	
 % Bars 346 to 350
 	
+	
+	
+	
+	
+% Bars 351 to 355
+	
+	
+	
+	
+	
+% Bars 356 to 360
+	
+	
+	
+	
+	
+% Bars 361 to 365
 	c8-.\f r c2->~
 	c2.~
 	c4 c-. d-.
 	c-. r r
-% Bars 351 to 355
 	c8-.\f r c2->~
+% Bars 366 to 370
 	c2.~
 	c4 c-. d-.
 	d2 d4~
 	d d2
-% Bars 356 to 360
 	d2\ff d4\fz~
+% Bars 371 to 375
 	d d2\fz
 	d2\fz d4\fz~
 	d g,2\fz \mark \default
 	g4-. r r
-% Bars 361 to 365
 	\mmrLength #12 R2.*17
-% Bars 366 to 370
-	
-% Bars 371 to 375
-	
 % Bars 376 to 380
 	
+	
+	
+	
+	
+% Bars 381 to 385
+	
+	
+	
+	
+	
+% Bars 386 to 390
+	
+	
+	
+	
+	
+% Bars 391 to 395
 	
 	\ni \voiceTwo R2.
 	R
 	R
-% Bars 381 to 385
 	R \no 
+% Bars 396 to 400
 	r4 r r8 \oneVoice g\f
 	c4 r r
 	R2.*17
-% Bars 386 to 390
 	
-% Bars 391 to 395
 	
-% Bars 396 to 400
+% Bars 401 to 405
 	
+	
+	
+	
+	
+% Bars 406 to 410
+	
+	
+	
+	
+	
+% Bars 411 to 415
 	
 	
 	
 	\mark \default
-% Bars 401 to 405
 	R2.*28
-% Bars 406 to 410
-	
-% Bars 411 to 415
-	
 % Bars 416 to 420
 	
+	
+	
+	
+	
 % Bars 421 to 425
+	
+	
+	
+	
 	
 % Bars 426 to 430
 	
 	
 	
+	
+	
+% Bars 431 to 435
+	
+	
+	
+	
+	
+% Bars 436 to 440
+	
+	
+	
+	
+	
+% Bars 441 to 445
+	
+	
 	\ni \voiceTwo R2.
 	R
-% Bars 431 to 435
 	R \no
+% Bars 446 to 450
 	r4 r \oneVoice d-.\f
 	g,-. r c-.
 	g-. r c-.
 	g-. r d'\<-.
-% Bars 436 to 440
 	r d-. g,-.\!
+% Bars 451 to 455
 	c-. r r
 	c-. r r
 	c-. r r
 	R2.*5
-% Bars 441 to 445
 	
+% Bars 456 to 460
 	
 	
 	\mark \default
 	R2.*7
-% Bars 446 to 450
 	
-% Bars 451 to 455
+% Bars 461 to 465
 	
+	
+	
+	
+	
+% Bars 466 to 470
 	r4 r g\f~
 	g\< g-. g-.\!
 	e'2(\ff f4)
 	e2( d4)
-% Bars 456 to 460
 	g2.~
+% Bars 471 to 475
 	g~
 	g~
 	g~ 
 	g4 r r
-% Bars 461 to 465
 	R2.
+% Bars 476 to 480
 	b,2.->
 	b->
 	c->
 	d->
-% Bars 466 to 470
 	g,4 r r
+% Bars 481 to 485
 	\startMeasureCount r g-^ r
 	r g-^ r
 	r g-^ r
 	r g-^ r
-% Bars 471 to 475
 	r g-^ r
+% Bars 486 to 490
 	r g-^ r
 	r g-^ r
 	r g-^ r \stopMeasureCount
 	r c-^ r
-% Bars 476 to 480
 	r c-^ r
+% Bars 491 to 495
 	r c-^ r
 	r c-^ r
 	c,2.-^~
 	c~
-% Bars 481 to 485
 	c4 r r
+% Bars 496 to 500
 	R2.*3
 	
 	
 	c'2\f-> c4->~
-% Bars 486 to 490
 	c c2->
+% Bars 501 to 505
 	d d4~
 	d d d 
 	e4.\ff-^ d-^
 	c2.~
-% Bars 491 to 495
 	c4 r r
+% Bars 506 to 510
 	R2.
 	c4. r8 r4
 	c4. r8 r4 \mark #11
 	R2.*14
-% Bars 496 to 500
 	
-% Bars 501 to 505
+% Bars 511 to 515
 	
-% Bars 506 to 510
 	
+	
+	
+	
+% Bars 516 to 520
+	
+	
+	
+	
+	
+% Bars 521 to 525
 	
 	
 	r4 r g\ff-^
 	c2-^_\marc r4
-% Bars 511 to 515
 	r r g-.
+% Bars 526 to 530
 	c-. c-. r
 	r r g-.
 	c4.\ff c8 c4
 	c( d e)
-% Bars 516 to 520
 	g2\fz f8( e)
+% Bars 531 to 535
 	e2.
 	c4. c8 c4
 	g'2\fz f8( e)
 	e2 r4
-% Bars 521 to 525
 	g2\fz f8( e)
+% Bars 536 to 540
 	g2\ff f8( e)
 	g2 f8( e)
-	g2.\>~
+	g2.\>(~
 	g~
-% Bars 526 to 530
-	g2(\p f8 e)
+	g2\p f8 e)
+% Bars 541 to 545
 	e2( d8_\dimmarkup c)
 	c2 r4
 	R2.*3
 	
-% Bars 531 to 535
 	
+% Bars 546 to 550
 	\mmrLength #15 R2.*11
-% Bars 536 to 540
 	
-% Bars 541 to 545
 	
+	
+	
+% Bars 551 to 555
+	
+	
+	
+	
+	
+% Bars 556 to 560
 	
 	\mmrLength #10 R2.*1
 	\ni \voiceTwo R2. \no
 	r4 r \oneVoice d->\f
-% Bar 546
-	c-> r r \bar "|."
+	c-> r r \fine
 }
