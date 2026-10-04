@@ -1,4 +1,4 @@
-    155     465    5153 10_DvorakSymph6_Conductor_mvt1.ly
+    155     453    5141 10_DvorakSymph6_Conductor_mvt1.ly
     141     376    4647 10_DvorakSymph6_Conductor_mvt2.ly
     147     389    4872 10_DvorakSymph6_Conductor_mvt3.ly
     155     410    5154 10_DvorakSymph6_Conductor_mvt4.ly
@@ -49,7 +49,7 @@
     667    2308   19026 00-Common/DvorakSymph6_NameVoice.ily
      70     205    1709 00-Common/DvorakSymph6_PaperConductors.ily
      60     163    1442 00-Common/DvorakSymph6_PaperParts.ily
-    501    1394   12015 00-Common/DvorakSymph6_Shortcuts.ily
+    515    1394   12029 00-Common/DvorakSymph6_Shortcuts.ily
    1202    3750   28531 00-Common/DvorakSymph6_Tempi.ily
      33     166    1171 00-Common/DvorakSymph6_timeMvt.ily
     691    1809    9718 01-Mvt1/m01_v01_music_FlautoI_C.ily
@@ -68,14 +68,14 @@
     691    1946    9488 01-Mvt1/m01_v07_music_FagottoI.ily
     691    1869    8816 01-Mvt1/m01_v08_music_FagottoII_C.ily
     691    1927    9490 01-Mvt1/m01_v08_music_FagottoII.ily
-    533    1482    7348 01-Mvt1/m01_v09_music_CornoI_C.ily
-    529    1449    6866 01-Mvt1/m01_v09_music_CornoI.ily
-    539    1440    6728 01-Mvt1/m01_v10_music_CornoII_C.ily
-    539    1409    6719 01-Mvt1/m01_v10_music_CornoII.ily
-    508    1309    6990 01-Mvt1/m01_v11_music_CornoIII_C.ily
-    512    1280    6205 01-Mvt1/m01_v11_music_CornoIII.ily
-    508    1224    6018 01-Mvt1/m01_v12_music_CornoIV_C.ily
-    507    1212    6096 01-Mvt1/m01_v12_music_CornoIV.ily
+    691    1477    7375 01-Mvt1/m01_v09_music_CornoI_C.ily
+    691    1445    6930 01-Mvt1/m01_v09_music_CornoI.ily
+    691    1435    7001 01-Mvt1/m01_v10_music_CornoII_C.ily
+    691    1405    6756 01-Mvt1/m01_v10_music_CornoII.ily
+    691    1295    7217 01-Mvt1/m01_v11_music_CornoIII_C.ily
+    691    1284    6546 01-Mvt1/m01_v11_music_CornoIII.ily
+    691    1205    6320 01-Mvt1/m01_v12_music_CornoIV_C.ily
+    691    1208    6425 01-Mvt1/m01_v12_music_CornoIV.ily
     428    1156    5944 01-Mvt1/m01_v13_music_TrombeI_C.ily
     448    1118    5146 01-Mvt1/m01_v13_music_TrombeI.ily
     428    1073    4688 01-Mvt1/m01_v14_music_TrombeII_C.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2405   10460 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2408   10495 04-Mvt4/m04_v24_music_Contrabasso.ily
- 109774  335042 1938668 total
+ 111141  334979 1940270 total

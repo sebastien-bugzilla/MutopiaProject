@@ -93,17 +93,17 @@
 					\partCombine \musicFagottoIMvtI \musicFagottoIIMvtI
 				}
 			>>
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
-%					\new Staff { 
-%						\timeMvtI \nameStaffVMvtI
-%						\partCombine \musicCornoIMvtI \musicCornoIIMvtI
-%					}
-%					\new Staff <<
-%						\timeMvtI \nameStaffVIMvtI
-%						\partCombine \musicCornoIIIMvtI \musicCornoIVMvtI
-%					>>
-%				>>
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
+					\new Staff { 
+						\timeMvtI \nameStaffVMvtI
+						\partCombine \musicCornoIMvtI \musicCornoIIMvtI
+					}
+					\new Staff <<
+						\timeMvtI \nameStaffVIMvtI
+						\partCombine \musicCornoIIIMvtI \musicCornoIVMvtI
+					>>
+				>>
 %				\new Staff {
 %					\timeMvtI \nameStaffVIIMvtI
 %					\partCombine \musicTrombeIMvtI \musicTrombeIIMvtI
@@ -121,7 +121,7 @@
 %				\new Staff {
 %					\timeMvtI \nameStaffXMvtI \musicTimpaniMvtI
 %				}
-%			>>
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtI } <<
 %					\new Staff {
