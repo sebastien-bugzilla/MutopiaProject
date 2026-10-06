@@ -13,8 +13,8 @@ musicViolaMvtI = \relative c {
 		<fis a>8-. q4 q q8-.
 		q-. q4 q q8-.
 	} \\ {
-		d8\pp d4 d d8
-		d d4 d d8
+		d8-.\pp d4 d d8-.
+		d-. d4 d d8-.
 	}>>
 	\repeat volta 2 {
 		<<{
@@ -35,7 +35,7 @@ musicViolaMvtI = \relative c {
 			cis-. cis4 cis cis8-.
 % Bars 16 to 20
 			cis-. cis4 cis cis8-.
-			d-. d4 d8-.\noBeam fis,( d'
+			d-. d4 d8\noBeam fis,( d'
 			fis,2.)
 			c'2( b4)
 			b2.
@@ -44,26 +44,26 @@ musicViolaMvtI = \relative c {
 			b
 			fis'8
 		} \\ {
-			d,8 d4 d d8
-			d d4 d d8
-			d d4 d d8
+			d,8-. d4 d d8-.
+			d-. d4 d d8-.
+			d-. d4 d d8-.
 % Bars 6 to 10
-			d d4 d d8
-			d d4 d d8
-			d\< d4 d d'8\!
-			dis dis4\f dis8\> e fis\!
-			<b, e>8\pp q4 q q8
+			d-. d4 d d8-.
+			d-. d4 d d8-.
+			d-.\< d4 d d'8-.\!
+			dis dis4\f dis8(\> e fis)\!
+			<b, e>8-.\pp q4 q q8-.
 % Bars 11 to 15
-			q8 q4 q q8
-			<g e'> q4 q q8
-			q q4 q q8
-			q q4 q q8
-			<g a>\< q4 q q8
+			q8-. q4 q q8-.
+			<g e'>-. q4 q q8-.
+			q-. q4 q q8-.
+			q-. q4 q q8-.
+			<g a>-.\< q4 q q8-.
 % Bars 16 to 20
-			q8 q4 q\! q8
-			a a4 a8 fis4\<~
+			q8-. q4 q\! q8-.
+			a-. a4 a8 fis4\<~
 			fis2.
-			a2-\tweak extra-offset #'(0.5 . 1) \f g4
+			a2(-\tweak extra-offset #'(0.5 . 1) \f g4)
 			a2. \tweak X-offset #0.5 _\dimmarkup
 % Bars 21 to 25
 			g2.-\tweak extra-offset #'(0.5 . 1) \p -\tweak extra-offset #'(0 . 1) \>~
@@ -71,22 +71,22 @@ musicViolaMvtI = \relative c {
 			fis8\pp
 		}>> r r4 r
 		b2.\fz
-		cis8-. r d4(\fz dis)
+		cis8-. r d4(\fz\< dis)
 % Bars 26 to 30
-		gis8-! fis-! eis-! eis-! fis-! gis-! 
+		gis8-!\! fis-! eis-! eis-! fis-! gis-! 
 		fis-.\f r g!4.(\fz fis8)
 		e!-! fis-! g-! g-! fis-! e-! 
-		c r \repeat tremolo 4 {fis,16(\fz a)}
-		<g b>8 r \repeat tremolo 4 {e16(\fz g)}
+		c r fis,16(\fz a fis a fis a fis a)
+		<g b>8 r e16(\fz g e g  e g e g)
 % Bars 31 to 35
-		<a c>8 r \repeat tremolo 4 {fis16(\fz a)}
-		<b d>8 r \repeat tremolo 4 {g16(\fz b)}
-		<d f>8 r \repeat tremolo 4 {\hairpinShorten #'(0 . -2.5) b16(\< d\!)}
+		<a c>8 r fis16(\fz a fis a fis a fis a)
+		<b d>8 r g16(\fz b g b  g b f b)
+		<d f>8 r b16(\< d\! b d  b d b d)\!
 		<d f>8\f r q2:16->
 		q2.:
 % Bars 36 to 40
 		q2: <e g>4:->\fz
-		<d f>8-. r \repeat tremolo 4 {b16( d)}
+		<d f>8-. r b16( d b d  b d b d)
 		<d f>8 r q2:16->
 		q2.:
 		q2: <e g>4:\fz
@@ -146,10 +146,10 @@ musicViolaMvtI = \relative c {
 		g'[-> b, g b] a[-> b
 		g b] b[-> b g b]
 		cis->[ b g b] d->[ g,]
-		<<{dis'4} \\ {a->}>> r r
+		<<{dis'4} \\ {a->}>> r r 
 		r b\p\<( c
 % Bars 76 to 80
-		d2.)\!
+		<< d2.) {s4\> s s\!}>>
 		r4 fisis,(_\dimmarkup gis
 		ais) r r
 		r fis'(\pp fis,~
@@ -179,7 +179,7 @@ musicViolaMvtI = \relative c {
 		g8 r \tuplet 3/2 4 {g(\fz a g)} d-. e-.
 		<d fis>-. <e g>-. <fis a>4 r
 % Bars 101 to 105
-		r \tuplet 3/2 4 {d8 \tweak X-offset #-2 \fz( e d)} g,-. gis-.
+		r \tuplet 3/2 4 {d8 \tweak X-offset #-2 \fz( e d)} g,-.\< gis-.\!
 		<ais cis>-.\f r r4 r
 		cis8-.\f r r4 r
 		<cis, fis>8-.\p r r4 r
@@ -210,8 +210,8 @@ musicViolaMvtI = \relative c {
 		fis2 e4)
 % Bars 126 to 130
 		dis8( cis b2)
-		dis8( cis b2)~
-		b4 r r
+		dis8( cis b2~
+		b4) r r
 		R2.
 		aes8(\pp ees aes ees bes' ees,
 % Bars 131 to 135
@@ -251,482 +251,503 @@ musicViolaMvtI = \relative c {
 		\clef treble <b d>8[(_\crescmarkup <g b>) <a cis!>-. <b d>-.] <cis e>( <ais cis>)
 		<b d>-.[ <cis e>-.] <b d>( <ais cis> <b d> <ais cis>)
 % Bars 161 to 165
-		b4-.\ff \clef alto \tuplet 3/2 4 {fis,8( gis fis} fis'4->)~
-		fis \tuplet 3/2 4 {fis,8( gis fis} fis'4)~
-		fis \tuplet 3/2 4 {fis,8( gis fis} fis'4)~
-		fis \tuplet 3/2 4 {fis,8( gis fis} fis'4)~
-		fis \tuplet 3/2 4 {fis,8( gis fis} fis'4)~
+		b4-.\ff \clef alto \tuplet 3/2 4 {fis,8( gis fis} fis'4->~
+		fis) \tuplet 3/2 4 {fis,8( gis fis} fis'4~
+		fis) \tuplet 3/2 4 {fis,8(\< gis fis} fis'4~\!
+		fis) \tuplet 3/2 4 {fis,8(\< gis fis} fis'4~\!
+		fis) \tuplet 3/2 4 {fis,8(\< gis fis} fis'4~\!
 % Bars 166 to 170
-		fis \tuplet 3/2 4 {fis,8( gis fis} fis'4)
+		fis) \tuplet 3/2 4 {fis,8(\< gis fis} fis'4)\!
 		fis8( dis) e-. fis-. b,4
 		fis'8( dis) e-. fis-. b,4
 		fis'8( d!) e-. fis-. b,4
 		fis'8( d) e-. fis-. b,4
 % Bars 171 to 175
 		R2.*6
+	
+	
+	
+	
 % Bars 176 to 180
-		
+	
 	}
 	\alternative {
 		{
 			R2.*4
+	
+	
+	
 % Bars 181 to 185
 			r4 a8(\pp fis g a)
 			R2.*9
+	
+	
+	
 % Bars 186 to 190
+	
+	
+	
+	
+	
+% Bars 191 to 195
 		}
 		{
-% Bars 177 to 180
 			R2.*5
-% Bars 181 to 185
-		
+	
+	
+	
+	
+% Bars 196 to 200
 		}
 	}
 	fis8(\pp cis' fis2)~
 	fis2.~
 	fis~
 	fis
-% Bars 186 to 190
-	b,8( fis' b2)~
+	b,8( fis' b2~
+% Bars 201 to 205
 	b2.~
-	b
+	b)
 	<d, d'>\ppp~
 	q~
-% Bars 191 to 195
 	q~
+% Bars 206 to 210
 	q~
 	q~
 	q4 r r
 	R2.*20
-% Bars 196 to 200
-	
-% Bars 201 to 205
-	
-% Bars 206 to 210
 	
 % Bars 211 to 215
 	
 	
 	
+	
+	
+% Bars 216 to 220
+	
+	
+	
+	
+	
+% Bars 221 to 225
+	
+	
+	
+	
+	
+% Bars 226 to 230
+	
+	
 	\mark \default
 	r4 r g,(\pp
-% Bars 216 to 220
 	c2) r4
+% Bars 231 to 235
 	r r g(
 	c)-. c-. r
 	\repeat tremolo 6 {c,16 \tweak X-offset #0.5 _\ppsempre^\nonlegato c'}
 	\repeat tremolo 6 {c, c'}
-% Bars 221 to 225
 	\repeat tremolo 6 {c, c'}
+% Bars 236 to 240
 	\repeat tremolo 6 {cis,! cis'!}
 	e,4:16 f: g:
 	<g bes>2: <f a>8: <e g>:
 	q2: <g bes>4:
-% Bars 226 to 230
 	eis: gis: b!:
+% Bars 241 to 245
 	b2.:
-	<<{
-		b2: a8: gis:
-		gis2: b4:
-	} \\ {
-		gis2: fis8: eis:
-		eis2: gis4:
-	}>>
+	<gis b>2: <fis a>8: <eis gis!>:
+	<eis gis>2: <gis! b>4:
 	fis: a: \once \stemUp c:
-% Bars 231 to 235
 	fis,: g!: a:
+% Bars 246 to 250
 	<a c>2: <g! b>8: <fis a>:
 	q2: <a c>4:
 	g: bes: des:
 	g,: aes: bes:_\crescmarkup
-% Bars 236 to 240
-	<bes des>2: <aes c>8: <g bes>:
-	q2: <bes des>4:
-	<e,! gis>: <gis b!>: <b d!>:
+	<bes des>2: <aes c>8: <g bes!>:
+% Bars 251 to 255
+	q2: <bes! des>4:
+	<e,! gis>: <gis b!>: <b! d!>:
 	<cis! e>4\f r8 cis-!_\marc d-! e-! 
 	gis,2-> f'4-.
-% Bars 241 to 245
 	e8-. cis16( d cis8) a-. a-. e-.
+% Bars 256 to 260
 	f-. d16( e d8) r r <gis b>-.
 	a-. a-. a2~
 	a8 a-. a2-\tweak X-offset #5.5 _\dimmarkup~
 	a8 a-. a2~
-% Bars 246 to 250
 	a8-\tweak X-offset #-1 \p a-. a2
+% Bars 261 to 265
 	<g b>2.:32_\ppsulponticello
 	q:
 	q:
 	<< <d c'>: {s8\< s s s\> s s\!} >>
-% Bars 251 to 255
 	<g b>2.:32
+% Bars 266 to 270
 	q:
 	q:
 	<d c'>:
 	<g b>4 r r
-% Bars 256 to 265
 	R2.
-	<<{
-		cis!2.:32
-		cis:
-		cis:
-		d:
-		cis:
-		cis:
-		cis:
-		cis:
-	} \\ {
-		a:\pp
-		a:
-		a:
-		<< e: {\hairpinShorten #'(1.3 . 0) s8\< s s s\> s s\!} >> 
-		a2.:32
-		a:
-		a:
-		<< ais: {\hairpinShorten #'(0 . -4) s8\< s4 s s8\!} >>
-	}>> \mark \default
+% Bars 271 to 275
+	<a cis!>2.:\pp
+	q:
+	q:
+	<< <e d'>: {s8\< s s s\> s s\!}>>
+	<a cis>2.:
+% Bars 276 to 280
+	q:
+	q:
+	<< q: {s4\< s s\!}>>  \mark \default
 	b4\f r r 
-% Bars 266 to 270
-	<dis fis>-> r8 <b dis>-! <cis e>-! <dis fis>-!
+	<dis fis>-> r8 <b dis!>-! <cis e>-! <dis fis>-!
+% Bars 281 to 285
 	b2-> b'4
 	g r8 e-. fis-. g-. 
 	dis4 r r
 	b'8-^ fis16( g fis8) b,-. b-. b'-.
-% Bars 271 to 275
 	b4-.-> gis-.->  e-.-> 
+% Bars 286 to 290
 	e'2.-^
 	e,4-.-> cis!-.-> a-.-> 
 	a'8-. e16( fis e8) a,-. a-. a'-.
-	<d, a'>4 r8 fis-. g-. a-.
-% Bars 276 to 280
+	<d, a'>4 r8 fis-! g-! a-!
 	d,2-> c'4
+% Bars 291 to 295
 	b16 <b, d> q q q2:16
 	<<{g4: a: b:} \\ {g2.:}>>
 	<e g>:\ff
 	q:
-% Bars 281 to 295
 	q:
+% Bars 296 to 300
 	<ees g>:\fz
 	q:
 	q:
-	<<{
+	<< {
 		<fis! a>:
 		q:
+% Bars 301 to 305
 		q:
 		<d c'>:
 		q:
 		q:
 		d':
-		d4
+% Bars 306 to 310
+		d4 \oneVoice r r
 	} \\ {
 		d,2.:16 \tweak X-offset #0.8 \fz
 		d:
+% Bars 301 to 305
 		d:
 		\override Stem.length = #9.5 <f aes>: \tweak X-offset #0.8 \fz
 		q:
 		q: \revert Stem.length
 		q:\fz
-		q4
-	}>> r r
+% Bars 306 to 310
+		q4 s s
+	} >>
 	r r8 f8:16_\sempreff g: aes:
 	f: g: aes: f: g: aes:
 	f: g: aes8\noBeam r r4
-% Bars 296 to 300
 	r f->-. \tweak X-offset #-3.5 _\ffrinforz g->-.
+% Bars 311 to 315
 	aes->-. ces->-. bes->-.
 	aes->-. ces->-. bes->-.
 	aes->-. des->-. des->-.
 	c-._\sempremarc f,-. des'-.
-% Bars 301 to 305
 	ees-. e-. e-.
+% Bars 316 to 320
 	fis!-. e-. e-.
 	fis-. g!-. g-.
 	a-. d,-. cis-.
 	d-. b'-.-> d,-.
-% Bars 306 to 310
 	e-. d'->-. fis,-.
+% Bars 321 to 325
 	gis16\ff cis, cis cis gis2:16
 	gis2.:
 	gis:
 	gis:
-% Bars 311 to 315
 	g!16 cis' cis cis cis2:16
+% Bars 326 to 330
 	cis2.:
 	cis:
-	cis8: g!: e: cis: a: a': \mark \default
+	cis8: g: e: cis: a: a': \mark \default
 	\repeat tremolo 6 {fis,16(\fp\> a}
-% Bars 316 to 320
 	\repeat tremolo 6 {fis\pp a}
+% Bars 331 to 335
 	\repeat tremolo 6 {fis a}
 	\repeat tremolo 6 {fis a)}
 	\repeat tremolo 6 {fis( a}
 	\repeat tremolo 6 {fis a)}
-% Bars 321 to 325
 	\repeat tremolo 6 {fis(\< a)}
+% Bars 336 to 340
 	\repeat tremolo 6 {a(\fz\> b)}
 	\repeat tremolo 6 {g( b\!}
 	\repeat tremolo 6 {g b)}
 	\repeat tremolo 6 {g( d'}
-% Bars 326 to 330
 	\repeat tremolo 6 {g, d'}
+% Bars 341 to 345
 	\repeat tremolo 6 {g, d')}
 	\repeat tremolo 6 {g,(\< a}
 	\repeat tremolo 6 {g a)\!}
 	\repeat tremolo 4 {a(\> c\!} fis,8 d')
-% Bars 331 to 335
 	c(\< d c d c d
+% Bars 346 to 350
 	c d c d c d)
 	a(_\fdimD b a b a b)
 	g(\p\> b d g, cis! g
 	b g cis g b g)
-% Bars 336 to 340
 	ais\pp r r4 r
+% Bars 351 to 355
 	d2.\fz
 	cis8 r g'4.\fz fis8
 	eis-! fis-! gis-! gis-! fis-! eis-! 
-	fis\f r b2\fz
-% Bars 341 to 345
+	fis-.\f r b2\fz
 	g!4( e cis)
+% Bars 356 to 360
 	c8-. r \repeat tremolo 4 {fis,16\fz( a)}
 	<g b>8 r \repeat tremolo 4 {e16(-> g)}
 	<a c>8 r \repeat tremolo 4 {fis16->( a)}
 	<b d>8 r \repeat tremolo 4 {g16(-> b)}
-% Bars 346 to 350
 	<d f>8-\tweak extra-offset #'(-1 . 0.5) _\fsempre r \repeat tremolo 4 {b16(-> d)}
+% Bars 361 to 365
 	<d f>8-. r q2:16->
 	q2.:
 	q2: <e g>4:\fz
 	<d f>8-. r \repeat tremolo 4 {b16(-> d)}
-% Bars 351 to 355
 	<d f>8-. r q2:16->
+% Bars 366 to 370
 	q2.:
 	q2: <e g>4:\fz
 	q: <g e'>:\fz <e g>: 
 	<g e'>:\fz <e g>: <g e'>:\fz
-% Bars 356 to 360
 	cis,!4\ff( g'8) r cis,4(\fz
+% Bars 371 to 375
 	fis8) r cis4(\fz g'8) r
 	cis,4(\fz gis'8) r cis,4(\fz
 	a'8) r d,4(\fz a'8) r \mark \default
 	<a, dis>4-. r r
-% Bars 361 to 365
 	r b(\p\< c
-	d2\> b4)
+% Bars 376 to 380
+	d2\> b4)\!
 	bes2.\pp(
 	a)~
 	a~
-% Bars 366 to 370
 	a~
+% Bars 381 to 385
 	a8 g( bes g d d')
 	a4 r r
 	bes2.\pp(
 	a)
-% Bars 371 to 375
 	d(
+% Bars 386 to 390
 	c
 	f
 	e)
 	d16 d cis cis b2:16
-% Bars 376 to 380
 	e8:_\crescmarkup d: cis2:
+% Bars 391 to 395
 	f8: e: d2:
 	g8: f: e2:
 	g8: f: e2:
 	<bes g'>4->\f r r
-% Bars 381 to 385
 	<bes g'>-> r8 g-. a-. bes!-.
+% Bars 396 to 400
 	bes\<-. a-. g-. f-. e-. a-.\!
 	d,4 r8 d'( cis! c)
 	c( b) b( bes) a( g)
 	fis4 r8 d'-.\< e-. fis-.
-% Bars 386 to 390
 	g2(-\tweak X-offset #-2 \fz fis8 e)
+% Bars 401 to 405
 	d4 r r
 	r \tuplet 3/2 4 {g,8(\f\< a g} bes4\!^>~
 	bes8) r \tuplet 3/2 4 {bes8(\< c bes} bes'4\!
 	g8) r \tuplet 3/2 4 {ees,8(\< f ees} ees'4\!
-% Bars 391 to 395
-	bes8) r \tuplet 3/2 4 {bes(\< c bes} bes'4\!)~
-	bes8 r \tuplet 3/2 4 {bes8(\fz c bes)} f-. g-.
+	bes8) r \tuplet 3/2 4 {bes(\< c bes} bes'4\!~
+% Bars 406 to 410
+	bes8) r \tuplet 3/2 4 {bes8(\fz c bes)} f-. g-.
 	<f a>-. <g bes>-. <a c>4-. r
 	r \tuplet 3/2 4 {f8(-\tweak extra-offset #'(-0.5 . 0.5) \fz g f)} g8-. f-.
 	e8-. r r4 r
-% Bars 396 to 400
 	<cis e>8-._\dimmarkup r r4 r
+% Bars 411 to 415
 	e,8-.\p r r4 r
 	R2.
 	r4 r r8 b'16(\pp cis
 	b8) a-. a-. r r4 \mark \default
-% Bars 401 to 405
 	a2.\p~
+% Bars 416 to 420
 	a
 	c~
 	c
 	bes2(\p ees4)
-% Bars 406 to 410
 	d4(_\dimmarkup bes2)
+% Bars 421 to 425
 	ees,2.\pp
 	a!~
 	a
 	gis~\<
-% Bars 411 to 415
 	gis
+% Bars 426 to 430
 	g!4(\! e\> a)\!
 	d2(\pp e4
 	fis2 g8 a
 	fis2 b4
-% Bars 416 to 420
 	a2 g4)
+% Bars 431 to 435
 	fis2( b4
 	a2 g4)
 	fis8( e d2
 	fis8 e d2~
-% Bars 421 to 425
 	d4) r r
+% Bars 436 to 440
 	R2.
 	b8(\pp fis b fis cis' fis,
 	b fis b fis cis' fis,)
 	b(\< fis b fis b gis
-% Bars 426 to 430
 	ais fis ais fis ais fis)\!
+% Bars 441 to 445
 	b( fis dis\> fis b gis
 	ais fis ais fis ais fis)\!
 	b16\p fis' fis fis fis2:16\<
 	fis2.:16
-% Bars 431 to 435
 	e:\mf\<
+% Bars 446 to 450
 	e:
-	<cis e a>8-.\f cis( d e) d4->
+	<cis e a>8-.\f\arpeggio\noBeam cis( d e) d4->
 	a'8-. cis,( d e) d4->
 	a'8-^ cis,(\< e a) bes-^[ cis,(
-% Bars 436 to 440
 	e bes')] b-^ e,( g cis)\!
+% Bars 451 to 455
 	d-. r r4 g,4(\fz
 	fis8) r r4 g4(\fz
 	fis8) r r4 r
 	R2.
-% Bars 441 to 445
 	d2.:16\p
+% Bars 456 to 460
 	<<d: {s4 s2\cresc}>>
 	d2.:16
 	d: \mark \default
 	<fis a>:\f
-% Bars 446 to 450
 	q:
+% Bars 461 to 465
 	q:
 	q4-^ c8( a) bes-. c-.
 	\repeat tremolo 6 {bes16( g)}
 	\repeat tremolo 4 {c(_\crescmarkup a)} <c ees>8( <a c>)
-% Bars 451 to 455
 	<bes d>-. <c ees>-. \repeat tremolo 4 {d16( bes!)}
+% Bars 466 to 470
 	<d f>8([ <bes d>) <c e!>-. <d f>-.] <e  g>( <cis e>)
 	<d f>-.[ <e g>-.] <d f>( <cis e> <d f> <cis e>)
 	\acciaccatura d8 d'2\ff cis4
 	a8( fis) g-. a-. e4
-% Bars 456 to 460
 	d8( fis a4 g)
+% Bars 471 to 475
 	fis2( e4)
 	d8( fis a4 g)
 	fis2( e4)
 	d8( fis g4 fis)
-% Bars 461 to 465
 	e8( gis a4 gis)
+% Bars 476 to 480
 	cis2.:16
 	cis:
 	d:
 	e:
-% Bars 466 to 470
 	a,4\ff r r
+% Bars 481 to 485
 	R2.*4
-% Bars 471 to 475
+	
+	
+	
 	fis2\f-^ e4
+% Bars 486 to 490
 	a8-. fis-. g-. a-. dis,4
 	g-> <a, cis>-> <d! fis>->
 	<g, b>-> <cis e>-> <fis, a>->
 	<c' a'>4-> <gis e'>2-^~
-% Bars 476 to 480
 	q4 <a fis'>-.-> <fis d'>-.->
+% Bars 491 to 495
 	<b g'>-> <e, c'>-> <a fis'>->
-	<d, b'>-> <g e'> <fis a>8 <e g>
+	<d, b'>-> <g e'>-> <fis a>8 <e g>
 	<d fis>4 r r
 	R2.
-% Bars 481 to 485
 	d'4.\ff-> bes8-. cis!-. d-.
+% Bars 496 to 500
 	d4.-> bes8-. cis!-. d-.
 	d bes cis d g, a
 	bes e, fis g cis, d
 	d16 <g bes> q q q2:16
-% Bars 486 to 490
 	q2.:
+% Bars 501 to 505
 	<cis e>:
 	q:
 	fis4.:\ff e:
 	<b d>: d8: e: fis:
-% Bars 491 to 495
 	g4: cis,: fis:
+% Bars 506 to 510
 	b,: e: a,:
 	<gis eis'>4. r8 r4
 	q4. r8 r4 \mark #11
 	R2.
-% Bars 496 to 500
-	r4 d'8-.\ff b-. cis-. d-.
-	b-. cis-. d-. b-. cis-. d-. 
+	r4 d'8-!\ff b-! cis-! d-!
+% Bars 511 to 515
+	b-! cis-! d-! b-! cis-! d-! 
 	R2.
 	r4 f,-\tweak extra-offset #'(-1 . 0.3) _\ffpesante-.-> e-.->
 	d-.-> g-.-> g-.->
-% Bars 501 to 505
 	a-.-> fis-.-> a-.->
+% Bars 516 to 520
 	a-._\marcatosempre d,-. e-.
 	fis-. d'-. g-.
 	fis-. d-. e-.
 	a,-. fis'-. a-.
-% Bars 506 to 510
 	a-. g-. cis,-.
+% Bars 521 to 525
 	d-. d-. e-.
 	fis-. g-. g-.
 	fis-. b-. cis-.
 	d-. a-. cis-.
-% Bars 511 to 515
 	d-. a-. cis-.
+% Bars 526 to 530
 	d-. a-. cis-.
 	d-. a-. cis-.
 	d16 a\ff a a a2:16
 	a2.:
-% Bars 516 to 520
+	a:
+% Bars 531 to 535
 	a:
 	a:
 	a:
 	a:
 	a:
-% Bars 521 to 525
-	a:
+% Bars 536 to 540
 	<fis a>2: <e g>8: <d fis>:
 	<fis a>2: <e g>8: <d fis>:
 	q16\> a a a <d, a'>2:16
 	q2.:
-% Bars 526 to 530
 	q:\p
+% Bars 541 to 545
 	q:_\dimmarkup
 	q:
 	q:
 	q4\pp r <e g>8( <d fis>)
-% Bars 531 to 535
 	q2( <e g>8 <d fis>)
+% Bars 546 to 550
 	q4 a'2\pp~
 	a2.\>~
 	a~
 	a~
-% Bars 536 to 540
 	a~
+% Bars 551 to 555
 	a~\ppp
 	a~
 	a~
 	a4 r r
-% Bars 541 to 545
 	R2.*2
+% Bars 556 to 560
 	
 	d'2\ff-^ cis4-.
 	a8-. fis-. g-. a-. e4
-	d8-. fis-. a4 <a, g'>->
-% Bar 546
-	<a fis'>-> r r \bar "|."
+	d8-. fis-. a4 <a, g'>->\arpeggio
+	<a fis'>->\arpeggio r r \fine
 }

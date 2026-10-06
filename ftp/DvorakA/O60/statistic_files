@@ -1,5 +1,5 @@
     155     485    5176 10_DvorakSymph6_Conductor_mvt1.ly
-    141     376    4647 10_DvorakSymph6_Conductor_mvt2.ly
+    141     383    4654 10_DvorakSymph6_Conductor_mvt2.ly
     147     389    4872 10_DvorakSymph6_Conductor_mvt3.ly
     155     410    5154 10_DvorakSymph6_Conductor_mvt4.ly
     248     596    5466 20_DvorakSymph6_Part01_Flauti.ly
@@ -94,8 +94,8 @@
     691    2514   12737 01-Mvt1/m01_v20_music_ViolinoI.ily
     691    2617   12914 01-Mvt1/m01_v21_music_ViolinoII_C.ily
     691    2649   13250 01-Mvt1/m01_v21_music_ViolinoII.ily
-    732    2841   13995 01-Mvt1/m01_v22_music_Viola_C.ily
-    735    2804   13856 01-Mvt1/m01_v22_music_Viola.ily
+    753    2859   14089 01-Mvt1/m01_v22_music_Viola_C.ily
+    753    2827   13940 01-Mvt1/m01_v22_music_Viola.ily
     689    2594   12943 01-Mvt1/m01_v23_music_Violoncello_Bassi.ily
     713    2721   13533 01-Mvt1/m01_v23_music_Violoncello_C.ily
     354     955    4448 01-Mvt1/m01_v23_music_Violoncello_div.ily
@@ -103,10 +103,10 @@
     700    2350   10843 01-Mvt1/m01_v24_music_Contrabasso_Bassi.ily
     675    2120   10183 01-Mvt1/m01_v24_music_Contrabasso_C.ily
     675    2124   10294 01-Mvt1/m01_v24_music_Contrabasso.ily
-    210     718    3958 02-Mvt2/m02_v01_music_FlautiI_C.ily
-    210     661    3266 02-Mvt2/m02_v01_music_FlautiI.ily
-    204     564    2736 02-Mvt2/m02_v02_music_FlautiII_C.ily
-    201     519    2629 02-Mvt2/m02_v02_music_FlautiII.ily
+    210     718    3958 02-Mvt2/m02_v01_music_FlautoI_C.ily
+    210     661    3266 02-Mvt2/m02_v01_music_FlautoI.ily
+    204     564    2736 02-Mvt2/m02_v02_music_FlautoII_C.ily
+    201     519    2629 02-Mvt2/m02_v02_music_FlautoII.ily
     244     831    4888 02-Mvt2/m02_v03_music_OboeI_C.ily
     244     729    3787 02-Mvt2/m02_v03_music_OboeI.ily
     244     713    3665 02-Mvt2/m02_v04_music_OboeII_C.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2405   10460 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2408   10495 04-Mvt4/m04_v24_music_Contrabasso.ily
- 114928  334889 1947338 total
+ 114967  334937 1947523 total

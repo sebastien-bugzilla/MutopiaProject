@@ -65,9 +65,9 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-					\new Voice {
-						\formatConductorMvtII
-					}
+%					\new Voice {
+%						\formatConductorMvtII
+%					}
 					\new Voice {
 						\tempiMvtII
 					}
@@ -132,10 +132,10 @@
 			breakbefore = ##t
 		}
 		\layout {
-			\context {
-				\Score 
-				scriptDefinitions = #my-script-alist
-			}
+%			\context {
+%				\Score 
+%				scriptDefinitions = #my-script-alist
+%			}
 		}
 	}
 }
