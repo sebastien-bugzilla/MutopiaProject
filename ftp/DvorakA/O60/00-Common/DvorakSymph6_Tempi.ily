@@ -62,31 +62,44 @@ tempiMvtI = {
 tempiMvtII = {
 	\tempo \markup {
 		\concat {
-			"Adagio. (M.M. "
-			\smaller \general-align #Y #DOWN \note {4} #0.75
-			" = 42.)"
+			"Adagio "
+			\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+			" = 42"
 		}
 	}
 	s2*28
-	\tempo \markup { % bar 29
+	% bar 29
+	\tempo \markup {
 		\concat {
-			"Poco più animato. ("
-			\smaller \general-align #Y #DOWN \note {4} #0.75
-			" = 56.)"
+			"Poco più animato "
+			\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+			" = 56"
 		}
 	}
 	s2*6
-	\tempo "Tempo I." % bar 35
+	% bar 35
+	\tempo "Tempo I." 
 	s2*60
-	\tempo "Poco più animato." % bar 95
+	% bar 95
+	\tempo \markup {
+		\concat {
+			"Poco più animato"
+			\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+			" = 56"
+		}
+	}
 	s2*7
-	\tempo "rit." % bar 102
+	% bar 102
+	\tempo "rit."
 	s2*2
-	\tempo "Tempo I." % bar 104
+	% bar 104
+	\tempo "Tempo I."
 	s2*64
-	\tempo "ritard." % bar 168
+	% bar 168
+	\tempo "ritard."
 	s2
-	\tempo "in tempo" %bar 169
+	%bar 169
+	\tempo "in tempo"
 	s2*38
 }
 tempiMvtIII = {

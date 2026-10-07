@@ -40,10 +40,10 @@ musicFlautoIIMvtII = \relative c''' {
 	r4 d--\pp
 % Bars 36 to 40
 	d-- d--
-	d d
-	d d
-	d d 
-	d d
+	d-- d--
+	d-- d--
+	d-- d-- 
+	d-- d--
 % Bars 41 to 45
 	R2*16
 	
@@ -147,7 +147,7 @@ musicFlautoIIMvtII = \relative c''' {
 	r8 bes4_\pcresc( a16 g
 % Bars 151 to 155
 	f8) c'4(\mf\> bes8
-	a2\p)(
+	a2\p
 	bes8) r r4
 	R2*4
 % Bars 156 to 160
@@ -173,8 +173,8 @@ musicFlautoIIMvtII = \relative c''' {
 % Bars 176 to 180
 	f) r r4
 	r16 fis-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
-	a8\ff r b-^ r
-	bes!8-^ r r4
+	a8->\ff r b-^-. r
+	bes!8-^-. r r4
 	r4 r8 ees!8\pp(
 % Bars 181 to 185
 	c8 a f16 ees d c
@@ -197,5 +197,5 @@ musicFlautoIIMvtII = \relative c''' {
 	
 	
 % Bar 206
-	\ni R2\fermata \bar "|."
+	\ni R2\fermata \fine
 }

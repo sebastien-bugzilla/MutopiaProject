@@ -19,14 +19,14 @@ musicFlautoIIMvtII = \relative c''' {
 	
 	
 	r4 r8 g\mf
-	f4 \dynEO #'(0 . 2) bes\fz~
-	bes4( a
+	f4 \dynEO #'(0 . 2) bes\fz(~
+	bes4 a
 % Bars 21 to 25
 	aes4.)\pp r8
 	R2
 	b4(\p g8\< d')\!
 	b(\> g\! e d)
-	c(\p e e4~
+	c(\p e! e4~
 % Bars 26 to 30
 	e8 g f e)
 	e8( c~ c16 b d b)
@@ -40,10 +40,10 @@ musicFlautoIIMvtII = \relative c''' {
 	r4 d--\pp
 % Bars 36 to 40
 	d-- d--
-	d d
-	d d
-	d d 
-	d d
+	d-- d--
+	d-- d--
+	d-- d-- 
+	d-- d--
 % Bars 41 to 45
 	R2
 	R
@@ -150,7 +150,7 @@ musicFlautoIIMvtII = \relative c''' {
 	r8 bes4( a16 g
 % Bars 151 to 155
 	f8) c'4(\mf\> bes8
-	a2\p)(
+	a2\p
 	bes8) r r4
 	R2*4
 % Bars 156 to 160
@@ -176,8 +176,8 @@ musicFlautoIIMvtII = \relative c''' {
 % Bars 176 to 180
 	f) r r4
 	r16 fis-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
-	a8\ff r b-^ r
-	bes!8-^ r r4
+	a8->\ff r b-^-. r
+	bes!8-^-. r r4
 	r4 r8 ees8\pp(
 % Bars 181 to 185
 	c8 a f16 ees d c
@@ -190,8 +190,8 @@ musicFlautoIIMvtII = \relative c''' {
 % Bars 196 to 200
 	
 	
-	r8 \dynEO #'(0 . 1.5) f''\ff d g 
-	ees c a a-^\noBeam
+	r8 \dynEO #'(0 . 1.5) f''-!\ff d-! g-! 
+	ees-! c-! a-! a-^\noBeam
 	bes-^ r f4~\fp
 % Bars 201 to 205
 	<< f2~ {s4\> s8 s\!} >>
@@ -200,5 +200,5 @@ musicFlautoIIMvtII = \relative c''' {
 	
 	
 % Bar 206
-	R2_\fermata \bar "|."
+	R2_\fermata \fine
 }

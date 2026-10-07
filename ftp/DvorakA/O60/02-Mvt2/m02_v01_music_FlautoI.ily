@@ -12,7 +12,7 @@ musicFlautoIMvtII = \relative c'' {
 	\ni \mmrPos #-7 R2 \no
 	r8 bes(\p a d~
 	d4.\< e8\!
-	f2\fp~
+	f2\fp\>~
 	f8)\pp r r4
 % Bars 6 to 10
 	R2*12
@@ -43,10 +43,10 @@ musicFlautoIMvtII = \relative c'' {
 	r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
-	fis fis
-	fis fis
-	f! f 
-	f f
+	fis-- fis--
+	fis-- fis--
+	f!-- f-- 
+	f-- f--
 % Bars 41 to 45
 	R2
 	r4 \tuplet 3/2 4 {c8-.\f g'-. c-.}
@@ -107,12 +107,12 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 106 to 110
 	f8( ees4.)
 	des2\fz
-	ces\fz
-	ces\fz
-	ces\fz
+	b\fz
+	b\fz
+	b\fz
 % Bars 111 to 115
-	ces\fz \mark \default
-	ces8 r r4
+	b\fz \mark \default
+	b8 r r4
 	R2*8
 % Bars 116 to 120
 	
@@ -165,11 +165,11 @@ musicFlautoIMvtII = \relative c'' {
 	c8 c( f16 c a f)\!
 	r4 bes\pp~
 	bes8 bes( ees16 bes g ees)
-	r4 a\trill~\<
-	a16( bes32 a g16 a\! c a g f
+	r4 a\trill~
+	a16( bes32 a g16 a c a g f
 % Bars 166 to 170
 	d ees a->_\dimmarkup f ees c b c
-	f ees c a gis a d c
+	f-> ees c a gis a d c
 	a f e f ees f c\p f)~ \mark \default
 	f2~
 	f8 \hairpinShorten #'(0 . 1) d(\< ees! e)\!
@@ -182,7 +182,7 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 176 to 180
 	d) r r4
 	r16 fis,-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
-	d8\ff r g4-^~
+	d8->\ff r g4-^~
 	g8\> bes( a g)~\!
 	g\p f4.~_\dimmarkup
 % Bars 181 to 185
@@ -206,5 +206,5 @@ musicFlautoIMvtII = \relative c'' {
 	bes2~
 	bes~
 % Bar 206
-	bes\fermata \bar "|."
+	bes\fermata \fine
 }

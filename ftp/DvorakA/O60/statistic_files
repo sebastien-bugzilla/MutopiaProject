@@ -1,5 +1,5 @@
     155     417    5105 10_DvorakSymph6_Conductor_mvt1.ly
-    141     383    4654 10_DvorakSymph6_Conductor_mvt2.ly
+    141     435    4706 10_DvorakSymph6_Conductor_mvt2.ly
     147     389    4872 10_DvorakSymph6_Conductor_mvt3.ly
     155     410    5154 10_DvorakSymph6_Conductor_mvt4.ly
     248     596    5466 20_DvorakSymph6_Part01_Flauti.ly
@@ -41,17 +41,17 @@
     634    1466   18717 00-Common/DvorakSymph6_Format_Part13_Contrabasso.ily
     742    1709   21808 00-Common/DvorakSymph6_Format_Part14_Bassi.ily
     226    1330   20611 00-Common/DvorakSymph6_Format_temp.ily
-     32     275    1781 00-Common/DvorakSymph6_Header.ily
+     35     292    2024 00-Common/DvorakSymph6_Header.ily
      56     203    2080 00-Common/DvorakSymph6_LayoutConductors.ily
      64     232    2200 00-Common/DvorakSymph6_LayoutParts.ily
      65     280    2523 00-Common/DvorakSymph6_NameGrandStaff.ily
     505    1572   11777 00-Common/DvorakSymph6_NameStaff.ily
     667    2308   19026 00-Common/DvorakSymph6_NameVoice.ily
-     70     205    1709 00-Common/DvorakSymph6_PaperConductors.ily
+     70     203    1691 00-Common/DvorakSymph6_PaperConductors.ily
      60     163    1442 00-Common/DvorakSymph6_PaperParts.ily
     518    1415   12180 00-Common/DvorakSymph6_Shortcuts.ily
-   1221    3777   28684 00-Common/DvorakSymph6_Tempi.ily
-     33     166    1171 00-Common/DvorakSymph6_timeMvt.ily
+   1234    3801   28791 00-Common/DvorakSymph6_Tempi.ily
+     33     164    1133 00-Common/DvorakSymph6_timeMvt.ily
     691    1809    9718 01-Mvt1/m01_v01_music_FlautoI_C.ily
     691    1677    8125 01-Mvt1/m01_v01_music_FlautoI.ily
     691    1494    7382 01-Mvt1/m01_v02_music_FlautoII_C.ily
@@ -103,10 +103,10 @@
     700    2350   10843 01-Mvt1/m01_v24_music_Contrabasso_Bassi.ily
     691    2124   10260 01-Mvt1/m01_v24_music_Contrabasso_C.ily
     691    2128   10371 01-Mvt1/m01_v24_music_Contrabasso.ily
-    210     718    3958 02-Mvt2/m02_v01_music_FlautoI_C.ily
-    210     661    3266 02-Mvt2/m02_v01_music_FlautoI.ily
-    204     564    2736 02-Mvt2/m02_v02_music_FlautoII_C.ily
-    201     519    2629 02-Mvt2/m02_v02_music_FlautoII.ily
+    210     719    4003 02-Mvt2/m02_v01_music_FlautoI_C.ily
+    210     660    3270 02-Mvt2/m02_v01_music_FlautoI.ily
+    204     563    2765 02-Mvt2/m02_v02_music_FlautoII_C.ily
+    201     518    2645 02-Mvt2/m02_v02_music_FlautoII.ily
     244     831    4888 02-Mvt2/m02_v03_music_OboeI_C.ily
     244     729    3787 02-Mvt2/m02_v03_music_OboeI.ily
     244     713    3665 02-Mvt2/m02_v04_music_OboeII_C.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2405   10460 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2408   10495 04-Mvt4/m04_v24_music_Contrabasso.ily
- 115024  334921 1947886 total
+ 115040  335008 1948326 total

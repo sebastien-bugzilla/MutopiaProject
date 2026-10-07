@@ -12,7 +12,7 @@ musicFlautoIMvtII = \relative c'' {
 	R2
 	\partCombineApart r8 bes(\p a d~
 	d4._\< e8\!
-	f2_\fp~
+	f2_\fp\>~
 	\dynEO #'(0 . 1) f8)_\pp r r4 \partCombineAutomatic
 % Bars 6 to 10
 	R2*12
@@ -22,18 +22,18 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	\partCombineApart r8 a(\p\<-- bes-- c--)\!
-	d4 f~
-	f8(_\dimmarkup ees d c
+	d4 f(~
+	f8_\dimmarkup ees d c
 % Bars 21 to 25
 	bes4.) \partCombineAutomatic r8 
 	R2
-	d4(\p b8\< f')\!
-	d(\> b\! g f)
+	d4(\p b!8\< f')\!
+	d(\> b!\! g f)
 	e(\p g c4~
 % Bars 26 to 30
 	c8 b a g)
-	g8(~ g32 a g f-.) f4\<(
-	e8)\! r r4
+	\partCombineApart g8(~ g32 a g f-.) f4\<(
+	e8)\! \partCombineAutomatic r r4
 	R2*6
 % Bars 31 to 35
 	
@@ -43,10 +43,10 @@ musicFlautoIMvtII = \relative c'' {
 	r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
-	fis fis
-	fis fis
-	f! f 
-	f f
+	fis-- fis--
+	fis-- fis--
+	f!-- f-- 
+	f-- f--
 % Bars 41 to 45
 	R2
 	\partCombineApart r4 \tuplet 3/2 4 {c8-.\f g'-. c-.} \partCombineAutomatic
@@ -107,12 +107,12 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 106 to 110
 	f8( ees4.)
 	des2\fz
-	\dynEO #'(0 . 1) ces\fz
-	\dynEO #'(0 . 1) ces\fz
-	\dynEO #'(0 . 1) ces\fz
+	\dynEO #'(0 . 1) b\fz
+	\dynEO #'(0 . 1) b\fz
+	\dynEO #'(0 . 1) b\fz
 % Bars 111 to 115
-	\dynEO #'(0 . 1) ces\fz \mark \default
-	ces8 r r4
+	\dynEO #'(0 . 1) b\fz \mark \default
+	b8 r r4
 	R2*8
 % Bars 116 to 120
 	
@@ -158,18 +158,18 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 156 to 160
 	
 	
-	r8 \partCombineChords bes4(\pp a16 g
+	r8 \partCombineChords bes!4(\pp a16 g
 	d8) \partCombineAutomatic r r4
 	\partCombineApart r c'4->\p\<~
 % Bars 161 to 165
 	c8 c( f16 c a f)\!
 	r4 bes\pp~
 	bes8 bes( ees16 bes g ees)
-	r4 a\trill~\<
-	a16( bes32 a g16 a\! c a g f
+	r4 a\trill~
+	a16( bes32 a g16 a c a g f
 % Bars 166 to 170
 	d ees a->_\dimmarkup f ees c b c
-	f ees c a gis a d c
+	f-> ees c a gis a d c
 	a f e f ees f c_\p f)~ \mark \default
 	f2~
 	f8 d(\< ees! e)\!
@@ -182,7 +182,7 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 176 to 180
 	d) r r4
 	r16 fis,-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
-	\once \partCombineApart d8 r g4-^~
+	\once \partCombineApart d8 r g4->~
 	g8_\> bes( a g)~\!
 	g\p f4.~^\dimmarkup
 % Bars 181 to 185
@@ -206,5 +206,5 @@ musicFlautoIMvtII = \relative c'' {
 	bes2~
 	bes~
 % Bar 206
-	bes\fermata \bar "|."
+	bes\fermata \fine
 }
