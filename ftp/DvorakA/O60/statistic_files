@@ -50,7 +50,7 @@
      70     205    1709 00-Common/DvorakSymph6_PaperConductors.ily
      60     163    1442 00-Common/DvorakSymph6_PaperParts.ily
     518    1415   12180 00-Common/DvorakSymph6_Shortcuts.ily
-   1202    3750   28531 00-Common/DvorakSymph6_Tempi.ily
+   1221    3777   28684 00-Common/DvorakSymph6_Tempi.ily
      33     166    1171 00-Common/DvorakSymph6_timeMvt.ily
     691    1809    9718 01-Mvt1/m01_v01_music_FlautoI_C.ily
     691    1677    8125 01-Mvt1/m01_v01_music_FlautoI.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2405   10460 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2408   10495 04-Mvt4/m04_v24_music_Contrabasso.ily
- 115005  334894 1947733 total
+ 115024  334921 1947886 total

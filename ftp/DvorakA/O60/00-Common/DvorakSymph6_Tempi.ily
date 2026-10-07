@@ -7,37 +7,56 @@
 tempiMvtI = {
 	\tempo \markup {
 		\concat { 
-			"Allegro non tanto. (M.M. "
-			\smaller \general-align #Y #DOWN \note {4} #0.75 
-			" = 132.)"
+			"Allegro non tanto "
+			\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+			" = 132"
 		}
 	}
 	s2.*22
-	\tempo \markup {  % bar 23
+	% bar 23
+	\tempo \markup {
 		\concat {
-			"un poco più animato. "
-			\smaller \general-align #Y #DOWN \note {4} #0.75
+			"Un poco più animato "
+			\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
 			" = 144"
 		}
 	}
 	s2.*26
-	\tempo "Tempo I." % bar 49
+	% bar 49
+	\tempo "Tempo I. Grandioso"
 	s2.*11
-	\tempo "Un poco animato." % bar 60
+	% bar 60
+	\tempo "Un poco animato" 
 	s2.*60
-	\tempo "tranquillo." % bar 120
-	s2.*209
-	\tempo "Più tranquillo." % bar 315
+	% bar 120
+	\tempo "tranquillo" 
+	s2.*71
+	% bar 191
+	\tempo "sempre molto tranquillo" 
+	s2.*119
+	% bar 310
+	\tempo "pesante"
+	s2.*19
+	% bar 329
+	\tempo "Più tranquillo" 
 	s2.*21 
-	\tempo "Poco animato." % 336
+	% bar 350
+	\tempo "Poco animato" 
 	s2.*77
-	\tempo "Poco tranquillo." % bar 413
+	 % bar 427
+	\tempo "Poco tranquillo"
 	s2.*47
-	\tempo "accelerando" % bar 460
-	s2.*72
-	\tempo "poco sostenuto." % bar 532
+	% bar 474
+	\tempo "accelerando" 
+	s2.*38
+	% bar 512
+	\tempo "pesante"
+	s2.*34
+	% bar 546
+	\tempo "poco sostenuto"
 	s2.*11
-	\tempo "in tempo" % bar 543
+	% bar 557
+	\tempo "in tempo" 
 	s2.*4
 }
 tempiMvtII = {
