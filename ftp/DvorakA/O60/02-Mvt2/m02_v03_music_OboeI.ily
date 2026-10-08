@@ -1,6 +1,6 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -11,8 +11,8 @@ musicOboeIMvtII = \relative c'' {
 % Bars 1 to 5
 	\ni \mmrPos #4 R2 \no 
 	r8 \stemUp bes(\p a4
-	bes2)~\< \stemNeutral
-	bes8\fp( d bes\> c
+	bes2~\< \stemNeutral
+	bes8\fp d bes\> c
 	d)\pp r r4
 % Bars 6 to 10
 	R2
@@ -28,7 +28,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	
-	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f8(_\pcresc bes d f~
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f8(_\pcresc^\brack\mf bes d f~
 	f_\dimmarkup ees d c
 % Bars 21 to 25
 	f4.)\pp r8
@@ -40,7 +40,7 @@ musicOboeIMvtII = \relative c'' {
 	c~
 	c4(~ c16\< b d b)
 	c4.( cis8)\!
-	d->\fp bes-> g16(-- a-- bes-- c--)
+	d->\fp bes-> g16(-- a-- bes-- c!--)
 	d8-> bes-> g16(_\crescmarkup-- a-- bes-- c--)
 % Bars 31 to 35
 	d8-> bes-> g16(-- a-- bes-- c--)
@@ -50,10 +50,10 @@ musicOboeIMvtII = \relative c'' {
 	r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
-	fis fis
-	fis fis
-	f! f
-	f f 
+	fis-- fis--
+	fis-- fis--
+	f!-- f--
+	f-- f--
 % Bars 41 to 45
 	r4 \tuplet 3/2 4 {g,8-._\crescmarkup d'-. g-. }
 	R2
@@ -74,8 +74,8 @@ musicOboeIMvtII = \relative c'' {
 	R2*2
 % Bars 56 to 60
 	
-	r8 d(\p\< bes e~)\!
-	e4\fz r
+	r8 d(\p\< bes e~\!
+	e4)\fz r
 	e\p r
 	e_\dimmarkup r
 % Bars 61 to 65
@@ -124,10 +124,10 @@ musicOboeIMvtII = \relative c'' {
 	f8 r r4
 	a8 r r4
 	R2
-	f4.(\ff ges8)~
-	ges( f4.)~
+	f4.(\ff ges8~
+	ges f4.~
 % Bars 106 to 110
-	f8( ees4.)
+	f8 ees4.)
 	bes'2\fz
 	bes\fz
 	a\fz
@@ -149,9 +149,9 @@ musicOboeIMvtII = \relative c'' {
 	bes
 	R2 
 	ges4(_\ppocoapococrescendo ees!8 aes
-	ges2)~
+	ges2~
 % Bars 126 to 130
-	ges4 ees!8( a!~
+	ges4) ees!8( a!~
 	a) fis-. d-. a'~
 	a fis-. d-. a'~
 	a16\f fis-. d-. c'~ c a-. fis-. d'~
@@ -211,8 +211,8 @@ musicOboeIMvtII = \relative c'' {
 	f)\noBeam d(\mf\< ees e\!
 % Bars 176 to 180
 	f)\noBeam d(\f\< ees e\!
-	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes->-.\!
-	a8\ff r g4-^~
+	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes!->-.\!
+	a->-.8\ff r g4-^~
 	g8\> bes( a g~\!
 	g\p f4) r8
 % Bars 181 to 185

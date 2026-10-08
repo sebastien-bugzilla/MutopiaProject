@@ -1,10 +1,10 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
-%#                   C U E   V O I C E   F O R   F L O T E N                   #
+%#                   C U E   V O I C E   F O R   F L A U T I                   #
 %###############################################################################
-cueVoiceFloteIMvtI = \relative c {
+cueVoiceFlautoIMvtI = \relative c {
 	s2.*32
 	% bar 33
 	f''8-\offset X-offset -1 ^\markup {Hob.} g aes aes g f
@@ -26,14 +26,14 @@ cueVoiceFloteIMvtI = \relative c {
 	\voiceOne r4^\markup {Hob.} cis,( d8 e
 	fis4) s s
 }
-cueVoiceFloteIMvtII = \relative c {
+cueVoiceFlautoIMvtII = \relative c {
 	% bar 1
 	r8^\markup {Hob.} f' d g
 	s2*77
 	% bar 79
 	bes'4(-\offset X-offset #-4 ^\markup {Viol.} c)
 }
-cueVoiceFloteIMvtIII = \relative c {
+cueVoiceFlautoIMvtIII = \relative c {
 	s2.*101
 	% bar 102 - 110
 	d''4(\pp^\markup {Viol} ees) d(
@@ -60,7 +60,7 @@ cueVoiceFloteIMvtIII = \relative c {
 	aes g8( fis g4)
 	\once \stemUp bes s s
 }
-cueVoiceFloteIMvtIV = \relative c {
+cueVoiceFlautoIMvtIV = \relative c {
 	\partial 4 s4
 	s1*165
 	% bar 166
@@ -72,7 +72,7 @@ cueVoiceFloteIMvtIV = \relative c {
 	fis r r fis
 	fis r r \oneVoice s
 }
-cueVoiceFloteIIMvtI = \relative c {
+cueVoiceFlautoIIMvtI = \relative c {
 	s2.*74
 	% bar 75 - 77
 	\voiceOne dis''2(^\markup {Viol.} a4
@@ -95,7 +95,7 @@ cueVoiceFloteIIMvtI = \relative c {
 	r4-\tweak X-offset #-1 ^\markup {Fl.I} cis4(\pp d8 e)
 	fis2.
 }
-cueVoiceFloteIIMvtII = \relative c {
+cueVoiceFlautoIIMvtII = \relative c {
 	s2*17
 	% bar 18
 	\voiceOne r8-\offset X-offset -1.5 ^\markup {Fl.I} a'''[ bes] \oneVoice s
@@ -108,7 +108,7 @@ cueVoiceFloteIIMvtII = \relative c {
 	f,,,8[^\markup {Fag.} f'] f, f'
 	f,[ f'] f, fis'
 }
-cueVoiceFloteIIMvtIII = \relative c {
+cueVoiceFlautoIIMvtIII = \relative c {
 	s2.*109
 	% bar 110 - 112
 	r4-\tweak X-offset #-1 ^\markup {Fl.I} a'''8( gis a4)
@@ -120,7 +120,7 @@ cueVoiceFloteIIMvtIII = \relative c {
 	r b8( ais b4)
 	r cis8( bis cis4)
 }
-cueVoiceFloteIIMvtIV = \relative c {
+cueVoiceFlautoIIMvtIV = \relative c {
 	\partial 4 s4
 	s1*7
 	%bar 8 - 9
@@ -135,7 +135,7 @@ cueVoiceFloteIIMvtIV = \relative c {
 	b a g) s
 }
 %###############################################################################
-%#                    C U E   V O I C E   F O R   O B O E N                    #
+%#                     C U E   V O I C E   F O R   O B O I                     #
 %###############################################################################
 cueVoiceOboeIMvtI = \relative c {
 %	no CueVoice for MVT I
@@ -213,9 +213,9 @@ cueVoiceOboeIIMvtIV = \relative c {
 %	No cue voice for Mvt IV
 }
 %###############################################################################
-%#              C U E   V O I C E   F O R   K L A R I N E T T E N              #
+%#               C U E   V O I C E   F O R   C L A R I N E T T I               #
 %###############################################################################
-cueVoiceKlarinetteIMvtI = \relative c {
+cueVoiceClarinettoIMvtI = \relative c {
 	\transposition a
 	s2.*238
 	% bar 225
@@ -225,13 +225,13 @@ cueVoiceKlarinetteIMvtI = \relative c {
 	\once \voiceOne r4 c'^(-\offset X-offset -3 ^\markup {Fl.} d8 e
 	f2.)
 }
-cueVoiceKlarinetteIMvtII = \relative c {
+cueVoiceClarinettoIMvtII = \relative c {
 	\transposition bes
 	% bar 1 - 2
 	\voiceTwo r8-\tweak X-offset #-2 _\markup {Hob.} g'' e a~
 	a4*1/2 s8 s4 \oneVoice  
 }
-cueVoiceKlarinetteIMvtIII = \relative c {
+cueVoiceClarinettoIMvtIII = \relative c {
 	\transposition a
 	s2.*225
 	% bar 225 - 228
@@ -240,10 +240,10 @@ cueVoiceKlarinetteIMvtIII = \relative c {
 	d e8 c d4
 	d e8 c d4)
 }
-cueVoiceKlarinetteIMvtIV = \relative c {
+cueVoiceClarinettoIMvtIV = \relative c {
 %	no cue voice for Mvt IV
 }
-cueVoiceKlarinetteIIMvtI = \relative c {
+cueVoiceClarinettoIIMvtI = \relative c {
 	\transposition a
 	s2.*211
 	% bar 198 - 199
@@ -257,7 +257,7 @@ cueVoiceKlarinetteIIMvtI = \relative c {
 	\once \voiceOne r4-\offset X-offset -2 ^\markup {Fl.} c'^( d8 e
 	f2.)
 }
-cueVoiceKlarinetteIIMvtII = \relative c {
+cueVoiceClarinettoIIMvtII = \relative c {
 	\transposition bes
 	s2*14
 	% bar 15 - 17
@@ -270,7 +270,7 @@ cueVoiceKlarinetteIIMvtII = \relative c {
 	c a~ a16 b c d
 	e8 r r4 \stemNeutral
 }
-cueVoiceKlarinetteIIMvtIII = \relative c {
+cueVoiceClarinettoIIMvtIII = \relative c {
 	\transposition a
 	s2.*225
 	% bar 225 - 228
@@ -279,25 +279,25 @@ cueVoiceKlarinetteIIMvtIII = \relative c {
 	d e8 c d4
 	d e8 c d4)
 }
-cueVoiceKlarinetteIIMvtIV = \relative c {
+cueVoiceClarinettoIIMvtIV = \relative c {
 	\transposition a
 	\partial 4 s4
 	s1*7
 	\voiceOne r2 r4-\tweak X-offset #-2 ^\markup {Clar.I} \oneVoice g'''
 }
 %###############################################################################
-%#                  C U E   V O I C E   F O R   F A G O T T E                  #
+%#                  C U E   V O I C E   F O R   F A G O T T I                  #
 %###############################################################################
-cueVoiceFagottIMvtI = \relative c {
+cueVoiceFagottoIMvtI = \relative c {
 	s2.*213
 	% bar 200 - 201
 	<f'' a>2(-\tweak X-offset #-3 ^\markup {Clar.} <e g>8 <d f>)
 	<d f>2( <c e>8 <b d>)
 }
-cueVoiceFagottIMvtII = \relative c {
+cueVoiceFagottoIMvtII = \relative c {
 %	no cue voice for Mvt II
 }
-cueVoiceFagottIMvtIII = \relative c {
+cueVoiceFagottoIMvtIII = \relative c {
 	s2.*185
 	% bar 185 - 192
 	g'''2(^\markup {Clar.} fis4
@@ -309,7 +309,7 @@ cueVoiceFagottIMvtIII = \relative c {
 	cis2 d4
 	e2 fis4)
 }
-cueVoiceFagottIMvtIV = \relative c {
+cueVoiceFagottoIMvtIV = \relative c {
 	\partial 4 s4
 	s1*318
 	% bar 319 - 323
@@ -319,18 +319,18 @@ cueVoiceFagottIMvtIV = \relative c {
 	fis e fis g8 a)
 	b4 s s2
 }
-cueVoiceFagottIIMvtI = \relative c {
+cueVoiceFagottoIIMvtI = \relative c {
 	s2.*213
 	% bar 200 - 201
 	<f'' a>2(^\markup {Clar.} <e g>8 <d f>)
 	<d f>2( <c e>8 <b d>)
 }
-cueVoiceFagottIIMvtII = \relative c {
+cueVoiceFagottoIIMvtII = \relative c {
 	s2*2
 	% bar 3
 	r8-\offset X-offset -3 ^\markup {Fag.I} bes'( g c)
 }
-cueVoiceFagottIIMvtIII = \relative c {
+cueVoiceFagottoIIMvtIII = \relative c {
 	s2.*225
 	% bar 225 - 228
 	fis''4^(-\offset X-offset -3 ^\markup {Viol.} g8 e fis4
@@ -338,7 +338,7 @@ cueVoiceFagottIIMvtIII = \relative c {
 	d^( e8 cis d4
 	d e8 cis d4)
 }
-cueVoiceFagottIIMvtIV = \relative c {
+cueVoiceFagottoIIMvtIV = \relative c {
 	\voiceOne \partial 4 a'4(-\offset X-offset -4 ^\markup {Bässe}
 	fis e d cis) \oneVoice 
 	s1*315
@@ -347,9 +347,9 @@ cueVoiceFagottIIMvtIV = \relative c {
 	fis e d cis)
 }
 %###############################################################################
-%#                   C U E   V O I C E   F O R   H O R N E R                   #
+%#                    C U E   V O I C E   F O R   C O R N I                    #
 %###############################################################################
-cueVoiceHornIMvtI = \relative c {
+cueVoiceCornoIMvtI = \relative c {
 	\transposition d
 	s2.*80
 	% bar 81 - 82
@@ -368,7 +368,7 @@ cueVoiceHornIMvtI = \relative c {
 	bes4.-\offset X-offset -2 ^\markup {Viol.I} g8^.^( a^. bes^.)
 	bes4. g8^(^. a^. bes^.)
 }
-cueVoiceHornIMvtII = \relative c {
+cueVoiceCornoIMvtII = \relative c {
 	\transposition f
 	s2*2
 	% bar 3
@@ -378,7 +378,7 @@ cueVoiceHornIMvtII = \relative c {
 	\voiceOne f'16^\markup {Clar.} e d g f e d g
 	f e d d' c b a g \oneVoice 
 }
-cueVoiceHornIMvtIII = \relative c {
+cueVoiceCornoIMvtIII = \relative c {
 	\transposition f
 	s2.*175
 	% bar 175 - 180
@@ -395,7 +395,7 @@ cueVoiceHornIMvtIII = \relative c {
 	b( c8 ais b4)
 	b( c8 ais b4)
 }
-cueVoiceHornIMvtIV = \relative c {
+cueVoiceCornoIMvtIV = \relative c {
 	\transposition e
 	\partial 4 s4
 	s1*12
@@ -414,7 +414,7 @@ cueVoiceHornIMvtIV = \relative c {
 	d8_( g fis e d e c! d)
 	b4. b8 b4_( a) \oneVoice 
 }
-cueVoiceHornIIMvtI = \relative c {
+cueVoiceCornoIIMvtI = \relative c {
 	\transposition d
 	s2.*80
 	% bar 81 - 82
@@ -431,7 +431,7 @@ cueVoiceHornIIMvtI = \relative c {
 	bes'2(-\offset X-offset -5 ^\markup {Viol.} aes8 g)
 	b!2( a!8 gis)
 }
-cueVoiceHornIIMvtII = \relative c {
+cueVoiceCornoIIMvtII = \relative c {
 	\transposition f
 	s2*2
 	%  bar 3
@@ -445,7 +445,7 @@ cueVoiceHornIIMvtII = \relative c {
 	\voiceOne f'16-\tweak X-offset #-3 ^\markup {Clar.} e d g f e d g
 	f e d d' c b a g \oneVoice 
 }
-cueVoiceHornIIMvtIII = \relative c {
+cueVoiceCornoIIMvtIII = \relative c {
 	\transposition f
 	s2.*252
 	% bar 252 - 255
@@ -454,7 +454,7 @@ cueVoiceHornIIMvtIII = \relative c {
 	b( c8 ais b4)
 	b( c8 ais b4)
 }
-cueVoiceHornIIMvtIV = \relative c {
+cueVoiceCornoIIMvtIV = \relative c {
 	\transposition e
 	\partial 4 s4
 	s1*12
@@ -473,7 +473,7 @@ cueVoiceHornIIMvtIV = \relative c {
 	d8( g fis e d e c! d)
 	b4. b8 b4( a) \stemNeutral
 }
-cueVoiceHornIIIMvtI = \relative c {
+cueVoiceCornoIIIMvtI = \relative c {
 	\transposition e
 	s2.*80
 	% bar 81 - 82
@@ -490,7 +490,7 @@ cueVoiceHornIIIMvtI = \relative c {
 	d d e
 	f s s
 }
-cueVoiceHornIIIMvtII = \relative c {
+cueVoiceCornoIIIMvtII = \relative c {
 	\transposition bes
 	s2*26
 	% bar 27 - 28
@@ -500,7 +500,7 @@ cueVoiceHornIIIMvtII = \relative c {
 	% bar 66
 	\voiceOne f'16-\offset X-offset -3 ^\markup {Clar.} e d d' c b a g \oneVoice 
 }
-cueVoiceHornIIIMvtIII = \relative c {
+cueVoiceCornoIIIMvtIII = \relative c {
 	\transposition d
 	s2.*39
 	% bar 40
@@ -515,10 +515,10 @@ cueVoiceHornIIIMvtIII = \relative c {
 	% bar 323
 	<c, e>2^\markup {F-Hörner} q4
 }
-cueVoiceHornIIIMvtIV = \relative c {
+cueVoiceCornoIIIMvtIV = \relative c {
 %	no cue voice for mvt IV
 }
-cueVoiceHornIVMvtI = \relative c {
+cueVoiceCornoIVMvtI = \relative c {
 	\transposition e
 	s2.*80
 	% bar 81 - 82
@@ -537,14 +537,14 @@ cueVoiceHornIVMvtI = \relative c {
 	a b c 
 	d d e 
 }
-cueVoiceHornIVMvtII = \relative c {
+cueVoiceCornoIVMvtII = \relative c {
 	\transposition bes
 	s2*26
 	% bar 27 - 28
 	r8^\markup {F-Horn} g''4.~
 	g8 \stemUp b4 b8 \stemNeutral
 }
-cueVoiceHornIVMvtIII = \relative c {
+cueVoiceCornoIVMvtIII = \relative c {
 	\transposition d
 	s2.*39
 	% bar 40
@@ -560,13 +560,13 @@ cueVoiceHornIVMvtIII = \relative c {
 	<c, e>2^\markup {F-Hörner} q4
 	
 }
-cueVoiceHornIVMvtIV = \relative c {
+cueVoiceCornoIVMvtIV = \relative c {
 %	no cue voice for mvt IV
 }
 %###############################################################################
-%#                C U E   V O I C E   F O R   T R O M P E T E N                #
+%#                   C U E   V O I C E   F O R   T R O M B E                   #
 %###############################################################################
-cueVoiceTrompeteIMvtI = \relative c {
+cueVoiceTrombeIMvtI = \relative c {
 	\transposition d
 	s2.*151
 	% bar 152 - 159
@@ -605,7 +605,7 @@ cueVoiceTrompeteIMvtI = \relative c {
 	\voiceOne a,8^\markup {Viol.} f g a e4
 	d8 f a4 s \oneVoice 
 }
-cueVoiceTrompeteIMvtII = \relative c {
+cueVoiceTrombeIMvtII = \relative c {
 	\transposition bes
 	s2*100
 	% bar 101 - 103
@@ -621,7 +621,7 @@ cueVoiceTrompeteIMvtII = \relative c {
 	c a4\p a8_~
 	a a_(\< bes b)\!
 }
-cueVoiceTrompeteIMvtIII = \relative c {
+cueVoiceTrombeIMvtIII = \relative c {
 	\transposition d
 	s2.*113
 	% bar 114 - 117
@@ -642,7 +642,7 @@ cueVoiceTrompeteIMvtIII = \relative c {
 	ees ees ees
 	ees ees ees
 }
-cueVoiceTrompeteIMvtIV = \relative c {
+cueVoiceTrombeIMvtIV = \relative c {
 	\transposition d
 	\partial 4 s4
 	s1*29
@@ -659,7 +659,7 @@ cueVoiceTrompeteIMvtIV = \relative c {
 	c\fp
 	d\fp
 }
-cueVoiceTrompeteIIMvtI = \relative c {
+cueVoiceTrombeIIMvtI = \relative c {
 	\transposition d
 	s2.*151
 	% bar 152 - 159
@@ -698,7 +698,7 @@ cueVoiceTrompeteIIMvtI = \relative c {
 	a,8-\offset X-offset -4 ^\markup {Viol.} f g a e4
 	\voiceOne d8 f a4 \oneVoice s
 }
-cueVoiceTrompeteIIMvtII = \relative c {
+cueVoiceTrombeIIMvtII = \relative c {
 	\transposition bes
 	s2*100
 	% bar 101 - 103
@@ -714,7 +714,7 @@ cueVoiceTrompeteIIMvtII = \relative c {
 	c a4\p a8_~
 	a a(\< bes b)\!
 }
-cueVoiceTrompeteIIMvtIII = \relative c {
+cueVoiceTrombeIIMvtIII = \relative c {
 	\transposition d
 	s2.*113
 	% bar 114 - 117
@@ -735,7 +735,7 @@ cueVoiceTrompeteIIMvtIII = \relative c {
 	ees ees ees
 	ees ees ees
 }
-cueVoiceTrompeteIIMvtIV = \relative c {
+cueVoiceTrombeIIMvtIV = \relative c {
 	\transposition d
 	\partial 4 s4
 	s1*29
@@ -753,9 +753,9 @@ cueVoiceTrompeteIIMvtIV = \relative c {
 	d\fp
 }
 %###############################################################################
-%#                  C U E   V O I C E   F O R   P O S A U N E                  #
+%#                 C U E   V O I C E   F O R   T R O M B O N I                 #
 %###############################################################################
-cueVoicePosauneIMvtI = \relative c {
+cueVoiceTrombonoIMvtI = \relative c {
 	s2.*45
 	% bar 46 - 48
 	gis''''4-\tweak X-offset #-4.8 ^\markup {Viol.} a8:16 g: e: cis:
@@ -795,7 +795,7 @@ cueVoicePosauneIMvtI = \relative c {
 	\voiceOne a'''8-\tweak extra-offset #'(-3.5 . 6.8) _\markup {Viol.} fis g a e4
 	d8 fis a4 s \oneVoice 
 }
-cueVoicePosauneIMvtIV = \relative c {
+cueVoiceTrombonoIMvtIV = \relative c {
 	\partial 4 s4
 	s1*29
 	% bar 30 - 35
@@ -805,7 +805,7 @@ cueVoicePosauneIMvtIV = \relative c {
 	g e g, g' g e g, e''
 	e g, e e' e g, e g'
 }
-cueVoicePosauneIIMvtI = \relative c {
+cueVoiceTrombonoIIMvtI = \relative c {
 	s2.*45
 	% bar 46 - 48
 	gis''''4-\tweak X-offset #-4.8 ^\markup {Viol.} a8:16 g: e: cis:
@@ -844,7 +844,7 @@ cueVoicePosauneIIMvtI = \relative c {
 	a'''8^\markup {Viol.} fis g a e4
 	\voiceOne d8 fis a4 \oneVoice s
 }
-cueVoicePosauneIIMvtIV = \relative c {
+cueVoiceTrombonoIIMvtIV = \relative c {
 	\partial 4 s4
 	s1*29
 	% bar 30 - 35
@@ -861,7 +861,7 @@ cueVoicePosauneIIMvtIV = \relative c {
 	e
 	\once \voiceOne fis4 s s2
 }
-cueVoicePosauneIIIMvtI = \relative c {
+cueVoiceTrombonoIIIMvtI = \relative c {
 	s2.*45
 	% bar 46 - 48
 	gis''''4-\tweak extra-offset #'(-4.5 . 9.5) _\markup {Viol.} a8:16 g: e: cis:
@@ -896,7 +896,7 @@ cueVoicePosauneIIIMvtI = \relative c {
 	% bar 545
 	\voiceOne d,8-\offset X-offset #-3 ^\markup {Viol.} fis a4 \oneVoice s
 }
-cueVoicePosauneIIIMvtIV = \relative c {
+cueVoiceTrombonoIIIMvtIV = \relative c {
 	\partial 4 s4
 	s1*481
 	% bar 482 - 484
@@ -951,9 +951,9 @@ cueVoiceTubaMvtIV = \relative c {
 	c b4 s
 }
 %###############################################################################
-%#                   C U E   V O I C E   F O R   P A U K E N                   #
+%#               C U E   V O I C E   F O R   P E R C U S S I O N               #
 %###############################################################################
-cueVoicePaukenMvtI = \relative c {
+cueVoiceTimpaniMvtI = \relative c {
 	s2.*42
 	% bar 43 - 46
 	e'''2-\offset X-offset -4 ^\markup {Viol.} e4^~
@@ -996,7 +996,7 @@ cueVoicePaukenMvtI = \relative c {
 	a8 f g a e4
 	\voiceOne d8 f a4 \oneVoice s
 }
-cueVoicePaukenMvtII = \relative c {
+cueVoiceTimpaniMvtII = \relative c {
 	s2*100
 	% bar 101 - 103
 	r8^\markup {Hörner in F.} c''( a des~
@@ -1014,7 +1014,7 @@ cueVoicePaukenMvtII = \relative c {
 	r8-\offset X-offset -2 ^\markup {Hoboe} f'( d g)~
 	g4.( f8)
 }
-cueVoicePaukenMvtIII = \relative c {
+cueVoiceTimpaniMvtIII = \relative c {
 	s2.*117
 	% bar 118 - 125
 	g''4^\markup {Tromp. in D.} g g
@@ -1048,7 +1048,7 @@ cueVoicePaukenMvtIII = \relative c {
 	b!2 b4
 	b b2 \stemNeutral
 }
-cueVoicePaukenMvtIV = \relative c {
+cueVoiceTimpaniMvtIV = \relative c {
 	\partial 4 s4
 	s1*258
 	% bar 259 - 260
@@ -1056,9 +1056,9 @@ cueVoicePaukenMvtIV = \relative c {
 	d c! b s
 }
 %###############################################################################
-%#                  C U E   V O I C E   F O R   V I O L I N I                  #
+%#                 C U E   V O I C E   F O R   V I O L I N E I                 #
 %###############################################################################
-cueVoiceViolinIMvtI = \relative c {
+cueVoiceViolinoIMvtI = \relative c {
 	% bar 1 - 5
 	<d fis a>8^\markup {Br.}\pp q4 q q8
 	q8 q4 q q8
@@ -1079,7 +1079,7 @@ cueVoiceViolinIMvtI = \relative c {
 	fis4.( g8 fis4)
 	fis r r
 }
-cueVoiceViolinIMvtII = \relative c {
+cueVoiceViolinoIMvtII = \relative c {
 	s2*72
 	% bar 73 - 74
 	f'4^\markup {Br.} d8 g
@@ -1089,14 +1089,14 @@ cueVoiceViolinIMvtII = \relative c {
 	\voiceOne r8_\markup {Clar.} d'4( c16 bes)
 	bes8 \oneVoice s s4
 }
-cueVoiceViolinIMvtIII = \relative c {
+cueVoiceViolinoIMvtIII = \relative c {
 	s2.*182
 	% bar 182 - 184
 	bes4^\pizz^\markup {Vcell.} \once \stemUp e g
 	bes^\markup {Br.} \once \stemUp d e
 	\voiceTwo g-\offset X-offset -1 _\markup {Viol.II} bes \oneVoice s
 }
-cueVoiceViolinIMvtIV = \relative c {
+cueVoiceViolinoIMvtIV = \relative c {
 	\partial 4 s4
 	s1*252
 	% bar 253 - 255
@@ -1111,9 +1111,9 @@ cueVoiceViolinIMvtIV = \relative c {
 	g e a) s
 }
 %###############################################################################
-%#                 C U E   V O I C E   F O R   V I O L I N I I                 #
+%#                C U E   V O I C E   F O R   V I O L I N E I I                #
 %###############################################################################
-cueVoiceViolinIIMvtI = \relative c {
+cueVoiceViolinoIIMvtI = \relative c {
 	% bar 1 - 2
 	<d fis a>8^\markup {Br.}\pp q4 q q8
 	q8 q4 q q8
@@ -1125,7 +1125,7 @@ cueVoiceViolinIIMvtI = \relative c {
 	% bar 177_2
 	b,8(_\markup {Viol.I.} d fis2)\laissezVibrer
 }
-cueVoiceViolinIIMvtII = \relative c {
+cueVoiceViolinoIIMvtII = \relative c {
 	s2*77
 	% bar 78 - 79
 	f''8-\tweak X-offset #-4 ^\markup {Viol.I} f16( g) g( a) a( c)
@@ -1135,7 +1135,7 @@ cueVoiceViolinIIMvtII = \relative c {
 	\voiceOne r8 f,-\tweak X-offset #-4 ^\markup {Viol.I} des ges~
 	ges f \oneVoice s4
 }
-cueVoiceViolinIIMvtIII = \relative c {
+cueVoiceViolinoIIMvtIII = \relative c {
 	s2.*167
 	% bar 167 - 168
 	g'''4(^\markup {Hoboe} a8 fis g4
@@ -1143,7 +1143,7 @@ cueVoiceViolinIIMvtIII = \relative c {
 	s2.*13
 	% bar 182 - 183
 	bes,,,4^\markup {Vcll.}^\pizz e g
-	bes^\markup {Bratsche} d e
+	bes^\markup {Viola} d e
 	s2.*41
 	% bar 225 - 228
 	fis'4(^\markup {Viol.I} g8 e fis4
@@ -1151,7 +1151,7 @@ cueVoiceViolinIIMvtIII = \relative c {
 	d e8 cis d4
 	d e8 cis d4)
 }
-cueVoiceViolinIIMvtIV = \relative c {
+cueVoiceViolinoIIMvtIV = \relative c {
 	\partial 4 s4 
 	s1*313
 	% bar 314 - 317
@@ -1161,18 +1161,18 @@ cueVoiceViolinIIMvtIV = \relative c {
 	g e a) s
 }
 %###############################################################################
-%#                 C U E   V O I C E   F O R   B R A T S C H E                 #
+%#                    C U E   V O I C E   F O R   V I O L A                    #
 %###############################################################################
-cueVoiceBratscheMvtI = \relative c {
+cueVoiceViolaMvtI = \relative c {
 	s2.*179
 	% bar 180_1 - 181_1
 	\voiceTwo r4 r a''8(^\markup {V.II.} fis
 	g a) s4 s \oneVoice 
 }
-cueVoiceBratscheMvtII = \relative c {
+cueVoiceViolaMvtII = \relative c {
 %	no cue voice for mvt II
 }
-cueVoiceBratscheMvtIII = \relative c {
+cueVoiceViolaMvtIII = \relative c {
 	s2.*182
 	% bar 182
 	\voiceOne bes4^\pizz-\offset X-offset -3.5 ^\markup {Vcll.} e g \oneVoice 
@@ -1181,11 +1181,11 @@ cueVoiceBratscheMvtIII = \relative c {
 	e4(^\markup {Vcell.} fis g
 	fis cis e)
 }
-cueVoiceBratscheMvtIV = \relative c {
+cueVoiceViolaMvtIV = \relative c {
 %	no cue voice for mvtIV
 }
 %###############################################################################
-%#               C U E   V O I C E   F O R   V I O L O N C E L L               #
+%#              C U E   V O I C E   F O R   V I O L O N C E L L O              #
 %###############################################################################
 cueVoiceVioloncelloMvtI = \relative c {
 %	no cue voice for mvtI
@@ -1204,15 +1204,15 @@ cueVoiceVioloncelloMvtIV = \relative c {
 %	no cue voice for mvt IV
 }
 %###############################################################################
-%#               C U E   V O I C E   F O R   K O N T R A B A S S               #
+%#              C U E   V O I C E   F O R   C O N T R A B A S S O              #
 %###############################################################################
-cueVoiceKontrabassMvtI = \relative c {
+cueVoiceContrabassoMvtI = \relative c {
 %	no cue voice for mvtI
 }
-cueVoiceKontrabassMvtII = \relative c {
+cueVoiceContrabassoMvtII = \relative c {
 %	no cue voice for mvtII
 }
-cueVoiceKontrabassMvtIII = \relative c {
+cueVoiceContrabassoMvtIII = \relative c {
 	s2.*159
 	% bar 159 - 162
 	<g d' b'>4\f-\tweak X-offset #-3.5 ^\pizz-\tweak X-offset #-3.5 ^\markup {Vlc.} r r
@@ -1226,7 +1226,7 @@ cueVoiceKontrabassMvtIII = \relative c {
 	b2 cis4
 	a2 b4)
 }
-cueVoiceKontrabassMvtIV = \relative c {
+cueVoiceContrabassoMvtIV = \relative c {
 %	no cue voice for mvtIV
 }
 %###############################################################################

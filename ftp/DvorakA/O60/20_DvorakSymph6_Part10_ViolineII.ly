@@ -4,10 +4,11 @@
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
-%  Source             : Berlin N. Simrock, 1888. Plate 8215.
-%  Type of score      : Score for ViolinII
+%  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
+%                       1957. Plate H 2111.
+%  Type of score      : Score for ViolinoII
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Thursday 10th August 2023, 10:40
+%  date of initiation : Wednesday 30th September 2026, 23:23:45
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -21,11 +22,11 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part10_ViolinII.ily"
-\include "./01-Mvt1/m01_v21_music_ViolinII.ily"
-\include "./02-Mvt2/m02_v21_music_ViolinII.ily"
-\include "./03-Mvt3/m03_v21_music_ViolinII.ily"
-\include "./04-Mvt4/m04_v21_music_ViolinII.ily"
+\include "./00-Common/DvorakSymph6_Format_Part10_ViolinoII.ily"
+\include "./01-Mvt1/m01_v21_music_ViolinoII.ily"
+\include "./02-Mvt2/m02_v21_music_ViolinoII.ily"
+\include "./03-Mvt3/m03_v21_music_ViolinoII.ily"
+\include "./04-Mvt4/m04_v21_music_ViolinoII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -34,14 +35,14 @@
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
 			\center-column {
-				"Part for ViolinII"
+				"Part for ViolinoII"
 			}
 		}
 		subsubtitle = \markup { 
 			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Violin II"
 		}
 		instrument = \markup {
-			"ViolinII"
+			"ViolinoII"
 		}
 	}
 	\pageBreak
@@ -58,16 +59,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatViolinIIMvtI
+				\formatViolinoIIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIIMvtI
+				\InCueContext \cueVoiceViolinoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameViolinIIMvtI \musicViolinIIMvtI
+				\timeMvtI \nameViolinoIIMvtI \musicViolinoIIMvtI
 			}
 		>>
 		\header {
@@ -82,16 +83,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatViolinIIMvtII
+				\formatViolinoIIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIIMvtII
+				\InCueContext \cueVoiceViolinoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameViolinIIMvtII \musicViolinIIMvtII
+				\timeMvtII \nameViolinoIIMvtII \musicViolinoIIMvtII
 			}
 		>>
 		\header {
@@ -106,16 +107,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatViolinIIMvtIII
+				\formatViolinoIIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIIMvtIII
+				\InCueContext \cueVoiceViolinoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameViolinIIMvtIII \musicViolinIIMvtIII
+				\timeMvtIII \nameViolinoIIMvtIII \musicViolinoIIMvtIII
 			}
 		>>
 		\header {
@@ -130,16 +131,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatViolinIIMvtIV
+				\formatViolinoIIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(violinII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceViolinIIMvtIV
+				\InCueContext \cueVoiceViolinoIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameViolinIIMvtIV \musicViolinIIMvtIV
+				\timeMvtIV \nameViolinoIIMvtIV \musicViolinoIIMvtIV
 			}
 		>>
 		\header {

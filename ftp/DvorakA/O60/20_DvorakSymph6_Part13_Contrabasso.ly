@@ -4,10 +4,11 @@
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
-%  Source             : Berlin N. Simrock, 1888. Plate 8215.
-%  Type of score      : Score for Kontrabass
+%  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
+%                       1957. Plate H 2111.
+%  Type of score      : Score for Contrabasso
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Thursday 10th August 2023, 10:40
+%  date of initiation : Wednesday 30th September 2026, 23:23:45
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -21,11 +22,11 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part13_Kontrabass.ily"
-\include "./01-Mvt1/m01_v24_music_Kontrabass.ily"
-\include "./02-Mvt2/m02_v24_music_Kontrabass.ily"
-\include "./03-Mvt3/m03_v24_music_Kontrabass.ily"
-\include "./04-Mvt4/m04_v24_music_Kontrabass.ily"
+\include "./00-Common/DvorakSymph6_Format_Part13_Contrabasso.ily"
+\include "./01-Mvt1/m01_v24_music_Contrabasso.ily"
+\include "./02-Mvt2/m02_v24_music_Contrabasso.ily"
+\include "./03-Mvt3/m03_v24_music_Contrabasso.ily"
+\include "./04-Mvt4/m04_v24_music_Contrabasso.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -34,29 +35,29 @@
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
 			\center-column {
-				"Part for Kontrabass"
+				"Part for Contrabasso"
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Kontrabass"
+			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Contrabasso"
 		}
 		instrument = \markup {
-			"Kontrabass"
+			"Contrabasso"
 		}
 	}
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKontrabassMvtI
+				\formatContrabassoMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(kontrabass) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKontrabassMvtI
+				\InCueContext \cueVoiceContrabassoMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameKontrabassMvtI \musicKontrabassMvtI
+				\timeMvtI \nameContrabassoMvtI \musicContrabassoMvtI
 			}
 		>>
 		\header {
@@ -71,16 +72,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKontrabassMvtII
+				\formatContrabassoMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(kontrabass) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKontrabassMvtII
+				\InCueContext \cueVoiceContrabassoMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameKontrabassMvtII \musicKontrabassMvtII
+				\timeMvtII \nameContrabassoMvtII \musicContrabassoMvtII
 			}
 		>>
 		\header {
@@ -95,16 +96,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKontrabassMvtIII
+				\formatContrabassoMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(kontrabass) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKontrabassMvtIII
+				\InCueContext \cueVoiceContrabassoMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameKontrabassMvtIII \musicKontrabassMvtIII
+				\timeMvtIII \nameContrabassoMvtIII \musicContrabassoMvtIII
 			}
 		>>
 		\header {
@@ -119,16 +120,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKontrabassMvtIV
+				\formatContrabassoMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(kontrabass) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKontrabassMvtIV
+				\InCueContext \cueVoiceContrabassoMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameKontrabassMvtIV \musicKontrabassMvtIV
+				\timeMvtIV \nameContrabassoMvtIV \musicContrabassoMvtIV
 			}
 		>>
 		\header {

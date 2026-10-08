@@ -1,6 +1,6 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -9,8 +9,8 @@ musicOboeIIMvtII = \relative c' {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	r8^\solo f(\p d g)~
-	g4.( fis8
+	r8^\solo f(\p d g~
+	g4. fis8
 	g2)\<
 	\stemUp bes4\fp( g8\> a
 	bes)\pp \stemNeutral r r4
@@ -37,20 +37,20 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	g8(\p\< a \once \stemUp bes4)\!
-	bes8\fp-> g4-> g16 a
-	bes8-> g4->_\crescmarkup g16 a
+	bes8\fp-> g4-> g16--( a--)
+	bes8-> g4->_\crescmarkup g16--( a--)
 % Bars 31 to 35
-	bes8-> g4-> g16 a
+	bes8-> g4-> g16--( a--)
 	bes8 r r4
 	R2*2
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 d--\pp
 % Bars 36 to 40
 	d-- d--
-	d d
-	d d
-	d d
-	d d 
+	d-- d--
+	d-- d--
+	d-- d--
+	d-- d-- 
 % Bars 41 to 45
 	R2*6
 	
@@ -180,10 +180,10 @@ musicOboeIIMvtII = \relative c' {
 	bes4)\pp r
 	R2*2
 	
-	r8 \once \stemUp bes4(_\pcresc a16 g
+	r8 \once \stemUp bes4(_\brackpcresc a16 g
 % Bars 151 to 155
 	f8) c'4(\mf\> bes8
-	a2\p)(
+	a2\p
 	bes8) r r4
 	R2*2
 	
@@ -195,10 +195,10 @@ musicOboeIIMvtII = \relative c' {
 	r8 d4(\p\< c16 bes!)~
 % Bars 161 to 165
 	bes8 a16(\! g\> a4)
-	aes8\p( c4 bes16\> aes)~
-	aes8 g16(\! f g4)~
-	g8 ges4\pp( f16 ees)~
-	ees8  r r4
+	aes8(\p( c4 bes16\> aes)~
+	aes8) g16(\! f g4~
+	g8) ges4\pp( f16 ees~
+	ees8) r r4
 % Bars 166 to 170
 	R2*3
 	
@@ -214,7 +214,7 @@ musicOboeIIMvtII = \relative c' {
 % Bars 176 to 180
 	d)\noBeam bes(\f\< c! cis\!
 	d16)\noBeam a->\f-. b->-. b->-. c->-. d->-. c->-. cis->-. 
-	d8\ff r b-^ r
+	d8-.->\ff r b-^ r
 	bes!-^ r r4
 	R2
 % Bars 181 to 185

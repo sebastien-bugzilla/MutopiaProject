@@ -1,6 +1,6 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -9,8 +9,8 @@ musicOboeIIMvtII = \relative c' {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	r8 f(-\tweak X-offset #-1.4 \p d g)~
-	\shape #'((0 . 1)(0 . 1)(0 . 1)(0 . 1)) Slur g4.( fis8
+	r8 f(-\tweak X-offset #-1.4 \p d g~
+	g4. fis8
 	\hairpinShorten #'(1 . 1) g2)-\tweak extra-offset #'(0 . 1) \<
 	\shape #'((0 . 0.4)(0 . 0.8)(0 . 0.8)(0 . 0.4)) Slur bes4-\tweak extra-offset #'(0 . 0.3) \fp( g8\> a
 	bes)-\tweak extra-offset #'(0 . 0.3) \pp r r4
@@ -38,21 +38,21 @@ musicOboeIIMvtII = \relative c' {
 % Bars 26 to 30
 	
 	
-	g8(\p\< a bes4)\!
-	bes8-\tweak extra-offset #'(0.8 . 0.8) \fp g4 g16 a
-	bes8 g4 g16 a
+	g8(\p\< a bes!4)\!
+	bes8-\tweak extra-offset #'(0.8 . 0.8) \fp g4 g16--( a--)
+	bes8 g4 g16--( a--)
 % Bars 31 to 35
-	bes8 g4 g16 a
+	bes8 g4 g16(-- a--)
 	bes8 r r4
 	R2*2
 	\bar "||" \mark \default
 	r4 d--\pp
 % Bars 36 to 40
 	d-- d--
-	d d
-	d d
-	d d
-	d d 
+	d-- d--
+	d-- d--
+	d-- d--
+	d-- d-- 
 % Bars 41 to 45
 	R2
 	R2
@@ -112,11 +112,11 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	
-	bes8\mf g4  g16 a
+	bes8\mf g4  g16-. a-.
 % Bars 96 to 100
-	bes8 g4 g16 a
-	bes8\f g4\< g16 a\!
-	bes8\noBeam d16-\tweak X-offset #-1.5 \ff f bes, f bes c 
+	bes8 g4 g16-. a-.
+	bes8\f g4\< g16-. a-.\!
+	bes8\noBeam d16-.-\tweak X-offset #-1.5 \ff f-. bes,-. f-. bes-. c-. 
 	d8-> c-> bes-> a->
 	bes4-> bes->
 % Bars 101 to 105
@@ -154,7 +154,7 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	
-	r16\< c c c  c c c c\!
+	r16\< c-. c-. c-.  c c c c\!
 % Bars 131 to 135
 	c\ff r r8 r4
 	R2*8
@@ -181,7 +181,7 @@ musicOboeIIMvtII = \relative c' {
 	r8 bes4^( \beamOffset #'(0.3 . 0.3) a16 g
 % Bars 151 to 155
 	f8) c'4(\mf\> bes8
-	a2\p)(
+	a2\p	
 	bes8) r r4
 	R2*2
 	
@@ -193,10 +193,10 @@ musicOboeIIMvtII = \relative c' {
 	r8 d4(-\tweak extra-offset #'(0 . 0.5) \p\< c16 bes!)~
 % Bars 161 to 165
 	bes8 a16(\! g a4)\>
-	aes8\p c4 bes16-\alterBroken shorten-pair #'(() (0 . 2)) \> aes~
-	aes8 g16(\! f g4)~
-	g8 ges4\pp f16 ees~
-	ees8  r r4
+	aes8(\p c4 bes16-\alterBroken shorten-pair #'(() (0 . 2)) \> aes~
+	aes8) g16(\! f g4~
+	g8) ges4(\pp f16 ees~
+	ees8) r r4
 % Bars 166 to 170
 	R2*3
 	
@@ -208,11 +208,11 @@ musicOboeIIMvtII = \relative c' {
 	f8 d(\< ees e)\!
 	f2\p~
 	f8\noBeam bes(\p\< c cis\!
-	d)\noBeam bes(\mf\< c cis\!
+	d)\noBeam bes(\mf\< c! cis\!
 % Bars 176 to 180
-	d)\noBeam bes(\f\< c cis\!
+	d)\noBeam bes(\f\< c! cis\!
 	d16)\noBeam a->\f\<-. b->-. b->-. c->-. d->-. c->-. cis->-.\!
-	d8\ff r b-^ r
+	d8-.->\ff r b-^ r
 	bes!-^ r r4
 	R2
 % Bars 181 to 185
@@ -230,9 +230,9 @@ musicOboeIIMvtII = \relative c' {
 % Bars 196 to 200
 	R2*2
 	
-	r8 f'\ff d g
-	ees c a d
-	d r f,4\fp(
+	r8 f'-!\ff d-! g-!
+	ees-! c-! a-! d-!
+	d-^ r f,4\fp(
 % Bars 201 to 205
 	g\> f8 ees)\!
 	d2\pp~

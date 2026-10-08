@@ -4,10 +4,11 @@
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
-%  Source             : Berlin N. Simrock, 1888. Plate 8215.
+%  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
+%                       1957. Plate H 2111.
 %  Type of score      : Score for Fagotte
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Thursday 10th August 2023, 10:40
+%  date of initiation : Wednesday 30th September 2026, 23:23:45
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -22,14 +23,14 @@
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Format_Part04_Fagotte.ily"
-\include "./01-Mvt1/m01_v07_music_FagottI.ily"
-\include "./02-Mvt2/m02_v07_music_FagottI.ily"
-\include "./03-Mvt3/m03_v07_music_FagottI.ily"
-\include "./04-Mvt4/m04_v07_music_FagottI.ily"
-\include "./01-Mvt1/m01_v08_music_FagottII.ily"
-\include "./02-Mvt2/m02_v08_music_FagottII.ily"
-\include "./03-Mvt3/m03_v08_music_FagottII.ily"
-\include "./04-Mvt4/m04_v08_music_FagottII.ily"
+\include "./01-Mvt1/m01_v07_music_FagottoI.ily"
+\include "./02-Mvt2/m02_v07_music_FagottoI.ily"
+\include "./03-Mvt3/m03_v07_music_FagottoI.ily"
+\include "./04-Mvt4/m04_v07_music_FagottoI.ily"
+\include "./01-Mvt1/m01_v08_music_FagottoII.ily"
+\include "./02-Mvt2/m02_v08_music_FagottoII.ily"
+\include "./03-Mvt3/m03_v08_music_FagottoII.ily"
+\include "./04-Mvt4/m04_v08_music_FagottoII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -51,16 +52,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFagottIMvtI
+				\formatFagottoIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(fagottI) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFagottIMvtI
+				\InCueContext \cueVoiceFagottoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameFagottIMvtI \musicFagottIMvtI
+				\timeMvtI \nameFagottoIMvtI \musicFagottoIMvtI
 			}
 		>>
 		\header {
@@ -75,16 +76,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFagottIMvtII
+				\formatFagottoIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(fagottI) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFagottIMvtII
+				\InCueContext \cueVoiceFagottoIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameFagottIMvtII \musicFagottIMvtII
+				\timeMvtII \nameFagottoIMvtII \musicFagottoIMvtII
 			}
 		>>
 		\header {
@@ -99,16 +100,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFagottIMvtIII
+				\formatFagottoIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(fagottI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFagottIMvtIII
+				\InCueContext \cueVoiceFagottoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameFagottIMvtIII \musicFagottIMvtIII
+				\timeMvtIII \nameFagottoIMvtIII \musicFagottoIMvtIII
 			}
 		>>
 		\header {
@@ -123,16 +124,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFagottIMvtIV
+				\formatFagottoIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(fagottI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFagottIMvtIV
+				\InCueContext \cueVoiceFagottoIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameFagottIMvtIV \musicFagottIMvtIV
+				\timeMvtIV \nameFagottoIMvtIV \musicFagottoIMvtIV
 			}
 		>>
 		\header {
@@ -147,16 +148,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFagottIIMvtI
+				\formatFagottoIIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(fagottII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFagottIIMvtI
+				\InCueContext \cueVoiceFagottoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameFagottIIMvtI \musicFagottIIMvtI
+				\timeMvtI \nameFagottoIIMvtI \musicFagottoIIMvtI
 			}
 		>>
 		\header {
@@ -171,16 +172,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFagottIIMvtII
+				\formatFagottoIIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(fagottII) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFagottIIMvtII
+				\InCueContext \cueVoiceFagottoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameFagottIIMvtII \musicFagottIIMvtII
+				\timeMvtII \nameFagottoIIMvtII \musicFagottoIIMvtII
 			}
 		>>
 		\header {
@@ -195,16 +196,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFagottIIMvtIII
+				\formatFagottoIIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(fagottII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFagottIIMvtIII
+				\InCueContext \cueVoiceFagottoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameFagottIIMvtIII \musicFagottIIMvtIII
+				\timeMvtIII \nameFagottoIIMvtIII \musicFagottoIIMvtIII
 			}
 		>>
 		\header {
@@ -219,16 +220,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFagottIIMvtIV
+				\formatFagottoIIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(fagottII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFagottIIMvtIV
+				\InCueContext \cueVoiceFagottoIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameFagottIIMvtIV \musicFagottIIMvtIV
+				\timeMvtIV \nameFagottoIIMvtIV \musicFagottoIIMvtIV
 			}
 		>>
 		\header {

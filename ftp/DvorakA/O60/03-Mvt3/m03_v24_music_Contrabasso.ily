@@ -1,10 +1,10 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicKontrabassMvtIII = \relative c {
+musicContrabassoMvtIII = \relative c {
 	\clef bass
 	\key d \minor
 %	\transposition a

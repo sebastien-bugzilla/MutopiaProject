@@ -41,6 +41,7 @@ mfz = \markup {\dynamic mfz}
 rf = \markup {\dynamic rf}
 
 pcresc = \markup {\dynamic p \italic cresc.}
+brackpcresc = \markup {\bracket \with-true-dimensions \dynamic p \italic cresc.}
 
 pdim = \markup {\dynamic p \italic dim.}
 pdimD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim." ))

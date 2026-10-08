@@ -4,10 +4,11 @@
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
-%  Source             : Berlin N. Simrock, 1888. Plate 8215.
+%  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
+%                       1957. Plate H 2111.
 %  Type of score      : Score for Floten
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Thursday 10th August 2023, 10:40
+%  date of initiation : Wednesday 30th September 2026, 23:23:45
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -22,15 +23,15 @@
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Format_Part01_Floten.ily"
-\include "./01-Mvt1/m01_v01_music_FloteI.ily"
-\include "./02-Mvt2/m02_v01_music_FloteI.ily"
-\include "./03-Mvt3/m03_v01_music_FloteI.ily"
-\include "./04-Mvt4/m04_v01_music_FloteI.ily"
-\include "./01-Mvt1/m01_v02_music_FloteII.ily"
-\include "./02-Mvt2/m02_v02_music_FloteII.ily"
-\include "./03-Mvt3/m03_v02_music_FloteII.ily"
+\include "./01-Mvt1/m01_v01_music_FlautoI.ily"
+\include "./02-Mvt2/m02_v01_music_FlautoI.ily"
+\include "./03-Mvt3/m03_v01_music_FlautoI.ily"
+\include "./04-Mvt4/m04_v01_music_FlautoI.ily"
+\include "./01-Mvt1/m01_v02_music_FlautoII.ily"
+\include "./02-Mvt2/m02_v02_music_FlautoII.ily"
+\include "./03-Mvt3/m03_v02_music_FlautoII.ily"
 \include "./03-Mvt3/m03_v02_music_Piccolo.ily"
-\include "./04-Mvt4/m04_v02_music_FloteII.ily"
+\include "./04-Mvt4/m04_v02_music_FlautoII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -52,16 +53,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFloteIMvtI
+				\formatFlautoIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(floteI) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFloteIMvtI
+				\InCueContext \cueVoiceFlautoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameFloteIMvtI \musicFloteIMvtI
+				\timeMvtI \nameFlautoIMvtI \musicFlautoIMvtI
 			}
 		>>
 		\header {
@@ -76,16 +77,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFloteIMvtII
+				\formatFlautoIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(floteI) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFloteIMvtII
+				\InCueContext \cueVoiceFlautoIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameFloteIMvtII \musicFloteIMvtII
+				\timeMvtII \nameFlautoIMvtII \musicFlautoIMvtII
 			}
 		>>
 		\header {
@@ -100,16 +101,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFloteIMvtIII
+				\formatFlautoIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(floteI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFloteIMvtIII
+				\InCueContext \cueVoiceFlautoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameFloteIMvtIII \musicFloteIMvtIII
+				\timeMvtIII \nameFlautoIMvtIII \musicFlautoIMvtIII
 			}
 		>>
 		\header {
@@ -124,16 +125,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFloteIMvtIV
+				\formatFlautoIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(floteI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFloteIMvtIV
+				\InCueContext \cueVoiceFlautoIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameFloteIMvtIV \musicFloteIMvtIV
+				\timeMvtIV \nameFlautoIMvtIV \musicFlautoIMvtIV
 			}
 		>>
 		\header {
@@ -148,16 +149,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFloteIIMvtI
+				\formatFlautoIIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(floteII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFloteIIMvtI
+				\InCueContext \cueVoiceFlautoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameFloteIIMvtI \musicFloteIIMvtI
+				\timeMvtI \nameFlautoIIMvtI \musicFlautoIIMvtI
 			}
 		>>
 		\header {
@@ -172,16 +173,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFloteIIMvtII
+				\formatFlautoIIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(floteII) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFloteIIMvtII
+				\InCueContext \cueVoiceFlautoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameFloteIIMvtII \musicFloteIIMvtII
+				\timeMvtII \nameFlautoIIMvtII \musicFlautoIIMvtII
 			}
 		>>
 		\header {
@@ -196,19 +197,19 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFloteIIMvtIII
+				\formatFlautoIIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(floteII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFloteIIMvtIII
+				\InCueContext \cueVoiceFlautoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameFloteIIMvtIII \musicFloteIIMvtIII
+				\timeMvtIII \nameFlautoIIMvtIII \musicFlautoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameFloteIIMvtIII \musicPiccoloMvtIII
+				\timeMvtIII \nameFlautoIIMvtIII \musicPiccoloMvtIII
 			}
 		>>
 		\header {
@@ -223,16 +224,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatFloteIIMvtIV
+				\formatFlautoIIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'floteII \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceFloteIIMvtIV
+				\InCueContext \cueVoiceFlautoIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameFloteIIMvtIV \musicFloteIIMvtIV
+				\timeMvtIV \nameFlautoIIMvtIV \musicFlautoIIMvtIV
 			}
 		>>
 		\header {

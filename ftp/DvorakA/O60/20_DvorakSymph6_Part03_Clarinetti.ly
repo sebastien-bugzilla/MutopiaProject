@@ -4,10 +4,11 @@
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
-%  Source             : Berlin N. Simrock, 1888. Plate 8215.
+%  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
+%                       1957. Plate H 2111.
 %  Type of score      : Score for Klarinetten
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Thursday 10th August 2023, 10:40
+%  date of initiation : Wednesday 30th September 2026, 23:23:45
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -22,14 +23,14 @@
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Format_Part03_Klarinetten.ily"
-\include "./01-Mvt1/m01_v05_music_KlarinetteI.ily"
-\include "./02-Mvt2/m02_v05_music_KlarinetteI.ily"
-\include "./03-Mvt3/m03_v05_music_KlarinetteI.ily"
-\include "./04-Mvt4/m04_v05_music_KlarinetteI.ily"
-\include "./01-Mvt1/m01_v06_music_KlarinetteII.ily"
-\include "./02-Mvt2/m02_v06_music_KlarinetteII.ily"
-\include "./03-Mvt3/m03_v06_music_KlarinetteII.ily"
-\include "./04-Mvt4/m04_v06_music_KlarinetteII.ily"
+\include "./01-Mvt1/m01_v05_music_ClarinettoI.ily"
+\include "./02-Mvt2/m02_v05_music_ClarinettoI.ily"
+\include "./03-Mvt3/m03_v05_music_ClarinettoI.ily"
+\include "./04-Mvt4/m04_v05_music_ClarinettoI.ily"
+\include "./01-Mvt1/m01_v06_music_ClarinettoII.ily"
+\include "./02-Mvt2/m02_v06_music_ClarinettoII.ily"
+\include "./03-Mvt3/m03_v06_music_ClarinettoII.ily"
+\include "./04-Mvt4/m04_v06_music_ClarinettoII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -51,16 +52,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKlarinetteIMvtI
+				\formatClarinettoIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(klarinetteI) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKlarinetteIMvtI
+				\InCueContext \cueVoiceClarinettoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameKlarinetteIMvtI \musicKlarinetteIMvtI
+				\timeMvtI \nameClarinettoIMvtI \musicClarinettoIMvtI
 			}
 		>>
 		\header {
@@ -75,16 +76,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKlarinetteIMvtII
+				\formatClarinettoIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(klarinetteI) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKlarinetteIMvtII
+				\InCueContext \cueVoiceClarinettoIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameKlarinetteIMvtII \musicKlarinetteIMvtII
+				\timeMvtII \nameClarinettoIMvtII \musicClarinettoIMvtII
 			}
 		>>
 		\header {
@@ -99,16 +100,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKlarinetteIMvtIII
+				\formatClarinettoIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(klarinetteI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKlarinetteIMvtIII
+				\InCueContext \cueVoiceClarinettoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameKlarinetteIMvtIII \musicKlarinetteIMvtIII
+				\timeMvtIII \nameClarinettoIMvtIII \musicClarinettoIMvtIII
 			}
 		>>
 		\header {
@@ -123,16 +124,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKlarinetteIMvtIV
+				\formatClarinettoIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(klarinetteI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKlarinetteIMvtIV
+				\InCueContext \cueVoiceClarinettoIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameKlarinetteIMvtIV \musicKlarinetteIMvtIV
+				\timeMvtIV \nameClarinettoIMvtIV \musicClarinettoIMvtIV
 			}
 		>>
 		\header {
@@ -147,16 +148,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKlarinetteIIMvtI
+				\formatClarinettoIIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(klarinetteII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKlarinetteIIMvtI
+				\InCueContext \cueVoiceClarinettoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameKlarinetteIIMvtI \musicKlarinetteIIMvtI
+				\timeMvtI \nameClarinettoIIMvtI \musicClarinettoIIMvtI
 			}
 		>>
 		\header {
@@ -171,16 +172,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKlarinetteIIMvtII
+				\formatClarinettoIIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(klarinetteII) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKlarinetteIIMvtII
+				\InCueContext \cueVoiceClarinettoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameKlarinetteIIMvtII \musicKlarinetteIIMvtII
+				\timeMvtII \nameClarinettoIIMvtII \musicClarinettoIIMvtII
 			}
 		>>
 		\header {
@@ -195,16 +196,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKlarinetteIIMvtIII
+				\formatClarinettoIIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(klarinetteII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKlarinetteIIMvtIII
+				\InCueContext \cueVoiceClarinettoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameKlarinetteIIMvtIII \musicKlarinetteIIMvtIII
+				\timeMvtIII \nameClarinettoIIMvtIII \musicClarinettoIIMvtIII
 			}
 		>>
 		\header {
@@ -219,16 +220,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatKlarinetteIIMvtIV
+				\formatClarinettoIIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(klarinetteII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceKlarinetteIIMvtIV
+				\InCueContext \cueVoiceClarinettoIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameKlarinetteIIMvtIV \musicKlarinetteIIMvtIV
+				\timeMvtIV \nameClarinettoIIMvtIV \musicClarinettoIIMvtIV
 			}
 		>>
 		\header {

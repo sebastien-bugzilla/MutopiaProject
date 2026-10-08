@@ -1,10 +1,10 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                      P A R T   S C O R E   F O R M A T                      #
 %###############################################################################
-formatPosauneIMvtI = {
+formatTrombonoIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -84,7 +84,7 @@ formatPosauneIMvtI = {
 	)
 	s2.*23 
 }
-formatPosauneIMvtIV = {
+formatTrombonoIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -204,7 +204,7 @@ formatPosauneIMvtIV = {
 	)
 	s1*8 s2.*1 
 }
-formatPosauneIIMvtI = {
+formatTrombonoIIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -284,7 +284,7 @@ formatPosauneIIMvtI = {
 	)
 	s2.*24 
 }
-formatPosauneIIMvtIV = {
+formatTrombonoIIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -404,7 +404,7 @@ formatPosauneIIMvtIV = {
 	)
 	s1*9 s2.*1 
 }
-formatPosauneIIIMvtI = {
+formatTrombonoIIIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -484,7 +484,7 @@ formatPosauneIIIMvtI = {
 	)
 	s2.*26 
 }
-formatPosauneIIIMvtIV = {
+formatTrombonoIIIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(

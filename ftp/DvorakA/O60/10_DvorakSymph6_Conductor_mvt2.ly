@@ -64,22 +64,22 @@
 	\score {
 		<<
 %			\new StaffGroup <<
-				\new Staff <<
+%				\new Staff <<
+%%					\new Voice {
+%%						\formatConductorMvtII
+%%					}
 %					\new Voice {
-%						\formatConductorMvtII
+%						\tempiMvtII
 %					}
-					\new Voice {
-						\tempiMvtII
-					}
-					\new Voice {
-						\timeMvtII \nameStaffIMvtII
-						\partCombine \musicFlautoIMvtII \musicFlautoIIMvtII
-					}
-				>>
-%				\new Staff {
-%					\timeMvtII \nameStaffIIMvtII
-%					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
-%				}
+%					\new Voice {
+%						\timeMvtII \nameStaffIMvtII
+%						\partCombine \musicFlautoIMvtII \musicFlautoIIMvtII
+%					}
+%				>>
+				\new Staff {
+					\timeMvtII \nameStaffIIMvtII
+					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
+				}
 %				\new Staff {
 %					\timeMvtII \nameStaffIIIMvtII
 %					\partCombine \musicClarinettoIMvtII \musicClarinettoIIMvtII

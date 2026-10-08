@@ -1,10 +1,10 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                      P A R T   S C O R E   F O R M A T                      #
 %###############################################################################
-formatViolinIIMvtI = {
+formatViolinoIIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -232,7 +232,7 @@ formatViolinIIMvtI = {
 	)
 	s2.*24 
 }
-formatViolinIIMvtII = {
+formatViolinoIIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -296,7 +296,7 @@ formatViolinIIMvtII = {
 	)
 	s2*24 
 }
-formatViolinIIMvtIII = {
+formatViolinoIIMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -416,7 +416,7 @@ formatViolinIIMvtIII = {
 	)
 	s2.*13 
 }
-formatViolinIIMvtIV = {
+formatViolinoIIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(

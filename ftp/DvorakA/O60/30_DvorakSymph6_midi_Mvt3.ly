@@ -15,26 +15,26 @@
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./03-Mvt3/m03_v01_music_FloteI.ily"
-\include "./03-Mvt3/m03_v02_music_FloteII.ily"
+\include "./03-Mvt3/m03_v01_music_FlautoI.ily"
+\include "./03-Mvt3/m03_v02_music_FlautoII.ily"
 \include "./03-Mvt3/m03_v03_music_OboeI.ily"
 \include "./03-Mvt3/m03_v04_music_OboeII.ily"
-\include "./03-Mvt3/m03_v05_music_KlarinetteI.ily"
-\include "./03-Mvt3/m03_v06_music_KlarinetteII.ily"
-\include "./03-Mvt3/m03_v07_music_FagottI.ily"
-\include "./03-Mvt3/m03_v08_music_FagottII.ily"
-\include "./03-Mvt3/m03_v09_music_HornI.ily"
-\include "./03-Mvt3/m03_v10_music_HornII.ily"
-\include "./03-Mvt3/m03_v11_music_HornIII.ily"
-\include "./03-Mvt3/m03_v12_music_HornIV.ily"
-\include "./03-Mvt3/m03_v13_music_TrompeteI.ily"
-\include "./03-Mvt3/m03_v14_music_TrompeteII.ily"
-\include "./03-Mvt3/m03_v19_music_Pauken.ily"
-\include "./03-Mvt3/m03_v20_music_ViolinI.ily"
-\include "./03-Mvt3/m03_v21_music_ViolinII.ily"
-\include "./03-Mvt3/m03_v22_music_Bratsche.ily"
+\include "./03-Mvt3/m03_v05_music_ClarinettoI.ily"
+\include "./03-Mvt3/m03_v06_music_ClarinettoII.ily"
+\include "./03-Mvt3/m03_v07_music_FagottoI.ily"
+\include "./03-Mvt3/m03_v08_music_FagottoII.ily"
+\include "./03-Mvt3/m03_v09_music_CornoI.ily"
+\include "./03-Mvt3/m03_v10_music_CornoII.ily"
+\include "./03-Mvt3/m03_v11_music_CornoIII.ily"
+\include "./03-Mvt3/m03_v12_music_CornoIV.ily"
+\include "./03-Mvt3/m03_v13_music_TrombeI.ily"
+\include "./03-Mvt3/m03_v14_music_TrombeII.ily"
+\include "./03-Mvt3/m03_v19_music_Timpani.ily"
+\include "./03-Mvt3/m03_v20_music_ViolinoI.ily"
+\include "./03-Mvt3/m03_v21_music_ViolinoII.ily"
+\include "./03-Mvt3/m03_v22_music_Viola.ily"
 \include "./03-Mvt3/m03_v23_music_Violoncello.ily"
-\include "./03-Mvt3/m03_v24_music_Kontrabass.ily"
+\include "./03-Mvt3/m03_v24_music_Contrabasso.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -43,14 +43,14 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new Staff { \timeMvtIII \musicFloteIMvtIII }
-				\new Staff { \timeMvtIII \musicFloteIIMvtIII }
+				\new Staff { \timeMvtIII \musicFlautoIMvtIII }
+				\new Staff { \timeMvtIII \musicFlautoIIMvtIII }
 				\new Staff { \timeMvtIII \musicOboeIMvtIII }
 				\new Staff { \timeMvtIII \musicOboeIIMvtIII }
-				\new Staff { \timeMvtIII \musicKlarinetteIMvtIII }
-				\new Staff { \timeMvtIII \musicKlarinetteIIMvtIII }
-				\new Staff { \timeMvtIII \musicFagottIMvtIII }
-				\new Staff { \timeMvtIII \musicFagottIIMvtIII }
+				\new Staff { \timeMvtIII \musicClarinettoIMvtIII }
+				\new Staff { \timeMvtIII \musicClarinettoIIMvtIII }
+				\new Staff { \timeMvtIII \musicFagottoIMvtIII }
+				\new Staff { \timeMvtIII \musicFagottoIIMvtIII }
 			>>
 		>>
 		\midi {
@@ -67,13 +67,13 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new Staff { \timeMvtIII \musicHornIMvtIII }
-				\new Staff { \timeMvtIII \musicHornIIMvtIII }
-				\new Staff { \timeMvtIII \musicHornIIIMvtIII }
-				\new Staff { \timeMvtIII \musicHornIVMvtIII }
-				\new Staff { \timeMvtIII \musicTrompeteIMvtIII }
-				\new Staff { \timeMvtIII \musicTrompeteIIMvtIII }
-				\new Staff { \timeMvtIII \musicPaukenMvtIII }
+				\new Staff { \timeMvtIII \musicCornoIMvtIII }
+				\new Staff { \timeMvtIII \musicCornoIIMvtIII }
+				\new Staff { \timeMvtIII \musicCornoIIIMvtIII }
+				\new Staff { \timeMvtIII \musicCornoIVMvtIII }
+				\new Staff { \timeMvtIII \musicTrombeIMvtIII }
+				\new Staff { \timeMvtIII \musicTrombeIIMvtIII }
+				\new Staff { \timeMvtIII \musicTimpaniMvtIII }
 			>>
 		>>
 		\midi {
@@ -90,11 +90,11 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new Staff { \timeMvtIII \musicViolinIMvtIII }
-				\new Staff { \timeMvtIII \musicViolinIIMvtIII }
-				\new Staff { \timeMvtIII \musicBratscheMvtIII }
+				\new Staff { \timeMvtIII \musicViolinoIMvtIII }
+				\new Staff { \timeMvtIII \musicViolinoIIMvtIII }
+				\new Staff { \timeMvtIII \musicViolaMvtIII }
 				\new Staff { \timeMvtIII \musicVioloncelloMvtIII }
-				\new Staff { \timeMvtIII \musicKontrabassMvtIII }
+				\new Staff { \timeMvtIII \musicContrabassoMvtIII }
 			>>
 		>>
 		\midi {
@@ -111,26 +111,26 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new Staff { \timeMvtIII \musicFloteIMvtIII }
-				\new Staff { \timeMvtIII \musicFloteIIMvtIII }
+				\new Staff { \timeMvtIII \musicFlautoIMvtIII }
+				\new Staff { \timeMvtIII \musicFlautoIIMvtIII }
 				\new Staff { \timeMvtIII \musicOboeIMvtIII }
 				\new Staff { \timeMvtIII \musicOboeIIMvtIII }
-				\new Staff { \timeMvtIII \musicKlarinetteIMvtIII }
-				\new Staff { \timeMvtIII \musicKlarinetteIIMvtIII }
-				\new Staff { \timeMvtIII \musicFagottIMvtIII }
-				\new Staff { \timeMvtIII \musicFagottIIMvtIII }
-				\new Staff { \timeMvtIII \musicHornIMvtIII }
-				\new Staff { \timeMvtIII \musicHornIIMvtIII }
-				\new Staff { \timeMvtIII \musicHornIIIMvtIII }
-				\new Staff { \timeMvtIII \musicHornIVMvtIII }
-				\new Staff { \timeMvtIII \musicTrompeteIMvtIII }
-				\new Staff { \timeMvtIII \musicTrompeteIIMvtIII }
-				\new Staff { \timeMvtIII \musicPaukenMvtIII }
-				\new Staff { \timeMvtIII \musicViolinIMvtIII }
-				\new Staff { \timeMvtIII \musicViolinIIMvtIII }
-				\new Staff { \timeMvtIII \musicBratscheMvtIII }
+				\new Staff { \timeMvtIII \musicClarinettoIMvtIII }
+				\new Staff { \timeMvtIII \musicClarinettoIIMvtIII }
+				\new Staff { \timeMvtIII \musicFagottoIMvtIII }
+				\new Staff { \timeMvtIII \musicFagottoIIMvtIII }
+				\new Staff { \timeMvtIII \musicCornoIMvtIII }
+				\new Staff { \timeMvtIII \musicCornoIIMvtIII }
+				\new Staff { \timeMvtIII \musicCornoIIIMvtIII }
+				\new Staff { \timeMvtIII \musicCornoIVMvtIII }
+				\new Staff { \timeMvtIII \musicTrombeIMvtIII }
+				\new Staff { \timeMvtIII \musicTrombeIIMvtIII }
+				\new Staff { \timeMvtIII \musicTimpaniMvtIII }
+				\new Staff { \timeMvtIII \musicViolinoIMvtIII }
+				\new Staff { \timeMvtIII \musicViolinoIIMvtIII }
+				\new Staff { \timeMvtIII \musicViolaMvtIII }
 				\new Staff { \timeMvtIII \musicVioloncelloMvtIII }
-				\new Staff { \timeMvtIII \musicKontrabassMvtIII }
+				\new Staff { \timeMvtIII \musicContrabassoMvtIII }
 			>>
 		>>
 		\midi {

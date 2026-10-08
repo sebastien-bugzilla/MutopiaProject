@@ -4,10 +4,11 @@
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
-%  Source             : Berlin N. Simrock, 1888. Plate 8215.
+%  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
+%                       1957. Plate H 2111.
 %  Type of score      : Score for Posaune
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Thursday 10th August 2023, 10:40
+%  date of initiation : Wednesday 30th September 2026, 23:23:45
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -22,12 +23,12 @@
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Format_Part07_Posaune.ily"
-\include "./01-Mvt1/m01_v15_music_PosauneI.ily"
-\include "./04-Mvt4/m04_v15_music_PosauneI.ily"
-\include "./01-Mvt1/m01_v16_music_PosauneII.ily"
-\include "./04-Mvt4/m04_v16_music_PosauneII.ily"
-\include "./01-Mvt1/m01_v17_music_PosauneIII.ily"
-\include "./04-Mvt4/m04_v17_music_PosauneIII.ily"
+\include "./01-Mvt1/m01_v15_music_TrombonoI.ily"
+\include "./04-Mvt4/m04_v15_music_TrombonoI.ily"
+\include "./01-Mvt1/m01_v16_music_TrombonoII.ily"
+\include "./04-Mvt4/m04_v16_music_TrombonoII.ily"
+\include "./01-Mvt1/m01_v17_music_TrombonoIII.ily"
+\include "./04-Mvt4/m04_v17_music_TrombonoIII.ily"
 \include "./01-Mvt1/m01_v18_music_Tuba.ily"
 \include "./04-Mvt4/m04_v18_music_Tuba.ily"
 %###############################################################################
@@ -51,16 +52,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatPosauneIMvtI
+				\formatTrombonoIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(posauneI) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoicePosauneIMvtI
+				\InCueContext \cueVoiceTrombonoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \namePosauneIMvtI \musicPosauneIMvtI
+				\timeMvtI \nameTrombonoIMvtI \musicTrombonoIMvtI
 			}
 		>>
 		\header {
@@ -75,16 +76,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatPosauneIMvtIV
+				\formatTrombonoIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(posauneI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoicePosauneIMvtIV
+				\InCueContext \cueVoiceTrombonoIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \namePosauneIMvtIV \musicPosauneIMvtIV
+				\timeMvtIV \nameTrombonoIMvtIV \musicTrombonoIMvtIV
 			}
 		>>
 		\header {
@@ -99,16 +100,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatPosauneIIMvtI
+				\formatTrombonoIIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(posauneII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoicePosauneIIMvtI
+				\InCueContext \cueVoiceTrombonoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \namePosauneIIMvtI \musicPosauneIIMvtI
+				\timeMvtI \nameTrombonoIIMvtI \musicTrombonoIIMvtI
 			}
 		>>
 		\header {
@@ -123,16 +124,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatPosauneIIMvtIV
+				\formatTrombonoIIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(posauneII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoicePosauneIIMvtIV
+				\InCueContext \cueVoiceTrombonoIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \namePosauneIIMvtIV \musicPosauneIIMvtIV
+				\timeMvtIV \nameTrombonoIIMvtIV \musicTrombonoIIMvtIV
 			}
 		>>
 		\header {
@@ -147,16 +148,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatPosauneIIIMvtI
+				\formatTrombonoIIIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(posauneIII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoicePosauneIIIMvtI
+				\InCueContext \cueVoiceTrombonoIIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \namePosauneIIIMvtI \musicPosauneIIIMvtI
+				\timeMvtI \nameTrombonoIIIMvtI \musicTrombonoIIIMvtI
 			}
 		>>
 		\header {
@@ -171,16 +172,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatPosauneIIIMvtIV
+				\formatTrombonoIIIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(posauneIII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoicePosauneIIIMvtIV
+				\InCueContext \cueVoiceTrombonoIIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \namePosauneIIIMvtIV \musicPosauneIIIMvtIV
+				\timeMvtIV \nameTrombonoIIIMvtIV \musicTrombonoIIIMvtIV
 			}
 		>>
 		\header {

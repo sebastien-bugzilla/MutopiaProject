@@ -1,10 +1,10 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                      P A R T   S C O R E   F O R M A T                      #
 %###############################################################################
-formatHornIMvtI = {
+formatCornoIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -124,7 +124,7 @@ formatHornIMvtI = {
 	)
 	s2.*17 
 }
-formatHornIMvtII = {
+formatCornoIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -180,7 +180,7 @@ formatHornIMvtII = {
 	)
 	s2*19 
 }
-formatHornIMvtIII = {
+formatCornoIMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -276,7 +276,7 @@ formatHornIMvtIII = {
 	)
 	s2.*10 
 }
-formatHornIMvtIV = {
+formatCornoIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -428,7 +428,7 @@ formatHornIMvtIV = {
 	)
 	s1*9 s2.*1 
 }
-formatHornIIMvtI = {
+formatCornoIIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -548,7 +548,7 @@ formatHornIIMvtI = {
 	)
 	s2.*17 
 }
-formatHornIIMvtII = {
+formatCornoIIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -600,7 +600,7 @@ formatHornIIMvtII = {
 	)
 	s2*30 
 }
-formatHornIIMvtIII = {
+formatCornoIIMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -692,7 +692,7 @@ formatHornIIMvtIII = {
 	)
 	s2.*10 
 }
-formatHornIIMvtIV = {
+formatCornoIIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -848,7 +848,7 @@ formatHornIIMvtIV = {
 	)
 	s1*7 s2.*1 
 }
-formatHornIIIMvtI = {
+formatCornoIIIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -948,7 +948,7 @@ formatHornIIIMvtI = {
 	)
 	s2.*20 
 }
-formatHornIIIMvtII = {
+formatCornoIIIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -996,7 +996,7 @@ formatHornIIIMvtII = {
 	)
 	s2*28 
 }
-formatHornIIIMvtIII = {
+formatCornoIIIMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -1076,7 +1076,7 @@ formatHornIIIMvtIII = {
 	)
 	s2.*11 
 }
-formatHornIIIMvtIV = {
+formatCornoIIIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -1216,7 +1216,7 @@ formatHornIIIMvtIV = {
 	)
 	s1*12 s2.*1 
 }
-formatHornIVMvtI = {
+formatCornoIVMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -1308,7 +1308,7 @@ formatHornIVMvtI = {
 	)
 	s2.*20 
 }
-formatHornIVMvtII = {
+formatCornoIVMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -1352,7 +1352,7 @@ formatHornIVMvtII = {
 	)
 	s2*28 
 }
-formatHornIVMvtIII = {
+formatCornoIVMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -1428,7 +1428,7 @@ formatHornIVMvtIII = {
 	)
 	s2.*12 
 }
-formatHornIVMvtIV = {
+formatCornoIVMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(

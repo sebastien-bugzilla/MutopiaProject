@@ -4,10 +4,11 @@
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
-%  Source             : Berlin N. Simrock, 1888. Plate 8215.
+%  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
+%                       1957. Plate H 2111.
 %  Type of score      : Score for Violoncell
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Thursday 10th August 2023, 10:40
+%  date of initiation : Wednesday 30th September 2026, 23:23:45
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -24,13 +25,13 @@
 \include "./00-Common/DvorakSymph6_Format_Part14_Bassi.ily"
 \include "./01-Mvt1/m01_v23_music_Violoncello_Bassi.ily"
 \include "./01-Mvt1/m01_v23_music_Violoncello_div.ily"
-\include "./01-Mvt1/m01_v24_music_Kontrabass_Bassi.ily"
+\include "./01-Mvt1/m01_v24_music_Contrabasso_Bassi.ily"
 \include "./02-Mvt2/m02_v23_music_Violoncello_Bassi.ily"
-\include "./02-Mvt2/m02_v24_music_Kontrabass_Bassi.ily"
+\include "./02-Mvt2/m02_v24_music_Contrabasso_Bassi.ily"
 \include "./03-Mvt3/m03_v23_music_Violoncello_Bassi.ily"
-\include "./03-Mvt3/m03_v24_music_Kontrabass_Bassi.ily"
+\include "./03-Mvt3/m03_v24_music_Contrabasso_Bassi.ily"
 \include "./04-Mvt4/m04_v23_music_Violoncello_Bassi.ily"
-\include "./04-Mvt4/m04_v24_music_Kontrabass_Bassi.ily"
+\include "./04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -90,7 +91,7 @@
 			>>
 			\new Staff <<
 				\new Voice {
-					\timeMvtI \nameBassiMvtI \musicKontrabassMvtI
+					\timeMvtI \nameBassiMvtI \musicContrabassoMvtI
 				}
 			>>
 		>>
@@ -131,7 +132,7 @@
 			>>
 			\new Staff <<
 				\new Voice {
-					\timeMvtII \nameKontrabassMvtII \musicKontrabassMvtII
+					\timeMvtII \nameContrabassoMvtII \musicContrabassoMvtII
 				}
 			>>
 		>>
@@ -189,7 +190,7 @@
 			>>
 			\new Staff <<
 				\new Voice {
-					\timeMvtIII \nameKontrabassMvtIII \musicKontrabassMvtIII
+					\timeMvtIII \nameContrabassoMvtIII \musicContrabassoMvtIII
 				}
 			>>
 		>>
@@ -230,7 +231,7 @@
 			>>
 			\new Staff <<
 				\new Voice {
-					\timeMvtIV \nameKontrabassMvtIV \musicKontrabassMvtIV
+					\timeMvtIV \nameContrabassoMvtIV \musicContrabassoMvtIV
 				}
 			>>
 		>>

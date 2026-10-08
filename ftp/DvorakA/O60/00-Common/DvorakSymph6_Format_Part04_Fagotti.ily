@@ -1,10 +1,10 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                      P A R T   S C O R E   F O R M A T                      #
 %###############################################################################
-formatFagottIMvtI = {
+formatFagottoIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -188,7 +188,7 @@ formatFagottIMvtI = {
 	)
 	s2.*22 
 }
-formatFagottIMvtII = {
+formatFagottoIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -248,7 +248,7 @@ formatFagottIMvtII = {
 	)
 	s2*13 
 }
-formatFagottIMvtIII = {
+formatFagottoIMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -380,7 +380,7 @@ formatFagottIMvtIII = {
 	)
 	s2.*10 
 }
-formatFagottIMvtIV = {
+formatFagottoIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -632,7 +632,7 @@ formatFagottIMvtIV = {
 	)
 	s1*8 s2.*1 
 }
-formatFagottIIMvtI = {
+formatFagottoIIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -792,7 +792,7 @@ formatFagottIIMvtI = {
 	)
 	s2.*22 
 }
-formatFagottIIMvtII = {
+formatFagottoIIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -844,7 +844,7 @@ formatFagottIIMvtII = {
 	)
 	s2*14 
 }
-formatFagottIIMvtIII = {
+formatFagottoIIMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -952,7 +952,7 @@ formatFagottIIMvtIII = {
 	)
 	s2.*11 
 }
-formatFagottIIMvtIV = {
+formatFagottoIIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(

@@ -4,10 +4,11 @@
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
-%  Source             : Berlin N. Simrock, 1888. Plate 8215.
+%  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
+%                       1957. Plate H 2111.
 %  Type of score      : Score for Trompeten
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Thursday 10th August 2023, 10:40
+%  date of initiation : Wednesday 30th September 2026, 23:23:45
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -22,14 +23,14 @@
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Format_Part06_Trompeten.ily"
-\include "./01-Mvt1/m01_v13_music_TrompeteI.ily"
-\include "./01-Mvt1/m01_v14_music_TrompeteII.ily"
-\include "./02-Mvt2/m02_v13_music_TrompeteI.ily"
-\include "./02-Mvt2/m02_v14_music_TrompeteII.ily"
-\include "./03-Mvt3/m03_v13_music_TrompeteI.ily"
-\include "./03-Mvt3/m03_v14_music_TrompeteII.ily"
-\include "./04-Mvt4/m04_v13_music_TrompeteI.ily"
-\include "./04-Mvt4/m04_v14_music_TrompeteII.ily"
+\include "./01-Mvt1/m01_v13_music_TrombeI.ily"
+\include "./01-Mvt1/m01_v14_music_TrombeII.ily"
+\include "./02-Mvt2/m02_v13_music_TrombeI.ily"
+\include "./02-Mvt2/m02_v14_music_TrombeII.ily"
+\include "./03-Mvt3/m03_v13_music_TrombeI.ily"
+\include "./03-Mvt3/m03_v14_music_TrombeII.ily"
+\include "./04-Mvt4/m04_v13_music_TrombeI.ily"
+\include "./04-Mvt4/m04_v14_music_TrombeII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -51,16 +52,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatTrompeteIMvtI
+				\formatTrombeIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(trompeteI) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrompeteIMvtI
+				\InCueContext \cueVoiceTrombeIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameTrompeteIMvtI \musicTrompeteIMvtI
+				\timeMvtI \nameTrombeIMvtI \musicTrombeIMvtI
 			}
 		>>
 		\header {
@@ -75,16 +76,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatTrompeteIMvtII
+				\formatTrombeIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(trompeteI) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrompeteIMvtII
+				\InCueContext \cueVoiceTrombeIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameTrompeteIMvtII \musicTrompeteIMvtII
+				\timeMvtII \nameTrombeIMvtII \musicTrombeIMvtII
 			}
 		>>
 		\header {
@@ -99,16 +100,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatTrompeteIMvtIII
+				\formatTrombeIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(trompeteI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrompeteIMvtIII
+				\InCueContext \cueVoiceTrombeIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameTrompeteIMvtIII \musicTrompeteIMvtIII
+				\timeMvtIII \nameTrombeIMvtIII \musicTrombeIMvtIII
 			}
 		>>
 		\header {
@@ -123,16 +124,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatTrompeteIMvtIV
+				\formatTrombeIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(trompeteI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrompeteIMvtIV
+				\InCueContext \cueVoiceTrombeIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameTrompeteIMvtIV \musicTrompeteIMvtIV
+				\timeMvtIV \nameTrombeIMvtIV \musicTrombeIMvtIV
 			}
 		>>
 		\header {
@@ -147,16 +148,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatTrompeteIIMvtI
+				\formatTrombeIIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(trompeteII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrompeteIIMvtI
+				\InCueContext \cueVoiceTrombeIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameTrompeteIIMvtI \musicTrompeteIIMvtI
+				\timeMvtI \nameTrombeIIMvtI \musicTrombeIIMvtI
 			}
 		>>
 		\header {
@@ -171,16 +172,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatTrompeteIIMvtII
+				\formatTrombeIIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(trompeteII) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrompeteIIMvtII
+				\InCueContext \cueVoiceTrombeIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameTrompeteIIMvtII \musicTrompeteIIMvtII
+				\timeMvtII \nameTrombeIIMvtII \musicTrombeIIMvtII
 			}
 		>>
 		\header {
@@ -195,16 +196,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatTrompeteIIMvtIII
+				\formatTrombeIIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(trompeteII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrompeteIIMvtIII
+				\InCueContext \cueVoiceTrombeIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameTrompeteIIMvtIII \musicTrompeteIIMvtIII
+				\timeMvtIII \nameTrombeIIMvtIII \musicTrombeIIMvtIII
 			}
 		>>
 		\header {
@@ -219,16 +220,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatTrompeteIIMvtIV
+				\formatTrombeIIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(trompeteII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceTrompeteIIMvtIV
+				\InCueContext \cueVoiceTrombeIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameTrompeteIIMvtIV \musicTrompeteIIMvtIV
+				\timeMvtIV \nameTrombeIIMvtIV \musicTrombeIIMvtIV
 			}
 		>>
 		\header {

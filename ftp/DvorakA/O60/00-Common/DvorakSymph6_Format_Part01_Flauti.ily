@@ -1,10 +1,10 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                      P A R T   S C O R E   F O R M A T                      #
 %###############################################################################
-formatFloteIMvtI = {
+formatFlautoIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -140,7 +140,7 @@ formatFloteIMvtI = {
 	)
 	s2.*21 
 }
-formatFloteIMvtII = {
+formatFlautoIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -200,7 +200,7 @@ formatFloteIMvtII = {
 	)
 	s2*9 
 }
-formatFloteIMvtIII = {
+formatFlautoIMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -300,7 +300,7 @@ formatFloteIMvtIII = {
 	)
 	s2.*26 
 }
-formatFloteIMvtIV = {
+formatFlautoIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -496,7 +496,7 @@ formatFloteIMvtIV = {
 	)
 	s1*6 s2.*1 
 }
-formatFloteIIMvtI = {
+formatFlautoIIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -616,7 +616,7 @@ formatFloteIIMvtI = {
 	)
 	s2.*21 
 }
-formatFloteIIMvtII = {
+formatFlautoIIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -656,7 +656,7 @@ formatFloteIIMvtII = {
 	)
 	s2*26 
 }
-formatFloteIIMvtIII = {
+formatFlautoIIMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -708,7 +708,7 @@ formatFloteIIMvtIII = {
 	)
 	s2.*26 
 }
-formatFloteIIMvtIV = {
+formatFlautoIIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(

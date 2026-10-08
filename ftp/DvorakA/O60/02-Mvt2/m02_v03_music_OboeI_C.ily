@@ -1,6 +1,6 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -11,8 +11,8 @@ musicOboeIMvtII = \relative c'' {
 % Bars 1 to 5
 	\partCombineApart R2
 	r8 bes(-\tweak X-offset #-0.5 \p a4
-	bes2)~
-	bes8( d bes c
+	bes2~
+	bes8 d bes c
 	d) \partCombineAutomatic r r4
 % Bars 6 to 10
 	R2
@@ -28,7 +28,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	\partCombineApart R2
-	f8(_\pcresc bes d f)~
+	f8(_\pcresc^\brack\mf bes d f)~
 	f(_\dimmarkup ees d c
 % Bars 21 to 25
 	f4.)_\pp r8 \partCombineAutomatic
@@ -41,19 +41,19 @@ musicOboeIMvtII = \relative c'' {
 	c4(~ c16_\crescmarkup b d b)
 	c4.( cis8)
 	d-> bes-> g16(-- a-- bes-- c--)
-	d8-> bes-> g16(-\tweak X-offset #-1 _\crescmarkup-- a-- bes-- c--)
+	d8-> bes-> g16(-\tweak X-offset #-1 _\crescmarkup-- a-- bes-- c!--)
 % Bars 31 to 35
 	d8-> bes-> g16(-- a-- bes-- c--)
 	d8 \partCombineAutomatic r r4
 	R2*2
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
-	fis fis
-	fis fis
-	f! f
-	f f 
+	fis-- fis--
+	fis-- fis--
+	f!-- f--
+	f-- f--
 % Bars 41 to 45
 	\partCombineApart r4 \tuplet 3/2 4 {g,8-._\crescmarkup d'-. g-. } \partCombineAutomatic
 	R2
@@ -74,8 +74,8 @@ musicOboeIMvtII = \relative c'' {
 	R2*2
 % Bars 56 to 60
 	
-	\partCombineApart r8 d(\p\< bes e~)\!
-	e4\fz r \partCombineAutomatic
+	\partCombineApart r8 d(\p\< bes e~\!
+	e4)\fz r \partCombineAutomatic
 	e\p r
 	e_\dimmarkup r
 % Bars 61 to 65
@@ -103,10 +103,10 @@ musicOboeIMvtII = \relative c'' {
 % Bars 81 to 85
 	
 % Bars 86 to 90
-	r8 c'8 c c
+	\partCombineApart r8 c'8 c c
 	d2
 	ees4( c8 a \mark \default
-	bes4.) r8
+	bes4.) \partCombineAutomatic r8
 	R2*5
 % Bars 91 to 95
 	
@@ -124,10 +124,10 @@ musicOboeIMvtII = \relative c'' {
 	f8 r r4
 	a8 r r4
 	R2
-	f4.( ges8)~
-	ges( f4.)~
+	f4.( ges8~
+	ges f4.~
 % Bars 106 to 110
-	f8( ees4.)
+	f8 ees4.)
 	bes'2\fz
 	\dynEO #'(0 . 1) bes-\tweak X-offset #0.1 \fz
 	a-\tweak X-offset #0.1 \fz
@@ -149,15 +149,15 @@ musicOboeIMvtII = \relative c'' {
 	bes
 	R2
 	\partCombineApart ges4(_\p_\cresc ees!8 aes
-	ges2)~
+	ges2~
 % Bars 126 to 130
-	ges4 ees!8( a!~
+	ges4) ees!8( a!~
 	a) fis-. d-. a'~
 	a fis-. d-. a'~
 	a16\f fis-. d-. c'~ c a-. fis-. d'~
-	d a-. a-. a-. a-. a-. a-. a-.
+	d a-. a-. a-. \stemDown \omitBeam a-. a-. a-. a-.
 % Bars 131 to 135
-	\partCombineAutomatic a r \partCombineApart fis4_\pp fis8~
+	\partCombineAutomatic a r \partCombineApart \stemUp fis4_\pp fis8~
 	fis4. r8
 	r fis4 fis8~
 	fis4. r8
@@ -170,7 +170,7 @@ musicOboeIMvtII = \relative c'' {
 	f4.( g8~
 % Bars 141 to 145
 	g4 fis)
-	g2~
+	g2~ 
 	g
 	bes(
 	c)(
@@ -179,7 +179,7 @@ musicOboeIMvtII = \relative c'' {
 	R2
 	R2*2
 	
-	r8 \shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur bes4(-\tweak X-offset #0.9 _\pcresc a16 g
+	r8 \shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur bes4(-\tweak X-offset #0.9 _\brackpcresc a16 g
 % Bars 151 to 155
 	f2)~
 	f8 r r4
@@ -211,10 +211,10 @@ musicOboeIMvtII = \relative c'' {
 	f)\noBeam d(\mf\< ees e\!
 % Bars 176 to 180
 	f)\noBeam d(\f\< ees e\!
-	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes->-.\!
-	a8\ff r \partCombineApart g4-^~
-	g8_\> bes( a g)~\!
-	g(_\p f4) r8
+	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes!->-.\!
+	a8-.->\ff r \partCombineApart g4-^~
+	g8_\> bes( a g~\!
+	g_\p f4) r8
 % Bars 181 to 185
 	R2*2
 	
@@ -222,8 +222,8 @@ musicOboeIMvtII = \relative c'' {
 % Bars 186 to 190
 	
 	\partCombineApart r8 f(\p g a)
-	<< bes2~ {s8_\< s s s\!}>> 
-	bes8_\>( aes ges f)\!
+	<< bes2(~ {s8_\< s s s\!}>> 
+	bes8_\> aes ges f)\!
 	f4 r \partCombineAutomatic
 % Bars 191 to 195
 	R2*5

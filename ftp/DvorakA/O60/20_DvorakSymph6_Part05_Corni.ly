@@ -4,10 +4,11 @@
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
 %  work               : Symphony No. 6 in D Major  Op. 60
-%  Source             : Berlin N. Simrock, 1888. Plate 8215.
+%  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
+%                       1957. Plate H 2111.
 %  Type of score      : Score for Horner
 %  Typesetter         : Sébastien MANEN
-%  date of initiation : Thursday 10th August 2023, 10:40
+%  date of initiation : Wednesday 30th September 2026, 23:23:45
 %
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
@@ -22,22 +23,22 @@
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Format_Part05_Horner.ily"
-\include "./01-Mvt1/m01_v09_music_HornI.ily"
-\include "./02-Mvt2/m02_v09_music_HornI.ily"
-\include "./03-Mvt3/m03_v09_music_HornI.ily"
-\include "./04-Mvt4/m04_v09_music_HornI.ily"
-\include "./01-Mvt1/m01_v10_music_HornII.ily"
-\include "./02-Mvt2/m02_v10_music_HornII.ily"
-\include "./03-Mvt3/m03_v10_music_HornII.ily"
-\include "./04-Mvt4/m04_v10_music_HornII.ily"
-\include "./01-Mvt1/m01_v11_music_HornIII.ily"
-\include "./02-Mvt2/m02_v11_music_HornIII.ily"
-\include "./03-Mvt3/m03_v11_music_HornIII.ily"
-\include "./04-Mvt4/m04_v11_music_HornIII.ily"
-\include "./01-Mvt1/m01_v12_music_HornIV.ily"
-\include "./02-Mvt2/m02_v12_music_HornIV.ily"
-\include "./03-Mvt3/m03_v12_music_HornIV.ily"
-\include "./04-Mvt4/m04_v12_music_HornIV.ily"
+\include "./01-Mvt1/m01_v09_music_CornoI.ily"
+\include "./02-Mvt2/m02_v09_music_CornoI.ily"
+\include "./03-Mvt3/m03_v09_music_CornoI.ily"
+\include "./04-Mvt4/m04_v09_music_CornoI.ily"
+\include "./01-Mvt1/m01_v10_music_CornoII.ily"
+\include "./02-Mvt2/m02_v10_music_CornoII.ily"
+\include "./03-Mvt3/m03_v10_music_CornoII.ily"
+\include "./04-Mvt4/m04_v10_music_CornoII.ily"
+\include "./01-Mvt1/m01_v11_music_CornoIII.ily"
+\include "./02-Mvt2/m02_v11_music_CornoIII.ily"
+\include "./03-Mvt3/m03_v11_music_CornoIII.ily"
+\include "./04-Mvt4/m04_v11_music_CornoIII.ily"
+\include "./01-Mvt1/m01_v12_music_CornoIV.ily"
+\include "./02-Mvt2/m02_v12_music_CornoIV.ily"
+\include "./03-Mvt3/m03_v12_music_CornoIV.ily"
+\include "./04-Mvt4/m04_v12_music_CornoIV.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -59,16 +60,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIMvtI
+				\formatCornoIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(hornI) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIMvtI
+				\InCueContext \cueVoiceCornoIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameHornIMvtI \musicHornIMvtI
+				\timeMvtI \nameCornoIMvtI \musicCornoIMvtI
 			}
 		>>
 		\header {
@@ -83,16 +84,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIMvtII
+				\formatCornoIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(hornI) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIMvtII
+				\InCueContext \cueVoiceCornoIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameHornIMvtII \musicHornIMvtII
+				\timeMvtII \nameCornoIMvtII \musicCornoIMvtII
 			}
 		>>
 		\header {
@@ -107,16 +108,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIMvtIII
+				\formatCornoIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(hornI) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIMvtIII
+				\InCueContext \cueVoiceCornoIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameHornIMvtIII \musicHornIMvtIII
+				\timeMvtIII \nameCornoIMvtIII \musicCornoIMvtIII
 			}
 		>>
 		\header {
@@ -131,16 +132,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIMvtIV
+				\formatCornoIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(hornI) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIMvtIV
+				\InCueContext \cueVoiceCornoIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameHornIMvtIV \musicHornIMvtIV
+				\timeMvtIV \nameCornoIMvtIV \musicCornoIMvtIV
 			}
 		>>
 		\header {
@@ -155,16 +156,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIIMvtI
+				\formatCornoIIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(hornII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIIMvtI
+				\InCueContext \cueVoiceCornoIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameHornIIMvtI \musicHornIIMvtI
+				\timeMvtI \nameCornoIIMvtI \musicCornoIIMvtI
 			}
 		>>
 		\header {
@@ -179,16 +180,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIIMvtII
+				\formatCornoIIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(hornII) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIIMvtII
+				\InCueContext \cueVoiceCornoIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameHornIIMvtII \musicHornIIMvtII
+				\timeMvtII \nameCornoIIMvtII \musicCornoIIMvtII
 			}
 		>>
 		\header {
@@ -203,16 +204,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIIMvtIII
+				\formatCornoIIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(hornII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIIMvtIII
+				\InCueContext \cueVoiceCornoIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameHornIIMvtIII \musicHornIIMvtIII
+				\timeMvtIII \nameCornoIIMvtIII \musicCornoIIMvtIII
 			}
 		>>
 		\header {
@@ -227,16 +228,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIIMvtIV
+				\formatCornoIIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(hornII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIIMvtIV
+				\InCueContext \cueVoiceCornoIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameHornIIMvtIV \musicHornIIMvtIV
+				\timeMvtIV \nameCornoIIMvtIV \musicCornoIIMvtIV
 			}
 		>>
 		\header {
@@ -251,16 +252,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIIIMvtI
+				\formatCornoIIIMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(hornIII) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIIIMvtI
+				\InCueContext \cueVoiceCornoIIIMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameHornIIIMvtI \musicHornIIIMvtI
+				\timeMvtI \nameCornoIIIMvtI \musicCornoIIIMvtI
 			}
 		>>
 		\header {
@@ -275,16 +276,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIIIMvtII
+				\formatCornoIIIMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(hornIII) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIIIMvtII
+				\InCueContext \cueVoiceCornoIIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameHornIIIMvtII \musicHornIIIMvtII
+				\timeMvtII \nameCornoIIIMvtII \musicCornoIIIMvtII
 			}
 		>>
 		\header {
@@ -299,16 +300,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIIIMvtIII
+				\formatCornoIIIMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(hornIII) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIIIMvtIII
+				\InCueContext \cueVoiceCornoIIIMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameHornIIIMvtIII \musicHornIIIMvtIII
+				\timeMvtIII \nameCornoIIIMvtIII \musicCornoIIIMvtIII
 			}
 		>>
 		\header {
@@ -323,16 +324,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIIIMvtIV
+				\formatCornoIIIMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(hornIII) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIIIMvtIV
+				\InCueContext \cueVoiceCornoIIIMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameHornIIIMvtIV \musicHornIIIMvtIV
+				\timeMvtIV \nameCornoIIIMvtIV \musicCornoIIIMvtIV
 			}
 		>>
 		\header {
@@ -347,16 +348,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIVMvtI
+				\formatCornoIVMvtI
 			}
 			\new Voice {
 				\keepWithTag #'(hornIV) \tempiPartMvtI
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIVMvtI
+				\InCueContext \cueVoiceCornoIVMvtI
 			}
 			\new Voice {
-				\timeMvtI \nameHornIVMvtI \musicHornIVMvtI
+				\timeMvtI \nameCornoIVMvtI \musicCornoIVMvtI
 			}
 		>>
 		\header {
@@ -371,16 +372,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIVMvtII
+				\formatCornoIVMvtII
 			}
 			\new Voice {
 				\keepWithTag #'(hornIV) \tempiPartMvtII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIVMvtII
+				\InCueContext \cueVoiceCornoIVMvtII
 			}
 			\new Voice {
-				\timeMvtII \nameHornIVMvtII \musicHornIVMvtII
+				\timeMvtII \nameCornoIVMvtII \musicCornoIVMvtII
 			}
 		>>
 		\header {
@@ -395,16 +396,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIVMvtIII
+				\formatCornoIVMvtIII
 			}
 			\new Voice {
 				\keepWithTag #'(hornIV) \tempiPartMvtIII
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIVMvtIII
+				\InCueContext \cueVoiceCornoIVMvtIII
 			}
 			\new Voice {
-				\timeMvtIII \nameHornIVMvtIII \musicHornIVMvtIII
+				\timeMvtIII \nameCornoIVMvtIII \musicCornoIVMvtIII
 			}
 		>>
 		\header {
@@ -419,16 +420,16 @@
 	\score {
 		\new Staff <<
 			\new Voice {
-				\formatHornIVMvtIV
+				\formatCornoIVMvtIV
 			}
 			\new Voice {
 				\keepWithTag #'(hornIV) \tempiPartMvtIV
 			}
 			\new Voice {
-				\InCueContext \cueVoiceHornIVMvtIV
+				\InCueContext \cueVoiceCornoIVMvtIV
 			}
 			\new Voice {
-				\timeMvtIV \nameHornIVMvtIV \musicHornIVMvtIV
+				\timeMvtIV \nameCornoIVMvtIV \musicCornoIVMvtIV
 			}
 		>>
 		\header {

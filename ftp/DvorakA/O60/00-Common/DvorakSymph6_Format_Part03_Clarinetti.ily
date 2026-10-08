@@ -1,10 +1,10 @@
 %  work        : Symphony No. 6 in D Major  Op. 60
 %  typesetter  : Sébastien MANEN
-%  date        : Thursday 10th August 2023, 10:40
+%  date        : Wednesday 30th September 2026, 23:23:45
 %###############################################################################
 %#                      P A R T   S C O R E   F O R M A T                      #
 %###############################################################################
-formatKlarinetteIMvtI = {
+formatClarinettoIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -164,7 +164,7 @@ formatKlarinetteIMvtI = {
 	)
 	s2.*19 
 }
-formatKlarinetteIMvtII = {
+formatClarinettoIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -232,7 +232,7 @@ formatKlarinetteIMvtII = {
 	)
 	s2*18 
 }
-formatKlarinetteIMvtIII = {
+formatClarinettoIMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -352,7 +352,7 @@ formatKlarinetteIMvtIII = {
 	)
 	s2.*11 
 }
-formatKlarinetteIMvtIV = {
+formatClarinettoIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -540,7 +540,7 @@ formatKlarinetteIMvtIV = {
 	)
 	s1*8 s2.*1 
 }
-formatKlarinetteIIMvtI = {
+formatClarinettoIIMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -688,7 +688,7 @@ formatKlarinetteIIMvtI = {
 	)
 	s2.*18 
 }
-formatKlarinetteIIMvtII = {
+formatClarinettoIIMvtII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -740,7 +740,7 @@ formatKlarinetteIIMvtII = {
 	)
 	s2*10 
 }
-formatKlarinetteIIMvtIII = {
+formatClarinettoIIMvtIII = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
@@ -848,7 +848,7 @@ formatKlarinetteIIMvtIII = {
 	)
 	s2.*12 
 }
-formatKlarinetteIIMvtIV = {
+formatClarinettoIIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 	\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'(
