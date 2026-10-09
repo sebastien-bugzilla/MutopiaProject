@@ -26,8 +26,8 @@ musicFagottoIMvtII = \relative c' {
 	f2\f~
 	f4._\dimmarkup fis8
 	g\p r r4
-	f'2\fz~-\tweak X-offset #4 _\dimmarkup
-	f4.( ees8
+	f'2\fz(~-\tweak X-offset #4 _\dimmarkup
+	f4. ees8
 % Bars 21 to 25
 	d4.)\pp r8
 	\mmrLength #12 R2*6
@@ -36,7 +36,7 @@ musicFagottoIMvtII = \relative c' {
 	
 	r4 g\fz(
 	f8) r ees4(->
-	d8) r ees4(_\crescmarkup
+	d8) r ees4(_\brackM\crescmarkup
 % Bars 31 to 35
 	d8) r ees4(
 	d8) r r4
@@ -45,10 +45,10 @@ musicFagottoIMvtII = \relative c' {
 	r4 fis,--\pp
 % Bars 36 to 40
 	fis-- fis--
-	fis fis
-	fis fis
-	f! f
-	f f
+	fis-- fis--
+	fis-- fis--
+	f!-- f--
+	f-- f--
 % Bars 41 to 45
 	\tuplet 3/2 4 {d8-. f-. a-.} g4_\crescmarkup
 	g g
@@ -96,8 +96,8 @@ musicFagottoIMvtII = \relative c' {
 	f,[ f']_\dimmarkup f,[ fis']
 % Bars 86 to 90
 	g\p\< e' e e\!
-	f2\fz~
-	f4.\>( ees!8 \markWhiteout \mark \default
+	f2\fz(~
+	f4.\> ees!8 \markWhiteout \mark \default
 	d4.)\pp r8
 	R2
 % Bars 91 to 95
@@ -145,7 +145,7 @@ musicFagottoIMvtII = \relative c' {
 	d4 d
 	d d
 	d8\f d d d
-	d16\< d d d  d d d d\!
+	d16-.\< d-. d-. d-.  d-. d-. d-. d-.\!
 % Bars 131 to 135
 	d\ff r r8 r4
 	R2*8
@@ -169,8 +169,8 @@ musicFagottoIMvtII = \relative c' {
 	f16 \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . -0.8)) Slur bes,( d\< f bes d f d)\!
 	c(_\dimmarkup a f c f,8) fis(
 	g)\noBeam fis'(\pp\< g e)\!
-	f!2\fz~
-	f4.\>( fis8\!
+	f!2\fz(~
+	f4.\> fis8\!
 % Bars 156 to 160
 	g4)\pp g--
 	g-- g--
@@ -197,9 +197,9 @@ musicFagottoIMvtII = \relative c' {
 	f8) bes4\mf\<( a16 g\!
 % Bars 176 to 180
 	f8) bes4\f( a16 g
-	f) ees'\f\<-> d-> des-> c-> bes-> a-> g->\!
-	fis8\ff r g-^ r
-	c,-^r r4
+	f) ees'\f\<->-. d->-. des->-. c->-. bes->-. a->-. g->-.\!
+	fis8-.->\ff r g-^-. r
+	c,-^-. r r4
 	f2\p\>~
 % Bars 181 to 185
 	f\pp~

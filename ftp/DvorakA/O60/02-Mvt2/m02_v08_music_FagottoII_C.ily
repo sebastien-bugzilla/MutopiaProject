@@ -21,7 +21,7 @@ musicFagottoIIMvtII = \relative c {
 	
 	R2*2
 	
-	r4 << e, {s16-\tweak extra-offset #'(1 . 1) \< s s s\!}>>
+	r4 << e,\brack\p {s16-\tweak extra-offset #'(1 . 1) \< s s s\!}>>
 % Bars 16 to 20
 	f2\f~
 	f4. fis8
@@ -45,10 +45,10 @@ musicFagottoIIMvtII = \relative c {
 	r4 d'--\pp
 % Bars 36 to 40
 	d-- d--
-	d d
-	d d
-	d d
-	d d 
+	d-- d--
+	d-- d--
+	d-- d--
+	d-- d-- 
 % Bars 41 to 45
 	a-\tweak X-offset #0.7 _\ten b4
 	c  c 
@@ -72,8 +72,8 @@ musicFagottoIIMvtII = \relative c {
 % Bars 61 to 65
 	
 	
-	r8 a''\p c f,~
-	f r r4 
+	r8 a''(\p c f,~
+	f) r r4 
 	R2*2
 % Bars 66 to 70
 	
@@ -83,7 +83,7 @@ musicFagottoIIMvtII = \relative c {
 	r f--
 % Bars 71 to 75
 	r r8 g'\pp(
-	f ees \once \stemUp c4) \mark \default
+	f ees c4) \mark \default
 	bes2(\p 
 	c4 d,)
 	g2~
@@ -96,7 +96,7 @@ musicFagottoIIMvtII = \relative c {
 % Bars 81 to 85
 	R2*2
 	
-	r8 \once \stemUp c,4.\mf\<
+	r8 c,4.\mf\<
 	f8\f[ f'] f,[ f']
 	f,[ f'] f,[ fis']
 % Bars 86 to 90
@@ -115,8 +115,8 @@ musicFagottoIIMvtII = \relative c {
 	
 	
 	r8. f,16\f-. bes(\< f)\! d-. c-.
-	bes8\ff a' g fis
-	g4 c,->
+	bes8->\ff a'-> g-> fis->
+	g4-> c,->
 % Bars 101 to 105
 	f8 r r4
 	f8 r r4
@@ -150,7 +150,7 @@ musicFagottoIIMvtII = \relative c {
 	d4 d
 	d d
 	d8\f d d d
-	d16\< d d d  d d d d\!
+	d16-.\< d-. d-. d-.  d-. d-. d-. d-.\!
 % Bars 131 to 135
 	d\ff r r8 r4
 	R2*8
@@ -174,8 +174,8 @@ musicFagottoIIMvtII = \relative c {
 	f2
 	f4~ f8 fis(
 	g)\noBeam d'(\pp\< g, e)\!
-	f!2\fz~
-	f4.\>( fis8\!
+	f!2\fz(~
+	f4.\> fis8\!
 % Bars 156 to 160
 	g4)\pp g--
 	g-- g--
@@ -193,22 +193,22 @@ musicFagottoIIMvtII = \relative c {
 	
 	\mark \default
 	bes,2-\offset X-offset 0.6 \p~
-	bes8 bes'4\< a16 g\!
+	bes8 bes'4(\< a16 g\!
 % Bars 171 to 175
-	f8 bes,4.-\offset X-offset 0.6 \p~
-	bes8 bes'4\< a16 g\!
-	f8 bes,4.\p~
+	f8) bes,4.-\offset X-offset 0.6 \p~
+	bes8 bes'4(\< a16 g\!
+	f8) bes,4.\p~
 	bes8 bes'4(\< a16\! g
 	f8) bes4\mf\<( a16\! g
 % Bars 176 to 180
 	f8) bes4\f( a16 g
-	f) ees'\<-> d-> des-> c-> bes-> a-> g->\!
-	fis8\ff r g-^ r
-	c,-^r r4
-	f2\p~
+	f) ees'\<->-. d->-. des->-. c->-. bes->-. a->-. g->-.\!
+	fis8-.->\ff r g-^-. r
+	c,-^-. r r4
+	\stemUp f2\p~
 % Bars 181 to 185
 	f\pp_(
-	bes8) r r4
+	\stemDown bes8) r r4
 	R2
 	g'2~
 	g4 c,(
@@ -227,8 +227,8 @@ musicFagottoIIMvtII = \relative c {
 % Bars 196 to 200
 	
 	f2\pp(
-	bes8\noBeam) f\ff d g
-	ees c a d,-^\noBeam
+	bes8\noBeam) f-!\ff d-! g-!
+	ees-! c-! a-! d,-^\noBeam
 	g-^ r f4\fp~\>
 % Bars 201 to 205
 	<<f2 {s4 s8 s\!} >>

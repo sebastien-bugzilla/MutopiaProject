@@ -231,7 +231,7 @@ musicOboeIIMvtII = \relative c' {
 	R2*2
 	
 	r8 f'-!\ff d-! g-!
-	ees-! c-! a-! d-!
+	ees-! c-! a-! d-^
 	d-^ r f,4\fp(
 % Bars 201 to 205
 	g\> f8 ees)\!

@@ -21,7 +21,7 @@ musicFagottoIIMvtII = \relative c {
 	
 	
 	
-	r4 e,\<
+	r4 e,\brack\p\<
 % Bars 16 to 20
 	f2\f~
 	f4._\dimmarkup fis8
@@ -42,10 +42,10 @@ musicFagottoIIMvtII = \relative c {
 	r4 d'--\pp
 % Bars 36 to 40
 	d-- d--
-	d d
-	d d
-	d d
-	d d 
+	d-- d--
+	d-- d--
+	d-- d--
+	d-- d-- 
 % Bars 41 to 45
 	a^\ten\< b4
 	c  c\!
@@ -143,7 +143,7 @@ musicFagottoIIMvtII = \relative c {
 	d4 d
 	d d
 	d8\f d d d
-	d16\< d d d  d d d d\!
+	d16-.\< d-. d-. d-.  d-. d-. d-. d-.\!
 % Bars 131 to 135
 	d\ff r r8 r4
 	R2*8
@@ -167,8 +167,8 @@ musicFagottoIIMvtII = \relative c {
 	\after 8*3 \! f2\<
 	f4~\> f8 fis(\!
 	g)\noBeam \hairpinShorten #'(-0.5 . -1) d'(\pp\< g, e)\!
-	f!2\fz~
-	f4.\>( fis8\!
+	f!2\fz(~
+	f4.\> fis8\!
 % Bars 156 to 160
 	g4)\pp g--
 	g-- g--
@@ -195,9 +195,9 @@ musicFagottoIIMvtII = \relative c {
 	f8) bes4\mf\<( a16 g\!
 % Bars 176 to 180
 	f8) bes4\f( a16 g
-	f) ees'\<-> d-> des-> c-> bes-> a-> g->\!
-	fis8\ff r g-^ r
-	c,-^r r4
+	f) ees'\<->-. d->-. des->-. c->-. bes->-. a->-. g->-.\!
+	fis8-.->\ff r g-^-. r
+	c,-^-. r r4
 	f2\p\>~
 % Bars 181 to 185
 	f\pp(
