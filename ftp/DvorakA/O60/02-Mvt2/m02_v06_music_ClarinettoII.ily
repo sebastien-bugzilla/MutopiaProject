@@ -29,7 +29,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	R2*3
 	
 	
-	r4 fis\pp(~
+	r4 fis\brack\pp(~
 % Bars 26 to 30
 	fis8 a g fis)
 	fis4 e\<(
@@ -44,10 +44,10 @@ musicClarinettoIIMvtII = \relative c'' {
 	r4 gis\pp--
 % Bars 36 to 40
 	gis-- gis--
-	gis gis
-	gis gis
-	g! g
-	g g
+	gis-- gis--
+	gis-- gis--
+	g!-- g--
+	g-- g--
 % Bars 41 to 45
 	R2*12
 % Bars 46 to 50
@@ -136,7 +136,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	gis4 gis
 	gis gis
 	gis8\f gis gis gis
-	gis16\< b b b \stemUp b b b b\! 
+	gis16-.\< b-. b-. b-. \stemUp b-. b-. b-. b-.\! 
 % Bars 131 to 135
 	b\ff \stemNeutral r r8 r4
 	R2*3
@@ -153,9 +153,9 @@ musicClarinettoIIMvtII = \relative c'' {
 	R2*6
 % Bars 146 to 150
 	
-	g4(\pp c)~
-	c8( b a g)
-	g~ g32( a g f-.) f4(
+	g4(\pp c~
+	c8 b a g)
+	g(~ g32 a g f-.) f4(
 	e8) c16(\< e a c b a)\!
 % Bars 151 to 155
 	g8( d'4\mf\> c8)
@@ -166,7 +166,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 	r8 e,4->\p( d16 cis
 	c!8) r r4
-	r8 e!4\pp( d16 c!~
+	r8 e4\pp( d16 c!~
 	c8) r r4
 % Bars 161 to 165
 	R2*8
@@ -183,20 +183,20 @@ musicClarinettoIIMvtII = \relative c'' {
 	e8 r r4
 	r8 c'(\mf\< d dis\!
 % Bars 176 to 180
-	e)\noBeam c(\f\< d dis\!
-	e16)\noBeam b\f-> cis!-> cis-> d->\< e-> d-> dis->\!
-	b8\ff r cis-^ r
-	c!-^ r r4
+	e)\noBeam c(\f\< d! dis\!
+	e16)\noBeam b\f->-. cis!->-. cis->-. d->-.\< e->-. d->-. dis->-.\!
+	b8-.->\ff r cis-^-. r
+	c!-^-. r r4
 	R2*4
 % Bars 181 to 185
 	
 	
 	
-	cis2_\fpdim(
-	c!)~
+	cis2_\fpdim
+	c!~
 % Bars 186 to 190
-	c2\pp\<(
-	\after 8*3 \! g\>)~
+	c2\pp\<
+	\after 8*3 \! g\>~
 	g8\! r r4
 	R2*8
 % Bars 191 to 195
@@ -206,13 +206,13 @@ musicClarinettoIIMvtII = \relative c'' {
 	b2\pp(
 	c8)\noBeam g'\ff-! e-! a-! 
 	f-! d-! b-! b-^
-	a-^ r c4\fp~
+	a-^ r c4\fp(~
 % Bars 201 to 205
-	c(\> b)\!
+	c\> b)\!
 	g2\pp~
 	g~
 	g8 r r4
 	c4--\pp c--
 % Bar 206
-	c2\fermata \bar "|."
+	c2\fermata \fine
 }

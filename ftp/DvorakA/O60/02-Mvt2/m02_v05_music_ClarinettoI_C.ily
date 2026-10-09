@@ -10,10 +10,10 @@ musicClarinettoIMvtII = \relative c'' {
 	\transposition bes
 % Bars 1 to 5
 	R2
-	\partCombineApart r8 c(\p b e)~
-	e4.(_\< fis8\!
-	g2)_\fp~_\>
-	g8_\pp r e4(~
+	\partCombineApart r8 c(\p b e~
+	e4._\< fis8\!
+	g2_\fp~_\>
+	g8)_\pp r e4(~
 % Bars 6 to 10
 	e16 d b16. a32 gis4
 	a) r \partCombineAutomatic
@@ -37,19 +37,19 @@ musicClarinettoIMvtII = \relative c'' {
 	a4 g\<(
 	fis8)\! r r4
 	\partCombineApart \dynEO #'(0 . 2) g'2_\fp~
-	g~
+	<< g~ {s4 s-\crescmarkup}>>
 % Bars 31 to 35
-	g~
+	g2~
 	g8 r r4 \partCombineAutomatic
 	R2*2
 	\bar "||" \mark \default
 	r4 b,\pp--
 % Bars 36 to 40
 	b-- b--
-	b b
-	b b
-	b b
-	b b
+	b-- b--
+	b-- b--
+	b-- b--
+	b-- b--
 % Bars 41 to 45
 	R2
 	\partCombineApart \tuplet 3/2 4 {d,8_\crescmarkup-. a'-. d-. } r4 \partCombineAutomatic
@@ -65,13 +65,13 @@ musicClarinettoIMvtII = \relative c'' {
 % Bars 51 to 55
 	c8) f4_\< f8\!
 	fis4._\f_\> fis8\!
-	a(_\p e4) c8~
-	c(_\> a~ a16 b c d)\!
+	a(_\p e4) c8(~
+	c_\> a~ a16 b c d)\!
 	e8_\pp r r4 \partCombineAutomatic
 % Bars 56 to 60
-	r8 \partCombineApart a,( gis c)~
+	r8 \partCombineApart a,( gis c~
 	c2~
-	c4 \partCombineAutomatic r
+	c4) \partCombineAutomatic r
 	c\p r
 	c_\dimmarkup r
 % Bars 61 to 65
@@ -81,14 +81,14 @@ musicClarinettoIMvtII = \relative c'' {
 	f) e( d g
 	f16) e( d) g( f) e( d) g(
 % Bars 66 to 70
-	f)_\< e( d) d'( c b a\! g)
+	f)_\< e( d) d'(-> c b a\! g)
 	\partCombineApart f( e d_\dimmarkup g f e d c)
 	b(\p c d e d c b a)
-	g(\< a c b\! a g f e)
-	\tuplet 3/2 4 {g8--( f-- e--} g\>[ f\!])
+	g(\< a c b\! a\> g f e)\!
+	\tuplet 3/2 4 {g8--(\< f-- e--\!} g\>[ f\!])
 % Bars 71 to 75
-	e(^\dimmarkup d g4)~
-	g2\pp~ \mark \default
+	e(^\dimmarkup d g4~
+	g2)\pp~ \mark \default
 	g8 r r4 \partCombineAutomatic
 	R2*6
 % Bars 76 to 80
@@ -105,8 +105,8 @@ musicClarinettoIMvtII = \relative c'' {
 	
 % Bars 86 to 90
 	
-	\partCombineApart r16 g,(-\tweak extra-offset #'(1.5 . 2) _\f -\tweak extra-offset #'(1.2 . 2) _\< c e g c e g)~\!
-	\shape #'((0 . 0)(0 . -1)(0 . -1)(0 . 0)) Slur g8(_\> f16 e g f e d)\! \mark \default
+	\partCombineApart r16 g,(-\tweak extra-offset #'(1.5 . 2) _\f -\tweak extra-offset #'(1.2 . 2) _\< c e g c e g~\!
+	g8_\> f16 e g f e d)\! \mark \default
 	g4._\pp r8 \partCombineAutomatic
 	R2
 % Bars 91 to 95
@@ -125,10 +125,10 @@ musicClarinettoIMvtII = \relative c'' {
 	g8 r r4
 	f!8 r r4
 	R2
-	g4.( aes8)~
-	aes( g4.)~
+	g4.( aes8~
+	aes g4.~
 % Bars 106 to 110
-	g8( f4.)
+	g8 f4.)
 	ees2\fz
 	aes\fz
 	aes\fz
@@ -150,7 +150,7 @@ musicClarinettoIMvtII = \relative c'' {
 	d4 d
 	d d
 	d8\f d d d
-	d16\< gis gis gis  gis gis gis gis\!
+	d16-.\< gis-. gis-. gis-.  gis-. gis-. gis-. gis-.\!
 % Bars 131 to 135
 	gis\ff r r8 r4
 	R2*3
@@ -201,28 +201,28 @@ musicClarinettoIMvtII = \relative c'' {
 	c8 r r4
 	r8 e(\mf\< f fis\!
 % Bars 176 to 180
-	g)\noBeam e(\f\< f fis\!
-	g16)\noBeam d\f\<-> g-> g-> g-> g-> g-> fis->\!
-	e8\ff r g-^ r
-	fis-^ r r4
+	g)\noBeam e(\f\< f! fis\!
+	g16)\noBeam d\f\<->-. g->-. g->-. g->-. g->-. g->-. fis->-.\!
+	e8-.->\ff r g-^-. r
+	fis-^-. r r4
 	\partCombineApart r8 g(->_\p e a
 % Bars 181 to 185
-	f!_\dimmarkup d b g')~
+	f!_\dimmarkup d b g'~
 	g2_\pp~
-	g4( gis)
+	g4 gis)
 	a( e
 	c! d)
 % Bars 186 to 190
-	\stemDown e2(
+	e2(
 	d
-	\omitFlag c8) \partCombineAutomatic r r4
+	c8) \partCombineAutomatic r r4
 	R2*8
 % Bars 191 to 195
 	
 % Bars 196 to 200
 	
-	\partCombineApart \stemUp dis2(
-	e8)\noBeam g-! e-! a-! 
+	dis2(
+	e8)\noBeam \partCombineApart g-! e-! a-! 
 	f-! d-! b-! d-^
 	c-^ \once \partCombineAutomatic r e4(
 % Bars 201 to 205
@@ -232,5 +232,5 @@ musicClarinettoIMvtII = \relative c'' {
 	c8 r r4
 	e4--\pp e--
 % Bar 206
-	e2\fermata \bar "|."
+	e2\fermata \fine
 }
