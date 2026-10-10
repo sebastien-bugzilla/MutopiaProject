@@ -11,9 +11,9 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 1 to 5
 	\repeat volta 2 {
 		\scherzo R2.*4
-		
-		
-		
+	
+	
+	
 		cis4(\f-> d8) r cis4(->
 % Bars 6 to 10
 		d8) r cis4(-> d8) r
@@ -22,9 +22,11 @@ musicFlautoIIMvtIII = \relative c''' {
 		gis,(-> a8) r gis4(->
 		a8) r gis4(-> a8) r
 % Bars 11 to 15
-		bes!4-.\fz a8( gis a4)
+		bes4-.\fz a8( gis a4)
 		bes-.\fz a8( gis a4)
 		R2.*11
+	
+	
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -34,45 +36,47 @@ musicFlautoIIMvtIII = \relative c''' {
 	}
 	\repeat volta 2 {
 		R2.*16
+	
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
 % Bars 36 to 40
-		
-		
-		
-		
+	
+	
+	
+	
 		f2\p\< a4~
 % Bars 41 to 45
 		a a-. a-.\!
 		c2\ff-> bes4->~
 		bes a2->
 		R2.*2
-		
+	
 % Bars 46 to 50
 		R2.*2
-		
+	
 		R2.*2
-		
+	
 		R2.*2
 % Bars 51 to 55
-		
+	
 		R2.*2
-		
+	
 		R2.*2
-		
+	
 % Bars 56 to 60
 		R2.*2
-		
+	
 		R2.*2
-		
-		d,8\p\< e f! g a bes
+	
+		d,8(\p\< e f! g a bes
 % Bars 61 to 65
-		b4\! cis\f d
-		\dynEO #'(0 . 2) c!2\ff  bes4~
+		b4)\! cis\f d
+		\dynEO #'(0 . 2) c!2\ff bes!4->~
 		bes a2->
 		R2.*46
+	
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -90,29 +94,29 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-		
-		
-		
-		
+	
+	
+	
+	
 		R2.*3
 % Bars 111 to 115
-		
-		
-		r4 c!2
-		des4\f\< c c
-		des c c
+	
+	
+		r4 c!2\brack\mf\<
+		des4-.\f\< c-. c-.
+		des-. c-. c-.
 % Bars 116 to 120
-		des c c
-		des c c\!
-		cis! cis cis
-		cis cis cis 
-		cis cis cis 
+		des-. c-. c-.
+		des-. c-. c-.\!
+		cis!-. cis-. cis-.
+		cis-. cis-. cis-. 
+		cis-. cis-. cis-. 
 % Bars 121 to 125
-		cis cis cis 
-		cis cis cis 
-		c! c c
-		c!\ff des c
-		des c des
+		cis-. cis-. cis-. 
+		cis-. cis-. cis-. 
+		c!-. c-. c-.
+		c!(\ff des) c(
+		des) c( des)
 % Bars 126 to 130
 		c( des) c(
 		des) c( cis)
@@ -122,15 +126,15 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 131 to 135
 		e-. d8( cis d4)
 		R2.*14
+	
+	
+	
 % Bars 136 to 140
 	
 % Bars 141 to 145
 	
-	
-	
-	
-	}
 % Bars 146 to 150
+	}
 	\alternative {
 		{
 			R2.
@@ -140,61 +144,69 @@ musicFlautoIIMvtIII = \relative c''' {
 		}
 	}
 	R2.*6
+	
+	
 % Bars 151 to 155
+	
 	
 	\section \key d \major
 	\repeat volta 2 {
 		\trio R2.*6
+	
 % Bars 156 to 160
-		
-		
-		
+	
+	
+	
+	
 		R2.*4
-		
 % Bars 161 to 165
-		
-		
+	
+	
+	
 		R2.*6
-		
-		
+	
 % Bars 166 to 170
-		
-		
-		
+	
+	
+	
+	
 		R2.*4
-		
 % Bars 171 to 175
-		
-		
+	
+	
+	
 		R2.*8
-		
-		
+	
 % Bars 176 to 180
-		
+	
 % Bars 181 to 185
+	
 		R2.*4
-		
-		
-		
-		R2.*16
+	
+	
+	
 % Bars 186 to 190
-		
+		R2.*16
+	
+	
+	
+	
 % Bars 191 to 195
-		
+	
 % Bars 196 to 200
-		
-		
-		
-		
-		
-	}
+	
 % Bars 201 to 205
+	
+	}
 	\grace {s8} R2.*4
 	
 	
 	
-	R2.*83
 % Bars 206 to 210
+	R2.*83
+	
+	
+	
 	
 % Bars 211 to 215
 	
@@ -228,23 +240,30 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 % Bars 286 to 290
 	
+	
 	\section \key d \minor
 	<>^\markup \bold {Flote} cis4(\f-> d8) r cis4(->
 	d8) r cis4(-> d8) r
-	e4-.\f d8( cis d4)
 % Bars 291 to 295
+	e4-.\f d8( cis d4)
 	e-.\f d8( cis d4)
 	gis,->( a8) r gis4(->
 	a8) r gis4(-> a8) r
 	bes4-.\fz a8( gis a4)
-	bes-.\fz a8( gis a4)
 % Bars 296 to 300
+	bes-.\fz a8( gis a4)
 	R2.*11
+	
+	
+	
 % Bars 301 to 305
 	
 % Bars 306 to 310
+	
 	\section
 	R2.*16
+	
+	
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -252,36 +271,39 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 321 to 325
 	
 	
+	
 	f2\p\< a4~
 	a a-.\! a-.
-	c2->\ff bes4->~
 % Bars 326 to 330
+	c2->\ff bes4->~
 	bes a2->
 	R2.*2
 	
 	R2.*2
-	
 % Bars 331 to 335
-	R2.*2
 	
 	R2.*2
 	
 	R2.*2
+	
 % Bars 336 to 340
-	
 	R2.*2
 	
 	R2.*2
 	
+	R2.*2
 % Bars 341 to 345
+	
 	R2.*2
 	
 	d,8(\p\< e f! g a bes
 	b4\!) cis-.\f d-.
-	\dynEO #'(0 . 2) c!2\ff bes4~
 % Bars 346 to 350
+	\dynEO #'(0 . 2) c!2\ff bes4->~
 	bes a2
 	R2.*46
+	
+	
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -301,34 +323,38 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 391 to 395
 	
 	
+	
 	R2.*3
 	
-	
 % Bars 396 to 400
-	r4 c2
+	
+	r4 c!2\brack\mf\<
 	des4-.\f\< c-. c-. 
 	des-. c-. c-.
 	des-. c-. c-.
-	des-. c-. c-.\!
 % Bars 401 to 405
+	des-. c-. c-.\!
 	cis-. cis-. cis-.
 	cis-. cis-. cis-. 
 	cis-. cis-. cis-. 
 	cis-. cis-. cis-. 
-	cis-. cis-. cis-. 
 % Bars 406 to 410
+	cis-. cis-. cis-. 
 	c!-. c-. c-.
 	c!(\ff des) c(
 	des) c( des)
 	c( des) c(
-	des) c( cis)
 % Bars 411 to 415
+	des) c( cis)
 	cis(_\ffgrandioso d) cis(
 	d) cis( d)
 	e-. d8( cis d4)
 	e-. d8( cis d4)
-	R2.*18
 % Bars 416 to 420
+	R2.*18
+	
+	
+	
 	
 % Bars 421 to 425
 	
@@ -337,10 +363,11 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 431 to 435
 	
 	
+	
 	a'4-.-\tweak extra-offset #'(0.7 . 0.3) \ff a,(-> b8 cis)
 	d4-. f-. d-.
+% Bars 436 to 440
 	d-. f-. d-.
-% Bars 436 to 438
 	d r r
 	d r r
 	d r r \bar "|."

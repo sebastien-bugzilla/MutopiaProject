@@ -11,16 +11,24 @@ musicPiccoloMvtIII = \relative c''' {
 % Bars 1 to 5
 	\repeat volta 2 {
 		\scherzo R2.*23
+	
+	
+	
+	
 % Bars 6 to 10
-		
+	
 % Bars 11 to 15
-		
+	
 % Bars 16 to 20
 	
 % Bars 21 to 25
+	
+	
+	
 	}
 	\repeat volta 2 {
 		R2.*122
+	
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -68,8 +76,9 @@ musicPiccoloMvtIII = \relative c''' {
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	}
+	
 % Bars 146 to 150
+	}
 	\alternative {
 		{
 			R2.
@@ -79,61 +88,69 @@ musicPiccoloMvtIII = \relative c''' {
 		}
 	}
 	R2.*6
+	
+	
 % Bars 151 to 155
+	
 	
 	\section \key d \major
 	\repeat volta 2 {
 		\trio <>^\markup \bold {Piccolo} R2.*6
+	
 % Bars 156 to 160
-		
-		
-		
-		e,,4(\fp b') e(\<
-		b' e) b~\!
+	
+	
+	
+	
+		e,,4(\brack\p\< b') e(
 % Bars 161 to 165
-		b\> b8( a g a
+		b' e)\! b~
+		b\> b8( a g a\!
 		b2.)\pp
 		R2.*6
-		
-		
+	
 % Bars 166 to 170
-		
-		
-		
-		d,,4-\offset X-offset -0.5 \fp( a') d(\<
-		a') d(\! a)
+	
+	
+	
+	
+		d,,4-\offset X-offset -0.5 \brack\p\<( a') d(
 % Bars 171 to 175
-		fis-. a8(\> g fis g
+		a') d(\! a)
+		fis-. a8(\> g fis g\!
 		a2.)\pp
 		R2.*8
-		
-		
+	
 % Bars 176 to 180
-		
+	
 % Bars 181 to 185
+	
 		d,2.\f\>~
 		d~
 		d~
 		d2\! r4 
-		R2.*16
 % Bars 186 to 190
-		
+		R2.*16
+	
+	
+	
+	
 % Bars 191 to 195
-		
+	
 % Bars 196 to 200
-		
-		
-		
-		
-		
-	}
+	
 % Bars 201 to 205
+	
+	}
 	\grace s8 R2.*4
 	
 	
 	
-	R2.*83
 % Bars 206 to 210
+	R2.*83
+	
+	
+	
 	
 % Bars 211 to 215
 	
@@ -167,8 +184,10 @@ musicPiccoloMvtIII = \relative c''' {
 	
 % Bars 286 to 290
 	
+	
 	\section \key d \minor
 	R2.*19
+	
 % Bars 291 to 295
 	
 % Bars 296 to 300
@@ -176,8 +195,11 @@ musicPiccoloMvtIII = \relative c''' {
 % Bars 301 to 305
 	
 % Bars 306 to 310
+	
 	\section
 	R2.*132
+	
+	
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -228,6 +250,11 @@ musicPiccoloMvtIII = \relative c''' {
 	
 % Bars 431 to 435
 	
-% Bars 436 to 438
+% Bars 436 to 440
+	
+	
+	
+	
 	 \bar "|."
+% Bars 441 to 445
 }

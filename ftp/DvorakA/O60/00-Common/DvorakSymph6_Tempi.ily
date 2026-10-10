@@ -105,53 +105,48 @@ tempiMvtII = {
 tempiMvtIII = {
 	\tempo \markup {
 		\concat {
-			"Presto. (M.M. "
-			\smaller \general-align #Y #DOWN \note {2.} #0.75
-			" = 96.)"
+			"Presto "
+			\fontsize #-4 \general-align #Y #DOWN \note {2.} #0.75
+			" = 96"
 		}
 	}
-	\repeat volta 2 {
-		s2.*23
-	}
-	\repeat volta 2 {
-		s2.*122
-	}
-	\alternative {
-		{
-			s2.
-		}
-		{
-			s2.
+	s2.*127
+	% bar 128
+	\tempo "grandioso"
+	s2.*26
+	% bar 154
+	\once \override Score.MetronomeMark.break-align-symbols = #'(key-signature)
+	\tempo \markup {
+		\concat {
+			"Poco meno mosso "
+			\fontsize #-4 \general-align #Y #DOWN \note {2.} #0.75
+			" = 80"
 		}
 	}
 	s2.*6
-	\repeat volta 2 {
-		\once \override Score.MetronomeMark.break-align-symbols = #'(key-signature)
-		\tempo \markup {  % bar 153
-			\concat {
-				"Poco meno mosso. (M.M. "
-				\smaller \general-align #Y #DOWN \note {2.} #0.75
-				" = 80.)"
-			}
-		}
-		s2.*6
-		\tempo "poco sosten." % bar 159
-		s2.*4
-		\tempo "in tempo" % bar 163
-		s2.*6
-		\tempo "poco sosten." % bar 169
-		s2.*4
-		\tempo "in tempo" % bar 173
-		s2.*28
-	}
-	\grace s8 s2.*80
-	\tempo "poco a poco string." % bar 281
+	% bar 160
+	\tempo "poco sostenuto" 
+	s2.*4
+	% bar 164
+	\tempo "in tempo" 
+	s2.*6
+	% bar 170
+	\tempo "poco sostenuto" 
+	s2.*4
+	% bar 174
+	\tempo "in tempo" 
+	s2.*108
+	% bar 282
+	\tempo "poco a poco string." 
 	s2.*7
-	\tempo \markup { % bar 288
-		"Tempo I." \normal-weight \italic "(Presto.)"
-	}
-	s2.*140
-	\tempo "poco a poco accelerando" % bar 428
+	% bar 289
+	\tempo "Tempo I. (Presto.)"
+	s2.*123
+	% bar 412
+	\tempo "grandioso"
+	s2.*17
+	% bar 429
+	\tempo "poco a poco accelerando" 
 	s2.*11
 }
 tempiMvtIV = {

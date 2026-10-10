@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperConductors.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
@@ -64,12 +64,12 @@
 	}
 	\score {
 		<<
-			\new StaffGroup <<
+%			\new StaffGroup <<
 				\new GrandStaff <<
 					\new Staff <<
-						\new Voice {
-							\formatConductorMvtIII
-						}
+%						\new Voice {
+%							\formatConductorMvtIII
+%						}
 						\new Voice {
 							\tempiMvtIII
 						}
@@ -78,70 +78,70 @@
 							\partCombine \musicFlautoIMvtIII \musicFlautoIIMvtIII
 						}
 					>>
-					\new Staff {
+					\new Staff \with { \RemoveAllEmptyStaves } {
 						\timeMvtIII \nameStaffIMvtIIIPic \musicPiccoloMvtIII
 					}
 				>>
-				\new Staff {
-					\timeMvtIII \nameStaffIIMvtIII
-					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
-				}
-				\new Staff {
-					\timeMvtIII \nameStaffIIIMvtIII
-					\partCombine \musicClarinettoIMvtIII \musicClarinettoIIMvtIII
-				}
-				\new Staff {
-					\timeMvtIII \nameStaffIVMvtIII
-					\partCombine \musicFagottoIMvtIII \musicFagottoIIMvtIII
-				}
-			>>
-			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
-					\new Staff {
-						\timeMvtIII \nameStaffVMvtIII
-						\partCombine \musicCornoIMvtIII \musicCornoIIMvtIII
-					}
-					\new Staff {
-						\timeMvtIII \nameStaffVIMvtIII
-						\partCombine \musicCornoIIIMvtIII \musicCornoIVMvtIII
-					}
-				>>
-				\new Staff {
-					\timeMvtIII \nameStaffVIIMvtIII
-					\partCombine \musicTrombeIMvtIII \musicTrombeIIMvtIII
-				}
-				\new Staff {
-					\timeMvtIII \nameStaffVIIIMvtIII \musicTimpaniMvtIII
-				}
-			>>
-			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
-					\new Staff {
-						\timeMvtIII \nameStaffIXMvtIII \musicViolinoIMvtIII
-					}
-					\new Staff {
-						\timeMvtIII \nameStaffXMvtIII \musicViolinoIIMvtIII
-					}
-				>>
-				\new Staff {
-					\timeMvtIII \nameStaffXIMvtIII \musicViolaMvtIII
-				}
-				\new Staff {
-					\timeMvtIII \nameStaffXIIMvtIII \musicVioloncelloMvtIII
-				}
-				\new Staff {
-					\timeMvtIII \nameStaffXIIIMvtIII \musicContrabassoMvtIII
-				}
-			>>
+%				\new Staff {
+%					\timeMvtIII \nameStaffIIMvtIII
+%					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
+%				}
+%				\new Staff {
+%					\timeMvtIII \nameStaffIIIMvtIII
+%					\partCombine \musicClarinettoIMvtIII \musicClarinettoIIMvtIII
+%				}
+%				\new Staff {
+%					\timeMvtIII \nameStaffIVMvtIII
+%					\partCombine \musicFagottoIMvtIII \musicFagottoIIMvtIII
+%				}
+%			>>
+%			\new StaffGroup <<
+%				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
+%					\new Staff {
+%						\timeMvtIII \nameStaffVMvtIII
+%						\partCombine \musicCornoIMvtIII \musicCornoIIMvtIII
+%					}
+%					\new Staff {
+%						\timeMvtIII \nameStaffVIMvtIII
+%						\partCombine \musicCornoIIIMvtIII \musicCornoIVMvtIII
+%					}
+%				>>
+%				\new Staff {
+%					\timeMvtIII \nameStaffVIIMvtIII
+%					\partCombine \musicTrombeIMvtIII \musicTrombeIIMvtIII
+%				}
+%				\new Staff {
+%					\timeMvtIII \nameStaffVIIIMvtIII \musicTimpaniMvtIII
+%				}
+%			>>
+%			\new StaffGroup <<
+%				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
+%					\new Staff {
+%						\timeMvtIII \nameStaffIXMvtIII \musicViolinoIMvtIII
+%					}
+%					\new Staff {
+%						\timeMvtIII \nameStaffXMvtIII \musicViolinoIIMvtIII
+%					}
+%				>>
+%				\new Staff {
+%					\timeMvtIII \nameStaffXIMvtIII \musicViolaMvtIII
+%				}
+%				\new Staff {
+%					\timeMvtIII \nameStaffXIIMvtIII \musicVioloncelloMvtIII
+%				}
+%				\new Staff {
+%					\timeMvtIII \nameStaffXIIIMvtIII \musicContrabassoMvtIII
+%				}
+%			>>
 		>>
 		\header {
 			breakbefore = ##t
 		}
 		\layout {
-			\context {
-				\Score 
-				scriptDefinitions = #my-script-alist
-			}
+%			\context {
+%				\Score 
+%				scriptDefinitions = #my-script-alist
+%			}
 		}
 	}
 }
