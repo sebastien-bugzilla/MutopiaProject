@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperConductors.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
@@ -89,17 +89,17 @@
 					\partCombine \musicFagottoIMvtII \musicFagottoIIMvtII
 				}
 			>>
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
-%					\new Staff {
-%						\timeMvtII \nameStaffVMvtII
-%						\partCombine \musicCornoIMvtII \musicCornoIIMvtII
-%					}
-%					\new Staff {
-%						\timeMvtII \nameStaffVIMvtII
-%						\partCombine \musicCornoIIIMvtII \musicCornoIVMvtII
-%					}
-%				>>
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
+					\new Staff {
+						\timeMvtII \nameStaffVMvtII
+						\partCombine \musicCornoIMvtII \musicCornoIIMvtII
+					}
+					\new Staff {
+						\timeMvtII \nameStaffVIMvtII
+						\partCombine \musicCornoIIIMvtII \musicCornoIVMvtII
+					}
+				>>
 %				\new Staff {
 %					\timeMvtII \nameStaffVIIMvtII
 %					\partCombine \musicTrombeIMvtII \musicTrombeIIMvtII
@@ -107,7 +107,7 @@
 %				\new Staff {
 %					\timeMvtII \nameStaffVIIIMvtII \musicTimpaniMvtII
 %				}
-%			>>
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
 %					\new Staff {

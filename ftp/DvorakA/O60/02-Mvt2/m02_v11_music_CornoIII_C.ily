@@ -49,9 +49,9 @@ musicCornoIIIMvtII = \relative c'' {
 	R2*3
 	
 	
-	\partCombineApart r8 e'_\pp( c f)~
+	\partCombineApart r8 e'_\pp( c f~
 % Bars 56 to 60
-	f4 e(
+	f4) e(
 	a2)~_\<
 	a4_\fz r \partCombineAutomatic
 	R2*4
@@ -63,7 +63,7 @@ musicCornoIIIMvtII = \relative c'' {
 	
 	
 % Bars 66 to 70
-	r4 \partCombineAutomatic r8. g,16\f
+	r4 r8. \partCombineAutomatic g,16\f
 	r8. g16_\dimmarkup r8. g16
 	r4 f'8\pp r
 	r f r4
@@ -125,7 +125,7 @@ musicCornoIIIMvtII = \relative c'' {
 	
 	
 	f2\p
-	f\cresc
+	f-\pocoapococresc
 	f
 % Bars 126 to 130
 	f
@@ -141,16 +141,16 @@ musicCornoIIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	r16 e8\pp e16 r e8 e16
+	r16 e8--\pp e16-. r e8-- e16-.
 % Bars 141 to 145
-	r f8 f16 r e8 e16
-	r e8 e16 r f8 f16
-	r e8\< e16 r e8 fis16\!
-	r\mf\< g8 g16 r g8 g16\!
-	r g8\> g16 r g8 g16\!
+	r f8-- f16-. r e8-- e16-.
+	r e8-- e16-. r f8-- f16-.
+	r e8--\< e16-. r e8-- fis16-.\!
+	r g8--\mf\< g16-. r g8-- g16-.\!
+	r g8--\> g16-. r g8-- g16-.\!
 % Bars 146 to 150
-	r g8_\pdim g16 r g8 g16
-	r g8\pp g16 r4
+	r g8--_\pdim g16-. r g8-- g16-.
+	r g8--\pp g16-. r4
 	R2*2
 	
 	r16 e8\p\< e16 r c8 c16\!
@@ -182,8 +182,8 @@ musicCornoIIIMvtII = \relative c'' {
 	g g4\mf\< g8\!~
 % Bars 176 to 180
 	g g4\f g8~
-	g16 r g\f\<-> g-> g-> g-> g-> \aIIOmit c,->\!
-	e8\ff r e-^-. r
+	g16 r \partCombineApart \stemDown \omitBeam \beamOffset #'(-1.3 . -1.3) g-> g-> \stemUp g-> g-> g-> c,->
+	\partCombineAutomatic e8-.->\ff r e-^-. r
 	d-^-. r r4
 	e2\p\>(
 % Bars 181 to 185
@@ -207,5 +207,5 @@ musicCornoIIIMvtII = \relative c'' {
 	R2*2
 	
 % Bar 206
-	R2\fermata \bar "|."
+	R2\fermata \fine
 }

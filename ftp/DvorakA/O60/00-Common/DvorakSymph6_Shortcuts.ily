@@ -5,7 +5,9 @@
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
 
-% dynamics 
+%--------------------
+% dynamics ff
+%--------------------
 
 ffgrandioso = \markup {\dynamic ff \italic grandioso}
 ffmarcatosempre = \markup {\dynamic ff \italic {marcato sempre}}
@@ -15,34 +17,59 @@ ffpesante = \markup {\dynamic ff \italic pesante}
 ffrinforz = \markup {\dynamic ff \italic rinforz.}
 ffgrandiosoD = #(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "grandioso"))
 
+%--------------------
+% dynamics ffz
+%--------------------
 ffz = \markup { \hspace #-1 \dynamic ffz}
 
-
+%--------------------
+% dynamics f
+%--------------------
 fcresc = \markup {\dynamic f \italic cresc.}
 fmarc = \markup {\dynamic f \italic marc.}
 fsemprecresc = \markup {\dynamic f \italic {sempre cresc.}}
 fsempre = \markup {\dynamic f \italic sempre}
 fdimD = #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "dim." ))
 
+%--------------------
+% dynamics fp
+%--------------------
 fpcresc = \markup {\dynamic fp \italic {cresc.}}
 fpdim = \markup {\dynamic fp \italic dim.}
 fpdimD = \tweak DynamicText.self-alignment-X #-0.6 #(make-dynamic-script (markup #:dynamic "fp" #:normal-text #:italic "dim." ))
 
+%--------------------
+% dynamics fz
+%--------------------
 fzdim = \markup {\dynamic fz \italic dim.}
 fzdimD = #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim." ))
 
+%--------------------
+% dynamics mf
+%--------------------
 mfcresc = \markup {\dynamic mf \italic cresc.}
 mfcrescD = #(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "cresc." ))
 
+%--------------------
+% dynamics mfp
+%--------------------
 mfp = \markup {\dynamic mfp}
 
+%--------------------
+% dynamics mfz
+%--------------------
 mfz = \markup {\dynamic mfz}
 
+%--------------------
+% dynamics rf
+%--------------------
 rf = \markup {\dynamic rf}
 
+%--------------------
+% dynamics p
+%--------------------
 pcresc = \markup {\dynamic p \italic cresc.}
 brackpcresc = \markup {\bracket \with-true-dimensions \dynamic p \italic cresc.}
-
 pdim = \markup {\dynamic p \italic dim.}
 pdimD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim." ))
 pdolce = \markup {\dynamic p \italic dolce}
@@ -61,6 +88,9 @@ ppocoa-pococresc = \markup {
 	}
 }
 
+%--------------------
+% dynamics pp
+%--------------------
 ppdolce = \markup {\dynamic pp \italic dolce}
 ppespr = ^\markup {\dynamic pp \musicglyph "scripts.espr"}
 pplegg = \markup {\dynamic pp \italic legg.}
@@ -82,7 +112,9 @@ pptranquillo = \markup {\dynamic pp \italic tranquillo}
 sempreff = \markup {\italic sempre \dynamic ff}
 semprepp = \markup {\italic sempre \dynamic pp}
 
-
+%--------------------
+% dynamics text
+%--------------------
 rinforz = \markup {\italic rinforz.}
 pocoapococrescendo = \markup {\italic {poco a poco crescendo}}
 pocoapococresc = \markup {\italic {poco a poco cresc.}}
@@ -93,8 +125,9 @@ dimsempre = \markup {\italic {dim. sempre}}
 semprecresc = \markup {\italic {sempre cresc.}}
 
 
-% tempo and expression
-
+%--------------------
+% text indications
+%--------------------
 arco = \markup {arco}
 benmarc = \markup {\italic {ben marc.}}
 div = \markup {div.}
@@ -158,7 +191,9 @@ flote = {
 
 
 
+%--------------------
 % functions
+%--------------------
 brack = #(define-event-function 
 	(dyn) (ly:event?)
 	(make-dynamic-script

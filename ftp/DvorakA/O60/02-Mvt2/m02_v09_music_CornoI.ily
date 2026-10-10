@@ -40,15 +40,15 @@ musicCornoIMvtII = \relative c'' {
 	r4 e,\pp--
 % Bars 36 to 40
 	e-- e--
-	e e
-	e e
-	e e 
-	e e
+	e-- e--
+	e-- e--
+	e-- e-- 
+	e-- e--
 % Bars 41 to 45
-	c'8(\p e4_\crescmarkup d16 c)~
-	c8( b16 a b4)
-	bes8( d4_\dimmarkup c16 bes)~
-	bes8( a16 g a4)
+	c'8(\p e4_\crescmarkup d16 c~
+	c8 b16 a b4)
+	bes8( d4_\dimmarkup c16 bes~
+	bes8 a16 g a4)
 	R2*2
 % Bars 46 to 50
 	
@@ -75,10 +75,10 @@ musicCornoIMvtII = \relative c'' {
 	r8. bes16-\tweak X-offset #-1 _\dimmarkup r8. bes16\p
 	R2
 	\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur c16(\p\< d f e\! d\> c bes a\!)
-	\tuplet 3/2 4 {c8(-- bes-- a--} c[ bes])
+	\tuplet 3/2 4 {c8(-- bes-- a--\<} c[\> bes])\!
 % Bars 71 to 75
-	a(_\dimmarkup g c4)~
-	c2\pp~ \mark \default
+	a(_\dimmarkup g c4~
+	c2\pp)~ \mark \default
 	c8 r r4
 	R2*9
 % Bars 76 to 80
@@ -96,9 +96,9 @@ musicCornoIMvtII = \relative c'' {
 	r4 r8 c(\p
 	a\< ees'\! c\> a\!)
 % Bars 91 to 95
-	c2\pp~
-	c(
-	b!8) r r d(
+	c2\pp(~
+	c
+	b!8) r r d(\brack\p
 	b_\crescmarkup f' d b)
 	c16\mf c c c  c c c c 
 % Bars 96 to 100
@@ -108,13 +108,13 @@ musicCornoIMvtII = \relative c'' {
 	c8\ff-> cis-> d-> e->
 	d4-> d-> 
 % Bars 101 to 105
-	r8 c\f a des->~
-	des4_\dimmarkup( c
+	r8 c\f a des->(~
+	des4_\dimmarkup c
 	bes\p\> g)
-	c8\ff-. r r4
-	r8 \stemDown c-.-> g-.-> c->~ \stemNeutral
+	c8\ff r r4
+	r8 \stemDown c-.-> g-.-> c->(~ \stemNeutral
 % Bars 106 to 110
-	c( bes) r4
+	c bes) r4
 	r8 c-.-\tweak X-offset #-3 \ff-> f,-.-> f'->~
 	f des-.-> ges,-.-> f'->(
 	e!) cis-.-> fis,-.-> fis'->~
@@ -163,10 +163,10 @@ musicCornoIMvtII = \relative c'' {
 	R2*2
 % Bars 146 to 150
 	
-	c4(\pp f)~
-	f8( e d c)
-	c~ c32( d c bes-.) bes4(
-	a) d8->\< e16-> f->\!
+	c4(\pp f~
+	f8 e d c)
+	c(~ c32 d c bes-.) bes4(
+	a) d8->\mf\< e16-> f->\!
 % Bars 151 to 155
 	f8\f c a4-\tweak X-offset #-1 _\dimmarkup
 	g2\p
@@ -178,12 +178,12 @@ musicCornoIMvtII = \relative c'' {
 	a-- a--
 	a-- a--
 	a-- a--
-	a-- b\<
+	a-- b
 % Bars 161 to 165
-	c4. g8~\!
-	g4 a\>
-	bes4. f8~\!
-	f4\pp e~
+	c4. g8~
+	g4 a
+	bes4. f8~
+	f4 e~
 	e8 r r4
 % Bars 166 to 170
 	R2*3
@@ -214,9 +214,9 @@ musicCornoIMvtII = \relative c'' {
 % Bars 191 to 195
 	
 	
-	g4.(-\tweak X-offset #-2 \pp\< gis8\>
-	a\!)\noBeam c(\< a d)~\!
-	\hairpinShorten #'(-0.8 . -0.3) d4.\> c8\pp~
+	g4.(-\tweak X-offset #-2 \pp\< gis8\!
+	a\!)\noBeam c(\< a d~\!
+	\hairpinShorten #'(-0.8 . -0.3) d4.)\> c8\pp~
 % Bars 196 to 200
 	c8 r r4
 	R2*2
@@ -230,5 +230,5 @@ musicCornoIMvtII = \relative c'' {
 	r8 c(\pp a d)
 	c4-- c--
 % Bar 206
-	c2\fermata \bar "|."
+	c2\fermata \fine
 }

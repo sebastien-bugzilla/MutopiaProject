@@ -36,10 +36,10 @@ musicCornoIIMvtII = \relative c'' {
 	r4 e,-\tweak X-offset #-3 \pp--
 % Bars 36 to 40
 	e-- e--
-	e e
-	e e
-	e e 
-	e e
+	e-- e--
+	e-- e--
+	e-- e-- 
+	e-- e--
 % Bars 41 to 45
 	R2*10
 % Bars 46 to 50
@@ -89,8 +89,8 @@ musicCornoIIMvtII = \relative c'' {
 	R2*2
 	
 % Bars 91 to 95
-	a'2\pp~
-	a(
+	a'2\pp(~
+	a
 	g8) r r4
 	R2
 	c,16\mf c c c  c c c c 
@@ -101,13 +101,13 @@ musicCornoIIMvtII = \relative c'' {
 	a8\ff-> a-> a-> a->
 	f4-> f-> 
 % Bars 101 to 105
-	r8 c'\f a des->~
-	des4_\dimmarkup( c
+	r8 c'\f a des->(~
+	des4_\dimmarkup c
 	\hairpinShorten #'(0 . -2) bes\p\> g\!)
-	aes8\ff-. r r4
-	r8 c-.-> g-.-> c->~
+	aes8\ff r r4
+	r8 c-.-> g-.-> c->(~
 % Bars 106 to 110
-	c( bes) r4
+	c bes) r4
 	r8 c-.\ff-> f,-.-> f'->~
 	f des-.-> ges,-.-> f'->(
 	e!) cis-.-> fis,-.-> fis'->~
@@ -143,16 +143,16 @@ musicCornoIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	r16 c,8\pp c16 r c8 d16
+	r16 c,8--\pp c16-. r c8-- d16-.
 % Bars 141 to 145
-	r d8 d16 r e8 e16
-	r16 d8 d16 r d8 d16
-	r d8\< d16 r d8 d16\!
-	r\mf\< c8 c16 r c8 c16\!
-	r c8\> c16 r c8 c16\!
+	r d8-- d16-. r e8-- e16-.
+	r16 d8-- d16-. r d8-- d16-.
+	r d8--\< d16-. r d8-- d16-.\!
+	r\mf\< c8-- c16-. r c8-- c16-.\!
+	r c8--\> c16-. r c8-- c16-.\!
 % Bars 146 to 150
-	r c8_\pdim c16 r d8 c16
-	r c8\pp c16 r4
+	r c8--_\pdim c16-. r d8-- c16-.
+	r c8--\pp c16-. r4
 	R2*8
 	
 	
@@ -215,5 +215,5 @@ musicCornoIIMvtII = \relative c'' {
 	
 	
 % Bar 206
-	\ni R2\fermata \bar "|."
+	\ni R2\fermata \fine
 }

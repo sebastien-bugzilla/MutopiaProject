@@ -118,7 +118,7 @@ musicCornoIVMvtII = \relative c'' {
 	
 	
 	bes2\p
-	bes\cresc
+	bes-\pocoapococresc
 	b!
 % Bars 126 to 130
 	b
@@ -134,16 +134,16 @@ musicCornoIVMvtII = \relative c'' {
 	
 	
 	\mark \default
-	r16 c8\pp c16 r c8 c16
+	r16 c8--\pp c16-. r c8-- c16-.
 % Bars 141 to 145
-	r b8 b16 r d8 d16
-	r c8 c16 r d8 d16
-	r c8\< c16 r c8 c16\!
-	r c8\mf\< c16 r c8 c16\!
-	r d8\> d16 r d8 d16\!
+	r b8-- b16-. r d8-- d16-.
+	r c8-- c16-. r d8-- d16-.
+	r c8--\< c16-. r c8-- c16-.\!
+	r c8--\mf\< c16-. r c8-- c16-.\!
+	r d8--\> d16-. r d8-- d16-.\!
 % Bars 146 to 150
-	r c8_\pdim c16 r c8 b16
-	r c8\pp c16 r4
+	r c8--_\pdim c16-. r c8-- b16-.
+	r c8--\pp c16-. r4
 	R2*2
 	
 	r16 c8\p\< c16 r a8 a16\!
@@ -175,7 +175,7 @@ musicCornoIVMvtII = \relative c'' {
 	g g4\mf\< g8~
 % Bars 176 to 180
 	g\! g4\f g8~
-	g16 r g\f\<-> g-> g-> g-> g-> c->\!
+	g16->-. r g\f\<-> g-> g-> g-> g-> c->\!
 	b8\ff r a-^-. r
 	a-^-. r r4
 	\hairpinShorten #'(-0.3 . -0.3) c2-\offset X-offset -1.5 \p\>(
@@ -200,5 +200,5 @@ musicCornoIVMvtII = \relative c'' {
 	c8 c4.
 	c4-- c--
 % Bar 206
-	c2\fermata \bar "|."
+	c2\fermata \fine
 }

@@ -40,10 +40,10 @@ musicCornoIIMvtII = \relative c'' {
 	r4 e,-\tweak X-offset #-3.1 \pp--
 % Bars 36 to 40
 	e-- e--
-	e e
-	e e
-	e e 
-	e e
+	e-- e--
+	e-- e--
+	e-- e-- 
+	e-- e--
 % Bars 41 to 45
 	R2*4
 	
@@ -61,7 +61,7 @@ musicCornoIIMvtII = \relative c'' {
 	<< e2\f {s8\> s s s\!} >>
 	f4\p f~\>
 	f f8 f8~\!
-	f\pp r r4
+	\once \stemUp \omitFlag f\pp r r4
 % Bars 56 to 60
 	R2*10
 % Bars 61 to 65
@@ -97,25 +97,25 @@ musicCornoIIMvtII = \relative c'' {
 	R2*2
 	
 % Bars 91 to 95
-	a'2\pp~
-	a(
+	a'2\pp(~
+	a
 	g8) r r4
 	R2
 	c,16\mf c c c  c c c c 
 % Bars 96 to 100
 	c c c c   c c c c 
 	c c c c   c c c c
-	c8\noBeam a'16\f c f, c f\< g\!
+	c8\noBeam a'16-.\f c-. f,-. c-. f-.\< g-.\!
 	a8\ff-> a-> a-> a->
 	f4-> f-> 
 % Bars 101 to 105
-	r8 c'\f a des->~
-	des4_\dimmarkup( c
+	r8 c'\f a des->(~
+	des4_\dimmarkup c
 	bes\p\> g\!)
-	aes8\ff-. r r4
-	r8 c-.-> g-.-> c->~
+	aes8\ff r r4
+	r8 c-.-> g-.-> c->(~
 % Bars 106 to 110
-	c( bes) r4
+	c bes) r4
 	r8 c\ff f, f'
 	f des ges, f'
 	e! cis fis, fis'^~
@@ -155,16 +155,16 @@ musicCornoIIMvtII = \relative c'' {
 	R2*3
 	
 	\mark \default
-	r16 c,8\pp c16 r c8 d16
+	r16 c,8--\pp c16-. r c8-- d16-.
 % Bars 141 to 145
-	r d8 d16 r e8 e16
-	r16 d8 d16 r d8 d16
-	r d8\< d16 r d8 d16\!
-	r\mf\< c8 c16 r c8 c16\!
-	r c8\> c16 r c8 c16\!
+	r d8-- d16-. r e8-- e16-.
+	r16 d8-- d16-. r d8-- d16-.
+	r d8--\< d16-. r d8-- d16-.\!
+	r\mf\< c8-- c16-. r c8-- c16-.\!
+	r c8--\> c16-. r c8-- c16-.\!
 % Bars 146 to 150
-	r c8_\pdim c16 r d8 c16
-	r c8-\tweak X-offset #-3 \pp c16 r4
+	r c8--_\pdim c16-. r d8-- c16-.
+	r c8-- -\tweak X-offset #-3 \pp c16-. r4
 	R2
 	R
 	\tweak extra-offset #'(-1 . 0) R
@@ -231,5 +231,5 @@ musicCornoIIMvtII = \relative c'' {
 	R2*2
 	
 % Bar 206
-	R2_\fermata \bar "|."
+	R2_\fermata \fine
 }

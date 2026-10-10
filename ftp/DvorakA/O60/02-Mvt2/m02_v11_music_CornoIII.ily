@@ -49,9 +49,9 @@ musicCornoIIIMvtII = \relative c'' {
 	R2*3
 	
 	
-	r8 e'\pp(^\solo c f)~
+	r8 e'\pp(^\solo c f~
 % Bars 56 to 60
-	f4 e(
+	f4) e(
 	a2)~\<
 	a4\fz r
 	R2*7
@@ -121,7 +121,7 @@ musicCornoIIIMvtII = \relative c'' {
 	
 	
 	f2\p
-	f\cresc
+	f-\pocoapococresc
 	f
 % Bars 126 to 130
 	f
@@ -137,16 +137,16 @@ musicCornoIIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	r16 e8\pp e16 r e8 e16
+	r16 e8--\pp e16-. r e8-- e16-.
 % Bars 141 to 145
-	r f8 f16 r e8 e16
-	r e8 e16 r f8 f16
-	r e8\< e16 r e8 fis16\!
-	r g8\mf\< g16 r g8 g16\!
-	r g8\> g16 r g8 g16\!
+	r f8-- f16-. r e8-- e16-.
+	r e8-- e16-. r f8-- f16-.
+	r e8--\< e16-. r e8-- fis16-.\!
+	r g8--\mf\< g16-. r g8-- g16-.\!
+	r g8--\> g16-. r g8-- g16-.\!
 % Bars 146 to 150
-	r g8_\pdim g16 r g8 g16
-	r g8\pp g16 r4
+	r g8--_\pdim g16-. r g8-- g16-.
+	r g8--\pp g16-. r4
 	R2*2
 	
 	r16 e8\p\< e16 r c8 c16\!
@@ -179,7 +179,7 @@ musicCornoIIIMvtII = \relative c'' {
 % Bars 176 to 180
 	g g4\f g8~
 	g16 r g\f\<-> g-> g-> g-> g-> c,->\!
-	e8\ff r e-^-. r
+	e8->-.\ff r e-^-. r
 	d-^-. r r4
 	\hairpinShorten #'(-0.6 . -0.3) e2\p\>(
 % Bars 181 to 185
@@ -203,5 +203,5 @@ musicCornoIIIMvtII = \relative c'' {
 	R2*2
 	
 % Bar 206
-	\ni R2\fermata \bar "|."
+	\ni R2\fermata \fine
 }
