@@ -69,7 +69,7 @@ musicTimpaniMvtII = \relative c {
 	\ni \clef treble \voiceTwo \mmrPos #-7 R2
 	\tweak extra-offset #'(-0.5 . 0) R
 	R \no \clef bass \oneVoice 
-	b2\ff\trill
+	bes2\ff\trill
 	f'\trill
 % Bars 106 to 110
 	\startMeasureCount \countEO #'(0.8 . -4) b,\fz\startTrillSpan
@@ -113,19 +113,19 @@ musicTimpaniMvtII = \relative c {
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no \clef bass \oneVoice \mark \default
-	b,8\pp^\solo f'16-. f-. f8-. f-.
-	b, f'16-.\< f-. f8-. f-.\!
+	bes,8\pp^\solo f'16-. f-. f8-. f-.
+	bes, f'16-.\< f-. f8-. f-.\!
 % Bars 171 to 175
-	b, f'16\pp f f8 f
-	b, f'16\< f f8 f\!
-	b, f'16\pp f f8 f
-	b,_\crescmarkup f'16-. f-. f8 f16-. f-.
-	b,8\mf f'16 f f8 f16 f
+	bes, f'16-.\pp f-. f8-. f-.
+	bes, f'16-.\< f-. f8-. f-.\!
+	bes, f'16-.\pp f-. f8-. f-.
+	bes,_\crescmarkup f'16 f f8 f16 f
+	bes,8\mf f'16 f f8 f16 f
 % Bars 176 to 180
-	b,8\f f'16-. f-. f8 f16-. f-.
-	b,16 f'-. f\<-. f-.  f-. f-. f-. f-.\!
-	f8-.\ff r f-.-^ r
-	b,-.-^ r r4
+	bes,8\f f'16 f f8 f16 f
+	bes,16 f'-. f\<-. f-.  f-. f-. f-. f-.\!
+	f8-.->\ff r f-.-^ r
+	bes,-.-^ r r4
 	R2*16
 % Bars 181 to 185
 	
@@ -136,11 +136,11 @@ musicTimpaniMvtII = \relative c {
 % Bars 196 to 200
 	\ni \clef treble \voiceTwo R2
 	R \no \clef bass \oneVoice 
-	r8 f'\ff-. f-. f-.
-	f-. f-. f-. b,-.
-	b-. r f'-. r
+	r8 f'\ff f f
+	f f f bes,
+	bes r f' r
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	\ni R2\fermata \bar "|."
+	\ni R2\fermata \fine
 }

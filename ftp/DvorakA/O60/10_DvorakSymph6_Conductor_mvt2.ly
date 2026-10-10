@@ -100,13 +100,13 @@
 %						\partCombine \musicCornoIIIMvtII \musicCornoIVMvtII
 %					}
 %				>>
-				\new Staff {
-					\timeMvtII \nameStaffVIIMvtII
-					\partCombine \musicTrombeIMvtII \musicTrombeIIMvtII
-				}
 %				\new Staff {
-%					\timeMvtII \nameStaffVIIIMvtII \musicTimpaniMvtII
+%					\timeMvtII \nameStaffVIIMvtII
+%					\partCombine \musicTrombeIMvtII \musicTrombeIIMvtII
 %				}
+				\new Staff {
+					\timeMvtII \nameStaffVIIIMvtII \musicTimpaniMvtII
+				}
 %			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<

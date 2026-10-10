@@ -61,16 +61,16 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	
-	b2\ff\startTrillSpan
+	bes2\ff\startTrillSpan
 	f'\startTrillSpan
 % Bars 106 to 110
-	b,\fz\startTrillSpan
-	b\fz\startTrillSpan
-	b\fz\startTrillSpan
-	b\fz\startTrillSpan
-	b\fz\startTrillSpan
+	bes,\fz\startTrillSpan
+	bes\fz\startTrillSpan
+	bes\fz\startTrillSpan
+	bes\fz\startTrillSpan
+	bes\fz\startTrillSpan
 % Bars 111 to 115
-	b\fz\startTrillSpan \mark \default
+	bes\fz\startTrillSpan \mark \default
 	f'8\stopTrillSpan r r4
 	R2*27
 % Bars 116 to 120
@@ -101,19 +101,19 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	\mark \default
-	b,8\pp f'16-. f-. f8-. f-.
-	b, f'16-.\< f-. f8-. f-.\!
+	bes,8\pp f'16-. f-. f8-. f-.
+	bes, f'16-.\< f-. f8-. f-.\!
 % Bars 171 to 175
-	b, f'16\pp f f8 f
-	b, f'16\< f f8 f\!
-	b, f'16\pp f f8 f
-	b,_\crescmarkup f'16-. f-. f8 f16-. f-.
-	b,8\mf f'16 f f8 f16 f
+	bes, f'16-.\pp f-. f8-. f-.
+	bes, f'16-.\< f-. f8-. f-.\!
+	bes, f'16-.\pp f-. f8-. f-.
+	bes,_\crescmarkup f'16 f f8 f16 f
+	bes,8\mf f'16 f f8 f16 f
 % Bars 176 to 180
-	b,8\f f'16-. f-. f8 f16-. f-.
-	b,16 f'-. f\<-. f-.  f-. f-. f-. f-.\!
-	f8-.\ff r f-.-^ r
-	b,-.-^ r r4
+	bes,8\f f'16 f f8 f16 f
+	bes,16 f'-. f\<-. f-.  f-. f-. f-. f-.\!
+	f8-.->\ff r f-.-^ r
+	bes,-.-^ r r4
 	R2*18
 % Bars 181 to 185
 	
@@ -124,11 +124,11 @@ musicTimpaniMvtII = \relative c {
 % Bars 196 to 200
 	
 	
-	r8 f'\ff-. f-. f-. 
-	f-. f-. f-. b,-. 
-	b-. r f'-. r
+	r8 f'\ff f f 
+	f f f bes, 
+	bes r f' r
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	R2\fermata \bar "|."
+	R2\fermata \fine
 }
