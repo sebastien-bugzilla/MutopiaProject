@@ -69,7 +69,7 @@ musicTrombeIIMvtII = \relative c'' {
 	\ni \voiceTwo R2
 	R
 	R \no \oneVoice 
-	c2->\ff
+	c2->\f
 	d->
 % Bars 106 to 110
 	c->
@@ -125,7 +125,7 @@ musicTrombeIIMvtII = \relative c'' {
 % Bars 176 to 180
 	g g4\f g8~
 	g16 r g\f\<-> g->  g-> g-> g-> c->\!
-	e8->\ff r e-^-. r
+	e8->-.\ff r e-^-. r
 	c-.-^ r r4
 	R2*18
 % Bars 181 to 185
@@ -143,5 +143,5 @@ musicTrombeIIMvtII = \relative c'' {
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	\ni R2\fermata \bar "|."
+	\ni R2\fermata \fine
 }
