@@ -16,8 +16,8 @@ musicContrabassoMvtII = \relative c {
 	bes2(\p
 % Bars 6 to 10
 	c4 \once \stemUp d)
-	<< g,2~ {s4 s\<}>>
-	g4.(\> c8)\!
+	<< g,2(~ {s4 s\<}>>
+	g4.\> c8)\!
 	d8(\p\< f d bes)
 	ees2(\!
 % Bars 11 to 15
@@ -25,10 +25,10 @@ musicContrabassoMvtII = \relative c {
 	bes\pp r
 	R2*2
 	
-	r4 e,\<
+	r4 e,\brack\p\<
 % Bars 16 to 20
-	f2\f~
-	f4.(_\dimmarkup fis8
+	f2\f(~
+	f4._\dimmarkup fis8
 	g\p) r r4
 	R2*2
 	
@@ -63,7 +63,7 @@ musicContrabassoMvtII = \relative c {
 	bes r bes r
 	d4(\pp^\arco bes8 c
 % Bars 46 to 50
-	d2)(
+	d2
 	ees8) r r4
 	R2*3
 	
@@ -105,8 +105,8 @@ musicContrabassoMvtII = \relative c {
 	R2*2
 	
 	r8 c4\mf\<-\tweak X-offset #-4.5 ^\arco c8\!
-	f,2\f~
-	\after 8 <>-\tweak extra-offset #'(0 . 2.8) _\dimmarkup f4.( fis8
+	f,2\f(~
+	\after 8 <>-\tweak extra-offset #'(0 . 2.8) _\dimmarkup f4. fis8
 % Bars 86 to 90
 	g8\p) r r4
 	R2*2
@@ -152,7 +152,7 @@ musicContrabassoMvtII = \relative c {
 	
 	
 	r16 d-.\f d-. d-.  d-. d-. d-. d-.
-	d32[(\< d') d-. d-.] d[ d d d] d[ d d d] d[ d d d]\!
+	d32[(\< d') d d] d[ d d d] d[ d d d] d[ d d d]\!
 % Bars 131 to 135
 	d,16\ff r r8 r4
 	R2*8
@@ -167,13 +167,13 @@ musicContrabassoMvtII = \relative c {
 	g,2~
 	g4.\< c8\!
 	d(\mf\< f d bes)\!
-	<< ees2 {s8\> s s s\!} >> 
+	<< ees2-- {s8\> s s s\!} >> 
 % Bars 146 to 150
 	d4(-\tweak X-offset #0 _\pdimD  c)
 	bes4\pp r
 	R2*2
 	
-	r4 e\<
+	r4 e\brack\mf\<
 % Bars 151 to 155
 	f2\fz
 	f4._\dimmarkup fis8\p
@@ -185,7 +185,7 @@ musicContrabassoMvtII = \relative c {
 	
 	
 	
-	g,8^\pizz r\< c r
+	g,8\brack\pp\<^\pizz r c r
 % Bars 161 to 165
 	f r\! f, r
 	f r bes\> r
@@ -237,5 +237,5 @@ musicContrabassoMvtII = \relative c {
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	R2\fermata \bar "|."
+	R2\fermata \fine
 }

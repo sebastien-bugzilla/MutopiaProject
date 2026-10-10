@@ -18,14 +18,14 @@ musicViolaMvtII = \relative c {
 	r g8-- g16-. r fis8-- fis16-.
 	r g8-- g16-. r g8--\< g16-.\!
 	r g8-- g16-. r g8--\> g16-.\!
-	r <bes d>8\p q16 r q8\< q16
-	r f8 f16\! r f8 f16
+	r <bes d>8--\p q16-. r q8--\< q16-.
+	r f8-- f16-.\! r f8-- f16-.
 % Bars 11 to 15
-	r f8 f16\> r bes8 f16\!
+	r f8-- f16-.\> r bes8-- f16-.\!
 	r f8\pp f16 r f8( f16--
 	r f8 f16-- r g8 a16--)
-	r f8( f16~ f f8 f16)~
-	f8 bes4(\< a16 g)\!
+	r f8( f16~ f f8 f16~
+	f8) bes4(\< a16 g)\!
 % Bars 16 to 20
 	bes4 d,-\tweak extra-offset #'(-1 . 0.5) \f~
 	d8 c4(_\dimmarkup a'8)
@@ -94,13 +94,13 @@ musicViolaMvtII = \relative c {
 		ees8 c32( d c) bes-. a8( d)
 		d4( ees
 		\after 4 \< d4.) g8\>
-		f4(\! bes)~
-		bes8_\< a(-- g-- f--)\!
-		f8~ f32( g f) ees-. ees4(
+		f4(->\! bes~
+		bes8)_\< a(-- g-- f--)\!
+		f8(~ f32 g f ees) ees4(
 		d8)
 	} \\ {
-		d4_\pespressivo bes8 d
-		c a16.\< g32\! g8\> fis\!
+		d4(_\pespressivo bes8 d)
+		c a16.\< g32\! g8\>( fis\!)
 		g2
 		bes
 		bes
@@ -113,7 +113,7 @@ musicViolaMvtII = \relative c {
 	
 	r8 g16(\mf a) a(\< bes) bes( c)\!
 	<<{
-		d4 f~
+		d4 f~->
 		f8 ees16( d f8 ees)
 		d8
 	} \\ {
@@ -137,12 +137,12 @@ musicViolaMvtII = \relative c {
 	f f f f   f f f f 
 	f8\f r16 f'-. bes( f)\< f-. ees-.\!
 	d8\ff-> d-> d-> d->
-	<g, d'> r <c, bes' g'> r
+	<g, d'> r <c, bes' g'>\arpeggio r
 % Bars 101 to 105
-	<d' bes'> r r4
-	<c ees>8 r r4
+	<d' bes'>\arpeggio r r4
+	<c ees>8\arpeggio r r4
 	R2
-	bes32(\ff des bes des  bes des bes des  bes des bes des  bes des bes des)
+	\repeat tremolo 8 {bes32(\ff des)}
 	\repeat tremolo 8 {aes32( c)}
 % Bars 106 to 110
 	\repeat tremolo 8 {ges( bes)}
@@ -152,7 +152,7 @@ musicViolaMvtII = \relative c {
 	\repeat tremolo 8 {gis( b)}
 % Bars 111 to 115
 	\repeat tremolo 8 {aes( ces)} \mark \default
-	<<{ces8} \\ {aes}>> r16 aes(\p f des8_\dimmarkup aes'16
+	<<{ces8} \\ {aes}>> r16 aes!(\p f des8_\dimmarkup aes'16
 	f des8 aes'16 f des8 aes'16)
 	r8 d,!4.-\tweak X-offset #0.05 \pp
 	r8 d4.
@@ -165,12 +165,12 @@ musicViolaMvtII = \relative c {
 % Bars 121 to 125
 	g])\pp r r8 r4
 	R2
-	r16 ees,(\pp c aes'~ aes ees c aes')~
-	aes(\cresc ees c aes'~ aes ees c aes')
-	r ees( c a'!~ a ees c a'~)
+	r16 ees,(\pp c aes'~ aes ees c aes'~
+	aes)(-\pocoapococresc ees c aes'~ aes ees c aes')
+	r ees( c a'!~ a ees c a'~
 % Bars 126 to 130
-	a( ees c a'~ a ees c a'~)
-	a fis-. d-. c'~ c a-. fis-. d'~
+	a)( ees c a'~ a ees c a'~
+	a) fis-. d-. c'~ c a-. fis-. d'~
 	d c-. a-. fis'~ fis d-. c-. a'(\f
 	d,) <a fis'>-. q-. q-.   q-. q-. q-. q-.
 	q32[\< q q q] q[ q q q] q[ q q q] q[ q q q]\!
@@ -187,14 +187,14 @@ musicViolaMvtII = \relative c {
 	\mark \default
 	r16 <f, bes d>8--\pp q16-. r q8-- <g bes d>16-.
 % Bars 141 to 145
-	r <g a ees'>8 q16 r <fis a d>8 q16
-	r <g bes d>8 q16 r <g  c ees>8 q16
-	r <g bes d>8\< q16 r q8 <g bes e>16\!
-	r <f bes f'>8\mf\< q16 r q8 q16\!
-	r <f c' f>8\> q16 r q8 q16\!
+	r <g a ees'>8-- q16-. r <fis a d>8-- q16-.
+	r <g bes d>8-- q16-. r <g  c ees>8-- q16-.
+	r <g bes d>8--\< q16-. r q8-- <g bes e>16-.\!
+	r <f bes f'>8--\mf\< q16-. r q8-- q16-.\!
+	r <f c' f>8--\> q16-. r q8-- q16-.\!
 % Bars 146 to 150
-	r <f bes f'>8_\pdim q16 r <g bes f'>8 <f a f'>16
-	r <f bes d>8\pp q16 r <f bes>8 q16
+	r <f bes f'>8--_\pdim q16-. r <g bes f'>8-- <f a f'>16-.
+	r <f bes d>8--\pp q16-. r <f bes>8-- q16-.
 	r f8\(-- f-- g-- a16(
 	bes) f8-- f-- f-- f16\)
 	r f8 f16 r <e g>8\< q16
@@ -202,19 +202,19 @@ musicViolaMvtII = \relative c {
 	r <f bes>8 q\! q q16
 	r <a c>8\> q16 r q8\! q16\p
 	<g bes>8 fis(\pp\< g \tuplet 3/2 4 {bes16 a g\!)}
-	f!4 d\fz~
-	d8(\> c4 a'8)(\!
+	f!4 d\fz(~
+	d8 c4 a'8\!
 % Bars 156 to 160
-	d,)\pp r r4
+	d,) r r4
 	R2*4
 	
 	
 	
 % Bars 161 to 165
-	c'4.(\p\< a16 f~)\!
-	f8 r r4
-	bes4.(_\dimmarkup g16 ees)~
-	ees8 r r4
+	c'4.(\p\< a16 f~\!
+	f8) r r4
+	bes4.(_\dimmarkup g16 ees~
+	ees8) r r4
 	R2*4
 % Bars 166 to 170
 	
@@ -225,14 +225,14 @@ musicViolaMvtII = \relative c {
 % Bars 171 to 175
 	f\p f-. f-. f~ f f-. f-. f~
 	f f-. f-.\< f~   f f-. f-. f~\!
-	f\p f f f~   f f f f~
-	f f' f f~    f f f f~
-	f\< f f f~   f f f f~\!
+	f\p f-. f-. f~   f f-. f-. f~
+	f f'-. f-. f~    f f-. f-. f~
+	f\< f-. f-. f~   f f-. f-. f~\!
 % Bars 176 to 180
-	f f f\f f~   f f f f~
+	f f-. f-.\f f~   f f-. f-. f~
 	f a->\< f-> f->   f-> f-> f-> bes->\!
-	a8-.\ff r <g, f'! b>-.-^ r
-	<c, g' g' bes!>-.-^ r r4
+	a8-.\ff r <g, f'! b>-.-^\arpeggio r
+	<c, g' g' bes!>-.-^\arpeggio r r4
 	R2*2
 % Bars 181 to 185
 	
@@ -247,7 +247,7 @@ musicViolaMvtII = \relative c {
 		ges aes8 a
 		bes)
 	} \\ {
-		d,4(\p
+		\once \stemUp d,4(\p
 		ees2
 		d8)
 	}>> r r4
@@ -262,9 +262,9 @@ musicViolaMvtII = \relative c {
 	R2
 	r8 \beamOffset #'(0.3 . 0.3) f'8:32\ff d: g:
 	ees: c: a: d:
-	<d bes'>8 r q r
+	<d bes'>8\arpeggio r q\arpeggio r
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	R2\fermata \bar "|."
+	R2\fermata \fine
 }

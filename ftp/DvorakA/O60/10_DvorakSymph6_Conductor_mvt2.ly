@@ -117,15 +117,15 @@
 						\timeMvtII \nameStaffXMvtII \musicViolinoIIMvtII
 					}
 				>>
-%				\new Staff {
-%					\timeMvtII \nameStaffXIMvtII \musicViolaMvtII
-%				}
-%				\new Staff {
-%					\timeMvtII \nameStaffXIIMvtII \musicVioloncelloMvtII
-%				}
-%				\new Staff {
-%					\timeMvtII \nameStaffXIIIMvtII \musicContrabassoMvtII
-%				}
+				\new Staff {
+					\timeMvtII \nameStaffXIMvtII \musicViolaMvtII
+				}
+				\new Staff {
+					\timeMvtII \nameStaffXIIMvtII \musicVioloncelloMvtII
+				}
+				\new Staff {
+					\timeMvtII \nameStaffXIIIMvtII \musicContrabassoMvtII
+				}
 			>>
 		>>
 		\header {
