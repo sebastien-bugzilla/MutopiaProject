@@ -16,12 +16,12 @@ musicViolinoIIMvtII = \relative c' {
 	r16 <bes d>8--\p q16-. r q8-- q16-.
 % Bars 6 to 10
 	r <a ees'>8-- q16-. r <a d>8-- q16-.
-	r <bes d>8 q16 r <c ees>8\< q16\!
-	r <bes d>8 q16 r q8\> <bes e>16\!
-	r <bes f'>8\p q16 r q8\< q16
-	r <c f>8 q16\! r q8 q16
+	r <bes d>8-- q16-. r <c ees>8--\< q16-.\!
+	r <bes d>8-- q16-. r q8--\> <bes e>16-.\!
+	r <bes f'>8--\p q16-. r q8--\< q16-.
+	r <c f>8-- q16-.\! r q8-- q16-.
 % Bars 11 to 15
-	r <bes f'>8 q16\> r <g f'>8 <a f'>16\!
+	r <bes f'>8-- q16-.\> r <g f'>8-- <a f'>16-.\!
 	r <bes d>8\pp q16 r4
 	R2*3
 	
@@ -40,8 +40,8 @@ musicViolinoIIMvtII = \relative c' {
 	r c8 c16 r c8 c16
 % Bars 26 to 30
 	r4  r16 c(\pp e g
-	c g c e) g4_\crescmarkup~
-	g8( c) bes( a16 g)
+	c g c e) g4_\crescmarkup(~
+	g8 c) bes( a16 g)
 	f8\f r r4
 	f8 r r4
 % Bars 31 to 35
@@ -69,7 +69,7 @@ musicViolinoIIMvtII = \relative c' {
 	
 	
 % Bars 51 to 55
-	r8 <g bes>\p\< q q\!
+	r8 <g bes>--\p\< q-- q--\!
 	<< <e a>2\f {s8\> s s s\!}>>
 	<g bes>8\p r r4
 	R2*4
@@ -101,7 +101,7 @@ musicViolinoIIMvtII = \relative c' {
 	f8 r r4
 	d16(\pp f8) f16-. c( c'8) c16-.
 	g,( g' bes a) a(\< g) g( e)\!
-	f8\f bes4.(\fz
+	f8\f bes4.(~\fz
 	\after 8 <>_\dimmarkup bes a8
 % Bars 86 to 90
 	d,)\p r r4
@@ -120,15 +120,15 @@ musicViolinoIIMvtII = \relative c' {
 	<bes d> q q q <c ees> q q q
 	<bes d>8\f r16 f'-. bes-. f\<-. bes-. c-.\!
 	d8\ff-> c-> bes-> a->
-	bes r <g bes> r
+	bes r <g bes>\arpeggio r
 % Bars 101 to 105
-	<f d'> r r4
-	<c ees a>8 r r4
+	<f d'>\arpeggio r r4
+	<c ees a>8\arpeggio r r4
 	R2*2
 	
-	r8 f-.->\ff c-.-> f->~
+	r8 f-.->\ff c-.-> f->(~
 % Bars 106 to 110
-	f( ees) r4
+	f ees) r4
 	r8 f'->-. bes,->-. bes'->~
 	bes ges->-. ces,-.-> bes'->(
 	a!) fis-.-> b,->-. b'->~
@@ -153,7 +153,7 @@ musicViolinoIIMvtII = \relative c' {
 	
 	
 	r4 r8. a16\f~
-	a fis-. d-. c'( <d, c')> q-. q-. q~
+	a fis-. d-. c'^~ <d, c'> q-. q-. q~
 	q32\<[ q q q]   q[ q q q]  q[ q q q]  q[ q q q]\!
 % Bars 131 to 135
 	q16\ff r r8 r4 
@@ -171,8 +171,8 @@ musicViolinoIIMvtII = \relative c' {
 	ees( c16. bes32 a8 d)
 	d4( ees\<
 	d4.) g8\!
-	<< {f4( bes)~} {s8\mf\< s s s\!}>>
-	bes8\> a( g f)\!
+	<< {f4( bes~} {s8\mf\< s s s\!}>>
+	bes8)\> a( g f)\!
 % Bars 146 to 150
 	f\p(~ f32 g f) ees-. ees4(
 	d)\pp r
@@ -180,8 +180,8 @@ musicViolinoIIMvtII = \relative c' {
 	
 	r8 bes(\p\< c cis)
 % Bars 151 to 155
-	d4\!( f)_\mfz~
-	f8\> ees16( d \acciaccatura f8 ees8. d16)\p
+	d4\!( f_\mfz~
+	f8)\> ees16( d \acciaccatura f8 ees8. d16)\p
 	d8 r r4
 	bes,2\fp(
 	a4.)\> c8(\!
@@ -204,12 +204,12 @@ musicViolinoIIMvtII = \relative c' {
 	r8 bes(\p\< c cis\!
 	d\f) r r4
 	r8 bes'(\p\< c cis\!
-	d) d(\mf\< ees e\!
+	d)\noBeam d(\mf\< ees e\!
 % Bars 176 to 180
-	f) bes,16\f bes( c) c( cis) cis(
+	f)\noBeam bes,16\f bes( c) c( cis) cis(
 	d) c!->\< b-> b-> c-> d-> ees-> e->\!
-	<a, a'>8-.\ff r <d, b' g'>-.-^ r
-	<g bes! e>-.-^ r r4
+	<a, a'>8-.\ff r <d, b' g'>-.-^\arpeggio r
+	<g bes! e>-.-^\arpeggio r r4
 	R2*2
 % Bars 181 to 185
 	
@@ -230,9 +230,9 @@ musicViolinoIIMvtII = \relative c' {
 	R2
 	r8 f''8:32\ff d: g:
 	ees: c: a: d:
-	<d bes'>8 r <d, bes' f'>\arpeggio r
+	<d bes'>8\arpeggio r <d, bes' f'>\arpeggio r
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	R2\fermata \bar "|."
+	R2\fermata \fine
 }
