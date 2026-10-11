@@ -11,26 +11,26 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 1 to 5
 	\repeat volta 2 {
 		\mmrnDown R2.*4
-		
-		
-		
+	
+	
+	
 		c2->\f c4->~
 % Bars 6 to 10
 		c c2->
 		r4 c-. c-.
 		r c-. c-.
 		R2.*2
-		
+	
 % Bars 11 to 15
 		r4 g'-. g-.
 		r g-. g-.
 		R2.*2
-		
+	
 		g4-. g-. g-.
 % Bars 16 to 20
 		c-. c-. c-.
 		R2.*2
-		
+	
 		g4-. g-. g-.
 		c-. c-. c-.
 % Bars 21 to 25
@@ -40,6 +40,7 @@ musicTrombeIIMvtIII = \relative c' {
 	}
 	\repeat volta 2 {
 		R2.*17
+	
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -47,10 +48,11 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-		r4 g'-.\f\< g-.
+		r4 g'-.\brack\f\< g-.
 		g2->\ff c4-.
 		bes-. g2->
 		R2.*70
+	
 % Bars 46 to 50
 	
 % Bars 51 to 55
@@ -78,9 +80,9 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 106 to 110
 	
 % Bars 111 to 115
-		
-		
-		
+	
+	
+	
 		\ni \voiceTwo R2.
 		R
 % Bars 116 to 120
@@ -109,24 +111,21 @@ musicTrombeIIMvtIII = \relative c' {
 		c-. bes-. bes-.
 % Bars 136 to 140
 		R2.*2
-		
+	
 		g4-. g-. g-.
 		g-. g-. g-.
 		R2.*2
 % Bars 141 to 145
-		
+	
 		g4-. g-. g-.
 		g-. g-. g-.
 		g-. g-. g-.
 		c,-. c-. c-.
-	}
 % Bars 146 to 150
+	}
 	\alternative {
 		{
 			c r r
-			\once \override Staff.BarLine.space-alist = #'(
-				(next-note . (fixed-space . 3))
-				(right-edge . (extra-space . 0)))
 		}
 		{
 			\startMeasureCountAt #2 c2.\f\>
@@ -135,30 +134,37 @@ musicTrombeIIMvtIII = \relative c' {
 	c
 	c
 	c\p
-	c_\dimmarkup
 % Bars 151 to 155
+	c_\dimmarkup
 	c
 	c \attaccatrio \stopMeasureCount \bar ".|:-||" \key c \major \break
 	\repeat volta 2 {
 		\time 3/4 \trioPart \mmrLength #24 \mmrnDown R2.*6
+	
 % Bars 156 to 160
-		
-		
-		
+	
+	
+	
+	
 		\mmrLength #10.5 \mmrnDown R2.*4
 % Bars 161 to 165
-		
-		
+	
+	
+	
 		\mmrLength #10.5 \mmrnDown R2.*6
+	
 % Bars 166 to 170
-		
-		
-		
+	
+	
+	
+	
 		\mmrLength #10.5 \mmrnDown R2.*4
 % Bars 171 to 175
-		
-		
+	
+	
+	
 		\mmrLength #10.5 \mmrnDown R2.*28
+	
 % Bars 176 to 180
 	
 % Bars 181 to 185
@@ -168,9 +174,14 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 191 to 195
 	
 % Bars 196 to 200
-	}
+	
 % Bars 201 to 205
+	
+	}
 	R2.*51
+	
+	
+	
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -191,59 +202,68 @@ musicTrombeIIMvtIII = \relative c' {
 	
 % Bars 251 to 255
 	
+	
 	\ni \voiceTwo R2.
 	R
 	R
-	R \no \oneVoice 
 % Bars 256 to 260
+	R \no \oneVoice 
 	\startMeasureCountAt #1 r4 c\pp c
 	r c\< c
 	r c c
 	r c\! c
-	r c\mf c
 % Bars 261 to 265
+	r c\mf c
 	r c c
 	r c c
 	r c c
 	r c c
-	r c_\dimmarkup c
 % Bars 266 to 270
+	r c_\dimmarkup c
 	r c c
 	r c c \stopMeasureCount
 	R2.*13
+	
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
+	
 	\mmrLength #14 \mmrnDown R2.*7
+	
+	
+	
 % Bars 286 to 290
 	
-	\bar "||" \key a \minor
+	
+	\section \key a \minor
 	c2->\f c4~->
 	c c2->
-	r4 c-. c-.
 % Bars 291 to 295
+	r4 c-. c-.
 	r c-. c-.
 	R2.*2
 	
 	r4 g'-. g-.
-	r g-. g-.
 % Bars 296 to 300
+	r g-. g-.
 	R2.*2
 	
 	g4-. g-. g-.
 	c-. c-. c-.
-	R2.*2
 % Bars 301 to 305
+	R2.*2
 	
 	g4-. g-. g-.
 	c-. c-. c-.
 	g-. g-. g-.
-	c-. c,-. c-.
 % Bars 306 to 310
-	c r r \bar "||"
+	c-. c,-. c-.
+	c r r \section
 	R2.*17
+	
+	
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -252,11 +272,14 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	
 	
+	
 	r4 g'-.\f\< g-.
-	g2->\ff c4-.
 % Bars 326 to 330
+	g2->\ff c4-.
 	bes4-. g2->
 	R2.*70
+	
+	
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -285,53 +308,54 @@ musicTrombeIIMvtIII = \relative c' {
 	
 % Bars 396 to 400
 	
+	
 	\ni \voiceTwo R2.
 	R
 	R
-	R \no \oneVoice 
 % Bars 401 to 405
+	R \no \oneVoice 
 	g4-._\fsemprecresc g-. g-.
-	g g g
-	g g g
-	g g g
-	g g g
+	g-. g-. g-.
+	g-. g-. g-.
+	g-. g-. g-.
 % Bars 406 to 410
+	g-. g-. g-.
 	bes-. bes-. bes-. 
 	b!2->\ff b4~->
 	b b2->
 	g,2-> g4~->
-	g g2->
 % Bars 411 to 415
+	g g2->
 	c2_\ffgrandioso c4~
 	c c2
 	c2 c4~
 	c c2
-	bes'2 bes4~
 % Bars 416 to 420
+	bes'2 bes4~
 	bes bes2
 	c4-. bes-. bes-.
 	c-. bes-. bes-.
 	R2.*2
-	
 % Bars 421 to 425
+	
 	g4-. g-. g-.
 	g-. g-. g-.
 	R2.*2
 	
-	g4-. g-. g-.
 % Bars 426 to 430
+	g4-. g-. g-.
 	g-. g-. g-.
 	g-. g-. g-.
 	c,-. c-. c-.
 	c-. c-. c-.
-	g'-. g2->
 % Bars 431 to 435
+	g'-. g2->
 	c,4-. c-. c-.
 	c-. c-. c-.
 	g'-. g2->
 	c,4-. c-. c-.
+% Bars 436 to 440
 	c-. c-. c-.
-% Bars 436 to 438
 	c r r
 	c r r
 	c r r \bar "|."

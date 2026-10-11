@@ -101,15 +101,15 @@
 %						\timeMvtIII \nameStaffVMvtIII
 %						\partCombine \musicCornoIMvtIII \musicCornoIIMvtIII
 %					}
-					\new Staff {
-						\timeMvtIII \nameStaffVIMvtIII
-						\partCombine \musicCornoIIIMvtIII \musicCornoIVMvtIII
-					}
+%					\new Staff {
+%						\timeMvtIII \nameStaffVIMvtIII
+%						\partCombine \musicCornoIIIMvtIII \musicCornoIVMvtIII
+%					}
 %				>>
-%				\new Staff {
-%					\timeMvtIII \nameStaffVIIMvtIII
-%					\partCombine \musicTrombeIMvtIII \musicTrombeIIMvtIII
-%				}
+				\new Staff {
+					\timeMvtIII \nameStaffVIIMvtIII
+					\partCombine \musicTrombeIMvtIII \musicTrombeIIMvtIII
+				}
 %				\new Staff {
 %					\timeMvtIII \nameStaffVIIIMvtIII \musicTimpaniMvtIII
 %				}

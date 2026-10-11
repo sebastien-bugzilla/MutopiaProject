@@ -11,26 +11,26 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 1 to 5
 	\repeat volta 2 {
 		\scherzo R2.*4
-		
-		
-		
+	
+	
+	
 		c2->\f c4->~
 % Bars 6 to 10
 		c c2->
 		r4 c-. c-.
 		r c-. c-.
 		R2.*2
-		
+	
 % Bars 11 to 15
 		r4 g'-. g-.
 		r g-. g-.
 		R2.*2
-		
+	
 		g4-. g-. g-.
 % Bars 16 to 20
 		c-. c-. c-.
 		R2.*2
-		
+	
 		g4-. g-. g-.
 		c-. c-. c-.
 % Bars 21 to 25
@@ -40,6 +40,7 @@ musicTrombeIIMvtIII = \relative c' {
 	}
 	\repeat volta 2 {
 		R2.*17
+	
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -47,10 +48,11 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-		r4 g'-.-\tweak X-offset #-1 \f\< g-.\!
+		r4 g'-.-\tweak X-offset #-1 \brack\f\< g-.\!
 		g2->\ff c4-.
 		bes-. g2->
 		R2.*74
+	
 % Bars 46 to 50
 	
 % Bars 51 to 55
@@ -80,8 +82,8 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 111 to 115
 	
 % Bars 116 to 120
-		
-		
+	
+	
 		g4-._\fsemprecresc g-. g-.
 		g-. g-. g-.
 		g g g
@@ -105,18 +107,18 @@ musicTrombeIIMvtIII = \relative c' {
 		c-. bes-. bes-.
 % Bars 136 to 140
 		R2.*2
-		
+	
 		g4-. g-. g-.
 		g-. g-. g-.
 		R2.*2
 % Bars 141 to 145
-		
+	
 		g4-. g-. g-.
 		g-. g-. g-.
 		g-. g-. g-.
 		c,-. c-. c-.
-	}
 % Bars 146 to 150
+	}
 	\alternative {
 		{
 			c r r
@@ -128,12 +130,13 @@ musicTrombeIIMvtIII = \relative c' {
 	c
 	c
 	c\p
-	c
 % Bars 151 to 155
+	c
 	c
 	c \section \key c \major
 	\repeat volta 2 {
 		\trio R2.*48
+	
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -151,9 +154,14 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 191 to 195
 	
 % Bars 196 to 200
-	}
+	
 % Bars 201 to 205
+	
+	}
 	\grace s8 R2.*55
+	
+	
+	
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -175,13 +183,13 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 251 to 255
 	
 % Bars 256 to 260
+	
 	r4 c\pp c
 	r c\< c
 	r c c
 	r c c\!
-	r c\mf c
 % Bars 261 to 265
-	r c c
+	r c\mf c
 	r c c
 	r c c
 	r c c
@@ -189,7 +197,9 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 266 to 270
 	r c c
 	r c c
+	r c c
 	R2.*20
+	
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -198,31 +208,34 @@ musicTrombeIIMvtIII = \relative c' {
 	
 % Bars 286 to 290
 	
+	
 	\section \key a \minor
 	c2->\f c4~->
 	c c2->
-	r4 c-. c-.
 % Bars 291 to 295
+	r4 c-. c-.
 	r c-. c-.
 	R2.*2
 	
 	r4 g'-. g-.
-	r g-. g-.
 % Bars 296 to 300
+	r g-. g-.
 	R2.*2
 	
 	g4-. g-. g-.
 	c-. c-. c-.
-	R2.*2
 % Bars 301 to 305
+	R2.*2
 	
 	g4-. g-. g-.
 	c-. c-. c-.
 	g-. g-. g-.
-	c-. c,-. c-.
 % Bars 306 to 310
+	c-. c,-. c-.
 	c r r \section
 	R2.*17
+	
+	
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -231,11 +244,14 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	
 	
-	r4 g'-\offset X-offset -2 \f\< g\!
-	g2 -\offset X-offset 0.5 \ff c4
+	
+	r4 g'-.\f\< g-.\!
 % Bars 326 to 330
+	g2->\ff c4
 	bes4 g2
 	R2.*74
+	
+	
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -265,48 +281,49 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 396 to 400
 	
 % Bars 401 to 405
+	
 	g4-._\fsemprecresc g-. g-.
-	g g g
-	g g g
-	g g g
-	g g g
+	g-. g-. g-.
+	g-. g-. g-.
+	g-. g-. g-.
 % Bars 406 to 410
+	g-. g-. g-.
 	bes-. bes-. bes-. 
 	b!2->\ff b4~->
 	b b2->
 	g,2-> g4~->
-	g g2->
 % Bars 411 to 415
+	g g2->
 	c2 c4~
 	c c2
 	c2 c4~
 	c c2
-	bes'2 bes4~
 % Bars 416 to 420
+	bes'2 bes4~
 	bes bes2
 	c4-. bes-. bes-.
 	c-. bes-. bes-.
 	R2.*2
-	
 % Bars 421 to 425
+	
 	g4-. g-. g-.
 	g-. g-. g-.
 	R2.*2
 	
-	g4-. g-. g-.
 % Bars 426 to 430
+	g4-. g-. g-.
 	g-. g-. g-.
 	g-. g-. g-.
 	c,-. c-. c-.
 	c-. c-. c-.
-	g' g2
 % Bars 431 to 435
+	g'-. g2->
 	c,4-. c-. c-.
 	c-. c-. c-.
-	g' g2
+	g'-. g2->
 	c,4-. c-. c-.
+% Bars 436 to 440
 	c-. c-. c-.
-% Bars 436 to 438
 	c r r
 	c r r
 	c r r \bar "|."
