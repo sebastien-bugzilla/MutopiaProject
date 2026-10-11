@@ -11,25 +11,26 @@ musicCornoIVMvtIII = \relative c' {
 % Bars 1 to 5
 	\repeat volta 2 {
 		\scherzo R2.*4
-		
-		
-		
+	
+	
+	
 		c2\f-> c4->~
 % Bars 6 to 10
 		c c2->
 		r4 c-. c-.
 		r c-. c-.
 		R2.*6
+	
 % Bars 11 to 15
-		
-		
-		
-		
+	
+	
+	
+	
 		g4-. g-. g-.
 % Bars 16 to 20
 		g-. g-. g-.
 		R2.*2
-		
+	
 		g4-. g-. g-.
 		g-. g-. g-.
 % Bars 21 to 25
@@ -39,6 +40,7 @@ musicCornoIVMvtIII = \relative c' {
 	}
 	\repeat volta 2 {
 		R2.*17
+	
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -46,31 +48,31 @@ musicCornoIVMvtIII = \relative c' {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-		r4 b'!-\offset X-offset -1.8 \f\< c\!
-		g2-\offset X-offset 0.5 \ff aes4-.
+		r4 b'!-.-\offset X-offset -1.8 \f\< c-.\!
+		g2->-\offset X-offset 0.5 \ff aes4-.
 		bes-. ees,2->
 		r4 ees-.\p r
 		ees-. r ees-.
 % Bars 46 to 50
-		r f r
-		f r f
-		r ees r
-		ees r ees
-		r f r
+		r f-. r
+		f-. r f-.
+		r ees-. r
+		ees-. r ees-.
+		r f-. r
 % Bars 51 to 55
-		f r f
-		r c r
-		c r c
-		r g' r
-		g r g
+		f-. r f-.
+		r c-. r
+		c-. r c-.
+		r g'-. r
+		g-. r g-.
 % Bars 56 to 60
-		r c, r
-		c r c
-		r g' r
-		g r g
+		r c,-. r
+		c-. r c-.
+		r g'-. r
+		g-. r g-.
 		R2.*2
 % Bars 61 to 65
-		
+	
 		bes2->\ff aes4~
 		aes g2->
 		g2\p\< c4~
@@ -79,6 +81,8 @@ musicCornoIVMvtIII = \relative c' {
 		g2->\f f4\>~->
 		f ees2->\!
 		R2.*18
+	
+	
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -87,17 +91,22 @@ musicCornoIVMvtIII = \relative c' {
 	
 % Bars 86 to 90
 		R2.*2
-		
+	
 		R2.*2
-		
+	
 		c,2\p c4~
 % Bars 91 to 95
 		c f,2
 		R2.*4
+	
+	
+	
 % Bars 96 to 100
 		R2.*2
-		
+	
 		R2.*20
+	
+	
 % Bars 101 to 105
 	
 % Bars 106 to 110
@@ -105,9 +114,9 @@ musicCornoIVMvtIII = \relative c' {
 % Bars 111 to 115
 	
 % Bars 116 to 120
-		
-		
-		g'4_\fsemprecresc g g
+	
+	
+		g'4-._\fsemprecresc g-. g-.
 		g-. g-. g-.
 		g g g 
 % Bars 121 to 125
@@ -131,17 +140,17 @@ musicCornoIVMvtIII = \relative c' {
 % Bars 136 to 140
 		des2 des'4~
 		des2 c4
-		b! g,-. g-.
+		b!-. g,-. g-.
 		g-. g-. g-.
 		des'2 des'4~
 % Bars 141 to 145
 		des2 c4
-		b! g,-. g-.
+		b-. g,-. g-.
 		g-. g-. g-.
 		g-. g-. g-.
 		c-. c-. c-.
-	}
 % Bars 146 to 150
+	}
 	\alternative {
 		{
 			c r r
@@ -153,60 +162,63 @@ musicCornoIVMvtIII = \relative c' {
 	c
 	c
 	c\p
-	c
 % Bars 151 to 155
+	c
 	c
 	c \section \key c \major
 	\repeat volta 2 {
 		\trio R2.*2
-		
-		R2.*9
+	
 % Bars 156 to 160
-		
-		
-		
-		
-		
+		R2.*9
+	
+	
+	
+	
 % Bars 161 to 165
-		
-		
-		
+	
+	
+	
+	
 		R2.
-		R2.*16
 % Bars 166 to 170
-		
+		R2.*16
+	
+	
+	
+	
 % Bars 171 to 175
-		
+	
 % Bars 176 to 180
-		
+	
 % Bars 181 to 185
+	
 		R2.*4
-		
-		
-		
-		g2.\p~
+	
+	
+	
 % Bars 186 to 190
+		g2.\p~
 		g~
 		g~
 		g~
 		g~_\dimmarkup
-		g~
 % Bars 191 to 195
+		g~
 		g~
 		g~
 		g~\pp
 		g~_\dimmarkup
-		g~
 % Bars 196 to 200
+		g~
 		g~
 		g4\ppp r r
 		R2.*3
-		
-		
-	}
+	
 % Bars 201 to 205
+	
+	}
 	\clef bass \grace s8 c,,2.-\tweak X-offset #-2 \pp~
-	c~
 	c~
 	c~
 	c~
@@ -214,9 +226,13 @@ musicCornoIVMvtIII = \relative c' {
 	c~
 	c~
 	c~
+	c~
 	c4 r r
-	R2.*46
 % Bars 211 to 215
+	R2.*46
+	
+	
+	
 	
 % Bars 216 to 220
 	
@@ -235,18 +251,19 @@ musicCornoIVMvtIII = \relative c' {
 % Bars 251 to 255
 	
 % Bars 256 to 260
+	
 	c2.\p~
-	c~-\tweak extra-offset #'(0 . 0.4) \<
 	c~
-	<<c~ {s4 s s\!} >>
-	c2.~\mf
+	c~
+	c~
 % Bars 261 to 265
-	c~
+	c2.~
 	c~
 	c~
 	c~
 	c~
 % Bars 266 to 270
+	c~
 	c~
 	c~
 	c4 r r
@@ -259,32 +276,38 @@ musicCornoIVMvtIII = \relative c' {
 	
 	
 	
+	
 	c2.\p~
-	c~
 % Bars 286 to 290
+	c~
 	c~
 	c \clef treble \section \key a \minor
 	c''2->\f c4->~
 	c c2->
-	r4 c-. c-.
 % Bars 291 to 295
+	r4 c-. c-.
 	r c-. c-.
 	R2.*6
+	
+	
 % Bars 296 to 300
 	
 	
+	
 	g4-. g-. g-.
 	g-. g-. g-.
-	R2.*2
 % Bars 301 to 305
+	R2.*2
 	
 	g4-. g-. g-.
 	g-. g-. g-.
 	g-. g-. g-.
-	c-. c-. c-.
 % Bars 306 to 310
+	c-. c-. c-.
 	c r r \section
 	R2.*17
+	
+	
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -293,40 +316,44 @@ musicCornoIVMvtIII = \relative c' {
 	
 	
 	
-	r4 b'!-\offset X-offset -2 \f\< c\!
-	g2 -\offset X-offset 0.5 \ff aes4
+	
+	r4 b'!-.-\offset X-offset -2 \f\< c-.\!
 % Bars 326 to 330
+	g2-> -\offset X-offset 0.5 \ff aes4-.
 	bes-. ees,2->
 	r4 ees-.\p r
 	ees-. r ees-.
-	r f r
-	f r f
+	r f-. r
 % Bars 331 to 335
-	r ees r
-	ees r ees
-	r f r
-	f r f
-	r c r
+	f-. r f-.
+	r ees-. r
+	ees-. r ees-.
+	r f-. r
+	f-. r f-.
 % Bars 336 to 340
-	c r c
-	r g' r
-	g r g
-	r c, r
-	c r c
+	r c-. r
+	c-. r c-.
+	r g'-. r
+	g-. r g-.
+	r c,-. r
 % Bars 341 to 345
-	r g' r
-	g r g
+	c-. r c-.
+	r g'-. r
+	g-. r g-.
 	R2.*2
 	
-	bes2\ff aes4~
 % Bars 346 to 350
-	aes g2
+	bes2->\ff aes4->~
+	aes g2->
 	g2\p c4~
 	c\< d-. ees-.\!
 	g2\f-> f4->~\>
-	f ees2->\!
 % Bars 351 to 355
+	f ees2->\!
 	R2.*18
+	
+	
+	
 % Bars 356 to 360
 	
 % Bars 361 to 365
@@ -335,22 +362,26 @@ musicCornoIVMvtIII = \relative c' {
 	
 	
 	
-	R2.*2
 	
+	R2.*2
 % Bars 371 to 375
+	
 	R2.*2
 	
 	c,2\p c4~
 	c f,2
-	R2.*4
 % Bars 376 to 380
+	R2.*4
 	
 	
 	
 	R2.*2
-	
 % Bars 381 to 385
+	
 	R2.*20
+	
+	
+	
 % Bars 386 to 390
 	
 % Bars 391 to 395
@@ -358,48 +389,49 @@ musicCornoIVMvtIII = \relative c' {
 % Bars 396 to 400
 	
 % Bars 401 to 405
-	g'4_\fsemprecresc g g
-	g g g
-	g g g
-	g g  g
-	g g g
+	
+	g'4-._\fsemprecresc g-. g-.
+	g-. g-. g-.
+	g-. g-. g-.
+	g-. g-. g-.
 % Bars 406 to 410
+	g-. g-. g-.
 	fis-. fis-. fis-. 
 	fis2->\ff fis4~->
 	fis fis2->
 	b!2-> b4~->
-	b b2->
 % Bars 411 to 415
+	b b2->
 	g2 g4~
 	g g2
 	g2 g4~
 	g g2
-	ees2 ees4~
 % Bars 416 to 420
+	ees2 ees4~
 	ees ees2
 	ees4-. ees-. ees-.
 	ees-. ees-. ees-.
 	des2-> des'4->~
-	des2 c4-.
 % Bars 421 to 425
+	des2 c4-.
 	b!-. g,-. g-.
 	g-. g-. g-.
 	des'2-> des'4->~
 	des2 c4-.
-	b!-. g,-. g-.
 % Bars 426 to 430
+	b!-. g,-. g-.
 	g-. g-. g-.
 	g-. g-. g-.
 	c-. c-. c-.
 	c-. c-. c-.
-	g' g2
 % Bars 431 to 435
+	g'-. g2->
 	c4-. c-. c-.
 	c-. c-. c-.
-	g4 g2
+	g4-. g2->
 	c4-. c-. c-.
+% Bars 436 to 440
 	c-. c-. c-.
-% Bars 436 to 438
 	c r r
 	c r r
 	c r r \bar "|."

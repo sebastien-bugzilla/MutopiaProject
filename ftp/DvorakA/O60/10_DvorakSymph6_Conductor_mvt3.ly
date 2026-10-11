@@ -64,47 +64,47 @@
 	}
 	\score {
 		<<
-			\new StaffGroup <<
-				\new GrandStaff <<
-					\new Staff <<
+%			\new StaffGroup <<
+%				\new GrandStaff <<
+%					\new Staff <<
+%%						\new Voice {
+%%							\formatConductorMvtIII
+%%						}
 %						\new Voice {
-%							\formatConductorMvtIII
+%							\tempiMvtIII
 %						}
-						\new Voice {
-							\tempiMvtIII
-						}
-						\new Voice {
-							\timeMvtIII \nameStaffIMvtIII
-							\partCombine \musicFlautoIMvtIII \musicFlautoIIMvtIII
-						}
-					>>
-					\new Staff \with { \RemoveAllEmptyStaves } {
-						\timeMvtIII \nameStaffIMvtIIIPic \musicPiccoloMvtIII
-					}
-				>>
-				\new Staff {
-					\timeMvtIII \nameStaffIIMvtIII
-					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
-				}
-				\new Staff {
-					\timeMvtIII \nameStaffIIIMvtIII
-					\partCombine \musicClarinettoIMvtIII \musicClarinettoIIMvtIII
-				}
-				\new Staff {
-					\timeMvtIII \nameStaffIVMvtIII
-					\partCombine \musicFagottoIMvtIII \musicFagottoIIMvtIII
-				}
-			>>
+%						\new Voice {
+%							\timeMvtIII \nameStaffIMvtIII
+%							\partCombine \musicFlautoIMvtIII \musicFlautoIIMvtIII
+%						}
+%					>>
+%					\new Staff \with { \RemoveAllEmptyStaves } {
+%						\timeMvtIII \nameStaffIMvtIIIPic \musicPiccoloMvtIII
+%					}
+%				>>
+%				\new Staff {
+%					\timeMvtIII \nameStaffIIMvtIII
+%					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
+%				}
+%				\new Staff {
+%					\timeMvtIII \nameStaffIIIMvtIII
+%					\partCombine \musicClarinettoIMvtIII \musicClarinettoIIMvtIII
+%				}
+%				\new Staff {
+%					\timeMvtIII \nameStaffIVMvtIII
+%					\partCombine \musicFagottoIMvtIII \musicFagottoIIMvtIII
+%				}
+%			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
 %					\new Staff {
 %						\timeMvtIII \nameStaffVMvtIII
 %						\partCombine \musicCornoIMvtIII \musicCornoIIMvtIII
 %					}
-%					\new Staff {
-%						\timeMvtIII \nameStaffVIMvtIII
-%						\partCombine \musicCornoIIIMvtIII \musicCornoIVMvtIII
-%					}
+					\new Staff {
+						\timeMvtIII \nameStaffVIMvtIII
+						\partCombine \musicCornoIIIMvtIII \musicCornoIVMvtIII
+					}
 %				>>
 %				\new Staff {
 %					\timeMvtIII \nameStaffVIIMvtIII

@@ -11,9 +11,9 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 1 to 5
 	\repeat volta 2 {
 		\scherzo R2.*4
-		
-		
-		
+	
+	
+	
 		e2->\f e4~
 % Bars 6 to 10
 		e e2->
@@ -40,15 +40,16 @@ musicCornoIMvtIII = \relative c'' {
 	}
 	\repeat volta 2 {
 		R2.*16
+	
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
 % Bars 36 to 40
-		
-		
-		
-		
+	
+	
+	
+	
 		e'2\p\< e4~
 % Bars 41 to 45
 		e e4-. e-.\!
@@ -81,9 +82,11 @@ musicCornoIMvtIII = \relative c'' {
 		e,2\p\< e4~
 		e a2\!
 % Bars 66 to 70
-		\partCombineChords b2->\f a4^(->\>
-		b) g2\!-> \partCombineAutomatic
+		b2->\f \partCombineApart a4^(->
+		b) g2-> \partCombineAutomatic
 		R2.*8
+	
+	
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -98,6 +101,8 @@ musicCornoIMvtIII = \relative c'' {
 		c2\p bes4~
 		bes a2
 		R2.*8
+	
+	
 % Bars 91 to 95
 	
 % Bars 96 to 100
@@ -107,14 +112,14 @@ musicCornoIMvtIII = \relative c'' {
 		des-. c-. c-.
 		R2.*4
 % Bars 101 to 105
-		
-		
-		
+	
+	
+	
 		r4 c2\pp
-		r4 c2
+		r4 c2-\pocoapococrescendo
 % Bars 106 to 110
 		R2.*2
-		
+	
 		r4 d2\p 
 		r4 d2_\crescmarkup
 		r4 cis2
@@ -150,18 +155,18 @@ musicCornoIMvtIII = \relative c'' {
 		f-. e-. e-.
 % Bars 136 to 140
 		R2.*2
-		
-		\partCombineApart b4-. gis-. b-.
-		c-. a-. c-. \partCombineAutomatic
+	
+		b4-. gis-. b-.
+		c-. a-. c-.
 		R2.*2
 % Bars 141 to 145
-		
-		\partCombineApart b4-. gis-. b-.
+	
+		b4-. gis-. b-.
 		c-. a-. c-.
-		e-. \partCombineAutomatic e-. e-.
+		\once \partCombineApart e-. e-. e-.
 		e-. e-. e-.
-	}
 % Bars 146 to 150
+	}
 	\alternative {
 		{
 			e r r
@@ -173,12 +178,13 @@ musicCornoIMvtIII = \relative c'' {
 	e
 	e
 	e\p
-	e_\dimmarkup
 % Bars 151 to 155
+	e_\dimmarkup
 	e
 	e \section \key c \major
 	\repeat volta 2 {
 		\trio R2.*28
+	
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -190,31 +196,32 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 176 to 180
 	
 % Bars 181 to 185
-		\partCombineApart \stemDown f!2.~
+	
+		\partCombineApart \stemDown f2.~
 		f~
 		f~
 		\stemUp f2( e4)
-		d2(\p cis4
 % Bars 186 to 190
+		d2(\p cis4
 		b2 a4)
 		gis2( a4
 		b2 cis4)
 		d2(_\dimmarkup cis4
-		b2 a4)
 % Bars 191 to 195
+		b2 a4)
 		gis2( a4
 		b2 cis4)
 		a4_\pp r r \partCombineAutomatic
 		R2.*7
 % Bars 196 to 200
-		
-		
-		
-		
-		
-	}
+	
 % Bars 201 to 205
+	
+	}
 	\grace s8 R2.*55
+	
+	
+	
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -236,18 +243,19 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 251 to 255
 	
 % Bars 256 to 260
+	
 	a,4-\tweak extra-offset #'(-1.5 . 0.5) \pp r a'
 	a,-\tweak extra-offset #'(0 . 0.4) \< r a'
 	a, r a'
 	a, r a'\!
-	a,\mf r a'
 % Bars 261 to 265
+	a,\mf r a'
 	a, r a'
 	a, r a'
 	a, r a'
 	a, r a'
-	a, r_\dimmarkup a'
 % Bars 266 to 270
+	a, r_\dimmarkup a'
 	a, r a'
 	a, r a'
 	a,-\tweak extra-offset #'(-1. . 0.5) \pp r r 
@@ -260,31 +268,34 @@ musicCornoIMvtIII = \relative c'' {
 	
 % Bars 286 to 290
 	
+	
 	\section
 	e''2->\f e4~->
 	e e2->
-	g4-.\fz e-. e-.
 % Bars 291 to 295
+	g4-.\fz e-. e-.
 	g-.\fz e-. e-.
 	c2-> c4->~
 	c c2->
 	c4\fz-. c-. c-.
-	c\fz-. c-. c-.
 % Bars 296 to 300
+	c\fz-. c-. c-.
 	\partCombineApart bes2-> bes4->~
 	bes2 a4-.
-	gis-. \partCombineAutomatic b!-. b-.
+	gis-. b!-. b-. \partCombineAutomatic 
 	c-. c-. c-.
-	\partCombineApart bes2-> bes4~->
 % Bars 301 to 305
+	\partCombineApart bes2-> bes4~->
 	bes2 a4-.
-	gis-. \partCombineAutomatic b!-. b-.
+	gis-. b!-. b-.
 	c-. c-. c-.
-	\partCombineApart e-. e,-. e-.
-	a \partCombineAutomatic r r
+	e-. e,-. e-.
 % Bars 306 to 310
+	a-. \partCombineAutomatic r r
 	R2. \section
 	R2.*16
+	
+	
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -292,130 +303,143 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 321 to 325
 	
 	
+	
 	e'2\p\< e4~
 	e e-.\! e-.
-	g2-\tweak X-offset #0.5 \ff-> f4->~
 % Bars 326 to 330
+	g2-\tweak X-offset #0.5 \ff-> f4->~
 	f e2->
 	g,\p-> c4->~
 	c b4-. c-.
-	d2-> g,4~
-	g2.
+	d2-> g,4->~
 % Bars 331 to 335
+	g2.
 	g2-> c4~->
 	c b-. c-.
 	d2-> g,4~->
 	g2.
-	e2-> a4~->
 % Bars 336 to 340
+	e2-> a4~->
 	a gis-. a-.
 	b2-> e,4->~
 	e2.
 	e2-> a4->~
-	a gis-. a-.
 % Bars 341 to 345
-	b2-> e,4~
+	a gis-. a-.
+	b2-> e,4~->
 	e2.
 	e2 a4~\<
 	a\! b\f-. c-.
-	e2->\ff d4->~
 % Bars 346 to 350
+	e2->\ff d4->~
 	d c2->
 	e,\p e4~
 	e\< << a2 {s4 s\!} >>
-	\partCombineChords b2\f-> a4^(\>->
-	b) g2->\! \partCombineAutomatic
+	b2\f-> \partCombineApart a4^(->
 % Bars 351 to 355
+	b) g2 \partCombineAutomatic
 	R2.*8
+	
+	
+	
 % Bars 356 to 360
 	
 	
 	
+	
 	d'4-.\p\< d-. d-.
-	d-. d-. d-.\!
 % Bars 361 to 365
+	d-. d-. d-.\!
 	c2.\f~
 	c
 	R2.*6
+	
 % Bars 366 to 370
 	
 	
 	
+	
 	\once \stemUp c2\p bes4~
-	bes a2
 % Bars 371 to 375
+	bes a2
 	R2.*8
+	
+	
+	
 % Bars 376 to 380
 	
 	
 	
+	
 	r4 c-.\pp r
-	c-. r c-.
 % Bars 381 to 385
+	c-. r c-.
 	des-. c-. c-.
 	des-. c-. c-.
 	R2.*4
+	
 % Bars 386 to 390
 	
-	r4 c2\pp
-	r4 c2
-	R2.*2
 	
+	r4 c2\pp
+	r4 c2-\pocoapococresc
+	R2.*2
 % Bars 391 to 395
+	
 	r4 d2\p
 	r4 d2_\crescmarkup
 	r4 cis2
 	r4 dis2
-	r4 f!2
 % Bars 396 to 400
+	r4 f!2
 	r4 g2
 	ees4-.\f\< ees-. ees-.
 	ees-. ees-.  ees-.
 	ees-. ees-. ees-.
-	ees-. ees-. ees-.\!
 % Bars 401 to 405
+	ees-. ees-. ees-.\!
 	e!-. e-. e-.
 	d2.\fz
 	cis\fz
 	b\fz
-	bes\fz
 % Bars 406 to 410
+	bes\fz
 	des4-. des-. des-.
 	c2->\ff c4->~
 	c c2->
 	d!2-> d4~
-	d d2->
 % Bars 411 to 415
+	d d2->
 	c2_\ffgrandioso c4~
 	c c2
 	c2 c4~
 	c c2
-	dis4( e) dis(
 % Bars 416 to 420
+	dis4( e) dis(
 	e) dis( e)
 	f-. e-. e-.
 	f-. e-. e-.
 	R2.*2
-	
 % Bars 421 to 425
+	
 	b4-. gis-. b-.
 	c-. a-. c-.
 	R2.*2
 	
-	b4-. gis-. b-.
 % Bars 426 to 430
+	b4-. gis-. b-.
 	c-. a-. c-.
-	\once \partCombineApart e-. e-. e-.
 	e-. e-. e-.
 	e-. e-. e-.
-	e-. e2->
+	e-. e-. e-.
 % Bars 431 to 435
+	e-. e2->
 	e4-. e-. e-.
 	e-. e-. e-.
 	e-. e2->
 	e4-. e-. e-.
+% Bars 436 to 440
 	e-. e-. e-.
-% Bars 436 to 438
 	e r r
 	e r r
 	e r r \bar "|."

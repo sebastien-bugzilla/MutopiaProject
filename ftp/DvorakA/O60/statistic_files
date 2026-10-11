@@ -1,6 +1,6 @@
     155     417    5105 10_DvorakSymph6_Conductor_mvt1.ly
     141     383    4654 10_DvorakSymph6_Conductor_mvt2.ly
-    147     438    4949 10_DvorakSymph6_Conductor_mvt3.ly
+    147     462    4976 10_DvorakSymph6_Conductor_mvt3.ly
     155     410    5154 10_DvorakSymph6_Conductor_mvt4.ly
     248     596    5466 20_DvorakSymph6_Part01_Flauti.ly
     244     580    5213 20_DvorakSymph6_Part02_Oboi.ly
@@ -163,14 +163,14 @@
     522    1379    6948 03-Mvt3/m03_v07_music_FagottoI.ily
     478    1296    6275 03-Mvt3/m03_v08_music_FagottoII_C.ily
     482    1326    6654 03-Mvt3/m03_v08_music_FagottoII.ily
-    422    1135    5974 03-Mvt3/m03_v09_music_CornoI_C.ily
-    446    1159    5934 03-Mvt3/m03_v09_music_CornoI.ily
-    422    1089    5376 03-Mvt3/m03_v10_music_CornoII_C.ily
-    435    1089    5507 03-Mvt3/m03_v10_music_CornoII.ily
-    410    1090    5947 03-Mvt3/m03_v11_music_CornoIII_C.ily
-    412    1065    5280 03-Mvt3/m03_v11_music_CornoIII.ily
-    406    1017    4756 03-Mvt3/m03_v12_music_CornoIV_C.ily
-    404    1044    5134 03-Mvt3/m03_v12_music_CornoIV.ily
+    446    1129    5914 03-Mvt3/m03_v09_music_CornoI_C.ily
+    474    1142    5880 03-Mvt3/m03_v09_music_CornoI.ily
+    446    1091    5457 03-Mvt3/m03_v10_music_CornoII_C.ily
+    466    1087    5568 03-Mvt3/m03_v10_music_CornoII.ily
+    442    1085    6032 03-Mvt3/m03_v11_music_CornoIII_C.ily
+    438    1052    5308 03-Mvt3/m03_v11_music_CornoIII.ily
+    438    1008    4885 03-Mvt3/m03_v12_music_CornoIV_C.ily
+    434    1042    5256 03-Mvt3/m03_v12_music_CornoIV.ily
     313     843    3944 03-Mvt3/m03_v13_music_TrombeI_C.ily
     341     887    4271 03-Mvt3/m03_v13_music_TrombeI.ily
     313     844    3821 03-Mvt3/m03_v14_music_TrombeII_C.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2405   10460 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2408   10495 04-Mvt4/m04_v24_music_Contrabasso.ily
- 115271  334896 1952043 total
+ 115498  334868 1952462 total
