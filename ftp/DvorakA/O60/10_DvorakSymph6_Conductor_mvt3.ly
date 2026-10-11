@@ -64,37 +64,37 @@
 	}
 	\score {
 		<<
-%			\new StaffGroup <<
-%				\new GrandStaff <<
-%					\new Staff <<
-%%						\new Voice {
-%%							\formatConductorMvtIII
-%%						}
+			\new StaffGroup <<
+				\new GrandStaff <<
+					\new Staff <<
 %						\new Voice {
-%							\tempiMvtIII
+%							\formatConductorMvtIII
 %						}
-%						\new Voice {
-%							\timeMvtIII \nameStaffIMvtIII
-%							\partCombine \musicFlautoIMvtIII \musicFlautoIIMvtIII
-%						}
-%					>>
-%					\new Staff \with { \RemoveAllEmptyStaves } {
-%						\timeMvtIII \nameStaffIMvtIIIPic \musicPiccoloMvtIII
-%					}
-%				>>
+						\new Voice {
+							\tempiMvtIII
+						}
+						\new Voice {
+							\timeMvtIII \nameStaffIMvtIII
+							\partCombine \musicFlautoIMvtIII \musicFlautoIIMvtIII
+						}
+					>>
+					\new Staff \with { \RemoveAllEmptyStaves } {
+						\timeMvtIII \nameStaffIMvtIIIPic \musicPiccoloMvtIII
+					}
+				>>
 				\new Staff {
 					\timeMvtIII \nameStaffIIMvtIII
 					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
 				}
-%				\new Staff {
-%					\timeMvtIII \nameStaffIIIMvtIII
-%					\partCombine \musicClarinettoIMvtIII \musicClarinettoIIMvtIII
-%				}
+				\new Staff {
+					\timeMvtIII \nameStaffIIIMvtIII
+					\partCombine \musicClarinettoIMvtIII \musicClarinettoIIMvtIII
+				}
 %				\new Staff {
 %					\timeMvtIII \nameStaffIVMvtIII
 %					\partCombine \musicFagottoIMvtIII \musicFagottoIIMvtIII
 %				}
-%			>>
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
 %					\new Staff {
