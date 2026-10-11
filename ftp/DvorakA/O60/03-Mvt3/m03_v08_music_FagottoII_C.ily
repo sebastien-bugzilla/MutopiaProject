@@ -11,9 +11,9 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 1 to 5
 	\repeat volta 2 {
 		\scherzo R2.*4
-		
-		
-		
+	
+	
+	
 		d2\f-> d4~->
 % Bars 6 to 10
 		d d2->
@@ -34,28 +34,28 @@ musicFagottoIIMvtIII = \relative c, {
 		cis-. a-. a-.
 		d-. d,-. d-.
 % Bars 21 to 25
-		a'-. a a
-		d d, d
+		a'-. a-. a-.
+		d-. d,-. d-.
 		d r r
 	}
 	\repeat volta 2 {
 		f'4(\p a) f(
-		a) f a
+		a) f( a)
 % Bars 26 to 30
 		c-. g8(\< fis g a\!
 		bes a\> c bes a g\!)
 		f!4( a) f(
-		a) f a
+		a) f( a)
 		c-. g8(\< fis g a\!
 % Bars 31 to 35
 		bes a\> c bes a g)\!
 		d4( f) d(
-		f) d f
+		f) d( f)
 		a-. e8(\< dis e f\!
 		g fis\> a g f e)\!
 % Bars 36 to 40
-		d4( fis) d(
-		fis) d \once \omit Accidental fis
+		d4( fis!) d(
+		fis) d( fis)
 		a-. e8(\< dis e fis\!
 		g fis\> a g fis e)\!
 		d8(\< e f! g a bes!
@@ -64,11 +64,11 @@ musicFagottoIIMvtIII = \relative c, {
 		a\ff-. a,-. bes!-.
 		c-. f-. f,-.
 		R2.*8
-		
+	
 % Bars 46 to 50
-		
+	
 % Bars 51 to 55
-		
+	
 		d4-.\p a'-. d-.
 		d,-. a'-. d-.
 		cis,-. a'-. cis-.
@@ -89,53 +89,55 @@ musicFagottoIIMvtIII = \relative c, {
 		a2\f bes4-.\>
 		c-. c,-. f-.\!
 		R2.*4
+	
+	
 % Bars 71 to 75
-		
-		a'4\p g f
-		e d c
-		b g b
-		c g c,
+	
+		a'4-.\p g-. f-.
+		e-. d-. c-.
+		b-. g-. b-.
+		c-. g-. c,-.
 % Bars 76 to 80
 		R2.*4
-		
-		
-		
+	
+	
+	
 		g'2.\p~
 % Bars 81 to 85
 		g
 		f~
-		f4 bes,2
+		f4 bes,2->
 		R2.*2
-		
+	
 % Bars 86 to 90
 		f'2\p f4~
 		f bes2
 		R2.*2
-		
+	
 		bes'2\p a4~
 % Bars 91 to 95
 		a g2
 		R2.*4
-		
-		
-		
+	
+	
+	
 % Bars 96 to 100
 		des,4-.\pp r des-.
 		r des-. r
-		ges-. des' des
-		ges,-. des' des
+		ges-. des'-. des-.
+		ges,-. des'-. des-.
 		R2.*2
 % Bars 101 to 105
-		
+	
 		r4 bes'-.\pp r
 		bes-. r bes-.
 		R2.*2
-		
+	
 % Bars 106 to 110
-		r4 c\p r
-		c r c
+		r4 c\p\< r
+		c r c\!
 		R2.*2
-		
+	
 		d,,4(_\mf ees) ees(
 % Bars 111 to 115
 		e!) e( f)
@@ -165,8 +167,8 @@ musicFagottoIIMvtIII = \relative c, {
 		d d2
 		f2 f4~
 		f f2
-		bes4 f-. f-.
-		bes f-. f-.
+		bes4-. f-. f-.
+		bes-. f-. f-.
 % Bars 136 to 140
 		ees2-> ees'4->~
 		ees2 d4-.
@@ -179,8 +181,8 @@ musicFagottoIIMvtIII = \relative c, {
 		d-. f-. d-.
 		a-. g(-> f8 e)
 		d4-. d-. d-.
-	}
 % Bars 146 to 150
+	}
 	\alternative {
 		{
 			d r r
@@ -192,8 +194,8 @@ musicFagottoIIMvtIII = \relative c, {
 	d
 	d
 	d\p
-	d
 % Bars 151 to 155
+	d
 	d
 	d \section \key d \major
 	\repeat volta 2 {
@@ -214,58 +216,59 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 186 to 190
 	
 % Bars 191 to 195
-		
-		
+	
+	
+	
 		R2.*8
-		
-		
+	
 % Bars 196 to 200
-		
-		
-		
-		
-		
-	}
+	
 % Bars 201 to 205
+	
+	}
 	\grace s8 R2.
 	R2.*11
+	
 	
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
 	
-	R2.*9
 	
+	R2.*9
 	
 % Bars 216 to 220
 	
-	
-	
-	
-	
 % Bars 221 to 225
 	
+	
 	R2.*7
+	
+	
 % Bars 226 to 230
 	
 	
 	
+	
 	b2\p r4
-	R2.
 % Bars 231 to 235
-	b2 r4
 	R2.
 	b2 r4
 	R2.
 	b2 r4
+	R2.
 % Bars 236 to 240
-	R2.
 	b2 r4
 	R2.
 	b2 r4
-	R2.*25
+	R2.
+	b2 r4
 % Bars 241 to 245
+	R2.*25
+	
+	
+	
 	
 % Bars 246 to 250
 	
@@ -275,119 +278,104 @@ musicFagottoIIMvtIII = \relative c, {
 	
 % Bars 261 to 265
 	
-	
-	
-	
-	e'2( fis4
 % Bars 266 to 270
+	e'2( fis4
 	g a b)
 	a2.~
 	a4 r r
 	R2.*11
-	
 % Bars 271 to 275
-	
-	
-	
-	
 	
 % Bars 276 to 280
 	
-	
-	
-	
-	d,4--\pp d-- d--
 % Bars 281 to 285
-	d d d\<
-	d d d 
-	d d d\!
-	d\f d d
-	d d d
+	d,4--\pp d-- d--
+	d-- d-- d--\<
+	d-- d-- d-- 
+	d-- d-- d--\!
+	d--\f d-- d--
 % Bars 286 to 290
-	d d d
-	d d d \section \key d \minor
+	d-- d-- d--
+	d-- d-- d--
+	d-- d-- d-- \section \key d \minor
 	d,2\f-> d4->~
 	d d2->
-	c4\fz-. d-. d-.
 % Bars 291 to 295
+	c4\fz-. d-. d-.
 	c\fz-. d-. d-.
 	f2-> f4->~
 	f f2->
 	bes4-.\fz f-. f-.
-	bes\fz-. f-. f-.
 % Bars 296 to 300
+	bes\fz-. f-. f-.
 	ees2-> ees'4->~
 	ees2 d4-.
 	cis-. a-. a-.
 	d-. d,-. d-.
-	ees2-> ees'4->~
 % Bars 301 to 305
+	ees2-> ees'4->~
 	ees2 d4-.
 	cis-. a-. a-.
 	d-. d,-. d-.
-	a'-. a a
-	d d, d
+	a'-. a-. a-.
 % Bars 306 to 310
+	d-. d,-. d-.
 	d r r \section
 	f'4(\p a) f(
 	a) f( a)
 	c-. g8(\< fis g a\!
-	bes a\> c bes a g)\!
 % Bars 311 to 315
+	bes a\> c bes a g)\!
 	f4( a) f(
 	a) f( a)
 	c-. g8(\< fis g a\!
 	bes a\> c bes a g)\!
-	d4( f) d(
 % Bars 316 to 320
+	d4( f) d(
 	f) d( f)
 	a-. e8(\< dis e f\!
 	g fis\> a g f e)\!
-	d4( fis) d(
-	fis) d( fis)
+	d4( fis!) d(
 % Bars 321 to 325
+	fis) d( fis)
 	a-. e8(\< dis e fis\!
 	g fis\> a g fis e)\!
 	d8(\< e f! g a bes!
 	b4) cis-.\! d-.
-	a\ff a, bes!
 % Bars 326 to 330
-	c f f,
+	a-.\ff a,-. bes!-.
+	c-. f-. f,-.
 	R2.*8
-	
 	
 	
 % Bars 331 to 335
 	
-	
-	
-	
-	d4-.-\offset X-offset 0.8 \p a'-. d-.
 % Bars 336 to 340
+	d4-.-\offset X-offset 0.8 \p a'-. d-.
 	d,-. a'-. d-.
 	cis,-. a'-. cis-.
 	cis,-. a'-. cis-.
-	d,-. a'-. d-.
 	d,-. a'-. d-.
 % Bars 341 to 345
+	d,-. a'-. d-.
 	cis,-. a'-. cis-.
 	cis,-. a'-. cis-.
 	a2\< d4~
 	d\! e-.\f f-.
-	c2->\ff c,4->~
 % Bars 346 to 350
+	c2->\ff c,4->~
 	c f2->
 	d'2\p d4~
 	d\< bes2
-	a2\f\> bes4
-	c\! c, f
+	a2\f\> bes4-.
 % Bars 351 to 355
+	c\!-. c,-. f-.
 	R2.*4
 	
 	
 	
-	\aIIXoffset #-4 a'4-.\p g-. f-.
 % Bars 356 to 360
+	\aIIXoffset #-4 a'4-.\p g-. f-.
 	e-. d-. c-.
 	b-. g-. b-.
 	c-. g-. c,-.
@@ -395,94 +383,95 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 361 to 365
 	
 	
+	
 	g'2.-\offset X-offset 0.5 \p~
 	g
-	f~
 % Bars 366 to 370
+	f~
 	f4 bes,2
 	R2.*2
 	
-	f'2-\offset X-offset 0.5 \p f4~
-	f bes2
+	f'2-\tweak X-offset 0.5 \p f4~
 % Bars 371 to 375
+	f bes2
 	R2.*2
 	
 	bes'2\p a4~
 	a g2
-	R2.*4
 % Bars 376 to 380
+	R2.*4
 	
 	
 	
 	des,4-.\pp r des-.
-	r des-. r
 % Bars 381 to 385
-	ges-. des' des
-	ges,-. des' des
+	r des-. r
+	ges-. des'-. des-.
+	ges,-. des'-. des-.
 	R2.*2
 	
-	r4 bes'-.\pp r 
 % Bars 386 to 390
+	r4 bes'-.\pp r 
 	bes-. r bes-.
 	R2.*2
 	
 	r4 c\p\< r 
-	c r c\!
 % Bars 391 to 395
+	c r c\!
 	R2.*2
 	
 	d,,4( ees) ees(
 	e!) e( f)
-	fis( g) g(
 % Bars 396 to 400
+	fis( g) g(
 	aes) aes2->
 	aes4-.\f\< aes-. aes-.
 	aes-. aes-. aes-.
 	aes-. aes-. aes-.
-	aes-. aes-. aes-.\!
 % Bars 401 to 405
+	aes-. aes-. aes-.\!
 	a!-. a-. a-.
-	a a a
-	a a a
+	a-. a-. a-.
 	a-. a-. a-.
 	a-. a-. a-.
 % Bars 406 to 410
+	a-. a-. a-.
 	aes-. aes-. aes-.
 	des2->\ff des4~->
 	des des2->
 	a!2-> a4~->
-	a a2->
 % Bars 411 to 415
+	a a2->
 	d!2 d,4~
 	d d2
 	d d4~
 	d d2
-	f2 f4~
 % Bars 416 to 420
+	f2 f4~
 	f f2
-	bes4 f-. f-.
-	bes f-. f-.
+	bes4-. f-. f-.
+	bes-. f-. f-.
 	ees2-> ees'4~->
-	ees2 d4-.
 % Bars 421 to 425
+	ees2 d4-.
 	cis-. a-. cis-.
 	d-. f-. d-.
 	ees,2-> ees'4~->
 	ees2 d4-.
-	cis-. a-. cis-.
 % Bars 426 to 430
+	cis-. a-. cis-.
 	d-. f-. d-.
 	a-. g4->( f8 e)
 	d4-. d-. d-.
 	d-. d-. d-.
-	a'-. a b8 cis
 % Bars 431 to 435
+	a'-. a->( b8 cis)
 	d4 d d
 	d d d
-	a g' f8 e
-	d4 d,-. d-.
+	a g'->( f8 e)
+	d4-. d,-. d-.
+% Bars 436 to 440
 	d-. d-. d-.
-% Bars 436 to 438
 	d r r
 	d r r
 	d r r \bar "|."
