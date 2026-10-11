@@ -11,9 +11,9 @@ musicTimpaniMvtIII = \relative c {
 % Bars 1 to 5
 	\repeat volta 2 {
 		\scherzo R2.*4
-		
-		
-		
+	
+	
+	
 		d2\f d4~
 % Bars 6 to 10
 		d d2
@@ -25,12 +25,12 @@ musicTimpaniMvtIII = \relative c {
 		d4-. a-. a-.
 		d-. a-. a-.
 		R2.*2
-		
+	
 		a2.\startTrillSpan
 % Bars 16 to 20
 		d4-.\stopTrillSpan d-. d-.
 		R2.*2
-		
+	
 		a2.\startTrillSpan
 		d4-.\stopTrillSpan d-. d-.
 % Bars 21 to 25
@@ -40,20 +40,23 @@ musicTimpaniMvtIII = \relative c {
 	}
 	\repeat volta 2 {
 		R2.*16
+	
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
 % Bars 36 to 40
-		
-		
-		
-		
+	
+	
+	
+	
 		d2._\pcresc\startTrillSpan
 % Bars 41 to 45
 		d\startTrillSpan
-		a4\stopTrillSpan\f r r
+		a4->\stopTrillSpan\f r r
 		R2.*83
+	
+	
 % Bars 46 to 50
 	
 % Bars 51 to 55
@@ -87,8 +90,8 @@ musicTimpaniMvtIII = \relative c {
 % Bars 121 to 125
 	
 % Bars 126 to 130
-		a2.\f\startTrillSpan
-		a\stopTrillSpan
+		a2.\f\<\startTrillSpan
+		<< a {s4 s s\!\stopTrillSpan}>>
 		r8 d8\ff-> d4-> r8 d->
 		d4-> r8 d-> d4->
 		r8 d d4 r8 d
@@ -100,18 +103,18 @@ musicTimpaniMvtIII = \relative c {
 		d-. a-. a-.
 % Bars 136 to 140
 		R2.*2
-		
+	
 		r8 a a4 r8 a
 		a4 r8 d d4
 		R2.*2
 % Bars 141 to 145
-		
+	
 		r8 a a4 r8 a
 		a4 r8 a a4
 		r8 a a4 r8 a
 		d4-. d-. d-.
-	}
 % Bars 146 to 150
+	}
 	\alternative {
 		{
 			d r r
@@ -123,8 +126,8 @@ musicTimpaniMvtIII = \relative c {
 	r8 d d4 r8 d
 	d4 r8 d d4\!
 	r8 d\p d4 r8 d
-	d4 r8 d_\dimmarkup d4
 % Bars 151 to 155
+	d4 r8 d_\dimmarkup d4
 	r8 d d4 r8 d
 	d4 r8 d d4 \section \key c \major
 	\repeat volta 2 {
@@ -147,20 +150,25 @@ musicTimpaniMvtIII = \relative c {
 % Bars 191 to 195
 	
 % Bars 196 to 200
-	}
+	
 % Bars 201 to 205
+	
+	}
 	\grace s8 d2.\pp\startTrillSpan
-	d
 	d
 	d
 	d
 % Bars 206 to 210
 	d
 	d
-	d\stopTrillSpan
-	d4 r r
-	R2.*46
+	d
+	d
+	d4\stopTrillSpan r r
 % Bars 211 to 215
+	R2.*46
+	
+	
+	
 	
 % Bars 216 to 220
 	
@@ -179,21 +187,23 @@ musicTimpaniMvtIII = \relative c {
 % Bars 251 to 255
 	
 % Bars 256 to 260
+	
 	r8 d\p d4 r8 d
 	d4 r8 d\< d4
 	r8 d d4 r8 d
 	d4 r8 d d4\!
-	r8 d\mf d4 r8 d
 % Bars 261 to 265
+	r8 d\mf d4 r8 d
 	d4 r8 d d4
 	r8 d d4 r8 d
 	d4 r8 d d4
 	r8 d d4 r8 d
-	d4 r8 d_\dimmarkup d4
 % Bars 266 to 270
+	d4 r8 d_\dimmarkup d4
 	r8 d d4 r8 d
 	d4 r8 d d4
 	R2.*16
+	
 % Bars 271 to 275
 	
 % Bars 276 to 280
@@ -202,35 +212,38 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	
+	
 	d2.\p\startTrillSpan
-	d_\crescmarkup
 % Bars 286 to 290
+	d_\crescmarkup
 	d
-	d\stopTrillSpan \section \key a \minor
-	d2\f d4~
+	d \section \key a \minor
+	d2\f\stopTrillSpan d4~
 	d d2
-	r4 d-. d-.
 % Bars 291 to 295
+	r4 d-. d-.
 	r d-. d-.
 	a2 a4~
 	a a2
 	d4-. a-. a-.
-	d-. a-. a-.
 % Bars 296 to 300
+	d-. a-. a-.
 	R2.*2
 	
 	a2.\startTrillSpan
 	d4-.\stopTrillSpan d-. d-.
-	R2.*2
 % Bars 301 to 305
+	R2.*2
 	
 	a2.\startTrillSpan
 	d4-.\stopTrillSpan d-. d-.
 	a-. a-. a-.
-	d-. d-. d-.
 % Bars 306 to 310
+	d-. d-. d-.
 	d r r \section
 	R2.*16
+	
+	
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -238,11 +251,15 @@ musicTimpaniMvtIII = \relative c {
 % Bars 321 to 325
 	
 	
+	
 	d2._\pcresc\startTrillSpan
 	d
-	a4\stopTrillSpan\f r r
 % Bars 326 to 330
+	a4\stopTrillSpan\f r r
 	R2.*83
+	
+	
+	
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -277,39 +294,40 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	
+	
 	a2.\f\startTrillSpan
-	a
 % Bars 411 to 415
+	a
 	r8\stopTrillSpan d-> d4-> r8 d->
 	d4-> r8 d-> d4->
 	r8 d d4 r8 d
 	d4 r8 d d4
-	r8 a a4 r8 a
 % Bars 416 to 420
+	r8 a a4 r8 a
 	a4 r8 a a4
 	d-. a-. a-.
 	d-. a-. a-.
 	R2.*2
-	
 % Bars 421 to 425
+	
 	r8 a a4 r8 a
 	a4 r8 d d4
 	R2.*2
 	
-	r8 a a4 r8 a
 % Bars 426 to 430
+	r8 a a4 r8 a
 	a4 r8 a a4
 	r8 a a4 r8 a
 	d4-. d-. d-.
 	d-. d-. d-.
-	a r8 a a4
 % Bars 431 to 435
+	a r8 a a4
 	d-. d-. d-.
 	d-. d-. d-.
 	a r8 a a4
 	d-. d-. d-.
+% Bars 436 to 440
 	d-. d-. d-.
-% Bars 436 to 438
 	d r r
 	d r r
 	d r r \bar "|."
