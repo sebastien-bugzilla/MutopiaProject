@@ -11,9 +11,9 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 1 to 5
 	\repeat volta 2 {
 		R2.*4
-		
-		
-		
+	
+	
+	
 		a2->\f a4->~
 % Bars 6 to 10
 		a a2->
@@ -40,15 +40,16 @@ musicOboeIMvtIII = \relative c''' {
 	}
 	\repeat volta 2 {
 		R2.*16
+	
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
 % Bars 36 to 40
-		
-		
-		
-		
+	
+	
+	
+	
 		a''2\p\< a4~
 % Bars 41 to 45
 		a g-. f-.\!
@@ -57,53 +58,57 @@ musicOboeIMvtIII = \relative c''' {
 		r4 f-.\p r
 		f-. r f-.
 % Bars 46 to 50
-		r c r
-		c r c
-		r f r
-		f r f
-		r c r
+		r c-. r
+		c-. r c-.
+		r f-. r
+		f-. r f-.
+		r c-. r
 % Bars 51 to 55
-		c r c 
-		r d r
-		d r d
-		r a r
-		a r a
+		c-. r c-. 
+		r d-. r
+		d-. r d-.
+		r a-. r
+		a-. r a-.
 % Bars 56 to 60
-		r d r
-		d r d
-		r a r
-		a r a
-		f!8(\< g a bes c cis
+		r d-. r
+		d-. r d-.
+		r a-. r
+		a-. r a-.
+		f!8(\p\< g a bes c cis
 % Bars 61 to 65
 		d4)\! g-.\f f-.
 		a2\ff-> bes4->~
 		bes a2->
 		R2.*16
+	
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
 % Bars 76 to 80
-		
-		
-		
-		
+	
+	
+	
+	
 		g4-.\p f-. ees-.
 % Bars 81 to 85
 		d-. c-. bes-.
 		f'->-. f,-. a-.
 		c-. bes8( a \once \stemUp bes4)
 		R2.*2
-		
+	
 % Bars 86 to 90
 		f'4-.\p f,-. a-.
 		c-. bes8( a \once \stemUp bes4)
 		R2.*2
-		
+	
 		d4-.\p d,-. fis-.
 % Bars 91 to 95
 		a-. g8( fis g4)
 		R2.*4
+	
+	
+	
 % Bars 96 to 100
 		e'4(\pp f!) e(
 		f) e( f)
@@ -111,11 +116,11 @@ musicOboeIMvtIII = \relative c''' {
 		ges-. f8( e f4)
 		R2.*2
 % Bars 101 to 105
-		
+	
 		r4 ees-.\pp r
 		ees-. r ees-.
 		r f2
-		r4 f2\cresc
+		r4 f2-\pocoapococrescendo
 % Bars 106 to 110
 		r4 f r
 		f r f
@@ -125,7 +130,7 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 111 to 115
 		r4 gis2
 		r4 ais2
-		r4 fis2
+		r4 fis2->
 		f!4-.\f\< ees8( d ees4)
 		f4-. ees8( d ees4)
 % Bars 116 to 120
@@ -164,8 +169,8 @@ musicOboeIMvtIII = \relative c''' {
 		f-. d8( cis d4)
 		a'-. a,(-> b8 cis)
 		d4-. f-. d-.
-	}
 % Bars 146 to 150
+	}
 	\alternative {
 		{
 			d r r
@@ -177,100 +182,97 @@ musicOboeIMvtIII = \relative c''' {
 	\override Staff.MeasureCounter.count-from = #2 \startMeasureCount d
 	d
 	d\p
-	d_\dimmarkup
 % Bars 151 to 155
+	d_\dimmarkup
 	d
-	d \stopMeasureCount \bar "||" \key d \major \break
+	d \stopMeasureCount \section \key d \major \break
 	\repeat volta 2 {
 		\time 3/4 \trioPart d4(\fp e8 cis d4)
 		R2.
-		d4(\p e8 cis d4)
 % Bars 156 to 160
+		d4(\p e8 cis d4)
 		R2.
 		fis4(\< g8 eis fis4
 		g2 fis4\!)
 		e2.\fp~
-		e~\>
 % Bars 161 to 165
+		e~\>
 		e~
 		e\pp
 		e4->( fis8 dis e4)
 		R2.
-		e4(\p fis8 dis e4)
 % Bars 166 to 170
+		e4(\p fis8 dis e4)
 		R2.
 		g4(\< a8 fis g4
 		b2 a4)\!
 		fis2.\fp~
-		fis~\>
 % Bars 171 to 175
+		fis~\>
 		fis~
 		fis\pp
 		fis4(-> g8 e fis4)
 		R2.
-		fis4(\< g8 e fis4~
 % Bars 176 to 180
+		fis4(\< g8 e fis4~
 		fis2.)\!
 		g(\fz\>
 		fis)\!
 		g(\<
-		fis)\!
 % Bars 181 to 185
+		fis)\!
 		bes\f\>~
 		bes~
 		bes~
 		bes2\! r4
-		R2.*16
 % Bars 186 to 190
+		R2.*16
+	
+	
+	
 	
 % Bars 191 to 195
 	
 % Bars 196 to 200
-		
-		
-		
-		
-		
-	}
+	
 % Bars 201 to 205
+	
+	}
 	r4 a(\p fis)
 	r d( a)
 	R2.*4
 	
-	
 % Bars 206 to 210
+	
 	
 	r4 e(\p g)
 	r b( e)
 	fis,(\p a d
-	c2.
 % Bars 211 to 215
+	c2.
 	b4 a g
 	fis g e)
-	d2.(
+	d2.(\p
 	g2 a4
-	d,2.
 % Bars 216 to 220
+	d,2.
 	cis!)
 	d(_\dimmarkup
 	cis)
 	d(
-	cis)
 % Bars 221 to 225
+	cis)
 	d4\pp r r
 	fis( g8 e fis4)
 	R2.*41
+	
 % Bars 226 to 230
-	
-	
-	
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	
 	
 % Bars 246 to 250
 	
@@ -282,59 +284,62 @@ musicOboeIMvtIII = \relative c''' {
 	
 	
 	
+	
 	\ni \voiceTwo R2.
-	R
 % Bars 266 to 270
+	R
 	R
 	R \no \oneVoice 
 	d'2(\p a4
 	e2 fis4
-	g_\dimsempre a b
 % Bars 271 to 275
+	g_\dimsempre a b
 	a e g)
 	fis( a b 
 	a e g)
 	fis( a b
-	a e g)
 % Bars 276 to 280
-	a( e g
 	a e g)
 	a( e g
 	a e g)
-	a\pp-- a-- a--
+	a( e g
+	a e g)
 % Bars 281 to 285
-	a a a\<
-	a a a
-	a a a\!
-	a\f a a
-	a a a
+	a\pp-- a-- a--
+	a-- a-- a--\<
+	a-- a-- a--
+	a-- a-- a--\!
+	a--\f a-- a--
 % Bars 286 to 290
-	a a a
-	a a a \bar "||" \key d \minor
+	a-- a-- a--
+	a-- a-- a--
+	a-- a-- a-- \section \key d \minor
 	a'2\f-> a4->~
 	a a2->
-	g4-.\fz f-. f-.
 % Bars 291 to 295
+	g4-.\fz f-. f-.
 	g-.\fz f-. f-.
 	f2-> f4~->
 	f f2->
 	f4\fz-. f-. f-.
-	f-.\fz f-. f-.
 % Bars 296 to 300
+	f-.\fz f-. f-.
 	fis( g8) r fis4(
 	g8) r fis4( g8) r
 	a4-. e8( dis e4)
 	f!-. d!8( cis d4)
-	fis4( g8) r fis4(
 % Bars 301 to 305
+	fis4( g8) r fis4(
 	g8) r fis4( g8) r
 	a4-. e8( dis e4)
 	f-. d8( cis d4)
 	a'-. a,8( gis a4)
-	d-. d,8( cis d4)
 % Bars 306 to 310
-	d r r \bar "||"
+	d-. d,8( cis d4)
+	d r r \section
 	R2.*16
+	
+	
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -342,36 +347,39 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 321 to 325
 	
 	
+	
 	a''2\p\< a4~
 	a g-.\! f-.
-	a2->\ff g4->~
 % Bars 326 to 330
+	a2->\ff g4->~
 	g f2->
 	r4 f-.\p r
 	f-. r f-.
-	r c r
-	c r c
+	r c-. r
 % Bars 331 to 335
-	r f r
-	f r f
-	r c r
-	c r c
-	r d r
+	c-. r c-.
+	r f-. r
+	f-. r f-.
+	r c-. r
+	c-. r c-.
 % Bars 336 to 340
-	d r d
-	r a r
-	a r a
-	r d r
-	d r d
+	r d-. r
+	d-. r d-.
+	r a-. r
+	a-. r a-.
+	r d-. r
 % Bars 341 to 345
-	r a r
-	a r a
+	d-. r d-.
+	r a-. r
+	a-. r a-.
 	f!8( g a\< bes c cis
 	d4)\! g4-.\f f-.
-	a2->\ff bes4->~
 % Bars 346 to 350
+	a2->\ff bes4->~
 	bes a2->
 	R2.*16
+	
+	
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -379,95 +387,96 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 361 to 365
 	
 	
+	
 	g4-.\p f-. ees-.
 	d-. c-. bes-.
-	f'->-. f,-. a-.
 % Bars 366 to 370
+	f'->-. f,-. a-.
 	c-. bes8( a \once \stemUp bes4)
 	R2.*2
 	
 	f'4-.\p f,-. a-.
-	c-. bes8( a \once \stemUp bes4)
 % Bars 371 to 375
+	c-. bes8( a \once \stemUp bes4)
 	R2.*2
 	
 	d4-.\p d,-. fis-.
 	a-. g8( fis g4)
-	R2.*4
 % Bars 376 to 380
+	R2.*4
 	
 	
 	
 	e'4(\pp f!) e(
-	f) e( f)
 % Bars 381 to 385
+	f) e( f)
 	ges-. f8( e! f4)
 	ges-. f8( e f4)
 	R2.*2
 	
-	r4 ees-.\pp r
 % Bars 386 to 390
+	r4 ees-.\pp r
 	ees-. r ees-.
 	r f2
 	r4 f2_\pocoapococresc
 	r4 f r
-	f r f
 % Bars 391 to 395
+	f r f
 	r4 g2
 	r4 g2
 	r4 fis2
 	r4 gis2
-	r4 ais2
 % Bars 396 to 400
-	r4 fis2
+	r4 ais2
+	r4 fis2->
 	f!4-.\f\< ees8( d ees4)
 	f-. ees8( d ees4)
 	f-. ees8( d ees4)
-	f-. ees8( d ees4)\!
 % Bars 401 to 405
+	f-. ees8( d ees4)\!
 	g4-. g-. g-.
 	g2.\fz
 	fis\fz
 	e!\fz
-	ees\fz
 % Bars 406 to 410
+	ees\fz
 	ges4-. ges-. ges-.
 	f2->\ff f4->~
 	f f2->
 	g!2-> g4->~
-	g g2->
 % Bars 411 to 415
+	g g2->
 	a!2_\ffgrandioso a4~
 	a a2
 	a a4~
 	a a2
-	gis4( a) gis(
 % Bars 416 to 420
+	gis4( a) gis(
 	a) gis( a)
 	bes-. a8( gis a4)
 	bes-. a8( gis a4)
 	fis(\fz g!) fis(\fz
-	g) fis(\fz g)
 % Bars 421 to 425
+	g) fis(\fz g)
 	a-. e8( dis e4)
 	f!-. d!8( cis d4)
 	fis(\fz g) fis(\fz
 	g) fis(\fz g)
-	a-. e8( dis e4)
 % Bars 426 to 430
-	f-. d8( cis d4)
+	a-. e8( dis e4)
+	f-. d!8( cis d4)
 	a'-. a,(-> b8 cis)
 	d4-. f-. d-.
 	d-. f-. d-.
-	a-. g'->( f8 e)
 % Bars 431 to 435
+	a-. g'->( f8 e)
 	d4-. f-. d-.
 	d-. f-. d-.
 	a'-. a-. a-.
 	f-. a-. f-.
+% Bars 436 to 440
 	f-. a-. f-.
-% Bars 436 to 438
 	f r r
 	f r r
-	f r r \bar "|."
+	f r r \fine
 }
