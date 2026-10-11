@@ -116,9 +116,9 @@
 %			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
-%					\new Staff {
-%						\timeMvtIII \nameStaffIXMvtIII \musicViolinoIMvtIII
-%					}
+					\new Staff {
+						\timeMvtIII \nameStaffIXMvtIII \musicViolinoIMvtIII
+					}
 %					\new Staff {
 %						\timeMvtIII \nameStaffXMvtIII \musicViolinoIIMvtIII
 %					}
