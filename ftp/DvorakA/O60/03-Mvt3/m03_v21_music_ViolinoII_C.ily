@@ -88,19 +88,19 @@ musicViolinoIIMvtIII = \relative c' {
 		a2->\ff f4(->
 		g) f2->
 		R2.*4
-		
+	
 % Bars 66 to 70
-		
-		
+	
+	
 		c4->\f e-. d-.
 		c-. b-. a-.
 		<g, g'>2->-\tweak X-offset #-0.5 \f q4~->
 % Bars 71 to 75
 		q q2->
 		R2.*4
-		
-		
-		
+	
+	
+	
 % Bars 76 to 80
 		bes'!2\p\< bes4~
 		bes ees-. d-.\!
@@ -108,28 +108,28 @@ musicViolinoIIMvtIII = \relative c' {
 		ees d2
 		R2.*4
 % Bars 81 to 85
-		
-		
-		
+	
+	
+	
 		f2\p\< ees4~
 		ees d2\f
 % Bars 86 to 90
 		R2.*2
-		
+	
 		d2\f c4~
 		c bes2
 		R2.*2
 % Bars 91 to 95
-		
+	
 		bes2\p bes4~
 		bes bes2
 		c4-._\dimmarkup bes-. bes-.
 		c-. bes-. bes-.
 % Bars 96 to 100
 		R2.*4
-		
-		
-		
+	
+	
+	
 		ges2\ff ges4~
 % Bars 101 to 105
 		ges ges2
@@ -146,7 +146,7 @@ musicViolinoIIMvtIII = \relative c' {
 % Bars 111 to 115
 		gis4-. gis2->
 		ais4-. ais2->
-		c!4-. c2->
+		c4-. c2->
 		des4-.\f\< c-. c-.
 		des-. c-. c-.
 % Bars 116 to 120
@@ -154,10 +154,10 @@ musicViolinoIIMvtIII = \relative c' {
 		des-. c-. c-.\!
 		<a, cis'>-._\semprecresc q-. q-.
 		q-. q-. q-.
-		q q q
+		q-. q-. q-.
 % Bars 121 to 125
-		q q q
-		q q q
+		q-. q-. q-.
+		q-. q-. q-.
 		<ees' c'!>-. q-. q-.
 		cis'-.\ff cis8( bis cis4)
 		cis-. cis8( bis cis4)
@@ -185,8 +185,8 @@ musicViolinoIIMvtIII = \relative c' {
 		a-. a-. a-.
 		a-. a2->
 		<f a>4-. q-. q-.
-	}
 % Bars 146 to 150
+	}
 	\alternative {
 		{
 			q r r
@@ -198,67 +198,73 @@ musicViolinoIIMvtIII = \relative c' {
 	<d a'>
 	q
 	q\p
-	q_\dimmarkup
 % Bars 151 to 155
+	q_\dimmarkup
 	q
 	q \section \key d \major
 	\repeat volta 2 {
-		\trio fis!4\pp r r
+		\trio fis4\pp r r
 		R2.*15
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 % Bars 166 to 170
-		
-		
-		
+	
+	
+	
+	
 		<a, fis' d'>4^\pizz-\tweak X-offset #0.5 \fz\arpeggio r r
-		q\arpeggio\> r r
 % Bars 171 to 175
+		q\arpeggio\> r r
 		q\!\arpeggio r r
 		q\pp\arpeggio r r
 		R2.*11
+	
 % Bars 176 to 180
 	
 % Bars 181 to 185
-		
-		
-		
+	
+	
+	
+	
 		g'4\p^\pizz bes a
-		g r fis!
 % Bars 186 to 190
+		g r fis
 		e r d
-		cis! r d
+		cis r d
 		e r fis
 		g_\dimmarkup r fis
-		e r d
 % Bars 191 to 195
+		e r d
 		cis r d
 		e r fis
 		d\pp r r
 		R2.*4
-		
 % Bars 196 to 200
-		
-		
+	
+	
+	
 		e2.\ppp(^\arco
 		fis
+% Bars 201 to 205
 		g)
 	}
-% Bars 201 to 205
 	\acciaccatura a8 a'2.\p(~
 	a
 	g~
 	g)
-	fis(~
 % Bars 206 to 210
+	fis(~
 	fis
 	e~
 	e)
 	d4 r r
-	R2.*19
 % Bars 211 to 215
+	R2.*19
+	
+	
+	
 	
 % Bars 216 to 220
 	
@@ -268,51 +274,52 @@ musicViolinoIIMvtIII = \relative c' {
 	
 	
 	
+	
 	fis2.\pp(~
-	fis
 % Bars 231 to 235
+	fis
 	g~
 	g4 fis e)
 	\acciaccatura fis8( b2.)~
 	b
-	g2( fis4
 % Bars 236 to 240
+	g2( fis4
 	e d cis)
 	\acciaccatura fis8( b,2.)~
 	b~
 	b~
-	b~
 % Bars 241 to 245
+	b~
 	b2( fis4
 	cis2 dis4
 	e fis g
 	fis cis e)
-	d!( cis b
 % Bars 246 to 250
+	d!( cis b
 	e d cis)
 	d( cis b
 	e d cis)
 	b r r
-	R2.
 % Bars 251 to 255
+	R2.
 	b'4(-\offset X-offset #1.3 \pp cis8 ais b4)
 	R2.*4
 	
 	
-	
 % Bars 256 to 260
+	
 	a'2(\p fis4
 	d2\< a4)
 	g2( b4
-	e2 g4)~\!
-	g\mf fis( d
+	e2 g4~\!
 % Bars 261 to 265
+	g)\mf fis( d
 	a2 fis4)
 	e2( g4
-	b2 e4)~
-	e d( a
-	e2_\dimmarkup fis4)
+	b2 e4~
+	e) d( a
 % Bars 266 to 270
+	e2_\dimmarkup fis4)
 	g( a b 
 	a e g)
 	fis\pp r r
@@ -325,190 +332,191 @@ musicViolinoIIMvtIII = \relative c' {
 	
 	
 	
+	
 	\acciaccatura a8( a'2\p) d,4~_\crescmarkup
-	d a2
 % Bars 286 to 290
+	d a2
 	d2 a4~
 	a d,2\f \section \key d \minor
 	<a' f'>2->\f q4~->
 	q q2->
-	\dynEO #'(0 . 1) g'4-.\fz f8( e f4)
 % Bars 291 to 295
+	\dynEO #'(0 . 1) g'4-.\fz f8( e f4)
 	\dynEO #'(0 . 1) g-.\fz f8( e f4)
 	<c f>2-> q4->~
 	q q2->
 	d4-.\fz c-. c-.
-	d-.\fz c-. c-.
 % Bars 296 to 300
+	d-.\fz c-. c-.
 	a4( bes8) r a4(
 	bes8) r a4( bes8) r
 	a4-. cis-. cis-.
 	d-. f,-. f-.
-	a4( bes8) r a4(
 % Bars 301 to 305
+	a4( bes8) r a4(
 	bes8) r a4( bes8) r
 	a4-. cis-. cis-.
 	d-. f,-. f-.
 	a-. a,-. a-.
-	d-. d8( cis d4)
 % Bars 306 to 310
+	d-. d8( cis d4)
 	d r r \section
 	c'!2(-\offset X-offset 0.5 _\pdolce f4~
 	f e f)
 	g2( c,4~
-	c2.)
 % Bars 311 to 315
+	c2.)
 	c2( f4~
 	f e f)
 	g2( c,4~
 	c2.)
-	a2( d4~
 % Bars 316 to 320
+	a2( d4~
 	d cis d)
 	e2( a,4~
 	a2.)
 	a2( d4~
-	d cis d)
 % Bars 321 to 325
+	d cis d)
 	e2( a,4~
 	a2.)
 	a2\< d4~
 	d e-.\! f-.
-	a2->\ff g4->~
 % Bars 326 to 330
+	a2->\ff g4->~
 	g f2->
 	c2-\offset X-offset 0.5 \p c4~
 	c c2
 	a4( bes) a(\<
-	bes)\! bes(\> c)\!
 % Bars 331 to 335
+	bes)\! bes(\> c)\!
 	c2 c4~
 	c c2
 	a4(\< bes) a(\!
 	bes) bes(\> c)\!
-	a2 a4~
 % Bars 336 to 340
+	a2 a4~
 	a a2
 	fis4( g) fis(\<
 	g)\! g(\> a)\!
 	a2 a4~
-	a a2
 % Bars 341 to 345
+	a a2
 	fis4( g)\< fis(
 	g)\! g(\> a)\!
 	f!8( g a\< bes c cis
 	d4)\! g4-.\f f-.
-	\dynEO #'(0 . 2) a2->\ff f4(-> 
 % Bars 346 to 350
+	\dynEO #'(0 . 2) a2->\ff f4(-> 
 	g) f2->
 	R2.*4
 	
 	
-	
 % Bars 351 to 355
+	
 	c4->\f e-. d-.
 	c-. b-. a-.
 	<g, g'>2^> q4^>~
 	q q2^>
-	R2.*4
 % Bars 356 to 360
+	R2.*4
 	
 	
 	
 	bes'!2\p\< bes4~
-	bes ees4-. d-.\!
 % Bars 361 to 365
+	bes ees4-. d-.\!
 	f2->\f ees4~
 	ees d2->
 	R2.*4
 	
-	
 % Bars 366 to 370
+	
 	
 	f2\p\< ees4~
 	ees\! d2\f
 	R2.*2
-	
 % Bars 371 to 375
+	
 	d2\f c4~
 	c bes2
 	R2.*2
 	
-	bes2\p bes4~
 % Bars 376 to 380
+	bes2\p bes4~
 	bes bes2
 	c4-._\dimmarkup bes-. bes-.
 	c-. bes-. bes-.
 	R2.*4
-	
 % Bars 381 to 385
+	
 	
 	
 	ges2\ff ges4~
 	ges ges2
-	bes2\pp bes4~
 % Bars 386 to 390
+	bes2\pp bes4~
 	bes bes2
 	d4-. d2
 	d4-. d2_\pocoapococresc
 	c2 c4~
-	c c2
 % Bars 391 to 395
+	c c2
 	e!4-. e2->
 	e4-. e2->
 	fis4-. fis2->
 	gis4-. gis2->
-	ais4-. ais2->
 % Bars 396 to 400
-	c!4-. c2->
+	ais4-. bes2->
+	c4-. c2->
 	des4-.\f\< c-. c-.
 	des-. c-. c-.
 	des-. c-. c-.
-	des-. c-. c-.\!
 % Bars 401 to 405
+	des-. c-. c-.\!
 	<a, cis'>-._\semprecresc q-. q-.
-	q q q
-	q q q
-	q q q
-	q q q
+	q-. q-. q-.
+	q-. q-. q-.
+	q-. q-. q-.
 % Bars 406 to 410
+	q-. q-. q-.
 	<ees' c'!>4-. q-. q-.
 	cis'-.\ff cis8( bis cis4)
 	cis-. cis8( bis cis4) 
 	cis-. cis8( bis cis4) 
-	cis-. cis8( bis cis4) 
 % Bars 411 to 415
+	cis-. cis8( bis cis4) 
 	<f,! a!>2_\ffgrandioso q4~
 	q q2
 	q2 q4~
 	q q2
-	<c f>2 q4~
 % Bars 416 to 420
+	<c f>2 q4~
 	q q2
 	<d f>4-> <c f>-. q-.
 	<d f>4-> <c f>-. q-.
 	a4(\fz bes) a(\fz
-	bes) a(\fz bes)
 % Bars 421 to 425
+	bes) a(\fz bes)
 	a-. cis-. a-.
 	a-. a-. a-.
 	a(\fz bes) a(\fz
 	bes) a(\fz bes)
-	a-. cis-. a-.
 % Bars 426 to 430
+	a-. cis-. a-.
 	a-. a-. a-.
 	a-. a2->
 	<f a>4-. q-. q-.
 	q-. q-. q-.
-	a-. a2->
 % Bars 431 to 435
+	a-. a2->
 	<f a>4-. q-. q-.
 	q-. q-. q-.
 	a'-. a,(-> b8 cis)
 	d4-. f-. d-.
+% Bars 436 to 440
 	d-. f-. d-.
-% Bars 436 to 438
 	d r r
-	<d, a' f'> r r
-	q r r \bar "|."
+	<d, a' f'>\arpeggio r r
+	q\arpeggio r r \bar "|."
 }
