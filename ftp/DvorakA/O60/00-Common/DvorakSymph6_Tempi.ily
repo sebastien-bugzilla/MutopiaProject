@@ -152,71 +152,82 @@ tempiMvtIII = {
 tempiMvtIV = {
 	\tempo \markup {
 		\concat {
-			"Allegro con spirito. (M.M. "
-			\smaller \general-align #Y #DOWN \note {2} #0.75
-			" = 84.)"
+			"Allegro con spirito"
+			\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+			" = 84"
 		}
 	}
 	\partial 4 s4
-	s1*12 s2 
-	\tempo "accelerando poco a poco" % bar 13.5
+	s1*12 s2
+	% bar 13.5
+	\tempo "accelerando poco a poco" 
 	s2 s1*11
-	\tempo \markup { % bar 25
+	% bar 25
+	\tempo \markup {
 		\concat {
-			"(M.M. "
-			\smaller \general-align #Y #DOWN \note {2} #0.75
-			" = 100.)"
+			\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+			" = 100"
 		}
 	}
 	s1*13
-	\tempo "Tempo I." % bar 38
+	% bar 38
+	\tempo "Tempo I. grandioso"
 	s1*15
-	\tempo "accelerando poco a poco" % bar 53
+	% bar 53
+	\tempo "accelerando poco a poco" 
 	s1*16
-	\tempo \markup { % bar 69
+	% bar 69
+	\tempo \markup {
 		\concat {
-			"(M.M. "
-			\smaller \general-align #Y #DOWN \note {2} #0.75
-			" = 100.)"
+			\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+			" = 100"
 		}
 	}
 	s1*225
-	\tempo "Poco sostenuto." % bar 294
+	% bar 294
+	\tempo "Poco sostenuto" 
 	s1*8 \grace {s8}
-	\tempo "ritard." % bar 302
+	% bar 302
+	\tempo "ritard." 
 	s1*4
-	\tempo "in tempo" % bar 306
+	% bar 306
+	\tempo "in tempo" 
 	s1*12
-	\tempo \markup { % bar 318
+	% bar 318
+	\tempo \markup {
 		\concat {
-			"("
-			\smaller \general-align #Y #DOWN \note {2} #0.75
-			" = 84.)"
+			"tranquillo "
+			\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+			" = 84"
 		}
 	}
 	s1*16
-	\tempo "accelerando poco a poco" % bar 334
+	% bar 334
+	\tempo "accelerando poco a poco" 
 	s1*10
-	\tempo \markup { % bar 344
+	% bar 344
+	\tempo \markup {
 		\concat {
-			"("
-			\smaller \general-align #Y #DOWN \note {2} #0.75
-			" = 100.)"
+			\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+			" = 100"
 		}
 	}
 	s1*96
+	% bar 440
 	\tempoXoffset #2
-	\tempo \markup { % bar 440
+	\tempo \markup {
 		\concat {
-			"Presto. ("
-			\smaller \general-align #Y #DOWN \note {2} #0.75
-			" = 132.)"
+			"Presto "
+			\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+			" = 132"
 		}
 	}
 	s1*109
-	\tempo "ritard." % bar 549
+	% bar 549
+	\tempo "ritard." 
 	s1*2
-	\tempo "in tempo" % bar 551
+	% bar 551
+	\tempo "in tempo" 
 	s1*12 s2 s4
 }
 %###############################################################################

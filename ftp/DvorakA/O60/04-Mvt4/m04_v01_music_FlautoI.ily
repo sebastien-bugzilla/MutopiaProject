@@ -37,7 +37,7 @@ musicFlautoIMvtIV = \relative c''' {
 	
 	
 	
-	e'1~\f\<
+	e'1->~\ff\<
 	e\!
 % Bars 36 to 40
 	a-^~
@@ -50,7 +50,7 @@ musicFlautoIMvtIV = \relative c''' {
 	fis( a8 g fis4 e)
 	d( cis8 b e4 a,)
 	b( gis a b)
-	c( b8 a d4 g,)
+	c( b8 a d4 g,!)
 % Bars 46 to 50
 	a( fis g a)
 	g8-. r r4 r2
@@ -128,7 +128,7 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 131 to 135
 	a) gis( a gis
 	a) b cis dis
-	dis r r2
+	dis-. r r2
 	e4-. r r2
 	d!4-. r g-. r
 % Bars 136 to 140
@@ -178,7 +178,7 @@ musicFlautoIMvtIV = \relative c''' {
 	a4 r r2
 % Bars 186 to 190
 	R1
-	r2 g!\pp~
+	r2 g\pp~
 	g1~
 	g~
 	g \mark \default
@@ -197,7 +197,7 @@ musicFlautoIMvtIV = \relative c''' {
 	r4 b-. r e-.
 	R1
 % Bars 206 to 210
-	r4 b-. r e-.
+	r4 b-.\brack\mf r e-.
 	g4(\ff f8 e) f4( e8 d)
 	c4 r d r
 	e r r2
@@ -292,11 +292,11 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 286 to 290
 	<< a1 {s4\< s s s\!}>>
 	e4 r a\ff r8 e-.
-	cis-. b-. a-. e-. a4 r8 e'
-	cis b a e a4 r8 a'
-	f e d a d4 r8 a'
+	cis-. b-. a-. e-. a4 r8 e'-.
+	cis-. b-. a-. e-. a4 r8 a'-.
+	f-. e-. d-. a-. d4 r8 a'-.
 % Bars 291 to 295
-	f e d a d4 r8 a'
+	f-. e-. d-. a-. d4 r8 a'
 	f4-. e-. d-. r8 a'
 	f4-. e-. d-. r8 a'\ff
 	f2-> e->
@@ -360,12 +360,12 @@ musicFlautoIMvtIV = \relative c''' {
 	R1
 	d4\f r r2
 	fis2( e4 d
-	cis) cis( d e)~
-	e e( fis g)~
+	cis) cis( d e~
+	e) e( fis g~
 % Bars 356 to 360
-	g g( a b)~
-	b b( a g)~
-	g r cis, r
+	g) g( a b~
+	b) b( a g~
+	g) r cis, r
 	cis r cis r
 	cis r r2
 % Bars 361 to 365
@@ -515,20 +515,20 @@ musicFlautoIMvtIV = \relative c''' {
 	ais-> b->
 	e,-> a!->
 % Bars 501 to 505
-	d,4 r a'2->~
-	a4( g8 a g4 fis)
+	d,4 r a'2->(~
+	a4 g8 a g4 fis)
 	fis( a g2
-	fis4) r a2~
-	a4( g8 a g4 fis)
+	fis4) r a2(~->
+	a4 g8 a g4 fis)
 % Bars 506 to 510
 	fis( a g2
 	fis4) r r2
 	R1
-	b,4 r d2->~
-	d4( cis8 d cis4 b)
+	b,4 r d2->(~
+	d4 cis8 d cis4 b)
 % Bars 511 to 515
-	e r g2->~
-	g4( fis8 g fis4 e)
+	e r g2->(~
+	g4 fis8 g fis4 e)
 	g( fis8 g fis4 e)
 	a( g8 a g4 fis)
 	b( a8 b a4 g)
@@ -543,7 +543,7 @@ musicFlautoIMvtIV = \relative c''' {
 	b4 a8( b a4 g)
 	b r d2->~
 	d4 cis8( d cis4 b)
-	a r a'2~
+	a r a'2~\brack\ff
 % Bars 526 to 530
 	a4 g8( a g4) fis-.
 	fis-. e8( fis e4) d-.

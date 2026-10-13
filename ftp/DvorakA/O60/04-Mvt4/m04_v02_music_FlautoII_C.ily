@@ -33,12 +33,12 @@ musicFlautoIIMvtIV = \relative c'' {
 	
 	
 	
-	g1~\f\<
+	g1~->\ff\<
 	<<g {s4 s s s\!}>>
 % Bars 36 to 40
 	cis1-^~
 	cis2. cis4-. \mark \default
-	d e d a
+	d( e d a)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
@@ -46,7 +46,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	fis( a8 g fis4 e)
 	d( cis8 b e4 a,)
 	b( gis a b)
-	c( b8 a d4 g,)
+	c( b8 a d4 g,!)
 % Bars 46 to 50
 	a( fis g a)
 	g8-. r r4 r2
@@ -113,23 +113,23 @@ musicFlautoIIMvtIV = \relative c'' {
 	r2 cis2\ff~ 
 	cis4 b8( cis b4 a)
 	a( cis) b2
-	a4-. cis b2
+	a4-. cis-. b2->
 	a4( cis) b2
 % Bars 126 to 130
-	a4 cis b2
-	a4 fis' e2->
+	a4-. cis-. b2->
+	a4( fis') e2->
 	d4( fis) e2->~
 	e4 d2 cis4~
 	cis b( a gis
 % Bars 131 to 135
 	fis) eis( fis eis
 	fis) gis a bis
-	bis r r2
+	bis-. r r2
 	cis4-. r r2
 	b!4-. r e-. r
 % Bars 136 to 140
 	r e-. d-. a-.
-	cis-. r gis r
+	cis-. r gis-. r
 	cis-. r b( gis)
 	a-. e-. a2->
 	b4-. e,-. b'2->
@@ -137,8 +137,8 @@ musicFlautoIIMvtIV = \relative c'' {
 	cis4-. e,-. cis'2->
 	d4-. d,-. d'2->
 	d4-. d,-. d'2->
-	d4-. f, d'2->
-	d4-. f,4 d'2->
+	d4-. f,-. d'2->
+	d4-. f,4-. d'2->
 % Bars 146 to 150
 	d4\f r r2
 	R1*20
@@ -168,7 +168,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	a-. r gis-. r
 % Bars 181 to 185
 	fis-. r r2
-	gis4 r r2
+	gis4-. r r2
 	a1\fp\>~
 	a~
 	a4\! r r2
@@ -251,9 +251,9 @@ musicFlautoIIMvtIV = \relative c'' {
 	\tupletYOff #5.5 \tuplet 6/4 1 {fis4( a c e d c)}\mark \default
 	b2 r
 	R1
-	\omitTupletNumber \tuplet 6/4 1 { r4 a\p\< c ees d c\!}
+	\omitTupletNumber \tuplet 6/4 1 { r4 a(\p\< c! ees! d c\!}
 % Bars 256 to 260
-	bes4\f r r2
+	bes4)\f r r2
 	R1*8
 % Bars 261 to 265
 	
@@ -288,11 +288,11 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 286 to 290
 	c(\< cis! d dis)\!
 	e4 r a\ff r8 e-.
-	cis-. b-. a-. e-. a4 r8 e'
-	cis b a e a4 r8 a'
-	f e d a d4 r8 a'
+	cis-. b-. a-. e-. a4 r8 e'-.
+	cis-. b-. a-. e-. a4 r8 a'-.
+	f-. e-. d-. a-. d4 r8 a'-.
 % Bars 291 to 295
-	f e d a d4 r8 a'
+	f-. e-. d-. a-. d4 r8 a'
 	f4-. e-. d-. r8 a'
 	f4-. e-. d-. r8 a'\ff
 	f2-> e->
@@ -344,10 +344,10 @@ musicFlautoIIMvtIV = \relative c'' {
 	cis'1\fp
 	d\fp
 	e\fp^(
-	fis8)-. r cis4\f d e
-	d ais2.->~
+	fis8)-. r cis4(->\f d e
+	d) ais2.->~
 % Bars 346 to 350
-	ais4 b( c d
+	ais4 b(-> c d
 	c) gis2.->~
 	gis4 a(-> b c
 	b4) a(-> b c
@@ -356,12 +356,12 @@ musicFlautoIIMvtIV = \relative c'' {
 	R1
 	b4\f r r2
 	d2( cis4 b
-	a) a( b cis)~
-	cis cis( d e)~
+	a) a( b cis~
+	cis) cis( d e~
 % Bars 356 to 360
-	e e( fis g)~
-	g g( fis e)~
-	e r cis r
+	e) e( fis g~
+	g) g( fis e~
+	e) r cis r
 	cis r cis r
 	cis r r2
 % Bars 361 to 365
@@ -404,7 +404,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	cis4->\p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
 % Bars 396 to 400
-	cis'4->\p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
+	cis'4-> \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
 	fis'4->\mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2
@@ -419,7 +419,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	g2-> g->
 	g2.-> a8( b)
 	a4\fz r d,\fz d-.
-	d\fz d cis\fz a
+	d\fz d-. cis\fz a-.
 	d r r2
 % Bars 411 to 415
 	R1*7
@@ -503,48 +503,48 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 496 to 500
 	d-> cis->
 	dis-> e->
-	fis d->
+	fis-> d->
 	fis-> fis->
-	e e->
+	e-> e->
 % Bars 501 to 505
-	d4 r fis2->~
-	fis4( e8 fis e4 d)
+	d4 r fis2->(~
+	fis4 e8 fis e4 d)
 	d( fis e2
-	d4) r fis2~
-	fis4( e8 fis e4 d)
+	d4) r fis2(~->
+	fis4 e8 fis e4 d)
 % Bars 506 to 510
 	d( fis e2
 	d4) r r2
 	R1
-	g,4 r b2->~
-	b4( a8 b a4 g)
+	g,4 r b2->(~
+	b4 a8 b a4 g)
 % Bars 511 to 515
-	c r e2->~
-	e4( d8 e d4 c)
+	c r e2->(~
+	e4 d8 e d4 c)
 	e( d8 e d4 c)
 	fis( e8 fis e4 d)
 	g( fis8 g fis4 e)
 % Bars 516 to 520
-	\shape #'((0 . -3)(0 . 1)(0 . 1)(0 . -3)) Slur a( g8 a g4 fis)
-	d4 b-. cis!-> a-.
+	a( g8 a g4 fis)
+	d4-> b-. cis!-> a-.
 	b-> g-. a-> fis-.
-	d' b-. cis-> a-.
+	d'-> b-. cis-> a-.
 	b-> g-. a-> fis-. \mark \default
 % Bars 521 to 525
 	b r g2->~
 	g4 fis8( g fis4 e)
 	g r b2->~
 	b4 a8( b a4 g)
-	a r a2~
+	a r a2~\brack\ff
 % Bars 526 to 530
 	a4 a-. a-. a-.
 	a-. a-. a-. a-.
-	a a a a
-	a a a a
-	a a a a
+	a-. a-. a-. a-.
+	a-. a-. a-. a-.
+	a-. a-. a-. a-.
 % Bars 531 to 535
-	a a a a
-	a-. a-. a r
+	a-. a-. a-. a-.
+	a-. a-. a-. r
 	R1*10
 % Bars 536 to 540
 	
@@ -559,7 +559,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	fis e
 	d a
 	d2. d4
-	d2 d->
+	d2-> d->
 % Bars 551 to 555
 	d1-^~
 	d~
@@ -570,10 +570,10 @@ musicFlautoIIMvtIV = \relative c'' {
 	fis e d a' 
 	fis e d a' 
 	fis e d a' 
-	d, r \once \partCombineApart d r
-	\once \partCombineApart d r \once \partCombineApart d r
+	d, r d r
+	d r d r
 % Bars 561 to 563
-	\once \partCombineApart d r r2
-	\once \partCombineApart d4 r  r2
-	\once \partCombineApart d2 r4 \bar "|."
+	d r r2
+	d4 r  r2
+	d2\fermata r4 \bar "|."
 }

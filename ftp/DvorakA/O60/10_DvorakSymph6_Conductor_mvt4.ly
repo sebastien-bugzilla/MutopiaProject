@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperConductors.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
@@ -67,11 +67,11 @@
 	}
 	\score {
 		<<
-			\new StaffGroup <<
+%			\new StaffGroup <<
 				\new Staff <<
-					\new Voice {
-						\formatConductorMvtIV
-					}
+%					\new Voice {
+%						\formatConductorMvtIV
+%					}
 					\new Voice {
 						\tempiMvtIV
 					}
@@ -80,76 +80,76 @@
 						\partCombine \musicFlautoIMvtIV \musicFlautoIIMvtIV
 					}
 				>>
-				\new Staff {
-					\timeMvtIV \nameStaffIIMvtIV
-					\partCombine \musicOboeIMvtIV \musicOboeIIMvtIV
-				}
-				\new Staff {
-					\timeMvtIV \nameStaffIIIMvtIV
-					\partCombine \musicClarinettoIMvtIV \musicClarinettoIIMvtIV
-				}
-				\new Staff {
-					\timeMvtIV \nameStaffIVMvtIV
-					\partCombine \musicFagottoIMvtIV \musicFagottoIIMvtIV
-				}
-			>>
-			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
-					\new Staff {
-						\timeMvtIV \nameStaffVMvtIV
-						\partCombine \musicCornoIMvtIV \musicCornoIIMvtIV
-					}
-					\new Staff {
-						\timeMvtIV \nameStaffVIMvtIV
-						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
-					}
-				>>
-				\new Staff {
-					\timeMvtIV \nameStaffVIIMvtIV
-					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
-				}
-				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
-					\new Staff {
-						\timeMvtIV \nameStaffVIIIMvtIV
-						\partCombine \musicTrombonoIMvtIV \musicTrombonoIIMvtIV
-					}
-					\new Staff {
-						\timeMvtIV \nameStaffIXMvtIV
-						\partCombine \musicTrombonoIIIMvtIV \musicTubaMvtIV
-					}
-				>>
-				\new Staff {
-					\timeMvtIV \nameStaffXMvtIV \musicTimpaniMvtIV
-				}
-			>>
-			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIIMvtIV } <<
-					\new Staff {
-						\timeMvtIV \nameStaffXIMvtIV \musicViolinoIMvtIV
-					}
-					\new Staff {
-						\timeMvtIV \nameStaffXIIMvtIV \musicViolinoIIMvtIV
-					}
-				>>
-				\new Staff {
-					\timeMvtIV \nameStaffXIIIMvtIV \musicViolaMvtIV
-				}
-				\new Staff {
-					\timeMvtIV \nameStaffXIVMvtIV \musicVioloncelloMvtIV
-				}
-				\new Staff {
-					\timeMvtIV \nameStaffXVMvtIV \musicContrabassoMvtIV
-				}
-			>>
+%				\new Staff {
+%					\timeMvtIV \nameStaffIIMvtIV
+%					\partCombine \musicOboeIMvtIV \musicOboeIIMvtIV
+%				}
+%				\new Staff {
+%					\timeMvtIV \nameStaffIIIMvtIV
+%					\partCombine \musicClarinettoIMvtIV \musicClarinettoIIMvtIV
+%				}
+%				\new Staff {
+%					\timeMvtIV \nameStaffIVMvtIV
+%					\partCombine \musicFagottoIMvtIV \musicFagottoIIMvtIV
+%				}
+%			>>
+%			\new StaffGroup <<
+%				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
+%					\new Staff {
+%						\timeMvtIV \nameStaffVMvtIV
+%						\partCombine \musicCornoIMvtIV \musicCornoIIMvtIV
+%					}
+%					\new Staff {
+%						\timeMvtIV \nameStaffVIMvtIV
+%						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
+%					}
+%				>>
+%				\new Staff {
+%					\timeMvtIV \nameStaffVIIMvtIV
+%					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
+%				}
+%				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
+%					\new Staff {
+%						\timeMvtIV \nameStaffVIIIMvtIV
+%						\partCombine \musicTrombonoIMvtIV \musicTrombonoIIMvtIV
+%					}
+%					\new Staff {
+%						\timeMvtIV \nameStaffIXMvtIV
+%						\partCombine \musicTrombonoIIIMvtIV \musicTubaMvtIV
+%					}
+%				>>
+%				\new Staff {
+%					\timeMvtIV \nameStaffXMvtIV \musicTimpaniMvtIV
+%				}
+%			>>
+%			\new StaffGroup <<
+%				\new GrandStaff \with { \nameGrandStaffIIIMvtIV } <<
+%					\new Staff {
+%						\timeMvtIV \nameStaffXIMvtIV \musicViolinoIMvtIV
+%					}
+%					\new Staff {
+%						\timeMvtIV \nameStaffXIIMvtIV \musicViolinoIIMvtIV
+%					}
+%				>>
+%				\new Staff {
+%					\timeMvtIV \nameStaffXIIIMvtIV \musicViolaMvtIV
+%				}
+%				\new Staff {
+%					\timeMvtIV \nameStaffXIVMvtIV \musicVioloncelloMvtIV
+%				}
+%				\new Staff {
+%					\timeMvtIV \nameStaffXVMvtIV \musicContrabassoMvtIV
+%				}
+%			>>
 		>>
 		\header {
 			breakbefore = ##t
 		}
 		\layout {
-			\context {
-				\Score 
-				scriptDefinitions = #my-script-alist
-			}
+%			\context {
+%				\Score 
+%				scriptDefinitions = #my-script-alist
+%			}
 		}
 	}
 }

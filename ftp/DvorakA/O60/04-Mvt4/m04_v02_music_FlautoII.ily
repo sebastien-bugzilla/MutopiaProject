@@ -33,7 +33,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	
 	
 	
-	g1~\f\<
+	g1~->\ff\<
 	<<g {s4 s s s\!}>>
 % Bars 36 to 40
 	cis1-^~
@@ -46,7 +46,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	fis( a8 g fis4 e)
 	d( cis8 b e4 a,)
 	b( gis a b)
-	c( b8 a d4 g,)
+	c( b8 a d4 g,!)
 % Bars 46 to 50
 	a( fis g a)
 	g8-. r r4 r2
@@ -124,7 +124,7 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 131 to 135
 	fis) eis( fis eis
 	fis) gis a bis
-	bis r r2
+	bis-. r r2
 	cis4-. r r2
 	b!4-. r e-. r
 % Bars 136 to 140
@@ -352,12 +352,12 @@ musicFlautoIIMvtIV = \relative c'' {
 	R1
 	b4\f r r2
 	d2( cis4 b
-	a) a( b cis)~
-	cis cis( d e)~
+	a) a( b cis~
+	cis) cis( d e~
 % Bars 356 to 360
-	e e( fis g)~
-	g g( fis e)~
-	e r cis r
+	e) e( fis g~
+	g) g( fis e~
+	e) r cis r
 	cis r cis r
 	cis r r2
 % Bars 361 to 365
@@ -400,7 +400,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	cis4->\p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
 % Bars 396 to 400
-	cis'4->\p \tuplet 3/2 4 {cis8(_\crescmarkup b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
+	cis'4-> \tuplet 3/2 4 {cis8(_\crescmarkup b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
 	fis'4->\mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2
@@ -503,20 +503,20 @@ musicFlautoIIMvtIV = \relative c'' {
 	fis-> fis->
 	e-> e->
 % Bars 501 to 505
-	d4 r fis2->~
-	fis4( e8 fis e4 d)
+	d4 r fis2->(~
+	fis4 e8 fis e4 d)
 	d( fis e2
-	d4) r fis2~
-	fis4( e8 fis e4 d)
+	d4) r fis2(~->
+	fis4 e8 fis e4 d)
 % Bars 506 to 510
 	d( fis e2
 	d4) r r2
 	R1
-	g,4 r b2->~
-	b4( a8 b a4 g)
+	g,4 r b2->(~
+	b4 a8 b a4 g)
 % Bars 511 to 515
-	c r e2->~
-	e4( d8 e d4 c)
+	c r e2->(~
+	e4 d8 e d4 c)
 	e( d8 e d4 c)
 	fis( e8 fis e4 d)
 	g( fis8 g fis4 e)
@@ -531,15 +531,15 @@ musicFlautoIIMvtIV = \relative c'' {
 	g4 fis8( g fis4 e)
 	g r b2->~
 	b4 a8( b a4 g)
-	a r a2~
+	a r a2~\brack\ff
 % Bars 526 to 530
 	a4 a-. a-. a-.
 	\startMeasureCount a-. a-. a-. a-.
-	a a a a
-	a a a a
-	a a a a
+	a-. a-. a-. a-.
+	a-. a-. a-. a-.
+	a-. a-. a-. a-.
 % Bars 531 to 535
-	a a a a \stopMeasureCount
+	a-. a-. a-. a-. \stopMeasureCount
 	a-. a-. a-. r
 	R1*10
 % Bars 536 to 540
