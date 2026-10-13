@@ -1,6 +1,6 @@
     155     417    5105 10_DvorakSymph6_Conductor_mvt1.ly
     141     383    4654 10_DvorakSymph6_Conductor_mvt2.ly
-    147     463    4977 10_DvorakSymph6_Conductor_mvt3.ly
+    147     400    4911 10_DvorakSymph6_Conductor_mvt3.ly
     155     410    5154 10_DvorakSymph6_Conductor_mvt4.ly
     248     596    5466 20_DvorakSymph6_Part01_Flauti.ly
     244     580    5213 20_DvorakSymph6_Part02_Oboi.ly
@@ -181,14 +181,14 @@
     542    1712    8446 03-Mvt3/m03_v20_music_ViolinoI.ily
     522    1449    7227 03-Mvt3/m03_v21_music_ViolinoII_C.ily
     530    1477    7496 03-Mvt3/m03_v21_music_ViolinoII.ily
-    554    1835    8767 03-Mvt3/m03_v22_music_Viola_C.ily
-    534    1762    8583 03-Mvt3/m03_v22_music_Viola.ily
+    559    1849    8829 03-Mvt3/m03_v22_music_Viola_C.ily
+    545    1765    8632 03-Mvt3/m03_v22_music_Viola.ily
     537    1553    7754 03-Mvt3/m03_v23_music_Violoncello_Bassi.ily
-    527    1568    7726 03-Mvt3/m03_v23_music_Violoncello_C.ily
-    531    1536    7618 03-Mvt3/m03_v23_music_Violoncello.ily
+    534    1560    7722 03-Mvt3/m03_v23_music_Violoncello_C.ily
+    534    1526    7601 03-Mvt3/m03_v23_music_Violoncello.ily
     533    1492    6924 03-Mvt3/m03_v24_music_Contrabasso_Bassi.ily
-    493    1366    6380 03-Mvt3/m03_v24_music_Contrabasso_C.ily
-    503    1400    6685 03-Mvt3/m03_v24_music_Contrabasso.ily
+    502    1366    6431 03-Mvt3/m03_v24_music_Contrabasso_C.ily
+    514    1398    6737 03-Mvt3/m03_v24_music_Contrabasso.ily
     579    2150   10547 04-Mvt4/m04_v01_music_FlautiI_C.ily
     587    1957    8729 04-Mvt4/m04_v01_music_FlautiI.ily
     579    1917    8572 04-Mvt4/m04_v02_music_FlautiII_C.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2405   10460 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2408   10495 04-Mvt4/m04_v24_music_Contrabasso.ily
- 115634  334825 1952562 total
+ 115680  334759 1952689 total
