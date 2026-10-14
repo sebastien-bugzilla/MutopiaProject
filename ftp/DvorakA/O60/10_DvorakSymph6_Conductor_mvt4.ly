@@ -80,14 +80,14 @@
 %						\partCombine \musicFlautoIMvtIV \musicFlautoIIMvtIV
 %					}
 %				>>
-				\new Staff {
-					\timeMvtIV \nameStaffIIMvtIV
-					\partCombine \musicOboeIMvtIV \musicOboeIIMvtIV
-				}
 %				\new Staff {
-%					\timeMvtIV \nameStaffIIIMvtIV
-%					\partCombine \musicClarinettoIMvtIV \musicClarinettoIIMvtIV
+%					\timeMvtIV \nameStaffIIMvtIV
+%					\partCombine \musicOboeIMvtIV \musicOboeIIMvtIV
 %				}
+				\new Staff {
+					\timeMvtIV \nameStaffIIIMvtIV
+					\partCombine \musicClarinettoIMvtIV \musicClarinettoIIMvtIV
+				}
 %				\new Staff {
 %					\timeMvtIV \nameStaffIVMvtIV
 %					\partCombine \musicFagottoIMvtIV \musicFagottoIIMvtIV
