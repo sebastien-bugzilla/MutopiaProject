@@ -152,7 +152,7 @@ tempiMvtIII = {
 tempiMvtIV = {
 	\tempo \markup {
 		\concat {
-			"Allegro con spirito"
+			"Allegro con spirito "
 			\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
 			" = 84"
 		}

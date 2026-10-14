@@ -41,7 +41,7 @@ musicOboeIIMvtIV = \relative c'' {
 	g
 	e'->~
 	e
-	e\f\<~
+	e->\<~
 	e
 % Bars 36 to 40
 	e-^\!~
@@ -54,7 +54,7 @@ musicOboeIIMvtIV = \relative c'' {
 	fis( a8 g fis4 e)
 	d( cis8 b e4 a,)
 	\stemUp b( gis a b) \stemNeutral
-	c( b8 a d4 g,)
+	c( b8 a d4 g,!)
 % Bars 46 to 50
 	a( fis g a)
 	g8-. r r4 r2
@@ -130,8 +130,8 @@ musicOboeIIMvtIV = \relative c'' {
 	e4\fz r fis\fz r
 	e\fz r e\fz r \mark \default
 	e r a,2(\fz
-	ais1\fz)~
-	ais2 \once \stemUp b4( a~
+	ais1\fz~
+	ais2) \once \stemUp b4( a~
 % Bars 116 to 120
 	a2) fis4( gis)
 	e4 r r2
@@ -322,11 +322,11 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 286 to 290
 	c(\< cis d dis)\!
 	e4 r a,\ff r8 e'-.
-	cis-. b-. a-. e-. a4 r8 e'
-	cis b a e a4 r8 a'
-	f e d a d4 r8 a'
+	cis-. b-. a-. e-. a4 r8 e'-.
+	cis-. b-. a-. e-. a4 r8 a'-.
+	f-. e-. d-. a-. d4 r8 a'-.
 % Bars 291 to 295
-	f e d a d4 r8 a'
+	f-. e-. d-. a-. d4 r8 a'
 	f4-. e-. d-. r8 a'
 	f4-. e-. d-. r8 a\ff
 	a2-> a->
@@ -359,9 +359,9 @@ musicOboeIIMvtIV = \relative c'' {
 	g2. fis4)
 	g1(~
 	g2._\crescmarkup fis4)
-	g1~
+	g1(~
 % Bars 336 to 340
-	g2.( fis4
+	g2. fis4
 	dis) r r2
 	d!4.\f d8 d4-. g-.
 	fis r r2
@@ -370,7 +370,7 @@ musicOboeIIMvtIV = \relative c'' {
 	cis1\fp
 	d\fp
 	e\fp(
-	fis8)-. r cis4(\f d e
+	fis8)-. r cis4(->\f d e
 	d) ais2.->~
 % Bars 346 to 350
 	ais4 b4(-> c d
@@ -382,12 +382,12 @@ musicOboeIIMvtIV = \relative c'' {
 	gis'4\f r r2
 	e4 r r2
 	d2( cis4 b 
-	a) a( b cis)~
-	cis cis( d e)~
+	a) a( b cis~
+	cis) cis( d e~
 % Bars 356 to 360
-	e e( fis g)~
-	g g( fis e)~
-	e r e r
+	e) e( fis g~
+	g) g( fis e~
+	e) r e r
 	e r e r
 	e r r2
 % Bars 361 to 365
@@ -398,9 +398,9 @@ musicOboeIIMvtIV = \relative c'' {
 	\mark \default
 % Bars 366 to 370
 	d,4\p( a'-\tweak extra-offset #'(0 . 2.8) \< \once \stemUp bes-\tweak extra-offset #'(0 . 2.8) \> g\!
-	fis2 d)~
+	fis2 d~
 	d1~
-	d4 r r2
+	d4) r r2
 	R1*3
 % Bars 371 to 375
 	
@@ -448,8 +448,8 @@ musicOboeIIMvtIV = \relative c'' {
 	d r d,2(\f
 % Bars 411 to 415
 	dis1)->~
-	dis2 e4( d)~
-	d4 d-. b( cis)
+	dis2 e4( d~
+	d4) d-. b( cis)
 	d4 r fis2\f(
 	c'4) b8( c b4 a)
 % Bars 416 to 420
@@ -519,7 +519,7 @@ musicOboeIIMvtIV = \relative c'' {
 	cis-. r r cis-.
 % Bars 471 to 475
 	cis-. r r cis-.
-	fis8( g! fis e fis g fis e)
+	fis8( g fis e fis g fis e)
 	fis( g fis e fis4-. b-.) \mark #11
 	fis-. r r2
 	R1
@@ -534,7 +534,7 @@ musicOboeIIMvtIV = \relative c'' {
 	c-> r r g'_\marc
 	e2-> e->
 	e-> e4-. cis!-.
-	cis1~
+	cis1->~
 % Bars 486 to 490
 	cis2. g'4
 	e2-> e->
@@ -554,20 +554,20 @@ musicOboeIIMvtIV = \relative c'' {
 	cis,-> d->
 	d-> cis->
 % Bars 501 to 505
-	fis4 r fis2->~
-	fis4( e8 fis e4 d)
+	fis4 r fis2->(~
+	fis4 e8 fis e4 d)
 	d( fis e2
-	d4) r fis2~
-	fis4( e8 fis e4 d)
+	d4) r fis2(~->
+	fis4 e8 fis e4 d)
 % Bars 506 to 510
 	d( fis e2
-	d4) r fis2->~
-	fis4( e8 fis e4 d)
+	d4) r fis2->(~
+	fis4 e8 fis e4 d)
 	g r r2
 	R1
 % Bars 511 to 515
-	c,4 r e2->~
-	e4( d8 e d4 c)
+	c,4 r e2->(~
+	e4 d8 e d4 c)
 	e4( d8 e d4 c)
 	fis4( e8 fis e4 d)
 	g( fis8 g fis4 e)
@@ -582,7 +582,7 @@ musicOboeIIMvtIV = \relative c'' {
 	g4 fis8( g fis4 e)
 	g r d2->~
 	d4 cis8( d cis4 b)
-	cis r a2~
+	cis r a2~\brack\ff
 % Bars 526 to 530
 	a4 a-. a-. a-.
 	\startMeasureCount a-. a-. a-. a-.
