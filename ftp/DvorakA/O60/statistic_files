@@ -49,7 +49,7 @@
     667    2308   19026 00-Common/DvorakSymph6_NameVoice.ily
      70     203    1691 00-Common/DvorakSymph6_PaperConductors.ily
      60     163    1442 00-Common/DvorakSymph6_PaperParts.ily
-    554    1485   13028 00-Common/DvorakSymph6_Shortcuts.ily
+    555    1494   13114 00-Common/DvorakSymph6_Shortcuts.ily
    1240    3781   28690 00-Common/DvorakSymph6_Tempi.ily
      33     164    1133 00-Common/DvorakSymph6_timeMvt.ily
     691    1809    9718 01-Mvt1/m01_v01_music_FlautoI_C.ily
@@ -201,10 +201,10 @@
     603    2043    8825 04-Mvt4/m04_v05_music_ClarinettoI.ily
     607    1985    8693 04-Mvt4/m04_v06_music_ClarinettoII_C.ily
     591    1942    8462 04-Mvt4/m04_v06_music_ClarinettoII.ily
-    660    2775   13452 04-Mvt4/m04_v07_music_FagottoI_C.ily
-    656    2639   11430 04-Mvt4/m04_v07_music_FagottoI.ily
-    660    2494   10527 04-Mvt4/m04_v08_music_FagottoII_C.ily
-    644    2443   10682 04-Mvt4/m04_v08_music_FagottoII.ily
+    660    2752   13126 04-Mvt4/m04_v07_music_FagottoI_C.ily
+    656    2639   11493 04-Mvt4/m04_v07_music_FagottoI.ily
+    660    2494   10704 04-Mvt4/m04_v08_music_FagottoII_C.ily
+    644    2443   10752 04-Mvt4/m04_v08_music_FagottoII.ily
     567    1818    9013 04-Mvt4/m04_v09_music_CornoI_C.ily
     579    1759    7973 04-Mvt4/m04_v09_music_CornoI.ily
     567    1689    7733 04-Mvt4/m04_v10_music_CornoII_C.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2405   10460 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2408   10495 04-Mvt4/m04_v24_music_Contrabasso.ily
- 115691  334767 1952820 total
+ 115692  334753 1952890 total

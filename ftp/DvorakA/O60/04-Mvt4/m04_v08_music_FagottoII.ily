@@ -34,9 +34,9 @@ musicFagottoIIMvtIV = \relative c {
 	cis4. cis8 cis4( b)
 	cis4.\mf cis8\< cis4-. \once \stemUp dis-.\!
 % Bars 21 to 25
-	e4.\f e8 e4-. fis-.
+	e!4.\f e8 e4-. fis-.
 	gis4. gis8 gis4-.\< ais-.
-	b4. b8 b4-. cis-.\!
+	b!4. b8 b4-. cis-.\!
 	d! r r2
 	fis4\ff-. d-. b-. f'(
 % Bars 26 to 30
@@ -110,7 +110,7 @@ musicFagottoIIMvtIV = \relative c {
 	g4\f r r2
 	R1
 % Bars 91 to 95
-	fis8(->_\ffmarc e d e fis-> e d e)
+	fis8(->_\ffmarcato e d e fis-> e d e)
 	fis(-> e d e fis-> e d cis)
 	b(-> cis d cis b-> cis d cis)
 	b(-> cis b a gis fis e d)
@@ -129,7 +129,7 @@ musicFagottoIIMvtIV = \relative c {
 	g4\f r r2
 % Bars 106 to 110
 	R1
-	fis8(->_\ffmarc e d e fis-> e d e)
+	fis8(->_\ffmarcato e d e fis-> e d e)
 	fis(-> e d e fis-> e d cis)
 	b(-> cis d cis b-> cis d cis)
 	b->( cis b a gis fis e d)
@@ -140,8 +140,8 @@ musicFagottoIIMvtIV = \relative c {
 	g1~
 	g2 fis4( f)
 % Bars 116 to 120
-	e2 d
-	cis4 r g'2\fz\>~
+	e2 d->
+	cis4 r g'!2\fz\>~
 	g1~
 	g2\! fis4(\< f)
 	e2 dis4(\! d)
@@ -294,7 +294,7 @@ musicFagottoIIMvtIV = \relative c {
 	r2 d''4-.\f r
 % Bars 261 to 265
 	b-. r gis-. r
-	a-. r e'!-. r
+	a-. r e'-. r
 	cis-. r a-. r
 	a-. r c-. r
 	a-. r c-. r
@@ -325,11 +325,11 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 286 to 290
 	\after 8*7 \! f,1\<
 	e4 r a\ff r8 e''-.
-	cis-. b-. a-. e-. a4 r8 e'
-	cis b a e a4 r8 a
-	f' e d a d4 r8 a
+	cis-. b-. a-. e-. a4 r8 e'-.
+	cis-. b-. a-. e-. a4 r8 a-.
+	f'-. e-. d-. a-. d4 r8 a-.
 % Bars 291 to 295
-	f' e d a d4 r8 a
+	f'-. e-. d-. a-. d4 r8 a
 	f'4-. e-. d-. r8 a
 	f'4-. e-. d-. r8 a,\ff
 	d,2-> e->
@@ -378,7 +378,7 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 336 to 340
 	b4.\< b8 b4( a)\!
 	b4.\f b8 b4-. cis!-.
-	d4. d8 d4-. e-.
+	d!4. d8 d4-. e-.
 	fis4. fis8 fis4-. gis-.
 	a4. a8 a4-. b-.
 % Bars 341 to 345
@@ -430,9 +430,9 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 386 to 390
 	c,4\f r r2
 	R1
-	b'8(\ff a g a b a g a)
+	b'8(-\ffbrackmarcato a g a b a g a)
 	b( a g a b a g fis)
-	e( d cis! d e d cis d)
+	e( d cis d e d cis d)
 % Bars 391 to 395
 	e( fis e d cis b a g)
 	fis4\fz d'-. g\fz e-.
@@ -449,10 +449,10 @@ musicFagottoIIMvtIV = \relative c {
 	
 	c,4\f r r2
 	R1
-	b'8(\ff a g a b a g a)  
+	b'8(-\ffbrackmarcato a g a b a g a)  
 	b( a g a b a g fis)
 % Bars 406 to 410
-	e( d cis! d e d cis d)
+	e( d cis d e d cis d)
 	e( fis e d cis b a g)
 	fis4\fz d'-. g\fz e-.
 	a\fz r a,\fz r
@@ -513,14 +513,14 @@ musicFagottoIIMvtIV = \relative c {
 	cis-. r r e-.
 % Bars 456 to 460
 	a-. r r gis-.
-	fis-. r r a,-.\f
+	fis-. r r a,-.
 	\shape #'((0 . -2)(0 . 1)(0 . 1)(0 . 0)) Slur d8( e fis e d cis b cis
 	a b g a fis g e fis)
 	d( e d e fis g fis g
 % Bars 461 to 465
 	a b a b cis d cis b)
 	ais( cis fis e d cis b ais
-	b cis d cis b4) d->\f
+	b cis d cis b4) d->
 	b-> r r a->
 	g-> r r d->
 % Bars 466 to 470
@@ -594,7 +594,7 @@ musicFagottoIIMvtIV = \relative c {
 	g^\ten r
 	e^\ten r
 	e^\ten r
-	a4 r a'2~
+	a4 r a'2~\brack\ff
 % Bars 526 to 530
 	a2. a4-.
 	a-. g8( a g4) fis-.

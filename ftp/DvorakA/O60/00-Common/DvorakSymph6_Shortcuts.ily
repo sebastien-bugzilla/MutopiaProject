@@ -16,6 +16,7 @@ ffmarcato = \markup {\halign #0 \dynamic ff \italic marcato}
 ffpesante = \markup {\dynamic ff \italic pesante}
 ffrinforz = \markup {\dynamic ff \italic rinforz.}
 ffgrandiosoD = #(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "grandioso"))
+ffbrackmarcato = \markup {\dynamic ff \bracket \with-true-dimensions \italic marcato}
 
 %--------------------
 % dynamics ffz
