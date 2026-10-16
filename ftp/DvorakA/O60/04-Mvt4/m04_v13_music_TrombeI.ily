@@ -118,14 +118,14 @@ musicTrombeIMvtIV = \relative c''' {
 % Bars 116 to 120
 	
 % Bars 121 to 125
-	r2 g'->\f~
+	r2 g'-^\f~
 	g1~
 	g~
 	g2. d4~
-	d g2.->~
+	d g2.-^~
 % Bars 126 to 130
 	g d4~
-	d g2.->~
+	d g2.-^~
 	g1~
 	g4 r r2
 	R1*4
@@ -404,7 +404,7 @@ musicTrombeIMvtIV = \relative c''' {
 	c-. r r g-.
 	a-. r r a-.
 	a-. r r b-.
-	b-.-> r r b-.
+	b-> r r b-.
 % Bars 471 to 475
 	b-> r r b-.
 	c-> g c-> g
@@ -422,7 +422,7 @@ musicTrombeIMvtIV = \relative c''' {
 	r2 r4 f'-\tweak X-offset #-2 _\ffmarc
 	f2-> f->
 	f-> f4-. g-.
-	g1~
+	g1~->
 % Bars 486 to 490
 	g2. f4
 	f2-> f->
@@ -472,11 +472,11 @@ musicTrombeIMvtIV = \relative c''' {
 % Bars 526 to 530
 	g2. g4-.
 	\startMeasureCount g-. g-. g-. g-.
-	g g g g
-	g g g g
-	g g g g
+	g-. g-. g-. g-.
+	g-. g-. g-. g-.
+	g-. g-. g-. g-.
 % Bars 531 to 535
-	g g g g \stopMeasureCount 
+	g-. g-. g-. g-. \stopMeasureCount 
 	g-. g-. g-. r
 	R1
 	r2 g->_\ffpesante

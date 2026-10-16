@@ -99,15 +99,15 @@
 %						\timeMvtIV \nameStaffVMvtIV
 %						\partCombine \musicCornoIMvtIV \musicCornoIIMvtIV
 %					}
-					\new Staff {
-						\timeMvtIV \nameStaffVIMvtIV
-						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
-					}
+%					\new Staff {
+%						\timeMvtIV \nameStaffVIMvtIV
+%						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
+%					}
 %				>>
-%				\new Staff {
-%					\timeMvtIV \nameStaffVIIMvtIV
-%					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
-%				}
+				\new Staff {
+					\timeMvtIV \nameStaffVIIMvtIV
+					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
+				}
 %				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
 %					\new Staff {
 %						\timeMvtIV \nameStaffVIIIMvtIV

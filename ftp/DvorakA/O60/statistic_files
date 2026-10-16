@@ -213,10 +213,10 @@
     571    1757    8023 04-Mvt4/m04_v11_music_CornoIII.ily
     575    1825    8273 04-Mvt4/m04_v12_music_CornoIV_C.ily
     565    1698    7913 04-Mvt4/m04_v12_music_CornoIV.ily
-    503    1486    7267 04-Mvt4/m04_v13_music_TrombeI_C.ily
-    518    1394    6064 04-Mvt4/m04_v13_music_TrombeI.ily
-    503    1394    5882 04-Mvt4/m04_v14_music_TrombeII_C.ily
-    519    1401    6111 04-Mvt4/m04_v14_music_TrombeII.ily
+    503    1416    6396 04-Mvt4/m04_v13_music_TrombeI_C.ily
+    518    1394    6096 04-Mvt4/m04_v13_music_TrombeI.ily
+    503    1394    6038 04-Mvt4/m04_v14_music_TrombeII_C.ily
+    519    1401    6145 04-Mvt4/m04_v14_music_TrombeII.ily
     491    1414    7147 04-Mvt4/m04_v15_music_TrombonoI_C.ily
     506    1352    6124 04-Mvt4/m04_v15_music_TrombonoI.ily
     496    1353    5958 04-Mvt4/m04_v16_music_TrombonoII_C.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2405   10460 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2408   10495 04-Mvt4/m04_v24_music_Contrabasso.ily
- 115692  334798 1953015 total
+ 115692  334728 1952366 total
