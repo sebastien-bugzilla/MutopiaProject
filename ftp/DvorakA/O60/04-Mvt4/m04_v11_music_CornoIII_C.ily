@@ -73,11 +73,11 @@ musicCornoIIIMvtIV = \relative c'' {
 	
 	
 	
-	g4->-\tweak extra-offset #'(-2.8 . 0.8) _\fpcresc \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
+	g4->-\tweak extra-offset #'(-2.8 . 0.8) _\fpcresc \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
 % Bars 86 to 90
-	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
-	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
-	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
+	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g}  
+	g4-> \tuplet 3/2 4 {g8 g g}  g4-> \tuplet 3/2 4 {g8 g g}  
+	g4-> \tuplet 3/2 4 {g8 g g}  g4-> \tuplet 3/2 4 {g8 g g}  
 	g4\f r r2
 	R1*5
 % Bars 91 to 95
@@ -157,15 +157,15 @@ musicCornoIIIMvtIV = \relative c'' {
 	e4\fz e r2
 % Bars 171 to 175
 	R1
-	r2 r4 \partCombineApart a,-.
-	d2.-> \partCombineAutomatic r4
-	r2 r4 \partCombineApart a-.
-	d2.-> bes4~
+	r2 r4 a,-.\f
+	d2.-> r4
+	r2 r4 a-.\f
+	d2.-> bes4\fz~
 % Bars 176 to 180
-	bes2. bes4~
-	bes2. b4~
-	b2. b4~
-	b2. \partCombineAutomatic b4-.-\tweak X-offset #-1.3 \ff
+	bes2. bes4\fz~
+	bes2. b4\fz~
+	b2. b4\fz~
+	b2. b4-.-\tweak X-offset #-1.3 \ff
 	b-. r c-. r
 % Bars 181 to 185
 	b-. r r2
@@ -237,7 +237,7 @@ musicCornoIIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	g'2(\p\< \once \tupletUp \tuplet 3/2 2 {c,4\> d ees\!}
+	g'2(\p\< \once \tupletUp \tuplet 3/2 2 {c,4\> d ees!\!}
 	d4) r r2
 	R1*5
 % Bars 256 to 260
@@ -263,9 +263,9 @@ musicCornoIIIMvtIV = \relative c'' {
 	r2 d4\f r
 % Bars 276 to 280
 	R1
-	r2 \partCombineApart e,->
+	r2 e,->
 	e-> e-> 
-	a,-> \partCombineAutomatic a'->
+	a,-> a'->
 	a-> a->
 % Bars 281 to 285
 	d-> d->
@@ -276,8 +276,8 @@ musicCornoIIIMvtIV = \relative c'' {
 % Bars 286 to 290
 	bes(\< b c cis)\!
 	d r g,\ff r8 d'-.
-	b-. a-. g-. d-. g4 r8 d'
-	b a g d g4 r
+	b-. a-. g-. d-. g4 r8 d'-.
+	b-. a-. g-. d-. g4 r
 	R1*3
 % Bars 291 to 295
 	
@@ -339,12 +339,12 @@ musicCornoIIIMvtIV = \relative c'' {
 % Bars 351 to 355
 	d4 d2.\fz~
 	d4 d2.\fz~
-	d4 \partCombineApart d2.^\( 
-	g,4\) \partCombineAutomatic f'2.->\f~
+	d4 \partCombineApart d2.( 
+	g,4) \partCombineAutomatic f'2.->\f~
 	f4 f2.->~
 % Bars 356 to 360
 	f4 f2.->~
-	f4 \partCombineChords f2.->(
+	f4 \partCombineApart f2.->(
 	d4) \partCombineAutomatic r d r
 	d r d r
 	d r r2
@@ -381,13 +381,13 @@ musicCornoIIIMvtIV = \relative c'' {
 % Bars 386 to 390
 	c4\f r r2
 	R1
-	\partCombineApart c2-> c->
-	c2.-> \once \partCombineAutomatic r4
+	c2-> c->
+	c2.-> r4
 	f2-> f->
 % Bars 391 to 395
-	f2.-> \partCombineAutomatic r4
-	c4\fz \once \partCombineApart c-. f\fz \once \partCombineApart c-.
-	e\fz \once \partCombineApart c-. d\fz \once \partCombineApart g,-.
+	f2.-> r4 
+	\partCombineApart c4 c-. f c-.
+	e c-. d \partCombineAutomatic g,-.
 	d'4\p-> \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
 	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
 % Bars 396 to 400
@@ -405,14 +405,14 @@ musicCornoIIIMvtIV = \relative c'' {
 % Bars 406 to 410
 	f2-> f->
 	f2.-> r4
-	c\fz \once \partCombineApart c-. f\fz \once \partCombineApart c-.
-	e\fz \once \partCombineApart c-. d\fz \once \partCombineApart g,-.
+	\partCombineApart c c-. f c-.
+	e c-. d g,-. \partCombineAutomatic
 	e' r c2\f
 % Bars 411 to 415
 	cis1->~
-	cis2 d4( c)~
+	cis2 \partCombineApart d4 c~
 	c c-. a( b!)
-	g r r2
+	g \partCombineAutomatic r r2
 	R1*2
 % Bars 416 to 420
 	
@@ -427,14 +427,14 @@ musicCornoIIIMvtIV = \relative c'' {
 	g1~
 	g2 c4-. c-.
 % Bars 426 to 430
-	g r \partCombineApart bes2->~
+	g r bes2->~
 	bes bes2->~
 	bes bes->~
 	bes des->
 	d!1~
 % Bars 431 to 435
 	d
-	\partCombineAutomatic d~
+	d~
 	d4 r r2
 	R1*5
 	
@@ -443,7 +443,7 @@ musicCornoIIIMvtIV = \relative c'' {
 	
 	
 	\partCombineApart r2 r4 g-._\f \bar "||" \mark \default
-	e-._\f r r d-.
+	e-. r r d-.
 % Bars 441 to 445
 	c-. r r g-.
 	c-. r r c-.
@@ -482,10 +482,10 @@ musicCornoIIIMvtIV = \relative c'' {
 	
 % Bars 481 to 485
 	
-	r2 r4 \partCombineApart f
-	d2-> d->
+	r2 r4 f_\ffmarc
+	\partCombineApart d2-> d->
 	d-> d4-. \partCombineAutomatic d-.
-	d1~
+	d1~->
 % Bars 486 to 490
 	d2. \partCombineApart d4
 	d2-> d->
@@ -505,8 +505,8 @@ musicCornoIIIMvtIV = \relative c'' {
 	e-> c->
 	c-> b->
 % Bars 501 to 505
-	\once \partCombineApart c4 r g'2->~
-	g4( f8 g f4 e)
+	\once \partCombineApart c4 r g'2->(~
+	g4 f8 g f4 e)
 	e( g f2
 	e4) r r2
 	R1*12
@@ -519,7 +519,7 @@ musicCornoIIIMvtIV = \relative c'' {
 	c4\ff c c c
 	c c c c
 	c c c c
-	c c c c
+	c c c c \mark \default
 % Bars 521 to 525
 	c r c2-> 
 	r c->
@@ -529,11 +529,11 @@ musicCornoIIIMvtIV = \relative c'' {
 % Bars 526 to 530
 	g2. g4-.
 	g-. g-. g-. g-.
-	g g g g
-	g g g g
-	g g g g
+	g-. g-. g-. g-.
+	g-. g-. g-. g-.
+	g-. g-. g-. g-.
 % Bars 531 to 535
-	g g g g
+	g-. g-. g-. g-.
 	g-. g-. g-. g\ff
 	c2->_\pesante g->
 	g-> d->

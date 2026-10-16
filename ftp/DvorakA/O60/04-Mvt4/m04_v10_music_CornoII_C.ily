@@ -86,11 +86,11 @@ musicCornoIIMvtIV = \relative c' {
 	
 	
 	
-	a4-> \once \tupletUp \tuplet 3/2 4 {a4.:8} a4-> \tuplet 3/2 4 {a4.:8} 
+	a4-> \once \tupletUp \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
 % Bars 86 to 90
-	a4-> \tuplet 3/2 4 {a4.:8} a4-> \tuplet 3/2 4 {a4.:8} 
-	a4-> \tuplet 3/2 4 {a4.:8} a4-> \tuplet 3/2 4 {a4.:8} 
-	a4-> \tuplet 3/2 4 {a4.:8} a4-> \tuplet 3/2 4 {a4.:8} 
+	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
+	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
+	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
 	a4\f r r2
 	R1*5
 % Bars 91 to 95
@@ -130,7 +130,7 @@ musicCornoIIMvtIV = \relative c' {
 	a4 g8( a g4 f)
 	f( a) g2
 	f4-. a-. g2->
-	f4-.( a-.) g2
+	f4( a) g2
 % Bars 126 to 130
 	f4-. a-. g2->
 	f4( d') c2->
@@ -176,10 +176,10 @@ musicCornoIIMvtIV = \relative c' {
 	b4\fz b r2
 % Bars 171 to 175
 	R1
-	r2 r4 g\f
-	c2. r4
-	r2 r4 g\f
-	c2. r4
+	r2 r4 g-.\f
+	c2.-> r4
+	r2 r4 g-.\f
+	c2.-> r4
 % Bars 176 to 180
 	R1*3
 	
@@ -202,7 +202,7 @@ musicCornoIIMvtIV = \relative c' {
 	
 	
 	
-	d4\f a d2~
+	d4\f-^ a-^ d2-^~
 % Bars 196 to 200
 	d4 r r2
 	R1*6
@@ -215,8 +215,8 @@ musicCornoIIMvtIV = \relative c' {
 % Bars 206 to 210
 	R1*5
 % Bars 211 to 215
-	r2 ees4\f c
-	f2 f4 d
+	r2 ees4-.\f c-.
+	f2-> f4-. d-.
 	g4 r r2
 	R1*2
 	\mark \default
@@ -264,7 +264,7 @@ musicCornoIIMvtIV = \relative c' {
 	\mark \default
 	R1
 	R1
-	c2(\p\< \tuplet 3/2 2 {f,4 ges aes\!}
+	ces2(\p\< \tuplet 3/2 2 {f,4 ges aes!\!}
 % Bars 256 to 260
 	ges\f) r r2
 	R1*11
@@ -284,8 +284,8 @@ musicCornoIIMvtIV = \relative c' {
 	r2 a4\f r
 % Bars 276 to 280
 	R1
-	r2 d2\f
-	d d
+	r2 d2->\f
+	d-> d->
 	g,-> g,->
 	g-> g->
 % Bars 281 to 285
@@ -299,9 +299,9 @@ musicCornoIIMvtIV = \relative c' {
 	g4 r f\ff r
 	R1
 	r2 r4 r8 f'-.\f
-	des-. c-. bes-. f-. bes4 r8 f'
+	des-. c-. bes-. f-. bes4 r8 f'-.
 % Bars 291 to 295
-	des c bes f bes4 r8 f'
+	des-. c-. bes-. f-. bes4 r8 f'
 	des4-. c-. bes-. r8 f'
 	des4-. c-. bes-. r8 f'\ff
 	f2-> f->
@@ -469,33 +469,33 @@ musicCornoIIMvtIV = \relative c' {
 % Bars 481 to 485
 	R1
 	r2 r4 ees'_\ffmarc
-	ees2 ees
-	ees ees4 a,-.
-	a1~
+	ees2-> ees->
+	ees-> ees4-. a,-.
+	a1~->
 % Bars 486 to 490
 	a2. ees'4
-	ees2 ees
-	ees ees4 a,-.
+	ees2-> ees->
+	ees-> ees4-. a,-.
 	a1->~
 	a2. r4 
 % Bars 491 to 495
 	R1
-	r2 r4 f-\tweak X-offset 0.3 \ff
+	r2 r4 f->-\tweak X-offset 0.3 \ff
 	d'2-> c->
 	bes-> c->
 	bes-> c->
 % Bars 496 to 500
 	bes-> c->
 	d-> ees->
-	d ees
-	d d
-	c c->
+	d-> ees->
+	d-> d->
+	c-> c->
 % Bars 501 to 505
 	bes4 r r2
 	R1*2
 	
-	r2 d2~
-	d4( c8 d c4 bes)
+	r2 d2(~
+	d4 c8 d c4 bes)
 % Bars 506 to 510
 	bes( d c2
 	bes4) r r2
@@ -521,11 +521,11 @@ musicCornoIIMvtIV = \relative c' {
 % Bars 526 to 530
 	f2. f4-.
 	f-. f-. f-. f-.
-	f f f f
-	f f f f
-	f f f f
+	f-. f-. f-. f-.
+	f-. f-. f-. f-.
+	f-. f-. f-. f-.
 % Bars 531 to 535
-	f f f f
+	f-. f-. f-. f-.
 	f-. f-. f-. f\ff
 	d2->_\pesante c->
 	bes-> f->
@@ -543,11 +543,11 @@ musicCornoIIMvtIV = \relative c' {
 	f~
 	f~
 % Bars 546 to 550
-	f4 r f'2
-	d c
-	bes f
-	bes2. bes4
-	bes2 \single \omitAccidental bes->
+	f4 r f'2->
+	d-> c->
+	bes-> f->
+	bes2.-> bes4-.
+	bes2-> \single \omitAccidental bes->
 % Bars 551 to 555
 	d1-^~
 	d~

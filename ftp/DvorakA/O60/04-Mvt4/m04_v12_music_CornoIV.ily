@@ -32,7 +32,7 @@ musicCornoIVMvtIV = \relative c' {
 % Bars 21 to 25
 	
 	fis'4.\f fis8 fis4-.\< gis-.
-	a4. a8 a4-. \once \stemUp b!-.\!
+	a4. a8 a4-. \once \stemUp b-.\!
 	c!1\fz~
 	c4 r r2
 % Bars 26 to 30
@@ -276,8 +276,8 @@ musicCornoIVMvtIV = \relative c' {
 % Bars 286 to 290
 	bes(\< b c cis)\!
 	d r g,\ff r8 d'-.
-	b-. a-. g-. d-. g4 r8 d'
-	b a g d g4 r
+	b-. a-. g-. d-. g4 r8 d'-.
+	b-. a-. g-. d-. g4 r
 	R1*3
 % Bars 291 to 295
 	
@@ -404,8 +404,8 @@ musicCornoIVMvtIV = \relative c' {
 	c r c,2\f
 % Bars 411 to 415
 	cis1->~
-	cis2 d4( c)~
-	c c2.~
+	cis2 d4( c~
+	c) c2.~
 	c4 r r2
 	R1*2
 % Bars 416 to 420
@@ -475,7 +475,7 @@ musicCornoIVMvtIV = \relative c' {
 	r2 r4 f'-\offset X-offset -2 _\ffmarc
 	d2-> d->
 	d-> d4-. g,-.
-	g1~
+	g1~->
 % Bars 486 to 490
 	g2. d'4
 	d2-> d->
@@ -495,8 +495,8 @@ musicCornoIVMvtIV = \relative c' {
 	gis-> a->
 	a-> g!->
 % Bars 501 to 505
-	c4 r e2->~
-	e4( d8 e d4 c)
+	c4 r e2->(~
+	e4 d8 e d4 c)
 	c( e d2
 	c4) r r2
 	R1*12
@@ -519,11 +519,11 @@ musicCornoIVMvtIV = \relative c' {
 % Bars 526 to 530
 	g2. g4-.
 	\startMeasureCount g-. g-. g-. g-.
-	g g g g
-	g g g g
-	g g g g
+	g-. g-. g-. g-.
+	g-. g-. g-. g-.
+	g-. g-. g-. g-.
 % Bars 531 to 535
-	g g g g
+	g-. g-. g-. g-.
 	g-. g-. g-. g\ff \stopMeasureCount
 	c2->_\pesante g->
 	c,-> b->

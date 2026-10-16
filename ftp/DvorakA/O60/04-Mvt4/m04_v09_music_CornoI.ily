@@ -133,10 +133,10 @@ musicCornoIMvtIV = \relative c'' {
 	r2 c\f~
 	c4 bes8( c bes4 a)
 	a( c) bes2
-	a4-. c-. d( e!)
-	c-.( c-.) bes2
+	a4-. c-. d( e)
+	c-. c-. bes2
 % Bars 126 to 130
-	a4-. c-. d( e!)
+	a4-. c-. d( e)
 	c( f) ees2->
 	d4( f) ees2->
 	d4 r r2
@@ -155,10 +155,10 @@ musicCornoIMvtIV = \relative c'' {
 	c4-. r r2
 % Bars 141 to 145
 	c4-. r r2
-	r4 des-. bes-. des-.
-	r des-. bes-. des-.
-	r des-. bes-. des-.
-	r des-. bes-. des-.
+	r4 des-. bes!-. des-.
+	r des-. bes!-. des-.
+	r des-. bes!-. des-.
+	r des-. bes!-. des-.
 % Bars 146 to 150
 	des\f r r2
 	R1
@@ -303,9 +303,9 @@ musicCornoIMvtIV = \relative c'' {
 	e!4 r f\ff r
 	R1
 	r2 r4 r8 f-.\f
-	des-. c-. bes-. f-. bes4 r8 f'
+	des-. c-. bes-. f-. bes4 r8 f'-.
 % Bars 291 to 295
-	des c bes f bes4 r8 f'
+	des-. c-. bes-. f-. bes4 r8 f'
 	des4-. c-. bes-. r8 f'
 	des4-. c-. bes-. r8 f'\ff
 	f2-> f->
@@ -348,7 +348,7 @@ musicCornoIMvtIV = \relative c'' {
 	g4.\f g8 g4-. c-.
 	bes4. bes8 bes4-. ees-.
 	d4. d8 d4-. g-.
-	f4. f8 f4-. e!-.
+	f4. f8 f4-. e-.
 % Bars 341 to 345
 	a,1\fp
 	bes\fp
@@ -483,7 +483,7 @@ musicCornoIMvtIV = \relative c'' {
 	r2 r4 ees_\ffmarc
 	ees2-> ees->
 	ees-> ees4-. f-.
-	f1~
+	f1->~
 % Bars 486 to 490
 	f2. ees4
 	ees2-> ees->
@@ -492,7 +492,7 @@ musicCornoIMvtIV = \relative c'' {
 	f2. r4 
 % Bars 491 to 495
 	R1
-	r2 r4 f\ff
+	r2 r4 f->\ff
 	f2-> f->
 	f-> f->
 	d-> f->
@@ -506,8 +506,8 @@ musicCornoIMvtIV = \relative c'' {
 	d4 r r2
 	R1*2
 	
-	r2 f2~
-	f4( ees8 f ees4 d)
+	r2 f2(~
+	f4 ees8 f ees4 d)
 % Bars 506 to 510
 	d( f ees2
 	d4) r r2
@@ -533,11 +533,11 @@ musicCornoIMvtIV = \relative c'' {
 % Bars 526 to 530
 	f2. f4-.
 	\startMeasureCount f-. f-. f-. f-.
-	f f f f
-	f f f f
-	f f f f
+	f-. f-. f-. f-.
+	f-. f-. f-. f-.
+	f-. f-. f-. f-.
 % Bars 531 to 535
-	f f f f
+	f-. f-. f-. f-.
 	f-. f-. f-. f\ff \stopMeasureCount
 	d2->_\pesante c->
 	bes-> f->

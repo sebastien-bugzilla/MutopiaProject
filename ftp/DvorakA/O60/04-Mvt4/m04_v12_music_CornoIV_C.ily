@@ -32,7 +32,7 @@ musicCornoIVMvtIV = \relative c' {
 % Bars 21 to 25
 	\mmrPos #-6 R1
 	fis'4.\f fis8 fis4 gis\< 
-	a4. a8 a4 b!\!
+	a4. a8 a4 b\!
 	c!1\fz~
 	c4 r r2
 % Bars 26 to 30
@@ -73,11 +73,11 @@ musicCornoIVMvtIV = \relative c' {
 	
 	
 	
-	f4-> \tuplet 3/2 4 {f4.:8} f4-> \tuplet 3/2 4 {f4.:8} 
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
 % Bars 86 to 90
-	f4-> \tuplet 3/2 4 {f4.:8} f4-> \tuplet 3/2 4 {f4.:8} 
-	f4-> \tuplet 3/2 4 {f4.:8} f4-> \tuplet 3/2 4 {f4.:8} 
-	f4-> \tuplet 3/2 4 {f4.:8} f4-> \tuplet 3/2 4 {f4.:8} 
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
 	f4\f r r2
 	R1*5
 % Bars 91 to 95
@@ -157,10 +157,10 @@ musicCornoIVMvtIV = \relative c' {
 	a4\fz a r2
 % Bars 171 to 175
 	R1
-	r2 r4 a\f
-	d2. r4
-	r2 r4 a\f
-	d2. bes4-\tweak X-offset #0.2 \fz~
+	r2 r4 a-.\f
+	d2.-> r4
+	r2 r4 a-.\f
+	d2.-> bes4-\tweak X-offset #0.2 \fz~
 % Bars 176 to 180
 	bes2. bes4-\tweak X-offset #0.2 \fz~
 	bes2. b4-\tweak X-offset #0.2 \fz~
@@ -263,9 +263,9 @@ musicCornoIVMvtIV = \relative c' {
 	r2 f,4\f r
 % Bars 276 to 280
 	R1
-	r2 e\f
-	e e
-	a, a->
+	r2 e->\f
+	e-> e->
+	a,-> a->
 	a-> a->
 % Bars 281 to 285
 	d-> d->
@@ -276,8 +276,8 @@ musicCornoIVMvtIV = \relative c' {
 % Bars 286 to 290
 	bes(\< b c cis)\!
 	d r g,\ff r8 d'-.
-	b-. a-. g-. d-. g4 r8 d'
-	b a g d g4 r
+	b-. a-. g-. d-. g4 r8 d'-.
+	b-. a-. g-. d-. g4 r
 	R1*3
 % Bars 291 to 295
 	
@@ -339,8 +339,8 @@ musicCornoIVMvtIV = \relative c' {
 % Bars 351 to 355
 	d4 d2.\fz~
 	d4 d2.\fz~
-	d4 d2.\fz_\(
-	g4\) g2.->\f~
+	d4 d2.\fz(
+	g4) g2.->\f~
 	g4 g2.->~
 % Bars 356 to 360
 	g4 g2.->~
@@ -381,13 +381,13 @@ musicCornoIVMvtIV = \relative c' {
 % Bars 386 to 390
 	bes4\f r r2
 	R1
-	c2\f c
-	c2. r4
-	f2 f
+	c2->\f c->
+	c2.-> r4
+	f2-> f->
 % Bars 391 to 395
-	f2. r4
-	g,4\fz c c\fz c
-	c\fz c b\fz g
+	f2.-> r4
+	g,4\fz c-. c\fz c-.
+	c\fz c-. b\fz g-.
 	g4->\p \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
 	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g}
 % Bars 396 to 400
@@ -405,13 +405,13 @@ musicCornoIVMvtIV = \relative c' {
 % Bars 406 to 410
 	f2-> f->
 	f2.-> r4
-	g,\fz c c\fz c
-	c\fz c b\fz g
+	g,\fz c-. c\fz c-.
+	c\fz c-. b\fz g-.
 	c r c,2\f
 % Bars 411 to 415
 	cis1->~
-	cis2 d4( c)~
-	c c2.~
+	cis2 \stemUp \noteShift #1 d4( \noteShift #1 c~
+	\stemDown c) c2.~
 	c4 r r2
 	R1*2
 % Bars 416 to 420
@@ -427,10 +427,10 @@ musicCornoIVMvtIV = \relative c' {
 	g1~
 	g2 c4-. c-.
 % Bars 426 to 430
-	g r bes'2~
-	bes bes2~
-	bes bes~
-	bes des
+	g r bes'2->~
+	bes bes2->~
+	bes bes->~
+	bes des->
 	d!1\ff~
 % Bars 431 to 435
 	d
@@ -483,13 +483,13 @@ musicCornoIVMvtIV = \relative c' {
 % Bars 481 to 485
 	
 	r2 r4 f'_\ffmarc
-	d2 d
-	d d4 g,-.
-	g1~
+	d2-> d->
+	d-> d4-. g,-.
+	g1~->
 % Bars 486 to 490
 	g2. d'4
-	d2 d
-	d d4 g,-.
+	d2-> d->
+	d-> d4-. g,-.
 	g1->~
 	g2. g4->
 % Bars 491 to 495
@@ -505,8 +505,8 @@ musicCornoIVMvtIV = \relative c' {
 	gis-> a->
 	a-> g!->
 % Bars 501 to 505
-	c4 r e2->~
-	e4( d8 e d4 c)
+	c4 r e2->(~
+	e4 d8 e d4 c)
 	c( e d2
 	c4) r r2
 	R1*12
@@ -519,7 +519,7 @@ musicCornoIVMvtIV = \relative c' {
 	c,4\ff c c c
 	c c c c
 	c c c c
-	c c c c
+	c c c c \mark \default
 % Bars 521 to 525
 	f r a2-> 
 	r a->
@@ -529,11 +529,11 @@ musicCornoIVMvtIV = \relative c' {
 % Bars 526 to 530
 	g2. g4-.
 	g-. g-. g-. g-.
-	g g g g
-	g g g g
-	g g g g
+	g-. g-. g-. g-.
+	g-. g-. g-. g-.
+	g-. g-. g-. g-.
 % Bars 531 to 535
-	g g g g
+	g-. g-. g-. g-.
 	g-. g-. g-. g\ff
 	c2->_\pesante g->
 	c,-> b->
