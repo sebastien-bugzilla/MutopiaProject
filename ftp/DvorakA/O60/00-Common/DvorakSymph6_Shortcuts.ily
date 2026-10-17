@@ -21,7 +21,7 @@ ffbrackmarcato = \markup {\dynamic ff \bracket \with-true-dimensions \italic mar
 %--------------------
 % dynamics ffz
 %--------------------
-ffz = \markup { \hspace #-1 \dynamic ffz}
+ffz = #(make-dynamic-script "ffz")
 
 %--------------------
 % dynamics f
@@ -50,7 +50,9 @@ fzdimD = #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "di
 %--------------------
 mfcresc = \markup {\dynamic mf \italic cresc.}
 mfcrescD = #(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "cresc." ))
-
+brackmf = \markup {
+	\concat {\bracket \with-true-dimensions \dynamic m \dynamic f}
+}
 %--------------------
 % dynamics mfp
 %--------------------

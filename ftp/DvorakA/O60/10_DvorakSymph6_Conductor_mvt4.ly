@@ -67,80 +67,80 @@
 	}
 	\score {
 		<<
-%			\new StaffGroup <<
-%				\new Staff <<
-%%					\new Voice {
-%%						\formatConductorMvtIV
-%%					}
+			\new StaffGroup <<
+				\new Staff <<
 %					\new Voice {
-%						\tempiMvtIV
+%						\formatConductorMvtIV
 %					}
-%					\new Voice {
-%						\timeMvtIV \nameStaffIMvtIV
-%						\partCombine \musicFlautoIMvtIV \musicFlautoIIMvtIV
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtIV \nameStaffIIMvtIV
-%					\partCombine \musicOboeIMvtIV \musicOboeIIMvtIV
-%				}
-%				\new Staff {
-%					\timeMvtIV \nameStaffIIIMvtIV
-%					\partCombine \musicClarinettoIMvtIV \musicClarinettoIIMvtIV
-%				}
-%				\new Staff {
-%					\timeMvtIV \nameStaffIVMvtIV
-%					\partCombine \musicFagottoIMvtIV \musicFagottoIIMvtIV
-%				}
-%			>>
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
-%					\new Staff {
-%						\timeMvtIV \nameStaffVMvtIV
-%						\partCombine \musicCornoIMvtIV \musicCornoIIMvtIV
-%					}
-%					\new Staff {
-%						\timeMvtIV \nameStaffVIMvtIV
-%						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtIV \nameStaffVIIMvtIV
-%					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
-%				}
-%				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
-%					\new Staff {
-%						\timeMvtIV \nameStaffVIIIMvtIV
-%						\partCombine \musicTrombonoIMvtIV \musicTrombonoIIMvtIV
-%					}
-%					\new Staff {
-%						\timeMvtIV \nameStaffIXMvtIV
-%						\partCombine \musicTrombonoIIIMvtIV \musicTubaMvtIV
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtIV \nameStaffXMvtIV \musicTimpaniMvtIV
-%				}
-%			>>
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIIIMvtIV } <<
-%					\new Staff {
-%						\timeMvtIV \nameStaffXIMvtIV \musicViolinoIMvtIV
-%					}
-%					\new Staff {
-%						\timeMvtIV \nameStaffXIIMvtIV \musicViolinoIIMvtIV
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtIV \nameStaffXIIIMvtIV \musicViolaMvtIV
-%				}
-%				\new Staff {
-%					\timeMvtIV \nameStaffXIVMvtIV \musicVioloncelloMvtIV
-%				}
-%				\new Staff {
-%					\timeMvtIV \nameStaffXVMvtIV \musicContrabassoMvtIV
-%				}
-%			>>
+					\new Voice {
+						\tempiMvtIV
+					}
+					\new Voice {
+						\timeMvtIV \nameStaffIMvtIV
+						\partCombine \musicFlautoIMvtIV \musicFlautoIIMvtIV
+					}
+				>>
+				\new Staff {
+					\timeMvtIV \nameStaffIIMvtIV
+					\partCombine \musicOboeIMvtIV \musicOboeIIMvtIV
+				}
+				\new Staff {
+					\timeMvtIV \nameStaffIIIMvtIV
+					\partCombine \musicClarinettoIMvtIV \musicClarinettoIIMvtIV
+				}
+				\new Staff {
+					\timeMvtIV \nameStaffIVMvtIV
+					\partCombine \musicFagottoIMvtIV \musicFagottoIIMvtIV
+				}
+			>>
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
+					\new Staff {
+						\timeMvtIV \nameStaffVMvtIV
+						\partCombine \musicCornoIMvtIV \musicCornoIIMvtIV
+					}
+					\new Staff {
+						\timeMvtIV \nameStaffVIMvtIV
+						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
+					}
+				>>
+				\new Staff {
+					\timeMvtIV \nameStaffVIIMvtIV
+					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
+				}
+				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
+					\new Staff {
+						\timeMvtIV \nameStaffVIIIMvtIV
+						\partCombine \musicTrombonoIMvtIV \musicTrombonoIIMvtIV
+					}
+					\new Staff {
+						\timeMvtIV \nameStaffIXMvtIV
+						\partCombine \musicTrombonoIIIMvtIV \musicTubaMvtIV
+					}
+				>>
+				\new Staff {
+					\timeMvtIV \nameStaffXMvtIV \musicTimpaniMvtIV
+				}
+			>>
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIIIMvtIV } <<
+					\new Staff {
+						\timeMvtIV \nameStaffXIMvtIV \musicViolinoIMvtIV
+					}
+					\new Staff {
+						\timeMvtIV \nameStaffXIIMvtIV \musicViolinoIIMvtIV
+					}
+				>>
+				\new Staff {
+					\timeMvtIV \nameStaffXIIIMvtIV \musicViolaMvtIV
+				}
+				\new Staff {
+					\timeMvtIV \nameStaffXIVMvtIV \musicVioloncelloMvtIV
+				}
+				\new Staff {
+					\timeMvtIV \nameStaffXVMvtIV \musicContrabassoMvtIV
+				}
+			>>
 		>>
 		\header {
 			breakbefore = ##t

@@ -24,7 +24,7 @@ musicContrabassoMvtIV = \relative c' {
 % Bars 11 to 15
 	a'2. a4~
 	a g!( fis dis)
-	e8( a gis fis e fis d e)
+	e8( a gis fis e fis d! e)
 	a,4. a8_\pocoapococresc a4( b)
 	cis4. cis8 cis4( b)
 % Bars 16 to 20
@@ -106,19 +106,19 @@ musicContrabassoMvtIV = \relative c' {
 	b, b' r b
 	b, r r2
 % Bars 81 to 85
-	e4\mf r r2
+	e4-\brackmf r r2
 	d4^\arco-.\p b-. d2->
 	R1
 	d4-. b-. d2->
 	R1
 % Bars 86 to 90
-	g!4->-\tweak X-offset #-1 _\fpcresc e-> g2->
+	g4->-\tweak X-offset #-1 _\fpcresc e-> g2->
 	R1
 	g4->\fz e-> g2->
-	g4\f r r2
+	g4-.\f r r2
 	R1
 % Bars 91 to 95
-	fis8->_\ffmarc e d e fis-> e d e
+	fis8->_\ffmarcato e d e fis-> e d e
 	fis-> e d e fis-> e d cis
 	b-> cis d cis b-> cis d cis
 	b-> cis b a' gis fis e d
@@ -134,10 +134,10 @@ musicContrabassoMvtIV = \relative c' {
 	g!4->_\fpcresc e-> g2->
 	R1
 	g4->\fz e-> g2->
-	g4\f r r2
+	g4-.\f r r2
 % Bars 106 to 110
 	R1
-	\beamOffset #'(0.5 . 0.5) fis8->-\tweak X-offset #-2 _\ffmarc e d e fis-> e d e
+	\beamOffset #'(0.5 . 0.5) fis8->-\tweak X-offset #-2 _\ffmarcato e d e fis-> e d e
 	fis-> e d e fis-> e d cis
 	b-> cis d cis b-> cis d cis
 	b-> cis b a' gis fis e d
@@ -154,8 +154,8 @@ musicContrabassoMvtIV = \relative c' {
 	
 	
 % Bars 121 to 125
-	r2 g'!2:8\ff
-	g: g:
+	r2 g'8\ff g g g
+	g g g g  g g g g
 	g4-. g-. fis( f)
 	e-. e-. dis( d)
 	cis-. g'-. fis( f)
@@ -200,7 +200,7 @@ musicContrabassoMvtIV = \relative c' {
 	b4 r g2\pp~
 	g1~
 	g~
-	g~
+	g
 % Bars 161 to 165
 	g~
 	g
@@ -209,7 +209,7 @@ musicContrabassoMvtIV = \relative c' {
 	c_\crescmarkup~
 % Bars 166 to 170
 	c
-	r2 c4\ff \tuplet 3/2 4 {c8( b! a)}
+	r2 c4->\ff \tuplet 3/2 4 {c8( b! a)}
 	r2 c4\fz \tuplet 3/2 4 {c8( b a)}
 	r2 dis4\fz \tuplet 3/2 4 {dis8( cis! b)}
 	r2 dis4\fz \tuplet 3/2 4 {dis8( cis b)}
@@ -322,7 +322,7 @@ musicContrabassoMvtIV = \relative c' {
 	f-. e-. d-. r 
 	r2 f'4_\ffz d-.
 % Bars 261 to 265
-	b!\fz a-. gis\fz e-.
+	b\fz a-. gis\fz e-.
 	a r g'!\fz e-.
 	cis!\fz bes-. a\fz g-.
 	fis! r ees'\fz d-.
@@ -352,7 +352,7 @@ musicContrabassoMvtIV = \relative c' {
 	f-> f'4-. c-.
 	a-. c-. a-. c-.
 % Bars 286 to 290
-	f,1-^
+	<< f,1-^ {s4\< s s s\!}>>
 	e4 r a2:16\ff
 	a1:
 	a1:
@@ -433,7 +433,7 @@ musicContrabassoMvtIV = \relative c' {
 	d2-> b4-. gis-.
 	gis2-> e4-. b-.
 	gis'-. e( fis gis)
-	a r a'-.\f g!-.
+	a-. r a'-.\f g!-.
 	g2-> e4-. cis-.
 % Bars 356 to 360
 	cis2-> a4-. e-.
@@ -474,9 +474,9 @@ musicContrabassoMvtIV = \relative c' {
 % Bars 386 to 390
 	c4\ff r r2
 	R1
-	b8_\ffmarc a g a b a g a
+	b8_\ffmarcato a g a b a g a
 	b a g a b a g fis
-	e d cis! d e d cis d
+	e d cis d e d cis d
 % Bars 391 to 395
 	e fis e d cis b a g
 	fis4\fz d'-. g\fz e-.
@@ -493,10 +493,10 @@ musicContrabassoMvtIV = \relative c' {
 	c4-.\f a-. c2
 	c4\ff r r2
 	R1
-	b8_\ffmarc a g a b a g a
+	b8_\ffmarcato a g a b a g a
 	b a g a b a g fis
 % Bars 406 to 410
-	e d cis! d e d cis d
+	e d cis d e d cis d
 	e fis e d cis b a g
 	fis4\fz d'-. g\fz e-.
 	a\fz r a,\fz r
@@ -563,9 +563,9 @@ musicContrabassoMvtIV = \relative c' {
 % Bars 471 to 475
 	fis-> cis fis-> e
 	d-> a d-> a
-	d-> a d-> g!-. \mark #11
+	d-> a d-> g-. \mark #11
 	fis1~
-	fis2. b,4-.
+	fis2. b,4\brack\fz
 % Bars 476 to 480
 	b1-^~
 	b2. b'4->

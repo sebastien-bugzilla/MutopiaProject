@@ -19,14 +19,14 @@ musicViolinoIMvtIV = \relative c''' {
 	d( cis8 b e4 a,)
 	b( gis a b)
 	cis( d8 cis b4 fis'8 gis)
-	e1\pp~
+	e1~
 	e4 r r2
 % Bars 11 to 15
 	R1*2
 	
 	r2 r4 e(\p 
 	a g!_\pocoapococresc fis dis)
-	e8( a gis fis e fis d e)
+	e8( a gis fis e fis d! e)
 % Bars 16 to 20
 	cis4. cis8 cis4( b)
 	a8( a' gis fis e fis d e)
@@ -40,7 +40,7 @@ musicViolinoIMvtIV = \relative c''' {
 	d4 r r2
 	a'8-\tweak X-offset #-1.5 \ff g fis g a f d a'
 % Bars 26 to 30
-	g f e f g e cis! g'
+	g f e f g e cis g'
 	fis! e d e f d b f'
 	e4 c8-. d-. ees2->
 	d4 b8-. c-. d2->
@@ -62,7 +62,7 @@ musicViolinoIMvtIV = \relative c''' {
 	fis( a8 g fis4 e)
 	d( cis8 b e4 a,)
 	b( gis a b)
-	c( b8 a d4 g,)
+	c( b8 a d4 g,!)
 % Bars 46 to 50
 	a( fis g a)
 	g8-. r fis4(\fz g a
@@ -185,8 +185,8 @@ musicViolinoIMvtIV = \relative c''' {
 	f4-. f,-. f'2->
 % Bars 146 to 150
 	f4->-\tweak X-offset #-0.3 \f \tuplet 3/2 4 {f8( e d)} d4-> \tuplet 3/2 4 {d8( c b)}
-	b4-> \tuplet 3/2 4 {f8( e d)} d4-> \tuplet 3/2 4 {d8( cis b)}
-	f'4\ff \tuplet 3/2 4 {d8( cis! b)} r2
+	b4-> \tuplet 3/2 4 {f8( e d)} d4-> \tuplet 3/2 4 {d8( c b)}
+	f'4\ffz \tuplet 3/2 4 {d8( cis! b)} r2
 	fis'!4\fz \tuplet 3/2 4 {d8( cis b)} r2
 	<b g'>4-\tweak X-offset #0.2 \fz \tuplet 3/2 4 {d8( cis b)} r2
 % Bars 151 to 155
@@ -271,7 +271,7 @@ musicViolinoIMvtIV = \relative c''' {
 	<e e'>-.\fz b'-. <e, e'>2->~
 	q2. r4
 	R1
-	r2 r4 \tuplet 3/2 4 {<a, a'>8(\< <b b'> <cis cis'>\!}
+	r2 r4 \tuplet 3/2 4 {<a, a'>8(\brack\ff\< <b b'> <cis cis'>\!}
 	<d d'>4)\fz a'-. <d, d'>2->~
 % Bars 221 to 225
 	q2. r4
@@ -294,7 +294,7 @@ musicViolinoIMvtIV = \relative c''' {
 % Bars 236 to 240
 	f-> des-> bes-> f->
 	bes4.->_\marc bes8 bes4 c
-	d4.-> d8 d4 c
+	des4.-> des8 des4 c
 	bes4.-> bes8 bes4 c
 	aes4.-> aes8 aes4 ges
 % Bars 241 to 245
@@ -320,7 +320,7 @@ musicViolinoIMvtIV = \relative c''' {
 % Bars 261 to 265
 	gis\fz f-. e\fz d-.
 	e'\fz d-. cis!\fz bes-.
-	a\fz g!-. f\fz e-.
+	a\fz g-. f\fz e-.
 	d'\fz c-. a\fz fis!-.
 	d\fz c-. a\fz d-.
 % Bars 266 to 270
@@ -375,7 +375,7 @@ musicViolinoIMvtIV = \relative c''' {
 	q4\p r r2
 	R1
 	r4 r8 e(\pp cis b a e
-	g4) r8 b( e,4) r8 fis(
+	a4) r8 b( e,4) r8 fis(
 	b,4) r r2
 % Bars 311 to 315
 	R1*6
@@ -420,19 +420,19 @@ musicViolinoIMvtIV = \relative c''' {
 	e1~
 	e4 dis2.->~
 	dis4 dis2.->(
-	e4) gis(\fz\< a b\!)~
+	e4) gis(\fz\< a b\!~
 % Bars 351 to 355
-	b b(\fz\< cis d\!)~
-	d d(\fz\< e fis)\!~
-	fis fis(\fz e d 
-	cis) cis(\fz d e)~
-	e e(\fz fis g!)~
+	b) b(\fz\< cis d\!~
+	d) d(\fz\< e fis\!~
+	fis) fis(\fz e d 
+	cis) cis(\fz d e~
+	e) e(\fz fis g~
 % Bars 356 to 360
-	g g(\fz a b)~
-	b b(\fz a g)~
-	g8 g( fis e)~ e b'( a g)~
-	g g( fis e)~ e e( d cis)~
-	cis cis( b a)~ a a( g fis
+	g) g(\fz a b~
+	b) b(\fz a g~
+	g8) g( fis e~ e) b'( a g~
+	g) g( fis e~ e) e( d cis~
+	cis) cis( b a~ a) a(\f g fis
 % Bars 361 to 365
 	e) a-! g-! fis-! e-! d-! cis-! b-! 
 	a\fz-! g'-! fis-! e-! r2
@@ -597,7 +597,7 @@ musicViolinoIMvtIV = \relative c''' {
 	d,4 r a'2->~
 	a4 g8( a g4 fis)
 	fis( a) g2
-	fis4 r a2~
+	fis4 r a2~->
 	a4 g8( a g4 fis)
 % Bars 506 to 510
 	fis( a) g2
@@ -613,7 +613,7 @@ musicViolinoIMvtIV = \relative c''' {
 	\ottava #1 b a8( b a4 g)
 % Bars 516 to 520
 	cis! b8( cis b4 a)
-	d4:8 b: cis!: a:
+	d4:8 b: cis: a:
 	b: g: a: fis:
 	d': b: cis: a:
 	b: g: a: fis: \ottava #0 \mark \default
