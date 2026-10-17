@@ -69,7 +69,7 @@ musicTrombonoIMvtIV = \relative c'' {
 	gis-. r r2
 	\partCombineApart a4 \once \partCombineAutomatic r a  r 
 % Bars 96 to 100
-	e \once \partCombineAutomatic r e \partCombineAutomatic r
+	\partCombineAutomatic e-\tweak X-offset 0.3 \fz r e-\tweak X-offset 0.6 \fz r
 	R1*8
 % Bars 101 to 105
 	
@@ -85,14 +85,14 @@ musicTrombonoIMvtIV = \relative c'' {
 	gis-. r r2
 % Bars 111 to 115
 	\partCombineApart a4 \once \partCombineAutomatic r a r
-	e \once  \partCombineAutomatic r e \partCombineAutomatic r \mark \default
+	\partCombineAutomatic e-\tweak X-offset #0.2 \fz r e-\tweak X-offset #0.2 \fz r \mark \default
 	cis r r2
 	R1*7
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	r2 e\f-^~
-	e4 d8( e) d4( cis)
+	e4 d8( e d4 cis)
 	cis( e) d2
 	cis4-. cis-. b2->
 	a4( e') d2
@@ -173,8 +173,8 @@ musicTrombonoIMvtIV = \relative c'' {
 	
 % Bars 206 to 210
 	
-	\partCombineApart e4-. r e2-\offset X-offset 0.5 ->
-	e4 \once \partCombineAutomatic r d \partCombineAutomatic r 
+	\partCombineApart e4-. r e2-\offset X-offset 0.5 -> \partCombineAutomatic
+	e4 r d r 
 	e r r2
 	R1*6
 % Bars 211 to 215
@@ -202,7 +202,7 @@ musicTrombonoIMvtIV = \relative c'' {
 % Bars 236 to 240
 	des-. \partCombineAutomatic r  r  \partCombineApart f-.
 	des-. c-. bes-. f'-. 
-	\partCombineAutomatic des2 r4 \partCombineAutomatic c 
+	des2 \partCombineAutomatic r4 c 
 	des2 r4 c
 	aes2 r4 c
 % Bars 241 to 245
@@ -233,7 +233,7 @@ musicTrombonoIMvtIV = \relative c'' {
 	r2 cis4\f r
 	\partCombineApart R1*2
 	
-	r2 b->-\tweak X-offset #-1.6 \f \partCombineAutomatic
+	r2 b->-\tweak X-offset #-1.6 \brack\f \partCombineAutomatic
 	b-> b->
 % Bars 281 to 285
 	e-> d->
@@ -242,8 +242,8 @@ musicTrombonoIMvtIV = \relative c'' {
 	a-> f'4-. e-.
 	f-. e-. f-. e-.
 % Bars 286 to 290
-	c(_\< cis d dis)\!
-	e r \once \partCombineApart a, r
+	\partCombineApart c(_\< cis d dis)\!
+	e \once \partCombineAutomatic r  a, \partCombineAutomatic r
 	R1*5
 % Bars 291 to 295
 	
@@ -296,7 +296,7 @@ musicTrombonoIMvtIV = \relative c'' {
 % Bars 356 to 360
 	
 	
-	e'4 r e r
+	e'4\f r e r
 	e r e r 
 	e r r2
 % Bars 361 to 365
@@ -390,12 +390,12 @@ musicTrombonoIMvtIV = \relative c'' {
 	
 % Bars 481 to 485
 	
-	r2 r4 \partCombineApart g
-	e2-> d->
+	r2 r4 g_\ffmarc
+	\partCombineApart e2-> d->
 	c-> b4-. \partCombineAutomatic cis-.
-	cis1~
+	cis1~->
 % Bars 486 to 490
-	cis2. \partCombineApart g'4->
+	cis2. \partCombineApart g'4
 	e2-> d->
 	c-> b4-. \partCombineAutomatic cis-.
 	cis1~->
@@ -403,7 +403,7 @@ musicTrombonoIMvtIV = \relative c'' {
 % Bars 491 to 495
 	d-. e-. fis-. \once \partCombineApart a,->
 	d-. e-. fis-. r
-	r2 r4 a->
+	r2 r4 a-.->
 	fis2-> cis->
 	b-> a4-. a'-.
 % Bars 496 to 500
@@ -413,14 +413,14 @@ musicTrombonoIMvtIV = \relative c'' {
 	ais-> b->
 	b-> a!->
 % Bars 501 to 505
-	fis4 r \partCombineApart c2->
+	fis4 r c2\f->
 	b-> bes->
 	a4-. b!-. c-. cis-.
 	d \once \partCombineAutomatic r c2->
 	b-> bes->
 % Bars 506 to 510
 	a4-. b!-. c-. cis-.
-	d1-^~
+	d1\f-^~
 	d
 	\partCombineAutomatic g->\ff~
 	g

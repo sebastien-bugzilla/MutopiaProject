@@ -22,7 +22,7 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	
-	d1->-\tweak X-offset #-3 \ff~
+	d1-^-\tweak X-offset #-3 \ff~
 % Bars 26 to 30
 	d~
 	d~
@@ -37,8 +37,8 @@ musicTubaMvtIV = \relative c, {
 	R1
 % Bars 36 to 40
 	\mmrPos #-6 R1
-	r2 r4 a'\f \mark \default
-	d r r2
+	r2 r4 a'-.\f \mark \default
+	d-. r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -116,18 +116,18 @@ musicTubaMvtIV = \relative c, {
 	
 	gis4-.\f r r2
 	ais4-. r r2
-	b4-. r cis r
+	b4-. r cis-. r
 % Bars 136 to 140
-	r cis d f
-	e r e,-.  r
-	a r a r
-	a r r2
+	r cis-. d-. f-.
+	e-. r e,-.  r
+	a-. r a-. r
+	a-. r r2
 	R1*2
 % Bars 141 to 145
 	
-	\dynEO #'(-1.7 . 1) d1\ff
-	c
-	bes~
+	\dynEO #'(-1.7 . 1) d1-^\ff
+	c-^
+	bes-^~
 	bes
 % Bars 146 to 150
 	gis4\f r r2
@@ -158,7 +158,7 @@ musicTubaMvtIV = \relative c, {
 	fis-. r fis-. r
 % Bars 181 to 185
 	fis-. r r2
-	cis'4 r r2
+	cis'4-. r r2
 	fis,4-. r r2
 	R1*7 
 % Bars 186 to 190
@@ -187,7 +187,7 @@ musicTubaMvtIV = \relative c, {
 	g~
 % Bars 206 to 210
 	g
-	c4-.\f g' c2
+	c4-.\f g'-. c2->
 	g4 r f r
 	c' r r2
 	R1*6
@@ -212,9 +212,9 @@ musicTubaMvtIV = \relative c, {
 	a!2. r4
 	R1
 	a!2. r4
-	r2 r4 a
+	r2 r4 a-.
 % Bars 236 to 240
-	bes r r2
+	bes-. r r2
 	r2 r4 f\f
 	bes2 r4 f
 	bes2 r4 aes
@@ -250,10 +250,10 @@ musicTubaMvtIV = \relative c, {
 	R
 	\mmrPos #-8 R
 % Bars 281 to 285
-	r2 d\ff
+	r2 d->\ff
 	c-> b->
 	a-> g->
-	f-> f'4-. c-.
+	f-> f'!4-. c-.
 	a-. c-. a-. c-.
 % Bars 286 to 290
 	<<f,1 {s4\< s s s\!}>>
@@ -315,7 +315,7 @@ musicTubaMvtIV = \relative c, {
 % Bars 356 to 360
 	
 	
-	a'4 r a r
+	a'4\f r a r
 	a r a r
 	a r r2
 % Bars 361 to 365
@@ -382,7 +382,7 @@ musicTubaMvtIV = \relative c, {
 	c b->
 	e,4-. r r2
 % Bars 431 to 435
-	r4 b' gis e
+	r4 b'-. gis-. e-.
 	a1~
 	a4 r r2
 	R1*6
@@ -416,7 +416,7 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	r2 r4 a-.\ff
-	a1~
+	a1~->
 % Bars 486 to 490
 	a2. r4
 	R1
@@ -426,7 +426,7 @@ musicTubaMvtIV = \relative c, {
 % Bars 491 to 495
 	R1*2
 	
-	r2 r4 a->
+	r2 r4 a-.->
 	fis2-> e->
 	d-> cis->
 % Bars 496 to 500
@@ -436,16 +436,16 @@ musicTubaMvtIV = \relative c, {
 	fis-> b->
 	g-> a->
 % Bars 501 to 505
-	d4 r c2\f
-	b bes
-	a4 b! c cis
-	d r c2
-	b bes
+	d4 r c2->\f
+	b-> bes->
+	a4-. b!-. c-. cis-.
+	d r c2->
+	b-> bes->
 % Bars 506 to 510
-	a4 b! c cis
-	d r \once \stemUp d,2~
+	a4-. b!-. c-. cis-.
+	d r d,2->~
 	d1
-	g-\tweak X-offset #-2 \ff~
+	g-\tweak X-offset #-2 \ff->~
 	g
 % Bars 511 to 515
 	c,~
@@ -455,7 +455,7 @@ musicTubaMvtIV = \relative c, {
 	g-. r r e-.
 % Bars 516 to 520
 	a-. r r fis-.
-	b-. r a r
+	b r a r
 	g r fis r
 	b r a r
 	g r fis r \mark \default
@@ -490,21 +490,21 @@ musicTubaMvtIV = \relative c, {
 	d~
 	d~
 % Bars 546 to 550
-	d4 r a''2
-	fis e
-	d cis
+	d4 r a''2->
+	fis-> e->
+	d-> cis->
 	b2.-> b4-.
 	b2-> b->
 % Bars 551 to 555
 	a1-^~
 	a~
 	a~
-	a2. a4
-	d e fis a,
+	a2. a4-.
+	d-. e-. fis-. a,-.
 % Bars 556 to 560
-	d e fis a,
-	d e fis a,
-	d e fis a,
+	d-. e-. fis-. a,-.
+	d-. e-. fis-. a,-.
+	d-. e-. fis-. a,-.
 	d r d, r
 	d r d r
 % Bars 561 to 563

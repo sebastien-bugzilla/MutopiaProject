@@ -104,19 +104,19 @@
 %						\partCombine \musicCornoIIIMvtIV \musicCornoIVMvtIV
 %					}
 %				>>
-				\new Staff {
-					\timeMvtIV \nameStaffVIIMvtIV
-					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
-				}
+%				\new Staff {
+%					\timeMvtIV \nameStaffVIIMvtIV
+%					\partCombine \musicTrombeIMvtIV \musicTrombeIIMvtIV
+%				}
 %				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
 %					\new Staff {
 %						\timeMvtIV \nameStaffVIIIMvtIV
 %						\partCombine \musicTrombonoIMvtIV \musicTrombonoIIMvtIV
 %					}
-%					\new Staff {
-%						\timeMvtIV \nameStaffIXMvtIV
-%						\partCombine \musicTrombonoIIIMvtIV \musicTubaMvtIV
-%					}
+					\new Staff {
+						\timeMvtIV \nameStaffIXMvtIV
+						\partCombine \musicTrombonoIIIMvtIV \musicTubaMvtIV
+					}
 %				>>
 %				\new Staff {
 %					\timeMvtIV \nameStaffXMvtIV \musicTimpaniMvtIV

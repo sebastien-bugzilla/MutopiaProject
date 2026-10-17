@@ -103,7 +103,7 @@ musicTrombonoIMvtIV = \relative c'' {
 	
 % Bars 121 to 125
 	r2 e\f-^~
-	e4 d8( e) d4( cis)
+	e4 d8( e d4 cis)
 	cis( e) d2
 	cis4-. cis-. b2->
 	a4( e') d2
@@ -244,7 +244,7 @@ musicTrombonoIMvtIV = \relative c'' {
 	r2 cis4\f r
 	R1*2
 	
-	r2 b->\f
+	r2 b->\brack\f
 	b-> b->
 % Bars 281 to 285
 	e-> d->
@@ -408,9 +408,9 @@ musicTrombonoIMvtIV = \relative c'' {
 	r2 r4 g_\ffmarc
 	e2-> d->
 	c-> b4-. cis-.
-	cis1~
+	cis1~->
 % Bars 486 to 490
-	cis2. g'4->
+	cis2. g'4
 	e2-> d->
 	c-> b4-. cis-.
 	cis1~->
@@ -418,7 +418,7 @@ musicTrombonoIMvtIV = \relative c'' {
 % Bars 491 to 495
 	d-. e-. fis-. a,->
 	d-. e-. fis-. r
-	r2 r4 a->
+	r2 r4 a-.->
 	fis2-> cis->
 	b-> a4-. a'-.
 % Bars 496 to 500
