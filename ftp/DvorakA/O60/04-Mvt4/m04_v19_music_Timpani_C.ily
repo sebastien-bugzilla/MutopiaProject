@@ -58,9 +58,9 @@ musicTimpaniMvtIV = \relative c {
 	<< d1\p\startTrillSpan {s2 s_\crescmarkup}>>
 	d1
 	d
-	d\stopTrillSpan
+	d
 % Bars 61 to 65
-	d4\f r d r
+	d4\f\stopTrillSpan r d r
 	d r d r
 	d r r2
 	R1
@@ -124,12 +124,12 @@ musicTimpaniMvtIV = \relative c {
 	R1*2
 % Bars 141 to 145
 	
-	d1\ff\trill
-	d\trill
-	d\trill
-	d\trill
+	d1\ff\startTrillSpan
+	d
+	d
+	d
 % Bars 146 to 150
-	d4\f r r2
+	d4\f\stopTrillSpan r r2
 	R1
 	d4\f r r2
 	d4 r r2
@@ -215,13 +215,13 @@ musicTimpaniMvtIV = \relative c {
 % Bars 281 to 285
 	
 % Bars 286 to 290
-	<< a1\startTrillSpan {s4\f\< s s s\!\stopTrillSpan}>>
-	d4 r a2\ff\startTrillSpan
+	<< a1\startTrillSpan {s4\f\< s s s\!}>>
+	d4\stopTrillSpan r a2\ff\startTrillSpan
 	a1
 	a
 	a
 % Bars 291 to 295
-	a2\stopTrillSpan a4 r8 a
+	a2 a4\stopTrillSpan r8 a
 	d4 a d r8 a
 	d4 a d r8 a
 	a1\ff\startTrillSpan
@@ -233,7 +233,7 @@ musicTimpaniMvtIV = \relative c {
 	a
 	a
 % Bars 301 to 305
-	a2\stopTrillSpan d\trill
+	a2 d\stopTrillSpan\trill
 	\grace {s8} a1\trill
 	a2-> a-> \mark \default
 	\grace {s8} a1\ff-\tweak X-offset #3 _\dimin\startTrillSpan

@@ -129,12 +129,12 @@ musicTimpaniMvtIV = \relative c {
 	R1*2
 % Bars 141 to 145
 	
-	d1\ff\trill
-	d\trill
-	d\trill
-	d\trill
+	d1\ff\startTrillSpan
+	d
+	d
+	d
 % Bars 146 to 150
-	d4\f r r2
+	d4\f\stopTrillSpan r r2
 	R1
 	d4\f r r2
 	d4 r r2
