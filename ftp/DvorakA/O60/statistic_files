@@ -1,5 +1,5 @@
     155     417    5105 10_DvorakSymph6_Conductor_mvt1.ly
-    141     383    4654 10_DvorakSymph6_Conductor_mvt2.ly
+    146     396    4808 10_DvorakSymph6_Conductor_mvt2.ly
     147     400    4911 10_DvorakSymph6_Conductor_mvt3.ly
     155     417    5161 10_DvorakSymph6_Conductor_mvt4.ly
     248     596    5466 20_DvorakSymph6_Part01_Flauti.ly
@@ -103,48 +103,48 @@
     700    2349   10839 01-Mvt1/m01_v24_music_Contrabasso_Bassi.ily
     683    2124   10236 01-Mvt1/m01_v24_music_Contrabasso_C.ily
     683    2128   10347 01-Mvt1/m01_v24_music_Contrabasso.ily
-    210     719    4003 02-Mvt2/m02_v01_music_FlautoI_C.ily
-    210     660    3270 02-Mvt2/m02_v01_music_FlautoI.ily
-    204     563    2765 02-Mvt2/m02_v02_music_FlautoII_C.ily
-    201     518    2645 02-Mvt2/m02_v02_music_FlautoII.ily
-    244     835    4984 02-Mvt2/m02_v03_music_OboeI_C.ily
-    244     729    3812 02-Mvt2/m02_v03_music_OboeI.ily
-    244     702    3707 02-Mvt2/m02_v04_music_OboeII_C.ily
-    246     594    3227 02-Mvt2/m02_v04_music_OboeII.ily
-    236     798    4451 02-Mvt2/m02_v05_music_ClarinettoI_C.ily
-    236     737    3659 02-Mvt2/m02_v05_music_ClarinettoI.ily
-    236     619    3171 02-Mvt2/m02_v06_music_ClarinettoII_C.ily
-    218     573    2956 02-Mvt2/m02_v06_music_ClarinettoII.ily
-    236     733    4267 02-Mvt2/m02_v07_music_FagottoI_C.ily
-    236     699    3604 02-Mvt2/m02_v07_music_FagottoI.ily
-    241     620    3186 02-Mvt2/m02_v08_music_FagottoII_C.ily
-    234     601    3167 02-Mvt2/m02_v08_music_FagottoII.ily
-    230     725    4030 02-Mvt2/m02_v09_music_CornoI_C.ily
-    234     757    3929 02-Mvt2/m02_v09_music_CornoI.ily
-    235     680    3280 02-Mvt2/m02_v10_music_CornoII_C.ily
-    219     659    3269 02-Mvt2/m02_v10_music_CornoII.ily
-    211     655    3232 02-Mvt2/m02_v11_music_CornoIII_C.ily
-    207     643    3012 02-Mvt2/m02_v11_music_CornoIII.ily
-    211     632    2839 02-Mvt2/m02_v12_music_CornoIV_C.ily
-    204     646    3041 02-Mvt2/m02_v12_music_CornoIV.ily
-    138     360    1820 02-Mvt2/m02_v13_music_TrombeI_C.ily
-    147     383    1965 02-Mvt2/m02_v13_music_TrombeI.ily
-    138     352    1775 02-Mvt2/m02_v14_music_TrombeII_C.ily
-    147     389    2007 02-Mvt2/m02_v14_music_TrombeII.ily
-    134     367    1997 02-Mvt2/m02_v19_music_Timpani_C.ily
-    146     455    2537 02-Mvt2/m02_v19_music_Timpani.ily
-    238     891    4345 02-Mvt2/m02_v20_music_ViolinoI_C.ily
-    238     913    4529 02-Mvt2/m02_v20_music_ViolinoI.ily
-    238     901    4353 02-Mvt2/m02_v21_music_ViolinoII_C.ily
-    238     923    4638 02-Mvt2/m02_v21_music_ViolinoII.ily
-    270    1157    5574 02-Mvt2/m02_v22_music_Viola_C.ily
-    270    1161    5578 02-Mvt2/m02_v22_music_Viola.ily
-    249     997    4998 02-Mvt2/m02_v23_music_Violoncello_Bassi.ily
-    249     963    4831 02-Mvt2/m02_v23_music_Violoncello_C.ily
-    249     961    4830 02-Mvt2/m02_v23_music_Violoncello.ily
-    245     760    3869 02-Mvt2/m02_v24_music_Contrabasso_Bassi.ily
-    241     694    3508 02-Mvt2/m02_v24_music_Contrabasso_C.ily
-    241     713    3685 02-Mvt2/m02_v24_music_Contrabasso.ily
+    210     712    3972 02-Mvt2/m02_v01_music_FlautoI_C.ily
+    210     659    3267 02-Mvt2/m02_v01_music_FlautoI.ily
+    215     567    2794 02-Mvt2/m02_v02_music_FlautoII_C.ily
+    201     517    2644 02-Mvt2/m02_v02_music_FlautoII.ily
+    244     834    4991 02-Mvt2/m02_v03_music_OboeI_C.ily
+    244     727    3807 02-Mvt2/m02_v03_music_OboeI.ily
+    244     702    3716 02-Mvt2/m02_v04_music_OboeII_C.ily
+    246     593    3223 02-Mvt2/m02_v04_music_OboeII.ily
+    236     797    4463 02-Mvt2/m02_v05_music_ClarinettoI_C.ily
+    236     736    3671 02-Mvt2/m02_v05_music_ClarinettoI.ily
+    236     618    3170 02-Mvt2/m02_v06_music_ClarinettoII_C.ily
+    218     572    2968 02-Mvt2/m02_v06_music_ClarinettoII.ily
+    236     731    4272 02-Mvt2/m02_v07_music_FagottoI_C.ily
+    236     697    3609 02-Mvt2/m02_v07_music_FagottoI.ily
+    241     618    3181 02-Mvt2/m02_v08_music_FagottoII_C.ily
+    234     599    3176 02-Mvt2/m02_v08_music_FagottoII.ily
+    230     724    4043 02-Mvt2/m02_v09_music_CornoI_C.ily
+    234     756    3942 02-Mvt2/m02_v09_music_CornoI.ily
+    235     675    3268 02-Mvt2/m02_v10_music_CornoII_C.ily
+    219     658    3279 02-Mvt2/m02_v10_music_CornoII.ily
+    211     654    3235 02-Mvt2/m02_v11_music_CornoIII_C.ily
+    207     642    3015 02-Mvt2/m02_v11_music_CornoIII.ily
+    211     631    2838 02-Mvt2/m02_v12_music_CornoIV_C.ily
+    204     645    3044 02-Mvt2/m02_v12_music_CornoIV.ily
+    138     359    1819 02-Mvt2/m02_v13_music_TrombeI_C.ily
+    147     382    1964 02-Mvt2/m02_v13_music_TrombeI.ily
+    138     351    1774 02-Mvt2/m02_v14_music_TrombeII_C.ily
+    147     388    2006 02-Mvt2/m02_v14_music_TrombeII.ily
+    134     366    1978 02-Mvt2/m02_v19_music_Timpani_C.ily
+    146     454    2518 02-Mvt2/m02_v19_music_Timpani.ily
+    238     890    4344 02-Mvt2/m02_v20_music_ViolinoI_C.ily
+    238     912    4528 02-Mvt2/m02_v20_music_ViolinoI.ily
+    238     900    4356 02-Mvt2/m02_v21_music_ViolinoII_C.ily
+    238     922    4641 02-Mvt2/m02_v21_music_ViolinoII.ily
+    270    1156    5577 02-Mvt2/m02_v22_music_Viola_C.ily
+    270    1160    5581 02-Mvt2/m02_v22_music_Viola.ily
+    249     995    4990 02-Mvt2/m02_v23_music_Violoncello_Bassi.ily
+    249     962    4834 02-Mvt2/m02_v23_music_Violoncello_C.ily
+    249     960    4833 02-Mvt2/m02_v23_music_Violoncello.ily
+    245     758    3861 02-Mvt2/m02_v24_music_Contrabasso_Bassi.ily
+    241     693    3507 02-Mvt2/m02_v24_music_Contrabasso_C.ily
+    241     712    3684 02-Mvt2/m02_v24_music_Contrabasso.ily
     442    1202    6206 03-Mvt3/m03_v01_music_FlautoI_C.ily
     458    1194    5852 03-Mvt3/m03_v01_music_FlautoI.ily
     374     833    4250 03-Mvt3/m03_v02_music_FlautoII_C.ily
@@ -239,4 +239,4 @@
     690    2697   11313 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2419   10522 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2422   10557 04-Mvt4/m04_v24_music_Contrabasso.ily
- 110418  334868 1946874 total
+ 110434  334828 1947066 total

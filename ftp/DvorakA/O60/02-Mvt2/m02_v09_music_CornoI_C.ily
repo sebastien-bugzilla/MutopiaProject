@@ -36,7 +36,7 @@ musicCornoIMvtII = \relative c'' {
 	
 	\partCombineAutomatic
 	R2*2
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 e,-\tweak X-offset #-3.1 \pp--
 % Bars 36 to 40
 	e-- e--
@@ -131,7 +131,7 @@ musicCornoIMvtII = \relative c'' {
 	
 	
 	\aIIXoffset #-3 des4\(\mf bes8 ees\)
-	des2\cresc
+	des2-\pocoapococrescendo
 	des4\( bes8 e!\)
 % Bars 126 to 130
 	cis2

@@ -45,7 +45,7 @@ musicOboeIIMvtII = \relative c' {
 	bes8 g4 g16(-- a--)
 	bes8 r r4
 	R2*2
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 d--\pp
 % Bars 36 to 40
 	d-- d--
@@ -105,7 +105,7 @@ musicOboeIIMvtII = \relative c' {
 	r8 bes16(\p\< a) a( g) g8\!
 	bes2\f
 	<< {c4 f,~} {s8-\tweak extra-offset #'(0 . 0.8) \> s s s\!} >> \mark \default
-	f4.\pp r8
+	\once \stemUp f4.\pp r8
 	R2*5
 % Bars 91 to 95
 	
@@ -240,5 +240,5 @@ musicOboeIIMvtII = \relative c' {
 	d8 r r4
 	R2
 % Bar 206
-	R2_\fermata \bar "|."
+	R2_\fermata \fine
 }

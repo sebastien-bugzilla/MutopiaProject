@@ -42,7 +42,7 @@ musicClarinettoIMvtII = \relative c'' {
 	g2~
 	g8 r r4
 	R2*2
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 b,\pp--
 % Bars 36 to 40
 	b-- b--
@@ -143,7 +143,7 @@ musicClarinettoIMvtII = \relative c'' {
 	ees2\pp(->
 	c4 f)
 	R2
-	f2\p\cresc
+	f2-\ppocoapococrescendo
 	f->
 % Bars 126 to 130
 	f->

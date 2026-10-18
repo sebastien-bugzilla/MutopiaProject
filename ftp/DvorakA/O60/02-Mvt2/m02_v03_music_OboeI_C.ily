@@ -148,7 +148,7 @@ musicOboeIMvtII = \relative c'' {
 	\partCombineAutomatic bes!2\pp~
 	bes
 	R2
-	\partCombineApart ges4(_\p_\cresc ees!8 aes
+	\partCombineApart ges4(_\ppocoapococrescendo ees!8 aes
 	ges2~
 % Bars 126 to 130
 	ges4) ees!8( a!~
@@ -240,5 +240,5 @@ musicOboeIMvtII = \relative c'' {
 	f d bes ees)
 	\partCombineApart d2~
 % Bar 206
-	d\fermata \bar "|."
+	d\fermata \fine
 }

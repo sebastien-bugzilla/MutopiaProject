@@ -48,7 +48,7 @@ musicContrabassoMvtII = \relative c {
 	f'8\f f,\p r4
 	f'16->\ff f,-. bes_\pesante-. d-. f-. ees-. d-. c-.
 	bes8-> a-> g-> fis->
-	g4-> g-> \bar "||" \mark \default
+	g4-> g-> \section \mark \default
 	a-> r
 % Bars 36 to 40
 	R2*5

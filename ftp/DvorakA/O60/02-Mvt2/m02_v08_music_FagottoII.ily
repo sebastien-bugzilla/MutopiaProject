@@ -38,7 +38,7 @@ musicFagottoIIMvtII = \relative c {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 d'--\pp
 % Bars 36 to 40
 	d-- d--
@@ -136,7 +136,7 @@ musicFagottoIIMvtII = \relative c {
 	ees!\pp~
 	ees
 	c,,\p~
-	c\cresc
+	c-\pocoapococrescendo
 	c~
 % Bars 126 to 130
 	c
@@ -230,5 +230,5 @@ musicFagottoIIMvtII = \relative c {
 	bes8 r r4
 	R2
 % Bar 206
-	\ni R2^\fermata \bar "|."
+	\ni R2^\fermata \fine
 }

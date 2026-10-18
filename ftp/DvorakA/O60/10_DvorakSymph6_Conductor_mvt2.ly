@@ -64,16 +64,21 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtII
-%					}
-					\new Voice {
-						\tempiMvtII
-					}
-					\new Voice {
-						\timeMvtII \nameStaffIMvtII
-						\partCombine \musicFlautoIMvtII \musicFlautoIIMvtII
+				\new GrandStaff <<
+					\new Staff <<
+%						\new Voice {
+%							\formatConductorMvtII
+%						}
+						\new Voice {
+							\tempiMvtII
+						}
+						\new Voice {
+							\timeMvtII \nameStaffIMvtII
+							\partCombine \musicFlautoIMvtII \musicFlautoIIMvtII
+						}
+					>>
+					\new Staff \with {\RemoveAllEmptyStaves} {
+						\timeMvtII \nameStaffIMvtII \musicFlautoIIDivisiMvtII
 					}
 				>>
 				\new Staff {
@@ -104,10 +109,10 @@
 					\timeMvtII \nameStaffVIIMvtII
 					\partCombine \musicTrombeIMvtII \musicTrombeIIMvtII
 				}
-				\new Staff {
-					\timeMvtII \nameStaffVIIIMvtII \musicTimpaniMvtII
-				}
 			>>
+			\new Staff {
+				\timeMvtII \nameStaffVIIIMvtII \musicTimpaniMvtII
+			}
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
 					\new Staff {

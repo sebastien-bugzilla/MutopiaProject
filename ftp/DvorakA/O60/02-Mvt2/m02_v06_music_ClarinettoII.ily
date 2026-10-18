@@ -40,7 +40,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 gis\pp--
 % Bars 36 to 40
 	gis-- gis--
@@ -129,7 +129,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 	
 	
-	bes,2\p\cresc
+	bes,2-\ppocoapococrescendo
 	b!->
 % Bars 126 to 130
 	b->

@@ -48,7 +48,7 @@ musicViolaMvtII = \relative c {
 	f8 r r4
 	f8->\ff f->_\pesante g-> f16-. ees-.
 	d8-> d-> d-> d->
-	\slashedGrace d,8 <g d'>4-> \slashedGrace d8 <bes' g'>4-> \bar "||" \mark \default
+	\slashedGrace d,8 <g d'>4-> \slashedGrace d8 <bes' g'>4-> \section \mark \default
 	<d, a' fis'>4->\arpeggio r
 % Bars 36 to 40
 	R2*2
@@ -166,7 +166,7 @@ musicViolaMvtII = \relative c {
 	g])\pp r r8 r4
 	R2
 	r16 ees,(\pp c aes'~ aes ees c aes'~
-	aes)(-\pocoapococresc ees c aes'~ aes ees c aes')
+	aes)(-\pocoapococrescendo ees c aes'~ aes ees c aes')
 	r ees( c a'!~ a ees c a'~
 % Bars 126 to 130
 	a)( ees c a'~ a ees c a'~

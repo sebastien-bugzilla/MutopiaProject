@@ -242,5 +242,5 @@ musicOboeIIMvtII = \relative c' {
 	d8 r r4
 	R2
 % Bar 206
-	\ni R2\fermata \bar "|."
+	\ni R2\fermata \fine
 }

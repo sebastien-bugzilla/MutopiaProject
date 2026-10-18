@@ -21,7 +21,7 @@ musicFagottoIMvtII = \relative c' {
 	
 	\dynEO #'(0 . 1) c'2\p^\solo
 	bes4(~ bes16 g a c)
-	f,4\< e\!
+	f,4 e
 % Bars 16 to 20
 	f2\f~
 	f4._\dimmarkup fis8
@@ -41,7 +41,7 @@ musicFagottoIMvtII = \relative c' {
 	d8) r ees4(
 	d8) r r4
 	R2*2
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 fis,--\pp
 % Bars 36 to 40
 	fis-- fis--
@@ -138,7 +138,7 @@ musicFagottoIMvtII = \relative c' {
 	g\pp~
 	g
 	c,,\p~
-	c\cresc
+	c-\pocoapococrescendo
 	c~
 % Bars 126 to 130
 	c
@@ -232,5 +232,5 @@ musicFagottoIMvtII = \relative c' {
 	f8 r r4
 	R2
 % Bar 206
-	\ni R2^\fermata \bar "|."
+	\ni R2^\fermata \fine
 }

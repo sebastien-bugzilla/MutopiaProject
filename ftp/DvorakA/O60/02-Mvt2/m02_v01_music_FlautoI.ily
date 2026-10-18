@@ -39,7 +39,7 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
@@ -59,8 +59,8 @@ musicFlautoIMvtII = \relative c'' {
 	
 % Bars 56 to 60
 	
-	r8 d,\p\<( bes e~\!)~
-	e4\fz r
+	r8 d,\p\<( bes e~\!~
+	e4)\fz r
 	e\p r
 	e_\dimmarkup r
 % Bars 61 to 65
@@ -102,12 +102,12 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	
-	f'4.\ff( ges8)~
-	ges( f4.)~
+	f'4.\ff( ges8~
+	ges f4.~
 % Bars 106 to 110
-	f8( ees4.)
+	f8 ees4.)
 	des2\fz
-	b\fz
+	ces\fz
 	b\fz
 	b\fz
 % Bars 111 to 115
@@ -165,8 +165,8 @@ musicFlautoIMvtII = \relative c'' {
 	c8 c( f16 c a f)\!
 	r4 bes\pp~
 	bes8 bes( ees16 bes g ees)
-	r4 a\trill~
-	a16( bes32 a g16 a c a g f
+	r4 a\trill(~
+	a16 bes32 a g16 a c a g f
 % Bars 166 to 170
 	d ees a->_\dimmarkup f ees c b c
 	f-> ees c a gis a d c
@@ -183,8 +183,8 @@ musicFlautoIMvtII = \relative c'' {
 	d) r r4
 	r16 fis,-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
 	d8->\ff r g4-^~
-	g8\> bes( a g)~\!
-	g\p f4.~_\dimmarkup
+	g8\> bes( a g~\!
+	g)\p f4.~_\dimmarkup
 % Bars 181 to 185
 	f2~
 	f8 r r4

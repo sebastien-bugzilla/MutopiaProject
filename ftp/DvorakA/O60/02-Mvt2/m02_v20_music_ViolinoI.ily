@@ -48,7 +48,7 @@ musicViolinoIMvtII = \relative c'' {
 	f8 r r4
 	f,8->\ff d->_\pesante bes16-. c-. d-. ees-.
 	f8-> fis-> g-> d->
-	\slashedGrace bes,8 \once \stemUp <g' d'>4-> <g, d' bes' g'>->\arpeggio \bar "||" \mark \default
+	\slashedGrace bes,8 \once \stemUp <g' d'>4-> <g, d' bes' g'>->\arpeggio \section \mark \default
 	<d' a' fis'>->\arpeggio r
 % Bars 36 to 40
 	R2

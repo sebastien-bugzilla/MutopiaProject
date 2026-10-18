@@ -36,7 +36,7 @@ musicFlautoIIMvtII = \relative c''' {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 d--\pp
 % Bars 36 to 40
 	d-- d--

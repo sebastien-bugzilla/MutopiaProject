@@ -216,12 +216,12 @@ nameStaffVIIMvtII = {
 nameStaffVIIIMvtII = {
 	\set Staff.instrumentName = \markup {
 		\center-column {
-			\lower #1 "Timpani" "in B, A"
+			\lower #1 "Timpani" "in B, F"
 		}
 	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
-			\lower #1 "Timp." "in B, A"
+			\lower #1 "Timp." "in B, F"
 		}
 	}
 	\set Staff.midiInstrument = #""

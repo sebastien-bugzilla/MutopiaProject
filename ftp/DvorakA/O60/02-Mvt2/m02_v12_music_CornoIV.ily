@@ -28,7 +28,7 @@ musicCornoIVMvtII = \relative c'' {
 	g g g g   g g g g\!
 	g8 r r4
 	R2*2
-	\bar "||" \mark \default
+	\section \mark \default
 	\mmrLength #15 R2*6
 % Bars 36 to 40
 	
@@ -118,7 +118,7 @@ musicCornoIVMvtII = \relative c'' {
 	
 	
 	bes2\p
-	bes-\pocoapococresc
+	bes-\pocoapococrescendo
 	b!
 % Bars 126 to 130
 	b

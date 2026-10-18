@@ -27,7 +27,7 @@ musicTrombeIMvtII = \relative c'' {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	\mmrLength #17 \mmrnDown R2*38
 % Bars 36 to 40
 	

@@ -27,7 +27,7 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	\mmrLength #16 \mmrnDown R2*38
 % Bars 36 to 40
 	
@@ -72,13 +72,13 @@ musicTimpaniMvtII = \relative c {
 	bes2\ff\trill
 	f'\trill
 % Bars 106 to 110
-	\startMeasureCount \countEO #'(0.8 . -4) b,\fz\startTrillSpan
-	\countEO #'(0.8 . -4) b\fz\startTrillSpan
-	\countEO #'(0.8 . -4) b\fz\startTrillSpan
-	\countEO #'(0.8 . -4) b\fz\startTrillSpan
-	\countEO #'(0.8 . -4) b\fz\startTrillSpan
+	\startMeasureCount \countEO #'(0.8 . -4) b,\startTrillSpan
+	\countEO #'(0.8 . -4) b\startTrillSpan
+	\countEO #'(0.8 . -4) b\startTrillSpan
+	\countEO #'(0.8 . -4) b\startTrillSpan
+	\countEO #'(0.8 . -4) b\startTrillSpan
 % Bars 111 to 115
-	\trillSpanPadding #5 \countEO #'(0.8 . -4.65) b\fz\startTrillSpan \stopMeasureCount \mark \default
+	\trillSpanPadding #5 \countEO #'(0.8 . -4.65) b\startTrillSpan \stopMeasureCount \mark \default
 	f'8\stopTrillSpan r r4
 	R2*27
 % Bars 116 to 120

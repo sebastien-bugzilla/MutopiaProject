@@ -28,7 +28,7 @@ musicCornoIIIMvtII = \relative c'' {
 	e e e e f f f f\!
 	e8 r r4
 	R2*2
-	\bar "||" \mark \default
+	\section \mark \default
 	R2*6
 % Bars 36 to 40
 	
@@ -125,7 +125,7 @@ musicCornoIIIMvtII = \relative c'' {
 	
 	
 	f2\p
-	f-\pocoapococresc
+	f-\pocoapococrescendo
 	f
 % Bars 126 to 130
 	f

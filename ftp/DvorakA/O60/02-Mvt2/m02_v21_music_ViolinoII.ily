@@ -48,7 +48,7 @@ musicViolinoIIMvtII = \relative c' {
 	f8 r r4
 	d8->\ff bes->_\pesante g16-. a-. bes-. c-.
 	d8-> c-> bes-> a->
-	<g, d' bes'>4->\arpeggio <g d' d'>->\arpeggio \bar "||" \mark \default
+	<g, d' bes'>4->\arpeggio <g d' d'>->\arpeggio \section \mark \default
 	<a fis' d'>->\arpeggio r
 % Bars 36 to 40
 	R2
@@ -174,7 +174,7 @@ musicViolinoIIMvtII = \relative c' {
 	\hairpinShorten #'(-0.5 . -1) f4(\mf\< bes~\!
 	bes8)\> a( g f)\!
 % Bars 146 to 150
-	f\p(~ f32 g f) ees-. ees4(
+	f-\pdim(~ f32 g f) ees-. ees4(
 	d)\pp r
 	R2*2
 	

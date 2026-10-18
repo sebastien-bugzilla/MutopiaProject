@@ -32,7 +32,7 @@ musicCornoIIMvtII = \relative c'' {
 	f f f f g g g g\!
 	f8 r r4
 	R2*2
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 e,-\tweak X-offset #-3 \pp--
 % Bars 36 to 40
 	e-- e--
@@ -124,7 +124,7 @@ musicCornoIIMvtII = \relative c'' {
 	
 	
 	des4(\mf bes8 ees)
-	des2\cresc
+	des2-\pocoapococrescendo
 	des4( bes8 e!)
 % Bars 126 to 130
 	cis2
@@ -152,7 +152,7 @@ musicCornoIIMvtII = \relative c'' {
 	r c8--\> c16-. r c8-- c16-.\!
 % Bars 146 to 150
 	r c8--_\pdim c16-. r d8-- c16-.
-	r c8--\pp c16-. r4
+	r c8-- c16-. r4
 	R2*8
 	
 	

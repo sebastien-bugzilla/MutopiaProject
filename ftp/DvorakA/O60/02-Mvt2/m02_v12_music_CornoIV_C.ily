@@ -28,7 +28,7 @@ musicCornoIVMvtII = \relative c'' {
 	g g g g   g g g g\!
 	g8 r r4
 	R2*2
-	\bar "||" \mark \default
+	\section \mark \default
 	R2*6
 % Bars 36 to 40
 	

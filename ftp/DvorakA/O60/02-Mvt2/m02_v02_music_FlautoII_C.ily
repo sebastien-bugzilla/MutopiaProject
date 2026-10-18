@@ -36,7 +36,7 @@ musicFlautoIIMvtII = \relative c''' {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 d--\pp
 % Bars 36 to 40
 	d-- d--
@@ -139,11 +139,11 @@ musicFlautoIIMvtII = \relative c''' {
 % Bars 141 to 145
 	R2
 	R2
-	<< \shape #'((-0.8 . -1)(0 . -3.5)(0 . -3)(0.2 . -0.5)) Tie bes2~ {s8\p\< s s s\!} >> 
-	bes8(\mf\< d f d)\!
-	<< c2-\shape #'((0 . -2)(0 . -2)(0 . -2)(0 . -1)) ( {s8\> s s s\!}>>
+	s2
+	s
+	s
 % Bars 146 to 150
-	bes8\p) r r4 
+	s
 	R2
 	R2*2
 	
@@ -201,4 +201,15 @@ musicFlautoIIMvtII = \relative c''' {
 	
 % Bar 206
 	R2_\fermata \fine
+}
+musicFlautoIIDivisiMvtII = \relative c {
+	\clef treble
+	\key bes \major
+% Bars 1 to 145
+	s2*142
+	<< bes'''2~ {s8\p\< s s s\!} >> 
+	bes8(\mf\< d f d)\!
+	<< c2( {s8\> s s s\!}>>
+% Bars 146 to 150
+	bes8\p) r r4 
 }

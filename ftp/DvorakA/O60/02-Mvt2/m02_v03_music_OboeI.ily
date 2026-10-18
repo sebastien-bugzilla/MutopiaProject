@@ -46,7 +46,7 @@ musicOboeIMvtII = \relative c'' {
 	d8-> bes-> g16(-- a-- bes-- c--)
 	d8 r r4
 	R2*2
-	\bar "||" \mark \default
+	\section \mark \default
 	r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
@@ -240,5 +240,5 @@ musicOboeIMvtII = \relative c'' {
 	f d bes ees)
 	d2~
 % Bar 206
-	d\fermata \bar "|."
+	d\fermata \fine
 }

@@ -48,7 +48,7 @@ musicContrabassoMvtII = \relative c {
 	f'8\f f,\p r4
 	f'16->\ff f,-. bes_\pesante-. d-. f-. ees-. d-. c-.
 	bes8-> a-> g-> fis->
-	g4-> g-> \bar "||" \mark \default
+	g4-> g-> \fine \mark \default
 	\tempoXoffset #1. a-> r
 % Bars 36 to 40
 	R2*2
@@ -241,5 +241,5 @@ musicContrabassoMvtII = \relative c {
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	\ni R2\fermata \bar "|."
+	\ni R2\fermata \fine
 }
