@@ -467,8 +467,8 @@ musicClarinettoIMvtIV = \relative c''' {
 	
 	
 	
-	r2 r4 e,,-\tweak X-offset #-0.5 \f-. \mark \default \bar "||"
-	f-.-\tweak X-offset #-0.5 \f r  r d-.
+	r2 r4 e,,-\tweak X-offset #-0.5 \f-. \mark \default \section
+	f-. r  r d-.
 % Bars 441 to 445
 	c-. r r bes-.
 	c-. r r d-.
@@ -603,5 +603,5 @@ musicClarinettoIMvtIV = \relative c''' {
 % Bars 561 to 563
 	a r r2
 	a4 r r2
-	a2\fermata r4 \bar "|."
+	a2\fermata r4 \fine
 }

@@ -541,7 +541,7 @@ musicVioloncelloMvtIV = \relative c' {
 	
 	
 	
-	\mark \default \bar "||"
+	\mark \default \section
 	d'8\f e fis e d cis b cis
 % Bars 441 to 445
 	a b g a fis g e fis
@@ -685,5 +685,5 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 561 to 563
 	d r r2
 	d4 r r2
-	d,2\fermata r4 \bar "|."
+	d,2\fermata r4 \fine
 }

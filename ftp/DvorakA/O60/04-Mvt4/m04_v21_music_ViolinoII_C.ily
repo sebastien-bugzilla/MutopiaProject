@@ -103,7 +103,7 @@ musicViolinoIIMvtIV = \relative c'' {
 	b4 r r2
 	R1
 	r4 \tuplet 3/2 4 {d,8(\p e fis)} r4 \tuplet 3/2 4 {d8( e fis)}
-	r4 \tuplet 3/2 4 {e8( fis g!)} r4 \tuplet 3/2 4 {e8( fis g)}
+	r4 \tuplet 3/2 4 {e8( fis g)} r4 \tuplet 3/2 4 {e8( fis g)}
 	fis4 r r2
 % Bars 81 to 85
 	b,4->\fp \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
@@ -486,7 +486,7 @@ musicViolinoIIMvtIV = \relative c'' {
 	fis'4->\f \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	d'4\ff \tuplet 3/2 4 {d8( c) b-. a( g) fis-. fis( e) d-.
 	c'( b) a-. a( g) fis-. fis( e) d-. c( b) a-.}
-	g'_\ffmarc a b a g a b a
+	g'_\ffmarcato a b a g a b a
 	g a b a g fis e d'
 % Bars 406 to 410
 	cis d e d cis d e d
@@ -527,7 +527,7 @@ musicViolinoIIMvtIV = \relative c'' {
 	
 	
 	
-	\mark \default \bar "||"
+	\mark \default \section
 	R1*5
 % Bars 441 to 445
 	
@@ -676,5 +676,5 @@ musicViolinoIIMvtIV = \relative c'' {
 % Bars 561 to 563
 	q r r2
 	q4 r r2
-	<a' fis'>2\fermata r4 \bar "|."
+	<a' fis'>2\fermata r4 \fine
 }

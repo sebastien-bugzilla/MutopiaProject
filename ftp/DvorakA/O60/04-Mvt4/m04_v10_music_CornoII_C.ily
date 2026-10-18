@@ -440,7 +440,7 @@ musicCornoIIMvtIV = \relative c' {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	R1*34
 % Bars 441 to 445
 	
@@ -563,5 +563,5 @@ musicCornoIIMvtIV = \relative c' {
 % Bars 561 to 563
 	bes r r2
 	bes4 r r2
-	bes2\fermata r4 \bar "|."
+	bes2\fermata r4 \fine
 }

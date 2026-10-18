@@ -42,7 +42,7 @@ musicTrombeIMvtIV = \relative c''' {
 % Bars 51 to 55
 	
 	
-	r4 a\fz r2
+	r4 a\f r2
 	r4 a\fz r2
 	r4 a\fz r2
 % Bars 56 to 60
@@ -368,7 +368,7 @@ musicTrombeIMvtIV = \relative c''' {
 	
 	
 	
-	\mark \default \bar "||"
+	\mark \default \section
 	R1*23
 % Bars 441 to 445
 	
@@ -499,5 +499,5 @@ musicTrombeIMvtIV = \relative c''' {
 % Bars 561 to 563
 	c r r2
 	c4 r r2
-	c2\fermata r4  \bar "|."
+	c2\fermata r4  \fine
 }

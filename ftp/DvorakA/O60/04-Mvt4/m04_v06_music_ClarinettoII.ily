@@ -451,8 +451,8 @@ musicClarinettoIIMvtIV = \relative c'' {
 	
 	
 	
-	r2 r4 bes,,\f-. \mark \default \bar "||"
-	a-.\f r  r bes-.
+	r2 r4 bes,,\f-. \mark \default \section
+	a-. r  r bes-.
 % Bars 441 to 445
 	a-. r r g-.
 	a-. r r bes-.
@@ -587,5 +587,5 @@ musicClarinettoIIMvtIV = \relative c'' {
 % Bars 561 to 563
 	f r r2
 	f4 r r2
-	f2\fermata r4 \bar "|."
+	f2\fermata r4 \fine
 }

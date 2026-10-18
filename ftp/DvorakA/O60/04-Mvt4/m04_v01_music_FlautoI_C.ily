@@ -190,10 +190,10 @@ musicFlautoIMvtIV = \relative c''' {
 	
 	\partCombineApart r4 fis,-._\mf r b-. \partCombineAutomatic
 	R1
-	\partCombineApart r4 b-. r e-. \partCombineAutomatic
+	\partCombineApart r4 b-.\brack\mf r e-. \partCombineAutomatic
 	R1
 % Bars 206 to 210
-	\partCombineApart r4 b-.\brack\mf r e-. \partCombineAutomatic
+	\partCombineApart r4 b-. r e-. \partCombineAutomatic
 	\dynEO #'(0 . 2) g4(\ff f8 e) f4( e8 d)
 	\once \partCombineApart c4 r d r
 	e r r2
@@ -451,7 +451,7 @@ musicFlautoIMvtIV = \relative c''' {
 	
 	
 	
-	\mark \default \bar "||"
+	\mark \default \section
 	R1*23
 % Bars 441 to 445
 	
@@ -575,5 +575,5 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 561 to 563
 	d r r2
 	d4 r  r2
-	d2\fermata r4 \bar "|."
+	d2\fermata r4 \fine
 }

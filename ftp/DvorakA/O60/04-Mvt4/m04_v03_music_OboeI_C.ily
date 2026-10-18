@@ -201,7 +201,7 @@ musicOboeIMvtIV = \relative c'' {
 	c2. c4~-\tweak X-offset #0.2 \fz
 	c2. cis4~-\tweak X-offset #0.2 \fz
 	cis2. cis4~-\tweak X-offset #0.2 \fz
-	cis2. cis4-.-\tweak X-offset #0.2 \fz
+	cis2. cis4-.-\tweak X-offset #0.2 \ff
 	a'-. r gis-. r
 % Bars 181 to 185
 	a-. r r2
@@ -500,7 +500,7 @@ musicOboeIMvtIV = \relative c'' {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	R1*5
 % Bars 441 to 445
 	
@@ -538,7 +538,7 @@ musicOboeIMvtIV = \relative c'' {
 	cis-. r r cis-.
 	fis8\( g fis e fis g fis e\)
 	fis\( g fis e fis4-. b-.\) \mark #11
-	ais-. r r2
+	ais\ff-. r r2
 	R1
 % Bars 476 to 480
 	b2.\ff ais4(
@@ -639,5 +639,5 @@ musicOboeIMvtIV = \relative c'' {
 % Bars 561 to 563
 	a r r2
 	a4 r r2
-	a2\fermata r4 \bar "|."
+	a2\fermata r4 \fine
 }

@@ -83,7 +83,7 @@ musicViolaMvtIII = \relative c {
 		b4)\! cis-. d-.
 		<c! e>2->\ff <bes!_>~ d>4-.
 		<bes e>-. <a f'>2-> 
-		c4-.^\benmarc->\mf f,8( e f4)
+		c4-.^\benmarcato->\mf f,8( e f4)
 		c'-.-> f,8( e f4)
 % Bars 46 to 50
 		c'-.-> g8(\< fis g a

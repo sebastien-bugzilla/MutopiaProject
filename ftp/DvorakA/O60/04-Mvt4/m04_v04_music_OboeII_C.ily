@@ -507,7 +507,7 @@ musicOboeIIMvtIV = \relative c'' {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	R1*5
 % Bars 441 to 445
 	
@@ -549,7 +549,7 @@ musicOboeIIMvtIV = \relative c'' {
 	cis-. r r cis-.
 	fis8\( g fis e fis g fis e\)
 	fis\( g fis e fis4-. b-.\) \mark #11
-	fis-. r r2
+	fis-.\ff r r2
 	R1
 % Bars 476 to 480
 	dis2.\ff e4(
@@ -650,5 +650,5 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 561 to 563
 	fis r r2
 	fis4 r r2
-	fis2\fermata r4 \bar "|."
+	fis2\fermata r4 \fine
 }

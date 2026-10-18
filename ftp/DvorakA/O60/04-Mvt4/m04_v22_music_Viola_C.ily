@@ -260,7 +260,7 @@ musicViolaMvtIV = \relative c' {
 % Bars 201 to 205
 	b4) fis-. b2\fz~
 	b8 r r4 r \tuplet 3/2 4 {b8(\f\< cis dis\!}
-	e4) b-. e2->\fz~
+	e4) b-. e2->~
 	e8 r g\f-! a-! b-! c-! a-! b-! 
 	g r r4 r2
 % Bars 206 to 210
@@ -556,7 +556,7 @@ musicViolaMvtIV = \relative c' {
 	
 	
 	
-	r2 r4 a-.\f \bar "||" \mark \default
+	r2 r4 a-.\f \section \mark \default
 	fis-. r r e-.
 % Bars 441 to 445
 	d-. r r a-.
@@ -705,5 +705,5 @@ musicViolaMvtIV = \relative c' {
 % Bars 561 to 563
 	q r r2
 	q4 r r2
-	q2\fermata r4 \bar "|."
+	q2\fermata r4 \fine
 }

@@ -452,7 +452,7 @@ musicCornoIMvtIV = \relative c'' {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	\mmrLength #27 R1*34
 % Bars 441 to 445
 	
@@ -575,5 +575,5 @@ musicCornoIMvtIV = \relative c'' {
 % Bars 561 to 563
 	d r r2
 	d4 r r2
-	d2\fermata r4 \bar "|."
+	d2\fermata r4 \fine
 }

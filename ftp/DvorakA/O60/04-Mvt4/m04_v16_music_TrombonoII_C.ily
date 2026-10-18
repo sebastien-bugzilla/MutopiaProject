@@ -372,7 +372,7 @@ musicTrombonoIIMvtIV = \relative c' {
 	
 	
 	
-	\mark \default \bar "||"
+	\mark \default \section
 	R1*34
 % Bars 441 to 445
 	
@@ -492,5 +492,5 @@ musicTrombonoIIMvtIV = \relative c' {
 % Bars 561 to 563
 	a r r2
 	a4 r r2
-	a2\fermata r4 \bar "|."
+	a2\fermata r4 \fine
 }

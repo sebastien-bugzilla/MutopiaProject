@@ -178,7 +178,7 @@ musicCornoIMvtIV = \relative c'' {
 	R1
 	r2 r4 g,-.\f
 	c2.-> r4
-	r2 r4 g-.
+	r2 r4 g-.\f
 	c2.-> r4
 % Bars 176 to 180
 	R1*3
@@ -284,7 +284,7 @@ musicCornoIMvtIV = \relative c'' {
 	r2 f4\f r
 % Bars 276 to 280
 	R1
-	r2 d2->
+	r2 d2\f->
 	d-> d->
 	d-> g,->
 	g-> g->
@@ -440,7 +440,7 @@ musicCornoIMvtIV = \relative c'' {
 	
 	
 	
-	\bar "||" \mark \default
+	\section \mark \default
 	R1*34
 % Bars 441 to 445
 	
@@ -508,7 +508,7 @@ musicCornoIMvtIV = \relative c'' {
 	g-.  r r ees-.
 % Bars 516 to 520
 	a!-. r r f-.
-	bes, bes bes bes
+	bes,\ff bes bes bes
 	bes bes bes bes
 	bes bes bes bes
 	bes bes bes bes \partCombineAutomatic \mark \default
@@ -563,5 +563,5 @@ musicCornoIMvtIV = \relative c'' {
 % Bars 561 to 563
 	d r r2
 	d4 r r2
-	d2\fermata r4 \bar "|."
+	d2\fermata r4 \fine
 }

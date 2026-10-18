@@ -131,7 +131,7 @@ musicContrabassoMvtIV = \relative c' {
 	d4-. b-. d2->
 % Bars 101 to 105
 	R1
-	g!4->_\fpcresc e-> g2->
+	g4->_\fpcresc e-> g2->
 	R1
 	g4->\fz e-> g2->
 	g4-.\f r r2
@@ -534,7 +534,7 @@ musicContrabassoMvtIV = \relative c' {
 	
 	
 	
-	\mark \default \bar "||"
+	\mark \default \section
 	R1*17
 % Bars 441 to 445
 	
@@ -666,5 +666,5 @@ musicContrabassoMvtIV = \relative c' {
 % Bars 561 to 563
 	d r r2
 	d4 r r2
-	d2\fermata r4 \bar "|."
+	d2\fermata r4 \fine
 }

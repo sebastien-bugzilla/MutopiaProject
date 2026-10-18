@@ -491,7 +491,7 @@ musicFagottoIIMvtIV = \relative c {
 	
 	
 	
-	r2 r4 a-.\f \bar "||" \mark \default
+	r2 r4 a-.\f \section \mark \default
 	d-. r r g-.
 % Bars 441 to 445
 	fis-. r r e-.
@@ -640,5 +640,5 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 561 to 563
 	d r r2
 	d4 r r2
-	d2\fermata r4 \bar "|."
+	d2\fermata r4 \fine
 }

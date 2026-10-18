@@ -447,7 +447,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	
 	
 	
-	\mark \default \bar "||"
+	\mark \default \section
 	R1*23
 % Bars 441 to 445
 	
@@ -571,5 +571,5 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 561 to 563
 	d r r2
 	d4 r r2
-	d2\fermata r4 \bar "|."
+	d2\fermata r4 \fine
 }

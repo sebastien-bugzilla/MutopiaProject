@@ -118,10 +118,10 @@
 						\partCombine \musicTrombonoIIIMvtIV \musicTubaMvtIV
 					}
 				>>
-				\new Staff {
-					\timeMvtIV \nameStaffXMvtIV \musicTimpaniMvtIV
-				}
 			>>
+			\new Staff {
+				\timeMvtIV \nameStaffXMvtIV \musicTimpaniMvtIV
+			}
 			\new StaffGroup <<
 				\new GrandStaff \with { \nameGrandStaffIIIMvtIV } <<
 					\new Staff {

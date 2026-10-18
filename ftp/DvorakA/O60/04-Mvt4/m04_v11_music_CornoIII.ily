@@ -442,7 +442,7 @@ musicCornoIIIMvtIV = \relative c'' {
 	
 	
 	
-	r2 r4 g-.\f \bar "||" \mark \default
+	r2 r4 g-.\f \section \mark \default
 	e-. r r d-.
 % Bars 441 to 445
 	c-. r r g-.
@@ -567,5 +567,5 @@ musicCornoIIIMvtIV = \relative c'' {
 % Bars 561 to 563
 	g r r2
 	g4 r r2
-	g2\fermata r4 \bar "|."
+	g2\fermata r4 \fine
 }

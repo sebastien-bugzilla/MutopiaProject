@@ -527,7 +527,7 @@ musicViolinoIMvtIV = \relative c''' {
 	cis: a: a':-> g: e: cis: a: a':->
 	g: e: cis: a: a':-> g: e: cis:
 	a: a':-> g: e: cis: a: a':-> g:
-	e: cis: a: a':-> g: e: cis: a: \mark \default \bar "||"
+	e: cis: a: a':-> g: e: cis: a: \mark \default \section
 	d4\f r r2
 % Bars 441 to 445
 	R1*10
@@ -668,5 +668,5 @@ musicViolinoIMvtIV = \relative c''' {
 % Bars 561 to 563
 	q r r2
 	q4 r r2
-	q2\fermata r4 \bar "|."
+	q2\fermata r4 \fine
 }
