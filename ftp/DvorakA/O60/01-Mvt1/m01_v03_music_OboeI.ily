@@ -569,7 +569,7 @@ musicOboeIMvtI = \relative c'' {
 	gis->
 	a4-^ r8 fis\f-. g-. a-.
 % Bars 481 to 485
-	b4. e,8-. fis-. g-.
+	b4.-> e,8-. fis-. g-.
 	a-. a4-> d,8-. e-. fis-.
 	g-> cis, d e fis-> b,
 	cis4-> e-> a,->~

@@ -174,7 +174,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 136 to 140
 		aes'8-.\pp\< ces-. ees4-. des-.
 		ces8-. bes-. aes4-. aes8-. ges-.\!
-		f-.-\offset X-offset 2.5 _\mfcrescD aes-. ces4 ces8-. bes-.
+		f-.-\offset X-offset 2.5 _\mfcrescD aes-. ces4-. ces8-. bes-.
 		aes-. ges-. f-. ees-. des4 \mark \default
 		fis!8-.\f ais( b cis!) b4->
 % Bars 141 to 145
@@ -326,7 +326,7 @@ musicVioloncelloMvtI = \relative c {
 	f-. d16( e d8) b-. b-. d-.
 	cis4 r8 cis'-! d-! e-! 
 	a,2(-> fis'4)_\dimmarkup
-	g r8 e-. fis-. g-.
+	g r8 e-! fis-! g-!
 	a4(\p d, c)
 % Bars 261 to 265
 	b r r
@@ -563,9 +563,9 @@ musicVioloncelloMvtI = \relative c {
 	R2.
 	d,4-.\p a'8( fis) g-. a-.
 % Bars 456 to 460
-	d,4-. a'8(\cresc fis) g-. a-.
-	d,4-. bes'8( g) a-. bes-.
-	d,4-. c'8( a) bes-. c-.\! \mark \default
+	d,4 a'8(\cresc fis) g-. a-.
+	d,4 bes'8( g) a-. bes-.
+	d,4 c'8( a) bes-. c-.\! \mark \default
 	c,4\f r c'-^
 	c-^ a8-. bes-. c4-^
 % Bars 461 to 465

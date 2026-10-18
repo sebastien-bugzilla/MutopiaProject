@@ -323,7 +323,7 @@ musicClarinettoIIMvtI = \relative c'' {
 	r4 r8 c-. d-. e-.
 	cis4 r r \mark \default
 	R2.
-	fis,4\f-> r8 d-. e-. fis-.
+	fis,4\f-> r8 d-! e-! fis-!
 % Bars 281 to 285
 	g4-> r8 g-. a-. bes-.
 	bes4-> r8 g-. a-. bes-.

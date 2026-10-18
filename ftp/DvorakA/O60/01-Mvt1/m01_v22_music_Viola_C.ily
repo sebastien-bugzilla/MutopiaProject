@@ -227,7 +227,7 @@ musicViolaMvtI = \relative c {
 		cis!: \mark \default
 		cis8-.\f ais( b cis) b4->
 % Bars 141 to 145
-		cis8-. ais( b cis) b4-.->
+		cis8-. ais( b cis) b4->
 		cis8-. ais( cis fis) g[-.\< ais,(
 		cis g')] gis[-. cis,( e ais)]\!
 		b-. r r4 e,(\fz
@@ -549,7 +549,7 @@ musicViolaMvtI = \relative c {
 	g8) r \tuplet 3/2 4 {ees,8(\< f ees} ees'4\!
 	bes8) r \tuplet 3/2 4 {bes(\< c bes} bes'4\!~
 % Bars 406 to 410
-	bes8) r \tuplet 3/2 4 {bes8(\fz c bes)} f-. g-.
+	bes8) r \tuplet 3/2 4 {bes8(\fz c bes} f-.) g-.
 	<f a>-. <g bes>-. <a c>4-. r
 	r \tuplet 3/2 4 {f8(-\tweak extra-offset #'(-0.5 . 0.5) \fz g f)} g8-. f-.
 	e8-. r r4 r

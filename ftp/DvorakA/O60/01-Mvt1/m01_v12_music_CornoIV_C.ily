@@ -505,7 +505,7 @@ musicCornoIVMvtI = \relative c' {
 % Bars 526 to 530
 	bes-. d,-. f-.
 	bes-. d,-. f-.
-	bes-. r r
+	bes r r
 	R2.*7
 	
 % Bars 531 to 535

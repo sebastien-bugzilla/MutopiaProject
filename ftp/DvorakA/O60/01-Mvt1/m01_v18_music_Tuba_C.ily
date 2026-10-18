@@ -314,7 +314,7 @@ musicTubaMvtI = \relative c {
 	r4 r e-.\f
 	a-. r bes-.
 	a-. r bes-.
-	a-. r g!\<
+	a-. r g!-.\<
 	r e-. a-.\!
 % Bars 451 to 455
 	d,-. r r

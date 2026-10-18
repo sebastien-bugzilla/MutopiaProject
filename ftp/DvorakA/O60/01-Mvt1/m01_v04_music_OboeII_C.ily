@@ -421,7 +421,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 356 to 360
 	fis8-.\f g-. a-. a-. g-. fis-. 
 	g4-.-> b,-.-> r
-	fis'4 c'!8 c b a 
+	fis'4 c'!8-. c-. b-. a-. 
 	b4-.-> d,-.-> r
 	c'4 b8-. f'!-. e-. d-.
 % Bars 361 to 365

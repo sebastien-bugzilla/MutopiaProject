@@ -428,7 +428,7 @@ musicViolinoIIMvtI = \relative c' {
 	eis-! fis-! gis-! gis-! fis-! eis-! 
 	fis-. r \hairpinShorten #'(0 . -2) g,4(\< gis)\!
 	b2.\fz
-	ais8\f r f''4(\fz e)
+	ais8-.\f r f''4(\fz e)
 	d( cis!8 b a g)
 % Bars 356 to 360
 	fis-> g-. a-. a-. g-. fis-.

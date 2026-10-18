@@ -219,7 +219,7 @@ musicCornoIIMvtI = \relative c' {
 	c2-> r4
 	r r g4(\<
 % Bars 206 to 210
-	c8)\! r c r r4
+	c8-.)\! r c-. r r4
 	R2.*5
 	
 	

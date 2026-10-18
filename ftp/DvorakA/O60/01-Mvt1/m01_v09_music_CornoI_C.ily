@@ -223,7 +223,7 @@ musicCornoIMvtI = \relative c'' {
 	c2-> r4
 	r r g4(\<
 % Bars 206 to 210
-	c8)\! r c r r4
+	c8-.)\! r c-. r r4
 	R2.*5
 	
 	
@@ -415,7 +415,7 @@ musicCornoIMvtI = \relative c'' {
 	aes2.-\tweak X-offset #0.5 \fz~
 	aes4 r r
 % Bars 406 to 410
-	\partCombineApart ees2~ ees8-. f-. 
+	\partCombineApart ees2~ ees8 f-. 
 	bes,4 \partCombineAutomatic r r
 	r4 g'\fz f8-. ees!-.
 	d-. r r4 r

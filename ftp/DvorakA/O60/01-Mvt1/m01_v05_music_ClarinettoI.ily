@@ -182,7 +182,7 @@ musicClarinettoIMvtI = \relative c'' {
 		R2.*3
 	
 	
-		a4\f c8( a) bes-. c-.
+		a4-.\f c8( a) bes-. c-.
 % Bars 156 to 160
 		bes2.\fz
 		c2\fz ees8[( c)
@@ -252,7 +252,7 @@ musicClarinettoIMvtI = \relative c'' {
 	f2.->
 % Bars 206 to 210
 	r4 r c(\<
-	f8) r f\! r r4
+	f8-.) r f-.\! r r4
 	R2.*6
 	
 	
@@ -335,7 +335,7 @@ musicClarinettoIMvtI = \relative c'' {
 	r4 r8 e-. f-. g-.
 	a4.(\< bes!8 a4)\! \mark \default
 	a4\f r r
-	a,4\f-> r8 fis-. g-. a-.
+	a,4\f-> r8 fis-! g-! a-!
 % Bars 281 to 285
 	bes4-> r8 bes-. c-. d-.
 	d4-> r8 bes-. c-. d-.

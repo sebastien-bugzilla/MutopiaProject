@@ -182,7 +182,7 @@ musicClarinettoIMvtI = \relative c'' {
 		R2.*3
 	
 	
-		\partCombineApart a4_\f c8( a) bes-. c-. \partCombineAutomatic
+		\partCombineApart a4-._\f c8( a) bes-. c-. \partCombineAutomatic
 % Bars 156 to 160
 		bes2. \tweak X-offset #-2 \fz
 		\once \stemUp c2\fz ees8[( c)
@@ -252,7 +252,7 @@ musicClarinettoIMvtI = \relative c'' {
 	f2.->
 % Bars 206 to 210
 	r4 r c(_\<
-	f8) r f\! r r4 \partCombineAutomatic
+	f8-.) r f-.\! r r4 \partCombineAutomatic
 	R2.*6
 	
 	
@@ -335,7 +335,7 @@ musicClarinettoIMvtI = \relative c'' {
 	r4 r8 \partCombineApart e-. f-. g-.
 	a4.(_\< bes!8 a4) \partCombineAutomatic \mark \default
 	a4_\f r r
-	a,4\f-> r8 fis!-. g-. a-.
+	a,4\f-> r8 fis!-! g-! a-!
 % Bars 281 to 285
 	bes4-> r8 bes-. c-. d-.
 	d4-> r8 bes-. c-. d-.

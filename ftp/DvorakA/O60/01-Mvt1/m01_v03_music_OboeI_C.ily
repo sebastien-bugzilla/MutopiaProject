@@ -200,7 +200,7 @@ musicOboeIMvtI = \relative c'' {
 		b8-. dis-. fis4-> e->
 		dis2( cis4)
 % Bars 166 to 170
-		b8-. dis-. \partCombineAutomatic fis4-> e->
+		b8-. dis-. fis4-> e-> \partCombineAutomatic
 		fis8\( dis\) e-. fis-. b,4
 		fis'8\( dis\) e-. fis-. b,4
 		fis'8\( d!\) e-. fis-. b,4
@@ -569,7 +569,7 @@ musicOboeIMvtI = \relative c'' {
 	gis->
 	\partCombineApart a4-^ r8 fis\f-. g!-. a-.
 % Bars 481 to 485
-	b4. e,8-. fis-. g-.
+	b4.-> e,8-. fis-. g-.
 	a-. a4-> d,8-. e-. fis-.
 	g-> cis, d e fis-> b,
 	cis4-> e-> a,->~

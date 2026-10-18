@@ -544,7 +544,7 @@ musicContrabassoMvtI = \relative c {
 	gis8-.\mf\< b-. d4-> d8-. c-.
 % Bars 446 to 450
 	b8-. a-. gis-. fis!-. e4\!
-	a4\f r bes(->
+	a8\f r r4 bes(->
 	a8) r r4 bes(->
 	a8) r r4\< g!-.
 	r e-. a-.\!

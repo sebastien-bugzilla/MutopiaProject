@@ -309,7 +309,7 @@ musicFagottoIIMvtI = \relative c {
 	R2.
 	a,2.\f
 	b4. b8-! cis!-! d-!
-	cis4-> r8 a'-! a-! e-!
+	cis4 r8 a'-! a-! e-!
 % Bars 256 to 260
 	f-. d16( e d8) b-. b-. d-. 
 	cis2.(
@@ -329,7 +329,7 @@ musicFagottoIIMvtI = \relative c {
 	g2\< f4
 	<< e2. {s4\> s s\!} >>
 % Bars 271 to 275
-	a r r
+	a-- r r
 	R2.*2
 	
 	<<e2.( {s8\pp\< s s s\> s s\!}>>
@@ -338,7 +338,7 @@ musicFagottoIIMvtI = \relative c {
 	R2.*2
 	
 	e2.(\< \mark \default
-	dis4\f) r8 dis,-. e-. fis-.
+	dis4\f) r8 dis,-! e-! fis-!
 	b,2-> b'4-.
 % Bars 281 to 285
 	g!4-> r8 e'-. fis-. g-.
@@ -347,7 +347,7 @@ musicFagottoIIMvtI = \relative c {
 	R2.
 	b'4\f r8 e,-. fis-. gis-.
 % Bars 286 to 290
-	e2 d'!4
+	e2-> d'!4-.
 	cis r r
 	R2.*4
 	
@@ -549,7 +549,7 @@ musicFagottoIIMvtI = \relative c {
 	r4 r c-^\f
 	c-^ a8-. bes-. c4-^
 % Bars 461 to 465
-	r r c
+	r r c-^
 	c8( a) bes-. c-. fis,4
 	bes8( g) a-. bes-. e,4
 	a8( f) g-. a-. d,4~

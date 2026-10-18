@@ -250,7 +250,7 @@ musicFlautoIIMvtI = \relative c' {
 	
 	
 	
-	r4 g\p f8 e
+	r4 g(\p f8 e)
 	R2.*4
 % Bars 241 to 245
 	
@@ -435,8 +435,8 @@ musicFlautoIIMvtI = \relative c' {
 	
 	r4 r8 a-.\f bes-. c-.
 % Bars 406 to 410
-	bes2\fz a8 g
-	f4 r r
+	bes2(\fz a8 g
+	f4) r r
 	a2(\fz bes8 b
 	e,-.) r r4 r
 	R2.*4

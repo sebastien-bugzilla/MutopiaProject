@@ -42,7 +42,7 @@ musicClarinettoIIMvtI = \relative c'' {
 	
 		ees,4\f\< d8-. aes'!-. g-. f-. \!
 		aes4-.\f f-. aes\fz-.
-		f-. aes-.\fz f-.
+		f-. aes!-.\fz f-.
 % Bars 36 to 40
 		bes\fz-. bes-. bes-.\fz
 		ees,4-. d8-. aes'!-. g-. f-. 
@@ -77,7 +77,7 @@ musicClarinettoIIMvtI = \relative c'' {
 		bes2)\! g8(\< a
 		bes2)\! g8(\< a
 		bes2)\! g8 a
-		bes4-. r r
+		bes4 r r
 		R2.*4
 % Bars 66 to 70
 	
@@ -335,7 +335,7 @@ musicClarinettoIIMvtI = \relative c'' {
 	r4 r8 c-. d-. e-.
 	cis4 r r \mark \default
 	R2.
-	fis,4\f-> r8 d-. e-. fis-.
+	fis,4\f-> r8 d-! e-! fis-!
 % Bars 281 to 285
 	g4-> r8 g-. a-. bes-.
 	bes4-> r8 g-. a-. bes-.
@@ -343,7 +343,7 @@ musicClarinettoIIMvtI = \relative c'' {
 	R2.
 	d'4\f r8 g,-. a-. b-.
 % Bars 286 to 290
-	g2 f'!4
+	g2-> f'!4-.
 	e r r
 	c-> d-> e->
 	f-> r r
@@ -390,8 +390,8 @@ musicClarinettoIIMvtI = \relative c'' {
 	r r c--\pp
 % Bars 331 to 335
 	c2 r4
-	r r c4-.
-	c c r
+	r r c4~
+	c c-. r
 	c4. c8 c4
 	\hairpinYoffset #0 #0.8 c2\< c4
 % Bars 336 to 340
