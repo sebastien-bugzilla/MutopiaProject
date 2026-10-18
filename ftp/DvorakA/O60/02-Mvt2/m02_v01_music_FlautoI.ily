@@ -182,7 +182,7 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 176 to 180
 	d) r r4
 	r16 fis,-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
-	d8->\ff r g4-^~
+	d8->-.\ff r g4-^~
 	g8\> bes( a g~\!
 	g)\p f4.~_\dimmarkup
 % Bars 181 to 185
@@ -202,8 +202,8 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 201 to 205
 	<<f2~ {s8 s s s\!}>>
 	f8 f(\pp d g)
-	f( d bes4)~
-	bes2~
+	f( d bes4~
+	bes2)~
 	bes~
 % Bar 206
 	bes\fermata \fine

@@ -69,7 +69,7 @@ musicViolaMvtII = \relative c {
 	
 	
 % Bars 51 to 55
-	r8 <ees g>\p\< q q\!
+	r8 <ees g>--\p\< q-- q--\!
 	<<{ <cis a'>2} {s8-\tweak X-offset #1.5 \f\> s s s\!} >>
 	<d bes'>8\p r r4
 	R2*5
@@ -118,7 +118,7 @@ musicViolaMvtII = \relative c {
 		d8
 	} \\ {
 		bes4\f d~->
-		\beamOffset #'(0 . 0.5) d8 c16-\tweak extra-offset #'(-1.5 . 0.3) _\dimmarkup bes d8 c
+		\beamOffset #'(0 . 0.5) d8 c16(-\tweak extra-offset #'(-1.5 . 0.3) _\dimmarkup bes d8 c)
 		bes\p
 	}>> r r4
 % Bars 87 to 90

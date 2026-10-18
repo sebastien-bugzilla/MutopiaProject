@@ -143,7 +143,7 @@ musicFagottoIIMvtII = \relative c {
 	ees!\pp~
 	ees
 	c,,-\tweak X-offset #-1.5 \p~
-	c\cresc
+	c
 	c~
 % Bars 126 to 130
 	c

@@ -60,7 +60,7 @@ musicOboeIIMvtII = \relative c' {
 % Bars 46 to 50
 	
 	r4 g,\pp\<(
-	f2\>)(
+	f2\>
 	g8) g--\pp g-- g--
 	f2->(
 % Bars 51 to 55
@@ -192,9 +192,9 @@ musicOboeIIMvtII = \relative c' {
 	b8) r r4
 	R2*2
 	
-	r8 d4(\p\< c16 bes!)~
+	r8 d4(\p\< c16 bes!~
 % Bars 161 to 165
-	bes8 a16(\! g\> a4)
+	bes8) a16(\! g\> a4)
 	aes8(\p( c4 bes16\> aes)~
 	aes8) g16(\! f g4~
 	g8) ges4\pp( f16 ees~
@@ -214,8 +214,8 @@ musicOboeIIMvtII = \relative c' {
 % Bars 176 to 180
 	d)\noBeam bes(\f\< c! cis\!
 	d16)\noBeam a->\f-. b->-. b->-. c->-. d->-. c->-. cis->-. 
-	d8-.->\ff r b-^ r
-	bes!-^ r r4
+	d8-.->\ff r b-^-. r
+	bes!-^-. r r4
 	R2
 % Bars 181 to 185
 	r4 a(\pp 

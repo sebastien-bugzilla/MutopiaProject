@@ -118,7 +118,7 @@ musicViolaMvtII = \relative c {
 		d8
 	} \\ {
 		bes4\f d~->
-		d8 c16_\dimmarkup bes d8 c
+		d8 c16(_\dimmarkup bes d8 c)
 		bes\p
 	}>> r r4
 % Bars 87 to 90

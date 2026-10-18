@@ -63,7 +63,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 46 to 50
 	
 	r4 bes,\pp\<(
-	aes2\>)(
+	aes2\>
 	bes8) bes--\pp bes-- bes--
 	aes2->(
 % Bars 51 to 55

@@ -28,8 +28,8 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	\partCombineApart R2
-	f8(_\pcresc^\brack\mf bes d f)~
-	f(_\dimmarkup ees d c
+	f8(_\pcresc^\brack\mf bes d f~
+	f_\dimmarkup ees d c
 % Bars 21 to 25
 	f4.)_\pp r8 \partCombineAutomatic
 	R2*2
@@ -63,7 +63,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 46 to 50
 	
 	r4 \partCombineChords bes,-\tweak extra-offset #'(0 . 0.8) \pp\<(
-	<< aes2)( {s4\> s\! }>>
+	<< aes2 {s4\> s\! }>>
 	bes8) bes--\pp bes-- bes--
 	\partCombineAutomatic aes2->(
 % Bars 51 to 55

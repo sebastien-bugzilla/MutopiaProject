@@ -143,7 +143,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	R2*2
 	
 	R2
-	bes,2\p\cresc
+	bes,2
 	b!->
 % Bars 126 to 130
 	b->

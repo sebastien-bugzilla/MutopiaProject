@@ -58,8 +58,8 @@ musicVioloncelloMvtII = \relative c {
 	r8 <a f'!>4\pp( <g e'>16 <f! d'>)
 % Bars 41 to 45
 	a8( a'4_\crescmarkup g16 f~
-	f8 e16 d e8 c)~
-	c( g'4_\dimmarkup f16 ees!~
+	f8 e16 d e8 c~
+	c)( g'4_\dimmarkup f16 ees!~
 	ees8 d16 c d8 bes)
 	f8(\pp bes4 a8
 % Bars 46 to 50

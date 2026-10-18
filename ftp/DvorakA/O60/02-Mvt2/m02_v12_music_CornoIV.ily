@@ -175,7 +175,7 @@ musicCornoIVMvtII = \relative c'' {
 	g g4\mf\< g8~
 % Bars 176 to 180
 	g\! g4\f g8~
-	g16->-. r g\f\<-> g-> g-> g-> g-> c->\!
+	g16 r g\f\<-> g-> g-> g-> g-> c->\!
 	b8\ff r a-^-. r
 	a-^-. r r4
 	\hairpinShorten #'(-0.3 . -0.3) c2-\offset X-offset -1.5 \p\>(
