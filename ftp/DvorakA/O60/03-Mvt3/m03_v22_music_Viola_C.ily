@@ -78,9 +78,9 @@ musicViolaMvtIII = \relative c {
 		} >>
 		a4-. e8(\< dis e fis\!
 		g fis a\>  g fis e)\!
-		d( e f! g a bes!
+		d(\< e f! g a bes!
 % Bars 41 to 45
-		b4) cis-. d-.
+		b4)\! cis-. d-.
 		<c! e>2->\ff <bes!_>~ d>4-.
 		<bes e>-. <a f'>2-> 
 		c4-.^\benmarc->\mf f,8( e f4)
@@ -318,10 +318,10 @@ musicViolaMvtIII = \relative c {
 	
 	d4-\tweak extra-offset #'(-1. . 0.5) \p^\pizz r d'
 	d, r d'
-	d,-\tweak extra-offset #'(0 . 0.4) \< r d'
-	d, r d'\!
+	d, r d'
+	d, r d'
 % Bars 261 to 265
-	d,\mf r d'
+	d, r d'
 	d, r d'
 	d, r d'
 	d, r d'
@@ -422,7 +422,7 @@ musicViolaMvtIII = \relative c {
 % Bars 326 to 330
 	<c! e>2->\ff <bes!_~_> d>4-.
 	<bes e>-. <a f'>2->
-	c4-.^\benmarc->\mf f,8( e f4)
+	c4-.^\benmarcato->\mf f,8( e f4)
 	c'-.-> f,8( e f4)
 	c'-.-> g8(\< fis g a
 % Bars 331 to 335
@@ -555,5 +555,5 @@ musicViolaMvtIII = \relative c {
 	q-. q-. q-.
 	q r r
 	<a, f' a>\arpeggio r r
-	q\arpeggio r r \bar "|."
+	q\arpeggio r r \fine
 }

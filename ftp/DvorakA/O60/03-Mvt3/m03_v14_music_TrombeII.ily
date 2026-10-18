@@ -358,5 +358,5 @@ musicTrombeIIMvtIII = \relative c' {
 	c-. c-. c-.
 	c r r
 	c r r
-	c r r \bar "|."
+	c r r \fine
 }

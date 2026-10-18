@@ -72,7 +72,7 @@ musicFlautoIMvtIII = \relative c''' {
 		a \partCombineAutomatic
 		d,8(\p\< e f! g a bes
 % Bars 61 to 65
-		b4)\! cis-. d-.
+		b4)\! cis-.\f d-.
 		\partCombineApart f4(-> a) d,(->
 		e) f2-> \partCombineAutomatic
 		R2.*46
@@ -438,5 +438,5 @@ musicFlautoIMvtIII = \relative c''' {
 	d-. f-. d-.
 	d r r
 	d r r
-	d r r \bar "|."
+	d r r \fine
 }

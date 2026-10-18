@@ -347,7 +347,7 @@ musicVioloncelloMvtIII = \relative c {
 	d a2
 % Bars 286 to 290
 	d, a4~
-	a\! d,2\f \bar "||" \key d \minor 
+	a\! d,2\f \section \key d \minor 
 	d'4(->\f a'8) r d,4(->
 	a'8) r d,4(-> a'8) r
 	c,!4-.\fz d-. d-.
@@ -370,7 +370,7 @@ musicVioloncelloMvtIII = \relative c {
 	a'-. a,-. a-.
 	d'-. d,-. d-.
 % Bars 306 to 310
-	d r r \bar "||"
+	d r r \section
 	f,\p^\pizz c' f
 	f, c' f
 	e, c' e
@@ -533,5 +533,5 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 436 to 438
 	d r r
 	d r r
-	d r r \bar "|."
+	d r r \fine
 }

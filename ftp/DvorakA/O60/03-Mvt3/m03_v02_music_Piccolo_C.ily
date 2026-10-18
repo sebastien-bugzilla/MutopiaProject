@@ -255,6 +255,6 @@ musicPiccoloMvtIII = \relative c''' {
 	
 	
 	
-	 \bar "|."
+	 \fine
 % Bars 441 to 445
 }

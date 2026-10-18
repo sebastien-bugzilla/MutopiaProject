@@ -498,5 +498,5 @@ musicClarinettoIMvtIII = \relative c'' {
 	f-. aes-. f-.
 	f r r
 	f r r
-	f r r \bar "|."
+	f r r \fine
 }

@@ -273,7 +273,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 216 to 220
 	d2.~
 	d 
-	d2.\pp(~
+	d2.(~
 	d4 a') d,-.
 	d2.(~
 % Bars 221 to 225
@@ -530,5 +530,5 @@ musicVioloncelloMvtIII = \relative c {
 	d-. d-. d-.
 	d r r
 	d r r
-	d r r \bar "|."
+	d r r \fine
 }

@@ -132,7 +132,7 @@ semprecresc = \markup {\italic {sempre cresc.}}
 % text indications
 %--------------------
 arco = \markup {arco}
-benmarc = \markup {\italic {ben marc.}}
+benmarcato = \markup {\italic {ben marcato}}
 div = \markup {div.}
 grandioso = \markup {\italic grandioso}
 legg = \markup {\italic legg.}

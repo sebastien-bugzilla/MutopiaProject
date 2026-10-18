@@ -454,5 +454,5 @@ musicFlautoIMvtIII = \relative c''' {
 	d-. f-. d-.
 	d r r
 	d r r
-	d r r \bar "|."
+	d r r \fine
 }

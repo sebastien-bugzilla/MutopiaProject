@@ -438,5 +438,5 @@ musicCornoIIIMvtIII = \relative c'' {
 	ees-. ees-. ees-.
 	ees r r
 	ees r r
-	ees r r \bar "|."
+	ees r r \fine
 }

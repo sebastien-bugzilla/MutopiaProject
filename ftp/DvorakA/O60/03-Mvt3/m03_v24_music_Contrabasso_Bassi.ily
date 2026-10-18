@@ -344,7 +344,7 @@ musicContrabassoMvtIII = \relative c {
 	
 % Bars 286 to 290
 	
-	\bar "||" \key d \minor
+	\section \key d \minor
 	d2\f-> d4~->
 	d d2->
 	c!4-.\fz d-. d-.
@@ -367,7 +367,7 @@ musicContrabassoMvtIII = \relative c {
 	a'-. a,-. a-.
 	d'-. d,-. d-.
 % Bars 306 to 310
-	d r r \bar "||"
+	d r r \section
 	f,\p^\pizz r r
 	f' r r
 	e r r
@@ -528,6 +528,6 @@ musicContrabassoMvtIII = \relative c {
 %% Bars 436 to 438
 %	d r r
 %	d r r
-%	d r r \bar "|."
-	\bar "|."
+%	d r r \fine
+	\fine
 }

@@ -478,5 +478,5 @@ musicFagottoIIMvtIII = \relative c, {
 	d-. d-. d-.
 	d r r
 	d r r
-	d r r \bar "|."
+	d r r \fine
 }

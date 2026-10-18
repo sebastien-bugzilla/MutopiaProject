@@ -538,5 +538,5 @@ musicViolinoIMvtIII = \relative c''' {
 	q-. <a f''>-. <a d'>-.
 	q r r
 	<d, d' d'>\arpeggio r r
-	q\arpeggio r r \bar "|."
+	q\arpeggio r r \fine
 }

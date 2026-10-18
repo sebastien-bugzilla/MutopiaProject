@@ -252,7 +252,7 @@ musicOboeIMvtIII = \relative c''' {
 	c2.
 	b4 a g
 	fis g e)
-	\shape #'((0 . 3)(0 . 0)(0 . 0)(0 . 3)) Slur d2.(\p
+	\shape #'((0 . 3)(0 . 0)(0 . 0)(0 . 3)) Slur d2.(
 	g2 a4
 % Bars 216 to 220
 	d,2.

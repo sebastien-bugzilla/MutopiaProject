@@ -502,5 +502,5 @@ musicClarinettoIIMvtIII = \relative c'' {
 	aes-. c-. aes-.
 	aes r r
 	aes r r
-	aes r r \bar "|."
+	aes r r \fine
 }

@@ -298,7 +298,7 @@ musicTimpaniMvtIII = \relative c {
 	a2.\f\startTrillSpan
 % Bars 411 to 415
 	a
-	r8\stopTrillSpan d-> d4-> r8 d->
+	r8\stopTrillSpan d->\ff d4-> r8 d->
 	d4-> r8 d-> d4->
 	r8 d d4 r8 d
 	d4 r8 d d4
@@ -330,5 +330,5 @@ musicTimpaniMvtIII = \relative c {
 	d-. d-. d-.
 	d r r
 	d r r
-	d r r \bar "|."
+	d r r \fine
 }
